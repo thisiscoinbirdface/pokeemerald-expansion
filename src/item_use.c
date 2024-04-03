@@ -81,6 +81,9 @@ static void ItemUseOnFieldCB_TeleportTool(u8);
 static void SetUpFieldAndUseTeleportTool(u8 taskId);
 static void UseTeleportToolYesNo(u8 taskId);
 static void AskPlayerTeleportTool(u8 taskId);
+static void CB2_OpenFlyToolFromBag(void);
+static void Task_OpenRegisteredFlyTool(u8 taskId);
+static void ItemUseOnFieldCB_RockSmashTool(u8 taskId);
 // End qol_field_moves
 
 // EWRAM variables
@@ -1173,6 +1176,7 @@ void ItemUseOutOfBattle_FlyTool(u8 taskId)
         gTasks[taskId].func = Task_OpenRegisteredFlyTool;
     }
 }
+
 static void CB2_OpenFlyToolFromBag(void)
 {
     VarSet(VAR_FLY_TOOL_SOURCE,FLY_SOURCE_BAG);
