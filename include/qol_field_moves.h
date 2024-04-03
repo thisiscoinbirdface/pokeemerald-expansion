@@ -3,7 +3,7 @@ u32 UseCut(u32);
 
 void ReturnToFieldFromFlyToolMapSelect(void);
 bool32 IsFlyToolUsed(void);
-bool32 ReturnToFieldOrBagFromFlyTool(void);
+void ReturnToFieldOrBagFromFlyTool(void);
 void ResetFlyTool(void);
 
 u32 CanUseSurf(s16, s16, u8);
