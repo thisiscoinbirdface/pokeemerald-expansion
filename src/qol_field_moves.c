@@ -42,8 +42,6 @@ static void LockPlayerAndLoadMon(void);
 static void FieldCallback_UseFlyTool(void);
 static void Task_UseFlyTool(void);
 
-static void SurfToolFieldEffect_Init(struct Task *task); //qol_field_moves
-
 static void SetUpFieldMove_UseFlash(u32);
 static void UseFlash(u32 fieldMoveStatus);
 static void FieldCallback_UseFlashTool(void);
@@ -53,8 +51,6 @@ static void Task_UseWaterfallTool(u8);
 static bool8 IsPlayerFacingWaterfall(void);
 
 static void Task_UseDiveTool(u8);
-static bool8 DiveToolFieldEffect_Init(struct Task *task);
-static bool8 DiveToolFieldEffect_TryWarp(struct Task *task);
 
 static bool32 PartyCanLearnMoveLevelUp(u16, u16);
 static bool32 SetMonResultVariables(u32 partyIndex, u32 species);
@@ -71,11 +67,8 @@ static u8 CreateUseToolTask(void)
 
 static void Task_UseTool_Init(u8 taskId)
 {
-    u8 objEventId;
-
     LockPlayerFieldControls();
     gPlayerAvatar.preventStep = TRUE;
-    objEventId = gPlayerAvatar.objectEventId;
 
         gFieldEffectArguments[1] = GetPlayerFacingDirection();
         if (gFieldEffectArguments[1] == DIR_SOUTH)
@@ -169,7 +162,7 @@ bool32 IsFlyToolUsed(void)
     return (VarGet(VAR_FLY_TOOL_SOURCE));
 }
 
-bool32 ReturnToFieldOrBagFromFlyTool(void)
+void ReturnToFieldOrBagFromFlyTool(void)
 {
     if (VarGet(VAR_FLY_TOOL_SOURCE) == FLY_SOURCE_BAG)
         GoToBagMenu(ITEMMENULOCATION_LAST,KEYITEMS_POCKET,CB2_ReturnToFieldWithOpenMenu);
@@ -216,7 +209,7 @@ u32 CanUseSurfFromInteractedWater()
 
 u8 FldEff_UseSurfTool(void)
 {
-    u8 taskId = CreateTask(Task_SurfToolFieldEffect, 0);
+    CreateTask(Task_SurfToolFieldEffect, 0);
     Overworld_ClearSavedMusic();
     Overworld_ChangeMusicTo(MUS_SURF);
     return FALSE;
