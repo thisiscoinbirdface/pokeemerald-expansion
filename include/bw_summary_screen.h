@@ -81,6 +81,7 @@ enum PokemonSummaryScreenMode_BW
     BW_SUMMARY_MODE_NORMAL,
     BW_SUMMARY_MODE_LOCK_MOVES,
     BW_SUMMARY_MODE_BOX,
+    BW_SUMMARY_MODE_BOX_CURSOR, // mon is being moved in PC
     BW_SUMMARY_MODE_SELECT_MOVE,
 };
 
