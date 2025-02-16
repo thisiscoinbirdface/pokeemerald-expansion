@@ -74,15 +74,4 @@ u8 GetMoveSlotToReplace_BW(void);
 void SummaryScreen_SetAnimDelayTaskId_BW(u8 taskId);
 void SummaryScreen_SetShadowAnimDelayTaskId_BW(u8 taskId);
 
-// The Pokémon Summary Screen can operate in different modes. Certain features,
-// such as move re-ordering, are available in the different modes.
-enum PokemonSummaryScreenMode_BW
-{
-    BW_SUMMARY_MODE_NORMAL,
-    BW_SUMMARY_MODE_LOCK_MOVES,
-    BW_SUMMARY_MODE_BOX,
-    BW_SUMMARY_MODE_BOX_CURSOR, // mon is being moved in PC
-    BW_SUMMARY_MODE_SELECT_MOVE,
-};
-
 #endif // GUARD_BW_SUMMARY_SCREEN_H
