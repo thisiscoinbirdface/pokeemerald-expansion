@@ -33,6 +33,9 @@
 #define BW_SUMMARY_SHOW_TERA_TYPE                   FALSE               // show tera type icons
 #define BW_SUMMARY_SHOW_CONTEST_MOVES               TRUE                // show the contest moves page
 
+// Looking for configs for renaming mons and relearning moves? Those use the standard expansion configs
+// P_SUMMARY_SCREEN_RENAME and P_SUMMARY_SCREEN_MOVE_RELEARNER in include/config/pokemon.h
+
 /* Info for users
 
 General tilemap setup
