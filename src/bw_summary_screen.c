@@ -854,7 +854,7 @@ static const struct OamData sOamData_RelearnPrompt =
 static const struct CompressedSpriteSheet sSpriteSheet_RelearnPrompt =
 {
     .data = sRelearnPrompt_Gfx,
-    .size = 64*32,
+    .size = 64*32/2,
     .tag = TAG_RELEARN_PROMPT,
 };
 
