@@ -21,7 +21,7 @@
     {
       "map": "MAP_LITTLEROOT_TOWN",
       "offset": 0,
-      "direction": "down"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -104,7 +104,9 @@
       "flag": "FLAG_HIDE_ROUTE_101_BOY"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+
+  ],
   "coord_events": [
     {
       "type": "trigger",
