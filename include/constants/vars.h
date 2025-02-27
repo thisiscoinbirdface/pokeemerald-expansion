@@ -264,10 +264,12 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
+
+//MY VARS
+#define VAR_STARTGAME_TV                                 0x40F7 // The TV intro that plays at game start
+#define VAR_LAB_FIRSTCONVO                               0x40F8 // Entering the lab for the first time
+#define VAR_LAB_EVIDENCE_GET                             0x40F9 // Get the evidence from the lab
+#define VAR_FENNILAHL_MART_SUPPLIES                      0x40FA // Check for the supplies from the fennilahl mart
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var

@@ -14093,4 +14093,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_LAB_WELCOMEPACKAGE] =
+    {
+        .name = _("Lab Package"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Just a bunch of notes\n"
+            "and things.\n"
+        ),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_PokeshiDoll,
+        .iconPalette = gItemIconPalette_PokeshiDoll,
+    },
+
 };

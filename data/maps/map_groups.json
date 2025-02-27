@@ -1,5 +1,6 @@
 {
   "group_order": [
+    "gMapGroup_MyMaps",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -34,6 +35,20 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124"
+  ],
+  "gMapGroup_MyMaps": [
+    "CarabrueTown",
+    "CarabrueTown_Home1F",
+    "CarabrueTown_Home2F",
+    "CarabrueTown_TenebrisLab",
+    "Route1",
+    "Route1_House",
+    "FennilahlTown",
+    "FennilahlTown_House1",
+    "FennilahlTown_House2",
+    "FennilahlTown_House3",
+    "FennilahlTown_PokemonCenter",
+    "FennilahlTown_Pokemart"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

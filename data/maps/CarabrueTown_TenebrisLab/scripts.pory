@@ -1,0 +1,248 @@
+mapscripts CarabrueTown_TenebrisLab_MapScripts {
+    
+   //MAP_SCRIPT_ON_RESUME: CarabrueTown_TenebrisLab_OnResume
+    
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_LAB_FIRSTCONVO, 0: CarabrueTown_TenebrisLab_EventScript_Start
+    ]
+}
+
+
+script CarabrueTown_TenebrisLab_EventScript_Start {
+    lockall
+    msgbox(
+        format("Ah! There you are! Finally.")
+    )
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 8))
+    waitmovement(0)
+
+    msgbox(
+        format("I'm Assistant Professor Rue and welcome to Tenebris Lab... er...what was your name again?")
+    )
+
+    msgbox(
+        format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh thank god! You see, we sent you the wrong package. This bag next to me has your welcome package, and the one we sent you is the evidence bag for the police! Go on - pick it up and open it.")
+    )
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
+    waitmovement(0)
+
+    giveitem(ITEM_POKE_BALL, 5)
+    giveitem(ITEM_POTION, 1)   
+
+    applymovement(3, moves(walk_down face_left))
+    waitmovement(3)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+
+    msgbox(
+        format(
+            "Normally I would brief you on your work, but we've got no time. So I'm just going to have you start working right away. We've been running low on supplies and the nearest Pokemart is in Fennilahl Town, past Route 1. Please go and pick up our shipment and bring it back." 
+        )
+    )
+    release
+
+    applymovement(3, moves(jump_in_place_left))
+    waitmovement(3)
+
+    msgbox(
+        format(
+            "And on the way, could you give the evidence bag you have to the police? They're waiting at the edge of town." 
+        )
+    )
+
+    applymovement(3, moves(face_left, face_right, face_up, face_down, jump_in_place_up_down))
+    waitmovement(3)
+
+    msgbox(
+        format(
+            "You'll need a companion Pokemon to protect you. Pick up any of the Pokeballs lying around the lab. If we had our supplies, I could give you the standard companion Pokemon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find here. Argh! It's all a mess!"
+        )
+    )
+
+    setvar(VAR_LAB_FIRSTCONVO, 1)
+    releaseall
+
+}
+
+
+
+script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
+ 
+    lockall
+
+    if (flag(FLAG_UNUSED_0x020)){
+        msgbox(format("One of the Lab's Pokemon."))
+    } else {
+
+        showmonpic(SPECIES_RIOLU, 10,3)
+        msgbox("Do you want to choose Riolu?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            removeobject(4)
+            givemon(SPECIES_RIOLU, 5, ITEM_POKE_BALL)
+            setflag(FLAG_SYS_POKEMON_GET)
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox(format("The Tenebris Lab has gifted you a Riolu!"))
+                removeobject(1)
+                setflag(FLAG_UNUSED_0x020)
+                call(NicknamePartyMon)
+            }
+        }
+        else{
+            hidemonpic
+        }
+    }
+
+    waitmessage
+    releaseall
+    end
+ 
+}
+
+script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
+ 
+    lockall
+
+    if (flag(FLAG_UNUSED_0x020)){
+        msgbox(format("One of the Lab's Pokemon."))
+    } else {
+
+        showmonpic(SPECIES_ROCKRUFF, 10,3)
+        msgbox("Do you want to choose Rockruff?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            givemon(SPECIES_ROCKRUFF, 5, ITEM_POKE_BALL)
+            setflag(FLAG_SYS_POKEMON_GET)
+            removeobject(7)
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox(format("The Tenebris Lab has gifted you a Rockruff!"))
+                removeobject(1)
+                setflag(FLAG_UNUSED_0x020)
+                call(NicknamePartyMon)
+            }
+        }
+        else{
+            hidemonpic
+        }
+    }
+
+    waitmessage
+    releaseall
+    end
+ 
+}
+
+script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
+ 
+    lockall
+
+    if (flag(FLAG_UNUSED_0x020)){
+        msgbox(format("One of the Lab's Pokemon."))
+    } else {
+
+        showmonpic(SPECIES_RUFFLET, 10,3)
+        msgbox("Do you want to choose Rufflet?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            givemon(SPECIES_RUFFLET, 5, ITEM_POKE_BALL)
+            setflag(FLAG_SYS_POKEMON_GET)
+            removeobject(6)
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox(format("The Tenebris Lab has gifted you a Rufflet!"))
+                removeobject(1)
+                setflag(FLAG_UNUSED_0x020)
+                call(NicknamePartyMon)
+            }
+        }
+        else{
+            hidemonpic
+        }
+    }
+
+    waitmessage
+    releaseall
+    end
+ 
+}
+
+script NicknamePartyMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+ 
+}
+ 
+script NicknameBoxMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+ 
+}
+
+script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
+
+    lockall
+
+    if (!flag(FLAG_UNUSED_0x020)){
+        msgbox(format("Assistant Professor Rue told me not to leave without a Pokemon to protect me!"))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+        waitmovement(0)
+    }
+
+    releaseall
+    end
+
+
+
+}
+
+script CarabrueTown_TenebrisLab_EventScript_Rue{
+    lockall
+    msgbox(
+        format(
+            "We're counting on you!"
+        )
+    )
+    releaseall
+}
+
+
+script CarabrueTown_TenebrisLab_EventScript_Scientist1{
+    lockall
+    msgbox(
+        format(
+            "There's so much work that I don't even know where to start!"
+        )
+    )
+    releaseall
+}
+
+script CarabrueTown_TenebrisLab_EventScript_Scientist2{
+    lockall
+    msgbox(
+        format(
+            "I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."
+        )
+    )
+    releaseall
+}
+
+
+
+
+
+
+
+

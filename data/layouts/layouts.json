@@ -4410,6 +4410,126 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARABRUE_TOWN",
+      "name": "CarabrueTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/CarabrueTown/border.bin",
+      "blockdata_filepath": "data/layouts/CarabrueTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARABRUE_TOWN_HOME1F",
+      "name": "CarabrueTown_Home1F_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/CarabrueTown_Home1F/border.bin",
+      "blockdata_filepath": "data/layouts/CarabrueTown_Home1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 36,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARABRUE_TOWN_HOME2F",
+      "name": "CarabrueTown_Home2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/CarabrueTown_Home2F/border.bin",
+      "blockdata_filepath": "data/layouts/CarabrueTown_Home2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARABRUE_TOWN_TENEBRIS_LAB",
+      "name": "CarabrueTown_TenebrisLab_Layout",
+      "width": 10,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/CarabrueTown_TenebrisLab/border.bin",
+      "blockdata_filepath": "data/layouts/CarabrueTown_TenebrisLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1_HOUSE",
+      "name": "Route1_House_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Route1_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route1_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN",
+      "name": "FennilahlTown_Layout",
+      "width": 42,
+      "height": 39,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/FennilahlTown/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN_HOUSE1",
+      "name": "FennilahlTown_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FennilahlTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN_HOUSE2",
+      "name": "FennilahlTown_House2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FennilahlTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN_HOUSE3",
+      "name": "FennilahlTown_House3_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FennilahlTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN_POKEMON_CENTER",
+      "name": "FennilahlTown_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FennilahlTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TOWN_POKEMART",
+      "name": "FennilahlTown_Pokemart_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/FennilahlTown_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTown_Pokemart/map.bin"
     }
   ]
 }

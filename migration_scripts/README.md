@@ -333,7 +333,7 @@ Modifies all item ball scripts defined using to original Game Freak method to th
 -      "script": "Route102_EventScript_ItemPotion",
 +      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
 +      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_102_POTION"
+      "flag": "0"
     },
 ```
 

@@ -57,6 +57,7 @@
 #include "constants/union_room.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
+#include "constants/quests.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -1151,3 +1152,25 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/CarabrueTown/scripts.inc"
+	.include "data/maps/CarabrueTown_Home1F/scripts.inc"
+	.include "data/maps/CarabrueTown_Home2F/scripts.inc"
+	.include "data/maps/CarabrueTown_TenebrisLab/scripts.inc"
+	.include "data/maps/Route1/scripts.inc"	
+	.include "data/maps/Route1_House/scripts.inc"
+
+
+
+
+	.include "data/maps/FennilahlTown/scripts.inc"
+
+	.include "data/maps/FennilahlTown_House1/scripts.inc"
+
+	.include "data/maps/FennilahlTown_House2/scripts.inc"
+
+	.include "data/maps/FennilahlTown_House3/scripts.inc"
+
+	.include "data/maps/FennilahlTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/FennilahlTown_Pokemart/scripts.inc"
