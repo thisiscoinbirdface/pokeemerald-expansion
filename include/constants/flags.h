@@ -1053,8 +1053,8 @@
 // Item Ball Flags (I AM CHANGING THESE ONE BY ONE)
 #define FLAG_ITEM_ROUTE_1_POTION                                  0x3E8
 #define FLAG_ITEM_ROUTE_1_POKE_BALL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
+#define FLAG_ITEM_ROUTE_2_POTION                                  0x3EA //FLAG_ITEM_ROUTE_104_PP_UP
+#define FLAG_ITEM_ROUTE_2_CAVE_STARDUST                                   0x3EB //FLAG_ITEM_ROUTE_105_IRON
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE

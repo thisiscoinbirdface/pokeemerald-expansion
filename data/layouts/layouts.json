@@ -4544,7 +4544,7 @@
     {
       "id": "LAYOUT_ROUTE2_CAVES",
       "name": "Route2_Caves_Layout",
-      "width": 40,
+      "width": 60,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MeteorFalls",
