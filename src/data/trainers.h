@@ -26,7 +26,7 @@
         },
     },
 #line 84
-    [TRAINER_ROUTE1_JOSE] =
+   [DIFFICULTY_NORMAL][TRAINER_ROUTE1_JOSE] =
     {
 #line 85
         .trainerName = _("Jose"),
@@ -58,7 +58,7 @@
         },
     },
 #line 97
-    [TRAINER_ROUTE1_SANA] =
+        [DIFFICULTY_NORMAL][TRAINER_ROUTE1_SANA] =
     {
 #line 98
         .trainerName = _("Sana"),
@@ -92,7 +92,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 110
-    [TRAINER_ROUTE1_MORTEM] =
+[DIFFICULTY_NORMAL][TRAINER_ROUTE1_MORTEM] =
     {
 #line 111
         .trainerName = _("Mortem"),
