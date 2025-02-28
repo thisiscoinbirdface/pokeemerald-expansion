@@ -90,7 +90,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     addobject(9)
     addobject(8)
 
-    msgbox(format("Rue: Good, you're back. Come here. "))
+    msgbox(format("Rue: Good, you're back. Come here."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
