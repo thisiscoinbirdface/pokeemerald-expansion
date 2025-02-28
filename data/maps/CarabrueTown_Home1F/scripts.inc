@@ -31,31 +31,35 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 34 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_1
 # 36 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	applyemovement 1, jump_in_place_right
+	applymovement 1, CarabrueTown_Home1F_EventScript_StartGame_Movement_3
 # 37 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	waitmovement 1
 # 38 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	message CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_3
+	playfanfare
+# 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	MUS_OBTAIN_ITEM
 # 40 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	waitfanfare
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_3
 # 41 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_4
+	waitfanfare
 # 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	setflag FLAG_RECEIVED_RUNNING_SHOES
-# 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 43 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_4
+# 46 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_5
-# 47 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	setvar VAR_STARTGAME_TV, 1
 # 49 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	setvar VAR_STARTGAME_TV, 1
+# 51 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	return
 
 
-# 53 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 55 "data//maps/CarabrueTown_Home1F/scripts.pory"
 Player_Face_Up:
-# 54 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 56 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_up
 	step_end
 
@@ -85,6 +89,12 @@ CarabrueTown_Home1F_EventScript_StartGame_Movement_2:
 	face_left
 	step_end
 
+# 36 "data//maps/CarabrueTown_Home1F/scripts.pory"
+CarabrueTown_Home1F_EventScript_StartGame_Movement_3:
+# 36 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	jump_in_place_right
+	step_end
+
 CarabrueTown_Home1F_EventScript_StartGame_Text_0:
 # 18 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And in the big news of the day, we have\n"
@@ -111,12 +121,12 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_2:
 	.string "pair of shoes for a new adventure!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_3:
-# 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 40 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_4:
-# 41 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 43 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions. Press the B Button while\l"
 	.string "wearing these RUNNING SHOES to run\l"
@@ -124,7 +134,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_4:
 	.string "SHOES and race in the great outdoors!”$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_5:
-# 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 46 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And before you zip off, don't forget to\n"
 	.string "take the welcome package they sent you\l"
 	.string "- it's upstairs!$"

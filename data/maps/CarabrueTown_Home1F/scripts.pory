@@ -33,13 +33,15 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     waitmovement(OBJ_EVENT_ID_PLAYER)   
     msgbox(format("Mom: How scary...even in a small town like ours, people can go missing. And it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor around, so make sure you do your best, okay?" ))
 
-    applyemovement(1, jump_in_place_right)
+    applymovement(1, moves(jump_in_place_right))
     waitmovement(1)
     message(format("I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
+    playfanfare MUS_OBTAIN_ITEM
     msgbox(format("{PLAYER} switched shoes with the RUNNING SHOES"))
 	waitfanfare    
-    msgbox(format("MOM: {PLAYER}, those shoes came with instructions. Press the B Button while wearing these RUNNING SHOES to run extra-fast! Slip on these RUNNING SHOES and race in the great outdoors!”$"))
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
+    msgbox(format("MOM: {PLAYER}, those shoes came with instructions. Press the B Button while wearing these RUNNING SHOES to run extra-fast! Slip on these RUNNING SHOES and race in the great outdoors!”$"))
+    
 
     msgbox(format("And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
 
