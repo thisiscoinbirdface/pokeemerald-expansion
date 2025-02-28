@@ -37,9 +37,7 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 38 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	message CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	playfanfare
-# 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	MUS_OBTAIN_ITEM
+	playfanfare MUS_OBTAIN_ITEM
 # 40 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_3
 # 41 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -47,19 +45,21 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 # 43 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	setflag FLAG_SYS_B_DASH
+# 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_4
-# 46 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 47 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_5
-# 49 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 50 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	setvar VAR_STARTGAME_TV, 1
-# 51 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 52 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	return
 
 
-# 55 "data//maps/CarabrueTown_Home1F/scripts.pory"
-Player_Face_Up:
 # 56 "data//maps/CarabrueTown_Home1F/scripts.pory"
+Player_Face_Up:
+# 57 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_up
 	step_end
 
@@ -126,7 +126,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_3:
 	.string "RUNNING SHOES$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_4:
-# 43 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions. Press the B Button while\l"
 	.string "wearing these RUNNING SHOES to run\l"
@@ -134,7 +134,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_4:
 	.string "SHOES and race in the great outdoors!”$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_5:
-# 46 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 47 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And before you zip off, don't forget to\n"
 	.string "take the welcome package they sent you\l"
 	.string "- it's upstairs!$"

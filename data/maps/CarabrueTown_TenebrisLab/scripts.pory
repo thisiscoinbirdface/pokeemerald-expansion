@@ -281,8 +281,6 @@ script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
     releaseall
     end
 
-
-
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Rue{

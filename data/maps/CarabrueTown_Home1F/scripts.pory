@@ -36,11 +36,12 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     applymovement(1, moves(jump_in_place_right))
     waitmovement(1)
     message(format("I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
-    playfanfare MUS_OBTAIN_ITEM
+    playfanfare(MUS_OBTAIN_ITEM)
     msgbox(format("{PLAYER} switched shoes with the RUNNING SHOES"))
 	waitfanfare    
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
-    msgbox(format("MOM: {PLAYER}, those shoes came with instructions. Press the B Button while wearing these RUNNING SHOES to run extra-fast! Slip on these RUNNING SHOES and race in the great outdoors!”$"))
+    setflag(FLAG_SYS_B_DASH)    
+    msgbox(format("MOM: {PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. Slip on these RUNNING SHOES and race in the great outdoors!"))
     
 
     msgbox(format("And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
@@ -57,4 +58,20 @@ movement Player_Face_Up{
 }
 
 script CarabrueTown_Home1F_OnResume{}
+
+
+script CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage{
+
+    lockall
+
+    if (!flag(FLAG_WELCOMEPACKAGE_GET)){
+        msgbox(format("I should get my welcome package before leaving!"))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+        waitmovement(0)
+    }
+
+    releaseall
+    end
+
+}
 
