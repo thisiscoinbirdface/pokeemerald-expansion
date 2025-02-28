@@ -6,11 +6,11 @@
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
   "allow_escaping": false,
-  "allow_running": false,
-  "show_map_name": true,
+  "allow_running": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -23,7 +23,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE2_CAVES",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

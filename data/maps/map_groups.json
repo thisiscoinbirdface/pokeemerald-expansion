@@ -49,7 +49,8 @@
     "FennilahlTown_House3",
     "FennilahlTown_PokemonCenter",
     "FennilahlTown_Pokemart",
-    "Route2"
+    "Route2",
+    "Route2_Caves"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

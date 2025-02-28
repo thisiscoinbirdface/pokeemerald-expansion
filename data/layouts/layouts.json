@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/Route2/border.bin",
       "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2_CAVES",
+      "name": "Route2_Caves_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/Route2_Caves/border.bin",
+      "blockdata_filepath": "data/layouts/Route2_Caves/map.bin"
     }
   ]
 }
