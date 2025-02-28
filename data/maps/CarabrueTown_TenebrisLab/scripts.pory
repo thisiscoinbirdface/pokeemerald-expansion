@@ -1,19 +1,23 @@
 mapscripts CarabrueTown_TenebrisLab_MapScripts {
     
    //MAP_SCRIPT_ON_RESUME: CarabrueTown_TenebrisLab_OnResume
-    
+
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_LAB_STATE, 0: CarabrueTown_TenebrisLab_EventScript_Start
         VAR_LAB_STATE, 1: CarabrueTown_TenebrisLab_EventScript_NoSupplies        
     ]
+
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_TEMP_1, 0: CarabrueTown_TenebrisLab_EventScript_OnWarp
+    ]
 }
-
-
-script CarabrueTown_TenebrisLab_EventScript_Start {
+script CarabrueTown_TenebrisLab_EventScript_OnWarp{
     removeobject(8)
     removeobject(9)
     removeobject(10)
+}
 
+script CarabrueTown_TenebrisLab_EventScript_Start {
 
     lockall
     msgbox(format("Ah! There you are! Finally."))
@@ -78,18 +82,13 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 
 
 script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
-
     if (var(VAR_FENNILAHL_MART_SUPPLIES) == 0){
-        removeobject(8)
-        removeobject(9)
-        removeobject(10)
         end
     }
 
     lockall
-
-    //first remove the rival temporarily
-    removeobject(10)
+    addobject(9)
+    addobject(8)
 
     msgbox(format("Rue: Good, you're back. Come here. "))
     release
@@ -202,7 +201,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     //Rival comes in (Wally)
     msgbox(format("???: Wait right there!"))    
     addobject(10)
-    applymovement(10, moves(walk_fast_up * 18 face_left))
+    applymovement(10, moves(walk_fast_up * 10 face_left))
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)      
@@ -231,12 +230,30 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     applymovement(10, moves(face_right))
     waitmovement(0) 
     msgbox(format("C'mon {PLAYER}, let's see who's a better fit for the job!"))  
+    release
 
     //Trainer battle
-    trainerbattle_single(TRAINER_KOHLA_LAB, "Get ready to burn!", "You won't be this lucky next time, {PLAYER}!")
+    trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time, {PLAYER}!")
+    msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
     release
-    msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone first!"))
+
+    applymovement(10, moves(face_left))
+    waitmovement(0)     
+    msgbox(format("Kohla: Over and out, sir!")) 
     release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement(0)  
+    applymovement(10, moves(walk_fast_down * 10))
+    waitmovement(0)
+    removeobject(10)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)  
+    msgbox(format("Detective 1: Well Rue, looks like this kid's got some guts. {PLAYER}, you aren't too shabby after all. We're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
+    msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
+    msgbox(format("Detective 1: {PLAYER} - you know what to do. Head to Mt. Ceram and find the dreamstone inside."))  
+    msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
 
     setvar(VAR_LAB_STATE, 2)
     releaseall
