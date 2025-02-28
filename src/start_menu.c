@@ -69,7 +69,7 @@ enum
     MENU_ACTION_RETIRE_FRONTIER,
     MENU_ACTION_PYRAMID_BAG,
     MENU_ACTION_DEBUG,
-    MENU_ACTION_DEXNAV,,
+    MENU_ACTION_DEXNAV,
     MENU_ACTION_QUEST_MENU,
 };
 
@@ -189,8 +189,6 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
     .paletteNum = 15,
     .baseBlock = 0x8
 };
-
-static const u8 sText_MenuDebug[] = _("DEBUG");
 
 static const u8 sText_MenuDebug[] = _("DEBUG");
 
