@@ -10,6 +10,11 @@ mapscripts CarabrueTown_TenebrisLab_MapScripts {
 
 
 script CarabrueTown_TenebrisLab_EventScript_Start {
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+
+
     lockall
     msgbox(format("Ah! There you are! Finally."))
     release
@@ -82,8 +87,6 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
     //first remove the rival temporarily
     removeobject(10)
-    addobject(8)
-    addobject(9)
 
     msgbox(format("Rue: Good, you're back. Come here. "))
     release
@@ -231,7 +234,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     release
     msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone first!"))
     release
-    
+
     setvar(VAR_LAB_STATE, 2)
     releaseall
 
