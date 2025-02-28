@@ -140,7 +140,7 @@ F_TRAINER_FEMALE |
 #line 128
         .trainerName = _("Kohla"),
 #line 129
-        .trainerClass = TRAINER_CLASS_AQUA_GRUNT_M,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 130
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =

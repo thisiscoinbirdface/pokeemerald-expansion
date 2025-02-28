@@ -82,6 +82,8 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
     //first remove the rival temporarily
     removeobject(10)
+    addobject(8)
+    addobject(9)
 
     msgbox(format("Rue: Good, you're back. Come here. "))
     release
@@ -194,7 +196,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     //Rival comes in (Wally)
     msgbox(format("???: Wait right there!"))    
     addobject(10)
-    applymovement(10, moves(walk_up * 10 face_left))
+    applymovement(10, moves(walk_fast_up * 18 face_left))
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)      
@@ -225,8 +227,11 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     msgbox(format("C'mon {PLAYER}, let's see who's a better fit for the job!"))  
 
     //Trainer battle
-    trainerbattle_single(TRAINER_ROUTE1_SANA, "Get ready to burn!", "You won't be this lucky next time, {PLAYER}!")
-
+    trainerbattle_single(TRAINER_KOHLA_LAB, "Get ready to burn!", "You won't be this lucky next time, {PLAYER}!")
+    release
+    msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone first!"))
+    release
+    
     setvar(VAR_LAB_STATE, 2)
     releaseall
 
