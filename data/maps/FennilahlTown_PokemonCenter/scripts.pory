@@ -1,0 +1,16 @@
+mapscripts FennilahlTown_PokemonCenter_MapScripts {}
+
+
+script FennilahlTown_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, LOCALID_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+}
+
+
+
+
+

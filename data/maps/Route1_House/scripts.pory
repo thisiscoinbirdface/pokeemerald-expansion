@@ -1,0 +1,12 @@
+mapscripts Route1_House_MapScripts {}
+
+script Route1_House_RandomDude {
+    lockall
+    msgbox(
+        format(
+            "Did you know that Pokemon hide in the grass? Be careful!"
+        )
+    )
+    releaseall
+}
+

@@ -1,0 +1,39 @@
+mapscripts Route1_MapScripts {}
+
+script Route1_EventScripts_RandomDude {
+    lockall
+    msgbox(
+        format(
+            "Did you know that Pokemon hide in the grass? Be careful!"
+        )
+    )
+    releaseall
+}
+
+script Route1_TrainerBattle_Jose {
+
+    trainerbattle_single(TRAINER_ROUTE1_JOSE, "Sup dude", "Damn bro")
+    msgbox(format("Yooo"))
+    release
+    end
+
+}
+
+script Route1_TrainerBattle_Sana {
+
+    trainerbattle_single(TRAINER_ROUTE1_SANA, "Sefe fefe", "fefe fef efe err rr rrr")
+    msgbox(format("goo"))
+    release
+    end
+
+}
+
+script Route1_TrainerBattle_Mortem {
+
+    trainerbattle_single(TRAINER_ROUTE1_MORTEM, "Sefe fefe", "fefe fef efe err rr rrr")
+    msgbox(format("goo"))
+    release
+    end
+
+}
+

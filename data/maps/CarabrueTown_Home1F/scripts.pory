@@ -1,0 +1,53 @@
+mapscripts CarabrueTown_Home1F_MapScripts {
+    
+    MAP_SCRIPT_ON_RESUME: CarabrueTown_Home1F_OnResume
+    
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_STARTGAME_TV, 0: CarabrueTown_Home1F_EventScript_StartGame
+    ]
+}
+
+script CarabrueTown_Home1F_EventScript_StartGame{
+
+    lockall
+
+    //TV plays info about prof disappearance
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    msgbox(
+        format(
+            "And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokemon Professor have vanished to? And why?"
+        )
+    )
+    release
+
+    //Mom gets up and goes to player
+    applymovement(1, moves(
+        walk_up
+        walk_right * 2
+        )
+    )
+    waitmovement(1)
+
+    //Player faces mom, dialogue starts
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(OBJ_EVENT_ID_PLAYER)   
+    msgbox(
+        format(
+            "Mom: How scary...even in a small town like ours, people can go missing. And it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor around, so make sure you do your best, okay? And don't forget to take the welcome package they sent you - it's upstairs!"
+        )
+    )
+
+    //Set temp var to done
+
+    setvar(VAR_STARTGAME_TV, 1)
+
+    releaseall
+
+}
+
+movement Player_Face_Up{
+    face_up
+}
+
+script CarabrueTown_Home1F_OnResume{}
+

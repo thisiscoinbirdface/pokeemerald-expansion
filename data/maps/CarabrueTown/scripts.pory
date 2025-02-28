@@ -1,0 +1,38 @@
+mapscripts CarabrueTown_MapScripts{}
+
+script CarabrueTown_EventScript_PoliceRoadBlock{
+
+    lockall
+
+    if (!flag(FLAG_UNUSED_0x020)) {
+        msgbox(
+            format(
+                "Sorry, this road is temporarily closed. We're investigating Professor Tenebris' disappearance."
+            )
+        )
+    } else {
+        msgbox(
+            format(
+                "Is this the evidence from the lab? Perfect. Thanks, kid. We'll take it from here."
+            )
+        )
+        release
+
+        applymovement(1, moves(face_right))
+        applymovement(2, moves(face_right))
+        waitmovement(2)
+        applymovement(1, moves(walk_right * 9))
+        applymovement(2, moves(walk_right * 9))
+        waitmovement(2)
+
+        removeobject(1)
+        removeobject(2) 
+
+        setflag(FLAG_CARABRUE_POLICE)
+    }
+
+    releaseall
+
+}
+
+

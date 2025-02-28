@@ -1,0 +1,53 @@
+mapscripts FennilahlTown_Pokemart_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_FENNILAHL_MART_SUPPLIES, 0: FennilahlTown_Pokemart_EventScript_LabSupplies
+    ]
+}
+
+script FennilahlTown_Pokemart_EventScript_LabSupplies{
+	lockall
+    applymovement(1, moves(face_down))
+    waitmovement(0)
+    msgbox(format("Ah, are you from the Tenebris Lab? We've been waiting for a pickup. Come here."))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_left))
+    waitmovement(0)
+    applymovement(1, moves(face_right))
+    waitmovement(0)    
+    msgbox(format("We've been waiting for a pickup. Of course, I understand you must be busy, what with him disappearing into thin air and everything. Now where was it?"))
+    release
+    applymovement(1, moves(walk_up))
+    waitmovement(0)  
+    msgbox(format("It should be right here...hold on...maybe under this...or was it here? "))
+    release
+    applymovement(1, moves(walk_down))
+    waitmovement(0)  
+    msgbox(format("It's not here either. Where could it have gone?")) 
+    applymovement(1, moves(face_right))
+    waitmovement(0)     
+    msgbox(format("Let me check our records...hmm, that's strange. It says that Professor Tenebris already picked it up last week. Weird...I'm sorry, I can't help you. You should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
+	releaseall
+
+    setvar(VAR_FENNILAHL_MART_SUPPLIES, 1)
+
+}
+
+
+script FennilahlTown_Pokemart_EventScript_Clerk{
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(FennilahlTown_Pokemart_Inventory)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart FennilahlTown_Pokemart_Inventory {
+    ITEM_POTION
+    ITEM_POKE_BALL
+}
+
+
+

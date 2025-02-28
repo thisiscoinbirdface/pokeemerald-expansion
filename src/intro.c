@@ -1110,6 +1110,9 @@ static u8 SetUpCopyrightScreen(void)
         UpdatePaletteFade();
         gMain.state++;
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        if ((JOY_NEW(A_BUTTON)) || (JOY_NEW(L_BUTTON)) || (JOY_NEW(START_BUTTON)))
+        gMain.state = 140;
+        
         break;
     case COPYRIGHT_START_FADE:
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
@@ -1123,11 +1126,11 @@ static u8 SetUpCopyrightScreen(void)
         if (UpdatePaletteFade())
             break;
 #if EXPANSION_INTRO == TRUE
-        SetMainCallback2(CB2_ExpansionIntro);
+        SetMainCallback2(CB2_InitTitleScreen);
         CreateTask(Task_HandleExpansionIntro, 0);
 #else
         CreateTask(Task_Scene1_Load, 0);
-        SetMainCallback2(MainCB2_Intro);
+        SetMainCallback2(CB2_InitTitleScreen);
 #endif
         if (gMultibootProgramStruct.gcmb_field_2 != 0)
         {
