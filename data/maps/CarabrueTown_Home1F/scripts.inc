@@ -61,7 +61,7 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 57 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	setflag FLAG_SYS_QUEST_MENU_GET
 # 58 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_INFINITY_STONES
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_LAB_ASSISTANT
 # 60 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	return

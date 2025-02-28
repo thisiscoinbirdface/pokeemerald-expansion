@@ -155,12 +155,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 136
-            .species = SPECIES_ZUBAT,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 138
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 137
-            .lvl = 7,
+            .lvl = 8,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

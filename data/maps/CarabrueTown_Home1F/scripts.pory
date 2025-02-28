@@ -54,8 +54,8 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     //Set var to done
     setvar(VAR_STARTGAME_TV, 1)
     //Set quest active
-    setflag(FLAG_SYS_QUEST_MENU_GET)
-    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_INFINITY_STONES)
+    // setflag(FLAG_SYS_QUEST_MENU_GET)
+    // questmenu(QUEST_MENU_SET_ACTIVE, QUEST_LAB_ASSISTANT)
 
     releaseall
 
@@ -81,5 +81,16 @@ script CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage{
     releaseall
     end
 
+}
+
+script CarabrueTown_Home1F_EventScript_MomGeneric{
+    lockall
+    msgbox(format("Mom: I love you! You're looking a bit tired. Why don't you rest?"))
+    release
+	call(Common_EventScript_OutOfCenterPartyHeal)
+	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
+	msgbox(format("Mom: Take care {PLAYER}!")
+	releaseall
+	end
 }
 

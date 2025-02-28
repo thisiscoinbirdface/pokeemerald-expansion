@@ -18,6 +18,9 @@ script CarabrueTown_TenebrisLab_EventScript_OnWarp{
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Start {
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
 
     lockall
     msgbox(format("Ah! There you are! Finally."))
@@ -84,180 +87,187 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
     if (var(VAR_FENNILAHL_MART_SUPPLIES) == 0){
         end
+    } else {
+
+        lockall
+        addobject(9)
+        addobject(8)
+
+        msgbox(format("Rue: Good, you're back. Come here."))
+        release
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
+        waitmovement(0)
+
+        msgbox(format("Rue: As you can see, we have visitors."))
+
+        applymovement(3, moves(face_left))
+        waitmovement(0)
+        msgbox(format("Rue: Detectives, meet our newest assistant."))
+        msgbox(format("Detective 1: We've met already. Thanks again for the evidence, kid."))
+
+        applymovement(3, moves(face_down))
+        waitmovement(0)
+        msgbox(format("Rue: Have you got the supplies? No?"))
+        release
+        
+        applymovement(3, moves(jump_in_place_down))
+        waitmovement(0)
+        msgbox(format("Rue: WHAT?! Professor Tenebris took them? But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
+
+        applymovement(3, moves(face_left))
+        waitmovement(0)
+        msgbox(format("Rue: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of Cormoria. You see..."))
+        release
+
+        applymovement(3, moves(face_down))
+        waitmovement(0)
+        msgbox(format("Rue: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
+        release
+
+        applymovement(3, moves(walk_left walk_down *2 walk_right*2))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        waitmovement(0)
+        msgbox(format("Rue: This baby right here is our lab's pride and joy - the Dreamalyser. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
+        release
+
+        applymovement(3, moves(face_left))
+        waitmovement(0)
+        msgbox(format("Rue: No...this thing needs something far more potent. We plan to use dreamstones to power it. Put simply - dreamstones are powerful reserves of subconscious energy in solidified form. So far, we know of only three across all of Cormoria. They're rare. Rare and valuable. So rare that none of you know about it. So valuable that people would pay a fortune to obtain one. And in the wrong hands..."))
+        release
+
+        applymovement(3, moves(walk_left face_up))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        waitmovement(0)
+        msgbox(format("Rue: And this time we were supposed to receive two things in our supplies - your companion Pokemon...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
+        msgbox(format("Rue: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
+        msgbox(format("Detective: If we could get our hands on one of the other dreamstones, we might be able to understand why the Professor vanished."))
+        msgbox(format("Rue: Maybe..."))
+        release
+
+        applymovement(3, moves(walk_left *2 face_up))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        waitmovement(0)    
+        applymovement(9, moves(face_down))
+        waitmovement(0)
+        applymovement(8, moves(face_down))
+        waitmovement(0)    
+
+        msgbox(format("Rue: Detectives...please. You must find the Professor!"))
+        msgbox(format("Detective 1: Finding him is what we're here for. Again, I can't shake the hunch that the other dreamstones could provide us with a clue."))
+        msgbox(format("Rue: Whatever you need to do!"))
+        msgbox(format("Detective 1: We'll do our best, Rue. But we're detectives, not researchers. We can uncover his tracks, but we can't unravel his mind. We'll need some help from one of you."))
+        msgbox(format("Rue: Anything. What do you plan to do?"))
+        msgbox(format("Detective 1: A two-pronged strategy - while we track the Professor, we want one of you to go and retrieve one of the other dreamstones for us to examine for clues."))
+        msgbox(format("Rue: But none of us can leave the lab! There's too much work."))
+        msgbox(format("Detective 1: Well...there is one who can..."))
+        msgbox(format("Rue: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
+        msgbox(format("Detective 1: What else do you suggest? Perhaps not ideal, but {PLAYER} is the best we've got right now."))
+        msgbox(format("Rue: Right...yes. You're right."))
+        release
+
+        applymovement(9, moves(face_right))
+        waitmovement(0)
+        applymovement(8, moves(face_right))
+        waitmovement(0)    
+        applymovement(3, moves(walk_right *2 face_up))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        waitmovement(0)
+
+        msgbox(format("{PLAYER} - I know it's only your first day, but finding Professor Tenebris is the most important thing right now. And none of us can leave the lab."))
+        msgbox(format("Rue: The three dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast. Very vast. Dangerous Pokemon have made the mountains, forests and seas their territory. It won't be easy."))
+        msgbox(format("Rue: I don't know how I can help...perhaps this may be of use, {PLAYER}."))
+        release   
+        //Pokedex Get
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox(format("{PLAYER} received a Pokedex from Assistant Professor Rue."))
+        waitfanfare  
+        setflag(FLAG_SYS_POKEDEX_GET)
+
+        msgbox(format("Rue: A Pokedex. It contains information on Pokemon you've encountered. And it can store more if you catch them."))
+        release
+
+        applymovement(3, moves(walk_left walk_up *2 walk_right face_down))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        waitmovement(0)
+
+        msgbox(format("Rue: Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
+        msgbox(format("Rue: I've failed."))
+        msgbox(format("Detective 1: Get it together, Rue. You still have work to do. The other researchers are counting on you. Have some faith in us...and...well...{PLAYER}."))
+        release
+
+        //Rival comes in (Wally)
+        msgbox(format("???: Wait right there!"))    
+        addobject(10)
+        applymovement(10, moves(walk_fast_up * 10 face_left))
+        waitmovement(0)    
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        waitmovement(0)      
+        release
+        msgbox(format("???: Sir, I overheard the whole thing! And I protest!"))    
+        release
+
+        applymovement(10, moves(face_right))
+        waitmovement(0) 
+        msgbox(format("???: You can't give this kid a job like that! What's your name? {PLAYER}? Pshh, whatever. Look at you! Your Pokemon look exhausted after a single trip to Fennilahl Town!"))  
+
+        applymovement(10, moves(face_left))
+        waitmovement(0) 
+        msgbox(format("???: Screw this kid sir! Let ME handle the dreamstones!"))  
+        msgbox(format("Rue: Excuse me..."))  
+        msgbox(format("Detective 1: Meet Kohla, this years ace rookie from the Detective Academy."))  
+
+        applymovement(10, moves(face_right))
+        waitmovement(0) 
+        msgbox(format("Kohla: Heard that {PLAYER}? ACE. ROOKIE. This is serious business. You can't handle this. Back off!"))  
+        msgbox(format("Detective 1: Now hold on Zohra, there's no need for all this. {PLAYER} is representing the Professor's lab. We needed someone from the lab to help us track the dreamstones."))  
+
+        applymovement(10, moves(face_left))
+        waitmovement(0)     
+        msgbox(format("Kohla: I can do it sir! And I'll prove it right now!")) 
+        applymovement(10, moves(face_right))
+        waitmovement(0) 
+        msgbox(format("C'mon {PLAYER}, let's see who's a better fit for the job!"))  
+        release
+
+        //Trainer battle
+        trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time, {PLAYER}!")
+        msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
+        release
+
+        applymovement(10, moves(face_left))
+        waitmovement(0)     
+        msgbox(format("Kohla: Over and out, sir!")) 
+        release
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        waitmovement(0)  
+        applymovement(10, moves(walk_fast_down * 10))
+        waitmovement(0)
+        removeobject(10)
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        waitmovement(0)  
+        msgbox(format("Detective 1: Well Rue, looks like your assistant's got some guts. {PLAYER}, you aren't too shabby after all. We're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
+        msgbox(format("Detective 1: {PLAYER} - you know what to do. Head to Mt. Ceram and find the dreamstone inside."))  
+        msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
+
+        setvar(VAR_LAB_STATE, 2)
+        releaseall
     }
+}
 
+
+script CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric{
     lockall
-    addobject(9)
-    addobject(8)
-
-    msgbox(format("Rue: Good, you're back. Come here."))
-    release
-
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
-    waitmovement(0)
-
-    msgbox(format("Rue: As you can see, we have visitors."))
-
-    applymovement(3, moves(face_left))
-    waitmovement(0)
-    msgbox(format("Rue: Detectives, meet our newest assistant."))
-    msgbox(format("Detective 1: We've met already. Thanks again for the evidence, kid."))
-
-    applymovement(3, moves(face_down))
-    waitmovement(0)
-    msgbox(format("Rue: Have you got the supplies? No?"))
-    release
-    
-    applymovement(3, moves(jump_in_place_down))
-    waitmovement(0)
-    msgbox(format("Rue: WHAT?! Professor Tenebris took them? But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
-
-    applymovement(3, moves(face_left))
-    waitmovement(0)
-    msgbox(format("Rue: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of Cormoria. You see..."))
-    release
-
-    applymovement(3, moves(face_down))
-    waitmovement(0)
-    msgbox(format("Rue: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
-    release
-
-    applymovement(3, moves(walk_left walk_down *2 walk_right*2))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-    waitmovement(0)
-    msgbox(format("Rue: This baby right here is our lab's pride and joy - the Dreamalyser. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
-    release
-
-    applymovement(3, moves(face_left))
-    waitmovement(0)
-    msgbox(format("Rue: No...this thing needs something far more potent. We plan to use dreamstones to power it. Put simply - dreamstones are powerful reserves of subconscious energy in solidified form. So far, we know of only three across all of Cormoria. They're rare. Rare and valuable. So rare that none of you know about it. So valuable that people would pay a fortune to obtain one. And in the wrong hands..."))
-    release
-
-    applymovement(3, moves(walk_left face_up))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    waitmovement(0)
-    msgbox(format("Rue: And this time we were supposed to receive two things in our supplies - your companion Pokemon...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
-    msgbox(format("Rue: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
-    msgbox(format("Detective: If we could get our hands on one of the other dreamstones, we might be able to understand why the Professor vanished."))
-    msgbox(format("Rue: Maybe..."))
-    release
-
-    applymovement(3, moves(walk_left *2 face_up))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    waitmovement(0)    
-    applymovement(9, moves(face_down))
-    waitmovement(0)
-    applymovement(8, moves(face_down))
-    waitmovement(0)    
-
-    msgbox(format("Rue: Detectives...please. You must find the Professor!"))
-    msgbox(format("Detective 1: Finding him is what we're here for. Again, I can't shake the hunch that the other dreamstones could provide us with a clue."))
-    msgbox(format("Rue: Whatever you need to do!"))
-    msgbox(format("Detective 1: We'll do our best, Rue. But we're detectives, not researchers. We can uncover his tracks, but we can't unravel his mind. We'll need some help from one of you."))
-    msgbox(format("Rue: Anything. What do you plan to do?"))
-    msgbox(format("Detective 1: A two-pronged strategy - while we track the Professor, we want one of you to go and retrieve one of the other dreamstones for us to examine for clues."))
-    msgbox(format("Rue: But none of us can leave the lab! There's too much work."))
-    msgbox(format("Detective 1: Well...there is one who can..."))
-    msgbox(format("Rue: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
-    msgbox(format("Detective 1: What else do you suggest? Perhaps not ideal, but {PLAYER} is the best we've got right now."))
-    msgbox(format("Rue: Right...yes. You're right."))
-    release
-
-    applymovement(9, moves(face_right))
-    waitmovement(0)
-    applymovement(8, moves(face_right))
-    waitmovement(0)    
-    applymovement(3, moves(walk_right *2 face_up))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    waitmovement(0)
-
-    msgbox(format("{PLAYER} - I know it's only your first day, but finding Professor Tenebris is the most important thing right now. And none of us can leave the lab."))
-    msgbox(format("Rue: The three dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast. Very vast. Dangerous Pokemon have made the mountains, forests and seas their territory. It won't be easy."))
-    msgbox(format("Rue: I don't know how I can help...perhaps this may be of use, {PLAYER}."))
-    release   
-    //Pokedex Get
-    playfanfare(MUS_OBTAIN_ITEM)
-    msgbox(format("{PLAYER} received a Pokedex from Assistant Professor Rue."))
-	waitfanfare  
-    setflag(FLAG_SYS_POKEDEX_GET)
-
-    msgbox(format("Rue: A Pokedex. It contains information on Pokemon you've encountered. And it can store more if you catch them."))
-    release
-
-    applymovement(3, moves(walk_left walk_up *2 walk_right face_down))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-    waitmovement(0)
-
-    msgbox(format("Rue: Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
-    msgbox(format("Rue: I've failed."))
-    msgbox(format("Detective 1: Get it together, Rue. You still have work to do. The other researchers are counting on you. Have some faith in us...and...well...{PLAYER}."))
-    release
-
-    //Rival comes in (Wally)
-    msgbox(format("???: Wait right there!"))    
-    addobject(10)
-    applymovement(10, moves(walk_fast_up * 10 face_left))
-    waitmovement(0)    
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    waitmovement(0)      
-    release
-    msgbox(format("???: Sir, I overheard the whole thing! And I protest!"))    
-    release
-
-    applymovement(10, moves(face_right))
-    waitmovement(0) 
-    msgbox(format("???: You can't give this kid a job like that! What's your name? {PLAYER}? Pshh, whatever. Look at you! Your Pokemon look exhausted after a single trip to Fennilahl Town!"))  
-
-    applymovement(10, moves(face_left))
-    waitmovement(0) 
-    msgbox(format("???: Screw this kid sir! Let ME handle the dreamstones!"))  
-    msgbox(format("Rue: Excuse me..."))  
-    msgbox(format("Detective 1: Meet Kohla, this years ace rookie from the Detective Academy."))  
-
-    applymovement(10, moves(face_right))
-    waitmovement(0) 
-    msgbox(format("Kohla: Heard that {PLAYER}? ACE. ROOKIE. This is serious business. You can't handle this. Back off!"))  
-    msgbox(format("Detective 1: Now hold on Zohra, there's no need for all this. {PLAYER} is representing the Professor's lab. We needed someone from the lab to help us track the dreamstones."))  
-
-    applymovement(10, moves(face_left))
-    waitmovement(0)     
-    msgbox(format("Kohla: I can do it sir! And I'll prove it right now!")) 
-    applymovement(10, moves(face_right))
-    waitmovement(0) 
-    msgbox(format("C'mon {PLAYER}, let's see who's a better fit for the job!"))  
-    release
-
-    //Trainer battle
-    trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time, {PLAYER}!")
-    msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
-    release
-
-    applymovement(10, moves(face_left))
-    waitmovement(0)     
-    msgbox(format("Kohla: Over and out, sir!")) 
-    release
-
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    waitmovement(0)  
-    applymovement(10, moves(walk_fast_down * 10))
-    waitmovement(0)
-    removeobject(10)
-
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    waitmovement(0)  
-    msgbox(format("Detective 1: Well Rue, looks like this kid's got some guts. {PLAYER}, you aren't too shabby after all. We're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
-    msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
-    msgbox(format("Detective 1: {PLAYER} - you know what to do. Head to Mt. Ceram and find the dreamstone inside."))  
-    msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
-
-    setvar(VAR_LAB_STATE, 2)
+    msgbox(format("Detective: What are you waiting for? Don't let one victory get to your head. Kohla's already got a head start on you. You'd better hurry if you wnat to catch up."))
     releaseall
-
 }
 
 
