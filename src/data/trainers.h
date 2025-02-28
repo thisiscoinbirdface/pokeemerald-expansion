@@ -26,7 +26,7 @@
         },
     },
 #line 84
-   [DIFFICULTY_NORMAL][TRAINER_ROUTE1_JOSE] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE1_JOSE] =
     {
 #line 85
         .trainerName = _("Jose"),
@@ -34,7 +34,7 @@
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 87
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 89
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 90
@@ -58,7 +58,7 @@
         },
     },
 #line 97
-        [DIFFICULTY_NORMAL][TRAINER_ROUTE1_SANA] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE1_SANA] =
     {
 #line 98
         .trainerName = _("Sana"),
@@ -66,7 +66,7 @@
         .trainerClass = TRAINER_CLASS_LASS,
 #line 100
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 101
 F_TRAINER_FEMALE | 
 #line 102
@@ -92,7 +92,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 110
-[DIFFICULTY_NORMAL][TRAINER_ROUTE1_MORTEM] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE1_MORTEM] =
     {
 #line 111
         .trainerName = _("Mortem"),
@@ -100,7 +100,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 113
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 115
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 116
@@ -135,12 +135,12 @@ F_TRAINER_FEMALE |
         },
     },
 #line 127
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_3] =
+    [DIFFICULTY_NORMAL][TRAINER_KOHLA_LAB] =
     {
 #line 128
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Kohla"),
 #line 129
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_AQUA_GRUNT_M,
 #line 130
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
@@ -160,7 +160,7 @@ F_TRAINER_FEMALE |
 #line 138
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 137
-            .lvl = 32,
+            .lvl = 7,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

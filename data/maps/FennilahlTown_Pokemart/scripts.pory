@@ -29,6 +29,8 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
 	releaseall
 
     setvar(VAR_FENNILAHL_MART_SUPPLIES, 1)
+    //Clear this flag to allow spawn of the cops and rival in the lab next.
+    clearflag(FLAG_LAB_CALLTOACTION)
 
 }
 

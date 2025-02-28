@@ -56,33 +56,35 @@ FennilahlTown_Pokemart_EventScript_LabSupplies::
 	releaseall
 # 31 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	setvar VAR_FENNILAHL_MART_SUPPLIES, 1
+# 33 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	clearflag FLAG_LAB_CALLTOACTION
 	return
 
 
 FennilahlTown_Pokemart_EventScript_Clerk::
-# 37 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	lock
-# 38 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	faceplayer
 # 39 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	message gText_HowMayIServeYou
+	lock
 # 40 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	waitmessage
+	faceplayer
 # 41 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	pokemart FennilahlTown_Pokemart_Inventory
+	message gText_HowMayIServeYou
 # 42 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	waitmessage
 # 43 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	pokemart FennilahlTown_Pokemart_Inventory
+# 44 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 45 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 47 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-FennilahlTown_Pokemart_Inventory:
-# 48 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_POTION
 # 49 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+FennilahlTown_Pokemart_Inventory:
+# 50 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_POTION
+# 51 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_NONE
 

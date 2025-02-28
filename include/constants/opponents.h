@@ -7,7 +7,7 @@
 #define TRAINER_ROUTE1_JOSE                   1
 #define TRAINER_ROUTE1_SANA                   2
 #define TRAINER_ROUTE1_MORTEM                 3
-#define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
+#define TRAINER_KOHLA_LAB                     4
 #define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
