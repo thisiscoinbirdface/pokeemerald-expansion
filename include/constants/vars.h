@@ -267,7 +267,7 @@
 
 //MY VARS
 #define VAR_STARTGAME_TV                                 0x40F7 // The TV intro that plays at game start
-#define VAR_LAB_FIRSTCONVO                               0x40F8 // Entering the lab for the first time
+#define VAR_LAB_STATE                                    0x40F8 // Cycle between lab states
 #define VAR_LAB_EVIDENCE_GET                             0x40F9 // Get the evidence from the lab
 #define VAR_FENNILAHL_MART_SUPPLIES                      0x40FA // Check for the supplies from the fennilahl mart
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var

@@ -3,7 +3,8 @@ mapscripts CarabrueTown_TenebrisLab_MapScripts {
    //MAP_SCRIPT_ON_RESUME: CarabrueTown_TenebrisLab_OnResume
     
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_LAB_FIRSTCONVO, 0: CarabrueTown_TenebrisLab_EventScript_Start
+        VAR_LAB_STATE, 0: CarabrueTown_TenebrisLab_EventScript_Start
+        VAR_LAB_STATE, 1: CarabrueTown_TenebrisLab_EventScript_NoSupplies        
     ]
 }
 
@@ -15,7 +16,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     )
     release
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 8))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
 
     msgbox(
@@ -63,10 +64,86 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
         )
     )
 
-    setvar(VAR_LAB_FIRSTCONVO, 1)
+    setvar(VAR_LAB_STATE, 1)
     releaseall
 
 }
+
+
+
+
+
+
+script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
+
+    if (var(VAR_FENNILAHL_MART_SUPPLIES) == 0){
+        end
+    }
+
+    lockall
+    msgbox(format("Rue: Good, you're back. Come here. "))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
+    waitmovement(0)
+
+    msgbox(format("Rue: As you can see, we have visitors."))
+
+    applymovement(3, moves(face_left))
+    waitmovement(0)
+    msgbox(format("Rue: Detectives, meet our newest assistant."))
+    msgbox(format("Detective 1: We've met already. Thanks again for the evidence, kid."))
+
+    applymovement(3, moves(face_down))
+    waitmovement(0)
+    msgbox(format("Rue: Have you got the supplies? No?"))
+    release
+    
+    applymovement(3, moves(jump_in_place_down))
+    waitmovement(0)
+    msgbox(format("WHAT?! Professor Tenebris took them? But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
+
+    applymovement(3, moves(face_left))
+    waitmovement(0)
+    msgbox(format("Have you heard dreamstones? No? Hardly surprising. They're not very well known. You see..."))
+    release
+
+    applymovement(3, moves(face_down))
+    waitmovement(0)
+    msgbox(format("Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
+    release
+
+    applymovement(3, moves(walk_left walk_down *2 walk_right*2))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    msgbox(format("This baby right here is our lab's pride and joy. It allows us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
+    release
+
+    applymovement(3, moves(face_left))
+    waitmovement(0)
+    msgbox(format("No...this thing needs something far more potent. We use dreamstones to power it. Put simply - dreamstones are powerful reserves of energy in solidified form. They're rare. Rare and valuable. So rare that none of you know about it. So valuable that people would pay a fortune to obtain one. And in the wrong hands..."))
+    release
+
+    applymovement(3, moves(walk_left face_up))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement(0)
+    msgbox(format("And this time we were supposed to receive two things in our supplies - your real companion Pokemon...and one dreamstone. If the Professor has it, he's painted a target on his back! Oh, why did he leave? What on earth was he thinking!?"))
+    release
+
+    setvar(VAR_LAB_STATE, 2)
+    releaseall
+
+}
+
+
+
+
+
+
+
+
 
 
 

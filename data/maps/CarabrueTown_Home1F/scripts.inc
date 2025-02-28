@@ -30,16 +30,32 @@ CarabrueTown_Home1F_EventScript_StartGame::
 	waitmovement OBJ_EVENT_ID_PLAYER
 # 34 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_1
+# 36 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	applyemovement 1, jump_in_place_right
+# 37 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	waitmovement 1
+# 38 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	message CarabrueTown_Home1F_EventScript_StartGame_Text_2
+# 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_3
+# 40 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	waitfanfare
+# 41 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_4
 # 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	setvar VAR_STARTGAME_TV, 1
+	setflag FLAG_RECEIVED_RUNNING_SHOES
 # 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_5
+# 47 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	setvar VAR_STARTGAME_TV, 1
+# 49 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	return
 
 
-# 48 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 53 "data//maps/CarabrueTown_Home1F/scripts.pory"
 Player_Face_Up:
-# 49 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 54 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_up
 	step_end
 
@@ -79,7 +95,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_0:
 	.string "have vanished to? And why?$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_1:
-# 36 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 34 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Mom: How scary...even in a small town\n"
 	.string "like ours, people can go missing. And\l"
 	.string "it's your first day working at the lab\l"
@@ -87,6 +103,28 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 	.string "there! I'm sure the lab will need all the\l"
 	.string "help it can get without the Professor\l"
 	.string "around, so make sure you do your best,\l"
-	.string "okay? And don't forget to take the\l"
-	.string "welcome package they sent you - it's\l"
-	.string "upstairs!$"
+	.string "okay?$"
+
+CarabrueTown_Home1F_EventScript_StartGame_Text_2:
+# 38 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "I almost forgot! Here you go - a new\n"
+	.string "pair of shoes for a new adventure!$"
+
+CarabrueTown_Home1F_EventScript_StartGame_Text_3:
+# 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "{PLAYER} switched shoes with the\n"
+	.string "RUNNING SHOES$"
+
+CarabrueTown_Home1F_EventScript_StartGame_Text_4:
+# 41 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "MOM: {PLAYER}, those shoes came with\n"
+	.string "instructions. Press the B Button while\l"
+	.string "wearing these RUNNING SHOES to run\l"
+	.string "extra-fast! Slip on these RUNNING\l"
+	.string "SHOES and race in the great outdoors!”$"
+
+CarabrueTown_Home1F_EventScript_StartGame_Text_5:
+# 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "And before you zip off, don't forget to\n"
+	.string "take the welcome package they sent you\l"
+	.string "- it's upstairs!$"
