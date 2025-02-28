@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/FennilahlTown_Pokemart/border.bin",
       "blockdata_filepath": "data/layouts/FennilahlTown_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }

@@ -280,28 +280,32 @@ CarabrueTown_TenebrisLab_EventScript_Rue::
 # 212 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
 # 213 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	faceplayer
+# 214 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Rue_Text_0
-# 218 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 219 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	applymovement 3, CarabrueTown_TenebrisLab_EventScript_Rue_Movement_0
+# 220 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	return
 
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1::
-# 223 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 225 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 224 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 226 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0
-# 229 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 231 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	return
 
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2::
-# 233 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 235 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 234 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 236 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0
-# 239 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 241 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	return
 
@@ -372,6 +376,12 @@ CarabrueTown_TenebrisLab_EventScript_Start_Movement_5:
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_Movement_0:
 # 200 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	walk_up
+	step_end
+
+# 219 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+CarabrueTown_TenebrisLab_EventScript_Rue_Movement_0:
+# 219 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	face_down
 	step_end
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_0:
@@ -464,16 +474,16 @@ CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_Text_0:
 	.string "leave without a Pokemon to protect me!$"
 
 CarabrueTown_TenebrisLab_EventScript_Rue_Text_0:
-# 215 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 216 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "We're counting on you!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0:
-# 226 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 228 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "There's so much work that I don't even\n"
 	.string "know where to start!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0:
-# 236 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 238 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm so grateful we have Assistant\n"
 	.string "Professor Rue. Without him to step in\l"
 	.string "for Professor Tenebris, we'd have had\l"

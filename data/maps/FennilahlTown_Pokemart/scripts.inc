@@ -126,15 +126,17 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_4:
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0:
 # 11 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.string "Ah, are you from the Tenebris Lab? We've\n"
-	.string "been waiting for a pickup. Come here.$"
+	.string "Ah, are you from the Tenebris Lab? Your\n"
+	.string "supplies have been sitting here for a\l"
+	.string "while now. Come here.$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_1:
 # 17 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "We've been waiting for a pickup. Of\n"
 	.string "course, I understand you must be busy,\l"
-	.string "what with him disappearing into thin air\l"
-	.string "and everything. Now where was it?$"
+	.string "what with your Professor disappearing\l"
+	.string "into thin air and everything. Now where\l"
+	.string "was it?$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_2:
 # 21 "data//maps/FennilahlTown_Pokemart/scripts.pory"

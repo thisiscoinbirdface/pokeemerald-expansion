@@ -210,11 +210,13 @@ script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
 
 script CarabrueTown_TenebrisLab_EventScript_Rue{
     lockall
+    faceplayer
     msgbox(
         format(
             "We're counting on you!"
         )
     )
+    applymovement(3, moves(face_down))
     releaseall
 }
 

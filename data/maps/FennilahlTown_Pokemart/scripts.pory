@@ -8,13 +8,13 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
 	lockall
     applymovement(1, moves(face_down))
     waitmovement(0)
-    msgbox(format("Ah, are you from the Tenebris Lab? We've been waiting for a pickup. Come here."))
+    msgbox(format("Ah, are you from the Tenebris Lab? Your supplies have been sitting here for a while now. Come here."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_left))
     waitmovement(0)
     applymovement(1, moves(face_right))
     waitmovement(0)    
-    msgbox(format("We've been waiting for a pickup. Of course, I understand you must be busy, what with him disappearing into thin air and everything. Now where was it?"))
+    msgbox(format("We've been waiting for a pickup. Of course, I understand you must be busy, what with your Professor disappearing into thin air and everything. Now where was it?"))
     release
     applymovement(1, moves(walk_up))
     waitmovement(0)  
