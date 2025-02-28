@@ -80,6 +80,9 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
     if (var(VAR_FENNILAHL_MART_SUPPLIES) == 0){
+        removeobject(8)
+        removeobject(9)
+        removeobject(10)
         end
     }
 
