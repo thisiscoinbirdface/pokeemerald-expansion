@@ -259,6 +259,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
 
         setvar(VAR_LAB_STATE, 2)
+        setflag(FLAG_LAB_CALLTOACTION)
         releaseall
     }
 }
@@ -266,6 +267,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
 script CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric{
     lockall
+    faceplayer
     msgbox(format("Detective: What are you waiting for? Don't let one victory get to your head. Kohla's already got a head start on you. You'd better hurry if you wnat to catch up."))
     releaseall
 }

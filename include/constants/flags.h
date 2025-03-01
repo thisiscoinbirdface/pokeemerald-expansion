@@ -51,8 +51,8 @@
 #define FLAG_LAB_POKEBALL_THREE    0x24 // Third ball to get starter in Lab
 #define FLAG_CARABRUE_POLICE    0x25 // If the police are there or not in Carabrue Town
 #define FLAG_REAL_PACKAGE_GET    0x26 // Pick up the real package from the lab
-#define FLAG_LAB_CALLTOACTION    0x27 // This flag is for the cops and Wally in the lab. It's always 1, except when
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_LAB_CALLTOACTION    0x27 // This flag is for the cops and Wally in the lab.
+#define FLAG_FENNILAHL_HIKER_BLOCK    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
