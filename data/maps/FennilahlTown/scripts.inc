@@ -44,15 +44,25 @@ FennilahlTown_EventScript_HikerTunnel::
 # 26 "data//maps/FennilahlTown/scripts.pory"
 	faceplayer
 # 27 "data//maps/FennilahlTown/scripts.pory"
-	goto_if_set FLAG_SYS_POKEDEX_GET, FennilahlTown_EventScript_HikerTunnel_2
+	goto_if_unset FLAG_FENNILAHL_HIKER_GEAR_GET, FennilahlTown_EventScript_HikerTunnel_2
 # 30 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_EventScript_HikerTunnel_Text_1
 # 31 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 5, FennilahlTown_EventScript_HikerTunnel_Movement_0
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_2
 # 32 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_3
+# 33 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_4
+# 34 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_5
+# 35 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 5, FennilahlTown_EventScript_HikerTunnel_Movement_0
+# 36 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 5
+# 37 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_BLOCK
 FennilahlTown_EventScript_HikerTunnel_1:
-# 34 "data//maps/FennilahlTown/scripts.pory"
+# 39 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 
@@ -62,12 +72,10 @@ FennilahlTown_EventScript_HikerTunnel_2:
 	goto FennilahlTown_EventScript_HikerTunnel_1
 
 
-# 31 "data//maps/FennilahlTown/scripts.pory"
+# 35 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_EventScript_HikerTunnel_Movement_0:
-# 31 "data//maps/FennilahlTown/scripts.pory"
-	walk_right
-# 31 "data//maps/FennilahlTown/scripts.pory"
-	face_down
+# 35 "data//maps/FennilahlTown/scripts.pory"
+	face_up
 	step_end
 
 FennilahlTown_EventScript_MartEmployeeRoadBlock_Text_0:
@@ -91,12 +99,32 @@ FennilahlTown_EventScript_Woman_Text_0:
 
 FennilahlTown_EventScript_HikerTunnel_Text_0:
 # 28 "data//maps/FennilahlTown/scripts.pory"
-	.string "Sorry - I can't let civilians pass. The\n"
-	.string "tunnel ahead is dangerous and only\l"
-	.string "prepared {PKMN} trainers are allowed. Oh,\l"
-	.string "you have a {PKMN}? So does my gradmother!\l"
-	.string "But you need at least a Pokedex.$"
+	.string "I can't go inside the cave without my\n"
+	.string "HIKING GEAR! I lost in the caves south\l"
+	.string "of town and can't find them. Could you\l"
+	.string "please bring them to me?$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 30 "data//maps/FennilahlTown/scripts.pory"
-	.string "You have a Pokedex? Carry on then.$"
+	.string "You brought my HIKING GEAR? Amazing!\n"
+	.string "How can I thank you for this?$"
+
+FennilahlTown_EventScript_HikerTunnel_Text_2:
+# 31 "data//maps/FennilahlTown/scripts.pory"
+	.string "A Clefairy was keeping it? This is the\n"
+	.string "Clefairy? It can't let go?$"
+
+FennilahlTown_EventScript_HikerTunnel_Text_3:
+# 32 "data//maps/FennilahlTown/scripts.pory"
+	.string "Clefairy: clee!!!$"
+
+FennilahlTown_EventScript_HikerTunnel_Text_4:
+# 33 "data//maps/FennilahlTown/scripts.pory"
+	.string "Ouch! Clefairy stop! Haha! Alright\n"
+	.string "alright, you come along with me then.$"
+
+FennilahlTown_EventScript_HikerTunnel_Text_5:
+# 34 "data//maps/FennilahlTown/scripts.pory"
+	.string "We're off then! Thank you trainer! My\n"
+	.string "name is Breech. Clefairy and I hope to\l"
+	.string "see you again soon!$"

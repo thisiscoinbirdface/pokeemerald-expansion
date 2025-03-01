@@ -24,7 +24,7 @@ script FennilahlTown_EventScript_Woman {
 script FennilahlTown_EventScript_HikerTunnel {
     lockall
     faceplayer
-    if (!flag(FLAG_FENNILAHL_HIKER_GEAR_GET) == true){
+    if (!flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
         msgbox(format("I can't go inside the cave without my HIKING GEAR! I lost in the caves south of town and can't find them. Could you please bring them to me?"))
     } else {
         msgbox(format("You brought my HIKING GEAR? Amazing! How can I thank you for this?"))
