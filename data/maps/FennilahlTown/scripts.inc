@@ -101,8 +101,9 @@ FennilahlTown_EventScript_HikerTunnel_Text_0:
 # 28 "data//maps/FennilahlTown/scripts.pory"
 	.string "I can't go inside the cave without my\n"
 	.string "HIKING GEAR! I lost in the caves south\l"
-	.string "of town and can't find them. Could you\l"
-	.string "please bring them to me?$"
+	.string "of town and can't find them. And I don't\l"
+	.string "have any {PKMN} to help me get it back! I\l"
+	.string "don't know what to do!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 30 "data//maps/FennilahlTown/scripts.pory"
@@ -121,7 +122,9 @@ FennilahlTown_EventScript_HikerTunnel_Text_3:
 FennilahlTown_EventScript_HikerTunnel_Text_4:
 # 33 "data//maps/FennilahlTown/scripts.pory"
 	.string "Ouch! Clefairy stop! Haha! Alright\n"
-	.string "alright, you come along with me then.$"
+	.string "alright, you come along with me then.\l"
+	.string "Looks like I found both my HIKING GEAR\l"
+	.string "and a hiking partner!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_5:
 # 34 "data//maps/FennilahlTown/scripts.pory"

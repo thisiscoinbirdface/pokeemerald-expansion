@@ -9,9 +9,6 @@ script CarabrueTown_Home2F_EventScript_PickUpBag{
     giveitem(ITEM_LAB_WELCOMEPACKAGE)
     removeobject(1)
 
-    ///Set this flag to despawn the cops and rival in the lab
-    setflag(FLAG_LAB_CALLTOACTION)
-
     releaseall
 }
 

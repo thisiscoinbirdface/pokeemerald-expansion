@@ -18,9 +18,6 @@ script CarabrueTown_TenebrisLab_EventScript_OnWarp{
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Start {
-    removeobject(8)
-    removeobject(9)
-    removeobject(10)
 
     lockall
     msgbox(format("Ah! There you are! Finally."))

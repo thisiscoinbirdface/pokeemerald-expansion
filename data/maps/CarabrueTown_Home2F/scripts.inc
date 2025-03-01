@@ -13,9 +13,7 @@ CarabrueTown_Home2F_EventScript_PickUpBag::
 	giveitem ITEM_LAB_WELCOMEPACKAGE
 # 10 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	removeobject 1
-# 13 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	setflag FLAG_LAB_CALLTOACTION
-# 15 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 12 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	return
 

@@ -57,6 +57,15 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     // setflag(FLAG_SYS_QUEST_MENU_GET)
     // questmenu(QUEST_MENU_SET_ACTIVE, QUEST_LAB_ASSISTANT)
 
+    //Mom sits back down
+    applymovement(1, moves(
+        walk_left *2
+        walk_down
+        face_right
+        )
+    )
+    waitmovement(0)
+
     releaseall
 
 }
