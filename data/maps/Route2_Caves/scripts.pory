@@ -1,0 +1,39 @@
+mapscripts Route2_Caves_MapScripts {}
+
+script Route2_Caves_EventScript_ClefairyTrigger{
+    if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
+        end
+    }
+
+    lockall
+    applymovement(1, walk_up *2 face_down)
+    release
+}
+
+script Route2_Caves_EventScript_ClefairyBattle{
+    lockall
+    msgbox(format("A wild Pokemon attacks you! It's holding the HIKING GEAR!"))
+    release
+
+    setflag(B_FLAG_NO_CATCHING)
+    setflag(B_FLAG_NO_RUNNING)
+    setwildbattle(SPECIES_CLEFAIRY, 10)
+    dowildbattle
+    clearflag(B_FLAG_NO_CATCHING)
+    clearflag(B_FLAG_NO_RUNNING)
+
+    msgbox(format("The Clefairy dropped the HIKING GEAR. Looks like it was just trying to guard its home..."))    
+    release
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} got the HIKING GEAR!"))
+	waitfanfare    
+    release
+    msgbox(format("It seems like this Clefairy is attached to the HIKING GEAR for some reason...its following you around."))    
+
+    setflag(FLAG_FENNILAHL_HIKER_GEAR_GET)
+
+}
+
+
+
+

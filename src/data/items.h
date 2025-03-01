@@ -12666,14 +12666,13 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_OldKey,
     },
 
-    [ITEM_SCANNER] =
+    [ITEM_HIKING_GEAR] =
     {
-        .name = _("Scanner"),
+        .name = _("Hiking Gear"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A device found\n"
-            "inside the\n"
-            "Abandoned Ship."),
+            "An important\n"
+            "tool for hikers."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14099,14 +14098,14 @@ const struct Item gItemsInfo[] =
         .name = _("Lab Package"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Just a bunch of notes\n"
-            "and things.\n"
+            "Just a bunch of\n"
+            "notes and things.\n"
         ),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_PokeshiDoll,
-        .iconPalette = gItemIconPalette_PokeshiDoll,
+        .iconPic = gItemIcon_Parcel,
+        .iconPalette = gItemIconPalette_Parcel,
     },
 
 };
