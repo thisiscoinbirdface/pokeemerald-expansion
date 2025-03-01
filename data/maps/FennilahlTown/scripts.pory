@@ -24,7 +24,7 @@ script FennilahlTown_EventScript_Woman {
 script FennilahlTown_EventScript_HikerTunnel {
     lockall
     faceplayer
-    if (FLAG_SYS_POKEDEX_GET == true){
+    if (flag(FLAG_SYS_POKEDEX_GET) == true){
         msgbox(format("Sorry - I can't let civilians pass. The tunnel ahead is dangerous and only prepared {PKMN} trainers are allowed. Oh, you have a {PKMN}? So does my gradmother! But you need at least a Pokedex."))
     } else {
         msgbox(format("You have a Pokedex? Carry on then."))
