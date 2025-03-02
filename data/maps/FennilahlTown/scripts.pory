@@ -25,13 +25,13 @@ script FennilahlTown_EventScript_HikerTunnel {
     lockall
     faceplayer
     if (!flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("I can't go inside the cave without my HIKING GEAR! I lost in the caves south of town - a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't know what to do!"))
+        msgbox(format("I can't go inside the cave without my HIKING GEAR! I lost it in the caves south of town - a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict. I don't know what to do!"))
     } else {
         msgbox(format("You brought my HIKING GEAR? Amazing! How can I thank you for this?"))
         msgbox(format("A Clefairy was keeping it? This is the Clefairy? And it's been following you around because it can't let go?"))
         msgbox(format("Clefairy: clee!!!"))
-        msgbox(format("Ouch! Clefairy stop! Haha! Alright alright, you come along with me then. Looks like I found both my HIKING GEAR and a hiking partner!"))        
-        msgbox(format("We're off then! Thank you trainer! My name is Breech. Clefairy and I hope to see you again soon."))
+        msgbox(format("Ouch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my {PKMN} okay? I don't like battling. You'll be my hiking partner!"))        
+        msgbox(format("Thank you trainer! My name is Breech. I'm just a simple man who loves the mountains. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
         applymovement(5, moves(face_up))
         waitmovement(0)
         removeobject(5)

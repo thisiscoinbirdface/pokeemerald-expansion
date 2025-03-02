@@ -8,10 +8,12 @@
 #define TRAINER_ROUTE1_SANA                   2
 #define TRAINER_ROUTE1_MORTEM                 3
 #define TRAINER_KOHLA_LAB                     4
-#define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
+#define TRAINER_ROUTE3_JANA                   5 
+
+#define TRAINER_ROUTE3_KIM                    6
+#define TRAINER_ROUTE3_RONNIE                 7
+#define TRAINER_ROUTE3_CHARA                  8
+
 #define TRAINER_GABRIELLE_1                   9
 #define TRAINER_GRUNT_PETALBURG_WOODS        10
 #define TRAINER_MARCEL                       11

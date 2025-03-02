@@ -52,7 +52,8 @@
     "Route2",
     "Route2_Caves",
     "FennilahlTunnel",
-    "Route3"
+    "Route3",
+    "Route3_Underpass"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
