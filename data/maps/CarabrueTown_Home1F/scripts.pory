@@ -15,7 +15,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     msgbox(
         format(
-            "And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokemon Professor have vanished to? And why?"
+            "TV: And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokemon Professor have vanished to? And why?"
         )
     )
     release
@@ -31,7 +31,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     //Player faces mom, dialogue starts
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(OBJ_EVENT_ID_PLAYER)   
-    msgbox(format("Mom: How scary...even in a small town like ours, people can go missing. And it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor around, so make sure you do your best, okay?" ))
+    msgbox(format("MOM: How scary...even in a small town like ours, people can go missing. And it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor around, so make sure you do your best, okay?" ))
     release
 
     applymovement(1, moves(jump_in_place_right))
@@ -47,9 +47,8 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_B_DASH)    
 
     msgbox(format("MOM: {PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. Slip on these RUNNING SHOES and race in the great outdoors!"))
-    
-
-    msgbox(format("And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
+    msgbox(format("MOM: And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
+    release
 
     //Set var to done
     setvar(VAR_STARTGAME_TV, 1)
@@ -102,4 +101,5 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
 	releaseall
 	end
 }
+
 

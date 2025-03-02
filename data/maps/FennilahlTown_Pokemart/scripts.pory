@@ -28,6 +28,7 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
     msgbox(format("Let me check our records...hmm, that's strange. It says that Professor Tenebris already picked it up last week. Weird...I'm sorry, I can't help you. You should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
 	releaseall
 
+    clearflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
     setvar(VAR_FENNILAHL_MART_SUPPLIES, 1)
 
 

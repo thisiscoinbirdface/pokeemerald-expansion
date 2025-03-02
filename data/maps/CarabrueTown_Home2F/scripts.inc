@@ -12,8 +12,28 @@ CarabrueTown_Home2F_EventScript_PickUpBag::
 # 9 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	giveitem ITEM_LAB_WELCOMEPACKAGE
 # 10 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	setflag FLAG_TENEBRIS_POLICE_PRESCENCE
+# 11 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	removeobject 1
-# 12 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 13 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	releaseall
+	return
+
+
+CarabrueTown_Home2F_EventScript_PC::
+# 17 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	lockall
+# 18 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
+# 19 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special DoPCTurnOnEffect
+# 20 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
+# 21 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special BedroomPC
+# 22 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 23 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	return
 

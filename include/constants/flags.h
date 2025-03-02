@@ -51,11 +51,11 @@
 #define FLAG_LAB_POKEBALL_THREE    0x24 // Third ball to get starter in Lab
 #define FLAG_CARABRUE_POLICE    0x25 // If the police are there or not in Carabrue Town
 #define FLAG_REAL_PACKAGE_GET    0x26 // Pick up the real package from the lab
-#define FLAG_LAB_CALLTOACTION    0x27 // This flag is for the cops and Wally in the lab.
+#define FLAG_LAB_CALLTOACTION    0x27 // After rival battle and true quest start
 #define FLAG_FENNILAHL_HIKER_GEAR_GET    0x28 // Unused Flag
 #define FLAG_FENNILAHL_HIKER_BLOCK    0x29 // Unused Flag
 #define FLAG_BATTLE_NO_RUNNING_CATCHING    0x2A // Flag for no running or catching in wild battles (special battles)
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
+#define FLAG_TENEBRIS_POLICE_PRESCENCE    0x2B // yes as long as the police SHOULDNT be there
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag

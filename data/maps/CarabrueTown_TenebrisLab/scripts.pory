@@ -256,6 +256,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
 
         setvar(VAR_LAB_STATE, 2)
+        setflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
         setflag(FLAG_LAB_CALLTOACTION)
         releaseall
     }
