@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CLEFAIRY_DOLL",
       "x": 27,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -88,7 +88,7 @@
       "x": 27,
       "y": 13,
       "elevation": 0,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "Route2_Caves_EventScript_ClefairyTrigger"
     }

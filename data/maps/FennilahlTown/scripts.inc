@@ -105,9 +105,10 @@ FennilahlTown_EventScript_HikerTunnel_Text_0:
 # 28 "data//maps/FennilahlTown/scripts.pory"
 	.string "I can't go inside the cave without my\n"
 	.string "HIKING GEAR! I lost in the caves south\l"
-	.string "of town and can't find them. And I don't\l"
-	.string "have any {PKMN} to help me get it back! I\l"
-	.string "don't know what to do!$"
+	.string "of town - a small PINK {PKMN} took it and\l"
+	.string "ran away! And I don't have any {PKMN} to\l"
+	.string "help me get it back! I don't know what\l"
+	.string "to do!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 30 "data//maps/FennilahlTown/scripts.pory"
