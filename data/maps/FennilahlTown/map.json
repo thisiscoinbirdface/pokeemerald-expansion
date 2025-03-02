@@ -27,7 +27,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 20,
+      "x": 19,
       "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 18,
-      "y": 29,
+      "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 14,
+      "x": 16,
       "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 24,
-      "y": 19,
+      "x": 13,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
@@ -79,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 30,
+      "x": 26,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -89,46 +89,72 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FennilahlTown_EventScript_HikerTunnel",
       "flag": "FLAG_FENNILAHL_HIKER_BLOCK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 15,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_GREAT_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FENNILAHL_GREAT_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 27,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_REPEL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FENNILAHL_REPEL"
     }
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 12,
+      "x": 9,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 11,
-      "y": 31,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
-      "y": 25,
+      "x": 26,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 20,
+      "x": 18,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 25,
+      "x": 22,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_POKEMART",
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
+      "x": 26,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TUNNEL",

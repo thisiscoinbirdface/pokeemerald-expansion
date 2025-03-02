@@ -1055,8 +1055,8 @@
 #define FLAG_ITEM_ROUTE_1_POKE_BALL                               0x3E9
 #define FLAG_ITEM_ROUTE_2_POTION                                  0x3EA //FLAG_ITEM_ROUTE_104_PP_UP
 #define FLAG_ITEM_ROUTE_2_CAVE_STARDUST                                   0x3EB //FLAG_ITEM_ROUTE_105_IRON
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
+#define FLAG_ITEM_FENNILAHL_GREAT_BALL                                 0x3EC //FLAG_ITEM_ROUTE_106_PROTEIN
+#define FLAG_ITEM_FENNILAHL_REPEL                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
 #define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0

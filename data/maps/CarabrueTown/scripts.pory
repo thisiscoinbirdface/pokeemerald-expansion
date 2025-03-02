@@ -36,4 +36,9 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
 }
 
+script CarabrueTown_Sign_Route1{
+    msgbox(format("CARABRUE TOWN\n{RIGHT ARROW} Route 1"), MSGBOX_SIGN)
+    end
+}
+
 
