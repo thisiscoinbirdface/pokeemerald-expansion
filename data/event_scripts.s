@@ -1176,3 +1176,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route2/scripts.inc"
 
 	.include "data/maps/Route2_Caves/scripts.inc"
+
+	.include "data/maps/FennilahlTunnel/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"

@@ -126,6 +126,13 @@
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_POKEMART",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FENNILAHL_TUNNEL",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

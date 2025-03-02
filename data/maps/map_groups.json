@@ -50,7 +50,9 @@
     "FennilahlTown_PokemonCenter",
     "FennilahlTown_Pokemart",
     "Route2",
-    "Route2_Caves"
+    "Route2_Caves",
+    "FennilahlTunnel",
+    "Route3"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

@@ -4550,6 +4550,26 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/Route2_Caves/border.bin",
       "blockdata_filepath": "data/layouts/Route2_Caves/map.bin"
+    },
+    {
+      "id": "LAYOUT_FENNILAHL_TUNNEL",
+      "name": "FennilahlTunnel_Layout",
+      "width": 38,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FennilahlTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/FennilahlTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
     }
   ]
 }
