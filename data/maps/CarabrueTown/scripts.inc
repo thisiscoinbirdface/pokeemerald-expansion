@@ -42,6 +42,18 @@ CarabrueTown_EventScript_PoliceRoadBlock_2:
 	goto CarabrueTown_EventScript_PoliceRoadBlock_1
 
 
+CarabrueTown_Sign_Main::
+# 40 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_Sign_Main_Text_0, MSGBOX_SIGN
+	end
+
+
+CarabrueTown_Sign_TenebrisLab::
+# 45 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_Sign_TenebrisLab_Text_0, MSGBOX_SIGN
+	end
+
+
 # 21 "data//maps/CarabrueTown/scripts.pory"
 CarabrueTown_EventScript_PoliceRoadBlock_Movement_0:
 # 21 "data//maps/CarabrueTown/scripts.pory"
@@ -81,3 +93,13 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_1:
 	.string "Is this the evidence from the lab?\n"
 	.string "Perfect. Thanks, kid. We'll take it from\l"
 	.string "here.$"
+
+CarabrueTown_Sign_Main_Text_0:
+# 40 "data//maps/CarabrueTown/scripts.pory"
+	.string "CARABRUE TOWN\n"
+	.string "An idyllic hill station$"
+
+CarabrueTown_Sign_TenebrisLab_Text_0:
+# 45 "data//maps/CarabrueTown/scripts.pory"
+	.string "THE TENEBRIS LABORATORY\n"
+	.string "Pokemon psychology research$"

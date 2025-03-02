@@ -42,5 +42,20 @@ script FennilahlTown_EventScript_HikerTunnel {
 }
 
 
+script FennilahlTown_Sign_Entrance {
+    msgbox(format("FENNILAHL TOWN\nConnecting Mt. Ceram and Vine River."), MSGBOX_SIGN)
+    end
+}
+
+script FennilahlTown_Sign_Route2 {
+    msgbox(format("{DOWN_ARROW}ROUTE 2\nConnecting to Vine River."), MSGBOX_SIGN)
+    end
+}
+
+script FennilahlTown_Sign_Route3{
+    msgbox(format("{UP_ARROW}UNDERGROUND TUNNEL\nConnecting to Route 3."), MSGBOX_SIGN)
+    end
+}
+
 
 

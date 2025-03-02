@@ -36,9 +36,13 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
 }
 
-script CarabrueTown_Sign_Route1{
-    msgbox(format("CARABRUE TOWN\n{RIGHT ARROW} Route 1"), MSGBOX_SIGN)
+script CarabrueTown_Sign_Main{
+    msgbox(format("CARABRUE TOWN\nAn idyllic hill station."), MSGBOX_SIGN)
     end
 }
 
+script CarabrueTown_Sign_TenebrisLab{
+    msgbox(format("THE TENEBRIS LABORATORY\nPokemon psychology research hub."), MSGBOX_SIGN)
+    end
+}
 

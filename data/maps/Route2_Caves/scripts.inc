@@ -41,24 +41,18 @@ Route2_Caves_EventScript_ClefairyBattle::
 # 26 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 27 "data//maps/Route2_Caves/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 28 "data//maps/Route2_Caves/scripts.pory"
 	giveitem ITEM_HIKING_GEAR
+# 28 "data//maps/Route2_Caves/scripts.pory"
+	release
 # 29 "data//maps/Route2_Caves/scripts.pory"
 	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_2
 # 30 "data//maps/Route2_Caves/scripts.pory"
-	waitfanfare
-# 31 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 32 "data//maps/Route2_Caves/scripts.pory"
-	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_3
-# 33 "data//maps/Route2_Caves/scripts.pory"
-	release
-# 35 "data//maps/Route2_Caves/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_GEAR_GET
-# 36 "data//maps/Route2_Caves/scripts.pory"
+# 33 "data//maps/Route2_Caves/scripts.pory"
 	clearflag FLAG_BATTLE_NO_RUNNING_CATCHING
-# 38 "data//maps/Route2_Caves/scripts.pory"
+# 35 "data//maps/Route2_Caves/scripts.pory"
 	releaseall
 	return
 
@@ -86,10 +80,6 @@ Route2_Caves_EventScript_ClefairyBattle_Text_1:
 
 Route2_Caves_EventScript_ClefairyBattle_Text_2:
 # 29 "data//maps/Route2_Caves/scripts.pory"
-	.string "{PLAYER} got the HIKING GEAR!$"
-
-Route2_Caves_EventScript_ClefairyBattle_Text_3:
-# 32 "data//maps/Route2_Caves/scripts.pory"
 	.string "It seems like this Clefairy is attached\n"
 	.string "to the HIKING GEAR for some\l"
 	.string "reason...its following you around.$"
