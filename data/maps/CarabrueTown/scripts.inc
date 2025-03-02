@@ -28,9 +28,11 @@ CarabrueTown_EventScript_PoliceRoadBlock::
 # 29 "data//maps/CarabrueTown/scripts.pory"
 	removeobject 2
 # 31 "data//maps/CarabrueTown/scripts.pory"
+	removeitem ITEM_LAB_WELCOMEPACKAGE
+# 32 "data//maps/CarabrueTown/scripts.pory"
 	setflag FLAG_CARABRUE_POLICE
 CarabrueTown_EventScript_PoliceRoadBlock_1:
-# 34 "data//maps/CarabrueTown/scripts.pory"
+# 35 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
 	return
 

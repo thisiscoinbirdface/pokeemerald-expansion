@@ -36,6 +36,7 @@ script FennilahlTown_EventScript_HikerTunnel {
         waitmovement(0)
         removeobject(5)
         setflag(FLAG_FENNILAHL_HIKER_BLOCK)
+        removeitem(ITEM_HIKING_GEAR)
     }    
     releaseall
 }

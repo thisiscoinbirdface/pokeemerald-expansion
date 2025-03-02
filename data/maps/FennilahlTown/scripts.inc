@@ -63,8 +63,10 @@ FennilahlTown_EventScript_HikerTunnel::
 	removeobject 5
 # 38 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_BLOCK
+# 39 "data//maps/FennilahlTown/scripts.pory"
+	removeitem ITEM_HIKING_GEAR
 FennilahlTown_EventScript_HikerTunnel_1:
-# 40 "data//maps/FennilahlTown/scripts.pory"
+# 41 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 

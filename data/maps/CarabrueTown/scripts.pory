@@ -28,6 +28,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
         removeobject(1)
         removeobject(2) 
 
+        removeitem(ITEM_LAB_WELCOMEPACKAGE)
         setflag(FLAG_CARABRUE_POLICE)
     }
 
