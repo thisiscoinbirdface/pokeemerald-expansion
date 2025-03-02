@@ -1,6 +1,6 @@
 mapscripts Route3_MapScripts{}
 
-script Route1_TrainerBattle_Kim {
+script Route3_TrainerBattle_Kim {
 
     trainerbattle_single(TRAINER_ROUTE3_KIM, "Sefe fefe", "fefe fef efe err rr rrr")
     msgbox(format("goo"))
@@ -9,7 +9,7 @@ script Route1_TrainerBattle_Kim {
 
 }
 
-script Route1_TrainerBattle_Ronnie {
+script Route3_TrainerBattle_Ronnie {
 
     trainerbattle_single(TRAINER_ROUTE3_RONNIE, "Sefe fefe", "fefe fef efe err rr rrr")
     msgbox(format("goo"))
@@ -18,7 +18,7 @@ script Route1_TrainerBattle_Ronnie {
 
 }
 
-script Route1_TrainerBattle_Jana {
+script Route3_TrainerBattle_Jana {
 
     trainerbattle_single(TRAINER_ROUTE3_JANA, "Sefe fefe", "fefe fef efe err rr rrr")
     msgbox(format("goo"))
@@ -27,7 +27,7 @@ script Route1_TrainerBattle_Jana {
 
 }
 
-script Route1_TrainerBattle_Chara {
+script Route3_TrainerBattle_Chara {
 
     trainerbattle_single(TRAINER_ROUTE3_CHARA, "Sefe fefe", "fefe fef efe err rr rrr")
     msgbox(format("goo"))
