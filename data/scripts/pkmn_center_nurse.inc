@@ -61,10 +61,8 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	goto_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_ReturnPkmn2
 	message gText_RestoredPkmnToFullHealth
 	waitmessage
-	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
-	waitmovement 0
 	message gText_WeHopeToSeeYouAgain
-	closemessage
+	waitbuttonpress
 	release
 	goto EventScript_PkmnCenterNurse_PlayerTurn
 	return
@@ -72,9 +70,11 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 EventScript_PkmnCenterNurse_ReturnPkmn2::
 	message gText_ThankYouForWaiting
 	waitmessage
-	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
-	waitmovement 0
 	message gText_WeHopeToSeeYouAgain2
+	waitmessage
+	waitbuttonpress
+	release
+	goto EventScript_PkmnCenterNurse_PlayerTurn	
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
