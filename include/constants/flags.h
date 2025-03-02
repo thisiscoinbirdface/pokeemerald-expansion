@@ -54,7 +54,7 @@
 #define FLAG_LAB_CALLTOACTION    0x27 // This flag is for the cops and Wally in the lab.
 #define FLAG_FENNILAHL_HIKER_GEAR_GET    0x28 // Unused Flag
 #define FLAG_FENNILAHL_HIKER_BLOCK    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_BATTLE_NO_RUNNING_CATCHING    0x2A // Flag for no running or catching in wild battles (special battles)
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

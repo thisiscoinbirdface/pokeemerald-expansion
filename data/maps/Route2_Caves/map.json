@@ -29,19 +29,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 27,
-      "y": 8,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HIKING_GEAR",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_FENNILAHL_HIKER_GEAR_GET"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 35,
       "y": 37,
       "elevation": 0,
@@ -93,6 +80,15 @@
       "y": 17,
       "elevation": 0,
       "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route2_Caves_EventScript_ClefairyTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "Route2_Caves_EventScript_ClefairyTrigger"
     }

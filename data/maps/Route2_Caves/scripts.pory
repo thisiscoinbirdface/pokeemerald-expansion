@@ -12,8 +12,7 @@ script Route2_Caves_EventScript_ClefairyTrigger{
 
 script Route2_Caves_EventScript_ClefairyBattle{
     lockall
-    setflag(B_FLAG_NO_CATCHING)
-    setflag(B_FLAG_NO_RUNNING)
+    setflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
 
     msgbox(format("A wild Pokemon attacks you! It's holding the HIKING GEAR!"))
     release
@@ -33,8 +32,7 @@ script Route2_Caves_EventScript_ClefairyBattle{
     release
 
     setflag(FLAG_FENNILAHL_HIKER_GEAR_GET)
-    clearflag(B_FLAG_NO_CATCHING)
-    clearflag(B_FLAG_NO_RUNNING)    
+    clearflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
 
     releaseall
 }

@@ -58,11 +58,13 @@ FennilahlTown_EventScript_HikerTunnel::
 # 35 "data//maps/FennilahlTown/scripts.pory"
 	applymovement 5, FennilahlTown_EventScript_HikerTunnel_Movement_0
 # 36 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 5
+	waitmovement 0
 # 37 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 5
+# 38 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_BLOCK
 FennilahlTown_EventScript_HikerTunnel_1:
-# 39 "data//maps/FennilahlTown/scripts.pory"
+# 40 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 
@@ -113,7 +115,8 @@ FennilahlTown_EventScript_HikerTunnel_Text_1:
 FennilahlTown_EventScript_HikerTunnel_Text_2:
 # 31 "data//maps/FennilahlTown/scripts.pory"
 	.string "A Clefairy was keeping it? This is the\n"
-	.string "Clefairy? It can't let go?$"
+	.string "Clefairy? And it's been following you\l"
+	.string "around because it can't let go?$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_3:
 # 32 "data//maps/FennilahlTown/scripts.pory"
@@ -130,4 +133,4 @@ FennilahlTown_EventScript_HikerTunnel_Text_5:
 # 34 "data//maps/FennilahlTown/scripts.pory"
 	.string "We're off then! Thank you trainer! My\n"
 	.string "name is Breech. Clefairy and I hope to\l"
-	.string "see you again soon!$"
+	.string "see you again soon.$"
