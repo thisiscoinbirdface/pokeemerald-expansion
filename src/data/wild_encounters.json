@@ -11722,63 +11722,63 @@
             "encounter_rate": 9,
             "mons": [
               {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_TEDDIURSA"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_MIENFOO"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_TINKATINK"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_MIENFOO"
-              },
-              {
                 "min_level": 5,
-                "max_level": 8,
+                "max_level": 7,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 5,
-                "max_level": 8,
-                "species": "SPECIES_TINKATINK"
+                "max_level": 7,
+                "species": "SPECIES_MIENFOO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_TEDDIURSA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 4,
-                "max_level": 8,
-                "species": "SPECIES_TINKATINK"
+                "max_level": 7,
+                "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 4,
-                "max_level": 8,
-                "species": "SPECIES_TINKATINK"
+                "max_level": 7,
+                "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_GLIMMET"
+                "max_level": 7,
+                "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MIENFOO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_TEDDIURSA"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MIENFOO"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
                 "species": "SPECIES_BAGON"
               },
               {
                 "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_GLIMMET"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
+                "max_level": 7,
                 "species": "SPECIES_BAGON"
               }
             ]
