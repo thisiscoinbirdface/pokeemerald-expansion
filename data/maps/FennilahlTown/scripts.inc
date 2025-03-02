@@ -76,6 +76,24 @@ FennilahlTown_EventScript_HikerTunnel_2:
 	goto FennilahlTown_EventScript_HikerTunnel_1
 
 
+FennilahlTown_Sign_Entrance::
+# 46 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Sign_Entrance_Text_0, MSGBOX_SIGN
+	end
+
+
+FennilahlTown_Sign_Route2::
+# 51 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Sign_Route2_Text_0, MSGBOX_SIGN
+	end
+
+
+FennilahlTown_Sign_Route3::
+# 56 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Sign_Route3_Text_0, MSGBOX_SIGN
+	end
+
+
 # 35 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_EventScript_HikerTunnel_Movement_0:
 # 35 "data//maps/FennilahlTown/scripts.pory"
@@ -137,3 +155,18 @@ FennilahlTown_EventScript_HikerTunnel_Text_5:
 	.string "We're off then! Thank you trainer! My\n"
 	.string "name is Breech. Clefairy and I hope to\l"
 	.string "see you again soon.$"
+
+FennilahlTown_Sign_Entrance_Text_0:
+# 46 "data//maps/FennilahlTown/scripts.pory"
+	.string "FENNILAHL TOWN\n"
+	.string "Connecting Mt. Ceram and Vine River.$"
+
+FennilahlTown_Sign_Route2_Text_0:
+# 51 "data//maps/FennilahlTown/scripts.pory"
+	.string "{DOWN_ARROW}ROUTE 2\n"
+	.string "Connecting to Vine River.$"
+
+FennilahlTown_Sign_Route3_Text_0:
+# 56 "data//maps/FennilahlTown/scripts.pory"
+	.string "{UP_ARROW}UNDERGROUND TUNNEL\n"
+	.string "Connecting to Route 3.$"

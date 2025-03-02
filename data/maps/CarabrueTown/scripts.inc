@@ -97,9 +97,9 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_1:
 CarabrueTown_Sign_Main_Text_0:
 # 40 "data//maps/CarabrueTown/scripts.pory"
 	.string "CARABRUE TOWN\n"
-	.string "An idyllic hill station$"
+	.string "An idyllic hill station.$"
 
 CarabrueTown_Sign_TenebrisLab_Text_0:
 # 45 "data//maps/CarabrueTown/scripts.pory"
 	.string "THE TENEBRIS LABORATORY\n"
-	.string "Pokemon psychology research$"
+	.string "Pokemon psychology research hub.$"

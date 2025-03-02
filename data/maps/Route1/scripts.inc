@@ -42,6 +42,24 @@ Route1_TrainerBattle_Mortem::
 	end
 
 
+Route1_Sign_Carabrue::
+# 41 "data//maps/Route1/scripts.pory"
+	msgbox Route1_Sign_Carabrue_Text_0, MSGBOX_SIGN
+	end
+
+
+Route1_Sign_Middle::
+# 46 "data//maps/Route1/scripts.pory"
+	msgbox Route1_Sign_Middle_Text_0, MSGBOX_SIGN
+	end
+
+
+Route1_Sign_Fennilahl::
+# 51 "data//maps/Route1/scripts.pory"
+	msgbox Route1_Sign_Fennilahl_Text_0, MSGBOX_SIGN
+	end
+
+
 Route1_EventScripts_RandomDude_Text_0:
 # 7 "data//maps/Route1/scripts.pory"
 	.string "Did you know that Pokemon hide in the\n"
@@ -70,3 +88,17 @@ Route1_TrainerBattle_Sana_Text_1:
 Route1_TrainerBattle_Sana_Text_2:
 # 25 "data//maps/Route1/scripts.pory"
 	.string "goo$"
+
+Route1_Sign_Carabrue_Text_0:
+# 41 "data//maps/Route1/scripts.pory"
+	.string "{LEFT_ARROW}CARABRUE TOWN\n"
+	.string "{UP_ARROW}FENNILAHL TOWN$"
+
+Route1_Sign_Middle_Text_0:
+# 46 "data//maps/Route1/scripts.pory"
+	.string "Beware {PKMN} that hide in tall grass!$"
+
+Route1_Sign_Fennilahl_Text_0:
+# 51 "data//maps/Route1/scripts.pory"
+	.string "{RIGHT_ARROW}FENNILAHL TOWN\n"
+	.string "Foothills of Mt. Ceram.$"
