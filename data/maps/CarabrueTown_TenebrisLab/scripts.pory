@@ -250,7 +250,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
-        msgbox(format("Detective 1: Well Rue, looks like your assistant's got some guts. {PLAYER}, you aren't too shabby after all. We're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Detective 1: Well Rue, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
         msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
         msgbox(format("Detective 1: {PLAYER} - you know what to do. Head to Mt. Ceram and find the dreamstone inside."))  
         msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  

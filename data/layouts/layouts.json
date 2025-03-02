@@ -4564,7 +4564,7 @@
     {
       "id": "LAYOUT_ROUTE3",
       "name": "Route3_Layout",
-      "width": 140,
+      "width": 160,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
@@ -4574,7 +4574,7 @@
     {
       "id": "LAYOUT_ROUTE3_UNDERPASS",
       "name": "Route3_Underpass_Layout",
-      "width": 50,
+      "width": 70,
       "height": 40,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MeteorFalls",

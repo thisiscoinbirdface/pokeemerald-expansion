@@ -29,10 +29,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 17,
-      "y": 6,
+      "x": 62,
+      "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -42,10 +42,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 17,
-      "y": 7,
+      "x": 63,
+      "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -82,6 +82,34 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE3",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 63,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 63,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 63,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 63,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [
