@@ -122,11 +122,12 @@ FennilahlTown_EventScript_Woman_Text_0:
 FennilahlTown_EventScript_HikerTunnel_Text_0:
 # 28 "data//maps/FennilahlTown/scripts.pory"
 	.string "I can't go inside the cave without my\n"
-	.string "HIKING GEAR! I lost in the caves south\l"
-	.string "of town - a small PINK {PKMN} took it and\l"
-	.string "ran away! And I don't have any {PKMN} to\l"
-	.string "help me get it back! I don't know what\l"
-	.string "to do!$"
+	.string "HIKING GEAR! I lost it in the caves\l"
+	.string "south of town - a small PINK {PKMN} took it\l"
+	.string "and ran away! And I don't have any {PKMN}\l"
+	.string "to help me get it back! I don't want to\l"
+	.string "battle - I can't deal with conflict. I\l"
+	.string "don't know what to do!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 30 "data//maps/FennilahlTown/scripts.pory"
@@ -147,14 +148,17 @@ FennilahlTown_EventScript_HikerTunnel_Text_4:
 # 33 "data//maps/FennilahlTown/scripts.pory"
 	.string "Ouch! Clefairy stop! Haha! Alright\n"
 	.string "alright, you come along with me then.\l"
-	.string "Looks like I found both my HIKING GEAR\l"
-	.string "and a hiking partner!$"
+	.string "But you're not my {PKMN} okay? I don't like\l"
+	.string "battling. You'll be my hiking partner!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_5:
 # 34 "data//maps/FennilahlTown/scripts.pory"
-	.string "We're off then! Thank you trainer! My\n"
-	.string "name is Breech. Clefairy and I hope to\l"
-	.string "see you again soon.$"
+	.string "Thank you trainer! My name is Breech.\n"
+	.string "I'm just a simple man who loves the\l"
+	.string "mountains. Even with Clefairy by my\l"
+	.string "side, I won't battle. Clefairy and I are\l"
+	.string "heading off to explore the mountains\l"
+	.string "now. See you again soon!$"
 
 FennilahlTown_Sign_Entrance_Text_0:
 # 46 "data//maps/FennilahlTown/scripts.pory"

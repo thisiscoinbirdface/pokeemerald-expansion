@@ -7,7 +7,7 @@ script FennilahlTown_PokemonCenter_EventScript_Nurse{
 	call(Common_EventScript_PkmnCenterNurse)
 	waitmessage
 	waitbuttonpress
-	release
+	releaseall
 }
 
 

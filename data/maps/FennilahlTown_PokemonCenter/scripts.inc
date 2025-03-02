@@ -14,6 +14,6 @@ FennilahlTown_PokemonCenter_EventScript_Nurse::
 # 9 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	waitbuttonpress
 # 10 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	release
+	releaseall
 	return
 
