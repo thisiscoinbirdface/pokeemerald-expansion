@@ -289,7 +289,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
         msgbox("Do you want to choose Riolu?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
             removeobject(4)
-            givemon(SPECIES_RIOLU, 15, ITEM_POKE_BALL)
+            givemon(SPECIES_RIOLU, 9, ITEM_POKE_BALL)
             setflag(FLAG_SYS_POKEMON_GET)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
