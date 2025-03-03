@@ -2,6 +2,7 @@ mapscripts Route1_MapScripts {}
 
 script Route1_EventScripts_RandomDude {
     lockall
+    faceplayer
     msgbox(
         format(
             "Did you know that Pokemon hide in the grass? Be careful!"
@@ -38,7 +39,7 @@ script Route1_TrainerBattle_Mortem {
 }
 
 script Route1_Sign_Carabrue {
-    msgbox(format("{LEFT_ARROW}CARABRUE TOWN\n{UP_ARROW}FENNILAHL TOWN"), MSGBOX_SIGN)
+    msgbox(format("{LEFT_ARROW} CARABRUE TOWN\n{UP_ARROW} FENNILAHL TOWN"), MSGBOX_SIGN)
     end
 }
 
@@ -48,6 +49,6 @@ script Route1_Sign_Middle {
 }
 
 script Route1_Sign_Fennilahl {
-    msgbox(format("{RIGHT_ARROW}FENNILAHL TOWN\nFoothills of Mt. Ceram."), MSGBOX_SIGN)
+    msgbox(format("{RIGHT_ARROW} FENNILAHL TOWN\nFoothills of Mt. Ceram."), MSGBOX_SIGN)
     end
 }

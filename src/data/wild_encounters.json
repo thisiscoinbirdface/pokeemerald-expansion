@@ -11568,62 +11568,62 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 4,
-                "max_level": 6,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROOKIDEE"
               },
               {
-                "min_level": 4,
-                "max_level": 6,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 4,
-                "max_level": 6,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROOKIDEE"
               },
               {
-                "min_level": 4,
-                "max_level": 6,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 3,
-                "max_level": 5,
+                "max_level": 6,
                 "species": "SPECIES_RATTATA_ALOLA"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 6,
                 "species": "SPECIES_RATTATA_ALOLA"
               },
               {
-                "min_level": 4,
-                "max_level": 7,
+                "min_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 6,
                 "species": "SPECIES_CUBONE"
               },
               {
-                "min_level": 4,
-                "max_level": 7,
+                "min_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 6,
                 "species": "SPECIES_CUBONE"
               }
@@ -11722,63 +11722,63 @@
             "encounter_rate": 9,
             "mons": [
               {
-                "min_level": 4,
-                "max_level": 7,
+                "min_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 4,
-                "max_level": 7,
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_MIENFOO"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_TEDDIURSA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 4,
-                "max_level": 7,
-                "species": "SPECIES_MIENFOO"
-              },
-              {
-                "min_level": 4,
-                "max_level": 7,
-                "species": "SPECIES_TEDDIURSA"
-              },
-              {
-                "min_level": 4,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_MIENFOO"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_BAGON"
               },
               {
                 "min_level": 5,
-                "max_level": 7,
+                "max_level": 6,
                 "species": "SPECIES_BAGON"
               }
             ]
@@ -11933,7 +11933,7 @@
               {
                 "min_level": 5,
                 "max_level": 6,
-                "species": "SPECIES_GLIMMET"
+                "species": "SPECIES_ARON"
               },
               {
                 "min_level": 6,
@@ -11953,7 +11953,7 @@
               {
                 "min_level": 5,
                 "max_level": 6,
-                "species": "SPECIES_GLIMMET"
+                "species": "SPECIES_ARON"
               },
               {
                 "min_level": 7,
@@ -12101,7 +12101,7 @@
               {
                 "min_level": 5,
                 "max_level": 6,
-                "species": "SPECIES_GLIMMET"
+                "species": "SPECIES_ARON"
               },
               {
                 "min_level": 6,
@@ -12121,7 +12121,7 @@
               {
                 "min_level": 5,
                 "max_level": 6,
-                "species": "SPECIES_GLIMMET"
+                "species": "SPECIES_ARON"
               },
               {
                 "min_level": 7,

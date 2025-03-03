@@ -1228,14 +1228,13 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_45:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_46:
 # 253 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Detective 1: Well Rue, looks like your\n"
+	.string "Detective 1: Well Rue, it looks like your\n"
 	.string "assistant's got some guts. {PLAYER},\l"
-	.string "you aren't too shabby after all. We're\l"
-	.string "counting on you and Kohla to get the\l"
-	.string "dreamstone while we track Professor\l"
-	.string "Tenebris. Rue, do you know anything of\l"
-	.string "the whereabouts of the other\l"
-	.string "dreamstones?$"
+	.string "we're counting on you and Kohla to get\l"
+	.string "the dreamstone while we track\l"
+	.string "Professor Tenebris. Rue, do you know\l"
+	.string "anything of the whereabouts of the\l"
+	.string "other dreamstones?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_47:
 # 254 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

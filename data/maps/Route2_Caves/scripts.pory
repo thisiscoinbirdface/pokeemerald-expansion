@@ -17,7 +17,7 @@ script Route2_Caves_EventScript_ClefairyBattle{
     msgbox(format("A wild Pokemon attacks you! It's holding the HIKING GEAR!"))
     release
 
-    setwildbattle(SPECIES_CLEFAIRY, 10)
+    setwildbattle(SPECIES_CLEFAIRY, 8)
     dowildbattle
     release
 

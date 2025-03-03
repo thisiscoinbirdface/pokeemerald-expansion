@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
       "x": 19,
-      "y": 29,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 18,
-      "y": 27,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
