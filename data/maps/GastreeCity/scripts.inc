@@ -8,7 +8,7 @@ GastreeCity_EventScript_KohlaBattle_Trigger0::
 # 8 "data//maps/GastreeCity/scripts.pory"
 	lockall
 # 9 "data//maps/GastreeCity/scripts.pory"
-	applymovement 14, GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_0
+	applymovement 13, GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_0
 # 10 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 11 "data//maps/GastreeCity/scripts.pory"
@@ -18,13 +18,13 @@ GastreeCity_EventScript_KohlaBattle_Trigger0::
 # 14 "data//maps/GastreeCity/scripts.pory"
 	waitmessage
 # 16 "data//maps/GastreeCity/scripts.pory"
-	applymovement 14, GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_1
+	applymovement 13, GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_1
 # 17 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 20 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_KOHLA_BATTLE
 # 21 "data//maps/GastreeCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 22 "data//maps/GastreeCity/scripts.pory"
 	removeobject 1
 # 23 "data//maps/GastreeCity/scripts.pory"
@@ -43,7 +43,7 @@ GastreeCity_EventScript_KohlaBattle_Trigger1::
 # 33 "data//maps/GastreeCity/scripts.pory"
 	lockall
 # 34 "data//maps/GastreeCity/scripts.pory"
-	applymovement 14, GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_0
+	applymovement 13, GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_0
 # 35 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 36 "data//maps/GastreeCity/scripts.pory"
@@ -51,13 +51,13 @@ GastreeCity_EventScript_KohlaBattle_Trigger1::
 # 37 "data//maps/GastreeCity/scripts.pory"
 	waitmessage
 # 39 "data//maps/GastreeCity/scripts.pory"
-	applymovement 14, GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_1
+	applymovement 13, GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_1
 # 40 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 43 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_KOHLA_BATTLE
 # 44 "data//maps/GastreeCity/scripts.pory"
-	removeobject 14
+	removeobject 13
 # 45 "data//maps/GastreeCity/scripts.pory"
 	removeobject 1
 # 46 "data//maps/GastreeCity/scripts.pory"
@@ -86,14 +86,6 @@ GastreeCity_EventScript_KohlaBattle::
 
 # 9 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_0:
-# 9 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 9 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 9 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 9 "data//maps/GastreeCity/scripts.pory"
-	walk_left
 # 9 "data//maps/GastreeCity/scripts.pory"
 	walk_left
 # 9 "data//maps/GastreeCity/scripts.pory"
@@ -144,14 +136,6 @@ GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_1:
 GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_0:
 # 34 "data//maps/GastreeCity/scripts.pory"
 	walk_up
-# 34 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 34 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 34 "data//maps/GastreeCity/scripts.pory"
-	walk_left
-# 34 "data//maps/GastreeCity/scripts.pory"
-	walk_left
 # 34 "data//maps/GastreeCity/scripts.pory"
 	walk_left
 # 34 "data//maps/GastreeCity/scripts.pory"

@@ -6,19 +6,19 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
     }
 
     lockall
-    applymovement(14, moves(walk_left *10))
+    applymovement(13, moves(walk_left *6))
     waitmovement(0)
     release
 
     goto(GastreeCity_EventScript_KohlaBattle)
     waitmessage
 
-    applymovement(14, moves(walk_left *3 walk_down *3 walk_left *8))
+    applymovement(13, moves(walk_left *3 walk_down *3 walk_left *8))
     waitmovement(0)
 
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(14)
+    removeobject(13)
     removeobject(1)
     removeobject(2)
 
@@ -31,17 +31,17 @@ script GastreeCity_EventScript_KohlaBattle_Trigger1{
     }
 
     lockall
-    applymovement(14, moves(walk_up walk_left *10))
+    applymovement(13, moves(walk_up walk_left *6))
     waitmovement(0)
     goto(GastreeCity_EventScript_KohlaBattle)
     waitmessage
 
-    applymovement(14, moves(walk_down walk_left *3 walk_down *3 walk_left *8))
+    applymovement(13, moves(walk_down walk_left *3 walk_down *3 walk_left *8))
     waitmovement(0)
 
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(14)
+    removeobject(13)
     removeobject(1)
     removeobject(2)    
 
