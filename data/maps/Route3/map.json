@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_GASTREE_CITY",
-      "offset": 16,
+      "offset": 0,
       "direction": "right"
     }
   ],

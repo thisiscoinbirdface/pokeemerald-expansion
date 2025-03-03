@@ -24,7 +24,7 @@
 #define TRAINER_GASTREEGYM_LEADER            12
 
 //
-#define TRAINER_ED                           13
+#define TRAINER_GASTREE_KOHLA                13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16

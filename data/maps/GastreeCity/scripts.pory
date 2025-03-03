@@ -1,0 +1,66 @@
+mapscripts GastreeCity_MapScripts{}
+
+script GastreeCity_EventScript_KohlaBattle_Trigger0{
+    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
+        end
+    }
+
+    lockall
+    applymovement(14, moves(walk_left *10))
+    waitmovement(0)
+    release
+
+    goto(GastreeCity_EventScript_KohlaBattle)
+    waitmessage
+
+    applymovement(14, moves(walk_left *3 walk_down *3 walk_left *8))
+    waitmovement(0)
+
+    //Set flag
+    setflag(FLAG_GASTREE_KOHLA_BATTLE)
+    removeobject(14)
+    removeobject(1)
+    removeobject(2)
+
+    release    
+}
+
+script GastreeCity_EventScript_KohlaBattle_Trigger1{
+    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
+        end
+    }
+
+    lockall
+    applymovement(14, moves(walk_up walk_left *10))
+    waitmovement(0)
+    goto(GastreeCity_EventScript_KohlaBattle)
+    waitmessage
+
+    applymovement(14, moves(walk_down walk_left *3 walk_down *3 walk_left *8))
+    waitmovement(0)
+
+    //Set flag
+    setflag(FLAG_GASTREE_KOHLA_BATTLE)
+    removeobject(14)
+    removeobject(1)
+    removeobject(2)    
+
+    release
+}
+
+script GastreeCity_EventScript_KohlaBattle{
+
+    //Kohla talks trash
+    msgbox(format("KOHLA: Well well, look who thought it was fashionable to be late! Going to Mt. Ceram? There are rocks outside the entry, and you'll need a {PKMN} to smash them! But I'm far ahead of you, chum! I've already beaten this town's pathetic Gym Leader who gave me the HM I need!"))
+    msgbox(format("KOHLA: And I don't mind dishing out a second serving either! This is payback for one-upping me in front of the other detectives!"))
+    //Battle
+    trainerbattle_no_intro(TRAINER_GASTREE_KOHLA, msgbox(format("Not again!")))
+
+    //Lose battle
+    msgbox(format("KOHLA: You may have beaten me this time, but you're still just a lazy good-for-nothing who lucked into a job that I deserve! People are counting on us to get the dreamstone and I can't be dilly-dallying about with you! Over and out, chum!"))
+    waitmessage
+
+    //End
+    return
+}
+

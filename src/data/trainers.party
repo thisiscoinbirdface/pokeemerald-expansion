@@ -75,7 +75,7 @@ Comments can be added as C comment blocks
 
 === TRAINER_NONE ===
 Name:
-Class: Pkmn Trainer 1
+Class: Youngster
 Pic: Hiker
 Gender: Male
 Music: Male
@@ -126,8 +126,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KOHLA_LAB ===
 Name: Kohla
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Ace Rookie
+Pic: Wally
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -278,22 +278,21 @@ Ability: Intimidate
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-
-=== TRAINER_ED ===
-Name: ED
-Class: Collector
-Pic: Collector
+=== TRAINER_GASTREE_KOHLA ===
+Name: Kohla
+Class: Ace Rookie
+Pic: Wally
 Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Zangoose
-Level: 30
+Fennekin
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seviper
-Level: 30
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
