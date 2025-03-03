@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_LavaridgeGym",
       "border_filepath": "data/layouts/GastreeGym/border.bin",
       "blockdata_filepath": "data/layouts/GastreeGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_POKEMON_CENTER",
+      "name": "GastreeCity_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/GastreeCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_PokemonCenter/map.bin"
     }
   ]
 }

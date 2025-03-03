@@ -1,5 +1,13 @@
 mapscripts GastreeCity_MapScripts{}
 
+script GastreeCity_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, LOCALID_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+
 script GastreeCity_EventScript_KohlaBattle_Trigger0{
     if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
         end
