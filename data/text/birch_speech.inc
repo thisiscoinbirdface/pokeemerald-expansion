@@ -1,9 +1,11 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Tenebris Laboratory\p"
+	.string "LETTER OF APPOINTMENT\p"
+	.string "Congratulations candidate!\p"
+	.string "You have been selected as\n"
+	.string "RESEARCH ASSOCIATE at the\p"
+	.string "Tenebris Laboratory in\n"
+	.string "CARABRUE TOWN.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
