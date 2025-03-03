@@ -4610,6 +4610,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/GastreeCity_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_POKEMART",
+      "name": "GastreeCity_Pokemart_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/GastreeCity_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_Pokemart/map.bin"
     }
   ]
 }

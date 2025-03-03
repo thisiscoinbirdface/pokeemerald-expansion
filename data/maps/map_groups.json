@@ -56,7 +56,8 @@
     "Route3_Underpass",
     "GastreeCity",
     "GastreeGym",
-    "GastreeCity_PokemonCenter"
+    "GastreeCity_PokemonCenter",
+    "GastreeCity_Pokemart"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

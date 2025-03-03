@@ -9,42 +9,28 @@ script GastreeCity_PokemonCenter_EventScript_Nurse{
 }
 
 script GastreeCity_EventScript_KohlaBattle_Trigger0{
+    //Exit if flag
     if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
         end
     }
 
-    lockall
-    applymovement(13, moves(walk_left *6))
-    waitmovement(0)
-    release
-
-    goto(GastreeCity_EventScript_KohlaBattle)
-    waitmessage
-
-    applymovement(13, moves(walk_left *3 walk_down *3 walk_left *8))
-    waitmovement(0)
-
-    //Set flag
-    setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(13)
-    removeobject(1)
-    removeobject(2)
-
-    release    
-}
-
-script GastreeCity_EventScript_KohlaBattle_Trigger1{
-    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
-        end
-    }
-
+    //Start
     lockall
     applymovement(13, moves(walk_up walk_left *6))
     waitmovement(0)
-    goto(GastreeCity_EventScript_KohlaBattle)
-    waitmessage
 
-    applymovement(13, moves(walk_down walk_left *3 walk_down *3 walk_left *8))
+    //Kohla talks trash
+    msgbox(GastreeCity_KohlaIntro1)
+    msgbox(GastreeCity_KohlaIntro2)
+
+    //Battle
+    trainerbattle_no_intro(TRAINER_GASTREE_KOHLA, msgbox(format("Not again!")))
+
+    //Lose battle
+    msgbox(GastreeCity_KohlaPostBattle)
+    release
+    
+    applymovement(13, moves(walk_up walk_left *3 walk_down *3 walk_left *8))
     waitmovement(0)
 
     //Set flag
@@ -53,22 +39,54 @@ script GastreeCity_EventScript_KohlaBattle_Trigger1{
     removeobject(1)
     removeobject(2)    
 
-    release
+    releaseall
 }
 
-script GastreeCity_EventScript_KohlaBattle{
+script GastreeCity_EventScript_KohlaBattle_Trigger1{
+    //Exit if flag
+    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
+        end
+    }
+
+    //Start
+    lockall
+    applymovement(13, moves(walk_up walk_left *6))
+    waitmovement(0)
 
     //Kohla talks trash
-    msgbox(format("KOHLA: Well well, look who thought it was fashionable to be late! Going to Mt. Ceram? There are rocks outside the entry, and you'll need a {PKMN} to smash them! But I'm far ahead of you, chum! I've already beaten this town's pathetic Gym Leader who gave me the HM I need!"))
-    msgbox(format("KOHLA: And I don't mind dishing out a second serving either! This is payback for one-upping me in front of the other detectives!"))
+    msgbox(GastreeCity_KohlaIntro1)
+    msgbox(GastreeCity_KohlaIntro2)
+
     //Battle
     trainerbattle_no_intro(TRAINER_GASTREE_KOHLA, msgbox(format("Not again!")))
 
     //Lose battle
-    msgbox(format("KOHLA: You may have beaten me this time, but you're still just a lazy good-for-nothing who lucked into a job that I deserve! People are counting on us to get the dreamstone and I can't be dilly-dallying about with you! Over and out, chum!"))
-    waitmessage
+    msgbox(GastreeCity_KohlaPostBattle)
+    release
+    
+    applymovement(13, moves(walk_down walk_left *3 walk_down *2 walk_left *8))
+    waitmovement(0)
 
-    //End
-    return
+    //Set flag
+    setflag(FLAG_GASTREE_KOHLA_BATTLE)
+    removeobject(13)
+    removeobject(1)
+    removeobject(2)    
+
+    releaseall
 }
+
+text GastreeCity_KohlaIntro1 {
+    format("KOHLA: Well well, look who thought it was fashionable to be late! Going to Mt. Ceram? There are rocks outside the entry, and you'll need a {PKMN} to smash them! But I'm far ahead of you, chum! I've already beaten this town's pathetic Gym Leader who gave me the HM I need!")
+}
+text GastreeCity_KohlaIntro2{
+    format("KOHLA: And I don't mind dishing out a second serving either! This is payback for one-upping me in front of the other detectives!")
+}
+text GastreeCity_KohlaPostBattle{
+    format("KOHLA: You may have beaten me this time, but you're still just a lazy good-for-nothing who lucked into a job that I deserve! People are counting on us to get the dreamstone and I can't be dilly-dallying about with you! Over and out, chum!")
+}
+
+
+
+
 
