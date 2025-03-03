@@ -56,10 +56,52 @@ Route3_Underpass_Trigger_EvilBattle::
 # 41 "data//maps/Route3_Underpass/scripts.pory"
 	trainerbattle_no_intro TRAINER_ROUTE3_EVIL_GABRIELLE, Route3_Underpass_Trigger_EvilBattle_Text_10
 # 44 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 3, Route3_Underpass_Trigger_EvilBattle_Movement_6
+# 45 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 46 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 2, Route3_Underpass_Trigger_EvilBattle_Movement_7
+# 47 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 48 "data//maps/Route3_Underpass/scripts.pory"
 	msgbox Route3_Underpass_Trigger_EvilBattle_Text_11
+# 49 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 2, Route3_Underpass_Trigger_EvilBattle_Movement_3
+# 50 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 51 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_12
 # 52 "data//maps/Route3_Underpass/scripts.pory"
-	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
+	release
 # 53 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 2, Route3_Underpass_Trigger_EvilBattle_Movement_8
+# 54 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 55 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject 2
+# 58 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 3, Route3_Underpass_Trigger_EvilBattle_Movement_9
+# 59 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 60 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_13
+# 61 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_14
+# 62 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_15
+# 63 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_16
+# 64 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 65 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 3, Route3_Underpass_Trigger_EvilBattle_Movement_8
+# 66 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 67 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject 3
+# 70 "data//maps/Route3_Underpass/scripts.pory"
+	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
+# 71 "data//maps/Route3_Underpass/scripts.pory"
 	releaseall
 	return
 
@@ -103,6 +145,34 @@ Route3_Underpass_Trigger_EvilBattle_Movement_4:
 Route3_Underpass_Trigger_EvilBattle_Movement_5:
 # 34 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
+	step_end
+
+# 44 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_Trigger_EvilBattle_Movement_6:
+# 44 "data//maps/Route3_Underpass/scripts.pory"
+	face_left
+	step_end
+
+# 46 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_Trigger_EvilBattle_Movement_7:
+# 46 "data//maps/Route3_Underpass/scripts.pory"
+	face_right
+	step_end
+
+# 53 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_Trigger_EvilBattle_Movement_8:
+# 53 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 53 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+	step_end
+
+# 58 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_Trigger_EvilBattle_Movement_9:
+# 58 "data//maps/Route3_Underpass/scripts.pory"
+	walk_left
+# 58 "data//maps/Route3_Underpass/scripts.pory"
+	face_up
 	step_end
 
 Route3_Underpass_Trigger_EvilBattle_Text_0:
@@ -155,14 +225,53 @@ Route3_Underpass_Trigger_EvilBattle_Text_8:
 
 Route3_Underpass_Trigger_EvilBattle_Text_9:
 # 37 "data//maps/Route3_Underpass/scripts.pory"
-	.string "RAE: No? No?!?! Well then...let me, Aunty\n"
-	.string "Gabrielle teach you a lesson. Don't mess\l"
-	.string "with adult affairs!$"
+	.string "GABRIELLE: No? No?!?! Well then...let me,\n"
+	.string "Aunty Gabrielle teach you a lesson:\l"
+	.string "don't stick your nose where it doesn't\l"
+	.string "belong!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_10:
 # 41 "data//maps/Route3_Underpass/scripts.pory"
-	.string "I'll remember this, {PLAYER}!$"
+	.string "My {PKMN} just aren't good enough!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_11:
-# 44 "data//maps/Route3_Underpass/scripts.pory"
-	.string "GG$"
+# 48 "data//maps/Route3_Underpass/scripts.pory"
+	.string "Fine - keep your stupid Clefairy! Enjoy\n"
+	.string "your time together while it lasts. We'll\l"
+	.string "be back for the dream shard soon\l"
+	.string "enough!$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_12:
+# 51 "data//maps/Route3_Underpass/scripts.pory"
+	.string "And you! I'll remember this, {PLAYER}.\n"
+	.string "You'll regret messing with Team Somber!$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_13:
+# 60 "data//maps/Route3_Underpass/scripts.pory"
+	.string "{PLAYER} - Clefairy and I are in your\n"
+	.string "debt. The way you handled that thug was\l"
+	.string "incredible. I admire you for having such\l"
+	.string "strength.$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_14:
+# 61 "data//maps/Route3_Underpass/scripts.pory"
+	.string "I've realised something. When alone, I\n"
+	.string "was free to do as I wish and avoid\l"
+	.string "battling. But with Clefairy by my side, I\l"
+	.string "can no longer afford to be that way.$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_15:
+# 62 "data//maps/Route3_Underpass/scripts.pory"
+	.string "Clefairy was ready to protect me, but I\n"
+	.string "wasn't prepared to do the same for her.\l"
+	.string "I let her down. I was waiting for\l"
+	.string "someone to save us. What would've\l"
+	.string "happened had you not come?$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_16:
+# 63 "data//maps/Route3_Underpass/scripts.pory"
+	.string "But no more! I'm going to learn to hold\n"
+	.string "my ground. If these Team Somber thugs\l"
+	.string "come after Clefairy again, we'll be\l"
+	.string "ready. {PLAYER} - I owe you. Clefairy\l"
+	.string "and I hope our paths cross again.$"

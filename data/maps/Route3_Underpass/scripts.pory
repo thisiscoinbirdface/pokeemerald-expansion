@@ -34,19 +34,38 @@ script Route3_Underpass_Trigger_EvilBattle{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)     
     msgbox(format("???: Oh, you're just some stupid kid. How about you mind your own business? Play with your toys at home. Get out of here before I hurt you!"))
-    msgbox(format("RAE: No? No?!?! Well then...let me, Aunty Gabrielle teach you a lesson. Don't mess with adult affairs!"))
+    msgbox(format("GABRIELLE: No? No?!?! Well then...let me, Aunty Gabrielle teach you a lesson: don't stick your nose where it doesn't belong!"))
     release
 
     //Start battle
-    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "I'll remember this, {PLAYER}!")
+    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "My {PKMN} just aren't good enough!")
 
     //End battle - baddie says revenge
-    msgbox(format("GG"))
-
+    applymovement(3, moves(face_left))
+    waitmovement(0) 
+    applymovement(2, moves(face_right))
+    waitmovement(0)    
+    msgbox(format("Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dream shard soon enough!"))
+    release
+    applymovement(2, moves(jump_in_place_up))
+    waitmovement(0)
+    msgbox(format("And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
+    release
+    applymovement(2, moves(walk_down * 2))
+    waitmovement(0)
+    removeobject(2)
 
     //Breech says he needs to train
-
-
+    applymovement(3, moves(walk_left face_up))
+    waitmovement(0)     
+    msgbox(format("{PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible. I admire you for having such strength."))
+    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with Clefairy by my side, I can no longer afford to be that way."))
+    msgbox(format("Clefairy was ready to protect me, but I wasn't prepared to do the same for her. I let her down. I was waiting for someone to save us. What would've happened had you not come?"))
+    msgbox(format("But no more! I'm going to learn to hold my ground. If these Team Somber thugs come after Clefairy again, we'll be ready. {PLAYER} - I owe you. Clefairy and I hope our paths cross again."))
+    release
+    applymovement(3, moves(walk_down * 2))
+    waitmovement(0)     
+    removeobject(3)
 
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
