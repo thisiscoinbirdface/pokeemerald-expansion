@@ -182,11 +182,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Rattata
-Level: 7
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cubone
-Level: 8
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_CHARA ===
@@ -199,11 +199,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Teddiursa
-Level: 9
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 10
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
@@ -217,7 +217,7 @@ Items: Potion
 AI: Check Bad Move
 
 Hatenna
-Level: 9
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Drowzee

@@ -11906,23 +11906,23 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_MIENFOO"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TINKATINK"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TINKATINK"
               },
               {
@@ -12006,51 +12006,51 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 8,
+                "max_level": 7,
                 "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 5,
-                "max_level": 8,
+                "max_level": 7,
                 "species": "SPECIES_SENTRET"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_MAWILE"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_MAWILE"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_SPEAROW"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_SPEAROW"
               },
               {
                 "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_SPEAROW"
+              },
+              {
+                "min_level": 4,
                 "max_level": 5,
                 "species": "SPECIES_MEDITITE"
               },
               {
-                "min_level": 5,
+                "min_level": 4,
                 "max_level": 5,
                 "species": "SPECIES_SENTRET"
               },
               {
-                "min_level": 6,
+                "min_level": 5,
                 "max_level": 8,
                 "species": "SPECIES_SWABLU"
               },
               {
-                "min_level": 6,
+                "min_level": 5,
                 "max_level": 8,
                 "species": "SPECIES_SWABLU"
               },
@@ -12074,53 +12074,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 6,
+                "min_level": 5,
                 "max_level": 8,
                 "species": "SPECIES_MIENFOO"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_TINKATINK"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_TINKATINK"
+              },
+              {
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_NOIBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 6,
+                "min_level": 4,
+                "max_level": 5,
                 "species": "SPECIES_ARON"
               },
               {
-                "min_level": 6,
-                "max_level": 8,
+                "min_level": 5,
+                "max_level": 7,
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 6,
+                "min_level": 5,
                 "max_level": 8,
                 "species": "SPECIES_MIENFOO"
               },
               {
-                "min_level": 5,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_NOIBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 6,
+                "min_level": 4,
+                "max_level": 5,
                 "species": "SPECIES_ARON"
               },
               {

@@ -22,8 +22,6 @@ script Route3_Underpass_Trigger_EvilBattle{
     msgbox(format("Clefairy: clee!!!"))
     msgbox(format("???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
 
-    
-
     //They look at you and you walk to them
     applymovement(2, moves(jump_in_place_up))
     waitmovement(0)
@@ -70,6 +68,7 @@ script Route3_Underpass_Trigger_EvilBattle{
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
     releaseall
+    
 }
 
 
