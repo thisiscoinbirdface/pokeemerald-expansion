@@ -1,0 +1,32 @@
+mapscripts GastreeGym_MapScripts{}
+
+
+script GastreeGym_TrainerBattle_Skip {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Sefe fefe", "fefe fef efe err rr rrr")
+    msgbox(format("goo"))
+    release
+    end
+
+}
+
+script GastreeGym_TrainerBattle_Jaco {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Sefe fefe", "fefe fef efe err rr rrr")
+    msgbox(format("goo"))
+    release
+    end
+
+}
+
+script GastreeGym_LeaderBattle {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_LEADER, "Sefe fefe", "fefe fef efe err rr rrr")
+    msgbox(format("goo"))
+    release
+    end
+
+}
+
+
+

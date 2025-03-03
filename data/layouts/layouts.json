@@ -4595,7 +4595,7 @@
       "id": "LAYOUT_GASTREE_GYM",
       "name": "GastreeGym_Layout",
       "width": 16,
-      "height": 12,
+      "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_LavaridgeGym",
       "border_filepath": "data/layouts/GastreeGym/border.bin",

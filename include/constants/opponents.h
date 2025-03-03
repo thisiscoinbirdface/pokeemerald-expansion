@@ -3,21 +3,27 @@
 
 #include "constants/battle_partner.h"
 
+//Route 1 
 #define TRAINER_NONE                          0
 #define TRAINER_ROUTE1_JOSE                   1
 #define TRAINER_ROUTE1_SANA                   2
 #define TRAINER_ROUTE1_MORTEM                 3
 #define TRAINER_KOHLA_LAB                     4
-#define TRAINER_ROUTE3_JANA                   5 
 
+//Route 3 
+#define TRAINER_ROUTE3_JANA                   5 
 #define TRAINER_ROUTE3_KIM                    6
 #define TRAINER_ROUTE3_RONNIE                 7
 #define TRAINER_ROUTE3_CHARA                  8
+    //Evil team grunt
+    #define TRAINER_GABRIELLE_1               9
 
-#define TRAINER_GABRIELLE_1                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
+//Gastree City Gym    
+#define TRAINER_GASTREEGYM_JACO              10
+#define TRAINER_GASTREEGYM_SKIP              11
+#define TRAINER_GASTREEGYM_LEADER            12
+
+//
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
 #define TRAINER_DECLAN                       15

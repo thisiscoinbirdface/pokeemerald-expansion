@@ -120,7 +120,6 @@ Route123_EventScript_Frederick::
 	end
 
 Route123_EventScript_Alberto::
-	trainerbattle_single TRAINER_ALBERTO, Route123_Text_AlbertoIntro, Route123_Text_AlbertoDefeat
 	msgbox Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
