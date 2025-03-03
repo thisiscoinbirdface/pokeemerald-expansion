@@ -23,7 +23,62 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 50,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

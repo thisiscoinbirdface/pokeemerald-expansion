@@ -29,7 +29,7 @@ Route2_Caves_EventScript_ClefairyBattle::
 # 18 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 20 "data//maps/Route2_Caves/scripts.pory"
-	setwildbattle SPECIES_CLEFAIRY, 10
+	setwildbattle SPECIES_CLEFAIRY, 8
 # 21 "data//maps/Route2_Caves/scripts.pory"
 	dowildbattle
 # 22 "data//maps/Route2_Caves/scripts.pory"

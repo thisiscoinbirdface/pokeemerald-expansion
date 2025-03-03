@@ -4590,6 +4590,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/GastreeCity/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_GYM",
+      "name": "GastreeGym_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LavaridgeGym",
+      "border_filepath": "data/layouts/GastreeGym/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeGym/map.bin"
     }
   ]
 }

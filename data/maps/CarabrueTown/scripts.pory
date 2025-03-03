@@ -49,7 +49,7 @@ script CarabrueTown_Sign_TenebrisLab{
 script CarabrueTown_EventScript_NPC1{
     lockall
     faceplayer
-    msgbox(format("{Psst - {PLAYER}! See those cops over there? They came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate.}"))
+    msgbox(format("Psst - {PLAYER}! See those cops over there? They came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."))
     releaseall
 }
 

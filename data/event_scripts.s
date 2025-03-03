@@ -1184,3 +1184,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route3_Underpass/scripts.inc"
 
 	.include "data/maps/GastreeCity/scripts.inc"
+
+	.include "data/maps/GastreeGym/scripts.inc"

@@ -54,6 +54,18 @@ CarabrueTown_Sign_TenebrisLab::
 	end
 
 
+CarabrueTown_EventScript_NPC1::
+# 50 "data//maps/CarabrueTown/scripts.pory"
+	lockall
+# 51 "data//maps/CarabrueTown/scripts.pory"
+	faceplayer
+# 52 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_EventScript_NPC1_Text_0
+# 53 "data//maps/CarabrueTown/scripts.pory"
+	releaseall
+	return
+
+
 # 21 "data//maps/CarabrueTown/scripts.pory"
 CarabrueTown_EventScript_PoliceRoadBlock_Movement_0:
 # 21 "data//maps/CarabrueTown/scripts.pory"
@@ -103,3 +115,12 @@ CarabrueTown_Sign_TenebrisLab_Text_0:
 # 45 "data//maps/CarabrueTown/scripts.pory"
 	.string "THE TENEBRIS LABORATORY\n"
 	.string "Pokemon psychology research hub.$"
+
+CarabrueTown_EventScript_NPC1_Text_0:
+# 52 "data//maps/CarabrueTown/scripts.pory"
+	.string "Psst - {PLAYER}! See those cops over\n"
+	.string "there? They came all the way from\l"
+	.string "Fennilahl Town to investigate the\l"
+	.string "Professor's disappearance. They're\l"
+	.string "blocking access to Route 1 while they\l"
+	.string "investigate.$"
