@@ -1,3 +1,56 @@
 mapscripts Route3_Underpass_MapScripts{}
 
+script Route3_Underpass_Trigger_EvilBattle{
+    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
+        end
+    }
+
+
+    lockall
+
+    //Some convo between hiker and magma
+    applymovement(2, moves(jump_in_place_right))
+    waitmovement(0)    
+    msgbox(format("???: Give it to me!"))
+    applymovement(3, moves(walk_right face_left))
+    waitmovement(0)    
+    msgbox(format("BREECH: No! Stay away! Clefairy is MY partner!"))
+    msgbox(format("???: I said give it to me! It's holding a dream shard. That's too precious to be held by someone like you!"))
+    applymovement(2, moves(walk_right))
+    waitmovement(0)    
+    msgbox(format("BREECH: I don't know anything about any dream shards, please! Just stop!"))
+    msgbox(format("Clefairy: clee!!!"))
+    msgbox(format("???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
+
+    
+
+    //They look at you and you walk to them
+    applymovement(2, moves(jump_in_place_up))
+    waitmovement(0)
+    msgbox(format("???: Who's there? What you do want?"))
+    applymovement(3, moves(face_up))
+    waitmovement(0)    
+    msgbox(format("BREECH: {PLAYER}! It's you! This thug is trying to take Clefairy away! Help me, please!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)     
+    msgbox(format("???: Oh, you're just some stupid kid. How about you mind your own business? Play with your toys at home. Get out of here before I hurt you!"))
+    msgbox(format("RAE: No? No?!?! Well then...let me, Aunty Gabrielle teach you a lesson. Don't mess with adult affairs!"))
+    release
+
+    //Start battle
+    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "I'll remember this, {PLAYER}!")
+
+    //End battle - baddie says revenge
+    msgbox(format("GG"))
+
+
+    //Breech says he needs to train
+
+
+
+    //End
+    setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
+    releaseall
+}
+
 

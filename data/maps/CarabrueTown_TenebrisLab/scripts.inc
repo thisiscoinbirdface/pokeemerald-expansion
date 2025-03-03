@@ -444,7 +444,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5:
 # 291 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 4
 # 292 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_RIOLU, 5, ITEM_POKE_BALL
+	givemon SPECIES_RIOLU, 15, ITEM_POKE_BALL
 # 293 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 294 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

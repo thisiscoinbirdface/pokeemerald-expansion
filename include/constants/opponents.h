@@ -16,7 +16,7 @@
 #define TRAINER_ROUTE3_RONNIE                 7
 #define TRAINER_ROUTE3_CHARA                  8
     //Evil team grunt
-    #define TRAINER_GABRIELLE_1               9
+    #define TRAINER_ROUTE3_EVIL_GABRIELLE               9
 
 //Gastree City Gym    
 #define TRAINER_GASTREEGYM_JACO              10

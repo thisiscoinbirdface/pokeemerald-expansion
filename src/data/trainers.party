@@ -206,37 +206,22 @@ Swablu
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GABRIELLE_1 ===
+=== TRAINER_ROUTE3_EVIL_GABRIELLE ===
 Name: GABRIELLE
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: No
+Items: Potion
 AI: Check Bad Move
 
-Skitty
-Level: 26
+Hatenna
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Taillow
-Level: 26
+Drowzee
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_JACO === 

@@ -56,7 +56,7 @@
 #define FLAG_FENNILAHL_HIKER_BLOCK    0x29 // Unused Flag
 #define FLAG_BATTLE_NO_RUNNING_CATCHING    0x2A // Flag for no running or catching in wild battles (special battles)
 #define FLAG_TENEBRIS_POLICE_PRESCENCE    0x2B // yes as long as the police SHOULDNT be there
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
+#define FLAG_ROUTE3_UNDERPASS_EVILTEAM    0x2C // check if the fight is won or not
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
