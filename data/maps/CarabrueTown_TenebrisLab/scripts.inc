@@ -671,10 +671,18 @@ CarabrueTown_TenebrisLab_EventScript_Scientist3::
 # 441 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	faceplayer
 # 442 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0
-# 443 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	goto_if_set FLAG_LAB_CALLTOACTION, CarabrueTown_TenebrisLab_EventScript_Scientist3_2
+# 445 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1
+CarabrueTown_TenebrisLab_EventScript_Scientist3_1:
+# 447 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	return
+
+CarabrueTown_TenebrisLab_EventScript_Scientist3_2:
+# 443 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0
+	goto CarabrueTown_TenebrisLab_EventScript_Scientist3_1
 
 
 # 26 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1213,7 +1221,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_41:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_42:
 # 233 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "You won't be this lucky next time, {PLAYER}!$"
+	.string "You won't be this lucky next time!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_43:
 # 234 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1324,7 +1332,13 @@ CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0:
 	.string "to shut the lab down.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:
-# 442 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 443 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "A bit unorthodox for a researcher, but\n"
+	.string "you and your new partner are looking\l"
+	.string "good together!$"
+
+CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1:
+# 445 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm sorry we couldn't offer you the\n"
 	.string "standard companion {PKMN}. But they're\l"
 	.string "coming in the next batch of supplies!\l"

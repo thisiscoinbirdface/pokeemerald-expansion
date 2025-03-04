@@ -36,9 +36,9 @@ Route1_TrainerBattle_Sana::
 
 Route1_TrainerBattle_Mortem::
 # 34 "data//maps/Route1/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE1_MORTEM, Route1_TrainerBattle_Sana_Text_0, Route1_TrainerBattle_Sana_Text_1
+	trainerbattle_single TRAINER_ROUTE1_MORTEM, Route1_TrainerBattle_Mortem_Text_0, Route1_TrainerBattle_Mortem_Text_1
 # 35 "data//maps/Route1/scripts.pory"
-	msgbox Route1_TrainerBattle_Sana_Text_2
+	msgbox Route1_TrainerBattle_Mortem_Text_2
 # 36 "data//maps/Route1/scripts.pory"
 	release
 	end
@@ -69,27 +69,41 @@ Route1_EventScripts_RandomDude_Text_0:
 
 Route1_TrainerBattle_Jose_Text_0:
 # 16 "data//maps/Route1/scripts.pory"
-	.string "Sup dude$"
+	.string "I just got my first {PKMN}! And now, I'm about to get my first win!$"
 
 Route1_TrainerBattle_Jose_Text_1:
 # 16 "data//maps/Route1/scripts.pory"
-	.string "Damn bro$"
+	.string "Aw man! I thought I could win!$"
 
 Route1_TrainerBattle_Jose_Text_2:
 # 17 "data//maps/Route1/scripts.pory"
-	.string "Yooo$"
+	.string "My Rattata and I will become {PKMN}\n"
+	.string "Champions one day!$"
 
 Route1_TrainerBattle_Sana_Text_0:
 # 25 "data//maps/Route1/scripts.pory"
-	.string "Sefe fefe$"
+	.string "I love flying-time {PKMN}. Let me show you my favourite!$"
 
 Route1_TrainerBattle_Sana_Text_1:
 # 25 "data//maps/Route1/scripts.pory"
-	.string "fefe fef efe err rr rrr$"
+	.string "My flying type {PKMN} lost!$"
 
 Route1_TrainerBattle_Sana_Text_2:
 # 26 "data//maps/Route1/scripts.pory"
-	.string "goo$"
+	.string "A good {PKMN} team needs variety, I guess.$"
+
+Route1_TrainerBattle_Mortem_Text_0:
+# 34 "data//maps/Route1/scripts.pory"
+	.string "I came from GASTREE CITY to find cool bug-type {PKMN} here...but I found you instead!$"
+
+Route1_TrainerBattle_Mortem_Text_1:
+# 34 "data//maps/Route1/scripts.pory"
+	.string "Well, back to bug-hunting for me.$"
+
+Route1_TrainerBattle_Mortem_Text_2:
+# 35 "data//maps/Route1/scripts.pory"
+	.string "There are many bug catchers like me.\n"
+	.string "It's a huge hobby!$"
 
 Route1_Sign_Carabrue_Text_0:
 # 42 "data//maps/Route1/scripts.pory"

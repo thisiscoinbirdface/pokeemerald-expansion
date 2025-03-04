@@ -217,10 +217,10 @@
 #define MAPSEC_NONE                         0xD5
 
 #define MAPSEC_CARABRUE_TOWN                0xD6
-#define MAPSEC_ROUTE_1                      0xD7
+#define MAPSEC_ROUTE1                      0xD7
 #define MAPSEC_FENNILAHL_TOWN               0xD8
-#define MAPSEC_ROUTE_2                      0xD9
-#define MAPSEC_ROUTE_3                      0xDA
+#define MAPSEC_ROUTE2                      0xD9
+#define MAPSEC_ROUTE3                      0xDA
 #define MAPSEC_GASTREE_CITY                 0xDB
 
 #define METLOC_SPECIAL_EGG                  0xFD

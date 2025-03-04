@@ -60,10 +60,18 @@ CarabrueTown_EventScript_NPC1::
 # 51 "data//maps/CarabrueTown/scripts.pory"
 	faceplayer
 # 52 "data//maps/CarabrueTown/scripts.pory"
-	msgbox CarabrueTown_EventScript_NPC1_Text_0
-# 53 "data//maps/CarabrueTown/scripts.pory"
+	goto_if_set FLAG_CARABRUE_POLICE, CarabrueTown_EventScript_NPC1_2
+# 55 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_EventScript_NPC1_Text_1
+CarabrueTown_EventScript_NPC1_1:
+# 57 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
 	return
+
+CarabrueTown_EventScript_NPC1_2:
+# 53 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_EventScript_NPC1_Text_0
+	goto CarabrueTown_EventScript_NPC1_1
 
 
 # 21 "data//maps/CarabrueTown/scripts.pory"
@@ -117,7 +125,12 @@ CarabrueTown_Sign_TenebrisLab_Text_0:
 	.string "Pokemon psychology research hub.$"
 
 CarabrueTown_EventScript_NPC1_Text_0:
-# 52 "data//maps/CarabrueTown/scripts.pory"
+# 53 "data//maps/CarabrueTown/scripts.pory"
+	.string "Looks like the police went away. I hope\n"
+	.string "they got the evidence they needed.$"
+
+CarabrueTown_EventScript_NPC1_Text_1:
+# 55 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those cops over\n"
 	.string "there? They came all the way from\l"
 	.string "Fennilahl Town to investigate the\l"

@@ -41,7 +41,7 @@ Route2_Caves_EventScript_ClefairyBattle::
 # 26 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 27 "data//maps/Route2_Caves/scripts.pory"
-	giveitem ITEM_HIKING_GEAR
+	giveitem ITEM_STRANGE_ROCK
 # 28 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 29 "data//maps/Route2_Caves/scripts.pory"
@@ -70,16 +70,16 @@ Route2_Caves_EventScript_ClefairyTrigger_Movement_0:
 Route2_Caves_EventScript_ClefairyBattle_Text_0:
 # 17 "data//maps/Route2_Caves/scripts.pory"
 	.string "A wild Pokemon attacks you! It's\n"
-	.string "holding the HIKING GEAR!$"
+	.string "holding the STRANGE ROCK!$"
 
 Route2_Caves_EventScript_ClefairyBattle_Text_1:
 # 25 "data//maps/Route2_Caves/scripts.pory"
-	.string "The Clefairy dropped the HIKING GEAR.\n"
+	.string "The Clefairy dropped the STRANGE ROCK.\n"
 	.string "Looks like it was just trying to guard\l"
 	.string "its home...$"
 
 Route2_Caves_EventScript_ClefairyBattle_Text_2:
 # 29 "data//maps/Route2_Caves/scripts.pory"
 	.string "It seems like this Clefairy is attached\n"
-	.string "to the HIKING GEAR for some\l"
+	.string "to the STRANGE ROCK for some\l"
 	.string "reason...its following you around.$"

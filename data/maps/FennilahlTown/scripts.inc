@@ -64,7 +64,7 @@ FennilahlTown_EventScript_HikerTunnel::
 # 38 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_BLOCK
 # 39 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_HIKING_GEAR
+	removeitem ITEM_STRANGE_ROCK
 FennilahlTown_EventScript_HikerTunnel_1:
 # 41 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
@@ -121,24 +121,24 @@ FennilahlTown_EventScript_Woman_Text_0:
 
 FennilahlTown_EventScript_HikerTunnel_Text_0:
 # 28 "data//maps/FennilahlTown/scripts.pory"
-	.string "I can't go inside the cave without my\n"
-	.string "HIKING GEAR! I lost it in the caves\l"
-	.string "south of town - a small PINK {PKMN} took it\l"
-	.string "and ran away! And I don't have any {PKMN}\l"
-	.string "to help me get it back! I don't want to\l"
-	.string "battle - I can't deal with conflict. I\l"
+	.string "I found a STRANGE ROCK in the caves\n"
+	.string "south of town, but a small PINK {PKMN} took\l"
+	.string "it and ran away! And I don't have any\l"
+	.string "{PKMN} to help me get it back! I don't want\l"
+	.string "to battle - I can't deal with conflict. I\l"
 	.string "don't know what to do!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 30 "data//maps/FennilahlTown/scripts.pory"
-	.string "You brought my HIKING GEAR? Amazing!\n"
+	.string "You brought my STRANGE ROCK? Amazing!\n"
 	.string "How can I thank you for this?$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_2:
 # 31 "data//maps/FennilahlTown/scripts.pory"
 	.string "A Clefairy was keeping it? This is the\n"
 	.string "Clefairy? And it's been following you\l"
-	.string "around because it can't let go?$"
+	.string "around because it can't let go of the\l"
+	.string "rock?$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_3:
 # 32 "data//maps/FennilahlTown/scripts.pory"
@@ -154,11 +154,11 @@ FennilahlTown_EventScript_HikerTunnel_Text_4:
 FennilahlTown_EventScript_HikerTunnel_Text_5:
 # 34 "data//maps/FennilahlTown/scripts.pory"
 	.string "Thank you trainer! My name is Breech.\n"
-	.string "I'm just a simple man who loves the\l"
-	.string "mountains. Even with Clefairy by my\l"
-	.string "side, I won't battle. Clefairy and I are\l"
-	.string "heading off to explore the mountains\l"
-	.string "now. See you again soon!$"
+	.string "I'm just a simple man who loves\l"
+	.string "collecting rocks. Even with Clefairy by\l"
+	.string "my side, I won't battle. Clefairy and I\l"
+	.string "are heading off to explore the\l"
+	.string "mountains now. See you again soon!$"
 
 FennilahlTown_Sign_Entrance_Text_0:
 # 46 "data//maps/FennilahlTown/scripts.pory"
@@ -172,5 +172,5 @@ FennilahlTown_Sign_Route2_Text_0:
 
 FennilahlTown_Sign_Route3_Text_0:
 # 56 "data//maps/FennilahlTown/scripts.pory"
-	.string "{UP_ARROW}UNDERGROUND TUNNEL\n"
-	.string "Connecting to Route 3.$"
+	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
+	.string "To Route 3 and GASTREE CITY.$"
