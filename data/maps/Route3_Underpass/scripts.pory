@@ -1,5 +1,11 @@
 mapscripts Route3_Underpass_MapScripts{}
 
+script Route3_Underpass_Nurse{
+    lockall
+    msgbox(format("This area is closed for the demo."))
+    releaseall
+}
+
 script Route3_Underpass_Trigger_EvilBattle{
     if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
         end

@@ -12666,19 +12666,18 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_OldKey,
     },
 
-    [ITEM_HIKING_GEAR] =
+    [ITEM_STRANGE_ROCK] =
     {
-        .name = _("Hiking Gear"),
+        .name = _("Strange Rock"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "An important\n"
-            "tool for hikers."),
+            "A strange rock."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Scanner,
-        .iconPalette = gItemIconPalette_Scanner,
+        .iconPic = gItemIcon_RockTeraShard,
+        .iconPalette = gItemIconPalette_RockTeraShard,
     },
 
     [ITEM_STORAGE_KEY] =

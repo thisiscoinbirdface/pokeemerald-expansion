@@ -230,7 +230,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
 
         //Trainer battle
-        trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time, {PLAYER}!")
+        trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time!")
         msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
         release
 
@@ -439,7 +439,11 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist2{
 script CarabrueTown_TenebrisLab_EventScript_Scientist3{
     lockall
     faceplayer
-    msgbox(format("I'm sorry we couldn't offer you the standard companion {PKMN}. But they're coming in the next batch of supplies! Just be patient."))
+    if (flag(FLAG_LAB_CALLTOACTION)){
+        msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"))
+    } else {
+        msgbox(format("I'm sorry we couldn't offer you the standard companion {PKMN}. But they're coming in the next batch of supplies! Just be patient."))
+    }
     releaseall
 }
 

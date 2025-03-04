@@ -4464,8 +4464,8 @@
     {
       "id": "LAYOUT_ROUTE1_HOUSE",
       "name": "Route1_House_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 8,
+      "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Route1_House/border.bin",
@@ -4484,7 +4484,7 @@
     {
       "id": "LAYOUT_FENNILAHL_TOWN_HOUSE1",
       "name": "FennilahlTown_House1_Layout",
-      "width": 10,
+      "width": 9,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
@@ -4494,7 +4494,7 @@
     {
       "id": "LAYOUT_FENNILAHL_TOWN_HOUSE2",
       "name": "FennilahlTown_House2_Layout",
-      "width": 11,
+      "width": 9,
       "height": 8,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",

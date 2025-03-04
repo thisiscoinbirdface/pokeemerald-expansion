@@ -352,7 +352,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_TOOTH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	removeitem ITEM_HIKING_GEAR
+	removeitem ITEM_STRANGE_ROCK
 	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
 	setflag FLAG_EXCHANGED_SCANNER
 	goto SlateportCity_Harbor_EventScript_TradedScanner
@@ -363,7 +363,7 @@ SlateportCity_Harbor_EventScript_DeepSeaScale::
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
 	giveitem ITEM_DEEP_SEA_SCALE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	removeitem ITEM_HIKING_GEAR
+	removeitem ITEM_STRANGE_ROCK
 	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
 	setflag FLAG_EXCHANGED_SCANNER
 	goto SlateportCity_Harbor_EventScript_TradedScanner

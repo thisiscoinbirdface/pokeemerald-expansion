@@ -2,11 +2,14 @@ mapscripts Route1_House_MapScripts {}
 
 script Route1_House_RandomDude {
     lockall
-    msgbox(
-        format(
-            "Did you know that Pokemon hide in the grass? Be careful!"
-        )
-    )
+    msgbox(format("I think Azurill ate something bad and now has food poisoning! I wish I had a PECHA BERRY to cure her."))
     releaseall
 }
+
+script Route1_House_Azurill {
+    lockall
+    msgbox(format("Azurill: zu~~ \pAzurill looks quite sick."))
+    releaseall
+}
+
 

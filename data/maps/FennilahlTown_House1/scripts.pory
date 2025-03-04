@@ -1,0 +1,18 @@
+mapscripts FennilahlTown_House1_MapScripts{}
+
+script FennilahlTown_House1_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("This town is too small for me...the nearest place that's any fun is GASTREE CITY, but you have to cross Route 3 to get there."))
+    releaseall
+}
+
+script FennilahlTown_House1_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("My sister wants to visit GASTREE CITY but crossing Route 3 isn't so easy."))
+    releaseall
+}
+
+
+

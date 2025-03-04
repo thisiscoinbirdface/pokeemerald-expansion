@@ -1,0 +1,20 @@
+mapscripts FennilahlTown_House3_MapScripts{}
+
+
+script FennilahlTown_House3_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Did you know that some {PKMN} can Mega evolve?"))
+    releaseall
+}
+
+
+script FennilahlTown_House3_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("There are no WATER type {PKMN} in these parts."))
+    releaseall
+}
+
+
+
