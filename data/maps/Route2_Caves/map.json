@@ -3,7 +3,7 @@
   "name": "Route2_Caves",
   "layout": "LAYOUT_ROUTE2_CAVES",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

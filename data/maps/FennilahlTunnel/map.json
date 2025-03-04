@@ -3,7 +3,7 @@
   "name": "FennilahlTunnel",
   "layout": "LAYOUT_FENNILAHL_TUNNEL",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE3",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
