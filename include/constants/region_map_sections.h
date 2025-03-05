@@ -222,8 +222,9 @@
 #define MAPSEC_ROUTE3                       0xD9
 #define MAPSEC_GASTREE_CITY                 0xDA
 #define MAPSEC_ROUTE4                       0xDB
+#define MAPSEC_CERAM_BASE_CAMP              0xDC
 
-#define MAPSEC_NONE                         0xDC
+#define MAPSEC_NONE                         0xDD
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -58,10 +58,12 @@
     "GastreeCity",
     "GastreeGym",
     "GastreeCity_PokemonCenter",
-    "GastreeCity_Pokemart"
+    "GastreeCity_Pokemart",
+    "TempCopyMap"
   ],
   "gMapGroup_Phase2": [
-    "Route4"
+    "Route4",
+    "CeramBaseCamp"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

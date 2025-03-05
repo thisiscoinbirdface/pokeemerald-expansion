@@ -1192,3 +1192,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GastreeCity_Pokemart/scripts.inc"
 
 	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/TempCopyMap/scripts.inc"
+
+	.include "data/maps/CeramBaseCamp/scripts.inc"

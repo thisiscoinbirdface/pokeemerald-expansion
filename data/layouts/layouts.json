@@ -4625,11 +4625,31 @@
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
       "width": 40,
-      "height": 58,
+      "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route4/border.bin",
       "blockdata_filepath": "data/layouts/Route4/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMP_COPY_MAP",
+      "name": "TempCopyMap_Layout",
+      "width": 86,
+      "height": 86,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/TempCopyMap/border.bin",
+      "blockdata_filepath": "data/layouts/TempCopyMap/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERAM_BASE_CAMP",
+      "name": "CeramBaseCamp_Layout",
+      "width": 40,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CeramBaseCamp/border.bin",
+      "blockdata_filepath": "data/layouts/CeramBaseCamp/map.bin"
     }
   ]
 }
