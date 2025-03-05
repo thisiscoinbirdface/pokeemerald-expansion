@@ -4584,10 +4584,10 @@
     {
       "id": "LAYOUT_GASTREE_CITY",
       "name": "GastreeCity_Layout",
-      "width": 64,
-      "height": 50,
+      "width": 56,
+      "height": 42,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GastreeCity/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity/map.bin"
     },
@@ -4624,7 +4624,7 @@
     {
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
-      "width": 46,
+      "width": 40,
       "height": 58,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
