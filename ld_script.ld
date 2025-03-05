@@ -1239,7 +1239,10 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
-        sound/songs/midi/mus_garden_moon.mid(.rodata);
+
+        sound/songs/midi/mus_custom_garden_moon.mid(.rodata);
+        sound/songs/midi/mus_custom_jetlag.mid(.rodata);
+        sound/songs/midi/mus_custom_flockofbirds.mid(.rodata);
     } > ROM =0
 
     lib_rodata :
