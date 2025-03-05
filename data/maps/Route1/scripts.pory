@@ -13,7 +13,7 @@ script Route1_EventScripts_RandomDude {
 
 script Route1_TrainerBattle_Jose {
 
-    trainerbattle_single(TRAINER_ROUTE1_JOSE, "I just got my first {PKMN}! And now, I'm about to get my first win!", "Aw man! I thought I could win!")
+    trainerbattle_single(TRAINER_ROUTE1_JOSE, format("I just got my first {PKMN}! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
     msgbox(format("My Rattata and I will become {PKMN} Champions one day!"))
     release
     end
