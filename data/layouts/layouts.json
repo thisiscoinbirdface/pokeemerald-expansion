@@ -4620,6 +4620,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/GastreeCity_Pokemart/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4",
+      "name": "Route4_Layout",
+      "width": 46,
+      "height": 58,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route4/border.bin",
+      "blockdata_filepath": "data/layouts/Route4/map.bin"
     }
   ]
 }

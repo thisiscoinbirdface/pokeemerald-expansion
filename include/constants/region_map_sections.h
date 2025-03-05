@@ -221,8 +221,9 @@
 #define MAPSEC_ROUTE2                       0xD8
 #define MAPSEC_ROUTE3                       0xD9
 #define MAPSEC_GASTREE_CITY                 0xDA
+#define MAPSEC_ROUTE4                       0xDB
 
-#define MAPSEC_NONE                         0xDB
+#define MAPSEC_NONE                         0xDC
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_MyMaps",
+    "gMapGroup_Phase2",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -58,6 +59,9 @@
     "GastreeGym",
     "GastreeCity_PokemonCenter",
     "GastreeCity_Pokemart"
+  ],
+  "gMapGroup_Phase2": [
+    "Route4"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
