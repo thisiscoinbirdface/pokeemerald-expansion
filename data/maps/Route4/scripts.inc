@@ -55,7 +55,7 @@ Route4_EventScript_EvilTeam::
 # 45 "data//maps/Route4/scripts.pory"
 	removeobject LOCALID_GRUNT1
 # 46 "data//maps/Route4/scripts.pory"
-	removeobject LOCALID_GRUNT1
+	removeobject LOCALID_GRUNT2
 # 47 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_EVIL_BATTLE
 # 48 "data//maps/Route4/scripts.pory"
