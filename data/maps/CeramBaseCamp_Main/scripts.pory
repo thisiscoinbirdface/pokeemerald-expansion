@@ -184,25 +184,44 @@ script CeramBaseCamp_Main_EventScript_ExitTrigger{
 
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This supply depot is under Team Somber's control!"), format("Gah! I lost!"))
+    msgbox(format("You may have beaten me, but you'll never get to the boss in time."))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format("We're going to steal all the climbing supplies here!"), format("I can't believe it!"))
+    msgbox(format("You just got lucky. I'll crush you if I ever see you again!"))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My {PKMN} were too weak!"))
+    msgbox(format("You're too late - the boss is already with the shopkeeper."))
     release
     end
 }
 
+
+
+script CeramBaseCamp_Main_Pokemart_EventScript_Clerk{
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(CeramBaseCamp_Main_Pokemart_Inventory)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+
+mart CeramBaseCamp_Main_Pokemart_Inventory{
+    ITEM_POTION
+    ITEM_POKE_BALL
+    
+}
 
 

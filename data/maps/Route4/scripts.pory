@@ -56,7 +56,7 @@ script Route4_EventScript_EvilTeam{
 
 
 script Route4_TrainerBattle_Raha {
-    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! You can't beat me!"), format("But Father spent so much money..."))
+    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! There's no way you can beat me!"), format("But Father spent so much money!"))
     msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
     release
     end
@@ -92,7 +92,7 @@ script Route4_TrainerBattle_Jenny {
     }
 
     script Route4_TrainerBattle_Kid2 {
-        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! As the chief officer of chiefness, I'm going to stop you right now!"), format("Boss! Help!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
         msgbox(format("Our secret hideout is really cool, don't you think?"))
         release
         end
@@ -110,6 +110,9 @@ script Route4_TrainerBattle_Jenny {
         msgbox(format("A child has scrawled on this sign.\pTHIS IS OUR SECRET BASE. GET OUT OR BEWARE!!!!"), MSGBOX_SIGN)
         end
     }
+
+
+
 
 
 
