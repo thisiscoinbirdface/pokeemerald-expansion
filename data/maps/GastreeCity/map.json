@@ -233,7 +233,7 @@
       "x": 37,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_GASTREE_CITY",
+      "dest_map": "MAP_GASTREE_CITY_TEA_HOUSE",
       "dest_warp_id": "0"
     },
     {
@@ -247,14 +247,14 @@
       "x": 9,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_GASTREE_CITY",
+      "dest_map": "MAP_GASTREE_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 25,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_GASTREE_CITY",
+      "dest_map": "MAP_GASTREE_CITY_HOUSE2",
       "dest_warp_id": "0"
     },
     {
@@ -262,6 +262,13 @@
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY_HOUSE3",
       "dest_warp_id": "0"
     }
   ],

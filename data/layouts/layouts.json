@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/GastreeCity_House3/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_TEA_HOUSE",
+      "name": "GastreeCity_TeaHouse_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GastreeCity_TeaHouse/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_TeaHouse/map.bin"
     }
   ]
 }
