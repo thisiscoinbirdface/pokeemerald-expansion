@@ -1,7 +1,62 @@
+mapscripts GastreeCity_TeaHouse_MapScripts{}
+
 //Teahouse Quest
 //Get 3 items for the lady who wants to make an Energy Tea
 //Energy Powder (get from shop), Shoal Salt (get from behind the shop - hidden item), Revival Herb (get from NPC)
 //Upon completion, give the player a Poltchageist egg for their trouble. Also buy tea from her any time?
+script GastreeCity_TeaHouse_EventScript_OldLady{
+    //If quest is done, open shop
+
+    //Else do quest
+    
+}
+
+script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
+    lockall
+    //first complain about the menu getting stale
+    msgbox(format("OWNER: Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want traditional teas?"))
+    release
+    applymovement(4, moves(face_left))
+    waitmovement(0)
+    msgbox(format("Sigh...you young ones just have no taste.\pWell...times are changing I suppose, and our business should change with them."))
+    release
+    applymovement(4, moves(face_down))
+    waitmovement(0)
+    applymovement(4, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("OWNER: Yes, I'd like to try crafting a modern tea. Something with zing and zap! Like those energy drinks."))
+    release
+    applymovement(4, moves(face_left))
+    waitmovement(0)    
+    msgbox(format("but I'll need the right ingredients...hmm..."))
+    release
+
+    //Ask player yes/no
+    applymovement(4, moves(face_down))
+    waitmovement(0)    
+    msgbox(format("Young one, will you help me?"), MSGBOX_YESNO)
+
+    compare(VAR_RESULT, 1)  
+    //If yes, head to the quest giving script
+    goto_if_eq(GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest)
+
+    //Else if no, carry on (and end the convo)
+    msgbox(format("I understand. Please come back if you'd like to help me out."))
+    releaseall   
+    //If no, end
+
+
+}
+
+
+script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
+    lockall
+    applymovement(4, moves(jump_in_place_down))
+    waitmovement(0)    
+    msgbox(format("You breathe new life into these old bones, young one! For the tea, I'll need...hmm...let's see...\p1 ENERGY POWDER...\n...1 SHOAL SALT...\n...and...\p...1 REVIVAL HERB! You should be able to find some REVIVAL HERBs in our back garden, but you'll have to find the rest yourself."))   
+    release
+    releaseall
+}
 
 
 
