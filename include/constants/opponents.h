@@ -3,35 +3,37 @@
 
 #include "constants/battle_partner.h"
 
-//Route 1 
+//Route 1 Trainers
 #define TRAINER_NONE                          0
 #define TRAINER_ROUTE1_JOSE                   1
 #define TRAINER_ROUTE1_SANA                   2
 #define TRAINER_ROUTE1_MORTEM                 3
 #define TRAINER_KOHLA_LAB                     4
 
-//Route 3 
+//Route 3 Trainers
 #define TRAINER_ROUTE3_JANA                   5 
 #define TRAINER_ROUTE3_KIM                    6
 #define TRAINER_ROUTE3_RONNIE                 7
 #define TRAINER_ROUTE3_CHARA                  8
     //Evil team grunt
-    #define TRAINER_ROUTE3_EVIL_GABRIELLE               9
+    #define TRAINER_ROUTE3_EVIL_GABRIELLE     9
 
 //Gastree City Gym    
 #define TRAINER_GASTREEGYM_JACO              10
 #define TRAINER_GASTREEGYM_SKIP              11
 #define TRAINER_GASTREEGYM_LEADER            12
 #define TRAINER_GASTREE_KOHLA                13
+
+//Route 4 Evil Encounter
 #define TRAINER_ROUTE4_GRUNTS                14
 
+//Mt. Ceram Base Camp Evil Encounter
+#define TRAINER_CERAMBASECAMP_EVIL_GABRIELLE 15
+#define TRAINER_CERAMBASECAMP_GRUNT1         16
+#define TRAINER_CERAMBASECAMP_GRUNT2         17
+#define TRAINER_CERAMBASECAMP_GRUNT3         18
 
-
-
-#define TRAINER_DECLAN                       15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
-#define TRAINER_GRUNT_WEATHER_INST_1         17
-#define TRAINER_GRUNT_WEATHER_INST_2         18
+//Route 4 Trainers
 #define TRAINER_GRUNT_WEATHER_INST_3         19
 #define TRAINER_GRUNT_MUSEUM_1               20
 #define TRAINER_GRUNT_MUSEUM_2               21

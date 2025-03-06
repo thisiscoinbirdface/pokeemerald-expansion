@@ -74,29 +74,23 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     applymovement(LOCALID_GRUNT4, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("It's you?"))
+    msgbox(format("???: GABRIELLE: It's you?"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dream shard from that Celfairy hiker."))
+    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dream shard from that Celfairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
-    msgbox(format("Remind me to punish you for that.\p...yes boss.\pBut right now, just deal with this pest. And you better win this time!"))
+    msgbox(format("???: Remind me to punish you for that.\pGABRIELLE:...yes boss.\p???: But right now, just deal with this pest while I put the leader in her place. And you better win this time!"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
-    msgbox(format("You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
+    msgbox(format("GABRIELLE: You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
     release 
 
-    //Grunt notices and tells boss
-
-
-    //Dialogue
-
-
     //Single battle - vs the grunt
-
+    
 
     //Defeat, but it doesn't matter - they've got the supplies
 

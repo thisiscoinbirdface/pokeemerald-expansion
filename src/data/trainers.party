@@ -216,11 +216,11 @@ Double Battle: No
 Items: Potion
 AI: Check Bad Move
 
-Hatenna
+Baltoy
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Drowzee
+Zorua-Hisui
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -304,18 +304,18 @@ Music: Aqua
 Double Battle: Yes
 AI: Check Bad Move
 
-Carvanha
-Level: 5
+Nickit
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 5
+Drowzee
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 
-=== TRAINER_DECLAN ===
-Name: DECLAN
+=== TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
+Name: GABRIELLE
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -323,11 +323,16 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
-Level: 34
+Snorunt
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_RUSTURF_TUNNEL ===
+Zorua-Hisui
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -336,11 +341,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 11
+Drowzee
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_1 ===
+=== TRAINER_CERAMBASECAMP_GRUNT2 ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -349,15 +354,15 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 27
+Nickit
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 27
+Drowzee
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_2 ===
+=== TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -366,12 +371,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 27
+Woobat
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 27
+Nickit
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===

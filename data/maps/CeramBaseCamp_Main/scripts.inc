@@ -141,23 +141,23 @@ CeramBaseCamp_Main_EventScript_MainEncounter::
 	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_8
 # 90 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
-# 110 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 104 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_GRUNT1
-# 111 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 105 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_GRUNT2
-# 112 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 106 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_GRUNT3
-# 113 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 107 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_GRUNT4
-# 114 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 108 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_BOSS
-# 115 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 109 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_LEADER
-# 116 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 110 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_SHOPKEEPER2F
-# 118 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 112 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EVIL_BATTLE
-# 119 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 113 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	releaseall
 	return
 
@@ -273,23 +273,26 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_4:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_5:
 # 77 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "It's you?$"
+	.string "???: GABRIELLE: It's you?$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_6:
 # 81 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "Boss! Boss! This is the kid that beat me\n"
-	.string "in Route 4. I was trying to take the\l"
-	.string "dream shard from that Celfairy hiker.$"
+	.string "GABRIELLE: Boss! Boss! This is the kid\n"
+	.string "that beat me in Route 4. I was trying to\l"
+	.string "take the dream shard from that Celfairy\l"
+	.string "hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_7:
 # 85 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "Remind me to punish you for that.\p"
-	.string "...yes boss.\p"
-	.string "But right now, just deal with this pest.\n"
+	.string "???: Remind me to punish you for that.\p"
+	.string "GABRIELLE:...yes boss.\p"
+	.string "???: But right now, just deal with this\n"
+	.string "pest while I put the leader in her place.\l"
 	.string "And you better win this time!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_8:
 # 89 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "You heard that...what was your name\n"
-	.string "again? {PLAYER}? Yeah, {PLAYER}!\l"
-	.string "I'm not going to lose to you this time!$"
+	.string "GABRIELLE: You heard that...what was\n"
+	.string "your name again? {PLAYER}? Yeah,\l"
+	.string "{PLAYER}! I'm not going to lose to you\l"
+	.string "this time!$"

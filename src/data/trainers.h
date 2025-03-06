@@ -615,7 +615,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 317
-    [DIFFICULTY_NORMAL][TRAINER_DECLAN] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMP_EVIL_GABRIELLE] =
     {
 #line 318
         .trainerName = _("DECLAN"),
@@ -647,7 +647,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 330
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_RUSTURF_TUNNEL] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMP_GRUNT1] =
     {
 #line 331
         .trainerName = _("GRUNT"),
@@ -679,7 +679,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 343
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_1] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMP_GRUNT2] =
     {
 #line 344
         .trainerName = _("GRUNT"),
@@ -722,7 +722,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 360
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_2] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMP_GRUNT3] =
     {
 #line 361
         .trainerName = _("GRUNT"),

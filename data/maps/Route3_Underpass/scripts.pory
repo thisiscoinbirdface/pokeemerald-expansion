@@ -51,7 +51,7 @@ script Route3_Underpass_Trigger_EvilBattle{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)     
     msgbox(format("???: Oh, you're just some stupid kid. How about you mind your own business? Play with your toys at home. Get out of here before I hurt you!"))
-    msgbox(format("GABRIELLE: No? No?!?! Well then...let me, Aunty Gabrielle teach you a lesson: don't stick your nose where it doesn't belong!"))
+    msgbox(format("GABRIELLE: No? No?!?! Well then...let Miss Gabrielle teach you a lesson: don't stick your nose where it doesn't belong!"))
     release
 
     //Start battle
@@ -62,11 +62,11 @@ script Route3_Underpass_Trigger_EvilBattle{
     waitmovement(0) 
     applymovement(2, moves(face_right))
     waitmovement(0)    
-    msgbox(format("Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dream shard soon enough!"))
+    msgbox(format("GABRIELLE: Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dream shard soon enough!"))
     release
     applymovement(2, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
+    msgbox(format("GABRIELLE: And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
     release
     applymovement(2, moves(walk_down * 2))
     waitmovement(0)

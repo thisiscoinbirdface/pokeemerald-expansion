@@ -274,9 +274,9 @@ Route3_Underpass_Trigger_EvilBattle_Text_8:
 
 Route3_Underpass_Trigger_EvilBattle_Text_9:
 # 54 "data//maps/Route3_Underpass/scripts.pory"
-	.string "GABRIELLE: No? No?!?! Well then...let me,\n"
-	.string "Aunty Gabrielle teach you a lesson:\l"
-	.string "don't stick your nose where it doesn't\l"
+	.string "GABRIELLE: No? No?!?! Well then...let\n"
+	.string "Miss Gabrielle teach you a lesson: don't\l"
+	.string "stick your nose where it doesn't\l"
 	.string "belong!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_10:
@@ -285,15 +285,16 @@ Route3_Underpass_Trigger_EvilBattle_Text_10:
 
 Route3_Underpass_Trigger_EvilBattle_Text_11:
 # 65 "data//maps/Route3_Underpass/scripts.pory"
-	.string "Fine - keep your stupid Clefairy! Enjoy\n"
-	.string "your time together while it lasts. We'll\l"
-	.string "be back for the dream shard soon\l"
-	.string "enough!$"
+	.string "GABRIELLE: Fine - keep your stupid\n"
+	.string "Clefairy! Enjoy your time together\l"
+	.string "while it lasts. We'll be back for the\l"
+	.string "dream shard soon enough!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_12:
 # 69 "data//maps/Route3_Underpass/scripts.pory"
-	.string "And you! I'll remember this, {PLAYER}.\n"
-	.string "You'll regret messing with Team Somber!$"
+	.string "GABRIELLE: And you! I'll remember this,\n"
+	.string "{PLAYER}. You'll regret messing with\l"
+	.string "Team Somber!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_13:
 # 78 "data//maps/Route3_Underpass/scripts.pory"
