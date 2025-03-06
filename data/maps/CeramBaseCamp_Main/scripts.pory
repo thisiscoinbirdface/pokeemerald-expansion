@@ -55,7 +55,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit."))
+    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up MT CERAM!"))
     msgbox(format("???: No way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
     release
@@ -66,7 +66,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     applymovement(LOCALID_LEADER, moves(emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are harrassing the shopkeeper. I'll take the boss. You deal with the one on the right for me!"))
+    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are trying to steal the shopkeeper's supplies. We have to stop them!\pI'll take the boss. You deal with the one on the right for me!"))
     release
 
     //Player walks up and deals with grunt
@@ -89,16 +89,42 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     msgbox(format("GABRIELLE: You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
     release 
 
-    //Single battle - vs the grunt
+    //Set all sprites facing each other
+    applymovement(LOCALID_BOSS, moves(face_down))    
+    applymovement(LOCALID_LEADER, moves(face_up))
+    waitmovement(0)
     
+    //Single battle - vs the grunt
+    trainerbattle_no_intro(TRAINER_CERAMBASECAMP_EVIL_GABRIELLE, format("No! Not again!"))
 
-    //Defeat, but it doesn't matter - they've got the supplies
 
+    //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
+    applymovement(LOCALID_BOSS, moves(jump_in_place_down))
+    waitmovement(0)
+    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my {PKMN} with me."))
+    release
+    msgbox(format("???: Serves you right! Now move over and give our shopkeeper back."))
+    applymovement(LOCALID_GRUNT4, moves(face_left))
+    waitmovement(0)
+    msgbox(format("GABRIELLE: I...I'm sorry boss! I lost again."))
+    release 
+    applymovement(LOCALID_BOSS, moves(face_right))
+    waitmovement(0)
+    msgbox(format("???: You useless, incompetent fool! Argh! How can we accomplish anything with such terrible support!"))   
+    release 
+    applymovement(LOCALID_BOSS, moves(face_down))
+    applymovement(LOCALID_GRUNT4, moves(face_down))
+    waitmovement(0)
+    msgbox(format("???: Fine, take your stupid shopkeeper back. We'll make it up the mountain anyway and there's nothing you can do to stop us!"))
+    release
+
+    //Walk out
+    applymovement(LOCALID_BOSS, moves(walk_left walk_down *2 walk_right * 10))
+    applymovement(LOCALID_GRUNT4, moves(walk_left *2 walk_down *2 walk_right * 10))
+    waitmovement(0)
 
     //Shopkeeper thanks both
     //Flannery says the boss was powerful...I can't let you go alone without at least getting the badge
-
-
 
     //End encounter
     removeobject(LOCALID_GRUNT1)
