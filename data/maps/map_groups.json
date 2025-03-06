@@ -63,7 +63,10 @@
   ],
   "gMapGroup_Phase2": [
     "Route4",
-    "CeramBaseCamp"
+    "CeramBaseCamp",
+    "CeramBaseCamp_Main",
+    "CeramBaseCamp_PokemonCenter",
+    "CeramBaseCamp_House1"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

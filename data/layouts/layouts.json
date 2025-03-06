@@ -4650,6 +4650,36 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/CeramBaseCamp/border.bin",
       "blockdata_filepath": "data/layouts/CeramBaseCamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERAM_BASE_CAMP_MAIN",
+      "name": "CeramBaseCamp_Main_Layout",
+      "width": 12,
+      "height": 32,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/CeramBaseCamp_Main/border.bin",
+      "blockdata_filepath": "data/layouts/CeramBaseCamp_Main/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERAM_BASE_CAMP_POKEMON_CENTER",
+      "name": "CeramBaseCamp_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CeramBaseCamp_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CeramBaseCamp_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERAM_BASE_CAMP_HOUSE1",
+      "name": "CeramBaseCamp_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CeramBaseCamp_House1/border.bin",
+      "blockdata_filepath": "data/layouts/CeramBaseCamp_House1/map.bin"
     }
   ]
 }

@@ -58,7 +58,7 @@
 #define FLAG_TENEBRIS_POLICE_PRESCENCE    0x2B // yes as long as the police SHOULDNT be there
 #define FLAG_ROUTE3_UNDERPASS_EVILTEAM    0x2C // check if the fight is won or not
 #define FLAG_GASTREE_KOHLA_BATTLE    0x2D // rival battle outside gastree gym
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
+#define FLAG_ROUTE4_EVIL_BATTLE    0x2E // evil team blocks you at the end of route 4
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag

@@ -265,7 +265,7 @@
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 
-//MY VARS
+//MY VARS - I AM GOING TO USE THESE ONE BY ONE
 #define VAR_STARTGAME_TV                                 0x40F7 // The TV intro that plays at game start
 #define VAR_LAB_STATE                                    0x40F8 // Cycle between lab states
 #define VAR_LAB_EVIDENCE_GET                             0x40F9 // Get the evidence from the lab

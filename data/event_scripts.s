@@ -1196,3 +1196,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TempCopyMap/scripts.inc"
 
 	.include "data/maps/CeramBaseCamp/scripts.inc"
+
+	.include "data/maps/CeramBaseCamp_Main/scripts.inc"
+
+	.include "data/maps/CeramBaseCamp_PokemonCenter/scripts.inc"
+
+	.include "data/maps/CeramBaseCamp_House1/scripts.inc"

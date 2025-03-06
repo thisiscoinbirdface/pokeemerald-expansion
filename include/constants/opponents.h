@@ -22,10 +22,12 @@
 #define TRAINER_GASTREEGYM_JACO              10
 #define TRAINER_GASTREEGYM_SKIP              11
 #define TRAINER_GASTREEGYM_LEADER            12
-
-//
 #define TRAINER_GASTREE_KOHLA                13
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
+#define TRAINER_ROUTE4_GRUNTS                14
+
+
+
+
 #define TRAINER_DECLAN                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17

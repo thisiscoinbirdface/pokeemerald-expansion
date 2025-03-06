@@ -104,7 +104,7 @@
       "x": 21,
       "y": 33,
       "elevation": 0,
-      "dest_map": "MAP_CERAM_BASE_CAMP",
+      "dest_map": "MAP_CERAM_BASE_CAMP_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
@@ -118,22 +118,22 @@
       "x": 11,
       "y": 33,
       "elevation": 0,
-      "dest_map": "MAP_CERAM_BASE_CAMP",
+      "dest_map": "MAP_CERAM_BASE_CAMP_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_CERAM_BASE_CAMP",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_CERAM_BASE_CAMP_MAIN",
+      "dest_warp_id": "2"
     },
     {
       "x": 24,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_CERAM_BASE_CAMP",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_CERAM_BASE_CAMP_MAIN",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
