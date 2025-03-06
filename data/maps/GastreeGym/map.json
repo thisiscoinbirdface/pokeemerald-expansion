@@ -73,14 +73,14 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "5"
     },
     {
       "x": 11,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [
