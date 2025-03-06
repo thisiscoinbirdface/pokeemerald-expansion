@@ -41,9 +41,9 @@
     #define TRAINER_ROUTE4_JENNY         22
 
 //Ninja kids
-    #define TRAINER_ROUTE4_E              23
-    #define TRAINER_ROUTE4_F              24
-    #define TRAINER_ROUTE4_G              25
+    #define TRAINER_ROUTE4_KID1            23
+    #define TRAINER_ROUTE4_KID2            24
+    #define TRAINER_ROUTE4_KID3            25
 
     
 

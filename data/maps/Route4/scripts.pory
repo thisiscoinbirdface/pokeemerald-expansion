@@ -56,59 +56,60 @@ script Route4_EventScript_EvilTeam{
 
 
 script Route4_TrainerBattle_Raha {
-    trainerbattle_single(TRAINER_ROUTE4_RAHA, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! You can't beat me!"), format("But Father spent so much money..."))
+    msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Cammy {
-    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let this old lady teach you some new tricks."), format("Well fought!"))
+    msgbox(format("You were the teacher and I was the student! Haha!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Sona {
-    trainerbattle_single(TRAINER_ROUTE4_SONA, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different areas. Mine were caught on Route 3!"), format("Oh no!"))
+    msgbox(format("No matter where they're from, all {PKMN} need love and care."))
     release
     end
 }
 
 script Route4_TrainerBattle_Jenny {
-    trainerbattle_single(TRAINER_ROUTE4_JENNY, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My Pancham and I train here every morning. We share the same goal - to become the strongest!"), format("We need to train harder!"))
+    msgbox(format("Pancham and I will become {PKMN} Champions one day!"))
     release
     end
 }
 
     //The Kids Trio
     script Route4_TrainerBattle_Kid1 {
-        trainerbattle_single(TRAINER_ROUTE4_E, format(""), format(""))
-        msgbox(format(""))
+        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout - now you're going to pay!"), format("Waah!"))
+        msgbox(format("It's summer break so we play here all day until the sun goes down!"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid2 {
-        trainerbattle_single(TRAINER_ROUTE4_F, format(""), format(""))
-        msgbox(format(""))
+        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! As the chief officer of chiefness, I'm going to stop you right now!"), format("Boss! Help!"))
+        msgbox(format("Our secret hideout is really cool, don't you think?"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid3 {
-        trainerbattle_single(TRAINER_ROUTE4_G, format(""), format(""))
-        msgbox(format(""))
+        trainerbattle_single(TRAINER_ROUTE4_KID3, format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something - even us kids should be taken seriously!"), format("My {PKMN}! Adults are lame!"))
+        msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my parents!"))
         release
         end
     }
-        //Kids trio sign
-        script Route4_Sign_KidsTrio{
-            msgbox(format("A child has scrawled on this sign.\pTHIS IS OUR SECRET BASE. GET OUT OR BEWARE!!!!"), MSGBOX_SIGN)
-            end
-        }
+
+    //Kids trio sign
+    script Route4_Sign_KidsTrio{
+        msgbox(format("A child has scrawled on this sign.\pTHIS IS OUR SECRET BASE. GET OUT OR BEWARE!!!!"), MSGBOX_SIGN)
+        end
+    }
 
 
 

@@ -776,7 +776,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 382
-    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_A] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_RAHA] =
     {
 #line 383
         .trainerName = _("GRUNT"),
@@ -830,7 +830,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 403
-    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_B] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_CAMMY] =
     {
 #line 404
         .trainerName = _("GRUNT"),
@@ -862,7 +862,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 416
-    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_C] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_SONA] =
     {
 #line 417
         .trainerName = _("GRUNT"),
@@ -905,7 +905,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 433
-    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_D] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_JENNY] =
     {
 #line 434
         .trainerName = _("GRUNT"),

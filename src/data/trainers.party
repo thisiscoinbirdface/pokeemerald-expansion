@@ -380,110 +380,106 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_RAHA ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: RAHA
+Class: Rich Boy
+Pic: Rich Boy
 Gender: Male
-Music: Aqua
+Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 26
+Chinchou
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_CAMMY ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: Cammy
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 15
+Meditite
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swablu
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_SONA ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: Sona
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 14
+Sentret
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 14
+Teddiursa
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_JENNY ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
+Name: Jenny
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 32
+Pancham
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_E ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_ROUTE4_KID1 ===
+Name: MORTY
+Class: Ninja Boy
+Pic: Ninja Boy
 Gender: Male
-Music: Aqua
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Tyrogue
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE4_KID2 ===
+Name: LALA
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
+Budew
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_F ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_ROUTE4_KID3 ===
+Name: PINE
+Class: School Kid
+Pic: School Kid M
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
+Riolu
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_G ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Poochyena
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 30
+Mime Jr.
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
