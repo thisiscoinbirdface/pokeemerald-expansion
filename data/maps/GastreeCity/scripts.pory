@@ -1,3 +1,7 @@
+raw `
+    LOCALID_KOHLA, 12
+`
+
 mapscripts GastreeCity_MapScripts{}
 
 script GastreeCity_PokemonCenter_EventScript_Nurse{
@@ -16,7 +20,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
 
     //Start
     lockall
-    applymovement(12, moves(walk_up walk_left *6))
+    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *6))
     waitmovement(0)
 
     //Kohla talks trash
@@ -30,12 +34,12 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
     msgbox(GastreeCity_KohlaPostBattle)
     release
     
-    applymovement(12, moves(walk_up walk_left *3 walk_down *3 walk_left *8))
+    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *3 walk_down *3 walk_left *8))
     waitmovement(0)
 
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(12)
+    removeobject(LOCALID_KOHLA)
     removeobject(1)
     removeobject(2)    
 
@@ -50,7 +54,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger1{
 
     //Start
     lockall
-    applymovement(13, moves(walk_up walk_left *6))
+    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *6))
     waitmovement(0)
 
     //Kohla talks trash
@@ -64,12 +68,12 @@ script GastreeCity_EventScript_KohlaBattle_Trigger1{
     msgbox(GastreeCity_KohlaPostBattle)
     release
     
-    applymovement(13, moves(walk_down walk_left *3 walk_down *2 walk_left *8))
+    applymovement(LOCALID_KOHLA, moves(walk_down walk_left *3 walk_down *2 walk_left *8))
     waitmovement(0)
 
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(13)
+    removeobject(LOCALID_KOHLA)
     removeobject(1)
     removeobject(2)    
 
