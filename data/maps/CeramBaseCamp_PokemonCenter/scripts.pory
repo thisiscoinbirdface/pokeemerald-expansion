@@ -1,0 +1,9 @@
+mapscripts CeramBaseCamp_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: CeramBaseCamp_PokemonCenter_OnTransition
+}
+
+script CeramBaseCamp_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_CERAM_BASE_CAMP)
+}
+
+

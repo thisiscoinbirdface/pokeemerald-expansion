@@ -1,5 +1,10 @@
-mapscripts FennilahlTown_PokemonCenter_MapScripts {}
+mapscripts FennilahlTown_PokemonCenter_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: FennilahlTown_PokemonCenter_OnTransition
+}
 
+script FennilahlTown_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_FENNILAHL_TOWN)
+}
 
 script FennilahlTown_PokemonCenter_EventScript_Nurse{
 	lockall

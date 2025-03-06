@@ -1,0 +1,9 @@
+mapscripts GastreeCity_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: GastreeCity_PokemonCenter_OnTransition
+}
+
+script GastreeCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_GASTREE_CITY)
+}
+
+

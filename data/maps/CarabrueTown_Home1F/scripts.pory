@@ -1,10 +1,15 @@
 mapscripts CarabrueTown_Home1F_MapScripts {
     
     MAP_SCRIPT_ON_RESUME: CarabrueTown_Home1F_OnResume
-    
+    MAP_SCRIPT_ON_TRANSITION: CarabrueTown_Home1F_OnTransition
+
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_STARTGAME_TV, 0: CarabrueTown_Home1F_EventScript_StartGame
     ]
+}
+
+script CarabrueTown_Home1F_OnTransition{
+    setrespawn(HEAL_LOCATION_CARABRUE_TOWN)
 }
 
 script CarabrueTown_Home1F_EventScript_StartGame{
