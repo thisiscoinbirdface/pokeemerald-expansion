@@ -208,46 +208,70 @@ CeramBaseCamp_Main_EventScript_MainEncounter::
 # 135 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_16
 # 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	applymovement LOCALID_SHOPKEEPER2F, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_10
-# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	waitmovement 0
-# 140 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_5
-# 141 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	applymovement LOCALID_LEADER, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_2
-# 142 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	waitmovement 0
-# 143 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_17
-# 144 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_18
-# 145 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_19
-# 146 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_20
-# 147 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
-# 150 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	applymovement LOCALID_SHOPKEEPER2F, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_10
+# 138 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitmovement 0
+# 141 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_5
+# 142 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	applymovement LOCALID_LEADER, CeramBaseCamp_Main_EventScript_MainEncounter_Movement_2
+# 143 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitmovement 0
+# 144 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_17
+# 145 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_18
+# 146 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_19
+# 147 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_EventScript_MainEncounter_Text_20
+# 148 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
 # 151 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_GRUNT1
+	fadescreen FADE_TO_BLACK
 # 152 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_GRUNT2
+	removeobject LOCALID_GRUNT1
 # 153 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_GRUNT3
+	removeobject LOCALID_GRUNT2
 # 154 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_GRUNT4
+	removeobject LOCALID_GRUNT3
 # 155 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_BOSS
+	removeobject LOCALID_GRUNT4
 # 156 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	removeobject LOCALID_LEADER
+	removeobject LOCALID_BOSS
 # 157 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	removeobject LOCALID_LEADER
+# 158 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_SHOPKEEPER2F
-# 159 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 160 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EVIL_BATTLE
-# 161 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	fadescreen FADE_FROM_BLACK
 # 162 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 163 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	releaseall
+	return
+
+
+CeramBaseCamp_Main_EventScript_ExitTrigger::
+# 172 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	lockall
+# 173 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	applymovement 9, CeramBaseCamp_Main_EventScript_ExitTrigger_Movement_0
+# 174 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitmovement 0
+# 175 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+# 176 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_EventScript_ExitTrigger_Text_0
+# 177 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+# 178 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, CeramBaseCamp_Main_EventScript_ExitTrigger_Movement_1
+# 179 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitmovement 0
+# 180 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	releaseall
 	return
 
@@ -398,36 +422,50 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Movement_9:
 	walk_right
 	step_end
 
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 CeramBaseCamp_Main_EventScript_MainEncounter_Movement_10:
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_down
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_left
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_down
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_down
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
-# 136 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 137 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	walk_right
+	step_end
+
+# 173 "data//maps/CeramBaseCamp_Main/scripts.pory"
+CeramBaseCamp_Main_EventScript_ExitTrigger_Movement_0:
+# 173 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	face_left
+# 173 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 178 "data//maps/CeramBaseCamp_Main/scripts.pory"
+CeramBaseCamp_Main_EventScript_ExitTrigger_Movement_1:
+# 178 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	walk_down
 	step_end
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_0:
@@ -543,7 +581,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_16:
 	.string "for trekking supplies later on.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_17:
-# 143 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 144 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "FLANNERY: That boss was really tough!\p"
 	.string "Hmm? You've met these thugs before?\n"
 	.string "And you're also going to Mt. Ceram?\l"
@@ -552,7 +590,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_17:
 	.string "just rumours.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_18:
-# 144 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 145 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "FLANNERY: They're connected to\n"
 	.string "Professor Tenebris' disappearance?\p"
 	.string "Well I gotta do something - Professor\n"
@@ -560,13 +598,13 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_18:
 	.string "GROWLITHE.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_19:
-# 145 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 146 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "FLANNERY: Those guys seem to be after\n"
 	.string "the dreamstone too...but I can't let you\l"
 	.string "go up the mountain as you are now.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_20:
-# 146 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 147 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "FLANNERY: {PLAYER}, was it? Mt. Ceram\n"
 	.string "is filled with dangerous {PKMN}. The rules\l"
 	.string "around here are you can't climb unless\l"
@@ -574,3 +612,11 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_20:
 	.string "If you can beat me, I'll be able to send\l"
 	.string "you up the hill with confidence. See you\l"
 	.string "around, {PLAYER}!$"
+
+CeramBaseCamp_Main_EventScript_ExitTrigger_Text_0:
+# 176 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "Hey kid! The rules are you can't climb\n"
+	.string "unless you have the FIRE BADGE. If you\l"
+	.string "can't beat FLANNERY, you won't be able\l"
+	.string "to handle the heat of the mountain!\l"
+	.string "It's for your own safety.$"

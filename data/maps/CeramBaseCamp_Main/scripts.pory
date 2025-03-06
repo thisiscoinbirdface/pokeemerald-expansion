@@ -133,6 +133,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(face_up))
     waitmovement(0)
     msgbox(format("FLANNERY: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you FLANNERY! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
     waitmovement(0)
 
@@ -165,4 +166,18 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 
 
+
+
+script CeramBaseCamp_Main_EventScript_ExitTrigger{
+    lockall
+    applymovement(9, moves(face_left emote_exclamation_mark))
+    waitmovement(0)
+    release
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat FLANNERY, you won't be able to handle the heat of the mountain! It's for your own safety."))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    releaseall
+
+}
 
