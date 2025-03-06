@@ -101,12 +101,13 @@ script GastreeCity_NPC1{
     release
 }
 
-script GastreeCity_NPC2{
-    lockall
-    faceplayer    
-    msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
-    release
-}
+    //Quest NPC
+    script GastreeCity_NPC2{
+        lockall
+        faceplayer    
+        msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
+        release
+    }
 
 script GastreeCity_NPC3{
     lockall
@@ -122,6 +123,7 @@ script GastreeCity_NPC4{
     release
 }
 
+    //Info
 script GastreeCity_NPC5{
     lockall
     faceplayer    
@@ -129,6 +131,7 @@ script GastreeCity_NPC5{
     release
 }
 
+    //Info
 script GastreeCity_NPC6{
     lockall
     faceplayer    
@@ -139,10 +142,13 @@ script GastreeCity_NPC6{
 script GastreeCity_NPC7{
     lockall
     faceplayer    
-    msgbox(format("I want to have tea too!"))
+    msgbox(format("I want to have tea too! When I get my first {PKMN}, I want it to be SINISTEA or POLTCHAGEIST."))
+    applymovement(16, moves(face_up))
+    waitmovement(0)
     release
 }
 
+    //Pokemon flavour
 script GastreeCity_NPC8{
     lockall
     faceplayer    
