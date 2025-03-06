@@ -1,0 +1,10 @@
+mapscripts GastreeCity_House1_MapScripts{}
+
+script GastreeCity_House1_NPC1{
+    lockall
+    faceplayer    
+    msgbox(format("GASTREE CITY sits on hilly terrain, connecting the plains to the south, the hills to the east, and the mountains to the north."))
+    release
+}
+
+

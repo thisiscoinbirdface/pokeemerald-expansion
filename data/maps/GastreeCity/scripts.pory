@@ -93,5 +93,68 @@ text GastreeCity_KohlaPostBattle{
 
 
 
+//NPCs
+script GastreeCity_NPC1{
+    lockall
+    faceplayer    
+    msgbox(format("You came all the way from CARABRUE TOWN? Woah! I've always wanted to go there."))
+    release
+}
+
+script GastreeCity_NPC2{
+    lockall
+    faceplayer    
+    msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
+    release
+}
+
+script GastreeCity_NPC3{
+    lockall
+    faceplayer    
+    msgbox(format("My dad drags me here every weekend and its sooo boring. I can't wait to grow up and leave the house!"))
+    release
+}
+
+script GastreeCity_NPC4{
+    lockall
+    faceplayer    
+    msgbox(format("I come here every weekend with my daughter for some quality family time. Oh, how I'll miss her when she grows up!"))
+    release
+}
+
+script GastreeCity_NPC5{
+    lockall
+    faceplayer    
+    msgbox(format("INGWER, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type {PKMN} right? So then why am I getting cold feet?"))
+    release
+}
+
+script GastreeCity_NPC6{
+    lockall
+    faceplayer    
+    msgbox(format("GASTREE CITY is famous not just for being a connecting Route to Mt. Ceram Base Camp, but also for its scenic viewpoints and its teahouse!"))
+    release
+}
+
+script GastreeCity_NPC7{
+    lockall
+    faceplayer    
+    msgbox(format("I want to have tea too!"))
+    release
+}
+
+script GastreeCity_NPC8{
+    lockall
+    faceplayer    
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECKLEON ROCK SMASH so that we can go and explore Route 4 together!"))
+    release
+    applymovement(15, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("KECKLEON: keeee!!!"))
+    release
+}
+
+
+
 
 

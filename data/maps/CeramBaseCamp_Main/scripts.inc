@@ -278,9 +278,9 @@ CeramBaseCamp_Main_EventScript_ExitTrigger::
 
 CeramBaseCamp_Main_TrainerBattle_Grunt1::
 # 187 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT1, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT1, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_1
 # 188 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_2
 # 189 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 	end
@@ -288,9 +288,9 @@ CeramBaseCamp_Main_TrainerBattle_Grunt1::
 
 CeramBaseCamp_Main_TrainerBattle_Grunt2::
 # 194 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT2, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT2, CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_1
 # 195 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_2
 # 196 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 	end
@@ -298,13 +298,40 @@ CeramBaseCamp_Main_TrainerBattle_Grunt2::
 
 CeramBaseCamp_Main_TrainerBattle_Grunt3::
 # 201 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT3, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT3, CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_1
 # 202 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_2
 # 203 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 	end
 
+
+CeramBaseCamp_Main_Pokemart_EventScript_Clerk::
+# 210 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	lock
+# 211 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	faceplayer
+# 212 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	message gText_HowMayIServeYou
+# 213 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitmessage
+# 214 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	pokemart CeramBaseCamp_Main_Pokemart_Inventory
+# 215 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 216 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+	end
+
+
+	.align 2
+# 221 "data//maps/CeramBaseCamp_Main/scripts.pory"
+CeramBaseCamp_Main_Pokemart_Inventory:
+# 222 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_POTION
+# 223 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_NONE
 
 # 21 "data//maps/CeramBaseCamp_Main/scripts.pory"
 CeramBaseCamp_Main_EventScript_EvilTrigger1_Movement_0:
@@ -652,4 +679,44 @@ CeramBaseCamp_Main_EventScript_ExitTrigger_Text_0:
 
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0:
 # 187 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "$"
+	.string "Hey, where do you think you're going\n"
+	.string "kid? This supply depot is under Team\l"
+	.string "Somber's control!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_1:
+# 187 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "Gah! I lost!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_2:
+# 188 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "You may have beaten me, but you'll never\n"
+	.string "get to the boss in time.$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_0:
+# 194 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "We're going to steal all the climbing\n"
+	.string "supplies here!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_1:
+# 194 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "I can't believe it!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_2:
+# 195 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "You just got lucky. I'll crush you if I\n"
+	.string "ever see you again!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_0:
+# 201 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "How did you get this far? No matter -\n"
+	.string "you can't stop us from taking all the\l"
+	.string "supplies!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_1:
+# 201 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "No! My {PKMN} were too weak!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_2:
+# 202 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "You're too late - the boss is already\n"
+	.string "with the shopkeeper.$"

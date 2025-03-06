@@ -210,12 +210,12 @@ Route4_EventScript_EvilTeam_Text_6:
 
 Route4_TrainerBattle_Raha_Text_0:
 # 59 "data//maps/Route4/scripts.pory"
-	.string "My {PKMN} were very expensive! You can't\n"
-	.string "beat me!$"
+	.string "My {PKMN} were very expensive! There's no\n"
+	.string "way you can beat me!$"
 
 Route4_TrainerBattle_Raha_Text_1:
 # 59 "data//maps/Route4/scripts.pory"
-	.string "But Father spent so much money...$"
+	.string "But Father spent so much money!$"
 
 Route4_TrainerBattle_Raha_Text_2:
 # 60 "data//maps/Route4/scripts.pory"
@@ -284,8 +284,7 @@ Route4_TrainerBattle_Kid1_Text_2:
 Route4_TrainerBattle_Kid2_Text_0:
 # 95 "data//maps/Route4/scripts.pory"
 	.string "Ooh, you made it this far! But I won't\n"
-	.string "let you lay your hands on the boss! As\l"
-	.string "the chief officer of chiefness, I'm\l"
+	.string "let you lay your hands on the boss! I'm\l"
 	.string "going to stop you right now!$"
 
 Route4_TrainerBattle_Kid2_Text_1:
