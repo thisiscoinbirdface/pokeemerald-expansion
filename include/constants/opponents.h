@@ -34,13 +34,19 @@
 #define TRAINER_CERAMBASECAMP_GRUNT3         18
 
 //Route 4 Trainers
-#define TRAINER_GRUNT_WEATHER_INST_3         19
-#define TRAINER_GRUNT_MUSEUM_1               20
-#define TRAINER_GRUNT_MUSEUM_2               21
-#define TRAINER_GRUNT_SPACE_CENTER_1         22
-#define TRAINER_GRUNT_MT_PYRE_1              23
-#define TRAINER_GRUNT_MT_PYRE_2              24
-#define TRAINER_GRUNT_MT_PYRE_3              25
+    //regular
+    #define TRAINER_ROUTE4_A        19
+    #define TRAINER_ROUTE4_B               20 //double battle
+    #define TRAINER_ROUTE4_C               21
+    #define TRAINER_ROUTE4_D         22
+
+//Ninja kids
+    #define TRAINER_ROUTE4_E              23
+    #define TRAINER_ROUTE4_F              24
+    #define TRAINER_ROUTE4_G              25
+
+    
+
 #define TRAINER_GRUNT_WEATHER_INST_4         26
 #define TRAINER_GRUNT_AQUA_HIDEOUT_5         27
 #define TRAINER_GRUNT_AQUA_HIDEOUT_6         28

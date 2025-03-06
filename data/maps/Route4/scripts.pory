@@ -51,3 +51,66 @@ script Route4_EventScript_EvilTeam{
 }
 
 
+
+
+
+
+script Route4_TrainerBattle_A {
+    trainerbattle_single(TRAINER_ROUTE4_A,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_B {
+    trainerbattle_single(TRAINER_ROUTE4_B,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_C {
+    trainerbattle_single(TRAINER_ROUTE4_C,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_D {
+    trainerbattle_single(TRAINER_ROUTE4_D,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_E {
+    trainerbattle_single(TRAINER_ROUTE4_E,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_F {
+    trainerbattle_single(TRAINER_ROUTE4_F,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+script Route4_TrainerBattle_G {
+    trainerbattle_single(TRAINER_ROUTE4_G,   ,   )
+    msgbox(format())
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+

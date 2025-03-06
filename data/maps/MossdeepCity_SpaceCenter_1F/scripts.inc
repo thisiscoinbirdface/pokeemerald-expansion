@@ -210,7 +210,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_1, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
+	trainerbattle_single TRAINER_NONE, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
 	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
