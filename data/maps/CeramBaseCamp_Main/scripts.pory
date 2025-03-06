@@ -1,0 +1,9 @@
+mapscripts CeramBaseCamp_Main_MapScripts{}
+
+script CeramBaseCamp_EventScript_EvilEncounter{
+    
+}
+
+
+
+
