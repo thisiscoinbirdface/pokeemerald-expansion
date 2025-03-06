@@ -43,7 +43,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-//I AM GOING TO USE THESE FLAGS
+//I AM GOING TO USE THESE FLAGS | STORY FLAGS
 #define FLAG_UNUSED_0x020    0x20 // Obtained Starter Pokemon
 #define FLAG_WELCOMEPACKAGE_GET    0x21 // Pickup lab welcome package from your room
 #define FLAG_LAB_POKEBALL_ONE    0x22 // First ball to get starter in Lab
@@ -657,6 +657,8 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
+
+//I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
 #define FLAG_UNUSED_0x264  0x264 // Unused Flag
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
@@ -1051,18 +1053,23 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags (I AM CHANGING THESE ONE BY ONE)
-#define FLAG_ITEM_ROUTE_1_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_1_POKE_BALL                               0x3E9
-#define FLAG_ITEM_ROUTE_2_POTION                                  0x3EA //FLAG_ITEM_ROUTE_104_PP_UP
-#define FLAG_ITEM_ROUTE_2_CAVE_STARDUST                                   0x3EB //FLAG_ITEM_ROUTE_105_IRON
-#define FLAG_ITEM_FENNILAHL_GREAT_BALL                                 0x3EC //FLAG_ITEM_ROUTE_106_PROTEIN
-#define FLAG_ITEM_FENNILAHL_REPEL                                   0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
+#define FLAG_ITEM_ROUTE_1_POTION                                    0x3E8
+#define FLAG_ITEM_ROUTE_1_POKE_BALL                                 0x3E9
+#define FLAG_ITEM_ROUTE_2_POTION                                    0x3EA //FLAG_ITEM_ROUTE_104_PP_UP
+#define FLAG_ITEM_ROUTE_2_CAVE_STARDUST                             0x3EB //FLAG_ITEM_ROUTE_105_IRON
+#define FLAG_ITEM_FENNILAHL_GREAT_BALL                              0x3EC //FLAG_ITEM_ROUTE_106_PROTEIN
+#define FLAG_ITEM_FENNILAHL_REPEL                                   0x3ED //?
+
+//Route 3 items
+#define FLAG_ITEM_ROUTE_3_A                                         0x3EE
+#define FLAG_ITEM_ROUTE_3_B                                         0x3EF
+#define FLAG_ITEM_ROUTE_3_C                                         0x3F0
+
+//Route 4 items
+#define FLAG_ITEM_ROUTE_4_A                                         0x3F1
+#define FLAG_ITEM_ROUTE_4_B                                         0x3F2
+#define FLAG_ITEM_ROUTE_4_C                                         0x3F3
+
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
