@@ -1,7 +1,123 @@
+//Local IDs for shopkeeper, grunts, leader, boss etc.
+raw `
+    .set LOCALID_GRUNT1, 1
+    .set LOCALID_GRUNT2, 2
+    .set LOCALID_GRUNT3, 3
+    .set LOCALID_GRUNT4, 4
+    .set LOCALID_BOSS, 10
+    .set LOCALID_LEADER, 5
+    .set LOCALID_SHOPKEEPER2F, 9
+`
+
+
 mapscripts CeramBaseCamp_Main_MapScripts{}
 
-script CeramBaseCamp_EventScript_EvilEncounter{
-    
+script CeramBaseCamp_Main_EventScript_EvilTrigger1{
+    //Check flag
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
+
+    //Move player to the spot
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2))
+    waitmovement(0)
+    call(CeramBaseCamp_Main_EventScript_MainEncounter)
+}
+
+script CeramBaseCamp_Main_EventScript_EvilTrigger2{
+    //Check flag
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
+
+    //Move player to the spot
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2 walk_up face_left))
+    waitmovement(0)    
+    call(CeramBaseCamp_Main_EventScript_MainEncounter)
+}
+
+script CeramBaseCamp_Main_EventScript_EvilTrigger3{
+    //Check flag
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
+
+    //Move player to the spot    
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2 walk_up *2 face_left))
+    waitmovement(0)
+    call(CeramBaseCamp_Main_EventScript_MainEncounter)
+}
+
+
+script CeramBaseCamp_Main_EventScript_MainEncounter{
+    //Main dialogue between the people (shopkeeper abducted)
+    lockall
+    applymovement(LOCALID_LEADER, moves(jump_in_place_up))
+    waitmovement(0)
+    msgbox(format("???: Release our shopkeeper at once! How dare you!"))
+    release
+    applymovement(LOCALID_BOSS, moves(jump_in_place_down))
+    waitmovement(0)
+    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit."))
+    msgbox(format("???: No way! This is MY base camp! You're not harming anyone while I'm around!"))
+    msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
+    release
+
+
+    //Player is noticed - leader notices, asks for help    
+    applymovement(LOCALID_LEADER, moves(face_right))
+    waitmovement(0)
+    applymovement(LOCALID_LEADER, moves(emote_exclamation_mark))
+    waitmovement(0)    
+    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are harrassing the shopkeeper. I'll take the boss. You deal with the one on the right for me!"))
+    release
+
+    //Player walks up and deals with grunt
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
+    waitmovement(0)
+    applymovement(LOCALID_GRUNT4, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("It's you?"))
+    release
+    applymovement(LOCALID_GRUNT4, moves(face_left))
+    waitmovement(0)
+    msgbox(format("Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dream shard from that Celfairy hiker."))
+    release
+    applymovement(LOCALID_BOSS, moves(face_right))
+    waitmovement(0)
+    msgbox(format("Remind me to punish you for that.\p...yes boss.\pBut right now, just deal with this pest. And you better win this time!"))
+    release
+    applymovement(LOCALID_GRUNT4, moves(face_down))
+    waitmovement(0)
+    msgbox(format("You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
+    release 
+
+    //Grunt notices and tells boss
+
+
+    //Dialogue
+
+
+    //Single battle - vs the grunt
+
+
+    //Defeat, but it doesn't matter - they've got the supplies
+
+
+    //Shopkeeper thanks both
+    //Flannery says the boss was powerful...I can't let you go alone without at least getting the badge
+
+
+
+    //End encounter
+    removeobject(LOCALID_GRUNT1)
+    removeobject(LOCALID_GRUNT2)
+    removeobject(LOCALID_GRUNT3)
+    removeobject(LOCALID_GRUNT4)
+    removeobject(LOCALID_BOSS)
+    removeobject(LOCALID_LEADER)
+    removeobject(LOCALID_SHOPKEEPER2F)
+
+    setflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
+    releaseall
+
 }
 
 
