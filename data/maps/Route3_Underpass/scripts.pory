@@ -34,10 +34,10 @@ script Route3_Underpass_Trigger_EvilBattle{
     applymovement(3, moves(walk_right face_left))
     waitmovement(0)    
     msgbox(format("BREECH: No! Stay away! Clefairy is MY partner!"))
-    msgbox(format("???: I said give it to me! It's holding a dream shard. That's too precious to be held by someone like you!"))
+    msgbox(format("???: I said give it to me! It's holding a dreamstone. That's too precious to be held by someone like you!"))
     applymovement(2, moves(walk_right))
     waitmovement(0)    
-    msgbox(format("BREECH: I don't know anything about any dream shards, please! Just stop!"))
+    msgbox(format("BREECH: I don't know anything about any dreamstones, please! Just stop!"))
     msgbox(format("Clefairy: clee!!!"))
     msgbox(format("???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
 
@@ -62,7 +62,7 @@ script Route3_Underpass_Trigger_EvilBattle{
     waitmovement(0) 
     applymovement(2, moves(face_right))
     waitmovement(0)    
-    msgbox(format("GABRIELLE: Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dream shard soon enough!"))
+    msgbox(format("GABRIELLE: Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dreamstone soon enough!"))
     release
     applymovement(2, moves(jump_in_place_up))
     waitmovement(0)

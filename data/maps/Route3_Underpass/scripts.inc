@@ -236,13 +236,13 @@ Route3_Underpass_Trigger_EvilBattle_Text_1:
 Route3_Underpass_Trigger_EvilBattle_Text_2:
 # 37 "data//maps/Route3_Underpass/scripts.pory"
 	.string "???: I said give it to me! It's holding a\n"
-	.string "dream shard. That's too precious to be\l"
+	.string "dreamstone. That's too precious to be\l"
 	.string "held by someone like you!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_3:
 # 40 "data//maps/Route3_Underpass/scripts.pory"
 	.string "BREECH: I don't know anything about\n"
-	.string "any dream shards, please! Just stop!$"
+	.string "any dreamstones, please! Just stop!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_4:
 # 41 "data//maps/Route3_Underpass/scripts.pory"
@@ -288,7 +288,7 @@ Route3_Underpass_Trigger_EvilBattle_Text_11:
 	.string "GABRIELLE: Fine - keep your stupid\n"
 	.string "Clefairy! Enjoy your time together\l"
 	.string "while it lasts. We'll be back for the\l"
-	.string "dream shard soon enough!$"
+	.string "dreamstone soon enough!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_12:
 # 69 "data//maps/Route3_Underpass/scripts.pory"

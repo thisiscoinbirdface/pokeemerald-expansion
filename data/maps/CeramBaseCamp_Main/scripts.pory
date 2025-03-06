@@ -56,7 +56,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up MT CERAM!"))
-    msgbox(format("???: No way! This is MY base camp! You're not harming anyone while I'm around!"))
+    msgbox(format("FLANNERY: The name's FLANNERY! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
     release
 
@@ -78,11 +78,11 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dream shard from that Celfairy hiker."))
+    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dreamstone from that Celfairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
-    msgbox(format("???: Remind me to punish you for that.\pGABRIELLE:...yes boss.\p???: But right now, just deal with this pest while I put the leader in her place. And you better win this time!"))
+    msgbox(format("???: That wasn't a dreamstone you idiot - that was a moonstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! GABRIELLE, you deal with this pest while I put the leader in her place. And you better win this time!"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
@@ -93,7 +93,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(face_down))    
     applymovement(LOCALID_LEADER, moves(face_up))
     waitmovement(0)
-    
+
     //Single battle - vs the grunt
     trainerbattle_no_intro(TRAINER_CERAMBASECAMP_EVIL_GABRIELLE, format("No! Not again!"))
 
@@ -103,7 +103,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my {PKMN} with me."))
     release
-    msgbox(format("???: Serves you right! Now move over and give our shopkeeper back."))
+    msgbox(format("FLANNERY: Serves you right! Now move over and give our shopkeeper back."))
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
     msgbox(format("GABRIELLE: I...I'm sorry boss! I lost again."))
@@ -125,8 +125,29 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
     //Shopkeeper thanks both
     //Flannery says the boss was powerful...I can't let you go alone without at least getting the badge
+    applymovement(LOCALID_LEADER, moves(face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)    
+    msgbox(format("FLANNERY: Thanks for the help trainer! I needed it there. I could've taken them both alone, but I didn't have all my {PKMN} on me."))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_LEADER, moves(face_up))
+    waitmovement(0)
+    msgbox(format("FLANNERY: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you FLANNERY! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
+    waitmovement(0)
+
+    //Final dialogue
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_LEADER, moves(face_right))
+    waitmovement(0)    
+    msgbox(format("FLANNERY: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
+    msgbox(format("FLANNERY: They're connected to Professor Tenebris' disappearance? \pWell I gotta do something - Professor Tenebris is the one who gave me my GROWLITHE."))
+    msgbox(format("FLANNERY: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
+    msgbox(format("FLANNERY: {PLAYER}, was it? Mt. Ceram is filled with dangerous {PKMN}. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
+    release
 
     //End encounter
+    fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_GRUNT1)
     removeobject(LOCALID_GRUNT2)
     removeobject(LOCALID_GRUNT3)
@@ -136,6 +157,8 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     removeobject(LOCALID_SHOPKEEPER2F)
 
     setflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
+
+    fadescreen(FADE_FROM_BLACK)    
     releaseall
 
 }
