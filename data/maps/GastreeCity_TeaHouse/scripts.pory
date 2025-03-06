@@ -99,7 +99,33 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     releaseall
 }
 
+    //Pokemon-related flavour
+script GastreeCity_TeaHouse_EventScript_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("At my age, a hot cup of tea is the best medicine. The Poltchageist in the kitchen do great work!"))
+}
 
+    //TO BE CHANGED: some info/tips/etc
+script GastreeCity_TeaHouse_EventScript_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("I always come here after a stressful business meeting. Gotta destress after making all this money!"))
+}
+
+    //Generic, human
+script GastreeCity_TeaHouse_EventScript_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("I find that the tea here feeds my creative energies."))
+}
+
+    //Generic, human
+script GastreeCity_TeaHouse_EventScript_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived."))
+}
 
 
 

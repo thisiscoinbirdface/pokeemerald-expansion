@@ -35,10 +35,10 @@
 
 //Route 4 Trainers
     //regular
-    #define TRAINER_ROUTE4_A        19
-    #define TRAINER_ROUTE4_B               20 //double battle
-    #define TRAINER_ROUTE4_C               21
-    #define TRAINER_ROUTE4_D         22
+    #define TRAINER_ROUTE4_RAHA        19
+    #define TRAINER_ROUTE4_CAMMY               20 //double battle
+    #define TRAINER_ROUTE4_SONA               21
+    #define TRAINER_ROUTE4_JENNY         22
 
 //Ninja kids
     #define TRAINER_ROUTE4_E              23

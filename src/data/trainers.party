@@ -379,7 +379,7 @@ Nickit
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_A ===
+=== TRAINER_ROUTE4_RAHA ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -400,7 +400,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_B ===
+=== TRAINER_ROUTE4_CAMMY ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -413,7 +413,7 @@ Carvanha
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_C ===
+=== TRAINER_ROUTE4_SONA ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -430,7 +430,7 @@ Carvanha
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE4_D ===
+=== TRAINER_ROUTE4_JENNY ===
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
