@@ -95,6 +95,114 @@ GastreeCity_EventScript_KohlaBattle_Trigger1_2:
 	end
 
 
+GastreeCity_NPC1::
+# 98 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 99 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 100 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC1_Text_0
+# 101 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC2::
+# 106 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 107 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 108 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_0
+# 109 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC3::
+# 113 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 114 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 115 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC3_Text_0
+# 116 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC4::
+# 120 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 121 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 122 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC4_Text_0
+# 123 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC5::
+# 128 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 129 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 130 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC5_Text_0
+# 131 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC6::
+# 136 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 137 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 138 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC6_Text_0
+# 139 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC7::
+# 143 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 144 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 145 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC7_Text_0
+# 146 "data//maps/GastreeCity/scripts.pory"
+	applymovement 16, GastreeCity_NPC7_Movement_0
+# 147 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 148 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
+GastreeCity_NPC8::
+# 153 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 154 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 155 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC8_Text_0
+# 156 "data//maps/GastreeCity/scripts.pory"
+	release
+# 157 "data//maps/GastreeCity/scripts.pory"
+	applymovement 15, GastreeCity_NPC8_Movement_0
+# 158 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 159 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC8_Text_1
+# 160 "data//maps/GastreeCity/scripts.pory"
+	release
+	return
+
+
 # 24 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_KohlaBattle_Trigger0_Movement_0:
 # 24 "data//maps/GastreeCity/scripts.pory"
@@ -201,9 +309,77 @@ GastreeCity_EventScript_KohlaBattle_Trigger1_Movement_1:
 	walk_left
 	step_end
 
+# 146 "data//maps/GastreeCity/scripts.pory"
+GastreeCity_NPC7_Movement_0:
+# 146 "data//maps/GastreeCity/scripts.pory"
+	face_up
+	step_end
+
+# 157 "data//maps/GastreeCity/scripts.pory"
+GastreeCity_NPC8_Movement_0:
+# 157 "data//maps/GastreeCity/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
 GastreeCity_EventScript_KohlaBattle_Trigger0_Text_0:
 # 32 "data//maps/GastreeCity/scripts.pory"
 	.string "Not again!$"
+
+GastreeCity_NPC1_Text_0:
+# 100 "data//maps/GastreeCity/scripts.pory"
+	.string "You came all the way from CARABRUE\n"
+	.string "TOWN? Woah! I've always wanted to go\l"
+	.string "there.$"
+
+GastreeCity_NPC2_Text_0:
+# 108 "data//maps/GastreeCity/scripts.pory"
+	.string "My SKITTY is missing! I've been looking\n"
+	.string "everywhere for her, but I can't find\l"
+	.string "her. If you find a SKITTY, please bring\l"
+	.string "her to me, okay?$"
+
+GastreeCity_NPC3_Text_0:
+# 115 "data//maps/GastreeCity/scripts.pory"
+	.string "My dad drags me here every weekend and\n"
+	.string "its sooo boring. I can't wait to grow up\l"
+	.string "and leave the house!$"
+
+GastreeCity_NPC4_Text_0:
+# 122 "data//maps/GastreeCity/scripts.pory"
+	.string "I come here every weekend with my\n"
+	.string "daughter for some quality family time.\l"
+	.string "Oh, how I'll miss her when she grows up!$"
+
+GastreeCity_NPC5_Text_0:
+# 130 "data//maps/GastreeCity/scripts.pory"
+	.string "INGWER, this city's Gym Leader, uses\n"
+	.string "ROCK types. I should have an advantage\l"
+	.string "with my FIGHTING-type {PKMN} right? So\l"
+	.string "then why am I getting cold feet?$"
+
+GastreeCity_NPC6_Text_0:
+# 138 "data//maps/GastreeCity/scripts.pory"
+	.string "GASTREE CITY is famous not just for\n"
+	.string "being a connecting Route to Mt. Ceram\l"
+	.string "Base Camp, but also for its scenic\l"
+	.string "viewpoints and its teahouse!$"
+
+GastreeCity_NPC7_Text_0:
+# 145 "data//maps/GastreeCity/scripts.pory"
+	.string "I want to have tea too! When I get my\n"
+	.string "first {PKMN}, I want it to be SINISTEA or\l"
+	.string "POLTCHAGEIST.$"
+
+GastreeCity_NPC8_Text_0:
+# 155 "data//maps/GastreeCity/scripts.pory"
+	.string "Hiiiiyah!\p"
+	.string "I'm trying to teach my KECKLEON ROCK\n"
+	.string "SMASH so that we can go and explore\l"
+	.string "Route 4 together!$"
+
+GastreeCity_NPC8_Text_1:
+# 159 "data//maps/GastreeCity/scripts.pory"
+	.string "KECKLEON: keeee!!!$"
 
 GastreeCity_KohlaIntro1::
 # 84 "data//maps/GastreeCity/scripts.pory"

@@ -9,12 +9,14 @@ GastreeCity_House2_NPC1::
 	faceplayer
 # 8 "data//maps/GastreeCity_House2/scripts.pory"
 	goto_if_set FLAG_GASTREE_NPC_SHOAL_SALT, GastreeCity_House2_NPC1_2
-# 13 "data//maps/GastreeCity_House2/scripts.pory"
+# 12 "data//maps/GastreeCity_House2/scripts.pory"
 	msgbox GastreeCity_House2_NPC1_Text_1
-# 14 "data//maps/GastreeCity_House2/scripts.pory"
+# 13 "data//maps/GastreeCity_House2/scripts.pory"
 	release
-# 15 "data//maps/GastreeCity_House2/scripts.pory"
+# 14 "data//maps/GastreeCity_House2/scripts.pory"
 	setflag FLAG_GASTREE_NPC_SHOAL_SALT
+# 15 "data//maps/GastreeCity_House2/scripts.pory"
+	giveitem ITEM_SHOAL_SALT
 GastreeCity_House2_NPC1_1:
 # 18 "data//maps/GastreeCity_House2/scripts.pory"
 	releaseall
@@ -25,8 +27,6 @@ GastreeCity_House2_NPC1_2:
 	msgbox GastreeCity_House2_NPC1_Text_0
 # 10 "data//maps/GastreeCity_House2/scripts.pory"
 	release
-# 11 "data//maps/GastreeCity_House2/scripts.pory"
-	giveitem ITEM_SHOAL_SALT
 	goto GastreeCity_House2_NPC1_1
 
 
@@ -44,14 +44,14 @@ GastreeCity_House2_NPC2::
 
 GastreeCity_House2_NPC1_Text_0:
 # 9 "data//maps/GastreeCity_House2/scripts.pory"
+	.string "Too much salt raises your blood\n"
+	.string "pressure!$"
+
+GastreeCity_House2_NPC1_Text_1:
+# 12 "data//maps/GastreeCity_House2/scripts.pory"
 	.string "I don't want to put too much salt on my\n"
 	.string "food. Here, why don't you take my extra\l"
 	.string "salt?$"
-
-GastreeCity_House2_NPC1_Text_1:
-# 13 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "Too much salt raises your blood\n"
-	.string "pressure!$"
 
 GastreeCity_House2_NPC2_Text_0:
 # 25 "data//maps/GastreeCity_House2/scripts.pory"
