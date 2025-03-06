@@ -1,15 +1,14 @@
 raw `
-    LOCALID_KOHLA, 12
+    .set LOCALID_KOHLA, 12
 `
 
-mapscripts GastreeCity_MapScripts{}
+mapscripts GastreeCity_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: GastreeCity_OnTransition
+}
 
-script GastreeCity_PokemonCenter_EventScript_Nurse{
-	lockall
-    setvar(VAR_0x800B, LOCALID_NURSE)
-	call(Common_EventScript_PkmnCenterNurse)
-	waitmessage
-	releaseall
+script GastreeCity_OnTransition{
+    removeobject(LOCALID_KOHLA)
+    end
 }
 
 script GastreeCity_EventScript_KohlaBattle_Trigger0{
@@ -18,9 +17,11 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
         end
     }
 
+    addobject(LOCALID_KOHLA)
+
     //Start
     lockall
-    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *6))
+    applymovement(LOCALID_KOHLA, moves(walk_right * 11))
     waitmovement(0)
 
     //Kohla talks trash
@@ -34,7 +35,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
     msgbox(GastreeCity_KohlaPostBattle)
     release
     
-    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *3 walk_down *3 walk_left *8))
+    applymovement(LOCALID_KOHLA, moves(walk_right *5 walk_up *8))
     waitmovement(0)
 
     //Set flag

@@ -6,4 +6,11 @@ script CeramBaseCamp_PokemonCenter_OnTransition{
     setrespawn(HEAL_LOCATION_CERAM_BASE_CAMP)
 }
 
+script CeramBaseCamp_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, LOCALID_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
 
