@@ -4680,6 +4680,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/CeramBaseCamp_House1/border.bin",
       "blockdata_filepath": "data/layouts/CeramBaseCamp_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_HOUSE1",
+      "name": "GastreeCity_House1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GastreeCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_HOUSE2",
+      "name": "GastreeCity_House2_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GastreeCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GASTREE_CITY_HOUSE3",
+      "name": "GastreeCity_House3_Layout",
+      "width": 8,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GastreeCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/GastreeCity_House3/map.bin"
     }
   ]
 }

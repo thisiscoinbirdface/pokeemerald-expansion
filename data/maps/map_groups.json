@@ -59,7 +59,10 @@
     "GastreeGym",
     "GastreeCity_PokemonCenter",
     "GastreeCity_Pokemart",
-    "TempCopyMap"
+    "TempCopyMap",
+    "GastreeCity_House1",
+    "GastreeCity_House2",
+    "GastreeCity_House3"
   ],
   "gMapGroup_Phase2": [
     "Route4",
