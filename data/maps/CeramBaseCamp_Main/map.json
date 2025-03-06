@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "CeramBaseCamp_Main_TrainerBattle_Grunt1",
       "flag": "FLAG_CERAMBASECAMP_EVIL_BATTLE"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "CeramBaseCamp_Main_TrainerBattle_Grunt2",
       "flag": "FLAG_CERAMBASECAMP_EVIL_BATTLE"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "CeramBaseCamp_Main_TrainerBattle_Grunt3",
       "flag": "FLAG_CERAMBASECAMP_EVIL_BATTLE"
     },
     {

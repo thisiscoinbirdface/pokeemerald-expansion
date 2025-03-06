@@ -618,5 +618,4 @@ CeramBaseCamp_Main_EventScript_ExitTrigger_Text_0:
 	.string "Hey kid! The rules are you can't climb\n"
 	.string "unless you have the FIRE BADGE. If you\l"
 	.string "can't beat FLANNERY, you won't be able\l"
-	.string "to handle the heat of the mountain!\l"
-	.string "It's for your own safety.$"
+	.string "to handle the heat of the mountain!$"
