@@ -276,6 +276,36 @@ CeramBaseCamp_Main_EventScript_ExitTrigger::
 	return
 
 
+CeramBaseCamp_Main_TrainerBattle_Grunt1::
+# 187 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT1, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 188 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 189 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+	end
+
+
+CeramBaseCamp_Main_TrainerBattle_Grunt2::
+# 194 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT2, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 195 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 196 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+	end
+
+
+CeramBaseCamp_Main_TrainerBattle_Grunt3::
+# 201 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	trainerbattle_single TRAINER_CERAMBASECAMP_GRUNT3, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0, CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 202 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0
+# 203 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+	end
+
+
 # 21 "data//maps/CeramBaseCamp_Main/scripts.pory"
 CeramBaseCamp_Main_EventScript_EvilTrigger1_Movement_0:
 # 21 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -619,3 +649,7 @@ CeramBaseCamp_Main_EventScript_ExitTrigger_Text_0:
 	.string "unless you have the FIRE BADGE. If you\l"
 	.string "can't beat FLANNERY, you won't be able\l"
 	.string "to handle the heat of the mountain!$"
+
+CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0:
+# 187 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "$"

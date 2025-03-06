@@ -776,7 +776,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 382
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_3] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_A] =
     {
 #line 383
         .trainerName = _("GRUNT"),
@@ -830,7 +830,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 403
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_1] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_B] =
     {
 #line 404
         .trainerName = _("GRUNT"),
@@ -862,7 +862,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 416
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_2] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_C] =
     {
 #line 417
         .trainerName = _("GRUNT"),
@@ -905,7 +905,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 433
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_1] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_D] =
     {
 #line 434
         .trainerName = _("GRUNT"),
@@ -937,7 +937,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 446
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_1] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_E] =
     {
 #line 447
         .trainerName = _("GRUNT"),
@@ -969,7 +969,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 459
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_2] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_F] =
     {
 #line 460
         .trainerName = _("GRUNT"),
@@ -1001,7 +1001,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 472
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_3] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE4_G] =
     {
 #line 473
         .trainerName = _("GRUNT"),

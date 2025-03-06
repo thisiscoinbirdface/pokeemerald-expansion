@@ -65,6 +65,76 @@ Route4_EventScript_EvilTeam::
 	return
 
 
+Route4_TrainerBattle_A::
+# 59 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_A, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 60 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 61 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_B::
+# 66 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_B, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 67 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 68 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_C::
+# 73 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_C, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 74 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 75 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_D::
+# 80 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_D, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 81 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 82 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_E::
+# 87 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_E, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 88 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 89 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_F::
+# 94 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_F, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 95 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 96 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
+Route4_TrainerBattle_G::
+# 101 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_G, Route4_TrainerBattle_A_Text_0, Route4_TrainerBattle_A_Text_0
+# 102 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_A_Text_0
+# 103 "data//maps/Route4/scripts.pory"
+	release
+	end
+
+
 # 28 "data//maps/Route4/scripts.pory"
 Route4_EventScript_EvilTeam_Movement_0:
 # 28 "data//maps/Route4/scripts.pory"
@@ -131,3 +201,7 @@ Route4_EventScript_EvilTeam_Text_5:
 Route4_EventScript_EvilTeam_Text_6:
 # 40 "data//maps/Route4/scripts.pory"
 	.string "We'll remember this kid!$"
+
+Route4_TrainerBattle_A_Text_0:
+# 59 "data//maps/Route4/scripts.pory"
+	.string "$"

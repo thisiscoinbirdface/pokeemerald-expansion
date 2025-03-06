@@ -56,50 +56,50 @@ script Route4_EventScript_EvilTeam{
 
 
 script Route4_TrainerBattle_A {
-    trainerbattle_single(TRAINER_ROUTE4_A,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_A, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_B {
-    trainerbattle_single(TRAINER_ROUTE4_B,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_B, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_C {
-    trainerbattle_single(TRAINER_ROUTE4_C,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_C, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_D {
-    trainerbattle_single(TRAINER_ROUTE4_D,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_D, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_E {
-    trainerbattle_single(TRAINER_ROUTE4_E,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_E, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_F {
-    trainerbattle_single(TRAINER_ROUTE4_F,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_F, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script Route4_TrainerBattle_G {
-    trainerbattle_single(TRAINER_ROUTE4_G,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_ROUTE4_G, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }

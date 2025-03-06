@@ -184,22 +184,22 @@ script CeramBaseCamp_Main_EventScript_ExitTrigger{
 
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3,   ,   )
-    msgbox(format())
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format(""), format(""))
+    msgbox(format(""))
     release
     end
 }
