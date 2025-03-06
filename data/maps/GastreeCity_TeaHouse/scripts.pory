@@ -4,36 +4,31 @@ mapscripts GastreeCity_TeaHouse_MapScripts{}
 //Get 3 items for the lady who wants to make an Energy Tea
 //Energy Powder (get from shop), Shoal Salt (get from behind the shop - hidden item), Revival Herb (get from NPC)
 //Upon completion, give the player a Poltchageist egg for their trouble. Also buy tea from her any time?
-script GastreeCity_TeaHouse_EventScript_OldLady{
-    //If quest is done, open shop
 
-    //Else do quest
     
+script GastreeCity_TeaHouse_EventScript_OldLady{
+    //If quest not given, give quest
+    if (var(VAR_GASTREE_TEASHOP_QUEST) == 0) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt)}
+    //Else check quest progress
+    if (var(VAR_GASTREE_TEASHOP_QUEST) == 1) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest)}
+    //Else regular (currently just some text, maybe later a shop)
+    if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {msgbox(format("OWNER: My brother runs a tea shop further out west, in Brixas City."))}   
 }
 
 script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     lockall
+    faceplayer
     //first complain about the menu getting stale
-    msgbox(format("OWNER: Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want traditional teas?"))
+    msgbox(format("OWNER: Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want anything traditional?"))
     release
-    applymovement(4, moves(face_left))
-    waitmovement(0)
     msgbox(format("Sigh...you young ones just have no taste.\pWell...times are changing I suppose, and our business should change with them."))
     release
-    applymovement(4, moves(face_down))
-    waitmovement(0)
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)
     msgbox(format("OWNER: Yes, I'd like to try crafting a modern tea. Something with zing and zap! Like those energy drinks."))
-    release
-    applymovement(4, moves(face_left))
-    waitmovement(0)    
-    msgbox(format("but I'll need the right ingredients...hmm..."))
-    release
+    release 
 
     //Ask player yes/no
-    applymovement(4, moves(face_down))
-    waitmovement(0)    
     msgbox(format("Young one, will you help me?"), MSGBOX_YESNO)
 
     compare(VAR_RESULT, 1)  
@@ -44,8 +39,6 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     msgbox(format("I understand. Please come back if you'd like to help me out."))
     releaseall   
     //If no, end
-
-
 }
 
 
@@ -53,10 +46,61 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
     lockall
     applymovement(4, moves(jump_in_place_down))
     waitmovement(0)    
-    msgbox(format("You breathe new life into these old bones, young one! For the tea, I'll need...hmm...let's see...\p1 ENERGY POWDER...\n...1 SHOAL SALT...\n...and...\p...1 REVIVAL HERB! You should be able to find some REVIVAL HERBs in our back garden, but you'll have to find the rest yourself."))   
+    msgbox(format("You breathe new life into these old bones, young one!\pFor the tea, I'll need...hmm...let's see...\p1 ENERGY POWDER...\p...1 SHOAL SALT...\p...and...\p...1 REVIVAL HERB! You should be able to find some REVIVAL HERBs in our back garden, but you'll have to find the rest yourself."))   
+    release
+
+    //Give quest (var becomes 1 for "quest ongoing")
+    setvar(VAR_GASTREE_TEASHOP_QUEST, 1)
+    releaseall
+}
+
+script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
+    lockall  
+    msgbox(format("Welcome to...oh, it's you! My eyes aren't what they used to me.\pHave you brought the ingredients I need?"))   
+    release
+
+    //Check for 3 items
+    if (checkitem(ITEM_REVIVAL_HERB)){
+        if (checkitem(ITEM_ENERGY_POWDER)) {
+            if (checkitem(ITEM_SHOAL_SALT)) {
+                //Remove items
+                removeitem(ITEM_SHOAL_SALT)
+                removeitem(ITEM_REVIVAL_HERB)
+                removeitem(ITEM_ENERGY_POWDER)
+                //Give reward
+                goto(GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward)
+            }
+        }
+    } 
+
+    msgbox(format("Seems like you don't have everything yet. Come back when you do!"))   
     release
     releaseall
 }
+
+script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
+    lockall
+    //Text for give reward
+    applymovement(4, moves(jump_in_place_down))
+    waitmovement(0)     
+    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service. I must repay you..."))
+    release
+    msgbox(format("Why don't I give you a reward of some sort?"), MSGBOX_YESNO)
+    release
+    //Give polteageist
+    //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
+    givemon(SPECIES_POLTEAGEIST, 10)
+
+    //Bye bye text
+
+
+    //Setvar = 2 and end quest
+    setvar(VAR_GASTREE_TEASHOP_QUEST, 2)
+    releaseall
+}
+
+
+
 
 
 

@@ -270,7 +270,7 @@
 #define VAR_LAB_STATE                                    0x40F8 // Cycle between lab states
 #define VAR_LAB_EVIDENCE_GET                             0x40F9 // Get the evidence from the lab
 #define VAR_FENNILAHL_MART_SUPPLIES                      0x40FA // Check for the supplies from the fennilahl mart
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_GASTREE_TEASHOP_QUEST                        0x40FB // 0: quest not started, 1: quest underway, 2: quest completed
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
