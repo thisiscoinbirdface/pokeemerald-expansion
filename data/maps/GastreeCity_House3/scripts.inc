@@ -17,5 +17,5 @@ GastreeCity_House3_NPC1::
 GastreeCity_House3_NPC1_Text_0:
 # 6 "data//maps/GastreeCity_House3/scripts.pory"
 	.string "The big news of the week is Professor\n"
-	.string "Tenebris disappearing! He gave my son\l"
+	.string "Tenebris disappearing. He gave my son\l"
 	.string "his first {PKMN} - a KECKLEON!$"

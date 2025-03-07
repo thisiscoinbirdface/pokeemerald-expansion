@@ -10,7 +10,13 @@ raw `
 `
 
 
-mapscripts CeramBaseCamp_Main_MapScripts{}
+mapscripts CeramBaseCamp_Main_MapScripts{
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE{CeramBaseCamp_MapScript_OnWarp}
+}
+
+script CeramBaseCamp_MapScript_OnWarp {
+
+}
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag

@@ -10,8 +10,13 @@ script Route4_EventScript_EvilTeam{
     //Block text
     lockall
     msgbox(format("Hey kid - this road is closed due to...uh...repairs. Yeah. Sorry."))
-    msgbox(format("You've saying we look suspicious? We're just...um...construction workers. Go tell the boss."))
-    msgbox(format("You don't want to budge? Grr...alright fine, we're not construction workers. You're messing with the wrong group of people, kid. And now we're going to teach you a lesson!"))
+    msgbox(format("You've saying we look suspicious? We're just...um...construction workers. Sorry. Yeah."))
+    msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        end
+    }
+
+    msgbox(format("You don't want to budge? Grr...alright fine, we're not construction workers. We're Team Somber! And now we're going to teach you a lesson!"))
     release
 
     //Yes/no for fighting
@@ -56,28 +61,28 @@ script Route4_EventScript_EvilTeam{
 
 
 script Route4_TrainerBattle_Raha {
-    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! There's no way you can beat me!"), format("But Father spent so much money!"))
+    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive!\pThere's no way you can beat me!"), format("But Father spent so much money!"))
     msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Cammy {
-    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let this old lady teach you some new tricks."), format("Well fought!"))
+    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let\pthis old lady teach you some new tricks."), format("Well fought!"))
     msgbox(format("You were the teacher and I was the student! Haha!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Sona {
-    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different areas. Mine were caught on Route 3!"), format("Oh no!"))
+    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different\pareas. Mine were caught on Route 3!"), format("Oh no!"))
     msgbox(format("No matter where they're from, all {PKMN} need love and care."))
     release
     end
 }
 
 script Route4_TrainerBattle_Jenny {
-    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My Pancham and I train here every morning. We share the same goal - to become the strongest!"), format("We need to train harder!"))
+    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My Pancham and I train here every morning.\pWe want to become the strongest!"), format("We need to train harder!"))
     msgbox(format("Pancham and I will become {PKMN} Champions one day!"))
     release
     end
@@ -85,22 +90,22 @@ script Route4_TrainerBattle_Jenny {
 
     //The Kids Trio
     script Route4_TrainerBattle_Kid1 {
-        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout - now you're going to pay!"), format("Waah!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there,\ndid you?\pYou entered our secret hideout\nand now you're going to pay!"), format("Waah!"))
         msgbox(format("It's summer break so we play here all day until the sun goes down!"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid2 {
-        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far!\nBut I won't let you lay your\nhands on the boss!\pI'm going to stop you right now!"), format("Boss! Help!"))
         msgbox(format("Our secret hideout is really cool, don't you think?"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid3 {
-        trainerbattle_single(TRAINER_ROUTE4_KID3, format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something - even us kids should be taken seriously!"), format("My {PKMN}! Adults are lame!"))
-        msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my parents!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID3, format("Ahem...welcome to our secret hideout,\nold one. You may look down upon us\nfor being so small, but let me\ntell you something...\pEven us kids are strong!"), format("My {PKMN}! Adults are lame!"))
+        msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
         release
         end
     }
@@ -115,10 +120,52 @@ script Route4_TrainerBattle_Jenny {
 
 
 
+//NPCs
+script Route4_NPC_Couple1{
+    lockall
+    faceplayer
+    msgbox(format("What a lovely view!\pThe lake is nice too..."))
+    releaseall
+}
 
+script Route4_NPC_Couple2{
+    lockall
+    faceplayer
+    msgbox(format("What a lovely view!\pIt's a shame about him..."))
+    releaseall
+}
 
+//Generic NPC
+script Route4_NPC_A{
+    lockall
+    faceplayer
+    msgbox(format("Wow, you beat INGER? That's impressive. But did you know that there are 7 more Gym Leaders in Cormoria?\pMaybe you'll get to face them all someday!"))
+    releaseall
+}
 
+//Warns the player of the kids
+script Route4_NPC_B{
+    lockall
+    faceplayer
+    msgbox(format("Mom told me to come here and get my little brother. He's such a brat! He plays outside all day and comes home late every evening."))
+    releaseall
+}
 
+//Give item
+script Route4_NPC_C{
+    lockall
+    faceplayer
+    msgbox(format("I heard there were FINNEON and GOLDEEN in this lake, but I chose the wrong fishing spot...I can't hook a single {PKMN}!"))
+    releaseall
+}
+
+//Generic NPC
+script Route4_NPC_D{
+    lockall
+    faceplayer
+    msgbox(format("There are some thugs blocking the path to Mt. Ceram Base Camp! They remind me of my younger days...I used to be in an evil team in the Hoenn region."))
+    releaseall
+}
 
 
 

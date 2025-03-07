@@ -9,8 +9,7 @@ mapscripts GastreeCity_MapScripts{
 
 
 script GastreeCity_OnTransition{
-    if (flag(FLAG_GASTREE_NPC_SKITTY)){end}
-    removeobject(17)
+
 }
 
 script GastreeCity_EventScript_KohlaBattle_Trigger{
@@ -77,7 +76,7 @@ script GastreeCity_NPC4{
 script GastreeCity_NPC5{
     lockall
     faceplayer    
-    msgbox(format("INGWER, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type {PKMN} right? So then why am I getting cold feet?"))
+    msgbox(format("INGER, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type {PKMN} right? So then why am I getting cold feet?"))
     release
 }
 
@@ -138,6 +137,7 @@ script GastreeCity_NPC9{
                 msgbox(format("Is that my SKITTY? Oh it is! Thank you trainer! Thank you so much! Come here SKITTY.\pSKITTY: skiiii!!!\pPlease take this as a reward."))
                 giveitem(ITEM_QUICK_CLAW)
                 setflag(FLAG_GASTREE_NPC_SKITTY)
+                clearflag(FLAG_HIDE_GASTREE_SKITTY)
                 addobject(17)
             } else {
                 msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))

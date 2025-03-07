@@ -2,19 +2,22 @@ mapscripts Route3_Underpass_MapScripts{}
 
 script Route3_Underpass_Nurse{
     lockall
+    faceplayer
     msgbox(format("This area is closed for the demo."))
     releaseall
 }
 
 script Route3_Underpass_NPC1{
     lockall
-    msgbox(format("They say that a rare {PKMN} has made these caves its home. I need to go deeper down!"))
+    faceplayer
+    msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."))
     releaseall
 }
 
 script Route3_Underpass_NPC2{
     lockall
-    msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."))
+    faceplayer
+    msgbox(format("They say that a rare {PKMN} has made these caves its home. I need to go deeper down!"))
     releaseall
 }
 
