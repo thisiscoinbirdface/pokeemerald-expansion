@@ -157,15 +157,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
-      "x": 14,
-      "y": 30,
+      "x": 25,
+      "y": 29,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "GastreeCity_EventScript_KohlaBattle_Trigger",
       "flag": "FLAG_GASTREE_KOHLA_BATTLE"
     },
     {
@@ -299,15 +299,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 25,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "GastreeCity_EventScript_KohlaBattle_Trigger0"
-    }
+
   ],
   "bg_events": [
     {

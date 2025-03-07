@@ -12,7 +12,10 @@ script GastreeCity_TeaHouse_EventScript_OldLady{
     //Else check quest progress
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 1) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest)}
     //Else regular (currently just some text, maybe later a shop)
-    if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {msgbox(format("OWNER: My brother runs a tea shop further out west, in Brixas City."))}   
+    if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {
+        msgbox(format("OWNER: My brother runs a tea shop further out west, in Brixas City."))
+        release
+    }   
 }
 
 script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
@@ -85,14 +88,13 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     waitmovement(0)     
     msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service. I must repay you..."))
     release
-    msgbox(format("Why don't I give you a reward of some sort?"), MSGBOX_YESNO)
+    msgbox(format("Why don't I give you a reward of some sort?")) //Yes/No option perhaps?
     release
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
     givemon(SPECIES_POLTEAGEIST, 10)
-
-    //Bye bye text
-
+    msgbox(format("The kitchen is managed by my staff of POLTEAGEIST. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?")) //Yes/No option perhaps?
+    msgbox(format("This one's a keeper - extremely well-trained and hospitable. I'm sure you two will have a great time together. I'll miss you, POLTEAGEIST!"))
 
     //Setvar = 2 and end quest
     setvar(VAR_GASTREE_TEASHOP_QUEST, 2)

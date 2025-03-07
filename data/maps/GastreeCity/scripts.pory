@@ -1,5 +1,5 @@
 raw `
-    .set LOCALID_KOHLA, 12
+    .set LOCALID_KOHLA, 11
 `
 
 mapscripts GastreeCity_MapScripts{
@@ -9,22 +9,14 @@ mapscripts GastreeCity_MapScripts{
 
 
 script GastreeCity_OnTransition{
-    removeobject(LOCALID_KOHLA) //Remove Kolhla.
-    removeobject(17)  //Remove Skitty.
+    if (flag(FLAG_GASTREE_NPC_SKITTY)){end}
+    removeobject(17)
 }
 
-script GastreeCity_EventScript_KohlaBattle_Trigger0{
-    //Exit if flag
-    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
-        end
-    }
-
-    addobject(LOCALID_KOHLA)
-
+script GastreeCity_EventScript_KohlaBattle_Trigger{
     //Start
     lockall
-    applymovement(LOCALID_KOHLA, moves(walk_right * 11))
-    waitmovement(0)
+    faceplayer
 
     //Kohla talks trash
     msgbox(GastreeCity_KohlaIntro1)
@@ -43,42 +35,6 @@ script GastreeCity_EventScript_KohlaBattle_Trigger0{
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
     removeobject(LOCALID_KOHLA)
-    removeobject(1)
-    removeobject(2)    
-
-    releaseall
-}
-
-script GastreeCity_EventScript_KohlaBattle_Trigger1{
-    //Exit if flag
-    if (flag(FLAG_GASTREE_KOHLA_BATTLE)){
-        end
-    }
-
-    //Start
-    lockall
-    applymovement(LOCALID_KOHLA, moves(walk_up walk_left *6))
-    waitmovement(0)
-
-    //Kohla talks trash
-    msgbox(GastreeCity_KohlaIntro1)
-    msgbox(GastreeCity_KohlaIntro2)
-
-    //Battle
-    trainerbattle_no_intro(TRAINER_GASTREE_KOHLA, msgbox(format("Not again!")))
-
-    //Lose battle
-    msgbox(GastreeCity_KohlaPostBattle)
-    release
-    
-    applymovement(LOCALID_KOHLA, moves(walk_down walk_left *3 walk_down *2 walk_left *8))
-    waitmovement(0)
-
-    //Set flag
-    setflag(FLAG_GASTREE_KOHLA_BATTLE)
-    removeobject(LOCALID_KOHLA)
-    removeobject(1)
-    removeobject(2)    
 
     releaseall
 }
@@ -193,17 +149,20 @@ script GastreeCity_NPC9{
 
     script GastreeCity_EventScripts_SkittyTrigger{
 
-        if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){end}
-
-        lockall
-        msgbox(format("There's something up in the branches of this tree.\pShake it?"), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1) {
-            msgbox(format("A SKITTY dropped down from the tree! It looks scared. Who is its owner?"))
-            release
-            giveitem(ITEM_SKITTY)
-            setflag(FLAG_GASTREE_TRIGGER_SKITTY)
+        if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
+            msgbox(format("There's nothing else up there."))
         } else {
 
+            lockall
+            msgbox(format("There's something up in the branches of this tree.\pShake it?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1) {
+                msgbox(format("A SKITTY dropped down from the tree! It looks scared. Who is its owner?"))
+                release
+                giveitem(ITEM_SKITTY)
+                setflag(FLAG_GASTREE_TRIGGER_SKITTY)
+            } else {
+
+            }
         }
         releaseall
 
