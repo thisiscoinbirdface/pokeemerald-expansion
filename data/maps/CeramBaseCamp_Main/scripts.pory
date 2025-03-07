@@ -140,7 +140,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Final dialogue
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     applymovement(LOCALID_LEADER, moves(face_right))
-    waitmovement(0)    
+    waitmovement(0)
     msgbox(format("FLANNERY: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
     msgbox(format("FLANNERY: They're connected to Professor Tenebris' disappearance? \pWell I gotta do something - Professor Tenebris is the one who gave me my GROWLITHE."))
     msgbox(format("FLANNERY: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))

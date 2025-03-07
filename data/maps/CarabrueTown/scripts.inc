@@ -54,22 +54,32 @@ CarabrueTown_Sign_TenebrisLab::
 	end
 
 
-CarabrueTown_EventScript_NPC1::
+CarabrueTown_Sign_ChampionHouse::
 # 50 "data//maps/CarabrueTown/scripts.pory"
 	lockall
 # 51 "data//maps/CarabrueTown/scripts.pory"
-	faceplayer
+	msgbox CarabrueTown_Sign_ChampionHouse_Text_0
 # 52 "data//maps/CarabrueTown/scripts.pory"
+	releaseall
+	return
+
+
+CarabrueTown_EventScript_NPC1::
+# 56 "data//maps/CarabrueTown/scripts.pory"
+	lockall
+# 57 "data//maps/CarabrueTown/scripts.pory"
+	faceplayer
+# 58 "data//maps/CarabrueTown/scripts.pory"
 	goto_if_set FLAG_CARABRUE_POLICE, CarabrueTown_EventScript_NPC1_2
-# 55 "data//maps/CarabrueTown/scripts.pory"
+# 61 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_EventScript_NPC1_Text_1
 CarabrueTown_EventScript_NPC1_1:
-# 57 "data//maps/CarabrueTown/scripts.pory"
+# 63 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
 	return
 
 CarabrueTown_EventScript_NPC1_2:
-# 53 "data//maps/CarabrueTown/scripts.pory"
+# 59 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_EventScript_NPC1_Text_0
 	goto CarabrueTown_EventScript_NPC1_1
 
@@ -124,13 +134,17 @@ CarabrueTown_Sign_TenebrisLab_Text_0:
 	.string "THE TENEBRIS LABORATORY\n"
 	.string "Pokemon psychology research hub.$"
 
+CarabrueTown_Sign_ChampionHouse_Text_0:
+# 51 "data//maps/CarabrueTown/scripts.pory"
+	.string "This house is locked.$"
+
 CarabrueTown_EventScript_NPC1_Text_0:
-# 53 "data//maps/CarabrueTown/scripts.pory"
+# 59 "data//maps/CarabrueTown/scripts.pory"
 	.string "Looks like the police went away. I hope\n"
 	.string "they got the evidence they needed.$"
 
 CarabrueTown_EventScript_NPC1_Text_1:
-# 55 "data//maps/CarabrueTown/scripts.pory"
+# 61 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those cops over\n"
 	.string "there? They came all the way from\l"
 	.string "Fennilahl Town to investigate the\l"

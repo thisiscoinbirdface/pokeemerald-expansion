@@ -46,6 +46,12 @@ script CarabrueTown_Sign_TenebrisLab{
     end
 }
 
+script CarabrueTown_Sign_ChampionHouse{
+    lockall
+    msgbox(format("This house is locked."))
+    releaseall
+}
+
 script CarabrueTown_EventScript_NPC1{
     lockall
     faceplayer

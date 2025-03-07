@@ -12135,6 +12135,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE4",
+          "base_label": "gRoute40",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_GRUBBIN"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_LILLIPUP"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_GRUBBIN"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_LILLIPUP"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_FLETCHLING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_DEWPIDER"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_NINJASK"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_NINJASK"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_FLETCHLING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_DEWPIDER"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_CHIKORITA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_CHIKORITA"
+              }
+            ]
+          }
         }
       ]
     },
