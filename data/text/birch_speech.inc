@@ -1,24 +1,22 @@
 gText_Birch_Welcome::
 	.string "TENEBRIS LABORATORY\n"
 	.string "LETTER OF APPOINTMENT\p"
-	.string "Congratulations candidate!\p"
-	.string "You have been selected as a\n"
-	.string "RESEARCH ASSOCIATE at the\p"
-	.string "Tenebris Laboratory in\n"
-	.string "CARABRUE TOWN.\p"
+	.string "Congratulations candidate! You have\n"
+	.string "been selected as a RESEARCH ASSOCIATE\l"
+	.string "in the TENEBRIS LABORATORY.\p"
+	.string "MESSAGE FROM PROFESSOR TENEBRIS:\n"
+	.string "Welcome young researcher!\p"
+	.string "I am PROFESSOR TENEBRIS, the resident\n"
+	.string "POKéMON Prof. of the Cormoria region\l"
+	.string "and head of the TENEBRIS LABORATORY!\p"
+	.string "We reviewed your application and while\n"
+	.string "your resume was...lacking, I believe in\l"
+	.string "inner potential, not words on a page!\p"
+	.string "ABOUT THE LABORATORY:\p"	
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "MESSAGE FROM THE PROF”\p"
-	.string "Welcome young researcher!\p"
-	.string "I am PROFESSOR TENEBRIS,\n"
-	.string "the POKéMON Professor of the\p"
-	.string "Cormoria region and the head of\n"
-	.string "the TENEBRIS LABORATORY!\p"
-	.string "We reviewed your application\n"
-	.string "and while your resume was...lacking,\n"
-	.string "I believe in inner potential,\n"
-	.string "not words on a page!\p"
+	.string "ABOUT THE LABORATORY\p"
 	.string "$"
 
 gText_Birch_MainSpeech::
@@ -27,43 +25,57 @@ gText_Birch_MainSpeech::
 	.string "Yet, we know so very little of our\n"
 	.string "friends and aides.\p"
 	.string "POKéMON Professors all over the world\n"
-	.string "such as muyself spend their time\p"
+	.string "such as myself spend their time\p"
 	.string "studying the biology, habits, and\n"
 	.string "traits of the many POKéMON species.\p"
-	.string "Here in my lab, we specialise in\n"
-	.string "POKéMON psychology and subconscious.\p"
+	.string "Here in my lab, we specialise in POKéMON\n"
+	.string "psychology and their subconscious.\p"
 	.string "What goes on in their minds? Where\n"
 	.string "does their power and energy come from?\p"
 	.string "That's what we do.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Please fill out this\n"
-	.string "employee form.\p"
+	.string "Please fill out this employee form.\p"
+	.string "$"	
 
 gText_Birch_BoyOrGirl::
 	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Or are you a girl?"
+	.string "$"	
 
 gText_Birch_WhatsYourName::
-	.string "To accept this offer letter\n"
+	.string "To accept this offer letter, \n"
 	.string "please sign below.\p"
+	.string "$"
 
 gText_Birch_SoItsPlayer::
-	.string "Confirm signature: {PLAYER}?$"
+	.string "Confirm signature: {PLAYER}?"
+	.string "$"	
 
 gText_Birch_YourePlayer::
 	.string "Congratulations!\p"
 	.string "I look forward to meeting\n"
-	.string "you in the lab next week.\n"
+	.string "you in the lab next week.\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "ADDENDUM:\p"
-	.string "We have couriered you a\n"
-	.string "Welcome Package.\p"
-	.string "Please bring it with you\n"
-	.string "on your first day.\p"
+	.string "FIRST DAY PROCEDURES:\p"
+	.string "1. As per policy, new researchers\n" 
+	.string "are to receive a POKéMON companion\l"
+	.string "on the first day.\p"
+	.string "Our standard guidelines offer you\n"
+	.string "the choice of one of the following:\l" 
+	.string "CHARMANDER, SNIVY, or OSHAWOTT.\p"
+	.string "2. You are expected to be punctual.\n"
+	.string "Tardiness is not acceptable.\p"
+	.string "3. We have sent a WELCOME PACKAGE.\n"
+	.string "Please carry this with you. In case\l"	
+	.string "you have no yet received it, please\l"
+	.string "inform us as soon as possible.\p"
 	.string "Best Regards,\n"
 	.string "PROFESSOR TENEBRIS.\p"
 	.string "$"
+
+
+
