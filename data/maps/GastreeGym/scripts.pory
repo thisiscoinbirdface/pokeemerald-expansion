@@ -20,13 +20,45 @@ script GastreeGym_TrainerBattle_Jaco {
 }
 
 script GastreeGym_LeaderBattle {
+    lockall
+    faceplayer
 
-    trainerbattle_single(TRAINER_GASTREEGYM_LEADER, "Sefe fefe", "fefe fef efe err rr rrr")
-    msgbox(format("goo"))
-    release
-    end
+    if (flag(FLAG_BADGE01_GET)){
+        msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
+    } else { //else do the battle
+        trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
+        release
+    }
+
+    releaseall
 
 }
 
+script GastreeGym_EventScript_Victory{
+    //Receive the badge
+    msgbox(format("{PLAYER} received the GYM Badge from LEADER."))
+    release
+    setflag(FLAG_BADGE01_GET)
 
+    //Play gym badge fanfare
+    call(Common_EventScript_PlayGymBadgeFanfare)
 
+    //Describe the badge features (use HMs, allow pokemon control etc.)
+    msgbox(format(""))
+
+    //Give TM also
+    giveitem(ITEM_TM_FOCUS_PUNCH)
+    msgbox(format(""))
+
+    //Bye-bye
+    msgbox(format(""))
+    releaseall
+}
+
+text GastreeGym_Text_Intro{
+    format("")
+}
+
+text GastreeGym_Text_Defeated{
+    format("")
+}
