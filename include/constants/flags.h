@@ -124,8 +124,8 @@
 
 //I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
 #define FLAG_GASTREE_NPC_SHOAL_SALT  0x280 // Get Shoal Salt from NPC in House 2
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
+#define FLAG_GASTREE_NPC_SKITTY  0x281 // Has she got her skitty or not
+#define FLAG_GASTREE_TRIGGER_SKITTY  0x282 // Deactivate the Skitty trigger
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag

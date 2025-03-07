@@ -14107,4 +14107,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Parcel,
     },
 
+    [ITEM_SKITTY] =
+    {
+        .name = _("Skitty"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A SKITTY found in\n"
+            "a tree. Who is it's\n"
+            "owner?"
+        ),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Parcel,
+        .iconPalette = gItemIconPalette_Parcel,
+    },
+
 };
+

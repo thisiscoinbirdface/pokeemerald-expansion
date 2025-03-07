@@ -3,12 +3,14 @@ raw `
 `
 
 mapscripts GastreeCity_MapScripts{
-    MAP_SCRIPT_ON_TRANSITION: GastreeCity_OnTransition
+    MAP_SCRIPT_ON_TRANSITION: GastreeCity_OnTransition  
+
 }
 
+
 script GastreeCity_OnTransition{
-    removeobject(LOCALID_KOHLA)
-    end
+    removeobject(LOCALID_KOHLA) //Remove Kolhla.
+    removeobject(17)  //Remove Skitty.
 }
 
 script GastreeCity_EventScript_KohlaBattle_Trigger0{
@@ -101,14 +103,6 @@ script GastreeCity_NPC1{
     release
 }
 
-    //Quest NPC
-    script GastreeCity_NPC2{
-        lockall
-        faceplayer    
-        msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
-        release
-    }
-
 script GastreeCity_NPC3{
     lockall
     faceplayer    
@@ -139,6 +133,7 @@ script GastreeCity_NPC6{
     release
 }
 
+    //Pokemon flavour
 script GastreeCity_NPC7{
     lockall
     faceplayer    
@@ -159,8 +154,66 @@ script GastreeCity_NPC8{
     msgbox(format("KECKLEON: keeee!!!"))
     release
 }
+    script GastreeCity_NPC_Keckleon{
+        lockall
+        faceplayer    
+        msgbox(format("KECKLEON: keeee!!\pIt's trying hard to learn ROCK SMASH. Go KECKLEON!"))
+        release
+    }
+
+    //Give item - not done yet
+script GastreeCity_NPC9{
+    lockall
+    faceplayer    
+    msgbox(format(""))
+    release
+}
 
 
+    //Quest NPC
+    script GastreeCity_NPC2{
+        lockall
+        faceplayer    
 
+        if (flag(FLAG_GASTREE_NPC_SKITTY)){
+            msgbox(format("SKITTY ran away because she got bored...maybe I should catch a PURRLOIN or MEOWTH for her to play with."))
+        } else {
+            if (checkitem(ITEM_SKITTY)){
+                msgbox(format("Is that my SKITTY? Oh it is! Thank you trainer! Thank you so much! Come here SKITTY.\pSKITTY: skiiii!!!\pPlease take this as a reward."))
+                giveitem(ITEM_QUICK_CLAW)
+                setflag(FLAG_GASTREE_NPC_SKITTY)
+                addobject(17)
+            } else {
+                msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
+            }
+
+        }
+        release
+    }
+
+    script GastreeCity_EventScripts_SkittyTrigger{
+
+        if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){end}
+
+        lockall
+        msgbox(format("There's something up in the branches of this tree.\pShake it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1) {
+            msgbox(format("A SKITTY dropped down from the tree! It looks scared. Who is its owner?"))
+            release
+            giveitem(ITEM_SKITTY)
+            setflag(FLAG_GASTREE_TRIGGER_SKITTY)
+        } else {
+
+        }
+        releaseall
+
+    }
+
+    script GastreeCity_NPC_Skitty{
+        lockall
+        faceplayer    
+        msgbox(format("SKITTY: skee~~"))
+        releaseall
+    }
 
 

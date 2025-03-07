@@ -134,19 +134,7 @@
 #define VAR_ROUTE119_STATE                               0x4072
 #define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074
-#define VAR_ROUTE122_STATE                               0x4075 // Unused Var
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                               0x4078 // Unused Var
-#define VAR_ROUTE126_STATE                               0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                               0x407A // Unused Var
-#define VAR_ROUTE128_STATE                               0x407B
-#define VAR_ROUTE129_STATE                               0x407C // Unused Var
-#define VAR_ROUTE130_STATE                               0x407D // Unused Var
-#define VAR_ROUTE131_STATE                               0x407E // Unused Var
-#define VAR_ROUTE132_STATE                               0x407F // Unused Var
-#define VAR_ROUTE133_STATE                               0x4080 // Unused Var
-#define VAR_ROUTE134_STATE                               0x4081 // Unused Var
+
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
 #define VAR_UNUSED_0x4083                                0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                              0x4084
@@ -271,10 +259,25 @@
 #define VAR_LAB_EVIDENCE_GET                             0x40F9 // Get the evidence from the lab
 #define VAR_FENNILAHL_MART_SUPPLIES                      0x40FA // Check for the supplies from the fennilahl mart
 #define VAR_GASTREE_TEASHOP_QUEST                        0x40FB // 0: quest not started, 1: quest underway, 2: quest completed
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
+#define VAR_GASTREE_SKITTY_QUEST                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+
+    //Moved down from above (i am going to use these)
+    #define VAR_ROUTE122_STATE                               0x4075 // Unused Var
+    #define VAR_ROUTE123_STATE                               0x4076 // Unused Var
+    #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
+    #define VAR_ROUTE125_STATE                               0x4078 // Unused Var
+    #define VAR_ROUTE126_STATE                               0x4079 // Unused Var
+    #define VAR_ROUTE127_STATE                               0x407A // Unused Var
+    #define VAR_ROUTE128_STATE                               0x407B
+    #define VAR_ROUTE129_STATE                               0x407C // Unused Var
+    #define VAR_ROUTE130_STATE                               0x407D // Unused Var
+    #define VAR_ROUTE131_STATE                               0x407E // Unused Var
+    #define VAR_ROUTE132_STATE                               0x407F // Unused Var
+    #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
+    #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
