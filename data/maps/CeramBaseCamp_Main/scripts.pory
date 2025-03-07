@@ -11,11 +11,16 @@ raw `
 
 
 mapscripts CeramBaseCamp_Main_MapScripts{
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE{CeramBaseCamp_MapScript_OnWarp}
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_0, 0: CeramBaseCamp_MapScript_OnEnter
+    ]
 }
 
-script CeramBaseCamp_MapScript_OnWarp {
-
+script CeramBaseCamp_MapScript_OnEnter {
+    lockall
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}   
+    removeobject(13)
+    releaseall
 }
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{

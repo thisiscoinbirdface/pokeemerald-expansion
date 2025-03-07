@@ -1,7 +1,7 @@
 mapscripts Route4_MapScripts {}
 raw `
-    .set LOCALID_GRUNT1, 14
-    .set LOCALID_GRUNT2, 15
+    .set LOCALID_GRUNT1, 12
+    .set LOCALID_GRUNT2, 13
 
 `
 
@@ -13,6 +13,8 @@ script Route4_EventScript_EvilTeam{
     msgbox(format("You've saying we look suspicious? We're just...um...construction workers. Sorry. Yeah."))
     msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
+        msgbox(format("Good. Now scram!"))
+        releaseall
         end
     }
 
@@ -131,7 +133,7 @@ script Route4_NPC_Couple1{
 script Route4_NPC_Couple2{
     lockall
     faceplayer
-    msgbox(format("What a lovely view!\pIt's a shame about him..."))
+    msgbox(format("What a lovely view!\pIt's a shame about her..."))
     releaseall
 }
 

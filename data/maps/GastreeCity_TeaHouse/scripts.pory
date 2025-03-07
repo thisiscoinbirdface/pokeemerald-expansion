@@ -92,9 +92,17 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     release
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
-    givemon(SPECIES_POLTEAGEIST, 10)
-    msgbox(format("The kitchen is managed by my staff of POLTEAGEIST. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?")) //Yes/No option perhaps?
+    givemon(SPECIES_POLTCHAGEIST, 10)    
+    msgbox(format("The kitchen is managed by my staff of POLTCHAGEIST. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?")) //Yes/No option perhaps?
+    
+    //Fanfare
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("The Tea House Owner has gifted you a POLTCHAGEIST!"))
+    call(NicknamePartyMon)
+    release
+
     msgbox(format("This one's a keeper - extremely well-trained and hospitable. I'm sure you two will have a great time together. I'll miss you, POLTEAGEIST!"))
+    release
 
     //Setvar = 2 and end quest
     setvar(VAR_GASTREE_TEASHOP_QUEST, 2)
