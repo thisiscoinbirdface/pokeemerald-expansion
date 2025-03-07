@@ -297,11 +297,11 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 
 
 //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
-const u32 gTrainerFrontPic_SomberGruntF[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.lz");
-const u32 gTrainerPalette_SomberGruntF[] = INCBIN_U32("graphics/trainers/palettes/may_rs.gbapal.lz");
+const u32 gTrainerFrontPic_SomberGruntF[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_f.4bpp.lz");
+const u32 gTrainerPalette_SomberGruntF[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
-const u32 gTrainerFrontPic_SomberGruntM[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.lz");
-const u32 gTrainerPalette_SomberGruntM[] = INCBIN_U32("graphics/trainers/palettes/may_rs.gbapal.lz");
+const u32 gTrainerFrontPic_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_m.4bpp.lz");
+const u32 gTrainerPalette_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
 
 

@@ -350,9 +350,9 @@ F_TRAINER_FEMALE |
 #line 210
         .trainerName = _("GABRIELLE"),
 #line 211
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 212
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
 #line 213
 F_TRAINER_FEMALE | 
@@ -579,7 +579,7 @@ F_TRAINER_FEMALE |
 #line 300
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 301
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
         .encounterMusic_gender =
 #line 303
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -620,9 +620,9 @@ F_TRAINER_FEMALE |
 #line 318
         .trainerName = _("GABRIELLE"),
 #line 319
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 320
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
 #line 322
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -665,7 +665,7 @@ F_TRAINER_FEMALE |
 #line 337
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 338
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
 #line 340
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -697,7 +697,7 @@ F_TRAINER_FEMALE |
 #line 350
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 351
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
         .encounterMusic_gender =
 #line 353
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -740,7 +740,7 @@ F_TRAINER_FEMALE |
 #line 367
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 368
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
 #line 370
             TRAINER_ENCOUNTER_MUSIC_AQUA,
