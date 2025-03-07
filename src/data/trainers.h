@@ -350,7 +350,7 @@ F_TRAINER_FEMALE |
 #line 210
         .trainerName = _("GABRIELLE"),
 #line 211
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 212
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
@@ -577,7 +577,7 @@ F_TRAINER_FEMALE |
 #line 299
         .trainerName = _("MEL & PAUL"),
 #line 300
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 301
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
         .encounterMusic_gender =
@@ -620,7 +620,7 @@ F_TRAINER_FEMALE |
 #line 318
         .trainerName = _("GABRIELLE"),
 #line 319
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 320
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
@@ -663,7 +663,7 @@ F_TRAINER_FEMALE |
 #line 336
         .trainerName = _("GRUNT"),
 #line 337
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 338
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
@@ -695,7 +695,7 @@ F_TRAINER_FEMALE |
 #line 349
         .trainerName = _("GRUNT"),
 #line 350
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 351
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
         .encounterMusic_gender =
@@ -738,7 +738,7 @@ F_TRAINER_FEMALE |
 #line 366
         .trainerName = _("GRUNT"),
 #line 367
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 368
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =

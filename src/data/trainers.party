@@ -208,7 +208,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
 Name: GABRIELLE
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
 Music: Female
@@ -297,7 +297,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_GRUNTS ===
 Name: MEL & PAUL
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
@@ -316,7 +316,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
 Name: GABRIELLE
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
 Music: Swimmer
@@ -334,7 +334,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
 Music: Aqua
@@ -347,7 +347,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT2 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
@@ -364,7 +364,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: GRUNT
-Class: Team Aqua
+Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
 Music: Aqua
