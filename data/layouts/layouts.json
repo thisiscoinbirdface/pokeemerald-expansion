@@ -4720,6 +4720,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/GastreeCity_TeaHouse/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity_TeaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERAM_BASE_CAMP_GYM",
+      "name": "CeramBaseCampGym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/CeramBaseCampGym/border.bin",
+      "blockdata_filepath": "data/layouts/CeramBaseCampGym/map.bin"
     }
   ]
 }

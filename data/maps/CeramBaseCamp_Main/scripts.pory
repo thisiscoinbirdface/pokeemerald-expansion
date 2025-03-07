@@ -210,6 +210,7 @@ script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
 script CeramBaseCamp_Main_Pokemart_EventScript_Clerk{
     lock
 	faceplayer
+    msgbox(format("Hey {PLAYER}! Here you can get mountain-climbing supplies!"))
 	message(gText_HowMayIServeYou)
 	waitmessage
 	pokemart(CeramBaseCamp_Main_Pokemart_Inventory)
@@ -220,8 +221,13 @@ script CeramBaseCamp_Main_Pokemart_EventScript_Clerk{
 
 
 mart CeramBaseCamp_Main_Pokemart_Inventory{
-    ITEM_POTION
     ITEM_POKE_BALL
+    ITEM_REPEL
+    ITEM_ESCAPE_ROPE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LAVA_COOKIE
+
     
 }
 

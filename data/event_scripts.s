@@ -1210,3 +1210,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GastreeCity_House3/scripts.inc"
 
 	.include "data/maps/GastreeCity_TeaHouse/scripts.inc"
+
+	.include "data/maps/CeramBaseCampGym/scripts.inc"
