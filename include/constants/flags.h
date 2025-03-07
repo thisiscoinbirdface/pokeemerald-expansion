@@ -126,7 +126,7 @@
 #define FLAG_GASTREE_NPC_SHOAL_SALT  0x280 // Get Shoal Salt from NPC in House 2
 #define FLAG_GASTREE_NPC_SKITTY  0x281 // Has she got her skitty or not
 #define FLAG_GASTREE_TRIGGER_SKITTY  0x282 // Deactivate the Skitty trees trigger
-#define FLAG_HIDE_GASTREE_SKITTY  0x283 // Hides the Skitty object
+#define FLAG_HIDE_BASECAMP_SHOPKEEPER  0x283 // Hides the 1F shopkeeper at the base camp depot
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag

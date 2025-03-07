@@ -72,7 +72,7 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest::
 # 49 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
 # 50 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest_Movement_0
+	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0
 # 51 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	waitmovement 0
 # 52 "data//maps/GastreeCity_TeaHouse/scripts.pory"
@@ -136,7 +136,7 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward::
 # 85 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
 # 87 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest_Movement_0
+	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0
 # 88 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	waitmovement 0
 # 89 "data//maps/GastreeCity_TeaHouse/scripts.pory"
@@ -214,12 +214,6 @@ GastreeCity_TeaHouse_EventScript_NPC4::
 GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0:
 # 29 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	emote_exclamation_mark
-	step_end
-
-# 50 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest_Movement_0:
-# 50 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	jump_in_place_down
 	step_end
 
 GastreeCity_TeaHouse_EventScript_OldLady_Text_0:

@@ -273,7 +273,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 
-	setflag FLAG_HIDE_GASTREE_SKITTY
+	setflag FLAG_HIDE_BASECAMP_SHOPKEEPER
 
 	call EventScript_ResetAllBerries
 	end

@@ -47,7 +47,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
 
 script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
     lockall
-    applymovement(4, moves(jump_in_place_down))
+    applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)    
     msgbox(format("You breathe new life into these old bones, young one!\pFor the tea, I'll need...hmm...let's see...\p1 ENERGY POWDER...\p...1 SHOAL SALT...\p...and...\p...1 REVIVAL HERB! You should be able to find some REVIVAL HERBs in our back garden, but you'll have to find the rest yourself."))   
     release
@@ -84,7 +84,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
 script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     lockall
     //Text for give reward
-    applymovement(4, moves(jump_in_place_down))
+    applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)     
     msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service. I must repay you..."))
     release

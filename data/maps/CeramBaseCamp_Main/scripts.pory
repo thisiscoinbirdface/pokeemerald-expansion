@@ -10,18 +10,7 @@ raw `
 `
 
 
-mapscripts CeramBaseCamp_Main_MapScripts{
-    MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TEMP_0, 0: CeramBaseCamp_MapScript_OnEnter
-    ]
-}
-
-script CeramBaseCamp_MapScript_OnEnter {
-    lockall
-    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}   
-    removeobject(13)
-    releaseall
-}
+mapscripts CeramBaseCamp_Main_MapScripts{}
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag
@@ -169,6 +158,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     removeobject(LOCALID_SHOPKEEPER2F)
 
     setflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
+    clearflag(FLAG_HIDE_BASECAMP_SHOPKEEPER)
 
     fadescreen(FADE_FROM_BLACK)    
     releaseall
