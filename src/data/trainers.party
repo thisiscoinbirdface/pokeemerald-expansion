@@ -208,8 +208,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
 Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Class: Team Aqua
+Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
@@ -298,7 +298,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ROUTE4_GRUNTS ===
 Name: MEL & PAUL
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -316,8 +316,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
 Name: GABRIELLE
-Class: Swimmer M
-Pic: Swimmer M
+Class: Team Aqua
+Pic: Somber Grunt F
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -335,7 +335,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Somber Grunt F
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -348,7 +348,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CERAMBASECAMP_GRUNT2 ===
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -365,7 +365,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Somber Grunt F
 Gender: Male
 Music: Aqua
 Double Battle: No
