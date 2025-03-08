@@ -141,7 +141,7 @@ script Route4_NPC_Couple2{
 script Route4_NPC_A{
     lockall
     faceplayer
-    msgbox(format("Wow, you beat INGER? That's impressive. But did you know that there are 7 more Gym Leaders in Cormoria?\pMaybe you'll get to face them all someday!"))
+    msgbox(format("There's a small tree up ahead blocking the path. A {PKMN} with CUT might be able to cut it down...but the city management needs to think about us civilians. We're not all trainers!"))
     releaseall
 }
 
@@ -168,8 +168,6 @@ script Route4_NPC_D{
     msgbox(format("There are some thugs blocking the path to Mt. Ceram Base Camp! They remind me of my younger days...I used to be in an evil team in the Hoenn region."))
     releaseall
 }
-
-
 
 
 

@@ -134,7 +134,12 @@
 #define BERRY_TREE_ROUTE_123_SITRUS   88
 #define BERRY_TREE_ROUTE_123_RAWST    89
 
-// Remainder are unused
+// Remainder are unused (I AM GOING TO USE)
+#define BERRY_TREE_FENNILAHL_ORAN     90
+#define BERRY_TREE_ROUTE2_ORAN        91
+#define BERRY_TREE_ROUTE2_PECHA       92
+#define BERRY_TREE_ROUTE4_PECHA       93
+#define BERRY_TREE_ROUTE4_LUM         94
 
 #define BERRY_TREES_COUNT 128
 
