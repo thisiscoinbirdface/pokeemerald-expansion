@@ -1048,21 +1048,21 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
     },
-    [INGAME_TRADE_NYMBLE] =
+    [INGAME_TRADE_WIMPOD] =
     {
-        .nickname = _("MEOWOW"),
-        .species = SPECIES_NYMBLE,
+        .nickname = _("WIMPY"),
+        .species = SPECIES_WIMPOD,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x8B,
         .heldItem = ITEM_RETRO_MAIL,
-        .mailNum = 2,
+        .mailNum = 3,
         .otName = _("VIEN"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_WIMPOD
+        .requestedSpecies = SPECIES_NYMBLE
     }    
 };
 
@@ -1096,6 +1096,16 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,
+        EC_WORD_CUTE,
+        EC_WORD_WAY
+    }, {
+        EC_WORD_THANK_YOU,
+        EC_WORD_FOR,
+        EC_POKEMON(NYMBLE),
+        EC_POKEMON_NATIONAL(WIMPOD),
+        EC_WORD_LOVES,
+        EC_WORD_TO,
+        EC_WORD_EAT,
         EC_WORD_CUTE,
         EC_WORD_WAY
     }
