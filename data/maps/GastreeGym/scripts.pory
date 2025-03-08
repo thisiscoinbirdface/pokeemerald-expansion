@@ -3,8 +3,8 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Sefe fefe", "fefe fef efe err rr rrr")
-    msgbox(format("goo"))
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Hey hey, who're you?", "I guess you are someone after all.")
+    msgbox(format("To reach Leader INGER, you'll have to find the secret walls!"))
     release
     end
 
@@ -12,8 +12,8 @@ script GastreeGym_TrainerBattle_Skip {
 
 script GastreeGym_TrainerBattle_Jaco {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Sefe fefe", "fefe fef efe err rr rrr")
-    msgbox(format("goo"))
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    msgbox(format("You're not half bad after all."))
     release
     end
 

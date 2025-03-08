@@ -1002,7 +1002,8 @@ CeramBaseCamp_Main_NPC4_Text_1:
 
 CeramBaseCamp_Main_NPC5_Text_0:
 # 338 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "Thank you! My sister will be so happy.$"
+	.string "My sister will be so happy. She's always\n"
+	.string "wanted her own {PKMN}.$"
 
 CeramBaseCamp_Main_NPC5_Text_1:
 # 346 "data//maps/CeramBaseCamp_Main/scripts.pory"
