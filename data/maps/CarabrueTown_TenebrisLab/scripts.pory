@@ -71,6 +71,12 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     msgbox(format("Argh! It's all a mess!"))
     release
 
+
+    //Progress quest
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1)
+    subquestmenu(QUEST_MENU_SET_ACTIVE, QUEST_LAB_FIRST_DAY, SUB_QUEST_2)    
+    
+    //Set var and end
     setvar(VAR_LAB_STATE, 1)
     releaseall
 

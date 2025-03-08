@@ -252,7 +252,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
 
 	sub_quest(
@@ -262,7 +262,7 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SideQuestMap2,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
 
 	sub_quest(
@@ -272,283 +272,41 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SideQuestMap3,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      3,
-	      gText_SubQuest1_Name4,
-	      gText_SubQuest1_Desc4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      4,
-	      gText_SubQuest1_Name5,
-	      gText_SubQuest1_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      5,
-	      gText_SubQuest1_Name6,
-	      gText_SubQuest1_Desc6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      6,
-	      gText_SubQuest1_Name7,
-	      gText_SubQuest1_Desc7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      7,
-	      gText_SubQuest1_Name8,
-	      gText_SubQuest1_Desc8,
-	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      8,
-	      gText_SubQuest1_Name9,
-	      gText_SubQuest1_Desc9,
-	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      9,
-	      gText_SubQuest1_Name10,
-	      gText_SubQuest1_Desc10,
-	      gText_SideQuestMap10,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
 };
 
 static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
 {
 	sub_quest(
-	      10,
+	      3,
 	      gText_SubQuest2_Name1,
 	      gText_SubQuest2_Desc1,
 	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
 
 	sub_quest(
-	      11,
+	      4,
 	      gText_SubQuest2_Name2,
 	      gText_SubQuest2_Desc2,
 	      gText_SideQuestMap2,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
 
 	sub_quest(
-	      12,
+	      5,
 	      gText_SubQuest2_Name3,
 	      gText_SubQuest2_Desc3,
 	      gText_SideQuestMap3,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sText_Found
+	      sText_Empty
 	),
-
-	sub_quest(
-	      13,
-	      gText_SubQuest2_Name4,
-	      gText_SubQuest2_Desc4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      14,
-	      gText_SubQuest2_Name5,
-	      gText_SubQuest2_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      15,
-	      gText_SubQuest2_Name6,
-	      gText_SubQuest2_Desc6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      16,
-	      gText_SubQuest2_Name7,
-	      gText_SubQuest2_Desc7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      17,
-	      gText_SubQuest2_Name8,
-	      gText_SubQuest2_Desc8,
-	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      18,
-	      gText_SubQuest2_Name9,
-	      gText_SubQuest2_Desc9,
-	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      19,
-	      gText_SubQuest2_Name10,
-	      gText_SubQuest2_Desc10,
-	      gText_SideQuestMap10,
-	      SPECIES_HO_OH,
-	      PKMN,
-	      sText_Caught
-
-	),
-
-	sub_quest(
-	      20,
-	      gText_SubQuest2_Name11,
-	      gText_SubQuest2_Desc11,
-	      gText_SideQuestMap11,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      21,
-	      gText_SubQuest2_Name12,
-	      gText_SubQuest2_Desc12,
-	      gText_SideQuestMap12,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      22,
-	      gText_SubQuest2_Name13,
-	      gText_SubQuest2_Desc13,
-	      gText_SideQuestMap13,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      23,
-	      gText_SubQuest2_Name14,
-	      gText_SubQuest2_Desc14,
-	      gText_SideQuestMap14,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      24,
-	      gText_SubQuest2_Name15,
-	      gText_SubQuest2_Desc15,
-	      gText_SideQuestMap15,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      25,
-	      gText_SubQuest2_Name16,
-	      gText_SubQuest2_Desc16,
-	      gText_SideQuestMap16,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      26,
-	      gText_SubQuest2_Name17,
-	      gText_SubQuest2_Desc17,
-	      gText_SideQuestMap17,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      27,
-	      gText_SubQuest2_Name18,
-	      gText_SubQuest2_Desc18,
-	      gText_SideQuestMap18,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      28,
-	      gText_SubQuest2_Name19,
-	      gText_SubQuest2_Desc19,
-	      gText_SideQuestMap19,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      29,
-	      gText_SubQuest2_Name20,
-	      gText_SubQuest2_Desc20,
-	      gText_SideQuestMap20,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
 };
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
@@ -568,8 +326,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      NULL,
-	      0
+	      sSubQuests1,
+	      QUEST_1_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_2,
@@ -578,8 +336,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestMap2,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sSubQuests1,
-	      QUEST_1_SUB_COUNT
+	      sSubQuests2,
+	      QUEST_2_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_3,
@@ -588,8 +346,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestMap3,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
-	      sSubQuests2,
-	      QUEST_2_SUB_COUNT
+	      NULL,
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_4,
@@ -606,7 +364,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_5,
 	      gText_SideQuestDoneDesc_5,
 	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_SKITTY,
 	      OBJECT,
 	      NULL,
 	      0
@@ -2016,10 +1774,11 @@ void GenerateQuestLocation(s32 questId)
 	StringExpandPlaceholders(gStringVar4, sText_ShowLocation);
 }
 void PrintQuestLocation(s32 questId)
-{
+{	
 	FillWindowPixelBuffer(1, 0);
-	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar4, 2, 3, 2, 0, 0,
-	                                      4);
+	//I've removed this line to remove the location text
+	// QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar4, 2, 3, 2, 0, 0,
+	//                                       4);
 }
 void GenerateQuestFlavorText(s32 questId)
 {
@@ -2063,8 +1822,8 @@ void UpdateQuestFlavorText(s32 questId)
 }
 void PrintQuestFlavorText(s32 questId)
 {
-	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, 40, 19, 5, 0, 0,
-	                                      4);
+	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, 5, 5, 5, 0, 0,
+	                                      4);	//I CHANGED xloc from 40 to 5 (3rd arg) and y-loc from 19 to 5 (5th arg)
 }
 
 bool8 IsSubquestCompletedState(s32 questId)
@@ -2171,44 +1930,46 @@ void DetermineSpriteType(s32 questId)
 }
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 {
-	u8 *ptr = &sItemMenuIconSpriteIds[10];
-	u8 spriteId = 0xFF;
+	//I CHANGED COMMENTED ALL THIS OUT TO REMOVE THE SPRITE
+	// u8 *ptr = &sItemMenuIconSpriteIds[10];
+	// u8 spriteId = 0xFF;
 
-	if (ptr[idx] == 0xFF)
-	{
-		FreeSpriteTilesByTag(102 + idx);
-		FreeSpritePaletteByTag(102 + idx);
+	// if (ptr[idx] == 0xFF)
+	// {
+	// 	FreeSpriteTilesByTag(102 + idx);
+	// 	FreeSpritePaletteByTag(102 + idx);
+		
 
-		switch (spriteType)
-		{
-			case OBJECT:
-				spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20,
-				                                      132, 0);
-				break;
-			case ITEM:
-				spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
-				break;
-			case PKMN:
-				LoadMonIconPalettes();
-				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
-				break;
-			default:
-				break;
-		}
+	// 	switch (spriteType)
+	// 	{
+	// 		case OBJECT:
+	// 			spriteId = CreateObjectGraphicsSprite(itemId, SpriteCallbackDummy, 20,
+	// 			                                      132, 0);
+	// 			break;
+	// 		case ITEM:
+	// 			spriteId = AddItemIconSprite(102 + idx, 102 + idx, itemId);
+	// 			break;
+	// 		case PKMN:
+	// 			LoadMonIconPalettes();
+	// 			spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
+	// 			break;
+	// 		default:
+	// 			break;
+	// 	}
 
-		gSprites[0].oam.objMode = ST_OAM_OBJ_BLEND;
+	// 	gSprites[0].oam.objMode = ST_OAM_OBJ_BLEND;
 
-		if (spriteId != MAX_SPRITES)
-		{
-			ptr[idx] = spriteId;
+	// 	if (spriteId != MAX_SPRITES)
+	// 	{
+	// 		ptr[idx] = spriteId;
 
-			if (spriteType == ITEM)
-			{
-				gSprites[spriteId].x2 = 24;
-				gSprites[spriteId].y2 = 140;
-			}
-		}
-	}
+	// 		if (spriteType == ITEM)
+	// 		{
+	// 			gSprites[spriteId].x2 = 24;
+	// 			gSprites[spriteId].y2 = 140;
+	// 		}
+	// 	}
+	// }
 }
 
 void ResetSpriteState(void)

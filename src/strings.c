@@ -1310,11 +1310,11 @@ const u8 gText_QuestActive[] =_("active");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Lab Assistant");
-const u8 gText_SideQuestName_2[] = _("Find A Dreamstone");
-const u8 gText_SideQuestName_3[] = _("Side Quest 3");
-const u8 gText_SideQuestName_4[] = _("Side Quest 4");
-const u8 gText_SideQuestName_5[] = _("Side Quest 5");
-const u8 gText_SideQuestName_6[] = _("Side Quest 6");
+const u8 gText_SideQuestName_2[] = _("Mt. Ceram Dreamstone");
+const u8 gText_SideQuestName_3[] = _("Food Poisoning");
+const u8 gText_SideQuestName_4[] = _("A Hiker's Treasure");
+const u8 gText_SideQuestName_5[] = _("A Lost Skitty");
+const u8 gText_SideQuestName_6[] = _("Modern Matcha");
 const u8 gText_SideQuestName_7[] = _("Side Quest 7");
 const u8 gText_SideQuestName_8[] = _("Side Quest 8");
 const u8 gText_SideQuestName_9[] = _("Side Quest 9");
@@ -1343,10 +1343,10 @@ const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
 const u8 gText_SideQuestDesc_2[] = _("I need to find a dreamstone \nso that the detectives can \nexamine it for clues.");
-const u8 gText_SideQuestDesc_3[] = _("Description 3");
-const u8 gText_SideQuestDesc_4[] = _("Description 4");
-const u8 gText_SideQuestDesc_5[] = _("Description 5");
-const u8 gText_SideQuestDesc_6[] = _("Description 6");
+const u8 gText_SideQuestDesc_3[] = _("Azurill is sick from food\npoisoning and needs a\nPECHA BERRY.");
+const u8 gText_SideQuestDesc_4[] = _("A hiker has lost a\nSTRANGE STONE in Route 2.");
+const u8 gText_SideQuestDesc_5[] = _("Someone's SKITTY has gone missing!");
+const u8 gText_SideQuestDesc_6[] = _("The old lady who runs the\nGastree tea shop wants to\ncreate a modern tea blend.");
 const u8 gText_SideQuestDesc_7[] = _("Description 7");
 const u8 gText_SideQuestDesc_8[] = _("Description 8");
 const u8 gText_SideQuestDesc_9[] = _("Description 9");
@@ -1375,10 +1375,10 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can. \nIt's time to head out.");
 const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
-const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
-const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
-const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");
-const u8 gText_SideQuestDoneDesc_6[] = _("Completed Quest 6");
+const u8 gText_SideQuestDoneDesc_3[] = _("Azurill has recovered and is happy again!");
+const u8 gText_SideQuestDoneDesc_4[] = _("I got Breech's stone...\nand a new companion!");
+const u8 gText_SideQuestDoneDesc_5[] = _("SKITTY is reunited with her trainer!");
+const u8 gText_SideQuestDoneDesc_6[] = _("The modern blend is done!\nHow does it taste though?");
 const u8 gText_SideQuestDoneDesc_7[] = _("Completed Quest 7");
 const u8 gText_SideQuestDoneDesc_8[] = _("Completed Quest 8");
 const u8 gText_SideQuestDoneDesc_9[] = _("Completed Quest 9");
@@ -1407,10 +1407,10 @@ const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 //map
 const u8 gText_SideQuestMap1[] = _("Tenebris Laboratory");
 const u8 gText_SideQuestMap2[] = _("Mt. Ceram");
-const u8 gText_SideQuestMap3[] = _("Map 3");
-const u8 gText_SideQuestMap4[] = _("Map 4");
-const u8 gText_SideQuestMap5[] = _("Map 5");
-const u8 gText_SideQuestMap6[] = _("Map 6");
+const u8 gText_SideQuestMap3[] = _("Route 1");
+const u8 gText_SideQuestMap4[] = _("Fennilahl Town");
+const u8 gText_SideQuestMap5[] = _("Gastree City");
+const u8 gText_SideQuestMap6[] = _("Gastree City");
 const u8 gText_SideQuestMap7[] = _("Map 7");
 const u8 gText_SideQuestMap8[] = _("Map 8");
 const u8 gText_SideQuestMap9[] = _("Map 9");
@@ -1436,67 +1436,29 @@ const u8 gText_SideQuestMap28[] = _("Map 28");
 const u8 gText_SideQuestMap29[] = _("Map 29");
 const u8 gText_SideQuestMap30[] = _("Map 30");
 
+
+
+
+
+
+
 //subquests
-const u8 gText_SubQuest1_Name1[] = _("My First Day");
-const u8 gText_SubQuest1_Name2[] = _("Lab Supplies");
-const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
-const u8 gText_SubQuest1_Name4[] = _("Part 4");
-const u8 gText_SubQuest1_Name5[] = _("Part 5");
-const u8 gText_SubQuest1_Name6[] = _("Part 6");
-const u8 gText_SubQuest1_Name7[] = _("Part 7");
-const u8 gText_SubQuest1_Name8[] = _("Part 8");
-const u8 gText_SubQuest1_Name9[] = _("Part 9");
-const u8 gText_SubQuest1_Name10[] = _("Part 10");
 
-const u8 gText_SubQuest2_Name1[] = _("Part 1");
-const u8 gText_SubQuest2_Name2[] = _("Part 2");
-const u8 gText_SubQuest2_Name3[] = _("Part 3");
-const u8 gText_SubQuest2_Name4[] = _("Part 4");
-const u8 gText_SubQuest2_Name5[] = _("Part 5");
-const u8 gText_SubQuest2_Name6[] = _("Part 6");
-const u8 gText_SubQuest2_Name7[] = _("Part 7");
-const u8 gText_SubQuest2_Name8[] = _("Part 8");
-const u8 gText_SubQuest2_Name9[] = _("Part 9");
-const u8 gText_SubQuest2_Name10[] = _("Part 10");
-const u8 gText_SubQuest2_Name11[] = _("Part 11");
-const u8 gText_SubQuest2_Name12[] = _("Part 12");
-const u8 gText_SubQuest2_Name13[] = _("Part 13");
-const u8 gText_SubQuest2_Name14[] = _("Part 14");
-const u8 gText_SubQuest2_Name15[] = _("Part 15");
-const u8 gText_SubQuest2_Name16[] = _("Part 16");
-const u8 gText_SubQuest2_Name17[] = _("Part 17");
-const u8 gText_SubQuest2_Name18[] = _("Part 18");
-const u8 gText_SubQuest2_Name19[] = _("Part 19");
-const u8 gText_SubQuest2_Name20[] = _("Part 20");
+    //LAB ASSISTANT (FIRST QUEST)
+    const u8 gText_SubQuest1_Name1[] = _("My First Day");
+    const u8 gText_SubQuest1_Name2[] = _("Lab Supplies");
+    const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
 
-const u8 gText_SubQuest1_Desc1[] = _("It's my first day! \nI need to go to the \nTenebris Lab.");
-const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
-const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken \nthe supplies! I need to tell \nAssistant Professor Rue.");
-const u8 gText_SubQuest1_Desc4[] = _("Description Sub 4");
-const u8 gText_SubQuest1_Desc5[] = _("Description Sub 5");
-const u8 gText_SubQuest1_Desc6[] = _("Description Sub 6");
-const u8 gText_SubQuest1_Desc7[] = _("Description Sub 7");
-const u8 gText_SubQuest1_Desc8[] = _("Description Sub 8");
-const u8 gText_SubQuest1_Desc9[] = _("Description Sub 9");
-const u8 gText_SubQuest1_Desc10[] = _("Description Sub 10");
+    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! \nI need to go to the \nTenebris Lab.\ntext!y");
+    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
+    const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken \nthe supplies! I need to tell \nAssistant Professor Rue.");
 
-const u8 gText_SubQuest2_Desc1[] = _("Description Sub 1");
-const u8 gText_SubQuest2_Desc2[] = _("Description Sub 2");
-const u8 gText_SubQuest2_Desc3[] = _("Description Sub 3");
-const u8 gText_SubQuest2_Desc4[] = _("Description Sub 4");
-const u8 gText_SubQuest2_Desc5[] = _("Description Sub 5");
-const u8 gText_SubQuest2_Desc6[] = _("Description Sub 6");
-const u8 gText_SubQuest2_Desc7[] = _("Description Sub 7");
-const u8 gText_SubQuest2_Desc8[] = _("Description Sub 8");
-const u8 gText_SubQuest2_Desc9[] = _("Description Sub 9");
-const u8 gText_SubQuest2_Desc10[] = _("Description Sub 10");
-const u8 gText_SubQuest2_Desc11[] = _("Description Sub 11");
-const u8 gText_SubQuest2_Desc12[] = _("Description Sub 12");
-const u8 gText_SubQuest2_Desc13[] = _("Description Sub 13");
-const u8 gText_SubQuest2_Desc14[] = _("Description Sub 14");
-const u8 gText_SubQuest2_Desc15[] = _("Description Sub 15");
-const u8 gText_SubQuest2_Desc16[] = _("Description Sub 16");
-const u8 gText_SubQuest2_Desc17[] = _("Description Sub 17");
-const u8 gText_SubQuest2_Desc18[] = _("Description Sub 18");
-const u8 gText_SubQuest2_Desc19[] = _("Description Sub 19");
-const u8 gText_SubQuest2_Desc20[] = _("Description Sub 20");
+    //MT CERAM DREAMSTONE (SECOND QUEST)
+    const u8 gText_SubQuest2_Name1[] = _("Part 1");
+    const u8 gText_SubQuest2_Name2[] = _("Part 2");
+    const u8 gText_SubQuest2_Name3[] = _("Part 3");
+
+    const u8 gText_SubQuest2_Desc1[] = _("Description Sub 1");
+    const u8 gText_SubQuest2_Desc2[] = _("Description Sub 2");
+    const u8 gText_SubQuest2_Desc3[] = _("Description Sub 3");
+
