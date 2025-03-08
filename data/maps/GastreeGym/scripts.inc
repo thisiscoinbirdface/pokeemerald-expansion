@@ -14,9 +14,9 @@ GastreeGym_TrainerBattle_Skip::
 
 GastreeGym_TrainerBattle_Jaco::
 # 15 "data//maps/GastreeGym/scripts.pory"
-	trainerbattle_single TRAINER_GASTREEGYM_JACO, GastreeGym_TrainerBattle_Skip_Text_0, GastreeGym_TrainerBattle_Skip_Text_1
+	trainerbattle_single TRAINER_GASTREEGYM_JACO, GastreeGym_TrainerBattle_Jaco_Text_0, GastreeGym_TrainerBattle_Jaco_Text_1
 # 16 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_TrainerBattle_Skip_Text_2
+	msgbox GastreeGym_TrainerBattle_Jaco_Text_2
 # 17 "data//maps/GastreeGym/scripts.pory"
 	release
 	end
@@ -68,15 +68,28 @@ GastreeGym_EventScript_Victory::
 
 GastreeGym_TrainerBattle_Skip_Text_0:
 # 6 "data//maps/GastreeGym/scripts.pory"
-	.string "Sefe fefe$"
+	.string "Hey hey, who're you?$"
 
 GastreeGym_TrainerBattle_Skip_Text_1:
 # 6 "data//maps/GastreeGym/scripts.pory"
-	.string "fefe fef efe err rr rrr$"
+	.string "I guess you are someone after all.$"
 
 GastreeGym_TrainerBattle_Skip_Text_2:
 # 7 "data//maps/GastreeGym/scripts.pory"
-	.string "goo$"
+	.string "To reach Leader INGER, you'll have to\n"
+	.string "find the secret walls!$"
+
+GastreeGym_TrainerBattle_Jaco_Text_0:
+# 15 "data//maps/GastreeGym/scripts.pory"
+	.string "Hah! So you found the fake wall.$"
+
+GastreeGym_TrainerBattle_Jaco_Text_1:
+# 15 "data//maps/GastreeGym/scripts.pory"
+	.string "Ouch, that hurt!$"
+
+GastreeGym_TrainerBattle_Jaco_Text_2:
+# 16 "data//maps/GastreeGym/scripts.pory"
+	.string "You're not half bad after all.$"
 
 GastreeGym_LeaderBattle_Text_0:
 # 27 "data//maps/GastreeGym/scripts.pory"

@@ -1101,11 +1101,10 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
-        EC_POKEMON(NYMBLE),
-        EC_POKEMON_NATIONAL(WIMPOD),
-        EC_WORD_LOVES,
-        EC_WORD_TO,
-        EC_WORD_EAT,
+        EC_POKEMON_NATIONAL(NYMBLE),
+        EC_WORD_CRIES,
+        EC_WORD_IN,
+        EC_WORD_A,
         EC_WORD_CUTE,
         EC_WORD_WAY
     }

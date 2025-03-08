@@ -42,6 +42,30 @@ Route3_TrainerBattle_Chara::
 	end
 
 
+Route3_NPC1::
+# 50 "data//maps/Route3/scripts.pory"
+	lockall
+# 51 "data//maps/Route3/scripts.pory"
+	faceplayer
+# 52 "data//maps/Route3/scripts.pory"
+	msgbox Route3_NPC1_Text_0
+# 53 "data//maps/Route3/scripts.pory"
+	releaseall
+	return
+
+
+Route3_NPC2::
+# 57 "data//maps/Route3/scripts.pory"
+	lockall
+# 58 "data//maps/Route3/scripts.pory"
+	faceplayer
+# 59 "data//maps/Route3/scripts.pory"
+	msgbox Route3_NPC2_Text_0
+# 60 "data//maps/Route3/scripts.pory"
+	releaseall
+	return
+
+
 Route3_TrainerBattle_Kim_Text_0:
 # 5 "data//maps/Route3/scripts.pory"
 	.string "I'm much tougher than I look.\pI'm from the hills after all!$"
@@ -91,3 +115,13 @@ Route3_TrainerBattle_Chara_Text_1:
 Route3_TrainerBattle_Chara_Text_2:
 # 33 "data//maps/Route3/scripts.pory"
 	.string "My {PKMN} and I are all out of energy.$"
+
+Route3_NPC1_Text_0:
+# 52 "data//maps/Route3/scripts.pory"
+	.string "I love the high-altitude winds! I feel\n"
+	.string "one with the hills.$"
+
+Route3_NPC2_Text_0:
+# 59 "data//maps/Route3/scripts.pory"
+	.string "I was supposed to go to a marathon, but\n"
+	.string "I don't think this is where it starts.$"
