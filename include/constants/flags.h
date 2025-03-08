@@ -60,7 +60,7 @@
 #define FLAG_GASTREE_KOHLA_BATTLE    0x2D // rival battle outside gastree gym
 #define FLAG_ROUTE4_EVIL_BATTLE    0x2E // evil team blocks you at the end of route 4
 #define FLAG_CERAMBASECAMP_EVIL_BATTLE    0x2F // Evil team at the market/base camp prep zone
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
+#define FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER    0x30 // got the appointment letter for a meeting with the gym leader
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag

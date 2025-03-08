@@ -9,11 +9,11 @@
 # 6 "data//maps/CeramBaseCamp_Main/scripts.pory"
     .set LOCALID_GRUNT4, 4
 # 7 "data//maps/CeramBaseCamp_Main/scripts.pory"
-    .set LOCALID_BOSS, 10
+    .set LOCALID_BOSS, 9
 # 8 "data//maps/CeramBaseCamp_Main/scripts.pory"
     .set LOCALID_LEADER, 5
 # 9 "data//maps/CeramBaseCamp_Main/scripts.pory"
-    .set LOCALID_SHOPKEEPER2F, 9
+    .set LOCALID_SHOPKEEPER2F, 8
 
 CeramBaseCamp_Main_MapScripts::
 	.byte 0
@@ -314,25 +314,35 @@ CeramBaseCamp_Main_Pokemart_EventScript_Clerk::
 # 212 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	faceplayer
 # 213 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	message gText_HowMayIServeYou
+	msgbox CeramBaseCamp_Main_Pokemart_EventScript_Clerk_Text_0
 # 214 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 215 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	pokemart CeramBaseCamp_Main_Pokemart_Inventory
+	waitmessage
 # 216 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart CeramBaseCamp_Main_Pokemart_Inventory
 # 217 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 218 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 222 "data//maps/CeramBaseCamp_Main/scripts.pory"
-CeramBaseCamp_Main_Pokemart_Inventory:
 # 223 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.2byte ITEM_POTION
+CeramBaseCamp_Main_Pokemart_Inventory:
 # 224 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.2byte ITEM_POKE_BALL
+# 225 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_REPEL
+# 226 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_ESCAPE_ROPE
+# 227 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_FRESH_WATER
+# 228 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_SODA_POP
+# 229 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.2byte ITEM_LAVA_COOKIE
 	.2byte ITEM_NONE
 
 # 21 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -569,7 +579,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_6:
 # 81 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "GABRIELLE: Boss! Boss! This is the kid\n"
 	.string "that beat me in Route 4. I was trying to\l"
-	.string "take the dreamstone from that Celfairy\l"
+	.string "take the dreamstone from that Clefairy\l"
 	.string "hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_7:
@@ -722,3 +732,8 @@ CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_2:
 # 203 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "You're too late - the boss is already\n"
 	.string "with the shopkeeper.$"
+
+CeramBaseCamp_Main_Pokemart_EventScript_Clerk_Text_0:
+# 213 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	.string "Hey {PLAYER}! Here you can get\n"
+	.string "mountain-climbing supplies!$"

@@ -4,9 +4,9 @@ raw `
     .set LOCALID_GRUNT2, 2
     .set LOCALID_GRUNT3, 3
     .set LOCALID_GRUNT4, 4
-    .set LOCALID_BOSS, 10
+    .set LOCALID_BOSS, 9
     .set LOCALID_LEADER, 5
-    .set LOCALID_SHOPKEEPER2F, 9
+    .set LOCALID_SHOPKEEPER2F, 8
 `
 
 
@@ -78,7 +78,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dreamstone from that Celfairy hiker."))
+    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)

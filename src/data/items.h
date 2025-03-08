@@ -12584,14 +12584,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_OldSeaMap,
     },
 
-    [ITEM_LETTER] =
+    [ITEM_APPOINTMENT_LETTER] =
     {
-        .name = _("Letter"),
+        .name = _("Appt. Letter"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A letter to Steven\n"
-            "from the President\n"
-            "of the Devon Corp."),
+            "Appointment letter\n"
+            "for the Ceram Base\n"
+            "Camp Gym."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

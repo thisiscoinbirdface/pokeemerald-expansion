@@ -1,4 +1,91 @@
+raw `
+    .set LOCALID_GUARD, 2
+    .set LOCALID_LEADER, 5
+`
+
 mapscripts CeramBaseCampGym_MapScripts{}
+
+script CeramBaseCampGym_Red{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! The Gym Leader ARIAN, who also manages the base camp, specialises in FIRE type {PKMN}. Avoid using BUG and GRASS types!"))
+    releaseall
+}
+
+script CeramBaseCampGym_Guard{
+    lockall
+    faceplayer
+    msgbox(format("ARIAN's got a busy schedule. He sets up all his appointments in advance."))
+    releaseall
+}
+
+script CeramBaseCampGym_GuardTrigger{
+    if (flag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)) {end}
+
+    lockall
+    applymovement(LOCALID_GUARD, moves(face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    msgbox(format("Hold on! You can't have a meeting with the manager without an appointment. Please come back once you have a signed APPOINTMENT LETTER."))
+    release
+    applymovement(LOCALID_GUARD, moves(face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+
+    releaseall
+}
+
+script CeramBaseCampGym_EventScript_NPC_LetterPrint{
+    lockall
+    faceplayer
+    msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials. You have none? Well then a battle should prove that you really are who you say you are!"))
+    release
+
+    //battle
+
+
+    //print letter
+    msgbox(format("Very good! Well then, let me do my job. Here you go!"))
+    //Get item
+    giveitem(ITEM_APPOINTMENT_LETTER)
+    //But you need a signature
+    msgbox(format("But this letter won't be enough without the approval of the assistant manager. He sits in the basement. Get this letter signed by him."))
+    releaseall
+}
+
+
+
+
+script CeramBaseCampGym_EventScript_NPC_Signature{
+        lockall
+        faceplayer    
+    if (flag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)){
+        msgbox(format("I'm busy now. Get out."))
+    } else {
+        if (checkitem(ITEM_APPOINTMENT_LETTER)){
+
+            msgbox(format("So you got an APPOINTMENT LETTER and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?\pWill you slip the money under the table?"), MSGBOX_YESNO)
+            if(var(VAR_RESULT) == 0){
+                //battle
+            } else {
+                //remove money
+                removemoney(500)
+                msgbox(format("{PLAYER} bribed the assistant manager."))
+                release
+            }
+
+            msgbox(format("Alright, I'll sign the letter."))
+            msgbox(format("{PLAYER} got the APPOINTMENT LETTER signed by the assistant manager."))
+            release
+            setflag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)
+            msgbox(format("I'm busy now. Get out."))        
+        } else {
+            msgbox(format("You're a trainer and want an APPOINTMENT LETTER? You'll have to go upstairs, get a letter printed, and then I can sign and approve it.")) 
+        }
+    }
+
+    releaseall
+}
 
 
 
