@@ -397,7 +397,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies::
 # 264 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_LAB_CALLTOACTION
 # 267 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	quest_menu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY
 # 269 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	questmenu QUEST_MENU_SET_ACTIVE, QUEST_FIRST_DREAMSTONE
 # 270 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

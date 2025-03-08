@@ -264,7 +264,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         setflag(FLAG_LAB_CALLTOACTION)
         //Set quest active
             //Complete previous quest
-            quest_menu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY)
+            questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY)
             //Start next quest
             questmenu(QUEST_MENU_SET_ACTIVE, QUEST_FIRST_DREAMSTONE)
             subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_1)
