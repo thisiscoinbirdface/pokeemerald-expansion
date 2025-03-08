@@ -1,0 +1,145 @@
+mapscripts CeramBaseCamp_MapScripts{}
+
+//NPC SCRIPTS
+
+            //Red blocking the gym
+            script CeramBaseCamp_RedBlockGym{
+                lockall
+                faceplayer
+                msgbox(format("The Gym Leader's gone to the Supply Depot to sort out some commotion there."))
+                release
+                applymovement(8, moves(face_down))
+                releaseall
+            }
+
+//NPC1 - generic
+script CeramBaseCamp_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Since the base camp is so small, the Pokemon League clubbed the gym and camp management office into one."))
+    releaseall
+}
+
+//NPC2 - generic
+script CeramBaseCamp_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("This camp was initially established to dig a tunnel through Mt. Ceram to Goldensun City. Old equipment from back then is left here. I remember one of the Drilburs made their home inside one of these machines and refused to leave! Haha! That was many years ago. It must have evolved now."))
+    releaseall
+}
+
+//NPC3 - generic
+script CeramBaseCamp_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("We get many hikers and collectors pass through the base camp, because they want to climb Mt. Ceram."))
+    releaseall
+}
+
+//NPC4 - small quest
+script CeramBaseCamp_NPC4{
+    lockall
+    faceplayer 
+
+    if (flag(FLAG_CERAMBASECAMP_CYNDAQUIL_TM)){
+        msgbox(format("CYNDAQUIL and I do everything together!"))
+        applymovement(4, moves(face_up))
+        waitmovement(0)
+        releaseall
+        end
+    }
+
+    //Cyndaquil is training hard
+    msgbox(format("C'mon CYNDAQUIL!\pCYNDAQUI: quiiillll!!!\pSigh, it's just not good enough..."))
+    //Ask player for sunny day TM
+    applymovement(4, moves(face_right))
+    msgbox(format("We battled ARIAN and CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, you wouldn't happen to have the TM, would you? If you can teach my CYNDAQUIL the move SUNNY DAY, that'd be really helpful."))
+
+    //Check tM
+    checkitem(ITEM_TM_SUNNY_DAY)
+    if (var(VAR_RESULT) == 1){  //Yes TM
+        msgbox(format("Teach CYNDAQUIL the move SUNNY DAY?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){ //refuse to team
+            msgbox(format("Using TM on CYNDAQUIL...\p...poof!\pCYNDAQUIL has learned SUNNY DAY!"))
+            release
+            applymovement(4, moves(emote_exclamation_mark))    
+            waitmovement(0)
+            msgbox(format("Thank you! Isn't this great, CYNDAQUIL?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
+            giveitem(ITEM_CHARCOAL)
+        } else { //refuse to give TM
+            msgbox(format("Oh well. See you."))
+        }
+    } else {    //No TM
+        msgbox(format("Oh, but it looks like you don't have the TM. Oh well, back to training I guess!"))
+    }
+
+    applymovement(4, moves(face_up))
+    waitmovement(0)
+    releaseall
+}
+
+//NPC5 - giveitem
+script CeramBaseCamp_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("Mt. Ceram's geology is unique. For some reason, many rare rocks can be found up there. Here, have one."))
+    
+    if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
+
+    } else {
+        giveitem(ITEM_DAWN_STONE)
+        setflag(FLAG_CERAMBASECAMP_NPCITEM)
+    }
+    releaseall
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+///SIGNS
+
+script CeramBaseCamp_Sign1{
+
+    msgbox(format("CARABRUE TOWN\nAn idyllic hill station."), MSGBOX_SIGN)
+    end
+}
+
+script CeramBaseCamp_Sign1{
+
+    msgbox(format("CARABRUE TOWN\nAn idyllic hill station."), MSGBOX_SIGN)
+    end
+}
+
+script CeramBaseCamp_Excalidrill{
+
+    msgbox(format("An old mechanical drill...peek inside?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        //excalidrill encounter
+    	playmoncry(SPECIES_EXCALIDRILL, CRY_MODE_ENCOUNTER)
+	    delay(40)
+	    waitmoncry
+        msgbox(format("A wild {PKMN} attacks!"))
+        setwildbattle(SPECIES_EXCALIDRILL, 10)     
+        dowildbattle   
+        //set the flag
+        specialvar(VAR_RESULT, GetBattleOutcome)
+    	if (var(VAR_RESULT) == B_OUTCOME_WON){
+            setflag(FLAG_CERAMBASECAMP_EXCALIDRILL)
+        }
+    	if (var(VAR_RESULT) == B_OUTCOME_RAN){
+            msgbox(format("The Excalidrill retreats back into its home. Better not disturb it again!"))
+        }
+    }
+
+    end
+}

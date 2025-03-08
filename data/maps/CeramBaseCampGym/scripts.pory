@@ -142,7 +142,7 @@ script CeramBaseCampGym_LeaderBattle {
 
 script CeramBaseCampGym_EventScript_Victory{
     //Receive the badge
-    msgbox(format("{PLAYER} received the CINDER BADGE from LEADER."))
+    msgbox(format("{PLAYER} received the CINDER BADGE from ARIAN."))
     release
     setflag(FLAG_BADGE02_GET)
 
