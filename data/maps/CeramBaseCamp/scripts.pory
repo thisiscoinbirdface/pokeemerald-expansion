@@ -38,10 +38,10 @@ script CeramBaseCamp_NPC3{
 
 //NPC4 - small quest
 script CeramBaseCamp_NPC4{
-    lockall
-    faceplayer 
+    lockall 
 
     if (flag(FLAG_CERAMBASECAMP_CYNDAQUIL_TM)){
+        faceplayer
         msgbox(format("CYNDAQUIL and I do everything together!"))
         applymovement(4, moves(face_up))
         waitmovement(0)
@@ -52,7 +52,7 @@ script CeramBaseCamp_NPC4{
     //Cyndaquil is training hard
     msgbox(format("C'mon CYNDAQUIL!\pCYNDAQUI: quiiillll!!!\pSigh, it's just not good enough..."))
     //Ask player for sunny day TM
-    applymovement(4, moves(face_right))
+    faceplayer
     msgbox(format("We battled ARIAN and CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, you wouldn't happen to have the TM, would you? If you can teach my CYNDAQUIL the move SUNNY DAY, that'd be really helpful."))
 
     //Check tM
@@ -82,11 +82,12 @@ script CeramBaseCamp_NPC4{
 script CeramBaseCamp_NPC5{
     lockall
     faceplayer
-    msgbox(format("Mt. Ceram's geology is unique. For some reason, many rare rocks can be found up there. Here, have one."))
+    msgbox(format("Mt. Ceram's geology is unique. Many rare rocks can be found up there."))
     
     if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
 
     } else {
+        msgbox(format("Here, have one."))
         giveitem(ITEM_DAWN_STONE)
         setflag(FLAG_CERAMBASECAMP_NPCITEM)
     }
@@ -124,6 +125,8 @@ script CeramBaseCamp_Excadrill{
     if (flag(FLAG_CERAMBASECAMP_EXCADRILL)){
 
         msgbox(format("An old mechanical drill."))
+        releaseall
+        end
 
     } else {
 
@@ -144,6 +147,9 @@ script CeramBaseCamp_Excadrill{
             if (var(VAR_RESULT) == B_OUTCOME_WON){
                 setflag(FLAG_CERAMBASECAMP_EXCADRILL)
             }
+            if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+                setflag(FLAG_CERAMBASECAMP_EXCADRILL)
+            }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
                 msgbox(format("The Excadrill retreats back into its home. Better not disturb it again!"))
             }
