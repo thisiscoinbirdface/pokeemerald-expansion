@@ -20,5 +20,11 @@ mart GastreeCity_Pokemart_Inventory {
     ITEM_REPEL
 }
 
+script GastreeCity_Pokemart_NPC{
+    lockall
+    faceplayer
+    msgbox(format("Don't forget to sell your extra items!"))
+    releaseall
+}
 
 

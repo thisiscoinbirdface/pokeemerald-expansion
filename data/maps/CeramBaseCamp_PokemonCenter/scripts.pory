@@ -14,3 +14,10 @@ script CeramBaseCamp_PokemonCenter_EventScript_Nurse{
 	releaseall
 }
 
+script CeramBaseCamp_PokemonCenter_NPC1{
+	lockall
+    faceplayer
+	msgbox(format("Apparently you can't meet ARIAN, the Gym Leader, without getting an appointment first."))
+	releaseall
+}
+

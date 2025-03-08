@@ -54,6 +54,9 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
 
     //Give quest (var becomes 1 for "quest ongoing")
     setvar(VAR_GASTREE_TEASHOP_QUEST, 1)
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_TEA)
+
+
     releaseall
 }
 
@@ -106,6 +109,8 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
 
     //Setvar = 2 and end quest
     setvar(VAR_GASTREE_TEASHOP_QUEST, 2)
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_TEA)
+
     releaseall
 }
 

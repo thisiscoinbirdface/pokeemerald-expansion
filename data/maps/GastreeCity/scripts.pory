@@ -34,6 +34,9 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
     //Set flag
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
     removeobject(LOCALID_KOHLA)
+    
+    //Quest progress
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_2)
 
     releaseall
 }
@@ -45,7 +48,7 @@ text GastreeCity_KohlaIntro2{
     format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("KOHLA: You may have won, but you're still just a lousy good-for-nothing! I heard rumours that some group called Team Somber is also after the dreamstone on Mt. Ceram. I can't be dilly-dallying about with you! Over and out, chum!")
+    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards MT CERAM BASE CAMP, which is where you should be headed too. Over and out, chum!")
 }
 
 
@@ -140,8 +143,15 @@ script GastreeCity_NPC9{
                 setflag(FLAG_GASTREE_NPC_SKITTY)
                 clearflag(FLAG_HIDE_GASTREE_SKITTY)
                 addobject(12)
+
+                //Complete quest
+                //Set quest active
+                questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_SKITTY)
+
             } else {
                 msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
+                //Set quest active
+                questmenu(QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_SKITTY)                
             }
 
         }

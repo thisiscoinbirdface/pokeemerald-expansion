@@ -52,8 +52,8 @@
 #define FLAG_CARABRUE_POLICE    0x25 // If the police are there or not in Carabrue Town
 #define FLAG_REAL_PACKAGE_GET    0x26 // Pick up the real package from the lab
 #define FLAG_LAB_CALLTOACTION    0x27 // After rival battle and true quest start
-#define FLAG_FENNILAHL_HIKER_GEAR_GET    0x28 // Unused Flag
-#define FLAG_FENNILAHL_HIKER_BLOCK    0x29 // Unused Flag
+#define FLAG_FENNILAHL_HIKER_GEAR_GET    0x28 // after defeating the route 2 clefairy
+#define FLAG_FENNILAHL_HIKER_BLOCK    0x29 // after talking to breech and clearing the path to route 3
 #define FLAG_BATTLE_NO_RUNNING_CATCHING    0x2A // Flag for no running or catching in wild battles (special battles)
 #define FLAG_TENEBRIS_POLICE_PRESCENCE    0x2B // yes as long as the police SHOULDNT be there
 #define FLAG_ROUTE3_UNDERPASS_EVILTEAM    0x2C // check if the fight is won or not
