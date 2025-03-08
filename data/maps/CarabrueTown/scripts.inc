@@ -84,6 +84,18 @@ CarabrueTown_EventScript_NPC1_2:
 	goto CarabrueTown_EventScript_NPC1_1
 
 
+CarabrueTown_EventScript_NPC2::
+# 67 "data//maps/CarabrueTown/scripts.pory"
+	lockall
+# 68 "data//maps/CarabrueTown/scripts.pory"
+	faceplayer
+# 69 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_EventScript_NPC2_Text_0
+# 70 "data//maps/CarabrueTown/scripts.pory"
+	releaseall
+	return
+
+
 # 21 "data//maps/CarabrueTown/scripts.pory"
 CarabrueTown_EventScript_PoliceRoadBlock_Movement_0:
 # 21 "data//maps/CarabrueTown/scripts.pory"
@@ -151,3 +163,9 @@ CarabrueTown_EventScript_NPC1_Text_1:
 	.string "Professor's disappearance. They're\l"
 	.string "blocking access to Route 1 while they\l"
 	.string "investigate.$"
+
+CarabrueTown_EventScript_NPC2_Text_0:
+# 69 "data//maps/CarabrueTown/scripts.pory"
+	.string "I love how cosy CARABRUE TOWN is!\n"
+	.string "That's because it's nestled deep in the\l"
+	.string "hills.$"

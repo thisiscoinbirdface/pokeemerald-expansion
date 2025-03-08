@@ -64,8 +64,8 @@
 #define FLAG_CERAMBASECAMP_CYNDAQUIL_TM    0x31 // whether you taught the cynda or not.
 #define FLAG_CERAMBASECAMP_NPCITEM    0x32 // whether the NPC has given you the stone or not
 #define FLAG_CERAMBASECAMP_EXCADRILL    0x33 // Whether you've caught or defeated the excadril
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
+#define FLAG_CERAMBASECAMP_MAIN_BERRY    0x34 // the sitting man (first floor) gives you a berry
+#define FLAG_CERAMBASECAMP_NPC_TRADE    0x35 // the base camp trade NPC
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
