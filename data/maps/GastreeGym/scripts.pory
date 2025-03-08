@@ -24,7 +24,7 @@ script GastreeGym_LeaderBattle {
     faceplayer
 
     if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
+        msgbox(format("That was a great battle, {PLAYER}! I can't wait to see what you'll do next."))
     } else { //else do the battle
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release
@@ -44,23 +44,23 @@ script GastreeGym_EventScript_Victory{
     call(Common_EventScript_PlayGymBadgeFanfare)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format(""))
+    msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
 
     //Give TM also
     giveitem(ITEM_TM_FOCUS_PUNCH)
     msgbox(format(""))
 
     //Bye-bye
-    msgbox(format(""))
+    msgbox(format("So where are you headed next? To Mt. Ceram? You'll have to go north from here through Route 4. All the best, {PLAYER}!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("")
+    format("Hello! My name is INGER and I am the GASTREE CITY GYM LEADER. So you want to challenge me? Let's get right into it!")
 }
 
 text GastreeGym_Text_Defeated{
-    format("")
+    format("Solid foundations. An instinct for battle. And the makings of a strong team. I humbly accept my defeat.")
 }
 
 

@@ -1,5 +1,5 @@
 raw `
-    .set LOCALID_KOHLA, 11
+    .set LOCALID_KOHLA, 7
 `
 
 mapscripts GastreeCity_MapScripts{
@@ -39,13 +39,13 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 }
 
 text GastreeCity_KohlaIntro1 {
-    format("KOHLA: Well well, look who thought it was fashionable to be late! Going to Mt. Ceram? There are rocks outside the entry, and you'll need a {PKMN} to smash them! But I'm far ahead of you, chum! I've already beaten this town's pathetic Gym Leader who gave me the HM I need!")
+    format("KOHLA: Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten INGER and got the GYM BADGE.")
 }
 text GastreeCity_KohlaIntro2{
-    format("KOHLA: And I don't mind dishing out a second serving either! This is payback for one-upping me in front of the other detectives!")
+    format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("KOHLA: You may have beaten me this time, but you're still just a lazy good-for-nothing who lucked into a job that I deserve! People are counting on us to get the dreamstone and I can't be dilly-dallying about with you! Over and out, chum!")
+    format("KOHLA: You may have won, but you're still just a lousy good-for-nothing! I heard rumours that some group called Team Somber is also after the dreamstone on Mt. Ceram. I can't be dilly-dallying about with you! Over and out, chum!")
 }
 
 
@@ -93,7 +93,7 @@ script GastreeCity_NPC7{
     lockall
     faceplayer    
     msgbox(format("I want to have tea too! When I get my first {PKMN}, I want it to be SINISTEA or POLTCHAGEIST."))
-    applymovement(16, moves(face_up))
+    applymovement(11, moves(face_up))
     waitmovement(0)
     release
 }
@@ -104,7 +104,7 @@ script GastreeCity_NPC8{
     faceplayer    
     msgbox(format("Hiiiiyah!\pI'm trying to teach my KECKLEON ROCK SMASH so that we can go and explore Route 4 together!"))
     release
-    applymovement(15, moves(emote_exclamation_mark))
+    applymovement(5, moves(emote_exclamation_mark))
     waitmovement(0)
     msgbox(format("KECKLEON: keeee!!!"))
     release
@@ -135,10 +135,11 @@ script GastreeCity_NPC9{
         } else {
             if (checkitem(ITEM_SKITTY)){
                 msgbox(format("Is that my SKITTY? Oh it is! Thank you trainer! Thank you so much! Come here SKITTY.\pSKITTY: skiiii!!!\pPlease take this as a reward."))
-                giveitem(ITEM_QUICK_CLAW)
+                giveitem(ITEM_HM_CUT)
+                msgbox(format("SKITTY already knows CUT, so I don't need it any more. A {PKMN} with CUT can cut any small trees in its path. But you have to have at least one GYM BADGE to use it."))
                 setflag(FLAG_GASTREE_NPC_SKITTY)
                 clearflag(FLAG_HIDE_GASTREE_SKITTY)
-                addobject(17)
+                addobject(12)
             } else {
                 msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
             }
@@ -174,5 +175,9 @@ script GastreeCity_NPC9{
         msgbox(format("SKITTY: skee~~"))
         releaseall
     }
+
+
+
+
 
 
