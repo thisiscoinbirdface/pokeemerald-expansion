@@ -335,7 +335,7 @@ script CeramBaseCamp_Main_NPC5{
     faceplayer
 
     if (flag(FLAG_CERAMBASECAMP_NPC_TRADE)){
-        msgbox(format("Thank you! My sister will be so happy."))
+        msgbox(format("My sister will be so happy. She's always wanted her own {PKMN}."))
         releaseall
         end
     }

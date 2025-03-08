@@ -1046,8 +1046,24 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("ISIS"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_POLTCHAGEIST
-    }
+        .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_NYMBLE] =
+    {
+        .nickname = _("MEOWOW"),
+        .species = SPECIES_NYMBLE,
+        .ivs = {4, 5, 4, 5, 4, 4},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {5, 5, 5, 30, 5},
+        .personality = 0x8B,
+        .heldItem = ITEM_RETRO_MAIL,
+        .mailNum = 2,
+        .otName = _("VIEN"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_WIMPOD
+    }    
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
