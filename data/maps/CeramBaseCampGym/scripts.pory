@@ -19,6 +19,20 @@ script CeramBaseCampGym_Guard{
     releaseall
 }
 
+script CeramBaseCampGym_TrainerBattle_A {
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, "Who would've thought managing a\nbasecamp would involve so\lmuch paperwork?", "Back to my work!")
+    msgbox(format("The base camp doubling as a Gym is just extra work for the employees! And we didn't get a raise too!"))
+    release
+    end
+}
+
+script CeramBaseCampGym_TrainerBattle_B {
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_B, "I've been waiting all day\nfor an appointment.\pI'm so frustrated that\nI need to let it out!", "At least I've cooled down a bit.")
+    msgbox(format("All this bureaucracy is mind-numbing."))
+    release
+    end
+}
+
 script CeramBaseCampGym_GuardTrigger{
     if (flag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)) {end}
 
@@ -42,7 +56,7 @@ script CeramBaseCampGym_EventScript_NPC_LetterPrint{
     release
 
     //battle
-
+    trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I lost")
 
     //print letter
     msgbox(format("Very good! Well then, let me do my job. Here you go!"))
@@ -53,9 +67,6 @@ script CeramBaseCampGym_EventScript_NPC_LetterPrint{
     releaseall
 }
 
-
-
-
 script CeramBaseCampGym_EventScript_NPC_Signature{
         lockall
         faceplayer    
@@ -64,9 +75,16 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
     } else {
         if (checkitem(ITEM_APPOINTMENT_LETTER)){
 
-            msgbox(format("So you got an APPOINTMENT LETTER and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?\pWill you slip the money under the table?"), MSGBOX_YESNO)
+            msgbox(format("So you got an APPOINTMENT LETTER and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?"))
+            release
+            showmoneybox(0, 0)
+            msgbox(format("Will you slip the money under the table?"), MSGBOX_YESNO)
+
             if(var(VAR_RESULT) == 0){
+                release
+                msgbox(format("You'll have to do it the way everyone else does it then!"))
                 //battle
+                trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_D, "I wish you had just paid up!")                
             } else {
                 //remove money
                 removemoney(500)
@@ -87,5 +105,71 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
     releaseall
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script CeramBaseCampGym_LeaderBattle {
+    lockall
+    faceplayer
+
+    if (flag(FLAG_BADGE02_GET)){
+        msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
+    } else { //else do the battle
+        trainerbattle_single(TRAINER_GASTREEGYM_LEADER, CeramBaseCampGym_Text_Intro, CeramBaseCampGym_Text_Defeated, CeramBaseCampGym_EventScript_NPC_Signature, NO_MUSIC)
+        release
+    }
+
+    releaseall
+
+}
+
+script CeramBaseCampGym_EventScript_Victory{
+    //Receive the badge
+    msgbox(format("{PLAYER} received the CINDER BADGE from LEADER."))
+    release
+    setflag(FLAG_BADGE02_GET)
+
+    //Play gym badge fanfare
+    call(Common_EventScript_PlayGymBadgeFanfare)
+
+    //Describe the badge features (use HMs, allow pokemon control etc.)
+    msgbox(format("The CINDER BADGE increases the ATK of all your {PKMN} and lets you control {PKMN} upto lv. 20."))
+    msgbox(format("And I'd also like to give you this."))
+    release
+    //Give TM also
+    giveitem(ITEM_TM_SUNNY_DAY)
+    msgbox(format("This TM will let your {PKMN} bring sunlight on the battlefield, powering up FIRE-type moves!"))
+    release
+
+    //Bye-bye
+    msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
+    releaseall
+}
+
+
+text CeramBaseCampGym_Text_Intro{
+    format("Who's my next appointment? Ah! It's you, {PLAYER}. A pleasant surprise. I'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors. It's good to have a chance to battle for a change!")
+}
+
+text CeramBaseCampGym_Text_Defeated{
+    format("What a match! What a display! I could not be more pleased, {PLAYER}. The way you stand, you might be able to handle yourself on Mt. Ceram. I present you with the CINDER BADGE.")
+}
 
 

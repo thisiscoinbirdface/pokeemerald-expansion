@@ -1041,7 +1041,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 485
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_4] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_A] =
     {
 #line 486
         .trainerName = _("GRUNT"),
@@ -1075,7 +1075,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 498
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_5] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_B] =
     {
 #line 499
         .trainerName = _("GRUNT"),
@@ -1109,7 +1109,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 511
-    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_6] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_C] =
     {
 #line 512
         .trainerName = _("GRUNT"),
@@ -1143,7 +1143,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 524
-    [DIFFICULTY_NORMAL][TRAINER_FREDRICK] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_D] =
     {
 #line 525
         .trainerName = _("FREDRICK"),
@@ -1186,7 +1186,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 541
-    [DIFFICULTY_NORMAL][TRAINER_MATT] =
+    [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_LEADER] =
     {
 #line 542
         .trainerName = _("MATT"),

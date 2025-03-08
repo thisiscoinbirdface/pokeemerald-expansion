@@ -62,3 +62,6 @@ text GastreeGym_Text_Intro{
 text GastreeGym_Text_Defeated{
     format("")
 }
+
+
+

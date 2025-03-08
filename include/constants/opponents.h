@@ -45,13 +45,13 @@
     #define TRAINER_ROUTE4_KID2            24
     #define TRAINER_ROUTE4_KID3            25
 
-    
+//Base camp trainers and leader
+#define TRAINER_CERAMBASECAMPGYM_A           26
+#define TRAINER_CERAMBASECAMPGYM_B           27
+#define TRAINER_CERAMBASECAMPGYM_C           28
+#define TRAINER_CERAMBASECAMPGYM_D           29
+#define TRAINER_CERAMBASECAMPGYM_LEADER      30
 
-#define TRAINER_GRUNT_WEATHER_INST_4         26
-#define TRAINER_GRUNT_AQUA_HIDEOUT_5         27
-#define TRAINER_GRUNT_AQUA_HIDEOUT_6         28
-#define TRAINER_FREDRICK                     29
-#define TRAINER_MATT                         30
 #define TRAINER_ZANDER                       31
 #define TRAINER_SHELLY_WEATHER_INSTITUTE     32
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN       33

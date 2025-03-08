@@ -482,8 +482,8 @@ Mime Jr.
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_4 ===
-Name: GRUNT
+=== TRAINER_CERAMBASECAMPGYM_A ===
+Name: TANNER
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -491,12 +491,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 28
+Slugma
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
-Name: GRUNT
+=== TRAINER_CERAMBASECAMPGYM_B ===
+Name: BRON
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -504,12 +504,16 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
+Rolycoly
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
-Name: GRUNT
+Fletchling
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CERAMBASECAMPGYM_C ===
+Name: JORDI
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -517,12 +521,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
+Magby
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_FREDRICK ===
-Name: FREDRICK
+=== TRAINER_CERAMBASECAMPGYM_D ===
+Name: ALBA
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -530,30 +534,34 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Makuhita
-Level: 30
+Slugma
+Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machoke
-Level: 30
+Sizzlipede
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MATT ===
+=== TRAINER_CERAMBASECAMPGYM_LEADER ===
 Name: MATT
-Class: Aqua Admin
-Pic: Aqua Admin M
+Class: Leader
+Pic: Leader Roxanne
 Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Mightyena
-Level: 34
+Growlithe-Hisui
+Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Golbat
-Level: 34
+Fletchinder
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Tauros-Paldea-Blaze
+Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ZANDER ===
