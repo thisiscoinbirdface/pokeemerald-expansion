@@ -58,9 +58,9 @@ GastreeGym_EventScript_Victory::
 # 50 "data//maps/GastreeGym/scripts.pory"
 	giveitem ITEM_TM_FOCUS_PUNCH
 # 51 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_EventScript_Victory_Text_1
+	msgbox GastreeGym_EventScript_Victory_Text_2
 # 54 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_EventScript_Victory_Text_1
+	msgbox GastreeGym_EventScript_Victory_Text_3
 # 55 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	return
@@ -93,8 +93,8 @@ GastreeGym_TrainerBattle_Jaco_Text_2:
 
 GastreeGym_LeaderBattle_Text_0:
 # 27 "data//maps/GastreeGym/scripts.pory"
-	.string "That was a great battle. You've earned\n"
-	.string "my confidence. Go get 'em, {PLAYER}!$"
+	.string "That was a great battle, {PLAYER}! I\n"
+	.string "can't wait to see what you'll do next.$"
 
 GastreeGym_EventScript_Victory_Text_0:
 # 39 "data//maps/GastreeGym/scripts.pory"
@@ -103,12 +103,30 @@ GastreeGym_EventScript_Victory_Text_0:
 
 GastreeGym_EventScript_Victory_Text_1:
 # 47 "data//maps/GastreeGym/scripts.pory"
+	.string "The BADGE allows you to use HM CUT\n"
+	.string "outside of battle. Cut down all your\l"
+	.string "obstacles!$"
+
+GastreeGym_EventScript_Victory_Text_2:
+# 51 "data//maps/GastreeGym/scripts.pory"
 	.string "$"
+
+GastreeGym_EventScript_Victory_Text_3:
+# 54 "data//maps/GastreeGym/scripts.pory"
+	.string "So where are you headed next? To Mt.\n"
+	.string "Ceram? You'll have to go north from here\l"
+	.string "through Route 4. All the best,\l"
+	.string "{PLAYER}!$"
 
 GastreeGym_Text_Intro::
 # 58 "data//maps/GastreeGym/scripts.pory"
-	.string "$"
+	.string "Hello! My name is INGER and I am the\n"
+	.string "GASTREE CITY GYM LEADER. So you want\l"
+	.string "to challenge me? Let's get right into\l"
+	.string "it!$"
 
 GastreeGym_Text_Defeated::
 # 62 "data//maps/GastreeGym/scripts.pory"
-	.string "$"
+	.string "Solid foundations. An instinct for\n"
+	.string "battle. And the makings of a strong\l"
+	.string "team. I humbly accept my defeat.$"

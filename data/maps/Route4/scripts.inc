@@ -426,11 +426,11 @@ Route4_NPC_Couple2_Text_0:
 
 Route4_NPC_A_Text_0:
 # 144 "data//maps/Route4/scripts.pory"
-	.string "Wow, you beat INGER? That's impressive.\n"
-	.string "But did you know that there are 7 more\l"
-	.string "Gym Leaders in Cormoria?\p"
-	.string "Maybe you'll get to face them all\n"
-	.string "someday!$"
+	.string "There's a small tree up ahead blocking\n"
+	.string "the path. A {PKMN} with CUT might be able to\l"
+	.string "cut it down...but the city management\l"
+	.string "needs to think about us civilians. We're\l"
+	.string "not all trainers!$"
 
 Route4_NPC_B_Text_0:
 # 152 "data//maps/Route4/scripts.pory"

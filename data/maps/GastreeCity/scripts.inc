@@ -1,7 +1,7 @@
 # 1 "data//maps/GastreeCity/scripts.pory"
 
 # 2 "data//maps/GastreeCity/scripts.pory"
-    .set LOCALID_KOHLA, 11
+    .set LOCALID_KOHLA, 7
 
 GastreeCity_MapScripts::
 # 6 "data//maps/GastreeCity/scripts.pory"
@@ -109,7 +109,7 @@ GastreeCity_NPC7::
 # 95 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC7_Text_0
 # 96 "data//maps/GastreeCity/scripts.pory"
-	applymovement 16, GastreeCity_NPC7_Movement_0
+	applymovement 11, GastreeCity_NPC7_Movement_0
 # 97 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 98 "data//maps/GastreeCity/scripts.pory"
@@ -127,7 +127,7 @@ GastreeCity_NPC8::
 # 106 "data//maps/GastreeCity/scripts.pory"
 	release
 # 107 "data//maps/GastreeCity/scripts.pory"
-	applymovement 15, GastreeCity_NPC8_Movement_0
+	applymovement 5, GastreeCity_NPC8_Movement_0
 # 108 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 109 "data//maps/GastreeCity/scripts.pory"
@@ -172,10 +172,10 @@ GastreeCity_NPC2::
 # 0 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GastreeCity_NPC2_5
-# 143 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_2
+# 144 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_3
 GastreeCity_NPC2_1:
-# 147 "data//maps/GastreeCity/scripts.pory"
+# 148 "data//maps/GastreeCity/scripts.pory"
 	release
 	return
 
@@ -188,56 +188,58 @@ GastreeCity_NPC2_5:
 # 137 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_1
 # 138 "data//maps/GastreeCity/scripts.pory"
-	giveitem ITEM_QUICK_CLAW
+	giveitem ITEM_HM_CUT
 # 139 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_GASTREE_NPC_SKITTY
+	msgbox GastreeCity_NPC2_Text_2
 # 140 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY
+	setflag FLAG_GASTREE_NPC_SKITTY
 # 141 "data//maps/GastreeCity/scripts.pory"
-	addobject 17
+	clearflag FLAG_HIDE_GASTREE_SKITTY
+# 142 "data//maps/GastreeCity/scripts.pory"
+	addobject 12
 	goto GastreeCity_NPC2_1
 
 
 GastreeCity_EventScripts_SkittyTrigger::
-# 152 "data//maps/GastreeCity/scripts.pory"
+# 153 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_TRIGGER_SKITTY, GastreeCity_EventScripts_SkittyTrigger_2
-# 156 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 157 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_1, MSGBOX_YESNO
+	lockall
 # 158 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_1, MSGBOX_YESNO
+# 159 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GastreeCity_EventScripts_SkittyTrigger_5
 GastreeCity_EventScripts_SkittyTrigger_1:
-# 167 "data//maps/GastreeCity/scripts.pory"
+# 168 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
 GastreeCity_EventScripts_SkittyTrigger_2:
-# 153 "data//maps/GastreeCity/scripts.pory"
+# 154 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_0
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 GastreeCity_EventScripts_SkittyTrigger_5:
-# 159 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_2
 # 160 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_2
 # 161 "data//maps/GastreeCity/scripts.pory"
-	giveitem ITEM_SKITTY
+	release
 # 162 "data//maps/GastreeCity/scripts.pory"
+	giveitem ITEM_SKITTY
+# 163 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_TRIGGER_SKITTY
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 
 GastreeCity_NPC_Skitty::
-# 172 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 173 "data//maps/GastreeCity/scripts.pory"
-	faceplayer
+	lockall
 # 174 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC_Skitty_Text_0
+	faceplayer
 # 175 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC_Skitty_Text_0
+# 176 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
@@ -362,55 +364,59 @@ GastreeCity_NPC2_Text_1:
 	.string "Please take this as a reward.$"
 
 GastreeCity_NPC2_Text_2:
-# 143 "data//maps/GastreeCity/scripts.pory"
+# 139 "data//maps/GastreeCity/scripts.pory"
+	.string "SKITTY already knows CUT, so I don't\n"
+	.string "need it any more. A {PKMN} with CUT can cut\l"
+	.string "any small trees in its path. But you\l"
+	.string "have to have at least one GYM BADGE to\l"
+	.string "use it.$"
+
+GastreeCity_NPC2_Text_3:
+# 144 "data//maps/GastreeCity/scripts.pory"
 	.string "My SKITTY is missing! I've been looking\n"
 	.string "everywhere for her, but I can't find\l"
 	.string "her. If you find a SKITTY, please bring\l"
 	.string "her to me, okay?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_0:
-# 153 "data//maps/GastreeCity/scripts.pory"
+# 154 "data//maps/GastreeCity/scripts.pory"
 	.string "There's nothing else up there.$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_1:
-# 157 "data//maps/GastreeCity/scripts.pory"
+# 158 "data//maps/GastreeCity/scripts.pory"
 	.string "There's something up in the branches of\n"
 	.string "this tree.\p"
 	.string "Shake it?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_2:
-# 159 "data//maps/GastreeCity/scripts.pory"
+# 160 "data//maps/GastreeCity/scripts.pory"
 	.string "A SKITTY dropped down from the tree! It\n"
 	.string "looks scared. Who is its owner?$"
 
 GastreeCity_NPC_Skitty_Text_0:
-# 174 "data//maps/GastreeCity/scripts.pory"
+# 175 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY: skee~~$"
 
 GastreeCity_KohlaIntro1::
 # 41 "data//maps/GastreeCity/scripts.pory"
 	.string "KOHLA: Well well, look who thought it\n"
-	.string "was fashionable to be late! Going to Mt.\l"
-	.string "Ceram? There are rocks outside the\l"
-	.string "entry, and you'll need a {PKMN} to smash\l"
-	.string "them! But I'm far ahead of you, chum!\l"
-	.string "I've already beaten this town's\l"
-	.string "pathetic Gym Leader who gave me the HM\l"
-	.string "I need!$"
+	.string "was fashionable to be late! I'm way\l"
+	.string "ahead of you, chum! I've already beaten\l"
+	.string "INGER and got the GYM BADGE.$"
 
 GastreeCity_KohlaIntro2::
 # 44 "data//maps/GastreeCity/scripts.pory"
-	.string "KOHLA: And I don't mind dishing out a\n"
-	.string "second serving either! This is payback\l"
+	.string "KOHLA: I don't mind dishing out a\n"
+	.string "second serving either. This is payback\l"
 	.string "for one-upping me in front of the other\l"
 	.string "detectives!$"
 
 GastreeCity_KohlaPostBattle::
 # 47 "data//maps/GastreeCity/scripts.pory"
-	.string "KOHLA: You may have beaten me this\n"
-	.string "time, but you're still just a lazy\l"
-	.string "good-for-nothing who lucked into a job\l"
-	.string "that I deserve! People are counting on\l"
-	.string "us to get the dreamstone and I can't be\l"
+	.string "KOHLA: You may have won, but you're\n"
+	.string "still just a lousy good-for-nothing! I\l"
+	.string "heard rumours that some group called\l"
+	.string "Team Somber is also after the\l"
+	.string "dreamstone on Mt. Ceram. I can't be\l"
 	.string "dilly-dallying about with you! Over and\l"
 	.string "out, chum!$"
