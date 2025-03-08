@@ -63,7 +63,7 @@
 #define FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER    0x30 // got the appointment letter for a meeting with the gym leader
 #define FLAG_CERAMBASECAMP_CYNDAQUIL_TM    0x31 // whether you taught the cynda or not.
 #define FLAG_CERAMBASECAMP_NPCITEM    0x32 // whether the NPC has given you the stone or not
-#define FLAG_CERAMBASECAMP_EXCADRIL    0x33 // Whether you've caught or defeated the excadril
+#define FLAG_CERAMBASECAMP_EXCADRILL    0x33 // Whether you've caught or defeated the excadril
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag

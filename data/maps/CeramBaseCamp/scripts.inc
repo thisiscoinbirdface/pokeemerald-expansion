@@ -154,59 +154,59 @@ CeramBaseCamp_Sign2::
 	end
 
 
-CeramBaseCamp_Excadril::
+CeramBaseCamp_Excadrill::
 # 124 "data//maps/CeramBaseCamp/scripts.pory"
-	goto_if_set FLAG_CERAMBASECAMP_EXCADRIL, CeramBaseCamp_Excadril_2
+	goto_if_set FLAG_CERAMBASECAMP_EXCADRILL, CeramBaseCamp_Excadrill_2
 # 130 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_Excadril_Text_1, MSGBOX_YESNO
+	msgbox CeramBaseCamp_Excadrill_Text_1, MSGBOX_YESNO
 # 131 "data//maps/CeramBaseCamp/scripts.pory"
 	release
 # 132 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq CeramBaseCamp_Excadril_5
-CeramBaseCamp_Excadril_1:
-# 158 "data//maps/CeramBaseCamp/scripts.pory"
+	goto_if_eq CeramBaseCamp_Excadrill_5
+CeramBaseCamp_Excadrill_1:
+# 154 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
-CeramBaseCamp_Excadril_2:
+CeramBaseCamp_Excadrill_2:
 # 126 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_Excadril_Text_0
-	goto CeramBaseCamp_Excadril_1
+	msgbox CeramBaseCamp_Excadrill_Text_0
+	goto CeramBaseCamp_Excadrill_1
 
-CeramBaseCamp_Excadril_5:
+CeramBaseCamp_Excadrill_5:
 # 135 "data//maps/CeramBaseCamp/scripts.pory"
-	playmoncry SPECIES_EXCADRIL, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER
 # 136 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 40
 # 137 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmoncry
 # 138 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_Excadril_Text_2
+	msgbox CeramBaseCamp_Excadrill_Text_2
 # 139 "data//maps/CeramBaseCamp/scripts.pory"
-	setwildbattle SPECIES_EXCADRIL, 10
+	setwildbattle SPECIES_EXCADRILL, 10
 # 140 "data//maps/CeramBaseCamp/scripts.pory"
 	dowildbattle
 # 143 "data//maps/CeramBaseCamp/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
 # 144 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq CeramBaseCamp_Excadril_8
-CeramBaseCamp_Excadril_7:
+	goto_if_eq CeramBaseCamp_Excadrill_8
+CeramBaseCamp_Excadrill_7:
 # 147 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq CeramBaseCamp_Excadril_10
-	goto CeramBaseCamp_Excadril_1
+	goto_if_eq CeramBaseCamp_Excadrill_10
+	goto CeramBaseCamp_Excadrill_1
 
-CeramBaseCamp_Excadril_8:
+CeramBaseCamp_Excadrill_8:
 # 145 "data//maps/CeramBaseCamp/scripts.pory"
-	setflag FLAG_CERAMBASECAMP_EXCADRIL
-	goto CeramBaseCamp_Excadril_7
+	setflag FLAG_CERAMBASECAMP_EXCADRILL
+	goto CeramBaseCamp_Excadrill_7
 
-CeramBaseCamp_Excadril_10:
+CeramBaseCamp_Excadrill_10:
 # 148 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_Excadril_Text_3
-	goto CeramBaseCamp_Excadril_1
+	msgbox CeramBaseCamp_Excadrill_Text_3
+	goto CeramBaseCamp_Excadrill_1
 
 
 # 11 "data//maps/CeramBaseCamp/scripts.pory"
@@ -326,19 +326,19 @@ CeramBaseCamp_Sign2_Text_0:
 	.string "{UP_ARROW} MT CERAM\n"
 	.string "Supplies available at depot next door.$"
 
-CeramBaseCamp_Excadril_Text_0:
+CeramBaseCamp_Excadrill_Text_0:
 # 126 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill.$"
 
-CeramBaseCamp_Excadril_Text_1:
+CeramBaseCamp_Excadrill_Text_1:
 # 130 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill...peek inside?$"
 
-CeramBaseCamp_Excadril_Text_2:
+CeramBaseCamp_Excadrill_Text_2:
 # 138 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "A wild {PKMN} attacks!$"
 
-CeramBaseCamp_Excadril_Text_3:
+CeramBaseCamp_Excadrill_Text_3:
 # 148 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "The Excadril retreats back into its\n"
+	.string "The Excadrill retreats back into its\n"
 	.string "home. Better not disturb it again!$"

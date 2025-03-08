@@ -119,9 +119,9 @@ script CeramBaseCamp_Sign2{
     end
 }
 
-script CeramBaseCamp_Excadril{
+script CeramBaseCamp_Excadrill{
 
-    if (flag(FLAG_CERAMBASECAMP_EXCADRIL)){
+    if (flag(FLAG_CERAMBASECAMP_EXCADRILL)){
 
         msgbox(format("An old mechanical drill."))
 
@@ -131,30 +131,26 @@ script CeramBaseCamp_Excadril{
         release
         if (var(VAR_RESULT) == 1){
 
-            //excadril encounter
-            playmoncry(SPECIES_EXCADRIL, CRY_MODE_ENCOUNTER)
+            //excadrill encounter
+            playmoncry(SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER)
             delay(40)
             waitmoncry
             msgbox(format("A wild {PKMN} attacks!"))
-            setwildbattle(SPECIES_EXCADRIL, 10)     
+            setwildbattle(SPECIES_EXCADRILL, 10)     
             dowildbattle  
 
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){
-                setflag(FLAG_CERAMBASECAMP_EXCADRIL)
+                setflag(FLAG_CERAMBASECAMP_EXCADRILL)
             }
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
-                msgbox(format("The Excadril retreats back into its home. Better not disturb it again!"))
+                msgbox(format("The Excadrill retreats back into its home. Better not disturb it again!"))
             }
         }
 
     }
 
-
-
-
-    
     releaseall
     end
 }
