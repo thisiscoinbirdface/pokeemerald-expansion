@@ -243,7 +243,27 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 41,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_MT_CERAM_CAVES",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_MT_CERAM_CAVES",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 41,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_MT_CERAM_CAVES",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
     {

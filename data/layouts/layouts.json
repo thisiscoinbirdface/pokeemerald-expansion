@@ -4744,8 +4744,8 @@
     {
       "id": "LAYOUT_MT_CERAM_CAVES",
       "name": "MtCeram_Caves_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 52,
+      "height": 84,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtCeram_Caves/border.bin",
