@@ -4730,6 +4730,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/CeramBaseCampGym/border.bin",
       "blockdata_filepath": "data/layouts/CeramBaseCampGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_CERAM",
+      "name": "MtCeram_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/MtCeram/border.bin",
+      "blockdata_filepath": "data/layouts/MtCeram/map.bin"
     }
   ]
 }

@@ -71,7 +71,8 @@
     "CeramBaseCamp_Main",
     "CeramBaseCamp_PokemonCenter",
     "CeramBaseCamp_House1",
-    "CeramBaseCampGym"
+    "CeramBaseCampGym",
+    "MtCeram"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

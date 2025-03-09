@@ -1767,6 +1767,14 @@
       "y": 0,
       "width": 1,
       "height": 1
-    }
+    },
+    {
+      "map_section": "MAPSEC_MT_CERAM",
+      "name": "Mt. Ceram Base Camp",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    }    
   ]
 }
