@@ -1216,3 +1216,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MtCeram/scripts.inc"
 
 	.include "data/maps/MtCeram_Caves/scripts.inc"
+
+	.include "data/maps/MtCeram_Peak/scripts.inc"

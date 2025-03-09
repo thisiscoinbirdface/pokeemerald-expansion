@@ -4750,6 +4750,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtCeram_Caves/border.bin",
       "blockdata_filepath": "data/layouts/MtCeram_Caves/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_CERAM_PEAK",
+      "name": "MtCeram_Peak_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/MtCeram_Peak/border.bin",
+      "blockdata_filepath": "data/layouts/MtCeram_Peak/map.bin"
     }
   ]
 }
