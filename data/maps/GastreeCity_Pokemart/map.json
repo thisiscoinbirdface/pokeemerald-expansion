@@ -2,7 +2,7 @@
   "id": "MAP_GASTREE_CITY_POKEMART",
   "name": "GastreeCity_Pokemart",
   "layout": "LAYOUT_GASTREE_CITY_POKEMART",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_GASTREE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

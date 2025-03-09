@@ -2,7 +2,7 @@
   "id": "MAP_GASTREE_GYM",
   "name": "GastreeGym",
   "layout": "LAYOUT_GASTREE_GYM",
-  "music": "MUS_DUMMY",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_GASTREE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

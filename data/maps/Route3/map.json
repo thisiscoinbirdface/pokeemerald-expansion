@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE3",
   "name": "Route3",
   "layout": "LAYOUT_ROUTE3",
-  "music": "MUS_CUSTOM_JETLAG",
+  "music": "MUS_ROUTE110",
   "region_map_section": "MAPSEC_ROUTE3",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

@@ -2,7 +2,7 @@
   "id": "MAP_FENNILAHL_TOWN_HOUSE1",
   "name": "FennilahlTown_House1",
   "layout": "LAYOUT_FENNILAHL_TOWN_HOUSE1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_PETALBURG",
   "region_map_section": "MAPSEC_FENNILAHL_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

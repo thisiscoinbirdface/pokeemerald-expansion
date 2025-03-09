@@ -2,7 +2,7 @@
   "id": "MAP_GASTREE_CITY_TEA_HOUSE",
   "name": "GastreeCity_TeaHouse",
   "layout": "LAYOUT_GASTREE_CITY_TEA_HOUSE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CUSTOM_FLOCKOFBIRDS",
   "region_map_section": "MAPSEC_GASTREE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

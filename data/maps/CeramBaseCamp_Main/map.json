@@ -2,7 +2,7 @@
   "id": "MAP_CERAM_BASE_CAMP_MAIN",
   "name": "CeramBaseCamp_Main",
   "layout": "LAYOUT_CERAM_BASE_CAMP_MAIN",
-  "music": "MUS_DUMMY",
+  "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_CERAM_BASE_CAMP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
