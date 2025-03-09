@@ -1,0 +1,28 @@
+{
+  "id": "MAP_MT_CERAM_CAVES",
+  "name": "MtCeram_Caves",
+  "layout": "LAYOUT_MT_CERAM_CAVES",
+  "music": "MUS_MT_PYRE",
+  "region_map_section": "MAPSEC_MT_CERAM",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

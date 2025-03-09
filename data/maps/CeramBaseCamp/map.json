@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE4",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_MT_CERAM",
+      "offset": -12,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -178,7 +183,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 16,
+      "x": 15,
       "y": 8,
       "elevation": 0,
       "var": "VAR_TEMP_0",
