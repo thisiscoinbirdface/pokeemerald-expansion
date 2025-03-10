@@ -214,7 +214,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //Fade screen and defeat Kohla
     fadescreen(FADE_TO_BLACK)
-    msgbox(format("KOHLA: No! FENNEKIN!!\pSOMBER GRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
+    msgbox(format("KOHLA: No! CHARCADET!\pSOMBER GRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
     release  
     fadescreen(FADE_FROM_BLACK)
     applymovement(LOCALID_TOPKOHLA, moves(walk_down))

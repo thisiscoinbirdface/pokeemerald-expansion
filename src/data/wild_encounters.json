@@ -12212,33 +12212,33 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_ANORITH"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_ANORITH"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_TYRUNT"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_ARCHEN"
               },
               {
