@@ -1,13 +1,18 @@
 mapscripts AncientCeram_MapScripts{
-    MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_ANCIENT_GAB_ESCAPE, 3: AncientCeram_OnFrame_ExitReady
-    ]
+    MAP_SCRIPT_ON_TRANSITION: AncientCeram_OnTransition_ExitReady
 }
 
 //This script is called after readying the exit (by talking to gab again)
-script AncientCeram_OnFrame_ExitReady{
-    setobjectxy(1, 28, 22)
-    applymovement(1, moves(face_left))
+script AncientCeram_OnTransition_ExitReady{
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){
+        setobjectxyperm(1, 28, 22)
+        setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
+        setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_LEFT)
+        msgbox(format("Shall we go? Touch the dreamstone whenever you want to leave."))
+        release
+    }
+
+    end
 }
 
 script AncientCeram_EventScript_Gabrielle{
@@ -29,6 +34,7 @@ script AncientCeram_EventScript_Gabrielle{
 
         //Fade out and move both objects
         fadescreen(FADE_TO_WHITE)
+        setobjectxyperm(1, 28, 22)
         warp(MAP_ANCIENT_CERAM, 28, 23)
         fadescreen(FADE_FROM_WHITE)
     }
@@ -59,7 +65,7 @@ script AncientCeram_EventScript_Exit{
         //Else get out
         setvar(VAR_0x8004, 2)  //vertical pan
         setvar(VAR_0x8005, 2)  //horizontal pan
-        setvar(VAR_0x8006, 8)  //num shakes
+        setvar(VAR_0x8006, 20)  //num shakes
         setvar(VAR_0x8007, 5)  //shake delay
         special(ShakeCamera)
         waitstate
