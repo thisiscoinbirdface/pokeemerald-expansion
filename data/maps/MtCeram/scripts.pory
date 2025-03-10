@@ -2,6 +2,9 @@ raw `
     .set LOCALID_FOOTKOHLA, 19
     .set LOCALID_FOOTGRUNT1, 20
     .set LOCALID_FOOTGRUNT2, 21
+    .set LOCALID_TOPGRUNT1, 10
+    .set LOCALID_TOPGRUNT2, 9
+    .set LOCALID_TOPKOHLA, 22
 
 `
 
@@ -12,10 +15,16 @@ mapscripts MtCeram_MapScripts {}
 
 
 
+
+
+
 //EAVESDROP AT THE FOOT OF THE MOUNTAIN
 
 script MtCeram_Eavesdrop_Trigger0{
+    if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
+
     lockall
+    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -27,7 +36,10 @@ script MtCeram_Eavesdrop_Trigger0{
 }
 
 script MtCeram_Eavesdrop_Trigger1{
+    if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
+
     lockall
+    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -39,7 +51,10 @@ script MtCeram_Eavesdrop_Trigger1{
 }
 
 script MtCeram_Eavesdrop_Trigger2{
+    if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
+
     lockall
+    applymovement(LOCALID_FOOTKOHLA, moves(face_down)) 
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -51,7 +66,10 @@ script MtCeram_Eavesdrop_Trigger2{
 }
 
 script MtCeram_Eavesdrop_Trigger3{
+    if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
+    
     lockall
+    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -65,7 +83,7 @@ script MtCeram_Eavesdrop_Trigger3{
 
 script MtCeram_EventScript_Eavesdrop{
     lockall
-
+    applymovement(LOCALID_FOOTKOHLA, moves(face_right))
     //Koha text
     msgbox(format("KOHLA: I've been spying on those two Team Somber Grunts. Don't make a sound!"))
     release   
@@ -83,8 +101,8 @@ script MtCeram_EventScript_Eavesdrop{
     release
 
     //Somber walk off
-    applymovement(LOCALID_FOOTGRUNT1, moves(walk_right * 8))    
-    applymovement(LOCALID_FOOTGRUNT2, moves(walk_right * 8))
+    applymovement(LOCALID_FOOTGRUNT1, moves(walk_right * 6))    
+    applymovement(LOCALID_FOOTGRUNT2, moves(walk_right * 6))
     waitmovement(0)
 
     //remove objects
@@ -93,7 +111,7 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(face_left))
-    msgbox(format("KOHLA: Heard that? Well I'm going to head up there first. Gotta do the right thing, you know? Na...you don't.\pSee you never, chum!"))
+    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility, {PLAYER} - something you wouldn't know about.\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -133,5 +151,100 @@ script MtCeram_EventScript_Eavesdrop{
 
 
 // FIGHT AT THE TOP OF THE MOUNTAIN
+script MtCeram_BeforePeak_Trigger0{
+    if (flag(FLAG_MT_CERAM_SOMBER_PEAK)){end}
+    
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 walk_left * 2 face_up))
+    waitmovement(0)
+    call(MtCeram_EventScript_BeforePeakBattle)
+    end
+}
+
+script MtCeram_BeforePeak_Trigger1{
+    if (flag(FLAG_MT_CERAM_SOMBER_PEAK)){end}
+
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 walk_left * 3 face_up))
+    waitmovement(0)
+    call(MtCeram_EventScript_BeforePeakBattle)
+    end
+}
+
+script MtCeram_EventScript_BeforePeakBattle{
+
+    //First kohla and the grunts exchange dialogue
+    applymovement(LOCALID_TOPKOHLA, moves(jump_in_place_up))
+    waitmovement(0)
+    msgbox(format("KOHLA: That's enough of your mischief Team Somber! You're getting in the way of police business!"))
+    release    
+    applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
+    applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("SOMBER GRUNT 2: You're just a kid. Where's the police?"))
+    release
+    applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("KOHLA: I'm not a kid! I'm the ACE ROOKIE of the detective school, and I'm not going to let you steal the dreamstone!"))
+    release    
+    applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
+    applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("SOMBER GRUNT 1: You alone against the two of us?"))
+    release
+
+    //Notice player
+    applymovement(LOCALID_TOPKOHLA, moves(face_down))
+    waitmovement(0)
+    delay(16)    
+    applymovement(LOCALID_TOPGRUNT1, moves(emote_exclamation_mark))
+    applymovement(LOCALID_TOPGRUNT2, moves(emote_exclamation_mark))
+    applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("SOMBER GRUNT 2: The help arrives. But you're both just kids! Hahaha!"))
+    release
+
+    //Kohla says he doesn't need help
+    msgbox(format("KOHLA: I told you I don't need your help! You'll just get in the way."))
+    release  
+    applymovement(LOCALID_TOPKOHLA, moves(face_up))
+    waitmovement(0)
+    msgbox(format("KOHLA: Now come on TEAM SOMBER! Bring it on!"))
+    release  
+
+    //Fade screen and defeat Kohla
+    fadescreen(FADE_TO_BLACK)
+    msgbox(format("KOHLA: No! FENNEKIN!!\pSOMBER GRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
+    release  
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(LOCALID_TOPKOHLA, moves(walk_down))
+    waitmovement(0)       
+
+
+    //Kohla exit
+    msgbox(format("KOHLA: My {PKMN}...I have to go and heal them...I couldn't stop Team Somber..."))
+    release  
+    applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right * 2 walk_down *5))
+    removeobject(LOCALID_TOPKOHLA)
+
+    //Team Somber dialogue
+
+
+
+    //now you battle
+
+
+
+    //grunts beaten, disappear
+
+
+
+    //Move on
+
+
+
+
+    releaseall
+}
 
 

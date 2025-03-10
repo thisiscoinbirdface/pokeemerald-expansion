@@ -67,7 +67,7 @@
 #define FLAG_CERAMBASECAMP_MAIN_BERRY    0x34 // the sitting man (first floor) gives you a berry
 #define FLAG_CERAMBASECAMP_NPC_TRADE    0x35 // the base camp trade NPC
 #define FLAG_MT_CERAM_SOMBER_FOOT    0x36 // at the foot of the mountain, eavesdrop with kohla
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
+#define FLAG_MT_CERAM_SOMBER_PEAK    0x37 // at the top (just below the peak) battle with grunts. kohla loses.
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag

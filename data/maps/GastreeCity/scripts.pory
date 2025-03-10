@@ -48,7 +48,7 @@ text GastreeCity_KohlaIntro2{
     format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards MT CERAM BASE CAMP, which is where you should be headed too. Over and out, chum!")
+    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards MT CERAM BASE CAMP. Don't come after me - I don't need your help. Over and out, chum!")
 }
 
 
