@@ -18,19 +18,15 @@ AncientCeram_OnTransition_ExitReady_2:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_LEFT
 # 10 "data//maps/AncientCeram/scripts.pory"
 	setobjectmovementtype OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_LEFT
-# 11 "data//maps/AncientCeram/scripts.pory"
-	msgbox AncientCeram_OnTransition_ExitReady_Text_0
-# 12 "data//maps/AncientCeram/scripts.pory"
-	release
 	goto AncientCeram_OnTransition_ExitReady_1
 
 
 AncientCeram_EventScript_Gabrielle::
-# 19 "data//maps/AncientCeram/scripts.pory"
+# 17 "data//maps/AncientCeram/scripts.pory"
 	lockall
-# 20 "data//maps/AncientCeram/scripts.pory"
+# 18 "data//maps/AncientCeram/scripts.pory"
 	faceplayer
-# 23 "data//maps/AncientCeram/scripts.pory"
+# 21 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 0
 	goto_if_eq AncientCeram_EventScript_Gabrielle_2
 AncientCeram_EventScript_Gabrielle_1:
@@ -38,12 +34,12 @@ AncientCeram_EventScript_Gabrielle_1:
 	compare VAR_ANCIENT_GAB_ESCAPE, 1
 	goto_if_eq AncientCeram_EventScript_Gabrielle_5
 AncientCeram_EventScript_Gabrielle_4:
-# 31 "data//maps/AncientCeram/scripts.pory"
-	compare VAR_ANCIENT_GAB_ESCAPE, 2
+# 33 "data//maps/AncientCeram/scripts.pory"
+	compare VAR_ANCIENT_GAB_ESCAPE, 3
 	goto_if_eq AncientCeram_EventScript_Gabrielle_8
 AncientCeram_EventScript_Gabrielle_7:
-# 41 "data//maps/AncientCeram/scripts.pory"
-	compare VAR_ANCIENT_GAB_ESCAPE, 3
+# 38 "data//maps/AncientCeram/scripts.pory"
+	compare VAR_ANCIENT_GAB_ESCAPE, 2
 	goto_if_eq AncientCeram_EventScript_Gabrielle_11
 AncientCeram_EventScript_Gabrielle_10:
 # 45 "data//maps/AncientCeram/scripts.pory"
@@ -51,11 +47,11 @@ AncientCeram_EventScript_Gabrielle_10:
 	return
 
 AncientCeram_EventScript_Gabrielle_2:
-# 24 "data//maps/AncientCeram/scripts.pory"
+# 22 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_0
-# 25 "data//maps/AncientCeram/scripts.pory"
+# 23 "data//maps/AncientCeram/scripts.pory"
 	questmenu QUEST_MENU_SET_ACTIVE, QUEST_CERAM_ANCIENT_AREA
-# 26 "data//maps/AncientCeram/scripts.pory"
+# 24 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 1
 	goto AncientCeram_EventScript_Gabrielle_1
 
@@ -65,23 +61,17 @@ AncientCeram_EventScript_Gabrielle_5:
 	goto AncientCeram_EventScript_Gabrielle_4
 
 AncientCeram_EventScript_Gabrielle_8:
-# 32 "data//maps/AncientCeram/scripts.pory"
+# 34 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_2
-# 33 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_ANCIENT_GAB_ESCAPE, 3
-# 36 "data//maps/AncientCeram/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 37 "data//maps/AncientCeram/scripts.pory"
-	setobjectxyperm 1, 28, 22
-# 38 "data//maps/AncientCeram/scripts.pory"
-	warp MAP_ANCIENT_CERAM, 28, 23
-# 39 "data//maps/AncientCeram/scripts.pory"
-	fadescreen FADE_FROM_WHITE
 	goto AncientCeram_EventScript_Gabrielle_7
 
 AncientCeram_EventScript_Gabrielle_11:
-# 42 "data//maps/AncientCeram/scripts.pory"
-	msgbox AncientCeram_OnTransition_ExitReady_Text_0
+# 39 "data//maps/AncientCeram/scripts.pory"
+	msgbox AncientCeram_EventScript_Gabrielle_Text_3
+# 40 "data//maps/AncientCeram/scripts.pory"
+	setvar VAR_ANCIENT_GAB_ESCAPE, 3
+# 43 "data//maps/AncientCeram/scripts.pory"
+	warp MAP_ANCIENT_CERAM, 28, 23
 	goto AncientCeram_EventScript_Gabrielle_10
 
 
@@ -149,13 +139,8 @@ AncientCeram_EventScript_Exit_11:
 	goto AncientCeram_EventScript_Exit_10
 
 
-AncientCeram_OnTransition_ExitReady_Text_0:
-# 11 "data//maps/AncientCeram/scripts.pory"
-	.string "Shall we go? Touch the dreamstone\n"
-	.string "whenever you want to leave.$"
-
 AncientCeram_EventScript_Gabrielle_Text_0:
-# 24 "data//maps/AncientCeram/scripts.pory"
+# 22 "data//maps/AncientCeram/scripts.pory"
 	.string "What just happened? Where are we?\p"
 	.string "...\p"
 	.string "Ouch! I can't move my leg!\p"
@@ -172,7 +157,12 @@ AncientCeram_EventScript_Gabrielle_Text_1:
 	.string "please take me with you.$"
 
 AncientCeram_EventScript_Gabrielle_Text_2:
-# 32 "data//maps/AncientCeram/scripts.pory"
+# 34 "data//maps/AncientCeram/scripts.pory"
+	.string "Shall we go? Touch the dreamstone\n"
+	.string "whenever you want to leave.$"
+
+AncientCeram_EventScript_Gabrielle_Text_3:
+# 39 "data//maps/AncientCeram/scripts.pory"
 	.string "GABRIELLE: You found another\n"
 	.string "dreamstone? Okay, let's head for it and\l"
 	.string "get out of here.$"
