@@ -4634,8 +4634,8 @@
     {
       "id": "LAYOUT_TEMP_COPY_MAP",
       "name": "TempCopyMap_Layout",
-      "width": 86,
-      "height": 86,
+      "width": 92,
+      "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/TempCopyMap/border.bin",

@@ -78,9 +78,9 @@ script AncientCeram_EventScript_Exit{
         setvar(VAR_ANCIENT_GAB_ESCAPE, 4)
         //Quest complete
         questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
-
+        
         //Warp out
-        warp(MAP_CARABRUE_TOWN, 10, 10)
+        warp(MAP_GALECREST_CITY, 60, 43)
     } 
 
     releaseall
