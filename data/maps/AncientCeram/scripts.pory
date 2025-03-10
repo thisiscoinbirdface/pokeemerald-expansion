@@ -4,6 +4,8 @@ mapscripts AncientCeram_MapScripts{
 
 //This script is called after readying the exit (by talking to gab again)
 script AncientCeram_OnTransition_ExitReady{
+    setrespawn(HEAL_LOCATION_ANCIENT_CERAM)
+
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){
         setobjectxyperm(1, 28, 22)
         setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
