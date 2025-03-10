@@ -4764,8 +4764,8 @@
     {
       "id": "LAYOUT_ANCIENT_CERAM",
       "name": "AncientCeram_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 70,
+      "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/AncientCeram/border.bin",
