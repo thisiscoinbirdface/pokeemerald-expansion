@@ -269,8 +269,8 @@ MtCeramPeak_MainEvent_Trigger::
 # 170 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 30
 # 172 "data//maps/MtCeram_Peak/scripts.pory"
-	warpteleport MAP_ANCIENT_CERAM, 49, 26
-# 175 "data//maps/MtCeram_Peak/scripts.pory"
+	warpteleport MAP_ANCIENT_CERAM, 49, 29
+# 174 "data//maps/MtCeram_Peak/scripts.pory"
 	releaseall
 	return
 

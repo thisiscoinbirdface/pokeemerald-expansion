@@ -169,8 +169,9 @@ script MtCeramPeak_MainEvent_Trigger{
     waitstate
 	delay(30)
     
-    warpteleport(MAP_ANCIENT_CERAM, 49, 26)
-
+    warpteleport(MAP_ANCIENT_CERAM, 49, 29)
 
     releaseall
 }
+
+
