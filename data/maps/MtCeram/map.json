@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_CERAM_BASE_CAMP",
-      "offset": 12,
+      "offset": 6,
       "direction": "down"
     },
     {
@@ -348,7 +348,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_KohlaTalk_Trigger0"
+      "script": "MtCeram_Eavesdrop_Trigger0"
     },
     {
       "type": "trigger",
@@ -357,7 +357,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_KohlaTalk_Trigger1"
+      "script": "MtCeram_Eavesdrop_Trigger1"
     },
     {
       "type": "trigger",
@@ -366,7 +366,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_KohlaTalk_Trigger2"
+      "script": "MtCeram_Eavesdrop_Trigger2"
     },
     {
       "type": "trigger",
@@ -375,7 +375,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_KohlaTalk_Trigger3"
+      "script": "MtCeram_Eavesdrop_Trigger3"
     }
   ],
   "bg_events": [

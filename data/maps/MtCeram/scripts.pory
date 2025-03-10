@@ -1,54 +1,61 @@
 raw `
     .set LOCALID_FOOTKOHLA, 19
     .set LOCALID_FOOTGRUNT1, 20
-    .set LOCALID_FOOTGRUNT2, 20
+    .set LOCALID_FOOTGRUNT2, 21
 
 `
 
-mapscripts MtCeram_MapScript{}
+mapscripts MtCeram_MapScripts {}
 
-script MtCeram_KohlaTalk_Trigger0{
+
+
+
+
+
+//EAVESDROP AT THE FOOT OF THE MOUNTAIN
+
+script MtCeram_Eavesdrop_Trigger0{
     lockall
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 2 walk_up face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up face_right))
     waitmovement(0)
     //Go to main script
     call(MtCeram_EventScript_Eavesdrop)
     end
 }
 
-script MtCeram_KohlaTalk_Trigger1{
+script MtCeram_Eavesdrop_Trigger1{
     lockall
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 3 walk_up face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up face_right))
     waitmovement(0)
     //Go to main script
     call(MtCeram_EventScript_Eavesdrop)
     end
 }
 
-script MtCeram_KohlaTalk_Trigger2{
+script MtCeram_Eavesdrop_Trigger2{
     lockall
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 4 walk_up face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up face_right))
     waitmovement(0)
     //Go to main script
     call(MtCeram_EventScript_Eavesdrop)
     end
 }
 
-script MtCeram_KohlaTalk_Trigger3{
+script MtCeram_Eavesdrop_Trigger3{
     lockall
     msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 5 walk_up face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up face_right))
     waitmovement(0)
     //Go to main script
     call(MtCeram_EventScript_Eavesdrop)
@@ -100,5 +107,31 @@ script MtCeram_EventScript_Eavesdrop{
     //releaseall
     releaseall
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FIGHT AT THE TOP OF THE MOUNTAIN
 
 
