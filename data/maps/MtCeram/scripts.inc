@@ -652,7 +652,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_6:
 
 MtCeram_EventScript_BeforePeakBattle_Text_7:
 # 217 "data//maps/MtCeram/scripts.pory"
-	.string "KOHLA: No! FENNEKIN!!\p"
+	.string "KOHLA: No! CHARCADET!\p"
 	.string "SOMBER GRUNT 1: Hahaha! Your ace was a\n"
 	.string "pushover, ACE ROOKE!$"
 

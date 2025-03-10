@@ -155,7 +155,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 136
-            .species = SPECIES_FENNEKIN,
+            .species = SPECIES_CHARCADET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 138
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -549,23 +549,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 290
-            .species = SPECIES_FENNEKIN,
+            .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 292
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 291
-            .lvl = 10,
+            .lvl = 8,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 294
-            .species = SPECIES_SEVIPER,
+            .species = SPECIES_CHARCADET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 296
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 295
-            .lvl = 7,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
