@@ -4774,8 +4774,8 @@
     {
       "id": "LAYOUT_GALECREST_CITY",
       "name": "GalecrestCity_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 66,
+      "height": 82,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/GalecrestCity/border.bin",
