@@ -118,6 +118,7 @@ script MtCeramPeak_MainEvent_Trigger{
 	delay(30)
 
     setweather(WEATHER_RAIN_THUNDERSTORM)
+    doweather
 
     msgbox(format("MOXIE: Is that an earthquake? It'll trigger a volcanic eruption! GABRIELLE, you - aaargh! You've released the dreamstone's energy somehow!\pGABRIELLE: I just did what you told me to do! I wanted to be useful!\pMOXIE: And now you've doomed us all!"))
     release  
