@@ -117,6 +117,8 @@ script MtCeramPeak_MainEvent_Trigger{
     waitstate
 	delay(30)
 
+    setweather(WEATHER_RAIN_THUNDERSTORM)
+
     msgbox(format("MOXIE: Is that an earthquake? It'll trigger a volcanic eruption! GABRIELLE, you - aaargh! You've released the dreamstone's energy somehow!\pGABRIELLE: I just did what you told me to do! I wanted to be useful!\pMOXIE: And now you've doomed us all!"))
     release  
 	setvar(VAR_0x8004, 2)  //vertical pan
@@ -185,10 +187,10 @@ script MtCeramPeak_MainEvent_Trigger{
     //Set vars
     setflag(FLAG_MT_CERAM_DREAMSTONE)
     //Quest 
-    questmenu(QUEST_SET_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE)
-
+    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE)
+    
     //WARP OUT
-    warp(MAP_ANCIENT_CERAM, 57, 43)
+    warp(MAP_ANCIENT_CERAM, 57, 41)
     releaseall
 }
 

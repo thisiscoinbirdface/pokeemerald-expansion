@@ -7,7 +7,7 @@ script AncientCeram_EventScript_Gabrielle{
     //If not spoken yet, do initial dialogue and progress var
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 0){
         msgbox(format("What just happened? Where are we?\p...\pOuch! I can't move my leg!\p{PLAYER}, p-please...you have to help me. I don't knwo what's going on and where we are. And the boss just...he just left me!!\p...\pI can't get up. If you find a way out of this place, please take me with you."))
-        questmenu(QUEST_SET_QUEST_START, QUEST_CERAM_ANCIENT_AREA)
+        questmenu(QUEST_MENU_SET_ACTIVE, QUEST_CERAM_ANCIENT_AREA)
         setvar(VAR_ANCIENT_GAB_ESCAPE, 1)
     } //If spoken but not found the exit
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 1) {
@@ -50,24 +50,26 @@ script AncientCeram_EventScript_Exit{
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 2){ //If exit is already set up, reiterate that you can't leave gabrielle behind
         msgbox(format("I can't leave GABRIELLE behind!"))
     } 
-    if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){ //Now exit
-        msgbox(format("I can't leave GABRIELLE behind!"))
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){ 
+        //Else get out
+        setvar(VAR_0x8004, 2)  //vertical pan
+        setvar(VAR_0x8005, 2)  //horizontal pan
+        setvar(VAR_0x8006, 8)  //num shakes
+        setvar(VAR_0x8007, 5)  //shake delay
+        special(ShakeCamera)
+        waitstate
+        release
+
+        //vars
+        setflag(FLAG_ANCIENT_FIRST_TIME)
+        //Quest complete
+        questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
+
+        //Warp out
+        warp(MAP_CARABRUE_TOWN, 10, 10)
+        releaseall
     } 
 
-    //Else get out
-	setvar(VAR_0x8004, 2)  //vertical pan
-	setvar(VAR_0x8005, 2)  //horizontal pan
-	setvar(VAR_0x8006, 8)  //num shakes
-	setvar(VAR_0x8007, 5)  //shake delay
-    special(ShakeCamera)
-    waitstate
-    release
 
-    //Quest complete
-    questmenu(QUEST_SET_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
-
-    //Warp out
-    warp(MAP_CARABRUE_TOWN, 10, 10)
-    releaseall
 
 }

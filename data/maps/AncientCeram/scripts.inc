@@ -31,7 +31,7 @@ AncientCeram_EventScript_Gabrielle_2:
 # 9 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_0
 # 10 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_SET_QUEST_START, QUEST_CERAM_ANCIENT_AREA
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_CERAM_ANCIENT_AREA
 # 11 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 1
 	goto AncientCeram_EventScript_Gabrielle_1
@@ -83,28 +83,7 @@ AncientCeram_EventScript_Exit_4:
 AncientCeram_EventScript_Exit_7:
 # 53 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 3
-	goto_if_eq AncientCeram_EventScript_Exit_11
-AncientCeram_EventScript_Exit_10:
-# 58 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_0x8004, 2
-# 59 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_0x8005, 2
-# 60 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_0x8006, 8
-# 61 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_0x8007, 5
-# 62 "data//maps/AncientCeram/scripts.pory"
-	special ShakeCamera
-# 63 "data//maps/AncientCeram/scripts.pory"
-	waitstate
-# 64 "data//maps/AncientCeram/scripts.pory"
-	release
-# 67 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_SET_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA
-# 70 "data//maps/AncientCeram/scripts.pory"
-	warp MAP_CARABRUE_TOWN, 10, 10
-# 71 "data//maps/AncientCeram/scripts.pory"
-	releaseall
+	goto_if_eq AncientCeram_EventScript_Exit_10
 	return
 
 AncientCeram_EventScript_Exit_2:
@@ -126,10 +105,30 @@ AncientCeram_EventScript_Exit_8:
 	msgbox AncientCeram_EventScript_Exit_Text_0
 	goto AncientCeram_EventScript_Exit_7
 
-AncientCeram_EventScript_Exit_11:
-# 54 "data//maps/AncientCeram/scripts.pory"
-	msgbox AncientCeram_EventScript_Exit_Text_0
-	goto AncientCeram_EventScript_Exit_10
+AncientCeram_EventScript_Exit_10:
+# 55 "data//maps/AncientCeram/scripts.pory"
+	setvar VAR_0x8004, 2
+# 56 "data//maps/AncientCeram/scripts.pory"
+	setvar VAR_0x8005, 2
+# 57 "data//maps/AncientCeram/scripts.pory"
+	setvar VAR_0x8006, 8
+# 58 "data//maps/AncientCeram/scripts.pory"
+	setvar VAR_0x8007, 5
+# 59 "data//maps/AncientCeram/scripts.pory"
+	special ShakeCamera
+# 60 "data//maps/AncientCeram/scripts.pory"
+	waitstate
+# 61 "data//maps/AncientCeram/scripts.pory"
+	release
+# 64 "data//maps/AncientCeram/scripts.pory"
+	setflag FLAG_ANCIENT_FIRST_TIME
+# 66 "data//maps/AncientCeram/scripts.pory"
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA
+# 69 "data//maps/AncientCeram/scripts.pory"
+	warp MAP_CARABRUE_TOWN, 10, 10
+# 70 "data//maps/AncientCeram/scripts.pory"
+	releaseall
+	return
 
 
 # 24 "data//maps/AncientCeram/scripts.pory"
