@@ -1,0 +1,40 @@
+raw `
+    .set LOCALID_DREAMSTONE, 1
+    .set LOCALID_BOSS, 2
+`
+
+
+mapscripts MtCeramPeak_MapScripts{}
+
+script MtCeramPeak_MainEvent_Trigger{
+    lockall
+    msgbox(format("???: So you broke through my grunts. Come here then."))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5))
+    waitmovement(0)
+
+    msgbox(format("???: A dreamstone. This is the first time I've ever seen one."))
+    release
+
+    applymovement(LOCALID_BOSS, moves(face_down))
+    waitmovement(0)
+    msgbox(format("???: Move. I want to see this trainers face."))
+    release    
+
+
+    //Grunts move
+    applymovement(3, moves(face_right))    
+    applymovement(5, moves(face_left))
+    applymovement(4, moves(walk_left face_left))    
+    waitmovement(0)
+
+    msgbox(format("???: Now step up to me."))
+    release    
+
+    //move player
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    waitmovement(0)
+
+    releaseall
+}

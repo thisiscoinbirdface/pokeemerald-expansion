@@ -287,42 +287,44 @@ MtCeram_EventScript_BeforePeakBattle::
 # 227 "data//maps/MtCeram/scripts.pory"
 	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_4
 # 228 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 229 "data//maps/MtCeram/scripts.pory"
 	removeobject LOCALID_TOPKOHLA
-# 231 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPGRUNT1, MtCeram_EventScript_Eavesdrop_Movement_2
 # 232 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_Eavesdrop_Movement_2
+	applymovement LOCALID_TOPGRUNT1, MtCeram_EventScript_Eavesdrop_Movement_2
 # 233 "data//maps/MtCeram/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_Eavesdrop_Movement_2
 # 234 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_9
+	waitmovement 0
 # 235 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_BeforePeakBattle_Movement_5
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_9
 # 236 "data//maps/MtCeram/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_BeforePeakBattle_Movement_5
 # 237 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_10
-# 238 "data//maps/MtCeram/scripts.pory"
-	release
-# 240 "data//maps/MtCeram/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtCeram_EventScript_BeforePeakBattle_Movement_6
-# 241 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
-# 248 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_11
-# 249 "data//maps/MtCeram/scripts.pory"
+# 238 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_10
+# 239 "data//maps/MtCeram/scripts.pory"
 	release
-# 253 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 241 "data//maps/MtCeram/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtCeram_EventScript_BeforePeakBattle_Movement_6
+# 242 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 249 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_11
+# 250 "data//maps/MtCeram/scripts.pory"
+	release
 # 254 "data//maps/MtCeram/scripts.pory"
-	removeobject LOCALID_TOPGRUNT1
+	fadescreen FADE_TO_BLACK
 # 255 "data//maps/MtCeram/scripts.pory"
-	removeobject LOCALID_TOPGRUNT2
+	removeobject LOCALID_TOPGRUNT1
 # 256 "data//maps/MtCeram/scripts.pory"
+	removeobject LOCALID_TOPGRUNT2
+# 257 "data//maps/MtCeram/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 260 "data//maps/MtCeram/scripts.pory"
+# 261 "data//maps/MtCeram/scripts.pory"
 	setflag FLAG_MT_CERAM_SOMBER_PEAK
-# 262 "data//maps/MtCeram/scripts.pory"
+# 263 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	return
 
@@ -545,17 +547,17 @@ MtCeram_EventScript_BeforePeakBattle_Movement_4:
 	walk_down
 	step_end
 
-# 235 "data//maps/MtCeram/scripts.pory"
+# 236 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_BeforePeakBattle_Movement_5:
-# 235 "data//maps/MtCeram/scripts.pory"
+# 236 "data//maps/MtCeram/scripts.pory"
 	jump_in_place_down
-# 235 "data//maps/MtCeram/scripts.pory"
+# 236 "data//maps/MtCeram/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 240 "data//maps/MtCeram/scripts.pory"
+# 241 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_BeforePeakBattle_Movement_6:
-# 240 "data//maps/MtCeram/scripts.pory"
+# 241 "data//maps/MtCeram/scripts.pory"
 	walk_up
 	step_end
 
@@ -660,19 +662,19 @@ MtCeram_EventScript_BeforePeakBattle_Text_8:
 	.string "them...I couldn't stop Team Somber...$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_9:
-# 234 "data//maps/MtCeram/scripts.pory"
+# 235 "data//maps/MtCeram/scripts.pory"
 	.string "SOMBER GRUNT 1: And you? You want a\n"
 	.string "beating too?$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_10:
-# 237 "data//maps/MtCeram/scripts.pory"
+# 238 "data//maps/MtCeram/scripts.pory"
 	.string "SOMBER GRUNT 2: Hey, aren't you the\n"
 	.string "trainer that beat GABRIELLE?\p"
 	.string "SOMBER GRUNT 1: Yes you are! Let's see\n"
 	.string "what you've got!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_11:
-# 248 "data//maps/MtCeram/scripts.pory"
+# 249 "data//maps/MtCeram/scripts.pory"
 	.string "SOMBER GRUNT 1: How could you beat us?\p"
 	.string "SOMBER GRUNT 2: We-we've got to tell\n"
 	.string "the boss...SOMBER GRUNT 1: Yeah...c'mon\l"
