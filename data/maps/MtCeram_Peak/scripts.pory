@@ -159,7 +159,7 @@ script MtCeramPeak_MainEvent_Trigger{
 	delay(30)
     fadescreen(FADE_TO_BLACK)
     fadescreen(FADE_FROM_BLACK)
-    
+
     msgbox(format("GABRIELLE: W-what's happening?"))
     release
 	setvar(VAR_0x8004, 2)  //vertical pan
@@ -177,10 +177,17 @@ script MtCeramPeak_MainEvent_Trigger{
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
 	setvar(VAR_0x8006, 8)  //num shakes
-	setvar(VAR_0x8007, 5)  //shake delay        
+	setvar(VAR_0x8007, 5)  //shake delay
     special(ShakeCamera)
     waitstate
     release    
+
+    //Set vars
+    setflag(FLAG_MT_CERAM_DREAMSTONE)
+    //Quest 
+    questmenu(QUEST_SET_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE)
+
+    //WARP OUT
     warp(MAP_ANCIENT_CERAM, 57, 43)
     releaseall
 }

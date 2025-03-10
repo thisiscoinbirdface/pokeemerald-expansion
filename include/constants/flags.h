@@ -69,7 +69,7 @@
 #define FLAG_MT_CERAM_SOMBER_FOOT    0x36 // at the foot of the mountain, eavesdrop with kohla
 #define FLAG_MT_CERAM_SOMBER_PEAK    0x37 // at the top (just below the peak) battle with grunts. kohla loses.
 #define FLAG_MT_CERAM_DREAMSTONE    0x38 // at the peak itself, battle the boss and touch the dreamstone.
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_ANCIENT_FIRST_TIME    0x39 // go to the ancient area for the first time. triggered on EXIT
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag

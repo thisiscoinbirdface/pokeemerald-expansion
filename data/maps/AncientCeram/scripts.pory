@@ -1,0 +1,73 @@
+mapscripts AncientCeram_MapScripts{}
+
+script AncientCeram_EventScript_Gabrielle{
+    lockall
+    faceplayer
+    
+    //If not spoken yet, do initial dialogue and progress var
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 0){
+        msgbox(format("What just happened? Where are we?\p...\pOuch! I can't move my leg!\p{PLAYER}, p-please...you have to help me. I don't knwo what's going on and where we are. And the boss just...he just left me!!\p...\pI can't get up. If you find a way out of this place, please take me with you."))
+        questmenu(QUEST_SET_QUEST_START, QUEST_CERAM_ANCIENT_AREA)
+        setvar(VAR_ANCIENT_GAB_ESCAPE, 1)
+    } //If spoken but not found the exit
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 1) {
+        msgbox(format("If you find a way out of this place, please take me with you."))
+    }   //If found the exit, get out and end it.
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 2) {
+        msgbox(format("GABRIELLE: You found another dreamstone? Okay, let's head for it and get out of here."))
+        setvar(VAR_ANCIENT_GAB_ESCAPE, 3)
+
+        //Fade out and move both objects
+        fadescreen(FADE_TO_WHITE)
+        setobjectxyperm(1, 28, 22)
+        setobjectxyperm(OBJ_EVENT_ID_PLAYER, 28, 23)
+        applymovement(1, moves(face_left))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        fadescreen(FADE_FROM_WHITE)
+    }
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 3) {
+        msgbox(format("Shall we go? Touch the dreamstone whenever you want to leave."))
+    }
+
+    releaseall
+
+}
+
+
+
+script AncientCeram_EventScript_Exit{
+    lockall
+
+    //If I haven't spoken to Gabrielle yet, decline exit (but set up the exit dialogue for gabrielle)
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 0){
+        msgbox(format("I can't leave GABRIELLE behind!"))
+        setvar(VAR_ANCIENT_GAB_ESCAPE, 2)
+    }    //If I have spoken to Gabrielle but not picked up yet, decline exit (and set up the exit dialogue for gabrielle)
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 1){
+        msgbox(format("I can't leave GABRIELLE behind!"))
+        setvar(VAR_ANCIENT_GAB_ESCAPE, 2)
+    } 
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 2){ //If exit is already set up, reiterate that you can't leave gabrielle behind
+        msgbox(format("I can't leave GABRIELLE behind!"))
+    } 
+    if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){ //Now exit
+        msgbox(format("I can't leave GABRIELLE behind!"))
+    } 
+
+    //Else get out
+	setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+    waitstate
+    release
+
+    //Quest complete
+    questmenu(QUEST_SET_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
+
+    //Warp out
+    warp(MAP_CARABRUE_TOWN, 10, 10)
+    releaseall
+
+}

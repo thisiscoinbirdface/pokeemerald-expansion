@@ -12204,6 +12204,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ANCIENT_CERAM",
+          "base_label": "gAncientCeram0",
+          "land_mons": {
+            "encounter_rate": 9,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ANORITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHIELDON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ANORITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHIELDON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ARCHEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHIELDON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ANORITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ARCHEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ANORITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHIELDON"
+              }
+            ]
+          }
         }
       ]
     },
