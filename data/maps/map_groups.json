@@ -74,7 +74,8 @@
     "CeramBaseCampGym",
     "MtCeram",
     "MtCeram_Caves",
-    "MtCeram_Peak"
+    "MtCeram_Peak",
+    "AncientCeram"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

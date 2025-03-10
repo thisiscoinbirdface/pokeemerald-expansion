@@ -1,0 +1,104 @@
+raw `
+    .set LOCALID_FOOTKOHLA, 19
+    .set LOCALID_FOOTGRUNT1, 20
+    .set LOCALID_FOOTGRUNT2, 20
+
+`
+
+mapscripts MtCeram_MapScript{}
+
+script MtCeram_KohlaTalk_Trigger0{
+    lockall
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    release
+    //Walk to Kohla
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 2 walk_up face_right))
+    waitmovement(0)
+    //Go to main script
+    call(MtCeram_EventScript_Eavesdrop)
+    end
+}
+
+script MtCeram_KohlaTalk_Trigger1{
+    lockall
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    release
+    //Walk to Kohla
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 3 walk_up face_right))
+    waitmovement(0)
+    //Go to main script
+    call(MtCeram_EventScript_Eavesdrop)
+    end
+}
+
+script MtCeram_KohlaTalk_Trigger2{
+    lockall
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    release
+    //Walk to Kohla
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 4 walk_up face_right))
+    waitmovement(0)
+    //Go to main script
+    call(MtCeram_EventScript_Eavesdrop)
+    end
+}
+
+script MtCeram_KohlaTalk_Trigger3{
+    lockall
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    release
+    //Walk to Kohla
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up wal_left * 5 walk_up face_right))
+    waitmovement(0)
+    //Go to main script
+    call(MtCeram_EventScript_Eavesdrop)
+    end
+}
+
+
+script MtCeram_EventScript_Eavesdrop{
+    lockall
+
+    //Koha text
+    msgbox(format("KOHLA: I've been spying on those two Team Somber Grunts. Don't make a sound!"))
+    release   
+
+    //Somber dialogue
+    applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
+    msgbox(format("SOMBER GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
+    release
+    applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
+    msgbox(format("SOMBER GRUNT 2: But where is the boss? And GABRIELLE?"))
+    applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
+    msgbox(format("SOMBER GRUNT 1: The boss found the dreamstone on top of the mountain! She's trying to climb it right now.\pAs for GABRIELLE...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
+    release
+    msgbox(format("SOMBER GRUNT 2: Serves her right for losing! TEAM SOMBER doesn't need any losers!\pSOMBER GRUNT 1: Yeah what a loser she is! Now lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
+    release
+
+    //Somber walk off
+    applymovement(LOCALID_FOOTGRUNT1, moves(walk_right * 8))    
+    applymovement(LOCALID_FOOTGRUNT2, moves(walk_right * 8))
+    waitmovement(0)
+
+    //remove objects
+    removeobject(LOCALID_FOOTGRUNT1)
+    removeobject(LOCALID_FOOTGRUNT2)
+
+    //Kohla talk
+    applymovement(LOCALID_FOOTKOHLA, moves(face_left))
+    msgbox(format("KOHLA: Heard that? Well I'm going to head up there first. Gotta do the right thing, you know? Na...you don't.\pSee you never, chum!"))
+    release
+
+    //Kohla walk off
+    applymovement(LOCALID_FOOTKOHLA, moves(walk_down walk_right * 4 walk_up * 2 walk_right * 4))
+    waitmovement(0)
+    removeobject(LOCALID_FOOTKOHLA)
+
+    //Set flags and vars, update quest?
+    setflag(FLAG_MT_CERAM_SOMBER_FOOT)
+
+    //releaseall
+    releaseall
+}
+
+

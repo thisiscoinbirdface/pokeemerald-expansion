@@ -1,7 +1,7 @@
 {
-  "id": "MAP_MT_CERAM_PEAK",
-  "name": "MtCeram_Peak",
-  "layout": "LAYOUT_MT_CERAM_PEAK",
+  "id": "MAP_ANCIENT_CERAM",
+  "name": "AncientCeram",
+  "layout": "LAYOUT_ANCIENT_CERAM",
   "music": "MUS_CUSTOM_FLOCKOFBIRDS",
   "region_map_section": "MAPSEC_MT_CERAM",
   "requires_flash": false,
@@ -12,13 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_MT_CERAM",
-      "offset": 2,
-      "direction": "down"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
