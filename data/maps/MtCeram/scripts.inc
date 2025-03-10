@@ -239,42 +239,90 @@ MtCeram_EventScript_BeforePeakBattle::
 # 194 "data//maps/MtCeram/scripts.pory"
 	release
 # 197 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPGRUNT1, MtCeram_EventScript_BeforePeakBattle_Movement_1
+	applymovement LOCALID_TOPKOHLA, MtCeram_Eavesdrop_Trigger0_Movement_0
 # 198 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_BeforePeakBattle_Movement_1
+	waitmovement 0
 # 199 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_1
+	delay 16
 # 200 "data//maps/MtCeram/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TOPGRUNT1, MtCeram_EventScript_BeforePeakBattle_Movement_1
 # 201 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_4
+	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_BeforePeakBattle_Movement_1
 # 202 "data//maps/MtCeram/scripts.pory"
-	release
-# 205 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_5
-# 206 "data//maps/MtCeram/scripts.pory"
-	release
-# 207 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_2
-# 208 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_1
+# 203 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
-# 209 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_6
-# 210 "data//maps/MtCeram/scripts.pory"
+# 204 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_4
+# 205 "data//maps/MtCeram/scripts.pory"
 	release
+# 208 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_5
+# 209 "data//maps/MtCeram/scripts.pory"
+	release
+# 210 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_2
+# 211 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 212 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_6
 # 213 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 214 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_BeforePeakBattle_Text_7
-# 215 "data//maps/MtCeram/scripts.pory"
 	release
 # 216 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 217 "data//maps/MtCeram/scripts.pory"
-	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_3
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_7
 # 218 "data//maps/MtCeram/scripts.pory"
+	release
+# 219 "data//maps/MtCeram/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 220 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_3
+# 221 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
+# 225 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_8
+# 226 "data//maps/MtCeram/scripts.pory"
+	release
+# 227 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPKOHLA, MtCeram_EventScript_BeforePeakBattle_Movement_4
+# 228 "data//maps/MtCeram/scripts.pory"
+	removeobject LOCALID_TOPKOHLA
+# 231 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPGRUNT1, MtCeram_EventScript_Eavesdrop_Movement_2
+# 232 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_Eavesdrop_Movement_2
+# 233 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 234 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_9
+# 235 "data//maps/MtCeram/scripts.pory"
+	applymovement LOCALID_TOPGRUNT2, MtCeram_EventScript_BeforePeakBattle_Movement_5
+# 236 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 237 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_10
 # 238 "data//maps/MtCeram/scripts.pory"
+	release
+# 240 "data//maps/MtCeram/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtCeram_EventScript_BeforePeakBattle_Movement_6
+# 241 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 248 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_BeforePeakBattle_Text_11
+# 249 "data//maps/MtCeram/scripts.pory"
+	release
+# 253 "data//maps/MtCeram/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 254 "data//maps/MtCeram/scripts.pory"
+	removeobject LOCALID_TOPGRUNT1
+# 255 "data//maps/MtCeram/scripts.pory"
+	removeobject LOCALID_TOPGRUNT2
+# 256 "data//maps/MtCeram/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 260 "data//maps/MtCeram/scripts.pory"
+	setflag FLAG_MT_CERAM_SOMBER_PEAK
+# 262 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	return
 
@@ -465,16 +513,50 @@ MtCeram_EventScript_BeforePeakBattle_Movement_1:
 	emote_exclamation_mark
 	step_end
 
-# 207 "data//maps/MtCeram/scripts.pory"
+# 210 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_BeforePeakBattle_Movement_2:
-# 207 "data//maps/MtCeram/scripts.pory"
+# 210 "data//maps/MtCeram/scripts.pory"
 	face_up
 	step_end
 
-# 217 "data//maps/MtCeram/scripts.pory"
+# 220 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_BeforePeakBattle_Movement_3:
-# 217 "data//maps/MtCeram/scripts.pory"
+# 220 "data//maps/MtCeram/scripts.pory"
 	walk_down
+	step_end
+
+# 227 "data//maps/MtCeram/scripts.pory"
+MtCeram_EventScript_BeforePeakBattle_Movement_4:
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_right
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_right
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+# 227 "data//maps/MtCeram/scripts.pory"
+	walk_down
+	step_end
+
+# 235 "data//maps/MtCeram/scripts.pory"
+MtCeram_EventScript_BeforePeakBattle_Movement_5:
+# 235 "data//maps/MtCeram/scripts.pory"
+	jump_in_place_down
+# 235 "data//maps/MtCeram/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 240 "data//maps/MtCeram/scripts.pory"
+MtCeram_EventScript_BeforePeakBattle_Movement_6:
+# 240 "data//maps/MtCeram/scripts.pory"
+	walk_up
 	step_end
 
 MtCeram_Eavesdrop_Trigger0_Text_0:
@@ -552,22 +634,48 @@ MtCeram_EventScript_BeforePeakBattle_Text_3:
 	.string "two of us?$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_4:
-# 201 "data//maps/MtCeram/scripts.pory"
+# 204 "data//maps/MtCeram/scripts.pory"
 	.string "SOMBER GRUNT 2: The help arrives. But\n"
 	.string "you're both just kids! Hahaha!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_5:
-# 205 "data//maps/MtCeram/scripts.pory"
+# 208 "data//maps/MtCeram/scripts.pory"
 	.string "KOHLA: I told you I don't need your\n"
 	.string "help! You'll just get in the way.$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_6:
-# 209 "data//maps/MtCeram/scripts.pory"
+# 212 "data//maps/MtCeram/scripts.pory"
 	.string "KOHLA: Now come on TEAM SOMBER! Bring\n"
 	.string "it on!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_7:
-# 214 "data//maps/MtCeram/scripts.pory"
+# 217 "data//maps/MtCeram/scripts.pory"
 	.string "KOHLA: No! FENNEKIN!!\p"
 	.string "SOMBER GRUNT 1: Hahaha! Your ace was a\n"
 	.string "pushover, ACE ROOKE!$"
+
+MtCeram_EventScript_BeforePeakBattle_Text_8:
+# 225 "data//maps/MtCeram/scripts.pory"
+	.string "KOHLA: My {PKMN}...I have to go and heal\n"
+	.string "them...I couldn't stop Team Somber...$"
+
+MtCeram_EventScript_BeforePeakBattle_Text_9:
+# 234 "data//maps/MtCeram/scripts.pory"
+	.string "SOMBER GRUNT 1: And you? You want a\n"
+	.string "beating too?$"
+
+MtCeram_EventScript_BeforePeakBattle_Text_10:
+# 237 "data//maps/MtCeram/scripts.pory"
+	.string "SOMBER GRUNT 2: Hey, aren't you the\n"
+	.string "trainer that beat GABRIELLE?\p"
+	.string "SOMBER GRUNT 1: Yes you are! Let's see\n"
+	.string "what you've got!$"
+
+MtCeram_EventScript_BeforePeakBattle_Text_11:
+# 248 "data//maps/MtCeram/scripts.pory"
+	.string "SOMBER GRUNT 1: How could you beat us?\p"
+	.string "SOMBER GRUNT 2: We-we've got to tell\n"
+	.string "the boss...SOMBER GRUNT 1: Yeah...c'mon\l"
+	.string "let's hurry. {PLAYER} - you may have\l"
+	.string "beaten us but you can't stop Team\l"
+	.string "Somber from achieving our goal!$"

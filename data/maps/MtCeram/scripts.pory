@@ -224,25 +224,41 @@ script MtCeram_EventScript_BeforePeakBattle{
     //Kohla exit
     msgbox(format("KOHLA: My {PKMN}...I have to go and heal them...I couldn't stop Team Somber..."))
     release  
-    applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right * 2 walk_down *5))
+    applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
+    waitmovement(0)
     removeobject(LOCALID_TOPKOHLA)
 
     //Team Somber dialogue
+    applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
+    applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("SOMBER GRUNT 1: And you? You want a beating too?"))
+    applymovement(LOCALID_TOPGRUNT2, moves(jump_in_place_down emote_exclamation_mark))
+    waitmovement(0)    
+    msgbox(format("SOMBER GRUNT 2: Hey, aren't you the trainer that beat GABRIELLE?\pSOMBER GRUNT 1: Yes you are! Let's see what you've got!"))
+    release
 
-
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)       
 
     //now you battle
 
 
 
     //grunts beaten, disappear
-
+    msgbox(format("SOMBER GRUNT 1: How could you beat us?\pSOMBER GRUNT 2: We-we've got to tell the boss...SOMBER GRUNT 1: Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving our goal!"))
+    release   
 
 
     //Move on
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_TOPGRUNT1)
+    removeobject(LOCALID_TOPGRUNT2)
+    fadescreen(FADE_FROM_BLACK)
 
 
-
+    //Vars
+    setflag(FLAG_MT_CERAM_SOMBER_PEAK)
 
     releaseall
 }

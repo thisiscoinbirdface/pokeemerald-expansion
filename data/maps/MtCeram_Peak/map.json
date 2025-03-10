@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_MT_CERAM",
-      "offset": 2,
+      "offset": 3,
       "direction": "down"
     }
   ],
