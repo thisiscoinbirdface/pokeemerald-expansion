@@ -97,7 +97,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "MtCeramPeak_MainEvent_Trigger"
     }
   ],
   "bg_events": [

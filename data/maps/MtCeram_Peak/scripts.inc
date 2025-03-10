@@ -5,7 +5,7 @@
 # 3 "data//maps/MtCeram_Peak/scripts.pory"
     .set LOCALID_BOSS, 2
 
-MtCeramPeak_MapScripts::
+MtCeram_Peak_MapScripts::
 	.byte 0
 
 

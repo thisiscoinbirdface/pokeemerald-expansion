@@ -3,10 +3,12 @@ raw `
     .set LOCALID_BOSS, 2
 `
 
+mapscripts MtCeram_Peak_MapScripts{}
 
-mapscripts MtCeramPeak_MapScripts{}
 
 script MtCeramPeak_MainEvent_Trigger{
+    if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}
+
     lockall
     msgbox(format("???: So you broke through my grunts. Come here then."))
     release
