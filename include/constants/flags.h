@@ -73,8 +73,8 @@
 #define FLAG_GALECREST_POST_ANCIENT    0x3A // flag for the intro galecrest cutscene - after TPing back to the present
 #define FLAG_GALECREST_POOCHYENA    0x3B // the poochyena blocking the way
 #define FLAG_GALECREST_DETECTIVE_CONVO    0x3C // the conversation with rue and the detectives
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
+#define FLAG_DETECTIVE_ACAD_KOHLA    0x3D // After talking to kohla at the academy
+#define FLAG_DETECTIVE_ACAD_BREECH    0x3E // check this flag off once you meet breech next.
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag

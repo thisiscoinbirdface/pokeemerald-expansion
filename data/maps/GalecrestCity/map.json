@@ -432,7 +432,27 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 54,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_DETECTIVE_ACADEMY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_DETECTIVE_ACADEMY",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
     {

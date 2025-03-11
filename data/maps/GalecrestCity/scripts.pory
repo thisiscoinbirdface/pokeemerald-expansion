@@ -1,8 +1,8 @@
 raw `
     .set LOCALID_GAB, 17
-    .set LOCALID_DET1, 26
-    .set LOCALID_DET2, 25
-    .set LOCALID_RUE, 24
+    .set LOCALID_DET1, 25
+    .set LOCALID_DET2, 24
+    .set LOCALID_RUE, 23
 `
 
 mapscripts GalecrestCity_MapScripts{

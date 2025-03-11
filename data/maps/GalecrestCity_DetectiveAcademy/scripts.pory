@@ -1,0 +1,32 @@
+mapscripts GalecrestCity_DetectiveAcademy_Mapscripts{}
+
+
+
+//Kohla talk
+script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
+    lockall
+
+    //Kohla stares blankly
+    //Explains his past and motivations
+    msgbox(format("...\p...\p...\pKOHLA: I'm as an orphan. As a child I learned to rely on myself. I saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class..\p...but it wasn't enough."))
+
+    //Turns, thanks player for telling him what he needs
+    applymovement(LOCALID_KOHLA, moves(face_up))
+    waitmovement(0)
+    delay(24)
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pStronger...at any cost."))
+
+    //Start walking out
+    applymovement(LOCALID_KOHLA, moves(walk_right walk_up*2 walk_left walk_up face_down))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    //Reminder for silversun city and gym badge
+    msgbox(format("Silverstone City is west of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City."))
+
+    //Leaves
+    applymovement(LOCALID_KOHLA, moves(walk_up * 5))
+    removeobject(LOCALID_KOHLA)
+    setflag(FLAG_DETECTIVE_ACAD_KOHLA)    
+
+    releaseall
+}

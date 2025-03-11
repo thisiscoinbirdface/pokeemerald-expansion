@@ -916,7 +916,7 @@
       "name": "RustboroCity_DevonCorp_1F_Layout",
       "width": 19,
       "height": 9,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RustboroCity_DevonCorp_1F/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_DevonCorp_1F/map.bin"
@@ -4780,6 +4780,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/GalecrestCity/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_DETECTIVE_ACADEMY",
+      "name": "GalecrestCity_DetectiveAcademy_Layout",
+      "width": 60,
+      "height": 90,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/GalecrestCity_DetectiveAcademy/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_DetectiveAcademy/map.bin"
     }
   ]
 }

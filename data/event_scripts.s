@@ -1222,3 +1222,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AncientCeram/scripts.inc"
 
 	.include "data/maps/GalecrestCity/scripts.inc"
+
+	.include "data/maps/GalecrestCity_DetectiveAcademy/scripts.inc"
