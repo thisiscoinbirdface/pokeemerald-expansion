@@ -137,7 +137,7 @@ AncientCeram_EventScript_Exit_11:
 # 80 "data//maps/AncientCeram/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA
 # 83 "data//maps/AncientCeram/scripts.pory"
-	warp MAP_GALECREST_CITY, 60, 43
+	warp MAP_GALECREST_CITY, 58, 42
 	goto AncientCeram_EventScript_Exit_10
 
 
