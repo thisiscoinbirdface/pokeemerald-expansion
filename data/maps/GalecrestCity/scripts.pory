@@ -22,7 +22,28 @@ mapscripts GalecrestCity_MapScripts{
 //On warp: Gabrielle dialogue - thanks you (tells you that you're in galecrest with the detective academy)
 //Walk together to some place, then see the cops, and gab fucks off.
 
-//detectives
+script GalecrestCity_OnFrame{
+    //If the flag is done, then skip
+    if (flag(FLAG_GALECREST_POST_ANCIENT)) {end}
+
+    //Cutscene
+    //Phase 1: Gabrielle
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    msgbox(format("GABRIELLE: ...have we left that place?\pYes! Yes we have! I'm so relieved. I've never been so happy to see a city before!\pThis must be GALECREST CITY. The Detective Academy is here. I suppose you'll be headed there. Just head north from here...\p...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye."))
+    release
+    
+    //Remove gab
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_GAB)
+    fadescreen(FADE_FROM_BLACK)
+
+    setflag(FLAG_GALECREST_POST_ANCIENT)
+    releaseall
+}
+
+//detectives - meet them inside the detective academy
 //where were you?
 //...
 //This is incredible. I'm glad you survived that.
@@ -35,35 +56,144 @@ mapscripts GalecrestCity_MapScripts{
 
 //We all should head there.
 
-script GalecrestCity_OnFrame{
-    //If the flag is done, then skip
-    if (flag(FLAG_GALECREST_POST_ANCIENT)) {end}
-
-    //Cutscene
-    //Phase 1: Gabrielle
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+script GalecrestCity_DetectiveMeet_ReactionInit{
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("GABRIELLE: I've never been so happy to see a city before! This must be GALECREST CITY. The Detective Academy is here. I suppose you'll be headed there...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye.\p"))
+
+    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
+    return
+}
+
+script GalecrestCity_DetectiveMeet_Trigger0{
+    lockall
+
+    //Make all people face player and exclamation mark
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+
+    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
-    
-    //Remove gab
+
+    //Move player
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *2 walk_up))
+
+    //Trigger next script
+    call(GalecrestCity_DetectiveMeet_Main)
+}
+
+script GalecrestCity_DetectiveMeet_Trigger1{
+    lockall
+
+    //Make all people face player and exclamation mark
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+
+    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
+    release
+
+    //Move player
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right walk_up))
+    waitmovement(0)
+
+    //Trigger next script
+    call(GalecrestCity_DetectiveMeet_Main)
+}
+
+script GalecrestCity_DetectiveMeet_Trigger2{
+    lockall
+
+    //Make all people face player and exclamation mark
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+
+    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
+    release
+
+    //Move player
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2))
+    waitmovement(0)
+
+    //Trigger next script
+    call(GalecrestCity_DetectiveMeet_Main)
+}
+
+script GalecrestCity_DetectiveMeet_Trigger3{
+    lockall
+
+    //Make all people face player and exclamation mark
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+
+    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
+    release
+
+    //Move player
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left walk_up))
+    waitmovement(0)
+
+    //Trigger next script
+    call(GalecrestCity_DetectiveMeet_Main)
+}
+
+
+script GalecrestCity_DetectiveMeet_Main{
+    msgbox(format("RUE: the detectives here have been pursuing other leads on PRofessor Tenebris' whereabouts. We heard from KOHLA that you went up to the peak to stop Team Somber. What happened up there?\p..."))
+    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    waitmovement(0)    
+    msgbox(format("RUE: What! Is that true? Did all of that happen?\p...\pI'm glad you're safe, {PLAYER}. What a series of events!"))
+    msgbox(format("DETECTIVE: So the dreamstones transported you to another dimension that you couldn't recognise? And the {PKMN} were completely different too?"))
+    release
+    applymovement(LOCALID_DET1, moves(face_right ))
+    applymovement(LOCALID_DET2, moves(face_right ))
+    applymovement(LOCALID_RUE, moves(face_left ))
+    msgbox(format("DETECTIVE: Did you know this was possible RUE?\p RUE: No, I had no idea. We knew that dreamstones absorbed {PKMN} memories, but to transport things and people..."))
+    release
+    applymovement(LOCALID_DET1, moves(face_down))
+    applymovement(LOCALID_DET2, moves(face_down))
+    applymovement(LOCALID_RUE, moves(face_down))
+    msgbox(format("RUE: {PLAYER}, you encountered ancient {PKMN} there, right? I wonder...\pDid the dreamstone take you back to the past somehow?\pRUE: Incredible...so much we don't yet know...\pI need to do some research. I'm going to head back to the lab.\p{PLAYER}, the detectives have some updates for you.\p...\pI'm glad you're okay."))
+    release
+
+    //Rue exit
+    applymovement(LOCALID_DET1, moves(face_down))
+    applymovement(LOCALID_DET2, moves(face_down)) 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down)) 
+
+    applymovement(LOCALID_RUE, moves(walk_right, walk_down * 2 walk_left walk_down *4))
+    waitmovement(0)
+    removeobject(LOCALID_RUE)
+
+    //Back to detectives
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that he was spotted in Goldensun City."))
+    msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Goldensun City too.\pIf the Professor, his dreamstone and Team Somber are in the same spot, things could erupt. We have to be there."))
+    msgbox(format("DETECTIVE: But now that we know Team Somber is involved, we fear for your safety, {PLAYER}. You may have handled a couple of grunts, but you're still green.\pSo heed my instructions carefully - make your way to Goldensun City as soon as possible and keep a low profile. Do NOT engage with any suspicious individuals!"))       
+    applymovement(LOCALID_DET1, moves(face_up))
+    applymovement(LOCALID_DET2, moves(face_up))        
+    msgbox(format("DETECTIVE: This building is the Detective Academy. Your frield KOHLA was trained here. He knows the plan already. Go and talk to him first."))       
+
+    //exit
     fadescreen(FADE_TO_BLACK)
-    removeobject(LOCALID_GAB)
+    removeobject(LOCALID_DET1)
+    removeobject(LOCALID_DET2)
     fadescreen(FADE_FROM_BLACK)
 
-
-
-
-
-
-
-
-    //End
-    setflag(FLAG_GALECREST_POST_ANCIENT)
+    //Setvars quests etc
+    setflag(FLAG_GALECREST_DETECTIVE_CONVO)
     releaseall
-
-
+    
 }
 
 
@@ -71,4 +201,25 @@ script GalecrestCity_OnFrame{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//POOCHYENA blocking the route
+script GalecrestCity_EventScript_Poochyena{
+    if (flag(FLAG_GALECREST_POOCHYENA)) {end}
+
+    lockall
+    msgbox(format("POOCHYENA: grr...\pThe POOCHYENA are clearly on edge. Better not aggravate them!"))
+    releaseall
+
+}
 
