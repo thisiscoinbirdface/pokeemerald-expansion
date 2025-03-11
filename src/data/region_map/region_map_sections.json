@@ -1775,6 +1775,22 @@
       "y": 0,
       "width": 1,
       "height": 1
-    }    
+    },
+    {
+      "map_section": "MAPSEC_ANCIENT_CERAM",
+      "name": "???",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_GALECREST_CITY",
+      "name": "Galecrest City",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    }
   ]
 }
