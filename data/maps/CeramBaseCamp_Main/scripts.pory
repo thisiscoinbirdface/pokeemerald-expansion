@@ -437,7 +437,7 @@ script CeramBaseCamp_Main_NPC6{
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("On the other side of Mt. Ceram is Goldensun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."))
+        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."))
     } else {
         //When Team Somber is there
         msgbox(format("I can't wait for ARIAN to put these crooks in their place!"))

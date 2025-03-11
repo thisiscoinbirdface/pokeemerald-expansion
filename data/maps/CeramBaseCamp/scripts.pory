@@ -24,7 +24,7 @@ script CeramBaseCamp_NPC1{
 script CeramBaseCamp_NPC2{
     lockall
     faceplayer
-    msgbox(format("This camp was initially established to dig a tunnel through Mt. Ceram to Goldensun City. Old equipment from back then is left here. I remember one of the Drilburs made their home inside one of these machines and refused to leave! Haha! That was many years ago. It must have evolved now."))
+    msgbox(format("This camp was initially established to dig a tunnel through Mt. Ceram to Silversun City. Old equipment from back then is left here. I remember one of the Drilburs made their home inside one of these machines and refused to leave! Haha! That was many years ago. It must have evolved now."))
     releaseall
 }
 

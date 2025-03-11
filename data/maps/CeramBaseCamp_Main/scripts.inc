@@ -1039,7 +1039,7 @@ CeramBaseCamp_Main_NPC5_Text_6:
 CeramBaseCamp_Main_NPC6_Text_0:
 # 440 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "On the other side of Mt. Ceram is\n"
-	.string "Goldensun City. I hear the trek down\l"
+	.string "Silversun City. I hear the trek down\l"
 	.string "from the summit is tough, because the\l"
 	.string "native CENTISKORCH and SCOLIPEDE\l"
 	.string "fight each other.$"

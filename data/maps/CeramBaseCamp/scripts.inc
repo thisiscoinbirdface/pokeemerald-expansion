@@ -256,7 +256,7 @@ CeramBaseCamp_NPC2_Text_0:
 # 27 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "This camp was initially established to\n"
 	.string "dig a tunnel through Mt. Ceram to\l"
-	.string "Goldensun City. Old equipment from back\l"
+	.string "Silversun City. Old equipment from back\l"
 	.string "then is left here. I remember one of the\l"
 	.string "Drilburs made their home inside one of\l"
 	.string "these machines and refused to leave!\l"

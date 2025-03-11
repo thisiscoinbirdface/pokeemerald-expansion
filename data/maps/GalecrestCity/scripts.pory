@@ -1,8 +1,8 @@
 raw `
     .set LOCALID_GAB, 17
-    .set LOCALID_DET1, 24
+    .set LOCALID_DET1, 26
     .set LOCALID_DET2, 25
-    .set LOCALID_RUE, 26
+    .set LOCALID_RUE, 24
 `
 
 mapscripts GalecrestCity_MapScripts{
@@ -50,21 +50,12 @@ script GalecrestCity_OnFrame{
 //Where was kohla? he was defeated?
 //kohla - quiet.
 //Rue - I never knew this, ill go research
-//Detectives - we received a tipoff that prof tenebris was sighted in Goldensun City to the east.
+//Detectives - we received a tipoff that prof tenebris was sighted in Silversun City to the east.
 //Team Somber HQ is also there.
 //Everything makes sense - Team Somber knew things about the dreamstone, so they must have kidnapped the prof.
 
 //We all should head there.
 
-script GalecrestCity_DetectiveMeet_ReactionInit{
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
-    waitmovement(0)
-
-    msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
-    return
-}
 
 script GalecrestCity_DetectiveMeet_Trigger0{
     lockall
@@ -79,7 +70,7 @@ script GalecrestCity_DetectiveMeet_Trigger0{
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *2 walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *2 face_up))
 
     //Trigger next script
     call(GalecrestCity_DetectiveMeet_Main)
@@ -98,7 +89,7 @@ script GalecrestCity_DetectiveMeet_Trigger1{
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right face_up))
     waitmovement(0)
 
     //Trigger next script
@@ -118,7 +109,7 @@ script GalecrestCity_DetectiveMeet_Trigger2{
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
 
     //Trigger next script
@@ -138,7 +129,7 @@ script GalecrestCity_DetectiveMeet_Trigger3{
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left face_up))
     waitmovement(0)
 
     //Trigger next script
@@ -147,7 +138,7 @@ script GalecrestCity_DetectiveMeet_Trigger3{
 
 
 script GalecrestCity_DetectiveMeet_Main{
-    msgbox(format("RUE: the detectives here have been pursuing other leads on PRofessor Tenebris' whereabouts. We heard from KOHLA that you went up to the peak to stop Team Somber. What happened up there?\p..."))
+    msgbox(format("RUE: We heard from KOHLA that you went up to the peak to stop Team Somber. What happened up there?\p...\p..."))
     applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
     applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
@@ -158,11 +149,13 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET1, moves(face_right ))
     applymovement(LOCALID_DET2, moves(face_right ))
     applymovement(LOCALID_RUE, moves(face_left ))
+    delay(16)
     msgbox(format("DETECTIVE: Did you know this was possible RUE?\p RUE: No, I had no idea. We knew that dreamstones absorbed {PKMN} memories, but to transport things and people..."))
     release
     applymovement(LOCALID_DET1, moves(face_down))
     applymovement(LOCALID_DET2, moves(face_down))
     applymovement(LOCALID_RUE, moves(face_down))
+    delay(16)
     msgbox(format("RUE: {PLAYER}, you encountered ancient {PKMN} there, right? I wonder...\pDid the dreamstone take you back to the past somehow?\pRUE: Incredible...so much we don't yet know...\pI need to do some research. I'm going to head back to the lab.\p{PLAYER}, the detectives have some updates for you.\p...\pI'm glad you're okay."))
     release
 
@@ -171,18 +164,28 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET2, moves(face_down)) 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down)) 
 
-    applymovement(LOCALID_RUE, moves(walk_right, walk_down * 2 walk_left walk_down *4))
+    applymovement(LOCALID_RUE, moves(walk_right, walk_down * 3 walk_left *2 walk_down * 6))
     waitmovement(0)
     removeobject(LOCALID_RUE)
 
     //Back to detectives
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-    msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that he was spotted in Goldensun City."))
-    msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Goldensun City too.\pIf the Professor, his dreamstone and Team Somber are in the same spot, things could erupt. We have to be there."))
-    msgbox(format("DETECTIVE: But now that we know Team Somber is involved, we fear for your safety, {PLAYER}. You may have handled a couple of grunts, but you're still green.\pSo heed my instructions carefully - make your way to Goldensun City as soon as possible and keep a low profile. Do NOT engage with any suspicious individuals!"))       
+    waitmovement(0)
+    delay(16)
+    msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that he was spotted in Silversun City."))
+    msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Silversun City too.\pIf the Professor, his dreamstone and Team Somber are in the same spot, things could erupt. We have to be there."))
+    msgbox(format("DETECTIVE: But now that we know Team Somber is involved, we fear for your safety, {PLAYER}. You may have handled a couple of grunts, but you're still green.\pSo heed my instructions carefully - make your way to Silversun City as soon as possible and keep a low profile. Do NOT engage with any suspicious individuals!"))       
+    release
     applymovement(LOCALID_DET1, moves(face_up))
-    applymovement(LOCALID_DET2, moves(face_up))        
+    applymovement(LOCALID_DET2, moves(face_up))    
+    delay(16)    
     msgbox(format("DETECTIVE: This building is the Detective Academy. Your frield KOHLA was trained here. He knows the plan already. Go and talk to him first."))       
+    release
+    applymovement(LOCALID_DET1, moves(face_down))
+    applymovement(LOCALID_DET2, moves(face_down))      
+    delay(16)
+    msgbox(format("DETECTIVE: See you in Silversun City."))
+    release
 
     //exit
     fadescreen(FADE_TO_BLACK)
