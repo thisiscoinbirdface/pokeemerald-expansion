@@ -1,8 +1,74 @@
-mapscripts GalecrestCity_MapScripts{}
+raw `
+    .set LOCALID_GAB, 17
+    .set LOCALID_DET1, 24
+    .set LOCALID_DET2, 25
+    .set LOCALID_RUE, 26
+`
+
+mapscripts GalecrestCity_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: GalecrestCity_OnFrame
+    ]
+}
 
 
 
 
 //Galecrest first time cutscene
 //Flag: FLAG_GALECREST_POST_ANCIENT
+
+
+//You land back: done
+//On warp: Gabrielle dialogue - thanks you (tells you that you're in galecrest with the detective academy)
+//Walk together to some place, then see the cops, and gab fucks off.
+
+//detectives
+//where were you?
+//...
+//This is incredible. I'm glad you survived that.
+//Where was kohla? he was defeated?
+//kohla - quiet.
+//Rue - I never knew this, ill go research
+//Detectives - we received a tipoff that prof tenebris was sighted in Goldensun City to the east.
+//Team Somber HQ is also there.
+//Everything makes sense - Team Somber knew things about the dreamstone, so they must have kidnapped the prof.
+
+//We all should head there.
+
+script GalecrestCity_OnFrame{
+    //If the flag is done, then skip
+    if (flag(FLAG_GALECREST_POST_ANCIENT)) {end}
+
+    //Cutscene
+    //Phase 1: Gabrielle
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    msgbox(format("GABRIELLE: I've never been so happy to see a city before! This must be GALECREST CITY. The Detective Academy is here. I suppose you'll be headed there...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye.\p"))
+    release
+    
+    //Remove gab
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_GAB)
+    fadescreen(FADE_FROM_BLACK)
+
+
+
+
+
+
+
+
+    //End
+    setflag(FLAG_GALECREST_POST_ANCIENT)
+    releaseall
+
+
+}
+
+
+
+
+
+
 
