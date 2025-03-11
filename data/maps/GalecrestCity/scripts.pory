@@ -2,3 +2,7 @@ mapscripts GalecrestCity_MapScripts{}
 
 
 
+
+//Galecrest first time cutscene
+//Flag: FLAG_GALECREST_POST_ANCIENT
+

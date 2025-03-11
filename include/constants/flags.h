@@ -70,7 +70,7 @@
 #define FLAG_MT_CERAM_SOMBER_PEAK    0x37 // at the top (just below the peak) battle with grunts. kohla loses.
 #define FLAG_MT_CERAM_DREAMSTONE    0x38 // at the peak itself, battle the boss and touch the dreamstone.
 #define FLAG_ANCIENT_FIRST_TIME    0x39 // go to the ancient area for the first time. triggered on EXIT
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_GALECREST_POST_ANCIENT    0x3A // flag for the main galecrest cutscene - after TPing back to the present
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag

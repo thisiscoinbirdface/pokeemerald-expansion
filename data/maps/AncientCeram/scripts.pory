@@ -80,7 +80,7 @@ script AncientCeram_EventScript_Exit{
         questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
         
         //Warp out
-        warp(MAP_GALECREST_CITY, 58, 42) //ERROR: Jump to invalid address D1F9D1F8
+        warp(MAP_GALECREST_CITY, 54, 42) 
     } 
 
     releaseall
