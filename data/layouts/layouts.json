@@ -4810,6 +4810,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/GalecrestCity_Pokemart/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCity_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE5",
+      "name": "Route5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route5/border.bin",
+      "blockdata_filepath": "data/layouts/Route5/map.bin"
     }
   ]
 }

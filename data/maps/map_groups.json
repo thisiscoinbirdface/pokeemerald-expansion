@@ -79,7 +79,8 @@
     "GalecrestCity",
     "GalecrestCity_DetectiveAcademy",
     "GalecrestCity_PokemonCenter",
-    "GalecrestCity_Pokemart"
+    "GalecrestCity_Pokemart",
+    "Route5"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
