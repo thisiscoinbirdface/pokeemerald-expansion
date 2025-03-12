@@ -1,4 +1,8 @@
-mapscripts GalecrestCity_DetectiveAcademy_Mapscripts{}
+raw `
+    .set LOCALID_KOHLA, 16
+`
+
+mapscripts GalecrestCityDetectiveAcademy_Mapscripts{}
 
 
 
