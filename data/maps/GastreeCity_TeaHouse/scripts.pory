@@ -96,6 +96,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
     givemon(SPECIES_POLTCHAGEIST, 10)    
+    showmonpic(SPECIES_POLTCHAGEIST, 10, 3)
     msgbox(format("The kitchen is managed by my staff of POLTCHAGEIST. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?")) //Yes/No option perhaps?
     
     //Fanfare

@@ -130,16 +130,26 @@ Route3_Underpass_Trigger_EvilBattle::
 # 84 "data//maps/Route3_Underpass/scripts.pory"
 	msgbox Route3_Underpass_Trigger_EvilBattle_Text_16
 # 85 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_17
 # 86 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 3, Route3_Underpass_Trigger_EvilBattle_Movement_8
+	release
 # 87 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	giveitem ITEM_EVERSTONE
 # 88 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject 3
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_18
+# 89 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_Trigger_EvilBattle_Text_19
+# 90 "data//maps/Route3_Underpass/scripts.pory"
+	release
 # 91 "data//maps/Route3_Underpass/scripts.pory"
-	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
+	applymovement 3, Route3_Underpass_Trigger_EvilBattle_Movement_8
 # 92 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 93 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject 3
+# 96 "data//maps/Route3_Underpass/scripts.pory"
+	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
+# 97 "data//maps/Route3_Underpass/scripts.pory"
 	releaseall
 	return
 
@@ -236,7 +246,7 @@ Route3_Underpass_Trigger_EvilBattle_Text_0:
 
 Route3_Underpass_Trigger_EvilBattle_Text_1:
 # 39 "data//maps/Route3_Underpass/scripts.pory"
-	.string "BREECH: No! Stay away! Clefairy is MY\n"
+	.string "BREECH: No! Stay away! CLEFAIRY is MY\n"
 	.string "partner!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_2:
@@ -252,11 +262,11 @@ Route3_Underpass_Trigger_EvilBattle_Text_3:
 
 Route3_Underpass_Trigger_EvilBattle_Text_4:
 # 44 "data//maps/Route3_Underpass/scripts.pory"
-	.string "Clefairy: clee!!!$"
+	.string "CLEFAIRY: clee!!!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_5:
 # 45 "data//maps/Route3_Underpass/scripts.pory"
-	.string "???: Hahaha! Your Clefairy wants to\n"
+	.string "???: Hahaha! Your CLEFAIRY wants to\n"
 	.string "protect you, but you don't even have\l"
 	.string "the will to fight alongside her. Just\l"
 	.string "give up before I bring my {PKMN} out!$"
@@ -268,20 +278,18 @@ Route3_Underpass_Trigger_EvilBattle_Text_6:
 Route3_Underpass_Trigger_EvilBattle_Text_7:
 # 53 "data//maps/Route3_Underpass/scripts.pory"
 	.string "BREECH: {PLAYER}! It's you! This thug\n"
-	.string "is trying to take Clefairy away! Help me,\l"
-	.string "please!$"
+	.string "is trying to take CLEFAIRY away! Help\l"
+	.string "me, please!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_8:
 # 56 "data//maps/Route3_Underpass/scripts.pory"
 	.string "???: Oh, you're just some stupid kid.\n"
-	.string "How about you mind your own business?\l"
-	.string "Play with your toys at home. Get out of\l"
-	.string "here before I hurt you!$"
+	.string "How about you mind your own business?$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_9:
 # 57 "data//maps/Route3_Underpass/scripts.pory"
 	.string "GABRIELLE: No? No?!?! Well then...let\n"
-	.string "Miss Gabrielle teach you a lesson: don't\l"
+	.string "GABRIELLE teach you a lesson: don't\l"
 	.string "stick your nose where it doesn't\l"
 	.string "belong!$"
 
@@ -292,9 +300,8 @@ Route3_Underpass_Trigger_EvilBattle_Text_10:
 Route3_Underpass_Trigger_EvilBattle_Text_11:
 # 68 "data//maps/Route3_Underpass/scripts.pory"
 	.string "GABRIELLE: Fine - keep your stupid\n"
-	.string "Clefairy! Enjoy your time together\l"
-	.string "while it lasts. We'll be back for the\l"
-	.string "dreamstone soon enough!$"
+	.string "CLEFAIRY! It's not like I enjoy doing\l"
+	.string "this...but we have to achieve our goals!$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_12:
 # 72 "data//maps/Route3_Underpass/scripts.pory"
@@ -304,30 +311,45 @@ Route3_Underpass_Trigger_EvilBattle_Text_12:
 
 Route3_Underpass_Trigger_EvilBattle_Text_13:
 # 81 "data//maps/Route3_Underpass/scripts.pory"
-	.string "{PLAYER} - Clefairy and I are in your\n"
+	.string "{PLAYER} - CLEFAIRY and I are in your\n"
 	.string "debt. The way you handled that thug was\l"
-	.string "incredible. I admire you for having such\l"
-	.string "strength.$"
+	.string "incredible.$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_14:
 # 82 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I've realised something. When alone, I\n"
 	.string "was free to do as I wish and avoid\l"
-	.string "battling. But with Clefairy by my side, I\l"
-	.string "can no longer afford to be that way.$"
+	.string "battling. But with a partner, I can't be\l"
+	.string "that way.$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_15:
 # 83 "data//maps/Route3_Underpass/scripts.pory"
-	.string "Clefairy was ready to protect me, but I\n"
-	.string "wasn't prepared to do the same for her.\l"
-	.string "I let her down. I was waiting for\l"
-	.string "someone to save us. What would've\l"
-	.string "happened had you not come?$"
+	.string "CLEFAIRY was ready to protect me, but I\n"
+	.string "wasn't prepared to do the same for her.\p"
+	.string "I let her down.$"
 
 Route3_Underpass_Trigger_EvilBattle_Text_16:
 # 84 "data//maps/Route3_Underpass/scripts.pory"
 	.string "But no more! I'm going to learn to hold\n"
-	.string "my ground. If these Team Somber thugs\l"
-	.string "come after Clefairy again, we'll be\l"
-	.string "ready. {PLAYER} - I owe you. Clefairy\l"
-	.string "and I hope our paths cross again.$"
+	.string "my ground. If Team Somber comes after\l"
+	.string "CLEFAIRY again, we'll be ready.$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_17:
+# 85 "data//maps/Route3_Underpass/scripts.pory"
+	.string "{PLAYER} - we owe you. As thanks,\n"
+	.string "CLEFAIRY and I want to give you the\l"
+	.string "stone that GABRIELLE person was\l"
+	.string "after...$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_18:
+# 88 "data//maps/Route3_Underpass/scripts.pory"
+	.string "I don't know anything about\n"
+	.string "dreamstones, but it looks like a regular\l"
+	.string "EVERSTONE to me. Who knows what she\l"
+	.string "saw?$"
+
+Route3_Underpass_Trigger_EvilBattle_Text_19:
+# 89 "data//maps/Route3_Underpass/scripts.pory"
+	.string "Don't worry - CLEFAIRY's bored of that\n"
+	.string "stone already. Next, we'll head to MT\l"
+	.string "CERAM to collect rare stones there!$"

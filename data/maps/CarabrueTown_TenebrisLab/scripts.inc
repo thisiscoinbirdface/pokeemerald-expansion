@@ -933,7 +933,7 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_4:
 	.string "just going to have you start working\l"
 	.string "right away. We've been running low on\l"
 	.string "supplies and the nearest Pokemart is in\l"
-	.string "Fennilahl Town, past Route 1. Please go\l"
+	.string "FENNILAHL TOWN, past Route 1. Please go\l"
 	.string "and pick up our shipment and bring it\l"
 	.string "back. Be careful! There are some\l"
 	.string "important things in there!$"
@@ -965,11 +965,11 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_7:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_0:
 # 98 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Good, you're back. Come here.$"
+	.string "RUE: Good, you're back. Come here.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_1:
 # 105 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Detectives, meet {PLAYER}, our\n"
+	.string "RUE: Detectives, meet {PLAYER}, our\n"
 	.string "newest assistant.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_2:
@@ -978,26 +978,26 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_2:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_3:
 # 110 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: {PLAYER}, Have you got the\n"
+	.string "RUE: {PLAYER}, Have you got the\n"
 	.string "supplies? No?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_4:
 # 115 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: WHAT?! Professor Tenebris took\n"
+	.string "RUE: WHAT?! Professor Tenebris took\n"
 	.string "them? But how? When? Oh no...this is a\l"
 	.string "disaster. You see, those supplies\l"
 	.string "contained something very precious.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_5:
 # 119 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Have you heard of dreamstones?\n"
+	.string "RUE: Have you heard of dreamstones?\n"
 	.string "No? Hardly surprising, considering that\l"
 	.string "there are only three in all of Cormoria.\l"
 	.string "You see...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_6:
 # 124 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Our lab specialises in the research\n"
+	.string "RUE: Our lab specialises in the research\n"
 	.string "of Pokemon psychology - of which the\l"
 	.string "Professor was a leading expert, as you\l"
 	.string "no doubt know. In particular, the\l"
@@ -1007,7 +1007,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_6:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_7:
 # 131 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: This right here is our lab's pride\n"
+	.string "RUE: This right here is our lab's pride\n"
 	.string "and joy - the Dreamalyser. Once\l"
 	.string "powered, it'll allow us to study the\l"
 	.string "fluctuations in power and energy that\l"
@@ -1019,7 +1019,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_7:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_8:
 # 136 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: No...this thing needs something far\n"
+	.string "RUE: No...this thing needs something far\n"
 	.string "more potent. Our plan was to use\l"
 	.string "dreamstones to power it. Dreamstones\l"
 	.string "are powerful reserves of subconscious\l"
@@ -1031,7 +1031,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_8:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_9:
 # 143 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: And this month we were supposed\n"
+	.string "RUE: And this month we were supposed\n"
 	.string "to receive two things in our supplies -\l"
 	.string "{PLAYER}, your companion\l"
 	.string "Pokemon...and one dreamstone. One of\l"
@@ -1044,7 +1044,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_9:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_10:
 # 144 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: I'm sorry {PLAYER}...I fear that\n"
+	.string "RUE: I'm sorry {PLAYER}...I fear that\n"
 	.string "destiny has chosen your companion for\l"
 	.string "you. But it looks like you two have\l"
 	.string "formed a bond already...maybe this is\l"
@@ -1059,11 +1059,11 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_11:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_12:
 # 146 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Maybe...$"
+	.string "RUE: Maybe...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_13:
 # 158 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Detectives...please. You must find\n"
+	.string "RUE: Detectives...please. You must find\n"
 	.string "the Professor!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_14:
@@ -1075,7 +1075,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_14:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_15:
 # 160 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Whatever you need to do!$"
+	.string "RUE: Whatever you need to do!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_16:
 # 161 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1086,7 +1086,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_16:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_17:
 # 162 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: What do you plan to do?$"
+	.string "RUE: What do you plan to do?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_18:
 # 163 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1097,7 +1097,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_18:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_19:
 # 164 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: But none of us can leave the lab!\n"
+	.string "RUE: But none of us can leave the lab!\n"
 	.string "There's too much work.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_20:
@@ -1106,7 +1106,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_20:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_21:
 # 166 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: {PLAYER}? It's too dangerous.\n"
+	.string "RUE: {PLAYER}? It's too dangerous.\n"
 	.string "{PLAYER}'s Pokemon aren't strong\l"
 	.string "enough yet.$"
 
@@ -1118,7 +1118,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_22:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_23:
 # 168 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Right...yes. You're right.$"
+	.string "RUE: Right...yes. You're right.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_24:
 # 180 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1128,9 +1128,9 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_24:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_25:
 # 181 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: The dreamstones are scattered all\n"
+	.string "RUE: The dreamstones are scattered all\n"
 	.string "across Cormoria. Have you ever traveled\l"
-	.string "beyond Fennilahl Town? Cormoria is\l"
+	.string "beyond FENNILAHL TOWN? Cormoria is\l"
 	.string "vast. Dangerous Pokemon have made the\l"
 	.string "mountains, forests and seas their\l"
 	.string "territory. I fear you may not be up to\l"
@@ -1138,7 +1138,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_25:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_26:
 # 182 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: I don't know how I can\n"
+	.string "RUE: I don't know how I can\n"
 	.string "help...perhaps this may be of use,\l"
 	.string "{PLAYER}.$"
 
@@ -1149,21 +1149,21 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_27:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_28:
 # 190 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: It's a Pokedex. It contains\n"
+	.string "RUE: It's a Pokedex. It contains\n"
 	.string "information on Pokemon you've\l"
 	.string "encountered. And it can store more if\l"
 	.string "you catch them.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_29:
 # 198 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Sigh...the Professor missing. The\n"
+	.string "RUE: Sigh...the Professor missing. The\n"
 	.string "dreamstone missing. The lab in shambles.\l"
 	.string "My youngest researcher sent off on a\l"
 	.string "dangerous journey.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_30:
 # 199 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: I've failed.$"
+	.string "RUE: I've failed.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_31:
 # 200 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1187,7 +1187,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_34:
 	.string "that! What's your name? {PLAYER}?\l"
 	.string "Pshh, whatever. Look at you! Your\l"
 	.string "Pokemon look exhausted after a single\l"
-	.string "trip to Fennilahl Town!$"
+	.string "trip to FENNILAHL TOWN!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_35:
 # 220 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1196,7 +1196,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_35:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_36:
 # 221 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: Excuse me...$"
+	.string "RUE: Excuse me...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_37:
 # 222 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1245,34 +1245,34 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_44:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_45:
 # 255 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Detective 1: Well Rue, it looks like your\n"
+	.string "Detective 1: Well RUE, it looks like your\n"
 	.string "assistant's got some guts. {PLAYER},\l"
 	.string "we're counting on you and Kohla to get\l"
 	.string "the dreamstone while we track\l"
-	.string "Professor Tenebris. Rue, do you know\l"
+	.string "Professor Tenebris. RUE, do you know\l"
 	.string "anything of the whereabouts of the\l"
 	.string "other dreamstones?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_46:
 # 256 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: I know of one dreamstone\n"
-	.string "somewhere inside Mt. Ceram. {PLAYER},\l"
-	.string "Mt. Ceram is further east from Fennilahl\l"
-	.string "Town. You'll have to cross through the\l"
-	.string "tunnel to the other side to reach\l"
-	.string "Gastree City, and then make your way up\l"
-	.string "north towards the mountain.$"
+	.string "RUE: I know of one dreamstone\n"
+	.string "somewhere inside MT CERAM. {PLAYER},\l"
+	.string "MT CERAM is further east from\l"
+	.string "FENNILAHL TOWN. You'll have to cross\l"
+	.string "through the tunnel to the other side to\l"
+	.string "reach GASTREE CITY, and then make your\l"
+	.string "way up north towards the mountain.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_47:
 # 257 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Detective 1: {PLAYER} - you know\n"
-	.string "what to do. Head east to Gastree City.\l"
-	.string "From there, make your way to Mt. Ceram\l"
+	.string "what to do. Head east to GASTREE CITY.\l"
+	.string "From there, make your way to MT CERAM\l"
 	.string "and find the dreamstone inside.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_48:
 # 258 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Rue: I'll let your mother know that\n"
+	.string "RUE: I'll let your mother know that\n"
 	.string "you've been assigned some travel work.\l"
 	.string "I wish you all the best.$"
 

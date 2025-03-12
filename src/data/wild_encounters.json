@@ -12005,62 +12005,62 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_LILLIPUP"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_LILLIPUP"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_PINECO"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_PINECO"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_LILLIPUP"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               },
               {
-                "min_level": 3,
+                "min_level": 4,
                 "max_level": 6,
                 "species": "SPECIES_SWABLU"
               }
@@ -12333,12 +12333,12 @@
               {
                 "min_level": 12,
                 "max_level": 13,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 12,
                 "max_level": 13,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_MANKEY"
               }
             ]
           }
