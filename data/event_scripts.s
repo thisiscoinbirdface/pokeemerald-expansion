@@ -1230,3 +1230,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GalecrestCity_Pokemart/scripts.inc"
 
 	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/VilethornWoods/scripts.inc"

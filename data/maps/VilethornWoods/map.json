@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE5",
-  "name": "Route5",
-  "layout": "LAYOUT_ROUTE5",
+  "id": "MAP_VILETHORN_WOODS",
+  "name": "VilethornWoods",
+  "layout": "LAYOUT_VILETHORN_WOODS",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_GALECREST_CITY",
   "requires_flash": false,
@@ -12,29 +12,23 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_GALECREST_CITY",
-      "offset": -21,
-      "direction": "right"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 11,
+      "x": 52,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_VILETHORN_WOODS",
+      "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "0"
     },
     {
-      "x": 5,
-      "y": 11,
+      "x": 53,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_VILETHORN_WOODS",
+      "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "1"
     }
   ],
