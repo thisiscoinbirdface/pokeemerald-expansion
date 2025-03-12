@@ -147,7 +147,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Combee
-Level: 4
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Eevee
@@ -165,11 +165,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Sentret
-Level: 4
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Rookidee
-Level: 5
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_RONNIE ===
@@ -186,7 +186,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cubone
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_CHARA ===
@@ -199,7 +199,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Teddiursa
-Level: 7
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
