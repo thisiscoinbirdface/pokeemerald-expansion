@@ -36,13 +36,13 @@ script Route3_Underpass_Trigger_EvilBattle{
     msgbox(format("???: Give it to me!"))
     applymovement(3, moves(walk_right face_left))
     waitmovement(0)    
-    msgbox(format("BREECH: No! Stay away! Clefairy is MY partner!"))
+    msgbox(format("BREECH: No! Stay away! CLEFAIRY is MY partner!"))
     msgbox(format("???: I said give it to me! It's holding a dreamstone. That's too precious to be held by someone like you!"))
     applymovement(2, moves(walk_right))
-    waitmovement(0)    
+    waitmovement(0)
     msgbox(format("BREECH: I don't know anything about any dreamstones, please! Just stop!"))
-    msgbox(format("Clefairy: clee!!!"))
-    msgbox(format("???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
+    msgbox(format("CLEFAIRY: clee!!!"))
+    msgbox(format("???: Hahaha! Your CLEFAIRY wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
 
     //They look at you and you walk to them
     applymovement(2, moves(jump_in_place_up))
@@ -50,11 +50,11 @@ script Route3_Underpass_Trigger_EvilBattle{
     msgbox(format("???: Who's there? What you do want?"))
     applymovement(3, moves(face_up))
     waitmovement(0)    
-    msgbox(format("BREECH: {PLAYER}! It's you! This thug is trying to take Clefairy away! Help me, please!"))
+    msgbox(format("BREECH: {PLAYER}! It's you! This thug is trying to take CLEFAIRY away! Help me, please!"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)     
-    msgbox(format("???: Oh, you're just some stupid kid. How about you mind your own business? Play with your toys at home. Get out of here before I hurt you!"))
-    msgbox(format("GABRIELLE: No? No?!?! Well then...let Miss Gabrielle teach you a lesson: don't stick your nose where it doesn't belong!"))
+    msgbox(format("???: Oh, you're just some stupid kid. How about you mind your own business?"))
+    msgbox(format("GABRIELLE: No? No?!?! Well then...let GABRIELLE teach you a lesson: don't stick your nose where it doesn't belong!"))
     release
 
     //Start battle
@@ -65,7 +65,7 @@ script Route3_Underpass_Trigger_EvilBattle{
     waitmovement(0) 
     applymovement(2, moves(face_right))
     waitmovement(0)    
-    msgbox(format("GABRIELLE: Fine - keep your stupid Clefairy! Enjoy your time together while it lasts. We'll be back for the dreamstone soon enough!"))
+    msgbox(format("GABRIELLE: Fine - keep your stupid CLEFAIRY! It's not like I enjoy doing this...but we have to achieve our goals!"))
     release
     applymovement(2, moves(jump_in_place_up))
     waitmovement(0)
@@ -78,10 +78,15 @@ script Route3_Underpass_Trigger_EvilBattle{
     //Breech says he needs to train
     applymovement(3, moves(walk_left face_up))
     waitmovement(0)     
-    msgbox(format("{PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible. I admire you for having such strength."))
-    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with Clefairy by my side, I can no longer afford to be that way."))
-    msgbox(format("Clefairy was ready to protect me, but I wasn't prepared to do the same for her. I let her down. I was waiting for someone to save us. What would've happened had you not come?"))
-    msgbox(format("But no more! I'm going to learn to hold my ground. If these Team Somber thugs come after Clefairy again, we'll be ready. {PLAYER} - I owe you. Clefairy and I hope our paths cross again."))
+    msgbox(format("{PLAYER} - CLEFAIRY and I are in your debt. The way you handled that thug was incredible."))
+    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
+    msgbox(format("CLEFAIRY was ready to protect me, but I wasn't prepared to do the same for her.\pI let her down."))
+    msgbox(format("But no more! I'm going to learn to hold my ground. If Team Somber comes after CLEFAIRY again, we'll be ready."))
+    msgbox(format("{PLAYER} - we owe you. As thanks, CLEFAIRY and I want to give you the stone that GABRIELLE person was after..."))
+    release
+    giveitem(ITEM_EVERSTONE)
+    msgbox(format("I don't know anything about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
+    msgbox(format("Don't worry - CLEFAIRY's bored of that stone already. Next, we'll head to MT CERAM to collect rare stones there!"))
     release
     applymovement(3, moves(walk_down * 2))
     waitmovement(0)     

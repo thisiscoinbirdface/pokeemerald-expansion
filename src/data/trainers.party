@@ -121,7 +121,7 @@ Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shelmet
-Level: 4
+Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KOHLA_LAB ===
@@ -147,11 +147,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Combee
-Level: 6
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Eevee
-Level: 7
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -165,11 +165,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Sentret
-Level: 6
+Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Rookidee
-Level: 8
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_RONNIE ===
@@ -182,11 +182,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Rattata
-Level: 6
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cubone
-Level: 7
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_CHARA ===
@@ -203,7 +203,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 9
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
@@ -213,12 +213,7 @@ Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
-Items: Potion
 AI: Check Bad Move
-
-Baltoy
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zorua-Hisui
 Level: 11
@@ -252,11 +247,11 @@ Level: 8
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Slugma
-Level: 11
+Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GASTREEGYM_LEADER ===
-Name: Ashana
+Name: Inger
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
@@ -264,18 +259,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Growlithe-Hisui
-Ability: Intimidate
+Rockruff
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Geodude-Alola
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Torkoal
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Tauros-Paldea-Blaze
-Ability: Intimidate
-Level: 14
+Shuckle
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREE_KOHLA ===
@@ -287,12 +280,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Boltund
-Level: 8
+Yamper
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Charcadet
-Level: 10
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_GRUNTS ===
@@ -305,7 +298,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Nickit
-Level: 13
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Drowzee
@@ -323,12 +316,12 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Snorunt
-Level: 4
+Baltoy
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zorua-Hisui
-Level: 6
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -359,7 +352,7 @@ Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Drowzee
-Level: 14
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
@@ -372,7 +365,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Woobat
-Level: 14
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nickit
@@ -389,7 +382,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Chinchou
-Level: 13
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_CAMMY ===
@@ -402,11 +395,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 10
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 12
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_SONA ===
@@ -418,12 +411,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Sentret
-Level: 11
+Spearow
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Teddiursa
-Level: 12
+Dewpider
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_JENNY ===
@@ -436,7 +429,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 14
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID1 ===
@@ -449,7 +442,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 Tyrogue
-Level: 12
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID2 ===
@@ -462,7 +455,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Budew
-Level: 12
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID3 ===
@@ -521,8 +514,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Magby
-Level: 15
+Braixen
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_D ===
@@ -534,7 +527,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
+Magby
 Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -556,12 +549,12 @@ Growlithe-Hisui
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Fletchinder
-Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Sizzlipede
+Level: 15
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Tauros-Paldea-Blaze
-Level: 18
+Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ZANDER ===
