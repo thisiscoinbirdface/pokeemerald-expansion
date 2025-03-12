@@ -24,14 +24,14 @@
   ],
   "warp_events": [
     {
-      "x": 4,
+      "x": 8,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_VILETHORN_WOODS",
       "dest_warp_id": "0"
     },
     {
-      "x": 5,
+      "x": 9,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_VILETHORN_WOODS",
