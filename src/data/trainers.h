@@ -1710,19 +1710,17 @@ F_TRAINER_FEMALE |
         },
     },
 #line 742
-    [DIFFICULTY_NORMAL][TRAINER_ROSE_3] =
+    [DIFFICULTY_NORMAL][TRAINER_GALECREST_ROBBER] =
     {
 #line 743
-        .trainerName = _("ROSE"),
+        .trainerName = _("Evio"),
 #line 744
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 745
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 746
-F_TRAINER_FEMALE | 
 #line 747
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 748
         .doubleBattle = FALSE,
 #line 749
@@ -1737,7 +1735,7 @@ F_TRAINER_FEMALE |
 #line 753
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 752
-            .lvl = 28,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -1748,7 +1746,7 @@ F_TRAINER_FEMALE |
 #line 757
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 756
-            .lvl = 28,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -1759,7 +1757,7 @@ F_TRAINER_FEMALE |
 #line 761
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 760
-            .lvl = 28,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

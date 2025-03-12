@@ -739,25 +739,25 @@ Roselia
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ROSE_3 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+=== TRAINER_GALECREST_ROBBER ===
+Name: Evio
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
 Shroomish
-Level: 28
+Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Gloom
-Level: 28
+Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Roselia
-Level: 28
+Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_ROSE_4 ===

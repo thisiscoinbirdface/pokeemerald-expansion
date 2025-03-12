@@ -52,6 +52,7 @@
 #define TRAINER_CERAMBASECAMPGYM_D           29
 #define TRAINER_CERAMBASECAMPGYM_LEADER      30
 
+//Ceram
 #define TRAINER_ZANDER                       31
 #define TRAINER_SHELLY_WEATHER_INSTITUTE     32
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
@@ -62,7 +63,9 @@
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
 #define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
+
+//Galecrest
+#define TRAINER_GALECREST_ROBBER             41
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44

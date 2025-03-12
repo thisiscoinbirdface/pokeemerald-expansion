@@ -226,3 +226,196 @@ script GalecrestCity_EventScript_Poochyena{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCs
+script GalecrestCity_NPC_1{
+    lockall
+    faceplayer    
+    msgbox(format("You don't look like someone from here...are you a new student at the Detective Academy?"))
+    releaseall
+}
+
+script GalecrestCity_NPC_2{
+    lockall
+    faceplayer    
+    msgbox(format("The city doesn't service our neighborhood. That's why these grass patches and puddles have come up."))
+    releaseall
+}
+
+script GalecrestCity_NPC_3{
+    lockall
+    faceplayer    
+    msgbox(format("All the rich kids play at home, but me and my brother love to splash in these puddles!"))
+    releaseall
+}
+
+script GalecrestCity_NPC_4{
+    lockall
+    faceplayer    
+    msgbox(format("When I grow up, I want to be just like my sister!"))
+    releaseall
+}
+
+//Give an item
+script GalecrestCity_NPC_5{
+    lockall
+    faceplayer    
+    msgbox(format("This rock can be smashed by a {PKMN} that knows a certain move...I forgot which one though!"))
+    releaseall
+}
+
+script GalecrestCity_NPC_6{
+    lockall
+    faceplayer    
+    msgbox(format("If you head west, you enter the elite residential neighborhood.\pThe area south of here is poorer."))
+    releaseall
+}
+
+script GalecrestCity_NPC_7{
+    lockall
+    faceplayer    
+    msgbox(format("The city garden is maintained by Rotoms! But for some reason, I've never seen any of them at work."))
+    releaseall
+}
+
+script GalecrestCity_NPC_8{
+    lockall
+    faceplayer    
+    msgbox(format("I'm on a date with the girl of my dreams! But we can't ever be together. I'm too poor for her family."))
+    release
+    face_left
+    releaseall
+}
+
+script GalecrestCity_NPC_9{
+    lockall
+    faceplayer    
+    msgbox(format("I don't care about money! We love each other and that's what matters."))
+    face_right
+    releaseall
+}
+
+script GalecrestCity_NPC_10{
+    lockall
+    faceplayer    
+    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband helped build it, many years ago, when he ran a construction business."))
+    releaseall
+}
+
+//Nurse Joy gives 3 berries - reduce super-effective damage from the gym leader's attacks.
+script GalecrestCity_NPC_11{
+    lockall
+    faceplayer    
+
+    msgbox(format("I do the night shift at the Pokemon Center. During the day, I like to walk around the gardens and pick berries."))
+    
+    if (flag(FLAG_GALECREST_NURSE_BERRY)){
+        msgbox(format("Here, you can have some of my extra berries."))
+        giveitem(ITEM_CHOPLE_BERRY, 3)  //Halves fighting damage
+        setflag(FLAG_GALECREST_NURSE_BERRY)
+    }
+    releaseall
+}
+
+script GalecrestCity_NPC_12{
+    lockall
+    faceplayer    
+    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk from Galecrest City left to build a mansion deep in the woods. What a strange man!"))
+    releaseall
+}
+
+script GalecrestCity_NPC_13{
+    lockall
+    faceplayer    
+    msgbox(format("This part of town is so clean and peaceful!"))
+    releaseall
+}
+
+//Robber battle
+script GalecrestCity_NPC_14{
+    lockall
+    msgbox(format("Hehehe..."))
+    release
+    delay(24)
+    faceplayer    
+    emote_exclamation_mark
+    delay(24)
+    msgbox(format("I look suspicious? How dare you! I'm just innocently hanging around behind this rich house! I don't take such accusations lightly!"))
+    //trainer battle
+    trainerbattle_no_intro(TRAINER_GALECREST_ROBBER, format("I've been caught!"))
+    release
+    msgbox(format("Fine, you got me! I'm a thief alright? I'll give you what I stole. It's just a stupid doll anyway."))
+    release
+    giveitem(ITEM_POKESHI_DOLL)
+    msgbox(format("I knew I shouldn't have tried to steal anything near the Detective Academy!"))
+    release
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(12)
+    fadescreen(FADE_FROM_BLACK)
+
+    setflag(FLAG_GALECREST_ROBBER)
+
+    releaseall
+}
+
+script GalecrestCity_NPC_15{
+    lockall
+    faceplayer    
+    msgbox(format("PESTER is this city's Gym Leader! She's tough but calculated. She likes strong {PKMN} and gives them berries to gain an advantage in battle!"))
+    releaseall
+}
+
+script GalecrestCity_NPC_16{
+    lockall
+    faceplayer    
+    msgbox(format("I'm sorry! I won't skip class again!"))
+    releaseall
+}
+
+script GalecrestCity_NPC_17{
+    lockall
+    faceplayer    
+    msgbox(format("One more misdeneanour and I'll have you expelled, got it? And then you'll never get your CHARCADET."))
+    releaseall
+}
+
+script GalecrestCity_NPC_18{
+    lockall
+    msgbox(format("All my life I've lived in this neighbourhood. It's all I've seen and all I know...and now I'm too old to go exploring Cormoria."))  
+    release
+
+    if (flag(FLAG_GALECREST_REGRETFULMAN)){
+        releaseall
+        end
+    } else {
+        faceplayer  
+        msgbox(format("Have you ever felt like I do?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Experience does not discriminate. We all feel regret.\pBut you still have time to change.\pTake this as a memento - don't let anything bind you!"))
+            giveitem(ITEM_BINDING_BAND)
+            setflag(FLAG_GALECREST_REGRETFULMAN)
+        } else {
+            msgbox(format("You're still innocent. The smile on your face is so bright! It lightens my heart.\pAccept this as a memento - keep that bright smile of yours!"))
+            giveitem(ITEM_BRIGHT_POWDER)
+            setflag(FLAG_GALECREST_REGRETFULMAN)
+        }
+        face_left
+        releaseall
+    }
+}
+
+

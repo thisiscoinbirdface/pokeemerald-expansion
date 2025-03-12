@@ -128,9 +128,9 @@
 #define FLAG_GASTREE_TRIGGER_SKITTY  0x282 // Deactivate the Skitty trees trigger
 #define FLAG_HIDE_BASECAMP_SHOPKEEPER  0x283 // Hides the 1F shopkeeper at the base camp depot
 #define FLAG_HIDE_GASTREE_SKITTY  0x284 // Hide the skitty in gastree city (at first, then clear this for the rest of the game)
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
-#define FLAG_UNUSED_0x287  0x287 // Unused Flag
+#define FLAG_GALECREST_NURSE_BERRY  0x285 // Nurse gives the berries (that counter the gym leader)
+#define FLAG_GALECREST_ROBBER  0x286 // The robber outside the rich house in galecrest
+#define FLAG_GALECREST_REGRETFULMAN  0x287 // man gives either a belt or a bright powder
 #define FLAG_UNUSED_0x288  0x288 // Unused Flag
 #define FLAG_UNUSED_0x289  0x289 // Unused Flag
 #define FLAG_UNUSED_0x28A  0x28A // Unused Flag
