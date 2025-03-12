@@ -491,6 +491,27 @@
       "elevation": 0,
       "dest_map": "MAP_GALECREST_CITY_POKEMART",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 54,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_POOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_POOR",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 49,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_POOR",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

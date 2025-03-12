@@ -1234,3 +1234,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VilethornWoods/scripts.inc"
 
 	.include "data/maps/SilversunCity/scripts.inc"
+
+	.include "data/maps/GalecrestCity_HousesPoor/scripts.inc"
+
+	.include "data/maps/GalecrestCity_HousesRich/scripts.inc"

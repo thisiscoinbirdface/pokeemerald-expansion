@@ -4840,6 +4840,26 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SilversunCity/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_HOUSES_POOR",
+      "name": "GalecrestCity_HousesPoor_Layout",
+      "width": 11,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GalecrestCity_HousesPoor/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_HousesPoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_HOUSES_RICH",
+      "name": "GalecrestCity_HousesRich_Layout",
+      "width": 35,
+      "height": 44,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GalecrestCity_HousesRich/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_HousesRich/map.bin"
     }
   ]
 }
