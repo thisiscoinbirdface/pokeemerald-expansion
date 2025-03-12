@@ -19,13 +19,14 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     delay(24)
     msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pStronger...at any cost."))
+    release 
 
     //Start walking out
     applymovement(LOCALID_KOHLA, moves(walk_right walk_up*2 walk_left walk_up face_down))
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
-    msgbox(format("Silverstone City is west of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))

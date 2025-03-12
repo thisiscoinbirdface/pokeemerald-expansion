@@ -12,6 +12,8 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla::
 	lockall
 # 15 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_0
+# 16 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	release
 # 18 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	applymovement LOCALID_KOHLA, GalecrestCity_DetectiveAcademy_EventScript_Kohla_Movement_0
 # 19 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
@@ -28,13 +30,17 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla::
 	applymovement OBJ_EVENT_ID_PLAYER, GalecrestCity_DetectiveAcademy_EventScript_Kohla_Movement_0
 # 28 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_2
+# 29 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	release
 # 31 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	applymovement LOCALID_KOHLA, GalecrestCity_DetectiveAcademy_EventScript_Kohla_Movement_2
 # 32 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	removeobject LOCALID_KOHLA
+	waitmovement 0
 # 33 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	removeobject LOCALID_KOHLA
+# 34 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	setflag FLAG_DETECTIVE_ACAD_KOHLA
-# 35 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 36 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
@@ -71,8 +77,6 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Movement_2:
 	walk_up
 # 31 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	walk_up
-# 31 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	walk_up
 	step_end
 
 GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_0:
@@ -80,13 +84,13 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_0:
 	.string "...\p"
 	.string "...\p"
 	.string "...\p"
-	.string "KOHLA: I'm as an orphan. As a child I\n"
-	.string "learned to rely on myself. I saw a lot of\l"
-	.string "bad stuff growing up, so I wanted to\l"
-	.string "become a detective.\p"
+	.string "KOHLA: I'm an orphan. As a child I\n"
+	.string "learned to rely on myself.\p"
+	.string "I saw a lot of bad stuff growing up, so I\n"
+	.string "wanted to become a detective.\p"
 	.string "So I did.\p"
 	.string "I graduated from this academy at the\n"
-	.string "top of my class..\p"
+	.string "top of my class...\p"
 	.string "...but it wasn't enough.$"
 
 GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_1:

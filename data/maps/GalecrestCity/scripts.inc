@@ -3,11 +3,11 @@
 # 2 "data//maps/GalecrestCity/scripts.pory"
     .set LOCALID_GAB, 17
 # 3 "data//maps/GalecrestCity/scripts.pory"
-    .set LOCALID_DET1, 25
+    .set LOCALID_DET1, 21
 # 4 "data//maps/GalecrestCity/scripts.pory"
-    .set LOCALID_DET2, 24
+    .set LOCALID_DET2, 22
 # 5 "data//maps/GalecrestCity/scripts.pory"
-    .set LOCALID_RUE, 23
+    .set LOCALID_RUE, 20
 
 GalecrestCity_MapScripts::
 # 9 "data//maps/GalecrestCity/scripts.pory"
@@ -161,98 +161,96 @@ GalecrestCity_DetectiveMeet_Main::
 # 148 "data//maps/GalecrestCity/scripts.pory"
 	release
 # 149 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET1, GalecrestCity_OnFrame_Movement_0
+	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_0
 # 150 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET2, GalecrestCity_OnFrame_Movement_0
-# 151 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_RUE, GalecrestCity_DetectiveMeet_Main_Movement_0
-# 152 "data//maps/GalecrestCity/scripts.pory"
-	delay 16
-# 153 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_DetectiveMeet_Main_Text_3
-# 154 "data//maps/GalecrestCity/scripts.pory"
-	release
-# 155 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 156 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 157 "data//maps/GalecrestCity/scripts.pory"
 	applymovement LOCALID_RUE, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 158 "data//maps/GalecrestCity/scripts.pory"
+# 151 "data//maps/GalecrestCity/scripts.pory"
 	delay 16
-# 159 "data//maps/GalecrestCity/scripts.pory"
+# 152 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_DetectiveMeet_Main_Text_3
+# 153 "data//maps/GalecrestCity/scripts.pory"
+	release
+# 154 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET1, GalecrestCity_OnFrame_Movement_0
+# 155 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_RUE, GalecrestCity_OnFrame_Movement_0
+# 156 "data//maps/GalecrestCity/scripts.pory"
+	delay 16
+# 157 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_DetectiveMeet_Main_Text_4
-# 160 "data//maps/GalecrestCity/scripts.pory"
+# 158 "data//maps/GalecrestCity/scripts.pory"
 	release
+# 161 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_2
+# 162 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_2
 # 163 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 164 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_1
+	applymovement OBJ_EVENT_ID_PLAYER, GalecrestCity_DetectiveMeet_Main_Movement_2
 # 165 "data//maps/GalecrestCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, GalecrestCity_DetectiveMeet_Main_Movement_1
+	applymovement LOCALID_RUE, GalecrestCity_DetectiveMeet_Main_Movement_3
+# 166 "data//maps/GalecrestCity/scripts.pory"
+	waitmovement 0
 # 167 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_RUE, GalecrestCity_DetectiveMeet_Main_Movement_2
-# 168 "data//maps/GalecrestCity/scripts.pory"
-	waitmovement 0
-# 169 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_RUE
+# 170 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET1, GalecrestCity_OnFrame_Movement_0
+# 171 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET2, GalecrestCity_OnFrame_Movement_0
 # 172 "data//maps/GalecrestCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, GalecrestCity_DetectiveMeet_Main_Movement_3
+	delay 16
 # 173 "data//maps/GalecrestCity/scripts.pory"
-	waitmovement 0
-# 174 "data//maps/GalecrestCity/scripts.pory"
-	delay 16
-# 175 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_DetectiveMeet_Main_Text_5
-# 176 "data//maps/GalecrestCity/scripts.pory"
+# 174 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_DetectiveMeet_Main_Text_6
-# 177 "data//maps/GalecrestCity/scripts.pory"
+# 175 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_DetectiveMeet_Main_Text_7
-# 178 "data//maps/GalecrestCity/scripts.pory"
+# 176 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 179 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_3
-# 180 "data//maps/GalecrestCity/scripts.pory"
-	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_3
-# 181 "data//maps/GalecrestCity/scripts.pory"
-	delay 16
-# 182 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_DetectiveMeet_Main_Text_8
-# 183 "data//maps/GalecrestCity/scripts.pory"
-	release
-# 184 "data//maps/GalecrestCity/scripts.pory"
+# 177 "data//maps/GalecrestCity/scripts.pory"
 	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 185 "data//maps/GalecrestCity/scripts.pory"
+# 178 "data//maps/GalecrestCity/scripts.pory"
 	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_1
-# 186 "data//maps/GalecrestCity/scripts.pory"
-	delay 16
-# 187 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_DetectiveMeet_Main_Text_9
-# 188 "data//maps/GalecrestCity/scripts.pory"
+# 179 "data//maps/GalecrestCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, GalecrestCity_DetectiveMeet_Main_Movement_1
+# 180 "data//maps/GalecrestCity/scripts.pory"
+	delay 24
+# 181 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_DetectiveMeet_Main_Text_8
+# 182 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 191 "data//maps/GalecrestCity/scripts.pory"
+# 183 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET1, GalecrestCity_DetectiveMeet_Main_Movement_2
+# 184 "data//maps/GalecrestCity/scripts.pory"
+	applymovement LOCALID_DET2, GalecrestCity_DetectiveMeet_Main_Movement_2
+# 185 "data//maps/GalecrestCity/scripts.pory"
+	delay 16
+# 186 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_DetectiveMeet_Main_Text_9
+# 187 "data//maps/GalecrestCity/scripts.pory"
+	release
+# 190 "data//maps/GalecrestCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 192 "data//maps/GalecrestCity/scripts.pory"
+# 191 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_DET1
-# 193 "data//maps/GalecrestCity/scripts.pory"
+# 192 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_DET2
-# 194 "data//maps/GalecrestCity/scripts.pory"
+# 193 "data//maps/GalecrestCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 197 "data//maps/GalecrestCity/scripts.pory"
+# 196 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_DETECTIVE_CONVO
-# 198 "data//maps/GalecrestCity/scripts.pory"
+# 197 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_EventScript_Poochyena::
-# 221 "data//maps/GalecrestCity/scripts.pory"
+# 220 "data//maps/GalecrestCity/scripts.pory"
 	goto_if_set FLAG_GALECREST_POOCHYENA, GalecrestCity_EventScript_Poochyena_2
-# 223 "data//maps/GalecrestCity/scripts.pory"
+# 222 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 224 "data//maps/GalecrestCity/scripts.pory"
+# 223 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_EventScript_Poochyena_Text_0
-# 225 "data//maps/GalecrestCity/scripts.pory"
+# 224 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	return
 
@@ -269,7 +267,7 @@ GalecrestCity_OnFrame_Movement_0:
 # 64 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Trigger0_Movement_0:
 # 64 "data//maps/GalecrestCity/scripts.pory"
-	face_down
+	face_right
 # 64 "data//maps/GalecrestCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
@@ -277,85 +275,83 @@ GalecrestCity_DetectiveMeet_Trigger0_Movement_0:
 # 73 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Trigger0_Movement_1:
 # 73 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 73 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 73 "data//maps/GalecrestCity/scripts.pory"
 	walk_up
 # 73 "data//maps/GalecrestCity/scripts.pory"
-	walk_right
-# 73 "data//maps/GalecrestCity/scripts.pory"
-	walk_right
-# 73 "data//maps/GalecrestCity/scripts.pory"
-	face_up
+	walk_left
 	step_end
 
 # 92 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Trigger1_Movement_0:
 # 92 "data//maps/GalecrestCity/scripts.pory"
-	walk_up
+	walk_left
 # 92 "data//maps/GalecrestCity/scripts.pory"
-	walk_right
+	walk_left
 # 92 "data//maps/GalecrestCity/scripts.pory"
-	face_up
+	walk_left
 	step_end
 
 # 112 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Trigger2_Movement_0:
 # 112 "data//maps/GalecrestCity/scripts.pory"
-	walk_up
+	walk_left
+# 112 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 112 "data//maps/GalecrestCity/scripts.pory"
+	walk_down
+# 112 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
 	step_end
 
 # 132 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Trigger3_Movement_0:
 # 132 "data//maps/GalecrestCity/scripts.pory"
-	walk_up
+	walk_left
 # 132 "data//maps/GalecrestCity/scripts.pory"
 	walk_left
 # 132 "data//maps/GalecrestCity/scripts.pory"
-	face_up
+	walk_down
+# 132 "data//maps/GalecrestCity/scripts.pory"
+	walk_down
+# 132 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
 	step_end
 
-# 151 "data//maps/GalecrestCity/scripts.pory"
+# 149 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Main_Movement_0:
-# 151 "data//maps/GalecrestCity/scripts.pory"
-	face_left
-	step_end
-
-# 155 "data//maps/GalecrestCity/scripts.pory"
-GalecrestCity_DetectiveMeet_Main_Movement_1:
-# 155 "data//maps/GalecrestCity/scripts.pory"
+# 149 "data//maps/GalecrestCity/scripts.pory"
 	face_down
 	step_end
 
-# 167 "data//maps/GalecrestCity/scripts.pory"
-GalecrestCity_DetectiveMeet_Main_Movement_2:
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_right
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_left
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_left
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
-# 167 "data//maps/GalecrestCity/scripts.pory"
-	walk_down
+# 150 "data//maps/GalecrestCity/scripts.pory"
+GalecrestCity_DetectiveMeet_Main_Movement_1:
+# 150 "data//maps/GalecrestCity/scripts.pory"
+	face_up
 	step_end
 
-# 172 "data//maps/GalecrestCity/scripts.pory"
+# 161 "data//maps/GalecrestCity/scripts.pory"
+GalecrestCity_DetectiveMeet_Main_Movement_2:
+# 161 "data//maps/GalecrestCity/scripts.pory"
+	face_left
+	step_end
+
+# 165 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_DetectiveMeet_Main_Movement_3:
-# 172 "data//maps/GalecrestCity/scripts.pory"
-	face_up
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
+# 165 "data//maps/GalecrestCity/scripts.pory"
+	walk_left
 	step_end
 
 GalecrestCity_OnFrame_Text_0:
@@ -405,7 +401,7 @@ GalecrestCity_DetectiveMeet_Main_Text_2:
 	.string "{PKMN} were completely different too?$"
 
 GalecrestCity_DetectiveMeet_Main_Text_3:
-# 153 "data//maps/GalecrestCity/scripts.pory"
+# 152 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: Did you know this was\n"
 	.string "possible RUE?\p"
 	.string "RUE: No, I had no idea. We knew that\n"
@@ -413,7 +409,7 @@ GalecrestCity_DetectiveMeet_Main_Text_3:
 	.string "to transport things and people...$"
 
 GalecrestCity_DetectiveMeet_Main_Text_4:
-# 159 "data//maps/GalecrestCity/scripts.pory"
+# 157 "data//maps/GalecrestCity/scripts.pory"
 	.string "RUE: {PLAYER}, you encountered\n"
 	.string "ancient {PKMN} there, right? I wonder...\p"
 	.string "Did the dreamstone take you back to\n"
@@ -428,13 +424,13 @@ GalecrestCity_DetectiveMeet_Main_Text_4:
 	.string "I'm glad you're okay.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_5:
-# 175 "data//maps/GalecrestCity/scripts.pory"
+# 173 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: We've uncovered a new lead\n"
 	.string "on Professor Tenebris. An agent told us\l"
 	.string "that he was spotted in Silversun City.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_6:
-# 176 "data//maps/GalecrestCity/scripts.pory"
+# 174 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: There's one issue...Team\n"
 	.string "Somber. They're a known and dangerous\l"
 	.string "criminal syndicate that aims to wrest\l"
@@ -446,7 +442,7 @@ GalecrestCity_DetectiveMeet_Main_Text_6:
 	.string "things could erupt. We have to be there.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_7:
-# 177 "data//maps/GalecrestCity/scripts.pory"
+# 175 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: But now that we know Team\n"
 	.string "Somber is involved, we fear for your\l"
 	.string "safety, {PLAYER}. You may have\l"
@@ -459,18 +455,18 @@ GalecrestCity_DetectiveMeet_Main_Text_7:
 	.string "individuals!$"
 
 GalecrestCity_DetectiveMeet_Main_Text_8:
-# 182 "data//maps/GalecrestCity/scripts.pory"
+# 181 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: This building is the\n"
 	.string "Detective Academy. Your frield KOHLA\l"
 	.string "was trained here. He knows the plan\l"
 	.string "already. Go and talk to him first.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_9:
-# 187 "data//maps/GalecrestCity/scripts.pory"
+# 186 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: See you in Silversun City.$"
 
 GalecrestCity_EventScript_Poochyena_Text_0:
-# 224 "data//maps/GalecrestCity/scripts.pory"
+# 223 "data//maps/GalecrestCity/scripts.pory"
 	.string "POOCHYENA: grr...\p"
 	.string "The POOCHYENA are clearly on edge.\n"
 	.string "Better not aggravate them!$"

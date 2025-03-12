@@ -1,8 +1,8 @@
 raw `
-    .set LOCALID_GAB, 17
-    .set LOCALID_DET1, 25
-    .set LOCALID_DET2, 24
-    .set LOCALID_RUE, 23
+    .set LOCALID_GAB, 15
+    .set LOCALID_DET1, 21
+    .set LOCALID_DET2, 22
+    .set LOCALID_RUE, 20
 `
 
 mapscripts GalecrestCity_MapScripts{
@@ -61,16 +61,16 @@ script GalecrestCity_DetectiveMeet_Trigger0{
     lockall
 
     //Make all people face player and exclamation mark
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *2 face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *2 walk_up walk_left))
 
     //Trigger next script
     call(GalecrestCity_DetectiveMeet_Main)
@@ -80,16 +80,16 @@ script GalecrestCity_DetectiveMeet_Trigger1{
     lockall
 
     //Make all people face player and exclamation mark
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *3))
     waitmovement(0)
 
     //Trigger next script
@@ -100,16 +100,16 @@ script GalecrestCity_DetectiveMeet_Trigger2{
     lockall
 
     //Make all people face player and exclamation mark
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *2 walk_down walk_left))
     waitmovement(0)
 
     //Trigger next script
@@ -120,16 +120,16 @@ script GalecrestCity_DetectiveMeet_Trigger3{
     lockall
 
     //Make all people face player and exclamation mark
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
 
     //Move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *2 walk_down *2 walk_left))
     waitmovement(0)
 
     //Trigger next script
@@ -139,38 +139,36 @@ script GalecrestCity_DetectiveMeet_Trigger3{
 
 script GalecrestCity_DetectiveMeet_Main{
     msgbox(format("RUE: We heard from KOHLA that you went up to the peak to stop Team Somber. What happened up there?\p...\p..."))
-    applymovement(LOCALID_DET1, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_DET2, moves(face_down emote_exclamation_mark))
-    applymovement(LOCALID_RUE, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
+    applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)    
     msgbox(format("RUE: What! Is that true? Did all of that happen?\p...\pI'm glad you're safe, {PLAYER}. What a series of events!"))
     msgbox(format("DETECTIVE: So the dreamstones transported you to another dimension that you couldn't recognise? And the {PKMN} were completely different too?"))
     release
-    applymovement(LOCALID_DET1, moves(face_right ))
-    applymovement(LOCALID_DET2, moves(face_right ))
-    applymovement(LOCALID_RUE, moves(face_left ))
+    applymovement(LOCALID_DET1, moves(face_down ))
+    applymovement(LOCALID_RUE, moves(face_up ))
     delay(16)
     msgbox(format("DETECTIVE: Did you know this was possible RUE?\p RUE: No, I had no idea. We knew that dreamstones absorbed {PKMN} memories, but to transport things and people..."))
     release
-    applymovement(LOCALID_DET1, moves(face_down))
-    applymovement(LOCALID_DET2, moves(face_down))
-    applymovement(LOCALID_RUE, moves(face_down))
+    applymovement(LOCALID_DET1, moves(face_right))
+    applymovement(LOCALID_RUE, moves(face_right))
     delay(16)
     msgbox(format("RUE: {PLAYER}, you encountered ancient {PKMN} there, right? I wonder...\pDid the dreamstone take you back to the past somehow?\pRUE: Incredible...so much we don't yet know...\pI need to do some research. I'm going to head back to the lab.\p{PLAYER}, the detectives have some updates for you.\p...\pI'm glad you're okay."))
     release
 
     //Rue exit
-    applymovement(LOCALID_DET1, moves(face_down))
-    applymovement(LOCALID_DET2, moves(face_down)) 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down)) 
+    applymovement(LOCALID_DET1, moves(face_left))
+    applymovement(LOCALID_DET2, moves(face_left)) 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left)) 
 
-    applymovement(LOCALID_RUE, moves(walk_right, walk_down * 3 walk_left *2 walk_down * 6))
+    applymovement(LOCALID_RUE, moves(walk_left * 6))
     waitmovement(0)
     removeobject(LOCALID_RUE)
 
     //Back to detectives
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-    waitmovement(0)
+    applymovement(LOCALID_DET1, moves(face_right))
+    applymovement(LOCALID_DET2, moves(face_right))      
     delay(16)
     msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that he was spotted in Silversun City."))
     msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Silversun City too.\pIf the Professor, his dreamstone and Team Somber are in the same spot, things could erupt. We have to be there."))
@@ -178,12 +176,14 @@ script GalecrestCity_DetectiveMeet_Main{
     release
     applymovement(LOCALID_DET1, moves(face_up))
     applymovement(LOCALID_DET2, moves(face_up))    
-    delay(16)    
-    msgbox(format("DETECTIVE: This building is the Detective Academy. Your frield KOHLA was trained here. He knows the plan already. Go and talk to him first."))       
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))   
+    delay(24)    
+    msgbox(format("DETECTIVE: This building is the Detective Academy. Your frierd KOHLA was trained here. He knows the plan already. Go and talk to him first."))       
     release
-    applymovement(LOCALID_DET1, moves(face_down))
-    applymovement(LOCALID_DET2, moves(face_down))      
-    delay(16)
+    applymovement(LOCALID_DET1, moves(face_right))
+    applymovement(LOCALID_DET2, moves(face_right))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))         
+    delay(24)
     msgbox(format("DETECTIVE: See you in Silversun City."))
     release
 
