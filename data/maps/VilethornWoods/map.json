@@ -30,6 +30,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": ""
     }
   ],
   "coord_events": [

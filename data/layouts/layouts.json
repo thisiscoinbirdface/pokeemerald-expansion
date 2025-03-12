@@ -4814,7 +4814,7 @@
     {
       "id": "LAYOUT_ROUTE5",
       "name": "Route5_Layout",
-      "width": 34,
+      "width": 70,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -4830,6 +4830,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/VilethornWoods/border.bin",
       "blockdata_filepath": "data/layouts/VilethornWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY",
+      "name": "SilversunCity_Layout",
+      "width": 40,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/SilversunCity/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity/map.bin"
     }
   ]
 }

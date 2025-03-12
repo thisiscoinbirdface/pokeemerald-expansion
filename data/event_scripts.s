@@ -1232,3 +1232,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route5/scripts.inc"
 
 	.include "data/maps/VilethornWoods/scripts.inc"
+
+	.include "data/maps/SilversunCity/scripts.inc"
