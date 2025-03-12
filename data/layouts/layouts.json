@@ -4834,7 +4834,7 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY",
       "name": "SilversunCity_Layout",
-      "width": 40,
+      "width": 44,
       "height": 48,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
