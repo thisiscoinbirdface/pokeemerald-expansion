@@ -512,6 +512,27 @@
       "elevation": 0,
       "dest_map": "MAP_GALECREST_CITY_HOUSES_POOR",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 20,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_RICH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_RICH",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 20,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_HOUSES_RICH",
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [
