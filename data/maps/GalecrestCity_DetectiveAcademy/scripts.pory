@@ -2,7 +2,7 @@ raw `
     .set LOCALID_KOHLA, 16
 `
 
-mapscripts GalecrestCityDetectiveAcademy_Mapscripts{}
+mapscripts GalecrestCity_DetectiveAcademy_MapScripts{}
 
 
 
@@ -12,8 +12,8 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
     //Kohla stares blankly
     //Explains his past and motivations
-    msgbox(format("...\p...\p...\pKOHLA: I'm as an orphan. As a child I learned to rely on myself. I saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class..\p...but it wasn't enough."))
-
+    msgbox(format("...\p...\p...\pKOHLA: I'm an orphan. As a child I learned to rely on myself.\pI saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
+    release
     //Turns, thanks player for telling him what he needs
     applymovement(LOCALID_KOHLA, moves(face_up))
     waitmovement(0)
@@ -26,9 +26,10 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
     msgbox(format("Silverstone City is west of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City."))
-
+    release
     //Leaves
-    applymovement(LOCALID_KOHLA, moves(walk_up * 5))
+    applymovement(LOCALID_KOHLA, moves(walk_up * 4))
+    waitmovement(0)
     removeobject(LOCALID_KOHLA)
     setflag(FLAG_DETECTIVE_ACAD_KOHLA)    
 

@@ -1,0 +1,29 @@
+mapscripts GalecrestCity_Pokemart_MapScripts{}
+
+script GalecrestCity_Pokemart_EventScript_Clerk{
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(GalecrestCity_Pokemart_Inventory)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart GalecrestCity_Pokemart_Inventory {
+    ITEM_POTION
+    ITEM_POKE_BALL
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ENERGY_POWDER
+    ITEM_REPEL
+}
+
+script GalecrestCity_Pokemart_NPC{
+    lockall
+    faceplayer
+    msgbox(format("Don't forget to sell your extra items!"))
+    releaseall
+}
+

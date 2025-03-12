@@ -1224,3 +1224,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GalecrestCity/scripts.inc"
 
 	.include "data/maps/GalecrestCity_DetectiveAcademy/scripts.inc"
+
+	.include "data/maps/GalecrestCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/GalecrestCity_Pokemart/scripts.inc"

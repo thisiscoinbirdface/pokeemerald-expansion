@@ -4775,7 +4775,7 @@
       "id": "LAYOUT_GALECREST_CITY",
       "name": "GalecrestCity_Layout",
       "width": 60,
-      "height": 74,
+      "height": 66,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/GalecrestCity/border.bin",
@@ -4790,6 +4790,26 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/GalecrestCity_DetectiveAcademy/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCity_DetectiveAcademy/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_POKEMON_CENTER",
+      "name": "GalecrestCity_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/GalecrestCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_POKEMART",
+      "name": "GalecrestCity_Pokemart_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/GalecrestCity_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_Pokemart/map.bin"
     }
   ]
 }
