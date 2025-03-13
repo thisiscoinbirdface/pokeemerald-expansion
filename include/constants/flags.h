@@ -75,7 +75,7 @@
 #define FLAG_GALECREST_DETECTIVE_CONVO    0x3C // the conversation with rue and the detectives
 #define FLAG_DETECTIVE_ACAD_KOHLA    0x3D // After talking to kohla at the academy
 #define FLAG_DETECTIVE_ACAD_BREECH    0x3E // check this flag off once you meet breech next.
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_GALECREST_POOR_TRADEITEM    0x3F // trade a BLUE FLUTE for a PEAT BLOCK in a poor galecrest house
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
@@ -1055,7 +1055,7 @@
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
-// Item Ball Flags (I AM CHANGING THESE ONE BY ONE)
+// Item Ball Flags (I AM GOING TO CHANGE THESE ONE BY ONE)
 #define FLAG_ITEM_ROUTE_1_POTION                                    0x3E8
 #define FLAG_ITEM_ROUTE_1_POKE_BALL                                 0x3E9
 #define FLAG_ITEM_ROUTE_2_POTION                                    0x3EA //FLAG_ITEM_ROUTE_104_PP_UP

@@ -300,15 +300,15 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
         msgbox(format("One of the Lab's Pokemon."))
     } else {
 
-        showmonpic(SPECIES_RIOLU, 10,3)
-        msgbox("Do you want to choose Riolu?", MSGBOX_YESNO)
+        showmonpic(SPECIES_GOTHITA, 10,3)
+        msgbox("Do you want to choose GOTHITA?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
             removeobject(4)
-            givemon(SPECIES_RIOLU, 9, ITEM_POKE_BALL)
+            givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a Riolu!"))
+                msgbox(format("The Tenebris Lab has gifted you a GOTHITA!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -333,15 +333,15 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
         msgbox(format("One of the Lab's Pokemon."))
     } else {
 
-        showmonpic(SPECIES_ROCKRUFF, 10,3)
-        msgbox("Do you want to choose Rockruff?", MSGBOX_YESNO)
+        showmonpic(SPECIES_TIMBURR, 10,3)
+        msgbox("Do you want to choose TIMBURR?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
-            givemon(SPECIES_ROCKRUFF, 5, ITEM_POKE_BALL)
+            givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
             removeobject(7)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a Rockruff!"))
+                msgbox(format("The Tenebris Lab has gifted you a TIMBURR!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -366,15 +366,15 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
         msgbox(format("One of the Lab's Pokemon."))
     } else {
 
-        showmonpic(SPECIES_RUFFLET, 10,3)
-        msgbox("Do you want to choose Rufflet?", MSGBOX_YESNO)
+        showmonpic(SPECIES_ZIGZAGOON_GALAR, 10,3)
+        msgbox("Do you want to choose ZIGZAGOON?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
-            givemon(SPECIES_RUFFLET, 5, ITEM_POKE_BALL)
+            givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
             removeobject(6)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a Rufflet!"))
+                msgbox(format("The Tenebris Lab has gifted you a ZIGZAGOON!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
