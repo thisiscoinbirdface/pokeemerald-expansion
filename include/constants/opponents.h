@@ -35,10 +35,10 @@
 
 //Route 4 Trainers
     //regular
-    #define TRAINER_ROUTE4_RAHA        19
-    #define TRAINER_ROUTE4_CAMMY               20 //double battle
-    #define TRAINER_ROUTE4_SONA               21
-    #define TRAINER_ROUTE4_JENNY         22
+    #define TRAINER_ROUTE4_RAHA              19
+    #define TRAINER_ROUTE4_CAMMY             20
+    #define TRAINER_ROUTE4_SONA              21
+    #define TRAINER_ROUTE4_JENNY             22
 
 //Ninja kids
     #define TRAINER_ROUTE4_KID1            23
@@ -53,19 +53,25 @@
 #define TRAINER_CERAMBASECAMPGYM_LEADER      30
 
 //Ceram
-#define TRAINER_ZANDER                       31
-#define TRAINER_SHELLY_WEATHER_INSTITUTE     32
-#define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
-#define TRAINER_ARCHIE                       34
-#define TRAINER_LEAH                         35
-#define TRAINER_DAISY                        36
-#define TRAINER_ROSE_1                       37
-#define TRAINER_FELIX                        38
-#define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
+    //Trainers
+    #define TRAINER_MTCERAM_A                    31
+    #define TRAINER_MTCERAM_B                    32
+    #define TRAINER_MTCERAM_C                    33
+    #define TRAINER_MTCERAM_D                    34
+    //Somber
+    #define TRAINER_MTCERAM_GRUNT1               35
+    #define TRAINER_MTCERAM_GRUNT2               36
+    #define TRAINER_MTCERAM_GRUNT_DOUBLE         37
+    //Boss battle at peak
+    #define TRAINER_CERAMPEAK_MOXIE              38
 
 //Galecrest
-#define TRAINER_GALECREST_ROBBER             41
+#define TRAINER_GALECREST_ROBBER             39
+#define TRAINER_GALECREST_A                  40
+#define TRAINER_GALECREST_B                  41
+
+
+
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44

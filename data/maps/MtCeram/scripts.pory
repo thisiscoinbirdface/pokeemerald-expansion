@@ -280,6 +280,54 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 
 
+//TRAINERS
+script MtCeram_TrainerBattle_A {
+    trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect\ptraining spot. Don't you agree?"), format("It's never enough!"))
+    msgbox(format("Since its so hot here, you sweat more. And sweat is good!"))
+    release
+    end
+}
+
+
+script MtCeram_TrainerBattle_B {
+    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PMKN}.\pBet your eyes will pop when\pyou see what I caught here!"), format("Is rarity not enough?"))
+    msgbox(format("I love my {PKMN} as friends and partners...and collectibles!"))
+    release
+    end
+}
+
+
+script MtCeram_TrainerBattle_C {
+    trainerbattle_single(TRAINER_MTCERAM_C, format("My SIZZLEPEDE loves preying on the\nVENIPEDE around here!"), format("You sizzle too much!"))
+    msgbox(format("SIZZLEPEDE and VENIPEDE are sworn enemies, much like their evolutions."))
+    release
+    end
+}
+
+
+script MtCeram_TrainerBattle_D {
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here\pbut their hair is sizzling in the heat!"), format("I should go back down."))
+    msgbox(format("Most {PKMN} Breeders specialise in a single group. I specialise in rearing sheep!"))
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //NPC Scripts
 script MtCeram_EventScript_NPC1{
@@ -292,7 +340,7 @@ script MtCeram_EventScript_NPC1{
 script MtCeram_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("I saw a LARVESTA here the other day! Since then I've been trying to find another, but they're very secretive."))
+    msgbox(format("I saw a LARVESTA here the other day! But they're very rare. The constant SIZZLIPEDE and VENIPEDE fighting scare them away."))
     releaseall
 }
 

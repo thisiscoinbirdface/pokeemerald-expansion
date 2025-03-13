@@ -248,7 +248,7 @@ script CeramBaseCamp_Main_NPC1{
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("I'm glad those Team Somber people have left!"))
+        msgbox(format("CENTISKORCH and SCOLIPEDE are fiercely territorial. They keep fighting each other in MT CERAM."))
     } else {
         //When Team Somber is there
         msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."))
