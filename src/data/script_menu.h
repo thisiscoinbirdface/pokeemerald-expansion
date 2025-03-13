@@ -783,6 +783,14 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceGrid_NumberInput[] =
+{
+    {COMPOUND_STRING("1")}, {COMPOUND_STRING("2")}, {COMPOUND_STRING("3")}, {COMPOUND_STRING("4")}, {COMPOUND_STRING("5")},
+    {COMPOUND_STRING("1")}, {COMPOUND_STRING("2")}, {COMPOUND_STRING("3")}, {COMPOUND_STRING("4")}, {COMPOUND_STRING("5")},
+    {COMPOUND_STRING("1")}, {COMPOUND_STRING("2")}, {COMPOUND_STRING("3")}, {COMPOUND_STRING("4")}, {COMPOUND_STRING("5")},
+    {COMPOUND_STRING("1")}, {COMPOUND_STRING("2")}, {COMPOUND_STRING("3")}, {COMPOUND_STRING("4")}, {COMPOUND_STRING("5")},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -791,6 +799,7 @@ struct MultichoiceListStruct
 
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
+    [MULTI_NUMBER_INPUT]               = MULTICHOICE(MultichoiceGrid_NumberInput),    
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
     [MULTI_PC]                         = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_ENTERINFO]                  = MULTICHOICE(MultichoiceList_EnterInfo),

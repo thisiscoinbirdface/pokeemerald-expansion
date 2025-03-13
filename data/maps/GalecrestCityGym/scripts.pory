@@ -1,0 +1,8 @@
+mapscripts GalecrestCityGym_MapScripts{}
+
+
+script GalecrestCityGym_Test{
+    lockall
+    multichoicegrid(0, 0, MULTI_NUMBER_INPUT, 0, TRUE)
+    releaseall
+}
