@@ -63,6 +63,21 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
 
 //NPCs
 //Lobby
+script GalecrestCity_DetectiveAcademy_Receptionist{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Detective Academy!"))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_Guard{
+    lockall
+    faceplayer
+    msgbox(format("Sorry. Dorm access is for students only."))
+    releaseall
+}
+
+
 script GalecrestCity_DetectiveAcademy_NPC1{
     lockall
     faceplayer
