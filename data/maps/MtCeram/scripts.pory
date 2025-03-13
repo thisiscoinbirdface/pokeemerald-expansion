@@ -245,7 +245,8 @@ script MtCeram_EventScript_BeforePeakBattle{
     waitmovement(0)       
 
     //now you battle
-
+    trainerbattle_no_intro(TRAINER_MTCERAM_GRUNT_DOUBLE, format("Argh! You stupid kid!"))
+    
 
 
     //grunts beaten, disappear
@@ -282,7 +283,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 //TRAINERS
 script MtCeram_TrainerBattle_A {
-    trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect\ptraining spot. Don't you agree?"), format("It's never enough!"))
+    trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect\ntraining spot. Don't you agree?"), format("It's never enough!"))
     msgbox(format("Since its so hot here, you sweat more. And sweat is good!"))
     release
     end
@@ -290,7 +291,7 @@ script MtCeram_TrainerBattle_A {
 
 
 script MtCeram_TrainerBattle_B {
-    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}.\pBet your eyes will pop when\pyou see what I caught here!"), format("Is rarity not enough?"))
+    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}.\nBet your eyes will pop when\nyou see what I caught here!"), format("Is rarity not enough?"))
     msgbox(format("I love my {PKMN} as friends and partners...and collectibles!"))
     release
     end
@@ -306,7 +307,7 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here\pbut their hair is sizzling in the heat!"), format("I should go back down."))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here\nbut their hair is sizzling in the heat!"), format("I should go back down."))
     msgbox(format("Most {PKMN} Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
@@ -370,6 +371,7 @@ script MtCeram_EventScript_NPCNurse{
         msgbox(format("NURSE JOY: I can't heal your {PKMN} but I do have these. Hope they come in handy!"))
         release
         giveitem(ITEM_REVIVE)
+        release
         giveitem(ITEM_SUPER_POTION)
         setflag(FLAG_MT_CERAM_NURSE)
     }
@@ -379,15 +381,16 @@ script MtCeram_EventScript_NPCNurse{
 
 script MtCeram_EventScript_Gabrielle{
     lockall
-    msgbox(format("GABRIELLE: Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\psniff..."))
-    emote_exclamation_mark
+    msgbox(format("GABRIELLE: Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\p..."))
+    release
+    applymovement(5, moves(emote_exclamation_mark))
     release
     delay(30)
     faceplayer
     delay(30)
     msgbox(format("GABRIELLE: Don't look at me like that! You don't know what its like..."))
     release
-    face_left
+        applymovement(5, moves(face_left))
     releaseall
 }
 
