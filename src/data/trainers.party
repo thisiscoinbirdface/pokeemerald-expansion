@@ -718,8 +718,8 @@ Gloom
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GALECREST_A ===
-Name: ROSE
+=== TRAINER_GALECREST_DETECTIVE_A ===
+Name: CANDY
 Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Female
@@ -727,13 +727,10 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 26
+Charcadet
+Level: 18
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Roselia
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GALECREST_B ===
 Name: Evio

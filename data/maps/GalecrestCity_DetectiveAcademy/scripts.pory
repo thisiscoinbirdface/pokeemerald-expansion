@@ -36,3 +36,129 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
     releaseall
 }
+
+
+
+//BREECH
+script GalecrestCity_DetectiveAcademy_Breech{
+    lockall
+    faceplayer
+    msgbox(format("It's you {PLAYER}! How are you? CLEFAIRY and I are sitting in this class on {PKMN} battles. Yep, to be a good detective, you need to be a strong trainer too!"))
+    applymovement(13, moves(face_left))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_Clefairy{
+    lockall
+    msgbox(format("CLEFAIRY is listening intently to the teacher. A good student!"))
+    releaseall
+}
+
+
+
+
+
+
+
+
+//NPCs
+//Lobby
+script GalecrestCity_DetectiveAcademy_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Ooh! Ohh! Are the new class rankings out yet?"))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("Every semester, the school ranks all the students. The top student is called the Ace Rookie! KOHLA held the title every semester, but he's graduated now, so the field is open again!"))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("All new students receive a CHARCADET as their first {PKMN}. It's the standard detective companion."))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("Since many rich folk live in GALECREST CITY, there's a lot of theft. New students are often handed smaller cases to solve as part of their field studies."))
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("I'm going to join today! I'm so excited to get my CHARCADET and become an Ace Rookie!"))
+    releaseall
+}
+
+
+//Hall
+script GalecrestCity_DetectiveAcademy_NPC6{
+    lockall
+    faceplayer
+    msgbox(format("Are you a student? You shouldn't be here if you aren't."))
+    releaseall
+}
+
+
+//Classrooms
+    //Double battle
+    script GalecrestCity_DetectiveAcademy_NPC7{
+        lockall
+        faceplayer
+        msgbox(format("We're battling to practice for our exams. It's very competitive here. Losers like you can't cut it."))
+        releaseall
+    }
+
+script GalecrestCity_DetectiveAcademy_NPC8{
+    lockall
+    faceplayer
+    msgbox(format("Hey, you look weak. You'd be a good training dummy for my CHARCADET!"))
+    releaseall
+trainerbattle_single(TRAINER_ROUTE4_RAHA, format("ey, you look weak.\pYou'd be a good training\ndummy for my CHARCADET!"), format("But Father spent so much money!"))
+    msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
+    release
+    end
+
+}
+
+script GalecrestCity_DetectiveAcademy_NPC9{
+    lockall
+    faceplayer
+    msgbox(format())
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC10{
+    lockall
+    faceplayer
+    msgbox(format())
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC11{
+    lockall
+    faceplayer
+    msgbox(format())
+    releaseall
+}
+
+script GalecrestCity_DetectiveAcademy_NPC12{
+    lockall
+    faceplayer
+    msgbox(format())
+    releaseall
+}
+
+
+
+
+
+

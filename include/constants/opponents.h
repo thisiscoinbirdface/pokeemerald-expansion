@@ -67,7 +67,7 @@
 
 //Galecrest
 #define TRAINER_GALECREST_ROBBER             39
-#define TRAINER_GALECREST_A                  40
+#define TRAINER_GALECREST_DETECTIVE_A        40
 #define TRAINER_GALECREST_B                  41
 
 
