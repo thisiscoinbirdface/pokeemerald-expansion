@@ -267,7 +267,7 @@
 #define VAR_GASTREE_TEASHOP_QUEST                        0x40FB // 0: quest not started, 1: quest underway, 2: quest completed
 #define VAR_GASTREE_SKITTY_QUEST                         0x40FC // Gastree skitty quest
 #define VAR_ANCIENT_GAB_ESCAPE                           0x40FD // First ancient area. 0: nothing, 1: spoke to gab, 2: reached exit, 3: picked up gab, 4: exited
-#define VAR_GALECREST_POOR_FINDITEM                      0x40FE // in the rightmost poor house, they lost something in the garden.
+#define VAR_GALECREST_RICH_PEARLS                        0x40FE // the rich house robber quest.
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
     //Moved down from above (i am going to use these)

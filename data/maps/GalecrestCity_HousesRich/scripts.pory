@@ -1,0 +1,129 @@
+mapscripts GalecrestCity_HousesRich_MapScripts{}
+
+
+
+//In this house, the boy has left for the detective academy (to be done later)
+script GalecrestCity_HousesRich_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Our older son has joined the Detective Academy. He's the pride of the family!"))
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("I can only hope my younger son takes after his brother."))
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("My parents only care about big bro. They're always mean to me!"))
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("I work so hard and my wife spends all the money on jewellery!"))
+    release
+    
+    if (var(VAR_GALECREST_RICH_PEARLS) == 3){
+        msgbox(format("You found her pearls, did you? And she took your money? Sigh..."))
+        giveitem(ITEM_SILK_SCARF)
+        setvar(VAR_GALECREST_RICH_PEARLS, 4)
+        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to stand up for yourself!"))
+    }
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC5{
+    lockall
+    faceplayer
+    
+    //VAR_GALECREST_RICH_PEARLS
+    //0: start quest
+    //1: started quest, no update
+    //2: got the pearls
+    //3: done
+
+    if (var(VAR_GALECREST_RICH_PEARLS) == 0){
+        msgbox(format("Oh my! I can't find my PEARL anywhere! I think someone must've stolen it! You, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
+        //Start quest
+        setvar(VAR_GALECREST_RICH_PEARLS, 1)
+    } else if (var(VAR_GALECREST_RICH_PEARLS) == 1){
+        msgbox(format("Did you find it yet? No? Well what are you standing in here for? Hurry up and get my pearls, boy!"))
+        release
+    } else if (var(VAR_GALECREST_RICH_PEARLS) == 2){
+        msgbox(format("Ahh my beautiful pearls! Thank you child, thank you! Since you took so much time to find the pearls, I'll be taking some money from you of course. You stressed me out and you've got to make amends!"))
+        release
+        removemoney(500)
+    } else {
+        msgbox(format("You're dirtying the floor with your dirty shoes!"))
+        release
+    }
+
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC6{
+    lockall
+    faceplayer
+    msgbox(format("I'm a professional cook. It's interesting being able to peek into the lives of the super rich...I appreciate my family more now."))
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC7{
+    lockall
+    faceplayer
+    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner. We never eat together."))
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_NPC8{
+    lockall
+    faceplayer
+    msgbox(format("Our daughter grew up and is now the Gym Leader of Silversun City. So we live alone in this big house now..."))
+    releaseall
+}
+
+//Give some swag item
+script GalecrestCity_HousesRich_NPC9{
+    lockall
+    faceplayer
+
+    if (flag(FLAG_GALECREST_RICH_HOUSECLEANITEM)){
+        
+    } else {
+        msgbox(format("I'm trying to organise my daughter's belongings. Are you a {PKMN} trainer?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("So is my daughter. She used these to train her {PKMN}. They'll be more useful in your hands."))
+            giveitem(ITEM_MACHO_BRACE)
+            setflag(FLAG_GALECREST_RICH_HOUSECLEANITEM)
+        } else {
+            msgbox(format("My daughter is a trainer so she has lots of training equipment."))
+        }
+    }
+    releaseall
+}
+
+
+script GalecrestCity_HousesRich_Keckleon{
+    lockall
+    faceplayer
+    msgbox(format("KECKLEON glares intently at you."))
+    releaseall
+}
+
+
+
+
