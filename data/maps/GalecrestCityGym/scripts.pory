@@ -3,6 +3,6 @@ mapscripts GalecrestCityGym_MapScripts{}
 
 script GalecrestCityGym_Test{
     lockall
-    multichoicegrid(0, 0, MULTI_NUMBER_INPUT, 0, TRUE)
+    multichoicegrid(5, 5, MULTI_NUMBER_INPUT, 5, TRUE)
     releaseall
 }

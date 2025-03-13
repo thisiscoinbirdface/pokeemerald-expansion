@@ -29,7 +29,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 4,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY",
+      "dest_warp_id": "10"
+    }
   ],
   "coord_events": [
 
