@@ -1073,16 +1073,25 @@
 #define FLAG_ITEM_ROUTE_4_B                                         0x3F2
 #define FLAG_ITEM_ROUTE_4_C                                         0x3F3
 
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
-#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
-#define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
+//Ceram Base Camp items
+#define FLAG_ITEM_CERAMBASECAMP_A                               0x3F4
+
+//Mt Ceram items
+#define FLAG_ITEM_MTCERAM_A                             0x3F5
+#define FLAG_ITEM_MTCERAM_B                             0x3F6
+#define FLAG_ITEM_MTCERAM_C                                 0x3F7
+#define FLAG_ITEM_MTCERAM_D                            0x3F8
+
+//Mt Ceram indoor items
+#define FLAG_ITEM_MTCERAM_CAVE_A                          0x3F9
+#define FLAG_ITEM_MTCERAM_CAVE_B                                   0x3FD
+
+//Ancient Ceram items
+#define FLAG_ITEM_ANCIENTCERAM_A                                   0x3FA
+#define FLAG_ITEM_ANCIENTCERAM_B                                   0x3FB
+#define FLAG_ITEM_ANCIENTCERAM_C                                   0x3FC
+
+//Galecrest City items
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
