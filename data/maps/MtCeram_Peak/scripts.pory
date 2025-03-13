@@ -14,7 +14,7 @@ script MtCeramPeak_MainEvent_Trigger{
     msgbox(format("???: So you broke through my grunts. Come here then."))
     release
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 6))
     waitmovement(0)
 
     msgbox(format("???: A dreamstone. This is the first time I've ever seen one."))
@@ -36,25 +36,27 @@ script MtCeramPeak_MainEvent_Trigger{
     release    
 
     //move player
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
 
     //Villain monologue
     //Explain tenebris research
     //Explain somber goals
-    msgbox(format("???: Why, young trainer, have you been a thorn in my organisations side? What's in it for you?\pAhh...you're looking for Professor Tenebris. That explains everything."))   
+    msgbox(format("???: Why, young trainer, have you been a thorn in my organisations side? What's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
-    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property - it can absorb the brainwaves of nearby {PKMN}."))
-    msgbox(format("???: How fascinating! This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of thoughts can a dreamstone absorb?"))
+    delay(30)
+    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property - it can absorb the memories of nearby {PKMN}."))
+    msgbox(format("???: How fascinating! This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)   
     msgbox(format("And he discovered something incredible!"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: Professor Tenebris found out that dreamstones absorb the memories of {PKMN}. So within that stone behind me lie the memories of hundreds of generations of {PKMN}."))
+    delay(30)
+    msgbox(format("???: That stone behind me contains the memories of hundreds of generations of {PKMN} - all the way back to prehistoric times!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)
@@ -62,11 +64,11 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: And with this control, there would be nothing stopping Team Somber from having absolute control over the world! This is what we want, {PLAYER}. This is what the SOMBER KING wants. \pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your nonsense once and for all!"))
+    msgbox(format("???: And with this control, there would be nothing stopping Team Somber from having absolute control over the world! This is what we want, {PLAYER}. This is what the SOMBER KING wants. \pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
     release
 
     //Battle
-
+    trainerbattle_no_intro(TRAINER_CERAMPEAK_MOXIE, format("I can't believe it!"))
 
 
     //Lose battle
@@ -82,7 +84,7 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(face_left))
     waitmovement(0)
-    msgbox(format("MOXIE: GABRIELLE! You worthless dolt! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
+    msgbox(format("MOXIE: GABRIELLE! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
     release  
     applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
