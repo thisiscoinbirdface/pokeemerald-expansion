@@ -132,8 +132,30 @@ script CeramBaseCampGym_LeaderBattle {
     if (flag(FLAG_BADGE02_GET)){
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        trainerbattle_single(TRAINER_GASTREEGYM_LEADER, CeramBaseCampGym_Text_Intro, CeramBaseCampGym_Text_Defeated, CeramBaseCampGym_EventScript_NPC_Signature, NO_MUSIC)
+        msgbox(format("Who's my next appointment? Ah! It's you, {PLAYER}. A pleasant surprise. I'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors. It's good to have a chance to battle for a change!"))
+        trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
+        
+        //Receive the badge
+        msgbox(format("{PLAYER} received the CINDER BADGE from ARIAN."))
         release
+        setflag(FLAG_BADGE02_GET)
+
+        //Play gym badge fanfare
+        call(Common_EventScript_PlayGymBadgeFanfare)
+
+        //Describe the badge features (use HMs, allow pokemon control etc.)
+        msgbox(format("The CINDER BADGE increases the ATK of all your {PKMN} and lets you control {PKMN} upto lv. 20."))
+        msgbox(format("And I'd also like to give you this."))
+        release
+        //Give TM also
+        giveitem(ITEM_TM_SUNNY_DAY)
+        msgbox(format("This TM will let your {PKMN} bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        release
+
+        //Bye-bye
+        msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
+        releaseall
+        
     }
 
     releaseall

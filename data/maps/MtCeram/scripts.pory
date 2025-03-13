@@ -25,7 +25,7 @@ script MtCeram_Eavesdrop_Trigger0{
 
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_down))
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up face_right))
@@ -40,7 +40,7 @@ script MtCeram_Eavesdrop_Trigger1{
 
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_down))
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up face_right))
@@ -55,7 +55,7 @@ script MtCeram_Eavesdrop_Trigger2{
 
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_down)) 
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up face_right))
@@ -70,7 +70,7 @@ script MtCeram_Eavesdrop_Trigger3{
     
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_down))
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up face_right))
@@ -90,6 +90,8 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Somber dialogue
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(30)
     msgbox(format("SOMBER GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
     applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
@@ -111,7 +113,7 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(face_left))
-    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility, {PLAYER} - something you wouldn't know about.\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I don't need your help, chum!"))
+    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I don't need your help, chum!"))
     release
 
     //Kohla walk off

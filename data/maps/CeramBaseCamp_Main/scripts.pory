@@ -74,15 +74,15 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     applymovement(LOCALID_GRUNT4, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("???: GABRIELLE: It's you?"))
+    msgbox(format("GABRIELLE: It's you?"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 4. I was trying to take the dreamstone from that Clefairy hiker."))
+    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that CLEFAIRY hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
-    msgbox(format("???: That wasn't a dreamstone you idiot - that was a moonstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! GABRIELLE, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    msgbox(format("???: That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! GABRIELLE, you deal with this pest while I put the leader in her place. And you better win this time!"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
@@ -165,22 +165,6 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 }
 
-
-
-
-
-script CeramBaseCamp_Main_EventScript_ExitTrigger{
-    lockall
-    applymovement(9, moves(face_left emote_exclamation_mark))
-    waitmovement(0)
-    release
-    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat ARIAN, you won't be able to handle the heat of the mountain!"))
-    release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
-    waitmovement(0)
-    releaseall
-
-}
 
 
 

@@ -783,19 +783,19 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_4:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_5:
 # 77 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "???: GABRIELLE: It's you?$"
+	.string "GABRIELLE: It's you?$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_6:
 # 81 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "GABRIELLE: Boss! Boss! This is the kid\n"
-	.string "that beat me in Route 4. I was trying to\l"
-	.string "take the dreamstone from that Clefairy\l"
-	.string "hiker.$"
+	.string "that beat me in Route 3. I was trying to\l"
+	.string "take the dreamstone from that\l"
+	.string "CLEFAIRY hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_7:
 # 85 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "???: That wasn't a dreamstone you idiot\n"
-	.string "- that was a moonstone! Nonetheless,\l"
+	.string "- that was an everstone! Nonetheless,\l"
 	.string "remind me to punish you for that later.\p"
 	.string "GABRIELLE:...yes boss.\p"
 	.string "???: But there is a dreamstone sitting\n"

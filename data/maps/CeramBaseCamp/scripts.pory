@@ -12,6 +12,32 @@ mapscripts CeramBaseCamp_MapScripts{}
                 releaseall
             }
 
+
+
+
+
+script CeramBaseCamp_EventScript_ExitTrigger{
+    if (flag(FLAG_BADGE02_GET)) {end}
+
+    lockall
+    applymovement(7, moves(face_left emote_exclamation_mark))
+    waitmovement(0)
+    release
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat ARIAN, you won't be able to handle the heat of the mountain!"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    releaseall
+}
+
+script CeramBaseCamp_NPC_Exit{
+    lockall
+    faceplayer
+    msgbox(format("MT CERAM is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."))
+    releaseall   
+}
+
+
 //NPC1 - generic
 script CeramBaseCamp_NPC1{
     lockall
@@ -24,7 +50,7 @@ script CeramBaseCamp_NPC1{
 script CeramBaseCamp_NPC2{
     lockall
     faceplayer
-    msgbox(format("This camp was initially established to dig a tunnel through Mt. Ceram to Silversun City. Old equipment from back then is left here. I remember one of the Drilburs made their home inside one of these machines and refused to leave! Haha! That was many years ago. It must have evolved now."))
+    msgbox(format("This camp was established to dig a tunnel through MT CERAM to SILVERSUN CITY. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha!"))
     releaseall
 }
 
@@ -135,7 +161,7 @@ script CeramBaseCamp_Excadrill{
         if (var(VAR_RESULT) == 1){
 
             //excadrill encounter
-            playmoncry(SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER)
+            playmoncry(SPECIES_DRILBUR, CRY_MODE_ENCOUNTER)
             delay(40)
             waitmoncry
             msgbox(format("A wild {PKMN} attacks!"))
@@ -151,7 +177,7 @@ script CeramBaseCamp_Excadrill{
                 setflag(FLAG_CERAMBASECAMP_EXCADRILL)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
-                msgbox(format("The Excadrill retreats back into its home. Better not disturb it again!"))
+                msgbox(format("The DRILBUR retreats back into its home. Better not disturb it again!"))
             }
         }
 
