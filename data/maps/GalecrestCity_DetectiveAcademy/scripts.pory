@@ -132,28 +132,28 @@ trainerbattle_single(TRAINER_ROUTE4_RAHA, format("ey, you look weak.\pYou'd be a
 script GalecrestCity_DetectiveAcademy_NPC9{
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     releaseall
 }
 
 script GalecrestCity_DetectiveAcademy_NPC10{
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     releaseall
 }
 
 script GalecrestCity_DetectiveAcademy_NPC11{
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     releaseall
 }
 
 script GalecrestCity_DetectiveAcademy_NPC12{
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     releaseall
 }
 

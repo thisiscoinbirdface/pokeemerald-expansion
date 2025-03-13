@@ -428,7 +428,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One::
 # 299 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_2
 # 303 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	showmonpic SPECIES_RIOLU, 10, 3
+	showmonpic SPECIES_GOTHITA, 10, 3
 # 304 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_1, MSGBOX_YESNO
 # 305 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -452,7 +452,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5:
 # 306 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 4
 # 307 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_RIOLU, 9, ITEM_POKE_BALL
+	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY
 # 308 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 309 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -480,7 +480,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Two::
 # 332 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_2
 # 336 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	showmonpic SPECIES_ROCKRUFF, 10, 3
+	showmonpic SPECIES_TIMBURR, 10, 3
 # 337 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0, MSGBOX_YESNO
 # 338 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -502,7 +502,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_2:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_5:
 # 339 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_ROCKRUFF, 5, ITEM_POKE_BALL
+	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY
 # 340 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 341 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -532,7 +532,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Three::
 # 365 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_2
 # 369 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	showmonpic SPECIES_RUFFLET, 10, 3
+	showmonpic SPECIES_ZIGZAGOON_GALAR, 10, 3
 # 370 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0, MSGBOX_YESNO
 # 371 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -554,7 +554,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_2:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_5:
 # 372 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_RUFFLET, 5, ITEM_POKE_BALL
+	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY
 # 373 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 374 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1289,29 +1289,30 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_1:
 # 304 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Do you want to choose Riolu?$"
+	.string "Do you want to choose GOTHITA?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_2:
 # 311 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "The Tenebris Lab has gifted you a Riolu!$"
+	.string "The Tenebris Lab has gifted you a\n"
+	.string "GOTHITA!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0:
 # 337 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Do you want to choose Rockruff?$"
+	.string "Do you want to choose TIMBURR?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_1:
 # 344 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The Tenebris Lab has gifted you a\n"
-	.string "Rockruff!$"
+	.string "TIMBURR!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0:
 # 370 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Do you want to choose Rufflet?$"
+	.string "Do you want to choose ZIGZAGOON?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_1:
 # 377 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The Tenebris Lab has gifted you a\n"
-	.string "Rufflet!$"
+	.string "ZIGZAGOON!$"
 
 NicknamePartyMon_Text_0:
 # 396 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

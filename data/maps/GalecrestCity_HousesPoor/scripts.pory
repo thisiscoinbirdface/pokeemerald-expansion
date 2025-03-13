@@ -12,7 +12,7 @@ script GalecrestCity_HousesPoor_NPC1{
         msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a BLUE FLUTE? I cna't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
 
         //Checkitem
-        if (var(VAR_RESULT == 1)){
+        if (var(VAR_RESULT) == 1){
             //check item
             if (checkitem(ITEM_BLUE_FLUTE) == 1){
                 msgbox(format("Thank you so much! This will be a perfect gift for her."))

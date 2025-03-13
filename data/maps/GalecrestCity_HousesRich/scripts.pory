@@ -53,21 +53,32 @@ script GalecrestCity_HousesRich_NPC5{
     //2: got the pearls
     //3: done
 
+    if (var(VAR_GALECREST_RICH_PEARLS) == 3) {
+        msgbox(format("You're dirtying the floor with your dirty shoes!"))
+        release
+    }
+    if (var(VAR_GALECREST_RICH_PEARLS) == 4) {
+        msgbox(format("You're dirtying the floor with your dirty shoes!"))
+        release
+    }
+
     if (var(VAR_GALECREST_RICH_PEARLS) == 0){
         msgbox(format("Oh my! I can't find my PEARL anywhere! I think someone must've stolen it! You, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
         //Start quest
         setvar(VAR_GALECREST_RICH_PEARLS, 1)
-    } else if (var(VAR_GALECREST_RICH_PEARLS) == 1){
+    } 
+    if (var(VAR_GALECREST_RICH_PEARLS) == 1){
         msgbox(format("Did you find it yet? No? Well what are you standing in here for? Hurry up and get my pearls, boy!"))
         release
-    } else if (var(VAR_GALECREST_RICH_PEARLS) == 2){
+    } 
+    if (var(VAR_GALECREST_RICH_PEARLS) == 2){
         msgbox(format("Ahh my beautiful pearls! Thank you child, thank you! Since you took so much time to find the pearls, I'll be taking some money from you of course. You stressed me out and you've got to make amends!"))
         release
         removemoney(500)
-    } else {
-        msgbox(format("You're dirtying the floor with your dirty shoes!"))
-        release
-    }
+        setvar(VAR_GALECREST_RICH_PEARLS, 3)
+    } 
+
+
 
     releaseall
 }
