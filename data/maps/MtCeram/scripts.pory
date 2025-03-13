@@ -290,7 +290,7 @@ script MtCeram_TrainerBattle_A {
 
 
 script MtCeram_TrainerBattle_B {
-    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PMKN}.\pBet your eyes will pop when\pyou see what I caught here!"), format("Is rarity not enough?"))
+    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}.\pBet your eyes will pop when\pyou see what I caught here!"), format("Is rarity not enough?"))
     msgbox(format("I love my {PKMN} as friends and partners...and collectibles!"))
     release
     end
