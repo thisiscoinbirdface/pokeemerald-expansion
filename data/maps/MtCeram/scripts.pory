@@ -5,6 +5,7 @@ raw `
     .set LOCALID_TOPGRUNT1, 10
     .set LOCALID_TOPGRUNT2, 9
     .set LOCALID_TOPKOHLA, 22
+    .set LOCALID_GAB, 5
 
 `
 
@@ -256,6 +257,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_TOPGRUNT1)
     removeobject(LOCALID_TOPGRUNT2)
+    removeobject(LOCALID_GAB)
     fadescreen(FADE_FROM_BLACK)
 
 
@@ -264,5 +266,83 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     releaseall
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPC Scripts
+script MtCeram_EventScript_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("If I jump over this ledge, I won't be able to return! So I do my jogging here."))
+    releaseall
+}
+
+script MtCeram_EventScript_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("I saw a LARVESTA here the other day! Since then I've been trying to find another, but they're very secretive."))
+    releaseall
+}
+
+script MtCeram_EventScript_NPC3{
+    lockall
+    faceplayer
+    if (flag(FLAG_MT_CERAM_FRESH_WATER)){
+        msgbox(format("Oof! This place is unbearably hot!"))   
+    } else {
+        msgbox(format("Oof! This place is unbearably hot! Don't forget to stay hydrated!"))
+        giveitem(ITEM_FRESH_WATER)
+        setflag(FLAG_MT_CERAM_FRESH_WATER)
+    }
+
+    releaseall
+}
+
+
+
+script MtCeram_EventScript_NPCNurse{
+    lockall
+    
+    if (flag(FLAG_MT_CERAM_NURSE)){
+        msgbox(format("NURSE JOY: I wish I'd brought CHANSEY with me."))
+    } else {
+        msgbox(format("NURSE JOY: I didn't bring CHANSEY with me so I've been hiding from these thugs behind this tree."))        
+        msgbox(format("NURSE JOY: I can't heal your {PKMN} but I do have these. Hope they come in handy!"))
+        release
+        giveitem(ITEM_REVIVE)
+        giveitem(ITEM_SUPER_POTION)
+        setflag(FLAG_MT_CERAM_NURSE)
+    }
+
+    releaseall
+}
+
+script MtCeram_EventScript_Gabrielle{
+    lockall
+    msgbox(format("GABRIELLE: Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\psniff..."))
+    emote_exclamation_mark
+    release
+    delay(30)
+    faceplayer
+    delay(30)
+    msgbox(format("GABRIELLE: Don't look at me like that! You don't know what its like..."))
+    release
+    face_left
+    releaseall
+}
+
+
 
 

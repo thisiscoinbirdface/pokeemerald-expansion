@@ -131,8 +131,8 @@
 #define FLAG_GALECREST_NURSE_BERRY  0x285 // Nurse gives the berries (that counter the gym leader)
 #define FLAG_GALECREST_ROBBER  0x286 // The robber outside the rich house in galecrest
 #define FLAG_GALECREST_REGRETFULMAN  0x287 // man gives either a belt or a bright powder
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
-#define FLAG_UNUSED_0x289  0x289 // Unused Flag
+#define FLAG_MT_CERAM_NURSE  0x288 // the nurse gives you a revive in mt ceram
+#define FLAG_MT_CERAM_FRESH_WATER  0x289 // an npc gives you fresh water in mt ceram
 #define FLAG_UNUSED_0x28A  0x28A // Unused Flag
 #define FLAG_UNUSED_0x28B  0x28B // Unused Flag
 #define FLAG_UNUSED_0x28C  0x28C // Unused Flag

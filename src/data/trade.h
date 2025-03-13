@@ -1062,7 +1062,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("VIEN"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_NYMBLE
+        .requestedSpecies = SPECIES_DEWPIDER
     }    
 };
 

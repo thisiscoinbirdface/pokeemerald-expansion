@@ -3,7 +3,7 @@ mapscripts CeramBaseCamp_House1_MapScripts{}
 //This is a special dude (move tutor?)
 script CeramBaseCamp_House1_NPC{
     lockall
-    msgbox(format("She's fallen asleep on her chair..."))
+    msgbox(format("She's fallen asleep on her chair...such peace can only come with clarity."))
     releaseall
 }
 
@@ -12,5 +12,9 @@ script CeramBaseCamp_House1_Pokemon{
     msgbox(format("POOCHYENA looks happy."))
     releaseall
 }
+
+
+
+
 
 

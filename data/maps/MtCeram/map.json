@@ -53,15 +53,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 12,
-      "y": 56,
+      "x": 14,
+      "y": 55,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtCeram_EventScript_NPC2",
       "flag": "0"
     },
     {
@@ -87,12 +87,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "MtCeram_EventScript_Gabrielle",
+      "flag": "FLAG_MT_CERAM_SOMBER_PEAK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 38,
+      "x": 42,
       "y": 49,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -100,7 +100,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtCeram_EventScript_NPC3",
       "flag": "0"
     },
     {
@@ -165,7 +165,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtCeram_EventScript_NPC1",
       "flag": "0"
     },
     {
@@ -243,7 +243,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MtCeram_EventScript_NPCNurse",
       "flag": "0"
     },
     {
