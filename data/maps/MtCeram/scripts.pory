@@ -313,6 +313,20 @@ script MtCeram_TrainerBattle_D {
     end
 }
 
+script MtCeram_TrainerBattle_GRUNT1 {
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey kid, you're not supposed\nto be here. Why?\pStop asking questions and get lost!"), format("Fine! Don't get lost!"))
+    msgbox(format("Team Somber has control of this mountain for now! Well except for you."))
+    release
+    end
+}
+
+
+script MtCeram_TrainerBattle_GRUNT2 {
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone\nand the SOMBER KING will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
+    msgbox(format("The SOMBER KING is Team Somber's boss."))
+    release
+    end
+}
 
 
 

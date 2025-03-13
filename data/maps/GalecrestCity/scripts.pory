@@ -1,8 +1,8 @@
 raw `
-    .set LOCALID_GAB, 15
-    .set LOCALID_DET1, 21
-    .set LOCALID_DET2, 22
-    .set LOCALID_RUE, 20
+    .set LOCALID_GAB, 13
+    .set LOCALID_RUE, 18    
+    .set LOCALID_DET1, 19
+    .set LOCALID_DET2, 20
 `
 
 mapscripts GalecrestCity_MapScripts{
@@ -58,6 +58,8 @@ script GalecrestCity_OnFrame{
 
 
 script GalecrestCity_DetectiveMeet_Trigger0{
+    if (flag(FLAG_GALECREST_DETECTIVE_CONVO)) {end}
+
     lockall
 
     //Make all people face player and exclamation mark
@@ -77,6 +79,8 @@ script GalecrestCity_DetectiveMeet_Trigger0{
 }
 
 script GalecrestCity_DetectiveMeet_Trigger1{
+    if (flag(FLAG_GALECREST_DETECTIVE_CONVO)) {end}
+
     lockall
 
     //Make all people face player and exclamation mark
@@ -97,6 +101,8 @@ script GalecrestCity_DetectiveMeet_Trigger1{
 }
 
 script GalecrestCity_DetectiveMeet_Trigger2{
+    if (flag(FLAG_GALECREST_DETECTIVE_CONVO)) {end}
+
     lockall
 
     //Make all people face player and exclamation mark
@@ -117,6 +123,8 @@ script GalecrestCity_DetectiveMeet_Trigger2{
 }
 
 script GalecrestCity_DetectiveMeet_Trigger3{
+    if (flag(FLAG_GALECREST_DETECTIVE_CONVO)) {end}
+
     lockall
 
     //Make all people face player and exclamation mark
