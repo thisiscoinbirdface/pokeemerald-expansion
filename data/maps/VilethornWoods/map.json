@@ -89,20 +89,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
-      "script": "VilethornWoods_Trainer_H",
+      "script": "VilethornWoods_Trainer_G",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 9,
-      "y": 35,
+      "x": 8,
+      "y": 34,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
-      "script": "VilethornWoods_Trainer_F",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VilethornWoods_Trainer_F1",
       "flag": "0"
     },
     {
@@ -114,8 +114,8 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
-      "script": "VilethornWoods_Trainer_G",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VilethornWoods_Trainer_F2",
       "flag": "0"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
-      "script": "NULL",
+      "script": "VilethornWoods_Trainer_H",
       "flag": "0"
     },
     {

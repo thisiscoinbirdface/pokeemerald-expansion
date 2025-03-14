@@ -8,50 +8,60 @@ mapscripts VilethornWoods_MapScripts{}
 
 //Trainers
 script VilethornWoods_Trainer_A{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_A, format("BUG type {PKMN} are my natural enemies! That's why I'm training here."), "I like BUG types more than you!")
+    msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
 }
 
 script VilethornWoods_Trainer_B{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_B, format("Aha! A trainer to serve as a stepping stone for me!"), "I got stepped on instead!")
+    msgbox(format("I think I need more {PKMN}. Three isn't enough."))
     releaseall
 }
 
 script VilethornWoods_Trainer_C{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_C, format("I only use one {PKMN}, but it's enough! Bet you've never seen this one around here!"), "Maybe I should catch more...")
+    msgbox(format("My SCYTHER and I came from the south."))
     releaseall
 }
 
 script VilethornWoods_Trainer_D{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a {PKMN} Breeder. Like all breeders, we specialise in certain {PKMN} forms. I'm a horse breeding expert!"), "Well fought!")
+    msgbox(format("I need to raise my horses to become stronger. Maybe some VITAMINS would help..."))
     releaseall
 }
 
 script VilethornWoods_Trainer_E{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out!"), "You creep me out too!")
+    msgbox(format("I've been stuck here for hours. I need to get out of here..."))
     releaseall
 }
 
-script VilethornWoods_Trainer_F{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+script VilethornWoods_Trainer_F1{
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
+    msgbox(format("I met her at a {PKMN} Breeder festival. There was a battle competition and we were the two finalists!"))
+    releaseall
+}
+
+script VilethornWoods_Trainer_F2{
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
+    msgbox(format("Maybe one day you'll find your true love during a battle too!"))
     releaseall
 }
 
 script VilethornWoods_Trainer_G{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_G, format("I'm one of the best bug catchers around. I want to become a Gym Leader one day!"), "Are you a Gym Leader or something?")
+    msgbox(format("As a Gym Leader to-be, my team needs to be able to handle a variety of threats."))
     releaseall
 }
 
 script VilethornWoods_Trainer_H{
-    trainerbattle_single(, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VILETHORN_H, format("I wonder what's inside this house...maybe there's some loot!"), "No loot for me!")
+    msgbox(format("Fine, I'll just stand here and look while you loot everything..."))
     releaseall
 }
 
