@@ -108,7 +108,7 @@ script GalecrestCityGym_Leader {
         //Intro
         msgbox(GalecrestCityGym_Text_LeaderIntro)
         //Battle
-        trainerbattle_no_intro(TRAINER_GALECRESTGYM_LEADER, CeramBaseCampGym_Text_Defeated)
+        trainerbattle_no_intro(TRAINER_GALECRESTGYM_LEADER, GalecrestCityGym_Text_Defeated)
 
         //Post battle
         //Receive the badge
@@ -127,7 +127,7 @@ script GalecrestCityGym_Leader {
         msgbox(format("{PLAYER}, despite being a disrespectful chum, I owe you. You showed me my lack of strength. That's why I chose CERULEDGE as my companion. I don't care if other detectives see it as evil, because I see it as strong.\pNow enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
 
         applymovement(5, moves(walk_up * 2))
-        waitmovement
+        waitmovement(0)
         removeobject(5)
 
     }
@@ -140,7 +140,7 @@ text GalecrestCityGym_Text_LeaderIntro{
     format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate. And this year, that's me! Normally I would use the gym standard NORMAL {PKMN}, but since it's you, I'm going to make an exception. I'm going to crush you with my REAL team!")
 }
 
-text CeramBaseCampGym_Text_Defeated{
+text GalecrestCityGym_Text_Defeated{
     format("Another defeat...despite evolving my CHARCADET, I still couldn't win. I need strength. This is yours, {PLAYER}")
 }
 

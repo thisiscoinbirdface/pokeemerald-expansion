@@ -310,7 +310,8 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_2:
 	.string "path is blocked by rocks. The Gym\l"
 	.string "Leader here can teach your {PKMN} ROCK\l"
 	.string "SMASH, which will let you pass.\p"
-	.string "See you in Silversun City.$"
+	.string "See you in Silversun City...or sooner\n"
+	.string "than that, I think.$"
 
 GalecrestCity_DetectiveAcademy_Breech_Text_0:
 # 46 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"

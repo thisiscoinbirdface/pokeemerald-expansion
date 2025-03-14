@@ -4876,8 +4876,8 @@
       "name": "VilethornMansion_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/VilethornMansion/border.bin",
       "blockdata_filepath": "data/layouts/VilethornMansion/map.bin"
     }

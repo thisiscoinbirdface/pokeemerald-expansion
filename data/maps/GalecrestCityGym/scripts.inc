@@ -96,60 +96,49 @@ GalecrestCityGym_Leader::
 # 103 "data//maps/GalecrestCityGym/scripts.pory"
 	faceplayer
 # 105 "data//maps/GalecrestCityGym/scripts.pory"
-	goto_if_set FLAG_BADGE03_GET, GalecrestCityGym_Leader_1
+	goto_if_set FLAG_BADGE03_GET, GalecrestCityGym_Leader_2
+# 109 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Text_LeaderIntro
+# 111 "data//maps/GalecrestCityGym/scripts.pory"
+	trainerbattle_no_intro TRAINER_GALECRESTGYM_LEADER, GalecrestCityGym_Text_Defeated
+# 115 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_1
+# 116 "data//maps/GalecrestCityGym/scripts.pory"
+	release
+# 117 "data//maps/GalecrestCityGym/scripts.pory"
+	setflag FLAG_BADGE03_GET
+# 120 "data//maps/GalecrestCityGym/scripts.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 123 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_2
+# 124 "data//maps/GalecrestCityGym/scripts.pory"
+	release
+# 127 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_3
+# 129 "data//maps/GalecrestCityGym/scripts.pory"
+	applymovement 5, GalecrestCityGym_Leader_Movement_0
+# 130 "data//maps/GalecrestCityGym/scripts.pory"
+	waitmovement 0
+# 131 "data//maps/GalecrestCityGym/scripts.pory"
+	removeobject 5
+GalecrestCityGym_Leader_1:
+# 134 "data//maps/GalecrestCityGym/scripts.pory"
+	releaseall
 	return
 
-GalecrestCityGym_Leader_1:
+GalecrestCityGym_Leader_2:
 # 106 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_0
-	return
+	goto GalecrestCityGym_Leader_1
 
 
-CeramBaseCampGym_LeaderBattle::
-# 114 "data//maps/GalecrestCityGym/scripts.pory"
-	lockall
-# 115 "data//maps/GalecrestCityGym/scripts.pory"
-	faceplayer
-# 117 "data//maps/GalecrestCityGym/scripts.pory"
-	goto_if_set FLAG_BADGE02_GET, CeramBaseCampGym_LeaderBattle_2
-# 120 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_Text_Intro
-# 121 "data//maps/GalecrestCityGym/scripts.pory"
-	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated
-# 124 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_1
-# 125 "data//maps/GalecrestCityGym/scripts.pory"
-	release
-# 126 "data//maps/GalecrestCityGym/scripts.pory"
-	setflag FLAG_BADGE02_GET
 # 129 "data//maps/GalecrestCityGym/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
-# 132 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_2
-# 133 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_3
-# 134 "data//maps/GalecrestCityGym/scripts.pory"
-	release
-# 136 "data//maps/GalecrestCityGym/scripts.pory"
-	giveitem ITEM_TM_SUNNY_DAY
-# 137 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_4
-# 138 "data//maps/GalecrestCityGym/scripts.pory"
-	release
-# 141 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_5
-# 142 "data//maps/GalecrestCityGym/scripts.pory"
-	releaseall
-CeramBaseCampGym_LeaderBattle_1:
-# 146 "data//maps/GalecrestCityGym/scripts.pory"
-	releaseall
-	return
-
-CeramBaseCampGym_LeaderBattle_2:
-# 118 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_0
-	goto CeramBaseCampGym_LeaderBattle_1
-
+GalecrestCityGym_Leader_Movement_0:
+# 129 "data//maps/GalecrestCityGym/scripts.pory"
+	walk_up
+# 129 "data//maps/GalecrestCityGym/scripts.pory"
+	walk_up
+	step_end
 
 GalecrestCityGym_Red_Text_0:
 # 27 "data//maps/GalecrestCityGym/scripts.pory"
@@ -203,7 +192,7 @@ GalecrestCityGym_Trainer2_Text_2:
 # 75 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "If I keep losing to trainers like you,\n"
 	.string "I'll never get an ARMAROUGE! Go through\l"
-	.string "the left door if you DON'T like\l"
+	.string "the left door if you DON'T like the awful\l"
 	.string "CERULEDGE.$"
 
 GalecrestCityGym_Trainer3_Text_0:
@@ -232,37 +221,42 @@ GalecrestCityGym_Leader_Text_0:
 # 106 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "You win.$"
 
-CeramBaseCampGym_LeaderBattle_Text_0:
-# 118 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "That was a great battle. You've earned\n"
-	.string "my confidence. Go get 'em, {PLAYER}!$"
+GalecrestCityGym_Leader_Text_1:
+# 115 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "{PLAYER} received the STOIC BADGE\n"
+	.string "from KOHLA.$"
 
-CeramBaseCampGym_LeaderBattle_Text_1:
-# 124 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "{PLAYER} received the CINDER BADGE\n"
-	.string "from ARIAN.$"
+GalecrestCityGym_Leader_Text_2:
+# 123 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "The STOIC BADGE lets you control {PKMN}\n"
+	.string "upto lv. 30 and lets you use the HM move\l"
+	.string "ROCK SMASH outside of battle.$"
 
-CeramBaseCampGym_LeaderBattle_Text_2:
-# 132 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "The CINDER BADGE increases the ATK of\n"
-	.string "all your {PKMN} and lets you control {PKMN}\l"
-	.string "upto lv. 20.$"
+GalecrestCityGym_Leader_Text_3:
+# 127 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "{PLAYER}, despite being a\n"
+	.string "disrespectful chum, I owe you. You\l"
+	.string "showed me my lack of strength. That's\l"
+	.string "why I chose CERULEDGE as my companion.\l"
+	.string "I don't care if other detectives see it\l"
+	.string "as evil, because I see it as strong.\p"
+	.string "Now enough of this gym business. We\n"
+	.string "have to stop Team Somber. I'll see you\l"
+	.string "in Silversun City.$"
 
-CeramBaseCampGym_LeaderBattle_Text_3:
-# 133 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "And I'd also like to give you this.$"
+GalecrestCityGym_Text_LeaderIntro::
+# 139 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "Yes {PLAYER}, it's me. Traditionally,\n"
+	.string "the Ace Rookie of the graduating class\l"
+	.string "assumes Gym Leader duties for a year\l"
+	.string "after they graduate. And this year,\l"
+	.string "that's me! Normally I would use the gym\l"
+	.string "standard NORMAL {PKMN}, but since it's you,\l"
+	.string "I'm going to make an exception. I'm\l"
+	.string "going to crush you with my REAL team!$"
 
-CeramBaseCampGym_LeaderBattle_Text_4:
-# 137 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "This TM will let your {PKMN} bring sunlight\n"
-	.string "on the battlefield, powering up\l"
-	.string "FIRE-type moves!$"
-
-CeramBaseCampGym_LeaderBattle_Text_5:
-# 141 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "And now it's time for you to set off on\n"
-	.string "your journey. I hope you manage to find\l"
-	.string "the dreamstone and Professor Tenebris.\l"
-	.string "I don't know why Team Somber is after\l"
-	.string "the dreamstones, but be careful if you\l"
-	.string "run into them!$"
+GalecrestCityGym_Text_Defeated::
+# 143 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "Another defeat...despite evolving my\n"
+	.string "CHARCADET, I still couldn't win. I need\l"
+	.string "strength. This is yours, {PLAYER}$"

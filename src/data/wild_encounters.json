@@ -9,11 +9,11 @@
           "encounter_rates": [
             20,
             20,
-            10,
-            10,
-            10,
-            10,
+            20,
             5,
+            5,
+            5,
+            10,
             5,
             4,
             4,
@@ -12052,7 +12052,7 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_MAWILE"
               },
               {
                 "min_level": 4,
@@ -12062,7 +12062,7 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_MAWILE"
               }
             ]
           }
@@ -12408,6 +12408,75 @@
                 "min_level": 9,
                 "max_level": 12,
                 "species": "SPECIES_SIZZLIPEDE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_VILETHORN_WOODS",
+          "base_label": "gVilethornWoods0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 17,
+                "max_level": 19,
+                "species": "SPECIES_BELLSPROUT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 17,
+                "max_level": 19,
+                "species": "SPECIES_MORELULL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_BELLSPROUT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_JOLTIK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_MORELULL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_IMPIDIMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_IMPIDIMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 17,
+                "species": "SPECIES_ZORUA"
               }
             ]
           }
