@@ -100,14 +100,95 @@ VilethornWoods_Trainer_H::
 	return
 
 
+VilethornWoods_NPC1::
+# 71 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 72 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 73 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC1_Text_0
+# 74 "data//maps/VilethornWoods/scripts.pory"
+	releaseall
+	return
+
+
+VilethornWoods_NPC2::
+# 79 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 80 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 82 "data//maps/VilethornWoods/scripts.pory"
+	goto_if_set FLAG_VILETHORN_NPC_MUSHROOMS, VilethornWoods_NPC2_2
+# 85 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_1, MSGBOX_YESNO
+# 87 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_NPC2_5
+# 98 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_4
+VilethornWoods_NPC2_1:
+# 101 "data//maps/VilethornWoods/scripts.pory"
+	releaseall
+	return
+
+VilethornWoods_NPC2_2:
+# 83 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_0
+	goto VilethornWoods_NPC2_1
+
+VilethornWoods_NPC2_5:
+	checkitem ITEM_BIG_MUSHROOM
+# 0 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne VilethornWoods_NPC2_8
+# 95 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_3
+	goto VilethornWoods_NPC2_1
+
+VilethornWoods_NPC2_8:
+# 90 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_2
+# 91 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 92 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_TWISTED_SPOON
+# 93 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_NPC_MUSHROOMS
+	goto VilethornWoods_NPC2_1
+
+
+VilethornWoods_NPC3::
+# 105 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 106 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 107 "data//maps/VilethornWoods/scripts.pory"
+	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
+# 110 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC3_Text_1
+# 111 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_SCOPE_LENS
+# 112 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_NPC_ITEM
+VilethornWoods_NPC3_1:
+# 115 "data//maps/VilethornWoods/scripts.pory"
+	releaseall
+	return
+
+VilethornWoods_NPC3_2:
+# 108 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC3_Text_0
+	goto VilethornWoods_NPC3_1
+
+
 VilethornWoods_Trainer_A_Text_0:
 # 11 "data//maps/VilethornWoods/scripts.pory"
-	.string "BUG type {PKMN} are my natural enemies!\n"
-	.string "That's why I'm training here.$"
+	.string "PSYCHIC type {PKMN} are my natural\n"
+	.string "enemies! That's why I'm training here.$"
 
 VilethornWoods_Trainer_A_Text_1:
 # 11 "data//maps/VilethornWoods/scripts.pory"
-	.string "I like BUG types more than you!$"
+	.string "I like PSYCHIC types more than you!$"
 
 VilethornWoods_Trainer_A_Text_2:
 # 12 "data//maps/VilethornWoods/scripts.pory"
@@ -116,30 +197,33 @@ VilethornWoods_Trainer_A_Text_2:
 
 VilethornWoods_Trainer_B_Text_0:
 # 17 "data//maps/VilethornWoods/scripts.pory"
-	.string "Aha! A trainer to serve as a stepping\n"
-	.string "stone for me!$"
+	.string "I thought these woods would have BUG\n"
+	.string "type {PKMN}, but I can't find any. I'm so\l"
+	.string "bummed! But beating you in battle will\l"
+	.string "make me feel better!$"
 
 VilethornWoods_Trainer_B_Text_1:
 # 17 "data//maps/VilethornWoods/scripts.pory"
-	.string "I got stepped on instead!$"
+	.string "I don't feel better at all!$"
 
 VilethornWoods_Trainer_B_Text_2:
 # 18 "data//maps/VilethornWoods/scripts.pory"
-	.string "I think I need more {PKMN}. Three isn't\n"
-	.string "enough.$"
+	.string "This forest is weird...a dense fog, no\n"
+	.string "BUG types...$"
 
 VilethornWoods_Trainer_C_Text_0:
 # 23 "data//maps/VilethornWoods/scripts.pory"
-	.string "I only use one {PKMN}, but it's enough! Bet\n"
-	.string "you've never seen this one around here!$"
+	.string "The sweet, delicious fog envelops\n"
+	.string "us...we are one with the mindwaves!$"
 
 VilethornWoods_Trainer_C_Text_1:
 # 23 "data//maps/VilethornWoods/scripts.pory"
-	.string "Maybe I should catch more...$"
+	.string "You're not one with the mindwaves!$"
 
 VilethornWoods_Trainer_C_Text_2:
 # 24 "data//maps/VilethornWoods/scripts.pory"
-	.string "My SCYTHER and I came from the south.$"
+	.string "I want to go deeper...sink\n"
+	.string "deeper...escape my real life...$"
 
 VilethornWoods_Trainer_D_Text_0:
 # 29 "data//maps/VilethornWoods/scripts.pory"
@@ -159,7 +243,9 @@ VilethornWoods_Trainer_D_Text_2:
 
 VilethornWoods_Trainer_E_Text_0:
 # 35 "data//maps/VilethornWoods/scripts.pory"
-	.string "Eek! These woods creep me out!$"
+	.string "Eek! These woods creep me out! I'm so\n"
+	.string "scared of the DROWZEE - what if I get\l"
+	.string "hypnotised?$"
 
 VilethornWoods_Trainer_E_Text_1:
 # 35 "data//maps/VilethornWoods/scripts.pory"
@@ -218,3 +304,49 @@ VilethornWoods_Trainer_H_Text_2:
 # 64 "data//maps/VilethornWoods/scripts.pory"
 	.string "Fine, I'll just stand here and look while\n"
 	.string "you loot everything...$"
+
+VilethornWoods_NPC1_Text_0:
+# 73 "data//maps/VilethornWoods/scripts.pory"
+	.string "The MORELULL here in VILETHORN WOODS\n"
+	.string "release spores when in danger. That's\l"
+	.string "what creates this fog.$"
+
+VilethornWoods_NPC2_Text_0:
+# 83 "data//maps/VilethornWoods/scripts.pory"
+	.string "These mushrooms are really rare, you\n"
+	.string "know?$"
+
+VilethornWoods_NPC2_Text_1:
+# 85 "data//maps/VilethornWoods/scripts.pory"
+	.string "I'm here to collect mushrooms to create\n"
+	.string "new recipes, but I can only find TINY\l"
+	.string "MUSHROOMs! Say, why don't you help me?\l"
+	.string "If you can get me a BIG MUSHROOM, I'll\l"
+	.string "find something to pay you back!\p"
+	.string "Have you got a BIG MUSHROOM?$"
+
+VilethornWoods_NPC2_Text_2:
+# 90 "data//maps/VilethornWoods/scripts.pory"
+	.string "Perfect! This'll be a great addition to\n"
+	.string "my collection. Thank you! Why don't you\l"
+	.string "keep this with you?$"
+
+VilethornWoods_NPC2_Text_3:
+# 95 "data//maps/VilethornWoods/scripts.pory"
+	.string "Hey, you don't have any! Are you trying\n"
+	.string "to trick me? The DROWZEE and MORELULL\l"
+	.string "doing enough of that!$"
+
+VilethornWoods_NPC2_Text_4:
+# 98 "data//maps/VilethornWoods/scripts.pory"
+	.string "Come back when you do!$"
+
+VilethornWoods_NPC3_Text_0:
+# 108 "data//maps/VilethornWoods/scripts.pory"
+	.string "I am well and truly lost...$"
+
+VilethornWoods_NPC3_Text_1:
+# 110 "data//maps/VilethornWoods/scripts.pory"
+	.string "I am well and truly lost...even with this\n"
+	.string "SCOPE LENS, I can't see a thing! Why\l"
+	.string "don't you have it?$"
