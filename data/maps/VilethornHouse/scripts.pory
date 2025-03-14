@@ -1,0 +1,17 @@
+mapscripts VilethornHouse_MapScripts{}
+
+
+script VilethornHouse_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("We moved out of the city long ago. It was too noisy!"))
+    releaseall
+}
+
+script VilethornHouse_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("Nobody disturbs us deep in these woods. It's a peaceful lifestyle."))
+    releaseall
+}
+

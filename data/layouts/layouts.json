@@ -4880,6 +4880,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/VilethornMansion/border.bin",
       "blockdata_filepath": "data/layouts/VilethornMansion/map.bin"
+    },
+    {
+      "id": "LAYOUT_VILETHORN_HOUSE",
+      "name": "VilethornHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VilethornHouse/border.bin",
+      "blockdata_filepath": "data/layouts/VilethornHouse/map.bin"
     }
   ]
 }

@@ -239,18 +239,25 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 6,
+      "x": 4,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "2"
     },
     {
-      "x": 7,
+      "x": 5,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_VILETHORN_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
