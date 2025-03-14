@@ -878,18 +878,21 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 
 === TRAINER_VILETHORN_C ===
-Name: RUSTY
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Hiker
+Name: PATRICIA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Scyther
-Level: 23
+Drifloon
+Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
+Gothorita
+Level: 22
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_VILETHORN_D ===
 Name: ISAAC
@@ -900,7 +903,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Mudbray
+Girafarig
 Level: 20
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -939,11 +942,11 @@ Music: Interviewer
 Double Battle: Yes
 AI: Check Bad Move
 
-Ivysaur
+Braixen
 Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Dartrix
+Impidimp
 Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 

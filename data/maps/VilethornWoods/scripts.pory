@@ -8,20 +8,20 @@ mapscripts VilethornWoods_MapScripts{}
 
 //Trainers
 script VilethornWoods_Trainer_A{
-    trainerbattle_single(TRAINER_VILETHORN_A, format("BUG type {PKMN} are my natural enemies! That's why I'm training here."), "I like BUG types more than you!")
+    trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type {PKMN} are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
     msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
 }
 
 script VilethornWoods_Trainer_B{
-    trainerbattle_single(TRAINER_VILETHORN_B, format("Aha! A trainer to serve as a stepping stone for me!"), "I got stepped on instead!")
-    msgbox(format("I think I need more {PKMN}. Three isn't enough."))
+    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type {PKMN}, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
+    msgbox(format("This forest is weird...a dense fog, no BUG types..."))
     releaseall
 }
 
 script VilethornWoods_Trainer_C{
-    trainerbattle_single(TRAINER_VILETHORN_C, format("I only use one {PKMN}, but it's enough! Bet you've never seen this one around here!"), "Maybe I should catch more...")
-    msgbox(format("My SCYTHER and I came from the south."))
+    trainerbattle_single(TRAINER_VILETHORN_C, format("The sweet, delicious fog envelops us...we are one with the mindwaves!"), "You're not one with the mindwaves!")
+    msgbox(format("I want to go deeper...sink deeper...escape my real life..."))
     releaseall
 }
 
@@ -32,7 +32,7 @@ script VilethornWoods_Trainer_D{
 }
 
 script VilethornWoods_Trainer_E{
-    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out!"), "You creep me out too!")
+    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out! I'm so scared of the DROWZEE - what if I get hypnotised?"), "You creep me out too!")
     msgbox(format("I've been stuck here for hours. I need to get out of here..."))
     releaseall
 }
@@ -70,21 +70,48 @@ script VilethornWoods_Trainer_H{
 script VilethornWoods_NPC1{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("The MORELULL here in VILETHORN WOODS release spores when in danger. That's what creates this fog."))
     releaseall
 }
 
+//FLAG_VILETHORN_NPC_MUSHROOMS
 script VilethornWoods_NPC2{
     lockall
     faceplayer
-    msgbox(format(""))
+
+    if (flag(FLAG_VILETHORN_NPC_MUSHROOMS)){
+        msgbox(format("These mushrooms are really rare, you know?"))
+    } else {
+        msgbox(format("I'm here to collect mushrooms, but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to pay you back!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            //check
+            if (checkitem(ITEM_BIG_MUSHROOM)){
+                msgbox(format("Perfect! This'll be a great addition to my collection. Thank you! Why don't you keep this with you?"))
+                release
+                giveitem()
+                setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
+            } else {
+                msgbox(format("Hey, you don't have any! Are you trying to trick me? The DROWZEE and MORELULL doing enough of that!"))
+            }
+        } else {
+            msgbox(format("Come back when you do!"))
+        }
+    }
     releaseall
 }
 
 script VilethornWoods_NPC3{
     lockall
     faceplayer
-    msgbox(format(""))
+    if (flag(FLAG_VILETHORN_NPC_ITEM)){
+        msgbox(format("I am well and truly lost..."))
+    } else {
+        msgbox(format("I am well and truly lost...even with this SCOPE LENS, I can't see a thing! Why don't you have it?"))
+        giveitem(ITEM_SCOPE_LENS)
+        setflag(FLAG_VILETHORN_NPC_ITEM)
+    }
+
     releaseall
 }
 

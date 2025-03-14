@@ -75,8 +75,8 @@
 #define FLAG_GALECREST_DETECTIVE_CONVO    0x3C // the conversation with rue and the detectives
 #define FLAG_DETECTIVE_ACAD_KOHLA    0x3D // After talking to kohla at the academy
 #define FLAG_DETECTIVE_ACAD_BREECH    0x3E // check this flag off once you meet breech next.
-#define FLAG_GALECREST_POOR_TRADEITEM    0x3F // trade a BLUE FLUTE for a PEAT BLOCK in a poor galecrest house
-#define FLAG_GALECREST_RICH_HOUSECLEANITEM    0x40 // an old couple in richcrest are giving away stuff
+#define FLAG_UNUSED_0x03F    0x3F // trade a BLUE FLUTE for a PEAT BLOCK in a poor galecrest house
+#define FLAG_UNUSED_0x040    0x40 // an old couple in richcrest are giving away stuff
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
@@ -133,11 +133,11 @@
 #define FLAG_GALECREST_REGRETFULMAN  0x287 // man gives either a belt or a bright powder
 #define FLAG_MT_CERAM_NURSE  0x288 // the nurse gives you a revive in mt ceram
 #define FLAG_MT_CERAM_FRESH_WATER  0x289 // an npc gives you fresh water in mt ceram
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
-#define FLAG_UNUSED_0x28E  0x28E // Unused Flag
+#define FLAG_GALECREST_POOR_TRADEITEM  0x28A // Unused Flag
+#define FLAG_GALECREST_RICH_HOUSECLEANITEM  0x28B // Unused Flag
+#define FLAG_VILETHORN_NPC_ITEM  0x28C // Unused Flag
+#define FLAG_VILETHORN_NPC_MUSHROOMS  0x28D // Unused Flag
+#define FLAG_UNUSED_0x28E  0x28E // Unused Flag 
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
 #define FLAG_UNUSED_0x291  0x291 // Unused Flag
