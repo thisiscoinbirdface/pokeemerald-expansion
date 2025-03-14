@@ -24,7 +24,7 @@ script GalecrestCityGym_Test{
 script GalecrestCityGym_NPC1 {
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     release
     end
 }
@@ -32,7 +32,7 @@ script GalecrestCityGym_NPC1 {
 script GalecrestCityGym_NPC2 {
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     release
     end
 }
@@ -40,7 +40,7 @@ script GalecrestCityGym_NPC2 {
 script GalecrestCityGym_NPC3 {
     lockall
     faceplayer
-    msgbox(format())
+    msgbox(format(""))
     release
     end
 }
@@ -62,7 +62,7 @@ script GalecrestCityGym_NPC3 {
 //Trainers
 script GalecrestCityGym_Trainer1 {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    trainerbattle_single(TRAINER_GALECRESTGYM_A, "Hah! So you found the fake wall.", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
@@ -71,7 +71,7 @@ script GalecrestCityGym_Trainer1 {
 
 script GalecrestCityGym_Trainer2 {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    trainerbattle_single(TRAINER_GALECRESTGYM_B, "Hah! So you found the fake wall.", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
@@ -80,7 +80,7 @@ script GalecrestCityGym_Trainer2 {
 
 script GalecrestCityGym_Trainer3 {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    trainerbattle_single(TRAINER_GALECRESTGYM_C, "Hah! So you found the fake wall.", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
