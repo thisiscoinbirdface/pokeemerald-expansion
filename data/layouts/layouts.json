@@ -4870,6 +4870,16 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/GalecrestCityGym/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCityGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_VILETHORN_MANSION",
+      "name": "VilethornMansion_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VilethornMansion/border.bin",
+      "blockdata_filepath": "data/layouts/VilethornMansion/map.bin"
     }
   ]
 }

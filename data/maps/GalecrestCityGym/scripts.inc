@@ -91,13 +91,64 @@ GalecrestCityGym_Trainer3::
 
 
 GalecrestCityGym_Leader::
+# 102 "data//maps/GalecrestCityGym/scripts.pory"
+	lockall
 # 103 "data//maps/GalecrestCityGym/scripts.pory"
-	trainerbattle_single TRAINER_GASTREEGYM_JACO, GalecrestCityGym_Leader_Text_0, GalecrestCityGym_Leader_Text_1
-# 104 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Leader_Text_2
+	faceplayer
 # 105 "data//maps/GalecrestCityGym/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, GalecrestCityGym_Leader_1
+	return
+
+GalecrestCityGym_Leader_1:
+# 106 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_0
+	return
+
+
+CeramBaseCampGym_LeaderBattle::
+# 114 "data//maps/GalecrestCityGym/scripts.pory"
+	lockall
+# 115 "data//maps/GalecrestCityGym/scripts.pory"
+	faceplayer
+# 117 "data//maps/GalecrestCityGym/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, CeramBaseCampGym_LeaderBattle_2
+# 120 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_Text_Intro
+# 121 "data//maps/GalecrestCityGym/scripts.pory"
+	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated
+# 124 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_1
+# 125 "data//maps/GalecrestCityGym/scripts.pory"
 	release
-	end
+# 126 "data//maps/GalecrestCityGym/scripts.pory"
+	setflag FLAG_BADGE02_GET
+# 129 "data//maps/GalecrestCityGym/scripts.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 132 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_2
+# 133 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_3
+# 134 "data//maps/GalecrestCityGym/scripts.pory"
+	release
+# 136 "data//maps/GalecrestCityGym/scripts.pory"
+	giveitem ITEM_TM_SUNNY_DAY
+# 137 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+# 138 "data//maps/GalecrestCityGym/scripts.pory"
+	release
+# 141 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_5
+# 142 "data//maps/GalecrestCityGym/scripts.pory"
+	releaseall
+CeramBaseCampGym_LeaderBattle_1:
+# 146 "data//maps/GalecrestCityGym/scripts.pory"
+	releaseall
+	return
+
+CeramBaseCampGym_LeaderBattle_2:
+# 118 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_0
+	goto CeramBaseCampGym_LeaderBattle_1
 
 
 GalecrestCityGym_Red_Text_0:
@@ -178,13 +229,40 @@ GalecrestCityGym_Trainer3_Text_2:
 	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Leader_Text_0:
-# 103 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "Hah! So you found the fake wall.$"
+# 106 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "You win.$"
 
-GalecrestCityGym_Leader_Text_1:
-# 103 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "Ouch, that hurt!$"
+CeramBaseCampGym_LeaderBattle_Text_0:
+# 118 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "That was a great battle. You've earned\n"
+	.string "my confidence. Go get 'em, {PLAYER}!$"
 
-GalecrestCityGym_Leader_Text_2:
-# 104 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "You're not half bad after all.$"
+CeramBaseCampGym_LeaderBattle_Text_1:
+# 124 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "{PLAYER} received the CINDER BADGE\n"
+	.string "from ARIAN.$"
+
+CeramBaseCampGym_LeaderBattle_Text_2:
+# 132 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "The CINDER BADGE increases the ATK of\n"
+	.string "all your {PKMN} and lets you control {PKMN}\l"
+	.string "upto lv. 20.$"
+
+CeramBaseCampGym_LeaderBattle_Text_3:
+# 133 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "And I'd also like to give you this.$"
+
+CeramBaseCampGym_LeaderBattle_Text_4:
+# 137 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "This TM will let your {PKMN} bring sunlight\n"
+	.string "on the battlefield, powering up\l"
+	.string "FIRE-type moves!$"
+
+CeramBaseCampGym_LeaderBattle_Text_5:
+# 141 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "And now it's time for you to set off on\n"
+	.string "your journey. I hope you manage to find\l"
+	.string "the dreamstone and Professor Tenebris.\l"
+	.string "I don't know why Team Somber is after\l"
+	.string "the dreamstones, but be careful if you\l"
+	.string "run into them!$"

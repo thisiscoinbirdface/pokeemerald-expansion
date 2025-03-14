@@ -26,7 +26,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
-    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))

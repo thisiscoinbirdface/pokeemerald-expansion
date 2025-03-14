@@ -1240,3 +1240,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GalecrestCity_HousesRich/scripts.inc"
 
 	.include "data/maps/GalecrestCityGym/scripts.inc"
+
+	.include "data/maps/VilethornMansion/scripts.inc"
