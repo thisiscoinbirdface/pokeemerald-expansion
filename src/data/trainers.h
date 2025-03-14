@@ -1766,9 +1766,9 @@ F_TRAINER_FEMALE |
             .species = SPECIES_FURFROU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 771
-            .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 770
-            .lvl = 18,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

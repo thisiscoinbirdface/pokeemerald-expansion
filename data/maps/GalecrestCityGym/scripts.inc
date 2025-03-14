@@ -64,7 +64,7 @@ GalecrestCityGym_Trainer1::
 # 67 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_single TRAINER_GALECRESTGYM_A, GalecrestCityGym_Trainer1_Text_0, GalecrestCityGym_Trainer1_Text_1
 # 68 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Trainer1_Text_2
+	msgbox GalecrestCityGym_Trainer1_Text_1
 # 69 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
@@ -72,9 +72,9 @@ GalecrestCityGym_Trainer1::
 
 GalecrestCityGym_Trainer2::
 # 74 "data//maps/GalecrestCityGym/scripts.pory"
-	trainerbattle_single TRAINER_GALECRESTGYM_B, GalecrestCityGym_Trainer2_Text_0, GalecrestCityGym_Trainer1_Text_1
+	trainerbattle_single TRAINER_GALECRESTGYM_B, GalecrestCityGym_Trainer2_Text_0, GalecrestCityGym_Trainer2_Text_1
 # 75 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Trainer1_Text_2
+	msgbox GalecrestCityGym_Trainer2_Text_2
 # 76 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
@@ -82,9 +82,9 @@ GalecrestCityGym_Trainer2::
 
 GalecrestCityGym_Trainer3::
 # 81 "data//maps/GalecrestCityGym/scripts.pory"
-	trainerbattle_single TRAINER_GALECRESTGYM_C, GalecrestCityGym_Trainer3_Text_0, GalecrestCityGym_Trainer1_Text_1
+	trainerbattle_single TRAINER_GALECRESTGYM_C, GalecrestCityGym_Trainer3_Text_0, GalecrestCityGym_Trainer3_Text_1
 # 82 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Trainer1_Text_2
+	msgbox GalecrestCityGym_Trainer3_Text_2
 # 83 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
@@ -92,9 +92,9 @@ GalecrestCityGym_Trainer3::
 
 GalecrestCityGym_Leader::
 # 103 "data//maps/GalecrestCityGym/scripts.pory"
-	trainerbattle_single TRAINER_GASTREEGYM_JACO, GalecrestCityGym_Trainer3_Text_0, GalecrestCityGym_Trainer1_Text_1
+	trainerbattle_single TRAINER_GASTREEGYM_JACO, GalecrestCityGym_Leader_Text_0, GalecrestCityGym_Leader_Text_1
 # 104 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Trainer1_Text_2
+	msgbox GalecrestCityGym_Leader_Text_2
 # 105 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
@@ -104,7 +104,7 @@ GalecrestCityGym_Red_Text_0:
 # 27 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Greetings trainer! Good to see you\n"
 	.string "again. This Gym is managed by the\l"
-	.string "Detective Academy student Council.\l"
+	.string "Detective Academy Student Council.\l"
 	.string "Most detectives use NORMAL type {PKMN}\l"
 	.string "that are comfortable in a variety of\l"
 	.string "urban situations. FIGHTING type {PKMN}\l"
@@ -129,20 +129,62 @@ GalecrestCityGym_NPC3_Text_0:
 
 GalecrestCityGym_Trainer1_Text_0:
 # 67 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "I'm a first-year at the Academy.\n,But don't think I'm a pushover!$"
+	.string "I'm a first-year at the Academy. But\n"
+	.string "don't think I'm a pushover!$"
 
 GalecrestCityGym_Trainer1_Text_1:
 # 67 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "Ouch, that hurt!$"
-
-GalecrestCityGym_Trainer1_Text_2:
-# 68 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "You're not half bad after all.$"
+	.string "You're not half bad. Go through the door\n"
+	.string "that rhymes with FIGHT.$"
 
 GalecrestCityGym_Trainer2_Text_0:
 # 74 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "After our internship, we can evolve\nour CHARCADET into ARMOROUGE!$"
+	.string "After our internship, we can evolve our\n"
+	.string "CHARCADET into ARMOROUGE!$"
+
+GalecrestCityGym_Trainer2_Text_1:
+# 74 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "If I keep losing to trainers like you,\n"
+	.string "I'll never get an ARMAROUGE! Go through\l"
+	.string "the left door if you like CERULEDGE.$"
+
+GalecrestCityGym_Trainer2_Text_2:
+# 75 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "If I keep losing to trainers like you,\n"
+	.string "I'll never get an ARMAROUGE! Go through\l"
+	.string "the left door if you DON'T like\l"
+	.string "CERULEDGE.$"
 
 GalecrestCityGym_Trainer3_Text_0:
 # 81 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "The best student in the Academy is the\n"
+	.string "Gym Leader. But you won't make it\l"
+	.string "because your journey ends here!$"
+
+GalecrestCityGym_Trainer3_Text_1:
+# 81 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "You may have beaten me, but you won't\n"
+	.string "beat our Gym Leader. He's already\l"
+	.string "evolved his CHARCADET to ARMOROUGE!\l"
+	.string "Don't not go through the door that\l"
+	.string "isn't not right.$"
+
+GalecrestCityGym_Trainer3_Text_2:
+# 82 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "You may have beaten me, but you won't\n"
+	.string "beat our Gym Leader. He's already\l"
+	.string "evolved his CHARCADET to ARMOROUGE!\l"
+	.string "Don't not go through the door that\l"
+	.string "isn't not to the left of the right.$"
+
+GalecrestCityGym_Leader_Text_0:
+# 103 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Hah! So you found the fake wall.$"
+
+GalecrestCityGym_Leader_Text_1:
+# 103 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "Ouch, that hurt!$"
+
+GalecrestCityGym_Leader_Text_2:
+# 104 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "You're not half bad after all.$"

@@ -24,7 +24,7 @@ script GalecrestCityGym_Test{
 script GalecrestCityGym_Red {
     lockall
     faceplayer
-    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy student Council. Most detectives use NORMAL type {PKMN} that are comfortable in a variety of urban situations. FIGHTING type {PKMN} should do well here!"))
+    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type {PKMN} that are comfortable in a variety of urban situations. FIGHTING type {PKMN} should do well here!"))
     releaseall
 }
 script GalecrestCityGym_NPC1 {
@@ -64,22 +64,22 @@ script GalecrestCityGym_NPC3 {
 
 //Trainers
 script GalecrestCityGym_Trainer1 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_A, "I'm a first-year at the Academy.\n,But don't think I'm a pushover!", "Ouch, that hurt!")
-    msgbox(format("You're not half bad after all."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_A, format("I'm a first-year at the Academy. But don't think I'm a pushover!"), format("You're not half bad. Go through the door that rhymes with FIGHT."))
+    msgbox(format("You're not half bad. Go through the door that rhymes with FIGHT."))
     release
     end
 }
 
 script GalecrestCityGym_Trainer2 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_B, "After our internship, we can evolve\nour CHARCADET into ARMOROUGE!", "Ouch, that hurt!")
-    msgbox(format("You're not half bad after all."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_B, format("After our internship, we can evolve our CHARCADET into ARMOROUGE!"), format("If I keep losing to trainers like you, I'll never get an ARMAROUGE! Go through the left door if you like CERULEDGE."))
+    msgbox(format("If I keep losing to trainers like you, I'll never get an ARMAROUGE! Go through the left door if you DON'T like CERULEDGE."))
     release
     end
 }
 
 script GalecrestCityGym_Trainer3 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_C, "Hah! So you found the fake wall.", "Ouch, that hurt!")
-    msgbox(format("You're not half bad after all."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_C, format("The best student in the Academy is the Gym Leader. But you won't make it because your journey ends here!"), format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his CHARCADET to ARMOROUGE! Don't not go through the door that isn't not right."))
+    msgbox(format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his CHARCADET to ARMOROUGE! Don't not go through the door that isn't not to the left of the right."))
     release
     end
 }

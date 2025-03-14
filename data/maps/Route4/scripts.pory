@@ -46,7 +46,7 @@ script Route4_EventScript_EvilTeam{
     waitmovement(0)  
     msgbox(format("We'll remember this kid!"))
     release
-
+    
     //End the sequence
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_GRUNT1)
