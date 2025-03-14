@@ -65,3 +65,27 @@ script VilethornWoods_Trainer_H{
     releaseall
 }
 
+
+
+script VilethornWoods_NPC1{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+}
+
+script VilethornWoods_NPC2{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+}
+
+script VilethornWoods_NPC3{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+}
+
+

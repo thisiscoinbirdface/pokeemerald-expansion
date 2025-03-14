@@ -12421,12 +12421,12 @@
               {
                 "min_level": 17,
                 "max_level": 20,
-                "species": "SPECIES_BELLSPROUT"
+                "species": "SPECIES_FOONGUS"
               },
               {
                 "min_level": 17,
                 "max_level": 21,
-                "species": "SPECIES_JOLTIK"
+                "species": "SPECIES_DROWZEE"
               },
               {
                 "min_level": 17,
@@ -12436,12 +12436,12 @@
               {
                 "min_level": 21,
                 "max_level": 23,
-                "species": "SPECIES_WEEPINBELL"
+                "species": "SPECIES_FOONGUS"
               },
               {
                 "min_level": 17,
                 "max_level": 21,
-                "species": "SPECIES_JOLTIK"
+                "species": "SPECIES_DROWZEE"
               },
               {
                 "min_level": 19,
@@ -12461,7 +12461,7 @@
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_BRAIXEN"
               },
               {
                 "min_level": 19,
@@ -12471,12 +12471,81 @@
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_BRAIXEN"
               },
               {
                 "min_level": 19,
                 "max_level": 22,
                 "species": "SPECIES_ZORUA_HISUI"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE5",
+          "base_label": "gRoute50",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_NICKIT"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_CORVISQUIRE"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_NICKIT"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_NICKIT"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_CORVISQUIRE"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_CORVISQUIRE"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SHELMET"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SHELMET"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SHELMET"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SHELMET"
               }
             ]
           }
