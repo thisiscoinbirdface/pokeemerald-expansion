@@ -281,7 +281,25 @@ script GalecrestCity_NPC_4{
 script GalecrestCity_NPC_5{
     lockall
     faceplayer    
-    msgbox(format("This rock can be smashed by a {PKMN} that knows a certain move...I forgot which one though!"))
+
+    if (flag(FLAG_GALECREST_ROCKSMASH)){
+        msgbox(format("I need to find a {PKMN} that can learn ROCK SMASH..."))
+    } else {
+        msgbox(format("This rock can be smashed by a {PKMN} that knows a certain move...I forgot which one though! Do you know?"))
+        waitbuttonpress
+        dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ROCK BLAST", "ROCK SLIDE", "ROCK SMASH", "STONE EDGE")
+        if (var(VAR_RESULT) == 2){
+            msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
+            giveitem(ITEM_HM_ROCK_SMASH)
+            setflag(FLAG_GALECREST_ROCKSMASH)
+        } else {
+            msgbox(format("No..."))
+        }
+    }
+
+    
+
+    
     releaseall
 }
 

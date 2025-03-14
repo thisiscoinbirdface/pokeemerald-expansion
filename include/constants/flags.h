@@ -75,8 +75,8 @@
 #define FLAG_GALECREST_DETECTIVE_CONVO    0x3C // the conversation with rue and the detectives
 #define FLAG_DETECTIVE_ACAD_KOHLA    0x3D // After talking to kohla at the academy
 #define FLAG_DETECTIVE_ACAD_BREECH    0x3E // check this flag off once you meet breech next.
-#define FLAG_UNUSED_0x03F    0x3F // trade a BLUE FLUTE for a PEAT BLOCK in a poor galecrest house
-#define FLAG_UNUSED_0x040    0x40 // an old couple in richcrest are giving away stuff
+#define FLAG_GALECREST_ROCKSMASH    0x3F // get rock smash in galecrest
+#define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag

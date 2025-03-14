@@ -85,9 +85,9 @@
     "GalecrestCityGym",
     "Route5",
     "VilethornWoods",
-    "SilversunCity",
     "VilethornMansion",
-    "VilethornHouse"
+    "VilethornHouse",
+    "SilversunCity"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
