@@ -21,28 +21,31 @@ script GalecrestCityGym_Test{
 
 
 ///NPCs
+script GalecrestCityGym_Red {
+    lockall
+    faceplayer
+    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy student Council. Most detectives use NORMAL type {PKMN} that are comfortable in a variety of urban situations. FIGHTING type {PKMN} should do well here!"))
+    releaseall
+}
 script GalecrestCityGym_NPC1 {
     lockall
     faceplayer
-    msgbox(format(""))
-    release
-    end
+    msgbox(format("This Gym is supposed to be a normal type gym...except all the trainers have a CHARCADET! How is that fair?"))
+    releaseall
 }
 
 script GalecrestCityGym_NPC2 {
     lockall
     faceplayer
-    msgbox(format(""))
-    release
-    end
+    msgbox(format("I'm the detective overseeing the cadets. All the best for your gym challenge!"))
+    releaseall
 }
 
 script GalecrestCityGym_NPC3 {
     lockall
     faceplayer
-    msgbox(format(""))
-    release
-    end
+    msgbox(format("For a bunch of students, these trainers sure don't take it easy on you..."))
+    releaseall
 }
 
 
@@ -61,30 +64,24 @@ script GalecrestCityGym_NPC3 {
 
 //Trainers
 script GalecrestCityGym_Trainer1 {
-
-    trainerbattle_single(TRAINER_GALECRESTGYM_A, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    trainerbattle_single(TRAINER_GALECRESTGYM_A, "I'm a first-year at the Academy.\n,But don't think I'm a pushover!", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
-
 }
 
 script GalecrestCityGym_Trainer2 {
-
-    trainerbattle_single(TRAINER_GALECRESTGYM_B, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    trainerbattle_single(TRAINER_GALECRESTGYM_B, "After our internship, we can evolve\nour CHARCADET into ARMOROUGE!", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
-
 }
 
 script GalecrestCityGym_Trainer3 {
-
     trainerbattle_single(TRAINER_GALECRESTGYM_C, "Hah! So you found the fake wall.", "Ouch, that hurt!")
     msgbox(format("You're not half bad after all."))
     release
     end
-
 }
 
 
