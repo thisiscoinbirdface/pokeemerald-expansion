@@ -69,13 +69,11 @@
 #define TRAINER_GALECREST_ROBBER             39
 #define TRAINER_GALECREST_DETECTIVE_A        40
 #define TRAINER_GALECREST_B                  41
+#define TRAINER_GALECRESTGYM_A               42
+#define TRAINER_GALECRESTGYM_B               43
+#define TRAINER_GALECRESTGYM_C               44
+#define TRAINER_GALECRESTGYM_LEADER          45
 
-
-
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
-#define TRAINER_DUSTY_1                      44
-#define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
 #define TRAINER_DUSTY_2                      47
 #define TRAINER_DUSTY_3                      48

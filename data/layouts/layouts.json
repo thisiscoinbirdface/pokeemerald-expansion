@@ -4864,10 +4864,10 @@
     {
       "id": "LAYOUT_GALECREST_CITY_GYM",
       "name": "GalecrestCityGym_Layout",
-      "width": 10,
-      "height": 11,
+      "width": 31,
+      "height": 80,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MossdeepGym",
+      "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/GalecrestCityGym/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCityGym/map.bin"
     }

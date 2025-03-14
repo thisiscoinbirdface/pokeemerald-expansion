@@ -753,7 +753,7 @@ Roselia
 Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ROSE_4 ===
+=== TRAINER_GALECRESTGYM_A ===
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -762,19 +762,15 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 31
+Charcadet
+Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Gloom
-Level: 31
+Furfrou
+Level: 18
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Roselia
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_ROSE_5 ===
+=== TRAINER_GALECRESTGYM_B ===
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -783,19 +779,19 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Breloom
-Level: 34
+Herdier
+Level: 16
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Gloom
-Level: 34
+Kecleon
+Level: 18
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Roselia
-Level: 34
+Charcadet
+Level: 18
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_DUSTY_1 ===
+=== TRAINER_GALECRESTGYM_C ===
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -804,46 +800,39 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 23
+Charcadet
+Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_CHIP ===
-Name: CHIP
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Noctowl
+Level: 20
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+
+=== TRAINER_GALECRESTGYM_LEADER ===
+Name: Kohla
+Class: Ace Rookie
+Pic: Wally
 Gender: Male
-Music: Hiker
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Baltoy
-Level: 27
+Yamper
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Psybeam
-- Self Destruct
-- Sandstorm
-- Ancient Power
 
-Sandshrew
-Level: 27
+Kirlia
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-Sandslash
-Level: 27
+Ceruledge @ Oran Berry
+Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Shadow Sneak
+- Will O Wisp
+- Flame Charge
+- Swords Dance
 
 === TRAINER_FOSTER ===
 Name: FOSTER

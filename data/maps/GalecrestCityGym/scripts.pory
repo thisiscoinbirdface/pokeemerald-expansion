@@ -6,3 +6,110 @@ script GalecrestCityGym_Test{
     multichoicegrid(5, 5, MULTI_NUMBER_INPUT, 5, TRUE)
     releaseall
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///NPCs
+script GalecrestCityGym_NPC1 {
+    lockall
+    faceplayer
+    msgbox(format())
+    release
+    end
+}
+
+script GalecrestCityGym_NPC2 {
+    lockall
+    faceplayer
+    msgbox(format())
+    release
+    end
+}
+
+script GalecrestCityGym_NPC3 {
+    lockall
+    faceplayer
+    msgbox(format())
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Trainers
+script GalecrestCityGym_Trainer1 {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    msgbox(format("You're not half bad after all."))
+    release
+    end
+
+}
+
+script GalecrestCityGym_Trainer2 {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    msgbox(format("You're not half bad after all."))
+    release
+    end
+
+}
+
+script GalecrestCityGym_Trainer3 {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    msgbox(format("You're not half bad after all."))
+    release
+    end
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Leader
+script GalecrestCityGym_Leader {
+
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
+    msgbox(format("You're not half bad after all."))
+    release
+    end
+
+}
+
+
+
+
