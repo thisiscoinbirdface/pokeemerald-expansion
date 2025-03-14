@@ -67,7 +67,7 @@ script AncientCeram_EventScript_Exit{
         //Else get out
         setvar(VAR_0x8004, 2)  //vertical pan
         setvar(VAR_0x8005, 2)  //horizontal pan
-        setvar(VAR_0x8006, 20)  //num shakes
+        setvar(VAR_0x8006, 30)  //num shakes
         setvar(VAR_0x8007, 5)  //shake delay
         special(ShakeCamera)
         waitstate
@@ -76,6 +76,7 @@ script AncientCeram_EventScript_Exit{
         //vars
         setflag(FLAG_ANCIENT_FIRST_TIME)
         setvar(VAR_ANCIENT_GAB_ESCAPE, 4)
+        setrespawn(HEAL_LOCATION_GALECREST_CITY)
         //Quest complete
         questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
         

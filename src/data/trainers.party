@@ -769,6 +769,10 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Furfrou
 Level: 18
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Headbutt
+- Sand Attack
+- Snarl
+- Growl
 
 === TRAINER_GALECRESTGYM_B ===
 Name: ROSE

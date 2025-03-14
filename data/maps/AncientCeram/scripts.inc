@@ -96,7 +96,7 @@ AncientCeram_EventScript_Exit_7:
 	compare VAR_ANCIENT_GAB_ESCAPE, 3
 	goto_if_eq AncientCeram_EventScript_Exit_11
 AncientCeram_EventScript_Exit_10:
-# 86 "data//maps/AncientCeram/scripts.pory"
+# 87 "data//maps/AncientCeram/scripts.pory"
 	releaseall
 	return
 
@@ -121,7 +121,7 @@ AncientCeram_EventScript_Exit_11:
 # 69 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8005, 2
 # 70 "data//maps/AncientCeram/scripts.pory"
-	setvar VAR_0x8006, 20
+	setvar VAR_0x8006, 30
 # 71 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8007, 5
 # 72 "data//maps/AncientCeram/scripts.pory"
@@ -134,9 +134,11 @@ AncientCeram_EventScript_Exit_11:
 	setflag FLAG_ANCIENT_FIRST_TIME
 # 78 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 4
-# 80 "data//maps/AncientCeram/scripts.pory"
+# 79 "data//maps/AncientCeram/scripts.pory"
+	setrespawn HEAL_LOCATION_GALECREST_CITY
+# 81 "data//maps/AncientCeram/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA
-# 83 "data//maps/AncientCeram/scripts.pory"
+# 84 "data//maps/AncientCeram/scripts.pory"
 	warp MAP_GALECREST_CITY, 53, 30
 	goto AncientCeram_EventScript_Exit_10
 
