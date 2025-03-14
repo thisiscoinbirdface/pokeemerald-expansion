@@ -838,83 +838,77 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Flame Charge
 - Swords Dance
 
-=== TRAINER_FOSTER ===
-Name: FOSTER
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
+=== TRAINER_VILETHORN_A ===
+Name: YENI
+Class: Expert
+Pic: Expert F
+Gender: Female
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 25
+Pancham
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-Sandslash
-Level: 25
+Hawlucha
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_DUSTY_2 ===
+=== TRAINER_VILETHORN_B ===
 Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 27
+Dottler
+Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_DUSTY_3 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Beedrill
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+Whirlipede
+Level: 21
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+
+
+=== TRAINER_VILETHORN_C ===
+Name: RUSTY
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 30
+Scyther
+Level: 23
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_DUSTY_4 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+
+=== TRAINER_VILETHORN_D ===
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 33
+Mudbray
+Level: 20
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_DUSTY_5 ===
+Sandslash
+Level: 23
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+
+=== TRAINER_VILETHORN_E ===
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -931,7 +925,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_GABBY_AND_TY_1 ===
+=== TRAINER_VILETHORN_F ===
 Name: GABBY & TY
 Class: Interviewer
 Pic: Interviewer
@@ -948,7 +942,7 @@ Whismur
 Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_GABBY_AND_TY_2 ===
+=== TRAINER_VILETHORN_G ===
 Name: GABBY & TY
 Class: Interviewer
 Pic: Interviewer
@@ -965,7 +959,7 @@ Loudred
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_GABBY_AND_TY_3 ===
+=== TRAINER_VILETHORN_H ===
 Name: GABBY & TY
 Class: Interviewer
 Pic: Interviewer

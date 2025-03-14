@@ -74,14 +74,16 @@
 #define TRAINER_GALECRESTGYM_C               44
 #define TRAINER_GALECRESTGYM_LEADER          45
 
-#define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47
-#define TRAINER_DUSTY_3                      48
-#define TRAINER_DUSTY_4                      49
-#define TRAINER_DUSTY_5                      50
-#define TRAINER_GABBY_AND_TY_1               51
-#define TRAINER_GABBY_AND_TY_2               52
-#define TRAINER_GABBY_AND_TY_3               53
+//Vilethorn Woods
+#define TRAINER_VILETHORN_A                  46
+#define TRAINER_VILETHORN_B                  47
+#define TRAINER_VILETHORN_C                  48
+#define TRAINER_VILETHORN_D                  49
+#define TRAINER_VILETHORN_E                  50
+#define TRAINER_VILETHORN_F                  51
+#define TRAINER_VILETHORN_G                  52
+#define TRAINER_VILETHORN_H                  53
+
 #define TRAINER_GABBY_AND_TY_4               54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
