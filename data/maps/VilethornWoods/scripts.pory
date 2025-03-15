@@ -1,4 +1,64 @@
+raw `
+    .set LOCALID_GRUNT, 18
+    .set LOCALID_PROF, 17
+`
+
 mapscripts VilethornWoods_MapScripts{}
+
+
+
+
+
+
+
+script VilethornWoods_EventScript_TriggerProf{
+    if (flag(FLAG_VILETHORN_PROF)){
+        end
+    }
+
+    lockall
+    
+    //magma prof dialogue
+    applymovement(LOCALID_GRUNT, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Move, Professor! Otherwise someone will see us."))
+    release
+    applymovement(LOCALID_PROF, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("PROF: Fine, fine! I'm moving. Don't manhandle me, you animal."))
+    release
+
+    //get out
+    applymovement(LOCALID_PROF, moves(walk_up *8))
+    applymovement(LOCALID_GRUNT, moves(walk_up *8))
+    waitmovement(0)
+    delay(16)
+    applymovement(LOCALID_GRUNT, moves(walk_down *8))
+    waitmovement(0)
+    delay(36)
+    applymovement(LOCALID_GRUNT, moves(face_left))
+    waitmovement(0)
+    delay(36)
+    applymovement(LOCALID_GRUNT, moves(face_right))
+    waitmovement(0)
+    delay(36)
+    msgbox(format("Must be a wild IMPDIMP or something..."))
+    release
+    applymovement(LOCALID_GRUNT, moves(walk_up *8))
+    waitmovement(0)
+
+    removeobject(LOCALID_GRUNT)
+    removeobject(LOCALID_PROF)
+
+    //Setflags
+    setflag(FLAG_VILETHORN_PROF)
+    releaseall
+}
+
+
+
 
 
 
