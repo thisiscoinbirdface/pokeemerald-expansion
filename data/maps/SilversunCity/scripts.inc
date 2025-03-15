@@ -71,8 +71,6 @@ SilversunCity_EventScript_Detectives_Movement_1:
 	walk_right
 # 31 "data//maps/SilversunCity/scripts.pory"
 	walk_up
-# 31 "data//maps/SilversunCity/scripts.pory"
-	walk_up
 	step_end
 
 SilversunCity_EventScript_Detectives_Text_0:
@@ -85,8 +83,9 @@ SilversunCity_EventScript_Detectives_Text_1:
 # 28 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: Can't you see we're in\n"
 	.string "disguise, you idiot? You'll attract\l"
-	.string "attention! Be casual. Go admire those\l"
-	.string "flowerpots.$"
+	.string "attention!\p"
+	.string "Be casual.\n"
+	.string "Go admire those flowerpots.$"
 
 SilversunCity_EventScript_Detectives_Text_2:
 # 35 "data//maps/SilversunCity/scripts.pory"
