@@ -227,7 +227,11 @@
 #define MAPSEC_ANCIENT_CERAM                0xDE
 #define MAPSEC_GALECREST_CITY               0xDF
 
-#define MAPSEC_NONE                         0xE0
+#define MAPSEC_ROUTE5                       0xE0
+#define MAPSEC_VILETHORN_WOODS              0xE1
+#define MAPSEC_SILVERSUN_CITY               0xE2
+
+#define MAPSEC_NONE                         0xE3
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
