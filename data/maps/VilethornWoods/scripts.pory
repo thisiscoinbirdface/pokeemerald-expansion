@@ -49,9 +49,10 @@ script VilethornWoods_EventScript_TriggerProf{
     applymovement(LOCALID_GRUNT, moves(walk_up *6))
     waitmovement(0)
 
-    removeobject(LOCALID_GRUNT)
-    removeobject(LOCALID_PROF)
-
+    setobjectxyperm(LOCALID_GRUNT, 0, 0)
+    setobjectxyperm(LOCALID_PROF, 1, 0)
+    setobjectxy(LOCALID_GRUNT, 0, 0)
+        setobjectxy(LOCALID_PROF, 1, 0)
     //Setflags
     setflag(FLAG_VILETHORN_PROF)
     releaseall
