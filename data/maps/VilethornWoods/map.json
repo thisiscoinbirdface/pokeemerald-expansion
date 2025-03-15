@@ -258,6 +258,20 @@
       "elevation": 0,
       "dest_map": "MAP_VILETHORN_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_VILETHORN_MANSION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_VILETHORN_MANSION",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

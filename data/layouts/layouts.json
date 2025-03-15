@@ -4874,9 +4874,9 @@
     {
       "id": "LAYOUT_VILETHORN_MANSION",
       "name": "VilethornMansion_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_Building",
+      "width": 18,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/VilethornMansion/border.bin",
       "blockdata_filepath": "data/layouts/VilethornMansion/map.bin"
