@@ -4890,6 +4890,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/VilethornHouse/border.bin",
       "blockdata_filepath": "data/layouts/VilethornHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY_HOUSES",
+      "name": "SilversunCity_Houses_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SilversunCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity_Houses/map.bin"
     }
   ]
 }
