@@ -182,7 +182,7 @@
       "x": 27,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_SILVERSUN_CITY",
+      "dest_map": "MAP_SILVERSUN_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
@@ -198,6 +198,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
