@@ -25,10 +25,10 @@ script SilversunCity_EventScript_Detectives{
     waitmovement(0)
     delay(24)
 
-    msgbox(format("DETECTIVE: Can't you see we're in disguise, you idiot? You'll attract attention! Be casual. Go admire those flowerpots.")) 
+    msgbox(format("DETECTIVE: Can't you see we're in disguise, you idiot? You'll attract attention!\pBe casual.\nGo admire those flowerpots.")) 
     release
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2 walk_up * 2)) 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2 walk_up)) 
     waitmovement(0)
     delay(24)
 
