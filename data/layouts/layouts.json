@@ -4920,6 +4920,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/SilversunCity_TheaterEntrance/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity_TheaterEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY_POKEMON_CENTER",
+      "name": "SilversunCity_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SilversunCity_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity_PokemonCenter/map.bin"
     }
   ]
 }

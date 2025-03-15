@@ -1,0 +1,23 @@
+mapscripts SilversunCity_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: SilversunCity_PokemonCenter_OnTransition
+}
+
+script SilversunCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_SILVERSUN_CITY)
+}
+
+script SilversunCity_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, LOCALID_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+
+script SilversunCity_PokemonCenter_NPC1{
+	lockall
+    faceplayer
+	msgbox(format("Apparently you can't meet ARIAN, the Gym Leader, without getting an appointment first."))
+	releaseall
+}
+
