@@ -205,6 +205,13 @@
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SEWERS",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -4637,7 +4637,7 @@
       "width": 92,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Sewers",
       "border_filepath": "data/layouts/TempCopyMap/border.bin",
       "blockdata_filepath": "data/layouts/TempCopyMap/map.bin"
     },
@@ -4930,6 +4930,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/SilversunCity_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY_SEWERS",
+      "name": "SilversunCity_Sewers_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sewers",
+      "border_filepath": "data/layouts/SilversunCity_Sewers/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity_Sewers/map.bin"
     }
   ]
 }

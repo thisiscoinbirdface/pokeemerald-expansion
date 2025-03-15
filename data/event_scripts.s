@@ -1252,3 +1252,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SilversunCity_TheaterEntrance/scripts.inc"
 
 	.include "data/maps/SilversunCity_PokemonCenter/scripts.inc"
+
+	.include "data/maps/SilversunCity_Sewers/scripts.inc"
