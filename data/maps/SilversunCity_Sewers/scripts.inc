@@ -122,13 +122,30 @@ SilversunCity_Sewers_Market_A::
 # 115 "data//maps/SilversunCity_Sewers/scripts.pory"
 	waitmessage
 # 116 "data//maps/SilversunCity_Sewers/scripts.pory"
-	pokemart GastreeCity_Pokemart_Inventory
+	pokemart SilversunCity_Sewers_Market_A_Inventory
 # 117 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 # 118 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 	end
 
+
+	.align 2
+# 122 "data//maps/SilversunCity_Sewers/scripts.pory"
+SilversunCity_Sewers_Market_A_Inventory:
+# 123 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_POTION
+# 124 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_POKE_BALL
+# 125 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_ANTIDOTE
+# 126 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_PARALYZE_HEAL
+# 127 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_ENERGY_POWDER
+# 128 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_REPEL
+	.2byte ITEM_NONE
 
 SilversunCity_Sewers_NPC1_Text_0:
 # 19 "data//maps/SilversunCity_Sewers/scripts.pory"

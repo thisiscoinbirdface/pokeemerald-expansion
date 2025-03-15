@@ -3,7 +3,7 @@
   "name": "SilversunCity_Houses",
   "layout": "LAYOUT_SILVERSUN_CITY_HOUSES",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_SILVERSUN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

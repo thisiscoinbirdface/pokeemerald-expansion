@@ -114,7 +114,7 @@ script SilversunCity_Sewers_Market_A{
 	message(format("Psst! Hey, you! Check out these goods I've got!"))
 	waitmessage
 	pokemart(SilversunCity_Sewers_Market_A_Inventory)
-	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	msgbox(format("Then scram!"), MSGBOX_DEFAULT)
 	release
 	end
 }

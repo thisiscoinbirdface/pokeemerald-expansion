@@ -2481,7 +2481,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1056
-    [DIFFICULTY_NORMAL][TRAINER_LOLA_1] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE5_A] =
     {
 #line 1057
         .trainerName = _("LOLA"),
@@ -2526,7 +2526,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1073
-    [DIFFICULTY_NORMAL][TRAINER_AUSTINA] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE5_B] =
     {
 #line 1074
         .trainerName = _("AUSTINA"),
@@ -2560,7 +2560,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1086
-    [DIFFICULTY_NORMAL][TRAINER_GWEN] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE5_C] =
     {
 #line 1087
         .trainerName = _("GWEN"),
@@ -2594,7 +2594,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1099
-    [DIFFICULTY_NORMAL][TRAINER_LOLA_2] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE5_D] =
     {
 #line 1100
         .trainerName = _("LOLA"),
@@ -2639,7 +2639,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1116
-    [DIFFICULTY_NORMAL][TRAINER_LOLA_3] =
+    [DIFFICULTY_NORMAL][TRAINER_SEWERS_A] =
     {
 #line 1117
         .trainerName = _("LOLA"),
@@ -2684,7 +2684,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1133
-    [DIFFICULTY_NORMAL][TRAINER_LOLA_4] =
+    [DIFFICULTY_NORMAL][TRAINER_SEWERS_B] =
     {
 #line 1134
         .trainerName = _("LOLA"),
@@ -2729,7 +2729,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1150
-    [DIFFICULTY_NORMAL][TRAINER_LOLA_5] =
+    [DIFFICULTY_NORMAL][TRAINER_SEWERS_C] =
     {
 #line 1151
         .trainerName = _("LOLA"),
@@ -2774,7 +2774,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1167
-    [DIFFICULTY_NORMAL][TRAINER_RICKY_1] =
+    [DIFFICULTY_NORMAL][TRAINER_SEWERS_D] =
     {
 #line 1168
         .trainerName = _("RICKY"),
@@ -2813,7 +2813,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1184
-    [DIFFICULTY_NORMAL][TRAINER_SIMON] =
+    [DIFFICULTY_NORMAL][TRAINER_SEWERS_E] =
     {
 #line 1185
         .trainerName = _("SIMON"),
