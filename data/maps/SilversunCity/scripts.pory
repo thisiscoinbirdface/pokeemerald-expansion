@@ -1,0 +1,51 @@
+raw`
+    .set LOCALID_DET1, 11
+    .set LOCALID_DET2, 12
+`
+
+mapscripts SilversunCity_MapScripts{}
+
+
+
+
+
+
+
+
+
+//Main detective encounter
+script SilversunCity_EventScript_Detectives{
+    lockall
+
+    //talk
+    //first explain they're in disguise
+    msgbox(format("...\p...\p..."))
+    applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
+    applymovement(LOCALID_DET2, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+
+    msgbox(format("DETECTIVE: Can't you see we're in disguise, you idiot? You'll attract attention! Be casual. Go admire those flowerpots.")) 
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2 walk_up * 2)) 
+    waitmovement(0)
+    delay(24)
+
+    msgbox(format("DETECTIVE: Better. Now tell me - what updates have you got?\p...\pDETECTIVE: What!? You saw the Professor with a Team Somber grunt? The grunt was taking the Prof out of VILETHORN WOODS?"))
+    release
+    delay(30)
+    msgbox(format("DETECTIVE: This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\pBut we still don't know where their headquarters are...\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ. Explore all of SILVERSUN CITY. Don't leave any stone unturned! We'll contact the local police and find out whatever we can.\pGood luck."))
+    release
+    
+    //remove objects
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_DET1)
+    removeobject(LOCALID_DET2)
+    fadescreen(FADE_FROM_BLACK)
+
+    //setvars and quest
+    setflag(FLAG_SILVERSUN_DETECTIVES_ENTER)    
+
+    releaseall
+}

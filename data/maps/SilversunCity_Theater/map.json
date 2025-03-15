@@ -1,0 +1,62 @@
+{
+  "id": "MAP_SILVERSUN_CITY_THEATER",
+  "name": "SilversunCity_Theater",
+  "layout": "LAYOUT_SILVERSUN_CITY_THEATER",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 2,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 21,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

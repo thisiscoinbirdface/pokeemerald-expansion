@@ -1246,3 +1246,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VilethornHouse/scripts.inc"
 
 	.include "data/maps/SilversunCity_Houses/scripts.inc"
+
+	.include "data/maps/SilversunCity_Theater/scripts.inc"
+
+	.include "data/maps/SilversunCity_TheaterEntrance/scripts.inc"

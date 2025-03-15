@@ -88,7 +88,9 @@
     "VilethornMansion",
     "VilethornHouse",
     "SilversunCity",
-    "SilversunCity_Houses"
+    "SilversunCity_Houses",
+    "SilversunCity_Theater",
+    "SilversunCity_TheaterEntrance"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

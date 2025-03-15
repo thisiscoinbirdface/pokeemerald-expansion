@@ -4900,6 +4900,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SilversunCity_Houses/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY_THEATER",
+      "name": "SilversunCity_Theater_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattlePike",
+      "border_filepath": "data/layouts/SilversunCity_Theater/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity_Theater/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_CITY_THEATER_ENTRANCE",
+      "name": "SilversunCity_TheaterEntrance_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SilversunCity_TheaterEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/SilversunCity_TheaterEntrance/map.bin"
     }
   ]
 }
