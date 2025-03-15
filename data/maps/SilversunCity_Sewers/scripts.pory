@@ -1,0 +1,109 @@
+//4 npc
+//3 black market
+//5 trainers
+
+mapscripts SilversunCity_Sewers_MapScripts{}
+
+
+
+
+
+
+
+
+
+//NPCs
+script SilversunCity_Sewers_NPC1{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_NPC2{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_NPC3{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_NPC4{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_NPC5{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Trainers
+script SilversunCity_Sewers_Trainer_A{
+    trainerbattle_single(TRAINER_SEWERS_A, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_Trainer_B{
+    trainerbattle_single(TRAINER_SEWERS_B, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_Trainer_C{
+    trainerbattle_single(TRAINER_SEWERS_C, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_Trainer_D{
+    trainerbattle_single(TRAINER_SEWERS_D, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SilversunCity_Sewers_Trainer_E{
+    trainerbattle_single(TRAINER_SEWERS_E, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+//Black Market
+

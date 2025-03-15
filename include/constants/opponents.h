@@ -84,18 +84,27 @@
 #define TRAINER_VILETHORN_G                  52
 #define TRAINER_VILETHORN_H                  53
 
+//Vilethorn Mansion
 #define TRAINER_GABBY_AND_TY_4               54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
-#define TRAINER_LOLA_1                       57
-#define TRAINER_AUSTINA                      58
-#define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
-#define TRAINER_LOLA_4                       62
-#define TRAINER_LOLA_5                       63
-#define TRAINER_RICKY_1                      64
-#define TRAINER_SIMON                        65
+
+//Route 5
+#define TRAINER_ROUTE5_A                     57
+#define TRAINER_ROUTE5_B                     58
+#define TRAINER_ROUTE5_C                     59
+#define TRAINER_ROUTE5_D                     60
+
+//Silversun Sewers
+#define TRAINER_SEWERS_A                     61
+#define TRAINER_SEWERS_B                     62
+#define TRAINER_SEWERS_C                     63
+#define TRAINER_SEWERS_D                     64
+#define TRAINER_SEWERS_E                     65
+
+
+
+
 #define TRAINER_CHARLIE                      66
 #define TRAINER_RICKY_2                      67
 #define TRAINER_RICKY_3                      68
