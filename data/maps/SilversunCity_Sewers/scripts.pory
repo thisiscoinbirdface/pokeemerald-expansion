@@ -105,5 +105,26 @@ script SilversunCity_Sewers_Trainer_E{
 
 
 
+
+
 //Black Market
+script SilversunCity_Sewers_Market_A{
+    lock
+	faceplayer
+	message(format("Psst! Hey, you! Check out these goods I've got!"))
+	waitmessage
+	pokemart(SilversunCity_Sewers_Market_A_Inventory)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart SilversunCity_Sewers_Market_A_Inventory{
+    ITEM_POTION
+    ITEM_POKE_BALL
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ENERGY_POWDER
+    ITEM_REPEL
+}
 

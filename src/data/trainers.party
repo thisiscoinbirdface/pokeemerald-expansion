@@ -1053,7 +1053,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Supersonic
 - Hyper Voice
 
-=== TRAINER_LOLA_1 ===
+=== TRAINER_ROUTE5_A ===
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1070,7 +1070,7 @@ Azurill
 Level: 12
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_AUSTINA ===
+=== TRAINER_ROUTE5_B ===
 Name: AUSTINA
 Class: Tuber F
 Pic: Tuber F
@@ -1083,7 +1083,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GWEN ===
+=== TRAINER_ROUTE5_C ===
 Name: GWEN
 Class: Tuber F
 Pic: Tuber F
@@ -1096,7 +1096,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LOLA_2 ===
+=== TRAINER_ROUTE5_D ===
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1113,7 +1113,7 @@ Marill
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_LOLA_3 ===
+=== TRAINER_SEWERS_A ===
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1130,7 +1130,7 @@ Marill
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_LOLA_4 ===
+=== TRAINER_SEWERS_B ===
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1147,7 +1147,7 @@ Marill
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_LOLA_5 ===
+=== TRAINER_SEWERS_C ===
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1164,7 +1164,7 @@ Azumarill
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_RICKY_1 ===
+=== TRAINER_SEWERS_D ===
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -1181,7 +1181,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Tail Whip
 - Surf
 
-=== TRAINER_SIMON ===
+=== TRAINER_SEWERS_E ===
 Name: SIMON
 Class: Tuber M
 Pic: Tuber M
