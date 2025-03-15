@@ -31,11 +31,11 @@ script VilethornWoods_EventScript_TriggerProf{
     release
 
     //get out
-    applymovement(LOCALID_PROF, moves(walk_up *8))
-    applymovement(LOCALID_GRUNT, moves(walk_up *8))
+    applymovement(LOCALID_PROF, moves(walk_up *6))
+    applymovement(LOCALID_GRUNT, moves(walk_up *6))
     waitmovement(0)
     delay(16)
-    applymovement(LOCALID_GRUNT, moves(walk_down *8))
+    applymovement(LOCALID_GRUNT, moves(walk_down *6))
     waitmovement(0)
     delay(36)
     applymovement(LOCALID_GRUNT, moves(face_left))
@@ -44,9 +44,9 @@ script VilethornWoods_EventScript_TriggerProf{
     applymovement(LOCALID_GRUNT, moves(face_right))
     waitmovement(0)
     delay(36)
-    msgbox(format("Must be a wild IMPDIMP or something..."))
+    msgbox(format("Must be a wild IMPIDIMP or something..."))
     release
-    applymovement(LOCALID_GRUNT, moves(walk_up *8))
+    applymovement(LOCALID_GRUNT, moves(walk_up *6))
     waitmovement(0)
 
     removeobject(LOCALID_GRUNT)
@@ -68,33 +68,39 @@ script VilethornWoods_EventScript_TriggerProf{
 
 //Trainers
 script VilethornWoods_Trainer_A{
+    setflag(FLAG_SYS_EXP_ALL)
     trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type {PKMN} are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
     msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_B{
     trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type {PKMN}, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
     msgbox(format("This forest is weird...a dense fog, no BUG types..."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_C{
     trainerbattle_single(TRAINER_VILETHORN_C, format("The sweet, delicious fog envelops us...we are one with the mindwaves!"), "You're not one with the mindwaves!")
     msgbox(format("I want to go deeper...sink deeper...escape my real life..."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_D{
     trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a {PKMN} Breeder. Like all breeders, we specialise in certain {PKMN} forms. I'm a horse breeding expert!"), "Well fought!")
     msgbox(format("I need to raise my horses to become stronger. Maybe some VITAMINS would help..."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_E{
     trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out! I'm so scared of the DROWZEE - what if I get hypnotised?"), "You creep me out too!")
     msgbox(format("I've been stuck here for hours. I need to get out of here..."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_F1{
@@ -103,6 +109,7 @@ script VilethornWoods_Trainer_F1{
     trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
     msgbox(format("I met her at a {PKMN} Breeder festival. There was a battle competition and we were the two finalists!"))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_F2{
@@ -111,18 +118,21 @@ script VilethornWoods_Trainer_F2{
     trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
     msgbox(format("Maybe one day you'll find your true love during a battle too!"))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_G{
     trainerbattle_single(TRAINER_VILETHORN_G, format("I'm one of the best bug catchers around. I want to become a Gym Leader one day!"), "Are you a Gym Leader or something?")
     msgbox(format("As a Gym Leader to-be, my team needs to be able to handle a variety of threats."))
     releaseall
+    end
 }
 
 script VilethornWoods_Trainer_H{
     trainerbattle_single(TRAINER_VILETHORN_H, format("I wonder what's inside this house...maybe there's some loot!"), "No loot for me!")
     msgbox(format("Fine, I'll just stand here and look while you loot everything..."))
     releaseall
+    end
 }
 
 

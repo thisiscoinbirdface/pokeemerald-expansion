@@ -330,6 +330,7 @@ script GalecrestCity_NPC_9{
     lockall
     faceplayer    
     msgbox(format("I don't care about money! We love each other and that's what matters."))
+    release
     face_right
     releaseall
 }
