@@ -286,9 +286,8 @@ SilversunCity_Theater_EventScript_SomberBlocker_Text_0:
 	.string "...\p"
 	.string "Go on, get inside then. I won't stop you.\n"
 	.string "With this, we're square, hear me?\p"
-	.string "Oh, I'm going to get into so much\n"
-	.string "trouble for this...but I always pay back\l"
-	.string "my debts!\p"
+	.string "Oh, I'm going to get into trouble...but I\n"
+	.string "always pay back my debts!\p"
 	.string "I really hope the grunts inside kick you\n"
 	.string "right back out!$"
 
@@ -414,7 +413,6 @@ SilversunCity_Theater_NPC7_Text_0:
 
 SilversunCity_Theater_NPC7_Text_1:
 # 174 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "...breathe...breathe...I'm trying to calm\n"
-	.string "my nerves. Even after years of training,\l"
-	.string "I still get nervous right before going\l"
-	.string "on-stage.$"
+	.string "...breathe...breathe...I'm calming my\n"
+	.string "nerves. Even after years of training, I\l"
+	.string "get nervous before going on-stage.$"

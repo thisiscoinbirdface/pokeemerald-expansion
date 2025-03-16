@@ -61,5 +61,39 @@ script SilversunCity_EventScript_Detectives{
 
 
 //NPCs
-
+script SilversunCity_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    releaseall
+    end
+}
+script SilversunCity_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    releaseall
+    end
+}
+script SilversunCity_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    releaseall
+    end
+}
+script SilversunCity_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    releaseall
+    end
+}
+script SilversunCity_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    releaseall
+    end
+}
 

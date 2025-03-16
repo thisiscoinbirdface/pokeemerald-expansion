@@ -57,6 +57,66 @@ SilversunCity_EventScript_Detectives::
 	return
 
 
+SilversunCity_NPC1::
+# 65 "data//maps/SilversunCity/scripts.pory"
+	lockall
+# 66 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 67 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC1_Text_0
+# 68 "data//maps/SilversunCity/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_NPC2::
+# 72 "data//maps/SilversunCity/scripts.pory"
+	lockall
+# 73 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 74 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC1_Text_0
+# 75 "data//maps/SilversunCity/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_NPC3::
+# 79 "data//maps/SilversunCity/scripts.pory"
+	lockall
+# 80 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 81 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC1_Text_0
+# 82 "data//maps/SilversunCity/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_NPC4::
+# 86 "data//maps/SilversunCity/scripts.pory"
+	lockall
+# 87 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 88 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC1_Text_0
+# 89 "data//maps/SilversunCity/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_NPC5::
+# 93 "data//maps/SilversunCity/scripts.pory"
+	lockall
+# 94 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 95 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC1_Text_0
+# 96 "data//maps/SilversunCity/scripts.pory"
+	releaseall
+	end
+
+
 # 23 "data//maps/SilversunCity/scripts.pory"
 SilversunCity_EventScript_Detectives_Movement_0:
 # 23 "data//maps/SilversunCity/scripts.pory"
@@ -116,3 +176,9 @@ SilversunCity_EventScript_Detectives_Text_3:
 	.string "the local police and find out whatever\l"
 	.string "we can.\p"
 	.string "Good luck.$"
+
+SilversunCity_NPC1_Text_0:
+# 67 "data//maps/SilversunCity/scripts.pory"
+	.string "GLORIA is graceful even in defeat. Now\n"
+	.string "that's something everyone can learn\l"
+	.string "from.$"
