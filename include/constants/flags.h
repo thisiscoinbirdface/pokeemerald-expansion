@@ -78,7 +78,7 @@
 #define FLAG_GALECREST_ROCKSMASH    0x3F // get rock smash in galecrest
 #define FLAG_VILETHORN_PROF    0x40 // overhear the prof getting taken by a magma grunt
 #define FLAG_SILVERSUN_DETECTIVES_ENTER    0x41 // first convo with detectives in silversun
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
+#define FLAG_SILVERSUN_BACKSTAGEPASS_GET    0x42 // get the backstage pass from the nurse at the gym
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag

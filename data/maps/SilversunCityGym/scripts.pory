@@ -6,7 +6,18 @@ mapscripts SilversunCityGym_MapScripts{}
 
 
 //Get backstage pass - the gym leader is out so come back later setup
+script SilversunCityGym_EventScript_BackstagePass{
+    lockall
+    faceplayer
+    if (flag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)){
+        msgbox(format("Hope you enjoy the show!"))
+    } else {
+        msgbox(format("Congratulations! The other actors and actresses have approved your skills. Unfortunately the Gym Leader is performing at the Silversun Theater tonight, so the Gym Challenge is on hold. As compensation, please accept this BACKSTAGE PASS to tonight's show."))
+        setflag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)
+    }
 
+    releaseall
+}
 
 
 

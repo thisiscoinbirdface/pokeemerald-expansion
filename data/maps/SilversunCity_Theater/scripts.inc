@@ -38,4 +38,5 @@ SilversunCity_Theater_Leader_Movement_0:
 
 SilversunCity_Theater_Leader_Text_0:
 # 20 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "GLORIA: Show me your danse macabre!$"
+	.string "GLORIA: Now, {PLAYER}, enthrall me\n"
+	.string "with your danse macabre!$"
