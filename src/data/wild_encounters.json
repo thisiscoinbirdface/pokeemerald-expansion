@@ -12623,7 +12623,7 @@
           "map": "MAP_SILVERSUN_CITY_SEWERS",
           "base_label": "gSilversunCity_Sewers0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 22,

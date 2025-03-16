@@ -80,7 +80,7 @@
 #define FLAG_SILVERSUN_DETECTIVES_ENTER    0x41 // first convo with detectives in silversun
 #define FLAG_SILVERSUN_BACKSTAGEPASS_GET    0x42 // get the backstage pass from the nurse at the gym
 #define FLAG_SILVERSUN_BACKSTAGEPASS_USE    0x43 // use the backstage pass to access the backstage (and hideout)
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
+#define FLAG_SILVERSUN_SOMBERHQ_ENTRANCE    0x44 // gabrielle is at the entrance and lets you in
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
@@ -140,7 +140,7 @@
 #define FLAG_SILVERSUN_THEATER_MANIAC  0x28E // maniac in love with gloria at the theater challenges you 
 #define FLAG_SILVERSUN_THEATER_LENS  0x28F // get zoom lens from the dude in the back
 #define FLAG_SILVERSUN_THEATER_SCARF  0x290 // get silk scarf from the beauty backstage
-#define FLAG_SILVERSUN_SOMBERHQ_ENTRANCE  0x291 // gabrielle is at the entrance and lets you in
+#define FLAG_UNUSED_0x291  0x291 // artist wants black sludge
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag

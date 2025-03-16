@@ -268,7 +268,7 @@
 #define VAR_GASTREE_SKITTY_QUEST                         0x40FC // Gastree skitty quest
 #define VAR_ANCIENT_GAB_ESCAPE                           0x40FD // First ancient area. 0: nothing, 1: spoke to gab, 2: reached exit, 3: picked up gab, 4: exited
 #define VAR_GALECREST_RICH_PEARLS                        0x40FE // the rich house robber quest.
-#define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
+#define VAR_SILVERSUN_ARTIST                             0x40FF // Quest - get this guy the black sludge
 
     //Moved down from above (i am going to use these)
     #define VAR_ROUTE122_STATE                               0x4075 // Unused Var

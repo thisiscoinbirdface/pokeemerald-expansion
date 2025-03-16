@@ -64,7 +64,7 @@ script SilversunCity_EventScript_Detectives{
 script SilversunCity_NPC1{
     lockall
     faceplayer
-    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    msgbox(format("GLORIA, the city's Gym Leader is also a famous actress! Her work centers around the dark and eerie."))
     releaseall
     end
 }
@@ -85,14 +85,14 @@ script SilversunCity_NPC3{
 script SilversunCity_NPC4{
     lockall
     faceplayer
-    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    msgbox(format("We keep seeing wild KOFFING and TOXEL around...they come from the sewers, I bet. Their poison is why there are no flowers near the sewers."))
     releaseall
     end
 }
 script SilversunCity_NPC5{
     lockall
     faceplayer
-    msgbox(format("The sewers really stink up this part of town. That's why nobody lives here."))
+    msgbox(format("The sewers really stink up this part of town!"))
     releaseall
     end
 }

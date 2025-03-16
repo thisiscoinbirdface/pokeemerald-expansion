@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 16,
-      "y": 29,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,

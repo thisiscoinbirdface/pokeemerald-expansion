@@ -1,0 +1,93 @@
+mapscripts SilversunCity_Houses_MapScripts{}
+
+
+
+
+
+//QUEST: Artist   VAR_SILVERSUN_ARTIST: 0 is not started, 1 is in progress, 2 is complete
+script SilversunCity_Houses_Artist{
+    lockall
+    faceplayer
+
+
+    if (var(VAR_SILVERSUN_ARTIST) == 1){
+        msgbox(format("Yes yes. Have you brought me the BLACK SLUDGE?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            if (checkitem(ITEM_BLACK_SLUDGE)){
+                removeitem(ITEM_BLACK_SLUDGE)
+                msgbox(format("{PLAYER} gave ARSALAN a BLACK SLUDGE."))
+                msgbox(format("Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
+                release                
+                giveitem(ITEM_SILVERPOWDER)
+                setvar(VAR_SILVERSUN_ARTIST, 2)
+            } else {
+                msgbox(format("But you do not have it! An artist's eyes cannot be fooled."))
+                release
+            }
+        } else {
+            msgbox(format("Just use the regular black paint, you say? Pah! Philistine!"))
+        }
+    }
+
+    if (var(VAR_SILVERSUN_ARTIST) == 0){
+        msgbox(format("Myself, I have no patience for theater. No no! Although GLORIA is fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in Cormoria!\p...\pBut ARSALAN is struggling now. Why, you ask? Well well.\pYou see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some BLACK SLUDGE.\pWill you help me?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("ARSALAN is most pleased! I eagerly await your return."))
+            release
+            //Start quest
+            setvar(VAR_SILVERSUN_ARTIST, 1)
+
+        } else {
+            applymovement(2, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(24)
+            msgbox(format("Just use the regular black paint, you say? Pah! Philistine!"))
+            release
+        }
+    }
+
+
+    releaseall
+    end
+}
+
+//TUTOR: Someone
+script SilversunCity_Houses_Tutor{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+//NPCs
+script SilversunCity_Houses_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("SILVERSUN CITY is right between the always foggy VILETHORN WOODS and the always raining ROUTE 6! We should be called SILVERSHADE CITY instead."))
+    releaseall
+    end
+}
+script SilversunCity_Houses_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("They say dangerous {PKMN} come out from the sewers from time to time. I don't let my child play anywhere near it!"))
+    releaseall
+    end
+}
+script SilversunCity_Houses_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("I really want a TOXEL as my first {PKMN} but Mom will never let me have one."))
+    releaseall
+    end
+}
+
