@@ -102,14 +102,14 @@
 #define TRAINER_SEWERS_D                     64
 #define TRAINER_SEWERS_E                     65
 
+//Silversun Gym
+#define TRAINER_SILVERSUNGYM_A               66
+#define TRAINER_SILVERSUNGYM_B               67
+#define TRAINER_SILVERSUNGYM_C               68
+#define TRAINER_SILVERSUNGYM_D               69
+#define TRAINER_SILVERSUNGYM_LEADER          70
 
 
-
-#define TRAINER_CHARLIE                      66
-#define TRAINER_RICKY_2                      67
-#define TRAINER_RICKY_3                      68
-#define TRAINER_RICKY_4                      69
-#define TRAINER_RICKY_5                      70
 #define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73

@@ -2856,7 +2856,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1201
-    [DIFFICULTY_NORMAL][TRAINER_CHARLIE] =
+    [DIFFICULTY_NORMAL][TRAINER_SILVERSUNGYM_A] =
     {
 #line 1202
         .trainerName = _("CHARLIE"),
@@ -2888,7 +2888,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1214
-    [DIFFICULTY_NORMAL][TRAINER_RICKY_2] =
+    [DIFFICULTY_NORMAL][TRAINER_SILVERSUNGYM_B] =
     {
 #line 1215
         .trainerName = _("RICKY"),
@@ -2927,7 +2927,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1231
-    [DIFFICULTY_NORMAL][TRAINER_RICKY_3] =
+    [DIFFICULTY_NORMAL][TRAINER_SILVERSUNGYM_C] =
     {
 #line 1232
         .trainerName = _("RICKY"),
@@ -2966,7 +2966,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1248
-    [DIFFICULTY_NORMAL][TRAINER_RICKY_4] =
+    [DIFFICULTY_NORMAL][TRAINER_SILVERSUNGYM_D] =
     {
 #line 1249
         .trainerName = _("RICKY"),
@@ -3005,7 +3005,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1265
-    [DIFFICULTY_NORMAL][TRAINER_RICKY_5] =
+    [DIFFICULTY_NORMAL][TRAINER_SILVERSUNGYM_LEADER] =
     {
 #line 1266
         .trainerName = _("RICKY"),

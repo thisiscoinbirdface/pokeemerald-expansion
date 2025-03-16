@@ -6,7 +6,7 @@ AbandonedShip_Corridors_1F_EventScript_Youngster::
 	end
 
 AbandonedShip_Corridors_1F_EventScript_Charlie::
-	trainerbattle_single TRAINER_CHARLIE, AbandonedShip_Corridors_1F_Text_CharlieIntro, AbandonedShip_Corridors_1F_Text_CharlieDefeat
+	trainerbattle_single TRAINER_NONE, AbandonedShip_Corridors_1F_Text_CharlieIntro, AbandonedShip_Corridors_1F_Text_CharlieDefeat
 	msgbox AbandonedShip_Corridors_1F_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
 	end
 
