@@ -4894,10 +4894,10 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY_HOUSES",
       "name": "SilversunCity_Houses_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SilversunCity_Houses/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity_Houses/map.bin"
     },
