@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 29,
+      "x": 30,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -155,6 +155,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 29,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "16"
     }
   ],
   "coord_events": [

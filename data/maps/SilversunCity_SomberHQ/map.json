@@ -17,7 +17,132 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 51,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 2,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 23,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 54,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 45,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 3,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 3,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 32,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 32,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 42,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 38,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "13"
+    },
+    {
+      "x": 13,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 22,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 57,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_THEATER",
+      "dest_warp_id": "7"
+    }
   ],
   "coord_events": [
 

@@ -4944,8 +4944,8 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY_SOMBER_HQ",
       "name": "SilversunCity_SomberHQ_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 80,
+      "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sewers",
       "border_filepath": "data/layouts/SilversunCity_SomberHQ/border.bin",
