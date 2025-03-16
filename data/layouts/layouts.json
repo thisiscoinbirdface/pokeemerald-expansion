@@ -4954,10 +4954,10 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY_GYM",
       "name": "SilversunCityGym_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 22,
+      "height": 24,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattlePike",
+      "secondary_tileset": "gTileset_BattleFrontierRankingHall",
       "border_filepath": "data/layouts/SilversunCityGym/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCityGym/map.bin"
     }
