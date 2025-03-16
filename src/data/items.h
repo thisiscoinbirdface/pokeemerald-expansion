@@ -12536,14 +12536,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_EonTicket,
     },
 
-    [ITEM_MYSTIC_TICKET] =
+    [ITEM_BACKSTAGE_PASS] =
     {
-        .name = _("Mystic Ticket"),
+        .name = _("Backstage Pass"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A ticket required\n"
-            "to board the ship\n"
-            "to Navel Rock."),
+            "A backstage pass\n"
+            "to the Silversun\n"
+            "Theater."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

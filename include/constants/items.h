@@ -877,12 +877,12 @@
 #define ITEM_TEACHY_TV 726
 
 // Story Key Items
-#define ITEM_SS_TICKET 727
+#define ITEM_SS_TICKET 727  
 #define ITEM_EON_TICKET 728
-#define ITEM_MYSTIC_TICKET 729
+#define ITEM_BACKSTAGE_PASS 729          //I AM USING (backstage theater pass) (ITEM_MYSTIC_TICKET)
 #define ITEM_AURORA_TICKET 730
 #define ITEM_OLD_SEA_MAP 731
-#define ITEM_APPOINTMENT_LETTER 732
+#define ITEM_APPOINTMENT_LETTER 732     //I AM USING (this is for ceram gym)
 #define ITEM_DEVON_PARTS 733
 #define ITEM_DEVON_GOODS ITEM_DEVON_PARTS // Pre-Gen VI name
 #define ITEM_GO_GOGGLES 734

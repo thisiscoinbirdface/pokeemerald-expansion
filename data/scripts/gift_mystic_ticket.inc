@@ -5,14 +5,14 @@ MysteryGiftScript_MysticTicket::
 	vgoto_if_set FLAG_RECEIVED_MYSTIC_TICKET, MysticTicket_Obtained
 	vgoto_if_set FLAG_CAUGHT_LUGIA, MysticTicket_Obtained
 	vgoto_if_set FLAG_CAUGHT_HO_OH, MysticTicket_Obtained
-	checkitem ITEM_MYSTIC_TICKET
+	checkitem ITEM_BACKSTAGE_PASS
 	vgoto_if_eq VAR_RESULT, TRUE, MysticTicket_Obtained
 	vmessage sText_MysticTicketForYou
 	waitmessage
 	waitbuttonpress
-	checkitemspace ITEM_MYSTIC_TICKET
+	checkitemspace ITEM_BACKSTAGE_PASS
 	vgoto_if_eq VAR_RESULT, FALSE, MysticTicket_NoBagSpace
-	giveitem ITEM_MYSTIC_TICKET
+	giveitem ITEM_BACKSTAGE_PASS
 	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
 	setflag FLAG_RECEIVED_MYSTIC_TICKET
 	vmessage sText_MysticTicketUseAtPort

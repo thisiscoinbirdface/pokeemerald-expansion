@@ -135,7 +135,7 @@ LilycoveCity_Harbor_EventScript_GetOldSeaMapState::
 LilycoveCity_Harbor_EventScript_GetMysticTicketState::
 	setvar VAR_TEMP_9, 0
 	goto_if_unset FLAG_ENABLE_SHIP_NAVEL_ROCK, Common_EventScript_NopReturn
-	checkitem ITEM_MYSTIC_TICKET
+	checkitem ITEM_BACKSTAGE_PASS
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
 	setvar VAR_TEMP_9, 1
 	goto_if_set FLAG_SHOWN_MYSTIC_TICKET, Common_EventScript_NopReturn
