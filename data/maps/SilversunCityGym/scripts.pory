@@ -1,0 +1,47 @@
+mapscripts SilversunCityGym_MapScripts{}
+
+
+
+
+
+
+//Get backstage pass - the gym leader is out so come back later setup
+
+
+
+
+
+
+
+
+
+//Trainers
+script SilversunCityGym_TrainerA {
+    trainerbattle_single(TRAINER_SILVERSUNGYM_A, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+script SilversunCityGym_TrainerB {
+    trainerbattle_single(TRAINER_SILVERSUNGYM_B, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+script SilversunCityGym_TrainerC {
+    trainerbattle_single(TRAINER_SILVERSUNGYM_C, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+script SilversunCityGym_TrainerD {
+    trainerbattle_single(TRAINER_SILVERSUNGYM_D, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+
