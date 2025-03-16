@@ -16,15 +16,15 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 7,
-      "y": 13,
+      "x": 9,
+      "y": 16,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC5",
       "flag": "0"
     },
     {
@@ -37,20 +37,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC2",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 3,
-      "y": 12,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC3",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC4",
       "flag": "0"
     },
     {
@@ -76,12 +76,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC7",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 30,
+      "x": 29,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -89,8 +89,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "SilversunCity_Theater_EventScript_SomberBlocker",
+      "flag": "FLAG_SILVERSUN_SOMBERHQ_ENTRANCE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
@@ -102,12 +102,12 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC6",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GLACIA",
-      "x": 8,
+      "x": 7,
       "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SilversunCity_Theater_NPC1",
       "flag": "0"
     }
   ],

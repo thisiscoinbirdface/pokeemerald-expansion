@@ -13,9 +13,12 @@ script SilversunCity_Theater_Leader{
     faceplayer
 
     //Move player and leader
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *5, face_right))
+    fadescreen(FADE_TO_BLACK)
+    setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(8, moves(face_left))
     waitmovement(0)
-
+    fadescreen(FADE_FROM_BLACK)
     //Talk
     msgbox(format("GLORIA: Now, {PLAYER}, enthrall me with your danse macabre!"))
     release
@@ -24,6 +27,154 @@ script SilversunCity_Theater_Leader{
     releaseall
     end
 
+}
+
+
+
+
+
+
+
+
+//BLOCKERS
+script SilversunCity_Theater_EventScript_SomberBlocker{
+    lockall
+    faceplayer
+    msgbox(format("GABRIELLE: Hey, nobody's allowed back here. Scram!\p...oh, it's you. I can guess what you're here for.\p...\p...\pGo on, get inside then. I won't stop you. With this, we're square, hear me?\pOh, I'm going to get into trouble...but I always pay back my debts!\pI really hope the grunts inside kick you right back out!"))
+
+    setflag(FLAG_SILVERSUN_SOMBERHQ_ENTRANCE)
+
+    applymovement(6, moves(walk_up))
+    waitmovement(0)
+    removeobject(6)
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+//NPCs
+//Old man 1st row
+script SilversunCity_Theater_NPC1{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    } else {
+        msgbox(format("GLORIA is the face of SILVERSUN CITY! A Gym Leader AND a famous actress? She's really a role model for women."))
+    }
+    releaseall
+    end
+}
+//old woman 1st row
+script SilversunCity_Theater_NPC2{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("Incredible! Her SEVIPER and ABSOL! Such a shame they lost, and to such a...nondescript opponent."))
+    } else {
+        msgbox(format("They say GLORIA caught her SEVIPER and ABSOL while shooting on set in the HOENN region."))
+    }
+    releaseall
+    end
+}
+//girl breeder left
+script SilversunCity_Theater_NPC3{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("What a show!"))
+    } else {
+        msgbox(format("I wish {PKMN} were allowed in. I would've brought my SPRIGATITO along to watch."))
+    }
+    releaseall
+    end
+}
+//girl red right
+script SilversunCity_Theater_NPC4{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("Did you see GLORIA's SEVIPER! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."))
+    } else {
+        msgbox(format("I'm a huuuge GLORIA fan! I've been waiting for this show for months!"))
+    }
+    releaseall
+    end
+}
+//dude in the back
+script SilversunCity_Theater_NPC5{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        if (flag(FLAG_SILVERSUN_THEATER_LENS)){
+            msgbox(format("Even with my ZOOM LENS I couldn't see well...what a bummer!"))
+        } else {
+            msgbox(format("Even with my ZOOM LENS I couldn't see well...what a bummer! Why don't you take them? I'm going to get a new pair anyway."))
+            setflag(FLAG_SILVERSUN_THEATER_LENS)
+            giveitem(ITEM_ZOOM_LENS)
+        }
+    } else {
+        if (flag(FLAG_SILVERSUN_THEATER_LENS)){
+            msgbox(format("Ahh, now let's settle in and watch the show."))
+        }
+        msgbox(format("Are you going to watch the show from all the way back here too?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+           msgbox(format("Then these should help. I've got an extra pair."))            
+            setflag(FLAG_SILVERSUN_THEATER_LENS)
+            giveitem(ITEM_ZOOM_LENS)
+           msgbox(format("You can use it outside of the theater too! Any {PKMN} holding it will have their accuracy increased."))             
+        }
+
+    }
+    releaseall
+    end
+}
+
+
+//backstage actress
+script SilversunCity_Theater_NPC6{
+    lockall
+    faceplayer
+    if (flag(FLAG_SILVERSUN_THEATER_LENS)){
+        msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role!"))
+    } else {
+        msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+         msgbox(format("Ooh! Are you going to go on-stage next to GLORIA?"), MSGBOX_YESNO)           
+            if (var (VAR_RESULT) == 1){
+                msgbox(format("Oh my god! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
+                if (var(VAR_RESULT) == 1){
+                    msgbox(format("...Thank you! Please take this. A little something to remember me by!"))
+                    giveitem(ITEM_SILK_SCARF)
+                    setflag(FLAG_SILVERSUN_THEATER_LENS)
+                }
+            } else {
+                msgbox(format("So you're an extra too? Sigh...when will we get our big break?"))
+            }
+        } else {
+            msgbox(format("Oh, so you're part of the crew. I'm an extra, so we're both playing support roles."))
+        }
+    }
+    releaseall
+    end
+}
+//backstage actor
+script SilversunCity_Theater_NPC7{
+    lockall
+    faceplayer
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("You must have nerves of steel, doing all that in front of a crowd that size!"))
+    } else {
+        msgbox(format("...breathe...breathe...I'm calming my nerves. Even after years of training, I get nervous before going on-stage."))
+    }
+    releaseall
+    end
 }
 
 

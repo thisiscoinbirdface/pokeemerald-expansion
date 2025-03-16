@@ -138,9 +138,9 @@
 #define FLAG_VILETHORN_NPC_ITEM  0x28C // ?
 #define FLAG_VILETHORN_NPC_MUSHROOMS  0x28D // chef hunting for mushrooms in vilethorn
 #define FLAG_SILVERSUN_THEATER_MANIAC  0x28E // maniac in love with gloria at the theater challenges you 
-#define FLAG_UNUSED_0x28F  0x28F // Unused Flag
-#define FLAG_UNUSED_0x290  0x290 // Unused Flag
-#define FLAG_UNUSED_0x291  0x291 // Unused Flag
+#define FLAG_SILVERSUN_THEATER_LENS  0x28F // get zoom lens from the dude in the back
+#define FLAG_SILVERSUN_THEATER_SCARF  0x290 // get silk scarf from the beauty backstage
+#define FLAG_SILVERSUN_SOMBERHQ_ENTRANCE  0x291 // gabrielle is at the entrance and lets you in
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag

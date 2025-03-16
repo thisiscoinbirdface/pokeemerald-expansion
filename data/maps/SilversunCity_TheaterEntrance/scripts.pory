@@ -16,11 +16,13 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
         if (var(VAR_RESULT) == 1){
             if (checkitem(ITEM_BACKSTAGE_PASS)){
                 msgbox(format("...\pThis seems to be in order.\pPlease, right this way."))
-                applymovement(8, moves(walk_right face_down))
+                applymovement(7, moves(walk_right face_down))
                 setflag(FLAG_SILVERSUN_BACKSTAGEPASS_USE)
             } else {
                 msgbox(format("...\pIt doesn't seem like you do. Are you paparazzi? Sorry, I can't let you pass."))
             }
+        } else {
+            msgbox(format("Sorry, I can't let you pass."))
         }
 
     }
@@ -64,7 +66,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC1{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("The SERPERIOR was so scary!"))
     } else {
-        msgbox(format("Theater is so boring! I don't know why my parents like to sit and watch things when you could be running around instead."))
+        msgbox(format("Theater is so boring! I don't know why my parents like it."))
     }
     releaseall
     end
@@ -84,26 +86,26 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
 }
 
 //Left woman
-script SilversunCity_TheaterEntrance_EventScript_NPC3{
-    lockall
-    faceplayer
-    if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Did you see GLORIA's SERPERIOR! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."))
-    } else {
-        msgbox(format("I'm a huuuge GLORIA fan! I've been waiting for this show for months!"))
-    }
-    releaseall
-    end
-}
+// script SilversunCity_TheaterEntrance_EventScript_NPC3{
+//     lockall
+//     faceplayer
+//     if (flag(FLAG_BADGE04_GET)){
+//         msgbox(format("Did you see GLORIA's SERPERIOR! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."))
+//     } else {
+//         msgbox(format("I'm a huuuge GLORIA fan! I've been waiting for this show for months!"))
+//     }
+//     releaseall
+//     end
+// }
 
 //Blond dude
 script SilversunCity_TheaterEntrance_EventScript_NPC4{
     lockall
     faceplayer
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("I didn't learn anything about theater, but I sure as hell saw a fiesty battle! Well done - you knocked all these snobs right off their feet!"))
-   } else {
-        msgbox(format("My girl told me I'm not classy enough for her friends...so here I am, educatin' myself. I love 'er, y'know?"))
+        msgbox(format("I didn't learn anything about theater, but I sure as hell saw a good battle! You knocked all these snobs right off their feet!"))
+    } else {
+        msgbox(format("My girl told me I'm not classy enough for her friends...so here I am, educatin' myself. I love her, y'know?"))
     }
     releaseall
     end
@@ -137,23 +139,24 @@ script SilversunCity_TheaterEntrance_EventScript_NPC6{
 script SilversunCity_TheaterEntrance_EventScript_NPC7{
     lockall
     faceplayer
-//    if (flag(FLAG_BADGE04_GET)){
+    if (flag(FLAG_BADGE04_GET)){
         if (flag(FLAG_SILVERSUN_THEATER_MANIAC)){
+            msgbox(format("Obsession isn't healthy. It can be hard to get out of the loop, but I've got to!"))
+        } else {
             msgbox(format("Argh! I'm so upset! I can't forgive that trainer who made my GLORIA look bad on stage...wait, it's you?\pJustice will be served!"))
             //Battle
             trainerbattle_no_intro(TRAINER_THEATER_B, format("My love for GLORIA wasn't enough..."))
             release
             msgbox(format("Sigh...I didn't want to admit it but I know. GLORIA is only human after all. She's allowed to lose a battle. I need to stop idolising her and think of her as another human being."))
-            setflag(FLAG_SILVERSUN_THEATER_MANIAC)
-        } else {
-            msgbox(format("Obsession isn't healthy. But it's a vicious trap."))
+            setflag(FLAG_SILVERSUN_THEATER_MANIAC)            
         }
-    // } else {
-    //     msgbox(format("Just look at those salivating paparazzi over there! Nobody should be salivating over GLORIA but me!"))
-    // }
+    } else {
+        msgbox(format("Just look at those salivating paparazzi over there! Nobody should be salivating over GLORIA but me!"))
+    }
     releaseall
     end
 }
+
 //Old man
 script SilversunCity_TheaterEntrance_EventScript_NPC8{
     lockall
