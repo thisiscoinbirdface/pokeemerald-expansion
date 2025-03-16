@@ -124,7 +124,7 @@ SilversunCity_Sewers_Market_A::
 # 116 "data//maps/SilversunCity_Sewers/scripts.pory"
 	pokemart SilversunCity_Sewers_Market_A_Inventory
 # 117 "data//maps/SilversunCity_Sewers/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox SilversunCity_Sewers_Market_A_Text_1, MSGBOX_DEFAULT
 # 118 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 	end
@@ -155,3 +155,7 @@ SilversunCity_Sewers_Market_A_Text_0:
 # 114 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Psst! Hey, you! Check out these goods\n"
 	.string "I've got!$"
+
+SilversunCity_Sewers_Market_A_Text_1:
+# 117 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Then scram!$"
