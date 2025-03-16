@@ -240,6 +240,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "6"
+    },
+    {
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

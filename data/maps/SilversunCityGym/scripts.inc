@@ -8,54 +8,68 @@ SilversunCityGym_EventScript_BackstagePass::
 # 11 "data//maps/SilversunCityGym/scripts.pory"
 	faceplayer
 # 12 "data//maps/SilversunCityGym/scripts.pory"
-	msgbox SilversunCityGym_EventScript_BackstagePass_Text_0
-# 13 "data//maps/SilversunCityGym/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_BACKSTAGEPASS_GET, SilversunCityGym_EventScript_BackstagePass_2
+# 15 "data//maps/SilversunCityGym/scripts.pory"
+	msgbox SilversunCityGym_EventScript_BackstagePass_Text_1
+# 16 "data//maps/SilversunCityGym/scripts.pory"
+	setflag FLAG_SILVERSUN_BACKSTAGEPASS_GET
+SilversunCityGym_EventScript_BackstagePass_1:
+# 19 "data//maps/SilversunCityGym/scripts.pory"
 	releaseall
 	return
 
+SilversunCityGym_EventScript_BackstagePass_2:
+# 13 "data//maps/SilversunCityGym/scripts.pory"
+	msgbox SilversunCityGym_EventScript_BackstagePass_Text_0
+	goto SilversunCityGym_EventScript_BackstagePass_1
+
 
 SilversunCityGym_TrainerA::
-# 25 "data//maps/SilversunCityGym/scripts.pory"
+# 31 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_A, SilversunCityGym_TrainerA_Text_0, SilversunCityGym_TrainerA_Text_0
-# 26 "data//maps/SilversunCityGym/scripts.pory"
+# 32 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerA_Text_0
-# 27 "data//maps/SilversunCityGym/scripts.pory"
+# 33 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerB::
-# 32 "data//maps/SilversunCityGym/scripts.pory"
+# 38 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_B, SilversunCityGym_TrainerA_Text_0, SilversunCityGym_TrainerA_Text_0
-# 33 "data//maps/SilversunCityGym/scripts.pory"
+# 39 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerA_Text_0
-# 34 "data//maps/SilversunCityGym/scripts.pory"
+# 40 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerC::
-# 39 "data//maps/SilversunCityGym/scripts.pory"
+# 45 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_C, SilversunCityGym_TrainerA_Text_0, SilversunCityGym_TrainerA_Text_0
-# 40 "data//maps/SilversunCityGym/scripts.pory"
+# 46 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerA_Text_0
-# 41 "data//maps/SilversunCityGym/scripts.pory"
+# 47 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerD::
-# 46 "data//maps/SilversunCityGym/scripts.pory"
+# 52 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_D, SilversunCityGym_TrainerA_Text_0, SilversunCityGym_TrainerA_Text_0
-# 47 "data//maps/SilversunCityGym/scripts.pory"
+# 53 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerA_Text_0
-# 48 "data//maps/SilversunCityGym/scripts.pory"
+# 54 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_EventScript_BackstagePass_Text_0:
-# 12 "data//maps/SilversunCityGym/scripts.pory"
+# 13 "data//maps/SilversunCityGym/scripts.pory"
+	.string "Hope you enjoy the show!$"
+
+SilversunCityGym_EventScript_BackstagePass_Text_1:
+# 15 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Congratulations! The other actors and\n"
 	.string "actresses have approved your skills.\l"
 	.string "Unfortunately the Gym Leader is\l"
@@ -65,5 +79,5 @@ SilversunCityGym_EventScript_BackstagePass_Text_0:
 	.string "this BACKSTAGE PASS to tonight's show.$"
 
 SilversunCityGym_TrainerA_Text_0:
-# 25 "data//maps/SilversunCityGym/scripts.pory"
+# 31 "data//maps/SilversunCityGym/scripts.pory"
 	.string "$"
