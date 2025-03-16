@@ -75,7 +75,7 @@ SilversunCity_NPC2::
 # 73 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
 # 74 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC1_Text_0
+	msgbox SilversunCity_NPC2_Text_0
 # 75 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
@@ -87,7 +87,7 @@ SilversunCity_NPC3::
 # 80 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
 # 81 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC1_Text_0
+	msgbox SilversunCity_NPC3_Text_0
 # 82 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
@@ -111,7 +111,7 @@ SilversunCity_NPC5::
 # 94 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
 # 95 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC1_Text_0
+	msgbox SilversunCity_NPC5_Text_0
 # 96 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
@@ -182,3 +182,21 @@ SilversunCity_NPC1_Text_0:
 	.string "GLORIA is graceful even in defeat. Now\n"
 	.string "that's something everyone can learn\l"
 	.string "from.$"
+
+SilversunCity_NPC2_Text_0:
+# 74 "data//maps/SilversunCity/scripts.pory"
+	.string "I hear the theater has connections\n"
+	.string "with the underground. People have seen\l"
+	.string "criminal types walk in and out of the\l"
+	.string "backstage area.$"
+
+SilversunCity_NPC3_Text_0:
+# 81 "data//maps/SilversunCity/scripts.pory"
+	.string "I'm so sad I couldn't get tickets for\n"
+	.string "tonights show! It's supposed to be a\l"
+	.string "live performance of some sort.$"
+
+SilversunCity_NPC5_Text_0:
+# 95 "data//maps/SilversunCity/scripts.pory"
+	.string "The sewers really stink up this part of\n"
+	.string "town. That's why nobody lives here.$"

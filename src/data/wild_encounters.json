@@ -12628,12 +12628,32 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_QWILFISH_HISUI"
+                "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 22,
                 "max_level": 25,
                 "species": "SPECIES_GRIMER_ALOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_QWILFISH_HISUI"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_GRIMER_ALOLA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_QWILFISH_HISUI"
               },
               {
                 "min_level": 22,
@@ -12643,27 +12663,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_QWILFISH_HISUI"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_GRIMER_ALOLA"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SKRELP"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SKRELP"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SKRELP"
+                "species": "SPECIES_KOFFING"
               },
               {
                 "min_level": 22,
