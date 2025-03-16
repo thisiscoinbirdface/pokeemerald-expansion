@@ -1,4 +1,4 @@
-mapscripts SilversunCiy_Theater_MapScripts{}
+mapscripts SilversunCity_Theater_MapScripts{}
 
 
 
@@ -10,13 +10,21 @@ mapscripts SilversunCiy_Theater_MapScripts{}
 //LEADER
 script SilversunCity_Theater_Leader{
     lockall
+    faceplayer
 
     //Move player and leader
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *5, face_right))
     waitmovement(0)
 
     //Talk
-    msgbox(format("GLORIA: Show me your danse macabre!"))
+    msgbox(format("GLORIA: Now, {PLAYER}, enthrall me with your danse macabre!"))
+    release
+
+
+    releaseall
+    end
 
 }
+
+
 

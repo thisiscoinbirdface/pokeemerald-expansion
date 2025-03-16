@@ -93,7 +93,8 @@
     "SilversunCity_TheaterEntrance",
     "SilversunCity_PokemonCenter",
     "SilversunCity_Sewers",
-    "SilversunCity_SomberHQ"
+    "SilversunCity_SomberHQ",
+    "SilversunCityGym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
