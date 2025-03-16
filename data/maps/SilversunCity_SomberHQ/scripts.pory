@@ -1,0 +1,28 @@
+mapscripts SilversunCity_SomberHQ_MapScripts{}
+
+
+
+
+
+
+
+//MAIN ENCOUNTER
+script SilversunCity_SomberHQ_EventScript_Main_Trigger0{
+    if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)) {end}
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right *2))
+    call(SilversunCity_SomberHQ_EventScript_Main)
+}
+script SilversunCity_SomberHQ_EventScript_Main_Trigger1{
+    if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)) {end}
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *2))
+    call(SilversunCity_SomberHQ_EventScript_Main)
+}
+
+
+script SilversunCity_SomberHQ_EventScript_Main{
+
+
+
+}
