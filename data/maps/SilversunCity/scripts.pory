@@ -71,14 +71,14 @@ script SilversunCity_NPC1{
 script SilversunCity_NPC2{
     lockall
     faceplayer
-    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    msgbox(format("I hear the theater has connections with the underground. People have seen criminal types walk in and out of the backstage area."))
     releaseall
     end
 }
 script SilversunCity_NPC3{
     lockall
     faceplayer
-    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))
     releaseall
     end
 }
@@ -92,7 +92,7 @@ script SilversunCity_NPC4{
 script SilversunCity_NPC5{
     lockall
     faceplayer
-    msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
+    msgbox(format("The sewers really stink up this part of town. That's why nobody lives here."))
     releaseall
     end
 }

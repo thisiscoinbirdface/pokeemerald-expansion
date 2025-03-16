@@ -142,6 +142,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_THEATER",
       "dest_warp_id": "7"
+    },
+    {
+      "x": 43,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_SEWERS",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
