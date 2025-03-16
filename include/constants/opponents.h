@@ -109,9 +109,10 @@
 #define TRAINER_SILVERSUNGYM_D               69
 #define TRAINER_SILVERSUNGYM_LEADER          70
 
+//Two battles in the theater (one beauty and one maniac)
+#define TRAINER_THEATER_A                    71
+#define TRAINER_THEATER_B                    72
 
-#define TRAINER_RANDALL                      71
-#define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
 #define TRAINER_BERKE                        74
 #define TRAINER_BRAXTON                      75

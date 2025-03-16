@@ -12,7 +12,7 @@ script SilversunCityGym_EventScript_BackstagePass{
     if (flag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)){
         msgbox(format("Hope you enjoy the show!"))
     } else {
-        msgbox(format("Congratulations! The other actors and actresses have approved your skills. Unfortunately the Gym Leader is performing at the Silversun Theater tonight, so the Gym Challenge is on hold. As compensation, please accept this BACKSTAGE PASS to tonight's show."))
+        msgbox(format("Congratulations! The other actors and actresses have approved of your skills. Unfortunately the Gym Leader is performing at the Silversun Theater tonight, so the Gym Challenge is on hold. As compensation, please accept this BACKSTAGE PASS to tonight's show."))
         release
         setflag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)
         giveitem(ITEM_BACKSTAGE_PASS)

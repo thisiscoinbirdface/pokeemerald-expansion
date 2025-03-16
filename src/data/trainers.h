@@ -3044,7 +3044,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1282
-    [DIFFICULTY_NORMAL][TRAINER_RANDALL] =
+    [DIFFICULTY_NORMAL][TRAINER_THEATER_A] =
     {
 #line 1283
         .trainerName = _("RANDALL"),
@@ -3084,7 +3084,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1299
-    [DIFFICULTY_NORMAL][TRAINER_PARKER] =
+    [DIFFICULTY_NORMAL][TRAINER_THEATER_B] =
     {
 #line 1300
         .trainerName = _("PARKER"),
@@ -3111,7 +3111,7 @@ F_TRAINER_FEMALE |
 #line 1311
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 1310
-            .lvl = 26,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

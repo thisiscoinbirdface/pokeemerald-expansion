@@ -1279,7 +1279,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Tail Whip
 - Surf
 
-=== TRAINER_RANDALL ===
+=== TRAINER_THEATER_A ===
 Name: RANDALL
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1296,7 +1296,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Agility
 - Wing Attack
 
-=== TRAINER_PARKER ===
+=== TRAINER_THEATER_B ===
 Name: PARKER
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1307,7 +1307,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Spinda
-Level: 26
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Teeter Dance
 - Dizzy Punch
