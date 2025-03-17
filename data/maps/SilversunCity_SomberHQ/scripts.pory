@@ -165,6 +165,8 @@ script SilversunCity_SomberHQ_EventScript_Main{
     msgbox(format("TENEBRIS: You saved me. You are an impressive trainer. I made the right choice in selecting you.\p...\pTENEBRIS: There are detectives outside? Let's go and meet them."))
     release
 
+    //TEMP
+    clearflag(FLAG_HIDE_SILVERSUN_PROF)
 
     //exit
     warp(MAP_SILVERSUN_CITY, 24, 6)

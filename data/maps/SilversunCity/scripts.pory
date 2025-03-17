@@ -1,28 +1,23 @@
 raw`
-    .set LOCALID_DET1, 8
-    .set LOCALID_DET2, 7
-    .set LICALID_PROF, 9
-    .set LOCALID_KOHLA, 10
+    .set LOCALID_DET1, 7
+    .set LOCALID_DET2, 6
+    .set LICALID_PROF, 8
+    .set LOCALID_KOHLA, 9
 `
 
 mapscripts SilversunCity_MapScripts{
-    MAP_SCRIPT_ON_TRANSITION {
-        call(SilversunCity_OnFrame)
-    }
+    MAP_SCRIPT_ON_FRAME[
+        VAR_TEMP_0, 0: SilversunCity_OnFrame
+    ]
 }
 
 
-
-script SilversunCity_OnTransition{
+script SilversunCity_OnFrame{
     if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)){
         if (flag(FLAG_SILVERSUN_NEXTQUEST)){
             //nothing
         } else {
             //do the stuff
-                //Move the prof
-                setobjectxyperm(LOCALID_PROF, 25, 6)
-                setobjectxy(LOCALID_PROF, 25, 6)
-
                 //Dialogue
                 applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
                 applymovement(LOCALID_DET2, moves(emote_exclamation_mark))
@@ -33,8 +28,20 @@ script SilversunCity_OnTransition{
 
 
 
+
+            fadescree(FADE_TO_BLACK)
+            removeobject(LOCALID_DET1)
+            removeobject(LOCALID_DET2)
+            removeobject(LOCALID_PROF)
+            fadescreen(FADE_FROM_BLACK)
+
             //Set flag
+            setflag(FLAG_HIDE_SILVERSUN_PROF)
             setflag(FLAG_SILVERSUN_NEXTQUEST)
+
+            //End
+            releaseall
+            end
         }
     }
 }
@@ -73,12 +80,6 @@ script SilversunCity_EventScript_Detectives{
         delay(30)
         msgbox(format("DETECTIVE: This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRUE has given us a separate lead that KOHLA is following up on, so you're on your own on this one.\pGood luck."))
         release
-        
-        //remove objects
-        fadescreen(FADE_TO_BLACK)
-        removeobject(LOCALID_DET1)
-        removeobject(LOCALID_DET2)
-        fadescreen(FADE_FROM_BLACK)
 
         //setvars and quest
         setflag(FLAG_SILVERSUN_DETECTIVES_ENTER)    

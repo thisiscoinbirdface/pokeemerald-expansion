@@ -83,7 +83,7 @@
 #define FLAG_SILVERSUN_SOMBERHQ_ENTRANCE    0x44 // gabrielle is at the entrance and lets you in
 #define FLAG_SILVERSUN_SOMBERHQ_MAIN    0x45 // the main somber HQ encounter
 #define FLAG_SILVERSUN_NEXTQUEST    0x46 // set the next quest
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
+#define FLAG_HIDE_SILVERSUN_PROF    0x47 // hide the prof in the overworld until the HQ is cleared.
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
