@@ -99,7 +99,7 @@ SilversunCity_NPC4::
 # 87 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
 # 88 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC1_Text_0
+	msgbox SilversunCity_NPC4_Text_0
 # 89 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
@@ -179,9 +179,9 @@ SilversunCity_EventScript_Detectives_Text_3:
 
 SilversunCity_NPC1_Text_0:
 # 67 "data//maps/SilversunCity/scripts.pory"
-	.string "GLORIA is graceful even in defeat. Now\n"
-	.string "that's something everyone can learn\l"
-	.string "from.$"
+	.string "GLORIA, the city's Gym Leader is also a\n"
+	.string "famous actress! Her work centers\l"
+	.string "around the dark and eerie.$"
 
 SilversunCity_NPC2_Text_0:
 # 74 "data//maps/SilversunCity/scripts.pory"
@@ -196,7 +196,14 @@ SilversunCity_NPC3_Text_0:
 	.string "tonights show! It's supposed to be a\l"
 	.string "live performance of some sort.$"
 
+SilversunCity_NPC4_Text_0:
+# 88 "data//maps/SilversunCity/scripts.pory"
+	.string "We keep seeing wild KOFFING and TOXEL\n"
+	.string "around...they come from the sewers, I\l"
+	.string "bet. Their poison is why there are no\l"
+	.string "flowers near the sewers.$"
+
 SilversunCity_NPC5_Text_0:
 # 95 "data//maps/SilversunCity/scripts.pory"
 	.string "The sewers really stink up this part of\n"
-	.string "town. That's why nobody lives here.$"
+	.string "town!$"

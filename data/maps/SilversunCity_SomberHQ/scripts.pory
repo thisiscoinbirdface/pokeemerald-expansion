@@ -1,3 +1,10 @@
+raw`
+    .set LOCALID_PROF, 1
+    .set LOCALID_MELEA, 2
+    .set LOCALID_GAB, 3
+    .set LOCALID_GRUNT, 4
+`
+
 mapscripts SilversunCity_SomberHQ_MapScripts{}
 
 
