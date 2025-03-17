@@ -4975,7 +4975,7 @@
       "id": "LAYOUT_ROUTE6TRANSITION",
       "name": "Route6Transition_Layout",
       "width": 34,
-      "height": 30,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route6Transition/border.bin",
