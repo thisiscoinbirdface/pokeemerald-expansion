@@ -34,6 +34,8 @@ Route6_Transition_KohlaBattle_Trigger::
 
 
 Route6_Transition_EventScript_KohlaBattle::
+# 31 "data//maps/Route6Transition/scripts.pory"
+	giveitem ITEM_MACH_BIKE
 # 32 "data//maps/Route6Transition/scripts.pory"
 	setflag FLAG_ROUTE6_KOHLA_BATTLE
 # 33 "data//maps/Route6Transition/scripts.pory"

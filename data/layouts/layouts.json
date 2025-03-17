@@ -4965,7 +4965,7 @@
       "id": "LAYOUT_ROUTE6",
       "name": "Route6_Layout",
       "width": 60,
-      "height": 90,
+      "height": 120,
       "primary_tileset": "gTileset_Swamp",
       "secondary_tileset": "gTileset_Swampforest",
       "border_filepath": "data/layouts/Route6/border.bin",
