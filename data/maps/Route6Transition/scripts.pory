@@ -2,10 +2,14 @@ mapscripts Route6Transition_MapScripts{}
 
 
 script Route6_Transition_Weather_StormTrigger{
-    if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
-    
-    setweather(WEATHER_RAIN_THUNDERSTORM)
-    doweather
+    if (flag(FLAG_ROUTE6_KOHLA_BATTLE)){
+        end
+    } else {
+        setweather(WEATHER_RAIN_THUNDERSTORM)
+        doweather
+        releaseall
+        end
+    }
 }
 
 script Route6_Transition_KohlaBattle_Trigger{
