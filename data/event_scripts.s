@@ -1258,3 +1258,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SilversunCity_SomberHQ/scripts.inc"
 
 	.include "data/maps/SilversunCityGym/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"

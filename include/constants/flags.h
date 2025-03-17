@@ -84,7 +84,7 @@
 #define FLAG_SILVERSUN_SOMBERHQ_MAIN    0x45 // the main somber HQ encounter
 #define FLAG_SILVERSUN_NEXTQUEST    0x46 // set the next quest
 #define FLAG_HIDE_SILVERSUN_PROF    0x47 // hide the prof in the overworld until the HQ is cleared.
-#define FLAG_SILVERSUN_KOHLA_BATTLE    0x48 // after everything, battle kohla
+#define FLAG_ROUTE6_KOHLA_BATTLE    0x48 // after everything, battle kohla as you enter route 6
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
@@ -140,7 +140,7 @@
 #define FLAG_SILVERSUN_THEATER_MANIAC  0x28E // maniac in love with gloria at the theater challenges you 
 #define FLAG_SILVERSUN_THEATER_LENS  0x28F // get zoom lens from the dude in the back
 #define FLAG_SILVERSUN_THEATER_SCARF  0x290 // get silk scarf from the beauty backstage
-#define FLAG_UNUSED_0x291  0x291 // artist wants black sludge
+#define FLAG_SILVERSUN_ANTIDOTE  0x291 // antidote because someone's pokemon got poisoned
 #define FLAG_UNUSED_0x292  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag

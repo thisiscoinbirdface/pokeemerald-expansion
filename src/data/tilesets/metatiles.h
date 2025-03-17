@@ -210,3 +210,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_Sewers[] = INCBIN_U16("data/tilesets/secondary/sewers/metatiles.bin");
 const u16 gMetatileAttributes_Sewers[] = INCBIN_U16("data/tilesets/secondary/sewers/metatile_attributes.bin");
+
+const u16 gMetatiles_Swamp[] = INCBIN_U16("data/tilesets/primary/swamp/metatiles.bin");
+const u16 gMetatileAttributes_Swamp[] = INCBIN_U16("data/tilesets/primary/swamp/metatile_attributes.bin");

@@ -98,63 +98,6 @@ script SilversunCity_EventScript_Detectives{
 
 
 
-//POST-MAIN KOHLA BATTLE
-script SilversunCity_KohlaBattleTrigger0{
-    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
-    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
-        lockall
-        msgbox(format("KOHLA: Wait right there!"))
-        release
-        setobjectxy(LOCALID_KOHLA, 11, 30)
-        call(SilversunCity_EventScript_KohlaBattle)       
-    } else {end}
-}
-script SilversunCity_KohlaBattleTrigger1{
-    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
-    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
-        lockall
-        msgbox(format("KOHLA: Wait right there!"))
-        release
-        setobjectxy(LOCALID_KOHLA, 12, 30)
-        call(SilversunCity_EventScript_KohlaBattle)       
-    } else {end}
-}
-script SilversunCity_KohlaBattleTrigger2{
-    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
-    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
-        lockall
-        msgbox(format("KOHLA: Wait right there!"))
-        release
-        setobjectxy(LOCALID_KOHLA, 13, 30)
-        call(SilversunCity_EventScript_KohlaBattle)       
-    } else {end}
-}
-script SilversunCity_KohlaBattleTrigger3{
-    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
-    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
-        lockall
-        msgbox(format("KOHLA: Wait right there!"))
-        release
-        setobjectxy(LOCALID_KOHLA, 14, 30)
-        call(SilversunCity_EventScript_KohlaBattle)       
-    } else {end}
-}
-
-script SilversunCity_EventScript_KohlaBattle{
-    lockall
-    applymovement(LOCALID_KOHLA, moves(walk_left * 8))
-    waitmovement(0)
-
-    releaseall
-    end
-}
-
-
-
-
-
-
-
 
 
 
