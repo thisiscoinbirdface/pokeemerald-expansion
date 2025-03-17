@@ -260,9 +260,11 @@ SilversunCity_SomberHQ_EventScript_Main::
 	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_16
 # 166 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	release
-# 170 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 169 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	clearflag FLAG_HIDE_SILVERSUN_PROF
+# 172 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	warp MAP_SILVERSUN_CITY, 24, 6
-# 171 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 173 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	return
 

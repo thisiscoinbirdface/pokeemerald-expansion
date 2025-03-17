@@ -29,7 +29,7 @@ script SilversunCity_OnFrame{
 
 
 
-            fadescree(FADE_TO_BLACK)
+            fadescreen(FADE_TO_BLACK)
             removeobject(LOCALID_DET1)
             removeobject(LOCALID_DET2)
             removeobject(LOCALID_PROF)
