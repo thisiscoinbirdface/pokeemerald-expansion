@@ -96,12 +96,12 @@ VictoryRoad_1F_EventScript_RematchWally::
 	end
 
 VictoryRoad_1F_EventScript_Edgar::
-	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
+	trainerbattle_single TRAINER_NONE, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
 	msgbox VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_1F_EventScript_Albert::
-	trainerbattle_single TRAINER_ALBERT, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
+	trainerbattle_single TRAINER_NONE, VictoryRoad_1F_Text_AlbertIntro, VictoryRoad_1F_Text_AlbertDefeat
 	msgbox VictoryRoad_1F_Text_AlbertPostBattle, MSGBOX_AUTOCLOSE
 	end
 

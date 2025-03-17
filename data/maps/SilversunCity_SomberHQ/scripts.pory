@@ -29,7 +29,69 @@ script SilversunCity_SomberHQ_EventScript_Main_Trigger1{
 
 
 script SilversunCity_SomberHQ_EventScript_Main{
+    //Dialogue between prof and Melea
+    //Melea laughs at the profs attempt to hide the dreamstone in mt mirroh
+    msgbox(format("???: It's no use Professor! We already know where you hid the dreamstone. It's on MT CERAM.\pHahaha! What a pathetic attempt at hiding the dreamstone from us."))
+    release
+    msgbox(format("TENEBRIS: Fine! Go get the dreamstone you rascal! You'll just repeat what happened at MT CERAM. Without the Dreamalyser, the dreamstone will transport you back to the past. It's uncontrollable! And I will NEVER reveal the Dreamalyser blueprints to the likes of you!"))
+    release
+    msgbox(format("???: Oh Professor...tsk tsk. You underestimate us. You see, a while ago, we obtained the blueprints from your lab."))
+    release
+    msgbox(format("TENEBRIS: But how?!"))    
+    release
+    msgbox(format("???: Not to worry. Nobody at the lab was harmed. Your lab and Team Somber share a symbiotic relationship after all.")) 
+    release
+    msgbox(format("TENEBRIS: Symbiotes? You thugs are parasites!")) 
+    release
+    msgbox(format("???: Enough of this chatter. We have a guest.")) 
+    release
+    
 
 
+    //They notice you, call you over
+    msgbox(format("???: Come here child. Let me see your face."))
+    release
+    msgbox(format("???: I said COME!!"))
+    //Small shake
+    release
+    msgbox(format("???: So you're the one who defeated MOXIE at MT CERAM. So young...you must've gotten really lucky."))
+    release
+    msgbox(format("???: Meet your Professor. He's been of invaluable help to us...albeit unwillingly."))
+    release
+    msgbox(format("TENEBRIS: {PLAYER}. I recall signing your acceptance letter. I-I wish we had met under better circumstances..."))
+    release
 
+    //Prof gets introduced
+    //Who let you in? Gabrielle gets fired (the promise)
+
+    //Melea explains the plan
+        //next dreamstone in mt mirroh
+
+
+    //Battle
+    trainerbattle_no_intro(TRAINER_SOMBERHQ_MELEA, format("You stupid child!"))
+
+    //Never mind
+    //We've got what we need
+
+    //Detectives and kohla arrive
+    //Rue's leads went nowhere
+    //
 }
+
+
+
+
+
+
+
+
+
+
+
+
+//ALARM PSA TRIGGER
+
+
+
+

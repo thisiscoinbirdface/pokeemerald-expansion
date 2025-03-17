@@ -172,9 +172,10 @@ SilversunCity_EventScript_Detectives_Text_3:
 	.string "{PLAYER}, it's clear what to do. The\n"
 	.string "next task is to find Team Somber's HQ.\l"
 	.string "Explore all of SILVERSUN CITY. Don't\l"
-	.string "leave any stone unturned! We'll contact\l"
-	.string "the local police and find out whatever\l"
-	.string "we can.\p"
+	.string "leave any stone unturned! RUE has\l"
+	.string "given us a separate lead that KOHLA is\l"
+	.string "following up on, so you're on your own on\l"
+	.string "this one.\p"
 	.string "Good luck.$"
 
 SilversunCity_NPC1_Text_0:

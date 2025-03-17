@@ -1313,7 +1313,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dizzy Punch
 - Focus Punch
 
-=== TRAINER_GEORGE ===
+=== TRAINER_SOMBERHQ_A ===
 Name: GEORGE
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1330,7 +1330,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 - Shadow Ball
 
-=== TRAINER_BERKE ===
+=== TRAINER_SOMBERHQ_B ===
 Name: BERKE
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1346,7 +1346,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Energy
 - Slash
 
-=== TRAINER_BRAXTON ===
+=== TRAINER_SOMBERHQ_C ===
 Name: BRAXTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1396,7 +1396,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Team
 - Swagger
 
-=== TRAINER_VINCENT ===
+=== TRAINER_SOMBERHQ_D ===
 Name: VINCENT
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1418,7 +1418,7 @@ Sharpedo
 Level: 44
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_LEROY ===
+=== TRAINER_SOMBERHQ_E ===
 Name: LEROY
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1436,7 +1436,7 @@ Starmie
 Level: 46
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WILTON_1 ===
+=== TRAINER_SOMBERHQ_F ===
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1458,7 +1458,7 @@ Makuhita
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_EDGAR ===
+=== TRAINER_SOMBERHQ_G ===
 Name: EDGAR
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1476,7 +1476,7 @@ Pelipper
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ALBERT ===
+=== TRAINER_SOMBERHQ_H ===
 Name: ALBERT
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1494,7 +1494,7 @@ Muk
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SAMUEL ===
+=== TRAINER_SOMBERHQ_MELEA ===
 Name: SAMUEL
 Class: Cooltrainer
 Pic: Cooltrainer M

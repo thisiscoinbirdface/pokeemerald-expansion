@@ -99,8 +99,8 @@
 #define TRAINER_SEWERS_A                     61
 #define TRAINER_SEWERS_B                     62
 #define TRAINER_SEWERS_C                     63
-#define TRAINER_SEWERS_D                     64
-#define TRAINER_SEWERS_E                     65
+        #define TRAINER_SEWERS_D                     64 //unused
+        #define TRAINER_SEWERS_E                     65 //unused
 
 //Silversun Gym
 #define TRAINER_SILVERSUNGYM_A               66
@@ -110,18 +110,20 @@
 #define TRAINER_SILVERSUNGYM_LEADER          70
 
 //Two battles in the theater (one beauty and one maniac)
-#define TRAINER_THEATER_A                    71
-#define TRAINER_THEATER_B                    72
+        #define TRAINER_THEATER_A                    71 //unused
+#define TRAINER_THEATER_B                    72 
 
-#define TRAINER_GEORGE                       73
-#define TRAINER_BERKE                        74
-#define TRAINER_BRAXTON                      75
-#define TRAINER_VINCENT                      76
-#define TRAINER_LEROY                        77
-#define TRAINER_WILTON_1                     78
-#define TRAINER_EDGAR                        79
-#define TRAINER_ALBERT                       80
-#define TRAINER_SAMUEL                       81
+//Team Somber HQ
+    #define TRAINER_SOMBERHQ_A               73
+    #define TRAINER_SOMBERHQ_B               74
+    #define TRAINER_SOMBERHQ_C               75
+    #define TRAINER_SOMBERHQ_D               76
+    #define TRAINER_SOMBERHQ_E               77
+    #define TRAINER_SOMBERHQ_F               78
+    #define TRAINER_SOMBERHQ_G               79
+    #define TRAINER_SOMBERHQ_H               80
+    #define TRAINER_SOMBERHQ_MELEA           81
+
 #define TRAINER_VITO                         82
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84
