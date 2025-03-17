@@ -112,96 +112,156 @@ SilversunCity_SomberHQ_EventScript_Main::
 	special ShakeCamera
 # 73 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_4
-# 74 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
-# 75 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 30
-# 78 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 76 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Trigger0_Movement_0
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_3
-# 80 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 78 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
-# 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_4
-# 82 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 80 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_5
-# 83 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
-# 84 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 82 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	delay 24
-# 87 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 85 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_5
-# 88 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 86 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	release
-# 92 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 87 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 36
+# 90 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_5
+# 91 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 92 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 36
 # 93 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
-# 94 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 30
-# 95 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_4
+# 94 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 95 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 36
 # 96 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
-# 97 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 30
-# 98 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_6
+# 97 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 98 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 36
 # 99 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_7
 # 100 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 30
+	waitmovement 0
 # 101 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_6
+	delay 36
 # 102 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_6
 # 103 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_7
+	release
 # 104 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_8
 # 105 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_7
+	waitmovement 0
 # 106 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_7
 # 107 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_8
+	release
 # 108 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
-# 109 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_9
-# 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
-# 111 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_8
-# 112 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
-# 113 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_9
-# 114 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 109 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
-# 115 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 16
-# 116 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_9
-# 117 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
-# 118 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_1
-# 119 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	waitmovement 0
-# 120 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	delay 16
-# 121 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_10
-# 122 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	release
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_10
-# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 111 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
+# 112 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_8
+# 113 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 114 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_1
+# 115 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 116 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 16
+# 117 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_9
+# 118 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 119 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_1
+# 120 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 121 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 16
+# 122 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_10
+# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_GAB, SilversunCity_SomberHQ_EventScript_Main_Movement_11
+# 125 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 126 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	removeobject LOCALID_GAB
+# 130 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_11
 # 131 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	trainerbattle_no_intro TRAINER_SOMBERHQ_MELEA, SilversunCity_SomberHQ_EventScript_Main_Text_11
+	release
+# 132 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_12
+# 133 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 134 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_12
+# 137 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	trainerbattle_no_intro TRAINER_SOMBERHQ_MELEA, SilversunCity_SomberHQ_EventScript_Main_Text_13
+# 140 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	setflag FLAG_SILVERSUN_SOMBERHQ_MAIN
+# 145 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_14
+# 146 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_13
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_14
+# 149 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 150 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Movement_6
+# 151 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_15
+# 152 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 153 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_14
+# 154 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 155 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	removeobject LOCALID_GRUNT
+# 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_15
+# 157 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 158 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	removeobject LOCALID_GRUNT
+# 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Movement_16
+# 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_17
+# 163 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 164 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SilversunCity_SomberHQ_EventScript_Main_Text_16
+# 165 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 169 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	warp MAP_SILVERSUN_CITY, 24, 6
+# 170 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	releaseall
 	return
 
 
@@ -243,80 +303,148 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_2:
 	emote_exclamation_mark
 	step_end
 
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_3:
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_right
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_up
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_right
-# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 77 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_left
 	step_end
 
-# 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_4:
-# 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 79 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_down
 	step_end
 
-# 82 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 80 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_5:
-# 82 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 80 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_up
 	step_end
 
-# 98 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 96 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_6:
-# 98 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 96 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_left
 	step_end
 
-# 103 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 99 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_7:
-# 103 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 99 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	emote_question_mark
+	step_end
+
+# 104 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_8:
+# 104 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 107 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_8:
-# 107 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 108 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_9:
+# 108 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
-# 107 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 108 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_up
-# 107 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 108 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_left
 	step_end
 
-# 109 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_9:
-# 109 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_10:
+# 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_right
-# 109 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_10:
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_11:
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_down
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 124 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_faster_left
-# 123 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_faster_left
+	step_end
+
+# 132 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_12:
+# 132 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_down
+# 132 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_left
+	step_end
+
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_13:
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_up
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_down
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_right
+	step_end
+
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_14:
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_left
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+	step_end
+
+# 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_15:
+# 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+	step_end
+
+# 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_16:
+# 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_right
+	step_end
+
+# 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_17:
+# 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_down
+# 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_left
 	step_end
 
 SilversunCity_SomberHQ_EventScript_Main_Text_0:
@@ -361,7 +489,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_4:
 	.string "???: I said COME!!$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_5:
-# 87 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 85 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???: So you're the one who defeated\n"
 	.string "MOXIE at MT CERAM. So young...you\l"
 	.string "must've gotten really lucky.\p"
@@ -373,12 +501,12 @@ SilversunCity_SomberHQ_EventScript_Main_Text_5:
 	.string "met under better circumstances.$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_6:
-# 101 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 102 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???: How did you get inside our\n"
 	.string "headquarters, I wonder...$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_7:
-# 105 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 106 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "GRUNT: Boss! Boss! GABRIELLE was on\n"
 	.string "guard duty.\p"
 	.string "???: So it was you, GABRIELLE?\n"
@@ -386,24 +514,23 @@ SilversunCity_SomberHQ_EventScript_Main_Text_7:
 	.string "You really are useless.$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_8:
-# 111 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 112 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "GABRIELLE: Miss MELEA, I-I'm sorry. I\n"
 	.string "owed him and I didn't-$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_9:
-# 116 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 117 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "MELEA: You mean that it was\n"
 	.string "INTENTIONAL!? And don't use my name in\l"
 	.string "public, you moron!\p"
 	.string "GABRIELLE: Y-yes, I'm so sorry. I just -\p"
 	.string "MELEA: You just NOTHING! You BETRAYED\n"
 	.string "us! Out! OUT! You're no longer a part of\l"
-	.string "Team Somber! And I'm going to have a hit\l"
-	.string "squad chase you till the ends of the\l"
-	.string "Earth!$"
+	.string "Team Somber! And I'm going to have a\l"
+	.string "squad chase you all over Cormoria!$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_10:
-# 121 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 122 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "GABRIELLE: No boss, please! What about\n"
 	.string "my promise?\p"
 	.string "MELEA: Should've thought of that\n"
@@ -412,5 +539,43 @@ SilversunCity_SomberHQ_EventScript_Main_Text_10:
 	.string "GABRIELLE:...$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_11:
-# 131 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 130 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "MELEA: Absolutely pathetic. I would\n"
+	.string "deal with her myself...if not for you,\l"
+	.string "{PLAYER}.$"
+
+SilversunCity_SomberHQ_EventScript_Main_Text_12:
+# 134 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "MELEA: So you know our plan now. We're\n"
+	.string "going to build a Dreamalyser and take it\l"
+	.string "to MT MIRROH. We're going to obtain the\l"
+	.string "dreamstone there...and the rest? Well\l"
+	.string "you'll never see any of it, because I'm\l"
+	.string "going to put an end to you right here,\l"
+	.string "right now!$"
+
+SilversunCity_SomberHQ_EventScript_Main_Text_13:
+# 137 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "You stupid child!$"
+
+SilversunCity_SomberHQ_EventScript_Main_Text_14:
+# 145 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "MELEA: Unbelievable! Just unbelievable!\p"
+	.string "MELEA: Fine. Keep your stupid\n"
+	.string "Professor, child! We've got what we need\l"
+	.string "from him anyway. Let's go!$"
+
+SilversunCity_SomberHQ_EventScript_Main_Text_15:
+# 151 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "MELEA: Heed this warning, {PLAYER}.\n"
+	.string "Do NOT try to thwart us at MT MIRROH, or\l"
+	.string "else we will crush you!$"
+
+SilversunCity_SomberHQ_EventScript_Main_Text_16:
+# 164 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "TENEBRIS: You saved me. You are an\n"
+	.string "impressive trainer. I made the right\l"
+	.string "choice.\p"
+	.string "...\p"
+	.string "TENEBRIS: There are detectives\n"
+	.string "outside? Let's go and meet them.$"

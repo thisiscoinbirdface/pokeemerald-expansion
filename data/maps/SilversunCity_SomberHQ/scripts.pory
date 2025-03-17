@@ -71,8 +71,6 @@ script SilversunCity_SomberHQ_EventScript_Main{
 	setvar(VAR_0x8007, 5)  //shake delay        
     special(ShakeCamera)
     msgbox(format("???: I said COME!!"))
-    release
-	delay(30)
 
     //Move to Melea
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
@@ -86,7 +84,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     //Prof gets introduced
     msgbox(format("???: So you're the one who defeated MOXIE at MT CERAM. So young...you must've gotten really lucky.\p???: Meet your Professor. He's been of invaluable help to us...albeit unwillingly.\pTENEBRIS: {PLAYER}. I recall signing your acceptance letter. I-I wish we had met under better circumstances."))
     release
-
+    delay(36)
 
     //Who let you in? Gabrielle gets fired (the promise)
     applymovement(LOCALID_MELEA, moves(face_up))
@@ -96,6 +94,9 @@ script SilversunCity_SomberHQ_EventScript_Main{
     waitmovement(0)
     delay(36)
     applymovement(LOCALID_MELEA, moves(face_left))
+    waitmovement(0)
+    delay(36)
+    applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
     delay(36)
     msgbox(format("???: How did you get inside our headquarters, I wonder..."))
@@ -122,7 +123,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     release
     applymovement(LOCALID_GAB, moves(walk_faster_left walk_faster_down walk_faster_left *5))
     waitmovement(0)
-    removeobect(LOCALID_GAB)
+    removeobject(LOCALID_GAB)
 
     //Melea explains the plan
         //next dreamstone in mt mirroh
@@ -135,12 +136,39 @@ script SilversunCity_SomberHQ_EventScript_Main{
     //Battle
     trainerbattle_no_intro(TRAINER_SOMBERHQ_MELEA, format("You stupid child!"))
 
+    //On victory, set flag
+    setflag(FLAG_SILVERSUN_SOMBERHQ_MAIN)
+
+
     //Never mind
     //We've got what we need
+    msgbox(format("MELEA: Unbelievable! Just unbelievable!\pMELEA: Fine. Keep your stupid Professor, child! We've got what we need from him anyway. Let's go!"))
+    release
+    applymovement(LOCALID_MELEA, moves(walk_up walk_left *2 walk_down walk_left *2 face_right))
+    applymovement(LOCALID_GRUNT, moves(face_left walk_left * 4))
+    waitmovement(0)    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    msgbox(format("MELEA: Heed this warning, {PLAYER}. Do NOT try to thwart us at MT MIRROH, or else we will crush you!"))
+    release
+    applymovement(LOCALID_GRUNT, moves(face_left walk_left * 4))
+    waitmovement(0)
+    removeobject(LOCALID_GRUNT)
+    applymovement(LOCALID_MELEA, moves(walk_left *3))
+    waitmovement(0)
+    removeobject(LOCALID_GRUNT)
 
-    //Detectives and kohla arrive
-    //Rue's leads went nowhere
-    //
+    //Go outside and meet the detectives.
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_PROF, moves(walk_left walk_down face_left))
+    waitmovement(0)
+    msgbox(format("TENEBRIS: You saved me. You are an impressive trainer. I made the right choice.\p...\pTENEBRIS: There are detectives outside? Let's go and meet them."))
+    release
+
+
+    //exit
+    warp(MAP_SILVERSUN_CITY, 24, 6)
+    releaseall
+
 }
 
 
