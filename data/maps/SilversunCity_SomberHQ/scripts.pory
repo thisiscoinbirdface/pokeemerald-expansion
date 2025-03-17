@@ -32,10 +32,14 @@ script SilversunCity_SomberHQ_EventScript_Main_Trigger1{
 
 script SilversunCity_SomberHQ_EventScript_Main{
 
+
+
                         //TEMP - SKIP THIS SCENE
                         clearflag(FLAG_HIDE_SILVERSUN_PROF)
                         warp(MAP_SILVERSUN_CITY, 24, 6)
                         setflag(FLAG_SILVERSUN_SOMBERHQ_MAIN)
+
+
 
     //Dialogue between prof and Melea
     //Melea laughs at the profs attempt to hide the dreamstone in mt mirroh

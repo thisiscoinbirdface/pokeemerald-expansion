@@ -25,12 +25,8 @@ script SilversunCity_OnFrame{
                 waitmovement(0)
                 delay(30)
 
-                msgbox(format("DETECTIVE: Professor TENEBRIS! Are you okay?\pTENEBRIS: Slightly bruised but alright otherwise. The greater damage is yet to be seen.\pDETECTIVE: {PLAYER}, this is a splendid outcome. You've done a great job."))
-
-
-
-
-            release
+                msgbox(format("DETECTIVE: Professor TENEBRIS! Are you okay?\pTENEBRIS: All well, thanks to {PLAYER}.\pDETECTIVE: {PLAYER}, this is a splendid outcome. KOHLA is still chasing the leads from RUE. \pDETECTIVE: So Professor, you hid the dreamstone from FENNILAHL TOWN on MT MIRROH?\pTENEBRIS: Yes. I began to suspect that someone might be after it, so I took the dreamstone and disappeared. But they found me...and the dreamstone's location.\pDETECTIVE: What's done is done. If you're safe and sound, we can close the case.\pDETECTIVE: But while the case is closed, the job is not yet done. {PLAYER}, we must stop them from obtaining the dreamstone! Head to MT MIRROH as soon as possible.\pTENEBRIS: I must return to the lab then and talk to RUE. Thank you again {PLAYER}."))
+                release
 
             //Fade and remove objects
             fadescreen(FADE_TO_BLACK)
@@ -92,6 +88,66 @@ script SilversunCity_EventScript_Detectives{
     releaseall
 }
 
+
+
+
+
+
+
+
+
+
+
+//POST-MAIN KOHLA BATTLE
+script SilversunCity_KohlaBattleTrigger0{
+    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
+    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
+        lockall
+        msgbox(format("KOHLA: Wait right there!"))
+        release
+        setobjectxy(LOCALID_KOHLA, 11, 30)
+        call(SilversunCity_EventScript_KohlaBattle)       
+    } else {end}
+}
+script SilversunCity_KohlaBattleTrigger1{
+    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
+    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
+        lockall
+        msgbox(format("KOHLA: Wait right there!"))
+        release
+        setobjectxy(LOCALID_KOHLA, 12, 30)
+        call(SilversunCity_EventScript_KohlaBattle)       
+    } else {end}
+}
+script SilversunCity_KohlaBattleTrigger2{
+    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
+    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
+        lockall
+        msgbox(format("KOHLA: Wait right there!"))
+        release
+        setobjectxy(LOCALID_KOHLA, 13, 30)
+        call(SilversunCity_EventScript_KohlaBattle)       
+    } else {end}
+}
+script SilversunCity_KohlaBattleTrigger3{
+    if (flag(FLAG_SILVERSUN_KOHLA_BATTLE)){end}
+    if (flag(FLAG_SILVERSUN_NEXTQUEST)){
+        lockall
+        msgbox(format("KOHLA: Wait right there!"))
+        release
+        setobjectxy(LOCALID_KOHLA, 14, 30)
+        call(SilversunCity_EventScript_KohlaBattle)       
+    } else {end}
+}
+
+script SilversunCity_EventScript_KohlaBattle{
+    lockall
+    applymovement(LOCALID_KOHLA, moves(walk_left * 8))
+    waitmovement(0)
+
+    releaseall
+    end
+}
 
 
 
