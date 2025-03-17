@@ -1,0 +1,10 @@
+mapscripts Route6_Transition_MapScripts{}
+
+script Route6_Transition_KohlaBattle_Trigger0{
+
+}
+script Route6_Transition_KohlaBattle_Trigger1{
+    
+}
+
+
