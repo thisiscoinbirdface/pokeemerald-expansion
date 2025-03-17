@@ -1,12 +1,12 @@
 raw`
     .set LOCALID_DET1, 7
     .set LOCALID_DET2, 6
-    .set LICALID_PROF, 8
+    .set LOCALID_TENEBRIS, 8
     .set LOCALID_KOHLA, 9
 `
 
 mapscripts SilversunCity_MapScripts{
-    MAP_SCRIPT_ON_FRAME[
+    MAP_SCRIPT_ON_FRAME_TABLE[
         VAR_TEMP_0, 0: SilversunCity_OnFrame
     ]
 }
@@ -19,6 +19,7 @@ script SilversunCity_OnFrame{
         } else {
             //do the stuff
                 //Dialogue
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
                 applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
                 applymovement(LOCALID_DET2, moves(emote_exclamation_mark))
                 waitmovement(0)
@@ -29,10 +30,13 @@ script SilversunCity_OnFrame{
 
 
 
+            release
+
+            //Fade and remove objects
             fadescreen(FADE_TO_BLACK)
             removeobject(LOCALID_DET1)
             removeobject(LOCALID_DET2)
-            removeobject(LOCALID_PROF)
+            removeobject(LOCALID_TENEBRIS)
             fadescreen(FADE_FROM_BLACK)
 
             //Set flag

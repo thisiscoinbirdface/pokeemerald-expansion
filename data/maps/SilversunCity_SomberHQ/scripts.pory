@@ -31,6 +31,12 @@ script SilversunCity_SomberHQ_EventScript_Main_Trigger1{
 
 
 script SilversunCity_SomberHQ_EventScript_Main{
+
+                        //TEMP - SKIP THIS SCENE
+                        clearflag(FLAG_HIDE_SILVERSUN_PROF)
+                        warp(MAP_SILVERSUN_CITY, 24, 6)
+                        setflag(FLAG_SILVERSUN_SOMBERHQ_MAIN)
+
     //Dialogue between prof and Melea
     //Melea laughs at the profs attempt to hide the dreamstone in mt mirroh
     applymovement(LOCALID_MELEA, moves(jump_in_place_left))
@@ -165,7 +171,6 @@ script SilversunCity_SomberHQ_EventScript_Main{
     msgbox(format("TENEBRIS: You saved me. You are an impressive trainer. I made the right choice in selecting you.\p...\pTENEBRIS: There are detectives outside? Let's go and meet them."))
     release
 
-    //TEMP
     clearflag(FLAG_HIDE_SILVERSUN_PROF)
 
     //exit
