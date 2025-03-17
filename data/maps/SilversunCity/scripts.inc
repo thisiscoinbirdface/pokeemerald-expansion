@@ -112,170 +112,62 @@ SilversunCity_EventScript_Detectives_2:
 	goto SilversunCity_EventScript_Detectives_1
 
 
-SilversunCity_KohlaBattleTrigger0::
-# 103 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_KOHLA_BATTLE, SilversunCity_KohlaBattleTrigger0_2
-# 104 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_NEXTQUEST, SilversunCity_KohlaBattleTrigger0_4
-	end
-
-SilversunCity_KohlaBattleTrigger0_2:
-	end
-
-SilversunCity_KohlaBattleTrigger0_4:
-# 105 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 106 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_KohlaBattleTrigger0_Text_0
-# 107 "data//maps/SilversunCity/scripts.pory"
-	release
-# 108 "data//maps/SilversunCity/scripts.pory"
-	setobjectxy LOCALID_KOHLA, 11, 30
-# 109 "data//maps/SilversunCity/scripts.pory"
-	call SilversunCity_EventScript_KohlaBattle
-	return
-
-
-SilversunCity_KohlaBattleTrigger1::
-# 113 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_KOHLA_BATTLE, SilversunCity_KohlaBattleTrigger1_2
-# 114 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_NEXTQUEST, SilversunCity_KohlaBattleTrigger1_4
-	end
-
-SilversunCity_KohlaBattleTrigger1_2:
-	end
-
-SilversunCity_KohlaBattleTrigger1_4:
-# 115 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 116 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_KohlaBattleTrigger0_Text_0
-# 117 "data//maps/SilversunCity/scripts.pory"
-	release
-# 118 "data//maps/SilversunCity/scripts.pory"
-	setobjectxy LOCALID_KOHLA, 12, 30
-# 119 "data//maps/SilversunCity/scripts.pory"
-	call SilversunCity_EventScript_KohlaBattle
-	return
-
-
-SilversunCity_KohlaBattleTrigger2::
-# 123 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_KOHLA_BATTLE, SilversunCity_KohlaBattleTrigger2_2
-# 124 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_NEXTQUEST, SilversunCity_KohlaBattleTrigger2_4
-	end
-
-SilversunCity_KohlaBattleTrigger2_2:
-	end
-
-SilversunCity_KohlaBattleTrigger2_4:
-# 125 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 126 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_KohlaBattleTrigger0_Text_0
-# 127 "data//maps/SilversunCity/scripts.pory"
-	release
-# 128 "data//maps/SilversunCity/scripts.pory"
-	setobjectxy LOCALID_KOHLA, 13, 30
-# 129 "data//maps/SilversunCity/scripts.pory"
-	call SilversunCity_EventScript_KohlaBattle
-	return
-
-
-SilversunCity_KohlaBattleTrigger3::
-# 133 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_KOHLA_BATTLE, SilversunCity_KohlaBattleTrigger3_2
-# 134 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_NEXTQUEST, SilversunCity_KohlaBattleTrigger3_4
-	end
-
-SilversunCity_KohlaBattleTrigger3_2:
-	end
-
-SilversunCity_KohlaBattleTrigger3_4:
-# 135 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 136 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_KohlaBattleTrigger0_Text_0
-# 137 "data//maps/SilversunCity/scripts.pory"
-	release
-# 138 "data//maps/SilversunCity/scripts.pory"
-	setobjectxy LOCALID_KOHLA, 14, 30
-# 139 "data//maps/SilversunCity/scripts.pory"
-	call SilversunCity_EventScript_KohlaBattle
-	return
-
-
-SilversunCity_EventScript_KohlaBattle::
-# 144 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 145 "data//maps/SilversunCity/scripts.pory"
-	applymovement LOCALID_KOHLA, SilversunCity_EventScript_KohlaBattle_Movement_0
-# 146 "data//maps/SilversunCity/scripts.pory"
-	waitmovement 0
-# 148 "data//maps/SilversunCity/scripts.pory"
-	releaseall
-	end
-
-
 SilversunCity_NPC1::
-# 163 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 164 "data//maps/SilversunCity/scripts.pory"
+# 107 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 165 "data//maps/SilversunCity/scripts.pory"
+# 108 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC1_Text_0
-# 166 "data//maps/SilversunCity/scripts.pory"
+# 109 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC2::
-# 170 "data//maps/SilversunCity/scripts.pory"
+# 113 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 171 "data//maps/SilversunCity/scripts.pory"
+# 114 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 172 "data//maps/SilversunCity/scripts.pory"
+# 115 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC2_Text_0
-# 173 "data//maps/SilversunCity/scripts.pory"
+# 116 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC3::
-# 177 "data//maps/SilversunCity/scripts.pory"
+# 120 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 178 "data//maps/SilversunCity/scripts.pory"
+# 121 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 179 "data//maps/SilversunCity/scripts.pory"
+# 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
-# 180 "data//maps/SilversunCity/scripts.pory"
+# 123 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC4::
-# 184 "data//maps/SilversunCity/scripts.pory"
+# 127 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 185 "data//maps/SilversunCity/scripts.pory"
+# 128 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 186 "data//maps/SilversunCity/scripts.pory"
+# 129 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC4_Text_0
-# 187 "data//maps/SilversunCity/scripts.pory"
+# 130 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC5::
-# 191 "data//maps/SilversunCity/scripts.pory"
+# 134 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 192 "data//maps/SilversunCity/scripts.pory"
+# 135 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 193 "data//maps/SilversunCity/scripts.pory"
+# 136 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC5_Text_0
-# 194 "data//maps/SilversunCity/scripts.pory"
+# 137 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
@@ -300,26 +192,6 @@ SilversunCity_EventScript_Detectives_Movement_0:
 	walk_right
 # 74 "data//maps/SilversunCity/scripts.pory"
 	walk_up
-	step_end
-
-# 145 "data//maps/SilversunCity/scripts.pory"
-SilversunCity_EventScript_KohlaBattle_Movement_0:
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
-# 145 "data//maps/SilversunCity/scripts.pory"
-	walk_left
 	step_end
 
 SilversunCity_OnFrame_Text_0:
@@ -399,37 +271,33 @@ SilversunCity_EventScript_Detectives_Text_4:
 	.string "your own on this one.\p"
 	.string "Good luck.$"
 
-SilversunCity_KohlaBattleTrigger0_Text_0:
-# 106 "data//maps/SilversunCity/scripts.pory"
-	.string "KOHLA: Wait right there!$"
-
 SilversunCity_NPC1_Text_0:
-# 165 "data//maps/SilversunCity/scripts.pory"
+# 108 "data//maps/SilversunCity/scripts.pory"
 	.string "GLORIA, the city's Gym Leader is also a\n"
 	.string "famous actress! Her work centers\l"
 	.string "around the dark and eerie.$"
 
 SilversunCity_NPC2_Text_0:
-# 172 "data//maps/SilversunCity/scripts.pory"
+# 115 "data//maps/SilversunCity/scripts.pory"
 	.string "I hear the theater has connections\n"
 	.string "with the underground. People have seen\l"
 	.string "criminal types walk in and out of the\l"
 	.string "backstage area.$"
 
 SilversunCity_NPC3_Text_0:
-# 179 "data//maps/SilversunCity/scripts.pory"
+# 122 "data//maps/SilversunCity/scripts.pory"
 	.string "I'm so sad I couldn't get tickets for\n"
 	.string "tonights show! It's supposed to be a\l"
 	.string "live performance of some sort.$"
 
 SilversunCity_NPC4_Text_0:
-# 186 "data//maps/SilversunCity/scripts.pory"
+# 129 "data//maps/SilversunCity/scripts.pory"
 	.string "We keep seeing wild KOFFING and TOXEL\n"
 	.string "around...they come from the sewers, I\l"
 	.string "bet. Their poison is why there are no\l"
 	.string "flowers near the sewers.$"
 
 SilversunCity_NPC5_Text_0:
-# 193 "data//maps/SilversunCity/scripts.pory"
+# 136 "data//maps/SilversunCity/scripts.pory"
 	.string "The sewers really stink up this part of\n"
 	.string "town!$"

@@ -4964,12 +4964,22 @@
     {
       "id": "LAYOUT_ROUTE6",
       "name": "Route6_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 80,
       "primary_tileset": "gTileset_Swamp",
       "secondary_tileset": "gTileset_Swampforest",
       "border_filepath": "data/layouts/Route6/border.bin",
       "blockdata_filepath": "data/layouts/Route6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6TRANSITION",
+      "name": "Route6Transition_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Route6Transition/border.bin",
+      "blockdata_filepath": "data/layouts/Route6Transition/map.bin"
     }
   ]
 }

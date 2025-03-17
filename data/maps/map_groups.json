@@ -98,7 +98,8 @@
     "SilversunCityGym"
   ],
   "gMapGroup_Phase3": [
-    "Route6"
+    "Route6",
+    "Route6Transition"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
