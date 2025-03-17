@@ -6,19 +6,36 @@ raw`
 `
 
 mapscripts SilversunCity_MapScripts{
-    MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_TEMP_0, 0: SilversunCity_OnFrame
-    ]
+    MAP_SCRIPT_ON_TRANSITION {
+        call(SilversunCity_OnFrame)
+    }
 }
 
 
 
-script SilversunCity_OnFrame{
+script SilversunCity_OnTransition{
     if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)){
-        //do the stuff
-            //Move the prof
-            setobjectxy(LOCALID_PROF, 25, 6)
+        if (flag(FLAG_SILVERSUN_NEXTQUEST)){
+            //nothing
+        } else {
+            //do the stuff
+                //Move the prof
+                setobjectxyperm(LOCALID_PROF, 25, 6)
+                setobjectxy(LOCALID_PROF, 25, 6)
 
+                //Dialogue
+                applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
+                applymovement(LOCALID_DET2, moves(emote_exclamation_mark))
+                waitmovement(0)
+                delay(30)
+
+                msgbox(format("DETECTIVE: Professor TENEBRIS! Are you okay?\pTENEBRIS: Slightly bruised but alright otherwise. The greater damage is yet to be seen.\pDETECTIVE: {PLAYER}, this is a splendid outcome. You've done a great job."))
+
+
+
+            //Set flag
+            setflag(FLAG_SILVERSUN_NEXTQUEST)
+        }
     }
 }
 

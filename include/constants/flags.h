@@ -82,7 +82,7 @@
 #define FLAG_SILVERSUN_BACKSTAGEPASS_USE    0x43 // use the backstage pass to access the backstage (and hideout)
 #define FLAG_SILVERSUN_SOMBERHQ_ENTRANCE    0x44 // gabrielle is at the entrance and lets you in
 #define FLAG_SILVERSUN_SOMBERHQ_MAIN    0x45 // the main somber HQ encounter
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
+#define FLAG_SILVERSUN_NEXTQUEST    0x46 // set the next quest
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag

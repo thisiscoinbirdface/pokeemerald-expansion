@@ -225,9 +225,9 @@ SilversunCity_SomberHQ_EventScript_Main::
 # 146 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	release
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_13
+	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_13
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_14
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_14
 # 149 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
 # 150 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -237,21 +237,21 @@ SilversunCity_SomberHQ_EventScript_Main::
 # 152 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	release
 # 153 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_14
+	applymovement LOCALID_GRUNT, SilversunCity_SomberHQ_EventScript_Main_Movement_15
 # 154 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
 # 155 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	removeobject LOCALID_GRUNT
 # 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_15
+	applymovement LOCALID_MELEA, SilversunCity_SomberHQ_EventScript_Main_Movement_16
 # 157 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
 # 158 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	removeobject LOCALID_GRUNT
+	removeobject LOCALID_MELEA
 # 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Movement_16
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Movement_17
 # 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_17
+	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_18
 # 163 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
 # 164 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -392,37 +392,45 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_12:
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_13:
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_up
+	face_left
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_down
-# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
-# 147 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	face_right
 	step_end
 
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Movement_14:
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	face_left
+	walk_up
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_down
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
+# 148 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	face_right
+	step_end
+
+# 153 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+SilversunCity_SomberHQ_EventScript_Main_Movement_15:
+# 153 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_left
+# 153 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	walk_up
 	step_end
 
 # 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_15:
+SilversunCity_SomberHQ_EventScript_Main_Movement_16:
 # 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 156 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -432,13 +440,13 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_15:
 	step_end
 
 # 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_16:
+SilversunCity_SomberHQ_EventScript_Main_Movement_17:
 # 161 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	face_right
 	step_end
 
 # 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_17:
+SilversunCity_SomberHQ_EventScript_Main_Movement_18:
 # 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_left
 # 162 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -450,8 +458,8 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_17:
 SilversunCity_SomberHQ_EventScript_Main_Text_0:
 # 39 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???: It's no use Professor! We already\n"
-	.string "know where you hid the dreamstone. It's\l"
-	.string "on MT CERAM.\p"
+	.string "know you hid your dreamstone in MT\l"
+	.string "MIRROH.\p"
 	.string "Hahaha! What a pathetic attempt at\n"
 	.string "hiding the dreamstone from us.$"
 
@@ -540,15 +548,15 @@ SilversunCity_SomberHQ_EventScript_Main_Text_10:
 
 SilversunCity_SomberHQ_EventScript_Main_Text_11:
 # 130 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "MELEA: Absolutely pathetic. I would\n"
-	.string "deal with her myself...if not for you,\l"
-	.string "{PLAYER}.$"
+	.string "MELEA: An absolutely pathetic\n"
+	.string "character. I would deal with her\l"
+	.string "myself...if not for you, {PLAYER}.$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_12:
 # 134 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "MELEA: So you know our plan now. We're\n"
 	.string "going to build a Dreamalyser and take it\l"
-	.string "to MT MIRROH. We're going to obtain the\l"
+	.string "to MT MIRROH. We'll obtain the\l"
 	.string "dreamstone there...and the rest? Well\l"
 	.string "you'll never see any of it, because I'm\l"
 	.string "going to put an end to you right here,\l"
@@ -575,7 +583,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_16:
 # 164 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "TENEBRIS: You saved me. You are an\n"
 	.string "impressive trainer. I made the right\l"
-	.string "choice.\p"
+	.string "choice in selecting you.\p"
 	.string "...\p"
 	.string "TENEBRIS: There are detectives\n"
 	.string "outside? Let's go and meet them.$"
