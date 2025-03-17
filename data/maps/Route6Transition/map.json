@@ -17,6 +17,11 @@
       "map": "MAP_SILVERSUN_CITY",
       "offset": -28,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE6",
+      "offset": -6,
+      "direction": "down"
     }
   ],
   "object_events": [
