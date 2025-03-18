@@ -5050,6 +5050,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PellucaCityGym/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE7",
+      "name": "Route7_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/Route7/border.bin",
+      "blockdata_filepath": "data/layouts/Route7/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_BASE_CAMP",
+      "name": "MirrohBaseCamp_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/MirrohBaseCamp/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohBaseCamp/map.bin"
     }
   ]
 }

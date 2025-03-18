@@ -1276,3 +1276,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PellucaCityRestaurant/scripts.inc"
 
 	.include "data/maps/PellucaCityGym/scripts.inc"
+
+	.include "data/maps/Route7/scripts.inc"
+
+	.include "data/maps/MirrohBaseCamp/scripts.inc"

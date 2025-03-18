@@ -98,15 +98,17 @@
     "SilversunCityGym"
   ],
   "gMapGroup_Phase3": [
-    "Route6",
     "Route6Transition",
+    "Route6",
     "RangerInstitute",
-    "PellucaCity",
-    "HoyaRiver",
     "RangerInstituteBiome",
+    "HoyaRiver",
+    "PellucaCity",
     "PellucaCityHouses",
     "PellucaCityRestaurant",
-    "PellucaCityGym"
+    "PellucaCityGym",
+    "Route7",
+    "MirrohBaseCamp"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

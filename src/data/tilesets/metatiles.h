@@ -216,3 +216,10 @@ const u16 gMetatileAttributes_Swamp[] = INCBIN_U16("data/tilesets/primary/swamp/
 
 const u16 gMetatiles_Swampforest[] = INCBIN_U16("data/tilesets/secondary/swampforest/metatiles.bin");
 const u16 gMetatileAttributes_Swampforest[] = INCBIN_U16("data/tilesets/secondary/swampforest/metatile_attributes.bin");
+
+const u16 gMetatiles_Snow[] = INCBIN_U16("data/tilesets/primary/snow/metatiles.bin");
+const u16 gMetatileAttributes_Snow[] = INCBIN_U16("data/tilesets/primary/snow/metatile_attributes.bin");
+
+
+const u16 gMetatiles_SnowCableCar[] = INCBIN_U16("data/tilesets/secondary/snow_cable_car/metatiles.bin");
+const u16 gMetatileAttributes_SnowCableCar[] = INCBIN_U16("data/tilesets/secondary/snow_cable_car/metatile_attributes.bin");
