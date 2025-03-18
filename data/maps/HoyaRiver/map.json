@@ -1,0 +1,39 @@
+{
+  "id": "MAP_HOYA_RIVER",
+  "name": "HoyaRiver",
+  "layout": "LAYOUT_HOYA_RIVER",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE6",
+      "offset": -94,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_PELLUCA_CITY",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE6TRANSITION",
       "offset": 26,
       "direction": "up"
+    },
+    {
+      "map": "MAP_HOYA_RIVER",
+      "offset": 94,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -165,8 +170,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 12,
-      "y": 108,
+      "x": 14,
+      "y": 104,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -243,8 +248,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-      "x": 6,
-      "y": 111,
+      "x": 9,
+      "y": 110,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -360,7 +365,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 52,
+      "y": 108,
+      "elevation": 0,
+      "dest_map": "MAP_RANGER_INSTITUTE",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

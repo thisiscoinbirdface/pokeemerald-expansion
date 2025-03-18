@@ -4965,7 +4965,7 @@
       "id": "LAYOUT_ROUTE6",
       "name": "Route6_Layout",
       "width": 60,
-      "height": 120,
+      "height": 122,
       "primary_tileset": "gTileset_Swamp",
       "secondary_tileset": "gTileset_Swampforest",
       "border_filepath": "data/layouts/Route6/border.bin",
@@ -4980,6 +4980,36 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route6Transition/border.bin",
       "blockdata_filepath": "data/layouts/Route6Transition/map.bin"
+    },
+    {
+      "id": "LAYOUT_RANGER_INSTITUTE",
+      "name": "RangerInstitute_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/RangerInstitute/border.bin",
+      "blockdata_filepath": "data/layouts/RangerInstitute/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CITY",
+      "name": "PellucaCity_Layout",
+      "width": 80,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/PellucaCity/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_HOYA_RIVER",
+      "name": "HoyaRiver_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Swampforest",
+      "border_filepath": "data/layouts/HoyaRiver/border.bin",
+      "blockdata_filepath": "data/layouts/HoyaRiver/map.bin"
     }
   ]
 }

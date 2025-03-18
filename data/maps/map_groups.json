@@ -99,7 +99,10 @@
   ],
   "gMapGroup_Phase3": [
     "Route6",
-    "Route6Transition"
+    "Route6Transition",
+    "RangerInstitute",
+    "PellucaCity",
+    "HoyaRiver"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
