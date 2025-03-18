@@ -4995,7 +4995,7 @@
       "id": "LAYOUT_PELLUCA_CITY",
       "name": "PellucaCity_Layout",
       "width": 80,
-      "height": 50,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/PellucaCity/border.bin",
