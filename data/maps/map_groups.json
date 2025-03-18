@@ -103,7 +103,10 @@
     "RangerInstitute",
     "PellucaCity",
     "HoyaRiver",
-    "RangerInstituteBiome"
+    "RangerInstituteBiome",
+    "PellucaCityHouses",
+    "PellucaCityRestaurant",
+    "PellucaCityGym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

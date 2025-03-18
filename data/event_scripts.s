@@ -1270,3 +1270,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HoyaRiver/scripts.inc"
 
 	.include "data/maps/RangerInstituteBiome/scripts.inc"
+
+	.include "data/maps/PellucaCityHouses/scripts.inc"
+
+	.include "data/maps/PellucaCityRestaurant/scripts.inc"
+
+	.include "data/maps/PellucaCityGym/scripts.inc"
