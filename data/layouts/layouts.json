@@ -5065,7 +5065,7 @@
       "id": "LAYOUT_MIRROH_BASE_CAMP",
       "name": "MirrohBaseCamp_Layout",
       "width": 50,
-      "height": 50,
+      "height": 46,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MirrohBaseCamp/border.bin",
