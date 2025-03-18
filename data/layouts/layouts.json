@@ -4985,8 +4985,8 @@
       "id": "LAYOUT_RANGER_INSTITUTE",
       "name": "RangerInstitute_Layout",
       "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/RangerInstitute/border.bin",
       "blockdata_filepath": "data/layouts/RangerInstitute/map.bin"
@@ -5010,6 +5010,16 @@
       "secondary_tileset": "gTileset_Swampforest",
       "border_filepath": "data/layouts/HoyaRiver/border.bin",
       "blockdata_filepath": "data/layouts/HoyaRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_RANGER_INSTITUTE_BIOME",
+      "name": "RangerInstituteBiome_Layout",
+      "width": 34,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/RangerInstituteBiome/border.bin",
+      "blockdata_filepath": "data/layouts/RangerInstituteBiome/map.bin"
     }
   ]
 }
