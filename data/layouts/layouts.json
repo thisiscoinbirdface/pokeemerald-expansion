@@ -5024,10 +5024,10 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_HOUSES",
       "name": "PellucaCityHouses_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PellucaCityHouses/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityHouses/map.bin"
     },
@@ -5037,7 +5037,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_SecretBaseBlueCave",
       "border_filepath": "data/layouts/PellucaCityRestaurant/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityRestaurant/map.bin"
     },
