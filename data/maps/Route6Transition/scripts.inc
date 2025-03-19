@@ -75,22 +75,24 @@ Route6_Transition_EventScript_KohlaBattle::
 # 50 "data//maps/Route6Transition/scripts.pory"
 	msgbox Route6_Transition_EventScript_KohlaBattle_Text_3
 # 51 "data//maps/Route6Transition/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_2
-# 52 "data//maps/Route6Transition/scripts.pory"
-	delay 24
-# 53 "data//maps/Route6Transition/scripts.pory"
-	msgbox Route6_Transition_EventScript_KohlaBattle_Text_4
-# 54 "data//maps/Route6Transition/scripts.pory"
 	release
-# 56 "data//maps/Route6Transition/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_3
+# 52 "data//maps/Route6Transition/scripts.pory"
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_2
+# 53 "data//maps/Route6Transition/scripts.pory"
+	delay 24
+# 54 "data//maps/Route6Transition/scripts.pory"
+	msgbox Route6_Transition_EventScript_KohlaBattle_Text_4
+# 55 "data//maps/Route6Transition/scripts.pory"
+	release
 # 57 "data//maps/Route6Transition/scripts.pory"
-	waitmovement 0
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_3
 # 58 "data//maps/Route6Transition/scripts.pory"
+	waitmovement 0
+# 59 "data//maps/Route6Transition/scripts.pory"
 	removeobject 1
-# 61 "data//maps/Route6Transition/scripts.pory"
-	setflag FLAG_ROUTE6_KOHLA_BATTLE
 # 62 "data//maps/Route6Transition/scripts.pory"
+	setflag FLAG_ROUTE6_KOHLA_BATTLE
+# 63 "data//maps/Route6Transition/scripts.pory"
 	releaseall
 	end
 
@@ -133,27 +135,27 @@ Route6_Transition_EventScript_KohlaBattle_Movement_1:
 	face_right
 	step_end
 
-# 51 "data//maps/Route6Transition/scripts.pory"
+# 52 "data//maps/Route6Transition/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_2:
-# 51 "data//maps/Route6Transition/scripts.pory"
+# 52 "data//maps/Route6Transition/scripts.pory"
 	face_up
 	step_end
 
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_3:
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
-# 56 "data//maps/Route6Transition/scripts.pory"
+# 57 "data//maps/Route6Transition/scripts.pory"
 	walk_down
 	step_end
 
@@ -189,6 +191,6 @@ Route6_Transition_EventScript_KohlaBattle_Text_3:
 	.string "yourself harder!$"
 
 Route6_Transition_EventScript_KohlaBattle_Text_4:
-# 53 "data//maps/Route6Transition/scripts.pory"
+# 54 "data//maps/Route6Transition/scripts.pory"
 	.string "KOHLA: {PLAYER}, this isn't over. Mark\n"
 	.string "my words!$"

@@ -1551,7 +1551,7 @@ Level: 5
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
-=== TRAINER_OWEN ===
+=== TRAINER_ROUTE6_A ===
 Name: OWEN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1573,7 +1573,7 @@ Wailord
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WILTON_2 ===
+=== TRAINER_ROUTE6_B ===
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1595,7 +1595,7 @@ Makuhita
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_WILTON_3 ===
+=== TRAINER_ROUTE6_C ===
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1617,7 +1617,7 @@ Makuhita
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_WILTON_4 ===
+=== TRAINER_ROUTE6_D ===
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1639,7 +1639,7 @@ Makuhita
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_WILTON_5 ===
+=== TRAINER_ROUTE6_E ===
 Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1661,7 +1661,7 @@ Hariyama
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_WARREN ===
+=== TRAINER_ROUTE6_F ===
 Name: WARREN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1679,7 +1679,7 @@ Ludicolo
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MARY ===
+=== TRAINER_ROUTE6_G ===
 Name: MARY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1695,7 +1695,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Feint Attack
 - Shock Wave
 
-=== TRAINER_ALEXIA ===
+=== TRAINER_ROUTE6_H ===
 Name: ALEXIA
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1712,7 +1712,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Edge
 - Shadow Ball
 
-=== TRAINER_JODY ===
+=== TRAINER_ROUTE6_I ===
 Name: JODY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1728,7 +1728,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Slash
 
-=== TRAINER_WENDY ===
+=== TRAINER_ROUTE6_J ===
 Name: WENDY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1762,7 +1762,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mist
 - Protect
 
-=== TRAINER_KEIRA ===
+=== TRAINER_ROUTE6_K ===
 Name: KEIRA
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1780,7 +1780,7 @@ Manectric
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BROOKE_1 ===
+=== TRAINER_ROUTE6_L ===
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1802,7 +1802,7 @@ Roselia
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JENNIFER ===
+=== TRAINER_ROUTE6_M ===
 Name: JENNIFER
 Class: Cooltrainer
 Pic: Cooltrainer F

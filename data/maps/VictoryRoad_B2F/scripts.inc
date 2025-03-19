@@ -7,7 +7,7 @@ VictoryRoad_B2F_EventScript_Vito::
 	end
 
 VictoryRoad_B2F_EventScript_Owen::
-	trainerbattle_single TRAINER_OWEN, VictoryRoad_B2F_Text_OwenIntro, VictoryRoad_B2F_Text_OwenDefeat
+	trainerbattle_single TRAINER_NONE, VictoryRoad_B2F_Text_OwenIntro, VictoryRoad_B2F_Text_OwenDefeat
 	msgbox VictoryRoad_B2F_Text_OwenPostBattle, MSGBOX_AUTOCLOSE
 	end
 

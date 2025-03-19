@@ -128,20 +128,26 @@
 #define TRAINER_ROUTE6_KOHLA                 82
 
 //Route 6 Trainers
-#define TRAINER_OWEN                         83
-#define TRAINER_WILTON_2                     84
-#define TRAINER_WILTON_3                     85
-#define TRAINER_WILTON_4                     86
-#define TRAINER_WILTON_5                     87
-#define TRAINER_WARREN                       88
-#define TRAINER_MARY                         89
-#define TRAINER_ALEXIA                       90
-#define TRAINER_JODY                         91
-#define TRAINER_WENDY                        92
-#define TRAINER_KEIRA                        93
-#define TRAINER_BROOKE_1                     94
-#define TRAINER_JENNIFER                     95
+#define TRAINER_ROUTE6_A                     83
+#define TRAINER_ROUTE6_B                     84
+#define TRAINER_ROUTE6_C                     85
+#define TRAINER_ROUTE6_D                     86
+#define TRAINER_ROUTE6_E                     87
+#define TRAINER_ROUTE6_F                     88
+#define TRAINER_ROUTE6_G                     89
+#define TRAINER_ROUTE6_H                     90
+#define TRAINER_ROUTE6_I                     91
+#define TRAINER_ROUTE6_J                     92
+#define TRAINER_ROUTE6_K                     93
+#define TRAINER_ROUTE6_L                     94
+#define TRAINER_ROUTE6_M                     95
+
+//Route 6 Gabrielle double battle
 #define TRAINER_HOPE                         96
+
+
+
+
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
 #define TRAINER_CAROLINE                     99

@@ -323,7 +323,7 @@ Route120_EventScript_RematchJeffrey::
 	end
 
 Route120_EventScript_Jennifer::
-	trainerbattle_single TRAINER_JENNIFER, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
+	trainerbattle_single TRAINER_NONE, Route120_Text_JenniferIntro, Route120_Text_JenniferDefeat
 	msgbox Route120_Text_JenniferPostBattle, MSGBOX_AUTOCLOSE
 	end
 
