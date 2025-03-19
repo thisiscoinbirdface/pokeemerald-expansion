@@ -5100,6 +5100,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/PellucaCityPokemart/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CABLE_CAR_STATION",
+      "name": "PellucaCableCarStation_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/PellucaCableCarStation/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCableCarStation/map.bin"
     }
   ]
 }
