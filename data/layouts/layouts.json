@@ -5074,9 +5074,9 @@
     {
       "id": "LAYOUT_PELLUCA_FISHERY",
       "name": "PellucaFishery_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_SeashoreHouse",
       "border_filepath": "data/layouts/PellucaFishery/border.bin",
       "blockdata_filepath": "data/layouts/PellucaFishery/map.bin"
