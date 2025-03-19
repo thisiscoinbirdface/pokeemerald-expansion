@@ -880,3 +880,14 @@ const struct Tileset gTileset_SnowCableCar =
     .metatileAttributes = gMetatileAttributes_SnowCableCar,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Restaurant =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Restaurant,
+    .palettes = gTilesetPalettes_Restaurant,
+    .metatiles = gMetatiles_Restaurant,
+    .metatileAttributes = gMetatileAttributes_Restaurant,
+    .callback = NULL,
+};

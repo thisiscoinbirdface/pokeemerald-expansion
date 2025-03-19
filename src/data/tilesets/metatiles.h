@@ -223,3 +223,6 @@ const u16 gMetatileAttributes_Snow[] = INCBIN_U16("data/tilesets/primary/snow/me
 
 const u16 gMetatiles_SnowCableCar[] = INCBIN_U16("data/tilesets/secondary/snow_cable_car/metatiles.bin");
 const u16 gMetatileAttributes_SnowCableCar[] = INCBIN_U16("data/tilesets/secondary/snow_cable_car/metatile_attributes.bin");
+
+const u16 gMetatiles_Restaurant[] = INCBIN_U16("data/tilesets/secondary/restaurant/metatiles.bin");
+const u16 gMetatileAttributes_Restaurant[] = INCBIN_U16("data/tilesets/secondary/restaurant/metatile_attributes.bin");

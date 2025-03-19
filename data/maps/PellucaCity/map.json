@@ -201,7 +201,69 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_RESTAURANT",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_HOUSES",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 37,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 46,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_HOUSES",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 46,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_HOUSES",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 66,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_HOUSES",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

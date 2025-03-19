@@ -1280,3 +1280,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route7/scripts.inc"
 
 	.include "data/maps/MirrohBaseCamp/scripts.inc"
+
+	.include "data/maps/PellucaFishery/scripts.inc"
+
+	.include "data/maps/PellucaCityPokemonCenter/scripts.inc"
+
+	.include "data/maps/PellucaCityPokemart/scripts.inc"

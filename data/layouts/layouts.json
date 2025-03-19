@@ -5034,10 +5034,10 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_RESTAURANT",
       "name": "PellucaCityRestaurant_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SecretBaseBlueCave",
+      "width": 16,
+      "height": 34,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Restaurant",
       "border_filepath": "data/layouts/PellucaCityRestaurant/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityRestaurant/map.bin"
     },
@@ -5070,6 +5070,36 @@
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MirrohBaseCamp/border.bin",
       "blockdata_filepath": "data/layouts/MirrohBaseCamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_FISHERY",
+      "name": "PellucaFishery_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/PellucaFishery/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaFishery/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CITY_POKEMON_CENTER",
+      "name": "PellucaCityPokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PellucaCityPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCityPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CITY_POKEMART",
+      "name": "PellucaCityPokemart_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/PellucaCityPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCityPokemart/map.bin"
     }
   ]
 }
