@@ -5106,7 +5106,7 @@
       "name": "PellucaCableCarStation_Layout",
       "width": 13,
       "height": 12,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/PellucaCableCarStation/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCableCarStation/map.bin"
@@ -5116,7 +5116,7 @@
       "name": "MirrohBaseCampCableCarStation_Layout",
       "width": 13,
       "height": 12,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/MirrohBaseCampCableCarStation/border.bin",
       "blockdata_filepath": "data/layouts/MirrohBaseCampCableCarStation/map.bin"

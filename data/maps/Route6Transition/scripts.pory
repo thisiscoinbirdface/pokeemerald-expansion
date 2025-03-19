@@ -14,6 +14,7 @@ script Route6_Transition_Weather_StormTrigger{
 
 script Route6_Transition_KohlaBattle_Trigger{
     lockall
+    warp(MAP_ROUTE7, 15, 15)
 
     //move kohla
     applymovement(1, moves(face_right))
