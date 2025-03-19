@@ -1290,3 +1290,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PellucaCableCarStation/scripts.inc"
 
 	.include "data/maps/MirrohBaseCampCableCarStation/scripts.inc"
+
+	.include "data/maps/MirrohBaseCamp_PokemonCenter/scripts.inc"
+
+	.include "data/maps/MirrohBaseCamp_Houses/scripts.inc"
+
+	.include "data/maps/MirrohBaseCampGym/scripts.inc"

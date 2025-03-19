@@ -111,9 +111,12 @@
     "PellucaFishery",
     "PellucaCityGym",
     "Route7",
-    "MirrohBaseCamp",
     "PellucaCableCarStation",
-    "MirrohBaseCampCableCarStation"
+    "MirrohBaseCamp",
+    "MirrohBaseCampCableCarStation",
+    "MirrohBaseCamp_PokemonCenter",
+    "MirrohBaseCamp_Houses",
+    "MirrohBaseCampGym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

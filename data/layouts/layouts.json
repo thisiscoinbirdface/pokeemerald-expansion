@@ -5120,6 +5120,36 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/MirrohBaseCampCableCarStation/border.bin",
       "blockdata_filepath": "data/layouts/MirrohBaseCampCableCarStation/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_BASE_CAMP_POKEMON_CENTER",
+      "name": "MirrohBaseCamp_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/MirrohBaseCamp_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohBaseCamp_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_BASE_CAMP_HOUSES",
+      "name": "MirrohBaseCamp_Houses_Layout",
+      "width": 12,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/MirrohBaseCamp_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohBaseCamp_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_BASE_CAMP_GYM",
+      "name": "MirrohBaseCampGym_Layout",
+      "width": 10,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleTent",
+      "border_filepath": "data/layouts/MirrohBaseCampGym/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohBaseCampGym/map.bin"
     }
   ]
 }

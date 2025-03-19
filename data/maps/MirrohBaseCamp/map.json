@@ -146,6 +146,34 @@
       "elevation": 0,
       "dest_map": "MAP_MIRROH_BASE_CAMP_CABLE_CAR_STATION",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_HOUSES",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_HOUSES",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 18,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
