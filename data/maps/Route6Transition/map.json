@@ -36,7 +36,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_ROUTE6_KOHLA_BATTLE"
     }
   ],
   "warp_events": [
@@ -54,12 +54,12 @@
     },
     {
       "type": "trigger",
-      "x": 18,
-      "y": 38,
+      "x": 17,
+      "y": 33,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Route6_Transition_KohlaBattle_Trigger"
+      "script": "Route6_Transition_KohlaBattle_Trigger0"
     },
     {
       "type": "trigger",
@@ -69,6 +69,15 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Route6_Transition_Weather_StormTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route6_Transition_KohlaBattle_Trigger1"
     }
   ],
   "bg_events": [

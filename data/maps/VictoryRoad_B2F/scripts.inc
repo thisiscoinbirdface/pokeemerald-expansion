@@ -2,7 +2,7 @@ VictoryRoad_B2F_MapScripts::
 	.byte 0
 
 VictoryRoad_B2F_EventScript_Vito::
-	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
+	trainerbattle_single TRAINER_NONE, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
 	msgbox VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE
 	end
 

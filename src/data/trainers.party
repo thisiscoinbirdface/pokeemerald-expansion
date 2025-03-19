@@ -823,11 +823,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Yamper
-Level: 20
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Kirlia
 Level: 21
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Dewott
+Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Ceruledge @ Oran Berry
@@ -1516,31 +1520,36 @@ Kadabra
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_VITO ===
-Name: VITO
-Class: Cooltrainer
-Pic: Cooltrainer M
+=== TRAINER_ROUTE6_KOHLA ===
+Name: Kohla
+Class: Ace Rookie
+Pic: Wally
 Gender: Male
-Music: Cool
-Items: Full Restore
+Music: Aqua
+Items: Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Dodrio
-Level: 42
+Kirlia
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Kadabra
-Level: 42
+Boltund
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Electrode
-Level: 42
+Axew
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Shiftry
-Level: 42
+Dewott
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ceruledge
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_OWEN ===
 Name: OWEN

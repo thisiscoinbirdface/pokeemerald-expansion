@@ -12,24 +12,50 @@ script Route6_Transition_Weather_StormTrigger{
     }
 }
 
-script Route6_Transition_KohlaBattle_Trigger{
-    lockall
-    warp(MAP_ROUTE7, 15, 15)
+script Route6_Transition_KohlaBattle_Trigger0{
+    if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
 
-    //move kohla
-    applymovement(1, moves(face_right))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    msgbox(format("KOHLA: Where do you think you're going?"))
-    release
+    lockall
+    delay(60)
+    //move myself
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 4))
+    waitmovement(0)
+    call(Route6_Transition_EventScript_KohlaBattle)
+}
+script Route6_Transition_KohlaBattle_Trigger1{
+    if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
+    lockall
+    delay(60)
+    //move myself
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down * 4))
+    waitmovement(0)
     call(Route6_Transition_EventScript_KohlaBattle)
 }
 
 script Route6_Transition_EventScript_KohlaBattle{
 
-    
-    
+    //Dialogue
+    msgbox(format("KOHLA: I've been waiting for you.\pOnce again you save the day while I run off chasing dead leads. Your stupid Professor RUE's lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
+    release
+
+    //Battle
+    trainerbattle_no_intro(TRAINER_ROUTE6_KOHLA, "...again...")
+
+    applymovement(1, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("KOHLA: No!! Not again!"))
+    applymovement(1, moves(face_right))
+    delay(24)
+    msgbox(format("BOLTUND, you're too weak! You just lost me the battle! You need to push yourself harder!"))
+    applymovement(1, moves(face_up))
+    delay(24)
+    msgbox(format("KOHLA: {PLAYER}, this isn't over. Mark my words!"))
+    release
+
+    applymovement(1, moves(walk_down * 7))
+    removeobject(1)    
+
     //End
-    giveitem(ITEM_MACH_BIKE)
     setflag(FLAG_ROUTE6_KOHLA_BATTLE)
     releaseall
     end

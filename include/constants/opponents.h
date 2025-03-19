@@ -124,7 +124,10 @@
     #define TRAINER_SOMBERHQ_H               80
     #define TRAINER_SOMBERHQ_MELEA           81
 
-#define TRAINER_VITO                         82
+//Route 6 Kohla encounter
+#define TRAINER_ROUTE6_KOHLA                 82
+
+//Route 6 Trainers
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84
 #define TRAINER_WILTON_3                     85
