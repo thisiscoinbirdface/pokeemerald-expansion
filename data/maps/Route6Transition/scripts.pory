@@ -16,16 +16,17 @@ script Route6_Transition_KohlaBattle_Trigger0{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
 
     lockall
-    delay(60)
+    delay(30)
     //move myself
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 4))
     waitmovement(0)
     call(Route6_Transition_EventScript_KohlaBattle)
 }
+
 script Route6_Transition_KohlaBattle_Trigger1{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
     lockall
-    delay(60)
+    delay(30)
     //move myself
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down * 4))
     waitmovement(0)
@@ -47,12 +48,14 @@ script Route6_Transition_EventScript_KohlaBattle{
     applymovement(1, moves(face_right))
     delay(24)
     msgbox(format("BOLTUND, you're too weak! You just lost me the battle! You need to push yourself harder!"))
+    release
     applymovement(1, moves(face_up))
     delay(24)
     msgbox(format("KOHLA: {PLAYER}, this isn't over. Mark my words!"))
     release
 
     applymovement(1, moves(walk_down * 7))
+    waitmovement(0)
     removeobject(1)    
 
     //End
