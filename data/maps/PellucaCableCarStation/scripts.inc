@@ -1,4 +1,3 @@
-raw `
 .set LOCALID_ATTENDANT, 1
 
 PellucaCableCarStation_MapScripts::
@@ -97,4 +96,3 @@ PellucaCableCarStation_Text_StepThisWay:
 PellucaCableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"
 
-`

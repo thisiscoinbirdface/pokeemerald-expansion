@@ -133,7 +133,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 32,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_CABLE_CAR_STATION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_BASE_CAMP_CABLE_CAR_STATION",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

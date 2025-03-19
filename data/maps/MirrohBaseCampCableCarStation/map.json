@@ -1,7 +1,7 @@
 {
-  "id": "MAP_PELLUCA_CABLE_CAR_STATION",
-  "name": "PellucaCableCarStation",
-  "layout": "LAYOUT_PELLUCA_CABLE_CAR_STATION",
+  "id": "MAP_MIRROH_BASE_CAMP_CABLE_CAR_STATION",
+  "name": "MirrohBaseCampCableCarStation",
+  "layout": "LAYOUT_MIRROH_BASE_CAMP_CABLE_CAR_STATION",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -46,14 +46,14 @@
       "x": 7,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE7",
+      "dest_map": "MAP_MIRROH_BASE_CAMP",
       "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE7",
+      "dest_map": "MAP_MIRROH_BASE_CAMP",
       "dest_warp_id": "1"
     }
   ],

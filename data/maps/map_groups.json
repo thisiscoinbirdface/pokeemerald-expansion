@@ -112,7 +112,8 @@
     "PellucaCityGym",
     "Route7",
     "MirrohBaseCamp",
-    "PellucaCableCarStation"
+    "PellucaCableCarStation",
+    "MirrohBaseCampCableCarStation"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

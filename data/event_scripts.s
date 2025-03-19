@@ -1288,3 +1288,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PellucaCityPokemart/scripts.inc"
 
 	.include "data/maps/PellucaCableCarStation/scripts.inc"
+
+	.include "data/maps/MirrohBaseCampCableCarStation/scripts.inc"
