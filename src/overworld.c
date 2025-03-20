@@ -2891,10 +2891,11 @@ static void InitLinkPlayerQueueScript(void)
     LockPlayerFieldControls();
 }
 
+#include "vol_start_menu.h"
 static void InitLinkRoomStartMenuScript(void)
 {
     PlaySE(SE_WIN_OPEN);
-    ShowStartMenu();
+    HeatStartMenu_Init();
     LockPlayerFieldControls();
 }
 
