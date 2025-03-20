@@ -614,7 +614,7 @@
 #define ITEM_RAZOR_CLAW 492
 #define ITEM_RAZOR_FANG 493
 #define ITEM_EVIOLITE 494
-#define ITEM_FLOAT_STONE 495
+#define ITEM_FLOAT_STONE 495    //This is the trade evo item now
 #define ITEM_ROCKY_HELMET 496
 #define ITEM_AIR_BALLOON 497
 #define ITEM_RED_CARD 498

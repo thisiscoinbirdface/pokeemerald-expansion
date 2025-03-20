@@ -13,42 +13,54 @@ mapscripts SilversunCity_Sewers_MapScripts{}
 
 
 //NPCs
+//dude at market
 script SilversunCity_Sewers_NPC1{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("I bet there's no return policy on any defected products."))
     releaseall
     end
 }
+//scientist (trade)
 script SilversunCity_Sewers_NPC2{
     lockall
-    faceplayer
-    msgbox(format(""))
+    msgbox(format("You see that giant filtration device? I was in charge of building it. My MAGNEMITE and I worked tirelessly to finish it in time. It's our biggest accomplishment!"))
     releaseall
     end
 }
+//woman in middle
 script SilversunCity_Sewers_NPC3{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal."))
     releaseall
     end
 }
+//dude at market
 script SilversunCity_Sewers_NPC4{
     lockall
     faceplayer
-    msgbox(format(""))
-    releaseall
-    end
-}
-script SilversunCity_Sewers_NPC5{
-    lockall
-    faceplayer
-    msgbox(format(""))
+    msgbox(format("Don't tell anyone I'm here! I came to find a way to evolve my SCYTHER."))
     releaseall
     end
 }
 
+//other man in middle
+script SilversunCity_Sewers_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("All this toxic runoff gets filtered before entering the HOYA RIVER. Then it goes south towards PELLUCA CITY."))
+    releaseall
+    end
+}
+//Man quest at entrance
+script SilversunCity_Sewers_NPC6{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
 
 
 
@@ -66,35 +78,19 @@ script SilversunCity_Sewers_NPC5{
 
 //Trainers
 script SilversunCity_Sewers_Trainer_A{
-    trainerbattle_single(TRAINER_SEWERS_A, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SEWERS_A, format("I'm not like the other rich kids at school, because I'm not afraid to get my hands dirty!"), "Your hands are dirty too!")
+    msgbox(format("I came down here to catch some POISON type {PKMN} to round out my team, but I should go back up now. This place stinks."))
     releaseall
     end
 }
+//Hex maniac
 script SilversunCity_Sewers_Trainer_B{
-    trainerbattle_single(TRAINER_SEWERS_B, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SEWERS_B, format("The resonance is strong here...the toxic water vapour wafts through your nostril...you are suspended...and about to lose!"), "The water stinks!")
+    msgbox(format("I thought the toxicity would help me ascend."))
     releaseall
     end
 }
-script SilversunCity_Sewers_Trainer_C{
-    trainerbattle_single(TRAINER_SEWERS_C, format(""), "")
-    msgbox(format(""))
-    releaseall
-    end
-}
-script SilversunCity_Sewers_Trainer_D{
-    trainerbattle_single(TRAINER_SEWERS_D, format(""), "")
-    msgbox(format(""))
-    releaseall
-    end
-}
-script SilversunCity_Sewers_Trainer_E{
-    trainerbattle_single(TRAINER_SEWERS_E, format(""), "")
-    msgbox(format(""))
-    releaseall
-    end
-}
+
 
 
 
@@ -108,23 +104,62 @@ script SilversunCity_Sewers_Trainer_E{
 
 
 //Black Market
+//TMs dude
 script SilversunCity_Sewers_Market_A{
     lock
 	faceplayer
-	message(format("Psst! Hey, you! Check out these goods I've got!"))
+	message(format("Can't beat GLORIA? I'll hook you up with the best stuff."))
 	waitmessage
 	pokemart(SilversunCity_Sewers_Market_A_Inventory)
-	msgbox(format("Then scram!"), MSGBOX_DEFAULT)
+	msgbox(format("Stay a loser then!"), MSGBOX_DEFAULT)
 	release
 	end
 }
 
 mart SilversunCity_Sewers_Market_A_Inventory{
-    ITEM_POTION
-    ITEM_POKE_BALL
-    ITEM_ANTIDOTE
-    ITEM_PARALYZE_HEAL
-    ITEM_ENERGY_POWDER
-    ITEM_REPEL
+    ITEM_TM16
+    ITEM_TM21
+    ITEM_TM36
+    ITEM_TM41
+    ITEM_TM46
 }
 
+//Ability capsules dude
+script SilversunCity_Sewers_Market_B{
+    lock
+	faceplayer
+	message(format("Psst! Hey, you! Check out these goods I've got!"))
+	waitmessage
+	pokemart(SilversunCity_Sewers_Market_B_Inventory)
+	msgbox(format("Then scram!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart SilversunCity_Sewers_Market_B_Inventory{
+    ITEM_ZINC
+    ITEM_CARBOS
+    ITEM_IRON
+    ITEM_CALCIUM
+    ITEM_PROTEIN
+    ITEM_HP_UP
+}
+
+//Random evo items dude
+script SilversunCity_Sewers_Market_C{
+    lock
+	faceplayer
+	message(format("You look like you'd make good use of this stuff!"))
+	waitmessage
+	pokemart(SilversunCity_Sewers_Market_C_Inventory)
+	msgbox(format("Quit wasting my time!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart SilversunCity_Sewers_Market_C_Inventory{
+    ITEM_BLACK_AUGURITE
+    ITEM_DUBIOUS_DISC
+    ITEM_REAPER_CLOTH
+    ITEM_FLOAT_STONE
+}

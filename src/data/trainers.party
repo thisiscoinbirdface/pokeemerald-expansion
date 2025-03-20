@@ -1118,37 +1118,37 @@ Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SEWERS_A ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: GONDOR
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 29
+Grimer-Alola
+Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Marill
-Level: 29
+Gurdurr
+Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_SEWERS_B ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
+Name: Tinglia
+Class: Hex Maniac
+Pic: Hex Maniac
 Gender: Female
-Music: Girl
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 32
+Litwick
+Level: 25
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Marill
-Level: 32
+Greavard
+Level: 26
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_SEWERS_C ===
