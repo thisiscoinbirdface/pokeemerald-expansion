@@ -582,9 +582,10 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
 #include "vol_start_menu.h"
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
-    HeatStartMenu_Init();
 //    ReturnToFieldOpenStartMenu();
-    return TRUE;
+    FadeInFromBlack();
+    HeatStartMenu_Init();
+    return TRUE;  
 }
 
 void ShowReturnToFieldStartMenu(void)
