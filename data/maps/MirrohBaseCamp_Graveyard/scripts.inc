@@ -1,4 +1,4 @@
-MirrohBaseCamp_Graveyard_Mapscripts::
+MirrohBaseCamp_Graveyard_MapScripts::
 	.byte 0
 
 
