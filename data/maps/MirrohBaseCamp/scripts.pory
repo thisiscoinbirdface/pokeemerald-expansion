@@ -1,0 +1,77 @@
+mapscripts MirrohBaseCamp_MapScripts{}
+
+//Moka was here - gubu I love you <3
+
+//3 vendors
+script MirrohBaseCamp_EventScript_Vendor1{
+    lockall
+	faceplayer
+	message(format("Our supplies are limited but useful to trek up MT MIRROH!"))
+	waitmessage
+	pokemart(MirrohBaseCamp_Vendor1_Inventory)
+	msgbox(format("Come again!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart MirrohBaseCamp_Vendor1_Inventory{
+    ITEM_GREAT_BALL
+    ITEM_ICE_HEAL
+    ITEM_SUPER_REPEL
+    ITEM_ESCAPE_ROPE
+}
+
+script MirrohBaseCamp_EventScript_Vendor2{
+    lockall
+	faceplayer
+	message(format("I found all this inside MT MIRROH just yesterday!"))
+	waitmessage
+	pokemart(MirrohBaseCamp_Vendor1_Inventory)
+	msgbox(format("C'mon, have another look!"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart MirrohBaseCamp_Vendor1_Inventory{
+    ITEM_NEVER_MELT_ICE
+    ITEM_ICE_GEM
+    ITEM_ENERGY_ROOT
+}
+
+script MirrohBaseCamp_EventScript_Vendor3{
+    lockall
+	faceplayer
+	message(format("Everything you see is homemade. Anything you like?"))
+	waitmessage
+	pokemart(MirrohBaseCamp_Vendor1_Inventory)
+	msgbox(format("You didn't like anything?"), MSGBOX_DEFAULT)
+	release
+	end
+}
+
+mart MirrohBaseCamp_Vendor3_Inventory{
+    ITEM_CASTELIACONE
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+}
+
+
+
+//2 NPCs
+script MirrohBaseCamp_EventScript_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("It's so sad and lonely up here...I want to grow up fast so I can go see the rest of Cormoria!"))
+    releaseall
+    end
+}
+script MirrohBaseCamp_EventScript_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("The {PKMN} Graveyard lies ahead. Please be respectful."))
+    releaseall
+    end
+}
+
+
+

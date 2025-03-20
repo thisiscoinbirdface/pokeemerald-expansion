@@ -30,7 +30,13 @@ script Route4_EventScript_EvilTeam{
         TRAINER_ROUTE4_GRUNTS, 
         format("Stupid kid!")    
     )
+    if (var(VAR_RESULT) == 1){
+        goto(Route4_EventScript_EvilTeamDefeated)
+    }
+    releaseall
+}
 
+script Route4_EventScript_EvilTeamDefeated{
     //Final dialogue
     applymovement(LOCALID_GRUNT1, moves(face_right))
     applymovement(LOCALID_GRUNT2, moves(face_left)) 
@@ -54,7 +60,6 @@ script Route4_EventScript_EvilTeam{
     setflag(FLAG_ROUTE4_EVIL_BATTLE)
     fadescreen(FADE_FROM_BLACK)
     releaseall
-
 }
 
 

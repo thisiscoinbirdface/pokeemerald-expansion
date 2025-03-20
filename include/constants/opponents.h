@@ -145,9 +145,13 @@
 #define TRAINER_ROUTE6_GRUNT2                95
 #define TRAINER_ROUTE6_GAB                    96
 
+//Pelluca random trainer
 #define TRAINER_SHANNON                      97
-#define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99
+
+//Mirroh Base Camp
+#define TRAINER_MIRROHBASECAMP_KOHLA        98
+#define TRAINER_MIRROHBASECAMP_LEADER       99
+
 #define TRAINER_JULIE                       100
 #define TRAINER_BROOKE_2                    101
 #define TRAINER_BROOKE_3                    102

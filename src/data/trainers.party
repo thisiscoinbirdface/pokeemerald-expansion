@@ -1847,27 +1847,31 @@ Claydol
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MICHELLE ===
-Name: MICHELLE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
+=== TRAINER_MIRROHBASECAMP_KOHLA ===
+Name: Kohla
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Torkoal
-Level: 42
+Axew
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Medicham
-Level: 42
+Dewott
+Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ludicolo
-Level: 42
+Gallade @ Galladite
+Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Ceruledge
+Level: 35
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_CAROLINE ===
 Name: CAROLINE

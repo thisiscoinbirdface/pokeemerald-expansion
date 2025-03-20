@@ -12,7 +12,7 @@ VictoryRoad_B1F_EventScript_Shannon::
 	end
 
 VictoryRoad_B1F_EventScript_Michelle::
-	trainerbattle_single TRAINER_MICHELLE, VictoryRoad_B1F_Text_MichelleIntro, VictoryRoad_B1F_Text_MichelleDefeat
+	trainerbattle_single TRAINER_NONE, VictoryRoad_B1F_Text_MichelleIntro, VictoryRoad_B1F_Text_MichelleDefeat
 	msgbox VictoryRoad_B1F_Text_MichellePostBattle, MSGBOX_AUTOCLOSE
 	end
 

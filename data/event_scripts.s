@@ -1296,3 +1296,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MirrohBaseCamp_Houses/scripts.inc"
 
 	.include "data/maps/MirrohBaseCampGym/scripts.inc"
+
+	.include "data/maps/MirrohBaseCamp_Graveyard/scripts.inc"

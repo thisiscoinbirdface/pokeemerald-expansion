@@ -5150,6 +5150,16 @@
       "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/MirrohBaseCampGym/border.bin",
       "blockdata_filepath": "data/layouts/MirrohBaseCampGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_BASE_CAMP_GRAVEYARD",
+      "name": "MirrohBaseCamp_Graveyard_Layout",
+      "width": 20,
+      "height": 38,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/MirrohBaseCamp_Graveyard/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohBaseCamp_Graveyard/map.bin"
     }
   ]
 }

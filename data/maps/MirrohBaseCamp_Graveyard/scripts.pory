@@ -1,0 +1,39 @@
+mapscripts MirrohBaseCamp_Graveyard_Mapscripts{}
+
+
+
+
+
+
+//Kohla battle
+script MirrohBaseCamp_Graveyard_KohlaBattle{
+    lockall
+    faceplayer
+    //kohla talk
+    delay(30)
+    msgbox(format("KOHLA: It's you."))
+    release
+    applymovement(1, moves(face_up))
+    delay(48)
+    msgbox(format("KOHLA: Do you know what happens if you push something too hard?"))
+    release
+    delay(48)
+    msgbox(format("KOHLA: No, I suppose you don't."))
+
+    //batle
+    trainerbattle_no_intro(TRAINER_MIRROHBASECAMP_KOHLA, "")
+
+    //stare at player
+    delay(48)    
+    msgbox(format("KOHLA: I have to carry on. Let's do the right thing and go stop Team Somber.\pI'll see you atop MT MIRROH."))
+    release
+    delay(48)
+    applymovement(1, moves(walk_left * 3 walk_down * 7))
+    waitmovement(0)
+    removeobject(1)
+
+    //setflag
+    setflag(FLAG_MIRROH_KOHLA_BATTLE)
+    releaseall
+
+}

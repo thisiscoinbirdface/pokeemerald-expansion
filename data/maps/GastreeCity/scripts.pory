@@ -142,6 +142,7 @@ script GastreeCity_NPC9{
                 msgbox(format("SKITTY already knows CUT, so I don't need it any more. A {PKMN} with CUT can cut any small trees in its path. But you have to have at least one GYM BADGE to use it."))
                 setflag(FLAG_GASTREE_NPC_SKITTY)
                 clearflag(FLAG_HIDE_GASTREE_SKITTY)
+                removeitem(ITEM_SKITTY)
                 addobject(12)
 
                 //Complete quest
