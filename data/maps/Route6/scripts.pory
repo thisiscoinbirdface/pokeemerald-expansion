@@ -1,3 +1,9 @@
+raw`
+    .set LOCALID_GAB, 29
+    .set LOCALID_GRUNT1, 11
+    .set LOCALID_GRUNT2, 10
+`
+
 mapscripts Route6_MapScripts{}
 
 
@@ -198,32 +204,81 @@ script Route6_NPC4{
 }
 
 
-script Route6_NPC5{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//GABRIELLE encounter
+script Route6_Gabrielle_Trigger{
+    if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)) {end}
+
     lockall
-    faceplayer
-    msgbox(format(""))
+
+    //Dialogue
+    //no longer a part of somber, now give us all your pokemon
+    msgbox(format("GRUNT: C'mon GABRIELLE - you've got nowhere to run. Now give us your {PKMN}!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\nHehe...we've always been eyeing your ZORUA, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
+    release 
+
+    //Notice
+    applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+    applymovement(LOCALID_GAB, moves(walk_down * 2 walk_left *2))
+    waitmovement(0)
+    applymovement(LOCALID_GRUNT1, moves(face_down))
+    applymovement(LOCALID_GRUNT2, moves(face_down))
+
+    msgbox(format("GABRIELLE: {PLAYER}, it's you! These grunts are trying to take my {PKMN} off me - you have to help!"))
+    applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
+    applymovement(LOCALID_GRUNT2, moves(jump_in_place_down))
+    msgbox(format("GRUNT: Have you no shame GABRIELLE? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your {PKMN} AND beat the trainer that's stopped our plans twice!"))
+    release
+    //walk up
+    applymovement(LOCALID_GAB, moves(walk_right * 2 walk_up *2 face_left))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 walk_up face_left))    
+    //battle
+    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zoroark!", TRAINER_ROUTE6_GRUNT2, "I need better {PKMN}!", PARTNER_ROUTE6_GAB)
+    //somber exit
+    //
+    msgbox(format("GRUNT: You got lucky that {PLAYER} was around, GABRIELLE! Next time we'll get your ZOROARK for sure!"))
+    release
+    //gabrielle thanks and lives in pelluca
+    applymovement(LOCALID_GRUNT1, moves(walk_down * 2 walk_left * 3 walk_down *4))
+    applymovement(LOCALID_GRUNT2, moves(walk_down walk_left * 3 walk_down *4))   
+    waitmovement(0)
+
+    removeobject(LOCALID_GRUNT1)
+    removeobject(LOCALID_GRUNT2)
+
+    applymovement(LOCALID_GAB, moves(face_down))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+
+    msgbox(format("GABRIELLE: Thank you {PLAYER}. You saved me there.\p...\pGABRIELLE: I live PELLUCA CITY, just past the HOYA RIVER. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
+    release
+    applymovement(LOCALID_GRUNT1, moves(walk_left walk_down * 2 walk_left * 3 walk_down *4))    
+    waitmovement(0)
+    removeobject(LOCALID_GAB)
+    setflag(FLAG_ROUTE6_GABRIELLE_BULLY)
+
     releaseall
-    end
-}
-script Route6_NPC6{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
-    end
-}
-script Route6_NPC7{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
-    end
-}
-script Route6_NPC8{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
-    end
 }
 

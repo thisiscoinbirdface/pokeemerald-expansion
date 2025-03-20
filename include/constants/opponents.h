@@ -139,14 +139,11 @@
 #define TRAINER_ROUTE6_I                     91
 #define TRAINER_ROUTE6_J                     92
 #define TRAINER_ROUTE6_K                     93
-#define TRAINER_ROUTE6_L                     94
-#define TRAINER_ROUTE6_M                     95
 
 //Route 6 Gabrielle double battle
-#define TRAINER_HOPE                         96
-
-
-
+#define TRAINER_ROUTE6_GRUNT1                94
+#define TRAINER_ROUTE6_GRUNT2                95
+#define TRAINER_ROUTE_GAB                    96
 
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98

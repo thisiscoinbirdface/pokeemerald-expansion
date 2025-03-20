@@ -120,6 +120,7 @@ script SilversunCity_NPC3{
     lockall
     faceplayer
     msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))
+    warp(MAP_ROUTE6, 29, 105)
     releaseall
     end
 }
