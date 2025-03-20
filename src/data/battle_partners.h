@@ -15,7 +15,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 0,
@@ -32,7 +32,7 @@
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 3,
@@ -100,6 +100,58 @@
                 MOVE_SOLAR_BEAM,
                 MOVE_DRAGON_CLAW,
             },
+            },
+        },
+    },
+#line 46
+    [DIFFICULTY_NORMAL][PARTNER_ROUTE6_GAB] =
+    {
+#line 47
+        .trainerName = _("GABRIELLE"),
+#line 48
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+#line 49
+        .trainerPic = TRAINER_BACK_PIC_COOLTRAINER_F,
+        .encounterMusic_gender =
+#line 50
+F_TRAINER_FEMALE | 
+#line 51
+            TRAINER_ENCOUNTER_MUSIC_COOL,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 53
+            .species = SPECIES_ZOROARK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 55
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 54
+            .lvl = 30,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 57
+            .species = SPECIES_BALTOY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 59
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 58
+            .lvl = 28,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 61
+            .species = SPECIES_MAWILE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 63
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 62
+            .lvl = 28,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },

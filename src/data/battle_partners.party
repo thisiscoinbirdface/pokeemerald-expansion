@@ -43,15 +43,12 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Dragon Claw
 
 
-=== TRAINER_ROUTE6_GAB ===
+=== PARTNER_ROUTE6_GAB ===
 Name: GABRIELLE
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
 
 Zoroark
 Level: 30
