@@ -14,7 +14,7 @@ MirrohBaseCampGym_Leader::
 # 13 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
 # 14 "data//maps/MirrohBaseCampGym/scripts.pory"
-	delay 24
+	delay 60
 # 15 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Leader_Text_2
 # 16 "data//maps/MirrohBaseCampGym/scripts.pory"
@@ -38,12 +38,12 @@ MirrohBaseCampGym_Leader::
 # 25 "data//maps/MirrohBaseCampGym/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCampGym_Leader_5
-# 55 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 71 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Leader_Text_12
-# 56 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 72 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
 MirrohBaseCampGym_Leader_1:
-# 59 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 75 "data//maps/MirrohBaseCampGym/scripts.pory"
 	releaseall
 	return
 
@@ -59,35 +59,49 @@ MirrohBaseCampGym_Leader_5:
 	fadescreen FADE_TO_BLACK
 # 28 "data//maps/MirrohBaseCampGym/scripts.pory"
 	setobjectxy OBJ_EVENT_ID_PLAYER, 1, 5
-# 29 "data//maps/MirrohBaseCampGym/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCampGym_Leader_Movement_1
 # 30 "data//maps/MirrohBaseCampGym/scripts.pory"
-	applymovement 1, MirrohBaseCampGym_Leader_Movement_2
+	special SpawnCameraObject
 # 31 "data//maps/MirrohBaseCampGym/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohBaseCampGym_Leader_Movement_1
 # 32 "data//maps/MirrohBaseCampGym/scripts.pory"
-	msgbox MirrohBaseCampGym_Leader_Text_7
+	waitmovement 0
 # 33 "data//maps/MirrohBaseCampGym/scripts.pory"
-	release
+	special RemoveCameraObject
+# 34 "data//maps/MirrohBaseCampGym/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCampGym_Leader_Movement_2
+# 35 "data//maps/MirrohBaseCampGym/scripts.pory"
+	applymovement 1, MirrohBaseCampGym_Leader_Movement_3
 # 36 "data//maps/MirrohBaseCampGym/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_LEADER, MirrohBaseCampGym_Leader_Text_8
-# 40 "data//maps/MirrohBaseCampGym/scripts.pory"
-	msgbox MirrohBaseCampGym_Leader_Text_9
-# 41 "data//maps/MirrohBaseCampGym/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 37 "data//maps/MirrohBaseCampGym/scripts.pory"
+	msgbox MirrohBaseCampGym_Leader_Text_7
+# 38 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCampGym_Leader_Movement_3
+# 41 "data//maps/MirrohBaseCampGym/scripts.pory"
+	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_LEADER, MirrohBaseCampGym_Leader_Text_8
 # 45 "data//maps/MirrohBaseCampGym/scripts.pory"
-	msgbox MirrohBaseCampGym_Leader_Text_10
+	msgbox MirrohBaseCampGym_Leader_Text_9
 # 46 "data//maps/MirrohBaseCampGym/scripts.pory"
-	setflag FLAG_MIRROHBASECAMP_LEADER
-# 47 "data//maps/MirrohBaseCampGym/scripts.pory"
-	giveitem ITEM_MEGA_RING
+	release
+# 48 "data//maps/MirrohBaseCampGym/scripts.pory"
+	special SpawnCameraObject
 # 49 "data//maps/MirrohBaseCampGym/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCampGym_Leader_Movement_4
 # 51 "data//maps/MirrohBaseCampGym/scripts.pory"
-	msgbox MirrohBaseCampGym_Leader_Text_11
+	waitmovement 0
 # 52 "data//maps/MirrohBaseCampGym/scripts.pory"
+	special RemoveCameraObject
+# 61 "data//maps/MirrohBaseCampGym/scripts.pory"
+	msgbox MirrohBaseCampGym_Leader_Text_10
+# 62 "data//maps/MirrohBaseCampGym/scripts.pory"
+	setflag FLAG_MIRROHBASECAMP_LEADER
+# 63 "data//maps/MirrohBaseCampGym/scripts.pory"
+	giveitem ITEM_MEGA_RING
+# 65 "data//maps/MirrohBaseCampGym/scripts.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 67 "data//maps/MirrohBaseCampGym/scripts.pory"
+	msgbox MirrohBaseCampGym_Leader_Text_11
+# 68 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
 	goto MirrohBaseCampGym_Leader_1
 
@@ -98,31 +112,39 @@ MirrohBaseCampGym_Leader_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 29 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 31 "data//maps/MirrohBaseCampGym/scripts.pory"
 MirrohBaseCampGym_Leader_Movement_1:
-# 29 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 31 "data//maps/MirrohBaseCampGym/scripts.pory"
+	walk_left
+# 31 "data//maps/MirrohBaseCampGym/scripts.pory"
+	walk_left
+	step_end
+
+# 34 "data//maps/MirrohBaseCampGym/scripts.pory"
+MirrohBaseCampGym_Leader_Movement_2:
+# 34 "data//maps/MirrohBaseCampGym/scripts.pory"
 	face_right
 	step_end
 
-# 30 "data//maps/MirrohBaseCampGym/scripts.pory"
-MirrohBaseCampGym_Leader_Movement_2:
-# 30 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 35 "data//maps/MirrohBaseCampGym/scripts.pory"
+MirrohBaseCampGym_Leader_Movement_3:
+# 35 "data//maps/MirrohBaseCampGym/scripts.pory"
 	face_left
 	step_end
 
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
-MirrohBaseCampGym_Leader_Movement_3:
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
+MirrohBaseCampGym_Leader_Movement_4:
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 43 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 49 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
 	step_end
 
@@ -147,15 +169,16 @@ MirrohBaseCampGym_Leader_Text_2:
 # 15 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "???: They took the entrance statues\n"
 	.string "out first. Then they removed all the gym\l"
-	.string "puzzle equipment. Finally, one bye one,\l"
-	.string "all my trainers left.$"
+	.string "puzzle equipment.\p"
+	.string "...\p"
+	.string "Finally, one by one, all my trainers left.$"
 
 MirrohBaseCampGym_Leader_Text_3:
 # 18 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: And now it's just me in this\n"
-	.string "empty warehouse. Like a ghost.\p"
-	.string "Just like the rest of this little town\n"
-	.string "of ours.$"
+	.string "empty warehouse. Like a ghost. Just\l"
+	.string "like the rest of this little town of\l"
+	.string "ours.$"
 
 MirrohBaseCampGym_Leader_Text_4:
 # 21 "data//maps/MirrohBaseCampGym/scripts.pory"
@@ -186,40 +209,40 @@ MirrohBaseCampGym_Leader_Text_6:
 # 26 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: You are too kind, trainer. Come\n"
 	.string "then, let us battle. Let these four\l"
-	.string "empty walls be our spectators, let this\l"
-	.string "crooked floor our stadium, and let the\l"
-	.string "silence be our cheers!$"
+	.string "empty walls be our spectators, this\l"
+	.string "crooked floor our stadium, and silence\l"
+	.string "our cheers!$"
 
 MirrohBaseCampGym_Leader_Text_7:
-# 32 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 37 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: Now, trainer, feel the force of\n"
 	.string "these iron fists!$"
 
 MirrohBaseCampGym_Leader_Text_8:
-# 36 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 41 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "A glorious battle!$"
 
 MirrohBaseCampGym_Leader_Text_9:
-# 40 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 45 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: What a beautiful display! What\n"
 	.string "a thrill! This is why we do what we do,\l"
 	.string "trainer!\p"
 	.string "Now come to me.$"
 
 MirrohBaseCampGym_Leader_Text_10:
-# 45 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 61 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: Unfortunately I don't have a\n"
 	.string "badge to award you any more.\p"
-	.string "But I believe I have something better.\n"
-	.string "You see, the closure of this gym is\l"
+	.string "But I have something else.\p"
+	.string "You see, the closure of this gym is\n"
 	.string "destiny's way of telling me and LUCARIO\l"
-	.string "to lay down our fists. IT's time to\l"
-	.string "explore new things. So I won't need this\l"
-	.string "any more, and as my final opponent, I\l"
-	.string "want you to have it.$"
+	.string "to lay down our fists. It's time we\l"
+	.string "explored new things. So I won't need\l"
+	.string "this any more, and as my final opponent,\l"
+	.string "I want you to have it.$"
 
 MirrohBaseCampGym_Leader_Text_11:
-# 51 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 67 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: The MEGA RING will allow you to\n"
 	.string "Mega Evolve specific {PKMN} as long as\l"
 	.string "they hold their unique MEGA STONE.\l"
@@ -227,5 +250,5 @@ MirrohBaseCampGym_Leader_Text_11:
 	.string "world your iron fists!$"
 
 MirrohBaseCampGym_Leader_Text_12:
-# 55 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 71 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: Haha! A fitting finale in a way.$"

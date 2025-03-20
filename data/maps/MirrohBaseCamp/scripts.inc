@@ -43,7 +43,7 @@ MirrohBaseCamp_EventScript_Vendor2::
 # 28 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmessage
 # 29 "data//maps/MirrohBaseCamp/scripts.pory"
-	pokemart MirrohBaseCamp_Vendor1_Inventory
+	pokemart MirrohBaseCamp_Vendor2_Inventory
 # 30 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_EventScript_Vendor2_Text_1, MSGBOX_DEFAULT
 # 31 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -72,7 +72,7 @@ MirrohBaseCamp_EventScript_Vendor3::
 # 45 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmessage
 # 46 "data//maps/MirrohBaseCamp/scripts.pory"
-	pokemart MirrohBaseCamp_Vendor1_Inventory
+	pokemart MirrohBaseCamp_Vendor3_Inventory
 # 47 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_EventScript_Vendor3_Text_1, MSGBOX_DEFAULT
 # 48 "data//maps/MirrohBaseCamp/scripts.pory"

@@ -26,6 +26,11 @@ script MirrohBaseCampGym_Leader{
             msgbox(format("CAROLA: You are too kind, trainer. Come then, let us battle. Let these four empty walls be our spectators, this crooked floor our stadium, and silence our cheers!"))
             fadescreen(FADE_TO_BLACK)
             setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
+
+            special(SpawnCameraObject)
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
+            waitmovement(0)
+            special(RemoveCameraObject)
             applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
             applymovement(1, moves(face_left))
             fadescreen(FADE_FROM_BLACK)
@@ -40,7 +45,18 @@ script MirrohBaseCampGym_Leader{
             msgbox(format("CAROLA: What a beautiful display! What a thrill! This is why we do what we do, trainer!\pNow come to me."))
             release
 
+            special(SpawnCameraObject)
             applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
+//            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_left * 3))
+            waitmovement(0)
+            special(RemoveCameraObject)
+
+
+            // fadescreen(FADE_TO_BLACK)
+            // setobjectxy(OBJ_EVENT_ID_PLAYER, 7, 5)
+            // applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+            // applymovement(1, moves(face_left))
+            // fadescreen(FADE_FROM_BLACK)
 
             msgbox(format("CAROLA: Unfortunately I don't have a badge to award you any more.\pBut I have something else.\pYou see, the closure of this gym is destiny's way of telling me and LUCARIO to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))         
             setflag(FLAG_MIRROHBASECAMP_LEADER)
