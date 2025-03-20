@@ -69,6 +69,7 @@ enum QuestCases
 };
 
 // functions
+void CB2_InitQuestMenu(void);
 void QuestMenu_Init(u8 a0, MainCallback callback);
 u8 QuestMenu_GetSetSubquestState(u8 quest, u8 caseId, u8 childQuest);
 u8 QuestMenu_GetSetQuestState(u8 quest, u8 caseId);

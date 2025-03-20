@@ -52,6 +52,7 @@
 #include "constants/songs.h"
 #include "rtc.h"
 #include "event_object_movement.h"
+#include "quests.h"
 
 /* CALLBACKS */
 static void SpriteCB_IconPoketch(struct Sprite* sprite);
@@ -139,7 +140,7 @@ static EWRAM_DATA u8 sSaveInfoWindowId = 0;
 static const u32 sStartMenuTiles[] = INCBIN_U32("graphics/vol_start_menu/bg.4bpp.lz");
 static const u32 sStartMenuTilemap[] = INCBIN_U32("graphics/vol_start_menu/bg.bin.lz");
 static const u16 sStartMenuPalette[] = INCBIN_U16("graphics/vol_start_menu/bg.gbapal");
-static const u16 gStandardMenuPalette[] = INCBIN_U16("graphics/interface/std_menu.gbapal");
+//static const u16 gStandardMenuPalette[] = INCBIN_U16("graphics/interface/std_menu.gbapal");
 
 //--SPRITE-GFX--
 #define TAG_ICON_GFX 1234
@@ -641,7 +642,7 @@ static void HeatStartMenu_ShowTimeWindow(void)
     CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-static const u8 gText_Poketch[] = _("  Pokenav");
+static const u8 gText_Poketch[] = _("  Quests");
 static const u8 gText_Pokedex[] = _("  Pokedex");
 static const u8 gText_Party[]   = _("    Party ");
 static const u8 gText_Bag[]     = _("      Bag  ");
@@ -1105,6 +1106,7 @@ static void DoCleanUpAndStartSaveMenu(void) {
 static void HeatStartMenu_OpenMenu(void) {
   switch (menuSelected) {
     case MENU_POKETCH:
+      DoCleanUpAndChangeCallback(CB2_InitQuestMenu);      
       break;
     case MENU_POKEDEX:
       DoCleanUpAndChangeCallback(CB2_OpenPokedex);
@@ -1131,6 +1133,9 @@ void GoToHandleInput(void) {
 static void HeatStartMenu_HandleInput_DPADDOWN(void) {
   switch (menuSelected) {
     case MENU_OPTIONS:
+      sHeatStartMenu->flag = 0;
+      menuSelected = 0;
+      HeatStartMenu_UpdateMenuName();
       break;
     default:
       sHeatStartMenu->flag = 0;
@@ -1150,6 +1155,9 @@ static void HeatStartMenu_HandleInput_DPADDOWN(void) {
 static void HeatStartMenu_HandleInput_DPADUP(void) {
   switch (menuSelected) {
     case MENU_POKETCH:
+      sHeatStartMenu->flag = 0;
+      menuSelected = 6;
+      HeatStartMenu_UpdateMenuName();
       break;
     default:
       sHeatStartMenu->flag = 0;

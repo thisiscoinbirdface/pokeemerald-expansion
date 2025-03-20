@@ -74,6 +74,7 @@ EWRAM_DATA static void *questNamePointer = NULL;
 EWRAM_DATA static u8 **questNameArray = NULL;
 
 // This File's Functions
+void CB2_InitQuestMenu(void);
 void QuestMenu_Init(u8 a0, MainCallback callback);
 static void MainCB(void);
 static void VBlankCB(void);
@@ -2550,6 +2551,12 @@ void Task_QuestMenu_OpenFromStartMenu(u8 taskId)
 		QuestMenu_Init(tItemPcParam, CB2_ReturnToFieldWithOpenMenu);
 		DestroyTask(taskId);
 	}
+}
+
+void CB2_InitQuestMenu(void)
+{
+	CleanupOverworldWindowsAndTilemaps();
+	QuestMenu_Init(0, CB2_ReturnToFieldWithOpenMenu);
 }
 
 void QuestMenu_CopyQuestName(u8 *dst, u8 questId)

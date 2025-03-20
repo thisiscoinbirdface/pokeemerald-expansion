@@ -583,7 +583,7 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
     HeatStartMenu_Init();
-    ReturnToFieldOpenStartMenu();
+//    ReturnToFieldOpenStartMenu();
     return TRUE;
 }
 
