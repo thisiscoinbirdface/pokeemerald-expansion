@@ -122,7 +122,7 @@ script GalecrestCityGym_Leader {
         //Describe the badge features (use HMs, allow pokemon control etc.)
         msgbox(format("The STOIC BADGE lets you control {PKMN} upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
         release
-
+        
         //Bye-bye
         msgbox(format("{PLAYER}, despite being a disrespectful chum, I owe you. You showed me my lack of strength. That's why I chose CERULEDGE as my companion. I don't care if other detectives see it as evil, because I see it as strong.\pNow enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
 

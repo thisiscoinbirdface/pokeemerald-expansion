@@ -88,7 +88,7 @@
 #define FLAG_ROUTE6_GABRIELLE_BULLY    0x49 // save gab from the grunts in r6
 #define FLAG_PELLUCA_GABRIELLE_CHOICEBAND    0x4A // get the choice band from gab in pelluca
 #define FLAG_MIRROH_KOHLA_BATTLE    0x4B // battle kohla at the graveyard
-#define FLAG_MIRROH_LEADER    0x4C // Unused Flag
+#define FLAG_MIRROHBASECAMP_LEADER    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag

@@ -144,7 +144,7 @@ SilversunCity_NPC3::
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
 # 123 "data//maps/SilversunCity/scripts.pory"
-	warp MAP_ROUTE6, 29, 105
+	warp MAP_PELLUCA_CITY, 35, 40
 # 124 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
