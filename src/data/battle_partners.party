@@ -45,10 +45,10 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 
 === PARTNER_ROUTE6_GAB ===
 Name: GABRIELLE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+Class: Rival
+Pic: Steven
+Gender: Male
+Music: Male
 
 Zoroark
 Level: 30

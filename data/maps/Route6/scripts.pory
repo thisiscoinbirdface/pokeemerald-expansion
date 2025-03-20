@@ -56,7 +56,7 @@ script Route6_Trainer_D{
 //Cooltrainer
 script Route6_Trainer_E{
     trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the {PKMN} Champion, so I've come here to catch rare {PKMN}. Let me test them on you!"), "No - my rare {PKMN}!")
-    msgbox(format("Catching good {PMKN} isn't enough. I need to train rigorously too."))
+    msgbox(format("Catching good {PKMN} isn't enough. I need to train rigorously too."))
     releaseall
     end
 }
@@ -83,13 +83,20 @@ script Route6_Trainer_H{
 }
 //Dragon tamer
 script Route6_Trainer_I{
-    trainerbattle_single(TRAINER_ROUTE6_H, format("I heard there was a rare DRAGON-type {PKMN} here in Route 6, but I can't find any on land!"), "Why did I find you instead?")
+    trainerbattle_single(TRAINER_ROUTE6_I, format("I heard there was a rare DRAGON-type {PKMN} here in Route 6, but I can't find any on land!"), "Why did I find you instead?")
     msgbox(format("If its not on land, then maybe I need to try fishing..."))
     releaseall
     end
 }
 //Youngster
 script Route6_Trainer_J{
+    trainerbattle_single(TRAINER_ROUTE6_J, format("Past PELLUCA CITY is the MIRROH BASE CAMP and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
+    msgbox(format("If we remember our {PKMN} after they go, are they truly gone?"))
+    releaseall
+    end
+}
+//Hex maniac
+script Route6_Trainer_K{
     trainerbattle_single(TRAINER_ROUTE6_K, format("Past PELLUCA CITY is the MIRROH BASE CAMP and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
     msgbox(format("If we remember our {PKMN} after they go, are they truly gone?"))
     releaseall
@@ -97,19 +104,8 @@ script Route6_Trainer_J{
 }
 
 
-            //UNUSED
-            script Route6_Trainer_L{
-                trainerbattle_single(TRAINER_ROUTE6_L, format(""), "")
-                msgbox(format(""))
-                releaseall
-                end
-            }
-            script Route6_Trainer_M{
-                trainerbattle_single(TRAINER_ROUTE6_M, format(""), "")
-                msgbox(format(""))
-                releaseall
-                end
-            }
+
+
 
 
 
@@ -186,13 +182,12 @@ script Route6_NPC4{
         msgbox(format("These waters are too fierce to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby...I'd like to try music, but I might be no good. What do you think?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //yes
-            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? Can you bring me a RED FLUTE so I can start practicing?"), MSGBOX_YESNO){
+            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? Can you bring me a RED FLUTE so I can start practicing?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     //Start quest
                     msgbox(format("Thank you so much! I think you can buy them in PELLUCA CITY. I'll be waiting here for you!"))
                     setvar(VAR_ROUTE6_FISHERMAN, 1)
                 }
-            }
         } else {
             msgbox(format("Yeah...I suppose I'd be no good. Fishing is all I know."))
         }
@@ -235,7 +230,9 @@ script Route6_Gabrielle_Trigger{
 
     //Dialogue
     //no longer a part of somber, now give us all your pokemon
-    msgbox(format("GRUNT: C'mon GABRIELLE - you've got nowhere to run. Now give us your {PKMN}!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\nHehe...we've always been eyeing your ZORUA, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
+    applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
+    delay(24)    
+    msgbox(format("GRUNT: C'mon GABRIELLE - you've got nowhere to run. Now give us your {PKMN}!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your ZORUA, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
     release 
 
     //Notice
@@ -248,15 +245,29 @@ script Route6_Gabrielle_Trigger{
     applymovement(LOCALID_GRUNT2, moves(face_down))
 
     msgbox(format("GABRIELLE: {PLAYER}, it's you! These grunts are trying to take my {PKMN} off me - you have to help!"))
+    release
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_down))
     msgbox(format("GRUNT: Have you no shame GABRIELLE? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your {PKMN} AND beat the trainer that's stopped our plans twice!"))
     release
     //walk up
+    applymovement(LOCALID_GRUNT1, moves(face_right))
+    applymovement(LOCALID_GRUNT2, moves(face_right))    
     applymovement(LOCALID_GAB, moves(walk_right * 2 walk_up *2 face_left))    
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 walk_up face_left))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 walk_up face_left))
+    waitmovement(0)
+    
     //battle
+	special(SavePlayerParty)
+	fadescreen(FADE_TO_BLACK)
+	special(ChooseHalfPartyForBattle)
+	waitstate
+//	goto_if_ne(VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle)
+//	special(LoadPlayerParty)
+
     multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zoroark!", TRAINER_ROUTE6_GRUNT2, "I need better {PKMN}!", PARTNER_ROUTE6_GAB)
+
+
     //somber exit
     //
     msgbox(format("GRUNT: You got lucky that {PLAYER} was around, GABRIELLE! Next time we'll get your ZOROARK for sure!"))
@@ -282,3 +293,24 @@ script Route6_Gabrielle_Trigger{
     releaseall
 }
 
+
+
+
+
+// MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
+// 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
+// 	waitmovement 0
+// 	special(SavePlayerParty)
+// 	fadescreen(FADE_TO_BLACK)
+// 	special(ChooseHalfPartyForBattle)
+// 	waitstate
+// 	goto_if_ne(VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle)
+// 	special(LoadPlayerParty)
+
+// MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
+// 	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_TABITHA_MOSSDEEP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
+// 	switch VAR_RESULT
+// 	case 1, MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha
+// 	fadescreen FADE_TO_BLACK
+// 	special SetCB2WhiteOut
+// 	waitstate

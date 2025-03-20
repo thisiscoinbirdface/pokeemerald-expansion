@@ -1569,6 +1569,7 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_B ===
+Name: Punchia
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -1585,12 +1586,11 @@ Level: 28
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_ROUTE6_C ===
-Name: WILTON & DIANA
+Name: WILTON
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: Yes
 AI: Basic Trainer
 

@@ -109,14 +109,12 @@
 #line 47
         .trainerName = _("GABRIELLE"),
 #line 48
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_RIVAL,
 #line 49
-        .trainerPic = TRAINER_BACK_PIC_COOLTRAINER_F,
+        .trainerPic = TRAINER_BACK_PIC_STEVEN,
         .encounterMusic_gender =
-#line 50
-F_TRAINER_FEMALE | 
 #line 51
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
