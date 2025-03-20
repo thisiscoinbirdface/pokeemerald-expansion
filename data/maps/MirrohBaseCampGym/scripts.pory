@@ -12,10 +12,10 @@ script MirrohBaseCampGym_Leader{
         msgbox(format("???: Hmm? A trainer? Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left.\pCARONA: My name is CARONA, trainer. I am the former Leader of the MIRROH BASE CAMP GYM. The {PKMN} league recently decomissioned this gym."))
         release
         delay(60)
-        msgbox(format("???: They took the entrance statues out first. Then they removed all the gym puzzle equipment. Finally, one by one, all my trainers left."))
+        msgbox(format("???: They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, all my trainers left."))
         release
         delay(30)
-        msgbox(format("CAROLA: And now it's just me in this empty warehouse. Like a ghost.\pJust like the rest of this little town of ours."))
+        msgbox(format("CAROLA: And now it's just me in this empty warehouse. Like a ghost. Just like the rest of this little town of ours."))
         release
         applymovement(1, moves(emote_exclamation_mark))
         msgbox(format("CAROLA: But I was a Gym Leader once! You understand? I was powerful and strong. I was something, someone! Countless trainers paid me their respects in battle, and to the chosen few destined for the top, I would award the coveted lapel pin known as the IRONFIRST BADGE!"))
@@ -42,7 +42,7 @@ script MirrohBaseCampGym_Leader{
 
             applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
 
-            msgbox(format("CAROLA: Unfortunately I don't have a badge to award you any more.\pBut I believe I have something better. You see, the closure of this gym is destiny's way of telling me and LUCARIO to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))         
+            msgbox(format("CAROLA: Unfortunately I don't have a badge to award you any more.\pBut I have something else.\pYou see, the closure of this gym is destiny's way of telling me and LUCARIO to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))         
             setflag(FLAG_MIRROHBASECAMP_LEADER)
             giveitem(ITEM_MEGA_RING)
             //Play gym badge fanfare
