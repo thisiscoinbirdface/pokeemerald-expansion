@@ -183,36 +183,44 @@ GastreeCity_TeaHouse_EventScript_NPC1::
 	faceplayer
 # 122 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC1_Text_0
+# 123 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
 	return
 
 
 GastreeCity_TeaHouse_EventScript_NPC2::
-# 127 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	lockall
 # 128 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	faceplayer
+	lockall
 # 129 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	faceplayer
+# 130 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC2_Text_0
+# 131 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
 	return
 
 
 GastreeCity_TeaHouse_EventScript_NPC3::
-# 134 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	lockall
-# 135 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	faceplayer
 # 136 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	lockall
+# 137 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	faceplayer
+# 138 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC3_Text_0
+# 139 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
 	return
 
 
 GastreeCity_TeaHouse_EventScript_NPC4::
-# 141 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 144 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
-# 142 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 145 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	faceplayer
-# 143 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 146 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_0
+# 147 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
 	return
 
 
@@ -321,18 +329,18 @@ GastreeCity_TeaHouse_EventScript_NPC1_Text_0:
 	.string "kitchen do great work!$"
 
 GastreeCity_TeaHouse_EventScript_NPC2_Text_0:
-# 129 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 130 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I always come here after a stressful\n"
 	.string "business meeting. Gotta destress after\l"
 	.string "making all this money!$"
 
 GastreeCity_TeaHouse_EventScript_NPC3_Text_0:
-# 136 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 138 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I find that the tea here feeds my\n"
 	.string "creative energies.$"
 
 GastreeCity_TeaHouse_EventScript_NPC4_Text_0:
-# 143 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 146 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I invited my date here because I\n"
 	.string "thought it'd be more unique than taking\l"
 	.string "him to a trendy spot...but he still\l"

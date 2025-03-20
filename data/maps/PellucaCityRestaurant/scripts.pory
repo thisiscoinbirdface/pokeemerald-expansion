@@ -113,7 +113,7 @@ script PellucaCityRestaurant_Cook3{
     if (var(VAR_PELLUCA_COOK) == 1){
         msgbox(format("Have you brought the NEVERMELT ICE?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            checkitem(ITEM_NEVERMELT_ICE)
+            checkitem(ITEM_NEVER_MELT_ICE)
             if (var(VAR_RESULT) == 1){
                 //accept quest
                 msgbox(format("Wonderful! This will keep our ingredients cool until we can fix the fridge. My friend, you must accept this."))

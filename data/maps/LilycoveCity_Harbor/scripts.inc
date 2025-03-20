@@ -115,7 +115,7 @@ LilycoveCity_Harbor_EventScript_GetEonTicketState::
 LilycoveCity_Harbor_EventScript_GetAuroraTicketState::
 	setvar VAR_TEMP_D, 0
 	goto_if_unset FLAG_ENABLE_SHIP_BIRTH_ISLAND, Common_EventScript_NopReturn
-	checkitem ITEM_AURORA_TICKET
+	checkitem ITEM_CABLECAR_PASS
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
 	setvar VAR_TEMP_D, 1
 	goto_if_set FLAG_SHOWN_AURORA_TICKET, Common_EventScript_NopReturn

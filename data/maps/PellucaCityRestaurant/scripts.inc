@@ -188,7 +188,7 @@ PellucaCityRestaurant_Cook3_8:
 
 PellucaCityRestaurant_Cook3_10:
 # 116 "data//maps/PellucaCityRestaurant/scripts.pory"
-	checkitem ITEM_NEVERMELT_ICE
+	checkitem ITEM_NEVER_MELT_ICE
 # 117 "data//maps/PellucaCityRestaurant/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCityRestaurant_Cook3_16
