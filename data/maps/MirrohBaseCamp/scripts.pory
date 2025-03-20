@@ -26,7 +26,7 @@ script MirrohBaseCamp_EventScript_Vendor2{
 	faceplayer
 	message(format("I found all this inside MT MIRROH just yesterday!"))
 	waitmessage
-	pokemart(MirrohBaseCamp_Vendor1_Inventory)
+	pokemart(MirrohBaseCamp_Vendor2_Inventory)
 	msgbox(format("C'mon, have another look!"), MSGBOX_DEFAULT)
 	release
 	end
@@ -43,7 +43,7 @@ script MirrohBaseCamp_EventScript_Vendor3{
 	faceplayer
 	message(format("Everything you see is homemade. Anything you like?"))
 	waitmessage
-	pokemart(MirrohBaseCamp_Vendor1_Inventory)
+	pokemart(MirrohBaseCamp_Vendor3_Inventory)
 	msgbox(format("You didn't like anything?"), MSGBOX_DEFAULT)
 	release
 	end

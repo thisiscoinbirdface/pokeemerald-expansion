@@ -34,7 +34,7 @@ PellucaCableCarStation_EventScript_Attendant::
 	lock
 	faceplayer
 	checkitem ITEM_CABLECAR_PASS
-	goto_if_eq VAR_RESULT, FALSE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
+	goto_if_eq VAR_RESULT, TRUE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
 	msgbox PellucaCableCarStation_Text_NeedPass
 
 PellucaCableCarStation_EventScript_AttendantAskForCableCar::
