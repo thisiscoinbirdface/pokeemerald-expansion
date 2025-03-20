@@ -2653,16 +2653,14 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SEWERS_A] =
     {
 #line 1121
-        .trainerName = _("LOLA"),
+        .trainerName = _("GONDOR"),
 #line 1122
-        .trainerClass = TRAINER_CLASS_TUBER_F,
+        .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 1123
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 1124
-F_TRAINER_FEMALE | 
 #line 1125
-            TRAINER_ENCOUNTER_MUSIC_GIRL,
+            TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 1126
         .doubleBattle = FALSE,
 #line 1127
@@ -2672,23 +2670,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1129
-            .species = SPECIES_MARILL,
+            .species = SPECIES_GRIMER_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1131
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 1130
-            .lvl = 29,
+            .lvl = 25,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 1133
-            .species = SPECIES_MARILL,
+            .species = SPECIES_GURDURR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1135
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 1134
-            .lvl = 29,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -2698,16 +2696,16 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SEWERS_B] =
     {
 #line 1138
-        .trainerName = _("LOLA"),
+        .trainerName = _("Tinglia"),
 #line 1139
-        .trainerClass = TRAINER_CLASS_TUBER_F,
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 1140
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
 #line 1141
 F_TRAINER_FEMALE | 
 #line 1142
-            TRAINER_ENCOUNTER_MUSIC_GIRL,
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 1143
         .doubleBattle = FALSE,
 #line 1144
@@ -2717,23 +2715,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1146
-            .species = SPECIES_MARILL,
+            .species = SPECIES_LITWICK,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1148
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
 #line 1147
-            .lvl = 32,
+            .lvl = 25,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 1150
-            .species = SPECIES_MARILL,
+            .species = SPECIES_GREAVARD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1152
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
 #line 1151
-            .lvl = 32,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
