@@ -179,7 +179,7 @@ script Route6_NPC4{
     }
 
     if (var(VAR_ROUTE6_FISHERMAN) == 0){
-        msgbox(format("These waters are too fierce to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby...I'd like to try music, but I might be no good. What do you think?"), MSGBOX_YESNO)
+        msgbox(format("These waters are too fierce to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby. I'd like to try music, but I might be no good. What do you think? Should I try music?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //yes
             msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? Can you bring me a RED FLUTE so I can start practicing?"), MSGBOX_YESNO)
@@ -187,6 +187,8 @@ script Route6_NPC4{
                     //Start quest
                     msgbox(format("Thank you so much! I think you can buy them in PELLUCA CITY. I'll be waiting here for you!"))
                     setvar(VAR_ROUTE6_FISHERMAN, 1)
+                } else {
+                    msgbox(format("Ahh well, it's back to fishing then."))
                 }
         } else {
             msgbox(format("Yeah...I suppose I'd be no good. Fishing is all I know."))
@@ -278,7 +280,7 @@ script Route6_Gabrielle_HurryUp{
 }
 
 script Route6_Gabrielle_DoBattle{
-    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zoroark!", TRAINER_ROUTE6_GRUNT2, "I need better {PKMN}!", PARTNER_ROUTE6_GAB)
+    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid ZORUA!", TRAINER_ROUTE6_GRUNT2, "I need better {PKMN}!", PARTNER_ROUTE6_GAB)
  	if (var(VAR_RESULT) == 1){
         goto(Route6_Gabrielle_Victory)
     }

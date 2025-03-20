@@ -34,14 +34,16 @@ PellucaCityHouses_GabSibling3::
 # 24 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GabSibling3_Text_0
 # 25 "data//maps/PellucaCityHouses/scripts.pory"
-	showmonpic SPECIES_JANGMO_O, 10, 3
-# 26 "data//maps/PellucaCityHouses/scripts.pory"
-	msgbox PellucaCityHouses_GabSibling3_Text_1
-# 27 "data//maps/PellucaCityHouses/scripts.pory"
 	release
+# 26 "data//maps/PellucaCityHouses/scripts.pory"
+	showmonpic SPECIES_JANGMO_O, 10, 3
+# 27 "data//maps/PellucaCityHouses/scripts.pory"
+	delay 120
 # 28 "data//maps/PellucaCityHouses/scripts.pory"
 	hidemonpic
 # 29 "data//maps/PellucaCityHouses/scripts.pory"
+	msgbox PellucaCityHouses_GabSibling3_Text_1
+# 30 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
@@ -53,16 +55,15 @@ PellucaCityHouses_GabSibling1_Text_0:
 
 PellucaCityHouses_GabSibling2_Text_0:
 # 17 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Big Sis only comes back once in a\n"
-	.string "while...I wish she stayed with us all the\l"
+	.string "I wish Big Sis stayed with us all the\n"
 	.string "time!$"
 
 PellucaCityHouses_GabSibling3_Text_0:
 # 24 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Gabrielle keeps us afloat. Without her,\n"
+	.string "GABRIELLE keeps us afloat. Without her,\n"
 	.string "I wouldn't be able to afford to study. I\l"
 	.string "got her a gift.$"
 
 PellucaCityHouses_GabSibling3_Text_1:
-# 26 "data//maps/PellucaCityHouses/scripts.pory"
+# 29 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "It's the least I can do for her.$"

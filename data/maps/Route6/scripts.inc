@@ -202,7 +202,7 @@ Route6_NPC4_4:
 	compare VAR_ROUTE6_FISHERMAN, 0
 	goto_if_eq Route6_NPC4_8
 Route6_NPC4_7:
-# 197 "data//maps/Route6/scripts.pory"
+# 199 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
@@ -229,8 +229,8 @@ Route6_NPC4_8:
 # 183 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_NPC4_12
-# 192 "data//maps/Route6/scripts.pory"
-	msgbox Route6_NPC4_Text_9
+# 194 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC4_Text_10
 	goto Route6_NPC4_7
 
 Route6_NPC4_10:
@@ -248,6 +248,8 @@ Route6_NPC4_12:
 # 186 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_NPC4_18
+# 191 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC4_Text_9
 	goto Route6_NPC4_7
 
 Route6_NPC4_15:
@@ -274,55 +276,55 @@ Route6_NPC4_18:
 
 
 Route6_Gabrielle_Trigger::
-# 227 "data//maps/Route6/scripts.pory"
-	goto_if_set FLAG_ROUTE6_GABRIELLE_BULLY, Route6_Gabrielle_Trigger_2
 # 229 "data//maps/Route6/scripts.pory"
+	goto_if_set FLAG_ROUTE6_GABRIELLE_BULLY, Route6_Gabrielle_Trigger_2
+# 231 "data//maps/Route6/scripts.pory"
 	lockall
-# 233 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_0
-# 234 "data//maps/Route6/scripts.pory"
-	delay 24
 # 235 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Trigger_Text_0
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_0
 # 236 "data//maps/Route6/scripts.pory"
-	release
-# 239 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_1
-# 240 "data//maps/Route6/scripts.pory"
-	waitmovement 0
-# 241 "data//maps/Route6/scripts.pory"
 	delay 24
+# 237 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Trigger_Text_0
+# 238 "data//maps/Route6/scripts.pory"
+	release
+# 241 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_1
 # 242 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_2
+	waitmovement 0
 # 243 "data//maps/Route6/scripts.pory"
-	waitmovement 0
+	delay 24
 # 244 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_3
+	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_2
 # 245 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_3
-# 247 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Trigger_Text_1
-# 248 "data//maps/Route6/scripts.pory"
-	release
-# 249 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_4
-# 250 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_4
-# 251 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Trigger_Text_2
-# 252 "data//maps/Route6/scripts.pory"
-	release
-# 254 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_5
-# 255 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_5
-# 256 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_6
-# 257 "data//maps/Route6/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Trigger_Movement_7
-# 258 "data//maps/Route6/scripts.pory"
 	waitmovement 0
+# 246 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_3
+# 247 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_3
+# 249 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Trigger_Text_1
+# 250 "data//maps/Route6/scripts.pory"
+	release
+# 251 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_4
+# 252 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_4
+# 253 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Trigger_Text_2
+# 254 "data//maps/Route6/scripts.pory"
+	release
+# 256 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Trigger_Movement_5
+# 257 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Trigger_Movement_5
+# 258 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_6
+# 259 "data//maps/Route6/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Trigger_Movement_7
 # 260 "data//maps/Route6/scripts.pory"
+	waitmovement 0
+# 262 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	return
 
@@ -331,233 +333,233 @@ Route6_Gabrielle_Trigger_2:
 
 
 Route6_Gabrielle_ChooseDoubleBattleParty::
-# 265 "data//maps/Route6/scripts.pory"
-	special SavePlayerParty
-# 266 "data//maps/Route6/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 267 "data//maps/Route6/scripts.pory"
-	special ChooseHalfPartyForBattle
+	special SavePlayerParty
 # 268 "data//maps/Route6/scripts.pory"
-	waitstate
+	fadescreen FADE_TO_BLACK
 # 269 "data//maps/Route6/scripts.pory"
-	goto_if_ne VAR_RESULT, 0, Route6_Gabrielle_DoBattle
+	special ChooseHalfPartyForBattle
 # 270 "data//maps/Route6/scripts.pory"
-	special LoadPlayerParty
+	waitstate
 # 271 "data//maps/Route6/scripts.pory"
+	goto_if_ne VAR_RESULT, 0, Route6_Gabrielle_DoBattle
+# 272 "data//maps/Route6/scripts.pory"
+	special LoadPlayerParty
+# 273 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_HurryUp
 	return
 
 
 Route6_Gabrielle_HurryUp::
-# 276 "data//maps/Route6/scripts.pory"
+# 278 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_HurryUp_Text_0
-# 277 "data//maps/Route6/scripts.pory"
+# 279 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	return
 
 
 Route6_Gabrielle_DoBattle::
-# 281 "data//maps/Route6/scripts.pory"
+# 283 "data//maps/Route6/scripts.pory"
 	multi_2_vs_2 TRAINER_ROUTE6_GRUNT1, Route6_Gabrielle_DoBattle_Text_0, TRAINER_ROUTE6_GRUNT2, Route6_Gabrielle_DoBattle_Text_1, PARTNER_ROUTE6_GAB
-# 282 "data//maps/Route6/scripts.pory"
+# 284 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Gabrielle_DoBattle_2
 Route6_Gabrielle_DoBattle_1:
-# 285 "data//maps/Route6/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 286 "data//maps/Route6/scripts.pory"
-	special SetCB2WhiteOut
 # 287 "data//maps/Route6/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 288 "data//maps/Route6/scripts.pory"
+	special SetCB2WhiteOut
+# 289 "data//maps/Route6/scripts.pory"
 	waitstate
 	return
 
 Route6_Gabrielle_DoBattle_2:
-# 283 "data//maps/Route6/scripts.pory"
+# 285 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_Victory
 	goto Route6_Gabrielle_DoBattle_1
 
 
 Route6_Gabrielle_Victory::
-# 293 "data//maps/Route6/scripts.pory"
+# 295 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_Victory_Text_0
-# 294 "data//maps/Route6/scripts.pory"
-	release
 # 296 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_0
-# 297 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Victory_Movement_1
+	release
 # 298 "data//maps/Route6/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_0
+# 299 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Victory_Movement_1
 # 300 "data//maps/Route6/scripts.pory"
-	removeobject LOCALID_GRUNT1
-# 301 "data//maps/Route6/scripts.pory"
-	removeobject LOCALID_GRUNT2
-# 303 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_3
-# 304 "data//maps/Route6/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Victory_Movement_2
-# 306 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Victory_Text_1
-# 307 "data//maps/Route6/scripts.pory"
-	release
-# 308 "data//maps/Route6/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 310 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Victory_Text_2
-# 311 "data//maps/Route6/scripts.pory"
-	release
-# 312 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_3
-# 313 "data//maps/Route6/scripts.pory"
 	waitmovement 0
+# 302 "data//maps/Route6/scripts.pory"
+	removeobject LOCALID_GRUNT1
+# 303 "data//maps/Route6/scripts.pory"
+	removeobject LOCALID_GRUNT2
+# 305 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Trigger_Movement_3
+# 306 "data//maps/Route6/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Victory_Movement_2
+# 308 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Victory_Text_1
+# 309 "data//maps/Route6/scripts.pory"
+	release
+# 310 "data//maps/Route6/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 312 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Victory_Text_2
+# 313 "data//maps/Route6/scripts.pory"
+	release
 # 314 "data//maps/Route6/scripts.pory"
-	removeobject LOCALID_GAB
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_3
 # 315 "data//maps/Route6/scripts.pory"
-	setflag FLAG_ROUTE6_GABRIELLE_BULLY
+	waitmovement 0
+# 316 "data//maps/Route6/scripts.pory"
+	removeobject LOCALID_GAB
 # 317 "data//maps/Route6/scripts.pory"
+	setflag FLAG_ROUTE6_GABRIELLE_BULLY
+# 319 "data//maps/Route6/scripts.pory"
 	releaseall
 	return
 
 
-# 233 "data//maps/Route6/scripts.pory"
+# 235 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_0:
-# 233 "data//maps/Route6/scripts.pory"
+# 235 "data//maps/Route6/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 239 "data//maps/Route6/scripts.pory"
+# 241 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_1:
-# 239 "data//maps/Route6/scripts.pory"
+# 241 "data//maps/Route6/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 242 "data//maps/Route6/scripts.pory"
+# 244 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_2:
-# 242 "data//maps/Route6/scripts.pory"
+# 244 "data//maps/Route6/scripts.pory"
 	walk_down
-# 242 "data//maps/Route6/scripts.pory"
+# 244 "data//maps/Route6/scripts.pory"
 	walk_down
-# 242 "data//maps/Route6/scripts.pory"
+# 244 "data//maps/Route6/scripts.pory"
 	walk_left
-# 242 "data//maps/Route6/scripts.pory"
+# 244 "data//maps/Route6/scripts.pory"
 	walk_left
 	step_end
 
-# 244 "data//maps/Route6/scripts.pory"
+# 246 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_3:
-# 244 "data//maps/Route6/scripts.pory"
+# 246 "data//maps/Route6/scripts.pory"
 	face_down
 	step_end
 
-# 249 "data//maps/Route6/scripts.pory"
+# 251 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_4:
-# 249 "data//maps/Route6/scripts.pory"
+# 251 "data//maps/Route6/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 254 "data//maps/Route6/scripts.pory"
+# 256 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_5:
-# 254 "data//maps/Route6/scripts.pory"
+# 256 "data//maps/Route6/scripts.pory"
 	face_right
 	step_end
 
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_6:
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	walk_right
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	walk_right
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	walk_up
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	walk_up
-# 256 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	face_left
 	step_end
 
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger_Movement_7:
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 	walk_right
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 	walk_right
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 	walk_right
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 	walk_up
-# 257 "data//maps/Route6/scripts.pory"
+# 259 "data//maps/Route6/scripts.pory"
 	face_left
 	step_end
 
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_0:
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_left
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_left
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_left
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
-# 296 "data//maps/Route6/scripts.pory"
+# 298 "data//maps/Route6/scripts.pory"
 	walk_down
 	step_end
 
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_1:
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_down
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_left
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_left
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_left
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_down
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_down
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_down
-# 297 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	walk_down
 	step_end
 
-# 304 "data//maps/Route6/scripts.pory"
+# 306 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_2:
-# 304 "data//maps/Route6/scripts.pory"
+# 306 "data//maps/Route6/scripts.pory"
 	face_up
 	step_end
 
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_3:
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_left
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_left
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_left
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_left
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
-# 312 "data//maps/Route6/scripts.pory"
+# 314 "data//maps/Route6/scripts.pory"
 	walk_down
 	step_end
 
@@ -786,9 +788,9 @@ Route6_NPC4_Text_6:
 	.string "These waters are too fierce to fish\n"
 	.string "properly...why am I even fishing here?\l"
 	.string "I'm so unfocused these days. Maybe I\l"
-	.string "need a new hobby...I'd like to try music,\l"
+	.string "need a new hobby. I'd like to try music,\l"
 	.string "but I might be no good. What do you\l"
-	.string "think?$"
+	.string "think? Should I try music?$"
 
 Route6_NPC4_Text_7:
 # 185 "data//maps/Route6/scripts.pory"
@@ -804,12 +806,16 @@ Route6_NPC4_Text_8:
 	.string "here for you!$"
 
 Route6_NPC4_Text_9:
-# 192 "data//maps/Route6/scripts.pory"
+# 191 "data//maps/Route6/scripts.pory"
+	.string "Ahh well, it's back to fishing then.$"
+
+Route6_NPC4_Text_10:
+# 194 "data//maps/Route6/scripts.pory"
 	.string "Yeah...I suppose I'd be no good. Fishing\n"
 	.string "is all I know.$"
 
 Route6_Gabrielle_Trigger_Text_0:
-# 235 "data//maps/Route6/scripts.pory"
+# 237 "data//maps/Route6/scripts.pory"
 	.string "GRUNT: C'mon GABRIELLE - you've got\n"
 	.string "nowhere to run. Now give us your {PKMN}!\p"
 	.string "GABRILLE: No! They're mine! Why should\n"
@@ -825,13 +831,13 @@ Route6_Gabrielle_Trigger_Text_0:
 	.string "to the boss? HAHA!$"
 
 Route6_Gabrielle_Trigger_Text_1:
-# 247 "data//maps/Route6/scripts.pory"
+# 249 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: {PLAYER}, it's you! These\n"
 	.string "grunts are trying to take my {PKMN} off me\l"
 	.string "- you have to help!$"
 
 Route6_Gabrielle_Trigger_Text_2:
-# 251 "data//maps/Route6/scripts.pory"
+# 253 "data//maps/Route6/scripts.pory"
 	.string "GRUNT: Have you no shame GABRIELLE?\n"
 	.string "The trainer who got you kicked out is\l"
 	.string "now helping you?\p"
@@ -840,32 +846,32 @@ Route6_Gabrielle_Trigger_Text_2:
 	.string "trainer that's stopped our plans twice!$"
 
 Route6_Gabrielle_HurryUp_Text_0:
-# 276 "data//maps/Route6/scripts.pory"
+# 278 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: What are you doing? They're\n"
 	.string "about to attack!$"
 
 Route6_Gabrielle_DoBattle_Text_0:
-# 281 "data//maps/Route6/scripts.pory"
-	.string "Stupid Zoroark!$"
+# 283 "data//maps/Route6/scripts.pory"
+	.string "Stupid ZORUA!$"
 
 Route6_Gabrielle_DoBattle_Text_1:
-# 281 "data//maps/Route6/scripts.pory"
+# 283 "data//maps/Route6/scripts.pory"
 	.string "I need better {PKMN}!$"
 
 Route6_Gabrielle_Victory_Text_0:
-# 293 "data//maps/Route6/scripts.pory"
+# 295 "data//maps/Route6/scripts.pory"
 	.string "GRUNT: You got lucky that {PLAYER}\n"
 	.string "was around, GABRIELLE! Next time we'll\l"
 	.string "get your ZOROARK for sure!$"
 
 Route6_Gabrielle_Victory_Text_1:
-# 306 "data//maps/Route6/scripts.pory"
+# 308 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: Thank you {PLAYER}. You\n"
 	.string "saved me there.\p"
 	.string "Let me heal your {PKMN}.$"
 
 Route6_Gabrielle_Victory_Text_2:
-# 310 "data//maps/Route6/scripts.pory"
+# 312 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: I live PELLUCA CITY, just\n"
 	.string "past the HOYA RIVER. I was on my way\l"
 	.string "home when those grunts ambushed\l"

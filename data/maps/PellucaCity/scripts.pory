@@ -14,30 +14,137 @@ script PellucaCity_EventScripts_Gabrielle{
     msgbox(format("GABRIELLE: Ahh, I love the smell of the river!"))
     } else {
 
-    msgbox(format("GABRIELLE: I grew up here on this cliff without my parents. Life was hard. I didn't want my brother and sister to go through the same thing, so when Team Somber promised me money, I took it.\p...\pGABRIELLE: Those grunts were really vicious. Was I just like that when you met me with that hiker with the CLEFAIRY?"), MSGBOX_YESNO)
+    msgbox(format("GABRIELLE: I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when Team Somber promised me money, I took it.\p...\pGABRIELLE: Those grunts were really vicious to me. I was so scared I would lose ZORUA!")) 
+    release
+    delay(24)
+    faceplayer
+    delay(24)
+    msgbox(format("Was I just like that when you met me with that hiker with the CLEFAIRY?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         //if yes
-        msgbox(format("GABRIELLE: Yeah...I bet he wouldn't ever forgive me, would he."))
+        applymovement(LOCALID_GAB, moves(face_left))  
+        delay(24)        
+        msgbox(format("GABRIELLE: Yeah...I doubt he'd ever forgive me."))
         release
     } else {
         //if no
+        applymovement(LOCALID_GAB, moves(face_left))  
         msgbox(format("GABRIELLE: You're just trying to make me feel better, aren't you? I don't need your pity. I know what I've done."))
         release
     }
-
+    delay(30)
     msgbox(format("GABRIELLE: After getting kicked out of Team Somber, I feel like I've come to my senses a little. I'm going to support my family - but do it right. Be honest. Responsible."))
     release
     delay(24)
     faceplayer
     delay(24)
-    msgbox(format("GABRIELLE: I want you to have this. As a thank you. For saving me not just once, but so many times. You're a strong trainer, but more importantly - you're a good person. I hope to be like you."))
+    msgbox(format("GABRIELLE: I want you to have this. As a thank you. For saving me - not just once, but so many times. You're a strong trainer, but more importantly - you're a good person. I hope to be like you."))
     release
     giveitem(ITEM_CHOICE_BAND)
-    msgbox(format("GABRIELLE: Who we are is defined by the chocies we make, and once we lock in, we can't change. I can't erase what I've done, but I'm going to make a better choice this time.\pGABRIELLE: I suppose you're going to head to the MIRROH BASE CAMP from here? Team Somber must've reached already. Best of luck, {PLAYER}"))
+    msgbox(format("GABRIELLE: Who we are is defined by the chocies we make, and once we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pGABRIELLE: I suppose you're going to head to the MIRROH BASE CAMP from here? Team Somber must've reached there already. Best of luck, {PLAYER}"))
+    release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))    
     }
+    releaseall
+
 }
+
+
+
+
+
+
+//Topics
+//Restaurant apple tart
+//mirroh base camp
+//hoya and ivy river
+//fishery
+
+
+
+
+
+
+
+
+
+//NPCs
+//tuber at beach
+script PellucaCity_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Whee!!!"))
+    releaseall
+    end
+}
+//bridge lady
+script PellucaCity_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("A tourist! Have you come to eat at the PELLUCA RESTAURANT?"))
+    releaseall
+    end
+}
+//bridge black belt
+script PellucaCity_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("This bridge is great for exercising!"))
+    releaseall
+    end
+}
+//bridge cyclist
+script PellucaCity_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions!"))
+    releaseall
+    end
+}
+//bridge other dude
+script PellucaCity_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("The Gym Leader of PELLUCA CITY had her gym constructed on a separate island. Talk about entitlement!"))
+    releaseall
+    end
+}
+//bridge getting off dude
+script PellucaCity_NPC6{
+    lockall
+    faceplayer
+    msgbox(format("Are you headed to the MIRROH BASE CAMP? You'll have to take the cable car. It's just past the Pokemart. Wear something warm!"))
+    releaseall
+    end
+}
+//main island
+script PellucaCity_NPC7{
+    lockall
+    faceplayer
+    msgbox(format("There are no free tables at the restaurant! I should've made a reservation."))
+    releaseall
+    end
+}
+//fishery 1
+script PellucaCity_NPC8{
+    lockall
+    faceplayer
+    msgbox(format("What's even the point of fishing if the SHARPEDO's going to scare all the fish away?"))
+    releaseall
+    end
+}
+//fishery 2
+script PellucaCity_NPC9{
+    lockall
+    faceplayer
+    msgbox(format("This is the PELLUCA FISHERY! But don't go inside - the owner's really upset about something."))
+    releaseall
+    end
+}
+
+
+
 
 
 
