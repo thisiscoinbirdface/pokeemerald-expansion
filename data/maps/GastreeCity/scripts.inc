@@ -174,12 +174,12 @@ GastreeCity_NPC2::
 # 0 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GastreeCity_NPC2_5
-# 152 "data//maps/GastreeCity/scripts.pory"
+# 153 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_3
-# 154 "data//maps/GastreeCity/scripts.pory"
+# 155 "data//maps/GastreeCity/scripts.pory"
 	questmenu QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_SKITTY
 GastreeCity_NPC2_1:
-# 158 "data//maps/GastreeCity/scripts.pory"
+# 159 "data//maps/GastreeCity/scripts.pory"
 	release
 	return
 
@@ -200,52 +200,54 @@ GastreeCity_NPC2_5:
 # 144 "data//maps/GastreeCity/scripts.pory"
 	clearflag FLAG_HIDE_GASTREE_SKITTY
 # 145 "data//maps/GastreeCity/scripts.pory"
+	removeitem ITEM_SKITTY
+# 146 "data//maps/GastreeCity/scripts.pory"
 	addobject 12
-# 149 "data//maps/GastreeCity/scripts.pory"
+# 150 "data//maps/GastreeCity/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_SKITTY
 	goto GastreeCity_NPC2_1
 
 
 GastreeCity_EventScripts_SkittyTrigger::
-# 163 "data//maps/GastreeCity/scripts.pory"
+# 164 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_TRIGGER_SKITTY, GastreeCity_EventScripts_SkittyTrigger_2
-# 167 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 168 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_1, MSGBOX_YESNO
+	lockall
 # 169 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_1, MSGBOX_YESNO
+# 170 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GastreeCity_EventScripts_SkittyTrigger_5
 GastreeCity_EventScripts_SkittyTrigger_1:
-# 178 "data//maps/GastreeCity/scripts.pory"
+# 179 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
 GastreeCity_EventScripts_SkittyTrigger_2:
-# 164 "data//maps/GastreeCity/scripts.pory"
+# 165 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_0
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 GastreeCity_EventScripts_SkittyTrigger_5:
-# 170 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_2
 # 171 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_2
 # 172 "data//maps/GastreeCity/scripts.pory"
-	giveitem ITEM_SKITTY
+	release
 # 173 "data//maps/GastreeCity/scripts.pory"
+	giveitem ITEM_SKITTY
+# 174 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_TRIGGER_SKITTY
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 
 GastreeCity_NPC_Skitty::
-# 183 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 184 "data//maps/GastreeCity/scripts.pory"
-	faceplayer
+	lockall
 # 185 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC_Skitty_Text_0
+	faceplayer
 # 186 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC_Skitty_Text_0
+# 187 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
@@ -378,29 +380,29 @@ GastreeCity_NPC2_Text_2:
 	.string "use it.$"
 
 GastreeCity_NPC2_Text_3:
-# 152 "data//maps/GastreeCity/scripts.pory"
+# 153 "data//maps/GastreeCity/scripts.pory"
 	.string "My SKITTY is missing! I've been looking\n"
 	.string "everywhere for her, but I can't find\l"
 	.string "her. If you find a SKITTY, please bring\l"
 	.string "her to me, okay?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_0:
-# 164 "data//maps/GastreeCity/scripts.pory"
+# 165 "data//maps/GastreeCity/scripts.pory"
 	.string "There's nothing else up there.$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_1:
-# 168 "data//maps/GastreeCity/scripts.pory"
+# 169 "data//maps/GastreeCity/scripts.pory"
 	.string "There's something up in the branches of\n"
 	.string "this tree.\p"
 	.string "Shake it?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_2:
-# 170 "data//maps/GastreeCity/scripts.pory"
+# 171 "data//maps/GastreeCity/scripts.pory"
 	.string "A SKITTY dropped down from the tree! It\n"
 	.string "looks scared. Who is its owner?$"
 
 GastreeCity_NPC_Skitty_Text_0:
-# 185 "data//maps/GastreeCity/scripts.pory"
+# 186 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY: skee~~$"
 
 GastreeCity_KohlaIntro1::

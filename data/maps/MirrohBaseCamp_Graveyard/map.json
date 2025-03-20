@@ -17,14 +17,14 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
       "x": 6,
-      "y": 3,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MirrohBaseCamp_Graveyard_KohlaBattle",
       "flag": "FLAG_MIRROH_KOHLA_BATTLE"
     }
   ],
