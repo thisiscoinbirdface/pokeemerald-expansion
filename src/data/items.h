@@ -12552,14 +12552,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MysticTicket,
     },
 
-    [ITEM_AURORA_TICKET] =
+    [ITEM_CABLECAR_PASS] =
     {
-        .name = _("Aurora Ticket"),
+        .name = _("Cable Car Pass"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A ticket required\n"
-            "to board the ship\n"
-            "to Birth Island."),
+            "to board the cable\n"
+            "car at Pelluca City."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
