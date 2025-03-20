@@ -85,8 +85,8 @@
 #define FLAG_SILVERSUN_NEXTQUEST    0x46 // set the next quest
 #define FLAG_HIDE_SILVERSUN_PROF    0x47 // hide the prof in the overworld until the HQ is cleared.
 #define FLAG_ROUTE6_KOHLA_BATTLE    0x48 // after everything, battle kohla as you enter route 6
-#define FLAG_ROUTE6_GABRIELLE_BULLY    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
+#define FLAG_ROUTE6_GABRIELLE_BULLY    0x49 // save gab from the grunts in r6
+#define FLAG_PELLUCA_GABRIELLE_CHOICEBAND    0x4A // get the choice band from gab in pelluca
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag

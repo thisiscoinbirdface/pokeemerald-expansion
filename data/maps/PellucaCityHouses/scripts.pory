@@ -1,0 +1,36 @@
+mapscripts PellucaCityHouses_MapScripts{}
+
+
+
+
+//GAB house
+script PellucaCityHouses_GabSibling1{
+    lockall
+    faceplayer
+    msgbox(format("Yay! Big Sis is back! Big Bro got her a present too!"))
+    releaseall
+    end
+}
+script PellucaCityHouses_GabSibling2{
+    lockall
+    faceplayer
+    msgbox(format("Big Sis only comes back once in a while...I wish she stayed with us all the time!"))
+    releaseall
+    end
+}
+script PellucaCityHouses_GabSibling3{
+    lockall
+    faceplayer
+    msgbox(format("Gabrielle keeps us afloat. Without her, I wouldn't be able to afford to study. I got her a gift."))
+    showmonpic(SPECIES_JANGMO_O, 10, 3)
+    msgbox(format("It's the least I can do for her."))
+    release
+    hidemonpic
+    releaseall
+    end
+}
+
+
+
+
+

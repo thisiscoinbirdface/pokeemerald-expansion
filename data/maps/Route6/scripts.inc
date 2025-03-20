@@ -363,6 +363,10 @@ Route6_Gabrielle_DoBattle::
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Gabrielle_DoBattle_2
 Route6_Gabrielle_DoBattle_1:
+# 285 "data//maps/Route6/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 286 "data//maps/Route6/scripts.pory"
+	special SetCB2WhiteOut
 # 287 "data//maps/Route6/scripts.pory"
 	waitstate
 	return
