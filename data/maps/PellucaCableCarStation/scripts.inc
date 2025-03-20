@@ -33,6 +33,11 @@ PellucaCableCarStation_EventScript_ExitCableCar::
 PellucaCableCarStation_EventScript_Attendant::
 	lock
 	faceplayer
+	checkitem ITEM_CABLECAR_PASS
+	goto_if_eq VAR_RESULT, FALSE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
+	msgbox PellucaCableCarStation_Text_NeedPass
+
+PellucaCableCarStation_EventScript_AttendantAskForCableCar::
 	msgbox PellucaCableCarStation_Text_CableCarReadyGetOn, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PellucaCableCarStation_EventScript_RideCableCar
 	goto_if_eq VAR_RESULT, NO, PellucaCableCarStation_EventScript_DeclineRide
@@ -96,3 +101,6 @@ PellucaCableCarStation_Text_StepThisWay:
 PellucaCableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"
 
+PellucaCableCarStation_Text_NeedPass:
+	.string "Sorry, you need a CABLE CAR PASS.$"
+	

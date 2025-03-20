@@ -1,0 +1,155 @@
+mapscripts PellucaCityRestaurant_MapScripts{}
+
+
+
+
+//NPCs
+//baldman
+script PellucaCityRestaurant_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("I reconnected with my daughter after many years. What do I say to her?"))
+    releaseall
+    end
+}
+//baldman woman
+script PellucaCityRestaurant_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("I'm seeing my dad after a long time. It's awkward."))
+    releaseall
+    end
+}
+//lone woman
+script PellucaCityRestaurant_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("I can't choose between the apple pie and the apple tart. What should I choose?"))
+    releaseall
+    end
+}
+//cook 1
+script PellucaCityRestaurant_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("This lady is taking forever to decide..."))
+    releaseall
+    end
+}
+//lone man
+script PellucaCityRestaurant_NPC5{
+    lockall
+    faceplayer
+    msgbox(format("Apparently the staff here all have APPLIN and POLTEAGEIST to help them cook!"))
+    releaseall
+    end
+}
+//cook back
+script PellucaCityRestaurant_NPC6{
+    lockall
+    faceplayer
+    msgbox(format("Too many customers! Too many orders!"))
+    releaseall
+    end
+}
+//artist
+script PellucaCityRestaurant_NPC7{
+    lockall
+    faceplayer
+    msgbox(format("My SMEARGLE cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria."))
+    releaseall
+    end
+}
+//ranger
+script PellucaCityRestaurant_NPC8{
+    lockall
+    faceplayer
+    msgbox(format("I come every week from the Ranger Institute to have a meal here!"))
+    releaseall
+    end
+}
+//cashier
+script PellucaCityRestaurant_NPC9{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the PELLUCA RESTAURANT! Unfortunately we're fully booked out today."))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+//Cooks in basement
+script PellucaCityRestaurant_Cook1{
+    lockall
+    faceplayer
+    msgbox(format("Our head chef travels all across Cormoria to find the rarest ingredients...I wish he'd find a ROTOM FROST to replace our fridge!"))
+    releaseall
+    end
+}
+script PellucaCityRestaurant_Cook2{
+    lockall
+    faceplayer
+    msgbox(format("Our specialties are our apple-based dishes. We spent years crafting our recipes!"))
+    releaseall
+    end
+}
+script PellucaCityRestaurant_Cook3{
+    lockall
+    faceplayer
+
+    if (var(VAR_PELLUCA_COOK) == 2){
+        msgbox(format("How's my favourite trainer and APPLIN doing?"))
+    }
+
+    if (var(VAR_PELLUCA_COOK) == 1){
+        msgbox(format("Have you brought the NEVERMELT ICE?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            checkitem(ITEM_NEVERMELT_ICE)
+            if (var(VAR_RESULT) == 1){
+                //accept quest
+                msgbox(format("Wonderful! This will keep our ingredients cool until we can fix the fridge. My friend, you must accept this."))
+                givemon(SPECIES_APPLIN, 25)
+                msgbox(format("Take good care of our APPLIN! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
+                setvar(VAR_PELLUCA_COOK, 2) 
+            } else {
+                msgbox(format("Hmmm, it doesn't seem like you do. Come back when you get it from the MIRROH BASE CAMP!"))
+            }
+        } else {
+            msgbox(format("Come back when you get it from the MIRROH BASE CAMP!"))
+        }
+    }
+
+    if (var(VAR_PELLUCA_COOK) == 0){
+
+        delay(24)
+        applymovement(12, moves(emote_exclamation_mark))
+        waitmovement(0)
+        msgbox(format("Aha! Why hello there my fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            //accept quest
+            msgbox(format("I knew I could rely on you!\pSome NEVERMELT ICE will do the trick. You can buy NEVERMELT ICE at the MIRROH BASE CAMP. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
+            release
+            giveitem(ITEM_CABLECAR_PASS)        
+            msgbox(format("I'll be waiting here!"))
+            release
+            setvar(VAR_PELLUCA_COOK, 1)
+        } else {
+            msgbox(format("Oh no! But I understand. You must be busy."))
+        }
+    }
+
+    releaseall
+    end
+}
+
+
+

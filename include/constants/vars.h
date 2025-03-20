@@ -272,7 +272,7 @@
 
     //Moved down from above (i am going to use these)
     #define VAR_ROUTE6_FISHERMAN                             0x4075 // the unfocused fisherman who wants a flute
-    #define VAR_ROUTE123_STATE                               0x4076 // Unused Var
+    #define VAR_PELLUCA_COOK                                 0x4076 // the restaurant applin quest.
     #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
     #define VAR_ROUTE125_STATE                               0x4078 // Unused Var
     #define VAR_ROUTE126_STATE                               0x4079 // Unused Var

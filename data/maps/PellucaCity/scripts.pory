@@ -12,6 +12,7 @@ script PellucaCity_EventScripts_Gabrielle{
     lockall
     if (flag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)){
     msgbox(format("GABRIELLE: Ahh, I love the smell of the river!"))
+    release
     } else {
 
     msgbox(format("GABRIELLE: I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when Team Somber promised me money, I took it.\p...\pGABRIELLE: Those grunts were really vicious to me. I was so scared I would lose ZORUA!")) 
@@ -90,7 +91,7 @@ script PellucaCity_NPC2{
 script PellucaCity_NPC3{
     lockall
     faceplayer
-    msgbox(format("This bridge is great for exercising!"))
+    msgbox(format("I would've trained up in MT MIRROH but I can't go there without a CABLE CAR PASS. So I'm jogging here instead."))
     releaseall
     end
 }
@@ -138,7 +139,7 @@ script PellucaCity_NPC8{
 script PellucaCity_NPC9{
     lockall
     faceplayer
-    msgbox(format("This is the PELLUCA FISHERY! But don't go inside - the owner's really upset about something."))
+    msgbox(format("This is the PELLUCA FISHERY! But it's closed due to the SHARPEDO attacks."))
     releaseall
     end
 }
