@@ -1,3 +1,229 @@
 mapscripts Route6_MapScripts{}
 
 
+
+script Route6_EventScript_Nurse{
+    lockall
+    faceplayer
+    msgbox(format("NURSE JOY: Oh I don't know what happened! I went out for a walk and ended up in this storm! I'm waiting here till it passes. CHANSEY can heal your {PKMN} meanwhile."))
+    release
+	call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox(format("NURSE JOY: Be careful - once you slide down this ledge, you won't be able to come back!"))
+    release
+}
+
+//Ranger
+script Route6_Trainer_A{
+    trainerbattle_single(TRAINER_ROUTE6_A, format("The marshes of Route 6 are teeming with life. Let's see how well you handle it!"), "Impressive!")
+    msgbox(format("Looks like you can handle yourself in these parts."))
+    releaseall
+    end
+}
+//Battle Girl
+script Route6_Trainer_B{
+    trainerbattle_single(TRAINER_ROUTE6_B, format("The road to Pelluca City is long....beating you will give me energy!"), "I lost even more energy!")
+    msgbox(format("Maybe I should take a Corviknight Taxi to Pelluca City instead."))
+    releaseall
+    end
+}
+//Ranger
+script Route6_Trainer_C1{
+    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokemon Ranger Institute. We're on assignment to survey new {PKMN}. Have you got any?"), "You do have new {PKMN}")
+    msgbox(format("The Pokemon Ranger Institute is the headquarters for us Rangers in Cormoria."))
+    releaseall
+    end
+}
+//Ranger
+script Route6_Trainer_C2{
+    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Ranger Institute. We're on assignment to survey new {PKMN}. Have you got any?"), "You do have new {PKMN}")
+    msgbox(format("The Ranger Institute gives us newbies such hard assignments!"))
+    releaseall
+    end
+}
+//Fisherman
+script Route6_Trainer_D{
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a good rod. Too bad you don't have one!"), "I need a Super Rod!")
+    msgbox(format("I wonder what {PKMN} I can catch here with a Super Rod..."))
+    releaseall
+    end
+}
+//Cooltrainer
+script Route6_Trainer_E{
+    trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the {PKMN} Champion, so I've come here to catch rare {PKMN}. Let me test them on you!"), "No - my rare {PKMN}!")
+    msgbox(format("Catching good {PMKN} isn't enough. I need to train rigorously too."))
+    releaseall
+    end
+}
+//Black Belt
+script Route6_Trainer_F{
+    trainerbattle_single(TRAINER_ROUTE6_F, format("My CROAGUNK and I love to train here because it makes us tough!"), "We're not tough eonugh!")
+    msgbox(format("Wading around in the marshes here works your core!"))
+    releaseall
+    end
+}
+//PKMN breeder Dog 
+script Route6_Trainer_G{
+    trainerbattle_single(TRAINER_ROUTE6_G, format("Us BREEDERS like to train one type of {PKMN}. I specialise in dogs!"), "Guess I was more bark than bite!")
+    msgbox(format("Dog {PKMN} are rare in Cormoria! Someone in PELLUCA CITY traded me my HOUNDOOR."))
+    releaseall
+    end
+}
+//Bug catcher
+script Route6_Trainer_H{
+    trainerbattle_single(TRAINER_ROUTE6_H, format("This weather is prime for my BUG-type {PKMN}! You won't be able to handle it!"), "The weather is fickle!")
+    msgbox(format("Although bugs thrive in marshes, there aren't many BUG-type {PKMN} around here."))
+    releaseall
+    end
+}
+//Dragon tamer
+script Route6_Trainer_I{
+    trainerbattle_single(TRAINER_ROUTE6_H, format("I heard there was a rare DRAGON-type {PKMN} here in Route 6, but I can't find any on land!"), "Why did I find you instead?")
+    msgbox(format("If its not on land, then maybe I need to try fishing..."))
+    releaseall
+    end
+}
+//Youngster
+script Route6_Trainer_J{
+    trainerbattle_single(TRAINER_ROUTE6_K, format("Past PELLUCA CITY is the MIRROH BASE CAMP and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
+    msgbox(format("If we remember our {PKMN} after they go, are they truly gone?"))
+    releaseall
+    end
+}
+
+
+            //UNUSED
+            script Route6_Trainer_L{
+                trainerbattle_single(TRAINER_ROUTE6_L, format(""), "")
+                msgbox(format(""))
+                releaseall
+                end
+            }
+            script Route6_Trainer_M{
+                trainerbattle_single(TRAINER_ROUTE6_M, format(""), "")
+                msgbox(format(""))
+                releaseall
+                end
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCs
+//old woman
+script Route6_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("When I was young, there was no route through these marshes. Now ROUTE 6 connects SILVERSUN CITY to PELLUCA CITY."))
+    releaseall
+    end
+}
+
+script Route6_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("I wonder what's over there...if I had a {PKMN} that knew SURF, I could swim over!"))
+    releaseall
+    end
+}
+script Route6_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("I want to go to the PELLUCA RESTAURANT! The food is supposed to be delicious because the head chef travels all of Cormoria looking for rare ingredients."))
+    releaseall
+    end
+}
+script Route6_NPC4{
+    lockall
+    faceplayer
+
+    if (var(VAR_ROUTE6_FISHERMAN) == 2){
+        msgbox(format("I've been practicing real hard! What do you think?"))
+        release
+        msgbox(format("I'm no good, but it's so much fun!"))
+    }
+
+    if (var(VAR_ROUTE6_FISHERMAN) == 1){
+        msgbox(format("Have you brought a RED FLUTE?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+
+            if (checkitem(ITEM_RED_FLUTE)){
+                msgbox(format("Yes, this looks amazing! I can't wait to start playing it."))
+                release
+                removeitem(ITEM_RED_FLUTE)
+                msgbox(format("I suppose I don't need this any more. Here, why don't you take it? You could start a new hobby too!"))
+                giveitem(ITEM_GOOD_ROD)
+                setvar(VAR_ROUTE6_FISHERMAN, 2)
+            } else {
+                msgbox(format("No, it looks like you haven't. You can get one in PELLUCA CITY."))
+            }
+        }
+    }
+
+    if (var(VAR_ROUTE6_FISHERMAN) == 0){
+        msgbox(format("These waters are too fierce to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby...I'd like to try music, but I might be no good. What do you think?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            //yes
+            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? Can you bring me a RED FLUTE so I can start practicing?"), MSGBOX_YESNO){
+                if (var(VAR_RESULT) == 1){
+                    //Start quest
+                    msgbox(format("Thank you so much! I think you can buy them in PELLUCA CITY. I'll be waiting here for you!"))
+                    setvar(VAR_ROUTE6_FISHERMAN, 1)
+                }
+            }
+        } else {
+            msgbox(format("Yeah...I suppose I'd be no good. Fishing is all I know."))
+        }
+    }
+
+
+    releaseall
+    end
+}
+
+
+script Route6_NPC5{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route6_NPC6{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route6_NPC7{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route6_NPC8{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+
