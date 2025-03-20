@@ -256,18 +256,38 @@ script Route6_Gabrielle_Trigger{
     applymovement(LOCALID_GAB, moves(walk_right * 2 walk_up *2 face_left))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 walk_up face_left))
     waitmovement(0)
-    
+
+    goto(Route6_Gabrielle_ChooseDoubleBattleParty)
+}
+
+script Route6_Gabrielle_ChooseDoubleBattleParty{
     //battle
 	special(SavePlayerParty)
 	fadescreen(FADE_TO_BLACK)
 	special(ChooseHalfPartyForBattle)
 	waitstate
-//	goto_if_ne(VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle)
-//	special(LoadPlayerParty)
+	goto_if_ne(VAR_RESULT, 0, Route6_Gabrielle_DoBattle)
+	special(LoadPlayerParty)
+    goto(Route6_Gabrielle_HurryUp)
 
+}
+
+script Route6_Gabrielle_HurryUp{
+    msgbox(format("GABRIELLE: What are you doing? They're about to attack!"))
+    goto(Route6_Gabrielle_ChooseDoubleBattleParty)
+}
+
+script Route6_Gabrielle_DoBattle{
     multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zoroark!", TRAINER_ROUTE6_GRUNT2, "I need better {PKMN}!", PARTNER_ROUTE6_GAB)
+ 	if (var(VAR_RESULT) == 1){
+        goto(Route6_Gabrielle_Victory)
+    }
+    fadescreen(FADE_TO_BLACK)
+    special(SetCB2WhiteOut)
+    waitstate
+}
 
-
+script Route6_Gabrielle_Victory{
     //somber exit
     //
     msgbox(format("GRUNT: You got lucky that {PLAYER} was around, GABRIELLE! Next time we'll get your ZOROARK for sure!"))
@@ -283,7 +303,11 @@ script Route6_Gabrielle_Trigger{
     applymovement(LOCALID_GAB, moves(face_down))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
-    msgbox(format("GABRIELLE: Thank you {PLAYER}. You saved me there.\p...\pGABRIELLE: I live PELLUCA CITY, just past the HOYA RIVER. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
+    msgbox(format("GABRIELLE: Thank you {PLAYER}. You saved me there.\pLet me heal your {PKMN}."))
+    release
+	call(Common_EventScript_OutOfCenterPartyHeal)
+    
+    msgbox(format("GABRIELLE: I live PELLUCA CITY, just past the HOYA RIVER. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
     release
     applymovement(LOCALID_GRUNT1, moves(walk_left walk_down * 2 walk_left * 3 walk_down *4))    
     waitmovement(0)
@@ -314,3 +338,6 @@ script Route6_Gabrielle_Trigger{
 // 	fadescreen FADE_TO_BLACK
 // 	special SetCB2WhiteOut
 // 	waitstate
+
+
+
