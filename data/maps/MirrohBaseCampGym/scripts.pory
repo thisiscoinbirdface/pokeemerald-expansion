@@ -1,0 +1,7 @@
+mapscripts MirrohBaseCampGym_MapScripts{}
+
+
+script MirrohBaseCampGym_Leader{
+    
+}
+

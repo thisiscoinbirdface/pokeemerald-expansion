@@ -53,7 +53,7 @@ MirrohBaseCamp_EventScript_Vendor2::
 
 	.align 2
 # 35 "data//maps/MirrohBaseCamp/scripts.pory"
-MirrohBaseCamp_Vendor1_Inventory:
+MirrohBaseCamp_Vendor2_Inventory:
 # 36 "data//maps/MirrohBaseCamp/scripts.pory"
 	.2byte ITEM_NEVER_MELT_ICE
 # 37 "data//maps/MirrohBaseCamp/scripts.pory"

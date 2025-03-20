@@ -2,9 +2,6 @@ mapscripts MirrohBaseCamp_Graveyard_Mapscripts{}
 
 
 
-
-
-
 //Kohla battle
 script MirrohBaseCamp_Graveyard_KohlaBattle{
     lockall

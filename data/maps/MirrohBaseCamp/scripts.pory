@@ -32,7 +32,7 @@ script MirrohBaseCamp_EventScript_Vendor2{
 	end
 }
 
-mart MirrohBaseCamp_Vendor1_Inventory{
+mart MirrohBaseCamp_Vendor2_Inventory{
     ITEM_NEVER_MELT_ICE
     ITEM_ICE_GEM
     ITEM_ENERGY_ROOT
