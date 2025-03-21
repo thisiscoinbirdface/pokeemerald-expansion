@@ -635,8 +635,8 @@ Route6_Trainer_C2_Text_1:
 Route6_Trainer_D_Text_0:
 # 51 "data//maps/Route6/scripts.pory"
 	.string "The secret to catching strong Water\n"
-	.string "Pokémon? Patience and a good rod. Too\l"
-	.string "bad you don't have one!$"
+	.string "Pokémon? Patience and a CASTING ROD.\l"
+	.string "Too bad you don't have one!$"
 
 Route6_Trainer_D_Text_1:
 # 51 "data//maps/Route6/scripts.pory"

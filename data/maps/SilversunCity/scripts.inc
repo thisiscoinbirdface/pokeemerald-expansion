@@ -144,7 +144,7 @@ SilversunCity_NPC3::
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
 # 123 "data//maps/SilversunCity/scripts.pory"
-	warp MAP_MIRROH_BASE_CAMP, 18, 20
+	warp MAP_RANGER_INSTITUTE, 9, 11
 # 124 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
