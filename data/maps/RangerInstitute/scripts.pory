@@ -213,6 +213,7 @@ script RangerInstitute_1F_TriggerUpstairs{
     applymovement(6, moves(face_left emote_exclamation_mark))
     waitmovement(0)
     msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
     applymovement(6, moves(face_down))
@@ -252,5 +253,28 @@ script RangerInstitute_2F_Trigger0{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 6 walk_up walk_left * 6 walk_up face_down))
     waitmovement(0)
 
+    goto(RangerInstitute_2F_EventScript_Welcome)
+
     release
+}
+
+script RangerInstitute_2F_Trigger1{
+    lockall
+    applymovement(12, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Head."))
+    release
+
+    //move to Ravine
+    applymovement(12, moves(walk_left * 6 walk_up walk_left * 6 walk_up face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2 walk_left * 6 walk_up walk_left * 6 walk_up face_down))
+    waitmovement(0)
+
+    goto(RangerInstitute_2F_EventScript_Welcome)
+
+    release
+}
+
+script RangerInstitute_2F_EventScript_Welcome{
+
 }
