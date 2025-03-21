@@ -123,162 +123,154 @@ RangerInstitute_1F_InterviewQ2::
 # 97 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ2_Text_0
 # 98 "data//maps/RangerInstitute/scripts.pory"
-	waitbuttonpress
-# 99 "data//maps/RangerInstitute/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, RangerInstitute_1F_InterviewQ2_Text_1, RangerInstitute_1F_InterviewQ2_Text_2, RangerInstitute_1F_InterviewQ2_Text_3, RangerInstitute_1F_InterviewQ2_Text_4
-# 102 "data//maps/RangerInstitute/scripts.pory"
+# 101 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq RangerInstitute_1F_InterviewQ2_1
-# 106 "data//maps/RangerInstitute/scripts.pory"
+# 105 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_1F_InterviewFail
 	return
 
 RangerInstitute_1F_InterviewQ2_1:
-# 103 "data//maps/RangerInstitute/scripts.pory"
+# 102 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ2_Text_5
-# 104 "data//maps/RangerInstitute/scripts.pory"
-	goto RangerInstitute_1F_InterviewQ2
+# 103 "data//maps/RangerInstitute/scripts.pory"
+	goto RangerInstitute_1F_InterviewQ3
 	return
 
 
 RangerInstitute_1F_InterviewQ3::
-# 112 "data//maps/RangerInstitute/scripts.pory"
+# 111 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 4, RangerInstitute_1F_InterviewQ1_Movement_0
-# 113 "data//maps/RangerInstitute/scripts.pory"
+# 112 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ3_Text_0
-# 114 "data//maps/RangerInstitute/scripts.pory"
-	waitbuttonpress
-# 115 "data//maps/RangerInstitute/scripts.pory"
+# 113 "data//maps/RangerInstitute/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, RangerInstitute_1F_InterviewQ3_Text_1, RangerInstitute_1F_InterviewQ3_Text_2, RangerInstitute_1F_InterviewQ3_Text_3, RangerInstitute_1F_InterviewQ3_Text_4
-# 118 "data//maps/RangerInstitute/scripts.pory"
+# 116 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RangerInstitute_1F_InterviewQ3_1
-# 122 "data//maps/RangerInstitute/scripts.pory"
+# 120 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_1F_InterviewFail
 	return
 
 RangerInstitute_1F_InterviewQ3_1:
-# 119 "data//maps/RangerInstitute/scripts.pory"
+# 117 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ3_Text_5
-# 120 "data//maps/RangerInstitute/scripts.pory"
-	goto RangerInstitute_1F_InterviewQ2
+# 118 "data//maps/RangerInstitute/scripts.pory"
+	goto RangerInstitute_1F_InterviewQ4
 	return
 
 
 RangerInstitute_1F_InterviewQ4::
-# 128 "data//maps/RangerInstitute/scripts.pory"
+# 126 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 4, RangerInstitute_1F_InterviewQ1_Movement_0
-# 129 "data//maps/RangerInstitute/scripts.pory"
+# 127 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ4_Text_0
-# 130 "data//maps/RangerInstitute/scripts.pory"
-	waitbuttonpress
-# 131 "data//maps/RangerInstitute/scripts.pory"
+# 128 "data//maps/RangerInstitute/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, RangerInstitute_1F_InterviewQ4_Text_1, RangerInstitute_1F_InterviewQ4_Text_2, RangerInstitute_1F_InterviewQ4_Text_3, RangerInstitute_1F_InterviewQ4_Text_4
-# 134 "data//maps/RangerInstitute/scripts.pory"
+# 131 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RangerInstitute_1F_InterviewQ4_1
-# 138 "data//maps/RangerInstitute/scripts.pory"
+# 135 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_1F_InterviewFail
 	return
 
 RangerInstitute_1F_InterviewQ4_1:
-# 135 "data//maps/RangerInstitute/scripts.pory"
+# 132 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ4_Text_5
-# 136 "data//maps/RangerInstitute/scripts.pory"
-	goto RangerInstitute_1F_InterviewQ2
+# 133 "data//maps/RangerInstitute/scripts.pory"
+	goto RangerInstitute_1F_InterviewQ5
 	return
 
 
 RangerInstitute_1F_InterviewQ5::
-# 144 "data//maps/RangerInstitute/scripts.pory"
+# 141 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 4, RangerInstitute_1F_InterviewQ1_Movement_0
-# 145 "data//maps/RangerInstitute/scripts.pory"
+# 142 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewQ5_Text_0
-# 146 "data//maps/RangerInstitute/scripts.pory"
-	waitbuttonpress
-# 147 "data//maps/RangerInstitute/scripts.pory"
+# 143 "data//maps/RangerInstitute/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, RangerInstitute_1F_InterviewQ4_Text_3, RangerInstitute_1F_InterviewQ5_Text_1, RangerInstitute_1F_InterviewQ5_Text_2, RangerInstitute_1F_InterviewQ5_Text_3
-# 150 "data//maps/RangerInstitute/scripts.pory"
+# 146 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq RangerInstitute_1F_InterviewQ5_1
-# 154 "data//maps/RangerInstitute/scripts.pory"
+# 150 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_1F_InterviewFail
 	return
 
 RangerInstitute_1F_InterviewQ5_1:
-# 151 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_1F_InterviewQ4_Text_5
-# 152 "data//maps/RangerInstitute/scripts.pory"
+# 147 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_1F_InterviewQ5_Text_4
+# 148 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_1F_InterviewPass
 	return
 
 
 RangerInstitute_1F_InterviewPass::
-# 159 "data//maps/RangerInstitute/scripts.pory"
+# 155 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_InterviewPass_Text_0
-# 160 "data//maps/RangerInstitute/scripts.pory"
+# 156 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
-# 161 "data//maps/RangerInstitute/scripts.pory"
+# 157 "data//maps/RangerInstitute/scripts.pory"
 	setvar VAR_RANGER_INSTITUTE, 2
 	return
 
 
 RangerInstitute_1F_NPC1::
-# 166 "data//maps/RangerInstitute/scripts.pory"
+# 162 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 167 "data//maps/RangerInstitute/scripts.pory"
+# 163 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 168 "data//maps/RangerInstitute/scripts.pory"
+# 164 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_NPC1_Text_0
-# 169 "data//maps/RangerInstitute/scripts.pory"
+# 165 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_1F_NPC2::
-# 173 "data//maps/RangerInstitute/scripts.pory"
+# 169 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 174 "data//maps/RangerInstitute/scripts.pory"
+# 170 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 175 "data//maps/RangerInstitute/scripts.pory"
+# 171 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_NPC2_Text_0
-# 176 "data//maps/RangerInstitute/scripts.pory"
+# 172 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_1F_NPC3::
-# 180 "data//maps/RangerInstitute/scripts.pory"
+# 176 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 181 "data//maps/RangerInstitute/scripts.pory"
+# 177 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 182 "data//maps/RangerInstitute/scripts.pory"
+# 178 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_NPC3_Text_0
-# 183 "data//maps/RangerInstitute/scripts.pory"
+# 179 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_1F_BlockerBasement::
-# 189 "data//maps/RangerInstitute/scripts.pory"
+# 185 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 190 "data//maps/RangerInstitute/scripts.pory"
+# 186 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 191 "data//maps/RangerInstitute/scripts.pory"
+# 187 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerBasement_Text_0
-# 192 "data//maps/RangerInstitute/scripts.pory"
+# 188 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_1F_BlockerUpstairs::
-# 196 "data//maps/RangerInstitute/scripts.pory"
+# 192 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 197 "data//maps/RangerInstitute/scripts.pory"
+# 193 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 198 "data//maps/RangerInstitute/scripts.pory"
+# 194 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerBasement_Text_0
-# 199 "data//maps/RangerInstitute/scripts.pory"
+# 195 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
@@ -351,8 +343,8 @@ RangerInstitute_1F_Interviewer_Text_1:
 RangerInstitute_1F_InterviewFail_Text_0:
 # 74 "data//maps/RangerInstitute/scripts.pory"
 	.string "Sorry! That's the wrong answer. You\n"
-	.string "have failed this interview. Please feel\l"
-	.string "free to apply again!\p"
+	.string "have failed this interview.\p"
+	.string "Please feel free to apply again!\p"
 	.string "...\p"
 	.string "...sigh, when will we ever get a decent\n"
 	.string "candidate?$"
@@ -381,105 +373,113 @@ RangerInstitute_1F_InterviewQ1_Text_4:
 RangerInstitute_1F_InterviewQ1_Text_5:
 # 87 "data//maps/RangerInstitute/scripts.pory"
 	.string "Correct! DEWPIDER, a BUG/WATER type, is\n"
-	.string "weak to ROCK-type attacks. Onto the\l"
-	.string "next question!$"
+	.string "weak to ROCK-type attacks.\p"
+	.string "Onto the next question!$"
 
 RangerInstitute_1F_InterviewQ2_Text_0:
 # 97 "data//maps/RangerInstitute/scripts.pory"
-	.string "Q: Which of these {PKMN} does NOT evolve??$"
+	.string "Q: Which of these {PKMN} does NOT normally\n"
+	.string "evolve??$"
 
 RangerInstitute_1F_InterviewQ2_Text_1:
-# 99 "data//maps/RangerInstitute/scripts.pory"
+# 98 "data//maps/RangerInstitute/scripts.pory"
 	.string "TOXEL$"
 
 RangerInstitute_1F_InterviewQ2_Text_2:
-# 99 "data//maps/RangerInstitute/scripts.pory"
+# 98 "data//maps/RangerInstitute/scripts.pory"
 	.string "KOFFING$"
 
 RangerInstitute_1F_InterviewQ2_Text_3:
-# 99 "data//maps/RangerInstitute/scripts.pory"
+# 98 "data//maps/RangerInstitute/scripts.pory"
 	.string "ABSOL$"
 
 RangerInstitute_1F_InterviewQ2_Text_4:
-# 99 "data//maps/RangerInstitute/scripts.pory"
+# 98 "data//maps/RangerInstitute/scripts.pory"
 	.string "CYNDAQUIL$"
 
 RangerInstitute_1F_InterviewQ2_Text_5:
-# 103 "data//maps/RangerInstitute/scripts.pory"
-	.string "Correct! ABSOL has no evolution. Onto\n"
-	.string "the next question!$"
+# 102 "data//maps/RangerInstitute/scripts.pory"
+	.string "Correct! ABSOL has no normal evolution,\n"
+	.string "but can MEGA EVOLVE.\p"
+	.string "Onto the next question!$"
 
 RangerInstitute_1F_InterviewQ3_Text_0:
-# 113 "data//maps/RangerInstitute/scripts.pory"
+# 112 "data//maps/RangerInstitute/scripts.pory"
 	.string "Q: Which of these {PKMN} is GHOST type?$"
 
 RangerInstitute_1F_InterviewQ3_Text_1:
-# 115 "data//maps/RangerInstitute/scripts.pory"
+# 113 "data//maps/RangerInstitute/scripts.pory"
 	.string "DHELMISE$"
 
 RangerInstitute_1F_InterviewQ3_Text_2:
-# 115 "data//maps/RangerInstitute/scripts.pory"
+# 113 "data//maps/RangerInstitute/scripts.pory"
 	.string "ZIGZAGOON$"
 
 RangerInstitute_1F_InterviewQ3_Text_3:
-# 115 "data//maps/RangerInstitute/scripts.pory"
+# 113 "data//maps/RangerInstitute/scripts.pory"
 	.string "DELPHOX$"
 
 RangerInstitute_1F_InterviewQ3_Text_4:
-# 115 "data//maps/RangerInstitute/scripts.pory"
+# 113 "data//maps/RangerInstitute/scripts.pory"
 	.string "NINETALES$"
 
 RangerInstitute_1F_InterviewQ3_Text_5:
-# 119 "data//maps/RangerInstitute/scripts.pory"
+# 117 "data//maps/RangerInstitute/scripts.pory"
 	.string "Correct! DHELMISE is a GHOST/GRASS\n"
-	.string "type {PKMN}. Onto the next question!$"
+	.string "type {PKMN}, commonly found underwater.\p"
+	.string "Onto the next question!$"
 
 RangerInstitute_1F_InterviewQ4_Text_0:
-# 129 "data//maps/RangerInstitute/scripts.pory"
+# 127 "data//maps/RangerInstitute/scripts.pory"
 	.string "Q: What happens if you use BLACK\n"
 	.string "AUGURITE on a SCYTHER?$"
 
 RangerInstitute_1F_InterviewQ4_Text_1:
-# 131 "data//maps/RangerInstitute/scripts.pory"
+# 128 "data//maps/RangerInstitute/scripts.pory"
 	.string "Full Heal$"
 
 RangerInstitute_1F_InterviewQ4_Text_2:
-# 131 "data//maps/RangerInstitute/scripts.pory"
+# 128 "data//maps/RangerInstitute/scripts.pory"
 	.string "Evolution$"
 
 RangerInstitute_1F_InterviewQ4_Text_3:
-# 131 "data//maps/RangerInstitute/scripts.pory"
+# 128 "data//maps/RangerInstitute/scripts.pory"
 	.string "Nothing$"
 
 RangerInstitute_1F_InterviewQ4_Text_4:
-# 131 "data//maps/RangerInstitute/scripts.pory"
+# 128 "data//maps/RangerInstitute/scripts.pory"
 	.string "Boost BUG power$"
 
 RangerInstitute_1F_InterviewQ4_Text_5:
-# 135 "data//maps/RangerInstitute/scripts.pory"
+# 132 "data//maps/RangerInstitute/scripts.pory"
 	.string "Correct! Using BLACK AUGURITE evolves\n"
-	.string "SCYTHER into KLEAVOR. Onto the next\l"
-	.string "question!$"
+	.string "SCYTHER into KLEAVOR.\p"
+	.string "Onto the next question!$"
 
 RangerInstitute_1F_InterviewQ5_Text_0:
-# 145 "data//maps/RangerInstitute/scripts.pory"
+# 142 "data//maps/RangerInstitute/scripts.pory"
 	.string "Q: If you see a stranger in need of\n"
 	.string "help, what do you do?$"
 
 RangerInstitute_1F_InterviewQ5_Text_1:
-# 147 "data//maps/RangerInstitute/scripts.pory"
+# 143 "data//maps/RangerInstitute/scripts.pory"
 	.string "Laugh$"
 
 RangerInstitute_1F_InterviewQ5_Text_2:
-# 147 "data//maps/RangerInstitute/scripts.pory"
+# 143 "data//maps/RangerInstitute/scripts.pory"
 	.string "Help$"
 
 RangerInstitute_1F_InterviewQ5_Text_3:
-# 147 "data//maps/RangerInstitute/scripts.pory"
+# 143 "data//maps/RangerInstitute/scripts.pory"
 	.string "Take a video$"
 
+RangerInstitute_1F_InterviewQ5_Text_4:
+# 147 "data//maps/RangerInstitute/scripts.pory"
+	.string "Correct! And with that, this interview\n"
+	.string "is over.$"
+
 RangerInstitute_1F_InterviewPass_Text_0:
-# 159 "data//maps/RangerInstitute/scripts.pory"
+# 155 "data//maps/RangerInstitute/scripts.pory"
 	.string "Congratulations {PLAYER}! You've\n"
 	.string "cleared the interview and we are now\l"
 	.string "proud to call you a {PKMN} RANGER RECRUIT.\l"
@@ -488,26 +488,26 @@ RangerInstitute_1F_InterviewPass_Text_0:
 	.string "your induction.$"
 
 RangerInstitute_1F_NPC1_Text_0:
-# 168 "data//maps/RangerInstitute/scripts.pory"
+# 164 "data//maps/RangerInstitute/scripts.pory"
 	.string "Should I become a {PKMN} Ranger? It's\n"
 	.string "really hard to get in...I don't know if I\l"
 	.string "can do it.$"
 
 RangerInstitute_1F_NPC2_Text_0:
-# 175 "data//maps/RangerInstitute/scripts.pory"
+# 171 "data//maps/RangerInstitute/scripts.pory"
 	.string "My interview is coming up. I'm nervous -\n"
 	.string "I really want to become a {PKMN} Ranger so\l"
 	.string "bad! Their {PKMN} are so cool! TAUROS!\l"
 	.string "KANGASKHAN!$"
 
 RangerInstitute_1F_NPC3_Text_0:
-# 182 "data//maps/RangerInstitute/scripts.pory"
+# 178 "data//maps/RangerInstitute/scripts.pory"
 	.string "Not all Rangers are out on the field!\n"
 	.string "Managing such a large organisation is\l"
 	.string "no easy task, let me tell you.$"
 
 RangerInstitute_1F_BlockerBasement_Text_0:
-# 191 "data//maps/RangerInstitute/scripts.pory"
+# 187 "data//maps/RangerInstitute/scripts.pory"
 	.string "Sorry, only {PKMN} Rangers are allowed\n"
 	.string "inside. If you'd like to apply, you can\l"
 	.string "print an application form using the PC\l"
