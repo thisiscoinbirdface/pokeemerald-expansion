@@ -190,9 +190,67 @@ script RangerInstitute_1F_BlockerBasement{
 script RangerInstitute_1F_BlockerUpstairs{
     lockall
     faceplayer
+
+    if (var(VAR_RANGER_INSTITUTE) == 0){
+        msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    }
+
+    if (var(VAR_RANGER_INSTITUTE) == 1){
+        msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    }
+
+    if (var(VAR_RANGER_INSTITUTE) == 2){
+        msgbox(format("You're not a fully-fledged {PKMN} RANGER yet - just a RECRUIT! So I'll be keeping an eye on you."))
+    }
+    releaseall
+    end
+}
+
+script RangerInstitute_1F_TriggerUpstairs{
+    if (var(VAR_RANGER_INSTITUTE) > 1){end}
+
+    lockall
+    applymovement(6, moves(face_left emote_exclamation_mark))
+    waitmovement(0)
     msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    applymovement(6, moves(face_down))
+    waitmovement(0)   
     releaseall
     end
 }
 
 
+
+
+
+
+
+
+
+
+
+//2nd FLOOR - AFTER GETTING THE RECRUIT CERTIFICATION
+//walk up, trigger - check for ranger recruit.
+//get ranger bike, meet RAVINE the head of the institute
+//Ravine tells you to get to candidate level, you must catch 70 pokemon
+
+
+
+
+//Triggers
+script RangerInstitute_2F_Trigger0{
+    lockall
+    applymovement(12, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Head."))
+    release
+
+    //move to Ravine
+    applymovement(12, moves(walk_left * 6 walk_up walk_left * 6 walk_up face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 6 walk_up walk_left * 6 walk_up face_down))
+    waitmovement(0)
+
+    release
+}

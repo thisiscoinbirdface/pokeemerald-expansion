@@ -81,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 17,
+      "x": 18,
       "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -188,7 +188,7 @@
       "x": 2,
       "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -216,7 +216,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 14,
+      "x": 13,
       "y": 29,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -225,12 +225,21 @@
     },
     {
       "type": "trigger",
-      "x": 14,
+      "x": 13,
       "y": 28,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RangerInstitute_1F_TriggerUpstairs"
     }
   ],
   "bg_events": [

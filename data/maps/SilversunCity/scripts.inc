@@ -144,7 +144,7 @@ SilversunCity_NPC3::
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
 # 123 "data//maps/SilversunCity/scripts.pory"
-	warp MAP_RANGER_INSTITUTE, 9, 11
+	warp MAP_RANGER_INSTITUTE, 14, 28
 # 124 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
