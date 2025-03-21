@@ -23,11 +23,11 @@ mapscripts RangerInstitute_MapScripts{}
 script RangerInstitute_1F_ApplicationPC{
     lockall
 
-    if (var(VAR_RESULT) == 1){
+    if (var(VAR_RANGER_INSTITUTE) == 1){
         msgbox(format("YOU ALREADY HAVE AN APPLICATION IN PROGRESS."))
     }
 
-    if (var(VAR_RESULT) == 0){
+    if (var(VAR_RANGER_INSTITUTE) == 0){
         msgbox(format("{PLAYER} booted up the Application PC."), MSGBOX_SIGN)
         release
         msgbox(format("WOULD YOU LIKE TO PRINT AN APPLICATION FORM?"), MSGBOX_YESNO)
@@ -57,7 +57,7 @@ script RangerInstitute_1F_Interviewer{
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left *2 walk_down * 2 face_right))
         waitmovement(0)
-        applymovement(4, face_left)
+        applymovement(4, moves(face_left))
         waitmovement(0)
         delay(30)
 
@@ -71,7 +71,7 @@ script RangerInstitute_1F_Interviewer{
 }
 
 script RangerInstitute_1F_InterviewFail{
-    msgbox(format("Sorry! That's the wrong answer. You have failed this interview. Please feel free to apply again!\p...\\...sigh, when will we ever get a decent candidate?"))
+    msgbox(format("Sorry! That's the wrong answer. You have failed this interview.\pPlease feel free to apply again!\p...\p...sigh, when will we ever get a decent candidate?"))
     release
     setvar(VAR_RANGER_INSTITUTE, 0)
 }
@@ -80,12 +80,11 @@ script RangerInstitute_1F_InterviewQ1{
     //Question 1
     applymovement(4, moves(emote_question_mark))
     msgbox(format("Q: Which of these types is super-effective against DEWPIDER?"))
-    waitbuttonpress
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "FAIRY", "GRASS", "FIRE", "ROCK")
 
     //Check answers
     if (var(VAR_RESULT) == 3){
-        msgbox(format("Correct! DEWPIDER, a BUG/WATER type, is weak to ROCK-type attacks. Onto the next question!"))
+        msgbox(format("Correct! DEWPIDER, a BUG/WATER type, is weak to ROCK-type attacks.\pOnto the next question!"))
         goto(RangerInstitute_1F_InterviewQ2)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -95,14 +94,13 @@ script RangerInstitute_1F_InterviewQ1{
 script RangerInstitute_1F_InterviewQ2{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these {PKMN} does NOT evolve??"))
-    waitbuttonpress
+    msgbox(format("Q: Which of these {PKMN} does NOT normally evolve??"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TOXEL", "KOFFING", "ABSOL", "CYNDAQUIL")
 
     //Check answers
     if (var(VAR_RESULT) == 2){
-        msgbox(format("Correct! ABSOL has no evolution. Onto the next question!"))
-        goto(RangerInstitute_1F_InterviewQ2)
+        msgbox(format("Correct! ABSOL has no normal evolution, but can MEGA EVOLVE.\pOnto the next question!"))
+        goto(RangerInstitute_1F_InterviewQ3)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
     }
@@ -112,13 +110,12 @@ script RangerInstitute_1F_InterviewQ3{
     //Question 1
     applymovement(4, moves(emote_question_mark))
     msgbox(format("Q: Which of these {PKMN} is GHOST type?"))
-    waitbuttonpress
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "DHELMISE", "ZIGZAGOON", "DELPHOX", "NINETALES")
 
     //Check answers
     if (var(VAR_RESULT) == 0){
-        msgbox(format("Correct! DHELMISE is a GHOST/GRASS type {PKMN}. Onto the next question!"))
-        goto(RangerInstitute_1F_InterviewQ2)
+        msgbox(format("Correct! DHELMISE is a GHOST/GRASS type {PKMN}, commonly found underwater.\pOnto the next question!"))
+        goto(RangerInstitute_1F_InterviewQ4)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
     }
@@ -128,13 +125,12 @@ script RangerInstitute_1F_InterviewQ4{
     //Question 1
     applymovement(4, moves(emote_question_mark))
     msgbox(format("Q: What happens if you use BLACK AUGURITE on a SCYTHER?"))
-    waitbuttonpress
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Full Heal", "Evolution", "Nothing", "Boost BUG power")
 
     //Check answers
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR. Onto the next question!"))
-        goto(RangerInstitute_1F_InterviewQ2)
+        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR.\pOnto the next question!"))
+        goto(RangerInstitute_1F_InterviewQ5)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
     }
@@ -144,12 +140,11 @@ script RangerInstitute_1F_InterviewQ5{
     //Question 1
     applymovement(4, moves(emote_question_mark))
     msgbox(format("Q: If you see a stranger in need of help, what do you do?"))
-    waitbuttonpress
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Nothing", "Laugh", "Help", "Take a video")
 
     //Check answers
     if (var(VAR_RESULT) == 2){
-        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR. Onto the next question!"))
+        msgbox(format("Correct! And with that, this interview is over."))
         goto(RangerInstitute_1F_InterviewPass)
     } else {
         goto(RangerInstitute_1F_InterviewFail)

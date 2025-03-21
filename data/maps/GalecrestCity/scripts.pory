@@ -286,7 +286,6 @@ script GalecrestCity_NPC_5{
         msgbox(format("I need to find a {PKMN} that can learn ROCK SMASH..."))
     } else {
         msgbox(format("This rock can be smashed by a {PKMN} that knows a certain move...I forgot which one though! Do you know?"))
-        waitbuttonpress
         dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ROCK BLAST", "ROCK SLIDE", "ROCK SMASH", "STONE EDGE")
         if (var(VAR_RESULT) == 2){
             msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
