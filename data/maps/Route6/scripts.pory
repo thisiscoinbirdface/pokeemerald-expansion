@@ -48,7 +48,7 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a good rod. Too bad you don't have one!"), "I need a Super Rod!")
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a CASTING ROD. Too bad you don't have one!"), "I need a Super Rod!")
     msgbox(format("I wonder what {PKMN} I can catch here with a Super Rod..."))
     releaseall
     end

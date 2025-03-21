@@ -1,0 +1,60 @@
+mapscripts RangerInstitute_MapScripts{}
+
+//FULL RANGER QUESTLINE
+//VAR_RANGER_INSTITUTE
+//0: quest not started
+//1: application form printed
+    //now go to interview. If you fail, var resets to 0
+//2: interview completed
+    //Become a Recruit. Get RANGER BIKE and access to second floor.
+//3: 
+
+
+
+
+//FIRST FLOOR
+//2 blockers
+//3 NPCs (1 employee and 2 randoms)
+//1 interviewer
+//1 application form printer
+
+//NPCs
+script RangerInstitute_1F_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("Should I become a {PKMN} Ranger? It's really hard to get in...I don't know if I can do it."))
+    releaseall
+    end
+}
+script RangerInstitute_1F_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("My interview is coming up. I'm nervous - I really want to become a {PKMN} Ranger so bad! Their {PKMN} are so cool! TAUROS! KANGASKHAN!"))
+    releaseall
+    end
+}
+script RangerInstitute_1F_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("Not all Rangers are out on the field! Managing such a large organisation is no easy task, let me tell you."))
+    releaseall
+    end
+}
+
+//Blockers
+script RangerInstitute_1F_BlockerBasement{
+    lockall
+    faceplayer
+    msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    releaseall
+    end
+}
+script RangerInstitute_1F_BlockerUpstairs{
+    lockall
+    faceplayer
+    msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    releaseall
+    end
+}
+
+

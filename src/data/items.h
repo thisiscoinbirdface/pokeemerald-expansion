@@ -12221,7 +12221,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GOOD_ROD] =
     {
-        .name = _("Good Rod"),
+        .name = _("Casting Rod"),   //This was good rod
         .price = 0,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
@@ -12238,11 +12238,11 @@ const struct Item gItemsInfo[] =
 
     [ITEM_SUPER_ROD] =
     {
-        .name = _("Super Rod"),
+        .name = _("Trolling Rod"),      //super rod
         .price = 0,
         .description = COMPOUND_STRING(
-            "The best fishing\n"
-            "rod for catching\n"
+            "This rod can catch\n"
+            "unique varieties of\n"
             "wild Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,

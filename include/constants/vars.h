@@ -272,9 +272,9 @@
 
     //Moved down from above (i am going to use these)
     #define VAR_ROUTE6_FISHERMAN                             0x4075 // the unfocused fisherman who wants a flute
-    #define VAR_PELLUCA_COOK                                 0x4076 // the restaurant applin quest.
-    #define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-    #define VAR_ROUTE125_STATE                               0x4078 // Unused Var
+    #define VAR_PELLUCA_COOK                                 0x4076 // the restaurant applin quest(0: not start, 1: start, 2: complete)
+    #define VAR_PELLUCA_FISHERY                              0x4077 // pelluca fishery quest (0: not start, 1: prove your worth to get surf, 2: go attack mega sharpedo, 3: complete)
+    #define VAR_RANGER_INSTITUTE                             0x4078 // var for ranger institute - long so check out the institute poryscript
     #define VAR_ROUTE126_STATE                               0x4079 // Unused Var
     #define VAR_ROUTE127_STATE                               0x407A // Unused Var
 

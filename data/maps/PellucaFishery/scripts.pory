@@ -1,0 +1,113 @@
+mapscripts PellucaFishery_MapScripts{}
+
+//3 NPCs
+//front sailor
+script PellucaFishery_NPC1{
+    lockall
+    faceplayer
+    //Post-quest
+    if (var(VAR_PELLUCA_FISHERY) == 3){
+        msgbox(format(""))
+    } else {
+        msgbox(format("Shucks! I can't wait to get back out to sea but OLD MAN BRINEY doesn't want to do anything while the SHARPEDO's out and about!"))
+    }
+    releaseall
+    end
+}
+//back sailor
+script PellucaFishery_NPC2{
+    lockall
+    faceplayer
+    //Post-quest
+    if (var(VAR_PELLUCA_FISHERY) == 3){
+        msgbox(format(""))
+    } else {
+        msgbox(format("I bet me and my TOEDSCRUEL could give that SHARPEDO a whooping and a half, but OLD MAN BRINEY doesn't want us to risk it."))
+    }
+    releaseall
+    end
+}
+//fisherman
+script PellucaFishery_NPC3{
+    lockall
+    faceplayer
+    //Post-quest
+    if (var(VAR_PELLUCA_FISHERY) == 3){
+        msgbox(format(""))
+    } else {
+        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different {PKMN}?"))
+    }
+    releaseall
+    end
+}
+
+//1 main dude
+//0: start the quest (sharpedo is attacking but its not normal)
+//1: you'll help but you can't beat that sharpedo as you are - come back when you get a mega stone
+//2: get surf with mega stone, and surf south of here to beat the sharpedo. but you need gym 6.
+//3: completed quest
+
+script PellucaFishery_EventScript_MainDude{
+    lockall
+    faceplayer
+
+    if (var(VAR_PELLUCA_FISHERY) == 3){
+        msgbox(format(""))
+    }
+
+    if (var(VAR_PELLUCA_FISHERY) == 2){
+        msgbox(format("BRINEY: Have you taken care of the shark?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("BRINEY: Amazing! You're a saviour!"))
+            release
+            giveitem(ITEM_POTION)   //give the quest reward
+            msgbox(format("BRINEY: Amazing! You're a saviour!"))
+            setvar(VAR_PELLUCA_FISHERY, 3)
+            release
+            
+        } else {
+            msgbox(format("BRINEY: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
+            release
+        }
+    }
+
+    if (var(VAR_PELLUCA_FISHERY) == 1){
+        msgbox(format("BRINEY: Ah, there you are! Let's see your MEGA RING."), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            checkitem(ITEM_MEGA_RING)
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("BRINEY: Good, good. Now you've got a chance against the SHARPEDO. Well then, all that's left is for you to make your way there. You'll need to head north of here and climb up a waterfall to reach it's cave. Here you go."))
+                release
+                giveitem(ITEM_HM_WATERFALL)   //give the quest reward
+                msgbox(format("BRINEY: This is the HM WATERFALL. Any {PKMN} that knows it will be able to climb up waterfalls while surfing. But you'll need the CASCADE BADGE. But that's on you. I've done what I can - now go teach that MEGA SHARPEDO a lesson!"))
+                release
+                setvar(VAR_PELLUCA_FISHERY, 2)
+            
+            } else {
+                msgbox(format("BRINEY: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
+                release
+            }
+        } else {
+            msgbox(format("BRINEY: Hmpf. Come back when you do!"))
+        }
+      
+    }
+
+    if (var(VAR_PELLUCA_FISHERY) == 0){
+        //first dialogue
+        msgbox(format("BRINEY: Ohh, what am I going to do about this mess! My fishery business was booming until we started getting attacked by a monstrous SHARPEDO! And none of us can handle it!\pIt's a total disaster.\p...\pBRINEY: Eh? You wanna try? You...don't look like you can handle it. That SHARPEDO's strong, see. Not normal. It's MEGA evolved in the wild! You still wanna go up against it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("BRINEY: Haha! You may not look like much, but you've got a backbone in there, eh? I like that.\pCan't sail the seas without a strong mast.\pFine, you're in. But I'm an old man now and I can't push you into the deep end without preparing you first. Get yourself a MEGA RING somehow and then come back."))
+            release
+            setvar(VAR_PELLUCA_FISHERY, 1)
+        } else {
+            msgbox(format("BRINEY: A wise choice, kid. That thing is terrifying! Worse than a raging seastorm it is!"))
+        }
+
+    }
+
+
+}
+
