@@ -21,15 +21,14 @@ mapscripts RangerInstitute_MapScripts{}
 
 //THE INTERVIEW
 script RangerInstitute_1F_ApplicationPC{
-    lockall
+    msgbox(format("{PLAYER} booted up the Application PC."), MSGBOX_SIGN)
+    release
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
         msgbox(format("YOU ALREADY HAVE AN APPLICATION IN PROGRESS."))
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 0){
-        msgbox(format("{PLAYER} booted up the Application PC."), MSGBOX_SIGN)
-        release
         msgbox(format("WOULD YOU LIKE TO PRINT AN APPLICATION FORM?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("IT WILL COST 500. PROCEED WITH PRINTING?"), MSGBOX_YESNO)
