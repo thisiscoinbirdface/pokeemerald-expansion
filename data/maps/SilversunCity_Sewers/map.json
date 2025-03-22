@@ -258,27 +258,27 @@
       "x": 1,
       "y": 24,
       "elevation": 0,
-      "var": "SilversunCity_Sewers_Duskull_Trigger0",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "SilversunCity_Sewers_Duskull_Trigger0"
     },
     {
       "type": "trigger",
       "x": 2,
       "y": 24,
       "elevation": 0,
-      "var": "SilversunCity_Sewers_Duskull_Trigger1",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "SilversunCity_Sewers_Duskull_Trigger1"
     },
     {
       "type": "trigger",
       "x": 3,
       "y": 24,
       "elevation": 0,
-      "var": "SilversunCity_Sewers_Duskull_Trigger2",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "SilversunCity_Sewers_Duskull_Trigger2"
     },
     {
       "type": "trigger",

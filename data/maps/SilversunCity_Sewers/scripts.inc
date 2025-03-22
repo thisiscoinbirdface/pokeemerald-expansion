@@ -136,9 +136,9 @@ SilversunCity_Sewers_Duskull_Event::
 # 98 "data//maps/SilversunCity_Sewers/scripts.pory"
 	setobjectmovementtype OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP
 # 99 "data//maps/SilversunCity_Sewers/scripts.pory"
+	setvar VAR_SEWERS_DUSKULL, 2
+# 101 "data//maps/SilversunCity_Sewers/scripts.pory"
 	warp MAP_SILVERSUN_CITY_SEWERS, 49, 47
-# 100 "data//maps/SilversunCity_Sewers/scripts.pory"
-	facescreen FADE_FROM_BLACK
 # 102 "data//maps/SilversunCity_Sewers/scripts.pory"
 	releaseall
 	return

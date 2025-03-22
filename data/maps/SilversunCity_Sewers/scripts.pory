@@ -2,7 +2,23 @@
 //3 black market
 //5 trainers
 
-mapscripts SilversunCity_Sewers_MapScripts{}
+mapscripts SilversunCity_Sewers_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: SilversunCity_OnTransition
+}
+
+//This script is called after readying the exit (by talking to gab again)
+script SilversunCity_OnTransition{
+
+    if (var(VAR_SEWERS_DUSKULL) == 2){
+        setobjectxyperm(9, 48, 46)
+        setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
+        setobjectmovementtype(9, MOVEMENT_TYPE_FACE_RIGHT)
+        setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP)
+        goto(SilversunCity_Sewers_Duskull_Event_Ending)
+    }
+
+    end
+}
 
 
 
@@ -14,7 +30,7 @@ mapscripts SilversunCity_Sewers_MapScripts{}
 
 
 
-//Man quest at entrance 
+//Man quest at entrance      
 script SilversunCity_Sewers_NPC6{
     lockall
     faceplayer
@@ -53,19 +69,22 @@ script SilversunCity_Sewers_ManLostWife_Trigger1{
 
 script SilversunCity_Sewers_Duskull_Trigger0{
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_right face_down))
+    waitmovement(0)
     goto(SilversunCity_Sewers_Duskull_Event)
 }
 
 script SilversunCity_Sewers_Duskull_Trigger1{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
     goto(SilversunCity_Sewers_Duskull_Event)
 }
 
 script SilversunCity_Sewers_Duskull_Trigger2{
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_right face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left face_down))
+    waitmovement(0)
     goto(SilversunCity_Sewers_Duskull_Event)
 }
 
@@ -74,7 +93,7 @@ script SilversunCity_Sewers_Duskull_Trigger2{
 script SilversunCity_Sewers_Duskull_Event{
     applymovement(9, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("Eek! Help me! The SEWER SKULL is attacking me!"))
+    msgbox(format("Eek! Help me! I can feel something attacking me!"))
     release
 
     //battle
@@ -84,7 +103,6 @@ script SilversunCity_Sewers_Duskull_Event{
     release
 
     removeobject(15)
-    setflag(FLAG_SEWERS_DUSKULL)
 
 
     //rest of event
@@ -92,17 +110,33 @@ script SilversunCity_Sewers_Duskull_Event{
     msgbox(format("Is...is it gone?\pOh my, you saved me! Thank you so much!\pI was so worried...I need to return to my husband quickly. He must be even more worried!\pHe sent you?\pOkay, let's go to him together."))
     release
 
-    fadescreen(FADE_TO_BLACK)
-    setobjectxyperm(9, 48, 46)
-    setobjectmovementtype(9, MOVEMENT_TYPE_FACE_DOWN)
-    setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP)
-    warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47)
-    facescreen(FADE_FROM_BLACK)
+    setvar(VAR_SEWERS_DUSKULL, 2)
 
+    warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47)    
     releaseall
 }  
 
 
+
+//Quest end setflag(FLAG_SEWERS_DUSKULL)
+script SilversunCity_Sewers_Duskull_Event_Ending{
+    lockall
+    msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SKULL. It was so scary!"))
+    release
+    applymovement(9, moves(face_down))
+    applymovement(1, moves(face_down))
+    waitmovement(0)
+    delay(30)
+    msgbox(format("What's your name, trainer?\p{PLAYER}?\pWe're in your debt. We can't imagine life without each other. Please come visit us in our house later. We live next to the Gym."))
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    removeobject(9)
+    setflag(FLAG_SEWERS_DUSKULL)
+    clearflag(FLAG_HIDE_SILVERSUN_DUSKULL_NPCS)
+    setvar(VAR_SEWERS_DUSKULL, 3)
+    fadescreen(FADE_FROM_BLACK)
+}
 
 
 
