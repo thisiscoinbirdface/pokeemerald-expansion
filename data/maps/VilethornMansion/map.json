@@ -2,7 +2,7 @@
   "id": "MAP_VILETHORN_MANSION",
   "name": "VilethornMansion",
   "layout": "LAYOUT_VILETHORN_MANSION",
-  "music": "MUS_DUMMY",
+  "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",

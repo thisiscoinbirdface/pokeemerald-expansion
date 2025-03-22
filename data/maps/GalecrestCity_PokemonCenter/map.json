@@ -2,7 +2,7 @@
   "id": "MAP_GALECREST_CITY_POKEMON_CENTER",
   "name": "GalecrestCity_PokemonCenter",
   "layout": "LAYOUT_GALECREST_CITY_POKEMON_CENTER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_GALECREST_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

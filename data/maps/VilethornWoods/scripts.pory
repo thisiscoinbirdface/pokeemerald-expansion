@@ -6,6 +6,42 @@ raw `
 mapscripts VilethornWoods_MapScripts{}
 
 
+script VilethornWoods_EventScript_NurseDemo{
+    lockall
+    faceplayer
+    msgbox(format("This area is closed for the demo."))
+    releaseall
+    end
+}
+
+script VilethornWoods_EventScript_DemoEnd{
+    lockall
+    faceplayer
+    msgbox(format("This is the end of the demo. Thank you for playing! I hope you had fun. Please let me know how your experience went in the Discord server!"))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,15 +93,6 @@ script VilethornWoods_EventScript_TriggerProf{
     releaseall
 }
 
-
-
-script VilethornWoods_EventScript_NurseDemo{
-    lockall
-    faceplayer
-    msgbox(format("This area is closed for the demo."))
-    releaseall
-    end
-}
 
 
 

@@ -1,6 +1,5 @@
 mapscripts VilethornHouse_MapScripts{}
 
-
 script VilethornHouse_NPC1{
     lockall
     faceplayer

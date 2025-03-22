@@ -2,8 +2,8 @@
   "id": "MAP_VILETHORN_WOODS",
   "name": "VilethornWoods",
   "layout": "LAYOUT_VILETHORN_WOODS",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_GALECREST_CITY",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_VILETHORN_WOODS",
   "requires_flash": false,
   "weather": "WEATHER_FOG_DIAGONAL",
   "map_type": "MAP_TYPE_ROUTE",
@@ -272,6 +272,32 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VilethornWoods_EventScript_NurseDemo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VilethornWoods_EventScript_DemoEnd",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VilethornWoods_EventScript_DemoEnd",
       "flag": "0"
     }
   ],

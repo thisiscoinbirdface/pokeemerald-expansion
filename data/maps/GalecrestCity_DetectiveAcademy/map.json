@@ -2,7 +2,7 @@
   "id": "MAP_GALECREST_CITY_DETECTIVE_ACADEMY",
   "name": "GalecrestCity_DetectiveAcademy",
   "layout": "LAYOUT_GALECREST_CITY_DETECTIVE_ACADEMY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_B_DOME",
   "region_map_section": "MAPSEC_GALECREST_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
