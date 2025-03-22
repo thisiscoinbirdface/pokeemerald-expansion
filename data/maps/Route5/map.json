@@ -3,7 +3,7 @@
   "name": "Route5",
   "layout": "LAYOUT_ROUTE5",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_GALECREST_CITY",
+  "region_map_section": "MAPSEC_ROUTE5",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_ROUTE",

@@ -230,8 +230,14 @@
 #define MAPSEC_ROUTE5                       0xE0
 #define MAPSEC_VILETHORN_WOODS              0xE1
 #define MAPSEC_SILVERSUN_CITY               0xE2
+#define MAPSEC_HOYA_RIVER_NORTH             0xE3
+#define MAPSEC_ROUTE6                       0xE4
+#define MAPSEC_RANGER_INSTITUTE             0xE5
+#define MAPSEC_HOYA_RIVER_SOUTH             0xE6
+#define MAPSEC_PELLUCA_CITY                 0xE7
+#define MAPSEC_MIRROH_BASE_CAMP             0xE8
 
-#define MAPSEC_NONE                         0xE3
+#define MAPSEC_NONE                         0xE9
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
