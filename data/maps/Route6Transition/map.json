@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE6TRANSITION",
   "name": "Route6Transition",
   "layout": "LAYOUT_ROUTE6TRANSITION",
-  "music": "MUS_CUSTOM_LILAC",
+  "music": "MUS_CUSTOM_JETLAG",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

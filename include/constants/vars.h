@@ -275,7 +275,7 @@
     #define VAR_PELLUCA_COOK                                 0x4076 // the restaurant applin quest(0: not start, 1: start, 2: complete)
     #define VAR_PELLUCA_FISHERY                              0x4077 // pelluca fishery quest (0: not start, 1: prove your worth to get surf, 2: go attack mega sharpedo, 3: complete)
     #define VAR_RANGER_INSTITUTE                             0x4078 // var for ranger institute - long so check out the institute poryscript
-    #define VAR_ROUTE126_STATE                               0x4079 // Unused Var
+    #define VAR_SEWERS_DUSKULL                               0x4079 // duskull attacking the lady in the sewers
     #define VAR_ROUTE127_STATE                               0x407A // Unused Var
 
     #define VAR_ROUTE129_STATE                               0x407C // Unused Var
