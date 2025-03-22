@@ -99,7 +99,7 @@ GastreeGym_LeaderBattle_Text_0:
 GastreeGym_EventScript_Victory_Text_0:
 # 39 "data//maps/GastreeGym/scripts.pory"
 	.string "{PLAYER} received the GYM Badge from\n"
-	.string "LEADER.$"
+	.string "INGER.$"
 
 GastreeGym_EventScript_Victory_Text_1:
 # 47 "data//maps/GastreeGym/scripts.pory"
@@ -120,10 +120,10 @@ GastreeGym_EventScript_Victory_Text_3:
 
 GastreeGym_Text_Intro::
 # 58 "data//maps/GastreeGym/scripts.pory"
-	.string "Hello! My name is INGER and I am the\n"
-	.string "GASTREE CITY GYM LEADER. So you want\l"
-	.string "to challenge me? Let's get right into\l"
-	.string "it!$"
+	.string "INGER: Hello! My name is INGER and I am\n"
+	.string "the GASTREE CITY GYM LEADER. So you\l"
+	.string "want to challenge me? Let's get right\l"
+	.string "into it!$"
 
 GastreeGym_Text_Defeated::
 # 62 "data//maps/GastreeGym/scripts.pory"
