@@ -68,7 +68,6 @@ script VilethornWoods_EventScript_TriggerProf{
 
 //Trainers
 script VilethornWoods_Trainer_A{
-    setflag(FLAG_SYS_EXP_ALL)
     trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type {PKMN} are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
     msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
