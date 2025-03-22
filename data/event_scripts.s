@@ -1261,13 +1261,13 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route6/scripts.inc"
 
-	.include "data/maps/Route6Transition/scripts.inc"
+	.include "data/maps/HoyaRiverNorth/scripts.inc"
 
 	.include "data/maps/RangerInstitute/scripts.inc"
 
 	.include "data/maps/PellucaCity/scripts.inc"
 
-	.include "data/maps/HoyaRiver/scripts.inc"
+	.include "data/maps/HoyaRiverSouth/scripts.inc"
 
 	.include "data/maps/RangerInstituteBiome/scripts.inc"
 

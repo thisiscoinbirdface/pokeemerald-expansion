@@ -14,17 +14,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE6",
-      "offset": 0,
-      "direction": "dive"
-    },
-    {
-      "map": "MAP_CARABRUE_TOWN",
-      "offset": 0,
-      "direction": "emerge"
-    },
-    {
-      "map": "MAP_HOYA_RIVER",
+      "map": "MAP_HOYA_RIVER_SOUTH",
       "offset": 0,
       "direction": "right"
     },

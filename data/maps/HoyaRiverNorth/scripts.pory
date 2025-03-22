@@ -1,4 +1,4 @@
-mapscripts Route6Transition_MapScripts{}
+mapscripts HoyaRiverNorth_MapScripts{}
 
 
 
@@ -6,7 +6,7 @@ mapscripts Route6Transition_MapScripts{}
 script Route6_Transition_EventScript_SharpedoBlocker{
     lockall
     faceplayer
-    msgbox(format("Stop right there! We're from the Pokemon Ranger Institute.\pThere's a dangerous {PKMN} in the HOYA RIVER so we can't let you through.\pWhat is it?\pdon't be shocked - it's a wild MEGA SHARPEDO! It's on its way down south, so once it passes, we'll reopen the bridge."))
+    msgbox(format("Stop right there! We're from the Pokemon Ranger Institute.\pThere's a dangerous {PKMN} in the HOYA RIVER so we can't let you through.\pWhat is it?\pDon't be shocked - it's a wild MEGA SHARPEDO! It's on its way down south, so once it passes, we'll reopen the bridge."))
     releaseall
     end
 }

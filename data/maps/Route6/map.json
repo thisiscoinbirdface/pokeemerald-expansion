@@ -14,12 +14,12 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE6TRANSITION",
+      "map": "MAP_HOYA_RIVER_NORTH",
       "offset": 26,
       "direction": "up"
     },
     {
-      "map": "MAP_HOYA_RIVER",
+      "map": "MAP_HOYA_RIVER_SOUTH",
       "offset": 94,
       "direction": "left"
     }

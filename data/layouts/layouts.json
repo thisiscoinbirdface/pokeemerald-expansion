@@ -4972,14 +4972,14 @@
       "blockdata_filepath": "data/layouts/Route6/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE6TRANSITION",
-      "name": "Route6Transition_Layout",
+      "id": "LAYOUT_HOYA_RIVER_NORTH",
+      "name": "HoyaRiverNorth_Layout",
       "width": 32,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/Route6Transition/border.bin",
-      "blockdata_filepath": "data/layouts/Route6Transition/map.bin"
+      "border_filepath": "data/layouts/HoyaRiverNorth/border.bin",
+      "blockdata_filepath": "data/layouts/HoyaRiverNorth/map.bin"
     },
     {
       "id": "LAYOUT_RANGER_INSTITUTE",
@@ -5002,14 +5002,14 @@
       "blockdata_filepath": "data/layouts/PellucaCity/map.bin"
     },
     {
-      "id": "LAYOUT_HOYA_RIVER",
-      "name": "HoyaRiver_Layout",
+      "id": "LAYOUT_HOYA_RIVER_SOUTH",
+      "name": "HoyaRiverSouth_Layout",
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Swampforest",
-      "border_filepath": "data/layouts/HoyaRiver/border.bin",
-      "blockdata_filepath": "data/layouts/HoyaRiver/map.bin"
+      "border_filepath": "data/layouts/HoyaRiverSouth/border.bin",
+      "blockdata_filepath": "data/layouts/HoyaRiverSouth/map.bin"
     },
     {
       "id": "LAYOUT_RANGER_INSTITUTE_BIOME",

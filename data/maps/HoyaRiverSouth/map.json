@@ -1,7 +1,7 @@
 {
-  "id": "MAP_HOYA_RIVER",
-  "name": "HoyaRiver",
-  "layout": "LAYOUT_HOYA_RIVER",
+  "id": "MAP_HOYA_RIVER_SOUTH",
+  "name": "HoyaRiverSouth",
+  "layout": "LAYOUT_HOYA_RIVER_SOUTH",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_ROUTE6",
-      "offset": -94,
+      "offset": -92,
       "direction": "right"
+    },
+    {
+      "map": "MAP_PELLUCA_CITY",
+      "offset": 0,
+      "direction": "left"
     },
     {
       "map": "MAP_PELLUCA_CITY",
