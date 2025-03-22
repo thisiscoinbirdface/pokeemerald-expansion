@@ -193,7 +193,10 @@ SilversunCity_Houses_Artist_Text_6:
 
 SilversunCity_Houses_Tutor_Text_0:
 # 58 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "$"
+	.string "I'm medidating. Come back to me later.\n"
+	.string "Get 6 badges first.\p"
+	.string "...\p"
+	.string "Yes, my meditations are long.$"
 
 SilversunCity_Houses_NPC1_Text_0:
 # 75 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -205,8 +208,10 @@ SilversunCity_Houses_NPC1_Text_0:
 SilversunCity_Houses_NPC2_Text_0:
 # 82 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "They say dangerous {PKMN} come out from\n"
-	.string "the sewers from time to time. I don't let\l"
-	.string "my child play anywhere near it!$"
+	.string "the sewers from time to time, like the\l"
+	.string "SEWER SKULL. Apparently that's not\l"
+	.string "even a {PKMN}, it's an evil spirit! I don't\l"
+	.string "let my child play anywhere near it!$"
 
 SilversunCity_Houses_NPC3_Text_0:
 # 89 "data//maps/SilversunCity_Houses/scripts.pory"

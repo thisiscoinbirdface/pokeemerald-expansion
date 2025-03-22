@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SilversunCity_Sewers_NPC6",
-      "flag": "0"
+      "flag": "FLAG_SEWERS_DUSKULL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
@@ -84,10 +84,10 @@
       "x": 23,
       "y": 24,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SilversunCity_Sewers_Trainer_A",
       "flag": "0"
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_SEWERS_DUSKULL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
@@ -197,7 +197,7 @@
       "flag": "FLAG_ITEM_SEWERS_A"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUSKULL)",
       "x": 2,
       "y": 28,
       "elevation": 0,
@@ -207,7 +207,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_SEWERS_DUSKULL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
@@ -258,7 +258,7 @@
       "x": 1,
       "y": 24,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "SilversunCity_Sewers_Duskull_Trigger0",
       "var_value": "0",
       "script": "NULL"
     },
@@ -267,7 +267,7 @@
       "x": 2,
       "y": 24,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "SilversunCity_Sewers_Duskull_Trigger1",
       "var_value": "0",
       "script": "NULL"
     },
@@ -276,9 +276,27 @@
       "x": 3,
       "y": 24,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "SilversunCity_Sewers_Duskull_Trigger2",
       "var_value": "0",
       "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 49,
+      "y": 47,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SilversunCity_Sewers_ManLostWife_Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 49,
+      "y": 48,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SilversunCity_Sewers_ManLostWife_Trigger1"
     }
   ],
   "bg_events": [

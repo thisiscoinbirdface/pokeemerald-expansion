@@ -141,7 +141,7 @@
 #define FLAG_SILVERSUN_THEATER_LENS  0x28F // get zoom lens from the dude in the back
 #define FLAG_SILVERSUN_THEATER_SCARF  0x290 // get silk scarf from the beauty backstage
 #define FLAG_SILVERSUN_ANTIDOTE  0x291 // antidote because someone's pokemon got poisoned
-#define FLAG_UNUSED_0x292  0x292 // Unused Flag
+#define FLAG_SEWERS_DUSKULL  0x292 // Unused Flag
 #define FLAG_UNUSED_0x293  0x293 // Unused Flag
 #define FLAG_UNUSED_0x294  0x294 // Unused Flag
 #define FLAG_UNUSED_0x295  0x295 // Unused Flag

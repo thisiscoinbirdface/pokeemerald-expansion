@@ -301,5 +301,13 @@ SilversunCity_NPC4_Text_0:
 
 SilversunCity_NPC5_Text_0:
 # 138 "data//maps/SilversunCity/scripts.pory"
-	.string "The sewers really stink up this part of\n"
-	.string "town!$"
+	.string "There's a reason nobody lives near the\n"
+	.string "sewers - and not because it stinks!\p"
+	.string "They say a demon {PKMN} haunts the sewers.\n"
+	.string "It's even scarier than all the\l"
+	.string "POISON-type {PKMN}! They call it the SEWER\l"
+	.string "SKULL because of how it looks, and\l"
+	.string "apparently, if it attacks you, you lose\l"
+	.string "your memories! How scary is that?\p"
+	.string "...probably just someone seeing things\n"
+	.string "though.$"

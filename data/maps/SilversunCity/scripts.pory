@@ -135,7 +135,7 @@ script SilversunCity_NPC4{
 script SilversunCity_NPC5{
     lockall
     faceplayer
-    msgbox(format("The sewers really stink up this part of town!"))
+    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon {PKMN} haunts the sewers. It's even scarier than all the POISON-type {PKMN}! They call it the SEWER SKULL because of how it looks, and apparently, if it attacks you, you lose your memories! How scary is that?\p...probably just someone seeing things though."))
     releaseall
     end
 }

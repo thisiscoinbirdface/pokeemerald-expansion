@@ -55,7 +55,7 @@ script SilversunCity_Houses_Artist{
 script SilversunCity_Houses_Tutor{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("I'm medidating. Come back to me later. Get 6 badges first.\p...\pYes, my meditations are long."))
     releaseall
     end
 }
@@ -79,7 +79,7 @@ script SilversunCity_Houses_NPC1{
 script SilversunCity_Houses_NPC2{
     lockall
     faceplayer
-    msgbox(format("They say dangerous {PKMN} come out from the sewers from time to time. I don't let my child play anywhere near it!"))
+    msgbox(format("They say dangerous {PKMN} come out from the sewers from time to time, like the SEWER SKULL. Apparently that's not even a {PKMN}, it's an evil spirit! I don't let my child play anywhere near it!"))
     releaseall
     end
 }
