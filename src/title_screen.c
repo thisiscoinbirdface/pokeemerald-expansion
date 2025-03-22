@@ -812,7 +812,7 @@ static void Task_TitleScreenPhase3(u8 taskId)
             gBattle_BG1_Y = gTasks[taskId].tBg1Y / 2;
             gBattle_BG1_X = 0;
         }
-        UpdateLegendaryMarkingColor(gTasks[taskId].tCounter);
+//        UpdateLegendaryMarkingColor(gTasks[taskId].tCounter);
         if ((gMPlayInfo_BGM.status & 0xFFFF) == 0)
         {
             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_WHITEALPHA);
