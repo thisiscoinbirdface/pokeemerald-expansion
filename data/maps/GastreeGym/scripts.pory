@@ -36,7 +36,7 @@ script GastreeGym_LeaderBattle {
 
 script GastreeGym_EventScript_Victory{
     //Receive the badge
-    msgbox(format("{PLAYER} received the GYM Badge from LEADER."))
+    msgbox(format("{PLAYER} received the GYM Badge from INGER."))
     release
     setflag(FLAG_BADGE01_GET)
 
@@ -56,7 +56,7 @@ script GastreeGym_EventScript_Victory{
 }
 
 text GastreeGym_Text_Intro{
-    format("Hello! My name is INGER and I am the GASTREE CITY GYM LEADER. So you want to challenge me? Let's get right into it!")
+    format("INGER: Hello! My name is INGER and I am the GASTREE CITY GYM LEADER. So you want to challenge me? Let's get right into it!")
 }
 
 text GastreeGym_Text_Defeated{

@@ -12,6 +12,15 @@ script SilversunCity_Theater_Leader{
     lockall
     faceplayer
 
+    //dialogue
+    msgbox(format("GLORIA: Hmm, so it's you. Not spectacular, but you'll do.")) 
+    applymovement(8, moves(face_down))
+    fadescreen(FADE_TO_BLACK)    
+    fadescreen(FADE_FROM_BLACK)    
+    msgbox(format("Welcome to the GLORIA SHOW! Tonight, we're doing a live performance that will sweep you off your feet!\pAUDIENCE: Woohoo! Go GLORIA!"))
+    release
+    applymovement(8, moves(face_left))   
+    msgbox(format("GLORIA: You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
     //Move player and leader
     fadescreen(FADE_TO_BLACK)
     setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
@@ -23,10 +32,30 @@ script SilversunCity_Theater_Leader{
     msgbox(format("GLORIA: Now, {PLAYER}, enthrall me with your danse macabre!"))
     release
 
+    //Battle
+    trainerbattle_no_intro(TRAINER_SILVERSUNGYM_LEADER, "What a performace!")
 
+    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Woohoo!\pGLORIA: Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
+
+    //Receive the badge
+    msgbox(format("{PLAYER} received the DARK BADGE from GLORIA."))
+    release
+    setflag(FLAG_BADGE04_GET)
+
+    //Play gym badge fanfare
+    call(Common_EventScript_PlayGymBadgeFanfare)
+
+    //Describe the badge features (use HMs, allow pokemon control etc.)
+    msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
+
+    //Give TM also
+    giveitem(ITEM_TM_THIEF)
+    msgbox(format("GLORIA: THIEF lets you steal opponents items. A useful tool!"))
+
+    //Bye-bye
+    msgbox(format("GLORIA: It was a pleasure sharing the stage with you. May you weave and bob with elegance in the dance of life, {PLAYER}!"))   
     releaseall
     end
-
 }
 
 

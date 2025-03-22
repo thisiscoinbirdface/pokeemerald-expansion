@@ -131,10 +131,90 @@ SilversunCity_Houses_NPC3::
 	end
 
 
+SilversunCity_Houses_DuskullNPC1::
+# 110 "data//maps/SilversunCity_Houses/scripts.pory"
+	compare VAR_SEWERS_DUSKULL, 3
+	goto_if_eq SilversunCity_Houses_DuskullNPC1_2
+# 119 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
+SilversunCity_Houses_DuskullNPC1_1:
+# 122 "data//maps/SilversunCity_Houses/scripts.pory"
+	releaseall
+	return
+
+SilversunCity_Houses_DuskullNPC1_2:
+# 111 "data//maps/SilversunCity_Houses/scripts.pory"
+	lockall
+# 112 "data//maps/SilversunCity_Houses/scripts.pory"
+	applymovement 6, SilversunCity_Houses_DuskullNPC1_Movement_0
+# 113 "data//maps/SilversunCity_Houses/scripts.pory"
+	applymovement 7, SilversunCity_Houses_DuskullNPC1_Movement_0
+# 114 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
+# 115 "data//maps/SilversunCity_Houses/scripts.pory"
+	release
+# 116 "data//maps/SilversunCity_Houses/scripts.pory"
+	giveegg SPECIES_HONEDGE
+# 117 "data//maps/SilversunCity_Houses/scripts.pory"
+	setvar VAR_SEWERS_DUSKULL, 4
+	goto SilversunCity_Houses_DuskullNPC1_1
+
+
+SilversunCity_Houses_Husband::
+# 126 "data//maps/SilversunCity_Houses/scripts.pory"
+	compare VAR_SEWERS_DUSKULL, 3
+	goto_if_eq SilversunCity_Houses_Husband_2
+# 135 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
+SilversunCity_Houses_Husband_1:
+# 138 "data//maps/SilversunCity_Houses/scripts.pory"
+	releaseall
+	return
+
+SilversunCity_Houses_Husband_2:
+# 127 "data//maps/SilversunCity_Houses/scripts.pory"
+	lockall
+# 128 "data//maps/SilversunCity_Houses/scripts.pory"
+	applymovement 6, SilversunCity_Houses_DuskullNPC1_Movement_0
+# 129 "data//maps/SilversunCity_Houses/scripts.pory"
+	applymovement 7, SilversunCity_Houses_DuskullNPC1_Movement_0
+# 130 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
+# 131 "data//maps/SilversunCity_Houses/scripts.pory"
+	release
+# 132 "data//maps/SilversunCity_Houses/scripts.pory"
+	giveegg SPECIES_HONEDGE
+# 133 "data//maps/SilversunCity_Houses/scripts.pory"
+	setvar VAR_SEWERS_DUSKULL, 4
+	goto SilversunCity_Houses_Husband_1
+
+
+SilversunCity_Houses_Wife::
+# 142 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_Wife_Text_0
+# 143 "data//maps/SilversunCity_Houses/scripts.pory"
+	releaseall
+	return
+
+
+SilversunCity_Houses_Munchlax::
+# 148 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_Munchlax_Text_0
+# 149 "data//maps/SilversunCity_Houses/scripts.pory"
+	releaseall
+	return
+
+
 # 41 "data//maps/SilversunCity_Houses/scripts.pory"
 SilversunCity_Houses_Artist_Movement_0:
 # 41 "data//maps/SilversunCity_Houses/scripts.pory"
 	emote_exclamation_mark
+	step_end
+
+# 112 "data//maps/SilversunCity_Houses/scripts.pory"
+SilversunCity_Houses_DuskullNPC1_Movement_0:
+# 112 "data//maps/SilversunCity_Houses/scripts.pory"
+	faceplayer
 	step_end
 
 SilversunCity_Houses_Artist_Text_0:
@@ -217,3 +297,37 @@ SilversunCity_Houses_NPC3_Text_0:
 # 89 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I really want a TOXEL as my first {PKMN}\n"
 	.string "but Mom will never let me have one.$"
+
+SilversunCity_Houses_DuskullNPC1_Text_0:
+# 114 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "Thank you for saving my wife. You see,\n"
+	.string "my wife is blind, so she needs a {PKMN} to\l"
+	.string "assist her. But we didn't have enough\l"
+	.string "money to apply for an assisance {PKMN}. So\l"
+	.string "we resorted to illegal means. We bought\l"
+	.string "an egg at the black market. That's when\l"
+	.string "she got lost. She took a wrong turn\l"
+	.string "somewhere and I didn't pay attention.\p"
+	.string "But thanks to you, both of us are safe\n"
+	.string "and we have a new member of the family!\l"
+	.string "With MUNCHLAX around, my wife can do\l"
+	.string "things normally now. We're eternally\l"
+	.string "grateful.\p"
+	.string "...\p"
+	.string "We want you to have this. The black\n"
+	.string "market dealer gave it to us but we don't\l"
+	.string "need it.$"
+
+SilversunCity_Houses_DuskullNPC1_Text_1:
+# 119 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "I'm never going to the sewers\n"
+	.string "again...but we did what we had to do.$"
+
+SilversunCity_Houses_Wife_Text_0:
+# 142 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "The poor baby must be tired...I can hear\n"
+	.string "its snores.$"
+
+SilversunCity_Houses_Munchlax_Text_0:
+# 148 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "MUNCHLAX is snoring while standing.$"
