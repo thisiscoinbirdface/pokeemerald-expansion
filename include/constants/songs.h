@@ -549,6 +549,8 @@
 #define MUS_CUSTOM_GARDEN_MOON             610
 #define MUS_CUSTOM_JETLAG            611
 #define MUS_CUSTOM_FLOCKOFBIRDS             612
+#define MUS_CUSTOM_SENSIBLE             613
+#define MUS_CUSTOM_LILAC             614
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

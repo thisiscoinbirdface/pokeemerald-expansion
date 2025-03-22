@@ -617,6 +617,8 @@ gSongTable::
 	song mus_custom_garden_moon, 0, 0
 	song mus_custom_jetlag, 0, 0
 	song mus_custom_flockofbirds, 0, 0
+	song mus_custom_sensible, 0, 0
+	song mus_custom_lilac, 0, 0
 
 	.align 2
 dummy_song_header:
