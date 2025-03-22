@@ -20,14 +20,14 @@
     },
     {
       "map": "MAP_ROUTE6",
-      "offset": -26,
+      "offset": -27,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
-      "x": 17,
+      "x": 16,
       "y": 38,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -58,7 +58,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 17,
+      "x": 16,
       "y": 31,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -67,7 +67,7 @@
     },
     {
       "type": "trigger",
-      "x": 17,
+      "x": 16,
       "y": 33,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -76,7 +76,7 @@
     },
     {
       "type": "trigger",
-      "x": 18,
+      "x": 17,
       "y": 31,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -85,7 +85,7 @@
     },
     {
       "type": "trigger",
-      "x": 18,
+      "x": 17,
       "y": 33,
       "elevation": 0,
       "var": "VAR_TEMP_0",
