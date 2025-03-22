@@ -268,9 +268,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_GREAT_BALL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -283,7 +283,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -294,9 +294,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -307,9 +307,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_G"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -320,9 +320,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_H"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -333,9 +333,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_ALTARIANITE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_I"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -346,9 +346,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_ROCK_INCENSE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_J"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -359,9 +359,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_GOLD_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -372,9 +372,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -385,9 +385,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_4_C"
+      "flag": "FLAG_ITEM_ROUTE6_C"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
@@ -413,6 +413,19 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route6_Trainer_C2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 52,
+      "y": 109,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route3_Underpass_Nurse",
       "flag": "0"
     }
   ],

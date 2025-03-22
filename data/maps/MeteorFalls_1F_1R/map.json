@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_TM_IRON_TAIL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL"
+      "flag": "FLAG_ITEM_ROUTE6_C"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_MOON_STONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE"
+      "flag": "FLAG_ITEM_ROUTE6_E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL"
+      "flag": "FLAG_ITEM_ROUTE6_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP"
+      "flag": "FLAG_ITEM_ROUTE6_F"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",

@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_A",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_B",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_C",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_D",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_F",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -141,7 +141,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_E",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_Grunt_G",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -167,7 +167,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "SomberHQ_NPCGrunt",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SomberHQ_NPC1",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -193,7 +193,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SomberHQ_NPC2",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -206,7 +206,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SomberHQ_NPC3",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -219,7 +219,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SomberHQ_NPC4",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -232,7 +232,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SomberHQ_EventScript_NPCNurse",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -244,9 +244,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_DARK_GEM",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SOMBERHQ_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -257,9 +257,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_BLACK_GLASSES",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SOMBERHQ_C"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -270,9 +270,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SOMBERHQ_E"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -283,9 +283,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SECRET_POWER",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SOMBERHQ_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -296,9 +296,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_POTION",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SOMBERHQ_A"
     }
   ],
   "warp_events": [

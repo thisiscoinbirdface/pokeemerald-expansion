@@ -1267,21 +1267,31 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Surf
 
 === TRAINER_SILVERSUNGYM_LEADER ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: GLORIA
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Linoone
-Level: 36
+Absol
+Level: 26
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+
+Umbreon @ Sitrus Berry
+Level: 28
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+Floragato
+Level: 28
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+Serperior @ Dark Gem
+Level: 29
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
 
 === TRAINER_THEATER_A ===
 Name: RANDALL
@@ -1319,176 +1329,136 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SOMBERHQ_A ===
 Name: GEORGE
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+Thievul
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_B ===
 Name: BERKE
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Vigoroth
+Thievul
 Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Energy
-- Slash
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Elgyem
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_SOMBERHQ_C ===
 Name: BRAXTON
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Swellow
-Level: 28
+Swoobat
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Energy
-- Quick Attack
-- Wing Attack
-- Endeavor
 
-Trapinch
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bite
-- Dig
-- Feint Attack
-- Sand Tomb
 
-Wailmer
-Level: 28
+Bronzor
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Rollout
-- Whirlpool
-- Astonish
-- Water Pulse
 
-Magneton
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunderbolt
-- Supersonic
-- Thunder Wave
-- Sonic Boom
-
-Shiftry
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Giga Drain
-- Feint Attack
-- Double Team
-- Swagger
 
 === TRAINER_SOMBERHQ_D ===
 Name: VINCENT
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Sableye
-Level: 44
+Baltoy
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Medicham
-Level: 44
+Bronzor
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sharpedo
-Level: 44
+Thievul
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_E ===
 Name: LEROY
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Mawile
-Level: 46
+Linoone-Galar
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Starmie
-Level: 46
+Murkrow
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_F ===
 Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Super Potion
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Electrike
-Level: 17
+Murkrow
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Wailmer
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Makuhita
-Level: 17
+Drowzee
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_G ===
 Name: EDGAR
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Cacturne
-Level: 43
+Elgyem
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pelipper
-Level: 43
+
+Linoone-Galar
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_SOMBERHQ_H ===
 Name: ALBERT
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
 Magneton
 Level: 43
@@ -1499,25 +1469,24 @@ Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_MELEA ===
-Name: SAMUEL
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: MELEA
+Class: Team Somber
+Pic: Somber Grunt F
 Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move
 
-Swellow
-Level: 12
+Slowpoke
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Mawile
-Level: 12
+Elgyem
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Kadabra
-Level: 12
+Jynx
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_KOHLA ===
@@ -1531,23 +1500,23 @@ Double Battle: No
 AI: Check Bad Move
 
 Kirlia
-Level: 5
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Boltund
-Level: 5
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Axew
-Level: 5
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewott
-Level: 5
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ceruledge
-Level: 5
+Ceruledge @ Fire Gem
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 

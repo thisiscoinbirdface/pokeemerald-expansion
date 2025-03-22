@@ -199,3 +199,121 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
 
 
+
+
+
+
+
+
+
+
+
+
+//2 NPC scientists
+//7 normal grunts
+//1 special grunt + 2 NPCs in basement
+
+script SomberHQ_EventScript_NPCNurse{
+    lockall
+    msgbox(format("NURSE JOY: I came to watch GLORIA's show but got lost and found myself in this shady place! So I've been hiding here."))
+    msgbox(format("NURSE JOY: Let me heal your {PKMN}."))
+    goto(Common_EventScript_OutOfCenterPartyHeal)
+    releaseall
+}
+
+
+//NPCs
+script SomberHQ_NPC1{
+    lockall
+    faceplayer
+    msgbox(format("What? You thought we all wear suits and go rock-hunting? Someone's gotta make the money! I'm a financial whiz. I'm the real backbone of Team Somber!"))
+    releaseall
+    end
+}
+script SomberHQ_NPC2{
+    lockall
+    faceplayer
+    msgbox(format("The other guy thinks he's a financial hotshot but without my tech skills, nothing would function! I'm the real backbone of Team Somber!"))
+    releaseall
+    end
+}
+script SomberHQ_NPC3{
+    lockall
+    faceplayer
+    msgbox(format("These fancy organised criminals doesn't understand the struggles of us small-time smugglers..."))
+    releaseall
+    end
+}
+script SomberHQ_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous {PKMN} down there."))
+    releaseall
+    end
+}
+script SomberHQ_NPCGrunt{
+    lockall
+    msgbox(format("So you're telling me the shipment's been delayed again? Why, I've got half a mind to -"))
+    applymovement(12, moves(emote_exclamation_mark))
+    waitmovement(0)
+    faceplayer
+    msgbox(format("Who're you? Did you bring the shipment?\pWait a minute...you're that trainer who beat us at MT CERAM! Oh, you've got some nerve coming up and talking to me!\p...\pEh, I'm on shipment duty, not guard duty. None of my business."))
+    applymovement(12, moves(face_down))
+    releaseall
+    end
+}
+
+
+
+//Grunts
+script SomberHQ_Grunt_A{
+    trainerbattle_single(TRAINER_SOMBERHQ_A, format("Hey! Who let you in?"), "I've gotta let you in too...")
+    msgbox(format("I can't believe you found our secret hideout!"))
+    releaseall
+    end
+}
+
+script SomberHQ_Grunt_B{
+    trainerbattle_single(TRAINER_SOMBERHQ_B, format("You stepped into the wrong place buddy. Boss MOXIE isn't here - it's someone way scarier!"), "I'm gonna tell the boss!")
+    msgbox(format("Boss MOXIE is pretty scary and mean, but this one...she's on another level!"))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_C{
+    trainerbattle_single(TRAINER_SOMBERHQ_C, format("It's you! Think you can just waltz into Team Somber's HQ? Think again!"), "I should think again!")
+    msgbox(format("This is where we plan our business, like how to get the next dreamstone."))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_D{
+    trainerbattle_single(TRAINER_SOMBERHQ_D, format("Bet you think there's a door to the boss's office past me, don't you? Joke's on you - there isn't!"), "Go and see for yourself!")
+    msgbox(format("The only way to get to the office is to warp there - but I'll never tell you which one!"))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_E{
+    trainerbattle_single(TRAINER_SOMBERHQ_E, format("We're going to get the next dreamstone with a certain someone's help!"), "I'm not telling you who it is!")
+    msgbox(format("Ok fine, I'll tell you. it's NURSE JOY.\p...\pHah! Can't believe you fell for that."))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_F{
+    trainerbattle_single(TRAINER_SOMBERHQ_F, format("That stupid GABRIELLE must've let you in - I know it!"), "Stupid GABRIELLE!")
+    msgbox(format("She's such a klutz - she's singlehandedly ruining this great organisation's image."))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_G{
+    trainerbattle_single(TRAINER_SOMBERHQ_G, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script SomberHQ_Grunt_H{
+    trainerbattle_single(TRAINER_SOMBERHQ_H, format("GABRIELLE and I were next up for admin positions...until she goofed at MT CERAM! Now it's just me. Let me show you why!"), "You didn't let me show you!")
+    msgbox(format("Fine, go ahead. You can't beat the boss anyway!"))
+    releaseall
+    end
+}
+
+

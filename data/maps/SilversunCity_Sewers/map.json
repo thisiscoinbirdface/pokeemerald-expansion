@@ -166,9 +166,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_TOXIC",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SEWERS_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -179,9 +179,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SEWERS_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -192,9 +192,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_BLACK_SLUDGE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+      "flag": "FLAG_ITEM_SEWERS_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
@@ -221,6 +221,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SilversunCity_Sewers_NPC4",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 24,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ANTIDOTE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SEWERS_C"
     }
   ],
   "warp_events": [

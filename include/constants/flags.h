@@ -1092,36 +1092,48 @@
 #define FLAG_ITEM_ANCIENTCERAM_C                                   0x3FC
 
 //Galecrest City items
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
-#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
-#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
-#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
-#define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
-#define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
-#define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
-#define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
-#define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419
-#define FLAG_ITEM_GRANITE_CAVE_1F_ESCAPE_ROPE                       0x41A
-#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B
+#define FLAG_ITEM_GALECREST_A                              0x3FE
+#define FLAG_ITEM_GALECREST_B                                  0x3FF
+#define FLAG_ITEM_GALECREST_C                             0x400
+
+//Vilethorn Woods items
+#define FLAG_ITEM_VILETHORN_A                                    0x401
+#define FLAG_ITEM_VILETHORN_B                                0x402
+#define FLAG_ITEM_VILETHORN_C                              0x403
+#define FLAG_ITEM_VILETHORN_D                              0x404
+#define FLAG_ITEM_VILETHORN_E                          0x405
+
+//Silversun City items
+#define FLAG_ITEM_SILVERSUN_A                                  0x406
+#define FLAG_ITEM_SILVERSUN_B                               0x407
+
+//Sewers items
+#define FLAG_ITEM_SEWERS_A                                 0x408
+#define FLAG_ITEM_SEWERS_B                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
+#define FLAG_ITEM_SEWERS_C                                    0x40A
+#define FLAG_ITEM_SEWERS_D                                  0x40B
+
+//Somber HQ items
+#define FLAG_ITEM_SOMBERHQ_A                              0x40C
+#define FLAG_ITEM_SOMBERHQ_B                               0x40D
+#define FLAG_ITEM_SOMBERHQ_C                              0x40E
+#define FLAG_ITEM_SOMBERHQ_D                           0x40F
+#define FLAG_ITEM_SOMBERHQ_E                              0x410
+
+//Route 6 items
+#define FLAG_ITEM_ROUTE6_TRANSITION_A                            0x411   //transition
+#define FLAG_ITEM_ROUTE6_A                           0x412
+#define FLAG_ITEM_ROUTE6_B                            0x413
+#define FLAG_ITEM_ROUTE6_C                   0x414
+#define FLAG_ITEM_ROUTE6_D                      0x415
+#define FLAG_ITEM_ROUTE6_E                     0x416
+#define FLAG_ITEM_ROUTE6_F                          0x417
+#define FLAG_ITEM_ROUTE6_G                          0x418
+#define FLAG_ITEM_ROUTE6_H                          0x419
+#define FLAG_ITEM_ROUTE6_I                       0x41A
+#define FLAG_ITEM_ROUTE6_J                        0x41B
+
+
 #define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
 #define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E

@@ -10,7 +10,6 @@ mapscripts VilethornWoods_MapScripts{}
 
 
 
-
 script VilethornWoods_EventScript_TriggerProf{
     if (flag(FLAG_VILETHORN_PROF)){
         end
