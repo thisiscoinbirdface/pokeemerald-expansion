@@ -536,8 +536,7 @@ MtCeramPeak_MainEvent_Trigger_Text_10:
 	.string "???: And with this control, there would\n"
 	.string "be nothing stopping Team Somber from\l"
 	.string "having absolute control over the world!\l"
-	.string "This is what we want, {PLAYER}. This is\l"
-	.string "what the SOMBER KING wants.\p"
+	.string "This is what we want, {PLAYER}.\p"
 	.string "And you! You dare to get in our way, time\n"
 	.string "and again! No more!\p"
 	.string "MOXIE: I, MOXIE, Head of the Team\n"
@@ -556,9 +555,8 @@ MtCeramPeak_MainEvent_Trigger_Text_12:
 MtCeramPeak_MainEvent_Trigger_Text_13:
 # 83 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "MOXIE: Fine! Whatever! I don't have\n"
-	.string "time to waste. The SOMBER KING needs\l"
-	.string "the dreamstone and I will get this\l"
-	.string "dreamstone no matter what!$"
+	.string "time to waste. We need the dreamstone\l"
+	.string "and I will get this one no matter what!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_14:
 # 87 "data//maps/MtCeram_Peak/scripts.pory"

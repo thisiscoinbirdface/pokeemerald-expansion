@@ -64,7 +64,7 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: And with this control, there would be nothing stopping Team Somber from having absolute control over the world! This is what we want, {PLAYER}. This is what the SOMBER KING wants. \pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
+    msgbox(format("???: And with this control, there would be nothing stopping Team Somber from having absolute control over the world! This is what we want, {PLAYER}. \pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
     release
 
     //Battle
@@ -80,7 +80,7 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("MOXIE: Fine! Whatever! I don't have time to waste. The SOMBER KING needs the dreamstone and I will get this dreamstone no matter what!"))
+    msgbox(format("MOXIE: Fine! Whatever! I don't have time to waste. We need the dreamstone and I will get this one no matter what!"))
     release
     applymovement(LOCALID_BOSS, moves(face_left))
     waitmovement(0)

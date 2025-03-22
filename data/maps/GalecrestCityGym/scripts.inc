@@ -115,14 +115,18 @@ GalecrestCityGym_Leader::
 	release
 # 127 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_3
+# 128 "data//maps/GalecrestCityGym/scripts.pory"
+	release
 # 129 "data//maps/GalecrestCityGym/scripts.pory"
-	applymovement 5, GalecrestCityGym_Leader_Movement_0
+	delay 60
 # 130 "data//maps/GalecrestCityGym/scripts.pory"
-	waitmovement 0
+	applymovement 5, GalecrestCityGym_Leader_Movement_0
 # 131 "data//maps/GalecrestCityGym/scripts.pory"
+	waitmovement 0
+# 132 "data//maps/GalecrestCityGym/scripts.pory"
 	removeobject 5
 GalecrestCityGym_Leader_1:
-# 134 "data//maps/GalecrestCityGym/scripts.pory"
+# 135 "data//maps/GalecrestCityGym/scripts.pory"
 	releaseall
 	return
 
@@ -132,11 +136,9 @@ GalecrestCityGym_Leader_2:
 	goto GalecrestCityGym_Leader_1
 
 
-# 129 "data//maps/GalecrestCityGym/scripts.pory"
+# 130 "data//maps/GalecrestCityGym/scripts.pory"
 GalecrestCityGym_Leader_Movement_0:
-# 129 "data//maps/GalecrestCityGym/scripts.pory"
-	walk_up
-# 129 "data//maps/GalecrestCityGym/scripts.pory"
+# 130 "data//maps/GalecrestCityGym/scripts.pory"
 	walk_up
 	step_end
 
@@ -228,13 +230,14 @@ GalecrestCityGym_Leader_Text_1:
 
 GalecrestCityGym_Leader_Text_2:
 # 123 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "The STOIC BADGE lets you control {PKMN}\n"
-	.string "upto lv. 30 and lets you use the HM move\l"
-	.string "ROCK SMASH outside of battle.$"
+	.string "KOHLA: The STOIC BADGE lets you\n"
+	.string "control {PKMN} upto lv. 30 and lets you use\l"
+	.string "the HM move ROCK SMASH outside of\l"
+	.string "battle.$"
 
 GalecrestCityGym_Leader_Text_3:
 # 127 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "{PLAYER}, despite being a\n"
+	.string "KOHLA: {PLAYER}, despite being a\n"
 	.string "disrespectful chum, I owe you. You\l"
 	.string "showed me my lack of strength. That's\l"
 	.string "why I chose CERULEDGE as my companion.\l"
@@ -245,7 +248,7 @@ GalecrestCityGym_Leader_Text_3:
 	.string "in Silversun City.$"
 
 GalecrestCityGym_Text_LeaderIntro::
-# 139 "data//maps/GalecrestCityGym/scripts.pory"
+# 140 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Yes {PLAYER}, it's me. Traditionally,\n"
 	.string "the Ace Rookie of the graduating class\l"
 	.string "assumes Gym Leader duties for a year\l"
@@ -256,7 +259,7 @@ GalecrestCityGym_Text_LeaderIntro::
 	.string "going to crush you with my REAL team!$"
 
 GalecrestCityGym_Text_Defeated::
-# 143 "data//maps/GalecrestCityGym/scripts.pory"
+# 144 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Another defeat...despite evolving my\n"
 	.string "CHARCADET, I still couldn't win. I need\l"
 	.string "strength. This is yours, {PLAYER}$"

@@ -322,8 +322,8 @@ script MtCeram_TrainerBattle_GRUNT1 {
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone\nand the SOMBER KING will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
-    msgbox(format("The SOMBER KING is Team Somber's boss."))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone\nand Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
+    msgbox(format("I love Team Somber! No wait...I love money!"))
     release
     end
 }

@@ -178,7 +178,7 @@ Route6_Transition_EventScript_SharpedoBlocker_Text_0:
 	.string "There's a dangerous {PKMN} in the HOYA\n"
 	.string "RIVER so we can't let you through.\p"
 	.string "What is it?\p"
-	.string "don't be shocked - it's a wild MEGA\n"
+	.string "Don't be shocked - it's a wild MEGA\n"
 	.string "SHARPEDO! It's on its way down south,\l"
 	.string "so once it passes, we'll reopen the\l"
 	.string "bridge.$"

@@ -937,7 +937,7 @@ MtCeram_TrainerBattle_GRUNT1_Text_2:
 MtCeram_TrainerBattle_GRUNT2_Text_0:
 # 325 "data//maps/MtCeram/scripts.pory"
 	.string "We're going to get the dreamstone\n"
-	.string "and the SOMBER KING will reward us!\p"
+	.string "and Team Somber will reward us!\p"
 	.string "Wait, you're not a grunt.\n"
 	.string "Get out of here!$"
 
@@ -947,7 +947,8 @@ MtCeram_TrainerBattle_GRUNT2_Text_1:
 
 MtCeram_TrainerBattle_GRUNT2_Text_2:
 # 326 "data//maps/MtCeram/scripts.pory"
-	.string "The SOMBER KING is Team Somber's boss.$"
+	.string "I love Team Somber! No wait...I love\n"
+	.string "money!$"
 
 MtCeram_EventScript_NPC1_Text_0:
 # 351 "data//maps/MtCeram/scripts.pory"
