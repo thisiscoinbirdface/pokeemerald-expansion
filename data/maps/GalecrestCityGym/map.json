@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
       "x": 25,
-      "y": 54,
+      "y": 53,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -206,7 +206,7 @@
     },
     {
       "x": 25,
-      "y": 59,
+      "y": 58,
       "elevation": 0,
       "dest_map": "MAP_GALECREST_CITY_GYM",
       "dest_warp_id": "0"

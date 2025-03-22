@@ -5,6 +5,7 @@ script Route3_Underpass_Nurse{
     faceplayer
     msgbox(format("This area is closed for the demo."))
     releaseall
+    end
 }
 
 script Route3_Underpass_NPC1{
