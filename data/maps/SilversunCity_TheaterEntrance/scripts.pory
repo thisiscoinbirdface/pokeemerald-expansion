@@ -17,6 +17,7 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
             if (checkitem(ITEM_BACKSTAGE_PASS)){
                 msgbox(format("...\pThis seems to be in order.\pPlease, right this way."))
                 applymovement(7, moves(walk_right face_down))
+                waitmovement(0)
                 setflag(FLAG_SILVERSUN_BACKSTAGEPASS_USE)
                 removeitem(ITEM_BACKSTAGE_PASS)
             } else {

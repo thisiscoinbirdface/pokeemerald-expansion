@@ -144,30 +144,32 @@ SilversunCity_NPC3::
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
 # 123 "data//maps/SilversunCity/scripts.pory"
+	warp MAP_PELLUCA_CABLE_CAR_STATION, 6, 7
+# 125 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC4::
-# 127 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 128 "data//maps/SilversunCity/scripts.pory"
-	faceplayer
 # 129 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC4_Text_0
+	lockall
 # 130 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 131 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC4_Text_0
+# 132 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC5::
-# 134 "data//maps/SilversunCity/scripts.pory"
-	lockall
-# 135 "data//maps/SilversunCity/scripts.pory"
-	faceplayer
 # 136 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_NPC5_Text_0
+	lockall
 # 137 "data//maps/SilversunCity/scripts.pory"
+	faceplayer
+# 138 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_NPC5_Text_0
+# 139 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
@@ -291,13 +293,13 @@ SilversunCity_NPC3_Text_0:
 	.string "live performance of some sort.$"
 
 SilversunCity_NPC4_Text_0:
-# 129 "data//maps/SilversunCity/scripts.pory"
+# 131 "data//maps/SilversunCity/scripts.pory"
 	.string "We keep seeing wild KOFFING and TOXEL\n"
 	.string "around...they come from the sewers, I\l"
 	.string "bet. Their poison is why there are no\l"
 	.string "flowers near the sewers.$"
 
 SilversunCity_NPC5_Text_0:
-# 136 "data//maps/SilversunCity/scripts.pory"
+# 138 "data//maps/SilversunCity/scripts.pory"
 	.string "The sewers really stink up this part of\n"
 	.string "town!$"
