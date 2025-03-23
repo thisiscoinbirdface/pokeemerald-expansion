@@ -1133,12 +1133,13 @@
 #define FLAG_ITEM_ROUTE6_I                       0x41A
 #define FLAG_ITEM_ROUTE6_J                        0x41B
 
+//Mt Mirroh Exterior
+#define FLAG_ITEM_MIRROHEXT_A                            0x41C
+#define FLAG_ITEM_MIRROHEXT_B                            0x41D
+#define FLAG_ITEM_MIRROHEXT_C                       0x41E
+#define FLAG_ITEM_MIRROHEXT_D                          0x41F
+#define FLAG_ITEM_MIRROHEXT_E                        0x420
 
-#define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
-#define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
-#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
-#define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
-#define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
 #define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421
 #define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423

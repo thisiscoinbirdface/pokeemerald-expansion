@@ -74,38 +74,69 @@ script MtMirrohExterior_Trainer_E{
 script MtMirrohExterior_NPC_A{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("Be careful child! There are some nasty types around. They're wearing dark suits and harrassing everyone they see. They even threatened me - a senior citizen!"))
     releaseall
     end
 }
 script MtMirrohExterior_NPC_B{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach WINTERLILY HOLLOW, you have to cross the caves inside the mountain."))
     releaseall
     end
 }
 script MtMirrohExterior_NPC_C{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("the VIVILLON care for the flowers here, which is why they grow even in such cold weather!"))
     releaseall
     end
 }
+
+//left battle girl
 script MtMirrohExterior_NPC_D{
     lockall
-    faceplayer
-    msgbox(format(""))
+    msgbox(format("Hang in there CONKELDURR!"))
+    release
+    applymovement(12, moves(faceplayer))
+    msgbox(format("Don't disturb us - we're training!"))
+    release
+    applymovement(12, moves(face_right))
     releaseall
     end
 }
+script MtMirrohExterior_Conkeldurr{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_CONKELDURR, CRY_MODE_NORMAL)
+    msgbox(format("CONKELDURR: durr!!!!\pThe TOXICROAK has poisoned it, but it's still going strong!"))
+    releaseall
+    end
+}
+
+//right expert belt
 script MtMirrohExterior_NPC_E{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("Finish this, TOXICROAK!"))
+    release
+    applymovement(13, moves(faceplayer))
+    msgbox(format("Don't disturb us - we're training!"))
+    release
+    applymovement(13, moves(face_right))
     releaseall
     end
 }
+script MtMirrohExterior_Toxicroak{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_TOXICROAK, CRY_MODE_NORMAL)
+    msgbox(format("TOXICROAK: croooaaakk!!!!\pIt's hammering the CONKELDURR with Posion Jabs!"))
+    releaseall
+    end
+}
+
+
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
@@ -115,9 +146,14 @@ script MtMirrohExterior_NPC_F{
 }
 script MtMirrohExterior_NPC_G{
     lockall
-    faceplayer
-    msgbox(format(""))
+    msgbox(format("She's meditating with her MEDICHAM...best not disturb her."))
     releaseall
     end
 }
 
+script MtMirrohExterior_Medicham{
+    lockall
+    msgbox(format("She's meditating with her trainer...best not disturb her."))
+    releaseall
+    end
+}
