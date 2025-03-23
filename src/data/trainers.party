@@ -1844,20 +1844,28 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHBASECAMP_LEADER ===
 Name: CAROLINE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Leader
+Pic: Leader Roxanne
 Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Skarmory
-Level: 10
+Toxicroak
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sableye
-Level: 10
+Pangoro
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Monferno
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lucario @ Lucarionite
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_A ===
@@ -1884,20 +1892,29 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_B ===
 Name: BROOKE
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
-Music: Cool
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint
 
-Houndstone
+Vivillon
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Snom
 Level: 33
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Shiinotic
-Level: 34
+Orbeetle
+Level: 33
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Heracross
+Level: 35
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
 
 === TRAINER_MIRROHEXT_C ===
 Name: GEOFF
@@ -1909,60 +1926,54 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper
-Level: 29
+Rufflet
+Level: 32
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Numel
-Level: 29
+Palpitoad
+Level: 34
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Roselia
-Level: 29
+Muk-Alola
+Level: 35
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_MIRROHEXT_D ===
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
+Name: ISAAC
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: Male
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Pelipper
-Level: 32
+Rapidash-Alola
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Numel
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Roselia
-Level: 32
+Mudsdale
+Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIRROHEXT_E ===
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Full Restore
+Name: STONE
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Pelipper
+Pangoro
 Level: 34
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Camerupt
+Sneasler
 Level: 34
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Roselia
-Level: 34
+Gurdurr
+Level: 36
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_F ===

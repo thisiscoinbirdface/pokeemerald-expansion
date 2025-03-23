@@ -15,5 +15,109 @@ mapscripts MtMirrohExterior_MapScripts{}
 
 
 //Trainers
+script MtMirrohExterior_Trainer_A{
+    trainerbattle_single(TRAINER_MIRROHEXT_A, format("Once you jump over that ledge over there, you can't come back. So let me battle you before you go!"), "Okay, you can go!")
+    msgbox(format("I'm training here so that I cna safely go back to the {PKMN} Center if I need to."))
+    releaseall
+    end
+}
+script MtMirrohExterior_Trainer_B{
+    trainerbattle_single(TRAINER_MIRROHEXT_B, format("I know what you're eyeing! That's why I planted myself here."), "Aw!")
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_Trainer_C{
+    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My PALPITOAD and I training to beat the WINTERLILY HOLLOW Gym. A battle will be better training than a jog though!"), "It was good training!")
+    msgbox(format(""))
+    releaseall
+    end
+}
 
+script MtMirrohExterior_Palpitoad{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
+    msgbox(format("PALPITOAD: piii!!!!"))
+    releaseall
+    end
+}
+
+script MtMirrohExterior_Trainer_D{
+    trainerbattle_single(TRAINER_MIRROHEXT_D, format("Are you another of those weird Team Sombrero grunts? Stop harrassing innocent people!"), "I guess you're not one of them!")
+    msgbox(format("I found some Team Sombrero - or was it Somber? - grunts harrassing an old man. You can't be doing stuff like that! So I put an end to it. I wonder what they're upto..."))
+    releaseall
+    end
+}
+script MtMirrohExterior_Trainer_E{
+    trainerbattle_single(TRAINER_MIRROHEXT_E, format("I'm from the FIGHTING DOJO! Guess you know what that means, right?"), "You knew what that meant!")
+    msgbox(format("The FIGHTING DOJO is the pinnacle for us FIGHTING type users! It's where you become the best of the best"))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCs
+script MtMirrohExterior_NPC_A{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_B{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_C{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_D{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_E{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_F{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MtMirrohExterior_NPC_G{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
 
