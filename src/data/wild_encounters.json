@@ -13158,7 +13158,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_GREAVARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GREAVARD"
               },
               {
                 "min_level": 5,
@@ -13171,11 +13176,6 @@
                 "species": "SPECIES_CHINGLING"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUSKULL"
-              },
-              {
                 "min_level": 28,
                 "max_level": 29,
                 "species": "SPECIES_GREAVARD"
@@ -13183,7 +13183,17 @@
               {
                 "min_level": 31,
                 "max_level": 33,
-                "species": "SPECIES_HOUNDSTONE"
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GREAVARD"
               },
               {
                 "min_level": 5,
@@ -13194,16 +13204,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_DREEPY"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GREAVARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GREAVARD"
               }
             ]
           }

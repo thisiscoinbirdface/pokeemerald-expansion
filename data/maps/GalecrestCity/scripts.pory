@@ -40,7 +40,6 @@ script GalecrestCity_OnFrame{
     fadescreen(FADE_FROM_BLACK)
 
     setflag(FLAG_GALECREST_POST_ANCIENT)
-    setflag(FLAG_SYS_EXP_ALL)
     releaseall
 }
 
@@ -231,6 +230,7 @@ script GalecrestCity_EventScript_Poochyena{
 
     lockall
     msgbox(format("POOCHYENA: grr...\pThe POOCHYENA are clearly on edge. Better not aggravate them!"))
+    setflag(FLAG_SYS_EXP_ALL)
     releaseall
 
 }
