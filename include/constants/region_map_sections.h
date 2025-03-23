@@ -236,8 +236,9 @@
 #define MAPSEC_HOYA_RIVER_SOUTH             0xE6
 #define MAPSEC_PELLUCA_CITY                 0xE7
 #define MAPSEC_MIRROH_BASE_CAMP             0xE8
+#define MAPSEC_MT_MIRROH_EXTERIOR           0xE9
 
-#define MAPSEC_NONE                         0xE9
+#define MAPSEC_NONE                         0xEA
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
