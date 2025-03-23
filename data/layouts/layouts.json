@@ -5160,6 +5160,16 @@
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MirrohBaseCamp_Graveyard/border.bin",
       "blockdata_filepath": "data/layouts/MirrohBaseCamp_Graveyard/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MIRROH_EXTERIOR",
+      "name": "MtMirrohExterior_Layout",
+      "width": 60,
+      "height": 90,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/MtMirrohExterior/border.bin",
+      "blockdata_filepath": "data/layouts/MtMirrohExterior/map.bin"
     }
   ]
 }

@@ -117,7 +117,8 @@
     "MirrohBaseCamp_PokemonCenter",
     "MirrohBaseCamp_Houses",
     "MirrohBaseCampGym",
-    "MirrohBaseCamp_Graveyard"
+    "MirrohBaseCamp_Graveyard",
+    "MtMirrohExterior"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
