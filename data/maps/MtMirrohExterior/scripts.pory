@@ -140,7 +140,7 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("A fellow fighter! Welcome to the -\pOh, you're just a regular trainer. Welcome to the FIGHTING DOJO anyway! The master is conducting a training session inside."))
     releaseall
     end
 }

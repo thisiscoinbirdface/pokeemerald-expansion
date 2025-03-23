@@ -178,7 +178,7 @@ MtMirrohExterior_NPC_F::
 # 142 "data//maps/MtMirrohExterior/scripts.pory"
 	faceplayer
 # 143 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_B_Text_2
+	msgbox MtMirrohExterior_NPC_F_Text_0
 # 144 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
@@ -335,6 +335,14 @@ MtMirrohExterior_Toxicroak_Text_0:
 	.string "TOXICROAK: croooaaakk!!!!\p"
 	.string "It's hammering the CONKELDURR with\n"
 	.string "Posion Jabs!$"
+
+MtMirrohExterior_NPC_F_Text_0:
+# 143 "data//maps/MtMirrohExterior/scripts.pory"
+	.string "A fellow fighter! Welcome to the -\p"
+	.string "Oh, you're just a regular trainer.\n"
+	.string "Welcome to the FIGHTING DOJO anyway!\l"
+	.string "The master is conducting a training\l"
+	.string "session inside.$"
 
 MtMirrohExterior_NPC_G_Text_0:
 # 149 "data//maps/MtMirrohExterior/scripts.pory"
