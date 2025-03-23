@@ -1860,55 +1860,50 @@ Sableye
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JULIE ===
+=== TRAINER_MIRROHEXT_A ===
 Name: JULIE
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
-
-Sandslash
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Ninetales
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Tropius
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_BROOKE_2 ===
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
 Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Bayleef
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Numel
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Ninetales-Alola
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Roselia
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Dusclops
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BROOKE_3 ===
+=== TRAINER_MIRROHEXT_B ===
 Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Hex Maniac
+Pic: Hex Maniac
 Gender: Female
+Music: Cool
+Double Battle: No
+AI: Basic Trainer
+
+Houndstone
+Level: 33
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Shiinotic
+Level: 34
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+=== TRAINER_MIRROHEXT_C ===
+Name: GEOFF
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
@@ -1926,7 +1921,7 @@ Roselia
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_BROOKE_4 ===
+=== TRAINER_MIRROHEXT_D ===
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1948,7 +1943,7 @@ Roselia
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_BROOKE_5 ===
+=== TRAINER_MIRROHEXT_E ===
 Name: BROOKE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -1970,7 +1965,7 @@ Roselia
 Level: 34
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_PATRICIA ===
+=== TRAINER_MIRROHEXT_F ===
 Name: PATRICIA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -1987,7 +1982,7 @@ Lunatone
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KINDRA ===
+=== TRAINER_MIRROHEXT_G ===
 Name: KINDRA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2004,7 +1999,7 @@ Shuppet
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TAMMY ===
+=== TRAINER_MIRROHEXT_H ===
 Name: TAMMY
 Class: Hex Maniac
 Pic: Hex Maniac

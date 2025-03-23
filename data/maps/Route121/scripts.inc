@@ -96,7 +96,7 @@ Route121_EventScript_RematchWalter::
 	end
 
 Route121_EventScript_Tammy::
-	trainerbattle_single TRAINER_TAMMY, Route121_Text_TammyIntro, Route121_Text_TammyDefeat
+	trainerbattle_single TRAINER_NONE, Route121_Text_TammyIntro, Route121_Text_TammyDefeat
 	msgbox Route121_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
 	end
 

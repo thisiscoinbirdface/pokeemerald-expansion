@@ -152,14 +152,18 @@
 #define TRAINER_MIRROHBASECAMP_KOHLA        98
 #define TRAINER_MIRROHBASECAMP_LEADER       99
 
-#define TRAINER_JULIE                       100
-#define TRAINER_BROOKE_2                    101
-#define TRAINER_BROOKE_3                    102
-#define TRAINER_BROOKE_4                    103
-#define TRAINER_BROOKE_5                    104
-#define TRAINER_PATRICIA                    105
-#define TRAINER_KINDRA                      106
-#define TRAINER_TAMMY                       107
+//TRAINER_NONE
+//Mt Mirroh Exterior
+#define TRAINER_MIRROHEXT_A                    100
+#define TRAINER_MIRROHEXT_B                    101
+#define TRAINER_MIRROHEXT_C                    102
+#define TRAINER_MIRROHEXT_D                    103
+#define TRAINER_MIRROHEXT_E                    104
+#define TRAINER_MIRROHEXT_F                    105
+#define TRAINER_MIRROHEXT_G                    106
+#define TRAINER_MIRROHEXT_H                    107
+
+//Mt Mirroh Interior
 #define TRAINER_VALERIE_1                   108
 #define TRAINER_TASHA                       109
 #define TRAINER_VALERIE_2                   110
