@@ -407,19 +407,19 @@ static const struct WindowTemplate sDefaultBagWindows[] =
     [WIN_ITEM_LIST] = {
         .bg = 0,
         .tilemapLeft = 14,
-        .tilemapTop = 2,
+        .tilemapTop = 1,
         .width = 15,
-        .height = 16,
-        .paletteNum = 1,
+        .height = 10,
+        .paletteNum = 1, //7 is also good
         .baseBlock = 0x27,
     },
     [WIN_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 0,
+        .tilemapLeft = 5, //used to be 0
         .tilemapTop = 13,
         .width = 14,
         .height = 6,
-        .paletteNum = 1,
+        .paletteNum = 7,
         .baseBlock = 0x117,
     },
     [WIN_POCKET_NAME] = {
@@ -428,13 +428,13 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .tilemapTop = 1,
         .width = 8,
         .height = 2,
-        .paletteNum = 1,
+        .paletteNum = 1, //for dark bg use 16
         .baseBlock = 0x1A1,
     },
     [WIN_TMHM_INFO_ICONS] = {
         .bg = 0,
         .tilemapLeft = 1,
-        .tilemapTop = 13,
+        .tilemapTop = 10,
         .width = 5,
         .height = 6,
         .paletteNum = 12,
@@ -1006,7 +1006,7 @@ static void BagMenu_ItemPrintCallback(u8 windowId, u32 itemIndex, u8 y)
         {
             // Print registered icon
             if (gSaveBlock1Ptr->registeredItem != ITEM_NONE && gSaveBlock1Ptr->registeredItem == itemId)
-                BlitBitmapToWindow(windowId, sRegisteredSelect_Gfx, 96, y - 1, 24, 16);
+                BlitBitmapToWindow(windowId, sRegisteredSelect_Gfx, 0, y - 1, 24, 16);
         }
     }
 }
@@ -1375,7 +1375,7 @@ static void SwitchBagPocket(u8 taskId, s16 deltaBagPocketId, bool16 skipEraseLis
     }
     DrawPocketIndicatorSquare(gBagPosition.pocket, FALSE);
     DrawPocketIndicatorSquare(newPocket, TRUE);
-    FillBgTilemapBufferRect_Palette0(2, 11, 14, 2, 15, 16);
+    FillBgTilemapBufferRect_Palette0(2, 11, 14, 2, 15, 9);
     ScheduleBgCopyTilemapToVram(2);
     SetBagVisualPocketId(newPocket, TRUE);
     RemoveBagSprite(ITEMMENUSPRITE_BALL);
@@ -1406,7 +1406,7 @@ static void Task_SwitchBagPocket(u8 taskId)
     switch (tPocketSwitchState)
     {
     case 0:
-        DrawItemListBgRow(tPocketSwitchTimer);
+        //DrawItemListBgRow(tPocketSwitchTimer);
         if (!(++tPocketSwitchTimer & 1))
         {
             if (tPocketSwitchDir == MENU_CURSOR_DELTA_RIGHT)
@@ -1434,16 +1434,16 @@ static void Task_SwitchBagPocket(u8 taskId)
 // When the pocket is switched this lighter background is redrawn row by row
 static void DrawItemListBgRow(u8 y)
 {
-    FillBgTilemapBufferRect_Palette0(2, 17, 14, y + 2, 15, 1);
-    ScheduleBgCopyTilemapToVram(2);
+   FillBgTilemapBufferRect_Palette0(2, 17, 14, y + 2, 15, 1);
+   ScheduleBgCopyTilemapToVram(2);
 }
 
 static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
 {
-    if (!isCurrentPocket)
-        FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 4, 3, 1, 1);
-    else
-        FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 4, 3, 1, 1);
+   if (!isCurrentPocket)
+       FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 4, 3, 1, 1);
+   else
+       FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 4, 3, 1, 1);
     ScheduleBgCopyTilemapToVram(2);
 }
 
