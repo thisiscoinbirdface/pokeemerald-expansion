@@ -107,7 +107,7 @@ script SilversunCity_Houses_NPC3{
 
 
 script SilversunCity_Houses_DuskullNPC1{
-    if (var(VAR_SEWERS_DUSKULL) == 3){
+    if (var(VAR_SEWERS_DUSKULL) == 4){
         lockall
         applymovement(6, moves(faceplayer))
         applymovement(7, moves(faceplayer))
@@ -123,14 +123,14 @@ script SilversunCity_Houses_DuskullNPC1{
 }
 
 script SilversunCity_Houses_Husband{
-    if (var(VAR_SEWERS_DUSKULL) == 3){
+    if (var(VAR_SEWERS_DUSKULL) == 4){
         lockall
         applymovement(6, moves(faceplayer))
         applymovement(7, moves(faceplayer))
         msgbox(format("Thank you for saving my wife. You see, my wife is blind, so she needs a {PKMN} to assist her. But we didn't have enough money to apply for an assisance {PKMN}. So we resorted to illegal means. We bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With MUNCHLAX around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."))
         release
         giveegg(SPECIES_HONEDGE)
-        setvar(VAR_SEWERS_DUSKULL, 4)
+        setvar(VAR_SEWERS_DUSKULL, 5)
     } else {
         msgbox(format("I'm never going to the sewers again...but we did what we had to do."))
     }

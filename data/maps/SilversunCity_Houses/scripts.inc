@@ -133,7 +133,7 @@ SilversunCity_Houses_NPC3::
 
 SilversunCity_Houses_DuskullNPC1::
 # 110 "data//maps/SilversunCity_Houses/scripts.pory"
-	compare VAR_SEWERS_DUSKULL, 3
+	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_DuskullNPC1_2
 # 119 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
@@ -162,7 +162,7 @@ SilversunCity_Houses_DuskullNPC1_2:
 
 SilversunCity_Houses_Husband::
 # 126 "data//maps/SilversunCity_Houses/scripts.pory"
-	compare VAR_SEWERS_DUSKULL, 3
+	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_Husband_2
 # 135 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
@@ -185,7 +185,7 @@ SilversunCity_Houses_Husband_2:
 # 132 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveegg SPECIES_HONEDGE
 # 133 "data//maps/SilversunCity_Houses/scripts.pory"
-	setvar VAR_SEWERS_DUSKULL, 4
+	setvar VAR_SEWERS_DUSKULL, 5
 	goto SilversunCity_Houses_Husband_1
 
 

@@ -4,17 +4,20 @@
 
 mapscripts SilversunCity_Sewers_MapScripts{
     MAP_SCRIPT_ON_TRANSITION: SilversunCity_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_SEWERS_DUSKULL, 3: SilversunCity_Sewers_Duskull_Event_Ending
+    ]
 }
 
 //This script is called after readying the exit (by talking to gab again)
 script SilversunCity_OnTransition{
 
-    if (var(VAR_SEWERS_DUSKULL) == 2){
+    if (var(VAR_SEWERS_DUSKULL) == 3){
         setobjectxyperm(9, 48, 46)
+        setobjectxy(9, 48, 46)
         setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
         setobjectmovementtype(9, MOVEMENT_TYPE_FACE_RIGHT)
         setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP)
-        goto(SilversunCity_Sewers_Duskull_Event_Ending)
     }
 
     end
@@ -98,6 +101,7 @@ script SilversunCity_Sewers_Duskull_Event{
 
     //battle
     applymovement(15, moves(walk_up * 2))
+    waitmovement(0)
     setwildbattle(SPECIES_DUSKULL, 25)  
     dowildbattle  
     release
@@ -109,18 +113,25 @@ script SilversunCity_Sewers_Duskull_Event{
     applymovement(9, moves(walk_up*3))
     msgbox(format("Is...is it gone?\pOh my, you saved me! Thank you so much!\pI was so worried...I need to return to my husband quickly. He must be even more worried!\pHe sent you?\pOkay, let's go to him together."))
     release
-
-    setvar(VAR_SEWERS_DUSKULL, 2)
-
-    warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47)    
-    releaseall
+    setvar(VAR_SEWERS_DUSKULL, 3)
+    fadescreen(FADE_TO_BLACK)
+    warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47) 
+    clearflag(FLAG_SEWERS_DUSKULL)   
 }  
 
 
 
-//Quest end setflag(FLAG_SEWERS_DUSKULL)
+//Quest end
 script SilversunCity_Sewers_Duskull_Event_Ending{
     lockall
+
+    setobjectxyperm(9, 48, 46)
+    setobjectxy(9, 48, 46)
+    applymovement(1, moves(face_left))
+    applymovement(9, moves(face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+
+
     msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SKULL. It was so scary!"))
     release
     applymovement(9, moves(face_down))
@@ -128,17 +139,22 @@ script SilversunCity_Sewers_Duskull_Event_Ending{
     waitmovement(0)
     delay(30)
     msgbox(format("What's your name, trainer?\p{PLAYER}?\pWe're in your debt. We can't imagine life without each other. Please come visit us in our house later. We live next to the Gym."))
+    release
+    goto(TestScript_Sewers)
+}
 
+script TestScript_Sewers{
+    setvar(VAR_SEWERS_DUSKULL, 4)
     fadescreen(FADE_TO_BLACK)
     removeobject(1)
     removeobject(9)
     setflag(FLAG_SEWERS_DUSKULL)
     clearflag(FLAG_HIDE_SILVERSUN_DUSKULL_NPCS)
-    setvar(VAR_SEWERS_DUSKULL, 3)
+    setvar(VAR_SEWERS_DUSKULL, 4)
     fadescreen(FADE_FROM_BLACK)
+    releaseall
+    end
 }
-
-
 
 
 
