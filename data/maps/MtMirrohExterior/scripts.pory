@@ -140,10 +140,11 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format("A fellow fighter! Welcome to the -\pOh, you're just a regular trainer. Welcome to the FIGHTING DOJO anyway! The master is conducting a training session inside."))
+    msgbox(format("I can't believe what's happening inside the FIGHTING DOJO! How could the master have lost her mind like this?"))
     releaseall
     end
 }
+
 script MtMirrohExterior_NPC_G{
     lockall
     msgbox(format("She's meditating with her MEDICHAM...best not disturb her."))
@@ -157,3 +158,6 @@ script MtMirrohExterior_Medicham{
     releaseall
     end
 }
+
+
+

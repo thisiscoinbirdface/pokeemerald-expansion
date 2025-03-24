@@ -5170,6 +5170,16 @@
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MtMirrohExterior/border.bin",
       "blockdata_filepath": "data/layouts/MtMirrohExterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_FIGHTING_DOJO",
+      "name": "MirrohFightingDojo_Layout",
+      "width": 10,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/MirrohFightingDojo/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohFightingDojo/map.bin"
     }
   ]
 }
