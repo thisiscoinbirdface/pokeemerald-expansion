@@ -45,8 +45,8 @@ gText_Birch_BoyOrGirl::
 	.string "$"	
 
 gText_Birch_WhatsYourName::
-	.string "To accept this offer letter, \n"
-	.string "please sign below.\p"
+	.string "Now please sign below., \n"
+	.string "please sign below."
 	.string "$"
 
 gText_Birch_SoItsPlayer::
