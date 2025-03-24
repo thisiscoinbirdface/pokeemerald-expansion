@@ -164,19 +164,24 @@
 #define TRAINER_MIRROHEXT_H                    107
 
 //Mt Mirroh Interior
-#define TRAINER_VALERIE_1                   108
-#define TRAINER_TASHA                       109
-#define TRAINER_VALERIE_2                   110
-#define TRAINER_VALERIE_3                   111
-#define TRAINER_VALERIE_4                   112
-#define TRAINER_VALERIE_5                   113
-#define TRAINER_CINDY_1                     114
-#define TRAINER_DAPHNE                      115
-#define TRAINER_GRUNT_SPACE_CENTER_2        116
-#define TRAINER_CINDY_2                     117
-#define TRAINER_BRIANNA                     118
-#define TRAINER_NAOMI                       119
-#define TRAINER_CINDY_3                     120
+    //1F
+    #define TRAINER_VALERIE_1                   108
+    #define TRAINER_TASHA                       109
+    #define TRAINER_VALERIE_2                   110
+    #define TRAINER_VALERIE_3                   111
+    #define TRAINER_VALERIE_4                   112
+    #define TRAINER_VALERIE_5                   113
+    //2F
+    #define TRAINER_CINDY_1                     114
+    #define TRAINER_DAPHNE                      115
+    #define TRAINER_GRUNT_SPACE_CENTER_2        116
+    #define TRAINER_CINDY_2                     117
+    #define TRAINER_BRIANNA                     118
+    #define TRAINER_NAOMI                       119
+    #define TRAINER_CINDY_3                     120
+
+
+
 #define TRAINER_CINDY_4                     121
 #define TRAINER_CINDY_5                     122
 #define TRAINER_CINDY_6                     123

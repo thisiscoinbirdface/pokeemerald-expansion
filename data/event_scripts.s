@@ -1302,3 +1302,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MtMirrohExterior/scripts.inc"
 
 	.include "data/maps/MirrohFightingDojo/scripts.inc"
+
+	.include "data/maps/MirrohInterior_1F/scripts.inc"
+
+	.include "data/maps/MirrohInterior_2F/scripts.inc"
+
+	.include "data/maps/MirrohPeak/scripts.inc"

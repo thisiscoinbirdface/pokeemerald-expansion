@@ -5180,6 +5180,36 @@
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/MirrohFightingDojo/border.bin",
       "blockdata_filepath": "data/layouts/MirrohFightingDojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_INTERIOR_1F",
+      "name": "MirrohInterior_1F_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/MirrohInterior_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohInterior_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_INTERIOR_2F",
+      "name": "MirrohInterior_2F_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/MirrohInterior_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohInterior_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROH_PEAK",
+      "name": "MirrohPeak_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/MirrohPeak/border.bin",
+      "blockdata_filepath": "data/layouts/MirrohPeak/map.bin"
     }
   ]
 }

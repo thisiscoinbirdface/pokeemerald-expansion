@@ -119,7 +119,10 @@
     "MirrohBaseCampGym",
     "MirrohBaseCamp_Graveyard",
     "MtMirrohExterior",
-    "MirrohFightingDojo"
+    "MirrohFightingDojo",
+    "MirrohInterior_1F",
+    "MirrohInterior_2F",
+    "MirrohPeak"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
