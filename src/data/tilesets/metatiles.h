@@ -229,3 +229,6 @@ const u16 gMetatileAttributes_Restaurant[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_CaveAlt[] = INCBIN_U16("data/tilesets/secondary/cave_alt/metatiles.bin");
 const u16 gMetatileAttributes_CaveAlt[] = INCBIN_U16("data/tilesets/secondary/cave_alt/metatile_attributes.bin");
+
+const u16 gMetatiles_CaveCity[] = INCBIN_U16("data/tilesets/primary/cave_city/metatiles.bin");
+const u16 gMetatileAttributes_CaveCity[] = INCBIN_U16("data/tilesets/primary/cave_city/metatile_attributes.bin");

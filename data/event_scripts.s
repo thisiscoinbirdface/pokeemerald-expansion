@@ -1310,3 +1310,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MirrohPeak/scripts.inc"
 
 	.include "data/maps/AncientMirroh/scripts.inc"
+
+	.include "data/maps/WinterlilyHollow/scripts.inc"

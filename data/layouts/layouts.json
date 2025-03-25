@@ -5204,7 +5204,7 @@
     {
       "id": "LAYOUT_MIRROH_PEAK",
       "name": "MirrohPeak_Layout",
-      "width": 40,
+      "width": 50,
       "height": 110,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_SnowCableCar",
@@ -5220,6 +5220,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/AncientMirroh/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERLILY_HOLLOW",
+      "name": "WinterlilyHollow_Layout",
+      "width": 40,
+      "height": 24,
+      "primary_tileset": "gTileset_CaveCity",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/WinterlilyHollow/border.bin",
+      "blockdata_filepath": "data/layouts/WinterlilyHollow/map.bin"
     }
   ]
 }
