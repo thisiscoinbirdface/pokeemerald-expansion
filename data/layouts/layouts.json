@@ -5250,6 +5250,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/WinterlilyHollow_Pokemart/border.bin",
       "blockdata_filepath": "data/layouts/WinterlilyHollow_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERLILY_HOLLOW_HOUSES",
+      "name": "WinterlilyHollow_Houses_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_CaveCity",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/WinterlilyHollow_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/WinterlilyHollow_Houses/map.bin"
     }
   ]
 }
