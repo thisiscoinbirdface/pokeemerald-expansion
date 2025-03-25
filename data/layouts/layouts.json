@@ -5224,8 +5224,8 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW",
       "name": "WinterlilyHollow_Layout",
-      "width": 40,
-      "height": 24,
+      "width": 46,
+      "height": 30,
       "primary_tileset": "gTileset_CaveCity",
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/WinterlilyHollow/border.bin",
