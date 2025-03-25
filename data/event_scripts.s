@@ -1308,3 +1308,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MirrohInterior_2F/scripts.inc"
 
 	.include "data/maps/MirrohPeak/scripts.inc"
+
+	.include "data/maps/AncientMirroh/scripts.inc"

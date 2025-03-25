@@ -5210,6 +5210,16 @@
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MirrohPeak/border.bin",
       "blockdata_filepath": "data/layouts/MirrohPeak/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH",
+      "name": "AncientMirroh_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/AncientMirroh/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh/map.bin"
     }
   ]
 }

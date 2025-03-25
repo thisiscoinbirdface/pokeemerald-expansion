@@ -22,7 +22,10 @@ mapscripts MirrohPeak_MapScripts{}
 
 
 script MirrohPeak_EventScript_Somber_Trigger{
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)) {end}
+
     lockall
+    delay(30)
 
     //Walk sequence
     applymovement(5, moves(face_left emote_exclamation_mark))
@@ -47,6 +50,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     //MOXIE MELEA
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
+    delay(16)
     msgbox(format("MELEA: Is it the child?"))
     release
     delay(30)
@@ -54,9 +58,6 @@ script MirrohPeak_EventScript_Somber_Trigger{
     waitmovement(0)
     msgbox(format("MOXIE: I presume it is."))
     release
-    delay(60)
-    applymovement(LOCALID_MOXIE, moves(face_up))
-    waitmovement(0)
     delay(60)
 
     applymovement(LOCALID_MOXIE, moves(jump_in_place_up))
@@ -68,6 +69,11 @@ script MirrohPeak_EventScript_Somber_Trigger{
     waitmovement(0)
     msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful {PKMN} this world has ever seen. Long gone, extinct today. In the hands of people with purpose, it can be used to do great things..."))
     release
+
+            //Set weather beforehand for correct timing
+            setweather(WEATHER_RAIN_THUNDERSTORM)
+            doweather
+
     delay(60)    
     msgbox(format("MELEA: Go on, MOXIE. Start the Dreamalyser."))
     release
@@ -82,8 +88,6 @@ script MirrohPeak_EventScript_Somber_Trigger{
 	setvar(VAR_0x8007, 5)  //shake delay        
     special(ShakeCamera)
     waitstate
-    setweather(WEATHER_RAIN_THUNDERSTORM)
-    doweather
 	delay(30)
 
     //MELEA goes ahead
@@ -97,12 +101,21 @@ script MirrohPeak_EventScript_Somber_Trigger{
     delay(24)
 
     //MOXIE vs player
-    applymovement(LOCALID_MOXIE, moves(walk_left face_down))
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
     waitmovement(0)
+    special(RemoveCameraObject)    
+    applymovement(LOCALID_MOXIE, moves(walk_right face_down))
+    waitmovement(0)    
     msgbox(format("MOXIE: My dear colleague has gone ahead, into ANCIENT CORMORIA...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The Ancient Wonders will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
     release
 
     //Battle
+    trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
+
+    //Post-battle
+    applymovement(LOCALID_MOXIE, moves(jump_in_place_down emote_exclamation_mark))
+    waitmovement(0)
     msgbox(format("MOXIE: Argh! How could I have lost!"))
     applymovement(LOCALID_MOXIE, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -116,18 +129,37 @@ script MirrohPeak_EventScript_Somber_Trigger{
     release
     applymovement(3, moves(walk_down walk_right * 2 walk_up * 4 walk_left face_up)) 
     waitmovement(0) 
+    applymovement(LOCALID_MOXIE, moves(face_up))
     delay(30)
     applymovement(3, moves(face_down))
-    msgbox(format("GRUNT: But boss...what if I don't come back?\pMOXIE: Then we'll send roses to your family - now hurry up or I'll send roses anyway!"))
+    msgbox(format("GRUNT: But boss...what if I don't come back?\pMOXIE: Then we'll send roses to your family - now hurry up or I'll be forced to send roses right now!"))
     release
     applymovement(3, moves(emote_exclamation_mark face_up))    
     fadescreen(FADE_TO_BLACK)
     removeobject(3)
     fadescreen(FADE_FROM_BLACK)    
-    
-    
-    
-    
+    applymovement(LOCALID_MOXIE, moves(face_down))
+    waitmovement(0)
+    msgbox(format("MOXIE: I know you're going to chase MELEA and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one dreamstone, and once MELEA takes that exit, you'll be stuck there forever!\pHahaha!"))
+    release
+    applymovement(LOCALID_MOXIE, moves(walk_left face_up))
+    waitmovement(0)
+
+    //Shake Camera
+    setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay        
+    special(ShakeCamera)
+    waitstate
+	delay(30) 
+
+    //Flags, quests etc
+    setflag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)  
+
+    //warp
+    fadescreen(FADE_TO_BLACK)
+    warp(MAP_ANCIENT_MIRROH, 10, 10)
     releaseall
     end
 }

@@ -180,14 +180,14 @@
     #define TRAINER_NAOMI                       119
     #define TRAINER_CINDY_3                     120
 
+    //Mirroh Peak
+    #define TRAINER_CINDY_4                     121
+    #define TRAINER_CINDY_5                     122
+    #define TRAINER_CINDY_6                     123
+    #define TRAINER_MELISSA                     124
+    #define TRAINER_SHEILA                      125
+    #define TRAINER_MIRROHPEAK_MOXIE                     126
 
-
-#define TRAINER_CINDY_4                     121
-#define TRAINER_CINDY_5                     122
-#define TRAINER_CINDY_6                     123
-#define TRAINER_MELISSA                     124
-#define TRAINER_SHEILA                      125
-#define TRAINER_SHIRLEY                     126
 #define TRAINER_JESSICA_1                   127
 #define TRAINER_CONNIE                      128
 #define TRAINER_BRIDGET                     129

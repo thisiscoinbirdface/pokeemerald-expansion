@@ -5711,10 +5711,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2319
-    [DIFFICULTY_NORMAL][TRAINER_SHIRLEY] =
+    [DIFFICULTY_NORMAL][TRAINER_MIRROHPEAK_MOXIE] =
     {
 #line 2320
-        .trainerName = _("SHIRLEY"),
+        .trainerName = _("MOXIE"),
 #line 2321
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2322
