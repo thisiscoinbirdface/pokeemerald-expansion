@@ -198,7 +198,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 40,
+      "y": 78,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERLILY_HOLLOW",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 101,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_INTERIOR_1F",
+      "dest_warp_id": "4"
+    }
   ],
   "coord_events": [
     {

@@ -173,6 +173,13 @@
       "elevation": 0,
       "dest_map": "MAP_MT_MIRROH_EXTERIOR",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROH_PEAK",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

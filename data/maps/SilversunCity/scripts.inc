@@ -143,8 +143,8 @@ SilversunCity_NPC3::
 	faceplayer
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
-# 125 "data//maps/SilversunCity/scripts.pory"
-	warp MAP_MIRROH_INTERIOR_2F, 33, 25
+# 124 "data//maps/SilversunCity/scripts.pory"
+	warp MAP_WINTERLILY_HOLLOW, 18, 23
 # 126 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
