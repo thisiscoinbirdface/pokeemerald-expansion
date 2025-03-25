@@ -1312,3 +1312,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AncientMirroh/scripts.inc"
 
 	.include "data/maps/WinterlilyHollow/scripts.inc"
+
+	.include "data/maps/WinterlilyHollow_PokemonCenter/scripts.inc"
+
+	.include "data/maps/WinterlilyHollow_Pokemart/scripts.inc"

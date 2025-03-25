@@ -121,7 +121,7 @@ script SilversunCity_NPC3{
     faceplayer
     msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))
     // warp(MAP_MIRROH_PEAK, 19, 17)
-    warp(MAP_WILTERLILY_HOLLOW, 18, 23)    
+    warp(MAP_WINTERLILY_HOLLOW, 18, 23)    
     releaseall
     end
 }

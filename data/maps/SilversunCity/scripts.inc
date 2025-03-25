@@ -144,7 +144,7 @@ SilversunCity_NPC3::
 # 122 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
 # 124 "data//maps/SilversunCity/scripts.pory"
-	warp MAP_WILTERLILY_HOLLOW, 18, 23
+	warp MAP_WINTERLILY_HOLLOW, 18, 23
 # 125 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end

@@ -124,7 +124,9 @@
     "MirrohInterior_2F",
     "MirrohPeak",
     "AncientMirroh",
-    "WinterlilyHollow"
+    "WinterlilyHollow",
+    "WinterlilyHollow_PokemonCenter",
+    "WinterlilyHollow_Pokemart"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
