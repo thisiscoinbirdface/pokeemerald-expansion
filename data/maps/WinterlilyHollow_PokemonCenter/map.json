@@ -29,7 +29,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERLILY_HOLLOW",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERLILY_HOLLOW",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

@@ -5,7 +5,7 @@
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -41,6 +41,20 @@
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_MIRROH_PEAK",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERLILY_HOLLOW_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERLILY_HOLLOW_POKEMART",
       "dest_warp_id": "0"
     }
   ],
