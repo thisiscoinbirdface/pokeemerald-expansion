@@ -5260,6 +5260,26 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/WinterlilyHollow_Houses/border.bin",
       "blockdata_filepath": "data/layouts/WinterlilyHollow_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILY_POND",
+      "name": "LilyPond_Layout",
+      "width": 50,
+      "height": 19,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/LilyPond/border.bin",
+      "blockdata_filepath": "data/layouts/LilyPond/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVY_RIVER",
+      "name": "IvyRiver_Layout",
+      "width": 60,
+      "height": 100,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_SnowCableCar",
+      "border_filepath": "data/layouts/IvyRiver/border.bin",
+      "blockdata_filepath": "data/layouts/IvyRiver/map.bin"
     }
   ]
 }

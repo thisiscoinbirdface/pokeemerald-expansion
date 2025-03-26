@@ -127,7 +127,9 @@
     "WinterlilyHollow",
     "WinterlilyHollow_PokemonCenter",
     "WinterlilyHollow_Pokemart",
-    "WinterlilyHollow_Houses"
+    "WinterlilyHollow_Houses",
+    "LilyPond",
+    "IvyRiver"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

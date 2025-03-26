@@ -180,6 +180,13 @@
       "elevation": 0,
       "dest_map": "MAP_MIRROH_PEAK",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 54,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_LILY_POND",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
