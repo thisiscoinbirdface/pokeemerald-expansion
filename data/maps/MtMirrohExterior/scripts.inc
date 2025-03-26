@@ -185,21 +185,21 @@ MtMirrohExterior_NPC_F::
 
 
 MtMirrohExterior_NPC_G::
-# 148 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
 # 149 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_NPC_G_Text_0
+	lockall
 # 150 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_NPC_G_Text_0
+# 151 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Medicham::
-# 155 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
 # 156 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Medicham_Text_0
+	lockall
 # 157 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_Medicham_Text_0
+# 158 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
@@ -228,17 +228,17 @@ MtMirrohExterior_Trainer_A_Text_1:
 
 MtMirrohExterior_Trainer_A_Text_2:
 # 20 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I'm training here so that I cna safely\n"
+	.string "I'm training here so that I can safely\n"
 	.string "go back to the {PKMN} Center if I need to.$"
 
 MtMirrohExterior_Trainer_B_Text_0:
 # 25 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I know what you're eyeing! That's why I\n"
-	.string "planted myself here.$"
+	.string "planted myself here - hahaha!$"
 
 MtMirrohExterior_Trainer_B_Text_1:
 # 25 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Aw!$"
+	.string "Aw I lost!$"
 
 MtMirrohExterior_Trainer_B_Text_2:
 # 26 "data//maps/MtMirrohExterior/scripts.pory"
@@ -338,18 +338,16 @@ MtMirrohExterior_Toxicroak_Text_0:
 
 MtMirrohExterior_NPC_F_Text_0:
 # 143 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "A fellow fighter! Welcome to the -\p"
-	.string "Oh, you're just a regular trainer.\n"
-	.string "Welcome to the FIGHTING DOJO anyway!\l"
-	.string "The master is conducting a training\l"
-	.string "session inside.$"
+	.string "I can't believe what's happening inside\n"
+	.string "the FIGHTING DOJO! How could the\l"
+	.string "master have lost her mind like this?$"
 
 MtMirrohExterior_NPC_G_Text_0:
-# 149 "data//maps/MtMirrohExterior/scripts.pory"
+# 150 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "She's meditating with her\n"
 	.string "MEDICHAM...best not disturb her.$"
 
 MtMirrohExterior_Medicham_Text_0:
-# 156 "data//maps/MtMirrohExterior/scripts.pory"
+# 157 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "She's meditating with her trainer...best\n"
 	.string "not disturb her.$"

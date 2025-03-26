@@ -165,28 +165,28 @@
 
 //Mt Mirroh Interior
     //1F
-    #define TRAINER_VALERIE_1                   108
-    #define TRAINER_TASHA                       109
-    #define TRAINER_VALERIE_2                   110
-    #define TRAINER_VALERIE_3                   111
-    #define TRAINER_VALERIE_4                   112
-    #define TRAINER_VALERIE_5                   113
+    #define TRAINER_MIRROHINT_A                   108
+    #define TRAINER_MIRROHINT_B                   109
+    #define TRAINER_MIRROHINT_C                   110
+    #define TRAINER_MIRROHINT_D                   111
+    #define TRAINER_MIRROHINT_E                   112
+    #define TRAINER_MIRROHINT_F                   113
     //2F
-    #define TRAINER_CINDY_1                     114
-    #define TRAINER_DAPHNE                      115
-    #define TRAINER_GRUNT_SPACE_CENTER_2        116
-    #define TRAINER_CINDY_2                     117
-    #define TRAINER_BRIANNA                     118
-    #define TRAINER_NAOMI                       119
-    #define TRAINER_CINDY_3                     120
+    #define TRAINER_MIRROHINT2_A                  114
+    #define TRAINER_MIRROHINT2_B                  115
+    #define TRAINER_MIRROHINT2_C                  116
+    #define TRAINER_MIRROHINT2_D                  117
+    #define TRAINER_MIRROHINT2_E                  118
+    #define TRAINER_MIRROHINT2_F                  119
+    #define TRAINER_MIRROHINT2_G                  120
 
     //Mirroh Peak
-    #define TRAINER_CINDY_4                     121
-    #define TRAINER_CINDY_5                     122
-    #define TRAINER_CINDY_6                     123
-    #define TRAINER_MELISSA                     124
-    #define TRAINER_SHEILA                      125
-    #define TRAINER_MIRROHPEAK_MOXIE                     126
+    #define TRAINER_MIRROHPEAK_A                  121
+    #define TRAINER_MIRROHPEAK_B                  122
+    #define TRAINER_MIRROHPEAK_C                  123
+    #define TRAINER_MIRROHPEAK_D                  124
+    #define TRAINER_MIRROHPEAK_E                  125
+    #define TRAINER_MIRROHPEAK_MOXIE              126
 
 #define TRAINER_JESSICA_1                   127
 #define TRAINER_CONNIE                      128

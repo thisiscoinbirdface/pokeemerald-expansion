@@ -119,10 +119,8 @@ script SilversunCity_NPC2{
 script SilversunCity_NPC3{
     lockall
     faceplayer
-    msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))
-//    warp(MAP_MIRROH_PEAK, 19, 17)
-    warp(MAP_WINTERLILY_HOLLOW, 18, 23)    
-//    warp(MAP_MIRROH_INTERIOR_2F, 33, 25)
+    msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))  
+    warp(MAP_MIRROH_INTERIOR_1F, 55, 56)
     releaseall
     end
 }

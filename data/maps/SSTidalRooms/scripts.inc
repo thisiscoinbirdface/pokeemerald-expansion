@@ -58,7 +58,7 @@ SSTidalRooms_EventScript_Garret::
 	end
 
 SSTidalRooms_EventScript_Naomi::
-	trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
+	trainerbattle_single TRAINER_NONE, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
 	msgbox SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE
 	end
 

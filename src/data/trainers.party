@@ -2027,7 +2027,7 @@ Shuppet
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_VALERIE_1 ===
+=== TRAINER_MIRROHINT_A ===
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2040,7 +2040,7 @@ Sableye
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TASHA ===
+=== TRAINER_MIRROHINT_B ===
 Name: TASHA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2053,7 +2053,7 @@ Shuppet
 Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_VALERIE_2 ===
+=== TRAINER_MIRROHINT_C ===
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2070,7 +2070,7 @@ Spoink
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_VALERIE_3 ===
+=== TRAINER_MIRROHINT_D ===
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2087,7 +2087,7 @@ Sableye
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_VALERIE_4 ===
+=== TRAINER_MIRROHINT_E ===
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2104,7 +2104,7 @@ Sableye
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_VALERIE_5 ===
+=== TRAINER_MIRROHINT_F ===
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -2125,7 +2125,7 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CINDY_1 ===
+=== TRAINER_MIRROHINT2_A ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2139,7 +2139,7 @@ Zigzagoon @ Nugget
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAPHNE ===
+=== TRAINER_MIRROHINT2_B ===
 Name: DAPHNE
 Class: Lady
 Pic: Lady
@@ -2165,7 +2165,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Take Down
 - Water Pulse
 
-=== TRAINER_GRUNT_SPACE_CENTER_2 ===
+=== TRAINER_MIRROHINT2_C ===
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -2186,7 +2186,7 @@ Numel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CINDY_2 ===
+=== TRAINER_MIRROHINT2_D ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2202,7 +2202,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
-=== TRAINER_BRIANNA ===
+=== TRAINER_MIRROHINT2_E ===
 Name: BRIANNA
 Class: Lady
 Pic: Lady
@@ -2216,7 +2216,7 @@ Seaking @ Nugget
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_NAOMI ===
+=== TRAINER_MIRROHINT2_F ===
 Name: NAOMI
 Class: Lady
 Pic: Lady
@@ -2230,7 +2230,7 @@ Roselia @ Nugget
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CINDY_3 ===
+=== TRAINER_MIRROHINT2_G ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2244,7 +2244,7 @@ Linoone @ Nugget
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CINDY_4 ===
+=== TRAINER_MIRROHPEAK_A ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2258,7 +2258,7 @@ Linoone @ Nugget
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CINDY_5 ===
+=== TRAINER_MIRROHPEAK_B ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2272,7 +2272,7 @@ Linoone @ Nugget
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CINDY_6 ===
+=== TRAINER_MIRROHPEAK_C ===
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -2290,7 +2290,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_MELISSA ===
+=== TRAINER_MIRROHPEAK_D ===
 Name: MELISSA
 Class: Beauty
 Pic: Beauty
@@ -2303,7 +2303,7 @@ Marill
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SHEILA ===
+=== TRAINER_MIRROHPEAK_E ===
 Name: SHEILA
 Class: Beauty
 Pic: Beauty
