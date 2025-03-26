@@ -19,44 +19,44 @@ mapscripts MirrohInterior_2F_MapScripts{}
 //trainers
 //hex maniac
 script MirrohInterior_2F_Trainer_A{
-    trainerbattle_single(TRAINER_MIRROHINT2_A, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_A, format("Deep in the depths of Mt. Mirroh, I sense psychic energy!"), format("Nope, there's no psychic energy!"))
+    msgbox(format("I suppose there's psychic energy everywhere. It's like happiness - a state of mind."))
     releaseall
 }
 //maniac
 script MirrohInterior_2F_Trainer_B{
-    trainerbattle_single(TRAINER_MIRROHINT2_B, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_B, format("I came here searching for ancient ruins! Don't interrupt me!"), format("Ok you can interrupt me!"))
+    msgbox(format("Maybe there are ancient ruins at the peak of MT MIRROH..."))
     releaseall
 }
 //lass
 script MirrohInterior_2F_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHINT2_C, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_C, format("Hey, didn't I battle you before in Route 3?"), format("You beat me then too!"))
+    msgbox(format("I'm going to collect all 8 gym badges! But I only have 4 so far."))
     releaseall
 }
 //pokefan
 script MirrohInterior_2F_Trainer_D{
-    trainerbattle_single(TRAINER_MIRROHINT2_D, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_D, format("Check out my new friends!"), format("Don't hurt them!"))
+    msgbox(format("I'm a huge Pokefan! They're my best friends! But I have human friends too."))
     releaseall
 }
 //maniac
 script MirrohInterior_2F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT2_E, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Why are you here? Are you trying to steal my {PKMN} like those Team Somber grunts?"), format("I guess you're not!"))
+    msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my {PKMN}. But I beat one of them and ran away from the other!"))
     releaseall
 }
 //athlete M
 script MirrohInterior_2F_Trainer_F{
-    trainerbattle_single(TRAINER_MIRROHINT2_F, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_F, format("This is the best place for endurance training. Let's train!"), format("You have endurance!"))
+    msgbox(format("I'm training for a relay race back home. Gotta stay in shape!"))
     releaseall
 }
 //youngster
 script MirrohInterior_2F_Trainer_G{
-    trainerbattle_single(TRAINER_MIRROHINT2_G, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHINT2_G, format("I can't wait to get out of this cave. But I don't mind one last battle before leaving!"), format("Now I really want to leave!"))
+    msgbox(format("This cave is so confusing!"))
     releaseall
 }
 

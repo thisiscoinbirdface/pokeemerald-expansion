@@ -2135,44 +2135,39 @@ Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MIRROHINT2_A ===
-Name: CINDY
-Class: Lady
-Pic: Lady
+Name: SYLVIA
+Class: Hex Maniac
+Pic: Hex Maniac
 Gender: Female
-Music: Female
-Items: Full Restore
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
+Froslass 
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mr. Mime-Galar  
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_B ===
-Name: DAPHNE
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+Name: GARRISON
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc @ Nugget
-Level: 39
+Bergmite
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Sweet Kiss
-- Flail
-- Water Pulse
 
-Luvdisc @ Nugget
-Level: 39
+Morgrem
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Safeguard
-- Take Down
-- Water Pulse
+
 
 === TRAINER_MIRROHINT2_C ===
 Name: GRUNT
@@ -2183,75 +2178,92 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
-Level: 26
+Ursaring
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mightyena
-Level: 28
+Altaria
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Numel
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_D ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+Name: VICTOR
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 11
+Cetoddle
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Tail Whip
+
+Frigibax
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_E ===
-Name: BRIANNA
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Seaking @ Nugget
-Level: 40
+Mamoswine
+Level: 34
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Ivysaur
+Level: 34
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MIRROHINT2_F ===
-Name: NAOMI
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Roselia @ Nugget
-Level: 45
+Sandshrew-Alola
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+Mudsdale
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sandslash-Alola
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+
+
 === TRAINER_MIRROHINT2_G ===
-Name: CINDY
-Class: Lady
-Pic: Lady
-Gender: Female
-Music: Female
-Items: Full Restore
+Name: CALVIN
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 27
+Linoone-Galar
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Raticate-Alola
+Level: 33
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Corvisquire
+Level: 34
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
 
 === TRAINER_MIRROHPEAK_A ===
 Name: CINDY
