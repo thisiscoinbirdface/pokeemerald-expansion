@@ -30,7 +30,7 @@ script MirrohInterior_1F_Trainer_B{
 //HIKER 2
 script MirrohInterior_1F_Trainer_C{
     trainerbattle_single(TRAINER_MIRROHINT_C, format("I may switch to ICE type {PKMN} after seeing the {PKMN} here!"), format("I should just use ROCK types!"))
-    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type {PMKN}!"))
+    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type {PKMN}!"))
     releaseall
 }
 

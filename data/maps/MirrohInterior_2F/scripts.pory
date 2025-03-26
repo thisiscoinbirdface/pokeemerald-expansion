@@ -1,1 +1,100 @@
 mapscripts MirrohInterior_2F_MapScripts{}
+
+
+//7 trainers
+//3 NPCs
+
+
+
+
+
+
+
+
+
+
+
+
+
+//trainers
+//hex maniac
+script MirrohInterior_2F_Trainer_A{
+    trainerbattle_single(TRAINER_MIRROHINT2_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//maniac
+script MirrohInterior_2F_Trainer_B{
+    trainerbattle_single(TRAINER_MIRROHINT2_B, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//lass
+script MirrohInterior_2F_Trainer_C{
+    trainerbattle_single(TRAINER_MIRROHINT2_C, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//pokefan
+script MirrohInterior_2F_Trainer_D{
+    trainerbattle_single(TRAINER_MIRROHINT2_D, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//maniac
+script MirrohInterior_2F_Trainer_E{
+    trainerbattle_single(TRAINER_MIRROHINT2_E, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//athlete M
+script MirrohInterior_2F_Trainer_F{
+    trainerbattle_single(TRAINER_MIRROHINT2_F, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+//youngster
+script MirrohInterior_2F_Trainer_G{
+    trainerbattle_single(TRAINER_MIRROHINT2_G, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCs
+//old man
+script MirrohInterior_2F_NPC_A{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+//runner F
+script MirrohInterior_2F_NPC_B{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script MirrohInterior_2F_NPC_C{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
