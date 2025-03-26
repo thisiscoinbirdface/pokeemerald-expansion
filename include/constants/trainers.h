@@ -112,11 +112,13 @@
 //My pics I AM GOING TO USE THEM ONE BY ONE
 #define TRAINER_PIC_SOMBER_GRUNT_F        93
 #define TRAINER_PIC_SOMBER_GRUNT_M        94
+#define TRAINER_PIC_SOMBER_ADMIN_MELEA    95
+#define TRAINER_PIC_SOMBER_ADMIN_MOXIE    96
 
 
 
 
-#define TRAINER_PIC_COUNT                 95
+#define TRAINER_PIC_COUNT                 97
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

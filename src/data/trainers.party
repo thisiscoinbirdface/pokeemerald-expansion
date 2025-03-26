@@ -682,7 +682,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CERAMPEAK_MOXIE ===
 Name: MOXIE
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Somber Admin Moxie
 Gender: Male
 Music: Cool
 Items: Super Potion
@@ -1205,7 +1205,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SILVERSUNGYM_A ===
 Name: CHARLIE
 Class: Tuber M
-Pic: Tuber M
+Pic: Somber Grunt F
 Gender: Male
 Music: Girl
 Double Battle: No
@@ -1471,7 +1471,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_SOMBERHQ_MELEA ===
 Name: MELEA
 Class: Team Somber
-Pic: Somber Grunt F
+Pic: Somber Admin Melea
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -2222,6 +2222,7 @@ Level: 34
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MIRROHINT2_F ===
+Name: TALLOW
 Class: Triathlete
 Pic: Running Triathlete M
 Gender: Male
@@ -2340,7 +2341,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MIRROHPEAK_MOXIE ===
 Name: MOXIE
 Class: Beauty
-Pic: Beauty
+Pic: Somber Admin Moxie
 Gender: Female
 Music: Female
 Double Battle: No

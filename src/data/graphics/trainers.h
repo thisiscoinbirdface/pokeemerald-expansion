@@ -303,8 +303,11 @@ const u32 gTrainerPalette_SomberGruntF[] = INCBIN_U32("graphics/trainers/my_trai
 const u32 gTrainerFrontPic_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_m.4bpp.lz");
 const u32 gTrainerPalette_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
+const u32 gTrainerFrontPic_SomberAdminMelea[] = INCBIN_U32("graphics/trainers/my_trainers/somber_admin_melea.4bpp.lz");
+const u32 gTrainerPalette_SomberAdminMelea[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
-
+const u32 gTrainerFrontPic_SomberAdminMoxie[] = INCBIN_U32("graphics/trainers/my_trainers/somber_admin_moxie.4bpp.lz");
+const u32 gTrainerPalette_SomberAdminMoxie[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
 
 // The first two parameters invoke a front pic and palette by
@@ -420,7 +423,8 @@ const struct TrainerSprite gTrainerSprites[] =
     //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_F, gTrainerFrontPic_SomberGruntF, gTrainerPalette_SomberGruntF),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_M, gTrainerFrontPic_SomberGruntM, gTrainerPalette_SomberGruntM),
-
+    TRAINER_SPRITE(TRAINER_PIC_SOMBER_ADMIN_MELEA, gTrainerFrontPic_SomberAdminMelea, gTrainerPalette_SomberAdminMelea),
+    TRAINER_SPRITE(TRAINER_PIC_SOMBER_ADMIN_MOXIE, gTrainerFrontPic_SomberAdminMoxie, gTrainerPalette_SomberAdminMoxie),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
