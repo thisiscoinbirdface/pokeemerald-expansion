@@ -5280,6 +5280,16 @@
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/IvyRiver/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVY_RIVER_MAIN",
+      "name": "IvyRiver_Main_Layout",
+      "width": 60,
+      "height": 120,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/IvyRiver_Main/border.bin",
+      "blockdata_filepath": "data/layouts/IvyRiver_Main/map.bin"
     }
   ]
 }

@@ -1322,3 +1322,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LilyPond/scripts.inc"
 
 	.include "data/maps/IvyRiver/scripts.inc"
+
+	.include "data/maps/IvyRiver_Main/scripts.inc"

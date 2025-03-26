@@ -1,7 +1,7 @@
 {
-  "id": "MAP_IVY_RIVER",
-  "name": "IvyRiver",
-  "layout": "LAYOUT_IVY_RIVER",
+  "id": "MAP_IVY_RIVER_MAIN",
+  "name": "IvyRiver_Main",
+  "layout": "LAYOUT_IVY_RIVER_MAIN",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -14,13 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_LILY_POND",
+      "map": "MAP_IVY_RIVER",
       "offset": -16,
       "direction": "up"
     },
     {
-      "map": "MAP_IVY_RIVER_MAIN",
-      "offset": 18,
+      "map": "MAP_PELLUCA_CITY",
+      "offset": 32,
       "direction": "down"
     }
   ],
