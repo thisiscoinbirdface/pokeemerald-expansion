@@ -508,7 +508,7 @@ SilversunCity_Sewers_Duskull_Event_Ending_Movement_2:
 SilversunCity_Sewers_NPC6_Text_0:
 # 40 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Please hurry. I don't want her to be\n"
-	.string "attacked by the SEWER SKULL!$"
+	.string "attacked by the SEWER SCOURGE!$"
 
 SilversunCity_Sewers_ManLostWife_Trigger0_Text_0:
 # 52 "data//maps/SilversunCity_Sewers/scripts.pory"
@@ -556,8 +556,8 @@ SilversunCity_Sewers_Duskull_Event_Ending_Text_0:
 	.string "You're okay! I'm so glad you aren't hurt.\p"
 	.string "This trainer here saved me. I felt\n"
 	.string "something weird attacking me, honey! I\l"
-	.string "think it might've been the SEWER SKULL.\l"
-	.string "It was so scary!$"
+	.string "think it might've been the SEWER\l"
+	.string "SCOURGE. It was so scary!$"
 
 SilversunCity_Sewers_Duskull_Event_Ending_Text_1:
 # 141 "data//maps/SilversunCity_Sewers/scripts.pory"

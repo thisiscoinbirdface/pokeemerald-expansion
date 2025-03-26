@@ -306,7 +306,7 @@ SilversunCity_NPC5_Text_0:
 	.string "They say a demon {PKMN} haunts the sewers.\n"
 	.string "It's even scarier than all the\l"
 	.string "POISON-type {PKMN}! They call it the SEWER\l"
-	.string "SKULL because of how it looks, and\l"
+	.string "SCOURGE because of how it looks, and\l"
 	.string "apparently, if it attacks you, you lose\l"
 	.string "your memories! How scary is that?\p"
 	.string "...probably just someone seeing things\n"

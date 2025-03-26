@@ -37,7 +37,7 @@ script SilversunCity_OnTransition{
 script SilversunCity_Sewers_NPC6{
     lockall
     faceplayer
-    msgbox(format("Please hurry. I don't want her to be attacked by the SEWER SKULL!"))
+    msgbox(format("Please hurry. I don't want her to be attacked by the SEWER SCOURGE!"))
     releaseall
     end
 }
@@ -102,7 +102,7 @@ script SilversunCity_Sewers_Duskull_Event{
     //battle
     applymovement(15, moves(walk_up * 2))
     waitmovement(0)
-    setwildbattle(SPECIES_DUSKULL, 25)  
+    setwildbattle(SPECIES_VAROOM, 25)  
     dowildbattle  
     release
 
@@ -132,7 +132,7 @@ script SilversunCity_Sewers_Duskull_Event_Ending{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
 
-    msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SKULL. It was so scary!"))
+    msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SCOURGE. It was so scary!"))
     release
     applymovement(9, moves(face_down))
     applymovement(1, moves(face_down))
