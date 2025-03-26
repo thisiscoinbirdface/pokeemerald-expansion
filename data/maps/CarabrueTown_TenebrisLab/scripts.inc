@@ -992,7 +992,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_5:
 # 119 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "RUE: Have you heard of dreamstones?\n"
 	.string "No? Hardly surprising, considering that\l"
-	.string "there are only three in all of Cormoria.\l"
+	.string "there are only three in all of CORMORIA.\l"
 	.string "You see...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_6:
@@ -1026,7 +1026,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_8:
 	.string "{PKMN} energy in solidified form. We don't\l"
 	.string "know yet how they came to be, and so\l"
 	.string "far, we know of only three across all of\l"
-	.string "Cormoria. Incredibly rare, you see? And\l"
+	.string "CORMORIA. Incredibly rare, you see? And\l"
 	.string "power like that in the wrong hands...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_9:
@@ -1129,8 +1129,8 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_24:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_25:
 # 181 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "RUE: The dreamstones are scattered all\n"
-	.string "across Cormoria. Have you ever traveled\l"
-	.string "beyond FENNILAHL TOWN? Cormoria is\l"
+	.string "across CORMORIA. Have you ever traveled\l"
+	.string "beyond FENNILAHL TOWN? CORMORIA is\l"
 	.string "vast. Dangerous Pokemon have made the\l"
 	.string "mountains, forests and seas their\l"
 	.string "territory. I fear you may not be up to\l"

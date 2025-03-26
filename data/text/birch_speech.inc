@@ -7,7 +7,7 @@ gText_Birch_Welcome::
 	.string "MESSAGE FROM PROFESSOR TENEBRIS:\n"
 	.string "Welcome young researcher!\p"
 	.string "I am PROFESSOR TENEBRIS, the resident\n"
-	.string "POKéMON Prof. of the Cormoria region\l"
+	.string "POKéMON Prof. of the CORMORIA region\l"
 	.string "and head of the TENEBRIS LABORATORY!\p"
 	.string "We reviewed your application and while\n"
 	.string "your resume was...lacking, I believe in\l"

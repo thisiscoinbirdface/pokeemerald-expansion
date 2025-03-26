@@ -81,7 +81,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("The action! The tension! And all the razzle-dazzle! GLORIA was sizzling! Too bad she lost though."))
     } else {
-        msgbox(format("I write for CORMORIA CULTURE, the leading arts and entertainment portal in Cormoria! Let's see what GLORIA has in store today...it's supposed to be an experiential affair."))
+        msgbox(format("I write for CORMORIA CULTURE, the leading arts and entertainment portal in CORMORIA! Let's see what GLORIA has in store today...it's supposed to be an experiential affair."))
     }
     releaseall
     end

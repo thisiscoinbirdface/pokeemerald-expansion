@@ -146,7 +146,7 @@ MirrohBaseCamp_EventScript_NPC1_Text_0:
 # 64 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "It's so sad and lonely up here...I want\n"
 	.string "to grow up fast so I can go see the rest\l"
-	.string "of Cormoria!$"
+	.string "of CORMORIA!$"
 
 MirrohBaseCamp_EventScript_NPC2_Text_0:
 # 71 "data//maps/MirrohBaseCamp/scripts.pory"

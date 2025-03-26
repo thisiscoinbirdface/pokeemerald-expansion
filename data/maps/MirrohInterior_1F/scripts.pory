@@ -1,0 +1,90 @@
+mapscripts MirrohInterior_1F_MapScripts{}
+
+//5 trainers
+
+//3 NPCs
+
+//2 more NPCs at the blocked exit
+
+
+
+
+
+
+
+//trainers
+//HIKER
+script MirrohInterior_1F_Trainer_A{
+    trainerbattle_single(TRAINER_MIRROHINT_A, format("Ho ho! Didn't expect to see a fellow traveler up here in this frozen mountain!"), format("Keep traveling, traveler!"))
+    msgbox(format("I love delving deep into the mountains of CORMORIA!"))
+    releaseall
+}
+
+//MANIAC (ITEM PROTECTOR)
+script MirrohInterior_1F_Trainer_B{
+    trainerbattle_single(TRAINER_MIRROHINT_B, format("No! That item's mine!"), format("Fine, you can have it!"))
+    msgbox(format("Travelers often leave rare items inside caves and mountains. That's where the money is, baby!"))
+    releaseall
+}
+
+//HIKER 2
+script MirrohInterior_1F_Trainer_C{
+    trainerbattle_single(TRAINER_MIRROHINT_C, format("I may switch to ICE type {PKMN} after seeing the {PKMN} here!"), format("I should just use ROCK types!"))
+    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type {PMKN}!"))
+    releaseall
+}
+
+//BATTLE GIRL (LOST DEAD END)
+script MirrohInterior_1F_Trainer_D{
+    trainerbattle_single(TRAINER_MIRROHINT_E, format("I took a wrong turn and got lost. This is a dead end!"), format("You're not lost!"))
+    msgbox(format("How do I get out of here?"))
+    releaseall
+}
+
+//LASS (EXIT)
+script MirrohInterior_1F_Trainer_E{
+    trainerbattle_single(TRAINER_MIRROHINT_D, format("These grunts aren't letting me through to WINTERLILY HOLLOW! Are you one of them too?"), format("No you're not!"))
+    msgbox(format("What are these city criminals doing all the way up here?"))
+    releaseall
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCs
+//picknicker (entrance)
+script MirrohInterior_1F_NPC_A{
+    lockall
+    faceplayer
+    msgbox(format("I'm trekking to WINTERLILY HOLLOW! But my GRASS type {PKMN} can't deal with all the ICE type {PKMN} around here..."))
+    releaseall
+    end
+}
+//Generic lady
+script MirrohInterior_1F_NPC_B{
+    lockall
+    faceplayer
+    msgbox(format("The way to WINTERLILY HOLLOW is past the ledge above. But how do I cross the ledge?"))
+    releaseall
+    end
+}
+//end dude?
+script MirrohInterior_1F_NPC_C{
+    lockall
+    faceplayer
+    msgbox(format("Past this is the trek upto MT MIRROH PEAK. The weather is harsh!"))
+    releaseall
+    end
+}

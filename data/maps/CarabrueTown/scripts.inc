@@ -132,4 +132,4 @@ CarabrueTown_EventScript_NPC2_Text_0:
 # 66 "data//maps/CarabrueTown/scripts.pory"
 	.string "I love how cosy CARABRUE TOWN is!\n"
 	.string "That's because it's nestled deep in the\l"
-	.string "southern hills of Cormoria.$"
+	.string "southern hills of CORMORIA.$"

@@ -151,7 +151,7 @@ script RangerInstitute_1F_InterviewQ5{
 }
 
 script RangerInstitute_1F_InterviewPass{
-    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a {PKMN} RANGER RECRUIT. Welcome to the Cormoria {PKMN} Ranger Institute! Please head upstairs for your induction."))
+    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a {PKMN} RANGER RECRUIT. Welcome to the CORMORIA {PKMN} Ranger Institute! Please head upstairs for your induction."))
     releaseall
     setvar(VAR_RANGER_INSTITUTE, 2)
 }

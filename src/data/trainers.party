@@ -2028,23 +2028,27 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_A ===
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
-Music: Suspicious
+Name: ELI
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sableye
+Cetoddle
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Graveler-Alola
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_B ===
-Name: TASHA
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
+Name: WYATT
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
@@ -2053,55 +2057,60 @@ Shuppet
 Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+Linoone-Galar
+Level: 32
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+
 === TRAINER_MIRROHINT_C ===
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
-Music: Suspicious
+Name: ELI
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sableye
+Lairon
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Spoink
+Bergmite
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_D ===
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac
+Name: JOCELYN
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Female
-Music: Suspicious
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Spoink
+Gurdurr
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Sableye
+Lilligant-Hisui
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac
+Name: TIANA
+Class: Lass
+Pic: Lass
 Gender: Female
-Music: Suspicious
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Spoink
-Level: 40
+Corvisquire
+Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sableye
-Level: 40
+Perrserker
+Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHINT_F ===

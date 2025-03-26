@@ -56,7 +56,7 @@ script PellucaCityRestaurant_NPC6{
 script PellucaCityRestaurant_NPC7{
     lockall
     faceplayer
-    msgbox(format("My SMEARGLE cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria."))
+    msgbox(format("My SMEARGLE cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over CORMORIA."))
     releaseall
     end
 }
@@ -91,7 +91,7 @@ script PellucaCityRestaurant_NPC9{
 script PellucaCityRestaurant_Cook1{
     lockall
     faceplayer
-    msgbox(format("Our head chef travels all across Cormoria to find the rarest ingredients...I wish he'd find a ROTOM FROST to replace our fridge!"))
+    msgbox(format("Our head chef travels all across CORMORIA to find the rarest ingredients...I wish he'd find a ROTOM FROST to replace our fridge!"))
     releaseall
     end
 }

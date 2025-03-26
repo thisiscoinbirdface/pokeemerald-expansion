@@ -736,7 +736,7 @@ RangerInstitute_1F_InterviewPass_Text_0:
 	.string "Congratulations {PLAYER}! You've\n"
 	.string "cleared the interview and we are now\l"
 	.string "proud to call you a {PKMN} RANGER RECRUIT.\l"
-	.string "Welcome to the Cormoria {PKMN} Ranger\l"
+	.string "Welcome to the CORMORIA {PKMN} Ranger\l"
 	.string "Institute! Please head upstairs for\l"
 	.string "your induction.$"
 

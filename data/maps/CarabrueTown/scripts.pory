@@ -63,7 +63,7 @@ script CarabrueTown_EventScript_NPC1{
 script CarabrueTown_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("I love how cosy CARABRUE TOWN is! That's because it's nestled deep in the southern hills of Cormoria."))
+    msgbox(format("I love how cosy CARABRUE TOWN is! That's because it's nestled deep in the southern hills of CORMORIA."))
     releaseall
 }
 

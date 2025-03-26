@@ -150,7 +150,7 @@ SilversunCity_Sewers_Duskull_Event::
 # 104 "data//maps/SilversunCity_Sewers/scripts.pory"
 	waitmovement 0
 # 105 "data//maps/SilversunCity_Sewers/scripts.pory"
-	setwildbattle SPECIES_DUSKULL, 25
+	setwildbattle SPECIES_VAROOM, 25
 # 106 "data//maps/SilversunCity_Sewers/scripts.pory"
 	dowildbattle
 # 107 "data//maps/SilversunCity_Sewers/scripts.pory"

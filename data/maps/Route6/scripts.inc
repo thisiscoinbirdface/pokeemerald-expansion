@@ -635,7 +635,7 @@ Route6_Trainer_C1_Text_2:
 # 59 "data//maps/Route6/scripts.pory"
 	.string "The Pokemon Ranger Institute is the\n"
 	.string "headquarters for us Rangers in\l"
-	.string "Cormoria.$"
+	.string "CORMORIA.$"
 
 Route6_Trainer_C2_Text_0:
 # 65 "data//maps/Route6/scripts.pory"
@@ -703,7 +703,7 @@ Route6_Trainer_G_Text_1:
 
 Route6_Trainer_G_Text_2:
 # 94 "data//maps/Route6/scripts.pory"
-	.string "Dog {PKMN} are rare in Cormoria! Someone in\n"
+	.string "Dog {PKMN} are rare in CORMORIA! Someone in\n"
 	.string "PELLUCA CITY traded me my HOUNDOOR.$"
 
 Route6_Trainer_H_Text_0:
@@ -767,7 +767,7 @@ Route6_NPC3_Text_0:
 	.string "I want to go to the PELLUCA\n"
 	.string "RESTAURANT! The food is supposed to be\l"
 	.string "delicious because the head chef\l"
-	.string "travels all of Cormoria looking for rare\l"
+	.string "travels all of CORMORIA looking for rare\l"
 	.string "ingredients.$"
 
 Route6_NPC4_Text_0:

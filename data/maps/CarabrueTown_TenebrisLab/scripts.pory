@@ -116,7 +116,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(3, moves(face_left))
         waitmovement(0)
-        msgbox(format("RUE: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of Cormoria. You see..."))
+        msgbox(format("RUE: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of CORMORIA. You see..."))
         release
 
         applymovement(3, moves(face_down))
@@ -133,7 +133,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(3, moves(face_left))
         waitmovement(0)
-        msgbox(format("RUE: No...this thing needs something far more potent. Our plan was to use dreamstones to power it. Dreamstones are powerful reserves of subconscious {PKMN} energy in solidified form. We don't know yet how they came to be, and so far, we know of only three across all of Cormoria. Incredibly rare, you see? And power like that in the wrong hands..."))
+        msgbox(format("RUE: No...this thing needs something far more potent. Our plan was to use dreamstones to power it. Dreamstones are powerful reserves of subconscious {PKMN} energy in solidified form. We don't know yet how they came to be, and so far, we know of only three across all of CORMORIA. Incredibly rare, you see? And power like that in the wrong hands..."))
         release
 
         applymovement(3, moves(walk_left face_up))
@@ -178,7 +178,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
 
         msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab."))
-        msgbox(format("RUE: The dreamstones are scattered all across Cormoria. Have you ever traveled beyond FENNILAHL TOWN? Cormoria is vast. Dangerous Pokemon have made the mountains, forests and seas their territory. I fear you may not be up to the task..."))
+        msgbox(format("RUE: The dreamstones are scattered all across CORMORIA. Have you ever traveled beyond FENNILAHL TOWN? CORMORIA is vast. Dangerous Pokemon have made the mountains, forests and seas their territory. I fear you may not be up to the task..."))
         msgbox(format("RUE: I don't know how I can help...perhaps this may be of use, {PLAYER}."))
         release   
         //Pokedex Get

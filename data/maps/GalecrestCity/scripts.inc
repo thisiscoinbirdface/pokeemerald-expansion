@@ -917,7 +917,7 @@ GalecrestCity_NPC_10_Text_0:
 # 341 "data//maps/GalecrestCity/scripts.pory"
 	.string "The Detective Academy is the most\n"
 	.string "prestigious police academy in all of\l"
-	.string "Cormoria. My husband helped build it,\l"
+	.string "CORMORIA. My husband helped build it,\l"
 	.string "many years ago, when he ran a\l"
 	.string "construction business.$"
 
@@ -994,7 +994,7 @@ GalecrestCity_NPC_18_Text_0:
 	.string "All my life I've lived in this\n"
 	.string "neighbourhood. It's all I've seen and all\l"
 	.string "I know...and now I'm too old to go\l"
-	.string "exploring Cormoria.$"
+	.string "exploring CORMORIA.$"
 
 GalecrestCity_NPC_18_Text_1:
 # 445 "data//maps/GalecrestCity/scripts.pory"
