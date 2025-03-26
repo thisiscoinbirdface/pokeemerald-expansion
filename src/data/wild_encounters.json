@@ -13198,12 +13198,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DREEPY"
+                "species": "SPECIES_SHUPPET"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DREEPY"
+                "species": "SPECIES_GREAVARD"
               }
             ]
           }
@@ -13273,6 +13273,75 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_FRIGIBAX"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_IVY_RIVER_MAIN",
+          "base_label": "gIvyRiver_Main0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
