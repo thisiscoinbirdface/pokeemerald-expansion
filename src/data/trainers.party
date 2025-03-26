@@ -1333,7 +1333,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Thievul
@@ -1346,7 +1346,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Thievul
@@ -1364,7 +1364,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Swoobat
@@ -1383,7 +1383,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Baltoy
@@ -1404,7 +1404,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Linoone-Galar
@@ -1421,7 +1421,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Murkrow
@@ -1438,7 +1438,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Elgyem
@@ -1457,7 +1457,7 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Magneton
@@ -1474,7 +1474,7 @@ Class: Team Somber
 Pic: Somber Admin Melea
 Gender: Male
 Music: Aqua
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
 Slowpoke
