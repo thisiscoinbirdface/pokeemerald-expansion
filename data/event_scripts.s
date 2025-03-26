@@ -1324,3 +1324,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IvyRiver/scripts.inc"
 
 	.include "data/maps/IvyRiver_Main/scripts.inc"
+
+	.include "data/maps/IveRiver_Caves/scripts.inc"

@@ -1,7 +1,7 @@
 {
-  "id": "MAP_IVY_RIVER",
-  "name": "IvyRiver",
-  "layout": "LAYOUT_IVY_RIVER",
+  "id": "MAP_IVE_RIVER_CAVES",
+  "name": "IveRiver_Caves",
+  "layout": "LAYOUT_IVE_RIVER_CAVES",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -12,18 +12,7 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_LILY_POND",
-      "offset": -16,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_IVY_RIVER_MAIN",
-      "offset": 16,
-      "direction": "down"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],

@@ -5284,12 +5284,22 @@
     {
       "id": "LAYOUT_IVY_RIVER_MAIN",
       "name": "IvyRiver_Main_Layout",
-      "width": 60,
-      "height": 120,
+      "width": 50,
+      "height": 130,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/IvyRiver_Main/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_Main/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVE_RIVER_CAVES",
+      "name": "IveRiver_Caves_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IveRiver_Caves/border.bin",
+      "blockdata_filepath": "data/layouts/IveRiver_Caves/map.bin"
     }
   ]
 }
