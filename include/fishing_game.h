@@ -2,10 +2,10 @@
 #define GUARD_FISHING_GAME_H
 
 // Configs
-#define FISH_MINIGAME_ENABLED           TRUE    // If set to FALSE, this fishing minigame will be completely disabled.
+#define FISH_MINIGAME_ENABLED           FLAG_SYS_FISHING_MINIGAME  // If set to FALSE, this fishing minigame will be completely disabled. (default is false)
 
 #define MINIGAME_ON_SEPARATE_SCREEN     FALSE   // Play the minigame on its own dedicated screen instead of in the overworld.
-#define DO_DOTS_GAME_BEFORE_MAIN_GAME   TRUE    // If FALSE, the fish will be hooked instantly, instead of doing the dots game.
+#define DO_DOTS_GAME_BEFORE_MAIN_GAME   FALSE    // If FALSE, the fish will be hooked instantly, instead of doing the dots game.
 #define PREVENT_FAILURE_IN_DOTS_GAME    TRUE    // If TRUE, the dots game cannot be failed.
 #define OBSCURE_UNDISCOVERED_MONS       TRUE    // If TRUE, the Pokemon icon will be obscured if that species has not been seen in the Pokedex.
 #define VAGUE_FISH_FOR_OBSCURED         FALSE   // If TRUE, uses a vague fish shape instead of a blacked out Pokemon icon when obscured.
@@ -21,7 +21,7 @@
 #define BAR_SPEED_SLOWING               2.0  // The greater the value, the slower the bar changes speed. (Decimals are encouraged, as a little goes a long way.) (Can affect the max speed.)
 
 #define STARTING_SCORE                  300  // The number of points you already have when the game starts.
-#define SCORE_INCREASE                  3    // The score increases by this many point every frame while the fish is within the bar.
+#define SCORE_INCREASE                  4    // The score increases by this many point every frame while the fish is within the bar.
 #define SCORE_DECREASE                  5    // The score decreases by this many point every frame while the fish is outside the bar.
 #define SCORE_MAX                       1920 // The number of points required to win. Must be divisible by SCORE_AREA_WIDTH.
 
