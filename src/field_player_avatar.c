@@ -8,11 +8,15 @@
 #include "field_effect_helpers.h"
 #include "field_screen_effect.h"
 #include "field_player_avatar.h"
+#include "field_weather.h"
 #include "fieldmap.h"
+#include "fishing_game.h"
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
+#include "palette.h"
 #include "party_menu.h"
+#include "pokemon_icon.h"
 #include "random.h"
 #include "rotating_gate.h"
 #include "script.h"
@@ -28,6 +32,7 @@
 #include "constants/field_effects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainer_types.h"
 
@@ -126,7 +131,6 @@ static void CreateStopSurfingTask(u8);
 static void Task_StopSurfingInit(u8);
 static void Task_WaitStopSurfing(u8);
 
-static void Task_Fishing(u8);
 static bool32 Fishing_Init(struct Task *);
 static bool32 Fishing_GetRodOut(struct Task *);
 static bool32 Fishing_WaitBeforeDots(struct Task *);
@@ -140,12 +144,12 @@ static bool32 Fishing_APressNoMinigame(struct Task *);
 static bool32 Fishing_CheckMoreDots(struct Task *);
 static bool32 Fishing_MonOnHook(struct Task *);
 static bool32 Fishing_StartEncounter(struct Task *);
+static bool32 Fishing_StartMinigame(struct Task *);
 static bool32 Fishing_NotEvenNibble(struct Task *);
 static bool32 Fishing_GotAway(struct Task *);
 static bool32 Fishing_NoMon(struct Task *);
 static bool32 Fishing_PutRodAway(struct Task *);
 static bool32 Fishing_EndNoMon(struct Task *);
-static void AlignFishingAnimationFrames(void);
 static bool32 DoesFishingMinigameAllowCancel(void);
 static bool32 Fishing_DoesFirstMonInPartyHaveSuctionCupsOrStickyHold(void);
 static bool32 Fishing_RollForBite(u32, bool32);
@@ -1765,6 +1769,7 @@ static void Task_WaitStopSurfing(u8 taskId)
 #define tFrameCounter      data[1]
 #define tNumDots           data[2]
 #define tDotsRequired      data[3]
+#define tQuitMinigame      data[8]
 #define tRoundsPlayed      data[12]
 #define tMinRoundsRequired data[13]
 #define tPlayerGfxId       data[14]
@@ -1772,6 +1777,7 @@ static void Task_WaitStopSurfing(u8 taskId)
 
 #define FISHING_PROXIMITY_BOOST 4
 #define FISHING_STICKY_BOOST    36
+#define FISHING_OW_MINIGAME 50
 
 #if I_FISHING_BITE_ODDS >= GEN_4
     #define FISHING_OLD_ROD_ODDS 75
@@ -1802,6 +1808,7 @@ enum
     FISHING_CHECK_MORE_DOTS,
     FISHING_MON_ON_HOOK,
     FISHING_START_ENCOUNTER,
+    FISHING_START_GAME,
     FISHING_NOT_EVEN_NIBBLE,
     FISHING_GOT_AWAY,
     FISHING_NO_MON,
@@ -1824,6 +1831,7 @@ static bool32 (*const sFishingStateFuncs[])(struct Task *) =
     [FISHING_CHECK_MORE_DOTS]       = Fishing_CheckMoreDots,
     [FISHING_MON_ON_HOOK]           = Fishing_MonOnHook,
     [FISHING_START_ENCOUNTER]       = Fishing_StartEncounter,
+    [FISHING_START_GAME]            = Fishing_StartMinigame,
     [FISHING_NOT_EVEN_NIBBLE]       = Fishing_NotEvenNibble,
     [FISHING_GOT_AWAY]              = Fishing_GotAway,
     [FISHING_NO_MON]                = Fishing_NoMon,
@@ -1839,7 +1847,7 @@ void StartFishing(u8 rod)
     Task_Fishing(taskId);
 }
 
-static void Task_Fishing(u8 taskId)
+void Task_Fishing(u8 taskId)
 {
     while (sFishingStateFuncs[gTasks[taskId].tStep](&gTasks[taskId]))
         ;
@@ -1894,6 +1902,12 @@ static bool32 Fishing_InitDots(struct Task *task)
     u32 randVal;
 
     LoadMessageBoxAndFrameGfx(0, TRUE);
+    if (FISH_MINIGAME_ENABLED && !DO_DOTS_GAME_BEFORE_MAIN_GAME)
+    {
+        StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingBiteDirectionAnimNum(GetPlayerFacingDirection()));
+        task->tStep = FISHING_MON_ON_HOOK;
+        return TRUE;
+    }
     task->tStep = FISHING_SHOW_DOTS;
     task->tFrameCounter = 0;
     task->tNumDots = 0;
@@ -1913,7 +1927,7 @@ static bool32 Fishing_ShowDots(struct Task *task)
 
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
-    if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)) // B button also quits dots game.
     {
         if (!DoesFishingMinigameAllowCancel())
             return FALSE;
@@ -1967,6 +1981,12 @@ static bool32 Fishing_CheckForBite(struct Task *task)
     if (!bite)
         bite = Fishing_RollForBite(task->tFishingRod, FALSE);
 
+    if (FISH_MINIGAME_ENABLED && PREVENT_FAILURE_IN_DOTS_GAME)
+    {
+        bite = TRUE;
+        task->tStep = FISHING_MON_ON_HOOK;
+    }
+        
     if (!bite)
         task->tStep = FISHING_NOT_EVEN_NIBBLE;
 
@@ -2013,9 +2033,16 @@ static bool32 Fishing_WaitForA(struct Task *task)
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
     if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
-        task->tStep = FISHING_GOT_AWAY;
+    {
+        if (FISH_MINIGAME_ENABLED && PREVENT_FAILURE_IN_DOTS_GAME)
+            task->tStep = FISHING_MON_ON_HOOK;
+        else
+            task->tStep = FISHING_GOT_AWAY;
+    }
     else if (JOY_NEW(A_BUTTON))
+    {
         task->tStep = FISHING_CHECK_MORE_DOTS;
+    }
     return FALSE;
 }
 
@@ -2075,6 +2102,15 @@ static bool32 Fishing_StartEncounter(struct Task *task)
     {
         if (!IsTextPrinterActive(0))
         {
+            if (FISH_MINIGAME_ENABLED)
+            {
+                if (MINIGAME_ON_SEPARATE_SCREEN)
+                    ClearDialogWindowAndFrame(0, TRUE);
+
+                task->tFrameCounter++;
+                return FALSE;
+            }
+
             struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
 
             ObjectEventSetGraphicsId(playerObjEvent, task->tPlayerGfxId);
@@ -2091,13 +2127,76 @@ static bool32 Fishing_StartEncounter(struct Task *task)
 
     if (task->tFrameCounter != 0)
     {
-        gPlayerAvatar.preventStep = FALSE;
-        UnlockPlayerFieldControls();
-        FishingWildEncounter(task->tFishingRod);
-        RecordFishingAttemptForTV(TRUE);
-        DestroyTask(FindTaskIdByFunc(Task_Fishing));
+        if (FISH_MINIGAME_ENABLED)
+        {
+            FishingWildEncounter(task->tFishingRod);
+            if (MINIGAME_ON_SEPARATE_SCREEN)
+                BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+                
+            task->tStep++;
+            task->tFrameCounter = 0;
+        }
+        else
+        {
+            gPlayerAvatar.preventStep = FALSE;
+            UnlockPlayerFieldControls();
+            FishingWildEncounter(task->tFishingRod);
+            RecordFishingAttemptForTV(TRUE);
+            DestroyTask(FindTaskIdByFunc(Task_Fishing));
+        }
     }
     return FALSE;
+}
+
+static bool32 Fishing_StartMinigame(struct Task *task)
+{
+    if (MINIGAME_ON_SEPARATE_SCREEN == TRUE && !gPaletteFade.active)
+    {
+        if (task->tFrameCounter == 0)
+        {
+            ResetPlayerAvatar(task->tPlayerGfxId);
+            task->tFrameCounter++;
+        }
+
+        if (task->tFrameCounter == 1)
+        {
+            PlayBGM(MUS_TRICK_HOUSE);
+            SetMainCallback2(CB2_InitFishingMinigame);
+            gMain.savedCallback = CB2_ReturnToField;
+            task->tFrameCounter++;
+        }
+    }
+    else if (MINIGAME_ON_SEPARATE_SCREEN == FALSE)
+    {
+        task->data[0] = 0;
+        task->data[1] = 0;
+        task->data[2] = 0;
+        task->data[3] = 0;
+        task->data[4] = 0;
+        task->data[5] = 0;
+        task->data[6] = 0;
+        task->data[7] = 0;
+        task->data[8] = 0;
+        task->data[9] = 0;
+        task->data[10] = 0;
+        task->data[11] = 0;
+        task->data[12] = 0;
+        task->data[13] = 0;
+        task->func = Task_InitOWFishingMinigame;
+    }
+    return FALSE;
+}
+
+void ResetPlayerAvatar(u8 gfxId)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    ObjectEventSetGraphicsId(playerObjEvent, gfxId);
+    ObjectEventTurn(playerObjEvent, playerObjEvent->movementDirection);
+    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
+        SetSurfBlob_PlayerOffset(gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId, FALSE, 0);
+    gSprites[gPlayerAvatar.spriteId].x2 = 0;
+    gSprites[gPlayerAvatar.spriteId].y2 = 0;
 }
 
 static bool32 Fishing_NotEvenNibble(struct Task *task)
@@ -2113,17 +2212,22 @@ static bool32 Fishing_NotEvenNibble(struct Task *task)
 
 static bool32 Fishing_GotAway(struct Task *task)
 {
+    RunTextPrinters();
     gChainFishingDexNavStreak = 0;
     AlignFishingAnimationFrames();
+    if (task->tQuitMinigame == FALSE) // Don't show text boxes after quitting minigame on separate screen.
+    {
+        FillWindowPixelBuffer(0, PIXEL_FILL(1));
+        AddTextPrinterParameterized2(0, FONT_NORMAL, gText_ItGotAway, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
+    }
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingNoCatchDirectionAnimNum(GetPlayerFacingDirection()));
-    FillWindowPixelBuffer(0, PIXEL_FILL(1));
-    AddTextPrinterParameterized2(0, FONT_NORMAL, gText_ItGotAway, 1, 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
     task->tStep = FISHING_NO_MON;
     return TRUE;
 }
 
 static bool32 Fishing_NoMon(struct Task *task)
 {
+    RunTextPrinters();
     AlignFishingAnimationFrames();
     task->tStep = FISHING_PUT_ROD_AWAY;
     return FALSE;
@@ -2131,6 +2235,7 @@ static bool32 Fishing_NoMon(struct Task *task)
 
 static bool32 Fishing_PutRodAway(struct Task *task)
 {
+    RunTextPrinters();
     AlignFishingAnimationFrames();
     if (gSprites[gPlayerAvatar.spriteId].animEnded)
     {
@@ -2142,6 +2247,7 @@ static bool32 Fishing_PutRodAway(struct Task *task)
             SetSurfBlob_PlayerOffset(gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId, FALSE, 0);
         gSprites[gPlayerAvatar.spriteId].x2 = 0;
         gSprites[gPlayerAvatar.spriteId].y2 = 0;
+        //task->tFrameCounter = 0; // TODO: See if this is necessary
         task->tStep = FISHING_END_NO_MON;
     }
     return FALSE;
@@ -2152,6 +2258,18 @@ static bool32 Fishing_EndNoMon(struct Task *task)
     RunTextPrinters();
     if (!IsTextPrinterActive(0))
     {
+        if (FISH_MINIGAME_ENABLED)
+        {
+            if (!gPaletteFade.active) // If the screen has fully faded from black.
+            {
+                gObjectEvents[gPlayerAvatar.objectEventId].trackedByCamera = TRUE;
+                FreeMonIconPalettes();
+            }
+            else
+            {
+                return FALSE;
+            }
+        }
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         UnfreezeObjectEvents();
@@ -2364,7 +2482,7 @@ static bool32 IsMetatileLand(s16 x, s16 y, u32 collison)
 #undef tFrameCounter
 #undef tFishingRod
 
-static void AlignFishingAnimationFrames(void)
+void AlignFishingAnimationFrames(void)
 {
     struct Sprite *playerSprite = &gSprites[gPlayerAvatar.spriteId];
     u8 animCmdIndex;

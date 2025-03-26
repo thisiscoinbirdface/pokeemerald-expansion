@@ -69,6 +69,9 @@ bool8 ObjectMovingOnRockStairs(struct ObjectEvent *objectEvent, u8 direction);
 //sideways stairs
 u8 GetRightSideStairsDirection(u8 direction);
 u8 GetLeftSideStairsDirection(u8 direction);
+void AlignFishingAnimationFrames(void);
+void ResetPlayerAvatar(u8 gfxId);
+void Task_Fishing(u8);
 
 extern bool8 gRunToggleBtnSet;
 

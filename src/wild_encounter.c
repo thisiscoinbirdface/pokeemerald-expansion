@@ -3,6 +3,7 @@
 #include "pokemon.h"
 #include "metatile_behavior.h"
 #include "fieldmap.h"
+#include "fishing_game.h"
 #include "random.h"
 #include "field_player_avatar.h"
 #include "event_data.h"
@@ -51,7 +52,6 @@ enum {
 
 static u16 FeebasRandom(void);
 static void FeebasSeedRng(u16 seed);
-static void UpdateChainFishingStreak();
 static bool8 IsWildLevelAllowedByRepel(u8 level);
 static void ApplyFluteEncounterRateMod(u32 *encRate);
 static void ApplyCleanseTagEncounterRateMod(u32 *encRate);
@@ -873,7 +873,7 @@ u32 CalculateChainFishingShinyRolls(void)
     return (2 * min(gChainFishingDexNavStreak, FISHING_CHAIN_SHINY_STREAK_MAX));
 }
 
-static void UpdateChainFishingStreak()
+void UpdateChainFishingStreak()
 {
     if (!I_FISHING_CHAIN)
         return;
@@ -900,10 +900,13 @@ void FishingWildEncounter(u8 rod)
     {
         species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].fishingMonsInfo, rod);
     }
-
-    IncrementGameStat(GAME_STAT_FISHING_ENCOUNTERS);
+    
     SetPokemonAnglerSpecies(species);
-    BattleSetup_StartWildBattle();
+    if (!FISH_MINIGAME_ENABLED)
+    {
+        IncrementGameStat(GAME_STAT_FISHING_ENCOUNTERS);
+        BattleSetup_StartWildBattle();
+    }
 }
 
 u16 GetLocalWildMon(bool8 *isWaterMon)
