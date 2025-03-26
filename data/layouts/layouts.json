@@ -5300,6 +5300,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IveRiver_Caves/border.bin",
       "blockdata_filepath": "data/layouts/IveRiver_Caves/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERLILY_HOLLOW_GYM",
+      "name": "WinterlilyHollowGym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WinterlilyHollowGym/border.bin",
+      "blockdata_filepath": "data/layouts/WinterlilyHollowGym/map.bin"
     }
   ]
 }
