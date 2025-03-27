@@ -60,8 +60,10 @@ PellucaCity_EventScripts_Gabrielle_5:
 	setflag FLAG_PELLUCA_GABRIELLE_CHOICEBAND
 # 48 "data//maps/PellucaCity/scripts.pory"
 	applymovement LOCALID_GAB, PellucaCity_EventScripts_Gabrielle_Movement_0
+# 49 "data//maps/PellucaCity/scripts.pory"
+	delay 4
 PellucaCity_EventScripts_Gabrielle_1:
-# 50 "data//maps/PellucaCity/scripts.pory"
+# 51 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	return
 
@@ -85,109 +87,109 @@ PellucaCity_EventScripts_Gabrielle_6:
 
 
 PellucaCity_NPC1::
-# 76 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 77 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 78 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC1_Text_0
+	faceplayer
 # 79 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC1_Text_0
+# 80 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC2::
-# 84 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 85 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 86 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC2_Text_0
+	faceplayer
 # 87 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC2_Text_0
+# 88 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC3::
-# 92 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 93 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 94 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC3_Text_0
+	faceplayer
 # 95 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC3_Text_0
+# 96 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC4::
-# 100 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 101 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 102 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC4_Text_0
+	faceplayer
 # 103 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC4_Text_0
+# 104 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC5::
-# 108 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 109 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 110 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC5_Text_0
+	faceplayer
 # 111 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC5_Text_0
+# 112 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC6::
-# 116 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 117 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 118 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC6_Text_0
+	faceplayer
 # 119 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC6_Text_0
+# 120 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC7::
-# 124 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 125 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 126 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC7_Text_0
+	faceplayer
 # 127 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC7_Text_0
+# 128 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC8::
-# 132 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 133 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 134 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC8_Text_0
+	faceplayer
 # 135 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC8_Text_0
+# 136 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC9::
-# 140 "data//maps/PellucaCity/scripts.pory"
-	lockall
 # 141 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	lockall
 # 142 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC9_Text_0
+	faceplayer
 # 143 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC9_Text_0
+# 144 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
@@ -257,54 +259,54 @@ PellucaCity_EventScripts_Gabrielle_Text_7:
 	.string "GABRIELLE: I suppose you're going to\n"
 	.string "head to the MIRROH BASE CAMP from\l"
 	.string "here? Team Somber must've reached\l"
-	.string "there already. Best of luck, {PLAYER}$"
+	.string "there already. Best of luck, {PLAYER}.$"
 
 PellucaCity_NPC1_Text_0:
-# 78 "data//maps/PellucaCity/scripts.pory"
+# 79 "data//maps/PellucaCity/scripts.pory"
 	.string "Whee!!!$"
 
 PellucaCity_NPC2_Text_0:
-# 86 "data//maps/PellucaCity/scripts.pory"
+# 87 "data//maps/PellucaCity/scripts.pory"
 	.string "A tourist! Have you come to eat at the\n"
 	.string "PELLUCA RESTAURANT?$"
 
 PellucaCity_NPC3_Text_0:
-# 94 "data//maps/PellucaCity/scripts.pory"
+# 95 "data//maps/PellucaCity/scripts.pory"
 	.string "I would've trained up in MT MIRROH but I\n"
 	.string "can't go there without a CABLE CAR\l"
 	.string "PASS. So I'm jogging here instead.$"
 
 PellucaCity_NPC4_Text_0:
-# 102 "data//maps/PellucaCity/scripts.pory"
+# 103 "data//maps/PellucaCity/scripts.pory"
 	.string "This bridge is too small. It's nothing\n"
 	.string "like the cycling roads in other regions!$"
 
 PellucaCity_NPC5_Text_0:
-# 110 "data//maps/PellucaCity/scripts.pory"
+# 111 "data//maps/PellucaCity/scripts.pory"
 	.string "The Gym Leader of PELLUCA CITY had her\n"
 	.string "gym constructed on a separate island.\l"
 	.string "Talk about entitlement!$"
 
 PellucaCity_NPC6_Text_0:
-# 118 "data//maps/PellucaCity/scripts.pory"
+# 119 "data//maps/PellucaCity/scripts.pory"
 	.string "Are you headed to the MIRROH BASE\n"
 	.string "CAMP? You'll have to take the cable car.\l"
 	.string "It's just past the Pokemart. Wear\l"
 	.string "something warm!$"
 
 PellucaCity_NPC7_Text_0:
-# 126 "data//maps/PellucaCity/scripts.pory"
+# 127 "data//maps/PellucaCity/scripts.pory"
 	.string "There are no free tables at the\n"
 	.string "restaurant! I should've made a\l"
 	.string "reservation.$"
 
 PellucaCity_NPC8_Text_0:
-# 134 "data//maps/PellucaCity/scripts.pory"
+# 135 "data//maps/PellucaCity/scripts.pory"
 	.string "What's even the point of fishing if the\n"
 	.string "SHARPEDO's going to scare all the fish\l"
 	.string "away?$"
 
 PellucaCity_NPC9_Text_0:
-# 142 "data//maps/PellucaCity/scripts.pory"
+# 143 "data//maps/PellucaCity/scripts.pory"
 	.string "This is the PELLUCA FISHERY! But it's\n"
 	.string "closed due to the SHARPEDO attacks.$"

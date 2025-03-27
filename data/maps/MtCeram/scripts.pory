@@ -405,6 +405,7 @@ script MtCeram_EventScript_Gabrielle{
     msgbox(format("GABRIELLE: Don't look at me like that! You don't know what its like..."))
     release
     applymovement(5, moves(face_left))
+    waitmovement(0)
     releaseall
 }
 
