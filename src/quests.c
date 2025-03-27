@@ -1823,7 +1823,7 @@ void UpdateQuestFlavorText(s32 questId)
 }
 void PrintQuestFlavorText(s32 questId)
 {
-	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, 5, 5, 5, 0, 0,
+	QuestMenu_AddTextPrinterParameterized(1, 2, gStringVar3, 7, 5, 6, 0, 0,
 	                                      4);	//I CHANGED xloc from 40 to 5 (3rd arg) and y-loc from 19 to 5 (5th arg)
 }
 

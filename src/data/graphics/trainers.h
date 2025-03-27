@@ -304,7 +304,7 @@ const u32 gTrainerFrontPic_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_tra
 const u32 gTrainerPalette_SomberGruntM[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
 const u32 gTrainerFrontPic_SomberGruntDuo[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_duo.4bpp.lz");
-const u32 gTrainerFrontPic_SomberGruntDuo[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
+const u32 gTrainerPalette_SomberGruntDuo[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
 const u32 gTrainerFrontPic_SomberAdminMelea[] = INCBIN_U32("graphics/trainers/my_trainers/somber_admin_melea.4bpp.lz");
 const u32 gTrainerPalette_SomberAdminMelea[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");

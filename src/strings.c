@@ -1391,7 +1391,7 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can. It's time to head out.");
-const u8 gText_SideQuestDoneDesc_2[] = _("I did reach the dreamstone...but it took me to\nsome unknown place along with GABRIELLE.\nWhat happened?");
+const u8 gText_SideQuestDoneDesc_2[] = _("I did reach the dreamstone...but it took me\nto some unknown place along with GABRIELLE.\nWhat happened?");
 const u8 gText_SideQuestDoneDesc_3[] = _("Azurill has recovered and is happy again!");
 const u8 gText_SideQuestDoneDesc_4[] = _("I got Breech's stone...and a new companion!");
 const u8 gText_SideQuestDoneDesc_5[] = _("SKITTY is reunited with her trainer!");
@@ -1466,7 +1466,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest1_Name2[] = _("Lab Supplies");
     const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
 
-    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! \nI need to go to the \nTenebris Lab.\ntext!y");
+    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTenebris Lab with my WELCOME PACKAGE.\nI shouldn't be late at any cost!");
     const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
     const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken \nthe supplies! I need to tell \nAssistant Professor Rue.");
 

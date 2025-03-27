@@ -3179,7 +3179,7 @@ F_TRAINER_FEMALE |
 #line 1335
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1336
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1337
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -3211,7 +3211,7 @@ F_TRAINER_FEMALE |
 #line 1348
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1349
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1350
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3254,7 +3254,7 @@ F_TRAINER_FEMALE |
 #line 1366
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1367
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1368
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3297,7 +3297,7 @@ F_TRAINER_FEMALE |
 #line 1385
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1386
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1387
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
@@ -3351,7 +3351,7 @@ F_TRAINER_FEMALE |
 #line 1406
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1407
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1408
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3394,7 +3394,7 @@ F_TRAINER_FEMALE |
 #line 1423
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1424
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1425
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3437,7 +3437,7 @@ F_TRAINER_FEMALE |
 #line 1440
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1441
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1442
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3480,7 +3480,7 @@ F_TRAINER_FEMALE |
 #line 1459
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1460
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1461
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -3523,7 +3523,7 @@ F_TRAINER_FEMALE |
 #line 1476
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1477
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1478
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,

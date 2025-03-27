@@ -24,6 +24,8 @@ Route2_Caves_EventScript_ClefairyBattle::
 	lockall
 # 15 "data//maps/Route2_Caves/scripts.pory"
 	setflag FLAG_BATTLE_NO_RUNNING_CATCHING
+# 16 "data//maps/Route2_Caves/scripts.pory"
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
 # 17 "data//maps/Route2_Caves/scripts.pory"
 	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_0
 # 18 "data//maps/Route2_Caves/scripts.pory"

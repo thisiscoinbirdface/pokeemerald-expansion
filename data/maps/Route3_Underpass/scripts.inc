@@ -43,6 +43,8 @@ Route3_Underpass_Trigger_EvilBattle::
 	goto_if_set FLAG_ROUTE3_UNDERPASS_EVILTEAM, Route3_Underpass_Trigger_EvilBattle_2
 # 32 "data//maps/Route3_Underpass/scripts.pory"
 	lockall
+# 33 "data//maps/Route3_Underpass/scripts.pory"
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 35 "data//maps/Route3_Underpass/scripts.pory"
 	applymovement 2, Route3_Underpass_Trigger_EvilBattle_Movement_0
 # 36 "data//maps/Route3_Underpass/scripts.pory"
@@ -229,7 +231,7 @@ Route3_Underpass_Nurse_Text_0:
 
 Route3_Underpass_NPC1_Text_0:
 # 14 "data//maps/Route3_Underpass/scripts.pory"
-	.string "A hiker with a Clefairy ran past here a\n"
+	.string "A hiker with a CLEFAIRY ran past here a\n"
 	.string "while ago. He was being chased by some\l"
 	.string "weirdo in a dark outfit. The things you\l"
 	.string "see while on the road...$"

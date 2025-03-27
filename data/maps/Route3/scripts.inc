@@ -68,7 +68,8 @@ Route3_NPC2::
 
 Route3_TrainerBattle_Kim_Text_0:
 # 5 "data//maps/Route3/scripts.pory"
-	.string "I'm much tougher than I look.\pI'm from the hills after all!$"
+	.string "I'm much tougher than I look. I'm from\n"
+	.string "the hills after all!$"
 
 Route3_TrainerBattle_Kim_Text_1:
 # 5 "data//maps/Route3/scripts.pory"
@@ -81,7 +82,9 @@ Route3_TrainerBattle_Kim_Text_2:
 
 Route3_TrainerBattle_Ronnie_Text_0:
 # 14 "data//maps/Route3/scripts.pory"
-	.string "I'm on my way to GASTREE CITY to\nchallenge the {PKMN} Gym there.\pLet me practice with you!$"
+	.string "I'm on my way to GASTREE CITY to\n"
+	.string "challenge the {PKMN} Gym there. Let me\l"
+	.string "practice with you!$"
 
 Route3_TrainerBattle_Ronnie_Text_1:
 # 14 "data//maps/Route3/scripts.pory"
@@ -94,7 +97,8 @@ Route3_TrainerBattle_Ronnie_Text_2:
 
 Route3_TrainerBattle_Jana_Text_0:
 # 23 "data//maps/Route3/scripts.pory"
-	.string "I'm a {PKMN} Breeder! I spend my time\ptraining my {PKMN} with love and care.$"
+	.string "I'm a {PKMN} Breeder! I spend my time\n"
+	.string "training my {PKMN} with love and care.$"
 
 Route3_TrainerBattle_Jana_Text_1:
 # 23 "data//maps/Route3/scripts.pory"
@@ -106,7 +110,8 @@ Route3_TrainerBattle_Jana_Text_2:
 
 Route3_TrainerBattle_Chara_Text_0:
 # 32 "data//maps/Route3/scripts.pory"
-	.string "Whew! Route 3 was long, but\pI can do one last battle!$"
+	.string "Whew! Route 3 was long, but I can do one\n"
+	.string "last battle!$"
 
 Route3_TrainerBattle_Chara_Text_1:
 # 32 "data//maps/Route3/scripts.pory"

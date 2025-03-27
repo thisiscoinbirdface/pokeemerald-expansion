@@ -50,25 +50,31 @@ FennilahlTown_EventScript_HikerTunnel::
 # 33 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_EventScript_HikerTunnel_Text_2
 # 34 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_EventScript_HikerTunnel_Text_3
+	release
 # 35 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_EventScript_HikerTunnel_Text_4
+	delay 16
 # 36 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_EventScript_HikerTunnel_Text_5
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
 # 37 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 5, FennilahlTown_EventScript_HikerTunnel_Movement_0
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_3
 # 38 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_4
 # 39 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 5
+	msgbox FennilahlTown_EventScript_HikerTunnel_Text_5
 # 40 "data//maps/FennilahlTown/scripts.pory"
-	setflag FLAG_FENNILAHL_HIKER_BLOCK
+	applymovement 5, FennilahlTown_EventScript_HikerTunnel_Movement_0
 # 41 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_STRANGE_ROCK
+	waitmovement 0
+# 42 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 5
+# 43 "data//maps/FennilahlTown/scripts.pory"
+	setflag FLAG_FENNILAHL_HIKER_BLOCK
 # 44 "data//maps/FennilahlTown/scripts.pory"
+	removeitem ITEM_STRANGE_ROCK
+# 47 "data//maps/FennilahlTown/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_FENNILAHL_HIKER
 FennilahlTown_EventScript_HikerTunnel_1:
-# 46 "data//maps/FennilahlTown/scripts.pory"
+# 49 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 
@@ -81,27 +87,27 @@ FennilahlTown_EventScript_HikerTunnel_2:
 
 
 FennilahlTown_Sign_Entrance::
-# 51 "data//maps/FennilahlTown/scripts.pory"
+# 54 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Entrance_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route2::
-# 56 "data//maps/FennilahlTown/scripts.pory"
+# 59 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route2_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route3::
-# 61 "data//maps/FennilahlTown/scripts.pory"
+# 64 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route3_Text_0, MSGBOX_SIGN
 	end
 
 
-# 37 "data//maps/FennilahlTown/scripts.pory"
+# 40 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_EventScript_HikerTunnel_Movement_0:
-# 37 "data//maps/FennilahlTown/scripts.pory"
-	face_up
+# 40 "data//maps/FennilahlTown/scripts.pory"
+	walk_up
 	step_end
 
 FennilahlTown_EventScript_MartEmployeeRoadBlock_Text_0:
@@ -129,8 +135,8 @@ FennilahlTown_EventScript_HikerTunnel_Text_0:
 	.string "south of town, but a small PINK {PKMN} took\l"
 	.string "it and ran away! And I don't have any\l"
 	.string "{PKMN} to help me get it back! I don't want\l"
-	.string "to battle - I can't deal with conflict. I\l"
-	.string "don't know what to do!$"
+	.string "to battle - I can't deal with conflict.\n"
+	.string "I don't know what to do!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_1:
 # 32 "data//maps/FennilahlTown/scripts.pory"
@@ -139,42 +145,42 @@ FennilahlTown_EventScript_HikerTunnel_Text_1:
 
 FennilahlTown_EventScript_HikerTunnel_Text_2:
 # 33 "data//maps/FennilahlTown/scripts.pory"
-	.string "A Clefairy was keeping it? This is the\n"
-	.string "Clefairy? And it's been following you\l"
+	.string "A CLEFAIRY was keeping it? This is the\n"
+	.string "CLEFAIRY? And it's been following you\l"
 	.string "around because it can't let go of the\l"
 	.string "rock?$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_3:
-# 34 "data//maps/FennilahlTown/scripts.pory"
-	.string "Clefairy: clee!!!$"
+# 37 "data//maps/FennilahlTown/scripts.pory"
+	.string "CLEFAIRY: clee!!!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_4:
-# 35 "data//maps/FennilahlTown/scripts.pory"
-	.string "Ouch! Clefairy stop! Haha! Alright\n"
+# 38 "data//maps/FennilahlTown/scripts.pory"
+	.string "Ouch! CLEFAIRY stop! Haha! Alright\n"
 	.string "alright, you come along with me then.\l"
 	.string "But you're not my {PKMN} okay? I don't like\l"
 	.string "battling. You'll be my hiking partner!$"
 
 FennilahlTown_EventScript_HikerTunnel_Text_5:
-# 36 "data//maps/FennilahlTown/scripts.pory"
+# 39 "data//maps/FennilahlTown/scripts.pory"
 	.string "Thank you trainer! My name is Breech.\n"
 	.string "I'm just a simple man who loves\l"
-	.string "collecting rocks. Even with Clefairy by\l"
-	.string "my side, I won't battle. Clefairy and I\l"
+	.string "collecting rocks. Even with CLEFAIRY by\l"
+	.string "my side, I won't battle. CLEFAIRY and I\l"
 	.string "are heading off to explore the\l"
 	.string "mountains now. See you again soon!$"
 
 FennilahlTown_Sign_Entrance_Text_0:
-# 51 "data//maps/FennilahlTown/scripts.pory"
+# 54 "data//maps/FennilahlTown/scripts.pory"
 	.string "FENNILAHL TOWN\n"
 	.string "Connecting Mt. Ceram and Vine River.$"
 
 FennilahlTown_Sign_Route2_Text_0:
-# 56 "data//maps/FennilahlTown/scripts.pory"
+# 59 "data//maps/FennilahlTown/scripts.pory"
 	.string "{DOWN_ARROW}ROUTE 2\n"
 	.string "Connecting to Vine River.$"
 
 FennilahlTown_Sign_Route3_Text_0:
-# 61 "data//maps/FennilahlTown/scripts.pory"
+# 64 "data//maps/FennilahlTown/scripts.pory"
 	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
 	.string "To Route 3 and GASTREE CITY.$"

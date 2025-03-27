@@ -83,12 +83,12 @@ Route1_TrainerBattle_Jose_Text_2:
 
 Route1_TrainerBattle_Sana_Text_0:
 # 25 "data//maps/Route1/scripts.pory"
-	.string "I love flying-time {PKMN}.\p"
+	.string "I love FLYING-type {PKMN}.\p"
 	.string "Let me show you my favourite!$"
 
 Route1_TrainerBattle_Sana_Text_1:
 # 25 "data//maps/Route1/scripts.pory"
-	.string "My flying type {PKMN} lost!$"
+	.string "My FLYING type {PKMN} lost!$"
 
 Route1_TrainerBattle_Sana_Text_2:
 # 26 "data//maps/Route1/scripts.pory"
