@@ -20,8 +20,13 @@
     },
     {
       "map": "MAP_ROUTE7",
-      "offset": -8,
+      "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_IVY_RIVER_MAIN",
+      "offset": -18,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -170,8 +175,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 46,
-      "y": 12,
+      "x": 65,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_LEFT_DOWN_UP",
       "movement_range_x": 8,
@@ -183,10 +188,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 41,
-      "y": 37,
+      "x": 19,
+      "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
