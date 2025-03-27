@@ -61,7 +61,7 @@ PellucaCity_EventScripts_Gabrielle_5:
 # 48 "data//maps/PellucaCity/scripts.pory"
 	applymovement LOCALID_GAB, PellucaCity_EventScripts_Gabrielle_Movement_0
 # 49 "data//maps/PellucaCity/scripts.pory"
-	delay 4
+	waitmovement 0
 PellucaCity_EventScripts_Gabrielle_1:
 # 51 "data//maps/PellucaCity/scripts.pory"
 	releaseall

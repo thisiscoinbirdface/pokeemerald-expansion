@@ -501,6 +501,8 @@ MtCeram_EventScript_Gabrielle::
 # 407 "data//maps/MtCeram/scripts.pory"
 	applymovement 5, MtCeram_EventScript_Eavesdrop_Movement_4
 # 408 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 409 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	return
 
