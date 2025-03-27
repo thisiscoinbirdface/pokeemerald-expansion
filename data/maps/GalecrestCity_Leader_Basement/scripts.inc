@@ -12,17 +12,17 @@ GalecrestCity_Leader_Basement_Litwick_OnTransition::
 
 GalecrestCity_Leader_Basement_Litwick::
 # 11 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
-	animateflash 5
-# 12 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
-	delay 20
-# 13 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
-	setwildbattle SPECIES_LITWICK, 20
-# 14 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
-	dowildbattle
-# 15 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
-	removeobject 1
-# 16 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
 	setflag FLAG_GALECREST_LITWICK
+# 12 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
+	animateflash 5
+# 13 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
+	delay 20
+# 14 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
+	setwildbattle SPECIES_LITWICK, 20
+# 15 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
+	dowildbattle
+# 16 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
+	removeobject 1
 # 17 "data//maps/GalecrestCity_Leader_Basement/scripts.pory"
 	releaseall
 	end

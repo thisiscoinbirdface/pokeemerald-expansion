@@ -8,12 +8,12 @@ script GalecrestCity_Leader_Basement_Litwick_OnTransition{
 }
 
 script GalecrestCity_Leader_Basement_Litwick{
+    setflag(FLAG_GALECREST_LITWICK)
     animateflash(5)
     delay(20)  
     setwildbattle(SPECIES_LITWICK, 20)
     dowildbattle
     removeobject(1)
-    setflag(FLAG_GALECREST_LITWICK)
     releaseall
     end
 }
