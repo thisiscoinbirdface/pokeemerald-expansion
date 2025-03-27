@@ -1862,3 +1862,22 @@ const u16 gTilesetPalettes_SilversunPrimary[][16] =
 };
 
 const u32 gTilesetTiles_SilversunPrimary[] = INCBIN_U32("data/tilesets/primary/silversun_primary/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Vilethorn[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/vilethorn/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Vilethorn[] = INCBIN_U32("data/tilesets/primary/vilethorn/tiles.4bpp.lz");
