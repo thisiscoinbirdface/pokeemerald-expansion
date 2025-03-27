@@ -34,10 +34,10 @@ script FennilahlTown_EventScript_HikerTunnel {
 
 script Fennilahl_Breech_StartQuest{
 
-    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\nI don't know what to do!\nWill you help me out?"), MSGBOX_YESNO)
+    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me out?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back for me."))
+        msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {
@@ -58,7 +58,8 @@ script Fennilahl_Breech_QuestInProgress{
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
         msgbox(format("CLEFAIRY: clee!!!"))
         msgbox(format("Ouch! CLEFAIRY stop! Haha! Alright alright, you come along with me then. But you're not my {PKMN} okay? I don't like battling. You'll be my hiking partner!"))        
-        msgbox(format("Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with CLEFAIRY by my side, I won't battle. CLEFAIRY and I are heading off to explore the mountains now. See you again soon!"))
+        msgbox(format("Thank you trainer! My name is BREECH. I'm just a simple man who loves collecting rocks. Even with CLEFAIRY by my side, I won't battle. CLEFAIRY and I are heading off to explore the mountains now. See you again soon!"))
+        release
         applymovement(5, moves(walk_up))
         waitmovement(0)
         removeobject(5)

@@ -27,7 +27,7 @@ script Route1_House_QuestInProgress{
             release
             applymovement(1, moves(face_right))
             waitmovement(0)   
-            msgbox(format("Here sweetheart, this kind trainer has brought you a PECHA BERRY.\pAZURILL: zuuu!!!!!\pIt seems to have revived"))
+            msgbox(format("Here sweetheart, this kind trainer has brought you a PECHA BERRY.\pAZURILL: zuuu!!!!!\nIt seems to have revived!"))
             release
             faceplayer
             msgbox(format("Here child, you must have this. The least I can do."))
@@ -41,6 +41,7 @@ script Route1_House_QuestInProgress{
     }
 
     releaseall
+    end
 }
 
 script Route1_House_StartQuest{

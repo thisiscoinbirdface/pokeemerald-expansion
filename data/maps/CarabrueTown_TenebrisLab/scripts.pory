@@ -112,7 +112,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         
         applymovement(3, moves(jump_in_place_down))
         waitmovement(0)
-        msgbox(format("RUE: WHAT?! Professor Tenebris took them?\n...\nRUE: Sigh...at any rate, thanks for telling me, {PLAYER}."))
+        msgbox(format("RUE: WHAT?! Professor Tenebris took them?\p...\pRUE: Sigh...at any rate, thanks for telling me, {PLAYER}."))
         release
 
             //Complete previous quest
@@ -135,7 +135,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
         waitmovement(0)
-        msgbox(format("RUE: This right here is our lab's pride and joy - the Dreamalyser. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
+        msgbox(format("RUE: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
         release
 
         applymovement(3, moves(face_left))
@@ -148,7 +148,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion {PKMN}...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
+        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion {PKMN}...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the DREAMALYSER for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
         msgbox(format("RUE: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
         msgbox(format("DETECTIVE: If we could get our hands on one of the other dreamstones, we might be able to understand why the Professor vanished."))
         msgbox(format("RUE: Maybe..."))
@@ -168,7 +168,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         msgbox(format("RUE: Whatever you need to do!"))
         msgbox(format("DETECTIVE: We'll do our best, Rue. But we're detectives - we can uncover his tracks, but we can't unravel his mind. We'll need some help from one of you."))
         msgbox(format("RUE: What do you plan to do?"))
-        msgbox(format("DETECTIVE: A two-pronged strategy - while we track the Professor, one of you should find a dreamstone for us to examine for clues."))
+        msgbox(format("DETECTIVE: A two-pronged strategy. While we track the Professor, one of you should find a dreamstone for us to examine for clues."))
         msgbox(format("RUE: But none of us can leave the lab! There's too much work."))
         msgbox(format("DETECTIVE: Well...what about this kid?"))
         msgbox(format("RUE: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
