@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
       "x": 8,
       "y": 27,
       "elevation": 0,
@@ -130,7 +130,7 @@
       "flag": "FLAG_CERAMBASECAMP_EVIL_BATTLE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CYNDAQUIL_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CYNDAQUIL)",
       "x": 8,
       "y": 26,
       "elevation": 0,

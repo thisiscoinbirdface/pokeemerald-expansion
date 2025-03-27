@@ -21,18 +21,13 @@ script Route4_EventScript_EvilTeam{
     msgbox(format("You don't want to budge? Grr...alright fine, we're not construction workers. We're Team Somber! And now we're going to teach you a lesson!"))
     release
 
-    //Yes/no for fighting
-
-
-
     //Trainer double battle
     trainerbattle_no_intro(
         TRAINER_ROUTE4_GRUNTS, 
         format("Stupid kid!")    
     )
-    if (var(VAR_RESULT) == 1){
-        goto(Route4_EventScript_EvilTeamDefeated)
-    }
+
+    goto(Route4_EventScript_EvilTeamDefeated)
     releaseall
 }
 
@@ -44,13 +39,15 @@ script Route4_EventScript_EvilTeamDefeated{
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
     waitmovement(0)
     msgbox(format("I can't believe we lost to some stupid kid..."))
+    release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_left))
     waitmovement(0)
     msgbox(format("We gotta go tell the boss at the CERAM BASE CAMP about this!"))
+    release
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down)) 
     waitmovement(0)  
-    msgbox(format("We'll remember this kid!"))
+    msgbox(format("We'll remember this, kid!"))
     release
     
     //End the sequence
@@ -68,28 +65,28 @@ script Route4_EventScript_EvilTeamDefeated{
 
 
 script Route4_TrainerBattle_Raha {
-    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive!\pThere's no way you can beat me!"), format("But Father spent so much money!"))
+    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! There's no way you can beat me!"), format("But Father spent so much money!"))
     msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Cammy {
-    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let\pthis old lady teach you some new tricks."), format("Well fought!"))
+    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let this old lady teach you some new tricks."), format("Well fought!"))
     msgbox(format("You were the teacher and I was the student! Haha!"))
     release
     end
 }
 
 script Route4_TrainerBattle_Sona {
-    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different\pareas. Mine were caught on Route 3!"), format("Oh no!"))
+    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different areas. I caught mine right here!"), format("Oh no!"))
     msgbox(format("No matter where they're from, all {PKMN} need love and care."))
     release
     end
 }
 
 script Route4_TrainerBattle_Jenny {
-    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My Pancham and I train here every morning.\pWe want to become the strongest!"), format("We need to train harder!"))
+    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My PANCHAM and I train here every morning. We want to become the strongest!"), format("We need to train harder!"))
     msgbox(format("Pancham and I will become {PKMN} Champions one day!"))
     release
     end
@@ -97,23 +94,34 @@ script Route4_TrainerBattle_Jenny {
 
     //The Kids Trio
     script Route4_TrainerBattle_Kid1 {
-        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there,\ndid you?\pYou entered our secret hideout\nand now you're going to pay!"), format("Waah!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout and now you're going to pay!"), format("Waah!"))
         msgbox(format("It's summer break so we play here all day until the sun goes down!"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid2 {
-        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far!\nBut I won't let you lay your\nhands on the boss!\pI'm going to stop you right now!"), format("Boss! Help!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
         msgbox(format("Our secret hideout is really cool, don't you think?"))
         release
         end
     }
 
     script Route4_TrainerBattle_Kid3 {
-        trainerbattle_single(TRAINER_ROUTE4_KID3, format("Ahem...welcome to our secret hideout,\nold one. You may look down upon us\nfor being so small, but let me\ntell you something...\pEven us kids are strong!"), format("My {PKMN}! Adults are lame!"))
-        msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
-        release
+        lockall
+        faceplayer
+
+        if (flag(FLAG_ROUTE4_KIDGANG)){
+            msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
+        } else {
+            msgbox(format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something...Even us kids are strong!"))
+            trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My {PKMN}! Adults are lame!"))
+
+            msgbox(format("You have proved your worth, old one. You may now accept this reward."))
+            giveitem(ITEM_POKE_DOLL) 
+            msgbox(format("...when will I go back home? Never! I hate my family! They only care about my big brother. I wish...I wish to be outside all day!"))  
+        }
+        releaseall
         end
     }
 
@@ -159,10 +167,22 @@ script Route4_NPC_B{
 }
 
 //Give item
-script Route4_NPC_C{
+script Route4_NPC_Cook{
     lockall
     faceplayer
-    msgbox(format("I heard there were FINNEON and GOLDEEN in this lake, but I chose the wrong fishing spot...I can't hook a single {PKMN}!"))
+    msgbox(format("Hello young trainer! I'm a cook from the PELLUCA RESTAURANT, all the way on the other side of CORMORIA! Why am I here, you ask? It's because I travel all across CORMORIA to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around MT CERAM. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        checkitem(ITEM_RAWST_BERRY)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_RAWST_BERRY)
+            msgbox(format("{PLAYER} gave the cook a RAWST BERRY"), MSGBOX_SIGN)
+            msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange, please take this."))
+            release
+            giveitem(ITEM_SHELL_BELL)
+            msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
+            setflag(FLAG_ROUTE4_COOK)
+        }
+    }
     releaseall
 }
 
@@ -170,7 +190,7 @@ script Route4_NPC_C{
 script Route4_NPC_D{
     lockall
     faceplayer
-    msgbox(format("There are some thugs blocking the path to Mt. Ceram Base Camp! They remind me of my younger days...I used to be in an evil team in the Hoenn region."))
+    msgbox(format("There are some thugs blocking the path to CERAM BASE CAMP! They remind me of my younger days...I used to be in an evil team in the HOENN region."))
     releaseall
 }
 

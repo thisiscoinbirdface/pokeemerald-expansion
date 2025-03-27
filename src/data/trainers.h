@@ -852,9 +852,9 @@ F_TRAINER_FEMALE |
 #line 409
         .trainerName = _("Sona"),
 #line 410
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
+        .trainerClass = TRAINER_CLASS_LASS,
 #line 411
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
 #line 412
 F_TRAINER_FEMALE | 
@@ -869,7 +869,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 417
-            .species = SPECIES_SPEAROW,
+            .species = SPECIES_BUNEARY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 419
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -880,7 +880,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 421
-            .species = SPECIES_DEWPIDER,
+            .species = SPECIES_CHIKORITA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 423
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

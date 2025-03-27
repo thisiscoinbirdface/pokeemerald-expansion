@@ -280,6 +280,20 @@ GastreeCity_NPC_Skitty::
 	return
 
 
+GastreeCity_Polteageist::
+# 216 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 217 "data//maps/GastreeCity/scripts.pory"
+	playmoncry SPECIES_POLTEAGEIST, CRY_MODE_NORMAL
+# 218 "data//maps/GastreeCity/scripts.pory"
+	faceplayer
+# 219 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_Polteageist_Text_0
+# 220 "data//maps/GastreeCity/scripts.pory"
+	releaseall
+	end
+
+
 # 31 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_KohlaBattle_Trigger_Movement_0:
 # 31 "data//maps/GastreeCity/scripts.pory"
@@ -447,6 +461,11 @@ GastreeCity_EventScripts_SkittyTrigger_Text_2:
 GastreeCity_NPC_Skitty_Text_0:
 # 210 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY: skee~~$"
+
+GastreeCity_Polteageist_Text_0:
+# 219 "data//maps/GastreeCity/scripts.pory"
+	.string "POLTEAGEIST is hard at work for the\n"
+	.string "teahouse!$"
 
 GastreeCity_KohlaIntro1::
 # 42 "data//maps/GastreeCity/scripts.pory"

@@ -272,6 +272,14 @@ script CeramBaseCamp_Main_NPC2{
     releaseall
 }
 
+script CeramBaseCamp_Main_Smeargle{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
+    releaseall
+    end
+}
+
 ///QUEST
 script CeramBaseCamp_Main_NPC3{
     lockall

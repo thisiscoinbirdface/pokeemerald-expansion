@@ -212,7 +212,14 @@ script GastreeCity_NPC9{
     }
 
 
-
+script GastreeCity_Polteageist{
+    lockall
+    playmoncry(SPECIES_POLTEAGEIST, CRY_MODE_NORMAL)
+    faceplayer
+    msgbox(format("POLTEAGEIST is hard at work for the teahouse!"))
+    releaseall
+    end
+}
 
 
 

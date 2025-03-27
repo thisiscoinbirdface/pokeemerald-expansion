@@ -407,18 +407,18 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_SONA ===
 Name: Sona
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Spearow
+Buneary
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dewpider
+Chikorita
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

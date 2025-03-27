@@ -255,7 +255,7 @@ CeramBaseCamp_Excadrill_2:
 
 CeramBaseCamp_Excadrill_5:
 # 192 "data//maps/CeramBaseCamp/scripts.pory"
-	playmoncry SPECIES_DRILBUR, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER
 # 193 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 40
 # 194 "data//maps/CeramBaseCamp/scripts.pory"
@@ -263,7 +263,7 @@ CeramBaseCamp_Excadrill_5:
 # 195 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_2
 # 196 "data//maps/CeramBaseCamp/scripts.pory"
-	setwildbattle SPECIES_EXCADRILL, 10
+	setwildbattle SPECIES_EXCADRILL, 30
 # 197 "data//maps/CeramBaseCamp/scripts.pory"
 	dowildbattle
 # 200 "data//maps/CeramBaseCamp/scripts.pory"
@@ -362,7 +362,8 @@ CeramBaseCamp_NPC2_Text_0:
 	.string "CITY. Old equipment from back then is\l"
 	.string "left here. I remember a DRILBUR made\l"
 	.string "its home inside one of these machines\l"
-	.string "and refused to leave! Haha!$"
+	.string "and refused to leave! Haha! I wonder if\l"
+	.string "it's still there.$"
 
 CeramBaseCamp_NPC3_Text_0:
 # 61 "data//maps/CeramBaseCamp/scripts.pory"
@@ -457,5 +458,5 @@ CeramBaseCamp_Excadrill_Text_2:
 
 CeramBaseCamp_Excadrill_Text_3:
 # 208 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "The DRILBUR retreats back into its\n"
+	.string "The EXCADRILL retreats back into its\n"
 	.string "home. Better not disturb it again!$"
