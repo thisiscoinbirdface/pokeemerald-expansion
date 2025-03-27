@@ -80,6 +80,7 @@
     "GalecrestCity",
     "GalecrestCity_HousesPoor",
     "GalecrestCity_HousesRich",
+    "GalecrestCity_Leader_Basement",
     "GalecrestCity_DetectiveAcademy",
     "GalecrestCity_PokemonCenter",
     "GalecrestCity_Pokemart",
@@ -95,8 +96,7 @@
     "SilversunCity_PokemonCenter",
     "SilversunCity_Sewers",
     "SilversunCity_SomberHQ",
-    "SilversunCityGym",
-    "GalecrestCity_Leader_Basement"
+    "SilversunCityGym"
   ],
   "gMapGroup_Phase3": [
     "HoyaRiverNorth",
