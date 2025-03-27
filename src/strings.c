@@ -1321,7 +1321,7 @@ const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbec
 
 //// side quest data
 //generic strings
-const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nis now {STR_VAR_2}.");
+const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nis now {STR_VAR_2}!");
 const u8 gText_QuestComplete[] =_("complete");
 const u8 gText_QuestActive[] =_("active");
 
@@ -1358,16 +1358,16 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("From today, I'm going to be a LAB ASSISTANT at\nthe TENEBRIS LABORATORY!");
-const u8 gText_SideQuestDesc_2[] = _("I need to solve the mystery of the dreamstones.");
+const u8 gText_SideQuestDesc_1[] = _("From today, I'm going to be a LAB ASSISTANT\nat the TENEBRIS LABORATORY!");
+const u8 gText_SideQuestDesc_2[] = _("I need to solve the mystery of the\ndreamstones around CORMORIA.");
 const u8 gText_SideQuestDesc_3[] = _("My path towards becoming a fully-fledged\n{PKMN} Ranger!");
-const u8 gText_SideQuestDesc_4[] = _("The AZURILL in the house on ROUTE 1 is sick from\nfood poisoning and needs a PECHA BERRY.");
-const u8 gText_SideQuestDesc_5[] = _("A conflict-averse hiker in FENNILAHL TOWN has\nlost a STRANGE STONE in ROUTE 2. Apparently\na {PKMN} stole it from him?");
+const u8 gText_SideQuestDesc_4[] = _("The AZURILL in the house on ROUTE 1 is sick\nfrom food poisoning.\nShe needs a PECHA BERRY.");
+const u8 gText_SideQuestDesc_5[] = _("A conflict-averse hiker in FENNILAHL TOWN\nhas lost a STRANGE STONE in ROUTE 2.\nApparently a {PKMN} stole it!");
 const u8 gText_SideQuestDesc_6[] = _("Someone's SKITTY in GASTREE CITY has gone\nmissing! I wonder where she could've gone...");
-const u8 gText_SideQuestDesc_7[] = _("The lady at GASTREE TEAHOUSE wants to create a\nmodern tea blend. She needs 1 REVIVAL HERB,\n1 ENERGY POWDER and 1 SHOAL SALT.");
-const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his CYNDAQUIL\nto learn the move SUNNY DAY. Where can I\nget the TM for SUNNY DAY?");
-const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her pearls\nstolen! I'd better find the robber fast!\nMaybe she'll give me a huge reward...");
-const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in SILVERSUN\nCITY wants BLACK SLUDGE to create the\nperfect shade of black paint.");
+const u8 gText_SideQuestDesc_7[] = _("The lady at GASTREE TEAHOUSE wants to create\na modern tea blend. She needs 1 REVIVAL HERB,\n1 ENERGY POWDER and 1 SHOAL SALT.");
+const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his\nCYNDAQUIL to learn the move SUNNY DAY. Where\ncan I get the TM for SUNNY DAY?");
+const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her\npearls stolen! I'd better find the robber.\nMaybe I'll get a huge reward...");
+const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in\nSILVERSUN CITY wants BLACK SLUDGE to create\nthe perfect shade of black paint.");
 const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
 const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\nare broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
 const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");

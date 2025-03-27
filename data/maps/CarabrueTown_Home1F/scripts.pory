@@ -41,7 +41,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
 
     applymovement(1, moves(jump_in_place_right))
     waitmovement(1)
-    msgbox(format("I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
+    msgbox(format("MOM: I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
     release
     playfanfare(MUS_OBTAIN_ITEM)
     msgbox(format("{PLAYER} switched shoes with the RUNNING SHOES."))
@@ -59,7 +59,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setvar(VAR_STARTGAME_TV, 1)
     //Set quest active
     setflag(FLAG_SYS_QUEST_MENU_GET)
-    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_LAB_FIRST_DAY)
+    startquest(QUEST_LAB_FIRST_DAY)
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1)
 
     //Mom sits back down

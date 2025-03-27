@@ -71,7 +71,7 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 61 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	setflag FLAG_SYS_QUEST_MENU_GET
 # 62 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_LAB_FIRST_DAY
+	startquest QUEST_LAB_FIRST_DAY
 # 63 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1
 # 66 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -199,8 +199,8 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_2:
 # 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "I almost forgot! Here you go - a new\n"
-	.string "pair of shoes for a new adventure!$"
+	.string "MOM: I almost forgot! Here you go - a\n"
+	.string "new pair of shoes for a new adventure!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_3:
 # 47 "data//maps/CarabrueTown_Home1F/scripts.pory"

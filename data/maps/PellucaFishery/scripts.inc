@@ -78,11 +78,11 @@ PellucaFishery_EventScript_MainDude_1:
 	compare VAR_PELLUCA_FISHERY, 2
 	goto_if_eq PellucaFishery_EventScript_MainDude_5
 PellucaFishery_EventScript_MainDude_4:
-# 75 "data//maps/PellucaFishery/scripts.pory"
+# 79 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_PELLUCA_FISHERY, 1
 	goto_if_eq PellucaFishery_EventScript_MainDude_8
 PellucaFishery_EventScript_MainDude_7:
-# 98 "data//maps/PellucaFishery/scripts.pory"
+# 102 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_PELLUCA_FISHERY, 0
 	goto_if_eq PellucaFishery_EventScript_MainDude_13
 	return
@@ -98,19 +98,19 @@ PellucaFishery_EventScript_MainDude_5:
 # 61 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaFishery_EventScript_MainDude_10
-# 70 "data//maps/PellucaFishery/scripts.pory"
+# 74 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_2
-# 71 "data//maps/PellucaFishery/scripts.pory"
+# 75 "data//maps/PellucaFishery/scripts.pory"
 	release
 	goto PellucaFishery_EventScript_MainDude_4
 
 PellucaFishery_EventScript_MainDude_8:
-# 76 "data//maps/PellucaFishery/scripts.pory"
+# 80 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_3, MSGBOX_YESNO
-# 78 "data//maps/PellucaFishery/scripts.pory"
+# 82 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaFishery_EventScript_MainDude_15
-# 93 "data//maps/PellucaFishery/scripts.pory"
+# 97 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_6
 	goto PellucaFishery_EventScript_MainDude_7
 
@@ -119,59 +119,63 @@ PellucaFishery_EventScript_MainDude_10:
 	msgbox PellucaFishery_EventScript_MainDude_Text_1
 # 63 "data//maps/PellucaFishery/scripts.pory"
 	release
-# 64 "data//maps/PellucaFishery/scripts.pory"
-	giveitem ITEM_POTION
 # 65 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_1
-# 66 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_PELLUCA_FISHERY, 3
+	completequest QUEST_PELLUCA_FISHERY
 # 67 "data//maps/PellucaFishery/scripts.pory"
+	giveitem ITEM_POTION
+# 68 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_1
+# 69 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_FISHERY, 3
+# 70 "data//maps/PellucaFishery/scripts.pory"
 	release
 	goto PellucaFishery_EventScript_MainDude_4
 
 PellucaFishery_EventScript_MainDude_13:
-# 100 "data//maps/PellucaFishery/scripts.pory"
+# 104 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_7, MSGBOX_YESNO
-# 101 "data//maps/PellucaFishery/scripts.pory"
+# 105 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaFishery_EventScript_MainDude_18
-# 106 "data//maps/PellucaFishery/scripts.pory"
+# 113 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_9
 	return
 
 PellucaFishery_EventScript_MainDude_15:
-# 79 "data//maps/PellucaFishery/scripts.pory"
+# 83 "data//maps/PellucaFishery/scripts.pory"
 	checkitem ITEM_MEGA_RING
-# 80 "data//maps/PellucaFishery/scripts.pory"
+# 84 "data//maps/PellucaFishery/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaFishery_EventScript_MainDude_21
-# 89 "data//maps/PellucaFishery/scripts.pory"
+# 93 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_2
-# 90 "data//maps/PellucaFishery/scripts.pory"
+# 94 "data//maps/PellucaFishery/scripts.pory"
 	release
 	goto PellucaFishery_EventScript_MainDude_7
 
 PellucaFishery_EventScript_MainDude_18:
-# 102 "data//maps/PellucaFishery/scripts.pory"
+# 106 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_8
-# 103 "data//maps/PellucaFishery/scripts.pory"
+# 107 "data//maps/PellucaFishery/scripts.pory"
 	release
-# 104 "data//maps/PellucaFishery/scripts.pory"
+# 108 "data//maps/PellucaFishery/scripts.pory"
 	setvar VAR_PELLUCA_FISHERY, 1
+# 110 "data//maps/PellucaFishery/scripts.pory"
+	startquest QUEST_PELLUCA_FISHERY
 	return
 
 PellucaFishery_EventScript_MainDude_21:
-# 81 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_4
-# 82 "data//maps/PellucaFishery/scripts.pory"
-	release
-# 83 "data//maps/PellucaFishery/scripts.pory"
-	giveitem ITEM_HM_WATERFALL
-# 84 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_5
 # 85 "data//maps/PellucaFishery/scripts.pory"
-	release
+	msgbox PellucaFishery_EventScript_MainDude_Text_4
 # 86 "data//maps/PellucaFishery/scripts.pory"
+	release
+# 87 "data//maps/PellucaFishery/scripts.pory"
+	giveitem ITEM_HM_WATERFALL
+# 88 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_5
+# 89 "data//maps/PellucaFishery/scripts.pory"
+	release
+# 90 "data//maps/PellucaFishery/scripts.pory"
 	setvar VAR_PELLUCA_FISHERY, 2
 	goto PellucaFishery_EventScript_MainDude_7
 
@@ -209,19 +213,19 @@ PellucaFishery_EventScript_MainDude_Text_1:
 	.string "BRINEY: Amazing! You're a saviour!$"
 
 PellucaFishery_EventScript_MainDude_Text_2:
-# 70 "data//maps/PellucaFishery/scripts.pory"
+# 74 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Huh? Where? You trying to pull\n"
 	.string "a fast one on a sailor? I may be past my\l"
 	.string "prime but I can still give you a\l"
 	.string "knocking, you know.$"
 
 PellucaFishery_EventScript_MainDude_Text_3:
-# 76 "data//maps/PellucaFishery/scripts.pory"
+# 80 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Ah, there you are! Let's see\n"
 	.string "your MEGA RING.$"
 
 PellucaFishery_EventScript_MainDude_Text_4:
-# 81 "data//maps/PellucaFishery/scripts.pory"
+# 85 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Good, good. Now you've got a\n"
 	.string "chance against the SHARPEDO. Well then,\l"
 	.string "all that's left is for you to make your\l"
@@ -230,7 +234,7 @@ PellucaFishery_EventScript_MainDude_Text_4:
 	.string "it's cave. Here you go.$"
 
 PellucaFishery_EventScript_MainDude_Text_5:
-# 84 "data//maps/PellucaFishery/scripts.pory"
+# 88 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: This is the HM WATERFALL. Any\n"
 	.string "{PKMN} that knows it will be able to climb\l"
 	.string "up waterfalls while surfing. But you'll\l"
@@ -239,11 +243,11 @@ PellucaFishery_EventScript_MainDude_Text_5:
 	.string "that MEGA SHARPEDO a lesson!$"
 
 PellucaFishery_EventScript_MainDude_Text_6:
-# 93 "data//maps/PellucaFishery/scripts.pory"
+# 97 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Hmpf. Come back when you do!$"
 
 PellucaFishery_EventScript_MainDude_Text_7:
-# 100 "data//maps/PellucaFishery/scripts.pory"
+# 104 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Ohh, what am I going to do\n"
 	.string "about this mess! My fishery business\l"
 	.string "was booming until we started getting\l"
@@ -258,7 +262,7 @@ PellucaFishery_EventScript_MainDude_Text_7:
 	.string "wanna go up against it?$"
 
 PellucaFishery_EventScript_MainDude_Text_8:
-# 102 "data//maps/PellucaFishery/scripts.pory"
+# 106 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: Haha! You may not look like\n"
 	.string "much, but you've got a backbone in\l"
 	.string "there, eh? I like that.\p"
@@ -271,7 +275,7 @@ PellucaFishery_EventScript_MainDude_Text_8:
 	.string "come back.$"
 
 PellucaFishery_EventScript_MainDude_Text_9:
-# 106 "data//maps/PellucaFishery/scripts.pory"
+# 113 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: A wise choice, kid. That thing is\n"
 	.string "terrifying! Worse than a raging\l"
 	.string "seastorm it is!$"

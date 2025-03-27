@@ -1924,8 +1924,8 @@
 	.endm
 
 .macro goto_if_quest_inactive quest:req, dest:req
-	questmenu QUEST_MENU_CHECK_INACTIVE \quest
-	goto_if_eq VAR_RESULT, TRUE, \dest
+	questmenu QUEST_MENU_CHECK_UNLOCKED \quest
+	goto_if_eq VAR_RESULT, FALSE, \dest
 	.endm
 
 	.macro goto_if_quest_active quest:req, dest:req

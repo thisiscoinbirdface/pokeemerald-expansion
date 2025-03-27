@@ -39,6 +39,8 @@ script Route1_House_QuestInProgress{
     } else {
         msgbox(format("Please hurry - my baby's suffering!"))
     }
+
+    releaseall
 }
 
 script Route1_House_StartQuest{
