@@ -935,3 +935,25 @@ const struct Tileset gTileset_Autumn =
     .metatileAttributes = gMetatileAttributes_Autumn,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Silversun =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Silversun,
+    .palettes = gTilesetPalettes_Silversun,
+    .metatiles = gMetatiles_Silversun,
+    .metatileAttributes = gMetatileAttributes_Silversun,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SilversunPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_SilversunPrimary,
+    .palettes = gTilesetPalettes_SilversunPrimary,
+    .metatiles = gMetatiles_SilversunPrimary,
+    .metatileAttributes = gMetatileAttributes_SilversunPrimary,
+    .callback = NULL,
+};

@@ -1824,3 +1824,41 @@ const u16 gTilesetPalettes_Autumn[][16] =
 };
 
 const u32 gTilesetTiles_Autumn[] = INCBIN_U32("data/tilesets/primary/autumn/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Silversun[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silversun/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Silversun[] = INCBIN_U32("data/tilesets/secondary/silversun/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SilversunPrimary[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/silversun_primary/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SilversunPrimary[] = INCBIN_U32("data/tilesets/primary/silversun_primary/tiles.4bpp.lz");

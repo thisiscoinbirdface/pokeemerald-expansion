@@ -4626,7 +4626,7 @@
       "name": "Route4_Layout",
       "width": 40,
       "height": 70,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Autumn",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route4/border.bin",
       "blockdata_filepath": "data/layouts/Route4/map.bin"
@@ -4837,7 +4837,7 @@
       "width": 52,
       "height": 48,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Silversun",
       "border_filepath": "data/layouts/SilversunCity/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity/map.bin"
     },

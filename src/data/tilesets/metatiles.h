@@ -238,3 +238,9 @@ const u16 gMetatileAttributes_Gastree[] = INCBIN_U16("data/tilesets/secondary/ga
 
 const u16 gMetatiles_Autumn[] = INCBIN_U16("data/tilesets/primary/autumn/metatiles.bin");
 const u16 gMetatileAttributes_Autumn[] = INCBIN_U16("data/tilesets/primary/autumn/metatile_attributes.bin");
+
+const u16 gMetatiles_Silversun[] = INCBIN_U16("data/tilesets/secondary/silversun/metatiles.bin");
+const u16 gMetatileAttributes_Silversun[] = INCBIN_U16("data/tilesets/secondary/silversun/metatile_attributes.bin");
+
+const u16 gMetatiles_SilversunPrimary[] = INCBIN_U16("data/tilesets/primary/silversun_primary/metatiles.bin");
+const u16 gMetatileAttributes_SilversunPrimary[] = INCBIN_U16("data/tilesets/primary/silversun_primary/metatile_attributes.bin");
