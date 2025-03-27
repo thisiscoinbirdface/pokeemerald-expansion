@@ -61,10 +61,14 @@ script PellucaFishery_EventScript_MainDude{
         if (var(VAR_RESULT) == 1){
             msgbox(format("BRINEY: Amazing! You're a saviour!"))
             release
+
+            completequest(QUEST_PELLUCA_FISHERY)
+
             giveitem(ITEM_POTION)   //give the quest reward
             msgbox(format("BRINEY: Amazing! You're a saviour!"))
             setvar(VAR_PELLUCA_FISHERY, 3)
             release
+
             
         } else {
             msgbox(format("BRINEY: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
@@ -102,6 +106,9 @@ script PellucaFishery_EventScript_MainDude{
             msgbox(format("BRINEY: Haha! You may not look like much, but you've got a backbone in there, eh? I like that.\pCan't sail the seas without a strong mast.\pFine, you're in. But I'm an old man now and I can't push you into the deep end without preparing you first. Get yourself a MEGA RING somehow and then come back."))
             release
             setvar(VAR_PELLUCA_FISHERY, 1)
+
+            startquest(QUEST_PELLUCA_FISHERY)
+
         } else {
             msgbox(format("BRINEY: A wise choice, kid. That thing is terrifying! Worse than a raging seastorm it is!"))
         }
