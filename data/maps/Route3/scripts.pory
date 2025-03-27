@@ -20,7 +20,7 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! I spend my time training my {PKMN} with love and care."), "More love! More care!")
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! All Breeders specialise in one {PKMN} variety, such as dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can you guess my specialty?"), "I love foxes!")
     msgbox(format("My {PKMN} are my most cherised partners!"))
     release
     end

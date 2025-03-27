@@ -54,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 13,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -169,9 +169,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_SKITTY)",
       "x": 12,
-      "y": 9,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -231,6 +231,13 @@
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY_HOUSE3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

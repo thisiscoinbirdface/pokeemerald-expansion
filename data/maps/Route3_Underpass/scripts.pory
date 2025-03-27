@@ -22,15 +22,42 @@ script Route3_Underpass_NPC2{
     releaseall
 }
 
-
-script Route3_Underpass_Trigger_EvilBattle{
+script Route3_Underpass_EvilBattle_Trigger0{
     if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
         end
-    }
-
-
+    }    
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
+    goto(Route3_Underpass_EvilBattle)
+}
+script Route3_Underpass_EvilBattle_Trigger1{
+    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
+        end
+    }    
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    goto(Route3_Underpass_EvilBattle)
+}
+script Route3_Underpass_EvilBattle_Trigger2{
+    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
+        end
+    }    
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
+    goto(Route3_Underpass_EvilBattle)
+}
+
+
+script Route3_Underpass_EvilBattle{
+    lockall
+
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     //Some convo between hiker and magma
     applymovement(2, moves(jump_in_place_right))
     waitmovement(0)    
@@ -42,11 +69,15 @@ script Route3_Underpass_Trigger_EvilBattle{
     applymovement(2, moves(walk_right))
     waitmovement(0)
     msgbox(format("BREECH: I don't know anything about any dreamstones, please! Just stop!"))
-    msgbox(format("CLEFAIRY: clee!!!"))
-    msgbox(format("???: Hahaha! Your CLEFAIRY wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
+    release
+    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)    
+    applymovement(6, moves(jump_in_place_left * 2))
+    waitmovement(0)
+    msgbox(format("CLEFAIRY: clee!!!\p???: Hahaha! Your CLEFAIRY wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
+    release
 
     //They look at you and you walk to them
-    applymovement(2, moves(jump_in_place_up))
+    applymovement(2, moves(jump_in_place_up emote_question_mark))
     waitmovement(0)
     msgbox(format("???: Who's there? What you do want?"))
     applymovement(3, moves(face_up))
@@ -81,7 +112,7 @@ script Route3_Underpass_Trigger_EvilBattle{
     waitmovement(0)     
     msgbox(format("{PLAYER} - CLEFAIRY and I are in your debt. The way you handled that thug was incredible."))
     msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
-    msgbox(format("CLEFAIRY was ready to protect me, but I wasn't prepared to do the same for her.\pI let her down."))
+    msgbox(format("CLEFAIRY was ready to protect me, but I wasn't prepared to do the same for her.\p...\pI let her down."))
     msgbox(format("But no more! I'm going to learn to hold my ground. If Team Somber comes after CLEFAIRY again, we'll be ready."))
     msgbox(format("{PLAYER} - we owe you. As thanks, CLEFAIRY and I want to give you the stone that GABRIELLE person was after..."))
     release
@@ -89,9 +120,20 @@ script Route3_Underpass_Trigger_EvilBattle{
     msgbox(format("I don't know anything about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
     msgbox(format("Don't worry - CLEFAIRY's bored of that stone already. Next, we'll head to MT CERAM to collect rare stones there!"))
     release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(3, moves(walk_down * 2))
+    applymovement(6, moves(walk_left walk_down * 2))
     waitmovement(0)     
     removeobject(3)
+    applymovement(6, moves(face_up))
+    waitmovement(0)
+    delay(30)
+    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
+    msgbox(format("CLEFAIRY: clee!!!"))
+    release
+    applymovement(6, moves(face_down))
+    waitmovement(0)
+    removeobject(6)
 
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)

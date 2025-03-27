@@ -78,6 +78,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route3_Underpass_NPC2",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_CLEFAIRY)",
+      "x": 64,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ROUTE3_UNDERPASS_EVILTEAM"
     }
   ],
   "warp_events": [
@@ -120,8 +133,8 @@
       "x": 63,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE3",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "7"
     },
     {
       "x": 63,
@@ -131,8 +144,8 @@
       "dest_warp_id": "7"
     },
     {
-      "x": 63,
-      "y": 14,
+      "x": 45,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
       "dest_warp_id": "6"
@@ -141,12 +154,30 @@
   "coord_events": [
     {
       "type": "trigger",
+      "x": 62,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route3_Underpass_EvilBattle_Trigger0"
+    },
+    {
+      "type": "trigger",
       "x": 63,
       "y": 15,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Route3_Underpass_Trigger_EvilBattle"
+      "script": "Route3_Underpass_EvilBattle_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route3_Underpass_EvilBattle_Trigger2"
     }
   ],
   "bg_events": [

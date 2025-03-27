@@ -88,6 +88,18 @@ CarabrueTown_EventScript_NPC2::
 	return
 
 
+CarabrueTown_Chikorita::
+# 71 "data//maps/CarabrueTown/scripts.pory"
+	lockall
+# 72 "data//maps/CarabrueTown/scripts.pory"
+	faceplayer
+# 73 "data//maps/CarabrueTown/scripts.pory"
+	playmoncry SPECIES_CHIKORITA
+# 74 "data//maps/CarabrueTown/scripts.pory"
+	releaseall
+	return
+
+
 CarabrueTown_EventScript_PoliceRoadBlock_Text_0:
 # 10 "data//maps/CarabrueTown/scripts.pory"
 	.string "Sorry, this road is temporarily closed.\n"
@@ -130,6 +142,7 @@ CarabrueTown_EventScript_NPC1_Text_1:
 
 CarabrueTown_EventScript_NPC2_Text_0:
 # 66 "data//maps/CarabrueTown/scripts.pory"
-	.string "I love how cosy CARABRUE TOWN is!\n"
-	.string "That's because it's nestled deep in the\l"
-	.string "southern hills of CORMORIA.$"
+	.string "My CHIKORITA and I love how cosy\n"
+	.string "CARABRUE TOWN is! That's because it's\l"
+	.string "nestled deep in the southern hills of\l"
+	.string "CORMORIA.$"

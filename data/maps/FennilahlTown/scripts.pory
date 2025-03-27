@@ -104,3 +104,30 @@ script FennilahlTown_Sign_Route3{
 
 
 
+script FennilahlTown_Budew{
+    lockall
+    playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
+    applymovement(8, moves(jump_in_place_up * 3))
+    waitmovement(0)
+    msgbox(format("BUDEW seems to want something..."))
+    release
+
+    checkitem(ITEM_ORAN_BERRY)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Give BUDEW an ORAN BERRY?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            applymovement(8, moves(faceplayer))   
+            waitmovement(0)
+            delay(12)             
+            msgbox(format("{PLAYER} gave BUDEW an ORAN BERRY."), MSGBOX_SIGN)
+            release
+            applymovement(8, moves(jump_in_place_down * 3))   
+            waitmovement(0)       
+            msgbox(format("BUDEW seems happy!"))
+            release
+        }
+    }   
+}
+
+

@@ -16,5 +16,11 @@ script FennilahlTown_House3_NPC2{
     releaseall
 }
 
+script FennilahlTown_House3_Mawile{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_MAWILE, CRY_MODE_NORMAL)
+    releaseall
+}
 
 
