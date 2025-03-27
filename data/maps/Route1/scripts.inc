@@ -69,8 +69,8 @@ Route1_EventScripts_RandomDude_Text_0:
 
 Route1_TrainerBattle_Jose_Text_0:
 # 16 "data//maps/Route1/scripts.pory"
-	.string "I just got my first {PKMN}!\p"
-	.string "And now, I'm about to get my first win!$"
+	.string "I just got my first {PKMN}! And now, I'm\n"
+	.string "about to get my first win!$"
 
 Route1_TrainerBattle_Jose_Text_1:
 # 16 "data//maps/Route1/scripts.pory"
@@ -83,8 +83,8 @@ Route1_TrainerBattle_Jose_Text_2:
 
 Route1_TrainerBattle_Sana_Text_0:
 # 25 "data//maps/Route1/scripts.pory"
-	.string "I love FLYING-type {PKMN}.\p"
-	.string "Let me show you my favourite!$"
+	.string "I love FLYING-type {PKMN}. Let me show you\n"
+	.string "my favourite!$"
 
 Route1_TrainerBattle_Sana_Text_1:
 # 25 "data//maps/Route1/scripts.pory"
@@ -96,9 +96,9 @@ Route1_TrainerBattle_Sana_Text_2:
 
 Route1_TrainerBattle_Mortem_Text_0:
 # 34 "data//maps/Route1/scripts.pory"
-	.string "I came from GASTREE CITY to find\n"
-	.string "cool bug-type {PKMN} here...\p"
-	.string "but I found you instead!$"
+	.string "I came from GASTREE CITY to find cool\n"
+	.string "bug-type {PKMN} here...but I found you\l"
+	.string "instead!$"
 
 Route1_TrainerBattle_Mortem_Text_1:
 # 34 "data//maps/Route1/scripts.pory"

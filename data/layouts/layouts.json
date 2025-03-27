@@ -4586,8 +4586,8 @@
       "name": "GastreeCity_Layout",
       "width": 52,
       "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "primary_tileset": "gTileset_Autumn",
+      "secondary_tileset": "gTileset_Gastree",
       "border_filepath": "data/layouts/GastreeCity/border.bin",
       "blockdata_filepath": "data/layouts/GastreeCity/map.bin"
     },

@@ -232,3 +232,9 @@ const u16 gMetatileAttributes_CaveAlt[] = INCBIN_U16("data/tilesets/secondary/ca
 
 const u16 gMetatiles_CaveCity[] = INCBIN_U16("data/tilesets/primary/cave_city/metatiles.bin");
 const u16 gMetatileAttributes_CaveCity[] = INCBIN_U16("data/tilesets/primary/cave_city/metatile_attributes.bin");
+
+const u16 gMetatiles_Gastree[] = INCBIN_U16("data/tilesets/secondary/gastree/metatiles.bin");
+const u16 gMetatileAttributes_Gastree[] = INCBIN_U16("data/tilesets/secondary/gastree/metatile_attributes.bin");
+
+const u16 gMetatiles_Autumn[] = INCBIN_U16("data/tilesets/primary/autumn/metatiles.bin");
+const u16 gMetatileAttributes_Autumn[] = INCBIN_U16("data/tilesets/primary/autumn/metatile_attributes.bin");

@@ -913,3 +913,25 @@ const struct Tileset gTileset_CaveCity =
     .metatileAttributes = gMetatileAttributes_CaveCity,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Gastree =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Gastree,
+    .palettes = gTilesetPalettes_Gastree,
+    .metatiles = gMetatiles_Gastree,
+    .metatileAttributes = gMetatileAttributes_Gastree,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Autumn =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Autumn,
+    .palettes = gTilesetPalettes_Autumn,
+    .metatiles = gMetatiles_Autumn,
+    .metatileAttributes = gMetatileAttributes_Autumn,
+    .callback = NULL,
+};
