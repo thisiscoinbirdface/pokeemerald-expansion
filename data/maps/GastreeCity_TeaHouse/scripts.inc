@@ -82,7 +82,7 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest::
 # 56 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	setvar VAR_GASTREE_TEASHOP_QUEST, 1
 # 57 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_TEA
+	startquest QUEST_GASTREE_TEA
 # 60 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	return
@@ -146,31 +146,31 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward::
 # 93 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
 # 94 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1
+	completequest QUEST_GASTREE_TEA
 # 95 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1
+# 96 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
-# 98 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	givemon SPECIES_POLTCHAGEIST, 10
 # 99 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	showmonpic SPECIES_POLTCHAGEIST, 10, 3
+	givemon SPECIES_POLTCHAGEIST, 10
 # 100 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	showmonpic SPECIES_POLTCHAGEIST, 10, 3
+# 101 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2
-# 103 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 104 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3
+	playfanfare MUS_OBTAIN_ITEM
 # 105 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	call NicknamePartyMon
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3
 # 106 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	call NicknamePartyMon
+# 107 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
-# 108 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4
 # 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4
+# 110 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
-# 112 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	setvar VAR_GASTREE_TEASHOP_QUEST, 2
 # 113 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_TEA
+	setvar VAR_GASTREE_TEASHOP_QUEST, 2
 # 115 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	return
@@ -295,15 +295,15 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_0:
 	.string "Oh how wonderful! I'm so excited to\n"
 	.string "start brewing.\p"
 	.string "Thank you, young one. You have done me\n"
-	.string "a great service. I must repay you...$"
+	.string "a great service.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1:
-# 94 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	.string "Why don't I give you a reward of some\n"
-	.string "sort?$"
+# 95 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	.string "Now - I must reward you somehow.\p"
+	.string "No no! I insist.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2:
-# 100 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 101 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "The kitchen is managed by my staff of\n"
 	.string "POLTCHAGEIST. But for some of them,\l"
 	.string "working the same job has become dreary.\l"
@@ -311,12 +311,12 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2:
 	.string "don't you think?$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3:
-# 104 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 105 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "The Tea House Owner has gifted you a\n"
 	.string "POLTCHAGEIST!$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4:
-# 108 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "This one's a keeper - extremely\n"
 	.string "well-trained and hospitable. I'm sure\l"
 	.string "you two will have a great time together.\l"

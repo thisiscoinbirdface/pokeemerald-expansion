@@ -116,7 +116,10 @@ script PellucaCityRestaurant_Cook3{
             checkitem(ITEM_NEVER_MELT_ICE)
             if (var(VAR_RESULT) == 1){
                 //accept quest
-                msgbox(format("Wonderful! This will keep our ingredients cool until we can fix the fridge. My friend, you must accept this."))
+                msgbox(format("Wonderful! This will keep our ingredients cool until we can fix the fridge.")) 
+                completequest(QUEST_PELLUCA_RESTAURANT)                
+                msgbox(format("My friend, you must accept this."))
+                release
                 givemon(SPECIES_APPLIN, 25)
                 msgbox(format("Take good care of our APPLIN! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
                 setvar(VAR_PELLUCA_COOK, 2) 
@@ -142,6 +145,9 @@ script PellucaCityRestaurant_Cook3{
             msgbox(format("I'll be waiting here!"))
             release
             setvar(VAR_PELLUCA_COOK, 1)
+
+            startquest(QUEST_PELLUCA_RESTAURANT)
+
         } else {
             msgbox(format("Oh no! But I understand. You must be busy."))
         }

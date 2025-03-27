@@ -162,90 +162,110 @@ GastreeCity_NPC9::
 
 
 GastreeCity_NPC2::
-# 131 "data//maps/GastreeCity/scripts.pory"
+# 139 "data//maps/GastreeCity/scripts.pory"
 	lockall
-# 132 "data//maps/GastreeCity/scripts.pory"
+# 140 "data//maps/GastreeCity/scripts.pory"
 	faceplayer
-# 134 "data//maps/GastreeCity/scripts.pory"
+# 142 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_NPC_SKITTY, GastreeCity_NPC2_2
 	checkitem ITEM_SKITTY
 # 0 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GastreeCity_NPC2_5
-# 151 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_3
-# 153 "data//maps/GastreeCity/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_SKITTY
+# 160 "data//maps/GastreeCity/scripts.pory"
+	questmenu QUEST_MENU_CHECK_INACTIVE, QUEST_GASTREE_SKITTY
+# 162 "data//maps/GastreeCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq GastreeCity_NPC2_8
+# 171 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_5
 GastreeCity_NPC2_1:
-# 157 "data//maps/GastreeCity/scripts.pory"
-	release
-	return
+# 176 "data//maps/GastreeCity/scripts.pory"
+	releaseall
+	end
 
 GastreeCity_NPC2_2:
-# 135 "data//maps/GastreeCity/scripts.pory"
+# 143 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_0
 	goto GastreeCity_NPC2_1
 
 GastreeCity_NPC2_5:
-# 138 "data//maps/GastreeCity/scripts.pory"
+# 146 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_1
-# 139 "data//maps/GastreeCity/scripts.pory"
+# 147 "data//maps/GastreeCity/scripts.pory"
 	giveitem ITEM_HM_CUT
-# 140 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_2
-# 141 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_GASTREE_NPC_SKITTY
-# 142 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY
-# 143 "data//maps/GastreeCity/scripts.pory"
-	removeitem ITEM_SKITTY
-# 144 "data//maps/GastreeCity/scripts.pory"
-	addobject 12
 # 148 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_2
+# 149 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_GASTREE_NPC_SKITTY
+# 150 "data//maps/GastreeCity/scripts.pory"
+	clearflag FLAG_HIDE_GASTREE_SKITTY
+# 151 "data//maps/GastreeCity/scripts.pory"
+	removeitem ITEM_SKITTY
+# 152 "data//maps/GastreeCity/scripts.pory"
+	completequest QUEST_GASTREE_SKITTY
+# 153 "data//maps/GastreeCity/scripts.pory"
+	addobject 12
+# 157 "data//maps/GastreeCity/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_SKITTY
+	goto GastreeCity_NPC2_1
+
+GastreeCity_NPC2_8:
+# 164 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_3, MSGBOX_YESNO
+# 166 "data//maps/GastreeCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq GastreeCity_NPC2_11
+	goto GastreeCity_NPC2_1
+
+GastreeCity_NPC2_11:
+# 167 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC2_Text_4
+# 168 "data//maps/GastreeCity/scripts.pory"
+	startquest QUEST_GASTREE_SKITTY
 	goto GastreeCity_NPC2_1
 
 
 GastreeCity_EventScripts_SkittyTrigger::
-# 162 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_TRIGGER_SKITTY, GastreeCity_EventScripts_SkittyTrigger_2
-# 166 "data//maps/GastreeCity/scripts.pory"
+# 186 "data//maps/GastreeCity/scripts.pory"
 	lockall
-# 167 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_1, MSGBOX_YESNO
-# 168 "data//maps/GastreeCity/scripts.pory"
+# 188 "data//maps/GastreeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GastreeCity_EventScripts_SkittyTrigger_5
 GastreeCity_EventScripts_SkittyTrigger_1:
-# 177 "data//maps/GastreeCity/scripts.pory"
+# 197 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
 GastreeCity_EventScripts_SkittyTrigger_2:
-# 163 "data//maps/GastreeCity/scripts.pory"
+# 183 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_0
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 GastreeCity_EventScripts_SkittyTrigger_5:
-# 169 "data//maps/GastreeCity/scripts.pory"
+# 189 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger_Text_2
-# 170 "data//maps/GastreeCity/scripts.pory"
+# 190 "data//maps/GastreeCity/scripts.pory"
 	release
-# 171 "data//maps/GastreeCity/scripts.pory"
+# 191 "data//maps/GastreeCity/scripts.pory"
 	giveitem ITEM_SKITTY
-# 172 "data//maps/GastreeCity/scripts.pory"
+# 192 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_TRIGGER_SKITTY
 	goto GastreeCity_EventScripts_SkittyTrigger_1
 
 
 GastreeCity_NPC_Skitty::
-# 182 "data//maps/GastreeCity/scripts.pory"
+# 202 "data//maps/GastreeCity/scripts.pory"
 	lockall
-# 183 "data//maps/GastreeCity/scripts.pory"
+# 203 "data//maps/GastreeCity/scripts.pory"
 	faceplayer
-# 184 "data//maps/GastreeCity/scripts.pory"
+# 204 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC_Skitty_Text_0
-# 185 "data//maps/GastreeCity/scripts.pory"
+# 205 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return
 
@@ -337,9 +357,9 @@ GastreeCity_NPC7_Text_0:
 GastreeCity_NPC8_Text_0:
 # 106 "data//maps/GastreeCity/scripts.pory"
 	.string "Hiiiiyah!\p"
-	.string "I'm trying to teach my KECKLEON ROCK\n"
-	.string "SMASH so that we can go and explore\l"
-	.string "Route 4 together!$"
+	.string "I'm trying to teach my KECKLEON CUT so\n"
+	.string "that we can go and explore Route 4\l"
+	.string "together!$"
 
 GastreeCity_NPC8_Text_1:
 # 110 "data//maps/GastreeCity/scripts.pory"
@@ -348,7 +368,7 @@ GastreeCity_NPC8_Text_1:
 GastreeCity_NPC_Keckleon_Text_0:
 # 116 "data//maps/GastreeCity/scripts.pory"
 	.string "KECKLEON: keeee!!\p"
-	.string "It's trying hard to learn ROCK SMASH. Go\n"
+	.string "It's trying hard to learn CUT. Go\n"
 	.string "KECKLEON!$"
 
 GastreeCity_NPC9_Text_0:
@@ -356,13 +376,13 @@ GastreeCity_NPC9_Text_0:
 	.string "$"
 
 GastreeCity_NPC2_Text_0:
-# 135 "data//maps/GastreeCity/scripts.pory"
+# 143 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY ran away because she got\n"
 	.string "bored...maybe I should catch a PURRLOIN\l"
 	.string "or MEOWTH for her to play with.$"
 
 GastreeCity_NPC2_Text_1:
-# 138 "data//maps/GastreeCity/scripts.pory"
+# 146 "data//maps/GastreeCity/scripts.pory"
 	.string "Is that my SKITTY? Oh it is! Thank you\n"
 	.string "trainer! Thank you so much! Come here\l"
 	.string "SKITTY.\p"
@@ -370,7 +390,7 @@ GastreeCity_NPC2_Text_1:
 	.string "Please take this as a reward.$"
 
 GastreeCity_NPC2_Text_2:
-# 140 "data//maps/GastreeCity/scripts.pory"
+# 148 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY already knows CUT, so I don't\n"
 	.string "need it any more. A {PKMN} with CUT can cut\l"
 	.string "any small trees in its path. But you\l"
@@ -378,29 +398,39 @@ GastreeCity_NPC2_Text_2:
 	.string "use it.$"
 
 GastreeCity_NPC2_Text_3:
-# 151 "data//maps/GastreeCity/scripts.pory"
+# 164 "data//maps/GastreeCity/scripts.pory"
 	.string "My SKITTY is missing! I've been looking\n"
 	.string "everywhere for her, but I can't find\l"
-	.string "her. If you find a SKITTY, please bring\l"
-	.string "her to me, okay?$"
+	.string "her. Will you help me out?$"
+
+GastreeCity_NPC2_Text_4:
+# 167 "data//maps/GastreeCity/scripts.pory"
+	.string "Oh, you're a lifesaver indeed! SKITTY\n"
+	.string "likes to climb up trees, so she might be\l"
+	.string "stuck up one. If you find her, please\l"
+	.string "bring her to me, okay?$"
+
+GastreeCity_NPC2_Text_5:
+# 171 "data//maps/GastreeCity/scripts.pory"
+	.string "Have you found my SKITTY yet?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_0:
-# 163 "data//maps/GastreeCity/scripts.pory"
-	.string "There's nothing else up there.$"
+# 183 "data//maps/GastreeCity/scripts.pory"
+	.string "There's nothing up there.$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_1:
-# 167 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 	.string "There's something up in the branches of\n"
 	.string "this tree.\p"
 	.string "Shake it?$"
 
 GastreeCity_EventScripts_SkittyTrigger_Text_2:
-# 169 "data//maps/GastreeCity/scripts.pory"
+# 189 "data//maps/GastreeCity/scripts.pory"
 	.string "A SKITTY dropped down from the tree! It\n"
 	.string "looks scared. Who is its owner?$"
 
 GastreeCity_NPC_Skitty_Text_0:
-# 184 "data//maps/GastreeCity/scripts.pory"
+# 204 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY: skee~~$"
 
 GastreeCity_KohlaIntro1::

@@ -11,6 +11,11 @@ script Route1_House_RandomDude {
     releaseall
 }
 
+script Route1_House_Quest_Done{
+    msgbox(format("I won't let AZURILL eat any bad food again!"))
+}
+
+
 script Route1_House_QuestInProgress{
     msgbox(format("Have you brought a PECHA BERRY?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){

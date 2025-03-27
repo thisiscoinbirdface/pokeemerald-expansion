@@ -1369,7 +1369,7 @@ const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his CYN
 const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her pearls\nstolen! I'd better find the robber fast!\nMaybe she'll give me a huge reward...");
 const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in SILVERSUN\nCITY wants BLACK SLUDGE to create the\nperfect shade of black paint.");
 const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
-const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\are broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
+const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\nare broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
 const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");
 const u8 gText_SideQuestDesc_14[] = _("Description 14");
 const u8 gText_SideQuestDesc_15[] = _("Description 15");
@@ -1389,22 +1389,11 @@ const u8 gText_SideQuestDesc_28[] = _("Description 28");
 const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
-
-// const u8 gText_SideQuestDesc_6[] = _("Someone's SKITTY in GASTREE CITY has gone\nmissing! I wonder where she could've gone...");
-// const u8 gText_SideQuestDesc_7[] = _("The lady at GASTREE TEAHOUSE wants to create a\nmodern tea blend. She needs 1 REVIVAL HERB,\n1 ENERGY POWDER and 1 SHOAL SALT.");
-// const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his CYNDAQUIL\nto learn the move SUNNY DAY. Where can I\nget the TM for SUNNY DAY?");
-// const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her pearls\nstolen! I'd better find the robber fast!\nMaybe she'll give me a huge reward...");
-// const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in SILVERSUN\nCITY wants BLACK SLUDGE to create the\nperfect shade of black paint.");
-// const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
-// const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\are broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
-// const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");
-
-
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around CORMORIA.");
 const u8 gText_SideQuestDoneDesc_2[] = _("???");    //main quest
 const u8 gText_SideQuestDoneDesc_3[] = _("???");    //ranger side quest
-const u8 gText_SideQuestDoneDesc_4[] = _("Azurill has recovered and is happy again!\nA PECHA BERRY a day keeps the doctor away.");
+const u8 gText_SideQuestDoneDesc_4[] = _("AZURILL has recovered and is happy again!\nA PECHA BERRY a day keeps the doctor away.");
 const u8 gText_SideQuestDoneDesc_5[] = _("I got BREECH his stone back...and found him\na new companion! I hope to see him and\nCLEFAIRY again soon!");
 const u8 gText_SideQuestDoneDesc_6[] = _("SKITTY is reunited with her trainer!");
 const u8 gText_SideQuestDoneDesc_7[] = _("The modern blend is done! How does it taste\nthough? The lady at the GASTREE TEAHOUSE\ngifted me a POLTCHAGEIST for my help!");
