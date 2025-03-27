@@ -32,19 +32,19 @@ AncientCeram_EventScript_Gabrielle::
 	compare VAR_ANCIENT_GAB_ESCAPE, 0
 	goto_if_eq AncientCeram_EventScript_Gabrielle_2
 AncientCeram_EventScript_Gabrielle_1:
-# 30 "data//maps/AncientCeram/scripts.pory"
+# 29 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 1
 	goto_if_eq AncientCeram_EventScript_Gabrielle_5
 AncientCeram_EventScript_Gabrielle_4:
-# 35 "data//maps/AncientCeram/scripts.pory"
+# 34 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 3
 	goto_if_eq AncientCeram_EventScript_Gabrielle_8
 AncientCeram_EventScript_Gabrielle_7:
-# 40 "data//maps/AncientCeram/scripts.pory"
+# 39 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 2
 	goto_if_eq AncientCeram_EventScript_Gabrielle_11
 AncientCeram_EventScript_Gabrielle_10:
-# 47 "data//maps/AncientCeram/scripts.pory"
+# 46 "data//maps/AncientCeram/scripts.pory"
 	releaseall
 	return
 
@@ -52,93 +52,89 @@ AncientCeram_EventScript_Gabrielle_2:
 # 24 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_0
 # 25 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_DREAMSTONE_MYSTERIES
-# 26 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 1
 	goto AncientCeram_EventScript_Gabrielle_1
 
 AncientCeram_EventScript_Gabrielle_5:
-# 31 "data//maps/AncientCeram/scripts.pory"
+# 30 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_1
 	goto AncientCeram_EventScript_Gabrielle_4
 
 AncientCeram_EventScript_Gabrielle_8:
-# 36 "data//maps/AncientCeram/scripts.pory"
+# 35 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_2
 	goto AncientCeram_EventScript_Gabrielle_7
 
 AncientCeram_EventScript_Gabrielle_11:
-# 41 "data//maps/AncientCeram/scripts.pory"
+# 40 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_3
-# 42 "data//maps/AncientCeram/scripts.pory"
+# 41 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 3
-# 45 "data//maps/AncientCeram/scripts.pory"
+# 44 "data//maps/AncientCeram/scripts.pory"
 	warp MAP_ANCIENT_CERAM, 28, 23
 	goto AncientCeram_EventScript_Gabrielle_10
 
 
 AncientCeram_EventScript_Exit::
-# 54 "data//maps/AncientCeram/scripts.pory"
+# 53 "data//maps/AncientCeram/scripts.pory"
 	lockall
-# 57 "data//maps/AncientCeram/scripts.pory"
+# 56 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 0
 	goto_if_eq AncientCeram_EventScript_Exit_2
 AncientCeram_EventScript_Exit_1:
-# 60 "data//maps/AncientCeram/scripts.pory"
+# 59 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 1
 	goto_if_eq AncientCeram_EventScript_Exit_5
 AncientCeram_EventScript_Exit_4:
-# 63 "data//maps/AncientCeram/scripts.pory"
+# 62 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 2
 	goto_if_eq AncientCeram_EventScript_Exit_8
 AncientCeram_EventScript_Exit_7:
-# 66 "data//maps/AncientCeram/scripts.pory"
+# 65 "data//maps/AncientCeram/scripts.pory"
 	compare VAR_ANCIENT_GAB_ESCAPE, 3
 	goto_if_eq AncientCeram_EventScript_Exit_11
 AncientCeram_EventScript_Exit_10:
-# 87 "data//maps/AncientCeram/scripts.pory"
+# 84 "data//maps/AncientCeram/scripts.pory"
 	releaseall
 	return
 
 AncientCeram_EventScript_Exit_2:
-# 58 "data//maps/AncientCeram/scripts.pory"
+# 57 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 2
 	goto AncientCeram_EventScript_Exit_1
 
 AncientCeram_EventScript_Exit_5:
-# 61 "data//maps/AncientCeram/scripts.pory"
+# 60 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 2
 	goto AncientCeram_EventScript_Exit_4
 
 AncientCeram_EventScript_Exit_8:
-# 64 "data//maps/AncientCeram/scripts.pory"
+# 63 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Exit_Text_0
 	goto AncientCeram_EventScript_Exit_7
 
 AncientCeram_EventScript_Exit_11:
-# 68 "data//maps/AncientCeram/scripts.pory"
+# 67 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8004, 2
-# 69 "data//maps/AncientCeram/scripts.pory"
+# 68 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8005, 2
-# 70 "data//maps/AncientCeram/scripts.pory"
+# 69 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8006, 30
-# 71 "data//maps/AncientCeram/scripts.pory"
+# 70 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_0x8007, 5
-# 72 "data//maps/AncientCeram/scripts.pory"
+# 71 "data//maps/AncientCeram/scripts.pory"
 	special ShakeCamera
-# 73 "data//maps/AncientCeram/scripts.pory"
+# 72 "data//maps/AncientCeram/scripts.pory"
 	waitstate
-# 74 "data//maps/AncientCeram/scripts.pory"
+# 73 "data//maps/AncientCeram/scripts.pory"
 	release
-# 77 "data//maps/AncientCeram/scripts.pory"
+# 76 "data//maps/AncientCeram/scripts.pory"
 	setflag FLAG_ANCIENT_FIRST_TIME
-# 78 "data//maps/AncientCeram/scripts.pory"
+# 77 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 4
-# 79 "data//maps/AncientCeram/scripts.pory"
+# 78 "data//maps/AncientCeram/scripts.pory"
 	setrespawn HEAL_LOCATION_GALECREST_CITY
 # 81 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES
-# 84 "data//maps/AncientCeram/scripts.pory"
 	warp MAP_GALECREST_CITY, 53, 30
 	goto AncientCeram_EventScript_Exit_10
 
@@ -156,21 +152,21 @@ AncientCeram_EventScript_Gabrielle_Text_0:
 	.string "I can't get up.$"
 
 AncientCeram_EventScript_Gabrielle_Text_1:
-# 31 "data//maps/AncientCeram/scripts.pory"
+# 30 "data//maps/AncientCeram/scripts.pory"
 	.string "If you find a way out of this place,\n"
 	.string "please take me with you.$"
 
 AncientCeram_EventScript_Gabrielle_Text_2:
-# 36 "data//maps/AncientCeram/scripts.pory"
+# 35 "data//maps/AncientCeram/scripts.pory"
 	.string "Shall we go? Touch the dreamstone\n"
 	.string "whenever you want to leave.$"
 
 AncientCeram_EventScript_Gabrielle_Text_3:
-# 41 "data//maps/AncientCeram/scripts.pory"
+# 40 "data//maps/AncientCeram/scripts.pory"
 	.string "GABRIELLE: You found another\n"
 	.string "dreamstone? Okay, let's head for it and\l"
 	.string "get out of here.$"
 
 AncientCeram_EventScript_Exit_Text_0:
-# 64 "data//maps/AncientCeram/scripts.pory"
+# 63 "data//maps/AncientCeram/scripts.pory"
 	.string "I can't leave GABRIELLE behind!$"

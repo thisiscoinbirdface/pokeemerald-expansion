@@ -66,37 +66,65 @@ script CeramBaseCamp_NPC3{
 script CeramBaseCamp_NPC4{
     lockall 
 
-    if (flag(FLAG_CERAMBASECAMP_CYNDAQUIL_TM)){
-        faceplayer
-        msgbox(format("CYNDAQUIL and I do everything together!"))
-        applymovement(4, moves(face_up))
-        waitmovement(0)
-        releaseall
-        end
-    }
+    goto_if_quest_complete(QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_Quest_Done)
+    goto_if_quest_active(QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_QuestInProgress)
+    goto_if_quest_inactive(QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_StartQuest)
 
+    releaseall
+    end
+}
+
+
+script CeramBaseCamp_Cyndaquil_Quest_Done{
+    faceplayer
+    msgbox(format("CYNDAQUIL and I do everything together!"))
+    applymovement(4, moves(face_up))
+    waitmovement(0)
+    releaseall
+    end
+}    
+
+script CeramBaseCamp_Cyndaquil_StartQuest{
     //Cyndaquil is training hard
     msgbox(format("C'mon CYNDAQUIL!\pCYNDAQUI: quiiillll!!!\pSigh, it's just not good enough..."))
+    release
+    delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled ARIAN and CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, you wouldn't happen to have the TM, would you? If you can teach my CYNDAQUIL the move SUNNY DAY, that'd be really helpful."))
+    msgbox(format("We battled ARIAN and my CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, you wouldn't happen to have the TM, would you? If you can teach my CYNDAQUIL the move SUNNY DAY, that'd be really helpful. Will you help us out?"), MSGBOX_YESNO)
 
-    //Check tM
+    
+    //result
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM SUNNY DAY."))
+        release
+        startquest(QUEST_CERAM_CYNDAQUIL)
+    } else {
+        msgbox(format("Oh well. See you."))
+    }
+    releaseall
+    end
+}
+
+script CeramBaseCamp_Cyndaquil_QuestInProgress{
+
+    //Check TM
     checkitem(ITEM_TM_SUNNY_DAY)
     if (var(VAR_RESULT) == 1){  //Yes TM
-        msgbox(format("Teach CYNDAQUIL the move SUNNY DAY?"), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1){ //refuse to team
-            msgbox(format("Using TM on CYNDAQUIL...\p...poof!\pCYNDAQUIL has learned SUNNY DAY!"))
-            release
-            applymovement(4, moves(emote_exclamation_mark))    
-            waitmovement(0)
-            msgbox(format("Thank you! Isn't this great, CYNDAQUIL?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
-            giveitem(ITEM_CHARCOAL)
-        } else { //refuse to give TM
-            msgbox(format("Oh well. See you."))
-        }
-    } else {    //No TM
-        msgbox(format("Oh, but it looks like you don't have the TM. Oh well, back to training I guess!"))
+        msgbox(format("Did you bring SUNNY DAY?\nYes? Perfect! Let's get to it."))
+        release
+        delay(20)
+
+        msgbox(format("Using TM on CYNDAQUIL...\p...poof!\pCYNDAQUIL has learned SUNNY DAY!"))
+        release
+        applymovement(4, moves(emote_exclamation_mark))    
+        waitmovement(0)
+        msgbox(format("Thank you! Isn't this great, CYNDAQUIL?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
+        giveitem(ITEM_CHARCOAL)
+        completequest(QUEST_CERAM_CYNDAQUIL)
+    } else { //refuse to give TM
+        msgbox(format("Please bring the TM SUNNY DAY for CYNDAQUIL!"))
+        release
     }
 
     applymovement(4, moves(face_up))

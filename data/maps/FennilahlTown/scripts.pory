@@ -24,18 +24,33 @@ script FennilahlTown_EventScript_Woman {
 script FennilahlTown_EventScript_HikerTunnel {
     lockall
     faceplayer
-    if (!flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\nI don't know what to do!\nWill you help me out?"), MSGBOX_YESNO)
 
-        if (var(VAR_RESULT) == 1){
-            msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back for me."))
-            //activate quest
-            startquest(QUEST_FENNILAHL_HIKER)
-        } else {
-            msgbox(format("Oh, what will I do!"))
-        }
+    goto_if_quest_active(QUEST_FENNILAHL_HIKER, Fennilahl_Breech_QuestInProgress)
+    goto_if_quest_inactive(QUEST_FENNILAHL_HIKER, Fennilahl_Breech_StartQuest)
 
+    releaseall
+    end
+}
+
+script Fennilahl_Breech_StartQuest{
+
+    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\nI don't know what to do!\nWill you help me out?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back for me."))
+        //activate quest
+        startquest(QUEST_FENNILAHL_HIKER)
     } else {
+        msgbox(format("Oh, what will I do!"))
+    }
+
+    releaseall
+    end
+}
+
+script Fennilahl_Breech_QuestInProgress{
+
+    if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
         msgbox(format("You brought my STRANGE ROCK? Amazing! How can I thank you for this?"))
         msgbox(format("A CLEFAIRY was keeping it? This is the CLEFAIRY? And it's been following you around because it can't let go of the rock?"))
         release
@@ -52,8 +67,11 @@ script FennilahlTown_EventScript_HikerTunnel {
 
         //complete quest
         completequest(QUEST_FENNILAHL_HIKER) 
-    }    
+    } else {
+        msgbox(format("Why do bad things happen to me?"))        
+    }
     releaseall
+    end
 }
 
 

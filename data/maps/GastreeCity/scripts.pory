@@ -103,7 +103,7 @@ script GastreeCity_NPC7{
 script GastreeCity_NPC8{
     lockall
     faceplayer    
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECKLEON ROCK SMASH so that we can go and explore Route 4 together!"))
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECKLEON CUT so that we can go and explore Route 4 together!"))
     release
     applymovement(5, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -113,7 +113,7 @@ script GastreeCity_NPC8{
     script GastreeCity_NPC_Keckleon{
         lockall
         faceplayer    
-        msgbox(format("KECKLEON: keeee!!\pIt's trying hard to learn ROCK SMASH. Go KECKLEON!"))
+        msgbox(format("KECKLEON: keeee!!\pIt's trying hard to learn CUT. Go KECKLEON!"))
         release
     }
 
@@ -124,6 +124,14 @@ script GastreeCity_NPC9{
     msgbox(format(""))
     release
 }
+
+
+
+
+
+
+
+
 
 
     //Quest NPC
@@ -141,6 +149,7 @@ script GastreeCity_NPC9{
                 setflag(FLAG_GASTREE_NPC_SKITTY)
                 clearflag(FLAG_HIDE_GASTREE_SKITTY)
                 removeitem(ITEM_SKITTY)
+                completequest(QUEST_GASTREE_SKITTY)
                 addobject(12)
 
                 //Complete quest
@@ -148,19 +157,30 @@ script GastreeCity_NPC9{
                 questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_SKITTY)
 
             } else {
-                msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. If you find a SKITTY, please bring her to me, okay?"))
-                //Set quest active
-                questmenu(QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_SKITTY)                
+                questmenu(QUEST_MENU_CHECK_INACTIVE, QUEST_GASTREE_SKITTY)
+
+                if (var(VAR_RESULT) == 1){
+                    //If you find a SKITTY, please bring her to me, okay?
+                    msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. Will you help me out?"), MSGBOX_YESNO)
+
+                    if (var(VAR_RESULT) == 1){
+                        msgbox(format("Oh, you're a lifesaver indeed! SKITTY likes to climb up trees, so she might be stuck up one. If you find her, please bring her to me, okay?"))
+                        startquest(QUEST_GASTREE_SKITTY)          
+                    }
+                } else {
+                    msgbox(format("Have you found my SKITTY yet?"))
+                }
             }
 
         }
-        release
+        releaseall
+        end
     }
 
     script GastreeCity_EventScripts_SkittyTrigger{
 
         if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
-            msgbox(format("There's nothing else up there."))
+            msgbox(format("There's nothing up there."))
         } else {
 
             lockall

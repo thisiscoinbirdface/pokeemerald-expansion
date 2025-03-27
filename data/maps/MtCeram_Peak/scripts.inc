@@ -307,7 +307,7 @@ MtCeramPeak_MainEvent_Trigger::
 # 191 "data//maps/MtCeram_Peak/scripts.pory"
 	setflag FLAG_MT_CERAM_DREAMSTONE
 # 193 "data//maps/MtCeram_Peak/scripts.pory"
-	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2
 # 196 "data//maps/MtCeram_Peak/scripts.pory"
 	warp MAP_ANCIENT_CERAM, 57, 41
 # 197 "data//maps/MtCeram_Peak/scripts.pory"

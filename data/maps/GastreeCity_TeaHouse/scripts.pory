@@ -54,7 +54,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
 
     //Give quest (var becomes 1 for "quest ongoing")
     setvar(VAR_GASTREE_TEASHOP_QUEST, 1)
-    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_GASTREE_TEA)
+    startquest(QUEST_GASTREE_TEA)
 
 
     releaseall
@@ -89,9 +89,10 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     //Text for give reward
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)     
-    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service. I must repay you..."))
+    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service."))
     release
-    msgbox(format("Why don't I give you a reward of some sort?")) //Yes/No option perhaps?
+    completequest(QUEST_GASTREE_TEA)
+    msgbox(format("Now - I must reward you somehow.\pNo no! I insist."))
     release
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
@@ -110,7 +111,6 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
 
     //Setvar = 2 and end quest
     setvar(VAR_GASTREE_TEASHOP_QUEST, 2)
-    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_TEA)
 
     releaseall
 }

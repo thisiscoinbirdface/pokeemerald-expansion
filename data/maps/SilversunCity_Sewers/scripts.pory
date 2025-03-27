@@ -49,8 +49,14 @@ script SilversunCity_Sewers_ManLostWife_Trigger0{
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SKULL gets her? Please help me find her!"))
-        setvar(VAR_SEWERS_DUSKULL, 1)
+
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SCOURGE gets her? Please help me find her!"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Thank you trainer. Please hurry - I don't want the SEWER SCOURGE to get her!"))
+            startquest(QUEST_SILVERSUN_WIFE)
+            setvar(VAR_SEWERS_DUSKULL, 1)
+        }
         releaseall
     }
 }
@@ -62,10 +68,14 @@ script SilversunCity_Sewers_ManLostWife_Trigger1{
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried because this place is teeming with dangerous {PKMN}. Please help me find her!"))
-        setvar(VAR_SEWERS_DUSKULL, 1)
-        applymovement(1, moves(walk_up face_down))
-        waitmovement(0)
+
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SCOURGE gets her? Please help me find her!"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Thank you trainer. Please hurry - I don't want the SEWER SCOURGE to get her!"))
+            startquest(QUEST_SILVERSUN_WIFE)
+            setvar(VAR_SEWERS_DUSKULL, 1)
+        }
         releaseall
     }
 }
@@ -94,6 +104,12 @@ script SilversunCity_Sewers_Duskull_Trigger2{
 
 
 script SilversunCity_Sewers_Duskull_Event{
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     applymovement(9, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     msgbox(format("Eek! Help me! I can feel something attacking me!"))
