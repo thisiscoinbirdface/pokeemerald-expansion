@@ -1741,7 +1741,7 @@ void FogDiagonal_Main(void)
         gWeatherPtr->initStep++;
         break;
     case 1:
-        Weather_SetTargetBlendCoeffs(5, 5, 3);
+        Weather_SetTargetBlendCoeffs(2, 8, 2);
         gWeatherPtr->initStep++;
         break;
     case 2:

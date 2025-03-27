@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_SILVERSUN_CITY",
-      "offset": 1,
+      "offset": -9,
       "direction": "left"
     }
   ],
