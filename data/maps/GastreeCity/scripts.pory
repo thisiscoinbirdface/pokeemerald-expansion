@@ -35,8 +35,6 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
     removeobject(LOCALID_KOHLA)
     
-    //Quest progress
-    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_2)
 
     releaseall
 }

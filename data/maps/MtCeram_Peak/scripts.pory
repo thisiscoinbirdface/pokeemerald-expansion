@@ -190,7 +190,7 @@ script MtCeramPeak_MainEvent_Trigger{
     //Set vars
     setflag(FLAG_MT_CERAM_DREAMSTONE)
     //Quest 
-    questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE)
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2)
     
     //WARP OUT
     warp(MAP_ANCIENT_CERAM, 57, 41)

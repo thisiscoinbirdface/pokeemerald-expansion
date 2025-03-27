@@ -52,7 +52,7 @@ AncientCeram_EventScript_Gabrielle_2:
 # 24 "data//maps/AncientCeram/scripts.pory"
 	msgbox AncientCeram_EventScript_Gabrielle_Text_0
 # 25 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_CERAM_ANCIENT_AREA
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_DREAMSTONE_MYSTERIES
 # 26 "data//maps/AncientCeram/scripts.pory"
 	setvar VAR_ANCIENT_GAB_ESCAPE, 1
 	goto AncientCeram_EventScript_Gabrielle_1
@@ -137,7 +137,7 @@ AncientCeram_EventScript_Exit_11:
 # 79 "data//maps/AncientCeram/scripts.pory"
 	setrespawn HEAL_LOCATION_GALECREST_CITY
 # 81 "data//maps/AncientCeram/scripts.pory"
-	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES
 # 84 "data//maps/AncientCeram/scripts.pory"
 	warp MAP_GALECREST_CITY, 53, 30
 	goto AncientCeram_EventScript_Exit_10

@@ -22,7 +22,6 @@ script AncientCeram_EventScript_Gabrielle{
     //If not spoken yet, do initial dialogue and progress var
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 0){
         msgbox(format("What just happened? Where are we?\p...\pOuch! I can't move my leg!\p{PLAYER}, p-please...you have to help me. I don't know what's going on and where we are. And the boss just...he just left me!!\p...\pI can't get up."))
-        questmenu(QUEST_MENU_SET_ACTIVE, QUEST_CERAM_ANCIENT_AREA)
         setvar(VAR_ANCIENT_GAB_ESCAPE, 1)
     }
     
@@ -77,8 +76,6 @@ script AncientCeram_EventScript_Exit{
         setflag(FLAG_ANCIENT_FIRST_TIME)
         setvar(VAR_ANCIENT_GAB_ESCAPE, 4)
         setrespawn(HEAL_LOCATION_GALECREST_CITY)
-        //Quest complete
-        questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CERAM_ANCIENT_AREA)
         
         //Warp out
         warp(MAP_GALECREST_CITY, 53, 30) 

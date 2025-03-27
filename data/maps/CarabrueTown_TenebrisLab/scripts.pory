@@ -107,12 +107,19 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(3, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: {PLAYER}, Have you got the supplies? No?"))
+        msgbox(format("RUE: {PLAYER}, Have you got the supplies?\nNo?"))
         release
         
         applymovement(3, moves(jump_in_place_down))
         waitmovement(0)
-        msgbox(format("RUE: WHAT?! Professor Tenebris took them? But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
+        msgbox(format("RUE: WHAT?! Professor Tenebris took them?\n...\nRUE: Sigh...at any rate, thanks for telling me, {PLAYER}."))
+        release
+
+            //Complete previous quest
+            completequest(QUEST_LAB_FIRST_DAY)
+            release
+
+        msgbox(format("But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
 
         applymovement(3, moves(face_left))
         waitmovement(0)
@@ -269,14 +276,12 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         setvar(VAR_LAB_STATE, 2)
         setflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
         setflag(FLAG_LAB_CALLTOACTION)
+
         //Set quest active
-            //Complete previous quest
-            questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY)
             //Start next quest
-            questmenu(QUEST_MENU_SET_ACTIVE, QUEST_FIRST_DREAMSTONE)
-            subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_1)
-
-
+            startquest(QUEST_DREAMSTONE_MYSTERIES)
+            subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_1)
+            
         releaseall
     }
 }

@@ -37,7 +37,7 @@ GastreeCity_EventScript_KohlaBattle_Trigger::
 # 36 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_KOHLA
 # 39 "data//maps/GastreeCity/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_2
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2
 # 41 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	return

@@ -1327,18 +1327,18 @@ const u8 gText_QuestActive[] =_("active");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Lab Assistant");
-const u8 gText_SideQuestName_2[] = _("Mt. Ceram Dreamstone");
-const u8 gText_SideQuestName_3[] = _("Food Poisoning");
-const u8 gText_SideQuestName_4[] = _("A Hiker's Treasure");
-const u8 gText_SideQuestName_5[] = _("A Lost Skitty");
-const u8 gText_SideQuestName_6[] = _("Modern Matcha");
-const u8 gText_SideQuestName_7[] = _("Mysterious Area");
-const u8 gText_SideQuestName_8[] = _("Side Quest 8");
-const u8 gText_SideQuestName_9[] = _("Side Quest 9");
-const u8 gText_SideQuestName_10[] = _("Side Quest 10");
-const u8 gText_SideQuestName_11[] = _("Side Quest 11");
-const u8 gText_SideQuestName_12[] = _("Side Quest 12");
-const u8 gText_SideQuestName_13[] = _("Side Quest 13");
+const u8 gText_SideQuestName_2[] = _("Dreamstone Mysteries");
+const u8 gText_SideQuestName_3[] = _("Pokemon Ranger Badge");
+const u8 gText_SideQuestName_4[] = _("Food Poisoning");
+const u8 gText_SideQuestName_5[] = _("A Hiker's Treasure");
+const u8 gText_SideQuestName_6[] = _("A Lost Skitty");
+const u8 gText_SideQuestName_7[] = _("Modern Matcha");
+const u8 gText_SideQuestName_8[] = _("Cyndaquil's Sunny Day");
+const u8 gText_SideQuestName_9[] = _("Precious Pearls");
+const u8 gText_SideQuestName_10[] = _("Malevolent Masterpiece");
+const u8 gText_SideQuestName_11[] = _("I Can't Find My Wife!");
+const u8 gText_SideQuestName_12[] = _("A Chef's Icy Troubles");
+const u8 gText_SideQuestName_13[] = _("Fishy Business");
 const u8 gText_SideQuestName_14[] = _("Side Quest 14");
 const u8 gText_SideQuestName_15[] = _("Side Quest 15");
 const u8 gText_SideQuestName_16[] = _("Side Quest 16");
@@ -1358,19 +1358,19 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("I need to pick up the lab's supplies from the Pokemart \nin Fennilahl Town.");
-const u8 gText_SideQuestDesc_2[] = _("I need to find a dreamstone \nso that the detectives can \nexamine it for clues.");
-const u8 gText_SideQuestDesc_3[] = _("Azurill is sick from food\npoisoning and needs a\nPECHA BERRY.");
-const u8 gText_SideQuestDesc_4[] = _("A hiker has lost a\nSTRANGE STONE in Route 2.");
-const u8 gText_SideQuestDesc_5[] = _("Someone's SKITTY has gone missing!");
-const u8 gText_SideQuestDesc_6[] = _("The old lady who runs the Gastree tea shop wants to\ncreate a modern tea blend.");
-const u8 gText_SideQuestDesc_7[] = _("The dreamstone sent me to a strange rocky area along\nwith GABRIELLE. Where are we?");
-const u8 gText_SideQuestDesc_8[] = _("Description 8");
-const u8 gText_SideQuestDesc_9[] = _("Description 9");
-const u8 gText_SideQuestDesc_10[] = _("Description 10");
-const u8 gText_SideQuestDesc_11[] = _("Description 11");
-const u8 gText_SideQuestDesc_12[] = _("Description 12");
-const u8 gText_SideQuestDesc_13[] = _("Description 13");
+const u8 gText_SideQuestDesc_1[] = _("From today, I'm going to be a LAB ASSISTANT at\nthe TENEBRIS LABORATORY!");
+const u8 gText_SideQuestDesc_2[] = _("I need to solve the mystery of the dreamstones.");
+const u8 gText_SideQuestDesc_3[] = _("My path towards becoming a fully-fledged\n{PKMN} Ranger!");
+const u8 gText_SideQuestDesc_4[] = _("The AZURILL in the house on ROUTE 1 is sick from\nfood poisoning and needs a PECHA BERRY.");
+const u8 gText_SideQuestDesc_5[] = _("A conflict-averse hiker in FENNILAHL TOWN has\nlost a STRANGE STONE in ROUTE 2. Apparently\na {PKMN} stole it from him?");
+const u8 gText_SideQuestDesc_6[] = _("Someone's SKITTY in GASTREE CITY has gone\nmissing! I wonder where she could've gone...");
+const u8 gText_SideQuestDesc_7[] = _("The lady at GASTREE TEAHOUSE wants to create a\nmodern tea blend. She needs 1 REVIVAL HERB,\n1 ENERGY POWDER and 1 SHOAL SALT.");
+const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his CYNDAQUIL\nto learn the move SUNNY DAY. Where can I\nget the TM for SUNNY DAY?");
+const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her pearls\nstolen! I'd better find the robber fast!\nMaybe she'll give me a huge reward...");
+const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in SILVERSUN\nCITY wants BLACK SLUDGE to create the\nperfect shade of black paint.");
+const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
+const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\are broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
+const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");
 const u8 gText_SideQuestDesc_14[] = _("Description 14");
 const u8 gText_SideQuestDesc_15[] = _("Description 15");
 const u8 gText_SideQuestDesc_16[] = _("Description 16");
@@ -1389,19 +1389,30 @@ const u8 gText_SideQuestDesc_28[] = _("Description 28");
 const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
+
+// const u8 gText_SideQuestDesc_6[] = _("Someone's SKITTY in GASTREE CITY has gone\nmissing! I wonder where she could've gone...");
+// const u8 gText_SideQuestDesc_7[] = _("The lady at GASTREE TEAHOUSE wants to create a\nmodern tea blend. She needs 1 REVIVAL HERB,\n1 ENERGY POWDER and 1 SHOAL SALT.");
+// const u8 gText_SideQuestDesc_8[] = _("A trainer in CERAM BASE CAMP wants his CYNDAQUIL\nto learn the move SUNNY DAY. Where can I\nget the TM for SUNNY DAY?");
+// const u8 gText_SideQuestDesc_9[] = _("A rich lady in GALECREST CITY has had her pearls\nstolen! I'd better find the robber fast!\nMaybe she'll give me a huge reward...");
+// const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in SILVERSUN\nCITY wants BLACK SLUDGE to create the\nperfect shade of black paint.");
+// const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
+// const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\are broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
+// const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");
+
+
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can. It's time to head out.");
-const u8 gText_SideQuestDoneDesc_2[] = _("I did reach the dreamstone...but it took me\nto some unknown place along with GABRIELLE.\nWhat happened?");
-const u8 gText_SideQuestDoneDesc_3[] = _("Azurill has recovered and is happy again!");
-const u8 gText_SideQuestDoneDesc_4[] = _("I got Breech's stone...and a new companion!");
-const u8 gText_SideQuestDoneDesc_5[] = _("SKITTY is reunited with her trainer!");
-const u8 gText_SideQuestDoneDesc_6[] = _("The modern blend is done! How does it taste though?");
-const u8 gText_SideQuestDoneDesc_7[] = _("We found another dreamstone that transported us back to ____ city.");
-const u8 gText_SideQuestDoneDesc_8[] = _("Completed Quest 8");
-const u8 gText_SideQuestDoneDesc_9[] = _("Completed Quest 9");
-const u8 gText_SideQuestDoneDesc_10[] = _("Completed Quest 10");
-const u8 gText_SideQuestDoneDesc_11[] = _("Completed Quest 11");
-const u8 gText_SideQuestDoneDesc_12[] = _("Completed Quest 12");
+const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around CORMORIA.");
+const u8 gText_SideQuestDoneDesc_2[] = _("???");    //main quest
+const u8 gText_SideQuestDoneDesc_3[] = _("???");    //ranger side quest
+const u8 gText_SideQuestDoneDesc_4[] = _("Azurill has recovered and is happy again!\nA PECHA BERRY a day keeps the doctor away.");
+const u8 gText_SideQuestDoneDesc_5[] = _("I got BREECH his stone back...and found him\na new companion! I hope to see him and\nCLEFAIRY again soon!");
+const u8 gText_SideQuestDoneDesc_6[] = _("SKITTY is reunited with her trainer!");
+const u8 gText_SideQuestDoneDesc_7[] = _("The modern blend is done! How does it taste\nthough? The lady at the GASTREE TEAHOUSE\ngifted me a POLTCHAGEIST for my help!");
+const u8 gText_SideQuestDoneDesc_8[] = _("I taught the CYNDAQUIL the move SUNN DAY!\nBoth CYNDAQUIL and the trainer are set for\ntheir {PKMN} adventure now.");
+const u8 gText_SideQuestDoneDesc_9[] = _("I found the robber and returned the pearsl!\nBut the horrid lady charged me money for\nbeing late! Is that why she's rich?");
+const u8 gText_SideQuestDoneDesc_10[] = _("The BLACK SLUDGE created the perfect shade\nof black paint! Maybe this artist is really\na maestro after all.");
+const u8 gText_SideQuestDoneDesc_11[] = _("Husband and wife have been successfully\nreunited. The blind wife now has a helper\n{PKMN} so all's well that ends well!");
+const u8 gText_SideQuestDoneDesc_12[] = _("The NEVERMELT ICE can keep the ingredients\ncool until they get a ROTOM FRIDGE.");
 const u8 gText_SideQuestDoneDesc_13[] = _("Completed Quest 13");
 const u8 gText_SideQuestDoneDesc_14[] = _("Completed Quest 14");
 const u8 gText_SideQuestDoneDesc_15[] = _("Completed Quest 15");
@@ -1461,21 +1472,44 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
 
 //subquests
 
-    //LAB ASSISTANT (FIRST QUEST)
+    //LAB ASSISTANT (INTRO QUEST)
     const u8 gText_SubQuest1_Name1[] = _("My First Day");
     const u8 gText_SubQuest1_Name2[] = _("Lab Supplies");
     const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
 
-    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTenebris Lab with my WELCOME PACKAGE.\nI shouldn't be late at any cost!");
-    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
-    const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken \nthe supplies! I need to tell \nAssistant Professor Rue.");
+    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTENEBRIS LAB with my WELCOME PACKAGE.\nI shouldn't be late at any cost!");
+    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the lab's supplies from the\nPokemart in FENNILAHL TOWN. It has my\nstarter {PKMN}! And some important stuff.");
+    const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken the\nsupplies! I need to tell ASST PROF RUE as\nsoon as possible.");
 
-    //MT CERAM DREAMSTONE (SECOND QUEST)
-    const u8 gText_SubQuest2_Name1[] = _("Part 1");
-    const u8 gText_SubQuest2_Name2[] = _("Part 2");
-    const u8 gText_SubQuest2_Name3[] = _("Part 3");
+    //MT CERAM DREAMSTONE (MAIN QUEST)
+    const u8 gText_SubQuest2_Name1[] = _("Dreamstone on MT CERAM");
+    const u8 gText_SubQuest2_Name2[] = _("Mysterious Area");
+    const u8 gText_SubQuest2_Name3[] = _("Silversun Sighting");
+    const u8 gText_SubQuest2_Name4[] = _("Of Drama & Desire");
+    const u8 gText_SubQuest2_Name5[] = _("Knowledge of a Past Era");
+    const u8 gText_SubQuest2_Name6[] = _("Stop The Dreamalyser!");
+    const u8 gText_SubQuest2_Name7[] = _("Part 7");
+    const u8 gText_SubQuest2_Name8[] = _("Part 8");
+    const u8 gText_SubQuest2_Name9[] = _("Part 9");
+    const u8 gText_SubQuest2_Name10[] = _("Part 10");
 
-    const u8 gText_SubQuest2_Desc1[] = _("Description Sub 1");
-    const u8 gText_SubQuest2_Desc2[] = _("Description Sub 2");
-    const u8 gText_SubQuest2_Desc3[] = _("Description Sub 3");
+    const u8 gText_SubQuest2_Desc1[] = _("The first dreamstone is atop MT CERAM.\nI need to cross ROUTE 3 to GASTREE CITY,\nthen head north towards the CERAM BASE CAMP.");
+    const u8 gText_SubQuest2_Desc2[] = _("The dreamstone transported me and GABRIELLE\nto a mysterious area! I don't recognise the\n{PKMN} here. I need to find a way back.");
+    const u8 gText_SubQuest2_Desc3[] = _("Someone matching PROF TENEBRIS' description\nwas spotted in SILVERSUN CITY! TEAM SOMBER\nis there too, so I need to go there fast.");
+    const u8 gText_SubQuest2_Desc4[] = _("TEAM SOMBER's hideout is somewhere here.\nIf they've taken PROF TENEBRIS hostage, it\ncould spell trouble. Gotta find them!");
+    const u8 gText_SubQuest2_Desc5[] = _("I'm going to the PELLUCA LIBRARY to do some\nresearch. What is in ANCIENT CORMORIA that\nTEAM SOMBER wants so badly?");
+    const u8 gText_SubQuest2_Desc6[] = _("I know what TEAM SOMBER wants. And they're\nabout to get it atop MT MIRROH. I have to\nstop them!");
+    const u8 gText_SubQuest2_Desc7[] = _("Description Sub 7");
+    const u8 gText_SubQuest2_Desc8[] = _("Description Sub 8");
+    const u8 gText_SubQuest2_Desc9[] = _("Description Sub 9");
+    const u8 gText_SubQuest2_Desc10[] = _("Description Sub 10");
+
+    //POKEMON RANGER (ONGOING BIG SIDE QUEST)
+    const u8 gText_SubQuest3_Name1[] = _("A Ranger's First Assignment");
+    const u8 gText_SubQuest3_Name2[] = _("???");
+    const u8 gText_SubQuest3_Name3[] = _("???");
+
+    const u8 gText_SubQuest4_Desc1[] = _("Ranger Chief RAVINE has asked me to deliver\nan important package to the RANGER INSTITUTE\nat IVY RIVER. I can't let her down!");
+    const u8 gText_SubQuest4_Desc2[] = _("???");
+    const u8 gText_SubQuest5_Desc3[] = _("???");
 

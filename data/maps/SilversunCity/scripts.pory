@@ -38,6 +38,7 @@ script SilversunCity_OnFrame{
             //Set flag
             setflag(FLAG_HIDE_SILVERSUN_PROF)
             setflag(FLAG_SILVERSUN_NEXTQUEST)
+            subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_5) 
 
             //End
             releaseall
@@ -82,7 +83,8 @@ script SilversunCity_EventScript_Detectives{
         release
 
         //setvars and quest
-        setflag(FLAG_SILVERSUN_DETECTIVES_ENTER)    
+        setflag(FLAG_SILVERSUN_DETECTIVES_ENTER) 
+        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_4)   
     }
 
     releaseall

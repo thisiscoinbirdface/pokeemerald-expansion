@@ -25,9 +25,16 @@ script FennilahlTown_EventScript_HikerTunnel {
     lockall
     faceplayer
     if (!flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\nI don't know what to do!"))
-        //activate quest
-        questmenu(QUEST_MENU_SET_ACTIVE, QUEST_FENNILAHL_HIKER)
+        msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\nI don't know what to do!\nWill you help me out?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back for me."))
+            //activate quest
+            startquest(QUEST_FENNILAHL_HIKER)
+        } else {
+            msgbox(format("Oh, what will I do!"))
+        }
+
     } else {
         msgbox(format("You brought my STRANGE ROCK? Amazing! How can I thank you for this?"))
         msgbox(format("A CLEFAIRY was keeping it? This is the CLEFAIRY? And it's been following you around because it can't let go of the rock?"))
@@ -44,10 +51,21 @@ script FennilahlTown_EventScript_HikerTunnel {
         removeitem(ITEM_STRANGE_ROCK)
 
         //complete quest
-        questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_FENNILAHL_HIKER) 
+        completequest(QUEST_FENNILAHL_HIKER) 
     }    
     releaseall
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 script FennilahlTown_Sign_Entrance {

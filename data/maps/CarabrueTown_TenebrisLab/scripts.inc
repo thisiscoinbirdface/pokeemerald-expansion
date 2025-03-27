@@ -413,9 +413,9 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies::
 # 274 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY
 # 276 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_FIRST_DREAMSTONE
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_DREAMSTONE_MYSTERIES
 # 277 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_FIRST_DREAMSTONE, SUB_QUEST_1
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_1
 # 280 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	return
