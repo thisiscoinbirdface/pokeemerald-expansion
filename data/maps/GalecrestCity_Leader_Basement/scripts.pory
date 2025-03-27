@@ -1,6 +1,15 @@
-mapscripts GalecrestCity_Leader_Basement_MapScripts{}
+mapscripts GalecrestCity_Leader_Basement_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: GalecrestCity_Leader_Basement_Litwick_OnTransition
+}
+
+script GalecrestCity_Leader_Basement_Litwick_OnTransition{
+    setflashlevel(7)
+    end
+}
 
 script GalecrestCity_Leader_Basement_Litwick{
+    animateflash(5)
+    delay(20)  
     setwildbattle(SPECIES_LITWICK, 20)
     dowildbattle
     removeobject(1)
