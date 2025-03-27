@@ -29,22 +29,25 @@ Route1_House_QuestInProgress::
 	msgbox Route1_House_QuestInProgress_Text_0, MSGBOX_YESNO
 # 21 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Route1_House_QuestInProgress_1
+	goto_if_eq Route1_House_QuestInProgress_2
 # 40 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_QuestInProgress_Text_6
-	return
-
 Route1_House_QuestInProgress_1:
+# 43 "data//maps/Route1_House/scripts.pory"
+	releaseall
+	end
+
+Route1_House_QuestInProgress_2:
 # 22 "data//maps/Route1_House/scripts.pory"
 	checkitem ITEM_PECHA_BERRY
 # 23 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Route1_House_QuestInProgress_4
+	goto_if_eq Route1_House_QuestInProgress_5
 # 37 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_QuestInProgress_Text_5
-	return
+	goto Route1_House_QuestInProgress_1
 
-Route1_House_QuestInProgress_4:
+Route1_House_QuestInProgress_5:
 # 24 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_QuestInProgress_Text_1
 # 25 "data//maps/Route1_House/scripts.pory"
@@ -69,36 +72,36 @@ Route1_House_QuestInProgress_4:
 	giveitem ITEM_TM_RETURN
 # 35 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_QuestInProgress_Text_4
-	return
+	goto Route1_House_QuestInProgress_1
 
 
 Route1_House_StartQuest::
-# 45 "data//maps/Route1_House/scripts.pory"
+# 48 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_StartQuest_Text_0, MSGBOX_YESNO
-# 47 "data//maps/Route1_House/scripts.pory"
+# 50 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route1_House_StartQuest_2
-# 51 "data//maps/Route1_House/scripts.pory"
+# 54 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_StartQuest_Text_2
 Route1_House_StartQuest_1:
-# 53 "data//maps/Route1_House/scripts.pory"
+# 56 "data//maps/Route1_House/scripts.pory"
 	releaseall
 	end
 
 Route1_House_StartQuest_2:
-# 48 "data//maps/Route1_House/scripts.pory"
+# 51 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_StartQuest_Text_1
-# 49 "data//maps/Route1_House/scripts.pory"
+# 52 "data//maps/Route1_House/scripts.pory"
 	startquest QUEST_ROUTE1_PECHA_BERRY
 	goto Route1_House_StartQuest_1
 
 
 Route1_House_Azurill::
-# 60 "data//maps/Route1_House/scripts.pory"
+# 63 "data//maps/Route1_House/scripts.pory"
 	lockall
-# 61 "data//maps/Route1_House/scripts.pory"
+# 64 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_Azurill_Text_0
-# 62 "data//maps/Route1_House/scripts.pory"
+# 65 "data//maps/Route1_House/scripts.pory"
 	releaseall
 	return
 
@@ -126,8 +129,8 @@ Route1_House_QuestInProgress_Text_2:
 # 30 "data//maps/Route1_House/scripts.pory"
 	.string "Here sweetheart, this kind trainer has\n"
 	.string "brought you a PECHA BERRY.\p"
-	.string "AZURILL: zuuu!!!!!\p"
-	.string "It seems to have revived$"
+	.string "AZURILL: zuuu!!!!!\n"
+	.string "It seems to have revived!$"
 
 Route1_House_QuestInProgress_Text_3:
 # 33 "data//maps/Route1_House/scripts.pory"
@@ -151,7 +154,7 @@ Route1_House_QuestInProgress_Text_6:
 	.string "Please hurry - my baby's suffering!$"
 
 Route1_House_StartQuest_Text_0:
-# 45 "data//maps/Route1_House/scripts.pory"
+# 48 "data//maps/Route1_House/scripts.pory"
 	.string "I think my poor baby AZURILL ate\n"
 	.string "something bad and now has food\l"
 	.string "poisoning! I wish I had a PECHA BERRY to\l"
@@ -160,16 +163,16 @@ Route1_House_StartQuest_Text_0:
 	.string "BERRY for my baby?$"
 
 Route1_House_StartQuest_Text_1:
-# 48 "data//maps/Route1_House/scripts.pory"
+# 51 "data//maps/Route1_House/scripts.pory"
 	.string "Oh, thank you so much. You're very kind.\n"
 	.string "I'll be waiting here.$"
 
 Route1_House_StartQuest_Text_2:
-# 51 "data//maps/Route1_House/scripts.pory"
+# 54 "data//maps/Route1_House/scripts.pory"
 	.string "You'd watch AZURILL suffer? You're so\n"
 	.string "cold-hearted!$"
 
 Route1_House_Azurill_Text_0:
-# 61 "data//maps/Route1_House/scripts.pory"
+# 64 "data//maps/Route1_House/scripts.pory"
 	.string "AZURILL: zu...\p"
 	.string "AZURILL looks quite sick.$"

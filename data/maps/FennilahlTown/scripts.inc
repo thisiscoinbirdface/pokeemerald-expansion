@@ -76,10 +76,10 @@ Fennilahl_Breech_StartQuest_2:
 Fennilahl_Breech_QuestInProgress::
 # 53 "data//maps/FennilahlTown/scripts.pory"
 	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, Fennilahl_Breech_QuestInProgress_2
-# 71 "data//maps/FennilahlTown/scripts.pory"
+# 72 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_QuestInProgress_Text_5
 Fennilahl_Breech_QuestInProgress_1:
-# 73 "data//maps/FennilahlTown/scripts.pory"
+# 74 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
@@ -101,41 +101,43 @@ Fennilahl_Breech_QuestInProgress_2:
 # 61 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_QuestInProgress_Text_4
 # 62 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 5, Fennilahl_Breech_QuestInProgress_Movement_0
+	release
 # 63 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
+	applymovement 5, Fennilahl_Breech_QuestInProgress_Movement_0
 # 64 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 5
+	waitmovement 0
 # 65 "data//maps/FennilahlTown/scripts.pory"
-	setflag FLAG_FENNILAHL_HIKER_BLOCK
+	removeobject 5
 # 66 "data//maps/FennilahlTown/scripts.pory"
+	setflag FLAG_FENNILAHL_HIKER_BLOCK
+# 67 "data//maps/FennilahlTown/scripts.pory"
 	removeitem ITEM_STRANGE_ROCK
-# 69 "data//maps/FennilahlTown/scripts.pory"
+# 70 "data//maps/FennilahlTown/scripts.pory"
 	completequest QUEST_FENNILAHL_HIKER
 	goto Fennilahl_Breech_QuestInProgress_1
 
 
 FennilahlTown_Sign_Entrance::
-# 90 "data//maps/FennilahlTown/scripts.pory"
+# 91 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Entrance_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route2::
-# 95 "data//maps/FennilahlTown/scripts.pory"
+# 96 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route2_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route3::
-# 100 "data//maps/FennilahlTown/scripts.pory"
+# 101 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route3_Text_0, MSGBOX_SIGN
 	end
 
 
-# 62 "data//maps/FennilahlTown/scripts.pory"
+# 63 "data//maps/FennilahlTown/scripts.pory"
 Fennilahl_Breech_QuestInProgress_Movement_0:
-# 62 "data//maps/FennilahlTown/scripts.pory"
+# 63 "data//maps/FennilahlTown/scripts.pory"
 	walk_up
 	step_end
 
@@ -164,17 +166,16 @@ Fennilahl_Breech_StartQuest_Text_0:
 	.string "south of town, but a small PINK {PKMN} took\l"
 	.string "it and ran away! And I don't have any\l"
 	.string "{PKMN} to help me get it back! I don't want\l"
-	.string "to battle - I can't deal with conflict.\n"
-	.string "I don't know what to do!\n"
-	.string "Will you help me out?$"
+	.string "to battle - I can't deal with conflict.\p"
+	.string "I don't know what to do! Will you help me\n"
+	.string "out?$"
 
 Fennilahl_Breech_StartQuest_Text_1:
 # 40 "data//maps/FennilahlTown/scripts.pory"
 	.string "Amazing! You've answered my prayers. I\n"
 	.string "saw the pink {PKMN} run down south,\l"
 	.string "towards ROUTE 2. I really liked that\l"
-	.string "STRANGE ROCK! Please bring it back for\l"
-	.string "me.$"
+	.string "STRANGE ROCK! Please bring it back.$"
 
 Fennilahl_Breech_StartQuest_Text_2:
 # 44 "data//maps/FennilahlTown/scripts.pory"
@@ -205,7 +206,7 @@ Fennilahl_Breech_QuestInProgress_Text_3:
 
 Fennilahl_Breech_QuestInProgress_Text_4:
 # 61 "data//maps/FennilahlTown/scripts.pory"
-	.string "Thank you trainer! My name is Breech.\n"
+	.string "Thank you trainer! My name is BREECH.\n"
 	.string "I'm just a simple man who loves\l"
 	.string "collecting rocks. Even with CLEFAIRY by\l"
 	.string "my side, I won't battle. CLEFAIRY and I\l"
@@ -213,20 +214,20 @@ Fennilahl_Breech_QuestInProgress_Text_4:
 	.string "mountains now. See you again soon!$"
 
 Fennilahl_Breech_QuestInProgress_Text_5:
-# 71 "data//maps/FennilahlTown/scripts.pory"
+# 72 "data//maps/FennilahlTown/scripts.pory"
 	.string "Why do bad things happen to me?$"
 
 FennilahlTown_Sign_Entrance_Text_0:
-# 90 "data//maps/FennilahlTown/scripts.pory"
+# 91 "data//maps/FennilahlTown/scripts.pory"
 	.string "FENNILAHL TOWN\n"
 	.string "Connecting Mt. Ceram and Vine River.$"
 
 FennilahlTown_Sign_Route2_Text_0:
-# 95 "data//maps/FennilahlTown/scripts.pory"
+# 96 "data//maps/FennilahlTown/scripts.pory"
 	.string "{DOWN_ARROW}ROUTE 2\n"
 	.string "Connecting to Vine River.$"
 
 FennilahlTown_Sign_Route3_Text_0:
-# 100 "data//maps/FennilahlTown/scripts.pory"
+# 101 "data//maps/FennilahlTown/scripts.pory"
 	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
 	.string "To Route 3 and GASTREE CITY.$"

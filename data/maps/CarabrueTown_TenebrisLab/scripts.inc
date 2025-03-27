@@ -1011,9 +1011,9 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_3:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_4:
 # 115 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "RUE: WHAT?! Professor Tenebris took\n"
-	.string "them?\n"
-	.string "...\n"
-	.string "RUE: Sigh...at any rate, thanks for\l"
+	.string "them?\p"
+	.string "...\p"
+	.string "RUE: Sigh...at any rate, thanks for\n"
 	.string "telling me, {PLAYER}.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_5:
@@ -1042,7 +1042,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_7:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_8:
 # 138 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "RUE: This right here is our lab's pride\n"
-	.string "and joy - the Dreamalyser. Once\l"
+	.string "and joy - the DREAMALYSER. Once\l"
 	.string "powered, it'll allow us to study the\l"
 	.string "fluctuations in power and energy that\l"
 	.string "Pokemon undergo while in deep sleep.\l"
@@ -1070,7 +1070,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_10:
 	.string "{PLAYER}, your companion {PKMN}...and one\l"
 	.string "dreamstone. One of the only three\l"
 	.string "dreamstones that exist. And just as we\l"
-	.string "would have powered up the Dreamalyser\l"
+	.string "would have powered up the DREAMALYSER\l"
 	.string "for the first time ever, the Professor\l"
 	.string "took the dreamstone and disappeared!\l"
 	.string "Oh, why did he leave? What on earth was\l"
@@ -1124,8 +1124,8 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_18:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_19:
 # 171 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "DETECTIVE: A two-pronged strategy -\n"
-	.string "while we track the Professor, one of\l"
+	.string "DETECTIVE: A two-pronged strategy.\n"
+	.string "While we track the Professor, one of\l"
 	.string "you should find a dreamstone for us to\l"
 	.string "examine for clues.$"
 
