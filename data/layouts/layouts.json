@@ -4836,7 +4836,7 @@
       "name": "SilversunCity_Layout",
       "width": 52,
       "height": 48,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SilversunPrimary",
       "secondary_tileset": "gTileset_Silversun",
       "border_filepath": "data/layouts/SilversunCity/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity/map.bin"

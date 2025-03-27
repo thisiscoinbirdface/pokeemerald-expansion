@@ -5,8 +5,8 @@
   "music": "MUS_CUSTOM_SENSIBLE",
   "region_map_section": "MAPSEC_SILVERSUN_CITY",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -28,7 +28,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 25,
-      "y": 30,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -67,7 +67,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 22,
-      "y": 29,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 2,
@@ -80,7 +80,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 35,
-      "y": 31,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 2,
@@ -89,19 +89,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SilversunCity_NPC4",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
-      "x": 32,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilversunCity_EventScript_Detectives",
-      "flag": "FLAG_SILVERSUN_NEXTQUEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ARTIST",
@@ -117,9 +104,22 @@
       "flag": "FLAG_SILVERSUN_NEXTQUEST"
     },
     {
+      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
+      "x": 32,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SilversunCity_EventScript_Detectives",
+      "flag": "FLAG_SILVERSUN_NEXTQUEST"
+    },
+    {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
       "x": 33,
-      "y": 6,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -166,62 +166,62 @@
     },
     {
       "x": 23,
-      "y": 27,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
       "x": 24,
-      "y": 27,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_THEATER_ENTRANCE",
       "dest_warp_id": "1"
     },
     {
-      "x": 21,
+      "x": 24,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "9"
     },
     {
-      "x": 39,
-      "y": 39,
+      "x": 37,
+      "y": 38,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_SEWERS",
       "dest_warp_id": "0"
     },
     {
-      "x": 40,
+      "x": 39,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "0"
     },
     {
-      "x": 37,
-      "y": 5,
+      "x": 36,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "2"
     },
     {
-      "x": 13,
-      "y": 27,
+      "x": 15,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "4"
     },
     {
-      "x": 36,
-      "y": 28,
+      "x": 35,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
       "dest_warp_id": "6"
     },
     {
-      "x": 16,
+      "x": 19,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_GYM",
