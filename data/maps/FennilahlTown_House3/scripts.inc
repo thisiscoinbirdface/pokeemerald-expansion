@@ -26,6 +26,18 @@ FennilahlTown_House3_NPC2::
 	return
 
 
+FennilahlTown_House3_Mawile::
+# 20 "data//maps/FennilahlTown_House3/scripts.pory"
+	lockall
+# 21 "data//maps/FennilahlTown_House3/scripts.pory"
+	faceplayer
+# 22 "data//maps/FennilahlTown_House3/scripts.pory"
+	playmoncry SPECIES_MAWILE, CRY_MODE_NORMAL
+# 23 "data//maps/FennilahlTown_House3/scripts.pory"
+	releaseall
+	return
+
+
 FennilahlTown_House3_NPC1_Text_0:
 # 7 "data//maps/FennilahlTown_House3/scripts.pory"
 	.string "Did you know that some {PKMN} can Mega\n"

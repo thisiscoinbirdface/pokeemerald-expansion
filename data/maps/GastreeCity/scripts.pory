@@ -81,6 +81,12 @@ script GastreeCity_NPC5{
     release
 }
 
+script GastreeCity_Mankey{
+    lockall
+    playmoncry(SPECIES_MANKEY, CRY_MODE_NORMAL)
+    msgbox(format("MANKEY is getting angry at his trainer's cold feet."))
+}
+
     //Info
 script GastreeCity_NPC6{
     lockall

@@ -145,7 +145,7 @@
 #define FLAG_HIDE_SILVERSUN_DUSKULL_NPCS  0x293 // Unused Flag
 #define FLAG_FIGHTING_DOJO_QUEST  0x294 // Unused Flag
 #define FLAG_TENEBRIS_GARDEVOIR  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
+#define FLAG_GASTREE_HOUSE1_BUNEARY 0x296 // Unused Flag
 #define FLAG_UNUSED_0x297  0x297 // Unused Flag
 #define FLAG_UNUSED_0x298  0x298 // Unused Flag
 #define FLAG_UNUSED_0x299  0x299 // Unused Flag

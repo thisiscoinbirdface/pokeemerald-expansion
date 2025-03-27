@@ -14,9 +14,42 @@ GastreeCity_House1_NPC1::
 	return
 
 
+GastreeCity_House1_Buneary::
+# 11 "data//maps/GastreeCity_House1/scripts.pory"
+	lockall
+# 12 "data//maps/GastreeCity_House1/scripts.pory"
+	faceplayer
+# 13 "data//maps/GastreeCity_House1/scripts.pory"
+	playmoncry SPECIES_BUNEARY, CRY_MODE_NORMAL
+# 15 "data//maps/GastreeCity_House1/scripts.pory"
+	goto_if_set FLAG_GASTREE_HOUSE1_BUNEARY, GastreeCity_House1_Buneary_1
+# 18 "data//maps/GastreeCity_House1/scripts.pory"
+	msgbox GastreeCity_House1_Buneary_Text_1
+# 19 "data//maps/GastreeCity_House1/scripts.pory"
+	giveitem ITEM_CHARTI_BERRY, 2
+# 20 "data//maps/GastreeCity_House1/scripts.pory"
+	setflag FLAG_GASTREE_HOUSE1_BUNEARY
+	return
+
+GastreeCity_House1_Buneary_1:
+# 16 "data//maps/GastreeCity_House1/scripts.pory"
+	msgbox GastreeCity_House1_Buneary_Text_0
+	return
+
+
 GastreeCity_House1_NPC1_Text_0:
 # 6 "data//maps/GastreeCity_House1/scripts.pory"
 	.string "GASTREE CITY sits on hilly terrain,\n"
-	.string "connecting the plains to the south, the\l"
-	.string "hills to the east, and the mountains to\l"
-	.string "the north.$"
+	.string "connecting the hill stations of\l"
+	.string "FENNILAHL TOWN and CARABRUE TOWN to\l"
+	.string "the east and MT CERAM to the north.\l"
+	.string "Lovely weather for me and BUNEARY!$"
+
+GastreeCity_House1_Buneary_Text_0:
+# 16 "data//maps/GastreeCity_House1/scripts.pory"
+	.string "BUNEARY looks curiously at your {PKMN}...$"
+
+GastreeCity_House1_Buneary_Text_1:
+# 18 "data//maps/GastreeCity_House1/scripts.pory"
+	.string "BUNEARY looks curiously at your {PKMN}...it\n"
+	.string "hands you something!$"

@@ -40,10 +40,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BARD",
-      "x": 17,
-      "y": 4,
+      "x": 19,
+      "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -54,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 13,
-      "y": 10,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -131,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-      "x": 16,
-      "y": 4,
+      "x": 19,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -169,9 +169,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPECIES_SKITTY)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKITTY)",
       "x": 12,
-      "y": 10,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -180,6 +180,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GastreeCity_NPC_Skitty",
       "flag": "FLAG_HIDE_GASTREE_SKITTY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANKEY)",
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GastreeCity_Mankey",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -234,7 +247,7 @@
     },
     {
       "x": 15,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
       "dest_warp_id": "5"
@@ -246,8 +259,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 6,
-      "y": 18,
+      "x": 16,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"

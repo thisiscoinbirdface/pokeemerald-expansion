@@ -3,8 +3,23 @@ mapscripts GastreeCity_House1_MapScripts{}
 script GastreeCity_House1_NPC1{
     lockall
     faceplayer    
-    msgbox(format("GASTREE CITY sits on hilly terrain, connecting the plains to the south, the hills to the east, and the mountains to the north."))
+    msgbox(format("GASTREE CITY sits on hilly terrain, connecting the hill stations of FENNILAHL TOWN and CARABRUE TOWN to the east and MT CERAM to the north. Lovely weather for me and BUNEARY!"))
     release
 }
+
+script GastreeCity_House1_Buneary{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_BUNEARY, CRY_MODE_NORMAL)
+
+    if (flag(FLAG_GASTREE_HOUSE1_BUNEARY)){
+        msgbox(format("BUNEARY looks curiously at your {PKMN}..."))
+    } else {
+        msgbox(format("BUNEARY looks curiously at your {PKMN}...it hands you something!"))
+        giveitem(ITEM_CHARTI_BERRY, 2)
+        setflag(FLAG_GASTREE_HOUSE1_BUNEARY)
+    }
+}
+
 
 

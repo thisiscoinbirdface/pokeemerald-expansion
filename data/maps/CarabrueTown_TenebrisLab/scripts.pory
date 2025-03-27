@@ -485,13 +485,15 @@ script CarabrueTown_TenebrisLab_Gardevoir{
     playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
 
     if (flag(FLAG_TENEBRIS_GARDEVOIR)){
+        msgbox(format("GARDEVOIR regards you intently..."))  
+    } else {
         msgbox(format("GARDEVOIR regards you intently...\psomething floats into your hand!"))
         giveitem(ITEM_STARF_BERRY)
         msgbox(format("Was this her way of welcoming a new member of the lab?\pThank you, GARDEVOIR!"))
-    } else {
-        msgbox(format("GARDEVOIR regards you intently..."))        
+        setflag(FLAG_TENEBRIS_GARDEVOIR)              
     }
-
+    releaseall
+    end
 }
 
 script CarabrueTown_TenebrisLab_Metagross{
@@ -499,6 +501,8 @@ script CarabrueTown_TenebrisLab_Metagross{
     faceplayer
     playmoncry(SPECIES_METAGROSS, CRY_MODE_NORMAL)
     msgbox(format("It's ASST PROF RUE's METAGROSS. It's so intimidating!"))
+    releaseall
+    end
 }
 
 

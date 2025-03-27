@@ -94,7 +94,7 @@ CarabrueTown_Chikorita::
 # 72 "data//maps/CarabrueTown/scripts.pory"
 	faceplayer
 # 73 "data//maps/CarabrueTown/scripts.pory"
-	playmoncry SPECIES_CHIKORITA
+	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
 # 74 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
 	return

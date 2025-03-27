@@ -97,12 +97,14 @@ Route3_TrainerBattle_Ronnie_Text_2:
 
 Route3_TrainerBattle_Jana_Text_0:
 # 23 "data//maps/Route3/scripts.pory"
-	.string "I'm a {PKMN} Breeder! I spend my time\n"
-	.string "training my {PKMN} with love and care.$"
+	.string "I'm a {PKMN} Breeder! All Breeders\n"
+	.string "specialise in one {PKMN} variety, such as\l"
+	.string "dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can\l"
+	.string "you guess my specialty?$"
 
 Route3_TrainerBattle_Jana_Text_1:
 # 23 "data//maps/Route3/scripts.pory"
-	.string "More love! More care!$"
+	.string "I love foxes!$"
 
 Route3_TrainerBattle_Jana_Text_2:
 # 24 "data//maps/Route3/scripts.pory"
