@@ -2,7 +2,7 @@
   "id": "MAP_ANCIENT_CERAM",
   "name": "AncientCeram",
   "layout": "LAYOUT_ANCIENT_CERAM",
-  "music": "MUS_CUSTOM_FLOCKOFBIRDS",
+  "music": "MUS_VERDANTURF",
   "region_map_section": "MAPSEC_ANCIENT_CERAM",
   "requires_flash": false,
   "weather": "WEATHER_SANDSTORM",

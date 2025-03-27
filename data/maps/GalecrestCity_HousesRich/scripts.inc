@@ -329,4 +329,4 @@ GalecrestCity_HousesRich_NPC9_Text_2:
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
 # 139 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "KECKLEON glares intently at you.$"
+	.string "GLALIE glares intently at you.$"

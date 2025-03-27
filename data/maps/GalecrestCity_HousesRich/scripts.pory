@@ -136,7 +136,7 @@ script GalecrestCity_HousesRich_NPC9{
 script GalecrestCity_HousesRich_Keckleon{
     lockall
     faceplayer
-    msgbox(format("KECKLEON glares intently at you."))
+    msgbox(format("GLALIE glares intently at you."))
     releaseall
 }
 

@@ -1328,3 +1328,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IveRiver_Caves/scripts.inc"
 
 	.include "data/maps/WinterlilyHollowGym/scripts.inc"
+
+	.include "data/maps/GalecrestCity_Leader_Basement/scripts.inc"

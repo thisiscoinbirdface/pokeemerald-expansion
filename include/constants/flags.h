@@ -148,7 +148,7 @@
 #define FLAG_GASTREE_HOUSE1_BUNEARY 0x296 // Unused Flag
 #define FLAG_ROUTE4_COOK  0x297 // Unused Flag
 #define FLAG_ROUTE4_KIDGANG  0x298 // Unused Flag
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
+#define FLAG_GALECREST_LITWICK  0x299 // Unused Flag
 #define FLAG_UNUSED_0x29A  0x29A // Unused Flag
 #define FLAG_UNUSED_0x29B  0x29B // Unused Flag
 #define FLAG_UNUSED_0x29C  0x29C // Unused Flag

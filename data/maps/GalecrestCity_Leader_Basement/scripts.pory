@@ -1,0 +1,12 @@
+mapscripts GalecrestCity_Leader_Basement_MapScripts{}
+
+script GalecrestCity_Leader_Basement_Litwick{
+    setwildbattle(SPECIES_LITWICK, 20)
+    dowildbattle
+    removeobject(1)
+    setflag(FLAG_GALECREST_LITWICK)
+    releaseall
+    end
+}
+
+

@@ -485,15 +485,15 @@ MtCeram_EventScript_Gabrielle::
 # 399 "data//maps/MtCeram/scripts.pory"
 	release
 # 400 "data//maps/MtCeram/scripts.pory"
-	applymovement 5, MtCeram_EventScript_BeforePeakBattle_Movement_1
-# 401 "data//maps/MtCeram/scripts.pory"
-	release
-# 402 "data//maps/MtCeram/scripts.pory"
 	delay 30
+# 401 "data//maps/MtCeram/scripts.pory"
+	applymovement 5, MtCeram_EventScript_BeforePeakBattle_Movement_1
+# 402 "data//maps/MtCeram/scripts.pory"
+	release
 # 403 "data//maps/MtCeram/scripts.pory"
 	faceplayer
 # 404 "data//maps/MtCeram/scripts.pory"
-	delay 30
+	delay 20
 # 405 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_Gabrielle_Text_1
 # 406 "data//maps/MtCeram/scripts.pory"

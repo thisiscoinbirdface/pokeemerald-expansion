@@ -397,14 +397,14 @@ script MtCeram_EventScript_Gabrielle{
     lockall
     msgbox(format("GABRIELLE: Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\p..."))
     release
+    delay(30)
     applymovement(5, moves(emote_exclamation_mark))
-    release
-    delay(30)
+    release    
     faceplayer
-    delay(30)
+    delay(20)
     msgbox(format("GABRIELLE: Don't look at me like that! You don't know what its like..."))
     release
-        applymovement(5, moves(face_left))
+    applymovement(5, moves(face_left))
     releaseall
 }
 

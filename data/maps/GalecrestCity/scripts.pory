@@ -279,6 +279,15 @@ script GalecrestCity_NPC_4{
     releaseall
 }
 
+script GalecrestCity_Froakie{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_FROAKIE, CRY_MODE_ENCOUNTER)
+    msgbox(format("FROAKIE is having fun with the siblings!"))
+    releaseall
+    end
+}
+
 //Give an item
 script GalecrestCity_NPC_5{
     lockall
@@ -383,10 +392,10 @@ script GalecrestCity_NPC_14{
     lockall
 
     if (var(VAR_GALECREST_RICH_PEARLS) == 0){
-        msgbox(format("Hehehe...look at all those pearls!"))
+        msgbox(format("Hehehe...this was too easy!"))
         release
     } else {
-        msgbox(format("Hehehe...look at all those pearls!"))
+        msgbox(format("Hehehe...this was too easy!"))
         release
         delay(24)
         faceplayer    
@@ -404,12 +413,21 @@ script GalecrestCity_NPC_14{
 
         fadescreen(FADE_TO_BLACK)
         removeobject(12)
+        removeobject(37)
         fadescreen(FADE_FROM_BLACK)
 
         setflag(FLAG_GALECREST_ROBBER)
     }
 
     releaseall
+}
+
+script GalecrestCity_Nickit{
+    lockall
+    playmoncry(SPECIES_NICKIT, CRY_MODE_NORMAL)
+    msgbox(format("NICKIT is grinning mischievously. What's it upto?"))
+    releaseall
+    end
 }
 
 script GalecrestCity_NPC_15{
@@ -457,5 +475,7 @@ script GalecrestCity_NPC_18{
         releaseall
     }
 }
+
+
 
 

@@ -5310,6 +5310,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WinterlilyHollowGym/border.bin",
       "blockdata_filepath": "data/layouts/WinterlilyHollowGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_LEADER_BASEMENT",
+      "name": "GalecrestCity_Leader_Basement_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GalecrestCity_Leader_Basement/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_Leader_Basement/map.bin"
     }
   ]
 }
