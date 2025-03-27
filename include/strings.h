@@ -2551,17 +2551,32 @@ extern const u8 gText_SubQuest1_Name1[];
 extern const u8 gText_SubQuest1_Name2[];
 extern const u8 gText_SubQuest1_Name3[];
 
-extern const u8 gText_SubQuest2_Name1[];
-extern const u8 gText_SubQuest2_Name2[];
-extern const u8 gText_SubQuest2_Name3[];
-
 extern const u8 gText_SubQuest1_Desc1[];
 extern const u8 gText_SubQuest1_Desc2[];
 extern const u8 gText_SubQuest1_Desc3[];
 
+extern const u8 gText_SubQuest2_Name1[];
+extern const u8 gText_SubQuest2_Name2[];
+extern const u8 gText_SubQuest2_Name3[];
+extern const u8 gText_SubQuest2_Name4[];
+extern const u8 gText_SubQuest2_Name5[];
+extern const u8 gText_SubQuest2_Name6[];
+extern const u8 gText_SubQuest2_Name7[];
+extern const u8 gText_SubQuest2_Name8[];
+extern const u8 gText_SubQuest2_Name9[];
+extern const u8 gText_SubQuest2_Name10[];
+
 extern const u8 gText_SubQuest2_Desc1[];
 extern const u8 gText_SubQuest2_Desc2[];
 extern const u8 gText_SubQuest2_Desc3[];
+extern const u8 gText_SubQuest2_Desc4[];
+extern const u8 gText_SubQuest2_Desc5[];
+extern const u8 gText_SubQuest2_Desc6[];
+extern const u8 gText_SubQuest2_Desc7[];
+extern const u8 gText_SubQuest2_Desc8[];
+extern const u8 gText_SubQuest2_Desc9[];
+extern const u8 gText_SubQuest2_Desc10[];
+
 
 // Berry Blender
 extern const u8 gText_SavingDontTurnOff2[];

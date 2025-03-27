@@ -300,14 +300,91 @@ static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
 	),
 
 	sub_quest(
-	      5,
-	      gText_SubQuest2_Name3,
-	      gText_SubQuest2_Desc3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Empty
+		5,
+		gText_SubQuest2_Name3,
+		gText_SubQuest2_Desc3,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
 	),
+
+	sub_quest(
+		6,
+		gText_SubQuest2_Name4,
+		gText_SubQuest2_Desc4,
+		gText_SideQuestMap4,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		7,
+		gText_SubQuest2_Name5,
+		gText_SubQuest2_Desc5,
+		gText_SideQuestMap5,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		8,
+		gText_SubQuest2_Name6,
+		gText_SubQuest2_Desc6,
+		gText_SideQuestMap6,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		9,
+		gText_SubQuest2_Name7,
+		gText_SubQuest2_Desc7,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		10,
+		gText_SubQuest2_Name8,
+		gText_SubQuest2_Desc8,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		11,
+		gText_SubQuest2_Name9,
+		gText_SubQuest2_Desc9,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
+
+	sub_quest(
+		12,
+		gText_SubQuest2_Name10,
+		gText_SubQuest2_Desc10,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+  
 };
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
