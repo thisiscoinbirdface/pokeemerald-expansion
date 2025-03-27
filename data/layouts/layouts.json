@@ -5055,7 +5055,7 @@
       "id": "LAYOUT_ROUTE7",
       "name": "Route7_Layout",
       "width": 28,
-      "height": 20,
+      "height": 16,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/Route7/border.bin",

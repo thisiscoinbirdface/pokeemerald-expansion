@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_PELLUCA_CITY",
-      "offset": -2,
+      "offset": 0,
       "direction": "right"
     }
   ],
