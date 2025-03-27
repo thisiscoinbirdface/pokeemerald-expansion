@@ -22,7 +22,7 @@ script Route1_TrainerBattle_Jose {
 
 script Route1_TrainerBattle_Sana {
 
-    trainerbattle_single(TRAINER_ROUTE1_SANA, format("I love flying-time {PKMN}.\pLet me show you my favourite!"), "My flying type {PKMN} lost!")
+    trainerbattle_single(TRAINER_ROUTE1_SANA, format("I love FLYING-type {PKMN}.\pLet me show you my favourite!"), "My FLYING type {PKMN} lost!")
     msgbox(format("A good {PKMN} team needs variety, I guess."))
     release
     end

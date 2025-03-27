@@ -2,7 +2,7 @@ mapscripts Route3_MapScripts{}
 
 script Route3_TrainerBattle_Kim {
 
-    trainerbattle_single(TRAINER_ROUTE3_KIM, "I'm much tougher than I look.\pI'm from the hills after all!", "You're from the hills too?")
+    trainerbattle_single(TRAINER_ROUTE3_KIM, format("I'm much tougher than I look. I'm from the hills after all!"), "You're from the hills too?")
     msgbox(format("I'm tough but hungry too. Maybe I should go home and eat."))
     release
     end
@@ -11,7 +11,7 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, "I'm on my way to GASTREE CITY to\nchallenge the {PKMN} Gym there.\pLet me practice with you!", "Looks like I need more practice!")
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to GASTREE CITY to challenge the {PKMN} Gym there. Let me practice with you!"), "Looks like I need more practice!")
     msgbox(format("I heard that the GASTREE CITY Gym Leader uses FIRE type {PKMN}."))
     release
     end
@@ -20,7 +20,7 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, "I'm a {PKMN} Breeder! I spend my time\ptraining my {PKMN} with love and care.", "More love! More care!")
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! I spend my time training my {PKMN} with love and care."), "More love! More care!")
     msgbox(format("My {PKMN} are my most cherised partners!"))
     release
     end
@@ -29,7 +29,7 @@ script Route3_TrainerBattle_Jana {
 
 script Route3_TrainerBattle_Chara {
 
-    trainerbattle_single(TRAINER_ROUTE3_CHARA, "Whew! Route 3 was long, but\pI can do one last battle!", "Aw I lost!")
+    trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Whew! Route 3 was long, but I can do one last battle!"), "Aw I lost!")
     msgbox(format("My {PKMN} and I are all out of energy."))
     release
     end

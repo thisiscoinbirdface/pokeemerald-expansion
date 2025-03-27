@@ -1358,7 +1358,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("I need to pick up the \nlab's supplies from the Pokemart \nin Fennilahl Town.");
+const u8 gText_SideQuestDesc_1[] = _("I need to pick up the lab's supplies from the Pokemart \nin Fennilahl Town.");
 const u8 gText_SideQuestDesc_2[] = _("I need to find a dreamstone \nso that the detectives can \nexamine it for clues.");
 const u8 gText_SideQuestDesc_3[] = _("Azurill is sick from food\npoisoning and needs a\nPECHA BERRY.");
 const u8 gText_SideQuestDesc_4[] = _("A hiker has lost a\nSTRANGE STONE in Route 2.");

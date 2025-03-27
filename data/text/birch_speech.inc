@@ -36,7 +36,7 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Please fill out this employee form.\p"
+	.string "Please fill out this employee form."
 	.string "$"	
 
 gText_Birch_BoyOrGirl::
@@ -45,8 +45,7 @@ gText_Birch_BoyOrGirl::
 	.string "$"	
 
 gText_Birch_WhatsYourName::
-	.string "Now please sign below., \n"
-	.string "please sign below."
+	.string "Now please sign below."
 	.string "$"
 
 gText_Birch_SoItsPlayer::
@@ -71,7 +70,7 @@ gText_Birch_AreYouReady::
 	.string "Tardiness is not acceptable.\p"
 	.string "3. We have sent a WELCOME PACKAGE.\n"
 	.string "Please carry this with you. In case\l"	
-	.string "you have no yet received it, please\l"
+	.string "you have not yet received it, please\l"
 	.string "inform us as soon as possible.\p"
 	.string "Best Regards,\n"
 	.string "PROFESSOR TENEBRIS.\p"

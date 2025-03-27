@@ -13,7 +13,7 @@ script Route2_Caves_EventScript_ClefairyTrigger{
 script Route2_Caves_EventScript_ClefairyBattle{
     lockall
     setflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
-
+    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
     msgbox(format("A wild Pokemon attacks you! It's holding the STRANGE ROCK!"))
     release
 

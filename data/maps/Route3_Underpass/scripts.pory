@@ -11,7 +11,7 @@ script Route3_Underpass_Nurse{
 script Route3_Underpass_NPC1{
     lockall
     faceplayer
-    msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."))
+    msgbox(format("A hiker with a CLEFAIRY ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."))
     releaseall
 }
 
@@ -30,7 +30,7 @@ script Route3_Underpass_Trigger_EvilBattle{
 
 
     lockall
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     //Some convo between hiker and magma
     applymovement(2, moves(jump_in_place_right))
     waitmovement(0)    
