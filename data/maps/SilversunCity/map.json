@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_HOYA_RIVER_NORTH",
-      "offset": 28,
+      "offset": 32,
       "direction": "left"
     }
   ],
@@ -179,7 +179,7 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 24,
+      "x": 23,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_HOUSES",
@@ -221,7 +221,7 @@
       "dest_warp_id": "6"
     },
     {
-      "x": 19,
+      "x": 18,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_GYM",
