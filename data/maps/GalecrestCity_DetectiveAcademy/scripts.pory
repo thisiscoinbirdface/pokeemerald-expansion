@@ -109,7 +109,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
 
         if (var(VAR_RESULT) == 1){
             checkmoney(1000)
-            if (var(VAR_RESULT == 1)){
+            if (var(VAR_RESULT) == 1){
                 hidemoneybox
                 msgbox(format("Very good! Here's your temporary student ID."))
                 giveitem(ITEM_DETECTIVE_STUDENT_ID)
