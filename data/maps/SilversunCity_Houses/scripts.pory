@@ -5,6 +5,15 @@ mapscripts SilversunCity_Houses_MapScripts{}
 
 
 //QUEST: Artist   VAR_SILVERSUN_ARTIST: 0 is not started, 1 is in progress, 2 is complete
+script SilversunCity_Houses_Smeargle{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
+    msgbox(format("SMEARGLE is holding the teacup with its tail and sipping tea! With a tail like that, no wonder it can draw so well."))
+    releaseall
+    end
+}
+
 script SilversunCity_Houses_Artist{
     lockall
     faceplayer

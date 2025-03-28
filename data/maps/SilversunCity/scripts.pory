@@ -25,7 +25,7 @@ script SilversunCity_OnFrame{
                 waitmovement(0)
                 delay(30)
 
-                msgbox(format("DETECTIVE: ASST PROF RUE!? Are you okay?\RUE: All well, thanks to {PLAYER}.\pDETECTIVE: We...we thought it was PROFESSOR TENEBRIS with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
+                msgbox(format("DETECTIVE: ASST PROF RUE!? Are you okay?\pRUE: All well, thanks to {PLAYER}.\pDETECTIVE: We...we thought it was PROFESSOR TENEBRIS with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
@@ -161,15 +161,74 @@ script SilversunCity_NPC3{
 script SilversunCity_NPC4{
     lockall
     faceplayer
-    msgbox(format("We keep seeing wild KOFFING and TOXEL around...they come from the sewers, I bet. Their poison is why there are no flowers near the sewers."))
+    msgbox(format("We keep seeing wild KOFFING and TOXEL around...they come from the sewers, I bet."))
     releaseall
     end
 }
+
 script SilversunCity_NPC5{
     lockall
     faceplayer
-    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon {PKMN} haunts the sewers. It's even scarier than all the POISON-type {PKMN}! They call it the SEWER SCOURGE because of how it looks, and apparently, if it attacks you, you lose your memories! How scary is that?\p...probably just someone seeing things though."))
+    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon {PKMN} haunts the sewers. It's even scarier than all the POISON-type {PKMN} down there! They call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving! How scary is that?\p...but its probably just someone's imagination."))
     releaseall
     end
 }
+
+script SilversunCity_NPC6{
+    lockall
+    faceplayer
+    msgbox(format("I caught my VIVILLON in MT MIRROH! It's always hungry and keeps eating my LAVA COOKIES..."))
+    releaseall
+    end
+}
+
+script SilversunCity_Murkrow{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_MURKROW, CRY_MODE_NORMAL)
+    msgbox(format("MURKROW glares at you. It's as if its saying, 'Get out of the way!'"))
+    releaseall
+    end
+}
+
+script SilversunCity_Meowth{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
+    msgbox(format("MEOWTH is skulking around the back of the SILVERSUN THEATER. It looks angry - better be careful!"))
+    releaseall
+    end
+}
+
+script SilversunCity_Vivillon{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_VIVILLON, CRY_MODE_NORMAL)
+
+    if (flag(FLAG_SILVERSUN_VIVILLON)){
+        msgbox(format("VIVILLON looks hungry! It's eyeing your bag...better move away quickly!"))
+    } else {
+        checkitem(ITEM_LAVA_COOKIE)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("VIVILLON looks hungry! It's eyeing your bag...\pGive VIVILLON a LAVA COOKIE?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                playmoncry(SPECIES_VIVILLON, CRY_MODE_NORMAL)
+                msgbox(format("VIVILLON chomped the cookie down!\pIt flutters towards you and puts something in your bag..."))
+                giveitem(ITEM_SILVER_POWDER)
+                msgbox(format("Thanks VIVILLON!"))
+                release
+                setflag(FLAG_SILVERSUN_VIVILLON)
+            } else {
+                msgbox(format("Better move away quickly!"))
+            }
+        } else {
+            msgbox(format("VIVILLON looks hungry! It's eyeing your bag...better move away quickly!"))
+        }
+    }
+    releaseall
+    end
+}
+
+
+
 

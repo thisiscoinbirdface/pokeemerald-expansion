@@ -82,7 +82,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     delay(24)
 
     //Prof gets introduced
-    msgbox(format("???: So you're the one who defeated MOXIE at MT CERAM. So young...you must've gotten really lucky.\p???: Meet your ASST PROF RUE. He's been of immense help to us...albeit unwillingly.\RUE: {PLAYER}. I'm sorry - they got to me."))
+    msgbox(format("???: So you're the one who defeated MOXIE at MT CERAM. So young...you must've gotten really lucky.\p???: Meet your ASST PROF RUE. He's been of immense help to us...albeit unwillingly.\pRUE: {PLAYER}, I'm sorry. Th-they got to me."))
     release
     delay(36)
 
@@ -119,7 +119,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GABRIELLE: No boss, please! What about my promise?\pMELEA: Should've thought of that before betraying us then! To hell with your promise! Now GET OUT!\pGABRIELLE:..."))
+    msgbox(format("GABRIELLE: No boss, please! I really need this work!\pMELEA: Should've thought of that before betraying us then! Now GET OUT!\pGABRIELLE:..."))
     release
     applymovement(LOCALID_GAB, moves(walk_faster_left walk_faster_down walk_faster_left *5))
     waitmovement(0)
@@ -162,7 +162,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(LOCALID_PROF, moves(walk_left walk_down face_left))
     waitmovement(0)
-    msgbox(format("RUE: You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\RUE: There are detectives outside? Let's go and meet them."))
+    msgbox(format("RUE: You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\pRUE: There are detectives outside? Let's go and meet them."))
     release
 
     clearflag(FLAG_HIDE_SILVERSUN_PROF)

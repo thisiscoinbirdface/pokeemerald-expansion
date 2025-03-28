@@ -157,7 +157,7 @@
 #define FLAG_RANGER_GOT_FIRST_MISSION  0x29F // Unused Flag
 #define FLAG_RANGER_INSTITUTE_BAYLEEF  0x2A0 // bayleef at the ranger institute gives you miracle seed
 #define FLAG_CERAM_CAVES_LEAF_MEETING  0x2A1 // meet leaf for the first time in ceram caves
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
+#define FLAG_SILVERSUN_VIVILLON  0x2A2 // feed vivillon a lava cookie
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
 #define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
 #define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
