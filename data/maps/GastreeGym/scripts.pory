@@ -51,17 +51,35 @@ script GastreeGym_EventScript_Victory{
     msgbox(format(""))
 
     //Bye-bye
-    msgbox(format("So where are you headed next? To Mt. Ceram? You'll have to go north from here through Route 4. All the best, {PLAYER}!"))
+    msgbox(format("So where are you headed next? MT CERAM? You'll have to go north from here through ROUTE 4. All the best, {PLAYER}!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("INGER: Hello! My name is INGER and I am the GASTREE CITY GYM LEADER. So you want to challenge me? Let's get right into it!")
+    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pIn that case, you picked the wrong gym!\pI'm INGER, master of Rock-types and the unshakable strength of the earth. My ROCK type {PKMN} have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
     format("Solid foundations. An instinct for battle. And the makings of a strong team. I humbly accept my defeat.")
 }
 
+
+
+
+
+
+
+
+script GastreeGym_Red{
+    lockall
+    faceplayer
+
+    if (flag(FLAG_BADGE01_GET)){
+        msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+    } else { 
+        msgbox(format("Welcome to the - oh, you don't look so good. First gym? I understand. I was there once too - and against a ROCK type leader to boot! He had a terrifying ONIX...but as you can see, I'm here now, safe and sound. Against INGER, avoid using FIRE, FLYING and BUG type {PKMN}. Now go get 'em, champ-in-the-making!"))
+    }
+    releaseall
+}
 
 
