@@ -358,15 +358,17 @@ script GalecrestCity_NPC_10{
 script GalecrestCity_NPC_11{
     lockall
     faceplayer    
-
     msgbox(format("I do the night shift at the Pokemon Center. During the day, CHANSEY and I like to walk around the garden and pick berries."))
     
     if (flag(FLAG_GALECREST_NURSE_BERRY)){
-        msgbox(format("Here, you can have some of my extra berries."))
+
+    } else {
+        msgbox(format("Here, you can have some of our extra berries."))
         giveitem(ITEM_CHILAN_BERRY, 3)  //Halves normal damage
-        setflag(FLAG_GALECREST_NURSE_BERRY)
+        setflag(FLAG_GALECREST_NURSE_BERRY)        
     }
     releaseall
+    end
 }
 
 
