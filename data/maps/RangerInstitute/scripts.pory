@@ -1,6 +1,7 @@
 raw`
     .set LOCALID_RAVINE, 14
     .set LOCALID_RANGER1, 12
+    .set LOCALID_PACKAGE, 15
 `
 
 mapscripts RangerInstitute_MapScripts{}
@@ -299,7 +300,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     msgbox(format("Director RAVINE!"))
     release
     delay(60)
-    msgbox(format("RAVINE: Hmm...yes...\p...\p...yes this is -"))
+    msgbox(format("RAVINE:...ahh...hmm..."))
     release
     applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark jump_in_place_left * 3))
     waitmovement(0)
@@ -315,9 +316,30 @@ script RangerInstitute_2F_EventScript_Welcome{
     release    
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was deep in my research."))
+    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the RANGER INSTITUTE, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we {PKMN} Rangers do?"))
     release
-
+    applymovement(LOCALID_RANGER1, moves(walk_left face_down))
+    waitmovement(0)
+    msgbox(format("Psst...Director, the bike and stuff."))
+    release        
+    applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("RAVINE: Ah yes! As part of your welcome package, the RANGER INSTITUTE is pleased to provide you with these!"))
+    release
+    giveitem(ITEM_MACH_BIKE)
+    giveitem(ITEM_RANGER_CARD)
+    msgbox(format("RAVINE: The RANGER BIKE and RANGER CARD - the two emblems of a {PKMN} Ranger in CORMORIA! The RANGER BIKE will allow you to speedily traverse all of CORMORIA, and the RANGER CARD lets everyone know you're a proper {PKMN} Ranger! You can access the other RANGER INSTITUTES with this."))
+    release
+    delay(32)     
+    msgbox(format("RAVINE: Now, do you know what we {PKMN} Rangers do? No? Follow me."))
+    release
+    delay(16)
+    applymovement(LOCALID_RAVINE, moves(walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
+    msgbox(format("RAVINE: As {PKMN} Rangers, our job is to protect nature and maintain harmony between people, {PKMN}, and the environment. Whether it's rescuing {PKMN} in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both {PKMN} and the world around us makes it all worthwhile."))
+    release
+    msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
+    release
 
     releaseall
     end

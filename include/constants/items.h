@@ -906,7 +906,7 @@
 #define ITEM_SECRET_KEY 747
 #define ITEM_BIKE_VOUCHER 748
 #define ITEM_GOLD_TEETH 749
-#define ITEM_CARD_KEY 750
+#define ITEM_RANGER_CARD 750   //using this for ranger card - previously ITEM_CARD_KEY
 #define ITEM_LIFT_KEY 751
 #define ITEM_SILPH_SCOPE 752
 #define ITEM_TRI_PASS 753
