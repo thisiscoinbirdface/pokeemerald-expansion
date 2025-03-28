@@ -70,11 +70,25 @@ script GalecrestCity_DetectiveAcademy_Receptionist{
     releaseall
 }
 
+
+//Lobby
 script GalecrestCity_DetectiveAcademy_Guard{
     lockall
     faceplayer
-    msgbox(format("Sorry. Dorm access is for students only."))
+    msgbox(format("Dorm access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
     releaseall
+    end
+}
+
+script GalecrestCity_DetectiveAcademy_Armarouge{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_ARMAROUGE, CRY_MODE_NORMAL)
+    msgbox(format("ARMAROUGE leers down at you...and continues to look straight ahead."))
+    applymovement(22, moves(face_down))
+    waitmovement(0)
+    releaseall
+    end
 }
 
 
@@ -129,6 +143,8 @@ script GalecrestCity_DetectiveAcademy_NPC6{
         lockall
         faceplayer
         msgbox(format("We're battling to practice for our exams. It's very competitive here. Losers like you can't cut it."))
+        applymovement(10, moves(face_right))
+        waitmovement(0)
         releaseall
     }
 
@@ -138,6 +154,8 @@ script GalecrestCity_DetectiveAcademy_NPC8{
     trainerbattle_single(TRAINER_GALECREST_DETECTIVE_A, format("Hey, you look weak.\nYou'd be a good training\ndummy for my CHARCADET!"), format("But you're not even a student!"))
     msgbox(format("You may have beaten me, but I bet you can't beat KOHLA! He's the star of the Academy!"))
     release
+    applymovement(11, moves(face_left))
+    waitmovement(0)
     end
 
 }
@@ -172,7 +190,33 @@ script GalecrestCity_DetectiveAcademy_NPC12{
 
 
 
+script GalecrestCity_DetectiveAcademy_Charcadet_Battle{
+    lockall
+    playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
+    applymovement(18, moves(jump_in_place_left))
+    waitmovement(0)
+    msgbox(format("CHARCADET is battling intensely!"))
+    releaseall
+    end
+}
 
+script GalecrestCity_DetectiveAcademy_Yamper_Battle{
+    lockall
+    playmoncry(SPECIES_YAMPER, CRY_MODE_NORMAL)
+    applymovement(19, moves(jump_in_place_left))
+    waitmovement(0)    
+    msgbox(format("YAMPER's not backing down!"))
+    releaseall
+    end
+}
+
+
+script GalecrestCity_DetectiveAcademy_Charcadet_A{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
+    msgbox(format("CHARCADET is also curious about the class rankings!"))
+}
 
 
 
