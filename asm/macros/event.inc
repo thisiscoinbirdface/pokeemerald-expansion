@@ -1876,6 +1876,7 @@
 	.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
+	
     .macro questmenu case:req, questId:req
     .byte SCR_OP_QUESTMENU
     .byte \case

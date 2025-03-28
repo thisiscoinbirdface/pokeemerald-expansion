@@ -9,21 +9,26 @@ Common_EventScript_MintVendingMachine::
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_MintVendingMachine_2
 # 9 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_BADGE05_GET, Common_EventScript_MintVendingMachine_5
-# 12 "data//maps/TempCopyMap/scripts.pory"
+	checkmoney 5000
+# 10 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_MintVendingMachine_5
+# 16 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_BADGE05_GET, Common_EventScript_MintVendingMachine_8
-# 15 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_BADGE04_GET, Common_EventScript_MintVendingMachine_11
-# 18 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_BADGE03_GET, Common_EventScript_MintVendingMachine_14
-# 21 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_BADGE02_GET, Common_EventScript_MintVendingMachine_17
-# 24 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, Common_EventScript_MintVendingMachine_20
-# 27 "data//maps/TempCopyMap/scripts.pory"
+# 19 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_BADGE05_GET, Common_EventScript_MintVendingMachine_11
+# 22 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_BADGE04_GET, Common_EventScript_MintVendingMachine_14
+# 25 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, Common_EventScript_MintVendingMachine_17
+# 28 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, Common_EventScript_MintVendingMachine_20
+# 31 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_BADGE01_GET, Common_EventScript_MintVendingMachine_23
+# 34 "data//maps/TempCopyMap/scripts.pory"
 	goto Mart_Mints_NoBadges
-Common_EventScript_MintVendingMachine_4:
-# 35 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_MintVendingMachine_7:
+# 42 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
@@ -31,512 +36,584 @@ Common_EventScript_MintVendingMachine_2:
 	end
 
 Common_EventScript_MintVendingMachine_5:
-# 10 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_SixBadges
-	goto Common_EventScript_MintVendingMachine_4
+# 11 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_MintVendingMachine_Text_1
+# 12 "data//maps/TempCopyMap/scripts.pory"
+	release
+	end
 
 Common_EventScript_MintVendingMachine_8:
-# 13 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_FiveBadges
-	goto Common_EventScript_MintVendingMachine_4
+# 17 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_SixBadges
+	goto Common_EventScript_MintVendingMachine_7
 
 Common_EventScript_MintVendingMachine_11:
-# 16 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_FourBadges
-	goto Common_EventScript_MintVendingMachine_4
+# 20 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_FiveBadges
+	goto Common_EventScript_MintVendingMachine_7
 
 Common_EventScript_MintVendingMachine_14:
-# 19 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_ThreeBadges
-	goto Common_EventScript_MintVendingMachine_4
+# 23 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_FourBadges
+	goto Common_EventScript_MintVendingMachine_7
 
 Common_EventScript_MintVendingMachine_17:
-# 22 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_TwoBadges
-	goto Common_EventScript_MintVendingMachine_4
+# 26 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_ThreeBadges
+	goto Common_EventScript_MintVendingMachine_7
 
 Common_EventScript_MintVendingMachine_20:
-# 25 "data//maps/TempCopyMap/scripts.pory"
-	pokemart Mart_Mints_OneBadge
-	goto Common_EventScript_MintVendingMachine_4
+# 29 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_TwoBadges
+	goto Common_EventScript_MintVendingMachine_7
+
+Common_EventScript_MintVendingMachine_23:
+# 32 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_Mints_OneBadge
+	goto Common_EventScript_MintVendingMachine_7
 
 
 Mart_Mints_NoBadges::
-# 42 "data//maps/TempCopyMap/scripts.pory"
+# 49 "data//maps/TempCopyMap/scripts.pory"
 	showmoneybox 18, 0
-# 43 "data//maps/TempCopyMap/scripts.pory"
+# 50 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Mart_Mints_NoBadges_Text_0
-# 45 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 21, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_NoBadges_Text_4, Mart_Mints_NoBadges_Text_5, Mart_Mints_NoBadges_Text_6, Mart_Mints_NoBadges_Text_7, Mart_Mints_NoBadges_Text_8, Mart_Mints_NoBadges_Text_9, Mart_Mints_NoBadges_Text_10, Mart_Mints_NoBadges_Text_11, Mart_Mints_NoBadges_Text_12, Mart_Mints_NoBadges_Text_13, Mart_Mints_NoBadges_Text_14, Mart_Mints_NoBadges_Text_15, Mart_Mints_NoBadges_Text_16, Mart_Mints_NoBadges_Text_17, Mart_Mints_NoBadges_Text_18, Mart_Mints_NoBadges_Text_19, Mart_Mints_NoBadges_Text_20, Mart_Mints_NoBadges_Text_21
-# 51 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq Mart_Mints_NoBadges_2
-Mart_Mints_NoBadges_1:
 # 52 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Mart_Mints_NoBadges_5
-Mart_Mints_NoBadges_4:
-# 53 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 2
-	goto_if_eq Mart_Mints_NoBadges_7
-	return
-
-Mart_Mints_NoBadges_2:
-# 51 "data//maps/TempCopyMap/scripts.pory"
-	goto MintPurchase_Impish
-	goto Mart_Mints_NoBadges_1
-
-Mart_Mints_NoBadges_5:
-# 52 "data//maps/TempCopyMap/scripts.pory"
-	goto MintPurchase_Impish
-	goto Mart_Mints_NoBadges_4
-
-Mart_Mints_NoBadges_7:
-# 53 "data//maps/TempCopyMap/scripts.pory"
-	goto MintPurchase_Impish
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3
+# 54 "data//maps/TempCopyMap/scripts.pory"
+	copyvar VAR_0x8007, VAR_RESULT
+# 55 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_MintPurchaseDecision
 	return
 
 
-	.align 2
+Mart_Mints_OneBadge::
+# 58 "data//maps/TempCopyMap/scripts.pory"
+	showmoneybox 18, 0
+# 59 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Mart_Mints_NoBadges_Text_0
+# 61 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2
 # 64 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_OneBadge:
+	copyvar VAR_0x8007, VAR_RESULT
 # 65 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
-# 66 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 67 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
+	goto Mart_MintPurchaseDecision
+	return
+
+
+Mart_Mints_TwoBadges::
 # 68 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	showmoneybox 18, 0
 # 69 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
-# 70 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
-	.2byte ITEM_NONE
-
-	.align 2
-# 73 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_TwoBadges:
+	msgbox Mart_Mints_NoBadges_Text_0
+# 71 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2, Mart_Mints_TwoBadges_Text_0, Mart_Mints_TwoBadges_Text_1, Mart_Mints_TwoBadges_Text_2
 # 74 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
+	copyvar VAR_0x8007, VAR_RESULT
 # 75 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 76 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
-# 77 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	goto Mart_MintPurchaseDecision
+	return
+
+
+Mart_Mints_ThreeBadges::
 # 78 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
+	showmoneybox 18, 0
 # 79 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 80 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SASSY_MINT
+	msgbox Mart_Mints_NoBadges_Text_0
 # 81 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
-# 82 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_TIMID_MINT
-	.2byte ITEM_NONE
-
-	.align 2
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2, Mart_Mints_TwoBadges_Text_0, Mart_Mints_TwoBadges_Text_1, Mart_Mints_TwoBadges_Text_2, Mart_Mints_ThreeBadges_Text_0, Mart_Mints_ThreeBadges_Text_1, Mart_Mints_ThreeBadges_Text_2
 # 85 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_ThreeBadges:
+	copyvar VAR_0x8007, VAR_RESULT
 # 86 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
-# 87 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 88 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
+	goto Mart_MintPurchaseDecision
+	return
+
+
+Mart_Mints_FourBadges::
 # 89 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	showmoneybox 18, 0
 # 90 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
-# 91 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
+	msgbox Mart_Mints_NoBadges_Text_0
 # 92 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SASSY_MINT
-# 93 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
-# 94 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_TIMID_MINT
-# 95 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_HASTY_MINT
-# 96 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BRAVE_MINT
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2, Mart_Mints_TwoBadges_Text_0, Mart_Mints_TwoBadges_Text_1, Mart_Mints_TwoBadges_Text_2, Mart_Mints_ThreeBadges_Text_0, Mart_Mints_ThreeBadges_Text_1, Mart_Mints_ThreeBadges_Text_2, Mart_Mints_FourBadges_Text_0, Mart_Mints_FourBadges_Text_1, Mart_Mints_FourBadges_Text_2
 # 97 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BOLD_MINT
-	.2byte ITEM_NONE
+	copyvar VAR_0x8007, VAR_RESULT
+# 98 "data//maps/TempCopyMap/scripts.pory"
+	goto Mart_MintPurchaseDecision
+	return
 
-	.align 2
-# 100 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_FourBadges:
+
+Mart_Mints_FiveBadges::
 # 101 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
+	showmoneybox 18, 0
 # 102 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 103 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
+	msgbox Mart_Mints_NoBadges_Text_0
 # 104 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
-# 105 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
-# 106 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 107 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SASSY_MINT
-# 108 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2, Mart_Mints_TwoBadges_Text_0, Mart_Mints_TwoBadges_Text_1, Mart_Mints_TwoBadges_Text_2, Mart_Mints_ThreeBadges_Text_0, Mart_Mints_ThreeBadges_Text_1, Mart_Mints_ThreeBadges_Text_2, Mart_Mints_FourBadges_Text_0, Mart_Mints_FourBadges_Text_1, Mart_Mints_FourBadges_Text_2, Mart_Mints_FiveBadges_Text_0, Mart_Mints_FiveBadges_Text_1, Mart_Mints_FiveBadges_Text_2
 # 109 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_TIMID_MINT
+	copyvar VAR_0x8007, VAR_RESULT
 # 110 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_HASTY_MINT
-# 111 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BRAVE_MINT
-# 112 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BOLD_MINT
+	goto Mart_MintPurchaseDecision
+	return
+
+
+Mart_Mints_SixBadges::
 # 113 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_ADAMANT_MINT
+	showmoneybox 18, 0
 # 114 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MILD_MINT
-# 115 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RASH_MINT
-	.2byte ITEM_NONE
-
-	.align 2
-# 117 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_FiveBadges:
-# 118 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
-# 119 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 120 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
-# 121 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	msgbox Mart_Mints_NoBadges_Text_0
+# 116 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Mart_Mints_NoBadges_Text_1, Mart_Mints_NoBadges_Text_2, Mart_Mints_NoBadges_Text_3, Mart_Mints_OneBadge_Text_0, Mart_Mints_OneBadge_Text_1, Mart_Mints_OneBadge_Text_2, Mart_Mints_TwoBadges_Text_0, Mart_Mints_TwoBadges_Text_1, Mart_Mints_TwoBadges_Text_2, Mart_Mints_ThreeBadges_Text_0, Mart_Mints_ThreeBadges_Text_1, Mart_Mints_ThreeBadges_Text_2, Mart_Mints_FourBadges_Text_0, Mart_Mints_FourBadges_Text_1, Mart_Mints_FourBadges_Text_2, Mart_Mints_FiveBadges_Text_0, Mart_Mints_FiveBadges_Text_1, Mart_Mints_FiveBadges_Text_2, Mart_Mints_SixBadges_Text_0, Mart_Mints_SixBadges_Text_1, Mart_Mints_SixBadges_Text_2
 # 122 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
+	copyvar VAR_0x8007, VAR_RESULT
 # 123 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 124 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SASSY_MINT
-# 125 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
-# 126 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_TIMID_MINT
-# 127 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_HASTY_MINT
-# 128 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BRAVE_MINT
-# 129 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BOLD_MINT
-# 130 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_ADAMANT_MINT
-# 131 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MILD_MINT
-# 132 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RASH_MINT
-# 133 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAIVE_MINT
-# 134 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_LAX_MINT
-# 135 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_QUIET_MINT
-	.2byte ITEM_NONE
+	goto Mart_MintPurchaseDecision
+	return
 
-	.align 2
-# 138 "data//maps/TempCopyMap/scripts.pory"
-Mart_Mints_SixBadges:
+
+Mart_MintPurchaseDecision::
 # 139 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
+	compare VAR_0x8007, 0
+	goto_if_eq Mart_MintPurchaseDecision_2
+Mart_MintPurchaseDecision_1:
 # 140 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CALM_MINT
+	compare VAR_0x8007, 1
+	goto_if_eq Mart_MintPurchaseDecision_5
+Mart_MintPurchaseDecision_4:
 # 141 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
+	compare VAR_0x8007, 2
+	goto_if_eq Mart_MintPurchaseDecision_8
+Mart_MintPurchaseDecision_7:
 # 142 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	compare VAR_0x8007, 3
+	goto_if_eq Mart_MintPurchaseDecision_11
+Mart_MintPurchaseDecision_10:
 # 143 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
+	compare VAR_0x8007, 4
+	goto_if_eq Mart_MintPurchaseDecision_14
+Mart_MintPurchaseDecision_13:
 # 144 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
+	compare VAR_0x8007, 5
+	goto_if_eq Mart_MintPurchaseDecision_17
+Mart_MintPurchaseDecision_16:
 # 145 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SASSY_MINT
+	compare VAR_0x8007, 6
+	goto_if_eq Mart_MintPurchaseDecision_20
+Mart_MintPurchaseDecision_19:
 # 146 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
+	compare VAR_0x8007, 7
+	goto_if_eq Mart_MintPurchaseDecision_23
+Mart_MintPurchaseDecision_22:
 # 147 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_TIMID_MINT
+	compare VAR_0x8007, 8
+	goto_if_eq Mart_MintPurchaseDecision_26
+Mart_MintPurchaseDecision_25:
 # 148 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_HASTY_MINT
+	compare VAR_0x8007, 9
+	goto_if_eq Mart_MintPurchaseDecision_29
+Mart_MintPurchaseDecision_28:
 # 149 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BRAVE_MINT
+	compare VAR_0x8007, 10
+	goto_if_eq Mart_MintPurchaseDecision_32
+Mart_MintPurchaseDecision_31:
 # 150 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_BOLD_MINT
+	compare VAR_0x8007, 11
+	goto_if_eq Mart_MintPurchaseDecision_35
+Mart_MintPurchaseDecision_34:
 # 151 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_ADAMANT_MINT
+	compare VAR_0x8007, 12
+	goto_if_eq Mart_MintPurchaseDecision_38
+Mart_MintPurchaseDecision_37:
 # 152 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_MILD_MINT
+	compare VAR_0x8007, 13
+	goto_if_eq Mart_MintPurchaseDecision_41
+Mart_MintPurchaseDecision_40:
 # 153 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_RASH_MINT
+	compare VAR_0x8007, 14
+	goto_if_eq Mart_MintPurchaseDecision_44
+Mart_MintPurchaseDecision_43:
 # 154 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_NAIVE_MINT
+	compare VAR_0x8007, 15
+	goto_if_eq Mart_MintPurchaseDecision_47
+Mart_MintPurchaseDecision_46:
 # 155 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_LAX_MINT
+	compare VAR_0x8007, 16
+	goto_if_eq Mart_MintPurchaseDecision_50
+Mart_MintPurchaseDecision_49:
 # 156 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_QUIET_MINT
+	compare VAR_0x8007, 17
+	goto_if_eq Mart_MintPurchaseDecision_53
+Mart_MintPurchaseDecision_52:
 # 157 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_LONELY_MINT
+	compare VAR_0x8007, 18
+	goto_if_eq Mart_MintPurchaseDecision_56
+Mart_MintPurchaseDecision_55:
 # 158 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_JOLLY_MINT
+	compare VAR_0x8007, 19
+	goto_if_eq Mart_MintPurchaseDecision_59
+Mart_MintPurchaseDecision_58:
 # 159 "data//maps/TempCopyMap/scripts.pory"
-	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_NONE
+	compare VAR_0x8007, 20
+	goto_if_eq Mart_MintPurchaseDecision_62
+Mart_MintPurchaseDecision_61:
+# 161 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Mart_MintPurchaseDecision_2:
+# 139 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Impish
+	goto Mart_MintPurchaseDecision_1
+
+Mart_MintPurchaseDecision_5:
+# 140 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Calm
+	goto Mart_MintPurchaseDecision_4
+
+Mart_MintPurchaseDecision_8:
+# 141 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Relaxed
+	goto Mart_MintPurchaseDecision_7
+
+Mart_MintPurchaseDecision_11:
+# 142 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Bold
+	goto Mart_MintPurchaseDecision_10
+
+Mart_MintPurchaseDecision_14:
+# 143 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Gentle
+	goto Mart_MintPurchaseDecision_13
+
+Mart_MintPurchaseDecision_17:
+# 144 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Careful
+	goto Mart_MintPurchaseDecision_16
+
+Mart_MintPurchaseDecision_20:
+# 145 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Sassy
+	goto Mart_MintPurchaseDecision_19
+
+Mart_MintPurchaseDecision_23:
+# 146 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Naughty
+	goto Mart_MintPurchaseDecision_22
+
+Mart_MintPurchaseDecision_26:
+# 147 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Brave
+	goto Mart_MintPurchaseDecision_25
+
+Mart_MintPurchaseDecision_29:
+# 148 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Timid
+	goto Mart_MintPurchaseDecision_28
+
+Mart_MintPurchaseDecision_32:
+# 149 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Hasty
+	goto Mart_MintPurchaseDecision_31
+
+Mart_MintPurchaseDecision_35:
+# 150 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Adamant
+	goto Mart_MintPurchaseDecision_34
+
+Mart_MintPurchaseDecision_38:
+# 151 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Mild
+	goto Mart_MintPurchaseDecision_37
+
+Mart_MintPurchaseDecision_41:
+# 152 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Rash
+	goto Mart_MintPurchaseDecision_40
+
+Mart_MintPurchaseDecision_44:
+# 153 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Naive
+	goto Mart_MintPurchaseDecision_43
+
+Mart_MintPurchaseDecision_47:
+# 154 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Lax
+	goto Mart_MintPurchaseDecision_46
+
+Mart_MintPurchaseDecision_50:
+# 155 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Quiet
+	goto Mart_MintPurchaseDecision_49
+
+Mart_MintPurchaseDecision_53:
+# 156 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Lonely
+	goto Mart_MintPurchaseDecision_52
+
+Mart_MintPurchaseDecision_56:
+# 157 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Jolly
+	goto Mart_MintPurchaseDecision_55
+
+Mart_MintPurchaseDecision_59:
+# 158 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Serious
+	goto Mart_MintPurchaseDecision_58
+
+Mart_MintPurchaseDecision_62:
+# 159 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Modest
+	goto Mart_MintPurchaseDecision_61
+
 
 MintPurchase_Impish::
-# 189 "data//maps/TempCopyMap/scripts.pory"
+# 206 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 190 "data//maps/TempCopyMap/scripts.pory"
+# 207 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 191 "data//maps/TempCopyMap/scripts.pory"
+# 208 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_IMPISH_MINT
-# 192 "data//maps/TempCopyMap/scripts.pory"
+# 209 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Calm::
-# 197 "data//maps/TempCopyMap/scripts.pory"
+# 214 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 198 "data//maps/TempCopyMap/scripts.pory"
+# 215 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 199 "data//maps/TempCopyMap/scripts.pory"
+# 216 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_CALM_MINT
-# 200 "data//maps/TempCopyMap/scripts.pory"
+# 217 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Relaxed::
-# 205 "data//maps/TempCopyMap/scripts.pory"
+# 222 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 206 "data//maps/TempCopyMap/scripts.pory"
+# 223 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 207 "data//maps/TempCopyMap/scripts.pory"
+# 224 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_RELAXED_MINT
-# 208 "data//maps/TempCopyMap/scripts.pory"
+# 225 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Modest::
-# 213 "data//maps/TempCopyMap/scripts.pory"
+# 230 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 214 "data//maps/TempCopyMap/scripts.pory"
+# 231 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 215 "data//maps/TempCopyMap/scripts.pory"
+# 232 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_MODEST_MINT
-# 216 "data//maps/TempCopyMap/scripts.pory"
+# 233 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Gentle::
-# 221 "data//maps/TempCopyMap/scripts.pory"
+# 238 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 222 "data//maps/TempCopyMap/scripts.pory"
+# 239 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 223 "data//maps/TempCopyMap/scripts.pory"
+# 240 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_GENTLE_MINT
-# 224 "data//maps/TempCopyMap/scripts.pory"
+# 241 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Careful::
-# 229 "data//maps/TempCopyMap/scripts.pory"
+# 246 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 230 "data//maps/TempCopyMap/scripts.pory"
+# 247 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 231 "data//maps/TempCopyMap/scripts.pory"
+# 248 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_CAREFUL_MINT
-# 232 "data//maps/TempCopyMap/scripts.pory"
+# 249 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Sassy::
-# 237 "data//maps/TempCopyMap/scripts.pory"
+# 254 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 238 "data//maps/TempCopyMap/scripts.pory"
+# 255 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 239 "data//maps/TempCopyMap/scripts.pory"
+# 256 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_SASSY_MINT
-# 240 "data//maps/TempCopyMap/scripts.pory"
+# 257 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Naughty::
-# 245 "data//maps/TempCopyMap/scripts.pory"
+# 262 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 246 "data//maps/TempCopyMap/scripts.pory"
+# 263 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 247 "data//maps/TempCopyMap/scripts.pory"
+# 264 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_NAUGHTY_MINT
-# 248 "data//maps/TempCopyMap/scripts.pory"
+# 265 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Timid::
-# 253 "data//maps/TempCopyMap/scripts.pory"
+# 270 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 254 "data//maps/TempCopyMap/scripts.pory"
+# 271 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 255 "data//maps/TempCopyMap/scripts.pory"
+# 272 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_TIMID_MINT
-# 256 "data//maps/TempCopyMap/scripts.pory"
+# 273 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Hasty::
-# 261 "data//maps/TempCopyMap/scripts.pory"
+# 278 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 262 "data//maps/TempCopyMap/scripts.pory"
+# 279 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 263 "data//maps/TempCopyMap/scripts.pory"
+# 280 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_HASTY_MINT
-# 264 "data//maps/TempCopyMap/scripts.pory"
+# 281 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Brave::
-# 269 "data//maps/TempCopyMap/scripts.pory"
+# 286 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 270 "data//maps/TempCopyMap/scripts.pory"
+# 287 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 271 "data//maps/TempCopyMap/scripts.pory"
+# 288 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_BRAVE_MINT
-# 272 "data//maps/TempCopyMap/scripts.pory"
+# 289 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Bold::
-# 277 "data//maps/TempCopyMap/scripts.pory"
+# 294 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 278 "data//maps/TempCopyMap/scripts.pory"
+# 295 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 279 "data//maps/TempCopyMap/scripts.pory"
+# 296 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_BOLD_MINT
-# 280 "data//maps/TempCopyMap/scripts.pory"
+# 297 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Adamant::
-# 285 "data//maps/TempCopyMap/scripts.pory"
+# 302 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 286 "data//maps/TempCopyMap/scripts.pory"
+# 303 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 287 "data//maps/TempCopyMap/scripts.pory"
+# 304 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_ADAMANT_MINT
-# 288 "data//maps/TempCopyMap/scripts.pory"
+# 305 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Mild::
-# 293 "data//maps/TempCopyMap/scripts.pory"
+# 310 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 294 "data//maps/TempCopyMap/scripts.pory"
+# 311 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 295 "data//maps/TempCopyMap/scripts.pory"
+# 312 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_MILD_MINT
-# 296 "data//maps/TempCopyMap/scripts.pory"
+# 313 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Rash::
-# 301 "data//maps/TempCopyMap/scripts.pory"
+# 318 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 302 "data//maps/TempCopyMap/scripts.pory"
+# 319 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 303 "data//maps/TempCopyMap/scripts.pory"
+# 320 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_MILD_MINT
-# 304 "data//maps/TempCopyMap/scripts.pory"
+# 321 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Naive::
-# 309 "data//maps/TempCopyMap/scripts.pory"
+# 326 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 310 "data//maps/TempCopyMap/scripts.pory"
+# 327 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 311 "data//maps/TempCopyMap/scripts.pory"
+# 328 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_NAIVE_MINT
-# 312 "data//maps/TempCopyMap/scripts.pory"
+# 329 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Lax::
-# 317 "data//maps/TempCopyMap/scripts.pory"
+# 334 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 318 "data//maps/TempCopyMap/scripts.pory"
+# 335 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 319 "data//maps/TempCopyMap/scripts.pory"
+# 336 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_LAX_MINT
-# 320 "data//maps/TempCopyMap/scripts.pory"
+# 337 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Lonely::
-# 325 "data//maps/TempCopyMap/scripts.pory"
+# 342 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 326 "data//maps/TempCopyMap/scripts.pory"
+# 343 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 327 "data//maps/TempCopyMap/scripts.pory"
+# 344 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_LONELY_MINT
-# 328 "data//maps/TempCopyMap/scripts.pory"
+# 345 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Quiet::
-# 333 "data//maps/TempCopyMap/scripts.pory"
+# 350 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 334 "data//maps/TempCopyMap/scripts.pory"
+# 351 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 335 "data//maps/TempCopyMap/scripts.pory"
+# 352 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_QUIET_MINT
-# 336 "data//maps/TempCopyMap/scripts.pory"
+# 353 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Jolly::
-# 341 "data//maps/TempCopyMap/scripts.pory"
+# 358 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 342 "data//maps/TempCopyMap/scripts.pory"
+# 359 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 343 "data//maps/TempCopyMap/scripts.pory"
+# 360 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_JOLLY_MINT
-# 344 "data//maps/TempCopyMap/scripts.pory"
+# 361 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 MintPurchase_Serious::
-# 349 "data//maps/TempCopyMap/scripts.pory"
+# 366 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 350 "data//maps/TempCopyMap/scripts.pory"
+# 367 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 200
-# 351 "data//maps/TempCopyMap/scripts.pory"
+# 368 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_SERIOUS_MINT
-# 352 "data//maps/TempCopyMap/scripts.pory"
+# 369 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
@@ -546,93 +623,98 @@ Common_EventScript_MintVendingMachine_Text_0:
 	.string "There's a slot to swipe your TRAINER\n"
 	.string "CARD. Swipe?$"
 
+Common_EventScript_MintVendingMachine_Text_1:
+# 11 "data//maps/TempCopyMap/scripts.pory"
+	.string "You do not have enough money to\n"
+	.string "purchase any mints.$"
+
 Mart_Mints_NoBadges_Text_0:
-# 43 "data//maps/TempCopyMap/scripts.pory"
+# 50 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}\n"
 	.string "BADGES: 0\p"
 	.string "All mints are 200. Which one would you\n"
 	.string "like to purchase?$"
 
 Mart_Mints_NoBadges_Text_1:
-# 46 "data//maps/TempCopyMap/scripts.pory"
+# 53 "data//maps/TempCopyMap/scripts.pory"
 	.string "Impish Mint$"
 
 Mart_Mints_NoBadges_Text_2:
-# 46 "data//maps/TempCopyMap/scripts.pory"
+# 53 "data//maps/TempCopyMap/scripts.pory"
 	.string "Calm Mint$"
 
 Mart_Mints_NoBadges_Text_3:
-# 46 "data//maps/TempCopyMap/scripts.pory"
+# 53 "data//maps/TempCopyMap/scripts.pory"
 	.string "Relaxed Mint$"
 
-Mart_Mints_NoBadges_Text_4:
-# 46 "data//maps/TempCopyMap/scripts.pory"
-	.string "Modest Mint$"
-
-Mart_Mints_NoBadges_Text_5:
-# 46 "data//maps/TempCopyMap/scripts.pory"
-	.string "Gentle Mint$"
-
-Mart_Mints_NoBadges_Text_6:
-# 47 "data//maps/TempCopyMap/scripts.pory"
-	.string "Careful Mint$"
-
-Mart_Mints_NoBadges_Text_7:
-# 47 "data//maps/TempCopyMap/scripts.pory"
-	.string "Sassy Mint$"
-
-Mart_Mints_NoBadges_Text_8:
-# 47 "data//maps/TempCopyMap/scripts.pory"
-	.string "Naughty Mint$"
-
-Mart_Mints_NoBadges_Text_9:
-# 47 "data//maps/TempCopyMap/scripts.pory"
-	.string "Timid Mint$"
-
-Mart_Mints_NoBadges_Text_10:
-# 47 "data//maps/TempCopyMap/scripts.pory"
-	.string "Hasty Mint$"
-
-Mart_Mints_NoBadges_Text_11:
-# 48 "data//maps/TempCopyMap/scripts.pory"
-	.string "Brave Mint$"
-
-Mart_Mints_NoBadges_Text_12:
-# 48 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_OneBadge_Text_0:
+# 62 "data//maps/TempCopyMap/scripts.pory"
 	.string "Bold Mint$"
 
-Mart_Mints_NoBadges_Text_13:
-# 48 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_OneBadge_Text_1:
+# 62 "data//maps/TempCopyMap/scripts.pory"
+	.string "Gentle Mint$"
+
+Mart_Mints_OneBadge_Text_2:
+# 63 "data//maps/TempCopyMap/scripts.pory"
+	.string "Careful Mint$"
+
+Mart_Mints_TwoBadges_Text_0:
+# 73 "data//maps/TempCopyMap/scripts.pory"
+	.string "Sassy Mint$"
+
+Mart_Mints_TwoBadges_Text_1:
+# 73 "data//maps/TempCopyMap/scripts.pory"
+	.string "Naughty Mint$"
+
+Mart_Mints_TwoBadges_Text_2:
+# 73 "data//maps/TempCopyMap/scripts.pory"
+	.string "Brave Mint$"
+
+Mart_Mints_ThreeBadges_Text_0:
+# 83 "data//maps/TempCopyMap/scripts.pory"
+	.string "Timid Mint$"
+
+Mart_Mints_ThreeBadges_Text_1:
+# 84 "data//maps/TempCopyMap/scripts.pory"
+	.string "Hasty Mint$"
+
+Mart_Mints_ThreeBadges_Text_2:
+# 84 "data//maps/TempCopyMap/scripts.pory"
 	.string "Adamant Mint$"
 
-Mart_Mints_NoBadges_Text_14:
-# 48 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FourBadges_Text_0:
+# 95 "data//maps/TempCopyMap/scripts.pory"
 	.string "Mild Mint$"
 
-Mart_Mints_NoBadges_Text_15:
-# 48 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FourBadges_Text_1:
+# 95 "data//maps/TempCopyMap/scripts.pory"
 	.string "Rash Mint$"
 
-Mart_Mints_NoBadges_Text_16:
-# 49 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FourBadges_Text_2:
+# 96 "data//maps/TempCopyMap/scripts.pory"
 	.string "Naive Mint$"
 
-Mart_Mints_NoBadges_Text_17:
-# 49 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FiveBadges_Text_0:
+# 108 "data//maps/TempCopyMap/scripts.pory"
 	.string "Lax Mint$"
 
-Mart_Mints_NoBadges_Text_18:
-# 49 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FiveBadges_Text_1:
+# 108 "data//maps/TempCopyMap/scripts.pory"
 	.string "Quiet Mint$"
 
-Mart_Mints_NoBadges_Text_19:
-# 49 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_FiveBadges_Text_2:
+# 108 "data//maps/TempCopyMap/scripts.pory"
 	.string "Lonely Mint$"
 
-Mart_Mints_NoBadges_Text_20:
-# 49 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_SixBadges_Text_0:
+# 120 "data//maps/TempCopyMap/scripts.pory"
 	.string "Jolly Mint$"
 
-Mart_Mints_NoBadges_Text_21:
-# 50 "data//maps/TempCopyMap/scripts.pory"
+Mart_Mints_SixBadges_Text_1:
+# 121 "data//maps/TempCopyMap/scripts.pory"
 	.string "Serious Mint$"
+
+Mart_Mints_SixBadges_Text_2:
+# 121 "data//maps/TempCopyMap/scripts.pory"
+	.string "Modest Mint$"

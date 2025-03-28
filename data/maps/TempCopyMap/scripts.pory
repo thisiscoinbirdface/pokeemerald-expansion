@@ -6,23 +6,30 @@ script Common_EventScript_MintVendingMachine{
     msgbox(format("There's a slot to swipe your TRAINER CARD. Swipe?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) {end}
 
+    checkmoney(200)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You must have at least 200 to purchase any mints."))
+        release
+        end
+    }
+
     if (flag(FLAG_BADGE05_GET)){
-        pokemart(Mart_Mints_SixBadges)
+        goto(Mart_Mints_SixBadges)
     } else {
         if (flag(FLAG_BADGE05_GET)){
-            pokemart(Mart_Mints_FiveBadges)
+           goto(Mart_Mints_FiveBadges)
         } else {
             if (flag(FLAG_BADGE04_GET)) {
-                pokemart(Mart_Mints_FourBadges)
+                goto(Mart_Mints_FourBadges)
             } else {
                 if (flag(FLAG_BADGE03_GET)) {
-                    pokemart(Mart_Mints_ThreeBadges)
+                    goto(Mart_Mints_ThreeBadges)
                 } else {
                     if (flag(FLAG_BADGE02_GET)) {
-                        pokemart(Mart_Mints_TwoBadges)
+                        goto(Mart_Mints_TwoBadges)
                     } else {
                         if (flag(FLAG_BADGE01_GET)) {
-                            pokemart(Mart_Mints_OneBadge)
+                            goto(Mart_Mints_OneBadge)
                         } else {
                             goto(Mart_Mints_NoBadges)
                         }
@@ -42,122 +49,132 @@ script Mart_Mints_NoBadges{
     showmoneybox(18, 0)
     msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
     
-    dynmultichoice(0,0, TRUE, 21, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Impish Mint", "Calm Mint", "Relaxed Mint", "Modest Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Timid Mint", "Hasty Mint",
-        "Brave Mint", "Bold Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
-        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
-        "Serious Mint")
-    if (var(VAR_RESULT) == 0) {goto(MintPurchase_Impish)}
-    if (var(VAR_RESULT) == 1) {goto(MintPurchase_Impish)}
-    if (var(VAR_RESULT) == 2) {goto(MintPurchase_Impish)}
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
 }
-
-    // showmoneybox(18, 0)
-    // msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+script Mart_Mints_OneBadge{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
     
-    // dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Impish Mint", "Calm Mint", "Relaxed Mint")
-    // if (var(VAR_RESULT) == 0) {goto(MintPurchase_Impish)}
-    // if (var(VAR_RESULT) == 1) {goto(MintPurchase_Impish)}
-    // if (var(VAR_RESULT) == 2) {goto(MintPurchase_Impish)}
-
-mart Mart_Mints_OneBadge{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT   
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
+}
+script Mart_Mints_TwoBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
+}
+script Mart_Mints_ThreeBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
+        "Hasty Mint", "Adamant Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
+}
+script Mart_Mints_FourBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
+        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
+        "Naive Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
+}
+script Mart_Mints_FiveBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
+        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
+        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
+}
+script Mart_Mints_SixBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
+        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
+        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
+        "Serious Mint", "Modest Mint")
+    copyvar(VAR_0x8007, VAR_RESULT)
+    goto(Mart_MintPurchaseDecision)
 }
 
-mart Mart_Mints_TwoBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT
-    ITEM_SASSY_MINT    
-    ITEM_NAUGHTY_MINT    
-    ITEM_TIMID_MINT
+
+
+
+
+
+
+
+
+
+
+
+
+script Mart_MintPurchaseDecision{
+    if (var(VAR_0x8007) == 0) {goto(MintPurchase_Impish)}
+    if (var(VAR_0x8007) == 1) {goto(MintPurchase_Calm)}
+    if (var(VAR_0x8007) == 2) {goto(MintPurchase_Relaxed)}
+    if (var(VAR_0x8007) == 3) {goto(MintPurchase_Bold)}
+    if (var(VAR_0x8007) == 4) {goto(MintPurchase_Gentle)}
+    if (var(VAR_0x8007) == 5) {goto(MintPurchase_Careful)}
+    if (var(VAR_0x8007) == 6) {goto(MintPurchase_Sassy)}
+    if (var(VAR_0x8007) == 7) {goto(MintPurchase_Naughty)}
+    if (var(VAR_0x8007) == 8) {goto(MintPurchase_Brave)}
+    if (var(VAR_0x8007) == 9) {goto(MintPurchase_Timid)}
+    if (var(VAR_0x8007) == 10) {goto(MintPurchase_Hasty)}
+    if (var(VAR_0x8007) == 11) {goto(MintPurchase_Adamant)}
+    if (var(VAR_0x8007) == 12) {goto(MintPurchase_Mild)}
+    if (var(VAR_0x8007) == 13) {goto(MintPurchase_Rash)}
+    if (var(VAR_0x8007) == 14) {goto(MintPurchase_Naive)}
+    if (var(VAR_0x8007) == 15) {goto(MintPurchase_Lax)}
+    if (var(VAR_0x8007) == 16) {goto(MintPurchase_Quiet)}
+    if (var(VAR_0x8007) == 17) {goto(MintPurchase_Lonely)}
+    if (var(VAR_0x8007) == 18) {goto(MintPurchase_Jolly)}
+    if (var(VAR_0x8007) == 19) {goto(MintPurchase_Serious)}
+    if (var(VAR_0x8007) == 20) {goto(MintPurchase_Modest)}
+    
+    releaseall
+    end
+
 }
 
-mart Mart_Mints_ThreeBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT
-    ITEM_SASSY_MINT    
-    ITEM_NAUGHTY_MINT    
-    ITEM_TIMID_MINT
-    ITEM_HASTY_MINT    
-    ITEM_BRAVE_MINT
-    ITEM_BOLD_MINT 
-}
 
-mart Mart_Mints_FourBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT
-    ITEM_SASSY_MINT    
-    ITEM_NAUGHTY_MINT    
-    ITEM_TIMID_MINT
-    ITEM_HASTY_MINT    
-    ITEM_BRAVE_MINT
-    ITEM_BOLD_MINT
-    ITEM_ADAMANT_MINT
-    ITEM_MILD_MINT
-    ITEM_RASH_MINT      
-}
-mart Mart_Mints_FiveBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT
-    ITEM_SASSY_MINT    
-    ITEM_NAUGHTY_MINT    
-    ITEM_TIMID_MINT
-    ITEM_HASTY_MINT    
-    ITEM_BRAVE_MINT
-    ITEM_BOLD_MINT
-    ITEM_ADAMANT_MINT
-    ITEM_MILD_MINT
-    ITEM_RASH_MINT
-    ITEM_NAIVE_MINT  
-    ITEM_LAX_MINT
-    ITEM_QUIET_MINT     
-}
 
-mart Mart_Mints_SixBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
-    ITEM_MODEST_MINT
-    ITEM_GENTLE_MINT
-    ITEM_CAREFUL_MINT
-    ITEM_SASSY_MINT    
-    ITEM_NAUGHTY_MINT    
-    ITEM_TIMID_MINT
-    ITEM_HASTY_MINT    
-    ITEM_BRAVE_MINT
-    ITEM_BOLD_MINT
-    ITEM_ADAMANT_MINT
-    ITEM_MILD_MINT
-    ITEM_RASH_MINT
-    ITEM_NAIVE_MINT  
-    ITEM_LAX_MINT
-    ITEM_QUIET_MINT
-    ITEM_LONELY_MINT
-    ITEM_JOLLY_MINT
-    ITEM_SERIOUS_MINT      
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
