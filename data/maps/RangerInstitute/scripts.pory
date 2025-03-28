@@ -13,7 +13,8 @@ mapscripts RangerInstitute_MapScripts{}
     //now go to interview. If you fail, var resets to 0
 //2: interview completed
     //Become a Recruit. Get RANGER BIKE and access to second floor.
-//3: 
+//3: first mission
+    //spoken to RAVINE, got the delivery mission
 
 
 
@@ -250,6 +251,7 @@ script RangerInstitute_1F_TriggerUpstairs{
 
 //Triggers
 script RangerInstitute_2F_Trigger0{
+    if (var(VAR_RANGER_INSTITUTE) > 2){end}
     lockall
     applymovement(12, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -269,6 +271,7 @@ script RangerInstitute_2F_Trigger0{
 }
 
 script RangerInstitute_2F_Trigger1{
+    if (var(VAR_RANGER_INSTITUTE) > 2){end}    
     lockall
     applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -335,12 +338,56 @@ script RangerInstitute_2F_EventScript_Welcome{
     release
     delay(16)
     applymovement(LOCALID_RAVINE, moves(walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down walk_right * 5 walk_down * 5 walk_left * 4))
     msgbox(format("RAVINE: As {PKMN} Rangers, our job is to protect nature and maintain harmony between people, {PKMN}, and the environment. Whether it's rescuing {PKMN} in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both {PKMN} and the world around us makes it all worthwhile."))
     release
     msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release
+    delay(24)
+    msgbox(format("RAVINE: Inside this box behind me are some important items that the RANGER INSTITUTE at IVY RIVER wants. Your first mission will be to deliver this to them!"))
+    release
+    startquest(QUEST_POKEMON_RANGER)
+    setvar(VAR_RANGER_INSTITUTE, 2)
+    delay(16)
+    msgbox(format("RAVINE: If you complete this mission, you'll rank up from Recruit to Candidate. The RANGER INSTITUTE at IVY RIVER is a little hard to find. You'll have to surf down from WINTERLILY HOLLOW and explore the riverbank. Good training for a recruit, eh?"))
+    releaseall
+    end
+}
 
+script RangerInstitute_Ravine{
+    lockall
+    faceplayer
+
+    if (var(VAR_RANGER_INSTITUTE) == 3){
+        msgbox(format("RAVINE: How's my newest Recruit doing? Have you delivered the package yet?"))
+    }
+}
+
+script RangerInstitute_2F_NPC_1{
+    lockall
+    faceplayer
+    msgbox(format("Director RAVINE has a bad habit of daydreaming at work..."))
+    releaseall
+    end
+}
+script RangerInstitute_2F_NPC_2{
+    lockall
+    faceplayer
+    msgbox(format("Hello there, new recruit! Wanna see what I'm working on? I'm analysing the weather patterns in CORMORIA. I stay on the lookout for any unnatural changes."))
+    releaseall
+    end
+}
+script RangerInstitute_2F_NPC_3{
+    lockall
+    faceplayer
+    msgbox(format("Gah! I hate being on inventory duty. I miss the field!"))
+    releaseall
+    end
+}
+script RangerInstitute_2F_NPC_4{
+    lockall
+    faceplayer
+    msgbox(format("How's it going, {PLAYER}?"))
     releaseall
     end
 }
