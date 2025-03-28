@@ -280,6 +280,14 @@
       "elevation": 0,
       "item": "ITEM_POTION",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE3_B"
+    },
+    {
+      "type": "hidden_item",
+      "x": 84,
+      "y": 31,
+      "elevation": 0,
+      "item": "ITEM_AWAKENING",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE3_C"
     }
   ]
 }

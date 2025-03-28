@@ -54,7 +54,7 @@
       "y": 42,
       "elevation": 3,
       "item": "ITEM_STAR_PIECE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -62,7 +62,7 @@
       "y": 36,
       "elevation": 3,
       "item": "ITEM_HP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -70,7 +70,7 @@
       "y": 72,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -78,7 +78,7 @@
       "y": 20,
       "elevation": 3,
       "item": "ITEM_RED_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD"
+      "flag": "0"
     }
   ]
 }
