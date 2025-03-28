@@ -27,6 +27,8 @@ script Route3_Underpass_EvilBattle_Trigger0{
         end
     }    
     lockall
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
     waitmovement(0)    
     goto(Route3_Underpass_EvilBattle)
@@ -36,6 +38,8 @@ script Route3_Underpass_EvilBattle_Trigger1{
         end
     }    
     lockall
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     waitmovement(0)    
     goto(Route3_Underpass_EvilBattle)
@@ -45,6 +49,8 @@ script Route3_Underpass_EvilBattle_Trigger2{
         end
     }    
     lockall
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
     waitmovement(0)
     goto(Route3_Underpass_EvilBattle)
@@ -53,8 +59,6 @@ script Route3_Underpass_EvilBattle_Trigger2{
 
 script Route3_Underpass_EvilBattle{
     lockall
-
-    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
@@ -96,6 +100,7 @@ script Route3_Underpass_EvilBattle{
     trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "My {PKMN} just aren't good enough!")
 
     //End battle - baddie says revenge
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
     applymovement(3, moves(face_left))
     waitmovement(0) 
     applymovement(2, moves(face_right))
@@ -141,6 +146,7 @@ script Route3_Underpass_EvilBattle{
 
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
+    fadedefaultbgm   
     releaseall
     
 }
