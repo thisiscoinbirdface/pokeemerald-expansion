@@ -221,7 +221,19 @@ GastreeCity_TeaHouse_EventScript_NPC4::
 	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_0
 # 147 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
-	return
+	end
+
+
+GastreeCity_TeaHouse_Snorunt::
+# 151 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	lockall
+# 152 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	playmoncry SPECIES_SNORUNT, CRY_MODE_NORMAL
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_Snorunt_Text_0
+# 154 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
+	end
 
 
 # 29 "data//maps/GastreeCity_TeaHouse/scripts.pory"
@@ -325,7 +337,7 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4:
 GastreeCity_TeaHouse_EventScript_NPC1_Text_0:
 # 122 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "At my age, a hot cup of tea is the best\n"
-	.string "medicine. The Poltchageist in the\l"
+	.string "medicine. The POLTCHAGEIST in the\l"
 	.string "kitchen do great work!$"
 
 GastreeCity_TeaHouse_EventScript_NPC2_Text_0:
@@ -344,4 +356,10 @@ GastreeCity_TeaHouse_EventScript_NPC4_Text_0:
 	.string "I invited my date here because I\n"
 	.string "thought it'd be more unique than taking\l"
 	.string "him to a trendy spot...but he still\l"
-	.string "hasn't arrived.$"
+	.string "hasn't arrived. But my SNORUNT is here\l"
+	.string "to give me company!$"
+
+GastreeCity_TeaHouse_Snorunt_Text_0:
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	.string "SNORUNT is sniffing the tea. Does it\n"
+	.string "like it?$"
