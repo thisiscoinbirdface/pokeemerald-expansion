@@ -108,12 +108,20 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
         msgbox(format("Would you like to purchase one for 1000?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Very good! Here's your temporary student ID."))
-            giveitem(ITEM_DETECTIVE_STUDENT_ID)
-            setflag(FLAG_GALECREST_STUDENTID_GET)
-            removemoney(1000)
-            msgbox(format("With this ID, you'll be able to access the academy facilities as if you were a normal student. You can even sit in any ongoing classes!"))
-            release
+            checkmoney(1000)
+            if (var(VAR_RESULT == 1)){
+                hidemoneybox
+                msgbox(format("Very good! Here's your temporary student ID."))
+                giveitem(ITEM_DETECTIVE_STUDENT_ID)
+                setflag(FLAG_GALECREST_STUDENTID_GET)
+                removemoney(1000)
+                msgbox(format("With this ID, you'll be able to access the academy facilities as if you were a normal student. You can even sit in any ongoing classes!"))
+                release
+            } else {
+                msgbox(format("Sorry, you don't have enough money. Please come back later!"))
+                release
+                goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)                
+            }
         } else {
             goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
         }
@@ -196,11 +204,11 @@ script GalecrestCity_DetectiveAcademy_Armarouge_Classroom{
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
         msgbox(format("ARMAROUGE leers down at you...and nods approvingly!"))
         release
-        applymovement(22, moves(walk_right face_down))
+        applymovement(23, moves(walk_right face_down))
         waitmovement(0)
     } else {
         msgbox(format("ARMAROUGE leers down at you...and continues to look straight ahead."))
-        applymovement(22, moves(face_down))
+        applymovement(23, moves(face_down))
         waitmovement(0)
     }
     releaseall
@@ -247,7 +255,7 @@ script GalecrestCity_DetectiveAcademy_NPC5{
 script GalecrestCity_DetectiveAcademy_NPC6{
     lockall
     faceplayer
-    msgbox(format("Are you a student? You shouldn't be here if you aren't."))
+    msgbox(format("Are you a student? You shouldn't be here if you aren't...oh, you are."))
     releaseall
 }
 
@@ -266,7 +274,7 @@ script GalecrestCity_DetectiveAcademy_NPC6{
 script GalecrestCity_DetectiveAcademy_NPC8{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_GALECREST_DETECTIVE_A, format("Hey, you look weak.\nYou'd be a good training\ndummy for my CHARCADET!"), format("But you're not even a student!"))
+    trainerbattle_single(TRAINER_GALECREST_DETECTIVE_A, format("Hey, you look weak. You'd be a good training dummy for my CHARCADET!"), format("But you're not even a student!"))
     msgbox(format("You may have beaten me, but I bet you can't beat KOHLA! He's the star of the Academy!"))
     release
     applymovement(11, moves(face_left))
@@ -318,7 +326,7 @@ script GalecrestCity_DetectiveAcademy_Charcadet_Battle{
 script GalecrestCity_DetectiveAcademy_Yamper_Battle{
     lockall
     playmoncry(SPECIES_YAMPER, CRY_MODE_NORMAL)
-    applymovement(19, moves(jump_in_place_left))
+    applymovement(19, moves(jump_in_place_right))
     waitmovement(0)    
     msgbox(format("YAMPER's not backing down!"))
     releaseall
@@ -331,6 +339,8 @@ script GalecrestCity_DetectiveAcademy_Charcadet_A{
     faceplayer
     playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
     msgbox(format("CHARCADET is also curious about the class rankings!"))
+    releaseall
+    end
 }
 
 

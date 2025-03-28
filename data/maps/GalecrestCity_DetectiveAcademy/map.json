@@ -101,7 +101,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "GalecrestCity_DetectiveAcademy_Receptionist",
       "flag": "0"
     },
@@ -162,7 +162,7 @@
       "x": 20,
       "y": 42,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -236,7 +236,7 @@
       "flag": "FLAG_DETECTIVE_ACAD_BREECH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHARCADET)",
       "x": 3,
       "y": 44,
       "elevation": 0,
@@ -284,7 +284,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GalecrestCity_DetectiveAcademy_Armarouge",
+      "script": "NULL",
       "flag": "0"
     },
     {
