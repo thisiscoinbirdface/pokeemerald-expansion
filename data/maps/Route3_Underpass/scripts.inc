@@ -185,60 +185,62 @@ Route3_Underpass_EvilBattle::
 # 111 "data//maps/Route3_Underpass/scripts.pory"
 	removeobject 2
 # 114 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 3, Route3_Underpass_EvilBattle_Movement_11
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_11
 # 115 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	applymovement 3, Route3_Underpass_EvilBattle_Movement_12
 # 116 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_12
+	waitmovement 0
 # 117 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_13
+	msgbox Route3_Underpass_EvilBattle_Text_12
 # 118 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_14
+	msgbox Route3_Underpass_EvilBattle_Text_13
 # 119 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_15
+	msgbox Route3_Underpass_EvilBattle_Text_14
 # 120 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_16
+	msgbox Route3_Underpass_EvilBattle_Text_15
 # 121 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	msgbox Route3_Underpass_EvilBattle_Text_16
 # 122 "data//maps/Route3_Underpass/scripts.pory"
-	giveitem ITEM_EVERSTONE
+	release
 # 123 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_17
+	giveitem ITEM_EVERSTONE
 # 124 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_18
+	msgbox Route3_Underpass_EvilBattle_Text_17
 # 125 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	msgbox Route3_Underpass_EvilBattle_Text_18
 # 126 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Trigger1_Movement_0
-# 127 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 3, Route3_Underpass_EvilBattle_Movement_0
-# 128 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Movement_12
-# 129 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 130 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject 3
-# 131 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Movement_6
-# 132 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 133 "data//maps/Route3_Underpass/scripts.pory"
-	delay 30
-# 134 "data//maps/Route3_Underpass/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-# 135 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_19
-# 136 "data//maps/Route3_Underpass/scripts.pory"
 	release
-# 137 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Trigger1_Movement_0
-# 138 "data//maps/Route3_Underpass/scripts.pory"
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Trigger1_Movement_0
+# 128 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 3, Route3_Underpass_EvilBattle_Movement_0
+# 129 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_13
+# 130 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
+# 131 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject 3
+# 132 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_6
+# 133 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 134 "data//maps/Route3_Underpass/scripts.pory"
+	delay 30
+# 135 "data//maps/Route3_Underpass/scripts.pory"
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+# 136 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_19
+# 137 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 138 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 6, Route3_Underpass_EvilBattle_Trigger1_Movement_0
 # 139 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 140 "data//maps/Route3_Underpass/scripts.pory"
 	removeobject 6
-# 142 "data//maps/Route3_Underpass/scripts.pory"
-	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
 # 143 "data//maps/Route3_Underpass/scripts.pory"
+	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
+# 144 "data//maps/Route3_Underpass/scripts.pory"
 	releaseall
 	return
 
@@ -342,18 +344,24 @@ Route3_Underpass_EvilBattle_Movement_10:
 # 114 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_11:
 # 114 "data//maps/Route3_Underpass/scripts.pory"
+	walk_up
+	step_end
+
+# 115 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_EvilBattle_Movement_12:
+# 115 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
-# 114 "data//maps/Route3_Underpass/scripts.pory"
+# 115 "data//maps/Route3_Underpass/scripts.pory"
 	face_up
 	step_end
 
-# 128 "data//maps/Route3_Underpass/scripts.pory"
-Route3_Underpass_EvilBattle_Movement_12:
-# 128 "data//maps/Route3_Underpass/scripts.pory"
+# 129 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_EvilBattle_Movement_13:
+# 129 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
-# 128 "data//maps/Route3_Underpass/scripts.pory"
+# 129 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 128 "data//maps/Route3_Underpass/scripts.pory"
+# 129 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 	step_end
 
@@ -431,8 +439,7 @@ Route3_Underpass_EvilBattle_Text_9:
 Route3_Underpass_EvilBattle_Text_10:
 # 103 "data//maps/Route3_Underpass/scripts.pory"
 	.string "GABRIELLE: Fine - keep your stupid\n"
-	.string "CLEFAIRY! It's not like I enjoy doing\l"
-	.string "this...but we have to achieve our goals!$"
+	.string "CLEFAIRY!$"
 
 Route3_Underpass_EvilBattle_Text_11:
 # 107 "data//maps/Route3_Underpass/scripts.pory"
@@ -441,51 +448,50 @@ Route3_Underpass_EvilBattle_Text_11:
 	.string "Team Somber!$"
 
 Route3_Underpass_EvilBattle_Text_12:
-# 116 "data//maps/Route3_Underpass/scripts.pory"
+# 117 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER} - CLEFAIRY and I are in your\n"
 	.string "debt. The way you handled that thug was\l"
 	.string "incredible.$"
 
 Route3_Underpass_EvilBattle_Text_13:
-# 117 "data//maps/Route3_Underpass/scripts.pory"
+# 118 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I've realised something. When alone, I\n"
 	.string "was free to do as I wish and avoid\l"
 	.string "battling. But with a partner, I can't be\l"
 	.string "that way.$"
 
 Route3_Underpass_EvilBattle_Text_14:
-# 118 "data//maps/Route3_Underpass/scripts.pory"
+# 119 "data//maps/Route3_Underpass/scripts.pory"
 	.string "CLEFAIRY was ready to protect me, but I\n"
 	.string "wasn't prepared to do the same for her.\p"
 	.string "...\p"
 	.string "I let her down.$"
 
 Route3_Underpass_EvilBattle_Text_15:
-# 119 "data//maps/Route3_Underpass/scripts.pory"
+# 120 "data//maps/Route3_Underpass/scripts.pory"
 	.string "But no more! I'm going to learn to hold\n"
 	.string "my ground. If Team Somber comes after\l"
 	.string "CLEFAIRY again, we'll be ready.$"
 
 Route3_Underpass_EvilBattle_Text_16:
-# 120 "data//maps/Route3_Underpass/scripts.pory"
+# 121 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER} - we owe you. As thanks,\n"
 	.string "CLEFAIRY and I want to give you the\l"
 	.string "stone that GABRIELLE person was\l"
 	.string "after...$"
 
 Route3_Underpass_EvilBattle_Text_17:
-# 123 "data//maps/Route3_Underpass/scripts.pory"
-	.string "I don't know anything about\n"
-	.string "dreamstones, but it looks like a regular\l"
-	.string "EVERSTONE to me. Who knows what she\l"
-	.string "saw?$"
+# 124 "data//maps/Route3_Underpass/scripts.pory"
+	.string "I don't know about dreamstones, but it\n"
+	.string "looks like a regular EVERSTONE to me.\l"
+	.string "Who knows what she saw?$"
 
 Route3_Underpass_EvilBattle_Text_18:
-# 124 "data//maps/Route3_Underpass/scripts.pory"
+# 125 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Don't worry - CLEFAIRY's bored of that\n"
 	.string "stone already. Next, we'll head to MT\l"
 	.string "CERAM to collect rare stones there!$"
 
 Route3_Underpass_EvilBattle_Text_19:
-# 135 "data//maps/Route3_Underpass/scripts.pory"
+# 136 "data//maps/Route3_Underpass/scripts.pory"
 	.string "CLEFAIRY: clee!!!$"

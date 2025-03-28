@@ -18,14 +18,14 @@ script GastreeCity_PokemonCenter_EventScript_Nurse{
 script GastreeCity_PokemonCenter_NPC1{
 	lockall
     faceplayer
-	msgbox(format("This city's Gym Leader is INGER, the ROCK specialist. He's a local hero."))
+	msgbox(format("This city's Gym Leader is INGER, the ROCK specialist. He's a local hero!"))
 	releaseall
 }
 
 script GastreeCity_PokemonCenter_NPC2{
 	lockall
     faceplayer
-	msgbox(format("Up north is Mt. Ceram and down south is the giant Vine River."))
+	msgbox(format("Up north is MT CERAM and down south is the giant VINE RIVER."))
 	releaseall
 }
 
