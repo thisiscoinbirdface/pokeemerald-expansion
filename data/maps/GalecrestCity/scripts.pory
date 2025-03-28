@@ -288,6 +288,8 @@ script GalecrestCity_Froakie{
     end
 }
 
+
+
 //Give an item
 script GalecrestCity_NPC_5{
     lockall
@@ -357,15 +359,27 @@ script GalecrestCity_NPC_11{
     lockall
     faceplayer    
 
-    msgbox(format("I do the night shift at the Pokemon Center. During the day, I like to walk around the gardens and pick berries."))
+    msgbox(format("I do the night shift at the Pokemon Center. During the day, CHANSEY and I like to walk around the garden and pick berries."))
     
     if (flag(FLAG_GALECREST_NURSE_BERRY)){
         msgbox(format("Here, you can have some of my extra berries."))
-        giveitem(ITEM_CHOPLE_BERRY, 3)  //Halves fighting damage
+        giveitem(ITEM_CHILAN_BERRY, 3)  //Halves normal damage
         setflag(FLAG_GALECREST_NURSE_BERRY)
     }
     releaseall
 }
+
+
+
+script GalecrestCity_Chansey{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox(format("CHANSEY looks happy to be out in the garden!"))
+    releaseall
+    end
+}
+
 
 script GalecrestCity_NPC_12{
     lockall
