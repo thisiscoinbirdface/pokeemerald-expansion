@@ -2,22 +2,17 @@
 
 #define GUARD_MINING_CONSTANTS
 
-#include "constants/items.h"
-#include "gba/types.h"
-#include "gba/defines.h"
-#include "main.h"
-#include "sprite.h"
 
 /*********** OTHER ************/
-#define SELECTED          0
-#define DESELECTED        255
 #define ITEM_TILE_NONE    0
 #define ITEM_TILE_DUG_UP  5
 #define MAX_NUM_BURIED_ITEMS 4
 #define COUNT_MAX_NUMBER_STONES 2
 
 /*********** ITEM SPRITE TAGS ************/
-enum {
+// TODO: Prefix with `MINING_`
+enum 
+{
     TAG_ITEM_HEARTSCALE = 14,
     TAG_ITEM_HARDSTONE,
     TAG_ITEM_REVIVE,
@@ -63,7 +58,9 @@ enum {
 /*********** DEBUG FLAGS ************/
 #define DEBUG_ENABLE_ITEM_GENERATION_OPTIONS    FALSE
 
-enum {
+// TODO: Prefix with `MININGID_`
+enum
+{
     ITEMID_NONE,
     ID_STONE_1x4,
     ID_STONE_4x1,

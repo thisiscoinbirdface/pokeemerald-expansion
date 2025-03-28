@@ -435,7 +435,8 @@ $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 MOVES_JSON_DIR := $(TOOLS_DIR)/learnset_helpers/porymoves_files
 TEACHABLE_DEPS := $(shell find data/ -type f -name '*.inc') $(INCLUDE_DIRS)/constants/tms_hms.h $(C_SUBDIR)/pokemon.c $(wildcard $(MOVES_JSON_DIR)/*.json)
 MINING_DEPS := $(shell find graphics/mining_minigame/items/ -type f -name '*.4bpp') \
-               $(shell find graphics/mining_minigame/stones/ -type f -name '*.4bpp') 
+               $(shell find graphics/mining_minigame/stones/ -type f -name '*.4bpp') \
+			   graphics/mining_minigame/sprite_enum_table.toml
 #               $(C_SUBDIR)/data/mining_minigame.h
 
 $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(TEACHABLE_DEPS)
