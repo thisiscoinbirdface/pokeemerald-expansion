@@ -3,25 +3,28 @@ mapscripts TempCopyMap_MapScripts{}
 //ALL COMMON EVENT SCRIPTS GO HERE
 script Common_EventScript_MintVendingMachine{
 
-    if (flag(FLAG_BADGE_06_GET)){
-        mart(Mart_Mints_SixBadges)
+    msgbox(format("There's a slot to swipe your TRAINER CARD. Swipe?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) {end}
+
+    if (flag(FLAG_BADGE05_GET)){
+        pokemart(Mart_Mints_SixBadges)
     } else {
-        if (flag(FLAG_BADGE_05_GET)){
-            mart(Mart_Mints_FiveBadges)
+        if (flag(FLAG_BADGE05_GET)){
+            pokemart(Mart_Mints_FiveBadges)
         } else {
-            if (flag(FLAG_BADGE_04_GET)) {
-                mart(Mart_Mints_FourBadges)
+            if (flag(FLAG_BADGE04_GET)) {
+                pokemart(Mart_Mints_FourBadges)
             } else {
-                if (flag(FLAG_BADGE_03_GET)) {
-                    mart(Mart_Mints_ThreeBadges)
+                if (flag(FLAG_BADGE03_GET)) {
+                    pokemart(Mart_Mints_ThreeBadges)
                 } else {
-                    if (flag(FLAG_BADGE_02_GET)) {
-                        mart(Mart_Mints_TwoBadges)
+                    if (flag(FLAG_BADGE02_GET)) {
+                        pokemart(Mart_Mints_TwoBadges)
                     } else {
-                        if (flag(FLAG_BADGE_01_GET)) {
-                            mart(Mart_Mints_OneBadge)
+                        if (flag(FLAG_BADGE01_GET)) {
+                            pokemart(Mart_Mints_OneBadge)
                         } else {
-                            mart(Mart_Mints_NoBadges)
+                            goto(Mart_Mints_NoBadges)
                         }
                     }
                 }
@@ -35,11 +38,28 @@ script Common_EventScript_MintVendingMachine{
 
 
 // lonely addy brave naughty bold -> increase attack
-mart Mart_Mints_NoBadges{
-    ITEM_IMPISH_MINT
-    ITEM_CALM_MINT
-    ITEM_RELAXED_MINT
+script Mart_Mints_NoBadges{
+    showmoneybox(18, 0)
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    dynmultichoice(0,0, TRUE, 21, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Impish Mint", "Calm Mint", "Relaxed Mint", "Modest Mint", "Gentle Mint",
+        "Careful Mint", "Sassy Mint", "Naughty Mint", "Timid Mint", "Hasty Mint",
+        "Brave Mint", "Bold Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
+        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
+        "Serious Mint")
+    if (var(VAR_RESULT) == 0) {goto(MintPurchase_Impish)}
+    if (var(VAR_RESULT) == 1) {goto(MintPurchase_Impish)}
+    if (var(VAR_RESULT) == 2) {goto(MintPurchase_Impish)}
 }
+
+    // showmoneybox(18, 0)
+    // msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
+    
+    // dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Impish Mint", "Calm Mint", "Relaxed Mint")
+    // if (var(VAR_RESULT) == 0) {goto(MintPurchase_Impish)}
+    // if (var(VAR_RESULT) == 1) {goto(MintPurchase_Impish)}
+    // if (var(VAR_RESULT) == 2) {goto(MintPurchase_Impish)}
 
 mart Mart_Mints_OneBadge{
     ITEM_IMPISH_MINT
@@ -138,4 +158,199 @@ mart Mart_Mints_SixBadges{
     ITEM_JOLLY_MINT
     ITEM_SERIOUS_MINT      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script MintPurchase_Impish{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_IMPISH_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Calm{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_CALM_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Relaxed{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_RELAXED_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Modest{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_MODEST_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Gentle{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_GENTLE_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Careful{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_CAREFUL_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Sassy{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_SASSY_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Naughty{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_NAUGHTY_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Timid{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_TIMID_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Hasty{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_HASTY_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Brave{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_BRAVE_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Bold{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_BOLD_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Adamant{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_ADAMANT_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Mild{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_MILD_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Rash{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_MILD_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Naive{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_NAIVE_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Lax{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_LAX_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Lonely{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_LONELY_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Quiet{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_QUIET_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Jolly{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_JOLLY_MINT)
+    releaseall
+    end
+}
+
+script MintPurchase_Serious{
+    hidemoneybox
+    removemoney(200)
+    giveitem(ITEM_SERIOUS_MINT)
+    releaseall
+    end
+}
+
 
