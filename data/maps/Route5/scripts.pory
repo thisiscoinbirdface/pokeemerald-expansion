@@ -1,4 +1,17 @@
 mapscripts Route5_MapScripts{}
 
+script Route5_NPC_A{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
 
-
+script Route5_NPC_B{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
