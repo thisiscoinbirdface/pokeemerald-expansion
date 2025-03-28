@@ -25,14 +25,45 @@ script SilversunCity_OnFrame{
                 waitmovement(0)
                 delay(30)
 
-                msgbox(format("DETECTIVE: Professor TENEBRIS! Are you okay?\pTENEBRIS: All well, thanks to {PLAYER}.\pDETECTIVE: {PLAYER}, this is a splendid outcome. KOHLA is still chasing the leads from RUE. \pDETECTIVE: So Professor, you hid the dreamstone from FENNILAHL TOWN on MT MIRROH?\pTENEBRIS: Yes. I began to suspect that someone might be after it, so I took the dreamstone and disappeared. But they found me...and the dreamstone's location.\pDETECTIVE: What's done is done. If you're safe and sound, we can close the case.\pDETECTIVE: But while the case is closed, the job is not yet done. {PLAYER}, we must stop them from obtaining the dreamstone! Head to MT MIRROH as soon as possible.\pTENEBRIS: I must return to the lab then and talk to RUE. Thank you again {PLAYER}."))
+                msgbox(format("DETECTIVE: ASST PROF RUE!? Are you okay?\RUE: All well, thanks to {PLAYER}.\pDETECTIVE: We...we thought it was PROFESSOR TENEBRIS with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
+                applymovement(LOCALID_DET1, moves(emote_question_mark))
+                applymovement(LOCALID_DET2, moves(emote_question_mark))
+                waitmovement(0)
+                msgbox(format("DETECTIVE: How did they get to you, RUE?"))
+                release
+                applymovement(LOCALID_TENEBRIS, moves(emote_exclamation_mark))
+                waitmovement(0)
+                msgbox(format("RUE: Oh, it was terrible! they barged into our lab and started threatening everyone unless we handed over the DREAMALYSER blueprints! I managed to hold them off while the other research associates escaped, but they overpowered me and forced me to hand over the blueprints..."))
+                release
+                delay(30)
+                msgbox(format("DETECTIVE: Spilt milk. Don't fret over what can't be changed. What do they want to do with the DREAMALYSER?\pRUE: Just like we heard from {PLAYER} about being transported to ANCIENT CORMORIA, they heard about it from their grunt who went too. I think they called her GABRIELLE. And now they want to use the DREAMALYSER to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
+                release
+                applymovement(LOCALID_DET1, moves(emote_question_mark))
+                applymovement(LOCALID_DET2, moves(emote_question_mark))
+                msgbox(format("DETECTIVE: So they want to build a DREAMALYSER and use it to go to ANCIENT CORMORIA?\pRUE: Yes.\pDETECTIVE: There must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's KOHLA when we need him? RUE, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                release
+                delay(24)
+                msgbox(format("DETECTIVE: RUE - go back home. You've had a hard time. Take care of yourself.\pRUE: Y-yes, I better...see you al soon. Thanks again {PLAYER}."))
+                release
+
+                //Fade and remove objects
+                fadescreen(FADE_TO_BLACK)
+                removeobject(LOCALID_TENEBRIS)
+                fadescreen(FADE_FROM_BLACK)
+
+                msgbox(format("DETECTIVE: {PLAYER} - to find out what Team Somber wants with the past, we need to find out about ANCIENT CORMORIA. I have an old acquaintance at the MIRROH BASE CAMP. She was a reputed historian in her time and now manages the graveyard there. Please tell her everything you know.\pGot it? Head to the MIRROH BASE CAMP, talk to the lady who manages the graveyard, and find out what Team Somber seeks in ANCIENT CORMORIA.\pNow get on it, pronto!\p...\pSeriously, where is KOHLA? He should be done chasing RUE's leads by now...we've got to go find him."))
+                release
+                // KOHLA is still chasing the leads from RUE. \pDETECTIVE: So Professor, you hid the dreamstone from FENNILAHL TOWN on MT MIRROH?\pTENEBRIS: 
+                // Yes. I began to suspect that someone might be after it, so I took the dreamstone and disappeared. But they found me...and the dreamstone's location.\p
+                // DETECTIVE: What's done is done. If you're safe and sound, we can close the case.\pDETECTIVE: But while the case is closed, the job is not yet done. 
+                // {PLAYER}, we must stop them from obtaining the dreamstone! Head to MT MIRROH as soon as possible.\p
+                // TENEBRIS: I must return to the lab then and talk to RUE. Thank you again {PLAYER}."))
 
             //Fade and remove objects
             fadescreen(FADE_TO_BLACK)
             removeobject(LOCALID_DET1)
             removeobject(LOCALID_DET2)
-            removeobject(LOCALID_TENEBRIS)
             fadescreen(FADE_FROM_BLACK)
 
             //Set flag
