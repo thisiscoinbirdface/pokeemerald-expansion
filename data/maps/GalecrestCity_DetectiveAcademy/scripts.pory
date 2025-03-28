@@ -75,7 +75,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist{
 script GalecrestCity_DetectiveAcademy_Guard{
     lockall
     faceplayer
-    msgbox(format("Dorm access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
+    msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
     releaseall
     end
 }

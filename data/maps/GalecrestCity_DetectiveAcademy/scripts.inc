@@ -420,9 +420,9 @@ GalecrestCity_DetectiveAcademy_Receptionist_Text_0:
 
 GalecrestCity_DetectiveAcademy_Guard_Text_0:
 # 78 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "Dorm access is for students only. That\n"
-	.string "ARMAROUGE won't let you in without a\l"
-	.string "STUDENT ID!$"
+	.string "Garden access is for students only.\n"
+	.string "That ARMAROUGE won't let you in without\l"
+	.string "a STUDENT ID!$"
 
 GalecrestCity_DetectiveAcademy_Armarouge_Text_0:
 # 87 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
