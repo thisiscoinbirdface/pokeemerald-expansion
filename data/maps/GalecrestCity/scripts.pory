@@ -495,3 +495,15 @@ script GalecrestCity_NPC_18{
 
 
 
+
+script GalecrestCity_NPC_Red{
+    lockall
+    faceplayer
+    msgbox(format("Sorry trainer, the Gym Leader's not in right now. He should be back soon. Check out the DETECTIVE ACADEMY in the meantime!"))
+    release
+    applymovement(39, moves(face_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+
