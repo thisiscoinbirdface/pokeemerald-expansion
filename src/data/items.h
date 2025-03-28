@@ -8810,9 +8810,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Eviolite,
     },
 
-    [ITEM_FLOAT_STONE] =
+    [ITEM_LUSTER_STONE] =
     {
-        .name = _("Float Stone"),
+        .name = _("Luster Stone"),
         .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_FLOAT_STONE,
         .description = sEvolutionStoneDesc,

@@ -405,6 +405,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 39,
+      "y": 54,
+      "elevation": 0,
+      "item": "ITEM_SUPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_MTCERAM_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 41,
+      "y": 40,
+      "elevation": 0,
+      "item": "ITEM_ORAN_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_MTCERAM_B"
+    }
   ]
 }

@@ -26,6 +26,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GalecrestCity_Leader_Basement_Litwick",
       "flag": "FLAG_GALECREST_LITWICK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_LUSTER_STONE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_GALECREST_D"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 10,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXPERT_BELT",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_GALECREST_E"
     }
   ],
   "warp_events": [

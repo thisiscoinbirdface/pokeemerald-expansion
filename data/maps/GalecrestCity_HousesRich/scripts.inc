@@ -194,12 +194,12 @@ GalecrestCity_HousesRich_NPC9::
 # 124 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GalecrestCity_HousesRich_NPC9_5
-# 129 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 130 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC9_Text_2
 GalecrestCity_HousesRich_NPC9_1:
-# 132 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 133 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	releaseall
-	return
+	end
 
 GalecrestCity_HousesRich_NPC9_2:
 	goto GalecrestCity_HousesRich_NPC9_1
@@ -211,17 +211,19 @@ GalecrestCity_HousesRich_NPC9_5:
 	giveitem ITEM_MACHO_BRACE
 # 127 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	setflag FLAG_GALECREST_RICH_HOUSECLEANITEM
+# 128 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_NPC9_Text_2
 	goto GalecrestCity_HousesRich_NPC9_1
 
 
 GalecrestCity_HousesRich_Keckleon::
-# 137 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	lockall
-# 138 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	faceplayer
 # 139 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_Keckleon_Text_0
+	lockall
 # 140 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	faceplayer
+# 141 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_Keckleon_Text_0
+# 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	releaseall
 	return
 
@@ -308,7 +310,7 @@ GalecrestCity_HousesRich_NPC7_Text_0:
 GalecrestCity_HousesRich_NPC8_Text_0:
 # 111 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Our daughter grew up and is now the Gym\n"
-	.string "Leader of Silversun City. So we live\l"
+	.string "Leader of PELLUCA CITY. So we live\l"
 	.string "alone in this big house now...$"
 
 GalecrestCity_HousesRich_NPC9_Text_0:
@@ -323,10 +325,12 @@ GalecrestCity_HousesRich_NPC9_Text_1:
 	.string "your hands.$"
 
 GalecrestCity_HousesRich_NPC9_Text_2:
-# 129 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "My daughter is a trainer so she has lots\n"
-	.string "of training equipment.$"
+# 128 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	.string "You can find tons of unused equipment\n"
+	.string "in our basement - although it's dark, so\l"
+	.string "don't bang your toes! Feel free to take\l"
+	.string "anything you like.$"
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
-# 139 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 141 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "GLALIE glares intently at you.$"

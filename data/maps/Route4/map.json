@@ -321,6 +321,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Route4_Sign_KidsTrio"
+    },
+    {
+      "type": "hidden_item",
+      "x": 20,
+      "y": 65,
+      "elevation": 0,
+      "item": "ITEM_RAWST_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE4_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 37,
+      "y": 15,
+      "elevation": 0,
+      "item": "ITEM_FRESH_WATER",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE4_B"
     }
   ]
 }
