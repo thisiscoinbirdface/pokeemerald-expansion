@@ -150,9 +150,9 @@
 #define FLAG_ROUTE4_KIDGANG  0x298 // Unused Flag
 #define FLAG_GALECREST_LITWICK  0x299 // Unused Flag
 #define FLAG_FENNILAHL_CUTEMONGIFT  0x29A // Unused Flag
-#define FLAG_GALECREST_FAKEID  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
+#define FLAG_GALECREST_FAKEID  0x29B // get the fake ID
+#define FLAG_GALECREST_CHARCADET_GET  0x29C // get the charcadet
+#define FLAG_GALECREST_STUDENTID_GET  0x29D // get the temp student ID
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag

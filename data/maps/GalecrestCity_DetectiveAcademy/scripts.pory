@@ -110,6 +110,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
         if (var(VAR_RESULT) == 1){
             msgbox(format("Very good! Here's your temporary student ID."))
             giveitem(ITEM_DETECTIVE_STUDENT_ID)
+            setflag(FLAG_GALECREST_STUDENTID_GET)
             removemoney(1000)
             msgbox(format("With this ID, you'll be able to access the academy facilities as if you were a normal student. You can even sit in any ongoing classes!"))
             release
@@ -159,22 +160,52 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
 script GalecrestCity_DetectiveAcademy_Guard{
     lockall
     faceplayer
-    msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
+
+    if (flag(FLAG_GALECREST_STUDENTID_GET)){
+        msgbox(format("You got a one-day student ID? Maybe I should get one too..."))
+    } else {
+        msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
+    }
+
     releaseall
     end
 }
 
-script GalecrestCity_DetectiveAcademy_Armarouge{
+script GalecrestCity_DetectiveAcademy_Armarouge_Garden{
     lockall
     faceplayer
     playmoncry(SPECIES_ARMAROUGE, CRY_MODE_NORMAL)
-    msgbox(format("ARMAROUGE leers down at you...and continues to look straight ahead."))
-    applymovement(22, moves(face_down))
-    waitmovement(0)
+    if (flag(FLAG_GALECREST_STUDENTID_GET)){
+        msgbox(format("ARMAROUGE leers down at you...and nods approvingly!"))
+        release
+        applymovement(22, moves(walk_left face_down))
+        waitmovement(0)
+    } else {
+        msgbox(format("ARMAROUGE leers down at you...and continues to look straight ahead."))
+        applymovement(22, moves(face_down))
+        waitmovement(0)
+    }
     releaseall
     end
 }
 
+script GalecrestCity_DetectiveAcademy_Armarouge_Classroom{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_ARMAROUGE, CRY_MODE_NORMAL)
+    if (flag(FLAG_GALECREST_STUDENTID_GET)){
+        msgbox(format("ARMAROUGE leers down at you...and nods approvingly!"))
+        release
+        applymovement(22, moves(walk_right face_down))
+        waitmovement(0)
+    } else {
+        msgbox(format("ARMAROUGE leers down at you...and continues to look straight ahead."))
+        applymovement(22, moves(face_down))
+        waitmovement(0)
+    }
+    releaseall
+    end
+}
 
 script GalecrestCity_DetectiveAcademy_NPC1{
     lockall
