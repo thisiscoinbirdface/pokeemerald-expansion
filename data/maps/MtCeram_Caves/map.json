@@ -2,7 +2,7 @@
   "id": "MAP_MT_CERAM_CAVES",
   "name": "MtCeram_Caves",
   "layout": "LAYOUT_MT_CERAM_CAVES",
-  "music": "MUS_MT_PYRE",
+  "music": "MUS_RG_SEVII_DUNGEON",
   "region_map_section": "MAPSEC_MT_CERAM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -203,7 +203,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_Caves_Leaf_Trigger0"
+      "script": "MtCeram_Caves_Greta_Trigger0"
     },
     {
       "type": "trigger",
@@ -212,7 +212,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_Caves_Leaf_Trigger1"
+      "script": "MtCeram_Caves_Greta_Trigger1"
     },
     {
       "type": "trigger",
@@ -221,7 +221,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "MtCeram_Caves_Leaf_Trigger2"
+      "script": "MtCeram_Caves_Greta_Trigger2"
     }
   ],
   "bg_events": [

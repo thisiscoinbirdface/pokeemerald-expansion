@@ -2,7 +2,7 @@
   "id": "MAP_GALECREST_CITY_HOUSES_POOR",
   "name": "GalecrestCity_HousesPoor",
   "layout": "LAYOUT_GALECREST_CITY_HOUSES_POOR",
-  "music": "MUS_DUMMY",
+  "music": "MUS_LILYCOVE",
   "region_map_section": "MAPSEC_GALECREST_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

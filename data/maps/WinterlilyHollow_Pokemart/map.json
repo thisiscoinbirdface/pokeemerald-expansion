@@ -2,7 +2,7 @@
   "id": "MAP_WINTERLILY_HOLLOW_POKEMART",
   "name": "WinterlilyHollow_Pokemart",
   "layout": "LAYOUT_WINTERLILY_HOLLOW_POKEMART",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

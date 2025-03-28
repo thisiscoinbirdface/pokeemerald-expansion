@@ -2,7 +2,7 @@
   "id": "MAP_RANGER_INSTITUTE",
   "name": "RangerInstitute",
   "layout": "LAYOUT_RANGER_INSTITUTE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CONTEST_RESULTS",
   "region_map_section": "MAPSEC_RANGER_INSTITUTE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

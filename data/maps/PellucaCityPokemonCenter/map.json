@@ -2,7 +2,7 @@
   "id": "MAP_PELLUCA_CITY_POKEMON_CENTER",
   "name": "PellucaCityPokemonCenter",
   "layout": "LAYOUT_PELLUCA_CITY_POKEMON_CENTER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_PELLUCA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

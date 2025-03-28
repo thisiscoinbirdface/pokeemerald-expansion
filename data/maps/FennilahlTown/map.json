@@ -2,7 +2,7 @@
   "id": "MAP_FENNILAHL_TOWN",
   "name": "FennilahlTown",
   "layout": "LAYOUT_FENNILAHL_TOWN",
-  "music": "MUS_PETALBURG",
+  "music": "MUS_OLDALE",
   "region_map_section": "MAPSEC_FENNILAHL_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_VOLCANIC_ASH",

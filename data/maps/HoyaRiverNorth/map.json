@@ -2,7 +2,7 @@
   "id": "MAP_HOYA_RIVER_NORTH",
   "name": "HoyaRiverNorth",
   "layout": "LAYOUT_HOYA_RIVER_NORTH",
-  "music": "MUS_CUSTOM_JETLAG",
+  "music": "route104",
   "region_map_section": "MAPSEC_HOYA_RIVER_NORTH",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

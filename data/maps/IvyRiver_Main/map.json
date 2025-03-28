@@ -2,7 +2,7 @@
   "id": "MAP_IVY_RIVER_MAIN",
   "name": "IvyRiver_Main",
   "layout": "LAYOUT_IVY_RIVER_MAIN",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_ROUTE11",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",

@@ -2,7 +2,7 @@
   "id": "MAP_LILY_POND",
   "name": "LilyPond",
   "layout": "LAYOUT_LILY_POND",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_ROUTE11",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

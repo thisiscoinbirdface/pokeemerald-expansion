@@ -2,7 +2,7 @@
   "id": "MAP_PELLUCA_FISHERY",
   "name": "PellucaFishery",
   "layout": "LAYOUT_PELLUCA_FISHERY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_SLATEPORT",
   "region_map_section": "MAPSEC_PELLUCA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

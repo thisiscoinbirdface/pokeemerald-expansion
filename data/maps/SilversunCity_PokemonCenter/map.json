@@ -2,7 +2,7 @@
   "id": "MAP_SILVERSUN_CITY_POKEMON_CENTER",
   "name": "SilversunCity_PokemonCenter",
   "layout": "LAYOUT_SILVERSUN_CITY_POKEMON_CENTER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_SILVERSUN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

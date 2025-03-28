@@ -2,7 +2,7 @@
   "id": "MAP_SILVERSUN_CITY_SOMBER_HQ",
   "name": "SilversunCity_SomberHQ",
   "layout": "LAYOUT_SILVERSUN_CITY_SOMBER_HQ",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_ROCKET_HIDEOUT",
   "region_map_section": "MAPSEC_SILVERSUN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

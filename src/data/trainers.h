@@ -1656,9 +1656,9 @@ F_TRAINER_FEMALE |
 #line 724
         .trainerName = _("CANDY"),
 #line 725
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_CADET,
 #line 726
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_CADET_F,
         .encounterMusic_gender =
 #line 727
 F_TRAINER_FEMALE | 
@@ -1742,16 +1742,14 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GALECRESTGYM_A] =
     {
 #line 759
-        .trainerName = _("ROSE"),
+        .trainerName = _("RONNY"),
 #line 760
         .trainerClass = TRAINER_CLASS_CADET,
 #line 761
-        .trainerPic = TRAINER_PIC_CADET_F,
+        .trainerPic = TRAINER_PIC_CADET_M,
         .encounterMusic_gender =
-#line 762
-F_TRAINER_FEMALE | 
 #line 763
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 764
         .doubleBattle = FALSE,
 #line 765
@@ -1798,7 +1796,7 @@ F_TRAINER_FEMALE |
 #line 781
         .trainerClass = TRAINER_CLASS_CADET,
 #line 782
-        .trainerPic = TRAINER_PIC_CADET_M,
+        .trainerPic = TRAINER_PIC_CADET_F,
         .encounterMusic_gender =
 #line 783
 F_TRAINER_FEMALE | 
@@ -1850,14 +1848,16 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GALECRESTGYM_C] =
     {
 #line 801
-        .trainerName = _("DUSTY"),
+        .trainerName = _("BONNIE"),
 #line 802
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .trainerClass = TRAINER_CLASS_CADET,
 #line 803
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerPic = TRAINER_PIC_CADET_F,
         .encounterMusic_gender =
+#line 804
+F_TRAINER_FEMALE | 
 #line 805
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 806
         .doubleBattle = FALSE,
 #line 807

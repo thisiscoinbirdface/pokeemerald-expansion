@@ -2,7 +2,7 @@
   "id": "MAP_CERAM_BASE_CAMP",
   "name": "CeramBaseCamp",
   "layout": "LAYOUT_CERAM_BASE_CAMP",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_FALLARBOR",
   "region_map_section": "MAPSEC_CERAM_BASE_CAMP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_PELLUCA_CITY_POKEMART",
   "name": "PellucaCityPokemart",
   "layout": "LAYOUT_PELLUCA_CITY_POKEMART",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_PELLUCA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
