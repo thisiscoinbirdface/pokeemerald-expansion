@@ -415,7 +415,7 @@ script GalecrestCity_NPC_14{
         release
         delay(24)
         faceplayer    
-        emote_exclamation_mark
+        applymovement(12, moves(emote_exclamation_mark))
         delay(24)
         msgbox(format("I look suspicious? How dare you! I'm just innocently hanging around behind this rich house! I don't take such accusations lightly!"))
         //trainer battle
