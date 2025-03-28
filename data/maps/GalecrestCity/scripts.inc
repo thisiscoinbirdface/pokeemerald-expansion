@@ -661,20 +661,32 @@ GalecrestCity_NPC_18_5:
 	goto GalecrestCity_NPC_18_4
 
 
-GalecrestCity_NPC_Red::
-# 500 "data//maps/GalecrestCity/scripts.pory"
+GalecrestCity_NPC_19::
+# 496 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 501 "data//maps/GalecrestCity/scripts.pory"
+# 497 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 502 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_Red_Text_0
-# 503 "data//maps/GalecrestCity/scripts.pory"
-	release
-# 504 "data//maps/GalecrestCity/scripts.pory"
-	applymovement 39, GalecrestCity_DetectiveMeet_Main_Movement_0
-# 505 "data//maps/GalecrestCity/scripts.pory"
-	waitmovement 0
+# 498 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_19_Text_0
+# 499 "data//maps/GalecrestCity/scripts.pory"
+	releaseall
+	end
+
+
+GalecrestCity_NPC_Red::
 # 506 "data//maps/GalecrestCity/scripts.pory"
+	lockall
+# 507 "data//maps/GalecrestCity/scripts.pory"
+	faceplayer
+# 508 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_Red_Text_0
+# 509 "data//maps/GalecrestCity/scripts.pory"
+	release
+# 510 "data//maps/GalecrestCity/scripts.pory"
+	applymovement 39, GalecrestCity_DetectiveMeet_Main_Movement_0
+# 511 "data//maps/GalecrestCity/scripts.pory"
+	waitmovement 0
+# 512 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
@@ -1098,8 +1110,17 @@ GalecrestCity_NPC_18_Text_3:
 	.string "Accept this as a memento - keep that\n"
 	.string "bright smile of yours!$"
 
+GalecrestCity_NPC_19_Text_0:
+# 498 "data//maps/GalecrestCity/scripts.pory"
+	.string "I learned something new in class today!\n"
+	.string "Certain BERRIES reduce the power of\l"
+	.string "attacks dealt to them. A CHARTI BERRY\l"
+	.string "for example reduces the power of a\l"
+	.string "NORMAL type attack. That'd be useful in\l"
+	.string "the gym here, wouldn't it?$"
+
 GalecrestCity_NPC_Red_Text_0:
-# 502 "data//maps/GalecrestCity/scripts.pory"
+# 508 "data//maps/GalecrestCity/scripts.pory"
 	.string "Sorry trainer, the Gym Leader's not in\n"
 	.string "right now. He should be back soon. Check\l"
 	.string "out the DETECTIVE ACADEMY in the\l"

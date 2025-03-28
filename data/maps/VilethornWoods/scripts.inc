@@ -232,12 +232,12 @@ VilethornWoods_NPC2::
 # 189 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC2_5
-# 200 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_4
+# 201 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_5
 VilethornWoods_NPC2_1:
-# 203 "data//maps/VilethornWoods/scripts.pory"
+# 204 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
-	return
+	end
 
 VilethornWoods_NPC2_2:
 # 185 "data//maps/VilethornWoods/scripts.pory"
@@ -249,8 +249,8 @@ VilethornWoods_NPC2_5:
 # 0 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne VilethornWoods_NPC2_8
-# 197 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_3
+# 198 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_4
 	goto VilethornWoods_NPC2_1
 
 VilethornWoods_NPC2_8:
@@ -262,29 +262,31 @@ VilethornWoods_NPC2_8:
 	giveitem ITEM_TWISTED_SPOON
 # 195 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_MUSHROOMS
+# 196 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_3
 	goto VilethornWoods_NPC2_1
 
 
 VilethornWoods_NPC3::
-# 207 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 208 "data//maps/VilethornWoods/scripts.pory"
-	faceplayer
 # 209 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 210 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 211 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
-# 212 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC3_Text_1
-# 213 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_SCOPE_LENS
 # 214 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC3_Text_1
+# 215 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_SCOPE_LENS
+# 216 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_ITEM
 VilethornWoods_NPC3_1:
-# 217 "data//maps/VilethornWoods/scripts.pory"
+# 219 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	return
 
 VilethornWoods_NPC3_2:
-# 210 "data//maps/VilethornWoods/scripts.pory"
+# 212 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_0
 	goto VilethornWoods_NPC3_1
 
@@ -507,35 +509,44 @@ VilethornWoods_NPC2_Text_0:
 
 VilethornWoods_NPC2_Text_1:
 # 187 "data//maps/VilethornWoods/scripts.pory"
-	.string "I'm here to collect mushrooms to create\n"
-	.string "new recipes, but I can only find TINY\l"
+	.string "I'm a traveling chef! While I usually\n"
+	.string "cook at the PELLUCA RESTAURANT, I'm\l"
+	.string "here to collect mushrooms to create\l"
+	.string "new recipes...but I can only find TINY\l"
 	.string "MUSHROOMs! Say, why don't you help me?\l"
 	.string "If you can get me a BIG MUSHROOM, I'll\l"
-	.string "find something to pay you back!\p"
+	.string "find something to give you in exchange!\p"
 	.string "Have you got a BIG MUSHROOM?$"
 
 VilethornWoods_NPC2_Text_2:
 # 192 "data//maps/VilethornWoods/scripts.pory"
 	.string "Perfect! This'll be a great addition to\n"
-	.string "my collection. Thank you! Why don't you\l"
-	.string "keep this with you?$"
+	.string "our pantry. Thank you! Now I must give\l"
+	.string "you something in exchage...$"
 
 VilethornWoods_NPC2_Text_3:
-# 197 "data//maps/VilethornWoods/scripts.pory"
+# 196 "data//maps/VilethornWoods/scripts.pory"
+	.string "Maybe I'll see you somewhere else, since\n"
+	.string "I travel all over CORMORIA. And if you\l"
+	.string "ever visit PELLUCA CITY, be sure to\l"
+	.string "drop by our restaurant!$"
+
+VilethornWoods_NPC2_Text_4:
+# 198 "data//maps/VilethornWoods/scripts.pory"
 	.string "Hey, you don't have any! Are you trying\n"
 	.string "to trick me? The DROWZEE and MORELULL\l"
 	.string "doing enough of that!$"
 
-VilethornWoods_NPC2_Text_4:
-# 200 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_NPC2_Text_5:
+# 201 "data//maps/VilethornWoods/scripts.pory"
 	.string "Come back when you do!$"
 
 VilethornWoods_NPC3_Text_0:
-# 210 "data//maps/VilethornWoods/scripts.pory"
+# 212 "data//maps/VilethornWoods/scripts.pory"
 	.string "I am well and truly lost...$"
 
 VilethornWoods_NPC3_Text_1:
-# 212 "data//maps/VilethornWoods/scripts.pory"
+# 214 "data//maps/VilethornWoods/scripts.pory"
 	.string "I am well and truly lost...even with this\n"
 	.string "SCOPE LENS, I can't see a thing! Why\l"
 	.string "don't you have it?$"
