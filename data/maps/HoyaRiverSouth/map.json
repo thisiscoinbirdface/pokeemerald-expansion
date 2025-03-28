@@ -2,7 +2,7 @@
   "id": "MAP_HOYA_RIVER_SOUTH",
   "name": "HoyaRiverSouth",
   "layout": "LAYOUT_HOYA_RIVER_SOUTH",
-  "music": "route104",
+  "music": "SE_M_WATERFALL",
   "region_map_section": "MAPSEC_HOYA_RIVER_SOUTH",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
