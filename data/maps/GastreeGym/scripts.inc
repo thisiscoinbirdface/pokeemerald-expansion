@@ -66,6 +66,26 @@ GastreeGym_EventScript_Victory::
 	return
 
 
+GastreeGym_Red::
+# 74 "data//maps/GastreeGym/scripts.pory"
+	lockall
+# 75 "data//maps/GastreeGym/scripts.pory"
+	faceplayer
+# 77 "data//maps/GastreeGym/scripts.pory"
+	goto_if_set FLAG_BADGE01_GET, GastreeGym_Red_2
+# 80 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Text_1
+GastreeGym_Red_1:
+# 82 "data//maps/GastreeGym/scripts.pory"
+	releaseall
+	return
+
+GastreeGym_Red_2:
+# 78 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Text_0
+	goto GastreeGym_Red_1
+
+
 GastreeGym_TrainerBattle_Skip_Text_0:
 # 6 "data//maps/GastreeGym/scripts.pory"
 	.string "Hey hey, who're you?$"
@@ -113,17 +133,41 @@ GastreeGym_EventScript_Victory_Text_2:
 
 GastreeGym_EventScript_Victory_Text_3:
 # 54 "data//maps/GastreeGym/scripts.pory"
-	.string "So where are you headed next? To Mt.\n"
-	.string "Ceram? You'll have to go north from here\l"
-	.string "through Route 4. All the best,\l"
+	.string "So where are you headed next? MT\n"
+	.string "CERAM? You'll have to go north from\l"
+	.string "here through ROUTE 4. All the best,\l"
 	.string "{PLAYER}!$"
+
+GastreeGym_Red_Text_0:
+# 78 "data//maps/GastreeGym/scripts.pory"
+	.string "Well done champ-in-the-making! Now get\n"
+	.string "on out there and find the next gym -\l"
+	.string "I'll see you there!$"
+
+GastreeGym_Red_Text_1:
+# 80 "data//maps/GastreeGym/scripts.pory"
+	.string "Welcome to the - oh, you don't look so\n"
+	.string "good. First gym? I understand. I was\l"
+	.string "there once too - and against a ROCK\l"
+	.string "type leader to boot! He had a terrifying\l"
+	.string "ONIX...but as you can see, I'm here now,\l"
+	.string "safe and sound. Against INGER, avoid\l"
+	.string "using FIRE, FLYING and BUG type {PKMN}.\l"
+	.string "Now go get 'em, champ-in-the-making!$"
 
 GastreeGym_Text_Intro::
 # 58 "data//maps/GastreeGym/scripts.pory"
-	.string "INGER: Hello! My name is INGER and I am\n"
-	.string "the GASTREE CITY GYM LEADER. So you\l"
-	.string "want to challenge me? Let's get right\l"
-	.string "into it!$"
+	.string "INGER: ...you look a little green. It is\n"
+	.string "nerves? First gym battle?\p"
+	.string "...\p"
+	.string "In that case, you picked the wrong gym!\p"
+	.string "I'm INGER, master of Rock-types and\n"
+	.string "the unshakable strength of the earth.\l"
+	.string "My ROCK type {PKMN} have seen countless\l"
+	.string "battles, and they never crumble under\l"
+	.string "pressure. If you think you can break\l"
+	.string "through, show me the strength that you\l"
+	.string "bring with you!$"
 
 GastreeGym_Text_Defeated::
 # 62 "data//maps/GastreeGym/scripts.pory"

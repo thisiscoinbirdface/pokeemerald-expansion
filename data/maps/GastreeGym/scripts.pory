@@ -45,11 +45,7 @@ script GastreeGym_EventScript_Victory{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
-
-    //Give TM also
-    giveitem(ITEM_TM_FOCUS_PUNCH)
-    msgbox(format(""))
-
+    
     //Bye-bye
     msgbox(format("So where are you headed next? MT CERAM? You'll have to go north from here through ROUTE 4. All the best, {PLAYER}!"))
     releaseall
@@ -80,6 +76,7 @@ script GastreeGym_Red{
         msgbox(format("Welcome to the - oh, you don't look so good. First gym? I understand. I was there once too - and against a ROCK type leader to boot! He had a terrifying ONIX...but as you can see, I'm here now, safe and sound. Against INGER, avoid using FIRE, FLYING and BUG type {PKMN}. Now go get 'em, champ-in-the-making!"))
     }
     releaseall
+    end
 }
 
 

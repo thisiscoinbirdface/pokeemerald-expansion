@@ -151,6 +151,7 @@ script GastreeCity_NPC9{
             msgbox(format("SKITTY ran away because she got bored...maybe I should catch a PURRLOIN or MEOWTH for her to play with."))
         } else {
             if (checkitem(ITEM_SKITTY)){
+                addobject(12)
                 msgbox(format("Is that my SKITTY? Oh it is! Thank you trainer! Thank you so much! Come here SKITTY.\pSKITTY: skiiii!!!\pPlease take this as a reward."))
                 giveitem(ITEM_HM_CUT)
                 msgbox(format("SKITTY already knows CUT, so I don't need it any more. A {PKMN} with CUT can cut any small trees in its path. But you have to have at least one GYM BADGE to use it."))
@@ -158,12 +159,6 @@ script GastreeCity_NPC9{
                 clearflag(FLAG_HIDE_GASTREE_SKITTY)
                 removeitem(ITEM_SKITTY)
                 completequest(QUEST_GASTREE_SKITTY)
-                addobject(12)
-
-                //Complete quest
-                //Set quest active
-                completequest(QUEST_GASTREE_SKITTY)
-
             } else {
                 questmenu(QUEST_MENU_CHECK_UNLOCKED, QUEST_GASTREE_SKITTY)
 
