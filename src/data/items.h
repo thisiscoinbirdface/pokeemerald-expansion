@@ -14120,5 +14120,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Parcel,
     },
 
+    [ITEM_RANGER_PACKAGE] =
+    {
+        .name = _("Ranger Package"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A package for the \n"
+            "RANGER INSTITUTE.\n"
+            "at IVY RIVER.\n"
+        ),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Parcel,
+        .iconPalette = gItemIconPalette_Parcel,
+    },
+
 };
 

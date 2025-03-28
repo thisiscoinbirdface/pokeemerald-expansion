@@ -251,43 +251,50 @@ script RangerInstitute_1F_TriggerUpstairs{
 
 //Triggers
 script RangerInstitute_2F_Trigger0{
-    if (var(VAR_RANGER_INSTITUTE) > 2){end}
-    lockall
-    applymovement(12, moves(emote_exclamation_mark))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-    waitmovement(0)
-    msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Head."))
-    release
+    if (var(VAR_RANGER_INSTITUTE) == 2){
+        lockall
+        applymovement(12, moves(emote_exclamation_mark))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        waitmovement(0)
+        msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Head."))
+        release
 
-    //move to Ravine
-    applymovement(12, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 6 walk_up walk_left * 4))
-    waitmovement(0)
+        //move to Ravine
+        applymovement(12, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 6 walk_up walk_left * 4))
+        waitmovement(0)
 
-    goto(RangerInstitute_2F_EventScript_Welcome)
+        goto(RangerInstitute_2F_EventScript_Welcome)
+    } else {
+        end
+    }
 
-    release
+    releaseall
+    end
 }
 
 script RangerInstitute_2F_Trigger1{
-    if (var(VAR_RANGER_INSTITUTE) > 2){end}    
-    lockall
-    applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark))
-    waitmovement(0)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-    waitmovement(0)
-    msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Director."))
-    release
+    if (var(VAR_RANGER_INSTITUTE) == 2){  
+        lockall
+        applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        waitmovement(0)
+        msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Director."))
+        release
 
-    //move to Ravine
-    applymovement(LOCALID_RANGER1, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2 walk_left * 6 walk_up walk_left * 4 face_left))
-    waitmovement(0)
+        //move to Ravine
+        applymovement(LOCALID_RANGER1, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2 walk_left * 6 walk_up walk_left * 4 face_left))
+        waitmovement(0)
 
-    goto(RangerInstitute_2F_EventScript_Welcome)
-
-    release
+        goto(RangerInstitute_2F_EventScript_Welcome)
+    } else {
+        end
+    }
+    releaseall
+    end
 }
 
 script RangerInstitute_2F_EventScript_Welcome{
@@ -344,10 +351,13 @@ script RangerInstitute_2F_EventScript_Welcome{
     msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release
     delay(24)
-    msgbox(format("RAVINE: Inside this box behind me are some important items that the RANGER INSTITUTE at IVY RIVER wants. Your first mission will be to deliver this to them!"))
+    msgbox(format("RAVINE: Now, I have some important items that the RANGER INSTITUTE at IVY RIVER wants. Your first mission will be to deliver this to them!"))
     release
+    removeobject(LOCALID_PACKAGE)
+    giveitem(ITEM_RANGER_PACKAGE)
     startquest(QUEST_POKEMON_RANGER)
-    setvar(VAR_RANGER_INSTITUTE, 2)
+    setflag(FLAG_RANGER_GOT_FIRST_MISSION)
+    setvar(VAR_RANGER_INSTITUTE, 3)
     delay(16)
     msgbox(format("RAVINE: If you complete this mission, you'll rank up from Recruit to Candidate. The RANGER INSTITUTE at IVY RIVER is a little hard to find. You'll have to surf down from WINTERLILY HOLLOW and explore the riverbank. Good training for a recruit, eh?"))
     releaseall
@@ -357,7 +367,6 @@ script RangerInstitute_2F_EventScript_Welcome{
 script RangerInstitute_Ravine{
     lockall
     faceplayer
-
     if (var(VAR_RANGER_INSTITUTE) == 3){
         msgbox(format("RAVINE: How's my newest Recruit doing? Have you delivered the package yet?"))
     }
