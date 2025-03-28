@@ -160,10 +160,10 @@ script GastreeCity_NPC9{
 
                 //Complete quest
                 //Set quest active
-                questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_GASTREE_SKITTY)
+                completequest(QUEST_GASTREE_SKITTY)
 
             } else {
-                questmenu(QUEST_MENU_CHECK_INACTIVE, QUEST_GASTREE_SKITTY)
+                questmenu(QUEST_MENU_CHECK_UNLOCKED, QUEST_GASTREE_SKITTY)
 
                 if (var(VAR_RESULT) == 1){
                     //If you find a SKITTY, please bring her to me, okay?
@@ -207,16 +207,17 @@ script GastreeCity_NPC9{
     script GastreeCity_NPC_Skitty{
         lockall
         faceplayer    
+        playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)        
         msgbox(format("SKITTY: skee~~"))
         releaseall
     }
 
 
-script GastreeCity_Polteageist{
+script GastreeCity_Poltchageist{
     lockall
-    playmoncry(SPECIES_POLTEAGEIST, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("POLTEAGEIST is hard at work for the teahouse!"))
+    msgbox(format("POLTCHAGEIST is hard at work for the teahouse!"))
     releaseall
     end
 }

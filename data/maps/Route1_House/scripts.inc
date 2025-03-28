@@ -102,7 +102,7 @@ Route1_House_Azurill::
 # 64 "data//maps/Route1_House/scripts.pory"
 	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
 # 65 "data//maps/Route1_House/scripts.pory"
-	quest_menu QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY
 # 67 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route1_House_Azurill_2

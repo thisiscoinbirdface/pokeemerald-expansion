@@ -27,7 +27,11 @@ script Route1_House_QuestInProgress{
             release
             applymovement(1, moves(face_right))
             waitmovement(0)   
-            msgbox(format("Here sweetheart, this kind trainer has brought you a PECHA BERRY.\pAZURILL: zuuu!!!!!\nIt seems to have revived!"))
+            msgbox(format("Here sweetheart, this kind trainer has brought you a PECHA BERRY."))
+            release
+            playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
+            applymovement(2, moves(jump_in_place_down))
+            msgbox(format("AZURILL: zuuu!!!!!\nIt seems to have revived!"))
             release
             faceplayer
             msgbox(format("Here child, you must have this. The least I can do."))
@@ -62,7 +66,7 @@ script Route1_House_StartQuest{
 script Route1_House_Azurill {
     lockall
     playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
-    quest_menu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
 
     if (var(VAR_RESULT) == 1) {
         msgbox(format("AZURILL looks full of joy! Must be the love of its trainer...or is it my PECHA BERRY?"))

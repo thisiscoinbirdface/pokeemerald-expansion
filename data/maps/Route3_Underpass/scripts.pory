@@ -100,7 +100,7 @@ script Route3_Underpass_EvilBattle{
     waitmovement(0) 
     applymovement(2, moves(face_right))
     waitmovement(0)    
-    msgbox(format("GABRIELLE: Fine - keep your stupid CLEFAIRY! It's not like I enjoy doing this...but we have to achieve our goals!"))
+    msgbox(format("GABRIELLE: Fine - keep your stupid CLEFAIRY!"))
     release
     applymovement(2, moves(jump_in_place_up))
     waitmovement(0)
@@ -111,6 +111,7 @@ script Route3_Underpass_EvilBattle{
     removeobject(2)
 
     //Breech says he needs to train
+    applymovement(6, moves(walk_up))
     applymovement(3, moves(walk_left face_up))
     waitmovement(0)     
     msgbox(format("{PLAYER} - CLEFAIRY and I are in your debt. The way you handled that thug was incredible."))
@@ -120,7 +121,7 @@ script Route3_Underpass_EvilBattle{
     msgbox(format("{PLAYER} - we owe you. As thanks, CLEFAIRY and I want to give you the stone that GABRIELLE person was after..."))
     release
     giveitem(ITEM_EVERSTONE)
-    msgbox(format("I don't know anything about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
+    msgbox(format("I don't know about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
     msgbox(format("Don't worry - CLEFAIRY's bored of that stone already. Next, we'll head to MT CERAM to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
