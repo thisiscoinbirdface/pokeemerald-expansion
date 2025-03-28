@@ -900,7 +900,7 @@
 #define ITEM_RM_6_KEY ITEM_KEY_TO_ROOM_6 // Pre-Gen VI name
 #define ITEM_METEORITE 743
 #define ITEM_MAGMA_EMBLEM 744
-#define ITEM_CONTEST_PASS 745
+#define ITEM_DETECTIVE_STUDENT_ID 745   //Using this for Detective Academy Student ID
 #define ITEM_PARCEL 746
 #define ITEM_OAKS_PARCEL ITEM_PARCEL // Pre-Gen IV name
 #define ITEM_SECRET_KEY 747

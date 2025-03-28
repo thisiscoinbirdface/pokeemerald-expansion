@@ -12780,15 +12780,15 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MagmaEmblem,
     },
 
-    [ITEM_CONTEST_PASS] =
+    [ITEM_DETECTIVE_STUDENT_ID] =
     {
-        .name = _("Contest Pass"),
-        .pluralName = _("Contest Passes"),
+        .name = _("Student ID"),
+        .pluralName = _("Student IDs"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "The pass required\n"
-            "for entering\n"
-            "Pokémon Contests."),
+            "A student ID for the\n"
+            "GALECREST DETECTIVE\n"
+            "ACADEMY."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -66,8 +66,92 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
 script GalecrestCity_DetectiveAcademy_Receptionist{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Detective Academy!"))
+    msgbox(format("Hello, trainer! Welcome to the DETECTIVE ACADEMY!")) 
+    goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
+
     releaseall
+    end
+}
+
+script GalecrestCity_DetectiveAcademy_Receptionist_Multichoice{
+    msgbox(format("How many I help you today?"))
+    dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Tell me about the Academy!", "Can I get a student ID?", "I want a CHARCADET!")
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("The GALECREST DETECTIVE ACADEMY is one of the most prestigious schools in all of CORMORIA! Our top-caliber candidates train and study to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
+        release
+        goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
+    }
+
+    if (var(VAR_RESULT) == 1){
+        goto(GalecrestCity_DetectiveAcademy_Receptionist_StudentID)
+    }
+
+    if (var(VAR_RESULT) == 2){
+        goto(GalecrestCity_DetectiveAcademy_Receptionist_Charcadet)
+    }
+
+    releaseall
+    end
+}
+
+script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
+    checkitem(ITEM_DETECTIVE_STUDENT_ID)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Sorry, you already have a student ID."))
+        goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)        
+    } else {
+        msgbox(format("Unfortunately only students are allowed IDs and enrolment is closed for the year. However, we do offer day passes to prospective students for a nominal fee of 1000."))
+        release
+        showmoneybox(0, 0)
+        msgbox(format("Would you like to purchase one for 1000?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Very good! Here's your temporary student ID."))
+            giveitem(ITEM_DETECTIVE_STUDENT_ID)
+            removemoney(1000)
+            msgbox(format("With this ID, you'll be able to access the academy facilities as if you were a normal student. You can even sit in any ongoing classes!"))
+            release
+        } else {
+            goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
+        }
+
+    }
+
+    releaseall
+    end
+}
+
+script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
+    
+    msgbox(format("Can I see your student ID please?\p..."))
+
+    if (flag(FLAG_GALECREST_FAKEID)){
+        if (flag(FLAG_GALECREST_CHARCADET_GET)){
+            msgbox(format("You've already received your CHARCADET. Please return to class!"))
+        } else {
+            msgbox(format("Everything seems to be in order. What happened - did they forget to give you your CHARCADET at the entrance ceremony? Well, no matter. Here you go!"))
+            givemon(SPECIES_CHARCADET, 20)
+            msgbox(format("Please treat your CHARCADET with love and care!"))
+            release
+            setflag(FLAG_GALECREST_CHARCADET_GET)
+        }
+    } else {
+    checkitem(ITEM_DETECTIVE_STUDENT_ID)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Sorry, as a temporary student, you're not eligible for a CHARCADET."))
+            goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)        
+        } else {
+            msgbox(format("Sorry, only students are eligible for a CHARCADET."))
+            goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)    
+        }
+    }
+
+
+    releaseall
+    end
 }
 
 

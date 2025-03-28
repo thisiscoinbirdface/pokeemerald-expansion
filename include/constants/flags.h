@@ -150,7 +150,7 @@
 #define FLAG_ROUTE4_KIDGANG  0x298 // Unused Flag
 #define FLAG_GALECREST_LITWICK  0x299 // Unused Flag
 #define FLAG_FENNILAHL_CUTEMONGIFT  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
+#define FLAG_GALECREST_FAKEID  0x29B // Unused Flag
 #define FLAG_UNUSED_0x29C  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
@@ -1144,7 +1144,7 @@
 #define FLAG_ITEM_MIRROHEXT_D                          0x41F
 #define FLAG_ITEM_MIRROHEXT_E                        0x420
 
-//misc items (FORGOT TO DO BEFORE)
+//misc items (FORGOT TO DO BEFORE) 
 #define FLAG_ITEM_GASTREE_A                               0x421
 #define FLAG_ITEM_GASTREE_B                             0x422
 #define FLAG_ITEM_GALECREST_D                    0x423
