@@ -34,7 +34,7 @@
       "y": 51,
       "elevation": 0,
       "item": "ITEM_CARBOS",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS"
+      "flag": "0"
     },
     {
       "type": "hidden_item",

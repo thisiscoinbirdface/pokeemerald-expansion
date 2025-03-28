@@ -1056,7 +1056,7 @@
       "y": 70,
       "elevation": 0,
       "item": "ITEM_STARDUST",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
+      "flag": "0"
     },
     {
       "type": "secret_base",

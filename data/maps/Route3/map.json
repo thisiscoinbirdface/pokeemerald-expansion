@@ -264,6 +264,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "item": "ITEM_HEAL_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE3_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 44,
+      "y": 27,
+      "elevation": 0,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE3_B"
     }
   ]
 }

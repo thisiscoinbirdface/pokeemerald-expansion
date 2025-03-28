@@ -847,7 +847,7 @@
       "y": 82,
       "elevation": 3,
       "item": "ITEM_CALCIUM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -855,7 +855,7 @@
       "y": 63,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
+      "flag": "0"
     },
     {
       "type": "secret_base",

@@ -56,32 +56,28 @@ GastreeGym_EventScript_Victory::
 # 47 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_1
 # 50 "data//maps/GastreeGym/scripts.pory"
-	giveitem ITEM_TM_FOCUS_PUNCH
-# 51 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_2
-# 54 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_EventScript_Victory_Text_3
-# 55 "data//maps/GastreeGym/scripts.pory"
+# 51 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	return
 
 
 GastreeGym_Red::
-# 74 "data//maps/GastreeGym/scripts.pory"
+# 70 "data//maps/GastreeGym/scripts.pory"
 	lockall
-# 75 "data//maps/GastreeGym/scripts.pory"
+# 71 "data//maps/GastreeGym/scripts.pory"
 	faceplayer
-# 77 "data//maps/GastreeGym/scripts.pory"
+# 73 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_BADGE01_GET, GastreeGym_Red_2
-# 80 "data//maps/GastreeGym/scripts.pory"
+# 76 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_1
 GastreeGym_Red_1:
-# 82 "data//maps/GastreeGym/scripts.pory"
+# 78 "data//maps/GastreeGym/scripts.pory"
 	releaseall
-	return
+	end
 
 GastreeGym_Red_2:
-# 78 "data//maps/GastreeGym/scripts.pory"
+# 74 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_0
 	goto GastreeGym_Red_1
 
@@ -128,24 +124,20 @@ GastreeGym_EventScript_Victory_Text_1:
 	.string "obstacles!$"
 
 GastreeGym_EventScript_Victory_Text_2:
-# 51 "data//maps/GastreeGym/scripts.pory"
-	.string "$"
-
-GastreeGym_EventScript_Victory_Text_3:
-# 54 "data//maps/GastreeGym/scripts.pory"
+# 50 "data//maps/GastreeGym/scripts.pory"
 	.string "So where are you headed next? MT\n"
 	.string "CERAM? You'll have to go north from\l"
 	.string "here through ROUTE 4. All the best,\l"
 	.string "{PLAYER}!$"
 
 GastreeGym_Red_Text_0:
-# 78 "data//maps/GastreeGym/scripts.pory"
+# 74 "data//maps/GastreeGym/scripts.pory"
 	.string "Well done champ-in-the-making! Now get\n"
 	.string "on out there and find the next gym -\l"
 	.string "I'll see you there!$"
 
 GastreeGym_Red_Text_1:
-# 80 "data//maps/GastreeGym/scripts.pory"
+# 76 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the - oh, you don't look so\n"
 	.string "good. First gym? I understand. I was\l"
 	.string "there once too - and against a ROCK\l"
@@ -156,7 +148,7 @@ GastreeGym_Red_Text_1:
 	.string "Now go get 'em, champ-in-the-making!$"
 
 GastreeGym_Text_Intro::
-# 58 "data//maps/GastreeGym/scripts.pory"
+# 54 "data//maps/GastreeGym/scripts.pory"
 	.string "INGER: ...you look a little green. It is\n"
 	.string "nerves? First gym battle?\p"
 	.string "...\p"
@@ -170,7 +162,7 @@ GastreeGym_Text_Intro::
 	.string "bring with you!$"
 
 GastreeGym_Text_Defeated::
-# 62 "data//maps/GastreeGym/scripts.pory"
+# 58 "data//maps/GastreeGym/scripts.pory"
 	.string "Solid foundations. An instinct for\n"
 	.string "battle. And the makings of a strong\l"
 	.string "team. I humbly accept my defeat.$"

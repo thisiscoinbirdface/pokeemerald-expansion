@@ -185,8 +185,24 @@
       "x": 22,
       "y": 21,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_HEAL_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE1_B"
+    },
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 27,
+      "elevation": 3,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE1_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 15,
+      "elevation": 3,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE1_C"
     }
   ]
 }
