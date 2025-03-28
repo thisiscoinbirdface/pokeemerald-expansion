@@ -13,7 +13,7 @@ MtCeram_Caves_MapScripts::
 
 MtCeram_Caves_Leaf_Trigger0::
 # 10 "data//maps/MtCeram_Caves/scripts.pory"
-	goto_if_set FLAG_CERAM_CAVES_LEAF_MEETING, MtCeram_Caves_Leaf_Trigger0_2
+	goto_if_set FLAG_CERAM_CAVES_GRETA_MEETING, MtCeram_Caves_Leaf_Trigger0_2
 # 12 "data//maps/MtCeram_Caves/scripts.pory"
 	lockall
 # 14 "data//maps/MtCeram_Caves/scripts.pory"
@@ -42,7 +42,7 @@ MtCeram_Caves_Leaf_Trigger0_2:
 
 MtCeram_Caves_Leaf_Trigger1::
 # 28 "data//maps/MtCeram_Caves/scripts.pory"
-	goto_if_set FLAG_CERAM_CAVES_LEAF_MEETING, MtCeram_Caves_Leaf_Trigger1_2
+	goto_if_set FLAG_CERAM_CAVES_GRETA_MEETING, MtCeram_Caves_Leaf_Trigger1_2
 # 30 "data//maps/MtCeram_Caves/scripts.pory"
 	lockall
 # 32 "data//maps/MtCeram_Caves/scripts.pory"
@@ -71,7 +71,7 @@ MtCeram_Caves_Leaf_Trigger1_2:
 
 MtCeram_Caves_Leaf_Trigger2::
 # 46 "data//maps/MtCeram_Caves/scripts.pory"
-	goto_if_set FLAG_CERAM_CAVES_LEAF_MEETING, MtCeram_Caves_Leaf_Trigger2_2
+	goto_if_set FLAG_CERAM_CAVES_GRETA_MEETING, MtCeram_Caves_Leaf_Trigger2_2
 # 48 "data//maps/MtCeram_Caves/scripts.pory"
 	lockall
 # 50 "data//maps/MtCeram_Caves/scripts.pory"
@@ -148,7 +148,7 @@ MtCeram_Caves_Leaf_Main::
 # 92 "data//maps/MtCeram_Caves/scripts.pory"
 	release
 # 93 "data//maps/MtCeram_Caves/scripts.pory"
-	setflag FLAG_CERAM_CAVES_LEAF_MEETING
+	setflag FLAG_CERAM_CAVES_GRETA_MEETING
 # 95 "data//maps/MtCeram_Caves/scripts.pory"
 	applymovement LOCALID_LEAF, MtCeram_Caves_Leaf_Main_Movement_3
 # 96 "data//maps/MtCeram_Caves/scripts.pory"

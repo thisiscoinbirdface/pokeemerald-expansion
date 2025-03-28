@@ -1,17 +1,17 @@
 raw`
-    .set LOCALID_LEAF, 9
+    .set LOCALID_GRETA, 9
     .set LOCALID_SIZZ, 10
     .set LOCALID_VEN, 11
 `
 
 mapscripts MtCeram_Caves_MapScripts{}
 
-script MtCeram_Caves_Leaf_Trigger0{
-    if (flag(FLAG_CERAM_CAVES_LEAF_MEETING)) {end}
+script MtCeram_Caves_Greta_Trigger0{
+    if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
 
     lockall
 
-    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
     applymovement(LOCALID_VEN, moves(jump_in_place_left))
@@ -21,15 +21,15 @@ script MtCeram_Caves_Leaf_Trigger0{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up * 2))
     waitmovement(0)
 
-    goto(MtCeram_Caves_Leaf_Main)
+    goto(MtCeram_Caves_Greta_Main)
 }
 
-script MtCeram_Caves_Leaf_Trigger1{
-    if (flag(FLAG_CERAM_CAVES_LEAF_MEETING)) {end}
+script MtCeram_Caves_Greta_Trigger1{
+    if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
 
     lockall
 
-    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
     applymovement(LOCALID_VEN, moves(jump_in_place_left))
@@ -39,15 +39,15 @@ script MtCeram_Caves_Leaf_Trigger1{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up * 2))
     waitmovement(0)
 
-    goto(MtCeram_Caves_Leaf_Main)
+    goto(MtCeram_Caves_Greta_Main)
 }
 
-script MtCeram_Caves_Leaf_Trigger2{
-    if (flag(FLAG_CERAM_CAVES_LEAF_MEETING)) {end}
+script MtCeram_Caves_Greta_Trigger2{
+    if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
     
     lockall
 
-    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
     playmoncry(SPECIES_SIZZLIPEDE, CRY_MODE_NORMAL)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
@@ -59,13 +59,13 @@ script MtCeram_Caves_Leaf_Trigger2{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up * 2))
     waitmovement(0)
 
-    goto(MtCeram_Caves_Leaf_Main)
+    goto(MtCeram_Caves_Greta_Main)
 }
 
 
 //	.macro setwildbattle species:req, level:req, item=ITEM_NONE, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE
 
-script MtCeram_Caves_Leaf_Main{
+script MtCeram_Caves_Greta_Main{
     msgbox(format("???: I'm trapped in between this SIZZLIPEDE and VENIPEDE who are fighting each other! I can't get free!"))
     release 
     delay(24)
@@ -86,15 +86,15 @@ script MtCeram_Caves_Leaf_Main{
 
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
-    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the CERAM BASE CAMP told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pLEAF: My name's LEAF. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
+    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the CERAM BASE CAMP told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
     giveitem(ITEM_QUICK_CLAW)
-    msgbox(format("LEAF: I travel across all the routes and towns of CORMORIA, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
+    msgbox(format("GRETA: I travel across all the routes and towns of CORMORIA, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
     release
-    setflag(FLAG_CERAM_CAVES_LEAF_MEETING)
+    setflag(FLAG_CERAM_CAVES_GRETA_MEETING)
 
-    applymovement(LOCALID_LEAF, moves(walk_left walk_down * 2 walk_left * 7))
+    applymovement(LOCALID_GRETA, moves(walk_left walk_down * 2 walk_left * 7))
     waitmovement(0)
-    removeobject(LOCALID_LEAF)
+    removeobject(LOCALID_GRETA)
 
     releaseall
 
