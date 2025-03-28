@@ -1,0 +1,141 @@
+mapscripts TempCopyMap_MapScripts{}
+
+//ALL COMMON EVENT SCRIPTS GO HERE
+script Common_EventScript_MintVendingMachine{
+
+    if (flag(FLAG_BADGE_06_GET)){
+        mart(Mart_Mints_SixBadges)
+    } else {
+        if (flag(FLAG_BADGE_05_GET)){
+            mart(Mart_Mints_FiveBadges)
+        } else {
+            if (flag(FLAG_BADGE_04_GET)) {
+                mart(Mart_Mints_FourBadges)
+            } else {
+                if (flag(FLAG_BADGE_03_GET)) {
+                    mart(Mart_Mints_ThreeBadges)
+                } else {
+                    if (flag(FLAG_BADGE_02_GET)) {
+                        mart(Mart_Mints_TwoBadges)
+                    } else {
+                        if (flag(FLAG_BADGE_01_GET)) {
+                            mart(Mart_Mints_OneBadge)
+                        } else {
+                            mart(Mart_Mints_NoBadges)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    releaseall
+    end
+}
+
+
+// lonely addy brave naughty bold -> increase attack
+mart Mart_Mints_NoBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+}
+
+mart Mart_Mints_OneBadge{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT   
+}
+
+mart Mart_Mints_TwoBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT    
+    ITEM_NAUGHTY_MINT    
+    ITEM_TIMID_MINT
+}
+
+mart Mart_Mints_ThreeBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT    
+    ITEM_NAUGHTY_MINT    
+    ITEM_TIMID_MINT
+    ITEM_HASTY_MINT    
+    ITEM_BRAVE_MINT
+    ITEM_BOLD_MINT 
+}
+
+mart Mart_Mints_FourBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT    
+    ITEM_NAUGHTY_MINT    
+    ITEM_TIMID_MINT
+    ITEM_HASTY_MINT    
+    ITEM_BRAVE_MINT
+    ITEM_BOLD_MINT
+    ITEM_ADAMANT_MINT
+    ITEM_MILD_MINT
+    ITEM_RASH_MINT      
+}
+mart Mart_Mints_FiveBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT    
+    ITEM_NAUGHTY_MINT    
+    ITEM_TIMID_MINT
+    ITEM_HASTY_MINT    
+    ITEM_BRAVE_MINT
+    ITEM_BOLD_MINT
+    ITEM_ADAMANT_MINT
+    ITEM_MILD_MINT
+    ITEM_RASH_MINT
+    ITEM_NAIVE_MINT  
+    ITEM_LAX_MINT
+    ITEM_QUIET_MINT     
+}
+
+mart Mart_Mints_SixBadges{
+    ITEM_IMPISH_MINT
+    ITEM_CALM_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT    
+    ITEM_NAUGHTY_MINT    
+    ITEM_TIMID_MINT
+    ITEM_HASTY_MINT    
+    ITEM_BRAVE_MINT
+    ITEM_BOLD_MINT
+    ITEM_ADAMANT_MINT
+    ITEM_MILD_MINT
+    ITEM_RASH_MINT
+    ITEM_NAIVE_MINT  
+    ITEM_LAX_MINT
+    ITEM_QUIET_MINT
+    ITEM_LONELY_MINT
+    ITEM_JOLLY_MINT
+    ITEM_SERIOUS_MINT      
+}
+
