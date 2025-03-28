@@ -35,7 +35,12 @@ PellucaCableCarStation_EventScript_Attendant::
 	faceplayer
 	checkitem ITEM_CABLECAR_PASS
 	goto_if_eq VAR_RESULT, TRUE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
+	goto_if_eq VAR_RESULT, FALSE, PellucaCableCarStation_EventScript_AttendantNeedCableCarPass
+
+PellucaCableCarStation_EventScript_AttendantNeedCableCarPass::
 	msgbox PellucaCableCarStation_Text_NeedPass
+	release
+	end
 
 PellucaCableCarStation_EventScript_AttendantAskForCableCar::
 	msgbox PellucaCableCarStation_Text_CableCarReadyGetOn, MSGBOX_YESNO
