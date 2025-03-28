@@ -36,7 +36,7 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Please fill out this employee form."
+	.string "Please fill out this employee form.\p"
 	.string "$"	
 
 gText_Birch_BoyOrGirl::
