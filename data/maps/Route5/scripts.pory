@@ -3,7 +3,7 @@ mapscripts Route5_MapScripts{}
 script Route5_NPC_A{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("My head is spinning because of the fog in VILETHORN WOODS! I need to go home and rest."))
     releaseall
     end
 }
@@ -11,7 +11,7 @@ script Route5_NPC_A{
 script Route5_NPC_B{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("I saw a rough-looking fellow and a Professor run past me right now! What's going on?"))
     releaseall
     end
 }

@@ -25,14 +25,14 @@
   "warp_events": [
     {
       "x": 12,
-      "y": 10,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CABLE_CAR_STATION",
       "dest_warp_id": "0"
     },
     {
       "x": 11,
-      "y": 10,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CABLE_CAR_STATION",
       "dest_warp_id": "1"
