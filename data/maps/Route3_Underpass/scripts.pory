@@ -28,6 +28,7 @@ script Route3_Underpass_EvilBattle_Trigger0{
     }    
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
+    waitmovement(0)    
     goto(Route3_Underpass_EvilBattle)
 }
 script Route3_Underpass_EvilBattle_Trigger1{
@@ -36,6 +37,7 @@ script Route3_Underpass_EvilBattle_Trigger1{
     }    
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement(0)    
     goto(Route3_Underpass_EvilBattle)
 }
 script Route3_Underpass_EvilBattle_Trigger2{
@@ -44,6 +46,7 @@ script Route3_Underpass_EvilBattle_Trigger2{
     }    
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
+    waitmovement(0)
     goto(Route3_Underpass_EvilBattle)
 }
 

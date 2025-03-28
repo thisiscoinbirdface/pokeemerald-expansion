@@ -149,7 +149,7 @@
 #define FLAG_ROUTE4_COOK  0x297 // Unused Flag
 #define FLAG_ROUTE4_KIDGANG  0x298 // Unused Flag
 #define FLAG_GALECREST_LITWICK  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
+#define FLAG_FENNILAHL_CUTEMONGIFT  0x29A // Unused Flag
 #define FLAG_UNUSED_0x29B  0x29B // Unused Flag
 #define FLAG_UNUSED_0x29C  0x29C // Unused Flag
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag

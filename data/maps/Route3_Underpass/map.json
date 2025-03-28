@@ -82,7 +82,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
       "x": 64,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,

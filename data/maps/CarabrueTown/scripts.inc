@@ -96,6 +96,8 @@ CarabrueTown_Chikorita::
 # 73 "data//maps/CarabrueTown/scripts.pory"
 	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
 # 74 "data//maps/CarabrueTown/scripts.pory"
+	msgbox CarabrueTown_Chikorita_Text_0
+# 75 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
 	return
 
@@ -146,3 +148,7 @@ CarabrueTown_EventScript_NPC2_Text_0:
 	.string "CARABRUE TOWN is! That's because it's\l"
 	.string "nestled deep in the southern hills of\l"
 	.string "CORMORIA.$"
+
+CarabrueTown_Chikorita_Text_0:
+# 74 "data//maps/CarabrueTown/scripts.pory"
+	.string "CHIKORITA is happy!$"

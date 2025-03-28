@@ -61,8 +61,16 @@ script Route1_House_StartQuest{
 
 script Route1_House_Azurill {
     lockall
-    msgbox(format("AZURILL: zu... \pAZURILL looks quite sick.")) 
+    playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
+    quest_menu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
+
+    if (var(VAR_RESULT) == 1) {
+        msgbox(format("AZURILL looks full of joy! Must be the love of its trainer...or is it my PECHA BERRY?"))
+    } else {
+        msgbox(format("AZURILL: zu... \pAZURILL looks quite sick.")) 
+    }
     releaseall
+    end
 }
 
 

@@ -17,7 +17,13 @@ script FennilahlTown_EventScript_Man {
 script FennilahlTown_EventScript_Woman {
     lockall
     faceplayer
-    msgbox(format("What a cute little {PKMN} you have with you!"))
+    if (flag(FLAG_FENNILAHL_CUTEMONGIFT)){
+        msgbox(format("If your {PKMN} hold a SOOTHE BELL, they'll become attached to you faster!"))
+    } else {
+        msgbox(format("My, that's such a cute little {PKMN} you have with you! Here, use this and treat it with care, okay?"))
+        giveitem(ITEM_SOOTHE_BELL)
+        setflag(FLAG_FENNILAHL_CUTEMONGIFT)
+    }   
     releaseall
 }
 

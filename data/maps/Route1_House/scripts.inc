@@ -100,10 +100,23 @@ Route1_House_Azurill::
 # 63 "data//maps/Route1_House/scripts.pory"
 	lockall
 # 64 "data//maps/Route1_House/scripts.pory"
-	msgbox Route1_House_Azurill_Text_0
+	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
 # 65 "data//maps/Route1_House/scripts.pory"
+	quest_menu QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY
+# 67 "data//maps/Route1_House/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route1_House_Azurill_2
+# 70 "data//maps/Route1_House/scripts.pory"
+	msgbox Route1_House_Azurill_Text_1
+Route1_House_Azurill_1:
+# 72 "data//maps/Route1_House/scripts.pory"
 	releaseall
-	return
+	end
+
+Route1_House_Azurill_2:
+# 68 "data//maps/Route1_House/scripts.pory"
+	msgbox Route1_House_Azurill_Text_0
+	goto Route1_House_Azurill_1
 
 
 # 28 "data//maps/Route1_House/scripts.pory"
@@ -173,6 +186,12 @@ Route1_House_StartQuest_Text_2:
 	.string "cold-hearted!$"
 
 Route1_House_Azurill_Text_0:
-# 64 "data//maps/Route1_House/scripts.pory"
+# 68 "data//maps/Route1_House/scripts.pory"
+	.string "AZURILL looks full of joy! Must be the\n"
+	.string "love of its trainer...or is it my PECHA\l"
+	.string "BERRY?$"
+
+Route1_House_Azurill_Text_1:
+# 70 "data//maps/Route1_House/scripts.pory"
 	.string "AZURILL: zu...\p"
 	.string "AZURILL looks quite sick.$"

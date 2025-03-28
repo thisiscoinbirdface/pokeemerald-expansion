@@ -59,7 +59,7 @@ mart FennilahlTown_Pokemart_Inventory {
 script FennilahlTown_Pokemart_NPC{
     lockall
     faceplayer
-    msgbox(format("This Pokemart doesn't have much inventory because we're in a remote town."))
+    msgbox(format("This Pokemart doesn't sell much because we're in a remote town. But you can find these mint vending machines everywhere! It scans your Trainer Card and sells you mints based on how many badges you have."))
     releaseall
 }
 

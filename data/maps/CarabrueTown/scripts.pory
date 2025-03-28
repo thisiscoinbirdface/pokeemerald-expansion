@@ -71,6 +71,7 @@ script CarabrueTown_Chikorita{
     lockall
     faceplayer
     playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+    msgbox(format("CHIKORITA is happy!"))
     releaseall
 }
 

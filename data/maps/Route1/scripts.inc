@@ -64,8 +64,10 @@ Route1_Sign_Fennilahl::
 
 Route1_EventScripts_RandomDude_Text_0:
 # 8 "data//maps/Route1/scripts.pory"
-	.string "Did you know that Pokemon hide in the\n"
-	.string "grass? Be careful!$"
+	.string "I saw two detectives pass by here and\n"
+	.string "one younger detective with a\l"
+	.string "CHARCADET! Where do you get those, I\l"
+	.string "wonder...$"
 
 Route1_TrainerBattle_Jose_Text_0:
 # 16 "data//maps/Route1/scripts.pory"

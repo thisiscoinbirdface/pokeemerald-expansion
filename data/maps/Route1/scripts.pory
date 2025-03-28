@@ -5,7 +5,7 @@ script Route1_EventScripts_RandomDude {
     faceplayer
     msgbox(
         format(
-            "Did you know that Pokemon hide in the grass? Be careful!"
+            "I saw two detectives pass by here and one younger detective with a CHARCADET! Where do you get those, I wonder..."
         )
     )
     releaseall
