@@ -492,7 +492,13 @@ script GalecrestCity_NPC_18{
     }
 }
 
-
+script GalecrestCity_NPC_19{
+    lockall
+    faceplayer    
+    msgbox(format("I learned something new in class today! Certain BERRIES reduce the power of attacks dealt to them. A CHARTI BERRY for example reduces the power of a NORMAL type attack. That'd be useful in the gym here, wouldn't it?"))
+    releaseall
+    end
+}
 
 
 
