@@ -119,7 +119,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
 script GastreeCity_TeaHouse_EventScript_NPC1{
     lockall
     faceplayer
-    msgbox(format("At my age, a hot cup of tea is the best medicine. The Poltchageist in the kitchen do great work!"))
+    msgbox(format("At my age, a hot cup of tea is the best medicine. The POLTCHAGEIST in the kitchen do great work!"))
     releaseall
 }
 
@@ -143,10 +143,17 @@ script GastreeCity_TeaHouse_EventScript_NPC3{
 script GastreeCity_TeaHouse_EventScript_NPC4{
     lockall
     faceplayer
-    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived."))
+    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. But my SNORUNT is here to give me company!"))
     releaseall
+    end
 }
-
+script GastreeCity_TeaHouse_Snorunt{
+    lockall
+    playmoncry(SPECIES_SNORUNT, CRY_MODE_NORMAL)
+    msgbox(format("SNORUNT is sniffing the tea. Does it like it?"))
+    releaseall
+    end
+}
 
 
 

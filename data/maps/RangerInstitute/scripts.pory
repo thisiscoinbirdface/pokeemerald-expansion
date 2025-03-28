@@ -192,7 +192,8 @@ script RangerInstitute_1F_NPC3{
 script RangerInstitute_1F_BlockerBasement{
     lockall
     faceplayer
-    msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    msgbox(format("Sorry, this area is closed off for repairs."))
+//    msgbox(format("Sorry, only {PKMN} Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
     releaseall
     end
 }
@@ -400,5 +401,68 @@ script RangerInstitute_2F_NPC_4{
     releaseall
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MONS
+//Bayleef
+script RangerInstitute_Mon_Bayleef{
+    lockall
+    faceplayer
+    if (flag(FLAG_RANGER_INSTITUTE_BAYLEEF)){
+        msgbox(format("BAYLEEF is singing happily!"))        
+    } else {
+        playmoncry(SPECIES_BAYLEEF, CRY_MODE_NORMAL)
+        msgbox(format("BAYLEEF is singing happily! It snuggles upto you and gives you something..."))
+        giveitem(ITEM_MIRACLE_SEED)
+        setflag(FLAG_RANGER_INSTITUTE_BAYLEEF)
+        msgbox(format("Thanks BAYLEEF!"))
+    }
+    releaseall
+    end
+}
+script RangerInstitute_Mon_Palpitoad{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
+    msgbox(format("PALPITOAD grunts and waddles around. It seems upset..."))
+    releaseall
+    end
+}
+script RangerInstitute_Mon_Frogadier{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_FROGADIER, CRY_MODE_NORMAL)
+    msgbox(format(""))
+    releaseall
+    end
+}
+script RangerInstitute_Mon_Scyther{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
+    msgbox(format("SCYTHER looks as bummed out as its trainer!"))
+    releaseall
+    end
+}
+
 
 

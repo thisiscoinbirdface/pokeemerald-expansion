@@ -155,7 +155,7 @@
 #define FLAG_GALECREST_STUDENTID_GET  0x29D // get the temp student ID
 #define FLAG_GALECREST_CLEFAIRY_ITEM  0x29E // clefairy in the classroom gives you an item
 #define FLAG_RANGER_GOT_FIRST_MISSION  0x29F // Unused Flag
-#define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
+#define FLAG_RANGER_INSTITUTE_BAYLEEF  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
 #define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag

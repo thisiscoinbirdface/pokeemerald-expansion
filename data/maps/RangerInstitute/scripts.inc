@@ -527,78 +527,84 @@ RangerInstitute_2F_EventScript_Welcome::
 # 355 "data//maps/RangerInstitute/scripts.pory"
 	release
 # 356 "data//maps/RangerInstitute/scripts.pory"
-	startquest QUEST_POKEMON_RANGER
+	removeobject LOCALID_PACKAGE
 # 357 "data//maps/RangerInstitute/scripts.pory"
-	setvar VAR_RANGER_INSTITUTE, 2
+	giveitem ITEM_RANGER_PACKAGE
 # 358 "data//maps/RangerInstitute/scripts.pory"
-	delay 16
+	startquest QUEST_POKEMON_RANGER
 # 359 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_15
+	setflag FLAG_RANGER_GOT_FIRST_MISSION
 # 360 "data//maps/RangerInstitute/scripts.pory"
+	setvar VAR_RANGER_INSTITUTE, 3
+# 361 "data//maps/RangerInstitute/scripts.pory"
+	delay 16
+# 362 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_15
+# 363 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Ravine::
-# 365 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 366 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
 # 368 "data//maps/RangerInstitute/scripts.pory"
+	lockall
+# 369 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 370 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 3
 	goto_if_eq RangerInstitute_Ravine_1
 	return
 
 RangerInstitute_Ravine_1:
-# 369 "data//maps/RangerInstitute/scripts.pory"
+# 371 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Ravine_Text_0
 	return
 
 
 RangerInstitute_2F_NPC_1::
-# 374 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 375 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
 # 376 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_1_Text_0
+	lockall
 # 377 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 378 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_1_Text_0
+# 379 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_2::
-# 381 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 382 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
 # 383 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_2_Text_0
+	lockall
 # 384 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 385 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_2_Text_0
+# 386 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_3::
-# 388 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 389 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
 # 390 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_3_Text_0
+	lockall
 # 391 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 392 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_3_Text_0
+# 393 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_4::
-# 395 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 396 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
 # 397 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_4_Text_0
+	lockall
 # 398 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 399 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_4_Text_0
+# 400 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
@@ -1200,14 +1206,13 @@ RangerInstitute_2F_EventScript_Welcome_Text_13:
 
 RangerInstitute_2F_EventScript_Welcome_Text_14:
 # 354 "data//maps/RangerInstitute/scripts.pory"
-	.string "RAVINE: Inside this box behind me are\n"
-	.string "some important items that the RANGER\l"
-	.string "INSTITUTE at IVY RIVER wants. Your\l"
-	.string "first mission will be to deliver this to\l"
-	.string "them!$"
+	.string "RAVINE: Now, I have some important\n"
+	.string "items that the RANGER INSTITUTE at IVY\l"
+	.string "RIVER wants. Your first mission will be\l"
+	.string "to deliver this to them!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_15:
-# 359 "data//maps/RangerInstitute/scripts.pory"
+# 362 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: If you complete this mission,\n"
 	.string "you'll rank up from Recruit to\l"
 	.string "Candidate. The RANGER INSTITUTE at IVY\l"
@@ -1217,17 +1222,17 @@ RangerInstitute_2F_EventScript_Welcome_Text_15:
 	.string "training for a recruit, eh?$"
 
 RangerInstitute_Ravine_Text_0:
-# 369 "data//maps/RangerInstitute/scripts.pory"
+# 371 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: How's my newest Recruit doing?\n"
 	.string "Have you delivered the package yet?$"
 
 RangerInstitute_2F_NPC_1_Text_0:
-# 376 "data//maps/RangerInstitute/scripts.pory"
+# 378 "data//maps/RangerInstitute/scripts.pory"
 	.string "Director RAVINE has a bad habit of\n"
 	.string "daydreaming at work...$"
 
 RangerInstitute_2F_NPC_2_Text_0:
-# 383 "data//maps/RangerInstitute/scripts.pory"
+# 385 "data//maps/RangerInstitute/scripts.pory"
 	.string "Hello there, new recruit! Wanna see what\n"
 	.string "I'm working on? I'm analysing the\l"
 	.string "weather patterns in CORMORIA. I stay\l"
@@ -1235,10 +1240,10 @@ RangerInstitute_2F_NPC_2_Text_0:
 	.string "changes.$"
 
 RangerInstitute_2F_NPC_3_Text_0:
-# 390 "data//maps/RangerInstitute/scripts.pory"
+# 392 "data//maps/RangerInstitute/scripts.pory"
 	.string "Gah! I hate being on inventory duty. I\n"
 	.string "miss the field!$"
 
 RangerInstitute_2F_NPC_4_Text_0:
-# 397 "data//maps/RangerInstitute/scripts.pory"
+# 399 "data//maps/RangerInstitute/scripts.pory"
 	.string "How's it going, {PLAYER}?$"
