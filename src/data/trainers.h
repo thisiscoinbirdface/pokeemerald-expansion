@@ -1611,9 +1611,9 @@ F_TRAINER_FEMALE |
 #line 707
         .trainerName = _("VIOLET"),
 #line 708
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_BURGLAR,
 #line 709
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_BURGLAR,
         .encounterMusic_gender =
 #line 710
 F_TRAINER_FEMALE | 
@@ -1744,9 +1744,9 @@ F_TRAINER_FEMALE |
 #line 759
         .trainerName = _("ROSE"),
 #line 760
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_CADET,
 #line 761
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_CADET_F,
         .encounterMusic_gender =
 #line 762
 F_TRAINER_FEMALE | 
@@ -1796,9 +1796,9 @@ F_TRAINER_FEMALE |
 #line 780
         .trainerName = _("ROSE"),
 #line 781
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_CADET,
 #line 782
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_CADET_M,
         .encounterMusic_gender =
 #line 783
 F_TRAINER_FEMALE | 

@@ -705,8 +705,8 @@ IVs: 10 HP / 0 Atk / 4 Def / 0 SpA / 4 SpD / 0 Spe
 
 === TRAINER_GALECREST_ROBBER ===
 Name: VIOLET
-Class: Aroma Lady
-Pic: Aroma Lady
+Class: Burglar
+Pic: Burglar
 Gender: Female
 Music: Female
 Double Battle: No
@@ -757,8 +757,8 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_GALECRESTGYM_A ===
 Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Class: Cadet
+Pic: Cadet F
 Gender: Female
 Music: Female
 Double Battle: No
@@ -778,8 +778,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GALECRESTGYM_B ===
 Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Class: Cadet
+Pic: Cadet M
 Gender: Female
 Music: Female
 Double Battle: No

@@ -312,6 +312,14 @@ const u32 gTrainerPalette_SomberAdminMelea[] = INCBIN_U32("graphics/trainers/my_
 const u32 gTrainerFrontPic_SomberAdminMoxie[] = INCBIN_U32("graphics/trainers/my_trainers/somber_admin_moxie.4bpp.lz");
 const u32 gTrainerPalette_SomberAdminMoxie[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
+const u32 gTrainerFrontPic_CadetF[] = INCBIN_U32("graphics/trainers/my_trainers/cadet_f.4bpp.lz");
+const u32 gTrainerPalette_CadetF[] = INCBIN_U32("graphics/trainers/my_trainers/cadet_f.gbapal.lz");
+
+const u32 gTrainerFrontPic_CadetM[] = INCBIN_U32("graphics/trainers/my_trainers/cadet_m.4bpp.lz");
+const u32 gTrainerPalette_CadetM[] = INCBIN_U32("graphics/trainers/my_trainers/cadet_m.gbapal.lz");
+
+const u32 gTrainerFrontPic_Burglar[] = INCBIN_U32("graphics/trainers/my_trainers/burglar.4bpp.lz");
+const u32 gTrainerPalette_Burglar[] = INCBIN_U32("graphics/trainers/my_trainers/burglar.gbapal.lz");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -429,6 +437,9 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_DUO, gTrainerFrontPic_SomberGruntDuo, gTrainerPalette_SomberGruntDuo),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_ADMIN_MELEA, gTrainerFrontPic_SomberAdminMelea, gTrainerPalette_SomberAdminMelea),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_ADMIN_MOXIE, gTrainerFrontPic_SomberAdminMoxie, gTrainerPalette_SomberAdminMoxie),
+    TRAINER_SPRITE(TRAINER_PIC_CADET_F, gTrainerFrontPic_CadetF, gTrainerPalette_CadetF),
+    TRAINER_SPRITE(TRAINER_PIC_CADET_M, gTrainerFrontPic_CadetM, gTrainerPalette_CadetM),
+    TRAINER_SPRITE(TRAINER_PIC_BURGLAR, gTrainerFrontPic_Burglar, gTrainerPalette_Burglar),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

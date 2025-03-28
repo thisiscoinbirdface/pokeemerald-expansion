@@ -115,11 +115,13 @@
 #define TRAINER_PIC_SOMBER_GRUNT_DUO      95
 #define TRAINER_PIC_SOMBER_ADMIN_MELEA    96
 #define TRAINER_PIC_SOMBER_ADMIN_MOXIE    97
+#define TRAINER_PIC_CADET_F               98
+#define TRAINER_PIC_CADET_M               99
+#define TRAINER_PIC_BURGLAR               100
 
 
 
-
-#define TRAINER_PIC_COUNT                 98
+#define TRAINER_PIC_COUNT                 101
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -364,7 +366,9 @@
 #define TRAINER_CLASS_RS_PROTAG      0x41
 #define TRAINER_CLASS_ACE_ROOKIE     0x42
 #define TRAINER_CLASS_TEAM_SOMBER    0x43
-#define TRAINER_CLASS_COUNT          0x44
+#define TRAINER_CLASS_CADET          0x44
+#define TRAINER_CLASS_BURGLAR        0x45
+#define TRAINER_CLASS_COUNT          0x46
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
