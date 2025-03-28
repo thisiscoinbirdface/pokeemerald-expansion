@@ -1,3 +1,8 @@
+raw`
+    .set LOCALID_RAVINE, 14
+    .set LOCALID_RANGER1, 12
+`
+
 mapscripts RangerInstitute_MapScripts{}
 
 //FULL RANGER QUESTLINE
@@ -21,7 +26,7 @@ mapscripts RangerInstitute_MapScripts{}
 
 //THE INTERVIEW
 script RangerInstitute_1F_ApplicationPC{
-    msgbox(format("{PLAYER} booted up the Application PC."), MSGBOX_SIGN)
+    msgbox(format("{PLAYER} booted up the Application PC."))
     release
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
@@ -31,8 +36,10 @@ script RangerInstitute_1F_ApplicationPC{
     if (var(VAR_RANGER_INSTITUTE) == 0){
         msgbox(format("WOULD YOU LIKE TO PRINT AN APPLICATION FORM?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
+            showmoneybox(0, 0)
             msgbox(format("IT WILL COST 500. PROCEED WITH PRINTING?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
+                hidemoneybox
                 msgbox(format("...\pA peice of paper comes out of the PC!\pPLEASE BRING THIS FORM TO THE INTERVIEWER ON DUTY."))
                 setvar(VAR_RANGER_INSTITUTE, 1)
             } else {
@@ -93,12 +100,12 @@ script RangerInstitute_1F_InterviewQ1{
 script RangerInstitute_1F_InterviewQ2{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these {PKMN} does NOT normally evolve??"))
+    msgbox(format("Q: Which of these {PKMN} does NOT have a normal evolution?"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TOXEL", "KOFFING", "ABSOL", "CYNDAQUIL")
 
     //Check answers
     if (var(VAR_RESULT) == 2){
-        msgbox(format("Correct! ABSOL has no normal evolution, but can MEGA EVOLVE.\pOnto the next question!"))
+        msgbox(format("Correct! ABSOL has no normal evolution, but it can MEGA EVOLVE.\pOnto the next question!"))
         goto(RangerInstitute_1F_InterviewQ3)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -128,7 +135,7 @@ script RangerInstitute_1F_InterviewQ4{
 
     //Check answers
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR.\pOnto the next question!"))
+        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR.\pOnto the last question!"))
         goto(RangerInstitute_1F_InterviewQ5)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -139,7 +146,7 @@ script RangerInstitute_1F_InterviewQ5{
     //Question 1
     applymovement(4, moves(emote_question_mark))
     msgbox(format("Q: If you see a stranger in need of help, what do you do?"))
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Nothing", "Laugh", "Help", "Take a video")
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Nothing", "Laugh", "Help them", "Take a video")
 
     //Check answers
     if (var(VAR_RESULT) == 2){
@@ -262,7 +269,7 @@ script RangerInstitute_2F_Trigger0{
 
 script RangerInstitute_2F_Trigger1{
     lockall
-    applymovement(12, moves(emote_exclamation_mark))
+    applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark))
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovement(0)
@@ -270,7 +277,7 @@ script RangerInstitute_2F_Trigger1{
     release
 
     //move to Ravine
-    applymovement(12, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
+    applymovement(LOCALID_RANGER1, moves(walk_left * 6 walk_up walk_left * 4 walk_up face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *2 walk_left * 6 walk_up walk_left * 4 face_left))
     waitmovement(0)
 
@@ -280,12 +287,40 @@ script RangerInstitute_2F_Trigger1{
 }
 
 script RangerInstitute_2F_EventScript_Welcome{
-    applymovement(12, moves(jump_in_place_down))
+    applymovement(LOCALID_RANGER1, moves(jump_in_place_down))
     waitmovement(0)
     msgbox(format("Director RAVINE! Meet {PLAYER}, our newest RECRUIT."))
     release
-    applymovement(12, moves(jump_in_place_down))
+    delay(60)
+    msgbox(format("RAVINE: Hmm...yes...\p...\p...yes this is -"))
+    release
+    applymovement(LOCALID_RANGER1, moves(jump_in_place_left))
     waitmovement(0)
+    msgbox(format("Director RAVINE!"))
+    release
+    delay(60)
+    msgbox(format("RAVINE: Hmm...yes...\p...\p...yes this is -"))
+    release
+    applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark jump_in_place_left * 3))
+    waitmovement(0)
+    msgbox(format("DIRECTOR RAVINE!!!"))
+    release
+    applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark face_right))
+    waitmovement(0)
+    msgbox(format("RAVINE: Yes! Yes! What is it!"))
+    release
+    applymovement(LOCALID_RANGER1, moves(jump_in_place_down))
+    waitmovement(0)
+    msgbox(format("Sigh...\nDirector RAVINE! Meet {PLAYER}, our newest RECRUIT.\p...\pDirector, you were daydreaming again!"))
+    release    
+    applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was deep in my research."))
+    release
+
+
+    releaseall
+    end
 }
 
 
