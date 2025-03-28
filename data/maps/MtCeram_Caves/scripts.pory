@@ -1,0 +1,93 @@
+raw`
+    .set LOCALID_LEAF, 9
+    .set LOCALID_SIZZ, 10
+    .set LOCALID_VEN, 11
+`
+
+mapscripts MtCeram_Caves_MapScripts{}
+
+script MtCeram_Caves_Leaf_Trigger0{
+    lockall
+
+    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    waitmovement(0)
+    applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
+    applymovement(LOCALID_VEN, moves(jump_in_place_left))
+    msgbox(format("???: HELP!"))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up * 2))
+
+    goto(MtCeram_Caves_Leaf_Main)
+}
+
+script MtCeram_Caves_Leaf_Trigger1{
+    lockall
+
+    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    waitmovement(0)
+    applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
+    applymovement(LOCALID_VEN, moves(jump_in_place_left))
+    msgbox(format("???: HELP!"))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up * 2))
+
+    goto(MtCeram_Caves_Leaf_Main)
+}
+
+script MtCeram_Caves_Leaf_Trigger2{
+    lockall
+
+    applymovement(LOCALID_LEAF, moves(emote_exclamation_mark))
+    waitmovement(0)
+    playmoncry(SPECIES_SIZZLIPEDE, CRY_MODE_NORMAL)
+    applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
+    applymovement(LOCALID_VEN, moves(jump_in_place_left))
+    waitmovement(0)
+    msgbox(format("???: HELP!"))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up * 2))
+
+    goto(MtCeram_Caves_Leaf_Main)
+}
+
+
+//	.macro setwildbattle species:req, level:req, item=ITEM_NONE, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE
+
+script MtCeram_Caves_Leaf_Main{
+    msgbox(format("???: I'm trapped in between this SIZZLIPEDE and VENIPEDE who are fighting each other! I can't get free!"))
+    release 
+    delay(16)
+    applymovement(LOCALID_SIZZ, moves(face_down emote_exclamation_mark))
+    applymovement(LOCALID_VEN, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+    applymovement(LOCALID_SIZZ, moves(walk_down face_right))
+    applymovement(LOCALID_VEN, moves(walk_down face_left))
+    waitmovement(0)    
+    playmoncry(SPECIES_SIZZLIPEDE, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_VENIPEDE, CRY_MODE_ENCOUNTER)
+
+    setwildbattle(SPECIES_SIZZLIPEDE, 8, ITEM_NONE, SPECIES_VENIPEDE, 8, ITEM_NONE)
+    dowildbattle
+
+    removeobject(LOCALID_SIZZ)
+    removeobject(LOCALID_VEN)
+    msgbox(format("???: Thank you so much! I forgot my {PKMN} and couldn't do anything!\pLEAF: My name's LEAF and I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
+    giveitem(ITEM_QUICK_CLAW)
+    msgbox(format("LEAF: I travel all the routes and towns of CORMORIA, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
+    release
+    setflag(FLAG_CERAM_CAVES_LEAF_MEETING)
+
+    applymovement(LOCALID_LEAF, moves(walk_left walk_down * 2 walk_left * 6))
+    waitmovement(0)
+    removeobject(LOCALID_LEAF)
+
+    releaseall
+
+    end    
+
+
+}
