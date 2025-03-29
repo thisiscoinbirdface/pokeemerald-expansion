@@ -7,7 +7,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
     if (!flag(FLAG_UNUSED_0x020)) {
         msgbox(
             format(
-                "Sorry, this road is temporarily closed. We're investigating Professor Tenebris' disappearance."
+                "Sorry, this road is temporarily closed. We're investigating PROFESSOR TENEBRIS' disappearance."
             )
         )
     } else {
@@ -55,7 +55,7 @@ script CarabrueTown_EventScript_NPC1{
     if (flag(FLAG_CARABRUE_POLICE)){
         msgbox(format("Looks like the police went away. I hope they got the evidence they needed."))
     } else {
-        msgbox(format("Psst - {PLAYER}! See those cops over there? They came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."))
+        msgbox(format("Psst - {PLAYER}! See those cops over there? They came all the way from FENNILAHL TOWN to investigate the Professor's disappearance. They're blocking access to ROUTE 1 while they investigate."))
     }
     releaseall
 }

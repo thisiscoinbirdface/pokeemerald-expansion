@@ -273,7 +273,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
-        msgbox(format("DETECTIVE: Well RUE, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and KOHLA to get the dreamstone while we track Professor Tenebris. RUE, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("DETECTIVE: Well RUE, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and KOHLA to get the dreamstone while we track PROFESSOR TENEBRIS. RUE, do you know anything of the whereabouts of the other dreamstones?"))  
         msgbox(format("RUE: I know of one dreamstone somewhere inside MT CERAM. {PLAYER}, MT CERAM is further east from FENNILAHL TOWN. You'll have to cross through the tunnel to the other side to reach GASTREE CITY, and then make your way up north towards the mountain."))  
         msgbox(format("DETECTIVE: {PLAYER} - you know what to do. Head east to GASTREE CITY. From there, make your way to MT CERAM and find the dreamstone inside."))  
         msgbox(format("RUE: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
@@ -328,7 +328,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
             setflag(FLAG_SYS_POKEMON_GET)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a GOTHITA!"))
+                msgbox(format("The TENEBRIS LAB has gifted you a GOTHITA!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -362,7 +362,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
             removeobject(7)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a TIMBURR!"))
+                msgbox(format("The TENEBRIS LAB has gifted you a TIMBURR!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -396,7 +396,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
             removeobject(6)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Lab has gifted you a ZIGZAGOON!"))
+                msgbox(format("The TENEBRIS LAB has gifted you a ZIGZAGOON!"))
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -469,7 +469,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist1{
 script CarabrueTown_TenebrisLab_EventScript_Scientist2{
     lockall
     faceplayer
-    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."))
+    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for PROFESSOR TENEBRIS, we'd have had to shut the lab down."))
     releaseall
 }
 
