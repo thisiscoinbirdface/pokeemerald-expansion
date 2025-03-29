@@ -1133,6 +1133,7 @@ void GoToHandleInput(void) {
 static void HeatStartMenu_HandleInput_DPADDOWN(void) {
   switch (menuSelected) {
     case MENU_OPTIONS:
+      PlaySE(SE_SELECT);    
       sHeatStartMenu->flag = 0;
       menuSelected = 0;
       HeatStartMenu_UpdateMenuName();
@@ -1155,6 +1156,7 @@ static void HeatStartMenu_HandleInput_DPADDOWN(void) {
 static void HeatStartMenu_HandleInput_DPADUP(void) {
   switch (menuSelected) {
     case MENU_POKETCH:
+      PlaySE(SE_SELECT);    
       sHeatStartMenu->flag = 0;
       menuSelected = 6;
       HeatStartMenu_UpdateMenuName();
