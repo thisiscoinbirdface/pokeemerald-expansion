@@ -158,9 +158,9 @@
 #define FLAG_RANGER_INSTITUTE_BAYLEEF  0x2A0 // bayleef at the ranger institute gives you miracle seed
 #define FLAG_CERAM_CAVES_GRETA_MEETING  0x2A1 // meet leaf for the first time in ceram caves
 #define FLAG_SILVERSUN_VIVILLON  0x2A2 // feed vivillon a lava cookie
-#define FLAG_HIDE_GASTREE_SKITTY1  0x2A3 // the first of the 3 skittys (trees)
-#define FLAG_HIDE_GASTREE_SKITTY2  0x2A4 // see above (teahouse garden)
-#define FLAG_HIDE_GASTREE_SKITTY3  0x2A5 // see above (below her trainer)
+#define FLAG_HIDE_GASTREE_SKITTY1  0x2A3 // the first of the 3 skittys - trees
+#define FLAG_HIDE_GASTREE_SKITTY2  0x2A4 // see above - teahouse garden
+#define FLAG_HIDE_GASTREE_SKITTY3  0x2A5 // see above - below her trainer 
 #define FLAG_GRETA_ROUTE5  0x2A6 // encounter with Greta on R5 - random items
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
 #define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
@@ -183,6 +183,31 @@
 #define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
 #define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
+#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
+#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
+#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
+#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
+#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
+#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
+#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
+#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
+#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
+#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
+#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
+#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
+#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
+#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
+#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
+#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
+#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
+#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
+#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
+#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
+#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
+#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
+#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -1329,30 +1354,6 @@
 #define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
 #define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
 #define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
