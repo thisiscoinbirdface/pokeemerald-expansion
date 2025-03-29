@@ -701,8 +701,14 @@ static void (*const sEscapeRopeWarpOutEffectFuncs[])(struct Task *) =
 
 u32 FieldEffectStart(u8 id)
 {
+
     u8 *script;
     u32 val;
+
+    if (id == FLDEFF_FIELD_MOVE_SHOW_MON_INIT)
+    {
+        return 0;
+    }
 
     FieldEffectActiveListAdd(id);
 
