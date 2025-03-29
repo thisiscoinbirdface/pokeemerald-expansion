@@ -1,9 +1,17 @@
 raw `
     .set LOCALID_KOHLA, 7
+    .set LOCALID_SKITTYOG, 12
+    .set LOCALID_SKITTY1, 17
+    .set LOCALID_SKITTY2, 18
+    .set LOCALID_SKITTY3, 19
 `
 
 mapscripts GastreeCity_MapScripts{
     MAP_SCRIPT_ON_TRANSITION: GastreeCity_OnTransition  
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_GASTREE_SKITTY_QUEST, 0: GastreeCity_EventScript_SkittyQuestStart    
+    ]
 
 }
 
@@ -143,6 +151,68 @@ script GastreeCity_NPC9{
 
 
     //Quest NPC
+    script GastreeCity_EventScript_SkittyQuestStart{
+
+        //INIT: set all flags remove all skittys
+        setflag(FLAG_HIDE_GASTREE_SKITTY1)
+        setflag(FLAG_HIDE_GASTREE_SKITTY2)
+        setflag(FLAG_HIDE_GASTREE_SKITTY3)
+
+        removeobject(LOCALID_SKITTY1)
+        removeobject(LOCALID_SKITTY2)
+        removeobject(LOCALID_SKITTY3)
+
+        
+        lockall
+        delay(12)
+        applymovement(3, moves(emote_exclamation_mark))
+        waitmovement(0)
+        msgbox(format("No! SKITTY!"))
+        release
+        applymovement(LOCALID_SKITTYOG, moves(walk_fast_right walk_fast_down * 6))
+        waitmovement(0)
+        applymovement(3, moves(face_down))
+        waitmovement(0)
+        removeobject(LOCALID_SKITTYOG)
+        applymovement(3, moves(jump_in_place_down * 3))
+        waitmovement(0)
+        msgbox(format("SKITTY! Come back!!!"))
+        release
+        applymovement(3, moves(face_left))
+        waitmovement(0)           
+        delay(36)     
+        applymovement(3, moves(face_right))
+        waitmovement(0)           
+        delay(36)
+        applymovement(3, moves(emote_exclamation_mark))
+        waitmovement(0)           
+        delay(36)
+        applymovement(3, moves(walk_right * 3 face_up))
+        waitmovement(0)           
+        msgbox(format("Trainer! Trainer! You saw what happened, right? Oh, you have to bring my SKITTY back, you absolutely have to! I don't want her to get hurt...please find her!"))
+        release
+        setflag(FLAG_HIDE_GASTREE_SKITTY)
+        startquest(QUEST_GASTREE_SKITTY)
+        applymovement(3, moves(walk_left * 3 face_right))
+        waitmovement(0)           
+
+
+        //set up the skittys  
+        //hide the OG
+        setflag(FLAG_HIDE_GASTREE_SKITTY)   
+        removeobject(LOCALID_SKITTYOG)
+
+        //Appear skitty 1
+        clearflag(FLAG_HIDE_GASTREE_SKITTY1)
+        addobject(LOCALID_SKITTY1)
+
+        //Setvars
+        setvar(VAR_GASTREE_SKITTY_QUEST, 1)
+        releaseall
+        end
+    }
+
+
     script GastreeCity_NPC2{
         lockall
         faceplayer    
@@ -150,56 +220,99 @@ script GastreeCity_NPC9{
         if (flag(FLAG_GASTREE_NPC_SKITTY)){
             msgbox(format("SKITTY ran away because she got bored...maybe I should catch a PURRLOIN or MEOWTH for her to play with."))
         } else {
-            if (checkitem(ITEM_SKITTY)){
-                addobject(12)
-                msgbox(format("Is that my SKITTY? Oh it is! Thank you trainer! Thank you so much! Come here SKITTY.\pSKITTY: skiiii!!!\pPlease take this as a reward."))
+            if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
+                addobject(LOCALID_SKITTYOG)
+                msgbox(format("Thank you trainer - my SKITTY is back!"))
+                release
+                playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
+                msgbox(format("SKITTY: skiiii!!!"))
+                msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_CUT)
                 msgbox(format("SKITTY already knows CUT, so I don't need it any more. A {PKMN} with CUT can cut any small trees in its path. But you have to have at least one GYM BADGE to use it."))
-                setflag(FLAG_GASTREE_NPC_SKITTY)
-                clearflag(FLAG_HIDE_GASTREE_SKITTY)
-                removeitem(ITEM_SKITTY)
+                setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
             } else {
-                questmenu(QUEST_MENU_CHECK_UNLOCKED, QUEST_GASTREE_SKITTY)
-
-                if (var(VAR_RESULT) == 1){
-                    //If you find a SKITTY, please bring her to me, okay?
-                    msgbox(format("My SKITTY is missing! I've been looking everywhere for her, but I can't find her. Will you help me out?"), MSGBOX_YESNO)
-
-                    if (var(VAR_RESULT) == 1){
-                        msgbox(format("Oh, you're a lifesaver indeed! SKITTY likes to climb up trees, so she might be stuck up one. If you find her, please bring her to me, okay?"))
-                        startquest(QUEST_GASTREE_SKITTY)          
-                    }
-                } else {
                     msgbox(format("Have you found my SKITTY yet?"))
-                }
             }
-
         }
         releaseall
         end
     }
 
-    script GastreeCity_EventScripts_SkittyTrigger{
+    script GastreeCity_EventScripts_SkittyTrigger1{
+        msgbox(format("It's the SKITTY! Come here SKITTY..."))
+        release
+        delay(16)
+        applymovement(LOCALID_SKITTY1, moves(emote_exclamation_mark, walk_fast_down walk_fast_left * 2, walk_fast_down * 2 walk_fast_left *7))
+        waitmovement(0)
+        removeobject(17)
+        msgbox(format("The SKITTY ran away! Gotta chase it!"))
 
-        if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
-            msgbox(format("There's nothing up there."))
-        } else {
+        //set up the skittys  
+        //hide skitty 1
+        setflag(FLAG_HIDE_GASTREE_SKITTY1)   
+        removeobject(LOCALID_SKITTY1)
+        
+        //Appear skitty 2
+        clearflag(FLAG_HIDE_GASTREE_SKITTY2)
+        addobject(LOCALID_SKITTY2)
 
-            lockall
-            msgbox(format("There's something up in the branches of this tree.\pShake it?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == 1) {
-                msgbox(format("A SKITTY dropped down from the tree! It looks scared. Who is its owner?"))
-                release
-                giveitem(ITEM_SKITTY)
-                setflag(FLAG_GASTREE_TRIGGER_SKITTY)
-            } else {
+        //Setvars
+        setvar(VAR_GASTREE_SKITTY_QUEST, 2)
+        releaseall
+        end
+    }
 
-            }
-        }
+    script GastreeCity_EventScripts_SkittyTrigger2{
+        msgbox(format("It's the SKITTY! Come here SKITTY..."))
+        release
+        delay(16)
+        applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark, walk_fast_up walk_fast_right * 2, walk_fast_down * 7 walk_fast_down *7))
+        waitmovement(0)
+        removeobject(LOCALID_SKITTY2)
+        msgbox(format("The SKITTY ran away again! Argh!"))
+        //set up the skittys  
+        //hide skitty 2
+        setflag(FLAG_HIDE_GASTREE_SKITTY2)   
+        removeobject(LOCALID_SKITTY2)
+        
+        //Appear skitty 3
+        clearflag(FLAG_HIDE_GASTREE_SKITTY3)
+        addobject(LOCALID_SKITTY3)
+
+        //Setvars
+        setvar(VAR_GASTREE_SKITTY_QUEST, 3)
         releaseall
 
-    }
+        end
+    }    
+
+    script GastreeCity_EventScripts_SkittyTrigger3{
+        msgbox(format("It's the SKITTY! Okay, this time you'd better come here, SKITTY!"))
+        release
+        delay(16)
+        applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark, walk_fast_up * 2 walk_fast_right * 6, walk_fast_up * 5))
+        waitmovement(0)
+        removeobject(LOCALID_SKITTY3)
+        msgbox(format("Phew! Finally. The SKITTY ran back to its owner!"))
+        //set up the skittys  
+        //hide skitty 2
+        setflag(FLAG_HIDE_GASTREE_SKITTY3)   
+        removeobject(LOCALID_SKITTY3)
+        
+        //Appear skitty og
+        clearflag(FLAG_HIDE_GASTREE_SKITTY)
+        addobject(LOCALID_SKITTYOG)
+
+        //Setvars
+        setvar(VAR_GASTREE_SKITTY_QUEST, 4)
+
+        //Set final flag
+        setflag(FLAG_GASTREE_TRIGGER_SKITTY)
+
+        releaseall
+        end
+    } 
 
     script GastreeCity_NPC_Skitty{
         lockall

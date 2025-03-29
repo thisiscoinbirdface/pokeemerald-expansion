@@ -158,9 +158,9 @@
 #define FLAG_RANGER_INSTITUTE_BAYLEEF  0x2A0 // bayleef at the ranger institute gives you miracle seed
 #define FLAG_CERAM_CAVES_GRETA_MEETING  0x2A1 // meet leaf for the first time in ceram caves
 #define FLAG_SILVERSUN_VIVILLON  0x2A2 // feed vivillon a lava cookie
-#define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
-#define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
+#define FLAG_HIDE_GASTREE_SKITTY1  0x2A3 // the first of the 3 skittys (trees)
+#define FLAG_HIDE_GASTREE_SKITTY2  0x2A4 // see above (teahouse garden)
+#define FLAG_HIDE_GASTREE_SKITTY3  0x2A5 // see above (below her trainer)
 #define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
 #define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
