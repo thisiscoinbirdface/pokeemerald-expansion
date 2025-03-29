@@ -1,0 +1,35 @@
+mapscripts WinterlilyHollow_MapScripts{}
+
+
+
+
+
+script WinterlilyHollow_NPC1{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script WinterlilyHollow_NPC2{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script WinterlilyHollow_NPC3{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+script WinterlilyHollow_NPC4{
+    lockall
+    faceplayer
+    msgbox(format(""))
+    releaseall
+    end
+}
+

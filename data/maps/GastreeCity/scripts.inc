@@ -764,10 +764,11 @@ GastreeCity_NPC2_Text_3:
 GastreeCity_NPC2_Text_4:
 # 231 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY already knows CUT, so I don't\n"
-	.string "need it any more. A {PKMN} with CUT can cut\l"
-	.string "any small trees in its path. But you\l"
-	.string "have to have at least one GYM BADGE to\l"
-	.string "use it.$"
+	.string "need it any more. With CUT, any {PKMN} can\l"
+	.string "cut small trees in its path! But only\l"
+	.string "some {PKMN} can use CUT in battle.\p"
+	.string "Oh, but you do need to have at least one\n"
+	.string "GYM BADGE to use it.$"
 
 GastreeCity_NPC2_Text_5:
 # 235 "data//maps/GastreeCity/scripts.pory"
