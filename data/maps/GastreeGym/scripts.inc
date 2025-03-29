@@ -72,7 +72,9 @@ GastreeGym_Red::
 # 76 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_1
 GastreeGym_Red_1:
-# 78 "data//maps/GastreeGym/scripts.pory"
+# 79 "data//maps/GastreeGym/scripts.pory"
+	setflag FLAG_BADGE05_GET
+# 81 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	end
 
