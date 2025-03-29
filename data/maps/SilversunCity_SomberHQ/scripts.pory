@@ -254,6 +254,51 @@ script SomberHQ_NPCGrunt{
 }
 
 
+script SomberHQ_NPC_Counterfeiter{
+    lockall
+    msgbox(format("Hehehe...this machine can create counterfeits of any badge, card or ID! We could make so much money selling fake student IDs..."))
+    release
+    applymovement(23, moves(face_right emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Hey, you're not a grunt! Get outta here! I'm not going to let you use this machine!"))
+    releaseall
+    end
+
+}
+
+
+script SomberHQ_NPC_CounterfeitMachine{
+    lockall
+    
+    msgbox(format("{PLAYER} turned on the Counterfeit Machine."), MSGBOX_SIGN)
+    release
+    delay(16)
+    checkitem(ITEM_DETECTIVE_STUDENT_ID)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("YOU HAVE A STUDENT ID. PROCESS COUNTERFEIT?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_DETECTIVE_STUDENT_ID)
+            msgbox(format("{PLAYER} fed the Student ID into the open card slot.\p...\p...\pA new card popped out!"))    
+            release
+            giveitem(ITEM_FAKE_ID)
+            msgbox(format("This one doesn't look like a one-day pass. It looks like a real Student ID!"))
+            release
+            setflag(FLAG_GALECREST_FAKEID)
+        } else {
+
+        }   
+
+    } else {
+        msgbox(format("YOU HAVE NO ITEMS TO COUNTERFEIT."), MSGBOX_SIGN)        
+    }
+
+    releaseall
+    end
+}
+
 
 //Grunts
 script SomberHQ_Grunt_A{

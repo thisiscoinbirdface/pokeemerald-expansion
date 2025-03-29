@@ -337,82 +337,149 @@ SomberHQ_NPCGrunt::
 	end
 
 
-SomberHQ_Grunt_A::
+SomberHQ_NPC_Counterfeiter::
+# 258 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	lockall
+# 259 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_Counterfeiter_Text_0
 # 260 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	trainerbattle_single TRAINER_SOMBERHQ_A, SomberHQ_Grunt_A_Text_0, SomberHQ_Grunt_A_Text_1
+	release
 # 261 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	msgbox SomberHQ_Grunt_A_Text_2
+	applymovement 23, SilversunCity_SomberHQ_EventScript_Main_Movement_9
 # 262 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitmovement 0
+# 263 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 16
+# 264 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_Counterfeiter_Text_1
+# 265 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	releaseall
+	end
+
+
+SomberHQ_NPC_CounterfeitMachine::
+# 272 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	lockall
+# 274 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_CounterfeitMachine_Text_0, MSGBOX_SIGN
+# 275 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 276 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	delay 16
+# 277 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	checkitem ITEM_DETECTIVE_STUDENT_ID
+# 279 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SomberHQ_NPC_CounterfeitMachine_2
+# 295 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_CounterfeitMachine_Text_4, MSGBOX_SIGN
+SomberHQ_NPC_CounterfeitMachine_1:
+# 298 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	releaseall
+	end
+
+SomberHQ_NPC_CounterfeitMachine_2:
+# 280 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_CounterfeitMachine_Text_1, MSGBOX_YESNO
+# 282 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SomberHQ_NPC_CounterfeitMachine_5
+	goto SomberHQ_NPC_CounterfeitMachine_1
+
+SomberHQ_NPC_CounterfeitMachine_5:
+# 283 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	removeitem ITEM_DETECTIVE_STUDENT_ID
+# 284 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_CounterfeitMachine_Text_2
+# 285 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 286 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	giveitem ITEM_FAKE_ID
+# 287 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_NPC_CounterfeitMachine_Text_3
+# 288 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 289 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	setflag FLAG_GALECREST_FAKEID
+	goto SomberHQ_NPC_CounterfeitMachine_1
+
+
+SomberHQ_Grunt_A::
+# 305 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	trainerbattle_single TRAINER_SOMBERHQ_A, SomberHQ_Grunt_A_Text_0, SomberHQ_Grunt_A_Text_1
+# 306 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	msgbox SomberHQ_Grunt_A_Text_2
+# 307 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_B::
-# 267 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 312 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_B, SomberHQ_Grunt_B_Text_0, SomberHQ_Grunt_B_Text_1
-# 268 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 313 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_B_Text_2
-# 269 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 314 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_C::
-# 273 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 318 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_C, SomberHQ_Grunt_C_Text_0, SomberHQ_Grunt_C_Text_1
-# 274 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 319 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_C_Text_2
-# 275 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 320 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_D::
-# 279 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 324 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_D, SomberHQ_Grunt_D_Text_0, SomberHQ_Grunt_D_Text_1
-# 280 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 325 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_D_Text_2
-# 281 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 326 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_E::
-# 285 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 330 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_E, SomberHQ_Grunt_E_Text_0, SomberHQ_Grunt_E_Text_1
-# 286 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 331 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_E_Text_2
-# 287 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 332 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_F::
-# 291 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 336 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_F, SomberHQ_Grunt_F_Text_0, SomberHQ_Grunt_F_Text_1
-# 292 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 337 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_F_Text_2
-# 293 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 338 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_G::
-# 297 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 342 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_G, SomberHQ_Grunt_G_Text_0, SomberHQ_Grunt_G_Text_0
-# 298 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 343 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_G_Text_0
-# 299 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 344 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
 
 SomberHQ_Grunt_H::
-# 303 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 348 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	trainerbattle_single TRAINER_SOMBERHQ_H, SomberHQ_Grunt_H_Text_0, SomberHQ_Grunt_H_Text_1
-# 304 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 349 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_Grunt_H_Text_2
-# 305 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 350 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	releaseall
 	end
 
@@ -769,110 +836,150 @@ SomberHQ_NPCGrunt_Text_1:
 	.string "Eh, I'm on shipment duty, not guard\n"
 	.string "duty. None of my business.$"
 
+SomberHQ_NPC_Counterfeiter_Text_0:
+# 259 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "Hehehe...this machine can create\n"
+	.string "counterfeits of any badge, card or ID!\l"
+	.string "We could make so much money selling\l"
+	.string "fake student IDs...$"
+
+SomberHQ_NPC_Counterfeiter_Text_1:
+# 264 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "Hey, you're not a grunt! Get outta here!\n"
+	.string "I'm not going to let you use this\l"
+	.string "machine!$"
+
+SomberHQ_NPC_CounterfeitMachine_Text_0:
+# 274 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "{PLAYER} turned on the Counterfeit\n"
+	.string "Machine.$"
+
+SomberHQ_NPC_CounterfeitMachine_Text_1:
+# 280 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "YOU HAVE A STUDENT ID. PROCESS\n"
+	.string "COUNTERFEIT?$"
+
+SomberHQ_NPC_CounterfeitMachine_Text_2:
+# 284 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "{PLAYER} fed the Student ID into the\n"
+	.string "open card slot.\p"
+	.string "...\p"
+	.string "...\p"
+	.string "A new card popped out!$"
+
+SomberHQ_NPC_CounterfeitMachine_Text_3:
+# 287 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "This one doesn't look like a one-day\n"
+	.string "pass. It looks like a real Student ID!$"
+
+SomberHQ_NPC_CounterfeitMachine_Text_4:
+# 295 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	.string "YOU HAVE NO ITEMS TO COUNTERFEIT.$"
+
 SomberHQ_Grunt_A_Text_0:
-# 260 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 305 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Hey! Who let you in?$"
 
 SomberHQ_Grunt_A_Text_1:
-# 260 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 305 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "I've gotta let you in too...$"
 
 SomberHQ_Grunt_A_Text_2:
-# 261 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 306 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "I can't believe you found our secret\n"
 	.string "hideout!$"
 
 SomberHQ_Grunt_B_Text_0:
-# 267 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 312 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "You stepped into the wrong place buddy.\n"
 	.string "Boss MOXIE isn't here - it's someone way\l"
 	.string "scarier!$"
 
 SomberHQ_Grunt_B_Text_1:
-# 267 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 312 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "I'm gonna tell the boss!$"
 
 SomberHQ_Grunt_B_Text_2:
-# 268 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 313 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Boss MOXIE is pretty scary and mean,\n"
 	.string "but this one...she's on another level!$"
 
 SomberHQ_Grunt_C_Text_0:
-# 273 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 318 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "It's you! Think you can just waltz into\n"
 	.string "Team Somber's HQ? Think again!$"
 
 SomberHQ_Grunt_C_Text_1:
-# 273 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 318 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "I should think again!$"
 
 SomberHQ_Grunt_C_Text_2:
-# 274 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 319 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "This is where we plan our business, like\n"
 	.string "how to get the next dreamstone.$"
 
 SomberHQ_Grunt_D_Text_0:
-# 279 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 324 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Bet you think there's a door to the\n"
 	.string "boss's office past me, don't you? Joke's\l"
 	.string "on you - there isn't!$"
 
 SomberHQ_Grunt_D_Text_1:
-# 279 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 324 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Go and see for yourself!$"
 
 SomberHQ_Grunt_D_Text_2:
-# 280 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 325 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "The only way to get to the office is to\n"
 	.string "warp there - but I'll never tell you\l"
 	.string "which one!$"
 
 SomberHQ_Grunt_E_Text_0:
-# 285 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 330 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "We're going to get the next dreamstone\n"
 	.string "with a certain someone's help!$"
 
 SomberHQ_Grunt_E_Text_1:
-# 285 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 330 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "I'm not telling you who it is!$"
 
 SomberHQ_Grunt_E_Text_2:
-# 286 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 331 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Ok fine, I'll tell you. it's NURSE JOY.\p"
 	.string "...\p"
 	.string "Hah! Can't believe you fell for that.$"
 
 SomberHQ_Grunt_F_Text_0:
-# 291 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 336 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "That stupid GABRIELLE must've let you\n"
 	.string "in - I know it!$"
 
 SomberHQ_Grunt_F_Text_1:
-# 291 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 336 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Stupid GABRIELLE!$"
 
 SomberHQ_Grunt_F_Text_2:
-# 292 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 337 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "She's such a klutz - she's\n"
 	.string "singlehandedly ruining this great\l"
 	.string "organisation's image.$"
 
 SomberHQ_Grunt_G_Text_0:
-# 297 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 342 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "$"
 
 SomberHQ_Grunt_H_Text_0:
-# 303 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 348 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "GABRIELLE and I were next up for admin\n"
 	.string "positions...until she goofed at MT\l"
 	.string "CERAM! Now it's just me. Let me show you\l"
 	.string "why!$"
 
 SomberHQ_Grunt_H_Text_1:
-# 303 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 348 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "You didn't let me show you!$"
 
 SomberHQ_Grunt_H_Text_2:
-# 304 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+# 349 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Fine, go ahead. You can't beat the boss\n"
 	.string "anyway!$"

@@ -12780,15 +12780,15 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MagmaEmblem,
     },
 
-    [ITEM_DETECTIVE_STUDENT_ID] =
+    [ITEM_CONTEST_PASS] =
     {
         .name = _("Student ID"),
         .pluralName = _("Student IDs"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A student ID for the\n"
-            "GALECREST DETECTIVE\n"
-            "ACADEMY."),
+            "...\n"
+            "...\n"
+            "..."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14136,5 +14136,38 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Parcel,
     },
 
+    [ITEM_DETECTIVE_STUDENT_ID] =
+    {
+        .name = _("Student ID"),
+        .pluralName = _("Student IDs"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A one-day student ID\n"
+            "for the GALECREST\n"
+            "DETECTIVE ACADEMY."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ContestPass,
+        .iconPalette = gItemIconPalette_ContestPass,
+    },
+
+    [ITEM_FAKE_STUDENT_ID] =
+    {
+        .name = _("Fake ID"),
+        .pluralName = _("Fake IDs"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A fake student ID\n"
+            "for the GALECREST\n"
+            "DETECTIVE ACADEMY."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ContestPass,
+        .iconPalette = gItemIconPalette_ContestPass,
+    },
 };
 

@@ -152,7 +152,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
     
     msgbox(format("Can I see your student ID please?\p..."))
 
-    if (flag(FLAG_GALECREST_FAKEID)){
+    if (checkitem(ITEM_FAKE_ID)){
         if (flag(FLAG_GALECREST_CHARCADET_GET)){
             msgbox(format("You've already received your CHARCADET. Please return to class!"))
         } else {

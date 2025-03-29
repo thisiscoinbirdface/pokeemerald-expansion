@@ -218,8 +218,10 @@ GalecrestCity_DetectiveAcademy_Receptionist_StudentID_8:
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet::
 # 153 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_0
-# 155 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	goto_if_set FLAG_GALECREST_FAKEID, GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2
+	checkitem ITEM_FAKE_ID
+# 0 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2
 # 166 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	checkitem ITEM_DETECTIVE_STUDENT_ID
 # 168 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
