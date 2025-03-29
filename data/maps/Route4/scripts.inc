@@ -165,9 +165,11 @@ Route4_TrainerBattle_Kid3::
 # 121 "data//maps/Route4/scripts.pory"
 	giveitem ITEM_POKE_DOLL
 # 122 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_KIDGANG
+# 123 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid3_Text_4
 Route4_TrainerBattle_Kid3_1:
-# 124 "data//maps/Route4/scripts.pory"
+# 125 "data//maps/Route4/scripts.pory"
 	releaseall
 	end
 
@@ -178,108 +180,115 @@ Route4_TrainerBattle_Kid3_2:
 
 
 Route4_Sign_KidsTrio::
-# 130 "data//maps/Route4/scripts.pory"
+# 131 "data//maps/Route4/scripts.pory"
 	msgbox Route4_Sign_KidsTrio_Text_0, MSGBOX_SIGN
 	end
 
 
 Route4_NPC_Couple1::
-# 140 "data//maps/Route4/scripts.pory"
-	lockall
 # 141 "data//maps/Route4/scripts.pory"
-	faceplayer
+	lockall
 # 142 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Couple1_Text_0
+	faceplayer
 # 143 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Couple1_Text_0
+# 144 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 
 Route4_NPC_Couple2::
-# 147 "data//maps/Route4/scripts.pory"
-	lockall
 # 148 "data//maps/Route4/scripts.pory"
-	faceplayer
+	lockall
 # 149 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Couple2_Text_0
+	faceplayer
 # 150 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Couple2_Text_0
+# 151 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 
 Route4_NPC_A::
-# 155 "data//maps/Route4/scripts.pory"
-	lockall
 # 156 "data//maps/Route4/scripts.pory"
-	faceplayer
+	lockall
 # 157 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_A_Text_0
+	faceplayer
 # 158 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_A_Text_0
+# 159 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 
 Route4_NPC_B::
-# 163 "data//maps/Route4/scripts.pory"
-	lockall
 # 164 "data//maps/Route4/scripts.pory"
-	faceplayer
+	lockall
 # 165 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_B_Text_0
+	faceplayer
 # 166 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_B_Text_0
+# 167 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 
 Route4_NPC_Cook::
-# 171 "data//maps/Route4/scripts.pory"
-	lockall
 # 172 "data//maps/Route4/scripts.pory"
-	faceplayer
+	lockall
 # 173 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_0, MSGBOX_YESNO
-# 174 "data//maps/Route4/scripts.pory"
+	faceplayer
+# 175 "data//maps/Route4/scripts.pory"
+	goto_if_set FLAG_ROUTE4_COOK, Route4_NPC_Cook_2
+# 178 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_1, MSGBOX_YESNO
+# 179 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Route4_NPC_Cook_2
+	goto_if_eq Route4_NPC_Cook_5
 Route4_NPC_Cook_1:
-# 186 "data//maps/Route4/scripts.pory"
+# 194 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 Route4_NPC_Cook_2:
-# 175 "data//maps/Route4/scripts.pory"
-	checkitem ITEM_RAWST_BERRY
 # 176 "data//maps/Route4/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Route4_NPC_Cook_4
+	msgbox Route4_NPC_Cook_Text_0
 	goto Route4_NPC_Cook_1
 
-Route4_NPC_Cook_4:
-# 177 "data//maps/Route4/scripts.pory"
-	removeitem ITEM_RAWST_BERRY
-# 178 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_1, MSGBOX_SIGN
-# 179 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_2
+Route4_NPC_Cook_5:
 # 180 "data//maps/Route4/scripts.pory"
-	release
+	checkitem ITEM_RAWST_BERRY
 # 181 "data//maps/Route4/scripts.pory"
-	giveitem ITEM_SHELL_BELL
+	compare VAR_RESULT, 1
+	goto_if_eq Route4_NPC_Cook_7
+	goto Route4_NPC_Cook_1
+
+Route4_NPC_Cook_7:
 # 182 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_3
+	removeitem ITEM_RAWST_BERRY
 # 183 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_2, MSGBOX_SIGN
+# 184 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_3
+# 185 "data//maps/Route4/scripts.pory"
+	release
+# 186 "data//maps/Route4/scripts.pory"
+	giveitem ITEM_SHELL_BELL
+# 187 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_0
+# 188 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_COOK
 	goto Route4_NPC_Cook_1
 
 
 Route4_NPC_D::
-# 191 "data//maps/Route4/scripts.pory"
+# 199 "data//maps/Route4/scripts.pory"
 	lockall
-# 192 "data//maps/Route4/scripts.pory"
+# 200 "data//maps/Route4/scripts.pory"
 	faceplayer
-# 193 "data//maps/Route4/scripts.pory"
+# 201 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_D_Text_0
-# 194 "data//maps/Route4/scripts.pory"
+# 202 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
@@ -321,7 +330,7 @@ Route4_EventScript_EvilTeam_Text_0:
 
 Route4_EventScript_EvilTeam_Text_1:
 # 13 "data//maps/Route4/scripts.pory"
-	.string "You've saying we look suspicious? We're\n"
+	.string "We look suspicious? We're\n"
 	.string "just...um...construction workers. Sorry.\l"
 	.string "Yeah.$"
 
@@ -347,13 +356,13 @@ Route4_EventScript_EvilTeam_Text_5:
 
 Route4_EventScript_EvilTeamDefeated_Text_0:
 # 41 "data//maps/Route4/scripts.pory"
-	.string "I can't believe we lost to some stupid\n"
+	.string "Can't believe we lost to some stupid\n"
 	.string "kid...$"
 
 Route4_EventScript_EvilTeamDefeated_Text_1:
 # 45 "data//maps/Route4/scripts.pory"
-	.string "We gotta go tell the boss at the CERAM\n"
-	.string "BASE CAMP about this!$"
+	.string "We gotta tell the boss at CERAM BASE\n"
+	.string "CAMP about this!$"
 
 Route4_EventScript_EvilTeamDefeated_Text_2:
 # 50 "data//maps/Route4/scripts.pory"
@@ -470,30 +479,32 @@ Route4_TrainerBattle_Kid3_Text_3:
 	.string "may now accept this reward.$"
 
 Route4_TrainerBattle_Kid3_Text_4:
-# 122 "data//maps/Route4/scripts.pory"
-	.string "...when will I go back home? Never! I\n"
-	.string "hate my family! They only care about my\l"
-	.string "big brother. I wish...I wish to be\l"
-	.string "outside all day!$"
+# 123 "data//maps/Route4/scripts.pory"
+	.string "...\p"
+	.string "...\p"
+	.string "...when will I go back home?\p"
+	.string "Never! I hate my family! They only care\n"
+	.string "about my big brother. I want...I want to\l"
+	.string "be outside all day!$"
 
 Route4_Sign_KidsTrio_Text_0:
-# 130 "data//maps/Route4/scripts.pory"
+# 131 "data//maps/Route4/scripts.pory"
 	.string "A child has scrawled on this sign.\p"
 	.string "THIS IS OUR SECRET BASE. GET OUT OR\n"
 	.string "BEWARE!!!!$"
 
 Route4_NPC_Couple1_Text_0:
-# 142 "data//maps/Route4/scripts.pory"
+# 143 "data//maps/Route4/scripts.pory"
 	.string "What a lovely view!\p"
 	.string "The lake is nice too...$"
 
 Route4_NPC_Couple2_Text_0:
-# 149 "data//maps/Route4/scripts.pory"
+# 150 "data//maps/Route4/scripts.pory"
 	.string "What a lovely view!\p"
 	.string "It's a shame about her...$"
 
 Route4_NPC_A_Text_0:
-# 157 "data//maps/Route4/scripts.pory"
+# 158 "data//maps/Route4/scripts.pory"
 	.string "There's a small tree up ahead blocking\n"
 	.string "the path. A {PKMN} with CUT might be able to\l"
 	.string "cut it down...but the city management\l"
@@ -501,14 +512,21 @@ Route4_NPC_A_Text_0:
 	.string "not all trainers!$"
 
 Route4_NPC_B_Text_0:
-# 165 "data//maps/Route4/scripts.pory"
+# 166 "data//maps/Route4/scripts.pory"
 	.string "Mom told me to come here and get my\n"
 	.string "little brother. He's such a brat! He\l"
 	.string "plays outside all day and comes home\l"
 	.string "late every evening.$"
 
 Route4_NPC_Cook_Text_0:
-# 173 "data//maps/Route4/scripts.pory"
+# 176 "data//maps/Route4/scripts.pory"
+	.string "Maybe I'll see you somewhere else, since\n"
+	.string "I travel all over CORMORIA. And if you\l"
+	.string "ever visit PELLUCA CITY, be sure to\l"
+	.string "drop by our restaurant!$"
+
+Route4_NPC_Cook_Text_1:
+# 178 "data//maps/Route4/scripts.pory"
 	.string "Hello young trainer! I'm a cook from the\n"
 	.string "PELLUCA RESTAURANT, all the way on the\l"
 	.string "other side of CORMORIA! Why am I here,\l"
@@ -520,12 +538,12 @@ Route4_NPC_Cook_Text_0:
 	.string "RAWST BERRY. If you happen to have one,\l"
 	.string "would you give it to me?$"
 
-Route4_NPC_Cook_Text_1:
-# 178 "data//maps/Route4/scripts.pory"
+Route4_NPC_Cook_Text_2:
+# 183 "data//maps/Route4/scripts.pory"
 	.string "{PLAYER} gave the cook a RAWST BERRY$"
 
-Route4_NPC_Cook_Text_2:
-# 179 "data//maps/Route4/scripts.pory"
+Route4_NPC_Cook_Text_3:
+# 184 "data//maps/Route4/scripts.pory"
 	.string "Oh wonderful! This will add a ton of\n"
 	.string "flavour to our signature APPLE PIE!\n"
 	.string "Thank you trainer. What's your name?\p"
@@ -533,16 +551,9 @@ Route4_NPC_Cook_Text_2:
 	.string "{PLAYER}, is it? In exchange, please\n"
 	.string "take this.$"
 
-Route4_NPC_Cook_Text_3:
-# 182 "data//maps/Route4/scripts.pory"
-	.string "Maybe I'll see you somewhere else, since\n"
-	.string "I travel all over CORMORIA. And if you\l"
-	.string "ever visit PELLUCA CITY, be sure to\l"
-	.string "drop by our restaurant!$"
-
 Route4_NPC_D_Text_0:
-# 193 "data//maps/Route4/scripts.pory"
-	.string "There are some thugs blocking the path\n"
-	.string "to CERAM BASE CAMP! They remind me of\l"
-	.string "my younger days...I used to be in an evil\l"
-	.string "team in the HOENN region.$"
+# 201 "data//maps/Route4/scripts.pory"
+	.string "There are some grunts blocking the\n"
+	.string "path to CERAM BASE CAMP! They remind me\l"
+	.string "of my younger days...I used to be in an\l"
+	.string "evil team in the HOENN region.$"

@@ -739,38 +739,40 @@ CarabrueTown_TenebrisLab_Gardevoir::
 # 491 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	faceplayer
 # 492 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 2
+# 493 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
-# 494 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 495 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_TENEBRIS_GARDEVOIR, CarabrueTown_TenebrisLab_Gardevoir_2
-# 497 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_1
 # 498 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	giveitem ITEM_STARF_BERRY
+	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_1
 # 499 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_2
+	giveitem ITEM_STARF_BERRY
 # 500 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_2
+# 501 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_TENEBRIS_GARDEVOIR
 CarabrueTown_TenebrisLab_Gardevoir_1:
-# 502 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 503 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_TenebrisLab_Gardevoir_2:
-# 495 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 496 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_0
 	goto CarabrueTown_TenebrisLab_Gardevoir_1
 
 
 CarabrueTown_TenebrisLab_Metagross::
-# 507 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	lockall
 # 508 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	faceplayer
+	lockall
 # 509 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	playmoncry SPECIES_METAGROSS, CRY_MODE_NORMAL
+	faceplayer
 # 510 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_Metagross_Text_0
+	playmoncry SPECIES_METAGROSS, CRY_MODE_NORMAL
 # 511 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_Metagross_Text_0
+# 512 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
@@ -1477,21 +1479,21 @@ CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1:
 	.string "Just be patient.$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_0:
-# 495 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 496 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "GARDEVOIR regards you intently...$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_1:
-# 497 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 498 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "GARDEVOIR regards you intently...\p"
-	.string "something floats into your hand!$"
+	.string "Something floats into your hand!$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_2:
-# 499 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 500 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Was this her way of welcoming a new\n"
 	.string "member of the lab?\p"
 	.string "Thank you, GARDEVOIR!$"
 
 CarabrueTown_TenebrisLab_Metagross_Text_0:
-# 510 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 511 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "It's ASST PROF RUE's METAGROSS. It's so\n"
 	.string "intimidating!$"

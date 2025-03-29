@@ -571,7 +571,7 @@ F_TRAINER_FEMALE |
 #line 295
         .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 296
-        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
+        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_DUO,
         .encounterMusic_gender =
 #line 298
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -616,6 +616,8 @@ F_TRAINER_FEMALE |
 #line 315
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
+#line 316
+F_TRAINER_FEMALE | 
 #line 317
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 318
