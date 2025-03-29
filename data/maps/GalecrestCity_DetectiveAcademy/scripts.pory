@@ -152,13 +152,14 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
     
     msgbox(format("Can I see your student ID please?\p..."))
 
-    if (checkitem(ITEM_FAKE_ID)){
+    if (checkitem(ITEM_FAKE_STUDENT_ID)){
         if (flag(FLAG_GALECREST_CHARCADET_GET)){
             msgbox(format("You've already received your CHARCADET. Please return to class!"))
         } else {
             msgbox(format("Everything seems to be in order. What happened - did they forget to give you your CHARCADET at the entrance ceremony? Well, no matter. Here you go!"))
-            givemon(SPECIES_CHARCADET, 20)
-            msgbox(format("Please treat your CHARCADET with love and care!"))
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The DETECTIVE ACADEMY has gifted you a CHARCADET!"))
+            call(NicknamePartyMon)            msgbox(format("Please treat your CHARCADET with love and care!"))
             release
             setflag(FLAG_GALECREST_CHARCADET_GET)
         }

@@ -283,7 +283,7 @@ script SomberHQ_NPC_CounterfeitMachine{
             removeitem(ITEM_DETECTIVE_STUDENT_ID)
             msgbox(format("{PLAYER} fed the Student ID into the open card slot.\p...\p...\pA new card popped out!"))    
             release
-            giveitem(ITEM_FAKE_ID)
+            giveitem(ITEM_FAKE_STUDENT_ID)
             msgbox(format("This one doesn't look like a one-day pass. It looks like a real Student ID!"))
             release
             setflag(FLAG_GALECREST_FAKEID)

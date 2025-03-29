@@ -218,21 +218,21 @@ GalecrestCity_DetectiveAcademy_Receptionist_StudentID_8:
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet::
 # 153 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_0
-	checkitem ITEM_FAKE_ID
+	checkitem ITEM_FAKE_STUDENT_ID
 # 0 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2
-# 166 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 167 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	checkitem ITEM_DETECTIVE_STUDENT_ID
-# 168 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 169 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_8
-# 172 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5
 # 173 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_6
+# 174 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Multichoice
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1:
-# 178 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 179 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
@@ -242,12 +242,16 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2:
 # 159 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_2
 # 160 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	givemon SPECIES_CHARCADET, 20
+	playfanfare MUS_OBTAIN_ITEM
 # 161 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3
 # 162 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	release
+	call NicknamePartyMon
+# 162 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4
 # 163 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	release
+# 164 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	setflag FLAG_GALECREST_CHARCADET_GET
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
@@ -257,291 +261,291 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_5:
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_8:
-# 169 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4
 # 170 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5
+# 171 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Multichoice
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
 
 GalecrestCity_DetectiveAcademy_Guard::
-# 185 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 186 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	lockall
+# 187 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	faceplayer
-# 188 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 189 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto_if_set FLAG_GALECREST_STUDENTID_GET, GalecrestCity_DetectiveAcademy_Guard_2
-# 191 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 192 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Guard_Text_1
 GalecrestCity_DetectiveAcademy_Guard_1:
-# 194 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 195 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
 GalecrestCity_DetectiveAcademy_Guard_2:
-# 189 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 190 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Guard_Text_0
 	goto GalecrestCity_DetectiveAcademy_Guard_1
 
 
 GalecrestCity_DetectiveAcademy_Armarouge_Garden::
-# 199 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 200 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 201 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	playmoncry SPECIES_ARMAROUGE, CRY_MODE_NORMAL
+	faceplayer
 # 202 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	playmoncry SPECIES_ARMAROUGE, CRY_MODE_NORMAL
+# 203 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto_if_set FLAG_GALECREST_STUDENTID_GET, GalecrestCity_DetectiveAcademy_Armarouge_Garden_2
-# 208 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_1
 # 209 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 22, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_1
+	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_1
 # 210 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	applymovement 22, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_1
+# 211 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	waitmovement 0
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_1:
-# 212 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 213 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_2:
-# 203 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_0
 # 204 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	release
+	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_0
 # 205 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 22, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_0
+	release
 # 206 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	applymovement 22, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_0
+# 207 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	waitmovement 0
 	goto GalecrestCity_DetectiveAcademy_Armarouge_Garden_1
 
 
 GalecrestCity_DetectiveAcademy_Armarouge_Classroom::
-# 217 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 218 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 219 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	playmoncry SPECIES_ARMAROUGE, CRY_MODE_NORMAL
+	faceplayer
 # 220 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	playmoncry SPECIES_ARMAROUGE, CRY_MODE_NORMAL
+# 221 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto_if_set FLAG_GALECREST_STUDENTID_GET, GalecrestCity_DetectiveAcademy_Armarouge_Classroom_2
-# 226 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_1
 # 227 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 23, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_1
+	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_1
 # 228 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	applymovement 23, GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_1
+# 229 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	waitmovement 0
 GalecrestCity_DetectiveAcademy_Armarouge_Classroom_1:
-# 230 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 231 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
 GalecrestCity_DetectiveAcademy_Armarouge_Classroom_2:
-# 221 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_0
 # 222 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	release
+	msgbox GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_0
 # 223 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 23, GalecrestCity_DetectiveAcademy_Armarouge_Classroom_Movement_0
+	release
 # 224 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	applymovement 23, GalecrestCity_DetectiveAcademy_Armarouge_Classroom_Movement_0
+# 225 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	waitmovement 0
 	goto GalecrestCity_DetectiveAcademy_Armarouge_Classroom_1
 
 
 GalecrestCity_DetectiveAcademy_NPC1::
-# 235 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 236 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 237 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC1_Text_0
+	faceplayer
 # 238 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC1_Text_0
+# 239 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC2::
-# 242 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 243 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 244 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC2_Text_0
+	faceplayer
 # 245 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC2_Text_0
+# 246 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC3::
-# 249 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 250 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 251 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC3_Text_0
+	faceplayer
 # 252 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC3_Text_0
+# 253 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC4::
-# 256 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 257 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 258 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC4_Text_0
+	faceplayer
 # 259 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC4_Text_0
+# 260 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC5::
-# 263 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 264 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 265 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC5_Text_0
+	faceplayer
 # 266 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC5_Text_0
+# 267 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC6::
-# 272 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 273 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 274 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC6_Text_0
+	faceplayer
 # 275 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC6_Text_0
+# 276 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC7::
-# 282 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 283 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 284 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC7_Text_0
+	faceplayer
 # 285 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 10, GalecrestCity_DetectiveAcademy_NPC7_Movement_0
+	msgbox GalecrestCity_DetectiveAcademy_NPC7_Text_0
 # 286 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	waitmovement 0
+	applymovement 10, GalecrestCity_DetectiveAcademy_NPC7_Movement_0
 # 287 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	waitmovement 0
+# 288 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC8::
-# 291 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 292 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 293 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	trainerbattle_single TRAINER_GALECREST_DETECTIVE_A, GalecrestCity_DetectiveAcademy_NPC8_Text_0, GalecrestCity_DetectiveAcademy_NPC8_Text_1
+	faceplayer
 # 294 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC8_Text_2
+	trainerbattle_single TRAINER_GALECREST_DETECTIVE_A, GalecrestCity_DetectiveAcademy_NPC8_Text_0, GalecrestCity_DetectiveAcademy_NPC8_Text_1
 # 295 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	release
+	msgbox GalecrestCity_DetectiveAcademy_NPC8_Text_2
 # 296 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 11, GalecrestCity_DetectiveAcademy_Breech_Movement_0
+	release
 # 297 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	applymovement 11, GalecrestCity_DetectiveAcademy_Breech_Movement_0
+# 298 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	waitmovement 0
 	end
 
 
 GalecrestCity_DetectiveAcademy_NPC9::
-# 303 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 304 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 305 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC9_Text_0
+	faceplayer
 # 306 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC9_Text_0
+# 307 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC10::
-# 310 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 311 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC10_Text_0
+	lockall
 # 312 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC10_Text_0
+# 313 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC11::
-# 316 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 317 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 318 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC11_Text_0
+	faceplayer
 # 319 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC11_Text_0
+# 320 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_NPC12::
-# 323 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 324 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 325 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_NPC12_Text_0
+	faceplayer
 # 326 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_NPC12_Text_0
+# 327 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	return
 
 
 GalecrestCity_DetectiveAcademy_Charcadet_Battle::
-# 333 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 334 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	playmoncry SPECIES_CHARCADET, CRY_MODE_NORMAL
+	lockall
 # 335 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 18, GalecrestCity_DetectiveAcademy_Charcadet_Battle_Movement_0
+	playmoncry SPECIES_CHARCADET, CRY_MODE_NORMAL
 # 336 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	waitmovement 0
+	applymovement 18, GalecrestCity_DetectiveAcademy_Charcadet_Battle_Movement_0
 # 337 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Charcadet_Battle_Text_0
+	waitmovement 0
 # 338 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Charcadet_Battle_Text_0
+# 339 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_DetectiveAcademy_Yamper_Battle::
-# 343 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 344 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	playmoncry SPECIES_YAMPER, CRY_MODE_NORMAL
+	lockall
 # 345 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	applymovement 19, GalecrestCity_DetectiveAcademy_Yamper_Battle_Movement_0
+	playmoncry SPECIES_YAMPER, CRY_MODE_NORMAL
 # 346 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	waitmovement 0
+	applymovement 19, GalecrestCity_DetectiveAcademy_Yamper_Battle_Movement_0
 # 347 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Yamper_Battle_Text_0
+	waitmovement 0
 # 348 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Yamper_Battle_Text_0
+# 349 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_DetectiveAcademy_Charcadet_A::
-# 354 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
 # 355 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	faceplayer
+	lockall
 # 356 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	playmoncry SPECIES_CHARCADET, CRY_MODE_NORMAL
+	faceplayer
 # 357 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Charcadet_A_Text_0
+	playmoncry SPECIES_CHARCADET, CRY_MODE_NORMAL
 # 358 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Charcadet_A_Text_0
+# 359 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	releaseall
 	end
 
@@ -594,43 +598,43 @@ GalecrestCity_DetectiveAcademy_Clefairy_Movement_0:
 	faceplayer
 	step_end
 
-# 205 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 206 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_0:
-# 205 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 206 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	walk_left
-# 205 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 206 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	face_down
 	step_end
 
-# 209 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 210 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_Movement_1:
-# 209 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 210 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	face_down
 	step_end
 
-# 223 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 224 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_Armarouge_Classroom_Movement_0:
-# 223 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 224 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	walk_right
-# 223 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 224 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	face_down
 	step_end
 
-# 285 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 286 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_NPC7_Movement_0:
-# 285 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 286 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	face_right
 	step_end
 
-# 335 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 336 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_Charcadet_Battle_Movement_0:
-# 335 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 336 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 345 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 346 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 GalecrestCity_DetectiveAcademy_Yamper_Battle_Movement_0:
-# 345 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 346 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	jump_in_place_right
 	step_end
 
@@ -775,47 +779,52 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_2:
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3:
 # 161 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	.string "The DETECTIVE ACADEMY has gifted you a\n"
+	.string "CHARCADET!$"
+
+GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4:
+# 162 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Please treat your CHARCADET with love\n"
 	.string "and care!$"
 
-GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4:
-# 169 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5:
+# 170 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Sorry, as a temporary student, you're\n"
 	.string "not eligible for a CHARCADET.$"
 
-GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5:
-# 172 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_6:
+# 173 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Sorry, only students are eligible for a\n"
 	.string "CHARCADET.$"
 
 GalecrestCity_DetectiveAcademy_Guard_Text_0:
-# 189 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 190 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "You got a one-day student ID? Maybe I\n"
 	.string "should get one too...$"
 
 GalecrestCity_DetectiveAcademy_Guard_Text_1:
-# 191 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 192 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Garden access is for students only.\n"
 	.string "That ARMAROUGE won't let you in without\l"
 	.string "a STUDENT ID!$"
 
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_0:
-# 203 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 204 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "ARMAROUGE leers down at you...and nods\n"
 	.string "approvingly!$"
 
 GalecrestCity_DetectiveAcademy_Armarouge_Garden_Text_1:
-# 208 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 209 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "ARMAROUGE leers down at you...and\n"
 	.string "continues to look straight ahead.$"
 
 GalecrestCity_DetectiveAcademy_NPC1_Text_0:
-# 237 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 238 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Ooh! Ohh! Are the new class rankings\n"
 	.string "out yet?$"
 
 GalecrestCity_DetectiveAcademy_NPC2_Text_0:
-# 244 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 245 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Every semester, the school ranks all\n"
 	.string "the students. The top student is called\l"
 	.string "the Ace Rookie! KOHLA held the title\l"
@@ -823,13 +832,13 @@ GalecrestCity_DetectiveAcademy_NPC2_Text_0:
 	.string "so the field is open again!$"
 
 GalecrestCity_DetectiveAcademy_NPC3_Text_0:
-# 251 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 252 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "All new students receive a CHARCADET\n"
 	.string "as their first {PKMN}. It's the standard\l"
 	.string "detective companion.$"
 
 GalecrestCity_DetectiveAcademy_NPC4_Text_0:
-# 258 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 259 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Since many rich folk live in GALECREST\n"
 	.string "CITY, there's a lot of theft. New\l"
 	.string "students are often handed smaller\l"
@@ -837,69 +846,69 @@ GalecrestCity_DetectiveAcademy_NPC4_Text_0:
 	.string "studies.$"
 
 GalecrestCity_DetectiveAcademy_NPC5_Text_0:
-# 265 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 266 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "I'm going to join today! I'm so excited\n"
 	.string "to get my CHARCADET and become an Ace\l"
 	.string "Rookie!$"
 
 GalecrestCity_DetectiveAcademy_NPC6_Text_0:
-# 274 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 275 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Are you a student? You shouldn't be\n"
 	.string "here if you aren't...oh, you are.$"
 
 GalecrestCity_DetectiveAcademy_NPC7_Text_0:
-# 284 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 285 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "We're battling to practice for our\n"
 	.string "exams. It's very competitive here.\l"
 	.string "Losers like you can't cut it.$"
 
 GalecrestCity_DetectiveAcademy_NPC8_Text_0:
-# 293 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 294 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Hey, you look weak. You'd be a good\n"
 	.string "training dummy for my CHARCADET!$"
 
 GalecrestCity_DetectiveAcademy_NPC8_Text_1:
-# 293 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 294 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "But you're not even a student!$"
 
 GalecrestCity_DetectiveAcademy_NPC8_Text_2:
-# 294 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 295 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "You may have beaten me, but I bet you\n"
 	.string "can't beat KOHLA! He's the star of the\l"
 	.string "Academy!$"
 
 GalecrestCity_DetectiveAcademy_NPC9_Text_0:
-# 305 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 306 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "These two only focus on battling. But\n"
 	.string "true detectives can do a lot more! We\l"
 	.string "have to investigate clues, interrogate\l"
 	.string "suspects and disguise ourselves.$"
 
 GalecrestCity_DetectiveAcademy_NPC10_Text_0:
-# 311 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 312 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "...and as you can see here, according to\n"
 	.string "the theory of...\p"
 	.string "The teacher is engrossed in his lecture.$"
 
 GalecrestCity_DetectiveAcademy_NPC11_Text_0:
-# 318 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 319 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "I love this teacher's style! I wish he\n"
 	.string "taught a more interesting subject.$"
 
 GalecrestCity_DetectiveAcademy_NPC12_Text_0:
-# 325 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 326 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "I love the topic but this teacher is so\n"
 	.string "boring!$"
 
 GalecrestCity_DetectiveAcademy_Charcadet_Battle_Text_0:
-# 337 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 338 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "CHARCADET is battling intensely!$"
 
 GalecrestCity_DetectiveAcademy_Yamper_Battle_Text_0:
-# 347 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 348 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "YAMPER's not backing down!$"
 
 GalecrestCity_DetectiveAcademy_Charcadet_A_Text_0:
-# 357 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 358 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "CHARCADET is also curious about the\n"
 	.string "class rankings!$"

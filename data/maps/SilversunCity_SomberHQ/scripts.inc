@@ -394,7 +394,7 @@ SomberHQ_NPC_CounterfeitMachine_5:
 # 285 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	release
 # 286 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	giveitem ITEM_FAKE_ID
+	giveitem ITEM_FAKE_STUDENT_ID
 # 287 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	msgbox SomberHQ_NPC_CounterfeitMachine_Text_3
 # 288 "data//maps/SilversunCity_SomberHQ/scripts.pory"
