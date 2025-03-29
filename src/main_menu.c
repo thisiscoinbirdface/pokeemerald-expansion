@@ -406,10 +406,10 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
     },
     {
         .bg = 0,
-        .tilemapLeft = 3,
-        .tilemapTop = 5,
-        .width = 6,
-        .height = 4,
+        .tilemapLeft = 1,
+        .tilemapTop = 2,
+        .width = 8,
+        .height = 10,
         .paletteNum = 15,
         .baseBlock = 0x6D
     },
@@ -476,11 +476,14 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 
 static const struct MenuAction sMenuActions_Gender[] = {
     {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("GIRL"), {NULL}},
+    {COMPOUND_STRING("PSYCHIC"), {NULL}},
+    {COMPOUND_STRING("BREEDER"), {NULL}},
+    {COMPOUND_STRING("LASS"), {NULL}},
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("STU"),
+    COMPOUND_STRING("DADDY"),
     COMPOUND_STRING("MILTON"),
     COMPOUND_STRING("TOM"),
     COMPOUND_STRING("KENNY"),
@@ -1281,6 +1284,9 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 #define tLotadSpriteId data[9]
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
+#define tMunucuSpriteId data[12]
+#define tShububuSpriteId data[13]
+#define tGubukingSpriteId data[14]
 
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
@@ -1584,6 +1590,8 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
     int gender = NewGameBirchSpeech_ProcessGenderMenuInput();
     int gender2;
 
+
+    //CUSTOM CHARACTERS
     switch (gender)
     {
         case MALE:
@@ -1598,8 +1606,27 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
             break;
+        case MUNUCU:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->playerGender = gender;
+            NewGameBirchSpeech_ClearGenderWindow(1, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            break;
+        case SHUBUBU:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->playerGender = gender;
+            NewGameBirchSpeech_ClearGenderWindow(1, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            break;
+        case GUBUKING:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->playerGender = gender;
+            NewGameBirchSpeech_ClearGenderWindow(1, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            break;
     }
     gender2 = Menu_GetCursorPos();
+
     if (gender2 != gTasks[taskId].tPlayerGender)
     {
         gTasks[taskId].tPlayerGender = gender2;
@@ -1619,10 +1646,37 @@ static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8 taskId)
     else
     {
         gSprites[spriteId].invisible = TRUE;
-        if (gTasks[taskId].tPlayerGender != MALE)
-            spriteId = gTasks[taskId].tMaySpriteId;
-        else
-            spriteId = gTasks[taskId].tBrendanSpriteId;
+        
+        //Custom Characters
+        //make this a switch statement based on cursor pos
+        switch (gTasks[taskId].tPlayerGender)
+        {
+            case MALE:
+                spriteId = gTasks[taskId].tBrendanSpriteId;
+                break;
+            case FEMALE:
+                spriteId = gTasks[taskId].tMaySpriteId;
+                break;
+            case MUNUCU:
+                spriteId = gTasks[taskId].tMunucuSpriteId;
+                break;
+            case SHUBUBU:
+                spriteId = gTasks[taskId].tShububuSpriteId;
+                break;
+            case GUBUKING:
+                spriteId = gTasks[taskId].tGubukingSpriteId;
+                break;
+        }
+
+
+        // if (gTasks[taskId].tPlayerGender != MALE)
+        //     spriteId = gTasks[taskId].tMaySpriteId;
+        // else
+        //     spriteId = gTasks[taskId].tBrendanSpriteId;
+
+
+
+
         gSprites[spriteId].x = DISPLAY_WIDTH;
         gSprites[spriteId].y = 60;
         gSprites[spriteId].invisible = FALSE;
@@ -1793,10 +1847,31 @@ static void Task_NewGameBirchSpeech_AreYouReady(u8 taskId)
             gTasks[taskId].tTimer--;
             return;
         }
-        if (gSaveBlock2Ptr->playerGender != MALE)
-            spriteId = gTasks[taskId].tMaySpriteId;
-        else
-            spriteId = gTasks[taskId].tBrendanSpriteId;
+        
+        //Custom characters
+        switch (gSaveBlock2Ptr->playerGender)
+        {
+            case MALE:
+                spriteId = gTasks[taskId].tBrendanSpriteId;
+                break;
+            case FEMALE:
+                gTasks[taskId].tPlayerGender = FEMALE;
+                spriteId = gTasks[taskId].tMaySpriteId;
+                break;
+            case MUNUCU:
+                spriteId = gTasks[taskId].tMunucuSpriteId;
+                break;
+            case SHUBUBU:
+                spriteId = gTasks[taskId].tShububuSpriteId;
+                break;
+            case GUBUKING:
+                spriteId = gTasks[taskId].tGubukingSpriteId;
+                break;
+            default:
+                spriteId = gTasks[taskId].tBrendanSpriteId;            
+                break;                
+        }
+
         gSprites[spriteId].x = 120;
         gSprites[spriteId].y = 60;
         gSprites[spriteId].invisible = FALSE;
@@ -1904,16 +1979,30 @@ static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void)
     FreeAllSpritePalettes();
     ResetAllPicSprites();
     AddBirchSpeechObjects(taskId);
-    if (gSaveBlock2Ptr->playerGender != MALE)
+
+    //Custom Characters
+    switch (gSaveBlock2Ptr->playerGender)
     {
-        gTasks[taskId].tPlayerGender = FEMALE;
-        spriteId = gTasks[taskId].tMaySpriteId;
+        case MALE:
+            spriteId = gTasks[taskId].tBrendanSpriteId;
+            break;
+        case FEMALE:
+            spriteId = gTasks[taskId].tMaySpriteId;
+            break;
+        case MUNUCU:
+            spriteId = gTasks[taskId].tMunucuSpriteId;
+            break;
+        case SHUBUBU:
+            spriteId = gTasks[taskId].tShububuSpriteId;
+            break;
+        case GUBUKING:
+            spriteId = gTasks[taskId].tGubukingSpriteId;
+            break;
+        default:
+            spriteId = gTasks[taskId].tBrendanSpriteId;            
+            break;
     }
-    else
-    {
-        gTasks[taskId].tPlayerGender = MALE;
-        spriteId = gTasks[taskId].tBrendanSpriteId;
-    }
+
     gSprites[spriteId].x = 180;
     gSprites[spriteId].y = 60;
     gSprites[spriteId].invisible = FALSE;
@@ -1966,6 +2055,9 @@ static void AddBirchSpeechObjects(u8 taskId)
     u8 lotadSpriteId;
     u8 brendanSpriteId;
     u8 maySpriteId;
+    u8 munucuSpriteId;
+    u8 shububuSpriteId;
+    u8 gubukingSpriteId;
 
     birchSpriteId = AddNewGameBirchObject(0x88, 0x3C, 1);
     gSprites[birchSpriteId].callback = SpriteCB_Null;
@@ -1987,6 +2079,23 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[maySpriteId].invisible = TRUE;
     gSprites[maySpriteId].oam.priority = 0;
     gTasks[taskId].tMaySpriteId = maySpriteId;
+    munucuSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MUNUCU), 120, 60, 0, NULL);
+    gSprites[munucuSpriteId].callback = SpriteCB_Null;
+    gSprites[munucuSpriteId].invisible = TRUE;
+    gSprites[munucuSpriteId].oam.priority = 0;
+    gTasks[taskId].tMunucuSpriteId = munucuSpriteId;    
+    shububuSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_SHUBUBU), 120, 60, 0, NULL);
+    gSprites[shububuSpriteId].callback = SpriteCB_Null;
+    gSprites[shububuSpriteId].invisible = TRUE;
+    gSprites[shububuSpriteId].oam.priority = 0;
+    gTasks[taskId].tShububuSpriteId = shububuSpriteId;   
+    gubukingSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MUNUCU), 120, 60, 0, NULL);
+    gSprites[gubukingSpriteId].callback = SpriteCB_Null;
+    gSprites[gubukingSpriteId].invisible = TRUE;
+    gSprites[gubukingSpriteId].oam.priority = 0;
+    gTasks[taskId].tGubukingSpriteId = gubukingSpriteId;   
+
+
 }
 
 #undef tPlayerSpriteId
@@ -1996,6 +2105,7 @@ static void AddBirchSpeechObjects(u8 taskId)
 #undef tLotadSpriteId
 #undef tBrendanSpriteId
 #undef tMaySpriteId
+#undef tMunucuSpriteId
 
 #define tMainTask data[0]
 #define tAlphaCoeff1 data[1]

@@ -110,18 +110,22 @@
 #define TRAINER_PIC_RS_MAY                92
 
 //My pics I AM GOING TO USE THEM ONE BY ONE
-#define TRAINER_PIC_SOMBER_GRUNT_F        93
-#define TRAINER_PIC_SOMBER_GRUNT_M        94
-#define TRAINER_PIC_SOMBER_GRUNT_DUO      95
-#define TRAINER_PIC_SOMBER_ADMIN_MELEA    96
-#define TRAINER_PIC_SOMBER_ADMIN_MOXIE    97
-#define TRAINER_PIC_CADET_F               98
-#define TRAINER_PIC_CADET_M               99
-#define TRAINER_PIC_BURGLAR               100
+//Custom trainers
+#define TRAINER_PIC_MUNUCU                93    //main character 1
+#define TRAINER_PIC_SHUBUBU               94    //main char 2
+#define TRAINER_PIC_GUBUKING              95    //main char 3
+#define TRAINER_PIC_SOMBER_GRUNT_F        96
+#define TRAINER_PIC_SOMBER_GRUNT_M        97
+#define TRAINER_PIC_SOMBER_GRUNT_DUO      98
+#define TRAINER_PIC_SOMBER_ADMIN_MELEA    99
+#define TRAINER_PIC_SOMBER_ADMIN_MOXIE    100
+#define TRAINER_PIC_CADET_F               101
+#define TRAINER_PIC_CADET_M               102
+#define TRAINER_PIC_BURGLAR               103
 
 
 
-#define TRAINER_PIC_COUNT                 101
+#define TRAINER_PIC_COUNT                 104
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -216,7 +220,12 @@
 #define FACILITY_CLASS_RS_BRENDAN            0x50
 #define FACILITY_CLASS_RS_MAY                0x51
 
-#define FACILITY_CLASSES_COUNT               0x52
+//MY CUSTOM FACILITY CLASSES (I AM GOING TO USE THESE)
+#define FACILITY_CLASS_MUNUCU                0x52
+#define FACILITY_CLASS_SHUBUBU               0x53
+#define FACILITY_CLASS_GUBUKING              0x54
+
+#define FACILITY_CLASSES_COUNT               0x55
 
 #define RS_FACILITY_CLASS_AQUA_LEADER_ARCHIE    0x0
 #define RS_FACILITY_CLASS_AQUA_GRUNT_M          0x1

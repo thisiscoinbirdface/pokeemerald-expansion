@@ -133,7 +133,10 @@
 
 #define MALE 0
 #define FEMALE 1
-#define GENDER_COUNT 2
+#define MUNUCU 2
+#define SHUBUBU 3
+#define GUBUKING 4
+#define GENDER_COUNT 5
 
 #define NUM_BARD_SONG_WORDS    6
 #define NUM_STORYTELLER_TALES  4
