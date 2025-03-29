@@ -140,7 +140,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     fadescreen(FADE_FROM_BLACK)    
     applymovement(LOCALID_MOXIE, moves(face_down))
     waitmovement(0)
-    msgbox(format("MOXIE: I know you're going to chase MELEA and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one dreamstone, and once MELEA takes that exit, you'll be stuck there forever!\pHahaha!"))
+    msgbox(format("MOXIE: I know you're going to chase MELEA and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one exit out, and once MELEA takes that exit, you'll be stuck there forever!\pHahaha!"))
     release
     applymovement(LOCALID_MOXIE, moves(walk_left face_up))
     waitmovement(0)

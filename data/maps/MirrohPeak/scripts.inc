@@ -479,6 +479,6 @@ MirrohPeak_EventScript_Somber_Trigger_Text_13:
 	.string "the Ancient Wonders.\p"
 	.string "Let me do you a favour, {PLAYER}. I'll\n"
 	.string "send you inside myself. There's only one\l"
-	.string "dreamstone, and once MELEA takes that\l"
+	.string "exit out, and once MELEA takes that\l"
 	.string "exit, you'll be stuck there forever!\p"
 	.string "Hahaha!$"
