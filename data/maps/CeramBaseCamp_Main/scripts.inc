@@ -30,7 +30,7 @@ CeramBaseCamp_Main_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 CeramBaseCamp_Main_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 # 16 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	playbgm MUS_AQUA_MAGMA_HIDEOUT
+	playbgm MUS_AQUA_MAGMA_HIDEOUT, FALSE
 	return
 
 

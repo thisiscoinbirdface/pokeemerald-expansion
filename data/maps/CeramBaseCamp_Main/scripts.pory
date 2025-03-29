@@ -13,7 +13,7 @@ raw `
 mapscripts CeramBaseCamp_Main_MapScripts{
     MAP_SCRIPT_ON_TRANSITION {
         checkflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
-        if (var(VAR_RESULT) == 0) {playbgm(MUS_AQUA_MAGMA_HIDEOUT)}
+        if (var(VAR_RESULT) == 0) {playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)}
     }
 }
 
