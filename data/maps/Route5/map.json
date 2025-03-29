@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 58,
-      "y": 16,
+      "x": 57,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -92,16 +92,29 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-      "x": 53,
-      "y": 16,
+      "x": 67,
+      "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route5_NPC_A",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRETA",
+      "x": 46,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_GRETA_ROUTE5"
     }
   ],
   "warp_events": [
@@ -135,7 +148,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route5_Greta_Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route5_Greta_Trigger1"
+    }
   ],
   "bg_events": [
 

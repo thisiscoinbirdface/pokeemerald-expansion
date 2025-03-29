@@ -15,3 +15,153 @@ script Route5_NPC_B{
     releaseall
     end
 }
+
+
+
+
+
+//Greta: FLAG_GRETA_ROUTE5
+
+script Route5_Greta_Trigger0{
+    if (flag(FLAG_GRETA_ROUTE5)) {end}
+
+    lockall
+    applymovement(7, moves(walk_right * 7 walk_up * 1 face_right))
+    waitmovement(0)
+
+    goto(Route5_Greta_Main)
+}
+
+script Route5_Greta_Trigger1{
+    if (flag(FLAG_GRETA_ROUTE5)) {end}
+
+    lockall
+    applymovement(7, moves(walk_right * 7))
+    waitmovement(0)
+
+    goto(Route5_Greta_Main)
+}
+
+script Route5_Greta_Main{
+    msgbox(format("GRETA: It's you! The wandering saviour from MT CERAM. How wonderful! A new customer. Come, come. I've got some really great stuff from...well, you can't ask a magician to reveal her secrets, can you?"))
+    release
+    delay(16)
+
+    goto(Route5_Greta_ShowItemsForSale)
+}
+
+script Route5_Greta_AskToShow{
+    msgbox(format("Wanna buy anything?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1) {goto(Route5_Greta_ShowItemsForSale)}
+
+    msgbox(format("Bummer!"))
+    release
+    
+    goto(Route5_Greta_GottaGo)
+}
+
+script Route5_Greta_ShowItemsForSale{
+    showmoneybox(18, 0)
+    msgbox(format("The egg is 10,000. The rock is 5,000. The fish is only 100!"))    
+//	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Strange Egg", "Mysterious Rock", "Ugly Fish")
+
+    if (var(VAR_RESULT) == 0) {
+        hidemoneybox
+        goto(Route5_Greta_StrangeEgg)
+    }
+    if (var(VAR_RESULT) == 1) {
+        hidemoneybox
+        goto(Route5_Greta_StrangeEgg)
+    }
+    if (var(VAR_RESULT) == 2) {
+        hidemoneybox
+        goto(Route5_Greta_StrangeEgg)
+    }
+ 
+    goto(Route5_Greta_AskToShow)
+
+}
+
+script Route5_Greta_StrangeEgg{
+    checkmoney(10000)
+    if (var(VAR_RESULT) == 0){       
+        msgbox(format("Hey! You can't afford this!"))
+        release
+        goto(Route5_Greta_ShowItemsForSale)
+    } else {
+        msgbox(format("A discerning choice! You sure?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removemoney(10000)
+            giveegg(SPECIES_HONEDGE)
+            msgbox(format("{PLAYER} received a Strange Egg from GRETA."), MSGBOX_SIGN)
+            release
+            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            goto(Route5_Greta_GottaGo)
+        } else {
+            goto(Route5_Greta_ShowItemsForSale)            
+        }
+    }
+}
+
+script Route5_Greta_UglyFish{
+    checkmoney(100)
+    if (var(VAR_RESULT) == 0){       
+        msgbox(format("Hey! You can't afford this!"))
+        release
+        goto(Route5_Greta_ShowItemsForSale)
+    } else {
+        msgbox(format("A...budget-friendly choice! You sure?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removemoney(100)
+            givemon(SPECIES_FEEBAS)
+            msgbox(format("{PLAYER} received a FEEBAS from GRETA."), MSGBOX_SIGN)
+            release
+            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            goto(Route5_Greta_GottaGo)
+        } else {
+            goto(Route5_Greta_ShowItemsForSale)            
+        }
+    }
+}
+
+script Route5_Greta_MysteriousRock{
+    checkmoney(100)
+    if (var(VAR_RESULT) == 0){       
+        msgbox(format("Hey! You can't afford this!"))
+        release
+        goto(Route5_Greta_ShowItemsForSale)
+    } else {
+        msgbox(format("A reasonable choice! You sure?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removemoney(100)
+            giveitem(ITEM_EVERSTONE)
+            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            goto(Route5_Greta_GottaGo)
+        } else {
+            goto(Route5_Greta_ShowItemsForSale)            
+        }
+    }
+}
+
+
+
+script Route5_Greta_GottaGo{
+    release
+    applymovement(7, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("GRETA: Would you look at the time! I've gotta run. See you around!"))
+    release
+    applymovement(7, moves(walk_left * 8))
+    waitmovement(0)
+    removeobject(7)
+    setflag(FLAG_GRETA_ROUTE5)
+
+    releaseall
+    end
+}
+
+
+
+
+
