@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -194,7 +194,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -207,7 +207,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLACE",
@@ -220,7 +220,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -233,7 +233,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMPHAROS)",
@@ -246,7 +246,20 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 30,
+      "y": 73,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_MIRROHPEAK_VINIEL_CUTSCENE"
     }
   ],
   "warp_events": [
@@ -274,6 +287,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "MirrohPeak_EventScript_Somber_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 79,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "MirrohPeak_EventScript_Viniel_Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 79,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
     }
   ],
   "bg_events": [
