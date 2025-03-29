@@ -10,7 +10,7 @@ script Route4_EventScript_EvilTeam{
     //Block text
     lockall
     msgbox(format("Hey kid - this road is closed due to...uh...repairs. Yeah. Sorry."))
-    msgbox(format("You've saying we look suspicious? We're just...um...construction workers. Sorry. Yeah."))
+    msgbox(format("We look suspicious? We're just...um...construction workers. Sorry. Yeah."))
     msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         msgbox(format("Good. Now scram!"))
@@ -38,11 +38,11 @@ script Route4_EventScript_EvilTeamDefeated{
     waitmovement(0)
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
     waitmovement(0)
-    msgbox(format("I can't believe we lost to some stupid kid..."))
+    msgbox(format("Can't believe we lost to some stupid kid..."))
     release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("We gotta go tell the boss at the CERAM BASE CAMP about this!"))
+    msgbox(format("We gotta tell the boss at CERAM BASE CAMP about this!"))
     release
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down)) 
@@ -119,7 +119,8 @@ script Route4_TrainerBattle_Jenny {
 
             msgbox(format("You have proved your worth, old one. You may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 
-            msgbox(format("...when will I go back home? Never! I hate my family! They only care about my big brother. I wish...I wish to be outside all day!"))  
+            setflag(FLAG_ROUTE4_KIDGANG)
+            msgbox(format("...\p...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I want...I want to be outside all day!"))  
         }
         releaseall
         end
@@ -170,19 +171,26 @@ script Route4_NPC_B{
 script Route4_NPC_Cook{
     lockall
     faceplayer
-    msgbox(format("Hello young trainer! I'm a cook from the PELLUCA RESTAURANT, all the way on the other side of CORMORIA! Why am I here, you ask? It's because I travel all across CORMORIA to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around MT CERAM. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        checkitem(ITEM_RAWST_BERRY)
+
+    if (flag(FLAG_ROUTE4_COOK)){
+        msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))        
+    } else {
+        msgbox(format("Hello young trainer! I'm a cook from the PELLUCA RESTAURANT, all the way on the other side of CORMORIA! Why am I here, you ask? It's because I travel all across CORMORIA to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around MT CERAM. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            removeitem(ITEM_RAWST_BERRY)
-            msgbox(format("{PLAYER} gave the cook a RAWST BERRY"), MSGBOX_SIGN)
-            msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange, please take this."))
-            release
-            giveitem(ITEM_SHELL_BELL)
-            msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
-            setflag(FLAG_ROUTE4_COOK)
+            checkitem(ITEM_RAWST_BERRY)
+            if (var(VAR_RESULT) == 1){
+                removeitem(ITEM_RAWST_BERRY)
+                msgbox(format("{PLAYER} gave the cook a RAWST BERRY"), MSGBOX_SIGN)
+                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange, please take this."))
+                release
+                giveitem(ITEM_SHELL_BELL)
+                msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
+                setflag(FLAG_ROUTE4_COOK)
+            }
         }
     }
+
+
     releaseall
 }
 
@@ -190,7 +198,7 @@ script Route4_NPC_Cook{
 script Route4_NPC_D{
     lockall
     faceplayer
-    msgbox(format("There are some thugs blocking the path to CERAM BASE CAMP! They remind me of my younger days...I used to be in an evil team in the HOENN region."))
+    msgbox(format("There are some grunts blocking the path to CERAM BASE CAMP! They remind me of my younger days...I used to be in an evil team in the HOENN region."))
     releaseall
 }
 

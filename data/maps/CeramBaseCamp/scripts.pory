@@ -86,13 +86,15 @@ script CeramBaseCamp_Cyndaquil_Quest_Done{
 
 script CeramBaseCamp_Cyndaquil_StartQuest{
     //Cyndaquil is training hard
-    msgbox(format("C'mon CYNDAQUIL!\pCYNDAQUI: quiiillll!!!\pSigh, it's just not good enough..."))
+    msgbox(format("C'mon CYNDAQUIL!"))
+    playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+    applymovement(9, moves(emote_exclamation_mark jump_in_place_down))
+    msgbox(format("CYNDAQUIL: quiiillll!!!\pSigh, it's just not good enough..."))
     release
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled ARIAN and my CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, you wouldn't happen to have the TM, would you? If you can teach my CYNDAQUIL the move SUNNY DAY, that'd be really helpful. Will you help us out?"), MSGBOX_YESNO)
-
+    msgbox(format("We battled ARIAN and my CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my CYNDAQUIL?."), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
@@ -144,6 +146,7 @@ script CeramBaseCamp_NPC5{
         msgbox(format("Here, have one."))
         giveitem(ITEM_DAWN_STONE)
         setflag(FLAG_CERAMBASECAMP_NPCITEM)
+        msgbox(format("Don't worry. I've got tons of these!"))
     }
     releaseall
 }
@@ -164,7 +167,7 @@ script CeramBaseCamp_NPC5{
 
 script CeramBaseCamp_Sign1{
 
-    msgbox(format("CERAM BASE CAMP\nStarting point for Mt. Ceram treks."), MSGBOX_SIGN)
+    msgbox(format("CERAM BASE CAMP\nStarting point for MT CERAM treks."), MSGBOX_SIGN)
     end
 }
 

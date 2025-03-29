@@ -10,7 +10,18 @@ raw `
 `
 
 
-mapscripts CeramBaseCamp_Main_MapScripts{}
+mapscripts CeramBaseCamp_Main_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION {
+        checkflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
+        if (var(VAR_RESULT) == 0) {playbgm(MUS_AQUA_MAGMA_HIDEOUT)}
+    }
+}
+
+
+
+mapscripts CeramBAseCamp_Main_OnWarp{
+
+}
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag
@@ -276,6 +287,7 @@ script CeramBaseCamp_Main_Smeargle{
     lockall
     faceplayer
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
+    msgbox(format("SMEARGLE looks resolute. What is it thinking?"))
     releaseall
     end
 }

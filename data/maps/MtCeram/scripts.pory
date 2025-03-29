@@ -25,7 +25,10 @@ script MtCeram_Eavesdrop_Trigger0{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
 
     lockall
-    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
+    delay(16)
+    applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
+    delay(16)
+
     msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -40,7 +43,10 @@ script MtCeram_Eavesdrop_Trigger1{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
 
     lockall
-    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
+    delay(16)
+    applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
+    delay(16)
+
     msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -55,7 +61,10 @@ script MtCeram_Eavesdrop_Trigger2{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
 
     lockall
-    applymovement(LOCALID_FOOTKOHLA, moves(face_down)) 
+    delay(16)
+    applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
+    delay(16)
+
     msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -70,7 +79,10 @@ script MtCeram_Eavesdrop_Trigger3{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
     
     lockall
-    applymovement(LOCALID_FOOTKOHLA, moves(face_down))
+    delay(16)
+    applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
+    delay(16)
+
     msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
@@ -89,7 +101,12 @@ script MtCeram_EventScript_Eavesdrop{
     msgbox(format("KOHLA: I've been spying on those two Team Somber Grunts. Don't make a sound!"))
     release   
 
-    //Somber dialogue
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 2 walk_up * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    //Somber dialogue  
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     waitmovement(0)
     delay(30)
@@ -104,16 +121,21 @@ script MtCeram_EventScript_Eavesdrop{
     release
 
     //Somber walk off
-    applymovement(LOCALID_FOOTGRUNT1, moves(walk_right * 6))    
-    applymovement(LOCALID_FOOTGRUNT2, moves(walk_right * 6))
+    applymovement(LOCALID_FOOTGRUNT1, moves(walk_right * 8))    
+    applymovement(LOCALID_FOOTGRUNT2, moves(walk_right * 8))
     waitmovement(0)
 
     //remove objects
     removeobject(LOCALID_FOOTGRUNT1)
     removeobject(LOCALID_FOOTGRUNT2)
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2 walk_left * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     //Kohla talk
-    applymovement(LOCALID_FOOTKOHLA, moves(face_left))
+    applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_left))
     msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I don't need your help, chum!"))
     release
 
@@ -283,7 +305,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 //TRAINERS
 script MtCeram_TrainerBattle_A {
-    trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect\ntraining spot. Don't you agree?"), format("It's never enough!"))
+    trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect training spot. Don't you agree?"), format("It's never enough!"))
     msgbox(format("Since its so hot here, you sweat more. And sweat is good!"))
     release
     end
@@ -291,7 +313,7 @@ script MtCeram_TrainerBattle_A {
 
 
 script MtCeram_TrainerBattle_B {
-    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}.\nBet your eyes will pop when\nyou see what I caught here!"), format("Is rarity not enough?"))
+    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}. Bet your eyes will pop when you see what I caught here!"), format("Is rarity not enough?"))
     msgbox(format("I love my {PKMN} as friends and partners...and collectibles!"))
     release
     end
@@ -299,7 +321,7 @@ script MtCeram_TrainerBattle_B {
 
 
 script MtCeram_TrainerBattle_C {
-    trainerbattle_single(TRAINER_MTCERAM_C, format("My SIZZLEPEDE loves preying on the\nVENIPEDE around here!"), format("You sizzle too much!"))
+    trainerbattle_single(TRAINER_MTCERAM_C, format("My SIZZLEPEDE loves preying on the VENIPEDE around here!"), format("You sizzle too much!"))
     msgbox(format("SIZZLEPEDE and VENIPEDE are sworn enemies, much like their evolutions."))
     release
     end
@@ -307,14 +329,14 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here\nbut their hair is sizzling in the heat!"), format("I should go back down."))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here but their hair is getting singed in the heat!"), format("I should go back down."))
     msgbox(format("Most {PKMN} Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
 }
 
 script MtCeram_TrainerBattle_GRUNT1 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey kid, you're not supposed\nto be here. Why?\pStop asking questions and get lost!"), format("Fine! Don't get lost!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey kid, you're not supposed to be here. Why? Stop asking questions and get lost!"), format("Fine! Don't get lost!"))
     msgbox(format("Team Somber has control of this mountain for now! Well except for you."))
     release
     end
@@ -322,7 +344,7 @@ script MtCeram_TrainerBattle_GRUNT1 {
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone\nand Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone and Team Somber will reward us! Wait, you're not a grunt. Get out of here!"), format("I'm going to be punished for this!"))
     msgbox(format("I love Team Somber! No wait...I love money!"))
     release
     end

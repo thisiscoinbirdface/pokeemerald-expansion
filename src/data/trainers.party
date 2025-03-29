@@ -293,7 +293,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ROUTE4_GRUNTS ===
 Name: MEL & PAUL
 Class: Team Somber
-Pic: Somber Grunt M
+Pic: Somber Grunt Duo
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -313,7 +313,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Name: GABRIELLE
 Class: Team Somber
 Pic: Somber Grunt F
-Gender: Male
+Gender: Female
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
