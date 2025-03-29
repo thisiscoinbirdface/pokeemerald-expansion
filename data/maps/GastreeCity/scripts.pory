@@ -228,7 +228,7 @@ script GastreeCity_NPC9{
                 msgbox(format("SKITTY: skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_CUT)
-                msgbox(format("SKITTY already knows CUT, so I don't need it any more. A {PKMN} with CUT can cut any small trees in its path. But you have to have at least one GYM BADGE to use it."))
+                msgbox(format("SKITTY already knows CUT, so I don't need it any more. With CUT, any {PKMN} can cut small trees in its path! But only some {PKMN} can use CUT in battle.\pOh, but you do need to have at least one GYM BADGE to use it."))
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
             } else {
@@ -332,6 +332,7 @@ script GastreeCity_Poltchageist{
     releaseall
     end
 }
+
 
 
 
