@@ -114,7 +114,7 @@ script Route5_Greta_UglyFish{
         msgbox(format("A...budget-friendly choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removemoney(100)
-            givemon(SPECIES_FEEBAS)
+            givemon(SPECIES_FEEBAS, 5)
             msgbox(format("{PLAYER} received a FEEBAS from GRETA."), MSGBOX_SIGN)
             release
             msgbox(format("GRETA: Good doing business with you! Now, what about -"))

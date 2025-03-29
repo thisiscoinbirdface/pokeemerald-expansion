@@ -206,7 +206,7 @@ Route5_Greta_UglyFish_4:
 # 116 "data//maps/Route5/scripts.pory"
 	removemoney 100
 # 117 "data//maps/Route5/scripts.pory"
-	givemon SPECIES_FEEBAS
+	givemon SPECIES_FEEBAS, 5
 # 118 "data//maps/Route5/scripts.pory"
 	msgbox Route5_Greta_UglyFish_Text_1, MSGBOX_SIGN
 # 119 "data//maps/Route5/scripts.pory"
