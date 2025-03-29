@@ -1,6 +1,18 @@
 mapscripts WinterlilyHollow_MapScripts{}
 
 
+//City elements
+//gym, mining minigame, surf mon quest?
+
+//NPCs
+//3 normals, 1 miner
+
+//Mons
+//mime jr, froslass, sneasler
+
+//Quest - lonely mime jr, give 3 things and join party.
+
+//Houses - 3
 
 
 
@@ -25,11 +37,68 @@ script WinterlilyHollow_NPC3{
     releaseall
     end
 }
-script WinterlilyHollow_NPC4{
+
+script WinterlilyHollow_Cetoddle{
     lockall
     faceplayer
+    playmoncry(SPECIES_CETODDLE, CRY_MODE_NORMAL)
     msgbox(format(""))
     releaseall
     end
 }
+script WinterlilyHollow_Froslass{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_FROSLASS, CRY_MODE_NORMAL)
+    msgbox(format(""))
+    releaseall
+    end
+}
+script WinterlilyHollow_Sneasler{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script WinterlilyHollow_NPC_Miner{
+    lockall
+    faceplayer
+    msgbox(format("See all these crystals on the walls? I'm trying to dig it up. Wanna try? You can borrow my spare pickaxe, but it'll cost you 500."), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        checkmoney(500)
+    
+        if (var(VAR_RESULT) == 1){
+            special(StartMining)
+        } else {
+            msgbox(format("You don't have enough money."))
+        }
+    } else {
+        msgbox(format("You can dig up some great stuff, you know?"))
+    }
+    applymovement(3, moves(face_right))
+    waitmovement(0)
+
+    releaseall
+    end
+}
+
 
