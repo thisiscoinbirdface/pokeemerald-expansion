@@ -3,7 +3,7 @@
   "name": "HoyaRiverNorth",
   "layout": "LAYOUT_HOYA_RIVER_NORTH",
   "music": "SE_M_WATERFALL",
-  "region_map_section": "MAPSEC_HOYA_RIVER_NORTH",
+  "region_map_section": "MAPSEC_PELLUCA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_ROUTE",

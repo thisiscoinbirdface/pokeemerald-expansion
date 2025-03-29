@@ -20,215 +20,217 @@ FennilahlTown_EventScript_Man::
 # 12 "data//maps/FennilahlTown/scripts.pory"
 	faceplayer
 # 13 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_EventScript_Man_Text_0
+	setflag FLAG_BADGE05_GET
 # 14 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_EventScript_Man_Text_0
+# 15 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 
 
 FennilahlTown_EventScript_Woman::
-# 18 "data//maps/FennilahlTown/scripts.pory"
-	lockall
 # 19 "data//maps/FennilahlTown/scripts.pory"
-	faceplayer
+	lockall
 # 20 "data//maps/FennilahlTown/scripts.pory"
+	faceplayer
+# 21 "data//maps/FennilahlTown/scripts.pory"
 	goto_if_set FLAG_FENNILAHL_CUTEMONGIFT, FennilahlTown_EventScript_Woman_2
-# 23 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_EventScript_Woman_Text_1
 # 24 "data//maps/FennilahlTown/scripts.pory"
-	giveitem ITEM_SOOTHE_BELL
+	msgbox FennilahlTown_EventScript_Woman_Text_1
 # 25 "data//maps/FennilahlTown/scripts.pory"
+	giveitem ITEM_SOOTHE_BELL
+# 26 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_CUTEMONGIFT
 FennilahlTown_EventScript_Woman_1:
-# 27 "data//maps/FennilahlTown/scripts.pory"
+# 28 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	return
 
 FennilahlTown_EventScript_Woman_2:
-# 21 "data//maps/FennilahlTown/scripts.pory"
+# 22 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_EventScript_Woman_Text_0
 	goto FennilahlTown_EventScript_Woman_1
 
 
 FennilahlTown_EventScript_HikerTunnel::
-# 31 "data//maps/FennilahlTown/scripts.pory"
-	lockall
 # 32 "data//maps/FennilahlTown/scripts.pory"
+	lockall
+# 33 "data//maps/FennilahlTown/scripts.pory"
 	faceplayer
-# 34 "data//maps/FennilahlTown/scripts.pory"
-	goto_if_quest_active QUEST_FENNILAHL_HIKER, Fennilahl_Breech_QuestInProgress
 # 35 "data//maps/FennilahlTown/scripts.pory"
+	goto_if_quest_active QUEST_FENNILAHL_HIKER, Fennilahl_Breech_QuestInProgress
+# 36 "data//maps/FennilahlTown/scripts.pory"
 	goto_if_quest_inactive QUEST_FENNILAHL_HIKER, Fennilahl_Breech_StartQuest
-# 37 "data//maps/FennilahlTown/scripts.pory"
+# 38 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 
 Fennilahl_Breech_StartQuest::
-# 43 "data//maps/FennilahlTown/scripts.pory"
+# 44 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_StartQuest_Text_0, MSGBOX_YESNO
-# 45 "data//maps/FennilahlTown/scripts.pory"
+# 46 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Fennilahl_Breech_StartQuest_2
-# 50 "data//maps/FennilahlTown/scripts.pory"
+# 51 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_StartQuest_Text_2
 Fennilahl_Breech_StartQuest_1:
-# 53 "data//maps/FennilahlTown/scripts.pory"
+# 54 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 Fennilahl_Breech_StartQuest_2:
-# 46 "data//maps/FennilahlTown/scripts.pory"
+# 47 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_StartQuest_Text_1
-# 48 "data//maps/FennilahlTown/scripts.pory"
+# 49 "data//maps/FennilahlTown/scripts.pory"
 	startquest QUEST_FENNILAHL_HIKER
 	goto Fennilahl_Breech_StartQuest_1
 
 
 Fennilahl_Breech_QuestInProgress::
-# 59 "data//maps/FennilahlTown/scripts.pory"
+# 60 "data//maps/FennilahlTown/scripts.pory"
 	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, Fennilahl_Breech_QuestInProgress_2
-# 78 "data//maps/FennilahlTown/scripts.pory"
+# 79 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_QuestInProgress_Text_5
 Fennilahl_Breech_QuestInProgress_1:
-# 80 "data//maps/FennilahlTown/scripts.pory"
+# 81 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 Fennilahl_Breech_QuestInProgress_2:
-# 60 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_0
 # 61 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_1
+	msgbox Fennilahl_Breech_QuestInProgress_Text_0
 # 62 "data//maps/FennilahlTown/scripts.pory"
-	release
+	msgbox Fennilahl_Breech_QuestInProgress_Text_1
 # 63 "data//maps/FennilahlTown/scripts.pory"
-	delay 16
-# 64 "data//maps/FennilahlTown/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-# 65 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_2
-# 66 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_3
-# 67 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_4
-# 68 "data//maps/FennilahlTown/scripts.pory"
 	release
+# 64 "data//maps/FennilahlTown/scripts.pory"
+	delay 16
+# 65 "data//maps/FennilahlTown/scripts.pory"
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+# 66 "data//maps/FennilahlTown/scripts.pory"
+	msgbox Fennilahl_Breech_QuestInProgress_Text_2
+# 67 "data//maps/FennilahlTown/scripts.pory"
+	msgbox Fennilahl_Breech_QuestInProgress_Text_3
+# 68 "data//maps/FennilahlTown/scripts.pory"
+	msgbox Fennilahl_Breech_QuestInProgress_Text_4
 # 69 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 5, Fennilahl_Breech_QuestInProgress_Movement_0
+	release
 # 70 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
+	applymovement 5, Fennilahl_Breech_QuestInProgress_Movement_0
 # 71 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 5
+	waitmovement 0
 # 72 "data//maps/FennilahlTown/scripts.pory"
-	setflag FLAG_FENNILAHL_HIKER_BLOCK
+	removeobject 5
 # 73 "data//maps/FennilahlTown/scripts.pory"
+	setflag FLAG_FENNILAHL_HIKER_BLOCK
+# 74 "data//maps/FennilahlTown/scripts.pory"
 	removeitem ITEM_STRANGE_ROCK
-# 76 "data//maps/FennilahlTown/scripts.pory"
+# 77 "data//maps/FennilahlTown/scripts.pory"
 	completequest QUEST_FENNILAHL_HIKER
 	goto Fennilahl_Breech_QuestInProgress_1
 
 
 FennilahlTown_Sign_Entrance::
-# 97 "data//maps/FennilahlTown/scripts.pory"
+# 98 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Entrance_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route2::
-# 102 "data//maps/FennilahlTown/scripts.pory"
+# 103 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route2_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Sign_Route3::
-# 107 "data//maps/FennilahlTown/scripts.pory"
+# 108 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Sign_Route3_Text_0, MSGBOX_SIGN
 	end
 
 
 FennilahlTown_Budew::
-# 114 "data//maps/FennilahlTown/scripts.pory"
-	lockall
 # 115 "data//maps/FennilahlTown/scripts.pory"
-	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
+	lockall
 # 116 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_Movement_0
+	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
 # 117 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
+	applymovement 8, FennilahlTown_Budew_Movement_0
 # 118 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_Text_0
+	waitmovement 0
 # 119 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_Text_0
+# 120 "data//maps/FennilahlTown/scripts.pory"
 	release
-# 121 "data//maps/FennilahlTown/scripts.pory"
+# 122 "data//maps/FennilahlTown/scripts.pory"
 	checkitem ITEM_ORAN_BERRY
-# 123 "data//maps/FennilahlTown/scripts.pory"
+# 124 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_2
 FennilahlTown_Budew_1:
-# 138 "data//maps/FennilahlTown/scripts.pory"
+# 139 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_2:
-# 124 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_Text_1, MSGBOX_YESNO
 # 125 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_Text_1, MSGBOX_YESNO
+# 126 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_4
 	goto FennilahlTown_Budew_1
 
 FennilahlTown_Budew_4:
-# 126 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_Movement_1
 # 127 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
+	applymovement 8, FennilahlTown_Budew_Movement_1
 # 128 "data//maps/FennilahlTown/scripts.pory"
-	delay 12
-# 129 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_Text_2, MSGBOX_SIGN
-# 130 "data//maps/FennilahlTown/scripts.pory"
-	release
-# 131 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_Movement_2
-# 132 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
+# 129 "data//maps/FennilahlTown/scripts.pory"
+	delay 12
+# 130 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_Text_2, MSGBOX_SIGN
+# 131 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 132 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 8, FennilahlTown_Budew_Movement_2
 # 133 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_Text_3
+	waitmovement 0
 # 134 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_Text_3
+# 135 "data//maps/FennilahlTown/scripts.pory"
 	release
 	goto FennilahlTown_Budew_1
 
 
-# 69 "data//maps/FennilahlTown/scripts.pory"
+# 70 "data//maps/FennilahlTown/scripts.pory"
 Fennilahl_Breech_QuestInProgress_Movement_0:
-# 69 "data//maps/FennilahlTown/scripts.pory"
+# 70 "data//maps/FennilahlTown/scripts.pory"
 	walk_up
 	step_end
 
-# 116 "data//maps/FennilahlTown/scripts.pory"
+# 117 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_Movement_0:
-# 116 "data//maps/FennilahlTown/scripts.pory"
+# 117 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
-# 116 "data//maps/FennilahlTown/scripts.pory"
+# 117 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
-# 116 "data//maps/FennilahlTown/scripts.pory"
+# 117 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 126 "data//maps/FennilahlTown/scripts.pory"
+# 127 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_Movement_1:
-# 126 "data//maps/FennilahlTown/scripts.pory"
+# 127 "data//maps/FennilahlTown/scripts.pory"
 	faceplayer
 	step_end
 
-# 131 "data//maps/FennilahlTown/scripts.pory"
+# 132 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_Movement_2:
-# 131 "data//maps/FennilahlTown/scripts.pory"
+# 132 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 131 "data//maps/FennilahlTown/scripts.pory"
+# 132 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 131 "data//maps/FennilahlTown/scripts.pory"
+# 132 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
 
@@ -240,25 +242,25 @@ FennilahlTown_EventScript_MartEmployeeRoadBlock_Text_0:
 	.string "speaking to the lab staff.$"
 
 FennilahlTown_EventScript_Man_Text_0:
-# 13 "data//maps/FennilahlTown/scripts.pory"
+# 14 "data//maps/FennilahlTown/scripts.pory"
 	.string "I was watching the news the other day.\n"
 	.string "They say that the Pokemon\l"
 	.string "Psychologist has gone missing. Who?\l"
 	.string "Professor Tenebris of course!$"
 
 FennilahlTown_EventScript_Woman_Text_0:
-# 21 "data//maps/FennilahlTown/scripts.pory"
+# 22 "data//maps/FennilahlTown/scripts.pory"
 	.string "If your {PKMN} hold a SOOTHE BELL, they'll\n"
 	.string "become attached to you faster!$"
 
 FennilahlTown_EventScript_Woman_Text_1:
-# 23 "data//maps/FennilahlTown/scripts.pory"
+# 24 "data//maps/FennilahlTown/scripts.pory"
 	.string "My, that's such a cute little {PKMN} you\n"
 	.string "have with you! Here, use this and treat\l"
 	.string "it with care, okay?$"
 
 Fennilahl_Breech_StartQuest_Text_0:
-# 43 "data//maps/FennilahlTown/scripts.pory"
+# 44 "data//maps/FennilahlTown/scripts.pory"
 	.string "I found a STRANGE ROCK in the caves\n"
 	.string "south of town, but a small PINK {PKMN} took\l"
 	.string "it and ran away! And I don't have any\l"
@@ -268,41 +270,41 @@ Fennilahl_Breech_StartQuest_Text_0:
 	.string "out?$"
 
 Fennilahl_Breech_StartQuest_Text_1:
-# 46 "data//maps/FennilahlTown/scripts.pory"
+# 47 "data//maps/FennilahlTown/scripts.pory"
 	.string "Amazing! You've answered my prayers. I\n"
 	.string "saw the pink {PKMN} run down south,\l"
 	.string "towards ROUTE 2. I really liked that\l"
 	.string "STRANGE ROCK! Please bring it back.$"
 
 Fennilahl_Breech_StartQuest_Text_2:
-# 50 "data//maps/FennilahlTown/scripts.pory"
+# 51 "data//maps/FennilahlTown/scripts.pory"
 	.string "Oh, what will I do!$"
 
 Fennilahl_Breech_QuestInProgress_Text_0:
-# 60 "data//maps/FennilahlTown/scripts.pory"
+# 61 "data//maps/FennilahlTown/scripts.pory"
 	.string "You brought my STRANGE ROCK? Amazing!\n"
 	.string "How can I thank you for this?$"
 
 Fennilahl_Breech_QuestInProgress_Text_1:
-# 61 "data//maps/FennilahlTown/scripts.pory"
+# 62 "data//maps/FennilahlTown/scripts.pory"
 	.string "A CLEFAIRY was keeping it? This is the\n"
 	.string "CLEFAIRY? And it's been following you\l"
 	.string "around because it can't let go of the\l"
 	.string "rock?$"
 
 Fennilahl_Breech_QuestInProgress_Text_2:
-# 65 "data//maps/FennilahlTown/scripts.pory"
+# 66 "data//maps/FennilahlTown/scripts.pory"
 	.string "CLEFAIRY: clee!!!$"
 
 Fennilahl_Breech_QuestInProgress_Text_3:
-# 66 "data//maps/FennilahlTown/scripts.pory"
+# 67 "data//maps/FennilahlTown/scripts.pory"
 	.string "Ouch! CLEFAIRY stop! Haha! Alright\n"
 	.string "alright, you come along with me then.\l"
 	.string "But you're not my {PKMN} okay? I don't like\l"
 	.string "battling. You'll be my hiking partner!$"
 
 Fennilahl_Breech_QuestInProgress_Text_4:
-# 67 "data//maps/FennilahlTown/scripts.pory"
+# 68 "data//maps/FennilahlTown/scripts.pory"
 	.string "Thank you trainer! My name is BREECH.\n"
 	.string "I'm just a simple man who loves\l"
 	.string "collecting rocks. Even with CLEFAIRY by\l"
@@ -311,36 +313,36 @@ Fennilahl_Breech_QuestInProgress_Text_4:
 	.string "mountains now. See you again soon!$"
 
 Fennilahl_Breech_QuestInProgress_Text_5:
-# 78 "data//maps/FennilahlTown/scripts.pory"
+# 79 "data//maps/FennilahlTown/scripts.pory"
 	.string "Why do bad things happen to me?$"
 
 FennilahlTown_Sign_Entrance_Text_0:
-# 97 "data//maps/FennilahlTown/scripts.pory"
+# 98 "data//maps/FennilahlTown/scripts.pory"
 	.string "FENNILAHL TOWN\n"
 	.string "Connecting Mt. Ceram and Vine River.$"
 
 FennilahlTown_Sign_Route2_Text_0:
-# 102 "data//maps/FennilahlTown/scripts.pory"
+# 103 "data//maps/FennilahlTown/scripts.pory"
 	.string "{DOWN_ARROW}ROUTE 2\n"
 	.string "Connecting to Vine River.$"
 
 FennilahlTown_Sign_Route3_Text_0:
-# 107 "data//maps/FennilahlTown/scripts.pory"
+# 108 "data//maps/FennilahlTown/scripts.pory"
 	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
 	.string "To Route 3 and GASTREE CITY.$"
 
 FennilahlTown_Budew_Text_0:
-# 118 "data//maps/FennilahlTown/scripts.pory"
+# 119 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems to want something...$"
 
 FennilahlTown_Budew_Text_1:
-# 124 "data//maps/FennilahlTown/scripts.pory"
+# 125 "data//maps/FennilahlTown/scripts.pory"
 	.string "Give BUDEW an ORAN BERRY?$"
 
 FennilahlTown_Budew_Text_2:
-# 129 "data//maps/FennilahlTown/scripts.pory"
+# 130 "data//maps/FennilahlTown/scripts.pory"
 	.string "{PLAYER} gave BUDEW an ORAN BERRY.$"
 
 FennilahlTown_Budew_Text_3:
-# 133 "data//maps/FennilahlTown/scripts.pory"
+# 134 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems happy!$"

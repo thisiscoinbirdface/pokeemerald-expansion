@@ -1855,6 +1855,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_HOYA_RIVER_NORTH",
+      "name": "Hoya River North",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_HOYA_RIVER_SOUTH",
+      "name": "Hoya River South",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_HOYA_RIVER_NORTH",
-      "offset": 26,
+      "offset": 27,
       "direction": "up"
     },
     {
       "map": "MAP_HOYA_RIVER_SOUTH",
-      "offset": 94,
+      "offset": 92,
       "direction": "left"
     }
   ],
