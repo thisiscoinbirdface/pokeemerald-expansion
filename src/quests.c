@@ -210,9 +210,9 @@ static const u32 sQuestMenuTilemap[] =
 
 //Strings used for the Quest Menu
 static const u8 sText_Empty[] = _("");
-static const u8 sText_AllHeader[] = _("All Missions");
-static const u8 sText_InactiveHeader[] = _("Inactive Missions");
-static const u8 sText_ActiveHeader[] = _("Active Missions");
+static const u8 sText_AllHeader[] = _("All Quests");
+static const u8 sText_InactiveHeader[] = _("Inactive Quests");
+static const u8 sText_ActiveHeader[] = _("Active Quests");
 static const u8 sText_RewardHeader[] = _("Reward Available");
 static const u8 sText_CompletedHeader[] =
       _("Completed Missions");

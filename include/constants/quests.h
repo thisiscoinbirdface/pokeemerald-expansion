@@ -30,7 +30,7 @@
 // quest number defines
 #define QUEST_LAB_FIRST_DAY             0
 #define QUEST_DREAMSTONE_MYSTERIES      1
-#define QUEST_POKEMON_RANGER      2
+#define QUEST_POKEMON_RANGER            2
 #define QUEST_ROUTE1_PECHA_BERRY        3
 #define QUEST_FENNILAHL_HIKER           4
 #define QUEST_GASTREE_SKITTY            5
