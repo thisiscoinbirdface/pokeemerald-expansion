@@ -3,11 +3,7 @@ mapscripts Route1_MapScripts {}
 script Route1_EventScripts_RandomDude {
     lockall
     faceplayer
-    msgbox(
-        format(
-            "I saw two detectives pass by here and one younger detective with a CHARCADET! Where do you get those, I wonder..."
-        )
-    )
+    msgbox(format("A {PKMN} that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"))
     releaseall
 }
 
