@@ -1374,7 +1374,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_46:
 	.string "assistant's got some guts. {PLAYER},\l"
 	.string "we're counting on you and KOHLA to get\l"
 	.string "the dreamstone while we track\l"
-	.string "Professor Tenebris. RUE, do you know\l"
+	.string "PROFESSOR TENEBRIS. RUE, do you know\l"
 	.string "anything of the whereabouts of the\l"
 	.string "other dreamstones?$"
 
@@ -1418,7 +1418,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_1:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_2:
 # 331 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "The Tenebris Lab has gifted you a\n"
+	.string "The TENEBRIS LAB has gifted you a\n"
 	.string "GOTHITA!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0:
@@ -1427,7 +1427,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_1:
 # 365 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "The Tenebris Lab has gifted you a\n"
+	.string "The TENEBRIS LAB has gifted you a\n"
 	.string "TIMBURR!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0:
@@ -1436,7 +1436,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_1:
 # 399 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "The Tenebris Lab has gifted you a\n"
+	.string "The TENEBRIS LAB has gifted you a\n"
 	.string "ZIGZAGOON!$"
 
 NicknamePartyMon_Text_0:
@@ -1462,7 +1462,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0:
 # 472 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm so grateful we have Assistant\n"
 	.string "Professor Rue. Without him to step in\l"
-	.string "for Professor Tenebris, we'd have had\l"
+	.string "for PROFESSOR TENEBRIS, we'd have had\l"
 	.string "to shut the lab down.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:

@@ -1133,7 +1133,7 @@ void GoToHandleInput(void) {
 static void HeatStartMenu_HandleInput_DPADDOWN(void) {
   switch (menuSelected) {
     case MENU_OPTIONS:
-      PlaySE(SE_SELECT);    
+      PlaySE(SE_SELECT);
       sHeatStartMenu->flag = 0;
       menuSelected = 0;
       HeatStartMenu_UpdateMenuName();
@@ -1144,7 +1144,7 @@ static void HeatStartMenu_HandleInput_DPADDOWN(void) {
       PlaySE(SE_SELECT);
       if (FlagGet(FLAG_SYS_POKEDEX_GET) == FALSE && menuSelected == MENU_POKEDEX) {
         menuSelected++;
-      } 
+      }
       if (FlagGet(FLAG_SYS_POKEMON_GET) == FALSE && menuSelected == MENU_PARTY) {
         menuSelected++;
       }

@@ -105,8 +105,8 @@ CarabrueTown_Chikorita::
 CarabrueTown_EventScript_PoliceRoadBlock_Text_0:
 # 10 "data//maps/CarabrueTown/scripts.pory"
 	.string "Sorry, this road is temporarily closed.\n"
-	.string "We're investigating Professor Tenebris'\l"
-	.string "disappearance.$"
+	.string "We're investigating PROFESSOR\l"
+	.string "TENEBRIS' disappearance.$"
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_1:
 # 16 "data//maps/CarabrueTown/scripts.pory"
@@ -137,9 +137,9 @@ CarabrueTown_EventScript_NPC1_Text_1:
 # 58 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those cops over\n"
 	.string "there? They came all the way from\l"
-	.string "Fennilahl Town to investigate the\l"
+	.string "FENNILAHL TOWN to investigate the\l"
 	.string "Professor's disappearance. They're\l"
-	.string "blocking access to Route 1 while they\l"
+	.string "blocking access to ROUTE 1 while they\l"
 	.string "investigate.$"
 
 CarabrueTown_EventScript_NPC2_Text_0:
