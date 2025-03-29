@@ -18,7 +18,7 @@ script WinterlilyHollow_NPC_Red{
     lockall
     faceplayer
     msgbox(format("Hello again, trainer! The gym is closed right now since the leader's gone up the mountain trying to fight some bad types that showed up."))
-    releasea
+    releaseall
     applymovement(4, moves(face_down))
 
     end
