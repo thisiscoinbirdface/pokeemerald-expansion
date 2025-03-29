@@ -5,7 +5,7 @@ mapscripts WinterlilyHollow_MapScripts{}
 //gym, mining minigame, surf mon quest?
 
 //NPCs
-//3 normals, 1 miner
+//3 normals, 1 miner, 1 red blocking the gym
 
 //Mons
 //mime jr, froslass, sneasler
@@ -14,35 +14,57 @@ mapscripts WinterlilyHollow_MapScripts{}
 
 //Houses - 3
 
+script WinterlilyHollow_NPC_Red{
+    lockall
+    faceplayer
+    msgbox(format("Hello again, trainer! The gym is closed right now since the leader's gone up the mountain trying to fight some bad types that showed up."))
+    releasea
+    applymovement(4, moves(face_down))
 
+    end
+}
 
 script WinterlilyHollow_NPC1{
     lockall
     faceplayer
-    msgbox(format(""))
+
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
+        msgbox(format("Is VINIEL going to be able to handle all those Team Somber grunts alone? I wish we could help but he's far stronger than any of us. We'd only get in the way!"))
+    } else {
+        msgbox(format("WINTERLILY HOLLOW is so remote that we don't even get electricity! VINIEL's {PKMN} powers this town.")) 
+    }
+
     releaseall
     end
 }
 script WinterlilyHollow_NPC2{
     lockall
     faceplayer
-    msgbox(format(""))
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
+        msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."))
+    } else {
+        msgbox(format("")) 
+    }
     releaseall
     end
 }
 script WinterlilyHollow_NPC3{
     lockall
     faceplayer
-    msgbox(format(""))
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's there behind the Pokemart now."))
+    } else {
+        msgbox(format("")) 
+    }
     releaseall
     end
 }
 
-script WinterlilyHollow_Cetoddle{
+script WinterlilyHollow_MimeJr{
     lockall
     faceplayer
-    playmoncry(SPECIES_CETODDLE, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
+    msgbox(format("MIME JR looks so terribly sad...can anything cheer it up?"))
     releaseall
     end
 }
@@ -50,7 +72,7 @@ script WinterlilyHollow_Froslass{
     lockall
     faceplayer
     playmoncry(SPECIES_FROSLASS, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format("FROSLASS is circling the statue...which looks like FROSLASS statue! Is there a connection?"))
     releaseall
     end
 }
@@ -58,7 +80,7 @@ script WinterlilyHollow_Sneasler{
     lockall
     faceplayer
     playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format("SNEASLER seems to be trying to dig into the wall with limited success. Don't give up, SNEASLER!"))
     releaseall
     end
 }

@@ -71,7 +71,7 @@ script MirrohPeak_EventScript_Viniel{
     release
     applymovement(LOCALID_VINIEL, moves(emote_exclamation_mark))
     waitmovement(0) 
-    msgbox(format("VINIEL: That was a terrible taunt! Didn't they teach you how to taunt at taunting school?"))
+    msgbox(format("VINIEL: That was a terrible taunt! Didn't...didn't they teach you how to taunt at taunting school?"))
     release
     delay(30)
     applymovement(11, moves(emote_exclamation_mark face_down))
@@ -85,10 +85,12 @@ script MirrohPeak_EventScript_Viniel{
 
     msgbox(format("VINIEL: Who are you? Are you another grunt? C'mon, AMPHAROS and I can take all six of you together!"))
     release    
-    applymovement(17, moves(emote_question_mark))    
+    applymovement(17, moves(emote_question_mark))  
+    waitmovement(0)  
     msgbox(format("GRUNT: Wait...isn't that the trainer who beat MELEA in SILVERSUN CITY?"))
     release
-    applymovement(11, moves(emote_exclamation_mark face_down))    
+    applymovement(14, moves(emote_exclamation_mark))
+    waitmovement(0)    
     msgbox(format("GRUNT: Yeah, it is! And also MOXIE at MT CERAM!\pGRUNT: Yikes - someone better tell go them!"))
     release
     applymovement(19, moves(jump_in_place_down))
@@ -99,8 +101,8 @@ script MirrohPeak_EventScript_Viniel{
     waitmovement(0)
     removeobject(19)    
 
-    applymovement(LOCALID_VINIEL, moves(emote_question_mark))    
-    msgbox(format("VINIEL: So you're an enemy of theirs, then, are you?\pVINIEL: An enemy of an enemy is a friend!\pVINIEL: Trainer, these Team Somber people suddenly came out of nowhere and sstarted harrassing the people of WINTERLILY HOLLOW. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
+    applymovement(LOCALID_VINIEL, moves(emote_question_mark))
+    msgbox(format("VINIEL: So you're an enemy of theirs, then, are you?\pVINIEL: An enemy of an enemy is a friend!\pVINIEL: Trainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the people of WINTERLILY HOLLOW. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
     release
     delay(16)
     playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
@@ -119,6 +121,13 @@ script MirrohPeak_EventScript_Viniel{
     setflag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)
 
 
+    releaseall
+    end
+}
+
+script MirrohPeak_GruntsVSViniel_GenericDialogue{
+    lockall
+    msgbox(format("GRUNT: Even with the four of us together, its so hard! Guess that's why he's a Gym Leader.\pVINIEL: That all you got, grunts?"))
     releaseall
     end
 }
