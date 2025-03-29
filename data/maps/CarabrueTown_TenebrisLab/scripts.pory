@@ -216,7 +216,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
 
         //Rival comes in (Wally)
-        playbgm(MUS_ENCOUNTER_MAY, FALSE)
+        playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
         msgbox(format("???: Wait right there!"))    
         addobject(10)
         applymovement(10, moves(walk_fast_up * 10 face_left))

@@ -323,7 +323,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies::
 # 216 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 219 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, FALSE
+	playbgm MUS_RG_ENCOUNTER_RIVAL, FALSE
 # 220 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_33
 # 221 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
