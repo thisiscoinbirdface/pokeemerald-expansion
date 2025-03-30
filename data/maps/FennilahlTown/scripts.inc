@@ -166,7 +166,7 @@ FennilahlTown_Budew::
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_2
 FennilahlTown_Budew_1:
-# 138 "data//maps/FennilahlTown/scripts.pory"
+# 140 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
