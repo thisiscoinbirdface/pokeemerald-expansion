@@ -307,7 +307,7 @@ const u32 gTrainerBackPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/
 const u32 gTrainerPalette_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.gbapal.lz");
 
 const u32 gTrainerFrontPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.4bpp.lz");
-const u32 gTrainerBackpPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking_back.4bpp.lz");
+const u32 gTrainerBackPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking_back.4bpp.lz");
 const u32 gTrainerPalette_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.gbapal.lz");
 
 //NPCS AND OTHER CHARACTERS
