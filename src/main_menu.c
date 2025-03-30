@@ -1773,7 +1773,7 @@ static void NewGameBirchSpeech_StartAllCharactersFadeIn(u8 taskId)
             gTasks[taskId].tPlayerSpriteId = spriteIdAll[3];
             gTasks[taskId].tPlayerGender = MUNUCU;
             NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
-            NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
+//            NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForPlayerFadeIn;
             
         }
@@ -2004,6 +2004,10 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
     {
         gSprites[gTasks[taskId].tBrendanSpriteId].invisible = TRUE;
         gSprites[gTasks[taskId].tMaySpriteId].invisible = TRUE;
+        gSprites[gTasks[taskId].tMunucuSpriteId].invisible = TRUE;
+        gSprites[gTasks[taskId].tShububuSpriteId].invisible = TRUE;
+        gSprites[gTasks[taskId].tGubukingSpriteId].invisible = TRUE;
+
         spriteId = gTasks[taskId].tBirchSpriteId;
         gSprites[spriteId].x = 136;
         gSprites[spriteId].y = 60;
