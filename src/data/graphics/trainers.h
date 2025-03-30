@@ -297,6 +297,20 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 
 
 //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
+//CUSTOM CHARACTERS
+const u32 gTrainerFrontPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.4bpp.lz");
+const u32 gTrainerBackPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu_back.4bpp.lz");
+const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.gbapal.lz");
+
+const u32 gTrainerFrontPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.4bpp.lz");
+const u32 gTrainerBackPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu_back.4bpp.lz");
+const u32 gTrainerPalette_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.gbapal.lz");
+
+const u32 gTrainerFrontPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.4bpp.lz");
+const u32 gTrainerBackpPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking_back.4bpp.lz");
+const u32 gTrainerPalette_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.gbapal.lz");
+
+//NPCS AND OTHER CHARACTERS
 const u32 gTrainerFrontPic_SomberGruntF[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_f.4bpp.lz");
 const u32 gTrainerPalette_SomberGruntF[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt.gbapal.lz");
 
@@ -432,6 +446,12 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
 
     //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
+    //CUSTOM CHARACTERS
+    TRAINER_SPRITE(TRAINER_PIC_MUNUCU, gTrainerFrontPic_Munucu, gTrainerPalette_Munucu),
+    TRAINER_SPRITE(TRAINER_PIC_SHUBUBU, gTrainerFrontPic_Shububu, gTrainerPalette_Shububu),
+    TRAINER_SPRITE(TRAINER_PIC_GUBUKING, gTrainerFrontPic_Gubuking, gTrainerPalette_Gubuking),
+    
+
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_F, gTrainerFrontPic_SomberGruntF, gTrainerPalette_SomberGruntF),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_M, gTrainerFrontPic_SomberGruntM, gTrainerPalette_SomberGruntM),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_DUO, gTrainerFrontPic_SomberGruntDuo, gTrainerPalette_SomberGruntDuo),
@@ -562,6 +582,33 @@ const struct SpriteFrameImage gTrainerBackPicTable_Steven[] =
     {gTrainerBackPic_Steven + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
 };
 
+
+//CUSTOM CHARACTERS
+const struct SpriteFrameImage gTrainerBackPicTable_Munucu[] =
+{
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+
+const struct SpriteFrameImage gTrainerBackPicTable_Shububu[] =
+{
+    {gTrainerBackPic_Shububu + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Shububu + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Shububu + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Shububu + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+
+const struct SpriteFrameImage gTrainerBackPicTable_Gubuking[] =
+{
+    {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+
+
 // .backPic goes functionally unused, since none of these pics are compressed
 // and the place they would get extracted to gets overwritten later anyway
 // the casts are so they'll play nice with the strict struct definition
@@ -584,4 +631,9 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY, 4, gTrainerBackPic_RubySapphireMay, gTrainerBackPicTable_RubySapphireMay, gTrainerPalette_RubySapphireMay, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_WALLY, 4, gTrainerBackPic_Wally, gTrainerBackPicTable_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerBackPicTable_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
+
+    //Custom characters
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_SHUBUBU, 4, gTrainerBackPic_Shububu, gTrainerBackPicTable_Shububu, gTrainerPalette_Shububu, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 4, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Hoenn),
 };
