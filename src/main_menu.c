@@ -247,6 +247,25 @@ static void MainMenu_FormatSavegameTime(void);
 static void MainMenu_FormatSavegameBadges(void);
 static void NewGameBirchSpeech_CreateDialogueWindowBorder(u8, u8, u8, u8, u8, u8);
 
+
+
+
+
+
+
+
+//My custom functions here
+//draw all 5 characters
+static void NewGameBirchSpeech_ResetAllCharacters(u8 taskId);
+static void NewGameBirchSpeech_DrawAllCharacters(u8 TaskId);
+s8 NewGameBirchSpeech_Gender_ProcessInput(void);
+static u8 sCurrentCharacter = 0;
+static void NewGameBirchSpeech_StartAllCharactersFadeIn(u8 taskId);
+
+
+
+
+
 // .rodata
 
 static const u16 sBirchSpeechBgPals[][16] = {
@@ -473,6 +492,8 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 {
     sSpriteAffineAnim_PlayerShrink
 };
+
+
 
 static const struct MenuAction sMenuActions_Gender[] = {
     {COMPOUND_STRING("BOY"), {NULL}},
@@ -1528,7 +1549,10 @@ static void Task_NewGameBirchSpeech_SlidePlatformAway(u8 taskId)
     else
     {
         gTasks[taskId].tBG1HOFS = -60;
-        gTasks[taskId].func = Task_NewGameBirchSpeech_StartPlayerFadeIn;
+
+        gTasks[taskId].func = NewGameBirchSpeech_StartAllCharactersFadeIn;
+        //OLD
+        //gTasks[taskId].func = Task_NewGameBirchSpeech_StartPlayerFadeIn;
     }
 }
 
@@ -1580,14 +1604,14 @@ static void Task_NewGameBirchSpeech_WaitToShowGenderMenu(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
-        NewGameBirchSpeech_ShowGenderMenu();
+       // NewGameBirchSpeech_ShowGenderMenu();
         gTasks[taskId].func = Task_NewGameBirchSpeech_ChooseGender;
     }
 }
 
 static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
 {
-    int gender = NewGameBirchSpeech_ProcessGenderMenuInput();
+    int gender = NewGameBirchSpeech_Gender_ProcessInput();
     int gender2;
 
 
@@ -1625,16 +1649,199 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
             gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
             break;
     }
-    gender2 = Menu_GetCursorPos();
+    gender2 = sCurrentCharacter;
 
     if (gender2 != gTasks[taskId].tPlayerGender)
     {
         gTasks[taskId].tPlayerGender = gender2;
         gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 0);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_SlideOutOldGenderSprite;
+        
+        //My code
+        gTasks[taskId].func = NewGameBirchSpeech_DrawAllCharacters;
+
+        //This was the original
+        // NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 0);
+        // gTasks[taskId].func = Task_NewGameBirchSpeech_SlideOutOldGenderSprite;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//HERE I AM GOING TO MAKE CUSTOM DISPLAY FUNCTIONS FOR CUSTOM CHARACTERS ON ONE SCREEN
+//Here I try to replace the slide in and out (so just use the u8 TaskId format)
+static void NewGameBirchSpeech_ResetAllCharacters(u8 taskId)
+{
+
+}
+
+static void NewGameBirchSpeech_DrawAllCharacters(u8 taskId)
+{   
+    //This is gonna be the main selected sprite
+    u8 spriteId = gTasks[taskId].tPlayerSpriteId; 
+    u8 i;
+
+    //This is all 5 sprites
+    // u8 spriteId1 = gTasks[taskId].tBrendanSpriteId;
+    // u8 spriteId2 = gTasks[taskId].tMaySpriteId;
+    // u8 spriteId3 = gTasks[taskId].tMunucuSpriteId;
+    // u8 spriteId4 = gTasks[taskId].tShububuSpriteId;
+    // u8 spriteId5 = gTasks[taskId].tGubukingSpriteId;
+
+    u8 spriteIdAll[5] = 
+    { 
+        gTasks[taskId].tBrendanSpriteId,
+        gTasks[taskId].tMaySpriteId,
+        gTasks[taskId].tMunucuSpriteId,
+        gTasks[taskId].tShububuSpriteId,
+        gTasks[taskId].tGubukingSpriteId,
+    };
+
+    //Now draw all the characters
+    for (i = 0; i < 5; i++)
+    {
+        gSprites[spriteIdAll[i]].x = 24 + (i * 46);
+        gSprites[spriteIdAll[i]].y = 68;
+        gSprites[spriteIdAll[i]].invisible = FALSE;
+
+        if (sCurrentCharacter == i)
+        {
+            gSprites[spriteIdAll[i]].y = 68;
+            gSprites[spriteIdAll[i]].oam.objMode = ST_OAM_OBJ_BLEND;             
+        }
+        else 
+        {
+            gSprites[spriteIdAll[i]].y = 60;
+            gSprites[spriteIdAll[i]].oam.objMode = ST_OAM_OBJ_NORMAL;
+
+        }
+    }
+
+    //Move to the next function
+    gTasks[taskId].func = Task_NewGameBirchSpeech_ChooseGender;
+
+}
+
+//Here is the code to fade all sprites in at the very beginning
+static void NewGameBirchSpeech_StartAllCharactersFadeIn(u8 taskId)
+{
+    if (gTasks[taskId].tIsDoneFadingSprites)
+    {
+        gSprites[gTasks[taskId].tBirchSpriteId].invisible = TRUE;
+        gSprites[gTasks[taskId].tLotadSpriteId].invisible = TRUE;
+        if (gTasks[taskId].tTimer)
+        {
+            gTasks[taskId].tTimer--;
+        }
+        else
+        {
+            //This is gonna be the main selected sprite
+            u8 spriteId = gTasks[taskId].tPlayerSpriteId; 
+            u8 i;
+
+            u8 spriteIdAll[5] = 
+            { 
+                gTasks[taskId].tBrendanSpriteId,
+                gTasks[taskId].tMaySpriteId,
+                gTasks[taskId].tMunucuSpriteId,
+                gTasks[taskId].tShububuSpriteId,
+                gTasks[taskId].tGubukingSpriteId,
+            };
+
+
+            //Now draw all the characters
+            for (i = 0; i < 5; i++)
+            {
+                gSprites[spriteIdAll[i]].x = 24 + (i * 46);
+                gSprites[spriteIdAll[i]].y = 60;
+                gSprites[spriteIdAll[i]].invisible = FALSE;
+                gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;        
+            }
+
+            gTasks[taskId].tPlayerSpriteId = spriteIdAll[3];
+            gTasks[taskId].tPlayerGender = MUNUCU;
+            NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
+            NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForPlayerFadeIn;
+            
+        }
+    }
+}
+
+//Here I make a selection function
+s8 NewGameBirchSpeech_Gender_ProcessInput(void)
+{
+    u8 oldPos = sCurrentCharacter;
+
+    if (JOY_NEW(A_BUTTON))
+    {
+            PlaySE(SE_SELECT);
+            return sCurrentCharacter;
+    }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        return MENU_B_PRESSED;
+    }
+    else if (JOY_REPEAT(DPAD_ANY) == DPAD_LEFT)
+    {
+        sCurrentCharacter -= 1;
+
+        if (sCurrentCharacter == 255)
+            sCurrentCharacter = 4;
+
+        if (oldPos != sCurrentCharacter)
+            PlaySE(SE_SELECT);
+        return sCurrentCharacter;
+    }
+    else if (JOY_REPEAT(DPAD_ANY) == DPAD_RIGHT)
+    {
+        sCurrentCharacter += 1;        
+        
+        if (sCurrentCharacter > 4)
+            sCurrentCharacter = 0;
+
+        if (oldPos != sCurrentCharacter)
+            PlaySE(SE_SELECT);
+        return sCurrentCharacter;
+    }
+
+    
+
+    return MENU_NOTHING_CHOSEN;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8 taskId)
 {
@@ -2089,7 +2296,7 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[shububuSpriteId].invisible = TRUE;
     gSprites[shububuSpriteId].oam.priority = 0;
     gTasks[taskId].tShububuSpriteId = shububuSpriteId;   
-    gubukingSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_MUNUCU), 120, 60, 0, NULL);
+    gubukingSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_GUBUKING), 120, 60, 0, NULL);
     gSprites[gubukingSpriteId].callback = SpriteCB_Null;
     gSprites[gubukingSpriteId].invisible = TRUE;
     gSprites[gubukingSpriteId].oam.priority = 0;
