@@ -251,6 +251,25 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuFishi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuUnderwater;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShububuUnderwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingUnderwater;
+
+
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Trader;
@@ -514,6 +533,23 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MUNUCU_FISHING] =           &gObjectEventGraphicsInfo_MunucuFishing,
     [OBJ_EVENT_GFX_MUNUCU_WATERING] =          &gObjectEventGraphicsInfo_MunucuWatering,
 
+    [OBJ_EVENT_GFX_SHUBUBU_NORMAL] =            &gObjectEventGraphicsInfo_ShububuNormal,
+    [OBJ_EVENT_GFX_SHUBUBU_MACH_BIKE] =         &gObjectEventGraphicsInfo_ShububuMachBike,
+    [OBJ_EVENT_GFX_SHUBUBU_ACRO_BIKE] =         &gObjectEventGraphicsInfo_ShububuAcroBike,
+    [OBJ_EVENT_GFX_SHUBUBU_SURFING] =           &gObjectEventGraphicsInfo_ShububuSurfing,
+    [OBJ_EVENT_GFX_SHUBUBU_UNDERWATER] =        &gObjectEventGraphicsInfo_ShububuUnderwater,
+    [OBJ_EVENT_GFX_SHUBUBU_FIELD_MOVE] =        &gObjectEventGraphicsInfo_ShububuFieldMove,
+    [OBJ_EVENT_GFX_SHUBUBU_FISHING] =           &gObjectEventGraphicsInfo_ShububuFishing,
+    [OBJ_EVENT_GFX_SHUBUBU_WATERING] =          &gObjectEventGraphicsInfo_ShububuWatering,
+
+    [OBJ_EVENT_GFX_GUBUKING_NORMAL] =            &gObjectEventGraphicsInfo_GubukingNormal,
+    [OBJ_EVENT_GFX_GUBUKING_MACH_BIKE] =         &gObjectEventGraphicsInfo_GubukingMachBike,
+    [OBJ_EVENT_GFX_GUBUKING_ACRO_BIKE] =         &gObjectEventGraphicsInfo_GubukingAcroBike,
+    [OBJ_EVENT_GFX_GUBUKING_SURFING] =           &gObjectEventGraphicsInfo_GubukingSurfing,
+    [OBJ_EVENT_GFX_GUBUKING_UNDERWATER] =        &gObjectEventGraphicsInfo_GubukingUnderwater,
+    [OBJ_EVENT_GFX_GUBUKING_FIELD_MOVE] =        &gObjectEventGraphicsInfo_GubukingFieldMove,
+    [OBJ_EVENT_GFX_GUBUKING_FISHING] =           &gObjectEventGraphicsInfo_GubukingFishing,
+    [OBJ_EVENT_GFX_GUBUKING_WATERING] =          &gObjectEventGraphicsInfo_GubukingWatering,
 
 };
 

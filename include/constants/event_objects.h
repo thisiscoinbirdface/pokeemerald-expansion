@@ -253,11 +253,28 @@
 #define OBJ_EVENT_GFX_MUNUCU_FISHING             248
 #define OBJ_EVENT_GFX_MUNUCU_WATERING            249
 
+#define OBJ_EVENT_GFX_SHUBUBU_NORMAL              250
+#define OBJ_EVENT_GFX_SHUBUBU_MACH_BIKE           251
+#define OBJ_EVENT_GFX_SHUBUBU_ACRO_BIKE           252
+#define OBJ_EVENT_GFX_SHUBUBU_SURFING             253
+#define OBJ_EVENT_GFX_SHUBUBU_UNDERWATER          254
+#define OBJ_EVENT_GFX_SHUBUBU_FIELD_MOVE          255
+#define OBJ_EVENT_GFX_SHUBUBU_FISHING             256
+#define OBJ_EVENT_GFX_SHUBUBU_WATERING            257
+
+#define OBJ_EVENT_GFX_GUBUKING_NORMAL              258
+#define OBJ_EVENT_GFX_GUBUKING_MACH_BIKE           259
+#define OBJ_EVENT_GFX_GUBUKING_ACRO_BIKE           260
+#define OBJ_EVENT_GFX_GUBUKING_SURFING             261
+#define OBJ_EVENT_GFX_GUBUKING_UNDERWATER          262
+#define OBJ_EVENT_GFX_GUBUKING_FIELD_MOVE          263
+#define OBJ_EVENT_GFX_GUBUKING_FISHING             264
+#define OBJ_EVENT_GFX_GUBUKING_WATERING            265
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        250
+#define NUM_OBJ_EVENT_GFX                        266
 
 
 // These are dynamic object gfx ids.
