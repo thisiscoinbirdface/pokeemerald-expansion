@@ -241,6 +241,16 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TMHMBall;
 
+//CUSTOM CHARACTERS
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuWatering;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MunucuUnderwater;
+
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Trader;
@@ -492,6 +502,19 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_TMHM_BALL] =                &gObjectEventGraphicsInfo_TMHMBall,
+
+
+    //CUSTOM CHARACTERS
+    [OBJ_EVENT_GFX_MUNUCU_NORMAL] =            &gObjectEventGraphicsInfo_MunucuNormal,
+    [OBJ_EVENT_GFX_MUNUCU_MACH_BIKE] =         &gObjectEventGraphicsInfo_MunucuMachBike,
+    [OBJ_EVENT_GFX_MUNUCU_ACRO_BIKE] =         &gObjectEventGraphicsInfo_MunucuAcroBike,
+    [OBJ_EVENT_GFX_MUNUCU_SURFING] =           &gObjectEventGraphicsInfo_MunucuSurfing,
+    [OBJ_EVENT_GFX_MUNUCU_UNDERWATER] =        &gObjectEventGraphicsInfo_MunucuUnderwater,
+    [OBJ_EVENT_GFX_MUNUCU_FIELD_MOVE] =        &gObjectEventGraphicsInfo_MunucuFieldMove,
+    [OBJ_EVENT_GFX_MUNUCU_FISHING] =           &gObjectEventGraphicsInfo_MunucuFishing,
+    [OBJ_EVENT_GFX_MUNUCU_WATERING] =          &gObjectEventGraphicsInfo_MunucuWatering,
+
+
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

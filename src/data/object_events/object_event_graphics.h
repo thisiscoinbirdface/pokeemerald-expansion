@@ -459,3 +459,46 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+
+//custom characters
+//MUNUCU
+const u32 gObjectEventPic_MunucuNormalRunning[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/walking.4bpp", "graphics/object_events/pics/custom/munucu/running.4bpp");
+const u16 gObjectEventPal_Munucu[] = INCBIN_U16("graphics/object_events/pics/custom/munucu/walking.gbapal");
+const u16 gObjectEventPal_MunucuReflection[] = INCBIN_U16("graphics/object_events/palettes/brendan_reflection.gbapal");
+const u32 gObjectEventPic_MunucuFieldMove[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/field_move.4bpp");
+const u32 gObjectEventPic_MunucuSurfing[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/surfing.4bpp");
+const u32 gObjectEventPic_MunucuMachBike[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/mach_bike.4bpp");
+const u32 gObjectEventPic_MunucuAcroBike[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/acro_bike.4bpp");
+const u32 gObjectEventPic_MunucuFishing[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/fishing.4bpp");
+const u32 gObjectEventPic_MunucuWatering[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/watering.4bpp");
+const u32 gObjectEventPic_MunucuDecorating[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/decorating.4bpp");
+const u32 gObjectEventPic_MunucuUnderwater[] = INCBIN_U32("graphics/object_events/pics/custom/munucu/underwater.4bpp");
+
+//SHUBUBU
+const u32 gObjectEventPic_ShububuNormalRunning[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/walking.4bpp", "graphics/object_events/pics/custom/shububu/running.4bpp");
+const u16 gObjectEventPal_Shububu[] = INCBIN_U16("graphics/object_events/pics/custom/shububu/walking.gbapal");
+const u16 gObjectEventPal_ShububuReflection[] = INCBIN_U16("graphics/object_events/palettes/brendan_reflection.gbapal");
+const u32 gObjectEventPic_ShububuFieldMove[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/field_move.4bpp");
+const u32 gObjectEventPic_ShububuSurfing[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/surfing.4bpp");
+const u32 gObjectEventPic_ShububuMachBike[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/mach_bike.4bpp");
+const u32 gObjectEventPic_ShububuAcroBike[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/acro_bike.4bpp");
+const u32 gObjectEventPic_ShububuFishing[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/fishing.4bpp");
+const u32 gObjectEventPic_ShububuWatering[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/watering.4bpp");
+const u32 gObjectEventPic_ShububuDecorating[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/decorating.4bpp");
+const u32 gObjectEventPic_ShububuUnderwater[] = INCBIN_U32("graphics/object_events/pics/custom/shububu/underwater.4bpp");
+
+//SHUBUBU
+const u32 gObjectEventPic_GubukingNormalRunning[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/walking.4bpp", "graphics/object_events/pics/custom/gubuking/running.4bpp");
+const u16 gObjectEventPal_Gubuking[] = INCBIN_U16("graphics/object_events/pics/custom/gubuking/walking.gbapal");
+const u16 gObjectEventPal_GubukingReflection[] = INCBIN_U16("graphics/object_events/palettes/brendan_reflection.gbapal");
+const u32 gObjectEventPic_GubukingFieldMove[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/field_move.4bpp");
+const u32 gObjectEventPic_GubukingSurfing[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/surfing.4bpp");
+const u32 gObjectEventPic_GubukingMachBike[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/mach_bike.4bpp");
+const u32 gObjectEventPic_GubukingAcroBike[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/acro_bike.4bpp");
+const u32 gObjectEventPic_GubukingFishing[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/fishing.4bpp");
+const u32 gObjectEventPic_GubukingWatering[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/watering.4bpp");
+const u32 gObjectEventPic_GubukingDecorating[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/decorating.4bpp");
+const u32 gObjectEventPic_GubukingUnderwater[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/underwater.4bpp");
+
+

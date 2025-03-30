@@ -244,10 +244,20 @@
 #define OBJ_EVENT_GFX_OW_MON                     240
 #define OBJ_EVENT_GFX_TMHM_BALL                  241
 
+#define OBJ_EVENT_GFX_MUNUCU_NORMAL              242
+#define OBJ_EVENT_GFX_MUNUCU_MACH_BIKE           243
+#define OBJ_EVENT_GFX_MUNUCU_ACRO_BIKE           244
+#define OBJ_EVENT_GFX_MUNUCU_SURFING             245
+#define OBJ_EVENT_GFX_MUNUCU_UNDERWATER          246
+#define OBJ_EVENT_GFX_MUNUCU_FIELD_MOVE          247
+#define OBJ_EVENT_GFX_MUNUCU_FISHING             248
+#define OBJ_EVENT_GFX_MUNUCU_WATERING            249
+
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        242
+#define NUM_OBJ_EVENT_GFX                        250
 
 
 // These are dynamic object gfx ids.
@@ -383,7 +393,10 @@
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
-#define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_MUNUCU                  0x1124    //dynamic pal used to be 0x1124
+#define OBJ_EVENT_PAL_TAG_SHUBUBU                 0x1125
+#define OBJ_EVENT_PAL_TAG_GUBUKING                0x1126
+#define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1127
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

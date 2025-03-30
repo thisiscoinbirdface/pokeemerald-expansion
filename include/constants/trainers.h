@@ -137,6 +137,13 @@
 #define TRAINER_BACK_PIC_WALLY                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
 
+//custom characters
+#define TRAINER_BACK_PIC_MUNUCU                  8
+#define TRAINER_BACK_PIC_SHUBUBU                 9
+#define TRAINER_BACK_PIC_GUBUKING                10
+
+
+
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1
 #define FACILITY_CLASS_PKMN_BREEDER_F        0x2

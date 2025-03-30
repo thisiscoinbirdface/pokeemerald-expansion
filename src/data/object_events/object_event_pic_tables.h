@@ -1364,3 +1364,204 @@ static const struct SpriteFrameImage sPicTable_KirliaOld[] = {
 static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 2, 4),
 };
+
+
+
+//CUSTOM CHARACTERS
+
+//Munucu
+
+static const struct SpriteFrameImage sPicTable_MunucuNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_MunucuNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_MunucuMachBike, 4, 4),
+};
+
+
+static const struct SpriteFrameImage sPicTable_MunucuAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_MunucuAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuSurfing[] = {
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MunucuSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuUnderwater[] = {
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_MunucuFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_MunucuFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MunucuWatering[] = {
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_MunucuWatering, 4, 4, 5),
+};
+
+
+//Shububu
+
+static const struct SpriteFrameImage sPicTable_GubukingNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_GubukingNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_GubukingMachBike, 4, 4),
+};
+
+
+static const struct SpriteFrameImage sPicTable_GubukingAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_GubukingAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingSurfing[] = {
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_GubukingSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingUnderwater[] = {
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_GubukingFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_GubukingFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_GubukingWatering[] = {
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_GubukingWatering, 4, 4, 5),
+};
+
+
+
+
+
+
+
+//Gubuking
+
+static const struct SpriteFrameImage sPicTable_ShububuNormal[] = {
+    overworld_ascending_frames(gObjectEventPic_ShububuNormalRunning, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_ShububuMachBike, 4, 4),
+};
+
+
+static const struct SpriteFrameImage sPicTable_ShububuAcroBike[] = {
+    overworld_ascending_frames(gObjectEventPic_ShububuAcroBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuSurfing[] = {
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_ShububuSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuUnderwater[] = {
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_ShububuFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_ShububuFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_ShububuWatering[] = {
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 0),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 2),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 4),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 1),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 3),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 5),
+    overworld_frame(gObjectEventPic_ShububuWatering, 4, 4, 5),
+};
+
+
+
+
