@@ -91,9 +91,9 @@
 #define FLAG_MIRROHBASECAMP_LEADER    0x4C // Unused Flag
 #define FLAG_MIRROHPEAK_MOXIE_DEFEATED    0x4D // defeat moxie at mirroh peak (before heading into Ceram)
 #define FLAG_MIRROHPEAK_VINIEL_CUTSCENE    0x4E // see the cutscene with viniel fighting off 4 grunts
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_MIRROHBASECAMP_HISTORIAN    0x4F // Unused Flag
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_HIDE_MIRROHBASECAMP_HISTORIAN  0x264 // to hide the old lady at home
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag

@@ -1,0 +1,36 @@
+mapscripts MirrohBaseCamp_Houses_MapScripts{}
+
+//first convo outside the graveyard, where she says she knows about dreamstones, and shes excited that you went to the past.
+
+script MirrohBaseCamp_Houses_Historian{
+    lockall
+    faceplayer
+
+    if flag(FLAG__MIRROHBASECAMP_HISTORIAN){
+        msgbox(format("MARTHA: Why hello child, how are you?"))
+    } else {
+        msgbox(format("MARTHA: Yes, child. Tell me. What's the story?\p...\p...\p..."))
+        applymovement(1, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("MARTHA: I see...so this Team Somber wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
+        release
+        delay(16)
+        applymovement(1, moves(face_right))
+        waitmovement(0)
+        delay(30)
+        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent. Fearsome {PKMN} fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
+        release
+        delay(30)
+        applymovement(1, moves(faceplayer))
+        waitmovement(0)
+        delay(30)
+        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent. Fearsome {PKMN} fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
+        release
+        
+    }
+
+
+    releaseall
+    end
+}
