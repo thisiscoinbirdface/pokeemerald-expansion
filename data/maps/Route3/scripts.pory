@@ -68,6 +68,7 @@ script Route3_NPC2{
 
 
 script Route3_Skarmory_Trigger{
+    if (flag(FLAG_ROUTE3_SKARMORY_WILD)) {end}
     lockall
     faceplayer
     playmoncry(SPECIES_SKARMORY, CRY_MODE_NORMAL)
@@ -92,7 +93,7 @@ script Route3_Skarmory_Battle{
     msgbox(format("The wild SKARMORY roars and attacks!"))
     release
 
-    setwildbattle(SPECIES_SKARMORY, 2)
+    setwildbattle(SPECIES_SKARMORY, 18)
     dowildbattle
 
     //result
