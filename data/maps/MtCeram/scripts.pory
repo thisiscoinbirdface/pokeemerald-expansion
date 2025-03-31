@@ -13,7 +13,54 @@ mapscripts MtCeram_MapScripts {}
 
 
 
+//The Charizard
+script MtCeram_Charizard{
+    lockall
+    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
 
+    if (var(VAR_RESULT) == 1){
+            //excadrill encounter
+            msgbox(format("..."))
+            release
+            applymovement(18, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(30)
+            applymovement(18, moves(face_left))
+            waitmovement(0)
+            delay(30)
+            applymovement(18, moves(face_right))
+            waitmovement(0)
+            delay(30)
+            applymovement(18, moves(face_down))
+            waitmovement(0)
+            delay(16)
+            playmoncry(SPECIES_CHARIZARD, CRY_MODE_ENCOUNTER)
+            delay(40)
+            waitmoncry
+            msgbox(format("The CHARIZARD is furious!"))
+            setwildbattle(SPECIES_CHARIZARD, 50)     
+            dowildbattle  
+
+            //result
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            if (var(VAR_RESULT) == B_OUTCOME_WON){
+                removeobject(18)
+                setflag(FLAG_CERAM_CHARIZARD)
+            }
+            if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+                removeobject(18)
+                setflag(FLAG_CERAM_CHARIZARD)
+            }            
+            if (var(VAR_RESULT) == B_OUTCOME_RAN){
+                msgbox(format("The CHARIZARD grunts and falls back asleep. Better not disturb it again!"))
+                release
+            }
+        } else {
+            release
+        }
+    releaseall
+    end
+}
 
 
 

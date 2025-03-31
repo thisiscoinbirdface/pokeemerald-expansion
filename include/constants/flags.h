@@ -166,7 +166,7 @@
 #define FLAG_ROUTE3_SKARMORY_WILD  0x2A8 // mawile wild set encounter
 #define FLAG_ROUTE4_DEWPIDER_ATTACK  0x2A9 // trigger the attack
 #define FLAG_ROUTE4_DEWPIDER_FINISHED  0x2AA // complete the quest one way or another
-#define FLAG_UNUSED_0x2AB  0x2AB // Unused Flag
+#define FLAG_CERAM_CHARIZARD  0x2AB // catch or defeat the charizard on top of mt. ceram
 #define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
 #define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
 #define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
