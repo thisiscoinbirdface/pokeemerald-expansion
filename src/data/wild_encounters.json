@@ -12416,7 +12416,7 @@
           "map": "MAP_VILETHORN_WOODS",
           "base_label": "gVilethornWoods0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 17,
