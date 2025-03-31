@@ -1040,14 +1040,12 @@ F_TRAINER_FEMALE |
 #line 481
         .trainerName = _("TANNER"),
 #line 482
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 483
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_EMPLOYEE,
         .encounterMusic_gender =
-#line 484
-F_TRAINER_FEMALE | 
 #line 485
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 486
         .doubleBattle = FALSE,
 #line 487
@@ -1074,14 +1072,12 @@ F_TRAINER_FEMALE |
 #line 494
         .trainerName = _("BRON"),
 #line 495
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 496
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_EMPLOYEE,
         .encounterMusic_gender =
-#line 497
-F_TRAINER_FEMALE | 
 #line 498
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 499
         .doubleBattle = FALSE,
 #line 500
@@ -1119,14 +1115,12 @@ F_TRAINER_FEMALE |
 #line 511
         .trainerName = _("JORDI"),
 #line 512
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 513
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_EMPLOYEE,
         .encounterMusic_gender =
-#line 514
-F_TRAINER_FEMALE | 
 #line 515
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 516
         .doubleBattle = FALSE,
 #line 517
@@ -1153,16 +1147,16 @@ F_TRAINER_FEMALE |
 #line 524
         .trainerName = _("ALBA"),
 #line 525
-        .trainerClass = TRAINER_CLASS_EXPERT,
+        .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 526
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerPic = TRAINER_PIC_EMPLOYEE,
         .encounterMusic_gender =
 #line 528
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 529
         .doubleBattle = FALSE,
 #line 530
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
