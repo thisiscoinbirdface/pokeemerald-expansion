@@ -31,7 +31,7 @@ script MirrohBaseCamp_Houses_Historian{
         msgbox(format("MARTHA: Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this helps you in your journey.\pYou should go to MT MIRROH and see the cave painting for yourself. As for me, I must get back to my reading..."))
         release
 
-        subquestmenu()
+        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_CORMORIA_HISTORY, SUB_QUEST_1) 
         setflag(FLAG_MIRROHBASECAMP_HISTORIAN)
         setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
     }

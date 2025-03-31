@@ -1509,7 +1509,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest4_Name3[] = _("???");
     const u8 gText_SubQuest4_Name4[] = _("???");
 
-    const u8 gText_SubQuest4_Desc1[] = _("???");
+    const u8 gText_SubQuest4_Desc1[] = _("First I need to talk to Martha the Historian.\nShe lives at the MIRROH BASE CAMP and\nShe's famous for her knowledge of history!");
     const u8 gText_SubQuest4_Desc2[] = _("???");
     const u8 gText_SubQuest4_Desc3[] = _("???");
     const u8 gText_SubQuest4_Desc4[] = _("???");
