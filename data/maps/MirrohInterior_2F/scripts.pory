@@ -1,10 +1,18 @@
 mapscripts MirrohInterior_2F_MapScripts{}
 
-
+//MAIN: walking wake painting
 //7 trainers
 //3 NPCs
 
+script MirrohInterior_2F_CavePainting_WalkingWake{
+    lockall
+    showmonpic(SPECIES_WALKING_WAKE, 10, 3)
+    waitbuttonpress
+    hidemonpic
 
+    releaseall
+    end
+}
 
 
 

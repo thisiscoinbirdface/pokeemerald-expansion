@@ -1505,14 +1505,18 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
 
     //CORMORIA HISTORY (ONGOING BIG SIDE QUEST)
     const u8 gText_SubQuest4_Name1[] = _("Martha the Historian");
-    const u8 gText_SubQuest4_Name2[] = _("???");
-    const u8 gText_SubQuest4_Name3[] = _("???");
-    const u8 gText_SubQuest4_Name4[] = _("???");
+    const u8 gText_SubQuest4_Name2[] = _("Mt Mirroh Cave Painting");
+    const u8 gText_SubQuest4_Name3[] = _("Mt Ceram Cave Painting");
+    const u8 gText_SubQuest4_Name4[] = _("Glimmering Trench Cave Painting");
 
     const u8 gText_SubQuest4_Desc1[] = _("First I need to talk to Martha the Historian.\nShe lives at the MIRROH BASE CAMP and\nShe's famous for her knowledge of history!");
-    const u8 gText_SubQuest4_Desc2[] = _("???");
-    const u8 gText_SubQuest4_Desc3[] = _("???");
-    const u8 gText_SubQuest4_Desc4[] = _("???");
+    const u8 gText_SubQuest4_Desc2[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of MT MIRROH. Could it\nbe related to Team Somber's goals?");
+    const u8 gText_SubQuest4_Desc3[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of MT CERAM. Perhaps its tied\nto the Professor's disappearance?");
+    const u8 gText_SubQuest4_Desc4[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of the GLIMMERING TRENCH. Is\nthis the final piece of the puzzle?");
 
 
 
+
+
+
+    
