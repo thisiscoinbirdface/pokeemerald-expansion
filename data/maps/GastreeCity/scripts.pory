@@ -137,8 +137,11 @@ script GastreeCity_NPC8{
 script GastreeCity_NPC9{
     lockall
     faceplayer    
-    msgbox(format(""))
-    release
+    msgbox(format("Yo, trainer! Come here. What's the most useful move a {PKMN} can learn?"))
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ERUPTION", "QUIVER DANCE", "EXPANDING FORCE", "EARTHQUAKE")        
+    msgbox(format("Nope - trick question! It's SPLASH!\p...\pNo, seriously. Most people think it's useless, but if you have HM SPLASH, your {PKMN} can hop onto rocks in the water like the one here. But you need at least one Gym Badge to be able to use HMs."))
+    releaseall
+    end
 }
 
 

@@ -54,6 +54,7 @@
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "item.h"
 
 // this file was known as evobjmv.c in Game Freak's original source
 
@@ -9570,7 +9571,10 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 z)
     direction--;
     behavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (sLedgeJumpBehaviors[direction](behavior) || MetatileBehavior_IsOmnidirectionalJump(behavior))
+    if (sLedgeJumpBehaviors[direction](behavior))
+        return direction + 1;
+
+    if (MetatileBehavior_IsAquaStepJump(behavior) && CheckBagHasItem(ITEM_HM01, 1))
         return direction + 1;
 
     return DIR_NONE;
