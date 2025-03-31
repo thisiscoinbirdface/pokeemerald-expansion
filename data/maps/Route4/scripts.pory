@@ -95,14 +95,24 @@ script Route4_TrainerBattle_Jenny {
     //The Kids Trio
     script Route4_TrainerBattle_Kid1 {
         trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout and now you're going to pay!"), format("Waah!"))
-        msgbox(format("It's summer break so we play here all day until the sun goes down!"))
+
+        if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
+            msgbox(format("Eek! It's the DEWPIDER!"))
+        } else {
+            msgbox(format("It's summer break so we play here all day until the sun goes down!"))
+        }
         release
         end
     }
 
     script Route4_TrainerBattle_Kid2 {
         trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
-        msgbox(format("Our secret hideout is really cool, don't you think?"))
+
+        if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
+            msgbox(format("Someone help the boss! The DEWPIDER is attacking him!"))
+        } else {
+            msgbox(format("Our secret hideout is really cool, don't you think?"))
+        }       
         release
         end
     }
@@ -120,7 +130,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("You have proved your worth, old one. You may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 
             setflag(FLAG_ROUTE4_KIDGANG)
-            msgbox(format("...\p...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I want...I want to be outside all day!"))  
+            msgbox(format("...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I'm not scared of any DEWPIDERS. I want...I want to be outside all day!"))  
         }
         releaseall
         end
@@ -141,7 +151,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("Aaahhh!! Help!!!!"))
             release
 
-            setobjectxy(22, 9, 23)
+            setobjectxyperm(22, 9, 23)
             setflag(FLAG_ROUTE4_DEWPIDER_ATTACK)
             releaseall
             end
@@ -155,6 +165,8 @@ script Route4_TrainerBattle_Jenny {
         faceplayer
         playmoncry(SPECIES_DEWPIDER, CRY_MODE_NORMAL)
         delay(16)
+        msgbox(format("It's the DEWPIDER!"))
+        release        
 
         setwildbattle(SPECIES_DEWPIDER, 15)
         dowildbattle
@@ -162,10 +174,12 @@ script Route4_TrainerBattle_Jenny {
         //result
         specialvar(VAR_RESULT, GetBattleOutcome)
         if (var(VAR_RESULT) == B_OUTCOME_WON){
+            removeobject(22)
             setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
             goto(Route4_Dewpider_Defeated)
         }
         if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+            removeobject(22)            
             setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
             goto(Route4_Dewpider_Defeated)            
         }            
@@ -207,6 +221,7 @@ script Route4_NPC_Couple1{
     faceplayer
     msgbox(format("What a lovely view!\pThe lake is nice too..."))
     releaseall
+    warp(MAP_ROUTE4, 19, 40)
 }
 
 script Route4_NPC_Couple2{
@@ -228,7 +243,17 @@ script Route4_NPC_A{
 script Route4_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Mom told me to come here and get my little brother. He's such a brat! Everyone knows its dangerous to play here because of the DEWPIDER. But he just runs out and comes here anyway!"))
+
+    if (flag(FLAG_ROUTE4_DEWPIDER_FINISHED)){
+        msgbox(format("My brother's gone home now. Finally!"))
+    } else {
+        if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
+            msgbox(format("What was that cry? It sounded like my stupid brother. Hah! He's only getting what he deserves."))
+        } else {
+            msgbox(format("Mom told me to come here and get my little brother. He's such a brat! Everyone knows its dangerous to play here because of the DEWPIDER. But he just runs out and comes here anyway!"))
+        }
+    }
+
     releaseall
 }
 

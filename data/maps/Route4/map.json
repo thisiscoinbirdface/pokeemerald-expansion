@@ -114,7 +114,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_NPC_B",
-      "flag": "0"
+      "flag": "FLAG_ROUTE4_DEWPIDER_FINISHED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
