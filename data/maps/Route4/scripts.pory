@@ -133,7 +133,72 @@ script Route4_TrainerBattle_Jenny {
     }
 
 
+    //Dewpider trigger
+    script Route4_Dewpider_Trigger{
+        if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)) {end}
+        if (flag(FLAG_ROUTE4_KIDGANG)) {
+            lockall
+            msgbox(format("Aaahhh!! Help!!!!"))
+            release
 
+            setobjectxy(22, 9, 23)
+            setflag(FLAG_ROUTE4_DEWPIDER_ATTACK)
+            releaseall
+            end
+        } else {
+            end
+        }
+    }
+
+    script Route4_Dewpider{
+        lockall
+        faceplayer
+        playmoncry(SPECIES_DEWPIDER, CRY_MODE_NORMAL)
+        delay(16)
+
+        setwildbattle(SPECIES_DEWPIDER, 15)
+        dowildbattle
+
+        //result
+        specialvar(VAR_RESULT, GetBattleOutcome)
+        if (var(VAR_RESULT) == B_OUTCOME_WON){
+            setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
+            goto(Route4_Dewpider_Defeated)
+        }
+        if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+            setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
+            goto(Route4_Dewpider_Defeated)            
+        }            
+        if (var(VAR_RESULT) == B_OUTCOME_RAN){
+            msgbox(format("The DEWPIDER snaps at you before turning around."))
+            release
+            delay(12)
+            applymovement(22, moves(face_up))
+            delay(12)
+            msgbox(format("Will the kids just be left like this?"))
+            release
+        }
+    }
+
+    script Route4_Dewpider_Defeated{
+        lockall
+        applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
+        waitmovement(0)
+        delay(12)
+        msgbox(format("You saved us! Thank you. We were so scared!\p...\pI'll go home. I can't let my friends be hurt by the DEWPIDER."))
+        release
+        applymovement(1, moves(walk_down jump_in_place_down emote_exclamation_mark))
+        waitmovement(0)        
+        delay(12)
+        msgbox(format("C'mon gang! Let's go."))
+        release
+
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        removeobject(2)
+        removeobject(3)
+        fadescreen(FADE_FROM_BLACK)
+    }
 
 
 //NPCs
@@ -163,7 +228,7 @@ script Route4_NPC_A{
 script Route4_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Mom told me to come here and get my little brother. He's such a brat! He plays outside all day and comes home late every evening."))
+    msgbox(format("Mom told me to come here and get my little brother. He's such a brat! Everyone knows its dangerous to play here because of the DEWPIDER. But he just runs out and comes here anyway!"))
     releaseall
 }
 

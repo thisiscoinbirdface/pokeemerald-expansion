@@ -68,96 +68,101 @@ Route3_NPC2::
 
 Route3_Skarmory_Trigger::
 # 71 "data//maps/Route3/scripts.pory"
-	lockall
+	goto_if_set FLAG_ROUTE3_SKARMORY_WILD, Route3_Skarmory_Trigger_2
 # 72 "data//maps/Route3/scripts.pory"
-	faceplayer
+	lockall
 # 73 "data//maps/Route3/scripts.pory"
-	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
+	faceplayer
 # 74 "data//maps/Route3/scripts.pory"
-	applymovement 13, Route3_Skarmory_Trigger_Movement_0
+	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
 # 75 "data//maps/Route3/scripts.pory"
-	waitmovement 0
+	applymovement 13, Route3_Skarmory_Trigger_Movement_0
 # 76 "data//maps/Route3/scripts.pory"
-	delay 16
+	waitmovement 0
 # 77 "data//maps/Route3/scripts.pory"
+	delay 16
+# 78 "data//maps/Route3/scripts.pory"
 	msgbox Route3_Skarmory_Trigger_Text_0
-# 79 "data//maps/Route3/scripts.pory"
+# 80 "data//maps/Route3/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 81 "data//maps/Route3/scripts.pory"
+# 82 "data//maps/Route3/scripts.pory"
 	releaseall
+	end
+
+Route3_Skarmory_Trigger_2:
 	end
 
 
 Route3_Skarmory_Battle::
-# 86 "data//maps/Route3/scripts.pory"
-	lockall
 # 87 "data//maps/Route3/scripts.pory"
-	faceplayer
+	lockall
 # 88 "data//maps/Route3/scripts.pory"
-	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
+	faceplayer
 # 89 "data//maps/Route3/scripts.pory"
-	applymovement 13, Route3_Skarmory_Trigger_Movement_0
+	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
 # 90 "data//maps/Route3/scripts.pory"
-	waitmovement 0
+	applymovement 13, Route3_Skarmory_Trigger_Movement_0
 # 91 "data//maps/Route3/scripts.pory"
-	delay 16
+	waitmovement 0
 # 92 "data//maps/Route3/scripts.pory"
-	msgbox Route3_Skarmory_Battle_Text_0
+	delay 16
 # 93 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Skarmory_Battle_Text_0
+# 94 "data//maps/Route3/scripts.pory"
 	release
-# 95 "data//maps/Route3/scripts.pory"
-	setwildbattle SPECIES_SKARMORY, 2
 # 96 "data//maps/Route3/scripts.pory"
+	setwildbattle SPECIES_SKARMORY, 18
+# 97 "data//maps/Route3/scripts.pory"
 	dowildbattle
-# 99 "data//maps/Route3/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
 # 100 "data//maps/Route3/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 101 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route3_Skarmory_Battle_2
 Route3_Skarmory_Battle_1:
-# 105 "data//maps/Route3/scripts.pory"
+# 106 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route3_Skarmory_Battle_5
 Route3_Skarmory_Battle_4:
-# 110 "data//maps/Route3/scripts.pory"
+# 111 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route3_Skarmory_Battle_8
 Route3_Skarmory_Battle_7:
-# 115 "data//maps/Route3/scripts.pory"
+# 116 "data//maps/Route3/scripts.pory"
 	releaseall
 	end
 
 Route3_Skarmory_Battle_2:
-# 101 "data//maps/Route3/scripts.pory"
-	removeobject 13
 # 102 "data//maps/Route3/scripts.pory"
-	setflag FLAG_ROUTE3_SKARMORY_WILD
+	removeobject 13
 # 103 "data//maps/Route3/scripts.pory"
+	setflag FLAG_ROUTE3_SKARMORY_WILD
+# 104 "data//maps/Route3/scripts.pory"
 	releaseall
 	goto Route3_Skarmory_Battle_1
 
 Route3_Skarmory_Battle_5:
-# 106 "data//maps/Route3/scripts.pory"
-	removeobject 13
 # 107 "data//maps/Route3/scripts.pory"
-	setflag FLAG_ROUTE3_SKARMORY_WILD
+	removeobject 13
 # 108 "data//maps/Route3/scripts.pory"
+	setflag FLAG_ROUTE3_SKARMORY_WILD
+# 109 "data//maps/Route3/scripts.pory"
 	releaseall
 	goto Route3_Skarmory_Battle_4
 
 Route3_Skarmory_Battle_8:
-# 111 "data//maps/Route3/scripts.pory"
-	msgbox Route3_Skarmory_Battle_Text_1
 # 112 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Skarmory_Battle_Text_1
+# 113 "data//maps/Route3/scripts.pory"
 	release
 	goto Route3_Skarmory_Battle_7
 
 
-# 74 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 Route3_Skarmory_Trigger_Movement_0:
-# 74 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 	emote_exclamation_mark
-# 74 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 	jump_in_place_left
 	step_end
 
@@ -229,16 +234,16 @@ Route3_NPC2_Text_0:
 	.string "I don't think this is where it starts.$"
 
 Route3_Skarmory_Trigger_Text_0:
-# 77 "data//maps/Route3/scripts.pory"
+# 78 "data//maps/Route3/scripts.pory"
 	.string "SKARMORY stares defiantly at you. It\n"
 	.string "roars! Could be dangerous to approach.$"
 
 Route3_Skarmory_Battle_Text_0:
-# 92 "data//maps/Route3/scripts.pory"
+# 93 "data//maps/Route3/scripts.pory"
 	.string "The wild SKARMORY roars and attacks!$"
 
 Route3_Skarmory_Battle_Text_1:
-# 111 "data//maps/Route3/scripts.pory"
+# 112 "data//maps/Route3/scripts.pory"
 	.string "The SKARMORY preens its steely\n"
 	.string "feathers victoriously. Better not\l"
 	.string "disturb it again!$"

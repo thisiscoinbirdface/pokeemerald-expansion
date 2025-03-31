@@ -666,8 +666,10 @@ GastreeCity_EventScript_KohlaBattle_Trigger_Text_0:
 GastreeCity_NPC1_Text_0:
 # 66 "data//maps/GastreeCity/scripts.pory"
 	.string "You came all the way from CARABRUE\n"
-	.string "TOWN? Woah! I've always wanted to go\l"
-	.string "there.$"
+	.string "TOWN? Woah! Then I bet you don't know -\l"
+	.string "be careful on ROUTE 4! There's a\l"
+	.string "dangerouns DEWPIDER that attacks\l"
+	.string "people.$"
 
 GastreeCity_NPC3_Text_0:
 # 73 "data//maps/GastreeCity/scripts.pory"

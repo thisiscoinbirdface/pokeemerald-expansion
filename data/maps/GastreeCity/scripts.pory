@@ -63,7 +63,7 @@ text GastreeCity_KohlaPostBattle{
 script GastreeCity_NPC1{
     lockall
     faceplayer    
-    msgbox(format("You came all the way from CARABRUE TOWN? Woah! I've always wanted to go there."))
+    msgbox(format("You came all the way from CARABRUE TOWN? Woah! Then I bet you don't know - be careful on ROUTE 4! There's a dangerouns DEWPIDER that attacks people."))
     release
 }
 

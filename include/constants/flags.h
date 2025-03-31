@@ -164,8 +164,8 @@
 #define FLAG_GRETA_ROUTE5  0x2A6 // encounter with Greta on R5 - random items
 #define FLAG_FENNILAHL_BUDEW_GET  0x2A7 // get the budew by offering 3 oran berries
 #define FLAG_ROUTE3_SKARMORY_WILD  0x2A8 // mawile wild set encounter
-#define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag
-#define FLAG_UNUSED_0x2AA  0x2AA // Unused Flag
+#define FLAG_ROUTE4_DEWPIDER_ATTACK  0x2A9 // trigger the attack
+#define FLAG_ROUTE4_DEWPIDER_FINISHED  0x2AA // complete the quest one way or another
 #define FLAG_UNUSED_0x2AB  0x2AB // Unused Flag
 #define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
 #define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
