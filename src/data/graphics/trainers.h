@@ -335,6 +335,19 @@ const u32 gTrainerPalette_CadetM[] = INCBIN_U32("graphics/trainers/my_trainers/c
 const u32 gTrainerFrontPic_Burglar[] = INCBIN_U32("graphics/trainers/my_trainers/burglar.4bpp.lz");
 const u32 gTrainerPalette_Burglar[] = INCBIN_U32("graphics/trainers/my_trainers/burglar.gbapal.lz");
 
+const u32 gTrainerFrontPic_Builder[] = INCBIN_U32("graphics/trainers/my_trainers/builder.4bpp.lz");
+const u32 gTrainerPalette_Builder[] = INCBIN_U32("graphics/trainers/my_trainers/builder.gbapal.lz");
+
+const u32 gTrainerFrontPic_Employee[] = INCBIN_U32("graphics/trainers/my_trainers/employee.4bpp.lz");
+const u32 gTrainerPalette_Employee[] = INCBIN_U32("graphics/trainers/my_trainers/employee.gbapal.lz");
+
+const u32 gTrainerFrontPic_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_trainers/bug_catcher_f.4bpp.lz");
+const u32 gTrainerPalette_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_trainers/bug_catcher_f.gbapal.lz");
+
+
+
+
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -460,6 +473,10 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_CADET_F, gTrainerFrontPic_CadetF, gTrainerPalette_CadetF),
     TRAINER_SPRITE(TRAINER_PIC_CADET_M, gTrainerFrontPic_CadetM, gTrainerPalette_CadetM),
     TRAINER_SPRITE(TRAINER_PIC_BURGLAR, gTrainerFrontPic_Burglar, gTrainerPalette_Burglar),
+    TRAINER_SPRITE(TRAINER_PIC_BUILDER, gTrainerFrontPic_Builder, gTrainerPalette_Builder),
+    TRAINER_SPRITE(TRAINER_PIC_EMPLOYEE, gTrainerFrontPic_Employee, gTrainerPalette_Employee),
+    TRAINER_SPRITE(TRAINER_PIC_BUG_CATCHER_F, gTrainerFrontPic_BugCatcherF, gTrainerPalette_BugCatcherF),
+
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

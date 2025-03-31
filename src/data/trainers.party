@@ -479,10 +479,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_A ===
 Name: TANNER
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
@@ -492,10 +492,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_B ===
 Name: BRON
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
@@ -509,10 +509,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_C ===
 Name: JORDI
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
@@ -522,12 +522,12 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_D ===
 Name: ALBA
-Class: Expert
-Pic: Expert M
+Class: Employee
+Pic: Employee
 Gender: Male
-Music: Intense
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
 Magby
 Level: 14
