@@ -52,18 +52,27 @@ script CeramBaseCampGym_GuardTrigger{
 script CeramBaseCampGym_EventScript_NPC_LetterPrint{
     lockall
     faceplayer
-    msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials. You have none? Well then a battle should prove that you really are who you say you are!"))
-    release
 
-    //battle
-    trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I lost")
+    if (checkitem(ITEM_APPOINTMENT_LETTER)){
+        if (flag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)){
+            msgbox(format("I'm busy now. Get out."))
+        } else {
+            msgbox(format("You'll have to get this letter signed by the assistant manager in the basement."))
+        }
+    } else {
+        msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials. You have none? Well then a battle should prove that you really are who you say you are!"))
+        release
 
-    //print letter
-    msgbox(format("Very good! Well then, let me do my job. Here you go!"))
-    //Get item
-    giveitem(ITEM_APPOINTMENT_LETTER)
-    //But you need a signature
-    msgbox(format("But this letter won't be enough without the approval of the assistant manager. He sits in the basement. Get this letter signed by him."))
+        //battle
+        trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I lost")
+
+        //print letter
+        msgbox(format("Very good! Well then, let me do my job. Here you go!"))
+        //Get item
+        giveitem(ITEM_APPOINTMENT_LETTER)
+        //But you need a signature
+        msgbox(format("But this letter won't be enough without the approval of the assistant manager. He sits in the basement. Get this letter signed by him."))
+    }
     releaseall
 }
 
@@ -81,12 +90,13 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
             msgbox(format("Will you slip the money under the table?"), MSGBOX_YESNO)
 
             if(var(VAR_RESULT) == 0){
-                release
+                hidemoneybox
                 msgbox(format("You'll have to do it the way everyone else does it then!"))
                 //battle
                 trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_D, "I wish you had just paid up!")                
             } else {
                 //remove money
+                hidemoneybox
                 removemoney(500)
                 msgbox(format("{PLAYER} bribed the assistant manager."))
                 release

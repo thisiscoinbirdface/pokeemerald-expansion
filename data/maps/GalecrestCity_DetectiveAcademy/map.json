@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 3,
       "y": 8,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 17,
       "y": 25,
       "elevation": 0,
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 6,
       "y": 41,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 1,
       "y": 44,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "FLAG_DETECTIVE_ACAD_BREECH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 25,
       "y": 44,
       "elevation": 0,
@@ -240,7 +240,7 @@
       "x": 3,
       "y": 44,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -253,7 +253,7 @@
       "x": 2,
       "y": 44,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

@@ -12,13 +12,13 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
     //Kohla stares blankly
     //Explains his past and motivations
-    msgbox(format("...\p...\p...\pKOHLA: I'm an orphan. As a child I learned to rely on myself.\pI saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
+    msgbox(format("...\p...\p...\pKOHLA: I saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
     release
     //Turns, thanks player for telling him what he needs
     applymovement(LOCALID_KOHLA, moves(face_up))
     waitmovement(0)
     delay(24)
-    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pStronger...at any cost."))
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
     release 
 
     //Start walking out
@@ -51,11 +51,12 @@ script GalecrestCity_DetectiveAcademy_Breech{
 script GalecrestCity_DetectiveAcademy_Clefairy{
     lockall
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
-    msgbox(format("CLEFAIRY is extremely focused on the teacher. A good student!"))
 
     if (flag(FLAG_GALECREST_CLEFAIRY_ITEM)){
-
+        msgbox(format("CLEFAIRY is extremely focused on the teacher. A good student!"))    
     } else {
+        msgbox(format("CLEFAIRY is extremely focused on the teacher. A good student!"))
+        release
         applymovement(17, moves(emote_exclamation_mark faceplayer))
         waitmovement(0)
         msgbox(format("CLEFAIRY hands you an item..."))
@@ -68,6 +69,7 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
     }
 
     releaseall
+    end
 }
 
 

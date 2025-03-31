@@ -143,11 +143,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KECKLEON)",
       "x": 36,
       "y": 30,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

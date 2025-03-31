@@ -433,6 +433,7 @@ script GalecrestCity_NPC_14{
         fadescreen(FADE_FROM_BLACK)
 
         setflag(FLAG_GALECREST_ROBBER)
+        setvar(VAR_GALECREST_RICH_PEARLS, 2)
     }
 
     releaseall

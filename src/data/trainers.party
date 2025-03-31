@@ -984,12 +984,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_VILETHORN_H ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
+Name: TYRONE
+Class: Burglar
+Pic: Burglar
 Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Music: Suspicious
+Double Battle: No
 AI: Check Bad Move
 
 Nickit

@@ -135,10 +135,21 @@ script FennilahlTown_Budew{
         } else {
 
         }
+    } else {
+
     }
 
     releaseall
     end
 }
+
+
+
+
+
+
+
+
+
 
 
