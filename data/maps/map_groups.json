@@ -3,6 +3,7 @@
     "gMapGroup_MyMaps",
     "gMapGroup_Phase2",
     "gMapGroup_Phase3",
+    "gMapGroup_Phase4",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -129,9 +130,12 @@
     "WinterlilyHollow_PokemonCenter",
     "WinterlilyHollow_Pokemart",
     "WinterlilyHollow_Houses",
-    "WinterlilyHollowGym",
+    "WinterlilyHollowGym"
+  ],
+  "gMapGroup_Phase4": [
     "LilyPond",
-    "IvyRiver",
+    "IvyRiver",    
+    "IvyRiver_ResearchFacility",
     "IvyRiver_Main",
     "IveRiver_Caves"
   ],

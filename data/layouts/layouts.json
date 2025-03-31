@@ -5320,6 +5320,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/GalecrestCity_Leader_Basement/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCity_Leader_Basement/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVY_RIVER_RESEARCH_FACILITY",
+      "name": "IvyRiver_ResearchFacility_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/IvyRiver_ResearchFacility/border.bin",
+      "blockdata_filepath": "data/layouts/IvyRiver_ResearchFacility/map.bin"
     }
   ]
 }

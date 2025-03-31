@@ -70,7 +70,6 @@ script SilversunCity_OnFrame{
             setflag(FLAG_HIDE_SILVERSUN_PROF)
             setflag(FLAG_SILVERSUN_NEXTQUEST)
             subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_5) 
-            startquest(QUEST_CORMORIA_HISTORY)
 
             //End
             releaseall
