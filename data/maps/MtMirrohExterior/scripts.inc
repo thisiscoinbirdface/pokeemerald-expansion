@@ -207,7 +207,7 @@ MtMirrohExterior_Medicham::
 # 101 "data//maps/MtMirrohExterior/scripts.pory"
 MtMirrohExterior_NPC_D_Movement_0:
 # 101 "data//maps/MtMirrohExterior/scripts.pory"
-	faceplayer
+	emote_exclamation_mark
 	step_end
 
 # 104 "data//maps/MtMirrohExterior/scripts.pory"

@@ -98,7 +98,7 @@ script MtMirrohExterior_NPC_D{
     lockall
     msgbox(format("Hang in there CONKELDURR!"))
     release
-    applymovement(12, moves(faceplayer))
+    applymovement(12, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
     applymovement(12, moves(face_right))
@@ -120,7 +120,7 @@ script MtMirrohExterior_NPC_E{
     faceplayer
     msgbox(format("Finish this, TOXICROAK!"))
     release
-    applymovement(13, moves(faceplayer))
+    applymovement(13, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
     applymovement(13, moves(face_right))

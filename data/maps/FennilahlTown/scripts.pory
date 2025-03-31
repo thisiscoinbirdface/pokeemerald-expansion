@@ -113,17 +113,12 @@ script FennilahlTown_Sign_Route3{
 script FennilahlTown_Budew{
     lockall
 
-
-    if (var(VAR_FENNILAHL_BUDEW) == 3){
-
-    }
-
     if (var(VAR_FENNILAHL_BUDEW) == 2){
-        
+        goto(FennilahlTown_Budew_ThirdBerry)        
     }
 
     if (var(VAR_FENNILAHL_BUDEW) == 1){
-        
+        goto(FennilahlTown_Budew_SecondBerry)        
     }
 
     if (var(VAR_FENNILAHL_BUDEW) == 0){
@@ -148,7 +143,7 @@ script FennilahlTown_Budew_FirstBerry{
         msgbox(format("Give BUDEW an ORAN BERRY?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_ORAN_BERRY)
-            applymovement(8, moves(faceplayer))   
+            faceplayer  
             waitmovement(0)
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW an ORAN BERRY."), MSGBOX_SIGN)
@@ -161,10 +156,10 @@ script FennilahlTown_Budew_FirstBerry{
             setvar(VAR_FENNILAHL_BUDEW, 1)
 
         } else {
-
+        msgbox(format("BUDEW seems disappointed..."))
+        release
         }
     } else {
-        msgbox(format("BUDEW seems disappointed..."))
         release
     }
 
@@ -185,7 +180,7 @@ script FennilahlTown_Budew_SecondBerry{
         msgbox(format("Give BUDEW a PECHA BERRY?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_PECHA_BERRY)
-            applymovement(8, moves(faceplayer))   
+            faceplayer 
             waitmovement(0)
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW a PECHA BERRY."), MSGBOX_SIGN)
@@ -198,10 +193,10 @@ script FennilahlTown_Budew_SecondBerry{
             setvar(VAR_FENNILAHL_BUDEW, 2)
 
         } else {
-
+        msgbox(format("BUDEW seems disappointed..."))
+        release
         }
     } else {
-        msgbox(format("BUDEW seems disappointed..."))
         release
     }
 
@@ -214,7 +209,7 @@ script FennilahlTown_Budew_ThirdBerry{
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(8, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("BUDEW seems to want something again..."))
+    msgbox(format("What could BUDEW want now?"))
     release
 
     checkitem(ITEM_RAWST_BERRY)
@@ -222,7 +217,7 @@ script FennilahlTown_Budew_ThirdBerry{
         msgbox(format("Give BUDEW a RAWST BERRY?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_RAWST_BERRY)
-            applymovement(8, moves(faceplayer))   
+            faceplayer 
             waitmovement(0)
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW a RAWST BERRY."), MSGBOX_SIGN)
@@ -237,10 +232,10 @@ script FennilahlTown_Budew_ThirdBerry{
             goto(FennilahlTown_Budew_JoinParty)
 
         } else {
-
+        msgbox(format("BUDEW seems disappointed..."))
+        release
         }
     } else {
-        msgbox(format("BUDEW seems disappointed..."))
         release
     }
 
@@ -256,9 +251,11 @@ script FennilahlTown_Budew_JoinParty{
     release
     delay(16)
     msgbox(format("BUDEW nudges the Pokeballs on your belt. It seems to want to join your party! Will you become BUDEW's trainer?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == ){
+    if (var(VAR_RESULT) == 1){
         removeobject(8)
         givemon(SPECIES_BUDEW, 5)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox(format("The BUDEW has joined your party!\pWelcome, BUDEW! Let's get along well together!"))
     } else {
         applymovement(8, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
         removeobject(8)

@@ -163,10 +163,6 @@ SilversunCity_Houses_DuskullNPC1_1:
 SilversunCity_Houses_DuskullNPC1_2:
 # 122 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 123 "data//maps/SilversunCity_Houses/scripts.pory"
-	applymovement 6, SilversunCity_Houses_DuskullNPC1_Movement_0
-# 124 "data//maps/SilversunCity_Houses/scripts.pory"
-	applymovement 7, SilversunCity_Houses_DuskullNPC1_Movement_0
 # 125 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
 # 126 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -192,10 +188,6 @@ SilversunCity_Houses_Husband_1:
 SilversunCity_Houses_Husband_2:
 # 138 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 139 "data//maps/SilversunCity_Houses/scripts.pory"
-	applymovement 6, SilversunCity_Houses_DuskullNPC1_Movement_0
-# 140 "data//maps/SilversunCity_Houses/scripts.pory"
-	applymovement 7, SilversunCity_Houses_DuskullNPC1_Movement_0
 # 141 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
 # 142 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -229,12 +221,6 @@ SilversunCity_Houses_Munchlax::
 SilversunCity_Houses_Artist_Movement_0:
 # 52 "data//maps/SilversunCity_Houses/scripts.pory"
 	emote_exclamation_mark
-	step_end
-
-# 123 "data//maps/SilversunCity_Houses/scripts.pory"
-SilversunCity_Houses_DuskullNPC1_Movement_0:
-# 123 "data//maps/SilversunCity_Houses/scripts.pory"
-	faceplayer
 	step_end
 
 SilversunCity_Houses_Smeargle_Text_0:
