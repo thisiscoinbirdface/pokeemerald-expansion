@@ -172,8 +172,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 52,
-      "y": 44,
+      "x": 13,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -182,19 +182,6 @@
       "trainer_sight_or_berry_tree_id": "ITEM_BIG_MUSHROOM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VILETHORN_D"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 55,
-      "y": 35,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_LEAF_STONE",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_VILETHORN_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -299,6 +286,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VilethornWoods_EventScript_DemoEnd",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RALTS)",
+      "x": 29,
+      "y": 35,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VILETHORN_RALTS_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RALTS)",
+      "x": 55,
+      "y": 35,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VILETHORN_RALTS_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RALTS)",
+      "x": 53,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VilethornWoods_Ralts",
+      "flag": "FLAG_HIDE_VILETHORN_RALTS_3"
     }
   ],
   "warp_events": [
@@ -361,6 +387,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "VilethornWoods_EventScript_TriggerProf"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VilethornWoods_Ralts_FirstTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VilethornWoods_Ralts_FirstTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 55,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VilethornWoods_Ralts_SecondTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VilethornWoods_Ralts_SecondTrigger"
     }
   ],
   "bg_events": [

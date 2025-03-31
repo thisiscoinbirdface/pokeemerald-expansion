@@ -1965,9 +1965,9 @@ F_TRAINER_FEMALE |
 #line 848
         .trainerName = _("YENI"),
 #line 849
-        .trainerClass = TRAINER_CLASS_EXPERT,
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 850
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
 #line 851
 F_TRAINER_FEMALE | 

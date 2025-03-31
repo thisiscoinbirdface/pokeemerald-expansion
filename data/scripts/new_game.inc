@@ -295,7 +295,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SILVERSUN_PROF
 	setflag FLAG_HIDE_SILVERSUN_DUSKULL_NPCS
 	setflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
-
+	setflag FLAG_HIDE_VILETHORN_RALTS_2
+	setflag FLAG_HIDE_VILETHORN_RALTS_3
 
 
 	call EventScript_ResetAllBerries

@@ -24,8 +24,82 @@ script VilethornWoods_EventScript_DemoEnd{
 
 
 
+///RALTS - teleports twice, third time you can encounter it
+//flags :FLAG_HIDE_VILETHORN_RALTS_1, _2, _3 
+script VilethornWoods_Ralts_FirstTrigger{
+    if (flag(FLAG_HIDE_VILETHORN_RALTS_1)) {end}
+    if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
+
+    lockall
+    applymovement(23, moves(face_up emote_exclamation_mark))
+    waitmovement(0)
+    delay(12)
+    applymovement(23, moves(fly_up))
+    waitmovement(0)
+    
+    //Setup flags
+    //hide self
+    removeobject(23)
+    setflag(FLAG_HIDE_VILETHORN_RALTS_1)
+    clearflag(FLAG_HIDE_VILETHORN_RALTS_2)
 
 
+    //Final msg
+    msgbox(format("RALTS teleported away! It can't have gone far..."))
+    release
+
+    releaseall
+    end
+}
+
+script VilethornWoods_Ralts_SecondTrigger{
+    if (flag(FLAG_HIDE_VILETHORN_RALTS_2)) {end}
+    if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
+
+    lockall
+    applymovement(23, moves(face_up emote_exclamation_mark))
+    waitmovement(0)
+    delay(12)
+    applymovement(23, moves(fly_up))
+    waitmovement(0)
+
+    //Setup flags
+    //hide self
+    removeobject(23)
+    setflag(FLAG_HIDE_VILETHORN_RALTS_2)
+    clearflag(FLAG_HIDE_VILETHORN_RALTS_3)
+
+
+    //Final msg
+    msgbox(format("RALTS teleported away again! It must be somewhere in this accursed forest..."))
+    release
+
+    releaseall
+    end
+}
+
+
+script VilethornWoods_Ralts{
+    lockall
+    playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
+    applymovement(23, moves(emote_exclamation_mark))
+    faceplayer
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Aha! RALTS can't escape this time!"))
+    release
+
+    setwildbattle(SPECIES_RALTS, 10)
+    dowildbattle
+
+    setflag(FLAG_HIDE_VILETHORN_RALTS_3)        
+    setflag(FLAG_VILETHORN_RALTS_FINISHED)        
+    removeobject(23)
+
+    releaseall
+    end
+
+}
 
 
 

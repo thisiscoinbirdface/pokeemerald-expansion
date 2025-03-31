@@ -167,10 +167,10 @@
 #define FLAG_ROUTE4_DEWPIDER_ATTACK  0x2A9 // trigger the attack
 #define FLAG_ROUTE4_DEWPIDER_FINISHED  0x2AA // complete the quest one way or another
 #define FLAG_CERAM_CHARIZARD  0x2AB // catch or defeat the charizard on top of mt. ceram
-#define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
-#define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
-#define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
-#define FLAG_UNUSED_0x2AF  0x2AF // Unused Flag
+#define FLAG_HIDE_VILETHORN_RALTS_1  0x2AC // Unused Flag
+#define FLAG_HIDE_VILETHORN_RALTS_2  0x2AD // Unused Flag
+#define FLAG_HIDE_VILETHORN_RALTS_3  0x2AE // Unused Flag
+#define FLAG_VILETHORN_RALTS_FINISHED  0x2AF // Unused Flag
 #define FLAG_UNUSED_0x2B0  0x2B0 // Unused Flag
 #define FLAG_UNUSED_0x2B1  0x2B1 // Unused Flag
 #define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag

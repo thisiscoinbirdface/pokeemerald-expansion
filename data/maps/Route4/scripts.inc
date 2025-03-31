@@ -341,7 +341,7 @@ Route4_NPC_Couple1::
 # 223 "data//maps/Route4/scripts.pory"
 	releaseall
 # 224 "data//maps/Route4/scripts.pory"
-	warp MAP_VILETHORN_WOODS, 39, 12
+	warp MAP_ROUTE6, 46, 61
 	return
 
 
