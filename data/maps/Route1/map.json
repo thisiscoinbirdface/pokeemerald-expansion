@@ -201,7 +201,7 @@
       "x": 31,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_RAWST_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE1_C"
     }
   ]

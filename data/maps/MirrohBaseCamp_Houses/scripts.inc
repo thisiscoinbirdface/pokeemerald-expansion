@@ -52,7 +52,7 @@ MirrohBaseCamp_Houses_Historian::
 # 32 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	release
 # 34 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_CORMORIA_HISTORY, SUB_QUEST_1
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6
 # 35 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_HISTORIAN
 # 36 "data//maps/MirrohBaseCamp_Houses/scripts.pory"

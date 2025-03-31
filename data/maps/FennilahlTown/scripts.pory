@@ -109,9 +109,34 @@ script FennilahlTown_Sign_Route3{
 }
 
 
-
+//FLAG_FENNILAHL_BUDEW_GET
 script FennilahlTown_Budew{
     lockall
+
+
+    if (var(VAR_FENNILAHL_BUDEW) == 3){
+
+    }
+
+    if (var(VAR_FENNILAHL_BUDEW) == 2){
+        
+    }
+
+    if (var(VAR_FENNILAHL_BUDEW) == 1){
+        
+    }
+
+    if (var(VAR_FENNILAHL_BUDEW) == 0){
+        goto(FennilahlTown_Budew_FirstBerry)
+    }
+
+
+    releaseall
+    end
+}
+
+script FennilahlTown_Budew_FirstBerry{
+
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(8, moves(jump_in_place_up * 3))
     waitmovement(0)
@@ -119,10 +144,10 @@ script FennilahlTown_Budew{
     release
 
     checkitem(ITEM_ORAN_BERRY)
-
     if (var(VAR_RESULT) == 1){
         msgbox(format("Give BUDEW an ORAN BERRY?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_ORAN_BERRY)
             applymovement(8, moves(faceplayer))   
             waitmovement(0)
             delay(12)             
@@ -132,20 +157,120 @@ script FennilahlTown_Budew{
             waitmovement(0)       
             msgbox(format("BUDEW seems happy!"))
             release
+
+            setvar(VAR_FENNILAHL_BUDEW, 1)
+
         } else {
 
         }
     } else {
-
+        msgbox(format("BUDEW seems disappointed..."))
+        release
     }
 
     releaseall
     end
 }
 
+script FennilahlTown_Budew_SecondBerry{
 
+    playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
+    applymovement(8, moves(jump_in_place_up * 2))
+    waitmovement(0)
+    msgbox(format("BUDEW seems to want something again..."))
+    release
 
+    checkitem(ITEM_PECHA_BERRY)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Give BUDEW a PECHA BERRY?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_PECHA_BERRY)
+            applymovement(8, moves(faceplayer))   
+            waitmovement(0)
+            delay(12)             
+            msgbox(format("{PLAYER} gave BUDEW a PECHA BERRY."), MSGBOX_SIGN)
+            release
+            applymovement(8, moves(jump_in_place_down * 2))   
+            waitmovement(0)       
+            msgbox(format("BUDEW seems happy!"))
+            release
 
+            setvar(VAR_FENNILAHL_BUDEW, 2)
+
+        } else {
+
+        }
+    } else {
+        msgbox(format("BUDEW seems disappointed..."))
+        release
+    }
+
+    releaseall
+    end
+}
+
+script FennilahlTown_Budew_ThirdBerry{
+
+    playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
+    applymovement(8, moves(jump_in_place_up))
+    waitmovement(0)
+    msgbox(format("BUDEW seems to want something again..."))
+    release
+
+    checkitem(ITEM_RAWST_BERRY)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Give BUDEW a RAWST BERRY?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_RAWST_BERRY)
+            applymovement(8, moves(faceplayer))   
+            waitmovement(0)
+            delay(12)             
+            msgbox(format("{PLAYER} gave BUDEW a RAWST BERRY."), MSGBOX_SIGN)
+            release
+            applymovement(8, moves(jump_in_place_down))   
+            waitmovement(0)       
+            msgbox(format("BUDEW seems happy!"))
+            release
+
+            setvar(VAR_FENNILAHL_BUDEW, 3)
+
+            goto(FennilahlTown_Budew_JoinParty)
+
+        } else {
+
+        }
+    } else {
+        msgbox(format("BUDEW seems disappointed..."))
+        release
+    }
+
+    releaseall
+    end
+}
+
+script FennilahlTown_Budew_JoinParty{
+    applymovement(8, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("BUDEW is looking at the Pokeballs on your belt curiously..."))
+    release
+    delay(16)
+    msgbox(format("BUDEW nudges the Pokeballs on your belt. It seems to want to join your party! Will you become BUDEW's trainer?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == ){
+        removeobject(8)
+        givemon(SPECIES_BUDEW, 5)
+    } else {
+        applymovement(8, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
+        removeobject(8)
+        msgbox(format("BUDEW ran off..."))
+        release
+    }
+
+    setflag(FLAG_FENNILAHL_BUDEW_GET)
+    setvar(VAR_FENNILAHL_BUDEW, 4)
+    releaseall
+    end   
+}
 
 
 

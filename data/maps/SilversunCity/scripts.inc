@@ -104,9 +104,7 @@ SilversunCity_OnFrame_1:
 	setflag FLAG_SILVERSUN_NEXTQUEST
 # 72 "data//maps/SilversunCity/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_5
-# 73 "data//maps/SilversunCity/scripts.pory"
-	startquest QUEST_CORMORIA_HISTORY
-# 76 "data//maps/SilversunCity/scripts.pory"
+# 75 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
@@ -115,205 +113,205 @@ SilversunCity_OnFrame_3:
 
 
 SilversunCity_EventScript_Detectives::
-# 90 "data//maps/SilversunCity/scripts.pory"
+# 89 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 92 "data//maps/SilversunCity/scripts.pory"
+# 91 "data//maps/SilversunCity/scripts.pory"
 	goto_if_set FLAG_SILVERSUN_DETECTIVES_ENTER, SilversunCity_EventScript_Detectives_2
-# 98 "data//maps/SilversunCity/scripts.pory"
+# 97 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_EventScript_Detectives_Text_1
-# 99 "data//maps/SilversunCity/scripts.pory"
+# 98 "data//maps/SilversunCity/scripts.pory"
 	applymovement LOCALID_DET1, SilversunCity_OnFrame_Movement_1
-# 100 "data//maps/SilversunCity/scripts.pory"
+# 99 "data//maps/SilversunCity/scripts.pory"
 	applymovement LOCALID_DET2, SilversunCity_OnFrame_Movement_1
+# 100 "data//maps/SilversunCity/scripts.pory"
+	waitmovement 0
 # 101 "data//maps/SilversunCity/scripts.pory"
-	waitmovement 0
-# 102 "data//maps/SilversunCity/scripts.pory"
 	delay 24
-# 104 "data//maps/SilversunCity/scripts.pory"
+# 103 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_EventScript_Detectives_Text_2
-# 105 "data//maps/SilversunCity/scripts.pory"
+# 104 "data//maps/SilversunCity/scripts.pory"
 	release
-# 107 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_EventScript_Detectives_Movement_0
-# 108 "data//maps/SilversunCity/scripts.pory"
+# 107 "data//maps/SilversunCity/scripts.pory"
 	waitmovement 0
-# 109 "data//maps/SilversunCity/scripts.pory"
+# 108 "data//maps/SilversunCity/scripts.pory"
 	delay 24
-# 111 "data//maps/SilversunCity/scripts.pory"
+# 110 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_EventScript_Detectives_Text_3
+# 111 "data//maps/SilversunCity/scripts.pory"
+	release
 # 112 "data//maps/SilversunCity/scripts.pory"
-	release
-# 113 "data//maps/SilversunCity/scripts.pory"
 	delay 30
-# 114 "data//maps/SilversunCity/scripts.pory"
+# 113 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_EventScript_Detectives_Text_4
-# 115 "data//maps/SilversunCity/scripts.pory"
+# 114 "data//maps/SilversunCity/scripts.pory"
 	release
-# 118 "data//maps/SilversunCity/scripts.pory"
+# 117 "data//maps/SilversunCity/scripts.pory"
 	setflag FLAG_SILVERSUN_DETECTIVES_ENTER
-# 119 "data//maps/SilversunCity/scripts.pory"
+# 118 "data//maps/SilversunCity/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_4
 SilversunCity_EventScript_Detectives_1:
-# 122 "data//maps/SilversunCity/scripts.pory"
+# 121 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	return
 
 SilversunCity_EventScript_Detectives_2:
-# 93 "data//maps/SilversunCity/scripts.pory"
+# 92 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_EventScript_Detectives_Text_0
 	goto SilversunCity_EventScript_Detectives_1
 
 
 SilversunCity_NPC1::
-# 140 "data//maps/SilversunCity/scripts.pory"
+# 139 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 141 "data//maps/SilversunCity/scripts.pory"
+# 140 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 142 "data//maps/SilversunCity/scripts.pory"
+# 141 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC1_Text_0
-# 143 "data//maps/SilversunCity/scripts.pory"
+# 142 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC2::
-# 147 "data//maps/SilversunCity/scripts.pory"
+# 146 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 148 "data//maps/SilversunCity/scripts.pory"
+# 147 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 149 "data//maps/SilversunCity/scripts.pory"
+# 148 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC2_Text_0
-# 150 "data//maps/SilversunCity/scripts.pory"
+# 149 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC3::
-# 154 "data//maps/SilversunCity/scripts.pory"
+# 153 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 155 "data//maps/SilversunCity/scripts.pory"
+# 154 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 156 "data//maps/SilversunCity/scripts.pory"
+# 155 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC3_Text_0
-# 157 "data//maps/SilversunCity/scripts.pory"
+# 156 "data//maps/SilversunCity/scripts.pory"
 	giveitem ITEM_OLD_ROD
-# 159 "data//maps/SilversunCity/scripts.pory"
+# 158 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC4::
-# 163 "data//maps/SilversunCity/scripts.pory"
+# 162 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 164 "data//maps/SilversunCity/scripts.pory"
+# 163 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 165 "data//maps/SilversunCity/scripts.pory"
+# 164 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC4_Text_0
-# 166 "data//maps/SilversunCity/scripts.pory"
+# 165 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC5::
-# 171 "data//maps/SilversunCity/scripts.pory"
+# 170 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 172 "data//maps/SilversunCity/scripts.pory"
+# 171 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 173 "data//maps/SilversunCity/scripts.pory"
+# 172 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC5_Text_0
-# 174 "data//maps/SilversunCity/scripts.pory"
+# 173 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_NPC6::
-# 179 "data//maps/SilversunCity/scripts.pory"
+# 178 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 180 "data//maps/SilversunCity/scripts.pory"
+# 179 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 181 "data//maps/SilversunCity/scripts.pory"
+# 180 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_NPC6_Text_0
-# 182 "data//maps/SilversunCity/scripts.pory"
+# 181 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Murkrow::
-# 187 "data//maps/SilversunCity/scripts.pory"
+# 186 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 188 "data//maps/SilversunCity/scripts.pory"
+# 187 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 189 "data//maps/SilversunCity/scripts.pory"
+# 188 "data//maps/SilversunCity/scripts.pory"
 	playmoncry SPECIES_MURKROW, CRY_MODE_NORMAL
-# 190 "data//maps/SilversunCity/scripts.pory"
+# 189 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Murkrow_Text_0
-# 191 "data//maps/SilversunCity/scripts.pory"
+# 190 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Meowth::
-# 196 "data//maps/SilversunCity/scripts.pory"
+# 195 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 197 "data//maps/SilversunCity/scripts.pory"
+# 196 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 198 "data//maps/SilversunCity/scripts.pory"
+# 197 "data//maps/SilversunCity/scripts.pory"
 	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
-# 199 "data//maps/SilversunCity/scripts.pory"
+# 198 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Meowth_Text_0
-# 200 "data//maps/SilversunCity/scripts.pory"
+# 199 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Vivillon::
-# 205 "data//maps/SilversunCity/scripts.pory"
+# 204 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 206 "data//maps/SilversunCity/scripts.pory"
+# 205 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 207 "data//maps/SilversunCity/scripts.pory"
+# 206 "data//maps/SilversunCity/scripts.pory"
 	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
-# 209 "data//maps/SilversunCity/scripts.pory"
+# 208 "data//maps/SilversunCity/scripts.pory"
 	goto_if_set FLAG_SILVERSUN_VIVILLON, SilversunCity_Vivillon_2
-# 212 "data//maps/SilversunCity/scripts.pory"
+# 211 "data//maps/SilversunCity/scripts.pory"
 	checkitem ITEM_LAVA_COOKIE
-# 213 "data//maps/SilversunCity/scripts.pory"
+# 212 "data//maps/SilversunCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Vivillon_5
-# 226 "data//maps/SilversunCity/scripts.pory"
+# 225 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_0
 SilversunCity_Vivillon_1:
-# 229 "data//maps/SilversunCity/scripts.pory"
+# 228 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Vivillon_2:
-# 210 "data//maps/SilversunCity/scripts.pory"
+# 209 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_0
 	goto SilversunCity_Vivillon_1
 
 SilversunCity_Vivillon_5:
-# 214 "data//maps/SilversunCity/scripts.pory"
+# 213 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_1, MSGBOX_YESNO
-# 215 "data//maps/SilversunCity/scripts.pory"
+# 214 "data//maps/SilversunCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Vivillon_8
-# 223 "data//maps/SilversunCity/scripts.pory"
+# 222 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_4
 	goto SilversunCity_Vivillon_1
 
 SilversunCity_Vivillon_8:
-# 216 "data//maps/SilversunCity/scripts.pory"
+# 215 "data//maps/SilversunCity/scripts.pory"
 	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
-# 217 "data//maps/SilversunCity/scripts.pory"
+# 216 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_2
-# 218 "data//maps/SilversunCity/scripts.pory"
+# 217 "data//maps/SilversunCity/scripts.pory"
 	giveitem ITEM_SILVER_POWDER
-# 219 "data//maps/SilversunCity/scripts.pory"
+# 218 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_3
-# 220 "data//maps/SilversunCity/scripts.pory"
+# 219 "data//maps/SilversunCity/scripts.pory"
 	release
-# 221 "data//maps/SilversunCity/scripts.pory"
+# 220 "data//maps/SilversunCity/scripts.pory"
 	setflag FLAG_SILVERSUN_VIVILLON
 	goto SilversunCity_Vivillon_1
 
@@ -336,13 +334,13 @@ SilversunCity_OnFrame_Movement_2:
 	emote_question_mark
 	step_end
 
-# 107 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 SilversunCity_EventScript_Detectives_Movement_0:
-# 107 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 	walk_right
-# 107 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 	walk_right
-# 107 "data//maps/SilversunCity/scripts.pory"
+# 106 "data//maps/SilversunCity/scripts.pory"
 	walk_up
 	step_end
 
@@ -434,19 +432,19 @@ SilversunCity_OnFrame_Text_6:
 	.string "got to go find him.$"
 
 SilversunCity_EventScript_Detectives_Text_0:
-# 93 "data//maps/SilversunCity/scripts.pory"
+# 92 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: Have you found the\n"
 	.string "Professor yet? No? Then what are you\l"
 	.string "standing here for?$"
 
 SilversunCity_EventScript_Detectives_Text_1:
-# 98 "data//maps/SilversunCity/scripts.pory"
+# 97 "data//maps/SilversunCity/scripts.pory"
 	.string "...\p"
 	.string "...\p"
 	.string "...$"
 
 SilversunCity_EventScript_Detectives_Text_2:
-# 104 "data//maps/SilversunCity/scripts.pory"
+# 103 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: Can't you see we're in\n"
 	.string "disguise, you idiot? You'll attract\l"
 	.string "attention!\p"
@@ -454,7 +452,7 @@ SilversunCity_EventScript_Detectives_Text_2:
 	.string "Go admire those flowerpots.$"
 
 SilversunCity_EventScript_Detectives_Text_3:
-# 111 "data//maps/SilversunCity/scripts.pory"
+# 110 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: Better. Now tell me - what\n"
 	.string "updates have you got?\p"
 	.string "...\p"
@@ -464,7 +462,7 @@ SilversunCity_EventScript_Detectives_Text_3:
 	.string "VILETHORN WOODS?$"
 
 SilversunCity_EventScript_Detectives_Text_4:
-# 114 "data//maps/SilversunCity/scripts.pory"
+# 113 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: This all but confirms our\n"
 	.string "suspicions - Team Somber must be\l"
 	.string "holding the Professor hostage! That's\l"
@@ -482,32 +480,32 @@ SilversunCity_EventScript_Detectives_Text_4:
 	.string "Good luck.$"
 
 SilversunCity_NPC1_Text_0:
-# 142 "data//maps/SilversunCity/scripts.pory"
+# 141 "data//maps/SilversunCity/scripts.pory"
 	.string "GLORIA, the city's Gym Leader is also a\n"
 	.string "famous actress! Her work centers\l"
 	.string "around the dark and eerie.$"
 
 SilversunCity_NPC2_Text_0:
-# 149 "data//maps/SilversunCity/scripts.pory"
+# 148 "data//maps/SilversunCity/scripts.pory"
 	.string "I hear the theater has connections\n"
 	.string "with the underground. People have seen\l"
 	.string "criminal types walk in and out of the\l"
 	.string "backstage area.$"
 
 SilversunCity_NPC3_Text_0:
-# 156 "data//maps/SilversunCity/scripts.pory"
+# 155 "data//maps/SilversunCity/scripts.pory"
 	.string "I'm so sad I couldn't get tickets for\n"
 	.string "tonights show! It's supposed to be a\l"
 	.string "live performance of some sort.$"
 
 SilversunCity_NPC4_Text_0:
-# 165 "data//maps/SilversunCity/scripts.pory"
+# 164 "data//maps/SilversunCity/scripts.pory"
 	.string "We keep seeing wild KOFFING and TOXEL\n"
 	.string "around...they come from the sewers, I\l"
 	.string "bet.$"
 
 SilversunCity_NPC5_Text_0:
-# 173 "data//maps/SilversunCity/scripts.pory"
+# 172 "data//maps/SilversunCity/scripts.pory"
 	.string "There's a reason nobody lives near the\n"
 	.string "sewers - and not because it stinks!\p"
 	.string "They say a demon {PKMN} haunts the sewers.\n"
@@ -521,43 +519,43 @@ SilversunCity_NPC5_Text_0:
 	.string "imagination.$"
 
 SilversunCity_NPC6_Text_0:
-# 181 "data//maps/SilversunCity/scripts.pory"
+# 180 "data//maps/SilversunCity/scripts.pory"
 	.string "I caught my VIVILLON in MT MIRROH! It's\n"
 	.string "always hungry and keeps eating my LAVA\l"
 	.string "COOKIES...$"
 
 SilversunCity_Murkrow_Text_0:
-# 190 "data//maps/SilversunCity/scripts.pory"
+# 189 "data//maps/SilversunCity/scripts.pory"
 	.string "MURKROW glares at you. It's as if its\n"
 	.string "saying, 'Get out of the way!'$"
 
 SilversunCity_Meowth_Text_0:
-# 199 "data//maps/SilversunCity/scripts.pory"
+# 198 "data//maps/SilversunCity/scripts.pory"
 	.string "MEOWTH is skulking around the back of\n"
 	.string "the SILVERSUN THEATER. It looks angry\l"
 	.string "- better be careful!$"
 
 SilversunCity_Vivillon_Text_0:
-# 210 "data//maps/SilversunCity/scripts.pory"
+# 209 "data//maps/SilversunCity/scripts.pory"
 	.string "VIVILLON looks hungry! It's eyeing your\n"
 	.string "bag...better move away quickly!$"
 
 SilversunCity_Vivillon_Text_1:
-# 214 "data//maps/SilversunCity/scripts.pory"
+# 213 "data//maps/SilversunCity/scripts.pory"
 	.string "VIVILLON looks hungry! It's eyeing your\n"
 	.string "bag...\p"
 	.string "Give VIVILLON a LAVA COOKIE?$"
 
 SilversunCity_Vivillon_Text_2:
-# 217 "data//maps/SilversunCity/scripts.pory"
+# 216 "data//maps/SilversunCity/scripts.pory"
 	.string "VIVILLON chomped the cookie down!\p"
 	.string "It flutters towards you and puts\n"
 	.string "something in your bag...$"
 
 SilversunCity_Vivillon_Text_3:
-# 219 "data//maps/SilversunCity/scripts.pory"
+# 218 "data//maps/SilversunCity/scripts.pory"
 	.string "Thanks VIVILLON!$"
 
 SilversunCity_Vivillon_Text_4:
-# 223 "data//maps/SilversunCity/scripts.pory"
+# 222 "data//maps/SilversunCity/scripts.pory"
 	.string "Better move away quickly!$"

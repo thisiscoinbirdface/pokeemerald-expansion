@@ -117,17 +117,13 @@
 #define VAR_ROUTE102_STATE                               0x4061 // Unused Var
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                               0x4063
-#define VAR_ROUTE105_STATE                               0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
-#define VAR_ROUTE107_STATE                               0x4066 // Unused Var
-#define VAR_ROUTE108_STATE                               0x4067 // Unused Var
-#define VAR_ROUTE109_STATE                               0x4068 // Unused Var
-#define VAR_ROUTE110_STATE                               0x4069
-#define VAR_ROUTE111_STATE                               0x406A // Unused Var
-#define VAR_ROUTE112_STATE                               0x406B // Unused Var
-#define VAR_ROUTE113_STATE                               0x406C // Unused Var
-#define VAR_ROUTE114_STATE                               0x406D // Unused Var
-#define VAR_ROUTE115_STATE                               0x406E // Unused Var
+
+    ///NOTE THE GAP HERE. IVE MOVED SOME VARS DOWN
+
+    #define VAR_ROUTE110_STATE                               0x4069
+
+    ///NOTE THE GAP HERE. IVE MOVED SOME VARS DOWN
+
 #define VAR_ROUTE116_STATE                               0x406F
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var
 #define VAR_ROUTE118_STATE                               0x4071
@@ -276,7 +272,7 @@
     #define VAR_PELLUCA_FISHERY                              0x4077 // pelluca fishery quest (0: not start, 1: prove your worth to get surf, 2: go attack mega sharpedo, 3: complete)
     #define VAR_RANGER_INSTITUTE                             0x4078 // var for ranger institute - long so check out the institute poryscript
     #define VAR_SEWERS_DUSKULL                               0x4079 // duskull attacking the lady in the sewers
-    #define VAR_ROUTE127_STATE                               0x407A // Unused Var
+    #define VAR_FENNILAHL_BUDEW                              0x407A // count the number of berries given to budew in fenni. if 3, catch
 
     #define VAR_ROUTE129_STATE                               0x407C // Unused Var
     #define VAR_ROUTE130_STATE                               0x407D // Unused Var
@@ -284,6 +280,16 @@
     #define VAR_ROUTE132_STATE                               0x407F // Unused Var
     #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
     #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
+    #define VAR_ROUTE105_STATE                               0x4064 // Unused Var
+    #define VAR_ROUTE106_STATE                               0x4065 // Unused Var
+    #define VAR_ROUTE107_STATE                               0x4066 // Unused Var
+    #define VAR_ROUTE108_STATE                               0x4067 // Unused Var
+    #define VAR_ROUTE109_STATE                               0x4068 // Unused Var
+    #define VAR_ROUTE111_STATE                               0x406A // Unused Var
+    #define VAR_ROUTE112_STATE                               0x406B // Unused Var
+    #define VAR_ROUTE113_STATE                               0x406C // Unused Var
+    #define VAR_ROUTE114_STATE                               0x406D // Unused Var
+    #define VAR_ROUTE115_STATE                               0x406E // Unused Var    
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
