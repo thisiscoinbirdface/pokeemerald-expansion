@@ -64,7 +64,7 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
         msgbox(format("This must be the secret of CLEFAIRY's focus! Better not disturb her any further...thank you CLEFAIRY!"))
         release
         applymovement(17, moves(face_left))
-        waitmovement(0)        
+        waitmovement(0)
         setflag(FLAG_GALECREST_CLEFAIRY_ITEM)
     }
 

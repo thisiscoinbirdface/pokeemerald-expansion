@@ -2320,16 +2320,16 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_H] =
     {
 #line 987
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("TYRONE"),
 #line 988
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
+        .trainerClass = TRAINER_CLASS_BURGLAR,
 #line 989
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_BURGLAR,
         .encounterMusic_gender =
 #line 991
-            TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 992
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 993
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,

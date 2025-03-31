@@ -166,7 +166,7 @@ FennilahlTown_Budew::
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_2
 FennilahlTown_Budew_1:
-# 140 "data//maps/FennilahlTown/scripts.pory"
+# 142 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
@@ -175,10 +175,10 @@ FennilahlTown_Budew_2:
 	msgbox FennilahlTown_Budew_Text_1, MSGBOX_YESNO
 # 125 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq FennilahlTown_Budew_4
+	goto_if_eq FennilahlTown_Budew_5
 	goto FennilahlTown_Budew_1
 
-FennilahlTown_Budew_4:
+FennilahlTown_Budew_5:
 # 126 "data//maps/FennilahlTown/scripts.pory"
 	applymovement 8, FennilahlTown_Budew_Movement_1
 # 127 "data//maps/FennilahlTown/scripts.pory"
