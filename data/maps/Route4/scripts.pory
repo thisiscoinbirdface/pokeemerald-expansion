@@ -221,7 +221,7 @@ script Route4_NPC_Couple1{
     faceplayer
     msgbox(format("What a lovely view!\pThe lake is nice too..."))
     releaseall
-    warp(MAP_ROUTE6, 46, 61)
+    warp(MAP_ROUTE6, 18, 91)
 }
 
 script Route4_NPC_Couple2{

@@ -341,7 +341,7 @@ Route4_NPC_Couple1::
 # 223 "data//maps/Route4/scripts.pory"
 	releaseall
 # 224 "data//maps/Route4/scripts.pory"
-	warp MAP_ROUTE6, 46, 61
+	warp MAP_ROUTE6, 18, 91
 	return
 
 
