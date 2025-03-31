@@ -1339,7 +1339,7 @@ const u8 gText_SideQuestName_10[] = _("Malevolent Masterpiece");
 const u8 gText_SideQuestName_11[] = _("I Can't Find My Wife!");
 const u8 gText_SideQuestName_12[] = _("A Chef's Icy Troubles");
 const u8 gText_SideQuestName_13[] = _("Fishy Business");
-const u8 gText_SideQuestName_14[] = _("Side Quest 14");
+const u8 gText_SideQuestName_14[] = _("The History of Cormoria");
 const u8 gText_SideQuestName_15[] = _("Side Quest 15");
 const u8 gText_SideQuestName_16[] = _("Side Quest 16");
 const u8 gText_SideQuestName_17[] = _("Side Quest 17");
@@ -1371,7 +1371,7 @@ const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in\nSIL
 const u8 gText_SideQuestDesc_11[] = _("A man in the SILVERSUN SEWERS has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the SEWER SCOURGE!");
 const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the PELLUCA RESTAURANT\nare broken and their ingredients are going\nbad. I need to bring them a NEVERMELT ICE.");
 const u8 gText_SideQuestDesc_13[] = _("A MEGA SHARPEDO is terrorising the PELLUCA\nFISHERY. At this rate, they'll shut down!\nI need to confront the MEGA SHARPEDO.");
-const u8 gText_SideQuestDesc_14[] = _("Description 14");
+const u8 gText_SideQuestDesc_14[] = _("To understand Team Somber's motives, I\nneed to learn more about the ancient\nhistory of Cormoria.");
 const u8 gText_SideQuestDesc_15[] = _("Description 15");
 const u8 gText_SideQuestDesc_16[] = _("Description 16");
 const u8 gText_SideQuestDesc_17[] = _("Description 17");
@@ -1402,7 +1402,7 @@ const u8 gText_SideQuestDoneDesc_9[] = _("I found the robber and returned the pe
 const u8 gText_SideQuestDoneDesc_10[] = _("The BLACK SLUDGE created the perfect shade\nof black paint! Maybe this artist is really\na maestro after all.");
 const u8 gText_SideQuestDoneDesc_11[] = _("Husband and wife have been successfully\nreunited. The blind wife now has a helper\n{PKMN} so all's well that ends well!");
 const u8 gText_SideQuestDoneDesc_12[] = _("The NEVERMELT ICE can keep the ingredients\ncool until they get a ROTOM FRIDGE.");
-const u8 gText_SideQuestDoneDesc_13[] = _("Completed Quest 13");
+const u8 gText_SideQuestDoneDesc_13[] = _("Safe from the MEGA SHARPEDO, the PELLUCA\nFISHERY is now open for business!");
 const u8 gText_SideQuestDoneDesc_14[] = _("Completed Quest 14");
 const u8 gText_SideQuestDoneDesc_15[] = _("Completed Quest 15");
 const u8 gText_SideQuestDoneDesc_16[] = _("Completed Quest 16");
@@ -1498,7 +1498,21 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest3_Name2[] = _("???");
     const u8 gText_SubQuest3_Name3[] = _("???");
 
-    const u8 gText_SubQuest4_Desc1[] = _("Ranger Chief RAVINE has asked me to deliver\nan important package to the RANGER INSTITUTE\nat IVY RIVER. I can't let her down!");
+    const u8 gText_SubQuest3_Desc1[] = _("Ranger Chief RAVINE has asked me to deliver\nan important package to the RANGER INSTITUTE\nat IVY RIVER. I can't let her down!");
+    const u8 gText_SubQuest3_Desc2[] = _("???");
+    const u8 gText_SubQuest3_Desc3[] = _("???");
+
+
+    //CORMORIA HISTORY (ONGOING BIG SIDE QUEST)
+    const u8 gText_SubQuest4_Name1[] = _("Martha the Historian");
+    const u8 gText_SubQuest4_Name2[] = _("???");
+    const u8 gText_SubQuest4_Name3[] = _("???");
+    const u8 gText_SubQuest4_Name4[] = _("???");
+
+    const u8 gText_SubQuest4_Desc1[] = _("???");
     const u8 gText_SubQuest4_Desc2[] = _("???");
-    const u8 gText_SubQuest5_Desc3[] = _("???");
+    const u8 gText_SubQuest4_Desc3[] = _("???");
+    const u8 gText_SubQuest4_Desc4[] = _("???");
+
+
 

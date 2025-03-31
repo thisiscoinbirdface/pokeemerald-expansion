@@ -387,6 +387,84 @@ static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
   
 };
 
+static const struct SubQuest sSubQuests3[QUEST_3_SUB_COUNT] =
+{
+	sub_quest(
+	      0,
+	      gText_SubQuest3_Name1,
+	      gText_SubQuest3_Desc1,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+
+	sub_quest(
+	      1,
+	      gText_SubQuest3_Name2,
+	      gText_SubQuest3_Desc2,
+	      gText_SideQuestMap2,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+
+	sub_quest(
+	      2,
+	      gText_SubQuest3_Name3,
+	      gText_SubQuest3_Desc3,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+};
+
+
+
+static const struct SubQuest sSubQuests4[QUEST_4_SUB_COUNT] =
+{
+	sub_quest(
+	      0,
+	      gText_SubQuest4_Name1,
+	      gText_SubQuest4_Desc1,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+
+	sub_quest(
+	      1,
+	      gText_SubQuest4_Name2,
+	      gText_SubQuest4_Desc2,
+	      gText_SideQuestMap2,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+
+	sub_quest(
+	      2,
+	      gText_SubQuest4_Name3,
+	      gText_SubQuest4_Desc3,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_WALLY,
+	      OBJECT,
+	      sText_Empty
+	),
+
+	sub_quest(
+		2,
+		gText_SubQuest4_Name4,
+		gText_SubQuest4_Desc4,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+  ),
+};
+
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -425,7 +503,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
 	      NULL,
-	      0
+	      QUEST_3_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_4,
@@ -435,7 +513,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
 	      NULL,
-	      0
+	      QUEST_4_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_5,

@@ -6,30 +6,35 @@ script MirrohBaseCamp_Houses_Historian{
     lockall
     faceplayer
 
-    if flag(FLAG__MIRROHBASECAMP_HISTORIAN){
+    if (flag(FLAG_MIRROHBASECAMP_HISTORIAN)){
         msgbox(format("MARTHA: Why hello child, how are you?"))
     } else {
         msgbox(format("MARTHA: Yes, child. Tell me. What's the story?\p...\p...\p..."))
+        release
         applymovement(1, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
         msgbox(format("MARTHA: I see...so this Team Somber wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
         release
+        delay(30)
+        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent. Fearsome {PKMN} fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
+        release
+        delay(30)
+        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent, ravaged by fearsome {PKMN} that fought each other. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can cross-reference different {PKMN}. This is how we build a classification for all Fossil {PKMN}.\p...\pMARTHA: But there were three fossils we fought that were damaged in ways...in ways so horrific they...well...\pThe first died in flames, scorched beyond recognition.\pThe second bore signs of immense electrical damage.\pAnd the third...\p....well the third fossil seemed to have died thrashing in scalding water...\pMARTHA: No known {PKMN}, natural phenomena, or anything we could think of could give us an answer to these three damaged fossils. What kind of monstrous being could do something like that?"))
+        release
+        delay(30)
+        msgbox(format("MARTHA: For a while this mystery - the mystery of the THREE ANCIENT TERRORS remained unsolved. But then, deep inside MT MIRROH, we found an ancient cave painting depicting a beast that matched no fossil we had uncovered...although which {PKMN} it is, we don't know. But we suspect it must be one of the THREE ANCIENT TERRORS.\p...\pThere is still much to solve, {PLAYER}."))
+        release
         delay(16)
-        applymovement(1, moves(face_right))
+        applymovement(1, moves(emote_exclamation_mark))
         waitmovement(0)
-        delay(30)
-        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent. Fearsome {PKMN} fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
+        msgbox(format("MARTHA: Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this helps you in your journey.\pYou should go to MT MIRROH and see the cave painting for yourself. As for me, I must get back to my reading..."))
         release
-        delay(30)
-        applymovement(1, moves(faceplayer))
-        waitmovement(0)
-        delay(30)
-        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, ANCIENT CORMORIA was a harsh, barren and dangerous continent. Fearsome {PKMN} fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those {PKMN}, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
-        release
-        
-    }
 
+        subquestmenu()
+        setflag(FLAG_MIRROHBASECAMP_HISTORIAN)
+        setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
+    }
 
     releaseall
     end
