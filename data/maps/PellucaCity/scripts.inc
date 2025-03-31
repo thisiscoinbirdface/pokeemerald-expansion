@@ -194,6 +194,30 @@ PellucaCity_NPC9::
 	end
 
 
+PellucaCity_WingullGirl::
+# 153 "data//maps/PellucaCity/scripts.pory"
+	lockall
+# 154 "data//maps/PellucaCity/scripts.pory"
+	faceplayer
+# 155 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC9_Text_0
+# 156 "data//maps/PellucaCity/scripts.pory"
+	releaseall
+	end
+
+
+PellucaCity_WingullMother::
+# 161 "data//maps/PellucaCity/scripts.pory"
+	lockall
+# 162 "data//maps/PellucaCity/scripts.pory"
+	faceplayer
+# 163 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC9_Text_0
+# 164 "data//maps/PellucaCity/scripts.pory"
+	releaseall
+	end
+
+
 # 26 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_EventScripts_Gabrielle_Movement_0:
 # 26 "data//maps/PellucaCity/scripts.pory"

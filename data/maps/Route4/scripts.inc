@@ -341,7 +341,7 @@ Route4_NPC_Couple1::
 # 223 "data//maps/Route4/scripts.pory"
 	releaseall
 # 224 "data//maps/Route4/scripts.pory"
-	warp MAP_PELLUCA_CITY, 53, 11
+	warp MAP_PELLUCA_CITY, 65, 20
 	return
 
 
