@@ -172,7 +172,7 @@ script FennilahlTown_Budew_SecondBerry{
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(8, moves(jump_in_place_up * 2))
     waitmovement(0)
-    msgbox(format("BUDEW seems to want something again..."))
+    msgbox(format("BUDEW seems to want something again...but not an ORAN BERRY."))
     release
 
     checkitem(ITEM_PECHA_BERRY)
