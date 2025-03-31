@@ -617,7 +617,8 @@ FennilahlTown_Budew_FirstBerry_Text_4:
 
 FennilahlTown_Budew_SecondBerry_Text_0:
 # 175 "data//maps/FennilahlTown/scripts.pory"
-	.string "BUDEW seems to want something again...$"
+	.string "BUDEW seems to want something\n"
+	.string "again...but not an ORAN BERRY.$"
 
 FennilahlTown_Budew_SecondBerry_Text_1:
 # 180 "data//maps/FennilahlTown/scripts.pory"

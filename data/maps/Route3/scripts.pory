@@ -61,3 +61,60 @@ script Route3_NPC2{
 }
 
 
+
+
+
+
+
+
+script Route3_Skarmory_Trigger{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SKARMORY, CRY_MODE_NORMAL)
+    applymovement(13, moves(emote_exclamation_mark jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("SKARMORY stares defiantly at you. It roars! Could be dangerous to approach."))
+
+    setvar(VAR_TEMP_0, 1)
+
+    releaseall
+    end
+}
+
+script Route3_Skarmory_Battle{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SKARMORY, CRY_MODE_NORMAL)
+    applymovement(13, moves(emote_exclamation_mark jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("The wild SKARMORY roars and attacks!"))
+    release
+
+    setwildbattle(SPECIES_SKARMORY, 2)
+    dowildbattle
+
+    //result
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON){
+        removeobject(13)
+        setflag(FLAG_ROUTE3_SKARMORY_WILD)
+        releaseall
+    }
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        removeobject(13)
+        setflag(FLAG_ROUTE3_SKARMORY_WILD)
+        releaseall
+    }            
+    if (var(VAR_RESULT) == B_OUTCOME_RAN){
+        msgbox(format("The SKARMORY preens its steely feathers victoriously. Better not disturb it again!"))
+        release
+    }
+
+    releaseall
+    end
+
+}
+
+

@@ -12052,17 +12052,17 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_SPEAROW"
               },
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_SWABLU"
               }
             ]
           }
