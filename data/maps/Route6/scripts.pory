@@ -41,7 +41,11 @@ script Route6_EventScript_Nurse{
 
 //Marshtomp
 script Route6_Marshtomp{
-        //excadrill encounter
+    lockall
+    faceplayer
+    applymovement(32, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)    
     playmoncry(SPECIES_MARSHTOMP, CRY_MODE_ENCOUNTER)
     waitmoncry
 
