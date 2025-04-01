@@ -160,7 +160,7 @@ script PellucaCity_WingullGirl{
 script PellucaCity_WingullMother{
     lockall
     faceplayer
-    msgbox(format("This is the PELLUCA FISHERY! But it's closed due to the SHARPEDO attacks."))
+    msgbox(format("My daughter loves throwing stones at WINGULLS from this bridge. She's so cute!"))
     releaseall
     end
 }
