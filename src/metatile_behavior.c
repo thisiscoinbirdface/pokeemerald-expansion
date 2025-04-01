@@ -1,6 +1,7 @@
 #include "global.h"
 #include "metatile_behavior.h"
 #include "constants/metatile_behaviors.h"
+#include "item.h"
 
 #define TILE_FLAG_HAS_ENCOUNTERS (1 << 0)
 #define TILE_FLAG_SURFABLE       (1 << 1)
@@ -1199,9 +1200,10 @@ bool8 MetatileBehavior_IsCrackedFloorHole(u8 metatileBehavior)
         return FALSE;
 }
 
+//come back to this
 bool8 MetatileBehavior_IsCrackedFloor(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_CRACKED_FLOOR)
+    if (metatileBehavior == MB_CRACKED_FLOOR && CheckBagHasItem(ITEM_HEAVY_DUTY_BOOTS, 1))
         return TRUE;
     else
         return FALSE;
