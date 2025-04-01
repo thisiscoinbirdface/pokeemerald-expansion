@@ -52,8 +52,22 @@ gText_WeHopeToSeeYouAgain2::
 
 
 gText_TakeHealPass::
-	.string "Please take this HEAL PASS.\n"
-	.string "Trade it in with any Nurse\p"
-	.string "outside a POKéMON CENTER\n"
-	.string "to heal your POKéMON.$"
+	.string "Please take this HEAL PASS. You can\n"
+	.string "trade it in with any Nurse Joy outside\p"
+	.string "a POKéMON CENTER to heal your POKéMON.$"
+
+gTextExplainHealPass::
+	.string "Trainer, is this your first time at a\n"
+	.string "POKéMON CENTER?\p"
+	.string "Then I have good news - we have a special\n"
+	.string "promotion running right now!\p"
+	.string "Each Trainer that heals in any POKéMON\n"
+	.string "CENTER can receive upto one HEAL PASS.\p"
+	.string "Trade it in with any Nurse Joy outside\n"
+	.string "a POKéMON CENTER to heal your POKéMON.\p"
+	.string "But you can only have one HEAL PASS\n"
+	.string "at a time. Once you have traded your\p"
+	.string "HEAL PASS in, please come back to any\n"
+	.string "POKéMON CENTER to receive a new one!$"
+
 
