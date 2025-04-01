@@ -152,7 +152,26 @@ script PellucaCity_NPC9{
 script PellucaCity_WingullGirl{
     lockall
     faceplayer
-    msgbox(format("This is the PELLUCA FISHERY! But it's closed due to the SHARPEDO attacks."))
+    msgbox(format("Hahaha! I'm throwing stones at the WINGULLS over there. Wanna throw some?"))
+    dynmultichoice(16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "That's mean", "Gimme a stone!")
+
+    if (var(VAR_RESULT) == 1){
+        //wingull encounter
+        applymovement(15, moves(face_up))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        msgbox(format("{PLAYER} threw a stone at a WINGULL!"))
+        release
+        applymovement(16, moves(emote_exclamation_mark))
+        applymovement(17, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("The WINGULL gets angry!"))
+        setwildbattle(SPECIES_WINGULL, 25)
+        dowildbattle
+    } else {
+
+    }
+
     releaseall
     end
 }
@@ -160,7 +179,15 @@ script PellucaCity_WingullGirl{
 script PellucaCity_WingullMother{
     lockall
     faceplayer
-    msgbox(format("My daughter loves throwing stones at WINGULLS from this bridge. She's so cute!"))
+    msgbox(format("My daughter loves throwing stones at WINGULLS. She's just so cute!"))
+    releaseall
+    end
+}
+
+script PellucaCity_WingullCritique{
+    lockall
+    faceplayer
+    msgbox(format("That little girl is so mean! Throwing stones at {PKMN}...how was she raised?"))
     releaseall
     end
 }

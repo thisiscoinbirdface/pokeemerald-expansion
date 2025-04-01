@@ -200,20 +200,63 @@ PellucaCity_WingullGirl::
 # 154 "data//maps/PellucaCity/scripts.pory"
 	faceplayer
 # 155 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC9_Text_0
+	msgbox PellucaCity_WingullGirl_Text_0
 # 156 "data//maps/PellucaCity/scripts.pory"
+	dynmultichoice 16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, PellucaCity_WingullGirl_Text_1, PellucaCity_WingullGirl_Text_2
+# 158 "data//maps/PellucaCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq PellucaCity_WingullGirl_2
+PellucaCity_WingullGirl_1:
+# 175 "data//maps/PellucaCity/scripts.pory"
+	releaseall
+	end
+
+PellucaCity_WingullGirl_2:
+# 160 "data//maps/PellucaCity/scripts.pory"
+	applymovement 15, PellucaCity_WingullGirl_Movement_0
+# 161 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaCity_WingullGirl_Movement_0
+# 162 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullGirl_Text_3
+# 163 "data//maps/PellucaCity/scripts.pory"
+	release
+# 164 "data//maps/PellucaCity/scripts.pory"
+	applymovement 16, PellucaCity_WingullGirl_Movement_1
+# 165 "data//maps/PellucaCity/scripts.pory"
+	applymovement 17, PellucaCity_WingullGirl_Movement_1
+# 166 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 167 "data//maps/PellucaCity/scripts.pory"
+	delay 16
+# 168 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullGirl_Text_4
+# 169 "data//maps/PellucaCity/scripts.pory"
+	setwildbattle SPECIES_WINGULL, 25
+# 170 "data//maps/PellucaCity/scripts.pory"
+	dowildbattle
+	goto PellucaCity_WingullGirl_1
+
+
+PellucaCity_WingullMother::
+# 180 "data//maps/PellucaCity/scripts.pory"
+	lockall
+# 181 "data//maps/PellucaCity/scripts.pory"
+	faceplayer
+# 182 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullMother_Text_0
+# 183 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
-PellucaCity_WingullMother::
-# 161 "data//maps/PellucaCity/scripts.pory"
+PellucaCity_WingullCritique::
+# 188 "data//maps/PellucaCity/scripts.pory"
 	lockall
-# 162 "data//maps/PellucaCity/scripts.pory"
+# 189 "data//maps/PellucaCity/scripts.pory"
 	faceplayer
-# 163 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC9_Text_0
-# 164 "data//maps/PellucaCity/scripts.pory"
+# 190 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullCritique_Text_0
+# 191 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
@@ -222,6 +265,18 @@ PellucaCity_WingullMother::
 PellucaCity_EventScripts_Gabrielle_Movement_0:
 # 26 "data//maps/PellucaCity/scripts.pory"
 	face_left
+	step_end
+
+# 160 "data//maps/PellucaCity/scripts.pory"
+PellucaCity_WingullGirl_Movement_0:
+# 160 "data//maps/PellucaCity/scripts.pory"
+	face_up
+	step_end
+
+# 164 "data//maps/PellucaCity/scripts.pory"
+PellucaCity_WingullGirl_Movement_1:
+# 164 "data//maps/PellucaCity/scripts.pory"
+	emote_exclamation_mark
 	step_end
 
 PellucaCity_EventScripts_Gabrielle_Text_0:
@@ -334,3 +389,34 @@ PellucaCity_NPC9_Text_0:
 # 143 "data//maps/PellucaCity/scripts.pory"
 	.string "This is the PELLUCA FISHERY! But it's\n"
 	.string "closed due to the SHARPEDO attacks.$"
+
+PellucaCity_WingullGirl_Text_0:
+# 155 "data//maps/PellucaCity/scripts.pory"
+	.string "Hahaha! I'm throwing stones at the\n"
+	.string "WINGULLS over there. Wanna throw some?$"
+
+PellucaCity_WingullGirl_Text_1:
+# 156 "data//maps/PellucaCity/scripts.pory"
+	.string "That's mean$"
+
+PellucaCity_WingullGirl_Text_2:
+# 156 "data//maps/PellucaCity/scripts.pory"
+	.string "Gimme a stone!$"
+
+PellucaCity_WingullGirl_Text_3:
+# 162 "data//maps/PellucaCity/scripts.pory"
+	.string "{PLAYER} threw a stone at a WINGULL!$"
+
+PellucaCity_WingullGirl_Text_4:
+# 168 "data//maps/PellucaCity/scripts.pory"
+	.string "The WINGULL gets angry!$"
+
+PellucaCity_WingullMother_Text_0:
+# 182 "data//maps/PellucaCity/scripts.pory"
+	.string "My daughter loves throwing stones at\n"
+	.string "WINGULLS. She's just so cute!$"
+
+PellucaCity_WingullCritique_Text_0:
+# 190 "data//maps/PellucaCity/scripts.pory"
+	.string "That little girl is so mean! Throwing\n"
+	.string "stones at {PKMN}...how was she raised?$"
