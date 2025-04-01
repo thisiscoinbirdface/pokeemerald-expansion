@@ -1555,23 +1555,23 @@ static const u8 sText_EmptyStatus[] = _("$$$$$$$");
 static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
 {
     [B_WIN_MSG] = {
-        .fillValue = PIXEL_FILL(0xF),
+        .fillValue = PIXEL_FILL(0x4),
         .fontId = FONT_NORMAL,
         .x = 0,
         .y = 1,
         .speed = 1,
         .fgColor = 1,
-        .bgColor = 15,
+        .bgColor = 4,
         .shadowColor = 6,
     },
     [B_WIN_ACTION_PROMPT] = {
-        .fillValue = PIXEL_FILL(0xF),
+        .fillValue = PIXEL_FILL(0x4),
         .fontId = FONT_NORMAL,
         .x = 1,
         .y = 1,
         .speed = 0,
         .fgColor = 1,
-        .bgColor = 15,
+        .bgColor = 4,
         .shadowColor = 6,
     },
     [B_WIN_ACTION_MENU] = {
@@ -1807,7 +1807,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
 static const struct BattleWindowText sTextOnWindowsInfo_Arena[] =
 {
     [B_WIN_MSG] = {
-        .fillValue = PIXEL_FILL(0xF),
+        .fillValue = PIXEL_FILL(0x7),
         .fontId = FONT_NORMAL,
         .x = 0,
         .y = 1,
@@ -1817,7 +1817,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Arena[] =
         .shadowColor = 6,
     },
     [B_WIN_ACTION_PROMPT] = {
-        .fillValue = PIXEL_FILL(0xF),
+        .fillValue = PIXEL_FILL(0x7),
         .fontId = FONT_NORMAL,
         .x = 1,
         .y = 1,
@@ -3456,7 +3456,7 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
             printerTemplate.fontId = GetFontIdToFit(text, printerTemplate.fontId, printerTemplate.letterSpacing, 8 * TILE_WIDTH);
     }
 
-    if (printerTemplate.x == 0xFF)
+    if (printerTemplate.x == 0x7F)
     {
         u32 width = GetBattleWindowTemplatePixelWidth(gBattleScripting.windowsType, windowId);
         s32 alignX = GetStringCenterAlignXOffsetWithLetterSpacing(printerTemplate.fontId, printerTemplate.currentChar, width, printerTemplate.letterSpacing);
