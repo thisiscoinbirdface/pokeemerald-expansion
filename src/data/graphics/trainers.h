@@ -642,6 +642,13 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
 {
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_BRENDAN, 4, gTrainerBackPic_Brendan, gTrainerBackPicTable_Brendan, gTrainerPalette_Brendan, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MAY, 4, gTrainerBackPic_May, gTrainerBackPicTable_May, gTrainerPalette_May, sBackAnims_Hoenn),
+
+    //Custom characters
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Kanto),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_SHUBUBU, 4, gTrainerBackPic_Shububu, gTrainerBackPicTable_Shububu, gTrainerPalette_Shububu, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 4, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Hoenn),
+
+    //regular
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RED, 5, gTrainerBackPic_Red, gTrainerBackPicTable_Red, gTrainerBackPicPalette_Red, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LEAF, 5, gTrainerBackPic_Leaf, gTrainerBackPicTable_Leaf, gTrainerBackPicPalette_Leaf, sBackAnims_Kanto),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN, 4, gTrainerBackPic_RubySapphireBrendan, gTrainerBackPicTable_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan, sBackAnims_Hoenn),
@@ -649,8 +656,4 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_WALLY, 4, gTrainerBackPic_Wally, gTrainerBackPicTable_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerBackPicTable_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
 
-    //Custom characters
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_SHUBUBU, 4, gTrainerBackPic_Shububu, gTrainerBackPicTable_Shububu, gTrainerPalette_Shububu, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 4, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Hoenn),
 };
