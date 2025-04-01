@@ -55,7 +55,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 14,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_ANCIENT_MIRROH_CAVES",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

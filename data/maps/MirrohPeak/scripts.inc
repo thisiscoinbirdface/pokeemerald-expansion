@@ -420,11 +420,13 @@ MirrohPeak_EventScript_Somber_Trigger::
 	delay 30
 # 269 "data//maps/MirrohPeak/scripts.pory"
 	setflag FLAG_MIRROHPEAK_MOXIE_DEFEATED
-# 272 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 270 "data//maps/MirrohPeak/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7
 # 273 "data//maps/MirrohPeak/scripts.pory"
-	warp MAP_ANCIENT_MIRROH, 10, 10
+	fadescreen FADE_TO_BLACK
 # 274 "data//maps/MirrohPeak/scripts.pory"
+	warp MAP_ANCIENT_MIRROH, 10, 10
+# 275 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
@@ -729,10 +731,12 @@ MirrohPeak_EventScript_Somber_Trigger_Text_3:
 # 181 "data//maps/MirrohPeak/scripts.pory"
 	.string "MELEA: Beyond the dreamstone's gate\n"
 	.string "lie some of the most powerful {PKMN} this\l"
-	.string "world has ever seen. Long gone, extinct\l"
-	.string "today. In the hands of people with\l"
-	.string "purpose, it can be used to do great\l"
-	.string "things...$"
+	.string "world has ever seen. And of them all, one\l"
+	.string "stood the strongest. The fiercest,\l"
+	.string "most vicious. Long gone, extinct today.\l"
+	.string "But in the hands of people with\l"
+	.string "purpose, such power can be used to do\l"
+	.string "great things...$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_4:
 # 189 "data//maps/MirrohPeak/scripts.pory"
@@ -753,7 +757,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_6:
 	.string "she returns.\p"
 	.string "...\p"
 	.string "MOXIE: Child, we are at the cusp of\n"
-	.string "attaining our goal. The Ancient Wonders\l"
+	.string "attaining our goal. The ANCIENT TERROR\l"
 	.string "will soon be ours.\p"
 	.string "...\p"
 	.string "MOXIE: I will give you a chance to turn\n"

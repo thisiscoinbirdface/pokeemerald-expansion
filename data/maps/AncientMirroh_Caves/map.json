@@ -17,7 +17,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 9,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_ANCIENT_MIRROH",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
