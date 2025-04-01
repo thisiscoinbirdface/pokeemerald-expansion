@@ -50,13 +50,12 @@ gText_ThankYouForWaiting::
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
 
-
 gText_TakeHealPass::
 	.string "Please take this HEAL PASS. You can\n"
 	.string "trade it in with any Nurse Joy outside\p"
 	.string "a POKéMON CENTER to heal your POKéMON.$"
 
-gTextExplainHealPass::
+gText_ExplainHealPass::
 	.string "Trainer, is this your first time at a\n"
 	.string "POKéMON CENTER?\p"
 	.string "Then I have good news - we have a special\n"
@@ -66,8 +65,8 @@ gTextExplainHealPass::
 	.string "Trade it in with any Nurse Joy outside\n"
 	.string "a POKéMON CENTER to heal your POKéMON.\p"
 	.string "But you can only have one HEAL PASS\n"
-	.string "at a time. Once you have traded your\p"
-	.string "HEAL PASS in, please come back to any\n"
+	.string "at a time. Once you have traded your\l"
+	.string "HEAL PASS in, please come back to any\l"
 	.string "POKéMON CENTER to receive a new one!$"
 
 

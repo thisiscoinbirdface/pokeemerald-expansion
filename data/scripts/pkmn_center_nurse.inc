@@ -61,6 +61,7 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	goto_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_ReturnPkmn2
 @	message gText_RestoredPkmnToFullHealth
 	waitmessage
+	waitbuttonpress
 	checkflag FLAG_HEAL_PASS_EXPLAIN
 	goto_if_eq VAR_RESULT, TRUE, EventScript_PkmnCenterNurse_ExplainHealPass
 
@@ -82,9 +83,11 @@ EventScript_PkmnCenterNurse_ReturnPkmn2::
 	goto EventScript_PkmnCenterNurse_PlayerTurn	
 	return
 
-EventScript_PkmnCenterNurse_ExplainHealPass
+EventScript_PkmnCenterNurse_ExplainHealPass::
 	setflag FLAG_HEAL_PASS_EXPLAIN
 	message gText_ExplainHealPass
+	waitmessage
+	waitbuttonpress
 	giveitem ITEM_HEAL_PASS
 	message gText_WeHopeToSeeYouAgain
 	waitbuttonpress
