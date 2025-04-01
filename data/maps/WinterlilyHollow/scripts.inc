@@ -64,7 +64,7 @@ WinterlilyHollow_NPC3::
 # 54 "data//maps/WinterlilyHollow/scripts.pory"
 	goto_if_set FLAG_MIRROHPEAK_MOXIE_DEFEATED, WinterlilyHollow_NPC3_2
 # 57 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC2_Text_1
+	msgbox WinterlilyHollow_NPC3_Text_0
 WinterlilyHollow_NPC3_1:
 # 59 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
@@ -83,74 +83,93 @@ WinterlilyHollow_MimeJr::
 	faceplayer
 # 66 "data//maps/WinterlilyHollow/scripts.pory"
 	playmoncry SPECIES_MIME_JR, CRY_MODE_NORMAL
-# 67 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_MimeJr_Text_0
 # 68 "data//maps/WinterlilyHollow/scripts.pory"
+	compare VAR_HOLLOW_MIMEJR, 0
+	goto_if_eq WinterlilyHollow_MimeJr_2
+WinterlilyHollow_MimeJr_1:
+# 81 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
+WinterlilyHollow_MimeJr_2:
+# 69 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_MimeJr_Text_0
+# 71 "data//maps/WinterlilyHollow/scripts.pory"
+	checkitem ITEM_SOOTHE_BELL
+# 72 "data//maps/WinterlilyHollow/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WinterlilyHollow_MimeJr_4
+# 77 "data//maps/WinterlilyHollow/scripts.pory"
+	release
+	goto WinterlilyHollow_MimeJr_1
+
+WinterlilyHollow_MimeJr_4:
+# 75 "data//maps/WinterlilyHollow/scripts.pory"
+	setvar VAR_HOLLOW_MIMEJR, 1
+	goto WinterlilyHollow_MimeJr_1
+
 
 WinterlilyHollow_Froslass::
-# 72 "data//maps/WinterlilyHollow/scripts.pory"
+# 91 "data//maps/WinterlilyHollow/scripts.pory"
 	lockall
-# 73 "data//maps/WinterlilyHollow/scripts.pory"
+# 92 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 74 "data//maps/WinterlilyHollow/scripts.pory"
+# 93 "data//maps/WinterlilyHollow/scripts.pory"
 	playmoncry SPECIES_FROSLASS, CRY_MODE_NORMAL
-# 75 "data//maps/WinterlilyHollow/scripts.pory"
+# 94 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_Froslass_Text_0
-# 76 "data//maps/WinterlilyHollow/scripts.pory"
+# 95 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
 
 WinterlilyHollow_Sneasler::
-# 80 "data//maps/WinterlilyHollow/scripts.pory"
+# 99 "data//maps/WinterlilyHollow/scripts.pory"
 	lockall
-# 81 "data//maps/WinterlilyHollow/scripts.pory"
+# 100 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 82 "data//maps/WinterlilyHollow/scripts.pory"
+# 101 "data//maps/WinterlilyHollow/scripts.pory"
 	playmoncry SPECIES_SNEASLER, CRY_MODE_NORMAL
-# 83 "data//maps/WinterlilyHollow/scripts.pory"
+# 102 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_Sneasler_Text_0
-# 84 "data//maps/WinterlilyHollow/scripts.pory"
+# 103 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
 
 WinterlilyHollow_NPC_Miner::
-# 104 "data//maps/WinterlilyHollow/scripts.pory"
+# 123 "data//maps/WinterlilyHollow/scripts.pory"
 	lockall
-# 105 "data//maps/WinterlilyHollow/scripts.pory"
+# 124 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 106 "data//maps/WinterlilyHollow/scripts.pory"
+# 125 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_0, MSGBOX_YESNO
-# 108 "data//maps/WinterlilyHollow/scripts.pory"
+# 127 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_2
-# 117 "data//maps/WinterlilyHollow/scripts.pory"
+# 136 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_2
 WinterlilyHollow_NPC_Miner_1:
-# 119 "data//maps/WinterlilyHollow/scripts.pory"
+# 138 "data//maps/WinterlilyHollow/scripts.pory"
 	applymovement 3, WinterlilyHollow_NPC_Miner_Movement_0
-# 120 "data//maps/WinterlilyHollow/scripts.pory"
+# 139 "data//maps/WinterlilyHollow/scripts.pory"
 	waitmovement 0
-# 122 "data//maps/WinterlilyHollow/scripts.pory"
+# 141 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
 WinterlilyHollow_NPC_Miner_2:
-# 109 "data//maps/WinterlilyHollow/scripts.pory"
+# 128 "data//maps/WinterlilyHollow/scripts.pory"
 	checkmoney 500
-# 111 "data//maps/WinterlilyHollow/scripts.pory"
+# 130 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_5
-# 114 "data//maps/WinterlilyHollow/scripts.pory"
+# 133 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_1
 	goto WinterlilyHollow_NPC_Miner_1
 
 WinterlilyHollow_NPC_Miner_5:
-# 112 "data//maps/WinterlilyHollow/scripts.pory"
+# 131 "data//maps/WinterlilyHollow/scripts.pory"
 	special StartMining
 	goto WinterlilyHollow_NPC_Miner_1
 
@@ -161,9 +180,9 @@ WinterlilyHollow_NPC_Red_Movement_0:
 	face_down
 	step_end
 
-# 119 "data//maps/WinterlilyHollow/scripts.pory"
+# 138 "data//maps/WinterlilyHollow/scripts.pory"
 WinterlilyHollow_NPC_Miner_Movement_0:
-# 119 "data//maps/WinterlilyHollow/scripts.pory"
+# 138 "data//maps/WinterlilyHollow/scripts.pory"
 	face_right
 	step_end
 
@@ -206,34 +225,35 @@ WinterlilyHollow_NPC3_Text_0:
 	.string "there behind the Pokemart now.$"
 
 WinterlilyHollow_MimeJr_Text_0:
-# 67 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "MIME JR looks so terribly sad...can\n"
-	.string "anything cheer it up?$"
+# 69 "data//maps/WinterlilyHollow/scripts.pory"
+	.string "Sniff...sniff...\n"
+	.string "MIME JR is bawling!\p"
+	.string "Can it be soothed somehow?$"
 
 WinterlilyHollow_Froslass_Text_0:
-# 75 "data//maps/WinterlilyHollow/scripts.pory"
+# 94 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "FROSLASS is circling the statue...which\n"
-	.string "looks like FROSLASS statue! Is there a\l"
-	.string "connection?$"
+	.string "looks like a FROSLASS statue! Is there\l"
+	.string "a connection?$"
 
 WinterlilyHollow_Sneasler_Text_0:
-# 83 "data//maps/WinterlilyHollow/scripts.pory"
+# 102 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "SNEASLER seems to be trying to dig into\n"
 	.string "the wall with limited success. Don't give\l"
 	.string "up, SNEASLER!$"
 
 WinterlilyHollow_NPC_Miner_Text_0:
-# 106 "data//maps/WinterlilyHollow/scripts.pory"
+# 125 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "See all these crystals on the walls? I'm\n"
 	.string "trying to dig it up. Wanna try? You can\l"
 	.string "borrow my spare pickaxe, but it'll cost\l"
 	.string "you 500.$"
 
 WinterlilyHollow_NPC_Miner_Text_1:
-# 114 "data//maps/WinterlilyHollow/scripts.pory"
+# 133 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You don't have enough money.$"
 
 WinterlilyHollow_NPC_Miner_Text_2:
-# 117 "data//maps/WinterlilyHollow/scripts.pory"
+# 136 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You can dig up some great stuff, you\n"
 	.string "know?$"

@@ -54,7 +54,7 @@ script WinterlilyHollow_NPC3{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
         msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's there behind the Pokemart now."))
     } else {
-        msgbox(format("")) 
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's there behind the Pokemart now."))
     }
     releaseall
     end
@@ -64,15 +64,34 @@ script WinterlilyHollow_MimeJr{
     lockall
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
-    msgbox(format("MIME JR looks so terribly sad...can anything cheer it up?"))
+
+    if (var(VAR_HOLLOW_MIMEJR) == 0){
+        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+
+        checkitem(ITEM_SOOTHE_BELL)
+        if (var(VAR_RESULT) == 1){
+            //give soothe bell
+
+            setvar(VAR_HOLLOW_MIMEJR, 1)
+        } else {
+            release
+        }
+    }
+
     releaseall
     end
 }
+
+
+
+
+
+
 script WinterlilyHollow_Froslass{
     lockall
     faceplayer
     playmoncry(SPECIES_FROSLASS, CRY_MODE_NORMAL)
-    msgbox(format("FROSLASS is circling the statue...which looks like FROSLASS statue! Is there a connection?"))
+    msgbox(format("FROSLASS is circling the statue...which looks like a FROSLASS statue! Is there a connection?"))
     releaseall
     end
 }

@@ -274,7 +274,7 @@
     #define VAR_SEWERS_DUSKULL                               0x4079 // duskull attacking the lady in the sewers
     #define VAR_FENNILAHL_BUDEW                              0x407A // count the number of berries given to budew in fenni. if 3, catch
 
-    #define VAR_ROUTE129_STATE                               0x407C // Unused Var
+    #define VAR_HOLLOW_MIMEJR                                0x407C // Unused Var
     #define VAR_ROUTE130_STATE                               0x407D // Unused Var
     #define VAR_ROUTE131_STATE                               0x407E // Unused Var
     #define VAR_ROUTE132_STATE                               0x407F // Unused Var
