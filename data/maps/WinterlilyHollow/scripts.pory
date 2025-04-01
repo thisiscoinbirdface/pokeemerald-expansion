@@ -72,13 +72,17 @@ script WinterlilyHollow_MimeJr_1{
         //give soothe bell
         msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
+            removeitem(ITEM_SOOTHE_BELL)
+
+            msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\pMIME JR smiles at you."))
+            release
             setvar(VAR_HOLLOW_MIMEJR, 1)
-            applymovement(11, moves(fly_up))
+            applymovement(10, moves(fly_up))
+            waitmovement(0)
             msgbox(format("Wait, where'd it go?"))
 
             //setflags
-            removeobject(11)
+            removeobject(10)
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_1)
             clearflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
 
@@ -103,12 +107,16 @@ script WinterlilyHollow_MimeJr_2{   //play with it
 
     checkitem(ITEM_POKE_DOLL)
     if (var(VAR_RESULT) == 1){
-        //give soothe bell
+        //give doll
         msgbox(format("Give MIME JR a POKESHI DOLL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("MIME JR takes the POKESHI DOLL and plays with it...\nMIME JR smiles at you."))
+            removeitem(ITEM_POKE_DOLL)
+
+            msgbox(format("MIME JR takes the POKESHI DOLL and plays with it...\pMIME JR smiles at you."))
+            release
             setvar(VAR_HOLLOW_MIMEJR, 1)
             applymovement(6, moves(fly_up))
+            waitmovement(0)
             msgbox(format("Wait, where'd it go now?"))
             //setflags
             removeobject(6)
@@ -141,9 +149,12 @@ script WinterlilyHollow_MimeJr_3{
         //give soothe bell
         msgbox(format("Catch MIME JR in a LUXURY BALL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_LUXURY_BALL)
+
             msgbox(format("MIME JR doesn't wait for you to catch it - it leaps into the LUXURY BALL on its own!."))
             removeobject(1)
             givemon(SPECIES_MIME_JR, 25)
+            msgbox(format("MIME JR joined {PLAYER}'s party!"))
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
