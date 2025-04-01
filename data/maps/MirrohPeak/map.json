@@ -291,7 +291,7 @@
     {
       "type": "trigger",
       "x": 29,
-      "y": 79,
+      "y": 78,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -300,11 +300,11 @@
     {
       "type": "trigger",
       "x": 30,
-      "y": 79,
+      "y": 78,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "MirrohPeak_EventScript_Viniel_Trigger1"
     }
   ],
   "bg_events": [

@@ -178,7 +178,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     delay(60)
     applymovement(LOCALID_MELEA, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful {PKMN} this world has ever seen. Long gone, extinct today. In the hands of people with purpose, it can be used to do great things..."))
+    msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful {PKMN} this world has ever seen. The THREE ANCIENT TERRORS, they're called. Long gone, extinct today. In the hands of people with purpose, they can be used to do great things..."))
     release
 
             //Set weather beforehand for correct timing
@@ -217,8 +217,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
     waitmovement(0)
     special(RemoveCameraObject)    
     applymovement(LOCALID_MOXIE, moves(walk_right face_down))
-    waitmovement(0)    
-    msgbox(format("MOXIE: My dear colleague has gone ahead, into ANCIENT CORMORIA...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The Ancient Wonders will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
+    waitmovement(0)
+    msgbox(format("MOXIE: My dear colleague has gone ahead, into ANCIENT CORMORIA...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The THREE ANCIENT TERRORS will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
     release
 
     //Battle
@@ -267,6 +267,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
 
     //Flags, quests etc
     setflag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)  
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7)    
 
     //warp
     fadescreen(FADE_TO_BLACK)
