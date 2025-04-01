@@ -4,11 +4,12 @@ mapscripts MirrohInterior_2F_MapScripts{}
 //7 trainers
 //3 NPCs
 
+//its koraidon not walking wake
 script MirrohInterior_2F_CavePainting_WalkingWake{
     lockall
-    showmonpic(SPECIES_WALKING_WAKE, 10, 3)
-    waitbuttonpress
-    hidemonpic
+
+    //a descrption of koraidon
+    msgbox(format("It's an ancient cave painting...a never before seen {PKMN}! It looks somewhat reptilian, but also has feathers. Terrifying!"))
 
     releaseall
     end
