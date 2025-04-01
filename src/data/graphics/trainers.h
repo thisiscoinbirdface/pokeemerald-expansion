@@ -299,15 +299,15 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
 //CUSTOM CHARACTERS
 const u32 gTrainerFrontPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.4bpp.lz");
-const u32 gTrainerBackPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu_back.4bpp.lz");
+const u32 gTrainerBackPic_Munucu[] = INCBIN_U8("graphics/trainers/my_trainers/munucu_back.4bpp");
 const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.gbapal.lz");
 
 const u32 gTrainerFrontPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_f.4bpp.lz");
-const u32 gTrainerBackPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu_back.4bpp.lz");
+const u32 gTrainerBackPic_Shububu[] = INCBIN_U8("graphics/trainers/my_trainers/shububu_back.4bpp");
 const u32 gTrainerPalette_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/somber_grunt_f.gbapal.lz");
 
 const u32 gTrainerFrontPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.4bpp.lz");
-const u32 gTrainerBackPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking_back.4bpp.lz");
+const u32 gTrainerBackPic_Gubuking[] = INCBIN_U8("graphics/trainers/my_trainers/gubuking_back.4bpp");
 const u32 gTrainerPalette_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.gbapal.lz");
 
 //NPCS AND OTHER CHARACTERS
@@ -634,7 +634,7 @@ const struct SpriteFrameImage gTrainerBackPicTable_Gubuking[] =
     [trainerPic] =                                                                           \
     {                                                                                        \
         .coordinates = {.size = 8, .y_offset = yOffset},                                     \
-        .backPic = {(const u32 *)sprite, TRAINER_PIC_SIZE * ARRAY_COUNT(table), trainerPic}, \
+        .backPic = {sprite, TRAINER_PIC_SIZE * ARRAY_COUNT(table), trainerPic},              \
         .palette = {pal, trainerPic},                                                        \
         .animation = anim,                                                                   \
     }
