@@ -607,6 +607,7 @@ const struct SpriteFrameImage gTrainerBackPicTable_Munucu[] =
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
 const struct SpriteFrameImage gTrainerBackPicTable_Shububu[] =
