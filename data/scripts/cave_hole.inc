@@ -8,7 +8,8 @@ CaveHole_FixCrackedGround:
 
 EventScript_FallDownHole::
 	lockall
-	delay 20
+	msgbox gText_FallDownHole
+	release
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_SetInvisible
 	waitmovement 0
 	playse SE_FALL
@@ -31,3 +32,8 @@ EventScript_FallDownHoleMtPyre::
 Movement_SetInvisible:
 	set_invisible
 	step_end
+
+gText_FallDownHole::
+	.string "The cracked floor breaks under the\n"
+	.string "weight of the HEAVY DUTY BOOTS!$"
+
