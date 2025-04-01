@@ -206,6 +206,8 @@ PellucaCity_WingullGirl::
 # 158 "data//maps/PellucaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_WingullGirl_2
+# 172 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullGirl_Text_5
 PellucaCity_WingullGirl_1:
 # 175 "data//maps/PellucaCity/scripts.pory"
 	releaseall
@@ -411,6 +413,10 @@ PellucaCity_WingullGirl_Text_4:
 # 168 "data//maps/PellucaCity/scripts.pory"
 	.string "The WINGULL gets angry!$"
 
+PellucaCity_WingullGirl_Text_5:
+# 172 "data//maps/PellucaCity/scripts.pory"
+	.string "Mean? You're mean!$"
+
 PellucaCity_WingullMother_Text_0:
 # 182 "data//maps/PellucaCity/scripts.pory"
 	.string "My daughter loves throwing stones at\n"
@@ -418,5 +424,5 @@ PellucaCity_WingullMother_Text_0:
 
 PellucaCity_WingullCritique_Text_0:
 # 190 "data//maps/PellucaCity/scripts.pory"
-	.string "That little girl is so mean! Throwing\n"
-	.string "stones at {PKMN}...how was she raised?$"
+	.string "That little girl is so bad! Throwing\n"
+	.string "stones at {PKMN}...that's poor parenting.$"

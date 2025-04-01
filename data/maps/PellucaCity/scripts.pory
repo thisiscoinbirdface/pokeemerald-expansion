@@ -169,7 +169,7 @@ script PellucaCity_WingullGirl{
         setwildbattle(SPECIES_WINGULL, 25)
         dowildbattle
     } else {
-
+        msgbox(format("Mean? You're mean!"))
     }
 
     releaseall
@@ -187,7 +187,7 @@ script PellucaCity_WingullMother{
 script PellucaCity_WingullCritique{
     lockall
     faceplayer
-    msgbox(format("That little girl is so mean! Throwing stones at {PKMN}...how was she raised?"))
+    msgbox(format("That little girl is so bad! Throwing stones at {PKMN}...that's poor parenting."))
     releaseall
     end
 }
