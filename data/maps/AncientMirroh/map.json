@@ -52,6 +52,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_SOFT_SAND",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ANCIENTCERAM_B"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DEOXYS_TRIANGLE",
+      "x": 26,
+      "y": 54,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
+      "x": 34,
+      "y": 49,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SOFT_SAND",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ANCIENTCERAM_B"
     }
   ],
   "warp_events": [
@@ -61,6 +87,13 @@
       "elevation": 0,
       "dest_map": "MAP_ANCIENT_MIRROH_CAVES",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_ANCIENT_MIRROH_CAVES",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

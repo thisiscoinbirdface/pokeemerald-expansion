@@ -30,6 +30,13 @@
       "elevation": 0,
       "dest_map": "MAP_ANCIENT_MIRROH_CAVES_B1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 56,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ANCIENT_MIRROH_CAVES",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
