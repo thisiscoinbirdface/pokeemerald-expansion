@@ -5217,7 +5217,7 @@
       "width": 60,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_AncientMirroh",
       "border_filepath": "data/layouts/AncientMirroh/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh/map.bin"
     },
@@ -5330,6 +5330,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/IvyRiver_ResearchFacility/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_ResearchFacility/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_CAVES",
+      "name": "AncientMirroh_Caves_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AncientMirroh_Caves/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Caves/map.bin"
     }
   ]
 }

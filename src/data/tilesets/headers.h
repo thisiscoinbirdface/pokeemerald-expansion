@@ -968,3 +968,14 @@ const struct Tileset gTileset_Vilethorn =
     .metatileAttributes = gMetatileAttributes_Vilethorn,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AncientMirroh =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AncientMirroh,
+    .palettes = gTilesetPalettes_AncientMirroh,
+    .metatiles = gMetatiles_AncientMirroh,
+    .metatileAttributes = gMetatileAttributes_AncientMirroh,
+    .callback = NULL,
+};

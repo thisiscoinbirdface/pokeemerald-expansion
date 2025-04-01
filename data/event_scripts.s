@@ -1332,3 +1332,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GalecrestCity_Leader_Basement/scripts.inc"
 
 	.include "data/maps/IvyRiver_ResearchFacility/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Caves/scripts.inc"

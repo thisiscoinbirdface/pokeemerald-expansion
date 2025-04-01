@@ -1881,3 +1881,22 @@ const u16 gTilesetPalettes_Vilethorn[][16] =
 };
 
 const u32 gTilesetTiles_Vilethorn[] = INCBIN_U32("data/tilesets/primary/vilethorn/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_AncientMirroh[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ancient_mirroh/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_AncientMirroh[] = INCBIN_U32("data/tilesets/secondary/ancient_mirroh/tiles.4bpp.lz");
