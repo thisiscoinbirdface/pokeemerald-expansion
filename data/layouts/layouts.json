@@ -5216,7 +5216,7 @@
       "name": "AncientMirroh_Layout",
       "width": 60,
       "height": 60,
-      "primary_tileset": "gTileset_Snow",
+      "primary_tileset": "gTileset_MirrohSnow",
       "secondary_tileset": "gTileset_AncientMirroh",
       "border_filepath": "data/layouts/AncientMirroh/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh/map.bin"
@@ -5350,6 +5350,46 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/AncientMirroh_Caves_B1F/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh_Caves_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_TOWER",
+      "name": "AncientMirroh_Tower_Layout",
+      "width": 9,
+      "height": 12,
+      "primary_tileset": "gTileset_MirrohSnow",
+      "secondary_tileset": "gTileset_AncientMirroh",
+      "border_filepath": "data/layouts/AncientMirroh_Tower/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Tower/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_TOWER_2F",
+      "name": "AncientMirroh_Tower_2F_Layout",
+      "width": 9,
+      "height": 12,
+      "primary_tileset": "gTileset_MirrohSnow",
+      "secondary_tileset": "gTileset_AncientMirroh",
+      "border_filepath": "data/layouts/AncientMirroh_Tower_2F/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Tower_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_TOWER_3F",
+      "name": "AncientMirroh_Tower_3F_Layout",
+      "width": 9,
+      "height": 12,
+      "primary_tileset": "gTileset_MirrohSnow",
+      "secondary_tileset": "gTileset_AncientMirroh",
+      "border_filepath": "data/layouts/AncientMirroh_Tower_3F/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Tower_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_TOWER_4F",
+      "name": "AncientMirroh_Tower_4F_Layout",
+      "width": 9,
+      "height": 12,
+      "primary_tileset": "gTileset_MirrohSnow",
+      "secondary_tileset": "gTileset_AncientMirroh",
+      "border_filepath": "data/layouts/AncientMirroh_Tower_4F/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Tower_4F/map.bin"
     }
   ]
 }

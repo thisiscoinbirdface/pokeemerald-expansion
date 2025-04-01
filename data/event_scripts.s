@@ -1336,3 +1336,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AncientMirroh_Caves/scripts.inc"
 
 	.include "data/maps/AncientMirroh_Caves_B1F/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Tower/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Tower_2F/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Tower_3F/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Tower_4F/scripts.inc"

@@ -1,0 +1,10 @@
+mapscripts AncientMirroh_Tower_2F_MapScripts{
+    MAP_SCRIPT_ON_RESUME: AncientMirroh_Tower_2F_SetHoleWarp
+}
+
+script AncientMirroh_Tower_2F_SetHoleWarp{
+    setstepcallback(STEP_CB_CRACKED_FLOOR)
+	setholewarp(MAP_ANCIENT_MIRROH_TOWER)
+	end
+}
+

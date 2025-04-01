@@ -89,11 +89,18 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
+      "x": 31,
       "y": 52,
       "elevation": 0,
       "dest_map": "MAP_ANCIENT_MIRROH_CAVES",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 49,
+      "y": 55,
+      "elevation": 0,
+      "dest_map": "MAP_ANCIENT_MIRROH_TOWER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
