@@ -1334,3 +1334,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IvyRiver_ResearchFacility/scripts.inc"
 
 	.include "data/maps/AncientMirroh_Caves/scripts.inc"
+
+	.include "data/maps/AncientMirroh_Caves_B1F/scripts.inc"

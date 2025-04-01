@@ -1,0 +1,16 @@
+mapscripts AncientMirroh_Caves_MapScripts{
+    MAP_SCRIPT_ON_RESUME{ 
+        AncientMirroh_Caves_1F_SetHoleWarp
+    }
+}
+
+script AncientMirroh_Caves_1F_SetHoleWarp{
+    setstepcallback(STEP_CB_CRACKED_FLOOR)
+	setholewarp(MAP_ANCIENT_MIRROH_CAVES_B1F)
+	end
+}
+
+
+
+
+

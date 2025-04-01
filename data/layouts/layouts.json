@@ -5340,6 +5340,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AncientMirroh_Caves/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh_Caves/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_MIRROH_CAVES_B1F",
+      "name": "AncientMirroh_Caves_B1F_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AncientMirroh_Caves_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/AncientMirroh_Caves_B1F/map.bin"
     }
   ]
 }
