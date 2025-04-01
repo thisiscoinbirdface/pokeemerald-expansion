@@ -49,3 +49,11 @@ gText_ThankYouForWaiting::
 
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
+
+
+gText_TakeHealPass::
+	.string "Please take this HEAL PASS.\n"
+	.string "Trade it in with any Nurse\p"
+	.string "outside a POKéMON CENTER\n"
+	.string "to heal your POKéMON.$"
+

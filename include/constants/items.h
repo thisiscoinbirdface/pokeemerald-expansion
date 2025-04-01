@@ -880,7 +880,7 @@
 #define ITEM_SS_TICKET 727
 #define ITEM_EON_TICKET 728
 #define ITEM_BACKSTAGE_PASS 729          //I AM USING (backstage theater pass) (ITEM_MYSTIC_TICKET)
-#define ITEM_CABLECAR_PASS 730          //I AM USING (cable car ticket) )ITEM_AURORA_TICKET
+#define ITEM_CABLECAR_PASS 730          //I AM USING (cable car ticket) (ITEM_AURORA_TICKET)
 #define ITEM_OLD_SEA_MAP 731
 #define ITEM_APPOINTMENT_LETTER 732     //I AM USING (this is for ceram gym)
 #define ITEM_DEVON_PARTS 733
@@ -900,7 +900,7 @@
 #define ITEM_RM_6_KEY ITEM_KEY_TO_ROOM_6 // Pre-Gen VI name
 #define ITEM_METEORITE 743
 #define ITEM_MAGMA_EMBLEM 744
-#define ITEM_CONTEST_PASS 745 
+#define ITEM_HEAL_PASS 745            // Heal Pass (ITEM_CONTEST_PASS)
 #define ITEM_PARCEL 746
 #define ITEM_OAKS_PARCEL ITEM_PARCEL // Pre-Gen IV name
 #define ITEM_SECRET_KEY 747

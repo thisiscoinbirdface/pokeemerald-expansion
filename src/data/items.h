@@ -12780,15 +12780,15 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MagmaEmblem,
     },
 
-    [ITEM_CONTEST_PASS] =
+    [ITEM_HEAL_PASS] =
     {
-        .name = _("Student ID"),
-        .pluralName = _("Student IDs"),
+        .name = _("Heal Pass"),
+        .pluralName = _("Heal Passes"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "...\n"
-            "...\n"
-            "..."),
+            "Trade with Nurse Joy\n"
+            "on any route to heal\n"
+            "your {PKMN}."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

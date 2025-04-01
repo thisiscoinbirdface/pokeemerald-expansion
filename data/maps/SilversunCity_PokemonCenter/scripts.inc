@@ -14,7 +14,7 @@ SilversunCity_PokemonCenter_EventScript_Nurse::
 # 10 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
 	lockall
 # 11 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, 1
 # 12 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
 # 13 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
