@@ -52,15 +52,15 @@ script WinterlilyHollow_NPC3{
     lockall
     faceplayer
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's there behind the Pokemart now."))
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's here somewhere in the town."))
     } else {
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's there behind the Pokemart now."))
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his {PKMN} saying it was too weak! How terrible! It's here somewhere in the town."))
     }
     releaseall
     end
 }
 
-script WinterlilyHollow_MimeJr{
+script WinterlilyHollow_MimeJr_1{
     lockall
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
@@ -71,8 +71,22 @@ script WinterlilyHollow_MimeJr{
         checkitem(ITEM_SOOTHE_BELL)
         if (var(VAR_RESULT) == 1){
             //give soothe bell
+            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
+                setvar(VAR_HOLLOW_MIMEJR, 1)
+                applymovement(6, moves(fly_up))
+                msgbox(format("Wait, where'd it go?"))
 
-            setvar(VAR_HOLLOW_MIMEJR, 1)
+                //setflags
+                removeobject(6)
+                setflag(FLAG_HIDE_HOLLOW_MIMEJR_1)
+                clearflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
+
+
+            } else {
+                release
+            }
         } else {
             release
         }
@@ -82,9 +96,72 @@ script WinterlilyHollow_MimeJr{
     end
 }
 
+script WinterlilyHollow_MimeJr_2{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
+    if (var(VAR_HOLLOW_MIMEJR) == 0){
+        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
 
+        checkitem(ITEM_SOOTHE_BELL)
+        if (var(VAR_RESULT) == 1){
+            //give soothe bell
+            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
+                setvar(VAR_HOLLOW_MIMEJR, 1)
+                applymovement(6, moves(fly_up))
+                msgbox(format("Wait, where'd it go?"))
+                //setflags
+                removeobject(6)
+                setflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
+                clearflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
 
+            } else {
+                release
+            }
+        } else {
+            release
+        }
+    }
+
+    releaseall
+    end
+}
+
+script WinterlilyHollow_MimeJr_3{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
+
+    if (var(VAR_HOLLOW_MIMEJR) == 0){
+        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+
+        checkitem(ITEM_SOOTHE_BELL)
+        if (var(VAR_RESULT) == 1){
+            //give soothe bell
+            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
+                setvar(VAR_HOLLOW_MIMEJR, 1)
+                applymovement(6, moves(fly_up))
+                msgbox(format("Wait, where'd it go?"))
+                //setflags
+                removeobject(6)
+                setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
+                setflag(FLAG_HOLLOW_MIMEJR)
+            } else {
+                release
+            }
+        } else {
+            release
+        }
+    }
+
+    releaseall
+    end
+}
 
 
 script WinterlilyHollow_Froslass{

@@ -173,9 +173,9 @@
 #define FLAG_VILETHORN_RALTS_FINISHED  0x2AF // Unused Flag
 #define FLAG_ROUTE6_MARSHTOMP  0x2B0 // Unused Flag
 #define FLAG_HOLLOW_MIMEJR  0x2B1 // Unused Flag
-#define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
-#define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
+#define FLAG_HIDE_HOLLOW_MIMEJR_1  0x2B2 // Unused Flag
+#define FLAG_HIDE_HOLLOW_MIMEJR_2  0x2B3 // Unused Flag
+#define FLAG_HIDE_HOLLOW_MIMEJR_3  0x2B4 // Unused Flag
 #define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
 #define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag

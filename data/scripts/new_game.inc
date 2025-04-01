@@ -297,7 +297,9 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
 	setflag FLAG_HIDE_VILETHORN_RALTS_2
 	setflag FLAG_HIDE_VILETHORN_RALTS_3
-
+	setflag FLAG_HIDE_HOLLOW_MIMEJR_1
+	setflag FLAG_HIDE_HOLLOW_MIMEJR_2
+	setflag FLAG_HIDE_HOLLOW_MIMEJR_3
 
 	call EventScript_ResetAllBerries
 	end
