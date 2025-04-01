@@ -65,65 +65,61 @@ script WinterlilyHollow_MimeJr_1{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    if (var(VAR_HOLLOW_MIMEJR) == 0){
-        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+    msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
 
-        checkitem(ITEM_SOOTHE_BELL)
+    checkitem(ITEM_SOOTHE_BELL)
+    if (var(VAR_RESULT) == 1){
+        //give soothe bell
+        msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            //give soothe bell
-            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == 1){
-                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
-                setvar(VAR_HOLLOW_MIMEJR, 1)
-                applymovement(6, moves(fly_up))
-                msgbox(format("Wait, where'd it go?"))
+            msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
+            setvar(VAR_HOLLOW_MIMEJR, 1)
+            applymovement(11, moves(fly_up))
+            msgbox(format("Wait, where'd it go?"))
 
-                //setflags
-                removeobject(6)
-                setflag(FLAG_HIDE_HOLLOW_MIMEJR_1)
-                clearflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
+            //setflags
+            removeobject(11)
+            setflag(FLAG_HIDE_HOLLOW_MIMEJR_1)
+            clearflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
 
 
-            } else {
-                release
-            }
         } else {
             release
         }
+    } else {
+        release
     }
 
     releaseall
     end
 }
 
-script WinterlilyHollow_MimeJr_2{
+script WinterlilyHollow_MimeJr_2{   //play with it
     lockall
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    if (var(VAR_HOLLOW_MIMEJR) == 0){
-        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+    msgbox(format("Sniff...sniff...\nMIME JR looks sad...maybe it wants a doll to play with?"))
 
-        checkitem(ITEM_SOOTHE_BELL)
+    checkitem(ITEM_POKE_DOLL)
+    if (var(VAR_RESULT) == 1){
+        //give soothe bell
+        msgbox(format("Give MIME JR a POKESHI DOLL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            //give soothe bell
-            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == 1){
-                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
-                setvar(VAR_HOLLOW_MIMEJR, 1)
-                applymovement(6, moves(fly_up))
-                msgbox(format("Wait, where'd it go?"))
-                //setflags
-                removeobject(6)
-                setflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
-                clearflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
+            msgbox(format("MIME JR takes the POKESHI DOLL and plays with it...\nMIME JR smiles at you."))
+            setvar(VAR_HOLLOW_MIMEJR, 1)
+            applymovement(6, moves(fly_up))
+            msgbox(format("Wait, where'd it go now?"))
+            //setflags
+            removeobject(6)
+            setflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
+            clearflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
 
-            } else {
-                release
-            }
         } else {
             release
         }
+    } else {
+        release
     }
 
     releaseall
@@ -135,28 +131,30 @@ script WinterlilyHollow_MimeJr_3{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    if (var(VAR_HOLLOW_MIMEJR) == 0){
-        msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+    msgbox(format("MIME JR is no longer crying! It's looking at its own reflection in the water instead...maybe it's pondering its future. Understandable, given that its last Trainer treated it so badly."))
+    release
+    delay(30)
+    msgbox(format("MIME JR looks at you.\p...\pIt walks upto you..."))
 
-        checkitem(ITEM_SOOTHE_BELL)
+    checkitem(ITEM_LUXURY_BALL)
+    if (var(VAR_RESULT) == 1){
+        //give soothe bell
+        msgbox(format("Catch MIME JR in a LUXURY BALL?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            //give soothe bell
-            msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == 1){
-                msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\nMIME JR smiles at you."))
-                setvar(VAR_HOLLOW_MIMEJR, 1)
-                applymovement(6, moves(fly_up))
-                msgbox(format("Wait, where'd it go?"))
-                //setflags
-                removeobject(6)
-                setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
-                setflag(FLAG_HOLLOW_MIMEJR)
-            } else {
-                release
-            }
+            msgbox(format("MIME JR doesn't wait for you to catch it - it leaps into the LUXURY BALL on its own!."))
+            removeobject(1)
+            givemon(SPECIES_MIME_JR, 25)
+            playfanfare(MUS_OBTAIN_ITEM)
+            waitfanfare
+            setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
+            setflag(FLAG_HOLLOW_MIMEJR)
+            msgbox(format("Welcome to the team, MIME JR! You'll be happy withh all your new friends!"))
         } else {
-            release
+            applymovement(1, moves(face_down))
+            msgbox(format("MIME JR looks hurt. It goes back to staring at its reflection"))
         }
+    } else {
+        msgbox(format("Maybe it needs a comforting POKEBALL to be in."))
     }
 
     releaseall
