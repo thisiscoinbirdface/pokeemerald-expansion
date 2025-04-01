@@ -624,6 +624,35 @@ MintPurchase_Serious::
 	end
 
 
+Common_EventScript_NurseJoyOnRoute::
+# 393 "data//maps/TempCopyMap/scripts.pory"
+	checkitem ITEM_HEAL_PASS
+# 394 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_NurseJoyOnRoute_2
+# 403 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_2
+# 404 "data//maps/TempCopyMap/scripts.pory"
+	release
+Common_EventScript_NurseJoyOnRoute_1:
+# 406 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_NurseJoyOnRoute_2:
+# 396 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_0
+# 397 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 398 "data//maps/TempCopyMap/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 399 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_1
+# 400 "data//maps/TempCopyMap/scripts.pory"
+	release
+	goto Common_EventScript_NurseJoyOnRoute_1
+
+
 Common_EventScript_MintVendingMachine_Text_0:
 # 6 "data//maps/TempCopyMap/scripts.pory"
 	.string "There's a slot to swipe your TRAINER\n"
@@ -766,3 +795,17 @@ Mart_Mints_SixBadges_Text_2:
 Mart_Mints_SixBadges_Text_3:
 # 126 "data//maps/TempCopyMap/scripts.pory"
 	.string "Modest Mint$"
+
+Common_EventScript_NurseJoyOnRoute_Text_0:
+# 396 "data//maps/TempCopyMap/scripts.pory"
+	.string "Let me heal your {PKMN}.$"
+
+Common_EventScript_NurseJoyOnRoute_Text_1:
+# 399 "data//maps/TempCopyMap/scripts.pory"
+	.string "Stay safe out there!$"
+
+Common_EventScript_NurseJoyOnRoute_Text_2:
+# 403 "data//maps/TempCopyMap/scripts.pory"
+	.string "Sorry, you don't have a HEAL PASS.\n"
+	.string "Please visit a POKéMON CENTER to\l"
+	.string "receive a HEAL PASS.$"

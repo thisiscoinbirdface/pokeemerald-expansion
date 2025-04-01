@@ -389,6 +389,24 @@ script MintPurchase_Serious{
 
 
 
+script Common_EventScript_NurseJoyOnRoute{
+    checkitem(ITEM_HEAL_PASS)
+    if (var(VAR_RESULT) == 1){
+        //heal
+        msgbox(format("Let me heal your {PKMN}."))
+        release
+    	call(Common_EventScript_OutOfCenterPartyHeal)
+        msgbox(format("Stay safe out there!"))
+        release
+    } else {
+        //don't heal
+        msgbox(format("Sorry, you don't have a HEAL PASS. Please visit a POKéMON CENTER to receive a HEAL PASS."))
+        release
+    }
+    releaseall
+    end
+}
+
 
 
 
