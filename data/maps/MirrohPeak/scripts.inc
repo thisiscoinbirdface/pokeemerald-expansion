@@ -461,7 +461,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 296 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 297 "data//maps/MirrohPeak/scripts.pory"
-	delay 60
+	delay 90
 # 299 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 20, MirrohPeak_EventScript_Viniel_Movement_2
 # 300 "data//maps/MirrohPeak/scripts.pory"
@@ -868,7 +868,10 @@ MirrohPeak_EventScript_Somber_Trigger_Text_7:
 
 MirrohPeak_EventScript_Somber_Trigger_Text_8:
 # 232 "data//maps/MirrohPeak/scripts.pory"
-	.string "MOXIE: One of you!$"
+	.string "MOXIE: One of you!\p"
+	.string "...\p"
+	.string "MOXIE: You there, wearing the HEAVY\n"
+	.string "DUTY BOOTS!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_9:
 # 235 "data//maps/MirrohPeak/scripts.pory"

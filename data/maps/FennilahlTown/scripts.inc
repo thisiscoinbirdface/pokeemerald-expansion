@@ -20,7 +20,7 @@ FennilahlTown_EventScript_Man::
 # 12 "data//maps/FennilahlTown/scripts.pory"
 	faceplayer
 # 13 "data//maps/FennilahlTown/scripts.pory"
-	warp MAP_MIRROH_PEAK, 19, 17
+	warp MAP_ANCIENT_MIRROH, 40, 35
 # 15 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_EventScript_Man_Text_0
 # 16 "data//maps/FennilahlTown/scripts.pory"

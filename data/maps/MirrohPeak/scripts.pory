@@ -229,7 +229,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     msgbox(format("MOXIE: Argh! How could I have lost!"))
     applymovement(LOCALID_MOXIE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("MOXIE: One of you!"))
+    msgbox(format("MOXIE: One of you!\p...\pMOXIE: You there, wearing the HEAVY DUTY BOOTS!"))
     release
     applymovement(3, moves(jump_in_place_up))
     msgbox(format("GRUNT: Y-yes boss?\pMOXIE: Hurry up and go inside the dreamstone. Tell MELEA what happened! She needs to be prepared.\pGRUNT: B-but boss, it's -"))
