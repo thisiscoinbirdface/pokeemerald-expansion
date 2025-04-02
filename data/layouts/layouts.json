@@ -5390,6 +5390,16 @@
       "secondary_tileset": "gTileset_AncientMirroh",
       "border_filepath": "data/layouts/AncientMirroh_Tower_4F/border.bin",
       "blockdata_filepath": "data/layouts/AncientMirroh_Tower_4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERLILY_HOLLOW_GYM_B1F",
+      "name": "WinterlilyHollow_GymB1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_WinterlilyGym",
+      "border_filepath": "data/layouts/WinterlilyHollow_GymB1F/border.bin",
+      "blockdata_filepath": "data/layouts/WinterlilyHollow_GymB1F/map.bin"
     }
   ]
 }

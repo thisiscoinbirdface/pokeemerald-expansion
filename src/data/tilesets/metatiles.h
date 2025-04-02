@@ -253,3 +253,6 @@ const u16 gMetatileAttributes_AncientMirroh[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_MirrohSnow[] = INCBIN_U16("data/tilesets/primary/mirroh_snow/metatiles.bin");
 const u16 gMetatileAttributes_MirrohSnow[] = INCBIN_U16("data/tilesets/primary/mirroh_snow/metatile_attributes.bin");
+
+const u16 gMetatiles_WinterlilyGym[] = INCBIN_U16("data/tilesets/secondary/winterlily_gym/metatiles.bin");
+const u16 gMetatileAttributes_WinterlilyGym[] = INCBIN_U16("data/tilesets/secondary/winterlily_gym/metatile_attributes.bin");

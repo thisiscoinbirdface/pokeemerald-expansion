@@ -1344,3 +1344,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AncientMirroh_Tower_3F/scripts.inc"
 
 	.include "data/maps/AncientMirroh_Tower_4F/scripts.inc"
+
+	.include "data/maps/WinterlilyHollow_GymB1F/scripts.inc"
