@@ -206,9 +206,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
     release   
     applymovement(LOCALID_MELEA, moves(walk_up walk_left face_up))
     waitmovement(0)
-    fadescreen(FADE_TO_BLACK)
-    removeobject(LOCALID_MELEA)
-    fadescreen(FADE_FROM_BLACK)
+    applymovement(LOCALID_MELEA, moves(fly_up))
+    waitmovement(0)
     delay(24)
 
     //MOXIE vs player
@@ -245,12 +244,14 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(3, moves(face_down))
     msgbox(format("GRUNT: But boss...what if I don't come back?\pMOXIE: Then we'll send roses to your family - now hurry up or I'll be forced to send roses right now!"))
     release
-    applymovement(3, moves(emote_exclamation_mark face_up))   
+    applymovement(3, moves(face_up emote_exclamation_mark))   
     waitmovement(0)
-    delay(30) 
-    fadescreen(FADE_TO_BLACK)
-    removeobject(3)
-    fadescreen(FADE_FROM_BLACK)    
+    delay(48) 
+    //
+    applymovement(3, moves(fly_up))
+    waitmovement(0)  
+    //
+    delay(24)
     applymovement(LOCALID_MOXIE, moves(face_down))
     waitmovement(0)
     msgbox(format("MOXIE: I know you're going to chase MELEA and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one exit out, and once MELEA takes that exit, you'll be stuck there forever!\pHahaha!"))
@@ -267,11 +268,46 @@ script MirrohPeak_EventScript_Somber_Trigger{
     waitstate
 	delay(30) 
 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(fly_up))
+    waitmovement(0)
+
+
+
+    delay(24)
+    applymovement(LOCALID_MOXIE, moves(face_down))
+    msgbox(format("MOXIE: Now you lot! Let's go get our construction equipment so we can carry all this away.\pGRUNTS: Y-yes boss!!"))
+    release
+
     fadescreen(FADE_TO_BLACK)
-    setobjectxyperm(OBJ_EVENT_ID_PLAYER, 0, 0)
+    removeobject(LOCALID_MOXIE)
+    removeobject(2)    
+    removeobject(5)
+    removeobject(6)    
     fadescreen(FADE_FROM_BLACK)
 
+    delay(60)
+    setobjectxyperm(20, 19, 14)
+    addobject(20)
+    delay(30)
+    applymovement(20, moves(walk_up * 5 walk_left face_up))
+    waitmovement(0)
+    delay(16)
+    applymovement(20, moves(emote_question_mark))
+    waitmovement(0)    
+    delay(60)
 
+    applymovement(20, moves(emote_exclamation_mark))
+    waitmovement(0)  
+    delay(30)
+    setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay        
+    special(ShakeCamera)
+    waitstate
+	delay(30) 
+    applymovement(20, moves(fly_up))
+    waitmovement(0)  
 
     //Flags, quests etc
     setflag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)  
