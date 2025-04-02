@@ -131,14 +131,14 @@
     "AncientMirroh_Tower",
     "AncientMirroh_Tower_2F",
     "AncientMirroh_Tower_3F",
-    "AncientMirroh_Tower_4F",
+    "AncientMirroh_Tower_4F"
+  ],
+  "gMapGroup_Phase4": [
     "WinterlilyHollow",
     "WinterlilyHollow_PokemonCenter",
     "WinterlilyHollow_Pokemart",
     "WinterlilyHollow_Houses",
-    "WinterlilyHollowGym"
-  ],
-  "gMapGroup_Phase4": [
+    "WinterlilyHollowGym",
     "LilyPond",
     "IvyRiver",
     "IvyRiver_ResearchFacility",
