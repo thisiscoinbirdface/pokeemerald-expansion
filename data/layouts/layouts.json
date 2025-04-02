@@ -5304,10 +5304,10 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW_GYM",
       "name": "WinterlilyHollowGym_Layout",
-      "width": 21,
-      "height": 20,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "width": 9,
+      "height": 12,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/WinterlilyHollowGym/border.bin",
       "blockdata_filepath": "data/layouts/WinterlilyHollowGym/map.bin"
     },

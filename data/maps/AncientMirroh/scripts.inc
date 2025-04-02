@@ -69,10 +69,10 @@ AncientMirroh_KolhaMeeting_Trigger::
 # 44 "data//maps/AncientMirroh/scripts.pory"
 	removeobject 7
 # 45 "data//maps/AncientMirroh/scripts.pory"
-	removeobject LOCALID_KOHLA
-# 46 "data//maps/AncientMirroh/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_KOHLA_MEETING
+	setobjectxyperm LOCALID_KOHLA, 52, 38
 # 47 "data//maps/AncientMirroh/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_KOHLA_MEETING
+# 48 "data//maps/AncientMirroh/scripts.pory"
 	releaseall
 	end
 
@@ -174,6 +174,8 @@ AncientMirroh_KolhaMeeting_Trigger_Movement_8:
 	walk_left
 # 41 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
+# 41 "data//maps/AncientMirroh/scripts.pory"
+	walk_down
 # 41 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
 # 41 "data//maps/AncientMirroh/scripts.pory"
