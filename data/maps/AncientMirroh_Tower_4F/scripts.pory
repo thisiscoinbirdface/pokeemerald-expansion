@@ -188,6 +188,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     //final
     applymovement(LOCALID_KOHLA, moves(jump_in_place_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     msgbox(format("KOHLA: they got away! We've got to find a way back somehow...but they took the dreamstone out!\p...\pKOHLA: You're saying that since I came separately, there must be another dreamstone somewhere? Then what are we waiting for?\pKOHLA: I'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
     release

@@ -300,6 +300,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_HOLLOW_MIMEJR_1
 	setflag FLAG_HIDE_HOLLOW_MIMEJR_2
 	setflag FLAG_HIDE_HOLLOW_MIMEJR_3
+	setflag FLAG_HIDE_LILY_POND_KOHLA
 
 	call EventScript_ResetAllBerries
 	end

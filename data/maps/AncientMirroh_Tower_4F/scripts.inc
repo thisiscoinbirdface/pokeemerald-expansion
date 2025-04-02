@@ -291,22 +291,24 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 190 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_12
 # 191 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_13
 # 192 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_15
-# 193 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	release
-# 195 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_4
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_13
-# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	waitmovement 0
+# 193 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_15
+# 194 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	release
+# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_14
 # 198 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 199 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	removeobject LOCALID_KOHLA
-# 202 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_KORAIDON
 # 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_KORAIDON
+# 204 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	releaseall
 	end
 
@@ -408,19 +410,25 @@ AncientMirroh_Tower_4F_MainTrigger_Movement_12:
 	jump_in_place_left
 	step_end
 
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 191 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 AncientMirroh_Tower_4F_MainTrigger_Movement_13:
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 191 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	face_right
+	step_end
+
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+AncientMirroh_Tower_4F_MainTrigger_Movement_14:
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_left
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
 	step_end
 
@@ -525,7 +533,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_14:
 	.string "aside!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_15:
-# 192 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 193 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "KOHLA: they got away! We've got to find\n"
 	.string "a way back somehow...but they took the\l"
 	.string "dreamstone out!\p"

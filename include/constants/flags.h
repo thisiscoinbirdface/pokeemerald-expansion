@@ -95,12 +95,12 @@
 
 #define FLAG_HIDE_MIRROHBASECAMP_HISTORIAN  0x264 // to hide the old lady at home
 #define FLAG_HIDE_GRAVEYARD_HISTORIAN  0x265 // to hide the old lady at the graveyard
-#define FLAG_ANCIENT_MIRROH_KOHLA_MEETING  0x266 // Unused Flag
-#define FLAG_ANCIENT_MIRROH_KORAIDON  0x267 // Unused Flag
-#define FLAG_ANCIENT_MIRROH_KOHLA_ESCAPE  0x268 // Unused Flag
-#define FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_ANCIENT_MIRROH_KOHLA_MEETING  0x266 // run into the grunt and kohla in ancient mir
+#define FLAG_ANCIENT_MIRROH_KORAIDON  0x267 // the koraidon cutscene
+#define FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER  0x268 // the last trigger (after exiting the cave, kohla says come here)
+#define FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS  0x269 // item flag for heavy duty boots
+#define FLAG_ANCIENT_MIRROH_DONE  0x26A // complete the segment
+#define FLAG_HIDE_LILY_POND_KOHLA  0x26B // hides kohla in the lily pond
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag

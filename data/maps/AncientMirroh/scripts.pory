@@ -42,9 +42,71 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     waitmovement(0)   
 
     removeobject(7)
-    setobjectxyperm(LOCALID_KOHLA, 52, 38)    
+    setobjectxyperm(LOCALID_KOHLA, 26, 55)    
+    setobjectxy(LOCALID_KOHLA, 26, 55)    
 
     setflag(FLAG_ANCIENT_MIRROH_KOHLA_MEETING)
     releaseall
+    end
+}
+
+
+
+
+
+script AncientMirroh_KolhaFinal_Trigger {
+    if (flag(FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER)) {end}
+
+    lockall
+    msgbox(format("KOHLA: There you are! Hurry up."))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left * 4))
+    waitmovement(0)
+    setflag(FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER)
+    goto(AncientMirroh_GoBackYesNo)
+}
+
+script AncientMirroh_GoBackYesNo{
+    msgbox(format("KOHLA: Do you want to take the dreamstone back?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        //exit
+        msgbox(format("KOHLA: Let's get ready then."))
+        release
+        applymovement(LOCALID_KOHLA, moves(face_up))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up face_left))
+        waitmovement(0)
+        delay(24)
+        msgbox(format("KOHLA: 3...2...1..."))
+        release
+        delay(24)
+        setvar(VAR_0x8004, 2)  //vertical pan
+        setvar(VAR_0x8005, 2)  //horizontal pan
+        setvar(VAR_0x8006, 8)  //num shakes
+        setvar(VAR_0x8007, 5)  //shake delay        
+        special(ShakeCamera)        
+        clearflag(FLAG_HIDE_LILY_POND_KOHLA)
+        setflag(FLAG_ANCIENT_MIRROH_DONE)
+
+        //quest
+
+
+        fadescreen(FADE_TO_BLACK)
+        warp(MAP_LILY_POND, 12, 4)
+
+    } else {
+        msgbox(format("KOHLA: What are you waiting for?"))        
+    }
+
+
+    releaseall
+    end
+}
+
+
+script AncientMirroh_Dreamstone{
+    lockall
+    msgbox(format("It's a dreamstone...the surface is so smooth. It doesn't look natural at all."))
+    release
     end
 }
