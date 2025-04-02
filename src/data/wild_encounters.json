@@ -13740,12 +13740,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SCREAM_TAIL"
+                "species": "SPECIES_ANORITH"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SCREAM_TAIL"
+                "species": "SPECIES_ARCHEN"
               }
             ]
           }
@@ -13764,7 +13764,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_KABUTO"
+                "species": "SPECIES_OMANYTE"
               },
               {
                 "min_level": 5,
@@ -13774,12 +13774,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_OMANYTE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_OMANYTE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_AMAURA"
+                "species": "SPECIES_KABUTO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 5,
@@ -13800,21 +13815,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_ARCTOVISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ARCTOVISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FLUTTER_MANE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FLUTTER_MANE"
               }
             ]
           }
@@ -13848,17 +13848,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_AMAURA"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ARCTOVISH"
+                "species": "SPECIES_OMANYTE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_OMANYTE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_OMANYTE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_OMANYTE"
               },
               {
                 "min_level": 5,
@@ -13874,16 +13884,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_ARCTOVISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FLUTTER_MANE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FLUTTER_MANE"
               }
             ]
           }

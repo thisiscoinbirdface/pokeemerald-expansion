@@ -301,10 +301,12 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_13
 # 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 198 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	removeobject LOCALID_KOHLA
-# 201 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_KORAIDON
 # 202 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_KORAIDON
+# 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	releaseall
 	end
 

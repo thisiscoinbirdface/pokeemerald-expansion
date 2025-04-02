@@ -38,11 +38,12 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     msgbox(format("KOHLA: {PLAYER}? How'd you get over here?\p...\pKOHLA: So that's what happened. I must have reached the peak after you did, then. When I came, nobody was there. I found this big machine and pressed a button, and then suddenly got transported here!\p...\pKOHLA: Slow as usual, you are. I came after you and still managed to catch up. Bet you wasted your time exploring this area and catching {PKMN} while MELEA went on to catch the ANCIENT TERROR!\p...\pKOHLA: Well I'm here to do the right thing, so get out of my way. Go on - move!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 face_down))
-    applymovement(LOCALID_KOHLA, moves(walk_up * 2 walk_left * 3 walk_down * 7))   
+    applymovement(LOCALID_KOHLA, moves(walk_up * 2 walk_left * 3 walk_down * 8))   
     waitmovement(0)   
 
     removeobject(7)
-    removeobject(LOCALID_KOHLA)
+    setobjectxyperm(LOCALID_KOHLA, 52, 38)    
+
     setflag(FLAG_ANCIENT_MIRROH_KOHLA_MEETING)
     releaseall
     end
