@@ -1391,8 +1391,10 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around CORMORIA.");
-const u8 gText_SideQuestDoneDesc_2[] = _("???");    //main quest
-const u8 gText_SideQuestDoneDesc_3[] = _("???");    //ranger side quest
+//main quest1
+const u8 gText_SideQuestDoneDesc_2[] = _("A total failure! I couldn't stop TEAM SOMBER\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");    
+//ranger side quest
+const u8 gText_SideQuestDoneDesc_3[] = _("???");    
 const u8 gText_SideQuestDoneDesc_4[] = _("AZURILL has recovered and is happy again!\nA PECHA BERRY a day keeps the doctor away.");
 const u8 gText_SideQuestDoneDesc_5[] = _("I got BREECH his stone back...and found him\na new companion! I hope to see him and\nCLEFAIRY again soon!");
 const u8 gText_SideQuestDoneDesc_6[] = _("SKITTY is reunited with her trainer!");
@@ -1490,8 +1492,8 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest2_Desc6[] = _("I need to talk to Martha the historian, who\nlives at the MIRROH BASE CAMP. Can she give\nus a clue as to TEAM SOMBER's motives?");
     const u8 gText_SubQuest2_Desc7[] = _("What could TEAM SOMBER possibly want with\nthe ANCIENT TERROR? I'll find my answers at\nMT MIRROH...if I hurry!'");
     const u8 gText_SubQuest2_Desc8[] = _("I got warped into the past again! And Somber\nAdmin MELEA is here too. I've got to stop\nher from catching the ANCIENT TERROR!");
-    const u8 gText_SubQuest2_Desc9[] = _("Description Sub 9");
-    const u8 gText_SubQuest2_Desc10[] = _("Description Sub 10");
+    const u8 gText_SubQuest2_Desc9[] = _("Somber Admin MELEA escaped with the ANCIENT\nTERROR! But KOHLA found his way here too,\nso there should be another exit out.");
+    const u8 gText_SubQuest2_Desc10[] = _("A total failure! I couldn't stop TEAM SOMBER\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");
 
     //POKEMON RANGER (ONGOING BIG SIDE QUEST)
     const u8 gText_SubQuest3_Name1[] = _("A Ranger's First Assignment");

@@ -1,0 +1,27 @@
+mapscripts LilyPond_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: LilyPond_OnFrame
+    ]
+}
+
+script LilyPond_OnFrame{
+    if (flag(FLAG_HIDE_LILY_POND_KOHLA)){end}
+
+    lockall
+    msgbox(format("KOHLA: Well...that was certainly a first for me."))
+    
+    applymovement(2, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+    msgbox(format("KOHLA: But had I been a little faster, I might have been able to stop them from getting that ANCIENT TERROR!\pKOHLA: {PLAYER}, you failed. You were there on time and yet you couldn't stop them. And now they're going to do who knows what with that ANCIENT TERROR, and it'll be on YOUR shoulders.\pKOHLA: Not mine. YOURS!\p...\pKOHLA: At MT CERAM, you showed me the value of strength. But here, on MT MIRROH, you showed me the consequences of not using your strength.\pKOHLA: I disliked you because I thought you didn't deserve the attention you got. But now? Now I look down upon you. You're a failure whose mess I have to clean up.\p...\pKOHLA: I'm going to chase TEAM SOMBER down and get that ANCIENT TERROR back from them. It'd be best if we didn't see each other again. You're off the case. Do whatever you like now."))
+    release
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+
+    setflag(FLAG_HIDE_LILY_POND_KOHLA)
+    completequest(QUEST_DREAMSTONE_MYSTERIES)
+}
+
+
