@@ -5304,8 +5304,8 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW_GYM",
       "name": "WinterlilyHollowGym_Layout",
-      "width": 9,
-      "height": 12,
+      "width": 20,
+      "height": 25,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/WinterlilyHollowGym/border.bin",
@@ -5394,9 +5394,9 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW_GYM_B1F",
       "name": "WinterlilyHollow_GymB1F_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_Building",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_WinterlilyGym",
       "border_filepath": "data/layouts/WinterlilyHollow_GymB1F/border.bin",
       "blockdata_filepath": "data/layouts/WinterlilyHollow_GymB1F/map.bin"

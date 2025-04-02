@@ -23,6 +23,8 @@ mapscripts MirrohPeak_MapScripts{}
 
 
 script MirrohPeak_EventScript_Viniel_Trigger0{
+    if (flag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)) {end}
+
     lockall
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
 
@@ -35,6 +37,8 @@ script MirrohPeak_EventScript_Viniel_Trigger0{
 }
 
 script MirrohPeak_EventScript_Viniel_Trigger1{
+    if (flag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)) {end}
+    
     lockall
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
 

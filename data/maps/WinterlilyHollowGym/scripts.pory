@@ -1,0 +1,10 @@
+mapscripts WinterlilyHollowGym_MapScripts{
+    MAP_SCRIPT_ON_RESUME: WinterlilyHollowGym_SetHoleWarp
+}
+
+script WinterlilyHollowGym_SetHoleWarp{
+    setstepcallback(STEP_CB_CRACKED_FLOOR)
+	setholewarp(MAP_WINTERLILY_HOLLOW_GYM_B1F)
+	end
+}
+
