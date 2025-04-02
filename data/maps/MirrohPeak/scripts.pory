@@ -1,6 +1,6 @@
 raw`
     .set LOCALID_MOXIE, 4
-    .set LOCALID_MELEA, 14
+    .set LOCALID_MELEA, 13
     .set LOCALID_VINIEL, 16
     .set LOCALID_AMPHAROS, 18
 `
@@ -186,7 +186,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
             doweather
 
     delay(60)    
-    msgbox(format("MELEA: Go on, MOXIE. Start the Dreamalyser."))
+    msgbox(format("MELEA: Go on, MOXIE. Start the DREAMALYSER."))
     release
     applymovement(LOCALID_MOXIE, moves(walk_down walk_left face_up))
     waitmovement(0)
@@ -222,7 +222,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     release
 
     //Battle
-    trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
+//    trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
 
     //Post-battle
     applymovement(LOCALID_MOXIE, moves(jump_in_place_down emote_exclamation_mark))
@@ -241,11 +241,13 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(3, moves(walk_down walk_right * 2 walk_up * 4 walk_left face_up)) 
     waitmovement(0) 
     applymovement(LOCALID_MOXIE, moves(face_up))
-    delay(30)
+    delay(60)
     applymovement(3, moves(face_down))
     msgbox(format("GRUNT: But boss...what if I don't come back?\pMOXIE: Then we'll send roses to your family - now hurry up or I'll be forced to send roses right now!"))
     release
-    applymovement(3, moves(emote_exclamation_mark face_up))    
+    applymovement(3, moves(emote_exclamation_mark face_up))   
+    waitmovement(0)
+    delay(30) 
     fadescreen(FADE_TO_BLACK)
     removeobject(3)
     fadescreen(FADE_FROM_BLACK)    
@@ -264,6 +266,12 @@ script MirrohPeak_EventScript_Somber_Trigger{
     special(ShakeCamera)
     waitstate
 	delay(30) 
+
+    fadescreen(FADE_TO_BLACK)
+    setobjectxyperm(OBJ_EVENT_ID_PLAYER, 0, 0)
+    fadescreen(FADE_FROM_BLACK)
+
+
 
     //Flags, quests etc
     setflag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)  
