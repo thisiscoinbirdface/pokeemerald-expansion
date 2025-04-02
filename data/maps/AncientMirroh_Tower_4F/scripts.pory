@@ -17,18 +17,23 @@ script AncientMirroh_Tower_4F_MainTrigger{
     if (flag(FLAG_ANCIENT_MIRROH_KORAIDON)) {end}
 
     lockall
+
     delay(30)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4))
     waitmovement(0)
 
+    //remove the heavy duty boots for now
+    setflag(FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS)
+    removeobject(6)
+
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     waitmovement(0)
     special(RemoveCameraObject)
 
     delay(30)
 
-    applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark))
+    applymovement(LOCALID_KOHLA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(16)
     msgbox(format("KOHLA: Wait right there, TEAM SOMBER! The ACE ROOKIE is here now, so stop your dastardly - "))
@@ -39,11 +44,6 @@ script AncientMirroh_Tower_4F_MainTrigger{
     msgbox(format("MELEA: Shh! It's sleeping. If you wake it up, we'll all be goners!"))
     release
     delay(30)
-
-    special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
-    waitmovement(0)
-    special(RemoveCameraObject)
 
     delay(30)
 
@@ -56,7 +56,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     applymovement(LOCALID_MELEA, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she did not have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why TEAM SOMBER exists."))
+    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why TEAM SOMBER exists."))
     release
 
 
@@ -68,7 +68,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("MELEA: Us? What do we want? Power, obviously. You're asking the wrong question.\pMELEA: Of course, that's forgivable, considering your age.\pMELEA: The real question you should be asking...is why."))
+    msgbox(format("MELEA: Us? What do we want? Power, obviously. You're asking the wrong question.\pMELEA: Forgivable, considering your age.\pMELEA: The real question you should be asking...is why."))
     release
 
     applymovement(3, moves(emote_question_mark))
@@ -76,9 +76,6 @@ script AncientMirroh_Tower_4F_MainTrigger{
     delay(16)
     msgbox(format("GRUNT: Y-yeah, boss! Even I wanna know why."))
     release
-
-
-
 
     setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
@@ -88,19 +85,130 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
     msgbox(format("MELEA: SILENCE!\pMELEA: How dare you interrupt me?"))
+    release
 	delay(30)
 
     //Koraidon wakes up
+    playmoncry(SPECIES_KORAIDON, CRY_MODE_NORMAL)
+    waitmoncry
+    delay(16)
+    applymovement(3, moves(face_up emote_exclamation_mark))
+    applymovement(LOCALID_KOHLA, moves(face_up emote_exclamation_mark))
+    applymovement(LOCALID_MELEA, moves(face_up emote_exclamation_mark))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up emote_exclamation_mark))
+    waitmovement(0)
+
+    delay(60)
+
+    msgbox(format("GRUNT: Uh...boss? I think we woke it up..."))
+    release
+
+    setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay        
+    special(ShakeCamera)
+    playmoncry(SPECIES_KORAIDON, CRY_MODE_NORMAL)
+    waitmoncry
+    
+    delay(30)
+    applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("MELEA: We've got to hurry! I wasted too much time talking to you two."))
+    release
+    applymovement(LOCALID_MELEA, moves(face_down))
+    waitmovement(0)    
+    msgbox(format("MELEA: GRUNT! MASTER BALL!"))
+    release
+
+    applymovement(3, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Y-yes boss! Right here boss!\pGRUNT: These HEAVY DUTY BOOTS are making it hard to move..."))
+    release    
+
+    applymovement(3, moves(walk_up face_right))
+    waitmovement(0)
+    delay(30)
+
+    applymovement(3, moves(face_up))
+    applymovement(LOCALID_MELEA, moves(face_up))
+    waitmovement(0)
+    delay(30)
+
+    applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
+    waitmovement(0)    
+    msgbox(format("MELEA: Come, ANCIENT TERROR! Let TEAM SOMBER show you the future!"))
+    release
+
+    fadescreen(FADE_TO_WHITE)
+    playmoncry(SPECIES_KORAIDON, CRY_MODE_NORMAL)
+    waitmoncry
+    removeobject(4)
+    fadescreen(FADE_FROM_WHITE)
+
+    //Exit
+    applymovement(3, moves(face_down))
+    applymovement(LOCALID_MELEA, moves(face_down))
+    waitmovement(0)
+    delay(30)    
+    msgbox(format("MELEA: And now it's time to bid adieu! I hope you enjoy your time here in ANCIENT CORMORIA - because you'll never leave!\pHahaha!"))
+    release
+    applymovement(3, moves(face_up))
+    applymovement(LOCALID_MELEA, moves(walk_up * 2))    
+    waitmovement(0)    
+    delay(30)
+    applymovement(LOCALID_MELEA, moves(face_down))    
+    waitmovement(0)    
+    delay(30)
+
+    msgbox(format("MELEA: What are you doing?!\pGRUNT: Boss, my HEAVY DUTY BOOTS got stuck on these cracks!\pMELEA: Hurry, idiot! Toss those boots aside!"))
+    release
+
+    clearflag(FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS)
+    addobject(6)
+    delay(30)
+    applymovement(3, moves(walk_up * 2))    
+    waitmovement(0)    
+    delay(16) 
+
+    //fadeout
+    fadescreen(FADE_TO_BLACK) 
+    removeobject(LOCALID_MELEA)
+    removeobject(3)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)    
 
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    //final
+    applymovement(LOCALID_KOHLA, moves(jump_in_place_left))
+    waitmovement(0)
+    msgbox(format("KOHLA: they got away! We've got to find a way back somehow...but they took the dreamstone out!\p...\pKOHLA: You're saying that since I came separately, there must be another dreamstone somewhere? Then what are we waiting for?\pKOHLA: I'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(LOCALID_KOHLA, moves(walk_down walk_left walk_down * 4))
+    waitmovement(0)
+    removeobject(LOCALID_KOHLA)
 
 
-
-
-
-
+    //flags
     setflag(FLAG_ANCIENT_MIRROH_KORAIDON)
     releaseall
     end
+
+
+
 }
+
+
+
+
+
 

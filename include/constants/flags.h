@@ -98,7 +98,7 @@
 #define FLAG_ANCIENT_MIRROH_KOHLA_MEETING  0x266 // Unused Flag
 #define FLAG_ANCIENT_MIRROH_KORAIDON  0x267 // Unused Flag
 #define FLAG_ANCIENT_MIRROH_KOHLA_ESCAPE  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
+#define FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
@@ -1174,6 +1174,12 @@
 #define FLAG_ITEM_GASTREE_B                             0x422
 #define FLAG_ITEM_GALECREST_D                    0x423
 #define FLAG_ITEM_GALECREST_E                  0x424
+
+
+
+
+
+
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
