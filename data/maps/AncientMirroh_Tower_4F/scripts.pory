@@ -1,3 +1,8 @@
+raw`
+    .set LOCALID_KOHLA, 5
+    .set LOCALID_MELEA, 2
+`
+
 mapscripts AncientMirroh_Tower_4F_MapScripts{
     MAP_SCRIPT_ON_RESUME: AncientMirroh_Tower_4F_SetHoleWarp
 }
@@ -6,5 +11,96 @@ script AncientMirroh_Tower_4F_SetHoleWarp{
     setstepcallback(STEP_CB_CRACKED_FLOOR)
 	setholewarp(MAP_ANCIENT_MIRROH_TOWER_3F)
 	end
+}
+
+script AncientMirroh_Tower_4F_MainTrigger{
+    if (flag(FLAG_ANCIENT_MIRROH_KORAIDON)) {end}
+
+    lockall
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3))
+    waitmovement(0)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    delay(30)
+
+    applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("KOHLA: Wait right there, TEAM SOMBER! The ACE ROOKIE is here now, so stop your dastardly - "))
+
+    applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
+    waitmovement(0)
+
+    msgbox(format("MELEA: Shh! It's sleeping. If you wake it up, we'll all be goners!"))
+    release
+    delay(30)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    delay(30)
+
+    applymovement(LOCALID_MELEA, moves(face_down))
+    waitmovement(0)
+
+    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your PROFESSOR TENEBRIS unlocked the latent potential within the dreams and memories of {PKMN} today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
+    release
+    delay(30)
+
+    applymovement(LOCALID_MELEA, moves(jump_in_place_down))
+    waitmovement(0)
+    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she did not have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why TEAM SOMBER exists."))
+    release
+
+
+    applymovement(LOCALID_KOHLA, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("KOHLA: I don't get it! What do you people even plan to do?"))
+    release
+
+    applymovement(LOCALID_MELEA, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("MELEA: Us? What do we want? Power, obviously. You're asking the wrong question.\pMELEA: Of course, that's forgivable, considering your age.\pMELEA: The real question you should be asking...is why."))
+    release
+
+    applymovement(3, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Y-yeah, boss! Even I wanna know why."))
+    release
+
+
+
+
+    setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay        
+    special(ShakeCamera)
+    applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("MELEA: SILENCE!\pMELEA: How dare you interrupt me?"))
+	delay(30)
+
+    //Koraidon wakes up
+
+
+
+
+
+
+
+
+    setflag(FLAG_ANCIENT_MIRROH_KORAIDON)
+    releaseall
+    end
 }
 

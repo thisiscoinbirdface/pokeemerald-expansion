@@ -95,9 +95,9 @@
 
 #define FLAG_HIDE_MIRROHBASECAMP_HISTORIAN  0x264 // to hide the old lady at home
 #define FLAG_HIDE_GRAVEYARD_HISTORIAN  0x265 // to hide the old lady at the graveyard
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_ANCIENT_MIRROH_KOHLA_MEETING  0x266 // Unused Flag
+#define FLAG_ANCIENT_MIRROH_KORAIDON  0x267 // Unused Flag
+#define FLAG_ANCIENT_MIRROH_KOHLA_ESCAPE  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag

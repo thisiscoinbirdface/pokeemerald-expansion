@@ -173,7 +173,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
 
     applymovement(LOCALID_MOXIE, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MOXIE: Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern."))
+    msgbox(format("MOXIE: Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern.\pMOXIE: After our defeats at your hand, LEADER was most displeased with the two of us. Most displeased indeed..."))
     release
     delay(60)
     applymovement(LOCALID_MELEA, moves(jump_in_place_up))

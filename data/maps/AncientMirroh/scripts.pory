@@ -7,8 +7,15 @@ mapscripts AncientMirroh_MapScripts{}
 
 
 script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla starting)
+    if (flag(FLAG_ANCIENT_MIRROH_KOHLA_MEETING)) {end}
+
     lockall
+
     delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(7, moves(jump_in_place_left))    
+    waitmovement(0)
+    delay(16)
     msgbox(format("GRUNT: Darn! These HEAVY DUTY BOOTS are really slowing me down! I gotta catch up to boss MELEA!"))
     release
     applymovement(7, moves(jump_in_place_right emote_exclamation_mark))
@@ -22,11 +29,21 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     release
     setobjectxyperm(LOCALID_KOHLA, 52, 38)
     addobject(LOCALID_KOHLA)
-    applymovement(LOCALID_KOHLA, moves(walk_left * 7 walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(LOCALID_KOHLA, moves(walk_left * 8 walk_up))
     waitmovement(0)
 
+    applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("KOHLA: {PLAYER}? How'd you get over here?\p...\pKOHLA: So that's what happened. I must have reached the peak after you did, then. When I came, nobody was there. I found this big machine and pressed a button, and then suddenly got transported here!\p...\pKOHLA: Slow as usual, you are. I came after you and still managed to catch up. Bet you wasted your time exploring this area and catching {PKMN} while MELEA went on to catch the ANCIENT TERROR!\p...\pKOHLA: Well I'm here to do the right thing, so get out of my way. Go on - move!"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 face_down))
+    applymovement(LOCALID_KOHLA, moves(walk_up * 2 walk_left * 3 walk_down * 7))   
+    waitmovement(0)   
 
-
+    removeobject(7)
+    removeobject(LOCALID_KOHLA)
+    setflag(FLAG_ANCIENT_MIRROH_KOHLA_MEETING)
     releaseall
     end
 }

@@ -817,7 +817,10 @@ MirrohPeak_EventScript_Somber_Trigger_Text_2:
 	.string "child.\p"
 	.string "I must acknowledge that...despite your\n"
 	.string "insufferable propensity for ruining\l"
-	.string "plans which are none of your concern.$"
+	.string "plans which are none of your concern.\p"
+	.string "MOXIE: After our defeats at your hand,\n"
+	.string "LEADER was most displeased with the\l"
+	.string "two of us. Most displeased indeed...$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_3:
 # 181 "data//maps/MirrohPeak/scripts.pory"
