@@ -294,7 +294,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     delay(16)
     applymovement(20, moves(emote_question_mark))
     waitmovement(0)    
-    delay(60)
+    delay(90)
 
     applymovement(20, moves(emote_exclamation_mark))
     waitmovement(0)  
