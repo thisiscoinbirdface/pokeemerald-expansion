@@ -222,6 +222,13 @@ static const u32 sBrendanMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/brend
 static const u16 sMayMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
 static const u32 sMayMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
 
+//custom characters
+static const u32 sMunucuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
+static const u16 sMunucuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
+static const u32 sShububuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
+static const u16 sShububuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
+static const u32 sGubukingMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
+static const u16 sGubukingMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
 
 //
 //  Sprite Data for Mugshots and Icon Shadows 
@@ -260,6 +267,47 @@ static const struct SpritePalette sSpritePal_MayMugshot =
     .data = sMayMugshot_Pal,
     .tag = TAG_MUGSHOT
 };
+
+//custom characters
+static const struct CompressedSpriteSheet sSpriteSheet_MunucuMugshot =
+{
+    .data = sMunucuMugshot_Gfx,
+    .size = 64*64*1/2,
+    .tag = TAG_MUGSHOT,
+};
+
+static const struct SpritePalette sSpritePal_MunucuMugshot =
+{
+    .data = sMunucuMugshot_Pal,
+    .tag = TAG_MUGSHOT
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_ShububuMugshot =
+{
+    .data = sShububuMugshot_Gfx,
+    .size = 64*64*1/2,
+    .tag = TAG_MUGSHOT,
+};
+
+static const struct SpritePalette sSpritePal_ShububuMugshot =
+{
+    .data = sShububuMugshot_Pal,
+    .tag = TAG_MUGSHOT
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_GubukingMugshot =
+{
+    .data = sGubukingMugshot_Gfx,
+    .size = 64*64*1/2,
+    .tag = TAG_MUGSHOT,
+};
+
+static const struct SpritePalette sSpritePal_GubukingMugshot =
+{
+    .data = sGubukingMugshot_Pal,
+    .tag = TAG_MUGSHOT
+};
+
 
 static const union AnimCmd sSpriteAnim_Mugshot[] =
 {
@@ -666,21 +714,21 @@ static bool8 MainMenu_LoadGraphics(void) // Load all the tilesets, tilemaps, spr
                 break;
 
             case MUNUCU:
-                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
-                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadCompressedSpriteSheet(&sSpriteSheet_MunucuMugshot);
+                LoadSpritePalette(&sSpritePal_MunucuMugshot);
                 LoadPalette(sMainBgPalette, 0, 32);            
                 break;
 
             case SHUBUBU:
-                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
-                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadCompressedSpriteSheet(&sSpriteSheet_ShububuMugshot);
+                LoadSpritePalette(&sSpritePal_ShububuMugshot);
                 LoadPalette(sMainBgPalette, 0, 32);            
                 break;
 
 
             case GUBUKING:
-                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
-                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadCompressedSpriteSheet(&sSpriteSheet_Gubukingugshot);
+                LoadSpritePalette(&sSpritePal_GubukingMugshot);
                 LoadPalette(sMainBgPalette, 0, 32);            
                 break;
 
