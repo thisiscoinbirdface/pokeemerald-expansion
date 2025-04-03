@@ -48,6 +48,53 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    },
+    {
+      "type": "sign",
+      "x": 37,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WinterlilyHollow_GymB1F_Button"
+    }
   ]
 }

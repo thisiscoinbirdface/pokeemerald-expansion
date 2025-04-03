@@ -1,8 +1,16 @@
 mapscripts WinterlilyHollow_GymB1F_MapScripts{}
 
+//VAR_TEMP_0 = the map layout (0 for normal, 1 for switched)
+
 script WinterlilyHollow_GymB1F_Button{
     lockall
-    
+    if (var(VAR_TEMP_0) == 0){
+        setlayout(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_SWITCHED)
+    } else {
+        setlayout(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F)        
+    }
+    releaseall
+    end
 }
 
 
