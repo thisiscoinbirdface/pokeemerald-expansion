@@ -1,9 +1,7 @@
 mapscripts WinterlilyHollow_GymB1F_MapScripts{
     MAP_SCRIPT_ON_TRANSITION {
-        setvar(VAR_HOLLOW_GYM_LAYOUT, 0)
         goto(WinterlilyHollow_GymB1F_SetLayout)
     }
-    
 }
 
 //
