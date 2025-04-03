@@ -1370,6 +1370,7 @@ u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_MAY_FISHING:
     case OBJ_EVENT_GFX_MAY_WATERING:
         return FEMALE;
+        break;
     case OBJ_EVENT_GFX_BRENDAN_NORMAL:
     case OBJ_EVENT_GFX_BRENDAN_MACH_BIKE:
     case OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE:
@@ -1379,6 +1380,7 @@ u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_BRENDAN_FISHING:
     case OBJ_EVENT_GFX_BRENDAN_WATERING:
         return MALE;
+        break;
     case OBJ_EVENT_GFX_MUNUCU_NORMAL:
     case OBJ_EVENT_GFX_MUNUCU_MACH_BIKE:
     case OBJ_EVENT_GFX_MUNUCU_ACRO_BIKE:
@@ -1387,7 +1389,8 @@ u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_MUNUCU_UNDERWATER:
     case OBJ_EVENT_GFX_MUNUCU_FISHING:
     case OBJ_EVENT_GFX_MUNUCU_WATERING:
-        return MUNUCU;     
+        return MUNUCU;    
+        break; 
     case OBJ_EVENT_GFX_SHUBUBU_NORMAL:
     case OBJ_EVENT_GFX_SHUBUBU_MACH_BIKE:
     case OBJ_EVENT_GFX_SHUBUBU_ACRO_BIKE:
@@ -1396,7 +1399,8 @@ u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_SHUBUBU_UNDERWATER:
     case OBJ_EVENT_GFX_SHUBUBU_FISHING:
     case OBJ_EVENT_GFX_SHUBUBU_WATERING:
-        return SHUBUBU;            
+        return SHUBUBU;  
+        break;          
     case OBJ_EVENT_GFX_GUBUKING_NORMAL:
     case OBJ_EVENT_GFX_GUBUKING_MACH_BIKE:
     case OBJ_EVENT_GFX_GUBUKING_ACRO_BIKE:
@@ -1405,7 +1409,8 @@ u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_GUBUKING_UNDERWATER:
     case OBJ_EVENT_GFX_GUBUKING_FISHING:
     case OBJ_EVENT_GFX_GUBUKING_WATERING:
-        return SHUBUBU;   
+        return GUBUKING;   
+        break;
 
 
         default:
