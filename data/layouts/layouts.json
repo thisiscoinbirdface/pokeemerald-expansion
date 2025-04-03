@@ -5394,7 +5394,7 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW_GYM_B1F",
       "name": "WinterlilyHollow_GymB1F_Layout",
-      "width": 40,
+      "width": 42,
       "height": 40,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_WinterlilyGym",
