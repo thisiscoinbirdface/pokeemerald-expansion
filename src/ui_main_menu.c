@@ -645,24 +645,65 @@ static bool8 MainMenu_LoadGraphics(void) // Load all the tilesets, tilemaps, spr
         break;
     case 4:
     {
-        if(gSaveBlock2Ptr->playerGender == MALE)
+        //load the same background always
+        LoadCompressedSpriteSheet(&sSpriteSheet_IconBox);
+        LoadSpritePalette(&sSpritePal_IconBox);
+
+        //SWITCH GENDER BASED
+        switch (gSaveBlock2Ptr->playerGender)
         {
-            LoadCompressedSpriteSheet(&sSpriteSheet_IconBox);
-            LoadSpritePalette(&sSpritePal_IconBox);
-            LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
-            LoadSpritePalette(&sSpritePal_BrendanMugshot);
-            LoadPalette(sMainBgPalette, 0, 32);
+            case MALE:
+                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
+                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadPalette(sMainBgPalette, 0, 32);
+                break;
+
+
+            case FEMALE:
+                LoadCompressedSpriteSheet(&sSpriteSheet_MayMugshot);
+                LoadSpritePalette(&sSpritePal_MayMugshot);
+                LoadPalette(sMainBgPaletteFem, 0, 32);            
+                break;
+
+            case MUNUCU:
+                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
+                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadPalette(sMainBgPalette, 0, 32);            
+                break;
+
+            case SHUBUBU:
+                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
+                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadPalette(sMainBgPalette, 0, 32);            
+                break;
+
+
+            case GUBUKING:
+                LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
+                LoadSpritePalette(&sSpritePal_BrendanMugshot);
+                LoadPalette(sMainBgPalette, 0, 32);            
+                break;
+
         }
-        else
-        {
-            LoadCompressedSpriteSheet(&sSpriteSheet_IconBoxFem);
-            LoadSpritePalette(&sSpritePal_IconBoxFem);
-            LoadCompressedSpriteSheet(&sSpriteSheet_MayMugshot);
-            LoadSpritePalette(&sSpritePal_MayMugshot);
-            LoadPalette(sMainBgPaletteFem, 0, 32);
-        }
-        LoadPalette(sScrollBgPalette, 16, 32);
-    }
+
+    //     if(gSaveBlock2Ptr->playerGender == MALE)
+    //     {
+    //         LoadCompressedSpriteSheet(&sSpriteSheet_IconBox);
+    //         LoadSpritePalette(&sSpritePal_IconBox);
+    //         LoadCompressedSpriteSheet(&sSpriteSheet_BrendanMugshot);
+    //         LoadSpritePalette(&sSpritePal_BrendanMugshot);
+    //         LoadPalette(sMainBgPalette, 0, 32);
+    //     }
+    //     else
+    //     {
+    //         LoadCompressedSpriteSheet(&sSpriteSheet_IconBoxFem);
+    //         LoadSpritePalette(&sSpritePal_IconBoxFem);
+    //         LoadCompressedSpriteSheet(&sSpriteSheet_MayMugshot);
+    //         LoadSpritePalette(&sSpritePal_MayMugshot);
+    //         LoadPalette(sMainBgPaletteFem, 0, 32);
+    //     }
+    //     LoadPalette(sScrollBgPalette, 16, 32);
+    // }
         sMainMenuDataPtr->gfxLoadState++;
         break;
     default:
