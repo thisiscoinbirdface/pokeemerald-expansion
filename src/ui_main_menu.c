@@ -655,27 +655,29 @@ static bool8 MainMenu_LoadGraphics(void) // Load all the tilesets, tilemaps, spr
     {
     case 0:
         ResetTempTileDataBuffers();
-        if (gSaveBlock2Ptr->playerGender == MALE)
-        {
-            DecompressAndCopyTileDataToVram(1, sMainBgTiles, 0, 0, 0);
-        }
-        else
-        {
-            DecompressAndCopyTileDataToVram(1, sMainBgTilesFem, 0, 0, 0);
-        }
+        DecompressAndCopyTileDataToVram(1, sMainBgTiles, 0, 0, 0);        
+        // if (gSaveBlock2Ptr->playerGender == MALE)
+        // {
+        //     DecompressAndCopyTileDataToVram(1, sMainBgTiles, 0, 0, 0);
+        // }
+        // else
+        // {
+        //     DecompressAndCopyTileDataToVram(1, sMainBgTilesFem, 0, 0, 0);
+        // }
         sMainMenuDataPtr->gfxLoadState++;
         break;
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            if (gSaveBlock2Ptr->playerGender == MALE)
-            {
-                LZDecompressWram(sMainBgTilemap, sBg1TilemapBuffer);
-            }
-            else
-            {
-                LZDecompressWram(sMainBgTilemapFem, sBg1TilemapBuffer);
-            }
+            LZDecompressWram(sMainBgTilemap, sBg1TilemapBuffer);
+            // if (gSaveBlock2Ptr->playerGender == MALE)
+            // {
+            //     LZDecompressWram(sMainBgTilemap, sBg1TilemapBuffer);
+            // }
+            // else
+            // {
+            //     LZDecompressWram(sMainBgTilemapFem, sBg1TilemapBuffer);
+            // }
             sMainMenuDataPtr->gfxLoadState++;
         }
         break;
@@ -727,12 +729,14 @@ static bool8 MainMenu_LoadGraphics(void) // Load all the tilesets, tilemaps, spr
 
 
             case GUBUKING:
-                LoadCompressedSpriteSheet(&sSpriteSheet_Gubukingugshot);
+                LoadCompressedSpriteSheet(&sSpriteSheet_GubukingMugshot);
                 LoadSpritePalette(&sSpritePal_GubukingMugshot);
                 LoadPalette(sMainBgPalette, 0, 32);            
                 break;
 
         }
+        LoadPalette(sScrollBgPalette, 16, 32);
+    }
 
     //     if(gSaveBlock2Ptr->playerGender == MALE)
     //     {

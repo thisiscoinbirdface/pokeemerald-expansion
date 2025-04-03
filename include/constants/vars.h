@@ -275,7 +275,7 @@
     #define VAR_FENNILAHL_BUDEW                              0x407A // count the number of berries given to budew in fenni. if 3, catch
 
     #define VAR_HOLLOW_MIMEJR                                0x407C // Unused Var
-    #define VAR_ROUTE130_STATE                               0x407D // Unused Var
+    #define VAR_HOLLOW_GYM_LAYOUT                            0x407D // Unused Var
     #define VAR_ROUTE131_STATE                               0x407E // Unused Var
     #define VAR_ROUTE132_STATE                               0x407F // Unused Var
     #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
