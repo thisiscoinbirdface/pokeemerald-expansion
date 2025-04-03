@@ -344,7 +344,8 @@ const u32 gTrainerPalette_Employee[] = INCBIN_U32("graphics/trainers/my_trainers
 const u32 gTrainerFrontPic_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_trainers/bug_catcher_f.4bpp.lz");
 const u32 gTrainerPalette_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_trainers/bug_catcher_f.gbapal.lz");
 
-
+const u32 gTrainerFrontPic_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.4bpp.lz");
+const u32 gTrainerPalette_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.gbapal.lz");
 
 
 
@@ -476,6 +477,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_BUILDER, gTrainerFrontPic_Builder, gTrainerPalette_Builder),
     TRAINER_SPRITE(TRAINER_PIC_EMPLOYEE, gTrainerFrontPic_Employee, gTrainerPalette_Employee),
     TRAINER_SPRITE(TRAINER_PIC_BUG_CATCHER_F, gTrainerFrontPic_BugCatcherF, gTrainerPalette_BugCatcherF),
+    TRAINER_SPRITE(TRAINER_PIC_ELECTRICIAN, gTrainerFrontPic_Electrician, gTrainerPalette_Electrician),
 
 };
 

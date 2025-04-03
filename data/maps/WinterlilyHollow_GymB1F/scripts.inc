@@ -39,3 +39,67 @@ WinterlilyHollow_GymB1F_SetLayout_2:
 	setvar VAR_HOLLOW_GYM_LAYOUT, 1
 	goto WinterlilyHollow_GymB1F_SetLayout_1
 
+
+WinterlilyHollow_Gym_Trainer_A::
+# 36 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_A, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 37 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 38 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_B::
+# 44 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_B, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 45 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 46 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_C::
+# 52 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_C, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 53 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 54 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_D::
+# 60 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_D, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 61 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 62 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_E::
+# 68 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_E, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 69 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 70 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_F::
+# 76 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	trainerbattle_single TRAINER_WINTERLILY_HOLLOW_GYM_F, WinterlilyHollow_Gym_Trainer_A_Text_0, WinterlilyHollow_Gym_Trainer_A_Text_0
+# 77 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollow_Gym_Trainer_A_Text_0
+# 78 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	releaseall
+	end
+
+
+WinterlilyHollow_Gym_Trainer_A_Text_0:
+# 36 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "$"

@@ -27,3 +27,55 @@ script WinterlilyHollow_GymB1F_SetLayout{
     }
     return
 }
+
+
+
+//6 trainers
+//ELECTRICIAN
+script WinterlilyHollow_Gym_Trainer_A{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+//ELECTRICIAN
+script WinterlilyHollow_Gym_Trainer_B{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+//BATTLE GIRL
+script WinterlilyHollow_Gym_Trainer_C{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+//EMPLOYEE
+script WinterlilyHollow_Gym_Trainer_D{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_D, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+//SCIENTIST
+script WinterlilyHollow_Gym_Trainer_E{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+//ELECTRICIAN
+script WinterlilyHollow_Gym_Trainer_F{
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format(""), "")
+    msgbox(format(""))
+    releaseall
+    end
+}
+
