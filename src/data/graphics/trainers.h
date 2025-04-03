@@ -304,7 +304,7 @@ const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/m
 
 const u32 gTrainerFrontPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.4bpp.lz");
 const u8 gTrainerBackPic_Shububu[] = INCBIN_U8("graphics/trainers/my_trainers/shububu_back.4bpp");
-const u32 gTrainerPalette_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.gbapal.lz");
+const u32 gTrainerPalette_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu_back.gbapal.lz");
 
 const u32 gTrainerFrontPic_Gubuking[] = INCBIN_U32("graphics/trainers/my_trainers/gubuking.4bpp.lz");
 const u8 gTrainerBackPic_Gubuking[] = INCBIN_U8("graphics/trainers/my_trainers/gubuking_back.4bpp");

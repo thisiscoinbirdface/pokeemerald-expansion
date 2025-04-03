@@ -2225,6 +2225,7 @@ static void Controller_DoMoveAnimation(u32 battler)
     }
 }
 
+//TRAINER SLIDE BACK
 static void Controller_HandleTrainerSlideBack(u32 battler)
 {
     if (gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].callback == SpriteCallbackDummy)
