@@ -188,13 +188,16 @@
     #define TRAINER_MIRROHPEAK_E                  125
     #define TRAINER_MIRROHPEAK_MOXIE              126
 
-#define TRAINER_JESSICA_1                   127
-#define TRAINER_CONNIE                      128
-#define TRAINER_BRIDGET                     129
-#define TRAINER_OLIVIA                      130
-#define TRAINER_TIFFANY                     131
-#define TRAINER_JESSICA_2                   132
-#define TRAINER_JESSICA_3                   133
+    //Winterlily Hollow Gym
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_A       127
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_B       128
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_C       129
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_D       130
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_E       131
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_F       132
+    #define TRAINER_WINTERLILY_HOLLOW_GYM_LEADER  133
+
+
 #define TRAINER_JESSICA_4                   134
 #define TRAINER_JESSICA_5                   135
 #define TRAINER_WINSTON_1                   136

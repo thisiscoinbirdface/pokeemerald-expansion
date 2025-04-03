@@ -2353,7 +2353,7 @@ Numel
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JESSICA_1 ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_A ===
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2378,7 +2378,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Glare
 - Crunch
 
-=== TRAINER_CONNIE ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_B ===
 Name: CONNIE
 Class: Beauty
 Pic: Beauty
@@ -2391,7 +2391,7 @@ Goldeen
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRIDGET ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_C ===
 Name: BRIDGET
 Class: Beauty
 Pic: Beauty
@@ -2404,7 +2404,7 @@ Azumarill
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_OLIVIA ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_D ===
 Name: OLIVIA
 Class: Beauty
 Pic: Beauty
@@ -2436,7 +2436,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fake Out
 - Water Pulse
 
-=== TRAINER_TIFFANY ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_E ===
 Name: TIFFANY
 Class: Beauty
 Pic: Beauty
@@ -2453,7 +2453,7 @@ Sharpedo
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JESSICA_2 ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_F ===
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2478,7 +2478,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Glare
 - Crunch
 
-=== TRAINER_JESSICA_3 ===
+=== TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
