@@ -223,12 +223,12 @@ static const u16 sMayMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugsh
 static const u32 sMayMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
 
 //custom characters
-static const u32 sMunucuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
-static const u16 sMunucuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
-static const u32 sShububuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
-static const u16 sShububuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
-static const u32 sGubukingMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/may_mugshot.4bpp.lz");
-static const u16 sGubukingMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/may_mugshot.gbapal");
+static const u32 sMunucuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/munucu_mugshot.4bpp.lz");
+static const u16 sMunucuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/munucu_mugshot.gbapal");
+static const u32 sShububuMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/shububu_mugshot.4bpp.lz");
+static const u16 sShububuMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/shububu_mugshot.gbapal");
+static const u32 sGubukingMugshot_Gfx[] = INCBIN_U32("graphics/ui_main_menu/gubuking_mugshot.4bpp.lz");
+static const u16 sGubukingMugshot_Pal[] = INCBIN_U16("graphics/ui_main_menu/gubuking_mugshot.gbapal");
 
 //
 //  Sprite Data for Mugshots and Icon Shadows 
