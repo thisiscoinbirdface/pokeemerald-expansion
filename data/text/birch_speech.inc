@@ -40,12 +40,12 @@ gText_Birch_AndYouAre::
 	.string "$"	
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?"
+	.string "Please submit a photo of yourself\n"
+	.string "for identification purposes."
 	.string "$"	
 
 gText_Birch_WhatsYourName::
-	.string "Now please sign below."
+	.string "Please sign below."
 	.string "$"
 
 gText_Birch_SoItsPlayer::
