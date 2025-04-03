@@ -22,6 +22,7 @@
 #define RGB_YELLOW     RGB(31, 31, 0)
 #define RGB_MAGENTA    RGB(31, 0, 31)
 #define RGB_CYAN       RGB(0, 31, 31)
+#define RGB_INTRO_TEAL RGB(149, 213, 213)
 #define RGB_WHITEALPHA (RGB_WHITE | RGB_ALPHA)
 
 #define RGB_LIME_GREEN  RGB2GBA(222, 230, 49)
