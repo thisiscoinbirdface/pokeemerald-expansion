@@ -1,5 +1,8 @@
 mapscripts WinterlilyHollow_GymB1F_MapScripts{}
 
-
+script WinterlilyHollow_GymB1F_Button{
+    lockall
+    
+}
 
 
