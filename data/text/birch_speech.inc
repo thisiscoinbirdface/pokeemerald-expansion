@@ -33,6 +33,8 @@ gText_Birch_MainSpeech::
 	.string "What goes on in their minds? Where\n"
 	.string "does their power and energy come from?\p"
 	.string "That's what we do.\p"
+	.string "We'll now start your onboarding as a\n"
+	.string "new employee at the lab.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
