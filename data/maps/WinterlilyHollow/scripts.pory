@@ -10,16 +10,43 @@ mapscripts WinterlilyHollow_MapScripts{
 
 script WinterlilyHollow_OnFrame{
     if (flag(FLAG_ANCIENT_MIRROH_KORAIDON)){
-        if (flag(FLAG_WINTERFLAG_WINTERLILY_VINIEL_CUTSCENE)){
+        if (flag(FLAG_WINTERLILY_VINIEL_CUTSCENE)){
             end
+            
         } else {
             setobjectxyperm(LOCALID_VINIEL, 38, 19)
             setobjectxy(LOCALID_VINIEL, 38, 19)
             addobject(LOCALID_VINIEL)
+
+
+            //entire cutscene
+            applymovement(LOCALID_VINIEL, moves(walk_down emote_exclamation_mark))
+            delay(24)
+            msgbox(format("VINIEL: Ah, it's you! The enemy of my enemy!"))
+            release
+            applymovement(LOCALID_VINIEL, moves(walk_down*2))
+            waitmovement(0)
+            msgbox(format("VINIEL: AMPHAROS and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\p...\pVINIEL: So that's what's been going on. Poor PROFESSOR TENEBRIS. I'd heard about her disappearance on the news.\pVINIEL: News comes late here, since we're so remote.\pVINIEL: PROFESSOR TENEBRIS and I fought each other together several times when we were younger! I never lost though. Hahaha!"))
+            release
+            delay(24)
+            msgbox(format("VINIEL: So what are you going to do next?\p...\pVINIEL: Oh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like TEAM SOMBER. It's time for the grown-ups to take over.\pVINIEL: What's wrong, young champ? You look paralysed. Don't let the shock wear you down.\pVINIEL: I see you have four gym badges. Why not try to aim for all eight? Starting with me, of course. Hahaha!\p...\pVINIEL: You know, it's alright to fail. From what you told me, you've done incredible work so far. Now let the detectives handle the rest. You're young and green - be young and green!\pVINIEL: I hope I'll see you at my gym later!"))
+            release
+            applymovement(LOCALID_VINIEL, moves(walk_up*5))
+            waitmovement(0)
+            fadescreen(FADE_TO_BLACK)
+            removeobject(LOCALID_VINIEL)
+            fadescreen(FADE_FROM_BLACK)
+
+            setflag(FLAG_WINTERLILY_VINIEL_CUTSCENE)
+            releaseall
         }
+    } else {
+        end
+        
     }
-    end
 }
+
+
 
 //City elements
 //gym, mining minigame, surf mon quest?
@@ -205,7 +232,7 @@ script WinterlilyHollow_Sneasler{
     lockall
     faceplayer
     playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
-    msgbox(format("SNEASLER seems to be trying to dig into the wall with limited success. Don't give up, SNEASLER!"))
+    msgbox(format("SNEASLER seems to be trying to dig into the wall with limited success.\pDon't give up, SNEASLER!"))
     releaseall
     end
 }
