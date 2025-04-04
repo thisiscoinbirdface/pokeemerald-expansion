@@ -401,13 +401,14 @@ script Common_EventScript_NurseJoyOnRoute{
         //heal
         msgbox(format("Should I heal your {PKMN}? You can come back later if you wish."), MSGBOX_YESNO)
 
-        if (var(VAR_RESULT == 1)){
+        if (var(VAR_RESULT) == 1){
             msgbox(format("Let me heal your {PKMN}."))
             release
             call(Common_EventScript_OutOfCenterPartyHeal)
             msgbox(format("Stay safe out there!"))
             release
-
+            
+            removeitem(ITEM_HEAL_PASS)
             setflag(FLAG_HEAL_PASS_USED)
         } else {
             msgbox(format("Come back any time!"))
