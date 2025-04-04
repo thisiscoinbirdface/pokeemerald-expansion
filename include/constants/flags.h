@@ -176,7 +176,7 @@
 #define FLAG_HIDE_HOLLOW_MIMEJR_1  0x2B2 // Unused Flag
 #define FLAG_HIDE_HOLLOW_MIMEJR_2  0x2B3 // Unused Flag
 #define FLAG_HIDE_HOLLOW_MIMEJR_3  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
+#define FLAG_GRETA_PELLUCACITY  0x2B5 // Unused Flag
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
 #define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
 #define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
