@@ -1174,21 +1174,18 @@
 #define FLAG_ITEM_GASTREE_B                             0x422
 #define FLAG_ITEM_GALECREST_D                    0x423
 #define FLAG_ITEM_GALECREST_E                  0x424
+#define FLAG_ITEM_PELLUCA_CITY_A                 0x425
+#define FLAG_ITEM_PELLUCA_CITY_B                   0x426
+#define FLAG_ITEM_PELLUCA_CITY_C                  0x427
+
+#define FLAG_ITEM_MIRROH_INT_A                    0x428
+#define FLAG_ITEM_MIRROH_INT_B                   0x429
+#define FLAG_ITEM_MIRROH_INT_C                            0x42A
+#define FLAG_ITEM_MIRROH_INT_D                 0x42B
+#define FLAG_ITEM_MIRROH_INT_E                  0x42C
+#define FLAG_ITEM_MIRROH_INT_F                    0x42D
 
 
-
-
-
-
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0x428
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0x429
-#define FLAG_ITEM_ROUTE_124_YELLOW_SHARD                            0x42A
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL                 0x42B
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430

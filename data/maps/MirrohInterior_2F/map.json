@@ -130,6 +130,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MirrohInterior_2F_NPC_A",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_FLOAT_STONE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROH_INT_E"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 53,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_M",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROH_INT_F"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 17,
+      "y": 50,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ULTRA_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROH_INT_D"
     }
   ],
   "warp_events": [
