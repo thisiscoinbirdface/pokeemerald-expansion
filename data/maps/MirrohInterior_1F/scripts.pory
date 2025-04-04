@@ -7,6 +7,16 @@ mapscripts MirrohInterior_1F_MapScripts{}
 //2 more NPCs at the blocked exit
 
 
+//NURSE
+script MirrohInterior_1F_EventScript_Nurse{
+    lockall
+    faceplayer
+    msgbox(format("It's so cold here...CHANSEY and I got the worst route!"))
+    release
+	call(Common_EventScript_NurseJoyOnRoute)
+    releaseall
+    end
+}
 
 
 
@@ -22,7 +32,7 @@ script MirrohInterior_1F_Trainer_A{
 
 //MANIAC (ITEM PROTECTOR)
 script MirrohInterior_1F_Trainer_B{
-    trainerbattle_single(TRAINER_MIRROHINT_B, format("No! That item's mine!"), format("Fine, you can have it!"))
+    trainerbattle_single(TRAINER_MIRROHINT_B, format("No! That item's mine!"), format("Fine, you can have it..."))
     msgbox(format("Travelers often leave rare items inside caves and mountains. That's where the money is, baby!"))
     releaseall
 }

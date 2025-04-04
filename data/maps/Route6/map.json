@@ -27,7 +27,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "x": 37,
+      "x": 38,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -35,7 +35,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route6_EventScript_Nurse",
       "flag": "0"
     },
     {
@@ -440,6 +440,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route6_Marshtomp",
       "flag": "FLAG_ROUTE6_MARSHTOMP"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
+      "x": 39,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_ChanseyOnRoute",
+      "flag": "0"
     }
   ],
   "warp_events": [

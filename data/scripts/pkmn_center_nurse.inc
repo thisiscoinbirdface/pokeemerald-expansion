@@ -98,6 +98,7 @@ EventScript_PkmnCenterNurse_ExplainHealPass::
 EventScript_PkmnCenterNurse_GiveHealPass::
 	message gText_TakeHealPass
 	giveitem ITEM_HEAL_PASS
+	clearflag FLAG_HEAL_PASS_USED
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::

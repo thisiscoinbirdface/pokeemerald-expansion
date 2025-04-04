@@ -32,12 +32,13 @@ script Route6_Nurse_Demo{
 script Route6_EventScript_Nurse{
     lockall
     faceplayer
-    msgbox(format("NURSE JOY: Oh I don't know what happened! I went out for a walk and ended up in this storm! I'm waiting here till it passes. CHANSEY can heal your {PKMN} meanwhile."))
+    msgbox(format("Oh I don't know what happened! I went out for a walk and ended up in this storm! I'm waiting here till it passes. If you have a HEAL PASS, CHANSEY can heal your {PKMN} meanwhile."))
     release
-	call(Common_EventScript_OutOfCenterPartyHeal)
-    msgbox(format("NURSE JOY: Be careful - once you slide down this ledge, you won't be able to come back!"))
+	call(Common_EventScript_NurseJoyOnRoute)
+    msgbox(format("Be careful - once you slide down this ledge, you won't be able to come back!"))
     release
 }
+
 
 //Marshtomp
 script Route6_Marshtomp{

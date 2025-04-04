@@ -389,24 +389,48 @@ script MintPurchase_Serious{
 
 
 
+
+
+
+
+
+
 script Common_EventScript_NurseJoyOnRoute{
     checkitem(ITEM_HEAL_PASS)
     if (var(VAR_RESULT) == 1){
         //heal
-        msgbox(format("Let me heal your {PKMN}."))
-        release
-    	call(Common_EventScript_OutOfCenterPartyHeal)
-        msgbox(format("Stay safe out there!"))
-        release
+        msgbox(format("Should I heal your {PKMN}? You can come back later if you wish."), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT == 1)){
+            msgbox(format("Let me heal your {PKMN}."))
+            release
+            call(Common_EventScript_OutOfCenterPartyHeal)
+            msgbox(format("Stay safe out there!"))
+            release
+
+            setflag(FLAG_HEAL_PASS_USED)
+        } else {
+            msgbox(format("Come back any time!"))
+            release
+        }
+
     } else {
         //don't heal
         msgbox(format("Sorry, you don't have a HEAL PASS. Please visit a POKéMON CENTER to receive a HEAL PASS."))
         release
     }
+    return
+}
+
+script Common_EventScript_ChanseyOnRoute{
+    lockall
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    faceplayer
+    msgbox(format("CHANSEY is happy as always!"))
+    release
     releaseall
     end
 }
-
 
 
 

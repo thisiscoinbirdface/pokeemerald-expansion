@@ -4,6 +4,17 @@ raw `
     .set LOCALID_GRUNT2, 13
 
 `
+//NURSE
+script Route4_NurseJoy_OnRoute{
+    lockall
+    faceplayer
+    msgbox(format("Can you believe this? They put us on these rocks. I'm a nurse for crying out loud!\p...\pSigh..."))
+    call(Common_EventScript_NurseJoyOnRoute)
+    delay(30)
+    releaseall
+    end
+}
+
 
 
 script Route4_EventScript_EvilTeam{
