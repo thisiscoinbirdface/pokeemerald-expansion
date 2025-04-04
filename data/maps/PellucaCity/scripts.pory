@@ -52,7 +52,17 @@ script PellucaCity_EventScripts_Gabrielle{
 
 }
 
-
+script PellucaCity_Zorua{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_ZORUA, CRY_MODE_NORMAL)
+    msgbox(format("GABRIELLE's ZORUA looks content. Life is more peaceful for it now!"))
+    release
+    applymovement(25, moves(face_left))
+    waitmovement(0)
+    releaseall
+    end
+}
 
 
 
@@ -64,6 +74,15 @@ script PellucaCity_EventScripts_Gabrielle{
 //fishery
 
 
+//MONS
+script PellucaCity_Lycanroc{
+    lockall
+    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
+    faceplayer
+    msgbox(format("LYCANROC is howling. It must be pining for a table at the restaurant!"))
+    releaseall
+    end
+}
 
 
 
@@ -107,8 +126,15 @@ script PellucaCity_NPC4{
 //bridge other dude
 script PellucaCity_NPC5{
     lockall
-    faceplayer
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7 walk_fast_left * 5))
+    waitmovement(0)
+    special(RemoveCameraObject)
     msgbox(format("The Gym Leader of PELLUCA CITY had her gym constructed on a separate island. Talk about entitlement!"))
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7 walk_fast_right * 5))
+    waitmovement(0)
+    special(RemoveCameraObject)
     releaseall
     end
 }
@@ -136,6 +162,21 @@ script PellucaCity_NPC8{
     releaseall
     end
 }
+
+script PellucaCity_Sealeo{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_SEALEO, CRY_MODE_NORMAL)
+    msgbox(format("SEALEO wants to catch fish!"))
+    release
+    applymovement(26, moves(face_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+
+
+
 //fishery 2
 script PellucaCity_NPC9{
     lockall

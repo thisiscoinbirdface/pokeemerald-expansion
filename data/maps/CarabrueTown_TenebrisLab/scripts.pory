@@ -489,7 +489,6 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist3{
 script CarabrueTown_TenebrisLab_Gardevoir{
     lockall
     faceplayer
-    delay(2)
     playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
 
     if (flag(FLAG_TENEBRIS_GARDEVOIR)){

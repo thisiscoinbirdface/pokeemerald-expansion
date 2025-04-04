@@ -15,8 +15,6 @@ script WinterlilyHollow_GymB1F_Button{
     end
 }
 
-
-
 script WinterlilyHollow_GymB1F_SetLayout{
     if (var(VAR_HOLLOW_GYM_LAYOUT) == 0){
         setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F)
@@ -27,8 +25,6 @@ script WinterlilyHollow_GymB1F_SetLayout{
     }
     return
 }
-
-//Hey! Was it you who switched the doors just now?
 
 //6 trainers
 //ELECTRICIAN
@@ -86,4 +82,67 @@ script WinterlilyHollow_Gym_Trainer_F{
     releaseall
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script WinterlilyHollowGym_LeaderBattle {
+    lockall
+    faceplayer
+
+    if (flag(FLAG_BADGE05_GET)){
+        msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
+    } else { //else do the battle
+        msgbox(format(""))
+        trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format(""))
+        
+        //Receive the badge
+        msgbox(format("{PLAYER} received the CINDER BADGE from ARIAN."))
+        release
+        setflag(FLAG_BADGE05_GET)
+
+        //Play gym badge fanfare
+        call(Common_EventScript_PlayGymBadgeFanfare)
+
+        //Describe the badge features (use HMs, allow pokemon control etc.)
+        msgbox(format("The CINDER BADGE increases the ATK of all your {PKMN} and lets you control {PKMN} upto lv. 20."))
+        msgbox(format("And I'd also like to give you this."))
+        release
+        //Give TM also
+        giveitem(ITEM_TM_SUNNY_DAY)
+        msgbox(format("This TM will let your {PKMN} bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        release
+
+        //Bye-bye
+        msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
+        releaseall
+        
+    }
+
+    releaseall
+
+}
+
+
+
 
