@@ -88,8 +88,8 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a CASTING ROD. Too bad you don't have one!"), "I need a Super Rod!")
-    msgbox(format("I wonder what {PKMN} I can catch here with a Super Rod..."))
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a CASTING ROD. Too bad you don't have one!"), "You beat me without a rod!")
+    msgbox(format("I wonder what {PKMN} I can catch here with a TROLLING ROD instead..."))
     releaseall
     end
 }
@@ -195,37 +195,35 @@ script Route6_NPC4{
     faceplayer
 
     if (var(VAR_ROUTE6_FISHERMAN) == 2){
-        msgbox(format("I've been practicing real hard! What do you think?"))
-        release
-        msgbox(format("I'm no good, but it's so much fun!"))
+        msgbox(format("I've been too busy eating to cook! I guess you can switch the hobby all you want, but you have to work on yourself to see real change."))
     }
 
     if (var(VAR_ROUTE6_FISHERMAN) == 1){
-        msgbox(format("Have you brought a RED FLUTE?"), MSGBOX_YESNO)
+        msgbox(format("Have you brought a MOCHI?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
 
-            if (checkitem(ITEM_RED_FLUTE)){
-                msgbox(format("Yes, this looks amazing! I can't wait to start playing it."))
+            if (checkitem(ITEM_FRESH_START_MOCHI)){
+                msgbox(format("Yes, this looks amazing!\p...\pInteresting flavour. I think I can make it!"))
                 release
-                removeitem(ITEM_RED_FLUTE)
+                removeitem(ITEM_FRESH_START_MOCHI)
                 msgbox(format("I suppose I don't need this any more. Here, why don't you take it? You could start a new hobby too!"))
                 giveitem(ITEM_GOOD_ROD)
                 setvar(VAR_ROUTE6_FISHERMAN, 2)
             } else {
-                msgbox(format("No, it looks like you haven't. You can get one in PELLUCA CITY."))
+                msgbox(format("No, it looks like you haven't. I'll be here when you get one."))
             }
         }
     }
 
     if (var(VAR_ROUTE6_FISHERMAN) == 0){
-        msgbox(format("These waters are too fierce to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby. I'd like to try music, but I might be no good. What do you think? Should I try music?"), MSGBOX_YESNO)
+        msgbox(format("These waters are too strong to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby. I'd like to try cooking, but I might be no good. What do you think? Should I try cooking?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //yes
-            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? Can you bring me a RED FLUTE so I can start practicing?"), MSGBOX_YESNO)
+            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? I want to try making MOCHI but I don't know what it tastes like. Can you bring me one?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     //Start quest
-                    msgbox(format("Thank you so much! I think you can buy them in PELLUCA CITY. I'll be waiting here for you!"))
+                    msgbox(format("Thank you so much! I'll be waiting here for you."))
                     setvar(VAR_ROUTE6_FISHERMAN, 1)
                 } else {
                     msgbox(format("Ahh well, it's back to fishing then."))

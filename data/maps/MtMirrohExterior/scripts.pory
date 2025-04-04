@@ -6,13 +6,55 @@ mapscripts MtMirrohExterior_MapScripts{}
 //Dojo house 
 //Nurse joy is inside the dojo house
 
-
 //Topics
 // about mt mirroh (location + mon stories)
 // about winterlily hollow - located inside the mountain (hint but don't reveal yet)
 // about the dojo (hint, dont reveal)
 // about team somber passing through (there's a drill left behind at the entrance)
 
+//BREECH
+script MtMirrohExterior_BreechTrigger{
+    if (flag(FLAG_MIRROH_EXTERIOR_BREECH)) {end}
+    lockall
+
+    msgbox(format("BREECH: CLEFABLE, did you see the Team Somber grunts too?"))
+    release
+    applymovement(9, moves(jump_in_place_up))
+    waitmovement(0)
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    delay(24)
+    msgbox(format("CLEFABLE: clee!!!"))
+    release
+    delay(30)
+
+    //Notice player
+    applymovement(8, moves(face_left emote_exclamation_mark))    
+    applymovement(9, moves(face_left emote_exclamation_mark)) 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    delay(30)
+    msgbox(format("BREECH: {PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pBREECH: So you're chasing Team Somber. I admire you, {PLAYER}. CLEFAIRY and I just saw a couple of them enter MT MIRROH. They left this drill here. I wonder what they're using all this equipment for?"))
+    release
+    delay(30)
+    applymovement(8, moves(face_left emote_exclamation_mark))    
+    applymovement(9, moves(face_left emote_exclamation_mark)) 
+    waitmovement(0)
+    delay(30)
+    msgbox(format("BREECH: I see...so they must be using all this equipment to build and carry this DREAMALYSER thing you're talking about. How scary!"))
+    release
+    delay(60)
+    msgbox(format("BREECH: CLEFABLE and I have become stronger now, but I really don't want to get involved in all these matters. We'll find some other way through the mountain. All the best, {PLAYER}!"))
+    release
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(8)
+    removeobject(9)
+    fadescreen(FADE_FROM_BLACK)
+
+    releaseall
+    end
+
+}
 
 //Trainers
 script MtMirrohExterior_Trainer_A{

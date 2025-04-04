@@ -12672,8 +12672,8 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_TeraShard,
-        .iconPalette = gItemIconPalette_RockTeraShard,
+        .iconPic = gItemIcon_Everstone, //tera shard looks cool
+        .iconPalette = gItemIconPalette_Everstone,
     },
 
     [ITEM_STORAGE_KEY] =
