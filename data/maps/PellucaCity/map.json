@@ -455,7 +455,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PellucaCity_Greta_Trigger0"
     },
     {
       "type": "trigger",
@@ -464,7 +464,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PellucaCity_Greta_Trigger1"
     },
     {
       "type": "trigger",
@@ -473,7 +473,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PellucaCity_Greta_Trigger2"
     }
   ],
   "bg_events": [

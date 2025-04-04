@@ -9,7 +9,9 @@ script PellucaCity_Greta_Trigger0{
     if (flag(FLAG_GRETA_PELLUCACITY)) {end}
 
     lockall
-    applymovement(27, moves(walk_up * 5 face_left))
+    applymovement(27, moves(walk_up * 6 face_left))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     goto(PellucaCity_Greta_Main)
 }
@@ -18,8 +20,10 @@ script PellucaCity_Greta_Trigger1{
     if (flag(FLAG_GRETA_PELLUCACITY)) {end}
 
     lockall
-    applymovement(27, moves(walk_left walk_up * 5 face_left))
+    applymovement(27, moves(walk_left walk_up * 6 face_right))
     waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)    
     goto(PellucaCity_Greta_Main)
 }
 
@@ -27,8 +31,10 @@ script PellucaCity_Greta_Trigger2{
     if (flag(FLAG_GRETA_PELLUCACITY)) {end}
 
     lockall
-    applymovement(27, moves(walk_up * 5 face_right))
+    applymovement(27, moves(walk_up * 6 face_right))
     waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)    
     goto(PellucaCity_Greta_Main)
 }
 
