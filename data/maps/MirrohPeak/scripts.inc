@@ -512,6 +512,46 @@ MirrohPeak_EventScript_Somber_Trigger_2:
 	end
 
 
+MirrohPeak_Grunt_A::
+# 359 "data//maps/MirrohPeak/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHPEAK_A, MirrohPeak_Grunt_A_Text_0, MirrohPeak_Grunt_A_Text_1
+# 360 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_Grunt_A_Text_2
+# 361 "data//maps/MirrohPeak/scripts.pory"
+	releaseall
+	end
+
+
+MirrohPeak_Grunt_B::
+# 366 "data//maps/MirrohPeak/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHPEAK_B, MirrohPeak_Grunt_B_Text_0, MirrohPeak_Grunt_B_Text_1
+# 367 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_Grunt_B_Text_2
+# 368 "data//maps/MirrohPeak/scripts.pory"
+	releaseall
+	end
+
+
+MirrohPeak_Grunt_C::
+# 373 "data//maps/MirrohPeak/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHPEAK_C, MirrohPeak_Grunt_C_Text_0, MirrohPeak_Grunt_C_Text_1
+# 374 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_Grunt_C_Text_2
+# 375 "data//maps/MirrohPeak/scripts.pory"
+	releaseall
+	end
+
+
+MirrohPeak_Grunt_D::
+# 380 "data//maps/MirrohPeak/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHPEAK_D, MirrohPeak_Grunt_C_Text_0, MirrohPeak_Grunt_C_Text_1
+# 381 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_Grunt_C_Text_2
+# 382 "data//maps/MirrohPeak/scripts.pory"
+	releaseall
+	end
+
+
 # 32 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Trigger0_Movement_0:
 # 32 "data//maps/MirrohPeak/scripts.pory"
@@ -924,3 +964,47 @@ MirrohPeak_EventScript_Somber_Trigger_Text_13:
 	.string "construction equipment so we can carry\l"
 	.string "all this away.\p"
 	.string "GRUNTS: Y-yes boss!!$"
+
+MirrohPeak_Grunt_A_Text_0:
+# 359 "data//maps/MirrohPeak/scripts.pory"
+	.string "You're too late! The bosses have\n"
+	.string "already taken control of the\l"
+	.string "dreamstone with the DREAMALYSER!$"
+
+MirrohPeak_Grunt_A_Text_1:
+# 359 "data//maps/MirrohPeak/scripts.pory"
+	.string "You're still too late!$"
+
+MirrohPeak_Grunt_A_Text_2:
+# 360 "data//maps/MirrohPeak/scripts.pory"
+	.string "I wonder what'll happen once they\n"
+	.string "activate the DREAMALYSER...$"
+
+MirrohPeak_Grunt_B_Text_0:
+# 366 "data//maps/MirrohPeak/scripts.pory"
+	.string "We're going to use the DREAMALYSER to\n"
+	.string "revive the ANCIENT TERROR! Hahaha!$"
+
+MirrohPeak_Grunt_B_Text_1:
+# 366 "data//maps/MirrohPeak/scripts.pory"
+	.string "You're playing dirty!$"
+
+MirrohPeak_Grunt_B_Text_2:
+# 367 "data//maps/MirrohPeak/scripts.pory"
+	.string "Man, when will I become an admin?$"
+
+MirrohPeak_Grunt_C_Text_0:
+# 373 "data//maps/MirrohPeak/scripts.pory"
+	.string "Nope. No way. You're not getting\n"
+	.string "through us. We've got the DREAMALYSER\l"
+	.string "up and running, and we're not letting\l"
+	.string "you interfere!$"
+
+MirrohPeak_Grunt_C_Text_1:
+# 373 "data//maps/MirrohPeak/scripts.pory"
+	.string "Fine then! Go ahead!$"
+
+MirrohPeak_Grunt_C_Text_2:
+# 374 "data//maps/MirrohPeak/scripts.pory"
+	.string "You may have beaten us, but you can't\n"
+	.string "beat MELEA and MOXIE!$"

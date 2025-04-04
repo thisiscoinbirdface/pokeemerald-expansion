@@ -40,10 +40,13 @@ script PellucaCity_Greta_Trigger2{
 
 
 script PellucaCity_Greta_Main{
-    msgbox(format("GRETA: Oh, hello there! It's you again. Fancy seeing you in these parts. ROUTE 6 was a tough trek, eh?\pGRETA: Come, come. I've got some really great stuff from...well, you can't ask a magician to reveal her secrets, can you?"))
+    msgbox(format("GRETA: Oh, hello there! It's you again. Fancy seeing you in these parts. ROUTE 6 was a tough trek, eh?\pGRETA: Come, come. I've got some really great stuff from...well, a magician can't reveal her secrets, can she?"))
     release
-    delay(16)
-
+    delay(20)
+    msgbox(Common_Text_Greta_Comecome)
+    release
+    delay(20)
+    
     goto(PellucaCity_Greta_ShowItemsForSale)
 }
 
@@ -55,7 +58,7 @@ script PellucaCity_Greta_GottaGo{
     release
     applymovement(27, moves(walk_up * 8))
     waitmovement(0)
-    removeobject(7)
+    removeobject(27)
     setflag(FLAG_GRETA_PELLUCACITY)
     fadedefaultbgm
 

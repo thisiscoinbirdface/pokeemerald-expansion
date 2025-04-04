@@ -427,12 +427,8 @@ script Common_EventScript_NurseJoyOnRoute{
 
 //GRETA ROUTE 5
 
-script Route5_Greta_Main{
-    msgbox(format("GRETA: It's you! The wandering saviour from MT CERAM. How wonderful! A new customer. Come, come. I've got some really great stuff from...well, you can't ask a magician to reveal her secrets, can you?"))
-    release
-    delay(16)
-
-    goto(Route5_Greta_ShowItemsForSale)
+text Common_Text_Greta_Comecome{
+    "Come, come. I've got some really great stuff from...well, you can't ask a magician to reveal her secrets, can you?"
 }
 
 script Route5_Greta_AskToShow{

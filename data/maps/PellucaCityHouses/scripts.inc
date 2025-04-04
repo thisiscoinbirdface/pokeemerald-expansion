@@ -114,7 +114,8 @@ PellucaCityHouses_GabSibling3_Text_0:
 
 PellucaCityHouses_GabSibling3_Text_1:
 # 29 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "It's the least I can do for her.$"
+	.string "A traveling merchant sold it to me. It's\n"
+	.string "the least I can do for her.$"
 
 PellucaCityHouses_NPC1_Text_0:
 # 40 "data//maps/PellucaCityHouses/scripts.pory"

@@ -45,6 +45,18 @@ script Route5_Greta_Trigger1{
 }
 
 
+script Route5_Greta_Main{
+    msgbox(format("GRETA: It's you! The wandering saviour from MT CERAM. How wonderful! A new customer."))
+    release
+    delay(20)
+    msgbox(Common_Text_Greta_Comecome)
+    release
+    delay(20)
+    
+    goto(Route5_Greta_ShowItemsForSale)
+}
+
+
 
 script Route5_Greta_GottaGo{
     release

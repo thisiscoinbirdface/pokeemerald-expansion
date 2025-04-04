@@ -324,3 +324,67 @@ script MirrohPeak_EventScript_Somber_Trigger{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Enemy grunts
+script MirrohPeak_Grunt_A{
+    trainerbattle_single(TRAINER_MIRROHPEAK_A, format("You're too late! The bosses have already taken control of the dreamstone with the DREAMALYSER!"), "You're still too late!")
+    msgbox(format("I wonder what'll happen once they activate the DREAMALYSER..."))
+    releaseall
+    end
+}
+
+script MirrohPeak_Grunt_B{
+    trainerbattle_single(TRAINER_MIRROHPEAK_B, format("We're going to use the DREAMALYSER to revive the ANCIENT TERROR! Hahaha!"), "You're playing dirty!")
+    msgbox(format("Man, when will I become an admin?"))
+    releaseall
+    end
+}
+
+script MirrohPeak_Grunt_C{
+    trainerbattle_single(TRAINER_MIRROHPEAK_C, format("Nope. No way. You're not getting through us. We've got the DREAMALYSER up and running, and we're not letting you interfere!"), "Fine then! Go ahead!")
+    msgbox(format("You may have beaten us, but you can't beat MELEA and MOXIE!"))
+    releaseall
+    end
+}
+
+script MirrohPeak_Grunt_D{
+    trainerbattle_single(TRAINER_MIRROHPEAK_D, format("Nope. No way. You're not getting through us. We've got the DREAMALYSER up and running, and we're not letting you interfere!"), "Fine then! Go ahead!")
+    msgbox(format("You may have beaten us, but you can't beat MELEA and MOXIE!"))
+    releaseall
+    end
+}
+
+
+
+
+
+

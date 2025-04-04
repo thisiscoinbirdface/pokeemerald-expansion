@@ -2270,8 +2270,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHPEAK_A ===
 Name: CINDY
-Class: Lady
-Pic: Lady
+Class: Team Somber
+Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Items: Full Restore
@@ -2284,8 +2284,8 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHPEAK_B ===
 Name: CINDY
-Class: Lady
-Pic: Lady
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Female
 Music: Female
 Items: Full Restore
@@ -2298,8 +2298,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_C ===
 Name: CINDY
-Class: Lady
-Pic: Lady
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Female
 Music: Female
 Items: Full Restore
@@ -2316,10 +2316,11 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MIRROHPEAK_D ===
 Name: MELISSA
-Class: Beauty
-Pic: Beauty
+Class: Team Somber
+Pic: Somber Grunt F
 Gender: Female
 Music: Female
+Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 

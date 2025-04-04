@@ -64,28 +64,46 @@ Route5_Greta_Trigger1_2:
 	end
 
 
-Route5_Greta_GottaGo::
+Route5_Greta_Main::
+# 49 "data//maps/Route5/scripts.pory"
+	msgbox Route5_Greta_Main_Text_0
 # 50 "data//maps/Route5/scripts.pory"
 	release
 # 51 "data//maps/Route5/scripts.pory"
-	applymovement 7, Route5_Greta_GottaGo_Movement_0
+	delay 20
 # 52 "data//maps/Route5/scripts.pory"
-	waitmovement 0
+	msgbox Common_Text_Greta_Comecome
 # 53 "data//maps/Route5/scripts.pory"
-	msgbox Route5_Greta_GottaGo_Text_0
-# 54 "data//maps/Route5/scripts.pory"
 	release
-# 55 "data//maps/Route5/scripts.pory"
-	applymovement 7, Route5_Greta_GottaGo_Movement_1
+# 54 "data//maps/Route5/scripts.pory"
+	delay 20
 # 56 "data//maps/Route5/scripts.pory"
+	goto Route5_Greta_ShowItemsForSale
+	return
+
+
+Route5_Greta_GottaGo::
+# 62 "data//maps/Route5/scripts.pory"
+	release
+# 63 "data//maps/Route5/scripts.pory"
+	applymovement 7, Route5_Greta_GottaGo_Movement_0
+# 64 "data//maps/Route5/scripts.pory"
 	waitmovement 0
-# 57 "data//maps/Route5/scripts.pory"
+# 65 "data//maps/Route5/scripts.pory"
+	msgbox Route5_Greta_GottaGo_Text_0
+# 66 "data//maps/Route5/scripts.pory"
+	release
+# 67 "data//maps/Route5/scripts.pory"
+	applymovement 7, Route5_Greta_GottaGo_Movement_1
+# 68 "data//maps/Route5/scripts.pory"
+	waitmovement 0
+# 69 "data//maps/Route5/scripts.pory"
 	removeobject 7
-# 58 "data//maps/Route5/scripts.pory"
+# 70 "data//maps/Route5/scripts.pory"
 	setflag FLAG_GRETA_ROUTE5
-# 59 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	fadedefaultbgm
-# 61 "data//maps/Route5/scripts.pory"
+# 73 "data//maps/Route5/scripts.pory"
 	releaseall
 	end
 
@@ -130,29 +148,29 @@ Route5_Greta_Trigger1_Movement_0:
 	walk_right
 	step_end
 
-# 51 "data//maps/Route5/scripts.pory"
+# 63 "data//maps/Route5/scripts.pory"
 Route5_Greta_GottaGo_Movement_0:
-# 51 "data//maps/Route5/scripts.pory"
+# 63 "data//maps/Route5/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 Route5_Greta_GottaGo_Movement_1:
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
-# 55 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	walk_left
 	step_end
 
@@ -168,7 +186,13 @@ Route5_NPC_B_Text_0:
 	.string "Professor run past me right now! What's\l"
 	.string "going on?$"
 
+Route5_Greta_Main_Text_0:
+# 49 "data//maps/Route5/scripts.pory"
+	.string "GRETA: It's you! The wandering saviour\n"
+	.string "from MT CERAM. How wonderful! A new\l"
+	.string "customer.$"
+
 Route5_Greta_GottaGo_Text_0:
-# 53 "data//maps/Route5/scripts.pory"
+# 65 "data//maps/Route5/scripts.pory"
 	.string "GRETA: Would you look at the time! I've\n"
 	.string "gotta run. See you around!$"
