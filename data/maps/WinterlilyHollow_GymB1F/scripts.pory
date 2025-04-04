@@ -28,53 +28,61 @@ script WinterlilyHollow_GymB1F_SetLayout{
     return
 }
 
-
+//Hey! Was it you who switched the doors just now?
 
 //6 trainers
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_A{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format("What's a civilian doing here? Leader VINIEL's AMPHAROS overloads the atmosphere with ions, creating electric terrain here. It's dangerous!"), "I guess you can!")
+    msgbox(format("Leader VINIEL's AMPHAROS overloads the atmosphere with ions, creating electric terrain here."))
     releaseall
     end
 }
 
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve WINTERLILY HOLLOW!"), "Alright, carry on.")
+    msgbox(format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve WINTERLILY HOLLOW!"))
     releaseall
     end
 }
 
 //BATTLE GIRL
 script WinterlilyHollow_Gym_Trainer_C{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format("I came up here from the FIGHTING DOJO! Are you here to challenge VINIEL too?"), "Wow, you're good!")
+    msgbox(format("I wanted to challenge Leader VINIEL, but the doors are locked and I can't find the switches!"))
     releaseall
     end
 }
 
 //EMPLOYEE
 script WinterlilyHollow_Gym_Trainer_D{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_D, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_D, format("What - you thought everyone would be a lumbering electrician? Someone's gotta keep the books too!"), "Back to the books then!")
+    msgbox(format("With so much electricity being generated, we do need someone to keep track of everything."))
     releaseall
     end
 }
 
 //SCIENTIST
 script WinterlilyHollow_Gym_Trainer_E{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format("VINIEL hired me to do some research on efficient electricity storage, but all I've been doing is battling chums like you!"), "Another chum I lost to!")
+    msgbox(format("Since WINTERLILY HOLLOW gets no electricity, we need robust storage solutions."))
     releaseall
     end
 }
 
+
+script WinterlilyHollow_LastTrainer_Trigger{
+    lockall
+    applymovement(6, moves(emote_exclamation_mark jump_in_place_left))
+    delay(30)
+    msgbox(format("Oh, a trainer? Don't worry, I won't fight you. I'm just fixing up the wiring here. Go on, flip the switch."))
+}
+
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_F{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format(""), "")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format("Hah! Sike! I'm about to crush you!"), "You crushed me!")
+    msgbox(format("Leader VINIEL's right up ahead. He stationed me out here to make sure weaker trainers don't disturb his AMPHAROS."))
     releaseall
     end
 }

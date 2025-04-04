@@ -101,7 +101,7 @@
 #define FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS  0x269 // item flag for heavy duty boots
 #define FLAG_ANCIENT_MIRROH_DONE  0x26A // complete the segment
 #define FLAG_HIDE_LILY_POND_KOHLA  0x26B // hides kohla in the lily pond
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+#define FLAG_WINTERLILY_VINIEL_CUTSCENE  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
@@ -1184,9 +1184,8 @@
 #define FLAG_ITEM_MIRROH_INT_D                 0x42B
 #define FLAG_ITEM_MIRROH_INT_E                  0x42C
 #define FLAG_ITEM_MIRROH_INT_F                    0x42D
+#define FLAG_ITEM_MIRROH_PEAK_A                             0x42E
 
-
-#define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431

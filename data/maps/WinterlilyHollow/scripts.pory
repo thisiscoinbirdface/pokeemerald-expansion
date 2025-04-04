@@ -1,5 +1,25 @@
-mapscripts WinterlilyHollow_MapScripts{}
+raw`
+    .set LOCALID_VINIEL, 10
+`
 
+mapscripts WinterlilyHollow_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: WinterlilyHollow_OnFrame
+    ]
+}
+
+script WinterlilyHollow_OnFrame{
+    if (flag(FLAG_ANCIENT_MIRROH_KORAIDON)){
+        if (flag(FLAG_WINTERFLAG_WINTERLILY_VINIEL_CUTSCENE)){
+            end
+        } else {
+            setobjectxyperm(LOCALID_VINIEL, 38, 19)
+            setobjectxy(LOCALID_VINIEL, 38, 19)
+            addobject(LOCALID_VINIEL)
+        }
+    }
+    end
+}
 
 //City elements
 //gym, mining minigame, surf mon quest?

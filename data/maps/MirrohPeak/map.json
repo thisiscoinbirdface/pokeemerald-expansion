@@ -158,7 +158,7 @@
       "flag": "FLAG_MIRROHPEAK_MOXIE_DEFEATED"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 29,
       "y": 91,
       "elevation": 0,
@@ -166,9 +166,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ULTRA_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM34",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_MIRROHEXT_D"
+      "flag": "FLAG_ITEM_MIRROH_PEAK_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
