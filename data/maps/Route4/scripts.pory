@@ -282,12 +282,20 @@ script Route4_NPC_Cook{
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_RAWST_BERRY)
                 msgbox(format("{PLAYER} gave the cook a RAWST BERRY"), MSGBOX_SIGN)
-                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange, please take this."))
-                release
+                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange for the berry, I have a couple of trinkets you may like."))
+            dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHELL BELL", "ADRENALINE ORB")
+            if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_SHELL_BELL)
+            } else {
+                giveitem(ITEM_ADRENALINE_ORB)                
+            }
                 msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
                 setflag(FLAG_ROUTE4_COOK)
+            } else {
+                msgbox(format("I don't see any RAWST berries on you. Come back when you get one!"))
             }
+        } else {
+            msgbox(format("A shame! But no matter - I'll continue my search."))
         }
     }
 
