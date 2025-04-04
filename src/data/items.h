@@ -8814,7 +8814,6 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Luster Stone"),
         .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
-        .holdEffect = HOLD_EFFECT_FLOAT_STONE,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
