@@ -1,3 +1,73 @@
 mapscripts SilversunCity_BlindOrphanage_MapScripts{}
 
 
+script SilversunCity_BlindOrphanage_BrailleGameStart{
+    lockall
+    faceplayer
+    msgbox(format("TEACHER: SHEENA is about to take a braille test. Would you like to volunteer and help out?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("TEACHER: Okay.\nSHEENA, let's continue."))
+        release
+        applymovement(5, moves(face_left))
+        release
+
+        releaseall
+        end
+    }
+
+    msgbox(format("TEACHER: Excellent. SHEENA has to read three sentences in braille correctly. I'll give SHEENA the questions, and you keep a tally of her answers, okay?"))
+    release
+    delay(30)
+    applymovement(5, moves(face_left))
+    msgbox(format("TEACHER: Are you ready SHEENA?"))
+    release
+    delay(24)
+    applymovement(5, moves(jump_in_place_right))
+    delay(24)
+    msgbox(format("SHENA: Yes!"))
+    release
+    delay(30)
+
+
+    //Question 1 (boy got it wrong)
+    braillemessage(Silversun_Braille_Quiz1)
+    waitbuttonpress
+    closebraillemessage
+    msgbox(format("SHEENA: I got it! I got it!\nAN APPLIN A DAY KEEPS THE DOCTOR AT BAY."))
+    release
+    msgbox(format("TEACHER: Next question!"))    
+
+
+    //Question 2 (boy got it right)
+    braillemessage(Silversun_Braille_Quiz2)
+    waitbuttonpress
+    closebraillemessage
+    msgbox(format("SHEENA: I got it! I got it!\nROLY POLY WITH ROLYCOLY."))
+    release
+    msgbox(format("TEACHER: Next question!"))    
+
+    //Question 3 (boy got it wrong)
+    braillemessage(Silversun_Braille_Quiz3)
+    waitbuttonpress
+    closebraillemessage
+    msgbox(format("SHEENA: I got it! I got it!\pFEEBASE EVOLVES WITH A MART PAIL."))
+    release
+    msgbox(format("TEACHER: Next question!"))    
+
+    //result (the correct answer is 1/3)
+    msgbox(format("TEACHER: So how many did he get right?")) 
+    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "0/3", "1/3", "2/3", "3/3")
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("TEACHER: Yes...looks like SHEENA needs more practice.\pTEACHER: Thanks for volunteering.\pSHEENA: Thank you!"))
+    } else {
+        msgbox(format("TEACHER: That doesn't seem right. Are you sure you checked her answers correctly?"))
+    } 
+
+    releaseall
+    end
+}
+
+
+

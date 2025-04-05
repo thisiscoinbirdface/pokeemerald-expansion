@@ -424,8 +424,10 @@ Route4_NPC_Cook::
 # 280 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_5
+# 298 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_7
 Route4_NPC_Cook_1:
-# 295 "data//maps/Route4/scripts.pory"
+# 303 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
@@ -439,10 +441,12 @@ Route4_NPC_Cook_5:
 	checkitem ITEM_RAWST_BERRY
 # 282 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Route4_NPC_Cook_7
+	goto_if_eq Route4_NPC_Cook_8
+# 295 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_6
 	goto Route4_NPC_Cook_1
 
-Route4_NPC_Cook_7:
+Route4_NPC_Cook_8:
 # 283 "data//maps/Route4/scripts.pory"
 	removeitem ITEM_RAWST_BERRY
 # 284 "data//maps/Route4/scripts.pory"
@@ -450,24 +454,33 @@ Route4_NPC_Cook_7:
 # 285 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_3
 # 286 "data//maps/Route4/scripts.pory"
-	release
+	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, Route4_NPC_Cook_Text_4, Route4_NPC_Cook_Text_5
 # 287 "data//maps/Route4/scripts.pory"
-	giveitem ITEM_SHELL_BELL
-# 288 "data//maps/Route4/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route4_NPC_Cook_12
+# 290 "data//maps/Route4/scripts.pory"
+	giveitem ITEM_ADRENALINE_ORB
+Route4_NPC_Cook_11:
+# 292 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_0
-# 289 "data//maps/Route4/scripts.pory"
+# 293 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_COOK
 	goto Route4_NPC_Cook_1
 
+Route4_NPC_Cook_12:
+# 288 "data//maps/Route4/scripts.pory"
+	giveitem ITEM_SHELL_BELL
+	goto Route4_NPC_Cook_11
+
 
 Route4_NPC_D::
-# 300 "data//maps/Route4/scripts.pory"
+# 308 "data//maps/Route4/scripts.pory"
 	lockall
-# 301 "data//maps/Route4/scripts.pory"
+# 309 "data//maps/Route4/scripts.pory"
 	faceplayer
-# 302 "data//maps/Route4/scripts.pory"
+# 310 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_D_Text_0
-# 303 "data//maps/Route4/scripts.pory"
+# 311 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
@@ -808,11 +821,30 @@ Route4_NPC_Cook_Text_3:
 	.string "flavour to our signature APPLE PIE!\n"
 	.string "Thank you trainer. What's your name?\p"
 	.string "...\p"
-	.string "{PLAYER}, is it? In exchange, please\n"
-	.string "take this.$"
+	.string "{PLAYER}, is it? In exchange for the\n"
+	.string "berry, I have a couple of trinkets you\l"
+	.string "may like.$"
+
+Route4_NPC_Cook_Text_4:
+# 286 "data//maps/Route4/scripts.pory"
+	.string "SHELL BELL$"
+
+Route4_NPC_Cook_Text_5:
+# 286 "data//maps/Route4/scripts.pory"
+	.string "ADRENALINE ORB$"
+
+Route4_NPC_Cook_Text_6:
+# 295 "data//maps/Route4/scripts.pory"
+	.string "I don't see any RAWST berries on you.\n"
+	.string "Come back when you get one!$"
+
+Route4_NPC_Cook_Text_7:
+# 298 "data//maps/Route4/scripts.pory"
+	.string "A shame! But no matter - I'll continue\n"
+	.string "my search.$"
 
 Route4_NPC_D_Text_0:
-# 302 "data//maps/Route4/scripts.pory"
+# 310 "data//maps/Route4/scripts.pory"
 	.string "There are some grunts blocking the\n"
 	.string "path to CERAM BASE CAMP! They remind me\l"
 	.string "of my younger days...I used to be in an\l"

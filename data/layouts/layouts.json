@@ -5414,7 +5414,7 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY_BLIND_ORPHANAGE",
       "name": "SilversunCity_BlindOrphanage_Layout",
-      "width": 34,
+      "width": 24,
       "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonFanClub",

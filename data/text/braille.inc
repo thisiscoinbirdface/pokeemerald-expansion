@@ -115,3 +115,29 @@ AncientTomb_Braille_ShineInTheMiddle:
 	.braille "INHERIT OUR\n"
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
+
+
+
+
+
+
+Silversun_Braille_Quiz1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "AN APPLIN A DAY\n"
+	.braille "DAY KEEPS THE\n"
+	.braille "DOCTOR AWAY$"	
+
+Silversun_Braille_Quiz2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "ROLY POLY\n"
+	.braille "WITH ROLYCOLY$"
+
+Silversun_Braille_Quiz3:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "FEEBAS EVOLVES\n"
+	.braille "WITH A HEART\n"
+	.braille "SCALE$"
+
+
+
+
