@@ -350,7 +350,7 @@ script GalecrestCity_NPC_9{
 script GalecrestCity_NPC_10{
     lockall
     faceplayer    
-    msgbox(format("The Detective Academy is the most prestigious police academy in all of CORMORIA. My husband helped build it, many years ago, when he ran a construction business."))
+    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband helped build it, many years ago, when he ran a construction business."))
     releaseall
 }
 
@@ -470,7 +470,7 @@ script GalecrestCity_NPC_17{
 
 script GalecrestCity_NPC_18{
     lockall
-    msgbox(format("All my life I've lived in this neighbourhood. It's all I've seen and all I know...and now I'm too old to go exploring CORMORIA."))  
+    msgbox(format("All my life I've lived in this neighbourhood. It's all I've seen and all I know...and now I'm too old to go exploring Cormoria."))  
     release
 
     if (flag(FLAG_GALECREST_REGRETFULMAN)){

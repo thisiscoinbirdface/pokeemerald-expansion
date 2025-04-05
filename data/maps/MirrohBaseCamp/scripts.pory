@@ -61,7 +61,7 @@ mart MirrohBaseCamp_Vendor3_Inventory{
 script MirrohBaseCamp_EventScript_NPC1{
     lockall
     faceplayer
-    msgbox(format("It's so sad and lonely up here...I want to grow up fast so I can go see the rest of CORMORIA!"))
+    msgbox(format("It's so sad and lonely up here...I want to grow up fast so I can go see the rest of Cormoria!"))
     releaseall
     end
 }

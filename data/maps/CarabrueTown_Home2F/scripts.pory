@@ -3,7 +3,7 @@ mapscripts CarabrueTown_Home2F_MapScripts {}
 
 script CarabrueTown_Home2F_EventScript_PickUpBag{
     lockall
-    msgbox(format("The lab sent a welcome package yesterday. I'm supposed to bring it with me without opening it, they said."))
+    msgbox(format("The lab sent a Welcome Package yesterday. I'm supposed to bring it with me without opening it, they said."))
     release
 
     giveitem(ITEM_LAB_WELCOMEPACKAGE)

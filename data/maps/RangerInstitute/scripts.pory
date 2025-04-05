@@ -160,7 +160,7 @@ script RangerInstitute_1F_InterviewQ5{
 }
 
 script RangerInstitute_1F_InterviewPass{
-    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a {PKMN} RANGER RECRUIT. Welcome to the CORMORIA {PKMN} Ranger Institute! Please head upstairs for your induction."))
+    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a {PKMN} RANGER RECRUIT. Welcome to the Cormoria {PKMN} Ranger Institute! Please head upstairs for your induction."))
     releaseall
     setvar(VAR_RANGER_INSTITUTE, 2)
 }
@@ -339,7 +339,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     release
     giveitem(ITEM_MACH_BIKE)
     giveitem(ITEM_RANGER_CARD)
-    msgbox(format("RAVINE: The RANGER BIKE and RANGER CARD - the two emblems of a {PKMN} Ranger in CORMORIA! The RANGER BIKE will allow you to speedily traverse all of CORMORIA, and the RANGER CARD lets everyone know you're a proper {PKMN} Ranger! You can access the other RANGER INSTITUTES with this."))
+    msgbox(format("RAVINE: The RANGER BIKE and RANGER CARD - the two emblems of a {PKMN} Ranger in Cormoria! The RANGER BIKE will allow you to speedily traverse all of Cormoria, and the RANGER CARD lets everyone know you're a proper {PKMN} Ranger! You can access the other RANGER INSTITUTES with this."))
     release
     delay(32)     
     msgbox(format("RAVINE: Now, do you know what we {PKMN} Rangers do? No? Follow me."))
@@ -383,7 +383,7 @@ script RangerInstitute_2F_NPC_1{
 script RangerInstitute_2F_NPC_2{
     lockall
     faceplayer
-    msgbox(format("Hello there, new recruit! Wanna see what I'm working on? I'm analysing the weather patterns in CORMORIA. I stay on the lookout for any unnatural changes."))
+    msgbox(format("Hello there, new recruit! Wanna see what I'm working on? I'm analysing the weather patterns in Cormoria. I stay on the lookout for any unnatural changes."))
     releaseall
     end
 }

@@ -55,7 +55,7 @@ script CarabrueTown_EventScript_NPC1{
 script CarabrueTown_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("My CHIKORITA and I love how cosy Carabrue Town is! That's because it's nestled deep in the southern hills of CORMORIA."))
+    msgbox(format("My CHIKORITA and I love how cosy Carabrue Town is! That's because it's nestled deep in the southern hills of Cormoria."))
     releaseall
 }
 

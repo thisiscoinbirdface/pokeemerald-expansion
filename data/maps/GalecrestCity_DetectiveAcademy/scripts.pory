@@ -96,7 +96,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Multichoice{
     dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Tell me about the Academy!", "Can I get a student ID?", "I want a CHARCADET!")
 
     if (var(VAR_RESULT) == 0){
-        msgbox(format("The GALECREST DETECTIVE ACADEMY is one of the most prestigious schools in all of CORMORIA! Our top-caliber candidates train and study to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
+        msgbox(format("The GALECREST DETECTIVE ACADEMY is one of the most prestigious schools in all of Cormoria! Our top-caliber candidates train and study to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
         release
         goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
     }

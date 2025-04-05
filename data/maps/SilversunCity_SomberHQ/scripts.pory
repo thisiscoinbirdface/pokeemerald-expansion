@@ -114,7 +114,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("MELEA: You mean that it was INTENTIONAL!? And don't use my name in public, you moron!\pGABRIELLE: Y-yes, I'm so sorry. I just - \pMELEA: You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of Team Somber! And I'm going to have a squad chase you all over CORMORIA!"))
+    msgbox(format("MELEA: You mean that it was INTENTIONAL!? And don't use my name in public, you moron!\pGABRIELLE: Y-yes, I'm so sorry. I just - \pMELEA: You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of Team Somber! And I'm going to have a squad chase you all over Cormoria!"))
     release
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
     waitmovement(0)

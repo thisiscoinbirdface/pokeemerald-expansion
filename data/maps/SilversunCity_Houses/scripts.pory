@@ -40,7 +40,7 @@ script SilversunCity_Houses_Artist{
     }
 
     if (var(VAR_SILVERSUN_ARTIST) == 0){
-        msgbox(format("Myself, I have no patience for theater. No no! Although GLORIA is fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in CORMORIA!\p...\pBut ARSALAN is struggling now. Why, you ask? Well well.\pYou see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some BLACK SLUDGE.\pWill you help me?"), MSGBOX_YESNO)
+        msgbox(format("Myself, I have no patience for theater. No no! Although GLORIA is fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in Cormoria!\p...\pBut ARSALAN is struggling now. Why, you ask? Well well.\pYou see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some BLACK SLUDGE.\pWill you help me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("ARSALAN is most pleased! I eagerly await your return."))
             release

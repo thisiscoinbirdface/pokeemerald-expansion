@@ -75,8 +75,8 @@ gText_Birch_AreYouReady::
 	.string "Please carry this with you. In case\l"	
 	.string "you have not yet received it, please\l"
 	.string "inform us as soon as possible.\p"
-	.string "Best Regards,\n"
-	.string "PROFESSOR TENEBRIS.\p"
+	.string "Warmly,\n"
+	.string "Professor Tenebris.\p"
 	.string "$"
 
 
