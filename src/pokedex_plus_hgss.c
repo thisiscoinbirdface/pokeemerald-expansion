@@ -342,7 +342,7 @@ static const u16* const sDexPalettes[HGSS_COLOR_COUNT][HGSS_PAL_TYPE_COUNT] =
                          sSizeScreenSilhouette_inverted_Pal},
 };
 
-#define HGSS_COLOR_MODE HGSS_DARKEST
+#define HGSS_COLOR_MODE HGSS_DARK
 #define SCROLLING_MON_X 146
 #define HGSS_DECAPPED FALSE
 #define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES FALSE
