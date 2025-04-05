@@ -2,13 +2,18 @@ mapscripts SilversunCity_BlindOrphanage_MapScripts{}
 
 
 script SilversunCity_BlindOrphanage_PokedexGameStart{
-
+    lockall
+    faceplayer
+    msgbox(format("I'm looking for a book on all the {PKMN} in CORMORIA! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"))
+    releaseall
+    end
 }
 
 script SilversunCity_Book1{
     lockall
     braillemessage(Silversun_BrailleBook1)
     waitbuttonpress
+    closebraillemessage
     releaseall
     end
 }
@@ -17,6 +22,7 @@ script SilversunCity_Book2{
     lockall
     braillemessage(Silversun_BrailleBook2)
     waitbuttonpress
+    closebraillemessage
     releaseall
     end
 }
@@ -25,6 +31,7 @@ script SilversunCity_Book3{
     lockall
     braillemessage(Silversun_BrailleBook3)
     waitbuttonpress
+    closebraillemessage
     releaseall
     end
 }
@@ -33,6 +40,7 @@ script SilversunCity_Book4{
     lockall
     braillemessage(Silversun_BrailleBook4)
     waitbuttonpress
+    closebraillemessage
     releaseall
     end
 }

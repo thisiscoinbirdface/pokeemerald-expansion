@@ -4816,7 +4816,7 @@
       "name": "Route5_Layout",
       "width": 70,
       "height": 30,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SilversunPrimary",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route5/border.bin",
       "blockdata_filepath": "data/layouts/Route5/map.bin"
