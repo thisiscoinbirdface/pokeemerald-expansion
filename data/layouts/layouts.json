@@ -5044,8 +5044,8 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_GYM",
       "name": "PellucaCityGym_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PellucaCityGym/border.bin",
@@ -5420,6 +5420,26 @@
       "secondary_tileset": "gTileset_PokemonFanClub",
       "border_filepath": "data/layouts/SilversunCity_BlindOrphanage/border.bin",
       "blockdata_filepath": "data/layouts/SilversunCity_BlindOrphanage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8",
+      "name": "Route8_Layout",
+      "width": 60,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route8/border.bin",
+      "blockdata_filepath": "data/layouts/Route8/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_CITY",
+      "name": "RivetshoreCity_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/RivetshoreCity/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreCity/map.bin"
     }
   ]
 }

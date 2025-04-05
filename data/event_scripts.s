@@ -1352,3 +1352,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WinterlilyHollow_GymB1F_Switched/scripts.inc"
 
 	.include "data/maps/SilversunCity_BlindOrphanage/scripts.inc"
+
+	.include "data/maps/Route8/scripts.inc"
+
+	.include "data/maps/RivetshoreCity/scripts.inc"

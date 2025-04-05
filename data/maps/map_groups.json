@@ -146,7 +146,9 @@
     "IvyRiver",
     "IvyRiver_ResearchFacility",
     "IvyRiver_Main",
-    "IveRiver_Caves"
+    "IveRiver_Caves",
+    "Route8",
+    "RivetshoreCity"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

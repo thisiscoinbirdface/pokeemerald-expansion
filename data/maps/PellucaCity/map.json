@@ -27,6 +27,11 @@
       "map": "MAP_IVY_RIVER_MAIN",
       "offset": -18,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE8",
+      "offset": 16,
+      "direction": "down"
     }
   ],
   "object_events": [
