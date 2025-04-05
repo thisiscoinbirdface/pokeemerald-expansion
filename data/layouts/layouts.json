@@ -5436,7 +5436,7 @@
       "name": "RivetshoreCity_Layout",
       "width": 60,
       "height": 80,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Rivetshore",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RivetshoreCity/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity/map.bin"
