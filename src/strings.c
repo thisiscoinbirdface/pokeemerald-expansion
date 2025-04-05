@@ -1522,3 +1522,4 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
 
 
     
+const u8 gText_StatEditor[] = _("EDIT STATS");
