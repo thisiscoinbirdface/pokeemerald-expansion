@@ -1523,6 +1523,7 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
 static bool8 QuestMenuCallback(void)
 {
     CreateTask(Task_QuestMenu_OpenFromStartMenu, 0);
+    return TRUE;
 }
 
 static bool8 StartMenuStatEditorCallback(void)
