@@ -91,11 +91,11 @@ script MirrohPeak_EventScript_Viniel{
     release    
     applymovement(17, moves(emote_question_mark))  
     waitmovement(0)  
-    msgbox(format("GRUNT: Wait...isn't that the trainer who beat MELEA in SILVERSUN CITY?"))
+    msgbox(format("GRUNT: Wait...isn't that the trainer who beat MELEA in Silversun City?"))
     release
     applymovement(14, moves(emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("GRUNT: Yeah, it is! And also MOXIE at MT CERAM!\pGRUNT: Yikes - someone better tell go them!"))
+    msgbox(format("GRUNT: Yeah, it is! And also MOXIE at Mt. Ceram!\pGRUNT: Yikes - someone better tell go them!"))
     release
     applymovement(19, moves(jump_in_place_down))
     waitmovement(0)
@@ -106,7 +106,7 @@ script MirrohPeak_EventScript_Viniel{
     removeobject(19)    
 
     applymovement(LOCALID_VINIEL, moves(emote_question_mark))
-    msgbox(format("VINIEL: So you're an enemy of theirs, then, are you?\pVINIEL: An enemy of an enemy is a friend!\pVINIEL: Trainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the people of WINTERLILY HOLLOW. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
+    msgbox(format("VINIEL: So you're an enemy of theirs, then, are you?\pVINIEL: An enemy of an enemy is a friend!\pVINIEL: Trainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the people of Winterlily Hollow. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
     release
     delay(16)
     playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
@@ -221,7 +221,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     special(RemoveCameraObject)    
     applymovement(LOCALID_MOXIE, moves(walk_right face_down))
     waitmovement(0)
-    msgbox(format("MOXIE: My dear colleague has gone ahead, into ANCIENT CORMORIA...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The ANCIENT TERROR will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
+    msgbox(format("MOXIE: My dear colleague has gone ahead, into Ancient Cormoria...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The ANCIENT TERROR will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
     release
 
     //Battle

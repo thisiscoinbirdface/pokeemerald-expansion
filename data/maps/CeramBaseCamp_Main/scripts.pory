@@ -66,7 +66,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up MT CERAM!"))
+    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up Mt. Ceram!"))
     msgbox(format("ARIAN: The name's ARIAN! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
     release
@@ -259,7 +259,7 @@ script CeramBaseCamp_Main_NPC1{
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("CENTISKORCH and SCOLIPEDE are fiercely territorial. They keep fighting each other in MT CERAM."))
+        msgbox(format("CENTISKORCH and SCOLIPEDE are fiercely territorial. They keep fighting each other in Mt. Ceram."))
     } else {
         //When Team Somber is there
         msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."))

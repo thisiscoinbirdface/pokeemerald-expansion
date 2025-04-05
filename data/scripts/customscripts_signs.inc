@@ -144,7 +144,7 @@ WhiteSign_GalecrestCity_DetectiveAcademy::
 
 WhiteSign_CarabrueTown_Main_Text_0:
 # 6 "data//scripts/customscripts_signs.pory"
-	.string "CARABRUE TOWN\n"
+	.string "Carabrue Town\n"
 	.string "An idyllic hill station.$"
 
 WhiteSign_CarabrueTown_TenebrisLab_Text_0:
@@ -154,9 +154,9 @@ WhiteSign_CarabrueTown_TenebrisLab_Text_0:
 
 WhiteSign_Route1_NextToCarabrue_Text_0:
 # 18 "data//scripts/customscripts_signs.pory"
-	.string "ROUTE 1\p"
-	.string "{LEFT_ARROW} CARABRUE TOWN\n"
-	.string "{UP_ARROW} FENNILAHL TOWN$"
+	.string "Route 1\p"
+	.string "{LEFT_ARROW} Carabrue Town\n"
+	.string "{UP_ARROW} Fennilahl Town$"
 
 WoodSign_Route1_Middle_Text_0:
 # 24 "data//scripts/customscripts_signs.pory"
@@ -165,13 +165,13 @@ WoodSign_Route1_Middle_Text_0:
 
 WhiteSign_Route1_NextToFennilahl_Text_0:
 # 29 "data//scripts/customscripts_signs.pory"
-	.string "ROUTE 1\p"
-	.string "{RIGHT_ARROW} FENNILAHL TOWN\n"
-	.string "{LEFT_ARROW} CARABRUE TOWN.$"
+	.string "Route 1\p"
+	.string "{RIGHT_ARROW} Fennilahl Town\n"
+	.string "{LEFT_ARROW} Carabrue Town.$"
 
 WhiteSign_FennilahlTown_Main_Text_0:
 # 36 "data//scripts/customscripts_signs.pory"
-	.string "FENNILAHL TOWN\n"
+	.string "Fennilahl Town\n"
 	.string "A calm, serene retirement home.$"
 
 WhiteSign_FennilahlTown_TowardsRoute2_Text_0:
@@ -182,27 +182,27 @@ WhiteSign_FennilahlTown_TowardsRoute2_Text_0:
 WhiteSign_FennilahlTown_TowardsRoute3_Text_0:
 # 46 "data//scripts/customscripts_signs.pory"
 	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
-	.string "To ROUTE 3 and GASTREE CITY.$"
+	.string "To ROUTE 3 and Gastree City.$"
 
 WhiteSign_Route3_TowardsFennilahl_Text_0:
 # 57 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 3\p"
-	.string "{UP_ARROW} FENNILAHL TOWN\n"
-	.string "{RIGHT_ARROW} GASTREE CITY.$"
+	.string "{UP_ARROW} Fennilahl Town\n"
+	.string "{RIGHT_ARROW} Gastree City.$"
 
 WhiteSign_Route3_VineRiverUnderpass_Text_0:
 # 62 "data//scripts/customscripts_signs.pory"
-	.string "{UP_ARROW} VINE RIVER UNDERPASS.$"
+	.string "{UP_ARROW} Vine River UNDERPASS.$"
 
 WhiteSign_Route3_TowardsGastree_Text_0:
 # 67 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 3\p"
-	.string "{UP_ARROW} GASTREE CITY.\n"
-	.string "{LEFT_ARROW} FENNILAHL TOWN$"
+	.string "{UP_ARROW} Gastree City.\n"
+	.string "{LEFT_ARROW} Fennilahl Town$"
 
 WhiteSign_GastreeCity_Main_Text_0:
 # 76 "data//scripts/customscripts_signs.pory"
-	.string "GASTREE CITY\n"
+	.string "Gastree City\n"
 	.string "Where fall colors never fade.$"
 
 WhiteSign_GastreeCity_TeaHouse_Text_0:
@@ -218,23 +218,23 @@ WhiteSign_GastreeCity_Gym_Text_0:
 WhiteSign_Route4_TowardsGastree_Text_0:
 # 94 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 4\p"
-	.string "{DOWN_ARROW} GASTREE CITY.\n"
-	.string "{UP_ARROW} CERAM BASE CAMP$"
+	.string "{DOWN_ARROW} Gastree City.\n"
+	.string "{UP_ARROW} Ceram Base Camp$"
 
 WhiteSign_Route4_TowardsCeramBaseCamp_Text_0:
 # 99 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 4\p"
-	.string "{UP_ARROW} CERAM BASE CAMP\n"
-	.string "{DOWN_ARROW} GASTREE CITY.$"
+	.string "{UP_ARROW} Ceram Base Camp\n"
+	.string "{DOWN_ARROW} Gastree City.$"
 
 WhiteSign_CeramBaseCamp_Main_Text_0:
 # 109 "data//scripts/customscripts_signs.pory"
-	.string "CERAM BASE CAMP\n"
-	.string "Starting point for MT CERAM treks.$"
+	.string "Ceram Base Camp\n"
+	.string "Starting point for Mt. Ceram treks.$"
 
 WhiteSign_CeramBaseCamp_UpToMtCeram_Text_0:
 # 115 "data//scripts/customscripts_signs.pory"
-	.string "{UP_ARROW} MT CERAM\n"
+	.string "{UP_ARROW} Mt. Ceram\n"
 	.string "Supplies available at depot next door.$"
 
 WhiteSign_CeramBaseCamp_SupplyDepot_Text_0:
@@ -255,7 +255,7 @@ WoodSign_MtCeram_Warning_Text_0:
 
 WhiteSign_GalecrestCity_Main_Text_0:
 # 145 "data//scripts/customscripts_signs.pory"
-	.string "GALECREST CITY\n"
+	.string "Galecrest City\n"
 	.string "Where elegance meets ambition.$"
 
 WhiteSign_GalecrestCity_Garden_Text_0:

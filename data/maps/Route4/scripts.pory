@@ -53,7 +53,7 @@ script Route4_EventScript_EvilTeamDefeated{
     release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("We gotta tell the boss at CERAM BASE CAMP about this!"))
+    msgbox(format("We gotta tell the boss at Ceram Base Camp about this!"))
     release
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down)) 
@@ -274,9 +274,9 @@ script Route4_NPC_Cook{
     faceplayer
 
     if (flag(FLAG_ROUTE4_COOK)){
-        msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))        
+        msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit Pelluca City, be sure to drop by our restaurant!"))        
     } else {
-        msgbox(format("Hello young trainer! I'm a cook from the PELLUCA RESTAURANT, all the way on the other side of CORMORIA! Why am I here, you ask? It's because I travel all across CORMORIA to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around MT CERAM. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
+        msgbox(format("Hello young trainer! I'm a cook from the Pelluca Restaurant, all the way on the other side of CORMORIA! Why am I here, you ask? It's because I travel all across CORMORIA to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around Mt. Ceram. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_RAWST_BERRY)
             if (var(VAR_RESULT) == 1){
@@ -289,7 +289,7 @@ script Route4_NPC_Cook{
             } else {
                 giveitem(ITEM_ADRENALINE_ORB)                
             }
-                msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
+                msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit Pelluca City, be sure to drop by our restaurant!"))            
                 setflag(FLAG_ROUTE4_COOK)
             } else {
                 msgbox(format("I don't see any RAWST berries on you. Come back when you get one!"))
@@ -307,7 +307,7 @@ script Route4_NPC_Cook{
 script Route4_NPC_D{
     lockall
     faceplayer
-    msgbox(format("There are some grunts blocking the path to CERAM BASE CAMP! They remind me of my younger days...I used to be in an evil team in the HOENN region."))
+    msgbox(format("There are some grunts blocking the path to Ceram Base Camp! They remind me of my younger days...I used to be in an evil team in the HOENN region."))
     releaseall
 }
 

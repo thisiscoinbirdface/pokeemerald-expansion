@@ -248,7 +248,7 @@ script VilethornWoods_Trainer_H{
 script VilethornWoods_NPC1{
     lockall
     faceplayer
-    msgbox(format("The MORELULL here in VILETHORN WOODS release spores when in danger. That's what creates this fog."))
+    msgbox(format("The MORELULL here in Vilethorn Woods release spores when in danger. That's what creates this fog."))
     releaseall
 }
 
@@ -260,7 +260,7 @@ script VilethornWoods_NPC2{
     if (flag(FLAG_VILETHORN_NPC_MUSHROOMS)){
         msgbox(format("These mushrooms are really rare, you know?"))
     } else {
-        msgbox(format("I'm a traveling chef! While I usually cook at the PELLUCA RESTAURANT, I'm here to collect mushrooms to create new recipes...but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to give you in exchange!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
+        msgbox(format("I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to give you in exchange!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             //check
@@ -269,7 +269,7 @@ script VilethornWoods_NPC2{
                 release
                 giveitem(ITEM_TWISTED_SPOON)
                 setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
-                msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit PELLUCA CITY, be sure to drop by our restaurant!"))            
+                msgbox(format("Maybe I'll see you somewhere else, since I travel all over CORMORIA. And if you ever visit Pelluca City, be sure to drop by our restaurant!"))            
             } else {
                 msgbox(format("Hey, you don't have any! Are you trying to trick me? The DROWZEE and MORELULL doing enough of that!"))
             }

@@ -152,7 +152,7 @@ MirrohInterior_2F_Trainer_B_Text_1:
 MirrohInterior_2F_Trainer_B_Text_2:
 # 38 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Maybe there are ancient ruins at the\n"
-	.string "peak of MT MIRROH...$"
+	.string "peak of Mt. Mirroh...$"
 
 MirrohInterior_2F_Trainer_C_Text_0:
 # 43 "data//maps/MirrohInterior_2F/scripts.pory"

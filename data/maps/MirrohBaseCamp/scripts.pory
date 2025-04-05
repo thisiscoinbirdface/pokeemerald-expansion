@@ -6,7 +6,7 @@ mapscripts MirrohBaseCamp_MapScripts{}
 script MirrohBaseCamp_EventScript_Vendor1{
     lockall
 	faceplayer
-	message(format("Our supplies are limited but useful to trek up MT MIRROH!"))
+	message(format("Our supplies are limited but useful to trek up Mt. Mirroh!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor1_Inventory)
 	msgbox(format("Come again!"), MSGBOX_DEFAULT)
@@ -24,7 +24,7 @@ mart MirrohBaseCamp_Vendor1_Inventory{
 script MirrohBaseCamp_EventScript_Vendor2{
     lockall
 	faceplayer
-	message(format("I found all this inside MT MIRROH just yesterday!"))
+	message(format("I found all this inside Mt. Mirroh just yesterday!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor2_Inventory)
 	msgbox(format("C'mon, have another look!"), MSGBOX_DEFAULT)

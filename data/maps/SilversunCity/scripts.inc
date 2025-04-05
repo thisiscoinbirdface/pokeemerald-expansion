@@ -346,7 +346,7 @@ SilversunCity_EventScript_Detectives_Movement_0:
 
 SilversunCity_OnFrame_Text_0:
 # 28 "data//maps/SilversunCity/scripts.pory"
-	.string "DETECTIVE: ASST PROF RUE!? Are you\n"
+	.string "DETECTIVE: Asst. Prof. Rue!? Are you\n"
 	.string "okay?\p"
 	.string "RUE: All well, thanks to {PLAYER}.\p"
 	.string "DETECTIVE: We...we thought it was\n"
@@ -358,11 +358,11 @@ SilversunCity_OnFrame_Text_0:
 SilversunCity_OnFrame_Text_1:
 # 33 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: How did they get to you,\n"
-	.string "RUE?$"
+	.string "Rue?$"
 
 SilversunCity_OnFrame_Text_2:
 # 37 "data//maps/SilversunCity/scripts.pory"
-	.string "RUE: Oh, it was terrible! they barged\n"
+	.string "Rue: Oh, it was terrible! they barged\n"
 	.string "into our lab and started threatening\l"
 	.string "everyone unless we handed over the\l"
 	.string "DREAMALYSER blueprints! I managed to\l"
@@ -391,7 +391,7 @@ SilversunCity_OnFrame_Text_4:
 # 44 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: So they want to build a\n"
 	.string "DREAMALYSER and use it to go to\l"
-	.string "ANCIENT CORMORIA?\p"
+	.string "Ancient Cormoria?\p"
 	.string "RUE: Yes.\p"
 	.string "DETECTIVE: There must be something\n"
 	.string "we're missing. What's there in the past?\l"
@@ -399,14 +399,14 @@ SilversunCity_OnFrame_Text_4:
 	.string "...\p"
 	.string "...\p"
 	.string "...and where's KOHLA when we need him?\n"
-	.string "RUE, he was chasing your leads. He's\l"
+	.string "Rue, he was chasing your leads. He's\l"
 	.string "nowhere to be seen now. Sigh...what good\l"
 	.string "is an ace rookie if he's not even around\l"
 	.string "when we need him?$"
 
 SilversunCity_OnFrame_Text_5:
 # 47 "data//maps/SilversunCity/scripts.pory"
-	.string "DETECTIVE: RUE - go back home. You've\n"
+	.string "DETECTIVE: Rue - go back home. You've\n"
 	.string "had a hard time. Take care of yourself.\p"
 	.string "RUE: Y-yes, I better...see you al soon.\n"
 	.string "Thanks again {PLAYER}.$"
@@ -424,11 +424,11 @@ SilversunCity_OnFrame_Text_6:
 	.string "Got it? Head to the MIRROH BASE CAMP,\n"
 	.string "talk to the lady who manages the\l"
 	.string "graveyard, and find out what Team\l"
-	.string "Somber seeks in ANCIENT CORMORIA.\p"
+	.string "Somber seeks in Ancient Cormoria.\p"
 	.string "Now get on it, pronto!\p"
 	.string "...\p"
 	.string "Seriously, where is KOHLA? He should be\n"
-	.string "done chasing RUE's leads by now...we've\l"
+	.string "done chasing Rue's leads by now...we've\l"
 	.string "got to go find him.$"
 
 SilversunCity_EventScript_Detectives_Text_0:
@@ -459,7 +459,7 @@ SilversunCity_EventScript_Detectives_Text_3:
 	.string "DETECTIVE: What!? You saw the\n"
 	.string "Professor with a Team Somber grunt?\l"
 	.string "The grunt was taking the Prof out of\l"
-	.string "VILETHORN WOODS?$"
+	.string "Vilethorn Woods?$"
 
 SilversunCity_EventScript_Detectives_Text_4:
 # 113 "data//maps/SilversunCity/scripts.pory"

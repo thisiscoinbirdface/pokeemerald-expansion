@@ -99,4 +99,4 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Text_4:
 # 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "KOHLA: I have to carry on. Let's do the\n"
 	.string "right thing and go stop Team Somber.\p"
-	.string "I'll see you at MT MIRROH.$"
+	.string "I'll see you at Mt. Mirroh.$"

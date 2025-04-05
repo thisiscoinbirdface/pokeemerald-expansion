@@ -603,7 +603,7 @@ PellucaCity_WingullGirl_Movement_0:
 PellucaCity_Greta_Main_Text_0:
 # 43 "data//maps/PellucaCity/scripts.pory"
 	.string "GRETA: Oh, hello there! It's you again.\n"
-	.string "Fancy seeing you in these parts. ROUTE\l"
+	.string "Fancy seeing you in these parts. Route\l"
 	.string "6 was a tough trek, eh?\p"
 	.string "GRETA: Come, come. I've got some really\n"
 	.string "great stuff from...well, a magician can't\l"
@@ -671,9 +671,9 @@ PellucaCity_EventScripts_Gabrielle_Text_7:
 	.string "I can't erase what I've done, but I'm\n"
 	.string "going to make a better choice this time.\p"
 	.string "GABRIELLE: I suppose you're going to\n"
-	.string "head to the MIRROH BASE CAMP from\l"
-	.string "here? Team Somber must've reached\l"
-	.string "there already. Best of luck, {PLAYER}.$"
+	.string "head to the Mirroh Base Camp from here?\l"
+	.string "Team Somber must've reached there\l"
+	.string "already. Best of luck, {PLAYER}.$"
 
 PellucaCity_Zorua_Text_0:
 # 132 "data//maps/PellucaCity/scripts.pory"
@@ -692,11 +692,11 @@ PellucaCity_NPC1_Text_0:
 PellucaCity_NPC2_Text_0:
 # 179 "data//maps/PellucaCity/scripts.pory"
 	.string "A tourist! Have you come to eat at the\n"
-	.string "PELLUCA RESTAURANT?$"
+	.string "Pelluca Restaurant?$"
 
 PellucaCity_NPC3_Text_0:
 # 187 "data//maps/PellucaCity/scripts.pory"
-	.string "I would've trained up in MT MIRROH but I\n"
+	.string "I would've trained up in Mt. Mirroh but I\n"
 	.string "can't go there without a CABLE CAR\l"
 	.string "PASS. So I'm jogging here instead.$"
 
@@ -707,16 +707,16 @@ PellucaCity_NPC4_Text_0:
 
 PellucaCity_NPC5_Text_0:
 # 206 "data//maps/PellucaCity/scripts.pory"
-	.string "The Gym Leader of PELLUCA CITY had her\n"
+	.string "The Gym Leader of Pelluca City had her\n"
 	.string "gym constructed on a separate island.\l"
 	.string "Talk about entitlement!$"
 
 PellucaCity_NPC6_Text_0:
 # 218 "data//maps/PellucaCity/scripts.pory"
-	.string "Are you headed to the MIRROH BASE\n"
-	.string "CAMP? You'll have to take the cable car.\l"
-	.string "It's just past the Pokemart. Wear\l"
-	.string "something warm!$"
+	.string "Are you headed to the Mirroh Base Camp?\n"
+	.string "You'll have to take the cable car. It's\l"
+	.string "just past the Pokemart. Wear something\l"
+	.string "warm!$"
 
 PellucaCity_NPC7_Text_0:
 # 226 "data//maps/PellucaCity/scripts.pory"

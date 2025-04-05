@@ -331,8 +331,8 @@ MtMirrohExterior_BreechTrigger_Text_2:
 	.string "...\p"
 	.string "BREECH: So you're chasing Team Somber.\n"
 	.string "I admire you, {PLAYER}. CLEFAIRY and\l"
-	.string "I just saw a couple of them enter MT\l"
-	.string "MIRROH. They left this drill here. I\l"
+	.string "I just saw a couple of them enter Mt.\l"
+	.string "Mirroh. They left this drill here. I\l"
 	.string "wonder what they're using all this\l"
 	.string "equipment for?$"
 
@@ -382,7 +382,7 @@ MtMirrohExterior_Trainer_B_Text_2:
 MtMirrohExterior_Trainer_C_Text_0:
 # 77 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "My PALPITOAD and I training to beat the\n"
-	.string "WINTERLILY HOLLOW Gym. A battle will be\l"
+	.string "Winterlily Hollow Gym. A battle will be\l"
 	.string "better training than a jog though!$"
 
 MtMirrohExterior_Trainer_C_Text_1:
@@ -437,8 +437,8 @@ MtMirrohExterior_NPC_A_Text_0:
 MtMirrohExterior_NPC_B_Text_0:
 # 130 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Higher up, the weather becomes too\n"
-	.string "harsh to climb, so to reach WINTERLILY\l"
-	.string "HOLLOW, you have to cross the caves\l"
+	.string "harsh to climb, so to reach Winterlily\l"
+	.string "Hollow, you have to cross the caves\l"
 	.string "inside the mountain.$"
 
 MtMirrohExterior_NPC_C_Text_0:

@@ -292,9 +292,9 @@ SilversunCity_Houses_Tutor_Text_0:
 
 SilversunCity_Houses_NPC1_Text_0:
 # 86 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "SILVERSUN CITY is right between the\n"
-	.string "always foggy VILETHORN WOODS and the\l"
-	.string "always raining ROUTE 6! We should be\l"
+	.string "Silversun City is right between the\n"
+	.string "always foggy Vilethorn Woods and the\l"
+	.string "always raining Route 6! We should be\l"
 	.string "called SILVERSHADE CITY instead.$"
 
 SilversunCity_Houses_NPC2_Text_0:

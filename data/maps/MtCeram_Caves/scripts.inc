@@ -298,7 +298,7 @@ MtCeram_Caves_Greta_Main_Text_2:
 # 89 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "???: Thank you so much! I forgot my {PKMN}\n"
 	.string "at home and couldn't do anything!\l"
-	.string "People at the CERAM BASE CAMP told me\l"
+	.string "People at the Ceram Base Camp told me\l"
 	.string "that the SIZZLIPEDE and VENIPEDE\l"
 	.string "fight all the time...that's what I get\l"
 	.string "for not taking them seriously!\p"

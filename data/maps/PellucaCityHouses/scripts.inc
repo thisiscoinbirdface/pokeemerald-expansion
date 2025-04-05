@@ -119,9 +119,9 @@ PellucaCityHouses_GabSibling3_Text_1:
 
 PellucaCityHouses_NPC1_Text_0:
 # 40 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Since PELLUCA CITY sits at the\n"
-	.string "intersection of the IVY RIVER and the\l"
-	.string "HOYA RIVER, it's split up into several\l"
+	.string "Since Pelluca City sits at the\n"
+	.string "intersection of the Ivy River and the\l"
+	.string "Hoya River, it's split up into several\l"
 	.string "small islands.$"
 
 PellucaCityHouses_NPC2_Text_0:
@@ -139,5 +139,5 @@ PellucaCityHouses_NPC3_Text_0:
 PellucaCityHouses_NPC4_Text_0:
 # 61 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "My DELPHOX doesn't like the river air.\n"
-	.string "She prefers the dense fog of VILETHORN\l"
-	.string "WOODS, where I caught her.$"
+	.string "She prefers the dense fog of Vilethorn\l"
+	.string "Woods, where I caught her.$"

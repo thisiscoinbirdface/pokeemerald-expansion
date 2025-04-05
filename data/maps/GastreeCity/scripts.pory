@@ -54,7 +54,7 @@ text GastreeCity_KohlaIntro2{
     format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the CERAM BASE CAMP. Don't come after me - I don't need your help. Over and out, chum!")
+    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help. Over and out, chum!")
 }
 
 
@@ -63,7 +63,7 @@ text GastreeCity_KohlaPostBattle{
 script GastreeCity_NPC1{
     lockall
     faceplayer    
-    msgbox(format("You came all the way from CARABRUE TOWN? Woah! Then I bet you don't know - be careful on ROUTE 4! There's a dangerouns DEWPIDER that attacks people."))
+    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - be careful on ROUTE 4! There's a dangerouns DEWPIDER that attacks people."))
     release
 }
 
@@ -101,7 +101,7 @@ script GastreeCity_Mankey{
 script GastreeCity_NPC6{
     lockall
     faceplayer    
-    msgbox(format("GASTREE CITY is famous not just for being a connecting Route to Mt. Ceram Base Camp, but also for its scenic viewpoints and its teahouse!"))
+    msgbox(format("Gastree City is famous not just for being a connecting Route to Mt. Ceram Base Camp, but also for its scenic viewpoints and its teahouse!"))
     release
 }
 

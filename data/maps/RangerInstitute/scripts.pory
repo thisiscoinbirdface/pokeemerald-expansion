@@ -352,7 +352,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release
     delay(24)
-    msgbox(format("RAVINE: Now, I have some important items that the RANGER INSTITUTE at IVY RIVER wants. Your first mission will be to deliver this to them!"))
+    msgbox(format("RAVINE: Now, I have some important items that the RANGER INSTITUTE at Ivy River wants. Your first mission will be to deliver this to them!"))
     release
     removeobject(LOCALID_PACKAGE)
     giveitem(ITEM_RANGER_PACKAGE)
@@ -360,7 +360,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     setflag(FLAG_RANGER_GOT_FIRST_MISSION)
     setvar(VAR_RANGER_INSTITUTE, 3)
     delay(16)
-    msgbox(format("RAVINE: If you complete this mission, you'll rank up from Recruit to Candidate. The RANGER INSTITUTE at IVY RIVER is a little hard to find. You'll have to surf down from WINTERLILY HOLLOW and explore the riverbank. Good training for a recruit, eh?"))
+    msgbox(format("RAVINE: If you complete this mission, you'll rank up from Recruit to Candidate. The RANGER INSTITUTE at Ivy River is a little hard to find. You'll have to surf down from Winterlily Hollow and explore the riverbank. Good training for a recruit, eh?"))
     releaseall
     end
 }

@@ -3,7 +3,7 @@ mapscripts Route5_MapScripts{}
 script Route5_NPC_A{
     lockall
     faceplayer
-    msgbox(format("My head is spinning because of the fog in VILETHORN WOODS! I need to go home and rest."))
+    msgbox(format("My head is spinning because of the fog in Vilethorn Woods! I need to go home and rest."))
     releaseall
     end
 }
@@ -46,7 +46,7 @@ script Route5_Greta_Trigger1{
 
 
 script Route5_Greta_Main{
-    msgbox(format("GRETA: It's you! The wandering saviour from MT CERAM. How wonderful! A new customer."))
+    msgbox(format("GRETA: It's you! The wandering saviour from Mt. Ceram. How wonderful! A new customer."))
     release
     delay(20)
     msgbox(Common_Text_Greta_Comecome)

@@ -182,7 +182,7 @@ Route3_TrainerBattle_Kim_Text_2:
 
 Route3_TrainerBattle_Ronnie_Text_0:
 # 14 "data//maps/Route3/scripts.pory"
-	.string "I'm on my way to GASTREE CITY to\n"
+	.string "I'm on my way to Gastree City to\n"
 	.string "challenge the {PKMN} Gym there. Let me\l"
 	.string "practice with you!$"
 
@@ -192,7 +192,7 @@ Route3_TrainerBattle_Ronnie_Text_1:
 
 Route3_TrainerBattle_Ronnie_Text_2:
 # 15 "data//maps/Route3/scripts.pory"
-	.string "I heard that the GASTREE CITY Gym\n"
+	.string "I heard that the Gastree City Gym\n"
 	.string "Leader uses FIRE type {PKMN}.$"
 
 Route3_TrainerBattle_Jana_Text_0:

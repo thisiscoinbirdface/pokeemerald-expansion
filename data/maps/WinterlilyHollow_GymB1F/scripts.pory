@@ -37,8 +37,8 @@ script WinterlilyHollow_Gym_Trainer_A{
 
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve WINTERLILY HOLLOW!"), "Alright, carry on.")
-    msgbox(format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve WINTERLILY HOLLOW!"))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve Winterlily Hollow!"), "Alright, carry on.")
+    msgbox(format("This is a power plant that VINIEL set up. While trainers come and go, us ELECTRICIANS work around the clock to serve Winterlily Hollow!"))
     releaseall
     end
 }
@@ -62,7 +62,7 @@ script WinterlilyHollow_Gym_Trainer_D{
 //SCIENTIST
 script WinterlilyHollow_Gym_Trainer_E{
     trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format("VINIEL hired me to do some research on efficient electricity storage, but all I've been doing is battling chums like you!"), "Another chum I lost to!")
-    msgbox(format("Since WINTERLILY HOLLOW gets no electricity, we need robust storage solutions."))
+    msgbox(format("Since Winterlily Hollow gets no electricity, we need robust storage solutions."))
     releaseall
     end
 }

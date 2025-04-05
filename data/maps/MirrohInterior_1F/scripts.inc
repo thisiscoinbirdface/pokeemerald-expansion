@@ -168,7 +168,7 @@ MirrohInterior_1F_Trainer_D_Text_2:
 MirrohInterior_1F_Trainer_E_Text_0:
 # 56 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "These grunts aren't letting me through\n"
-	.string "to WINTERLILY HOLLOW! Are you one of\l"
+	.string "to Winterlily Hollow! Are you one of\l"
 	.string "them too?$"
 
 MirrohInterior_1F_Trainer_E_Text_1:
@@ -182,17 +182,17 @@ MirrohInterior_1F_Trainer_E_Text_2:
 
 MirrohInterior_1F_NPC_A_Text_0:
 # 81 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I'm trekking to WINTERLILY HOLLOW! But\n"
-	.string "my GRASS type {PKMN} can't deal with all\l"
-	.string "the ICE type {PKMN} around here...$"
+	.string "I'm trekking to Winterlily Hollow! But my\n"
+	.string "GRASS type {PKMN} can't deal with all the\l"
+	.string "ICE type {PKMN} around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "The way to WINTERLILY HOLLOW is past\n"
-	.string "the ledge above. But how do I cross the\l"
+	.string "The way to Winterlily Hollow is past the\n"
+	.string "ledge above. But how do I cross the\l"
 	.string "ledge?$"
 
 MirrohInterior_1F_NPC_C_Text_0:
 # 97 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Past this is the trek upto MT MIRROH\n"
+	.string "Past this is the trek upto Mt. Mirroh\n"
 	.string "PEAK. The weather is harsh!$"

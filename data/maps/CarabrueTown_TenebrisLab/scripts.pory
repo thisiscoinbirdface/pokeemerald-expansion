@@ -51,7 +51,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
 
-    msgbox(format("Right, now normally I would brief you on your work, but we've got no time. So I'm just going to have you start working right away. We've been running low on supplies and the nearest Pokemart is in FENNILAHL TOWN, past Route 1. Please go and pick up our shipment and bring it back. Be careful! There are some important things in there!"))
+    msgbox(format("Right, now normally I would brief you on your work, but we've got no time. So I'm just going to have you start working right away. We've been running low on supplies and the nearest Pokemart is in Fennilahl Town, past Route 1. Please go and pick up our shipment and bring it back. Be careful! There are some important things in there!"))
     release
 
     applymovement(3, moves(jump_in_place_left))
@@ -95,24 +95,24 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         addobject(9)
         addobject(8)
 
-        msgbox(format("RUE: Good, you're back. Come here."))
+        msgbox(format("Rue: Good, you're back. Come here."))
         release
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
         waitmovement(0)
         applymovement(3, moves(face_left))
         waitmovement(0)
-        msgbox(format("RUE: Detectives, meet {PLAYER}, our newest assistant."))
+        msgbox(format("Rue: Detectives, meet {PLAYER}, our newest assistant."))
         msgbox(format("DETECTIVE: We've met already."))
 
         applymovement(3, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: {PLAYER}, Have you got the supplies?\nNo?"))
+        msgbox(format("Rue: {PLAYER}, Have you got the supplies?\nNo?"))
         release
         
         applymovement(3, moves(emote_exclamation_mark jump_in_place_down))
         waitmovement(0)
-        msgbox(format("RUE: WHAT?! Professor Tenebris took them?\p...\pRUE: Sigh...at any rate, thanks for telling me, {PLAYER}."))
+        msgbox(format("Rue: WHAT?! Professor Tenebris took them?\p...\pRUE: Sigh...at any rate, thanks for telling me, {PLAYER}."))
         release
 
             //Complete previous quest
@@ -123,35 +123,35 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(3, moves(face_left emote_question_mark))
         waitmovement(0)
-        msgbox(format("RUE: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of CORMORIA. You see..."))
+        msgbox(format("Rue: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of CORMORIA. You see..."))
         release
 
         applymovement(3, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
+        msgbox(format("Rue: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
         release
 
         applymovement(3, moves(walk_left walk_down *2 walk_right*2))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
         waitmovement(0)
-        msgbox(format("RUE: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
+        msgbox(format("Rue: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
         release
 
         applymovement(3, moves(face_left))
         waitmovement(0)
         delay(20)
-        msgbox(format("RUE: No...this thing needs something far more potent. Our plan was to use dreamstones to power it. Dreamstones are powerful reserves of subconscious {PKMN} energy in solidified form. We don't know yet how they came to be, and so far, we know of only three across all of CORMORIA. Incredibly rare, you see? And power like that in the wrong hands..."))
+        msgbox(format("Rue: No...this thing needs something far more potent. Our plan was to use dreamstones to power it. Dreamstones are powerful reserves of subconscious {PKMN} energy in solidified form. We don't know yet how they came to be, and so far, we know of only three across all of CORMORIA. Incredibly rare, you see? And power like that in the wrong hands..."))
         release
 
         applymovement(3, moves(walk_left face_up))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion {PKMN}...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the DREAMALYSER for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
-        msgbox(format("RUE: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
+        msgbox(format("Rue: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion {PKMN}...and one dreamstone. One of the only three dreamstones that exist. And just as we would have powered up the DREAMALYSER for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did he leave? What on earth was he thinking!?"))
+        msgbox(format("Rue: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
         msgbox(format("DETECTIVE: If we could get our hands on one of the other dreamstones, we might be able to understand why the Professor vanished."))
-        msgbox(format("RUE: Maybe..."))
+        msgbox(format("Rue: Maybe..."))
         release
 
         applymovement(3, moves(walk_left *2 face_up))
@@ -163,17 +163,17 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(8, moves(face_down))
         waitmovement(0)    
 
-        msgbox(format("RUE: Detectives...please. You must find the Professor!"))
+        msgbox(format("Rue: Detectives...please. You must find the Professor!"))
         msgbox(format("DETECTIVE: Finding him is what we're here for. Again, I can't shake the hunch that the other dreamstones could provide us with a clue."))
-        msgbox(format("RUE: Whatever you need to do!"))
+        msgbox(format("Rue: Whatever you need to do!"))
         msgbox(format("DETECTIVE: We'll do our best, Rue. But we're detectives - we can uncover his tracks, but we can't unravel his mind. We'll need some help from one of you."))
-        msgbox(format("RUE: What do you plan to do?"))
+        msgbox(format("Rue: What do you plan to do?"))
         msgbox(format("DETECTIVE: A two-pronged strategy. While we track the Professor, one of you should find a dreamstone for us to examine for clues."))
-        msgbox(format("RUE: But none of us can leave the lab! There's too much work."))
+        msgbox(format("Rue: But none of us can leave the lab! There's too much work."))
         msgbox(format("DETECTIVE: Well...what about this kid?"))
-        msgbox(format("RUE: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
+        msgbox(format("Rue: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
         msgbox(format("DETECTIVE: What else do you suggest? {PLAYER} is the best we've got."))
-        msgbox(format("RUE: Right...yes. You're right."))
+        msgbox(format("Rue: Right...yes. You're right."))
         release
 
         applymovement(9, moves(face_right))
@@ -186,8 +186,8 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
 
         msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab."))
-        msgbox(format("RUE: The dreamstones are scattered all across CORMORIA. Have you ever traveled beyond FENNILAHL TOWN? CORMORIA is vast. Dangerous Pokemon have made the mountains, forests and seas their territory. I fear you may not be up to the task..."))
-        msgbox(format("RUE: I don't know how I can help...perhaps this may be of use."))
+        msgbox(format("Rue: The dreamstones are scattered all across CORMORIA. Have you ever traveled beyond Fennilahl Town? CORMORIA is vast. Dangerous Pokemon have made the mountains, forests and seas their territory. I fear you may not be up to the task..."))
+        msgbox(format("Rue: I don't know how I can help...perhaps this may be of use."))
         release   
         //Pokedex Get
         playfanfare(MUS_OBTAIN_ITEM)
@@ -195,7 +195,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitfanfare  
         setflag(FLAG_SYS_POKEDEX_GET)
 
-        msgbox(format("RUE: It's a Pokedex. It contains information on Pokemon you've encountered. And it can store more if you catch them."))
+        msgbox(format("Rue: It's a Pokedex. It contains information on Pokemon you've encountered. And it can store more if you catch them."))
         release
 
         applymovement(3, moves(walk_left walk_up *2 walk_right face_down))
@@ -203,10 +203,10 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("RUE: Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
+        msgbox(format("Rue: Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
         release
         delay(16)
-        msgbox(format("RUE: I've failed."))
+        msgbox(format("Rue: I've failed."))
         release
         delay(16)
         applymovement(8, moves(emote_exclamation_mark))
@@ -229,7 +229,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(10, moves(face_right))
         waitmovement(0) 
-        msgbox(format("???: You can't give this kid a job like that! What's your name? {PLAYER}? Pshh, whatever. Look at you! Your Pokemon look exhausted after a single trip to FENNILAHL TOWN!"))  
+        msgbox(format("???: You can't give this kid a job like that! What's your name? {PLAYER}? Pshh, whatever. Look at you! Your Pokemon look exhausted after a single trip to Fennilahl Town!"))  
 
         applymovement(10, moves(face_left))
         waitmovement(0) 
@@ -237,7 +237,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         applymovement(3, moves(emote_question_mark))
         waitmovement(0)
-        msgbox(format("RUE: Excuse me..."))  
+        msgbox(format("Rue: Excuse me..."))  
         msgbox(format("DETECTIVE: Meet KOHLA, this years ace rookie from the Detective Academy."))  
 
         applymovement(10, moves(jump_in_place_right))
@@ -273,10 +273,10 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
-        msgbox(format("DETECTIVE: Well RUE, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and KOHLA to get the dreamstone while we track PROFESSOR TENEBRIS. RUE, do you know anything of the whereabouts of the other dreamstones?"))  
-        msgbox(format("RUE: I know of one dreamstone somewhere inside MT CERAM. {PLAYER}, MT CERAM is further east from FENNILAHL TOWN. You'll have to cross through the tunnel to the other side to reach GASTREE CITY, and then make your way up north towards the mountain."))  
-        msgbox(format("DETECTIVE: {PLAYER} - you know what to do. Head east to GASTREE CITY. From there, make your way to MT CERAM and find the dreamstone inside."))  
-        msgbox(format("RUE: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
+        msgbox(format("DETECTIVE: Well Rue, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and KOHLA to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
+        msgbox(format("DETECTIVE: {PLAYER} - you know what to do. Head east to Gastree City. From there, make your way to Mt. Ceram and find the dreamstone inside."))  
+        msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
 
 
         //VARS, FLAGS AND QUESTS
@@ -469,7 +469,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist1{
 script CarabrueTown_TenebrisLab_EventScript_Scientist2{
     lockall
     faceplayer
-    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for PROFESSOR TENEBRIS, we'd have had to shut the lab down."))
+    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."))
     releaseall
 }
 
@@ -507,7 +507,7 @@ script CarabrueTown_TenebrisLab_Metagross{
     lockall
     faceplayer
     playmoncry(SPECIES_METAGROSS, CRY_MODE_NORMAL)
-    msgbox(format("It's ASST PROF RUE's METAGROSS. It's so intimidating!"))
+    msgbox(format("It's Asst. Prof. Rue's METAGROSS. It's so intimidating!"))
     releaseall
     end
 }

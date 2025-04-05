@@ -348,10 +348,11 @@ CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 
 CeramBaseCamp_NPC_Exit_Text_0:
 # 36 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "MT CERAM is dangerous because once you\n"
-	.string "enter you can't come back. For safety\l"
-	.string "reasons, we don't allow trainers without\l"
-	.string "at least two gym badges to pass.$"
+	.string "Mt. Ceram is dangerous because once\n"
+	.string "you enter you can't come back. For\l"
+	.string "safety reasons, we don't allow trainers\l"
+	.string "without at least two gym badges to\l"
+	.string "pass.$"
 
 CeramBaseCamp_NPC1_Text_0:
 # 45 "data//maps/CeramBaseCamp/scripts.pory"
@@ -362,7 +363,7 @@ CeramBaseCamp_NPC1_Text_0:
 CeramBaseCamp_NPC2_Text_0:
 # 53 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "This camp was established to dig a\n"
-	.string "tunnel through MT CERAM. Old equipment\l"
+	.string "tunnel through Mt. Ceram. Old equipment\l"
 	.string "from back then is left here. I remember\l"
 	.string "a DRILBUR made its home inside one of\l"
 	.string "these machines and refused to leave!\l"

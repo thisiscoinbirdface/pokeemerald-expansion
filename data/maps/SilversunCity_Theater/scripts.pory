@@ -95,7 +95,7 @@ script SilversunCity_Theater_NPC1{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."))
     } else {
-        msgbox(format("GLORIA is the face of SILVERSUN CITY! A Gym Leader AND a famous actress? She's really a role model for women."))
+        msgbox(format("GLORIA is the face of Silversun City! A Gym Leader AND a famous actress? She's really a role model for women."))
     }
     releaseall
     end

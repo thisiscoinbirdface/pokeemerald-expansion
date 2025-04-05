@@ -32,5 +32,5 @@ FennilahlTown_House1_NPC1_Text_0:
 
 FennilahlTown_House1_NPC2_Text_0:
 # 13 "data//maps/FennilahlTown_House1/scripts.pory"
-	.string "My sister wants to visit GASTREE CITY\n"
+	.string "My sister wants to visit Gastree City\n"
 	.string "but crossing Route 3 isn't so easy.$"

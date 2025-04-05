@@ -40,7 +40,7 @@ script PellucaCity_Greta_Trigger2{
 
 
 script PellucaCity_Greta_Main{
-    msgbox(format("GRETA: Oh, hello there! It's you again. Fancy seeing you in these parts. ROUTE 6 was a tough trek, eh?\pGRETA: Come, come. I've got some really great stuff from...well, a magician can't reveal her secrets, can she?"))
+    msgbox(format("GRETA: Oh, hello there! It's you again. Fancy seeing you in these parts. Route 6 was a tough trek, eh?\pGRETA: Come, come. I've got some really great stuff from...well, a magician can't reveal her secrets, can she?"))
     release
     delay(20)
     msgbox(Common_Text_Greta_Comecome)
@@ -115,7 +115,7 @@ script PellucaCity_EventScripts_Gabrielle{
     msgbox(format("GABRIELLE: I want you to have this. As a thank you. For saving me - not just once, but so many times. You're a strong trainer, but more importantly - you're a good person. I hope to be like you."))
     release
     giveitem(ITEM_CHOICE_BAND)
-    msgbox(format("GABRIELLE: Who we are is defined by the chocies we make, and once we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pGABRIELLE: I suppose you're going to head to the MIRROH BASE CAMP from here? Team Somber must've reached there already. Best of luck, {PLAYER}."))
+    msgbox(format("GABRIELLE: Who we are is defined by the chocies we make, and once we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pGABRIELLE: I suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already. Best of luck, {PLAYER}."))
     release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))
@@ -176,7 +176,7 @@ script PellucaCity_NPC1{
 script PellucaCity_NPC2{
     lockall
     faceplayer
-    msgbox(format("A tourist! Have you come to eat at the PELLUCA RESTAURANT?"))
+    msgbox(format("A tourist! Have you come to eat at the Pelluca Restaurant?"))
     releaseall
     end
 }
@@ -184,7 +184,7 @@ script PellucaCity_NPC2{
 script PellucaCity_NPC3{
     lockall
     faceplayer
-    msgbox(format("I would've trained up in MT MIRROH but I can't go there without a CABLE CAR PASS. So I'm jogging here instead."))
+    msgbox(format("I would've trained up in Mt. Mirroh but I can't go there without a CABLE CAR PASS. So I'm jogging here instead."))
     releaseall
     end
 }
@@ -203,7 +203,7 @@ script PellucaCity_NPC5{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7 walk_fast_left * 5))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("The Gym Leader of PELLUCA CITY had her gym constructed on a separate island. Talk about entitlement!"))
+    msgbox(format("The Gym Leader of Pelluca City had her gym constructed on a separate island. Talk about entitlement!"))
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7 walk_fast_right * 5))
     waitmovement(0)
@@ -215,7 +215,7 @@ script PellucaCity_NPC5{
 script PellucaCity_NPC6{
     lockall
     faceplayer
-    msgbox(format("Are you headed to the MIRROH BASE CAMP? You'll have to take the cable car. It's just past the Pokemart. Wear something warm!"))
+    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car. It's just past the Pokemart. Wear something warm!"))
     releaseall
     end
 }

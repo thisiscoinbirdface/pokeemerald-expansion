@@ -258,7 +258,7 @@ script GalecrestCity_DetectiveAcademy_NPC3{
 script GalecrestCity_DetectiveAcademy_NPC4{
     lockall
     faceplayer
-    msgbox(format("Since many rich folk live in GALECREST CITY, there's a lot of theft. New students are often handed smaller cases to solve as part of their field studies."))
+    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft. New students are often handed smaller cases to solve as part of their field studies."))
     releaseall
 }
 

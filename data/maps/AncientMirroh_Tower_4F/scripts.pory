@@ -50,7 +50,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)
 
-    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your PROFESSOR TENEBRIS unlocked the latent potential within the dreams and memories of {PKMN} today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
+    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your Professor Tenebris unlocked the latent potential within the dreams and memories of {PKMN} today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
     release
     delay(30)
 
@@ -153,7 +153,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)
     delay(30)    
-    msgbox(format("MELEA: And now it's time to bid adieu! I hope you enjoy your time here in ANCIENT CORMORIA - because you'll never leave!\pHahaha!"))
+    msgbox(format("MELEA: And now it's time to bid adieu! I hope you enjoy your time here in Ancient Cormoria - because you'll never leave!\pHahaha!"))
     release
     applymovement(3, moves(face_up))
     applymovement(LOCALID_MELEA, moves(walk_up * 2))    

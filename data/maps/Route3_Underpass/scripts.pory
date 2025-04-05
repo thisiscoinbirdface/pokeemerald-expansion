@@ -127,7 +127,7 @@ script Route3_Underpass_EvilBattle{
     release
     giveitem(ITEM_EVERSTONE)
     msgbox(format("I don't know about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
-    msgbox(format("Don't worry - CLEFAIRY's bored of that stone already. Next, we'll head to MT CERAM to collect rare stones there!"))
+    msgbox(format("Don't worry - CLEFAIRY's bored of that stone already. Next, we'll head to Mt. Ceram to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(3, moves(walk_down * 2))

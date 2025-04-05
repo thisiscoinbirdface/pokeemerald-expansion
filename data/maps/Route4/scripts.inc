@@ -585,8 +585,8 @@ Route4_EventScript_EvilTeamDefeated_Text_0:
 
 Route4_EventScript_EvilTeamDefeated_Text_1:
 # 56 "data//maps/Route4/scripts.pory"
-	.string "We gotta tell the boss at CERAM BASE\n"
-	.string "CAMP about this!$"
+	.string "We gotta tell the boss at Ceram Base\n"
+	.string "Camp about this!$"
 
 Route4_EventScript_EvilTeamDefeated_Text_2:
 # 61 "data//maps/Route4/scripts.pory"
@@ -795,19 +795,19 @@ Route4_NPC_Cook_Text_0:
 # 277 "data//maps/Route4/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over CORMORIA. And if you\l"
-	.string "ever visit PELLUCA CITY, be sure to\l"
-	.string "drop by our restaurant!$"
+	.string "ever visit Pelluca City, be sure to drop\l"
+	.string "by our restaurant!$"
 
 Route4_NPC_Cook_Text_1:
 # 279 "data//maps/Route4/scripts.pory"
 	.string "Hello young trainer! I'm a cook from the\n"
-	.string "PELLUCA RESTAURANT, all the way on the\l"
+	.string "Pelluca Restaurant, all the way on the\l"
 	.string "other side of CORMORIA! Why am I here,\l"
 	.string "you ask? It's because I travel all\l"
 	.string "across CORMORIA to find the best\l"
 	.string "ingredients for the restaurant! I'm\l"
 	.string "looking for a special berry that only\l"
-	.string "grows around MT CERAM. It's called a\l"
+	.string "grows around Mt. Ceram. It's called a\l"
 	.string "RAWST BERRY. If you happen to have one,\l"
 	.string "would you give it to me?$"
 
@@ -846,6 +846,6 @@ Route4_NPC_Cook_Text_7:
 Route4_NPC_D_Text_0:
 # 310 "data//maps/Route4/scripts.pory"
 	.string "There are some grunts blocking the\n"
-	.string "path to CERAM BASE CAMP! They remind me\l"
+	.string "path to Ceram Base Camp! They remind me\l"
 	.string "of my younger days...I used to be in an\l"
 	.string "evil team in the HOENN region.$"

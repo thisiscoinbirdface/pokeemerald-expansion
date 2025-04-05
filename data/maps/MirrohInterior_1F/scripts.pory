@@ -53,7 +53,7 @@ script MirrohInterior_1F_Trainer_D{
 
 //LASS (EXIT)
 script MirrohInterior_1F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT_D, format("These grunts aren't letting me through to WINTERLILY HOLLOW! Are you one of them too?"), format("No you're not!"))
+    trainerbattle_single(TRAINER_MIRROHINT_D, format("These grunts aren't letting me through to Winterlily Hollow! Are you one of them too?"), format("No you're not!"))
     msgbox(format("What are these city criminals doing all the way up here?"))
     releaseall
 }
@@ -78,7 +78,7 @@ script MirrohInterior_1F_Trainer_E{
 script MirrohInterior_1F_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I'm trekking to WINTERLILY HOLLOW! But my GRASS type {PKMN} can't deal with all the ICE type {PKMN} around here..."))
+    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type {PKMN} can't deal with all the ICE type {PKMN} around here..."))
     releaseall
     end
 }
@@ -86,7 +86,7 @@ script MirrohInterior_1F_NPC_A{
 script MirrohInterior_1F_NPC_B{
     lockall
     faceplayer
-    msgbox(format("The way to WINTERLILY HOLLOW is past the ledge above. But how do I cross the ledge?"))
+    msgbox(format("The way to Winterlily Hollow is past the ledge above. But how do I cross the ledge?"))
     releaseall
     end
 }
@@ -94,7 +94,7 @@ script MirrohInterior_1F_NPC_B{
 script MirrohInterior_1F_NPC_C{
     lockall
     faceplayer
-    msgbox(format("Past this is the trek upto MT MIRROH PEAK. The weather is harsh!"))
+    msgbox(format("Past this is the trek upto Mt. Mirroh PEAK. The weather is harsh!"))
     releaseall
     end
 }

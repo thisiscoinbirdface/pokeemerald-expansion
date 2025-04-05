@@ -55,5 +55,5 @@ GastreeCity_PokemonCenter_NPC1_Text_0:
 
 GastreeCity_PokemonCenter_NPC2_Text_0:
 # 28 "data//maps/GastreeCity_PokemonCenter/scripts.pory"
-	.string "Up north is MT CERAM and down south is\n"
-	.string "the giant VINE RIVER.$"
+	.string "Up north is Mt. Ceram and down south is\n"
+	.string "the giant Vine River.$"

@@ -161,8 +161,8 @@ MirrohBaseCampGym_Leader_Text_1:
 	.string "...is what I would say if there was a Gym\n"
 	.string "left.\p"
 	.string "CARONA: My name is CARONA, trainer. I am\n"
-	.string "the former Leader of the MIRROH BASE\l"
-	.string "CAMP GYM. The {PKMN} league recently\l"
+	.string "the former Leader of the Mirroh Base\l"
+	.string "Camp GYM. The {PKMN} league recently\l"
 	.string "decomissioned this gym.$"
 
 MirrohBaseCampGym_Leader_Text_2:

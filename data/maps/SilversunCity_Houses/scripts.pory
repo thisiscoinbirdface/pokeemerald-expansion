@@ -83,7 +83,7 @@ script SilversunCity_Houses_Tutor{
 script SilversunCity_Houses_NPC1{
     lockall
     faceplayer
-    msgbox(format("SILVERSUN CITY is right between the always foggy VILETHORN WOODS and the always raining ROUTE 6! We should be called SILVERSHADE CITY instead."))
+    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called SILVERSHADE CITY instead."))
     releaseall
     end
 }

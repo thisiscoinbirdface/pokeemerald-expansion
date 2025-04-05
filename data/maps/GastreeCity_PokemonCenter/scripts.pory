@@ -25,7 +25,7 @@ script GastreeCity_PokemonCenter_NPC1{
 script GastreeCity_PokemonCenter_NPC2{
 	lockall
     faceplayer
-	msgbox(format("Up north is MT CERAM and down south is the giant VINE RIVER."))
+	msgbox(format("Up north is Mt. Ceram and down south is the giant Vine River."))
 	releaseall
 }
 

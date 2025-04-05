@@ -497,8 +497,8 @@ Route3_Underpass_EvilBattle_Text_17:
 Route3_Underpass_EvilBattle_Text_18:
 # 130 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Don't worry - CLEFAIRY's bored of that\n"
-	.string "stone already. Next, we'll head to MT\l"
-	.string "CERAM to collect rare stones there!$"
+	.string "stone already. Next, we'll head to Mt.\l"
+	.string "Ceram to collect rare stones there!$"
 
 Route3_Underpass_EvilBattle_Text_19:
 # 141 "data//maps/Route3_Underpass/scripts.pory"

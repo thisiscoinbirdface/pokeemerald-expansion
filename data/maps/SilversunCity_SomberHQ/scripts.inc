@@ -680,7 +680,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_0:
 # 49 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???: Ahh...beautiful. We have much to\n"
 	.string "thank you for...\p"
-	.string "ASST PROF RUE.\p"
+	.string "Asst. Prof. Rue.\p"
 	.string "Your DREAMALYSER blueprints will be\n"
 	.string "invaluable to our efforts.$"
 
@@ -696,10 +696,10 @@ SilversunCity_SomberHQ_EventScript_Main_Text_2:
 SilversunCity_SomberHQ_EventScript_Main_Text_3:
 # 85 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???: So you're the one who defeated\n"
-	.string "MOXIE at MT CERAM. So young...you\l"
+	.string "MOXIE at Mt. Ceram. So young...you\l"
 	.string "must've gotten really lucky.\p"
-	.string "???: Meet your ASST PROF RUE. He's been\n"
-	.string "of immense help to us...albeit\l"
+	.string "???: Meet your Asst. Prof. Rue. He's\n"
+	.string "been of immense help to us...albeit\l"
 	.string "unwillingly.\p"
 	.string "RUE: {PLAYER}, I'm sorry. Th-they got\n"
 	.string "to me.$"
@@ -751,7 +751,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_10:
 # 134 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "MELEA: So you know our plan now. We're\n"
 	.string "going to build a Dreamalyser and take it\l"
-	.string "to MT MIRROH. We'll obtain the\l"
+	.string "to Mt. Mirroh. We'll obtain the\l"
 	.string "dreamstone there...and the rest? Well\l"
 	.string "you'll never see any of it, because I'm\l"
 	.string "going to put an end to you right here,\l"
@@ -764,19 +764,19 @@ SilversunCity_SomberHQ_EventScript_Main_Text_11:
 SilversunCity_SomberHQ_EventScript_Main_Text_12:
 # 145 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "MELEA: Unbelievable! Just unbelievable!\p"
-	.string "MELEA: Fine. You can have your ASST\n"
-	.string "PROF RUE back, child! We've got what we\l"
+	.string "MELEA: Fine. You can have your Asst.\n"
+	.string "Prof. Rue back, child! We've got what we\l"
 	.string "need from him anyway. Let's go!$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_13:
 # 151 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "MELEA: Heed this warning, {PLAYER}.\n"
-	.string "Do NOT try to thwart us at MT MIRROH, or\l"
+	.string "Do NOT try to thwart us at Mt. Mirroh, or\l"
 	.string "else we will crush you!$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_14:
 # 165 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "RUE: You saved me. You've really become\n"
+	.string "Rue: You saved me. You've really become\n"
 	.string "a strong trainer...perhaps I shouldn't\l"
 	.string "have worried about you so much.\p"
 	.string "...\p"
@@ -830,8 +830,8 @@ SomberHQ_NPCGrunt_Text_1:
 # 250 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Who're you? Did you bring the shipment?\p"
 	.string "Wait a minute...you're that trainer who\n"
-	.string "beat us at MT CERAM! Oh, you've got some\l"
-	.string "nerve coming up and talking to me!\p"
+	.string "beat us at Mt. Ceram! Oh, you've got\l"
+	.string "some nerve coming up and talking to me!\p"
 	.string "...\p"
 	.string "Eh, I'm on shipment duty, not guard\n"
 	.string "duty. None of my business.$"
@@ -971,8 +971,8 @@ SomberHQ_Grunt_G_Text_0:
 SomberHQ_Grunt_H_Text_0:
 # 348 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "GABRIELLE and I were next up for admin\n"
-	.string "positions...until she goofed at MT\l"
-	.string "CERAM! Now it's just me. Let me show you\l"
+	.string "positions...until she goofed at Mt.\l"
+	.string "Ceram! Now it's just me. Let me show you\l"
 	.string "why!$"
 
 SomberHQ_Grunt_H_Text_1:

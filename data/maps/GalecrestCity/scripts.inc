@@ -801,7 +801,7 @@ GalecrestCity_OnFrame_Text_0:
 	.string "Yes! Yes we have! I'm so relieved. I've\n"
 	.string "never been so happy to see a city\l"
 	.string "before!\p"
-	.string "This must be GALECREST CITY. The\n"
+	.string "This must be Galecrest City. The\n"
 	.string "Detective Academy is here. I suppose\l"
 	.string "you'll be headed there. Just head north\l"
 	.string "from here...\p"
@@ -815,12 +815,12 @@ GalecrestCity_OnFrame_Text_0:
 
 GalecrestCity_DetectiveMeet_Trigger0_Text_0:
 # 71 "data//maps/GalecrestCity/scripts.pory"
-	.string "RUE: {PLAYER}! You're here! Where\n"
+	.string "Rue: {PLAYER}! You're here! Where\n"
 	.string "have you been?$"
 
 GalecrestCity_DetectiveMeet_Main_Text_0:
 # 149 "data//maps/GalecrestCity/scripts.pory"
-	.string "RUE: We heard from KOHLA that you went\n"
+	.string "Rue: We heard from KOHLA that you went\n"
 	.string "up to the peak to stop Team Somber.\l"
 	.string "What happened up there?\p"
 	.string "...\p"
@@ -828,7 +828,7 @@ GalecrestCity_DetectiveMeet_Main_Text_0:
 
 GalecrestCity_DetectiveMeet_Main_Text_1:
 # 154 "data//maps/GalecrestCity/scripts.pory"
-	.string "RUE: What! Is that true? Did all of that\n"
+	.string "Rue: What! Is that true? Did all of that\n"
 	.string "happen?\p"
 	.string "...\p"
 	.string "I'm glad you're safe, {PLAYER}. What a\n"
@@ -844,14 +844,14 @@ GalecrestCity_DetectiveMeet_Main_Text_2:
 GalecrestCity_DetectiveMeet_Main_Text_3:
 # 160 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: Did you know this was\n"
-	.string "possible RUE?\p"
-	.string "RUE: No, I had no idea. We knew that\n"
+	.string "possible Rue?\p"
+	.string "Rue: No, I had no idea. We knew that\n"
 	.string "dreamstones absorbed {PKMN} memories, but\l"
 	.string "to transport things and people...$"
 
 GalecrestCity_DetectiveMeet_Main_Text_4:
 # 165 "data//maps/GalecrestCity/scripts.pory"
-	.string "RUE: {PLAYER}, you encountered\n"
+	.string "Rue: {PLAYER}, you encountered\n"
 	.string "ancient {PKMN} there, right? I wonder...\p"
 	.string "Did the dreamstone take you back to\n"
 	.string "the past somehow?\p"

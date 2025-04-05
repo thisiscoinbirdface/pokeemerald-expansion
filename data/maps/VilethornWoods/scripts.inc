@@ -636,7 +636,7 @@ VilethornWoods_Trainer_H_Text_2:
 
 VilethornWoods_NPC1_Text_0:
 # 251 "data//maps/VilethornWoods/scripts.pory"
-	.string "The MORELULL here in VILETHORN WOODS\n"
+	.string "The MORELULL here in Vilethorn Woods\n"
 	.string "release spores when in danger. That's\l"
 	.string "what creates this fog.$"
 
@@ -648,7 +648,7 @@ VilethornWoods_NPC2_Text_0:
 VilethornWoods_NPC2_Text_1:
 # 263 "data//maps/VilethornWoods/scripts.pory"
 	.string "I'm a traveling chef! While I usually\n"
-	.string "cook at the PELLUCA RESTAURANT, I'm\l"
+	.string "cook at the Pelluca Restaurant, I'm\l"
 	.string "here to collect mushrooms to create\l"
 	.string "new recipes...but I can only find TINY\l"
 	.string "MUSHROOMs! Say, why don't you help me?\l"
@@ -666,8 +666,8 @@ VilethornWoods_NPC2_Text_3:
 # 272 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over CORMORIA. And if you\l"
-	.string "ever visit PELLUCA CITY, be sure to\l"
-	.string "drop by our restaurant!$"
+	.string "ever visit Pelluca City, be sure to drop\l"
+	.string "by our restaurant!$"
 
 VilethornWoods_NPC2_Text_4:
 # 274 "data//maps/VilethornWoods/scripts.pory"

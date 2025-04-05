@@ -86,7 +86,7 @@ script MtCeram_Caves_Greta_Main{
 
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
-    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the CERAM BASE CAMP told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
+    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
     giveitem(ITEM_QUICK_CLAW)
     msgbox(format("GRETA: I travel across all the routes and towns of CORMORIA, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
     release

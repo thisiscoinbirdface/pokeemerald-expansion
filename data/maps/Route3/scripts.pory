@@ -11,8 +11,8 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to GASTREE CITY to challenge the {PKMN} Gym there. Let me practice with you!"), "Looks like I need more practice!")
-    msgbox(format("I heard that the GASTREE CITY Gym Leader uses FIRE type {PKMN}."))
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the {PKMN} Gym there. Let me practice with you!"), "Looks like I need more practice!")
+    msgbox(format("I heard that the Gastree City Gym Leader uses FIRE type {PKMN}."))
     release
     end
 

@@ -125,9 +125,9 @@ GastreeGym_EventScript_Victory_Text_1:
 
 GastreeGym_EventScript_Victory_Text_2:
 # 50 "data//maps/GastreeGym/scripts.pory"
-	.string "So where are you headed next? MT\n"
-	.string "CERAM? You'll have to go north from\l"
-	.string "here through ROUTE 4. All the best,\l"
+	.string "So where are you headed next? Mt.\n"
+	.string "Ceram? You'll have to go north from here\l"
+	.string "through ROUTE 4. All the best,\l"
 	.string "{PLAYER}!$"
 
 GastreeGym_Red_Text_0:

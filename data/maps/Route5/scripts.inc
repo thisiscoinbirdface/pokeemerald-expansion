@@ -177,7 +177,7 @@ Route5_Greta_GottaGo_Movement_1:
 Route5_NPC_A_Text_0:
 # 6 "data//maps/Route5/scripts.pory"
 	.string "My head is spinning because of the fog\n"
-	.string "in VILETHORN WOODS! I need to go home\l"
+	.string "in Vilethorn Woods! I need to go home\l"
 	.string "and rest.$"
 
 Route5_NPC_B_Text_0:
@@ -189,7 +189,7 @@ Route5_NPC_B_Text_0:
 Route5_Greta_Main_Text_0:
 # 49 "data//maps/Route5/scripts.pory"
 	.string "GRETA: It's you! The wandering saviour\n"
-	.string "from MT CERAM. How wonderful! A new\l"
+	.string "from Mt. Ceram. How wonderful! A new\l"
 	.string "customer.$"
 
 Route5_Greta_GottaGo_Text_0:

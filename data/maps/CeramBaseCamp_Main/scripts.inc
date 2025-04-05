@@ -753,8 +753,8 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_1:
 # 69 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "???: Get out of my face, leader! We have\n"
 	.string "business that concerns you not one bit.\l"
-	.string "We want his supplies for our trek up MT\l"
-	.string "CERAM!$"
+	.string "We want his supplies for our trek up Mt.\l"
+	.string "Ceram!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_2:
 # 70 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -942,7 +942,7 @@ CeramBaseCamp_Main_NPC1_Text_0:
 # 262 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "CENTISKORCH and SCOLIPEDE are\n"
 	.string "fiercely territorial. They keep fighting\l"
-	.string "each other in MT CERAM.$"
+	.string "each other in Mt. Ceram.$"
 
 CeramBaseCamp_Main_NPC1_Text_1:
 # 265 "data//maps/CeramBaseCamp_Main/scripts.pory"

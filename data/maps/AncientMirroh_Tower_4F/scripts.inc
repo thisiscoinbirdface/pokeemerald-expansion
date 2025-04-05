@@ -520,7 +520,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_13:
 # 156 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "MELEA: And now it's time to bid adieu! I\n"
 	.string "hope you enjoy your time here in\l"
-	.string "ANCIENT CORMORIA - because you'll\l"
+	.string "Ancient Cormoria - because you'll\l"
 	.string "never leave!\p"
 	.string "Hahaha!$"
 

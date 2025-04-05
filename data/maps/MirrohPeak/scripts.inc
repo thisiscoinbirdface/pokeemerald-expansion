@@ -811,12 +811,12 @@ MirrohPeak_EventScript_Viniel_Text_5:
 MirrohPeak_EventScript_Viniel_Text_6:
 # 94 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Wait...isn't that the trainer who\n"
-	.string "beat MELEA in SILVERSUN CITY?$"
+	.string "beat MELEA in Silversun City?$"
 
 MirrohPeak_EventScript_Viniel_Text_7:
 # 98 "data//maps/MirrohPeak/scripts.pory"
-	.string "GRUNT: Yeah, it is! And also MOXIE at MT\n"
-	.string "CERAM!\p"
+	.string "GRUNT: Yeah, it is! And also MOXIE at Mt.\n"
+	.string "Ceram!\p"
 	.string "GRUNT: Yikes - someone better tell go\n"
 	.string "them!$"
 
@@ -896,7 +896,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_5:
 MirrohPeak_EventScript_Somber_Trigger_Text_6:
 # 224 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: My dear colleague has gone\n"
-	.string "ahead, into ANCIENT CORMORIA...you've\l"
+	.string "ahead, into Ancient Cormoria...you've\l"
 	.string "been there, no? I wonder what it looks\l"
 	.string "like. MELEA will tell me about it when\l"
 	.string "she returns.\p"

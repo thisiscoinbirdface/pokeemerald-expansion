@@ -614,8 +614,8 @@ SilversunCity_Sewers_NPC4_Text_0:
 SilversunCity_Sewers_NPC5_Text_0:
 # 225 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "All this toxic runoff gets filtered\n"
-	.string "before entering the HOYA RIVER. Then it\l"
-	.string "goes south towards PELLUCA CITY.$"
+	.string "before entering the Hoya River. Then it\l"
+	.string "goes south towards Pelluca City.$"
 
 SilversunCity_Sewers_Trainer_A_Text_0:
 # 244 "data//maps/SilversunCity_Sewers/scripts.pory"

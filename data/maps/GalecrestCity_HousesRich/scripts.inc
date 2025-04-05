@@ -310,8 +310,8 @@ GalecrestCity_HousesRich_NPC7_Text_0:
 GalecrestCity_HousesRich_NPC8_Text_0:
 # 111 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Our daughter grew up and is now the Gym\n"
-	.string "Leader of PELLUCA CITY. So we live\l"
-	.string "alone in this big house now...$"
+	.string "Leader of Pelluca City. So we live alone\l"
+	.string "in this big house now...$"
 
 GalecrestCity_HousesRich_NPC9_Text_0:
 # 123 "data//maps/GalecrestCity_HousesRich/scripts.pory"

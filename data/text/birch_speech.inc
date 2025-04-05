@@ -33,22 +33,22 @@ gText_Birch_MainSpeech::
 	.string "What goes on in their minds? Where\n"
 	.string "does their power and energy come from?\p"
 	.string "That's what we do.\p"
-	.string "We'll now start your onboarding as a\n"
-	.string "new employee at the lab.\p"
+	.string "Shall we proceed with your onboarding\n"
+	.string "as a new employee at the lab?\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Please fill out this employee form.\p"
+	.string "Please fill out this employee form:\p"
 	.string "$"	
 
 gText_Birch_BoyOrGirl::
-	.string "Please submit a photo of yourself\n"
-	.string "for identification purposes."
+	.string "Please submit a photograph of\n"
+	.string "yourself for identification."
 	.string "$"	
 
 gText_Birch_WhatsYourName::
 	.string "By signing below, you agree to accept\n"
-	.string "the position of RESEARCH ASSOCIATE."
+	.string "the position of Research Associate."
 	.string "$"
 
 gText_Birch_SoItsPlayer::

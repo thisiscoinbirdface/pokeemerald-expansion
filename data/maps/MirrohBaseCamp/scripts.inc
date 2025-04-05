@@ -118,7 +118,7 @@ MirrohBaseCamp_EventScript_NPC2::
 MirrohBaseCamp_EventScript_Vendor1_Text_0:
 # 9 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Our supplies are limited but useful to\n"
-	.string "trek up MT MIRROH!$"
+	.string "trek up Mt. Mirroh!$"
 
 MirrohBaseCamp_EventScript_Vendor1_Text_1:
 # 12 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -126,7 +126,7 @@ MirrohBaseCamp_EventScript_Vendor1_Text_1:
 
 MirrohBaseCamp_EventScript_Vendor2_Text_0:
 # 27 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "I found all this inside MT MIRROH just\n"
+	.string "I found all this inside Mt. Mirroh just\n"
 	.string "yesterday!$"
 
 MirrohBaseCamp_EventScript_Vendor2_Text_1:

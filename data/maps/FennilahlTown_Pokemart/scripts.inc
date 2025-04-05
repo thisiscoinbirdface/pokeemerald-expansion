@@ -167,8 +167,8 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_3:
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 # 28 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "Let me check our records...hmm, that's\n"
-	.string "strange. It says that PROF TENEBRIS\l"
-	.string "already picked it up last week.\l"
+	.string "strange. It says that Professor\l"
+	.string "Tenebris already picked it up last week.\l"
 	.string "Weird...I'm sorry, I can't help you. You\l"
 	.string "should go back and report this to the\l"
 	.string "lab. If you want to buy something for\l"

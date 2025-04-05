@@ -79,7 +79,7 @@ Route1_TrainerBattle_Sana_Text_2:
 
 Route1_TrainerBattle_Mortem_Text_0:
 # 30 "data//maps/Route1/scripts.pory"
-	.string "I came from GASTREE CITY to find cool\n"
+	.string "I came from Gastree City to find cool\n"
 	.string "bug-type {PKMN} here...but I found you\l"
 	.string "instead!$"
 

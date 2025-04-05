@@ -842,8 +842,8 @@ GalecrestCity_DetectiveAcademy_NPC3_Text_0:
 
 GalecrestCity_DetectiveAcademy_NPC4_Text_0:
 # 261 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "Since many rich folk live in GALECREST\n"
-	.string "CITY, there's a lot of theft. New\l"
+	.string "Since many rich folk live in Galecrest\n"
+	.string "City, there's a lot of theft. New\l"
 	.string "students are often handed smaller\l"
 	.string "cases to solve as part of their field\l"
 	.string "studies.$"

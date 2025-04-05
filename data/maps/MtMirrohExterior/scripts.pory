@@ -36,7 +36,7 @@ script MtMirrohExterior_BreechTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(30)
-    msgbox(format("BREECH: {PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pBREECH: So you're chasing Team Somber. I admire you, {PLAYER}. CLEFAIRY and I just saw a couple of them enter MT MIRROH. They left this drill here. I wonder what they're using all this equipment for?"))
+    msgbox(format("BREECH: {PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pBREECH: So you're chasing Team Somber. I admire you, {PLAYER}. CLEFAIRY and I just saw a couple of them enter Mt. Mirroh. They left this drill here. I wonder what they're using all this equipment for?"))
     release
     delay(30)
     applymovement(8, moves(face_left emote_exclamation_mark))    
@@ -74,7 +74,7 @@ script MtMirrohExterior_Trainer_B{
     end
 }
 script MtMirrohExterior_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My PALPITOAD and I training to beat the WINTERLILY HOLLOW Gym. A battle will be better training than a jog though!"), "It was good training!")
+    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My PALPITOAD and I training to beat the Winterlily Hollow Gym. A battle will be better training than a jog though!"), "It was good training!")
     msgbox(format(""))
     releaseall
     end
@@ -127,7 +127,7 @@ script MtMirrohExterior_NPC_A{
 script MtMirrohExterior_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach WINTERLILY HOLLOW, you have to cross the caves inside the mountain."))
+    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach Winterlily Hollow, you have to cross the caves inside the mountain."))
     releaseall
     end
 }

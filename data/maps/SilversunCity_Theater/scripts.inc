@@ -404,9 +404,9 @@ SilversunCity_Theater_NPC1_Text_0:
 
 SilversunCity_Theater_NPC1_Text_1:
 # 98 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "GLORIA is the face of SILVERSUN CITY!\n"
-	.string "A Gym Leader AND a famous actress?\l"
-	.string "She's really a role model for women.$"
+	.string "GLORIA is the face of Silversun City! A\n"
+	.string "Gym Leader AND a famous actress? She's\l"
+	.string "really a role model for women.$"
 
 SilversunCity_Theater_NPC2_Text_0:
 # 108 "data//maps/SilversunCity_Theater/scripts.pory"

@@ -37,7 +37,7 @@ script PellucaCityHouses_GabSibling3{
 script PellucaCityHouses_NPC1{
     lockall
     faceplayer
-    msgbox(format("Since PELLUCA CITY sits at the intersection of the IVY RIVER and the HOYA RIVER, it's split up into several small islands."))
+    msgbox(format("Since Pelluca City sits at the intersection of the Ivy River and the Hoya River, it's split up into several small islands."))
     releaseall
     end
 }
@@ -58,7 +58,7 @@ script PellucaCityHouses_NPC3{
 script PellucaCityHouses_NPC4{
     lockall
     faceplayer
-    msgbox(format("My DELPHOX doesn't like the river air. She prefers the dense fog of VILETHORN WOODS, where I caught her."))
+    msgbox(format("My DELPHOX doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I caught her."))
     releaseall
     end
 }

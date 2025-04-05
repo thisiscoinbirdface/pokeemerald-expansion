@@ -22,7 +22,7 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
 
     //stare at player
     delay(48)    
-    msgbox(format("KOHLA: I have to carry on. Let's do the right thing and go stop Team Somber.\pI'll see you at MT MIRROH."))
+    msgbox(format("KOHLA: I have to carry on. Let's do the right thing and go stop Team Somber.\pI'll see you at Mt. Mirroh."))
     release
     delay(48)
     applymovement(1, moves(walk_left * 3 walk_down * 7))

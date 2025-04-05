@@ -281,7 +281,7 @@ PellucaCityRestaurant_NPC8_Text_0:
 
 PellucaCityRestaurant_NPC9_Text_0:
 # 75 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Welcome to the PELLUCA RESTAURANT!\n"
+	.string "Welcome to the Pelluca Restaurant!\n"
 	.string "Unfortunately we're fully booked out\l"
 	.string "today.$"
 
@@ -326,13 +326,13 @@ PellucaCityRestaurant_Cook3_Text_4:
 PellucaCityRestaurant_Cook3_Text_5:
 # 127 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Hmmm, it doesn't seem like you do. Come\n"
-	.string "back when you get it from the MIRROH\l"
-	.string "BASE CAMP!$"
+	.string "back when you get it from the Mirroh\l"
+	.string "Base Camp!$"
 
 PellucaCityRestaurant_Cook3_Text_6:
 # 130 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Come back when you get it from the\n"
-	.string "MIRROH BASE CAMP!$"
+	.string "Mirroh Base Camp!$"
 
 PellucaCityRestaurant_Cook3_Text_7:
 # 139 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -352,7 +352,7 @@ PellucaCityRestaurant_Cook3_Text_8:
 	.string "I knew I could rely on you!\p"
 	.string "Some NEVERMELT ICE will do the trick.\n"
 	.string "You can buy NEVERMELT ICE at the\l"
-	.string "MIRROH BASE CAMP. Head northwest from\l"
+	.string "Mirroh Base Camp. Head northwest from\l"
 	.string "here and use the cable car. You'll need a\l"
 	.string "pass, so take this with you.$"
 

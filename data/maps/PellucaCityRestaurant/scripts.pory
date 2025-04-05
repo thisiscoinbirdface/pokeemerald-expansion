@@ -72,7 +72,7 @@ script PellucaCityRestaurant_NPC8{
 script PellucaCityRestaurant_NPC9{
     lockall
     faceplayer
-    msgbox(format("Welcome to the PELLUCA RESTAURANT! Unfortunately we're fully booked out today."))
+    msgbox(format("Welcome to the Pelluca Restaurant! Unfortunately we're fully booked out today."))
     releaseall
     end
 }
@@ -124,10 +124,10 @@ script PellucaCityRestaurant_Cook3{
                 msgbox(format("Take good care of our APPLIN! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
                 setvar(VAR_PELLUCA_COOK, 2) 
             } else {
-                msgbox(format("Hmmm, it doesn't seem like you do. Come back when you get it from the MIRROH BASE CAMP!"))
+                msgbox(format("Hmmm, it doesn't seem like you do. Come back when you get it from the Mirroh Base Camp!"))
             }
         } else {
-            msgbox(format("Come back when you get it from the MIRROH BASE CAMP!"))
+            msgbox(format("Come back when you get it from the Mirroh Base Camp!"))
         }
     }
 
@@ -139,7 +139,7 @@ script PellucaCityRestaurant_Cook3{
         msgbox(format("Aha! Why hello there my fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //accept quest
-            msgbox(format("I knew I could rely on you!\pSome NEVERMELT ICE will do the trick. You can buy NEVERMELT ICE at the MIRROH BASE CAMP. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
+            msgbox(format("I knew I could rely on you!\pSome NEVERMELT ICE will do the trick. You can buy NEVERMELT ICE at the Mirroh Base Camp. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
             release
             giveitem(ITEM_CABLECAR_PASS)        
             msgbox(format("I'll be waiting here!"))

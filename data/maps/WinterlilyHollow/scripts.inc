@@ -443,11 +443,11 @@ WinterlilyHollow_OnFrame_Text_1:
 	.string "...\p"
 	.string "...\p"
 	.string "VINIEL: So that's what's been going on.\n"
-	.string "Poor PROFESSOR TENEBRIS. I'd heard\l"
+	.string "Poor Professor Tenebris. I'd heard\l"
 	.string "about her disappearance on the news.\p"
 	.string "VINIEL: News comes late here, since\n"
 	.string "we're so remote.\p"
-	.string "VINIEL: PROFESSOR TENEBRIS and I\n"
+	.string "VINIEL: Professor Tenebris and I\n"
 	.string "fought each other together several\l"
 	.string "times when we were younger! I never\l"
 	.string "lost though. Hahaha!$"
@@ -493,7 +493,7 @@ WinterlilyHollow_NPC1_Text_0:
 
 WinterlilyHollow_NPC1_Text_1:
 # 81 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "WINTERLILY HOLLOW is so remote that we\n"
+	.string "Winterlily Hollow is so remote that we\n"
 	.string "don't even get electricity! VINIEL's {PKMN}\l"
 	.string "powers this town.$"
 

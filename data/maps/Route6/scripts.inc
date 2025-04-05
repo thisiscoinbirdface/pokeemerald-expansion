@@ -725,7 +725,7 @@ Route6_Trainer_G_Text_1:
 Route6_Trainer_G_Text_2:
 # 114 "data//maps/Route6/scripts.pory"
 	.string "Dog {PKMN} are rare in CORMORIA! Someone in\n"
-	.string "PELLUCA CITY traded me my HOUNDOOR.$"
+	.string "Pelluca City traded me my HOUNDOOR.$"
 
 Route6_Trainer_H_Text_0:
 # 120 "data//maps/Route6/scripts.pory"
@@ -758,8 +758,8 @@ Route6_Trainer_I_Text_2:
 
 Route6_Trainer_J_Text_0:
 # 134 "data//maps/Route6/scripts.pory"
-	.string "Past PELLUCA CITY is the MIRROH BASE\n"
-	.string "CAMP and a {PKMN} graveyard. I want to go\l"
+	.string "Past Pelluca City is the Mirroh Base\n"
+	.string "Camp and a {PKMN} graveyard. I want to go\l"
 	.string "there to commune with the afterlife!$"
 
 Route6_Trainer_J_Text_1:
@@ -774,9 +774,9 @@ Route6_Trainer_J_Text_2:
 Route6_NPC1_Text_0:
 # 175 "data//maps/Route6/scripts.pory"
 	.string "When I was young, there was no route\n"
-	.string "through these marshes. Now ROUTE 6\l"
-	.string "connects SILVERSUN CITY to PELLUCA\l"
-	.string "CITY.$"
+	.string "through these marshes. Now Route 6\l"
+	.string "connects Silversun City to Pelluca\l"
+	.string "City.$"
 
 Route6_NPC2_Text_0:
 # 183 "data//maps/Route6/scripts.pory"
@@ -785,11 +785,10 @@ Route6_NPC2_Text_0:
 
 Route6_NPC3_Text_0:
 # 190 "data//maps/Route6/scripts.pory"
-	.string "I want to go to the PELLUCA\n"
-	.string "RESTAURANT! The food is supposed to be\l"
-	.string "delicious because the head chef\l"
-	.string "travels all of CORMORIA looking for rare\l"
-	.string "ingredients.$"
+	.string "I want to go to the Pelluca Restaurant!\n"
+	.string "The food is supposed to be delicious\l"
+	.string "because the head chef travels all of\l"
+	.string "CORMORIA looking for rare ingredients.$"
 
 Route6_NPC4_Text_0:
 # 199 "data//maps/Route6/scripts.pory"
@@ -909,7 +908,7 @@ Route6_Gabrielle_Victory_Text_1:
 
 Route6_Gabrielle_Victory_Text_2:
 # 351 "data//maps/Route6/scripts.pory"
-	.string "GABRIELLE: I live PELLUCA CITY, just\n"
-	.string "past the HOYA RIVER. I was on my way\l"
+	.string "GABRIELLE: I live Pelluca City, just\n"
+	.string "past the Hoya River. I was on my way\l"
 	.string "home when those grunts ambushed\l"
 	.string "me...I'm going there now. See you around.$"

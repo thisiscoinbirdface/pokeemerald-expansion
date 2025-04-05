@@ -222,7 +222,7 @@ script SilversunCity_Sewers_NPC4{
 script SilversunCity_Sewers_NPC5{
     lockall
     faceplayer
-    msgbox(format("All this toxic runoff gets filtered before entering the HOYA RIVER. Then it goes south towards PELLUCA CITY."))
+    msgbox(format("All this toxic runoff gets filtered before entering the Hoya River. Then it goes south towards Pelluca City."))
     releaseall
     end
 }

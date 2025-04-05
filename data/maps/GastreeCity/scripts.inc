@@ -669,8 +669,8 @@ GastreeCity_EventScript_KohlaBattle_Trigger_Text_0:
 
 GastreeCity_NPC1_Text_0:
 # 66 "data//maps/GastreeCity/scripts.pory"
-	.string "You came all the way from CARABRUE\n"
-	.string "TOWN? Woah! Then I bet you don't know -\l"
+	.string "You came all the way from Carabrue\n"
+	.string "Town? Woah! Then I bet you don't know -\l"
 	.string "be careful on ROUTE 4! There's a\l"
 	.string "dangerouns DEWPIDER that attacks\l"
 	.string "people.$"
@@ -701,7 +701,7 @@ GastreeCity_Mankey_Text_0:
 
 GastreeCity_NPC6_Text_0:
 # 104 "data//maps/GastreeCity/scripts.pory"
-	.string "GASTREE CITY is famous not just for\n"
+	.string "Gastree City is famous not just for\n"
 	.string "being a connecting Route to Mt. Ceram\l"
 	.string "Base Camp, but also for its scenic\l"
 	.string "viewpoints and its teahouse!$"
@@ -858,6 +858,6 @@ GastreeCity_KohlaPostBattle::
 	.string "the dreamstone first! I heard that\l"
 	.string "some group called Team Somber is also\l"
 	.string "after the dreamstone. I'm going to head\l"
-	.string "north towards the CERAM BASE CAMP.\l"
+	.string "north towards the Ceram Base Camp.\l"
 	.string "Don't come after me - I don't need your\l"
 	.string "help. Over and out, chum!$"

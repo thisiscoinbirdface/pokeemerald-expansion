@@ -47,7 +47,7 @@ script GastreeGym_EventScript_Victory{
     msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
     
     //Bye-bye
-    msgbox(format("So where are you headed next? MT CERAM? You'll have to go north from here through ROUTE 4. All the best, {PLAYER}!"))
+    msgbox(format("So where are you headed next? Mt. Ceram? You'll have to go north from here through ROUTE 4. All the best, {PLAYER}!"))
     releaseall
 }
 

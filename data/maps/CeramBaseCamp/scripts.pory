@@ -33,7 +33,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
 script CeramBaseCamp_NPC_Exit{
     lockall
     faceplayer
-    msgbox(format("MT CERAM is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."))
+    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."))
     releaseall   
 }
 
@@ -50,7 +50,7 @@ script CeramBaseCamp_NPC1{
 script CeramBaseCamp_NPC2{
     lockall
     faceplayer
-    msgbox(format("This camp was established to dig a tunnel through MT CERAM. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."))
+    msgbox(format("This camp was established to dig a tunnel through Mt. Ceram. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."))
     releaseall
 }
 

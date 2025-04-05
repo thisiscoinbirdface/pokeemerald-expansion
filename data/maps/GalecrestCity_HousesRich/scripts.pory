@@ -108,7 +108,7 @@ script GalecrestCity_HousesRich_NPC7{
 script GalecrestCity_HousesRich_NPC8{
     lockall
     faceplayer
-    msgbox(format("Our daughter grew up and is now the Gym Leader of PELLUCA CITY. So we live alone in this big house now..."))
+    msgbox(format("Our daughter grew up and is now the Gym Leader of Pelluca City. So we live alone in this big house now..."))
     releaseall
 }
 

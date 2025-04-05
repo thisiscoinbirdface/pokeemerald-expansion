@@ -111,7 +111,7 @@ script Route6_Trainer_F{
 //PKMN breeder Dog 
 script Route6_Trainer_G{
     trainerbattle_single(TRAINER_ROUTE6_G, format("Us BREEDERS like to train one type of {PKMN}. I specialise in dogs!"), "Guess I was more bark than bite!")
-    msgbox(format("Dog {PKMN} are rare in CORMORIA! Someone in PELLUCA CITY traded me my HOUNDOOR."))
+    msgbox(format("Dog {PKMN} are rare in CORMORIA! Someone in Pelluca City traded me my HOUNDOOR."))
     releaseall
     end
 }
@@ -131,14 +131,14 @@ script Route6_Trainer_I{
 }
 //Youngster
 script Route6_Trainer_J{
-    trainerbattle_single(TRAINER_ROUTE6_J, format("Past PELLUCA CITY is the MIRROH BASE CAMP and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
+    trainerbattle_single(TRAINER_ROUTE6_J, format("Past Pelluca City is the Mirroh Base Camp and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
     msgbox(format("If we remember our {PKMN} after they go, are they truly gone?"))
     releaseall
     end
 }
 //Hex maniac
 script Route6_Trainer_K{
-    trainerbattle_single(TRAINER_ROUTE6_K, format("Past PELLUCA CITY is the MIRROH BASE CAMP and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
+    trainerbattle_single(TRAINER_ROUTE6_K, format("Past Pelluca City is the Mirroh Base Camp and a {PKMN} graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
     msgbox(format("If we remember our {PKMN} after they go, are they truly gone?"))
     releaseall
     end
@@ -172,7 +172,7 @@ script Route6_Trainer_K{
 script Route6_NPC1{
     lockall
     faceplayer
-    msgbox(format("When I was young, there was no route through these marshes. Now ROUTE 6 connects SILVERSUN CITY to PELLUCA CITY."))
+    msgbox(format("When I was young, there was no route through these marshes. Now Route 6 connects Silversun City to Pelluca City."))
     releaseall
     end
 }
@@ -187,7 +187,7 @@ script Route6_NPC2{
 script Route6_NPC3{
     lockall
     faceplayer
-    msgbox(format("I want to go to the PELLUCA RESTAURANT! The food is supposed to be delicious because the head chef travels all of CORMORIA looking for rare ingredients."))
+    msgbox(format("I want to go to the Pelluca Restaurant! The food is supposed to be delicious because the head chef travels all of CORMORIA looking for rare ingredients."))
     releaseall
     end
 }
@@ -348,7 +348,7 @@ script Route6_Gabrielle_Victory{
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
     
-    msgbox(format("GABRIELLE: I live PELLUCA CITY, just past the HOYA RIVER. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
+    msgbox(format("GABRIELLE: I live Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
     release
     applymovement(LOCALID_GRUNT1, moves(walk_left walk_down * 2 walk_left * 3 walk_down *4))    
     waitmovement(0)

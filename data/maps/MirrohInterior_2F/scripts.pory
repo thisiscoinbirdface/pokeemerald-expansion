@@ -35,7 +35,7 @@ script MirrohInterior_2F_Trainer_A{
 //maniac
 script MirrohInterior_2F_Trainer_B{
     trainerbattle_single(TRAINER_MIRROHINT2_B, format("I came here searching for ancient ruins! Don't interrupt me!"), format("Ok you can interrupt me!"))
-    msgbox(format("Maybe there are ancient ruins at the peak of MT MIRROH..."))
+    msgbox(format("Maybe there are ancient ruins at the peak of Mt. Mirroh..."))
     releaseall
 }
 //lass

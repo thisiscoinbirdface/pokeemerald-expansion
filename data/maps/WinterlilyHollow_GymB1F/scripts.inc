@@ -188,7 +188,7 @@ WinterlilyHollow_Gym_Trainer_B_Text_0:
 	.string "This is a power plant that VINIEL set\n"
 	.string "up. While trainers come and go, us\l"
 	.string "ELECTRICIANS work around the clock to\l"
-	.string "serve WINTERLILY HOLLOW!$"
+	.string "serve Winterlily Hollow!$"
 
 WinterlilyHollow_Gym_Trainer_B_Text_1:
 # 40 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -238,7 +238,7 @@ WinterlilyHollow_Gym_Trainer_E_Text_1:
 
 WinterlilyHollow_Gym_Trainer_E_Text_2:
 # 65 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Since WINTERLILY HOLLOW gets no\n"
+	.string "Since Winterlily Hollow gets no\n"
 	.string "electricity, we need robust storage\l"
 	.string "solutions.$"
 

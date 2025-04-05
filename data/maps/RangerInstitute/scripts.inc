@@ -1282,18 +1282,18 @@ RangerInstitute_2F_EventScript_Welcome_Text_13:
 RangerInstitute_2F_EventScript_Welcome_Text_14:
 # 355 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Now, I have some important\n"
-	.string "items that the RANGER INSTITUTE at IVY\l"
-	.string "RIVER wants. Your first mission will be\l"
+	.string "items that the RANGER INSTITUTE at Ivy\l"
+	.string "River wants. Your first mission will be\l"
 	.string "to deliver this to them!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_15:
 # 363 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: If you complete this mission,\n"
 	.string "you'll rank up from Recruit to\l"
-	.string "Candidate. The RANGER INSTITUTE at IVY\l"
-	.string "RIVER is a little hard to find. You'll\l"
-	.string "have to surf down from WINTERLILY\l"
-	.string "HOLLOW and explore the riverbank. Good\l"
+	.string "Candidate. The RANGER INSTITUTE at Ivy\l"
+	.string "River is a little hard to find. You'll\l"
+	.string "have to surf down from Winterlily Hollow\l"
+	.string "and explore the riverbank. Good\l"
 	.string "training for a recruit, eh?$"
 
 RangerInstitute_Ravine_Text_0:
