@@ -1,3 +1,32 @@
-script SignScript_CarabrueTown_Main{
-    
+//White signs for directions/descriptions
+//Wood signs for general info
+
+//CARABRUE TOWN
+script WhiteSign_CarabrueTown_Main{
+    msgbox(format("CARABRUE TOWN\nAn idyllic hill station."), MSGBOX_SIGN)
+    end
 }
+
+script WhiteSign_CarabrueTown_TenebrisLab{
+    msgbox(format("THE TENEBRIS LABORATORY\nPokemon psychology research hub."), MSGBOX_SIGN)
+    end
+}
+
+
+//ROUTE 1
+script WhiteSign_Route1_NextToCarabrue {
+    msgbox(format("ROUTE 1\p{LEFT_ARROW} CARABRUE TOWN\n{UP_ARROW} FENNILAHL TOWN"), MSGBOX_SIGN)
+    end
+}
+
+
+script WoodSign_Route1_Middle {
+    msgbox(format("You can sometimes find hidden items in rocks!"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route1_NextToFennilahl {
+    msgbox(format("ROUTE 1\p{RIGHT_ARROW} FENNILAHL TOWN\n{LEFT_ARROW} CARABRUE TOWN."), MSGBOX_SIGN)
+    end
+}
+

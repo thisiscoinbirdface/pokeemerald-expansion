@@ -112,7 +112,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "SignScript_CarabrueTown_Main"
+      "script": "WhiteSign_CarabrueTown_Main"
     },
     {
       "type": "sign",
@@ -120,7 +120,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CarabrueTown_Sign_TenebrisLab"
+      "script": "WhiteSign_CarabrueTown_TenebrisLabs"
     },
     {
       "type": "sign",
