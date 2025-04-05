@@ -5435,9 +5435,9 @@
       "id": "LAYOUT_RIVETSHORE_CITY",
       "name": "RivetshoreCity_Layout",
       "width": 60,
-      "height": 60,
+      "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RivetshoreCity/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity/map.bin"
     }

@@ -17,6 +17,11 @@
       "map": "MAP_PELLUCA_CITY",
       "offset": -16,
       "direction": "up"
+    },
+    {
+      "map": "MAP_RIVETSHORE_CITY",
+      "offset": -32,
+      "direction": "down"
     }
   ],
   "object_events": [

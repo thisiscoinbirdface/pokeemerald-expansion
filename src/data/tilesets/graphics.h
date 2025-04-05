@@ -1938,3 +1938,22 @@ const u16 gTilesetPalettes_WinterlilyGym[][16] =
 };
 
 const u32 gTilesetTiles_WinterlilyGym[] = INCBIN_U32("data/tilesets/secondary/winterlily_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Rivetshore[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/rivetshore/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Rivetshore[] = INCBIN_U32("data/tilesets/primary/rivetshore/tiles.4bpp.lz");

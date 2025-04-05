@@ -1001,3 +1001,14 @@ const struct Tileset gTileset_WinterlilyGym =
     .metatileAttributes = gMetatileAttributes_WinterlilyGym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Rivetshore =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Rivetshore,
+    .palettes = gTilesetPalettes_Rivetshore,
+    .metatiles = gMetatiles_Rivetshore,
+    .metatileAttributes = gMetatileAttributes_Rivetshore,
+    .callback = NULL,
+};
