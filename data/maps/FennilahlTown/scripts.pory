@@ -10,10 +10,9 @@ script FennilahlTown_EventScript_MartEmployeeRoadBlock {
 script FennilahlTown_EventScript_Man {
     lockall
     faceplayer
-    warp(MAP_ANCIENT_MIRROH_TOWER_4F, 4, 11)
-
     msgbox(format("I was watching the news the other day. They say that the Pokemon Psychologist has gone missing. Who? Professor Tenebris of course!"))
     releaseall
+    end
 }
 
 script FennilahlTown_EventScript_Woman {

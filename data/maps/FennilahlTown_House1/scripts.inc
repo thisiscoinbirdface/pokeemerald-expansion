@@ -28,10 +28,7 @@ FennilahlTown_House1_NPC2::
 
 FennilahlTown_House1_NPC1_Text_0:
 # 6 "data//maps/FennilahlTown_House1/scripts.pory"
-	.string "This town is too small for me...the\n"
-	.string "nearest place that's any fun is GASTREE\l"
-	.string "CITY, but you have to cross Route 3 to\l"
-	.string "get there.$"
+	.string "This town is too small for me!$"
 
 FennilahlTown_House1_NPC2_Text_0:
 # 13 "data//maps/FennilahlTown_House1/scripts.pory"
