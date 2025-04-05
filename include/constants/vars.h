@@ -289,7 +289,10 @@
     #define VAR_ROUTE112_STATE                               0x406B // Unused Var
     #define VAR_ROUTE113_STATE                               0x406C // Unused Var
     #define VAR_ROUTE114_STATE                               0x406D // Unused Var
-    #define VAR_ROUTE115_STATE                               0x406E // Unused Var    
+
+
+    //I AM GOING TO USE THESE | SYSTEM VARS
+    #define VAR_OVERWORLD_SPEEDUP                            0x406E // Unused Var    
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

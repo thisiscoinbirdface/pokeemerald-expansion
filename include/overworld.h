@@ -156,6 +156,7 @@ bool32 Overworld_RecvKeysFromLinkIsRunning(void);
 bool32 Overworld_SendKeysToLinkIsRunning(void);
 bool32 IsSendingKeysOverCable(void);
 void ClearLinkPlayerObjectEvents(void);
+u8 OverworldSpeedup_AdditionalIterations(u16 speed, bool32 overworld);
 
 // Item Description Headers
 enum ItemObtainFlags

@@ -58,6 +58,7 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
         msgbox(format("I want a book on all the {PKMN} in CORMORIA!"))
+        release
         end
     }
 
