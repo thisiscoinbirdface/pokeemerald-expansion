@@ -2526,9 +2526,9 @@ static void ClearAbilityName(u8 spriteId1, u8 spriteId2)
     PrintOnAbilityPopUp(sText_Spaces20,
                         (void*)(OBJ_VRAM0) + (gSprites[spriteId1].oam.tileNum * 32) + 256,
                         (void*)(OBJ_VRAM0) + (gSprites[spriteId2].oam.tileNum * 32) + 256,
-                        5, 12,
-                        4,
-                        7, 9, 1);
+                        5, 12,      //u32 x1, u32 x2, 
+                        4,          //u32 y, 
+                        7, 0, 0);   //u32 color1, u32 color2, u32 color3
 }
 
 static void PrintBattlerOnAbilityPopUp(u8 battlerId, u8 spriteId1, u8 spriteId2)
@@ -2570,7 +2570,7 @@ static void PrintBattlerOnAbilityPopUp(u8 battlerId, u8 spriteId1, u8 spriteId2)
                         (void*)(OBJ_VRAM0) + (gSprites[spriteId2].oam.tileNum * 32),
                         5, 12,
                         0,
-                        6, 4, 1);
+                        7, 4, 1);
 }
 
 static void PrintAbilityOnAbilityPopUp(u32 ability, u8 spriteId1, u8 spriteId2)
@@ -2581,7 +2581,7 @@ static void PrintAbilityOnAbilityPopUp(u32 ability, u8 spriteId1, u8 spriteId2)
                         (void*)(OBJ_VRAM0) + (gSprites[spriteId2].oam.tileNum * 32) + 256,
                         5, 12,
                         4,
-                        6, 5, 1);
+                        7, 5, 1);
 }
 
 #define PIXEL_COORDS_TO_OFFSET(x, y)(            \
