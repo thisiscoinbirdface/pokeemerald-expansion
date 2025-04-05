@@ -6,7 +6,7 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
     faceplayer
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
-        msgbox(format("This book is hard to understand! I wish I could knew what these {PKMN} felt to touch."))
+        msgbox(format("This book is hard to understand! I wish I could touch all these {PKMN} so I know what they feel like. But the teacher says that's dangerous too! What if I touch a PINCURCHIN or a CORSOLA?"))
         end
     }
 
