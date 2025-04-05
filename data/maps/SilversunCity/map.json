@@ -278,6 +278,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_GYM",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_CITY_BLIND_ORPHANAGE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -1,6 +1,10 @@
 mapscripts SilversunCity_BlindOrphanage_MapScripts{}
 
 
+script SilversunCity_BlindOrphanage_PokedexGameStart{
+    
+}
+
 script SilversunCity_BlindOrphanage_BrailleGameStart{
     lockall
     faceplayer
@@ -10,6 +14,7 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
         msgbox(format("TEACHER: Okay.\nSHEENA, let's continue."))
         release
         applymovement(5, moves(face_left))
+        waitmovement(0)
         release
 
         releaseall
@@ -23,12 +28,13 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     msgbox(format("TEACHER: Are you ready SHEENA?"))
     release
     delay(24)
-    applymovement(5, moves(jump_in_place_right))
+    applymovement(8, moves(jump_in_place_right))
     delay(24)
     msgbox(format("SHENA: Yes!"))
     release
-    delay(30)
-
+    delay(16)
+    msgbox(format("TEACHER: Okay then. Here's the first question!"))
+    release
 
     //Question 1 (boy got it wrong)
     braillemessage(Silversun_Braille_Quiz1)
@@ -37,6 +43,7 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     msgbox(format("SHEENA: I got it! I got it!\nAN APPLIN A DAY KEEPS THE DOCTOR AT BAY."))
     release
     msgbox(format("TEACHER: Next question!"))    
+    release
 
 
     //Question 2 (boy got it right)
@@ -46,17 +53,22 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     msgbox(format("SHEENA: I got it! I got it!\nROLY POLY WITH ROLYCOLY."))
     release
     msgbox(format("TEACHER: Next question!"))    
+    release
 
     //Question 3 (boy got it wrong)
     braillemessage(Silversun_Braille_Quiz3)
     waitbuttonpress
     closebraillemessage
-    msgbox(format("SHEENA: I got it! I got it!\pFEEBASE EVOLVES WITH A MART PAIL."))
+    msgbox(format("SHEENA: I got it! I got it!\pFEEBAS EVOLVES WITH A MART PAIL."))
     release
-    msgbox(format("TEACHER: Next question!"))    
+    delay(16)
+    msgbox(format("TEACHER: And that's all the questions!"))    
+    release
+    delay(16)
+    faceplayer
 
     //result (the correct answer is 1/3)
-    msgbox(format("TEACHER: So how many did he get right?")) 
+    msgbox(format("TEACHER: So how many did SHEEA get right?")) 
     dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "0/3", "1/3", "2/3", "3/3")
 
     if (var(VAR_RESULT) == 1){
