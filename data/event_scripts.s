@@ -1156,6 +1156,8 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
 
+	.include "data/scripts/customscripts_signs.inc"
+
 	.include "data/maps/CarabrueTown/scripts.inc"
 	.include "data/maps/CarabrueTown_Home1F/scripts.inc"
 	.include "data/maps/CarabrueTown_Home2F/scripts.inc"
