@@ -1,5 +1,16 @@
 mapscripts TempCopyMap_MapScripts{}
 
+script Common_EventScript_NurseDemo{
+    lockall
+    faceplayer
+    msgbox(format("This is the end of the demo. Thank you for playing! Please drop any feedback and bug reports on Discord, and stay tuned for further updates!"))
+    releaseall
+    end
+}
+
+
+
+
 //ALL COMMON EVENT SCRIPTS GO HERE
 script Common_EventScript_MintVendingMachine{
 
