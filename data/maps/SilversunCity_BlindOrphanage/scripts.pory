@@ -302,7 +302,7 @@ script SilversunCity_BlindOrphanage_NPC_5{
 script SilversunCity_BlindOrphanage_NPC_6{
     lockall
     faceplayer
-    msgbox(format(""))
+    msgbox(format("I listen to people's footsteps. Yours sound kind of...bouncy. Are you happy today?"))
     releaseall
     end
 }
@@ -310,7 +310,7 @@ script SilversunCity_BlindOrphanage_NPC_6{
 script SilversunCity_BlindOrphanage_Ralts{
     lockall
     playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format("RALTS is focused intently on its child...perhaps its sending some warm thoughts across."))
     releaseall
     end
 }
@@ -318,7 +318,7 @@ script SilversunCity_BlindOrphanage_Ralts{
 script SilversunCity_BlindOrphanage_Noibat{
     lockall
     playmoncry(SPECIES_NOIBAT, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format("NOIBAT looks bored...it must be waiting for night-time!"))
     releaseall
     end
 }
@@ -326,7 +326,7 @@ script SilversunCity_BlindOrphanage_Noibat{
 script SilversunCity_BlindOrphanage_Yamper{
     lockall
     playmoncry(SPECIES_YAMPER, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format("YAMPER barks! And barks again!"))
     releaseall
     end
 }
