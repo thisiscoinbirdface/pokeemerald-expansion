@@ -178,8 +178,8 @@
 #define FLAG_HIDE_HOLLOW_MIMEJR_3  0x2B4 // Unused Flag
 #define FLAG_GRETA_PELLUCACITY  0x2B5 // Unused Flag
 #define FLAG_SILVERSUN_BRAILLE_1_DONE  0x2B6 // Unused Flag
-#define FLAG_SILVERSUN_BRAILLE_2_DONE  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
+#define FLAG_SILVERSUN_BRAILLE_2_START  0x2B7 // Unused Flag
+#define FLAG_SILVERSUN_BRAILLE_2_DONE  0x2B8 // Unused Flag
 #define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
 #define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag

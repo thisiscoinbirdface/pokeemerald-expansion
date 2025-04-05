@@ -4,7 +4,65 @@ mapscripts SilversunCity_BlindOrphanage_MapScripts{}
 script SilversunCity_BlindOrphanage_PokedexGameStart{
     lockall
     faceplayer
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
+        msgbox(format("This book is hard to understand! I wish I could knew what these {PKMN} felt to touch."))
+        end
+    }
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 3){
+        msgbox(format("Is it you? Did you bring the book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("...oh, okay. That's fine."))
+
+        } else {
+            checkitem(ITEM_ORPHANAGE_BOOK)
+            if (var(VAR_RESULT) == 1){
+                removeitem(ITEM_ORPHANAGE_BOOK)
+                msgbox(format("{PLAYER} gave the boy a copy of POKEMON A TO Z."), MSGBOX_SIGN)
+                release
+                msgbox(format("Yayy! Thank you!"))
+                release  
+                setvar(VAR_SILVERSUN_BRAILLE_BOOK, 4)
+            } else {
+                msgbox(format("Hey, you didn't bring a book!"))
+            }
+        }
+
+        releaseall
+        end
+    }
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 2){
+        msgbox(format("Is it you? Did you bring the book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("...oh, okay. That's fine."))
+
+        } else {
+            checkitem(ITEM_ORPHANAGE_BOOK)
+            if (var(VAR_RESULT) == 1){
+                removeitem(ITEM_ORPHANAGE_BOOK)
+                msgbox(format("{PLAYER} gave the boy a book."), MSGBOX_SIGN)
+                release
+                msgbox(format("Hey, this isn't it! I want the right book!"))
+                release  
+                setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
+            } else {
+                msgbox(format("Hey, you didn't bring a book!"))
+            }
+        }
+
+        releaseall
+        end
+    }
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
+        msgbox(format("I want a book on all the {PKMN} in CORMORIA!"))
+        end
+    }
+
     msgbox(format("I'm looking for a book on all the {PKMN} in CORMORIA! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"))
+    setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
     releaseall
     end
 }
@@ -14,6 +72,16 @@ script SilversunCity_Book1{
     braillemessage(Silversun_BrailleBook1)
     waitbuttonpress
     closebraillemessage
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
+        msgbox(format("Take this book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            setvar(VAR_SILVERSUN_BRAILLE_BOOK, 2)
+            msgbox(format("{PLAYER} took a book from the shelf."))
+            additem(ITEM_ORPHANAGE_BOOK)
+        }
+    }
+
     releaseall
     end
 }
@@ -23,6 +91,16 @@ script SilversunCity_Book2{
     braillemessage(Silversun_BrailleBook2)
     waitbuttonpress
     closebraillemessage
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
+        msgbox(format("Take this book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            setvar(VAR_SILVERSUN_BRAILLE_BOOK, 2)
+            msgbox(format("{PLAYER} took a book from the shelf."))
+            additem(ITEM_ORPHANAGE_BOOK)
+        }
+    }
+
     releaseall
     end
 }
@@ -32,6 +110,16 @@ script SilversunCity_Book3{
     braillemessage(Silversun_BrailleBook3)
     waitbuttonpress
     closebraillemessage
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
+        msgbox(format("Take this book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            setvar(VAR_SILVERSUN_BRAILLE_BOOK, 3)
+            msgbox(format("{PLAYER} took a book from the shelf."))
+            additem(ITEM_ORPHANAGE_BOOK)
+        }
+    }
+
     releaseall
     end
 }
@@ -41,6 +129,16 @@ script SilversunCity_Book4{
     braillemessage(Silversun_BrailleBook4)
     waitbuttonpress
     closebraillemessage
+
+    if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
+        msgbox(format("Take this book?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            setvar(VAR_SILVERSUN_BRAILLE_BOOK, 2)
+            msgbox(format("{PLAYER} took a book from the shelf."))
+            additem(ITEM_ORPHANAGE_BOOK)
+        }
+    }
+
     releaseall
     end
 }
