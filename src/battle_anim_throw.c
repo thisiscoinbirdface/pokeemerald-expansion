@@ -1157,7 +1157,7 @@ static void SpriteCB_Ball_MonShrink_Step(struct Sprite *sprite)
         break;
     case MON_SHRINK_FREE:
     default:
-        if (gTasks[taskId].data[1] > 10)
+        if (gTasks[taskId].data[1] > 13)
         {
             DestroyTask(taskId);
             StartSpriteAnim(sprite, 2);
@@ -1298,7 +1298,7 @@ static void SpriteCB_Ball_Bounce_Step(struct Sprite *sprite)
 
 static void SpriteCB_Ball_Wobble(struct Sprite *sprite)
 {
-    if (++sprite->sTimer > 10)
+    if (++sprite->sTimer > 13)
     {
         sprite->sState = 0;
         sprite->affineAnimPaused = TRUE;
@@ -1466,7 +1466,7 @@ static void SpriteCB_Ball_Wobble_Step(struct Sprite *sprite)
         break;
     case BALL_WAIT_NEXT_SHAKE:
     default:
-        if (++sprite->sTimer > 10)
+        if (++sprite->sTimer > 13)
         {
             sprite->sTimer = 0;
             RESET_STATE(sprite->sState);
@@ -1493,7 +1493,7 @@ static void SpriteCB_Ball_Wobble_Step(struct Sprite *sprite)
 
 static void SpriteCB_Ball_Release(struct Sprite *sprite)
 {
-    if (++sprite->sTimer > 10)
+    if (++sprite->sTimer > 13)
     {
         sprite->data[5] = 0;
         sprite->callback = SpriteCB_Ball_Release_Step;
