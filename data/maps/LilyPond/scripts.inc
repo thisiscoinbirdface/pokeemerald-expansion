@@ -75,7 +75,7 @@ LilyPond_OnFrame_Text_1:
 	.string "down upon you. You're a failure whose\l"
 	.string "mess I have to clean up.\p"
 	.string "...\p"
-	.string "KOHLA: I'm going to chase TEAM SOMBER\n"
+	.string "KOHLA: I'm going to chase Team Somber\n"
 	.string "down and get that ANCIENT TERROR back\l"
 	.string "from them. It'd be best if we didn't see\l"
 	.string "each other again. You're off the case.\l"

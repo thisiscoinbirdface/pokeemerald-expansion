@@ -1392,7 +1392,7 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around CORMORIA.");
 //main quest1
-const u8 gText_SideQuestDoneDesc_2[] = _("A total failure! I couldn't stop TEAM SOMBER\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");    
+const u8 gText_SideQuestDoneDesc_2[] = _("A total failure! I couldn't stop Team Somber\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");    
 //ranger side quest
 const u8 gText_SideQuestDoneDesc_3[] = _("???");    
 const u8 gText_SideQuestDoneDesc_4[] = _("AZURILL has recovered and is happy again!\nA PECHA BERRY a day keeps the doctor away.");
@@ -1468,12 +1468,12 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest1_Name2[] = _("Lab Supplies");
     const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
 
-    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTENEBRIS LAB with my WELCOME PACKAGE.\nI shouldn't be late at any cost!");
-    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the lab's supplies from the\nPokemart in FENNILAHL TOWN. It has my\nstarter {PKMN}! And some important stuff.");
-    const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken the\nsupplies! I need to tell ASST PROF RUE as\nsoon as possible.");
+    const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTenebris Lab with my Welcome Package.\nI shouldn't be late at any cost!");
+    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the lab's supplies from the\nPokemart in Fennilahl Town. It has my\nstarter {PKMN}! And some important stuff.");
+    const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken the\nsupplies! I need to tell Asst. Prof. Rue\nas soon as possible.");
 
     //MT CERAM DREAMSTONE (MAIN QUEST)
-    const u8 gText_SubQuest2_Name1[] = _("Dreamstone on MT CERAM");
+    const u8 gText_SubQuest2_Name1[] = _("Dreamstone on Mt. Ceram");
     const u8 gText_SubQuest2_Name2[] = _("Mysterious Area");
     const u8 gText_SubQuest2_Name3[] = _("Silversun Sighting");
     const u8 gText_SubQuest2_Name4[] = _("Of Drama & Desire");
@@ -1484,16 +1484,16 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest2_Name9[] = _("Part 9");
     const u8 gText_SubQuest2_Name10[] = _("Part 10");
 
-    const u8 gText_SubQuest2_Desc1[] = _("The first dreamstone is atop MT CERAM.\nI need to cross ROUTE 3 to GASTREE CITY,\nthen head north towards the CERAM BASE CAMP.");
+    const u8 gText_SubQuest2_Desc1[] = _("The first dreamstone is atop Mt. Ceram.\nI need to cross Route 3 to Gastree City,\nthen head north towards the Ceram Base Camp.");
     const u8 gText_SubQuest2_Desc2[] = _("The dreamstone transported me and GABRIELLE\nto a mysterious area! I don't recognise the\n{PKMN} here. I need to find a way back.");
-    const u8 gText_SubQuest2_Desc3[] = _("Someone matching PROF TENEBRIS' description\nwas spotted in SILVERSUN CITY! TEAM SOMBER\nis there too, so I need to go there fast.");
-    const u8 gText_SubQuest2_Desc4[] = _("TEAM SOMBER's hideout is somewhere here.\nIf they've taken PROF TENEBRIS hostage, it\ncould spell trouble. Gotta find them!");
-    const u8 gText_SubQuest2_Desc5[] = _("A historian at the MIRROH BASE CAMP knows\pabout the past. What's in Ancient Cormoria\nthat TEAM SOMBER wants so badly?");
-    const u8 gText_SubQuest2_Desc6[] = _("I need to talk to Martha the historian, who\nlives at the MIRROH BASE CAMP. Can she give\nus a clue as to TEAM SOMBER's motives?");
-    const u8 gText_SubQuest2_Desc7[] = _("What could TEAM SOMBER possibly want with\nthe ANCIENT TERROR? I'll find my answers at\nMT MIRROH...if I hurry!'");
+    const u8 gText_SubQuest2_Desc3[] = _("Someone matching Prof. Tenebris' description\nwas spotted in Silversun City! Team Somber\nis there too, so I need to go there fast.");
+    const u8 gText_SubQuest2_Desc4[] = _("Team Somber's hideout is somewhere here.\nIf they've taken PROF TENEBRIS hostage, it\ncould spell trouble. Gotta find them!");
+    const u8 gText_SubQuest2_Desc5[] = _("A historian at the MIRROH BASE CAMP knows\pabout the past. What's in Ancient Cormoria\nthat Team Somber wants so badly?");
+    const u8 gText_SubQuest2_Desc6[] = _("I need to talk to Martha the historian, who\nlives at the MIRROH BASE CAMP. Can she give\nus a clue as to Team Somber's motives?");
+    const u8 gText_SubQuest2_Desc7[] = _("What could Team Somber possibly want with\nthe ANCIENT TERROR? I'll find my answers at\nMT MIRROH...if I hurry!'");
     const u8 gText_SubQuest2_Desc8[] = _("I got warped into the past again! And Somber\nAdmin MELEA is here too. I've got to stop\nher from catching the ANCIENT TERROR!");
     const u8 gText_SubQuest2_Desc9[] = _("Somber Admin MELEA escaped with the ANCIENT\nTERROR! But KOHLA found his way here too,\nso there should be another exit out.");
-    const u8 gText_SubQuest2_Desc10[] = _("A total failure! I couldn't stop TEAM SOMBER\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");
+    const u8 gText_SubQuest2_Desc10[] = _("A total failure! I couldn't stop Team Somber\nor find PROFESSOR TENEBRIS, and now I'm\noff the case. I guess that's it...?");
 
     //POKEMON RANGER (ONGOING BIG SIDE QUEST)
     const u8 gText_SubQuest3_Name1[] = _("A Ranger's First Assignment");

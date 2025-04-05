@@ -434,7 +434,7 @@ AncientMirroh_Tower_4F_MainTrigger_Movement_14:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_0:
 # 39 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "KOHLA: Wait right there, TEAM SOMBER!\n"
+	.string "KOHLA: Wait right there, Team Somber!\n"
 	.string "The ACE ROOKIE is here now, so stop\l"
 	.string "your dastardly -$"
 
@@ -465,7 +465,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_3:
 	.string "MELEA: But there were other minds who\n"
 	.string "did understand the greatness, the\l"
 	.string "potential, the power!\p"
-	.string "And that's why TEAM SOMBER exists.$"
+	.string "And that's why Team Somber exists.$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_4:
 # 66 "data//maps/AncientMirroh_Tower_4F/scripts.pory"

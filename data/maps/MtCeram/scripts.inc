@@ -983,7 +983,7 @@ MtCeram_EventScript_Eavesdrop_Text_3:
 MtCeram_EventScript_Eavesdrop_Text_4:
 # 165 "data//maps/MtCeram/scripts.pory"
 	.string "SOMBER GRUNT 2: Serves her right for\n"
-	.string "losing! TEAM SOMBER doesn't need any\l"
+	.string "losing! Team Somber doesn't need any\l"
 	.string "losers!\p"
 	.string "SOMBER GRUNT 1: Yeah what a loser she\n"
 	.string "is! Now lets go stand guard. We can't let\l"
@@ -1035,7 +1035,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_5:
 
 MtCeram_EventScript_BeforePeakBattle_Text_6:
 # 282 "data//maps/MtCeram/scripts.pory"
-	.string "KOHLA: Now come on TEAM SOMBER! Bring\n"
+	.string "KOHLA: Now come on Team Somber! Bring\n"
 	.string "it on!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_7:

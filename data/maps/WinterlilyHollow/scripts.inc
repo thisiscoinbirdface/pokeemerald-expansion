@@ -460,7 +460,7 @@ WinterlilyHollow_OnFrame_Text_2:
 	.string "VINIEL: Oh, you're off the case? I\n"
 	.string "understand. You're too young to keep up\l"
 	.string "with a big criminal organisation like\l"
-	.string "TEAM SOMBER. It's time for the\l"
+	.string "Team Somber. It's time for the\l"
 	.string "grown-ups to take over.\p"
 	.string "VINIEL: What's wrong, young champ? You\n"
 	.string "look paralysed. Don't let the shock wear\l"

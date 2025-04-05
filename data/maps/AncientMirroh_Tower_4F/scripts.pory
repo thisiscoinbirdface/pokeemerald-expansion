@@ -36,7 +36,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_KOHLA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("KOHLA: Wait right there, TEAM SOMBER! The ACE ROOKIE is here now, so stop your dastardly - "))
+    msgbox(format("KOHLA: Wait right there, Team Somber! The ACE ROOKIE is here now, so stop your dastardly - "))
 
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -56,7 +56,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     applymovement(LOCALID_MELEA, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why TEAM SOMBER exists."))
+    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why Team Somber exists."))
     release
 
 
@@ -139,7 +139,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("MELEA: Come, ANCIENT TERROR! Let TEAM SOMBER show you the future!"))
+    msgbox(format("MELEA: Come, ANCIENT TERROR! Let Team Somber show you the future!"))
     release
 
     fadescreen(FADE_TO_WHITE)
