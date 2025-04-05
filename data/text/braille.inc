@@ -139,5 +139,24 @@ Silversun_Braille_Quiz3:
 	.braille "SCALE$"
 
 
+Silversun_BrailleBook1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "THE HISTORY\n"
+	.braille "OF CORMORIA$"
+
+Silversun_BrailleBook2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "LITTLE BUNEARY\n"
+	.braille "GOES OUTSIDE$"
+
+Silversun_BrailleBook3:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "POKEMON\n"
+	.braille "A TO Z$"
+
+Silversun_BrailleBook4:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "EASY BRAILLE\n"
+	.braille "WITH AUDINO$"
 
 

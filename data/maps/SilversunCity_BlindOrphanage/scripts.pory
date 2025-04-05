@@ -2,12 +2,53 @@ mapscripts SilversunCity_BlindOrphanage_MapScripts{}
 
 
 script SilversunCity_BlindOrphanage_PokedexGameStart{
-    
+
 }
+
+script SilversunCity_Book1{
+    lockall
+    braillemessage(Silversun_BrailleBook1)
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script SilversunCity_Book2{
+    lockall
+    braillemessage(Silversun_BrailleBook2)
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script SilversunCity_Book3{
+    lockall
+    braillemessage(Silversun_BrailleBook3)
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script SilversunCity_Book4{
+    lockall
+    braillemessage(Silversun_BrailleBook4)
+    waitbuttonpress
+    releaseall
+    end
+}
+
 
 script SilversunCity_BlindOrphanage_BrailleGameStart{
     lockall
     faceplayer
+    if (flag(FLAG_SILVERSUN_BRAILLE_1_DONE)){
+        msgbox(format("SHEENA is preparing for her next test."))
+        applymovement(5, moves(face_left))
+        waitmovement(0)        
+        release
+        end
+    }
+
     msgbox(format("TEACHER: SHEENA is about to take a braille test. Would you like to volunteer and help out?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
