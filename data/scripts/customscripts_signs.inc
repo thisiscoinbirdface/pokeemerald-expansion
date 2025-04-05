@@ -160,8 +160,8 @@ WhiteSign_Route1_NextToCarabrue_Text_0:
 
 WoodSign_Route1_Middle_Text_0:
 # 24 "data//scripts/customscripts_signs.pory"
-	.string "You can sometimes find hidden items in\n"
-	.string "rocks!$"
+	.string "TRAINER TIPS: You can sometimes find\n"
+	.string "hidden items in rocks!$"
 
 WhiteSign_Route1_NextToFennilahl_Text_0:
 # 29 "data//scripts/customscripts_signs.pory"
@@ -249,7 +249,7 @@ WhiteSign_CeramBaseCamp_Gym_Text_0:
 
 WoodSign_MtCeram_Warning_Text_0:
 # 134 "data//scripts/customscripts_signs.pory"
-	.string "WARNING: If you jump this ledge,\n"
+	.string "TRAINER TIPS: If you jump this ledge,\n"
 	.string "there's no way back! Make sure you're\l"
 	.string "prepared for the trek.$"
 
