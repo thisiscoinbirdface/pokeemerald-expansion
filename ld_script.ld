@@ -1247,6 +1247,8 @@ SECTIONS {
         sound/songs/midi/mus_custom_garden_moon.mid(.rodata);
         sound/songs/midi/mus_custom_jetlag.mid(.rodata);
         sound/songs/midi/mus_custom_flockofbirds.mid(.rodata);
+        sound/songs/midi/mus_custom_lilac.mid(.rodata);
+        sound/songs/midi/mus_custom_purple_cum.mid(.rodata);        
     } > ROM =0
 
     lib_rodata :
