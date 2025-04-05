@@ -47,7 +47,8 @@ gText_Birch_BoyOrGirl::
 	.string "$"	
 
 gText_Birch_WhatsYourName::
-	.string "Please sign below."
+	.string "By signing below, you agree to accept\n"
+	.string "the position of RESEARCH ASSOCIATE."
 	.string "$"
 
 gText_Birch_SoItsPlayer::
