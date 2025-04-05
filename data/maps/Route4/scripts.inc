@@ -794,7 +794,7 @@ Route4_NPC_B_Text_2:
 Route4_NPC_Cook_Text_0:
 # 277 "data//maps/Route4/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
-	.string "I travel all over CORMORIA. And if you\l"
+	.string "I travel all over Cormoria. And if you\l"
 	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
@@ -802,9 +802,9 @@ Route4_NPC_Cook_Text_1:
 # 279 "data//maps/Route4/scripts.pory"
 	.string "Hello young trainer! I'm a cook from the\n"
 	.string "Pelluca Restaurant, all the way on the\l"
-	.string "other side of CORMORIA! Why am I here,\l"
+	.string "other side of Cormoria! Why am I here,\l"
 	.string "you ask? It's because I travel all\l"
-	.string "across CORMORIA to find the best\l"
+	.string "across Cormoria to find the best\l"
 	.string "ingredients for the restaurant! I'm\l"
 	.string "looking for a special berry that only\l"
 	.string "grows around Mt. Ceram. It's called a\l"

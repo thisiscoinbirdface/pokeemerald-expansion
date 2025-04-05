@@ -285,9 +285,9 @@ SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_1:
 # 84 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "I write for CORMORIA CULTURE, the\n"
+	.string "I write for Cormoria CULTURE, the\n"
 	.string "leading arts and entertainment portal\l"
-	.string "in CORMORIA! Let's see what GLORIA has\l"
+	.string "in Cormoria! Let's see what GLORIA has\l"
 	.string "in store today...it's supposed to be an\l"
 	.string "experiential affair.$"
 

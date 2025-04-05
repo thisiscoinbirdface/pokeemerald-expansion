@@ -122,7 +122,7 @@ MirrohInterior_1F_Trainer_A_Text_1:
 MirrohInterior_1F_Trainer_A_Text_2:
 # 29 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I love delving deep into the mountains\n"
-	.string "of CORMORIA!$"
+	.string "of Cormoria!$"
 
 MirrohInterior_1F_Trainer_B_Text_0:
 # 35 "data//maps/MirrohInterior_1F/scripts.pory"

@@ -312,6 +312,6 @@ MtCeram_Caves_Greta_Main_Text_2:
 MtCeram_Caves_Greta_Main_Text_3:
 # 91 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "GRETA: I travel across all the routes\n"
-	.string "and towns of CORMORIA, so I bet we'll\l"
+	.string "and towns of Cormoria, so I bet we'll\l"
 	.string "meet again - somewhere or the other.\l"
 	.string "Please buy my stuff then!$"

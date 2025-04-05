@@ -1123,7 +1123,7 @@ RangerInstitute_1F_InterviewPass_Text_0:
 	.string "Congratulations {PLAYER}! You've\n"
 	.string "cleared the interview and we are now\l"
 	.string "proud to call you a {PKMN} RANGER RECRUIT.\l"
-	.string "Welcome to the CORMORIA {PKMN} Ranger\l"
+	.string "Welcome to the Cormoria {PKMN} Ranger\l"
 	.string "Institute! Please head upstairs for\l"
 	.string "your induction.$"
 
@@ -1244,9 +1244,9 @@ RangerInstitute_2F_EventScript_Welcome_Text_10:
 # 342 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: The RANGER BIKE and RANGER\n"
 	.string "CARD - the two emblems of a {PKMN} Ranger\l"
-	.string "in CORMORIA! The RANGER BIKE will allow\l"
+	.string "in Cormoria! The RANGER BIKE will allow\l"
 	.string "you to speedily traverse all of\l"
-	.string "CORMORIA, and the RANGER CARD lets\l"
+	.string "Cormoria, and the RANGER CARD lets\l"
 	.string "everyone know you're a proper {PKMN}\l"
 	.string "Ranger! You can access the other\l"
 	.string "RANGER INSTITUTES with this.$"
@@ -1310,9 +1310,8 @@ RangerInstitute_2F_NPC_2_Text_0:
 # 386 "data//maps/RangerInstitute/scripts.pory"
 	.string "Hello there, new recruit! Wanna see what\n"
 	.string "I'm working on? I'm analysing the\l"
-	.string "weather patterns in CORMORIA. I stay\l"
-	.string "on the lookout for any unnatural\l"
-	.string "changes.$"
+	.string "weather patterns in Cormoria. I stay on\l"
+	.string "the lookout for any unnatural changes.$"
 
 RangerInstitute_2F_NPC_3_Text_0:
 # 393 "data//maps/RangerInstitute/scripts.pory"

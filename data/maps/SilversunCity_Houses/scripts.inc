@@ -266,7 +266,7 @@ SilversunCity_Houses_Artist_Text_5:
 	.string "and brush! Yes yes! I am none other\l"
 	.string "than the legendary ARSALAN. My works\l"
 	.string "adorn the most prestigious walls in\l"
-	.string "CORMORIA!\p"
+	.string "Cormoria!\p"
 	.string "...\p"
 	.string "But ARSALAN is struggling now. Why, you\n"
 	.string "ask? Well well.\p"

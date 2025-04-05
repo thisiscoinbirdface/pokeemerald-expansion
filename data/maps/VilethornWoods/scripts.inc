@@ -665,7 +665,7 @@ VilethornWoods_NPC2_Text_2:
 VilethornWoods_NPC2_Text_3:
 # 272 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
-	.string "I travel all over CORMORIA. And if you\l"
+	.string "I travel all over Cormoria. And if you\l"
 	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 

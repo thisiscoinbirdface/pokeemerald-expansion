@@ -125,7 +125,7 @@ CarabrueTown_EventScript_NPC2_Text_0:
 	.string "My CHIKORITA and I love how cosy\n"
 	.string "Carabrue Town is! That's because it's\l"
 	.string "nestled deep in the southern hills of\l"
-	.string "CORMORIA.$"
+	.string "Cormoria.$"
 
 CarabrueTown_Chikorita_Text_0:
 # 66 "data//maps/CarabrueTown/scripts.pory"

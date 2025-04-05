@@ -40,6 +40,6 @@ CarabrueTown_Home2F_EventScript_PC::
 
 CarabrueTown_Home2F_EventScript_PickUpBag_Text_0:
 # 6 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "The lab sent a welcome package\n"
+	.string "The lab sent a Welcome Package\n"
 	.string "yesterday. I'm supposed to bring it with\l"
 	.string "me without opening it, they said.$"

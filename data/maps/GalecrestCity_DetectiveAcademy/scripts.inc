@@ -723,7 +723,7 @@ GalecrestCity_DetectiveAcademy_Receptionist_Multichoice_Text_4:
 # 99 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "The GALECREST DETECTIVE ACADEMY is\n"
 	.string "one of the most prestigious schools in\l"
-	.string "all of CORMORIA! Our top-caliber\l"
+	.string "all of Cormoria! Our top-caliber\l"
 	.string "candidates train and study to become\l"
 	.string "the very best detectives. Many go on to\l"
 	.string "join the police force or pursue the\l"

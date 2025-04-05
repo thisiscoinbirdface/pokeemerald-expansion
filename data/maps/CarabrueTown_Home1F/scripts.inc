@@ -189,12 +189,12 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_0:
 CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 # 39 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "MOM: How scary...even in a small town\n"
-	.string "like ours, people can go missing. And\l"
-	.string "it's your first day working at the lab\l"
-	.string "too! Gosh, I'm so scared...be safe out\l"
-	.string "there! I'm sure the lab will need all the\l"
-	.string "help it can get without the Professor\l"
-	.string "around, so make sure you do your best,\l"
+	.string "like ours, people can go missing.\p"
+	.string "And it's your first day working at the\n"
+	.string "lab too! Gosh, I'm so scared...be safe\l"
+	.string "out there! I'm sure the lab will need all\l"
+	.string "the help it can get without the\l"
+	.string "Professor around, so do your best,\l"
 	.string "okay?$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_2:
@@ -212,7 +212,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_4:
 	.string "MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions: Press the B Button to\l"
 	.string "toggle running on and off. Slip on these\l"
-	.string "RUNNING SHOES and race in the great\l"
+	.string "Running Shoes and race in the great\l"
 	.string "outdoors!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_5:
@@ -223,7 +223,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_5:
 
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0:
 # 90 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "I should get my welcome package before\n"
+	.string "I should get my Welcome Package before\n"
 	.string "leaving!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_0:

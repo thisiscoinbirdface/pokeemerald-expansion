@@ -731,7 +731,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_7:
 	.string "MELEA: You just NOTHING! You BETRAYED\n"
 	.string "us! Out! OUT! You're no longer a part of\l"
 	.string "Team Somber! And I'm going to have a\l"
-	.string "squad chase you all over CORMORIA!$"
+	.string "squad chase you all over Cormoria!$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_8:
 # 122 "data//maps/SilversunCity_SomberHQ/scripts.pory"

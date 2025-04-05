@@ -272,7 +272,7 @@ PellucaCityRestaurant_NPC7_Text_0:
 	.string "My SMEARGLE cannot resist the apple\n"
 	.string "pie here! It's because the head chef\l"
 	.string "uses rare ingredients from all over\l"
-	.string "CORMORIA.$"
+	.string "Cormoria.$"
 
 PellucaCityRestaurant_NPC8_Text_0:
 # 67 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -288,7 +288,7 @@ PellucaCityRestaurant_NPC9_Text_0:
 PellucaCityRestaurant_Cook1_Text_0:
 # 94 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Our head chef travels all across\n"
-	.string "CORMORIA to find the rarest\l"
+	.string "Cormoria to find the rarest\l"
 	.string "ingredients...I wish he'd find a ROTOM\l"
 	.string "FROST to replace our fridge!$"
 

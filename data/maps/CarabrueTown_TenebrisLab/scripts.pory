@@ -4,7 +4,7 @@ mapscripts CarabrueTown_TenebrisLab_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_LAB_STATE, 0: CarabrueTown_TenebrisLab_EventScript_Start
-        VAR_LAB_STATE, 1: CarabrueTown_TenebrisLab_EventScript_NoSupplies        
+        VAR_LAB_STATE, 2: CarabrueTown_TenebrisLab_EventScript_NoSupplies        
     ]
 
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
@@ -56,10 +56,6 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 
     applymovement(3, moves(jump_in_place_left))
     waitmovement(3)
-
-    msgbox(format("And on the way, could you give the evidence bag you have to the police? They're waiting at the edge of town."))
-    release
-
     applymovement(3, moves(face_left, face_right, face_up, face_down, jump_in_place_up_down))
     waitmovement(3)
 
@@ -81,6 +77,21 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 
 }
 
+
+script CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives{
+    lockall
+    addobject(3)
+    msgbox(format("RUE: Wait! I almost forgot! "))
+    applymovement(3, moves(walk_down * 8))
+    waitmovement(0)
+    msgbox(format("RUE: On the way, could you give the evidence bag you have to the police? They're waiting at the edge of town."))
+    release
+    applymovement(3, moves(walk_up * 5))
+    waitmovement(0)    
+    setvar(VAR_LAB_STATE, 2)
+    releaseall
+    end
+}
 
 
 
@@ -280,7 +291,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
 
         //VARS, FLAGS AND QUESTS
-        setvar(VAR_LAB_STATE, 2)
+        setvar(VAR_LAB_STATE, 3)
         setflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
         setflag(FLAG_LAB_CALLTOACTION)
 
@@ -443,6 +454,12 @@ script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
         msgbox(format("Assistant Professor Rue told me not to leave without a Pokemon to protect me!"))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
         waitmovement(0)
+        releaseall
+        end
+    }
+
+    if (var(VAR_LAB_STATE) == 1){
+        goto(CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives)
     }
 
     releaseall

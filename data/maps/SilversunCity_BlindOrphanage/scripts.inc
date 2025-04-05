@@ -639,7 +639,7 @@ SilversunCity_BlindOrphanage_BrailleGameStart_Movement_1:
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_0:
 # 10 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I'm looking for a book on all the {PKMN} in\n"
-	.string "CORMORIA! But I'm too short to touch\l"
+	.string "Cormoria! But I'm too short to touch\l"
 	.string "the braille on the book covers...$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_1:
@@ -682,13 +682,12 @@ SilversunCity_BlindOrphanage_PokedexGameStart_Text_8:
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_9:
 # 77 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I want a book on all the {PKMN} in\n"
-	.string "CORMORIA!$"
+	.string "I want a book on all the {PKMN} in Cormoria!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_10:
 # 82 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I'm looking for a book on all the {PKMN} in\n"
-	.string "CORMORIA! But I'm too short to touch\l"
+	.string "Cormoria! But I'm too short to touch\l"
 	.string "the braille on the book covers. If you\l"
 	.string "find me one, can you bring it to me?$"
 
