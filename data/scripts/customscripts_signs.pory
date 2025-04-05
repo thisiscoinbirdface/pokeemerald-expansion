@@ -21,7 +21,7 @@ script WhiteSign_Route1_NextToCarabrue {
 
 
 script WoodSign_Route1_Middle {
-    msgbox(format("You can sometimes find hidden items in rocks!"), MSGBOX_SIGN)
+    msgbox(format("TRAINER TIPS: You can sometimes find hidden items in rocks!"), MSGBOX_SIGN)
     end
 }
 
@@ -131,7 +131,7 @@ script WhiteSign_CeramBaseCamp_Gym{
 
 //MT CERAM
 script WoodSign_MtCeram_Warning{
-    msgbox(format("WARNING: If you jump this ledge, there's no way back! Make sure you're prepared for the trek."), MSGBOX_SIGN)
+    msgbox(format("TRAINER TIPS: If you jump this ledge, there's no way back! Make sure you're prepared for the trek."), MSGBOX_SIGN)
     end
 }
 
