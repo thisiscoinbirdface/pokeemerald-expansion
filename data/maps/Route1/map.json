@@ -170,7 +170,7 @@
       "y": 22,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route1_Sign_Middle"
+      "script": "WoodSign_Route1_Middle"
     },
     {
       "type": "sign",
@@ -178,7 +178,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route1_Sign_Fennilahl"
+      "script": "WhiteSign_Route1_NextToFennilahl"
     },
     {
       "type": "hidden_item",

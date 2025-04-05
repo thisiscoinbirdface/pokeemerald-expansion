@@ -380,6 +380,22 @@
       "elevation": 0,
       "item": "ITEM_FRESH_WATER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE4_B"
+    },
+    {
+      "type": "sign",
+      "x": 29,
+      "y": 63,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_Route4_TowardsGastree"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_Route4_TowardsCeramBaseCamp"
     }
   ]
 }

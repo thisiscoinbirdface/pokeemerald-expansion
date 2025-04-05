@@ -14,10 +14,12 @@ script VilethornWoods_EventScript_NurseDemo{
     end
 }
 
-script VilethornWoods_EventScript_DemoEnd{
+script VilethornWoods_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("This is the end of the demo. Thank you for playing! I hope you had fun. Please let me know how your experience went in the Discord server!"))
+    msgbox(format("These woods are so creepy! I'm so glad CHANSEY is here with me."))
+    call(Common_EventScript_NurseJoyOnRoute)
+    delay(30)
     releaseall
     end
 }

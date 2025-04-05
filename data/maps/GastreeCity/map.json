@@ -118,11 +118,11 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 23,
+      "x": 24,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
-      "movement_range_x": 2,
+      "movement_range_x": 3,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -341,7 +341,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "WhiteSign_GastreeCity_Main"
     },
     {
       "type": "sign",
@@ -398,6 +398,14 @@
       "elevation": 0,
       "item": "ITEM_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_GASTREE_B"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_GastreeCity_Gym"
     }
   ]
 }

@@ -50,7 +50,7 @@ script CeramBaseCamp_NPC1{
 script CeramBaseCamp_NPC2{
     lockall
     faceplayer
-    msgbox(format("This camp was established to dig a tunnel through MT CERAM to SILVERSUN CITY. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there."))
+    msgbox(format("This camp was established to dig a tunnel through MT CERAM. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."))
     releaseall
 }
 
@@ -155,27 +155,6 @@ script CeramBaseCamp_NPC5{
 
 
 
-
-
-
-
-
-
-
-
-///SIGNS
-
-script CeramBaseCamp_Sign1{
-
-    msgbox(format("CERAM BASE CAMP\nStarting point for MT CERAM treks."), MSGBOX_SIGN)
-    end
-}
-
-script CeramBaseCamp_Sign2{
-
-    msgbox(format("{UP_ARROW} MT CERAM\nSupplies available at depot next door."), MSGBOX_SIGN)
-    end
-}
 
 script CeramBaseCamp_Excadrill{
 

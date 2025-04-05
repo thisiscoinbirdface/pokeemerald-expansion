@@ -30,3 +30,131 @@ script WhiteSign_Route1_NextToFennilahl {
     end
 }
 
+
+//FENNILAHL TOWN
+script WhiteSign_FennilahlTown_Main {
+    msgbox(format("FENNILAHL TOWN\nA calm, serene retirement home."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_FennilahlTown_TowardsRoute2 {
+    msgbox(format("{DOWN_ARROW}ROUTE 2\nConnecting to Vine River."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_FennilahlTown_TowardsRoute3{
+    msgbox(format("{UP_ARROW} UNDERGROUND TUNNEL\nTo ROUTE 3 and GASTREE CITY."), MSGBOX_SIGN)
+    end
+}
+
+
+
+
+
+
+//ROUTE 3
+script WhiteSign_Route3_TowardsFennilahl {
+    msgbox(format("ROUTE 3\p{UP_ARROW} FENNILAHL TOWN\n{RIGHT_ARROW} GASTREE CITY."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route3_VineRiverUnderpass {
+    msgbox(format("{UP_ARROW} VINE RIVER UNDERPASS."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route3_TowardsGastree {
+    msgbox(format("ROUTE 3\p{UP_ARROW} GASTREE CITY.\n{LEFT_ARROW} FENNILAHL TOWN"), MSGBOX_SIGN)
+    end
+}
+
+
+
+
+//GASTREE CITY
+script WhiteSign_GastreeCity_Main {
+    msgbox(format("GASTREE CITY\nWhere fall colors never fade."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_GastreeCity_TeaHouse{
+    msgbox(format("GASTREE TEAHOUSE\nFragrant teas and quiet moments."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_GastreeCity_Gym{
+    msgbox(format("GASTREE GYM\nLeader: INGER"), MSGBOX_SIGN)
+    end
+}
+
+
+
+///ROUTE 4
+script WhiteSign_Route4_TowardsGastree {
+    msgbox(format("ROUTE 4\p{DOWN_ARROW} GASTREE CITY.\n{UP_ARROW} CERAM BASE CAMP"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route4_TowardsCeramBaseCamp {
+    msgbox(format("ROUTE 4\p{UP_ARROW} CERAM BASE CAMP\n{DOWN_ARROW} GASTREE CITY."), MSGBOX_SIGN)
+    end
+}
+
+
+
+
+//CERAM BASE CAMP
+script WhiteSign_CeramBaseCamp_Main{
+
+    msgbox(format("CERAM BASE CAMP\nStarting point for MT CERAM treks."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_CeramBaseCamp_UpToMtCeram{
+
+    msgbox(format("{UP_ARROW} MT CERAM\nSupplies available at depot next door."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_CeramBaseCamp_SupplyDepot{
+
+    msgbox(format("SUPPLY DEPOT\nAll your trekking needs!"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_CeramBaseCamp_Gym{
+    msgbox(format("GASTREE GYM\nLeader: ARIAN"), MSGBOX_SIGN)
+    end
+}
+
+
+
+//MT CERAM
+script WoodSign_MtCeram_Warning{
+    msgbox(format("WARNING: If you jump this ledge, there's no way back! Make sure you're prepared for the trek."), MSGBOX_SIGN)
+    end
+}
+
+
+
+
+
+//GALECREST CITY
+script WhiteSign_GalecrestCity_Main{
+
+    msgbox(format("GALECREST CITY\nWhere elegance meets ambition."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_GalecrestCity_Garden{
+
+    msgbox(format("GALECREST GARDEN\nPlease don't disturb the ROTOMS."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_GalecrestCity_DetectiveAcademy{
+
+    msgbox(format("DETECTIVE ACADEMY\nWWhere sharp minds are forged."), MSGBOX_SIGN)
+    end
+}
+

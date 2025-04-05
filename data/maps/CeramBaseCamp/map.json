@@ -216,7 +216,7 @@
       "y": 38,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeramBaseCamp_Sign1"
+      "script": "WhiteSign_CeramBaseCamp_Main"
     },
     {
       "type": "sign",
@@ -232,7 +232,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "CeramBaseCamp_Sign2"
+      "script": "WhiteSign_CeramBaseCamp_UpToMtCeram"
     },
     {
       "type": "sign",
@@ -289,6 +289,14 @@
       "elevation": 0,
       "item": "ITEM_BURN_HEAL",
       "flag": "FLAG_HIDDEN_ITEM_CERAMBASECAMP_B"
+    },
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_CeramBaseCamp_SupplyDepot"
     }
   ]
 }

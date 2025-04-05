@@ -433,6 +433,14 @@
       "elevation": 0,
       "item": "ITEM_ORAN_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_MTCERAM_B"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 66,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WoodSign_MtCeram_Warning"
     }
   ]
 }

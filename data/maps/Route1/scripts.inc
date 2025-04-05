@@ -44,24 +44,6 @@ Route1_TrainerBattle_Mortem::
 	end
 
 
-Route1_Sign_Carabrue::
-# 38 "data//maps/Route1/scripts.pory"
-	msgbox Route1_Sign_Carabrue_Text_0, MSGBOX_SIGN
-	end
-
-
-Route1_Sign_Middle::
-# 43 "data//maps/Route1/scripts.pory"
-	msgbox Route1_Sign_Middle_Text_0, MSGBOX_SIGN
-	end
-
-
-Route1_Sign_Fennilahl::
-# 48 "data//maps/Route1/scripts.pory"
-	msgbox Route1_Sign_Fennilahl_Text_0, MSGBOX_SIGN
-	end
-
-
 Route1_EventScripts_RandomDude_Text_0:
 # 6 "data//maps/Route1/scripts.pory"
 	.string "A {PKMN} that uses a move of the same type\n"
@@ -109,17 +91,3 @@ Route1_TrainerBattle_Mortem_Text_2:
 # 31 "data//maps/Route1/scripts.pory"
 	.string "There are many bug catchers like me.\n"
 	.string "It's a huge hobby!$"
-
-Route1_Sign_Carabrue_Text_0:
-# 38 "data//maps/Route1/scripts.pory"
-	.string "{LEFT_ARROW} CARABRUE TOWN\n"
-	.string "{UP_ARROW} FENNILAHL TOWN$"
-
-Route1_Sign_Middle_Text_0:
-# 43 "data//maps/Route1/scripts.pory"
-	.string "Beware {PKMN} that hide in tall grass!$"
-
-Route1_Sign_Fennilahl_Text_0:
-# 48 "data//maps/Route1/scripts.pory"
-	.string "{RIGHT_ARROW} FENNILAHL TOWN\n"
-	.string "Foothills of Mt. Ceram.$"

@@ -95,20 +95,7 @@ script Fennilahl_Breech_QuestInProgress{
 
 
 
-script FennilahlTown_Sign_Entrance {
-    msgbox(format("FENNILAHL TOWN\nConnecting Mt. Ceram and Vine River."), MSGBOX_SIGN)
-    end
-}
 
-script FennilahlTown_Sign_Route2 {
-    msgbox(format("{DOWN_ARROW}ROUTE 2\nConnecting to Vine River."), MSGBOX_SIGN)
-    end
-}
-
-script FennilahlTown_Sign_Route3{
-    msgbox(format("{UP_ARROW} UNDERGROUND TUNNEL\nTo Route 3 and GASTREE CITY."), MSGBOX_SIGN)
-    end
-}
 
 
 //FLAG_FENNILAHL_BUDEW_GET
