@@ -501,6 +501,16 @@ script GalecrestCity_NPC_19{
     end
 }
 
+script GalecrestCity_NPC_20{
+    lockall
+    faceplayer    
+    msgbox(format("Whaddya want? Thought you'd get something by talking to me? You poor people are all the same - always looking for handouts!"))
+    releaseall
+    end
+}
+
+
+
 
 
 script GalecrestCity_NPC_Red{

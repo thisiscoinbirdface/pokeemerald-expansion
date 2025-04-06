@@ -675,20 +675,32 @@ GalecrestCity_NPC_19::
 	end
 
 
-GalecrestCity_NPC_Red::
-# 507 "data//maps/GalecrestCity/scripts.pory"
+GalecrestCity_NPC_20::
+# 505 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 508 "data//maps/GalecrestCity/scripts.pory"
+# 506 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 509 "data//maps/GalecrestCity/scripts.pory"
+# 507 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_20_Text_0
+# 508 "data//maps/GalecrestCity/scripts.pory"
+	releaseall
+	end
+
+
+GalecrestCity_NPC_Red::
+# 517 "data//maps/GalecrestCity/scripts.pory"
+	lockall
+# 518 "data//maps/GalecrestCity/scripts.pory"
+	faceplayer
+# 519 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Red_Text_0
-# 510 "data//maps/GalecrestCity/scripts.pory"
+# 520 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 511 "data//maps/GalecrestCity/scripts.pory"
+# 521 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 39, GalecrestCity_DetectiveMeet_Main_Movement_0
-# 512 "data//maps/GalecrestCity/scripts.pory"
+# 522 "data//maps/GalecrestCity/scripts.pory"
 	waitmovement 0
-# 513 "data//maps/GalecrestCity/scripts.pory"
+# 523 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
@@ -1121,8 +1133,15 @@ GalecrestCity_NPC_19_Text_0:
 	.string "NORMAL type attack. That'd be useful in\l"
 	.string "the gym here, wouldn't it?$"
 
+GalecrestCity_NPC_20_Text_0:
+# 507 "data//maps/GalecrestCity/scripts.pory"
+	.string "Whaddya want? Thought you'd get\n"
+	.string "something by talking to me? You poor\l"
+	.string "people are all the same - always looking\l"
+	.string "for handouts!$"
+
 GalecrestCity_NPC_Red_Text_0:
-# 509 "data//maps/GalecrestCity/scripts.pory"
+# 519 "data//maps/GalecrestCity/scripts.pory"
 	.string "Sorry trainer, the Gym Leader's not in\n"
 	.string "right now. He should be back soon. Check\l"
 	.string "out the DETECTIVE ACADEMY in the\l"
