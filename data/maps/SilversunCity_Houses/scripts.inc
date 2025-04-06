@@ -209,9 +209,9 @@ SilversunCity_Houses_Wife::
 	return
 
 
-SilversunCity_Houses_Munchlax::
+SilversunCity_Houses_Furfrou::
 # 160 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Munchlax_Text_0
+	msgbox SilversunCity_Houses_Furfrou_Text_0
 # 161 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	return
@@ -322,7 +322,7 @@ SilversunCity_Houses_DuskullNPC1_Text_0:
 	.string "somewhere and I didn't pay attention.\p"
 	.string "But thanks to you, both of us are safe\n"
 	.string "and we have a new member of the family!\l"
-	.string "With MUNCHLAX around, my wife can do\l"
+	.string "With FURFROU around, my wife can do\l"
 	.string "things normally now. We're eternally\l"
 	.string "grateful.\p"
 	.string "...\p"
@@ -340,6 +340,6 @@ SilversunCity_Houses_Wife_Text_0:
 	.string "The poor baby must be tired...I can hear\n"
 	.string "its snores.$"
 
-SilversunCity_Houses_Munchlax_Text_0:
+SilversunCity_Houses_Furfrou_Text_0:
 # 160 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "MUNCHLAX is snoring while standing.$"
+	.string "FURFROU is patiently waiting.$"

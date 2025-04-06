@@ -21,9 +21,31 @@ script GastreeCity_OnTransition{
 }
 
 script GastreeCity_EventScript_KohlaBattle_Trigger{
+    if (flag(FLAG_GASTREE_KOHLA_BATTLE)) {end}
+
     //Start
     lockall
     faceplayer
+
+    //Setup intro anim
+        //open door
+        opendoor(25, 26)
+        waitdooranim
+
+        //kohla create
+        setobjectxyperm(LOCALID_KOHLA, 25, 26)
+        addobject(LOCALID_KOHLA)
+        delay(8)
+        //kohla walk
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(slide_down))
+        waitmovement(0)
+        applymovement(LOCALID_KOHLA, moves(walk_down))
+        waitmovement(0)
+        //close door
+        closedoor(25, 26)
+        waitdooranim
+
+    delay(12)
 
     //Kohla talks trash
     msgbox(GastreeCity_KohlaIntro1)
@@ -119,18 +141,19 @@ script GastreeCity_NPC7{
 script GastreeCity_NPC8{
     lockall
     faceplayer    
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECKLEON CUT so that we can go and explore Route 4 together!"))
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECLEON some new moves so that we can go and explore Route 4 together! C'mon KECLEON! C'mon!!"))
     release
     applymovement(5, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KECKLEON: keeee!!!"))
+    msgbox(format("KECLEON: keeee!!!\pKECLEON is as fired up as its trainer is!"))
     release
 }
     script GastreeCity_NPC_Keckleon{
         lockall
         faceplayer    
-        msgbox(format("KECKLEON: keeee!!\pIt's trying hard to learn CUT. Go KECKLEON!"))
+        msgbox(format("KECKLEON: keeee!!\pKECLEON is trying hard to match its trainers energy. Go KECLEON!"))
         release
+        end
     }
 
     //Give item - not done yet

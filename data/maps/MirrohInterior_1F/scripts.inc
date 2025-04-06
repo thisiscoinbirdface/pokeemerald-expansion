@@ -167,18 +167,16 @@ MirrohInterior_1F_Trainer_D_Text_2:
 
 MirrohInterior_1F_Trainer_E_Text_0:
 # 56 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "These grunts aren't letting me through\n"
-	.string "to Winterlily Hollow! Are you one of\l"
-	.string "them too?$"
+	.string "I can't get through to Winterlily Hollow\n"
+	.string "from this side. It's so frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_1:
 # 56 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "No you're not!$"
+	.string "You're also frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_2:
 # 57 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "What are these city criminals doing all\n"
-	.string "the way up here?$"
+	.string "I mean why even build a tunnel then?$"
 
 MirrohInterior_1F_NPC_A_Text_0:
 # 81 "data//maps/MirrohInterior_1F/scripts.pory"

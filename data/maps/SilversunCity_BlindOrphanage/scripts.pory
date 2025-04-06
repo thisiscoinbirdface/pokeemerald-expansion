@@ -323,10 +323,10 @@ script SilversunCity_BlindOrphanage_Noibat{
     end
 }
 
-script SilversunCity_BlindOrphanage_Yamper{
+script SilversunCity_BlindOrphanage_Furfrou{
     lockall
-    playmoncry(SPECIES_YAMPER, CRY_MODE_NORMAL)
-    msgbox(format("YAMPER barks! And barks again!"))
+    playmoncry(SPECIES_FURFROU, CRY_MODE_NORMAL)
+    msgbox(format("FURFROU barks! And barks again!"))
     releaseall
     end
 }

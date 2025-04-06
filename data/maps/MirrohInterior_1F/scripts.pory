@@ -53,8 +53,8 @@ script MirrohInterior_1F_Trainer_D{
 
 //LASS (EXIT)
 script MirrohInterior_1F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT_D, format("These grunts aren't letting me through to Winterlily Hollow! Are you one of them too?"), format("No you're not!"))
-    msgbox(format("What are these city criminals doing all the way up here?"))
+    trainerbattle_single(TRAINER_MIRROHINT_D, format("I can't get through to Winterlily Hollow from this side. It's so frustrating!"), format("You're also frustrating!"))
+    msgbox(format("I mean why even build a tunnel then?"))
     releaseall
 }
 

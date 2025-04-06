@@ -531,13 +531,13 @@ SilversunCity_BlindOrphanage_Noibat::
 	end
 
 
-SilversunCity_BlindOrphanage_Yamper::
+SilversunCity_BlindOrphanage_Furfrou::
 # 327 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
 # 328 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	playmoncry SPECIES_YAMPER, CRY_MODE_NORMAL
+	playmoncry SPECIES_FURFROU, CRY_MODE_NORMAL
 # 329 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_Yamper_Text_0
+	msgbox SilversunCity_BlindOrphanage_Furfrou_Text_0
 # 330 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
@@ -836,9 +836,9 @@ SilversunCity_BlindOrphanage_Noibat_Text_0:
 	.string "NOIBAT looks bored...it must be waiting\n"
 	.string "for night-time!$"
 
-SilversunCity_BlindOrphanage_Yamper_Text_0:
+SilversunCity_BlindOrphanage_Furfrou_Text_0:
 # 329 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "YAMPER barks! And barks again!$"
+	.string "FURFROU barks! And barks again!$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_0:
 # 353 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
