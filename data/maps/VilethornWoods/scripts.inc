@@ -55,7 +55,7 @@ VilethornWoods_Ralts_FirstTrigger::
 # 40 "data//maps/VilethornWoods/scripts.pory"
 	waitmovement 0
 # 44 "data//maps/VilethornWoods/scripts.pory"
-	removeobject 23
+	removeobject 20
 # 45 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_HIDE_VILETHORN_RALTS_1
 # 46 "data//maps/VilethornWoods/scripts.pory"
@@ -83,17 +83,17 @@ VilethornWoods_Ralts_SecondTrigger::
 # 61 "data//maps/VilethornWoods/scripts.pory"
 	lockall
 # 62 "data//maps/VilethornWoods/scripts.pory"
-	applymovement 23, VilethornWoods_Ralts_FirstTrigger_Movement_0
+	applymovement 21, VilethornWoods_Ralts_FirstTrigger_Movement_0
 # 63 "data//maps/VilethornWoods/scripts.pory"
 	waitmovement 0
 # 64 "data//maps/VilethornWoods/scripts.pory"
 	delay 12
 # 65 "data//maps/VilethornWoods/scripts.pory"
-	applymovement 23, VilethornWoods_Ralts_FirstTrigger_Movement_1
+	applymovement 21, VilethornWoods_Ralts_FirstTrigger_Movement_1
 # 66 "data//maps/VilethornWoods/scripts.pory"
 	waitmovement 0
 # 70 "data//maps/VilethornWoods/scripts.pory"
-	removeobject 23
+	removeobject 21
 # 71 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_HIDE_VILETHORN_RALTS_2
 # 72 "data//maps/VilethornWoods/scripts.pory"
@@ -119,7 +119,7 @@ VilethornWoods_Ralts::
 # 86 "data//maps/VilethornWoods/scripts.pory"
 	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
 # 87 "data//maps/VilethornWoods/scripts.pory"
-	applymovement 23, VilethornWoods_Ralts_Movement_0
+	applymovement 22, VilethornWoods_Ralts_Movement_0
 # 88 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
 # 89 "data//maps/VilethornWoods/scripts.pory"
@@ -139,7 +139,7 @@ VilethornWoods_Ralts::
 # 98 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_RALTS_FINISHED
 # 99 "data//maps/VilethornWoods/scripts.pory"
-	removeobject 23
+	removeobject 22
 # 101 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end

@@ -5440,6 +5440,16 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RivetshoreCity/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSUN_POKEMART",
+      "name": "Silversun_Pokemart_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Silversun_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/Silversun_Pokemart/map.bin"
     }
   ]
 }

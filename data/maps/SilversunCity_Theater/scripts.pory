@@ -12,6 +12,12 @@ script SilversunCity_Theater_Leader{
     lockall
     faceplayer
 
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("GLORIA: Such art! Such expression!\p...\pGLORIA: Now be a dear and get offstage, {PLAYER}. The audience doesn't seem to be too fond of you."))
+        releaseall
+        end
+    }
+
     //dialogue
     msgbox(format("GLORIA: Hmm, so it's you. Not spectacular, but you'll do.")) 
     applymovement(8, moves(face_down))

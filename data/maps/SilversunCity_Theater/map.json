@@ -2,7 +2,7 @@
   "id": "MAP_SILVERSUN_CITY_THEATER",
   "name": "SilversunCity_Theater",
   "layout": "LAYOUT_SILVERSUN_CITY_THEATER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CONTEST_LOBBY",
   "region_map_section": "MAPSEC_SILVERSUN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

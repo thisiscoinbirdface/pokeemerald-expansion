@@ -285,6 +285,13 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_BLIND_ORPHANAGE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSUN_POKEMART",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

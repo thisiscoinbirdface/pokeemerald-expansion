@@ -1356,3 +1356,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route8/scripts.inc"
 
 	.include "data/maps/RivetshoreCity/scripts.inc"
+
+	.include "data/maps/Silversun_Pokemart/scripts.inc"
