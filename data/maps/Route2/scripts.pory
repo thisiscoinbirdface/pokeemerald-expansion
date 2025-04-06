@@ -1,4 +1,38 @@
+raw`
+    .set LOCALID_CLEFAIRY, 4
+`
+
 mapscripts Route2_MapScripts{}
 
 
+
+script Route2_Clefairy_Trigger0{
+    if (flag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)){end}
+    lockall
+
+    //camera
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    //clefairy look right and left, then go
+    applymovement(LOCALID_CLEFAIRY, moves(face_left))
+    waitmovement(0)
+    delay(36)
+    applymovement(LOCALID_CLEFAIRY, moves(face_right))
+    waitmovement(0)
+    delay(36)    
+    applymovement(LOCALID_CLEFAIRY, moves(walk_left * 2 walk_up))
+    waitmovement(0)
+    delay(12)   
+    removeobject(LOCALID_CLEFAIRY) 
+
+    setflag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)
+
+    releaseall
+    end
+
+
+}
 
