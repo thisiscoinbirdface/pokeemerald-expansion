@@ -139,14 +139,14 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(3, moves(face_down))
         waitmovement(0)
-        msgbox(format("Rue: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, the subconscious operations within the psyche of Pokemon while sleeping is our field of interest."))
+        msgbox(format("Rue: Our lab specialises in the research of Pokemon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, a Pokemon's sleeping subconscious psyche is our field of interest."))
         release
 
         applymovement(3, moves(walk_left walk_down *2 walk_right*2))
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
         waitmovement(0)
-        msgbox(format("Rue: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study the fluctuations in power and energy that Pokemon undergo while in deep sleep. The Professor built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
+        msgbox(format("Rue: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study what Pokemon undergo while in deep sleep. We built every single piece of this by hand. And something like this can't be powered using conventional energy methods."))
         release
 
         applymovement(3, moves(face_left))
@@ -179,7 +179,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         msgbox(format("Rue: Whatever you need to do!"))
         msgbox(format("DETECTIVE: We'll do our best, Rue. But we're detectives - we can uncover his tracks, but we can't unravel his mind. We'll need some help from one of you."))
         msgbox(format("Rue: What do you plan to do?"))
-        msgbox(format("DETECTIVE: A two-pronged strategy. While we track the Professor, one of you should find a dreamstone for us to examine for clues."))
+        msgbox(format("DETECTIVE: While we track the Professor, one of you should find a dreamstone for us to examine for clues."))
         msgbox(format("Rue: But none of us can leave the lab! There's too much work."))
         msgbox(format("DETECTIVE: Well...what about this kid?"))
         msgbox(format("Rue: {PLAYER}? It's too dangerous. {PLAYER}'s Pokemon aren't strong enough yet."))
@@ -197,7 +197,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
 
         msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab."))
-        msgbox(format("Rue: The dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast. Dangerous Pokemon have made the mountains, forests and seas their territory. I fear you may not be up to the task..."))
+        msgbox(format("Rue: The dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast. Dangerous Pokemon inhabit the many routes. I fear you may not be up to the task..."))
         msgbox(format("Rue: I don't know how I can help...perhaps this may be of use."))
         release   
         //Pokedex Get
@@ -232,33 +232,47 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         addobject(10)
         applymovement(10, moves(walk_fast_up * 10 face_left))
         waitmovement(0)    
+        release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)      
-        release
+        delay(16)
         msgbox(format("???: Sir, I overheard the whole thing! And I protest!"))    
         release
+        delay(16)
 
         applymovement(10, moves(face_right))
         waitmovement(0) 
         msgbox(format("???: You can't give this kid a job like that! What's your name? {PLAYER}? Pshh, whatever. Look at you! Your Pokemon look exhausted after a single trip to Fennilahl Town!"))  
+        release
+        delay(16)
 
         applymovement(10, moves(face_left))
         waitmovement(0) 
         msgbox(format("???: Screw this kid sir! Let ME handle the dreamstones!"))  
         release
+        delay(16)
         applymovement(3, moves(emote_question_mark))
         waitmovement(0)
         msgbox(format("Rue: Excuse me..."))  
-        msgbox(format("DETECTIVE: Meet KOHLA, this years ace rookie from the Detective Academy."))  
-
+        release
+        delay(16)
+        msgbox(format("DETECTIVE: Meet Kohla, this years ace rookie from the Detective Academy."))  
+        release
+        delay(16)
         applymovement(10, moves(jump_in_place_right))
         waitmovement(0) 
+        delay(16)
         msgbox(format("KOHLA: Heard that {PLAYER}? ACE. ROOKIE. This is serious business. You can't handle this. Back off!"))  
-        msgbox(format("DETECTIVE: Now hold on KOHLA, there's no need for all this. {PLAYER} is representing the Professor's lab. We need someone from the lab to help us track the dreamstones."))  
-
+        release
+        delay(16)
+        msgbox(format("DETECTIVE: Now hold on Kohla, there's no need for all this. {PLAYER} is representing the Professor's lab. We need someone from the lab to help us track the dreamstones."))  
+        release
         applymovement(10, moves(face_left))
         waitmovement(0)     
+        delay(16)
         msgbox(format("KOHLA: I can do it sir! And I'll prove it right now!")) 
+        release
+        delay(16)
         applymovement(10, moves(jump_in_place_right))
         waitmovement(0) 
         delay(16)
@@ -270,9 +284,10 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(10, moves(emote_exclamation_mark))        
         msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
         release
-
+        delay(16)
         applymovement(10, moves(face_left))
         waitmovement(0)     
+        delay(16)
         msgbox(format("KOHLA: Over and out, sir!")) 
         release
 
@@ -284,11 +299,10 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
-        msgbox(format("DETECTIVE: Well Rue, it looks like your assistant's got some guts. {PLAYER}, we're counting on you and KOHLA to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
-        msgbox(format("Rue: I know of one dreamstone somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to cross through the tunnel to the other side to reach Gastree City, and then make your way up north towards the mountain."))  
+        msgbox(format("DETECTIVE: Well Rue, it looks like your assistant's got some backbone. {PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor Tenebris. Rue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Rue: One lies somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to reach Gastree City, and then make your way up north towards the mountain."))  
         msgbox(format("DETECTIVE: {PLAYER} - you know what to do. Head east to Gastree City. From there, make your way to Mt. Ceram and find the dreamstone inside."))  
         msgbox(format("Rue: I'll let your mother know that you've been assigned some travel work. I wish you all the best."))  
-
 
         //VARS, FLAGS AND QUESTS
         setvar(VAR_LAB_STATE, 3)
