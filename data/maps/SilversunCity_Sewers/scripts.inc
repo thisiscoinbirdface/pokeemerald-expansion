@@ -334,102 +334,124 @@ SilversunCity_Sewers_Trainer_B::
 	end
 
 
+SilversunCity_Sewers_Trainer_C::
+# 258 "data//maps/SilversunCity_Sewers/scripts.pory"
+	trainerbattle_single TRAINER_SEWERS_C, SilversunCity_Sewers_Trainer_C_Text_0, SilversunCity_Sewers_Trainer_C_Text_1, SilversunCity_Sewers_Trainer_C_GiveItem
+# 259 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox SilversunCity_Sewers_Trainer_C_Text_2
+# 260 "data//maps/SilversunCity_Sewers/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_Sewers_Trainer_C_GiveItem::
+# 265 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox SilversunCity_Sewers_Trainer_C_GiveItem_Text_0
+# 266 "data//maps/SilversunCity_Sewers/scripts.pory"
+	release
+# 267 "data//maps/SilversunCity_Sewers/scripts.pory"
+	giveitem ITEM_BLUE_FLUTE
+# 268 "data//maps/SilversunCity_Sewers/scripts.pory"
+	releaseall
+	end
+
+
 SilversunCity_Sewers_Market_A::
-# 274 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 289 "data//maps/SilversunCity_Sewers/scripts.pory"
 	lock
-# 275 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 290 "data//maps/SilversunCity_Sewers/scripts.pory"
 	faceplayer
-# 276 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 291 "data//maps/SilversunCity_Sewers/scripts.pory"
 	message SilversunCity_Sewers_Market_A_Text_0
-# 277 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 292 "data//maps/SilversunCity_Sewers/scripts.pory"
 	waitmessage
-# 278 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 293 "data//maps/SilversunCity_Sewers/scripts.pory"
 	pokemart SilversunCity_Sewers_Market_A_Inventory
-# 279 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 294 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox SilversunCity_Sewers_Market_A_Text_1, MSGBOX_DEFAULT
-# 280 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 295 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 284 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 299 "data//maps/SilversunCity_Sewers/scripts.pory"
 SilversunCity_Sewers_Market_A_Inventory:
-# 285 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 300 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM16
-# 286 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 301 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM21
-# 287 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 302 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM36
-# 288 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 303 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM41
-# 289 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 304 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM46
 	.2byte ITEM_NONE
 
 SilversunCity_Sewers_Market_B::
-# 294 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 309 "data//maps/SilversunCity_Sewers/scripts.pory"
 	lock
-# 295 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 310 "data//maps/SilversunCity_Sewers/scripts.pory"
 	faceplayer
-# 296 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 311 "data//maps/SilversunCity_Sewers/scripts.pory"
 	message SilversunCity_Sewers_Market_B_Text_0
-# 297 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 312 "data//maps/SilversunCity_Sewers/scripts.pory"
 	waitmessage
-# 298 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 313 "data//maps/SilversunCity_Sewers/scripts.pory"
 	pokemart SilversunCity_Sewers_Market_B_Inventory
-# 299 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 314 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox SilversunCity_Sewers_Market_B_Text_1, MSGBOX_DEFAULT
-# 300 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 315 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 304 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 319 "data//maps/SilversunCity_Sewers/scripts.pory"
 SilversunCity_Sewers_Market_B_Inventory:
-# 305 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 320 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_ZINC
-# 306 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 321 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_CARBOS
-# 307 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 322 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_IRON
-# 308 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 323 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_CALCIUM
-# 309 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 324 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_PROTEIN
-# 310 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 325 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_HP_UP
 	.2byte ITEM_NONE
 
 SilversunCity_Sewers_Market_C::
-# 315 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 330 "data//maps/SilversunCity_Sewers/scripts.pory"
 	lock
-# 316 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 331 "data//maps/SilversunCity_Sewers/scripts.pory"
 	faceplayer
-# 317 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 332 "data//maps/SilversunCity_Sewers/scripts.pory"
 	message SilversunCity_Sewers_Market_C_Text_0
-# 318 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 333 "data//maps/SilversunCity_Sewers/scripts.pory"
 	waitmessage
-# 319 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 334 "data//maps/SilversunCity_Sewers/scripts.pory"
 	pokemart SilversunCity_Sewers_Market_C_Inventory
-# 320 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 335 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox SilversunCity_Sewers_Market_C_Text_1, MSGBOX_DEFAULT
-# 321 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 336 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 325 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 340 "data//maps/SilversunCity_Sewers/scripts.pory"
 SilversunCity_Sewers_Market_C_Inventory:
-# 326 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 341 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_BLACK_AUGURITE
-# 327 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 342 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_DUBIOUS_DISC
-# 328 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 343 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_REAPER_CLOTH
-# 329 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 344 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_LUSTER_STONE
 	.2byte ITEM_NONE
 
@@ -650,29 +672,52 @@ SilversunCity_Sewers_Trainer_B_Text_2:
 	.string "I thought the toxicity would help me\n"
 	.string "ascend.$"
 
+SilversunCity_Sewers_Trainer_C_Text_0:
+# 258 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "This place has the best acoustics, man!\n"
+	.string "Lemme show you!$"
+
+SilversunCity_Sewers_Trainer_C_Text_1:
+# 258 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Damn, my strings broke!$"
+
+SilversunCity_Sewers_Trainer_C_Text_2:
+# 259 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Man! You rock hard!$"
+
+SilversunCity_Sewers_Trainer_C_GiveItem_Text_0:
+# 265 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Hey you're a pretty rocking trainer. But\n"
+	.string "you gotta wear it on your sleeves!\l"
+	.string "You're probably not ready to rock out\l"
+	.string "on an electric guitar yet, but why don't\l"
+	.string "you take this Blue Flute? The\l"
+	.string "instrument doesn't matter, man! It's all\l"
+	.string "about the spirit.$"
+
 SilversunCity_Sewers_Market_A_Text_0:
-# 276 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 291 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Can't beat GLORIA? I'll hook you up with\n"
 	.string "the best stuff.$"
 
 SilversunCity_Sewers_Market_A_Text_1:
-# 279 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 294 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Stay a loser then!$"
 
 SilversunCity_Sewers_Market_B_Text_0:
-# 296 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 311 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Psst! Hey, you! Check out these goods\n"
 	.string "I've got!$"
 
 SilversunCity_Sewers_Market_B_Text_1:
-# 299 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 314 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Then scram!$"
 
 SilversunCity_Sewers_Market_C_Text_0:
-# 317 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 332 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "You look like you'd make good use of\n"
 	.string "this stuff!$"
 
 SilversunCity_Sewers_Market_C_Text_1:
-# 320 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 335 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Quit wasting my time!$"

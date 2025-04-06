@@ -253,6 +253,21 @@ script SilversunCity_Sewers_Trainer_B{
     releaseall
     end
 }
+//Musician
+script SilversunCity_Sewers_Trainer_C{
+    trainerbattle_single(TRAINER_SEWERS_C, format("This place has the best acoustics, man! Lemme show you!"), "Damn, my strings broke!", SilversunCity_Sewers_Trainer_C_GiveItem)
+    msgbox(format("Man! You rock hard!"))
+    releaseall
+    end
+}
+
+script SilversunCity_Sewers_Trainer_C_GiveItem{
+    msgbox(format("Hey you're a pretty rocking trainer. But you gotta wear it on your sleeves! You're probably not ready to rock out on an electric guitar yet, but why don't you take this Blue Flute? The instrument doesn't matter, man! It's all about the spirit."))
+    release
+    giveitem(ITEM_BLUE_FLUTE)
+    releaseall
+    end
+}
 
 
 
