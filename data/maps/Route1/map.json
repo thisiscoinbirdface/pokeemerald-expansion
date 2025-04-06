@@ -74,34 +74,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route1_TrainerBattle_Jose",
+      "script": "Route1_TrainerBattle_A",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 21,
-      "y": 6,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route1_TrainerBattle_C",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 31,
-      "y": 28,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_1_POTION"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
@@ -139,7 +113,33 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route1_TrainerBattle_Sana",
+      "script": "Route1_TrainerBattle_B",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 31,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_1_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 21,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route1_TrainerBattle_C",
       "flag": "0"
     }
   ],
@@ -156,30 +156,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "sign",
-      "x": 7,
-      "y": 28,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "WhiteSign_Route1_NextToCarabrue"
-    },
-    {
-      "type": "sign",
-      "x": 21,
-      "y": 22,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "WoodSign_Route1_Middle"
-    },
-    {
-      "type": "sign",
-      "x": 30,
-      "y": 3,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "WhiteSign_Route1_NextToFennilahl"
-    },
     {
       "type": "hidden_item",
       "x": 20,
@@ -203,6 +179,30 @@
       "elevation": 3,
       "item": "ITEM_RAWST_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE1_C"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 22,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WoodSign_Route1_Middle"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_Route1_NextToCarabrue"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_Route1_NextToFennilahl"
     }
   ]
 }
