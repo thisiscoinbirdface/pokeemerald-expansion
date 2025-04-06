@@ -20,8 +20,17 @@ script SilversunCity_Theater_Leader{
 
     //dialogue
     msgbox(format("GLORIA: Hmm, so it's you. Not spectacular, but you'll do.")) 
-    applymovement(8, moves(face_down))
     fadescreen(FADE_TO_BLACK)    
+    setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(8, moves(face_down))
+    delay(8)
+
+    special(SpawnCameraObject)
+    setobjectxy(OBJ_EVENT_ID_CAMERA, 5, 6)
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     fadescreen(FADE_FROM_BLACK)    
     msgbox(format("Welcome to the GLORIA SHOW! Tonight, we're doing a live performance that will sweep you off your feet!\pAUDIENCE: Woohoo! Go GLORIA!"))
     release
@@ -29,11 +38,12 @@ script SilversunCity_Theater_Leader{
     msgbox(format("GLORIA: You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
     //Move player and leader
     fadescreen(FADE_TO_BLACK)
-    setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
+
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left))
     waitmovement(0)
     fadescreen(FADE_FROM_BLACK)
+
     //Talk
     msgbox(format("GLORIA: Now, {PLAYER}, enthrall me with your danse macabre!"))
     release
@@ -41,7 +51,21 @@ script SilversunCity_Theater_Leader{
     //Battle
     trainerbattle_no_intro(TRAINER_SILVERSUNGYM_LEADER, "What a performace!")
 
-    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Woohoo!\pGLORIA: Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
+
+    //Camera, need to sort this bit properly
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 face_down))
+    waitmovement(0)
+    applymovement(8, moves(face_down))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Boo! How dare you beat GLORIA, you horrible trainer! Boo!\p{PLAYER} ducked to avoid a tomato"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(8, moves(face_left))
+    waitmovement(0)    
+    msgbox(format("GLORIA: Ahh..don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
 
     //Receive the badge
     msgbox(format("{PLAYER} received the DARK BADGE from GLORIA."))
@@ -60,6 +84,14 @@ script SilversunCity_Theater_Leader{
 
     //Bye-bye
     msgbox(format("GLORIA: It was a pleasure sharing the stage with you. May you weave and bob with elegance in the dance of life, {PLAYER}!"))   
+    release
+
+    fadescreen(FADE_TO_BLACK)
+    special(SpawnCameraObject)
+    setobjectxy(OBJ_EVENT_ID_CAMERA, 5, 6)
+    delay(16)
+    special(RemoveCameraObject)
+    fadescreen(FADE_FROM_BLACK)
     releaseall
     end
 }
