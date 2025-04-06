@@ -25,24 +25,25 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 
     //Start
     lockall
-    faceplayer
+    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
+    delay(16)
 
     //Setup intro anim
         //open door
-        opendoor(25, 26)
+        opendoor(25, 28)
         waitdooranim
 
         //kohla create
-        setobjectxyperm(LOCALID_KOHLA, 25, 26)
+        setobjectxyperm(LOCALID_KOHLA, 25, 28)
         addobject(LOCALID_KOHLA)
         delay(8)
         //kohla walk
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(slide_down))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         waitmovement(0)
         applymovement(LOCALID_KOHLA, moves(walk_down))
         waitmovement(0)
         //close door
-        closedoor(25, 26)
+        closedoor(25, 28)
         waitdooranim
 
     delay(12)
@@ -53,6 +54,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 
     //Battle
     trainerbattle_no_intro(TRAINER_GASTREE_KOHLA, msgbox(format("Not again!")))
+    playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
 
     //Lose battle
     msgbox(GastreeCity_KohlaPostBattle)
@@ -65,7 +67,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
     setflag(FLAG_GASTREE_KOHLA_BATTLE)
     removeobject(LOCALID_KOHLA)
     
-
+    fadedefaultbgm
     releaseall
 }
 
