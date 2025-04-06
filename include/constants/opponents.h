@@ -5,9 +5,9 @@
 
 //Route 1 Trainers
 #define TRAINER_NONE                          0
-#define TRAINER_ROUTE1_JOSE                   1
-#define TRAINER_ROUTE1_SANA                   2
-#define TRAINER_ROUTE1_MORTEM                 3
+#define TRAINER_ROUTE1_A                      1
+#define TRAINER_ROUTE1_B                      2
+#define TRAINER_ROUTE1_C                      3
 #define TRAINER_KOHLA_LAB                     4
 
 //Route 3 Trainers

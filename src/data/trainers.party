@@ -81,7 +81,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_ROUTE1_JOSE ===
+=== TRAINER_ROUTE1_A ===
 Name: Jose
 Class: Youngster
 Pic: Youngster
@@ -94,7 +94,7 @@ Rattata-Alola
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE1_SANA ===
+=== TRAINER_ROUTE1_B ===
 Name: Sana
 Class: Lass
 Pic: Lass
@@ -107,7 +107,7 @@ Rookidee
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROUTE1_MORTEM ===
+=== TRAINER_ROUTE1_C ===
 Name: Mortem
 Class: Bug Catcher
 Pic: Bug Catcher

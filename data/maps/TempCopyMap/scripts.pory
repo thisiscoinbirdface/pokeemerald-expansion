@@ -29,6 +29,9 @@ script Common_EventScript_MintVendingMachine{
 
 script MintVendingMachine_CheckBadge{
 
+    hidemoneybox
+    release
+
     if (flag(FLAG_BADGE05_GET)){
         goto(Mart_Mints_SixBadges)
     } else {
@@ -137,6 +140,10 @@ script Mart_Mints_SixBadges{
         "Serious Mint", "Modest Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
     goto(Mart_MintPurchaseDecision)
+
+    hidemoneybox
+    releaseall
+    end
 }
 
 

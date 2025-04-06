@@ -7,7 +7,7 @@ script Route1_EventScripts_RandomDude {
     releaseall
 }
 
-script Route1_TrainerBattle_Jose {
+script Route1_TrainerBattle_A {
 
     trainerbattle_single(TRAINER_ROUTE1_JOSE, format("I just got my first {PKMN}! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
     msgbox(format("My Rattata and I will become {PKMN} Champions one day!"))
@@ -16,7 +16,7 @@ script Route1_TrainerBattle_Jose {
 
 }
 
-script Route1_TrainerBattle_Sana {
+script Route1_TrainerBattle_B {
 
     trainerbattle_single(TRAINER_ROUTE1_SANA, format("I love FLYING-type {PKMN}. Let me show you my favourite!"), "My FLYING type {PKMN} lost!")
     msgbox(format("A good {PKMN} team needs variety, I guess."))
@@ -25,8 +25,7 @@ script Route1_TrainerBattle_Sana {
 
 }
 
-script Route1_TrainerBattle_Mortem {
-
+script Route1_TrainerBattle_C {
     trainerbattle_single(TRAINER_ROUTE1_MORTEM, format("I came from Gastree City to find cool bug-type {PKMN} here...but I found you instead!"), "Well, back to bug-hunting for me.")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
