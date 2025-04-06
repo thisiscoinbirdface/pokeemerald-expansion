@@ -64,19 +64,33 @@ script Fennilahl_Breech_QuestInProgress{
         applymovement(5, moves(face_down emote_exclamation_mark))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down emote_exclamation_mark))
         waitmovement(0)
-
-        
+        setobjectxyperm(9, 25, 15)
+        addobject(9)
+        applymovement(9, moves(walk_fast_up * 6))
+        waitmovement(0)
+        playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
+        msgbox(format("CLEFAIRY: clee!!!!"))
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        applymovement(5, moves(jump_in_place_down))
         msgbox(format("This is the CLEFAIRY? It must've been following you around because it can't let go of the rock!"))
         release
         delay(16)
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
-        msgbox(format("CLEFAIRY: clee!!!"))
-        msgbox(format("Ouch! CLEFAIRY stop! Haha! Alright alright, you come along with me then. But you're not my {PKMN} okay? I don't like battling. You'll be my hiking partner!"))        
-        msgbox(format("Thank you trainer! My name is BREECH. I'm just a simple man who loves collecting rocks. Even with CLEFAIRY by my side, I won't battle. CLEFAIRY and I are heading off to explore the mountains now. See you again soon!"))
-        release
-        applymovement(5, moves(walk_up))
+        applymovement(9, moves(jump_in_place_up * 3))
         waitmovement(0)
+        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my {PKMN} okay? I don't like battling. You'll be my hiking partner!"))        
+        release
+        faceplayer
+        delay(16)
+        msgbox(format("BREECH: Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
+        release
+
+        fadescreen(FADE_TO_BLACK)
+        removeobject(9)
         removeobject(5)
+        fadescreen(FADE_FROM_BLACK)
+
         setflag(FLAG_FENNILAHL_HIKER_BLOCK)
         removeitem(ITEM_STRANGE_ROCK)
 

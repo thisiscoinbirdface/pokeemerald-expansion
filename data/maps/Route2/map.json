@@ -71,19 +71,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
-      "x": 8,
-      "y": 24,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_FENNILAHL_CLEFAIRY_FOLLOWING"
     }
   ],
   "warp_events": [
@@ -113,42 +100,6 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Route2_Clefairy_Trigger0"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route2_Clefairy_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route2_Clefairy_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route2_Clefairy_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Route2_Clefairy_Trigger1"
     }
   ],
   "bg_events": [
