@@ -1225,7 +1225,7 @@ static void Task_Scene1_FadeIn(u8 taskId)
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_0 | DISPCNT_OBJ_1D_MAP | DISPCNT_BG_ALL_ON | DISPCNT_OBJ_ON);
     gTasks[taskId].func = Task_Scene1_WaterDrops;
     gIntroFrameCounter = 0;
-    m4aSongNumStart(MUS_CUSTOM_PURPLE_CUM);
+    m4aSongNumStart(MUS_INTRO);
     ResetSerial();
 }
 
