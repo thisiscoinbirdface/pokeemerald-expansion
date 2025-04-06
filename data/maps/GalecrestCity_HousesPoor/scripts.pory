@@ -9,7 +9,7 @@ script GalecrestCity_HousesPoor_NPC1{
     if (flag(FLAG_GALECREST_POOR_TRADEITEM)){
         msgbox(format("My wife will be so happy! Music meant a lot to her. I wish I could do things over and give her all the flutes in the world..."))
     } else {    
-        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a BLUE FLUTE? I cna't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
+        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flue? I can't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
 
         //Checkitem
         if (var(VAR_RESULT) == 1){
