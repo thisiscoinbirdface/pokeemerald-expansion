@@ -278,7 +278,7 @@
     #define VAR_HOLLOW_GYM_LAYOUT                            0x407D // Unused Var
     #define VAR_SILVERSUN_BRAILLE_BOOK                       0x407E // Unused Var
     #define VAR_SILVERSUN_ORPHANAGE_MAINQUEST                0x407F // Unused Var
-    #define VAR_ROUTE133_STATE                               0x4080 // Unused Var
+    #define VAR_FENNILAHL_CLEFAIRY_QUEST                     0x4080 // Unused Var
     #define VAR_ROUTE134_STATE                               0x4081 // Unused Var
     #define VAR_ROUTE105_STATE                               0x4064 // Unused Var
     #define VAR_ROUTE106_STATE                               0x4065 // Unused Var

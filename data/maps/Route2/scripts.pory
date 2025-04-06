@@ -30,9 +30,17 @@ script Route2_Clefairy_Trigger0{
 
     setflag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)
 
+    //camera
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     releaseall
     end
+}
 
+script Route2_Clefairy_Trigger1{
 
 }
 
