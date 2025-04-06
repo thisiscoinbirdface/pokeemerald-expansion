@@ -1,17 +1,22 @@
+# 1 "data//maps/Route2_Caves/scripts.pory"
+
+# 2 "data//maps/Route2_Caves/scripts.pory"
+    .set LOCALID_CLEFAIRY, 3
+
 Route2_Caves_MapScripts::
 	.byte 0
 
 
 Route2_Caves_EventScript_ClefairyTrigger::
-# 4 "data//maps/Route2_Caves/scripts.pory"
-	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, Route2_Caves_EventScript_ClefairyTrigger_2
-# 7 "data//maps/Route2_Caves/scripts.pory"
-	lockall
 # 8 "data//maps/Route2_Caves/scripts.pory"
-	applymovement 1, Route2_Caves_EventScript_ClefairyTrigger_Movement_0
-# 9 "data//maps/Route2_Caves/scripts.pory"
-	waitmovement 1
-# 10 "data//maps/Route2_Caves/scripts.pory"
+	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, Route2_Caves_EventScript_ClefairyTrigger_2
+# 11 "data//maps/Route2_Caves/scripts.pory"
+	lockall
+# 12 "data//maps/Route2_Caves/scripts.pory"
+	applymovement LOCALID_CLEFAIRY, Route2_Caves_EventScript_ClefairyTrigger_Movement_0
+# 13 "data//maps/Route2_Caves/scripts.pory"
+	waitmovement LOCALID_CLEFAIRY
+# 14 "data//maps/Route2_Caves/scripts.pory"
 	releaseall
 	return
 
@@ -20,68 +25,61 @@ Route2_Caves_EventScript_ClefairyTrigger_2:
 
 
 Route2_Caves_EventScript_ClefairyBattle::
-# 14 "data//maps/Route2_Caves/scripts.pory"
-	lockall
-# 15 "data//maps/Route2_Caves/scripts.pory"
-	setflag FLAG_BATTLE_NO_RUNNING_CATCHING
-# 16 "data//maps/Route2_Caves/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-# 17 "data//maps/Route2_Caves/scripts.pory"
-	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_0
 # 18 "data//maps/Route2_Caves/scripts.pory"
-	release
+	lockall
+# 19 "data//maps/Route2_Caves/scripts.pory"
+	setflag FLAG_BATTLE_NO_RUNNING_CATCHING
 # 20 "data//maps/Route2_Caves/scripts.pory"
-	setwildbattle SPECIES_CLEFAIRY, 7
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
 # 21 "data//maps/Route2_Caves/scripts.pory"
-	dowildbattle
+	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_0
 # 22 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 24 "data//maps/Route2_Caves/scripts.pory"
-	removeobject 1
+	setwildbattle SPECIES_CLEFAIRY, 7
 # 25 "data//maps/Route2_Caves/scripts.pory"
-	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_1
+	dowildbattle
 # 26 "data//maps/Route2_Caves/scripts.pory"
 	release
-# 27 "data//maps/Route2_Caves/scripts.pory"
-	giveitem ITEM_STRANGE_ROCK
 # 28 "data//maps/Route2_Caves/scripts.pory"
-	release
+	removeobject LOCALID_CLEFAIRY
 # 29 "data//maps/Route2_Caves/scripts.pory"
-	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_2
+	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_1
 # 30 "data//maps/Route2_Caves/scripts.pory"
 	release
+# 31 "data//maps/Route2_Caves/scripts.pory"
+	giveitem ITEM_STRANGE_ROCK
 # 32 "data//maps/Route2_Caves/scripts.pory"
+	release
+# 34 "data//maps/Route2_Caves/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_GEAR_GET
-# 33 "data//maps/Route2_Caves/scripts.pory"
-	clearflag FLAG_BATTLE_NO_RUNNING_CATCHING
 # 35 "data//maps/Route2_Caves/scripts.pory"
+	setvar VAR_FENNILAHL_CLEFAIRY_QUEST, 3
+# 36 "data//maps/Route2_Caves/scripts.pory"
+	clearflag FLAG_BATTLE_NO_RUNNING_CATCHING
+# 38 "data//maps/Route2_Caves/scripts.pory"
 	releaseall
 	return
 
 
-# 8 "data//maps/Route2_Caves/scripts.pory"
+# 12 "data//maps/Route2_Caves/scripts.pory"
 Route2_Caves_EventScript_ClefairyTrigger_Movement_0:
-# 8 "data//maps/Route2_Caves/scripts.pory"
+# 12 "data//maps/Route2_Caves/scripts.pory"
 	walk_up
-# 8 "data//maps/Route2_Caves/scripts.pory"
+# 12 "data//maps/Route2_Caves/scripts.pory"
 	walk_up
-# 8 "data//maps/Route2_Caves/scripts.pory"
+# 12 "data//maps/Route2_Caves/scripts.pory"
 	face_down
 	step_end
 
 Route2_Caves_EventScript_ClefairyBattle_Text_0:
-# 17 "data//maps/Route2_Caves/scripts.pory"
+# 21 "data//maps/Route2_Caves/scripts.pory"
 	.string "A wild Pokemon attacks you! It's\n"
 	.string "holding the STRANGE ROCK!$"
 
 Route2_Caves_EventScript_ClefairyBattle_Text_1:
-# 25 "data//maps/Route2_Caves/scripts.pory"
-	.string "The Clefairy dropped the STRANGE ROCK.\n"
-	.string "Looks like it was just trying to guard\l"
-	.string "its home...$"
-
-Route2_Caves_EventScript_ClefairyBattle_Text_2:
 # 29 "data//maps/Route2_Caves/scripts.pory"
-	.string "It seems like this Clefairy is attached\n"
-	.string "to the STRANGE ROCK for some\l"
-	.string "reason...its following you around.$"
+	.string "The Clefairy dropped the STRANGE ROCK.\n"
+	.string "Stealing is bad, Clefairy!\p"
+	.string "...\p"
+	.string "It looks dismayed and runs away...$"

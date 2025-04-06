@@ -58,8 +58,15 @@ script Fennilahl_Breech_StartQuest{
 script Fennilahl_Breech_QuestInProgress{
 
     if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("You brought my STRANGE ROCK? Amazing! How can I thank you for this?"))
-        msgbox(format("A CLEFAIRY was keeping it? This is the CLEFAIRY? And it's been following you around because it can't let go of the rock?"))
+        msgbox(format("You brought my STRANGE ROCK? Amazing! How can I thank you for this?\p...\pA CLEFAIRY was keeping it? Where'd it go?")) 
+        release
+        delay(16)
+        applymovement(5, moves(face_down emote_exclamation_mark))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down emote_exclamation_mark))
+        waitmovement(0)
+
+        
+        msgbox(format("This is the CLEFAIRY? It must've been following you around because it can't let go of the rock!"))
         release
         delay(16)
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)

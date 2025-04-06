@@ -8,8 +8,7 @@ mapscripts Route2_MapScripts{}
 
 //Spot the clefairy
 script Route2_Clefairy_Trigger0{
-    if (flag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)){end}
-    lockall
+    if (var(VAR_FENNILAHL_CLEFAIRY_QUEST) == 0){
 
     //camera
     special(SpawnCameraObject)
@@ -30,7 +29,7 @@ script Route2_Clefairy_Trigger0{
     removeobject(LOCALID_CLEFAIRY) 
     delay(24)
 
-    setflag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)
+    setvar(VAR_FENNILAHL_CLEFAIRY_QUEST, 1)
 
     //camera
     special(SpawnCameraObject)
@@ -40,55 +39,7 @@ script Route2_Clefairy_Trigger0{
 
     releaseall
     end
-}
-
-
-//The clefairy follows you
-script Route2_Clefairy_Trigger1{
-    if (flag(FLAG_FENNILAHL_CLEFAIRY_FOLLOWING)) {end}
-
-    if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-
-        lockall
-
-        //Set up camera
-        fadescreen(FADE_TO_BLACK)
-        special(SpawnCameraObject)
-        setobjectxy(OBJ_EVENT_ID_CAMERA, 6, 24)
-        waitmovement(0)
-        special(RemoveCameraObject)
-        fadescreen(FADE_FROM_BLACK)
-
-        delay(20)
-
-        //Clefairy
-            //appear
-            setobjectxyperm(LOCALID_CLEFAIRY_FOLLOW, 6, 24)
-            addobject(LOCALID_CLEFAIRY_FOLLOW)
-            delay(16)
-            //move
-            applymovement(LOCALID_CLEFAIRY_FOLLOW, moves(walk_down walk_right * 3 walk_up * 8))
-            waitmovement(0)
-            //disappear
-            removeobect(LOCALID_CLEFAIRY_FOLLOW)
-
-        //Deactivate camera
-        fadescreen(FADE_TO_BLACK)
-        special(SpawnCameraObject)
-        getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
-        setobjectxy(OBJ_EVENT_ID_CAMERA, VAR_TEMP_2, VAR_TEMP_3)
-        waitmovement(0)
-        special(RemoveCameraObject)
-        fadescreen(FADE_FROM_BLACK)
-
-        //Setvar
-        setflag(FLAG_FENNILAHL_CLEFAIRY_FOLLOWING)
-
-        releaseall
-        end
     } else {
         end
     }
-
 }
-
