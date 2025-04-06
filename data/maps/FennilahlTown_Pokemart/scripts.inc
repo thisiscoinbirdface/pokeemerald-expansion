@@ -88,16 +88,24 @@ FennilahlTown_Pokemart_Inventory:
 	.2byte ITEM_POTION
 # 52 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.2byte ITEM_POKE_BALL
+# 53 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_REPEL
+# 54 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_PARLYZ_HEAL
+# 55 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_ANTIDOTE
+# 56 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_NONE
 
 FennilahlTown_Pokemart_NPC::
-# 60 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 64 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	lockall
-# 61 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 65 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	faceplayer
-# 62 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 66 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	msgbox FennilahlTown_Pokemart_NPC_Text_0
-# 63 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 67 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	releaseall
 	return
 
@@ -175,7 +183,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 	.string "yourself, come talk to me.$"
 
 FennilahlTown_Pokemart_NPC_Text_0:
-# 62 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 66 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "This Pokemart doesn't sell much\n"
 	.string "because we're in a remote town. But you\l"
 	.string "can find these mint vending machines\l"

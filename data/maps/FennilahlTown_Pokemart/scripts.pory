@@ -50,6 +50,10 @@ script FennilahlTown_Pokemart_EventScript_Clerk{
 mart FennilahlTown_Pokemart_Inventory {
     ITEM_POTION
     ITEM_POKE_BALL
+    ITEM_REPEL
+    ITEM_PARLYZ_HEAL
+    ITEM_ANTIDOTE
+    ITEM_ESCAPE_ROPE
 }
 
 
