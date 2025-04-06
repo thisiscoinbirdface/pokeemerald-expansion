@@ -27,6 +27,7 @@ script Route2_Clefairy_Trigger0{
     waitmovement(0)
     delay(12)   
     removeobject(LOCALID_CLEFAIRY) 
+    delay(24)
 
     setflag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)
 

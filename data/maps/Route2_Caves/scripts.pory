@@ -1,3 +1,7 @@
+raw`
+    .set LOCALID_CLEFAIRY, 3
+`
+
 mapscripts Route2_Caves_MapScripts {}
 
 script Route2_Caves_EventScript_ClefairyTrigger{
@@ -5,8 +9,8 @@ script Route2_Caves_EventScript_ClefairyTrigger{
         end
     }
     lockall
-    applymovement(1, moves(walk_up *2 face_down))
-    waitmovement(1)
+    applymovement(LOCALID_CLEFAIRY, moves(walk_up *2 face_down))
+    waitmovement(LOCALID_CLEFAIRY)
     releaseall
 }
 
@@ -21,7 +25,7 @@ script Route2_Caves_EventScript_ClefairyBattle{
     dowildbattle
     release
 
-    removeobject(1)
+    removeobject(LOCALID_CLEFAIRY)
     msgbox(format("The Clefairy dropped the STRANGE ROCK. Looks like it was just trying to guard its home..."))    
     release
     giveitem(ITEM_STRANGE_ROCK)

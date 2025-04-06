@@ -15,19 +15,6 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
-      "x": 20,
-      "y": 19,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route2_Caves_EventScript_ClefairyBattle",
-      "flag": "FLAG_FENNILAHL_HIKER_GEAR_GET"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 27,
       "y": 35,
@@ -52,6 +39,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_2_CAVE_STARDUST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFAIRY)",
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route2_Caves_EventScript_ClefairyBattle",
+      "flag": "FLAG_FENNILAHL_HIKER_GEAR_GET"
     }
   ],
   "warp_events": [
@@ -70,7 +70,7 @@
       "dest_warp_id": "2"
     },
     {
-      "x": 3,
+      "x": 9,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_CAVES",

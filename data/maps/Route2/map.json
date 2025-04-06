@@ -70,7 +70,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_FENNILAHL_HIKER_GEAR_GET"
+      "flag": "FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING"
     }
   ],
   "warp_events": [
