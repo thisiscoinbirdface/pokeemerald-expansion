@@ -138,14 +138,13 @@ GastreeGym_Red_Text_0:
 
 GastreeGym_Red_Text_1:
 # 76 "data//maps/GastreeGym/scripts.pory"
-	.string "Welcome to the - oh, you don't look so\n"
-	.string "good. First gym? I understand. I was\l"
-	.string "there once too - and against a ROCK\l"
-	.string "type leader to boot! He had a terrifying\l"
-	.string "ONIX...but as you can see, I'm here now,\l"
-	.string "safe and sound. Against INGER, avoid\l"
-	.string "using FIRE, FLYING and BUG type {PKMN}.\l"
-	.string "Now go get 'em, champ-in-the-making!$"
+	.string "Welcome to the - oh my, you don't look\n"
+	.string "so good. First gym? I understand. But\l"
+	.string "perk up, child! If it was easy, it\l"
+	.string "wouldn't be worth anything.\p"
+	.string "Against INGER, avoid using FIRE, FLYING\n"
+	.string "and BUG type {PKMN}. Now go get 'em,\l"
+	.string "champ-in-the-making!$"
 
 GastreeGym_Text_Intro::
 # 54 "data//maps/GastreeGym/scripts.pory"

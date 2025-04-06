@@ -73,7 +73,7 @@ script GastreeGym_Red{
     if (flag(FLAG_BADGE01_GET)){
         msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
     } else { 
-        msgbox(format("Welcome to the - oh, you don't look so good. First gym? I understand. I was there once too - and against a ROCK type leader to boot! He had a terrifying ONIX...but as you can see, I'm here now, safe and sound. Against INGER, avoid using FIRE, FLYING and BUG type {PKMN}. Now go get 'em, champ-in-the-making!"))
+        msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything.\pAgainst INGER, avoid using FIRE, FLYING and BUG type {PKMN}. Now go get 'em, champ-in-the-making!"))
     }
     releaseall
     end
