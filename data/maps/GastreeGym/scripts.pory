@@ -38,7 +38,7 @@ script GastreeGym_LeaderBattle {
 
 script GastreeGym_EventScript_Victory{
     //Receive the badge
-    msgbox(format("{PLAYER} received the GYM Badge from INGER."))
+    msgbox(format("{PLAYER} received the Hard Badge from Inger."))
     release
     setflag(FLAG_BADGE01_GET)
 
@@ -46,15 +46,15 @@ script GastreeGym_EventScript_Victory{
     call(Common_EventScript_PlayGymBadgeFanfare)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format("The BADGE allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
+    msgbox(format("The Hard Badge allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
     
     //Bye-bye
-    msgbox(format("So where are you headed next?\p...\pINGER: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pINGER:...but I can't say I've heard anything about these dreamstones.\pINGER: So next is Mt. Ceram? You'll have to go north from here through Route 4. All the best, {PLAYER}!"))
+    msgbox(format("Inger: So where are you headed next?\p...\nInger: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pInger:...but I can't say I've heard anything about these dreamstones.\pInger: So next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pIn that case, you picked the wrong gym!\pI'm INGER, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokemon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: In that case, you picked the wrong gym!\pInger: I'm Inger, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokemon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
@@ -75,7 +75,7 @@ script GastreeGym_Red{
     if (flag(FLAG_BADGE01_GET)){
         msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
     } else { 
-        msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything.\pAgainst INGER, avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
+        msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything.\pAgainst Inger, avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
     }
     releaseall
     end
