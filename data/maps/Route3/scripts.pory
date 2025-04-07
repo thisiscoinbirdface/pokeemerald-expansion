@@ -2,8 +2,8 @@ mapscripts Route3_MapScripts{}
 
 script Route3_TrainerBattle_Kim {
 
-    trainerbattle_single(TRAINER_ROUTE3_KIM, format("I'm much tougher than I look. I'm from the hills after all!"), "You're from the hills too?")
-    msgbox(format("I'm tough but hungry too. Maybe I should go home and eat."))
+    trainerbattle_single(TRAINER_ROUTE3_KIM, format("Mom gifted my sister and me a cool FLYING-type Pokemon!"), "My sister will beat you!")
+    msgbox(format("My sister is up ahead, near the Gastree City exit."))
     release
     end
 
@@ -29,8 +29,8 @@ script Route3_TrainerBattle_Jana {
 
 script Route3_TrainerBattle_Chara {
 
-    trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Whew! Route 3 was long, but I can do one last battle!"), "Aw I lost!")
-    msgbox(format("My Pokemon and I are all out of energy."))
+    trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Mom gifted my sister and me a cool FLYING-type Pokemon!\p...\pYou met her and beat her?\pWell this is a revenge match then!"), "Aw I lost!")
+    msgbox(format("We love our Swablu!"))
     release
     end
 

@@ -203,7 +203,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_REPEL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_4_C"
     },
@@ -370,7 +370,7 @@
       "x": 20,
       "y": 65,
       "elevation": 0,
-      "item": "ITEM_RAWST_BERRY",
+      "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE4_A"
     },
     {

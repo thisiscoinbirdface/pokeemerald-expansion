@@ -250,13 +250,13 @@ F_TRAINER_FEMALE |
 #line 172
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 171
-            .lvl = 5,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 174
-            .species = SPECIES_ROOKIDEE,
+            .species = SPECIES_SWABLU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 176
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -293,7 +293,7 @@ F_TRAINER_FEMALE |
 #line 189
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 188
-            .lvl = 5,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -304,7 +304,7 @@ F_TRAINER_FEMALE |
 #line 193
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 192
-            .lvl = 7,
+            .lvl = 8,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -338,7 +338,7 @@ F_TRAINER_FEMALE |
 #line 206
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 205
-            .lvl = 6,
+            .lvl = 7,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -349,7 +349,7 @@ F_TRAINER_FEMALE |
 #line 210
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 209
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -472,7 +472,7 @@ F_TRAINER_FEMALE |
 #line 257
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 258
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerPic = TRAINER_PIC_LEADER_INGER,
         .encounterMusic_gender =
 #line 259
 F_TRAINER_FEMALE | 
@@ -483,7 +483,7 @@ F_TRAINER_FEMALE |
 #line 261
         .doubleBattle = FALSE,
 #line 262
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 264
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 3,
@@ -1012,7 +1012,7 @@ F_TRAINER_FEMALE |
 #line 471
         .doubleBattle = FALSE,
 #line 472
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 473
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 2,
@@ -1200,7 +1200,7 @@ F_TRAINER_FEMALE |
 #line 545
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 546
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_ARIAN,
         .encounterMusic_gender =
 #line 548
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1209,7 +1209,7 @@ F_TRAINER_FEMALE |
 #line 550
         .doubleBattle = FALSE,
 #line 551
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 552
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 3,
@@ -1917,7 +1917,7 @@ F_TRAINER_FEMALE |
 #line 832
         .doubleBattle = FALSE,
 #line 833
-        .aiFlags = AI_FLAG_SMART_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 834
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 4,
@@ -2279,7 +2279,7 @@ F_TRAINER_FEMALE |
 #line 974
         .doubleBattle = FALSE,
 #line 975
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 976
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 4,
@@ -3056,7 +3056,7 @@ F_TRAINER_FEMALE |
 #line 1287
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 1288
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_GLORIA,
         .encounterMusic_gender =
 #line 1289
 F_TRAINER_FEMALE | 
@@ -3067,7 +3067,7 @@ F_TRAINER_FEMALE |
 #line 1292
         .doubleBattle = FALSE,
 #line 1293
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 1294
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 4,
@@ -3080,7 +3080,7 @@ F_TRAINER_FEMALE |
 #line 1298
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 1297
-            .lvl = 26,
+            .lvl = 25,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -3093,7 +3093,7 @@ F_TRAINER_FEMALE |
 #line 1302
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 1301
-            .lvl = 28,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -3104,7 +3104,7 @@ F_TRAINER_FEMALE |
 #line 1306
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 1305
-            .lvl = 28,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -3113,11 +3113,11 @@ F_TRAINER_FEMALE |
             .species = SPECIES_SERPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1308
-            .heldItem = ITEM_DARK_GEM,
+            .heldItem = ITEM_GRASS_GEM,
 #line 1310
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 1309
-            .lvl = 29,
+            .lvl = 27,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -3618,7 +3618,7 @@ F_TRAINER_FEMALE |
 #line 1516
         .doubleBattle = FALSE,
 #line 1517
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -4522,7 +4522,7 @@ F_TRAINER_FEMALE |
 #line 1869
         .doubleBattle = FALSE,
 #line 1870
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 1871
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 4,
@@ -6132,7 +6132,7 @@ F_TRAINER_FEMALE |
 #line 2501
         .doubleBattle = FALSE,
 #line 2502
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
 #line 2504
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
 #line 2503

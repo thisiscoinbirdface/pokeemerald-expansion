@@ -168,17 +168,17 @@ Route3_Skarmory_Trigger_Movement_0:
 
 Route3_TrainerBattle_Kim_Text_0:
 # 5 "data//maps/Route3/scripts.pory"
-	.string "I'm much tougher than I look. I'm from\n"
-	.string "the hills after all!$"
+	.string "Mom gifted my sister and me a cool\n"
+	.string "FLYING-type Pokemon!$"
 
 Route3_TrainerBattle_Kim_Text_1:
 # 5 "data//maps/Route3/scripts.pory"
-	.string "You're from the hills too?$"
+	.string "My sister will beat you!$"
 
 Route3_TrainerBattle_Kim_Text_2:
 # 6 "data//maps/Route3/scripts.pory"
-	.string "I'm tough but hungry too. Maybe I\n"
-	.string "should go home and eat.$"
+	.string "My sister is up ahead, near the Gastree\n"
+	.string "City exit.$"
 
 Route3_TrainerBattle_Ronnie_Text_0:
 # 14 "data//maps/Route3/scripts.pory"
@@ -214,8 +214,11 @@ Route3_TrainerBattle_Jana_Text_2:
 
 Route3_TrainerBattle_Chara_Text_0:
 # 32 "data//maps/Route3/scripts.pory"
-	.string "Whew! Route 3 was long, but I can do one\n"
-	.string "last battle!$"
+	.string "Mom gifted my sister and me a cool\n"
+	.string "FLYING-type Pokemon!\p"
+	.string "...\p"
+	.string "You met her and beat her?\p"
+	.string "Well this is a revenge match then!$"
 
 Route3_TrainerBattle_Chara_Text_1:
 # 32 "data//maps/Route3/scripts.pory"
@@ -223,7 +226,7 @@ Route3_TrainerBattle_Chara_Text_1:
 
 Route3_TrainerBattle_Chara_Text_2:
 # 33 "data//maps/Route3/scripts.pory"
-	.string "My Pokemon and I are all out of energy.$"
+	.string "We love our Swablu!$"
 
 Route3_NPC1_Text_0:
 # 52 "data//maps/Route3/scripts.pory"

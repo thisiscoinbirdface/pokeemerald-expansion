@@ -168,10 +168,10 @@ Double Battle: No
 AI: Basic Trainer
 
 Sentret
-Level: 5
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Rookidee
+Swablu
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -185,11 +185,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Rattata
-Level: 5
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cubone
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_CHARA ===
@@ -202,11 +202,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Teddiursa
-Level: 6
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 8
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
@@ -259,7 +259,7 @@ Pic: Leader Inger
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Items: Potion
 Mugshot: Yellow
 
@@ -469,7 +469,7 @@ Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Riolu
@@ -548,7 +548,7 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Pink
 
 Growlithe-Hisui
@@ -830,7 +830,7 @@ Pic: Wally
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Yamper
@@ -972,7 +972,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Dottler
@@ -1290,7 +1290,7 @@ Gender: Female
 Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Absol
@@ -1514,7 +1514,7 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move | Ace Pokemon
+AI: Check Bad Move / Ace Pokemon
 
 Kirlia
 Level: 28
@@ -1867,7 +1867,7 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toxicroak
@@ -2499,7 +2499,7 @@ Pic: Beauty
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer | Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 Starting Status: Electric Terrain
 Mugshot: Yellow
 

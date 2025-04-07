@@ -47,6 +47,11 @@ EventScript_UnusedReturn:
 
 Common_EventScript_SaveGame::
 	special SaveGame
-	setvar VAR_TEMP_C, 1
 	waitstate
 	return
+
+Common_EventScript_SaveGameTrigger::
+	special SaveGame
+	waitstate
+	setvar VAR_TEMP_C, 1
+	end
