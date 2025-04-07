@@ -40,6 +40,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     setflag(FLAG_REAL_PACKAGE_GET)
     giveitem(ITEM_POKE_BALL, 5)
     giveitem(ITEM_POTION, 1)   
+    giveitem(ITEM_TOWN_MAP)
     removeobject(5)
 
     msgbox(format("Standard supplies for a research associate! Now as for the evidence bag, we'll have to hand that over to the police as quickly as possible."))

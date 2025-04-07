@@ -71,8 +71,8 @@ script Fennilahl_Breech_QuestInProgress{
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
         msgbox(format("CLEFAIRY: clee!!!!"))
         delay(16)
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-        applymovement(5, moves(jump_in_place_down))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        applymovement(5, moves(emote_exclamation_mark jump_in_place_down))
         msgbox(format("This is the CLEFAIRY? It must've been following you around because it can't let go of the rock!"))
         release
         delay(16)
@@ -81,7 +81,10 @@ script Fennilahl_Breech_QuestInProgress{
         waitmovement(0)
         msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokemon okay? I don't like battling. You'll be my hiking partner!"))        
         release
-        faceplayer
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        waitmovement(0)
+        applymovement(5, moves(face_down))
+        waitmovement(0)
         delay(16)
         msgbox(format("BREECH: Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
         release

@@ -124,7 +124,7 @@ script Route3_Underpass_EvilBattle{
     waitmovement(0)
     msgbox(format("GABRIELLE: And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
     release
-    applymovement(2, moves(walk_down * 2))
+    applymovement(2, moves(walk_down * 7))
     waitmovement(0)
     removeobject(2)
 
@@ -143,20 +143,17 @@ script Route3_Underpass_EvilBattle{
     msgbox(format("Don't worry - Clefairy's bored of that stone already. Next, we'll head to Mt. Ceram to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    applymovement(3, moves(walk_down * 2))
-    applymovement(6, moves(walk_left walk_down * 2))
-    waitmovement(0)     
-    removeobject(3)
-    applymovement(6, moves(face_up))
-    waitmovement(0)
+    applymovement(3, moves(walk_down * 7))
+    applymovement(6, moves(walk_left walk_down * 2 face_up))
+    waitmovement(6)
     delay(30)
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
     msgbox(format("Clefairy: clee!!!"))
     release
-    applymovement(6, moves(face_down))
+    applymovement(6, moves(walk_down * 4))
     waitmovement(0)
+    removeobject(3)
     removeobject(6)
-
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
     fadedefaultbgm   

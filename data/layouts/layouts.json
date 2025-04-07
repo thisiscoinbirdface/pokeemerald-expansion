@@ -4574,8 +4574,8 @@
     {
       "id": "LAYOUT_ROUTE3_UNDERPASS",
       "name": "Route3_Underpass_Layout",
-      "width": 70,
-      "height": 40,
+      "width": 90,
+      "height": 50,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/Route3_Underpass/border.bin",

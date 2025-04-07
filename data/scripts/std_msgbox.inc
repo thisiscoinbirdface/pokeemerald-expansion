@@ -54,4 +54,5 @@ Common_EventScript_SaveGameTrigger::
 	special SaveGame
 	waitstate
 	setvar VAR_TEMP_C, 1
+	release
 	end
