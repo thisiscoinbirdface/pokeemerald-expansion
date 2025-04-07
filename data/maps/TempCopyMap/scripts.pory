@@ -15,7 +15,10 @@ script Common_EventScript_NurseDemo{
 script Common_EventScript_MintVendingMachine{
 
     msgbox(format("There's a slot to swipe your TRAINER CARD. Swipe?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) {end}
+    if (var(VAR_RESULT) == 0) {
+        release
+        end
+    }
 
     checkmoney(200)
     if (var(VAR_RESULT) == 0){
@@ -64,23 +67,21 @@ script MintVendingMachine_CheckBadge{
 
 
 // lonely addy brave naughty bold -> increase attack
-script Mart_Mints_NoBadges{
-    showmoneybox(18, 0)
+script Mart_Mints_NoBadges{ 
     msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
-    
-    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+    dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_OneBadge{
-    showmoneybox(18, 0)
-    msgbox(format("TRAINER: {PLAYER}\nBADGES: 1\pAll mints are 200. Which one would you like to purchase?"))
-    
+    showmoneybox(18, 0)       
+    msgbox(format("TRAINER: {PLAYER}\nBADGES: 1\pAll mints are 200. Which one would you like to purchase?")) 
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_TwoBadges{
@@ -91,6 +92,7 @@ script Mart_Mints_TwoBadges{
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_ThreeBadges{
@@ -102,6 +104,7 @@ script Mart_Mints_ThreeBadges{
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
         "Hasty Mint", "Adamant Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_FourBadges{
@@ -114,6 +117,7 @@ script Mart_Mints_FourBadges{
         "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
         "Naive Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_FiveBadges{
@@ -126,6 +130,7 @@ script Mart_Mints_FiveBadges{
         "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
         "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_SixBadges{
@@ -139,6 +144,7 @@ script Mart_Mints_SixBadges{
         "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
         "Serious Mint", "Modest Mint")
     copyvar(VAR_0x8007, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 
     hidemoneybox
@@ -226,7 +232,6 @@ script Mart_MintPurchaseDecision{
 
 
 script MintPurchase_Impish{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_IMPISH_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -234,7 +239,6 @@ script MintPurchase_Impish{
 }
 
 script MintPurchase_Calm{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_CALM_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -242,7 +246,6 @@ script MintPurchase_Calm{
 }
 
 script MintPurchase_Relaxed{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_RELAXED_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -250,7 +253,6 @@ script MintPurchase_Relaxed{
 }
 
 script MintPurchase_Modest{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_MODEST_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -258,7 +260,6 @@ script MintPurchase_Modest{
 }
 
 script MintPurchase_Gentle{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_GENTLE_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -266,7 +267,6 @@ script MintPurchase_Gentle{
 }
 
 script MintPurchase_Careful{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_CAREFUL_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -274,7 +274,6 @@ script MintPurchase_Careful{
 }
 
 script MintPurchase_Sassy{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_SASSY_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -282,7 +281,6 @@ script MintPurchase_Sassy{
 }
 
 script MintPurchase_Naughty{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_NAUGHTY_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -290,7 +288,6 @@ script MintPurchase_Naughty{
 }
 
 script MintPurchase_Timid{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_TIMID_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -298,7 +295,6 @@ script MintPurchase_Timid{
 }
 
 script MintPurchase_Hasty{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_HASTY_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -306,7 +302,6 @@ script MintPurchase_Hasty{
 }
 
 script MintPurchase_Brave{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_BRAVE_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -314,7 +309,6 @@ script MintPurchase_Brave{
 }
 
 script MintPurchase_Bold{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_BOLD_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -322,7 +316,6 @@ script MintPurchase_Bold{
 }
 
 script MintPurchase_Adamant{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_ADAMANT_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -330,7 +323,6 @@ script MintPurchase_Adamant{
 }
 
 script MintPurchase_Mild{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_MILD_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -338,7 +330,6 @@ script MintPurchase_Mild{
 }
 
 script MintPurchase_Rash{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_MILD_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -346,7 +337,6 @@ script MintPurchase_Rash{
 }
 
 script MintPurchase_Naive{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_NAIVE_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -354,7 +344,6 @@ script MintPurchase_Naive{
 }
 
 script MintPurchase_Lax{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_LAX_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -362,7 +351,6 @@ script MintPurchase_Lax{
 }
 
 script MintPurchase_Lonely{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_LONELY_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -370,7 +358,6 @@ script MintPurchase_Lonely{
 }
 
 script MintPurchase_Quiet{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_QUIET_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -378,7 +365,6 @@ script MintPurchase_Quiet{
 }
 
 script MintPurchase_Jolly{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_JOLLY_MINT)
     goto(MintVendingMachine_CheckBadge)
@@ -386,7 +372,6 @@ script MintPurchase_Jolly{
 }
 
 script MintPurchase_Serious{
-    hidemoneybox
     removemoney(200)
     giveitem(ITEM_SERIOUS_MINT)
     goto(MintVendingMachine_CheckBadge)

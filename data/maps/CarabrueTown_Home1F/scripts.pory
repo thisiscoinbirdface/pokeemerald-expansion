@@ -99,11 +99,14 @@ script CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage{
 
 script CarabrueTown_Home1F_EventScript_MomGeneric{
     lockall
+    faceplayer
     msgbox(format("Mom: I love you! You're looking a bit tired. Why don't you rest?"))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
 	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
 	msgbox(format("Mom: Take care {PLAYER}!"))
+    release
+    applymovement(1, moves(face_right))
 	releaseall
 	end
 }

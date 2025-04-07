@@ -117,16 +117,22 @@ CarabrueTown_Home1F_EventScript_MomGeneric::
 # 101 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	lockall
 # 102 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_0
+	faceplayer
 # 103 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	release
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_0
 # 104 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
+	release
 # 105 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	incrementgamestat GAME_STAT_RESTED_AT_HOME
+	call Common_EventScript_OutOfCenterPartyHeal
 # 106 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_1
+	incrementgamestat GAME_STAT_RESTED_AT_HOME
 # 107 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_1
+# 108 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	release
+# 109 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	applymovement 1, CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0
+# 110 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	end
 
@@ -179,6 +185,12 @@ CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Movement_0:
 	walk_up
 	step_end
 
+# 109 "data//maps/CarabrueTown_Home1F/scripts.pory"
+CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0:
+# 109 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	face_right
+	step_end
+
 CarabrueTown_Home1F_EventScript_StartGame_Text_0:
 # 23 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "TV: And in the big news of the day, we\n"
@@ -228,10 +240,10 @@ CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0:
 	.string "leaving!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_0:
-# 102 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 103 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Mom: I love you! You're looking a bit\n"
 	.string "tired. Why don't you rest?$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_1:
-# 106 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 107 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Mom: Take care {PLAYER}!$"
