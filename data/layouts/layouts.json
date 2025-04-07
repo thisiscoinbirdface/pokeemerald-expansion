@@ -4646,7 +4646,7 @@
       "name": "CeramBaseCamp_Layout",
       "width": 40,
       "height": 54,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Autumn",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/CeramBaseCamp/border.bin",
       "blockdata_filepath": "data/layouts/CeramBaseCamp/map.bin"

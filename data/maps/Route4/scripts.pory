@@ -9,7 +9,7 @@ raw `
 script Route4_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("Can you believe this? They put us on these rocks. I'm a nurse for crying out loud!\p...\pSigh..."))
+    msgbox(format("Can you believe it? They stationed us on these rocks. I'm a nurse for crying out loud!\p...\pSigh..."))
     call(Common_EventScript_NurseJoyOnRoute)
     delay(30)
     releaseall
@@ -179,7 +179,7 @@ script Route4_TrainerBattle_Jenny {
         faceplayer
         playmoncry(SPECIES_DEWPIDER, CRY_MODE_NORMAL)
         delay(16)
-        msgbox(format("It's the DEWPIDER!"))
+        msgbox(format("It's the Dewpider! It snaps at you and attacks!"))
         release        
 
         setwildbattle(SPECIES_DEWPIDER, 13)
@@ -210,6 +210,7 @@ script Route4_TrainerBattle_Jenny {
 
     script Route4_Dewpider_Defeated{
         lockall
+        removeobject(LOCALID_DEWPIDER)
         applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
         waitmovement(0)
         delay(12)

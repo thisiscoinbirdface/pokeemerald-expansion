@@ -12143,63 +12143,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_BLIPBUG"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_BUNEARY"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_PETILIL"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_PETILIL"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_BLIPBUG"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_BUNEARY"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_PETILIL"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_DEWPIDER"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_DEWPIDER"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_DEWPIDER"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_CHIKORITA"
               },
               {
-                "min_level": 7,
-                "max_level": 10,
+                "min_level": 8,
+                "max_level": 11,
                 "species": "SPECIES_CHIKORITA"
               }
             ]
