@@ -349,6 +349,17 @@ const u32 gTrainerPalette_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_train
 const u32 gTrainerFrontPic_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.4bpp.lz");
 const u32 gTrainerPalette_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.gbapal.lz");
 
+//gym leaders
+const u32 gTrainerFrontPic_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.4bpp.lz");
+const u32 gTrainerPalette_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.gbapal.lz");
+
+const u32 gTrainerFrontPic_Arian[] = INCBIN_U32("graphics/trainers/my_trainers/leader_arian.4bpp.lz");
+const u32 gTrainerPalette_Arian[] = INCBIN_U32("graphics/trainers/my_trainers/leader_arian.gbapal.lz");
+
+const u32 gTrainerFrontPic_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
+const u32 gTrainerPalette_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
+
+
 
 
 // The first two parameters invoke a front pic and palette by
@@ -480,6 +491,10 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_EMPLOYEE, gTrainerFrontPic_Employee, gTrainerPalette_Employee),
     TRAINER_SPRITE(TRAINER_PIC_BUG_CATCHER_F, gTrainerFrontPic_BugCatcherF, gTrainerPalette_BugCatcherF),
     TRAINER_SPRITE(TRAINER_PIC_ELECTRICIAN, gTrainerFrontPic_Electrician, gTrainerPalette_Electrician),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_INGER, gTrainerFrontPic_Inger, gTrainerPalette_Inger),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIAN, gTrainerFrontPic_Arian, gTrainerPalette_Arian),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_GLORIA, gTrainerFrontPic_Gloria, gTrainerPalette_Gloria),
+
 
 };
 

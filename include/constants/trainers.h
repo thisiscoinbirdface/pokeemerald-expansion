@@ -127,7 +127,11 @@
 #define TRAINER_PIC_BUG_CATCHER_F         106
 #define TRAINER_PIC_ELECTRICIAN           107
 
-#define TRAINER_PIC_COUNT                 108
+#define TRAINER_PIC_LEADER_INGER          108
+#define TRAINER_PIC_LEADER_ARIAN          109
+#define TRAINER_PIC_LEADER_GLORIA         110
+
+#define TRAINER_PIC_COUNT                 111
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

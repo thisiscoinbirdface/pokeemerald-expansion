@@ -255,11 +255,11 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_GASTREEGYM_LEADER ===
 Name: Inger
 Class: Leader
-Pic: Leader Flannery
+Pic: Leader Inger
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer | Ace Pokemon
 Items: Potion
 Mugshot: Yellow
 
@@ -469,7 +469,7 @@ Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Blue
 
 Riolu
@@ -543,12 +543,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
 Name: Arian
 Class: Leader
-Pic: Leader Roxanne
+Pic: Leader Arian
 Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Pink
 
 Growlithe-Hisui
@@ -830,7 +830,7 @@ Pic: Wally
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Blue
 
 Yamper
@@ -972,7 +972,7 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Green
 
 Dottler
@@ -1285,28 +1285,28 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_SILVERSUNGYM_LEADER ===
 Name: GLORIA
 Class: Leader
-Pic: Leader Roxanne
+Pic: Leader Gloria
 Gender: Female
 Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Purple
 
 Absol
-Level: 26
+Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Umbreon @ Sitrus Berry
-Level: 28
+Level: 26
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Floragato
-Level: 28
+Level: 26
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Serperior @ Dark Gem
-Level: 29
+Serperior @ Grass Gem
+Level: 27
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 
@@ -1514,7 +1514,7 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move | Ace Pokemon
 
 Kirlia
 Level: 28
@@ -1867,7 +1867,7 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer | Ace Pokemon
 Mugshot: Purple
 
 Toxicroak
@@ -2499,7 +2499,7 @@ Pic: Beauty
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer | Ace Pokemon
 Starting Status: Electric Terrain
 Mugshot: Yellow
 

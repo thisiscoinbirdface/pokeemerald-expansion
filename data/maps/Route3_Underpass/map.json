@@ -184,7 +184,7 @@
       "x": 63,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_C",
       "var_value": "0",
       "script": "Common_EventScript_SaveGame"
     },
@@ -193,7 +193,7 @@
       "x": 64,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_C",
       "var_value": "0",
       "script": "Common_EventScript_SaveGame"
     },
@@ -202,7 +202,7 @@
       "x": 62,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_C",
       "var_value": "0",
       "script": "Common_EventScript_SaveGame"
     }
