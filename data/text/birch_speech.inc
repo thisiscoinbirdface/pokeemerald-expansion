@@ -71,7 +71,7 @@ gText_Birch_AreYouReady::
 	.string "{COLOR RED}CHARMANDER{COLOR DARK_GRAY}, {COLOR GREEN}SNIVY{COLOR DARK_GRAY}, or {COLOR BLUE}OSHAWOTT.\p"
 	.string "{COLOR DARK_GRAY}2. You are expected to be punctual.\n"
 	.string "Tardiness is not acceptable.\p"
-	.string "3. We have sent a Welcome Package.\n"
+	.string "3. We have sent a welcome package.\n"
 	.string "Please carry this with you. In case\l"	
 	.string "you have not yet received it, please\l"
 	.string "inform us as soon as possible.\p"

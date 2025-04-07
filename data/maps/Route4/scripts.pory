@@ -256,6 +256,7 @@ script Route4_NPC_B{
     lockall
     faceplayer
 
+
     if (flag(FLAG_ROUTE4_DEWPIDER_FINISHED)){
         msgbox(format("My brother's gone home now. Finally!"))
     } else {

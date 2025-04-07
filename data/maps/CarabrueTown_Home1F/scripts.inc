@@ -156,6 +156,8 @@ CarabrueTown_Home1F_EventScript_StartGame_Movement_2:
 # 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
 CarabrueTown_Home1F_EventScript_StartGame_Movement_3:
 # 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	emote_exclamation_mark
+# 42 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	jump_in_place_right
 	step_end
 
@@ -194,8 +196,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 	.string "lab too! Gosh, I'm so scared...be safe\l"
 	.string "out there! I'm sure the lab will need all\l"
 	.string "the help it can get without the\l"
-	.string "Professor around, so do your best,\l"
-	.string "okay?$"
+	.string "Professor, so do your best, okay?$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_2:
 # 44 "data//maps/CarabrueTown_Home1F/scripts.pory"
