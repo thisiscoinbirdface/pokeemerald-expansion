@@ -67,7 +67,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up Mt. Ceram!"))
-    msgbox(format("ARIAN: The name's ARIAN! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
+    msgbox(format("ARIAN: The name's Arian! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
     release
 
@@ -89,11 +89,11 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that CLEFAIRY hiker."))
+    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
-    msgbox(format("???: That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! GABRIELLE, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    msgbox(format("???: That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
