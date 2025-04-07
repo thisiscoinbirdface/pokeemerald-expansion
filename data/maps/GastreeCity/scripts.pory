@@ -1,9 +1,9 @@
 raw `
     .set LOCALID_KOHLA, 7
     .set LOCALID_SKITTYOG, 12
-    .set LOCALID_SKITTY1, 17
-    .set LOCALID_SKITTY2, 18
-    .set LOCALID_SKITTY3, 19
+    .set LOCALID_SKITTY1, 16
+    .set LOCALID_SKITTY2, 17
+    .set LOCALID_SKITTY3, 18
 `
 
 mapscripts GastreeCity_MapScripts{
@@ -87,7 +87,7 @@ text GastreeCity_KohlaPostBattle{
 script GastreeCity_NPC1{
     lockall
     faceplayer    
-    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - be careful on ROUTE 4! There's a dangerouns DEWPIDER that attacks people."))
+    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - be careful on Route 4! There's a dangerouns Dewpider that attacks people."))
     release
 }
 
@@ -116,7 +116,7 @@ script GastreeCity_NPC5{
 script GastreeCity_Mankey{
     lockall
     playmoncry(SPECIES_MANKEY, CRY_MODE_NORMAL)
-    msgbox(format("MANKEY is getting angry at his trainer's cold feet."))
+    msgbox(format("Mankey is getting angry at his trainer's cold feet."))
     releaseall
     end    
 }
@@ -133,7 +133,7 @@ script GastreeCity_NPC6{
 script GastreeCity_NPC7{
     lockall
     faceplayer    
-    msgbox(format("I want to have tea too! When I get my first {PKMN}, I want it to be SINISTEA or POLTCHAGEIST."))
+    msgbox(format("I want to have tea too! When I get my first {PKMN}, I want it to be Poltchageist."))
     applymovement(11, moves(face_up))
     waitmovement(0)
     release
@@ -246,17 +246,17 @@ script GastreeCity_NPC9{
         faceplayer    
 
         if (flag(FLAG_GASTREE_NPC_SKITTY)){
-            msgbox(format("SKITTY ran away because she got bored...maybe I should catch a PURRLOIN or MEOWTH for her to play with."))
+            msgbox(format("Skitty ran away because she got bored...maybe I should catch a Purrloin or Meowth for her to play with."))
         } else {
             if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
                 addobject(LOCALID_SKITTYOG)
-                msgbox(format("Thank you trainer - my SKITTY is back!"))
+                msgbox(format("Thank you trainer - my Skitty is back!"))
                 release
                 playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
                 msgbox(format("SKITTY: skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_CUT)
-                msgbox(format("I'm sorry! I know it's completely useless. I just don't have anything better on me.\pOh, but you do need to have at least one GYM BADGE to use it...not that you ever would, I suppose."))
+                msgbox(format("You do need to have at least one GYM BADGE to use it. Now come here Skitty!"))
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
             } else {
@@ -268,13 +268,13 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger1{
-        msgbox(format("It's the SKITTY! Come here SKITTY..."))
+        msgbox(format("It's the Skitty! Come here Skitty..."))
         release
         delay(16)
         applymovement(LOCALID_SKITTY1, moves(emote_exclamation_mark, walk_fast_down walk_fast_left * 2, walk_fast_down * 2 walk_fast_left *7))
         waitmovement(0)
         removeobject(17)
-        msgbox(format("The SKITTY ran away! Gotta chase it!"))
+        msgbox(format("The Skitty ran away! Gotta chase it!"))
 
         //set up the skittys  
         //hide skitty 1
@@ -292,13 +292,13 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger2{
-        msgbox(format("It's the SKITTY! Come here SKITTY..."))
+        msgbox(format("It's the Skitty! Come here Skitty..."))
         release
         delay(16)
         applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark, walk_fast_up walk_fast_right * 2, walk_fast_down * 7 walk_fast_down *7))
         waitmovement(0)
         removeobject(LOCALID_SKITTY2)
-        msgbox(format("The SKITTY ran away again! Argh!"))
+        msgbox(format("The Skitty ran away again! Argh!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY2)   
@@ -316,13 +316,13 @@ script GastreeCity_NPC9{
     }    
 
     script GastreeCity_EventScripts_SkittyTrigger3{
-        msgbox(format("It's the SKITTY! Okay, this time you'd better come here, SKITTY!"))
+        msgbox(format("It's the Skitty! Okay, this time you'd better come here, Skitty!"))
         release
         delay(16)
         applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark, walk_fast_up * 2 walk_fast_right * 6, walk_fast_up * 5))
         waitmovement(0)
         removeobject(LOCALID_SKITTY3)
-        msgbox(format("Phew! Finally. The SKITTY ran back to its owner!"))
+        msgbox(format("Phew! Finally. The Skitty ran back to its owner!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY3)   

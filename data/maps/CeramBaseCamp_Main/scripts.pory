@@ -26,9 +26,9 @@ mapscripts CeramBAseCamp_Main_OnWarp{
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     //Move player to the spot
-    lockall
+    lockall    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2))
     waitmovement(0)
     call(CeramBaseCamp_Main_EventScript_MainEncounter)
@@ -37,7 +37,7 @@ script CeramBaseCamp_Main_EventScript_EvilTrigger1{
 script CeramBaseCamp_Main_EventScript_EvilTrigger2{
     //Check flag
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     //Move player to the spot
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2 walk_up face_left))
@@ -48,7 +48,7 @@ script CeramBaseCamp_Main_EventScript_EvilTrigger2{
 script CeramBaseCamp_Main_EventScript_EvilTrigger3{
     //Check flag
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     //Move player to the spot    
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2 walk_up *2 face_left))
@@ -112,20 +112,22 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my {PKMN} with me."))
+    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my {PKMN} with me.\pARIAN: Serves you right! Now move over and give our shopkeeper back."))
     release
-    msgbox(format("ARIAN: Serves you right! Now move over and give our shopkeeper back."))
+    delay(16)
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
     msgbox(format("GABRIELLE: I...I'm sorry boss! I lost again."))
     release 
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
+    delay(16)    
     msgbox(format("???: You useless, incompetent fool! Argh! How can we accomplish anything with such terrible support!"))   
     release 
     applymovement(LOCALID_BOSS, moves(face_down))
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
+    delay(16)    
     msgbox(format("???: Fine, take your stupid shopkeeper back. We'll make it up the mountain anyway and there's nothing you can do to stop us!"))
     release
 
@@ -133,16 +135,19 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(walk_left walk_down *2 walk_right * 10))
     applymovement(LOCALID_GRUNT4, moves(walk_left *2 walk_down *2 walk_right * 10))
     waitmovement(0)
+    
+    fadedefaultbgm
 
     //Shopkeeper thanks both
     //ARIAN says the boss was powerful...I can't let you go alone without at least getting the badge
     applymovement(LOCALID_LEADER, moves(face_right))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)    
-    msgbox(format("ARIAN: Thanks for the help trainer! I needed it there. I could've taken them both alone, but I didn't have all my {PKMN} on me."))
+    msgbox(format("ARIAN: Thanks for the help trainer!"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     applymovement(LOCALID_LEADER, moves(face_up))
     waitmovement(0)
+    delay(16)
     msgbox(format("ARIAN: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you ARIAN! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
     release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
@@ -180,7 +185,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This supply depot is under Team Somber's control!"), format("Gah! I lost!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This Supply Depot is under Team Somber's control!"), format("Gah! I lost!"))
     msgbox(format("We're here to collect supplies for the climb up Mt. Ceram."))
     release
     end

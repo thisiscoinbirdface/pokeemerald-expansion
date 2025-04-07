@@ -44,10 +44,10 @@ script GastreeGym_EventScript_Victory{
     call(Common_EventScript_PlayGymBadgeFanfare)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
+    msgbox(format("The BADGE allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
     
     //Bye-bye
-    msgbox(format("So where are you headed next? Mt. Ceram? You'll have to go north from here through ROUTE 4. All the best, {PLAYER}!"))
+    msgbox(format("So where are you headed next?\p...\pINGER: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pINGER:...but I can't say I've heard anything about these dreamstones.\pINGER: So next is Mt. Ceram? You'll have to go north from here through Route 4. All the best, {PLAYER}!"))
     releaseall
 }
 

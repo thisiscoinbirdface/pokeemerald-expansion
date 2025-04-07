@@ -206,7 +206,7 @@
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_HEAL_PASS_EXPLAIN                                      0x4EF // Unused Flag
 
 
 // Scripts
@@ -1550,7 +1550,7 @@
 //I AM GOING TO USE THESE FLAGS ONE BY ONE
 #define FLAG_SYS_EXP_ALL                            (SYSTEM_FLAGS + 0x85) // Unused Flag
 #define FLAG_SYS_FISHING_MINIGAME                   (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_HEAL_PASS_EXPLAIN                      (SYSTEM_FLAGS + 0x87) // Unused Flag
+#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
 #define FLAG_HEAL_PASS_USED                         (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag

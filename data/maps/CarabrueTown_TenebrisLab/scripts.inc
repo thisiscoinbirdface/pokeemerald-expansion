@@ -1267,8 +1267,8 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_10:
 	.string "would have powered up the DREAMALYSER\l"
 	.string "for the first time ever, the Professor\l"
 	.string "took the dreamstone and disappeared!\l"
-	.string "Oh, why did he leave? What on earth was\l"
-	.string "he thinking!?$"
+	.string "Oh, why did she leave? What on earth was\l"
+	.string "she thinking!?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_11:
 # 163 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1308,8 +1308,8 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_16:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_17:
 # 180 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "DETECTIVE: We'll do our best, Rue. But\n"
-	.string "we're detectives - we can uncover his\l"
-	.string "tracks, but we can't unravel his mind.\l"
+	.string "we're detectives - we can uncover her\l"
+	.string "tracks, but we can't unravel her mind.\l"
 	.string "We'll need some help from one of you.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_18:

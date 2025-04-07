@@ -2,6 +2,7 @@ mapscripts Route4_MapScripts {}
 raw `
     .set LOCALID_GRUNT1, 12
     .set LOCALID_GRUNT2, 13
+    .set LOCALID_DEWPIDER, 21
 
 `
 //NURSE
@@ -120,7 +121,7 @@ script Route4_TrainerBattle_Jenny {
         trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
 
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
-            msgbox(format("Someone help the boss! The DEWPIDER is attacking him!"))
+            msgbox(format("Someone help the boss! The Dewpider is attacking him!"))
         } else {
             msgbox(format("Our secret hideout is really cool, don't you think?"))
         }       
@@ -162,7 +163,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("Aaahhh!! Help!!!!"))
             release
 
-            setobjectxyperm(22, 9, 23)
+            setobjectxyperm(LOCALID_DEWPIDER, 9, 23)
             setflag(FLAG_ROUTE4_DEWPIDER_ATTACK)
             releaseall
             end
@@ -195,7 +196,7 @@ script Route4_TrainerBattle_Jenny {
             goto(Route4_Dewpider_Defeated)            
         }            
         if (var(VAR_RESULT) == B_OUTCOME_RAN){
-            msgbox(format("The DEWPIDER snaps at you before turning around."))
+            msgbox(format("The Dewpider snaps at you before turning around."))
             release
             delay(12)
             applymovement(22, moves(face_up))
@@ -246,7 +247,7 @@ script Route4_NPC_Couple2{
 script Route4_NPC_A{
     lockall
     faceplayer
-    msgbox(format("There's a small tree up ahead blocking the path. A {PKMN} with CUT might be able to cut it down...but the city management needs to think about us civilians. We're not all trainers!"))
+    msgbox(format("I don't understand why they don't just build a bridge across to Ceram Base Camp. Sure, trainers can cross with HM SPLASH, but the city management needs to think about us civilians too. We're not all trainers!"))
     releaseall
 }
 
@@ -281,7 +282,7 @@ script Route4_NPC_Cook{
             checkitem(ITEM_RAWST_BERRY)
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_RAWST_BERRY)
-                msgbox(format("{PLAYER} gave the cook a RAWST BERRY"), MSGBOX_SIGN)
+                msgbox(format("{PLAYER} gave the chef a RAWST BERRY."), MSGBOX_SIGN)
                 msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange for the berry, I have a couple of trinkets you may like."))
             dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHELL BELL", "ADRENALINE ORB")
             if (var(VAR_RESULT) == 0){

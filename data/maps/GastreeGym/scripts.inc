@@ -119,16 +119,24 @@ GastreeGym_EventScript_Victory_Text_0:
 
 GastreeGym_EventScript_Victory_Text_1:
 # 47 "data//maps/GastreeGym/scripts.pory"
-	.string "The BADGE allows you to use HM CUT\n"
-	.string "outside of battle. Cut down all your\l"
-	.string "obstacles!$"
+	.string "The BADGE allows you to use HM SPLASH\n"
+	.string "outside of battle. Hop and skip across\l"
+	.string "all the water bodies of Cormoria!$"
 
 GastreeGym_EventScript_Victory_Text_2:
 # 50 "data//maps/GastreeGym/scripts.pory"
-	.string "So where are you headed next? Mt.\n"
-	.string "Ceram? You'll have to go north from here\l"
-	.string "through ROUTE 4. All the best,\l"
-	.string "{PLAYER}!$"
+	.string "So where are you headed next?\p"
+	.string "...\p"
+	.string "INGER: So you're investigating\n"
+	.string "Professor Tenebris' disappearance?\l"
+	.string "Good luck! She's the one who taught my\l"
+	.string "Minior the move Rollout.\p"
+	.string "...\p"
+	.string "INGER:...but I can't say I've heard\n"
+	.string "anything about these dreamstones.\p"
+	.string "INGER: So next is Mt. Ceram? You'll have\n"
+	.string "to go north from here through Route 4.\l"
+	.string "All the best, {PLAYER}!$"
 
 GastreeGym_Red_Text_0:
 # 74 "data//maps/GastreeGym/scripts.pory"

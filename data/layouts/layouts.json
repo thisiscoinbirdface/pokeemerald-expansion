@@ -4625,7 +4625,7 @@
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
       "width": 40,
-      "height": 70,
+      "height": 74,
       "primary_tileset": "gTileset_Autumn",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route4/border.bin",

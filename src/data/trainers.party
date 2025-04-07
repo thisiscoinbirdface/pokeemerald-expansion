@@ -219,7 +219,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Zorua-Hisui
-Level: 11
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_JACO === 
@@ -232,7 +232,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude-Alola
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_SKIP ===
@@ -245,11 +245,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Cubone
-Level: 8
+Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Geodude-Alola
-Level: 10
+Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GASTREEGYM_LEADER ===
@@ -260,17 +260,18 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
+Items: Potion
 
 Rockruff
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Geodude-Alola
-Level: 11
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Minior
-Level: 13
+Minior @ Oran Berry
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREE_KOHLA ===
@@ -283,11 +284,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Yamper
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Charcadet
-Level: 11
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_GRUNTS ===
@@ -300,11 +301,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Nickit
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Drowzee
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -318,12 +319,12 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 14
+Zorua-Hisui
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zorua-Hisui
-Level: 15
+Baltoy
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -337,7 +338,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Drowzee
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT2 ===
@@ -350,11 +351,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Nickit
-Level: 12
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Drowzee
-Level: 13
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
@@ -367,11 +368,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Woobat
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nickit
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_RAHA ===
@@ -384,7 +385,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Chinchou
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_CAMMY ===
@@ -397,11 +398,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_SONA ===
@@ -414,11 +415,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Buneary
-Level: 9
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Chikorita
-Level: 11
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_JENNY ===
@@ -431,7 +432,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID1 ===
@@ -444,7 +445,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 Tyrogue
-Level: 10
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID2 ===
@@ -457,7 +458,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Budew
-Level: 11
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID3 ===
@@ -470,11 +471,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Riolu
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Mime Jr.
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_A ===
@@ -487,7 +488,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Slugma
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_B ===
@@ -500,11 +501,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Rolycoly
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Fletchling
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_C ===
@@ -530,7 +531,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Magby
-Level: 14
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sizzlipede
@@ -548,15 +549,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Growlithe-Hisui
-Level: 15
+Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sizzlipede
-Level: 15
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Tauros-Paldea-Blaze
-Level: 17
+Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MTCERAM_A ===

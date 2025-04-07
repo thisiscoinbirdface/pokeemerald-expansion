@@ -20,7 +20,7 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! All Breeders specialise in one {PKMN} variety, such as dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can you guess my specialty?"), "I love foxes!")
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! All Breeders specialise in one {PKMN} variety, such as dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can you guess my specialty?"), "You guessed it - I love foxes!")
     msgbox(format("My {PKMN} are my most cherised partners!"))
     release
     end
@@ -93,7 +93,7 @@ script Route3_Skarmory_Battle{
     msgbox(format("The wild SKARMORY roars and attacks!"))
     release
 
-    setwildbattle(SPECIES_SKARMORY, 18)
+    setwildbattle(SPECIES_SKARMORY, 12)
     dowildbattle
 
     //result

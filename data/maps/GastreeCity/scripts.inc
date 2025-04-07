@@ -5,11 +5,11 @@
 # 3 "data//maps/GastreeCity/scripts.pory"
     .set LOCALID_SKITTYOG, 12
 # 4 "data//maps/GastreeCity/scripts.pory"
-    .set LOCALID_SKITTY1, 17
+    .set LOCALID_SKITTY1, 16
 # 5 "data//maps/GastreeCity/scripts.pory"
-    .set LOCALID_SKITTY2, 18
+    .set LOCALID_SKITTY2, 17
 # 6 "data//maps/GastreeCity/scripts.pory"
-    .set LOCALID_SKITTY3, 19
+    .set LOCALID_SKITTY3, 18
 
 GastreeCity_MapScripts::
 # 10 "data//maps/GastreeCity/scripts.pory"
@@ -720,8 +720,8 @@ GastreeCity_NPC1_Text_0:
 # 90 "data//maps/GastreeCity/scripts.pory"
 	.string "You came all the way from Carabrue\n"
 	.string "Town? Woah! Then I bet you don't know -\l"
-	.string "be careful on ROUTE 4! There's a\l"
-	.string "dangerouns DEWPIDER that attacks\l"
+	.string "be careful on Route 4! There's a\l"
+	.string "dangerouns Dewpider that attacks\l"
 	.string "people.$"
 
 GastreeCity_NPC3_Text_0:
@@ -745,7 +745,7 @@ GastreeCity_NPC5_Text_0:
 
 GastreeCity_Mankey_Text_0:
 # 119 "data//maps/GastreeCity/scripts.pory"
-	.string "MANKEY is getting angry at his trainer's\n"
+	.string "Mankey is getting angry at his trainer's\n"
 	.string "cold feet.$"
 
 GastreeCity_NPC6_Text_0:
@@ -758,8 +758,7 @@ GastreeCity_NPC6_Text_0:
 GastreeCity_NPC7_Text_0:
 # 136 "data//maps/GastreeCity/scripts.pory"
 	.string "I want to have tea too! When I get my\n"
-	.string "first {PKMN}, I want it to be SINISTEA or\l"
-	.string "POLTCHAGEIST.$"
+	.string "first {PKMN}, I want it to be Poltchageist.$"
 
 GastreeCity_NPC8_Text_0:
 # 146 "data//maps/GastreeCity/scripts.pory"
@@ -829,13 +828,13 @@ GastreeCity_EventScript_SkittyQuestStart_Text_2:
 
 GastreeCity_NPC2_Text_0:
 # 249 "data//maps/GastreeCity/scripts.pory"
-	.string "SKITTY ran away because she got\n"
-	.string "bored...maybe I should catch a PURRLOIN\l"
-	.string "or MEOWTH for her to play with.$"
+	.string "Skitty ran away because she got\n"
+	.string "bored...maybe I should catch a Purrloin\l"
+	.string "or Meowth for her to play with.$"
 
 GastreeCity_NPC2_Text_1:
 # 253 "data//maps/GastreeCity/scripts.pory"
-	.string "Thank you trainer - my SKITTY is back!$"
+	.string "Thank you trainer - my Skitty is back!$"
 
 GastreeCity_NPC2_Text_2:
 # 256 "data//maps/GastreeCity/scripts.pory"
@@ -847,12 +846,8 @@ GastreeCity_NPC2_Text_3:
 
 GastreeCity_NPC2_Text_4:
 # 259 "data//maps/GastreeCity/scripts.pory"
-	.string "I'm sorry! I know it's completely\n"
-	.string "useless. I just don't have anything\l"
-	.string "better on me.\p"
-	.string "Oh, but you do need to have at least one\n"
-	.string "GYM BADGE to use it...not that you ever\l"
-	.string "would, I suppose.$"
+	.string "You do need to have at least one GYM\n"
+	.string "BADGE to use it. Now come here Skitty!$"
 
 GastreeCity_NPC2_Text_5:
 # 263 "data//maps/GastreeCity/scripts.pory"
@@ -860,24 +855,24 @@ GastreeCity_NPC2_Text_5:
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_0:
 # 271 "data//maps/GastreeCity/scripts.pory"
-	.string "It's the SKITTY! Come here SKITTY...$"
+	.string "It's the Skitty! Come here Skitty...$"
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_1:
 # 277 "data//maps/GastreeCity/scripts.pory"
-	.string "The SKITTY ran away! Gotta chase it!$"
+	.string "The Skitty ran away! Gotta chase it!$"
 
 GastreeCity_EventScripts_SkittyTrigger2_Text_0:
 # 301 "data//maps/GastreeCity/scripts.pory"
-	.string "The SKITTY ran away again! Argh!$"
+	.string "The Skitty ran away again! Argh!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_0:
 # 319 "data//maps/GastreeCity/scripts.pory"
-	.string "It's the SKITTY! Okay, this time you'd\n"
-	.string "better come here, SKITTY!$"
+	.string "It's the Skitty! Okay, this time you'd\n"
+	.string "better come here, Skitty!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_1:
 # 325 "data//maps/GastreeCity/scripts.pory"
-	.string "Phew! Finally. The SKITTY ran back to\n"
+	.string "Phew! Finally. The Skitty ran back to\n"
 	.string "its owner!$"
 
 GastreeCity_NPC_Skitty_Text_0:

@@ -11769,14 +11769,14 @@ const struct Item gItemsInfo[] =
         .name = _("HM01"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with sharp blades\n"
-            "or claws."),
+            "It's just a splash.\n"
+            "It has no effect\n"
+            "whatsoever."),            
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_CUT,
+        .secondaryId = MOVE_SPLASH,
     },
 
     [ITEM_HM_FLY] =

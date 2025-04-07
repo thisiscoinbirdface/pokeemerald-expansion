@@ -111,7 +111,7 @@ Route3_Skarmory_Battle::
 # 94 "data//maps/Route3/scripts.pory"
 	release
 # 96 "data//maps/Route3/scripts.pory"
-	setwildbattle SPECIES_SKARMORY, 18
+	setwildbattle SPECIES_SKARMORY, 12
 # 97 "data//maps/Route3/scripts.pory"
 	dowildbattle
 # 100 "data//maps/Route3/scripts.pory"
@@ -204,7 +204,7 @@ Route3_TrainerBattle_Jana_Text_0:
 
 Route3_TrainerBattle_Jana_Text_1:
 # 23 "data//maps/Route3/scripts.pory"
-	.string "I love foxes!$"
+	.string "You guessed it - I love foxes!$"
 
 Route3_TrainerBattle_Jana_Text_2:
 # 24 "data//maps/Route3/scripts.pory"

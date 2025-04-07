@@ -77,7 +77,7 @@ script CeramBaseCamp_NPC4{
 
 script CeramBaseCamp_Cyndaquil_Quest_Done{
     faceplayer
-    msgbox(format("CYNDAQUIL and I do everything together!"))
+    msgbox(format("Cyndaquil and I do everything together!"))
     applymovement(4, moves(face_up))
     waitmovement(0)
     releaseall
@@ -86,7 +86,7 @@ script CeramBaseCamp_Cyndaquil_Quest_Done{
 
 script CeramBaseCamp_Cyndaquil_StartQuest{
     //Cyndaquil is training hard
-    msgbox(format("C'mon CYNDAQUIL!"))
+    msgbox(format("C'mon Cyndaquil!"))
     playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
     applymovement(9, moves(emote_exclamation_mark jump_in_place_down))
     msgbox(format("CYNDAQUIL: quiiillll!!!\pSigh, it's just not good enough..."))
@@ -94,7 +94,7 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled ARIAN and my CYNDAQUIL saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my CYNDAQUIL?."), MSGBOX_YESNO)
+    msgbox(format("We battled Arian and my Cyndaquil saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
@@ -117,15 +117,15 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         release
         delay(20)
 
-        msgbox(format("Using TM on CYNDAQUIL...\p...poof!\pCYNDAQUIL has learned SUNNY DAY!"))
+        msgbox(format("Using TM on Cyndaquil...\p...poof!\Cyndaquil has learned SUNNY DAY!"))
         release
         applymovement(4, moves(emote_exclamation_mark))    
         waitmovement(0)
-        msgbox(format("Thank you! Isn't this great, CYNDAQUIL?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
+        msgbox(format("Thank you! Isn't this great, Cyndaquil?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
         giveitem(ITEM_CHARCOAL)
         completequest(QUEST_CERAM_CYNDAQUIL)
     } else { //refuse to give TM
-        msgbox(format("Please bring the TM SUNNY DAY for CYNDAQUIL!"))
+        msgbox(format("Please bring the TM SUNNY DAY for Cyndaquil!"))
         release
     }
 
@@ -187,7 +187,7 @@ script CeramBaseCamp_Excadrill{
                 setflag(FLAG_CERAMBASECAMP_EXCADRILL)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
-                msgbox(format("The EXCADRILL retreats back into its home. Better not disturb it again!"))
+                msgbox(format("The Excadrill retreats back into its home. Better not disturb it again!"))
             }
         }
 

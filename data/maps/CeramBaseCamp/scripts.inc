@@ -377,12 +377,12 @@ CeramBaseCamp_NPC3_Text_0:
 
 CeramBaseCamp_Cyndaquil_Quest_Done_Text_0:
 # 80 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "CYNDAQUIL and I do everything\n"
+	.string "Cyndaquil and I do everything\n"
 	.string "together!$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_0:
 # 89 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "C'mon CYNDAQUIL!$"
+	.string "C'mon Cyndaquil!$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_1:
 # 92 "data//maps/CeramBaseCamp/scripts.pory"
@@ -391,13 +391,13 @@ CeramBaseCamp_Cyndaquil_StartQuest_Text_1:
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_2:
 # 97 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "We battled ARIAN and my CYNDAQUIL saw\n"
+	.string "We battled Arian and my Cyndaquil saw\n"
 	.string "the move SUNNY DAY for the first time!\l"
 	.string "Since then we've been trying to learn it\l"
 	.string "but it's just not working...say, would\l"
 	.string "you be able to help us out? Will you find\l"
 	.string "the TM SUNNY DAY and teach my\l"
-	.string "CYNDAQUIL?.$"
+	.string "Cyndaquil?$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_3:
 # 101 "data//maps/CeramBaseCamp/scripts.pory"
@@ -415,13 +415,12 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_Text_0:
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_1:
 # 120 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "Using TM on CYNDAQUIL...\p"
-	.string "...poof!\p"
-	.string "CYNDAQUIL has learned SUNNY DAY!$"
+	.string "Using TM on Cyndaquil...\p"
+	.string "...poof!\Cyndaquil has learned SUNNY DAY!$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2:
 # 124 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "Thank you! Isn't this great, CYNDAQUIL?\p"
+	.string "Thank you! Isn't this great, Cyndaquil?\p"
 	.string "CYNDAQUIL: quiii!!!\p"
 	.string "Here, you must take this. No no, I\n"
 	.string "insist.$"
@@ -429,7 +428,7 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2:
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_3:
 # 128 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Please bring the TM SUNNY DAY for\n"
-	.string "CYNDAQUIL!$"
+	.string "Cyndaquil!$"
 
 CeramBaseCamp_NPC5_Text_0:
 # 141 "data//maps/CeramBaseCamp/scripts.pory"
@@ -458,5 +457,5 @@ CeramBaseCamp_Excadrill_Text_2:
 
 CeramBaseCamp_Excadrill_Text_3:
 # 190 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "The EXCADRILL retreats back into its\n"
+	.string "The Excadrill retreats back into its\n"
 	.string "home. Better not disturb it again!$"
