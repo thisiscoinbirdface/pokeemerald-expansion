@@ -152,6 +152,8 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
 
 
 script CeramBaseCampGym_LeaderBattle {
+    call(Common_EventScript_SaveGame)
+
     lockall
     faceplayer
 

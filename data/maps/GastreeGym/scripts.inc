@@ -24,60 +24,62 @@ GastreeGym_TrainerBattle_Jaco::
 
 GastreeGym_LeaderBattle::
 # 23 "data//maps/GastreeGym/scripts.pory"
+	call Common_EventScript_SaveGame
+# 25 "data//maps/GastreeGym/scripts.pory"
 	lockall
-# 24 "data//maps/GastreeGym/scripts.pory"
-	faceplayer
 # 26 "data//maps/GastreeGym/scripts.pory"
+	faceplayer
+# 28 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_BADGE01_GET, GastreeGym_LeaderBattle_2
-# 29 "data//maps/GastreeGym/scripts.pory"
+# 31 "data//maps/GastreeGym/scripts.pory"
 	trainerbattle_single TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC
-# 30 "data//maps/GastreeGym/scripts.pory"
+# 32 "data//maps/GastreeGym/scripts.pory"
 	release
 GastreeGym_LeaderBattle_1:
-# 33 "data//maps/GastreeGym/scripts.pory"
+# 35 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	return
 
 GastreeGym_LeaderBattle_2:
-# 27 "data//maps/GastreeGym/scripts.pory"
+# 29 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_LeaderBattle_Text_0
 	goto GastreeGym_LeaderBattle_1
 
 
 GastreeGym_EventScript_Victory::
-# 39 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_EventScript_Victory_Text_0
-# 40 "data//maps/GastreeGym/scripts.pory"
-	release
 # 41 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_EventScript_Victory_Text_0
+# 42 "data//maps/GastreeGym/scripts.pory"
+	release
+# 43 "data//maps/GastreeGym/scripts.pory"
 	setflag FLAG_BADGE01_GET
-# 44 "data//maps/GastreeGym/scripts.pory"
+# 46 "data//maps/GastreeGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 47 "data//maps/GastreeGym/scripts.pory"
+# 49 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_1
-# 50 "data//maps/GastreeGym/scripts.pory"
+# 52 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_2
-# 51 "data//maps/GastreeGym/scripts.pory"
+# 53 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	return
 
 
 GastreeGym_Red::
-# 70 "data//maps/GastreeGym/scripts.pory"
+# 72 "data//maps/GastreeGym/scripts.pory"
 	lockall
-# 71 "data//maps/GastreeGym/scripts.pory"
-	faceplayer
 # 73 "data//maps/GastreeGym/scripts.pory"
+	faceplayer
+# 75 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_BADGE01_GET, GastreeGym_Red_2
-# 76 "data//maps/GastreeGym/scripts.pory"
+# 78 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_1
 GastreeGym_Red_1:
-# 78 "data//maps/GastreeGym/scripts.pory"
+# 80 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 	end
 
 GastreeGym_Red_2:
-# 74 "data//maps/GastreeGym/scripts.pory"
+# 76 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_0
 	goto GastreeGym_Red_1
 
@@ -108,23 +110,23 @@ GastreeGym_TrainerBattle_Jaco_Text_2:
 	.string "You're not half bad after all.$"
 
 GastreeGym_LeaderBattle_Text_0:
-# 27 "data//maps/GastreeGym/scripts.pory"
+# 29 "data//maps/GastreeGym/scripts.pory"
 	.string "That was a great battle, {PLAYER}! I\n"
 	.string "can't wait to see what you'll do next.$"
 
 GastreeGym_EventScript_Victory_Text_0:
-# 39 "data//maps/GastreeGym/scripts.pory"
+# 41 "data//maps/GastreeGym/scripts.pory"
 	.string "{PLAYER} received the GYM Badge from\n"
 	.string "INGER.$"
 
 GastreeGym_EventScript_Victory_Text_1:
-# 47 "data//maps/GastreeGym/scripts.pory"
+# 49 "data//maps/GastreeGym/scripts.pory"
 	.string "The BADGE allows you to use HM SPLASH\n"
 	.string "outside of battle. Hop and skip across\l"
 	.string "all the water bodies of Cormoria!$"
 
 GastreeGym_EventScript_Victory_Text_2:
-# 50 "data//maps/GastreeGym/scripts.pory"
+# 52 "data//maps/GastreeGym/scripts.pory"
 	.string "So where are you headed next?\p"
 	.string "...\p"
 	.string "INGER: So you're investigating\n"
@@ -139,13 +141,13 @@ GastreeGym_EventScript_Victory_Text_2:
 	.string "All the best, {PLAYER}!$"
 
 GastreeGym_Red_Text_0:
-# 74 "data//maps/GastreeGym/scripts.pory"
+# 76 "data//maps/GastreeGym/scripts.pory"
 	.string "Well done champ-in-the-making! Now get\n"
 	.string "on out there and find the next gym -\l"
 	.string "I'll see you there!$"
 
 GastreeGym_Red_Text_1:
-# 76 "data//maps/GastreeGym/scripts.pory"
+# 78 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the - oh my, you don't look\n"
 	.string "so good. First gym? I understand. But\l"
 	.string "perk up, child! If it was easy, it\l"
@@ -155,7 +157,7 @@ GastreeGym_Red_Text_1:
 	.string "champ-in-the-making!$"
 
 GastreeGym_Text_Intro::
-# 54 "data//maps/GastreeGym/scripts.pory"
+# 56 "data//maps/GastreeGym/scripts.pory"
 	.string "INGER: ...you look a little green. It is\n"
 	.string "nerves? First gym battle?\p"
 	.string "...\p"
@@ -169,7 +171,7 @@ GastreeGym_Text_Intro::
 	.string "strength that you bring with you!$"
 
 GastreeGym_Text_Defeated::
-# 58 "data//maps/GastreeGym/scripts.pory"
+# 60 "data//maps/GastreeGym/scripts.pory"
 	.string "Solid foundations. An instinct for\n"
 	.string "battle. And the makings of a strong\l"
 	.string "team. I humbly accept my defeat.$"

@@ -98,6 +98,15 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "MtCeramPeak_MainEvent_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_SaveGame"
     }
   ],
   "bg_events": [

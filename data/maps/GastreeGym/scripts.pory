@@ -20,6 +20,8 @@ script GastreeGym_TrainerBattle_Jaco {
 }
 
 script GastreeGym_LeaderBattle {
+    call(Common_EventScript_SaveGame)
+    
     lockall
     faceplayer
 

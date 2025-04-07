@@ -261,6 +261,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 Items: Potion
+Mugshot: Yellow
 
 Rockruff
 Level: 12
@@ -469,6 +470,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Blue
 
 Riolu
 Level: 13
@@ -547,6 +549,7 @@ Music: Aqua
 Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Pink
 
 Growlithe-Hisui
 Level: 16
@@ -828,6 +831,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Blue
 
 Yamper
 Level: 21
@@ -969,6 +973,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Green
 
 Dottler
 Level: 21
@@ -1286,6 +1291,7 @@ Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Purple
 
 Absol
 Level: 26
@@ -1862,6 +1868,7 @@ Music: Cool
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Purple
 
 Toxicroak
 Level: 32

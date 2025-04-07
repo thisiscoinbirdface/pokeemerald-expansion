@@ -178,6 +178,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Route3_Underpass_EvilBattle_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_SaveGame"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_SaveGame"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_SaveGame"
     }
   ],
   "bg_events": [

@@ -12,15 +12,24 @@ script FennilahlTown_House3_NPC1{
 script FennilahlTown_House3_NPC2{
     lockall
     faceplayer
-    msgbox(format("There are no WATER type Pokemon in these hilly areas."))
+    msgbox(format("My Rockruff's ability is OWN TEMPO! I caught it on Route 2, south of here."))
     releaseall
 }
+
+script FennilahlTown_House3_Rockruff{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_ROCKRUFF, CRY_MODE_NORMAL)
+    msgbox(format("Rockruff is living life at its own pace!"))
+    releaseall
+}
+
 
 script FennilahlTown_House3_Mawile{
     lockall
     faceplayer
     playmoncry(SPECIES_MAWILE, CRY_MODE_NORMAL)
-    msgbox(format("MAWILE is holding a weird glowing stone...I wonder what it does?"))
+    msgbox(format("Mawile is holding a weird glowing stone...I wonder what it does?"))
     releaseall
 }
 

@@ -99,6 +99,8 @@ script GalecrestCityGym_Trainer3 {
 
 //Leader
 script GalecrestCityGym_Leader {
+    call(Common_EventScript_SaveGame)
+        
     lockall
     faceplayer
     
