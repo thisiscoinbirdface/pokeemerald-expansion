@@ -101,7 +101,7 @@ script MtCeramPeak_MainEvent_Trigger{
     waitmovement(0)
     
     //bgm fadeout
-    fadeoutbgm
+    fadeoutbgm(1)
     delay(16)
     
     msgbox(format("GABRIELLE: Ugh! It's not moving!\pMOXIE: You idiot! Put some backbone in it!\p...\pGABRIELLE: Boss?\pMOXIE: What?\pGABRIELLE: ...I'm stuck. I can't move...I'm stuck to the stone!"))
