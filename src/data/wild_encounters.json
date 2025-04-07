@@ -12303,16 +12303,6 @@
               {
                 "min_level": 11,
                 "max_level": 14,
-                "species": "SPECIES_VENIPEDE"
-              },
-              {
-                "min_level": 11,
-                "max_level": 14,
-                "species": "SPECIES_MANKEY"
-              },
-              {
-                "min_level": 11,
-                "max_level": 14,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
@@ -12339,6 +12329,16 @@
                 "min_level": 11,
                 "max_level": 14,
                 "species": "SPECIES_FLETCHINDER"
+              },
+              {
+                "min_level": 11,
+                "max_level": 14,
+                "species": "SPECIES_LARVESTA"
+              },
+              {
+                "min_level": 11,
+                "max_level": 14,
+                "species": "SPECIES_LARVESTA"
               }
             ]
           }
@@ -12402,12 +12402,12 @@
               {
                 "min_level": 11,
                 "max_level": 14,
-                "species": "SPECIES_ROLYCOLY"
+                "species": "SPECIES_DIGLETT_ALOLA"
               },
               {
                 "min_level": 11,
                 "max_level": 14,
-                "species": "SPECIES_SIZZLIPEDE"
+                "species": "SPECIES_DIGLETT_ALOLA"
               }
             ]
           }
