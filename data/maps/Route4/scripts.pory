@@ -160,6 +160,8 @@ script Route4_TrainerBattle_Jenny {
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)) {end}
         if (flag(FLAG_ROUTE4_KIDGANG)) {
             lockall
+            playmoncry(SPECIES_DEWPIDER, CRY_MODE_NORMAL)
+            waitmoncry
             msgbox(format("Aaahhh!! Help!!!!"))
             release
 
@@ -180,7 +182,7 @@ script Route4_TrainerBattle_Jenny {
         msgbox(format("It's the DEWPIDER!"))
         release        
 
-        setwildbattle(SPECIES_DEWPIDER, 15)
+        setwildbattle(SPECIES_DEWPIDER, 13)
         dowildbattle
 
         //result
@@ -233,7 +235,7 @@ script Route4_NPC_Couple1{
     faceplayer
     msgbox(format("What a lovely view!\pThe lake is nice too..."))
     releaseall
-    warp(MAP_WINTERLILY_HOLLOW, 13, 20)
+    end
 }
 
 script Route4_NPC_Couple2{
