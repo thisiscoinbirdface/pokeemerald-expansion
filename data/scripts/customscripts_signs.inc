@@ -160,68 +160,62 @@ WhiteSign_Route5_Vilethorn::
 	end
 
 
-WhiteSign_Route5_Vilethorn::
-# 177 "data//scripts/customscripts_signs.pory"
-	msgbox WhiteSign_Route5_Vilethorn_Text_0, MSGBOX_SIGN
-	end
-
-
 WoodSign_SilversunCity_Artist1::
-# 183 "data//scripts/customscripts_signs.pory"
+# 179 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist1_Text_0, MSGBOX_SIGN
 	end
 
 
 WoodSign_SilversunCity_Artist2::
-# 188 "data//scripts/customscripts_signs.pory"
+# 184 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist2_Text_0, MSGBOX_SIGN
 	end
 
 
 WoodSign_SilversunCity_Artist3::
-# 193 "data//scripts/customscripts_signs.pory"
+# 189 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist3_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Main::
-# 198 "data//scripts/customscripts_signs.pory"
+# 194 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Theater::
-# 203 "data//scripts/customscripts_signs.pory"
+# 199 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Theater_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Orphanage::
-# 208 "data//scripts/customscripts_signs.pory"
+# 204 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Orphanage_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Sewers::
-# 213 "data//scripts/customscripts_signs.pory"
+# 209 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Sewers_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Gym::
-# 218 "data//scripts/customscripts_signs.pory"
+# 214 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverNorth::
-# 223 "data//scripts/customscripts_signs.pory"
+# 219 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverNorth_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverSouth::
-# 228 "data//scripts/customscripts_signs.pory"
+# 224 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverSouth_Text_0, MSGBOX_SIGN
 	end
 
@@ -373,52 +367,53 @@ WhiteSign_Route5_Vilethorn_Text_0:
 	.string "Travelers beware!$"
 
 WoodSign_SilversunCity_Artist1_Text_0:
-# 183 "data//scripts/customscripts_signs.pory"
+# 179 "data//scripts/customscripts_signs.pory"
 	.string "You are NOT to disturb the great\n"
 	.string "Arsalan!$"
 
 WoodSign_SilversunCity_Artist2_Text_0:
-# 188 "data//scripts/customscripts_signs.pory"
+# 184 "data//scripts/customscripts_signs.pory"
 	.string "Philistines keep OUT!$"
 
 WoodSign_SilversunCity_Artist3_Text_0:
-# 193 "data//scripts/customscripts_signs.pory"
+# 189 "data//scripts/customscripts_signs.pory"
 	.string "Deliveries by the door please.$"
 
 WhiteSign_SilversunCity_Main_Text_0:
-# 198 "data//scripts/customscripts_signs.pory"
+# 194 "data//scripts/customscripts_signs.pory"
 	.string "Silversun City\p"
 	.string "The metropolis of the north.$"
 
 WhiteSign_SilversunCity_Theater_Text_0:
-# 203 "data//scripts/customscripts_signs.pory"
+# 199 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Theatre\p"
-	.string "Prepare to be enthralled!\Bookings\n"
-	.string "close a day prior.$"
+	.string "Prepare to be enthralled!\n"
+	.string "Bookings close a day prior.$"
 
 WhiteSign_SilversunCity_Orphanage_Text_0:
-# 208 "data//scripts/customscripts_signs.pory"
+# 204 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Blind Orphanage\p"
 	.string "Love can be seen by all.$"
 
 WhiteSign_SilversunCity_Sewers_Text_0:
-# 213 "data//scripts/customscripts_signs.pory"
+# 209 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Sewers\p"
 	.string "Entry for authorised personnel only.$"
 
 WhiteSign_SilversunCity_Gym_Text_0:
-# 218 "data//scripts/customscripts_signs.pory"
-	.string "Silversun Gym\Leader: Gloria.$"
+# 214 "data//scripts/customscripts_signs.pory"
+	.string "Silversun Gym\n"
+	.string "Leader: Gloria.$"
 
 WhiteSign_HoyaRiverNorth_Text_0:
-# 223 "data//scripts/customscripts_signs.pory"
+# 219 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River North Crossin\n"
 	.string "No swimming in these waters!\p"
 	.string "{RIGHT_ARROW}Silversun City.\n"
 	.string "{DOWN_ARROW}Route 6.$"
 
 WhiteSign_HoyaRiverSouth_Text_0:
-# 228 "data//scripts/customscripts_signs.pory"
+# 224 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River South Crossing\n"
 	.string "No swimming in these waters!\p"
 	.string "{LEFT_ARROW}Pelluca City.\n"

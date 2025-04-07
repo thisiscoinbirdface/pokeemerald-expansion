@@ -173,10 +173,6 @@ script WhiteSign_Route5_Vilethorn{
     end
 }
 
-script WhiteSign_Route5_Vilethorn{
-    msgbox(format("{UP_ARROW}Vilethorn Woods\nTravelers beware!"), MSGBOX_SIGN)
-    end
-}
 
 
 script WoodSign_SilversunCity_Artist1{
@@ -200,7 +196,7 @@ script WhiteSign_SilversunCity_Main{
 }
 
 script WhiteSign_SilversunCity_Theater{
-    msgbox(format("Silversun Theatre\pPrepare to be enthralled!\Bookings close a day prior."), MSGBOX_SIGN)
+    msgbox(format("Silversun Theatre\pPrepare to be enthralled!\nBookings close a day prior."), MSGBOX_SIGN)
     end
 }
 
@@ -215,7 +211,7 @@ script WhiteSign_SilversunCity_Sewers{
 }
 
 script WhiteSign_SilversunCity_Gym{
-    msgbox(format("Silversun Gym\Leader: Gloria."), MSGBOX_SIGN)
+    msgbox(format("Silversun Gym\nLeader: Gloria."), MSGBOX_SIGN)
     end
 }
 

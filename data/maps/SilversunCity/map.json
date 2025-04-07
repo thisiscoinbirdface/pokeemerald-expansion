@@ -352,7 +352,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Artist1"
+      "script": "WoodSign_SilversunCity_Artist1"
     },
     {
       "type": "sign",
@@ -360,7 +360,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Artist2"
+      "script": "WoodSign_SilversunCity_Artist2"
     },
     {
       "type": "sign",
@@ -368,7 +368,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Artist3"
+      "script": "WoodSign_SilversunCity_Artist3"
     }
   ]
 }
