@@ -80,7 +80,7 @@ static const struct WindowTemplate sFieldRegionMapWindowTemplates[] =
         .tilemapTop = 17,
         .width = 12,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 14,
         .baseBlock = 1
     },
     [WIN_TITLE] = {
@@ -89,7 +89,7 @@ static const struct WindowTemplate sFieldRegionMapWindowTemplates[] =
         .tilemapTop = 1,
         .width = 7,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 14,
         .baseBlock = 25
     },
     DUMMY_WIN_TEMPLATE

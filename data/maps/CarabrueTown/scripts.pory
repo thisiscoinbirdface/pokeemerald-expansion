@@ -44,6 +44,7 @@ script CarabrueTown_Sign_ChampionHouse{
 script CarabrueTown_EventScript_NPC1{
     lockall
     faceplayer
+    giveitem(ITEM_TOWN_MAP)
     if (flag(FLAG_CARABRUE_POLICE)){
         msgbox(format("Looks like the police went away. I hope they got the evidence they needed."))
     } else {
