@@ -201,15 +201,15 @@ Route3_Underpass_EvilBattle::
 # 126 "data//maps/Route3_Underpass/scripts.pory"
 	release
 # 127 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 2, Route3_Underpass_EvilBattle_Movement_0
+	applymovement 2, Route3_Underpass_EvilBattle_Movement_11
 # 128 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
 # 129 "data//maps/Route3_Underpass/scripts.pory"
 	removeobject 2
 # 132 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Movement_11
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_12
 # 133 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 3, Route3_Underpass_EvilBattle_Movement_12
+	applymovement 3, Route3_Underpass_EvilBattle_Movement_13
 # 134 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
 # 135 "data//maps/Route3_Underpass/scripts.pory"
@@ -235,36 +235,32 @@ Route3_Underpass_EvilBattle::
 # 145 "data//maps/Route3_Underpass/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Trigger1_Movement_0
 # 146 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 3, Route3_Underpass_EvilBattle_Movement_0
+	applymovement 3, Route3_Underpass_EvilBattle_Movement_11
 # 147 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Movement_13
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_14
 # 148 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	waitmovement 6
 # 149 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject 3
-# 150 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Movement_6
-# 151 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 152 "data//maps/Route3_Underpass/scripts.pory"
 	delay 30
-# 153 "data//maps/Route3_Underpass/scripts.pory"
+# 150 "data//maps/Route3_Underpass/scripts.pory"
 	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-# 154 "data//maps/Route3_Underpass/scripts.pory"
+# 151 "data//maps/Route3_Underpass/scripts.pory"
 	msgbox Route3_Underpass_EvilBattle_Text_19
-# 155 "data//maps/Route3_Underpass/scripts.pory"
+# 152 "data//maps/Route3_Underpass/scripts.pory"
 	release
-# 156 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement 6, Route3_Underpass_EvilBattle_Trigger1_Movement_0
-# 157 "data//maps/Route3_Underpass/scripts.pory"
+# 153 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement 6, Route3_Underpass_EvilBattle_Movement_15
+# 154 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
-# 158 "data//maps/Route3_Underpass/scripts.pory"
+# 155 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject 3
+# 156 "data//maps/Route3_Underpass/scripts.pory"
 	removeobject 6
-# 161 "data//maps/Route3_Underpass/scripts.pory"
+# 158 "data//maps/Route3_Underpass/scripts.pory"
 	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
-# 162 "data//maps/Route3_Underpass/scripts.pory"
+# 159 "data//maps/Route3_Underpass/scripts.pory"
 	fadedefaultbgm
-# 163 "data//maps/Route3_Underpass/scripts.pory"
+# 160 "data//maps/Route3_Underpass/scripts.pory"
 	releaseall
 	return
 
@@ -365,14 +361,32 @@ Route3_Underpass_EvilBattle_Movement_10:
 	jump_in_place_up
 	step_end
 
-# 132 "data//maps/Route3_Underpass/scripts.pory"
+# 127 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_11:
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 127 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+	step_end
+
+# 132 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_EvilBattle_Movement_12:
 # 132 "data//maps/Route3_Underpass/scripts.pory"
 	walk_up
 	step_end
 
 # 133 "data//maps/Route3_Underpass/scripts.pory"
-Route3_Underpass_EvilBattle_Movement_12:
+Route3_Underpass_EvilBattle_Movement_13:
 # 133 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
 # 133 "data//maps/Route3_Underpass/scripts.pory"
@@ -380,12 +394,26 @@ Route3_Underpass_EvilBattle_Movement_12:
 	step_end
 
 # 147 "data//maps/Route3_Underpass/scripts.pory"
-Route3_Underpass_EvilBattle_Movement_13:
+Route3_Underpass_EvilBattle_Movement_14:
 # 147 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
 # 147 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 # 147 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 147 "data//maps/Route3_Underpass/scripts.pory"
+	face_up
+	step_end
+
+# 153 "data//maps/Route3_Underpass/scripts.pory"
+Route3_Underpass_EvilBattle_Movement_15:
+# 153 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 153 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 153 "data//maps/Route3_Underpass/scripts.pory"
+	walk_down
+# 153 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 	step_end
 
@@ -522,5 +550,5 @@ Route3_Underpass_EvilBattle_Text_18:
 	.string "Ceram to collect rare stones there!$"
 
 Route3_Underpass_EvilBattle_Text_19:
-# 154 "data//maps/Route3_Underpass/scripts.pory"
+# 151 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Clefairy: clee!!!$"

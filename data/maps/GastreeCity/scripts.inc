@@ -38,11 +38,11 @@ GastreeCity_EventScript_KohlaBattle_Trigger::
 # 29 "data//maps/GastreeCity/scripts.pory"
 	delay 16
 # 33 "data//maps/GastreeCity/scripts.pory"
-	opendoor 25, 28
+	opendoor 23, 26
 # 34 "data//maps/GastreeCity/scripts.pory"
 	waitdooranim
 # 37 "data//maps/GastreeCity/scripts.pory"
-	setobjectxyperm LOCALID_KOHLA, 25, 28
+	setobjectxyperm LOCALID_KOHLA, 23, 26
 # 38 "data//maps/GastreeCity/scripts.pory"
 	addobject LOCALID_KOHLA
 # 39 "data//maps/GastreeCity/scripts.pory"
@@ -56,7 +56,7 @@ GastreeCity_EventScript_KohlaBattle_Trigger::
 # 44 "data//maps/GastreeCity/scripts.pory"
 	waitmovement 0
 # 46 "data//maps/GastreeCity/scripts.pory"
-	closedoor 25, 28
+	closedoor 23, 26
 # 47 "data//maps/GastreeCity/scripts.pory"
 	waitdooranim
 # 49 "data//maps/GastreeCity/scripts.pory"
@@ -396,7 +396,7 @@ GastreeCity_EventScripts_SkittyTrigger1::
 
 GastreeCity_EventScripts_SkittyTrigger2::
 # 295 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_0
+	msgbox GastreeCity_EventScripts_SkittyTrigger2_Text_0
 # 296 "data//maps/GastreeCity/scripts.pory"
 	release
 # 297 "data//maps/GastreeCity/scripts.pory"
@@ -408,7 +408,7 @@ GastreeCity_EventScripts_SkittyTrigger2::
 # 300 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_SKITTY2
 # 301 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger2_Text_0
+	msgbox GastreeCity_EventScripts_SkittyTrigger2_Text_1
 # 304 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_HIDE_GASTREE_SKITTY2
 # 305 "data//maps/GastreeCity/scripts.pory"
@@ -651,19 +651,13 @@ GastreeCity_EventScripts_SkittyTrigger2_Movement_0:
 # 298 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
 # 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
+	walk_fast_right
 # 298 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 # 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
+	walk_fast_right
 # 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
-# 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
-# 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
-# 298 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_down
+	walk_fast_right
 # 298 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 # 298 "data//maps/GastreeCity/scripts.pory"
@@ -857,25 +851,29 @@ GastreeCity_NPC2_Text_5:
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_0:
 # 271 "data//maps/GastreeCity/scripts.pory"
-	.string "It's the Skitty! Come here Skitty...$"
+	.string "It's Skitty! Come here Skitty...$"
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_1:
 # 277 "data//maps/GastreeCity/scripts.pory"
-	.string "The Skitty ran away! Gotta chase it!$"
+	.string "Skitty ran away! Gotta chase it!$"
 
 GastreeCity_EventScripts_SkittyTrigger2_Text_0:
+# 295 "data//maps/GastreeCity/scripts.pory"
+	.string "It's Skitty again! Come here Skitty...$"
+
+GastreeCity_EventScripts_SkittyTrigger2_Text_1:
 # 301 "data//maps/GastreeCity/scripts.pory"
-	.string "The Skitty ran away again! Argh!$"
+	.string "Skitty ran away again!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_0:
 # 319 "data//maps/GastreeCity/scripts.pory"
-	.string "It's the Skitty! Okay, this time you'd\n"
+	.string "It's Skitty! Okay, this time you'd\n"
 	.string "better come here, Skitty!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_1:
 # 325 "data//maps/GastreeCity/scripts.pory"
-	.string "Phew! Finally. The Skitty ran back to\n"
-	.string "its owner!$"
+	.string "Phew! Finally. Looks like Skitty ran\n"
+	.string "back to its owner!$"
 
 GastreeCity_NPC_Skitty_Text_0:
 # 349 "data//maps/GastreeCity/scripts.pory"

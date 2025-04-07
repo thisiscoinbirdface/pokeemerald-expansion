@@ -494,7 +494,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_ROCKRUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 268
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 267
             .lvl = 12,
             .nature = NATURE_HARDY,
@@ -505,9 +505,9 @@ F_TRAINER_FEMALE |
             .species = SPECIES_GEODUDE_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 272
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 271
-            .lvl = 13,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -518,9 +518,9 @@ F_TRAINER_FEMALE |
 #line 274
             .heldItem = ITEM_ORAN_BERRY,
 #line 276
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
 #line 275
-            .lvl = 14,
+            .lvl = 13,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

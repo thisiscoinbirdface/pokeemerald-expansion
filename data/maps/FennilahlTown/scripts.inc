@@ -88,10 +88,10 @@ Fennilahl_Breech_StartQuest_2:
 Fennilahl_Breech_QuestInProgress::
 # 60 "data//maps/FennilahlTown/scripts.pory"
 	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, Fennilahl_Breech_QuestInProgress_2
-# 100 "data//maps/FennilahlTown/scripts.pory"
+# 103 "data//maps/FennilahlTown/scripts.pory"
 	msgbox Fennilahl_Breech_QuestInProgress_Text_5
 Fennilahl_Breech_QuestInProgress_1:
-# 102 "data//maps/FennilahlTown/scripts.pory"
+# 105 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
@@ -143,293 +143,299 @@ Fennilahl_Breech_QuestInProgress_2:
 # 83 "data//maps/FennilahlTown/scripts.pory"
 	release
 # 84 "data//maps/FennilahlTown/scripts.pory"
-	faceplayer
+	applymovement OBJ_EVENT_ID_PLAYER, Fennilahl_Breech_QuestInProgress_Movement_5
 # 85 "data//maps/FennilahlTown/scripts.pory"
-	delay 16
+	waitmovement 0
 # 86 "data//maps/FennilahlTown/scripts.pory"
-	msgbox Fennilahl_Breech_QuestInProgress_Text_4
+	applymovement 5, Fennilahl_Breech_QuestInProgress_Movement_6
 # 87 "data//maps/FennilahlTown/scripts.pory"
-	release
+	waitmovement 0
+# 88 "data//maps/FennilahlTown/scripts.pory"
+	delay 16
 # 89 "data//maps/FennilahlTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	msgbox Fennilahl_Breech_QuestInProgress_Text_4
 # 90 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 9
-# 91 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 5
+	release
 # 92 "data//maps/FennilahlTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
+# 93 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 9
 # 94 "data//maps/FennilahlTown/scripts.pory"
-	setflag FLAG_FENNILAHL_HIKER_BLOCK
+	removeobject 5
 # 95 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_STRANGE_ROCK
+	fadescreen FADE_FROM_BLACK
+# 97 "data//maps/FennilahlTown/scripts.pory"
+	setflag FLAG_FENNILAHL_HIKER_BLOCK
 # 98 "data//maps/FennilahlTown/scripts.pory"
+	removeitem ITEM_STRANGE_ROCK
+# 101 "data//maps/FennilahlTown/scripts.pory"
 	completequest QUEST_FENNILAHL_HIKER
 	goto Fennilahl_Breech_QuestInProgress_1
 
 
 FennilahlTown_Budew::
-# 123 "data//maps/FennilahlTown/scripts.pory"
+# 126 "data//maps/FennilahlTown/scripts.pory"
 	lockall
-# 125 "data//maps/FennilahlTown/scripts.pory"
+# 128 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_FENNILAHL_BUDEW, 2
 	goto_if_eq FennilahlTown_Budew_2
 FennilahlTown_Budew_1:
-# 129 "data//maps/FennilahlTown/scripts.pory"
+# 132 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_FENNILAHL_BUDEW, 1
 	goto_if_eq FennilahlTown_Budew_5
 FennilahlTown_Budew_4:
-# 133 "data//maps/FennilahlTown/scripts.pory"
+# 136 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_FENNILAHL_BUDEW, 0
 	goto_if_eq FennilahlTown_Budew_8
 FennilahlTown_Budew_7:
-# 138 "data//maps/FennilahlTown/scripts.pory"
+# 141 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_2:
-# 126 "data//maps/FennilahlTown/scripts.pory"
+# 129 "data//maps/FennilahlTown/scripts.pory"
 	goto FennilahlTown_Budew_ThirdBerry
 	goto FennilahlTown_Budew_1
 
 FennilahlTown_Budew_5:
-# 130 "data//maps/FennilahlTown/scripts.pory"
+# 133 "data//maps/FennilahlTown/scripts.pory"
 	goto FennilahlTown_Budew_SecondBerry
 	goto FennilahlTown_Budew_4
 
 FennilahlTown_Budew_8:
-# 134 "data//maps/FennilahlTown/scripts.pory"
+# 137 "data//maps/FennilahlTown/scripts.pory"
 	goto FennilahlTown_Budew_FirstBerry
 	goto FennilahlTown_Budew_7
 
 
 FennilahlTown_Budew_FirstBerry::
-# 144 "data//maps/FennilahlTown/scripts.pory"
-	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
-# 145 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, Fennilahl_Breech_QuestInProgress_Movement_4
-# 146 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 147 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_FirstBerry_Text_0
+	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
 # 148 "data//maps/FennilahlTown/scripts.pory"
-	release
+	applymovement 8, Fennilahl_Breech_QuestInProgress_Movement_4
+# 149 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 150 "data//maps/FennilahlTown/scripts.pory"
-	checkitem ITEM_ORAN_BERRY
+	msgbox FennilahlTown_Budew_FirstBerry_Text_0
 # 151 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 153 "data//maps/FennilahlTown/scripts.pory"
+	checkitem ITEM_ORAN_BERRY
+# 154 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_FirstBerry_2
-# 172 "data//maps/FennilahlTown/scripts.pory"
+# 175 "data//maps/FennilahlTown/scripts.pory"
 	release
 FennilahlTown_Budew_FirstBerry_1:
-# 175 "data//maps/FennilahlTown/scripts.pory"
+# 178 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_FirstBerry_2:
-# 152 "data//maps/FennilahlTown/scripts.pory"
+# 155 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_FirstBerry_Text_1, MSGBOX_YESNO
-# 153 "data//maps/FennilahlTown/scripts.pory"
+# 156 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_FirstBerry_5
-# 168 "data//maps/FennilahlTown/scripts.pory"
+# 171 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_FirstBerry_Text_4
-# 169 "data//maps/FennilahlTown/scripts.pory"
+# 172 "data//maps/FennilahlTown/scripts.pory"
 	release
 	goto FennilahlTown_Budew_FirstBerry_1
 
 FennilahlTown_Budew_FirstBerry_5:
-# 154 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_ORAN_BERRY
-# 155 "data//maps/FennilahlTown/scripts.pory"
-	faceplayer
-# 156 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 157 "data//maps/FennilahlTown/scripts.pory"
-	delay 12
+	removeitem ITEM_ORAN_BERRY
 # 158 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_FirstBerry_Text_2, MSGBOX_SIGN
+	faceplayer
 # 159 "data//maps/FennilahlTown/scripts.pory"
-	release
-# 160 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_FirstBerry_Movement_0
-# 161 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
+# 160 "data//maps/FennilahlTown/scripts.pory"
+	delay 12
+# 161 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_FirstBerry_Text_2, MSGBOX_SIGN
 # 162 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_FirstBerry_Text_3
-# 163 "data//maps/FennilahlTown/scripts.pory"
 	release
+# 163 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 8, FennilahlTown_Budew_FirstBerry_Movement_0
+# 164 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 165 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_FirstBerry_Text_3
+# 166 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 168 "data//maps/FennilahlTown/scripts.pory"
 	setvar VAR_FENNILAHL_BUDEW, 1
 	goto FennilahlTown_Budew_FirstBerry_1
 
 
 FennilahlTown_Budew_SecondBerry::
-# 181 "data//maps/FennilahlTown/scripts.pory"
-	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
-# 182 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_SecondBerry_Movement_0
-# 183 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 184 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_SecondBerry_Text_0
+	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
 # 185 "data//maps/FennilahlTown/scripts.pory"
-	release
+	applymovement 8, FennilahlTown_Budew_SecondBerry_Movement_0
+# 186 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 187 "data//maps/FennilahlTown/scripts.pory"
-	checkitem ITEM_PECHA_BERRY
+	msgbox FennilahlTown_Budew_SecondBerry_Text_0
 # 188 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 190 "data//maps/FennilahlTown/scripts.pory"
+	checkitem ITEM_PECHA_BERRY
+# 191 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_SecondBerry_2
-# 209 "data//maps/FennilahlTown/scripts.pory"
+# 212 "data//maps/FennilahlTown/scripts.pory"
 	release
 FennilahlTown_Budew_SecondBerry_1:
-# 212 "data//maps/FennilahlTown/scripts.pory"
+# 215 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_SecondBerry_2:
-# 189 "data//maps/FennilahlTown/scripts.pory"
+# 192 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_SecondBerry_Text_1, MSGBOX_YESNO
-# 190 "data//maps/FennilahlTown/scripts.pory"
+# 193 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_SecondBerry_5
-# 205 "data//maps/FennilahlTown/scripts.pory"
+# 208 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_FirstBerry_Text_4
-# 206 "data//maps/FennilahlTown/scripts.pory"
+# 209 "data//maps/FennilahlTown/scripts.pory"
 	release
 	goto FennilahlTown_Budew_SecondBerry_1
 
 FennilahlTown_Budew_SecondBerry_5:
-# 191 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_PECHA_BERRY
-# 192 "data//maps/FennilahlTown/scripts.pory"
-	faceplayer
-# 193 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 194 "data//maps/FennilahlTown/scripts.pory"
-	delay 12
+	removeitem ITEM_PECHA_BERRY
 # 195 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_SecondBerry_Text_2, MSGBOX_SIGN
+	faceplayer
 # 196 "data//maps/FennilahlTown/scripts.pory"
-	release
-# 197 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_SecondBerry_Movement_1
-# 198 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
+# 197 "data//maps/FennilahlTown/scripts.pory"
+	delay 12
+# 198 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_SecondBerry_Text_2, MSGBOX_SIGN
 # 199 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_FirstBerry_Text_3
-# 200 "data//maps/FennilahlTown/scripts.pory"
 	release
+# 200 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 8, FennilahlTown_Budew_SecondBerry_Movement_1
+# 201 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 202 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_FirstBerry_Text_3
+# 203 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 205 "data//maps/FennilahlTown/scripts.pory"
 	setvar VAR_FENNILAHL_BUDEW, 2
 	goto FennilahlTown_Budew_SecondBerry_1
 
 
 FennilahlTown_Budew_ThirdBerry::
-# 218 "data//maps/FennilahlTown/scripts.pory"
-	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
-# 219 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_ThirdBerry_Movement_0
-# 220 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 221 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_ThirdBerry_Text_0
+	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
 # 222 "data//maps/FennilahlTown/scripts.pory"
-	release
+	applymovement 8, FennilahlTown_Budew_ThirdBerry_Movement_0
+# 223 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 224 "data//maps/FennilahlTown/scripts.pory"
-	checkitem ITEM_RAWST_BERRY
+	msgbox FennilahlTown_Budew_ThirdBerry_Text_0
 # 225 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 227 "data//maps/FennilahlTown/scripts.pory"
+	checkitem ITEM_RAWST_BERRY
+# 228 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_ThirdBerry_2
-# 248 "data//maps/FennilahlTown/scripts.pory"
+# 251 "data//maps/FennilahlTown/scripts.pory"
 	release
 FennilahlTown_Budew_ThirdBerry_1:
-# 251 "data//maps/FennilahlTown/scripts.pory"
+# 254 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_ThirdBerry_2:
-# 226 "data//maps/FennilahlTown/scripts.pory"
+# 229 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_ThirdBerry_Text_1, MSGBOX_YESNO
-# 227 "data//maps/FennilahlTown/scripts.pory"
+# 230 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_ThirdBerry_5
-# 244 "data//maps/FennilahlTown/scripts.pory"
+# 247 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_FirstBerry_Text_4
-# 245 "data//maps/FennilahlTown/scripts.pory"
+# 248 "data//maps/FennilahlTown/scripts.pory"
 	release
 	goto FennilahlTown_Budew_ThirdBerry_1
 
 FennilahlTown_Budew_ThirdBerry_5:
-# 228 "data//maps/FennilahlTown/scripts.pory"
-	removeitem ITEM_RAWST_BERRY
-# 229 "data//maps/FennilahlTown/scripts.pory"
-	faceplayer
-# 230 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
 # 231 "data//maps/FennilahlTown/scripts.pory"
-	delay 12
+	removeitem ITEM_RAWST_BERRY
 # 232 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_ThirdBerry_Text_2, MSGBOX_SIGN
+	faceplayer
 # 233 "data//maps/FennilahlTown/scripts.pory"
-	release
-# 234 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, Fennilahl_Breech_QuestInProgress_Movement_3
-# 235 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
+# 234 "data//maps/FennilahlTown/scripts.pory"
+	delay 12
+# 235 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_ThirdBerry_Text_2, MSGBOX_SIGN
 # 236 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_FirstBerry_Text_3
-# 237 "data//maps/FennilahlTown/scripts.pory"
 	release
+# 237 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 8, FennilahlTown_Budew_ThirdBerry_Movement_1
+# 238 "data//maps/FennilahlTown/scripts.pory"
+	waitmovement 0
 # 239 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_FirstBerry_Text_3
+# 240 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 242 "data//maps/FennilahlTown/scripts.pory"
 	setvar VAR_FENNILAHL_BUDEW, 3
-# 241 "data//maps/FennilahlTown/scripts.pory"
+# 244 "data//maps/FennilahlTown/scripts.pory"
 	goto FennilahlTown_Budew_JoinParty
 	goto FennilahlTown_Budew_ThirdBerry_1
 
 
 FennilahlTown_Budew_JoinParty::
-# 256 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_JoinParty_Movement_0
-# 257 "data//maps/FennilahlTown/scripts.pory"
-	waitmovement 0
-# 258 "data//maps/FennilahlTown/scripts.pory"
-	delay 16
 # 259 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_JoinParty_Text_0
+	applymovement 8, FennilahlTown_Budew_JoinParty_Movement_0
 # 260 "data//maps/FennilahlTown/scripts.pory"
-	release
+	waitmovement 0
 # 261 "data//maps/FennilahlTown/scripts.pory"
 	delay 16
 # 262 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_JoinParty_Text_1, MSGBOX_YESNO
+	msgbox FennilahlTown_Budew_JoinParty_Text_0
 # 263 "data//maps/FennilahlTown/scripts.pory"
+	release
+# 264 "data//maps/FennilahlTown/scripts.pory"
+	delay 16
+# 265 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_JoinParty_Text_1, MSGBOX_YESNO
+# 266 "data//maps/FennilahlTown/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq FennilahlTown_Budew_JoinParty_2
-# 269 "data//maps/FennilahlTown/scripts.pory"
-	applymovement 8, FennilahlTown_Budew_JoinParty_Movement_1
-# 270 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 8
-# 271 "data//maps/FennilahlTown/scripts.pory"
-	msgbox FennilahlTown_Budew_JoinParty_Text_3
 # 272 "data//maps/FennilahlTown/scripts.pory"
+	applymovement 8, FennilahlTown_Budew_JoinParty_Movement_1
+# 273 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 8
+# 274 "data//maps/FennilahlTown/scripts.pory"
+	msgbox FennilahlTown_Budew_JoinParty_Text_3
+# 275 "data//maps/FennilahlTown/scripts.pory"
 	release
 FennilahlTown_Budew_JoinParty_1:
-# 275 "data//maps/FennilahlTown/scripts.pory"
+# 278 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_BUDEW_GET
-# 276 "data//maps/FennilahlTown/scripts.pory"
+# 279 "data//maps/FennilahlTown/scripts.pory"
 	setvar VAR_FENNILAHL_BUDEW, 4
-# 277 "data//maps/FennilahlTown/scripts.pory"
+# 280 "data//maps/FennilahlTown/scripts.pory"
 	releaseall
 	end
 
 FennilahlTown_Budew_JoinParty_2:
-# 264 "data//maps/FennilahlTown/scripts.pory"
-	removeobject 8
-# 265 "data//maps/FennilahlTown/scripts.pory"
-	givemon SPECIES_BUDEW, 5
-# 266 "data//maps/FennilahlTown/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 267 "data//maps/FennilahlTown/scripts.pory"
+	removeobject 8
+# 268 "data//maps/FennilahlTown/scripts.pory"
+	givemon SPECIES_BUDEW, 5
+# 269 "data//maps/FennilahlTown/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 270 "data//maps/FennilahlTown/scripts.pory"
 	msgbox FennilahlTown_Budew_JoinParty_Text_2
 	goto FennilahlTown_Budew_JoinParty_1
 
@@ -461,11 +467,13 @@ Fennilahl_Breech_QuestInProgress_Movement_1:
 # 74 "data//maps/FennilahlTown/scripts.pory"
 Fennilahl_Breech_QuestInProgress_Movement_2:
 # 74 "data//maps/FennilahlTown/scripts.pory"
-	face_right
+	face_left
 	step_end
 
 # 75 "data//maps/FennilahlTown/scripts.pory"
 Fennilahl_Breech_QuestInProgress_Movement_3:
+# 75 "data//maps/FennilahlTown/scripts.pory"
+	emote_exclamation_mark
 # 75 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
@@ -480,65 +488,83 @@ Fennilahl_Breech_QuestInProgress_Movement_4:
 	jump_in_place_up
 	step_end
 
-# 160 "data//maps/FennilahlTown/scripts.pory"
+# 84 "data//maps/FennilahlTown/scripts.pory"
+Fennilahl_Breech_QuestInProgress_Movement_5:
+# 84 "data//maps/FennilahlTown/scripts.pory"
+	face_up
+	step_end
+
+# 86 "data//maps/FennilahlTown/scripts.pory"
+Fennilahl_Breech_QuestInProgress_Movement_6:
+# 86 "data//maps/FennilahlTown/scripts.pory"
+	face_down
+	step_end
+
+# 163 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_FirstBerry_Movement_0:
-# 160 "data//maps/FennilahlTown/scripts.pory"
+# 163 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 160 "data//maps/FennilahlTown/scripts.pory"
+# 163 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 160 "data//maps/FennilahlTown/scripts.pory"
+# 163 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 182 "data//maps/FennilahlTown/scripts.pory"
+# 185 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_SecondBerry_Movement_0:
-# 182 "data//maps/FennilahlTown/scripts.pory"
+# 185 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
-# 182 "data//maps/FennilahlTown/scripts.pory"
+# 185 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 197 "data//maps/FennilahlTown/scripts.pory"
+# 200 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_SecondBerry_Movement_1:
-# 197 "data//maps/FennilahlTown/scripts.pory"
+# 200 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 197 "data//maps/FennilahlTown/scripts.pory"
+# 200 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 219 "data//maps/FennilahlTown/scripts.pory"
+# 222 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_ThirdBerry_Movement_0:
-# 219 "data//maps/FennilahlTown/scripts.pory"
+# 222 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 256 "data//maps/FennilahlTown/scripts.pory"
+# 237 "data//maps/FennilahlTown/scripts.pory"
+FennilahlTown_Budew_ThirdBerry_Movement_1:
+# 237 "data//maps/FennilahlTown/scripts.pory"
+	jump_in_place_down
+	step_end
+
+# 259 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_JoinParty_Movement_0:
-# 256 "data//maps/FennilahlTown/scripts.pory"
+# 259 "data//maps/FennilahlTown/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_JoinParty_Movement_1:
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_right
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_right
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_right
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
-# 269 "data//maps/FennilahlTown/scripts.pory"
+# 272 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -617,7 +643,7 @@ Fennilahl_Breech_QuestInProgress_Text_3:
 	.string "partner!$"
 
 Fennilahl_Breech_QuestInProgress_Text_4:
-# 86 "data//maps/FennilahlTown/scripts.pory"
+# 89 "data//maps/FennilahlTown/scripts.pory"
 	.string "BREECH: Thank you trainer! My name is\n"
 	.string "Breech. I'm just a simple man who loves\l"
 	.string "collecting rocks. Even with Clefairy by\l"
@@ -626,71 +652,71 @@ Fennilahl_Breech_QuestInProgress_Text_4:
 	.string "mountains now. See you again soon!$"
 
 Fennilahl_Breech_QuestInProgress_Text_5:
-# 100 "data//maps/FennilahlTown/scripts.pory"
+# 103 "data//maps/FennilahlTown/scripts.pory"
 	.string "Why do bad things happen to me?$"
 
 FennilahlTown_Budew_FirstBerry_Text_0:
-# 147 "data//maps/FennilahlTown/scripts.pory"
+# 150 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems to want something...$"
 
 FennilahlTown_Budew_FirstBerry_Text_1:
-# 152 "data//maps/FennilahlTown/scripts.pory"
+# 155 "data//maps/FennilahlTown/scripts.pory"
 	.string "Give BUDEW an ORAN BERRY?$"
 
 FennilahlTown_Budew_FirstBerry_Text_2:
-# 158 "data//maps/FennilahlTown/scripts.pory"
+# 161 "data//maps/FennilahlTown/scripts.pory"
 	.string "{PLAYER} gave BUDEW an ORAN BERRY.$"
 
 FennilahlTown_Budew_FirstBerry_Text_3:
-# 162 "data//maps/FennilahlTown/scripts.pory"
+# 165 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems happy!$"
 
 FennilahlTown_Budew_FirstBerry_Text_4:
-# 168 "data//maps/FennilahlTown/scripts.pory"
+# 171 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems disappointed...$"
 
 FennilahlTown_Budew_SecondBerry_Text_0:
-# 184 "data//maps/FennilahlTown/scripts.pory"
+# 187 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW seems to want something\n"
 	.string "again...but not an ORAN BERRY.$"
 
 FennilahlTown_Budew_SecondBerry_Text_1:
-# 189 "data//maps/FennilahlTown/scripts.pory"
+# 192 "data//maps/FennilahlTown/scripts.pory"
 	.string "Give BUDEW a PECHA BERRY?$"
 
 FennilahlTown_Budew_SecondBerry_Text_2:
-# 195 "data//maps/FennilahlTown/scripts.pory"
+# 198 "data//maps/FennilahlTown/scripts.pory"
 	.string "{PLAYER} gave BUDEW a PECHA BERRY.$"
 
 FennilahlTown_Budew_ThirdBerry_Text_0:
-# 221 "data//maps/FennilahlTown/scripts.pory"
+# 224 "data//maps/FennilahlTown/scripts.pory"
 	.string "What could BUDEW want now?$"
 
 FennilahlTown_Budew_ThirdBerry_Text_1:
-# 226 "data//maps/FennilahlTown/scripts.pory"
+# 229 "data//maps/FennilahlTown/scripts.pory"
 	.string "Give BUDEW a RAWST BERRY?$"
 
 FennilahlTown_Budew_ThirdBerry_Text_2:
-# 232 "data//maps/FennilahlTown/scripts.pory"
+# 235 "data//maps/FennilahlTown/scripts.pory"
 	.string "{PLAYER} gave BUDEW a RAWST BERRY.$"
 
 FennilahlTown_Budew_JoinParty_Text_0:
-# 259 "data//maps/FennilahlTown/scripts.pory"
+# 262 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW is looking at the Pokeballs on\n"
 	.string "your belt curiously...$"
 
 FennilahlTown_Budew_JoinParty_Text_1:
-# 262 "data//maps/FennilahlTown/scripts.pory"
+# 265 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW nudges the Pokeballs on your\n"
 	.string "belt. It seems to want to join your\l"
 	.string "party! Will you become BUDEW's trainer?$"
 
 FennilahlTown_Budew_JoinParty_Text_2:
-# 267 "data//maps/FennilahlTown/scripts.pory"
+# 270 "data//maps/FennilahlTown/scripts.pory"
 	.string "The BUDEW has joined your party!\p"
 	.string "Welcome, BUDEW! Let's get along well\n"
 	.string "together!$"
 
 FennilahlTown_Budew_JoinParty_Text_3:
-# 271 "data//maps/FennilahlTown/scripts.pory"
+# 274 "data//maps/FennilahlTown/scripts.pory"
 	.string "BUDEW ran off...$"

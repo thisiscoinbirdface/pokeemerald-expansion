@@ -137,8 +137,92 @@ WhiteSign_GalecrestCity_Garden::
 
 
 WhiteSign_GalecrestCity_DetectiveAcademy::
-# 157 "data//scripts/customscripts_signs.pory"
+# 156 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_GalecrestCity_DetectiveAcademy_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route5_ToGalecrest::
+# 162 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route5_ToGalecrest_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route5_ToSilversun::
+# 167 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route5_ToSilversun_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route5_Vilethorn::
+# 172 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route5_Vilethorn_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route5_Vilethorn::
+# 177 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route5_Vilethorn_Text_0, MSGBOX_SIGN
+	end
+
+
+WoodSign_SilversunCity_Artist1::
+# 183 "data//scripts/customscripts_signs.pory"
+	msgbox WoodSign_SilversunCity_Artist1_Text_0, MSGBOX_SIGN
+	end
+
+
+WoodSign_SilversunCity_Artist2::
+# 188 "data//scripts/customscripts_signs.pory"
+	msgbox WoodSign_SilversunCity_Artist2_Text_0, MSGBOX_SIGN
+	end
+
+
+WoodSign_SilversunCity_Artist3::
+# 193 "data//scripts/customscripts_signs.pory"
+	msgbox WoodSign_SilversunCity_Artist3_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Main::
+# 198 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Main_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Theater::
+# 203 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Theater_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Orphanage::
+# 208 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Orphanage_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Sewers::
+# 213 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Sewers_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Gym::
+# 218 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Gym_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_HoyaRiverNorth::
+# 223 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_HoyaRiverNorth_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_HoyaRiverSouth::
+# 228 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_HoyaRiverSouth_Text_0, MSGBOX_SIGN
 	end
 
 
@@ -154,7 +238,8 @@ WhiteSign_CarabrueTown_TenebrisLab_Text_0:
 
 WhiteSign_Route1_NextToCarabrue_Text_0:
 # 18 "data//scripts/customscripts_signs.pory"
-	.string "Route 1\p"
+	.string "Route 1\n"
+	.string "New beginnings!\p"
 	.string "{LEFT_ARROW} Carabrue Town\n"
 	.string "{UP_ARROW} Fennilahl Town$"
 
@@ -165,8 +250,9 @@ WoodSign_Route1_Middle_Text_0:
 
 WhiteSign_Route1_NextToFennilahl_Text_0:
 # 29 "data//scripts/customscripts_signs.pory"
-	.string "Route 1\p"
-	.string "{RIGHT_ARROW} Fennilahl Town\n"
+	.string "Route 1\n"
+	.string "New beginnings!\p"
+	.string "{RIGHT_ARROW} Fennilahl Town.\n"
 	.string "{LEFT_ARROW} Carabrue Town.$"
 
 WhiteSign_FennilahlTown_Main_Text_0:
@@ -176,18 +262,19 @@ WhiteSign_FennilahlTown_Main_Text_0:
 
 WhiteSign_FennilahlTown_TowardsRoute2_Text_0:
 # 41 "data//scripts/customscripts_signs.pory"
-	.string "{DOWN_ARROW}ROUTE 2\n"
-	.string "Connecting to Vine River.$"
+	.string "{DOWN_ARROW}ROUTE 2\p"
+	.string "{DOWN_ARROW}Starfall Caves.\n"
+	.string "{RIGHT_ARROW}Vine River.$"
 
 WhiteSign_FennilahlTown_TowardsRoute3_Text_0:
 # 46 "data//scripts/customscripts_signs.pory"
-	.string "{UP_ARROW} UNDERGROUND TUNNEL\n"
-	.string "To ROUTE 3 and Gastree City.$"
+	.string "{UP_ARROW} Underground Tunnel\n"
+	.string "To Route 3 and Gastree City.$"
 
 WhiteSign_Route3_TowardsFennilahl_Text_0:
 # 57 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 3\p"
-	.string "{UP_ARROW} Fennilahl Town\n"
+	.string "{UP_ARROW} Fennilahl Town.\n"
 	.string "{RIGHT_ARROW} Gastree City.$"
 
 WhiteSign_Route3_VineRiverUnderpass_Text_0:
@@ -198,7 +285,7 @@ WhiteSign_Route3_TowardsGastree_Text_0:
 # 67 "data//scripts/customscripts_signs.pory"
 	.string "ROUTE 3\p"
 	.string "{UP_ARROW} Gastree City.\n"
-	.string "{LEFT_ARROW} Fennilahl Town$"
+	.string "{LEFT_ARROW} Fennilahl Town.$"
 
 WhiteSign_GastreeCity_Main_Text_0:
 # 76 "data//scripts/customscripts_signs.pory"
@@ -207,24 +294,24 @@ WhiteSign_GastreeCity_Main_Text_0:
 
 WhiteSign_GastreeCity_TeaHouse_Text_0:
 # 81 "data//scripts/customscripts_signs.pory"
-	.string "GASTREE TEAHOUSE\n"
+	.string "Gastree Teahouse\n"
 	.string "Fragrant teas and quiet moments.$"
 
 WhiteSign_GastreeCity_Gym_Text_0:
 # 86 "data//scripts/customscripts_signs.pory"
-	.string "GASTREE GYM\n"
-	.string "Leader: INGER$"
+	.string "Gastree Gym\n"
+	.string "Leader: Inger$"
 
 WhiteSign_Route4_TowardsGastree_Text_0:
 # 94 "data//scripts/customscripts_signs.pory"
-	.string "ROUTE 4\p"
+	.string "Route 4\p"
 	.string "{DOWN_ARROW} Gastree City.\n"
-	.string "{UP_ARROW} Ceram Base Camp$"
+	.string "{UP_ARROW} Ceram Base Camp.$"
 
 WhiteSign_Route4_TowardsCeramBaseCamp_Text_0:
 # 99 "data//scripts/customscripts_signs.pory"
-	.string "ROUTE 4\p"
-	.string "{UP_ARROW} Ceram Base Camp\n"
+	.string "Route 4\p"
+	.string "{UP_ARROW} Ceram Base Camp.\n"
 	.string "{DOWN_ARROW} Gastree City.$"
 
 WhiteSign_CeramBaseCamp_Main_Text_0:
@@ -239,13 +326,13 @@ WhiteSign_CeramBaseCamp_UpToMtCeram_Text_0:
 
 WhiteSign_CeramBaseCamp_SupplyDepot_Text_0:
 # 121 "data//scripts/customscripts_signs.pory"
-	.string "SUPPLY DEPOT\n"
+	.string "Supply Depot\n"
 	.string "All your trekking needs!$"
 
 WhiteSign_CeramBaseCamp_Gym_Text_0:
 # 126 "data//scripts/customscripts_signs.pory"
-	.string "GASTREE GYM\n"
-	.string "Leader: ARIAN$"
+	.string "Gastree Gym\n"
+	.string "Leader: Arian$"
 
 WoodSign_MtCeram_Warning_Text_0:
 # 134 "data//scripts/customscripts_signs.pory"
@@ -260,10 +347,79 @@ WhiteSign_GalecrestCity_Main_Text_0:
 
 WhiteSign_GalecrestCity_Garden_Text_0:
 # 151 "data//scripts/customscripts_signs.pory"
-	.string "GALECREST GARDEN\n"
+	.string "Galecrest Garden\n"
 	.string "Please don't disturb the ROTOMS.$"
 
 WhiteSign_GalecrestCity_DetectiveAcademy_Text_0:
-# 157 "data//scripts/customscripts_signs.pory"
-	.string "DETECTIVE ACADEMY\n"
-	.string "WWhere sharp minds are forged.$"
+# 156 "data//scripts/customscripts_signs.pory"
+	.string "Detective Academy\n"
+	.string "Where sharp minds are forged.$"
+
+WhiteSign_Route5_ToGalecrest_Text_0:
+# 162 "data//scripts/customscripts_signs.pory"
+	.string "Route 5\p"
+	.string "{RIGHT_ARROW} Galecrest City.\n"
+	.string "{LEFT_ARROW} Silversun City.$"
+
+WhiteSign_Route5_ToSilversun_Text_0:
+# 167 "data//scripts/customscripts_signs.pory"
+	.string "Route 5\p"
+	.string "{LEFT_ARROW} Silversun City.\n"
+	.string "{RIGHT_ARROW} Galecrest City.$"
+
+WhiteSign_Route5_Vilethorn_Text_0:
+# 172 "data//scripts/customscripts_signs.pory"
+	.string "{UP_ARROW}Vilethorn Woods\n"
+	.string "Travelers beware!$"
+
+WoodSign_SilversunCity_Artist1_Text_0:
+# 183 "data//scripts/customscripts_signs.pory"
+	.string "You are NOT to disturb the great\n"
+	.string "Arsalan!$"
+
+WoodSign_SilversunCity_Artist2_Text_0:
+# 188 "data//scripts/customscripts_signs.pory"
+	.string "Philistines keep OUT!$"
+
+WoodSign_SilversunCity_Artist3_Text_0:
+# 193 "data//scripts/customscripts_signs.pory"
+	.string "Deliveries by the door please.$"
+
+WhiteSign_SilversunCity_Main_Text_0:
+# 198 "data//scripts/customscripts_signs.pory"
+	.string "Silversun City\p"
+	.string "The metropolis of the north.$"
+
+WhiteSign_SilversunCity_Theater_Text_0:
+# 203 "data//scripts/customscripts_signs.pory"
+	.string "Silversun Theatre\p"
+	.string "Prepare to be enthralled!\Bookings\n"
+	.string "close a day prior.$"
+
+WhiteSign_SilversunCity_Orphanage_Text_0:
+# 208 "data//scripts/customscripts_signs.pory"
+	.string "Silversun Blind Orphanage\p"
+	.string "Love can be seen by all.$"
+
+WhiteSign_SilversunCity_Sewers_Text_0:
+# 213 "data//scripts/customscripts_signs.pory"
+	.string "Silversun Sewers\p"
+	.string "Entry for authorised personnel only.$"
+
+WhiteSign_SilversunCity_Gym_Text_0:
+# 218 "data//scripts/customscripts_signs.pory"
+	.string "Silversun Gym\Leader: Gloria.$"
+
+WhiteSign_HoyaRiverNorth_Text_0:
+# 223 "data//scripts/customscripts_signs.pory"
+	.string "Hoya River North Crossin\n"
+	.string "No swimming in these waters!\p"
+	.string "{RIGHT_ARROW}Silversun City.\n"
+	.string "{DOWN_ARROW}Route 6.$"
+
+WhiteSign_HoyaRiverSouth_Text_0:
+# 228 "data//scripts/customscripts_signs.pory"
+	.string "Hoya River South Crossing\n"
+	.string "No swimming in these waters!\p"
+	.string "{LEFT_ARROW}Pelluca City.\n"
+	.string "{RIGHT_ARROW}Route 6.$"

@@ -1049,8 +1049,10 @@ GalecrestCity_NPC_12_Text_0:
 	.string "enter Route 5 and the Vilethorn Woods.\l"
 	.string "Many years ago, one of the rich folk\l"
 	.string "from Galecrest City left to build a\l"
-	.string "mansion deep in the woods. What a\l"
-	.string "strange man!$"
+	.string "cottage deep in the woods. Who would\l"
+	.string "want to live in a creepy forest like\l"
+	.string "that?\p"
+	.string "Rich folk I tell you...$"
 
 GalecrestCity_NPC_13_Text_0:
 # 398 "data//maps/GalecrestCity/scripts.pory"
