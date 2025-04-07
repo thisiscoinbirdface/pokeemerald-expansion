@@ -416,7 +416,8 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_Text_0:
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_1:
 # 120 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Using TM on Cyndaquil...\p"
-	.string "...poof!\Cyndaquil has learned SUNNY DAY!$"
+	.string "...poof!\p"
+	.string "Cyndaquil has learned SUNNY DAY!$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2:
 # 124 "data//maps/CeramBaseCamp/scripts.pory"

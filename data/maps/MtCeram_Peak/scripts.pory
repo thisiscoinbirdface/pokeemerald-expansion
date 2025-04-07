@@ -47,11 +47,13 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property - it can absorb the memories of nearby {PKMN}."))
-    msgbox(format("???: How fascinating! This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
+    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When {PKMN} fall asleep, their past memories resurface. A dreamstone absorbs this."))
+    release
+    delay(16)
+    msgbox(format("???: Fascinating stuff. This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)   
-    msgbox(format("And he discovered something incredible!"))
+    msgbox(format("And she discovered something incredible!"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
@@ -60,11 +62,11 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("???: Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to implant memories into {PKMN}? An unstoppable tool to control any and all {PKMN}!"))
+    msgbox(format("???: Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokemon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: And with this control, there would be nothing stopping Team Somber from having absolute control over the world! This is what we want, {PLAYER}. \pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
+    msgbox(format("???: And if we get such power, there would be nothing stopping Team Somber from having absolute control! A noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
     release
 
     //Battle
@@ -84,7 +86,7 @@ script MtCeramPeak_MainEvent_Trigger{
     release
     applymovement(LOCALID_BOSS, moves(face_left))
     waitmovement(0)
-    msgbox(format("MOXIE: GABRIELLE! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
+    msgbox(format("MOXIE: Gabrielle! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
     release  
     applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
@@ -97,8 +99,11 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(4, moves(face_up))    
     applymovement(5, moves(face_up))    
     waitmovement(0)
+    
+    //bgm fadeout
+    fadeoutbgm
     delay(16)
-
+    
     msgbox(format("GABRIELLE: Ugh! It's not moving!\pMOXIE: You idiot! Put some backbone in it!\p...\pGABRIELLE: Boss?\pMOXIE: What?\pGABRIELLE: ...I'm stuck. I can't move...I'm stuck to the stone!"))
     release  
     delay(16)
@@ -122,7 +127,7 @@ script MtCeramPeak_MainEvent_Trigger{
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather
 
-    msgbox(format("MOXIE: Is that an earthquake? It'll trigger a volcanic eruption! GABRIELLE, you - aaargh! You've released the dreamstone's energy somehow!\pGABRIELLE: I just did what you told me to do! I wanted to be useful!\pMOXIE: And now you've doomed us all!"))
+    msgbox(format("MOXIE: Is that an earthquake? It'll trigger a volcanic eruption! Gabrielle, you - aaargh! You've released the dreamstone's energy somehow!\pGABRIELLE: I just did what you told me to do! I wanted to be useful!\pMOXIE: And now you've doomed us all!"))
     release  
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
@@ -142,7 +147,7 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(LOCALID_GAB, moves(face_down))    
     msgbox(format("GABRIELLE: Boss - what about me?"))
     release
-    msgbox(format("MOXIE: Take care GABRIELLE. I wish you had done more with your life."))
+    msgbox(format("MOXIE: Take care Gabrielle. I wish you had done more with your life."))
     release
     applymovement(LOCALID_BOSS, moves(walk_down * 8))  
     waitmovement(0)

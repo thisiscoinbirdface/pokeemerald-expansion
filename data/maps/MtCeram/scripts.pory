@@ -36,7 +36,7 @@ script MtCeram_Charizard{
             delay(16)
             playmoncry(SPECIES_CHARIZARD, CRY_MODE_ENCOUNTER)
             msgbox(format("The CHARIZARD is furious!"))
-            setwildbattle(SPECIES_CHARIZARD, 50)     
+            setwildbattle(SPECIES_CHARIZARD, 48)     
             dowildbattle  
 
             //result
@@ -235,6 +235,7 @@ script MtCeram_BeforePeak_Trigger1{
     if (flag(FLAG_MT_CERAM_SOMBER_PEAK)){end}
 
     lockall
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 walk_left * 3 face_up))
     waitmovement(0)
     call(MtCeram_EventScript_BeforePeakBattle)
@@ -255,7 +256,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KOHLA: I'm not a kid! I'm the ACE ROOKIE of the detective school, and I'm not going to let you steal the dreamstone!"))
+    msgbox(format("KOHLA: I'm not a kid! I'm the ACE ROOKIE of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
@@ -328,6 +329,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     removeobject(LOCALID_GAB)
     fadescreen(FADE_FROM_BLACK)
 
+    fadedefaultbgm
 
     //Vars
     setflag(FLAG_MT_CERAM_SOMBER_PEAK)
@@ -389,7 +391,7 @@ script MtCeram_TrainerBattle_GRUNT1 {
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("We're going to get the dreamstone and Team Somber will reward us! Wait, you're not a grunt. Get out of here!"), format("I'm going to be punished for this!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us! Wait, you're not a grunt. Get out of here!"), format("I'm going to be punished for this!"))
     msgbox(format("I love Team Somber! No wait...I love money!"))
     release
     end
@@ -465,6 +467,7 @@ script MtCeram_EventScript_Gabrielle{
     release
     delay(30)
     applymovement(5, moves(emote_exclamation_mark))
+    waitmovement(0)
     release    
     faceplayer
     delay(20)

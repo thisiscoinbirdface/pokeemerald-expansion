@@ -493,8 +493,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_B ===
 Name: BRON
-Class: Employee
-Pic: Employee
+Class: Kindler
+Pic: Kindler
 Gender: Male
 Music: Male
 Double Battle: No
@@ -537,9 +537,9 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Sizzlipede
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
+ 
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
-Name: MATT
+Name: Arian
 Class: Leader
 Pic: Leader Roxanne
 Gender: Male
@@ -628,10 +628,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_MTCERAM_GRUNT1 ===
-Name: LEAH
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
+Name: GALE
+Class: Team Somber
+Pic: Team Somber M
+Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
@@ -641,45 +641,45 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_GRUNT2 ===
-Name: DAISY
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+Name: DENNY
+Class: Team Somber
+Pic: Team Somber M
+Gender: Male
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
 Elgyem
-Level: 13
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Murkrow
-Level: 14
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_GRUNT_DOUBLE ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Name: JAY & ROSE
+Class: Team Somber
+Pic: Somber Grunt Duo
 Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Check Bad Move
 
 Drowzee
-Level: 13
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Woobat
-Level: 13
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Elgyem
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Murkrow
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMPEAK_MOXIE ===
@@ -692,12 +692,16 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move
 
+Murkrow
+Level: 18
+IVs: 10 HP / 0 Atk / 0 Def / 6 SpA / 0 SpD / 0 Spe
+
 Inkay
-Level: 16
+Level: 18
 IVs: 10 HP / 0 Atk / 0 Def / 6 SpA / 0 SpD / 0 Spe
 
 Slowpoke-Galar
-Level: 18
+Level: 20
 IVs: 10 HP / 0 Atk / 4 Def / 0 SpA / 4 SpD / 0 Spe
 - Acid
 - Yawn

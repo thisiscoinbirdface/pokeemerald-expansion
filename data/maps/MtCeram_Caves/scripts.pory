@@ -1,7 +1,7 @@
 raw`
-    .set LOCALID_GRETA, 9
-    .set LOCALID_SIZZ, 10
-    .set LOCALID_VEN, 11
+    .set LOCALID_GRETA, 3
+    .set LOCALID_SIZZ, 4
+    .set LOCALID_VEN, 5
 `
 
 mapscripts MtCeram_Caves_MapScripts{}
@@ -10,6 +10,7 @@ script MtCeram_Caves_Greta_Trigger0{
     if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
 
     lockall
+    playbgm(MUS_ENCOUNTER_TWINS, FALSE)
 
     applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -28,7 +29,7 @@ script MtCeram_Caves_Greta_Trigger1{
     if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
 
     lockall
-
+    playbgm(MUS_ENCOUNTER_TWINS, FALSE)
     applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
@@ -46,7 +47,7 @@ script MtCeram_Caves_Greta_Trigger2{
     if (flag(FLAG_CERAM_CAVES_GRETA_MEETING)) {end}
     
     lockall
-
+    playbgm(MUS_ENCOUNTER_TWINS, FALSE)
     applymovement(LOCALID_GRETA, moves(emote_exclamation_mark))
     waitmovement(0)
     playmoncry(SPECIES_SIZZLIPEDE, CRY_MODE_NORMAL)
@@ -86,8 +87,24 @@ script MtCeram_Caves_Greta_Main{
 
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
-    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! Take this - a thank you for saving me."))
-    giveitem(ITEM_QUICK_CLAW)
+    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
+    release
+    msgbox(format("GRETA: I have some leftover stock that you might like. These gems came all the way from Mt Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
+    release
+    
+    delay(24)
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "DARK GEM", "FIGHTING GEM", "PSYCHIC GEM")
+    if (var(VAR_RESULT) == 0){
+        giveitem(ITEM_DARK_GEM)
+    } 
+    if (var(VAR_RESULT) == 1){
+        giveitem(ITEM_FIGHTING_GEM)
+    } 
+    if (var(VAR_RESULT) == 2){
+        giveitem(ITEM_PSYCHIC_GEM)
+    } 
+
+
     msgbox(format("GRETA: I travel across all the routes and towns of Cormoria, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
     release
     setflag(FLAG_CERAM_CAVES_GRETA_MEETING)
@@ -96,6 +113,7 @@ script MtCeram_Caves_Greta_Main{
     waitmovement(0)
     removeobject(LOCALID_GRETA)
 
+    fadedefaultbgm
     releaseall
 
     end    

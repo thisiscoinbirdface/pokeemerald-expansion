@@ -9,7 +9,7 @@ script CeramBaseCamp_House1_NPC{
 
 script CeramBaseCamp_House1_Pokemon{
     lockall
-    msgbox(format("POOCHYENA looks happy."))
+    msgbox(format("GREAVARD looks happy."))
     releaseall
 }
 

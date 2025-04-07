@@ -65,16 +65,18 @@ CeramBaseCampGym_GuardTrigger::
 # 42 "data//maps/CeramBaseCampGym/scripts.pory"
 	waitmovement 0
 # 43 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_GuardTrigger_Text_0
+	delay 16
 # 44 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
+	msgbox CeramBaseCampGym_GuardTrigger_Text_0
 # 45 "data//maps/CeramBaseCampGym/scripts.pory"
-	applymovement LOCALID_GUARD, CeramBaseCampGym_GuardTrigger_Movement_2
+	release
 # 46 "data//maps/CeramBaseCampGym/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, CeramBaseCampGym_GuardTrigger_Movement_3
+	applymovement LOCALID_GUARD, CeramBaseCampGym_GuardTrigger_Movement_2
 # 47 "data//maps/CeramBaseCampGym/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, CeramBaseCampGym_GuardTrigger_Movement_3
+# 48 "data//maps/CeramBaseCampGym/scripts.pory"
 	waitmovement 0
-# 49 "data//maps/CeramBaseCampGym/scripts.pory"
+# 50 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
@@ -83,158 +85,160 @@ CeramBaseCampGym_GuardTrigger_2:
 
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint::
-# 53 "data//maps/CeramBaseCampGym/scripts.pory"
-	lockall
 # 54 "data//maps/CeramBaseCampGym/scripts.pory"
+	lockall
+# 55 "data//maps/CeramBaseCampGym/scripts.pory"
 	faceplayer
 	checkitem ITEM_APPOINTMENT_LETTER
 # 0 "data//maps/CeramBaseCampGym/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne CeramBaseCampGym_EventScript_NPC_LetterPrint_2
-# 63 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2
 # 64 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2
+# 65 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 67 "data//maps/CeramBaseCampGym/scripts.pory"
+# 68 "data//maps/CeramBaseCampGym/scripts.pory"
 	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_C, CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_3
-# 70 "data//maps/CeramBaseCampGym/scripts.pory"
+# 71 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_4
-# 72 "data//maps/CeramBaseCampGym/scripts.pory"
+# 73 "data//maps/CeramBaseCampGym/scripts.pory"
 	giveitem ITEM_APPOINTMENT_LETTER
-# 74 "data//maps/CeramBaseCampGym/scripts.pory"
+# 75 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_5
 CeramBaseCampGym_EventScript_NPC_LetterPrint_1:
-# 76 "data//maps/CeramBaseCampGym/scripts.pory"
+# 77 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_2:
-# 57 "data//maps/CeramBaseCampGym/scripts.pory"
+# 58 "data//maps/CeramBaseCampGym/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER, CeramBaseCampGym_EventScript_NPC_LetterPrint_5
-# 60 "data//maps/CeramBaseCampGym/scripts.pory"
+# 61 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_1
 	goto CeramBaseCampGym_EventScript_NPC_LetterPrint_1
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_5:
-# 58 "data//maps/CeramBaseCampGym/scripts.pory"
+# 59 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_0
 	goto CeramBaseCampGym_EventScript_NPC_LetterPrint_1
 
 
 CeramBaseCampGym_EventScript_NPC_Signature::
-# 80 "data//maps/CeramBaseCampGym/scripts.pory"
-	lockall
 # 81 "data//maps/CeramBaseCampGym/scripts.pory"
-	faceplayer
+	lockall
 # 82 "data//maps/CeramBaseCampGym/scripts.pory"
+	faceplayer
+# 83 "data//maps/CeramBaseCampGym/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER, CeramBaseCampGym_EventScript_NPC_Signature_2
 	checkitem ITEM_APPOINTMENT_LETTER
 # 0 "data//maps/CeramBaseCampGym/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne CeramBaseCampGym_EventScript_NPC_Signature_5
-# 111 "data//maps/CeramBaseCampGym/scripts.pory"
+# 112 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_7
 CeramBaseCampGym_EventScript_NPC_Signature_1:
-# 115 "data//maps/CeramBaseCampGym/scripts.pory"
+# 116 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
 CeramBaseCampGym_EventScript_NPC_Signature_2:
-# 83 "data//maps/CeramBaseCampGym/scripts.pory"
+# 84 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_0
 	goto CeramBaseCampGym_EventScript_NPC_Signature_1
 
 CeramBaseCampGym_EventScript_NPC_Signature_5:
-# 87 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_0
 # 88 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
+	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_0
 # 89 "data//maps/CeramBaseCampGym/scripts.pory"
-	showmoneybox 0, 0
+	release
 # 90 "data//maps/CeramBaseCampGym/scripts.pory"
+	showmoneybox 0, 0
+# 91 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_1, MSGBOX_YESNO
-# 92 "data//maps/CeramBaseCampGym/scripts.pory"
+# 93 "data//maps/CeramBaseCampGym/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq CeramBaseCampGym_EventScript_NPC_Signature_9
-# 99 "data//maps/CeramBaseCampGym/scripts.pory"
-	hidemoneybox
 # 100 "data//maps/CeramBaseCampGym/scripts.pory"
-	removemoney 500
+	hidemoneybox
 # 101 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_4
+	removemoney 500
 # 102 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_4
+# 103 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
 CeramBaseCampGym_EventScript_NPC_Signature_8:
-# 105 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_5
 # 106 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_6
+	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_5
 # 107 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
+	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_6
 # 108 "data//maps/CeramBaseCampGym/scripts.pory"
-	setflag FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER
+	release
 # 109 "data//maps/CeramBaseCampGym/scripts.pory"
+	setflag FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER
+# 110 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_0
 	goto CeramBaseCampGym_EventScript_NPC_Signature_1
 
 CeramBaseCampGym_EventScript_NPC_Signature_9:
-# 93 "data//maps/CeramBaseCampGym/scripts.pory"
-	hidemoneybox
 # 94 "data//maps/CeramBaseCampGym/scripts.pory"
+	hidemoneybox
+# 95 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_EventScript_NPC_Signature_Text_2
-# 96 "data//maps/CeramBaseCampGym/scripts.pory"
+# 97 "data//maps/CeramBaseCampGym/scripts.pory"
 	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_D, CeramBaseCampGym_EventScript_NPC_Signature_Text_3
 	goto CeramBaseCampGym_EventScript_NPC_Signature_8
 
 
 CeramBaseCampGym_LeaderBattle::
-# 139 "data//maps/CeramBaseCampGym/scripts.pory"
-	lockall
 # 140 "data//maps/CeramBaseCampGym/scripts.pory"
+	lockall
+# 141 "data//maps/CeramBaseCampGym/scripts.pory"
 	faceplayer
-# 142 "data//maps/CeramBaseCampGym/scripts.pory"
+# 143 "data//maps/CeramBaseCampGym/scripts.pory"
 	goto_if_set FLAG_BADGE02_GET, CeramBaseCampGym_LeaderBattle_2
-# 145 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_Text_Intro
 # 146 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_Text_Intro
+# 147 "data//maps/CeramBaseCampGym/scripts.pory"
 	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated
-# 149 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_1
 # 150 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
+	msgbox CeramBaseCampGym_LeaderBattle_Text_1
 # 151 "data//maps/CeramBaseCampGym/scripts.pory"
+	release
+# 152 "data//maps/CeramBaseCampGym/scripts.pory"
 	setflag FLAG_BADGE02_GET
-# 154 "data//maps/CeramBaseCampGym/scripts.pory"
+# 155 "data//maps/CeramBaseCampGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 157 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_2
 # 158 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_3
+	msgbox CeramBaseCampGym_LeaderBattle_Text_2
 # 159 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_3
+# 160 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 161 "data//maps/CeramBaseCampGym/scripts.pory"
-	giveitem ITEM_TM_SUNNY_DAY
 # 162 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+	giveitem ITEM_TM_SUNNY_DAY
 # 163 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+# 164 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 166 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_5
 # 167 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_5
+# 168 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 CeramBaseCampGym_LeaderBattle_1:
-# 171 "data//maps/CeramBaseCampGym/scripts.pory"
+# 172 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
 CeramBaseCampGym_LeaderBattle_2:
-# 143 "data//maps/CeramBaseCampGym/scripts.pory"
+# 144 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_0
 	goto CeramBaseCampGym_LeaderBattle_1
 
 
 # 40 "data//maps/CeramBaseCampGym/scripts.pory"
 CeramBaseCampGym_GuardTrigger_Movement_0:
+# 40 "data//maps/CeramBaseCampGym/scripts.pory"
+	emote_exclamation_mark
 # 40 "data//maps/CeramBaseCampGym/scripts.pory"
 	face_right
 	step_end
@@ -245,15 +249,15 @@ CeramBaseCampGym_GuardTrigger_Movement_1:
 	face_left
 	step_end
 
-# 45 "data//maps/CeramBaseCampGym/scripts.pory"
+# 46 "data//maps/CeramBaseCampGym/scripts.pory"
 CeramBaseCampGym_GuardTrigger_Movement_2:
-# 45 "data//maps/CeramBaseCampGym/scripts.pory"
+# 46 "data//maps/CeramBaseCampGym/scripts.pory"
 	face_down
 	step_end
 
-# 46 "data//maps/CeramBaseCampGym/scripts.pory"
+# 47 "data//maps/CeramBaseCampGym/scripts.pory"
 CeramBaseCampGym_GuardTrigger_Movement_3:
-# 46 "data//maps/CeramBaseCampGym/scripts.pory"
+# 47 "data//maps/CeramBaseCampGym/scripts.pory"
 	walk_down
 	step_end
 
@@ -272,7 +276,7 @@ CeramBaseCampGym_Guard_Text_0:
 
 CeramBaseCampGym_TrainerBattle_A_Text_0:
 # 23 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Who would've thought managing a\nbasecamp would involve so\lmuch paperwork?$"
+	.string "Who would've thought managing a basecamp would involve so much paperwork?$"
 
 CeramBaseCampGym_TrainerBattle_A_Text_1:
 # 23 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -297,23 +301,23 @@ CeramBaseCampGym_TrainerBattle_B_Text_2:
 	.string "All this bureaucracy is mind-numbing.$"
 
 CeramBaseCampGym_GuardTrigger_Text_0:
-# 43 "data//maps/CeramBaseCampGym/scripts.pory"
+# 44 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Hold on! You can't have a meeting with\n"
 	.string "the manager without an appointment.\l"
 	.string "Please come back once you have a\l"
 	.string "signed APPOINTMENT LETTER.$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_0:
-# 58 "data//maps/CeramBaseCampGym/scripts.pory"
+# 59 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I'm busy now. Get out.$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_1:
-# 60 "data//maps/CeramBaseCampGym/scripts.pory"
+# 61 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You'll have to get this letter signed by\n"
 	.string "the assistant manager in the basement.$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2:
-# 63 "data//maps/CeramBaseCampGym/scripts.pory"
+# 64 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You're a trainer and want an\n"
 	.string "APPOINTMENT LETTER? I can print you a\l"
 	.string "letter, but first I'll need to see your\l"
@@ -322,90 +326,90 @@ CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2:
 	.string "who you say you are!$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_3:
-# 67 "data//maps/CeramBaseCampGym/scripts.pory"
+# 68 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I lost$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_4:
-# 70 "data//maps/CeramBaseCampGym/scripts.pory"
+# 71 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Very good! Well then, let me do my job.\n"
 	.string "Here you go!$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_5:
-# 74 "data//maps/CeramBaseCampGym/scripts.pory"
+# 75 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "But this letter won't be enough without\n"
 	.string "the approval of the assistant manager.\l"
 	.string "He sits in the basement. Get this letter\l"
 	.string "signed by him.$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_0:
-# 87 "data//maps/CeramBaseCampGym/scripts.pory"
+# 88 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "So you got an APPOINTMENT LETTER and\n"
 	.string "want my signature on it? Well...I\l"
 	.string "wouldn't mind doing it for a small token\l"
 	.string "of appreciation...say...500?$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_1:
-# 90 "data//maps/CeramBaseCampGym/scripts.pory"
+# 91 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Will you slip the money under the table?$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_2:
-# 94 "data//maps/CeramBaseCampGym/scripts.pory"
+# 95 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You'll have to do it the way everyone\n"
 	.string "else does it then!$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_3:
-# 96 "data//maps/CeramBaseCampGym/scripts.pory"
+# 97 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I wish you had just paid up!$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_4:
-# 101 "data//maps/CeramBaseCampGym/scripts.pory"
+# 102 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} bribed the assistant\n"
 	.string "manager.$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_5:
-# 105 "data//maps/CeramBaseCampGym/scripts.pory"
+# 106 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Alright, I'll sign the letter.$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_6:
-# 106 "data//maps/CeramBaseCampGym/scripts.pory"
+# 107 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} got the APPOINTMENT LETTER\n"
 	.string "signed by the assistant manager.$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_7:
-# 111 "data//maps/CeramBaseCampGym/scripts.pory"
+# 112 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You're a trainer and want an\n"
 	.string "APPOINTMENT LETTER? You'll have to go\l"
 	.string "upstairs, get a letter printed, and then\l"
 	.string "I can sign and approve it.$"
 
 CeramBaseCampGym_LeaderBattle_Text_0:
-# 143 "data//maps/CeramBaseCampGym/scripts.pory"
+# 144 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "That was a great battle. You've earned\n"
 	.string "my confidence. Go get 'em, {PLAYER}!$"
 
 CeramBaseCampGym_LeaderBattle_Text_1:
-# 149 "data//maps/CeramBaseCampGym/scripts.pory"
+# 150 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the CINDER BADGE\n"
 	.string "from ARIAN.$"
 
 CeramBaseCampGym_LeaderBattle_Text_2:
-# 157 "data//maps/CeramBaseCampGym/scripts.pory"
+# 158 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The CINDER BADGE increases the ATK of\n"
 	.string "all your {PKMN} and lets you control {PKMN}\l"
 	.string "upto lv. 20.$"
 
 CeramBaseCampGym_LeaderBattle_Text_3:
-# 158 "data//maps/CeramBaseCampGym/scripts.pory"
+# 159 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And I'd also like to give you this.$"
 
 CeramBaseCampGym_LeaderBattle_Text_4:
-# 162 "data//maps/CeramBaseCampGym/scripts.pory"
+# 163 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "This TM will let your {PKMN} bring sunlight\n"
 	.string "on the battlefield, powering up\l"
 	.string "FIRE-type moves!$"
 
 CeramBaseCampGym_LeaderBattle_Text_5:
-# 166 "data//maps/CeramBaseCampGym/scripts.pory"
+# 167 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And now it's time for you to set off on\n"
 	.string "your journey. I hope you manage to find\l"
 	.string "the dreamstone and Professor Tenebris.\l"
@@ -414,7 +418,7 @@ CeramBaseCampGym_LeaderBattle_Text_5:
 	.string "run into them!$"
 
 CeramBaseCampGym_Text_Intro::
-# 176 "data//maps/CeramBaseCampGym/scripts.pory"
+# 177 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Who's my next appointment? Ah! It's\n"
 	.string "you, {PLAYER}. A pleasant surprise.\l"
 	.string "I'm sick of all this work. This office is\l"
@@ -425,7 +429,7 @@ CeramBaseCampGym_Text_Intro::
 	.string "change!$"
 
 CeramBaseCampGym_Text_Defeated::
-# 180 "data//maps/CeramBaseCampGym/scripts.pory"
+# 181 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "What a match! What a display! I could\n"
 	.string "not be more pleased, {PLAYER}. The\l"
 	.string "way you stand, you might be able to\l"

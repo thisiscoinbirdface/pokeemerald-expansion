@@ -117,7 +117,7 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         release
         delay(20)
 
-        msgbox(format("Using TM on Cyndaquil...\p...poof!\Cyndaquil has learned SUNNY DAY!"))
+        msgbox(format("Using TM on Cyndaquil...\p...poof!\pCyndaquil has learned SUNNY DAY!"))
         release
         applymovement(4, moves(emote_exclamation_mark))    
         waitmovement(0)
@@ -175,7 +175,7 @@ script CeramBaseCamp_Excadrill{
             delay(40)
             waitmoncry
             msgbox(format("A wild {PKMN} attacks!"))
-            setwildbattle(SPECIES_EXCADRILL, 30)     
+            setwildbattle(SPECIES_EXCADRILL, 37)     
             dowildbattle  
 
             //result
