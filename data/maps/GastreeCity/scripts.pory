@@ -30,11 +30,11 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 
     //Setup intro anim
         //open door
-        opendoor(25, 28)
+        opendoor(23, 26)
         waitdooranim
 
         //kohla create
-        setobjectxyperm(LOCALID_KOHLA, 25, 28)
+        setobjectxyperm(LOCALID_KOHLA, 23, 26)
         addobject(LOCALID_KOHLA)
         delay(8)
         //kohla walk
@@ -43,7 +43,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
         applymovement(LOCALID_KOHLA, moves(walk_down))
         waitmovement(0)
         //close door
-        closedoor(25, 28)
+        closedoor(23, 26)
         waitdooranim
 
     delay(12)
@@ -268,13 +268,13 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger1{
-        msgbox(format("It's the Skitty! Come here Skitty..."))
+        msgbox(format("It's Skitty! Come here Skitty..."))
         release
         delay(16)
         applymovement(LOCALID_SKITTY1, moves(emote_exclamation_mark, walk_fast_down walk_fast_left * 2, walk_fast_down * 2 walk_fast_left *7))
         waitmovement(0)
         removeobject(17)
-        msgbox(format("The Skitty ran away! Gotta chase it!"))
+        msgbox(format("Skitty ran away! Gotta chase it!"))
 
         //set up the skittys  
         //hide skitty 1
@@ -292,13 +292,13 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger2{
-        msgbox(format("It's the Skitty! Come here Skitty..."))
+        msgbox(format("It's Skitty again! Come here Skitty..."))
         release
         delay(16)
-        applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark, walk_fast_up walk_fast_right * 2, walk_fast_down * 7 walk_fast_down *7))
+        applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark, walk_fast_up walk_fast_right * 3, walk_fast_down walk_fast_right *2 walk_fast_down *7))
         waitmovement(0)
         removeobject(LOCALID_SKITTY2)
-        msgbox(format("The Skitty ran away again! Argh!"))
+        msgbox(format("Skitty ran away again!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY2)   
@@ -316,13 +316,13 @@ script GastreeCity_NPC9{
     }    
 
     script GastreeCity_EventScripts_SkittyTrigger3{
-        msgbox(format("It's the Skitty! Okay, this time you'd better come here, Skitty!"))
+        msgbox(format("It's Skitty! Okay, this time you'd better come here, Skitty!"))
         release
         delay(16)
         applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark, walk_fast_up * 2 walk_fast_right * 6, walk_fast_up * 5))
         waitmovement(0)
         removeobject(LOCALID_SKITTY3)
-        msgbox(format("Phew! Finally. The Skitty ran back to its owner!"))
+        msgbox(format("Phew! Finally. Looks like Skitty ran back to its owner!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY3)   
