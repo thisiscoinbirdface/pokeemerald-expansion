@@ -32,9 +32,6 @@ script Common_EventScript_MintVendingMachine{
 
 script MintVendingMachine_CheckBadge{
 
-    hidemoneybox
-    release
-
     if (flag(FLAG_BADGE05_GET)){
         goto(Mart_Mints_SixBadges)
     } else {
@@ -68,10 +65,11 @@ script MintVendingMachine_CheckBadge{
 
 // lonely addy brave naughty bold -> increase attack
 script Mart_Mints_NoBadges{ 
+    showmoneybox(18, 0)       
     msgbox(format("TRAINER: {PLAYER}\nBADGES: 0\pAll mints are 200. Which one would you like to purchase?"))
-    dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Impish Mint", "Calm Mint", "Relaxed Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Impish Mint", "Calm Mint", "Relaxed Mint")
+    copyvar(VAR_TEMP_3, VAR_RESULT)
+    hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
 script Mart_Mints_OneBadge{
@@ -80,7 +78,7 @@ script Mart_Mints_OneBadge{
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
@@ -91,7 +89,7 @@ script Mart_Mints_TwoBadges{
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
@@ -103,7 +101,7 @@ script Mart_Mints_ThreeBadges{
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
         "Hasty Mint", "Adamant Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
@@ -116,7 +114,7 @@ script Mart_Mints_FourBadges{
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
         "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
         "Naive Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
@@ -129,7 +127,7 @@ script Mart_Mints_FiveBadges{
         "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
         "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
         "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 }
@@ -143,7 +141,7 @@ script Mart_Mints_SixBadges{
         "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
         "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
         "Serious Mint", "Modest Mint")
-    copyvar(VAR_0x8007, VAR_RESULT)
+    copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
 
@@ -165,27 +163,27 @@ script Mart_Mints_SixBadges{
 
 
 script Mart_MintPurchaseDecision{
-    if (var(VAR_0x8007) == 0) {goto(MintPurchase_Impish)}
-    if (var(VAR_0x8007) == 1) {goto(MintPurchase_Calm)}
-    if (var(VAR_0x8007) == 2) {goto(MintPurchase_Relaxed)}
-    if (var(VAR_0x8007) == 3) {goto(MintPurchase_Bold)}
-    if (var(VAR_0x8007) == 4) {goto(MintPurchase_Gentle)}
-    if (var(VAR_0x8007) == 5) {goto(MintPurchase_Careful)}
-    if (var(VAR_0x8007) == 6) {goto(MintPurchase_Sassy)}
-    if (var(VAR_0x8007) == 7) {goto(MintPurchase_Naughty)}
-    if (var(VAR_0x8007) == 8) {goto(MintPurchase_Brave)}
-    if (var(VAR_0x8007) == 9) {goto(MintPurchase_Timid)}
-    if (var(VAR_0x8007) == 10) {goto(MintPurchase_Hasty)}
-    if (var(VAR_0x8007) == 11) {goto(MintPurchase_Adamant)}
-    if (var(VAR_0x8007) == 12) {goto(MintPurchase_Mild)}
-    if (var(VAR_0x8007) == 13) {goto(MintPurchase_Rash)}
-    if (var(VAR_0x8007) == 14) {goto(MintPurchase_Naive)}
-    if (var(VAR_0x8007) == 15) {goto(MintPurchase_Lax)}
-    if (var(VAR_0x8007) == 16) {goto(MintPurchase_Quiet)}
-    if (var(VAR_0x8007) == 17) {goto(MintPurchase_Lonely)}
-    if (var(VAR_0x8007) == 18) {goto(MintPurchase_Jolly)}
-    if (var(VAR_0x8007) == 19) {goto(MintPurchase_Serious)}
-    if (var(VAR_0x8007) == 20) {goto(MintPurchase_Modest)}
+    if (var(VAR_TEMP_3) == 0) {goto(MintPurchase_Impish)}
+    if (var(VAR_TEMP_3) == 1) {goto(MintPurchase_Calm)}
+    if (var(VAR_TEMP_3) == 2) {goto(MintPurchase_Relaxed)}
+    if (var(VAR_TEMP_3) == 3) {goto(MintPurchase_Bold)}
+    if (var(VAR_TEMP_3) == 4) {goto(MintPurchase_Gentle)}
+    if (var(VAR_TEMP_3) == 5) {goto(MintPurchase_Careful)}
+    if (var(VAR_TEMP_3) == 6) {goto(MintPurchase_Sassy)}
+    if (var(VAR_TEMP_3) == 7) {goto(MintPurchase_Naughty)}
+    if (var(VAR_TEMP_3) == 8) {goto(MintPurchase_Brave)}
+    if (var(VAR_TEMP_3) == 9) {goto(MintPurchase_Timid)}
+    if (var(VAR_TEMP_3) == 10) {goto(MintPurchase_Hasty)}
+    if (var(VAR_TEMP_3) == 11) {goto(MintPurchase_Adamant)}
+    if (var(VAR_TEMP_3) == 12) {goto(MintPurchase_Mild)}
+    if (var(VAR_TEMP_3) == 13) {goto(MintPurchase_Rash)}
+    if (var(VAR_TEMP_3) == 14) {goto(MintPurchase_Naive)}
+    if (var(VAR_TEMP_3) == 15) {goto(MintPurchase_Lax)}
+    if (var(VAR_TEMP_3) == 16) {goto(MintPurchase_Quiet)}
+    if (var(VAR_TEMP_3) == 17) {goto(MintPurchase_Lonely)}
+    if (var(VAR_TEMP_3) == 18) {goto(MintPurchase_Jolly)}
+    if (var(VAR_TEMP_3) == 19) {goto(MintPurchase_Serious)}
+    if (var(VAR_TEMP_3) == 20) {goto(MintPurchase_Modest)}
     
     release
     end
