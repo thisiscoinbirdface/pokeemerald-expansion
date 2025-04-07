@@ -259,7 +259,7 @@ CeramBaseCamp_Excadrill_5:
 # 177 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_2
 # 178 "data//maps/CeramBaseCamp/scripts.pory"
-	setwildbattle SPECIES_EXCADRILL, 30
+	setwildbattle SPECIES_EXCADRILL, 37
 # 179 "data//maps/CeramBaseCamp/scripts.pory"
 	dowildbattle
 # 182 "data//maps/CeramBaseCamp/scripts.pory"

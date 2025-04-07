@@ -29,4 +29,4 @@ CeramBaseCamp_House1_NPC_Text_0:
 
 CeramBaseCamp_House1_Pokemon_Text_0:
 # 12 "data//maps/CeramBaseCamp_House1/scripts.pory"
-	.string "POOCHYENA looks happy.$"
+	.string "GREAVARD looks happy.$"

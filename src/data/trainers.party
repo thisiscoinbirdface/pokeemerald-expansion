@@ -630,7 +630,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MTCERAM_GRUNT1 ===
 Name: GALE
 Class: Team Somber
-Pic: Team Somber M
+Pic: Somber Grunt M
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -643,7 +643,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MTCERAM_GRUNT2 ===
 Name: DENNY
 Class: Team Somber
-Pic: Team Somber M
+Pic: Somber Grunt M
 Gender: Male
 Music: Suspicious
 Double Battle: No

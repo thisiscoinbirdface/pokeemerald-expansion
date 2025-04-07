@@ -14185,24 +14185,23 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_RotomCatalog,
         .iconPalette = gItemIconPalette_RotomCatalog,
     },    
+
+
+    [ITEM_HEAL_PASS] =
+    {
+        .name = _("Heal Pass"),
+        .pluralName = _("Heal Passes"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Trade with Nurse Joy\n"
+            "on any route to heal\n"
+            "your {PKMN}."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ContestPass,
+        .iconPalette = gItemIconPalette_ContestPass,
+    },
+
 };
-
-
-[ITEM_HEAL_PASS] =
-{
-    .name = _("Heal Pass"),
-    .pluralName = _("Heal Passes"),
-    .price = 0,
-    .description = COMPOUND_STRING(
-        "Trade with Nurse Joy\n"
-        "on any route to heal\n"
-        "your {PKMN}."),
-    .importance = 1,
-    .pocket = POCKET_KEY_ITEMS,
-    .type = ITEM_USE_BAG_MENU,
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    .iconPic = gItemIcon_ContestPass,
-    .iconPalette = gItemIconPalette_ContestPass,
-},
-
-
