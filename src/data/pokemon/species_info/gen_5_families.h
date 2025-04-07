@@ -2947,9 +2947,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_GURDURR] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 105,
-        .baseDefense   = 85,
+        .baseHP        = 75,    //85
+        .baseAttack    = 95,   //105
+        .baseDefense   = 75,    //85
         .baseSpeed     = 40,
         .baseSpAttack  = 40,
         .baseSpDefense = 50,

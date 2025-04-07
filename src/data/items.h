@@ -14141,7 +14141,7 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Student IDs"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A one-day student ID\n"
+            "One-day student ID\n"
             "for the GALECREST\n"
             "DETECTIVE ACADEMY."),
         .importance = 1,

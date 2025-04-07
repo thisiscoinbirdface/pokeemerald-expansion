@@ -1953,7 +1953,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_CERULEDGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 844
-            .heldItem = ITEM_ORAN_BERRY,
+            .heldItem = ITEM_SITRUS_BERRY,
 #line 846
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 845

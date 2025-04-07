@@ -457,16 +457,14 @@ script GalecrestCity_NPC_15{
 }
 
 script GalecrestCity_NPC_16{
-    lockall
-    faceplayer    
+    lockall    
     msgbox(format("I'm sorry! I won't skip class again!"))
     releaseall
 }
 
 script GalecrestCity_NPC_17{
-    lockall
-    faceplayer    
-    msgbox(format("One more misdeneanour and I'll have you expelled, got it? And then you'll never get your CHARCADET."))
+    lockall    
+    msgbox(format("One more misdeneanour and I'll have you expelled, got it? And then you'll never get your Charcadet."))
     releaseall
 }
 

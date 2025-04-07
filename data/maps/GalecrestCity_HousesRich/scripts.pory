@@ -138,7 +138,8 @@ script GalecrestCity_HousesRich_NPC9{
 script GalecrestCity_HousesRich_Keckleon{
     lockall
     faceplayer
-    msgbox(format("GLALIE glares intently at you."))
+    playmoncry(SPECIES_GLALIE, CRY_MODE_NORMAL)
+    msgbox(format("Glalie glares intently at you."))
     releaseall
 }
 

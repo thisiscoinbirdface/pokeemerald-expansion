@@ -222,8 +222,10 @@ GalecrestCity_HousesRich_Keckleon::
 # 140 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	faceplayer
 # 141 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_Keckleon_Text_0
+	playmoncry SPECIES_GLALIE, CRY_MODE_NORMAL
 # 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_Keckleon_Text_0
+# 143 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	releaseall
 	return
 
@@ -332,5 +334,5 @@ GalecrestCity_HousesRich_NPC9_Text_2:
 	.string "anything you like.$"
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
-# 141 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "GLALIE glares intently at you.$"
+# 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	.string "Glalie glares intently at you.$"

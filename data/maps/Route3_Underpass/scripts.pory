@@ -72,6 +72,7 @@ script Route3_Underpass_EvilBattle_Trigger2{
 
 script Route3_Underpass_EvilBattle{
     lockall
+    call(Common_EventScript_SaveGame)
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))

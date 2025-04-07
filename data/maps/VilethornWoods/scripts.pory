@@ -1,6 +1,9 @@
 raw `
     .set LOCALID_GRUNT, 18
     .set LOCALID_PROF, 17
+    .set LOCALID_RALTS1, 20
+    .set LOCALID_RALTS2, 21
+    .set LOCALID_RALTS3, 22
 `
 
 mapscripts VilethornWoods_MapScripts{}
@@ -33,10 +36,10 @@ script VilethornWoods_Ralts_FirstTrigger{
     if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
 
     lockall
-    applymovement(23, moves(face_up emote_exclamation_mark))
+    applymovement(LOCALID_RALTS1, moves(face_up emote_exclamation_mark))
     waitmovement(0)
     delay(12)
-    applymovement(23, moves(fly_up))
+    applymovement(LOCALID_RALTS1, moves(fly_up))
     waitmovement(0)
     
     //Setup flags
@@ -59,15 +62,15 @@ script VilethornWoods_Ralts_SecondTrigger{
     if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
 
     lockall
-    applymovement(21, moves(face_up emote_exclamation_mark))
+    applymovement(LOCALID_RALTS2, moves(face_up emote_exclamation_mark))
     waitmovement(0)
     delay(12)
-    applymovement(21, moves(fly_up))
+    applymovement(LOCALID_RALTS2, moves(fly_up))
     waitmovement(0)
 
     //Setup flags
     //hide self
-    removeobject(21)
+    removeobject(LOCALID_RALTS2)
     setflag(FLAG_HIDE_VILETHORN_RALTS_2)
     clearflag(FLAG_HIDE_VILETHORN_RALTS_3)
 
@@ -84,19 +87,20 @@ script VilethornWoods_Ralts_SecondTrigger{
 script VilethornWoods_Ralts{
     lockall
     playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
-    applymovement(22, moves(emote_exclamation_mark))
+    applymovement(LOCALID_RALTS3, moves(emote_exclamation_mark))
+    waitmovement(0)
     faceplayer
     waitmovement(0)
     delay(16)
     msgbox(format("Aha! RALTS can't escape this time!"))
     release
 
-    setwildbattle(SPECIES_RALTS, 10)
+    setwildbattle(SPECIES_RALTS, 18)
     dowildbattle
 
     setflag(FLAG_HIDE_VILETHORN_RALTS_3)        
     setflag(FLAG_VILETHORN_RALTS_FINISHED)        
-    removeobject(22)
+    removeobject(LOCALID_RALTS3)
 
     releaseall
     end

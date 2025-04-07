@@ -1306,4 +1306,7 @@ Route5_Greta_MysteriousRock_Text_0:
 
 Common_Text_Greta_Comecome::
 # 473 "data//maps/TempCopyMap/scripts.pory"
-	.string "Come, come. I've got some really great stuff from...well, you can't ask a magician to reveal her secrets, can you?$"
+	.string "Come, come. I've got some really great\n"
+	.string "stuff from...well, you can't ask a\l"
+	.string "magician to reveal her secrets, can\l"
+	.string "you?$"

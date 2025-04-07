@@ -4814,7 +4814,7 @@
     {
       "id": "LAYOUT_ROUTE5",
       "name": "Route5_Layout",
-      "width": 70,
+      "width": 74,
       "height": 30,
       "primary_tileset": "gTileset_SilversunPrimary",
       "secondary_tileset": "gTileset_Rustboro",
