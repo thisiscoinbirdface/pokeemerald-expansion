@@ -15,7 +15,7 @@ script WhiteSign_CarabrueTown_TenebrisLab{
 
 //Route 1
 script WhiteSign_Route1_NextToCarabrue {
-    msgbox(format("Route 1\p{LEFT_ARROW} Carabrue Town\n{UP_ARROW} Fennilahl Town"), MSGBOX_SIGN)
+    msgbox(format("Route 1\nNew beginnings!\p{LEFT_ARROW} Carabrue Town\n{UP_ARROW} Fennilahl Town"), MSGBOX_SIGN)
     end
 }
 
@@ -26,7 +26,7 @@ script WoodSign_Route1_Middle {
 }
 
 script WhiteSign_Route1_NextToFennilahl {
-    msgbox(format("Route 1\p{RIGHT_ARROW} Fennilahl Town\n{LEFT_ARROW} Carabrue Town."), MSGBOX_SIGN)
+    msgbox(format("Route 1\nNew beginnings!\p{RIGHT_ARROW} Fennilahl Town.\n{LEFT_ARROW} Carabrue Town."), MSGBOX_SIGN)
     end
 }
 
@@ -38,12 +38,12 @@ script WhiteSign_FennilahlTown_Main {
 }
 
 script WhiteSign_FennilahlTown_TowardsRoute2 {
-    msgbox(format("{DOWN_ARROW}ROUTE 2\nConnecting to Vine River."), MSGBOX_SIGN)
+    msgbox(format("{DOWN_ARROW}ROUTE 2\p{DOWN_ARROW}Starfall Caves.\n{RIGHT_ARROW}Vine River."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_FennilahlTown_TowardsRoute3{
-    msgbox(format("{UP_ARROW} UNDERGROUND TUNNEL\nTo ROUTE 3 and Gastree City."), MSGBOX_SIGN)
+    msgbox(format("{UP_ARROW} Underground Tunnel\nTo Route 3 and Gastree City."), MSGBOX_SIGN)
     end
 }
 
@@ -54,7 +54,7 @@ script WhiteSign_FennilahlTown_TowardsRoute3{
 
 //ROUTE 3
 script WhiteSign_Route3_TowardsFennilahl {
-    msgbox(format("ROUTE 3\p{UP_ARROW} Fennilahl Town\n{RIGHT_ARROW} Gastree City."), MSGBOX_SIGN)
+    msgbox(format("ROUTE 3\p{UP_ARROW} Fennilahl Town.\n{RIGHT_ARROW} Gastree City."), MSGBOX_SIGN)
     end
 }
 
@@ -64,7 +64,7 @@ script WhiteSign_Route3_VineRiverUnderpass {
 }
 
 script WhiteSign_Route3_TowardsGastree {
-    msgbox(format("ROUTE 3\p{UP_ARROW} Gastree City.\n{LEFT_ARROW} Fennilahl Town"), MSGBOX_SIGN)
+    msgbox(format("ROUTE 3\p{UP_ARROW} Gastree City.\n{LEFT_ARROW} Fennilahl Town."), MSGBOX_SIGN)
     end
 }
 
@@ -78,12 +78,12 @@ script WhiteSign_GastreeCity_Main {
 }
 
 script WhiteSign_GastreeCity_TeaHouse{
-    msgbox(format("GASTREE TEAHOUSE\nFragrant teas and quiet moments."), MSGBOX_SIGN)
+    msgbox(format("Gastree Teahouse\nFragrant teas and quiet moments."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_GastreeCity_Gym{
-    msgbox(format("GASTREE GYM\nLeader: INGER"), MSGBOX_SIGN)
+    msgbox(format("Gastree Gym\nLeader: Inger"), MSGBOX_SIGN)
     end
 }
 
@@ -91,12 +91,12 @@ script WhiteSign_GastreeCity_Gym{
 
 ///ROUTE 4
 script WhiteSign_Route4_TowardsGastree {
-    msgbox(format("ROUTE 4\p{DOWN_ARROW} Gastree City.\n{UP_ARROW} Ceram Base Camp"), MSGBOX_SIGN)
+    msgbox(format("Route 4\p{DOWN_ARROW} Gastree City.\n{UP_ARROW} Ceram Base Camp."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_Route4_TowardsCeramBaseCamp {
-    msgbox(format("ROUTE 4\p{UP_ARROW} Ceram Base Camp\n{DOWN_ARROW} Gastree City."), MSGBOX_SIGN)
+    msgbox(format("Route 4\p{UP_ARROW} Ceram Base Camp.\n{DOWN_ARROW} Gastree City."), MSGBOX_SIGN)
     end
 }
 
@@ -118,12 +118,12 @@ script WhiteSign_CeramBaseCamp_UpToMtCeram{
 
 script WhiteSign_CeramBaseCamp_SupplyDepot{
 
-    msgbox(format("SUPPLY DEPOT\nAll your trekking needs!"), MSGBOX_SIGN)
+    msgbox(format("Supply Depot\nAll your trekking needs!"), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_CeramBaseCamp_Gym{
-    msgbox(format("GASTREE GYM\nLeader: ARIAN"), MSGBOX_SIGN)
+    msgbox(format("Gastree Gym\nLeader: Arian"), MSGBOX_SIGN)
     end
 }
 
@@ -148,13 +148,86 @@ script WhiteSign_GalecrestCity_Main{
 
 script WhiteSign_GalecrestCity_Garden{
 
-    msgbox(format("GALECREST GARDEN\nPlease don't disturb the ROTOMS."), MSGBOX_SIGN)
+    msgbox(format("Galecrest Garden\nPlease don't disturb the ROTOMS."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_GalecrestCity_DetectiveAcademy{
-
-    msgbox(format("DETECTIVE ACADEMY\nWWhere sharp minds are forged."), MSGBOX_SIGN)
+    msgbox(format("Detective Academy\nWhere sharp minds are forged."), MSGBOX_SIGN)
     end
 }
+
+
+script WhiteSign_Route5_ToGalecrest{
+    msgbox(format("Route 5\p{RIGHT_ARROW} Galecrest City.\n{LEFT_ARROW} Silversun City."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route5_ToSilversun{
+    msgbox(format("Route 5\p{LEFT_ARROW} Silversun City.\n{RIGHT_ARROW} Galecrest City."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route5_Vilethorn{
+    msgbox(format("{UP_ARROW}Vilethorn Woods\nTravelers beware!"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route5_Vilethorn{
+    msgbox(format("{UP_ARROW}Vilethorn Woods\nTravelers beware!"), MSGBOX_SIGN)
+    end
+}
+
+
+script WoodSign_SilversunCity_Artist1{
+    msgbox(format("You are NOT to disturb the great Arsalan!"), MSGBOX_SIGN)
+    end
+}
+
+script WoodSign_SilversunCity_Artist2{
+    msgbox(format("Philistines keep OUT!"), MSGBOX_SIGN)
+    end
+}
+
+script WoodSign_SilversunCity_Artist3{
+    msgbox(format("Deliveries by the door please."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_SilversunCity_Main{
+    msgbox(format("Silversun City\pThe metropolis of the north."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_SilversunCity_Theater{
+    msgbox(format("Silversun Theatre\pPrepare to be enthralled!\Bookings close a day prior."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_SilversunCity_Orphanage{
+    msgbox(format("Silversun Blind Orphanage\pLove can be seen by all."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_SilversunCity_Sewers{
+    msgbox(format("Silversun Sewers\pEntry for authorised personnel only."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_SilversunCity_Gym{
+    msgbox(format("Silversun Gym\Leader: Gloria."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_HoyaRiverNorth{
+    msgbox(format("Hoya River North Crossin\nNo swimming in these waters!\p{RIGHT_ARROW}Silversun City.\n{DOWN_ARROW}Route 6."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_HoyaRiverSouth{
+    msgbox(format("Hoya River South Crossing\nNo swimming in these waters!\p{LEFT_ARROW}Pelluca City.\n{RIGHT_ARROW}Route 6."), MSGBOX_SIGN)
+    end
+}
+
+
 

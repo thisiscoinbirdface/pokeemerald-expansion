@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_SILVERSUN_CITY",
-      "offset": -37,
+      "offset": -36,
       "direction": "right"
     },
     {
@@ -159,6 +159,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Orphanage"
+    }
   ]
 }

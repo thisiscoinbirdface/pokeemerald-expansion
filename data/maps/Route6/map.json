@@ -489,6 +489,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Orphanage"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 104,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Orphanage"
+    }
   ]
 }

@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_HOYA_RIVER_NORTH",
-      "offset": 37,
+      "offset": 36,
       "direction": "left"
     }
   ],
@@ -298,6 +298,77 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Main"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Gym"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 33,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Theater"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 44,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Sewers"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_GalecrestCity_Garden"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Orphanage"
+    },
+    {
+      "type": "sign",
+      "x": 41,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Artist1"
+    },
+    {
+      "type": "sign",
+      "x": 39,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Artist2"
+    },
+    {
+      "type": "sign",
+      "x": 41,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_SilversunCity_Artist3"
+    }
   ]
 }

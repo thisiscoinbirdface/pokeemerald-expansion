@@ -388,7 +388,7 @@ script GalecrestCity_Chansey{
 script GalecrestCity_NPC_12{
     lockall
     faceplayer    
-    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk from Galecrest City left to build a mansion deep in the woods. What a strange man!"))
+    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk from Galecrest City left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."))
     releaseall
 }
 
