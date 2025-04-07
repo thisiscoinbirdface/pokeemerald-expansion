@@ -298,9 +298,9 @@ script GalecrestCity_NPC_5{
     faceplayer    
 
     if (flag(FLAG_GALECREST_ROCKSMASH)){
-        msgbox(format("I need to find a {PKMN} that can learn ROCK SMASH..."))
+        msgbox(format("I need to find a Pokemon that can learn ROCK SMASH..."))
     } else {
-        msgbox(format("This rock can be smashed by a {PKMN} that knows a certain move...I forgot which one though! Do you know?"))
+        msgbox(format("This rock can be smashed by a Pokemon that knows a certain move...I forgot which one though! Do you know?"))
         dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ROCK BLAST", "ROCK SLIDE", "ROCK SMASH", "STONE EDGE")
         if (var(VAR_RESULT) == 2){
             msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
@@ -452,7 +452,7 @@ script GalecrestCity_Nickit{
 script GalecrestCity_NPC_15{
     lockall
     faceplayer    
-    msgbox(format("PESTER is this city's Gym Leader! She's tough but calculated. She likes strong {PKMN} and gives them berries to gain an advantage in battle!"))
+    msgbox(format("PESTER is this city's Gym Leader! She's tough but calculated. She likes strong Pokemon and gives them berries to gain an advantage in battle!"))
     releaseall
 }
 

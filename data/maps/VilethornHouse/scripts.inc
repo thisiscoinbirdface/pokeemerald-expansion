@@ -58,9 +58,10 @@ VilethornHouse_NPC2_Text_0:
 # 13 "data//maps/VilethornHouse/scripts.pory"
 	.string "Nobody disturbs us deep in these woods.\n"
 	.string "It's a peaceful and calming lifestyle.\l"
-	.string "Your {PKMN} may also benefit from calming\l"
-	.string "themselves. Do you want me to teach one\l"
-	.string "of your {PKMN} the move CALM MIND?$"
+	.string "Your Pokemon may also benefit from\l"
+	.string "calming themselves. Do you want me to\l"
+	.string "teach one of your Pokemon the move\l"
+	.string "CALM MIND?$"
 
 VilethornHouse_NPC2_Text_1:
 # 18 "data//maps/VilethornHouse/scripts.pory"
@@ -68,5 +69,5 @@ VilethornHouse_NPC2_Text_1:
 
 VilethornHouse_NPC2_Text_2:
 # 20 "data//maps/VilethornHouse/scripts.pory"
-	.string "If you have any other {PKMN} who want to\n"
-	.string "experience nirvana, come to me.$"
+	.string "If you have any other Pokemon who want\n"
+	.string "to experience nirvana, come to me.$"

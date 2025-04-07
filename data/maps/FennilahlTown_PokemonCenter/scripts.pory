@@ -22,7 +22,7 @@ script FennilahlTown_PokemonCenter_NPC1{
 	if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
 		msgbox(format("You're the one who stopped the pickpocketing CLEFAIRY? Well done!"))		
 	} else {
-		msgbox(format("We've had an increase in pickpocketing recently. We suspect it's a nearby {PKMN}."))		
+		msgbox(format("We've had an increase in pickpocketing recently. We suspect it's a nearby Pokemon."))		
 	}
 
 	releaseall

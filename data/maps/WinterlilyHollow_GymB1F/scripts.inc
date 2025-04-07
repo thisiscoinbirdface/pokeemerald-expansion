@@ -280,8 +280,8 @@ WinterlilyHollowGym_LeaderBattle_Text_2:
 WinterlilyHollowGym_LeaderBattle_Text_3:
 # 128 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "The CINDER BADGE increases the ATK of\n"
-	.string "all your {PKMN} and lets you control {PKMN}\l"
-	.string "upto lv. 20.$"
+	.string "all your Pokemon and lets you control\l"
+	.string "Pokemon upto lv. 20.$"
 
 WinterlilyHollowGym_LeaderBattle_Text_4:
 # 129 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -289,9 +289,9 @@ WinterlilyHollowGym_LeaderBattle_Text_4:
 
 WinterlilyHollowGym_LeaderBattle_Text_5:
 # 133 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "This TM will let your {PKMN} bring sunlight\n"
-	.string "on the battlefield, powering up\l"
-	.string "FIRE-type moves!$"
+	.string "This TM will let your Pokemon bring\n"
+	.string "sunlight on the battlefield, powering\l"
+	.string "up FIRE-type moves!$"
 
 WinterlilyHollowGym_LeaderBattle_Text_6:
 # 137 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"

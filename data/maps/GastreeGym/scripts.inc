@@ -151,7 +151,7 @@ GastreeGym_Red_Text_1:
 	.string "perk up, child! If it was easy, it\l"
 	.string "wouldn't be worth anything.\p"
 	.string "Against INGER, avoid using FIRE, FLYING\n"
-	.string "and BUG type {PKMN}. Now go get 'em,\l"
+	.string "and BUG type Pokemon. Now go get 'em,\l"
 	.string "champ-in-the-making!$"
 
 GastreeGym_Text_Intro::
@@ -162,11 +162,11 @@ GastreeGym_Text_Intro::
 	.string "In that case, you picked the wrong gym!\p"
 	.string "I'm INGER, master of Rock-types and\n"
 	.string "the unshakable strength of the earth.\l"
-	.string "My ROCK type {PKMN} have seen countless\l"
-	.string "battles, and they never crumble under\l"
-	.string "pressure. If you think you can break\l"
-	.string "through, show me the strength that you\l"
-	.string "bring with you!$"
+	.string "My ROCK type Pokemon have seen\l"
+	.string "countless battles, and they never\l"
+	.string "crumble under pressure. If you think\l"
+	.string "you can break through, show me the\l"
+	.string "strength that you bring with you!$"
 
 GastreeGym_Text_Defeated::
 # 58 "data//maps/GastreeGym/scripts.pory"

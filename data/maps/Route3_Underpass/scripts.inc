@@ -408,9 +408,9 @@ Route3_Underpass_NPC1_Text_0:
 
 Route3_Underpass_NPC2_Text_0:
 # 34 "data//maps/Route3_Underpass/scripts.pory"
-	.string "They say that a rare {PKMN} has made these\n"
-	.string "caves its home. I need to go deeper\l"
-	.string "down!$"
+	.string "They say that a rare Pokemon has made\n"
+	.string "these caves its home. I need to go\l"
+	.string "deeper down!$"
 
 Route3_Underpass_EvilBattle_Text_0:
 # 84 "data//maps/Route3_Underpass/scripts.pory"
@@ -438,7 +438,7 @@ Route3_Underpass_EvilBattle_Text_4:
 	.string "???: Hahaha! Your Clefairy wants to\n"
 	.string "protect you, but you don't even have\l"
 	.string "the will to fight alongside her. Just\l"
-	.string "give up before I bring my {PKMN} out!$"
+	.string "give up before I bring my Pokemon out!$"
 
 Route3_Underpass_EvilBattle_Text_5:
 # 102 "data//maps/Route3_Underpass/scripts.pory"
@@ -464,7 +464,7 @@ Route3_Underpass_EvilBattle_Text_8:
 
 Route3_Underpass_EvilBattle_Text_9:
 # 113 "data//maps/Route3_Underpass/scripts.pory"
-	.string "My {PKMN} just aren't good enough!$"
+	.string "My Pokemon just aren't good enough!$"
 
 Route3_Underpass_EvilBattle_Text_10:
 # 121 "data//maps/Route3_Underpass/scripts.pory"

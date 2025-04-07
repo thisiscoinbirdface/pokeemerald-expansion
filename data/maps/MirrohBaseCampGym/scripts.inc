@@ -162,7 +162,7 @@ MirrohBaseCampGym_Leader_Text_1:
 	.string "left.\p"
 	.string "CARONA: My name is CARONA, trainer. I am\n"
 	.string "the former Leader of the Mirroh Base\l"
-	.string "Camp GYM. The {PKMN} league recently\l"
+	.string "Camp GYM. The Pokemon league recently\l"
 	.string "decomissioned this gym.$"
 
 MirrohBaseCampGym_Leader_Text_2:
@@ -244,7 +244,7 @@ MirrohBaseCampGym_Leader_Text_10:
 MirrohBaseCampGym_Leader_Text_11:
 # 67 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "CAROLA: The MEGA RING will allow you to\n"
-	.string "Mega Evolve specific {PKMN} as long as\l"
+	.string "Mega Evolve specific Pokemon as long as\l"
 	.string "they hold their unique MEGA STONE.\l"
 	.string "Carry on our legacy, trainer! Show the\l"
 	.string "world your iron fists!$"

@@ -7,18 +7,18 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
 
     //Pre-quest
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("I'm looking for a book on all the {PKMN} in Cormoria! But I'm too short to touch the braille on the book covers..."))
+        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."))
         release
         end
     }
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("I'm looking for a book on all the {PKMN} in Cormoria! But I'm too short to touch the braille on the book covers..."))
+        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."))
         release
         end
     }    
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
-        msgbox(format("This book is hard to understand! I wish I could touch all these {PKMN} so I know what they feel like. But the teacher says that's dangerous too! What if I touch a PINCURCHIN or a CORSOLA?"))
+        msgbox(format("This book is hard to understand! I wish I could touch all these Pokemon so I know what they feel like. But the teacher says that's dangerous too! What if I touch a PINCURCHIN or a CORSOLA?"))
         end
     }
 
@@ -74,12 +74,12 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
     }
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
-        msgbox(format("I want a book on all the {PKMN} in Cormoria!"))
+        msgbox(format("I want a book on all the Pokemon in Cormoria!"))
         release
         end
     }
 
-    msgbox(format("I'm looking for a book on all the {PKMN} in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"))
+    msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"))
     setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
     releaseall
     end

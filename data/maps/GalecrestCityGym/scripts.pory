@@ -24,7 +24,7 @@ script GalecrestCityGym_Test{
 script GalecrestCityGym_Red {
     lockall
     faceplayer
-    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type {PKMN} that are comfortable in a variety of urban situations. FIGHTING type {PKMN} should do well here!"))
+    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here!"))
     releaseall
 }
 script GalecrestCityGym_NPC1 {
@@ -120,7 +120,7 @@ script GalecrestCityGym_Leader {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("KOHLA: The STOIC BADGE lets you control {PKMN} upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
+        msgbox(format("KOHLA: The STOIC BADGE lets you control Pokemon upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
         release
         
         //Bye-bye
@@ -138,7 +138,7 @@ script GalecrestCityGym_Leader {
 
 
 text GalecrestCityGym_Text_LeaderIntro{
-    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate. And this year, that's me! Normally I would use the gym standard NORMAL {PKMN}, but since it's you, I'm going to make an exception. I'm going to crush you with my REAL team!")
+    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate. And this year, that's me! Normally I would use the gym standard NORMAL Pokemon, but since it's you, I'm going to make an exception. I'm going to crush you with my REAL team!")
 }
 
 text GalecrestCityGym_Text_Defeated{

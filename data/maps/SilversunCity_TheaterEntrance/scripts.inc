@@ -307,7 +307,7 @@ SilversunCity_TheaterEntrance_EventScript_NPC4_Text_1:
 SilversunCity_TheaterEntrance_EventScript_NPC5_Text_0:
 # 121 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Hey - get in the shot! Not you - your\n"
-	.string "{PKMN}! You can keep moving.$"
+	.string "Pokemon! You can keep moving.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC5_Text_1:
 # 123 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"

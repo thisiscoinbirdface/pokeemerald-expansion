@@ -39,8 +39,8 @@ script MirrohInterior_1F_Trainer_B{
 
 //HIKER 2
 script MirrohInterior_1F_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHINT_C, format("I may switch to ICE type {PKMN} after seeing the {PKMN} here!"), format("I should just use ROCK types!"))
-    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type {PKMN}!"))
+    trainerbattle_single(TRAINER_MIRROHINT_C, format("I may switch to ICE type Pokemon after seeing the Pokemon here!"), format("I should just use ROCK types!"))
+    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type Pokemon!"))
     releaseall
 }
 
@@ -78,7 +78,7 @@ script MirrohInterior_1F_Trainer_E{
 script MirrohInterior_1F_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type {PKMN} can't deal with all the ICE type {PKMN} around here..."))
+    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type Pokemon can't deal with all the ICE type Pokemon around here..."))
     releaseall
     end
 }

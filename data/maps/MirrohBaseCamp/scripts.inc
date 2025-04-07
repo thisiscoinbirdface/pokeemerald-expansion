@@ -150,5 +150,5 @@ MirrohBaseCamp_EventScript_NPC1_Text_0:
 
 MirrohBaseCamp_EventScript_NPC2_Text_0:
 # 71 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "The {PKMN} Graveyard lies ahead. Please be\n"
-	.string "respectful.$"
+	.string "The Pokemon Graveyard lies ahead.\n"
+	.string "Please be respectful.$"

@@ -558,29 +558,30 @@ FennilahlTown_EventScript_Man_Text_0:
 
 FennilahlTown_EventScript_Woman_Text_0:
 # 22 "data//maps/FennilahlTown/scripts.pory"
-	.string "If your {PKMN} hold a SOOTHE BELL, they'll\n"
-	.string "become attached to you faster!$"
+	.string "If your Pokemon hold a SOOTHE BELL,\n"
+	.string "they'll become attached to you faster!$"
 
 FennilahlTown_EventScript_Woman_Text_1:
 # 24 "data//maps/FennilahlTown/scripts.pory"
-	.string "My, that's such a cute little {PKMN} you\n"
-	.string "have with you! Here, use this and treat\l"
-	.string "it with care, okay?$"
+	.string "My, that's such a cute little Pokemon\n"
+	.string "you have with you! Here, use this and\l"
+	.string "treat it with care, okay?$"
 
 Fennilahl_Breech_StartQuest_Text_0:
 # 44 "data//maps/FennilahlTown/scripts.pory"
 	.string "I found a STRANGE ROCK in the caves\n"
-	.string "south of town, but a small PINK {PKMN} took\l"
-	.string "it and ran away! And I don't have any\l"
-	.string "{PKMN} to help me get it back! I don't want\l"
-	.string "to battle - I can't deal with conflict.\p"
+	.string "south of town, but a small PINK Pokemon\l"
+	.string "took it and ran away! And I don't have\l"
+	.string "any Pokemon to help me get it back! I\l"
+	.string "don't want to battle - I can't deal with\l"
+	.string "conflict.\p"
 	.string "I don't know what to do! Will you help me\n"
 	.string "out?$"
 
 Fennilahl_Breech_StartQuest_Text_1:
 # 47 "data//maps/FennilahlTown/scripts.pory"
 	.string "Amazing! You've answered my prayers. I\n"
-	.string "saw the pink {PKMN} run down south,\l"
+	.string "saw the pink Pokemon run down south,\l"
 	.string "towards ROUTE 2. I really liked that\l"
 	.string "STRANGE ROCK! Please bring it back.$"
 
@@ -611,8 +612,9 @@ Fennilahl_Breech_QuestInProgress_Text_3:
 	.string "CLEFAIRY: clee!!!\p"
 	.string "Ouch! Clefairy stop! Haha! Alright\n"
 	.string "alright, you come along with me then.\l"
-	.string "But you're not my {PKMN} okay? I don't like\l"
-	.string "battling. You'll be my hiking partner!$"
+	.string "But you're not my Pokemon okay? I don't\l"
+	.string "like battling. You'll be my hiking\l"
+	.string "partner!$"
 
 Fennilahl_Breech_QuestInProgress_Text_4:
 # 86 "data//maps/FennilahlTown/scripts.pory"

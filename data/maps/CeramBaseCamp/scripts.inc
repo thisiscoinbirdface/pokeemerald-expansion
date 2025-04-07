@@ -454,7 +454,7 @@ CeramBaseCamp_Excadrill_Text_1:
 
 CeramBaseCamp_Excadrill_Text_2:
 # 177 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "A wild {PKMN} attacks!$"
+	.string "A wild Pokemon attacks!$"
 
 CeramBaseCamp_Excadrill_Text_3:
 # 190 "data//maps/CeramBaseCamp/scripts.pory"

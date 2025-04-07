@@ -364,7 +364,8 @@ MtMirrohExterior_Trainer_A_Text_1:
 MtMirrohExterior_Trainer_A_Text_2:
 # 66 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I'm training here so that I can safely\n"
-	.string "go back to the {PKMN} Center if I need to.$"
+	.string "go back to the Pokemon Center if I need\l"
+	.string "to.$"
 
 MtMirrohExterior_Trainer_B_Text_0:
 # 71 "data//maps/MtMirrohExterior/scripts.pory"

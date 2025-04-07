@@ -121,7 +121,7 @@ MirrohInterior_2F_NPC_C::
 MirrohInterior_2F_CavePainting_WalkingWake_Text_0:
 # 12 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "It's an ancient cave painting...a never\n"
-	.string "before seen {PKMN}! It looks somewhat\l"
+	.string "before seen Pokemon! It looks somewhat\l"
 	.string "reptilian, but also has feathers.\l"
 	.string "Terrifying!$"
 
@@ -184,8 +184,8 @@ MirrohInterior_2F_Trainer_D_Text_2:
 MirrohInterior_2F_Trainer_E_Text_0:
 # 55 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Why are you here? Are you trying to\n"
-	.string "steal my {PKMN} like those Team Somber\l"
-	.string "grunts?$"
+	.string "steal my Pokemon like those Team\l"
+	.string "Somber grunts?$"
 
 MirrohInterior_2F_Trainer_E_Text_1:
 # 55 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -195,8 +195,8 @@ MirrohInterior_2F_Trainer_E_Text_2:
 # 56 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "When I was on the upper floor, some\n"
 	.string "Team Somber grunts tried to take my\l"
-	.string "{PKMN}. But I beat one of them and ran away\l"
-	.string "from the other!$"
+	.string "Pokemon. But I beat one of them and ran\l"
+	.string "away from the other!$"
 
 MirrohInterior_2F_Trainer_F_Text_0:
 # 61 "data//maps/MirrohInterior_2F/scripts.pory"

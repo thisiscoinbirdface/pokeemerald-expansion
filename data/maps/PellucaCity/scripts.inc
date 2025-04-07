@@ -772,4 +772,5 @@ PellucaCity_WingullMother_Text_0:
 PellucaCity_WingullCritique_Text_0:
 # 304 "data//maps/PellucaCity/scripts.pory"
 	.string "That little girl is so bad! Throwing\n"
-	.string "stones at {PKMN}...that's poor parenting.$"
+	.string "stones at Pokemon...that's poor\l"
+	.string "parenting.$"

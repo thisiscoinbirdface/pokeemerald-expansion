@@ -638,17 +638,19 @@ SilversunCity_BlindOrphanage_BrailleGameStart_Movement_1:
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_0:
 # 10 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I'm looking for a book on all the {PKMN} in\n"
-	.string "Cormoria! But I'm too short to touch\l"
-	.string "the braille on the book covers...$"
+	.string "I'm looking for a book on all the\n"
+	.string "Pokemon in Cormoria! But I'm too short\l"
+	.string "to touch the braille on the book\l"
+	.string "covers...$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_1:
 # 21 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "This book is hard to understand! I wish\n"
-	.string "I could touch all these {PKMN} so I know\l"
-	.string "what they feel like. But the teacher\l"
-	.string "says that's dangerous too! What if I\l"
-	.string "touch a PINCURCHIN or a CORSOLA?$"
+	.string "I could touch all these Pokemon so I\l"
+	.string "know what they feel like. But the\l"
+	.string "teacher says that's dangerous too!\l"
+	.string "What if I touch a PINCURCHIN or a\l"
+	.string "CORSOLA?$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_2:
 # 26 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -682,14 +684,16 @@ SilversunCity_BlindOrphanage_PokedexGameStart_Text_8:
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_9:
 # 77 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I want a book on all the {PKMN} in Cormoria!$"
+	.string "I want a book on all the Pokemon in\n"
+	.string "Cormoria!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_10:
 # 82 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I'm looking for a book on all the {PKMN} in\n"
-	.string "Cormoria! But I'm too short to touch\l"
-	.string "the braille on the book covers. If you\l"
-	.string "find me one, can you bring it to me?$"
+	.string "I'm looking for a book on all the\n"
+	.string "Pokemon in Cormoria! But I'm too short\l"
+	.string "to touch the braille on the book covers.\l"
+	.string "If you find me one, can you bring it to\l"
+	.string "me?$"
 
 SilversunCity_Book1_Text_0:
 # 95 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"

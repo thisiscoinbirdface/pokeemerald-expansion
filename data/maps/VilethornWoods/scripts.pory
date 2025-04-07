@@ -177,14 +177,14 @@ script VilethornWoods_EventScript_TriggerProf{
 
 //Trainers
 script VilethornWoods_Trainer_A{
-    trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type {PKMN} are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
+    trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type Pokemon are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
     msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
     end
 }
 
 script VilethornWoods_Trainer_B{
-    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type {PKMN}, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
+    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type Pokemon, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
     msgbox(format("This forest is weird...a dense fog, no BUG types..."))
     releaseall
     end
@@ -198,7 +198,7 @@ script VilethornWoods_Trainer_C{
 }
 
 script VilethornWoods_Trainer_D{
-    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a {PKMN} Breeder. Like all breeders, we specialise in certain {PKMN} forms. I'm a horse breeding expert!"), "Well fought!")
+    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokemon Breeder. Like all breeders, we specialise in certain Pokemon forms. I'm a horse breeding expert!"), "Well fought!")
     msgbox(format("I need to raise my horses to become stronger. Maybe some VITAMINS would help..."))
     releaseall
     end
@@ -215,7 +215,7 @@ script VilethornWoods_Trainer_F1{
     lockall
     faceplayer
     trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
-    msgbox(format("I met her at a {PKMN} Breeder festival. There was a battle competition and we were the two finalists!"))
+    msgbox(format("I met her at a Pokemon Breeder festival. There was a battle competition and we were the two finalists!"))
     releaseall
     end
 }

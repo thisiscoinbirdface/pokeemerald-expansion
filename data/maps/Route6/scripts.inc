@@ -607,7 +607,7 @@ Route6_EventScript_Nurse_Text_0:
 	.string "out for a walk and ended up in this\l"
 	.string "storm! I'm waiting here till it passes.\l"
 	.string "If you have a HEAL PASS, CHANSEY can\l"
-	.string "heal your {PKMN} meanwhile.$"
+	.string "heal your Pokemon meanwhile.$"
 
 Route6_EventScript_Nurse_Text_1:
 # 38 "data//maps/Route6/scripts.pory"
@@ -646,11 +646,11 @@ Route6_Trainer_C1_Text_0:
 # 78 "data//maps/Route6/scripts.pory"
 	.string "We're from the Pokemon Ranger\n"
 	.string "Institute. We're on assignment to\l"
-	.string "survey new {PKMN}. Have you got any?$"
+	.string "survey new Pokemon. Have you got any?$"
 
 Route6_Trainer_C1_Text_1:
 # 78 "data//maps/Route6/scripts.pory"
-	.string "You do have new {PKMN}$"
+	.string "You do have new Pokemon$"
 
 Route6_Trainer_C1_Text_2:
 # 79 "data//maps/Route6/scripts.pory"
@@ -661,8 +661,8 @@ Route6_Trainer_C1_Text_2:
 Route6_Trainer_C2_Text_0:
 # 85 "data//maps/Route6/scripts.pory"
 	.string "We're from the Ranger Institute. We're\n"
-	.string "on assignment to survey new {PKMN}. Have\l"
-	.string "you got any?$"
+	.string "on assignment to survey new Pokemon.\l"
+	.string "Have you got any?$"
 
 Route6_Trainer_C2_Text_1:
 # 86 "data//maps/Route6/scripts.pory"
@@ -681,23 +681,23 @@ Route6_Trainer_D_Text_1:
 
 Route6_Trainer_D_Text_2:
 # 93 "data//maps/Route6/scripts.pory"
-	.string "I wonder what {PKMN} I can catch here with\n"
-	.string "a TROLLING ROD instead...$"
+	.string "I wonder what Pokemon I can catch here\n"
+	.string "with a TROLLING ROD instead...$"
 
 Route6_Trainer_E_Text_0:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "I'm aiming to be the {PKMN} Champion, so\n"
-	.string "I've come here to catch rare {PKMN}. Let me\l"
-	.string "test them on you!$"
+	.string "I'm aiming to be the Pokemon Champion,\n"
+	.string "so I've come here to catch rare\l"
+	.string "Pokemon. Let me test them on you!$"
 
 Route6_Trainer_E_Text_1:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "No - my rare {PKMN}!$"
+	.string "No - my rare Pokemon!$"
 
 Route6_Trainer_E_Text_2:
 # 100 "data//maps/Route6/scripts.pory"
-	.string "Catching good {PKMN} isn't enough. I need\n"
-	.string "to train rigorously too.$"
+	.string "Catching good Pokemon isn't enough. I\n"
+	.string "need to train rigorously too.$"
 
 Route6_Trainer_F_Text_0:
 # 106 "data//maps/Route6/scripts.pory"
@@ -716,7 +716,7 @@ Route6_Trainer_F_Text_2:
 Route6_Trainer_G_Text_0:
 # 113 "data//maps/Route6/scripts.pory"
 	.string "Us BREEDERS like to train one type of\n"
-	.string "{PKMN}. I specialise in dogs!$"
+	.string "Pokemon. I specialise in dogs!$"
 
 Route6_Trainer_G_Text_1:
 # 113 "data//maps/Route6/scripts.pory"
@@ -724,13 +724,14 @@ Route6_Trainer_G_Text_1:
 
 Route6_Trainer_G_Text_2:
 # 114 "data//maps/Route6/scripts.pory"
-	.string "Dog {PKMN} are rare in Cormoria! Someone in\n"
-	.string "Pelluca City traded me my HOUNDOOR.$"
+	.string "Dog Pokemon are rare in Cormoria!\n"
+	.string "Someone in Pelluca City traded me my\l"
+	.string "HOUNDOOR.$"
 
 Route6_Trainer_H_Text_0:
 # 120 "data//maps/Route6/scripts.pory"
 	.string "This weather is prime for my BUG-type\n"
-	.string "{PKMN}! You won't be able to handle it!$"
+	.string "Pokemon! You won't be able to handle it!$"
 
 Route6_Trainer_H_Text_1:
 # 120 "data//maps/Route6/scripts.pory"
@@ -739,13 +740,14 @@ Route6_Trainer_H_Text_1:
 Route6_Trainer_H_Text_2:
 # 121 "data//maps/Route6/scripts.pory"
 	.string "Although bugs thrive in marshes, there\n"
-	.string "aren't many BUG-type {PKMN} around here.$"
+	.string "aren't many BUG-type Pokemon around\l"
+	.string "here.$"
 
 Route6_Trainer_I_Text_0:
 # 127 "data//maps/Route6/scripts.pory"
 	.string "I heard there was a rare DRAGON-type\n"
-	.string "{PKMN} here in Route 6, but I can't find any\l"
-	.string "on land!$"
+	.string "Pokemon here in Route 6, but I can't\l"
+	.string "find any on land!$"
 
 Route6_Trainer_I_Text_1:
 # 127 "data//maps/Route6/scripts.pory"
@@ -759,8 +761,8 @@ Route6_Trainer_I_Text_2:
 Route6_Trainer_J_Text_0:
 # 134 "data//maps/Route6/scripts.pory"
 	.string "Past Pelluca City is the Mirroh Base\n"
-	.string "Camp and a {PKMN} graveyard. I want to go\l"
-	.string "there to commune with the afterlife!$"
+	.string "Camp and a Pokemon graveyard. I want to\l"
+	.string "go there to commune with the afterlife!$"
 
 Route6_Trainer_J_Text_1:
 # 134 "data//maps/Route6/scripts.pory"
@@ -768,8 +770,8 @@ Route6_Trainer_J_Text_1:
 
 Route6_Trainer_J_Text_2:
 # 135 "data//maps/Route6/scripts.pory"
-	.string "If we remember our {PKMN} after they go,\n"
-	.string "are they truly gone?$"
+	.string "If we remember our Pokemon after they\n"
+	.string "go, are they truly gone?$"
 
 Route6_NPC1_Text_0:
 # 175 "data//maps/Route6/scripts.pory"
@@ -781,7 +783,8 @@ Route6_NPC1_Text_0:
 Route6_NPC2_Text_0:
 # 183 "data//maps/Route6/scripts.pory"
 	.string "I wonder what's over there...if I had a\n"
-	.string "{PKMN} that knew SURF, I could swim over!$"
+	.string "Pokemon that knew SURF, I could swim\l"
+	.string "over!$"
 
 Route6_NPC3_Text_0:
 # 190 "data//maps/Route6/scripts.pory"
@@ -853,7 +856,8 @@ Route6_NPC4_Text_9:
 Route6_Gabrielle_Trigger_Text_0:
 # 276 "data//maps/Route6/scripts.pory"
 	.string "GRUNT: C'mon GABRIELLE - you've got\n"
-	.string "nowhere to run. Now give us your {PKMN}!\p"
+	.string "nowhere to run. Now give us your\l"
+	.string "Pokemon!\p"
 	.string "GABRILLE: No! They're mine! Why should\n"
 	.string "I give you losers anything?\p"
 	.string "GRUNTS: They're property of Team\n"
@@ -869,8 +873,8 @@ Route6_Gabrielle_Trigger_Text_0:
 Route6_Gabrielle_Trigger_Text_1:
 # 288 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: {PLAYER}, it's you! These\n"
-	.string "grunts are trying to take my {PKMN} off me\l"
-	.string "- you have to help!$"
+	.string "grunts are trying to take my Pokemon\l"
+	.string "off me - you have to help!$"
 
 Route6_Gabrielle_Trigger_Text_2:
 # 292 "data//maps/Route6/scripts.pory"
@@ -878,8 +882,9 @@ Route6_Gabrielle_Trigger_Text_2:
 	.string "The trainer who got you kicked out is\l"
 	.string "now helping you?\p"
 	.string "Fine by us! Imagine what the boss'll tell\n"
-	.string "us when we take your {PKMN} AND beat the\l"
-	.string "trainer that's stopped our plans twice!$"
+	.string "us when we take your Pokemon AND beat\l"
+	.string "the trainer that's stopped our plans\l"
+	.string "twice!$"
 
 Route6_Gabrielle_HurryUp_Text_0:
 # 317 "data//maps/Route6/scripts.pory"
@@ -892,7 +897,7 @@ Route6_Gabrielle_DoBattle_Text_0:
 
 Route6_Gabrielle_DoBattle_Text_1:
 # 322 "data//maps/Route6/scripts.pory"
-	.string "I need better {PKMN}!$"
+	.string "I need better Pokemon!$"
 
 Route6_Gabrielle_Victory_Text_0:
 # 334 "data//maps/Route6/scripts.pory"
@@ -904,7 +909,7 @@ Route6_Gabrielle_Victory_Text_1:
 # 347 "data//maps/Route6/scripts.pory"
 	.string "GABRIELLE: Thank you {PLAYER}. You\n"
 	.string "saved me there.\p"
-	.string "Let me heal your {PKMN}.$"
+	.string "Let me heal your Pokemon.$"
 
 Route6_Gabrielle_Victory_Text_2:
 # 351 "data//maps/Route6/scripts.pory"

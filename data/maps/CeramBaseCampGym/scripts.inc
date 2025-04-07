@@ -290,8 +290,9 @@ CeramBaseCampGym_Red_Text_0:
 	.string "Welcome to the Ceram Base Camp\n"
 	.string "Management Office And Gym! The Gym\l"
 	.string "Leader ARIAN, who also manages the\l"
-	.string "base camp, specialises in FIRE type {PKMN}.\l"
-	.string "Avoid using BUG and GRASS types!$"
+	.string "base camp, specialises in FIRE type\l"
+	.string "Pokemon. Avoid using BUG and GRASS\l"
+	.string "types!$"
 
 CeramBaseCampGym_Guard_Text_0:
 # 18 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -435,8 +436,8 @@ CeramBaseCampGym_LeaderBattle_Text_1:
 CeramBaseCampGym_LeaderBattle_Text_2:
 # 173 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The CINDER BADGE increases the ATK of\n"
-	.string "all your {PKMN} and lets you control {PKMN}\l"
-	.string "upto lv. 20.$"
+	.string "all your Pokemon and lets you control\l"
+	.string "Pokemon upto lv. 20.$"
 
 CeramBaseCampGym_LeaderBattle_Text_3:
 # 174 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -444,9 +445,9 @@ CeramBaseCampGym_LeaderBattle_Text_3:
 
 CeramBaseCampGym_LeaderBattle_Text_4:
 # 178 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "This TM will let your {PKMN} bring sunlight\n"
-	.string "on the battlefield, powering up\l"
-	.string "FIRE-type moves!$"
+	.string "This TM will let your Pokemon bring\n"
+	.string "sunlight on the battlefield, powering\l"
+	.string "up FIRE-type moves!$"
 
 CeramBaseCampGym_LeaderBattle_Text_5:
 # 182 "data//maps/CeramBaseCampGym/scripts.pory"

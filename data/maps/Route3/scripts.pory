@@ -11,8 +11,8 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the {PKMN} Gym there. Let me practice with you!"), "Looks like I need more practice!")
-    msgbox(format("I heard that the Gastree City Gym Leader uses FIRE type {PKMN}."))
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokemon Gym there. Let me practice with you!"), "Looks like I need more practice!")
+    msgbox(format("I heard that the Gastree City Gym Leader uses FIRE type Pokemon."))
     release
     end
 
@@ -20,8 +20,8 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a {PKMN} Breeder! All Breeders specialise in one {PKMN} variety, such as dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can you guess my specialty?"), "You guessed it - I love foxes!")
-    msgbox(format("My {PKMN} are my most cherised partners!"))
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokemon Breeder! All Breeders specialise in one Pokemon variety, such as dog Pokemon, cat Pokemon, or even bear Pokemon! Can you guess my specialty?"), "You guessed it - I love foxes!")
+    msgbox(format("My Pokemon are my most cherised partners!"))
     release
     end
 
@@ -30,7 +30,7 @@ script Route3_TrainerBattle_Jana {
 script Route3_TrainerBattle_Chara {
 
     trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Whew! Route 3 was long, but I can do one last battle!"), "Aw I lost!")
-    msgbox(format("My {PKMN} and I are all out of energy."))
+    msgbox(format("My Pokemon and I are all out of energy."))
     release
     end
 

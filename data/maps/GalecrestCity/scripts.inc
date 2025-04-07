@@ -964,14 +964,14 @@ GalecrestCity_Froakie_Text_0:
 
 GalecrestCity_NPC_5_Text_0:
 # 301 "data//maps/GalecrestCity/scripts.pory"
-	.string "I need to find a {PKMN} that can learn ROCK\n"
-	.string "SMASH...$"
+	.string "I need to find a Pokemon that can learn\n"
+	.string "ROCK SMASH...$"
 
 GalecrestCity_NPC_5_Text_1:
 # 303 "data//maps/GalecrestCity/scripts.pory"
-	.string "This rock can be smashed by a {PKMN} that\n"
-	.string "knows a certain move...I forgot which\l"
-	.string "one though! Do you know?$"
+	.string "This rock can be smashed by a Pokemon\n"
+	.string "that knows a certain move...I forgot\l"
+	.string "which one though! Do you know?$"
 
 GalecrestCity_NPC_5_Text_2:
 # 304 "data//maps/GalecrestCity/scripts.pory"
@@ -1096,8 +1096,8 @@ GalecrestCity_NPC_15_Text_0:
 # 455 "data//maps/GalecrestCity/scripts.pory"
 	.string "PESTER is this city's Gym Leader! She's\n"
 	.string "tough but calculated. She likes strong\l"
-	.string "{PKMN} and gives them berries to gain an\l"
-	.string "advantage in battle!$"
+	.string "Pokemon and gives them berries to gain\l"
+	.string "an advantage in battle!$"
 
 GalecrestCity_NPC_16_Text_0:
 # 462 "data//maps/GalecrestCity/scripts.pory"

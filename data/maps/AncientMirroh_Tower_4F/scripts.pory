@@ -50,7 +50,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)
 
-    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your Professor Tenebris unlocked the latent potential within the dreams and memories of {PKMN} today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
+    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your Professor Tenebris unlocked the latent potential within the dreams and memories of Pokemon today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
     release
     delay(30)
 

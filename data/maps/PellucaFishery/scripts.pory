@@ -35,7 +35,7 @@ script PellucaFishery_NPC3{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different {PKMN}?"))
+        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different Pokemon?"))
     }
     releaseall
     end
@@ -85,7 +85,7 @@ script PellucaFishery_EventScript_MainDude{
                 msgbox(format("BRINEY: Good, good. Now you've got a chance against the SHARPEDO. Well then, all that's left is for you to make your way there. You'll need to head north of here and climb up a waterfall to reach it's cave. Here you go."))
                 release
                 giveitem(ITEM_HM_WATERFALL)   //give the quest reward
-                msgbox(format("BRINEY: This is the HM WATERFALL. Any {PKMN} that knows it will be able to climb up waterfalls while surfing. But you'll need the CASCADE BADGE. But that's on you. I've done what I can - now go teach that MEGA SHARPEDO a lesson!"))
+                msgbox(format("BRINEY: This is the HM WATERFALL. Any Pokemon that knows it will be able to climb up waterfalls while surfing. But you'll need the CASCADE BADGE. But that's on you. I've done what I can - now go teach that MEGA SHARPEDO a lesson!"))
                 release
                 setvar(VAR_PELLUCA_FISHERY, 2)
             

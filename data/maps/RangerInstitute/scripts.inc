@@ -1018,8 +1018,8 @@ RangerInstitute_1F_InterviewQ1_Text_5:
 
 RangerInstitute_1F_InterviewQ2_Text_0:
 # 105 "data//maps/RangerInstitute/scripts.pory"
-	.string "Q: Which of these {PKMN} does NOT have a\n"
-	.string "normal evolution?$"
+	.string "Q: Which of these Pokemon does NOT\n"
+	.string "have a normal evolution?$"
 
 RangerInstitute_1F_InterviewQ2_Text_1:
 # 106 "data//maps/RangerInstitute/scripts.pory"
@@ -1045,7 +1045,8 @@ RangerInstitute_1F_InterviewQ2_Text_5:
 
 RangerInstitute_1F_InterviewQ3_Text_0:
 # 120 "data//maps/RangerInstitute/scripts.pory"
-	.string "Q: Which of these {PKMN} is GHOST type?$"
+	.string "Q: Which of these Pokemon is GHOST\n"
+	.string "type?$"
 
 RangerInstitute_1F_InterviewQ3_Text_1:
 # 121 "data//maps/RangerInstitute/scripts.pory"
@@ -1066,7 +1067,8 @@ RangerInstitute_1F_InterviewQ3_Text_4:
 RangerInstitute_1F_InterviewQ3_Text_5:
 # 125 "data//maps/RangerInstitute/scripts.pory"
 	.string "Correct! DHELMISE is a GHOST/GRASS\n"
-	.string "type {PKMN}, commonly found underwater.\p"
+	.string "type Pokemon, commonly found\l"
+	.string "underwater.\p"
 	.string "Onto the next question!$"
 
 RangerInstitute_1F_InterviewQ4_Text_0:
@@ -1122,23 +1124,23 @@ RangerInstitute_1F_InterviewPass_Text_0:
 # 163 "data//maps/RangerInstitute/scripts.pory"
 	.string "Congratulations {PLAYER}! You've\n"
 	.string "cleared the interview and we are now\l"
-	.string "proud to call you a {PKMN} RANGER RECRUIT.\l"
-	.string "Welcome to the Cormoria {PKMN} Ranger\l"
-	.string "Institute! Please head upstairs for\l"
-	.string "your induction.$"
+	.string "proud to call you a Pokemon RANGER\l"
+	.string "RECRUIT. Welcome to the Cormoria\l"
+	.string "Pokemon Ranger Institute! Please head\l"
+	.string "upstairs for your induction.$"
 
 RangerInstitute_1F_NPC1_Text_0:
 # 172 "data//maps/RangerInstitute/scripts.pory"
-	.string "Should I become a {PKMN} Ranger? It's\n"
+	.string "Should I become a Pokemon Ranger? It's\n"
 	.string "really hard to get in...I don't know if I\l"
 	.string "can do it.$"
 
 RangerInstitute_1F_NPC2_Text_0:
 # 179 "data//maps/RangerInstitute/scripts.pory"
 	.string "My interview is coming up. I'm nervous -\n"
-	.string "I really want to become a {PKMN} Ranger so\l"
-	.string "bad! Their {PKMN} are so cool! TAUROS!\l"
-	.string "KANGASKHAN!$"
+	.string "I really want to become a Pokemon\l"
+	.string "Ranger so bad! Their Pokemon are so\l"
+	.string "cool! TAUROS! KANGASKHAN!$"
 
 RangerInstitute_1F_NPC3_Text_0:
 # 186 "data//maps/RangerInstitute/scripts.pory"
@@ -1153,16 +1155,16 @@ RangerInstitute_1F_BlockerBasement_Text_0:
 
 RangerInstitute_1F_BlockerUpstairs_Text_0:
 # 205 "data//maps/RangerInstitute/scripts.pory"
-	.string "Sorry, only {PKMN} Rangers are allowed\n"
+	.string "Sorry, only Pokemon Rangers are allowed\n"
 	.string "inside. If you'd like to apply, you can\l"
 	.string "print an application form using the PC\l"
 	.string "by the entrance.$"
 
 RangerInstitute_1F_BlockerUpstairs_Text_1:
 # 213 "data//maps/RangerInstitute/scripts.pory"
-	.string "You're not a fully-fledged {PKMN} RANGER\n"
-	.string "yet - just a RECRUIT! So I'll be keeping\l"
-	.string "an eye on you.$"
+	.string "You're not a fully-fledged Pokemon\n"
+	.string "RANGER yet - just a RECRUIT! So I'll be\l"
+	.string "keeping an eye on you.$"
 
 RangerInstitute_2F_Trigger0_Text_0:
 # 261 "data//maps/RangerInstitute/scripts.pory"
@@ -1227,8 +1229,8 @@ RangerInstitute_2F_EventScript_Welcome_Text_7:
 	.string "RANGER INSTITUTE, {PLAYER}!\l"
 	.string "Congratulations on clearing the\l"
 	.string "interview. I'm so pleased to see our\l"
-	.string "family grow. Do you know what we {PKMN}\l"
-	.string "Rangers do?$"
+	.string "family grow. Do you know what we\l"
+	.string "Pokemon Rangers do?$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_8:
 # 334 "data//maps/RangerInstitute/scripts.pory"
@@ -1243,32 +1245,32 @@ RangerInstitute_2F_EventScript_Welcome_Text_9:
 RangerInstitute_2F_EventScript_Welcome_Text_10:
 # 342 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: The RANGER BIKE and RANGER\n"
-	.string "CARD - the two emblems of a {PKMN} Ranger\l"
-	.string "in Cormoria! The RANGER BIKE will allow\l"
-	.string "you to speedily traverse all of\l"
+	.string "CARD - the two emblems of a Pokemon\l"
+	.string "Ranger in Cormoria! The RANGER BIKE will\l"
+	.string "allow you to speedily traverse all of\l"
 	.string "Cormoria, and the RANGER CARD lets\l"
-	.string "everyone know you're a proper {PKMN}\l"
+	.string "everyone know you're a proper Pokemon\l"
 	.string "Ranger! You can access the other\l"
 	.string "RANGER INSTITUTES with this.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_11:
 # 345 "data//maps/RangerInstitute/scripts.pory"
-	.string "RAVINE: Now, do you know what we {PKMN}\n"
-	.string "Rangers do? No? Follow me.$"
+	.string "RAVINE: Now, do you know what we\n"
+	.string "Pokemon Rangers do? No? Follow me.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_12:
 # 350 "data//maps/RangerInstitute/scripts.pory"
-	.string "RAVINE: As {PKMN} Rangers, our job is to\n"
-	.string "protect nature and maintain harmony\l"
-	.string "between people, {PKMN}, and the\l"
-	.string "environment. Whether it's rescuing {PKMN}\l"
-	.string "in danger, resolving conflicts, or\l"
-	.string "stopping threats to the ecosystem,\l"
+	.string "RAVINE: As Pokemon Rangers, our job is\n"
+	.string "to protect nature and maintain harmony\l"
+	.string "between people, Pokemon, and the\l"
+	.string "environment. Whether it's rescuing\l"
+	.string "Pokemon in danger, resolving conflicts,\l"
+	.string "or stopping threats to the ecosystem,\l"
 	.string "we're always out in the field, ensuring\l"
 	.string "the wild stays safe and balanced. It's\l"
 	.string "challenging work, but knowing we're\l"
-	.string "making a difference for both {PKMN} and\l"
-	.string "the world around us makes it all\l"
+	.string "making a difference for both Pokemon\l"
+	.string "and the world around us makes it all\l"
 	.string "worthwhile.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_13:

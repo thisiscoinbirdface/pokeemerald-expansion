@@ -830,7 +830,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_9:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_10:
 # 115 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "???: Agh! You stupid fire-type monkey!\n"
-	.string "I just didn't have my {PKMN} with me.\p"
+	.string "I just didn't have my Pokemon with me.\p"
 	.string "ARIAN: Serves you right! Now move over\n"
 	.string "and give our shopkeeper back.$"
 
@@ -890,12 +890,12 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_18:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_19:
 # 163 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "ARIAN: {PLAYER}, was it? Mt. Ceram is\n"
-	.string "filled with dangerous {PKMN}. The rules\l"
-	.string "around here are you can't climb unless\l"
-	.string "you have my gym badge and my blessing.\l"
-	.string "If you can beat me, I'll be able to send\l"
-	.string "you up the hill with confidence. See you\l"
-	.string "around, {PLAYER}!$"
+	.string "filled with dangerous Pokemon. The\l"
+	.string "rules around here are you can't climb\l"
+	.string "unless you have my gym badge and my\l"
+	.string "blessing. If you can beat me, I'll be\l"
+	.string "able to send you up the hill with\l"
+	.string "confidence. See you around, {PLAYER}!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0:
 # 188 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -934,7 +934,7 @@ CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_0:
 
 CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_1:
 # 202 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "No! My {PKMN} were too weak!$"
+	.string "No! My Pokemon were too weak!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_2:
 # 203 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -961,8 +961,8 @@ CeramBaseCamp_Main_NPC1_Text_1:
 CeramBaseCamp_Main_NPC2_Text_0:
 # 282 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "It's believed that a dreamstone is a\n"
-	.string "crystallised representation of a {PKMN}'s\l"
-	.string "memories.$"
+	.string "crystallised representation of a\l"
+	.string "Pokemon's memories.$"
 
 CeramBaseCamp_Main_NPC2_Text_1:
 # 285 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -1007,13 +1007,13 @@ CeramBaseCamp_Main_NPC4_Text_1:
 CeramBaseCamp_Main_NPC5_Text_0:
 # 345 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "My sister will be so happy. She's always\n"
-	.string "wanted her own {PKMN}.$"
+	.string "wanted her own Pokemon.$"
 
 CeramBaseCamp_Main_NPC5_Text_1:
 # 353 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I want to gift my sister a DEWPIDER.\n"
-	.string "It's her favourite {PKMN}! But I couldn't\l"
-	.string "find any on Route 4.$"
+	.string "It's her favourite Pokemon! But I\l"
+	.string "couldn't find any on Route 4.$"
 
 CeramBaseCamp_Main_NPC5_Text_2:
 # 355 "data//maps/CeramBaseCamp_Main/scripts.pory"

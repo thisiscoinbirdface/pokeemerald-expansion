@@ -47,9 +47,10 @@ GastreeCity_House1_NPC1_Text_0:
 
 GastreeCity_House1_Buneary_Text_0:
 # 16 "data//maps/GastreeCity_House1/scripts.pory"
-	.string "BUNEARY looks curiously at your {PKMN}...$"
+	.string "BUNEARY looks curiously at your\n"
+	.string "Pokemon...$"
 
 GastreeCity_House1_Buneary_Text_1:
 # 18 "data//maps/GastreeCity_House1/scripts.pory"
-	.string "BUNEARY looks curiously at your {PKMN}...it\n"
-	.string "hands you something!$"
+	.string "BUNEARY looks curiously at your\n"
+	.string "Pokemon...it hands you something!$"

@@ -157,7 +157,7 @@ script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("What a show!"))
     } else {
-        msgbox(format("I wish {PKMN} were allowed in. I would've brought my SPRIGATITO along to watch."))
+        msgbox(format("I wish Pokemon were allowed in. I would've brought my SPRIGATITO along to watch."))
     }
     releaseall
     end
@@ -195,7 +195,7 @@ script SilversunCity_Theater_NPC5{
            msgbox(format("Then these should help. I've got an extra pair."))            
             setflag(FLAG_SILVERSUN_THEATER_LENS)
             giveitem(ITEM_ZOOM_LENS)
-           msgbox(format("You can use it outside of the theater too! Any {PKMN} holding it will have their accuracy increased."))             
+           msgbox(format("You can use it outside of the theater too! Any Pokemon holding it will have their accuracy increased."))             
         }
 
     }

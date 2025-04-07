@@ -77,8 +77,8 @@ script Route4_EventScript_EvilTeamDefeated{
 
 
 script Route4_TrainerBattle_Raha {
-    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My {PKMN} were very expensive! There's no way you can beat me!"), format("But Father spent so much money!"))
-    msgbox(format("Maybe I should ask Father to buy some stronger {PKMN}...or maybe I should try and train them myself, like you!"))
+    trainerbattle_single(TRAINER_ROUTE4_RAHA, format("My Pokemon were very expensive! There's no way you can beat me!"), format("But Father spent so much money!"))
+    msgbox(format("Maybe I should ask Father to buy some stronger Pokemon...or maybe I should try and train them myself, like you!"))
     release
     end
 }
@@ -91,15 +91,15 @@ script Route4_TrainerBattle_Cammy {
 }
 
 script Route4_TrainerBattle_Sona {
-    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different {PKMN} inhabit different areas. I caught mine right here!"), format("Oh no!"))
-    msgbox(format("No matter where they're from, all {PKMN} need love and care."))
+    trainerbattle_single(TRAINER_ROUTE4_SONA, format("Different Pokemon inhabit different areas. I caught mine right here!"), format("Oh no!"))
+    msgbox(format("No matter where they're from, all Pokemon need love and care."))
     release
     end
 }
 
 script Route4_TrainerBattle_Jenny {
     trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My PANCHAM and I train here every morning. We want to become the strongest!"), format("We need to train harder!"))
-    msgbox(format("Pancham and I will become {PKMN} Champions one day!"))
+    msgbox(format("Pancham and I will become Pokemon Champions one day!"))
     release
     end
 }
@@ -137,7 +137,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
         } else {
             msgbox(format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something...Even us kids are strong!"))
-            trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My {PKMN}! Adults are lame!"))
+            trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My Pokemon! Adults are lame!"))
 
             msgbox(format("You have proved your worth, old one. You may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 

@@ -31,7 +31,7 @@ script Route3_Underpass_NPC1{
 script Route3_Underpass_NPC2{
     lockall
     faceplayer
-    msgbox(format("They say that a rare {PKMN} has made these caves its home. I need to go deeper down!"))
+    msgbox(format("They say that a rare Pokemon has made these caves its home. I need to go deeper down!"))
     releaseall
 }
 
@@ -93,7 +93,7 @@ script Route3_Underpass_EvilBattle{
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)    
     applymovement(6, moves(jump_in_place_left * 2))
     waitmovement(0)
-    msgbox(format("Clefairy: clee!!!\p???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my {PKMN} out!"))
+    msgbox(format("Clefairy: clee!!!\p???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my Pokemon out!"))
     release
 
     //They look at you and you walk to them
@@ -110,7 +110,7 @@ script Route3_Underpass_EvilBattle{
     release
 
     //Start battle
-    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "My {PKMN} just aren't good enough!")
+    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "My Pokemon just aren't good enough!")
 
     //End battle - baddie says revenge
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    

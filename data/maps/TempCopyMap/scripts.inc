@@ -1223,12 +1223,12 @@ Mart_Mints_SixBadges_Text_3:
 
 Common_EventScript_NurseJoyOnRoute_Text_0:
 # 420 "data//maps/TempCopyMap/scripts.pory"
-	.string "Should I heal your {PKMN}? You can come\n"
-	.string "back later if you wish.$"
+	.string "Should I heal your Pokemon? You can\n"
+	.string "come back later if you wish.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_1:
 # 423 "data//maps/TempCopyMap/scripts.pory"
-	.string "Let me heal your {PKMN}.$"
+	.string "Let me heal your Pokemon.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_2:
 # 426 "data//maps/TempCopyMap/scripts.pory"

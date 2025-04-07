@@ -147,10 +147,10 @@ GalecrestCityGym_Red_Text_0:
 	.string "Greetings trainer! Good to see you\n"
 	.string "again. This Gym is managed by the\l"
 	.string "Detective Academy Student Council.\l"
-	.string "Most detectives use NORMAL type {PKMN}\l"
-	.string "that are comfortable in a variety of\l"
-	.string "urban situations. FIGHTING type {PKMN}\l"
-	.string "should do well here!$"
+	.string "Most detectives use NORMAL type\l"
+	.string "Pokemon that are comfortable in a\l"
+	.string "variety of urban situations. FIGHTING\l"
+	.string "type Pokemon should do well here!$"
 
 GalecrestCityGym_NPC1_Text_0:
 # 33 "data//maps/GalecrestCityGym/scripts.pory"
@@ -231,9 +231,9 @@ GalecrestCityGym_Leader_Text_1:
 GalecrestCityGym_Leader_Text_2:
 # 123 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "KOHLA: The STOIC BADGE lets you\n"
-	.string "control {PKMN} upto lv. 30 and lets you use\l"
-	.string "the HM move ROCK SMASH outside of\l"
-	.string "battle.$"
+	.string "control Pokemon upto lv. 30 and lets\l"
+	.string "you use the HM move ROCK SMASH outside\l"
+	.string "of battle.$"
 
 GalecrestCityGym_Leader_Text_3:
 # 127 "data//maps/GalecrestCityGym/scripts.pory"
@@ -254,8 +254,8 @@ GalecrestCityGym_Text_LeaderIntro::
 	.string "assumes Gym Leader duties for a year\l"
 	.string "after they graduate. And this year,\l"
 	.string "that's me! Normally I would use the gym\l"
-	.string "standard NORMAL {PKMN}, but since it's you,\l"
-	.string "I'm going to make an exception. I'm\l"
+	.string "standard NORMAL Pokemon, but since it's\l"
+	.string "you, I'm going to make an exception. I'm\l"
 	.string "going to crush you with my REAL team!$"
 
 GalecrestCityGym_Text_Defeated::

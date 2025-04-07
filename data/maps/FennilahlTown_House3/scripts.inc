@@ -42,13 +42,13 @@ FennilahlTown_House3_Mawile::
 
 FennilahlTown_House3_NPC1_Text_0:
 # 7 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "Did you know that some {PKMN} can Mega\n"
-	.string "evolve?$"
+	.string "Did you know that some Pokemon can\n"
+	.string "Mega evolve?$"
 
 FennilahlTown_House3_NPC2_Text_0:
 # 15 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "There are no WATER type {PKMN} in these\n"
-	.string "hilly areas.$"
+	.string "There are no WATER type Pokemon in\n"
+	.string "these hilly areas.$"
 
 FennilahlTown_House3_Mawile_Text_0:
 # 23 "data//maps/FennilahlTown_House3/scripts.pory"

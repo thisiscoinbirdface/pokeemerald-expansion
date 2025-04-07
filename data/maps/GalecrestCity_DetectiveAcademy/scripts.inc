@@ -670,8 +670,8 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_2:
 # 29 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Silversun City is east of here, but the\n"
 	.string "path is blocked by rocks. The Gym\l"
-	.string "Leader here can teach your {PKMN} ROCK\l"
-	.string "SMASH, which will let you pass.\p"
+	.string "Leader here can teach your Pokemon\l"
+	.string "ROCK SMASH, which will let you pass.\p"
 	.string "See you in Silversun City...or sooner\n"
 	.string "than that, I think.$"
 
@@ -679,7 +679,7 @@ GalecrestCity_DetectiveAcademy_Breech_Text_0:
 # 46 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "It's you {PLAYER}! How are you?\n"
 	.string "CLEFAIRY and I are sitting in this class\l"
-	.string "on {PKMN} battles. Yep, to be a good\l"
+	.string "on Pokemon battles. Yep, to be a good\l"
 	.string "detective, you need to be a strong\l"
 	.string "trainer too!$"
 
@@ -777,7 +777,7 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_2:
 # 161 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Everything seems to be in order. What\n"
 	.string "happened - did they forget to give you\l"
-	.string "your CHARCADET at the entrance\l"
+	.string "your Charcadet at the entrance\l"
 	.string "ceremony? Well, no matter. Here you go!$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3:
@@ -787,7 +787,7 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3:
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4:
 # 164 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "Please treat your CHARCADET with love\n"
+	.string "Please treat your Charcadet with love\n"
 	.string "and care!$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5:
@@ -836,8 +836,8 @@ GalecrestCity_DetectiveAcademy_NPC2_Text_0:
 
 GalecrestCity_DetectiveAcademy_NPC3_Text_0:
 # 254 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "All new students receive a CHARCADET\n"
-	.string "as their first {PKMN}. It's the standard\l"
+	.string "All new students receive a Charcadet as\n"
+	.string "their first Pokemon. It's the standard\l"
 	.string "detective companion.$"
 
 GalecrestCity_DetectiveAcademy_NPC4_Text_0:
@@ -851,7 +851,7 @@ GalecrestCity_DetectiveAcademy_NPC4_Text_0:
 GalecrestCity_DetectiveAcademy_NPC5_Text_0:
 # 268 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "I'm going to join today! I'm so excited\n"
-	.string "to get my CHARCADET and become an Ace\l"
+	.string "to get my Charcadet and become an Ace\l"
 	.string "Rookie!$"
 
 GalecrestCity_DetectiveAcademy_NPC6_Text_0:

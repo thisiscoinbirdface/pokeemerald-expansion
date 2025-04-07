@@ -149,7 +149,7 @@ MtCeramPeak_MainEvent_Trigger::
 # 101 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
 # 104 "data//maps/MtCeram_Peak/scripts.pory"
-	fadeoutbgm
+	fadeoutbgm 1
 # 105 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 16
 # 107 "data//maps/MtCeram_Peak/scripts.pory"
@@ -504,9 +504,9 @@ MtCeramPeak_MainEvent_Trigger_Text_5:
 	.string "dreamstone is?\p"
 	.string "A dreamstone is little but a triangular\n"
 	.string "rock. At first sight. But it possesses a\l"
-	.string "unique property. When {PKMN} fall asleep,\l"
-	.string "their past memories resurface. A\l"
-	.string "dreamstone absorbs this.$"
+	.string "unique property. When Pokemon fall\l"
+	.string "asleep, their past memories resurface.\l"
+	.string "A dreamstone absorbs this.$"
 
 MtCeramPeak_MainEvent_Trigger_Text_6:
 # 53 "data//maps/MtCeram_Peak/scripts.pory"
@@ -526,8 +526,8 @@ MtCeramPeak_MainEvent_Trigger_Text_8:
 # 61 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "???: That stone behind me contains the\n"
 	.string "memories of hundreds of generations of\l"
-	.string "{PKMN} - all the way back to prehistoric\l"
-	.string "times!$"
+	.string "Pokemon - all the way back to\l"
+	.string "prehistoric times!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_9:
 # 65 "data//maps/MtCeram_Peak/scripts.pory"

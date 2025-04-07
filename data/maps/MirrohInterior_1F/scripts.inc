@@ -140,8 +140,8 @@ MirrohInterior_1F_Trainer_B_Text_2:
 
 MirrohInterior_1F_Trainer_C_Text_0:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I may switch to ICE type {PKMN} after\n"
-	.string "seeing the {PKMN} here!$"
+	.string "I may switch to ICE type Pokemon after\n"
+	.string "seeing the Pokemon here!$"
 
 MirrohInterior_1F_Trainer_C_Text_1:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -150,7 +150,7 @@ MirrohInterior_1F_Trainer_C_Text_1:
 MirrohInterior_1F_Trainer_C_Text_2:
 # 43 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "If you go deeper into the mountain,\n"
-	.string "you'll find some rare ICE type {PKMN}!$"
+	.string "you'll find some rare ICE type Pokemon!$"
 
 MirrohInterior_1F_Trainer_D_Text_0:
 # 49 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -181,8 +181,8 @@ MirrohInterior_1F_Trainer_E_Text_2:
 MirrohInterior_1F_NPC_A_Text_0:
 # 81 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I'm trekking to Winterlily Hollow! But my\n"
-	.string "GRASS type {PKMN} can't deal with all the\l"
-	.string "ICE type {PKMN} around here...$"
+	.string "GRASS type Pokemon can't deal with all\l"
+	.string "the ICE type Pokemon around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"

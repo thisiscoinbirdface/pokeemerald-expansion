@@ -87,7 +87,7 @@ script MtCeram_Caves_Greta_Main{
 
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
-    msgbox(format("???: Thank you so much! I forgot my {PKMN} at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
+    msgbox(format("???: Thank you so much! I forgot my Pokemon at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
     release
     msgbox(format("GRETA: I have some leftover stock that you might like. These gems came all the way from Mt Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
     release

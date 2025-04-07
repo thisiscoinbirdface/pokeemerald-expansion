@@ -3,14 +3,14 @@ mapscripts Route1_MapScripts {}
 script Route1_EventScripts_RandomDude {
     lockall
     faceplayer
-    msgbox(format("A {PKMN} that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"))
+    msgbox(format("A Pokemon that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"))
     releaseall
 }
 
 script Route1_TrainerBattle_A {
 
-    trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first {PKMN}! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
-    msgbox(format("My Rattata and I will become {PKMN} Champions one day!"))
+    trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first Pokemon! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
+    msgbox(format("My Rattata and I will become Pokemon Champions one day!"))
     release
     end
 
@@ -18,15 +18,15 @@ script Route1_TrainerBattle_A {
 
 script Route1_TrainerBattle_B {
 
-    trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type {PKMN}. Let me show you my favourite!"), "My FLYING type {PKMN} lost!")
-    msgbox(format("A good {PKMN} team needs variety, I guess."))
+    trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokemon. Let me show you my favourite!"), "My FLYING type Pokemon lost!")
+    msgbox(format("A good Pokemon team needs variety, I guess."))
     release
     end
 
 }
 
 script Route1_TrainerBattle_C {
-    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find cool bug-type {PKMN} here...but I found you instead!"), "Well, back to bug-hunting for me.")
+    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find cool bug-type Pokemon here...but I found you instead!"), "Well, back to bug-hunting for me.")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
     end

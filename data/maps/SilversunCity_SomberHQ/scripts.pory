@@ -206,7 +206,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
 script SomberHQ_EventScript_NPCNurse{
     lockall
     msgbox(format("NURSE JOY: I came to watch GLORIA's show but got lost and found myself in this shady place! So I've been hiding here."))
-    msgbox(format("NURSE JOY: Let me heal your {PKMN}."))
+    msgbox(format("NURSE JOY: Let me heal your Pokemon."))
     goto(Common_EventScript_OutOfCenterPartyHeal)
     releaseall
 }
@@ -237,7 +237,7 @@ script SomberHQ_NPC3{
 script SomberHQ_NPC4{
     lockall
     faceplayer
-    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous {PKMN} down there."))
+    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous Pokemon down there."))
     releaseall
     end
 }

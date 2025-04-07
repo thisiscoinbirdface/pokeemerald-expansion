@@ -36,7 +36,7 @@ script Route1_House_QuestInProgress{
             faceplayer
             msgbox(format("Here child, you must have this. The least I can do."))
             giveitem(ITEM_TM_RETURN)
-            msgbox(format("This contains the TM RETURN. It does more damage the stronger the bond between you and your {PKMN} is, just like me and AZURILL!"))
+            msgbox(format("This contains the TM RETURN. It does more damage the stronger the bond between you and your Pokemon is, just like me and AZURILL!"))
         } else {
             msgbox(format("I don't see a PECHA BERRY here...please come back when you have one."))
         }

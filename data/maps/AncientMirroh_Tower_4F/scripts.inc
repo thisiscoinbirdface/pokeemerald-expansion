@@ -448,10 +448,11 @@ AncientMirroh_Tower_4F_MainTrigger_Text_2:
 	.string "MELEA: Beautiful, isn't it? How\n"
 	.string "incredible it is that we're here now,\l"
 	.string "today.\p"
-	.string "MELEA: Your PROFESSOR TENEBRIS\n"
+	.string "MELEA: Your Professor Tenebris\n"
 	.string "unlocked the latent potential within\l"
-	.string "the dreams and memories of {PKMN} today\l"
-	.string "and created a way to visit the past!\p"
+	.string "the dreams and memories of Pokemon\l"
+	.string "today and created a way to visit the\l"
+	.string "past!\p"
 	.string "MELEA: It's like science\n"
 	.string "fiction...LEADER was right all along...$"
 
@@ -513,15 +514,15 @@ AncientMirroh_Tower_4F_MainTrigger_Text_11:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_12:
 # 142 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "MELEA: Come, ANCIENT TERROR! Let TEAM\n"
-	.string "SOMBER show you the future!$"
+	.string "MELEA: Come, ANCIENT TERROR! Let Team\n"
+	.string "Somber show you the future!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_13:
 # 156 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "MELEA: And now it's time to bid adieu! I\n"
 	.string "hope you enjoy your time here in\l"
-	.string "Ancient Cormoria - because you'll\l"
-	.string "never leave!\p"
+	.string "Ancient Cormoria - because you'll never\l"
+	.string "leave!\p"
 	.string "Hahaha!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_14:

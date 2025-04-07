@@ -46,14 +46,15 @@ Route1_TrainerBattle_C::
 
 Route1_EventScripts_RandomDude_Text_0:
 # 6 "data//maps/Route1/scripts.pory"
-	.string "A {PKMN} that uses a move of the same type\n"
-	.string "as itself gets a boost. So if ROOKIDEE\l"
-	.string "uses PECK, it'll deal more damage!$"
+	.string "A Pokemon that uses a move of the same\n"
+	.string "type as itself gets a boost. So if\l"
+	.string "ROOKIDEE uses PECK, it'll deal more\l"
+	.string "damage!$"
 
 Route1_TrainerBattle_A_Text_0:
 # 12 "data//maps/Route1/scripts.pory"
-	.string "I just got my first {PKMN}! And now, I'm\n"
-	.string "about to get my first win!$"
+	.string "I just got my first Pokemon! And now,\n"
+	.string "I'm about to get my first win!$"
 
 Route1_TrainerBattle_A_Text_1:
 # 12 "data//maps/Route1/scripts.pory"
@@ -61,27 +62,28 @@ Route1_TrainerBattle_A_Text_1:
 
 Route1_TrainerBattle_A_Text_2:
 # 13 "data//maps/Route1/scripts.pory"
-	.string "My Rattata and I will become {PKMN}\n"
+	.string "My Rattata and I will become Pokemon\n"
 	.string "Champions one day!$"
 
 Route1_TrainerBattle_B_Text_0:
 # 21 "data//maps/Route1/scripts.pory"
-	.string "I love FLYING-type {PKMN}. Let me show you\n"
-	.string "my favourite!$"
+	.string "I love FLYING-type Pokemon. Let me\n"
+	.string "show you my favourite!$"
 
 Route1_TrainerBattle_B_Text_1:
 # 21 "data//maps/Route1/scripts.pory"
-	.string "My FLYING type {PKMN} lost!$"
+	.string "My FLYING type Pokemon lost!$"
 
 Route1_TrainerBattle_B_Text_2:
 # 22 "data//maps/Route1/scripts.pory"
-	.string "A good {PKMN} team needs variety, I guess.$"
+	.string "A good Pokemon team needs variety, I\n"
+	.string "guess.$"
 
 Route1_TrainerBattle_C_Text_0:
 # 29 "data//maps/Route1/scripts.pory"
 	.string "I came from Gastree City to find cool\n"
-	.string "bug-type {PKMN} here...but I found you\l"
-	.string "instead!$"
+	.string "bug-type Pokemon here...but I found\l"
+	.string "you instead!$"
 
 Route1_TrainerBattle_C_Text_1:
 # 29 "data//maps/Route1/scripts.pory"

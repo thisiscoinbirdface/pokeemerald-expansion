@@ -118,7 +118,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC5{
     lockall
     faceplayer
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Hey - get in the shot! Not you - your {PKMN}! You can keep moving."))
+        msgbox(format("Hey - get in the shot! Not you - your Pokemon! You can keep moving."))
     } else {
         msgbox(format("Hey - get out of the shot! What if GLORIA walks by?"))
     }

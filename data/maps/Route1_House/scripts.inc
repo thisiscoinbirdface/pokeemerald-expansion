@@ -171,8 +171,8 @@ Route1_House_QuestInProgress_Text_5:
 # 39 "data//maps/Route1_House/scripts.pory"
 	.string "This contains the TM RETURN. It does\n"
 	.string "more damage the stronger the bond\l"
-	.string "between you and your {PKMN} is, just like\l"
-	.string "me and AZURILL!$"
+	.string "between you and your Pokemon is, just\l"
+	.string "like me and AZURILL!$"
 
 Route1_House_QuestInProgress_Text_6:
 # 41 "data//maps/Route1_House/scripts.pory"

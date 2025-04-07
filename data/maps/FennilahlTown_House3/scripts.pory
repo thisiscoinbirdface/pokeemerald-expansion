@@ -4,7 +4,7 @@ mapscripts FennilahlTown_House3_MapScripts{}
 script FennilahlTown_House3_NPC1{
     lockall
     faceplayer
-    msgbox(format("Did you know that some {PKMN} can Mega evolve?"))
+    msgbox(format("Did you know that some Pokemon can Mega evolve?"))
     releaseall
 }
 
@@ -12,7 +12,7 @@ script FennilahlTown_House3_NPC1{
 script FennilahlTown_House3_NPC2{
     lockall
     faceplayer
-    msgbox(format("There are no WATER type {PKMN} in these hilly areas."))
+    msgbox(format("There are no WATER type Pokemon in these hilly areas."))
     releaseall
 }
 

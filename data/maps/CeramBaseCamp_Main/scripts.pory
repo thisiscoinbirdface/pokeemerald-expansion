@@ -112,7 +112,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my {PKMN} with me.\pARIAN: Serves you right! Now move over and give our shopkeeper back."))
+    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my Pokemon with me.\pARIAN: Serves you right! Now move over and give our shopkeeper back."))
     release
     delay(16)
     applymovement(LOCALID_GRUNT4, moves(face_left))
@@ -160,7 +160,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     msgbox(format("ARIAN: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
     msgbox(format("ARIAN: They're connected to Professor Tenebris' disappearance? \pWell I gotta do something - Professor Tenebris is the one who gave me my GROWLITHE."))
     msgbox(format("ARIAN: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
-    msgbox(format("ARIAN: {PLAYER}, was it? Mt. Ceram is filled with dangerous {PKMN}. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
+    msgbox(format("ARIAN: {PLAYER}, was it? Mt. Ceram is filled with dangerous Pokemon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -199,7 +199,7 @@ script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My {PKMN} were too weak!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My Pokemon were too weak!"))
     msgbox(format("You're too late - the boss is already with the shopkeeper."))
     release
     end
@@ -279,7 +279,7 @@ script CeramBaseCamp_Main_NPC2{
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("It's believed that a dreamstone is a crystallised representation of a {PKMN}'s memories."))
+        msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokemon's memories."))
     } else {
         //When Team Somber is there
         msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. What do they want with one?"))
@@ -342,7 +342,7 @@ script CeramBaseCamp_Main_NPC5{
     faceplayer
 
     if (flag(FLAG_CERAMBASECAMP_NPC_TRADE)){
-        msgbox(format("My sister will be so happy. She's always wanted her own {PKMN}."))
+        msgbox(format("My sister will be so happy. She's always wanted her own Pokemon."))
         releaseall
         end
     }
@@ -350,7 +350,7 @@ script CeramBaseCamp_Main_NPC5{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
         showmonpic(SPECIES_NYMBLE, 10, 3)
-        msgbox(format("I want to gift my sister a DEWPIDER. It's her favourite {PKMN}! But I couldn't find any on Route 4."))
+        msgbox(format("I want to gift my sister a DEWPIDER. It's her favourite Pokemon! But I couldn't find any on Route 4."))
         hidemonpic
         msgbox(format("If you have one, will you trade it for my WIMPOD?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){

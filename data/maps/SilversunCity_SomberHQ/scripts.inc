@@ -792,7 +792,7 @@ SomberHQ_EventScript_NPCNurse_Text_0:
 
 SomberHQ_EventScript_NPCNurse_Text_1:
 # 209 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "NURSE JOY: Let me heal your {PKMN}.$"
+	.string "NURSE JOY: Let me heal your Pokemon.$"
 
 SomberHQ_NPC1_Text_0:
 # 219 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -818,7 +818,8 @@ SomberHQ_NPC4_Text_0:
 # 240 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "If you ship contraband through the\n"
 	.string "sewers, things get delayed sometimes.\l"
-	.string "There are dangerous {PKMN} down there.$"
+	.string "There are dangerous Pokemon down\l"
+	.string "there.$"
 
 SomberHQ_NPCGrunt_Text_0:
 # 246 "data//maps/SilversunCity_SomberHQ/scripts.pory"

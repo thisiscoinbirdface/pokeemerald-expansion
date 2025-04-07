@@ -8,7 +8,7 @@ mapscripts CeramBaseCampGym_MapScripts{}
 script CeramBaseCampGym_Red{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! The Gym Leader ARIAN, who also manages the base camp, specialises in FIRE type {PKMN}. Avoid using BUG and GRASS types!"))
+    msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! The Gym Leader ARIAN, who also manages the base camp, specialises in FIRE type Pokemon. Avoid using BUG and GRASS types!"))
     releaseall
 }
 
@@ -170,12 +170,12 @@ script CeramBaseCampGym_LeaderBattle {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("The CINDER BADGE increases the ATK of all your {PKMN} and lets you control {PKMN} upto lv. 20."))
+        msgbox(format("The CINDER BADGE increases the ATK of all your Pokemon and lets you control Pokemon upto lv. 20."))
         msgbox(format("And I'd also like to give you this."))
         release
         //Give TM also
         giveitem(ITEM_TM_SUNNY_DAY)
-        msgbox(format("This TM will let your {PKMN} bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        msgbox(format("This TM will let your Pokemon bring sunlight on the battlefield, powering up FIRE-type moves!"))
         release
 
         //Bye-bye

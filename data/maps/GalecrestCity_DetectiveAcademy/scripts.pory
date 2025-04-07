@@ -26,7 +26,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
-    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. The Gym Leader here can teach your {PKMN} ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. The Gym Leader here can teach your Pokemon ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))
@@ -43,7 +43,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 script GalecrestCity_DetectiveAcademy_Breech{
     lockall
     faceplayer
-    msgbox(format("It's you {PLAYER}! How are you? CLEFAIRY and I are sitting in this class on {PKMN} battles. Yep, to be a good detective, you need to be a strong trainer too!"))
+    msgbox(format("It's you {PLAYER}! How are you? CLEFAIRY and I are sitting in this class on Pokemon battles. Yep, to be a good detective, you need to be a strong trainer too!"))
     applymovement(13, moves(face_left))
     releaseall
 }
@@ -158,10 +158,10 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
         if (flag(FLAG_GALECREST_CHARCADET_GET)){
             msgbox(format("You've already received your CHARCADET. Please return to class!"))
         } else {
-            msgbox(format("Everything seems to be in order. What happened - did they forget to give you your CHARCADET at the entrance ceremony? Well, no matter. Here you go!"))
+            msgbox(format("Everything seems to be in order. What happened - did they forget to give you your Charcadet at the entrance ceremony? Well, no matter. Here you go!"))
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox(format("The DETECTIVE ACADEMY has gifted you a CHARCADET!"))
-            call(NicknamePartyMon)            msgbox(format("Please treat your CHARCADET with love and care!"))
+            call(NicknamePartyMon)            msgbox(format("Please treat your Charcadet with love and care!"))
             release
             setflag(FLAG_GALECREST_CHARCADET_GET)
         }
@@ -251,7 +251,7 @@ script GalecrestCity_DetectiveAcademy_NPC2{
 script GalecrestCity_DetectiveAcademy_NPC3{
     lockall
     faceplayer
-    msgbox(format("All new students receive a CHARCADET as their first {PKMN}. It's the standard detective companion."))
+    msgbox(format("All new students receive a Charcadet as their first Pokemon. It's the standard detective companion."))
     releaseall
 }
 
@@ -265,7 +265,7 @@ script GalecrestCity_DetectiveAcademy_NPC4{
 script GalecrestCity_DetectiveAcademy_NPC5{
     lockall
     faceplayer
-    msgbox(format("I'm going to join today! I'm so excited to get my CHARCADET and become an Ace Rookie!"))
+    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an Ace Rookie!"))
     releaseall
 }
 

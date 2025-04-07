@@ -596,8 +596,8 @@ Route4_EventScript_EvilTeamDefeated_Text_2:
 
 Route4_TrainerBattle_Raha_Text_0:
 # 80 "data//maps/Route4/scripts.pory"
-	.string "My {PKMN} were very expensive! There's no\n"
-	.string "way you can beat me!$"
+	.string "My Pokemon were very expensive!\n"
+	.string "There's no way you can beat me!$"
 
 Route4_TrainerBattle_Raha_Text_1:
 # 80 "data//maps/Route4/scripts.pory"
@@ -606,8 +606,8 @@ Route4_TrainerBattle_Raha_Text_1:
 Route4_TrainerBattle_Raha_Text_2:
 # 81 "data//maps/Route4/scripts.pory"
 	.string "Maybe I should ask Father to buy some\n"
-	.string "stronger {PKMN}...or maybe I should try and\l"
-	.string "train them myself, like you!$"
+	.string "stronger Pokemon...or maybe I should\l"
+	.string "try and train them myself, like you!$"
 
 Route4_TrainerBattle_Cammy_Text_0:
 # 87 "data//maps/Route4/scripts.pory"
@@ -625,8 +625,8 @@ Route4_TrainerBattle_Cammy_Text_2:
 
 Route4_TrainerBattle_Sona_Text_0:
 # 94 "data//maps/Route4/scripts.pory"
-	.string "Different {PKMN} inhabit different areas.\n"
-	.string "I caught mine right here!$"
+	.string "Different Pokemon inhabit different\n"
+	.string "areas. I caught mine right here!$"
 
 Route4_TrainerBattle_Sona_Text_1:
 # 94 "data//maps/Route4/scripts.pory"
@@ -634,8 +634,8 @@ Route4_TrainerBattle_Sona_Text_1:
 
 Route4_TrainerBattle_Sona_Text_2:
 # 95 "data//maps/Route4/scripts.pory"
-	.string "No matter where they're from, all {PKMN}\n"
-	.string "need love and care.$"
+	.string "No matter where they're from, all\n"
+	.string "Pokemon need love and care.$"
 
 Route4_TrainerBattle_Jenny_Text_0:
 # 101 "data//maps/Route4/scripts.pory"
@@ -649,8 +649,8 @@ Route4_TrainerBattle_Jenny_Text_1:
 
 Route4_TrainerBattle_Jenny_Text_2:
 # 102 "data//maps/Route4/scripts.pory"
-	.string "Pancham and I will become {PKMN} Champions\n"
-	.string "one day!$"
+	.string "Pancham and I will become Pokemon\n"
+	.string "Champions one day!$"
 
 Route4_TrainerBattle_Kid1_Text_0:
 # 109 "data//maps/Route4/scripts.pory"
@@ -706,7 +706,7 @@ Route4_TrainerBattle_Kid3_Text_1:
 
 Route4_TrainerBattle_Kid3_Text_2:
 # 140 "data//maps/Route4/scripts.pory"
-	.string "My {PKMN}! Adults are lame!$"
+	.string "My Pokemon! Adults are lame!$"
 
 Route4_TrainerBattle_Kid3_Text_3:
 # 142 "data//maps/Route4/scripts.pory"

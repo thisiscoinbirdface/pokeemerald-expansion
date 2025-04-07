@@ -1052,8 +1052,9 @@ MtCeram_EventScript_BeforePeakBattle_Text_7:
 
 MtCeram_EventScript_BeforePeakBattle_Text_8:
 # 296 "data//maps/MtCeram/scripts.pory"
-	.string "KOHLA: My {PKMN}...I have to go and heal\n"
-	.string "them...I couldn't stop Team Somber...$"
+	.string "KOHLA: My Pokemon...I have to go and\n"
+	.string "heal them...I couldn't stop Team\l"
+	.string "Somber...$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_9:
 # 306 "data//maps/MtCeram/scripts.pory"
@@ -1096,7 +1097,7 @@ MtCeram_TrainerBattle_A_Text_2:
 
 MtCeram_TrainerBattle_B_Text_0:
 # 363 "data//maps/MtCeram/scripts.pory"
-	.string "I love collecting rare {PKMN}. Bet your\n"
+	.string "I love collecting rare Pokemon. Bet your\n"
 	.string "eyes will pop when you see what I\l"
 	.string "caught here!$"
 
@@ -1106,7 +1107,7 @@ MtCeram_TrainerBattle_B_Text_1:
 
 MtCeram_TrainerBattle_B_Text_2:
 # 364 "data//maps/MtCeram/scripts.pory"
-	.string "I love my {PKMN} as friends and\n"
+	.string "I love my Pokemon as friends and\n"
 	.string "partners...and collectibles!$"
 
 MtCeram_TrainerBattle_C_Text_0:
@@ -1125,8 +1126,9 @@ MtCeram_TrainerBattle_C_Text_2:
 
 MtCeram_TrainerBattle_D_Text_0:
 # 379 "data//maps/MtCeram/scripts.pory"
-	.string "I brought my sheep {PKMN} here but their\n"
-	.string "hair is getting singed in the heat!$"
+	.string "I brought my sheep Pokemon here but\n"
+	.string "their hair is getting singed in the\l"
+	.string "heat!$"
 
 MtCeram_TrainerBattle_D_Text_1:
 # 379 "data//maps/MtCeram/scripts.pory"
@@ -1134,8 +1136,9 @@ MtCeram_TrainerBattle_D_Text_1:
 
 MtCeram_TrainerBattle_D_Text_2:
 # 380 "data//maps/MtCeram/scripts.pory"
-	.string "Most {PKMN} Breeders specialise in a single\n"
-	.string "group. I specialise in rearing sheep!$"
+	.string "Most Pokemon Breeders specialise in a\n"
+	.string "single group. I specialise in rearing\l"
+	.string "sheep!$"
 
 MtCeram_TrainerBattle_GRUNT1_Text_0:
 # 386 "data//maps/MtCeram/scripts.pory"
@@ -1199,7 +1202,7 @@ MtCeram_EventScript_NPCNurse_Text_1:
 # 457 "data//maps/MtCeram/scripts.pory"
 	.string "Don't worry, CHANSEY! We're safe here.\n"
 	.string "Meanwhile, if you have a HEAL PASS, I\l"
-	.string "can heal your {PKMN}!$"
+	.string "can heal your Pokemon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 466 "data//maps/MtCeram/scripts.pory"

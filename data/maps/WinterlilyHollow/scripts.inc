@@ -494,8 +494,8 @@ WinterlilyHollow_NPC1_Text_0:
 WinterlilyHollow_NPC1_Text_1:
 # 81 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Winterlily Hollow is so remote that we\n"
-	.string "don't even get electricity! VINIEL's {PKMN}\l"
-	.string "powers this town.$"
+	.string "don't even get electricity! VINIEL's\l"
+	.string "Pokemon powers this town.$"
 
 WinterlilyHollow_NPC2_Text_0:
 # 91 "data//maps/WinterlilyHollow/scripts.pory"
@@ -511,9 +511,9 @@ WinterlilyHollow_NPC3_Text_0:
 # 102 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "A Team Somber grunt tried to mess with\n"
 	.string "me, so I taught the young fool a lesson!\l"
-	.string "After that, he threw away his {PKMN} saying\l"
-	.string "it was too weak! How terrible! It's here\l"
-	.string "somewhere in the town.$"
+	.string "After that, he threw away his Pokemon\l"
+	.string "saying it was too weak! How terrible!\l"
+	.string "It's here somewhere in the town.$"
 
 WinterlilyHollow_MimeJr_1_Text_0:
 # 115 "data//maps/WinterlilyHollow/scripts.pory"

@@ -19,9 +19,9 @@ script FennilahlTown_EventScript_Woman {
     lockall
     faceplayer
     if (flag(FLAG_FENNILAHL_CUTEMONGIFT)){
-        msgbox(format("If your {PKMN} hold a SOOTHE BELL, they'll become attached to you faster!"))
+        msgbox(format("If your Pokemon hold a SOOTHE BELL, they'll become attached to you faster!"))
     } else {
-        msgbox(format("My, that's such a cute little {PKMN} you have with you! Here, use this and treat it with care, okay?"))
+        msgbox(format("My, that's such a cute little Pokemon you have with you! Here, use this and treat it with care, okay?"))
         giveitem(ITEM_SOOTHE_BELL)
         setflag(FLAG_FENNILAHL_CUTEMONGIFT)
     }   
@@ -41,10 +41,10 @@ script FennilahlTown_EventScript_HikerTunnel {
 
 script Fennilahl_Breech_StartQuest{
 
-    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK {PKMN} took it and ran away! And I don't have any {PKMN} to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me out?"), MSGBOX_YESNO)
+    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK Pokemon took it and ran away! And I don't have any Pokemon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me out?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Amazing! You've answered my prayers. I saw the pink {PKMN} run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
+        msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokemon run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {
@@ -79,7 +79,7 @@ script Fennilahl_Breech_QuestInProgress{
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
         applymovement(9, moves(jump_in_place_up * 3))
         waitmovement(0)
-        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my {PKMN} okay? I don't like battling. You'll be my hiking partner!"))        
+        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokemon okay? I don't like battling. You'll be my hiking partner!"))        
         release
         faceplayer
         delay(16)

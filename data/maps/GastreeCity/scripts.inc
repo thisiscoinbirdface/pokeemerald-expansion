@@ -740,8 +740,8 @@ GastreeCity_NPC5_Text_0:
 # 112 "data//maps/GastreeCity/scripts.pory"
 	.string "INGER, this city's Gym Leader, uses ROCK\n"
 	.string "types. I should have an advantage with\l"
-	.string "my FIGHTING-type {PKMN} right? So then\l"
-	.string "why am I getting cold feet?$"
+	.string "my FIGHTING-type Pokemon right? So\l"
+	.string "then why am I getting cold feet?$"
 
 GastreeCity_Mankey_Text_0:
 # 119 "data//maps/GastreeCity/scripts.pory"
@@ -758,7 +758,8 @@ GastreeCity_NPC6_Text_0:
 GastreeCity_NPC7_Text_0:
 # 136 "data//maps/GastreeCity/scripts.pory"
 	.string "I want to have tea too! When I get my\n"
-	.string "first {PKMN}, I want it to be Poltchageist.$"
+	.string "first Pokemon, I want it to be\l"
+	.string "Poltchageist.$"
 
 GastreeCity_NPC8_Text_0:
 # 146 "data//maps/GastreeCity/scripts.pory"
@@ -782,7 +783,7 @@ GastreeCity_NPC_Keckleon_Text_0:
 GastreeCity_NPC9_Text_0:
 # 165 "data//maps/GastreeCity/scripts.pory"
 	.string "Yo, trainer! Come here. What's the most\n"
-	.string "useful move a {PKMN} can learn?$"
+	.string "useful move a Pokemon can learn?$"
 
 GastreeCity_NPC9_Text_1:
 # 166 "data//maps/GastreeCity/scripts.pory"
@@ -806,9 +807,10 @@ GastreeCity_NPC9_Text_5:
 	.string "...\p"
 	.string "No, seriously. Most people think it's\n"
 	.string "useless, but if you have HM SPLASH, your\l"
-	.string "{PKMN} can hop onto rocks in the water like\l"
-	.string "the one here. But you need at least one\l"
-	.string "Gym Badge to be able to use HMs.$"
+	.string "Pokemon can hop onto rocks in the\l"
+	.string "water like the one here. But you need at\l"
+	.string "least one Gym Badge to be able to use\l"
+	.string "HMs.$"
 
 GastreeCity_EventScript_SkittyQuestStart_Text_0:
 # 198 "data//maps/GastreeCity/scripts.pory"

@@ -169,7 +169,7 @@ script SilversunCity_NPC4{
 script SilversunCity_NPC5{
     lockall
     faceplayer
-    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon {PKMN} haunts the sewers. It's even scarier than all the POISON-type {PKMN} down there! They call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving! How scary is that?\p...but its probably just someone's imagination."))
+    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon Pokemon haunts the sewers. It's even scarier than all the POISON-type Pokemon down there! They call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving! How scary is that?\p...but its probably just someone's imagination."))
     releaseall
     end
 }

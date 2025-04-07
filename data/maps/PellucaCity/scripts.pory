@@ -301,7 +301,7 @@ script PellucaCity_WingullMother{
 script PellucaCity_WingullCritique{
     lockall
     faceplayer
-    msgbox(format("That little girl is so bad! Throwing stones at {PKMN}...that's poor parenting."))
+    msgbox(format("That little girl is so bad! Throwing stones at Pokemon...that's poor parenting."))
     releaseall
     end
 }

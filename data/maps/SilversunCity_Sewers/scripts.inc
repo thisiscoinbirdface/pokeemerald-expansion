@@ -652,8 +652,8 @@ SilversunCity_Sewers_Trainer_A_Text_1:
 SilversunCity_Sewers_Trainer_A_Text_2:
 # 245 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "I came down here to catch some POISON\n"
-	.string "type {PKMN} to round out my team, but I\l"
-	.string "should go back up now. This place\l"
+	.string "type Pokemon to round out my team, but\l"
+	.string "I should go back up now. This place\l"
 	.string "stinks.$"
 
 SilversunCity_Sewers_Trainer_B_Text_0:

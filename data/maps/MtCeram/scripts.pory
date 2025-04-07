@@ -293,7 +293,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 
     //Kohla exit
-    msgbox(format("KOHLA: My {PKMN}...I have to go and heal them...I couldn't stop Team Somber..."))
+    msgbox(format("KOHLA: My Pokemon...I have to go and heal them...I couldn't stop Team Somber..."))
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
@@ -360,8 +360,8 @@ script MtCeram_TrainerBattle_A {
 
 
 script MtCeram_TrainerBattle_B {
-    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare {PKMN}. Bet your eyes will pop when you see what I caught here!"), format("Is rarity not enough?"))
-    msgbox(format("I love my {PKMN} as friends and partners...and collectibles!"))
+    trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare Pokemon. Bet your eyes will pop when you see what I caught here!"), format("Is rarity not enough?"))
+    msgbox(format("I love my Pokemon as friends and partners...and collectibles!"))
     release
     end
 }
@@ -376,8 +376,8 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep {PKMN} here but their hair is getting singed in the heat!"), format("I should go back down."))
-    msgbox(format("Most {PKMN} Breeders specialise in a single group. I specialise in rearing sheep!"))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokemon here but their hair is getting singed in the heat!"), format("I should go back down."))
+    msgbox(format("Most Pokemon Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
 }
@@ -454,7 +454,7 @@ script MtCeram_EventScript_NPCNurse{
     applymovement(24, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("Don't worry, CHANSEY! We're safe here. Meanwhile, if you have a HEAL PASS, I can heal your {PKMN}!"))
+    msgbox(format("Don't worry, CHANSEY! We're safe here. Meanwhile, if you have a HEAL PASS, I can heal your Pokemon!"))
     call(Common_EventScript_NurseJoyOnRoute)
 
     releaseall

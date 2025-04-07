@@ -316,13 +316,13 @@ GalecrestCity_HousesRich_NPC8_Text_0:
 GalecrestCity_HousesRich_NPC9_Text_0:
 # 123 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "I'm trying to organise my daughter's\n"
-	.string "belongings. Are you a {PKMN} trainer?$"
+	.string "belongings. Are you a Pokemon trainer?$"
 
 GalecrestCity_HousesRich_NPC9_Text_1:
 # 125 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "So is my daughter. She used these to\n"
-	.string "train her {PKMN}. They'll be more useful in\l"
-	.string "your hands.$"
+	.string "train her Pokemon. They'll be more\l"
+	.string "useful in your hands.$"
 
 GalecrestCity_HousesRich_NPC9_Text_2:
 # 128 "data//maps/GalecrestCity_HousesRich/scripts.pory"

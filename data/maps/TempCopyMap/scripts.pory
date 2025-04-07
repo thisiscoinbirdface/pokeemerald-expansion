@@ -417,10 +417,10 @@ script Common_EventScript_NurseJoyOnRoute{
     checkitem(ITEM_HEAL_PASS)
     if (var(VAR_RESULT) == 1){
         //heal
-        msgbox(format("Should I heal your {PKMN}? You can come back later if you wish."), MSGBOX_YESNO)
+        msgbox(format("Should I heal your Pokemon? You can come back later if you wish."), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Let me heal your {PKMN}."))
+            msgbox(format("Let me heal your Pokemon."))
             release
             call(Common_EventScript_OutOfCenterPartyHeal)
             msgbox(format("Stay safe out there!"))

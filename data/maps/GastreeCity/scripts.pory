@@ -109,7 +109,7 @@ script GastreeCity_NPC4{
 script GastreeCity_NPC5{
     lockall
     faceplayer    
-    msgbox(format("INGER, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type {PKMN} right? So then why am I getting cold feet?"))
+    msgbox(format("INGER, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type Pokemon right? So then why am I getting cold feet?"))
     release
 }
 
@@ -133,7 +133,7 @@ script GastreeCity_NPC6{
 script GastreeCity_NPC7{
     lockall
     faceplayer    
-    msgbox(format("I want to have tea too! When I get my first {PKMN}, I want it to be Poltchageist."))
+    msgbox(format("I want to have tea too! When I get my first Pokemon, I want it to be Poltchageist."))
     applymovement(11, moves(face_up))
     waitmovement(0)
     release
@@ -162,9 +162,9 @@ script GastreeCity_NPC8{
 script GastreeCity_NPC9{
     lockall
     faceplayer    
-    msgbox(format("Yo, trainer! Come here. What's the most useful move a {PKMN} can learn?"))
+    msgbox(format("Yo, trainer! Come here. What's the most useful move a Pokemon can learn?"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ERUPTION", "QUIVER DANCE", "EXPANDING FORCE", "EARTHQUAKE")        
-    msgbox(format("Nope - trick question! It's SPLASH!\p...\pNo, seriously. Most people think it's useless, but if you have HM SPLASH, your {PKMN} can hop onto rocks in the water like the one here. But you need at least one Gym Badge to be able to use HMs."))
+    msgbox(format("Nope - trick question! It's SPLASH!\p...\pNo, seriously. Most people think it's useless, but if you have HM SPLASH, your Pokemon can hop onto rocks in the water like the one here. But you need at least one Gym Badge to be able to use HMs."))
     releaseall
     end
 }

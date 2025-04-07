@@ -512,7 +512,7 @@ VilethornWoods_EventScript_TriggerProf_Text_2:
 
 VilethornWoods_Trainer_A_Text_0:
 # 180 "data//maps/VilethornWoods/scripts.pory"
-	.string "PSYCHIC type {PKMN} are my natural\n"
+	.string "PSYCHIC type Pokemon are my natural\n"
 	.string "enemies! That's why I'm training here.$"
 
 VilethornWoods_Trainer_A_Text_1:
@@ -527,9 +527,9 @@ VilethornWoods_Trainer_A_Text_2:
 VilethornWoods_Trainer_B_Text_0:
 # 187 "data//maps/VilethornWoods/scripts.pory"
 	.string "I thought these woods would have BUG\n"
-	.string "type {PKMN}, but I can't find any. I'm so\l"
-	.string "bummed! But beating you in battle will\l"
-	.string "make me feel better!$"
+	.string "type Pokemon, but I can't find any. I'm\l"
+	.string "so bummed! But beating you in battle\l"
+	.string "will make me feel better!$"
 
 VilethornWoods_Trainer_B_Text_1:
 # 187 "data//maps/VilethornWoods/scripts.pory"
@@ -556,9 +556,10 @@ VilethornWoods_Trainer_C_Text_2:
 
 VilethornWoods_Trainer_D_Text_0:
 # 201 "data//maps/VilethornWoods/scripts.pory"
-	.string "I'm a {PKMN} Breeder. Like all breeders, we\n"
-	.string "specialise in certain {PKMN} forms. I'm a\l"
-	.string "horse breeding expert!$"
+	.string "I'm a Pokemon Breeder. Like all\n"
+	.string "breeders, we specialise in certain\l"
+	.string "Pokemon forms. I'm a horse breeding\l"
+	.string "expert!$"
 
 VilethornWoods_Trainer_D_Text_1:
 # 201 "data//maps/VilethornWoods/scripts.pory"
@@ -596,9 +597,10 @@ VilethornWoods_Trainer_F1_Text_1:
 
 VilethornWoods_Trainer_F1_Text_2:
 # 218 "data//maps/VilethornWoods/scripts.pory"
-	.string "I met her at a {PKMN} Breeder festival.\n"
-	.string "There was a battle competition and we\l"
-	.string "were the two finalists!$"
+	.string "I met her at a Pokemon Breeder\n"
+	.string "festival. There was a battle\l"
+	.string "competition and we were the two\l"
+	.string "finalists!$"
 
 VilethornWoods_Trainer_F2_Text_0:
 # 227 "data//maps/VilethornWoods/scripts.pory"

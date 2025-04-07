@@ -183,7 +183,7 @@ Route3_TrainerBattle_Kim_Text_2:
 Route3_TrainerBattle_Ronnie_Text_0:
 # 14 "data//maps/Route3/scripts.pory"
 	.string "I'm on my way to Gastree City to\n"
-	.string "challenge the {PKMN} Gym there. Let me\l"
+	.string "challenge the Pokemon Gym there. Let me\l"
 	.string "practice with you!$"
 
 Route3_TrainerBattle_Ronnie_Text_1:
@@ -193,14 +193,15 @@ Route3_TrainerBattle_Ronnie_Text_1:
 Route3_TrainerBattle_Ronnie_Text_2:
 # 15 "data//maps/Route3/scripts.pory"
 	.string "I heard that the Gastree City Gym\n"
-	.string "Leader uses FIRE type {PKMN}.$"
+	.string "Leader uses FIRE type Pokemon.$"
 
 Route3_TrainerBattle_Jana_Text_0:
 # 23 "data//maps/Route3/scripts.pory"
-	.string "I'm a {PKMN} Breeder! All Breeders\n"
-	.string "specialise in one {PKMN} variety, such as\l"
-	.string "dog {PKMN}, cat {PKMN}, or even bear {PKMN}! Can\l"
-	.string "you guess my specialty?$"
+	.string "I'm a Pokemon Breeder! All Breeders\n"
+	.string "specialise in one Pokemon variety, such\l"
+	.string "as dog Pokemon, cat Pokemon, or even\l"
+	.string "bear Pokemon! Can you guess my\l"
+	.string "specialty?$"
 
 Route3_TrainerBattle_Jana_Text_1:
 # 23 "data//maps/Route3/scripts.pory"
@@ -208,7 +209,8 @@ Route3_TrainerBattle_Jana_Text_1:
 
 Route3_TrainerBattle_Jana_Text_2:
 # 24 "data//maps/Route3/scripts.pory"
-	.string "My {PKMN} are my most cherised partners!$"
+	.string "My Pokemon are my most cherised\n"
+	.string "partners!$"
 
 Route3_TrainerBattle_Chara_Text_0:
 # 32 "data//maps/Route3/scripts.pory"
@@ -221,7 +223,7 @@ Route3_TrainerBattle_Chara_Text_1:
 
 Route3_TrainerBattle_Chara_Text_2:
 # 33 "data//maps/Route3/scripts.pory"
-	.string "My {PKMN} and I are all out of energy.$"
+	.string "My Pokemon and I are all out of energy.$"
 
 Route3_NPC1_Text_0:
 # 52 "data//maps/Route3/scripts.pory"

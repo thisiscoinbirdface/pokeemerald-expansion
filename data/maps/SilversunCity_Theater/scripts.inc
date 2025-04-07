@@ -510,8 +510,9 @@ SilversunCity_Theater_NPC3_Text_0:
 
 SilversunCity_Theater_NPC3_Text_1:
 # 160 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "I wish {PKMN} were allowed in. I would've\n"
-	.string "brought my SPRIGATITO along to watch.$"
+	.string "I wish Pokemon were allowed in. I\n"
+	.string "would've brought my SPRIGATITO along\l"
+	.string "to watch.$"
 
 SilversunCity_Theater_NPC4_Text_0:
 # 170 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -555,8 +556,8 @@ SilversunCity_Theater_NPC5_Text_4:
 SilversunCity_Theater_NPC5_Text_5:
 # 198 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "You can use it outside of the theater\n"
-	.string "too! Any {PKMN} holding it will have their\l"
-	.string "accuracy increased.$"
+	.string "too! Any Pokemon holding it will have\l"
+	.string "their accuracy increased.$"
 
 SilversunCity_Theater_NPC6_Text_0:
 # 212 "data//maps/SilversunCity_Theater/scripts.pory"

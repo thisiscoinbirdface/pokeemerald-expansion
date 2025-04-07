@@ -52,7 +52,7 @@ script GastreeGym_EventScript_Victory{
 }
 
 text GastreeGym_Text_Intro{
-    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pIn that case, you picked the wrong gym!\pI'm INGER, master of Rock-types and the unshakable strength of the earth. My ROCK type {PKMN} have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pIn that case, you picked the wrong gym!\pI'm INGER, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokemon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
@@ -73,7 +73,7 @@ script GastreeGym_Red{
     if (flag(FLAG_BADGE01_GET)){
         msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
     } else { 
-        msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything.\pAgainst INGER, avoid using FIRE, FLYING and BUG type {PKMN}. Now go get 'em, champ-in-the-making!"))
+        msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything.\pAgainst INGER, avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
     }
     releaseall
     end

@@ -201,7 +201,7 @@ PellucaFishery_NPC2_Text_0:
 PellucaFishery_NPC3_Text_0:
 # 38 "data//maps/PellucaFishery/scripts.pory"
 	.string "Did you know that a CASTING ROD and\n"
-	.string "TROLLING ROD catch different {PKMN}?$"
+	.string "TROLLING ROD catch different Pokemon?$"
 
 PellucaFishery_EventScript_MainDude_Text_0:
 # 59 "data//maps/PellucaFishery/scripts.pory"
@@ -236,11 +236,12 @@ PellucaFishery_EventScript_MainDude_Text_4:
 PellucaFishery_EventScript_MainDude_Text_5:
 # 88 "data//maps/PellucaFishery/scripts.pory"
 	.string "BRINEY: This is the HM WATERFALL. Any\n"
-	.string "{PKMN} that knows it will be able to climb\l"
-	.string "up waterfalls while surfing. But you'll\l"
-	.string "need the CASCADE BADGE. But that's on\l"
-	.string "you. I've done what I can - now go teach\l"
-	.string "that MEGA SHARPEDO a lesson!$"
+	.string "Pokemon that knows it will be able to\l"
+	.string "climb up waterfalls while surfing. But\l"
+	.string "you'll need the CASCADE BADGE. But\l"
+	.string "that's on you. I've done what I can -\l"
+	.string "now go teach that MEGA SHARPEDO a\l"
+	.string "lesson!$"
 
 PellucaFishery_EventScript_MainDude_Text_6:
 # 97 "data//maps/PellucaFishery/scripts.pory"
