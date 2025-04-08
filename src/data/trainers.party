@@ -1219,20 +1219,20 @@ Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SILVERSUNGYM_A ===
-Name: CHARLIE
-Class: Tuber M
-Pic: Somber Grunt F
-Gender: Male
-Music: Girl
+Name: ROSANNA
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
+Floragato
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SILVERSUNGYM_B ===
-Name: RICKY
+Name: JOHNNY
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -1240,30 +1240,35 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 27
+Linoone-Galar
+Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+
+Servine
+Level: 26
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SILVERSUNGYM_C ===
 Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 30
+Petilil
+Level: 24
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+
+Impidimp
+Level: 24
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Linoone-Galar
+Level: 26
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
 
 === TRAINER_SILVERSUNGYM_D ===
 Name: RICKY
@@ -1274,13 +1279,10 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 33
+Umbreon
+Level: 27
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+
 
 === TRAINER_SILVERSUNGYM_LEADER ===
 Name: GLORIA
@@ -1295,19 +1297,19 @@ Mugshot: Purple
 
 Absol
 Level: 25
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Umbreon @ Sitrus Berry
-Level: 26
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Floragato
 Level: 26
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
-Serperior @ Grass Gem
+Umbreon @ Sitrus Berry
+Level: 26
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+
+Servine @ Grass Gem
 Level: 27
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 
 === TRAINER_THEATER_A ===

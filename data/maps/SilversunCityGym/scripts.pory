@@ -12,7 +12,7 @@ script SilversunCityGym_EventScript_BackstagePass{
     if (flag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)){
         msgbox(format("Hope you enjoy the show!"))
     } else {
-        msgbox(format("Congratulations! The other actors and actresses have approved of your skills. Unfortunately the Gym Leader is performing at the Silversun Theater tonight, so the Gym Challenge is on hold. As compensation, please accept this BACKSTAGE PASS to tonight's show."))
+        msgbox(format("Unfortunately the Gym Leader is performing at the Silversun Theater tonight, so the Gym Challenge is on hold. As compensation, please accept this BACKSTAGE PASS to tonight's show."))
         release
         setflag(FLAG_SILVERSUN_BACKSTAGEPASS_GET)
         giveitem(ITEM_BACKSTAGE_PASS)
@@ -22,37 +22,40 @@ script SilversunCityGym_EventScript_BackstagePass{
 }
 
 
-
-
-
-
+script SilversunCityGym_EventScript_Red{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Silversun Gym...and Theater Studio!\pWhen Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but those are the rules! If you wanna be a part of Gloria's productions, you have to help maintain the gym."))
+    releaseall
+    end
+}
 
 
 //Trainers
 script SilversunCityGym_TrainerA {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_A, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_A, format("Hey, you're not an actor! Oh, you're a trainer? Sigh...why does Gloria make us do this?"), format("Yay. I lost. Now back to acting!"))
+    msgbox(format("Acting is a passion and a craft! We don't have time to battle."))
     release
     end
 }
 
 script SilversunCityGym_TrainerB {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_B, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_B, format("Get out of the way! I need to practice my dance moves or Gloria won't cast me!"), format(""))
+    msgbox(format("We're practicing so that Gloria casts us in her next production."))
     release
     end
 }
 
 script SilversunCityGym_TrainerC {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_C, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_C, format("Argh - this isn't a Gym for crying out loud! This is Gloria's theater studio. We don't have time for battling!"), format("So boring!"))
+    msgbox(format("Move it!"))
     release
     end
 }
 
 script SilversunCityGym_TrainerD {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_D, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_D, format("Nobody here likes the fact that this studio is a Gym too - including me!"), format("Nobody here likes you!"))
+    msgbox(format("Gloria is just glorious!"))
     release
     end
 }
