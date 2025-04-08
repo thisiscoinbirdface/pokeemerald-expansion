@@ -32,7 +32,10 @@ script SilversunCity_Theater_Leader{
     special(RemoveCameraObject)
 
     fadescreen(FADE_FROM_BLACK)    
-    msgbox(format("Welcome to the GLORIA SHOW! Tonight, we're doing a live performance that will sweep you off your feet!\pAUDIENCE: Woohoo! Go GLORIA!"))
+    msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
+    release
+    playse(SE_APPLAUSE)
+    msgbox(format("AUDIENCE: Woohoo! Go Gloria!"))
     release
     applymovement(8, moves(face_left))   
     msgbox(format("GLORIA: You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
@@ -42,6 +45,7 @@ script SilversunCity_Theater_Leader{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left))
     waitmovement(0)
+    hidefollower
     fadescreen(FADE_FROM_BLACK)
 
     //Talk
@@ -60,27 +64,24 @@ script SilversunCity_Theater_Leader{
     waitmovement(0)
     special(RemoveCameraObject)
 
-    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Boo! How dare you beat GLORIA, you horrible trainer! Boo!\p{PLAYER} ducked to avoid a tomato"))
+    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Boo! How dare you beat Gloria, you horrible trainer! Boo!\p{PLAYER} ducked to avoid a tomato!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left))
     waitmovement(0)    
-    msgbox(format("GLORIA: Ahh..don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
-
-    //Receive the badge
-    msgbox(format("{PLAYER} received the DARK BADGE from GLORIA."))
-    release
-    setflag(FLAG_BADGE04_GET)
+    msgbox(format("GLORIA: Ah...don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
 
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
+    //Receive the badge
+    msgbox(format("{PLAYER} received the Drama Badge from Gloria."))
+    release
+    setflag(FLAG_BADGE04_GET)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format("The BADGE allows you to use HM CUT outside of battle. Cut down all your obstacles!"))
+    msgbox(format("The Drama Badge..."))
 
-    //Give TM also
-    giveitem(ITEM_TM_THIEF)
-    msgbox(format("GLORIA: THIEF lets you steal opponents items. A useful tool!"))
+    //Give item also
 
     //Bye-bye
     msgbox(format("GLORIA: It was a pleasure sharing the stage with you. May you weave and bob with elegance in the dance of life, {PLAYER}!"))   
@@ -209,11 +210,11 @@ script SilversunCity_Theater_NPC6{
     lockall
     faceplayer
     if (flag(FLAG_SILVERSUN_THEATER_LENS)){
-        msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role!"))
+        msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role any day now!"))
     } else {
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-         msgbox(format("Ooh! Are you going to go on-stage next to GLORIA?"), MSGBOX_YESNO)           
+         msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
             if (var (VAR_RESULT) == 1){
                 msgbox(format("Oh my god! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){

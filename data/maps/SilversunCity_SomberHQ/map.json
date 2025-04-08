@@ -312,6 +312,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SomberHQ_NPC_Counterfeiter",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
+      "x": 23,
+      "y": 46,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_ChanseyOnRoute",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -447,13 +460,6 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSUN_CITY_SEWERS",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 0,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_SILVERSUN_CITY_SOMBER_HQ",
-      "dest_warp_id": "11"
     }
   ],
   "coord_events": [
