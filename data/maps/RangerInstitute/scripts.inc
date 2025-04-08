@@ -621,7 +621,7 @@ RangerInstitute_Mon_Bayleef::
 # 434 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_1
 # 435 "data//maps/RangerInstitute/scripts.pory"
-	giveitem ITEM_MIRACLE_SEED
+	giveitem ITEM_POTION
 # 436 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
 # 437 "data//maps/RangerInstitute/scripts.pory"

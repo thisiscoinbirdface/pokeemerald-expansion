@@ -35,8 +35,7 @@ script Route1_House_QuestInProgress{
             release
             faceplayer
             msgbox(format("Child, you must have something in return. The least I can do. Which of these would you like?"))
-            dynmultichoice(0, 0, TRUE, 4, 0, "GREAT BALL", "FULL HEAL")
-
+            dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "GREAT BALL", "FULL HEAL")
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_GREAT_BALL)
             } else {

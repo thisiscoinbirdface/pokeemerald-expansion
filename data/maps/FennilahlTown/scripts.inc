@@ -601,8 +601,8 @@ Fennilahl_Breech_StartQuest_Text_0:
 	.string "any Pokemon to help me get it back! I\l"
 	.string "don't want to battle - I can't deal with\l"
 	.string "conflict.\p"
-	.string "I don't know what to do! Will you help me\n"
-	.string "out?$"
+	.string "I don't know what to do! Will you help\n"
+	.string "me?$"
 
 Fennilahl_Breech_StartQuest_Text_1:
 # 47 "data//maps/FennilahlTown/scripts.pory"

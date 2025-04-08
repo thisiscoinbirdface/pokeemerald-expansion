@@ -1,15 +1,15 @@
 # 1 "data//maps/VilethornWoods/scripts.pory"
 
 # 2 "data//maps/VilethornWoods/scripts.pory"
-    .set LOCALID_GRUNT, 18
+    .set LOCALID_GRUNT, 17
 # 3 "data//maps/VilethornWoods/scripts.pory"
-    .set LOCALID_PROF, 17
+    .set LOCALID_PROF, 16
 # 4 "data//maps/VilethornWoods/scripts.pory"
-    .set LOCALID_RALTS1, 20
+    .set LOCALID_RALTS1, 18
 # 5 "data//maps/VilethornWoods/scripts.pory"
-    .set LOCALID_RALTS2, 21
+    .set LOCALID_RALTS2, 19
 # 6 "data//maps/VilethornWoods/scripts.pory"
-    .set LOCALID_RALTS3, 22
+    .set LOCALID_RALTS3, 20
 
 VilethornWoods_MapScripts::
 	.byte 0
@@ -352,10 +352,10 @@ VilethornWoods_NPC2::
 # 269 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC2_5
-# 281 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_5
+# 288 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_7
 VilethornWoods_NPC2_1:
-# 284 "data//maps/VilethornWoods/scripts.pory"
+# 291 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
@@ -369,8 +369,8 @@ VilethornWoods_NPC2_5:
 # 0 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne VilethornWoods_NPC2_8
-# 278 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_4
+# 285 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_6
 	goto VilethornWoods_NPC2_1
 
 VilethornWoods_NPC2_8:
@@ -378,35 +378,46 @@ VilethornWoods_NPC2_8:
 	msgbox VilethornWoods_NPC2_Text_2
 # 273 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 274 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_TWISTED_SPOON
 # 275 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_VILETHORN_NPC_MUSHROOMS
+	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, VilethornWoods_NPC2_Text_3, VilethornWoods_NPC2_Text_4
 # 276 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_3
+	compare VAR_RESULT, 0
+	goto_if_eq VilethornWoods_NPC2_12
+# 279 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_MIRACLE_SEED
+VilethornWoods_NPC2_11:
+# 282 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_NPC_MUSHROOMS
+# 283 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_5
 	goto VilethornWoods_NPC2_1
+
+VilethornWoods_NPC2_12:
+# 277 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_TWISTEDSPOON
+	goto VilethornWoods_NPC2_11
 
 
 VilethornWoods_NPC3::
-# 289 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 290 "data//maps/VilethornWoods/scripts.pory"
-	faceplayer
-# 291 "data//maps/VilethornWoods/scripts.pory"
-	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
-# 294 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC3_Text_1
-# 295 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_SCOPE_LENS
 # 296 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 297 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 298 "data//maps/VilethornWoods/scripts.pory"
+	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
+# 301 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC3_Text_1
+# 302 "data//maps/VilethornWoods/scripts.pory"
+	giveitem ITEM_SCOPE_LENS
+# 303 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_ITEM
 VilethornWoods_NPC3_1:
-# 299 "data//maps/VilethornWoods/scripts.pory"
+# 306 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	return
 
 VilethornWoods_NPC3_2:
-# 292 "data//maps/VilethornWoods/scripts.pory"
+# 299 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_0
 	goto VilethornWoods_NPC3_1
 
@@ -657,9 +668,10 @@ VilethornWoods_NPC2_Text_0:
 
 VilethornWoods_NPC2_Text_1:
 # 267 "data//maps/VilethornWoods/scripts.pory"
-	.string "I'm a traveling chef! While I usually\n"
-	.string "cook at the Pelluca Restaurant, I'm\l"
-	.string "here to collect mushrooms to create\l"
+	.string "Oh, it's you again! Fancy seeing you\n"
+	.string "here. I'm a traveling chef! While I\l"
+	.string "usually cook at the Pelluca Restaurant,\l"
+	.string "I'm here to collect mushrooms to create\l"
 	.string "new recipes...but I can only find TINY\l"
 	.string "MUSHROOMs! Say, why don't you help me?\l"
 	.string "If you can get me a BIG MUSHROOM, I'll\l"
@@ -670,31 +682,41 @@ VilethornWoods_NPC2_Text_2:
 # 272 "data//maps/VilethornWoods/scripts.pory"
 	.string "Perfect! This'll be a great addition to\n"
 	.string "our pantry. Thank you! Now I must give\l"
-	.string "you something in exchage...$"
+	.string "you something in exchage...how about an\l"
+	.string "old spood from the restaurant? Or\l"
+	.string "maybe this seed I found earlier?$"
 
 VilethornWoods_NPC2_Text_3:
-# 276 "data//maps/VilethornWoods/scripts.pory"
+# 275 "data//maps/VilethornWoods/scripts.pory"
+	.string "TWISTEDSPOON$"
+
+VilethornWoods_NPC2_Text_4:
+# 275 "data//maps/VilethornWoods/scripts.pory"
+	.string "MIRACLE SEED$"
+
+VilethornWoods_NPC2_Text_5:
+# 283 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over Cormoria. And if you\l"
 	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
-VilethornWoods_NPC2_Text_4:
-# 278 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_NPC2_Text_6:
+# 285 "data//maps/VilethornWoods/scripts.pory"
 	.string "Hey, you don't have any! Are you trying\n"
 	.string "to trick me? The DROWZEE and MORELULL\l"
 	.string "doing enough of that!$"
 
-VilethornWoods_NPC2_Text_5:
-# 281 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_NPC2_Text_7:
+# 288 "data//maps/VilethornWoods/scripts.pory"
 	.string "Come back when you do!$"
 
 VilethornWoods_NPC3_Text_0:
-# 292 "data//maps/VilethornWoods/scripts.pory"
+# 299 "data//maps/VilethornWoods/scripts.pory"
 	.string "I am well and truly lost...$"
 
 VilethornWoods_NPC3_Text_1:
-# 294 "data//maps/VilethornWoods/scripts.pory"
+# 301 "data//maps/VilethornWoods/scripts.pory"
 	.string "I am well and truly lost...even with this\n"
 	.string "SCOPE LENS, I can't see a thing! Why\l"
 	.string "don't you have it?$"

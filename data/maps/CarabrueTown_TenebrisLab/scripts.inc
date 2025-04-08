@@ -61,8 +61,6 @@ CarabrueTown_TenebrisLab_EventScript_Start::
 	giveitem ITEM_POKE_BALL, 5
 # 42 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	giveitem ITEM_POTION, 1
-# 43 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	giveitem ITEM_TOWN_MAP
 # 44 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 5
 # 46 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
