@@ -5,19 +5,15 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
     lockall
 
     if (!flag(FLAG_UNUSED_0x020)) {
-        msgbox(
-            format(
-                "Sorry, this road is temporarily closed. We're investigating Professor Tenebris' disappearance."
-            )
-        )
+        msgbox(format("DETECTIVE: Sorry, this road is temporarily closed. We're investigating Professor Tenebris' disappearance."))
     } else {
-        msgbox(
-            format(
-                "Is this the evidence from the lab? Perfect. Thanks, kid. We'll take it from here."
-            )
-        )
+        msgbox(format("DETECTIVE: Is this the evidence from the lab? Perfect. Thanks, kid. We'll take it from here.\p...\pDETECTIVE: Hold on - this doesn't look like evidence!"))
         release
 
+        giveitem(ITEM_EXP_SHARE)
+
+        msgbox(format("DETECTIVE: What's the matter with you guys? Can't keep it together without the Professor?"))
+        release
         fadescreen(FADE_TO_BLACK)
 
         removeobject(1)
