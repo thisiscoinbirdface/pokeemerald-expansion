@@ -690,10 +690,10 @@ script Common_EventScript_SettingsGuy{
 
     if (var(VAR_RESULT) == 0){
         setvar(VAR_SYS_EXP_ALL, GEN_LATEST)
-        msgbox(format("Exp All is now {COLOR GREEN}ON{COLOR DARK_GREY}."))
+        msgbox(format("Exp All is now {COLOR GREEN}ON{COLOR DARK_GRAY}."))
     } else {
         setvar(VAR_SYS_EXP_ALL, GEN_3)
-        msgbox(format("Exp All is now {COLOR RED}OFF{COLOR DARK_GREY}."))        
+        msgbox(format("Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}."))        
     }
 
     release

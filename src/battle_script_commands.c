@@ -5204,16 +5204,21 @@ static void Cmd_getexp(void)
                     PREPARE_STRING_BUFFER(gBattleTextBuff2, i);
                     PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff3, 6, gBattleStruct->battlerExpReward);
                     
-                    if (wasSentOut || holdEffect == HOLD_EFFECT_EXP_SHARE)
+                    if (wasSentOut) //|| holdEffect == HOLD_EFFECT_EXP_SHARE) remove the exp share text
                     {
-                        PrepareStringBattle(STRINGID_YOURTEAMGAINEDEXP, gBattleStruct->expGetterBattlerId);
+                        if ((IsGen6ExpShareEnabled() && !gBattleStruct->teamGotExpMsgPrinted))
+                        {
+                            gLastUsedItem = ITEM_EXP_SHARE;
+                            PrepareStringBattle(STRINGID_YOURTEAMGAINEDEXP, gBattleStruct->expGetterBattlerId);
+                            //PrepareStringBattle(STRINGID_TEAMGAINEDEXP, gBattleStruct->expGetterBattlerId);
+                            gBattleStruct->teamGotExpMsgPrinted = TRUE;
+                        }
+                        else
+                        {
+                            PrepareStringBattle(STRINGID_PKMNGAINEDEXP, gBattleStruct->expGetterBattlerId);
                             //This used to be STRINGID_PKMNGAINEDEXP
-                    }
-                    else if (IsGen6ExpShareEnabled() && !gBattleStruct->teamGotExpMsgPrinted) // Print 'the rest of your team got exp' message once, when all of the sent-in mons were given experience
-                    {
-                        gLastUsedItem = ITEM_EXP_SHARE;
-                    //    PrepareStringBattle(STRINGID_TEAMGAINEDEXP, gBattleStruct->expGetterBattlerId);
-                        gBattleStruct->teamGotExpMsgPrinted = TRUE;
+                        }
+
                     }
 
                     MonGainEVs(&gPlayerParty[*expMonId], gBattleMons[gBattlerFainted].species);

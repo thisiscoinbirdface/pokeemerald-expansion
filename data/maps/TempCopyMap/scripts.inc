@@ -1320,11 +1320,11 @@ Common_EventScript_SettingsGuy_Text_2:
 
 Common_EventScript_SettingsGuy_Text_3:
 # 693 "data//maps/TempCopyMap/scripts.pory"
-	.string "Exp All is now {COLOR GREEN}ON{COLOR DARK_GREY}.$"
+	.string "Exp All is now {COLOR GREEN}ON{COLOR DARK_GRAY}.$"
 
 Common_EventScript_SettingsGuy_Text_4:
 # 696 "data//maps/TempCopyMap/scripts.pory"
-	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GREY}.$"
+	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}.$"
 
 Common_Text_Greta_Comecome::
 # 455 "data//maps/TempCopyMap/scripts.pory"
