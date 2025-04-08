@@ -17,7 +17,7 @@ script SilversunCity_PokemonCenter_EventScript_Nurse{
 script SilversunCity_PokemonCenter_NPC1{
 	lockall
     faceplayer
-	msgbox(format("Apparently you can't meet ARIAN, the Gym Leader, without getting an appointment first."))
+	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a Mega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."))
 	releaseall
 }
 

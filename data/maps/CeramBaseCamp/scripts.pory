@@ -122,7 +122,7 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         applymovement(4, moves(emote_exclamation_mark))    
         waitmovement(0)
         msgbox(format("Thank you! Isn't this great, Cyndaquil?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
-        giveitem(ITEM_CHARCOAL)
+        giveitem(ITEM_POTION)
         completequest(QUEST_CERAM_CYNDAQUIL)
     } else { //refuse to give TM
         msgbox(format("Please bring the TM SUNNY DAY for Cyndaquil!"))

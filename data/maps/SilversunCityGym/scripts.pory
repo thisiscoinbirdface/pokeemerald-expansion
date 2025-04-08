@@ -25,7 +25,34 @@ script SilversunCityGym_EventScript_BackstagePass{
 script SilversunCityGym_EventScript_Red{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Silversun Gym...and Theater Studio!\pWhen Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but those are the rules! If you wanna be a part of Gloria's productions, you have to help maintain the gym."))
+
+    if (flag(FLAG_BADGE04_GET)){
+        if (flag(FLAG_GALECRESTGYM_SPENSER_REWARD)){
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+        } else {
+            msgbox(format("Well done champ-in-the-making! Giving it your all in front of a huge crowd...and winning! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "GRASS GEM", "DARK GEM")
+
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_GRASS_GEM)
+            }
+            if (var(VAR_RESULT) == 1){
+                giveitem(ITEM_DARK_GEM)
+            }
+
+            setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+        }
+    } else { 
+        if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+        } else {
+            msgbox(format("Welcome to the Silversun Gym...and Theater Studio! First, have some water."))
+            giveitem(ITEM_FRESH_WATER)
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+            setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
+        }
+    }
     releaseall
     end
 }

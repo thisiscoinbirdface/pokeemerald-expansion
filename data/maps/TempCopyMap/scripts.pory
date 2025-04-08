@@ -689,10 +689,10 @@ script Common_EventScript_SettingsGuy{
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "EXP ALL ON", "EXP ALL OFF")
 
     if (var(VAR_RESULT) == 0){
-        setvar(VAR_SYS_EXP_ALL, GEN_LATEST)
+        setvar(VAR_SYS_EXP_ALL, 8)
         msgbox(format("Exp All is now {COLOR GREEN}ON{COLOR DARK_GRAY}."))
     } else {
-        setvar(VAR_SYS_EXP_ALL, GEN_3)
+        setvar(VAR_SYS_EXP_ALL, 2)
         msgbox(format("Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}."))        
     }
 

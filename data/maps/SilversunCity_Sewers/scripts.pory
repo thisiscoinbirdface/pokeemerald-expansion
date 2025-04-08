@@ -342,4 +342,8 @@ mart SilversunCity_Sewers_Market_C_Inventory{
     ITEM_DUBIOUS_DISC
     ITEM_REAPER_CLOTH
     ITEM_LUSTER_STONE
+    ITEM_SHINY_STONE
 }
+
+
+

@@ -206,7 +206,17 @@
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
 #define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
+
+//I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
 #define FLAG_HEAL_PASS_EXPLAIN                                      0x4EF // Unused Flag
+#define FLAG_GASTREEGYM_SPENSER_WATER                               0x4E7 // Unused Flag
+#define FLAG_GASTREEGYM_SPENSER_REWARD                              0x4E8 // Unused Flag
+#define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                         0x4E9 // Unused Flag
+#define FLAG_CERAMBASECAMPGYM_SPENSER_REWARD                        0x4EA // Unused Flag
+#define FLAG_GALECRESTGYM_SPENSER_WATER                             0x4EB // Unused Flag
+#define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EC // Unused Flag
+#define FLAG_SILVERSUNGYM_SPENSER_WATER                             0x4ED // Unused Flag
+#define FLAG_SILVERSUNGYM_SPENSER_REWARD                            0x4EE // Unused Flag
 
 
 // Scripts

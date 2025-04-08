@@ -215,8 +215,8 @@
       "x": 25,
       "y": 52,
       "elevation": 0,
-      "dest_map": "MAP_GALECREST_CITY",
-      "dest_warp_id": "10"
+      "dest_map": "MAP_GALECREST_CITY_GYM",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

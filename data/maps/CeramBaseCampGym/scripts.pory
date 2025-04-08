@@ -8,8 +8,36 @@ mapscripts CeramBaseCampGym_MapScripts{}
 script CeramBaseCampGym_Red{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! The Gym Leader ARIAN, who also manages the base camp, specialises in FIRE type Pokemon. Avoid using BUG and GRASS types!"))
+
+    if (flag(FLAG_BADGE02_GET)){
+        if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD)){
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+        } else {
+            msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "FIRE GEM", "CHARCOAL")
+
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_FIRE_GEM)
+            }
+            if (var(VAR_RESULT) == 1){
+                giveitem(ITEM_CHARCOAL)
+            }
+
+            setflag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD)
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+        }
+    } else { 
+        if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)){
+    msgbox(format("The Gym Leader Arian, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers!"))
+        } else {
+            msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! First, have some water."))
+            giveitem(ITEM_FRESH_WATER)
+            msgbox(format("The Gym Leader Arian, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers! Now go get 'em, champ-in-the-making!"))
+            setflag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)
+        }
+    }
     releaseall
+    end
 }
 
 script CeramBaseCampGym_Guard{

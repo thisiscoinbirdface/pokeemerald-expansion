@@ -239,6 +239,7 @@ mart CeramBaseCamp_Main_Pokemart_Inventory{
     ITEM_FRESH_WATER
     ITEM_SODA_POP
     ITEM_LAVA_COOKIE
+    ITEM_REVIVE
 }
 
 

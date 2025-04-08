@@ -24,9 +24,39 @@ script GalecrestCityGym_Test{
 script GalecrestCityGym_Red {
     lockall
     faceplayer
-    msgbox(format("Greetings trainer! Good to see you again. This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here!"))
+
+    if (flag(FLAG_BADGE03_GET)){
+        if (flag(FLAG_GALECRESTGYM_SPENSER_REWARD)){
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+        } else {
+            msgbox(format("Well done champ-in-the-making! The Gym Leader pulled a fast one on you, using his real team, and you still made it out! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL GEM", "SILK SCARF")
+
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_FIRE_GEM)
+            }
+            if (var(VAR_RESULT) == 1){
+                giveitem(ITEM_CHARCOAL)
+            }
+
+            setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+        }
+    } else { 
+        if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
+            msgbox(format("Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here, and GHOST type Pokemon are immune to NORMAL type attacks!"))
+        } else {
+            msgbox(format("Greetings trainer! Good to see you again.  First, have some water."))
+            giveitem(ITEM_FRESH_WATER)
+            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here, and GHOST type Pokemon are immune to NORMAL type attacks!"))
+            setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
+        }
+    }
     releaseall
+    end
 }
+
+
 script GalecrestCityGym_NPC1 {
     lockall
     faceplayer
@@ -123,17 +153,25 @@ script GalecrestCityGym_Leader {
         msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("KOHLA: The Stoic Badge lets you control Pokemon upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
+        msgbox(format("KOHLA: The Stoic Badge lets you use the HM move ROCK SMASH outside of battle."))
         release
         delay(16)
         
         //Bye-bye
-        msgbox(format("KOHLA: {PLAYER}, despite being a disrespectful chum, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pKOHLA: Now enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
+        msgbox(format("KOHLA: {PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pKOHLA: Now enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
         release
         delay(16)
+        
+        opendoor(23, 26)
+        waitdooranim
         applymovement(5, moves(walk_up))
         waitmovement(0)
+        delay(8)
         removeobject(5)
+        delay(8)
+        closedoor(23, 26)
+        waitdooranim
+
 
     }
     releaseall

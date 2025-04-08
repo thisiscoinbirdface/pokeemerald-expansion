@@ -453,6 +453,8 @@ SilversunCity_Sewers_Market_C_Inventory:
 	.2byte ITEM_REAPER_CLOTH
 # 344 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_LUSTER_STONE
+# 345 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.2byte ITEM_SHINY_STONE
 	.2byte ITEM_NONE
 
 # 48 "data//maps/SilversunCity_Sewers/scripts.pory"

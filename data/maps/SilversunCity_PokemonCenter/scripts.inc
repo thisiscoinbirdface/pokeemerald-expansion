@@ -38,6 +38,7 @@ SilversunCity_PokemonCenter_NPC1::
 
 SilversunCity_PokemonCenter_NPC1_Text_0:
 # 20 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	.string "Apparently you can't meet ARIAN, the\n"
-	.string "Gym Leader, without getting an\l"
-	.string "appointment first.$"
+	.string "They've blocked off the Hoya River\n"
+	.string "North Crossing because they saw a Mega\l"
+	.string "Sharpedo in the wild! So I'm waiting here\l"
+	.string "until it's safe to cross again.$"

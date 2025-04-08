@@ -50,10 +50,13 @@ GalecrestCity_PokemonCenter_NPC2::
 
 GalecrestCity_PokemonCenter_NPC1_Text_0:
 # 21 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	.string "This city's Gym Leader is INGER, the\n"
-	.string "ROCK specialist. He's a local hero.$"
+	.string "Nobody goes into Vilethorn Woods - it's\n"
+	.string "too creepy and easy to get lost in!\p"
+	.string "...\p"
+	.string "...well, nobody sane.$"
 
 GalecrestCity_PokemonCenter_NPC2_Text_0:
 # 28 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	.string "Up north is Mt. Ceram and down south is\n"
-	.string "the giant Vine River.$"
+	.string "Galecrest City has really become quite\n"
+	.string "unmaintained. I keep finding Bottle\l"
+	.string "Caps lying around!$"

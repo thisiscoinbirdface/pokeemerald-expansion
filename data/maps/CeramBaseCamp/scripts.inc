@@ -195,7 +195,7 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_2:
 # 124 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2
 # 125 "data//maps/CeramBaseCamp/scripts.pory"
-	giveitem ITEM_CHARCOAL
+	giveitem ITEM_POTION
 # 126 "data//maps/CeramBaseCamp/scripts.pory"
 	completequest QUEST_CERAM_CYNDAQUIL
 	goto CeramBaseCamp_Cyndaquil_QuestInProgress_1

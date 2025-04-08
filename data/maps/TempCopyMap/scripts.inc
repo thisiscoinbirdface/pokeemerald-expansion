@@ -1052,7 +1052,7 @@ Common_EventScript_SettingsGuy::
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_SettingsGuy_2
 # 695 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_SYS_EXP_ALL, GEN_3
+	setvar VAR_SYS_EXP_ALL, 2
 # 696 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_SettingsGuy_Text_4
 Common_EventScript_SettingsGuy_1:
@@ -1062,7 +1062,7 @@ Common_EventScript_SettingsGuy_1:
 
 Common_EventScript_SettingsGuy_2:
 # 692 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_SYS_EXP_ALL, GEN_LATEST
+	setvar VAR_SYS_EXP_ALL, 8
 # 693 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_SettingsGuy_Text_3
 	goto Common_EventScript_SettingsGuy_1
