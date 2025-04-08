@@ -8,7 +8,7 @@
 #define P_UPDATED_EGG_GROUPS        GEN_LATEST  // Since Gen 8, certain Pokémon have gained new egg groups.
 #define P_UPDATED_FRIENDSHIP        GEN_LATEST  // Since Gen 8, the base friendship of certain Pokémon was changed.
 #define P_UPDATED_EVS               GEN_LATEST  // Some Pokémon have received EV updates after their introduction.
-#define P_UPDATED_EXP_YIELDS        GEN_LATEST  // Since Gen 5, some Pokémon have received base Experience changes.
+#define P_UPDATED_EXP_YIELDS        GEN_3  // Since Gen 5, some Pokémon have received base Experience changes.
 
 // Learnsets
 #define P_LVL_UP_LEARNSETS          GEN_LATEST  // Choose which set of Level Up Learnsets to use.

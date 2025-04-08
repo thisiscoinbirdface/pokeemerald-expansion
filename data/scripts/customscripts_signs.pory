@@ -191,22 +191,22 @@ script WoodSign_SilversunCity_Artist3{
 }
 
 script WhiteSign_SilversunCity_Main{
-    msgbox(format("Silversun City\pThe metropolis of the north."), MSGBOX_SIGN)
+    msgbox(format("Silversun City\nThe metropolis of the north."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_SilversunCity_Theater{
-    msgbox(format("Silversun Theatre\pPrepare to be enthralled!\nBookings close a day prior."), MSGBOX_SIGN)
+    msgbox(format("Silversun Theatre\nPrepare to be enthralled!\pBookings close a day prior.\nNo food and drinks allowed!"), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_SilversunCity_Orphanage{
-    msgbox(format("Silversun Blind Orphanage\pLove can be seen by all."), MSGBOX_SIGN)
+    msgbox(format("Silversun Blind Orphanage\nLove can be seen by all."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_SilversunCity_Sewers{
-    msgbox(format("Silversun Sewers\pEntry for authorised personnel only."), MSGBOX_SIGN)
+    msgbox(format("Silversun Sewers\nEntry for authorised personnel only."), MSGBOX_SIGN)
     end
 }
 

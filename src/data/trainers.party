@@ -830,6 +830,7 @@ Pic: Wally
 Gender: Male
 Music: Aqua
 Double Battle: No
+Items: Super Potion
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
@@ -901,7 +902,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Drifloon
+Morelull
 Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -923,7 +924,7 @@ Level: 20
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Ponyta-Galar
-Level: 23
+Level: 22
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_VILETHORN_E ===
@@ -935,16 +936,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Brionne
+Skitty
 Level: 20
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Delcatty
-Level: 22
+Buneary
+Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Lopunny
-Level: 23
+Brionne
+Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
@@ -979,12 +980,12 @@ Dottler
 Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Araquanid
-Level: 23
+Dewpider
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lokix
-Level: 24
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pinsir
@@ -1003,11 +1004,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Nickit
-Level: 23
+Level: 21
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Raticate-Alola
-Level: 24
+Level: 22
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_GABBY_AND_TY_4 ===

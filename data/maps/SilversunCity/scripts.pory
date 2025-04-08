@@ -153,15 +153,13 @@ script SilversunCity_NPC3{
     lockall
     faceplayer
     msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))  
-    giveitem(ITEM_OLD_ROD)
-//    warp(MAP_MIRROH_INTERIOR_1F, 55, 56)
     releaseall
     end
 }
 script SilversunCity_NPC4{
     lockall
     faceplayer
-    msgbox(format("We keep seeing wild KOFFING and TOXEL around...they come from the sewers, I bet."))
+    msgbox(format("We keep seeing wild Koffing and Toxel around...they come from the sewers, I bet."))
     releaseall
     end
 }
@@ -177,7 +175,7 @@ script SilversunCity_NPC5{
 script SilversunCity_NPC6{
     lockall
     faceplayer
-    msgbox(format("I caught my VIVILLON in Mt. Mirroh! It's always hungry and keeps eating my LAVA COOKIES..."))
+    msgbox(format("I caught my Vivillon in Mt. Mirroh! It's always hungry and keeps eating my Lava Cookies..."))
     releaseall
     end
 }
@@ -186,7 +184,7 @@ script SilversunCity_Murkrow{
     lockall
     faceplayer
     playmoncry(SPECIES_MURKROW, CRY_MODE_NORMAL)
-    msgbox(format("MURKROW glares at you. It's as if its saying, 'Get out of the way!'"))
+    msgbox(format("Murkrow glares at you. It's as if its saying, 'Get out of the way!'"))
     releaseall
     end
 }
@@ -195,7 +193,7 @@ script SilversunCity_Meowth{
     lockall
     faceplayer
     playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
-    msgbox(format("MEOWTH is skulking around the back of the SILVERSUN THEATER. It looks angry - better be careful!"))
+    msgbox(format("Meowth is skulking around the back of the Silversun Theater. It looks angry - better be careful!"))
     releaseall
     end
 }
@@ -206,23 +204,23 @@ script SilversunCity_Vivillon{
     playmoncry(SPECIES_VIVILLON, CRY_MODE_NORMAL)
 
     if (flag(FLAG_SILVERSUN_VIVILLON)){
-        msgbox(format("VIVILLON looks hungry! It's eyeing your bag...better move away quickly!"))
+        msgbox(format("Vivillon looks hungry! It's eyeing your bag...better move away quickly!"))
     } else {
         checkitem(ITEM_LAVA_COOKIE)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("VIVILLON looks hungry! It's eyeing your bag...\pGive VIVILLON a LAVA COOKIE?"), MSGBOX_YESNO)
+            msgbox(format("Vivillon looks hungry! It's eyeing your bag...\pGive Vivillon a Lava Cookie?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
                 playmoncry(SPECIES_VIVILLON, CRY_MODE_NORMAL)
-                msgbox(format("VIVILLON chomped the cookie down!\pIt flutters towards you and puts something in your bag..."))
+                msgbox(format("Vivillon chomped the cookie down!\pIt flutters towards you and puts something in your bag..."))
                 giveitem(ITEM_SILVER_POWDER)
-                msgbox(format("Thanks VIVILLON!"))
+                msgbox(format("Thanks Vivillon!"))
                 release
                 setflag(FLAG_SILVERSUN_VIVILLON)
             } else {
                 msgbox(format("Better move away quickly!"))
             }
         } else {
-            msgbox(format("VIVILLON looks hungry! It's eyeing your bag...better move away quickly!"))
+            msgbox(format("Vivillon looks hungry! It's eyeing your bag...better move away quickly!"))
         }
     }
     releaseall

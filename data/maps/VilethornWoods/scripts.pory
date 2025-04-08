@@ -36,9 +36,10 @@ script VilethornWoods_Ralts_FirstTrigger{
     if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
 
     lockall
+    playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
     applymovement(LOCALID_RALTS1, moves(face_up emote_exclamation_mark))
     waitmovement(0)
-    delay(12)
+    delay(24)
     applymovement(LOCALID_RALTS1, moves(fly_up))
     waitmovement(0)
     
@@ -62,9 +63,10 @@ script VilethornWoods_Ralts_SecondTrigger{
     if (flag(FLAG_VILETHORN_RALTS_FINISHED)) {end}
 
     lockall
+    playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
     applymovement(LOCALID_RALTS2, moves(face_up emote_exclamation_mark))
     waitmovement(0)
-    delay(12)
+    delay(24)
     applymovement(LOCALID_RALTS2, moves(fly_up))
     waitmovement(0)
 
@@ -218,8 +220,8 @@ script VilethornWoods_Trainer_E{
 script VilethornWoods_Trainer_F1{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
-    msgbox(format("I met her at a Pokemon Breeder festival. There was a battle competition and we were the two finalists!"))
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
+    msgbox(format("If we can get an exclusive interview with her, itll be the scoop of the week!"))
     releaseall
     end
 }
@@ -227,8 +229,8 @@ script VilethornWoods_Trainer_F1{
 script VilethornWoods_Trainer_F2{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We bonded over our love for battling! Do you want to battle?"), "We lost!")
-    msgbox(format("Maybe one day you'll find your true love during a battle too!"))
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
+    msgbox(format("If we can get an exclusive interview with her, itll be the scoop of the week!"))
     releaseall
     end
 }

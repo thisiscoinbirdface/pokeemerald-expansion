@@ -20,29 +20,29 @@ script SilversunCity_Houses_Artist{
 
 
     if (var(VAR_SILVERSUN_ARTIST) == 1){
-        msgbox(format("Yes yes. Have you brought me the BLACK SLUDGE?"), MSGBOX_YESNO)
+        msgbox(format("ARSALAN: Yes yes. Have you brought me the BLACK SLUDGE?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             if (checkitem(ITEM_BLACK_SLUDGE)){
                 removeitem(ITEM_BLACK_SLUDGE)
                 msgbox(format("{PLAYER} gave ARSALAN a BLACK SLUDGE."))
                 completequest(QUEST_SILVERSUN_ARTIST)                
-                msgbox(format("Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
+                msgbox(format("ARSALAN: Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
                 release
                 giveitem(ITEM_SILVERPOWDER)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
             } else {
-                msgbox(format("But you do not have it! An artist's eyes cannot be fooled."))
+                msgbox(format("ARSALAN: But you do not have it! An artist's eyes cannot be fooled."))
                 release
             }
         } else {
-            msgbox(format("Just use the regular black paint, you say? Pah! Philistine!"))
+            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"))
         }
     }
 
     if (var(VAR_SILVERSUN_ARTIST) == 0){
-        msgbox(format("Myself, I have no patience for theater. No no! Although GLORIA is fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in Cormoria!\p...\pBut ARSALAN is struggling now. Why, you ask? Well well.\pYou see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some BLACK SLUDGE.\pWill you help me?"), MSGBOX_YESNO)
+        msgbox(format("ARSALAN: Myself, I have no patience for theater. No no! Although Gloria is indeed fantastic. I admire her interpretation of the morbid.\pARSALAN: Me? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in Cormoria!\p...\pARSALAN: But Arsalan is struggling now. Why, you ask? Well well.\pARSALAN: You see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some Black Sludge.\pARSALAN: Will you help me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("ARSALAN is most pleased! I eagerly await your return."))
+            msgbox(format("ARSALAN: Arsalan is most pleased! I eagerly await your return."))
             release
             //Start quest
             setvar(VAR_SILVERSUN_ARTIST, 1)
@@ -52,11 +52,10 @@ script SilversunCity_Houses_Artist{
             applymovement(2, moves(emote_exclamation_mark))
             waitmovement(0)
             delay(24)
-            msgbox(format("Just use the regular black paint, you say? Pah! Philistine!"))
+            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"))
             release
         }
     }
-
 
     releaseall
     end
@@ -83,7 +82,7 @@ script SilversunCity_Houses_Tutor{
 script SilversunCity_Houses_NPC1{
     lockall
     faceplayer
-    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called SILVERSHADE CITY instead."))
+    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called Silvershade City instead."))
     releaseall
     end
 }
@@ -97,7 +96,7 @@ script SilversunCity_Houses_NPC2{
 script SilversunCity_Houses_NPC3{
     lockall
     faceplayer
-    msgbox(format("I really want a TOXEL as my first Pokemon but Mom will never let me have one."))
+    msgbox(format("I really want a Toxel as my first Pokemon but Mom will never let me have one."))
     releaseall
     end
 }
@@ -157,6 +156,6 @@ script SilversunCity_Houses_Wife{
 
 
 script SilversunCity_Houses_Furfrou{
-    msgbox(format("FURFROU is patiently waiting."))
+    msgbox(format("Furfrou is patiently waiting."))
     releaseall
 }

@@ -115,12 +115,12 @@ script GalecrestCityGym_Leader {
         //Post battle
         //Receive the badge
         msgbox(format("KOHLA: This is yours, {PLAYER}."))
-        release
-        setflag(FLAG_BADGE03_GET)        
-        msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
-        
+        release        
+
         //Play gym badge fanfare
         call(Common_EventScript_PlayGymBadgeFanfare)
+        setflag(FLAG_BADGE03_GET)        
+        msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         msgbox(format("KOHLA: The Stoic Badge lets you control Pokemon upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
