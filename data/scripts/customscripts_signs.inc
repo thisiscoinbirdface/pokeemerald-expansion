@@ -381,23 +381,24 @@ WoodSign_SilversunCity_Artist3_Text_0:
 
 WhiteSign_SilversunCity_Main_Text_0:
 # 194 "data//scripts/customscripts_signs.pory"
-	.string "Silversun City\p"
+	.string "Silversun City\n"
 	.string "The metropolis of the north.$"
 
 WhiteSign_SilversunCity_Theater_Text_0:
 # 199 "data//scripts/customscripts_signs.pory"
-	.string "Silversun Theatre\p"
-	.string "Prepare to be enthralled!\n"
-	.string "Bookings close a day prior.$"
+	.string "Silversun Theatre\n"
+	.string "Prepare to be enthralled!\p"
+	.string "Bookings close a day prior.\n"
+	.string "No food and drinks allowed!$"
 
 WhiteSign_SilversunCity_Orphanage_Text_0:
 # 204 "data//scripts/customscripts_signs.pory"
-	.string "Silversun Blind Orphanage\p"
+	.string "Silversun Blind Orphanage\n"
 	.string "Love can be seen by all.$"
 
 WhiteSign_SilversunCity_Sewers_Text_0:
 # 209 "data//scripts/customscripts_signs.pory"
-	.string "Silversun Sewers\p"
+	.string "Silversun Sewers\n"
 	.string "Entry for authorised personnel only.$"
 
 WhiteSign_SilversunCity_Gym_Text_0:

@@ -107,12 +107,12 @@ GalecrestCityGym_Leader::
 	msgbox GalecrestCityGym_Leader_Text_1
 # 118 "data//maps/GalecrestCityGym/scripts.pory"
 	release
-# 119 "data//maps/GalecrestCityGym/scripts.pory"
-	setflag FLAG_BADGE03_GET
-# 120 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Leader_Text_2
-# 123 "data//maps/GalecrestCityGym/scripts.pory"
+# 121 "data//maps/GalecrestCityGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
+# 122 "data//maps/GalecrestCityGym/scripts.pory"
+	setflag FLAG_BADGE03_GET
+# 123 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_2
 # 126 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_3
 # 127 "data//maps/GalecrestCityGym/scripts.pory"
@@ -230,7 +230,7 @@ GalecrestCityGym_Leader_Text_1:
 	.string "KOHLA: This is yours, {PLAYER}.$"
 
 GalecrestCityGym_Leader_Text_2:
-# 120 "data//maps/GalecrestCityGym/scripts.pory"
+# 123 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER} received the STOIC BADGE\n"
 	.string "from KOHLA.$"
 

@@ -29,7 +29,7 @@ SilversunCity_Houses_Artist_1:
 	compare VAR_SILVERSUN_ARTIST, 0
 	goto_if_eq SilversunCity_Houses_Artist_5
 SilversunCity_Houses_Artist_4:
-# 61 "data//maps/SilversunCity_Houses/scripts.pory"
+# 60 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -102,117 +102,117 @@ SilversunCity_Houses_Artist_13:
 
 
 SilversunCity_Houses_Tutor::
-# 67 "data//maps/SilversunCity_Houses/scripts.pory"
+# 66 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 68 "data//maps/SilversunCity_Houses/scripts.pory"
+# 67 "data//maps/SilversunCity_Houses/scripts.pory"
 	faceplayer
-# 69 "data//maps/SilversunCity_Houses/scripts.pory"
+# 68 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Tutor_Text_0
-# 70 "data//maps/SilversunCity_Houses/scripts.pory"
+# 69 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Houses_NPC1::
-# 84 "data//maps/SilversunCity_Houses/scripts.pory"
+# 83 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 85 "data//maps/SilversunCity_Houses/scripts.pory"
+# 84 "data//maps/SilversunCity_Houses/scripts.pory"
 	faceplayer
-# 86 "data//maps/SilversunCity_Houses/scripts.pory"
+# 85 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC1_Text_0
-# 87 "data//maps/SilversunCity_Houses/scripts.pory"
+# 86 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Houses_NPC2::
-# 91 "data//maps/SilversunCity_Houses/scripts.pory"
+# 90 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 92 "data//maps/SilversunCity_Houses/scripts.pory"
+# 91 "data//maps/SilversunCity_Houses/scripts.pory"
 	faceplayer
-# 93 "data//maps/SilversunCity_Houses/scripts.pory"
+# 92 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC2_Text_0
-# 94 "data//maps/SilversunCity_Houses/scripts.pory"
+# 93 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Houses_NPC3::
-# 98 "data//maps/SilversunCity_Houses/scripts.pory"
+# 97 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 99 "data//maps/SilversunCity_Houses/scripts.pory"
+# 98 "data//maps/SilversunCity_Houses/scripts.pory"
 	faceplayer
-# 100 "data//maps/SilversunCity_Houses/scripts.pory"
+# 99 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC3_Text_0
-# 101 "data//maps/SilversunCity_Houses/scripts.pory"
+# 100 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Houses_DuskullNPC1::
-# 121 "data//maps/SilversunCity_Houses/scripts.pory"
+# 120 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_DuskullNPC1_2
-# 130 "data//maps/SilversunCity_Houses/scripts.pory"
+# 129 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
 SilversunCity_Houses_DuskullNPC1_1:
-# 133 "data//maps/SilversunCity_Houses/scripts.pory"
+# 132 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	return
 
 SilversunCity_Houses_DuskullNPC1_2:
-# 122 "data//maps/SilversunCity_Houses/scripts.pory"
+# 121 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 125 "data//maps/SilversunCity_Houses/scripts.pory"
+# 124 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
-# 126 "data//maps/SilversunCity_Houses/scripts.pory"
+# 125 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 127 "data//maps/SilversunCity_Houses/scripts.pory"
+# 126 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveegg SPECIES_HONEDGE
-# 128 "data//maps/SilversunCity_Houses/scripts.pory"
+# 127 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SEWERS_DUSKULL, 4
 	goto SilversunCity_Houses_DuskullNPC1_1
 
 
 SilversunCity_Houses_Husband::
-# 137 "data//maps/SilversunCity_Houses/scripts.pory"
+# 136 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_Husband_2
-# 147 "data//maps/SilversunCity_Houses/scripts.pory"
+# 146 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1
 SilversunCity_Houses_Husband_1:
-# 150 "data//maps/SilversunCity_Houses/scripts.pory"
+# 149 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	return
 
 SilversunCity_Houses_Husband_2:
-# 138 "data//maps/SilversunCity_Houses/scripts.pory"
+# 137 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 141 "data//maps/SilversunCity_Houses/scripts.pory"
+# 140 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_0
-# 142 "data//maps/SilversunCity_Houses/scripts.pory"
+# 141 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 143 "data//maps/SilversunCity_Houses/scripts.pory"
+# 142 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveegg SPECIES_HONEDGE
-# 144 "data//maps/SilversunCity_Houses/scripts.pory"
+# 143 "data//maps/SilversunCity_Houses/scripts.pory"
 	completequest QUEST_SILVERSUN_WIFE
-# 145 "data//maps/SilversunCity_Houses/scripts.pory"
+# 144 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SEWERS_DUSKULL, 5
 	goto SilversunCity_Houses_Husband_1
 
 
 SilversunCity_Houses_Wife::
-# 154 "data//maps/SilversunCity_Houses/scripts.pory"
+# 153 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Wife_Text_0
-# 155 "data//maps/SilversunCity_Houses/scripts.pory"
+# 154 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	return
 
 
 SilversunCity_Houses_Furfrou::
-# 160 "data//maps/SilversunCity_Houses/scripts.pory"
+# 159 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Furfrou_Text_0
-# 161 "data//maps/SilversunCity_Houses/scripts.pory"
+# 160 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	return
 
@@ -231,8 +231,8 @@ SilversunCity_Houses_Smeargle_Text_0:
 
 SilversunCity_Houses_Artist_Text_0:
 # 23 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "Yes yes. Have you brought me the BLACK\n"
-	.string "SLUDGE?$"
+	.string "ARSALAN: Yes yes. Have you brought me\n"
+	.string "the BLACK SLUDGE?$"
 
 SilversunCity_Houses_Artist_Text_1:
 # 27 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -241,64 +241,64 @@ SilversunCity_Houses_Artist_Text_1:
 
 SilversunCity_Houses_Artist_Text_2:
 # 29 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "Amazing! You are a life-saver. Here, I\n"
-	.string "must repay you somehow. Take this, have\l"
-	.string "it!$"
+	.string "ARSALAN: Amazing! You are a life-saver.\n"
+	.string "Here, I must repay you somehow. Take\l"
+	.string "this, have it!$"
 
 SilversunCity_Houses_Artist_Text_3:
 # 34 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "But you do not have it! An artist's eyes\n"
-	.string "cannot be fooled.$"
+	.string "ARSALAN: But you do not have it! An\n"
+	.string "artist's eyes cannot be fooled.$"
 
 SilversunCity_Houses_Artist_Text_4:
 # 38 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "Just use the regular black paint, you\n"
-	.string "say? Pah! Philistine!$"
+	.string "ARSALAN: Just use the regular black\n"
+	.string "paint, you say? Pah! Philistine!$"
 
 SilversunCity_Houses_Artist_Text_5:
 # 43 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "Myself, I have no patience for theater.\n"
-	.string "No no! Although GLORIA is fantastic. I\l"
-	.string "admire her interpretation of the\l"
-	.string "morbid.\p"
-	.string "Me? My creative pulse compels me to\n"
-	.string "bring the world to life through paint\l"
-	.string "and brush! Yes yes! I am none other\l"
-	.string "than the legendary ARSALAN. My works\l"
-	.string "adorn the most prestigious walls in\l"
-	.string "Cormoria!\p"
+	.string "ARSALAN: Myself, I have no patience for\n"
+	.string "theater. No no! Although Gloria is\l"
+	.string "indeed fantastic. I admire her\l"
+	.string "interpretation of the morbid.\p"
+	.string "ARSALAN: Me? My creative pulse compels\n"
+	.string "me to bring the world to life through\l"
+	.string "paint and brush! Yes yes! I am none\l"
+	.string "other than the legendary ARSALAN. My\l"
+	.string "works adorn the most prestigious walls\l"
+	.string "in Cormoria!\p"
 	.string "...\p"
-	.string "But ARSALAN is struggling now. Why, you\n"
-	.string "ask? Well well.\p"
-	.string "You see, I am trying to paint something\n"
-	.string "never attempted before - the night\l"
-	.string "itself! And for this, I need a paint so\l"
-	.string "dark it swallows you. These regular\l"
-	.string "paints aren't worthy of being on my\l"
-	.string "canvas. I need some BLACK SLUDGE.\p"
-	.string "Will you help me?$"
+	.string "ARSALAN: But Arsalan is struggling now.\n"
+	.string "Why, you ask? Well well.\p"
+	.string "ARSALAN: You see, I am trying to paint\n"
+	.string "something never attempted before -\l"
+	.string "the night itself! And for this, I need a\l"
+	.string "paint so dark it swallows you. These\l"
+	.string "regular paints aren't worthy of being\l"
+	.string "on my canvas. I need some Black Sludge.\p"
+	.string "ARSALAN: Will you help me?$"
 
 SilversunCity_Houses_Artist_Text_6:
 # 45 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "ARSALAN is most pleased! I eagerly\n"
-	.string "await your return.$"
+	.string "ARSALAN: Arsalan is most pleased! I\n"
+	.string "eagerly await your return.$"
 
 SilversunCity_Houses_Tutor_Text_0:
-# 69 "data//maps/SilversunCity_Houses/scripts.pory"
+# 68 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I'm medidating. Come back to me later.\n"
 	.string "Get 6 badges first.\p"
 	.string "...\p"
 	.string "Yes, my meditations are long.$"
 
 SilversunCity_Houses_NPC1_Text_0:
-# 86 "data//maps/SilversunCity_Houses/scripts.pory"
+# 85 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Silversun City is right between the\n"
 	.string "always foggy Vilethorn Woods and the\l"
 	.string "always raining Route 6! We should be\l"
-	.string "called SILVERSHADE CITY instead.$"
+	.string "called Silvershade City instead.$"
 
 SilversunCity_Houses_NPC2_Text_0:
-# 93 "data//maps/SilversunCity_Houses/scripts.pory"
+# 92 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "They say dangerous Pokemon come out\n"
 	.string "from the sewers from time to time, like\l"
 	.string "the SEWER SCOURGE. Apparently that's\l"
@@ -307,13 +307,13 @@ SilversunCity_Houses_NPC2_Text_0:
 	.string "it!$"
 
 SilversunCity_Houses_NPC3_Text_0:
-# 100 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "I really want a TOXEL as my first\n"
+# 99 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "I really want a Toxel as my first\n"
 	.string "Pokemon but Mom will never let me have\l"
 	.string "one.$"
 
 SilversunCity_Houses_DuskullNPC1_Text_0:
-# 125 "data//maps/SilversunCity_Houses/scripts.pory"
+# 124 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Thank you for saving my wife. You see,\n"
 	.string "my wife is blind, so she needs a Pokemon\l"
 	.string "to assist her. But we didn't have enough\l"
@@ -334,15 +334,15 @@ SilversunCity_Houses_DuskullNPC1_Text_0:
 	.string "need it.$"
 
 SilversunCity_Houses_DuskullNPC1_Text_1:
-# 130 "data//maps/SilversunCity_Houses/scripts.pory"
+# 129 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I'm never going to the sewers\n"
 	.string "again...but we did what we had to do.$"
 
 SilversunCity_Houses_Wife_Text_0:
-# 154 "data//maps/SilversunCity_Houses/scripts.pory"
+# 153 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "The poor baby must be tired...I can hear\n"
 	.string "its snores.$"
 
 SilversunCity_Houses_Furfrou_Text_0:
-# 160 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "FURFROU is patiently waiting.$"
+# 159 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "Furfrou is patiently waiting.$"
