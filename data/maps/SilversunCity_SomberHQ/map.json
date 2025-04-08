@@ -139,7 +139,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SomberHQ_Grunt_E",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "SomberHQ_Grunt_G",
+      "script": "SomberHQ_Grunt_H",
       "flag": "FLAG_SILVERSUN_SOMBERHQ_MAIN"
     },
     {
@@ -244,7 +244,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_DARK_GEM",
+      "trainer_sight_or_berry_tree_id": "ITEM_BRIGHT_POWDER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_SOMBERHQ_D"
     },
