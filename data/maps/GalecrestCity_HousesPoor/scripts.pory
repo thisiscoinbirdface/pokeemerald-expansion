@@ -21,10 +21,10 @@ script GalecrestCity_HousesPoor_NPC1{
                 setflag(FLAG_GALECREST_POOR_TRADEITEM)
                 msgbox(format("I wish I could do things over and give her all the flutes in the world..."))
             } else {
-                msgbox(format("It looks like you don't have a BLUE FLUTE. Come back when you do!"))
+                msgbox(format("It looks like you don't have a Blue Flute. Come back when you do!"))
             }
         } else {
-            msgbox(format("I understand. This PEAT BLOCK is worthless compared to a BLUE FLUTE."))
+            msgbox(format("I understand. This Peat Block is worthless compared to a Blue Flute."))
         }
     }
 
@@ -35,7 +35,7 @@ script GalecrestCity_HousesPoor_NPC1{
 script GalecrestCity_HousesPoor_NPC2{
     lockall
     faceplayer
-    msgbox(format("I used to play the flute many years ago. Now JIGGLYPUFF brings music into the house!"))
+    msgbox(format("I used to play the flute many years ago. Now Jigglypuff brings music into the house!"))
     releaseall
 }
 
@@ -45,7 +45,7 @@ script GalecrestCity_HousesPoor_Jigglypuff{
     playmoncry(SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL)
     release
     delay(30)
-    msgbox(format("JIGGLYPUFF is singing happily! Better leave before I fall asleep..."))
+    msgbox(format("Jigglypuff is singing happily! Better leave before I fall asleep..."))
     releaseall
 }
 
@@ -53,14 +53,14 @@ script GalecrestCity_HousesPoor_Jigglypuff{
 script GalecrestCity_HousesPoor_NPC3{
     lockall
     faceplayer
-    msgbox(format("The POOCHYENA regularly block the roads here. They're a menace to society!"))
+    msgbox(format("The Poochyena regularly block the roads here. They're a menace to society!"))
     releaseall
 }
 
 script GalecrestCity_HousesPoor_NPC4{
     lockall
     faceplayer
-    msgbox(format("The POOCHYENA are so cute! I'd like to adopt one someday."))
+    msgbox(format("The Poochyena are so cute! I'd like to adopt one someday."))
     releaseall
 }
 

@@ -67,6 +67,7 @@ script GalecrestCity_DetectiveMeet_Trigger0{
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
+    delay(16)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
@@ -88,6 +89,7 @@ script GalecrestCity_DetectiveMeet_Trigger1{
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
+    delay(16)
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
@@ -110,6 +112,7 @@ script GalecrestCity_DetectiveMeet_Trigger2{
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
+    delay(16)    
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
@@ -132,6 +135,7 @@ script GalecrestCity_DetectiveMeet_Trigger3{
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)
+    delay(16)    
 
     msgbox(format("RUE: {PLAYER}! You're here! Where have you been?"))
     release
@@ -178,18 +182,26 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET1, moves(face_right))
     applymovement(LOCALID_DET2, moves(face_right))      
     delay(16)
-    msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that he was spotted in Silversun City."))
+    msgbox(format("DETECTIVE: We've uncovered a new lead on Professor Tenebris. An agent told us that she was spotted in Silversun City."))
     release
     delay(16)
-    msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pDETECTIVE: Their hideout is confirmed to be somewhere around Silversun City too.\pDETECTIVE: If the Professor, his dreamstone and Team Somber are in the same spot, things could erupt. We have to be there!"))
+    msgbox(format("DETECTIVE: There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pDETECTIVE: Their hideout is confirmed to be somewhere around Silversun City too.\pDETECTIVE: If the Professor, her dreamstone and Team Somber are in the same spot, things could erupt. We have to be there!"))
     msgbox(format("DETECTIVE: But now that we know Team Somber is involved, it's not safe for you, {PLAYER}. You may have handled a couple of grunts, but you're still a child.\pSo heed these instructions carefully - make your way to Silversun City as soon as possible and keep a low profile. Do NOT engage with any suspicious individuals!"))       
     release
     applymovement(LOCALID_DET1, moves(face_up))
     applymovement(LOCALID_DET2, moves(face_up))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))   
     delay(24)    
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     msgbox(format("DETECTIVE: This building is the Detective Academy. Your frierd Kohla was trained here. He knows the plan already. Go and talk to him first."))       
     release
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 5))    
+    waitmovement(0)
+    special(RemoveCameraObject)        
     applymovement(LOCALID_DET1, moves(face_right))
     applymovement(LOCALID_DET2, moves(face_right))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))         
@@ -431,7 +443,7 @@ script GalecrestCity_NPC_14{
 
         fadescreen(FADE_TO_BLACK)
         removeobject(12)
-        removeobject(37)
+        removeobject(36)
         fadescreen(FADE_FROM_BLACK)
 
         setflag(FLAG_GALECREST_ROBBER)
@@ -472,6 +484,7 @@ script GalecrestCity_NPC_18{
     lockall
     msgbox(format("All my life I've lived in this neighbourhood. It's all I've seen and all I know...and now I'm too old to go exploring Cormoria."))  
     release
+    delay(16)
 
     if (flag(FLAG_GALECREST_REGRETFULMAN)){
         releaseall
@@ -484,13 +497,14 @@ script GalecrestCity_NPC_18{
             giveitem(ITEM_BINDING_BAND)
             setflag(FLAG_GALECREST_REGRETFULMAN)
         } else {
-            msgbox(format("You're still innocent. The smile on your face is so bright! It lightens my heart.\pAccept this as a memento - keep that bright smile of yours!"))
-            giveitem(ITEM_BRIGHT_POWDER)
+            msgbox(format("You're still innocent. The smile on your face is so bright! It lightens my heart.\pAccept this as a memento - hold tightly onto that smile of yours!"))
+            giveitem(ITEM_GRIP_CLAW)
             setflag(FLAG_GALECREST_REGRETFULMAN)
         }
-        face_left
-        releaseall
     }
+    applymovement(16, moves(face_left))
+    releaseall
+    end
 }
 
 script GalecrestCity_NPC_19{
@@ -511,14 +525,12 @@ script GalecrestCity_NPC_20{
 
 
 
-
-
 script GalecrestCity_NPC_Red{
     lockall
     faceplayer
-    msgbox(format("Sorry trainer, the Gym Leader's not in right now. He should be back soon. Check out the DETECTIVE ACADEMY in the meantime!"))
+    msgbox(format("Sorry trainer, the Gym Leader's not in right now. He should be back soon. Check out the Detective Academy in the meantime!"))
     release
-    applymovement(39, moves(face_down))
+    applymovement(38, moves(face_down))
     waitmovement(0)
     releaseall
     end

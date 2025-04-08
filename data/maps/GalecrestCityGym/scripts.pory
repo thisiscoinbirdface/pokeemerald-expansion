@@ -65,21 +65,21 @@ script GalecrestCityGym_NPC3 {
 //Trainers
 script GalecrestCityGym_Trainer1 {
     trainerbattle_single(TRAINER_GALECRESTGYM_A, format("I'm a first-year at the Academy. But don't think I'm a pushover!"), format("You're not half bad. Go through the door that rhymes with FIGHT."))
-    msgbox(format("You're not half bad. Go through the door that rhymes with FIGHT."))
+    msgbox(format("Go through the door that rhymes with FIGHT."))
     release
     end
 }
 
 script GalecrestCityGym_Trainer2 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_B, format("After our work-study here, we can evolve our Charcadet into Armarouge!"), format("If I keep losing to trainers like you, I'll never get an ARMAROUGE! Go through the left door if you DON'T like the awful Ceruledge."))
-    msgbox(format("If I keep losing to trainers like you, I'll never get an ARMAROUGE! Go through the left door if you DON'T like the awful Ceruledge."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_B, format("After our internship here, we can evolve our Charcadet into Armarouge!"), format("If I keep losing to trainers like you, I'll never get an Armarouge! Go through the left door if you DON'T like the awful Ceruledge."))
+    msgbox(format("If I keep losing to trainers like you, I'll never get an Armarouge! Go through the left door if you DON'T like the awful Ceruledge."))
     release
     end
 }
 
 script GalecrestCityGym_Trainer3 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_C, format("The best student in the Academy is the Gym Leader. But you won't make it because your journey ends here!"), format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his Charcadet to Armarouge! Don't not go through the door that isn't not right."))
-    msgbox(format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his Charcadet to Armarouge! Don't not go through the door that isn't not to the left of the right."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_C, format("The gym leader is through the next door. But you won't make it because your journey ends here!"), format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his Charcadet to Armarouge! Don't not go through the door that isn't not to the left of the right."))
+    msgbox(format("Don't not go through the door that isn't not to the left of the right."))
     release
     end
 }
@@ -123,7 +123,7 @@ script GalecrestCityGym_Leader {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("KOHLA: The STOIC BADGE lets you control Pokemon upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
+        msgbox(format("KOHLA: The Stoic Badge lets you control Pokemon upto lv. 30 and lets you use the HM move ROCK SMASH outside of battle."))
         release
         delay(16)
         

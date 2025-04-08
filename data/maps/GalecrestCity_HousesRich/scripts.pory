@@ -62,16 +62,6 @@ script GalecrestCity_HousesRich_NPC5{
         release
     }
 
-    if (var(VAR_GALECREST_RICH_PEARLS) == 0){
-        msgbox(format("Oh my! I can't find my PEARL anywhere! I think someone must've stolen it! You, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
-        //Start quest
-        setvar(VAR_GALECREST_RICH_PEARLS, 1)
-        startquest(QUEST_GALECREST_PEARLS)
-    } 
-    if (var(VAR_GALECREST_RICH_PEARLS) == 1){
-        msgbox(format("Did you find it yet? No? Well what are you standing in here for? Hurry up and get my pearls, boy!"))
-        release
-    } 
     if (var(VAR_GALECREST_RICH_PEARLS) == 2){
         msgbox(format("Ahh my beautiful pearls! Thank you child, thank you!"))
         release
@@ -83,7 +73,17 @@ script GalecrestCity_HousesRich_NPC5{
         setvar(VAR_GALECREST_RICH_PEARLS, 3)
     } 
 
+    if (var(VAR_GALECREST_RICH_PEARLS) == 1){
+        msgbox(format("Did you find it yet? No? Well what are you standing in here for? Hurry up and get my pearls, you slacker!"))
+        release
+    } 
 
+    if (var(VAR_GALECREST_RICH_PEARLS) == 0){
+        msgbox(format("Oh my! I can't find my PEARL anywhere! I think someone must've stolen it! You, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
+        //Start quest
+        setvar(VAR_GALECREST_RICH_PEARLS, 1)
+        startquest(QUEST_GALECREST_PEARLS)
+    } 
 
     releaseall
 }
@@ -127,7 +127,7 @@ script GalecrestCity_HousesRich_NPC9{
             setflag(FLAG_GALECREST_RICH_HOUSECLEANITEM)
             msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."))            
         } else {
-            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."))
+            msgbox(format("Ah, then none of this will be of use to you."))
         }
     }
     releaseall
