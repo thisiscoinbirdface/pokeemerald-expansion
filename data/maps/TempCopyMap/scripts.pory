@@ -670,3 +670,35 @@ script PellucaCity_Greta_MysteriousRock{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+script Common_EventScript_SettingsGuy{
+    lockall
+    faceplayer
+
+    msgbox(format("Would you like to toggle Exp All?"))
+    dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "EXP ALL ON", "EXP ALL OFF")
+
+    if (var(VAR_RESULT) == 0){
+        setflag(FLAG_SYS_EXP_ALL)
+        msgbox(format("Exp All is now {COLOR GREEN}ON{COLOR DARK_GREY}."))
+    } else {
+        setflag(FLAG_SYS_EXP_ALL)
+        msgbox(format("Exp All is now {COLOR RED}OFF{COLOR DARK_GREY}."))        
+    }
+
+    release
+    end
+}
+
+
+
