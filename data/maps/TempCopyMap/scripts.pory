@@ -410,7 +410,6 @@ script Common_EventScript_NurseJoyOnRoute{
             release
             
             removeitem(ITEM_HEAL_PASS)
-            setflag(FLAG_HEAL_PASS_USED)
         } else {
             msgbox(format("Come back any time!"))
             release
