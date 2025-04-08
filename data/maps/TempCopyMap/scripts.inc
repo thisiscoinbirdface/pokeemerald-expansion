@@ -1039,6 +1039,35 @@ PellucaCity_Greta_MysteriousRock_4:
 	return
 
 
+Common_EventScript_SettingsGuy::
+# 685 "data//maps/TempCopyMap/scripts.pory"
+	lockall
+# 686 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 688 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_SettingsGuy_Text_0
+# 689 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_SettingsGuy_Text_1, Common_EventScript_SettingsGuy_Text_2
+# 691 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_SettingsGuy_2
+# 695 "data//maps/TempCopyMap/scripts.pory"
+	setvar VAR_SYS_EXP_ALL, GEN_3
+# 696 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_SettingsGuy_Text_4
+Common_EventScript_SettingsGuy_1:
+# 699 "data//maps/TempCopyMap/scripts.pory"
+	release
+	end
+
+Common_EventScript_SettingsGuy_2:
+# 692 "data//maps/TempCopyMap/scripts.pory"
+	setvar VAR_SYS_EXP_ALL, GEN_LATEST
+# 693 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_SettingsGuy_Text_3
+	goto Common_EventScript_SettingsGuy_1
+
+
 Common_EventScript_NurseDemo_Text_0:
 # 6 "data//maps/TempCopyMap/scripts.pory"
 	.string "This is the end of the demo. Thank you\n"
@@ -1271,6 +1300,31 @@ Route5_Greta_UglyFish_Text_1:
 Route5_Greta_MysteriousRock_Text_0:
 # 542 "data//maps/TempCopyMap/scripts.pory"
 	.string "A reasonable choice! You sure?$"
+
+Common_EventScript_SettingsGuy_Text_0:
+# 688 "data//maps/TempCopyMap/scripts.pory"
+	.string "Hello! I can enable or disable Exp All. If\n"
+	.string "enabled, the Exp Share allows all\l"
+	.string "Pokemon to gain experience. If\l"
+	.string "disabled, the Exp share will only give\l"
+	.string "experience to the Pokemon holding it.\l"
+	.string "Would you like to toggle Exp All?$"
+
+Common_EventScript_SettingsGuy_Text_1:
+# 689 "data//maps/TempCopyMap/scripts.pory"
+	.string "EXP ALL ON$"
+
+Common_EventScript_SettingsGuy_Text_2:
+# 689 "data//maps/TempCopyMap/scripts.pory"
+	.string "EXP ALL OFF$"
+
+Common_EventScript_SettingsGuy_Text_3:
+# 693 "data//maps/TempCopyMap/scripts.pory"
+	.string "Exp All is now {COLOR GREEN}ON{COLOR DARK_GREY}.$"
+
+Common_EventScript_SettingsGuy_Text_4:
+# 696 "data//maps/TempCopyMap/scripts.pory"
+	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GREY}.$"
 
 Common_Text_Greta_Comecome::
 # 455 "data//maps/TempCopyMap/scripts.pory"
