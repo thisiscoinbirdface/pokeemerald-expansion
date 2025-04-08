@@ -64,7 +64,7 @@ GalecrestCityGym_Trainer1::
 # 67 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_single TRAINER_GALECRESTGYM_A, GalecrestCityGym_Trainer1_Text_0, GalecrestCityGym_Trainer1_Text_1
 # 68 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Trainer1_Text_1
+	msgbox GalecrestCityGym_Trainer1_Text_2
 # 69 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
@@ -185,23 +185,28 @@ GalecrestCityGym_Trainer1_Text_1:
 	.string "You're not half bad. Go through the door\n"
 	.string "that rhymes with FIGHT.$"
 
+GalecrestCityGym_Trainer1_Text_2:
+# 68 "data//maps/GalecrestCityGym/scripts.pory"
+	.string "Go through the door that rhymes with\n"
+	.string "FIGHT.$"
+
 GalecrestCityGym_Trainer2_Text_0:
 # 74 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "After our work-study here, we can\n"
+	.string "After our internship here, we can\n"
 	.string "evolve our Charcadet into Armarouge!$"
 
 GalecrestCityGym_Trainer2_Text_1:
 # 74 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "If I keep losing to trainers like you,\n"
-	.string "I'll never get an ARMAROUGE! Go through\l"
+	.string "I'll never get an Armarouge! Go through\l"
 	.string "the left door if you DON'T like the awful\l"
 	.string "Ceruledge.$"
 
 GalecrestCityGym_Trainer3_Text_0:
 # 81 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "The best student in the Academy is the\n"
-	.string "Gym Leader. But you won't make it\l"
-	.string "because your journey ends here!$"
+	.string "The gym leader is through the next\n"
+	.string "door. But you won't make it because\l"
+	.string "your journey ends here!$"
 
 GalecrestCityGym_Trainer3_Text_1:
 # 81 "data//maps/GalecrestCityGym/scripts.pory"
@@ -209,14 +214,11 @@ GalecrestCityGym_Trainer3_Text_1:
 	.string "beat our Gym Leader. He's already\l"
 	.string "evolved his Charcadet to Armarouge!\l"
 	.string "Don't not go through the door that\l"
-	.string "isn't not right.$"
+	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Trainer3_Text_2:
 # 82 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "You may have beaten me, but you won't\n"
-	.string "beat our Gym Leader. He's already\l"
-	.string "evolved his Charcadet to Armarouge!\l"
-	.string "Don't not go through the door that\l"
+	.string "Don't not go through the door that\n"
 	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Leader_Text_0:
@@ -234,10 +236,10 @@ GalecrestCityGym_Leader_Text_2:
 
 GalecrestCityGym_Leader_Text_3:
 # 126 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "KOHLA: The STOIC BADGE lets you\n"
-	.string "control Pokemon upto lv. 30 and lets\l"
-	.string "you use the HM move ROCK SMASH outside\l"
-	.string "of battle.$"
+	.string "KOHLA: The Stoic Badge lets you control\n"
+	.string "Pokemon upto lv. 30 and lets you use\l"
+	.string "the HM move ROCK SMASH outside of\l"
+	.string "battle.$"
 
 GalecrestCityGym_Leader_Text_4:
 # 131 "data//maps/GalecrestCityGym/scripts.pory"

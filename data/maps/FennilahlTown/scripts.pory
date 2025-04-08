@@ -24,7 +24,7 @@ script FennilahlTown_EventScript_Woman {
         msgbox(format("My, that's such a cute little Pokemon you have with you! Here, use this and treat it with care, okay?"))
         giveitem(ITEM_SOOTHE_BELL)
         setflag(FLAG_FENNILAHL_CUTEMONGIFT)
-    }   
+    }
     releaseall
 }
 
@@ -41,7 +41,7 @@ script FennilahlTown_EventScript_HikerTunnel {
 
 script Fennilahl_Breech_StartQuest{
 
-    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK Pokemon took it and ran away! And I don't have any Pokemon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me out?"), MSGBOX_YESNO)
+    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small PINK Pokemon took it and ran away! And I don't have any Pokemon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokemon run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))

@@ -1,9 +1,9 @@
 raw `
-    .set LOCALID_GRUNT, 18
-    .set LOCALID_PROF, 17
-    .set LOCALID_RALTS1, 20
-    .set LOCALID_RALTS2, 21
-    .set LOCALID_RALTS3, 22
+    .set LOCALID_GRUNT, 17
+    .set LOCALID_PROF, 16
+    .set LOCALID_RALTS1, 18
+    .set LOCALID_RALTS2, 19
+    .set LOCALID_RALTS3, 20
 `
 
 mapscripts VilethornWoods_MapScripts{}
@@ -264,14 +264,21 @@ script VilethornWoods_NPC2{
     if (flag(FLAG_VILETHORN_NPC_MUSHROOMS)){
         msgbox(format("These mushrooms are really rare, you know?"))
     } else {
-        msgbox(format("I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to give you in exchange!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
+        msgbox(format("Oh, it's you again! Fancy seeing you here. I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to give you in exchange!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
-                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage..."))
+                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spood from the restaurant? Or maybe this seed I found earlier?"))
                 release
-                giveitem(ITEM_TWISTED_SPOON)
+
+                dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
+                if (var(VAR_RESULT) == 0){
+                    giveitem(ITEM_TWISTEDSPOON)
+                } else {
+                    giveitem(ITEM_MIRACLE_SEED)
+                }
+
                 setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
                 msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"))            
             } else {

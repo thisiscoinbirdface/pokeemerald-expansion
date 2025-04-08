@@ -432,7 +432,7 @@ script RangerInstitute_Mon_Bayleef{
     } else {
         playmoncry(SPECIES_BAYLEEF, CRY_MODE_NORMAL)
         msgbox(format("BAYLEEF is singing happily! It snuggles upto you and gives you something..."))
-        giveitem(ITEM_MIRACLE_SEED)
+        giveitem(ITEM_POTION)
         setflag(FLAG_RANGER_INSTITUTE_BAYLEEF)
         msgbox(format("Thanks BAYLEEF!"))
     }

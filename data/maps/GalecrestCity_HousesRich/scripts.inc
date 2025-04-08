@@ -81,15 +81,15 @@ GalecrestCity_HousesRich_NPC5_1:
 	goto_if_eq GalecrestCity_HousesRich_NPC5_5
 GalecrestCity_HousesRich_NPC5_4:
 # 65 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	compare VAR_GALECREST_RICH_PEARLS, 0
+	compare VAR_GALECREST_RICH_PEARLS, 2
 	goto_if_eq GalecrestCity_HousesRich_NPC5_8
 GalecrestCity_HousesRich_NPC5_7:
-# 71 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 76 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	compare VAR_GALECREST_RICH_PEARLS, 1
 	goto_if_eq GalecrestCity_HousesRich_NPC5_11
 GalecrestCity_HousesRich_NPC5_10:
-# 75 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	compare VAR_GALECREST_RICH_PEARLS, 2
+# 81 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	compare VAR_GALECREST_RICH_PEARLS, 0
 	goto_if_eq GalecrestCity_HousesRich_NPC5_14
 GalecrestCity_HousesRich_NPC5_13:
 # 88 "data//maps/GalecrestCity_HousesRich/scripts.pory"
@@ -113,36 +113,36 @@ GalecrestCity_HousesRich_NPC5_5:
 GalecrestCity_HousesRich_NPC5_8:
 # 66 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC5_Text_1
+# 67 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	release
 # 68 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	setvar VAR_GALECREST_RICH_PEARLS, 1
+	completequest QUEST_GALECREST_PEARLS
 # 69 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	startquest QUEST_GALECREST_PEARLS
+	msgbox GalecrestCity_HousesRich_NPC5_Text_2
+# 70 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	release
+# 71 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	removemoney 500
+# 72 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_NPC5_Text_3, MSGBOX_SIGN
+# 73 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	setvar VAR_GALECREST_RICH_PEARLS, 3
 	goto GalecrestCity_HousesRich_NPC5_7
 
 GalecrestCity_HousesRich_NPC5_11:
-# 72 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC5_Text_2
-# 73 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 77 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_NPC5_Text_4
+# 78 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	release
 	goto GalecrestCity_HousesRich_NPC5_10
 
 GalecrestCity_HousesRich_NPC5_14:
-# 76 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC5_Text_3
-# 77 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	release
-# 78 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	completequest QUEST_GALECREST_PEARLS
-# 79 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC5_Text_4
-# 80 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	release
-# 81 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	removemoney 500
 # 82 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC5_Text_5, MSGBOX_SIGN
-# 83 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	setvar VAR_GALECREST_RICH_PEARLS, 3
+	msgbox GalecrestCity_HousesRich_NPC5_Text_5
+# 84 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	setvar VAR_GALECREST_RICH_PEARLS, 1
+# 85 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	startquest QUEST_GALECREST_PEARLS
 	goto GalecrestCity_HousesRich_NPC5_13
 
 
@@ -195,7 +195,7 @@ GalecrestCity_HousesRich_NPC9::
 	compare VAR_RESULT, 1
 	goto_if_eq GalecrestCity_HousesRich_NPC9_5
 # 130 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC9_Text_2
+	msgbox GalecrestCity_HousesRich_NPC9_Text_3
 GalecrestCity_HousesRich_NPC9_1:
 # 133 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	releaseall
@@ -268,33 +268,33 @@ GalecrestCity_HousesRich_NPC5_Text_0:
 
 GalecrestCity_HousesRich_NPC5_Text_1:
 # 66 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "Oh my! I can't find my PEARL anywhere! I\n"
-	.string "think someone must've stolen it! You,\l"
-	.string "child, you look outdoorsy. Your shoes\l"
-	.string "are dirty. Would you be a dear and\l"
-	.string "search outside for my pearl?$"
-
-GalecrestCity_HousesRich_NPC5_Text_2:
-# 72 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "Did you find it yet? No? Well what are\n"
-	.string "you standing in here for? Hurry up and\l"
-	.string "get my pearls, boy!$"
-
-GalecrestCity_HousesRich_NPC5_Text_3:
-# 76 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Ahh my beautiful pearls! Thank you\n"
 	.string "child, thank you!$"
 
-GalecrestCity_HousesRich_NPC5_Text_4:
-# 79 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+GalecrestCity_HousesRich_NPC5_Text_2:
+# 69 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "But since you took so much time to find\n"
 	.string "the pearls, I'll be taking some money\l"
 	.string "from you of course. You stressed me out\l"
 	.string "and you've got to make amends!$"
 
+GalecrestCity_HousesRich_NPC5_Text_3:
+# 72 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	.string "{PLAYER} gave the rich lady 500.$"
+
+GalecrestCity_HousesRich_NPC5_Text_4:
+# 77 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	.string "Did you find it yet? No? Well what are\n"
+	.string "you standing in here for? Hurry up and\l"
+	.string "get my pearls, you slacker!$"
+
 GalecrestCity_HousesRich_NPC5_Text_5:
 # 82 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "{PLAYER} gave the rich lady 500.$"
+	.string "Oh my! I can't find my PEARL anywhere! I\n"
+	.string "think someone must've stolen it! You,\l"
+	.string "child, you look outdoorsy. Your shoes\l"
+	.string "are dirty. Would you be a dear and\l"
+	.string "search outside for my pearl?$"
 
 GalecrestCity_HousesRich_NPC6_Text_0:
 # 95 "data//maps/GalecrestCity_HousesRich/scripts.pory"
@@ -332,6 +332,11 @@ GalecrestCity_HousesRich_NPC9_Text_2:
 	.string "in our basement - although it's dark, so\l"
 	.string "don't bang your toes! Feel free to take\l"
 	.string "anything you like.$"
+
+GalecrestCity_HousesRich_NPC9_Text_3:
+# 130 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	.string "Ah, then none of this will be of use to\n"
+	.string "you.$"
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
 # 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"

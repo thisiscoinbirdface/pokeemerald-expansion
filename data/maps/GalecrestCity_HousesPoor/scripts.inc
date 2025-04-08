@@ -157,34 +157,34 @@ GalecrestCity_HousesPoor_NPC1_Text_3:
 
 GalecrestCity_HousesPoor_NPC1_Text_4:
 # 24 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "It looks like you don't have a BLUE\n"
-	.string "FLUTE. Come back when you do!$"
+	.string "It looks like you don't have a Blue\n"
+	.string "Flute. Come back when you do!$"
 
 GalecrestCity_HousesPoor_NPC1_Text_5:
 # 27 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "I understand. This PEAT BLOCK is\n"
-	.string "worthless compared to a BLUE FLUTE.$"
+	.string "I understand. This Peat Block is\n"
+	.string "worthless compared to a Blue Flute.$"
 
 GalecrestCity_HousesPoor_NPC2_Text_0:
 # 38 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "I used to play the flute many years ago.\n"
-	.string "Now JIGGLYPUFF brings music into the\l"
+	.string "Now Jigglypuff brings music into the\l"
 	.string "house!$"
 
 GalecrestCity_HousesPoor_Jigglypuff_Text_0:
 # 48 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "JIGGLYPUFF is singing happily! Better\n"
+	.string "Jigglypuff is singing happily! Better\n"
 	.string "leave before I fall asleep...$"
 
 GalecrestCity_HousesPoor_NPC3_Text_0:
 # 56 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "The POOCHYENA regularly block the\n"
+	.string "The Poochyena regularly block the\n"
 	.string "roads here. They're a menace to\l"
 	.string "society!$"
 
 GalecrestCity_HousesPoor_NPC4_Text_0:
 # 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "The POOCHYENA are so cute! I'd like to\n"
+	.string "The Poochyena are so cute! I'd like to\n"
 	.string "adopt one someday.$"
 
 GalecrestCity_HousesPoor_NPC5_Text_0:

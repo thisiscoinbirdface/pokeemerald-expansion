@@ -34,9 +34,17 @@ script Route1_House_QuestInProgress{
             msgbox(format("AZURILL: zuuu!!!!!\nIt seems to have revived!"))
             release
             faceplayer
-            msgbox(format("Here child, you must have this. The least I can do."))
-            giveitem(ITEM_TM_RETURN)
-            msgbox(format("This contains the TM RETURN. It does more damage the stronger the bond between you and your Pokemon is, just like me and AZURILL!"))
+            msgbox(format("Child, you must have something in return. The least I can do. Which of these would you like?"))
+            dynmultichoice(0, 0, TRUE, 4, 0, "GREAT BALL", "FULL HEAL")
+
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_GREAT_BALL)
+            } else {
+                giveitem(ITEM_FULL_HEAL)
+            }
+            msgbox(format("Thank you kind trainer! I'm now going to go back to loving my baby."))
+            release
+            
         } else {
             msgbox(format("I don't see a PECHA BERRY here...please come back when you have one."))
         }
