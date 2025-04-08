@@ -152,7 +152,7 @@
       "x": 39,
       "y": 65,
       "elevation": 0,
-      "item": "ITEM_TM32",
+      "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_MTCERAM_C"
     }
   ]

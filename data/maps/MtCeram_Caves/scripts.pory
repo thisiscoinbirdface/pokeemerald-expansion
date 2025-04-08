@@ -82,7 +82,7 @@ script MtCeram_Caves_Greta_Main{
     applymovement(LOCALID_VEN, moves(walk_down face_left))
     waitmovement(0)    
 
-    setwildbattle(SPECIES_SIZZLIPEDE, 8, ITEM_NONE, SPECIES_VENIPEDE, 8, ITEM_NONE)
+    setwildbattle(SPECIES_SIZZLIPEDE, 17, ITEM_NONE, SPECIES_VENIPEDE, 17, ITEM_NONE)
     dowildbattle
 
     removeobject(LOCALID_SIZZ)

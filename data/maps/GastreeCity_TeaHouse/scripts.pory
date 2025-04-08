@@ -13,7 +13,7 @@ script GastreeCity_TeaHouse_EventScript_OldLady{
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 1) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest)}
     //Else regular (currently just some text, maybe later a shop)
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {
-        msgbox(format("OWNER: My brother runs a tea shop further out west, in Brixas City."))
+        msgbox(format("OWNER: My brother runs a restaurant further out west, in Pelluca City."))
         release
     }   
 }
@@ -143,7 +143,17 @@ script GastreeCity_TeaHouse_EventScript_NPC3{
 script GastreeCity_TeaHouse_EventScript_NPC4{
     lockall
     faceplayer
-    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. But my SNORUNT is here to give me company!"))
+    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my SNORUNT is here to give me company!"))
+    release
+    delay(16)
+    if (flag(FLAG_GASTREE_TEAHOUSE_BERRIES)){
+        releaseall
+        end
+    } else {
+        msgbox(format("I got this plate of berries but since my date hasn't come, why don't you have some?"))
+        giveitem(ITEM_PERSIM_BERRY, 2)
+        setflag(FLAG_GASTREE_TEAHOUSE_BERRIES)
+    }
     releaseall
     end
 }
