@@ -772,7 +772,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_1:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_2:
 # 70 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: The name's ARIAN! And no way!\n"
+	.string "ARIAN: The name's Arian! And no way!\n"
 	.string "This is MY base camp! You're not harming\l"
 	.string "anyone while I'm around!$"
 
@@ -800,8 +800,8 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_6:
 # 92 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "GABRIELLE: Boss! Boss! This is the kid\n"
 	.string "that beat me in Route 3. I was trying to\l"
-	.string "take the dreamstone from that\l"
-	.string "CLEFAIRY hiker.$"
+	.string "take the dreamstone from that Clefairy\l"
+	.string "hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_7:
 # 96 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -811,7 +811,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_7:
 	.string "GABRIELLE:...yes boss.\p"
 	.string "???: But there is a dreamstone sitting\n"
 	.string "right on top of Mt. Ceram, and these\l"
-	.string "people are in the way! GABRIELLE, you\l"
+	.string "people are in the way! Gabrielle, you\l"
 	.string "deal with this pest while I put the\l"
 	.string "leader in her place. And you better win\l"
 	.string "this time!$"

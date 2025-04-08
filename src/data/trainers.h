@@ -1622,7 +1622,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GALECREST_ROBBER] =
     {
 #line 715
-        .trainerName = _("VIOLET"),
+        .trainerName = _("XANDER"),
 #line 716
         .trainerClass = TRAINER_CLASS_BURGLAR,
 #line 717
@@ -1641,23 +1641,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 723
-            .species = SPECIES_ROSELIA,
+            .species = SPECIES_NICKIT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 725
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 724
-            .lvl = 26,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 727
-            .species = SPECIES_GLOOM,
+            .species = SPECIES_MURKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 729
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 728
-            .lvl = 26,
+            .lvl = 22,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

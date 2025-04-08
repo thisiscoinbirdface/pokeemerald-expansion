@@ -9,13 +9,17 @@ mapscripts MtCeram_Peak_MapScripts{}
 
 script MtCeramPeak_MainEvent_Trigger{
     if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}
-
     lockall
     msgbox(format("???: So you broke through my grunts. Come here then."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 6))
     waitmovement(0)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 1))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     msgbox(format("???: A dreamstone. This is the first time I've ever seen one."))
     release
@@ -72,7 +76,6 @@ script MtCeramPeak_MainEvent_Trigger{
     //Battle
     trainerbattle_no_intro(TRAINER_CERAMPEAK_MOXIE, format("I can't believe it!"))
 
-
     //Lose battle
     //oh no! but no matter, the dreamstone is ours.
     //Gabrielle, go get it.
@@ -100,8 +103,6 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(5, moves(face_up))    
     waitmovement(0)
     
-    //bgm fadeout
-    fadeoutbgm(1)
     delay(16)
     
     msgbox(format("GABRIELLE: Ugh! It's not moving!\pMOXIE: You idiot! Put some backbone in it!\p...\pGABRIELLE: Boss?\pMOXIE: What?\pGABRIELLE: ...I'm stuck. I can't move...I'm stuck to the stone!"))
@@ -110,12 +111,14 @@ script MtCeramPeak_MainEvent_Trigger{
     msgbox(format("GABRIELLE: Boss...I feel sick. What's happening? Is this supposed to happen?\pMOXIE: You must've messed it up!"))
     release     
 
+
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))    
     applymovement(LOCALID_BOSS, moves(emote_exclamation_mark))    
     applymovement(4, moves(emote_exclamation_mark))    
     applymovement(5, moves(emote_exclamation_mark))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark))    
     waitmovement(0)
+
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
 	setvar(VAR_0x8006, 8)  //num shakes
@@ -192,14 +195,18 @@ script MtCeramPeak_MainEvent_Trigger{
     waitstate
     release    
 
+
+
     //Set vars
     setflag(FLAG_MT_CERAM_DREAMSTONE)
     //Quest 
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2)
-    
+
     //WARP OUT
     warp(MAP_ANCIENT_CERAM, 57, 41)
+
     releaseall
+    end
 }
 
 

@@ -311,12 +311,14 @@ CeramBaseCampGym_NPC_B_Text_0:
 # 32 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Why does everyone used FIRE type\n"
 	.string "Pokemon in here? It's already\l"
-	.string "sweltering hot. I keep processing AC\l"
-	.string "repair bills.$"
+	.string "sweltering hot. Our air conditioning\l"
+	.string "bills are too high!$"
 
 CeramBaseCampGym_TrainerBattle_A_Text_0:
 # 38 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Who would've thought managing a basecamp would involve so much paperwork?$"
+	.string "Who would've thought managing a\n"
+	.string "basecamp would involve so much\l"
+	.string "paperwork?$"
 
 CeramBaseCampGym_TrainerBattle_A_Text_1:
 # 38 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -330,7 +332,9 @@ CeramBaseCampGym_TrainerBattle_A_Text_2:
 
 CeramBaseCampGym_TrainerBattle_B_Text_0:
 # 45 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "I've been waiting all day for an appointment. I'm so frustrated that I need to let it out!$"
+	.string "I've been waiting all day for an\n"
+	.string "appointment. I'm so frustrated that I\l"
+	.string "need to let it out!$"
 
 CeramBaseCampGym_TrainerBattle_B_Text_1:
 # 45 "data//maps/CeramBaseCampGym/scripts.pory"

@@ -29,20 +29,20 @@ script CeramBaseCampGym_NPC_A{
 script CeramBaseCampGym_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Why does everyone used FIRE type Pokemon in here? It's already sweltering hot. I keep processing AC repair bills."))
+    msgbox(format("Why does everyone used FIRE type Pokemon in here? It's already sweltering hot. Our air conditioning bills are too high!"))
     releaseall
 }
 
 
 script CeramBaseCampGym_TrainerBattle_A {
-    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, "Who would've thought managing a basecamp would involve so much paperwork?", "Back to my work!")
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, format("Who would've thought managing a basecamp would involve so much paperwork?"), "Back to my work!")
     msgbox(format("The base camp doubling as a Gym is just extra work for the employees! And we didn't get a raise too!"))
     release
     end
 }
 
 script CeramBaseCampGym_TrainerBattle_B {
-    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_B, "I've been waiting all day for an appointment. I'm so frustrated that I need to let it out!", "At least I've cooled down a bit.")
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_B, format("I've been waiting all day for an appointment. I'm so frustrated that I need to let it out!"), "At least I've cooled down a bit.")
     msgbox(format("All this bureaucracy is mind-numbing."))
     release
     end

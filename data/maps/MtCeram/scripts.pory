@@ -68,7 +68,7 @@ script MtCeram_Charizard{
 
 script MtCeram_Eavesdrop_Trigger0{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     lockall
     delay(16)
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
@@ -86,7 +86,7 @@ script MtCeram_Eavesdrop_Trigger0{
 
 script MtCeram_Eavesdrop_Trigger1{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     lockall
     delay(16)
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
@@ -104,7 +104,7 @@ script MtCeram_Eavesdrop_Trigger1{
 
 script MtCeram_Eavesdrop_Trigger2{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
-
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     lockall
     delay(16)
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
@@ -122,7 +122,7 @@ script MtCeram_Eavesdrop_Trigger2{
 
 script MtCeram_Eavesdrop_Trigger3{
     if (flag(FLAG_MT_CERAM_SOMBER_FOOT)){end}
-    
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     lockall
     delay(16)
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
@@ -155,14 +155,17 @@ script MtCeram_EventScript_Eavesdrop{
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     waitmovement(0)
     delay(30)
-    msgbox(format("SOMBER GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
+    msgbox(format("GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
     applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
-    msgbox(format("SOMBER GRUNT 2: But where is the boss? And GABRIELLE?"))
+    msgbox(format("GRUNT 2: But where is the boss? And GABRIELLE?"))
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
-    msgbox(format("SOMBER GRUNT 1: The boss found the dreamstone on top of the mountain! She's trying to climb it right now.\pAs for GABRIELLE...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
+    msgbox(format("GRUNT 1: The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
     release
-    msgbox(format("SOMBER GRUNT 2: Serves her right for losing! Team Somber doesn't need any losers!\pSOMBER GRUNT 1: Yeah what a loser she is! Now lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
+    delay(16)
+    applymovement(LOCALID_FOOTGRUNT2, moves(jump_in_place_left))
+    waitmovement(0)
+    msgbox(format("GRUNT 2: Serves her right for losing! Team Somber doesn't need any losers!\pGRUNT 1: Yeah what a loser she is! Now lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
     release
 
     //Somber walk off
@@ -181,7 +184,7 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_left))
-    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I don't need your help, chum!"))
+    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\pKOHLA: What? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I'm strong enough alone. I don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -189,6 +192,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     removeobject(LOCALID_FOOTKOHLA)
 
+    fadedefaultbgm
     //Set flags and vars, update quest?
     setflag(FLAG_MT_CERAM_SOMBER_FOOT)
 
@@ -223,7 +227,7 @@ script MtCeram_EventScript_Eavesdrop{
 // FIGHT AT THE TOP OF THE MOUNTAIN
 script MtCeram_BeforePeak_Trigger0{
     if (flag(FLAG_MT_CERAM_SOMBER_PEAK)){end}
-    
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 walk_left * 2 face_up))
     waitmovement(0)
@@ -252,7 +256,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("SOMBER GRUNT 2: You're just a kid. Where's the police?"))
+    msgbox(format("GRUNT 2: You're just a kid. Where's the police?"))
     release
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -261,9 +265,9 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("SOMBER GRUNT 1: You alone against the two of us?"))
+    msgbox(format("GRUNT 1: You alone against the two of us?"))
     release
-
+    delay(16)
     //Notice player
     applymovement(LOCALID_TOPKOHLA, moves(face_down))
     waitmovement(0)
@@ -272,7 +276,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT2, moves(emote_exclamation_mark))
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("SOMBER GRUNT 2: The help arrives. But you're both just kids! Hahaha!"))
+    msgbox(format("GRUNT 2: The help arrives. But you're both just kids! Hahaha!"))
     release
 
     //Kohla says he doesn't need help
@@ -282,12 +286,19 @@ script MtCeram_EventScript_BeforePeakBattle{
     waitmovement(0)
     msgbox(format("KOHLA: Now come on Team Somber! Bring it on!"))
     release  
+    fadeoutbgm(0)
 
     //Fade screen and defeat Kohla
     fadescreen(FADE_TO_BLACK)
-    msgbox(format("KOHLA: No! CHARCADET!\pSOMBER GRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
+    playse(SE_SUPER_EFFECTIVE)
+    waitse
+    playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("KOHLA: No! CHARCADET!\pGRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
     release  
     fadescreen(FADE_FROM_BLACK)
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
+
     applymovement(LOCALID_TOPKOHLA, moves(walk_down))
     waitmovement(0)       
 
@@ -303,10 +314,10 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("SOMBER GRUNT 1: And you? You want a beating too?"))
+    msgbox(format("GRUNT 1: And you? You want a beating too?"))
     applymovement(LOCALID_TOPGRUNT2, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("SOMBER GRUNT 2: Hey, aren't you the trainer that beat GABRIELLE?\pSOMBER GRUNT 1: Yes you are! Let's see what you've got!"))
+    msgbox(format("GRUNT 2: Hey, aren't you the trainer that beat Gabrielle?\pGRUNT 1: Yes you are! Let's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -318,7 +329,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 
     //grunts beaten, disappear
-    msgbox(format("SOMBER GRUNT 1: How could you beat us?\pSOMBER GRUNT 2: We-we've got to tell the boss...SOMBER GRUNT 1: Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving our goal!"))
+    msgbox(format("GRUNT 1: How could you beat us?\pGRUNT 2: We-we've got to tell the boss...GRUNT 1: Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
     release   
 
 
