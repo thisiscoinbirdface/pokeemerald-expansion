@@ -156,173 +156,173 @@ MtCeramPeak_MainEvent_Trigger::
 	applymovement 5, MtCeramPeak_MainEvent_Trigger_Movement_6
 # 104 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
+# 106 "data//maps/MtCeram_Peak/scripts.pory"
+	delay 16
 # 108 "data//maps/MtCeram_Peak/scripts.pory"
-	delay 16
-# 110 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_16
-# 111 "data//maps/MtCeram_Peak/scripts.pory"
+# 109 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 112 "data//maps/MtCeram_Peak/scripts.pory"
+# 110 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 16
-# 113 "data//maps/MtCeram_Peak/scripts.pory"
+# 111 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_17
-# 114 "data//maps/MtCeram_Peak/scripts.pory"
+# 112 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 117 "data//maps/MtCeram_Peak/scripts.pory"
+# 115 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement LOCALID_GAB, MtCeramPeak_MainEvent_Trigger_Movement_10
-# 118 "data//maps/MtCeram_Peak/scripts.pory"
+# 116 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement LOCALID_BOSS, MtCeramPeak_MainEvent_Trigger_Movement_10
-# 119 "data//maps/MtCeram_Peak/scripts.pory"
+# 117 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement 4, MtCeramPeak_MainEvent_Trigger_Movement_10
-# 120 "data//maps/MtCeram_Peak/scripts.pory"
+# 118 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement 5, MtCeramPeak_MainEvent_Trigger_Movement_10
-# 121 "data//maps/MtCeram_Peak/scripts.pory"
+# 119 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtCeramPeak_MainEvent_Trigger_Movement_10
-# 122 "data//maps/MtCeram_Peak/scripts.pory"
+# 120 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
+# 122 "data//maps/MtCeram_Peak/scripts.pory"
+	setvar VAR_0x8004, 2
+# 123 "data//maps/MtCeram_Peak/scripts.pory"
+	setvar VAR_0x8005, 2
 # 124 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8004, 2
-# 125 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8005, 2
-# 126 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8006, 8
+# 125 "data//maps/MtCeram_Peak/scripts.pory"
+	setvar VAR_0x8007, 5
+# 126 "data//maps/MtCeram_Peak/scripts.pory"
+	special ShakeCamera
 # 127 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8007, 5
+	waitstate
 # 128 "data//maps/MtCeram_Peak/scripts.pory"
-	special ShakeCamera
-# 129 "data//maps/MtCeram_Peak/scripts.pory"
-	waitstate
+	delay 30
 # 130 "data//maps/MtCeram_Peak/scripts.pory"
-	delay 30
-# 132 "data//maps/MtCeram_Peak/scripts.pory"
 	setweather WEATHER_RAIN_THUNDERSTORM
-# 133 "data//maps/MtCeram_Peak/scripts.pory"
+# 131 "data//maps/MtCeram_Peak/scripts.pory"
 	doweather
-# 135 "data//maps/MtCeram_Peak/scripts.pory"
+# 133 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_18
-# 136 "data//maps/MtCeram_Peak/scripts.pory"
+# 134 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 137 "data//maps/MtCeram_Peak/scripts.pory"
+# 135 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8004, 2
-# 138 "data//maps/MtCeram_Peak/scripts.pory"
+# 136 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8005, 2
-# 139 "data//maps/MtCeram_Peak/scripts.pory"
+# 137 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8006, 12
-# 140 "data//maps/MtCeram_Peak/scripts.pory"
+# 138 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8007, 5
-# 141 "data//maps/MtCeram_Peak/scripts.pory"
+# 139 "data//maps/MtCeram_Peak/scripts.pory"
 	special ShakeCamera
-# 142 "data//maps/MtCeram_Peak/scripts.pory"
+# 140 "data//maps/MtCeram_Peak/scripts.pory"
 	waitstate
-# 143 "data//maps/MtCeram_Peak/scripts.pory"
+# 141 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 30
-# 145 "data//maps/MtCeram_Peak/scripts.pory"
+# 143 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_19
-# 146 "data//maps/MtCeram_Peak/scripts.pory"
+# 144 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement 4, MtCeramPeak_MainEvent_Trigger_Movement_11
-# 148 "data//maps/MtCeram_Peak/scripts.pory"
+# 146 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement 5, MtCeramPeak_MainEvent_Trigger_Movement_11
+# 147 "data//maps/MtCeram_Peak/scripts.pory"
+	waitmovement 0
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
+	applymovement LOCALID_BOSS, MtCeramPeak_MainEvent_Trigger_Movement_12
 # 149 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
 # 150 "data//maps/MtCeram_Peak/scripts.pory"
-	applymovement LOCALID_BOSS, MtCeramPeak_MainEvent_Trigger_Movement_12
-# 151 "data//maps/MtCeram_Peak/scripts.pory"
-	waitmovement 0
-# 152 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement LOCALID_GAB, MtCeramPeak_MainEvent_Trigger_Movement_2
-# 153 "data//maps/MtCeram_Peak/scripts.pory"
+# 151 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_20
+# 152 "data//maps/MtCeram_Peak/scripts.pory"
+	release
+# 153 "data//maps/MtCeram_Peak/scripts.pory"
+	msgbox MtCeramPeak_MainEvent_Trigger_Text_21
 # 154 "data//maps/MtCeram_Peak/scripts.pory"
 	release
 # 155 "data//maps/MtCeram_Peak/scripts.pory"
-	msgbox MtCeramPeak_MainEvent_Trigger_Text_21
-# 156 "data//maps/MtCeram_Peak/scripts.pory"
-	release
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement LOCALID_BOSS, MtCeramPeak_MainEvent_Trigger_Movement_13
-# 158 "data//maps/MtCeram_Peak/scripts.pory"
+# 156 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
-# 159 "data//maps/MtCeram_Peak/scripts.pory"
+# 157 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_22
+# 158 "data//maps/MtCeram_Peak/scripts.pory"
+	release
 # 160 "data//maps/MtCeram_Peak/scripts.pory"
-	release
-# 162 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement LOCALID_GAB, MtCeramPeak_MainEvent_Trigger_Movement_14
-# 163 "data//maps/MtCeram_Peak/scripts.pory"
+# 161 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_23
-# 164 "data//maps/MtCeram_Peak/scripts.pory"
+# 162 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 165 "data//maps/MtCeram_Peak/scripts.pory"
+# 163 "data//maps/MtCeram_Peak/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtCeramPeak_MainEvent_Trigger_Movement_1
-# 166 "data//maps/MtCeram_Peak/scripts.pory"
+# 164 "data//maps/MtCeram_Peak/scripts.pory"
 	waitmovement 0
-# 168 "data//maps/MtCeram_Peak/scripts.pory"
+# 166 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8004, 3
-# 169 "data//maps/MtCeram_Peak/scripts.pory"
+# 167 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8005, 3
-# 170 "data//maps/MtCeram_Peak/scripts.pory"
+# 168 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8006, 16
+# 169 "data//maps/MtCeram_Peak/scripts.pory"
+	setvar VAR_0x8007, 5
+# 170 "data//maps/MtCeram_Peak/scripts.pory"
+	special ShakeCamera
 # 171 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8007, 5
+	waitstate
 # 172 "data//maps/MtCeram_Peak/scripts.pory"
-	special ShakeCamera
+	delay 30
 # 173 "data//maps/MtCeram_Peak/scripts.pory"
-	waitstate
+	fadescreen FADE_TO_BLACK
 # 174 "data//maps/MtCeram_Peak/scripts.pory"
-	delay 30
-# 175 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
 # 176 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 178 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_24
+# 177 "data//maps/MtCeram_Peak/scripts.pory"
+	release
+# 178 "data//maps/MtCeram_Peak/scripts.pory"
+	setvar VAR_0x8004, 2
 # 179 "data//maps/MtCeram_Peak/scripts.pory"
-	release
+	setvar VAR_0x8005, 2
 # 180 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8004, 2
+	setvar VAR_0x8006, 8
 # 181 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8005, 2
+	setvar VAR_0x8007, 5
 # 182 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8006, 8
+	special ShakeCamera
 # 183 "data//maps/MtCeram_Peak/scripts.pory"
-	setvar VAR_0x8007, 5
+	waitstate
 # 184 "data//maps/MtCeram_Peak/scripts.pory"
-	special ShakeCamera
-# 185 "data//maps/MtCeram_Peak/scripts.pory"
-	waitstate
-# 186 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 30
-# 188 "data//maps/MtCeram_Peak/scripts.pory"
+# 186 "data//maps/MtCeram_Peak/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 189 "data//maps/MtCeram_Peak/scripts.pory"
+# 187 "data//maps/MtCeram_Peak/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 190 "data//maps/MtCeram_Peak/scripts.pory"
+# 188 "data//maps/MtCeram_Peak/scripts.pory"
 	msgbox MtCeramPeak_MainEvent_Trigger_Text_25
-# 191 "data//maps/MtCeram_Peak/scripts.pory"
+# 189 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 192 "data//maps/MtCeram_Peak/scripts.pory"
+# 190 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8004, 2
-# 193 "data//maps/MtCeram_Peak/scripts.pory"
+# 191 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8005, 2
-# 194 "data//maps/MtCeram_Peak/scripts.pory"
+# 192 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8006, 8
-# 195 "data//maps/MtCeram_Peak/scripts.pory"
+# 193 "data//maps/MtCeram_Peak/scripts.pory"
 	setvar VAR_0x8007, 5
-# 196 "data//maps/MtCeram_Peak/scripts.pory"
+# 194 "data//maps/MtCeram_Peak/scripts.pory"
 	special ShakeCamera
-# 197 "data//maps/MtCeram_Peak/scripts.pory"
+# 195 "data//maps/MtCeram_Peak/scripts.pory"
 	waitstate
-# 198 "data//maps/MtCeram_Peak/scripts.pory"
+# 196 "data//maps/MtCeram_Peak/scripts.pory"
 	release
-# 203 "data//maps/MtCeram_Peak/scripts.pory"
+# 201 "data//maps/MtCeram_Peak/scripts.pory"
 	setflag FLAG_MT_CERAM_DREAMSTONE
-# 205 "data//maps/MtCeram_Peak/scripts.pory"
+# 203 "data//maps/MtCeram_Peak/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2
-# 208 "data//maps/MtCeram_Peak/scripts.pory"
+# 206 "data//maps/MtCeram_Peak/scripts.pory"
 	warp MAP_ANCIENT_CERAM, 57, 41
-# 210 "data//maps/MtCeram_Peak/scripts.pory"
+# 208 "data//maps/MtCeram_Peak/scripts.pory"
 	releaseall
 	end
 
@@ -408,69 +408,69 @@ MtCeramPeak_MainEvent_Trigger_Movement_9:
 	face_up
 	step_end
 
-# 117 "data//maps/MtCeram_Peak/scripts.pory"
+# 115 "data//maps/MtCeram_Peak/scripts.pory"
 MtCeramPeak_MainEvent_Trigger_Movement_10:
-# 117 "data//maps/MtCeram_Peak/scripts.pory"
+# 115 "data//maps/MtCeram_Peak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 MtCeramPeak_MainEvent_Trigger_Movement_11:
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 147 "data//maps/MtCeram_Peak/scripts.pory"
+# 145 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
 	step_end
 
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 MtCeramPeak_MainEvent_Trigger_Movement_12:
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_right
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_left
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 150 "data//maps/MtCeram_Peak/scripts.pory"
+# 148 "data//maps/MtCeram_Peak/scripts.pory"
 	face_up
 	step_end
 
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 MtCeramPeak_MainEvent_Trigger_Movement_13:
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
-# 157 "data//maps/MtCeram_Peak/scripts.pory"
+# 155 "data//maps/MtCeram_Peak/scripts.pory"
 	walk_down
 	step_end
 
-# 162 "data//maps/MtCeram_Peak/scripts.pory"
+# 160 "data//maps/MtCeram_Peak/scripts.pory"
 MtCeramPeak_MainEvent_Trigger_Movement_14:
-# 162 "data//maps/MtCeram_Peak/scripts.pory"
+# 160 "data//maps/MtCeram_Peak/scripts.pory"
 	face_up
-# 162 "data//maps/MtCeram_Peak/scripts.pory"
+# 160 "data//maps/MtCeram_Peak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -587,7 +587,7 @@ MtCeramPeak_MainEvent_Trigger_Text_15:
 	.string "GABRIELLE: Y-yes boss!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_16:
-# 110 "data//maps/MtCeram_Peak/scripts.pory"
+# 108 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: Ugh! It's not moving!\p"
 	.string "MOXIE: You idiot! Put some backbone in\n"
 	.string "it!\p"
@@ -598,14 +598,14 @@ MtCeramPeak_MainEvent_Trigger_Text_16:
 	.string "move...I'm stuck to the stone!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_17:
-# 113 "data//maps/MtCeram_Peak/scripts.pory"
+# 111 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: Boss...I feel sick. What's\n"
 	.string "happening? Is this supposed to\l"
 	.string "happen?\p"
 	.string "MOXIE: You must've messed it up!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_18:
-# 135 "data//maps/MtCeram_Peak/scripts.pory"
+# 133 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "MOXIE: Is that an earthquake? It'll\n"
 	.string "trigger a volcanic eruption! Gabrielle,\l"
 	.string "you - aaargh! You've released the\l"
@@ -615,34 +615,34 @@ MtCeramPeak_MainEvent_Trigger_Text_18:
 	.string "MOXIE: And now you've doomed us all!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_19:
-# 145 "data//maps/MtCeram_Peak/scripts.pory"
+# 143 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "MOXIE: This is bad...come on you two!\n"
 	.string "Let's get out of here before this\l"
 	.string "mountain erupts!$"
 
 MtCeramPeak_MainEvent_Trigger_Text_20:
-# 153 "data//maps/MtCeram_Peak/scripts.pory"
+# 151 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: Boss - what about me?$"
 
 MtCeramPeak_MainEvent_Trigger_Text_21:
-# 155 "data//maps/MtCeram_Peak/scripts.pory"
+# 153 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "MOXIE: Take care Gabrielle. I wish you\n"
 	.string "had done more with your life.$"
 
 MtCeramPeak_MainEvent_Trigger_Text_22:
-# 159 "data//maps/MtCeram_Peak/scripts.pory"
+# 157 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: He-he just left me...$"
 
 MtCeramPeak_MainEvent_Trigger_Text_23:
-# 163 "data//maps/MtCeram_Peak/scripts.pory"
+# 161 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: I'm still stuck! H-hey,\n"
 	.string "{PLAYER} - please, you have to help\l"
 	.string "me.$"
 
 MtCeramPeak_MainEvent_Trigger_Text_24:
-# 178 "data//maps/MtCeram_Peak/scripts.pory"
+# 176 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: W-what's happening?$"
 
 MtCeramPeak_MainEvent_Trigger_Text_25:
-# 190 "data//maps/MtCeram_Peak/scripts.pory"
+# 188 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "GABRIELLE: Ahhh!!!$"

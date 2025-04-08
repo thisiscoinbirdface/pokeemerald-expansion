@@ -220,18 +220,35 @@ GastreeCity_TeaHouse_EventScript_NPC4::
 # 146 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_0
 # 147 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	release
+# 148 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	delay 16
+# 149 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	goto_if_set FLAG_GASTREE_TEAHOUSE_BERRIES, GastreeCity_TeaHouse_EventScript_NPC4_2
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_1
+# 154 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	giveitem ITEM_PERSIM_BERRY, 2
+# 155 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	setflag FLAG_GASTREE_TEAHOUSE_BERRIES
+# 157 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	releaseall
+	end
+
+GastreeCity_TeaHouse_EventScript_NPC4_2:
+# 150 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_TeaHouse_Snorunt::
-# 151 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 161 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
-# 152 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 162 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	playmoncry SPECIES_SNORUNT, CRY_MODE_NORMAL
-# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 163 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_Snorunt_Text_0
-# 154 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 164 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	end
 
@@ -244,8 +261,8 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0:
 
 GastreeCity_TeaHouse_EventScript_OldLady_Text_0:
 # 16 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	.string "OWNER: My brother runs a tea shop\n"
-	.string "further out west, in Brixas City.$"
+	.string "OWNER: My brother runs a restaurant\n"
+	.string "further out west, in Pelluca City.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Text_0:
 # 25 "data//maps/GastreeCity_TeaHouse/scripts.pory"
@@ -356,10 +373,16 @@ GastreeCity_TeaHouse_EventScript_NPC4_Text_0:
 	.string "I invited my date here because I\n"
 	.string "thought it'd be more unique than taking\l"
 	.string "him to a trendy spot...but he still\l"
-	.string "hasn't arrived. But my SNORUNT is here\l"
-	.string "to give me company!$"
+	.string "hasn't arrived. Luckily my SNORUNT is\l"
+	.string "here to give me company!$"
+
+GastreeCity_TeaHouse_EventScript_NPC4_Text_1:
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	.string "I got this plate of berries but since my\n"
+	.string "date hasn't come, why don't you have\l"
+	.string "some?$"
 
 GastreeCity_TeaHouse_Snorunt_Text_0:
-# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 163 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "SNORUNT is sniffing the tea. Does it\n"
 	.string "like it?$"

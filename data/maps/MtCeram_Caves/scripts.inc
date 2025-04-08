@@ -138,7 +138,7 @@ MtCeram_Caves_Greta_Main::
 # 83 "data//maps/MtCeram_Caves/scripts.pory"
 	waitmovement 0
 # 85 "data//maps/MtCeram_Caves/scripts.pory"
-	setwildbattle SPECIES_SIZZLIPEDE, 8, ITEM_NONE, SPECIES_VENIPEDE, 8, ITEM_NONE
+	setwildbattle SPECIES_SIZZLIPEDE, 17, ITEM_NONE, SPECIES_VENIPEDE, 17, ITEM_NONE
 # 86 "data//maps/MtCeram_Caves/scripts.pory"
 	dowildbattle
 # 88 "data//maps/MtCeram_Caves/scripts.pory"
