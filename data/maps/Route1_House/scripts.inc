@@ -82,7 +82,7 @@ Route1_House_QuestInProgress_5:
 	compare VAR_RESULT, 0
 	goto_if_eq Route1_House_QuestInProgress_9
 # 42 "data//maps/Route1_House/scripts.pory"
-	giveitem ITEM_FULL_HEAL
+	giveitem ITEM_CATCHING_CHARM
 Route1_House_QuestInProgress_8:
 # 44 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_QuestInProgress_Text_7
@@ -92,7 +92,7 @@ Route1_House_QuestInProgress_8:
 
 Route1_House_QuestInProgress_9:
 # 40 "data//maps/Route1_House/scripts.pory"
-	giveitem ITEM_GREAT_BALL
+	giveitem ITEM_SHINY_CHARM
 	goto Route1_House_QuestInProgress_8
 
 
@@ -179,15 +179,19 @@ Route1_House_QuestInProgress_Text_4:
 # 37 "data//maps/Route1_House/scripts.pory"
 	.string "Child, you must have something in\n"
 	.string "return. The least I can do. Which of\l"
-	.string "these would you like?$"
+	.string "these would you like? The Shiny Charm\l"
+	.string "increases your chances of catching a\l"
+	.string "shiny Pokemon, and the Catching Charm\l"
+	.string "increases your chances of catching a\l"
+	.string "Pokemon on the first bounce!$"
 
 Route1_House_QuestInProgress_Text_5:
 # 38 "data//maps/Route1_House/scripts.pory"
-	.string "GREAT BALL$"
+	.string "SHINY CHARM$"
 
 Route1_House_QuestInProgress_Text_6:
 # 38 "data//maps/Route1_House/scripts.pory"
-	.string "FULL HEAL$"
+	.string "CATCHING CHARM$"
 
 Route1_House_QuestInProgress_Text_7:
 # 44 "data//maps/Route1_House/scripts.pory"
