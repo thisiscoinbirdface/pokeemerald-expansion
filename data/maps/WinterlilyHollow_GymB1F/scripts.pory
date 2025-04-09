@@ -117,7 +117,7 @@ script WinterlilyHollowGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format(""))
         
         //Receive the badge
-        msgbox(format("{PLAYER} received the CINDER BADGE from ARIAN."))
+        msgbox(format("{PLAYER} received the CINDER BADGE from Arian."))
         release
         setflag(FLAG_BADGE05_GET)
 

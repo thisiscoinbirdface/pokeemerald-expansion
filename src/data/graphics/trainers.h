@@ -369,8 +369,8 @@ const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/my_trainers/mo
 const u32 gTrainerFrontPic_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.4bpp.lz");
 const u32 gTrainerPalette_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.gbapal.lz");
 
-const u32 gTrainerFrontPic_Arian[] = INCBIN_U32("graphics/trainers/my_trainers/leader_arian.4bpp.lz");
-const u32 gTrainerPalette_Arian[] = INCBIN_U32("graphics/trainers/my_trainers/leader_arian.gbapal.lz");
+const u32 gTrainerFrontPic_Ariana[] = INCBIN_U32("graphics/trainers/my_trainers/leader_ariana.4bpp.lz");
+const u32 gTrainerPalette_Ariana[] = INCBIN_U32("graphics/trainers/my_trainers/leader_ariana.gbapal.lz");
 
 const u32 gTrainerFrontPic_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
 const u32 gTrainerPalette_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
@@ -493,7 +493,6 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_MUNUCU, gTrainerFrontPic_Munucu, gTrainerPalette_Munucu),
     TRAINER_SPRITE(TRAINER_PIC_SHUBUBU, gTrainerFrontPic_Shububu, gTrainerPalette_Shububu),
     TRAINER_SPRITE(TRAINER_PIC_GUBUKING, gTrainerFrontPic_Gubuking, gTrainerPalette_Gubuking),
-    
 
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_F, gTrainerFrontPic_SomberGruntF, gTrainerPalette_SomberGruntF),
     TRAINER_SPRITE(TRAINER_PIC_SOMBER_GRUNT_M, gTrainerFrontPic_SomberGruntM, gTrainerPalette_SomberGruntM),
@@ -508,7 +507,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_BUG_CATCHER_F, gTrainerFrontPic_BugCatcherF, gTrainerPalette_BugCatcherF),
     TRAINER_SPRITE(TRAINER_PIC_ELECTRICIAN, gTrainerFrontPic_Electrician, gTrainerPalette_Electrician),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_INGER, gTrainerFrontPic_Inger, gTrainerPalette_Inger),
-    TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIAN, gTrainerFrontPic_Arian, gTrainerPalette_Arian),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIANA, gTrainerFrontPic_Ariana, gTrainerPalette_Ariana),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_GLORIA, gTrainerFrontPic_Gloria, gTrainerPalette_Gloria),
     TRAINER_SPRITE(TRAINER_PIC_MODEL, gTrainerFrontPic_Model, gTrainerPalette_Model),
 

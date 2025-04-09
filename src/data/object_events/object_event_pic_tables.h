@@ -1565,6 +1565,6 @@ static const struct SpriteFrameImage sPicTable_ShububuWatering[] = {
 
 
 
-static const struct SpriteFrameImage sPicTable_LeaderInger[] = {
-    overworld_ascending_frames(gObjectEventPic_LeaderInger, 2, 4),
+static const struct SpriteFrameImage sPicTable_LeaderAriana[] = {
+    overworld_ascending_frames(gObjectEventPic_LeaderAriana, 2, 4),
 };

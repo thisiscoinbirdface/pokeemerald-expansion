@@ -5186,7 +5186,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingWatering =
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderInger = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderAriana = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -5201,7 +5201,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderInger = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_BugCatcher,
+    .images = sPicTable_LeaderAriana,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

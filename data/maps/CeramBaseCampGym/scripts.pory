@@ -192,7 +192,7 @@ script CeramBaseCampGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
         //Receive the badge
-        msgbox(format("{PLAYER} received the CINDER BADGE from ARIAN."))
+        msgbox(format("{PLAYER} received the CINDER BADGE from Arian."))
         release
         setflag(FLAG_BADGE02_GET)
 
