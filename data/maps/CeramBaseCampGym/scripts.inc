@@ -266,14 +266,14 @@ CeramBaseCampGym_EventScript_NPC_Signature_9:
 
 
 CeramBaseCampGym_LeaderBattle::
-# 183 "data//maps/CeramBaseCampGym/scripts.pory"
-	call Common_EventScript_SaveGame
-# 185 "data//maps/CeramBaseCampGym/scripts.pory"
+# 184 "data//maps/CeramBaseCampGym/scripts.pory"
 	lockall
-# 186 "data//maps/CeramBaseCampGym/scripts.pory"
+# 185 "data//maps/CeramBaseCampGym/scripts.pory"
 	faceplayer
-# 188 "data//maps/CeramBaseCampGym/scripts.pory"
+# 187 "data//maps/CeramBaseCampGym/scripts.pory"
 	goto_if_set FLAG_BADGE02_GET, CeramBaseCampGym_LeaderBattle_2
+# 190 "data//maps/CeramBaseCampGym/scripts.pory"
+	call Common_EventScript_SaveGame
 # 191 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_Text_Intro
 # 192 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -308,7 +308,7 @@ CeramBaseCampGym_LeaderBattle_1:
 	return
 
 CeramBaseCampGym_LeaderBattle_2:
-# 189 "data//maps/CeramBaseCampGym/scripts.pory"
+# 188 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_0
 	goto CeramBaseCampGym_LeaderBattle_1
 
@@ -521,7 +521,7 @@ CeramBaseCampGym_EventScript_NPC_Signature_Text_7:
 	.string "I can sign and approve it.$"
 
 CeramBaseCampGym_LeaderBattle_Text_0:
-# 189 "data//maps/CeramBaseCampGym/scripts.pory"
+# 188 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "That was a great battle. You've earned\n"
 	.string "my confidence. Go get 'em, {PLAYER}!$"
 

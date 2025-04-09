@@ -325,8 +325,8 @@ WhiteSign_CeramBaseCamp_SupplyDepot_Text_0:
 
 WhiteSign_CeramBaseCamp_Gym_Text_0:
 # 126 "data//scripts/customscripts_signs.pory"
-	.string "Gastree Gym\n"
-	.string "Leader: Arian$"
+	.string "Ceram Base Camp Gym and\n"
+	.string "Management Office$"
 
 WoodSign_MtCeram_Warning_Text_0:
 # 134 "data//scripts/customscripts_signs.pory"

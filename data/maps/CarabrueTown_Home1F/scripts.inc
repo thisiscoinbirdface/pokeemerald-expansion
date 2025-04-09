@@ -246,4 +246,4 @@ CarabrueTown_Home1F_EventScript_MomGeneric_Text_0:
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_1:
 # 107 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Mom: Take care {PLAYER}!$"
+	.string "Mom: Take care, {PLAYER}!$"

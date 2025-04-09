@@ -143,14 +143,14 @@ GalecrestCityGym_Trainer3::
 
 
 GalecrestCityGym_Leader::
-# 132 "data//maps/GalecrestCityGym/scripts.pory"
-	call Common_EventScript_SaveGame
-# 134 "data//maps/GalecrestCityGym/scripts.pory"
+# 133 "data//maps/GalecrestCityGym/scripts.pory"
 	lockall
-# 135 "data//maps/GalecrestCityGym/scripts.pory"
+# 134 "data//maps/GalecrestCityGym/scripts.pory"
 	faceplayer
-# 137 "data//maps/GalecrestCityGym/scripts.pory"
+# 136 "data//maps/GalecrestCityGym/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, GalecrestCityGym_Leader_2
+# 139 "data//maps/GalecrestCityGym/scripts.pory"
+	call Common_EventScript_SaveGame
 # 141 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Text_LeaderIntro
 # 143 "data//maps/GalecrestCityGym/scripts.pory"
@@ -201,7 +201,7 @@ GalecrestCityGym_Leader_1:
 	return
 
 GalecrestCityGym_Leader_2:
-# 138 "data//maps/GalecrestCityGym/scripts.pory"
+# 137 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_0
 	goto GalecrestCityGym_Leader_1
 
@@ -329,7 +329,7 @@ GalecrestCityGym_Trainer3_Text_2:
 	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Leader_Text_0:
-# 138 "data//maps/GalecrestCityGym/scripts.pory"
+# 137 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "You win.$"
 
 GalecrestCityGym_Leader_Text_1:
