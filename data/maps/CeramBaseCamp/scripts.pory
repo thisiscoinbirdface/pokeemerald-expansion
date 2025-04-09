@@ -175,7 +175,7 @@ script CeramBaseCamp_Excadrill{
             delay(40)
             waitmoncry
             msgbox(format("A wild Pokemon attacks!"))
-            setwildbattle(SPECIES_EXCADRILL, 37)     
+            setwildbattle(SPECIES_EXCADRILL, 46)     
             dowildbattle  
 
             //result
