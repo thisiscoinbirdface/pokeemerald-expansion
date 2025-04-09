@@ -26,7 +26,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
 
-    msgbox(format("I'm Assistant Professor Rue and welcome to Tenebris Lab... er..{PLAYER}, was it?"))
+    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...er...\n{PLAYER}, was it?"))
     release
     applymovement(3, moves(face_left face_right face_down))
     waitmovement(3)
@@ -182,7 +182,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)    
 
         msgbox(format("RUE: Detectives...please. You must find the Professor!"))
-        msgbox(format("DETECTIVE: Finding him is what we're here for. Again, I can't shake the hunch that the other dreamstones could provide us with a clue."))
+        msgbox(format("DETECTIVE: Finding her is what we're here for. Again, I can't shake the hunch that the other dreamstones could provide us with a clue."))
         msgbox(format("RUE: Whatever you need to do!"))
         msgbox(format("DETECTIVE: We'll do our best, Rue. But we're detectives - we can uncover her tracks, but we can't unravel her mind. We'll need some help from one of you."))
         msgbox(format("RUE: What do you plan to do?"))
