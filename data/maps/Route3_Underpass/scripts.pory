@@ -1,3 +1,9 @@
+raw`
+    .set LOCALID_GAB, 1
+    .set LOCALID_BREECH, 2
+    .set LOCALID_CLEF, 5
+`
+
 mapscripts Route3_Underpass_MapScripts{}
 
 script Route3_Underpass_Nurse{
@@ -74,33 +80,33 @@ script Route3_Underpass_EvilBattle{
     lockall
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 1))
     waitmovement(0)
     special(RemoveCameraObject)
 
     //Some convo between hiker and magma
-    applymovement(2, moves(jump_in_place_right))
+    applymovement(LOCALID_GAB, moves(jump_in_place_right))
     waitmovement(0)    
     msgbox(format("???: Give it to me!"))
-    applymovement(3, moves(walk_right face_left))
+    applymovement(LOCALID_BREECH, moves(walk_right face_left))
     waitmovement(0)    
     msgbox(format("BREECH: No! Stay away! Clefairy is MY partner!"))
     msgbox(format("???: I said give it to me! It's holding a dreamstone. That's too precious to be held by someone like you!"))
-    applymovement(2, moves(walk_right))
+    applymovement(LOCALID_GAB, moves(walk_right))
     waitmovement(0)
     msgbox(format("BREECH: I don't know anything about any dreamstones, please! Just stop!"))
     release
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)    
-    applymovement(6, moves(jump_in_place_left * 2))
+    applymovement(LOCALID_CLEF, moves(jump_in_place_left * 2))
     waitmovement(0)
     msgbox(format("Clefairy: clee!!!\p???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my Pokemon out!"))
     release
 
     //They look at you and you walk to them
-    applymovement(2, moves(jump_in_place_up emote_question_mark))
+    applymovement(LOCALID_GAB, moves(jump_in_place_up emote_question_mark))
     waitmovement(0)
     msgbox(format("???: Who's there? What you do want?"))
-    applymovement(3, moves(face_up))
+    applymovement(LOCALID_BREECH, moves(face_up))
     waitmovement(0)    
     msgbox(format("BREECH: {PLAYER}! It's you! This thug is trying to take Clefairy away! Help me, please!"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
@@ -114,23 +120,23 @@ script Route3_Underpass_EvilBattle{
 
     //End battle - baddie says revenge
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
-    applymovement(3, moves(face_left))
+    applymovement(LOCALID_BREECH, moves(face_left))
     waitmovement(0) 
-    applymovement(2, moves(face_right))
+    applymovement(LOCALID_GAB, moves(face_right))
     waitmovement(0)    
     msgbox(format("GABRIELLE: Fine - keep your stupid Clefairy!"))
     release
-    applymovement(2, moves(jump_in_place_up))
+    applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
     msgbox(format("GABRIELLE: And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
     release
-    applymovement(2, moves(walk_down * 7))
+    applymovement(LOCALID_GAB, moves(walk_down * 7))
     waitmovement(0)
-    removeobject(2)
+    removeobject(LOCALID_GAB)
 
     //Breech says he needs to train
-    applymovement(6, moves(walk_up))
-    applymovement(3, moves(walk_left face_up))
+    applymovement(LOCALID_CLEF, moves(walk_up))
+    applymovement(LOCALID_BREECH, moves(walk_left face_up))
     waitmovement(0)     
     msgbox(format("{PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible."))
     msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
@@ -143,17 +149,23 @@ script Route3_Underpass_EvilBattle{
     msgbox(format("Don't worry - Clefairy's bored of that stone already. Next, we'll head to Mt. Ceram to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    applymovement(3, moves(walk_down * 7))
-    applymovement(6, moves(walk_left walk_down * 2 face_up))
-    waitmovement(6)
+    applymovement(LOCALID_BREECH, moves(walk_down * 8))
+    applymovement(LOCALID_CLEF, moves(walk_left walk_down * 2 face_up))
+    waitmovement(LOCALID_CLEF)
     delay(30)
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
     msgbox(format("Clefairy: clee!!!"))
     release
-    applymovement(6, moves(walk_down * 4))
+    applymovement(LOCALID_CLEF, moves(walk_down * 5))
     waitmovement(0)
-    removeobject(3)
-    removeobject(6)
+    removeobject(LOCALID_BREECH)
+    removeobject(LOCALID_CLEF)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 1))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     //End
     setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
     fadedefaultbgm   

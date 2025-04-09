@@ -1,7 +1,7 @@
 gText_Birch_Welcome::
 	.string "TENEBRIS LABORATORY\n"
 	.string "LETTER OF APPOINTMENT\p"
-	.string "Congratulations candidate! You have\n"
+	.string "Congratulations, candidate! You have\n"
 	.string "been selected as a Research Associate\l"
 	.string "in the Tenebris Laboratory.\p"
 	.string "MESSAGE FROM PROFESSOR TENEBRIS:\n"

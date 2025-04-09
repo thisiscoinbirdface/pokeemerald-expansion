@@ -59,7 +59,7 @@ gText_ExplainHealPass::
 	.string "Then I have good news - we have a special\n"
 	.string "promotion running right now!\p"
 	.string "Each Trainer that heals in any POKéMON\n"
-	.string "CENTER can receive upto one HEAL PASS.\p"
+	.string "CENTER can receive up to one HEAL PASS.\p"
 	.string "Trade it in with any Nurse Joy outside\n"
 	.string "a POKéMON CENTER to heal your POKéMON.\p"
 	.string "But you can only have one HEAL PASS\n"

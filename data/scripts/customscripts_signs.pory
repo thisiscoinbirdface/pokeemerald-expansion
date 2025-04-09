@@ -123,7 +123,7 @@ script WhiteSign_CeramBaseCamp_SupplyDepot{
 }
 
 script WhiteSign_CeramBaseCamp_Gym{
-    msgbox(format("Gastree Gym\nLeader: Arian"), MSGBOX_SIGN)
+    msgbox(format("Ceram Base Camp Gym and\nManagement Office"), MSGBOX_SIGN)
     end
 }
 

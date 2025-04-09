@@ -18,6 +18,7 @@ script SilversunCity_Theater_Leader{
         end
     }
 
+    call(Common_EventScript_SaveGame)
     //dialogue
     msgbox(format("GLORIA: Hmm, so it's you. Not spectacular, but you'll do.")) 
     fadescreen(FADE_TO_BLACK)    

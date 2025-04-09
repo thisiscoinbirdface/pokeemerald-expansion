@@ -20,7 +20,7 @@ script GastreeGym_TrainerBattle_Jaco {
 }
 
 script GastreeGym_LeaderBattle {
-    call(Common_EventScript_SaveGame)
+
     
     lockall
     faceplayer
@@ -28,6 +28,7 @@ script GastreeGym_LeaderBattle {
     if (flag(FLAG_BADGE01_GET)){
         msgbox(format("That was a great battle, {PLAYER}! I can't wait to see what you'll do next."))
     } else { //else do the battle
+        call(Common_EventScript_SaveGame)
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release
     }
