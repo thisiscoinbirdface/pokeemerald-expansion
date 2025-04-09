@@ -1132,8 +1132,9 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_0:
 CarabrueTown_TenebrisLab_EventScript_Start_Text_1:
 # 29 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm Assistant Professor Rue and\n"
-	.string "welcome to Tenebris Lab...\l"
-	.string "er..{PLAYER}, was it?$"
+	.string "welcome to the Tenebris\l"
+	.string "Laboratory...er...\n"
+	.string "{PLAYER}, was it?$"
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_2:
 # 34 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1301,7 +1302,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_13:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_14:
 # 185 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "DETECTIVE: Finding him is what we're\n"
+	.string "DETECTIVE: Finding her is what we're\n"
 	.string "here for. Again, I can't shake the hunch\l"
 	.string "that the other dreamstones could\l"
 	.string "provide us with a clue.$"
