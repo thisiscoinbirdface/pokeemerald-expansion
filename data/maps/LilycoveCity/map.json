@@ -500,7 +500,7 @@
       "y": 31,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE"
+      "flag": "0"
     },
     {
       "type": "hidden_item",

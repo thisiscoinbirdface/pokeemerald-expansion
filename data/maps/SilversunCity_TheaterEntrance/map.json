@@ -166,6 +166,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_BOTTLE_CAP",
+      "flag": "FLAG_HIDDEN_ITEM_SILVERSUN_C"
+    }
   ]
 }

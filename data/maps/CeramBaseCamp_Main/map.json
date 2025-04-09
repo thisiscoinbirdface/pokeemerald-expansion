@@ -270,6 +270,13 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_CERAMBASECAMP_D"
+    }
   ]
 }

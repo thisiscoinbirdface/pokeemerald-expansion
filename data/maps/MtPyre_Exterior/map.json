@@ -118,7 +118,7 @@
       "y": 8,
       "elevation": 0,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_GALECREST_D"
     },
     {
       "type": "hidden_item",
