@@ -93,7 +93,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist{
 }
 
 script GalecrestCity_DetectiveAcademy_Receptionist_Multichoice{
-    msgbox(format("How many I help you today?"))
+    msgbox(format("How may I help you today?"))
     dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Tell me about the Academy!", "Can I get a student ID?", "I want a Charcadet!")
 
     if (var(VAR_RESULT) == 0){

@@ -967,9 +967,9 @@ Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VILETHORN_G ===
-Name: DAVIS
-Class: Bug Catcher
-Pic: Bug Catcher
+Name: Bugiana
+Class: Bug Catcher F
+Pic: Bug Catcher F
 Gender: Male
 Music: Male
 Double Battle: No

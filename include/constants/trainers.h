@@ -131,7 +131,9 @@
 #define TRAINER_PIC_LEADER_ARIAN          109
 #define TRAINER_PIC_LEADER_GLORIA         110
 
-#define TRAINER_PIC_COUNT                 111
+#define TRAINER_PIC_MODEL                 111
+
+#define TRAINER_PIC_COUNT                 112
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -396,8 +398,9 @@
 #define TRAINER_CLASS_EMPLOYEE       0x47
 #define TRAINER_CLASS_BUG_CATCHER_F  0x48
 #define TRAINER_CLASS_ELECTRICIAN    0x49
+#define TRAINER_CLASS_MODEL          0x50
 
-#define TRAINER_CLASS_COUNT          0x50
+#define TRAINER_CLASS_COUNT          0x51
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

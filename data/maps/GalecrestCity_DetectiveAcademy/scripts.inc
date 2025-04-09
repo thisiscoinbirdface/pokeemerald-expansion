@@ -715,7 +715,7 @@ GalecrestCity_DetectiveAcademy_Receptionist_Text_0:
 
 GalecrestCity_DetectiveAcademy_Receptionist_Multichoice_Text_0:
 # 96 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "How many I help you today?$"
+	.string "How may I help you today?$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Multichoice_Text_1:
 # 97 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"

@@ -502,3 +502,5 @@ const u32 gObjectEventPic_GubukingDecorating[] = INCBIN_U32("graphics/object_eve
 const u32 gObjectEventPic_GubukingUnderwater[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/underwater.4bpp");
 
 
+
+const u32 gObjectEventPic_LeaderInger[] = INCBIN_U32("graphics/object_events/pics/custom/leader_inger.4bpp");

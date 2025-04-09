@@ -63,7 +63,6 @@ $(OBJEVENTGFXDIR)/custom/munucu/underwater.4bpp: %.4bpp: %.png
 
 
 
-
 $(OBJEVENTGFXDIR)/custom/shububu/walking.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
@@ -499,6 +498,16 @@ $(OBJEVENTGFXDIR)/people/woman_5.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/youngster.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/custom/leader_inger.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+
+
+
+
+
+
 
 
 

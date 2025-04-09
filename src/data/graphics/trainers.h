@@ -349,6 +349,22 @@ const u32 gTrainerPalette_BugCatcherF[] = INCBIN_U32("graphics/trainers/my_train
 const u32 gTrainerFrontPic_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.4bpp.lz");
 const u32 gTrainerPalette_Electrician[] = INCBIN_U32("graphics/trainers/my_trainers/electrician.gbapal.lz");
 
+const u32 gTrainerFrontPic_LassAlt[] = INCBIN_U32("graphics/trainers/my_trainers/lass_alt.4bpp.lz");
+const u32 gTrainerPalette_LassAlt[] = INCBIN_U32("graphics/trainers/my_trainers/lass_alt.gbapal.lz");
+
+const u32 gTrainerFrontPic_HexManiacAlt[] = INCBIN_U32("graphics/trainers/my_trainers/hex_maniac_alt.4bpp.lz");
+const u32 gTrainerPalette_HexManiacAlt[] = INCBIN_U32("graphics/trainers/my_trainers/hex_maniac_alt.gbapal.lz");
+
+const u32 gTrainerFrontPic_BeautyAlt[] = INCBIN_U32("graphics/trainers/my_trainers/beauty_alt.4bpp.lz");
+const u32 gTrainerPalette_BeautyAlt[] = INCBIN_U32("graphics/trainers/my_trainers/beauty_alt.gbapal.lz");
+
+const u32 gTrainerFrontPic_Model[] = INCBIN_U32("graphics/trainers/my_trainers/model.4bpp.lz");
+const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/my_trainers/model.gbapal.lz");
+
+
+
+
+
 //gym leaders
 const u32 gTrainerFrontPic_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.4bpp.lz");
 const u32 gTrainerPalette_Inger[] = INCBIN_U32("graphics/trainers/my_trainers/leader_inger.gbapal.lz");
@@ -392,7 +408,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_BLACK_BELT, gTrainerFrontPic_BlackBelt, gTrainerPalette_BlackBelt),
     TRAINER_SPRITE(TRAINER_PIC_AQUA_ADMIN_F, gTrainerFrontPic_AquaAdminF, gTrainerPalette_AquaAdminF),
     TRAINER_SPRITE(TRAINER_PIC_AQUA_LEADER_ARCHIE, gTrainerFrontPic_AquaLeaderArchie, gTrainerPalette_AquaLeaderArchie),
-    TRAINER_SPRITE(TRAINER_PIC_HEX_MANIAC, gTrainerFrontPic_HexManiac, gTrainerPalette_HexManiac),
+    TRAINER_SPRITE(TRAINER_PIC_HEX_MANIAC, gTrainerFrontPic_HexManiacAlt, gTrainerPalette_HexManiacAlt),
     TRAINER_SPRITE(TRAINER_PIC_AROMA_LADY, gTrainerFrontPic_AromaLady, gTrainerPalette_AromaLady),
     TRAINER_SPRITE(TRAINER_PIC_RUIN_MANIAC, gTrainerFrontPic_RuinManiac, gTrainerPalette_RuinManiac),
     TRAINER_SPRITE(TRAINER_PIC_INTERVIEWER, gTrainerFrontPic_Interviewer, gTrainerPalette_Interviewer),
@@ -400,7 +416,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_TUBER_M, gTrainerFrontPic_TuberM, gTrainerPalette_TuberM),
     TRAINER_SPRITE(TRAINER_PIC_COOLTRAINER_F, gTrainerFrontPic_CoolTrainerF, gTrainerPalette_CoolTrainerF),
     TRAINER_SPRITE(TRAINER_PIC_LADY, gTrainerFrontPic_Lady, gTrainerPalette_Lady),
-    TRAINER_SPRITE(TRAINER_PIC_BEAUTY, gTrainerFrontPic_Beauty, gTrainerPalette_Beauty),
+    TRAINER_SPRITE(TRAINER_PIC_BEAUTY, gTrainerFrontPic_BeautyAlt, gTrainerPalette_BeautyAlt),
     TRAINER_SPRITE(TRAINER_PIC_RICH_BOY, gTrainerFrontPic_RichBoy, gTrainerPalette_RichBoy),
     TRAINER_SPRITE(TRAINER_PIC_EXPERT_F, gTrainerFrontPic_ExpertF, gTrainerPalette_ExpertF),
     TRAINER_SPRITE(TRAINER_PIC_POKEMANIAC, gTrainerFrontPic_Pokemaniac, gTrainerPalette_Pokemaniac),
@@ -455,7 +471,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_RANGER_M, gTrainerFrontPic_PokemonRangerM, gTrainerPalette_PokemonRangerM),
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_RANGER_F, gTrainerFrontPic_PokemonRangerF, gTrainerPalette_PokemonRangerF),
     TRAINER_SPRITE(TRAINER_PIC_MAGMA_LEADER_MAXIE, gTrainerFrontPic_MagmaLeaderMaxie, gTrainerPalette_MagmaLeaderMaxie),
-    TRAINER_SPRITE(TRAINER_PIC_LASS, gTrainerFrontPic_Lass, gTrainerPalette_Lass),
+    TRAINER_SPRITE(TRAINER_PIC_LASS, gTrainerFrontPic_LassAlt, gTrainerPalette_LassAlt),
     TRAINER_SPRITE(TRAINER_PIC_YOUNG_COUPLE, gTrainerFrontPic_YoungCouple, gTrainerPalette_YoungCouple),
     TRAINER_SPRITE(TRAINER_PIC_OLD_COUPLE, gTrainerFrontPic_OldCouple, gTrainerPalette_OldCouple),
     TRAINER_SPRITE(TRAINER_PIC_SIS_AND_BRO, gTrainerFrontPic_SisAndBro, gTrainerPalette_SisAndBro),
@@ -494,7 +510,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_INGER, gTrainerFrontPic_Inger, gTrainerPalette_Inger),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIAN, gTrainerFrontPic_Arian, gTrainerPalette_Arian),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_GLORIA, gTrainerFrontPic_Gloria, gTrainerPalette_Gloria),
-
+    TRAINER_SPRITE(TRAINER_PIC_MODEL, gTrainerFrontPic_Model, gTrainerPalette_Model),
 
 };
 

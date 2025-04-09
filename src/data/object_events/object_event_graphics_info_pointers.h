@@ -269,6 +269,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingFis
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingWatering;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingUnderwater;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderInger;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
@@ -550,6 +551,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GUBUKING_FIELD_MOVE] =        &gObjectEventGraphicsInfo_GubukingFieldMove,
     [OBJ_EVENT_GFX_GUBUKING_FISHING] =           &gObjectEventGraphicsInfo_GubukingFishing,
     [OBJ_EVENT_GFX_GUBUKING_WATERING] =          &gObjectEventGraphicsInfo_GubukingWatering,
+    [OBJ_EVENT_GFX_LEADER_INGER] =               &gObjectEventGraphicsInfo_LeaderInger,
 
 };
 
