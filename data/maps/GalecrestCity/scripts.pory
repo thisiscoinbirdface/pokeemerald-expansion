@@ -524,6 +524,14 @@ script GalecrestCity_NPC_20{
 }
 
 
+script GalecrestCity_NPC_Ranger{
+    lockall
+    faceplayer    
+    msgbox(format("I'm a Pokemon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"))
+    releaseall
+    end
+}
+
 
 script GalecrestCity_NPC_Red{
     lockall
@@ -535,4 +543,6 @@ script GalecrestCity_NPC_Red{
     releaseall
     end
 }
+
+
 
