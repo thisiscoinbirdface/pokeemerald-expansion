@@ -14096,6 +14096,7 @@ const struct Item gItemsInfo[] =
             "Just a bunch of\n"
             "notes and things.\n"
         ),
+        .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -14112,6 +14113,7 @@ const struct Item gItemsInfo[] =
             "a tree. Who is it's\n"
             "owner?"
         ),
+        .importance = 1,        
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -14128,6 +14130,7 @@ const struct Item gItemsInfo[] =
             "RANGER INSTITUTE.\n"
             "at IVY RIVER.\n"
         ),
+        .importance = 1,                
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

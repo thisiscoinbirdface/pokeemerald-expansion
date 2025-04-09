@@ -31,7 +31,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(3, moves(face_left face_right face_down))
     waitmovement(3)
 
-    msgbox(format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh thank god! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police! And this bag next to me is your welcome package. Go on - open it."))
+    msgbox(format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh thank god! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police! This bag next to me is your welcome package. Go on - open it."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))

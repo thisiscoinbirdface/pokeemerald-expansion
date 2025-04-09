@@ -19,6 +19,9 @@ script GastreeCity_House1_Buneary{
         giveitem(ITEM_CHARTI_BERRY, 2)
         setflag(FLAG_GASTREE_HOUSE1_BUNEARY)
     }
+
+    releaseall
+    end
 }
 
 

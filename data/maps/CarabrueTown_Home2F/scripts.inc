@@ -24,7 +24,7 @@ CarabrueTown_Home2F_EventScript_PC::
 # 17 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	lockall
 # 18 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
+	setvar VAR_0x8004, PC_LOCATION_MAYS_HOUSE
 # 19 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	special DoPCTurnOnEffect
 # 20 "data//maps/CarabrueTown_Home2F/scripts.pory"

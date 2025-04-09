@@ -1144,9 +1144,9 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_2:
 	.string "Did you bring your welcome package?\l"
 	.string "Yes? Oh thank god! You see, we sent you\l"
 	.string "the wrong package. The one we sent you\l"
-	.string "is the evidence bag for the police! And\l"
-	.string "this bag next to me is your welcome\l"
-	.string "package. Go on - open it.$"
+	.string "is the evidence bag for the police! This\l"
+	.string "bag next to me is your welcome package.\l"
+	.string "Go on - open it.$"
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_3:
 # 46 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

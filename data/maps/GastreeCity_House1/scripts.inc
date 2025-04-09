@@ -22,19 +22,22 @@ GastreeCity_House1_Buneary::
 # 13 "data//maps/GastreeCity_House1/scripts.pory"
 	playmoncry SPECIES_BUNEARY, CRY_MODE_NORMAL
 # 15 "data//maps/GastreeCity_House1/scripts.pory"
-	goto_if_set FLAG_GASTREE_HOUSE1_BUNEARY, GastreeCity_House1_Buneary_1
+	goto_if_set FLAG_GASTREE_HOUSE1_BUNEARY, GastreeCity_House1_Buneary_2
 # 18 "data//maps/GastreeCity_House1/scripts.pory"
 	msgbox GastreeCity_House1_Buneary_Text_1
 # 19 "data//maps/GastreeCity_House1/scripts.pory"
 	giveitem ITEM_CHARTI_BERRY, 2
 # 20 "data//maps/GastreeCity_House1/scripts.pory"
 	setflag FLAG_GASTREE_HOUSE1_BUNEARY
-	return
-
 GastreeCity_House1_Buneary_1:
+# 23 "data//maps/GastreeCity_House1/scripts.pory"
+	releaseall
+	end
+
+GastreeCity_House1_Buneary_2:
 # 16 "data//maps/GastreeCity_House1/scripts.pory"
 	msgbox GastreeCity_House1_Buneary_Text_0
-	return
+	goto GastreeCity_House1_Buneary_1
 
 
 GastreeCity_House1_NPC1_Text_0:
