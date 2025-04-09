@@ -9,10 +9,13 @@ script Route1_House_RandomDude {
     goto_if_quest_inactive(QUEST_ROUTE1_PECHA_BERRY, Route1_House_StartQuest)
 
     releaseall
+    end
 }
 
 script Route1_House_Quest_Done{
     msgbox(format("I won't let AZURILL eat any bad food again!"))
+    releaseall
+    end
 }
 
 
