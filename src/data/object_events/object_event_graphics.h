@@ -503,4 +503,8 @@ const u32 gObjectEventPic_GubukingUnderwater[] = INCBIN_U32("graphics/object_eve
 
 
 
+const u32 gObjectEventPic_LeaderInger[] = INCBIN_U32("graphics/object_events/pics/custom/leader_inger.4bpp");
 const u32 gObjectEventPic_LeaderAriana[] = INCBIN_U32("graphics/object_events/pics/custom/leader_ariana.4bpp");
+const u32 gObjectEventPic_LeaderGloria[] = INCBIN_U32("graphics/object_events/pics/custom/leader_gloria.4bpp");
+
+const u32 gObjectEventPic_BugCatcherF[] = INCBIN_U32("graphics/object_events/pics/custom/bug_catcher_f.4bpp");

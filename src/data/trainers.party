@@ -108,7 +108,7 @@ Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE1_C ===
-Name: Mortem
+Name: Manya
 Class: Bug Catcher F
 Pic: Bug Catcher F
 Gender: Male
@@ -541,9 +541,9 @@ Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
  
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
-Name: Arian
+Name: Ariana
 Class: Leader
-Pic: Leader Arian
+Pic: Leader Ariana
 Gender: Male
 Music: Aqua
 Items: Super Potion

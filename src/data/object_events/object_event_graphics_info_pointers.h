@@ -270,6 +270,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingWat
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GubukingUnderwater;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderAriana;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderInger;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderGloria;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugCatcherF;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
@@ -551,8 +555,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GUBUKING_FIELD_MOVE] =        &gObjectEventGraphicsInfo_GubukingFieldMove,
     [OBJ_EVENT_GFX_GUBUKING_FISHING] =           &gObjectEventGraphicsInfo_GubukingFishing,
     [OBJ_EVENT_GFX_GUBUKING_WATERING] =          &gObjectEventGraphicsInfo_GubukingWatering,
-    [OBJ_EVENT_GFX_LEADER_ARIANA] =               &gObjectEventGraphicsInfo_LeaderAriana,
-
+    [OBJ_EVENT_GFX_LEADER_INGER] =               &gObjectEventGraphicsInfo_LeaderInger,
+    [OBJ_EVENT_GFX_LEADER_ARIANA] =              &gObjectEventGraphicsInfo_LeaderAriana,
+    [OBJ_EVENT_GFX_LEADER_GLORIA] =              &gObjectEventGraphicsInfo_LeaderGloria,
+    [OBJ_EVENT_GFX_BUG_CATCHER_F] =              &gObjectEventGraphicsInfo_BugCatcherF,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

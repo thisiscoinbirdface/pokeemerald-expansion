@@ -774,7 +774,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_1:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_2:
 # 70 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: The name's Arian! And no way!\n"
+	.string "ARIANA: The name's Arian! And no way!\n"
 	.string "This is MY base camp! You're not harming\l"
 	.string "anyone while I'm around!$"
 
@@ -833,7 +833,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_10:
 # 115 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "???: Agh! You stupid fire-type monkey!\n"
 	.string "I just didn't have my Pokemon with me.\p"
-	.string "ARIAN: Serves you right! Now move over\n"
+	.string "ARIANA: Serves you right! Now move over\n"
 	.string "and give our shopkeeper back.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_11:
@@ -856,19 +856,19 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_13:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_14:
 # 146 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: Thanks for the help trainer!$"
+	.string "ARIANA: Thanks for the help trainer!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_15:
 # 151 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: They didn't harm you right?\p"
+	.string "ARIANA: They didn't harm you right?\p"
 	.string "SHOPKEEPER: No they didn't. Thank you\n"
-	.string "ARIAN! And you too, trainer. I owe you\l"
+	.string "Arian! And you too, trainer. I owe you\l"
 	.string "one. Stop by our counter downstairs for\l"
 	.string "trekking supplies later on.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_16:
 # 160 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: That boss was really tough!\p"
+	.string "ARIANA: That boss was really tough!\p"
 	.string "Hmm? You've met these thugs before?\n"
 	.string "And you're also going to Mt. Ceram?\l"
 	.string "What's up there?\p"
@@ -877,21 +877,21 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_16:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_17:
 # 161 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: They're connected to Professor\n"
-	.string "Tenebris' disappearance?\p"
+	.string "ARIANA: They're connected to\n"
+	.string "Professor Tenebris' disappearance?\p"
 	.string "Well I gotta do something - Professor\n"
 	.string "Tenebris is the one who gave me my\l"
 	.string "GROWLITHE.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_18:
 # 162 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: Those guys seem to be after the\n"
-	.string "dreamstone too...but I can't let you go\l"
-	.string "up the mountain as you are now.$"
+	.string "ARIANA: Those guys seem to be after\n"
+	.string "the dreamstone too...but I can't let you\l"
+	.string "go up the mountain as you are now.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_19:
 # 163 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIAN: {PLAYER}, was it? Mt. Ceram is\n"
+	.string "ARIANA: {PLAYER}, was it? Mt. Ceram is\n"
 	.string "filled with dangerous Pokemon. The\l"
 	.string "rules around here are you can't climb\l"
 	.string "unless you have my gym badge and my\l"
@@ -991,7 +991,7 @@ CeramBaseCamp_Main_NPC3_Text_1:
 CeramBaseCamp_Main_NPC3_Text_2:
 # 319 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "These thugs took the shopkeeper\n"
-	.string "upstairs! But ARIAN, the Gym Leader,\l"
+	.string "upstairs! But Arian, the Gym Leader,\l"
 	.string "just went up there to get him back. He's\l"
 	.string "going to teach them a lesson!$"
 
@@ -1039,7 +1039,7 @@ CeramBaseCamp_Main_NPC5_Text_5:
 
 CeramBaseCamp_Main_NPC5_Text_6:
 # 408 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "I can't wait for ARIAN to put these\n"
+	.string "I can't wait for Arian to put these\n"
 	.string "crooks in their place!$"
 
 CeramBaseCamp_Main_NPC6_Text_0:

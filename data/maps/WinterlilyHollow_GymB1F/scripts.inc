@@ -275,7 +275,7 @@ WinterlilyHollowGym_LeaderBattle_Text_1:
 WinterlilyHollowGym_LeaderBattle_Text_2:
 # 120 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "{PLAYER} received the CINDER BADGE\n"
-	.string "from ARIAN.$"
+	.string "from Arian.$"
 
 WinterlilyHollowGym_LeaderBattle_Text_3:
 # 128 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"

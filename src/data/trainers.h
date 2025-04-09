@@ -95,11 +95,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE1_C] =
     {
 #line 111
-        .trainerName = _("Mortem"),
+        .trainerName = _("Manya"),
 #line 112
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER_F,
 #line 113
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER_F,
         .encounterMusic_gender =
 #line 115
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -245,7 +245,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 170
-            .species = SPECIES_SENTRET,
+            .species = SPECIES_PINECO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 172
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -359,7 +359,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE3_EVIL_GABRIELLE] =
     {
 #line 213
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 214
         .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 215
@@ -616,7 +616,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMP_EVIL_GABRIELLE] =
     {
 #line 315
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 316
         .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 317
@@ -1196,11 +1196,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_LEADER] =
     {
 #line 544
-        .trainerName = _("Arian"),
+        .trainerName = _("Ariana"),
 #line 545
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 546
-        .trainerPic = TRAINER_PIC_LEADER_ARIAN,
+        .trainerPic = TRAINER_PIC_LEADER_ARIANA,
         .encounterMusic_gender =
 #line 548
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -2029,7 +2029,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_B] =
     {
 #line 875
-        .trainerName = _("DUSTY"),
+        .trainerName = _("Dusty"),
 #line 876
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 877
@@ -2083,7 +2083,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_C] =
     {
 #line 897
-        .trainerName = _("PATRICIA"),
+        .trainerName = _("Patricia"),
 #line 898
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 899
@@ -2128,7 +2128,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_D] =
     {
 #line 914
-        .trainerName = _("ISAAC"),
+        .trainerName = _("Isaac"),
 #line 915
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 916
@@ -2270,11 +2270,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_G] =
     {
 #line 970
-        .trainerName = _("DAVIS"),
+        .trainerName = _("Anja"),
 #line 971
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER_F,
 #line 972
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER_F,
         .encounterMusic_gender =
 #line 974
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -2337,7 +2337,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_H] =
     {
 #line 998
-        .trainerName = _("TYRONE"),
+        .trainerName = _("Ty"),
 #line 999
         .trainerClass = TRAINER_CLASS_BURGLAR,
 #line 1000
@@ -2523,7 +2523,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE5_A] =
     {
 #line 1074
-        .trainerName = _("LOLA"),
+        .trainerName = _("Lola"),
 #line 1075
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1076
@@ -2681,7 +2681,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SEWERS_A] =
     {
 #line 1134
-        .trainerName = _("GONDOR"),
+        .trainerName = _("Gondor"),
 #line 1135
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 1136
@@ -41542,7 +41542,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_2] =
     {
 #line 16635
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 16636
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16637
@@ -41631,7 +41631,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_3] =
     {
 #line 16668
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 16669
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16670
@@ -41720,7 +41720,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_4] =
     {
 #line 16701
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 16702
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16703
@@ -41809,7 +41809,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_5] =
     {
 #line 16734
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 16735
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16736

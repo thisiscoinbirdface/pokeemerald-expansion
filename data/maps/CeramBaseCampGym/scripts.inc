@@ -528,7 +528,7 @@ CeramBaseCampGym_LeaderBattle_Text_0:
 CeramBaseCampGym_LeaderBattle_Text_1:
 # 195 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the CINDER BADGE\n"
-	.string "from ARIAN.$"
+	.string "from Arian.$"
 
 CeramBaseCampGym_LeaderBattle_Text_2:
 # 203 "data//maps/CeramBaseCampGym/scripts.pory"

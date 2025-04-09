@@ -343,7 +343,7 @@ CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 # 26 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Hey kid! The rules are you can't climb\n"
 	.string "unless you have the FIRE BADGE. If you\l"
-	.string "can't beat ARIAN, you won't be able to\l"
+	.string "can't beat Arian, you won't be able to\l"
 	.string "handle the heat of the mountain!$"
 
 CeramBaseCamp_NPC_Exit_Text_0:
