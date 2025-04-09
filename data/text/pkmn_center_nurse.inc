@@ -51,9 +51,7 @@ gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
 
 gText_TakeHealPass::
-	.string "Please take this HEAL PASS. You can\n"
-	.string "trade it in with any Nurse Joy outside\p"
-	.string "a POKéMON CENTER to heal your POKéMON.$"
+	.string "I'll give you a new HEAL PASS too!$"
 
 gText_ExplainHealPass::
 	.string "Trainer, is this your first time at a\n"

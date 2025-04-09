@@ -95,7 +95,7 @@ EventScript_PkmnCenterNurse_ExplainHealPass::
 
 EventScript_PkmnCenterNurse_GiveHealPass::
 	message gText_TakeHealPass
-	giveitem ITEM_HEAL_PASS
+	additem ITEM_HEAL_PASS
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::

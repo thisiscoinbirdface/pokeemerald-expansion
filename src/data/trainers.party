@@ -109,8 +109,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE1_C ===
 Name: Mortem
-Class: Bug Catcher
-Pic: Bug Catcher
+Class: Bug Catcher F
+Pic: Bug Catcher F
 Gender: Male
 Music: Male
 Double Battle: No
@@ -167,7 +167,7 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Sentret
+Pineco
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -210,7 +210,7 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -312,7 +312,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -872,7 +872,7 @@ Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VILETHORN_B ===
-Name: DUSTY
+Name: Dusty
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -894,7 +894,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 
 === TRAINER_VILETHORN_C ===
-Name: PATRICIA
+Name: Patricia
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -911,7 +911,7 @@ Level: 22
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_VILETHORN_D ===
-Name: ISAAC
+Name: Isaac
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
@@ -967,7 +967,7 @@ Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VILETHORN_G ===
-Name: Bugiana
+Name: Anja
 Class: Bug Catcher F
 Pic: Bug Catcher F
 Gender: Male
@@ -995,7 +995,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_VILETHORN_H ===
-Name: TYRONE
+Name: Ty
 Class: Burglar
 Pic: Burglar
 Gender: Male
@@ -1071,7 +1071,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Hyper Voice
 
 === TRAINER_ROUTE5_A ===
-Name: LOLA
+Name: Lola
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1131,7 +1131,7 @@ Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SEWERS_A ===
-Name: GONDOR
+Name: Gondor
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -16632,7 +16632,7 @@ Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_GABRIELLE_2 ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -16665,7 +16665,7 @@ Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GABRIELLE_3 ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -16698,7 +16698,7 @@ Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_GABRIELLE_4 ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -16731,7 +16731,7 @@ Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_GABRIELLE_5 ===
-Name: GABRIELLE
+Name: Gabrielle
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
