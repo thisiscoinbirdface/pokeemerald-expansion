@@ -711,20 +711,32 @@ GalecrestCity_NPC_20::
 	end
 
 
-GalecrestCity_NPC_Red::
-# 529 "data//maps/GalecrestCity/scripts.pory"
+GalecrestCity_NPC_Ranger::
+# 528 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 530 "data//maps/GalecrestCity/scripts.pory"
+# 529 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
+# 530 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_Ranger_Text_0
 # 531 "data//maps/GalecrestCity/scripts.pory"
+	releaseall
+	end
+
+
+GalecrestCity_NPC_Red::
+# 537 "data//maps/GalecrestCity/scripts.pory"
+	lockall
+# 538 "data//maps/GalecrestCity/scripts.pory"
+	faceplayer
+# 539 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Red_Text_0
-# 532 "data//maps/GalecrestCity/scripts.pory"
+# 540 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 533 "data//maps/GalecrestCity/scripts.pory"
+# 541 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 38, GalecrestCity_DetectiveMeet_Main_Movement_0
-# 534 "data//maps/GalecrestCity/scripts.pory"
+# 542 "data//maps/GalecrestCity/scripts.pory"
 	waitmovement 0
-# 535 "data//maps/GalecrestCity/scripts.pory"
+# 543 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
@@ -1205,8 +1217,15 @@ GalecrestCity_NPC_20_Text_0:
 	.string "people are all the same - always looking\l"
 	.string "for handouts!$"
 
+GalecrestCity_NPC_Ranger_Text_0:
+# 530 "data//maps/GalecrestCity/scripts.pory"
+	.string "I'm a Pokemon Ranger. What am I doing?\n"
+	.string "Ranger duty of course! I'm cleaning up\l"
+	.string "the city. There's so much junk lying\l"
+	.string "around!$"
+
 GalecrestCity_NPC_Red_Text_0:
-# 531 "data//maps/GalecrestCity/scripts.pory"
+# 539 "data//maps/GalecrestCity/scripts.pory"
 	.string "Sorry trainer, the Gym Leader's not in\n"
 	.string "right now. He should be back soon. Check\l"
 	.string "out the Detective Academy in the\l"
