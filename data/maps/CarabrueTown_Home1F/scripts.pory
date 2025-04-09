@@ -104,7 +104,7 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
 	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
-	msgbox(format("Mom: Take care {PLAYER}!"))
+	msgbox(format("Mom: Take care, {PLAYER}!"))
     release
     applymovement(1, moves(face_right))
 	releaseall
