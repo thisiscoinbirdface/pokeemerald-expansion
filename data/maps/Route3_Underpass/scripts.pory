@@ -7,10 +7,7 @@ raw`
 mapscripts Route3_Underpass_MapScripts{}
 
 script Route3_Underpass_Nurse{
-    lockall
-    faceplayer
-    msgbox(format("This area is closed for the demo."))
-    releaseall
+    msgbox(format("This area is closed for the demo."), MSGBOX_NPC)
     end
 }
 
@@ -28,17 +25,13 @@ script Route3_NurseJoy_OnRoute{
 
 
 script Route3_Underpass_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."))
-    releaseall
+    msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."), MSGBOX_NPC)
+    end
 }
 
 script Route3_Underpass_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("They say that a rare Pokemon has made these caves its home. I need to go deeper down!"))
-    releaseall
+    msgbox(format("They say that a rare Pokemon has made these caves its home. I need to go deeper down!"), MSGBOX_NPC)
+    end
 }
 
 script Route3_Underpass_EvilBattle_Trigger0{

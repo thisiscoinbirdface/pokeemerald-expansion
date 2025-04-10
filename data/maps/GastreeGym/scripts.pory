@@ -70,13 +70,12 @@ text GastreeGym_Text_Defeated{
 
 
 script GastreeGym_Red{
-    lockall
-    faceplayer
-
     if (flag(FLAG_BADGE01_GET)){
         if (flag(FLAG_GASTREEGYM_SPENSER_REWARD)){
-            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
         } else {
+            lockall
+            faceplayer
             msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your skills, I'd like to give you something. Which of these do you fancy?"))
             dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "ROCK GEM", "HARD STONE")
 
@@ -88,19 +87,21 @@ script GastreeGym_Red{
             }
 
             setflag(FLAG_GASTREEGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            
         }
     } else { 
         if (flag(FLAG_GASTREEGYM_SPENSER_WATER)){
-            msgbox(format("Welcome to the Gastree Gym! Inger specialises in the steadfast ROCK type, so avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
+            msgbox(format("Welcome to the Gastree Gym! Inger specialises in the steadfast ROCK type, so avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"), MSGBOX_NPC)
         } else {
+            lockall
+            faceplayer
             msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything. First, have some water."))
             giveitem(ITEM_FRESH_WATER)
             msgbox(format("Against Inger, avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
             setflag(FLAG_GASTREEGYM_SPENSER_WATER)
+            releaseall
         }
     }
-    releaseall
     end
 }
 

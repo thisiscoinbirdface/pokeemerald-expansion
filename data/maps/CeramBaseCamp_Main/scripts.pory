@@ -267,96 +267,75 @@ mart CeramBaseCamp_Main_Pokemart_Inventory{
 //FLAG_CERAMBASECAMP_EVIL_BATTLE
 
 script CeramBaseCamp_Main_NPC1{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("CENTISKORCH and SCOLIPEDE are fiercely territorial. They keep fighting each other in Mt. Ceram."))
+        msgbox(format("Centiskorch and Scolipede are fiercely territorial. They keep fighting each other in Mt. Ceram."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."))
+        msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."), MSGBOX_NPC)
     }
-
-    releaseall
+    end
 }
 
 script CeramBaseCamp_Main_NPC2{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokemon's memories."))
+        msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokemon's memories."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. What do they want with one?"))
+        msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. What do they want with one?"), MSGBOX_NPC)
     }
-
-    releaseall
+    end
 }
 
 script CeramBaseCamp_Main_Smeargle{
-    lockall
-    faceplayer
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
-    msgbox(format("SMEARGLE looks resolute. What is it thinking?"))
-    releaseall
+    msgbox(format("SMEARGLE looks resolute. What is it thinking?"), MSGBOX_NPC)
     end
 }
 
 ///QUEST
 script CeramBaseCamp_Main_NPC3{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
 
         if (flag(FLAG_CERAMBASECAMP_MAIN_BERRY)){
-            msgbox(format("Potions are all well and good, but berries can be used in battle!"))
+            msgbox(format("Potions are all well and good, but berries can be used in battle!"), MSGBOX_NPC)
         } else {
-            msgbox(format("Berries don't grow here, so I brought my own! Would you like some?"))
-            release
+            msgbox(format("Berries don't grow here, so I brought my own! Would you like some?"), MSGBOX_NPC)
             giveitem(ITEM_OCCA_BERRY, 2)
             setflag(FLAG_CERAMBASECAMP_MAIN_BERRY)
         }
             //Regular case
     } else {
         //When Team Somber is there
-        msgbox(format("These thugs took the shopkeeper upstairs! But Arian, the Gym Leader, just went up there to get him back. He's going to teach them a lesson!"))
+        msgbox(format("These thugs took the shopkeeper upstairs! But Arian, the Gym Leader, just went up there to get him back. He's going to teach them a lesson!"), MSGBOX_NPC)
     }
 
-    releaseall
+    end
 }
 
 script CeramBaseCamp_Main_NPC4{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("This isn't really a town, so the supply depot and the management office is all we have."))
+        msgbox(format("This isn't really a town, so the supply depot and the management office is all we have."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("Shh! Don't look here! You'll attract their attention!"))
+        msgbox(format("Shh! Don't look here! You'll attract their attention!"), MSGBOX_NPC)
     }
-
-    releaseall
+    end
 }
 
 //TRADE NPC (later)
 script CeramBaseCamp_Main_NPC5{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_NPC_TRADE)){
-        msgbox(format("My sister will be so happy. She's always wanted her own Pokemon."))
-        releaseall
+        msgbox(format("My sister will be so happy. She's always wanted her own Pokemon."), MSGBOX_NPC)
         end
     }
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
+        lockall
+        faceplayer
         showmonpic(SPECIES_DEWPIDER, 10, 3)
         msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokemon! But I couldn't find any on Route 4."))
         hidemonpic
@@ -399,23 +378,19 @@ script CeramBaseCamp_Main_NPC5{
 
             } else {
                 //else (mon isn't nymble)
-                msgbox(format("Hey, this isn't a Dewpider! I'm not stupid, you know?"))
-                releaseall
-                end
+                msgbox(format("Hey, this isn't a Dewpider! I'm not stupid, you know?"), MSGBOX_NPC)
             }
-           
-
 
         } else {
             //no trade
-            msgbox(format("Oh...well, if you change your mind, you know where I am!"))
+            msgbox(format("Oh...well, if you change your mind, you know where I am!"), MSGBOX_NPC)
         }
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Arian to put these crooks in their place!"))
+        msgbox(format("I can't wait for Arian to put these crooks in their place!"), MSGBOX_NPC)
     }
 
-    releaseall
+    end
 }
 
 
@@ -447,18 +422,14 @@ script CeramBaseCamp_Main_NPC5{
 	// end
 
 script CeramBaseCamp_Main_NPC6{
-    lockall
-    faceplayer
-
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."))
+        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Arian to put these crooks in their place!"))
+        msgbox(format("I can't wait for Arian to put these crooks in their place!"), MSGBOX_NPC)
     }
-
-    releaseall
+    end
 }
 
 

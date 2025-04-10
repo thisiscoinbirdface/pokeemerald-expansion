@@ -1,17 +1,13 @@
 mapscripts FennilahlTown_House1_MapScripts{}
 
 script FennilahlTown_House1_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("This town is too small for me!"))
-    releaseall
+    msgbox(format("This town is too small for me!"), MSGBOX_NPC)
+    end
 }
 
 script FennilahlTown_House1_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("My sister wants to visit Gastree City but crossing Route 3 isn't so easy."))
-    releaseall
+    msgbox(format("My sister wants to visit Gastree City but crossing Route 3 isn't so easy."), MSGBOX_NPC)
+    end
 }
 
 

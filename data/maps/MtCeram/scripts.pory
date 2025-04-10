@@ -436,31 +436,27 @@ script MtCeram_TrainerBattle_GRUNT2 {
 
 //NPC Scripts
 script MtCeram_EventScript_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("If I jump over this ledge, I won't be able to return! So I do my jogging here."))
-    releaseall
+    msgbox(format("If I jump over this ledge, I won't be able to return! So I do my jogging here."), MSGBOX_NPC)
+    end
 }
 
+//Change this guys dialogue
 script MtCeram_EventScript_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("I saw a LARVESTA here the other day! But they're very rare. The constant SIZZLIPEDE and VENIPEDE fighting scare them away."))
-    releaseall
+    msgbox(format("I saw a Larvesta here the other day! But they're very rare. The constant Sizzlipede and Venipede fighting scare them away."))
+    end
 }
 
 script MtCeram_EventScript_NPC3{
-    lockall
-    faceplayer
+
     if (flag(FLAG_MT_CERAM_FRESH_WATER)){
-        msgbox(format("Oof! This place is unbearably hot!"))   
+        msgbox(format("Oof! This place is unbearably hot!"), MSGBOX_NPC)   
     } else {
-        msgbox(format("Oof! This place is unbearably hot! Don't forget to stay hydrated!"))
+        msgbox(format("Oof! This place is unbearably hot! Don't forget to stay hydrated!"), MSGBOX_NPC)
         giveitem(ITEM_FRESH_WATER)
         setflag(FLAG_MT_CERAM_FRESH_WATER)
     }
 
-    releaseall
+    end
 }
 
 

@@ -1,31 +1,27 @@
 mapscripts FennilahlTown_MapScripts {}
 
 script FennilahlTown_EventScript_MartEmployeeRoadBlock {
-    lockall
-    faceplayer
-    msgbox(format("I'm the chauffeur for the detectives in charge of the Tenebris disappearance. They're in Carabrue Town right now speaking to the lab staff."))
-    releaseall
+    msgbox(format("I'm the chauffeur for the detectives in charge of the Tenebris disappearance. They're in Carabrue Town right now speaking to the lab staff."), MSGBOX_NPC)
+    end
 }
 
 script FennilahlTown_EventScript_Man {
-    lockall
-    faceplayer
-    msgbox(format("I was watching the news the other day. They say that the Pokemon Psychologist has gone missing. Who? Professor Tenebris of course!"))
-    releaseall
+    msgbox(format("I was watching the news the other day. They say that the Pokemon Psychologist has gone missing. Who? Professor Tenebris of course!"), MSGBOX_NPC)
     end
 }
 
 script FennilahlTown_EventScript_Woman {
-    lockall
-    faceplayer
     if (flag(FLAG_FENNILAHL_CUTEMONGIFT)){
-        msgbox(format("If your Pokemon hold a SOOTHE BELL, they'll become attached to you faster!"))
+        msgbox(format("If your Pokemon hold a SOOTHE BELL, they'll become attached to you faster!"), MSGBOX_NPC)
     } else {
+        lockall
+        faceplayer
         msgbox(format("My, that's such a cute little Pokemon you have with you! Here, use this and treat it with care, okay?"))
         giveitem(ITEM_SOOTHE_BELL)
         setflag(FLAG_FENNILAHL_CUTEMONGIFT)
+        releaseall
     }
-    releaseall
+    end
 }
 
 script FennilahlTown_EventScript_HikerTunnel {

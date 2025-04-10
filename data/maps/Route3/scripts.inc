@@ -49,48 +49,36 @@ Route3_TrainerBattle_Chara::
 
 Route3_NPC1::
 # 54 "data//maps/Route3/scripts.pory"
-	lockall
-# 55 "data//maps/Route3/scripts.pory"
-	faceplayer
-# 56 "data//maps/Route3/scripts.pory"
-	msgbox Route3_NPC1_Text_0
-# 57 "data//maps/Route3/scripts.pory"
-	releaseall
-	return
+	msgbox Route3_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 Route3_NPC2::
-# 61 "data//maps/Route3/scripts.pory"
-	lockall
-# 62 "data//maps/Route3/scripts.pory"
-	faceplayer
-# 63 "data//maps/Route3/scripts.pory"
-	msgbox Route3_NPC2_Text_0
-# 64 "data//maps/Route3/scripts.pory"
-	releaseall
-	return
+# 59 "data//maps/Route3/scripts.pory"
+	msgbox Route3_NPC2_Text_0, MSGBOX_NPC
+	end
 
 
 Route3_Skarmory_Trigger::
-# 75 "data//maps/Route3/scripts.pory"
+# 71 "data//maps/Route3/scripts.pory"
 	goto_if_set FLAG_ROUTE3_SKARMORY_WILD, Route3_Skarmory_Trigger_2
-# 76 "data//maps/Route3/scripts.pory"
+# 72 "data//maps/Route3/scripts.pory"
 	lockall
-# 77 "data//maps/Route3/scripts.pory"
+# 73 "data//maps/Route3/scripts.pory"
 	faceplayer
-# 78 "data//maps/Route3/scripts.pory"
+# 74 "data//maps/Route3/scripts.pory"
 	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
-# 79 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 	applymovement LOCALID_SKARM, Route3_Skarmory_Trigger_Movement_0
-# 80 "data//maps/Route3/scripts.pory"
+# 76 "data//maps/Route3/scripts.pory"
 	waitmovement 0
-# 81 "data//maps/Route3/scripts.pory"
+# 77 "data//maps/Route3/scripts.pory"
 	delay 16
-# 82 "data//maps/Route3/scripts.pory"
+# 78 "data//maps/Route3/scripts.pory"
 	msgbox Route3_Skarmory_Trigger_Text_0
-# 84 "data//maps/Route3/scripts.pory"
+# 80 "data//maps/Route3/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 86 "data//maps/Route3/scripts.pory"
+# 82 "data//maps/Route3/scripts.pory"
 	releaseall
 	end
 
@@ -99,75 +87,75 @@ Route3_Skarmory_Trigger_2:
 
 
 Route3_Skarmory_Battle::
-# 91 "data//maps/Route3/scripts.pory"
+# 87 "data//maps/Route3/scripts.pory"
 	lockall
-# 92 "data//maps/Route3/scripts.pory"
+# 88 "data//maps/Route3/scripts.pory"
 	faceplayer
-# 93 "data//maps/Route3/scripts.pory"
+# 89 "data//maps/Route3/scripts.pory"
 	playmoncry SPECIES_SKARMORY, CRY_MODE_NORMAL
-# 94 "data//maps/Route3/scripts.pory"
+# 90 "data//maps/Route3/scripts.pory"
 	applymovement LOCALID_SKARM, Route3_Skarmory_Trigger_Movement_0
-# 95 "data//maps/Route3/scripts.pory"
+# 91 "data//maps/Route3/scripts.pory"
 	waitmovement 0
-# 96 "data//maps/Route3/scripts.pory"
+# 92 "data//maps/Route3/scripts.pory"
 	delay 16
-# 97 "data//maps/Route3/scripts.pory"
+# 93 "data//maps/Route3/scripts.pory"
 	msgbox Route3_Skarmory_Battle_Text_0
-# 98 "data//maps/Route3/scripts.pory"
+# 94 "data//maps/Route3/scripts.pory"
 	release
-# 100 "data//maps/Route3/scripts.pory"
+# 96 "data//maps/Route3/scripts.pory"
 	setwildbattle SPECIES_SKARMORY, 12
-# 101 "data//maps/Route3/scripts.pory"
+# 97 "data//maps/Route3/scripts.pory"
 	dowildbattle
-# 104 "data//maps/Route3/scripts.pory"
+# 100 "data//maps/Route3/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 105 "data//maps/Route3/scripts.pory"
+# 101 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route3_Skarmory_Battle_2
 Route3_Skarmory_Battle_1:
-# 110 "data//maps/Route3/scripts.pory"
+# 106 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route3_Skarmory_Battle_5
 Route3_Skarmory_Battle_4:
-# 115 "data//maps/Route3/scripts.pory"
+# 111 "data//maps/Route3/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route3_Skarmory_Battle_8
 Route3_Skarmory_Battle_7:
-# 120 "data//maps/Route3/scripts.pory"
+# 116 "data//maps/Route3/scripts.pory"
 	releaseall
 	end
 
 Route3_Skarmory_Battle_2:
-# 106 "data//maps/Route3/scripts.pory"
+# 102 "data//maps/Route3/scripts.pory"
 	removeobject LOCALID_SKARM
-# 107 "data//maps/Route3/scripts.pory"
+# 103 "data//maps/Route3/scripts.pory"
 	setflag FLAG_ROUTE3_SKARMORY_WILD
-# 108 "data//maps/Route3/scripts.pory"
+# 104 "data//maps/Route3/scripts.pory"
 	releaseall
 	goto Route3_Skarmory_Battle_1
 
 Route3_Skarmory_Battle_5:
-# 111 "data//maps/Route3/scripts.pory"
+# 107 "data//maps/Route3/scripts.pory"
 	removeobject LOCALID_SKARM
-# 112 "data//maps/Route3/scripts.pory"
+# 108 "data//maps/Route3/scripts.pory"
 	setflag FLAG_ROUTE3_SKARMORY_WILD
-# 113 "data//maps/Route3/scripts.pory"
+# 109 "data//maps/Route3/scripts.pory"
 	releaseall
 	goto Route3_Skarmory_Battle_4
 
 Route3_Skarmory_Battle_8:
-# 116 "data//maps/Route3/scripts.pory"
+# 112 "data//maps/Route3/scripts.pory"
 	msgbox Route3_Skarmory_Battle_Text_1
-# 117 "data//maps/Route3/scripts.pory"
+# 113 "data//maps/Route3/scripts.pory"
 	release
 	goto Route3_Skarmory_Battle_7
 
 
-# 79 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 Route3_Skarmory_Trigger_Movement_0:
-# 79 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 	emote_exclamation_mark
-# 79 "data//maps/Route3/scripts.pory"
+# 75 "data//maps/Route3/scripts.pory"
 	jump_in_place_left
 	step_end
 
@@ -234,26 +222,26 @@ Route3_TrainerBattle_Chara_Text_2:
 	.string "We love our Swablu!$"
 
 Route3_NPC1_Text_0:
-# 56 "data//maps/Route3/scripts.pory"
+# 54 "data//maps/Route3/scripts.pory"
 	.string "I love the high-altitude winds! I feel\n"
 	.string "one with the hills.$"
 
 Route3_NPC2_Text_0:
-# 63 "data//maps/Route3/scripts.pory"
+# 59 "data//maps/Route3/scripts.pory"
 	.string "I was supposed to go to a marathon, but\n"
 	.string "I don't think this is where it starts.$"
 
 Route3_Skarmory_Trigger_Text_0:
-# 82 "data//maps/Route3/scripts.pory"
+# 78 "data//maps/Route3/scripts.pory"
 	.string "SKARMORY stares defiantly at you. It\n"
 	.string "roars! Could be dangerous to approach.$"
 
 Route3_Skarmory_Battle_Text_0:
-# 97 "data//maps/Route3/scripts.pory"
+# 93 "data//maps/Route3/scripts.pory"
 	.string "The wild SKARMORY roars and attacks!$"
 
 Route3_Skarmory_Battle_Text_1:
-# 116 "data//maps/Route3/scripts.pory"
+# 112 "data//maps/Route3/scripts.pory"
 	.string "The SKARMORY preens its steely\n"
 	.string "feathers victoriously. Better not\l"
 	.string "disturb it again!$"

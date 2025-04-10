@@ -1,10 +1,8 @@
 mapscripts Route1_MapScripts {}
 
 script Route1_EventScripts_RandomDude {
-    lockall
-    faceplayer
-    msgbox(format("A Pokemon that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"))
-    releaseall
+    msgbox(format("A Pokemon that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"), MSGBOX_NPC)
+    end
 }
 
 script Route1_TrainerBattle_A {

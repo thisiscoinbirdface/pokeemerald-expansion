@@ -1,10 +1,8 @@
 mapscripts GastreeCity_House3_MapScripts{}
 
 script GastreeCity_House3_NPC1{
-    lockall
-    faceplayer    
-    msgbox(format("The big news of the week is Professor Tenebris disappearing. She gave my son his first Pokemon - a KECLEON!\p...\pSince his mother left, he's been outside all day, training with KECLEON."))
-    release
+    msgbox(format("The big news of the week is Professor Tenebris disappearing. She gave my son his first Pokemon - a KECLEON!\p...\pSince his mother left, he's been outside all day, training with KECLEON."), MSGBOX_NPC)
+    end
 }
 
 

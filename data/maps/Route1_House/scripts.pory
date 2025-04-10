@@ -1,25 +1,21 @@
 mapscripts Route1_House_MapScripts {}
 
 script Route1_House_RandomDude {
-    lockall
-    faceplayer
-    
     goto_if_quest_complete(QUEST_ROUTE1_PECHA_BERRY, Route1_House_Quest_Done)
     goto_if_quest_active(QUEST_ROUTE1_PECHA_BERRY, Route1_House_QuestInProgress)
     goto_if_quest_inactive(QUEST_ROUTE1_PECHA_BERRY, Route1_House_StartQuest)
-
-    releaseall
     end
 }
 
 script Route1_House_Quest_Done{
-    msgbox(format("I won't let AZURILL eat any bad food again!"))
-    releaseall
+    msgbox(format("I won't let AZURILL eat any bad food again!"), MSGBOX_NPC)
     end
 }
 
 
 script Route1_House_QuestInProgress{
+    lockall
+    faceplayer
     msgbox(format("Have you brought a PECHA BERRY?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         checkitem(ITEM_PECHA_BERRY)
@@ -59,13 +55,15 @@ script Route1_House_QuestInProgress{
 }
 
 script Route1_House_StartQuest{
-     msgbox(format("I think my poor baby AZURILL ate something bad and now has food poisoning! I wish I had a PECHA BERRY to cure her. Say, trainer, good timing. Would you be willing to find a PECHA BERRY for my baby?"), MSGBOX_YESNO)
+    lockall
+    faceplayer
+    msgbox(format("I think my poor baby AZURILL ate something bad and now has food poisoning! I wish I had a PECHA BERRY to cure her. Say, trainer, good timing. Would you be willing to find a PECHA BERRY for my baby?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         msgbox(format("Oh, thank you so much. You're very kind. I'll be waiting here."))
         startquest(QUEST_ROUTE1_PECHA_BERRY)
     } else {
-            msgbox(format("You'd watch AZURILL suffer? You're so cold-hearted!"))        
+        msgbox(format("You'd watch AZURILL suffer? You're so cold-hearted!"))        
     }
     releaseall
     end
@@ -74,16 +72,14 @@ script Route1_House_StartQuest{
 
 
 script Route1_House_Azurill {
-    lockall
     playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
     questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
 
     if (var(VAR_RESULT) == 1) {
-        msgbox(format("AZURILL looks full of joy! Must be the love of its trainer...or is it my PECHA BERRY?"))
+        msgbox(format("AZURILL looks full of joy! Must be the love of its trainer...or is it the PECHA BERRY?"), MSGBOX_NPC)
     } else {
-        msgbox(format("AZURILL: zu... \pAZURILL looks quite sick.")) 
+        msgbox(format("AZURILL: zu... \pAZURILL looks quite sick."), MSGBOX_NPC) 
     }
-    releaseall
     end
 }
 

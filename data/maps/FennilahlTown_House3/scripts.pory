@@ -2,35 +2,27 @@ mapscripts FennilahlTown_House3_MapScripts{}
 
 
 script FennilahlTown_House3_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Did you know that some Pokemon can Mega evolve?"))
-    releaseall
+    msgbox(format("Did you know that some Pokemon can Mega evolve?"), MSGBOX_NPC)
+    end
 }
 
 
 script FennilahlTown_House3_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("My Rockruff's ability is OWN TEMPO! I caught it on Route 2, south of here."))
-    releaseall
+    msgbox(format("My Rockruff's ability is OWN TEMPO! I caught it on Route 2, south of here."), MSGBOX_NPC)
+    end
 }
 
 script FennilahlTown_House3_Rockruff{
-    lockall
-    faceplayer
     playmoncry(SPECIES_ROCKRUFF, CRY_MODE_NORMAL)
-    msgbox(format("Rockruff is living life at its own pace!"))
-    releaseall
+    msgbox(format("Rockruff is living life at its own pace!"), MSGBOX_NPC)
+    end
 }
 
 
 script FennilahlTown_House3_Mawile{
-    lockall
-    faceplayer
     playmoncry(SPECIES_MAWILE, CRY_MODE_NORMAL)
-    msgbox(format("Mawile is holding a weird glowing stone...I wonder what it does?"))
-    releaseall
+    msgbox(format("Mawile is holding a weird glowing stone...I wonder what it does?"), MSGBOX_NPC)
+    end
 }
 
 

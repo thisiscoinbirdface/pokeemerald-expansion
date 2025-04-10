@@ -38,31 +38,23 @@ script CarabrueTown_Sign_ChampionHouse{
 }
 
 script CarabrueTown_EventScript_NPC1{
-    lockall
-    faceplayer
     if (flag(FLAG_CARABRUE_POLICE)){
-        msgbox(format("Looks like the police went away. I hope they got the evidence they needed."))
+        msgbox(format("Looks like the police went away. I hope they got the evidence they needed."), MSGBOX_NPC)
     } else {
-        msgbox(format("Psst - {PLAYER}! See those cops over there? They came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."))
+        msgbox(format("Psst - {PLAYER}! See those cops over there? They came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."), MSGBOX_NPC)
     }
-    releaseall
+    end
 }
 
 script CarabrueTown_EventScript_NPC2{
-    lockall
-    faceplayer
-    playse(SE_LEDGE)
-
-    msgbox(format("My Chikorita and I love how cosy Carabrue Town is! That's because it's nestled deep in the southern hills of Cormoria."))
-    releaseall
+    msgbox(format("My Chikorita and I love how cosy Carabrue Town is! That's because it's nestled deep in the southern hills of Cormoria."), MSGBOX_NPC)
+    end
 }
 
 script CarabrueTown_Chikorita{
-    lockall
-    faceplayer
     playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
-    msgbox(format("Chikorita is happy!"))
-    releaseall
+    msgbox(format("Chikorita is happy!"), MSGBOX_NPC)
+    end
 }
 
 

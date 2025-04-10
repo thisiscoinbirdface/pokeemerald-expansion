@@ -51,17 +51,13 @@ script Route3_TrainerBattle_Chara {
 ///NPCs
 
 script Route3_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("I love the high-altitude winds! I feel one with the hills."))
-    releaseall
+    msgbox(format("I love the high-altitude winds! I feel one with the hills."), MSGBOX_NPC)
+    end
 }
 
 script Route3_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("I was supposed to go to a marathon, but I don't think this is where it starts."))
-    releaseall
+    msgbox(format("I was supposed to go to a marathon, but I don't think this is where it starts."), MSGBOX_NPC)
+    end
 }
 
 

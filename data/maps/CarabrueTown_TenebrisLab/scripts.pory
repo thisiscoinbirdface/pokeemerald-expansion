@@ -15,7 +15,7 @@ script CarabrueTown_TenebrisLab_EventScript_OnWarp{
     removeobject(8)
     removeobject(9)
     removeobject(10)
-}
+}   
 
 script CarabrueTown_TenebrisLab_EventScript_Start {
 
@@ -498,55 +498,44 @@ script CarabrueTown_TenebrisLab_EventScript_Rue{
 
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist1{
-    lockall
-    faceplayer
-    msgbox(format("There's so much work that I don't even know where to start! So I'm just staring at all these books instead."))
-    releaseall
+    msgbox(format("There's so much work that I don't even know where to start! So I'm just staring at all these books instead."), MSGBOX_NPC)
+    end
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist2{
-    lockall
-    faceplayer
-    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."))
-    releaseall
+    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."), MSGBOX_NPC)
+    end
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist3{
-    lockall
-    faceplayer
     if (flag(FLAG_LAB_CALLTOACTION)){
-        msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"))
+        msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokemon. But they're coming in the next batch of supplies! Just be patient."))
+        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokemon. But they're coming in the next batch of supplies! Just be patient."), MSGBOX_NPC)
     }
-    releaseall
+    end
 }
 
 
 
 script CarabrueTown_TenebrisLab_Gardevoir{
-    lockall
-    faceplayer
-    playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
-
     if (flag(FLAG_TENEBRIS_GARDEVOIR)){
-        msgbox(format("GARDEVOIR regards you intently..."))  
+        msgbox(format("GARDEVOIR regards you intently..."), MSGBOX_NPC)  
     } else {
-        msgbox(format("GARDEVOIR regards you intently...\pSomething floats into your hand!"))
+        playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
+        msgbox(format("GARDEVOIR regards you intently...\pSomething floats into your hand!"), MSGBOX_NPC)
+        lockall
         giveitem(ITEM_STARF_BERRY)
         msgbox(format("Was this her way of welcoming a new member of the lab?\pThank you, GARDEVOIR!"))
         setflag(FLAG_TENEBRIS_GARDEVOIR)              
+        releaseall     
     }
-    releaseall
     end
 }
 
 script CarabrueTown_TenebrisLab_Metagross{
-    lockall
-    faceplayer
     playmoncry(SPECIES_METAGROSS, CRY_MODE_NORMAL)
-    msgbox(format("It's Asst. Prof. Rue's METAGROSS. It's so intimidating!"))
-    releaseall
+    msgbox(format("It's Asst. Prof. Rue's METAGROSS. It's so intimidating!"), MSGBOX_NPC)
     end
 }
 

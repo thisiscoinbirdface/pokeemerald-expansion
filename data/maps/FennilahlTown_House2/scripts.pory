@@ -2,10 +2,8 @@ mapscripts FennilahlTown_House2_MapScripts{}
 
 
 script FennilahlTown_House2_NPC{
-    lockall
-    faceplayer
-    msgbox(format("I just moved into my dream retirement house! But my furniture hasn't arrived yet."))
-    releaseall
+    msgbox(format("I just moved into my dream retirement house! But my furniture hasn't arrived yet."), MSGBOX_NPC)
+    end
 }
 
 
