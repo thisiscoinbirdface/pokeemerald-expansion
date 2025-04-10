@@ -386,6 +386,8 @@ VilethornWoods_NPC3::
 # 290 "data//maps/VilethornWoods/scripts.pory"
 	giveitem ITEM_SCOPE_LENS
 # 291 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 292 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_ITEM
 VilethornWoods_NPC3_1:
 	end

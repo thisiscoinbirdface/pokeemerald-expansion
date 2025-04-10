@@ -15,7 +15,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     msgbox(format("...\p...\p...\pKOHLA: I saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
     release
     //Turns, thanks player for telling him what he needs
-    applymovement(LOCALID_KOHLA, moves(face_up))
+    faceplayer
     waitmovement(0)
     delay(24)
     msgbox(format("KOHLA: {PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))

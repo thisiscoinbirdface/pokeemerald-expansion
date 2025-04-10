@@ -35,7 +35,7 @@ FennilahlTown_EventScript_Woman::
 # 26 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_CUTEMONGIFT
 # 27 "data//maps/FennilahlTown/scripts.pory"
-	releaseall
+	msgbox FennilahlTown_EventScript_Woman_Text_0, MSGBOX_NPC
 FennilahlTown_EventScript_Woman_1:
 	end
 

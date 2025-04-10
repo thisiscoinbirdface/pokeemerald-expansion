@@ -210,6 +210,11 @@ script WhiteSign_SilversunCity_Sewers{
     end
 }
 
+script WhiteSign_SilversunCity_Tutor{
+    msgbox(format("Move Maniac.\nMaster of Myriad Moves"), MSGBOX_SIGN)
+    end
+}
+
 script WhiteSign_SilversunCity_Gym{
     msgbox(format("Silversun Gym\nLeader: Gloria."), MSGBOX_SIGN)
     end

@@ -7,18 +7,16 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
 
     //Pre-quest
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."))
-        release
+        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
         end
     }
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."))
-        release
+        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
         end
     }    
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
-        msgbox(format("This book is hard to understand! I wish I could touch all these Pokemon so I know what they feel like. But the teacher says that's dangerous too! What if I touch a PINCURCHIN or a CORSOLA?"))
+        msgbox(format("This book is hard to understand! I wish I could touch all these Pokemon so I know what they feel like. But the teacher says that's dangerous too! What if I touch a Pincurchin or a Corsola?"), MSGBOX_NPC)
         end
     }
 
@@ -42,7 +40,7 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
                     setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3)
                 }
             } else {
-                msgbox(format("Hey, you didn't bring a book!"))
+                msgbox(format("Hey, you didn't bring a book!"), MSGBOX_NPC)
             }
         }
 
@@ -65,7 +63,7 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
                 release  
                 setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
             } else {
-                msgbox(format("Hey, you didn't bring a book!"))
+                msgbox(format("Hey, you didn't bring a book!"), MSGBOX_NPC)
             }
         }
 
@@ -74,14 +72,12 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
     }
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
-        msgbox(format("I want a book on all the Pokemon in Cormoria!"))
-        release
+        msgbox(format("I want a book on all the Pokemon in Cormoria!"), MSGBOX_NPC)
         end
     }
 
-    msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"))
     setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
-    releaseall
+    msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"), MSGBOX_NPC)
     end
 }
 
@@ -163,32 +159,29 @@ script SilversunCity_Book4{
 
 
 script SilversunCity_BlindOrphanage_BrailleGameStart{
+    if (flag(FLAG_SILVERSUN_BRAILLE_1_DONE)){
+        msgbox(format("Sheena is preparing for her next test."), MSGBOX_NPC)
+        end
+    }
+
     lockall
     faceplayer
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("I work at the SILVERSUN THEATRE, but on the weekends, I teach braille to the children here. It's very fulfilling!"))
+        msgbox(format("I work at the Silversun Theater, but on the weekends, I teach braille to the children here. It's very fulfilling!"))
         release
         end
     }
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("I work at the SILVERSUN THEATRE, but on the weekends, I teach braille to the children here. It's very fulfilling!"))
+        msgbox(format("I work at the Silversun Theater, but on the weekends, I teach braille to the children here. It's very fulfilling!"))
         release
         end
     }    
 
-    if (flag(FLAG_SILVERSUN_BRAILLE_1_DONE)){
-        msgbox(format("SHEENA is preparing for her next test."))
-        applymovement(5, moves(face_left))
-        waitmovement(0)        
-        release
-        end
-    }
-
-    msgbox(format("TEACHER: SHEENA is about to take a braille test. Would you like to volunteer and help out?"), MSGBOX_YESNO)
+    msgbox(format("TEACHER: Sheena is about to take a braille test. Would you like to volunteer and help out?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
-        msgbox(format("TEACHER: Okay.\nSHEENA, let's continue."))
+        msgbox(format("TEACHER: Okay.\nSheena, let's continue."))
         release
         applymovement(5, moves(face_left))
         waitmovement(0)
@@ -198,11 +191,11 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
         end
     }
 
-    msgbox(format("TEACHER: Excellent. SHEENA has to read three sentences in braille correctly. I'll give SHEENA the questions, and you keep a tally of her answers, okay?"))
+    msgbox(format("TEACHER: Excellent. Sheena has to read three sentences in braille correctly. I'll give Sheena the questions, and you keep a tally of her answers, okay?"))
     release
     delay(30)
     applymovement(5, moves(face_left))
-    msgbox(format("TEACHER: Are you ready SHEENA?"))
+    msgbox(format("TEACHER: Are you ready Sheena?"))
     release
     delay(24)
     applymovement(8, moves(jump_in_place_right))
@@ -249,9 +242,10 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "0/3", "1/3", "2/3", "3/3")
 
     if (var(VAR_RESULT) == 1){
-        msgbox(format("TEACHER: Yes...looks like SHEENA needs more practice.\pTEACHER: Thanks for volunteering.\pSHEENA: Thank you!"))
+        msgbox(format("TEACHER: Yes...looks like Sheena needs more practice.\pTEACHER: Thanks for volunteering.\pSHEENA: Thank you!"))
         release 
 
+        setflag(FLAG_SILVERSUN_BRAILLE_1_DONE)
         //If the other activity is done, mark the main quest as complete
         if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
             setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3)
@@ -360,12 +354,16 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     }
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 3){
-        msgbox(format("The orphanage is really impressed with your work, {PLAYER}. We're ever so grateful. Please accept something as a token of your time."))
-        release
+        msgbox(format("The orphanage is really impressed with your work, {PLAYER}. We're ever so grateful. Please accept something as a token of your time. Since we often receive donations, we have many things lying around. Perhaps you may find one of these useful?"))
+        dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WISE GLASSES", "MUSCLE BAND")
 
-
-
+        if (var(VAR_RESULT) == 0){
+            giveitem(ITEM_WISE_GLASSES)
+        } else{
+            giveitem(ITEM_MUSCLE_BAND)
+        }
         setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4)
+        msgbox(format("Please visit us again!"), MSGBOX_NPC)
     }
 
 
@@ -380,7 +378,6 @@ script SilversunCity_BlindOrphanage_OldManQuest{
         if (var(VAR_RESULT) == 1){
             msgbox(format("Excellent! Kindness like yours is what keeps us going. You won't have to do much - just lend a hand here and there. Please ask around for people in need of help. Come speak to me again once you're finished."))
             release
-            giveitem(ITEM_WISE_GLASSES)
             //start quest
             setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2)
         } else {

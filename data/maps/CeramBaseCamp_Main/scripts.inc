@@ -403,7 +403,7 @@ CeramBaseCamp_Main_Smeargle::
 CeramBaseCamp_Main_NPC3::
 # 299 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC3_2
-# 311 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 312 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC3_Text_2, MSGBOX_NPC
 CeramBaseCamp_Main_NPC3_1:
 	end
@@ -416,6 +416,8 @@ CeramBaseCamp_Main_NPC3_2:
 # 305 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	giveitem ITEM_OCCA_BERRY, 2
 # 306 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+# 307 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_MAIN_BERRY
 	goto CeramBaseCamp_Main_NPC3_1
 
@@ -426,122 +428,122 @@ CeramBaseCamp_Main_NPC3_5:
 
 
 CeramBaseCamp_Main_NPC4::
-# 318 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 319 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC4_2
-# 323 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 324 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC4_Text_1, MSGBOX_NPC
 CeramBaseCamp_Main_NPC4_1:
 	end
 
 CeramBaseCamp_Main_NPC4_2:
-# 320 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 321 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC4_Text_0, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC4_1
 
 
 CeramBaseCamp_Main_NPC5::
-# 330 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 331 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_NPC_TRADE, CeramBaseCamp_Main_NPC5_2
-# 335 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 336 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC5_5
-# 391 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 392 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_6, MSGBOX_NPC
 CeramBaseCamp_Main_NPC5_4:
 	end
 
 CeramBaseCamp_Main_NPC5_2:
-# 331 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 332 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_0, MSGBOX_NPC
 	end
 
 CeramBaseCamp_Main_NPC5_5:
-# 337 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	lockall
 # 338 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	faceplayer
+	lockall
 # 339 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	showmonpic SPECIES_DEWPIDER, 10, 3
+	faceplayer
 # 340 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_NPC5_Text_1
+	showmonpic SPECIES_DEWPIDER, 10, 3
 # 341 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	hidemonpic
+	msgbox CeramBaseCamp_Main_NPC5_Text_1
 # 342 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_NPC5_Text_2, MSGBOX_YESNO
+	hidemonpic
 # 343 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_NPC5_Text_2, MSGBOX_YESNO
+# 344 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Main_NPC5_8
-# 387 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 388 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_5, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC5_4
 
 CeramBaseCamp_Main_NPC5_8:
-# 347 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	setvar VAR_0x8008, INGAME_TRADE_WIMPOD
 # 348 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	setvar VAR_0x8008, INGAME_TRADE_WIMPOD
+# 349 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x8008
-# 350 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
 # 351 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+# 352 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	copyvar VAR_0x8009, VAR_RESULT
-# 355 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	special ChoosePartyMon
 # 356 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	waitstate
+	special ChoosePartyMon
 # 357 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	waitstate
+# 358 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	copyvar VAR_0x800A, VAR_0x8004
-# 360 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 361 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq CeramBaseCamp_Main_NPC5_12
-# 366 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
 # 367 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x8005, VAR_0x800A
 # 368 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	copyvar VAR_0x800B, VAR_RESULT
+	specialvar VAR_RESULT, GetTradeSpecies
 # 369 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	copyvar VAR_0x800B, VAR_RESULT
+# 370 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	compare VAR_RESULT, VAR_0x8009
 	goto_if_eq CeramBaseCamp_Main_NPC5_14
-# 382 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 383 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_4, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC5_4
 
 CeramBaseCamp_Main_NPC5_12:
-# 361 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_NPC5_Text_2
 # 362 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	msgbox CeramBaseCamp_Main_NPC5_Text_2
+# 363 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Main_NPC5_14:
-# 371 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
 # 372 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
+	copyvar VAR_0x8004, VAR_0x8008
 # 373 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	special CreateInGameTradePokemon
+	copyvar VAR_0x8005, VAR_0x800A
 # 374 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	special DoInGameTradeScene
+	special CreateInGameTradePokemon
 # 375 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	waitstate
+	special DoInGameTradeScene
 # 376 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	msgbox CeramBaseCamp_Main_NPC5_Text_3
+	waitstate
 # 377 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	release
+	msgbox CeramBaseCamp_Main_NPC5_Text_3
 # 378 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+# 379 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_NPC_TRADE
 	goto CeramBaseCamp_Main_NPC5_4
 
 
 CeramBaseCamp_Main_NPC6::
-# 426 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 427 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC6_2
-# 431 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 432 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_6, MSGBOX_NPC
 CeramBaseCamp_Main_NPC6_1:
 	end
 
 CeramBaseCamp_Main_NPC6_2:
-# 428 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 429 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC6_Text_0, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC6_1
 
@@ -953,61 +955,61 @@ CeramBaseCamp_Main_NPC3_Text_1:
 	.string "own! Would you like some?$"
 
 CeramBaseCamp_Main_NPC3_Text_2:
-# 311 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 312 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "These thugs took the shopkeeper\n"
 	.string "upstairs! But Arian, the Gym Leader,\l"
 	.string "just went up there to get him back. He's\l"
 	.string "going to teach them a lesson!$"
 
 CeramBaseCamp_Main_NPC4_Text_0:
-# 320 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 321 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "This isn't really a town, so the supply\n"
 	.string "depot and the management office is all\l"
 	.string "we have.$"
 
 CeramBaseCamp_Main_NPC4_Text_1:
-# 323 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 324 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Shh! Don't look here! You'll attract\n"
 	.string "their attention!$"
 
 CeramBaseCamp_Main_NPC5_Text_0:
-# 331 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 332 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "My sister will be so happy. She's always\n"
 	.string "wanted her own Pokemon.$"
 
 CeramBaseCamp_Main_NPC5_Text_1:
-# 340 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 341 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I want to gift my sister a Dewpider. It's\n"
 	.string "her favourite Pokemon! But I couldn't\l"
 	.string "find any on Route 4.$"
 
 CeramBaseCamp_Main_NPC5_Text_2:
-# 342 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 343 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "If you have one, will you trade it for my\n"
 	.string "Wimpod?$"
 
 CeramBaseCamp_Main_NPC5_Text_3:
-# 376 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 377 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Thank you! Please take good care of my\n"
 	.string "Wimpod.$"
 
 CeramBaseCamp_Main_NPC5_Text_4:
-# 382 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 383 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Hey, this isn't a Dewpider! I'm not\n"
 	.string "stupid, you know?$"
 
 CeramBaseCamp_Main_NPC5_Text_5:
-# 387 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 388 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Oh...well, if you change your mind, you\n"
 	.string "know where I am!$"
 
 CeramBaseCamp_Main_NPC5_Text_6:
-# 391 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 392 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I can't wait for Arian to put these\n"
 	.string "crooks in their place!$"
 
 CeramBaseCamp_Main_NPC6_Text_0:
-# 428 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 429 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "On the other side of Mt. Ceram is\n"
 	.string "Silversun City. I hear the trek down\l"
 	.string "from the summit is tough, because the\l"
