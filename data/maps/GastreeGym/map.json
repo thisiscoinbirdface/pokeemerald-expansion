@@ -16,10 +16,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPENSER",
-      "x": 11,
-      "y": 8,
+      "x": 7,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -30,14 +30,14 @@
   ],
   "warp_events": [
     {
-      "x": 10,
+      "x": 6,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY",
       "dest_warp_id": "5"
     },
     {
-      "x": 11,
+      "x": 7,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY",

@@ -3,7 +3,7 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Hold up - nobody's allowed to disturb King Inger - or Kinger for short - while he's training!", "Okay, go disturb the Kinger!")
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!"), "Okay, go disturb the Kinger!")
     msgbox(format("Kinger is what everyone should aspire to be like!"))
     release
     end
@@ -12,7 +12,7 @@ script GastreeGym_TrainerBattle_Skip {
 
 script GastreeGym_TrainerBattle_Jaco {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hey, did the old man send you here? This is the King's training time - get out!", "Fine, don't get out!")
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, format("Hey, did the old man send you here? This is the King's training time - get out!"), "Fine, don't get out!")
     msgbox(format("Inger the King hates losing and trains really hard. That's why I've always got his back...well, except for losing to you."))
     release
     end
@@ -20,21 +20,20 @@ script GastreeGym_TrainerBattle_Jaco {
 }
 
 script GastreeGym_LeaderBattle {
-    lockall
+    if (flag(FLAG_BADGE01_GET)){
+        msgbox(format("Inger: I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
+    } else { //else do the battle
+        call(Common_EventScript_SaveGame)
+
+        lockall
         msgbox(format("Inger: C'mon! C'mon!!\p...\pInger: C'moooooooo--"))
         release
         applymovement(9, moves(jump_in_place_down emote_exclamation_mark))
         waitmovement(0)
         delay(24)
 
-        msgbox(format("Inger: Who're you? A trainer? You're me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."))    
-    faceplayer
+        msgbox(format("Inger: Who're you? A trainer? You're me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
 
-
-    if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("Inger: I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
-    } else { //else do the battle
-        call(Common_EventScript_SaveGame)
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release
     }
