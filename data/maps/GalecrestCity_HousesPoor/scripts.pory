@@ -9,7 +9,7 @@ script GalecrestCity_HousesPoor_NPC1{
         lockall
         faceplayer
         
-        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flue? I can't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
+        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flute? I can't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
 
         //Checkitem
         if (var(VAR_RESULT) == 1){
