@@ -57,7 +57,7 @@ VilethornWoods_Ralts_FirstTrigger::
 # 41 "data//maps/VilethornWoods/scripts.pory"
 	waitmovement 0
 # 45 "data//maps/VilethornWoods/scripts.pory"
-	removeobject 20
+	removeobject LOCALID_RALTS1
 # 46 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_HIDE_VILETHORN_RALTS_1
 # 47 "data//maps/VilethornWoods/scripts.pory"

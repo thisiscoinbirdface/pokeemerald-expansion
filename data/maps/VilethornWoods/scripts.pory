@@ -42,7 +42,7 @@ script VilethornWoods_Ralts_FirstTrigger{
     
     //Setup flags
     //hide self
-    removeobject(20)
+    removeobject(LOCALID_RALTS1)
     setflag(FLAG_HIDE_VILETHORN_RALTS_1)
     clearflag(FLAG_HIDE_VILETHORN_RALTS_2)
 
@@ -262,8 +262,6 @@ script VilethornWoods_NPC2{
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
                 msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spood from the restaurant? Or maybe this seed I found earlier?"))
-                release
-
                 dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
                 if (var(VAR_RESULT) == 0){
                     giveitem(ITEM_TWISTEDSPOON)
