@@ -28,9 +28,7 @@ mart GalecrestCity_Pokemart_Inventory {
 }
 
 script GalecrestCity_Pokemart_NPC{
-    lockall
-    faceplayer
-    msgbox(format("Each town's Pokemart has unique items on sale. Goes to show that Cormoria's economy isn't fully integrated."))
-    releaseall
+    msgbox(format("Each town's Pokemart has unique items on sale. Goes to show that Cormoria's economy isn't fully integrated."), MSGBOX_NPC)
+    end
 }
 

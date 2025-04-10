@@ -181,42 +181,28 @@ script TestScript_Sewers{
 //NPCs
 //dude at market
 script SilversunCity_Sewers_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("I bet there's no return policy on any defected products."))
-    releaseall
+    msgbox(format("I bet there's no return policy on any defected products."), MSGBOX_NPC)
     end
 }
 //scientist (trade)
 script SilversunCity_Sewers_NPC2{
-    lockall
-    msgbox(format("You see that giant filtration device? I was in charge of building it. My MAGNEMITE and I worked tirelessly to finish it in time. It's our biggest accomplishment!"))
-    releaseall
+    msgbox(format("You see that giant filtration device? I was in charge of building it. My Magnemite and I worked tirelessly to finish it in time. It's our biggest accomplishment!"), MSGBOX_NPC)
     end
 }
 //woman in middle
 script SilversunCity_Sewers_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal."))
-    releaseall
+    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal."), MSGBOX_NPC)
     end
 }
 //dude at market
 script SilversunCity_Sewers_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("Don't tell anyone I'm here! I came to find a way to evolve my SCYTHER."))
-    releaseall
+    msgbox(format("Don't tell anyone I'm here! I came to find a way to evolve my Scyther."), MSGBOX_NPC)
     end
 }
 
 //other man in middle
 script SilversunCity_Sewers_NPC5{
-    lockall
-    faceplayer
-    msgbox(format("All this toxic runoff gets filtered before entering the Hoya River. Then it goes south towards Pelluca City."))
-    releaseall
+    msgbox(format("All this toxic runoff gets filtered before entering the Hoya River. Then it goes south towards Pelluca City."), MSGBOX_NPC)
     end
 }
 

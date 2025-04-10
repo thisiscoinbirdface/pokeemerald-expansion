@@ -26,18 +26,12 @@ CeramBaseCamp_PokemonCenter_EventScript_Nurse::
 
 CeramBaseCamp_PokemonCenter_NPC1::
 # 18 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	lockall
-# 19 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	faceplayer
-# 20 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	msgbox CeramBaseCamp_PokemonCenter_NPC1_Text_0
-# 21 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	releaseall
-	return
+	msgbox CeramBaseCamp_PokemonCenter_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 CeramBaseCamp_PokemonCenter_NPC1_Text_0:
-# 20 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+# 18 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
 	.string "Apparently you can't meet Arian, the\n"
 	.string "Gym Leader, without getting an\l"
 	.string "appointment first.$"

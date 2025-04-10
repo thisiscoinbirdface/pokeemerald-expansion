@@ -80,10 +80,6 @@ script SilversunCity_OnFrame{
 
 
 
-
-
-
-
 //Main detective encounter
 script SilversunCity_EventScript_Detectives{
     lockall
@@ -107,7 +103,7 @@ script SilversunCity_EventScript_Detectives{
         waitmovement(0)
         delay(24)
 
-        msgbox(format("DETECTIVE: Better. Now tell me - what updates have you got?\p...\pDETECTIVE: What!? You saw the Professor with a Team Somber grunt? The grunt was taking the Prof out of Vilethorn Woods?"))
+        msgbox(format("DETECTIVE: Better. Now tell me - what updates have you got?\p...\pDETECTIVE: What!? You overheard a Team Somber grunt talking about the Pofessor?"))
         release
         delay(30)
         msgbox(format("DETECTIVE: This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRUE has given us a separate lead that KOHLA is following up on, so you're on your own on this one.\pGood luck."))
@@ -136,47 +132,29 @@ script SilversunCity_EventScript_Detectives{
 
 //NPCs
 script SilversunCity_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("GLORIA, the city's Gym Leader is also a famous actress! Her work centers around the dark and eerie."))
-    releaseall
+    msgbox(format("GLORIA, the city's Gym Leader is also a famous actress! Her work centers around the dark and eerie."), MSGBOX_NPC)
     end
 }
 script SilversunCity_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("I hear the theater has connections with the underground. People have seen criminal types walk in and out of the backstage area."))
-    releaseall
+    msgbox(format("I hear the theater has connections with the underground. People have seen criminal types walk in and out of the backstage area."), MSGBOX_NPC)
     end
 }
 script SilversunCity_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."))  
-    releaseall
+    msgbox(format("I'm so sad I couldn't get tickets for tonights show! It's supposed to be a live performance of some sort."), MSGBOX_NPC)  
     end
 }
 script SilversunCity_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("We keep seeing wild Koffing and Toxel around...they come from the sewers, I bet."))
-    releaseall
+    msgbox(format("We keep seeing wild Koffing and Toxel around...they come from the sewers, I bet."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_NPC5{
-    lockall
-    faceplayer
-    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon Pokemon haunts the sewers. It's even scarier than all the POISON-type Pokemon down there! They call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving! How scary is that?\p...but its probably just someone's imagination."))
-    releaseall
+    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon Pokemon haunts the sewers. It's even scarier than all the POISON-type Pokemon down there! They call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving! How scary is that?\p...but its probably just someone's imagination."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_NPC6{
-    lockall
-    faceplayer
-    msgbox(format("I caught my Vivillon in Mt. Mirroh! It's always hungry and keeps eating my Lava Cookies..."))
-    releaseall
+    msgbox(format("I caught my Vivillon in Mt. Mirroh! It's always hungry and keeps eating my Lava Cookies..."), MSGBOX_NPC)
     end
 }
 
@@ -190,11 +168,8 @@ script SilversunCity_Murkrow{
 }
 
 script SilversunCity_Meowth{
-    lockall
-    faceplayer
     playmoncry(SPECIES_MEOWTH, CRY_MODE_NORMAL)
-    msgbox(format("Meowth is skulking around the back of the Silversun Theater. It looks angry - better be careful!"))
-    releaseall
+    msgbox(format("Meowth is skulking around the back of the Silversun Theater. It looks angry - better be careful!"), MSGBOX_NPC)
     end
 }
 

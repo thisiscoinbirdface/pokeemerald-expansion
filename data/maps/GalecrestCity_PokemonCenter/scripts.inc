@@ -26,37 +26,25 @@ GalecrestCity_PokemonCenter_EventScript_Nurse::
 
 GalecrestCity_PokemonCenter_NPC1::
 # 19 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	lockall
-# 20 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	faceplayer
-# 21 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	msgbox GalecrestCity_PokemonCenter_NPC1_Text_0
-# 22 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	releaseall
-	return
+	msgbox GalecrestCity_PokemonCenter_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_PokemonCenter_NPC2::
-# 26 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	lockall
-# 27 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	faceplayer
-# 28 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	msgbox GalecrestCity_PokemonCenter_NPC2_Text_0
-# 29 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	releaseall
-	return
+# 24 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
+	msgbox GalecrestCity_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_PokemonCenter_NPC1_Text_0:
-# 21 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
+# 19 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
 	.string "Nobody goes into Vilethorn Woods - it's\n"
 	.string "too creepy and easy to get lost in!\p"
 	.string "...\p"
 	.string "...well, nobody sane.$"
 
 GalecrestCity_PokemonCenter_NPC2_Text_0:
-# 28 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
+# 24 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
 	.string "Galecrest City has really become quite\n"
 	.string "unmaintained. I keep finding Bottle\l"
 	.string "Caps lying around!$"

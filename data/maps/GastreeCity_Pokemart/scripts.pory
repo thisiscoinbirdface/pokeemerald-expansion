@@ -21,10 +21,8 @@ mart GastreeCity_Pokemart_Inventory {
 }
 
 script GastreeCity_Pokemart_NPC{
-    lockall
-    faceplayer
-    msgbox(format("Don't forget to sell your extra items!"))
-    releaseall
+    msgbox(format("Don't forget to sell your extra items!"), MSGBOX_NPC)
+    end
 }
 
 

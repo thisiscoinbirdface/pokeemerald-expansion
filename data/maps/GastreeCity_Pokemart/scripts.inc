@@ -39,16 +39,10 @@ GastreeCity_Pokemart_Inventory:
 
 GastreeCity_Pokemart_NPC::
 # 24 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	lockall
-# 25 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	faceplayer
-# 26 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	msgbox GastreeCity_Pokemart_NPC_Text_0
-# 27 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	releaseall
-	return
+	msgbox GastreeCity_Pokemart_NPC_Text_0, MSGBOX_NPC
+	end
 
 
 GastreeCity_Pokemart_NPC_Text_0:
-# 26 "data//maps/GastreeCity_Pokemart/scripts.pory"
+# 24 "data//maps/GastreeCity_Pokemart/scripts.pory"
 	.string "Don't forget to sell your extra items!$"

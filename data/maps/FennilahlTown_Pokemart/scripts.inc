@@ -100,14 +100,8 @@ FennilahlTown_Pokemart_Inventory:
 
 FennilahlTown_Pokemart_NPC::
 # 64 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	lockall
-# 65 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	faceplayer
-# 66 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	msgbox FennilahlTown_Pokemart_NPC_Text_0
-# 67 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	releaseall
-	return
+	msgbox FennilahlTown_Pokemart_NPC_Text_0, MSGBOX_NPC
+	end
 
 
 # 9 "data//maps/FennilahlTown_Pokemart/scripts.pory"
@@ -183,7 +177,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 	.string "yourself, come talk to me.$"
 
 FennilahlTown_Pokemart_NPC_Text_0:
-# 66 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 64 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "This Pokemart doesn't sell much\n"
 	.string "because we're in a remote town. But you\l"
 	.string "can find these mint vending machines\l"

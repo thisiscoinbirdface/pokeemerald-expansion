@@ -26,18 +26,12 @@ SilversunCity_PokemonCenter_EventScript_Nurse::
 
 SilversunCity_PokemonCenter_NPC1::
 # 18 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	lockall
-# 19 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	faceplayer
-# 20 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	msgbox SilversunCity_PokemonCenter_NPC1_Text_0
-# 21 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
-	releaseall
-	return
+	msgbox SilversunCity_PokemonCenter_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 SilversunCity_PokemonCenter_NPC1_Text_0:
-# 20 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
+# 18 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
 	.string "They've blocked off the Hoya River\n"
 	.string "North Crossing because they saw a Mega\l"
 	.string "Sharpedo in the wild! So I'm waiting here\l"

@@ -26,31 +26,25 @@ FennilahlTown_PokemonCenter_EventScript_Nurse::
 
 FennilahlTown_PokemonCenter_NPC1::
 # 19 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	lockall
-# 20 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	faceplayer
-# 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	goto_if_set FLAG_FENNILAHL_HIKER_GEAR_GET, FennilahlTown_PokemonCenter_NPC1_2
-# 25 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	msgbox FennilahlTown_PokemonCenter_NPC1_Text_1
+# 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	msgbox FennilahlTown_PokemonCenter_NPC1_Text_1, MSGBOX_NPC
 FennilahlTown_PokemonCenter_NPC1_1:
-# 28 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	releaseall
-	return
+	end
 
 FennilahlTown_PokemonCenter_NPC1_2:
-# 23 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	msgbox FennilahlTown_PokemonCenter_NPC1_Text_0
+# 20 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	msgbox FennilahlTown_PokemonCenter_NPC1_Text_0, MSGBOX_NPC
 	goto FennilahlTown_PokemonCenter_NPC1_1
 
 
 FennilahlTown_PokemonCenter_NPC1_Text_0:
-# 23 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+# 20 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "You're the one who stopped the\n"
 	.string "pickpocketing CLEFAIRY? Well done!$"
 
 FennilahlTown_PokemonCenter_NPC1_Text_1:
-# 25 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+# 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "We've had an increase in pickpocketing\n"
 	.string "recently. We suspect it's a nearby\l"
 	.string "Pokemon.$"

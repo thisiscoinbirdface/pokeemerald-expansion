@@ -6,11 +6,8 @@ mapscripts SilversunCity_Houses_MapScripts{}
 
 //QUEST: Artist   VAR_SILVERSUN_ARTIST: 0 is not started, 1 is in progress, 2 is complete
 script SilversunCity_Houses_Smeargle{
-    lockall
-    faceplayer
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
-    msgbox(format("SMEARGLE is holding the teacup with its tail and sipping tea! With a tail like that, no wonder it can draw so well."))
-    releaseall
+    msgbox(format("SMEARGLE is holding the teacup with its tail and sipping tea! With a tail like that, no wonder it can draw so well."), MSGBOX_NPC)
     end
 }
 
@@ -63,10 +60,7 @@ script SilversunCity_Houses_Artist{
 
 //TUTOR: Someone
 script SilversunCity_Houses_Tutor{
-    lockall
-    faceplayer
-    msgbox(format("I'm medidating. Come back to me later. Get 6 badges first.\p...\pYes, my meditations are long."))
-    releaseall
+    msgbox(format("I'm medidating. Come back to me later. Get 6 badges first.\p...\pYes, my meditations are long."), MSGBOX_NPC)
     end
 }
 
@@ -80,24 +74,15 @@ script SilversunCity_Houses_Tutor{
 
 //NPCs
 script SilversunCity_Houses_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called Silvershade City instead."))
-    releaseall
+    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called Silvershade City instead."), MSGBOX_NPC)
     end
 }
 script SilversunCity_Houses_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("They say dangerous Pokemon come out from the sewers from time to time, like the SEWER SCOURGE. Apparently that's not even a Pokemon, it's an evil spirit! I don't let my child play anywhere near it!"))
-    releaseall
+    msgbox(format("They say dangerous Pokemon come out from the sewers from time to time, like the SEWER SCOURGE. Apparently that's not even a Pokemon, it's an evil spirit! I don't let my child play anywhere near it!"), MSGBOX_NPC)
     end
 }
 script SilversunCity_Houses_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("I really want a Toxel as my first Pokemon but Mom will never let me have one."))
-    releaseall
+    msgbox(format("I really want a Toxel as my first Pokemon but Mom will never let me have one."), MSGBOX_NPC)
     end
 }
 
@@ -121,41 +106,40 @@ script SilversunCity_Houses_DuskullNPC1{
         lockall
         // applymovement(6, moves(faceplayer))
         // applymovement(7, moves(faceplayer))
-        msgbox(format("Thank you for saving my wife. You see, my wife is blind, so she needs a Pokemon to assist her. But we didn't have enough money to apply for an assisance Pokemon. So we resorted to illegal means. We bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With FURFROU around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."))
+        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokemon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
         release
         giveegg(SPECIES_HONEDGE)
         setvar(VAR_SEWERS_DUSKULL, 4)
     } else {
-        msgbox(format("I'm never going to the sewers again...but we did what we had to do."))
+        msgbox(format("I'm never going to the sewers again...but we did what we had to do."), MSGBOX_NPC)
     }
-
-    releaseall
+    end
 }
 
 script SilversunCity_Houses_Husband{
     if (var(VAR_SEWERS_DUSKULL) == 4){
-        lockall
         // applymovement(6, moves(faceplayer))
         // applymovement(7, moves(faceplayer))
-        msgbox(format("Thank you for saving my wife. You see, my wife is blind, so she needs a Pokemon to assist her. But we didn't have enough money to apply for an assisance Pokemon. So we resorted to illegal means. We bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With FURFROU around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."))
+        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokemon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can live better. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
         release
+        //Switch to black market pass
         giveegg(SPECIES_HONEDGE)
         completequest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 5)
     } else {
-        msgbox(format("I'm never going to the sewers again...but we did what we had to do."))
+        msgbox(format("I'm never going to the sewers again...but we did what we had to do."), MSGBOX_NPC)
     }
 
-    releaseall
+    end
 }
 
 script SilversunCity_Houses_Wife{
-    msgbox(format("The poor baby must be tired...I can hear its snores."))
-    releaseall
+    msgbox(format("Furfrou helps me a ton around the house."), MSGBOX_NPC)
+    end
 }
 
 
 script SilversunCity_Houses_Furfrou{
-    msgbox(format("Furfrou is patiently waiting."))
-    releaseall
+    msgbox(format("Furfrou is patiently waiting by its ownder."), MSGBOX_NPC)
+    end
 }

@@ -16,16 +16,12 @@ script FennilahlTown_PokemonCenter_EventScript_Nurse{
 
 
 script FennilahlTown_PokemonCenter_NPC1{
-	lockall
-    faceplayer
-
 	if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-		msgbox(format("You're the one who stopped the pickpocketing CLEFAIRY? Well done!"))		
+		msgbox(format("You're the one who stopped the pickpocketing CLEFAIRY? Well done!"), MSGBOX_NPC)		
 	} else {
-		msgbox(format("We've had an increase in pickpocketing recently. We suspect it's a nearby Pokemon."))		
+		msgbox(format("We've had an increase in pickpocketing recently. We suspect it's a nearby Pokemon."), MSGBOX_NPC)		
 	}
-
-	releaseall
+	end
 }
 
 

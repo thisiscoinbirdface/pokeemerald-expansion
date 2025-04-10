@@ -51,18 +51,12 @@ GalecrestCity_Pokemart_Inventory:
 
 GalecrestCity_Pokemart_NPC::
 # 31 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	lockall
-# 32 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	faceplayer
-# 33 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	msgbox GalecrestCity_Pokemart_NPC_Text_0
-# 34 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	releaseall
-	return
+	msgbox GalecrestCity_Pokemart_NPC_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_Pokemart_NPC_Text_0:
-# 33 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+# 31 "data//maps/GalecrestCity_Pokemart/scripts.pory"
 	.string "Each town's Pokemart has unique items\n"
 	.string "on sale. Goes to show that Cormoria's\l"
 	.string "economy isn't fully integrated.$"

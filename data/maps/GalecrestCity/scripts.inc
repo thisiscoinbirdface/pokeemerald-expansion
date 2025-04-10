@@ -312,381 +312,319 @@ GalecrestCity_EventScript_Poochyena_2:
 
 GalecrestCity_NPC_1::
 # 269 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 270 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 271 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_1_Text_0
-# 272 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+	msgbox GalecrestCity_NPC_1_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_2::
-# 276 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 277 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 278 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_2_Text_0
-# 279 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 274 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_2_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_3::
-# 283 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 284 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 285 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_3_Text_0
-# 286 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 279 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_3_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_4::
-# 290 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 291 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 292 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_4_Text_0
-# 293 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 284 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_4_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_Froakie::
-# 297 "data//maps/GalecrestCity/scripts.pory"
+# 289 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 298 "data//maps/GalecrestCity/scripts.pory"
+# 290 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 299 "data//maps/GalecrestCity/scripts.pory"
+# 291 "data//maps/GalecrestCity/scripts.pory"
 	playmoncry SPECIES_FROAKIE, CRY_MODE_ENCOUNTER
-# 300 "data//maps/GalecrestCity/scripts.pory"
+# 292 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_Froakie_Text_0
-# 301 "data//maps/GalecrestCity/scripts.pory"
+# 293 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_NPC_5::
-# 309 "data//maps/GalecrestCity/scripts.pory"
+# 301 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 310 "data//maps/GalecrestCity/scripts.pory"
+# 302 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 312 "data//maps/GalecrestCity/scripts.pory"
+# 304 "data//maps/GalecrestCity/scripts.pory"
 	goto_if_set FLAG_GALECREST_ROCKSMASH, GalecrestCity_NPC_5_2
-# 315 "data//maps/GalecrestCity/scripts.pory"
+# 307 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_5_Text_1
-# 316 "data//maps/GalecrestCity/scripts.pory"
+# 308 "data//maps/GalecrestCity/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, GalecrestCity_NPC_5_Text_2, GalecrestCity_NPC_5_Text_3, GalecrestCity_NPC_5_Text_4, GalecrestCity_NPC_5_Text_5
-# 317 "data//maps/GalecrestCity/scripts.pory"
+# 309 "data//maps/GalecrestCity/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq GalecrestCity_NPC_5_5
-# 322 "data//maps/GalecrestCity/scripts.pory"
+# 314 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_5_Text_7
 GalecrestCity_NPC_5_1:
-# 329 "data//maps/GalecrestCity/scripts.pory"
+# 321 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	return
 
 GalecrestCity_NPC_5_2:
-# 313 "data//maps/GalecrestCity/scripts.pory"
+# 305 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_5_Text_0
 	goto GalecrestCity_NPC_5_1
 
 GalecrestCity_NPC_5_5:
-# 318 "data//maps/GalecrestCity/scripts.pory"
+# 310 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_5_Text_6
-# 319 "data//maps/GalecrestCity/scripts.pory"
+# 311 "data//maps/GalecrestCity/scripts.pory"
 	giveitem ITEM_HM_ROCK_SMASH
-# 320 "data//maps/GalecrestCity/scripts.pory"
+# 312 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_ROCKSMASH
 	goto GalecrestCity_NPC_5_1
 
 
 GalecrestCity_NPC_6::
-# 333 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 334 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 335 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_6_Text_0
-# 336 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 325 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_6_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_7::
-# 340 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 341 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 342 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_7_Text_0
-# 343 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 330 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_7_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_8::
-# 347 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 348 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 349 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_8_Text_0
-# 350 "data//maps/GalecrestCity/scripts.pory"
-	release
-# 351 "data//maps/GalecrestCity/scripts.pory"
-	face_left
-# 352 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 335 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_8_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_9::
-# 356 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 357 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 358 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_9_Text_0
-# 359 "data//maps/GalecrestCity/scripts.pory"
-	release
-# 360 "data//maps/GalecrestCity/scripts.pory"
-	face_right
-# 361 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 340 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_9_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_10::
-# 365 "data//maps/GalecrestCity/scripts.pory"
-	lockall
-# 366 "data//maps/GalecrestCity/scripts.pory"
-	faceplayer
-# 367 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_10_Text_0
-# 368 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
-	return
+# 345 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_10_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCity_NPC_11::
-# 374 "data//maps/GalecrestCity/scripts.pory"
+# 351 "data//maps/GalecrestCity/scripts.pory"
 	goto_if_set FLAG_GALECREST_NURSE_BERRY, GalecrestCity_NPC_11_2
-# 377 "data//maps/GalecrestCity/scripts.pory"
+# 354 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 378 "data//maps/GalecrestCity/scripts.pory"
+# 355 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 379 "data//maps/GalecrestCity/scripts.pory"
+# 356 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_11_Text_1
-# 380 "data//maps/GalecrestCity/scripts.pory"
+# 357 "data//maps/GalecrestCity/scripts.pory"
 	giveitem ITEM_CHILAN_BERRY, 3
-# 381 "data//maps/GalecrestCity/scripts.pory"
+# 358 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_NURSE_BERRY
-# 382 "data//maps/GalecrestCity/scripts.pory"
-	releaseall
+# 359 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_11_Text_2, MSGBOX_NPC
 GalecrestCity_NPC_11_1:
 	end
 
 GalecrestCity_NPC_11_2:
-# 375 "data//maps/GalecrestCity/scripts.pory"
+# 352 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_11_Text_0, MSGBOX_NPC
 	goto GalecrestCity_NPC_11_1
 
 
 GalecrestCity_Chansey::
-# 390 "data//maps/GalecrestCity/scripts.pory"
+# 367 "data//maps/GalecrestCity/scripts.pory"
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-# 391 "data//maps/GalecrestCity/scripts.pory"
+# 368 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_Chansey_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_12::
-# 397 "data//maps/GalecrestCity/scripts.pory"
+# 374 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_12_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_13::
-# 402 "data//maps/GalecrestCity/scripts.pory"
+# 379 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_13_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_14::
-# 414 "data//maps/GalecrestCity/scripts.pory"
+# 391 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 416 "data//maps/GalecrestCity/scripts.pory"
+# 393 "data//maps/GalecrestCity/scripts.pory"
 	compare VAR_GALECREST_RICH_PEARLS, 0
 	goto_if_eq GalecrestCity_NPC_14_2
-# 420 "data//maps/GalecrestCity/scripts.pory"
+# 397 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_14_Text_0
-# 421 "data//maps/GalecrestCity/scripts.pory"
+# 398 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 422 "data//maps/GalecrestCity/scripts.pory"
+# 399 "data//maps/GalecrestCity/scripts.pory"
 	delay 24
-# 423 "data//maps/GalecrestCity/scripts.pory"
+# 400 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 424 "data//maps/GalecrestCity/scripts.pory"
+# 401 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 12, GalecrestCity_NPC_14_Movement_0
-# 425 "data//maps/GalecrestCity/scripts.pory"
+# 402 "data//maps/GalecrestCity/scripts.pory"
 	delay 24
-# 426 "data//maps/GalecrestCity/scripts.pory"
+# 403 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_14_Text_1
-# 428 "data//maps/GalecrestCity/scripts.pory"
+# 405 "data//maps/GalecrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_GALECREST_ROBBER, GalecrestCity_NPC_14_Text_2
-# 429 "data//maps/GalecrestCity/scripts.pory"
+# 406 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 430 "data//maps/GalecrestCity/scripts.pory"
+# 407 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_14_Text_3
-# 431 "data//maps/GalecrestCity/scripts.pory"
+# 408 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 432 "data//maps/GalecrestCity/scripts.pory"
+# 409 "data//maps/GalecrestCity/scripts.pory"
 	giveitem ITEM_PEARL_STRING
-# 433 "data//maps/GalecrestCity/scripts.pory"
+# 410 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_14_Text_4
-# 434 "data//maps/GalecrestCity/scripts.pory"
+# 411 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 436 "data//maps/GalecrestCity/scripts.pory"
+# 413 "data//maps/GalecrestCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 437 "data//maps/GalecrestCity/scripts.pory"
+# 414 "data//maps/GalecrestCity/scripts.pory"
 	removeobject 12
-# 438 "data//maps/GalecrestCity/scripts.pory"
+# 415 "data//maps/GalecrestCity/scripts.pory"
 	removeobject 36
-# 439 "data//maps/GalecrestCity/scripts.pory"
+# 416 "data//maps/GalecrestCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 441 "data//maps/GalecrestCity/scripts.pory"
+# 418 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_ROBBER
-# 442 "data//maps/GalecrestCity/scripts.pory"
+# 419 "data//maps/GalecrestCity/scripts.pory"
 	setvar VAR_GALECREST_RICH_PEARLS, 2
 GalecrestCity_NPC_14_1:
-# 445 "data//maps/GalecrestCity/scripts.pory"
+# 422 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	return
 
 GalecrestCity_NPC_14_2:
-# 417 "data//maps/GalecrestCity/scripts.pory"
+# 394 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_14_Text_0
-# 418 "data//maps/GalecrestCity/scripts.pory"
+# 395 "data//maps/GalecrestCity/scripts.pory"
 	release
 	goto GalecrestCity_NPC_14_1
 
 
 GalecrestCity_Nickit::
-# 449 "data//maps/GalecrestCity/scripts.pory"
+# 426 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 450 "data//maps/GalecrestCity/scripts.pory"
+# 427 "data//maps/GalecrestCity/scripts.pory"
 	playmoncry SPECIES_NICKIT, CRY_MODE_NORMAL
-# 451 "data//maps/GalecrestCity/scripts.pory"
+# 428 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_Nickit_Text_0
-# 452 "data//maps/GalecrestCity/scripts.pory"
+# 429 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_NPC_15::
-# 458 "data//maps/GalecrestCity/scripts.pory"
+# 435 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_15_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_16::
-# 463 "data//maps/GalecrestCity/scripts.pory"
+# 440 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 464 "data//maps/GalecrestCity/scripts.pory"
+# 441 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_16_Text_0
-# 465 "data//maps/GalecrestCity/scripts.pory"
+# 442 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_NPC_17::
-# 470 "data//maps/GalecrestCity/scripts.pory"
+# 447 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 471 "data//maps/GalecrestCity/scripts.pory"
+# 448 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_17_Text_0
-# 472 "data//maps/GalecrestCity/scripts.pory"
+# 449 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 
 GalecrestCity_NPC_18::
-# 477 "data//maps/GalecrestCity/scripts.pory"
+# 454 "data//maps/GalecrestCity/scripts.pory"
 	lockall
-# 478 "data//maps/GalecrestCity/scripts.pory"
+# 455 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_18_Text_0
-# 479 "data//maps/GalecrestCity/scripts.pory"
+# 456 "data//maps/GalecrestCity/scripts.pory"
 	release
-# 480 "data//maps/GalecrestCity/scripts.pory"
+# 457 "data//maps/GalecrestCity/scripts.pory"
 	delay 16
-# 482 "data//maps/GalecrestCity/scripts.pory"
+# 459 "data//maps/GalecrestCity/scripts.pory"
 	goto_if_set FLAG_GALECREST_REGRETFULMAN, GalecrestCity_NPC_18_2
-# 486 "data//maps/GalecrestCity/scripts.pory"
+# 463 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
-# 487 "data//maps/GalecrestCity/scripts.pory"
+# 464 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_18_Text_1, MSGBOX_YESNO
-# 488 "data//maps/GalecrestCity/scripts.pory"
+# 465 "data//maps/GalecrestCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GalecrestCity_NPC_18_5
-# 493 "data//maps/GalecrestCity/scripts.pory"
+# 470 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_18_Text_3
-# 494 "data//maps/GalecrestCity/scripts.pory"
+# 471 "data//maps/GalecrestCity/scripts.pory"
 	giveitem ITEM_GRIP_CLAW
-# 495 "data//maps/GalecrestCity/scripts.pory"
+# 472 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_REGRETFULMAN
 GalecrestCity_NPC_18_1:
-# 498 "data//maps/GalecrestCity/scripts.pory"
+# 475 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 16, GalecrestCity_DetectiveMeet_Main_Movement_2
-# 499 "data//maps/GalecrestCity/scripts.pory"
+# 476 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 GalecrestCity_NPC_18_2:
-# 483 "data//maps/GalecrestCity/scripts.pory"
+# 460 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
 
 GalecrestCity_NPC_18_5:
-# 489 "data//maps/GalecrestCity/scripts.pory"
+# 466 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_18_Text_2
-# 490 "data//maps/GalecrestCity/scripts.pory"
+# 467 "data//maps/GalecrestCity/scripts.pory"
 	giveitem ITEM_BINDING_BAND
-# 491 "data//maps/GalecrestCity/scripts.pory"
+# 468 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_REGRETFULMAN
 	goto GalecrestCity_NPC_18_1
 
 
 GalecrestCity_NPC_19::
-# 504 "data//maps/GalecrestCity/scripts.pory"
+# 481 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_19_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_20::
-# 509 "data//maps/GalecrestCity/scripts.pory"
+# 486 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_20_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_Ranger::
-# 515 "data//maps/GalecrestCity/scripts.pory"
+# 492 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Ranger_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_Red::
-# 521 "data//maps/GalecrestCity/scripts.pory"
+# 498 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Red_Text_0, MSGBOX_NPC
-# 522 "data//maps/GalecrestCity/scripts.pory"
+# 499 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 38, GalecrestCity_DetectiveMeet_Main_Movement_0
-# 523 "data//maps/GalecrestCity/scripts.pory"
+# 500 "data//maps/GalecrestCity/scripts.pory"
 	waitmovement 0
 	end
 
@@ -819,9 +757,9 @@ GalecrestCity_DetectiveMeet_Main_Movement_6:
 	walk_down
 	step_end
 
-# 424 "data//maps/GalecrestCity/scripts.pory"
+# 401 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_NPC_14_Movement_0:
-# 424 "data//maps/GalecrestCity/scripts.pory"
+# 401 "data//maps/GalecrestCity/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -950,94 +888,94 @@ GalecrestCity_EventScript_Poochyena_Text_0:
 	.string "Better not aggravate them!$"
 
 GalecrestCity_NPC_1_Text_0:
-# 271 "data//maps/GalecrestCity/scripts.pory"
+# 269 "data//maps/GalecrestCity/scripts.pory"
 	.string "You don't look like someone from\n"
 	.string "here...are you a new student at the\l"
 	.string "Detective Academy?$"
 
 GalecrestCity_NPC_2_Text_0:
-# 278 "data//maps/GalecrestCity/scripts.pory"
+# 274 "data//maps/GalecrestCity/scripts.pory"
 	.string "The city doesn't service our\n"
 	.string "neighborhood. That's why these grass\l"
 	.string "patches and puddles have come up.$"
 
 GalecrestCity_NPC_3_Text_0:
-# 285 "data//maps/GalecrestCity/scripts.pory"
+# 279 "data//maps/GalecrestCity/scripts.pory"
 	.string "All the rich kids play at home, but me\n"
 	.string "and my brother love to splash in these\l"
 	.string "puddles!$"
 
 GalecrestCity_NPC_4_Text_0:
-# 292 "data//maps/GalecrestCity/scripts.pory"
+# 284 "data//maps/GalecrestCity/scripts.pory"
 	.string "When I grow up, I want to be just like my\n"
 	.string "sister!$"
 
 GalecrestCity_Froakie_Text_0:
-# 300 "data//maps/GalecrestCity/scripts.pory"
+# 292 "data//maps/GalecrestCity/scripts.pory"
 	.string "FROAKIE is having fun with the siblings!$"
 
 GalecrestCity_NPC_5_Text_0:
-# 313 "data//maps/GalecrestCity/scripts.pory"
+# 305 "data//maps/GalecrestCity/scripts.pory"
 	.string "I need to find a Pokemon that can learn\n"
 	.string "ROCK SMASH...$"
 
 GalecrestCity_NPC_5_Text_1:
-# 315 "data//maps/GalecrestCity/scripts.pory"
+# 307 "data//maps/GalecrestCity/scripts.pory"
 	.string "This rock can be smashed by a Pokemon\n"
 	.string "that knows a certain move...I forgot\l"
 	.string "which one though! Do you know?$"
 
 GalecrestCity_NPC_5_Text_2:
-# 316 "data//maps/GalecrestCity/scripts.pory"
+# 308 "data//maps/GalecrestCity/scripts.pory"
 	.string "ROCK BLAST$"
 
 GalecrestCity_NPC_5_Text_3:
-# 316 "data//maps/GalecrestCity/scripts.pory"
+# 308 "data//maps/GalecrestCity/scripts.pory"
 	.string "ROCK SLIDE$"
 
 GalecrestCity_NPC_5_Text_4:
-# 316 "data//maps/GalecrestCity/scripts.pory"
+# 308 "data//maps/GalecrestCity/scripts.pory"
 	.string "ROCK SMASH$"
 
 GalecrestCity_NPC_5_Text_5:
-# 316 "data//maps/GalecrestCity/scripts.pory"
+# 308 "data//maps/GalecrestCity/scripts.pory"
 	.string "STONE EDGE$"
 
 GalecrestCity_NPC_5_Text_6:
-# 318 "data//maps/GalecrestCity/scripts.pory"
+# 310 "data//maps/GalecrestCity/scripts.pory"
 	.string "Yes! Now I remember! In fact, I also\n"
 	.string "remember that I have the HM for it here.\l"
 	.string "Why don't you keep it?$"
 
 GalecrestCity_NPC_5_Text_7:
-# 322 "data//maps/GalecrestCity/scripts.pory"
+# 314 "data//maps/GalecrestCity/scripts.pory"
 	.string "No...$"
 
 GalecrestCity_NPC_6_Text_0:
-# 335 "data//maps/GalecrestCity/scripts.pory"
+# 325 "data//maps/GalecrestCity/scripts.pory"
 	.string "If you head west, you enter the elite\n"
 	.string "residential neighborhood.\p"
 	.string "The area south of here is poorer.$"
 
 GalecrestCity_NPC_7_Text_0:
-# 342 "data//maps/GalecrestCity/scripts.pory"
+# 330 "data//maps/GalecrestCity/scripts.pory"
 	.string "The city garden is maintained by\n"
 	.string "Rotoms! But for some reason, I've never\l"
 	.string "seen any of them at work.$"
 
 GalecrestCity_NPC_8_Text_0:
-# 349 "data//maps/GalecrestCity/scripts.pory"
+# 335 "data//maps/GalecrestCity/scripts.pory"
 	.string "I'm on a date with the girl of my dreams!\n"
 	.string "But we can't ever be together. I'm too\l"
 	.string "poor for her family.$"
 
 GalecrestCity_NPC_9_Text_0:
-# 358 "data//maps/GalecrestCity/scripts.pory"
+# 340 "data//maps/GalecrestCity/scripts.pory"
 	.string "I don't care about money! We love each\n"
 	.string "other and that's what matters.$"
 
 GalecrestCity_NPC_10_Text_0:
-# 367 "data//maps/GalecrestCity/scripts.pory"
+# 345 "data//maps/GalecrestCity/scripts.pory"
 	.string "The Detective Academy is the most\n"
 	.string "prestigious police academy in all of\l"
 	.string "Cormoria. My husband helped build it,\l"
@@ -1045,27 +983,31 @@ GalecrestCity_NPC_10_Text_0:
 	.string "construction business.$"
 
 GalecrestCity_NPC_11_Text_0:
-# 375 "data//maps/GalecrestCity/scripts.pory"
+# 352 "data//maps/GalecrestCity/scripts.pory"
 	.string "I do the night shift at the Pokemon\n"
 	.string "Center. During the day, Chansey and I\l"
 	.string "like to walk around the garden and pick\l"
 	.string "berries.$"
 
 GalecrestCity_NPC_11_Text_1:
-# 379 "data//maps/GalecrestCity/scripts.pory"
+# 356 "data//maps/GalecrestCity/scripts.pory"
 	.string "I do the night shift at the Pokemon\n"
 	.string "Center. During the day, Chansey and I\l"
 	.string "like to walk around the garden and pick\l"
 	.string "berries. Here, you can have some of our\l"
 	.string "extra berries.$"
 
+GalecrestCity_NPC_11_Text_2:
+# 359 "data//maps/GalecrestCity/scripts.pory"
+	.string "They're yummy!$"
+
 GalecrestCity_Chansey_Text_0:
-# 391 "data//maps/GalecrestCity/scripts.pory"
+# 368 "data//maps/GalecrestCity/scripts.pory"
 	.string "CHANSEY looks happy to be out in the\n"
 	.string "garden!$"
 
 GalecrestCity_NPC_12_Text_0:
-# 397 "data//maps/GalecrestCity/scripts.pory"
+# 374 "data//maps/GalecrestCity/scripts.pory"
 	.string "If you continue west from here, you'll\n"
 	.string "enter Route 5 and the Vilethorn Woods.\l"
 	.string "Many years ago, one of the rich folk\l"
@@ -1075,70 +1017,70 @@ GalecrestCity_NPC_12_Text_0:
 	.string "Rich folk I tell you...$"
 
 GalecrestCity_NPC_13_Text_0:
-# 402 "data//maps/GalecrestCity/scripts.pory"
+# 379 "data//maps/GalecrestCity/scripts.pory"
 	.string "This part of town is so clean and\n"
 	.string "peaceful!$"
 
 GalecrestCity_NPC_14_Text_0:
-# 417 "data//maps/GalecrestCity/scripts.pory"
+# 394 "data//maps/GalecrestCity/scripts.pory"
 	.string "Hehehe...this was too easy!$"
 
 GalecrestCity_NPC_14_Text_1:
-# 426 "data//maps/GalecrestCity/scripts.pory"
+# 403 "data//maps/GalecrestCity/scripts.pory"
 	.string "I look suspicious? How dare you! I'm\n"
 	.string "just innocently hanging around behind\l"
 	.string "this rich house! I don't take such\l"
 	.string "accusations lightly!$"
 
 GalecrestCity_NPC_14_Text_2:
-# 428 "data//maps/GalecrestCity/scripts.pory"
+# 405 "data//maps/GalecrestCity/scripts.pory"
 	.string "I've been caught!$"
 
 GalecrestCity_NPC_14_Text_3:
-# 430 "data//maps/GalecrestCity/scripts.pory"
+# 407 "data//maps/GalecrestCity/scripts.pory"
 	.string "Fine, you got me! I'm a thief alright?\n"
 	.string "I'll give you what I stole. It's not\l"
 	.string "worth going to jail for.$"
 
 GalecrestCity_NPC_14_Text_4:
-# 433 "data//maps/GalecrestCity/scripts.pory"
+# 410 "data//maps/GalecrestCity/scripts.pory"
 	.string "I knew I shouldn't have tried to steal\n"
 	.string "anything near the Detective Academy!$"
 
 GalecrestCity_Nickit_Text_0:
-# 451 "data//maps/GalecrestCity/scripts.pory"
+# 428 "data//maps/GalecrestCity/scripts.pory"
 	.string "Nickit is grinning mischievously. What's\n"
 	.string "it upto?$"
 
 GalecrestCity_NPC_15_Text_0:
-# 458 "data//maps/GalecrestCity/scripts.pory"
+# 435 "data//maps/GalecrestCity/scripts.pory"
 	.string "I really want to visit the Silversun\n"
 	.string "Theatre and see a show! But crossing\l"
 	.string "Vilethorn Woods isn't a good idea...$"
 
 GalecrestCity_NPC_16_Text_0:
-# 464 "data//maps/GalecrestCity/scripts.pory"
+# 441 "data//maps/GalecrestCity/scripts.pory"
 	.string "I'm sorry! I won't skip class again!$"
 
 GalecrestCity_NPC_17_Text_0:
-# 471 "data//maps/GalecrestCity/scripts.pory"
+# 448 "data//maps/GalecrestCity/scripts.pory"
 	.string "One more misdeneanour and I'll have you\n"
 	.string "expelled, got it? And then you'll never\l"
 	.string "get your Charcadet.$"
 
 GalecrestCity_NPC_18_Text_0:
-# 478 "data//maps/GalecrestCity/scripts.pory"
+# 455 "data//maps/GalecrestCity/scripts.pory"
 	.string "All my life I've lived in this\n"
 	.string "neighbourhood. It's all I've seen and all\l"
 	.string "I know...and now I'm too old to go\l"
 	.string "exploring Cormoria.$"
 
 GalecrestCity_NPC_18_Text_1:
-# 487 "data//maps/GalecrestCity/scripts.pory"
+# 464 "data//maps/GalecrestCity/scripts.pory"
 	.string "Have you ever felt like I do?$"
 
 GalecrestCity_NPC_18_Text_2:
-# 489 "data//maps/GalecrestCity/scripts.pory"
+# 466 "data//maps/GalecrestCity/scripts.pory"
 	.string "Experience does not discriminate. We all\n"
 	.string "feel regret.\p"
 	.string "But you still have time to change.\p"
@@ -1146,14 +1088,14 @@ GalecrestCity_NPC_18_Text_2:
 	.string "anything bind you!$"
 
 GalecrestCity_NPC_18_Text_3:
-# 493 "data//maps/GalecrestCity/scripts.pory"
+# 470 "data//maps/GalecrestCity/scripts.pory"
 	.string "You're still innocent. The smile on your\n"
 	.string "face is so bright! It lightens my heart.\p"
 	.string "Accept this as a memento - hold tightly\n"
 	.string "onto that smile of yours!$"
 
 GalecrestCity_NPC_19_Text_0:
-# 504 "data//maps/GalecrestCity/scripts.pory"
+# 481 "data//maps/GalecrestCity/scripts.pory"
 	.string "I learned something new in class today!\n"
 	.string "Some berries reduce the power of\l"
 	.string "attacks dealt to them. A Chilan Berry\l"
@@ -1162,21 +1104,21 @@ GalecrestCity_NPC_19_Text_0:
 	.string "the gym here, wouldn't it?$"
 
 GalecrestCity_NPC_20_Text_0:
-# 509 "data//maps/GalecrestCity/scripts.pory"
+# 486 "data//maps/GalecrestCity/scripts.pory"
 	.string "Whaddya want? Thought you'd get\n"
 	.string "something by talking to me? You poor\l"
 	.string "people are all the same - always looking\l"
 	.string "for handouts!$"
 
 GalecrestCity_NPC_Ranger_Text_0:
-# 515 "data//maps/GalecrestCity/scripts.pory"
+# 492 "data//maps/GalecrestCity/scripts.pory"
 	.string "I'm a Pokemon Ranger. What am I doing?\n"
 	.string "Ranger duty of course! I'm cleaning up\l"
 	.string "the city. There's so much junk lying\l"
 	.string "around!$"
 
 GalecrestCity_NPC_Red_Text_0:
-# 521 "data//maps/GalecrestCity/scripts.pory"
+# 498 "data//maps/GalecrestCity/scripts.pory"
 	.string "Sorry trainer, the Gym Leader's not in\n"
 	.string "right now. He should be back soon. Check\l"
 	.string "out the Detective Academy in the\l"
