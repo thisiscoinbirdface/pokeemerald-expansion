@@ -303,6 +303,7 @@ script CeramBaseCamp_Main_NPC3{
         } else {
             msgbox(format("Berries don't grow here, so I brought my own! Would you like some?"), MSGBOX_NPC)
             giveitem(ITEM_OCCA_BERRY, 2)
+            release
             setflag(FLAG_CERAMBASECAMP_MAIN_BERRY)
         }
             //Regular case

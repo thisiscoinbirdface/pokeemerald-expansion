@@ -124,6 +124,7 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
     applymovement(4, moves(face_up))
     waitmovement(0)
     releaseall
+    end
 }
 
 //NPC5 - giveitem

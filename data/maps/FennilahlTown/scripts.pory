@@ -24,7 +24,7 @@ script FennilahlTown_EventScript_Woman {
         msgbox(format("My, that's such a cute little Pokemon you have with you! Here, use this and treat it with care, okay?"))
         giveitem(ITEM_SOOTHE_BELL)
         setflag(FLAG_FENNILAHL_CUTEMONGIFT)
-        releaseall
+        msgbox(format("If your Pokemon hold a Soothe Bell, they'll become attached to you faster!"), MSGBOX_NPC)
     }
     end
 }

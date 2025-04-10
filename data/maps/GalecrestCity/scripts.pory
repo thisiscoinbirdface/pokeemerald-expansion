@@ -309,16 +309,13 @@ script GalecrestCity_NPC_5{
         if (var(VAR_RESULT) == 2){
             msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
             giveitem(ITEM_HM_ROCK_SMASH)
+            release
             setflag(FLAG_GALECREST_ROCKSMASH)
         } else {
-            msgbox(format("No..."))
+            msgbox(format("No..."), MSGBOX_NPC)
         }
     }
-
-    
-
-    
-    releaseall
+    end
 }
 
 script GalecrestCity_NPC_6{

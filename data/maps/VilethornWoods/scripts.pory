@@ -288,6 +288,7 @@ script VilethornWoods_NPC3{
     } else {
         msgbox(format("I am well and truly lost...even with this SCOPE LENS, I can't see a thing! Why don't you have it?"), MSGBOX_NPC)
         giveitem(ITEM_SCOPE_LENS)
+        release
         setflag(FLAG_VILETHORN_NPC_ITEM)
     }
     end
