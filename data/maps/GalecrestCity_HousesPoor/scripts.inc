@@ -109,7 +109,7 @@ GalecrestCity_HousesPoor_NPC1_Text_1:
 	.string "too poor to afford a new flute. I really\l"
 	.string "want to see her happy...\p"
 	.string "Would you be willing to give me a Blue\n"
-	.string "Flue? I can't offer money, but in\l"
+	.string "Flute? I can't offer money, but in\l"
 	.string "exchange, I can give you this PEAT\l"
 	.string "BLOCK.$"
 
