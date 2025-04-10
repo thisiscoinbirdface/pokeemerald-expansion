@@ -817,7 +817,7 @@ GastreeCity_NPC_Skitty_Text_0:
 
 GastreeCity_Poltchageist_Text_0:
 # 337 "data//maps/GastreeCity/scripts.pory"
-	.string "POLTCHAGEIST is picking herbs for the\n"
+	.string "Poltchageist is picking herbs for the\n"
 	.string "teahouse!$"
 
 GastreeCity_KohlaIntro1::

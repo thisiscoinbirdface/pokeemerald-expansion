@@ -334,7 +334,7 @@ script GastreeCity_Poltchageist{
     lockall
     playmoncry(SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("POLTCHAGEIST is picking herbs for the teahouse!"))
+    msgbox(format("Poltchageist is picking herbs for the teahouse!"))
     releaseall
     end
 }
