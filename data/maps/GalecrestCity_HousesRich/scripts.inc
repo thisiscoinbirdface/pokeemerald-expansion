@@ -303,7 +303,7 @@ GalecrestCity_HousesRich_NPC9_Text_0:
 GalecrestCity_HousesRich_NPC9_Text_1:
 # 117 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "I'm trying to organise my daughter's\n"
-	.string "belongings. Are you a Pokemon trainer?$"
+	.string "belongings. Are you a Pokémon trainer?$"
 
 GalecrestCity_HousesRich_NPC9_Text_2:
 # 119 "data//maps/GalecrestCity_HousesRich/scripts.pory"

@@ -47,11 +47,11 @@ script GalecrestCityGym_Red {
         }
     } else { 
         if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
-            msgbox(format("Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here, and GHOST type Pokemon are immune to NORMAL type attacks!"))
+            msgbox(format("Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
         } else {
             msgbox(format("Greetings trainer! Good to see you again.  First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokemon that are comfortable in a variety of urban situations. FIGHTING type Pokemon should do well here, and GHOST type Pokemon are immune to NORMAL type attacks!"))
+            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
             setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
         }
     }

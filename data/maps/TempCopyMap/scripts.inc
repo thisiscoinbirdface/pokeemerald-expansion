@@ -1238,7 +1238,7 @@ Common_EventScript_NurseJoyOnRoute_Text_3:
 Common_EventScript_NurseJoyOnRoute_Text_4:
 # 420 "data//maps/TempCopyMap/scripts.pory"
 	.string "Sorry, you don't have a HEAL PASS.\n"
-	.string "Please visit a POKéMON CENTER to\l"
+	.string "Please visit a Pokémon CENTER to\l"
 	.string "receive a HEAL PASS.$"
 
 Common_EventScript_ChanseyOnRoute_Text_0:
@@ -1305,9 +1305,9 @@ Common_EventScript_SettingsGuy_Text_0:
 # 688 "data//maps/TempCopyMap/scripts.pory"
 	.string "Hello! I can enable or disable Exp All. If\n"
 	.string "enabled, the Exp Share allows all\l"
-	.string "Pokemon to gain experience. If\l"
+	.string "Pokémon to gain experience. If\l"
 	.string "disabled, the Exp share will only give\l"
-	.string "experience to the Pokemon holding it.\l"
+	.string "experience to the Pokémon holding it.\l"
 	.string "Would you like to toggle Exp All?$"
 
 Common_EventScript_SettingsGuy_Text_1:

@@ -175,7 +175,7 @@ script VilethornWoods_EventScript_TriggerProf{
 
 //Trainers
 script VilethornWoods_Trainer_A{
-    trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type Pokemon are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
+    trainerbattle_single(TRAINER_VILETHORN_A, format("PSYCHIC type Pokémon are my natural enemies! That's why I'm training here."), "I like PSYCHIC types more than you!")
     msgbox(format("I like training but I don't want to go to deep into this forest..."))
     releaseall
     end
@@ -196,7 +196,7 @@ script VilethornWoods_Trainer_C{
 }
 
 script VilethornWoods_Trainer_D{
-    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokemon Breeder. Like all breeders, we specialise in certain Pokemon forms. I'm a horse breeding expert!"), "Well fought!")
+    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokémon Breeder. Like all breeders, we specialise in certain Pokémon forms. I'm a horse breeding expert!"), "Well fought!")
     msgbox(format("I need to raise my horses to become stronger. Maybe some VITAMINS would help..."))
     releaseall
     end

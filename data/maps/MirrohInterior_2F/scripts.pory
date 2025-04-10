@@ -52,7 +52,7 @@ script MirrohInterior_2F_Trainer_D{
 }
 //maniac
 script MirrohInterior_2F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Why are you here? Are you trying to steal my Pokemon like those Team Somber grunts?"), format("I guess you're not!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Why are you here? Are you trying to steal my Pokémon like those Team Somber grunts?"), format("I guess you're not!"))
     msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my Pokemon. But I beat one of them and ran away from the other!"))
     releaseall
 }

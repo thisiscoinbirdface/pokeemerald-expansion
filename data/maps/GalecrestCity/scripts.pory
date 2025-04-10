@@ -156,17 +156,17 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)    
     msgbox(format("RUE: What! Is that true? Did all of that happen?\p...\pRUE: I'm glad you're safe, {PLAYER}. What a series of events!"))
-    msgbox(format("DETECTIVE: So the dreamstones transported you to another dimension that you couldn't recognise? And the Pokemon were completely different too?"))
+    msgbox(format("DETECTIVE: So the dreamstones transported you to another dimension that you couldn't recognise? And the Pokémon were completely different too?"))
     release
     applymovement(LOCALID_DET1, moves(face_down ))
     applymovement(LOCALID_RUE, moves(face_up ))
     delay(16)
-    msgbox(format("DETECTIVE: Did you know this was possible Rue?\p RUE: No, I had no idea. We knew that dreamstones absorbed the memories of sleeping Pokemon - that's why its called a dreamstone! But to transport things and people..."))
+    msgbox(format("DETECTIVE: Did you know this was possible Rue?\p RUE: No, I had no idea. We knew that dreamstones absorbed the memories of sleeping Pokémon - that's why its called a dreamstone! But to transport things and people..."))
     release
     applymovement(LOCALID_DET1, moves(face_right))
     applymovement(LOCALID_RUE, moves(face_right))
     delay(16)
-    msgbox(format("RUE: {PLAYER}, you encountered ancient Pokemon there, right? I wonder...\pRUE: Did the dreamstone take you back to the past somehow?\pRUE: Incredible...so much we don't yet know...\pRUE: I need to do some research. I'm going to head back to the lab.\pRUE: {PLAYER}, the detectives have some updates for you.\p...\pRUE: I'm glad you're okay."))
+    msgbox(format("RUE: {PLAYER}, you encountered ancient Pokémon there, right? I wonder...\pRUE: Did the dreamstone take you back to the past somehow?\pRUE: Incredible...so much we don't yet know...\pRUE: I need to do some research. I'm going to head back to the lab.\pRUE: {PLAYER}, the detectives have some updates for you.\p...\pRUE: I'm glad you're okay."))
     release
 
     //Rue exit
@@ -302,9 +302,9 @@ script GalecrestCity_NPC_5{
     faceplayer    
 
     if (flag(FLAG_GALECREST_ROCKSMASH)){
-        msgbox(format("I need to find a Pokemon that can learn ROCK SMASH..."))
+        msgbox(format("I need to find a Pokémon that can learn ROCK SMASH..."))
     } else {
-        msgbox(format("This rock can be smashed by a Pokemon that knows a certain move...I forgot which one though! Do you know?"))
+        msgbox(format("This rock can be smashed by a Pokémon that knows a certain move...I forgot which one though! Do you know?"))
         dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ROCK BLAST", "ROCK SLIDE", "ROCK SMASH", "STONE EDGE")
         if (var(VAR_RESULT) == 2){
             msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
@@ -346,11 +346,11 @@ script GalecrestCity_NPC_10{
 //Nurse Joy gives 3 berries - reduce super-effective damage from the gym leader's attacks.
 script GalecrestCity_NPC_11{
     if (flag(FLAG_GALECREST_NURSE_BERRY)){
-        msgbox(format("I do the night shift at the Pokemon Center. During the day, Chansey and I like to walk around the garden and pick berries."), MSGBOX_NPC)
+        msgbox(format("I do the night shift at the Pokémon Center. During the day, Chansey and I like to walk around the garden and pick berries."), MSGBOX_NPC)
     } else {
         lockall
         faceplayer
-        msgbox(format("I do the night shift at the Pokemon Center. During the day, Chansey and I like to walk around the garden and pick berries. Here, you can have some of our extra berries."))
+        msgbox(format("I do the night shift at the Pokémon Center. During the day, Chansey and I like to walk around the garden and pick berries. Here, you can have some of our extra berries."))
         giveitem(ITEM_CHILAN_BERRY, 3)  //Halves normal damage
         setflag(FLAG_GALECREST_NURSE_BERRY)        
         msgbox(format("They're yummy!"), MSGBOX_NPC)
@@ -486,7 +486,7 @@ script GalecrestCity_NPC_20{
 
 
 script GalecrestCity_NPC_Ranger{ 
-    msgbox(format("I'm a Pokemon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"), MSGBOX_NPC)
+    msgbox(format("I'm a Pokémon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"), MSGBOX_NPC)
     end
 }
 

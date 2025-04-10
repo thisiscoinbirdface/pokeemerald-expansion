@@ -63,7 +63,7 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokemon fall asleep, their past memories resurface. A dreamstone absorbs this."))
+    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokémon fall asleep, their past memories resurface. A dreamstone absorbs this."))
     release
     delay(16)
     msgbox(format("???: Fascinating stuff. This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
@@ -74,11 +74,11 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: That stone behind me contains the memories of hundreds of generations of Pokemon - all the way back to prehistoric times!"))
+    msgbox(format("???: That stone behind me contains the memories of hundreds of generations of Pokémon - all the way back to prehistoric times!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("???: Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokemon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
+    msgbox(format("???: Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokémon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)

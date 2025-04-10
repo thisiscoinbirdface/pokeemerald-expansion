@@ -38,7 +38,7 @@ script CeramBaseCamp_NPC_Exit{
 
 //NPC1 - generic
 script CeramBaseCamp_NPC1{
-    msgbox(format("Since the base camp is so small, the Pokemon League clubbed the gym and camp management office into one."), MSGBOX_NPC)
+    msgbox(format("Since the base camp is so small, the Pokémon League clubbed the gym and camp management office into one."), MSGBOX_NPC)
     end
 }
 
@@ -166,7 +166,7 @@ script CeramBaseCamp_Excadrill{
             playmoncry(SPECIES_DRILBUR, CRY_MODE_ENCOUNTER)
             delay(40)
             waitmoncry
-            msgbox(format("A wild Pokemon attacks!"))
+            msgbox(format("A wild Pokémon attacks!"))
             setwildbattle(SPECIES_DRILBUR, 15)     
             dowildbattle  
 

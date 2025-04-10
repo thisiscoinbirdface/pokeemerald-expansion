@@ -3,48 +3,48 @@ FennilahlTown_House3_MapScripts::
 
 
 FennilahlTown_House3_NPC1::
-# 5 "data//maps/FennilahlTown_House3/scripts.pory"
+# 5 "data/maps/FennilahlTown_House3/scripts.pory"
 	msgbox FennilahlTown_House3_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 FennilahlTown_House3_NPC2::
-# 11 "data//maps/FennilahlTown_House3/scripts.pory"
+# 11 "data/maps/FennilahlTown_House3/scripts.pory"
 	msgbox FennilahlTown_House3_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 FennilahlTown_House3_Rockruff::
-# 16 "data//maps/FennilahlTown_House3/scripts.pory"
+# 16 "data/maps/FennilahlTown_House3/scripts.pory"
 	playmoncry SPECIES_ROCKRUFF, CRY_MODE_NORMAL
-# 17 "data//maps/FennilahlTown_House3/scripts.pory"
+# 17 "data/maps/FennilahlTown_House3/scripts.pory"
 	msgbox FennilahlTown_House3_Rockruff_Text_0, MSGBOX_NPC
 	end
 
 
 FennilahlTown_House3_Mawile::
-# 23 "data//maps/FennilahlTown_House3/scripts.pory"
+# 23 "data/maps/FennilahlTown_House3/scripts.pory"
 	playmoncry SPECIES_MAWILE, CRY_MODE_NORMAL
-# 24 "data//maps/FennilahlTown_House3/scripts.pory"
+# 24 "data/maps/FennilahlTown_House3/scripts.pory"
 	msgbox FennilahlTown_House3_Mawile_Text_0, MSGBOX_NPC
 	end
 
 
 FennilahlTown_House3_NPC1_Text_0:
-# 5 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "Did you know that some Pokemon can\n"
+# 5 "data/maps/FennilahlTown_House3/scripts.pory"
+	.string "Did you know that some Pokémon can\n"
 	.string "Mega evolve?$"
 
 FennilahlTown_House3_NPC2_Text_0:
-# 11 "data//maps/FennilahlTown_House3/scripts.pory"
+# 11 "data/maps/FennilahlTown_House3/scripts.pory"
 	.string "My Rockruff's ability is OWN TEMPO! I\n"
 	.string "caught it on Route 2, south of here.$"
 
 FennilahlTown_House3_Rockruff_Text_0:
-# 17 "data//maps/FennilahlTown_House3/scripts.pory"
+# 17 "data/maps/FennilahlTown_House3/scripts.pory"
 	.string "Rockruff is living life at its own pace!$"
 
 FennilahlTown_House3_Mawile_Text_0:
-# 24 "data//maps/FennilahlTown_House3/scripts.pory"
+# 24 "data/maps/FennilahlTown_House3/scripts.pory"
 	.string "Mawile is holding a weird glowing\n"
 	.string "stone...I wonder what it does?$"

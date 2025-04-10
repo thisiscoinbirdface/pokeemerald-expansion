@@ -20,7 +20,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     msgbox(
         format(
-            "TV: And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokemon Professor have vanished to? And why?"
+            "TV: And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokémon Professor have vanished to? And why?"
         )
     )
     release

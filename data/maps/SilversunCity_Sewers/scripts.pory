@@ -221,7 +221,7 @@ script SilversunCity_Sewers_NPC5{
 //Trainers
 script SilversunCity_Sewers_Trainer_A{
     trainerbattle_single(TRAINER_SEWERS_A, format("I'm not like the other rich kids at school, because I'm not afraid to get my hands dirty!"), "Your hands are dirty too!")
-    msgbox(format("I came down here to catch some POISON type Pokemon to round out my team, but I should go back up now. This place stinks."))
+    msgbox(format("I came down here to catch some POISON type Pokémon to round out my team, but I should go back up now. This place stinks."))
     releaseall
     end
 }

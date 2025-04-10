@@ -11,20 +11,20 @@ script FennilahlTown_EventScript_MartEmployeeRoadBlock {
 }
 
 script FennilahlTown_EventScript_Man {
-    msgbox(format("I was watching the news the other day. They say that the Pokemon Psychologist has gone missing. Who? Professor Tenebris of course!"), MSGBOX_NPC)
+    msgbox(format("I was watching the news the other day. They say that the Pokémon Psychologist has gone missing. Who? Professor Tenebris of course!"), MSGBOX_NPC)
     end
 }
 
 script FennilahlTown_EventScript_Woman {
     if (flag(FLAG_FENNILAHL_CUTEMONGIFT)){
-        msgbox(format("If your Pokemon hold a Soothe Bell, they'll become attached to you faster!"), MSGBOX_NPC)
+        msgbox(format("If your Pokémon hold a Soothe Bell, they'll become attached to you faster!"), MSGBOX_NPC)
     } else {
         lockall
         faceplayer
-        msgbox(format("My, that's such a cute little Pokemon you have with you! Here, use this and treat it with care, okay?"))
+        msgbox(format("My, that's such a cute little Pokémon you have with you! Here, use this and treat it with care, okay?"))
         giveitem(ITEM_SOOTHE_BELL)
         setflag(FLAG_FENNILAHL_CUTEMONGIFT)
-        msgbox(format("If your Pokemon hold a Soothe Bell, they'll become attached to you faster!"), MSGBOX_NPC)
+        msgbox(format("If your Pokémon hold a Soothe Bell, they'll become attached to you faster!"), MSGBOX_NPC)
     }
     end
 }
@@ -42,10 +42,10 @@ script FennilahlTown_EventScript_HikerTunnel {
 
 script Fennilahl_Breech_StartQuest{
 
-    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small pink Pokemon took it and ran away! And I don't have any Pokemon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me?"), MSGBOX_YESNO)
+    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small pink Pokémon took it and ran away! And I don't have any Pokémon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokemon run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
+        msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokémon run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {
@@ -80,7 +80,7 @@ script Fennilahl_Breech_QuestInProgress{
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
         applymovement(LOCALID_CLEF, moves(jump_in_place_up * 3))
         waitmovement(0)
-        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokemon okay? I don't like battling. You'll be my hiking partner!"))        
+        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokémon okay? I don't like battling. You'll be my hiking partner!"))        
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)

@@ -184,7 +184,7 @@ MirrohInterior_2F_Trainer_D_Text_2:
 MirrohInterior_2F_Trainer_E_Text_0:
 # 55 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Why are you here? Are you trying to\n"
-	.string "steal my Pokemon like those Team\l"
+	.string "steal my Pokémon like those Team\l"
 	.string "Somber grunts?$"
 
 MirrohInterior_2F_Trainer_E_Text_1:

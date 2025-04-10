@@ -15,7 +15,7 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokemon Gym there. Let me practice with you!"), "Looks like I need more practice!")
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokémon Gym there. Let me practice with you!"), "Looks like I need more practice!")
     msgbox(format("I heard that the Gastree City Gym Leader uses FIRE type Pokemon."))
     release
     end
@@ -24,8 +24,8 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokemon Breeder! All Breeders specialise in one Pokemon variety, such as dog Pokemon, cat Pokemon, or even bear Pokemon! Can you guess my specialty?"), "You guessed it - I love foxes!")
-    msgbox(format("My Pokemon are my most cherised partners!"))
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokémon Breeder! All Breeders specialise in one Pokémon variety, such as dog Pokemon, cat Pokemon, or even bear Pokemon! Can you guess my specialty?"), "You guessed it - I love foxes!")
+    msgbox(format("My Pokémon are my most cherised partners!"))
     release
     end
 

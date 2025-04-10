@@ -68,7 +68,7 @@ script MirrohBaseCamp_EventScript_NPC1{
 script MirrohBaseCamp_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("The Pokemon Graveyard lies ahead. Please be respectful."))
+    msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful."))
     releaseall
     end
 }

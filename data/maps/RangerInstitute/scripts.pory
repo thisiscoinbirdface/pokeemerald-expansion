@@ -102,7 +102,7 @@ script RangerInstitute_1F_InterviewQ1{
 script RangerInstitute_1F_InterviewQ2{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these Pokemon does NOT have a normal evolution?"))
+    msgbox(format("Q: Which of these Pokémon does NOT have a normal evolution?"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TOXEL", "KOFFING", "ABSOL", "CYNDAQUIL")
 
     //Check answers
@@ -117,7 +117,7 @@ script RangerInstitute_1F_InterviewQ2{
 script RangerInstitute_1F_InterviewQ3{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these Pokemon is GHOST type?"))
+    msgbox(format("Q: Which of these Pokémon is GHOST type?"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "DHELMISE", "ZIGZAGOON", "DELPHOX", "NINETALES")
 
     //Check answers
@@ -160,7 +160,7 @@ script RangerInstitute_1F_InterviewQ5{
 }
 
 script RangerInstitute_1F_InterviewPass{
-    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokemon RANGER RECRUIT. Welcome to the Cormoria Pokemon Ranger Institute! Please head upstairs for your induction."))
+    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokémon RANGER RECRUIT. Welcome to the Cormoria Pokémon Ranger Institute! Please head upstairs for your induction."))
     releaseall
     setvar(VAR_RANGER_INSTITUTE, 2)
 }
@@ -169,14 +169,14 @@ script RangerInstitute_1F_InterviewPass{
 script RangerInstitute_1F_NPC1{
     lockall
     faceplayer
-    msgbox(format("Should I become a Pokemon Ranger? It's really hard to get in...I don't know if I can do it."))
+    msgbox(format("Should I become a Pokémon Ranger? It's really hard to get in...I don't know if I can do it."))
     releaseall
     end
 }
 script RangerInstitute_1F_NPC2{
     lockall
     faceplayer
-    msgbox(format("My interview is coming up. I'm nervous - I really want to become a Pokemon Ranger so bad! Their Pokemon are so cool! TAUROS! KANGASKHAN!"))
+    msgbox(format("My interview is coming up. I'm nervous - I really want to become a Pokémon Ranger so bad! Their Pokémon are so cool! TAUROS! KANGASKHAN!"))
     releaseall
     end
 }
@@ -193,7 +193,7 @@ script RangerInstitute_1F_BlockerBasement{
     lockall
     faceplayer
     msgbox(format("Sorry, this area is closed off for repairs."))
-//    msgbox(format("Sorry, only Pokemon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+//    msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
     releaseall
     end
 }
@@ -202,15 +202,15 @@ script RangerInstitute_1F_BlockerUpstairs{
     faceplayer
 
     if (var(VAR_RANGER_INSTITUTE) == 0){
-        msgbox(format("Sorry, only Pokemon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("Sorry, only Pokemon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 2){
-        msgbox(format("You're not a fully-fledged Pokemon RANGER yet - just a RECRUIT! So I'll be keeping an eye on you."))
+        msgbox(format("You're not a fully-fledged Pokémon RANGER yet - just a RECRUIT! So I'll be keeping an eye on you."))
     }
     releaseall
     end
@@ -222,7 +222,7 @@ script RangerInstitute_1F_TriggerUpstairs{
     lockall
     applymovement(6, moves(face_left emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("Sorry, only Pokemon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+    msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -327,7 +327,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     release    
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the RANGER INSTITUTE, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokemon Rangers do?"))
+    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the RANGER INSTITUTE, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokémon Rangers do?"))
     release
     applymovement(LOCALID_RANGER1, moves(walk_left face_down))
     waitmovement(0)
@@ -339,15 +339,15 @@ script RangerInstitute_2F_EventScript_Welcome{
     release
     giveitem(ITEM_MACH_BIKE)
     giveitem(ITEM_RANGER_CARD)
-    msgbox(format("RAVINE: The RANGER BIKE and RANGER CARD - the two emblems of a Pokemon Ranger in Cormoria! The RANGER BIKE will allow you to speedily traverse all of Cormoria, and the RANGER CARD lets everyone know you're a proper Pokemon Ranger! You can access the other RANGER INSTITUTES with this."))
+    msgbox(format("RAVINE: The RANGER BIKE and RANGER CARD - the two emblems of a Pokémon Ranger in Cormoria! The RANGER BIKE will allow you to speedily traverse all of Cormoria, and the RANGER CARD lets everyone know you're a proper Pokémon Ranger! You can access the other RANGER INSTITUTES with this."))
     release
     delay(32)     
-    msgbox(format("RAVINE: Now, do you know what we Pokemon Rangers do? No? Follow me."))
+    msgbox(format("RAVINE: Now, do you know what we Pokémon Rangers do? No? Follow me."))
     release
     delay(16)
     applymovement(LOCALID_RAVINE, moves(walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down walk_right * 5 walk_down * 5 walk_left * 4))
-    msgbox(format("RAVINE: As Pokemon Rangers, our job is to protect nature and maintain harmony between people, Pokemon, and the environment. Whether it's rescuing Pokemon in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both Pokemon and the world around us makes it all worthwhile."))
+    msgbox(format("RAVINE: As Pokémon Rangers, our job is to protect nature and maintain harmony between people, Pokemon, and the environment. Whether it's rescuing Pokémon in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both Pokémon and the world around us makes it all worthwhile."))
     release
     msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release

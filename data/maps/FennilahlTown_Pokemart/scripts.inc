@@ -178,7 +178,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 
 FennilahlTown_Pokemart_NPC_Text_0:
 # 64 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.string "This Pokemart doesn't sell much\n"
+	.string "This Poké Mart doesn't sell much\n"
 	.string "because we're in a remote town. But you\l"
 	.string "can find these mint vending machines\l"
 	.string "everywhere! It scans your Trainer Card\l"

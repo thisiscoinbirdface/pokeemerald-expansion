@@ -417,7 +417,7 @@ script Common_EventScript_NurseJoyOnRoute{
 
     } else {
         //don't heal
-        msgbox(format("Sorry, you don't have a HEAL PASS. Please visit a POKéMON CENTER to receive a HEAL PASS."))
+        msgbox(format("Sorry, you don't have a HEAL PASS. Please visit a Pokémon  CENTER to receive a HEAL PASS."))
         release
     }
     return
@@ -685,7 +685,7 @@ script Common_EventScript_SettingsGuy{
     lockall
     faceplayer
 
-    msgbox(format("Hello! I can enable or disable Exp All. If enabled, the Exp Share allows all Pokemon to gain experience. If disabled, the Exp share will only give experience to the Pokemon holding it. Would you like to toggle Exp All?"))
+    msgbox(format("Hello! I can enable or disable Exp All. If enabled, the Exp Share allows all Pokémon to gain experience. If disabled, the Exp share will only give experience to the Pokémon holding it. Would you like to toggle Exp All?"))
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "EXP ALL ON", "EXP ALL OFF")
 
     if (var(VAR_RESULT) == 0){

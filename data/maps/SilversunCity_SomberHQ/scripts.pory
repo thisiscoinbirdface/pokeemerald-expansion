@@ -230,7 +230,7 @@ script SomberHQ_NPC3{
 script SomberHQ_NPC4{
     lockall
     faceplayer
-    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous Pokemon down there."))
+    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous Pokémon down there."))
     releaseall
     end
 }

@@ -182,7 +182,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     delay(60)
     applymovement(LOCALID_MELEA, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful Pokemon this world has ever seen. And of them all, one stood the strongest. The fiercest, most vicious. Long gone, extinct today. But in the hands of people with purpose, such power can be used to do great things..."))
+    msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful Pokémon this world has ever seen. And of them all, one stood the strongest. The fiercest, most vicious. Long gone, extinct today. But in the hands of people with purpose, such power can be used to do great things..."))
     release
 
             //Set weather beforehand for correct timing

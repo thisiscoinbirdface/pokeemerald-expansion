@@ -78,7 +78,7 @@ script WinterlilyHollow_NPC1{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
         msgbox(format("Is VINIEL going to be able to handle all those Team Somber grunts alone? I wish we could help but he's far stronger than any of us. We'd only get in the way!"))
     } else {
-        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity! VINIEL's Pokemon powers this town.")) 
+        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity! VINIEL's Pokémon powers this town.")) 
     }
 
     releaseall
@@ -99,9 +99,9 @@ script WinterlilyHollow_NPC3{
     lockall
     faceplayer
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokemon saying it was too weak! How terrible! It's here somewhere in the town."))
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak! How terrible! It's here somewhere in the town."))
     } else {
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokemon saying it was too weak! How terrible! It's here somewhere in the town."))
+        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak! How terrible! It's here somewhere in the town."))
     }
     releaseall
     end

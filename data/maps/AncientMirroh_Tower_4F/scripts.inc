@@ -450,7 +450,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_2:
 	.string "today.\p"
 	.string "MELEA: Your Professor Tenebris\n"
 	.string "unlocked the latent potential within\l"
-	.string "the dreams and memories of Pokemon\l"
+	.string "the dreams and memories of Pokémon\l"
 	.string "today and created a way to visit the\l"
 	.string "past!\p"
 	.string "MELEA: It's like science\n"

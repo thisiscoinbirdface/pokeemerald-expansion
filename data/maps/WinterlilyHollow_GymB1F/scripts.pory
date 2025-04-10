@@ -125,12 +125,12 @@ script WinterlilyHollowGym_LeaderBattle {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("The CINDER BADGE increases the ATK of all your Pokemon and lets you control Pokemon upto lv. 20."))
+        msgbox(format("The CINDER BADGE increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
         msgbox(format("And I'd also like to give you this."))
         release
         //Give TM also
         giveitem(ITEM_TM_SUNNY_DAY)
-        msgbox(format("This TM will let your Pokemon bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        msgbox(format("This TM will let your Pokémon bring sunlight on the battlefield, powering up FIRE-type moves!"))
         release
 
         //Bye-bye

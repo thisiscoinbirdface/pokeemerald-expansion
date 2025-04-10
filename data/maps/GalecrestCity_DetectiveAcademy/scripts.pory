@@ -41,7 +41,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
 //BREECH
 script GalecrestCity_DetectiveAcademy_Breech{
-    msgbox(format("BREECH: It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokemon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pBREECH: Not that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
+    msgbox(format("BREECH: It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokémon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pBREECH: Not that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
     applymovement(13, moves(face_left))
     end
 }

@@ -63,7 +63,7 @@ script MtMirrohExterior_BreechTrigger{
 //Trainers
 script MtMirrohExterior_Trainer_A{
     trainerbattle_single(TRAINER_MIRROHEXT_A, format("Once you jump over that ledge over there, you can't come back. So let me battle you before you go!"), "Okay, you can go!")
-    msgbox(format("I'm training here so that I can safely go back to the Pokemon Center if I need to."))
+    msgbox(format("I'm training here so that I can safely go back to the Pokémon Center if I need to."))
     releaseall
     end
 }

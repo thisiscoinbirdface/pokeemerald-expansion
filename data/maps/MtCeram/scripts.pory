@@ -382,7 +382,7 @@ script MtCeram_TrainerBattle_A {
 
 script MtCeram_TrainerBattle_B {
     trainerbattle_single(TRAINER_MTCERAM_B, format("I love collecting rare Pokemon. Bet your eyes will pop when you see what I caught here!"), format("Is rarity not enough?"))
-    msgbox(format("I love my Pokemon as friends and partners...and collectibles!"))
+    msgbox(format("I love my Pokémon as friends and partners...and collectibles!"))
     release
     end
 }
@@ -397,8 +397,8 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokemon here but their hair is getting singed in the heat!"), format("I should go back down."))
-    msgbox(format("Most Pokemon Breeders specialise in a single group. I specialise in rearing sheep!"))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair is getting singed in the heat!"), format("I should go back down."))
+    msgbox(format("Most Pokémon Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
 }

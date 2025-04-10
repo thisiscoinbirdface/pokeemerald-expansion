@@ -78,11 +78,11 @@ script SilversunCity_Houses_NPC1{
     end
 }
 script SilversunCity_Houses_NPC2{
-    msgbox(format("They say dangerous Pokemon come out from the sewers from time to time, like the SEWER SCOURGE. Apparently that's not even a Pokemon, it's an evil spirit! I don't let my child play anywhere near it!"), MSGBOX_NPC)
+    msgbox(format("They say dangerous Pokémon come out from the sewers from time to time, like the SEWER SCOURGE. Apparently that's not even a Pokemon, it's an evil spirit! I don't let my child play anywhere near it!"), MSGBOX_NPC)
     end
 }
 script SilversunCity_Houses_NPC3{
-    msgbox(format("I really want a Toxel as my first Pokemon but Mom will never let me have one."), MSGBOX_NPC)
+    msgbox(format("I really want a Toxel as my first Pokémon but Mom will never let me have one."), MSGBOX_NPC)
     end
 }
 
@@ -106,7 +106,7 @@ script SilversunCity_Houses_DuskullNPC1{
         lockall
         // applymovement(6, moves(faceplayer))
         // applymovement(7, moves(faceplayer))
-        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokemon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
+        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokémon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can do things normally now. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
         release
         giveegg(SPECIES_HONEDGE)
         setvar(VAR_SEWERS_DUSKULL, 4)
@@ -120,7 +120,7 @@ script SilversunCity_Houses_Husband{
     if (var(VAR_SEWERS_DUSKULL) == 4){
         // applymovement(6, moves(faceplayer))
         // applymovement(7, moves(faceplayer))
-        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokemon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can live better. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
+        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokémon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can live better. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
         release
         //Switch to black market pass
         giveegg(SPECIES_HONEDGE)

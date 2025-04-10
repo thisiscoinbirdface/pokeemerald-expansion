@@ -202,20 +202,26 @@ WhiteSign_SilversunCity_Sewers::
 	end
 
 
-WhiteSign_SilversunCity_Gym::
+WhiteSign_SilversunCity_Tutor::
 # 214 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_SilversunCity_Tutor_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_SilversunCity_Gym::
+# 219 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverNorth::
-# 219 "data//scripts/customscripts_signs.pory"
+# 224 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverNorth_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverSouth::
-# 224 "data//scripts/customscripts_signs.pory"
+# 229 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverSouth_Text_0, MSGBOX_SIGN
 	end
 
@@ -401,20 +407,25 @@ WhiteSign_SilversunCity_Sewers_Text_0:
 	.string "Silversun Sewers\n"
 	.string "Entry for authorised personnel only.$"
 
-WhiteSign_SilversunCity_Gym_Text_0:
+WhiteSign_SilversunCity_Tutor_Text_0:
 # 214 "data//scripts/customscripts_signs.pory"
+	.string "Move Maniac.\n"
+	.string "Master of Myriad Moves$"
+
+WhiteSign_SilversunCity_Gym_Text_0:
+# 219 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Gym\n"
 	.string "Leader: Gloria.$"
 
 WhiteSign_HoyaRiverNorth_Text_0:
-# 219 "data//scripts/customscripts_signs.pory"
+# 224 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River North Crossin\n"
 	.string "No swimming in these waters!\p"
 	.string "{RIGHT_ARROW}Silversun City.\n"
 	.string "{DOWN_ARROW}Route 6.$"
 
 WhiteSign_HoyaRiverSouth_Text_0:
-# 224 "data//scripts/customscripts_signs.pory"
+# 229 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River South Crossing\n"
 	.string "No swimming in these waters!\p"
 	.string "{LEFT_ARROW}Pelluca City.\n"

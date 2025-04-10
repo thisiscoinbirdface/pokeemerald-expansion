@@ -2,7 +2,7 @@ mapscripts FennilahlTown_House3_MapScripts{}
 
 
 script FennilahlTown_House3_NPC1{
-    msgbox(format("Did you know that some Pokemon can Mega evolve?"), MSGBOX_NPC)
+    msgbox(format("Did you know that some Pokémon can Mega evolve?"), MSGBOX_NPC)
     end
 }
 

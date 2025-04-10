@@ -118,7 +118,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my Pokemon with me.\pARIANA: Serves you right! Now move over and give our shopkeeper back."))
+    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my Pokémon with me.\pARIANA: Serves you right! Now move over and give our shopkeeper back."))
     release
     delay(16)
     applymovement(LOCALID_GRUNT4, moves(face_left))
@@ -206,7 +206,7 @@ script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My Pokemon were too weak!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My Pokémon were too weak!"))
     msgbox(format("You're too late - the boss is already with the shopkeeper."))
     release
     end

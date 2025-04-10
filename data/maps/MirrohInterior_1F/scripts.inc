@@ -140,8 +140,8 @@ MirrohInterior_1F_Trainer_B_Text_2:
 
 MirrohInterior_1F_Trainer_C_Text_0:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I may switch to ICE type Pokemon after\n"
-	.string "seeing the Pokemon here!$"
+	.string "I may switch to ICE type Pokémon after\n"
+	.string "seeing the Pokémon here!$"
 
 MirrohInterior_1F_Trainer_C_Text_1:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -181,8 +181,8 @@ MirrohInterior_1F_Trainer_E_Text_2:
 MirrohInterior_1F_NPC_A_Text_0:
 # 81 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I'm trekking to Winterlily Hollow! But my\n"
-	.string "GRASS type Pokemon can't deal with all\l"
-	.string "the ICE type Pokemon around here...$"
+	.string "GRASS type Pokémon can't deal with all\l"
+	.string "the ICE type Pokémon around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"

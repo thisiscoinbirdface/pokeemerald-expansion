@@ -10,872 +10,886 @@ SilversunCity_BlindOrphanage_PokedexGameStart::
 # 9 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 0
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_2
-# 14 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 13 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_5
-# 20 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 18 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 4
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_8
-# 25 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 23 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 3
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_11
-# 53 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 51 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 2
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_14
-# 76 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 74 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_21
-# 82 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_10
-# 83 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 79 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 1
-# 84 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	releaseall
+# 80 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_10, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_2:
 # 10 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_0
-# 11 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_0, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_5:
-# 15 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_0
-# 16 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
+# 14 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_0, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_8:
-# 21 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_1
+# 19 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_1, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_11:
-# 26 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 24 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_2, MSGBOX_YESNO
-# 27 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 25 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_17
-# 31 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 29 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	checkitem ITEM_ORPHANAGE_BOOK
-# 32 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 30 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_27
-# 45 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_6
+# 43 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_6, MSGBOX_NPC
 SilversunCity_BlindOrphanage_PokedexGameStart_16:
-# 49 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 47 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_14:
-# 54 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 52 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_2, MSGBOX_YESNO
-# 55 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 53 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_24
-# 59 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 57 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	checkitem ITEM_ORPHANAGE_BOOK
-# 60 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 58 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_BlindOrphanage_PokedexGameStart_30
-# 68 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_6
+# 66 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_6, MSGBOX_NPC
 SilversunCity_BlindOrphanage_PokedexGameStart_23:
-# 72 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 70 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_17:
-# 28 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 26 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_3
 	goto SilversunCity_BlindOrphanage_PokedexGameStart_16
 
 SilversunCity_BlindOrphanage_PokedexGameStart_21:
-# 77 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_9
-# 78 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
+# 75 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_9, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_24:
-# 56 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 54 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_3
 	goto SilversunCity_BlindOrphanage_PokedexGameStart_23
 
 SilversunCity_BlindOrphanage_PokedexGameStart_27:
-# 33 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 31 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	removeitem ITEM_ORPHANAGE_BOOK
-# 34 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 32 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_4, MSGBOX_SIGN
+# 33 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
+# 34 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_5
 # 35 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 # 36 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_5
-# 37 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 38 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 4
-# 41 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 39 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	goto_if_set FLAG_SILVERSUN_BRAILLE_1_DONE, SilversunCity_BlindOrphanage_PokedexGameStart_33
 	goto SilversunCity_BlindOrphanage_PokedexGameStart_16
 
 SilversunCity_BlindOrphanage_PokedexGameStart_30:
-# 61 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 59 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	removeitem ITEM_ORPHANAGE_BOOK
-# 62 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 60 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_7, MSGBOX_SIGN
+# 61 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
+# 62 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_8
 # 63 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 # 64 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_PokedexGameStart_Text_8
-# 65 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 66 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto SilversunCity_BlindOrphanage_PokedexGameStart_23
 
 SilversunCity_BlindOrphanage_PokedexGameStart_33:
-# 42 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 40 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3
 	goto SilversunCity_BlindOrphanage_PokedexGameStart_16
 
 
 SilversunCity_Book1::
-# 89 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 85 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 90 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 86 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	braillemessage Silversun_BrailleBook1
-# 91 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 87 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitbuttonpress
-# 92 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 88 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	closebraillemessage
-# 94 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 90 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto_if_eq SilversunCity_Book1_2
 SilversunCity_Book1_1:
-# 103 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 99 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Book1_2:
-# 95 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 91 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_0, MSGBOX_YESNO
-# 96 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 92 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Book1_4
 	goto SilversunCity_Book1_1
 
 SilversunCity_Book1_4:
-# 97 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 93 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 2
-# 98 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 94 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_1
-# 99 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 95 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	additem ITEM_ORPHANAGE_BOOK
 	goto SilversunCity_Book1_1
 
 
 SilversunCity_Book2::
-# 108 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 104 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 109 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 105 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	braillemessage Silversun_BrailleBook2
-# 110 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 106 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitbuttonpress
-# 111 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 107 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	closebraillemessage
-# 113 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 109 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto_if_eq SilversunCity_Book2_2
 SilversunCity_Book2_1:
-# 122 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 118 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Book2_2:
-# 114 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 110 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_0, MSGBOX_YESNO
-# 115 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 111 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Book2_4
 	goto SilversunCity_Book2_1
 
 SilversunCity_Book2_4:
-# 116 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 112 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 2
-# 117 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 113 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_1
-# 118 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 114 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	additem ITEM_ORPHANAGE_BOOK
 	goto SilversunCity_Book2_1
 
 
 SilversunCity_Book3::
-# 127 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 123 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 128 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 124 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	braillemessage Silversun_BrailleBook3
-# 129 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 125 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitbuttonpress
-# 130 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 126 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	closebraillemessage
-# 132 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 128 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto_if_eq SilversunCity_Book3_2
 SilversunCity_Book3_1:
-# 141 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 137 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Book3_2:
-# 133 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 129 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_0, MSGBOX_YESNO
-# 134 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 130 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Book3_4
 	goto SilversunCity_Book3_1
 
 SilversunCity_Book3_4:
-# 135 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 131 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 3
-# 136 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 132 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_1
-# 137 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 133 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	additem ITEM_ORPHANAGE_BOOK
 	goto SilversunCity_Book3_1
 
 
 SilversunCity_Book4::
-# 146 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 142 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 147 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 143 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	braillemessage Silversun_BrailleBook4
-# 148 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 144 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitbuttonpress
-# 149 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 145 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	closebraillemessage
-# 151 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 147 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 1
 	goto_if_eq SilversunCity_Book4_2
 SilversunCity_Book4_1:
-# 160 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 156 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Book4_2:
-# 152 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 148 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_0, MSGBOX_YESNO
-# 153 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 149 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Book4_4
 	goto SilversunCity_Book4_1
 
 SilversunCity_Book4_4:
-# 154 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 150 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_BRAILLE_BOOK, 2
-# 155 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 151 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_Book1_Text_1
-# 156 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 152 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	additem ITEM_ORPHANAGE_BOOK
 	goto SilversunCity_Book4_1
 
 
 SilversunCity_BlindOrphanage_BrailleGameStart::
-# 166 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	lockall
+# 162 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_BRAILLE_1_DONE, SilversunCity_BlindOrphanage_BrailleGameStart_2
 # 167 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	lockall
+# 168 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 169 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 170 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 0
-	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_2
-# 174 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
 	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_5
-# 180 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_BRAILLE_1_DONE, SilversunCity_BlindOrphanage_BrailleGameStart_8
-# 188 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 175 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
+	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_8
+# 181 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_2, MSGBOX_YESNO
-# 190 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 183 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_11
-# 201 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 194 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_4
-# 202 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 195 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 203 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 196 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 30
-# 204 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 197 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	applymovement 5, SilversunCity_BlindOrphanage_BrailleGameStart_Movement_0
-# 205 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 198 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_5
-# 206 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 199 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 207 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 200 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 24
-# 208 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 201 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	applymovement 8, SilversunCity_BlindOrphanage_BrailleGameStart_Movement_1
-# 209 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 202 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 24
-# 210 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 203 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_6
-# 211 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 204 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 212 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 205 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 16
-# 213 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 206 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_7
+# 207 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
+# 210 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	braillemessage Silversun_Braille_Quiz1
+# 211 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	waitbuttonpress
+# 212 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	closebraillemessage
+# 213 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_8
 # 214 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 217 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	braillemessage Silversun_Braille_Quiz1
-# 218 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	waitbuttonpress
-# 219 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	closebraillemessage
+# 215 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_9
+# 216 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
 # 220 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_8
-# 221 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 222 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_9
-# 223 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 227 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	braillemessage Silversun_Braille_Quiz2
-# 228 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 221 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitbuttonpress
-# 229 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 222 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	closebraillemessage
-# 230 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 223 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_10
-# 231 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 224 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 232 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 225 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_9
+# 226 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
+# 229 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	braillemessage Silversun_Braille_Quiz3
+# 230 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	waitbuttonpress
+# 231 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	closebraillemessage
+# 232 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_11
 # 233 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 236 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	braillemessage Silversun_Braille_Quiz3
-# 237 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	waitbuttonpress
-# 238 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	closebraillemessage
-# 239 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_11
-# 240 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 241 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 234 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 16
-# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 235 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_12
-# 243 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 236 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 244 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 237 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 16
-# 245 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 238 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 248 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 241 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_13
-# 249 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_BlindOrphanage_BrailleGameStart_Text_14, SilversunCity_BlindOrphanage_BrailleGameStart_Text_15, SilversunCity_BlindOrphanage_BrailleGameStart_Text_16, SilversunCity_BlindOrphanage_BrailleGameStart_Text_17
-# 251 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 244 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_14
-# 261 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 255 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_19
 SilversunCity_BlindOrphanage_BrailleGameStart_13:
-# 264 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 258 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_BlindOrphanage_BrailleGameStart_2:
-# 170 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_0
-# 171 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
+# 163 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_0, MSGBOX_NPC
 	end
 
 SilversunCity_BlindOrphanage_BrailleGameStart_5:
-# 175 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_0
-# 176 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 171 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_1
+# 172 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 	end
 
 SilversunCity_BlindOrphanage_BrailleGameStart_8:
-# 181 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 176 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_1
-# 182 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	applymovement 5, SilversunCity_BlindOrphanage_BrailleGameStart_Movement_0
-# 183 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	waitmovement 0
-# 184 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 177 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 	end
 
 SilversunCity_BlindOrphanage_BrailleGameStart_11:
-# 191 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 184 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_3
-# 192 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 185 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 193 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 186 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	applymovement 5, SilversunCity_BlindOrphanage_BrailleGameStart_Movement_0
-# 194 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 187 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	waitmovement 0
-# 195 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 188 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 197 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 190 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_BlindOrphanage_BrailleGameStart_14:
-# 252 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 245 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_BrailleGameStart_Text_18
-# 253 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 246 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 256 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 248 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	setflag FLAG_SILVERSUN_BRAILLE_1_DONE
+# 250 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_BRAILLE_BOOK, 4
 	goto_if_eq SilversunCity_BlindOrphanage_BrailleGameStart_17
 	goto SilversunCity_BlindOrphanage_BrailleGameStart_13
 
 SilversunCity_BlindOrphanage_BrailleGameStart_17:
-# 257 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 251 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3
 	goto SilversunCity_BlindOrphanage_BrailleGameStart_13
 
 
 SilversunCity_BlindOrphanage_NPC_1::
-# 271 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 265 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 272 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 266 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 273 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 267 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_NPC_1_Text_0
-# 274 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 268 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_NPC_2::
-# 279 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 273 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 280 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 274 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 281 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 275 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_NPC_2_Text_0
-# 282 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 276 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_NPC_3::
-# 287 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 281 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 288 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 282 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 289 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 283 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_NPC_3_Text_0
-# 290 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 284 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_NPC_5::
-# 295 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 289 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 296 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 290 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 297 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 291 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_NPC_5_Text_0
-# 298 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 292 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_NPC_6::
-# 303 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 297 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 304 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 298 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 305 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 299 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_NPC_6_Text_0
-# 306 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 300 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_Ralts::
-# 311 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 305 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 312 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 306 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
-# 313 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 307 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_Ralts_Text_0
-# 314 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 308 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_Noibat::
-# 319 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 313 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 320 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 314 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	playmoncry SPECIES_NOIBAT, CRY_MODE_NORMAL
-# 321 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 315 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_Noibat_Text_0
-# 322 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 316 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_Furfrou::
-# 327 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 321 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 328 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 322 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	playmoncry SPECIES_FURFROU, CRY_MODE_NORMAL
-# 329 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 323 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_Furfrou_Text_0
-# 330 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 324 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_BlindOrphanage_OldManQuest::
-# 349 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 343 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	lockall
-# 350 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 344 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	faceplayer
-# 352 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 346 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_2
 SilversunCity_BlindOrphanage_OldManQuest_1:
-# 356 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 350 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 0
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_5
 SilversunCity_BlindOrphanage_OldManQuest_4:
-# 362 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 356 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_8
 SilversunCity_BlindOrphanage_OldManQuest_7:
-# 372 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 370 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_11
 SilversunCity_BlindOrphanage_OldManQuest_10:
-# 378 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 376 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
-	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_14
-SilversunCity_BlindOrphanage_OldManQuest_13:
-# 392 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_18
+SilversunCity_BlindOrphanage_OldManQuest_17:
+# 389 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_BlindOrphanage_OldManQuest_2:
-# 353 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 347 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_0
 	goto SilversunCity_BlindOrphanage_OldManQuest_1
 
 SilversunCity_BlindOrphanage_OldManQuest_5:
-# 357 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 351 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_1
-# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 352 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
-# 359 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 353 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	delay 24
 	goto SilversunCity_BlindOrphanage_OldManQuest_4
 
 SilversunCity_BlindOrphanage_OldManQuest_8:
-# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 357 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_2
-# 364 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 368 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_BlindOrphanage_OldManQuest_Text_3, SilversunCity_BlindOrphanage_OldManQuest_Text_4
+# 360 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_14
+# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	giveitem ITEM_MUSCLE_BAND
+SilversunCity_BlindOrphanage_OldManQuest_13:
+# 365 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4
+# 366 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_5, MSGBOX_NPC
 	goto SilversunCity_BlindOrphanage_OldManQuest_7
 
 SilversunCity_BlindOrphanage_OldManQuest_11:
-# 373 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_3
-# 374 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_6
+# 372 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 	goto SilversunCity_BlindOrphanage_OldManQuest_10
 
 SilversunCity_BlindOrphanage_OldManQuest_14:
-# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_4, MSGBOX_YESNO
-# 380 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_16
-# 388 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_6
-	goto SilversunCity_BlindOrphanage_OldManQuest_13
-
-SilversunCity_BlindOrphanage_OldManQuest_16:
-# 381 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_5
-# 382 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	release
-# 383 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 361 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	giveitem ITEM_WISE_GLASSES
-# 385 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2
 	goto SilversunCity_BlindOrphanage_OldManQuest_13
 
+SilversunCity_BlindOrphanage_OldManQuest_18:
+# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_7, MSGBOX_YESNO
+# 378 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_20
+# 385 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_9
+	goto SilversunCity_BlindOrphanage_OldManQuest_17
 
-# 182 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_20:
+# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_8
+# 380 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	release
+# 382 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2
+	goto SilversunCity_BlindOrphanage_OldManQuest_17
+
+
+# 186 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 SilversunCity_BlindOrphanage_BrailleGameStart_Movement_0:
-# 182 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 186 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	face_left
 	step_end
 
-# 208 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 201 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 SilversunCity_BlindOrphanage_BrailleGameStart_Movement_1:
-# 208 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 201 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	jump_in_place_right
 	step_end
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_0:
 # 10 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I'm looking for a book on all the\n"
-	.string "Pokemon in Cormoria! But I'm too short\l"
+	.string "Pokémon in Cormoria! But I'm too short\l"
 	.string "to touch the braille on the book\l"
 	.string "covers...$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_1:
-# 21 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 19 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "This book is hard to understand! I wish\n"
-	.string "I could touch all these Pokemon so I\l"
+	.string "I could touch all these Pokémon so I\l"
 	.string "know what they feel like. But the\l"
 	.string "teacher says that's dangerous too!\l"
-	.string "What if I touch a PINCURCHIN or a\l"
-	.string "CORSOLA?$"
+	.string "What if I touch a Pincurchin or a\l"
+	.string "Corsola?$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_2:
-# 26 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 24 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Is it you? Did you bring the book?$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_3:
-# 28 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 26 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "...oh, okay. That's fine.$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_4:
-# 34 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 32 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "{PLAYER} gave the boy a copy of\n"
 	.string "POKEMON A TO Z.$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_5:
-# 36 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 34 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Yayy! Thank you!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_6:
-# 45 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 43 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Hey, you didn't bring a book!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_7:
-# 62 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 60 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "{PLAYER} gave the boy a book.$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_8:
-# 64 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 62 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Hey, this isn't it! I want the right\n"
 	.string "book!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_9:
-# 77 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I want a book on all the Pokemon in\n"
+# 75 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "I want a book on all the Pokémon in\n"
 	.string "Cormoria!$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_10:
-# 82 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 80 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I'm looking for a book on all the\n"
-	.string "Pokemon in Cormoria! But I'm too short\l"
+	.string "Pokémon in Cormoria! But I'm too short\l"
 	.string "to touch the braille on the book covers.\l"
 	.string "If you find me one, can you bring it to\l"
 	.string "me?$"
 
 SilversunCity_Book1_Text_0:
-# 95 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 91 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Take this book?$"
 
 SilversunCity_Book1_Text_1:
-# 98 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 94 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "{PLAYER} took a book from the shelf.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_0:
-# 170 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I work at the SILVERSUN THEATRE, but\n"
-	.string "on the weekends, I teach braille to the\l"
-	.string "children here. It's very fulfilling!$"
+# 163 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Sheena is preparing for her next test.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_1:
-# 181 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "SHEENA is preparing for her next test.$"
+# 171 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "I work at the Silversun Theater, but on\n"
+	.string "the weekends, I teach braille to the\l"
+	.string "children here. It's very fulfilling!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_2:
-# 188 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "TEACHER: SHEENA is about to take a\n"
+# 181 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "TEACHER: Sheena is about to take a\n"
 	.string "braille test. Would you like to\l"
 	.string "volunteer and help out?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_3:
-# 191 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 184 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: Okay.\n"
-	.string "SHEENA, let's continue.$"
+	.string "Sheena, let's continue.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_4:
-# 201 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "TEACHER: Excellent. SHEENA has to read\n"
+# 194 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "TEACHER: Excellent. Sheena has to read\n"
 	.string "three sentences in braille correctly.\l"
-	.string "I'll give SHEENA the questions, and you\l"
+	.string "I'll give Sheena the questions, and you\l"
 	.string "keep a tally of her answers, okay?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_5:
-# 205 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "TEACHER: Are you ready SHEENA?$"
+# 198 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "TEACHER: Are you ready Sheena?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_6:
-# 210 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 203 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "SHENA: Yes!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_7:
-# 213 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 206 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: Okay then. Here's the first\n"
 	.string "question!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_8:
-# 220 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 213 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "SHEENA: I got it! I got it!\n"
 	.string "AN APPLIN A DAY KEEPS THE DOCTOR AT\l"
 	.string "BAY.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_9:
-# 222 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 215 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: Next question!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_10:
-# 230 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 223 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "SHEENA: I got it! I got it!\n"
 	.string "ROLY POLY WITH ROLYCOLY.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_11:
-# 239 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 232 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "SHEENA: I got it! I got it!\p"
 	.string "FEEBAS EVOLVES WITH A MART PAIL.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_12:
-# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 235 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: And that's all the questions!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_13:
-# 248 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 241 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: So how many did SHEEA get\n"
 	.string "right?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_14:
-# 249 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "0/3$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_15:
-# 249 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "1/3$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_16:
-# 249 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "2/3$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_17:
-# 249 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 242 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "3/3$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_18:
-# 252 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "TEACHER: Yes...looks like SHEENA needs\n"
+# 245 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "TEACHER: Yes...looks like Sheena needs\n"
 	.string "more practice.\p"
 	.string "TEACHER: Thanks for volunteering.\p"
 	.string "SHEENA: Thank you!$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_19:
-# 261 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 255 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "TEACHER: That doesn't seem right. Are\n"
 	.string "you sure you checked her answers\l"
 	.string "correctly?$"
 
 SilversunCity_BlindOrphanage_NPC_1_Text_0:
-# 273 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 267 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "SHEENA: I'm learning braille!$"
 
 SilversunCity_BlindOrphanage_NPC_2_Text_0:
-# 281 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 275 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Sometimes I imagine what colors look\n"
 	.string "like when RALTS sends me warm thoughts.\l"
 	.string "Is yellow warm?$"
 
 SilversunCity_BlindOrphanage_NPC_3_Text_0:
-# 289 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 283 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Many of our children may not see the\n"
 	.string "world, but they feel it - especially\l"
-	.string "when a Pokemon is by their side.$"
+	.string "when a Pokémon is by their side.$"
 
 SilversunCity_BlindOrphanage_NPC_5_Text_0:
-# 297 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 291 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I gave my NOIBAT to the orphanage. Now\n"
 	.string "it helps the kids walk around at night.$"
 
 SilversunCity_BlindOrphanage_NPC_6_Text_0:
-# 305 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 299 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I listen to people's footsteps. Yours\n"
 	.string "sound kind of...bouncy. Are you happy\l"
 	.string "today?$"
 
 SilversunCity_BlindOrphanage_Ralts_Text_0:
-# 313 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 307 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "RALTS is focused intently on its\n"
 	.string "child...perhaps its sending some warm\l"
 	.string "thoughts across.$"
 
 SilversunCity_BlindOrphanage_Noibat_Text_0:
-# 321 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 315 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "NOIBAT looks bored...it must be waiting\n"
 	.string "for night-time!$"
 
 SilversunCity_BlindOrphanage_Furfrou_Text_0:
-# 329 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 323 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "FURFROU barks! And barks again!$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_0:
-# 353 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 347 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Thanks to the efforts of you and\n"
 	.string "everyone else here, the children are\l"
 	.string "doing well.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_1:
-# 357 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 351 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Ah, a visitor? You'll have to speak up,\n"
 	.string "my ears aren't what they used to be...\p"
 	.string "Welcome to my little dream. This\n"
 	.string "place...it's more than walls and windows.\l"
 	.string "It's where light finds those who've\l"
 	.string "never seen it. They told me it was\l"
-	.string "impossible. 'Blind children with\l"
-	.string "Pokémon? Dangerous!' they said. And\l"
-	.string "yet, look around. There's more trust in\l"
-	.string "these halls than in half the world.$"
+	.string "impossible. 'Blind children with Pokémon\l"
+	.string "? Dangerous!' they said. And yet, look\l"
+	.string "around. There's more trust in these\l"
+	.string "halls than in half the world.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_2:
-# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 357 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "The orphanage is really impressed with\n"
 	.string "your work, {PLAYER}. We're ever so\l"
 	.string "grateful. Please accept something as a\l"
-	.string "token of your time.$"
+	.string "token of your time. Since we often\l"
+	.string "receive donations, we have many things\l"
+	.string "lying around. Perhaps you may find one\l"
+	.string "of these useful?$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_3:
-# 373 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "How's the volunteering going?$"
+# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "WISE GLASSES$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_4:
-# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "MUSCLE BAND$"
+
+SilversunCity_BlindOrphanage_OldManQuest_Text_5:
+# 366 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Please visit us again!$"
+
+SilversunCity_BlindOrphanage_OldManQuest_Text_6:
+# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "How's the volunteering going?$"
+
+SilversunCity_BlindOrphanage_OldManQuest_Text_7:
+# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "You've got the look of someone with a\n"
 	.string "kind heart - and strong legs. Both are\l"
 	.string "useful around here. Tell me, would you\l"
@@ -884,8 +898,8 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_4:
 	.string "their Pokémon could use a little extra\l"
 	.string "care.$"
 
-SilversunCity_BlindOrphanage_OldManQuest_Text_5:
-# 381 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_Text_8:
+# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Excellent! Kindness like yours is what\n"
 	.string "keeps us going. You won't have to do\l"
 	.string "much - just lend a hand here and there.\l"
@@ -893,7 +907,7 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_5:
 	.string "help. Come speak to me again once you're\l"
 	.string "finished.$"
 
-SilversunCity_BlindOrphanage_OldManQuest_Text_6:
-# 388 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_Text_9:
+# 385 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Oh well. Whenever you'd like to, we're\n"
 	.string "always looking for help!$"

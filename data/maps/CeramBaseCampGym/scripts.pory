@@ -53,14 +53,14 @@ script CeramBaseCampGym_Guard{
 script CeramBaseCampGym_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I can't battle. Arian tried to teach me but both him and his Pokemon are so intimidating!"))
+    msgbox(format("I can't battle. Arian tried to teach me but both him and his Pokémon are so intimidating!"))
     releaseall
 }
 
 script CeramBaseCampGym_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Why does everyone used FIRE type Pokemon in here? It's already sweltering hot. Our air conditioning bills are too high!"))
+    msgbox(format("Why does everyone used FIRE type Pokémon in here? It's already sweltering hot. Our air conditioning bills are too high!"))
     releaseall
 }
 
@@ -107,7 +107,7 @@ script CeramBaseCampGym_EventScript_NPC_LetterPrint{
             msgbox(format("You'll have to get this letter signed by the assistant manager in the basement."))
         }
     } else {
-        msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials.\p...\pNo, not your trainer card. Don't you have a Pokemon League Pass? You don't? Well then a battle should prove that you really are who you say you are!"))
+        msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials.\p...\pNo, not your trainer card. Don't you have a Pokémon League Pass? You don't? Well then a battle should prove that you really are who you say you are!"))
         release
 
         //battle
@@ -203,12 +203,12 @@ script CeramBaseCampGym_LeaderBattle {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("The CINDER BADGE increases the ATK of all your Pokemon and lets you control Pokemon upto lv. 20."))
+        msgbox(format("The CINDER BADGE increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
         msgbox(format("And I'd also like to give you this."))
         release
         //Give TM also
         giveitem(ITEM_TM_SUNNY_DAY)
-        msgbox(format("This TM will let your Pokemon bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        msgbox(format("This TM will let your Pokémon bring sunlight on the battlefield, powering up FIRE-type moves!"))
         release
 
         //Bye-bye

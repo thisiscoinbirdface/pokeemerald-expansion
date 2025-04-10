@@ -9,7 +9,7 @@ script MirrohBaseCampGym_Leader{
         msgbox(format("CAROLA: Use your power wisely. As for me, it's time to move on."))
     } else {
         //Intro
-        msgbox(format("???: Hmm? A trainer? Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left.\pCARONA: My name is CARONA, trainer. I am the former Leader of the Mirroh Base Camp GYM. The Pokemon league recently decomissioned this gym."))
+        msgbox(format("???: Hmm? A trainer? Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left.\pCARONA: My name is CARONA, trainer. I am the former Leader of the Mirroh Base Camp GYM. The Pokémon league recently decomissioned this gym."))
         release
         delay(60)
         msgbox(format("???: They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, all my trainers left."))
@@ -64,7 +64,7 @@ script MirrohBaseCampGym_Leader{
             //Play gym badge fanfare
             call(Common_EventScript_PlayGymBadgeFanfare)
 
-            msgbox(format("CAROLA: The MEGA RING will allow you to Mega Evolve specific Pokemon as long as they hold their unique MEGA STONE. Carry on our legacy, trainer! Show the world your iron fists!"))
+            msgbox(format("CAROLA: The MEGA RING will allow you to Mega Evolve specific Pokémon as long as they hold their unique MEGA STONE. Carry on our legacy, trainer! Show the world your iron fists!"))
             release
 
         } else {

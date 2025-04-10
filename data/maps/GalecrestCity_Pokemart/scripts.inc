@@ -57,6 +57,6 @@ GalecrestCity_Pokemart_NPC::
 
 GalecrestCity_Pokemart_NPC_Text_0:
 # 31 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.string "Each town's Pokemart has unique items\n"
+	.string "Each town's Poké Mart has unique items\n"
 	.string "on sale. Goes to show that Cormoria's\l"
 	.string "economy isn't fully integrated.$"

@@ -7,16 +7,16 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
 
     //Pre-quest
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
+        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
         end
     }
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
+        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
         end
     }    
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 4){
-        msgbox(format("This book is hard to understand! I wish I could touch all these Pokemon so I know what they feel like. But the teacher says that's dangerous too! What if I touch a Pincurchin or a Corsola?"), MSGBOX_NPC)
+        msgbox(format("This book is hard to understand! I wish I could touch all these Pokémon so I know what they feel like. But the teacher says that's dangerous too! What if I touch a Pincurchin or a Corsola?"), MSGBOX_NPC)
         end
     }
 
@@ -72,12 +72,12 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
     }
 
     if (var(VAR_SILVERSUN_BRAILLE_BOOK) == 1){
-        msgbox(format("I want a book on all the Pokemon in Cormoria!"), MSGBOX_NPC)
+        msgbox(format("I want a book on all the Pokémon in Cormoria!"), MSGBOX_NPC)
         end
     }
 
     setvar(VAR_SILVERSUN_BRAILLE_BOOK, 1)
-    msgbox(format("I'm looking for a book on all the Pokemon in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"), MSGBOX_NPC)
+    msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the book covers. If you find me one, can you bring it to me?"), MSGBOX_NPC)
     end
 }
 
@@ -280,7 +280,7 @@ script SilversunCity_BlindOrphanage_NPC_2{
 script SilversunCity_BlindOrphanage_NPC_3{
     lockall
     faceplayer
-    msgbox(format("Many of our children may not see the world, but they feel it - especially when a Pokemon is by their side."))
+    msgbox(format("Many of our children may not see the world, but they feel it - especially when a Pokémon is by their side."))
     releaseall
     end
 }
@@ -348,7 +348,7 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     }
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...it's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. 'Blind children with Pokémon? Dangerous!' they said. And yet, look around. There's more trust in these halls than in half the world."))
+        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...it's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. 'Blind children with Pokémon ? Dangerous!' they said. And yet, look around. There's more trust in these halls than in half the world."))
         setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1)
         delay(24)
     }
@@ -374,7 +374,7 @@ script SilversunCity_BlindOrphanage_OldManQuest{
 
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("You've got the look of someone with a kind heart - and strong legs. Both are useful around here. Tell me, would you consider helping out around the orphanage for a while? The children and their Pokémon could use a little extra care."), MSGBOX_YESNO)
+        msgbox(format("You've got the look of someone with a kind heart - and strong legs. Both are useful around here. Tell me, would you consider helping out around the orphanage for a while? The children and their Pokémon  could use a little extra care."), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("Excellent! Kindness like yours is what keeps us going. You won't have to do much - just lend a hand here and there. Please ask around for people in need of help. Come speak to me again once you're finished."))
             release

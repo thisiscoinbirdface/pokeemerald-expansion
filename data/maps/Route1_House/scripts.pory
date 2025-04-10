@@ -33,7 +33,7 @@ script Route1_House_QuestInProgress{
             msgbox(format("AZURILL: zuuu!!!!!\nIt seems to have revived!"))
             release
             faceplayer
-            msgbox(format("Child, you must have something in return. The least I can do. Which of these would you like? The Shiny Charm increases your chances of catching a shiny Pokemon, and the Catching Charm increases your chances of catching a Pokemon on the first bounce!"))
+            msgbox(format("Child, you must have something in return. The least I can do. Which of these would you like? The Shiny Charm increases your chances of catching a shiny Pokemon, and the Catching Charm increases your chances of catching a Pokémon on the first bounce!"))
             dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHINY CHARM", "CATCHING CHARM")
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_SHINY_CHARM)

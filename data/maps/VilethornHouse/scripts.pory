@@ -8,14 +8,14 @@ script VilethornHouse_NPC1{
 script VilethornHouse_NPC2{
     lockall
     faceplayer
-    msgbox(format("Nobody disturbs us deep in these woods. It's a peaceful and calming lifestyle. Your Pokemon may also benefit from calming themselves. Do you want me to teach one of your Pokemon the move CALM MIND?"), MSGBOX_YESNO)
+    msgbox(format("Nobody disturbs us deep in these woods. It's a peaceful and calming lifestyle. Your Pokémon may also benefit from calming themselves. Do you want me to teach one of your Pokémon the move CALM MIND?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         setvar(VAR_0x8005, MOVE_CALM_MIND)
         call(MoveTutor_EventScript_OpenPartyMenu)
         if (var(VAR_RESULT) == 0){
             msgbox(format("Feel free to come back any time."))
         } else {
-            msgbox(format("If you have any other Pokemon who want to experience nirvana, come to me."))
+            msgbox(format("If you have any other Pokémon who want to experience nirvana, come to me."))
         }
     } else {
         msgbox(format("Feel free to come back any time."))
