@@ -796,7 +796,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 388
-            .species = SPECIES_CHINCHOU,
+            .species = SPECIES_LARVESTA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 390
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -1314,7 +1314,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 592
-            .species = SPECIES_LARVESTA,
+            .species = SPECIES_CYNDAQUIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 594
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

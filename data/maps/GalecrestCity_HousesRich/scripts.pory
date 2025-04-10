@@ -59,6 +59,7 @@ script GalecrestCity_HousesRich_NPC5{
     }
 
     if (var(VAR_GALECREST_RICH_PEARLS) == 2){
+        removeitem(ITEM_PEARL_STRING)
         msgbox(format("Ahh my beautiful pearls! Thank you child, thank you!"))
         release
         completequest(QUEST_GALECREST_PEARLS)

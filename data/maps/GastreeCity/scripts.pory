@@ -246,10 +246,10 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger1{
-        msgbox(format("It's Skitty! Come here Skitty..."))
+        msgbox(format("There's something in the tree...\pIt's Skitty!"))
         release
         delay(16)
-        applymovement(LOCALID_SKITTY1, moves(emote_exclamation_mark, walk_fast_down walk_fast_left * 2, walk_fast_down * 2 walk_fast_left *7))
+        applymovement(LOCALID_SKITTY1, moves(emote_exclamation_mark, walk_fast_left * 2, walk_fast_down * 3 walk_fast_left *7))
         waitmovement(0)
         removeobject(17)
         msgbox(format("Skitty ran away! Gotta chase it!"))
@@ -270,13 +270,13 @@ script GastreeCity_NPC9{
     }
 
     script GastreeCity_EventScripts_SkittyTrigger2{
-        msgbox(format("It's Skitty again! Come here Skitty..."))
+        msgbox(format("There's something in the tree...\pIt's Skitty!"))
         release
         delay(16)
-        applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark, walk_fast_up walk_fast_right * 3, walk_fast_down walk_fast_right *2 walk_fast_down *7))
+        applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark walk_fast_right * 3 walk_fast_down *2 walk_fast_right *3 walk_fast_down *7))
         waitmovement(0)
         removeobject(LOCALID_SKITTY2)
-        msgbox(format("Skitty ran away again!"))
+        msgbox(format("Skitty ran away again. It's too slippery!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY2)   
@@ -297,7 +297,7 @@ script GastreeCity_NPC9{
         msgbox(format("It's Skitty! Okay, this time you'd better come here, Skitty!"))
         release
         delay(16)
-        applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark, walk_fast_up * 2 walk_fast_right * 6, walk_fast_up * 5))
+        applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark walk_fast_right * 2 walk_fast_up * 1 walk_fast_right * 4 walk_fast_up * 6))
         waitmovement(0)
         removeobject(LOCALID_SKITTY3)
         msgbox(format("Phew! Finally. Looks like Skitty ran back to its owner!"))
