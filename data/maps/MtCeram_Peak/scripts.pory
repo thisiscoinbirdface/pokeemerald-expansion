@@ -6,6 +6,17 @@ raw `
 
 mapscripts MtCeram_Peak_MapScripts{}
 
+script MtCeram_Peak_SaveGameTrigger{
+    if (flag(FLAG_MT_CERAM_DREAMSTONE)){
+        end
+    }   
+
+    setvar VAR_TEMP_C, 1
+
+    special SaveGame
+	waitstate
+	return
+}
 
 script MtCeramPeak_MainEvent_Trigger{
     if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}

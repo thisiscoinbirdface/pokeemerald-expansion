@@ -22,7 +22,17 @@ script Route3_NurseJoy_OnRoute{
     end
 }
 
+script Route3_Underpass_SaveGameTrigger{
+    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
+        end
+    }   
 
+    setvar VAR_TEMP_C, 1
+
+    special SaveGame
+	waitstate
+	return
+}
 
 script Route3_Underpass_NPC1{
     msgbox(format("A hiker with a Clefairy ran past here a while ago. He was being chased by some weirdo in a dark outfit. The things you see while on the road..."), MSGBOX_NPC)

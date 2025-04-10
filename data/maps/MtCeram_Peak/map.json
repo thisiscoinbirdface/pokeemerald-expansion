@@ -106,7 +106,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_C",
       "var_value": "0",
-      "script": "Common_EventScript_SaveGameTrigger"
+      "script": "MtCeram_Peak_SaveGameTrigger"
     }
   ],
   "bg_events": [
