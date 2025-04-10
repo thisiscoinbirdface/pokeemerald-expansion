@@ -117,6 +117,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LEADER_INGER",
+      "x": 80,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GastreeGym_LeaderBattle",
+      "flag": "FLAG_HIDE_ROUTE3_UNDERPASS_GYM"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 83,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "GastreeGym_TrainerBattle_Skip",
+      "flag": "FLAG_HIDE_ROUTE3_UNDERPASS_GYM"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 79,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "GastreeGym_TrainerBattle_Jaco",
+      "flag": "FLAG_HIDE_ROUTE3_UNDERPASS_GYM"
     }
   ],
   "warp_events": [
@@ -175,6 +214,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
       "dest_warp_id": "6"
+    },
+    {
+      "x": 81,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 63,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [
@@ -241,6 +294,78 @@
       "elevation": 0,
       "item": "ITEM_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE3_D"
+    },
+    {
+      "type": "sign",
+      "x": 80,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 82,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 83,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 78,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 79,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 84,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 83,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 79,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
+    },
+    {
+      "type": "sign",
+      "x": 78,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GastreeGym_WeatheredRock"
     }
   ]
 }

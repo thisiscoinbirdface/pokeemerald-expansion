@@ -4595,9 +4595,9 @@
       "id": "LAYOUT_GASTREE_GYM",
       "name": "GastreeGym_Layout",
       "width": 16,
-      "height": 14,
+      "height": 11,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_DewfordGym",
+      "secondary_tileset": "gTileset_LavaridgeGym",
       "border_filepath": "data/layouts/GastreeGym/border.bin",
       "blockdata_filepath": "data/layouts/GastreeGym/map.bin"
     },

@@ -3,8 +3,8 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Hey hey, who're you?", "I guess you are someone after all.")
-    msgbox(format("To reach Leader INGER, you'll have to find the secret walls!"))
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, "Hold up - nobody's allowed to disturb King Inger - or Kinger for short - while he's training!", "Okay, go disturb the Kinger!")
+    msgbox(format("Kinger is what everyone should aspire to be like!"))
     release
     end
 
@@ -12,28 +12,34 @@ script GastreeGym_TrainerBattle_Skip {
 
 script GastreeGym_TrainerBattle_Jaco {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hah! So you found the fake wall.", "Ouch, that hurt!")
-    msgbox(format("You're not half bad after all."))
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, "Hey, did the old man send you here? This is the King's training time - get out!", "Fine, don't get out!")
+    msgbox(format("Inger the King hates losing and trains really hard. That's why I've always got his back...well, except for losing to you."))
     release
     end
 
 }
 
 script GastreeGym_LeaderBattle {
-
-    
     lockall
+        msgbox(format("Inger: C'mon! C'mon!!\p...\pInger: C'moooooooo--"))
+        release
+        applymovement(9, moves(jump_in_place_down emote_exclamation_mark))
+        waitmovement(0)
+        delay(24)
+
+        msgbox(format("Inger: Who're you? A trainer? You're me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."))    
     faceplayer
 
+
     if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("That was a great battle, {PLAYER}! I can't wait to see what you'll do next."))
+        msgbox(format("Inger: I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
     } else { //else do the battle
         call(Common_EventScript_SaveGame)
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release
     }
 
-    releaseall
+    end
 
 }
 
@@ -55,11 +61,11 @@ script GastreeGym_EventScript_Victory{
 }
 
 text GastreeGym_Text_Intro{
-    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: In that case, you picked the wrong gym!\pInger: I'm Inger, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokemon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pInger: I'm Inger, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokemon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
-    format("Solid foundations. An instinct for battle. And the makings of a strong team. I humbly accept my defeat.")
+    format("Two defeats in a day? What's happening to me!")
 }
 
 
@@ -76,7 +82,7 @@ script GastreeGym_Red{
         } else {
             lockall
             faceplayer
-            msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your skills, I'd like to give you something. Which of these do you fancy?"))
+            msgbox(format("Well done champ-in-the-making! Inger told me about your battle. In recognition of your skills, I'd like to give you something. Which of these do you fancy?"))
             dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "ROCK GEM", "HARD STONE")
 
             if (var(VAR_RESULT) == 0){
@@ -91,18 +97,24 @@ script GastreeGym_Red{
         }
     } else { 
         if (flag(FLAG_GASTREEGYM_SPENSER_WATER)){
-            msgbox(format("Welcome to the Gastree Gym! Inger specialises in the steadfast ROCK type, so avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"), MSGBOX_NPC)
+            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town. The previous trainer beat him and Inger just can't stand losing! You'll have to go into the underpass and find him there."), MSGBOX_NPC)
         } else {
             lockall
             faceplayer
-            msgbox(format("Welcome to the - oh my, you don't look so good. First gym? I understand. But perk up, child! If it was easy, it wouldn't be worth anything. First, have some water."))
+            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town. The previous trainer beat him and Inger just can't stand losing! You'll have to go into the underpass and find him there. Take this with you."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("Against Inger, avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
+            msgbox(format("Inger loves ROCK type Pokemon, so avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
             setflag(FLAG_GASTREEGYM_SPENSER_WATER)
+            clearflag(FLAG_HIDE_ROUTE3_UNDERPASS_GYM)
             releaseall
         }
     }
     end
 }
 
+
+script GastreeGym_WeatheredRock{
+    msgbox(format("This rock looks like it's been weathered down by constant force."), MSGBOX_SIGN)
+    end
+}
 
