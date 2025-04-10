@@ -3,12 +3,12 @@ mapscripts GalecrestCity_HousesPoor_MapScripts{}
 
 //Trade a flute for a dusk stone
 script GalecrestCity_HousesPoor_NPC1{
-    lockall
-    faceplayer
-
     if (flag(FLAG_GALECREST_POOR_TRADEITEM)){
-        msgbox(format("My wife will be so happy! Music meant a lot to her. I wish I could do things over and give her all the flutes in the world..."))
+        msgbox(format("My wife will be so happy! Music meant a lot to her. I wish I could do things over and give her all the flutes in the world..."), MSGBOX_NPC)
     } else {    
+        lockall
+        faceplayer
+        
         msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flue? I can't offer money, but in exchange, I can give you this PEAT BLOCK."), MSGBOX_YESNO)
 
         //Checkitem
@@ -19,24 +19,22 @@ script GalecrestCity_HousesPoor_NPC1{
                 removeitem(ITEM_BLUE_FLUTE)
                 giveitem(ITEM_PEAT_BLOCK)
                 setflag(FLAG_GALECREST_POOR_TRADEITEM)
-                msgbox(format("I wish I could do things over and give her all the flutes in the world..."))
+                msgbox(format("I wish I could do things over and give her all the flutes in the world..."), MSGBOX_NPC)
             } else {
-                msgbox(format("It looks like you don't have a Blue Flute. Come back when you do!"))
+                msgbox(format("It looks like you don't have a Blue Flute. Come back when you do!"), MSGBOX_NPC)
             }
         } else {
-            msgbox(format("I understand. This Peat Block is worthless compared to a Blue Flute."))
+            msgbox(format("I understand. This Peat Block is worthless compared to a Blue Flute."), MSGBOX_NPC)
         }
     }
 
-    releaseall
+    end
 }
 
 
 script GalecrestCity_HousesPoor_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("I used to play the flute many years ago. Now Jigglypuff brings music into the house!"))
-    releaseall
+    msgbox(format("I used to play the flute many years ago. Now Jigglypuff brings music into the house!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_HousesPoor_Jigglypuff{
@@ -51,30 +49,22 @@ script GalecrestCity_HousesPoor_Jigglypuff{
 
 
 script GalecrestCity_HousesPoor_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("The Poochyena regularly block the roads here. They're a menace to society!"))
-    releaseall
+    msgbox(format("The Poochyena regularly block the roads here. They're a menace to society!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_HousesPoor_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("The Poochyena are so cute! I'd like to adopt one someday."))
-    releaseall
+    msgbox(format("The Poochyena are so cute! I'd like to adopt one someday."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_HousesPoor_NPC5{
-    lockall
-    faceplayer
-    msgbox(format("My children play outside all day. Let them have their fun! Soon they'll be studying all day to enter the Detective Academy."))
-    releaseall
+    msgbox(format("My children play outside all day. Let them have their fun! Soon they'll be studying all day to enter the Detective Academy."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_HousesPoor_NPC6{
-    lockall
-    faceplayer
-    msgbox(format("My wife has high ambitious for the kids. I'll support her, but personally I'll be happy as long as they grow up to become responsible adults."))
-    releaseall
+    msgbox(format("My wife has high ambitious for the kids. I'll support her, but personally I'll be happy as long as they grow up to become responsible adults."), MSGBOX_NPC)
+    end
 }
 

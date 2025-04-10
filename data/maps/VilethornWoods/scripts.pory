@@ -10,10 +10,7 @@ mapscripts VilethornWoods_MapScripts{}
 
 
 script VilethornWoods_EventScript_NurseDemo{
-    lockall
-    faceplayer
-    msgbox(format("This area is closed for the demo."))
-    releaseall
+    msgbox(format("This area is closed for the demo."), MSGBOX_NPC)
     end
 }
 
@@ -252,10 +249,8 @@ script VilethornWoods_Trainer_H{
 
 
 script VilethornWoods_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("The MORELULL here in Vilethorn Woods release spores when in danger. That's what creates this fog."))
-    releaseall
+    msgbox(format("The Morelull here in Vilethorn Woods release spores when in danger. That's what creates this fog."), MSGBOX_NPC)
+    end
 }
 
 //FLAG_VILETHORN_NPC_MUSHROOMS
@@ -295,17 +290,14 @@ script VilethornWoods_NPC2{
 }
 
 script VilethornWoods_NPC3{
-    lockall
-    faceplayer
     if (flag(FLAG_VILETHORN_NPC_ITEM)){
-        msgbox(format("I am well and truly lost..."))
+        msgbox(format("I am well and truly lost..."), MSGBOX_NPC)
     } else {
-        msgbox(format("I am well and truly lost...even with this SCOPE LENS, I can't see a thing! Why don't you have it?"))
+        msgbox(format("I am well and truly lost...even with this SCOPE LENS, I can't see a thing! Why don't you have it?"), MSGBOX_NPC)
         giveitem(ITEM_SCOPE_LENS)
         setflag(FLAG_VILETHORN_NPC_ITEM)
     }
-
-    releaseall
+    end
 }
 
 

@@ -266,31 +266,23 @@ script GalecrestCity_EventScript_Poochyena{
 
 //NPCs
 script GalecrestCity_NPC_1{
-    lockall
-    faceplayer    
-    msgbox(format("You don't look like someone from here...are you a new student at the Detective Academy?"))
-    releaseall
+    msgbox(format("You don't look like someone from here...are you a new student at the Detective Academy?"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_2{
-    lockall
-    faceplayer    
-    msgbox(format("The city doesn't service our neighborhood. That's why these grass patches and puddles have come up."))
-    releaseall
+    msgbox(format("The city doesn't service our neighborhood. That's why these grass patches and puddles have come up."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_3{
-    lockall
-    faceplayer    
-    msgbox(format("All the rich kids play at home, but me and my brother love to splash in these puddles!"))
-    releaseall
+    msgbox(format("All the rich kids play at home, but me and my brother love to splash in these puddles!"), MSGBOX_NPC)
+    end
 }
 
-script GalecrestCity_NPC_4{
-    lockall
-    faceplayer    
-    msgbox(format("When I grow up, I want to be just like my sister!"))
-    releaseall
+script GalecrestCity_NPC_4{ 
+    msgbox(format("When I grow up, I want to be just like my sister!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_Froakie{
@@ -330,85 +322,62 @@ script GalecrestCity_NPC_5{
 }
 
 script GalecrestCity_NPC_6{
-    lockall
-    faceplayer    
-    msgbox(format("If you head west, you enter the elite residential neighborhood.\pThe area south of here is poorer."))
-    releaseall
+    msgbox(format("If you head west, you enter the elite residential neighborhood.\pThe area south of here is poorer."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_7{
-    lockall
-    faceplayer    
-    msgbox(format("The city garden is maintained by Rotoms! But for some reason, I've never seen any of them at work."))
-    releaseall
+    msgbox(format("The city garden is maintained by Rotoms! But for some reason, I've never seen any of them at work."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_8{
-    lockall
-    faceplayer    
-    msgbox(format("I'm on a date with the girl of my dreams! But we can't ever be together. I'm too poor for her family."))
-    release
-    face_left
-    releaseall
+    msgbox(format("I'm on a date with the girl of my dreams! But we can't ever be together. I'm too poor for her family."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_9{
-    lockall
-    faceplayer    
-    msgbox(format("I don't care about money! We love each other and that's what matters."))
-    release
-    face_right
-    releaseall
+    msgbox(format("I don't care about money! We love each other and that's what matters."), MSGBOX_NPC)
+    end
 }
 
-script GalecrestCity_NPC_10{
-    lockall
-    faceplayer    
-    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband helped build it, many years ago, when he ran a construction business."))
-    releaseall
+script GalecrestCity_NPC_10{  
+    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband helped build it, many years ago, when he ran a construction business."), MSGBOX_NPC)
+    end
 }
 
 //Nurse Joy gives 3 berries - reduce super-effective damage from the gym leader's attacks.
 script GalecrestCity_NPC_11{
-    lockall
-    faceplayer    
-    msgbox(format("I do the night shift at the Pokemon Center. During the day, CHANSEY and I like to walk around the garden and pick berries."))
-    
     if (flag(FLAG_GALECREST_NURSE_BERRY)){
-
+        msgbox(format("I do the night shift at the Pokemon Center. During the day, Chansey and I like to walk around the garden and pick berries."), MSGBOX_NPC)
     } else {
-        msgbox(format("Here, you can have some of our extra berries."))
+        lockall
+        faceplayer
+        msgbox(format("I do the night shift at the Pokemon Center. During the day, Chansey and I like to walk around the garden and pick berries. Here, you can have some of our extra berries."))
         giveitem(ITEM_CHILAN_BERRY, 3)  //Halves normal damage
         setflag(FLAG_GALECREST_NURSE_BERRY)        
+        msgbox(format("They're yummy!"), MSGBOX_NPC)
     }
-    releaseall
     end
 }
 
 
 
 script GalecrestCity_Chansey{
-    lockall
-    faceplayer
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("CHANSEY looks happy to be out in the garden!"))
-    releaseall
+    msgbox(format("CHANSEY looks happy to be out in the garden!"), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_NPC_12{
-    lockall
-    faceplayer    
-    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk from Galecrest City left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."))
-    releaseall
+    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk here left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."), MSGBOX_NPC)
+    end
 }
 
-script GalecrestCity_NPC_13{
-    lockall
-    faceplayer    
-    msgbox(format("This part of town is so clean and peaceful!"))
-    releaseall
+script GalecrestCity_NPC_13{  
+    msgbox(format("This part of town is so clean and peaceful!"), MSGBOX_NPC)
+    end
 }
 
 //Robber battle 
@@ -456,28 +425,29 @@ script GalecrestCity_NPC_14{
 script GalecrestCity_Nickit{
     lockall
     playmoncry(SPECIES_NICKIT, CRY_MODE_NORMAL)
-    msgbox(format("NICKIT is grinning mischievously. What's it upto?"))
+    msgbox(format("Nickit is grinning mischievously. What's it upto?"))
     releaseall
     end
 }
 
-script GalecrestCity_NPC_15{
-    lockall
-    faceplayer    
-    msgbox(format("PESTER is this city's Gym Leader! She's tough but calculated. She likes strong Pokemon and gives them berries to gain an advantage in battle!"))
-    releaseall
+//change dialogue
+script GalecrestCity_NPC_15{ 
+    msgbox(format("I really want to visit the Silversun Theatre and see a show! But crossing Vilethorn Woods isn't a good idea..."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_NPC_16{
     lockall    
     msgbox(format("I'm sorry! I won't skip class again!"))
     releaseall
+    end
 }
 
 script GalecrestCity_NPC_17{
     lockall    
     msgbox(format("One more misdeneanour and I'll have you expelled, got it? And then you'll never get your Charcadet."))
     releaseall
+    end
 }
 
 script GalecrestCity_NPC_18{
@@ -508,39 +478,26 @@ script GalecrestCity_NPC_18{
 }
 
 script GalecrestCity_NPC_19{
-    lockall
-    faceplayer    
-    msgbox(format("I learned something new in class today! Certain BERRIES reduce the power of attacks dealt to them. A CHARTI BERRY for example reduces the power of a NORMAL type attack. That'd be useful in the gym here, wouldn't it?"))
-    releaseall
+    msgbox(format("I learned something new in class today! Some berries reduce the power of attacks dealt to them. A Chilan Berry for example reduces the power of a NORMAL type attack. That'd be useful in the gym here, wouldn't it?"), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_NPC_20{
-    lockall
-    faceplayer    
-    msgbox(format("Whaddya want? Thought you'd get something by talking to me? You poor people are all the same - always looking for handouts!"))
-    releaseall
+    msgbox(format("Whaddya want? Thought you'd get something by talking to me? You poor people are all the same - always looking for handouts!"), MSGBOX_NPC)
     end
 }
 
 
-script GalecrestCity_NPC_Ranger{
-    lockall
-    faceplayer    
-    msgbox(format("I'm a Pokemon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"))
-    releaseall
+script GalecrestCity_NPC_Ranger{ 
+    msgbox(format("I'm a Pokemon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_NPC_Red{
-    lockall
-    faceplayer
-    msgbox(format("Sorry trainer, the Gym Leader's not in right now. He should be back soon. Check out the Detective Academy in the meantime!"))
-    release
+    msgbox(format("Sorry trainer, the Gym Leader's not in right now. He should be back soon. Check out the Detective Academy in the meantime!"), MSGBOX_NPC)
     applymovement(38, moves(face_down))
     waitmovement(0)
-    releaseall
     end
 }
 

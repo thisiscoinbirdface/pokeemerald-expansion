@@ -564,106 +564,88 @@ MtCeram_TrainerBattle_GRUNT2::
 
 MtCeram_EventScript_NPC1::
 # 439 "data//maps/MtCeram/scripts.pory"
-	lockall
-# 440 "data//maps/MtCeram/scripts.pory"
-	faceplayer
-# 441 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_NPC1_Text_0
-# 442 "data//maps/MtCeram/scripts.pory"
-	releaseall
-	return
+	msgbox MtCeram_EventScript_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 MtCeram_EventScript_NPC2::
-# 446 "data//maps/MtCeram/scripts.pory"
-	lockall
-# 447 "data//maps/MtCeram/scripts.pory"
-	faceplayer
-# 448 "data//maps/MtCeram/scripts.pory"
+# 445 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_NPC2_Text_0
-# 449 "data//maps/MtCeram/scripts.pory"
-	releaseall
-	return
+	end
 
 
 MtCeram_EventScript_NPC3::
-# 453 "data//maps/MtCeram/scripts.pory"
-	lockall
-# 454 "data//maps/MtCeram/scripts.pory"
-	faceplayer
-# 455 "data//maps/MtCeram/scripts.pory"
+# 451 "data//maps/MtCeram/scripts.pory"
 	goto_if_set FLAG_MT_CERAM_FRESH_WATER, MtCeram_EventScript_NPC3_2
-# 458 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_NPC3_Text_1
-# 459 "data//maps/MtCeram/scripts.pory"
+# 454 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_NPC3_Text_1, MSGBOX_NPC
+# 455 "data//maps/MtCeram/scripts.pory"
 	giveitem ITEM_FRESH_WATER
-# 460 "data//maps/MtCeram/scripts.pory"
+# 456 "data//maps/MtCeram/scripts.pory"
 	setflag FLAG_MT_CERAM_FRESH_WATER
 MtCeram_EventScript_NPC3_1:
-# 463 "data//maps/MtCeram/scripts.pory"
-	releaseall
-	return
+	end
 
 MtCeram_EventScript_NPC3_2:
-# 456 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_NPC3_Text_0
+# 452 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_NPC3_Text_0, MSGBOX_NPC
 	goto MtCeram_EventScript_NPC3_1
 
 
 MtCeram_EventScript_NPCNurse::
-# 469 "data//maps/MtCeram/scripts.pory"
+# 465 "data//maps/MtCeram/scripts.pory"
 	lockall
-# 470 "data//maps/MtCeram/scripts.pory"
+# 466 "data//maps/MtCeram/scripts.pory"
 	faceplayer
-# 472 "data//maps/MtCeram/scripts.pory"
+# 468 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_NPCNurse_Text_0
-# 473 "data//maps/MtCeram/scripts.pory"
+# 469 "data//maps/MtCeram/scripts.pory"
 	release
-# 474 "data//maps/MtCeram/scripts.pory"
+# 470 "data//maps/MtCeram/scripts.pory"
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-# 475 "data//maps/MtCeram/scripts.pory"
+# 471 "data//maps/MtCeram/scripts.pory"
 	applymovement 24, MtCeram_EventScript_NPCNurse_Movement_0
-# 476 "data//maps/MtCeram/scripts.pory"
+# 472 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
-# 477 "data//maps/MtCeram/scripts.pory"
+# 473 "data//maps/MtCeram/scripts.pory"
 	delay 24
-# 478 "data//maps/MtCeram/scripts.pory"
+# 474 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_NPCNurse_Text_1
-# 479 "data//maps/MtCeram/scripts.pory"
+# 475 "data//maps/MtCeram/scripts.pory"
 	call Common_EventScript_NurseJoyOnRoute
-# 481 "data//maps/MtCeram/scripts.pory"
+# 477 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	end
 
 
 MtCeram_EventScript_Gabrielle::
-# 486 "data//maps/MtCeram/scripts.pory"
+# 482 "data//maps/MtCeram/scripts.pory"
 	lockall
-# 487 "data//maps/MtCeram/scripts.pory"
+# 483 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_Gabrielle_Text_0
+# 484 "data//maps/MtCeram/scripts.pory"
+	release
+# 485 "data//maps/MtCeram/scripts.pory"
+	delay 30
+# 486 "data//maps/MtCeram/scripts.pory"
+	applymovement 5, MtCeram_Charizard_Movement_0
+# 487 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
 # 488 "data//maps/MtCeram/scripts.pory"
 	release
 # 489 "data//maps/MtCeram/scripts.pory"
-	delay 30
+	faceplayer
 # 490 "data//maps/MtCeram/scripts.pory"
-	applymovement 5, MtCeram_Charizard_Movement_0
+	delay 20
 # 491 "data//maps/MtCeram/scripts.pory"
-	waitmovement 0
+	msgbox MtCeram_EventScript_Gabrielle_Text_1
 # 492 "data//maps/MtCeram/scripts.pory"
 	release
 # 493 "data//maps/MtCeram/scripts.pory"
-	faceplayer
-# 494 "data//maps/MtCeram/scripts.pory"
-	delay 20
-# 495 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_Gabrielle_Text_1
-# 496 "data//maps/MtCeram/scripts.pory"
-	release
-# 497 "data//maps/MtCeram/scripts.pory"
 	applymovement 5, MtCeram_EventScript_Gabrielle_Movement_0
-# 498 "data//maps/MtCeram/scripts.pory"
+# 494 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
-# 499 "data//maps/MtCeram/scripts.pory"
+# 495 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	return
 
@@ -968,17 +950,17 @@ MtCeram_EventScript_BeforePeakBattle_Movement_6:
 	walk_up
 	step_end
 
-# 475 "data//maps/MtCeram/scripts.pory"
+# 471 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_NPCNurse_Movement_0:
-# 475 "data//maps/MtCeram/scripts.pory"
+# 471 "data//maps/MtCeram/scripts.pory"
 	jump_in_place_up
-# 475 "data//maps/MtCeram/scripts.pory"
+# 471 "data//maps/MtCeram/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 497 "data//maps/MtCeram/scripts.pory"
+# 493 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_Gabrielle_Movement_0:
-# 497 "data//maps/MtCeram/scripts.pory"
+# 493 "data//maps/MtCeram/scripts.pory"
 	face_left
 	step_end
 
@@ -1221,41 +1203,41 @@ MtCeram_TrainerBattle_GRUNT2_Text_2:
 	.string "money!$"
 
 MtCeram_EventScript_NPC1_Text_0:
-# 441 "data//maps/MtCeram/scripts.pory"
+# 439 "data//maps/MtCeram/scripts.pory"
 	.string "If I jump over this ledge, I won't be\n"
 	.string "able to return! So I do my jogging here.$"
 
 MtCeram_EventScript_NPC2_Text_0:
-# 448 "data//maps/MtCeram/scripts.pory"
-	.string "I saw a LARVESTA here the other day!\n"
+# 445 "data//maps/MtCeram/scripts.pory"
+	.string "I saw a Larvesta here the other day!\n"
 	.string "But they're very rare. The constant\l"
-	.string "SIZZLIPEDE and VENIPEDE fighting\l"
-	.string "scare them away.$"
+	.string "Sizzlipede and Venipede fighting scare\l"
+	.string "them away.$"
 
 MtCeram_EventScript_NPC3_Text_0:
-# 456 "data//maps/MtCeram/scripts.pory"
+# 452 "data//maps/MtCeram/scripts.pory"
 	.string "Oof! This place is unbearably hot!$"
 
 MtCeram_EventScript_NPC3_Text_1:
-# 458 "data//maps/MtCeram/scripts.pory"
+# 454 "data//maps/MtCeram/scripts.pory"
 	.string "Oof! This place is unbearably hot! Don't\n"
 	.string "forget to stay hydrated!$"
 
 MtCeram_EventScript_NPCNurse_Text_0:
-# 472 "data//maps/MtCeram/scripts.pory"
+# 468 "data//maps/MtCeram/scripts.pory"
 	.string "CHANSEY and I have been hiding from\n"
 	.string "these thugs behind this tree...although\l"
 	.string "CHANSEY's not able to hide herself too\l"
 	.string "well.$"
 
 MtCeram_EventScript_NPCNurse_Text_1:
-# 478 "data//maps/MtCeram/scripts.pory"
+# 474 "data//maps/MtCeram/scripts.pory"
 	.string "Don't worry, CHANSEY! We're safe here.\n"
 	.string "Meanwhile, if you have a HEAL PASS, I\l"
 	.string "can heal your Pokemon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
-# 487 "data//maps/MtCeram/scripts.pory"
+# 483 "data//maps/MtCeram/scripts.pory"
 	.string "GABRIELLE: Why do I have to be\n"
 	.string "punished every time? I'm trying my\l"
 	.string "best! I don't want to steal other\l"
@@ -1264,6 +1246,6 @@ MtCeram_EventScript_Gabrielle_Text_0:
 	.string "...$"
 
 MtCeram_EventScript_Gabrielle_Text_1:
-# 495 "data//maps/MtCeram/scripts.pory"
+# 491 "data//maps/MtCeram/scripts.pory"
 	.string "GABRIELLE: Don't look at me like that!\n"
 	.string "You don't know what its like...$"

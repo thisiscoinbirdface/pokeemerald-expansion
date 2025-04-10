@@ -6,44 +6,36 @@ mapscripts GalecrestCity_HousesRich_MapScripts{
 
 //In this house, the boy has left for the detective academy (to be done later)
 script GalecrestCity_HousesRich_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Our older son has joined the Detective Academy. He's the pride of the family!"))
-    releaseall
+    msgbox(format("Our older son was the Ace Rookie during his final year at the Detective Academy. He's the pride of the family!"), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_HousesRich_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("I can only hope my younger son takes after his brother."))
-    releaseall
+    msgbox(format("I can only hope my younger son takes after his brother."), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_HousesRich_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("My parents only care about big bro. They're always mean to me!"))
-    releaseall
+    msgbox(format("My parents only care about big bro. They're always mean to me!"), MSGBOX_NPC)
+    end
 }
 
 
 script GalecrestCity_HousesRich_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("I work so hard and my wife spends all the money on jewellery!"))
-    release
+    msgbox(format("I work so hard and my wife spends all the money on jewellery!"), MSGBOX_NPC)
     
     if (var(VAR_GALECREST_RICH_PEARLS) == 3){
+        lockall
+        faceplayer
         msgbox(format("You found her pearls, did you? And she took your money? Sigh..."))
         giveitem(ITEM_SILK_SCARF)
         setvar(VAR_GALECREST_RICH_PEARLS, 4)
-        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to stand up for yourself!"))
+        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to stand up for yourself!"), MSGBOX_NPC)
     }
-    releaseall
+    end
+
 }
 
 
@@ -94,56 +86,44 @@ script GalecrestCity_HousesRich_NPC5{
 
 
 script GalecrestCity_HousesRich_NPC6{
-    lockall
-    faceplayer
-    msgbox(format("I'm a professional cook. It's interesting being able to peek into the lives of the super rich...I appreciate my family more now."))
-    releaseall
+    msgbox(format("I'm a professional cook. It's interesting being able to peek into the lives of the super rich...I appreciate my family more now."), MSGBOX_NPC)
+    end
 }
 
 
 script GalecrestCity_HousesRich_NPC7{
-    lockall
-    faceplayer
-    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner. We never eat together."))
-    releaseall
+    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner. We never eat together."), MSGBOX_NPC)
+    end
 }
 
 
 script GalecrestCity_HousesRich_NPC8{
-    lockall
-    faceplayer
-    msgbox(format("Our daughter grew up and is now the Gym Leader of Pelluca City. So we live alone in this big house now..."))
-    releaseall
+    msgbox(format("Our daughter grew up and is now the Gym Leader of Pelluca City. So we live alone in this big house now..."), MSGBOX_NPC)
+    end
 }
 
 //Give some swag item
 script GalecrestCity_HousesRich_NPC9{
-    lockall
-    faceplayer
-
     if (flag(FLAG_GALECREST_RICH_HOUSECLEANITEM)){
-            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."))
+            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."), MSGBOX_NPC)
     } else {
         msgbox(format("I'm trying to organise my daughter's belongings. Are you a Pokemon trainer?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("So is my daughter. She used these to train her Pokemon. They'll be more useful in your hands."))
             giveitem(ITEM_MACHO_BRACE)
             setflag(FLAG_GALECREST_RICH_HOUSECLEANITEM)
-            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."))            
+            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."), MSGBOX_NPC)            
         } else {
-            msgbox(format("Ah, then none of this will be of use to you."))
+            msgbox(format("Ah, then none of this will be of use to you."), MSGBOX_NPC)
         }
     }
-    releaseall
     end
 }
 
 
 script GalecrestCity_HousesRich_Keckleon{
-    lockall
-    faceplayer
     playmoncry(SPECIES_GLALIE, CRY_MODE_NORMAL)
-    msgbox(format("Glalie glares intently at you."))
+    msgbox(format("Glalie glares intently at you."), MSGBOX_NPC)
     releaseall
 }
 

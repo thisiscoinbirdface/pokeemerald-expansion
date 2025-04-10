@@ -41,11 +41,9 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
 //BREECH
 script GalecrestCity_DetectiveAcademy_Breech{
-    lockall
-    faceplayer
-    msgbox(format("BREECH: It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokemon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pBREECH: Not that Clefairy and I want to be detectives, haha! We're just lifelong learners."))
+    msgbox(format("BREECH: It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokemon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pBREECH: Not that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
     applymovement(13, moves(face_left))
-    releaseall
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_Clefairy{
@@ -189,16 +187,11 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
 
 //Lobby
 script GalecrestCity_DetectiveAcademy_Guard{
-    lockall
-    faceplayer
-
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
-        msgbox(format("You got a one-day student ID? Maybe I should get one too..."))
+        msgbox(format("You got a one-day student ID? Maybe I should get one too..."), MSGBOX_NPC)
     } else {
-        msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"))
+        msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"), MSGBOX_NPC)
     }
-
-    releaseall
     end
 }
 
@@ -239,47 +232,37 @@ script GalecrestCity_DetectiveAcademy_Armarouge_Classroom{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Ooh! Ohh! Are the new class rankings out yet?"))
-    releaseall
+    msgbox(format("Ooh! Ohh! Are the new class rankings out yet?"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("Every semester, the school ranks all the students. The top student is called the Ace Rookie! Kohla held the title every semester, but he's graduated now, so the field is open again!"))
-    releaseall
+    msgbox(format("Every semester, the school ranks all the students. The top student is called the Ace Rookie! Kohla held the title every semester, but he's graduated now, so the field is open again!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("All new students receive a Charcadet as their first Pokemon. It's the standard detective companion."))
-    releaseall
+    msgbox(format("All new students receive a Charcadet as their first Pokemon. It's the standard detective companion."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft. New students are often handed smaller cases to solve as part of their internship. But some also intern at the Galecrest Gym!"))
-    releaseall
+    
+    
+    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft. New students are often handed smaller cases to solve as part of their internship. But some also intern at the Galecrest Gym!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC5{
-    lockall
-    faceplayer
-    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an Ace Rookie!"))
-    releaseall
+    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an Ace Rookie!"), MSGBOX_NPC)
+    end
 }
 
 
 //Hall
 script GalecrestCity_DetectiveAcademy_NPC6{
-    lockall
-    faceplayer
-    msgbox(format("Are you a student? You shouldn't be here if you aren't...oh, you are."))
-    releaseall
+    msgbox(format("Are you a student? You shouldn't be here if you aren't...oh, you are."), MSGBOX_NPC)
+    end
 }
 
 
@@ -307,30 +290,25 @@ script GalecrestCity_DetectiveAcademy_NPC8{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC9{
-    lockall
-    faceplayer
-    msgbox(format("These two only focus on battling. But true detectives can do a lot more! We have to investigate clues, interrogate suspects and disguise ourselves."))
-    releaseall
+    msgbox(format("These two only focus on battling. But true detectives can do a lot more! We have to investigate clues, interrogate suspects and disguise ourselves."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC10{
     lockall
     msgbox(format("...and as you can see here, according to the theory of...\pThe teacher is engrossed in his lecture."))
     releaseall
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC11{
-    lockall
-    faceplayer
-    msgbox(format("I love this teacher's style! I wish he taught a more interesting subject."))
-    releaseall
+    msgbox(format("I love this teacher's style! I wish he taught a more interesting subject."), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC12{
-    lockall
-    faceplayer
-    msgbox(format("I love the topic but this teacher is so boring!"))
-    releaseall
+    msgbox(format("I love the topic but this teacher is so boring!"), MSGBOX_NPC)
+    end
 }
 
 

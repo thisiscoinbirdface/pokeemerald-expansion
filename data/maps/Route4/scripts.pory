@@ -287,7 +287,7 @@ script Route4_NPC_Cook{
             } else {
                 giveitem(ITEM_ADRENALINE_ORB)                
             }
-                msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPCs)            
+                msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)            
                 setflag(FLAG_ROUTE4_COOK)
             } else {
                 msgbox(format("I don't see any RAWST berries on you. Come back when you get one!"), MSGBOX_NPC)

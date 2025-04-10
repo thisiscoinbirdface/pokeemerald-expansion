@@ -1,10 +1,8 @@
 mapscripts VilethornHouse_MapScripts{}
 
 script VilethornHouse_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("We moved out of the city long ago. It was too noisy!"))
-    releaseall
+    msgbox(format("We moved out of the city long ago. It was too noisy!"), MSGBOX_NPC)
+    end
 }
 
 script VilethornHouse_NPC2{
