@@ -27,11 +27,12 @@ script Route3_Underpass_SaveGameTrigger{
         end
     }   
 
-    setvar VAR_TEMP_C, 1
+    setvar(VAR_TEMP_C, 1)
 
-    special SaveGame
+    special(SaveGame)
 	waitstate
-	return
+    release
+    end
 }
 
 script Route3_Underpass_NPC1{
