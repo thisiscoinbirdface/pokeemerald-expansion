@@ -122,16 +122,16 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
         msgbox(format("Sorry, you already have a student ID."))
         goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)        
     } else {
-        msgbox(format("Unfortunately only students are allowed IDs and enrolment is closed for the year. However, we do offer day passes to prospective students for a nominal fee of 1000."))
+        msgbox(format("Unfortunately, only students are allowed IDs and enrolment is closed for the year. However, we do offer day passes to prospective students for a nominal fee of 1000."))
         release
         delay(16)
         showmoneybox(0, 0)
         msgbox(format("Would you like to purchase one for 1000?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
+            hidemoneybox
             checkmoney(1000)
             if (var(VAR_RESULT) == 1){
-                hidemoneybox
                 msgbox(format("Very good! Here's your temporary student ID."))
                 giveitem(ITEM_DETECTIVE_STUDENT_ID)
                 setflag(FLAG_GALECREST_STUDENTID_GET)
@@ -144,6 +144,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
                 goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)                
             }
         } else {
+            hidemoneybox
             goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
         }
 

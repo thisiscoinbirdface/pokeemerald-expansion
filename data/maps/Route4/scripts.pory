@@ -1,10 +1,12 @@
-mapscripts Route4_MapScripts {}
 raw `
     .set LOCALID_GRUNT1, 12
     .set LOCALID_GRUNT2, 13
     .set LOCALID_DEWPIDER, 21
 
 `
+
+mapscripts Route4_MapScripts {}
+
 //NURSE
 script Route4_NurseJoy_OnRoute{
     lockall
@@ -188,13 +190,15 @@ script Route4_TrainerBattle_Jenny {
         //result
         specialvar(VAR_RESULT, GetBattleOutcome)
         if (var(VAR_RESULT) == B_OUTCOME_WON){
-            removeobject(22)
+            removeobject(LOCALID_DEWPIDER)
             setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
+            setflag(FLAG_HIDE_ROUTE4_DEWPIDER)
             goto(Route4_Dewpider_Defeated)
         }
         if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
-            removeobject(22)            
+            removeobject(LOCALID_DEWPIDER)            
             setflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
+            setflag(FLAG_HIDE_ROUTE4_DEWPIDER)            
             goto(Route4_Dewpider_Defeated)            
         }            
         if (var(VAR_RESULT) == B_OUTCOME_RAN){

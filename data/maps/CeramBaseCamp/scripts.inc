@@ -47,248 +47,224 @@ CeramBaseCamp_EventScript_ExitTrigger_2:
 
 CeramBaseCamp_NPC_Exit::
 # 34 "data//maps/CeramBaseCamp/scripts.pory"
-	lockall
-# 35 "data//maps/CeramBaseCamp/scripts.pory"
-	faceplayer
-# 36 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC_Exit_Text_0
-# 37 "data//maps/CeramBaseCamp/scripts.pory"
-	releaseall
-	return
+	msgbox CeramBaseCamp_NPC_Exit_Text_0, MSGBOX_NPC
+	end
 
 
 CeramBaseCamp_NPC1::
-# 43 "data//maps/CeramBaseCamp/scripts.pory"
-	lockall
-# 44 "data//maps/CeramBaseCamp/scripts.pory"
-	faceplayer
-# 45 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC1_Text_0
-# 46 "data//maps/CeramBaseCamp/scripts.pory"
-	releaseall
-	return
+# 41 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 CeramBaseCamp_NPC2::
-# 51 "data//maps/CeramBaseCamp/scripts.pory"
-	lockall
-# 52 "data//maps/CeramBaseCamp/scripts.pory"
-	faceplayer
-# 53 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC2_Text_0
-# 54 "data//maps/CeramBaseCamp/scripts.pory"
-	releaseall
-	return
+# 47 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_NPC2_Text_0, MSGBOX_NPC
+	end
 
 
 CeramBaseCamp_NPC3::
-# 59 "data//maps/CeramBaseCamp/scripts.pory"
-	lockall
-# 60 "data//maps/CeramBaseCamp/scripts.pory"
-	faceplayer
-# 61 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC3_Text_0
-# 62 "data//maps/CeramBaseCamp/scripts.pory"
-	releaseall
-	return
+# 53 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_NPC3_Text_0, MSGBOX_NPC
+	end
 
 
 CeramBaseCamp_NPC4::
-# 67 "data//maps/CeramBaseCamp/scripts.pory"
+# 59 "data//maps/CeramBaseCamp/scripts.pory"
 	lockall
-# 69 "data//maps/CeramBaseCamp/scripts.pory"
+# 61 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_quest_complete QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_Quest_Done
-# 70 "data//maps/CeramBaseCamp/scripts.pory"
+# 62 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_quest_active QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_QuestInProgress
-# 71 "data//maps/CeramBaseCamp/scripts.pory"
+# 63 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_quest_inactive QUEST_CERAM_CYNDAQUIL, CeramBaseCamp_Cyndaquil_StartQuest
-# 73 "data//maps/CeramBaseCamp/scripts.pory"
+# 65 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 
 CeramBaseCamp_Cyndaquil_Quest_Done::
-# 79 "data//maps/CeramBaseCamp/scripts.pory"
+# 71 "data//maps/CeramBaseCamp/scripts.pory"
 	faceplayer
-# 80 "data//maps/CeramBaseCamp/scripts.pory"
+# 72 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_Quest_Done_Text_0
-# 81 "data//maps/CeramBaseCamp/scripts.pory"
+# 73 "data//maps/CeramBaseCamp/scripts.pory"
 	applymovement 4, CeramBaseCamp_Cyndaquil_Quest_Done_Movement_0
-# 82 "data//maps/CeramBaseCamp/scripts.pory"
+# 74 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmovement 0
-# 83 "data//maps/CeramBaseCamp/scripts.pory"
+# 75 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 
 CeramBaseCamp_Cyndaquil_StartQuest::
-# 89 "data//maps/CeramBaseCamp/scripts.pory"
+# 81 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_StartQuest_Text_0
-# 90 "data//maps/CeramBaseCamp/scripts.pory"
+# 82 "data//maps/CeramBaseCamp/scripts.pory"
 	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
-# 91 "data//maps/CeramBaseCamp/scripts.pory"
+# 83 "data//maps/CeramBaseCamp/scripts.pory"
 	applymovement 9, CeramBaseCamp_Cyndaquil_StartQuest_Movement_0
-# 92 "data//maps/CeramBaseCamp/scripts.pory"
+# 84 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_StartQuest_Text_1
-# 93 "data//maps/CeramBaseCamp/scripts.pory"
+# 85 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 94 "data//maps/CeramBaseCamp/scripts.pory"
+# 86 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 20
-# 96 "data//maps/CeramBaseCamp/scripts.pory"
+# 88 "data//maps/CeramBaseCamp/scripts.pory"
 	faceplayer
-# 97 "data//maps/CeramBaseCamp/scripts.pory"
+# 89 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_StartQuest_Text_2, MSGBOX_YESNO
-# 100 "data//maps/CeramBaseCamp/scripts.pory"
+# 92 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Cyndaquil_StartQuest_2
-# 105 "data//maps/CeramBaseCamp/scripts.pory"
+# 97 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_StartQuest_Text_4
 CeramBaseCamp_Cyndaquil_StartQuest_1:
-# 107 "data//maps/CeramBaseCamp/scripts.pory"
+# 99 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Cyndaquil_StartQuest_2:
-# 101 "data//maps/CeramBaseCamp/scripts.pory"
+# 93 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_StartQuest_Text_3
-# 102 "data//maps/CeramBaseCamp/scripts.pory"
+# 94 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 103 "data//maps/CeramBaseCamp/scripts.pory"
+# 95 "data//maps/CeramBaseCamp/scripts.pory"
 	startquest QUEST_CERAM_CYNDAQUIL
 	goto CeramBaseCamp_Cyndaquil_StartQuest_1
 
 
 CeramBaseCamp_Cyndaquil_QuestInProgress::
-# 114 "data//maps/CeramBaseCamp/scripts.pory"
+# 106 "data//maps/CeramBaseCamp/scripts.pory"
 	checkitem ITEM_TM_SUNNY_DAY
-# 115 "data//maps/CeramBaseCamp/scripts.pory"
+# 107 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Cyndaquil_QuestInProgress_2
-# 128 "data//maps/CeramBaseCamp/scripts.pory"
+# 120 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_QuestInProgress_Text_3
-# 129 "data//maps/CeramBaseCamp/scripts.pory"
+# 121 "data//maps/CeramBaseCamp/scripts.pory"
 	release
 CeramBaseCamp_Cyndaquil_QuestInProgress_1:
-# 132 "data//maps/CeramBaseCamp/scripts.pory"
+# 124 "data//maps/CeramBaseCamp/scripts.pory"
 	applymovement 4, CeramBaseCamp_Cyndaquil_Quest_Done_Movement_0
-# 133 "data//maps/CeramBaseCamp/scripts.pory"
+# 125 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmovement 0
-# 134 "data//maps/CeramBaseCamp/scripts.pory"
+# 126 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	return
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_2:
-# 116 "data//maps/CeramBaseCamp/scripts.pory"
+# 108 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_QuestInProgress_Text_0
-# 117 "data//maps/CeramBaseCamp/scripts.pory"
+# 109 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 118 "data//maps/CeramBaseCamp/scripts.pory"
+# 110 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 20
-# 120 "data//maps/CeramBaseCamp/scripts.pory"
+# 112 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_QuestInProgress_Text_1
-# 121 "data//maps/CeramBaseCamp/scripts.pory"
+# 113 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 122 "data//maps/CeramBaseCamp/scripts.pory"
+# 114 "data//maps/CeramBaseCamp/scripts.pory"
 	applymovement 4, CeramBaseCamp_Cyndaquil_QuestInProgress_Movement_0
-# 123 "data//maps/CeramBaseCamp/scripts.pory"
+# 115 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmovement 0
-# 124 "data//maps/CeramBaseCamp/scripts.pory"
+# 116 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2
-# 125 "data//maps/CeramBaseCamp/scripts.pory"
+# 117 "data//maps/CeramBaseCamp/scripts.pory"
 	giveitem ITEM_POTION
-# 126 "data//maps/CeramBaseCamp/scripts.pory"
+# 118 "data//maps/CeramBaseCamp/scripts.pory"
 	completequest QUEST_CERAM_CYNDAQUIL
 	goto CeramBaseCamp_Cyndaquil_QuestInProgress_1
 
 
 CeramBaseCamp_NPC5::
-# 139 "data//maps/CeramBaseCamp/scripts.pory"
-	lockall
-# 140 "data//maps/CeramBaseCamp/scripts.pory"
-	faceplayer
-# 141 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC5_Text_0
-# 143 "data//maps/CeramBaseCamp/scripts.pory"
+# 131 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_NPCITEM, CeramBaseCamp_NPC5_2
-# 146 "data//maps/CeramBaseCamp/scripts.pory"
+# 134 "data//maps/CeramBaseCamp/scripts.pory"
+	lockall
+# 135 "data//maps/CeramBaseCamp/scripts.pory"
+	faceplayer
+# 136 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_NPC5_Text_1
-# 147 "data//maps/CeramBaseCamp/scripts.pory"
+# 137 "data//maps/CeramBaseCamp/scripts.pory"
 	giveitem ITEM_DAWN_STONE
-# 148 "data//maps/CeramBaseCamp/scripts.pory"
+# 138 "data//maps/CeramBaseCamp/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_NPCITEM
-# 149 "data//maps/CeramBaseCamp/scripts.pory"
-	msgbox CeramBaseCamp_NPC5_Text_2
+# 139 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_NPC5_Text_2, MSGBOX_NPC
+# 140 "data//maps/CeramBaseCamp/scripts.pory"
+	release
 CeramBaseCamp_NPC5_1:
-# 151 "data//maps/CeramBaseCamp/scripts.pory"
-	releaseall
-	return
+	end
 
 CeramBaseCamp_NPC5_2:
+# 132 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_NPC5_Text_0, MSGBOX_NPC
 	goto CeramBaseCamp_NPC5_1
 
 
 CeramBaseCamp_Excadrill::
-# 161 "data//maps/CeramBaseCamp/scripts.pory"
+# 152 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EXCADRILL, CeramBaseCamp_Excadrill_2
-# 169 "data//maps/CeramBaseCamp/scripts.pory"
+# 160 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_1, MSGBOX_YESNO
-# 170 "data//maps/CeramBaseCamp/scripts.pory"
+# 161 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 171 "data//maps/CeramBaseCamp/scripts.pory"
+# 162 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Excadrill_5
 CeramBaseCamp_Excadrill_1:
-# 196 "data//maps/CeramBaseCamp/scripts.pory"
+# 187 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Excadrill_2:
-# 163 "data//maps/CeramBaseCamp/scripts.pory"
+# 154 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_0
-# 164 "data//maps/CeramBaseCamp/scripts.pory"
+# 155 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Excadrill_5:
-# 174 "data//maps/CeramBaseCamp/scripts.pory"
-	playmoncry SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER
-# 175 "data//maps/CeramBaseCamp/scripts.pory"
+# 165 "data//maps/CeramBaseCamp/scripts.pory"
+	playmoncry SPECIES_DRILBUR, CRY_MODE_ENCOUNTER
+# 166 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 40
-# 176 "data//maps/CeramBaseCamp/scripts.pory"
+# 167 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmoncry
-# 177 "data//maps/CeramBaseCamp/scripts.pory"
+# 168 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_2
-# 178 "data//maps/CeramBaseCamp/scripts.pory"
-	setwildbattle SPECIES_EXCADRILL, 46
-# 179 "data//maps/CeramBaseCamp/scripts.pory"
+# 169 "data//maps/CeramBaseCamp/scripts.pory"
+	setwildbattle SPECIES_DRILBUR, 15
+# 170 "data//maps/CeramBaseCamp/scripts.pory"
 	dowildbattle
-# 182 "data//maps/CeramBaseCamp/scripts.pory"
+# 173 "data//maps/CeramBaseCamp/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 183 "data//maps/CeramBaseCamp/scripts.pory"
+# 174 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CeramBaseCamp_Excadrill_8
 CeramBaseCamp_Excadrill_7:
-# 186 "data//maps/CeramBaseCamp/scripts.pory"
+# 177 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CeramBaseCamp_Excadrill_11
 CeramBaseCamp_Excadrill_10:
-# 189 "data//maps/CeramBaseCamp/scripts.pory"
+# 180 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CeramBaseCamp_Excadrill_13
 	goto CeramBaseCamp_Excadrill_1
 
 CeramBaseCamp_Excadrill_8:
-# 184 "data//maps/CeramBaseCamp/scripts.pory"
+# 175 "data//maps/CeramBaseCamp/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EXCADRILL
 	goto CeramBaseCamp_Excadrill_7
 
 CeramBaseCamp_Excadrill_11:
-# 187 "data//maps/CeramBaseCamp/scripts.pory"
+# 178 "data//maps/CeramBaseCamp/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EXCADRILL
 	goto CeramBaseCamp_Excadrill_10
 
 CeramBaseCamp_Excadrill_13:
-# 190 "data//maps/CeramBaseCamp/scripts.pory"
+# 181 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_3
 	goto CeramBaseCamp_Excadrill_1
 
@@ -313,23 +289,23 @@ CeramBaseCamp_EventScript_ExitTrigger_Movement_1:
 	walk_down
 	step_end
 
-# 81 "data//maps/CeramBaseCamp/scripts.pory"
+# 73 "data//maps/CeramBaseCamp/scripts.pory"
 CeramBaseCamp_Cyndaquil_Quest_Done_Movement_0:
-# 81 "data//maps/CeramBaseCamp/scripts.pory"
+# 73 "data//maps/CeramBaseCamp/scripts.pory"
 	face_up
 	step_end
 
-# 91 "data//maps/CeramBaseCamp/scripts.pory"
+# 83 "data//maps/CeramBaseCamp/scripts.pory"
 CeramBaseCamp_Cyndaquil_StartQuest_Movement_0:
-# 91 "data//maps/CeramBaseCamp/scripts.pory"
+# 83 "data//maps/CeramBaseCamp/scripts.pory"
 	emote_exclamation_mark
-# 91 "data//maps/CeramBaseCamp/scripts.pory"
+# 83 "data//maps/CeramBaseCamp/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 122 "data//maps/CeramBaseCamp/scripts.pory"
+# 114 "data//maps/CeramBaseCamp/scripts.pory"
 CeramBaseCamp_Cyndaquil_QuestInProgress_Movement_0:
-# 122 "data//maps/CeramBaseCamp/scripts.pory"
+# 114 "data//maps/CeramBaseCamp/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -347,7 +323,7 @@ CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 	.string "handle the heat of the mountain!$"
 
 CeramBaseCamp_NPC_Exit_Text_0:
-# 36 "data//maps/CeramBaseCamp/scripts.pory"
+# 34 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Mt. Ceram is dangerous because once\n"
 	.string "you enter you can't come back. For\l"
 	.string "safety reasons, we don't allow trainers\l"
@@ -355,13 +331,13 @@ CeramBaseCamp_NPC_Exit_Text_0:
 	.string "pass.$"
 
 CeramBaseCamp_NPC1_Text_0:
-# 45 "data//maps/CeramBaseCamp/scripts.pory"
+# 41 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Since the base camp is so small, the\n"
 	.string "Pokemon League clubbed the gym and\l"
 	.string "camp management office into one.$"
 
 CeramBaseCamp_NPC2_Text_0:
-# 53 "data//maps/CeramBaseCamp/scripts.pory"
+# 47 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "This camp was established to dig a\n"
 	.string "tunnel through Mt. Ceram. Old equipment\l"
 	.string "from back then is left here. I remember\l"
@@ -370,27 +346,27 @@ CeramBaseCamp_NPC2_Text_0:
 	.string "Haha! I wonder if it's still there...$"
 
 CeramBaseCamp_NPC3_Text_0:
-# 61 "data//maps/CeramBaseCamp/scripts.pory"
+# 53 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "We get many hikers and collectors pass\n"
 	.string "through the base camp, because they\l"
 	.string "want to climb Mt. Ceram.$"
 
 CeramBaseCamp_Cyndaquil_Quest_Done_Text_0:
-# 80 "data//maps/CeramBaseCamp/scripts.pory"
+# 72 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Cyndaquil and I do everything\n"
 	.string "together!$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_0:
-# 89 "data//maps/CeramBaseCamp/scripts.pory"
+# 81 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "C'mon Cyndaquil!$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_1:
-# 92 "data//maps/CeramBaseCamp/scripts.pory"
+# 84 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "CYNDAQUIL: quiiillll!!!\p"
 	.string "Sigh, it's just not good enough...$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_2:
-# 97 "data//maps/CeramBaseCamp/scripts.pory"
+# 89 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "We battled Arian and my Cyndaquil saw\n"
 	.string "the move SUNNY DAY for the first time!\l"
 	.string "Since then we've been trying to learn it\l"
@@ -400,63 +376,65 @@ CeramBaseCamp_Cyndaquil_StartQuest_Text_2:
 	.string "Cyndaquil?$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_3:
-# 101 "data//maps/CeramBaseCamp/scripts.pory"
+# 93 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Brilliant! Thank you. We'll be waiting\n"
 	.string "here till you get the TM SUNNY DAY.$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_4:
-# 105 "data//maps/CeramBaseCamp/scripts.pory"
+# 97 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Oh well. See you.$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_0:
-# 116 "data//maps/CeramBaseCamp/scripts.pory"
+# 108 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Did you bring SUNNY DAY?\n"
 	.string "Yes? Perfect! Let's get to it.$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_1:
-# 120 "data//maps/CeramBaseCamp/scripts.pory"
+# 112 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Using TM on Cyndaquil...\p"
 	.string "...poof!\p"
 	.string "Cyndaquil has learned SUNNY DAY!$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_2:
-# 124 "data//maps/CeramBaseCamp/scripts.pory"
+# 116 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Thank you! Isn't this great, Cyndaquil?\p"
 	.string "CYNDAQUIL: quiii!!!\p"
 	.string "Here, you must take this. No no, I\n"
 	.string "insist.$"
 
 CeramBaseCamp_Cyndaquil_QuestInProgress_Text_3:
-# 128 "data//maps/CeramBaseCamp/scripts.pory"
+# 120 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Please bring the TM SUNNY DAY for\n"
 	.string "Cyndaquil!$"
 
 CeramBaseCamp_NPC5_Text_0:
-# 141 "data//maps/CeramBaseCamp/scripts.pory"
+# 132 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Mt. Ceram's geology is unique. Many rare\n"
 	.string "rocks can be found up there.$"
 
 CeramBaseCamp_NPC5_Text_1:
-# 146 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "Here, have one.$"
+# 136 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "Mt. Ceram's geology is unique. Many rare\n"
+	.string "rocks can be found up there. Here, have\l"
+	.string "one.$"
 
 CeramBaseCamp_NPC5_Text_2:
-# 149 "data//maps/CeramBaseCamp/scripts.pory"
+# 139 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Don't worry. I've got tons of these!$"
 
 CeramBaseCamp_Excadrill_Text_0:
-# 163 "data//maps/CeramBaseCamp/scripts.pory"
+# 154 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill.$"
 
 CeramBaseCamp_Excadrill_Text_1:
-# 169 "data//maps/CeramBaseCamp/scripts.pory"
+# 160 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill...peek inside?$"
 
 CeramBaseCamp_Excadrill_Text_2:
-# 177 "data//maps/CeramBaseCamp/scripts.pory"
+# 168 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "A wild Pokemon attacks!$"
 
 CeramBaseCamp_Excadrill_Text_3:
-# 190 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "The Excadrill retreats back into its\n"
-	.string "home. Better not disturb it again!$"
+# 181 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "The Drilbur retreats back into its home.\n"
+	.string "Better not disturb it again!$"

@@ -11,16 +11,22 @@ raw `
 
 
 mapscripts CeramBaseCamp_Main_MapScripts{
-    MAP_SCRIPT_ON_TRANSITION {
-        checkflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
-        if (var(VAR_RESULT) == 0) {playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)}
-    }
+    MAP_SCRIPT_ON_RESUME: CeramBaseCamp_Main_OnResume
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_SUPPLY_DEPOT_STATE, 0: CeramBaseCamp_Main_OnResume    
+    ]
 }
 
 
 
-mapscripts CeramBAseCamp_Main_OnWarp{
+script CeramBaseCamp_Main_OnResume{
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
 
+    } else {
+        playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)
+    }
+    releaseall 
+    end
 }
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
@@ -175,6 +181,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
     setflag(FLAG_CERAMBASECAMP_EVIL_BATTLE)
     clearflag(FLAG_HIDE_BASECAMP_SHOPKEEPER)
+    setvar(VAR_SUPPLY_DEPOT_STATE, 1)
 
     fadescreen(FADE_FROM_BLACK)    
     releaseall
@@ -350,10 +357,10 @@ script CeramBaseCamp_Main_NPC5{
 
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        showmonpic(SPECIES_NYMBLE, 10, 3)
-        msgbox(format("I want to gift my sister a DEWPIDER. It's her favourite Pokemon! But I couldn't find any on Route 4."))
+        showmonpic(SPECIES_DEWPIDER, 10, 3)
+        msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokemon! But I couldn't find any on Route 4."))
         hidemonpic
-        msgbox(format("If you have one, will you trade it for my WIMPOD?"), MSGBOX_YESNO)
+        msgbox(format("If you have one, will you trade it for my Wimpod?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //do trade
 
@@ -372,7 +379,7 @@ script CeramBaseCamp_Main_NPC5{
 
             //Decline if nothing chosen
             if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
-               msgbox(format("If you have one, will you trade it for my WIMPOD?"))
+               msgbox(format("If you have one, will you trade it for my Wimpod?"))
                releaseall
                end          
             }
@@ -387,12 +394,12 @@ script CeramBaseCamp_Main_NPC5{
                 special(CreateInGameTradePokemon)
                 special(DoInGameTradeScene)
                 waitstate
-                msgbox(format("Thank you! Please take good care of my WIMPOD."))
+                msgbox(format("Thank you! Please take good care of my Wimpod."))
                 setflag(FLAG_CERAMBASECAMP_NPC_TRADE)      
 
             } else {
                 //else (mon isn't nymble)
-                msgbox(format("Hey, this isn't a NYMBLE! I'm not stupid, you know?"))
+                msgbox(format("Hey, this isn't a Dewpider! I'm not stupid, you know?"))
                 releaseall
                 end
             }

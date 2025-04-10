@@ -97,11 +97,16 @@ script MtCeram_Caves_Greta_Main{
     if (var(VAR_RESULT) == 0){
         giveitem(ITEM_DARK_GEM)
     } 
-    if (var(VAR_RESULT) == 1){
-        giveitem(ITEM_FIGHTING_GEM)
-    } 
-    if (var(VAR_RESULT) == 2){
-        giveitem(ITEM_PSYCHIC_GEM)
+    else 
+    {
+        if (var(VAR_RESULT) == 1){
+            giveitem(ITEM_FIGHTING_GEM)
+        } 
+        else {
+            if (var(VAR_RESULT) == 2){
+                giveitem(ITEM_PSYCHIC_GEM)
+            }
+        }
     } 
 
 

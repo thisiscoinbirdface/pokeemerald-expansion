@@ -16,6 +16,16 @@ mapscripts MtCeram_MapScripts {}
 //The Charizard
 script MtCeram_Charizard{
     lockall
+
+
+//  temp quickfix
+    msgbox(format("It's asleep..."))
+    releaseall
+    end
+
+
+
+
     msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){

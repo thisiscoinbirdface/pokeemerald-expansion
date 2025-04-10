@@ -160,30 +160,28 @@ MtCeram_Caves_Greta_Main::
 # 97 "data//maps/MtCeram_Caves/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MtCeram_Caves_Greta_Main_2
-MtCeram_Caves_Greta_Main_1:
-# 100 "data//maps/MtCeram_Caves/scripts.pory"
+# 102 "data//maps/MtCeram_Caves/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MtCeram_Caves_Greta_Main_5
-MtCeram_Caves_Greta_Main_4:
-# 103 "data//maps/MtCeram_Caves/scripts.pory"
+# 106 "data//maps/MtCeram_Caves/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq MtCeram_Caves_Greta_Main_8
-MtCeram_Caves_Greta_Main_7:
-# 108 "data//maps/MtCeram_Caves/scripts.pory"
-	msgbox MtCeram_Caves_Greta_Main_Text_7
-# 109 "data//maps/MtCeram_Caves/scripts.pory"
-	release
-# 110 "data//maps/MtCeram_Caves/scripts.pory"
-	setflag FLAG_CERAM_CAVES_GRETA_MEETING
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
-	applymovement LOCALID_GRETA, MtCeram_Caves_Greta_Main_Movement_3
+MtCeram_Caves_Greta_Main_1:
 # 113 "data//maps/MtCeram_Caves/scripts.pory"
-	waitmovement 0
+	msgbox MtCeram_Caves_Greta_Main_Text_7
 # 114 "data//maps/MtCeram_Caves/scripts.pory"
-	removeobject LOCALID_GRETA
-# 116 "data//maps/MtCeram_Caves/scripts.pory"
-	fadedefaultbgm
+	release
+# 115 "data//maps/MtCeram_Caves/scripts.pory"
+	setflag FLAG_CERAM_CAVES_GRETA_MEETING
 # 117 "data//maps/MtCeram_Caves/scripts.pory"
+	applymovement LOCALID_GRETA, MtCeram_Caves_Greta_Main_Movement_3
+# 118 "data//maps/MtCeram_Caves/scripts.pory"
+	waitmovement 0
+# 119 "data//maps/MtCeram_Caves/scripts.pory"
+	removeobject LOCALID_GRETA
+# 121 "data//maps/MtCeram_Caves/scripts.pory"
+	fadedefaultbgm
+# 122 "data//maps/MtCeram_Caves/scripts.pory"
 	releaseall
 	end
 
@@ -193,14 +191,14 @@ MtCeram_Caves_Greta_Main_2:
 	goto MtCeram_Caves_Greta_Main_1
 
 MtCeram_Caves_Greta_Main_5:
-# 101 "data//maps/MtCeram_Caves/scripts.pory"
+# 103 "data//maps/MtCeram_Caves/scripts.pory"
 	giveitem ITEM_FIGHTING_GEM
-	goto MtCeram_Caves_Greta_Main_4
+	goto MtCeram_Caves_Greta_Main_1
 
 MtCeram_Caves_Greta_Main_8:
-# 104 "data//maps/MtCeram_Caves/scripts.pory"
+# 107 "data//maps/MtCeram_Caves/scripts.pory"
 	giveitem ITEM_PSYCHIC_GEM
-	goto MtCeram_Caves_Greta_Main_7
+	goto MtCeram_Caves_Greta_Main_1
 
 
 # 15 "data//maps/MtCeram_Caves/scripts.pory"
@@ -299,27 +297,27 @@ MtCeram_Caves_Greta_Main_Movement_2:
 	face_left
 	step_end
 
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 MtCeram_Caves_Greta_Main_Movement_3:
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_down
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_down
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
-# 112 "data//maps/MtCeram_Caves/scripts.pory"
+# 117 "data//maps/MtCeram_Caves/scripts.pory"
 	walk_left
 	step_end
 
@@ -376,7 +374,7 @@ MtCeram_Caves_Greta_Main_Text_6:
 	.string "PSYCHIC GEM$"
 
 MtCeram_Caves_Greta_Main_Text_7:
-# 108 "data//maps/MtCeram_Caves/scripts.pory"
+# 113 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "GRETA: I travel across all the routes\n"
 	.string "and towns of Cormoria, so I bet we'll\l"
 	.string "meet again - somewhere or the other.\l"

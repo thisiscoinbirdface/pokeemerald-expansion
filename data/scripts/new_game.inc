@@ -309,6 +309,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_HOLLOW_MIMEJR_2
 	setflag FLAG_HIDE_HOLLOW_MIMEJR_3
 	setflag FLAG_HIDE_LILY_POND_KOHLA
+	setflag FLAG_HIDE_ROUTE4_DEWPIDER
 
 	call EventScript_ResetAllBerries
 	end

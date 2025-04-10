@@ -287,8 +287,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DEWPIDER)",
-      "x": 8,
-      "y": 14,
+      "x": 9,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -296,7 +296,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_Dewpider",
-      "flag": "FLAG_ROUTE4_DEWPIDER_FINISHED"
+      "flag": "FLAG_HIDE_ROUTE4_DEWPIDER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",

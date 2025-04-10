@@ -31,35 +31,27 @@ script CeramBaseCamp_EventScript_ExitTrigger{
 }
 
 script CeramBaseCamp_NPC_Exit{
-    lockall
-    faceplayer
-    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."))
-    releaseall   
+    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."), MSGBOX_NPC)
+    end
 }
 
 
 //NPC1 - generic
 script CeramBaseCamp_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Since the base camp is so small, the Pokemon League clubbed the gym and camp management office into one."))
-    releaseall
+    msgbox(format("Since the base camp is so small, the Pokemon League clubbed the gym and camp management office into one."), MSGBOX_NPC)
+    end
 }
 
 //NPC2 - generic
 script CeramBaseCamp_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("This camp was established to dig a tunnel through Mt. Ceram. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."))
-    releaseall
+    msgbox(format("This camp was established to dig a tunnel through Mt. Ceram. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."), MSGBOX_NPC)
+    end
 }
 
 //NPC3 - generic
 script CeramBaseCamp_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("We get many hikers and collectors pass through the base camp, because they want to climb Mt. Ceram."))
-    releaseall
+    msgbox(format("We get many hikers and collectors pass through the base camp, because they want to climb Mt. Ceram."), MSGBOX_NPC)
+    end
 }
 
 //NPC4 - small quest
@@ -135,20 +127,19 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
 }
 
 //NPC5 - giveitem
-script CeramBaseCamp_NPC5{
-    lockall
-    faceplayer
-    msgbox(format("Mt. Ceram's geology is unique. Many rare rocks can be found up there."))
-    
+script CeramBaseCamp_NPC5{    
     if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
-
+        msgbox(format("Mt. Ceram's geology is unique. Many rare rocks can be found up there."), MSGBOX_NPC)
     } else {
-        msgbox(format("Here, have one."))
+        lockall
+        faceplayer
+        msgbox(format("Mt. Ceram's geology is unique. Many rare rocks can be found up there. Here, have one."))
         giveitem(ITEM_DAWN_STONE)
         setflag(FLAG_CERAMBASECAMP_NPCITEM)
-        msgbox(format("Don't worry. I've got tons of these!"))
+        msgbox(format("Don't worry. I've got tons of these!"), MSGBOX_NPC)
+        release
     }
-    releaseall
+    end
 }
 
 
@@ -171,11 +162,11 @@ script CeramBaseCamp_Excadrill{
         if (var(VAR_RESULT) == 1){
 
             //excadrill encounter
-            playmoncry(SPECIES_EXCADRILL, CRY_MODE_ENCOUNTER)
+            playmoncry(SPECIES_DRILBUR, CRY_MODE_ENCOUNTER)
             delay(40)
             waitmoncry
             msgbox(format("A wild Pokemon attacks!"))
-            setwildbattle(SPECIES_EXCADRILL, 46)     
+            setwildbattle(SPECIES_DRILBUR, 15)     
             dowildbattle  
 
             //result
@@ -187,7 +178,7 @@ script CeramBaseCamp_Excadrill{
                 setflag(FLAG_CERAMBASECAMP_EXCADRILL)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
-                msgbox(format("The Excadrill retreats back into its home. Better not disturb it again!"))
+                msgbox(format("The Drilbur retreats back into its home. Better not disturb it again!"))
             }
         }
 

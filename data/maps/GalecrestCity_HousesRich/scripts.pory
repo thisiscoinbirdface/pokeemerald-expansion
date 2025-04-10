@@ -1,4 +1,6 @@
-mapscripts GalecrestCity_HousesRich_MapScripts{}
+mapscripts GalecrestCity_HousesRich_MapScripts{
+
+}
 
 
 
@@ -8,6 +10,7 @@ script GalecrestCity_HousesRich_NPC1{
     faceplayer
     msgbox(format("Our older son has joined the Detective Academy. He's the pride of the family!"))
     releaseall
+    end
 }
 
 
@@ -16,6 +19,7 @@ script GalecrestCity_HousesRich_NPC2{
     faceplayer
     msgbox(format("I can only hope my younger son takes after his brother."))
     releaseall
+    end
 }
 
 
@@ -118,7 +122,7 @@ script GalecrestCity_HousesRich_NPC9{
     faceplayer
 
     if (flag(FLAG_GALECREST_RICH_HOUSECLEANITEM)){
-        
+            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."))
     } else {
         msgbox(format("I'm trying to organise my daughter's belongings. Are you a Pokemon trainer?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
