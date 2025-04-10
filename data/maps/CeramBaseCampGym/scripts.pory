@@ -18,9 +18,12 @@ script CeramBaseCampGym_Red{
 
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_FIRE_GEM)
-            }
-            if (var(VAR_RESULT) == 1){
-                giveitem(ITEM_CHARCOAL)
+            } else{
+                if (var(VAR_RESULT) == 1){
+                    giveitem(ITEM_CHARCOAL)
+                } else {
+                    
+                }
             }
 
             setflag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD)

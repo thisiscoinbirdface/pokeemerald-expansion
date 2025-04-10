@@ -278,15 +278,9 @@ script GalecrestCity_DetectiveAcademy_NPC6{
     }
 
 script GalecrestCity_DetectiveAcademy_NPC8{
-    lockall
-    faceplayer
     trainerbattle_single(TRAINER_GALECREST_DETECTIVE_A, format("Hey, you look weak. You'd be a good training dummy for my Charcadet!"), format("But you're not even a student!"))
-    msgbox(format("You may have beaten me, but I bet you can't beat Kohla! He's the star of the Academy!"))
-    release
-    applymovement(11, moves(face_left))
-    waitmovement(0)
+    msgbox(format("You may have beaten me, but I bet you can't beat Kohla! He's the star of the Academy!"), MSGBOX_AUTOCLOSE)
     end
-
 }
 
 script GalecrestCity_DetectiveAcademy_NPC9{

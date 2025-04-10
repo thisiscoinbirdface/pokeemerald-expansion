@@ -9574,7 +9574,7 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 z)
     if (sLedgeJumpBehaviors[direction](behavior))
         return direction + 1;
 
-    if (MetatileBehavior_IsAquaStepJump(behavior) && CheckBagHasItem(ITEM_HM01, 1))
+    if (MetatileBehavior_IsAquaStepJump(behavior) && CheckBagHasItem(ITEM_HM01, 1) && FlagGet(FLAG_BADGE01_GET))
         return direction + 1;
 
     return DIR_NONE;

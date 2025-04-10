@@ -444,7 +444,7 @@ CeramBaseCamp_Main_NPC5::
 	goto_if_set FLAG_CERAMBASECAMP_NPC_TRADE, CeramBaseCamp_Main_NPC5_2
 # 335 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC5_5
-# 390 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 391 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_6, MSGBOX_NPC
 CeramBaseCamp_Main_NPC5_4:
 	end
@@ -470,7 +470,7 @@ CeramBaseCamp_Main_NPC5_5:
 # 343 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Main_NPC5_8
-# 386 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 387 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_5, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC5_4
 
@@ -501,7 +501,7 @@ CeramBaseCamp_Main_NPC5_8:
 # 369 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	compare VAR_RESULT, VAR_0x8009
 	goto_if_eq CeramBaseCamp_Main_NPC5_14
-# 381 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 382 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_4, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC5_4
 
@@ -526,20 +526,22 @@ CeramBaseCamp_Main_NPC5_14:
 # 376 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_3
 # 377 "data//maps/CeramBaseCamp_Main/scripts.pory"
+	release
+# 378 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_NPC_TRADE
 	goto CeramBaseCamp_Main_NPC5_4
 
 
 CeramBaseCamp_Main_NPC6::
-# 425 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 426 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_NPC6_2
-# 430 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 431 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_6, MSGBOX_NPC
 CeramBaseCamp_Main_NPC6_1:
 	end
 
 CeramBaseCamp_Main_NPC6_2:
-# 427 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 428 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC6_Text_0, MSGBOX_NPC
 	goto CeramBaseCamp_Main_NPC6_1
 
@@ -990,22 +992,22 @@ CeramBaseCamp_Main_NPC5_Text_3:
 	.string "Wimpod.$"
 
 CeramBaseCamp_Main_NPC5_Text_4:
-# 381 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 382 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Hey, this isn't a Dewpider! I'm not\n"
 	.string "stupid, you know?$"
 
 CeramBaseCamp_Main_NPC5_Text_5:
-# 386 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 387 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Oh...well, if you change your mind, you\n"
 	.string "know where I am!$"
 
 CeramBaseCamp_Main_NPC5_Text_6:
-# 390 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 391 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I can't wait for Arian to put these\n"
 	.string "crooks in their place!$"
 
 CeramBaseCamp_Main_NPC6_Text_0:
-# 427 "data//maps/CeramBaseCamp_Main/scripts.pory"
+# 428 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "On the other side of Mt. Ceram is\n"
 	.string "Silversun City. I hear the trek down\l"
 	.string "from the summit is tough, because the\l"

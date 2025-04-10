@@ -873,7 +873,7 @@ GalecrestCity_DetectiveMeet_Main_Text_7:
 GalecrestCity_DetectiveMeet_Main_Text_8:
 # 199 "data//maps/GalecrestCity/scripts.pory"
 	.string "DETECTIVE: This building is the\n"
-	.string "Detective Academy. Your frierd Kohla\l"
+	.string "Detective Academy. Your friend Kohla\l"
 	.string "was trained here. He knows the plan\l"
 	.string "already. Go and talk to him first.$"
 

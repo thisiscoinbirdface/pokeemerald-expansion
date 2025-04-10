@@ -374,6 +374,7 @@ script CeramBaseCamp_Main_NPC5{
                 special(DoInGameTradeScene)
                 waitstate
                 msgbox(format("Thank you! Please take good care of my Wimpod."))
+                release
                 setflag(FLAG_CERAMBASECAMP_NPC_TRADE)      
 
             } else {

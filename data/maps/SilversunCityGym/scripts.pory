@@ -35,9 +35,12 @@ script SilversunCityGym_EventScript_Red{
 
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_GRASS_GEM)
-            }
-            if (var(VAR_RESULT) == 1){
-                giveitem(ITEM_DARK_GEM)
+            } else{
+                if (var(VAR_RESULT) == 1){
+                    giveitem(ITEM_DARK_GEM)
+                } else {
+                    
+                }
             }
 
             setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)

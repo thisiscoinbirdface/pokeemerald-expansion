@@ -86,10 +86,14 @@ script GastreeGym_Red{
 
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_ROCK_GEM)
+            } else{
+                if (var(VAR_RESULT) == 1){
+                    giveitem(ITEM_HARD_STONE)
+                } else {
+                    
+                }
             }
-            if (var(VAR_RESULT) == 1){
-                giveitem(ITEM_HARD_STONE)
-            }
+
 
             setflag(FLAG_GASTREEGYM_SPENSER_REWARD)
             msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            

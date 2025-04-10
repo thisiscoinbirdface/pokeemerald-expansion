@@ -442,7 +442,7 @@ script MtCeram_EventScript_NPC1{
 
 //Change this guys dialogue
 script MtCeram_EventScript_NPC2{
-    msgbox(format("I saw a Larvesta here the other day! But they're very rare. The constant Sizzlipede and Venipede fighting scare them away."))
+    msgbox(format("I saw a Larvesta here the other day! But they're very rare. The constant Sizzlipede and Venipede fighting scare them away."), MSGBOX_NPC)
     end
 }
 
@@ -453,6 +453,7 @@ script MtCeram_EventScript_NPC3{
     } else {
         msgbox(format("Oof! This place is unbearably hot! Don't forget to stay hydrated!"), MSGBOX_NPC)
         giveitem(ITEM_FRESH_WATER)
+        release
         setflag(FLAG_MT_CERAM_FRESH_WATER)
     }
 

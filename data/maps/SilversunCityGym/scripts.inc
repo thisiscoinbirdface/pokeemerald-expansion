@@ -35,18 +35,18 @@ SilversunCityGym_EventScript_Red::
 	faceplayer
 # 29 "data//maps/SilversunCityGym/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCityGym_EventScript_Red_2
-# 47 "data//maps/SilversunCityGym/scripts.pory"
-	goto_if_set FLAG_GALECRESTGYM_SPENSER_WATER, SilversunCityGym_EventScript_Red_8
 # 50 "data//maps/SilversunCityGym/scripts.pory"
-	msgbox SilversunCityGym_EventScript_Red_Text_6
-# 51 "data//maps/SilversunCityGym/scripts.pory"
-	giveitem ITEM_FRESH_WATER
-# 52 "data//maps/SilversunCityGym/scripts.pory"
-	msgbox SilversunCityGym_EventScript_Red_Text_5
+	goto_if_set FLAG_GALECRESTGYM_SPENSER_WATER, SilversunCityGym_EventScript_Red_8
 # 53 "data//maps/SilversunCityGym/scripts.pory"
+	msgbox SilversunCityGym_EventScript_Red_Text_6
+# 54 "data//maps/SilversunCityGym/scripts.pory"
+	giveitem ITEM_FRESH_WATER
+# 55 "data//maps/SilversunCityGym/scripts.pory"
+	msgbox SilversunCityGym_EventScript_Red_Text_5
+# 56 "data//maps/SilversunCityGym/scripts.pory"
 	setflag FLAG_GALECRESTGYM_SPENSER_WATER
 SilversunCityGym_EventScript_Red_1:
-# 56 "data//maps/SilversunCityGym/scripts.pory"
+# 59 "data//maps/SilversunCityGym/scripts.pory"
 	releaseall
 	end
 
@@ -60,14 +60,13 @@ SilversunCityGym_EventScript_Red_2:
 # 36 "data//maps/SilversunCityGym/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCityGym_EventScript_Red_12
-SilversunCityGym_EventScript_Red_11:
 # 39 "data//maps/SilversunCityGym/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCityGym_EventScript_Red_15
-SilversunCityGym_EventScript_Red_14:
-# 43 "data//maps/SilversunCityGym/scripts.pory"
+SilversunCityGym_EventScript_Red_11:
+# 46 "data//maps/SilversunCityGym/scripts.pory"
 	setflag FLAG_GALECRESTGYM_SPENSER_REWARD
-# 44 "data//maps/SilversunCityGym/scripts.pory"
+# 47 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_EventScript_Red_Text_4
 	goto SilversunCityGym_EventScript_Red_1
 
@@ -77,7 +76,7 @@ SilversunCityGym_EventScript_Red_5:
 	goto SilversunCityGym_EventScript_Red_1
 
 SilversunCityGym_EventScript_Red_8:
-# 48 "data//maps/SilversunCityGym/scripts.pory"
+# 51 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_EventScript_Red_Text_5
 	goto SilversunCityGym_EventScript_Red_1
 
@@ -89,45 +88,45 @@ SilversunCityGym_EventScript_Red_12:
 SilversunCityGym_EventScript_Red_15:
 # 40 "data//maps/SilversunCityGym/scripts.pory"
 	giveitem ITEM_DARK_GEM
-	goto SilversunCityGym_EventScript_Red_14
+	goto SilversunCityGym_EventScript_Red_11
 
 
 SilversunCityGym_TrainerA::
-# 63 "data//maps/SilversunCityGym/scripts.pory"
+# 66 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_A, SilversunCityGym_TrainerA_Text_0, SilversunCityGym_TrainerA_Text_1
-# 64 "data//maps/SilversunCityGym/scripts.pory"
+# 67 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerA_Text_2
-# 65 "data//maps/SilversunCityGym/scripts.pory"
+# 68 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerB::
-# 70 "data//maps/SilversunCityGym/scripts.pory"
+# 73 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_B, SilversunCityGym_TrainerB_Text_0, SilversunCityGym_TrainerB_Text_1
-# 71 "data//maps/SilversunCityGym/scripts.pory"
+# 74 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerB_Text_2
-# 72 "data//maps/SilversunCityGym/scripts.pory"
+# 75 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerC::
-# 77 "data//maps/SilversunCityGym/scripts.pory"
+# 80 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_C, SilversunCityGym_TrainerC_Text_0, SilversunCityGym_TrainerC_Text_1
-# 78 "data//maps/SilversunCityGym/scripts.pory"
+# 81 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerC_Text_2
-# 79 "data//maps/SilversunCityGym/scripts.pory"
+# 82 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
 
 SilversunCityGym_TrainerD::
-# 84 "data//maps/SilversunCityGym/scripts.pory"
+# 87 "data//maps/SilversunCityGym/scripts.pory"
 	trainerbattle_single TRAINER_SILVERSUNGYM_D, SilversunCityGym_TrainerD_Text_0, SilversunCityGym_TrainerD_Text_1
-# 85 "data//maps/SilversunCityGym/scripts.pory"
+# 88 "data//maps/SilversunCityGym/scripts.pory"
 	msgbox SilversunCityGym_TrainerD_Text_2
-# 86 "data//maps/SilversunCityGym/scripts.pory"
+# 89 "data//maps/SilversunCityGym/scripts.pory"
 	release
 	end
 
@@ -167,12 +166,12 @@ SilversunCityGym_EventScript_Red_Text_3:
 	.string "DARK GEM$"
 
 SilversunCityGym_EventScript_Red_Text_4:
-# 44 "data//maps/SilversunCityGym/scripts.pory"
+# 47 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Now get on out there and find the next\n"
 	.string "gym - I'll see you there!$"
 
 SilversunCityGym_EventScript_Red_Text_5:
-# 48 "data//maps/SilversunCityGym/scripts.pory"
+# 51 "data//maps/SilversunCityGym/scripts.pory"
 	.string "When Gloria was appointed leader, she\n"
 	.string "took all the funds to set up her gym and\l"
 	.string "made a theater studio instead!\l"
@@ -184,62 +183,62 @@ SilversunCityGym_EventScript_Red_Text_5:
 	.string "to help maintain the gym.$"
 
 SilversunCityGym_EventScript_Red_Text_6:
-# 50 "data//maps/SilversunCityGym/scripts.pory"
+# 53 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Welcome to the Silversun Gym...and\n"
 	.string "Theater Studio! First, have some water.$"
 
 SilversunCityGym_TrainerA_Text_0:
-# 63 "data//maps/SilversunCityGym/scripts.pory"
+# 66 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Hey, you're not an actor! Oh, you're a\n"
 	.string "trainer? Sigh...why does Gloria make us\l"
 	.string "do this?$"
 
 SilversunCityGym_TrainerA_Text_1:
-# 63 "data//maps/SilversunCityGym/scripts.pory"
+# 66 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Yay. I lost. Now back to acting!$"
 
 SilversunCityGym_TrainerA_Text_2:
-# 64 "data//maps/SilversunCityGym/scripts.pory"
+# 67 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Acting is a passion and a craft! We\n"
 	.string "don't have time to battle.$"
 
 SilversunCityGym_TrainerB_Text_0:
-# 70 "data//maps/SilversunCityGym/scripts.pory"
+# 73 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Get out of the way! I need to practice\n"
 	.string "my dance moves or Gloria won't cast me!$"
 
 SilversunCityGym_TrainerB_Text_1:
-# 70 "data//maps/SilversunCityGym/scripts.pory"
+# 73 "data//maps/SilversunCityGym/scripts.pory"
 	.string "$"
 
 SilversunCityGym_TrainerB_Text_2:
-# 71 "data//maps/SilversunCityGym/scripts.pory"
+# 74 "data//maps/SilversunCityGym/scripts.pory"
 	.string "We're practicing so that Gloria casts us\n"
 	.string "in her next production.$"
 
 SilversunCityGym_TrainerC_Text_0:
-# 77 "data//maps/SilversunCityGym/scripts.pory"
+# 80 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Argh - this isn't a Gym for crying out\n"
 	.string "loud! This is Gloria's theater studio. We\l"
 	.string "don't have time for battling!$"
 
 SilversunCityGym_TrainerC_Text_1:
-# 77 "data//maps/SilversunCityGym/scripts.pory"
+# 80 "data//maps/SilversunCityGym/scripts.pory"
 	.string "So boring!$"
 
 SilversunCityGym_TrainerC_Text_2:
-# 78 "data//maps/SilversunCityGym/scripts.pory"
+# 81 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Move it!$"
 
 SilversunCityGym_TrainerD_Text_0:
-# 84 "data//maps/SilversunCityGym/scripts.pory"
+# 87 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Nobody here likes the fact that this\n"
 	.string "studio is a Gym too - including me!$"
 
 SilversunCityGym_TrainerD_Text_1:
-# 84 "data//maps/SilversunCityGym/scripts.pory"
+# 87 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Nobody here likes you!$"
 
 SilversunCityGym_TrainerD_Text_2:
-# 85 "data//maps/SilversunCityGym/scripts.pory"
+# 88 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Gloria is just glorious!$"
