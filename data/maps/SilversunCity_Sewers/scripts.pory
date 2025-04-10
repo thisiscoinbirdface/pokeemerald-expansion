@@ -322,6 +322,8 @@ mart SilversunCity_Sewers_Market_C_Inventory{
     ITEM_REAPER_CLOTH
     ITEM_LUSTER_STONE
     ITEM_SHINY_STONE
+    ITEM_CHIPPED_POT
+    ITEM_MASTERPIECE_TEACUP
 }
 
 //Muk

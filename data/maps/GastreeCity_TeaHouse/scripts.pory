@@ -103,9 +103,9 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Poltchageist", "Sinistea")
 
     if (var(VAR_RESULT) == 0){
-        givemon(SPECIES_POLTCHAGEIST, 10)
+        givemon(SPECIES_POLTCHAGEIST_ARTISAN, 10)
         //Fanfare
-        showmonpic(SPECIES_POLTCHAGEIST, 10, 3)
+        showmonpic(SPECIES_POLTCHAGEIST_ARTISAN, 10, 3)
         playfanfare(MUS_OBTAIN_ITEM)        
         msgbox(format("The Tea House Owner has gifted you a Poltchageist!"))
         hidemonpic
@@ -115,9 +115,9 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
         msgbox(format("This one's a keeper - extremely well-trained and hospitable. I'm sure you two will have a great time together. I'll miss you, Poltchageist!"))
         release
     } else {
-        givemon(SPECIES_SINISTEA, 10)
+        givemon(SPECIES_SINISTEA_ANTIQUE, 10)
         //Fanfare
-        showmonpic(SPECIES_SINISTEA, 10, 3)
+        showmonpic(SPECIES_SINISTEA_ANTIQUE, 10, 3)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox(format("The Tea House Owner has gifted you a Sinistea!"))
         hidemonpic
