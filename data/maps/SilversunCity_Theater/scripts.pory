@@ -213,6 +213,7 @@ script SilversunCity_Theater_NPC6{
     if (flag(FLAG_SILVERSUN_THEATER_SCARF)){
         msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role any day now!"), MSGBOX_NPC)
     } else {
+        lockall
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
          msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
@@ -230,6 +231,7 @@ script SilversunCity_Theater_NPC6{
         } else {
             msgbox(format("Oh, so you're part of the crew. I'm an extra, so we're both playing support roles."), MSGBOX_NPC)
         }
+        releaseall
     }
     end
 }
