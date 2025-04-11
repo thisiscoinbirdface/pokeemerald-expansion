@@ -3,35 +3,11 @@
 //5 trainers
 
 mapscripts SilversunCity_Sewers_MapScripts{
-    MAP_SCRIPT_ON_TRANSITION: SilversunCity_OnTransition
+//    MAP_SCRIPT_ON_TRANSITION: SilversunCity_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_SEWERS_DUSKULL, 3: SilversunCity_Sewers_Duskull_Event_Ending
+        VAR_TEMP_0, 0: SilversunCity_Sewers_Duskull_Event_Ending
     ]
 }
-
-
-script SilversunCity_OnTransition{
-
-    if (var(VAR_SEWERS_DUSKULL) == 3){
-        setobjectxyperm(9, 48, 46)
-        setobjectxy(9, 48, 46)
-        setobjectmovementtype(1, MOVEMENT_TYPE_FACE_LEFT)
-        setobjectmovementtype(9, MOVEMENT_TYPE_FACE_RIGHT)
-        setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP)
-    }
-
-    end
-}
-
-
-
-
-
-
-
-
-
-
 
 //Man quest at entrance      
 script SilversunCity_Sewers_NPC6{
@@ -139,8 +115,8 @@ script SilversunCity_Sewers_Duskull_Event{
     applymovement(9, moves(walk_up*3))
     msgbox(format("Is...is it gone?\pOh my, you saved me! Thank you so much!\pI was so worried...I need to return to my husband quickly. He must be even more worried!\pHe sent you?\pOkay, let's go to him together."))
     release
+    setflag(FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE)
     setvar(VAR_SEWERS_DUSKULL, 3)
-    fadescreen(FADE_TO_BLACK)
     warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47) 
 }  
 
@@ -148,37 +124,48 @@ script SilversunCity_Sewers_Duskull_Event{
 
 //Quest end
 script SilversunCity_Sewers_Duskull_Event_Ending{
-    lockall
 
-    setobjectxyperm(9, 48, 46)
-    setobjectxy(9, 48, 46)
-    applymovement(1, moves(face_left))
-    applymovement(9, moves(face_right))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+if (flag(FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE)){
+    if (flag(FLAG_SEWERS_DUSKULL)){
+        end
+    } else {
+        lockall
+        
+        setobjectxyperm(9, 48, 46)
+        setobjectxy(9, 48, 46)
+        addobject(9)
+        addobject(1)
+ 
+        applymovement(1, moves(face_left))
+        applymovement(9, moves(face_right))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
 
-    msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SCOURGE. It was so scary!"))
-    release
-    applymovement(9, moves(face_down))
-    applymovement(1, moves(face_down))
-    waitmovement(0)
-    delay(30)
-    msgbox(format("What's your name, trainer?\p{PLAYER}?\pWe're in your debt. We can't imagine life without each other. Please come visit us in our house later. We live next to the Gym."))
-    release
-    goto(TestScript_Sewers)
+        msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SCOURGE. It was so scary!"))
+        release
+        applymovement(9, moves(face_down))
+        applymovement(1, moves(face_down))
+        waitmovement(0)
+        delay(30)
+        msgbox(format("What's your name, trainer?\p{PLAYER}?\pWe're in your debt. We can't imagine life without each other. Please come visit us in our house later. We live next to the Gym."))
+        release
+
+        applymovement(1, moves(walk_right * 6 walk_up))
+        applymovement(9, moves(walk_right * 7 walk_up))
+        waitmovement(9)
+
+        removeobject(1)
+        removeobject(9)
+        setflag(FLAG_SEWERS_DUSKULL)
+        clearflag(FLAG_HIDE_SILVERSUN_DUSKULL_NPCS)
+        releaseall
+        setvar(VAR_SEWERS_DUSKULL, 4)        
+        end
+    }
+} else {
+    end
 }
 
-script TestScript_Sewers{
-    setvar(VAR_SEWERS_DUSKULL, 4)
-    fadescreen(FADE_TO_BLACK)
-    removeobject(1)
-    removeobject(9)    
-    setflag(FLAG_SEWERS_DUSKULL)
-    clearflag(FLAG_HIDE_SILVERSUN_DUSKULL_NPCS)
-    setvar(VAR_SEWERS_DUSKULL, 4)
-    fadescreen(FADE_FROM_BLACK)
-    releaseall
-    end
 }
 
 
@@ -212,7 +199,7 @@ script SilversunCity_Sewers_NPC3{
 }
 //dude at market
 script SilversunCity_Sewers_NPC4{
-    msgbox(format("I came to find a way to evolve my Scyther, but nobody's selling me anything! Apparently they need some type of emblem to prove we're good for our word."), MSGBOX_NPC)
+    msgbox(format("I came to find a way to evolve my Scyther, but nobody's selling me anything! Apparently they need an emblem or something to prove we're good for our word."), MSGBOX_NPC)
     end
 }
 
@@ -292,6 +279,7 @@ script SilversunCity_Sewers_Market_A{
     if (var(VAR_RESULT) == 0){
         goto(SilversunCity_Sewers_NoEmblem)
     }
+
     lock
 	faceplayer
 	message(format("Can't beat Gloria? I'll hook you up with the best stuff."))
@@ -312,6 +300,11 @@ mart SilversunCity_Sewers_Market_A_Inventory{
 
 //Ability capsules dude
 script SilversunCity_Sewers_Market_B{
+    checkitem(ITEM_SMUGGLER_EMBLEM)
+    if (var(VAR_RESULT) == 0){
+        goto(SilversunCity_Sewers_NoEmblem)
+    }
+    
     lock
 	faceplayer
 	message(format("Psst! Hey, you! Check out these goods I've got!"))
@@ -333,6 +326,11 @@ mart SilversunCity_Sewers_Market_B_Inventory{
 
 //Random evo items dude
 script SilversunCity_Sewers_Market_C{
+    checkitem(ITEM_SMUGGLER_EMBLEM)
+    if (var(VAR_RESULT) == 0){
+        goto(SilversunCity_Sewers_NoEmblem)
+    }
+    
     lock
 	faceplayer
 	message(format("You look like you'd make good use of this stuff!"))

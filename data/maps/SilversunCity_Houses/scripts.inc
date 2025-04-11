@@ -166,7 +166,7 @@ SilversunCity_Houses_Husband_2:
 # 126 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 # 128 "data//maps/SilversunCity_Houses/scripts.pory"
-	giveegg SPECIES_HONEDGE
+	giveitem ITEM_SMUGGLER_EMBLEM
 # 129 "data//maps/SilversunCity_Houses/scripts.pory"
 	completequest QUEST_SILVERSUN_WIFE
 # 130 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -326,9 +326,10 @@ SilversunCity_Houses_Husband_Text_0:
 	.string "With Furfrou around, my wife can live\l"
 	.string "better. We're eternally grateful.\p"
 	.string "...\p"
-	.string "We want you to have this. The black\n"
-	.string "market dealer gave it to us but we don't\l"
-	.string "need it.$"
+	.string "Please take this. It was hard to get,\n"
+	.string "but we won't need it any more, because\l"
+	.string "we'll never go into the black market\l"
+	.string "again.$"
 
 SilversunCity_Houses_Wife_Text_0:
 # 139 "data//maps/SilversunCity_Houses/scripts.pory"

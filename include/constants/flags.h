@@ -182,7 +182,7 @@
 #define FLAG_SILVERSUN_BRAILLE_2_DONE  0x2B8 // Unused Flag
 #define FLAG_GASTREE_TEAHOUSE_BERRIES  0x2B9 // Unused Flag
 #define FLAG_HIDE_ROUTE4_DEWPIDER  0x2BA // Unused Flag
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE  0x2BB // Unused Flag
 #define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
 #define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
