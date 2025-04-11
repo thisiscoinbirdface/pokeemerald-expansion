@@ -1234,8 +1234,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SILVERSUNGYM_B ===
 Name: JOHNNY
-Class: Tuber M
-Pic: Tuber M
+Class: Model
+Pic: Model
 Gender: Male
 Music: Girl
 Double Battle: No
@@ -1273,8 +1273,8 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_SILVERSUNGYM_D ===
 Name: RICKY
-Class: Tuber M
-Pic: Tuber M
+Class: Model
+Pic: Model
 Gender: Male
 Music: Girl
 Double Battle: No

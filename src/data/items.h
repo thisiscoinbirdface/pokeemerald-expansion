@@ -14207,4 +14207,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ContestPass,
     },
 
+    [ITEM_SMUGGLER_EMBLEM] =
+    {
+        .name = _("Smuggler Emblem"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A medal-like item in\n"
+            "dubious condition.\n"
+            "Was it stolen?"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_MagmaEmblem,
+        .iconPalette = gItemIconPalette_MagmaEmblem,
+    },
+
+
 };

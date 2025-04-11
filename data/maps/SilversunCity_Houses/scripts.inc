@@ -338,4 +338,4 @@ SilversunCity_Houses_Wife_Text_0:
 SilversunCity_Houses_Furfrou_Text_0:
 # 145 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Furfrou is patiently waiting by its\n"
-	.string "ownder.$"
+	.string "owner.$"

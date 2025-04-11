@@ -857,9 +857,9 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_1:
 	.string "place...it's more than walls and windows.\l"
 	.string "It's where light finds those who've\l"
 	.string "never seen it. They told me it was\l"
-	.string "impossible. 'Blind children with Pokémon\l"
-	.string "? Dangerous!' they said. And yet, look\l"
-	.string "around. There's more trust in these\l"
+	.string "impossible. Blind children with Pokémon\l"
+	.string "was too dangerous, they said. And yet,\l"
+	.string "look around. There's more trust in these\l"
 	.string "halls than in half the world.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_2:

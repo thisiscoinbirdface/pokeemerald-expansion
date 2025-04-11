@@ -122,10 +122,10 @@ script SilversunCity_Houses_Husband{
     if (var(VAR_SEWERS_DUSKULL) == 4){
         // applymovement(6, moves(faceplayer))
         // applymovement(7, moves(faceplayer))
-        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokémon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can live better. We're eternally grateful.\p...\pWe want you to have this. The black market dealer gave it to us but we don't need it."), MSGBOX_NPC)
+        msgbox(format("Thank you for saving my wife. She's blind, so she needs a Pokémon to assist her. But the orphanage was short of Pokemon, and we couldn't wait. So we bought an egg at the black market. That's when she got lost. She took a wrong turn somewhere and I didn't pay attention.\pBut thanks to you, both of us are safe and we have a new member of the family! With Furfrou around, my wife can live better. We're eternally grateful.\p...\pPlease take this. It was hard to get, but we won't need it any more, because we'll never go into the black market again."), MSGBOX_NPC)
         release
         //Switch to black market pass
-        giveegg(SPECIES_HONEDGE)
+        giveitem(ITEM_SMUGGLER_EMBLEM)
         completequest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 5)
     } else {
@@ -142,6 +142,6 @@ script SilversunCity_Houses_Wife{
 
 
 script SilversunCity_Houses_Furfrou{
-    msgbox(format("Furfrou is patiently waiting by its ownder."), MSGBOX_NPC)
+    msgbox(format("Furfrou is patiently waiting by its owner."), MSGBOX_NPC)
     end
 }

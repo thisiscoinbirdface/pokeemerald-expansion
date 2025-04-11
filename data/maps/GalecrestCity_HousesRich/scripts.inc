@@ -37,7 +37,7 @@ GalecrestCity_HousesRich_NPC4_2:
 # 32 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC4_Text_1
 # 33 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	giveitem ITEM_SILK_SCARF
+	giveitem ITEM_TM17
 # 34 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	setvar VAR_GALECREST_RICH_PEARLS, 4
 # 35 "data//maps/GalecrestCity_HousesRich/scripts.pory"
@@ -229,8 +229,8 @@ GalecrestCity_HousesRich_NPC4_Text_1:
 GalecrestCity_HousesRich_NPC4_Text_2:
 # 35 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "A good deed shouldn't go unrewarded.\n"
-	.string "But next time, you need to stand up for\l"
-	.string "yourself!$"
+	.string "But next time, you need to protect and\l"
+	.string "stand up for yourself!$"
 
 GalecrestCity_HousesRich_NPC5_Text_0:
 # 53 "data//maps/GalecrestCity_HousesRich/scripts.pory"

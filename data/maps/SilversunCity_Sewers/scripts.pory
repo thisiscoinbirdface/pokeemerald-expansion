@@ -80,24 +80,35 @@ script SilversunCity_Sewers_ManLostWife_Trigger1{
 }
 
 script SilversunCity_Sewers_Duskull_Trigger0{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_right face_down))
-    waitmovement(0)
-    goto(SilversunCity_Sewers_Duskull_Event)
+
+    if (var(VAR_SEWERS_DUSKULL) == 1){
+        lockall
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_right face_down))
+        waitmovement(0)
+        goto(SilversunCity_Sewers_Duskull_Event)
+    }
+    end
 }
 
 script SilversunCity_Sewers_Duskull_Trigger1{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
-    waitmovement(0)
-    goto(SilversunCity_Sewers_Duskull_Event)
+
+    if (var(VAR_SEWERS_DUSKULL) == 1){
+            lockall
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        goto(SilversunCity_Sewers_Duskull_Event)
+    }
+    end
 }
 
 script SilversunCity_Sewers_Duskull_Trigger2{
-    lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left face_down))
-    waitmovement(0)
-    goto(SilversunCity_Sewers_Duskull_Event)
+    if (var(VAR_SEWERS_DUSKULL) == 1){    
+        lockall
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left face_down))
+        waitmovement(0)
+        goto(SilversunCity_Sewers_Duskull_Event)
+    }
+    end
 }
 
 
@@ -131,7 +142,6 @@ script SilversunCity_Sewers_Duskull_Event{
     setvar(VAR_SEWERS_DUSKULL, 3)
     fadescreen(FADE_TO_BLACK)
     warp(MAP_SILVERSUN_CITY_SEWERS, 49, 47) 
-    setflag(FLAG_SEWERS_DUSKULL)
 }  
 
 
@@ -162,7 +172,7 @@ script TestScript_Sewers{
     setvar(VAR_SEWERS_DUSKULL, 4)
     fadescreen(FADE_TO_BLACK)
     removeobject(1)
-    removeobject(9)
+    removeobject(9)    
     setflag(FLAG_SEWERS_DUSKULL)
     clearflag(FLAG_HIDE_SILVERSUN_DUSKULL_NPCS)
     setvar(VAR_SEWERS_DUSKULL, 4)
@@ -197,12 +207,12 @@ script SilversunCity_Sewers_NPC2{
 }
 //woman in middle
 script SilversunCity_Sewers_NPC3{
-    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal."), MSGBOX_NPC)
+    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal, but they won't sell to anyone who doesn't have some type of emblem. It's like a secret society!"), MSGBOX_NPC)
     end
 }
 //dude at market
 script SilversunCity_Sewers_NPC4{
-    msgbox(format("Don't tell anyone I'm here! I came to find a way to evolve my Scyther."), MSGBOX_NPC)
+    msgbox(format("I came to find a way to evolve my Scyther, but nobody's selling me anything! Apparently they need some type of emblem to prove we're good for our word."), MSGBOX_NPC)
     end
 }
 
@@ -269,11 +279,22 @@ script SilversunCity_Sewers_Trainer_C_GiveItem{
 
 
 //Black Market
+//No emblem
+script SilversunCity_Sewers_NoEmblem{
+    msgbox(format("What are you looking at? Are you a cop? I'm not selling anything.\p...\pWhat about all this stuff on the table? I'm just displaying them. It's not for sale. Haha!"), MSGBOX_NPC)
+    end
+}
+
 //TMs dude
 script SilversunCity_Sewers_Market_A{
+
+    checkitem(ITEM_SMUGGLER_EMBLEM)
+    if (var(VAR_RESULT) == 0){
+        goto(SilversunCity_Sewers_NoEmblem)
+    }
     lock
 	faceplayer
-	message(format("Can't beat GLORIA? I'll hook you up with the best stuff."))
+	message(format("Can't beat Gloria? I'll hook you up with the best stuff."))
 	waitmessage
 	pokemart(SilversunCity_Sewers_Market_A_Inventory)
 	msgbox(format("Stay a loser then!"), MSGBOX_DEFAULT)

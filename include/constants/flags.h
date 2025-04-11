@@ -1198,7 +1198,7 @@
 #define FLAG_ITEM_MIRROH_INT_F                    0x42D
 #define FLAG_ITEM_MIRROH_PEAK_A                             0x42E
 
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
+#define FLAG_ITEM_ROUTE4_D                       0x42F
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432

@@ -2941,9 +2941,9 @@ F_TRAINER_FEMALE |
 #line 1236
         .trainerName = _("JOHNNY"),
 #line 1237
-        .trainerClass = TRAINER_CLASS_TUBER_M,
+        .trainerClass = TRAINER_CLASS_MODEL,
 #line 1238
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerPic = TRAINER_PIC_MODEL,
         .encounterMusic_gender =
 #line 1240
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -3040,9 +3040,9 @@ F_TRAINER_FEMALE |
 #line 1275
         .trainerName = _("RICKY"),
 #line 1276
-        .trainerClass = TRAINER_CLASS_TUBER_M,
+        .trainerClass = TRAINER_CLASS_MODEL,
 #line 1277
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerPic = TRAINER_PIC_MODEL,
         .encounterMusic_gender =
 #line 1279
             TRAINER_ENCOUNTER_MUSIC_GIRL,

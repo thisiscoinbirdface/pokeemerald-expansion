@@ -30,9 +30,9 @@ script GalecrestCity_HousesRich_NPC4{
         lockall
         faceplayer
         msgbox(format("You found her pearls, did you? And she took your money? Sigh..."))
-        giveitem(ITEM_SILK_SCARF)
+        giveitem(ITEM_TM17)
         setvar(VAR_GALECREST_RICH_PEARLS, 4)
-        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to stand up for yourself!"), MSGBOX_NPC)
+        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to protect and stand up for yourself!"), MSGBOX_NPC)
     }
     end
 

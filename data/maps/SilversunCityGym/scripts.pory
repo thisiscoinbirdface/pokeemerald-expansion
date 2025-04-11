@@ -70,7 +70,7 @@ script SilversunCityGym_TrainerA {
 }
 
 script SilversunCityGym_TrainerB {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_B, format("Get out of the way! I need to practice my dance moves or Gloria won't cast me!"), format(""))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_B, format("Get out of the way! I need to practice my dance moves or Gloria won't cast me!"), format("Gahh! I wasted time on you that I could've used to practice!"))
     msgbox(format("We're practicing so that Gloria casts us in her next production."))
     release
     end

@@ -209,7 +209,8 @@ SilversunCityGym_TrainerB_Text_0:
 
 SilversunCityGym_TrainerB_Text_1:
 # 73 "data//maps/SilversunCityGym/scripts.pory"
-	.string "$"
+	.string "Gahh! I wasted time on you that I\n"
+	.string "could've used to practice!$"
 
 SilversunCityGym_TrainerB_Text_2:
 # 74 "data//maps/SilversunCityGym/scripts.pory"
