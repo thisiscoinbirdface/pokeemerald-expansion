@@ -261,7 +261,7 @@ script VilethornWoods_NPC2{
         if (var(VAR_RESULT) == 1){
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
-                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spood from the restaurant? Or maybe this seed I found earlier?"))
+                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spoon from the restaurant? Or maybe this seed I found earlier?"))
                 dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
                 if (var(VAR_RESULT) == 0){
                     giveitem(ITEM_TWISTEDSPOON)
@@ -284,12 +284,17 @@ script VilethornWoods_NPC2{
 
 script VilethornWoods_NPC3{
     if (flag(FLAG_VILETHORN_NPC_ITEM)){
-        msgbox(format("I am well and truly lost..."), MSGBOX_NPC)
+        msgbox(format("My foot hurts!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I am well and truly lost...even with this SCOPE LENS, I can't see a thing! Why don't you have it?"), MSGBOX_NPC)
-        giveitem(ITEM_SCOPE_LENS)
-        release
-        setflag(FLAG_VILETHORN_NPC_ITEM)
+        msgbox(format("Gah! I got lost in this stupid forest and tripped on a ginat tree root. I got mad and ripped it out! Do you want it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            giveitem(ITEM_BIG_ROOT)
+            release
+            setflag(FLAG_VILETHORN_NPC_ITEM)
+            msgbox(format("Good riddance! I hope you find some use for it."), MSGBOX_NPC)
+        } else {
+            msgbox(format("Just as well. It's a root after all - what use would it have?"), MSGBOX_NPC)            
+        }
     }
     end
 }

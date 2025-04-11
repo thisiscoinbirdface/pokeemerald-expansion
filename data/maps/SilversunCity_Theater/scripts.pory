@@ -131,18 +131,18 @@ script SilversunCity_Theater_EventScript_SomberBlocker{
 //Old man 1st row
 script SilversunCity_Theater_NPC1{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("GLORIA is graceful even in defeat. Now that's something everyone can learn from."), MSGBOX_NPC)
+        msgbox(format("Gloria is graceful even in defeat. Now that's something everyone can learn from."), MSGBOX_NPC)
     } else {
-        msgbox(format("GLORIA is the face of Silversun City! A Gym Leader AND a famous actress? She's really a role model for women."), MSGBOX_NPC)
+        msgbox(format("Gloria is the face of Silversun City! A Gym Leader AND a famous actress? She's really a role model for women."), MSGBOX_NPC)
     }
     end
 }
 //old woman 1st row
 script SilversunCity_Theater_NPC2{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Incredible! Her SEVIPER and ABSOL! Such a shame they lost, and to such a...nondescript opponent."), MSGBOX_NPC)
+        msgbox(format("Incredible! Her Servine and Absol! Such a shame they lost, and to such a...nondescript opponent."), MSGBOX_NPC)
     } else {
-        msgbox(format("They say GLORIA caught her SEVIPER and ABSOL while shooting on set in the HOENN region."), MSGBOX_NPC)
+        msgbox(format("They say Gloria caught her Seviper and Absol while shooting on set in the HOENN region."), MSGBOX_NPC)
     }
     end
 }
@@ -151,7 +151,7 @@ script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("What a show!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I wish Pokémon were allowed in. I would've brought my SPRIGATITO along to watch."), MSGBOX_NPC)
+        msgbox(format("I wish Pokémon were allowed in. I would've brought my Sprigatito along to watch."), MSGBOX_NPC)
     }
     end
 }
@@ -172,8 +172,16 @@ script SilversunCity_Theater_NPC5{
             msgbox(format("To be honest, it's not even my fault. The theater should arrange better seating, especially if they're charging the same price for all tickets!"))
         } else {
             msgbox(format("I'm glad I brought lenses because the performance was great! Do you want a pair? I brought an extra."))
+            dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_WIDE_LENS)
+                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
+            } else {
+                giveitem(ITEM_SCOPE_LENS)
+                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will land more critical hits."), MSGBOX_NPC)
+            }
+            
             setflag(FLAG_SILVERSUN_THEATER_LENS)
-            giveitem(ITEM_ZOOM_LENS)
         }
     } else {
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
@@ -183,7 +191,6 @@ script SilversunCity_Theater_NPC5{
         if (var(VAR_RESULT) == 1){
             msgbox(format("Why don't you wear a pair of lenses? I've got extra."))            
             dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
-
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_WIDE_LENS)
                 msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
@@ -193,6 +200,8 @@ script SilversunCity_Theater_NPC5{
             }
             
             setflag(FLAG_SILVERSUN_THEATER_LENS)            
+        } else {
+            msgbox(format("Got better seats? Good for you! I wish I'd booked mine faster."), MSGBOX_NPC)
         }
     }
     end
@@ -201,8 +210,8 @@ script SilversunCity_Theater_NPC5{
 
 //backstage actress
 script SilversunCity_Theater_NPC6{
-    if (flag(FLAG_SILVERSUN_THEATER_LENS)){
-        msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role any day now!"))
+    if (flag(FLAG_SILVERSUN_THEATER_SCARF)){
+        msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role any day now!"), MSGBOX_NPC)
     } else {
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
@@ -212,7 +221,7 @@ script SilversunCity_Theater_NPC6{
                 if (var(VAR_RESULT) == 1){
                     msgbox(format("...Thank you! Please take this. A little something to remember me by!"), MSGBOX_NPC)
                     giveitem(ITEM_SILK_SCARF)
-                    setflag(FLAG_SILVERSUN_THEATER_LENS)
+                    setflag(FLAG_SILVERSUN_THEATER_SCARF)
                 }
             } else {
                 msgbox(format("So you're an extra too? Sigh...when will we get our big break?"), MSGBOX_NPC)
@@ -226,9 +235,9 @@ script SilversunCity_Theater_NPC6{
 //backstage actor
 script SilversunCity_Theater_NPC7{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("You must have nerves of steel, doing all that in front of a crowd that size!"))
+        msgbox(format("You must have nerves of steel, doing all that in front of a crowd that size!"), MSGBOX_NPC)
     } else {
-        msgbox(format("...breathe...breathe...I'm calming my nerves. Even after years of training, I get nervous before going on-stage."))
+        msgbox(format("...breathe...breathe...I'm calming my nerves. Even after years of training, I get nervous before going on-stage."), MSGBOX_NPC)
     }
     end
 }

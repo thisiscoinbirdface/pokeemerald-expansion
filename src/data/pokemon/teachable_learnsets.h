@@ -16327,6 +16327,7 @@ static const u16 sArmaldoTeachableLearnset[] = {
 
 #if P_FAMILY_FEEBAS
 static const u16 sFeebasTeachableLearnset[] = {
+    MOVE_SPLASH,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

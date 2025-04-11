@@ -459,8 +459,7 @@ text Common_Text_Greta_Comecome{
 script Route5_Greta_AskToShow{
     msgbox(format("Wanna buy anything?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1) {goto(Route5_Greta_ShowItemsForSale)}
-
-    hidemoneybox
+    
     msgbox(format("Bummer!"))
     release
     
@@ -485,7 +484,8 @@ script Route5_Greta_ShowItemsForSale{
         hidemoneybox
         goto(Route5_Greta_UglyFish)
     }
- 
+    
+    hidemoneybox
     goto(Route5_Greta_AskToShow)
 
 }
@@ -501,7 +501,7 @@ script Route5_Greta_StrangeEgg{
         if (var(VAR_RESULT) == 1){
             removemoney(10000)
             giveegg(SPECIES_HONEDGE)
-            msgbox(format("{PLAYER} received a Strange Egg from GRETA."), MSGBOX_SIGN)
+            msgbox(format("{PLAYER} received a Strange Egg from Greta."), MSGBOX_SIGN)
             release
             msgbox(format("GRETA: Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
@@ -522,7 +522,7 @@ script Route5_Greta_UglyFish{
         if (var(VAR_RESULT) == 1){
             removemoney(100)
             givemon(SPECIES_FEEBAS, 5)
-            msgbox(format("{PLAYER} received a FEEBAS from GRETA."), MSGBOX_SIGN)
+            msgbox(format("{PLAYER} received a Feebas from Greta."), MSGBOX_SIGN)
             release
             msgbox(format("GRETA: Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
@@ -533,7 +533,7 @@ script Route5_Greta_UglyFish{
 }
 
 script Route5_Greta_MysteriousRock{
-    checkmoney(100)
+    checkmoney(5000)
     if (var(VAR_RESULT) == 0){       
         msgbox(format("Hey! You can't afford this!"))
         release
@@ -541,7 +541,7 @@ script Route5_Greta_MysteriousRock{
     } else {
         msgbox(format("A reasonable choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            removemoney(100)
+            removemoney(5000)
             giveitem(ITEM_EVERSTONE)
             msgbox(format("GRETA: Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
