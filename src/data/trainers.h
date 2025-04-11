@@ -3543,23 +3543,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1483
-            .species = SPECIES_MAGNETON,
+            .species = SPECIES_ELGYEM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1485
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 1484
-            .lvl = 43,
+            .lvl = 26,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 1487
-            .species = SPECIES_MUK,
+            .species = SPECIES_LINOONE_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1489
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 1488
-            .lvl = 43,
+            .lvl = 28,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

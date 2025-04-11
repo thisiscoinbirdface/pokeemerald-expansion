@@ -261,6 +261,7 @@ script VilethornWoods_NPC2{
         if (var(VAR_RESULT) == 1){
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
+                removeitem(ITEM_BIG_MUSHROOM)
                 msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spoon from the restaurant? Or maybe this seed I found earlier?"))
                 dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
                 if (var(VAR_RESULT) == 0){

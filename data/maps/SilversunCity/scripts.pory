@@ -48,7 +48,7 @@ script SilversunCity_OnFrame{
                 release
 
                 //rue walks out
-                applymovememnt(LOCALID_TENEBRIS, moves(walk_down * 7))
+                applymovement(LOCALID_TENEBRIS, moves(walk_down * 7))
                 waitmovement(0)
                 removeobject(LOCALID_TENEBRIS)
 

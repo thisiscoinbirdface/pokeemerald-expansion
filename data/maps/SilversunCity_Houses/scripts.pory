@@ -14,14 +14,16 @@ script SilversunCity_Houses_Smeargle{
 script SilversunCity_Houses_Artist{
     lockall
     faceplayer
-
+    if (var(VAR_SILVERSUN_ARTIST) == 1){
+        msgbox(format("ARSALAN: Where's my masterpiece? I just got the Black Sludge! Don't hurry me, you philistine!"), MSGBOX_NPC)
+    }
 
     if (var(VAR_SILVERSUN_ARTIST) == 1){
-        msgbox(format("ARSALAN: Yes yes. Have you brought me the BLACK SLUDGE?"), MSGBOX_YESNO)
+        msgbox(format("ARSALAN: Yes yes. Have you brought me the Black Sludge?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             if (checkitem(ITEM_BLACK_SLUDGE)){
                 removeitem(ITEM_BLACK_SLUDGE)
-                msgbox(format("{PLAYER} gave ARSALAN a BLACK SLUDGE."))
+                msgbox(format("{PLAYER} gave ARSALAN a Black Sludge."))
                 completequest(QUEST_SILVERSUN_ARTIST)                
                 msgbox(format("ARSALAN: Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
                 release
