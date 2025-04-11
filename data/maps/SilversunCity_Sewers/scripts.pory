@@ -38,7 +38,7 @@ script SilversunCity_Sewers_NPC6{
     if (var(VAR_SEWERS_DUSKULL) == 0){
         lockall
         faceplayer
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
         releaseall
@@ -56,7 +56,7 @@ script SilversunCity_Sewers_ManLostWife_Trigger0{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
 
@@ -72,7 +72,7 @@ script SilversunCity_Sewers_ManLostWife_Trigger1{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWEK SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
         releaseall

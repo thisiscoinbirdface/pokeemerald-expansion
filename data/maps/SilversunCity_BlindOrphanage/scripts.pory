@@ -348,7 +348,7 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     }
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...it's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. 'Blind children with Pokémon ? Dangerous!' they said. And yet, look around. There's more trust in these halls than in half the world."))
+        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...it's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. Blind children with Pokémon was too dangerous, they said. And yet, look around. There's more trust in these halls than in half the world."))
         setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1)
         delay(24)
     }

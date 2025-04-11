@@ -6,16 +6,16 @@
   "region_map_section": "MAPSEC_HOYA_RIVER_NORTH",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
-  "map_type": "MAP_TYPE_ROUTE",
-  "allow_cycling": true,
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": true,
+  "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
       "map": "MAP_SILVERSUN_CITY",
-      "offset": -36,
+      "offset": -40,
       "direction": "right"
     },
     {
