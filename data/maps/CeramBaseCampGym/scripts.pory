@@ -46,14 +46,14 @@ script CeramBaseCampGym_Red{
 script CeramBaseCampGym_Guard{
     lockall
     faceplayer
-    msgbox(format("Arian's got a busy schedule. He sets up all his appointments in advance."))
+    msgbox(format("Arian's got a busy schedule. She sets up all her appointments in advance."))
     releaseall
 }
 
 script CeramBaseCampGym_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I can't battle. Ariana tried to teach me but both him and his Pokémon are so intimidating!"))
+    msgbox(format("I can't battle. Ariana tried to teach me but both she and her Pokémon are so intimidating!"))
     releaseall
 }
 

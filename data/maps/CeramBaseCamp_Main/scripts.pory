@@ -10,24 +10,24 @@ raw `
 `
 
 
-mapscripts CeramBaseCamp_Main_MapScripts{
-    MAP_SCRIPT_ON_RESUME: CeramBaseCamp_Main_OnResume
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-        VAR_SUPPLY_DEPOT_STATE, 0: CeramBaseCamp_Main_OnResume    
-    ]
-}
+mapscripts CeramBaseCamp_Main_MapScripts{}
+//     MAP_SCRIPT_ON_RESUME: CeramBaseCamp_Main_OnResume
+//     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+//         VAR_SUPPLY_DEPOT_STATE, 0: CeramBaseCamp_Main_OnResume    
+//     ]
+// }
 
 
 
-script CeramBaseCamp_Main_OnResume{
-    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
+// script CeramBaseCamp_Main_OnResume{
+//     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
 
-    } else {
-        playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)
-    }
-    releaseall 
-    end
-}
+//     } else {
+//         playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)
+//     }
+//     releaseall 
+//     end
+// }
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag
@@ -309,7 +309,7 @@ script CeramBaseCamp_Main_NPC3{
             //Regular case
     } else {
         //When Team Somber is there
-        msgbox(format("These thugs took the shopkeeper upstairs! But Ariana, the Gym Leader, just went up there to get him back. He's going to teach them a lesson!"), MSGBOX_NPC)
+        msgbox(format("These thugs took the shopkeeper upstairs! But Ariana, the Gym Leader, just went up there to get him back. She's going to teach them a lesson!"), MSGBOX_NPC)
     }
 
     end

@@ -175,7 +175,7 @@ script GastreeCity_NPC9{
         waitmovement(0)
         msgbox(format("No! SKITTY!"))
         release
-        applymovement(LOCALID_SKITTYOG, moves(walk_fast_right walk_fast_down * 6))
+        applymovement(LOCALID_SKITTYOG, moves(walk_fast_right *2 walk_fast_down * 6))
         waitmovement(0)
         applymovement(3, moves(face_down))
         waitmovement(0)
