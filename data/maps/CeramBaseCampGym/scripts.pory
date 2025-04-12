@@ -31,11 +31,11 @@ script CeramBaseCampGym_Red{
         }
     } else { 
         if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)){
-    msgbox(format("The Gym Leader Arian, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers!"))
+    msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers!"))
         } else {
             msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("The Gym Leader Arian, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers! Now go get 'em, champ-in-the-making!"))
+            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokemon. Avoid using physical attackers! Now go get 'em, champ-in-the-making!"))
             setflag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)
         }
     }
@@ -53,7 +53,7 @@ script CeramBaseCampGym_Guard{
 script CeramBaseCampGym_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I can't battle. Arian tried to teach me but both him and his Pokémon are so intimidating!"))
+    msgbox(format("I can't battle. Ariana tried to teach me but both him and his Pokémon are so intimidating!"))
     releaseall
 }
 
@@ -195,7 +195,7 @@ script CeramBaseCampGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
         //Receive the badge
-        msgbox(format("{PLAYER} received the CINDER BADGE from Arian."))
+        msgbox(format("{PLAYER} received the CINDER BADGE from Ariana."))
         release
         setflag(FLAG_BADGE02_GET)
 

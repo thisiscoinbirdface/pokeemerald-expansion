@@ -169,6 +169,7 @@ script Route4_TrainerBattle_Jenny {
 
             setobjectxyperm(LOCALID_DEWPIDER, 9, 23)
             setflag(FLAG_ROUTE4_DEWPIDER_ATTACK)
+            clearflag(FLAG_HIDE_ROUTE4_DEWPIDER)
             releaseall
             end
         } else {

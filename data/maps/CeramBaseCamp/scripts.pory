@@ -23,7 +23,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
     applymovement(7, moves(face_left emote_exclamation_mark))
     waitmovement(0)
     release
-    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat Arian, you won't be able to handle the heat of the mountain!"))
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat Ariana, you won't be able to handle the heat of the mountain!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -86,7 +86,7 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled Arian and my Cyndaquil saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("We battled Ariana and my Cyndaquil saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){

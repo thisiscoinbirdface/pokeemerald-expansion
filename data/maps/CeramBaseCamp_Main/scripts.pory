@@ -73,7 +73,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up Mt. Ceram!"))
-    msgbox(format("ARIANA: The name's Arian! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
+    msgbox(format("ARIANA: The name's Ariana! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
     release
 
@@ -154,7 +154,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(face_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("ARIANA: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you Arian! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    msgbox(format("ARIANA: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you Ariana! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
     release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
     waitmovement(0)
@@ -309,7 +309,7 @@ script CeramBaseCamp_Main_NPC3{
             //Regular case
     } else {
         //When Team Somber is there
-        msgbox(format("These thugs took the shopkeeper upstairs! But Arian, the Gym Leader, just went up there to get him back. He's going to teach them a lesson!"), MSGBOX_NPC)
+        msgbox(format("These thugs took the shopkeeper upstairs! But Ariana, the Gym Leader, just went up there to get him back. He's going to teach them a lesson!"), MSGBOX_NPC)
     }
 
     end
@@ -389,7 +389,7 @@ script CeramBaseCamp_Main_NPC5{
         }
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Arian to put these crooks in their place!"), MSGBOX_NPC)
+        msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)
     }
 
     end
@@ -429,7 +429,7 @@ script CeramBaseCamp_Main_NPC6{
         msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Arian to put these crooks in their place!"), MSGBOX_NPC)
+        msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)
     }
     end
 }

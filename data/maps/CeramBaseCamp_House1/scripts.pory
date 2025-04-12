@@ -2,14 +2,61 @@ mapscripts CeramBaseCamp_House1_MapScripts{}
 
 //This is a special dude (move tutor?)
 script CeramBaseCamp_House1_NPC{
-    lockall
-    msgbox(format("She's fallen asleep on her chair...such peace can only come with clarity."))
-    releaseall
+    if (flag(FLAG_CERAMBASECAMP_ALTARIA_FEATHER)){   
+        checkitem(ITEM_PRETTY_FEATHER)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("She's fallen asleep on her chair...such peace can only come with clarity.\pTickle her nose with a Pretty Feather?"), MSGBOX_YESNO)
+
+            if (var(VAR_RESULT) == 1){
+                release
+                delay(16)
+                msgbox(format("...\p...\p..."))
+                release
+                delay(16)
+                applymovement(1, moves(emote_exclamation_mark jump_in_place_right))
+                waitmovement(0)
+                msgbox(format("~achoo!~\p...\p...\p...she's asleep again."))
+                release
+                end
+            } else {
+                release
+                end
+            }
+        
+
+        } else {
+            msgbox(format("She's fallen asleep on her chair...such peace can only come with clarity."))
+            release
+        }
+    } else {
+        msgbox(format("She's fallen asleep on her chair...such peace can only come with clarity."))
+        release
+    }
+    end        
 }
 
 script CeramBaseCamp_House1_Pokemon{
+
+    if (flag(FLAG_CERAMBASECAMP_ALTARIA_FEATHER)){
+        msgbox(format("Altaria is dancing! It looks so joyous. Better not distract it!"), MSGBOX_NPC)
+        end
+    }
+
+
     lockall
-    msgbox(format("GREAVARD looks happy."))
+    faceplayer
+    msgbox(format("Altaria is dancing! What rhythm is this?\p...\pIt's so elegant..."))
+    release
+    applymovement(2, moves(emote_exclamation_mark))
+    msgbox(format("Altaria comes closer and ruffles one of its glorious wings...\p...\p...a feather floats gently in your palm."))
+    giveitem(ITEM_PRETTY_FEATHER)
+    release
+    delay(30)
+
+    applymovement(2, moves(jump_in_place_left emote_exclamation_mark))
+    waitmovement(2)
+    msgbox(format("Altaria nods towards the lady sleeping in the chair...what does it want?"), MSGBOX_NPC)
+    setflag(FLAG_CERAMBASECAMP_ALTARIA_FEATHER)
     releaseall
 }
 
