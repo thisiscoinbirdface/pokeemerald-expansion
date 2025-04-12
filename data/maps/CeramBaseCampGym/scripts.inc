@@ -367,7 +367,7 @@ CeramBaseCampGym_Red_Text_4:
 
 CeramBaseCampGym_Red_Text_5:
 # 34 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The Gym Leader Arian, who also manages\n"
+	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
 	.string "intimidating FIRE type Pokemon. Avoid\l"
 	.string "using physical attackers!$"
@@ -380,7 +380,7 @@ CeramBaseCampGym_Red_Text_6:
 
 CeramBaseCampGym_Red_Text_7:
 # 38 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The Gym Leader Arian, who also manages\n"
+	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
 	.string "intimidating FIRE type Pokemon. Avoid\l"
 	.string "using physical attackers! Now go get\l"
@@ -393,7 +393,7 @@ CeramBaseCampGym_Guard_Text_0:
 
 CeramBaseCampGym_NPC_A_Text_0:
 # 56 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "I can't battle. Arian tried to teach me\n"
+	.string "I can't battle. Ariana tried to teach me\n"
 	.string "but both him and his Pokémon are so\l"
 	.string "intimidating!$"
 
@@ -527,7 +527,7 @@ CeramBaseCampGym_LeaderBattle_Text_0:
 CeramBaseCampGym_LeaderBattle_Text_1:
 # 198 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the CINDER BADGE\n"
-	.string "from Arian.$"
+	.string "from Ariana.$"
 
 CeramBaseCampGym_LeaderBattle_Text_2:
 # 206 "data//maps/CeramBaseCampGym/scripts.pory"

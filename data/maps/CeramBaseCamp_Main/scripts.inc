@@ -740,7 +740,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_1:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_2:
 # 76 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "ARIANA: The name's Arian! And no way!\n"
+	.string "ARIANA: The name's Ariana! And no way!\n"
 	.string "This is MY base camp! You're not harming\l"
 	.string "anyone while I'm around!$"
 
@@ -828,7 +828,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_15:
 # 157 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "ARIANA: They didn't harm you right?\p"
 	.string "SHOPKEEPER: No they didn't. Thank you\n"
-	.string "Arian! And you too, trainer. I owe you\l"
+	.string "Ariana! And you too, trainer. I owe you\l"
 	.string "one. Stop by our counter downstairs for\l"
 	.string "trekking supplies later on.$"
 
@@ -957,7 +957,7 @@ CeramBaseCamp_Main_NPC3_Text_1:
 CeramBaseCamp_Main_NPC3_Text_2:
 # 312 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "These thugs took the shopkeeper\n"
-	.string "upstairs! But Arian, the Gym Leader,\l"
+	.string "upstairs! But Ariana, the Gym Leader,\l"
 	.string "just went up there to get him back. He's\l"
 	.string "going to teach them a lesson!$"
 
@@ -1005,7 +1005,7 @@ CeramBaseCamp_Main_NPC5_Text_5:
 
 CeramBaseCamp_Main_NPC5_Text_6:
 # 392 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "I can't wait for Arian to put these\n"
+	.string "I can't wait for Ariana to put these\n"
 	.string "crooks in their place!$"
 
 CeramBaseCamp_Main_NPC6_Text_0:

@@ -15,7 +15,7 @@ script CeramBaseCamp_House1_NPC{
                 delay(16)
                 applymovement(1, moves(emote_exclamation_mark jump_in_place_right))
                 waitmovement(0)
-                msgbox(format("~achoo!~\p...\p...\p...she's asleep again."))
+                msgbox(format("-achoo!-\p...\p...\p...she's asleep again."))
                 release
                 end
             } else {
@@ -55,6 +55,7 @@ script CeramBaseCamp_House1_Pokemon{
 
     applymovement(2, moves(jump_in_place_left emote_exclamation_mark))
     waitmovement(2)
+    delay(24)
     msgbox(format("Altaria nods towards the lady sleeping in the chair...what does it want?"), MSGBOX_NPC)
     setflag(FLAG_CERAMBASECAMP_ALTARIA_FEATHER)
     releaseall

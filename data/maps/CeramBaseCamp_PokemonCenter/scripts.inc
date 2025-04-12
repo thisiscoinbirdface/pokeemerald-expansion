@@ -32,6 +32,6 @@ CeramBaseCamp_PokemonCenter_NPC1::
 
 CeramBaseCamp_PokemonCenter_NPC1_Text_0:
 # 18 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	.string "Apparently you can't meet Arian, the\n"
+	.string "Apparently you can't meet Ariana, the\n"
 	.string "Gym Leader, without getting an\l"
 	.string "appointment first.$"
