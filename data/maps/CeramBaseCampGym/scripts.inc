@@ -388,13 +388,13 @@ CeramBaseCampGym_Red_Text_7:
 
 CeramBaseCampGym_Guard_Text_0:
 # 49 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Arian's got a busy schedule. He sets up\n"
-	.string "all his appointments in advance.$"
+	.string "Arian's got a busy schedule. She sets up\n"
+	.string "all her appointments in advance.$"
 
 CeramBaseCampGym_NPC_A_Text_0:
 # 56 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I can't battle. Ariana tried to teach me\n"
-	.string "but both him and his Pokémon are so\l"
+	.string "but both she and her Pokémon are so\l"
 	.string "intimidating!$"
 
 CeramBaseCampGym_NPC_B_Text_0:

@@ -272,7 +272,7 @@ script SilversunCity_BlindOrphanage_NPC_1{
 script SilversunCity_BlindOrphanage_NPC_2{
     lockall
     faceplayer
-    msgbox(format("Sometimes I imagine what colors look like when RALTS sends me warm thoughts. Is yellow warm?"))
+    msgbox(format("Sometimes I imagine what colors look like when Ralts sends me warm thoughts. Is yellow warm?"))
     releaseall
     end
 }
@@ -288,7 +288,7 @@ script SilversunCity_BlindOrphanage_NPC_3{
 script SilversunCity_BlindOrphanage_NPC_5{
     lockall
     faceplayer
-    msgbox(format("I gave my NOIBAT to the orphanage. Now it helps the kids walk around at night."))
+    msgbox(format("I gave my Noibat to the orphanage. Now it helps the kids walk around at night."))
     releaseall
     end
 }
@@ -304,7 +304,7 @@ script SilversunCity_BlindOrphanage_NPC_6{
 script SilversunCity_BlindOrphanage_Ralts{
     lockall
     playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
-    msgbox(format("RALTS is focused intently on its child...perhaps its sending some warm thoughts across."))
+    msgbox(format("Ralts is focused intently on its child...perhaps its sending some warm thoughts across."))
     releaseall
     end
 }
@@ -312,7 +312,7 @@ script SilversunCity_BlindOrphanage_Ralts{
 script SilversunCity_BlindOrphanage_Noibat{
     lockall
     playmoncry(SPECIES_NOIBAT, CRY_MODE_NORMAL)
-    msgbox(format("NOIBAT looks bored...it must be waiting for night-time!"))
+    msgbox(format("Noibat looks bored...it must be waiting for night-time!"))
     releaseall
     end
 }
@@ -320,7 +320,7 @@ script SilversunCity_BlindOrphanage_Noibat{
 script SilversunCity_BlindOrphanage_Furfrou{
     lockall
     playmoncry(SPECIES_FURFROU, CRY_MODE_NORMAL)
-    msgbox(format("FURFROU barks! And barks again!"))
+    msgbox(format("Furfrou barks! And barks again!"))
     releaseall
     end
 }

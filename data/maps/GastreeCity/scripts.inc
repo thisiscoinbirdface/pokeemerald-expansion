@@ -481,6 +481,8 @@ GastreeCity_EventScript_SkittyQuestStart_Movement_0:
 # 178 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
 # 178 "data//maps/GastreeCity/scripts.pory"
+	walk_fast_right
+# 178 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 # 178 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down

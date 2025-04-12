@@ -808,7 +808,7 @@ SilversunCity_BlindOrphanage_NPC_1_Text_0:
 SilversunCity_BlindOrphanage_NPC_2_Text_0:
 # 275 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Sometimes I imagine what colors look\n"
-	.string "like when RALTS sends me warm thoughts.\l"
+	.string "like when Ralts sends me warm thoughts.\l"
 	.string "Is yellow warm?$"
 
 SilversunCity_BlindOrphanage_NPC_3_Text_0:
@@ -819,7 +819,7 @@ SilversunCity_BlindOrphanage_NPC_3_Text_0:
 
 SilversunCity_BlindOrphanage_NPC_5_Text_0:
 # 291 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I gave my NOIBAT to the orphanage. Now\n"
+	.string "I gave my Noibat to the orphanage. Now\n"
 	.string "it helps the kids walk around at night.$"
 
 SilversunCity_BlindOrphanage_NPC_6_Text_0:
@@ -830,18 +830,18 @@ SilversunCity_BlindOrphanage_NPC_6_Text_0:
 
 SilversunCity_BlindOrphanage_Ralts_Text_0:
 # 307 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "RALTS is focused intently on its\n"
+	.string "Ralts is focused intently on its\n"
 	.string "child...perhaps its sending some warm\l"
 	.string "thoughts across.$"
 
 SilversunCity_BlindOrphanage_Noibat_Text_0:
 # 315 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "NOIBAT looks bored...it must be waiting\n"
+	.string "Noibat looks bored...it must be waiting\n"
 	.string "for night-time!$"
 
 SilversunCity_BlindOrphanage_Furfrou_Text_0:
 # 323 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "FURFROU barks! And barks again!$"
+	.string "Furfrou barks! And barks again!$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_0:
 # 347 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"

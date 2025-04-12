@@ -186,22 +186,23 @@ script SilversunCity_Theater_NPC5{
     } else {
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
             msgbox(format("Ahh, now let's settle in and watch Gloria's performance."))
-        }
-        msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1){
-            msgbox(format("Why don't you wear a pair of lenses? I've got extra."))            
-            dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_WIDE_LENS)
-                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
-            } else {
-                giveitem(ITEM_SCOPE_LENS)
-                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will land more critical hits."), MSGBOX_NPC)
-            }
-            
-            setflag(FLAG_SILVERSUN_THEATER_LENS)            
         } else {
-            msgbox(format("Got better seats? Good for you! I wish I'd booked mine faster."), MSGBOX_NPC)
+            msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("Why don't you wear a pair of lenses? I've got extra."))            
+                dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
+                if (var(VAR_RESULT) == 0){
+                    giveitem(ITEM_WIDE_LENS)
+                    msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
+                } else {
+                    giveitem(ITEM_SCOPE_LENS)
+                    msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will land more critical hits."), MSGBOX_NPC)
+                }
+                
+                setflag(FLAG_SILVERSUN_THEATER_LENS)            
+            } else {
+                msgbox(format("Got better seats? Good for you! I wish I'd booked mine faster."), MSGBOX_NPC)
+            }
         }
     }
     end

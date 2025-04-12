@@ -82,10 +82,12 @@ CeramBaseCamp_House1_Pokemon::
 # 57 "data//maps/CeramBaseCamp_House1/scripts.pory"
 	waitmovement 2
 # 58 "data//maps/CeramBaseCamp_House1/scripts.pory"
-	msgbox CeramBaseCamp_House1_Pokemon_Text_3, MSGBOX_NPC
+	delay 24
 # 59 "data//maps/CeramBaseCamp_House1/scripts.pory"
-	setflag FLAG_CERAMBASECAMP_ALTARIA_FEATHER
+	msgbox CeramBaseCamp_House1_Pokemon_Text_3, MSGBOX_NPC
 # 60 "data//maps/CeramBaseCamp_House1/scripts.pory"
+	setflag FLAG_CERAMBASECAMP_ALTARIA_FEATHER
+# 61 "data//maps/CeramBaseCamp_House1/scripts.pory"
 	releaseall
 	return
 
@@ -131,7 +133,7 @@ CeramBaseCamp_House1_NPC_Text_1:
 
 CeramBaseCamp_House1_NPC_Text_2:
 # 18 "data//maps/CeramBaseCamp_House1/scripts.pory"
-	.string "~achoo!~\p"
+	.string "-achoo!-\p"
 	.string "...\p"
 	.string "...\p"
 	.string "...she's asleep again.$"
@@ -160,6 +162,6 @@ CeramBaseCamp_House1_Pokemon_Text_2:
 	.string "...a feather floats gently in your palm.$"
 
 CeramBaseCamp_House1_Pokemon_Text_3:
-# 58 "data//maps/CeramBaseCamp_House1/scripts.pory"
+# 59 "data//maps/CeramBaseCamp_House1/scripts.pory"
 	.string "Altaria nods towards the lady sleeping\n"
 	.string "in the chair...what does it want?$"

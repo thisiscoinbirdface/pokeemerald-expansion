@@ -16,30 +16,7 @@
     .set LOCALID_SHOPKEEPER2F, 8
 
 CeramBaseCamp_Main_MapScripts::
-# 14 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	map_script MAP_SCRIPT_ON_RESUME, CeramBaseCamp_Main_OnResume
-# 15 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, CeramBaseCamp_Main_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
 	.byte 0
-
-CeramBaseCamp_Main_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
-# 16 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	map_script_2 VAR_SUPPLY_DEPOT_STATE, 0, CeramBaseCamp_Main_OnResume
-	.2byte 0
-
-
-CeramBaseCamp_Main_OnResume::
-# 23 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	goto_if_set FLAG_CERAMBASECAMP_EVIL_BATTLE, CeramBaseCamp_Main_OnResume_2
-# 26 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	playbgm MUS_AQUA_MAGMA_HIDEOUT, FALSE
-CeramBaseCamp_Main_OnResume_1:
-# 28 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	releaseall
-	end
-
-CeramBaseCamp_Main_OnResume_2:
-	goto CeramBaseCamp_Main_OnResume_1
 
 
 CeramBaseCamp_Main_EventScript_EvilTrigger1::
@@ -958,8 +935,8 @@ CeramBaseCamp_Main_NPC3_Text_2:
 # 312 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "These thugs took the shopkeeper\n"
 	.string "upstairs! But Ariana, the Gym Leader,\l"
-	.string "just went up there to get him back. He's\l"
-	.string "going to teach them a lesson!$"
+	.string "just went up there to get him back.\l"
+	.string "She's going to teach them a lesson!$"
 
 CeramBaseCamp_Main_NPC4_Text_0:
 # 321 "data//maps/CeramBaseCamp_Main/scripts.pory"
