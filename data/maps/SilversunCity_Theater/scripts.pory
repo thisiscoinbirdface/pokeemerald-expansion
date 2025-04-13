@@ -169,7 +169,7 @@ script SilversunCity_Theater_NPC4{
 script SilversunCity_Theater_NPC5{
     if (flag(FLAG_BADGE04_GET)){
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
-            msgbox(format("To be honest, it's not even my fault. The theater should arrange better seating, especially if they're charging the same price for all tickets!"))
+            msgbox(format("To be honest, it's not even my fault. The theater should arrange better seating, especially if they're charging the same price for all tickets!"), MSGBOX_NPC)
         } else {
             msgbox(format("I'm glad I brought lenses because the performance was great! Do you want a pair? I brought an extra."))
             dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
@@ -185,7 +185,7 @@ script SilversunCity_Theater_NPC5{
         }
     } else {
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
-            msgbox(format("Ahh, now let's settle in and watch Gloria's performance."))
+            msgbox(format("Ahh, now let's settle in and watch Gloria's performance."), MSGBOX_NPC)
         } else {
             msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){

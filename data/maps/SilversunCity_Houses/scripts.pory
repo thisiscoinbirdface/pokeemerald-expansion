@@ -27,7 +27,7 @@ script SilversunCity_Houses_Artist{
                 completequest(QUEST_SILVERSUN_ARTIST)                
                 msgbox(format("ARSALAN: Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
                 release
-                giveitem(ITEM_SILVERPOWDER)
+                giveitem(ITEM_MIRROR_HERB)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
             } else {
                 msgbox(format("ARSALAN: But you do not have it! An artist's eyes cannot be fooled."))

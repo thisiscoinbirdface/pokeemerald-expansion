@@ -173,7 +173,7 @@ script GastreeCity_NPC9{
         delay(12)
         applymovement(3, moves(emote_exclamation_mark))
         waitmovement(0)
-        msgbox(format("No! SKITTY!"))
+        msgbox(format("No! Skitty!"))
         release
         applymovement(LOCALID_SKITTYOG, moves(walk_fast_right *2 walk_fast_down * 6))
         waitmovement(0)
@@ -182,7 +182,7 @@ script GastreeCity_NPC9{
         removeobject(LOCALID_SKITTYOG)
         applymovement(3, moves(jump_in_place_down * 3))
         waitmovement(0)
-        msgbox(format("SKITTY! Come back!!!"))
+        msgbox(format("Skitty! Come back!!!"))
         release
         applymovement(3, moves(face_left))
         waitmovement(0)           
@@ -237,6 +237,7 @@ script GastreeCity_NPC9{
                 msgbox(format("You do need to have at least one GYM BADGE to use it. Now come here Skitty!"))
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
+                setflag(FLAG_GASTREE_NPC_SKITTY)
             } else {
                     msgbox(format("Have you found my SKITTY yet?"))
             }

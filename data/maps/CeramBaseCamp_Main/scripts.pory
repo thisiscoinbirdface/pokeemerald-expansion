@@ -118,7 +118,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Agh! You stupid fire-type monkey! I just didn't have my Pokémon with me.\pARIANA: Serves you right! Now move over and give our shopkeeper back."))
+    msgbox(format("???: Agh! You and your stupid FIRE-type Pokémon! I just didn't have my Pokémon with me.\pARIANA: Serves you right! Now move over and give our shopkeeper back."))
     release
     delay(16)
     applymovement(LOCALID_GRUNT4, moves(face_left))
