@@ -680,7 +680,7 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     //Custom characters
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_SHUBUBU, 4, gTrainerBackPic_Shububu, gTrainerBackPicTable_Shububu, gTrainerPalette_Shububu, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 4, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 5, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Kanto),
 
     //regular
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RED, 5, gTrainerBackPic_Red, gTrainerBackPicTable_Red, gTrainerBackPicPalette_Red, sBackAnims_Kanto),

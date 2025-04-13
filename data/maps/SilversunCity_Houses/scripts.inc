@@ -98,7 +98,7 @@ SilversunCity_Houses_Artist_16:
 # 29 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 # 30 "data//maps/SilversunCity_Houses/scripts.pory"
-	giveitem ITEM_SILVERPOWDER
+	giveitem ITEM_MIRROR_HERB
 # 31 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SILVERSUN_ARTIST, 2
 	goto SilversunCity_Houses_Artist_4

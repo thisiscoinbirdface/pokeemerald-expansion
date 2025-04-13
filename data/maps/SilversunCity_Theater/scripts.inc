@@ -239,12 +239,12 @@ SilversunCity_Theater_NPC5_11:
 
 SilversunCity_Theater_NPC5_5:
 # 172 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_NPC5_Text_0
+	msgbox SilversunCity_Theater_NPC5_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_8:
 # 188 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_NPC5_Text_6
+	msgbox SilversunCity_Theater_NPC5_Text_6, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_12:

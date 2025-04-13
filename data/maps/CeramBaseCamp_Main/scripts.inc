@@ -774,8 +774,9 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_9:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_10:
 # 121 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "???: Agh! You stupid fire-type monkey!\n"
-	.string "I just didn't have my Pokémon with me.\p"
+	.string "???: Agh! You and your stupid\n"
+	.string "FIRE-type Pokémon! I just didn't have\l"
+	.string "my Pokémon with me.\p"
 	.string "ARIANA: Serves you right! Now move over\n"
 	.string "and give our shopkeeper back.$"
 

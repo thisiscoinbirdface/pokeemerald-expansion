@@ -372,7 +372,7 @@ SilversunCity_Sewers_Market_A_Inventory:
 # 296 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM36
 # 297 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.2byte ITEM_TM41
+	.2byte ITEM_TM42
 # 298 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_TM46
 	.2byte ITEM_NONE
