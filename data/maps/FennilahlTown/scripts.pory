@@ -60,7 +60,7 @@ script Fennilahl_Breech_StartQuest{
 script Fennilahl_Breech_QuestInProgress{
 
     if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("You brought my STRANGE ROCK? Amazing! How can I thank you for this?\p...\pA CLEFAIRY was keeping it? Where'd it go?")) 
+        msgbox(format("You brought my Strange Rock? Amazing! How can I thank you for this?\p...\pA Clefairy was keeping it? Where'd it go?")) 
         release
         delay(16)
         applymovement(LOCALID_BREECH, moves(face_down emote_exclamation_mark))
