@@ -1,6 +1,7 @@
 raw`
     .set LOCALID_BREECH, 4
     .set LOCALID_CLEF, 8
+    .set LOCALID_BUDEW, 7
 
 `
 mapscripts FennilahlTown_MapScripts {}
@@ -146,7 +147,7 @@ script FennilahlTown_Budew{
 script FennilahlTown_Budew_FirstBerry{
 
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
-    applymovement(8, moves(jump_in_place_up * 3))
+    applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 3))
     waitmovement(0)
     msgbox(format("BUDEW seems to want something..."))
     release
@@ -161,7 +162,7 @@ script FennilahlTown_Budew_FirstBerry{
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW an ORAN BERRY."), MSGBOX_SIGN)
             release
-            applymovement(8, moves(jump_in_place_down * 3))   
+            applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 3))   
             waitmovement(0)       
             msgbox(format("BUDEW seems happy!"))
             release
@@ -183,7 +184,7 @@ script FennilahlTown_Budew_FirstBerry{
 script FennilahlTown_Budew_SecondBerry{
 
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
-    applymovement(8, moves(jump_in_place_up * 2))
+    applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 2))
     waitmovement(0)
     msgbox(format("BUDEW seems to want something again...but not an ORAN BERRY."))
     release
@@ -198,7 +199,7 @@ script FennilahlTown_Budew_SecondBerry{
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW a PECHA BERRY."), MSGBOX_SIGN)
             release
-            applymovement(8, moves(jump_in_place_down * 2))   
+            applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 2))   
             waitmovement(0)       
             msgbox(format("BUDEW seems happy!"))
             release
@@ -235,7 +236,7 @@ script FennilahlTown_Budew_ThirdBerry{
             delay(12)             
             msgbox(format("{PLAYER} gave BUDEW a RAWST BERRY."), MSGBOX_SIGN)
             release
-            applymovement(8, moves(jump_in_place_down))   
+            applymovement(LOCALID_BUDEW, moves(jump_in_place_down))   
             waitmovement(0)       
             msgbox(format("BUDEW seems happy!"))
             release
@@ -257,7 +258,7 @@ script FennilahlTown_Budew_ThirdBerry{
 }
 
 script FennilahlTown_Budew_JoinParty{
-    applymovement(8, moves(emote_question_mark))
+    applymovement(LOCALID_BUDEW, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
     msgbox(format("BUDEW is looking at the Pokeballs on your belt curiously..."))
@@ -265,13 +266,13 @@ script FennilahlTown_Budew_JoinParty{
     delay(16)
     msgbox(format("BUDEW nudges the Pokeballs on your belt. It seems to want to join your party! Will you become BUDEW's trainer?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
-        removeobject(8)
+        removeobject(LOCALID_BUDEW)
         givemon(SPECIES_BUDEW, 5)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox(format("The BUDEW has joined your party!\pWelcome, BUDEW! Let's get along well together!"))
     } else {
-        applymovement(8, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
-        removeobject(8)
+        applymovement(LOCALID_BUDEW, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
+        removeobject(LOCALID_BUDEW)
         msgbox(format("BUDEW ran off..."))
         release
     }
