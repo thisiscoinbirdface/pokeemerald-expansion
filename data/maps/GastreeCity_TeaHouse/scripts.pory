@@ -62,6 +62,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
 
 script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
     lockall  
+    faceplayer
     msgbox(format("Welcome to...oh, it's you! My eyes aren't what they used to be.\pHave you brought the ingredients I need?"))   
     release
 
@@ -79,9 +80,9 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
         }
     } 
 
-    msgbox(format("Seems like you don't have everything yet. Come back when you do!"))   
-    release
+    msgbox(format("Seems like you don't have everything yet. Come back when you do!"), MSGBOX_NPC)   
     releaseall
+    end
 }
 
 script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{

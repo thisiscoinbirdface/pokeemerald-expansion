@@ -14,7 +14,7 @@ script SilversunCity_Houses_Smeargle{
 script SilversunCity_Houses_Artist{
     lockall
     faceplayer
-    if (var(VAR_SILVERSUN_ARTIST) == 1){
+    if (var(VAR_SILVERSUN_ARTIST) == 2){
         msgbox(format("ARSALAN: Where's my masterpiece? I just got the Black Sludge! Don't hurry me, you philistine!"), MSGBOX_NPC)
     }
 
