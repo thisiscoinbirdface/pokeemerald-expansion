@@ -151,7 +151,7 @@ script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("What a show!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I wish Pokémon were allowed in. I would've brought my Sprigatito along to watch."), MSGBOX_NPC)
+        msgbox(format("I wish Pokémon were allowed in. I would've brought my Sprigatito along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
     }
     end
 }

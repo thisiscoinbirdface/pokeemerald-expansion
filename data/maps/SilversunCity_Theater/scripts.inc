@@ -508,7 +508,8 @@ SilversunCity_Theater_NPC3_Text_1:
 # 154 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "I wish Pokémon were allowed in. I\n"
 	.string "would've brought my Sprigatito along to\l"
-	.string "watch.$"
+	.string "watch...hey! How'd they let your Pokémon\l"
+	.string "in? That's so unfair!$"
 
 SilversunCity_Theater_NPC4_Text_0:
 # 161 "data//maps/SilversunCity_Theater/scripts.pory"

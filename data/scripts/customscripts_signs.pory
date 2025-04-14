@@ -157,6 +157,10 @@ script WhiteSign_GalecrestCity_DetectiveAcademy{
     end
 }
 
+script WhiteSign_Galecrest_Gym{
+    msgbox(format("Galecrest Gym\pManaged by the Galecrest Academy Student Council."), MSGBOX_SIGN)
+    end
+}
 
 script WhiteSign_Route5_ToGalecrest{
     msgbox(format("Route 5\p{RIGHT_ARROW} Galecrest City.\n{LEFT_ARROW} Silversun City."), MSGBOX_SIGN)
