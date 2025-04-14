@@ -177,8 +177,6 @@ script WhiteSign_Route5_Vilethorn{
     end
 }
 
-
-
 script WoodSign_SilversunCity_Artist1{
     msgbox(format("You are NOT to disturb the great Arsalan!"), MSGBOX_SIGN)
     end
