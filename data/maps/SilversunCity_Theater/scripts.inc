@@ -596,8 +596,8 @@ SilversunCity_Theater_NPC6_Text_2:
 
 SilversunCity_Theater_NPC6_Text_3:
 # 222 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Oh my god! You're a star! Can I have\n"
-	.string "your autograph?$"
+	.string "Oh wow! You're a star! Can I have your\n"
+	.string "autograph?$"
 
 SilversunCity_Theater_NPC6_Text_4:
 # 224 "data//maps/SilversunCity_Theater/scripts.pory"

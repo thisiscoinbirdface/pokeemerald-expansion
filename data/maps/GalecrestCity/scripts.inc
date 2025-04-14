@@ -369,7 +369,7 @@ GalecrestCity_NPC_5_1:
 
 GalecrestCity_NPC_5_2:
 # 305 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_NPC_5_Text_0
+	msgbox GalecrestCity_NPC_5_Text_0, MSGBOX_NPC
 	goto GalecrestCity_NPC_5_1
 
 GalecrestCity_NPC_5_5:

@@ -1116,7 +1116,7 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_2:
 	.string "to get things done, what with the\l"
 	.string "Professor gone missing and everything.\l"
 	.string "Did you bring your welcome package?\l"
-	.string "Yes? Oh thank god! You see, we sent you\l"
+	.string "Yes? Oh wonderful! You see, we sent you\l"
 	.string "the wrong package. The one we sent you\l"
 	.string "is the evidence bag for the police! This\l"
 	.string "bag next to me is your welcome package.\l"

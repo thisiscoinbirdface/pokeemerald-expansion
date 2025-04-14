@@ -699,7 +699,7 @@ VilethornWoods_NPC3_Text_0:
 VilethornWoods_NPC3_Text_1:
 # 290 "data//maps/VilethornWoods/scripts.pory"
 	.string "Gah! I got lost in this stupid forest\n"
-	.string "and tripped on a ginat tree root. I got\l"
+	.string "and tripped on a giant tree root. I got\l"
 	.string "mad and ripped it out! Do you want it?$"
 
 VilethornWoods_NPC3_Text_2:

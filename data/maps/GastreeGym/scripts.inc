@@ -198,10 +198,10 @@ GastreeGym_LeaderBattle_Text_1:
 
 GastreeGym_LeaderBattle_Text_2:
 # 35 "data//maps/GastreeGym/scripts.pory"
-	.string "Inger: Who're you? A trainer? You're me\n"
-	.string "at the wrong time, buddy, because I\l"
-	.string "just lost to some child your age and I'm\l"
-	.string "furious!\p"
+	.string "Inger: Who're you? A trainer? You're\n"
+	.string "coming to me at the wrong time, buddy,\l"
+	.string "because I just lost to some child your\l"
+	.string "age and I'm furious!\p"
 	.string "...$"
 
 GastreeGym_EventScript_Victory_Text_0:

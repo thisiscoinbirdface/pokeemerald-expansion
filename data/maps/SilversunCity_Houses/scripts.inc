@@ -16,7 +16,7 @@ SilversunCity_Houses_Artist::
 # 16 "data//maps/SilversunCity_Houses/scripts.pory"
 	faceplayer
 # 17 "data//maps/SilversunCity_Houses/scripts.pory"
-	compare VAR_SILVERSUN_ARTIST, 1
+	compare VAR_SILVERSUN_ARTIST, 2
 	goto_if_eq SilversunCity_Houses_Artist_2
 SilversunCity_Houses_Artist_1:
 # 21 "data//maps/SilversunCity_Houses/scripts.pory"

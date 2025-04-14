@@ -1561,7 +1561,7 @@ F_TRAINER_FEMALE |
 #line 689
         .trainerName = _("MOXIE"),
 #line 690
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_SOMBER_ADMIN,
 #line 691
         .trainerPic = TRAINER_PIC_SOMBER_ADMIN_MOXIE,
         .encounterMusic_gender =
@@ -3569,9 +3569,9 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SOMBERHQ_MELEA] =
     {
 #line 1492
-        .trainerName = _("MELEA"),
+        .trainerName = _("Melea"),
 #line 1493
-        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
+        .trainerClass = TRAINER_CLASS_SOMBER_ADMIN,
 #line 1494
         .trainerPic = TRAINER_PIC_SOMBER_ADMIN_MELEA,
         .encounterMusic_gender =
@@ -5800,7 +5800,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHPEAK_MOXIE] =
     {
 #line 2364
-        .trainerName = _("MOXIE"),
+        .trainerName = _("Moxie"),
 #line 2365
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2366

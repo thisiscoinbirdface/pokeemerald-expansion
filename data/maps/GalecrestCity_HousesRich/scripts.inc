@@ -158,12 +158,19 @@ GalecrestCity_HousesRich_NPC9::
 # 114 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	goto_if_set FLAG_GALECREST_RICH_HOUSECLEANITEM, GalecrestCity_HousesRich_NPC9_2
 # 117 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC9_Text_1, MSGBOX_YESNO
+	lockall
 # 118 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	faceplayer
+# 119 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	msgbox GalecrestCity_HousesRich_NPC9_Text_1, MSGBOX_YESNO
+# 120 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq GalecrestCity_HousesRich_NPC9_5
-# 124 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	goto_if_eq GalecrestCity_HousesRich_NPC9_6
+# 126 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC9_Text_3, MSGBOX_NPC
+GalecrestCity_HousesRich_NPC9_5:
+# 128 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	releaseall
 GalecrestCity_HousesRich_NPC9_1:
 	end
 
@@ -172,30 +179,30 @@ GalecrestCity_HousesRich_NPC9_2:
 	msgbox GalecrestCity_HousesRich_NPC9_Text_0, MSGBOX_NPC
 	goto GalecrestCity_HousesRich_NPC9_1
 
-GalecrestCity_HousesRich_NPC9_5:
-# 119 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	msgbox GalecrestCity_HousesRich_NPC9_Text_2
-# 120 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	giveitem ITEM_MACHO_BRACE
+GalecrestCity_HousesRich_NPC9_6:
 # 121 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	setflag FLAG_GALECREST_RICH_HOUSECLEANITEM
+	msgbox GalecrestCity_HousesRich_NPC9_Text_2
 # 122 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	giveitem ITEM_MACHO_BRACE
+# 123 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+	setflag FLAG_GALECREST_RICH_HOUSECLEANITEM
+# 124 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC9_Text_0, MSGBOX_NPC
-	goto GalecrestCity_HousesRich_NPC9_1
+	goto GalecrestCity_HousesRich_NPC9_5
 
 
 GalecrestCity_HousesRich_Keckleon::
-# 132 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 135 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	playmoncry SPECIES_GLALIE, CRY_MODE_NORMAL
-# 133 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 136 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_Keckleon_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesRich_Wingull::
-# 138 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 141 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
-# 139 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_Wingull_Text_0, MSGBOX_NPC
 	end
 
@@ -301,27 +308,27 @@ GalecrestCity_HousesRich_NPC9_Text_0:
 	.string "anything you like.$"
 
 GalecrestCity_HousesRich_NPC9_Text_1:
-# 117 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 119 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "I'm trying to organise my daughter's\n"
 	.string "belongings. Are you a Pokémon trainer?$"
 
 GalecrestCity_HousesRich_NPC9_Text_2:
-# 119 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 121 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "So is my daughter. She used these to\n"
 	.string "train her Pokemon. They'll be more\l"
 	.string "useful in your hands.$"
 
 GalecrestCity_HousesRich_NPC9_Text_3:
-# 124 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 126 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Ah, then none of this will be of use to\n"
 	.string "you.$"
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
-# 133 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 136 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Glalie glares intently at you.$"
 
 GalecrestCity_HousesRich_Wingull_Text_0:
-# 139 "data//maps/GalecrestCity_HousesRich/scripts.pory"
+# 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Wingull is struggling to stay airborne\n"
 	.string "inside such a small space. Perhaps it\l"
 	.string "wants to keep its trainer company?$"
