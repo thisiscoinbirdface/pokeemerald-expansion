@@ -294,7 +294,7 @@ static const u8 sRSAvatarGfxIds[GENDER_COUNT] =
     [FEMALE] = OBJ_EVENT_GFX_LINK_RS_MAY
 };
 
-static const u8 sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5][2] =
+static const u16 sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5][2] =
 {
     [MALE] =
     {
