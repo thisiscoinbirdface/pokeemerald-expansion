@@ -687,7 +687,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMPEAK_MOXIE ===
 Name: MOXIE
-Class: Cooltrainer
+Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
 Music: Cool
@@ -1489,8 +1489,8 @@ Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_MELEA ===
-Name: MELEA
-Class: Team Somber
+Name: Melea
+Class: Somber Admin
 Pic: Somber Admin Melea
 Gender: Male
 Music: Aqua
@@ -2361,7 +2361,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHPEAK_MOXIE ===
-Name: MOXIE
+Name: Moxie
 Class: Beauty
 Pic: Somber Admin Moxie
 Gender: Female

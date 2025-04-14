@@ -32,7 +32,7 @@ script GastreeGym_LeaderBattle {
         waitmovement(0)
         delay(24)
 
-        msgbox(format("Inger: Who're you? A trainer? You're me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
+        msgbox(format("Inger: Who're you? A trainer? You're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
 
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release

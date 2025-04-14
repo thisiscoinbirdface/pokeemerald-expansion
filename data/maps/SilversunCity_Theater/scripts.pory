@@ -219,7 +219,7 @@ script SilversunCity_Theater_NPC6{
         if (var(VAR_RESULT) == 1){
          msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
             if (var (VAR_RESULT) == 1){
-                msgbox(format("Oh my god! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
+                msgbox(format("Oh wow! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     msgbox(format("...Thank you! Please take this. A little something to remember me by!"), MSGBOX_NPC)
                     giveitem(ITEM_SILK_SCARF)

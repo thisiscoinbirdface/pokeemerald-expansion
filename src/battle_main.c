@@ -361,6 +361,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} TRAINER") },
     [TRAINER_CLASS_ACE_ROOKIE] = { _("Ace Rookie") },
     [TRAINER_CLASS_TEAM_SOMBER] = {_("Team Somber") },
+    [TRAINER_CLASS_SOMBER_ADMIN] = {_("Somber Admin") },
     [TRAINER_CLASS_CADET] = {_("DA Cadet") },
     [TRAINER_CLASS_BURGLAR] = {_("Burglar") },
     [TRAINER_CLASS_BUILDER] = {_("Builder") },
