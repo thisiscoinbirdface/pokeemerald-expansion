@@ -4195,7 +4195,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1741
-            .species = SPECIES_URSARING,
+            .species = SPECIES_TEDDIURSA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1743
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

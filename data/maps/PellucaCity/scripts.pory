@@ -264,7 +264,7 @@ script PellucaCity_NPC9{
 //Pelluca City Wingull
 
 script PellucaCity_WingullGirl{
-    lockall
+    lock
     faceplayer
     msgbox(format("Hahaha! I'm throwing stones at the WINGULLS over there. Wanna throw some?"))
     dynmultichoice(16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "That's mean", "Gimme a stone!")

@@ -371,7 +371,7 @@ PellucaCity_NPC9::
 
 PellucaCity_WingullGirl::
 # 267 "data//maps/PellucaCity/scripts.pory"
-	lockall
+	lock
 # 268 "data//maps/PellucaCity/scripts.pory"
 	faceplayer
 # 269 "data//maps/PellucaCity/scripts.pory"
