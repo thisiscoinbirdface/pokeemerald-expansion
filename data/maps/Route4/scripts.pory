@@ -13,7 +13,7 @@ script Route4_NurseJoy_OnRoute{
     faceplayer
     msgbox(format("Can you believe it? They stationed us on these rocks. I'm a nurse for crying out loud!\pSigh..."))
     call(Common_EventScript_NurseJoyOnRoute)
-    delay(30)
+    delay(16)
     releaseall
     end
 }
