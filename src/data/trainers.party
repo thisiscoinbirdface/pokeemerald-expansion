@@ -1567,11 +1567,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 28
+Level: 25
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Primeape
-Level: 28
+Level: 27
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_ROUTE6_C ===
@@ -1584,19 +1584,19 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Frogadier
-Level: 28
+Level: 25
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Scyther
-Level: 27
+Level: 25
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Herdier
-Level: 27
+Level: 26
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Bayleef
-Level: 29
+Level: 27
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 
@@ -1610,15 +1610,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Toedscool
-Level: 27
+Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Finneon
-Level: 27
+Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Carvanha
-Level: 29
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_E ===
@@ -1632,7 +1632,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Frogadier
-Level: 30
+Level: 27
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_ROUTE6_F ===
@@ -1645,11 +1645,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Croagunk
-Level: 29
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Croagunk
-Level: 29
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1685,19 +1685,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Swadloon
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Dottler
 Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+Dottler
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 Wimpod
-Level: 28
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Beedrill
-Level: 29
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_I ===
@@ -1710,11 +1710,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swablu
-Level: 30
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skrelp
-Level: 31
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_J ===
@@ -1727,19 +1727,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Raticate-Alola
-Level: 29
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Corvisquire
-Level: 29
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Rufflet
-Level: 31
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ursaring
-Level: 31
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1753,17 +1753,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 30
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Cursola
-Level: 32
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT1 ===
 Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Female
 Music: Cool
 Items: Super Potion
@@ -1771,17 +1771,17 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Thievul
-Level: 31
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Hypno
-Level: 32
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT2 ===
 Name: HOPE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Team Somber
+Pic: Somber Grunt F
 Gender: Female
 Music: Cool
 Items: Full Restore

@@ -47,6 +47,7 @@ script Route6_Marshtomp{
     applymovement(32, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)    
+    msgbox(format("It's a wild Pokémon!"))
     playmoncry(SPECIES_MARSHTOMP, CRY_MODE_ENCOUNTER)
     waitmoncry
 
