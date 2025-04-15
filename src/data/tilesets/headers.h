@@ -867,7 +867,7 @@ const struct Tileset gTileset_Snow =
     .palettes = gTilesetPalettes_Snow,
     .metatiles = gMetatiles_Snow,
     .metatileAttributes = gMetatileAttributes_Snow,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_SnowCableCar =
@@ -933,7 +933,7 @@ const struct Tileset gTileset_Autumn =
     .palettes = gTilesetPalettes_Autumn,
     .metatiles = gMetatiles_Autumn,
     .metatileAttributes = gMetatileAttributes_Autumn,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_Silversun =
