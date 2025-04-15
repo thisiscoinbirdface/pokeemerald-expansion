@@ -753,10 +753,10 @@ static const u16 sSwampertFormSpeciesIdTable[] = {
 
 #if P_FAMILY_ZIGZAGOON
 static const u16 sZigzagoonFormSpeciesIdTable[] = {
-    SPECIES_ZIGZAGOON,
 #if P_GALARIAN_FORMS
     SPECIES_ZIGZAGOON_GALAR,
 #endif
+    SPECIES_ZIGZAGOON,
     FORM_SPECIES_END,
 };
 
