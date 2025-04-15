@@ -11,11 +11,12 @@ script MtCeram_Peak_SaveGameTrigger{
         end
     }   
 
-    setvar(VAR_TEMP_C, 1)
-
     special(SaveGame)
 	waitstate
     release
+
+    setvar(VAR_TEMP_C, 1)
+
     end
 }
 

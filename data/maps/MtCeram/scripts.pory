@@ -168,7 +168,7 @@ script MtCeram_EventScript_Eavesdrop{
     msgbox(format("GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
     applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
-    msgbox(format("GRUNT 2: But where is the boss? And GABRIELLE?"))
+    msgbox(format("GRUNT 2: But where's the boss? And Gabrielle?"))
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     msgbox(format("GRUNT 1: The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
     release

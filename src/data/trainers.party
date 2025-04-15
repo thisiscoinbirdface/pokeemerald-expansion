@@ -146,10 +146,6 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Eevee
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 Fennekin
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -402,12 +398,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 11
+Greavard
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swablu
-Level: 12
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_SONA ===
@@ -839,19 +835,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Yamper
-Level: 19
+Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Kirlia
-Level: 21
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Dewott
-Level: 21
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Ceruledge @ Sitrus Berry
-Level: 22
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Shadow Sneak
 - Will O Wisp
@@ -868,11 +864,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 20
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Thwackey
-Level: 21
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VILETHORN_B ===
@@ -885,7 +881,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Dottler
-Level: 19
+Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Beedrill
@@ -893,7 +889,7 @@ Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Whirlipede
-Level: 21
+Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 
@@ -981,19 +977,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Dottler
-Level: 21
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewpider
-Level: 22
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lokix
-Level: 22
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pinsir
-Level: 24
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1361,7 +1357,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Thievul
-Level: 27
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_B ===
@@ -1374,11 +1370,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Thievul
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Elgyem
-Level: 26
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1392,12 +1388,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Swoobat
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 Bronzor
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1411,15 +1407,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Baltoy
-Level: 25
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Bronzor
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Thievul
-Level: 28
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_E ===
@@ -1432,11 +1428,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone-Galar
-Level: 27
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Murkrow
-Level: 27
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_F ===
@@ -1449,11 +1445,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Murkrow
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Drowzee
-Level: 27
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_G ===
@@ -1471,7 +1467,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 Linoone-Galar
-Level: 28
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1485,11 +1481,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Elgyem
-Level: 26
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Linoone-Galar
-Level: 28
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_MELEA ===
@@ -1502,15 +1498,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Slowpoke
-Level: 27
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Elgyem
-Level: 29
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Jynx
-Level: 29
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_KOHLA ===
@@ -1523,24 +1519,24 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Ace Pokemon
 
-Kirlia
-Level: 28
+Boltund
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Boltund
-Level: 24
+Kirlia
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Axew
-Level: 29
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewott
-Level: 29
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ceruledge @ Fire Gem
-Level: 31
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
