@@ -670,7 +670,7 @@ PellucaCity_Zorua_Text_0:
 
 PellucaCity_Lycanroc_Text_0:
 # 155 "data//maps/PellucaCity/scripts.pory"
-	.string "LYCANROC is howling. It must be pining\n"
+	.string "Lycanroc is howling. It must be pining\n"
 	.string "for a table at the restaurant!$"
 
 PellucaCity_NPC1_Text_0:

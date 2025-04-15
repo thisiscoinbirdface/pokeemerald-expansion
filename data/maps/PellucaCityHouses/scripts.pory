@@ -5,28 +5,22 @@ mapscripts PellucaCityHouses_MapScripts{}
 
 //GAB house
 script PellucaCityHouses_GabSibling1{
-    lockall
-    faceplayer
-    msgbox(format("Yay! Big Sis is back! Big Bro got her a present too!"))
-    releaseall
+    msgbox(format("Yay! Big Sis is back! Big Bro got her a present too!"), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_GabSibling2{
-    lockall
-    faceplayer
-    msgbox(format("I wish Big Sis stayed with us all the time!"))
-    releaseall
+    msgbox(format("I wish Big Sis stayed with us all the time!"), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_GabSibling3{
     lockall
     faceplayer
-    msgbox(format("GABRIELLE keeps us afloat. Without her, I wouldn't be able to afford to study. I got her a gift."))
+    msgbox(format("Gabrielle keeps us afloat. Without her, I wouldn't be able to afford to study. I got her a gift."))
     release
     showmonpic(SPECIES_JANGMO_O, 10, 3)
     delay(120)
     hidemonpic
-    msgbox(format("A traveling merchant sold it to me. It's the least I can do for her."))
+    msgbox(format("A traveling merchant sold it to me. It's the least I can do for her."), MSGBOX_NPC)
     releaseall
     end
 }
@@ -35,33 +29,38 @@ script PellucaCityHouses_GabSibling3{
 
 
 script PellucaCityHouses_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Since Pelluca City sits at the intersection of the Ivy River and the Hoya River, it's split up into several small islands."))
-    releaseall
+    msgbox(format("Since Pelluca City sits at the intersection of the Ivy River and the Hoya River, it's split up into several small islands."), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("We we born here here, fell in love here, and grew old here."))
-    releaseall
+    msgbox(format("We we born here here, fell in love here, and grew old here."), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("After so long together, one's love gets replaced by companionship. But it's always there, somewhere beneath the surface."))
-    releaseall
+    msgbox(format("After so long together, one's love gets replaced by companionship. But it's always there, somewhere beneath the surface."), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_NPC4{
+    msgbox(format("My Delphox doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I caught her."), MSGBOX_NPC)
+    end
+}
+
+
+
+//MONS
+script PellucaCity_Lycanroc{
     lockall
+    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("My DELPHOX doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I caught her."))
+    msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"), MSGBOX_NPC)
     releaseall
     end
 }
+
+
+
+
+
 
 
 

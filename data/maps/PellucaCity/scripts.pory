@@ -150,10 +150,9 @@ script PellucaCity_Zorua{
 //MONS
 script PellucaCity_Lycanroc{
     lockall
-    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"))
-    releaseall
+    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
+    msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"), MSGBOX_NPC)
     end
 }
 
@@ -166,34 +165,22 @@ script PellucaCity_Lycanroc{
 //NPCs
 //tuber at beach
 script PellucaCity_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("Whee!!!"))
-    releaseall
+    msgbox(format("Whee!!!"), MSGBOX_NPC)
     end
 }
 //bridge lady
 script PellucaCity_NPC2{
-    lockall
-    faceplayer
-    msgbox(format("A tourist! Have you come to eat at the Pelluca Restaurant?"))
-    releaseall
+    msgbox(format("A tourist! Have you come to eat at the Pelluca Restaurant?"), MSGBOX_NPC)
     end
 }
 //bridge black belt
 script PellucaCity_NPC3{
-    lockall
-    faceplayer
-    msgbox(format("I would've trained up in Mt. Mirroh but I can't go there without a CABLE CAR PASS. So I'm jogging here instead."))
-    releaseall
+    msgbox(format("I would've trained up in Mt. Mirroh but I can't go there without a Cable Car Pass. So I'm jogging here instead."), MSGBOX_NPC)
     end
 }
 //bridge cyclist
 script PellucaCity_NPC4{
-    lockall
-    faceplayer
-    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions!"))
-    releaseall
+    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions!"), MSGBOX_NPC)
     end
 }
 //bridge other dude
@@ -217,26 +204,17 @@ script PellucaCity_NPC5{
 }
 //bridge getting off dude
 script PellucaCity_NPC6{
-    lockall
-    faceplayer
-    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car. It's just past the Pokemart. Wear something warm!"))
-    releaseall
+    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car. It's just past the Pokemart. Wear something warm!"), MSGBOX_NPC)
     end
 }
 //main island
 script PellucaCity_NPC7{
-    lockall
-    faceplayer
-    msgbox(format("There are no free tables at the restaurant! I should've made a reservation."))
-    releaseall
+    msgbox(format("There are no free tables at the restaurant! I should've made a reservation."), MSGBOX_NPC)
     end
 }
 //fishery 1
 script PellucaCity_NPC8{
-    lockall
-    faceplayer
-    msgbox(format("What's even the point of fishing if the SHARPEDO's going to scare all the fish away?"))
-    releaseall
+    msgbox(format("What's even the point of fishing if the SHARPEDO's going to scare all the fish away?"), MSGBOX_NPC)
     end
 }
 
@@ -244,7 +222,7 @@ script PellucaCity_Sealeo{
     lockall
     faceplayer
     playmoncry(SPECIES_SEALEO, CRY_MODE_NORMAL)
-    msgbox(format("SEALEO wants to catch fish!"))
+    msgbox(format("Sealeo wants to catch fish!"), MSGBOX_NPC)
     release
     applymovement(26, moves(face_down))
     waitmovement(0)
@@ -256,10 +234,7 @@ script PellucaCity_Sealeo{
 
 //fishery 2
 script PellucaCity_NPC9{
-    lockall
-    faceplayer
-    msgbox(format("This is the Pelluca Fishery! But it's closed due to the Sharpedo attacks."))
-    releaseall
+    msgbox(format("This is the Pelluca Fishery! But it's closed due to the Mega Sharpedo attacks."), MSGBOX_NPC)
     end
 }
 
@@ -287,7 +262,7 @@ script PellucaCity_WingullGirl{
         setwildbattle(SPECIES_WINGULL, 25)
         dowildbattle
     } else {
-        msgbox(format("Mean? You're mean!"))
+        msgbox(format("Mean? You're mean!"), MSGBOX_NPC)
     }
 
     releaseall
@@ -295,18 +270,12 @@ script PellucaCity_WingullGirl{
 }
 
 script PellucaCity_WingullMother{
-    lockall
-    faceplayer
-    msgbox(format("My daughter loves throwing stones at Wingulls. She's just so cute!"))
-    releaseall
+    msgbox(format("My daughter loves throwing stones at Wingulls. She's just so cute!"), MSGBOX_NPC)
     end
 }
 
 script PellucaCity_WingullCritique{
-    lockall
-    faceplayer
-    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting."))
-    releaseall
+    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting."), MSGBOX_NPC)
     end
 }
 

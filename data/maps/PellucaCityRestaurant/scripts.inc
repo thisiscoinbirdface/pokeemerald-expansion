@@ -231,6 +231,30 @@ PellucaCityRestaurant_Cook3_16:
 	goto PellucaCityRestaurant_Cook3_4
 
 
+PellucaCityRestaurant_Appletun::
+# 175 "data//maps/PellucaCityRestaurant/scripts.pory"
+	lockall
+# 176 "data//maps/PellucaCityRestaurant/scripts.pory"
+	faceplayer
+# 177 "data//maps/PellucaCityRestaurant/scripts.pory"
+	playmoncry SPECIES_APPLETUN, CRY_MODE_NORMAL
+# 178 "data//maps/PellucaCityRestaurant/scripts.pory"
+	msgbox PellucaCityRestaurant_Appletun_Text_0, MSGBOX_NPC
+	end
+
+
+PellucaCityRestaurant_Dipplin::
+# 183 "data//maps/PellucaCityRestaurant/scripts.pory"
+	lockall
+# 184 "data//maps/PellucaCityRestaurant/scripts.pory"
+	faceplayer
+# 185 "data//maps/PellucaCityRestaurant/scripts.pory"
+	playmoncry SPECIES_DIPPLIN, CRY_MODE_NORMAL
+# 186 "data//maps/PellucaCityRestaurant/scripts.pory"
+	msgbox PellucaCityRestaurant_Dipplin_Text_0, MSGBOX_NPC
+	end
+
+
 # 137 "data//maps/PellucaCityRestaurant/scripts.pory"
 PellucaCityRestaurant_Cook3_Movement_0:
 # 137 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -260,19 +284,20 @@ PellucaCityRestaurant_NPC4_Text_0:
 PellucaCityRestaurant_NPC5_Text_0:
 # 43 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Apparently the staff here all have\n"
-	.string "APPLIN and POLTEAGEIST to help them\l"
-	.string "cook!$"
+	.string "Pokémon from the Applin family to help\l"
+	.string "them!$"
 
 PellucaCityRestaurant_NPC6_Text_0:
 # 51 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Too many customers! Too many orders!$"
+	.string "Too many customers! Too many orders!\n"
+	.string "Without Dipplin to help, I wouldn't be\l"
+	.string "able to manage all these tables.$"
 
 PellucaCityRestaurant_NPC7_Text_0:
 # 59 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "My SMEARGLE cannot resist the apple\n"
-	.string "pie here! It's because the head chef\l"
-	.string "uses rare ingredients from all over\l"
-	.string "Cormoria.$"
+	.string "My Smeargle cannot resist the apple pie\n"
+	.string "here! It's because the head chef uses\l"
+	.string "rare ingredients from all over Cormoria.$"
 
 PellucaCityRestaurant_NPC8_Text_0:
 # 67 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -289,8 +314,8 @@ PellucaCityRestaurant_Cook1_Text_0:
 # 94 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Our head chef travels all across\n"
 	.string "Cormoria to find the rarest\l"
-	.string "ingredients...I wish he'd find a ROTOM\l"
-	.string "FROST to replace our fridge!$"
+	.string "ingredients...I wish he'd find a Rotom\l"
+	.string "Frost to replace our fridge!$"
 
 PellucaCityRestaurant_Cook2_Text_0:
 # 101 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -300,12 +325,12 @@ PellucaCityRestaurant_Cook2_Text_0:
 
 PellucaCityRestaurant_Cook3_Text_0:
 # 110 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "How's my favourite trainer and APPLIN\n"
+	.string "How's my favourite trainer and Applin\n"
 	.string "doing?$"
 
 PellucaCityRestaurant_Cook3_Text_1:
 # 114 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Have you brought the NEVERMELT ICE?$"
+	.string "Have you brought the Nevermelt Ice?$"
 
 PellucaCityRestaurant_Cook3_Text_2:
 # 119 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -319,7 +344,7 @@ PellucaCityRestaurant_Cook3_Text_3:
 
 PellucaCityRestaurant_Cook3_Text_4:
 # 124 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Take good care of our APPLIN! Maybe I'll\n"
+	.string "Take good care of our Applin! Maybe I'll\n"
 	.string "see the two of you together the next\l"
 	.string "time I go ingredient-hunting.$"
 
@@ -350,10 +375,10 @@ PellucaCityRestaurant_Cook3_Text_7:
 PellucaCityRestaurant_Cook3_Text_8:
 # 142 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "I knew I could rely on you!\p"
-	.string "Some NEVERMELT ICE will do the trick.\n"
-	.string "You can buy NEVERMELT ICE at the\l"
-	.string "Mirroh Base Camp. Head northwest from\l"
-	.string "here and use the cable car. You'll need a\l"
+	.string "Some Nevermelt Ice will do the trick.\n"
+	.string "You can buy Nevermelt Ice at the Mirroh\l"
+	.string "Base Camp. Head northwest from here\l"
+	.string "and use the cable car. You'll need a\l"
 	.string "pass, so take this with you.$"
 
 PellucaCityRestaurant_Cook3_Text_9:
@@ -364,3 +389,13 @@ PellucaCityRestaurant_Cook3_Text_10:
 # 152 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Oh no! But I understand. You must be\n"
 	.string "busy.$"
+
+PellucaCityRestaurant_Appletun_Text_0:
+# 178 "data//maps/PellucaCityRestaurant/scripts.pory"
+	.string "Appletun seems to be wandering around\n"
+	.string "aimlessly...is it helping or hindering?$"
+
+PellucaCityRestaurant_Dipplin_Text_0:
+# 186 "data//maps/PellucaCityRestaurant/scripts.pory"
+	.string "Dipplin is keeping an eye on the\n"
+	.string "customers!$"
