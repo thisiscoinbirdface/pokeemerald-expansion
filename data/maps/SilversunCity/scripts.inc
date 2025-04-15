@@ -86,6 +86,8 @@ SilversunCity_OnFrame_1:
 	waitmovement 0
 # 53 "data//maps/SilversunCity/scripts.pory"
 	removeobject LOCALID_TENEBRIS
+# 54 "data//maps/SilversunCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_OnFrame_Movement_4
 # 55 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_OnFrame_Text_6
 # 56 "data//maps/SilversunCity/scripts.pory"
@@ -308,6 +310,14 @@ SilversunCity_OnFrame_Movement_3:
 	walk_down
 	step_end
 
+# 54 "data//maps/SilversunCity/scripts.pory"
+SilversunCity_OnFrame_Movement_4:
+# 54 "data//maps/SilversunCity/scripts.pory"
+	walk_left
+# 54 "data//maps/SilversunCity/scripts.pory"
+	face_up
+	step_end
+
 # 102 "data//maps/SilversunCity/scripts.pory"
 SilversunCity_EventScript_Detectives_Movement_0:
 # 102 "data//maps/SilversunCity/scripts.pory"
@@ -339,7 +349,7 @@ SilversunCity_OnFrame_Text_2:
 	.string "Rue: Oh, it was terrible! They barged\n"
 	.string "into our lab and started threatening\l"
 	.string "everyone unless we handed over the\l"
-	.string "DREAMALYSER blueprints! I managed to\l"
+	.string "Dreamalyser blueprints! I managed to\l"
 	.string "hold them off while the other research\l"
 	.string "associates escaped, but they\l"
 	.string "overpowered me and forced me to hand\l"
@@ -349,13 +359,13 @@ SilversunCity_OnFrame_Text_3:
 # 40 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: Spilt milk. Don't fret over\n"
 	.string "what can't be changed. What do they\l"
-	.string "want to do with the DREAMALYSER?\p"
+	.string "want to do with the Dreamalyser?\p"
 	.string "RUE: Just like we heard from {PLAYER}\n"
 	.string "about being transported to Ancient\l"
 	.string "Cormoria, they heard about it from their\l"
 	.string "grunt who went too. I think they called\l"
 	.string "her GABRIELLE. And now they want to\l"
-	.string "use the DREAMALYSER to control the\l"
+	.string "use the Dreamalyser to control the\l"
 	.string "power of the dreamstone! Then they'll\l"
 	.string "be able to enter the past and...what\l"
 	.string "exactly they want to do there - I have\l"
@@ -364,8 +374,8 @@ SilversunCity_OnFrame_Text_3:
 SilversunCity_OnFrame_Text_4:
 # 44 "data//maps/SilversunCity/scripts.pory"
 	.string "DETECTIVE: So they want to build a\n"
-	.string "DREAMALYSER and use it to go to\l"
-	.string "Ancient Cormoria?\p"
+	.string "Dreamalyser and use it to go to Ancient\l"
+	.string "Cormoria?\p"
 	.string "RUE: Yes.\p"
 	.string "DETECTIVE: There must be something\n"
 	.string "we're missing. What's there in the past?\l"

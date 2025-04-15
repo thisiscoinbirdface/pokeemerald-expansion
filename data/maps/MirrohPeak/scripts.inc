@@ -886,7 +886,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_3:
 MirrohPeak_EventScript_Somber_Trigger_Text_4:
 # 193 "data//maps/MirrohPeak/scripts.pory"
 	.string "MELEA: Go on, MOXIE. Start the\n"
-	.string "DREAMALYSER.$"
+	.string "Dreamalyser.$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_5:
 # 209 "data//maps/MirrohPeak/scripts.pory"
@@ -969,7 +969,7 @@ MirrohPeak_Grunt_A_Text_0:
 # 359 "data//maps/MirrohPeak/scripts.pory"
 	.string "You're too late! The bosses have\n"
 	.string "already taken control of the\l"
-	.string "dreamstone with the DREAMALYSER!$"
+	.string "dreamstone with the Dreamalyser!$"
 
 MirrohPeak_Grunt_A_Text_1:
 # 359 "data//maps/MirrohPeak/scripts.pory"
@@ -978,11 +978,11 @@ MirrohPeak_Grunt_A_Text_1:
 MirrohPeak_Grunt_A_Text_2:
 # 360 "data//maps/MirrohPeak/scripts.pory"
 	.string "I wonder what'll happen once they\n"
-	.string "activate the DREAMALYSER...$"
+	.string "activate the Dreamalyser...$"
 
 MirrohPeak_Grunt_B_Text_0:
 # 366 "data//maps/MirrohPeak/scripts.pory"
-	.string "We're going to use the DREAMALYSER to\n"
+	.string "We're going to use the Dreamalyser to\n"
 	.string "revive the ANCIENT TERROR! Hahaha!$"
 
 MirrohPeak_Grunt_B_Text_1:
@@ -996,7 +996,7 @@ MirrohPeak_Grunt_B_Text_2:
 MirrohPeak_Grunt_C_Text_0:
 # 373 "data//maps/MirrohPeak/scripts.pory"
 	.string "Nope. No way. You're not getting\n"
-	.string "through us. We've got the DREAMALYSER\l"
+	.string "through us. We've got the Dreamalyser\l"
 	.string "up and running, and we're not letting\l"
 	.string "you interfere!$"
 
