@@ -845,7 +845,7 @@ const struct Tileset gTileset_Swamp =
     .palettes = gTilesetPalettes_Swamp,
     .metatiles = gMetatiles_Swamp,
     .metatileAttributes = gMetatileAttributes_Swamp,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_Swampforest =
@@ -955,7 +955,7 @@ const struct Tileset gTileset_SilversunPrimary =
     .palettes = gTilesetPalettes_SilversunPrimary,
     .metatiles = gMetatiles_SilversunPrimary,
     .metatileAttributes = gMetatileAttributes_SilversunPrimary,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_Vilethorn =

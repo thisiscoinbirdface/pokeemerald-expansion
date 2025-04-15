@@ -4976,7 +4976,7 @@
       "name": "HoyaRiverNorth_Layout",
       "width": 32,
       "height": 40,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SilversunPrimary",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/HoyaRiverNorth/border.bin",
       "blockdata_filepath": "data/layouts/HoyaRiverNorth/map.bin"
