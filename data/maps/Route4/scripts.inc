@@ -21,7 +21,7 @@ Route4_NurseJoy_OnRoute::
 # 15 "data//maps/Route4/scripts.pory"
 	call Common_EventScript_NurseJoyOnRoute
 # 16 "data//maps/Route4/scripts.pory"
-	delay 30
+	delay 16
 # 17 "data//maps/Route4/scripts.pory"
 	releaseall
 	end

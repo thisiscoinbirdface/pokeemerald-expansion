@@ -9,113 +9,117 @@ SilversunCity_Theater_Leader::
 	faceplayer
 # 15 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_Leader_2
-# 21 "data//maps/SilversunCity_Theater/scripts.pory"
-	call Common_EventScript_SaveGame
+# 22 "data//maps/SilversunCity_Theater/scripts.pory"
+	special SaveGame
 # 23 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_1
+	waitstate
 # 24 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 25 "data//maps/SilversunCity_Theater/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_PLAYER, 3, 6
-# 26 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_0
+	release
 # 27 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement 8, SilversunCity_Theater_Leader_Movement_0
+	msgbox SilversunCity_Theater_Leader_Text_1
 # 28 "data//maps/SilversunCity_Theater/scripts.pory"
-	delay 8
+	fadescreen FADE_TO_BLACK
+# 29 "data//maps/SilversunCity_Theater/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_PLAYER, 3, 6
 # 30 "data//maps/SilversunCity_Theater/scripts.pory"
-	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_0
 # 31 "data//maps/SilversunCity_Theater/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_CAMERA, 5, 6
-# 32 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
-# 33 "data//maps/SilversunCity_Theater/scripts.pory"
-	special RemoveCameraObject
-# 35 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 36 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_2
-# 37 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 38 "data//maps/SilversunCity_Theater/scripts.pory"
-	playse SE_APPLAUSE
-# 39 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_3
-# 40 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 41 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement 8, SilversunCity_Theater_Leader_Movement_1
-# 42 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_4
-# 44 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 46 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_2
-# 47 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement 8, SilversunCity_Theater_Leader_Movement_1
-# 48 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
-# 49 "data//maps/SilversunCity_Theater/scripts.pory"
-	hidefollower
-# 50 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 53 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_5
-# 54 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 57 "data//maps/SilversunCity_Theater/scripts.pory"
-	trainerbattle_no_intro TRAINER_SILVERSUNGYM_LEADER, SilversunCity_Theater_Leader_Text_6
-# 61 "data//maps/SilversunCity_Theater/scripts.pory"
-	special SpawnCameraObject
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_3
-# 63 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
-# 64 "data//maps/SilversunCity_Theater/scripts.pory"
 	applymovement 8, SilversunCity_Theater_Leader_Movement_0
-# 65 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
-# 66 "data//maps/SilversunCity_Theater/scripts.pory"
-	special RemoveCameraObject
-# 68 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_7
-# 69 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 70 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_2
-# 71 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement 8, SilversunCity_Theater_Leader_Movement_1
-# 72 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
-# 73 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_8
-# 76 "data//maps/SilversunCity_Theater/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
-# 78 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_9
-# 79 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 80 "data//maps/SilversunCity_Theater/scripts.pory"
-	setflag FLAG_BADGE04_GET
-# 83 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_10
-# 88 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_Leader_Text_11
-# 89 "data//maps/SilversunCity_Theater/scripts.pory"
-	release
-# 91 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 92 "data//maps/SilversunCity_Theater/scripts.pory"
+# 32 "data//maps/SilversunCity_Theater/scripts.pory"
+	delay 8
+# 34 "data//maps/SilversunCity_Theater/scripts.pory"
 	special SpawnCameraObject
-# 93 "data//maps/SilversunCity_Theater/scripts.pory"
+# 35 "data//maps/SilversunCity_Theater/scripts.pory"
 	setobjectxy OBJ_EVENT_ID_CAMERA, 5, 6
-# 94 "data//maps/SilversunCity_Theater/scripts.pory"
-	delay 16
-# 95 "data//maps/SilversunCity_Theater/scripts.pory"
+# 36 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 37 "data//maps/SilversunCity_Theater/scripts.pory"
 	special RemoveCameraObject
-# 96 "data//maps/SilversunCity_Theater/scripts.pory"
+# 39 "data//maps/SilversunCity_Theater/scripts.pory"
 	fadescreen FADE_FROM_BLACK
+# 40 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_2
+# 41 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 42 "data//maps/SilversunCity_Theater/scripts.pory"
+	playse SE_APPLAUSE
+# 43 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_3
+# 44 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 45 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement 8, SilversunCity_Theater_Leader_Movement_1
+# 46 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_4
+# 48 "data//maps/SilversunCity_Theater/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 50 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_2
+# 51 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement 8, SilversunCity_Theater_Leader_Movement_1
+# 52 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 53 "data//maps/SilversunCity_Theater/scripts.pory"
+	hidefollower
+# 54 "data//maps/SilversunCity_Theater/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 57 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_5
+# 58 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 61 "data//maps/SilversunCity_Theater/scripts.pory"
+	trainerbattle_no_intro TRAINER_SILVERSUNGYM_LEADER, SilversunCity_Theater_Leader_Text_6
+# 65 "data//maps/SilversunCity_Theater/scripts.pory"
+	special SpawnCameraObject
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_3
+# 67 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 68 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement 8, SilversunCity_Theater_Leader_Movement_0
+# 69 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 70 "data//maps/SilversunCity_Theater/scripts.pory"
+	special RemoveCameraObject
+# 72 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_7
+# 73 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 74 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_2
+# 75 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement 8, SilversunCity_Theater_Leader_Movement_1
+# 76 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 77 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_8
+# 80 "data//maps/SilversunCity_Theater/scripts.pory"
+	call Common_EventScript_PlayGymBadgeFanfare
+# 82 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_9
+# 83 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 84 "data//maps/SilversunCity_Theater/scripts.pory"
+	setflag FLAG_BADGE04_GET
+# 87 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_10
+# 92 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_Leader_Text_11
+# 93 "data//maps/SilversunCity_Theater/scripts.pory"
+	release
+# 95 "data//maps/SilversunCity_Theater/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 96 "data//maps/SilversunCity_Theater/scripts.pory"
+	special SpawnCameraObject
 # 97 "data//maps/SilversunCity_Theater/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_CAMERA, 5, 6
+# 98 "data//maps/SilversunCity_Theater/scripts.pory"
+	delay 16
+# 99 "data//maps/SilversunCity_Theater/scripts.pory"
+	special RemoveCameraObject
+# 100 "data//maps/SilversunCity_Theater/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 101 "data//maps/SilversunCity_Theater/scripts.pory"
 	releaseall
 	end
 
@@ -128,257 +132,257 @@ SilversunCity_Theater_Leader_2:
 
 
 SilversunCity_Theater_EventScript_SomberBlocker::
-# 110 "data//maps/SilversunCity_Theater/scripts.pory"
-	lockall
-# 111 "data//maps/SilversunCity_Theater/scripts.pory"
-	faceplayer
-# 112 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_EventScript_SomberBlocker_Text_0
 # 114 "data//maps/SilversunCity_Theater/scripts.pory"
-	setflag FLAG_SILVERSUN_SOMBERHQ_ENTRANCE
+	lockall
+# 115 "data//maps/SilversunCity_Theater/scripts.pory"
+	faceplayer
 # 116 "data//maps/SilversunCity_Theater/scripts.pory"
-	applymovement 6, SilversunCity_Theater_EventScript_SomberBlocker_Movement_0
-# 117 "data//maps/SilversunCity_Theater/scripts.pory"
-	waitmovement 0
+	msgbox SilversunCity_Theater_EventScript_SomberBlocker_Text_0
 # 118 "data//maps/SilversunCity_Theater/scripts.pory"
+	setflag FLAG_SILVERSUN_SOMBERHQ_ENTRANCE
+# 120 "data//maps/SilversunCity_Theater/scripts.pory"
+	applymovement 6, SilversunCity_Theater_EventScript_SomberBlocker_Movement_0
+# 121 "data//maps/SilversunCity_Theater/scripts.pory"
+	waitmovement 0
+# 122 "data//maps/SilversunCity_Theater/scripts.pory"
 	removeobject 6
-# 119 "data//maps/SilversunCity_Theater/scripts.pory"
+# 123 "data//maps/SilversunCity_Theater/scripts.pory"
 	releaseall
 	end
 
 
 SilversunCity_Theater_NPC1::
-# 133 "data//maps/SilversunCity_Theater/scripts.pory"
+# 137 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC1_2
-# 136 "data//maps/SilversunCity_Theater/scripts.pory"
+# 140 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC1_Text_1, MSGBOX_NPC
 SilversunCity_Theater_NPC1_1:
 	end
 
 SilversunCity_Theater_NPC1_2:
-# 134 "data//maps/SilversunCity_Theater/scripts.pory"
+# 138 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC1_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC1_1
 
 
 SilversunCity_Theater_NPC2::
-# 142 "data//maps/SilversunCity_Theater/scripts.pory"
+# 146 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC2_2
-# 145 "data//maps/SilversunCity_Theater/scripts.pory"
+# 149 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC2_Text_1, MSGBOX_NPC
 SilversunCity_Theater_NPC2_1:
 	end
 
 SilversunCity_Theater_NPC2_2:
-# 143 "data//maps/SilversunCity_Theater/scripts.pory"
+# 147 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC2_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC2_1
 
 
 SilversunCity_Theater_NPC3::
-# 151 "data//maps/SilversunCity_Theater/scripts.pory"
+# 155 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC3_2
-# 154 "data//maps/SilversunCity_Theater/scripts.pory"
+# 158 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC3_Text_1, MSGBOX_NPC
 SilversunCity_Theater_NPC3_1:
 	end
 
 SilversunCity_Theater_NPC3_2:
-# 152 "data//maps/SilversunCity_Theater/scripts.pory"
+# 156 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC3_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC3_1
 
 
 SilversunCity_Theater_NPC4::
-# 160 "data//maps/SilversunCity_Theater/scripts.pory"
+# 164 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC4_2
-# 163 "data//maps/SilversunCity_Theater/scripts.pory"
+# 167 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC4_Text_1, MSGBOX_NPC
 SilversunCity_Theater_NPC4_1:
 	end
 
 SilversunCity_Theater_NPC4_2:
-# 161 "data//maps/SilversunCity_Theater/scripts.pory"
+# 165 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC4_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC4_1
 
 
 SilversunCity_Theater_NPC5::
-# 170 "data//maps/SilversunCity_Theater/scripts.pory"
+# 174 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC5_2
-# 187 "data//maps/SilversunCity_Theater/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_THEATER_LENS, SilversunCity_Theater_NPC5_8
-# 190 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_NPC5_Text_7, MSGBOX_YESNO
 # 191 "data//maps/SilversunCity_Theater/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_THEATER_LENS, SilversunCity_Theater_NPC5_8
+# 194 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_NPC5_Text_7, MSGBOX_YESNO
+# 195 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Theater_NPC5_15
-# 204 "data//maps/SilversunCity_Theater/scripts.pory"
+# 208 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_9, MSGBOX_NPC
 SilversunCity_Theater_NPC5_1:
 	end
 
 SilversunCity_Theater_NPC5_2:
-# 171 "data//maps/SilversunCity_Theater/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_THEATER_LENS, SilversunCity_Theater_NPC5_5
-# 174 "data//maps/SilversunCity_Theater/scripts.pory"
-	msgbox SilversunCity_Theater_NPC5_Text_1
 # 175 "data//maps/SilversunCity_Theater/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_THEATER_LENS, SilversunCity_Theater_NPC5_5
+# 178 "data//maps/SilversunCity_Theater/scripts.pory"
+	msgbox SilversunCity_Theater_NPC5_Text_1
+# 179 "data//maps/SilversunCity_Theater/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_Theater_NPC5_Text_2, SilversunCity_Theater_NPC5_Text_3
-# 176 "data//maps/SilversunCity_Theater/scripts.pory"
+# 180 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_Theater_NPC5_12
-# 180 "data//maps/SilversunCity_Theater/scripts.pory"
+# 184 "data//maps/SilversunCity_Theater/scripts.pory"
 	giveitem ITEM_SCOPE_LENS
-# 181 "data//maps/SilversunCity_Theater/scripts.pory"
+# 185 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_5, MSGBOX_NPC
 SilversunCity_Theater_NPC5_11:
-# 184 "data//maps/SilversunCity_Theater/scripts.pory"
+# 188 "data//maps/SilversunCity_Theater/scripts.pory"
 	setflag FLAG_SILVERSUN_THEATER_LENS
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_5:
-# 172 "data//maps/SilversunCity_Theater/scripts.pory"
+# 176 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_8:
-# 188 "data//maps/SilversunCity_Theater/scripts.pory"
+# 192 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_6, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_12:
-# 177 "data//maps/SilversunCity_Theater/scripts.pory"
+# 181 "data//maps/SilversunCity_Theater/scripts.pory"
 	giveitem ITEM_WIDE_LENS
-# 178 "data//maps/SilversunCity_Theater/scripts.pory"
+# 182 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_4, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_11
 
 SilversunCity_Theater_NPC5_15:
-# 192 "data//maps/SilversunCity_Theater/scripts.pory"
+# 196 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_8
-# 193 "data//maps/SilversunCity_Theater/scripts.pory"
+# 197 "data//maps/SilversunCity_Theater/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_Theater_NPC5_Text_2, SilversunCity_Theater_NPC5_Text_3
-# 194 "data//maps/SilversunCity_Theater/scripts.pory"
+# 198 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_Theater_NPC5_19
-# 198 "data//maps/SilversunCity_Theater/scripts.pory"
+# 202 "data//maps/SilversunCity_Theater/scripts.pory"
 	giveitem ITEM_SCOPE_LENS
-# 199 "data//maps/SilversunCity_Theater/scripts.pory"
+# 203 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_5, MSGBOX_NPC
 SilversunCity_Theater_NPC5_18:
-# 202 "data//maps/SilversunCity_Theater/scripts.pory"
+# 206 "data//maps/SilversunCity_Theater/scripts.pory"
 	setflag FLAG_SILVERSUN_THEATER_LENS
 	goto SilversunCity_Theater_NPC5_1
 
 SilversunCity_Theater_NPC5_19:
-# 195 "data//maps/SilversunCity_Theater/scripts.pory"
+# 199 "data//maps/SilversunCity_Theater/scripts.pory"
 	giveitem ITEM_WIDE_LENS
-# 196 "data//maps/SilversunCity_Theater/scripts.pory"
+# 200 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC5_Text_4, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC5_18
 
 
 SilversunCity_Theater_NPC6::
-# 214 "data//maps/SilversunCity_Theater/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_THEATER_SCARF, SilversunCity_Theater_NPC6_2
-# 217 "data//maps/SilversunCity_Theater/scripts.pory"
-	lockall
 # 218 "data//maps/SilversunCity_Theater/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_THEATER_SCARF, SilversunCity_Theater_NPC6_2
+# 221 "data//maps/SilversunCity_Theater/scripts.pory"
+	lockall
+# 222 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_1, MSGBOX_YESNO
-# 219 "data//maps/SilversunCity_Theater/scripts.pory"
+# 223 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Theater_NPC6_6
-# 233 "data//maps/SilversunCity_Theater/scripts.pory"
+# 237 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_6, MSGBOX_NPC
 SilversunCity_Theater_NPC6_5:
-# 235 "data//maps/SilversunCity_Theater/scripts.pory"
+# 239 "data//maps/SilversunCity_Theater/scripts.pory"
 	releaseall
 SilversunCity_Theater_NPC6_1:
 	end
 
 SilversunCity_Theater_NPC6_2:
-# 215 "data//maps/SilversunCity_Theater/scripts.pory"
+# 219 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC6_1
 
 SilversunCity_Theater_NPC6_6:
-# 220 "data//maps/SilversunCity_Theater/scripts.pory"
+# 224 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_2, MSGBOX_YESNO
-# 221 "data//maps/SilversunCity_Theater/scripts.pory"
+# 225 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Theater_NPC6_9
-# 230 "data//maps/SilversunCity_Theater/scripts.pory"
+# 234 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_5, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC6_5
 
 SilversunCity_Theater_NPC6_9:
-# 222 "data//maps/SilversunCity_Theater/scripts.pory"
+# 226 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_3, MSGBOX_YESNO
-# 223 "data//maps/SilversunCity_Theater/scripts.pory"
+# 227 "data//maps/SilversunCity_Theater/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Theater_NPC6_12
 	goto SilversunCity_Theater_NPC6_5
 
 SilversunCity_Theater_NPC6_12:
-# 224 "data//maps/SilversunCity_Theater/scripts.pory"
+# 228 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_4, MSGBOX_NPC
-# 225 "data//maps/SilversunCity_Theater/scripts.pory"
+# 229 "data//maps/SilversunCity_Theater/scripts.pory"
 	giveitem ITEM_SILK_SCARF
-# 226 "data//maps/SilversunCity_Theater/scripts.pory"
+# 230 "data//maps/SilversunCity_Theater/scripts.pory"
 	release
-# 227 "data//maps/SilversunCity_Theater/scripts.pory"
+# 231 "data//maps/SilversunCity_Theater/scripts.pory"
 	setflag FLAG_SILVERSUN_THEATER_SCARF
 	goto SilversunCity_Theater_NPC6_5
 
 
 SilversunCity_Theater_NPC7::
-# 241 "data//maps/SilversunCity_Theater/scripts.pory"
+# 245 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto_if_set FLAG_BADGE04_GET, SilversunCity_Theater_NPC7_2
-# 244 "data//maps/SilversunCity_Theater/scripts.pory"
+# 248 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC7_Text_1, MSGBOX_NPC
 SilversunCity_Theater_NPC7_1:
 	end
 
 SilversunCity_Theater_NPC7_2:
-# 242 "data//maps/SilversunCity_Theater/scripts.pory"
+# 246 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC7_Text_0, MSGBOX_NPC
 	goto SilversunCity_Theater_NPC7_1
 
 
-# 26 "data//maps/SilversunCity_Theater/scripts.pory"
+# 30 "data//maps/SilversunCity_Theater/scripts.pory"
 SilversunCity_Theater_Leader_Movement_0:
-# 26 "data//maps/SilversunCity_Theater/scripts.pory"
+# 30 "data//maps/SilversunCity_Theater/scripts.pory"
 	face_down
 	step_end
 
-# 41 "data//maps/SilversunCity_Theater/scripts.pory"
+# 45 "data//maps/SilversunCity_Theater/scripts.pory"
 SilversunCity_Theater_Leader_Movement_1:
-# 41 "data//maps/SilversunCity_Theater/scripts.pory"
+# 45 "data//maps/SilversunCity_Theater/scripts.pory"
 	face_left
 	step_end
 
-# 46 "data//maps/SilversunCity_Theater/scripts.pory"
+# 50 "data//maps/SilversunCity_Theater/scripts.pory"
 SilversunCity_Theater_Leader_Movement_2:
-# 46 "data//maps/SilversunCity_Theater/scripts.pory"
+# 50 "data//maps/SilversunCity_Theater/scripts.pory"
 	face_right
 	step_end
 
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
 SilversunCity_Theater_Leader_Movement_3:
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
 	walk_right
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
 	walk_right
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
 	walk_right
-# 62 "data//maps/SilversunCity_Theater/scripts.pory"
+# 66 "data//maps/SilversunCity_Theater/scripts.pory"
 	face_down
 	step_end
 
-# 116 "data//maps/SilversunCity_Theater/scripts.pory"
+# 120 "data//maps/SilversunCity_Theater/scripts.pory"
 SilversunCity_Theater_EventScript_SomberBlocker_Movement_0:
-# 116 "data//maps/SilversunCity_Theater/scripts.pory"
+# 120 "data//maps/SilversunCity_Theater/scripts.pory"
 	walk_up
 	step_end
 
@@ -391,22 +395,22 @@ SilversunCity_Theater_Leader_Text_0:
 	.string "to be too fond of you.$"
 
 SilversunCity_Theater_Leader_Text_1:
-# 23 "data//maps/SilversunCity_Theater/scripts.pory"
+# 27 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: Hmm, so it's you. Not\n"
 	.string "spectacular, but you'll do.$"
 
 SilversunCity_Theater_Leader_Text_2:
-# 36 "data//maps/SilversunCity_Theater/scripts.pory"
+# 40 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Welcome to the Gloria Show! Tonight,\n"
 	.string "we're doing a live performance that will\l"
 	.string "sweep you off your feet!$"
 
 SilversunCity_Theater_Leader_Text_3:
-# 39 "data//maps/SilversunCity_Theater/scripts.pory"
+# 43 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "AUDIENCE: Woohoo! Go Gloria!$"
 
 SilversunCity_Theater_Leader_Text_4:
-# 42 "data//maps/SilversunCity_Theater/scripts.pory"
+# 46 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: You're a trainer, correct? Then\n"
 	.string "you must be after my Gym Badge. If you\l"
 	.string "want it, you'll have to earn it, right\l"
@@ -419,16 +423,16 @@ SilversunCity_Theater_Leader_Text_4:
 	.string "performance!$"
 
 SilversunCity_Theater_Leader_Text_5:
-# 53 "data//maps/SilversunCity_Theater/scripts.pory"
+# 57 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: Now, {PLAYER}, enthrall me\n"
 	.string "with your danse macabre!$"
 
 SilversunCity_Theater_Leader_Text_6:
-# 57 "data//maps/SilversunCity_Theater/scripts.pory"
+# 61 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "What a performace!$"
 
 SilversunCity_Theater_Leader_Text_7:
-# 68 "data//maps/SilversunCity_Theater/scripts.pory"
+# 72 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: A cheer from the audience,\n"
 	.string "please!\p"
 	.string "AUDIENCE: Boo! How dare you beat\n"
@@ -436,7 +440,7 @@ SilversunCity_Theater_Leader_Text_7:
 	.string "{PLAYER} ducked to avoid a tomato!$"
 
 SilversunCity_Theater_Leader_Text_8:
-# 73 "data//maps/SilversunCity_Theater/scripts.pory"
+# 77 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: Ah...don't mind, {PLAYER}.\n"
 	.string "Show business can be tough. But what a\l"
 	.string "battle! Such elegance! Such style and\l"
@@ -446,23 +450,23 @@ SilversunCity_Theater_Leader_Text_8:
 	.string "I must reward you with this.$"
 
 SilversunCity_Theater_Leader_Text_9:
-# 78 "data//maps/SilversunCity_Theater/scripts.pory"
+# 82 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "{PLAYER} received the Drama Badge\n"
 	.string "from Gloria.$"
 
 SilversunCity_Theater_Leader_Text_10:
-# 83 "data//maps/SilversunCity_Theater/scripts.pory"
+# 87 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "The Drama Badge...$"
 
 SilversunCity_Theater_Leader_Text_11:
-# 88 "data//maps/SilversunCity_Theater/scripts.pory"
+# 92 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GLORIA: It was a pleasure sharing the\n"
 	.string "stage with you. May you weave and bob\l"
 	.string "with elegance in the dance of life,\l"
 	.string "{PLAYER}!$"
 
 SilversunCity_Theater_EventScript_SomberBlocker_Text_0:
-# 112 "data//maps/SilversunCity_Theater/scripts.pory"
+# 116 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "GABRIELLE: Hey, nobody's allowed back\n"
 	.string "here. Scram!\p"
 	.string "...oh, it's you. I can guess what you're\n"
@@ -477,152 +481,152 @@ SilversunCity_Theater_EventScript_SomberBlocker_Text_0:
 	.string "right back out!$"
 
 SilversunCity_Theater_NPC1_Text_0:
-# 134 "data//maps/SilversunCity_Theater/scripts.pory"
+# 138 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Gloria is graceful even in defeat. Now\n"
 	.string "that's something everyone can learn\l"
 	.string "from.$"
 
 SilversunCity_Theater_NPC1_Text_1:
-# 136 "data//maps/SilversunCity_Theater/scripts.pory"
+# 140 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Gloria is the face of Silversun City! A\n"
 	.string "Gym Leader AND a famous actress? She's\l"
 	.string "really a role model for women.$"
 
 SilversunCity_Theater_NPC2_Text_0:
-# 143 "data//maps/SilversunCity_Theater/scripts.pory"
+# 147 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Incredible! Her Servine and Absol! Such\n"
 	.string "a shame they lost, and to such\l"
 	.string "a...nondescript opponent.$"
 
 SilversunCity_Theater_NPC2_Text_1:
-# 145 "data//maps/SilversunCity_Theater/scripts.pory"
+# 149 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "They say Gloria caught her Seviper and\n"
 	.string "Absol while shooting on set in the\l"
 	.string "HOENN region.$"
 
 SilversunCity_Theater_NPC3_Text_0:
-# 152 "data//maps/SilversunCity_Theater/scripts.pory"
+# 156 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "What a show!$"
 
 SilversunCity_Theater_NPC3_Text_1:
-# 154 "data//maps/SilversunCity_Theater/scripts.pory"
+# 158 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "I wish Pokémon were allowed in. I\n"
 	.string "would've brought my Sprigatito along to\l"
 	.string "watch...hey! How'd they let your Pokémon\l"
 	.string "in? That's so unfair!$"
 
 SilversunCity_Theater_NPC4_Text_0:
-# 161 "data//maps/SilversunCity_Theater/scripts.pory"
+# 165 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Did you see Gloria's Servine! Too bad\n"
 	.string "that other person defeated it. A Greek\l"
 	.string "tragedy!\n"
 	.string "...oh, it was you.$"
 
 SilversunCity_Theater_NPC4_Text_1:
-# 163 "data//maps/SilversunCity_Theater/scripts.pory"
+# 167 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "I'm a huuuge Gloria fan! I've been\n"
 	.string "waiting for this show for months!$"
 
 SilversunCity_Theater_NPC5_Text_0:
-# 172 "data//maps/SilversunCity_Theater/scripts.pory"
+# 176 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "To be honest, it's not even my fault.\n"
 	.string "The theater should arrange better\l"
 	.string "seating, especially if they're charging\l"
 	.string "the same price for all tickets!$"
 
 SilversunCity_Theater_NPC5_Text_1:
-# 174 "data//maps/SilversunCity_Theater/scripts.pory"
+# 178 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "I'm glad I brought lenses because the\n"
 	.string "performance was great! Do you want a\l"
 	.string "pair? I brought an extra.$"
 
 SilversunCity_Theater_NPC5_Text_2:
-# 175 "data//maps/SilversunCity_Theater/scripts.pory"
+# 179 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "WIDE LENS$"
 
 SilversunCity_Theater_NPC5_Text_3:
-# 175 "data//maps/SilversunCity_Theater/scripts.pory"
+# 179 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "SCOPE LENS$"
 
 SilversunCity_Theater_NPC5_Text_4:
-# 178 "data//maps/SilversunCity_Theater/scripts.pory"
+# 182 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "You can use it outside of the theater\n"
 	.string "too! Any Pokémon holding it will have\l"
 	.string "their accuracy increased.$"
 
 SilversunCity_Theater_NPC5_Text_5:
-# 181 "data//maps/SilversunCity_Theater/scripts.pory"
+# 185 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "You can use it outside of the theater\n"
 	.string "too! Any Pokémon holding it will land\l"
 	.string "more critical hits.$"
 
 SilversunCity_Theater_NPC5_Text_6:
-# 188 "data//maps/SilversunCity_Theater/scripts.pory"
+# 192 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Ahh, now let's settle in and watch\n"
 	.string "Gloria's performance.$"
 
 SilversunCity_Theater_NPC5_Text_7:
-# 190 "data//maps/SilversunCity_Theater/scripts.pory"
+# 194 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "It's so hard to see what's going on from\n"
 	.string "the back without a pair of lenses. Are\l"
 	.string "you going to watch the show from here\l"
 	.string "too?$"
 
 SilversunCity_Theater_NPC5_Text_8:
-# 192 "data//maps/SilversunCity_Theater/scripts.pory"
+# 196 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Why don't you wear a pair of lenses?\n"
 	.string "I've got extra.$"
 
 SilversunCity_Theater_NPC5_Text_9:
-# 204 "data//maps/SilversunCity_Theater/scripts.pory"
+# 208 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Got better seats? Good for you! I wish\n"
 	.string "I'd booked mine faster.$"
 
 SilversunCity_Theater_NPC6_Text_0:
-# 215 "data//maps/SilversunCity_Theater/scripts.pory"
+# 219 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Right now I'm only an extra, but I'm\n"
 	.string "about to land my first starring role any\l"
 	.string "day now!$"
 
 SilversunCity_Theater_NPC6_Text_1:
-# 218 "data//maps/SilversunCity_Theater/scripts.pory"
+# 222 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Who are you? Only cast and crew are\n"
 	.string "allowed backstage.\p"
 	.string "Are you acting tonight?$"
 
 SilversunCity_Theater_NPC6_Text_2:
-# 220 "data//maps/SilversunCity_Theater/scripts.pory"
+# 224 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Ooh! Are you going to go on-stage next\n"
 	.string "to Gloria?$"
 
 SilversunCity_Theater_NPC6_Text_3:
-# 222 "data//maps/SilversunCity_Theater/scripts.pory"
+# 226 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Oh wow! You're a star! Can I have your\n"
 	.string "autograph?$"
 
 SilversunCity_Theater_NPC6_Text_4:
-# 224 "data//maps/SilversunCity_Theater/scripts.pory"
+# 228 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "...Thank you! Please take this. A little\n"
 	.string "something to remember me by!$"
 
 SilversunCity_Theater_NPC6_Text_5:
-# 230 "data//maps/SilversunCity_Theater/scripts.pory"
+# 234 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "So you're an extra too? Sigh...when will\n"
 	.string "we get our big break?$"
 
 SilversunCity_Theater_NPC6_Text_6:
-# 233 "data//maps/SilversunCity_Theater/scripts.pory"
+# 237 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Oh, so you're part of the crew. I'm an\n"
 	.string "extra, so we're both playing support\l"
 	.string "roles.$"
 
 SilversunCity_Theater_NPC7_Text_0:
-# 242 "data//maps/SilversunCity_Theater/scripts.pory"
+# 246 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "You must have nerves of steel, doing all\n"
 	.string "that in front of a crowd that size!$"
 
 SilversunCity_Theater_NPC7_Text_1:
-# 244 "data//maps/SilversunCity_Theater/scripts.pory"
+# 248 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "...breathe...breathe...I'm calming my\n"
 	.string "nerves. Even after years of training, I\l"
 	.string "get nervous before going on-stage.$"

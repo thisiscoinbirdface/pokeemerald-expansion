@@ -139,7 +139,10 @@ script GalecrestCityGym_Leader {
     if (flag(FLAG_BADGE03_GET)){
         msgbox(format("You win."))
     } else {
-        call(Common_EventScript_SaveGame)
+        special(SaveGame)
+        waitstate
+        release
+        
         //Intro
         msgbox(GalecrestCityGym_Text_LeaderIntro)
         //Battle

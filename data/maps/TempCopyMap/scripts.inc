@@ -699,9 +699,9 @@ Common_EventScript_NurseJoyOnRoute::
 # 425 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_NurseJoyOnRoute_2
-# 450 "data//maps/TempCopyMap/scripts.pory"
+# 454 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_NurseJoyOnRoute_Text_4
-# 451 "data//maps/TempCopyMap/scripts.pory"
+# 455 "data//maps/TempCopyMap/scripts.pory"
 	release
 Common_EventScript_NurseJoyOnRoute_1:
 	return
@@ -712,9 +712,9 @@ Common_EventScript_NurseJoyOnRoute_2:
 # 429 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_NurseJoyOnRoute_5
-# 444 "data//maps/TempCopyMap/scripts.pory"
+# 448 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_NurseJoyOnRoute_Text_3
-# 445 "data//maps/TempCopyMap/scripts.pory"
+# 449 "data//maps/TempCopyMap/scripts.pory"
 	release
 	goto Common_EventScript_NurseJoyOnRoute_1
 
@@ -731,428 +731,436 @@ Common_EventScript_NurseJoyOnRoute_5:
 	removeitem ITEM_HEAL_PASS
 # 435 "data//maps/TempCopyMap/scripts.pory"
 	removeitem ITEM_HEAL_PASS
+# 436 "data//maps/TempCopyMap/scripts.pory"
+	removeitem ITEM_HEAL_PASS
 # 437 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_NurseJoyOnRoute_Text_1
+	removeitem ITEM_HEAL_PASS
 # 438 "data//maps/TempCopyMap/scripts.pory"
-	release
+	removeitem ITEM_HEAL_PASS
 # 439 "data//maps/TempCopyMap/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 440 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_NurseJoyOnRoute_Text_2
+	removeitem ITEM_HEAL_PASS
 # 441 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_1
+# 442 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 443 "data//maps/TempCopyMap/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 444 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_2
+# 445 "data//maps/TempCopyMap/scripts.pory"
 	release
 	goto Common_EventScript_NurseJoyOnRoute_1
 
 
 Common_EventScript_ChanseyOnRoute::
-# 457 "data//maps/TempCopyMap/scripts.pory"
-	lockall
-# 458 "data//maps/TempCopyMap/scripts.pory"
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-# 459 "data//maps/TempCopyMap/scripts.pory"
-	faceplayer
-# 460 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_ChanseyOnRoute_Text_0
 # 461 "data//maps/TempCopyMap/scripts.pory"
-	release
+	lockall
 # 462 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+# 463 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 464 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_ChanseyOnRoute_Text_0
+# 465 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 466 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 
 Route5_Greta_AskToShow::
-# 490 "data//maps/TempCopyMap/scripts.pory"
+# 494 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_AskToShow_Text_0, MSGBOX_YESNO
-# 491 "data//maps/TempCopyMap/scripts.pory"
+# 495 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route5_Greta_AskToShow_2
 Route5_Greta_AskToShow_1:
-# 493 "data//maps/TempCopyMap/scripts.pory"
+# 497 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_AskToShow_Text_1
-# 494 "data//maps/TempCopyMap/scripts.pory"
+# 498 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 496 "data//maps/TempCopyMap/scripts.pory"
+# 500 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_GottaGo
 	return
 
 Route5_Greta_AskToShow_2:
-# 491 "data//maps/TempCopyMap/scripts.pory"
+# 495 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	goto Route5_Greta_AskToShow_1
 
 
 Route5_Greta_ShowItemsForSale::
-# 500 "data//maps/TempCopyMap/scripts.pory"
+# 504 "data//maps/TempCopyMap/scripts.pory"
 	showmoneybox 18, 0
-# 501 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_ShowItemsForSale_Text_0
-# 503 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route5_Greta_ShowItemsForSale_Text_1, Route5_Greta_ShowItemsForSale_Text_2, Route5_Greta_ShowItemsForSale_Text_3
 # 505 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_ShowItemsForSale_Text_0
+# 507 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route5_Greta_ShowItemsForSale_Text_1, Route5_Greta_ShowItemsForSale_Text_2, Route5_Greta_ShowItemsForSale_Text_3
+# 509 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route5_Greta_ShowItemsForSale_2
 Route5_Greta_ShowItemsForSale_1:
-# 509 "data//maps/TempCopyMap/scripts.pory"
+# 513 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route5_Greta_ShowItemsForSale_5
 Route5_Greta_ShowItemsForSale_4:
-# 513 "data//maps/TempCopyMap/scripts.pory"
+# 517 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Route5_Greta_ShowItemsForSale_8
 Route5_Greta_ShowItemsForSale_7:
-# 518 "data//maps/TempCopyMap/scripts.pory"
+# 522 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 519 "data//maps/TempCopyMap/scripts.pory"
+# 523 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_AskToShow
 	return
 
 Route5_Greta_ShowItemsForSale_2:
-# 506 "data//maps/TempCopyMap/scripts.pory"
+# 510 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 507 "data//maps/TempCopyMap/scripts.pory"
+# 511 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_StrangeEgg
 	goto Route5_Greta_ShowItemsForSale_1
 
 Route5_Greta_ShowItemsForSale_5:
-# 510 "data//maps/TempCopyMap/scripts.pory"
+# 514 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 511 "data//maps/TempCopyMap/scripts.pory"
+# 515 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_MysteriousRock
 	goto Route5_Greta_ShowItemsForSale_4
 
 Route5_Greta_ShowItemsForSale_8:
-# 514 "data//maps/TempCopyMap/scripts.pory"
+# 518 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 515 "data//maps/TempCopyMap/scripts.pory"
+# 519 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_UglyFish
 	goto Route5_Greta_ShowItemsForSale_7
 
 
 Route5_Greta_StrangeEgg::
-# 524 "data//maps/TempCopyMap/scripts.pory"
+# 528 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 10000
-# 525 "data//maps/TempCopyMap/scripts.pory"
+# 529 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route5_Greta_StrangeEgg_1
-# 530 "data//maps/TempCopyMap/scripts.pory"
+# 534 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_1, MSGBOX_YESNO
-# 531 "data//maps/TempCopyMap/scripts.pory"
+# 535 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route5_Greta_StrangeEgg_4
-# 539 "data//maps/TempCopyMap/scripts.pory"
+# 543 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_StrangeEgg_1:
-# 526 "data//maps/TempCopyMap/scripts.pory"
+# 530 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 527 "data//maps/TempCopyMap/scripts.pory"
+# 531 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 528 "data//maps/TempCopyMap/scripts.pory"
+# 532 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_StrangeEgg_4:
-# 532 "data//maps/TempCopyMap/scripts.pory"
-	removemoney 10000
-# 533 "data//maps/TempCopyMap/scripts.pory"
-	giveegg SPECIES_HONEDGE
-# 534 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_StrangeEgg_Text_2, MSGBOX_SIGN
-# 535 "data//maps/TempCopyMap/scripts.pory"
-	release
 # 536 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_StrangeEgg_Text_3
+	removemoney 10000
 # 537 "data//maps/TempCopyMap/scripts.pory"
+	giveegg SPECIES_HONEDGE
+# 538 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_StrangeEgg_Text_2, MSGBOX_SIGN
+# 539 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 540 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_StrangeEgg_Text_3
+# 541 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_GottaGo
 	return
 
 
 Route5_Greta_UglyFish::
-# 545 "data//maps/TempCopyMap/scripts.pory"
+# 549 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 100
-# 546 "data//maps/TempCopyMap/scripts.pory"
+# 550 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route5_Greta_UglyFish_1
-# 551 "data//maps/TempCopyMap/scripts.pory"
+# 555 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_UglyFish_Text_0, MSGBOX_YESNO
-# 552 "data//maps/TempCopyMap/scripts.pory"
+# 556 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route5_Greta_UglyFish_4
-# 560 "data//maps/TempCopyMap/scripts.pory"
+# 564 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_UglyFish_1:
-# 547 "data//maps/TempCopyMap/scripts.pory"
+# 551 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 548 "data//maps/TempCopyMap/scripts.pory"
+# 552 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 549 "data//maps/TempCopyMap/scripts.pory"
+# 553 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_UglyFish_4:
-# 553 "data//maps/TempCopyMap/scripts.pory"
-	removemoney 100
-# 554 "data//maps/TempCopyMap/scripts.pory"
-	givemon SPECIES_FEEBAS, 5
-# 555 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_UglyFish_Text_1, MSGBOX_SIGN
-# 556 "data//maps/TempCopyMap/scripts.pory"
-	release
 # 557 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_StrangeEgg_Text_3
+	removemoney 100
 # 558 "data//maps/TempCopyMap/scripts.pory"
+	givemon SPECIES_FEEBAS, 5
+# 559 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_UglyFish_Text_1, MSGBOX_SIGN
+# 560 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 561 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_StrangeEgg_Text_3
+# 562 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_GottaGo
 	return
 
 
 Route5_Greta_MysteriousRock::
-# 566 "data//maps/TempCopyMap/scripts.pory"
+# 570 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 5000
-# 567 "data//maps/TempCopyMap/scripts.pory"
+# 571 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route5_Greta_MysteriousRock_1
-# 572 "data//maps/TempCopyMap/scripts.pory"
+# 576 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_MysteriousRock_Text_0, MSGBOX_YESNO
-# 573 "data//maps/TempCopyMap/scripts.pory"
+# 577 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route5_Greta_MysteriousRock_4
-# 579 "data//maps/TempCopyMap/scripts.pory"
+# 583 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_MysteriousRock_1:
-# 568 "data//maps/TempCopyMap/scripts.pory"
+# 572 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 569 "data//maps/TempCopyMap/scripts.pory"
+# 573 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 570 "data//maps/TempCopyMap/scripts.pory"
+# 574 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 Route5_Greta_MysteriousRock_4:
-# 574 "data//maps/TempCopyMap/scripts.pory"
+# 578 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5000
-# 575 "data//maps/TempCopyMap/scripts.pory"
+# 579 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_EVERSTONE
-# 576 "data//maps/TempCopyMap/scripts.pory"
+# 580 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_3
-# 577 "data//maps/TempCopyMap/scripts.pory"
+# 581 "data//maps/TempCopyMap/scripts.pory"
 	goto Route5_Greta_GottaGo
 	return
 
 
 PellucaCity_Greta_AskToShow::
-# 604 "data//maps/TempCopyMap/scripts.pory"
+# 608 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_AskToShow_Text_0, MSGBOX_YESNO
-# 605 "data//maps/TempCopyMap/scripts.pory"
+# 609 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_Greta_AskToShow_2
 PellucaCity_Greta_AskToShow_1:
-# 607 "data//maps/TempCopyMap/scripts.pory"
-	hidemoneybox
-# 608 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_AskToShow_Text_1
-# 609 "data//maps/TempCopyMap/scripts.pory"
-	release
 # 611 "data//maps/TempCopyMap/scripts.pory"
+	hidemoneybox
+# 612 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_AskToShow_Text_1
+# 613 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 615 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_GottaGo
 	return
 
 PellucaCity_Greta_AskToShow_2:
-# 605 "data//maps/TempCopyMap/scripts.pory"
+# 609 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	goto PellucaCity_Greta_AskToShow_1
 
 
 PellucaCity_Greta_ShowItemsForSale::
-# 615 "data//maps/TempCopyMap/scripts.pory"
+# 619 "data//maps/TempCopyMap/scripts.pory"
 	showmoneybox 18, 0
-# 616 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_ShowItemsForSale_Text_0
-# 618 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route5_Greta_ShowItemsForSale_Text_1, Route5_Greta_ShowItemsForSale_Text_2, Route5_Greta_ShowItemsForSale_Text_3
 # 620 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_ShowItemsForSale_Text_0
+# 622 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route5_Greta_ShowItemsForSale_Text_1, Route5_Greta_ShowItemsForSale_Text_2, Route5_Greta_ShowItemsForSale_Text_3
+# 624 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_ShowItemsForSale_2
 PellucaCity_Greta_ShowItemsForSale_1:
-# 624 "data//maps/TempCopyMap/scripts.pory"
+# 628 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_Greta_ShowItemsForSale_5
 PellucaCity_Greta_ShowItemsForSale_4:
-# 628 "data//maps/TempCopyMap/scripts.pory"
+# 632 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq PellucaCity_Greta_ShowItemsForSale_8
 PellucaCity_Greta_ShowItemsForSale_7:
-# 633 "data//maps/TempCopyMap/scripts.pory"
+# 637 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_AskToShow
 	return
 
 PellucaCity_Greta_ShowItemsForSale_2:
-# 621 "data//maps/TempCopyMap/scripts.pory"
+# 625 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 622 "data//maps/TempCopyMap/scripts.pory"
+# 626 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_StrangeEgg
 	goto PellucaCity_Greta_ShowItemsForSale_1
 
 PellucaCity_Greta_ShowItemsForSale_5:
-# 625 "data//maps/TempCopyMap/scripts.pory"
+# 629 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 626 "data//maps/TempCopyMap/scripts.pory"
+# 630 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_MysteriousRock
 	goto PellucaCity_Greta_ShowItemsForSale_4
 
 PellucaCity_Greta_ShowItemsForSale_8:
-# 629 "data//maps/TempCopyMap/scripts.pory"
+# 633 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
-# 630 "data//maps/TempCopyMap/scripts.pory"
+# 634 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_UglyFish
 	goto PellucaCity_Greta_ShowItemsForSale_7
 
 
 PellucaCity_Greta_StrangeEgg::
-# 638 "data//maps/TempCopyMap/scripts.pory"
+# 642 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 10000
-# 639 "data//maps/TempCopyMap/scripts.pory"
+# 643 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_StrangeEgg_1
-# 644 "data//maps/TempCopyMap/scripts.pory"
+# 648 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_1, MSGBOX_YESNO
-# 645 "data//maps/TempCopyMap/scripts.pory"
+# 649 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_Greta_StrangeEgg_4
-# 653 "data//maps/TempCopyMap/scripts.pory"
+# 657 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_StrangeEgg_1:
-# 640 "data//maps/TempCopyMap/scripts.pory"
+# 644 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 641 "data//maps/TempCopyMap/scripts.pory"
+# 645 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 642 "data//maps/TempCopyMap/scripts.pory"
+# 646 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_StrangeEgg_4:
-# 646 "data//maps/TempCopyMap/scripts.pory"
-	removemoney 10000
-# 647 "data//maps/TempCopyMap/scripts.pory"
-	giveegg SPECIES_HONEDGE
-# 648 "data//maps/TempCopyMap/scripts.pory"
-	msgbox PellucaCity_Greta_StrangeEgg_Text_0, MSGBOX_SIGN
-# 649 "data//maps/TempCopyMap/scripts.pory"
-	release
 # 650 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_StrangeEgg_Text_3
+	removemoney 10000
 # 651 "data//maps/TempCopyMap/scripts.pory"
+	giveegg SPECIES_HONEDGE
+# 652 "data//maps/TempCopyMap/scripts.pory"
+	msgbox PellucaCity_Greta_StrangeEgg_Text_0, MSGBOX_SIGN
+# 653 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 654 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_StrangeEgg_Text_3
+# 655 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_GottaGo
 	return
 
 
 PellucaCity_Greta_UglyFish::
-# 659 "data//maps/TempCopyMap/scripts.pory"
+# 663 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 100
-# 660 "data//maps/TempCopyMap/scripts.pory"
+# 664 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_UglyFish_1
-# 665 "data//maps/TempCopyMap/scripts.pory"
+# 669 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_UglyFish_Text_0, MSGBOX_YESNO
-# 666 "data//maps/TempCopyMap/scripts.pory"
+# 670 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_Greta_UglyFish_4
-# 674 "data//maps/TempCopyMap/scripts.pory"
+# 678 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_UglyFish_1:
-# 661 "data//maps/TempCopyMap/scripts.pory"
+# 665 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 662 "data//maps/TempCopyMap/scripts.pory"
+# 666 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 663 "data//maps/TempCopyMap/scripts.pory"
+# 667 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_UglyFish_4:
-# 667 "data//maps/TempCopyMap/scripts.pory"
-	removemoney 100
-# 668 "data//maps/TempCopyMap/scripts.pory"
-	givemon SPECIES_FEEBAS, 5
-# 669 "data//maps/TempCopyMap/scripts.pory"
-	msgbox PellucaCity_Greta_UglyFish_Text_0, MSGBOX_SIGN
-# 670 "data//maps/TempCopyMap/scripts.pory"
-	release
 # 671 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Route5_Greta_StrangeEgg_Text_3
+	removemoney 100
 # 672 "data//maps/TempCopyMap/scripts.pory"
+	givemon SPECIES_FEEBAS, 5
+# 673 "data//maps/TempCopyMap/scripts.pory"
+	msgbox PellucaCity_Greta_UglyFish_Text_0, MSGBOX_SIGN
+# 674 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 675 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Route5_Greta_StrangeEgg_Text_3
+# 676 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_GottaGo
 	return
 
 
 PellucaCity_Greta_MysteriousRock::
-# 680 "data//maps/TempCopyMap/scripts.pory"
+# 684 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 100
-# 681 "data//maps/TempCopyMap/scripts.pory"
+# 685 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_MysteriousRock_1
-# 686 "data//maps/TempCopyMap/scripts.pory"
+# 690 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_MysteriousRock_Text_0, MSGBOX_YESNO
-# 687 "data//maps/TempCopyMap/scripts.pory"
+# 691 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_Greta_MysteriousRock_4
-# 693 "data//maps/TempCopyMap/scripts.pory"
+# 697 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_MysteriousRock_1:
-# 682 "data//maps/TempCopyMap/scripts.pory"
+# 686 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_0
-# 683 "data//maps/TempCopyMap/scripts.pory"
+# 687 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 684 "data//maps/TempCopyMap/scripts.pory"
+# 688 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 PellucaCity_Greta_MysteriousRock_4:
-# 688 "data//maps/TempCopyMap/scripts.pory"
+# 692 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 100
-# 689 "data//maps/TempCopyMap/scripts.pory"
+# 693 "data//maps/TempCopyMap/scripts.pory"
 	giveitem ITEM_EVERSTONE
-# 690 "data//maps/TempCopyMap/scripts.pory"
+# 694 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Route5_Greta_StrangeEgg_Text_3
-# 691 "data//maps/TempCopyMap/scripts.pory"
+# 695 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_GottaGo
 	return
 
 
 Common_EventScript_SettingsGuy::
-# 715 "data//maps/TempCopyMap/scripts.pory"
-	lockall
-# 716 "data//maps/TempCopyMap/scripts.pory"
-	faceplayer
-# 718 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_SettingsGuy_Text_0
 # 719 "data//maps/TempCopyMap/scripts.pory"
+	lockall
+# 720 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 722 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_SettingsGuy_Text_0
+# 723 "data//maps/TempCopyMap/scripts.pory"
 	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_SettingsGuy_Text_1, Common_EventScript_SettingsGuy_Text_2
-# 721 "data//maps/TempCopyMap/scripts.pory"
+# 725 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_SettingsGuy_2
-# 725 "data//maps/TempCopyMap/scripts.pory"
+# 729 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_SYS_EXP_ALL, 2
-# 726 "data//maps/TempCopyMap/scripts.pory"
+# 730 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_SettingsGuy_Text_4
 Common_EventScript_SettingsGuy_1:
-# 729 "data//maps/TempCopyMap/scripts.pory"
+# 733 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
 Common_EventScript_SettingsGuy_2:
-# 722 "data//maps/TempCopyMap/scripts.pory"
+# 726 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_SYS_EXP_ALL, 8
-# 723 "data//maps/TempCopyMap/scripts.pory"
+# 727 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_SettingsGuy_Text_3
 	goto Common_EventScript_SettingsGuy_1
 
@@ -1317,95 +1325,95 @@ Common_EventScript_NurseJoyOnRoute_Text_0:
 	.string "come back later if you wish.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_1:
-# 437 "data//maps/TempCopyMap/scripts.pory"
+# 441 "data//maps/TempCopyMap/scripts.pory"
 	.string "Let me heal your Pokemon.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_2:
-# 440 "data//maps/TempCopyMap/scripts.pory"
+# 444 "data//maps/TempCopyMap/scripts.pory"
 	.string "Stay safe out there!$"
 
 Common_EventScript_NurseJoyOnRoute_Text_3:
-# 444 "data//maps/TempCopyMap/scripts.pory"
+# 448 "data//maps/TempCopyMap/scripts.pory"
 	.string "Come back any time!$"
 
 Common_EventScript_NurseJoyOnRoute_Text_4:
-# 450 "data//maps/TempCopyMap/scripts.pory"
+# 454 "data//maps/TempCopyMap/scripts.pory"
 	.string "Sorry, you don't have a HEAL PASS.\n"
 	.string "Please visit a Pokémon CENTER to\l"
 	.string "receive a HEAL PASS.$"
 
 Common_EventScript_ChanseyOnRoute_Text_0:
-# 460 "data//maps/TempCopyMap/scripts.pory"
+# 464 "data//maps/TempCopyMap/scripts.pory"
 	.string "CHANSEY is happy as always!$"
 
 Route5_Greta_AskToShow_Text_0:
-# 490 "data//maps/TempCopyMap/scripts.pory"
+# 494 "data//maps/TempCopyMap/scripts.pory"
 	.string "Wanna buy anything?$"
 
 Route5_Greta_AskToShow_Text_1:
-# 493 "data//maps/TempCopyMap/scripts.pory"
+# 497 "data//maps/TempCopyMap/scripts.pory"
 	.string "Bummer!$"
 
 Route5_Greta_ShowItemsForSale_Text_0:
-# 501 "data//maps/TempCopyMap/scripts.pory"
+# 505 "data//maps/TempCopyMap/scripts.pory"
 	.string "The egg is 10,000. The rock is 5,000. The\n"
 	.string "fish is only 100!$"
 
 Route5_Greta_ShowItemsForSale_Text_1:
-# 503 "data//maps/TempCopyMap/scripts.pory"
+# 507 "data//maps/TempCopyMap/scripts.pory"
 	.string "Strange Egg$"
 
 Route5_Greta_ShowItemsForSale_Text_2:
-# 503 "data//maps/TempCopyMap/scripts.pory"
+# 507 "data//maps/TempCopyMap/scripts.pory"
 	.string "Mysterious Rock$"
 
 Route5_Greta_ShowItemsForSale_Text_3:
-# 503 "data//maps/TempCopyMap/scripts.pory"
+# 507 "data//maps/TempCopyMap/scripts.pory"
 	.string "Ugly Fish$"
 
 Route5_Greta_StrangeEgg_Text_0:
-# 526 "data//maps/TempCopyMap/scripts.pory"
+# 530 "data//maps/TempCopyMap/scripts.pory"
 	.string "Hey! You can't afford this!$"
 
 Route5_Greta_StrangeEgg_Text_1:
-# 530 "data//maps/TempCopyMap/scripts.pory"
+# 534 "data//maps/TempCopyMap/scripts.pory"
 	.string "A discerning choice! You sure?$"
 
 Route5_Greta_StrangeEgg_Text_2:
-# 534 "data//maps/TempCopyMap/scripts.pory"
+# 538 "data//maps/TempCopyMap/scripts.pory"
 	.string "{PLAYER} received a Strange Egg from\n"
 	.string "Greta.$"
 
 Route5_Greta_StrangeEgg_Text_3:
-# 536 "data//maps/TempCopyMap/scripts.pory"
+# 540 "data//maps/TempCopyMap/scripts.pory"
 	.string "GRETA: Good doing business with you!\n"
 	.string "Now, what about -$"
 
 Route5_Greta_UglyFish_Text_0:
-# 551 "data//maps/TempCopyMap/scripts.pory"
+# 555 "data//maps/TempCopyMap/scripts.pory"
 	.string "A...budget-friendly choice! You sure?$"
 
 Route5_Greta_UglyFish_Text_1:
-# 555 "data//maps/TempCopyMap/scripts.pory"
+# 559 "data//maps/TempCopyMap/scripts.pory"
 	.string "{PLAYER} received a Feebas from\n"
 	.string "Greta.$"
 
 Route5_Greta_MysteriousRock_Text_0:
-# 572 "data//maps/TempCopyMap/scripts.pory"
+# 576 "data//maps/TempCopyMap/scripts.pory"
 	.string "A reasonable choice! You sure?$"
 
 PellucaCity_Greta_StrangeEgg_Text_0:
-# 648 "data//maps/TempCopyMap/scripts.pory"
+# 652 "data//maps/TempCopyMap/scripts.pory"
 	.string "{PLAYER} received a Strange Egg from\n"
 	.string "GRETA.$"
 
 PellucaCity_Greta_UglyFish_Text_0:
-# 669 "data//maps/TempCopyMap/scripts.pory"
+# 673 "data//maps/TempCopyMap/scripts.pory"
 	.string "{PLAYER} received a FEEBAS from\n"
 	.string "GRETA.$"
 
 Common_EventScript_SettingsGuy_Text_0:
-# 718 "data//maps/TempCopyMap/scripts.pory"
+# 722 "data//maps/TempCopyMap/scripts.pory"
 	.string "Hello! I can enable or disable Exp All. If\n"
 	.string "enabled, the Exp Share allows all\l"
 	.string "Pokémon to gain experience. If\l"
@@ -1414,23 +1422,23 @@ Common_EventScript_SettingsGuy_Text_0:
 	.string "Would you like to toggle Exp All?$"
 
 Common_EventScript_SettingsGuy_Text_1:
-# 719 "data//maps/TempCopyMap/scripts.pory"
+# 723 "data//maps/TempCopyMap/scripts.pory"
 	.string "EXP ALL ON$"
 
 Common_EventScript_SettingsGuy_Text_2:
-# 719 "data//maps/TempCopyMap/scripts.pory"
+# 723 "data//maps/TempCopyMap/scripts.pory"
 	.string "EXP ALL OFF$"
 
 Common_EventScript_SettingsGuy_Text_3:
-# 723 "data//maps/TempCopyMap/scripts.pory"
+# 727 "data//maps/TempCopyMap/scripts.pory"
 	.string "Exp All is now {COLOR GREEN}ON{COLOR DARK_GRAY}.$"
 
 Common_EventScript_SettingsGuy_Text_4:
-# 726 "data//maps/TempCopyMap/scripts.pory"
+# 730 "data//maps/TempCopyMap/scripts.pory"
 	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}.$"
 
 Common_Text_Greta_Comecome::
-# 485 "data//maps/TempCopyMap/scripts.pory"
+# 489 "data//maps/TempCopyMap/scripts.pory"
 	.string "Come, come. I've got some really great\n"
 	.string "stuff from...well, you can't ask a\l"
 	.string "magician to reveal her secrets, can\l"

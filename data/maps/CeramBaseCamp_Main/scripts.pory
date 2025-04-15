@@ -68,10 +68,12 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     lockall
     applymovement(LOCALID_LEADER, moves(jump_in_place_up))
     waitmovement(0)
+    delay(24)
     msgbox(format("???: Release our shopkeeper at once! How dare you!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
+    delay(24)
     msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up Mt. Ceram!"))
     msgbox(format("ARIANA: The name's Ariana! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
     msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
@@ -83,6 +85,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     applymovement(LOCALID_LEADER, moves(emote_exclamation_mark))
     waitmovement(0)    
+    delay(24)
     msgbox(format("Hey - you! You look like a trainer. I need your help. These people are trying to steal the shopkeeper's supplies. We have to stop them!\pI'll take the boss. You deal with the one on the right for me!"))
     release
 
@@ -91,18 +94,22 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     applymovement(LOCALID_GRUNT4, moves(emote_exclamation_mark))
     waitmovement(0)
+    delay(16)
     msgbox(format("GABRIELLE: It's you?"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
+    delay(16)
     msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
+    delay(16)
     msgbox(format("???: That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
+    delay(16)    
     msgbox(format("GABRIELLE: You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
     release 
 
@@ -164,7 +171,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(face_right))
     waitmovement(0)
     msgbox(format("ARIANA: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
-    msgbox(format("ARIANA: They're connected to Professor Tenebris' disappearance? \pWell I gotta do something - Professor Tenebris is the one who gave me my GROWLITHE."))
+    msgbox(format("ARIANA: They're connected to Professor Tenebris' disappearance? \pARIANA: Well I gotta do something - Professor Tenebris is the one who gave me my Tauros."))
     msgbox(format("ARIANA: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
     msgbox(format("ARIANA: {PLAYER}, was it? Mt. Ceram is filled with dangerous Pokemon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
     release

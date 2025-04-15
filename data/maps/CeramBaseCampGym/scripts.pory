@@ -190,7 +190,10 @@ script CeramBaseCampGym_LeaderBattle {
     if (flag(FLAG_BADGE02_GET)){
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        call(Common_EventScript_SaveGame)    
+        special(SaveGame)
+        waitstate
+        release
+
         msgbox(CeramBaseCampGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
