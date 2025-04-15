@@ -173,7 +173,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     msgbox(format("ARIANA: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
     msgbox(format("ARIANA: They're connected to Professor Tenebris' disappearance? \pARIANA: Well I gotta do something - Professor Tenebris is the one who gave me my Tauros."))
     msgbox(format("ARIANA: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
-    msgbox(format("ARIANA: {PLAYER}, was it? Mt. Ceram is filled with dangerous Pokemon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
+    msgbox(format("ARIANA: {PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -287,7 +287,7 @@ script CeramBaseCamp_Main_NPC1{
 script CeramBaseCamp_Main_NPC2{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokemon's memories."), MSGBOX_NPC)
+        msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokémon's memories."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
         msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. What do they want with one?"), MSGBOX_NPC)
@@ -336,7 +336,7 @@ script CeramBaseCamp_Main_NPC4{
 //TRADE NPC (later)
 script CeramBaseCamp_Main_NPC5{
     if (flag(FLAG_CERAMBASECAMP_NPC_TRADE)){
-        msgbox(format("My sister will be so happy. She's always wanted her own Pokemon."), MSGBOX_NPC)
+        msgbox(format("My sister will be so happy. She's always wanted her own Pokémon."), MSGBOX_NPC)
         end
     }
 
@@ -345,7 +345,7 @@ script CeramBaseCamp_Main_NPC5{
         lockall
         faceplayer
         showmonpic(SPECIES_DEWPIDER, 10, 3)
-        msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokemon! But I couldn't find any on Route 4."))
+        msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokémon! But I couldn't find any on Route 4."))
         hidemonpic
         msgbox(format("If you have one, will you trade it for my Wimpod?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){

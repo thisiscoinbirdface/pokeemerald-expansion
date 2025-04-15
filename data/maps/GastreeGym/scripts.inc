@@ -290,9 +290,9 @@ GastreeGym_Red_Text_6:
 
 GastreeGym_Red_Text_7:
 # 111 "data//maps/GastreeGym/scripts.pory"
-	.string "Inger loves ROCK type Pokemon, so avoid\n"
+	.string "Inger loves ROCK type Pokémon, so avoid\n"
 	.string "using FIRE, FLYING and BUG type\l"
-	.string "Pokemon. Now go get 'em,\l"
+	.string "Pokémon. Now go get 'em,\l"
 	.string "champ-in-the-making!$"
 
 GastreeGym_WeatheredRock_Text_0:

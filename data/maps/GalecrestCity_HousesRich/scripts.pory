@@ -118,7 +118,7 @@ script GalecrestCity_HousesRich_NPC9{
         faceplayer
         msgbox(format("I'm trying to organise my daughter's belongings. Are you a Pokémon trainer?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("So is my daughter. She used these to train her Pokemon. They'll be more useful in your hands."))
+            msgbox(format("So is my daughter. She used these to train her Pokémon. They'll be more useful in your hands."))
             giveitem(ITEM_MACHO_BRACE)
             setflag(FLAG_GALECREST_RICH_HOUSECLEANITEM)
             msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."), MSGBOX_NPC)            

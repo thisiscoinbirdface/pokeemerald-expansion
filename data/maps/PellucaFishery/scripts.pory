@@ -35,7 +35,7 @@ script PellucaFishery_NPC3{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different Pokemon?"))
+        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different Pokémon?"))
     }
     releaseall
     end

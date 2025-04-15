@@ -186,7 +186,7 @@ script GalecrestCityGym_Leader {
 
 
 text GalecrestCityGym_Text_LeaderIntro{
-    format("KOHLA: Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pKOHLA: And this year, that's me! Normally I would use the gym standard NORMAL Pokemon, but since it's you, I'm going to make an exception.\pKOHLA: I'm going to crush you with my REAL team!")
+    format("KOHLA: Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pKOHLA: And this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pKOHLA: I'm going to crush you with my REAL team!")
 }
 
 text GalecrestCityGym_Text_Defeated{

@@ -162,7 +162,7 @@ Route3_Skarmory_Trigger_Movement_0:
 Route3_TrainerBattle_Kim_Text_0:
 # 9 "data//maps/Route3/scripts.pory"
 	.string "Mom gifted my sister and me a cool\n"
-	.string "FLYING-type Pokemon!$"
+	.string "FLYING-type Pokémon!$"
 
 Route3_TrainerBattle_Kim_Text_1:
 # 9 "data//maps/Route3/scripts.pory"
@@ -186,14 +186,14 @@ Route3_TrainerBattle_Ronnie_Text_1:
 Route3_TrainerBattle_Ronnie_Text_2:
 # 19 "data//maps/Route3/scripts.pory"
 	.string "I heard that the Gastree City Gym\n"
-	.string "Leader uses ROCK type Pokemon.$"
+	.string "Leader uses ROCK type Pokémon.$"
 
 Route3_TrainerBattle_Jana_Text_0:
 # 27 "data//maps/Route3/scripts.pory"
 	.string "I'm a Pokémon Breeder! All Breeders\n"
 	.string "specialise in one Pokémon variety, such\l"
-	.string "as dog Pokemon, cat Pokemon, or even\l"
-	.string "bear Pokemon! Can you guess my\l"
+	.string "as dog Pokémon, cat Pokémon, or even\l"
+	.string "bear Pokémon! Can you guess my\l"
 	.string "specialty?$"
 
 Route3_TrainerBattle_Jana_Text_1:
@@ -208,7 +208,7 @@ Route3_TrainerBattle_Jana_Text_2:
 Route3_TrainerBattle_Chara_Text_0:
 # 36 "data//maps/Route3/scripts.pory"
 	.string "Mom gifted my sister and me a cool\n"
-	.string "FLYING-type Pokemon!\p"
+	.string "FLYING-type Pokémon!\p"
 	.string "...\p"
 	.string "You met her and beat her?\p"
 	.string "Well this is a revenge match then!$"

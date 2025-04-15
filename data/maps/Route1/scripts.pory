@@ -7,7 +7,7 @@ script Route1_EventScripts_RandomDude {
 
 script Route1_TrainerBattle_A {
 
-    trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first Pokemon! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
+    trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first Pokémon! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
     msgbox(format("My Rattata and I will become Pokémon Champions one day!"))
     release
     end
@@ -16,7 +16,7 @@ script Route1_TrainerBattle_A {
 
 script Route1_TrainerBattle_B {
 
-    trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokemon. Let me show you my favourite!"), "My FLYING type Pokémon lost!")
+    trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokémon. Let me show you my favourite!"), "My FLYING type Pokémon lost!")
     msgbox(format("A good Pokémon team needs variety, I guess."))
     release
     end

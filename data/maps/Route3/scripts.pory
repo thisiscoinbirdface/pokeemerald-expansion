@@ -6,7 +6,7 @@ mapscripts Route3_MapScripts{}
 
 script Route3_TrainerBattle_Kim {
 
-    trainerbattle_single(TRAINER_ROUTE3_KIM, format("Mom gifted my sister and me a cool FLYING-type Pokemon!"), "My sister will beat you!")
+    trainerbattle_single(TRAINER_ROUTE3_KIM, format("Mom gifted my sister and me a cool FLYING-type Pokémon!"), "My sister will beat you!")
     msgbox(format("My sister is up ahead, near the Gastree City exit."))
     release
     end
@@ -16,7 +16,7 @@ script Route3_TrainerBattle_Kim {
 script Route3_TrainerBattle_Ronnie {
 
     trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokémon Gym there. Let me practice with you!"), "Looks like I need more practice!")
-    msgbox(format("I heard that the Gastree City Gym Leader uses ROCK type Pokemon."))
+    msgbox(format("I heard that the Gastree City Gym Leader uses ROCK type Pokémon."))
     release
     end
 
@@ -24,7 +24,7 @@ script Route3_TrainerBattle_Ronnie {
 
 script Route3_TrainerBattle_Jana {
 
-    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokémon Breeder! All Breeders specialise in one Pokémon variety, such as dog Pokemon, cat Pokemon, or even bear Pokemon! Can you guess my specialty?"), "You guessed it - I love foxes!")
+    trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokémon Breeder! All Breeders specialise in one Pokémon variety, such as dog Pokémon, cat Pokémon, or even bear Pokémon! Can you guess my specialty?"), "You guessed it - I love foxes!")
     msgbox(format("My Pokémon are my most cherised partners!"))
     release
     end
@@ -33,7 +33,7 @@ script Route3_TrainerBattle_Jana {
 
 script Route3_TrainerBattle_Chara {
 
-    trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Mom gifted my sister and me a cool FLYING-type Pokemon!\p...\pYou met her and beat her?\pWell this is a revenge match then!"), "Aw I lost!")
+    trainerbattle_single(TRAINER_ROUTE3_CHARA, format("Mom gifted my sister and me a cool FLYING-type Pokémon!\p...\pYou met her and beat her?\pWell this is a revenge match then!"), "Aw I lost!")
     msgbox(format("We love our Swablu!"))
     release
     end

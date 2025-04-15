@@ -700,7 +700,7 @@ GastreeCity_NPC6_Text_0:
 GastreeCity_NPC7_Text_0:
 # 122 "data//maps/GastreeCity/scripts.pory"
 	.string "I want to have tea too! When I get my\n"
-	.string "first Pokemon, I want it to be\l"
+	.string "first Pokémon, I want it to be\l"
 	.string "Poltchageist.$"
 
 GastreeCity_NPC8_Text_0:

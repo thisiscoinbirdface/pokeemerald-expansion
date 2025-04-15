@@ -119,7 +119,7 @@ script GastreeCity_NPC6{
 
     //Pokémon flavour
 script GastreeCity_NPC7{
-    msgbox(format("I want to have tea too! When I get my first Pokemon, I want it to be Poltchageist."), MSGBOX_NPC)
+    msgbox(format("I want to have tea too! When I get my first Pokémon, I want it to be Poltchageist."), MSGBOX_NPC)
     end
 }
 

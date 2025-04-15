@@ -585,7 +585,7 @@ Route4_TrainerBattle_Raha_Text_1:
 Route4_TrainerBattle_Raha_Text_2:
 # 83 "data//maps/Route4/scripts.pory"
 	.string "Maybe I should ask Father to buy some\n"
-	.string "stronger Pokemon...or maybe I should\l"
+	.string "stronger Pokémon...or maybe I should\l"
 	.string "try and train them myself, like you!$"
 
 Route4_TrainerBattle_Cammy_Text_0:
@@ -685,7 +685,7 @@ Route4_TrainerBattle_Kid3_Text_1:
 
 Route4_TrainerBattle_Kid3_Text_2:
 # 142 "data//maps/Route4/scripts.pory"
-	.string "My Pokemon! Adults are lame!$"
+	.string "My Pokémon! Adults are lame!$"
 
 Route4_TrainerBattle_Kid3_Text_3:
 # 144 "data//maps/Route4/scripts.pory"

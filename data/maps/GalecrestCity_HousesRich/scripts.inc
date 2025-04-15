@@ -315,7 +315,7 @@ GalecrestCity_HousesRich_NPC9_Text_1:
 GalecrestCity_HousesRich_NPC9_Text_2:
 # 121 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "So is my daughter. She used these to\n"
-	.string "train her Pokemon. They'll be more\l"
+	.string "train her Pokémon. They'll be more\l"
 	.string "useful in your hands.$"
 
 GalecrestCity_HousesRich_NPC9_Text_3:

@@ -773,7 +773,7 @@ GalecrestCity_DetectiveAcademy_NPC2_Text_0:
 GalecrestCity_DetectiveAcademy_NPC3_Text_0:
 # 245 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "All new students receive a Charcadet as\n"
-	.string "their first Pokemon. It's the standard\l"
+	.string "their first Pokémon. It's the standard\l"
 	.string "detective companion.$"
 
 GalecrestCity_DetectiveAcademy_NPC4_Text_0:

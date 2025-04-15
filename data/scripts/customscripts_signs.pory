@@ -8,7 +8,7 @@ script WhiteSign_CarabrueTown_Main{
 }
 
 script WhiteSign_CarabrueTown_TenebrisLab{
-    msgbox(format("THE TENEBRIS LABORATORY\nPokemon psychology research hub."), MSGBOX_SIGN)
+    msgbox(format("THE TENEBRIS LABORATORY\nPokémon psychology research hub."), MSGBOX_SIGN)
     end
 }
 

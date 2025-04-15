@@ -716,13 +716,13 @@ PellucaCity_Sealeo_Text_0:
 
 PellucaCity_NPC9_Text_0:
 # 257 "data//maps/PellucaCity/scripts.pory"
-	.string "This is the PELLUCA FISHERY! But it's\n"
-	.string "closed due to the SHARPEDO attacks.$"
+	.string "This is the Pelluca Fishery! But it's\n"
+	.string "closed due to the Sharpedo attacks.$"
 
 PellucaCity_WingullGirl_Text_0:
 # 269 "data//maps/PellucaCity/scripts.pory"
 	.string "Hahaha! I'm throwing stones at the\n"
-	.string "WINGULLS over there. Wanna throw some?$"
+	.string "Wingulls over there. Wanna throw some?$"
 
 PellucaCity_WingullGirl_Text_1:
 # 270 "data//maps/PellucaCity/scripts.pory"
@@ -734,11 +734,11 @@ PellucaCity_WingullGirl_Text_2:
 
 PellucaCity_WingullGirl_Text_3:
 # 276 "data//maps/PellucaCity/scripts.pory"
-	.string "{PLAYER} threw a stone at a WINGULL!$"
+	.string "{PLAYER} threw a stone at a Wingull!$"
 
 PellucaCity_WingullGirl_Text_4:
 # 282 "data//maps/PellucaCity/scripts.pory"
-	.string "The WINGULL gets angry!$"
+	.string "The Wingull gets angry!$"
 
 PellucaCity_WingullGirl_Text_5:
 # 286 "data//maps/PellucaCity/scripts.pory"
@@ -747,10 +747,10 @@ PellucaCity_WingullGirl_Text_5:
 PellucaCity_WingullMother_Text_0:
 # 296 "data//maps/PellucaCity/scripts.pory"
 	.string "My daughter loves throwing stones at\n"
-	.string "WINGULLS. She's just so cute!$"
+	.string "Wingulls. She's just so cute!$"
 
 PellucaCity_WingullCritique_Text_0:
 # 304 "data//maps/PellucaCity/scripts.pory"
 	.string "That little girl is so bad! Throwing\n"
-	.string "stones at Pokemon...that's poor\l"
+	.string "stones at Pokémon...that's poor\l"
 	.string "parenting.$"

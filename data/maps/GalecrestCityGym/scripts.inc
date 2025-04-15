@@ -370,7 +370,7 @@ GalecrestCityGym_Text_LeaderIntro::
 	.string "duties for a year after they graduate.\p"
 	.string "KOHLA: And this year, that's me!\n"
 	.string "Normally I would use the gym standard\l"
-	.string "NORMAL Pokemon, but since it's you, I'm\l"
+	.string "NORMAL Pokémon, but since it's you, I'm\l"
 	.string "going to make an exception.\p"
 	.string "KOHLA: I'm going to crush you with my\n"
 	.string "REAL team!$"

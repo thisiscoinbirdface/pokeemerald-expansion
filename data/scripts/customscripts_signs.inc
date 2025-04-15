@@ -240,7 +240,7 @@ WhiteSign_CarabrueTown_Main_Text_0:
 WhiteSign_CarabrueTown_TenebrisLab_Text_0:
 # 11 "data//scripts/customscripts_signs.pory"
 	.string "THE TENEBRIS LABORATORY\n"
-	.string "Pokemon psychology research hub.$"
+	.string "Pokémon psychology research hub.$"
 
 WhiteSign_Route1_NextToCarabrue_Text_0:
 # 18 "data//scripts/customscripts_signs.pory"

@@ -60,7 +60,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(3, moves(face_left, face_right, face_up, face_down, jump_in_place_up_down))
     waitmovement(3)
 
-    msgbox(format("RUE: You'll need a companion Pokémon to protect you. Pick up any of the Pokeballs lying around the lab. If we had our supplies, I could give you the standard companion Pokemon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around. But I promise - as soon as you bring the supplies back from the Pokemart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("RUE: You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab. If we had our supplies, I could give you the standard companion Pokémon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around. But I promise - as soon as you bring the supplies back from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))

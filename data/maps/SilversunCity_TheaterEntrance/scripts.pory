@@ -104,7 +104,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC4{
 //Cameraman
 script SilversunCity_TheaterEntrance_EventScript_NPC5{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Hey - get in the shot! Not you - your Pokemon! You can keep moving."), MSGBOX_NPC)
+        msgbox(format("Hey - get in the shot! Not you - your Pokémon! You can keep moving."), MSGBOX_NPC)
     } else {
         msgbox(format("Hey - get out of the shot! What if Gloria walks by?"), MSGBOX_NPC)
     }

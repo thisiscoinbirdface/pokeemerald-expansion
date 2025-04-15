@@ -47,7 +47,7 @@ Route1_EventScripts_RandomDude_Text_0:
 
 Route1_TrainerBattle_A_Text_0:
 # 10 "data//maps/Route1/scripts.pory"
-	.string "I just got my first Pokemon! And now,\n"
+	.string "I just got my first Pokémon! And now,\n"
 	.string "I'm about to get my first win!$"
 
 Route1_TrainerBattle_A_Text_1:
@@ -61,7 +61,7 @@ Route1_TrainerBattle_A_Text_2:
 
 Route1_TrainerBattle_B_Text_0:
 # 19 "data//maps/Route1/scripts.pory"
-	.string "I love FLYING-type Pokemon. Let me\n"
+	.string "I love FLYING-type Pokémon. Let me\n"
 	.string "show you my favourite!$"
 
 Route1_TrainerBattle_B_Text_1:

@@ -108,7 +108,7 @@ script GastreeGym_Red{
             faceplayer
             msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town. The previous trainer beat him and Inger just can't stand losing! You'll have to go into the underpass and find him there. Take this with you."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("Inger loves ROCK type Pokemon, so avoid using FIRE, FLYING and BUG type Pokemon. Now go get 'em, champ-in-the-making!"))
+            msgbox(format("Inger loves ROCK type Pokémon, so avoid using FIRE, FLYING and BUG type Pokémon. Now go get 'em, champ-in-the-making!"))
             setflag(FLAG_GASTREEGYM_SPENSER_WATER)
             clearflag(FLAG_HIDE_ROUTE3_UNDERPASS_GYM)
             releaseall

@@ -11,9 +11,9 @@ script GastreeCity_House1_Buneary{
     playmoncry(SPECIES_BUNEARY, CRY_MODE_NORMAL)
 
     if (flag(FLAG_GASTREE_HOUSE1_BUNEARY)){
-        msgbox(format("BUNEARY looks curiously at your Pokemon..."))
+        msgbox(format("BUNEARY looks curiously at your Pokémon..."))
     } else {
-        msgbox(format("BUNEARY looks curiously at your Pokemon...it hands you something!"))
+        msgbox(format("BUNEARY looks curiously at your Pokémon...it hands you something!"))
         giveitem(ITEM_CHARTI_BERRY, 2)
         setflag(FLAG_GASTREE_HOUSE1_BUNEARY)
     }

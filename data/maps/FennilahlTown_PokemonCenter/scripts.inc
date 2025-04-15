@@ -47,4 +47,4 @@ FennilahlTown_PokemonCenter_NPC1_Text_1:
 # 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "We've had an increase in pickpocketing\n"
 	.string "recently. We suspect it's a nearby\l"
-	.string "Pokemon.$"
+	.string "Pokémon.$"

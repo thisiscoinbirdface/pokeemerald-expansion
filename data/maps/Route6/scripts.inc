@@ -652,11 +652,11 @@ Route6_Trainer_C1_Text_0:
 # 79 "data//maps/Route6/scripts.pory"
 	.string "We're from the Pokémon Ranger\n"
 	.string "Institute. We're on assignment to\l"
-	.string "survey new Pokemon. Have you got any?$"
+	.string "survey new Pokémon. Have you got any?$"
 
 Route6_Trainer_C1_Text_1:
 # 79 "data//maps/Route6/scripts.pory"
-	.string "You do have new Pokemon$"
+	.string "You do have new Pokémon!$"
 
 Route6_Trainer_C1_Text_2:
 # 80 "data//maps/Route6/scripts.pory"
@@ -667,7 +667,7 @@ Route6_Trainer_C1_Text_2:
 Route6_Trainer_C2_Text_0:
 # 86 "data//maps/Route6/scripts.pory"
 	.string "We're from the Ranger Institute. We're\n"
-	.string "on assignment to survey new Pokemon.\l"
+	.string "on assignment to survey new Pokémon.\l"
 	.string "Have you got any?$"
 
 Route6_Trainer_C2_Text_1:
@@ -694,11 +694,11 @@ Route6_Trainer_E_Text_0:
 # 100 "data//maps/Route6/scripts.pory"
 	.string "I'm aiming to be the Pokémon Champion,\n"
 	.string "so I've come here to catch rare\l"
-	.string "Pokemon. Let me test them on you!$"
+	.string "Pokémon. Let me test them on you!$"
 
 Route6_Trainer_E_Text_1:
 # 100 "data//maps/Route6/scripts.pory"
-	.string "No - my rare Pokemon!$"
+	.string "No - my rare Pokémon!$"
 
 Route6_Trainer_E_Text_2:
 # 101 "data//maps/Route6/scripts.pory"
@@ -721,8 +721,8 @@ Route6_Trainer_F_Text_2:
 
 Route6_Trainer_G_Text_0:
 # 114 "data//maps/Route6/scripts.pory"
-	.string "Us BREEDERS like to train one type of\n"
-	.string "Pokemon. I specialise in dogs!$"
+	.string "Us Pokémon Breeders like to train one\n"
+	.string "type of Pokémon. I specialise in dogs!$"
 
 Route6_Trainer_G_Text_1:
 # 114 "data//maps/Route6/scripts.pory"
@@ -732,12 +732,12 @@ Route6_Trainer_G_Text_2:
 # 115 "data//maps/Route6/scripts.pory"
 	.string "Dog Pokémon are rare in Cormoria!\n"
 	.string "Someone in Pelluca City traded me my\l"
-	.string "HOUNDOOR.$"
+	.string "Houndoor.$"
 
 Route6_Trainer_H_Text_0:
 # 121 "data//maps/Route6/scripts.pory"
 	.string "This weather is prime for my BUG-type\n"
-	.string "Pokemon! You won't be able to handle it!$"
+	.string "Pokémon! You won't be able to handle it!$"
 
 Route6_Trainer_H_Text_1:
 # 121 "data//maps/Route6/scripts.pory"
@@ -876,16 +876,16 @@ Route6_NPC4_Text_9:
 
 Route6_Gabrielle_Trigger_Text_0:
 # 277 "data//maps/Route6/scripts.pory"
-	.string "GRUNT: C'mon GABRIELLE - you've got\n"
+	.string "GRUNT: C'mon Gabrielle - you've got\n"
 	.string "nowhere to run. Now give us your\l"
-	.string "Pokemon!\p"
+	.string "Pokémon!\p"
 	.string "GABRILLE: No! They're mine! Why should\n"
 	.string "I give you losers anything?\p"
 	.string "GRUNTS: They're property of Team\n"
 	.string "Somber, and now that you're out, it's\l"
 	.string "only fair that you return them.\p"
 	.string "Hehe...we've always been eyeing your\n"
-	.string "ZORUA, you know? And now it's time to\l"
+	.string "Zorua, you know? And now it's time to\l"
 	.string "collect!\p"
 	.string "GABRIELLE: That's not how it works!\p"
 	.string "GRUNT: What are you gonna do? Complain\n"
@@ -899,9 +899,9 @@ Route6_Gabrielle_Trigger_Text_1:
 
 Route6_Gabrielle_Trigger_Text_2:
 # 293 "data//maps/Route6/scripts.pory"
-	.string "GRUNT: Have you no shame GABRIELLE?\n"
-	.string "The trainer who got you kicked out is\l"
-	.string "now helping you?\p"
+	.string "GRUNT: Have you no shame Gabrielle? The\n"
+	.string "trainer who got you kicked out is now\l"
+	.string "helping you?\p"
 	.string "Fine by us! Imagine what the boss'll tell\n"
 	.string "us when we take your Pokémon AND beat\l"
 	.string "the trainer that's stopped our plans\l"

@@ -242,7 +242,7 @@ script GalecrestCity_DetectiveAcademy_NPC2{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC3{
-    msgbox(format("All new students receive a Charcadet as their first Pokemon. It's the standard detective companion."), MSGBOX_NPC)
+    msgbox(format("All new students receive a Charcadet as their first Pokémon. It's the standard detective companion."), MSGBOX_NPC)
     end
 }
 

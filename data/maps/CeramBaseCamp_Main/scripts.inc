@@ -850,7 +850,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_18:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_19:
 # 176 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "ARIANA: {PLAYER}, was it? Mt. Ceram is\n"
-	.string "filled with dangerous Pokemon. The\l"
+	.string "filled with dangerous Pokémon. The\l"
 	.string "rules around here are you can't climb\l"
 	.string "unless you have my gym badge and my\l"
 	.string "blessing. If you can beat me, I'll be\l"
@@ -922,7 +922,7 @@ CeramBaseCamp_Main_NPC2_Text_0:
 # 290 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "It's believed that a dreamstone is a\n"
 	.string "crystallised representation of a\l"
-	.string "Pokemon's memories.$"
+	.string "Pokémon's memories.$"
 
 CeramBaseCamp_Main_NPC2_Text_1:
 # 293 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -967,12 +967,12 @@ CeramBaseCamp_Main_NPC4_Text_1:
 CeramBaseCamp_Main_NPC5_Text_0:
 # 339 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "My sister will be so happy. She's always\n"
-	.string "wanted her own Pokemon.$"
+	.string "wanted her own Pokémon.$"
 
 CeramBaseCamp_Main_NPC5_Text_1:
 # 348 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I want to gift my sister a Dewpider. It's\n"
-	.string "her favourite Pokemon! But I couldn't\l"
+	.string "her favourite Pokémon! But I couldn't\l"
 	.string "find any on Route 4.$"
 
 CeramBaseCamp_Main_NPC5_Text_2:

@@ -76,14 +76,14 @@ script Route6_Trainer_B{
 }
 //Ranger
 script Route6_Trainer_C1{
-    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokémon Ranger Institute. We're on assignment to survey new Pokemon. Have you got any?"), "You do have new Pokemon")
+    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokémon Ranger Institute. We're on assignment to survey new Pokémon. Have you got any?"), "You do have new Pokémon!")
     msgbox(format("The Pokémon Ranger Institute is the headquarters for us Rangers in Cormoria."))
     releaseall
     end
 }
 //Ranger
 script Route6_Trainer_C2{
-    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Ranger Institute. We're on assignment to survey new Pokemon. Have you got any?"), "You do have new Pokemon")
+    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Ranger Institute. We're on assignment to survey new Pokémon. Have you got any?"), "You do have new Pokémon!")
     msgbox(format("The Ranger Institute gives us newbies such hard assignments!"))
     releaseall
     end
@@ -97,7 +97,7 @@ script Route6_Trainer_D{
 }
 //Cooltrainer
 script Route6_Trainer_E{
-    trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the Pokémon Champion, so I've come here to catch rare Pokemon. Let me test them on you!"), "No - my rare Pokemon!")
+    trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the Pokémon Champion, so I've come here to catch rare Pokémon. Let me test them on you!"), "No - my rare Pokémon!")
     msgbox(format("Catching good Pokémon isn't enough. I need to train rigorously too."))
     releaseall
     end
@@ -111,14 +111,14 @@ script Route6_Trainer_F{
 }
 //PKMN breeder Dog 
 script Route6_Trainer_G{
-    trainerbattle_single(TRAINER_ROUTE6_G, format("Us BREEDERS like to train one type of Pokemon. I specialise in dogs!"), "Guess I was more bark than bite!")
-    msgbox(format("Dog Pokémon are rare in Cormoria! Someone in Pelluca City traded me my HOUNDOOR."))
+    trainerbattle_single(TRAINER_ROUTE6_G, format("Us Pokémon Breeders like to train one type of Pokémon. I specialise in dogs!"), "Guess I was more bark than bite!")
+    msgbox(format("Dog Pokémon are rare in Cormoria! Someone in Pelluca City traded me my Houndoor."))
     releaseall
     end
 }
 //Bug catcher
 script Route6_Trainer_H{
-    trainerbattle_single(TRAINER_ROUTE6_H, format("This weather is prime for my BUG-type Pokemon! You won't be able to handle it!"), "The weather is fickle!")
+    trainerbattle_single(TRAINER_ROUTE6_H, format("This weather is prime for my BUG-type Pokémon! You won't be able to handle it!"), "The weather is fickle!")
     msgbox(format("Although bugs thrive in marshes, there aren't many BUG-type Pokémon around here."))
     releaseall
     end
@@ -274,7 +274,7 @@ script Route6_Gabrielle_Trigger{
     //no longer a part of somber, now give us all your pokemon
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
     delay(24)    
-    msgbox(format("GRUNT: C'mon GABRIELLE - you've got nowhere to run. Now give us your Pokemon!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your ZORUA, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
+    msgbox(format("GRUNT: C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zorua, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
     release 
 
     //Notice
@@ -290,7 +290,7 @@ script Route6_Gabrielle_Trigger{
     release
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_down))
-    msgbox(format("GRUNT: Have you no shame GABRIELLE? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your Pokémon AND beat the trainer that's stopped our plans twice!"))
+    msgbox(format("GRUNT: Have you no shame Gabrielle? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your Pokémon AND beat the trainer that's stopped our plans twice!"))
     release
     //walk up
     applymovement(LOCALID_GRUNT1, moves(face_right))
