@@ -197,18 +197,8 @@
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
-#define FLAG_HEAL_PASS_EXPLAIN                                      0x4EF // Unused Flag
 #define FLAG_GASTREEGYM_SPENSER_WATER                               0x4E7 // Unused Flag
 #define FLAG_GASTREEGYM_SPENSER_REWARD                              0x4E8 // Unused Flag
 #define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                         0x4E9 // Unused Flag
@@ -217,7 +207,8 @@
 #define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EC // Unused Flag
 #define FLAG_SILVERSUNGYM_SPENSER_WATER                             0x4ED // Unused Flag
 #define FLAG_SILVERSUNGYM_SPENSER_REWARD                            0x4EE // Unused Flag
-
+#define FLAG_HEAL_PASS_EXPLAIN                                      0x4EF // Unused Flag
+#define FLAG_HEAL_PASS_HAVE                                         0x4E6 // Unused Flag
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50

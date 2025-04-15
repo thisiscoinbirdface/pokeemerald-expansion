@@ -55,12 +55,12 @@ script GastreeGym_EventScript_Victory{
     msgbox(format("The Hard Badge allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
     
     //Bye-bye
-    msgbox(format("Inger: So where are you headed next?\p...\nInger: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pInger:...but I can't say I've heard anything about these dreamstones.\pInger: So next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
+    msgbox(format("INGER: So where are you headed next?\p...\pINGER: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pINGER:...but I can't say I've heard anything about these dreamstones.\pINGER: So next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pINGER: All the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pInger: I'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pINGER: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pINGER: I'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{

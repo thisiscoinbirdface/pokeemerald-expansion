@@ -526,7 +526,6 @@ Route4_NurseJoy_OnRoute_Text_0:
 	.string "Can you believe it? They stationed us\n"
 	.string "on these rocks. I'm a nurse for crying\l"
 	.string "out loud!\p"
-	.string "...\p"
 	.string "Sigh...$"
 
 Route4_EventScript_EvilTeam_Text_0:

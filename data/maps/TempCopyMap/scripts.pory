@@ -428,6 +428,16 @@ script Common_EventScript_NurseJoyOnRoute{
 
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            removeitem(ITEM_HEAL_PASS)
+            
             msgbox(format("Let me heal your Pokemon."))
             release
             call(Common_EventScript_OutOfCenterPartyHeal)

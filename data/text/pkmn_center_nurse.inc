@@ -10,7 +10,6 @@ gText_IllTakeYourPkmn::
 	.string "Allow me to heal your POKéMON.$"
 
 gText_RestoredPkmnToFullHealth::
-	.string "Thank you for waiting.\p"
 	.string "We've restored your POKéMON\n"
 	.string "to full health.$"
 
@@ -45,7 +44,8 @@ gText_IllTakeYourPkmn2::
 	.string "Allow me to heal your POKéMON.$"
 
 gText_ThankYouForWaiting::
-	.string "Thank you for waiting.$"
+	.string "Thank you for waiting.\n"
+	.string "We hope to see you again!$"	
 
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
