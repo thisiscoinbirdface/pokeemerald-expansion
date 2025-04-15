@@ -1226,7 +1226,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_7:
 	.string "of Pokémon psychology - of which the\l"
 	.string "Professor was a leading expert, as you\l"
 	.string "no doubt know. In particular, a\l"
-	.string "Pokemon's sleeping subconscious\l"
+	.string "Pokémon's sleeping subconscious\l"
 	.string "psyche is our field of interest.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_8:
@@ -1255,7 +1255,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_10:
 # 169 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "RUE: And this month we were supposed\n"
 	.string "to receive two things in our supplies -\l"
-	.string "{PLAYER}, your companion Pokemon...\l"
+	.string "{PLAYER}, your companion Pokémon...\l"
 	.string "and one dreamstone. One of only three\l"
 	.string "that exist. And just as we would have\l"
 	.string "powered up the Dreamalyser for the\l"
@@ -1347,7 +1347,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_25:
 	.string "RUE: The dreamstones are scattered all\n"
 	.string "across Cormoria. Have you ever traveled\l"
 	.string "beyond Fennilahl Town? Cormoria is vast\l"
-	.string "and filled with dangerous Pokemon. I\l"
+	.string "and filled with dangerous Pokémon. I\l"
 	.string "fear you may not be up to the task...$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_26:
@@ -1498,7 +1498,7 @@ CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_0:
 # 356 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "One of the Lab's Pokemon.$"
+	.string "One of the Lab's Pokémon.$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_1:
 # 361 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1562,7 +1562,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1:
 # 519 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm sorry we couldn't offer you the\n"
-	.string "standard companion Pokemon. But\l"
+	.string "standard companion Pokémon. But\l"
 	.string "they're coming in the next batch of\l"
 	.string "supplies! Just be patient.$"
 

@@ -152,7 +152,7 @@ script PellucaCity_Lycanroc{
     lockall
     playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("LYCANROC is howling. It must be pining for a table at the restaurant!"))
+    msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"))
     releaseall
     end
 }
@@ -199,15 +199,19 @@ script PellucaCity_NPC4{
 //bridge other dude
 script PellucaCity_NPC5{
     lockall
+    msgbox(format("Look over there..."))    
+    release
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("The Gym Leader of Pelluca City had her gym constructed on a separate island. Talk about entitlement!"))
+    msgbox(format("The Gym Leader of Pelluca City had her gym constructed on a separate island."))
+    release
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7))
     waitmovement(0)
     special(RemoveCameraObject)
+    msgbox(format("Talk about entitlement!"), MSGBOX_NPC)    
     releaseall
     end
 }
