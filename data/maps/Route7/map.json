@@ -24,14 +24,14 @@
   ],
   "warp_events": [
     {
-      "x": 12,
+      "x": 20,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CABLE_CAR_STATION",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 19,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CABLE_CAR_STATION",
@@ -44,7 +44,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 17,
+      "x": 25,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

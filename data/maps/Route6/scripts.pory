@@ -132,8 +132,8 @@ script Route6_Trainer_I{
 }
 //Youngster
 script Route6_Trainer_J{
-    trainerbattle_single(TRAINER_ROUTE6_J, format("Past Pelluca City is the Mirroh Base Camp and a Pokémon graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
-    msgbox(format("If we remember our Pokémon after they go, are they truly gone?"))
+    trainerbattle_single(TRAINER_ROUTE6_J, format("Hold it right there! You think you can beat me when I've already got four gym badges?"), "Argh! I need another badge!")
+    msgbox(format("Yup! That's right! I'm on my way to become the Pokémon Champion!"))
     releaseall
     end
 }
