@@ -13616,7 +13616,7 @@
           "map": "MAP_GALECREST_CITY",
           "base_label": "gGalecrestCity0",
           "land_mons": {
-            "encounter_rate": 3,
+            "encounter_rate": 7,
             "mons": [
               {
                 "min_level": 16,
