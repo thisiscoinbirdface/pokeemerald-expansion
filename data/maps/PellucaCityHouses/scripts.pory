@@ -48,11 +48,11 @@ script PellucaCityHouses_NPC4{
 
 
 //MONS
-script PellucaCity_Lycanroc{
+script PellucaCityHouses_Delphox{
     lockall
-    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_DELPHOX, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"), MSGBOX_NPC)
+    msgbox(format("Delphox looks wistful..."), MSGBOX_NPC)
     releaseall
     end
 }

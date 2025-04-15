@@ -33,11 +33,6 @@ EWRAM_DATA u8 ALIGNED(2) gPaletteDecompressionBuffer[PLTT_SIZE] = {0};
 
 static EWRAM_DATA u32 sPlttPreviousUpdateResult = 0; // Fast Battle Speed
 
-static const struct PaletteStructTemplate sDummyPaletteStructTemplate = {
-    .id = 0xFFFF,
-    .state = 1
-};
-
 static const u8 sRoundedDownGrayscaleMap[] = {
      0,  0,  0,  0,  0,
      5,  5,  5,  5,  5,
