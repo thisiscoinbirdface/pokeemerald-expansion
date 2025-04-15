@@ -146,7 +146,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(3, moves(face_down))
         waitmovement(0)
         delay(16)
-        msgbox(format("RUE: Our lab specialises in the research of Pokémon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, a Pokemon's sleeping subconscious psyche is our field of interest."))
+        msgbox(format("RUE: Our lab specialises in the research of Pokémon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, a Pokémon's sleeping subconscious psyche is our field of interest."))
         release
 
         applymovement(3, moves(walk_left walk_down *2 walk_right*2))
@@ -166,7 +166,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion Pokemon... and one dreamstone. One of only three that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did she leave? What on earth was she thinking!?"))
+        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion Pokémon... and one dreamstone. One of only three that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did she leave? What on earth was she thinking!?"))
         msgbox(format("RUE: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
         release
         delay(20)
@@ -206,7 +206,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
 
         msgbox(format("RUE: {PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab."))
-        msgbox(format("RUE: The dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast and filled with dangerous Pokemon. I fear you may not be up to the task..."))
+        msgbox(format("RUE: The dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town? Cormoria is vast and filled with dangerous Pokémon. I fear you may not be up to the task..."))
         msgbox(format("RUE: I don't know how I can help...perhaps this may be of use."))
         release   
         //Pokedex Get
@@ -353,7 +353,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
     lockall
 
     if (flag(FLAG_UNUSED_0x020)){
-        msgbox(format("One of the Lab's Pokemon."))
+        msgbox(format("One of the Lab's Pokémon."))
     } else {
 
         showmonpic(SPECIES_GOTHITA, 10,3)
@@ -387,7 +387,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
     lockall
 
     if (flag(FLAG_UNUSED_0x020)){
-        msgbox(format("One of the Lab's Pokemon."))
+        msgbox(format("One of the Lab's Pokémon."))
     } else {
 
         showmonpic(SPECIES_TIMBURR, 10,3)
@@ -421,7 +421,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
     lockall
 
     if (flag(FLAG_UNUSED_0x020)){
-        msgbox(format("One of the Lab's Pokemon."))
+        msgbox(format("One of the Lab's Pokémon."))
     } else {
 
         showmonpic(SPECIES_ZIGZAGOON_GALAR, 10,3)
@@ -516,7 +516,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist3{
     if (flag(FLAG_LAB_CALLTOACTION)){
         msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokemon. But they're coming in the next batch of supplies! Just be patient."), MSGBOX_NPC)
+        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokémon. But they're coming in the next batch of supplies! Just be patient."), MSGBOX_NPC)
     }
     end
 }
