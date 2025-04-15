@@ -60,7 +60,7 @@ script GastreeGym_EventScript_Victory{
 }
 
 text GastreeGym_Text_Intro{
-    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pInger: I'm Inger, master of Rock-types and the unshakable strength of the earth. My ROCK type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("Inger: ...you look a little green. It is nerves? First gym battle?\p...\pInger: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pInger: I'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{

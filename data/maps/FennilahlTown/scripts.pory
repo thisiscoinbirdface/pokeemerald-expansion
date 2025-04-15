@@ -46,7 +46,7 @@ script Fennilahl_Breech_StartQuest{
     msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small pink Pokémon took it and ran away! And I don't have any Pokémon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokémon run down south, towards ROUTE 2. I really liked that STRANGE ROCK! Please bring it back."))
+        msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokémon run down south, towards Route 2. I really liked that Strange Rock! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {

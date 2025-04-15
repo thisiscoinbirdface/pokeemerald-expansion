@@ -169,7 +169,7 @@
       "x": 31,
       "y": 27,
       "elevation": 3,
-      "item": "ITEM_PRETTY_FEATHER",
+      "item": "ITEM_PEARL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE1_A"
     },
     {
@@ -183,9 +183,9 @@
     {
       "type": "sign",
       "x": 21,
-      "y": 22,
+      "y": 21,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WoodSign_Route1_Middle"
     },
     {

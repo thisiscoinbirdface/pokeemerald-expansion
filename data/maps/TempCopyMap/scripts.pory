@@ -164,26 +164,26 @@ script Mart_Mints_SixBadges{
 
 script Mart_MintPurchaseDecision{
     if (var(VAR_TEMP_3) == 0) {setvar(VAR_0x8006, ITEM_IMPISH_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 1) {setvar(VAR_0x8006, ITEM_CALM_MINT)}
-    if (var(VAR_TEMP_3) == 2) {setvar(VAR_0x8006, ITEM_RELAXED_MINT)}
-    if (var(VAR_TEMP_3) == 3) {setvar(VAR_0x8006, ITEM_BOLD_MINT)}
-    if (var(VAR_TEMP_3) == 4) {setvar(VAR_0x8006, ITEM_GENTLE_MINT)}
-    if (var(VAR_TEMP_3) == 5) {setvar(VAR_0x8006, ITEM_CAREFUL_MINT)}
-    if (var(VAR_TEMP_3) == 6) {setvar(VAR_0x8006, ITEM_SASSY_MINT)}
-    if (var(VAR_TEMP_3) == 7) {setvar(VAR_0x8006, ITEM_NAUGHTY_MINT)}
-    if (var(VAR_TEMP_3) == 8) {setvar(VAR_0x8006, ITEM_BRAVE_MINT)}
-    if (var(VAR_TEMP_3) == 9) {setvar(VAR_0x8006, ITEM_TIMID_MINT)}
-    if (var(VAR_TEMP_3) == 10) {setvar(VAR_0x8006, ITEM_HASTY_MINT)}
-    if (var(VAR_TEMP_3) == 11) {setvar(VAR_0x8006, ITEM_ADAMANT_MINT)}
-    if (var(VAR_TEMP_3) == 12) {setvar(VAR_0x8006, ITEM_MILD_MINT)}
-    if (var(VAR_TEMP_3) == 13) {setvar(VAR_0x8006, ITEM_RASH_MINT)}
-    if (var(VAR_TEMP_3) == 14) {setvar(VAR_0x8006, ITEM_NAIVE_MINT)}
-    if (var(VAR_TEMP_3) == 15) {setvar(VAR_0x8006, ITEM_LAX_MINT)}
-    if (var(VAR_TEMP_3) == 16) {setvar(VAR_0x8006, ITEM_QUIET_MINT)}
-    if (var(VAR_TEMP_3) == 17) {setvar(VAR_0x8006, ITEM_LONELY_MINT)}
-    if (var(VAR_TEMP_3) == 18) {setvar(VAR_0x8006, ITEM_JOLLY_MINT)}
-    if (var(VAR_TEMP_3) == 19) {setvar(VAR_0x8006, ITEM_SERIOUS_MINT)}
-    if (var(VAR_TEMP_3) == 20) {setvar(VAR_0x8006, ITEM_MODEST_MINT)}
+    if (var(VAR_TEMP_3) == 1) {setvar(VAR_0x8006, ITEM_CALM_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 2) {setvar(VAR_0x8006, ITEM_RELAXED_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 3) {setvar(VAR_0x8006, ITEM_BOLD_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 4) {setvar(VAR_0x8006, ITEM_GENTLE_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 5) {setvar(VAR_0x8006, ITEM_CAREFUL_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 6) {setvar(VAR_0x8006, ITEM_SASSY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 7) {setvar(VAR_0x8006, ITEM_NAUGHTY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 8) {setvar(VAR_0x8006, ITEM_BRAVE_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 9) {setvar(VAR_0x8006, ITEM_TIMID_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 10) {setvar(VAR_0x8006, ITEM_HASTY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 11) {setvar(VAR_0x8006, ITEM_ADAMANT_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 12) {setvar(VAR_0x8006, ITEM_MILD_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 13) {setvar(VAR_0x8006, ITEM_RASH_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 14) {setvar(VAR_0x8006, ITEM_NAIVE_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 15) {setvar(VAR_0x8006, ITEM_LAX_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 16) {setvar(VAR_0x8006, ITEM_QUIET_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 17) {setvar(VAR_0x8006, ITEM_LONELY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 18) {setvar(VAR_0x8006, ITEM_JOLLY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 19) {setvar(VAR_0x8006, ITEM_SERIOUS_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 20) {setvar(VAR_0x8006, ITEM_MODEST_MINT) goto(MintPurchase_Common)}
 
     release
     end
@@ -427,13 +427,13 @@ script Common_EventScript_NurseJoyOnRoute{
         msgbox(format("Should I heal your Pokemon? You can come back later if you wish."), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_HEAL_PASS)
             msgbox(format("Let me heal your Pokemon."))
             release
             call(Common_EventScript_OutOfCenterPartyHeal)
             msgbox(format("Stay safe out there!"))
             release
             
-            removeitem(ITEM_HEAL_PASS)
         } else {
             msgbox(format("Come back any time!"))
             release

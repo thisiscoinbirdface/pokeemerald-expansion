@@ -18,7 +18,7 @@ script Route2_Caves_EventScript_ClefairyBattle{
     lockall
     setflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
-    msgbox(format("A wild Pokémon attacks you! It's holding the STRANGE ROCK!"))
+    msgbox(format("A wild Pokémon attacks you! It's holding the Strange Rock!"))
     release
 
     setwildbattle(SPECIES_CLEFAIRY, 7)
@@ -26,7 +26,7 @@ script Route2_Caves_EventScript_ClefairyBattle{
     release
 
     removeobject(LOCALID_CLEFAIRY)
-    msgbox(format("The Clefairy dropped the STRANGE ROCK. Stealing is bad, Clefairy!\p...\pIt looks dismayed and runs away..."))    
+    msgbox(format("The Clefairy dropped the Strange Rock. Stealing is bad, Clefairy!\p...\pIt looks dismayed and runs away..."))    
     release
     giveitem(ITEM_STRANGE_ROCK) 
     release

@@ -20,18 +20,18 @@ script CarabrueTown_TenebrisLab_EventScript_OnWarp{
 script CarabrueTown_TenebrisLab_EventScript_Start {
 
     lockall
-    msgbox(format("Ah! There you are! Finally."))
+    msgbox(format("???: Ah! There you are! Finally."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
 
-    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...er...\n{PLAYER}, was it?"))
+    msgbox(format("RUE: I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...er...\n{PLAYER}, was it?"))
     release
     applymovement(3, moves(face_left face_right face_down))
     waitmovement(3)
 
-    msgbox(format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh wonderful! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police! This bag next to me is your welcome package. Go on - open it."))
+    msgbox(format("RUE: I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh wonderful! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police! This bag next to me is your welcome package. Go on - open it."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
@@ -43,7 +43,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     giveitem(ITEM_TOWN_MAP)  
     removeobject(5)
 
-    msgbox(format("Standard supplies for a research associate! Now as for the evidence bag, we'll have to hand that over to the police as quickly as possible."))
+    msgbox(format("RUE: Standard supplies for a research associate! Now as for the evidence bag, we'll have to hand that over to the police as quickly as possible."))
     release
 
     applymovement(3, moves(walk_down face_left))
@@ -52,7 +52,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
 
-    msgbox(format("Right, now normally I would brief you on your work, but we've got no time. So I'm just going to have you start working right away. We've been running low on supplies and the nearest Poké Mart is in Fennilahl Town, past Route 1. Please go and pick up our shipment and bring it back. Be careful! There are some important things in there!"))
+    msgbox(format("RUE: Right, now normally I would brief you on your work, but we've got no time. So I'm just going to have you start working right away. We've been running low on supplies and the nearest Poké Mart is in Fennilahl Town, past Route 1. Please go and pick up our shipment and bring it back. Be careful! There are some important things in there!"))
     release
 
     applymovement(3, moves(jump_in_place_left))
@@ -60,12 +60,12 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(3, moves(face_left, face_right, face_up, face_down, jump_in_place_up_down))
     waitmovement(3)
 
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokeballs lying around the lab. If we had our supplies, I could give you the standard companion Pokemon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around. But I promise - as soon as you bring the supplies back from the Pokemart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("RUE: You'll need a companion Pokémon to protect you. Pick up any of the Pokeballs lying around the lab. If we had our supplies, I could give you the standard companion Pokemon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around. But I promise - as soon as you bring the supplies back from the Pokemart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
     waitmovement(3)   
-    msgbox(format("Argh! It's all a mess!"))
+    msgbox(format("RUE: Argh! It's all a mess!"))
     release
 
 
@@ -135,15 +135,17 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
             completequest(QUEST_LAB_FIRST_DAY)
             release
 
-        msgbox(format("But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
+        msgbox(format("RUE: But how? When? Oh no...this is a disaster. You see, those supplies contained something very precious."))
 
         applymovement(3, moves(face_left emote_question_mark))
         waitmovement(0)
+        delay(16)
         msgbox(format("RUE: Have you heard of dreamstones? No? Hardly surprising, considering that there are only three in all of Cormoria. You see..."))
         release
 
         applymovement(3, moves(face_down))
         waitmovement(0)
+        delay(16)
         msgbox(format("RUE: Our lab specialises in the research of Pokémon psychology - of which the Professor was a leading expert, as you no doubt know. In particular, a Pokemon's sleeping subconscious psyche is our field of interest."))
         release
 
@@ -151,7 +153,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
         waitmovement(0)
-        msgbox(format("RUE: This right here is our lab's pride and joy - the DREAMALYSER. Once powered, it'll allow us to study what Pokémon undergo while in deep sleep. We built every single piece of this by hand. And something like this can't be powered using conventional methods."))
+        msgbox(format("RUE: This right here is our lab's pride and joy - the Dreamalyser. Once powered, it'll allow us to study what Pokémon undergo while in deep sleep. We built every single piece of this by hand. And something like this can't be powered using conventional methods."))
         release
 
         applymovement(3, moves(face_left))
@@ -164,7 +166,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
-        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion Pokemon... and one dreamstone. One of only three that exist. And just as we would have powered up the DREAMALYSER for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did she leave? What on earth was she thinking!?"))
+        msgbox(format("RUE: And this month we were supposed to receive two things in our supplies - {PLAYER}, your companion Pokemon... and one dreamstone. One of only three that exist. And just as we would have powered up the Dreamalyser for the first time ever, the Professor took the dreamstone and disappeared! Oh, why did she leave? What on earth was she thinking!?"))
         msgbox(format("RUE: I'm sorry {PLAYER}...I fear that destiny has chosen your companion for you. But it looks like you two have formed a bond already...maybe this is for the best after all."))  
         release
         delay(20)
@@ -230,6 +232,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(8, moves(emote_exclamation_mark))
         applymovement(9, moves(emote_exclamation_mark))
         waitmovement(0)
+        delay(16)
         msgbox(format("DETECTIVE: Get it together, Rue. The other researchers are counting on you. Have some faith in us...and...\p...well...\p...{PLAYER}."))
         release
 
@@ -288,8 +291,9 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         //Trainer battle
         trainerbattle_no_intro(TRAINER_KOHLA_LAB, "You won't be this lucky next time!")
+        playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)        
         applymovement(10, moves(emote_exclamation_mark))        
-        msgbox(format("Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
+        msgbox(format("KOHLA: Pah! A single battle means nothing! You haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
         release
         delay(16)
         applymovement(10, moves(face_left))
@@ -300,9 +304,10 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)  
+        fadedefaultbgm
         applymovement(10, moves(walk_fast_down * 10))
         waitmovement(0)
-        removeobject(10)
+        removeobject(10)        
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
@@ -491,7 +496,7 @@ script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
 script CarabrueTown_TenebrisLab_EventScript_Rue{
     lockall
     faceplayer
-    msgbox(format("We're counting on you!"))
+    msgbox(format("RUE: We're counting on you!"))
     applymovement(3, moves(face_down))
     releaseall
 }
@@ -520,13 +525,13 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist3{
 
 script CarabrueTown_TenebrisLab_Gardevoir{
     if (flag(FLAG_TENEBRIS_GARDEVOIR)){
-        msgbox(format("GARDEVOIR regards you intently..."), MSGBOX_NPC)  
+        msgbox(format("Gardevoir regards you intently..."), MSGBOX_NPC)  
     } else {
         playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
-        msgbox(format("GARDEVOIR regards you intently...\pSomething floats into your hand!"), MSGBOX_NPC)
+        msgbox(format("Gardevoir regards you intently...\pSomething floats into your hand!"), MSGBOX_NPC)
         lockall
         giveitem(ITEM_STARF_BERRY)
-        msgbox(format("Was this her way of welcoming a new member of the lab?\pThank you, GARDEVOIR!"))
+        msgbox(format("Was this her way of welcoming a new member of the lab?\pThank you, Gardevoir!"))
         setflag(FLAG_TENEBRIS_GARDEVOIR)              
         releaseall     
     }
@@ -535,7 +540,7 @@ script CarabrueTown_TenebrisLab_Gardevoir{
 
 script CarabrueTown_TenebrisLab_Metagross{
     playmoncry(SPECIES_METAGROSS, CRY_MODE_NORMAL)
-    msgbox(format("It's Asst. Prof. Rue's METAGROSS. It's so intimidating!"), MSGBOX_NPC)
+    msgbox(format("It's Asst. Prof. Rue's Metagross. It's so intimidating!"), MSGBOX_NPC)
     end
 }
 

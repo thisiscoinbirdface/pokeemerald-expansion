@@ -308,101 +308,141 @@ Mart_MintPurchaseDecision_2:
 Mart_MintPurchaseDecision_5:
 # 167 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_CALM_MINT
+# 167 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_4
 
 Mart_MintPurchaseDecision_8:
 # 168 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_RELAXED_MINT
+# 168 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_7
 
 Mart_MintPurchaseDecision_11:
 # 169 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_BOLD_MINT
+# 169 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_10
 
 Mart_MintPurchaseDecision_14:
 # 170 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_GENTLE_MINT
+# 170 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_13
 
 Mart_MintPurchaseDecision_17:
 # 171 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_CAREFUL_MINT
+# 171 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_16
 
 Mart_MintPurchaseDecision_20:
 # 172 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_SASSY_MINT
+# 172 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_19
 
 Mart_MintPurchaseDecision_23:
 # 173 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_NAUGHTY_MINT
+# 173 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_22
 
 Mart_MintPurchaseDecision_26:
 # 174 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_BRAVE_MINT
+# 174 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_25
 
 Mart_MintPurchaseDecision_29:
 # 175 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_TIMID_MINT
+# 175 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_28
 
 Mart_MintPurchaseDecision_32:
 # 176 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_HASTY_MINT
+# 176 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_31
 
 Mart_MintPurchaseDecision_35:
 # 177 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_ADAMANT_MINT
+# 177 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_34
 
 Mart_MintPurchaseDecision_38:
 # 178 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_MILD_MINT
+# 178 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_37
 
 Mart_MintPurchaseDecision_41:
 # 179 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_RASH_MINT
+# 179 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_40
 
 Mart_MintPurchaseDecision_44:
 # 180 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_NAIVE_MINT
+# 180 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_43
 
 Mart_MintPurchaseDecision_47:
 # 181 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_LAX_MINT
+# 181 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_46
 
 Mart_MintPurchaseDecision_50:
 # 182 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_QUIET_MINT
+# 182 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_49
 
 Mart_MintPurchaseDecision_53:
 # 183 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_LONELY_MINT
+# 183 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_52
 
 Mart_MintPurchaseDecision_56:
 # 184 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_JOLLY_MINT
+# 184 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_55
 
 Mart_MintPurchaseDecision_59:
 # 185 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_SERIOUS_MINT
+# 185 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_58
 
 Mart_MintPurchaseDecision_62:
 # 186 "data//maps/TempCopyMap/scripts.pory"
 	setvar VAR_0x8006, ITEM_MODEST_MINT
+# 186 "data//maps/TempCopyMap/scripts.pory"
+	goto MintPurchase_Common
 	goto Mart_MintPurchaseDecision_61
 
 
@@ -680,17 +720,17 @@ Common_EventScript_NurseJoyOnRoute_2:
 
 Common_EventScript_NurseJoyOnRoute_5:
 # 430 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_NurseJoyOnRoute_Text_1
-# 431 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 432 "data//maps/TempCopyMap/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 433 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_NurseJoyOnRoute_Text_2
-# 434 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 436 "data//maps/TempCopyMap/scripts.pory"
 	removeitem ITEM_HEAL_PASS
+# 431 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_1
+# 432 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 433 "data//maps/TempCopyMap/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 434 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_NurseJoyOnRoute_Text_2
+# 435 "data//maps/TempCopyMap/scripts.pory"
+	release
 	goto Common_EventScript_NurseJoyOnRoute_1
 
 
@@ -1267,11 +1307,11 @@ Common_EventScript_NurseJoyOnRoute_Text_0:
 	.string "come back later if you wish.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_1:
-# 430 "data//maps/TempCopyMap/scripts.pory"
+# 431 "data//maps/TempCopyMap/scripts.pory"
 	.string "Let me heal your Pokemon.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_2:
-# 433 "data//maps/TempCopyMap/scripts.pory"
+# 434 "data//maps/TempCopyMap/scripts.pory"
 	.string "Stay safe out there!$"
 
 Common_EventScript_NurseJoyOnRoute_Text_3:

@@ -15,7 +15,7 @@ script Route3_Underpass_Nurse{
 script Route3_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("CHANSEY and I got the best assignment! Up in the hills...clean air...what more could a nurse ask for?"))
+    msgbox(format("Chansey and I got the best assignment! Up in the hills...clean air...what more could a nurse ask for?"))
     call(Common_EventScript_NurseJoyOnRoute)
     delay(30)
     releaseall
@@ -103,7 +103,7 @@ script Route3_Underpass_EvilBattle{
     playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)    
     applymovement(LOCALID_CLEF, moves(jump_in_place_left * 2))
     waitmovement(0)
-    msgbox(format("Clefairy: clee!!!\p???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my Pokémon out!"))
+    msgbox(format("CLEFAIRY: clee!!!\p???: Hahaha! Your Clefairy wants to protect you, but you don't even have the will to fight alongside her. Just give up before I bring my Pokémon out!"))
     release
 
     //They look at you and you walk to them
@@ -137,19 +137,20 @@ script Route3_Underpass_EvilBattle{
     applymovement(LOCALID_GAB, moves(walk_down * 7))
     waitmovement(0)
     removeobject(LOCALID_GAB)
+    fadedefaultbgm
 
     //Breech says he needs to train
     applymovement(LOCALID_CLEF, moves(walk_up))
     applymovement(LOCALID_BREECH, moves(walk_left face_up))
     waitmovement(0)     
-    msgbox(format("{PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible."))
-    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
-    msgbox(format("Clefairy was ready to protect me, but I wasn't prepared to do the same for her.\p...\pI let her down."))
-    msgbox(format("But no more! I'm going to learn to hold my ground. If Team Somber comes after Clefairy again, we'll be ready."))
-    msgbox(format("{PLAYER} - we owe you. As thanks, Clefairy and I want to give you the stone that Gabrielle person was after..."))
+    msgbox(format("BREECH: {PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible."))
+    msgbox(format("BREECH: I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
+    msgbox(format("BREECH: Clefairy was ready to protect me, but I wasn't prepared to do the same for her.\p...\pI let her down."))
+    msgbox(format("BREECH: But no more! I'm going to learn to hold my ground. If Team Somber comes after Clefairy again, we'll be ready."))
+    msgbox(format("BREECH: {PLAYER} - we owe you. As thanks, Clefairy and I want to give you the stone that Gabrielle person was after..."))
     release
     giveitem(ITEM_EVERSTONE)
-    msgbox(format("I don't know about dreamstones, but it looks like a regular EVERSTONE to me. Who knows what she saw?"))
+    msgbox(format("I don't know about dreamstones, but it looks like a regular Everstone to me. Who knows what she saw?"))
     msgbox(format("Don't worry - Clefairy's bored of that stone already. Next, we'll head to Mt. Ceram to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
@@ -171,8 +172,7 @@ script Route3_Underpass_EvilBattle{
     special(RemoveCameraObject)
 
     //End
-    setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)
-    fadedefaultbgm   
+    setflag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)   
     releaseall
     
 }

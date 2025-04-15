@@ -605,8 +605,8 @@ Fennilahl_Breech_StartQuest_Text_1:
 # 49 "data//maps/FennilahlTown/scripts.pory"
 	.string "Amazing! You've answered my prayers. I\n"
 	.string "saw the pink Pokémon run down south,\l"
-	.string "towards ROUTE 2. I really liked that\l"
-	.string "STRANGE ROCK! Please bring it back.$"
+	.string "towards Route 2. I really liked that\l"
+	.string "Strange Rock! Please bring it back.$"
 
 Fennilahl_Breech_StartQuest_Text_2:
 # 53 "data//maps/FennilahlTown/scripts.pory"

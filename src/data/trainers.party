@@ -184,7 +184,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Rattata
+Rattata-Alola
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -266,13 +266,17 @@ Mugshot: Yellow
 Rockruff
 Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Tackle
+- Leer
+- Sand Attack
+- Rock Throw
 
 Geodude-Alola
 Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Minior @ Oran Berry
-Level: 13
+Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_GASTREE_KOHLA ===

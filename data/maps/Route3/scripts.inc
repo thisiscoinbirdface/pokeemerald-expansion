@@ -186,7 +186,7 @@ Route3_TrainerBattle_Ronnie_Text_1:
 Route3_TrainerBattle_Ronnie_Text_2:
 # 19 "data//maps/Route3/scripts.pory"
 	.string "I heard that the Gastree City Gym\n"
-	.string "Leader uses FIRE type Pokemon.$"
+	.string "Leader uses ROCK type Pokemon.$"
 
 Route3_TrainerBattle_Jana_Text_0:
 # 27 "data//maps/Route3/scripts.pory"

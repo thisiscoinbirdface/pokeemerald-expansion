@@ -68,7 +68,7 @@ gText_Birch_AreYouReady::
 	.string "on the first day.\p"
 	.string "Our standard guidelines offer you\n"
 	.string "the choice of one of the following:\l" 
-	.string "{COLOR RED}CHARMANDER{COLOR DARK_GRAY}, {COLOR GREEN}SNIVY{COLOR DARK_GRAY}, or {COLOR BLUE}OSHAWOTT.\p"
+	.string "{COLOR RED}Charmander{COLOR DARK_GRAY}, {COLOR GREEN}Snivy{COLOR DARK_GRAY}, or {COLOR BLUE}Oshawott{COLOR DARK_GRAY}.\p"
 	.string "{COLOR DARK_GRAY}2. You are expected to be punctual.\n"
 	.string "Tardiness is not acceptable.\p"
 	.string "3. We have sent a welcome package.\n"

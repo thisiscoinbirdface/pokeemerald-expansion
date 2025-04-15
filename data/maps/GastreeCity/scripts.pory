@@ -72,7 +72,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 }
 
 text GastreeCity_KohlaIntro1 {
-    format("KOHLA: Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten INGER and got the GYM BADGE.")
+    format("KOHLA: Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the GYM BADGE.")
 }
 text GastreeCity_KohlaIntro2{
     format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")

@@ -38,7 +38,7 @@ GastreeCity_PokemonCenter_NPC2::
 
 GastreeCity_PokemonCenter_NPC1_Text_0:
 # 19 "data//maps/GastreeCity_PokemonCenter/scripts.pory"
-	.string "This city's Gym Leader is INGER, the\n"
+	.string "This city's Gym Leader is Inger, the\n"
 	.string "ROCK specialist. He's a local hero!$"
 
 GastreeCity_PokemonCenter_NPC2_Text_0:

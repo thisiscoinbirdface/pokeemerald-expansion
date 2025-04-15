@@ -422,7 +422,7 @@ GastreeCity_TeaHouse_EventScript_NPC4_Text_0:
 	.string "I invited my date here because I\n"
 	.string "thought it'd be more unique than taking\l"
 	.string "him to a trendy spot...but he still\l"
-	.string "hasn't arrived. Luckily my SNORUNT is\l"
+	.string "hasn't arrived. Luckily my Snorunt is\l"
 	.string "here to give me company!$"
 
 GastreeCity_TeaHouse_EventScript_NPC4_Text_1:

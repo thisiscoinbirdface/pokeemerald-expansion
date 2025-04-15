@@ -158,7 +158,7 @@ script GastreeCity_TeaHouse_EventScript_NPC3{
 script GastreeCity_TeaHouse_EventScript_NPC4{
     lockall
     faceplayer
-    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my SNORUNT is here to give me company!"))
+    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my Snorunt is here to give me company!"))
     release
     delay(16)
     if (flag(FLAG_GASTREE_TEAHOUSE_BERRIES)){

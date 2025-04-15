@@ -829,7 +829,7 @@ GastreeCity_KohlaIntro1::
 	.string "KOHLA: Well well, look who thought it\n"
 	.string "was fashionable to be late! I'm way\l"
 	.string "ahead of you, chum! I've already beaten\l"
-	.string "INGER and got the GYM BADGE.$"
+	.string "Inger and got the GYM BADGE.$"
 
 GastreeCity_KohlaIntro2::
 # 77 "data//maps/GastreeCity/scripts.pory"
