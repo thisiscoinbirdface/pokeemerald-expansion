@@ -548,16 +548,6 @@ PellucaCity_NPC5_Movement_0:
 	walk_fast_up
 # 203 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 203 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_left
-# 203 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_left
-# 203 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_left
-# 203 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_left
-# 203 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_left
 	step_end
 
 # 208 "data//maps/PellucaCity/scripts.pory"
@@ -576,16 +566,6 @@ PellucaCity_NPC5_Movement_1:
 	walk_fast_down
 # 208 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 208 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_right
-# 208 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_right
-# 208 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_right
-# 208 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_right
-# 208 "data//maps/PellucaCity/scripts.pory"
-	walk_fast_right
 	step_end
 
 # 245 "data//maps/PellucaCity/scripts.pory"

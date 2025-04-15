@@ -200,12 +200,12 @@ script PellucaCity_NPC4{
 script PellucaCity_NPC5{
     lockall
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7 walk_fast_left * 5))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7))
     waitmovement(0)
     special(RemoveCameraObject)
     msgbox(format("The Gym Leader of Pelluca City had her gym constructed on a separate island. Talk about entitlement!"))
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7 walk_fast_right * 5))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7))
     waitmovement(0)
     special(RemoveCameraObject)
     releaseall

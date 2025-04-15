@@ -181,9 +181,9 @@ Route6_Trainer_J::
 
 Route6_Trainer_K::
 # 142 "data//maps/Route6/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE6_K, Route6_Trainer_J_Text_0, Route6_Trainer_J_Text_1
+	trainerbattle_single TRAINER_ROUTE6_K, Route6_Trainer_K_Text_0, Route6_Trainer_K_Text_1
 # 143 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Trainer_J_Text_2
+	msgbox Route6_Trainer_K_Text_2
 # 144 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
@@ -766,16 +766,31 @@ Route6_Trainer_I_Text_2:
 
 Route6_Trainer_J_Text_0:
 # 135 "data//maps/Route6/scripts.pory"
+	.string "Hold it right there! You think you can\n"
+	.string "beat me when I've already got four gym\l"
+	.string "badges?$"
+
+Route6_Trainer_J_Text_1:
+# 135 "data//maps/Route6/scripts.pory"
+	.string "Argh! I need another badge!$"
+
+Route6_Trainer_J_Text_2:
+# 136 "data//maps/Route6/scripts.pory"
+	.string "Yup! That's right! I'm on my way to\n"
+	.string "become the Pokémon Champion!$"
+
+Route6_Trainer_K_Text_0:
+# 142 "data//maps/Route6/scripts.pory"
 	.string "Past Pelluca City is the Mirroh Base\n"
 	.string "Camp and a Pokémon graveyard. I want to\l"
 	.string "go there to commune with the afterlife!$"
 
-Route6_Trainer_J_Text_1:
-# 135 "data//maps/Route6/scripts.pory"
+Route6_Trainer_K_Text_1:
+# 142 "data//maps/Route6/scripts.pory"
 	.string "I don't want to commune with you!$"
 
-Route6_Trainer_J_Text_2:
-# 136 "data//maps/Route6/scripts.pory"
+Route6_Trainer_K_Text_2:
+# 143 "data//maps/Route6/scripts.pory"
 	.string "If we remember our Pokémon after they\n"
 	.string "go, are they truly gone?$"
 
