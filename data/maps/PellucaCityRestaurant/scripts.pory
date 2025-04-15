@@ -40,7 +40,7 @@ script PellucaCityRestaurant_NPC4{
 script PellucaCityRestaurant_NPC5{
     lockall
     faceplayer
-    msgbox(format("Apparently the staff here all have APPLIN and POLTEAGEIST to help them cook!"))
+    msgbox(format("Apparently the staff here all have Pokémon from the Applin family to help them!"))
     releaseall
     end
 }
@@ -48,7 +48,7 @@ script PellucaCityRestaurant_NPC5{
 script PellucaCityRestaurant_NPC6{
     lockall
     faceplayer
-    msgbox(format("Too many customers! Too many orders!"))
+    msgbox(format("Too many customers! Too many orders! Without Dipplin to help, I wouldn't be able to manage all these tables."))
     releaseall
     end
 }
@@ -56,7 +56,7 @@ script PellucaCityRestaurant_NPC6{
 script PellucaCityRestaurant_NPC7{
     lockall
     faceplayer
-    msgbox(format("My SMEARGLE cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria."))
+    msgbox(format("My Smeargle cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria."))
     releaseall
     end
 }
@@ -91,7 +91,7 @@ script PellucaCityRestaurant_NPC9{
 script PellucaCityRestaurant_Cook1{
     lockall
     faceplayer
-    msgbox(format("Our head chef travels all across Cormoria to find the rarest ingredients...I wish he'd find a ROTOM FROST to replace our fridge!"))
+    msgbox(format("Our head chef travels all across Cormoria to find the rarest ingredients...I wish he'd find a Rotom Frost to replace our fridge!"))
     releaseall
     end
 }
@@ -107,11 +107,11 @@ script PellucaCityRestaurant_Cook3{
     faceplayer
 
     if (var(VAR_PELLUCA_COOK) == 2){
-        msgbox(format("How's my favourite trainer and APPLIN doing?"))
+        msgbox(format("How's my favourite trainer and Applin doing?"))
     }
 
     if (var(VAR_PELLUCA_COOK) == 1){
-        msgbox(format("Have you brought the NEVERMELT ICE?"), MSGBOX_YESNO)
+        msgbox(format("Have you brought the Nevermelt Ice?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_NEVER_MELT_ICE)
             if (var(VAR_RESULT) == 1){
@@ -121,7 +121,7 @@ script PellucaCityRestaurant_Cook3{
                 msgbox(format("My friend, you must accept this."))
                 release
                 givemon(SPECIES_APPLIN, 25)
-                msgbox(format("Take good care of our APPLIN! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
+                msgbox(format("Take good care of our Applin! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
                 setvar(VAR_PELLUCA_COOK, 2) 
             } else {
                 msgbox(format("Hmmm, it doesn't seem like you do. Come back when you get it from the Mirroh Base Camp!"))
@@ -139,7 +139,7 @@ script PellucaCityRestaurant_Cook3{
         msgbox(format("Aha! Why hello there my fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //accept quest
-            msgbox(format("I knew I could rely on you!\pSome NEVERMELT ICE will do the trick. You can buy NEVERMELT ICE at the Mirroh Base Camp. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
+            msgbox(format("I knew I could rely on you!\pSome Nevermelt Ice will do the trick. You can buy Nevermelt Ice at the Mirroh Base Camp. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
             release
             giveitem(ITEM_CABLECAR_PASS)        
             msgbox(format("I'll be waiting here!"))
@@ -157,5 +157,34 @@ script PellucaCityRestaurant_Cook3{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script PellucaCityRestaurant_Appletun{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_APPLETUN, CRY_MODE_NORMAL)
+    msgbox(format("Appletun seems to be wandering around aimlessly...is it helping or hindering?"), MSGBOX_NPC)
+    end
+}
+
+script PellucaCityRestaurant_Dipplin{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_DIPPLIN, CRY_MODE_NORMAL)
+    msgbox(format("Dipplin is keeping an eye on the customers!"), MSGBOX_NPC)
+    end
+}
 
 
