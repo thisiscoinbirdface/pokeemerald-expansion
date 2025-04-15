@@ -43,7 +43,7 @@ script MtMirrohExterior_BreechTrigger{
     applymovement(9, moves(face_left emote_exclamation_mark)) 
     waitmovement(0)
     delay(30)
-    msgbox(format("BREECH: I see...so they must be using all this equipment to build and carry this DREAMALYSER thing you're talking about. How scary!"))
+    msgbox(format("BREECH: I see...so they must be using all this equipment to build and carry this Dreamalyser thing you're talking about. How scary!"))
     release
     delay(60)
     msgbox(format("BREECH: CLEFABLE and I have become stronger now, but I really don't want to get involved in all these matters. We'll find some other way through the mountain. All the best, {PLAYER}!"))

@@ -34,14 +34,14 @@ script SilversunCity_OnFrame{
                 release
                 applymovement(LOCALID_TENEBRIS, moves(emote_exclamation_mark))
                 waitmovement(0)
-                msgbox(format("Rue: Oh, it was terrible! They barged into our lab and started threatening everyone unless we handed over the DREAMALYSER blueprints! I managed to hold them off while the other research associates escaped, but they overpowered me and forced me to hand over the blueprints..."))
+                msgbox(format("Rue: Oh, it was terrible! They barged into our lab and started threatening everyone unless we handed over the Dreamalyser blueprints! I managed to hold them off while the other research associates escaped, but they overpowered me and forced me to hand over the blueprints..."))
                 release
                 delay(30)
-                msgbox(format("DETECTIVE: Spilt milk. Don't fret over what can't be changed. What do they want to do with the DREAMALYSER?\pRUE: Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her GABRIELLE. And now they want to use the DREAMALYSER to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
+                msgbox(format("DETECTIVE: Spilt milk. Don't fret over what can't be changed. What do they want to do with the Dreamalyser?\pRUE: Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her GABRIELLE. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
-                msgbox(format("DETECTIVE: So they want to build a DREAMALYSER and use it to go to Ancient Cormoria?\pRUE: Yes.\pDETECTIVE: There must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's KOHLA when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                msgbox(format("DETECTIVE: So they want to build a Dreamalyser and use it to go to Ancient Cormoria?\pRUE: Yes.\pDETECTIVE: There must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's KOHLA when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
                 release
                 delay(24)
                 msgbox(format("DETECTIVE: Rue - go back home. You've had a hard time. Take care of yourself.\pRUE: Y-yes, I better...see you all soon. Thanks again {PLAYER}."))
