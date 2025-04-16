@@ -736,3 +736,21 @@ script Common_EventScript_SettingsGuy{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+script Common_EventScript_DrifblimTravels{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    msgbox(format("Blah"), MSGBOX_YESNO)
+    end
+}

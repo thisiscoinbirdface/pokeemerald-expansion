@@ -721,8 +721,9 @@ Route6_Trainer_F_Text_2:
 
 Route6_Trainer_G_Text_0:
 # 114 "data//maps/Route6/scripts.pory"
-	.string "Us Pokémon Breeders like to train one\n"
-	.string "type of Pokémon. I specialise in dogs!$"
+	.string "Get ready, because I'm not a regular\n"
+	.string "Pokémon Breeder. I'm going to be the\l"
+	.string "first Pokémon Breeder Champion!$"
 
 Route6_Trainer_G_Text_1:
 # 114 "data//maps/Route6/scripts.pory"

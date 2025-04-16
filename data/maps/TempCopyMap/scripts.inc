@@ -1165,6 +1165,18 @@ Common_EventScript_SettingsGuy_2:
 	goto Common_EventScript_SettingsGuy_1
 
 
+Common_EventScript_DrifblimTravels::
+# 751 "data//maps/TempCopyMap/scripts.pory"
+	lockall
+# 752 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 753 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
+# 754 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_Text_0, MSGBOX_YESNO
+	end
+
+
 Common_EventScript_NurseDemo_Text_0:
 # 6 "data//maps/TempCopyMap/scripts.pory"
 	.string "This is the end of the demo. Thank you\n"
@@ -1436,6 +1448,10 @@ Common_EventScript_SettingsGuy_Text_3:
 Common_EventScript_SettingsGuy_Text_4:
 # 730 "data//maps/TempCopyMap/scripts.pory"
 	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}.$"
+
+Common_EventScript_DrifblimTravels_Text_0:
+# 754 "data//maps/TempCopyMap/scripts.pory"
+	.string "Blah$"
 
 Common_Text_Greta_Comecome::
 # 489 "data//maps/TempCopyMap/scripts.pory"

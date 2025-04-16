@@ -706,21 +706,20 @@ GastreeCity_NPC7_Text_0:
 GastreeCity_NPC8_Text_0:
 # 128 "data//maps/GastreeCity/scripts.pory"
 	.string "Hiiiiyah!\p"
-	.string "I'm trying to teach my KECLEON some new\n"
+	.string "I'm trying to teach my Kecleon some new\n"
 	.string "moves so that we can go and explore\l"
-	.string "Route 4 together! C'mon KECLEON!\l"
-	.string "C'mon!!$"
+	.string "Route 4 together! C'mon Kecleon! C'mon!!$"
 
 GastreeCity_NPC8_Text_1:
 # 131 "data//maps/GastreeCity/scripts.pory"
 	.string "KECLEON: keeee!!!\p"
-	.string "KECLEON is as fired up as its trainer is!$"
+	.string "Kecleon is as fired up as its trainer is!$"
 
 GastreeCity_NPC_Keckleon_Text_0:
 # 136 "data//maps/GastreeCity/scripts.pory"
 	.string "KECKLEON: keeee!!\p"
-	.string "KECLEON is trying hard to match its\n"
-	.string "trainers energy. Go KECLEON!$"
+	.string "Kecleon is trying hard to match its\n"
+	.string "trainers energy. Go Kecleon!$"
 
 GastreeCity_NPC9_Text_0:
 # 143 "data//maps/GastreeCity/scripts.pory"
@@ -795,7 +794,9 @@ GastreeCity_NPC2_Text_4:
 
 GastreeCity_NPC2_Text_5:
 # 242 "data//maps/GastreeCity/scripts.pory"
-	.string "Have you found my SKITTY yet?$"
+	.string "Have you found my Skitty yet? She\n"
+	.string "might be stuck in a tree - please look\l"
+	.string "for her pink tail!$"
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_0:
 # 250 "data//maps/GastreeCity/scripts.pory"
