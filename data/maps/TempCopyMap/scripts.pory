@@ -725,7 +725,7 @@ script Common_EventScript_HyperTrainer{
         end
     }
 
-    playbgm(MUS_B_PYRAMID_TOP, FALSE)
+    fadenewbgm(MUS_B_PYRAMID_TOP, FALSE)
 
     msgbox(format("It's a statue of an ancient Pokémon...\pFrom within the bag, the Rare Shard begins to vibrate...\pTake out the Rare Shard from the bag?"), MSGBOX_YESNO)
 
@@ -753,7 +753,7 @@ script Common_EventScript_HyperTrainer{
             fadescreen(FADE_TO_WHITE)
             delay(16)
             fadescreen(FADE_FROM_WHITE)
-            
+
             msgbox(format("Imbued with the shrine's memories, {STR_VAR_1} became stronger!"))
             release
             fadedefaultbgm

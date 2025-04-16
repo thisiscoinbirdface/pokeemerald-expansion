@@ -1147,7 +1147,7 @@ Common_EventScript_HyperTrainer::
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_HyperTrainer_2
 # 728 "data//maps/TempCopyMap/scripts.pory"
-	playbgm MUS_B_PYRAMID_TOP, FALSE
+	fadenewbgm MUS_B_PYRAMID_TOP, FALSE
 # 730 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_HyperTrainer_Text_1, MSGBOX_YESNO
 # 732 "data//maps/TempCopyMap/scripts.pory"
