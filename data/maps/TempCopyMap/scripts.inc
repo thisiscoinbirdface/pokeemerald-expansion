@@ -1165,7 +1165,7 @@ Common_EventScript_SettingsGuy_2:
 	goto Common_EventScript_SettingsGuy_1
 
 
-Common_EventScript_DrifblimTravels::
+Common_EventScript_DrifblimTravels_ToSilversun::
 # 751 "data//maps/TempCopyMap/scripts.pory"
 	lockall
 # 752 "data//maps/TempCopyMap/scripts.pory"
@@ -1173,9 +1173,36 @@ Common_EventScript_DrifblimTravels::
 # 753 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
 # 754 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_Text_0, MSGBOX_YESNO
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_YESNO
+# 756 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_2
+# 766 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
+Common_EventScript_DrifblimTravels_ToSilversun_1:
 	end
 
+Common_EventScript_DrifblimTravels_ToSilversun_2:
+# 757 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 759 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 760 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 761 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 762 "data//maps/TempCopyMap/scripts.pory"
+	waitmovement 0
+# 763 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_SILVERSUN_CITY, 28, 22
+	goto Common_EventScript_DrifblimTravels_ToSilversun_1
+
+
+# 760 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
+# 760 "data//maps/TempCopyMap/scripts.pory"
+	face_down
+	step_end
 
 Common_EventScript_NurseDemo_Text_0:
 # 6 "data//maps/TempCopyMap/scripts.pory"
@@ -1449,9 +1476,15 @@ Common_EventScript_SettingsGuy_Text_4:
 # 730 "data//maps/TempCopyMap/scripts.pory"
 	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}.$"
 
-Common_EventScript_DrifblimTravels_Text_0:
+Common_EventScript_DrifblimTravels_ToSilversun_Text_0:
 # 754 "data//maps/TempCopyMap/scripts.pory"
-	.string "Blah$"
+	.string "Drifblim opens a map and gestures at\n"
+	.string "Silversun City.\p"
+	.string "Fly to Silversun City?$"
+
+Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
+# 766 "data//maps/TempCopyMap/scripts.pory"
+	.string "Drifblim looks dejected...$"
 
 Common_Text_Greta_Comecome::
 # 489 "data//maps/TempCopyMap/scripts.pory"
