@@ -34,6 +34,11 @@
 #define MAP_GROUP_DUNGEONS MAP_GROUP(METEOR_FALLS_1F_1R)
 #define MAP_GROUP_SPECIAL_AREA MAP_GROUP(SAFARI_ZONE_NORTHWEST)
 
+#define MAP_GROUP_1 MAP_GROUP(CARABRUE_TOWN)
+#define MAP_GROUP_2 MAP_GROUP(ROUTE4)
+#define MAP_GROUP_3 MAP_GROUP(HOYA_RIVER_NORTH)
+#define MAP_GROUP_4 MAP_GROUP(WINTERLILY_HOLLOW)
+
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
 
@@ -292,12 +297,17 @@ static void FindMapsWithMon(u16 species)
             switch (gWildMonHeaders[i].mapGroup)
             {
             case MAP_GROUP_TOWNS_AND_ROUTES:
+            case MAP_GROUP_1:
+            case MAP_GROUP_2:
+            case MAP_GROUP_3:
+            case MAP_GROUP_4:                        
                 SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
             case MAP_GROUP_DUNGEONS:
             case MAP_GROUP_SPECIAL_AREA:
                 SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
+
             }
         }
     }
