@@ -111,7 +111,7 @@ script Route6_Trainer_F{
 }
 //PKMN breeder Dog 
 script Route6_Trainer_G{
-    trainerbattle_single(TRAINER_ROUTE6_G, format("Us Pokémon Breeders like to train one type of Pokémon. I specialise in dogs!"), "Guess I was more bark than bite!")
+    trainerbattle_single(TRAINER_ROUTE6_G, format("Get ready, because I'm not a regular Pokémon Breeder. I'm going to be the first Pokémon Breeder Champion!"), "Guess I was more bark than bite!")
     msgbox(format("Dog Pokémon are rare in Cormoria! Someone in Pelluca City traded me my Houndoor."))
     releaseall
     end

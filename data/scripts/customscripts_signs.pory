@@ -8,7 +8,7 @@ script WhiteSign_CarabrueTown_Main{
 }
 
 script WhiteSign_CarabrueTown_TenebrisLab{
-    msgbox(format("THE TENEBRIS LABORATORY\nPokémon psychology research hub."), MSGBOX_SIGN)
+    msgbox(format("Tenebris Laboratory\nPokémon psychology research hub."), MSGBOX_SIGN)
     end
 }
 
@@ -47,7 +47,10 @@ script WhiteSign_FennilahlTown_TowardsRoute3{
     end
 }
 
-
+script WoodSign_FennilahlTown_Nicknaming {
+    msgbox(format("TRAINER TIPS: You can nickname your Pokémon directly from their summary screen!"), MSGBOX_SIGN)
+    end
+}
 
 
 
@@ -87,6 +90,11 @@ script WhiteSign_GastreeCity_Gym{
     end
 }
 
+script WoodSign_GastreeCity_GetStuck {
+    msgbox(format("TRAINER TIPS: If you get stuck, try checking your quests and talking to people! Sometimes, you might get an item that lets you get to new places."), MSGBOX_SIGN)
+    end
+}
+
 
 
 ///ROUTE 4
@@ -99,7 +107,10 @@ script WhiteSign_Route4_TowardsCeramBaseCamp {
     msgbox(format("Route 4\p{UP_ARROW} Ceram Base Camp.\n{DOWN_ARROW} Gastree City."), MSGBOX_SIGN)
     end
 }
-
+script WoodSign_Route4_HM {
+    msgbox(format("TRAINER TIPS: You don't need to teach your Pokémon HMs to use them! But you do need enough badges."), MSGBOX_SIGN)
+    end
+}
 
 
 

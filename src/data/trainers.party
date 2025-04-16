@@ -117,10 +117,10 @@ Double Battle: No
 AI: Basic Trainer
 
 Combee
-Level: 3
+Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shelmet
+Nymble
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -134,7 +134,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Charcadet
-Level: 8
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_JANA ===
@@ -215,7 +215,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Zorua-Hisui
-Level: 12
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_JACO === 
@@ -228,7 +228,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude-Alola
-Level: 11
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_SKIP ===
@@ -240,12 +240,12 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Cubone
+Rockruff
 Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Geodude-Alola
-Level: 12
+Level: 11
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GASTREEGYM_LEADER ===
@@ -1661,17 +1661,18 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Green
 
 Manectric
-Level: 28
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Houndoom
-Level: 28
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lycanroc
-Level: 30
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 

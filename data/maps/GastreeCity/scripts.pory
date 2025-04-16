@@ -125,15 +125,15 @@ script GastreeCity_NPC7{
 
     //Pokémon flavour
 script GastreeCity_NPC8{
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my KECLEON some new moves so that we can go and explore Route 4 together! C'mon KECLEON! C'mon!!"), MSGBOX_NPC)
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my Kecleon some new moves so that we can go and explore Route 4 together! C'mon Kecleon! C'mon!!"), MSGBOX_NPC)
     applymovement(5, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KECLEON: keeee!!!\pKECLEON is as fired up as its trainer is!"), MSGBOX_NPC)
+    msgbox(format("KECLEON: keeee!!!\pKecleon is as fired up as its trainer is!"), MSGBOX_NPC)
     end
 }
 
 script GastreeCity_NPC_Keckleon{ 
-    msgbox(format("KECKLEON: keeee!!\pKECLEON is trying hard to match its trainers energy. Go KECLEON!"), MSGBOX_NPC)
+    msgbox(format("KECKLEON: keeee!!\pKecleon is trying hard to match its trainers energy. Go Kecleon!"), MSGBOX_NPC)
     end
 }
 
@@ -239,7 +239,7 @@ script GastreeCity_NPC9{
                 completequest(QUEST_GASTREE_SKITTY)
                 setflag(FLAG_GASTREE_NPC_SKITTY)
             } else {
-                    msgbox(format("Have you found my SKITTY yet?"))
+                    msgbox(format("Have you found my Skitty yet? She might be stuck in a tree - please look for her pink tail!"))
             }
         }
         releaseall
