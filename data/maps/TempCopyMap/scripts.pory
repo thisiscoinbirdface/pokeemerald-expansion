@@ -751,7 +751,8 @@ script Common_EventScript_HyperTrainer{
 
             release
             fadescreen(FADE_TO_WHITE)
-            delay(16)
+            playse(SE_USE_ITEM)
+            delay(24)
             fadescreen(FADE_FROM_WHITE)
 
             msgbox(format("Imbued with the shrine's memories, {STR_VAR_1} became stronger!"))
