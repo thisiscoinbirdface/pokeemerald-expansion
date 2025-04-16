@@ -280,7 +280,7 @@
     #define VAR_SILVERSUN_ORPHANAGE_MAINQUEST                0x407F // Unused Var
     #define VAR_FENNILAHL_CLEFAIRY_QUEST                     0x4080 // Unused Var
     #define VAR_SUPPLY_DEPOT_STATE                           0x4081 // checks for the somber music or not
-    #define VAR_ROUTE105_STATE                               0x4064 // Unused Var
+    #define VAR_PELLUCA_MAYOR_QUEST                          0x4064 // Unused Var
     #define VAR_ROUTE106_STATE                               0x4065 // Unused Var
     #define VAR_ROUTE107_STATE                               0x4066 // Unused Var
     #define VAR_ROUTE108_STATE                               0x4067 // Unused Var

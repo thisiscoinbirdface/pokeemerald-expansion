@@ -27,17 +27,50 @@ script PellucaCityHouses_GabSibling3{
 
 
 
-
+//Quest NPC
 script PellucaCityHouses_NPC1{
-    msgbox(format("Since Pelluca City sits at the intersection of the Ivy River and the Hoya River, it's split up into several small islands."), MSGBOX_NPC)
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 2){
+        //quest done
+    }
+
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 1){
+        //quest ongoing
+    }
+
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
+
+        msgbox(format("I'm the mayor of Pelluca City. Since we sit at the intersection of the Ivy River and the Hoya River, it's split up into several small islands. You know what that means?"), MSGBOX_NPC)
+        release
+        applymovement(7, moves(emote_exclamation_mark)) 
+        delay(16)    
+        msgbox(format("It means Claunchers washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokemon stuck ashore."), MSGBOX_NPC)
+        release
+        applymovement(7, moves(emote_exclamation_mark)) 
+        delay(16)    
+        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this..."), MSGBOX_NPC)
+        dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
+
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Claunchers you see back into the river?"), MSGBOX_NPC)
+            startquest(QUEST_PELLUCA_MAYOR)
+            release
+        }
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in Pelluca City!"), MSGBOX_NPC)
+        } 
+    }
+
     end
 }
+
+
 script PellucaCityHouses_NPC2{
     msgbox(format("We we born here here, fell in love here, and grew old here."), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_NPC3{
-    msgbox(format("After so long together, one's love gets replaced by companionship. But it's always there, somewhere beneath the surface."), MSGBOX_NPC)
+    msgbox(format("After so long together, love gets replaced by companionship. But it's always there, somewhere beneath the surface."), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_NPC4{

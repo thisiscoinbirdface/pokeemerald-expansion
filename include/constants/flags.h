@@ -196,12 +196,12 @@
 #define FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE  0x2BB // Unused Flag
 #define FLAG_CERAMBASECAMP_ALTARIA_FEATHER                                           0x4D8 // Unused Flag
 #define FLAG_PELLUCA_RESTAURANT_TRADE                                           0x4D9 // Unused Flag
+#define FLAG_HIDE_PELLUCA_MAYOR_MON1                                           0x4DB // Unused Flag
+#define FLAG_HIDE_PELLUCA_MAYOR_MON2                                           0x4DC // Unused Flag
+#define FLAG_HIDE_PELLUCA_MAYOR_MON3                                           0x4DD // Unused Flag
+#define FLAG_HIDE_PELLUCA_MAYOR_MON4                                           0x4DE // Unused Flag
+#define FLAG_HIDE_PELLUCA_MAYOR_MON5                                           0x4DF // Unused Flag
 #define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
 #define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
 #define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
 #define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
