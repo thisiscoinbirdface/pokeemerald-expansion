@@ -55,7 +55,14 @@ script GastreeGym_EventScript_Victory{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     msgbox(format("The Hard Badge allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
-    
+    release
+    delay(16)
+    //Also give 3 rare shards
+    msgbox(format("INGER: I also want to give you these."))
+    giveitem(ITEM_RARE_SHARD, 3)
+    msgbox(format("INGER: These are incredibly rare stones that react in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
+    release
+    delay(16)
     //Bye-bye
     msgbox(format("INGER: So where are you headed next?\p...\pINGER: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pINGER:...but I can't say I've heard anything about these dreamstones.\pINGER: So next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pINGER: All the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
     releaseall

@@ -84,9 +84,9 @@ script SilversunCity_Theater_Leader{
     setflag(FLAG_BADGE04_GET)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format("The Drama Badge..."))
-
+    msgbox(format("GLORIA: The Drama Badge will let you use HM STRENGTH outside of battle. And I must give you these beautiful jewels too."))
     //Give item also
+    giveitem(ITEM_RARE_SHARD, 3)
 
     //Bye-bye
     msgbox(format("GLORIA: It was a pleasure sharing the stage with you. May you weave and bob with elegance in the dance of life, {PLAYER}!"))   

@@ -14223,5 +14223,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MagmaEmblem,
     },
 
+    [ITEM_RARE_SHARD] =
+    {
+        .name = _("Rare Shard"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A surprisingly\n"
+            "heavy shard of an\n"
+            "unknown material."),
+        .importance = 1,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
 
 };

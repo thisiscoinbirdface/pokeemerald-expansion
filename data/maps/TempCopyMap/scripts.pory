@@ -719,18 +719,27 @@ script Common_EventScript_HyperTrainer{
     lockall
     faceplayer
 
-    msgbox(format("Hello! I can hyper train your Pokemon"), MSGBOX_YESNO)
+    checkitem(ITEM_RARE_SHARD)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's a statue of an ancient Pokémon."), MSGBOX_NPC)
+        end
+    }
+
+
+
+    msgbox(format("It's a statue of an ancient Pokémon...\pFrom within the bag, the Rare Shard begins to vibrate...\pTake out the Rare Shard from the bag?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
 
     } else {
-        msgbox(format("Which Pokemon should I train?"))
+        msgbox(format("The statue begins humming faintly...\pWhich Pokémon should hold the Rare Shard?"))
         special(ChoosePartyMon)
         waitstate
         if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
             release
         } else {
-            msgbox(format("Which stat should I maximise?"))
+            bufferpartymonnick(STR_VAR_1, VAR_0x8004)
+            msgbox(format("{STR_VAR_1} is absorbing memories from the statue...what's it seeing?"))
             dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defence", "Special Attack", "Special Defence", "Speed")
             
             if (var(VAR_RESULT) == 0){hypertrain(STAT_HP, VAR_0x8004)}
@@ -741,6 +750,10 @@ script Common_EventScript_HyperTrainer{
             if (var(VAR_RESULT) == 5){hypertrain(STAT_SPEED, VAR_0x8004)}
 
             release
+
+            delay(16)
+
+            msgbox(format("Imbued with the shrine's memories, {STR_VAR_1} became stronger!"))
         }
     }
 
