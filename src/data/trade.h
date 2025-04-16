@@ -1036,7 +1036,7 @@ static const struct InGameTrade sIngameTrades[] =
     {
         .nickname = _("BOWOW"),
         .species = SPECIES_HOUNDOUR,
-        .ivs = {4, 5, 4, 31, 4, 31},
+        .ivs = {4, 5, 4, 31, 31, 4},
         .abilityNum = 0,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
@@ -1050,7 +1050,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_WIMPOD] = //Ponyta Galar
     {
-        .nickname = _("WIMPY"),
+        .nickname = _("BRYNN"),
         .species = SPECIES_PONYTA_GALAR,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0,

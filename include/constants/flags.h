@@ -121,6 +121,17 @@
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
+#define FLAG_UNUSED_0x495 0x495 // Unused Flag
+#define FLAG_UNUSED_0x496 0x496 // Unused Flag
+#define FLAG_UNUSED_0x497 0x497 // Unused Flag
+#define FLAG_UNUSED_0x498 0x498 // Unused Flag
+#define FLAG_UNUSED_0x499 0x499 // Unused Flag
+#define FLAG_UNUSED_0x49A 0x49A // Unused Flag
+#define FLAG_UNUSED_0x49B 0x49B // Unused Flag
+#define FLAG_UNUSED_0x49C 0x49C // Unused Flag
+#define FLAG_UNUSED_0x49D 0x49D // Unused Flag
+
+
 
 //I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
 #define FLAG_GASTREE_NPC_SHOAL_SALT  0x280 // Get Shoal Salt from NPC in House 2
@@ -197,6 +208,18 @@
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
+#define FLAG_UNUSED_0x49E 0x49E // Unused Flag
+#define FLAG_UNUSED_0x49F 0x49F // Unused Flag
+#define FLAG_UNUSED_0x4A0 0x4A0 // Unused Flag
+#define FLAG_UNUSED_0x4A1 0x4A1 // Unused Flag
+#define FLAG_UNUSED_0x4A2 0x4A2 // Unused Flag
+#define FLAG_UNUSED_0x4A3 0x4A3 // Unused Flag
+#define FLAG_UNUSED_0x4A4 0x4A4 // Unused Flag
+#define FLAG_UNUSED_0x4A5 0x4A5 // Unused Flag
+#define FLAG_UNUSED_0x4A6 0x4A6 // Unused Flag
+#define FLAG_UNUSED_0x4A7 0x4A7 // Unused Flag
+#define FLAG_UNUSED_0x4A8 0x4A8 // Unused Flag
+
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
 #define FLAG_GASTREEGYM_SPENSER_WATER                               0x4E7 // Unused Flag
@@ -1291,27 +1314,8 @@
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
 #define FLAG_RUNNING_SHOES_TOGGLE                                   0x493 // Toggle running shoes
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_SKIP_INTRO                                             0x499
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
+#define FLAG_SKIP_INTRO                                             0x494 // Unused Flag
+
 #define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag

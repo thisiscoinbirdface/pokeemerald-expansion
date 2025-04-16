@@ -172,16 +172,12 @@ script PellucaCityRestaurant_Cook3{
 
 
 script PellucaCityRestaurant_Appletun{
-    lockall
-    faceplayer
     playmoncry(SPECIES_APPLETUN, CRY_MODE_NORMAL)
     msgbox(format("Appletun seems to be wandering around aimlessly...is it helping or hindering?"), MSGBOX_NPC)
     end
 }
 
 script PellucaCityRestaurant_Dipplin{
-    lockall
-    faceplayer
     playmoncry(SPECIES_DIPPLIN, CRY_MODE_NORMAL)
     msgbox(format("Dipplin is keeping an eye on the customers!"), MSGBOX_NPC)
     end
@@ -219,12 +215,12 @@ script PellucaCityRestaurant_NPC_Trade{
     //Regular case
     lockall
     faceplayer
-    showmonpic(SPECIES_TOXEL, 10, 3)
+    showmonpic(SPECIES_TOXEL, 1, 3)
     msgbox(format("I've never been to Silversun City, but I've always wanted to go to catch a Toxel. Now I'm too old to travel so far."))
     release
     hidemonpic
     delay(24)
-    showmonpic(SPECIES_HOUNDOUR, 10, 3)
+    showmonpic(SPECIES_HOUNDOUR, 1, 3)
     msgbox(format("If you have a Toxel, will you trade it for my Houndour?"), MSGBOX_YESNO)
     hidemonpic
     if (var(VAR_RESULT) == 1){
