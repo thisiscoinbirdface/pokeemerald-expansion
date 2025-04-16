@@ -47,7 +47,7 @@ script PellucaCityHouses_NPC1{
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
-        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this..."), MSGBOX_NPC)
+        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this..."))
         dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
 
         if (var(VAR_RESULT) == 0){
