@@ -1136,100 +1136,164 @@ PellucaCity_Greta_MysteriousRock_4:
 	return
 
 
-Common_EventScript_SettingsGuy::
+Common_EventScript_HyperTrainer::
 # 719 "data//maps/TempCopyMap/scripts.pory"
 	lockall
 # 720 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
 # 722 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_SettingsGuy_Text_0
-# 723 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_SettingsGuy_Text_1, Common_EventScript_SettingsGuy_Text_2
-# 725 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_0, MSGBOX_YESNO
+# 724 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Common_EventScript_SettingsGuy_2
+	goto_if_eq Common_EventScript_HyperTrainer_2
+# 727 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_1
+# 728 "data//maps/TempCopyMap/scripts.pory"
+	special ChoosePartyMon
 # 729 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_SYS_EXP_ALL, 2
+	waitstate
 # 730 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_SettingsGuy_Text_4
-Common_EventScript_SettingsGuy_1:
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq Common_EventScript_HyperTrainer_5
 # 733 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_2
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_HyperTrainer_Text_3, Common_EventScript_HyperTrainer_Text_4, Common_EventScript_HyperTrainer_Text_5, Common_EventScript_HyperTrainer_Text_6, Common_EventScript_HyperTrainer_Text_7, Common_EventScript_HyperTrainer_Text_8
+# 736 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_9
+Common_EventScript_HyperTrainer_8:
+# 737 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_HyperTrainer_12
+Common_EventScript_HyperTrainer_11:
+# 738 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 2
+	goto_if_eq Common_EventScript_HyperTrainer_15
+Common_EventScript_HyperTrainer_14:
+# 739 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 3
+	goto_if_eq Common_EventScript_HyperTrainer_18
+Common_EventScript_HyperTrainer_17:
+# 740 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 4
+	goto_if_eq Common_EventScript_HyperTrainer_21
+Common_EventScript_HyperTrainer_20:
+# 741 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 5
+	goto_if_eq Common_EventScript_HyperTrainer_24
+Common_EventScript_HyperTrainer_23:
+# 743 "data//maps/TempCopyMap/scripts.pory"
+	release
+Common_EventScript_HyperTrainer_1:
+# 747 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
-Common_EventScript_SettingsGuy_2:
-# 726 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_SYS_EXP_ALL, 8
-# 727 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_SettingsGuy_Text_3
-	goto Common_EventScript_SettingsGuy_1
+Common_EventScript_HyperTrainer_2:
+	goto Common_EventScript_HyperTrainer_1
+
+Common_EventScript_HyperTrainer_5:
+# 731 "data//maps/TempCopyMap/scripts.pory"
+	release
+	goto Common_EventScript_HyperTrainer_1
+
+Common_EventScript_HyperTrainer_9:
+# 736 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_HP, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_8
+
+Common_EventScript_HyperTrainer_12:
+# 737 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_ATK, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_11
+
+Common_EventScript_HyperTrainer_15:
+# 738 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_DEF, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_14
+
+Common_EventScript_HyperTrainer_18:
+# 739 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPATK, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_17
+
+Common_EventScript_HyperTrainer_21:
+# 740 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPDEF, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_20
+
+Common_EventScript_HyperTrainer_24:
+# 741 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPEED, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_23
 
 
 Common_EventScript_DrifblimTravels_ToSilversun::
-# 751 "data//maps/TempCopyMap/scripts.pory"
+# 781 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 752 "data//maps/TempCopyMap/scripts.pory"
+# 782 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 753 "data//maps/TempCopyMap/scripts.pory"
+# 783 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 754 "data//maps/TempCopyMap/scripts.pory"
+# 784 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_YESNO
-# 756 "data//maps/TempCopyMap/scripts.pory"
+# 786 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_2
-# 765 "data//maps/TempCopyMap/scripts.pory"
+# 795 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToSilversun_1:
 	end
 
 Common_EventScript_DrifblimTravels_ToSilversun_2:
-# 757 "data//maps/TempCopyMap/scripts.pory"
+# 787 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 759 "data//maps/TempCopyMap/scripts.pory"
+# 789 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 760 "data//maps/TempCopyMap/scripts.pory"
+# 790 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 761 "data//maps/TempCopyMap/scripts.pory"
+# 791 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 762 "data//maps/TempCopyMap/scripts.pory"
+# 792 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_SILVERSUN_CITY, 28, 22
 	goto Common_EventScript_DrifblimTravels_ToSilversun_1
 
 
 Common_EventScript_DrifblimTravels_ToGalecrest::
-# 772 "data//maps/TempCopyMap/scripts.pory"
+# 802 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 773 "data//maps/TempCopyMap/scripts.pory"
+# 803 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 774 "data//maps/TempCopyMap/scripts.pory"
+# 804 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 775 "data//maps/TempCopyMap/scripts.pory"
+# 805 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToGalecrest_Text_0, MSGBOX_YESNO
-# 777 "data//maps/TempCopyMap/scripts.pory"
+# 807 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_DrifblimTravels_ToGalecrest_2
-# 786 "data//maps/TempCopyMap/scripts.pory"
+# 816 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToGalecrest_1:
 	end
 
 Common_EventScript_DrifblimTravels_ToGalecrest_2:
-# 778 "data//maps/TempCopyMap/scripts.pory"
+# 808 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 780 "data//maps/TempCopyMap/scripts.pory"
+# 810 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 781 "data//maps/TempCopyMap/scripts.pory"
+# 811 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 782 "data//maps/TempCopyMap/scripts.pory"
+# 812 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 783 "data//maps/TempCopyMap/scripts.pory"
+# 813 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_GALECREST_CITY, 30, 47
 	goto Common_EventScript_DrifblimTravels_ToGalecrest_1
 
 
-# 760 "data//maps/TempCopyMap/scripts.pory"
+# 790 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
-# 760 "data//maps/TempCopyMap/scripts.pory"
+# 790 "data//maps/TempCopyMap/scripts.pory"
 	face_down
 	step_end
 
@@ -1480,42 +1544,53 @@ PellucaCity_Greta_UglyFish_Text_0:
 	.string "{PLAYER} received a FEEBAS from\n"
 	.string "GRETA.$"
 
-Common_EventScript_SettingsGuy_Text_0:
+Common_EventScript_HyperTrainer_Text_0:
 # 722 "data//maps/TempCopyMap/scripts.pory"
-	.string "Hello! I can enable or disable Exp All. If\n"
-	.string "enabled, the Exp Share allows all\l"
-	.string "Pokémon to gain experience. If\l"
-	.string "disabled, the Exp share will only give\l"
-	.string "experience to the Pokémon holding it.\l"
-	.string "Would you like to toggle Exp All?$"
+	.string "Hello! I can hyper train your Pokemon$"
 
-Common_EventScript_SettingsGuy_Text_1:
-# 723 "data//maps/TempCopyMap/scripts.pory"
-	.string "EXP ALL ON$"
-
-Common_EventScript_SettingsGuy_Text_2:
-# 723 "data//maps/TempCopyMap/scripts.pory"
-	.string "EXP ALL OFF$"
-
-Common_EventScript_SettingsGuy_Text_3:
+Common_EventScript_HyperTrainer_Text_1:
 # 727 "data//maps/TempCopyMap/scripts.pory"
-	.string "Exp All is now {COLOR GREEN}ON{COLOR DARK_GRAY}.$"
+	.string "Which Pokemon should I train?$"
 
-Common_EventScript_SettingsGuy_Text_4:
-# 730 "data//maps/TempCopyMap/scripts.pory"
-	.string "Exp All is now {COLOR RED}OFF{COLOR DARK_GRAY}.$"
+Common_EventScript_HyperTrainer_Text_2:
+# 733 "data//maps/TempCopyMap/scripts.pory"
+	.string "Which stat should I maximise?$"
+
+Common_EventScript_HyperTrainer_Text_3:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "HP$"
+
+Common_EventScript_HyperTrainer_Text_4:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "Attack$"
+
+Common_EventScript_HyperTrainer_Text_5:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "Defence$"
+
+Common_EventScript_HyperTrainer_Text_6:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "Special Attack$"
+
+Common_EventScript_HyperTrainer_Text_7:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "Special Defence$"
+
+Common_EventScript_HyperTrainer_Text_8:
+# 734 "data//maps/TempCopyMap/scripts.pory"
+	.string "Speed$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_0:
-# 754 "data//maps/TempCopyMap/scripts.pory"
+# 784 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Silversun City. Fly there?$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
-# 765 "data//maps/TempCopyMap/scripts.pory"
+# 795 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim looks dejected...$"
 
 Common_EventScript_DrifblimTravels_ToGalecrest_Text_0:
-# 775 "data//maps/TempCopyMap/scripts.pory"
+# 805 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Galecrest City. Fly there?$"
 

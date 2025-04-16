@@ -265,8 +265,8 @@ void HyperTrain(struct ScriptContext *ctx)
 
     if (stat < NUM_STATS && partyIndex < PARTY_SIZE)
     {
-        bool32 data = TRUE;
-        SetMonData(&gPlayerParty[partyIndex], MON_DATA_HYPER_TRAINED_HP + stat, &data);
+        bool32 data = 30;
+        SetMonData(&gPlayerParty[partyIndex], MON_DATA_HP_IV + stat, &data);
         CalculateMonStats(&gPlayerParty[partyIndex]);
     }
 }
