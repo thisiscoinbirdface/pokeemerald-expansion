@@ -188,3 +188,92 @@ script PellucaCityRestaurant_Dipplin{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TRADE NPC 
+script PellucaCityRestaurant_NPC_Trade{
+    if (flag(FLAG_PELLUCA_RESTAURANT_TRADE)){
+        msgbox(format("My sister will be so happy. She's always wanted her own Pokémon."), MSGBOX_NPC)
+        end
+    }
+
+    //Regular case
+    lockall
+    faceplayer
+    showmonpic(SPECIES_TOXEL, 10, 3)
+    msgbox(format("I've never been to Silversun City, but I've always wanted to go to catch a Toxel. Now I'm too old to travel so far."))
+    release
+    hidemonpic
+    delay(24)
+    showmonpic(SPECIES_HOUNDOUR, 10, 3)
+    msgbox(format("If you have a Toxel, will you trade it for my Houndour?"), MSGBOX_YESNO)
+    hidemonpic
+    if (var(VAR_RESULT) == 1){
+        //do trade
+
+        //First is trade mon setup
+        setvar(VAR_0x8008, INGAME_TRADE_MEOWTH) //Get the specific in-game trade mon (trade.h)
+        copyvar(VAR_0x8004, VAR_0x8008)         //copy the trade mon
+
+        specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+        copyvar(VAR_0x8009, VAR_RESULT)         //Get and copy the requested mon
+
+
+        //Now choose your mon
+        special(ChoosePartyMon)                 //choose your mon
+        waitstate                               //wait
+        copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+
+        //Decline if nothing chosen
+        if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
+            msgbox(format("If you have one, will you trade it for my Houndour?"))
+            releaseall
+            end          
+        }
+
+        copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+        specialvar(VAR_RESULT, GetTradeSpecies)
+        copyvar(VAR_0x800B, VAR_RESULT)         //idk why but copy the var result
+        if (var(VAR_RESULT) == VAR_0x8009) {
+            //If mon is nymble, carry on
+            copyvar(VAR_0x8004, VAR_0x8008)
+            copyvar(VAR_0x8005, VAR_0x800A)
+            special(CreateInGameTradePokemon)
+            special(DoInGameTradeScene)
+            waitstate
+            msgbox(format("Thank you! Please take good care of my Houndour."))
+            release
+            setflag(FLAG_PELLUCA_RESTAURANT_TRADE)      
+
+        } else {
+            //else (mon isn't nymble)
+            msgbox(format("Hey, this isn't a Toxel! I'm not stupid, you know?"), MSGBOX_NPC)
+        }
+
+    } else {
+        //no trade
+        msgbox(format("Oh...well, if you change your mind, you know where I am!"), MSGBOX_NPC)
+    }
+
+end
+
+}

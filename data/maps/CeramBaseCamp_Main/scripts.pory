@@ -346,6 +346,7 @@ script CeramBaseCamp_Main_NPC5{
         faceplayer
         showmonpic(SPECIES_DEWPIDER, 10, 3)
         msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokémon! But I couldn't find any on Route 4."))
+        release
         hidemonpic
         delay(24)
         showmonpic(SPECIES_PONYTA_GALAR, 10, 3)
@@ -369,7 +370,7 @@ script CeramBaseCamp_Main_NPC5{
 
             //Decline if nothing chosen
             if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
-               msgbox(format("If you have one, will you trade it for my Wimpod?"))
+               msgbox(format("If you have one, will you trade it for my Ponyta?"))
                releaseall
                end          
             }
@@ -384,7 +385,7 @@ script CeramBaseCamp_Main_NPC5{
                 special(CreateInGameTradePokemon)
                 special(DoInGameTradeScene)
                 waitstate
-                msgbox(format("Thank you! Please take good care of my Wimpod."))
+                msgbox(format("Thank you! Please take good care of my Ponyta."))
                 release
                 setflag(FLAG_CERAMBASECAMP_NPC_TRADE)      
 

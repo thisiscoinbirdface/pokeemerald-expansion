@@ -1032,23 +1032,23 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_BAGON
     },
-    [INGAME_TRADE_MEOWTH] =
+    [INGAME_TRADE_MEOWTH] = //Houndour
     {
-        .nickname = _("MEOWOW"),
-        .species = SPECIES_MEOWTH,
-        .ivs = {4, 5, 4, 5, 4, 4},
+        .nickname = _("BOWOW"),
+        .species = SPECIES_HOUNDOUR,
+        .ivs = {4, 5, 4, 31, 4, 31},
         .abilityNum = 0,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x8B,
-        .heldItem = ITEM_RETRO_MAIL,
+        .heldItem = ITEM_CHARCOAL,
         .mailNum = 2,
         .otName = _("ISIS"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SKITTY
+        .requestedSpecies = SPECIES_TOXEL
     },
-    [INGAME_TRADE_WIMPOD] =
+    [INGAME_TRADE_WIMPOD] = //Ponyta Galar
     {
         .nickname = _("WIMPY"),
         .species = SPECIES_PONYTA_GALAR,
