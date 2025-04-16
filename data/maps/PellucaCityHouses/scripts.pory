@@ -29,12 +29,10 @@ script PellucaCityHouses_GabSibling3{
 
 //Quest NPC
 script PellucaCityHouses_NPC1{
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 2){
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
         //quest done
-    }
-
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 1){
-        //quest ongoing
+        msgbox(format("Well done!"), MSGBOX_NPC)
+        end
     }
 
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
@@ -53,16 +51,45 @@ script PellucaCityHouses_NPC1{
         if (var(VAR_RESULT) == 0){
             msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Claunchers you see back into the river?"), MSGBOX_NPC)
             startquest(QUEST_PELLUCA_MAYOR)
+            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON1)
+            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON2)
+            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON3)
+            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON4)
+            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON5)
+            setvar(VAR_PELLUCA_MAYOR_QUEST, 1)
+
             release
         }
 
         if (var(VAR_RESULT) == 1){
             msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in Pelluca City!"), MSGBOX_NPC)
         } 
+        end
     }
 
+    //quest ongoing
+    msgbox(format("How's it going?"), MSGBOX_NPC)
     end
 }
+
+//clauncher
+script PellucaCity_Clauncher{
+    lockall
+    faceplayer
+    msgbox(format("It's a Clauncher! It's looking disoriented.\p{PLAYER} gently lifts the Clauncher and tosses it back into the river."))
+    release
+    fadescreen(FADE_TO_WHITE)
+    removeobject(VAR_LAST_TALKED)
+    fadescreen(FADE_FROM_WHITE)    
+    msgbox(format("See you Clauncher!"))
+
+    addvar(VAR_PELLUCA_MAYOR_QUEST, 1)
+
+    releaseall
+    end    
+}
+
+
 
 
 script PellucaCityHouses_NPC2{
