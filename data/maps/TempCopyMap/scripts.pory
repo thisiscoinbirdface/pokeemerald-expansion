@@ -725,7 +725,7 @@ script Common_EventScript_HyperTrainer{
         end
     }
 
-    fadenewbgm(MUS_B_PYRAMID_TOP, FALSE)
+    fadenewbgm(MUS_B_PYRAMID_TOP)
 
     msgbox(format("It's a statue of an ancient Pokémon...\pFrom within the bag, the Rare Shard begins to vibrate...\pTake out the Rare Shard from the bag?"), MSGBOX_YESNO)
 
