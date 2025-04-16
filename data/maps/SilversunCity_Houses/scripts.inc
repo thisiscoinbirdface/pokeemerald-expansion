@@ -43,12 +43,12 @@ SilversunCity_Houses_Artist_5:
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Houses_Artist_10
 # 37 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Artist_Text_5
+	msgbox SilversunCity_Houses_Artist_Text_6, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 SilversunCity_Houses_Artist_8:
 # 42 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Artist_Text_6, MSGBOX_YESNO
+	msgbox SilversunCity_Houses_Artist_Text_7, MSGBOX_YESNO
 # 43 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Houses_Artist_13
@@ -59,7 +59,7 @@ SilversunCity_Houses_Artist_8:
 # 53 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 24
 # 54 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Artist_Text_5
+	msgbox SilversunCity_Houses_Artist_Text_6, MSGBOX_NPC
 # 55 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 	goto SilversunCity_Houses_Artist_7
@@ -69,15 +69,13 @@ SilversunCity_Houses_Artist_10:
 # 0 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne SilversunCity_Houses_Artist_16
-# 33 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Artist_Text_4
 # 34 "data//maps/SilversunCity_Houses/scripts.pory"
-	release
+	msgbox SilversunCity_Houses_Artist_Text_5, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 SilversunCity_Houses_Artist_13:
 # 44 "data//maps/SilversunCity_Houses/scripts.pory"
-	msgbox SilversunCity_Houses_Artist_Text_7
+	msgbox SilversunCity_Houses_Artist_Text_8, MSGBOX_NPC
 # 45 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 # 47 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -98,9 +96,11 @@ SilversunCity_Houses_Artist_16:
 # 29 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 # 30 "data//maps/SilversunCity_Houses/scripts.pory"
-	giveitem ITEM_MIRROR_HERB
+	giveitem ITEM_HM04
 # 31 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SILVERSUN_ARTIST, 2
+# 32 "data//maps/SilversunCity_Houses/scripts.pory"
+	msgbox SilversunCity_Houses_Artist_Text_4, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 
@@ -220,16 +220,26 @@ SilversunCity_Houses_Artist_Text_3:
 	.string "this, have it!$"
 
 SilversunCity_Houses_Artist_Text_4:
-# 33 "data//maps/SilversunCity_Houses/scripts.pory"
+# 32 "data//maps/SilversunCity_Houses/scripts.pory"
+	.string "ARSALAN: I have no need of it, because\n"
+	.string "MY true strength lies in my artistic\l"
+	.string "vision! But you, my dear helpful\l"
+	.string "philistine, might benefit from it. But\l"
+	.string "you'll need to receive the Drama Badge\l"
+	.string "from Gloria before your Pokémon can use\l"
+	.string "it. Farewell!$"
+
+SilversunCity_Houses_Artist_Text_5:
+# 34 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "ARSALAN: But you do not have it! An\n"
 	.string "artist's eyes cannot be fooled.$"
 
-SilversunCity_Houses_Artist_Text_5:
+SilversunCity_Houses_Artist_Text_6:
 # 37 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "ARSALAN: Just use the regular black\n"
 	.string "paint, you say? Pah! Philistine!$"
 
-SilversunCity_Houses_Artist_Text_6:
+SilversunCity_Houses_Artist_Text_7:
 # 42 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "ARSALAN: Myself, I have no patience for\n"
 	.string "theater. No no! Although Gloria is\l"
@@ -252,17 +262,20 @@ SilversunCity_Houses_Artist_Text_6:
 	.string "on my canvas. I need some Black Sludge.\p"
 	.string "ARSALAN: Will you help me?$"
 
-SilversunCity_Houses_Artist_Text_7:
+SilversunCity_Houses_Artist_Text_8:
 # 44 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "ARSALAN: Arsalan is most pleased! I\n"
 	.string "eagerly await your return.$"
 
 SilversunCity_Houses_Tutor_Text_0:
 # 65 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "I'm medidating. Come back to me later.\n"
-	.string "Get 6 badges first.\p"
+	.string "I'm the sole proprietor of Drifblim\n"
+	.string "Travels Pvt. Ltd.\p"
 	.string "...\p"
-	.string "Yes, my meditations are long.$"
+	.string "Want a pass? Sure thing. It'll cost you\n"
+	.string "99999.\p"
+	.string "Haven't got the money? Then scram, kid!\n"
+	.string "I'm doing business here.$"
 
 SilversunCity_Houses_NPC1_Text_0:
 # 79 "data//maps/SilversunCity_Houses/scripts.pory"

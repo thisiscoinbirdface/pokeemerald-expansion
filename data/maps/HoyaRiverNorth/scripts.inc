@@ -167,15 +167,13 @@ Route6_Transition_EventScript_KohlaBattle_Movement_3:
 
 Route6_Transition_EventScript_SharpedoBlocker_Text_0:
 # 7 "data//maps/HoyaRiverNorth/scripts.pory"
-	.string "Stop right there! We're from the\n"
-	.string "Pokémon Ranger Institute.\p"
+	.string "I'm from the Pokémon Ranger Institute.\p"
 	.string "There's a dangerous Pokémon in the\n"
-	.string "Hoya River so we can't let you through.\p"
+	.string "Hoya River - it smashed into the\l"
+	.string "riverbank and threw these boulders up!\p"
 	.string "What is it?\p"
-	.string "Don't be shocked - it's a wild MEGA\n"
-	.string "SHARPEDO! It's on its way down south,\l"
-	.string "so once it passes, we'll reopen the\l"
-	.string "bridge.$"
+	.string "Don't be shocked - it's a wild Mega\n"
+	.string "Sharpedo!$"
 
 Route6_Transition_EventScript_KohlaBattle_Text_0:
 # 51 "data//maps/HoyaRiverNorth/scripts.pory"

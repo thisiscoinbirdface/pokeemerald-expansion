@@ -543,7 +543,7 @@ SilversunCity_Sewers_Market_Muk_4:
 # 393 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox SilversunCity_Sewers_Market_Muk_Text_2
 # 394 "data//maps/SilversunCity_Sewers/scripts.pory"
-	removeitem ITEM_BOTTLE_CAP, 3
+	removeitem ITEM_BOTTLE_CAP
 # 395 "data//maps/SilversunCity_Sewers/scripts.pory"
 	giveitem ITEM_ABILITY_CAPSULE
 # 396 "data//maps/SilversunCity_Sewers/scripts.pory"

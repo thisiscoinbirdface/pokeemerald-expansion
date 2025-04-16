@@ -226,9 +226,9 @@ WhiteSign_SilversunCity_Sewers::
 	end
 
 
-WhiteSign_SilversunCity_Tutor::
+WhiteSign_SilversunCity_DrifblimTravels::
 # 227 "data//scripts/customscripts_signs.pory"
-	msgbox WhiteSign_SilversunCity_Tutor_Text_0, MSGBOX_SIGN
+	msgbox WhiteSign_SilversunCity_DrifblimTravels_Text_0, MSGBOX_SIGN
 	end
 
 
@@ -456,10 +456,10 @@ WhiteSign_SilversunCity_Sewers_Text_0:
 	.string "Silversun Sewers\n"
 	.string "Entry for authorised personnel only.$"
 
-WhiteSign_SilversunCity_Tutor_Text_0:
+WhiteSign_SilversunCity_DrifblimTravels_Text_0:
 # 227 "data//scripts/customscripts_signs.pory"
-	.string "Move Maniac.\n"
-	.string "Master of Myriad Moves$"
+	.string "Drifblim Travels Pvt. Ltd.\n"
+	.string "No free rides!$"
 
 WhiteSign_SilversunCity_Gym_Text_0:
 # 232 "data//scripts/customscripts_signs.pory"

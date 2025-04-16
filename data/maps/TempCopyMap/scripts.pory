@@ -751,7 +751,7 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
     lockall
     faceplayer
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
-    msgbox(format("Drifblim opens a map and gestures at Silversun City.\pFly to Silversun City?"), MSGBOX_YESNO)
+    msgbox(format("Drifblim opens a map and gestures towards Silversun City. Fly there?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         release
@@ -759,7 +759,6 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         delay(30)
-        waitmovement(0)
         warp(MAP_SILVERSUN_CITY, 28, 22)
 
     } else {
@@ -769,6 +768,26 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
     end
 }
 
+script Common_EventScript_DrifblimTravels_ToGalecrest{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    msgbox(format("Drifblim opens a map and gestures towards Galecrest City. Fly there?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        release
+        //fly
+        hidefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        delay(30)
+        warp(MAP_GALECREST_CITY, 30, 47)
+
+    } else {
+        msgbox(format("Drifblim looks dejected..."), MSGBOX_NPC)
+    }
+
+    end
+}
 
 
 

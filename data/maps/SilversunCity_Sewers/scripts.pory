@@ -391,7 +391,7 @@ script SilversunCity_Sewers_Market_Muk{
         if (var(VAR_RESULT) == 1){
 
             msgbox(format("{PLAYER} handed a Bottle Cap to Muk.\pMuk chomps down on it with joy!\p...\pIt spits out something onto the floor."))
-            removeitem(ITEM_BOTTLE_CAP, 3)
+            removeitem(ITEM_BOTTLE_CAP)
             giveitem(ITEM_ABILITY_CAPSULE)
             msgbox(format("Muk disappears into the sewers..."))
             release

@@ -27,21 +27,21 @@ script SilversunCity_Houses_Artist{
                 completequest(QUEST_SILVERSUN_ARTIST)                
                 msgbox(format("ARSALAN: Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
                 release
-                giveitem(ITEM_MIRROR_HERB)
+                giveitem(ITEM_HM04)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
+                msgbox(format("ARSALAN: I have no need of it, because MY true strength lies in my artistic vision! But you, my dear helpful philistine, might benefit from it. But you'll need to receive the Drama Badge from Gloria before your Pokémon can use it. Farewell!"), MSGBOX_NPC)
             } else {
-                msgbox(format("ARSALAN: But you do not have it! An artist's eyes cannot be fooled."))
-                release
+                msgbox(format("ARSALAN: But you do not have it! An artist's eyes cannot be fooled."), MSGBOX_NPC)
             }
         } else {
-            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"))
+            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"), MSGBOX_NPC)
         }
     }
 
     if (var(VAR_SILVERSUN_ARTIST) == 0){
         msgbox(format("ARSALAN: Myself, I have no patience for theater. No no! Although Gloria is indeed fantastic. I admire her interpretation of the morbid.\pARSALAN: Me? My creative pulse compels me to bring the world to life through paint and brush! Yes yes! I am none other than the legendary ARSALAN. My works adorn the most prestigious walls in Cormoria!\p...\pARSALAN: But Arsalan is struggling now. Why, you ask? Well well.\pARSALAN: You see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some Black Sludge.\pARSALAN: Will you help me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("ARSALAN: Arsalan is most pleased! I eagerly await your return."))
+            msgbox(format("ARSALAN: Arsalan is most pleased! I eagerly await your return."), MSGBOX_NPC)
             release
             //Start quest
             setvar(VAR_SILVERSUN_ARTIST, 1)
@@ -51,7 +51,7 @@ script SilversunCity_Houses_Artist{
             applymovement(2, moves(emote_exclamation_mark))
             waitmovement(0)
             delay(24)
-            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"))
+            msgbox(format("ARSALAN: Just use the regular black paint, you say? Pah! Philistine!"), MSGBOX_NPC)
             release
         }
     }
@@ -62,7 +62,7 @@ script SilversunCity_Houses_Artist{
 
 //TUTOR: Someone
 script SilversunCity_Houses_Tutor{
-    msgbox(format("I'm medidating. Come back to me later. Get 6 badges first.\p...\pYes, my meditations are long."), MSGBOX_NPC)
+    msgbox(format("I'm the sole proprietor of Drifblim Travels Pvt. Ltd.\p...\pWant a pass? Sure thing. It'll cost you 99999.\pHaven't got the money? Then scram, kid! I'm doing business here."), MSGBOX_NPC)
     end
 }
 
