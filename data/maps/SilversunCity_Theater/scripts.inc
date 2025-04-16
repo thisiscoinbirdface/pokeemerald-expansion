@@ -103,6 +103,8 @@ SilversunCity_Theater_Leader::
 	setflag FLAG_BADGE04_GET
 # 87 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_10
+# 89 "data//maps/SilversunCity_Theater/scripts.pory"
+	giveitem ITEM_RARE_SHARD, 3
 # 92 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_11
 # 93 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -456,7 +458,10 @@ SilversunCity_Theater_Leader_Text_9:
 
 SilversunCity_Theater_Leader_Text_10:
 # 87 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "The Drama Badge...$"
+	.string "GLORIA: The Drama Badge will let you\n"
+	.string "use HM STRENGTH outside of battle. And\l"
+	.string "I must give you these beautiful jewels\l"
+	.string "too.$"
 
 SilversunCity_Theater_Leader_Text_11:
 # 92 "data//maps/SilversunCity_Theater/scripts.pory"

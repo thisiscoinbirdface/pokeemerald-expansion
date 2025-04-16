@@ -173,33 +173,35 @@ GalecrestCityGym_Leader::
 # 163 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 # 164 "data//maps/GalecrestCityGym/scripts.pory"
+	giveitem ITEM_RARE_SHARD, 3
+# 165 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
-# 167 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Leader_Text_4
 # 168 "data//maps/GalecrestCityGym/scripts.pory"
-	release
+	msgbox GalecrestCityGym_Leader_Text_4
 # 169 "data//maps/GalecrestCityGym/scripts.pory"
+	release
+# 170 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
-# 171 "data//maps/GalecrestCityGym/scripts.pory"
-	opendoor 23, 26
 # 172 "data//maps/GalecrestCityGym/scripts.pory"
-	waitdooranim
+	opendoor 23, 26
 # 173 "data//maps/GalecrestCityGym/scripts.pory"
-	applymovement 5, GalecrestCityGym_Leader_Movement_0
+	waitdooranim
 # 174 "data//maps/GalecrestCityGym/scripts.pory"
-	waitmovement 0
+	applymovement 5, GalecrestCityGym_Leader_Movement_0
 # 175 "data//maps/GalecrestCityGym/scripts.pory"
-	delay 8
+	waitmovement 0
 # 176 "data//maps/GalecrestCityGym/scripts.pory"
-	removeobject 5
-# 177 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 8
+# 177 "data//maps/GalecrestCityGym/scripts.pory"
+	removeobject 5
 # 178 "data//maps/GalecrestCityGym/scripts.pory"
-	closedoor 23, 26
+	delay 8
 # 179 "data//maps/GalecrestCityGym/scripts.pory"
+	closedoor 23, 26
+# 180 "data//maps/GalecrestCityGym/scripts.pory"
 	waitdooranim
 GalecrestCityGym_Leader_1:
-# 183 "data//maps/GalecrestCityGym/scripts.pory"
+# 184 "data//maps/GalecrestCityGym/scripts.pory"
 	releaseall
 	return
 
@@ -209,9 +211,9 @@ GalecrestCityGym_Leader_2:
 	goto GalecrestCityGym_Leader_1
 
 
-# 173 "data//maps/GalecrestCityGym/scripts.pory"
+# 174 "data//maps/GalecrestCityGym/scripts.pory"
 GalecrestCityGym_Leader_Movement_0:
-# 173 "data//maps/GalecrestCityGym/scripts.pory"
+# 174 "data//maps/GalecrestCityGym/scripts.pory"
 	walk_up
 	step_end
 
@@ -347,10 +349,12 @@ GalecrestCityGym_Leader_Text_2:
 GalecrestCityGym_Leader_Text_3:
 # 162 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "KOHLA: The Stoic Badge lets you use the\n"
-	.string "HM move ROCK SMASH outside of battle.$"
+	.string "HM move ROCK SMASH outside of battle.\p"
+	.string "...\p"
+	.string "KOHLA: And these are yours too.$"
 
 GalecrestCityGym_Leader_Text_4:
-# 167 "data//maps/GalecrestCityGym/scripts.pory"
+# 168 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "KOHLA: {PLAYER}, despite being the\n"
 	.string "chum you are, I owe you. You showed me\l"
 	.string "my lack of strength. That's why I chose\l"
@@ -363,7 +367,7 @@ GalecrestCityGym_Leader_Text_4:
 	.string "you in Silversun City.$"
 
 GalecrestCityGym_Text_LeaderIntro::
-# 188 "data//maps/GalecrestCityGym/scripts.pory"
+# 189 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "KOHLA: Yes {PLAYER}, it's me.\n"
 	.string "Traditionally, the Ace Rookie of the\l"
 	.string "graduating class assumes Gym Leader\l"
@@ -376,7 +380,7 @@ GalecrestCityGym_Text_LeaderIntro::
 	.string "REAL team!$"
 
 GalecrestCityGym_Text_Defeated::
-# 192 "data//maps/GalecrestCityGym/scripts.pory"
+# 193 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "KOHLA: Another defeat...despite\n"
 	.string "evolving my Charcadet, I still couldn't\l"
 	.string "win. I need more strength...$"

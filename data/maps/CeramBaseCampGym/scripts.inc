@@ -296,17 +296,17 @@ CeramBaseCampGym_LeaderBattle::
 # 211 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
 # 213 "data//maps/CeramBaseCampGym/scripts.pory"
-	giveitem ITEM_TM_SUNNY_DAY
-# 214 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+	giveitem ITEM_RARE_SHARD, 3
 # 215 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+# 216 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 218 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_5
 # 219 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_5
+# 220 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 CeramBaseCampGym_LeaderBattle_1:
-# 223 "data//maps/CeramBaseCampGym/scripts.pory"
+# 224 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
@@ -544,13 +544,14 @@ CeramBaseCampGym_LeaderBattle_Text_3:
 	.string "And I'd also like to give you this.$"
 
 CeramBaseCampGym_LeaderBattle_Text_4:
-# 214 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "This TM will let your Pokémon bring\n"
-	.string "sunlight on the battlefield, powering\l"
-	.string "up FIRE-type moves!$"
+# 215 "data//maps/CeramBaseCampGym/scripts.pory"
+	.string "Since this is your second badge, you\n"
+	.string "must know what these shards do by now.\l"
+	.string "There's a shrine close to Route 4, so\l"
+	.string "why don't you use these there?$"
 
 CeramBaseCampGym_LeaderBattle_Text_5:
-# 218 "data//maps/CeramBaseCampGym/scripts.pory"
+# 219 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And now it's time for you to set off on\n"
 	.string "your journey. I hope you manage to find\l"
 	.string "the dreamstone and Professor Tenebris.\l"
@@ -559,7 +560,7 @@ CeramBaseCampGym_LeaderBattle_Text_5:
 	.string "run into them!$"
 
 CeramBaseCampGym_Text_Intro::
-# 228 "data//maps/CeramBaseCampGym/scripts.pory"
+# 229 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Who's my next appointment? Ah! It's\n"
 	.string "you, {PLAYER}. A pleasant surprise.\l"
 	.string "I'm sick of all this work. This office is\l"
@@ -570,7 +571,7 @@ CeramBaseCampGym_Text_Intro::
 	.string "change!$"
 
 CeramBaseCampGym_Text_Defeated::
-# 232 "data//maps/CeramBaseCampGym/scripts.pory"
+# 233 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "What a match! What a display! I could\n"
 	.string "not be more pleased, {PLAYER}. The\l"
 	.string "way you stand, you might be able to\l"
