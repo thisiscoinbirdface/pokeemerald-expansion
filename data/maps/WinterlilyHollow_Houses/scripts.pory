@@ -37,3 +37,7 @@ script WinterlilyHollow_Houses_Carkol{
     msgbox(format("Carkol is steaming! The cold seems not to affect it at all."), MSGBOX_NPC)
     end
 }
+
+
+
+
