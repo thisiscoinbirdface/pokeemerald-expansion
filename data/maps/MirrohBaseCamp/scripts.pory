@@ -73,6 +73,7 @@ script MirrohBaseCamp_EventScript_NPC2{
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
     applymovement(5, moves(walk_right walk_down * 3 walk_left * 9))
+    waitmovement(5)
     removeobject(5)
     setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
     clearflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)

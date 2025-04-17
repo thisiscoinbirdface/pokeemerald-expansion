@@ -119,12 +119,14 @@ MirrohBaseCamp_EventScript_NPC2::
 # 75 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement 5, MirrohBaseCamp_EventScript_NPC2_Movement_1
 # 76 "data//maps/MirrohBaseCamp/scripts.pory"
-	removeobject 5
+	waitmovement 5
 # 77 "data//maps/MirrohBaseCamp/scripts.pory"
-	setflag FLAG_HIDE_GRAVEYARD_HISTORIAN
+	removeobject 5
 # 78 "data//maps/MirrohBaseCamp/scripts.pory"
-	clearflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
+	setflag FLAG_HIDE_GRAVEYARD_HISTORIAN
 # 79 "data//maps/MirrohBaseCamp/scripts.pory"
+	clearflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
+# 80 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 

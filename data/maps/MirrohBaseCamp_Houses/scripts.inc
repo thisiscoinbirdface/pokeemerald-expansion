@@ -153,4 +153,4 @@ MirrohBaseCamp_Houses_Historian_Text_5:
 MirrohBaseCamp_Houndstone_Text_0:
 # 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "Houndstone is walking slowly. It's\n"
-	.string "getting old now.$"
+	.string "getting old now...$"
