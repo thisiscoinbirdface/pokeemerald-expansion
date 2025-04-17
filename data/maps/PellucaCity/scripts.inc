@@ -384,6 +384,43 @@ PellucaCity_WingullCritique::
 	end
 
 
+PellucaCity_NPC10::
+# 291 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC10_Text_0, MSGBOX_NPC
+	end
+
+
+PellucaCity_NPC11::
+# 296 "data//maps/PellucaCity/scripts.pory"
+	goto_if_set FLAG_PELLUCA_CITY_TM_GIVER, PellucaCity_NPC11_2
+# 301 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC8_Text_0, MSGBOX_NPC
+# 302 "data//maps/PellucaCity/scripts.pory"
+	giveitem ITEM_TM01
+# 303 "data//maps/PellucaCity/scripts.pory"
+	setflag FLAG_PELLUCA_CITY_TM_GIVER
+	end
+
+PellucaCity_NPC11_2:
+# 297 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC8_Text_0, MSGBOX_NPC
+	end
+
+
+PellucaCity_NPC12::
+# 308 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC12_Text_0, MSGBOX_NPC
+	end
+
+
+PellucaCity_Stantler::
+# 313 "data//maps/PellucaCity/scripts.pory"
+	playmoncry SPECIES_STANTLER, CRY_MODE_NORMAL
+# 314 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_Stantler_Text_0, MSGBOX_NPC
+	end
+
+
 # 12 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_Greta_Trigger0_Movement_0:
 # 12 "data//maps/PellucaCity/scripts.pory"
@@ -629,7 +666,9 @@ PellucaCity_NPC3_Text_0:
 PellucaCity_NPC4_Text_0:
 # 183 "data//maps/PellucaCity/scripts.pory"
 	.string "This bridge is too small. It's nothing\n"
-	.string "like the cycling roads in other regions!$"
+	.string "like the cycling roads in other regions!\l"
+	.string "Why does the mayor even let us cycle\l"
+	.string "then?$"
 
 PellucaCity_NPC5_Text_0:
 # 189 "data//maps/PellucaCity/scripts.pory"
@@ -660,8 +699,8 @@ PellucaCity_NPC7_Text_0:
 PellucaCity_NPC8_Text_0:
 # 217 "data//maps/PellucaCity/scripts.pory"
 	.string "What's even the point of fishing if the\n"
-	.string "SHARPEDO's going to scare all the fish\l"
-	.string "away?$"
+	.string "Mega Sharpedo's going to scare all the\l"
+	.string "fish away?$"
 
 PellucaCity_Sealeo_Text_0:
 # 225 "data//maps/PellucaCity/scripts.pory"
@@ -707,4 +746,24 @@ PellucaCity_WingullCritique_Text_0:
 # 278 "data//maps/PellucaCity/scripts.pory"
 	.string "That little girl is so bad! Throwing\n"
 	.string "stones at Pokémon...that's poor\l"
-	.string "parenting.$"
+	.string "parenting. The mayor should really do\l"
+	.string "something but he's too incompetent.$"
+
+PellucaCity_NPC10_Text_0:
+# 291 "data//maps/PellucaCity/scripts.pory"
+	.string "What's even the point of fishing if the\n"
+	.string "Mega Sharpedo's going to scare all the\l"
+	.string "fish away? I wish our mayor could do\l"
+	.string "something about it.$"
+
+PellucaCity_NPC12_Text_0:
+# 308 "data//maps/PellucaCity/scripts.pory"
+	.string "The mayor isn't maintaining the city one\n"
+	.string "bit! My Stantler eating the overgrown\l"
+	.string "flowers is actually contributing to\l"
+	.string "city maintenance.$"
+
+PellucaCity_Stantler_Text_0:
+# 314 "data//maps/PellucaCity/scripts.pory"
+	.string "Stantler is nonchalantly chomping on\n"
+	.string "the flowers.$"

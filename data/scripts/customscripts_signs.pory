@@ -247,6 +247,22 @@ script WhiteSign_HoyaRiverSouth{
     end
 }
 
+script WhiteSign_Route6_ToSilversun{
+    msgbox(format("Route 6\nBeware the marshes!\p{UP_ARROW}Silversun City.\n{DOWN_ARROW}Pelluca City."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route6_ToPelluca{
+    msgbox(format("Route 6\nBeware the marshes!\p{LEFT_ARROW}Pelluca City.\n{RIGHT_ARROW}Silversun City."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_Route6_RangerInstitute{
+    msgbox(format("The Pokemon Ranger Institute"), MSGBOX_SIGN)
+    end
+}
+
+
 
 //Pelluca City
 script WhiteSign_PellucaCity_Main{
