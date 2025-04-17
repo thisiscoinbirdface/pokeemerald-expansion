@@ -1,4 +1,4 @@
-mapscripts PellucaCity_PokemonCenter_MapScripts{
+mapscripts PellucaCityPokemonCenter_MapScripts{
     MAP_SCRIPT_ON_TRANSITION: PellucaCity_PokemonCenter_OnTransition
 }
 

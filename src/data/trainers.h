@@ -4523,7 +4523,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHBASECAMP_LEADER] =
     {
 #line 1867
-        .trainerName = _("CAROLINE"),
+        .trainerName = _("Carona"),
 #line 1868
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 1869
@@ -4693,7 +4693,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1932
-            .species = SPECIES_ORBEETLE,
+            .species = SPECIES_DOTTLER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1934
             .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
@@ -4709,7 +4709,7 @@ F_TRAINER_FEMALE |
 #line 1938
             .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
 #line 1937
-            .lvl = 31,
+            .lvl = 30,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
