@@ -919,7 +919,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Girafarig
+Stantler
 Level: 20
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -1844,14 +1844,14 @@ Pic: Wally
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
 Axew
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewott
-Level: 33
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Gallade @ Galladite
@@ -1859,12 +1859,12 @@ Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ceruledge
-Level: 35
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_MIRROHBASECAMP_LEADER ===
-Name: CAROLINE
+Name: Carona
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
@@ -1875,19 +1875,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toxicroak
-Level: 32
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pangoro
-Level: 32
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Monferno
-Level: 32
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lucario @ Lucarionite
-Level: 34
+Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_A ===
@@ -1901,15 +1901,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Bayleef
-Level: 32
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ninetales-Alola
-Level: 32
+Vulpix-Alola
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Dusclops
-Level: 34
+Banette
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_B ===
@@ -1922,19 +1922,19 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 Vivillon
-Level: 32
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Snom
-Level: 33
+Level: 29
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Orbeetle
-Level: 33
+Level: 29
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Heracross
-Level: 35
+Level: 31
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 
@@ -1949,15 +1949,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Rufflet
-Level: 32
+Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Palpitoad
-Level: 34
+Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Muk-Alola
-Level: 35
+Level: 30
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_MIRROHEXT_D ===
@@ -1970,11 +1970,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Rapidash-Galar
-Level: 33
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Mudsdale
-Level: 34
+Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIRROHEXT_E ===
@@ -1987,15 +1987,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pangoro
-Level: 34
+Level: 29
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 Sneasler
-Level: 34
+Level: 30
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 Gurdurr
-Level: 36
+Level: 32
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_F ===

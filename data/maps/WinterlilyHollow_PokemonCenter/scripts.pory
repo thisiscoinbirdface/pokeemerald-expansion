@@ -1,0 +1,16 @@
+mapscripts WinterlilyHollow_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: WinterlilyHollow_PokemonCenter_OnTransition
+}
+
+script WinterlilyHollow_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_WINTERLILY_HOLLOW)
+}
+
+script WinterlilyHollow_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+

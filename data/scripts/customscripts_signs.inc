@@ -292,6 +292,42 @@ WhiteSign_PellucaCity_Fishery::
 	end
 
 
+WhiteSign_MirrohBaseCamp_Gym::
+# 292 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_MirrohBaseCamp_Gym_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_MirrohBaseCamp_Main::
+# 297 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_MirrohBaseCamp_Main_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_MirrohBaseCamp_Martha::
+# 302 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_MirrohBaseCamp_Martha_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route8_ToBaseCamp::
+# 309 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route8_ToBaseCamp_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route8_ToMtMirroh::
+# 313 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route8_ToMtMirroh_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route8_Dojo::
+# 317 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route8_Dojo_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_CarabrueTown_Main_Text_0:
 # 6 "data//scripts/customscripts_signs.pory"
 	.string "Carabrue Town\n"
@@ -558,3 +594,34 @@ WhiteSign_PellucaCity_Fishery_Text_0:
 # 284 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca Fishery\n"
 	.string "Fishing supplies and tours!$"
+
+WhiteSign_MirrohBaseCamp_Gym_Text_0:
+# 292 "data//scripts/customscripts_signs.pory"
+	.string "Mirroh Base Camp Gym\n"
+	.string "NOW DECOMISSIONED.$"
+
+WhiteSign_MirrohBaseCamp_Main_Text_0:
+# 297 "data//scripts/customscripts_signs.pory"
+	.string "Mirroh Base Camp\n"
+	.string "NOW DECOMISSIONED.$"
+
+WhiteSign_MirrohBaseCamp_Martha_Text_0:
+# 302 "data//scripts/customscripts_signs.pory"
+	.string "Graveyard Management\n"
+	.string "Caretaker: Martha$"
+
+WhiteSign_Route8_ToBaseCamp_Text_0:
+# 309 "data//scripts/customscripts_signs.pory"
+	.string "Route 8\p"
+	.string "{DOWN_ARROW}Mirroh Base Camp.\n"
+	.string "{UP_ARROW}Mt. Mirroh.$"
+
+WhiteSign_Route8_ToMtMirroh_Text_0:
+# 313 "data//scripts/customscripts_signs.pory"
+	.string "Route 8\p"
+	.string "{UP_ARROW}Mt. Mirroh.\n"
+	.string "{UP_ARROW}Winterlily Hollow.$"
+
+WhiteSign_Route8_Dojo_Text_0:
+# 317 "data//scripts/customscripts_signs.pory"
+	.string "Fighting Dojo$"

@@ -367,7 +367,7 @@
       "y": 78,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Orphanage"
+      "script": "WhiteSign_Route8_ToBaseCamp"
     },
     {
       "type": "sign",
@@ -375,7 +375,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Orphanage"
+      "script": "WhiteSign_Route8_Dojo"
     },
     {
       "type": "sign",
@@ -383,7 +383,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "WhiteSign_SilversunCity_Orphanage"
+      "script": "WhiteSign_Route8_ToMtMirroh"
     }
   ]
 }

@@ -1,0 +1,16 @@
+mapscripts PellucaCity_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: PellucaCity_PokemonCenter_OnTransition
+}
+
+script PellucaCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_PELLUCA_CITY)
+}
+
+script PellucaCity_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+

@@ -285,3 +285,35 @@ script WhiteSign_PellucaCity_Fishery{
     end
 }
 
+
+
+//mirroh base camp
+script WhiteSign_MirrohBaseCamp_Gym{
+    msgbox(format("Mirroh Base Camp Gym\nNOW DECOMISSIONED."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_MirrohBaseCamp_Main{
+    msgbox(format("Mirroh Base Camp\nNOW DECOMISSIONED."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_MirrohBaseCamp_Martha{
+    msgbox(format("Graveyard Management\nCaretaker: Martha"), MSGBOX_SIGN)
+    end
+}
+
+
+//route 8
+script WhiteSign_Route8_ToBaseCamp{
+    msgbox(format("Route 8\p{DOWN_ARROW}Mirroh Base Camp.\n{UP_ARROW}Mt. Mirroh."), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Route8_ToMtMirroh{
+    msgbox(format("Route 8\p{UP_ARROW}Mt. Mirroh.\n{UP_ARROW}Winterlily Hollow."), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Route8_Dojo{
+    msgbox(format("Fighting Dojo"), MSGBOX_SIGN)
+    end
+}
