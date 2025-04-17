@@ -214,7 +214,7 @@ script PellucaCity_NPC7{
 }
 //fishery 1
 script PellucaCity_NPC8{
-    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
+    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away? I wish our mayor would do something about it."), MSGBOX_NPC)
     end
 }
 
@@ -286,24 +286,27 @@ script PellucaCity_WingullCritique{
 
 
 
-
+//lady next to restaurant
 script PellucaCity_NPC10{
-    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away? I wish our mayor could do something about it."), MSGBOX_NPC)
+    msgbox(format("I ate too many apple tarts! I'm too full. Whoever said people have a second stomach for dessert was lying!"), MSGBOX_NPC)
     end
 }
 
+//lady staring off by the pc
 script PellucaCity_NPC11{
     if (flag(FLAG_PELLUCA_CITY_TM_GIVER)){
-        msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
+        msgbox(format("Thank you. I needed to let go. Life is too short to worry!"), MSGBOX_NPC)
         end
     }
     
-    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
+    msgbox(format("The Pelluca Gym is across the water...when I was younger, I tried to challenge Jania many times, but I could never win. She was my classmate, you know? We grew up in Galecrest City together. She went on to become a big Gym Leader and I moved here too, with a regular family and a regular job. Whenever I look off at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
     giveitem(ITEM_TM01)
     setflag(FLAG_PELLUCA_CITY_TM_GIVER)
+    msgbox(format("Thank you. I needed to let go."), MSGBOX_NPC)
     end
 }
 
+//stantler dude at bridge foot fishery side
 script PellucaCity_NPC12{
     msgbox(format("The mayor isn't maintaining the city one bit! My Stantler eating the overgrown flowers is actually contributing to city maintenance."), MSGBOX_NPC)
     end

@@ -250,26 +250,44 @@ WhiteSign_HoyaRiverSouth::
 	end
 
 
+WhiteSign_Route6_ToSilversun::
+# 251 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route6_ToSilversun_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route6_ToPelluca::
+# 256 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route6_ToPelluca_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Route6_RangerInstitute::
+# 261 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Route6_RangerInstitute_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_PellucaCity_Main::
-# 253 "data//scripts/customscripts_signs.pory"
+# 269 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_MayorHouse::
-# 258 "data//scripts/customscripts_signs.pory"
+# 274 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_MayorHouse_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_Restaurant::
-# 263 "data//scripts/customscripts_signs.pory"
+# 279 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Restaurant_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_Fishery::
-# 268 "data//scripts/customscripts_signs.pory"
+# 284 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Fishery_Text_0, MSGBOX_SIGN
 	end
 
@@ -504,21 +522,39 @@ WhiteSign_HoyaRiverSouth_Text_0:
 	.string "{LEFT_ARROW}Pelluca City.\n"
 	.string "{RIGHT_ARROW}Route 6.$"
 
+WhiteSign_Route6_ToSilversun_Text_0:
+# 251 "data//scripts/customscripts_signs.pory"
+	.string "Route 6\n"
+	.string "Beware the marshes!\p"
+	.string "{UP_ARROW}Silversun City.\n"
+	.string "{DOWN_ARROW}Pelluca City.$"
+
+WhiteSign_Route6_ToPelluca_Text_0:
+# 256 "data//scripts/customscripts_signs.pory"
+	.string "Route 6\n"
+	.string "Beware the marshes!\p"
+	.string "{LEFT_ARROW}Pelluca City.\n"
+	.string "{RIGHT_ARROW}Silversun City.$"
+
+WhiteSign_Route6_RangerInstitute_Text_0:
+# 261 "data//scripts/customscripts_signs.pory"
+	.string "The Pokemon Ranger Institute$"
+
 WhiteSign_PellucaCity_Main_Text_0:
-# 253 "data//scripts/customscripts_signs.pory"
+# 269 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca City\n"
 	.string "Where rivers meet.$"
 
 WhiteSign_PellucaCity_MayorHouse_Text_0:
-# 258 "data//scripts/customscripts_signs.pory"
+# 274 "data//scripts/customscripts_signs.pory"
 	.string "Mayor's House$"
 
 WhiteSign_PellucaCity_Restaurant_Text_0:
-# 263 "data//scripts/customscripts_signs.pory"
+# 279 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca Restauant\n"
 	.string "Don't skip our apple tarts!$"
 
 WhiteSign_PellucaCity_Fishery_Text_0:
-# 268 "data//scripts/customscripts_signs.pory"
+# 284 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca Fishery\n"
 	.string "Fishing supplies and tours!$"
