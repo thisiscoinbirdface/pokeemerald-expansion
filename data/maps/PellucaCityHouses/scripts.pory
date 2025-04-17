@@ -28,11 +28,61 @@ script PellucaCityHouses_GabSibling3{
 
 
 //Quest NPC
+script PellucaCityHouses_Mayor_Reward{
+        msgbox(format("Please accept this reward."), MSGBOX_NPC)
+        dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
+
+        if (var(VAR_RESULT) == 1){
+            setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)
+            showitemdescription
+            msgbox(format("Are you sure?"))
+            if (var(VAR_RESULT == 1))
+        }
+
+}
+
+script PellucaCityHouses_Mayor_Reward_1{
+    setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)
+    showitemdescription
+    msgbox(format("Are you sure?"))
+    if (var(VAR_RESULT == 1)){
+        //giveitem
+        giveitem(ITEM_WEAKNESS_POLICY)
+        goto(PellucaCityHouses_Mayor_Reward_End)
+    } else {
+        goto(PellucaCityHouses_Mayor_Reward)
+    }
+}
+
+script PellucaCityHouses_Mayor_Reward_2{
+    setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)
+    showitemdescription
+    msgbox(format("Are you sure?"))
+    if (var(VAR_RESULT == 1)){
+        giveitem(ITEM_BLUNDER_POLICY)
+        goto(PellucaCityHouses_Mayor_Reward_End)
+    } else {
+        goto(PellucaCityHouses_Mayor_Reward)
+    }
+}
+
+script PellucaCityHouses_Mayor_Reward_End{
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
+    msgbox(format("On the behalf of residents of Pelluca City, thank you for your service!"), MSGBOX_NPC)
+}
+
 script PellucaCityHouses_NPC1{
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 7){
+        //quest done
+        msgbox(format("I haven't seen any Claunchers recently, so I can finally relax a little!"), MSGBOX_NPC)
+        end
+    }
+
+
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
         //quest done
-        msgbox(format("Well done!"), MSGBOX_NPC)
-        end
+        msgbox(format("Have you done the job? Excellent! Sigh, what a relief. I admit it - I've been a weak mayor. Too many blunders! I should be more proactive in taking care of my city."), MSGBOX_NPC)
+        goto(PellucaCityHouses_Mayor_Reward)
     }
 
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
@@ -45,7 +95,7 @@ script PellucaCityHouses_NPC1{
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
-        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this..."))
+        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this...blunder after blunder. I'm just too weak as a mayor!"))
         dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
 
         if (var(VAR_RESULT) == 0){
@@ -68,7 +118,7 @@ script PellucaCityHouses_NPC1{
     }
 
     //quest ongoing
-    msgbox(format("How's it going?"), MSGBOX_NPC)
+    msgbox(format("Please send five Claunchers back to the river!"), MSGBOX_NPC)
     end
 }
 
