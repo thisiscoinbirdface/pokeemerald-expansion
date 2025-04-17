@@ -180,7 +180,7 @@ script PellucaCity_NPC3{
 }
 //bridge cyclist
 script PellucaCity_NPC4{
-    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions!"), MSGBOX_NPC)
+    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions! Why does the mayor even let us cycle then?"), MSGBOX_NPC)
     end
 }
 //bridge other dude
@@ -214,7 +214,7 @@ script PellucaCity_NPC7{
 }
 //fishery 1
 script PellucaCity_NPC8{
-    msgbox(format("What's even the point of fishing if the SHARPEDO's going to scare all the fish away?"), MSGBOX_NPC)
+    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
     end
 }
 
@@ -275,7 +275,7 @@ script PellucaCity_WingullMother{
 }
 
 script PellucaCity_WingullCritique{
-    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting."), MSGBOX_NPC)
+    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting. The mayor should really do something but he's too incompetent."), MSGBOX_NPC)
     end
 }
 
@@ -283,3 +283,34 @@ script PellucaCity_WingullCritique{
 
 
 
+
+
+
+
+script PellucaCity_NPC10{
+    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away? I wish our mayor could do something about it."), MSGBOX_NPC)
+    end
+}
+
+script PellucaCity_NPC11{
+    if (flag(FLAG_PELLUCA_CITY_TM_GIVER)){
+        msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
+        end
+    }
+    
+    msgbox(format("What's even the point of fishing if the Mega Sharpedo's going to scare all the fish away?"), MSGBOX_NPC)
+    giveitem(ITEM_TM01)
+    setflag(FLAG_PELLUCA_CITY_TM_GIVER)
+    end
+}
+
+script PellucaCity_NPC12{
+    msgbox(format("The mayor isn't maintaining the city one bit! My Stantler eating the overgrown flowers is actually contributing to city maintenance."), MSGBOX_NPC)
+    end
+}
+
+script PellucaCity_Stantler{
+    playmoncry(SPECIES_STANTLER, CRY_MODE_NORMAL)
+    msgbox(format("Stantler is nonchalantly chomping on the flowers."), MSGBOX_NPC)
+    end
+}

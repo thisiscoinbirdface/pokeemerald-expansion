@@ -188,6 +188,8 @@ script WhiteSign_Route5_Vilethorn{
     end
 }
 
+
+//Silversun City
 script WoodSign_SilversunCity_Artist1{
     msgbox(format("You are NOT to disturb the great Arsalan!"), MSGBOX_SIGN)
     end
@@ -233,6 +235,8 @@ script WhiteSign_SilversunCity_Gym{
     end
 }
 
+
+//Route 6 Hoya River
 script WhiteSign_HoyaRiverNorth{
     msgbox(format("Hoya River North Crossin\nNo swimming in these waters!\p{RIGHT_ARROW}Silversun City.\n{DOWN_ARROW}Route 6."), MSGBOX_SIGN)
     end
@@ -244,4 +248,24 @@ script WhiteSign_HoyaRiverSouth{
 }
 
 
+//Pelluca City
+script WhiteSign_PellucaCity_Main{
+    msgbox(format("Pelluca City\nWhere rivers meet."), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_PellucaCity_MayorHouse{
+    msgbox(format("Mayor's House"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_PellucaCity_Restaurant{
+    msgbox(format("Pelluca Restauant\nDon't skip our apple tarts!"), MSGBOX_SIGN)
+    end
+}
+
+script WhiteSign_PellucaCity_Fishery{
+    msgbox(format("Pelluca Fishery\nFishing supplies and tours!"), MSGBOX_SIGN)
+    end
+}
 

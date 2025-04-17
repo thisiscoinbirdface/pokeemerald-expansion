@@ -201,7 +201,7 @@
 #define FLAG_HIDE_PELLUCA_MAYOR_MON3                                           0x4DD // Unused Flag
 #define FLAG_HIDE_PELLUCA_MAYOR_MON4                                           0x4DE // Unused Flag
 #define FLAG_HIDE_PELLUCA_MAYOR_MON5                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
+#define FLAG_PELLUCA_CITY_TM_GIVER                                           0x4DA // Unused Flag
 #define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
 #define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
 #define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
