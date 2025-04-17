@@ -27,41 +27,46 @@ script PellucaCityHouses_GabSibling3{
 
 
 
+
+
+
+
 //Quest NPC
 script PellucaCityHouses_Mayor_Reward{
-        msgbox(format("Please accept this reward."), MSGBOX_NPC)
-        dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
-
-        if (var(VAR_RESULT) == 1){
-            setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)
-            showitemdescription
-            msgbox(format("Are you sure?"))
-            if (var(VAR_RESULT == 1))
-        }
-
+    msgbox(format("Please accept this reward."), MSGBOX_NPC)
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
+    if (var(VAR_RESULT) == 1){
+        goto(PellucaCityHouses_Mayor_Reward1)
+    } else {
+        goto(PellucaCityHouses_Mayor_Reward2)
+    }
 }
 
-script PellucaCityHouses_Mayor_Reward_1{
+script PellucaCityHouses_Mayor_Reward1{
     setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)
     showitemdescription
-    msgbox(format("Are you sure?"))
-    if (var(VAR_RESULT == 1)){
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
         //giveitem
         giveitem(ITEM_WEAKNESS_POLICY)
         goto(PellucaCityHouses_Mayor_Reward_End)
     } else {
+        hideitemdescription
         goto(PellucaCityHouses_Mayor_Reward)
     }
 }
 
-script PellucaCityHouses_Mayor_Reward_2{
+script PellucaCityHouses_Mayor_Reward2{
     setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)
     showitemdescription
-    msgbox(format("Are you sure?"))
-    if (var(VAR_RESULT == 1)){
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
         giveitem(ITEM_BLUNDER_POLICY)
         goto(PellucaCityHouses_Mayor_Reward_End)
     } else {
+        hideitemdescription
         goto(PellucaCityHouses_Mayor_Reward)
     }
 }
@@ -99,7 +104,7 @@ script PellucaCityHouses_NPC1{
         dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
 
         if (var(VAR_RESULT) == 0){
-            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Claunchers you see back into the river?"), MSGBOX_NPC)
+            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Claunchers you see back into the river!"), MSGBOX_NPC)
             startquest(QUEST_PELLUCA_MAYOR)
             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON1)
             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON2)
