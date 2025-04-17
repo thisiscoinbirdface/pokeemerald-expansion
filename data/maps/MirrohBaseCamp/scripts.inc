@@ -3,7 +3,7 @@
 # 2 "data//maps/MirrohBaseCamp/scripts.pory"
     .set LOCALID_MARTHA, 5
 # 3 "data//maps/MirrohBaseCamp/scripts.pory"
-    .set LOCALID_RUE, 8
+    .set LOCALID_RUE, 7
 
 MirrohBaseCamp_MapScripts::
 	.byte 0
@@ -148,9 +148,7 @@ MirrohBaseCamp_Rue_Trigger::
 # 103 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitdooranim
 # 105 "data//maps/MirrohBaseCamp/scripts.pory"
-	setobjectxyperm LOCALID_RUE, 9, 35
-# 106 "data//maps/MirrohBaseCamp/scripts.pory"
-	addobject LOCALID_RUE
+	setobjectxy LOCALID_RUE, 9, 35
 # 107 "data//maps/MirrohBaseCamp/scripts.pory"
 	delay 8
 # 109 "data//maps/MirrohBaseCamp/scripts.pory"
