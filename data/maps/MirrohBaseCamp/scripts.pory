@@ -35,6 +35,7 @@ script MirrohBaseCamp_EventScript_Vendor2{
 mart MirrohBaseCamp_Vendor2_Inventory{
     ITEM_NEVER_MELT_ICE
     ITEM_ICE_GEM
+    ITEM_COVERT_CLOAK
     ITEM_ENERGY_ROOT
 }
 
@@ -68,7 +69,13 @@ script MirrohBaseCamp_EventScript_NPC1{
 script MirrohBaseCamp_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful."))
+    msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p...\pMy name? It's Martha, dear. I manage the graveyard.\pMARTHA: You want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
+    applymovement(5, moves(walk_right walk_down * 3 walk_left * 9))
+    removeobject(5)
+    setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
+    clearflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     releaseall
     end
 }

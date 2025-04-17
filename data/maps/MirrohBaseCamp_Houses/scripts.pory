@@ -17,13 +17,10 @@ script MirrohBaseCamp_Houses_Historian{
         msgbox(format("MARTHA: I see...so this Team Somber wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
         release
         delay(30)
-        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent. Fearsome Pokémon fought each other to the death in the desolate wasteland, vying for control using brute force. Today, all we have are the fossilised remains of those Pokémon, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify who fought who."))
+        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the fossilised remains of those Pokémon, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can cross-reference different Pokémon. This is how we build a classification for all Fossil Pokémon.\p...\pMARTHA: But there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pMARTHA: No known Pokemon, natural phenomena, or anything we could think of could give us an answer. What kind of monstrous being could do something like that?"))
         release
         delay(30)
-        msgbox(format("MARTHA: You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the fossilised remains of those Pokémon, often damaged due to the firce fighting. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can cross-reference different Pokémon. This is how we build a classification for all Fossil Pokémon.\p...\pMARTHA: But there was one RAMPARDOS fossil we found that was damaged in ways...in ways so horrific they...well...\pMARTHA: No known Pokemon, natural phenomena, or anything we could think of could give us an answer. What kind of monstrous being could do something like that?"))
-        release
-        delay(30)
-        msgbox(format("MARTHA: For a while this mystery - the mystery of the ANCIENT TERROR - remained unsolved. But then, deep inside Mt. Mirroh, we found an ancient cave painting depicting a beast that matched no fossil we had uncovered...although which Pokémon it is, we don't know.\p...\pThere is still much to solve, {PLAYER}. If I had to hazard a guess, this Team Somber outfit might be looking to do something with this ANCIENT TERROR, although what exactly, I can't say."))
+        msgbox(format("MARTHA: For a while this mystery - the mystery of the Ancient Terror - remained unsolved. But then, deep inside Mt. Mirroh, we found an ancient cave painting depicting a beast that matched no fossil we had uncovered...although which Pokémon it is, we don't know.\p...\pThere is still much to solve, {PLAYER}. If I had to hazard a guess, this Team Somber outfit might be looking to do something with this Ancient Terror, although what exactly, I can't say."))
         release
         delay(16)
         applymovement(1, moves(emote_exclamation_mark))
@@ -33,7 +30,7 @@ script MirrohBaseCamp_Houses_Historian{
 
         subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6)
         setflag(FLAG_MIRROHBASECAMP_HISTORIAN)
-        setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
+        setflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     }
 
     releaseall
