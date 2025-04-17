@@ -36,29 +36,23 @@ MirrohBaseCamp_Houses_Historian::
 # 24 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	release
 # 25 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	delay 30
-# 26 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_Historian_Text_5
-# 27 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	release
-# 28 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	delay 16
-# 29 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 26 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	applymovement 1, MirrohBaseCamp_Houses_Historian_Movement_0
-# 30 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 27 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	waitmovement 0
-# 31 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_Historian_Text_6
-# 32 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 28 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_Historian_Text_5
+# 29 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	release
-# 34 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 31 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6
-# 35 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_HISTORIAN
-# 36 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setflag FLAG_HIDE_GRAVEYARD_HISTORIAN
+# 33 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
 MirrohBaseCamp_Houses_Historian_1:
-# 39 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 36 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -66,6 +60,14 @@ MirrohBaseCamp_Houses_Historian_2:
 # 10 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	msgbox MirrohBaseCamp_Houses_Historian_Text_0
 	goto MirrohBaseCamp_Houses_Historian_1
+
+
+MirrohBaseCamp_Houndstone::
+# 41 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	playmoncry SPECIES_HOUNDSTONE, CRY_MODE_NORMAL
+# 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houndstone_Text_0, MSGBOX_NPC
+	end
 
 
 # 14 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
@@ -100,23 +102,6 @@ MirrohBaseCamp_Houses_Historian_Text_3:
 	.string "MARTHA: You must have seen it yourself,\n"
 	.string "{PLAYER}. To the best of our\l"
 	.string "knowledge, Ancient Cormoria was a\l"
-	.string "harsh, barren and dangerous continent.\l"
-	.string "Fearsome Pokémon fought each other to\l"
-	.string "the death in the desolate wasteland,\l"
-	.string "vying for control using brute force.\l"
-	.string "Today, all we have are the fossilised\l"
-	.string "remains of those Pokémon, often\l"
-	.string "damaged due to the firce fighting. By\l"
-	.string "analysing the fossils and comparing,\l"
-	.string "say, a bite mark on one fossil to\l"
-	.string "another's teeth, we can identify who\l"
-	.string "fought who.$"
-
-MirrohBaseCamp_Houses_Historian_Text_4:
-# 23 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "MARTHA: You must have seen it yourself,\n"
-	.string "{PLAYER}. To the best of our\l"
-	.string "knowledge, Ancient Cormoria was a\l"
 	.string "harsh, barren and dangerous continent,\l"
 	.string "ravaged by fearsome Pokémon that\l"
 	.string "fought each other. Today, all we have\l"
@@ -129,19 +114,19 @@ MirrohBaseCamp_Houses_Historian_Text_4:
 	.string "This is how we build a classification for\l"
 	.string "all Fossil Pokémon.\p"
 	.string "...\p"
-	.string "MARTHA: But there was one RAMPARDOS\n"
-	.string "fossil we found that was damaged in\l"
-	.string "ways...in ways so horrific they...well...\p"
+	.string "MARTHA: But there was one fossil we\n"
+	.string "found that was damaged in ways...in\l"
+	.string "ways so horrific they...well...\p"
 	.string "MARTHA: No known Pokemon, natural\n"
 	.string "phenomena, or anything we could think\l"
 	.string "of could give us an answer. What kind of\l"
 	.string "monstrous being could do something like\l"
 	.string "that?$"
 
-MirrohBaseCamp_Houses_Historian_Text_5:
-# 26 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+MirrohBaseCamp_Houses_Historian_Text_4:
+# 23 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "MARTHA: For a while this mystery - the\n"
-	.string "mystery of the ANCIENT TERROR -\l"
+	.string "mystery of the Ancient Terror -\l"
 	.string "remained unsolved. But then, deep\l"
 	.string "inside Mt. Mirroh, we found an ancient\l"
 	.string "cave painting depicting a beast that\l"
@@ -152,11 +137,11 @@ MirrohBaseCamp_Houses_Historian_Text_5:
 	.string "There is still much to solve, {PLAYER}.\n"
 	.string "If I had to hazard a guess, this Team\l"
 	.string "Somber outfit might be looking to do\l"
-	.string "something with this ANCIENT TERROR,\l"
+	.string "something with this Ancient Terror,\l"
 	.string "although what exactly, I can't say.$"
 
-MirrohBaseCamp_Houses_Historian_Text_6:
-# 31 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+MirrohBaseCamp_Houses_Historian_Text_5:
+# 28 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "MARTHA: Oh my! Would you look at the\n"
 	.string "time? I've rambled on for too long.\l"
 	.string "Apologies, {PLAYER}. I hope this helps\l"
@@ -164,3 +149,8 @@ MirrohBaseCamp_Houses_Historian_Text_6:
 	.string "You should go to Mt. Mirroh and see the\n"
 	.string "cave painting for yourself. As for me, I\l"
 	.string "must get back to my reading...$"
+
+MirrohBaseCamp_Houndstone_Text_0:
+# 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Houndstone is walking slowly. It's\n"
+	.string "getting old now.$"

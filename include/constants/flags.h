@@ -121,15 +121,15 @@
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x495 0x495 // Unused Flag
-#define FLAG_UNUSED_0x496 0x496 // Unused Flag
-#define FLAG_UNUSED_0x497 0x497 // Unused Flag
-#define FLAG_UNUSED_0x498 0x498 // Unused Flag
-#define FLAG_UNUSED_0x499 0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A 0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B 0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C 0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D 0x49D // Unused Flag
+#define FLAG_UNUSED_0x495  0x495 // Unused Flag
+#define FLAG_UNUSED_0x496  0x496 // Unused Flag
+#define FLAG_UNUSED_0x497  0x497 // Unused Flag
+#define FLAG_UNUSED_0x498  0x498 // Unused Flag
+#define FLAG_UNUSED_0x499  0x499 // Unused Flag
+#define FLAG_UNUSED_0x49A  0x49A // Unused Flag
+#define FLAG_UNUSED_0x49B  0x49B // Unused Flag
+#define FLAG_UNUSED_0x49C  0x49C // Unused Flag
+#define FLAG_UNUSED_0x49D  0x49D // Unused Flag
 
 
 

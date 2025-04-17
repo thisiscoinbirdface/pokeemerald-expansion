@@ -391,32 +391,34 @@ PellucaCity_NPC10::
 
 
 PellucaCity_NPC11::
-# 296 "data//maps/PellucaCity/scripts.pory"
+# 297 "data//maps/PellucaCity/scripts.pory"
 	goto_if_set FLAG_PELLUCA_CITY_TM_GIVER, PellucaCity_NPC11_2
-# 301 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC8_Text_0, MSGBOX_NPC
 # 302 "data//maps/PellucaCity/scripts.pory"
-	giveitem ITEM_TM01
+	msgbox PellucaCity_NPC11_Text_1, MSGBOX_NPC
 # 303 "data//maps/PellucaCity/scripts.pory"
+	giveitem ITEM_TM01
+# 304 "data//maps/PellucaCity/scripts.pory"
 	setflag FLAG_PELLUCA_CITY_TM_GIVER
+# 305 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC11_Text_2, MSGBOX_NPC
 	end
 
 PellucaCity_NPC11_2:
-# 297 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC8_Text_0, MSGBOX_NPC
+# 298 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC11_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC12::
-# 308 "data//maps/PellucaCity/scripts.pory"
+# 311 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC12_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_Stantler::
-# 313 "data//maps/PellucaCity/scripts.pory"
+# 316 "data//maps/PellucaCity/scripts.pory"
 	playmoncry SPECIES_STANTLER, CRY_MODE_NORMAL
-# 314 "data//maps/PellucaCity/scripts.pory"
+# 317 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_Stantler_Text_0, MSGBOX_NPC
 	end
 
@@ -700,7 +702,8 @@ PellucaCity_NPC8_Text_0:
 # 217 "data//maps/PellucaCity/scripts.pory"
 	.string "What's even the point of fishing if the\n"
 	.string "Mega Sharpedo's going to scare all the\l"
-	.string "fish away?$"
+	.string "fish away? I wish our mayor would do\l"
+	.string "something about it.$"
 
 PellucaCity_Sealeo_Text_0:
 # 225 "data//maps/PellucaCity/scripts.pory"
@@ -751,19 +754,41 @@ PellucaCity_WingullCritique_Text_0:
 
 PellucaCity_NPC10_Text_0:
 # 291 "data//maps/PellucaCity/scripts.pory"
-	.string "What's even the point of fishing if the\n"
-	.string "Mega Sharpedo's going to scare all the\l"
-	.string "fish away? I wish our mayor could do\l"
-	.string "something about it.$"
+	.string "I ate too many apple tarts! I'm too full.\n"
+	.string "Whoever said people have a second\l"
+	.string "stomach for dessert was lying!$"
+
+PellucaCity_NPC11_Text_0:
+# 298 "data//maps/PellucaCity/scripts.pory"
+	.string "Life is too short to worry!$"
+
+PellucaCity_NPC11_Text_1:
+# 302 "data//maps/PellucaCity/scripts.pory"
+	.string "The Pelluca Gym is across the\n"
+	.string "water...when I was younger, I tried to\l"
+	.string "challenge Jania many times, but I could\l"
+	.string "never win. She was my classmate, you\l"
+	.string "know? We grew up in Galecrest City\l"
+	.string "together. She went on to become a big\l"
+	.string "Gym Leader and I moved here too, with a\l"
+	.string "regular family and a regular job.\l"
+	.string "Whenever I look off at the gym, I\l"
+	.string "wonder...\p"
+	.string "I don't battle anymore. Maybe you might\n"
+	.string "like to use this.$"
+
+PellucaCity_NPC11_Text_2:
+# 305 "data//maps/PellucaCity/scripts.pory"
+	.string "It's time for me to let go.$"
 
 PellucaCity_NPC12_Text_0:
-# 308 "data//maps/PellucaCity/scripts.pory"
+# 311 "data//maps/PellucaCity/scripts.pory"
 	.string "The mayor isn't maintaining the city one\n"
 	.string "bit! My Stantler eating the overgrown\l"
 	.string "flowers is actually contributing to\l"
 	.string "city maintenance.$"
 
 PellucaCity_Stantler_Text_0:
-# 314 "data//maps/PellucaCity/scripts.pory"
+# 317 "data//maps/PellucaCity/scripts.pory"
 	.string "Stantler is nonchalantly chomping on\n"
 	.string "the flowers.$"

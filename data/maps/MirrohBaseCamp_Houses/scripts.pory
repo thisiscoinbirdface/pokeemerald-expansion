@@ -36,3 +36,9 @@ script MirrohBaseCamp_Houses_Historian{
     releaseall
     end
 }
+
+script MirrohBaseCamp_Houndstone{
+    playmoncry(SPECIES_HOUNDSTONE, CRY_MODE_NORMAL)
+    msgbox(format("Houndstone is walking slowly. It's getting old now..."), MSGBOX_NPC)
+    end
+}

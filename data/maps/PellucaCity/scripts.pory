@@ -295,14 +295,14 @@ script PellucaCity_NPC10{
 //lady staring off by the pc
 script PellucaCity_NPC11{
     if (flag(FLAG_PELLUCA_CITY_TM_GIVER)){
-        msgbox(format("Thank you. I needed to let go. Life is too short to worry!"), MSGBOX_NPC)
+        msgbox(format("Life is too short to worry!"), MSGBOX_NPC)
         end
     }
     
     msgbox(format("The Pelluca Gym is across the water...when I was younger, I tried to challenge Jania many times, but I could never win. She was my classmate, you know? We grew up in Galecrest City together. She went on to become a big Gym Leader and I moved here too, with a regular family and a regular job. Whenever I look off at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
     giveitem(ITEM_TM01)
     setflag(FLAG_PELLUCA_CITY_TM_GIVER)
-    msgbox(format("Thank you. I needed to let go."), MSGBOX_NPC)
+    msgbox(format("It's time for me to let go."), MSGBOX_NPC)
     end
 }
 
