@@ -237,8 +237,12 @@
 #define MAPSEC_PELLUCA_CITY                 0xE7
 #define MAPSEC_MIRROH_BASE_CAMP             0xE8
 #define MAPSEC_MT_MIRROH_EXTERIOR           0xE9
-
-#define MAPSEC_NONE                         0xEA
+#define MAPSEC_WINTERLILY_HOLLOW            0xEA
+#define MAPSEC_LILY_POND                    0xEB
+#define MAPSEC_IVY_RIVER                    0xEC
+#define MAPSEC_MIRROH_PEAK                  0xED
+#define MAPSEC_MT_MIRROH_INTERIOR           0xEE
+#define MAPSEC_NONE                         0xEF
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

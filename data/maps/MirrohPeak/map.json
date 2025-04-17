@@ -3,7 +3,7 @@
   "name": "MirrohPeak",
   "layout": "LAYOUT_MIRROH_PEAK",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_MT_MIRROH_EXTERIOR",
+  "region_map_section": "MAPSEC_MIRROH_PEAK",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
   "map_type": "MAP_TYPE_ROUTE",

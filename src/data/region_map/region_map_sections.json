@@ -1850,12 +1850,28 @@
     },
     {
       "map_section": "MAPSEC_MT_MIRROH_EXTERIOR",
-      "name": "Mt. Mirroh",
+      "name": "Mirroh Exterior",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
+    {
+      "map_section": "MAPSEC_MIRROH_PEAK",
+      "name": "Mt. Mirroh Peak",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },    
+    {
+      "map_section": "MAPSEC_MT_MIRROH_INTERIOR",
+      "name": "Mt. Mirroh",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },    
     {
       "map_section": "MAPSEC_HOYA_RIVER_NORTH",
       "name": "Hoya River North",
@@ -1869,6 +1885,30 @@
       "name": "Hoya River South",
       "x": 0,
       "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_WINTERLILY_HOLLOW",
+      "name": "Winterlily Hollow",
+      "x": 5,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_LILY_POND",
+      "name": "Lily Pond",
+      "x": 9,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_IVY_RIVER",
+      "name": "Ivy River",
+      "x": 9,
+      "y": 9,
       "width": 1,
       "height": 1
     }
