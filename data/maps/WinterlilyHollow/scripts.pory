@@ -12,12 +12,10 @@ script WinterlilyHollow_OnFrame{
     if (flag(FLAG_ANCIENT_MIRROH_KORAIDON)){
         if (flag(FLAG_WINTERLILY_VINIEL_CUTSCENE)){
             end
-            
         } else {
             setobjectxyperm(LOCALID_VINIEL, 38, 19)
             setobjectxy(LOCALID_VINIEL, 38, 19)
             addobject(LOCALID_VINIEL)
-
 
             //entire cutscene
             applymovement(LOCALID_VINIEL, moves(walk_down emote_exclamation_mark))
@@ -42,7 +40,6 @@ script WinterlilyHollow_OnFrame{
         }
     } else {
         end
-        
     }
 }
 
@@ -72,38 +69,35 @@ script WinterlilyHollow_NPC_Red{
 }
 
 script WinterlilyHollow_NPC1{
-    lockall
-    faceplayer
-
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Is VINIEL going to be able to handle all those Team Somber grunts alone? I wish we could help but he's far stronger than any of us. We'd only get in the way!"))
+        msgbox(format("Is Viniel going to be able to handle all those Team Somber grunts alone? I wish we could help but he's far stronger than any of us. We'd only get in the way!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity! VINIEL's Pokémon powers this town.")) 
+        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity! Viniel's Pokémon powers this town."), MSGBOX_NPC) 
     }
-
-    releaseall
     end
 }
 script WinterlilyHollow_NPC2{
-    lockall
-    faceplayer
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."))
+        msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."), MSGBOX_NPC)
     } else {
         msgbox(format("")) 
     }
-    releaseall
     end
 }
 script WinterlilyHollow_NPC3{
-    lockall
-    faceplayer
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak! How terrible! It's here somewhere in the town."))
+        msgbox(format("Visitors are rare here. You must be brave - or lost."), MSGBOX_NPC)
     } else {
-        msgbox(format("A Team Somber grunt tried to mess with me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak! How terrible! It's here somewhere in the town."))
+        msgbox(format("Visitors are rare here. You must be brave - or lost."), MSGBOX_NPC)
     }
-    releaseall
+    end
+}
+script WinterlilyHollow_NPC4{
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
+        msgbox(format("A Team Somber grunt accosted me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak!"), MSGBOX_NPC)
+    } else {
+        msgbox(format("A Team Somber grunt accosted me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak!"), MSGBOX_NPC)
+    }
     end
 }
 
@@ -112,16 +106,16 @@ script WinterlilyHollow_MimeJr_1{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("Sniff...sniff...\nMIME JR is bawling!\pCan it be soothed somehow?"))
+    msgbox(format("Sniff...sniff...\nMime Jr. is bawling!\pCan it be soothed somehow?"))
 
     checkitem(ITEM_SOOTHE_BELL)
     if (var(VAR_RESULT) == 1){
         //give soothe bell
-        msgbox(format("Give MIME JR a SOOTHE BELL?"), MSGBOX_YESNO)
+        msgbox(format("Give Mime Jr. a Soothe Bell?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_SOOTHE_BELL)
 
-            msgbox(format("MIME JR takes the SOOTHE BELL and shakes it...it chimes softly.\pMIME JR smiles at you."))
+            msgbox(format("Mime Jr. takes the Soothe Bell and shakes it...it chimes softly.\pMime Jr. smiles at you."))
             release
             setvar(VAR_HOLLOW_MIMEJR, 1)
             applymovement(10, moves(fly_up))
@@ -150,16 +144,16 @@ script WinterlilyHollow_MimeJr_2{   //play with it
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("Sniff...sniff...\nMIME JR looks sad...maybe it wants a doll to play with?"))
+    msgbox(format("Sniff...sniff...\nMime Jr. looks sad...maybe it wants a doll to play with?"))
 
     checkitem(ITEM_POKE_DOLL)
     if (var(VAR_RESULT) == 1){
         //give doll
-        msgbox(format("Give MIME JR a POKESHI DOLL?"), MSGBOX_YESNO)
+        msgbox(format("Give Mime Jr. a Pokeshi Doll?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_POKE_DOLL)
 
-            msgbox(format("MIME JR takes the POKESHI DOLL and plays with it...\pMIME JR smiles at you."))
+            msgbox(format("Mime Jr. takes the Pokeshi Doll and plays with it...\pMime Jr. smiles at you."))
             release
             setvar(VAR_HOLLOW_MIMEJR, 1)
             applymovement(6, moves(fly_up))
@@ -186,33 +180,34 @@ script WinterlilyHollow_MimeJr_3{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("MIME JR is no longer crying! It's looking at its own reflection in the water instead...maybe it's pondering its future. Understandable, given that its last Trainer treated it so badly."))
+    msgbox(format("Mime Jr. is no longer crying! It's looking at its own reflection in the water instead...maybe it's pondering its future. Understandable, given that its last Trainer treated it so badly."))
     release
     delay(30)
-    msgbox(format("MIME JR looks at you.\p...\pIt walks upto you..."))
+    msgbox(format("Mime Jr. looks at you.\p...\pDoes Mime Jr. want to join the party?"))
 
     checkitem(ITEM_LUXURY_BALL)
     if (var(VAR_RESULT) == 1){
         //give soothe bell
-        msgbox(format("Catch MIME JR in a LUXURY BALL?"), MSGBOX_YESNO)
+        msgbox(format("Catch Mime Jr. in a Luxury Ball?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_LUXURY_BALL)
 
-            msgbox(format("MIME JR doesn't wait for you to catch it - it leaps into the LUXURY BALL on its own!."))
+            msgbox(format("Mime Jr. doesn't wait for you to catch it - it leaps into the Luxury Ball on its own!."))
             removeobject(1)
             givemon(SPECIES_MIME_JR, 25)
-            msgbox(format("MIME JR joined {PLAYER}'s party!"))
+            msgbox(format("Mime Jr. joined {PLAYER}'s party!"))
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
             setflag(FLAG_HOLLOW_MIMEJR)
-            msgbox(format("Welcome to the team, MIME JR! You'll be happy withh all your new friends!"))
+            msgbox(format("Welcome to the team, Mime Jr.! You'll be happy withh all your new friends!"))
         } else {
             applymovement(1, moves(face_down))
-            msgbox(format("MIME JR looks hurt. It goes back to staring at its reflection"))
+            msgbox(format("Mime Jr. looks hurt. It goes back to staring at its reflection"))
         }
     } else {
-        msgbox(format("Maybe it needs a comforting POKEBALL to be in."))
+        applymovement(1, moves(face_down))
+        msgbox(format("...Mime Jr. goes back to staring at the water. Maybe it needs a comforting Pokeball to be in."))
     }
 
     releaseall
@@ -224,7 +219,7 @@ script WinterlilyHollow_Froslass{
     lockall
     faceplayer
     playmoncry(SPECIES_FROSLASS, CRY_MODE_NORMAL)
-    msgbox(format("FROSLASS is circling the statue...which looks like a FROSLASS statue! Is there a connection?"))
+    msgbox(format("Froslass is circling the statue...which looks like a Froslass statue! Is there a connection?"))
     releaseall
     end
 }
@@ -232,7 +227,7 @@ script WinterlilyHollow_Sneasler{
     lockall
     faceplayer
     playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
-    msgbox(format("SNEASLER seems to be trying to dig into the wall with limited success.\pDon't give up, SNEASLER!"))
+    msgbox(format("Sneasler seems to be trying to dig into the wall with limited success.\pDon't give up, Sneasler!"))
     releaseall
     end
 }
