@@ -103,13 +103,13 @@
       "x": 0,
       "y": 45,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "MirrohBaseCamp_Rue_Trigger",
+      "flag": "FLAG_MIRROHBASECAMP_MASTERBALL_RUE"
     }
   ],
   "warp_events": [
@@ -178,7 +178,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "MirrohBaseCamp_Rue_Trigger"
     }
   ],
   "bg_events": [

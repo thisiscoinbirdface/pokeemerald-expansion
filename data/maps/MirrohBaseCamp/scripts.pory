@@ -1,6 +1,6 @@
 raw`
     .set LOCALID_MARTHA, 5
-    .set LOCALID_RUE, 7
+    .set LOCALID_RUE, 8
 `
 
 mapscripts MirrohBaseCamp_MapScripts{}
@@ -101,13 +101,19 @@ script MirrohBaseCamp_Rue_Trigger{
     lockall
     opendoor(9, 35)
     waitdooranim    
+
     setobjectxyperm(LOCALID_RUE, 9, 35)
     addobject(LOCALID_RUE)
+    delay(8)    
+    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_right))
-    applymovement(LOCALID_RUE, moves(walk_down face_left emote_exclamation_mark))
-    waitmovement()
-    delay(24)
-
+    waitmovement(0)
+    applymovement(7, moves(walk_down face_left emote_exclamation_mark))
+    waitmovement(0)    
+    closedoor(9, 35)
+    waitdooranim    
+    delay(16)
+    msgbox(format("RUE: {PLAYER}? What are you doing all the way over here?"))
 
     setflag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)
     releaseall

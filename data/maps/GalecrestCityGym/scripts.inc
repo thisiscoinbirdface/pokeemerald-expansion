@@ -183,7 +183,7 @@ GalecrestCityGym_Leader::
 # 170 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
 # 172 "data//maps/GalecrestCityGym/scripts.pory"
-	opendoor 23, 26
+	opendoor 25, 52
 # 173 "data//maps/GalecrestCityGym/scripts.pory"
 	waitdooranim
 # 174 "data//maps/GalecrestCityGym/scripts.pory"
@@ -197,7 +197,7 @@ GalecrestCityGym_Leader::
 # 178 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 8
 # 179 "data//maps/GalecrestCityGym/scripts.pory"
-	closedoor 23, 26
+	closedoor 25, 52
 # 180 "data//maps/GalecrestCityGym/scripts.pory"
 	waitdooranim
 GalecrestCityGym_Leader_1:
