@@ -42,3 +42,14 @@ script MirrohBaseCamp_Houndstone{
     msgbox(format("Houndstone is walking slowly. It's getting old now..."), MSGBOX_NPC)
     end
 }
+
+
+
+
+
+
+
+
+//Rue cutscene
+
+

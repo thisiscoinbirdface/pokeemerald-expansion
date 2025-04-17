@@ -28,7 +28,7 @@
       "flag": "FLAG_HIDE_MIRROHBASECAMP_HISTORIAN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
       "x": 7,
       "y": 5,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 9,
       "y": 3,
       "elevation": 0,

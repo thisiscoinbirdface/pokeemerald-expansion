@@ -134,11 +134,12 @@ MirrohBaseCamp_Houses_Historian_Text_4:
 	.string "uncovered...although which Pokémon it\l"
 	.string "is, we don't know.\p"
 	.string "...\p"
-	.string "There is still much to solve, {PLAYER}.\n"
-	.string "If I had to hazard a guess, this Team\l"
-	.string "Somber outfit might be looking to do\l"
-	.string "something with this Ancient Terror,\l"
-	.string "although what exactly, I can't say.$"
+	.string "pMARTHA: There is still much to solve,\n"
+	.string "{PLAYER}. If I were to hazard a guess,\l"
+	.string "this Team Somber outfit might be\l"
+	.string "looking to do something with this\l"
+	.string "Ancient Terror, although what exactly,\l"
+	.string "I can't say.$"
 
 MirrohBaseCamp_Houses_Historian_Text_5:
 # 28 "data//maps/MirrohBaseCamp_Houses/scripts.pory"

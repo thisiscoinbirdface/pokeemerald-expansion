@@ -169,14 +169,14 @@ script GalecrestCityGym_Leader {
         release
         delay(16)
         
-        opendoor(23, 26)
+        opendoor(25, 52)
         waitdooranim
         applymovement(5, moves(walk_up))
         waitmovement(0)
         delay(8)
         removeobject(5)
         delay(8)
-        closedoor(23, 26)
+        closedoor(25, 52)
         waitdooranim
 
 

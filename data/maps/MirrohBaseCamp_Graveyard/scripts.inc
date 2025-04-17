@@ -25,25 +25,27 @@ MirrohBaseCamp_Graveyard_KohlaBattle::
 	delay 48
 # 18 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_2
-# 21 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_KOHLA, MirrohBaseCamp_Graveyard_KohlaBattle_Text_3
-# 24 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	delay 48
-# 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_4
-# 26 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 19 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	release
-# 27 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 22 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_KOHLA, MirrohBaseCamp_Graveyard_KohlaBattle_Text_3
+# 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	delay 48
+# 26 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_4
+# 27 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	release
 # 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	applymovement 1, MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1
+	delay 48
 # 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	waitmovement 0
+	applymovement 1, MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1
 # 30 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	waitmovement 0
+# 31 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	removeobject 1
-# 33 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	setflag FLAG_MIRROH_KOHLA_BATTLE
 # 34 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	setflag FLAG_MIRROH_KOHLA_BATTLE
+# 35 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	releaseall
 	return
 
@@ -54,27 +56,31 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Movement_0:
 	face_up
 	step_end
 
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1:
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	walk_left
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	walk_left
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
 	step_end
 
@@ -92,11 +98,10 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Text_2:
 	.string "KOHLA: No, I suppose you don't.$"
 
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_3:
-# 21 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	.string "$"
+# 22 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	.string "...$"
 
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_4:
-# 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	.string "KOHLA: I have to carry on. Let's do the\n"
-	.string "right thing and go stop Team Somber.\p"
+# 26 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	.string "KOHLA: I have to carry on.\p"
 	.string "I'll see you at Mt. Mirroh.$"

@@ -1,3 +1,8 @@
+raw`
+    .set LOCALID_MARTHA, 5
+    .set LOCALID_RUE, 7
+`
+
 mapscripts MirrohBaseCamp_MapScripts{}
 
 //Moka was here - gubu I love you <3
@@ -72,9 +77,9 @@ script MirrohBaseCamp_EventScript_NPC2{
     msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p...\pMy name? It's Martha, dear. I manage the graveyard.\pMARTHA: You want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
-    applymovement(5, moves(walk_right walk_down * 3 walk_left * 9))
-    waitmovement(5)
-    removeobject(5)
+    applymovement(LOCALID_MARTHA, moves(walk_right walk_down * 3 walk_left * 9))
+    waitmovement(0)
+    removeobject(LOCALID_MARTHA)
     setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
     clearflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     releaseall
@@ -83,3 +88,28 @@ script MirrohBaseCamp_EventScript_NPC2{
 
 
 
+
+
+
+
+//rue cutscene FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+script MirrohBaseCamp_Rue_Trigger{
+    if (flag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)){
+        end
+    }
+
+    lockall
+    opendoor(9, 35)
+    waitdooranim    
+    setobjectxyperm(LOCALID_RUE, 9, 35)
+    addobject(LOCALID_RUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_right))
+    applymovement(LOCALID_RUE, moves(walk_down face_left emote_exclamation_mark))
+    waitmovement()
+    delay(24)
+
+
+    setflag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)
+    releaseall
+    end
+}
