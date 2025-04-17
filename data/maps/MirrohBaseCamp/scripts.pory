@@ -113,8 +113,11 @@ script MirrohBaseCamp_Rue_Trigger{
     closedoor(9, 35)
     waitdooranim    
     delay(16)
-    msgbox(format("RUE: {PLAYER}? What are you doing all the way over here?"))
-
+    msgbox(format("RUE: {PLAYER}? What are you doing all the way over here?\p...\pRUE: Ah, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pRUE: I came here to make some social calls. Since Mirroh Base Camp is quiet and secluded, many academics reside here - Martha being one of them. I suppose I should go pay her a visit next.\pRUE: Take care, {PLAYER}. Stay safe in Mt. Mirroh. Listen to what the detectives tell you to do, okay?"))
+    release
+    applymovement(LOCALID_RUE, moves(walk_right * 7))
+    waitmovement(0)    
+    removeobject(LOCALID_RUE)
     setflag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)
     releaseall
     end

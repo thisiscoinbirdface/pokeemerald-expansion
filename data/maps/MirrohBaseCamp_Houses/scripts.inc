@@ -52,21 +52,31 @@ MirrohBaseCamp_Houses_Historian::
 # 33 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	setflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
 MirrohBaseCamp_Houses_Historian_1:
-# 36 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	releaseall
 	end
 
 MirrohBaseCamp_Houses_Historian_2:
 # 10 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_Historian_Text_0
+	msgbox MirrohBaseCamp_Houses_Historian_Text_0, MSGBOX_NPC
 	goto MirrohBaseCamp_Houses_Historian_1
 
 
 MirrohBaseCamp_Houndstone::
-# 41 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 40 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	playmoncry SPECIES_HOUNDSTONE, CRY_MODE_NORMAL
-# 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 41 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	msgbox MirrohBaseCamp_Houndstone_Text_0, MSGBOX_NPC
+	end
+
+
+MirrohBaseCamp_Houses_MasterballGuy::
+# 54 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballGuy_Text_0, MSGBOX_NPC
+	end
+
+
+MirrohBaseCamp_Houses_MasterballFriend::
+# 59 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_0, MSGBOX_NPC
 	end
 
 
@@ -152,6 +162,21 @@ MirrohBaseCamp_Houses_Historian_Text_5:
 	.string "must get back to my reading...$"
 
 MirrohBaseCamp_Houndstone_Text_0:
-# 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 41 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "Houndstone is walking slowly. It's\n"
 	.string "getting old now...$"
+
+MirrohBaseCamp_Houses_MasterballGuy_Text_0:
+# 54 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "A friend of Rue's?\p"
+	.string "...\p"
+	.string "Ah, you're his new assistant. Nice to\n"
+	.string "meet you, {PLAYER}! Rue and I go long\l"
+	.string "back. While he entered academia, I\l"
+	.string "became a Pokeball craftsman instead!$"
+
+MirrohBaseCamp_Houses_MasterballFriend_Text_0:
+# 59 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "This man here is the only person in all\n"
+	.string "of Cormoria who can make a master ball.\l"
+	.string "A master of the craft!$"

@@ -7,7 +7,7 @@ script MirrohBaseCamp_Houses_Historian{
     faceplayer
 
     if (flag(FLAG_MIRROHBASECAMP_HISTORIAN)){
-        msgbox(format("MARTHA: Why hello child, how are you?"))
+        msgbox(format("MARTHA: Why hello child, how are you?"), MSGBOX_NPC)
     } else {
         msgbox(format("MARTHA: Yes, child. Tell me. What's the story?\p...\p...\p..."))
         release
@@ -33,7 +33,6 @@ script MirrohBaseCamp_Houses_Historian{
         setflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     }
 
-    releaseall
     end
 }
 
@@ -50,6 +49,15 @@ script MirrohBaseCamp_Houndstone{
 
 
 
-//Rue cutscene
+//masterball house
+script MirrohBaseCamp_Houses_MasterballGuy{
+    msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Pokeball craftsman instead!"), MSGBOX_NPC)
+    end
+}
+
+script MirrohBaseCamp_Houses_MasterballFriend{
+    msgbox(format("This man here is the only person in all of Cormoria who can make a master ball. A master of the craft!"), MSGBOX_NPC)
+    end
+}
 
 

@@ -156,7 +156,7 @@ MirrohBaseCamp_Rue_Trigger::
 # 110 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
 # 111 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement 7, MirrohBaseCamp_Rue_Trigger_Movement_1
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
 # 112 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
 # 113 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -167,9 +167,17 @@ MirrohBaseCamp_Rue_Trigger::
 	delay 16
 # 116 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Rue_Trigger_Text_0
+# 117 "data//maps/MirrohBaseCamp/scripts.pory"
+	release
 # 118 "data//maps/MirrohBaseCamp/scripts.pory"
-	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
 # 119 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitmovement 0
+# 120 "data//maps/MirrohBaseCamp/scripts.pory"
+	removeobject LOCALID_RUE
+# 121 "data//maps/MirrohBaseCamp/scripts.pory"
+	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+# 122 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
@@ -233,6 +241,24 @@ MirrohBaseCamp_Rue_Trigger_Movement_1:
 	emote_exclamation_mark
 	step_end
 
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+MirrohBaseCamp_Rue_Trigger_Movement_2:
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	walk_right
+	step_end
+
 MirrohBaseCamp_EventScript_Vendor1_Text_0:
 # 14 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Our supplies are limited but useful to\n"
@@ -281,4 +307,17 @@ MirrohBaseCamp_EventScript_NPC2_Text_0:
 MirrohBaseCamp_Rue_Trigger_Text_0:
 # 116 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "RUE: {PLAYER}? What are you doing all\n"
-	.string "the way over here?$"
+	.string "the way over here?\p"
+	.string "...\p"
+	.string "RUE: Ah, yes. The detectives are\n"
+	.string "correct. Martha is an expert on\l"
+	.string "Cormorian history. She would be helpful.\p"
+	.string "RUE: I came here to make some social\n"
+	.string "calls. Since Mirroh Base Camp is quiet\l"
+	.string "and secluded, many academics reside\l"
+	.string "here - Martha being one of them. I\l"
+	.string "suppose I should go pay her a visit\l"
+	.string "next.\p"
+	.string "RUE: Take care, {PLAYER}. Stay safe in\n"
+	.string "Mt. Mirroh. Listen to what the\l"
+	.string "detectives tell you to do, okay?$"

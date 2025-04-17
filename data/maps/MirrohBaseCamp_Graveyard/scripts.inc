@@ -24,28 +24,34 @@ MirrohBaseCamp_Graveyard_KohlaBattle::
 # 17 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	delay 48
 # 18 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_2
+	faceplayer
 # 19 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	delay 16
+# 20 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_2
+# 21 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	release
 # 22 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_KOHLA, MirrohBaseCamp_Graveyard_KohlaBattle_Text_3
+	delay 16
 # 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	delay 48
-# 26 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_4
-# 27 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	release
+	trainerbattle_no_intro TRAINER_MIRROHBASECAMP_KOHLA, MirrohBaseCamp_Graveyard_KohlaBattle_Text_3
 # 28 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	delay 48
 # 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	applymovement 1, MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1
+	msgbox MirrohBaseCamp_Graveyard_KohlaBattle_Text_4
 # 30 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	waitmovement 0
+	release
 # 31 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
-	removeobject 1
+	delay 48
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	applymovement 1, MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1
+# 33 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	waitmovement 0
 # 34 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	removeobject 1
+# 37 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	setflag FLAG_MIRROH_KOHLA_BATTLE
-# 35 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 38 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	releaseall
 	return
 
@@ -56,31 +62,31 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Movement_0:
 	face_up
 	step_end
 
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 MirrohBaseCamp_Graveyard_KohlaBattle_Movement_1:
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_left
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
-# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 32 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	walk_down
 	step_end
 
@@ -94,14 +100,14 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Text_1:
 	.string "push something too hard?$"
 
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_2:
-# 18 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 20 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "KOHLA: No, I suppose you don't.$"
 
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_3:
-# 22 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 25 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "...$"
 
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_4:
-# 26 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+# 29 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "KOHLA: I have to carry on.\p"
 	.string "I'll see you at Mt. Mirroh.$"

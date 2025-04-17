@@ -15,8 +15,11 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
     msgbox(format("KOHLA: Do you know what happens if you push something too hard?"))
     release
     delay(48)
+    faceplayer
+    delay(16)
     msgbox(format("KOHLA: No, I suppose you don't."))
     release
+    delay(16)
 
     //batle
     trainerbattle_no_intro(TRAINER_MIRROHBASECAMP_KOHLA, "...")
