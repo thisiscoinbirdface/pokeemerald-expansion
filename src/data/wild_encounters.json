@@ -13405,12 +13405,12 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_FRIGIBAX"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_FRIGIBAX"
               }
             ]
           }
@@ -13469,17 +13469,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FRIGIBAX"
+                "species": "SPECIES_BELDUM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FRIGIBAX"
+                "species": "SPECIES_METANG"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FRIGIBAX"
+                "species": "SPECIES_METANG"
               }
             ]
           }

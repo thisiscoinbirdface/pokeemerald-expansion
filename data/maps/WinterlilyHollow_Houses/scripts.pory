@@ -1,0 +1,33 @@
+mapscripts WinterlilyHollow_Houses_MapScripts{}
+
+//old man with graveler
+script WinterlilyHollow_Houses_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script WinterlilyHollow_Houses_Graveler{
+    playmoncry(SPECIES_GRAVELER_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//couple (girl)
+script WinterlilyHollow_Houses_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//couple (boy)
+script WinterlilyHollow_Houses_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//dude with carkol
+script WinterlilyHollow_Houses_NPC4{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script WinterlilyHollow_Houses_Carkol{
+    playmoncry(SPECIES_CARKOL, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
