@@ -1,3 +1,8 @@
+raw`
+    .set LOCALID_BREECH, 7
+    .set LOCALID_CLEF, 8
+`
+
 mapscripts MtMirrohExterior_MapScripts{}
 
 //NPCs 7 (3 normal, 4 outside dojo)
@@ -22,7 +27,7 @@ script MtMirrohExterior_BreechTrigger{
 
     msgbox(format("BREECH: CLEFABLE, did you see the Team Somber grunts too?"))
     release
-    applymovement(9, moves(jump_in_place_up))
+    applymovement(LOCALID_CLEF, moves(jump_in_place_up))
     waitmovement(0)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
     delay(24)
@@ -31,16 +36,16 @@ script MtMirrohExterior_BreechTrigger{
     delay(30)
 
     //Notice player
-    applymovement(8, moves(face_left emote_exclamation_mark))    
-    applymovement(9, moves(face_left emote_exclamation_mark)) 
+    applymovement(LOCALID_BREECH, moves(face_left emote_exclamation_mark))    
+    applymovement(LOCALID_CLEF, moves(face_left emote_exclamation_mark)) 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(30)
     msgbox(format("BREECH: {PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pBREECH: So you're chasing Team Somber. I admire you, {PLAYER}. CLEFAIRY and I just saw a couple of them enter Mt. Mirroh. They left this drill here. I wonder what they're using all this equipment for?"))
     release
     delay(30)
-    applymovement(8, moves(face_left emote_exclamation_mark))    
-    applymovement(9, moves(face_left emote_exclamation_mark)) 
+    applymovement(LOCALID_BREECH, moves(face_left emote_exclamation_mark))    
+    applymovement(LOCALID_CLEF, moves(face_left emote_exclamation_mark)) 
     waitmovement(0)
     delay(30)
     msgbox(format("BREECH: I see...so they must be using all this equipment to build and carry this Dreamalyser thing you're talking about. How scary!"))
@@ -50,8 +55,8 @@ script MtMirrohExterior_BreechTrigger{
     release
 
     fadescreen(FADE_TO_BLACK)
-    removeobject(8)
-    removeobject(9)
+    removeobject(LOCALID_BREECH)
+    removeobject(LOCALID_CLEF)
     fadescreen(FADE_FROM_BLACK)
 
     setflag(FLAG_MIRROH_EXTERIOR_BREECH)
@@ -74,17 +79,8 @@ script MtMirrohExterior_Trainer_B{
     end
 }
 script MtMirrohExterior_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My PALPITOAD and I training to beat the Winterlily Hollow Gym. A battle will be better training than a jog though!"), "It was good training!")
+    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My Palpitoad and I are training to beat the Winterlily Hollow Gym. A battle will be better training than a jog though!"), "It was good training!")
     msgbox(format(""))
-    releaseall
-    end
-}
-
-script MtMirrohExterior_Palpitoad{
-    lockall
-    faceplayer
-    playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
-    msgbox(format("PALPITOAD: piii!!!!"))
     releaseall
     end
 }
