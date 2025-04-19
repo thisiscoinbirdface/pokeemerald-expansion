@@ -102,6 +102,7 @@ script MirrohBaseCamp_Rue_Trigger{
     opendoor(13, 27)
     waitdooranim   
 
+    addobject(LOCALID_RUE)
     setobjectxy(LOCALID_RUE, 13, 27)
 
     delay(8)    

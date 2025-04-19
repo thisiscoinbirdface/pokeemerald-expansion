@@ -144,40 +144,42 @@ MirrohBaseCamp_Rue_Trigger::
 # 101 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
 # 102 "data//maps/MirrohBaseCamp/scripts.pory"
-	opendoor 9, 35
+	opendoor 13, 27
 # 103 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitdooranim
 # 105 "data//maps/MirrohBaseCamp/scripts.pory"
-	setobjectxy LOCALID_RUE, 9, 35
-# 107 "data//maps/MirrohBaseCamp/scripts.pory"
+	addobject LOCALID_RUE
+# 106 "data//maps/MirrohBaseCamp/scripts.pory"
+	setobjectxy LOCALID_RUE, 13, 27
+# 108 "data//maps/MirrohBaseCamp/scripts.pory"
 	delay 8
-# 109 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Rue_Trigger_Movement_0
 # 110 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Rue_Trigger_Movement_0
 # 111 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
+	waitmovement 0
 # 112 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
 # 113 "data//maps/MirrohBaseCamp/scripts.pory"
-	closedoor 9, 35
-# 114 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitdooranim
-# 115 "data//maps/MirrohBaseCamp/scripts.pory"
-	delay 16
-# 116 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Rue_Trigger_Text_0
-# 117 "data//maps/MirrohBaseCamp/scripts.pory"
-	release
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
+# 114 "data//maps/MirrohBaseCamp/scripts.pory"
+	closedoor 13, 27
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitdooranim
+# 116 "data//maps/MirrohBaseCamp/scripts.pory"
+	delay 16
+# 117 "data//maps/MirrohBaseCamp/scripts.pory"
+	msgbox MirrohBaseCamp_Rue_Trigger_Text_0
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	release
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
 # 120 "data//maps/MirrohBaseCamp/scripts.pory"
-	removeobject LOCALID_RUE
+	waitmovement 0
 # 121 "data//maps/MirrohBaseCamp/scripts.pory"
-	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+	removeobject LOCALID_RUE
 # 122 "data//maps/MirrohBaseCamp/scripts.pory"
+	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
@@ -223,39 +225,39 @@ MirrohBaseCamp_EventScript_NPC2_Movement_1:
 	walk_left
 	step_end
 
-# 109 "data//maps/MirrohBaseCamp/scripts.pory"
+# 110 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_0:
-# 109 "data//maps/MirrohBaseCamp/scripts.pory"
+# 110 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 109 "data//maps/MirrohBaseCamp/scripts.pory"
+# 110 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_right
 	step_end
 
-# 111 "data//maps/MirrohBaseCamp/scripts.pory"
+# 112 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_1:
-# 111 "data//maps/MirrohBaseCamp/scripts.pory"
+# 112 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 111 "data//maps/MirrohBaseCamp/scripts.pory"
+# 112 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_left
-# 111 "data//maps/MirrohBaseCamp/scripts.pory"
+# 112 "data//maps/MirrohBaseCamp/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_2:
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
 	step_end
 
@@ -305,7 +307,7 @@ MirrohBaseCamp_EventScript_NPC2_Text_0:
 	.string "don't you drop by my house later?$"
 
 MirrohBaseCamp_Rue_Trigger_Text_0:
-# 116 "data//maps/MirrohBaseCamp/scripts.pory"
+# 117 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "RUE: {PLAYER}? What are you doing all\n"
 	.string "the way over here?\p"
 	.string "...\p"
