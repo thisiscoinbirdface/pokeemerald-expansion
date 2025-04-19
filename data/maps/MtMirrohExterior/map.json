@@ -108,8 +108,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_MIRROH_EXTERIOR_BREECH",
-      "flag": "0"
+      "script": "NULL",
+      "flag": "FLAG_MIRROH_EXTERIOR_BREECH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFABLE)",
@@ -121,8 +121,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_MIRROH_EXTERIOR_BREECH",
-      "flag": "0"
+      "script": "NULL",
+      "flag": "FLAG_MIRROH_EXTERIOR_BREECH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
