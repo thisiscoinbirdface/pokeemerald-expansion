@@ -99,10 +99,10 @@ script MirrohBaseCamp_Rue_Trigger{
     }
 
     lockall
-    opendoor(9, 35)
+    opendoor(13, 27)
     waitdooranim   
 
-    setobjectxy(LOCALID_RUE, 9, 35)
+    setobjectxy(LOCALID_RUE, 13, 27)
 
     delay(8)    
     
@@ -110,7 +110,7 @@ script MirrohBaseCamp_Rue_Trigger{
     waitmovement(0)
     applymovement(LOCALID_RUE, moves(walk_down face_left emote_exclamation_mark))
     waitmovement(0)    
-    closedoor(9, 35)
+    closedoor(13, 27)
     waitdooranim    
     delay(16)
     msgbox(format("RUE: {PLAYER}? What are you doing all the way over here?\p...\pRUE: Ah, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pRUE: I came here to make some social calls. Since Mirroh Base Camp is quiet and secluded, many academics reside here - Martha being one of them. I suppose I should go pay her a visit next.\pRUE: Take care, {PLAYER}. Stay safe in Mt. Mirroh. Listen to what the detectives tell you to do, okay?"))
