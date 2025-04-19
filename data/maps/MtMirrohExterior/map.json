@@ -22,8 +22,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-      "x": 42,
-      "y": 86,
+      "x": 44,
+      "y": 82,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -48,14 +48,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 22,
-      "y": 65,
+      "x": 13,
+      "y": 66,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "MtMirrohExterior_Trainer_B",
       "flag": "0"
     },
@@ -126,8 +126,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 36,
-      "y": 10,
+      "x": 33,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
@@ -217,8 +217,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
-      "x": 17,
-      "y": 48,
+      "x": 12,
+      "y": 59,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 3,
@@ -256,8 +256,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 28,
-      "y": 63,
+      "x": 15,
+      "y": 68,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -282,8 +282,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 20,
-      "y": 74,
+      "x": 25,
+      "y": 75,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -295,8 +295,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 11,
-      "y": 66,
+      "x": 12,
+      "y": 48,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
       "movement_range_x": 0,
@@ -309,7 +309,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
       "x": 41,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -362,7 +362,7 @@
   "warp_events": [
     {
       "x": 41,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_MIRROH_FIGHTING_DOJO",
       "dest_warp_id": "0"
@@ -398,7 +398,7 @@
     {
       "type": "sign",
       "x": 44,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WhiteSign_Route8_Dojo"
