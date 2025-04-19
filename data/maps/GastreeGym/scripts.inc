@@ -76,7 +76,7 @@ GastreeGym_EventScript_Victory::
 # 61 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_2
 # 62 "data//maps/GastreeGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 3
+	giveitem ITEM_RARE_SHARD, 2
 # 63 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_3
 # 64 "data//maps/GastreeGym/scripts.pory"

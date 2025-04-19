@@ -173,7 +173,7 @@ GalecrestCityGym_Leader::
 # 163 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 # 164 "data//maps/GalecrestCityGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 3
+	giveitem ITEM_RARE_SHARD, 2
 # 165 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
 # 168 "data//maps/GalecrestCityGym/scripts.pory"

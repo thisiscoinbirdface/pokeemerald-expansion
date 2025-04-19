@@ -161,7 +161,7 @@ script GalecrestCityGym_Leader {
         //Describe the badge features (use HMs, allow pokemon control etc.)
         msgbox(format("KOHLA: The Stoic Badge lets you use the HM move ROCK SMASH outside of battle.\p...\pKOHLA: And these are yours too."))
         release
-        giveitem(ITEM_RARE_SHARD, 3)
+        giveitem(ITEM_RARE_SHARD, 2)
         delay(16)
         
         //Bye-bye

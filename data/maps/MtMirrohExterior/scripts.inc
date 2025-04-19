@@ -310,7 +310,7 @@ MtMirrohExterior_NPC_D_Movement_0:
 
 MtMirrohExterior_BreechTrigger_Text_0:
 # 28 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "BREECH: CLEFABLE, did you see the Team\n"
+	.string "BREECH: Clefaible, did you see the Team\n"
 	.string "Somber grunts too?$"
 
 MtMirrohExterior_BreechTrigger_Text_1:
@@ -323,9 +323,10 @@ MtMirrohExterior_BreechTrigger_Text_2:
 	.string "seeing you here. How are you?\p"
 	.string "...\p"
 	.string "BREECH: So you're chasing Team Somber.\n"
-	.string "I admire you, {PLAYER}. CLEFAIRY and\l"
-	.string "I just saw a couple of them enter Mt.\l"
-	.string "Mirroh. They left this drill here. I\l"
+	.string "I admire you, {PLAYER}. Clefairy and I\l"
+	.string "just saw a couple of them enter Mt.\l"
+	.string "Mirroh. They left this drill here and\l"
+	.string "blocked the path with these boulders. I\l"
 	.string "wonder what they're using all this\l"
 	.string "equipment for?$"
 
@@ -338,7 +339,7 @@ MtMirrohExterior_BreechTrigger_Text_3:
 
 MtMirrohExterior_BreechTrigger_Text_4:
 # 54 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "BREECH: CLEFABLE and I have become\n"
+	.string "BREECH: Clefable and I have become\n"
 	.string "stronger now, but I really don't want to\l"
 	.string "get involved in all these matters. We'll\l"
 	.string "find some other way through the\l"

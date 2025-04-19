@@ -14231,7 +14231,6 @@ const struct Item gItemsInfo[] =
             "A surprisingly\n"
             "heavy shard of an\n"
             "unknown material."),
-        .importance = 1,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

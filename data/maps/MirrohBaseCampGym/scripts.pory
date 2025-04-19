@@ -6,24 +6,24 @@ script MirrohBaseCampGym_Leader{
     faceplayer
     
     if (flag(FLAG_MIRROHBASECAMP_LEADER)){
-        msgbox(format("CAROLA: Use your power wisely. As for me, it's time to move on."))
+        msgbox(format("CARONA: Use your power wisely. As for me, it's time to move on."))
     } else {
         //Intro
-        msgbox(format("???: Hmm? A trainer? Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left.\pCARONA: My name is CARONA, trainer. I am the former Leader of the Mirroh Base Camp GYM. The Pokémon league recently decomissioned this gym."))
+        msgbox(format("???: Hmm? A trainer? Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left.\pCARONA: My name is Carona, trainer. I am the former Leader of the Mirroh Base Camp Gym. The Pokémon League recently decomissioned this gym."))
         release
         delay(60)
-        msgbox(format("???: They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, all my trainers left."))
+        msgbox(format("CARONA: They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, all my trainers left."))
         release
         delay(30)
-        msgbox(format("CAROLA: And now it's just me in this empty warehouse. Like a ghost. Just like the rest of this little town of ours."))
+        msgbox(format("CARONA: And now it's just me in this empty warehouse. Like a ghost. Just like the rest of this little town of ours."))
         release
         applymovement(1, moves(emote_exclamation_mark))
-        msgbox(format("CAROLA: But I was a Gym Leader once! You understand? I was powerful and strong. I was something, someone! Countless trainers paid me their respects in battle, and to the chosen few destined for the top, I would award the coveted lapel pin known as the IRONFIRST BADGE!"))
+        msgbox(format("CARONA: But I was a Gym Leader once! You understand? I was powerful and strong. I was something, someone! Countless trainers paid me their respects in battle, and to the chosen few destined for the top, I would award the coveted lapel pin known as the IRONFIRST BADGE!"))
         release
         delay(60)
-        msgbox(format("CAROLA: But that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I just dropped in to...just to be here again, and feel...\pCAROLA: ...but something's missing.\pCAROLA: You're a trainer, aren't you? Would you care to indulge me a little? I'd like to be challenged by a trainer. It would mean everything if I could ride that thrill just once more."), MSGBOX_YESNO)
+        msgbox(format("CARONA: But that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I just dropped in to...just to be here again, and just...\pCARONA:...but something's missing.\pCARONA: You're a trainer, aren't you? Would you care to indulge me a little? I'd like to be challenged by a trainer. It would mean everything if I could ride that thrill just once more."), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("CAROLA: You are too kind, trainer. Come then, let us battle. Let these four empty walls be our spectators, this crooked floor our stadium, and silence our cheers!"))
+            msgbox(format("CARONA: You are too kind, trainer. Come then, let us battle. Let these four empty walls be our spectators, this crooked floor our stadium, and the silence our cheers!"))
             fadescreen(FADE_TO_BLACK)
             setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
 
@@ -34,7 +34,7 @@ script MirrohBaseCampGym_Leader{
             applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
             applymovement(1, moves(face_left))
             fadescreen(FADE_FROM_BLACK)
-            msgbox(format("CAROLA: Now, trainer, feel the force of these iron fists!"))
+            msgbox(format("CARONA: Now, trainer, feel the force of these iron fists!"))
             release
 
             //Battle
@@ -42,7 +42,7 @@ script MirrohBaseCampGym_Leader{
 
             //Post battle
             //Receive the badge
-            msgbox(format("CAROLA: What a beautiful display! What a thrill! This is why we do what we do, trainer!\pNow come to me."))
+            msgbox(format("CARONA: What a beautiful display! What a thrill! This is why we do what we do, trainer!\pCARONA: Now come to me."))
             release
 
             special(SpawnCameraObject)
@@ -58,21 +58,26 @@ script MirrohBaseCampGym_Leader{
             // applymovement(1, moves(face_left))
             // fadescreen(FADE_FROM_BLACK)
 
-            msgbox(format("CAROLA: Unfortunately I don't have a badge to award you any more.\pBut I have something else.\pYou see, the closure of this gym is destiny's way of telling me and LUCARIO to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))         
+            msgbox(format("CARONA: Unfortunately I don't have a badge to award you any more.\pCARONA: But I have something else.\pCARONA: I see the closure of this gym as destiny's way of telling Lucario and me to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))
             setflag(FLAG_MIRROHBASECAMP_LEADER)
             giveitem(ITEM_MEGA_RING)
             //Play gym badge fanfare
             call(Common_EventScript_PlayGymBadgeFanfare)
 
-            msgbox(format("CAROLA: The MEGA RING will allow you to Mega Evolve specific Pokémon as long as they hold their unique MEGA STONE. Carry on our legacy, trainer! Show the world your iron fists!"))
+            msgbox(format("CARONA: The Mega Ring will allow you to Mega Evolve specific Pokémon as long as they hold their unique Mega Stone.\pCARONA: Please take these with you as well.")) 
+            giveitem(ITEM_RARE_SHARD, 2)
+            msgbox(format("CARONA: I feel satisfied. A fitting end - to have been defeated by a trainer of your caliber!\pCARONA: Carry on our legacy, {PLAYER}! Show the world your iron fists!"))
             release
 
         } else {
-            msgbox(format("CAROLA: Haha! A fitting finale in a way."))
+            msgbox(format("CARONA: Haha! A fitting finale in a way."))
             release
         }
     }
     releaseall
 
 }
+
+
+
 

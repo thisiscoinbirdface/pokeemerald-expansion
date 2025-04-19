@@ -104,7 +104,7 @@ SilversunCity_Theater_Leader::
 # 87 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_10
 # 89 "data//maps/SilversunCity_Theater/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 3
+	giveitem ITEM_RARE_SHARD, 2
 # 92 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_11
 # 93 "data//maps/SilversunCity_Theater/scripts.pory"
