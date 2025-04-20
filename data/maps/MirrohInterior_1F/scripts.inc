@@ -118,130 +118,128 @@ MirrohInterior_1F_EventScript_NurseQuest_MissingChansey::
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_0
 # 90 "data//maps/MirrohInterior_1F/scripts.pory"
-	special HealPlayerParty
+	call Common_EventScript_OutOfCenterPartyHeal
 # 91 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitstate
-# 92 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_1
-# 93 "data//maps/MirrohInterior_1F/scripts.pory"
+# 92 "data//maps/MirrohInterior_1F/scripts.pory"
 	release
-# 94 "data//maps/MirrohInterior_1F/scripts.pory"
+# 93 "data//maps/MirrohInterior_1F/scripts.pory"
 	clearflag FLAG_HIDE_MIRROH_LAST_CHANSEY
-# 95 "data//maps/MirrohInterior_1F/scripts.pory"
+# 94 "data//maps/MirrohInterior_1F/scripts.pory"
 	warp MAP_MIRROH_INTERIOR_1F, 42, 46
 	return
 
 
 MirrohInterior_1F_Trainer_A::
-# 116 "data//maps/MirrohInterior_1F/scripts.pory"
+# 115 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_A, MirrohInterior_1F_Trainer_A_Text_0, MirrohInterior_1F_Trainer_A_Text_1
-# 117 "data//maps/MirrohInterior_1F/scripts.pory"
+# 116 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_A_Text_2
-# 118 "data//maps/MirrohInterior_1F/scripts.pory"
+# 117 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_B::
-# 123 "data//maps/MirrohInterior_1F/scripts.pory"
+# 122 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_B, MirrohInterior_1F_Trainer_B_Text_0, MirrohInterior_1F_Trainer_B_Text_1
-# 124 "data//maps/MirrohInterior_1F/scripts.pory"
+# 123 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_B_Text_2
-# 125 "data//maps/MirrohInterior_1F/scripts.pory"
+# 124 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_C::
-# 130 "data//maps/MirrohInterior_1F/scripts.pory"
+# 129 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_C, MirrohInterior_1F_Trainer_C_Text_0, MirrohInterior_1F_Trainer_C_Text_1
-# 131 "data//maps/MirrohInterior_1F/scripts.pory"
+# 130 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_C_Text_2
-# 132 "data//maps/MirrohInterior_1F/scripts.pory"
+# 131 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_D::
-# 137 "data//maps/MirrohInterior_1F/scripts.pory"
+# 136 "data//maps/MirrohInterior_1F/scripts.pory"
 	lockall
-# 138 "data//maps/MirrohInterior_1F/scripts.pory"
+# 137 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_D_Text_0
+# 138 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
 # 139 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
-# 140 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement LOCALID_ROBBER, MirrohInterior_1F_Trainer_D_Movement_0
+# 140 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
 # 141 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 142 "data//maps/MirrohInterior_1F/scripts.pory"
 	delay 20
-# 143 "data//maps/MirrohInterior_1F/scripts.pory"
+# 142 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_D_Text_1
-# 145 "data//maps/MirrohInterior_1F/scripts.pory"
+# 144 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_no_intro TRAINER_MIRROHINT_D, MirrohInterior_1F_Trainer_D_Text_2
-# 146 "data//maps/MirrohInterior_1F/scripts.pory"
+# 145 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_D_Text_3
-# 147 "data//maps/MirrohInterior_1F/scripts.pory"
+# 146 "data//maps/MirrohInterior_1F/scripts.pory"
 	release
-# 148 "data//maps/MirrohInterior_1F/scripts.pory"
+# 147 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MirrohInterior_1F_Trainer_D_Movement_1
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement LOCALID_ROBBER, MirrohInterior_1F_Trainer_D_Movement_2
-# 150 "data//maps/MirrohInterior_1F/scripts.pory"
+# 149 "data//maps/MirrohInterior_1F/scripts.pory"
 	waitmovement 0
-# 151 "data//maps/MirrohInterior_1F/scripts.pory"
+# 150 "data//maps/MirrohInterior_1F/scripts.pory"
 	removeobject LOCALID_ROBBER
-# 153 "data//maps/MirrohInterior_1F/scripts.pory"
+# 152 "data//maps/MirrohInterior_1F/scripts.pory"
 	setflag FLAG_MIRROH_ROBBER
-# 154 "data//maps/MirrohInterior_1F/scripts.pory"
+# 153 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_1F_Trainer_E::
-# 160 "data//maps/MirrohInterior_1F/scripts.pory"
+# 159 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_D, MirrohInterior_1F_Trainer_E_Text_0, MirrohInterior_1F_Trainer_E_Text_1
-# 161 "data//maps/MirrohInterior_1F/scripts.pory"
+# 160 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_E_Text_2
-# 162 "data//maps/MirrohInterior_1F/scripts.pory"
+# 161 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_NPC_A::
-# 183 "data//maps/MirrohInterior_1F/scripts.pory"
+# 182 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_A_Text_0, MSGBOX_NPC
-# 184 "data//maps/MirrohInterior_1F/scripts.pory"
+# 183 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_1F_NPC_B::
-# 189 "data//maps/MirrohInterior_1F/scripts.pory"
+# 188 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_B_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_1F_NPC_C::
-# 194 "data//maps/MirrohInterior_1F/scripts.pory"
+# 193 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_C_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_1F_NPC_D::
-# 200 "data//maps/MirrohInterior_1F/scripts.pory"
+# 199 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_D_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_1F_NPC_E::
-# 206 "data//maps/MirrohInterior_1F/scripts.pory"
+# 205 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_D_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_1F_Pineco::
-# 210 "data//maps/MirrohInterior_1F/scripts.pory"
+# 209 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Pineco_Text_0, MSGBOX_NPC
 	end
 
@@ -302,37 +300,37 @@ MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 140 "data//maps/MirrohInterior_1F/scripts.pory"
+# 139 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_Trainer_D_Movement_0:
-# 140 "data//maps/MirrohInterior_1F/scripts.pory"
+# 139 "data//maps/MirrohInterior_1F/scripts.pory"
 	jump_in_place_down
-# 140 "data//maps/MirrohInterior_1F/scripts.pory"
+# 139 "data//maps/MirrohInterior_1F/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 148 "data//maps/MirrohInterior_1F/scripts.pory"
+# 147 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_Trainer_D_Movement_1:
-# 148 "data//maps/MirrohInterior_1F/scripts.pory"
+# 147 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_left
-# 148 "data//maps/MirrohInterior_1F/scripts.pory"
+# 147 "data//maps/MirrohInterior_1F/scripts.pory"
 	face_down
 	step_end
 
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_Trainer_D_Movement_2:
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 149 "data//maps/MirrohInterior_1F/scripts.pory"
+# 148 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
 	step_end
 
@@ -372,62 +370,62 @@ MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_0:
 	.string "Chansey stretches out a hand...$"
 
 MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_1:
-# 92 "data//maps/MirrohInterior_1F/scripts.pory"
+# 91 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Thank you Chansey! You don't need to\n"
 	.string "worry any more. It's time to take you\l"
 	.string "back to Nurse Joy.$"
 
 MirrohInterior_1F_Trainer_A_Text_0:
-# 116 "data//maps/MirrohInterior_1F/scripts.pory"
+# 115 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Ho ho! Didn't expect to see a fellow\n"
 	.string "traveler up here in this frozen\l"
 	.string "mountain!$"
 
 MirrohInterior_1F_Trainer_A_Text_1:
-# 116 "data//maps/MirrohInterior_1F/scripts.pory"
+# 115 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Keep traveling, traveler!$"
 
 MirrohInterior_1F_Trainer_A_Text_2:
-# 117 "data//maps/MirrohInterior_1F/scripts.pory"
+# 116 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I love delving deep into the mountains\n"
 	.string "of Cormoria!$"
 
 MirrohInterior_1F_Trainer_B_Text_0:
-# 123 "data//maps/MirrohInterior_1F/scripts.pory"
+# 122 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "No! That item's mine!$"
 
 MirrohInterior_1F_Trainer_B_Text_1:
-# 123 "data//maps/MirrohInterior_1F/scripts.pory"
+# 122 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Fine, you can have it...$"
 
 MirrohInterior_1F_Trainer_B_Text_2:
-# 124 "data//maps/MirrohInterior_1F/scripts.pory"
+# 123 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Travelers often leave rare items inside\n"
 	.string "caves and mountains. That's where the\l"
 	.string "money is, baby!$"
 
 MirrohInterior_1F_Trainer_C_Text_0:
-# 130 "data//maps/MirrohInterior_1F/scripts.pory"
+# 129 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I may switch to ICE type Pokémon after\n"
 	.string "seeing the Pokémon here!$"
 
 MirrohInterior_1F_Trainer_C_Text_1:
-# 130 "data//maps/MirrohInterior_1F/scripts.pory"
+# 129 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I should just use ROCK types!$"
 
 MirrohInterior_1F_Trainer_C_Text_2:
-# 131 "data//maps/MirrohInterior_1F/scripts.pory"
+# 130 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "If you go deeper into the mountain,\n"
 	.string "you'll find some rare ICE type Pokemon!$"
 
 MirrohInterior_1F_Trainer_D_Text_0:
-# 138 "data//maps/MirrohInterior_1F/scripts.pory"
+# 137 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Hehehe - that Chansey in the corner is\n"
 	.string "mine! I just need to figure out how to\l"
 	.string "clear these rocks out of the way...$"
 
 MirrohInterior_1F_Trainer_D_Text_1:
-# 143 "data//maps/MirrohInterior_1F/scripts.pory"
+# 142 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Who're you? Mind your own business, kid.\p"
 	.string "...\p"
 	.string "You're going to return Chansey to Nurse\n"
@@ -437,51 +435,51 @@ MirrohInterior_1F_Trainer_D_Text_1:
 	.string "since nobody else did!$"
 
 MirrohInterior_1F_Trainer_D_Text_2:
-# 145 "data//maps/MirrohInterior_1F/scripts.pory"
+# 144 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "No! My new Chansey!$"
 
 MirrohInterior_1F_Trainer_D_Text_3:
-# 146 "data//maps/MirrohInterior_1F/scripts.pory"
+# 145 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Fine! Give that Chansey back to Nurse\n"
 	.string "Joy! I'm outta here!$"
 
 MirrohInterior_1F_Trainer_E_Text_0:
-# 160 "data//maps/MirrohInterior_1F/scripts.pory"
+# 159 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I can't get through to Winterlily Hollow\n"
 	.string "from this side. It's so frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_1:
-# 160 "data//maps/MirrohInterior_1F/scripts.pory"
+# 159 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "You're also frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_2:
-# 161 "data//maps/MirrohInterior_1F/scripts.pory"
+# 160 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I mean why even build a tunnel then?$"
 
 MirrohInterior_1F_NPC_A_Text_0:
-# 183 "data//maps/MirrohInterior_1F/scripts.pory"
+# 182 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I'm trekking to Winterlily Hollow! But my\n"
 	.string "GRASS type Pokémon can't deal with all\l"
 	.string "the ICE type Pokémon around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
-# 189 "data//maps/MirrohInterior_1F/scripts.pory"
+# 188 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "The way to Winterlily Hollow is past the\n"
 	.string "ledge above. But how do I cross the\l"
 	.string "ledge?$"
 
 MirrohInterior_1F_NPC_C_Text_0:
-# 194 "data//maps/MirrohInterior_1F/scripts.pory"
+# 193 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Some dangerous looking people passed\n"
 	.string "through here earlier with loads of\l"
 	.string "heavy machinery. All that commotion\l"
 	.string "caused a bunch of rocks to cave in!$"
 
 MirrohInterior_1F_NPC_D_Text_0:
-# 200 "data//maps/MirrohInterior_1F/scripts.pory"
+# 199 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Past this is the trek upto the mountain\n"
 	.string "peak. The weather is harsh!$"
 
 MirrohInterior_1F_Pineco_Text_0:
-# 210 "data//maps/MirrohInterior_1F/scripts.pory"
+# 209 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Pineco looks cold!$"
