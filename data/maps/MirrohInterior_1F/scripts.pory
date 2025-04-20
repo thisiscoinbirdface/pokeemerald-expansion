@@ -3,7 +3,14 @@ raw`
     .set LOCALID_ROBBER, 2
 `
 
-mapscripts MirrohInterior_1F_MapScripts{}
+mapscripts MirrohInterior_1F_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_0, 0: MirrohInterior_1F_EventScript_NurseQuest_End
+    ]
+}
+
+//MirrohInterior_1F_EventScript_NurseQuest_End
+
 
 //entry
 //picnicker 
@@ -78,6 +85,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_Main{
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
+    setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 1)
     setflag(FLAG_MIRROH_NURSE_QUEST_START)
     releaseall
     end
@@ -91,9 +99,37 @@ script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
     msgbox(format("Thank you Chansey! You don't need to worry any more. It's time to take you back to Nurse Joy."))
     release
     clearflag(FLAG_HIDE_MIRROH_LAST_CHANSEY)
+    setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 2)    
     warp(MAP_MIRROH_INTERIOR_1F, 42, 46)
 }
+script MirrohInterior_1F_EventScript_NurseQuest_End{
+    if (var(VAR_MIRROH_NURSE_CHANSEY_QUEST) == 2){
 
+        applymovement(LOCALID_NURSE, moves(jump_in_place_right emote_exclamation_mark))
+        waitmovement(0)
+        delay(20)
+
+        msgbox(format("NURSE: Chansey!"))
+        release
+        applymovement(LOCALID_NURSE, moves(walk_up face_right))
+        waitmovement(0)
+        msgbox(format("NURSE: Oh my! Chansey! Are you alright?"))
+        release
+        delay(16)
+        msgbox(format("CHANSEY: seyyy!!!"))
+        release
+        delay(16)
+        applymovement(LOCALID_NURSE, moves(walk_down face_right))        
+        waitmovement(0)
+        msgbox(format("NURSE: Thank you trainer! You saved Chansey!"))
+        release
+        completequest(QUEST_MIRROH_NURSE_CHANSEY)
+        setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 3)   
+        release
+    }
+    
+    end
+}
 
 
 
