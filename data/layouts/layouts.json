@@ -5165,7 +5165,7 @@
       "id": "LAYOUT_MT_MIRROH_EXTERIOR",
       "name": "MtMirrohExterior_Layout",
       "width": 60,
-      "height": 92,
+      "height": 80,
       "primary_tileset": "gTileset_Snow",
       "secondary_tileset": "gTileset_SnowCableCar",
       "border_filepath": "data/layouts/MtMirrohExterior/border.bin",

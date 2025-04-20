@@ -3,229 +3,229 @@ MirrohInterior_2F_MapScripts::
 
 
 MirrohInterior_2F_CavePainting_WalkingWake::
-# 9 "data//maps/MirrohInterior_2F/scripts.pory"
+# 20 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 12 "data//maps/MirrohInterior_2F/scripts.pory"
+# 23 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_CavePainting_WalkingWake_Text_0
-# 14 "data//maps/MirrohInterior_2F/scripts.pory"
+# 25 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_Trainer_A::
-# 31 "data//maps/MirrohInterior_2F/scripts.pory"
+# 42 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_A, MirrohInterior_2F_Trainer_A_Text_0, MirrohInterior_2F_Trainer_A_Text_1
-# 32 "data//maps/MirrohInterior_2F/scripts.pory"
+# 43 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_A_Text_2
-# 33 "data//maps/MirrohInterior_2F/scripts.pory"
+# 44 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_B::
-# 37 "data//maps/MirrohInterior_2F/scripts.pory"
+# 48 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_B, MirrohInterior_2F_Trainer_B_Text_0, MirrohInterior_2F_Trainer_B_Text_1
-# 38 "data//maps/MirrohInterior_2F/scripts.pory"
+# 49 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_B_Text_2
-# 39 "data//maps/MirrohInterior_2F/scripts.pory"
+# 50 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_C::
-# 43 "data//maps/MirrohInterior_2F/scripts.pory"
+# 54 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_C, MirrohInterior_2F_Trainer_C_Text_0, MirrohInterior_2F_Trainer_C_Text_1
-# 44 "data//maps/MirrohInterior_2F/scripts.pory"
+# 55 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_C_Text_2
-# 45 "data//maps/MirrohInterior_2F/scripts.pory"
+# 56 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_D::
-# 49 "data//maps/MirrohInterior_2F/scripts.pory"
+# 60 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_D, MirrohInterior_2F_Trainer_D_Text_0, MirrohInterior_2F_Trainer_D_Text_1
-# 50 "data//maps/MirrohInterior_2F/scripts.pory"
+# 61 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_D_Text_2
-# 51 "data//maps/MirrohInterior_2F/scripts.pory"
+# 62 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_E::
-# 55 "data//maps/MirrohInterior_2F/scripts.pory"
+# 66 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_E, MirrohInterior_2F_Trainer_E_Text_0, MirrohInterior_2F_Trainer_E_Text_1
-# 56 "data//maps/MirrohInterior_2F/scripts.pory"
+# 67 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_E_Text_2
-# 57 "data//maps/MirrohInterior_2F/scripts.pory"
+# 68 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_F::
-# 61 "data//maps/MirrohInterior_2F/scripts.pory"
+# 72 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_F, MirrohInterior_2F_Trainer_F_Text_0, MirrohInterior_2F_Trainer_F_Text_1
-# 62 "data//maps/MirrohInterior_2F/scripts.pory"
+# 73 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_F_Text_2
-# 63 "data//maps/MirrohInterior_2F/scripts.pory"
+# 74 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_G::
-# 67 "data//maps/MirrohInterior_2F/scripts.pory"
+# 78 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_G, MirrohInterior_2F_Trainer_G_Text_0, MirrohInterior_2F_Trainer_G_Text_1
-# 68 "data//maps/MirrohInterior_2F/scripts.pory"
+# 79 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_G_Text_2
-# 69 "data//maps/MirrohInterior_2F/scripts.pory"
+# 80 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_NPC_A::
-# 89 "data//maps/MirrohInterior_2F/scripts.pory"
+# 100 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 90 "data//maps/MirrohInterior_2F/scripts.pory"
+# 101 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 91 "data//maps/MirrohInterior_2F/scripts.pory"
+# 102 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 92 "data//maps/MirrohInterior_2F/scripts.pory"
+# 103 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_NPC_B::
-# 97 "data//maps/MirrohInterior_2F/scripts.pory"
+# 108 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 98 "data//maps/MirrohInterior_2F/scripts.pory"
+# 109 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 99 "data//maps/MirrohInterior_2F/scripts.pory"
+# 110 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 100 "data//maps/MirrohInterior_2F/scripts.pory"
+# 111 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_NPC_C::
-# 104 "data//maps/MirrohInterior_2F/scripts.pory"
+# 115 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 105 "data//maps/MirrohInterior_2F/scripts.pory"
+# 116 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 106 "data//maps/MirrohInterior_2F/scripts.pory"
+# 117 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 107 "data//maps/MirrohInterior_2F/scripts.pory"
+# 118 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_CavePainting_WalkingWake_Text_0:
-# 12 "data//maps/MirrohInterior_2F/scripts.pory"
+# 23 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "It's an ancient cave painting...a never\n"
 	.string "before seen Pokemon! It looks somewhat\l"
 	.string "reptilian, but also has feathers.\l"
 	.string "Terrifying!$"
 
 MirrohInterior_2F_Trainer_A_Text_0:
-# 31 "data//maps/MirrohInterior_2F/scripts.pory"
+# 42 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Deep in the depths of Mt. Mirroh, I\n"
 	.string "sense psychic energy!$"
 
 MirrohInterior_2F_Trainer_A_Text_1:
-# 31 "data//maps/MirrohInterior_2F/scripts.pory"
+# 42 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Nope, there's no psychic energy!$"
 
 MirrohInterior_2F_Trainer_A_Text_2:
-# 32 "data//maps/MirrohInterior_2F/scripts.pory"
+# 43 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I suppose there's psychic energy\n"
 	.string "everywhere. It's like happiness - a\l"
 	.string "state of mind.$"
 
 MirrohInterior_2F_Trainer_B_Text_0:
-# 37 "data//maps/MirrohInterior_2F/scripts.pory"
+# 48 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I came here searching for ancient\n"
 	.string "ruins! Don't interrupt me!$"
 
 MirrohInterior_2F_Trainer_B_Text_1:
-# 37 "data//maps/MirrohInterior_2F/scripts.pory"
+# 48 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Ok you can interrupt me!$"
 
 MirrohInterior_2F_Trainer_B_Text_2:
-# 38 "data//maps/MirrohInterior_2F/scripts.pory"
+# 49 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Maybe there are ancient ruins at the\n"
 	.string "peak of Mt. Mirroh...$"
 
 MirrohInterior_2F_Trainer_C_Text_0:
-# 43 "data//maps/MirrohInterior_2F/scripts.pory"
+# 54 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Hey, didn't I battle you before in Route\n"
 	.string "3?$"
 
 MirrohInterior_2F_Trainer_C_Text_1:
-# 43 "data//maps/MirrohInterior_2F/scripts.pory"
+# 54 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "You beat me then too!$"
 
 MirrohInterior_2F_Trainer_C_Text_2:
-# 44 "data//maps/MirrohInterior_2F/scripts.pory"
+# 55 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I'm going to collect all 8 gym badges!\n"
 	.string "But I only have 4 so far.$"
 
 MirrohInterior_2F_Trainer_D_Text_0:
-# 49 "data//maps/MirrohInterior_2F/scripts.pory"
+# 60 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Check out my new friends!$"
 
 MirrohInterior_2F_Trainer_D_Text_1:
-# 49 "data//maps/MirrohInterior_2F/scripts.pory"
+# 60 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Don't hurt them!$"
 
 MirrohInterior_2F_Trainer_D_Text_2:
-# 50 "data//maps/MirrohInterior_2F/scripts.pory"
+# 61 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I'm a huge Pokefan! They're my best\n"
 	.string "friends! But I have human friends too.$"
 
 MirrohInterior_2F_Trainer_E_Text_0:
-# 55 "data//maps/MirrohInterior_2F/scripts.pory"
+# 66 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Why are you here? Are you trying to\n"
 	.string "steal my Pokémon like those Team\l"
 	.string "Somber grunts?$"
 
 MirrohInterior_2F_Trainer_E_Text_1:
-# 55 "data//maps/MirrohInterior_2F/scripts.pory"
+# 66 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I guess you're not!$"
 
 MirrohInterior_2F_Trainer_E_Text_2:
-# 56 "data//maps/MirrohInterior_2F/scripts.pory"
+# 67 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "When I was on the upper floor, some\n"
 	.string "Team Somber grunts tried to take my\l"
 	.string "Pokemon. But I beat one of them and ran\l"
 	.string "away from the other!$"
 
 MirrohInterior_2F_Trainer_F_Text_0:
-# 61 "data//maps/MirrohInterior_2F/scripts.pory"
+# 72 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "This is the best place for endurance\n"
 	.string "training. Let's train!$"
 
 MirrohInterior_2F_Trainer_F_Text_1:
-# 61 "data//maps/MirrohInterior_2F/scripts.pory"
+# 72 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "You have endurance!$"
 
 MirrohInterior_2F_Trainer_F_Text_2:
-# 62 "data//maps/MirrohInterior_2F/scripts.pory"
+# 73 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I'm training for a relay race back home.\n"
 	.string "Gotta stay in shape!$"
 
 MirrohInterior_2F_Trainer_G_Text_0:
-# 67 "data//maps/MirrohInterior_2F/scripts.pory"
+# 78 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I can't wait to get out of this cave.\n"
 	.string "But I don't mind one last battle before\l"
 	.string "leaving!$"
 
 MirrohInterior_2F_Trainer_G_Text_1:
-# 67 "data//maps/MirrohInterior_2F/scripts.pory"
+# 78 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Now I really want to leave!$"
 
 MirrohInterior_2F_Trainer_G_Text_2:
-# 68 "data//maps/MirrohInterior_2F/scripts.pory"
+# 79 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "This cave is so confusing!$"
 
 MirrohInterior_2F_NPC_A_Text_0:
-# 91 "data//maps/MirrohInterior_2F/scripts.pory"
+# 102 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "$"

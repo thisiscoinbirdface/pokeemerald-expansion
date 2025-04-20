@@ -1,6 +1,6 @@
 raw`
-    .set LOCALID_BREECH, 7
-    .set LOCALID_CLEF, 8
+    .set LOCALID_BREECH, 5
+    .set LOCALID_CLEF, 6
 `
 
 mapscripts MtMirrohExterior_MapScripts{}
@@ -92,8 +92,8 @@ script MtMirrohExterior_Trainer_D{
     end
 }
 script MtMirrohExterior_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHEXT_E, format("I'm from the FIGHTING DOJO! Guess you know what that means, right?"), "You knew what that meant!")
-    msgbox(format("The FIGHTING DOJO is the pinnacle for us FIGHTING type users! It's where you become the best of the best"))
+    trainerbattle_single(TRAINER_MIRROHEXT_E, format("I'm from the Fighting Dojo! Guess you know what that means, right?"), "You knew what that meant!")
+    msgbox(format("The Fighting Dojo is the pinnacle for us FIGHTING type users! It's where you become the best of the best"))
     releaseall
     end
 }
@@ -182,14 +182,14 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format("I can't believe what's happening inside the FIGHTING DOJO! How could the master have lost her mind like this?"))
+    msgbox(format("I can't believe what's happening inside the Fighting Dojo! How could the master have lost her mind like this?"))
     releaseall
     end
 }
 
 script MtMirrohExterior_NPC_G{
     lockall
-    msgbox(format("She's meditating with her MEDICHAM...best not disturb her."))
+    msgbox(format("She's meditating with her Medicham...best not disturb her."))
     releaseall
     end
 }
