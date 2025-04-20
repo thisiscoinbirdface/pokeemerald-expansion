@@ -20,16 +20,15 @@ mapscripts MirrohInterior_1F_MapScripts{}
 
 //NURSE
 script MirrohInterior_1F_EventScript_Nurse{
-    lockall
-    faceplayer
-    msgbox(format("It's so cold here...CHANSEY and I got the worst route!"))
-    release
-	call(Common_EventScript_NurseJoyOnRoute)
-    releaseall
+    msgbox(format("NURSE: Have you found Chansey yet? We're all really worried!"), MSGBOX_NPC)
     end
 }
 
-
+script MirrohInterior_1F_EventScript_Chansey{
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox(format("Chansey looks stressed! It must be worried about its friend."), MSGBOX_NPC)
+    end
+}
 
 
 
@@ -78,7 +77,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
 }
 
 script MirrohInterior_1F_EventScript_NurseQuest_Main{
-    msgbox(format("NURSE: I was taking these Chansey and I up to Winterlily Hollow to help the nurse there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce! Please find Chansey for us!"))
+    msgbox(format("NURSE: I was taking these Chanseys up to Winterlily Hollow to help the nurse there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
