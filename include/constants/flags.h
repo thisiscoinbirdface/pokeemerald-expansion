@@ -203,10 +203,10 @@
 #define FLAG_HIDE_PELLUCA_MAYOR_MON5   0x4DF // Unused Flag
 #define FLAG_PELLUCA_CITY_TM_GIVER   0x4DA // Unused Flag
 #define FLAG_MIRROH_NURSE_QUEST_START 0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1 0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2 0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3 0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4 0x4E4 // Unused Flag
+#define FLAG_MIRROH_ROBBER 0x4E1 // Unused Flag
+#define FLAG_MIRROH_NURSE_QUEST_CHANSEYGET 0x4E2 // Unused Flag
+#define FLAG_MIRROH_NURSE_QUEST_END 0x4E3 // Unused Flag
+#define FLAG_HIDE_MIRROH_LAST_CHANSEY 0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5 0x4E5 // Unused Flag
 #define FLAG_UNUSED_0x49E 0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F 0x49F // Unused Flag

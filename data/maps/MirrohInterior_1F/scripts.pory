@@ -1,5 +1,6 @@
 raw`
     .set LOCALID_NURSE, 1
+    .set LOCALID_ROBBER, 2
 `
 
 mapscripts MirrohInterior_1F_MapScripts{}
@@ -29,9 +30,6 @@ script MirrohInterior_1F_EventScript_Chansey{
     msgbox(format("Chansey looks stressed! It must be worried about its friend."), MSGBOX_NPC)
     end
 }
-
-
-
 
 script MirrohInterior_1F_EventScript_NurseQuest_Trigger0{
     if (flag(FLAG_MIRROH_NURSE_QUEST_START)) {end}
@@ -71,13 +69,12 @@ script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
     waitmovement(0)
     delay(20)
 
-    msgbox(format("NURSE: Hey! You there! Are you a trainer? I need your help!"))
+    msgbox(format("NURSE: Hey! Are you a trainer? I need your help!"))
     release
     return
 }
-
 script MirrohInterior_1F_EventScript_NurseQuest_Main{
-    msgbox(format("NURSE: I was taking these Chanseys up to Winterlily Hollow to help the nurse there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
+    msgbox(format("NURSE: I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
@@ -85,7 +82,18 @@ script MirrohInterior_1F_EventScript_NurseQuest_Main{
     releaseall
     end
 }
-
+script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox(format("Chansey: seyy!!!\pChansey looks so relieved - it's about to cry!\pIt must have been really scared alone here.\p...\pChansey stretches out a hand..."))
+    special(HealPlayerParty)
+    waitstate
+    msgbox(format("Thank you Chansey! You don't need to worry any more. It's time to take you back to Nurse Joy."))
+    release
+    clearflag(FLAG_HIDE_MIRROH_LAST_CHANSEY)
+    warp(MAP_MIRROH_INTERIOR_1F, 42, 46)
+}
 
 
 
@@ -124,11 +132,27 @@ script MirrohInterior_1F_Trainer_C{
     releaseall
 }
 
-//BATTLE GIRL (LOST DEAD END)
+//ROBBER
 script MirrohInterior_1F_Trainer_D{
-    trainerbattle_single(TRAINER_MIRROHINT_E, format("I took a wrong turn and got lost. This is a dead end!"), format("You're not lost!"))
-    msgbox(format("How do I get out of here?"))
+    lockall
+    msgbox(format("Hehehe - that Chansey in the corner is mine! I just need to figure out how to clear these rocks out of the way..."))
+    release
+    applymovement(LOCALID_ROBBER, moves(jump_in_place_down emote_exclamation_mark))
+    waitmovement(0)
+    delay(20)
+    msgbox(format("Who're you? Mind your own business, kid.\p...\pYou're going to return Chansey to Nurse Joy by the entrance?\pHah! Fat chance. Ever heard about finders keepers? Well I'll teach you since nobody else did!"))
+
+    trainerbattle_no_intro(TRAINER_MIRROHINT_D, format("No! My new Chansey!"))
+    msgbox(format("Fine! Give that Chansey back to Nurse Joy! I'm outta here!"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
+    applymovement(LOCALID_ROBBER, moves(walk_down * 7))
+    waitmovement(0)
+    removeobject(LOCALID_ROBBER)
+
+    setflag(FLAG_MIRROH_ROBBER)
     releaseall
+    end
 }
 
 //LASS (EXIT)
@@ -156,25 +180,33 @@ script MirrohInterior_1F_Trainer_E{
 //NPCs
 //picknicker (entrance)
 script MirrohInterior_1F_NPC_A{
-    lockall
-    faceplayer
-    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type Pokémon can't deal with all the ICE type Pokémon around here..."))
+    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type Pokémon can't deal with all the ICE type Pokémon around here..."), MSGBOX_NPC)
     releaseall
     end
 }
 //Generic lady
 script MirrohInterior_1F_NPC_B{
-    lockall
-    faceplayer
-    msgbox(format("The way to Winterlily Hollow is past the ledge above. But how do I cross the ledge?"))
-    releaseall
+    msgbox(format("The way to Winterlily Hollow is past the ledge above. But how do I cross the ledge?"), MSGBOX_NPC)
     end
 }
-//end dude?
+//lass
 script MirrohInterior_1F_NPC_C{
-    lockall
-    faceplayer
-    msgbox(format("Past this is the trek upto Mt. Mirroh PEAK. The weather is harsh!"))
-    releaseall
+    msgbox(format("Some dangerous looking people passed through here earlier with loads of heavy machinery. All that commotion caused a bunch of rocks to cave in!"), MSGBOX_NPC)
+    end
+}
+
+//end dude?
+script MirrohInterior_1F_NPC_D{
+    msgbox(format("Past this is the trek upto the mountain peak. The weather is harsh!"), MSGBOX_NPC)
+    end
+}
+
+//lady with pineco on bridge
+script MirrohInterior_1F_NPC_E{
+    msgbox(format("Past this is the trek upto the mountain peak. The weather is harsh!"), MSGBOX_NPC)
+    end
+}
+script MirrohInterior_1F_Pineco{
+    msgbox(format("Pineco looks cold!"), MSGBOX_NPC)
     end
 }
