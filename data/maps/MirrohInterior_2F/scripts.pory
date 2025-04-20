@@ -1,8 +1,19 @@
 mapscripts MirrohInterior_2F_MapScripts{}
 
 //MAIN: walking wake painting
-//7 trainers
-//3 NPCs
+
+//one scientist vs triathlete
+//one trainer generic
+//one trainer at ice route end
+//one scientist vs triathlete
+//one old man
+//trainer double battle - scientist and triathlete
+//one old woman
+//koraidon painting
+    //jump back down
+//two trainers blocking the item
+//one npc
+//one youngster
 
 //its koraidon not walking wake
 script MirrohInterior_2F_CavePainting_WalkingWake{

@@ -1,11 +1,18 @@
 mapscripts MirrohInterior_1F_MapScripts{}
 
-//5 trainers
+//entry
+//picnicker 
+//nurse joy + 3 chanseys
+//one trainer at item, one NPC at blocker
+//one npc lady below exit
+//npc lady + mon on bridge
+//trainer
+//chansey blocked by rocks, one trainer (robber)
+//end
 
-//3 NPCs
-
-//2 more NPCs at the blocked exit
-
+//final
+//old man commenting on rock blockade by team somber
+//finale - team somber
 
 //NURSE
 script MirrohInterior_1F_EventScript_Nurse{
