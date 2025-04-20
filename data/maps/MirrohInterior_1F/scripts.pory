@@ -104,7 +104,8 @@ script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
 }
 script MirrohInterior_1F_EventScript_NurseQuest_End{
     if (var(VAR_MIRROH_NURSE_CHANSEY_QUEST) == 2){
-
+        
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         applymovement(LOCALID_NURSE, moves(jump_in_place_right emote_exclamation_mark))
         waitmovement(0)
         delay(20)
@@ -121,8 +122,21 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         delay(16)
         applymovement(LOCALID_NURSE, moves(walk_down face_right))        
         waitmovement(0)
-        msgbox(format("NURSE: Thank you trainer! You saved Chansey!"))
+        msgbox(format("NURSE: Thank you trainer! You saved Chansey!\p...\pNURSE: So these Team Somber people caused the cave-ins. How scary! I hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
         release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        applymovement(32, moves(jump_in_place_down, emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("CHANSEY: seeyyy!!\pChansey pulls something out of its pocket and hands it to you!"))
+        giveitem(ITEM_EVIOLITE)
+        msgbox(format("Thank you Chansey!"))
+        release
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("NURSE: We should head off to Winterlily Hollow now. The nurse there must be waiting for us!"))
         completequest(QUEST_MIRROH_NURSE_CHANSEY)
         setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 3)   
         release
