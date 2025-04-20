@@ -228,11 +228,11 @@ EventScript_StrengthBoulder::
 	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkpartymove MOVE_STRENGTH
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
-	setfieldeffectargument 0, VAR_RESULT
-	msgbox Text_WantToStrength, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
-	closemessage
+@	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
+@	setfieldeffectargument 0, VAR_RESULT
+@	msgbox Text_WantToStrength, MSGBOX_YESNO
+@	goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
+@	closemessage
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
 	goto EventScript_ActivateStrength
@@ -272,9 +272,9 @@ Text_WantToStrength:
 	.string "Would you like to use STRENGTH?$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1} used STRENGTH!\p"
-	.string "{STR_VAR_1}'s STRENGTH made it\n"
-	.string "possible to move boulders around!$"
+	.string "{STR_VAR_1} used STRENGTH!$"
+@	.string "{STR_VAR_1}'s STRENGTH made it\n"
+@	.string "possible to move boulders around!$"
 
 Text_CantStrength:
 	.string "It's a big boulder, but a POKéMON\n"
