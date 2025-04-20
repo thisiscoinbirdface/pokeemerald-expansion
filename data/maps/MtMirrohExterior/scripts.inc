@@ -1,9 +1,9 @@
 # 1 "data//maps/MtMirrohExterior/scripts.pory"
 
 # 2 "data//maps/MtMirrohExterior/scripts.pory"
-    .set LOCALID_BREECH, 7
+    .set LOCALID_BREECH, 5
 # 3 "data//maps/MtMirrohExterior/scripts.pory"
-    .set LOCALID_CLEF, 8
+    .set LOCALID_CLEF, 6
 
 MtMirrohExterior_MapScripts::
 	.byte 0
@@ -404,7 +404,7 @@ MtMirrohExterior_Trainer_D_Text_2:
 
 MtMirrohExterior_Trainer_E_Text_0:
 # 95 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I'm from the FIGHTING DOJO! Guess you\n"
+	.string "I'm from the Fighting Dojo! Guess you\n"
 	.string "know what that means, right?$"
 
 MtMirrohExterior_Trainer_E_Text_1:
@@ -413,8 +413,8 @@ MtMirrohExterior_Trainer_E_Text_1:
 
 MtMirrohExterior_Trainer_E_Text_2:
 # 96 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "The FIGHTING DOJO is the pinnacle for\n"
-	.string "us FIGHTING type users! It's where you\l"
+	.string "The Fighting Dojo is the pinnacle for us\n"
+	.string "FIGHTING type users! It's where you\l"
 	.string "become the best of the best$"
 
 MtMirrohExterior_NPC_A_Text_0:
@@ -465,13 +465,13 @@ MtMirrohExterior_Toxicroak_Text_0:
 MtMirrohExterior_NPC_F_Text_0:
 # 185 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I can't believe what's happening inside\n"
-	.string "the FIGHTING DOJO! How could the\l"
-	.string "master have lost her mind like this?$"
+	.string "the Fighting Dojo! How could the master\l"
+	.string "have lost her mind like this?$"
 
 MtMirrohExterior_NPC_G_Text_0:
 # 192 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "She's meditating with her\n"
-	.string "MEDICHAM...best not disturb her.$"
+	.string "Medicham...best not disturb her.$"
 
 MtMirrohExterior_Medicham_Text_0:
 # 199 "data//maps/MtMirrohExterior/scripts.pory"
