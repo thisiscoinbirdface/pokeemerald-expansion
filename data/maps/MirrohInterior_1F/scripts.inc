@@ -1,196 +1,357 @@
+# 1 "data//maps/MirrohInterior_1F/scripts.pory"
+
+# 2 "data//maps/MirrohInterior_1F/scripts.pory"
+    .set LOCALID_NURSE, 1
+
 MirrohInterior_1F_MapScripts::
 	.byte 0
 
 
 MirrohInterior_1F_EventScript_Nurse::
-# 19 "data//maps/MirrohInterior_1F/scripts.pory"
-	lockall
-# 20 "data//maps/MirrohInterior_1F/scripts.pory"
-	faceplayer
-# 21 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_EventScript_Nurse_Text_0
-# 22 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
 # 23 "data//maps/MirrohInterior_1F/scripts.pory"
-	call Common_EventScript_NurseJoyOnRoute
+	lockall
 # 24 "data//maps/MirrohInterior_1F/scripts.pory"
+	faceplayer
+# 25 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_EventScript_Nurse_Text_0
+# 26 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 27 "data//maps/MirrohInterior_1F/scripts.pory"
+	call Common_EventScript_NurseJoyOnRoute
+# 28 "data//maps/MirrohInterior_1F/scripts.pory"
+	releaseall
+	end
+
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger0::
+# 38 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto_if_set FLAG_MIRROH_NURSE_QUEST_START, MirrohInterior_1F_EventScript_NurseQuest_Trigger0_2
+# 39 "data//maps/MirrohInterior_1F/scripts.pory"
+	lockall
+# 40 "data//maps/MirrohInterior_1F/scripts.pory"
+	call MirrohInterior_1F_EventScript_NurseQuest_Exclamation
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohInterior_1F_EventScript_NurseQuest_Trigger0_Movement_0
+# 43 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 44 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto MirrohInterior_1F_EventScript_NurseQuest_Main
+	return
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger0_2:
+	end
+
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger1::
+# 47 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto_if_set FLAG_MIRROH_NURSE_QUEST_START, MirrohInterior_1F_EventScript_NurseQuest_Trigger1_2
+# 48 "data//maps/MirrohInterior_1F/scripts.pory"
+	lockall
+# 49 "data//maps/MirrohInterior_1F/scripts.pory"
+	call MirrohInterior_1F_EventScript_NurseQuest_Exclamation
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohInterior_1F_EventScript_NurseQuest_Trigger1_Movement_0
+# 52 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 53 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto MirrohInterior_1F_EventScript_NurseQuest_Main
+	return
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger1_2:
+	end
+
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger2::
+# 56 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto_if_set FLAG_MIRROH_NURSE_QUEST_START, MirrohInterior_1F_EventScript_NurseQuest_Trigger2_2
+# 57 "data//maps/MirrohInterior_1F/scripts.pory"
+	lockall
+# 58 "data//maps/MirrohInterior_1F/scripts.pory"
+	call MirrohInterior_1F_EventScript_NurseQuest_Exclamation
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohInterior_1F_EventScript_NurseQuest_Trigger2_Movement_0
+# 61 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 62 "data//maps/MirrohInterior_1F/scripts.pory"
+	goto MirrohInterior_1F_EventScript_NurseQuest_Main
+	return
+
+MirrohInterior_1F_EventScript_NurseQuest_Trigger2_2:
+	end
+
+
+MirrohInterior_1F_EventScript_NurseQuest_Exclamation::
+# 71 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_NURSE, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
+# 72 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 73 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 20
+# 75 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Text_0
+# 76 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+	return
+
+
+MirrohInterior_1F_EventScript_NurseQuest_Main::
+# 81 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0
+# 82 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 84 "data//maps/MirrohInterior_1F/scripts.pory"
+	startquest QUEST_MIRROH_NURSE_CHANSEY
+# 85 "data//maps/MirrohInterior_1F/scripts.pory"
+	setflag FLAG_MIRROH_NURSE_QUEST_START
+# 86 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_1F_Trainer_A::
-# 35 "data//maps/MirrohInterior_1F/scripts.pory"
+# 109 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_A, MirrohInterior_1F_Trainer_A_Text_0, MirrohInterior_1F_Trainer_A_Text_1
-# 36 "data//maps/MirrohInterior_1F/scripts.pory"
+# 110 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_A_Text_2
-# 37 "data//maps/MirrohInterior_1F/scripts.pory"
+# 111 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_B::
-# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+# 116 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_B, MirrohInterior_1F_Trainer_B_Text_0, MirrohInterior_1F_Trainer_B_Text_1
-# 43 "data//maps/MirrohInterior_1F/scripts.pory"
+# 117 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_B_Text_2
-# 44 "data//maps/MirrohInterior_1F/scripts.pory"
+# 118 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_C::
-# 49 "data//maps/MirrohInterior_1F/scripts.pory"
+# 123 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_C, MirrohInterior_1F_Trainer_C_Text_0, MirrohInterior_1F_Trainer_C_Text_1
-# 50 "data//maps/MirrohInterior_1F/scripts.pory"
+# 124 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_C_Text_2
-# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+# 125 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_D::
-# 56 "data//maps/MirrohInterior_1F/scripts.pory"
+# 130 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_E, MirrohInterior_1F_Trainer_D_Text_0, MirrohInterior_1F_Trainer_D_Text_1
-# 57 "data//maps/MirrohInterior_1F/scripts.pory"
+# 131 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_D_Text_2
-# 58 "data//maps/MirrohInterior_1F/scripts.pory"
+# 132 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_Trainer_E::
-# 63 "data//maps/MirrohInterior_1F/scripts.pory"
+# 137 "data//maps/MirrohInterior_1F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT_D, MirrohInterior_1F_Trainer_E_Text_0, MirrohInterior_1F_Trainer_E_Text_1
-# 64 "data//maps/MirrohInterior_1F/scripts.pory"
+# 138 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_Trainer_E_Text_2
-# 65 "data//maps/MirrohInterior_1F/scripts.pory"
+# 139 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_1F_NPC_A::
-# 86 "data//maps/MirrohInterior_1F/scripts.pory"
+# 160 "data//maps/MirrohInterior_1F/scripts.pory"
 	lockall
-# 87 "data//maps/MirrohInterior_1F/scripts.pory"
+# 161 "data//maps/MirrohInterior_1F/scripts.pory"
 	faceplayer
-# 88 "data//maps/MirrohInterior_1F/scripts.pory"
+# 162 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_A_Text_0
-# 89 "data//maps/MirrohInterior_1F/scripts.pory"
+# 163 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_1F_NPC_B::
-# 94 "data//maps/MirrohInterior_1F/scripts.pory"
+# 168 "data//maps/MirrohInterior_1F/scripts.pory"
 	lockall
-# 95 "data//maps/MirrohInterior_1F/scripts.pory"
+# 169 "data//maps/MirrohInterior_1F/scripts.pory"
 	faceplayer
-# 96 "data//maps/MirrohInterior_1F/scripts.pory"
+# 170 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_B_Text_0
-# 97 "data//maps/MirrohInterior_1F/scripts.pory"
+# 171 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_1F_NPC_C::
-# 102 "data//maps/MirrohInterior_1F/scripts.pory"
+# 176 "data//maps/MirrohInterior_1F/scripts.pory"
 	lockall
-# 103 "data//maps/MirrohInterior_1F/scripts.pory"
+# 177 "data//maps/MirrohInterior_1F/scripts.pory"
 	faceplayer
-# 104 "data//maps/MirrohInterior_1F/scripts.pory"
+# 178 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_NPC_C_Text_0
-# 105 "data//maps/MirrohInterior_1F/scripts.pory"
+# 179 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
 
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_EventScript_NurseQuest_Trigger0_Movement_0:
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_down
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_down
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+	step_end
+
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_EventScript_NurseQuest_Trigger1_Movement_0:
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_down
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 51 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+	step_end
+
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_EventScript_NurseQuest_Trigger2_Movement_0:
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+# 60 "data//maps/MirrohInterior_1F/scripts.pory"
+	walk_left
+	step_end
+
+# 71 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0:
+# 71 "data//maps/MirrohInterior_1F/scripts.pory"
+	jump_in_place_right
+# 71 "data//maps/MirrohInterior_1F/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
 MirrohInterior_1F_EventScript_Nurse_Text_0:
-# 21 "data//maps/MirrohInterior_1F/scripts.pory"
+# 25 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "It's so cold here...CHANSEY and I got\n"
 	.string "the worst route!$"
 
+MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Text_0:
+# 75 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "NURSE: Hey! You there! Are you a\n"
+	.string "trainer? I need your help!$"
+
+MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0:
+# 81 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "NURSE: I was taking these Chansey and\n"
+	.string "I up to Winterlily Hollow to help the\l"
+	.string "nurse there, but there was a cave-in\l"
+	.string "and one of the Chanseys got lost! We\l"
+	.string "can't go through these caves alone -\l"
+	.string "the Pokémon are too fierce! Please find\l"
+	.string "Chansey for us!$"
+
 MirrohInterior_1F_Trainer_A_Text_0:
-# 35 "data//maps/MirrohInterior_1F/scripts.pory"
+# 109 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Ho ho! Didn't expect to see a fellow\n"
 	.string "traveler up here in this frozen\l"
 	.string "mountain!$"
 
 MirrohInterior_1F_Trainer_A_Text_1:
-# 35 "data//maps/MirrohInterior_1F/scripts.pory"
+# 109 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Keep traveling, traveler!$"
 
 MirrohInterior_1F_Trainer_A_Text_2:
-# 36 "data//maps/MirrohInterior_1F/scripts.pory"
+# 110 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I love delving deep into the mountains\n"
 	.string "of Cormoria!$"
 
 MirrohInterior_1F_Trainer_B_Text_0:
-# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+# 116 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "No! That item's mine!$"
 
 MirrohInterior_1F_Trainer_B_Text_1:
-# 42 "data//maps/MirrohInterior_1F/scripts.pory"
+# 116 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Fine, you can have it...$"
 
 MirrohInterior_1F_Trainer_B_Text_2:
-# 43 "data//maps/MirrohInterior_1F/scripts.pory"
+# 117 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Travelers often leave rare items inside\n"
 	.string "caves and mountains. That's where the\l"
 	.string "money is, baby!$"
 
 MirrohInterior_1F_Trainer_C_Text_0:
-# 49 "data//maps/MirrohInterior_1F/scripts.pory"
+# 123 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I may switch to ICE type Pokémon after\n"
 	.string "seeing the Pokémon here!$"
 
 MirrohInterior_1F_Trainer_C_Text_1:
-# 49 "data//maps/MirrohInterior_1F/scripts.pory"
+# 123 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I should just use ROCK types!$"
 
 MirrohInterior_1F_Trainer_C_Text_2:
-# 50 "data//maps/MirrohInterior_1F/scripts.pory"
+# 124 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "If you go deeper into the mountain,\n"
 	.string "you'll find some rare ICE type Pokemon!$"
 
 MirrohInterior_1F_Trainer_D_Text_0:
-# 56 "data//maps/MirrohInterior_1F/scripts.pory"
+# 130 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I took a wrong turn and got lost. This is\n"
 	.string "a dead end!$"
 
 MirrohInterior_1F_Trainer_D_Text_1:
-# 56 "data//maps/MirrohInterior_1F/scripts.pory"
+# 130 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "You're not lost!$"
 
 MirrohInterior_1F_Trainer_D_Text_2:
-# 57 "data//maps/MirrohInterior_1F/scripts.pory"
+# 131 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "How do I get out of here?$"
 
 MirrohInterior_1F_Trainer_E_Text_0:
-# 63 "data//maps/MirrohInterior_1F/scripts.pory"
+# 137 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I can't get through to Winterlily Hollow\n"
 	.string "from this side. It's so frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_1:
-# 63 "data//maps/MirrohInterior_1F/scripts.pory"
+# 137 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "You're also frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_2:
-# 64 "data//maps/MirrohInterior_1F/scripts.pory"
+# 138 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I mean why even build a tunnel then?$"
 
 MirrohInterior_1F_NPC_A_Text_0:
-# 88 "data//maps/MirrohInterior_1F/scripts.pory"
+# 162 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I'm trekking to Winterlily Hollow! But my\n"
 	.string "GRASS type Pokémon can't deal with all\l"
 	.string "the ICE type Pokémon around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
-# 96 "data//maps/MirrohInterior_1F/scripts.pory"
+# 170 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "The way to Winterlily Hollow is past the\n"
 	.string "ledge above. But how do I cross the\l"
 	.string "ledge?$"
 
 MirrohInterior_1F_NPC_C_Text_0:
-# 104 "data//maps/MirrohInterior_1F/scripts.pory"
+# 178 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Past this is the trek upto Mt. Mirroh\n"
 	.string "PEAK. The weather is harsh!$"

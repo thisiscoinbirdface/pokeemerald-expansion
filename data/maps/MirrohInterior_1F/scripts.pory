@@ -1,3 +1,7 @@
+raw`
+    .set LOCALID_NURSE, 1
+`
+
 mapscripts MirrohInterior_1F_MapScripts{}
 
 //entry
@@ -24,6 +28,76 @@ script MirrohInterior_1F_EventScript_Nurse{
     releaseall
     end
 }
+
+
+
+
+
+
+script MirrohInterior_1F_EventScript_NurseQuest_Trigger0{
+    if (flag(FLAG_MIRROH_NURSE_QUEST_START)) {end}
+    lockall
+    call(MirrohInterior_1F_EventScript_NurseQuest_Exclamation)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down *2 walk_left *5))
+    waitmovement(0)
+    goto(MirrohInterior_1F_EventScript_NurseQuest_Main)
+}
+script MirrohInterior_1F_EventScript_NurseQuest_Trigger1{
+    if (flag(FLAG_MIRROH_NURSE_QUEST_START)) {end}    
+    lockall
+    call(MirrohInterior_1F_EventScript_NurseQuest_Exclamation)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left *5))
+    waitmovement(0)    
+    goto(MirrohInterior_1F_EventScript_NurseQuest_Main)
+}
+script MirrohInterior_1F_EventScript_NurseQuest_Trigger2{
+    if (flag(FLAG_MIRROH_NURSE_QUEST_START)) {end}    
+    lockall
+    call(MirrohInterior_1F_EventScript_NurseQuest_Exclamation)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left *5))
+    waitmovement(0)
+    goto(MirrohInterior_1F_EventScript_NurseQuest_Main)
+}
+
+
+
+
+
+
+script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
+    applymovement(LOCALID_NURSE, moves(jump_in_place_right emote_exclamation_mark))
+    waitmovement(0)
+    delay(20)
+
+    msgbox(format("NURSE: Hey! You there! Are you a trainer? I need your help!"))
+    release
+    return
+}
+
+script MirrohInterior_1F_EventScript_NurseQuest_Main{
+    msgbox(format("NURSE: I was taking these Chansey and I up to Winterlily Hollow to help the nurse there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce! Please find Chansey for us!"))
+    release
+
+    startquest(QUEST_MIRROH_NURSE_CHANSEY)
+    setflag(FLAG_MIRROH_NURSE_QUEST_START)
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

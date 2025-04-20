@@ -43,7 +43,7 @@
 #define QUEST_PELLUCA_FISHERY           12
 #define QUEST_CORMORIA_HISTORY          13
 #define QUEST_PELLUCA_MAYOR             14
-#define QUEST_16        15
+#define QUEST_MIRROH_NURSE_CHANSEY      15
 #define QUEST_17        16
 #define QUEST_18        17
 #define QUEST_19        18
