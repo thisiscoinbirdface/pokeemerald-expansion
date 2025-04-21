@@ -8,7 +8,31 @@ script AncientMirroh_Caves_1F_SetHoleWarp{
 	end
 }
 
+//prof sighting
+script AncientMirroh_Tenebris_Caves_Trigger{
+    if (flag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_INSIDE)) {end}
 
+    lockall
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 5))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    applymovement(2, moves(walk_down * 4))
+    waitmovement(0)
+
+    removeobject(2)
+
+    setflag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_INSIDE)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 5))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    releaseall
+    end
+}
 
 
 

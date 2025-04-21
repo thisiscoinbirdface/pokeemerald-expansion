@@ -292,11 +292,11 @@ script WhiteSign_PellucaCity_ToCableCar{
 
 //Cable car
 script WhiteSign_CableCar_ToMirroh{
-    msgbox(format("{Cable Car to Mirroh Base Camp"), MSGBOX_SIGN)
+    msgbox(format("Cable Car to Mirroh Base Camp"), MSGBOX_SIGN)
     end
 }
 script WhiteSign_CableCar_ToPelluca{
-    msgbox(format("{Cable Car to Pelluca City"), MSGBOX_SIGN)
+    msgbox(format("Cable Car to Pelluca City"), MSGBOX_SIGN)
     end
 }
 

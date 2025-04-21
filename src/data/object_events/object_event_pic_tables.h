@@ -1585,3 +1585,7 @@ static const struct SpriteFrameImage sPicTable_BugCatcherF[] = {
 static const struct SpriteFrameImage sPicTable_SkiierF[] = {
     overworld_ascending_frames(gObjectEventPic_SkiierF, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_ProfTenebris[] = {
+    overworld_ascending_frames(gObjectEventPic_ProfTenebris, 2, 4),
+};

@@ -632,11 +632,11 @@ WhiteSign_PellucaCity_ToCableCar_Text_0:
 
 WhiteSign_CableCar_ToMirroh_Text_0:
 # 295 "data//scripts/customscripts_signs.pory"
-	.string "{Cable Car to Mirroh Base Camp$"
+	.string "Cable Car to Mirroh Base Camp$"
 
 WhiteSign_CableCar_ToPelluca_Text_0:
 # 299 "data//scripts/customscripts_signs.pory"
-	.string "{Cable Car to Pelluca City$"
+	.string "Cable Car to Pelluca City$"
 
 WhiteSign_MirrohBaseCamp_Gym_Text_0:
 # 305 "data//scripts/customscripts_signs.pory"

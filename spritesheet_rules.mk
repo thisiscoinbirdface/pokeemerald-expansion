@@ -514,6 +514,8 @@ $(OBJEVENTGFXDIR)/custom/bug_catcher_f.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/custom/skiier_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/custom/prof_tenebris.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
 

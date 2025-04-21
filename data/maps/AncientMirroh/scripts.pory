@@ -1,9 +1,36 @@
 raw`
     .set LOCALID_KOHLA, 6
+    .set LOCALID_PROFT, 8
 `
 
 
 mapscripts AncientMirroh_MapScripts{}
+
+//prof tenebris scene
+script AncientMirroh_Tenebris_Trigger{
+    if (flag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE)) {end}
+
+    lockall
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3 walk_left * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    applymovement(LOCALID_PROFT, moves(walk_left * 3 walk_up))
+    waitmovement(0)
+
+    removeobject(LOCALID_PROFT)
+
+    setflag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3 walk_right * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    releaseall
+    end
+}
 
 
 script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla starting)
