@@ -31,10 +31,55 @@ script MirrohInterior_2F_CavePainting_WalkingWake{
 
 
 
-//First snowboarder vs triathlete
+//First skiier vs triathlete
+script MirrohInterior_2F_SkiierA{
+    msgbox(format("How dare you! Skiing is the best endurance sport!"))
+    release
+    end
+}
+script MirrohInterior_2F_TriathleteA{
+    msgbox(format("Are you crazy? Running is the best endurance sport!"))
+    release
+    end
+}
+script MirrohInterior_2F_Voltorb{
+    playmoncry(SPECIES_VOLTORB, CRY_MODE_NORMAL)
+    msgbox(format("Voltorb is fighting to prove that running is better!"))
+    release
+    end
+}
+script MirrohInterior_2F_Sandshrew{
+    playmoncry(SPECIES_SANDSHREW, CRY_MODE_NORMAL)
+    msgbox(format("Sandshrew refuses to believe anything but skiing is the best!"))
+    release
+    end
+}
 
+//second skiier vs triathlete
+script MirrohInterior_2F_SkiierB{
+    msgbox(format("Why don't you runners get it? Skiing is just superior!"))
+    release
+    end
+}
+script MirrohInterior_2F_TriathleteB{
+    msgbox(format("The snow has addled your brains! Clear it out with a good run!"))
+    release
+    end
+}
+script MirrohInterior_2F_Lycanroc{
+    playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
+    msgbox(format("Lycanroc is fighting...but half-heartedly. Perhaps it wants to try skiing once?"))
+    release
+    end
+}
+script MirrohInterior_2F_Snover{
+    playmoncry(SPECIES_SNOVER, CRY_MODE_NORMAL)
+    msgbox(format("Snover won't back down...but isn't showing much energy. Maybe it's looking to try new things?"))
+    release
+    end
+}
 
-
+//skiier vs triathlete battle
 
 
 
@@ -50,38 +95,43 @@ script MirrohInterior_2F_Trainer_A{
 }
 //maniac
 script MirrohInterior_2F_Trainer_B{
-    trainerbattle_single(TRAINER_MIRROHINT2_B, format("I came here searching for ancient ruins! Don't interrupt me!"), format("Ok you can interrupt me!"))
-    msgbox(format("Maybe there are ancient ruins at the peak of Mt. Mirroh..."))
+    trainerbattle_single(TRAINER_MIRROHINT2_B, format("Why are you here? Are you trying to steal my Pokémon like those Team Somber grunts?"), format("I guess you're not!"))
+    msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my Pokemon. But I beat one of them and ran away from the other!"))
     releaseall
 }
-//lass
+//triathlete F
 script MirrohInterior_2F_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHINT2_C, format("Hey, didn't I battle you before in Route 3?"), format("You beat me then too!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_C, format("No it's not! Running needs more endurance than skiing! Hey, trainer! You be the one to decide which one is better!"), format("Even my endurance didn't help!"))
+    msgbox(format("I don't know why we argue when the bottom line is that all sports are fun."))
+    releaseall
+}
+//skiier F
+script MirrohInterior_2F_Trainer_D{
+    trainerbattle_single(TRAINER_MIRROHINT2_D, format("Why don't these runners understand? Skiing takes more technique than running!"), format("Even my technique didn't help!"))
+    msgbox(format("To be frank with you, if I didn't have access to a ski slope, I'd be running myself."))
+    releaseall
+}
+
+
+
+
+//lass
+script MirrohInterior_2F_Trainer_E{
+    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Hey, didn't I battle you before in Route 3? You're the one that beat me and my sister!"), format("You beat me then too!"))
     msgbox(format("I'm going to collect all 8 gym badges! But I only have 4 so far."))
     releaseall
 }
 //pokefan
-script MirrohInterior_2F_Trainer_D{
-    trainerbattle_single(TRAINER_MIRROHINT2_D, format("Check out my new friends!"), format("Don't hurt them!"))
+script MirrohInterior_2F_Trainer_F{
+    trainerbattle_single(TRAINER_MIRROHINT2_F, format("Check out my new friends!"), format("Don't hurt them!"))
     msgbox(format("I'm a huge Pokefan! They're my best friends! But I have human friends too."))
     releaseall
 }
-//maniac
-script MirrohInterior_2F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Why are you here? Are you trying to steal my Pokémon like those Team Somber grunts?"), format("I guess you're not!"))
-    msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my Pokemon. But I beat one of them and ran away from the other!"))
-    releaseall
-}
-//athlete M
-script MirrohInterior_2F_Trainer_F{
-    trainerbattle_single(TRAINER_MIRROHINT2_F, format("This is the best place for endurance training. Let's train!"), format("You have endurance!"))
-    msgbox(format("I'm training for a relay race back home. Gotta stay in shape!"))
-    releaseall
-}
+
 //youngster
 script MirrohInterior_2F_Trainer_G{
-    trainerbattle_single(TRAINER_MIRROHINT2_G, format("I can't wait to get out of this cave. But I don't mind one last battle before leaving!"), format("Now I really want to leave!"))
-    msgbox(format("This cave is so confusing!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_G, format("I can't wait to get out of this cave and collect my 5th gym badge at Winterlily Hollow. Yep, that's right! I'm not your average trainer - I'm on my way to become the Pokemon Champion!"), format("I've still got a long way to go!"))
+    msgbox(format("Four more badges to go...whew, this gym challenge is exhausting!"))
     releaseall
 }
 
@@ -100,26 +150,24 @@ script MirrohInterior_2F_Trainer_G{
 
 
 //NPCs
-//old man
+//old man below ledge
 script MirrohInterior_2F_NPC_A{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
-//runner F
+//woman staring
 script MirrohInterior_2F_NPC_B{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
+//researcher old man
 script MirrohInterior_2F_NPC_C{
-    lockall
-    faceplayer
-    msgbox(format(""))
-    releaseall
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
+//runner
+script MirrohInterior_2F_NPC_D{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+

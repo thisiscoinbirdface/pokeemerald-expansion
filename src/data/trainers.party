@@ -2162,50 +2162,88 @@ Double Battle: No
 AI: Check Bad Move
 
 Froslass 
-Level: 33
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Mr. Mime-Galar  
-Level: 33
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_B ===
-Name: GARRISON
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Name: STEVE
+Class: Pokemaniac
+Pic: Pokemaniac
 Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Piloswine
+Level: 30
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Ivysaur
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_MIRROHINT2_C ===
+Name: Elona
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Bergmite
-Level: 32
+Voltorb-Hisui
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Morgrem
-Level: 34
+Lycanroc
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-
-=== TRAINER_MIRROHINT2_C ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
-Double Battle: No
-AI: Check Bad Move
-
-Ursaring
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Altaria
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_MIRROHINT2_D ===
+Name: Sylvia
+Class: Skiier
+Pic: Skiier F
+Gender: Female
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Snover
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sandslash-Alola
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MIRROHINT2_E ===
+Name: TALLOW
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Pineco
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Furret
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Altaria
+Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+
+=== TRAINER_MIRROHINT2_F ===
 Name: VICTOR
 Class: Pokefan
 Pic: Pokefan M
@@ -2215,71 +2253,37 @@ Double Battle: No
 AI: Check Bad Move
 
 Cetoddle
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Frigibax
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_MIRROHINT2_E ===
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Mamoswine
-Level: 34
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Ivysaur
-Level: 34
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_MIRROHINT2_F ===
-Name: TALLOW
-Class: Triathlete
-Pic: Running Triathlete M
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Sandshrew-Alola
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Mudsdale
-Level: 34
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Sandslash-Alola
-Level: 34
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-
 
 === TRAINER_MIRROHINT2_G ===
-Name: CALVIN
+Name: Calvin
 Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Purple
 
-Linoone-Galar
-Level: 33
+Herdier
+Level: 32
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Corvisquire
+Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Raticate-Alola
 Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Corvisquire
+Marowak-Alola
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 

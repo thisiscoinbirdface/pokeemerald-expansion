@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "MirrohInterior_2F_Trainer_B",
+      "script": "MirrohInterior_2F_Trainer_D",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "MirrohInterior_2F_Trainer_F",
+      "script": "MirrohInterior_2F_Trainer_C",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "MirrohInterior_2F_Trainer_D",
+      "script": "MirrohInterior_2F_Trainer_F",
       "flag": "0"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "MirrohInterior_2F_Trainer_C",
+      "script": "MirrohInterior_2F_Trainer_E",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 7,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirrohInterior_2F_NPC_B",
+      "script": "MirrohInterior_2F_NPC_D",
       "flag": "0"
     },
     {
@@ -206,7 +206,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirrohInterior_2F_NPC_A",
+      "script": "MirrohInterior_2F_NPC_B",
       "flag": "0"
     },
     {
@@ -219,7 +219,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirrohInterior_2F_NPC_A",
+      "script": "MirrohInterior_2F_NPC_C",
       "flag": "0"
     },
     {
@@ -245,7 +245,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "MirrohInterior_2F_Trainer_B",
+      "script": "MirrohInterior_2F_SkiierB",
       "flag": "0"
     },
     {
@@ -258,7 +258,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "MirrohInterior_2F_Trainer_F",
+      "script": "MirrohInterior_2F_TriathleteB",
       "flag": "0"
     },
     {
@@ -266,25 +266,25 @@
       "x": 18,
       "y": 32,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "MirrohInterior_2F_Snover",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VOLTORB_HISUI)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LYCANROC)",
       "x": 19,
       "y": 32,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "MirrohInterior_2F_Lycanroc",
       "flag": "0"
     },
     {
@@ -297,7 +297,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "MirrohInterior_2F_Trainer_B",
+      "script": "MirrohInterior_2F_SkiierA",
       "flag": "0"
     },
     {
@@ -310,7 +310,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "MirrohInterior_2F_Trainer_F",
+      "script": "MirrohInterior_2F_TriathleteA",
       "flag": "0"
     },
     {
@@ -318,25 +318,25 @@
       "x": 34,
       "y": 44,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "MirrohInterior_2F_Sandshrew",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LYCANROC)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VOLTORB_HISUI)",
       "x": 35,
       "y": 44,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "MirrohInterior_2F_Voltorb",
       "flag": "0"
     }
   ],

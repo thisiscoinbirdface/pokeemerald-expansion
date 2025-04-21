@@ -194,8 +194,8 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
 //trainers
 //HIKER
 script MirrohInterior_1F_Trainer_A{
-    trainerbattle_single(TRAINER_MIRROHINT_A, format("Ho ho! Didn't expect to see a fellow traveler up here in this frozen mountain!"), format("Keep traveling, traveler!"))
-    msgbox(format("I love delving deep into the mountains of Cormoria!"))
+    trainerbattle_single(TRAINER_MIRROHINT_A, format("I'm looking for a Bergmite but why I can't find any?"), format("If I had a Bergmite I would've won!"))
+    msgbox(format("Maybe the Bergmite hide in the rocks or something..."))
     releaseall
 }
 

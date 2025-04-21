@@ -12,108 +12,180 @@ MirrohInterior_2F_CavePainting_WalkingWake::
 	end
 
 
-MirrohInterior_2F_Trainer_A::
+MirrohInterior_2F_SkiierA::
+# 36 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_SkiierA_Text_0
+# 37 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_TriathleteA::
+# 41 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_TriathleteA_Text_0
+# 42 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_Voltorb::
+# 46 "data//maps/MirrohInterior_2F/scripts.pory"
+	playmoncry SPECIES_VOLTORB, CRY_MODE_NORMAL
 # 47 "data//maps/MirrohInterior_2F/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHINT2_A, MirrohInterior_2F_Trainer_A_Text_0, MirrohInterior_2F_Trainer_A_Text_1
+	msgbox MirrohInterior_2F_Voltorb_Text_0
 # 48 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_Sandshrew::
+# 52 "data//maps/MirrohInterior_2F/scripts.pory"
+	playmoncry SPECIES_SANDSHREW, CRY_MODE_NORMAL
+# 53 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_Sandshrew_Text_0
+# 54 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_SkiierB::
+# 60 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_SkiierB_Text_0
+# 61 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_TriathleteB::
+# 65 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_TriathleteB_Text_0
+# 66 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_Lycanroc::
+# 70 "data//maps/MirrohInterior_2F/scripts.pory"
+	playmoncry SPECIES_LYCANROC, CRY_MODE_NORMAL
+# 71 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_Lycanroc_Text_0
+# 72 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_Snover::
+# 76 "data//maps/MirrohInterior_2F/scripts.pory"
+	playmoncry SPECIES_SNOVER, CRY_MODE_NORMAL
+# 77 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_Snover_Text_0
+# 78 "data//maps/MirrohInterior_2F/scripts.pory"
+	release
+	end
+
+
+MirrohInterior_2F_Trainer_A::
+# 92 "data//maps/MirrohInterior_2F/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHINT2_A, MirrohInterior_2F_Trainer_A_Text_0, MirrohInterior_2F_Trainer_A_Text_1
+# 93 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_A_Text_2
-# 49 "data//maps/MirrohInterior_2F/scripts.pory"
+# 94 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_B::
-# 53 "data//maps/MirrohInterior_2F/scripts.pory"
+# 98 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_B, MirrohInterior_2F_Trainer_B_Text_0, MirrohInterior_2F_Trainer_B_Text_1
-# 54 "data//maps/MirrohInterior_2F/scripts.pory"
+# 99 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_B_Text_2
-# 55 "data//maps/MirrohInterior_2F/scripts.pory"
+# 100 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_C::
-# 59 "data//maps/MirrohInterior_2F/scripts.pory"
+# 104 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_C, MirrohInterior_2F_Trainer_C_Text_0, MirrohInterior_2F_Trainer_C_Text_1
-# 60 "data//maps/MirrohInterior_2F/scripts.pory"
+# 105 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_C_Text_2
-# 61 "data//maps/MirrohInterior_2F/scripts.pory"
+# 106 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_D::
-# 65 "data//maps/MirrohInterior_2F/scripts.pory"
+# 110 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_D, MirrohInterior_2F_Trainer_D_Text_0, MirrohInterior_2F_Trainer_D_Text_1
-# 66 "data//maps/MirrohInterior_2F/scripts.pory"
+# 111 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_D_Text_2
-# 67 "data//maps/MirrohInterior_2F/scripts.pory"
+# 112 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_E::
-# 71 "data//maps/MirrohInterior_2F/scripts.pory"
+# 120 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_E, MirrohInterior_2F_Trainer_E_Text_0, MirrohInterior_2F_Trainer_E_Text_1
-# 72 "data//maps/MirrohInterior_2F/scripts.pory"
+# 121 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_E_Text_2
-# 73 "data//maps/MirrohInterior_2F/scripts.pory"
+# 122 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_F::
-# 77 "data//maps/MirrohInterior_2F/scripts.pory"
+# 126 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_F, MirrohInterior_2F_Trainer_F_Text_0, MirrohInterior_2F_Trainer_F_Text_1
-# 78 "data//maps/MirrohInterior_2F/scripts.pory"
+# 127 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_F_Text_2
-# 79 "data//maps/MirrohInterior_2F/scripts.pory"
+# 128 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_Trainer_G::
-# 83 "data//maps/MirrohInterior_2F/scripts.pory"
+# 133 "data//maps/MirrohInterior_2F/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHINT2_G, MirrohInterior_2F_Trainer_G_Text_0, MirrohInterior_2F_Trainer_G_Text_1
-# 84 "data//maps/MirrohInterior_2F/scripts.pory"
+# 134 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_Trainer_G_Text_2
-# 85 "data//maps/MirrohInterior_2F/scripts.pory"
+# 135 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	return
 
 
 MirrohInterior_2F_NPC_A::
-# 105 "data//maps/MirrohInterior_2F/scripts.pory"
+# 155 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 106 "data//maps/MirrohInterior_2F/scripts.pory"
+# 156 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 107 "data//maps/MirrohInterior_2F/scripts.pory"
+# 157 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 108 "data//maps/MirrohInterior_2F/scripts.pory"
+# 158 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_NPC_B::
-# 113 "data//maps/MirrohInterior_2F/scripts.pory"
+# 163 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 114 "data//maps/MirrohInterior_2F/scripts.pory"
+# 164 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 115 "data//maps/MirrohInterior_2F/scripts.pory"
+# 165 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 116 "data//maps/MirrohInterior_2F/scripts.pory"
+# 166 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
 
 MirrohInterior_2F_NPC_C::
-# 120 "data//maps/MirrohInterior_2F/scripts.pory"
+# 170 "data//maps/MirrohInterior_2F/scripts.pory"
 	lockall
-# 121 "data//maps/MirrohInterior_2F/scripts.pory"
+# 171 "data//maps/MirrohInterior_2F/scripts.pory"
 	faceplayer
-# 122 "data//maps/MirrohInterior_2F/scripts.pory"
+# 172 "data//maps/MirrohInterior_2F/scripts.pory"
 	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 123 "data//maps/MirrohInterior_2F/scripts.pory"
+# 173 "data//maps/MirrohInterior_2F/scripts.pory"
 	releaseall
 	end
 
@@ -125,107 +197,153 @@ MirrohInterior_2F_CavePainting_WalkingWake_Text_0:
 	.string "reptilian, but also has feathers.\l"
 	.string "Terrifying!$"
 
-MirrohInterior_2F_Trainer_A_Text_0:
+MirrohInterior_2F_SkiierA_Text_0:
+# 36 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "How dare you! Skiing is the best\n"
+	.string "endurance sport!$"
+
+MirrohInterior_2F_TriathleteA_Text_0:
+# 41 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Are you crazy? Running is the best\n"
+	.string "endurance sport!$"
+
+MirrohInterior_2F_Voltorb_Text_0:
 # 47 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Voltorb is fighting to prove that\n"
+	.string "running is better!$"
+
+MirrohInterior_2F_Sandshrew_Text_0:
+# 53 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Sandshrew refuses to believe anything\n"
+	.string "but skiing is the best!$"
+
+MirrohInterior_2F_SkiierB_Text_0:
+# 60 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Why don't you runners get it? Skiing is\n"
+	.string "just superior!$"
+
+MirrohInterior_2F_TriathleteB_Text_0:
+# 65 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "The snow has addled your brains! Clear\n"
+	.string "it out with a good run!$"
+
+MirrohInterior_2F_Lycanroc_Text_0:
+# 71 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Lycanroc is fighting...but\n"
+	.string "half-heartedly. Perhaps it wants to try\l"
+	.string "skiing once?$"
+
+MirrohInterior_2F_Snover_Text_0:
+# 77 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Snover won't back down...but isn't\n"
+	.string "showing much energy. Maybe it's looking\l"
+	.string "to try new things?$"
+
+MirrohInterior_2F_Trainer_A_Text_0:
+# 92 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Deep in the depths of Mt. Mirroh, I\n"
 	.string "sense psychic energy!$"
 
 MirrohInterior_2F_Trainer_A_Text_1:
-# 47 "data//maps/MirrohInterior_2F/scripts.pory"
+# 92 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Nope, there's no psychic energy!$"
 
 MirrohInterior_2F_Trainer_A_Text_2:
-# 48 "data//maps/MirrohInterior_2F/scripts.pory"
+# 93 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I suppose there's psychic energy\n"
 	.string "everywhere. It's like happiness - a\l"
 	.string "state of mind.$"
 
 MirrohInterior_2F_Trainer_B_Text_0:
-# 53 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "I came here searching for ancient\n"
-	.string "ruins! Don't interrupt me!$"
-
-MirrohInterior_2F_Trainer_B_Text_1:
-# 53 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Ok you can interrupt me!$"
-
-MirrohInterior_2F_Trainer_B_Text_2:
-# 54 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Maybe there are ancient ruins at the\n"
-	.string "peak of Mt. Mirroh...$"
-
-MirrohInterior_2F_Trainer_C_Text_0:
-# 59 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Hey, didn't I battle you before in Route\n"
-	.string "3?$"
-
-MirrohInterior_2F_Trainer_C_Text_1:
-# 59 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "You beat me then too!$"
-
-MirrohInterior_2F_Trainer_C_Text_2:
-# 60 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "I'm going to collect all 8 gym badges!\n"
-	.string "But I only have 4 so far.$"
-
-MirrohInterior_2F_Trainer_D_Text_0:
-# 65 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Check out my new friends!$"
-
-MirrohInterior_2F_Trainer_D_Text_1:
-# 65 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Don't hurt them!$"
-
-MirrohInterior_2F_Trainer_D_Text_2:
-# 66 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "I'm a huge Pokefan! They're my best\n"
-	.string "friends! But I have human friends too.$"
-
-MirrohInterior_2F_Trainer_E_Text_0:
-# 71 "data//maps/MirrohInterior_2F/scripts.pory"
+# 98 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Why are you here? Are you trying to\n"
 	.string "steal my Pokémon like those Team\l"
 	.string "Somber grunts?$"
 
-MirrohInterior_2F_Trainer_E_Text_1:
-# 71 "data//maps/MirrohInterior_2F/scripts.pory"
+MirrohInterior_2F_Trainer_B_Text_1:
+# 98 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I guess you're not!$"
 
-MirrohInterior_2F_Trainer_E_Text_2:
-# 72 "data//maps/MirrohInterior_2F/scripts.pory"
+MirrohInterior_2F_Trainer_B_Text_2:
+# 99 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "When I was on the upper floor, some\n"
 	.string "Team Somber grunts tried to take my\l"
 	.string "Pokemon. But I beat one of them and ran\l"
 	.string "away from the other!$"
 
+MirrohInterior_2F_Trainer_C_Text_0:
+# 104 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "No it's not! Running needs more\n"
+	.string "endurance than skiing! Hey, trainer!\l"
+	.string "You be the one to decide which one is\l"
+	.string "better!$"
+
+MirrohInterior_2F_Trainer_C_Text_1:
+# 104 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Even my endurance didn't help!$"
+
+MirrohInterior_2F_Trainer_C_Text_2:
+# 105 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "I don't know why we argue when the\n"
+	.string "bottom line is that all sports are fun.$"
+
+MirrohInterior_2F_Trainer_D_Text_0:
+# 110 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Why don't these runners understand?\n"
+	.string "Skiing takes more technique than\l"
+	.string "running!$"
+
+MirrohInterior_2F_Trainer_D_Text_1:
+# 110 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Even my technique didn't help!$"
+
+MirrohInterior_2F_Trainer_D_Text_2:
+# 111 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "To be frank with you, if I didn't have\n"
+	.string "access to a ski slope, I'd be running\l"
+	.string "myself.$"
+
+MirrohInterior_2F_Trainer_E_Text_0:
+# 120 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Hey, didn't I battle you before in Route\n"
+	.string "3?$"
+
+MirrohInterior_2F_Trainer_E_Text_1:
+# 120 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "You beat me then too!$"
+
+MirrohInterior_2F_Trainer_E_Text_2:
+# 121 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "I'm going to collect all 8 gym badges!\n"
+	.string "But I only have 4 so far.$"
+
 MirrohInterior_2F_Trainer_F_Text_0:
-# 77 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "This is the best place for endurance\n"
-	.string "training. Let's train!$"
+# 126 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Check out my new friends!$"
 
 MirrohInterior_2F_Trainer_F_Text_1:
-# 77 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "You have endurance!$"
+# 126 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "Don't hurt them!$"
 
 MirrohInterior_2F_Trainer_F_Text_2:
-# 78 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "I'm training for a relay race back home.\n"
-	.string "Gotta stay in shape!$"
+# 127 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "I'm a huge Pokefan! They're my best\n"
+	.string "friends! But I have human friends too.$"
 
 MirrohInterior_2F_Trainer_G_Text_0:
-# 83 "data//maps/MirrohInterior_2F/scripts.pory"
+# 133 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I can't wait to get out of this cave.\n"
 	.string "But I don't mind one last battle before\l"
 	.string "leaving!$"
 
 MirrohInterior_2F_Trainer_G_Text_1:
-# 83 "data//maps/MirrohInterior_2F/scripts.pory"
+# 133 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Now I really want to leave!$"
 
 MirrohInterior_2F_Trainer_G_Text_2:
-# 84 "data//maps/MirrohInterior_2F/scripts.pory"
+# 134 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "This cave is so confusing!$"
 
 MirrohInterior_2F_NPC_A_Text_0:
-# 107 "data//maps/MirrohInterior_2F/scripts.pory"
+# 157 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "$"
