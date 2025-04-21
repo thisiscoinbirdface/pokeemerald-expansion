@@ -4,7 +4,15 @@ raw`
 `
 
 
-mapscripts AncientMirroh_MapScripts{}
+mapscripts AncientMirroh_MapScripts{    
+    MAP_SCRIPT_ON_TRANSITION: AncientMirroh_OnTransition
+}
+
+//This script is called after readying the exit (by talking to gab again)
+script AncientMirroh_OnTransition{
+    setrespawn(HEAL_LOCATION_ANCIENT_MIRROH)
+    end
+}
 
 //prof tenebris scene
 script AncientMirroh_Tenebris_Trigger{
