@@ -8,7 +8,7 @@ script Route1_House_RandomDude {
 }
 
 script Route1_House_Quest_Done{
-    msgbox(format("I won't let AZURILL eat any bad food again!"), MSGBOX_NPC)
+    msgbox(format("I won't let Azurill eat any bad food again!"), MSGBOX_NPC)
     end
 }
 
@@ -16,7 +16,7 @@ script Route1_House_Quest_Done{
 script Route1_House_QuestInProgress{
     lockall
     faceplayer
-    msgbox(format("Have you brought a PECHA BERRY?"), MSGBOX_YESNO)
+    msgbox(format("Have you brought a Pecha Berry?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         checkitem(ITEM_PECHA_BERRY)
         if (var(VAR_RESULT) == 1){
@@ -26,25 +26,19 @@ script Route1_House_QuestInProgress{
             release
             applymovement(1, moves(face_right))
             waitmovement(0)   
-            msgbox(format("Here sweetheart, this kind trainer has brought you a PECHA BERRY."))
+            msgbox(format("Here sweetheart, this kind trainer has brought you a Pecha Berry."))
             release
             playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
             applymovement(2, moves(jump_in_place_down))
             msgbox(format("AZURILL: zuuu!!!!!\nIt seems to have revived!"))
             release
             faceplayer
-            msgbox(format("Child, you must have something in return. The least I can do. Which of these would you like? The Shiny Charm increases your chances of catching a shiny Pokémon, and the Catching Charm increases your chances of catching a Pokémon on the first bounce!"))
-            dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHINY CHARM", "CATCHING CHARM")
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_SHINY_CHARM)
-            } else {
-                giveitem(ITEM_CATCHING_CHARM)
-            }
-            msgbox(format("Thank you kind trainer! I'm now going to go back to loving my baby."))
+            msgbox(format("Child, you must have something in return. The least I can do."))
             release
+            goto(Route1_House_Reward)
             
         } else {
-            msgbox(format("I don't see a PECHA BERRY here...please come back when you have one."))
+            msgbox(format("I don't see a Pecha Berry here...please come back when you have one."))
         }
     } else {
         msgbox(format("Please hurry - my baby's suffering!"))
@@ -54,16 +48,61 @@ script Route1_House_QuestInProgress{
     end
 }
 
+script Route1_House_Reward {
+    message(format("Which of these would you like?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHINY CHARM", "CATCHING CHARM")
+    if (var(VAR_RESULT) == 0){
+        goto(Route1_House_RewardA)
+    } else {
+        goto(Route1_House_RewardB)
+    }   
+}
+
+script Route1_House_RewardA{
+    setvar(VAR_0x8006, ITEM_SHINY_CHARM)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_SHINY_CHARM)
+        goto(Route1_House_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(Route1_House_Reward)
+    }
+}
+
+script Route1_House_RewardB{
+    setvar(VAR_0x8006, ITEM_CATCHING_CHARM)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_CATCHING_CHARM)
+        goto(Route1_House_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(Route1_House_Reward)
+    }
+}
+
+script Route1_House_RewardEnd{
+    msgbox(format("Thank you kind trainer! I'm now going to go back to loving my baby."), MSGBOX_NPC)
+    releaseall
+    end
+}
+
 script Route1_House_StartQuest{
     lockall
     faceplayer
-    msgbox(format("I think my poor baby AZURILL ate something bad and now has food poisoning! I wish I had a PECHA BERRY to cure her. Say, trainer, good timing. Would you be willing to find a PECHA BERRY for my baby?"), MSGBOX_YESNO)
+    msgbox(format("I think my poor baby Azurill ate something bad and now has food poisoning! I wish I had a Pecha Berry to cure her. Say, trainer, good timing. Would you be willing to find a PECHA BERRY for my baby?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         msgbox(format("Oh, thank you so much. You're very kind. I'll be waiting here."))
         startquest(QUEST_ROUTE1_PECHA_BERRY)
     } else {
-        msgbox(format("You'd watch AZURILL suffer? You're so cold-hearted!"))        
+        msgbox(format("You'd watch Azurill suffer? You're so cold-hearted!"))        
     }
     releaseall
     end
@@ -76,9 +115,9 @@ script Route1_House_Azurill {
     questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
 
     if (var(VAR_RESULT) == 1) {
-        msgbox(format("AZURILL looks full of joy! Must be the love of its trainer...or is it the PECHA BERRY?"), MSGBOX_NPC)
+        msgbox(format("Azurill looks full of joy! Must be the love of its trainer...or is it the Pecha Berry?"), MSGBOX_NPC)
     } else {
-        msgbox(format("AZURILL: zu... \pAZURILL looks quite sick."), MSGBOX_NPC) 
+        msgbox(format("AZURILL: zu... \pAzurill looks quite sick."), MSGBOX_NPC) 
     }
     end
 }
