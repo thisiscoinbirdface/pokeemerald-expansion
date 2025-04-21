@@ -1,6 +1,10 @@
 raw`
     .set LOCALID_NURSE, 1
     .set LOCALID_ROBBER, 2
+    .set LOCALID_CH1, 24
+    .set LOCALID_CH2, 25
+    .set LOCALID_CH3, 26        
+    .set LOCALID_CHANSEY_LAST, 32
 `
 
 mapscripts MirrohInterior_1F_MapScripts{
@@ -108,8 +112,21 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         applymovement(LOCALID_NURSE, moves(jump_in_place_right emote_exclamation_mark))
         waitmovement(0)
+
+        //all chanseys emote together
+        playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+        applymovement(LOCALID_CH1, moves(emote_exclamation_mark))
+        applymovement(LOCALID_CH2, moves(emote_exclamation_mark))
+        applymovement(LOCALID_CH3, moves(emote_exclamation_mark))
         delay(20)
 
+        //all chanseys move together
+        applymovement(LOCALID_CH1, moves(walk_down walk_right walk_down face_left))
+        applymovement(LOCALID_CH2, moves(walk_right * 2 face_down))
+        applymovement(LOCALID_CH3, moves(walk_right walk_up face_down))
+        waitmovement(LOCALID_CH1)
+        delay(20)
+        
         msgbox(format("NURSE: Chansey!"))
         release
         applymovement(LOCALID_NURSE, moves(walk_up face_right))
@@ -117,7 +134,10 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         msgbox(format("NURSE: Oh my! Chansey! Are you alright?"))
         release
         delay(16)
+        applymovement(LOCALID_CHANSEY_LAST, moves(jump_in_place_right))
+        playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
         msgbox(format("CHANSEY: seyyy!!!"))
+        
         release
         delay(16)
         applymovement(LOCALID_NURSE, moves(walk_down face_right))        
@@ -125,7 +145,8 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         msgbox(format("NURSE: Thank you trainer! You saved Chansey!\p...\pNURSE: So these Team Somber people caused the cave-ins. How scary! I hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-        applymovement(32, moves(jump_in_place_down, emote_exclamation_mark))
+        playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+        applymovement(LOCALID_CHANSEY_LAST, moves(jump_in_place_down, emote_exclamation_mark))
         waitmovement(0)
         delay(16)
         msgbox(format("CHANSEY: seeyyy!!\pChansey pulls something out of its pocket and hands it to you!"))
@@ -136,7 +157,19 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)
         delay(16)
-        msgbox(format("NURSE: We should head off to Winterlily Hollow now. The nurse there must be waiting for us!"))
+        msgbox(format("NURSE: We should head off to Winterlily Hollow now. The nurse there must be waiting for us.\pNURSE: Thank you again, {PLAYER} and we wish you all the best in your journey. Drop by the Pokémon Center any time!"))
+        release
+
+        //fade
+        fadescreen(FADE_TO_BLACK)
+        removeobject(LOCALID_CH1)
+        removeobject(LOCALID_CH2)
+        removeobject(LOCALID_CH3)
+        removeobject(LOCALID_CHANSEY_LAST)
+        removeobject(LOCALID_NURSE)
+        fadescreen(FADE_FROM_BLACK)
+
+        //endquest
         completequest(QUEST_MIRROH_NURSE_CHANSEY)
         setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 3)   
         release
@@ -177,7 +210,7 @@ script MirrohInterior_1F_Trainer_B{
 //HIKER 2
 script MirrohInterior_1F_Trainer_C{
     trainerbattle_single(TRAINER_MIRROHINT_C, format("I may switch to ICE type Pokémon after seeing the Pokémon here!"), format("I should just use ROCK types!"))
-    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type Pokemon!"))
+    msgbox(format("If you go deeper into the mountain, you'll find some rare ICE type Pokémon!"))
     releaseall
 }
 
@@ -256,6 +289,7 @@ script MirrohInterior_1F_NPC_E{
     end
 }
 script MirrohInterior_1F_Pineco{
+    playmoncry(SPECIES_PINECO, CRY_MODE_NORMAL)
     msgbox(format("Pineco looks cold!"), MSGBOX_NPC)
     end
 }
