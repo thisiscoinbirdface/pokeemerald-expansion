@@ -511,6 +511,9 @@ $(OBJEVENTGFXDIR)/custom/leader_gloria.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/custom/bug_catcher_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/custom/skiier_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 
 
 

@@ -508,3 +508,4 @@ const u32 gObjectEventPic_LeaderAriana[] = INCBIN_U32("graphics/object_events/pi
 const u32 gObjectEventPic_LeaderGloria[] = INCBIN_U32("graphics/object_events/pics/custom/leader_gloria.4bpp");
 
 const u32 gObjectEventPic_BugCatcherF[] = INCBIN_U32("graphics/object_events/pics/custom/bug_catcher_f.4bpp");
+const u32 gObjectEventPic_SkiierF[] = INCBIN_U32("graphics/object_events/pics/custom/skiier_f.4bpp");

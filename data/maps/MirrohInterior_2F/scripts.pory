@@ -2,12 +2,12 @@ mapscripts MirrohInterior_2F_MapScripts{}
 
 //MAIN: walking wake painting
 
-//one scientist vs triathlete
+//one snowboarder vs triathlete
 //one trainer generic
 //one trainer at ice shortcut end
-//one scientist vs triathlete
+//one snowboarder vs triathlete
 //one old man
-//trainer double battle - scientist and triathlete
+//trainer double battle - snowboarder and triathlete
 //one old woman
 //koraidon painting
     //jump back down
@@ -27,6 +27,11 @@ script MirrohInterior_2F_CavePainting_WalkingWake{
 }
 
 
+
+
+
+
+//First snowboarder vs triathlete
 
 
 

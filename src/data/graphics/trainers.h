@@ -361,7 +361,8 @@ const u32 gTrainerPalette_BeautyAlt[] = INCBIN_U32("graphics/trainers/my_trainer
 const u32 gTrainerFrontPic_Model[] = INCBIN_U32("graphics/trainers/my_trainers/model.4bpp.lz");
 const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/my_trainers/model.gbapal.lz");
 
-
+const u32 gTrainerFrontPic_SkiierF[] = INCBIN_U32("graphics/trainers/my_trainers/skiier_f.4bpp.lz");
+const u32 gTrainerPalette_SkiierF[] = INCBIN_U32("graphics/trainers/my_trainers/skiier_f.gbapal.lz");
 
 
 
@@ -510,6 +511,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIANA, gTrainerFrontPic_Ariana, gTrainerPalette_Ariana),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_GLORIA, gTrainerFrontPic_Gloria, gTrainerPalette_Gloria),
     TRAINER_SPRITE(TRAINER_PIC_MODEL, gTrainerFrontPic_Model, gTrainerPalette_Model),
+    TRAINER_SPRITE(TRAINER_PIC_SKIIER_F, gTrainerFrontPic_SkiierF, gTrainerPalette_SkiierF),
 
 };
 

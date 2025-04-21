@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_SKIIER_F",
       "x": 32,
       "y": 27,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
       "x": 34,
       "y": 27,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "NULL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_SKIIER_F",
       "x": 17,
       "y": 32,
       "elevation": 0,
@@ -249,7 +249,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
       "x": 20,
       "y": 32,
       "elevation": 0,
@@ -262,7 +262,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNOVER)",
       "x": 18,
       "y": 32,
       "elevation": 0,
@@ -275,7 +275,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VOLTORB_HISUI)",
       "x": 19,
       "y": 32,
       "elevation": 0,
@@ -288,7 +288,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_SKIIER_F",
       "x": 33,
       "y": 44,
       "elevation": 0,
@@ -301,7 +301,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M",
+      "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
       "x": 36,
       "y": 44,
       "elevation": 0,
@@ -314,7 +314,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSHREW_ALOLA)",
       "x": 34,
       "y": 44,
       "elevation": 0,
@@ -327,11 +327,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLOWPOKE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LYCANROC)",
       "x": 35,
       "y": 44,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",

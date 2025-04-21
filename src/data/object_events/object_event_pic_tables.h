@@ -1581,3 +1581,7 @@ static const struct SpriteFrameImage sPicTable_LeaderGloria[] = {
 static const struct SpriteFrameImage sPicTable_BugCatcherF[] = {
     overworld_ascending_frames(gObjectEventPic_BugCatcherF, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_SkiierF[] = {
+    overworld_ascending_frames(gObjectEventPic_SkiierF, 2, 4),
+};
