@@ -1911,6 +1911,22 @@
       "y": 9,
       "width": 1,
       "height": 1
-    }
+    },
+    {
+      "map_section": "MAPSEC_FENNILAHL_TUNNEL",
+      "name": "Fennilahl Tunnel",
+      "x": 9,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_VINE_CAVERNS",
+      "name": "Vine Caverns",
+      "x": 9,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    }        
   ]
 }

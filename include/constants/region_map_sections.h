@@ -242,7 +242,10 @@
 #define MAPSEC_IVY_RIVER                    0xEC
 #define MAPSEC_MIRROH_PEAK                  0xED
 #define MAPSEC_MT_MIRROH_INTERIOR           0xEE
-#define MAPSEC_NONE                         0xEF
+#define MAPSEC_VINE_CAVERNS                 0xF0
+#define MAPSEC_FENNILAHL_TUNNEL             0xF1
+
+#define MAPSEC_NONE                         0xF2
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
