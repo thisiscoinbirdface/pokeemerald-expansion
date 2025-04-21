@@ -689,18 +689,17 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_6:
 
 MirrohInterior_1F_Trainer_A_Text_0:
 # 197 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Ho ho! Didn't expect to see a fellow\n"
-	.string "traveler up here in this frozen\l"
-	.string "mountain!$"
+	.string "I'm looking for a Bergmite but why I\n"
+	.string "can't find any?$"
 
 MirrohInterior_1F_Trainer_A_Text_1:
 # 197 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Keep traveling, traveler!$"
+	.string "If I had a Bergmite I would've won!$"
 
 MirrohInterior_1F_Trainer_A_Text_2:
 # 198 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I love delving deep into the mountains\n"
-	.string "of Cormoria!$"
+	.string "Maybe the Bergmite hide in the rocks or\n"
+	.string "something...$"
 
 MirrohInterior_1F_Trainer_B_Text_0:
 # 204 "data//maps/MirrohInterior_1F/scripts.pory"

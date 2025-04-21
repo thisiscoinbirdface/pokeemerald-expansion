@@ -156,37 +156,25 @@ MirrohInterior_2F_Trainer_G::
 
 MirrohInterior_2F_NPC_A::
 # 155 "data//maps/MirrohInterior_2F/scripts.pory"
-	lockall
-# 156 "data//maps/MirrohInterior_2F/scripts.pory"
-	faceplayer
-# 157 "data//maps/MirrohInterior_2F/scripts.pory"
-	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 158 "data//maps/MirrohInterior_2F/scripts.pory"
-	releaseall
+	msgbox MirrohInterior_2F_NPC_A_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_2F_NPC_B::
-# 163 "data//maps/MirrohInterior_2F/scripts.pory"
-	lockall
-# 164 "data//maps/MirrohInterior_2F/scripts.pory"
-	faceplayer
-# 165 "data//maps/MirrohInterior_2F/scripts.pory"
-	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 166 "data//maps/MirrohInterior_2F/scripts.pory"
-	releaseall
+# 160 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_NPC_B_Text_0, MSGBOX_NPC
 	end
 
 
 MirrohInterior_2F_NPC_C::
+# 165 "data//maps/MirrohInterior_2F/scripts.pory"
+	msgbox MirrohInterior_2F_NPC_C_Text_0, MSGBOX_NPC
+	end
+
+
+MirrohInterior_2F_NPC_D::
 # 170 "data//maps/MirrohInterior_2F/scripts.pory"
-	lockall
-# 171 "data//maps/MirrohInterior_2F/scripts.pory"
-	faceplayer
-# 172 "data//maps/MirrohInterior_2F/scripts.pory"
-	msgbox MirrohInterior_2F_NPC_A_Text_0
-# 173 "data//maps/MirrohInterior_2F/scripts.pory"
-	releaseall
+	msgbox MirrohInterior_2F_NPC_D_Text_0, MSGBOX_NPC
 	end
 
 
@@ -306,7 +294,8 @@ MirrohInterior_2F_Trainer_D_Text_2:
 MirrohInterior_2F_Trainer_E_Text_0:
 # 120 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Hey, didn't I battle you before in Route\n"
-	.string "3?$"
+	.string "3? You're the one that beat me and my\l"
+	.string "sister!$"
 
 MirrohInterior_2F_Trainer_E_Text_1:
 # 120 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -332,18 +321,40 @@ MirrohInterior_2F_Trainer_F_Text_2:
 
 MirrohInterior_2F_Trainer_G_Text_0:
 # 133 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "I can't wait to get out of this cave.\n"
-	.string "But I don't mind one last battle before\l"
-	.string "leaving!$"
+	.string "I can't wait to get out of this cave and\n"
+	.string "collect my 5th gym badge at Winterlily\l"
+	.string "Hollow. Yep, that's right! I'm not your\l"
+	.string "average trainer - I'm on my way to\l"
+	.string "become the Pokémon Champion!$"
 
 MirrohInterior_2F_Trainer_G_Text_1:
 # 133 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Now I really want to leave!$"
+	.string "I've still got a long way to go!$"
 
 MirrohInterior_2F_Trainer_G_Text_2:
 # 134 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "This cave is so confusing!$"
+	.string "Four more badges to go...whew, this gym\n"
+	.string "challenge is exhausting!$"
 
 MirrohInterior_2F_NPC_A_Text_0:
-# 157 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "$"
+# 155 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "On the way to Winterlily Hollow? I live\n"
+	.string "there. It's a little further ahead, to\l"
+	.string "the right and up, past the icy floor.$"
+
+MirrohInterior_2F_NPC_B_Text_0:
+# 160 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "My husband is an avid history buff. He's\n"
+	.string "down there examining some old cave\l"
+	.string "paintings.$"
+
+MirrohInterior_2F_NPC_C_Text_0:
+# 165 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "What a fearsome Pokémon! One must be\n"
+	.string "grateful it's not alive in this day and\l"
+	.string "age.$"
+
+MirrohInterior_2F_NPC_D_Text_0:
+# 170 "data//maps/MirrohInterior_2F/scripts.pory"
+	.string "This cave is so exhausting! I can't wait\n"
+	.string "to be on the other side.$"

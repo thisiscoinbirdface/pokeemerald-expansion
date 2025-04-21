@@ -130,7 +130,7 @@ script MirrohInterior_2F_Trainer_F{
 
 //youngster
 script MirrohInterior_2F_Trainer_G{
-    trainerbattle_single(TRAINER_MIRROHINT2_G, format("I can't wait to get out of this cave and collect my 5th gym badge at Winterlily Hollow. Yep, that's right! I'm not your average trainer - I'm on my way to become the Pokemon Champion!"), format("I've still got a long way to go!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_G, format("I can't wait to get out of this cave and collect my 5th gym badge at Winterlily Hollow. Yep, that's right! I'm not your average trainer - I'm on my way to become the Pokémon Champion!"), format("I've still got a long way to go!"))
     msgbox(format("Four more badges to go...whew, this gym challenge is exhausting!"))
     releaseall
 }
@@ -152,22 +152,22 @@ script MirrohInterior_2F_Trainer_G{
 //NPCs
 //old man below ledge
 script MirrohInterior_2F_NPC_A{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("On the way to Winterlily Hollow? I live there. It's a little further ahead, to the right and up, past the icy floor."), MSGBOX_NPC)
     end
 }
 //woman staring
 script MirrohInterior_2F_NPC_B{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("My husband is an avid history buff. He's down there examining some old cave paintings."), MSGBOX_NPC)
     end
 }
 //researcher old man
 script MirrohInterior_2F_NPC_C{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What a fearsome Pokémon! One must be grateful it's not alive in this day and age."), MSGBOX_NPC)
     end
 }
-//runner
+//pokefan f
 script MirrohInterior_2F_NPC_D{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("This cave is so exhausting! I can't wait to be on the other side."), MSGBOX_NPC)
     end
 }
 
