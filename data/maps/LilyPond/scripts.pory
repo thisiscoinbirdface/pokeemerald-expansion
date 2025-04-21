@@ -8,7 +8,7 @@ script LilyPond_OnFrame{
     if (flag(FLAG_HIDE_LILY_POND_KOHLA)){end}
 
     lockall
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     msgbox(format("KOHLA: Well...that was certainly a first for me."))
     release    
     delay(16)
@@ -25,7 +25,7 @@ script LilyPond_OnFrame{
     applymovement(2, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("KOHLA: What? You have something to say?\p...\pKOHLA: You saw someone who looked like Prof. Tenebris there?\p...\pKOHLA: So you're saying that Prof. Tenebris somehow has been living in Ancient Cormoria this whole time? Alone?\pKOHLA: Without any food?\pKOHLA: Water?\pKOHLA: Protection?\pKOHLA: And you just happened to see her?\p...\pKOHLA: That sounds like a complete lie to me.\pKOHLA: Pathetic. To think the detectives thought so highly of you. I didn't expect you to lie."))
+    msgbox(format("KOHLA: What? You have something to say?\p...\pKOHLA: You saw someone who looked like Prof. Tenebris there?\p...\pKOHLA: So you're saying that Prof. Tenebris somehow has been living in Ancient Cormoria this whole time?\pAlone?\pWithout any food?\pWater?\pProtection?\pKOHLA: And you just somehow happened to see her?\p...\pKOHLA: {PLAYER}. xThat sounds like a complete lie to me.\pKOHLA: Pathetic. To think the detectives thought so highly of you."))
     release
     delay(24)
     msgbox(format("KOHLA: I disliked you because I thought you didn't deserve the attention you got. But now? You're nothing but a failure.\p...\pKOHLA: I'm going to chase Team Somber and get that Ancient Terror back. It'd be best if we didn't see each other again.\pKOHLA: You're off the case. Do whatever you like."))

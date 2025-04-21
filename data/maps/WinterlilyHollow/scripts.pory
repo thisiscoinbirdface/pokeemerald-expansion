@@ -24,7 +24,7 @@ script WinterlilyHollow_OnFrame{
             release
             applymovement(LOCALID_VINIEL, moves(walk_down*2))
             waitmovement(0)
-            msgbox(format("VINIEL: AMPHAROS and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\p...\pVINIEL: So that's what's been going on. Poor Professor Tenebris. I'd heard about her disappearance on the news.\pVINIEL: News comes late here, since we're so remote.\pVINIEL: Professor Tenebris and I fought each other together several times when we were younger! I never lost though. Hahaha!"))
+            msgbox(format("VINIEL: Ampharos and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\p...\pVINIEL: So that's what's been going on. Poor Professor Tenebris. I'd heard about her disappearance on the news.\pVINIEL: News comes late here, since we're so remote.\pVINIEL: Professor Tenebris and I fought each other together several times when we were younger! I never lost though. Hahaha!"))
             release
             delay(24)
             msgbox(format("VINIEL: So what are you going to do next?\p...\pVINIEL: Oh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber. It's time for the grown-ups to take over.\pVINIEL: What's wrong, young champ? You look paralysed. Don't let the shock wear you down.\pVINIEL: I see you have four gym badges. Why not try to aim for all eight? Starting with me, of course. Hahaha!\p...\pVINIEL: You know, it's alright to fail. From what you told me, you've done incredible work so far. Now let the detectives handle the rest. You're young and green - be young and green!\pVINIEL: I hope I'll see you at my gym later!"))
