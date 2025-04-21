@@ -2400,11 +2400,11 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Toxtricity
-Level: 36
+Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Graveler-Alola
-Level: 37
+Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_B ===
@@ -2418,19 +2418,19 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Charjabug
-Level: 34
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Kilowattrel
-Level: 35
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Boltund
-Level: 36
+Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Magneton
-Level: 36
+Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -2445,11 +2445,11 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Toxicroak
-Level: 39
+Level: 35
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Donphan
-Level: 39
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_D ===
@@ -2463,15 +2463,15 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Magneton
-Level: 36
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Porygon2
-Level: 37
+Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Furret
-Level: 39
+Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -2486,11 +2486,11 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Eelektross
-Level: 39
+Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Flaaffy
-Level: 39
+Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_F ===
@@ -2504,11 +2504,11 @@ AI: Check Bad Move
 Starting Status: Electric Terrain
 
 Kilowattrel
-Level: 39
+Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Electabuzz
-Level: 39
+Level: 37
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
@@ -2523,20 +2523,20 @@ Starting Status: Electric Terrain
 Mugshot: Yellow
 
 Kilowattrel
-Level: 39
+Level: 37
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Golem-Alola
-Level: 40
+Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Magneton
-Level: 42
+Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 Ampharos @ Ampharosite
-Level: 43
+Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
