@@ -435,7 +435,7 @@ WinterlilyHollow_OnFrame_Text_0:
 
 WinterlilyHollow_OnFrame_Text_1:
 # 27 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "VINIEL: AMPHAROS and I took all those\n"
+	.string "VINIEL: Ampharos and I took all those\n"
 	.string "grunts down! Hahaha! But when I went to\l"
 	.string "the peak, everyone had gone!\p"
 	.string "...\p"

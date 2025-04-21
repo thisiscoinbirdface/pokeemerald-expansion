@@ -77,7 +77,7 @@ LilyPond_OnFrame_2:
 # 11 "data//maps/LilyPond/scripts.pory"
 LilyPond_OnFrame_Movement_0:
 # 11 "data//maps/LilyPond/scripts.pory"
-	face_left
+	face_right
 	step_end
 
 # 18 "data//maps/LilyPond/scripts.pory"
@@ -125,19 +125,18 @@ LilyPond_OnFrame_Text_3:
 	.string "...\p"
 	.string "KOHLA: So you're saying that Prof.\n"
 	.string "Tenebris somehow has been living in\l"
-	.string "Ancient Cormoria this whole time?\l"
+	.string "Ancient Cormoria this whole time?\p"
 	.string "Alone?\p"
-	.string "KOHLA: Without any food?\p"
-	.string "KOHLA: Water?\p"
-	.string "KOHLA: Protection?\p"
-	.string "KOHLA: And you just happened to see\n"
-	.string "her?\p"
+	.string "Without any food?\p"
+	.string "Water?\p"
+	.string "Protection?\p"
+	.string "KOHLA: And you just somehow happened\n"
+	.string "to see her?\p"
 	.string "...\p"
-	.string "KOHLA: That sounds like a complete lie\n"
-	.string "to me.\p"
+	.string "KOHLA: {PLAYER}. xThat sounds like a\n"
+	.string "complete lie to me.\p"
 	.string "KOHLA: Pathetic. To think the\n"
-	.string "detectives thought so highly of you. I\l"
-	.string "didn't expect you to lie.$"
+	.string "detectives thought so highly of you.$"
 
 LilyPond_OnFrame_Text_4:
 # 31 "data//maps/LilyPond/scripts.pory"
