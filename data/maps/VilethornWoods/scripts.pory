@@ -262,16 +262,10 @@ script VilethornWoods_NPC2{
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
                 removeitem(ITEM_BIG_MUSHROOM)
-                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage...how about an old spoon from the restaurant? Or maybe this seed I found earlier?"))
-                dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
-                if (var(VAR_RESULT) == 0){
-                    giveitem(ITEM_TWISTEDSPOON)
-                } else {
-                    giveitem(ITEM_MIRACLE_SEED)
-                }
+                msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage."))
+                
+                goto(VilethornWoods_Cook_Reward)
 
-                setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
-                msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"))            
             } else {
                 msgbox(format("Hey, you don't have any! Are you trying to trick me? The DROWZEE and MORELULL doing enough of that!"))
             }
@@ -282,6 +276,54 @@ script VilethornWoods_NPC2{
     releaseall
     end
 }
+
+script VilethornWoods_Cook_Reward{
+    message(format("Perhaps a spoon from the restaurant? Or this seed I found?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
+    if (var(VAR_RESULT) == 0){
+        goto(VilethornWoods_Cook_RewardA)
+    } else {
+        goto(VilethornWoods_Cook_RewardB)
+    }
+}
+
+script VilethornWoods_Cook_RewardA{
+    setvar(VAR_0x8006, ITEM_TWISTEDSPOON)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_TWISTEDSPOON)
+        goto(VilethornWoods_Cook_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(VilethornWoods_Cook_Reward)
+    }
+}
+
+script VilethornWoods_Cook_RewardB{
+    setvar(VAR_0x8006, ITEM_MIRACLE_SEED)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_MIRACLE_SEED)
+        goto(VilethornWoods_Cook_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(VilethornWoods_Cook_Reward)
+    }
+}
+
+script VilethornWoods_Cook_RewardEnd{
+    setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
+    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)
+    end
+}
+
+
+
 
 script VilethornWoods_NPC3{
     if (flag(FLAG_VILETHORN_NPC_ITEM)){
