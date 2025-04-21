@@ -5338,7 +5338,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2184
-            .species = SPECIES_CARKOAL,
+            .species = SPECIES_CARKOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2186
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),

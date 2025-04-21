@@ -285,6 +285,10 @@ script WhiteSign_PellucaCity_Fishery{
     end
 }
 
+script WhiteSign_PellucaCity_ToCableCar{
+    msgbox(format("{LEFT_ARROW}Cable Car to Mirroh Base Camp"), MSGBOX_SIGN)
+    end
+}
 
 
 //mirroh base camp
