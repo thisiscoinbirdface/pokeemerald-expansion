@@ -98,6 +98,24 @@ AncientMirroh_Aerodactyl_11:
 	goto AncientMirroh_Aerodactyl_10
 
 
+AncientMirroh_Tenebris_Item::
+# 70 "data//maps/AncientMirroh_Caves/scripts.pory"
+	lockall
+# 71 "data//maps/AncientMirroh_Caves/scripts.pory"
+	removeobject 4
+# 72 "data//maps/AncientMirroh_Caves/scripts.pory"
+	giveitem ITEM_RARE_SHARD
+# 73 "data//maps/AncientMirroh_Caves/scripts.pory"
+	delay 16
+# 74 "data//maps/AncientMirroh_Caves/scripts.pory"
+	msgbox AncientMirroh_Tenebris_Item_Text_0
+# 76 "data//maps/AncientMirroh_Caves/scripts.pory"
+	setflag FLAG_ITEM_ANCIENTMIRROH_F
+# 77 "data//maps/AncientMirroh_Caves/scripts.pory"
+	releaseall
+	end
+
+
 # 17 "data//maps/AncientMirroh_Caves/scripts.pory"
 AncientMirroh_Tenebris_Caves_Trigger_Movement_0:
 # 17 "data//maps/AncientMirroh_Caves/scripts.pory"
@@ -147,3 +165,7 @@ AncientMirroh_Aerodactyl_Text_1:
 # 58 "data//maps/AncientMirroh_Caves/scripts.pory"
 	.string "The Pokémon settles back into its\n"
 	.string "sleep...$"
+
+AncientMirroh_Tenebris_Item_Text_0:
+# 74 "data//maps/AncientMirroh_Caves/scripts.pory"
+	.string "Was this left behind by that lady?$"

@@ -1974,9 +1974,9 @@ static const u32 ItemRarityTable_Rare[] =
     ITEMID_THUNDER_STONE,
     ITEMID_MOON_STONE,
     ITEMID_SUN_STONE,
-    ITEMID_ODD_KEY_STONE,
-    ITEMID_SKULL_FOSSIL,
-    ITEMID_ARMOR_FOSSIL,
+    // ITEMID_ODD_KEY_STONE,
+    // ITEMID_SKULL_FOSSIL,
+    // ITEMID_ARMOR_FOSSIL,
 };
 
 static u8 GetRandomItemId() 
@@ -1984,7 +1984,7 @@ static u8 GetRandomItemId()
     u32 rarity;
     u32 index;
     u32 itemId;
-    u32 rnd = random(7);
+    u32 rnd = random(8);
 
     if (rnd < 4) 
     {

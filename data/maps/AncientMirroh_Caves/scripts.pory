@@ -62,3 +62,18 @@ script AncientMirroh_Aerodactyl{
 }
 
 
+
+
+
+//tenebris item
+script AncientMirroh_Tenebris_Item{
+    lockall
+    removeobject(4)
+    giveitem(ITEM_RARE_SHARD)
+    delay(16)
+    msgbox(format("Was this left behind by that lady?"))
+
+    setflag(FLAG_ITEM_ANCIENTMIRROH_F)
+    releaseall
+    end
+}
