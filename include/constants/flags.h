@@ -260,18 +260,18 @@
 
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
-#define FLAG_GASTREEGYM_SPENSER_WATER                               0x4E7 // gym flag
-#define FLAG_GASTREEGYM_SPENSER_REWARD                              0x4E8 // gym flag
-#define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                         0x4E9 // gym flag
-#define FLAG_CERAMBASECAMPGYM_SPENSER_REWARD                        0x4EA // gym flag
-#define FLAG_GALECRESTGYM_SPENSER_WATER                             0x4EB // gym flag
-#define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EC // gym flag
-#define FLAG_SILVERSUNGYM_SPENSER_WATER                             0x4ED // gym flag
-#define FLAG_SILVERSUNGYM_SPENSER_REWARD                            0x4EE // gym flag
-#define FLAG_HEAL_PASS_EXPLAIN                                      0x4EF // gym flag
-#define FLAG_HEAL_PASS_HAVE                                         0x4E6 // gym flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
-#define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
+#define FLAG_HEAL_PASS_EXPLAIN                               0x4E7 // gym flag
+#define FLAG_HEAL_PASS_HAVE                              0x4E8 // gym flag
+#define FLAG_GASTREEGYM_SPENSER_WATER                         0x4E9 // gym flag
+#define FLAG_GASTREEGYM_SPENSER_REWARD                        0x4EA // gym flag
+#define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                             0x4EB // gym flag
+#define FLAG_CERAMBASECAMPGYM_SPENSER_REWARD                            0x4EC // gym flag
+#define FLAG_GALECRESTGYM_SPENSER_WATER                             0x4ED // gym flag
+#define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EE // gym flag
+#define FLAG_SILVERSUNGYM_SPENSER_WATER                                      0x4EF // gym flag
+#define FLAG_SILVERSUNGYM_SPENSER_REWARD                                         0x4E6 // gym flag
+#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER                                           0x4C1 // Unused Flag
+#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
