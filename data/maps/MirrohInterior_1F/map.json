@@ -2,7 +2,7 @@
   "id": "MAP_MIRROH_INTERIOR_1F",
   "name": "MirrohInterior_1F",
   "layout": "LAYOUT_MIRROH_INTERIOR_1F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CAVE_OF_ORIGIN",
   "region_map_section": "MAPSEC_MT_MIRROH_EXTERIOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
