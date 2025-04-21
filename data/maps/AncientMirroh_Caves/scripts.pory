@@ -34,7 +34,7 @@ script AncientMirroh_Tenebris_Caves_Trigger{
     end
 }
 
-//aerodactyl FLAG_ANCIENT_MIRROH_AERODACTYL
+//aerodactyl
 script AncientMirroh_Aerodactyl{
     lockall
     msgbox(format("It's an ancient Pokémon!\nIt's roosting. Wake it up?"), MSGBOX_YESNO)
@@ -57,7 +57,7 @@ script AncientMirroh_Aerodactyl{
     if (var(VAR_RESULT) == B_OUTCOME_RAN){
         msgbox(format("The Pokémon settles back into its sleep..."))
     }
-    
+
     end
 }
 

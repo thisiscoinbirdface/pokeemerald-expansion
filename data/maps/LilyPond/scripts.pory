@@ -8,12 +8,27 @@ script LilyPond_OnFrame{
     if (flag(FLAG_HIDE_LILY_POND_KOHLA)){end}
 
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     msgbox(format("KOHLA: Well...that was certainly a first for me."))
-    
+    release    
+    delay(16)
+    msgbox(format("KOHLA: So you were sent there by Moxie before I came?"))
+    release
+    delay(16)    
     applymovement(2, moves(emote_exclamation_mark))
     waitmovement(0)
+    delay(16)
+    msgbox(format("KOHLA: You had a chance to stop Melea! Had I been a little faster, I would've stopped them from getting that Ancient Terror!\pKOHLA: {PLAYER}, you mucked it up! You were there and yet you couldn't stop them. And now they've got the Ancient Terror, and whatever happens will be on your shoulders.\pKOHLA: Not mine. Yours!"))
+    release
+
+    delay(16)    
+    applymovement(2, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("KOHLA: What? You have something to say?\p...\pKOHLA: You saw someone who looked like Prof. Tenebris there?\p...\pKOHLA: So you're saying that Prof. Tenebris somehow has been living in Ancient Cormoria this whole time? Alone?\pKOHLA: Without any food?\pKOHLA: Water?\pKOHLA: Protection?\pKOHLA: And you just happened to see her?\p...\pKOHLA: That sounds like a complete lie to me.\pKOHLA: Pathetic. To think the detectives thought so highly of you. I didn't expect you to lie."))
+    release
     delay(24)
-    msgbox(format("KOHLA: But had I been a little faster, I might have been able to stop them from getting that ANCIENT TERROR!\pKOHLA: {PLAYER}, you failed. You were there on time and yet you couldn't stop them. And now they're going to do who knows what with that ANCIENT TERROR, and it'll be on YOUR shoulders.\pKOHLA: Not mine. YOURS!\p...\pKOHLA: At Mt. Ceram, you showed me the value of strength. But here, on Mt. Mirroh, you showed me the consequences of not using your strength.\pKOHLA: I disliked you because I thought you didn't deserve the attention you got. But now? Now I look down upon you. You're a failure whose mess I have to clean up.\p...\pKOHLA: I'm going to chase Team Somber down and get that ANCIENT TERROR back from them. It'd be best if we didn't see each other again. You're off the case. Do whatever you like now."))
+    msgbox(format("KOHLA: I disliked you because I thought you didn't deserve the attention you got. But now? You're nothing but a failure.\p...\pKOHLA: I'm going to chase Team Somber and get that Ancient Terror back. It'd be best if we didn't see each other again.\pKOHLA: You're off the case. Do whatever you like."))
     release
 
     fadescreen(FADE_TO_BLACK)
@@ -22,6 +37,9 @@ script LilyPond_OnFrame{
 
     setflag(FLAG_HIDE_LILY_POND_KOHLA)
     completequest(QUEST_DREAMSTONE_MYSTERIES)
+
+    releaseall
+    end
 }
 
 

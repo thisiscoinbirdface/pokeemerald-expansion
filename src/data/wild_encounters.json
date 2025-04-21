@@ -12772,7 +12772,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
+                "species": "SPECIES_TOEDSCOOL"
               },
               {
                 "min_level": 22,
@@ -12782,7 +12782,7 @@
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_CROCONAW"
+                "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               }
             ]
           },
@@ -13690,12 +13690,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_ANORITH"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
@@ -13705,17 +13700,27 @@
               {
                 "min_level": 28,
                 "max_level": 32,
+                "species": "SPECIES_AMAURA"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
                 "species": "SPECIES_ARCHEN"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_ANORITH"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_ARCHEN"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
@@ -13740,12 +13745,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_ANORITH"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_ARCHEN"
+                "species": "SPECIES_ARCTOZOLT"
               }
             ]
           }
@@ -13764,7 +13764,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
@@ -13774,12 +13774,12 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
@@ -13789,7 +13789,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_KABUTO"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
@@ -13799,7 +13799,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_KABUTO"
+                "species": "SPECIES_ARCTOVISH"
               },
               {
                 "min_level": 28,
@@ -13848,27 +13848,27 @@
               {
                 "min_level": 28,
                 "max_level": 32,
+                "species": "SPECIES_AMAURA"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
                 "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_ARCTOVISH"
               },
               {
                 "min_level": 28,
