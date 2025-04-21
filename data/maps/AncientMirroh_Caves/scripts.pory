@@ -58,6 +58,7 @@ script AncientMirroh_Aerodactyl{
         msgbox(format("The Pokémon settles back into its sleep..."))
     }
 
+    releaseall
     end
 }
 

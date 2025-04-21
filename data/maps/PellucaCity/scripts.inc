@@ -569,10 +569,7 @@ PellucaCity_Greta_Main_Text_0:
 # 43 "data//maps/PellucaCity/scripts.pory"
 	.string "GRETA: Oh, hello there! It's you again.\n"
 	.string "Fancy seeing you in these parts. Route\l"
-	.string "6 was a tough trek, eh?\p"
-	.string "GRETA: Come, come. I've got some really\n"
-	.string "great stuff from...well, a magician can't\l"
-	.string "reveal her secrets, can she?$"
+	.string "6 was a tough trek, eh?$"
 
 PellucaCity_Greta_GottaGo_Text_0:
 # 57 "data//maps/PellucaCity/scripts.pory"

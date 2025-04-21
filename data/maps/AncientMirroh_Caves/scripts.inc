@@ -77,6 +77,8 @@ AncientMirroh_Aerodactyl_7:
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq AncientMirroh_Aerodactyl_11
 AncientMirroh_Aerodactyl_10:
+# 61 "data//maps/AncientMirroh_Caves/scripts.pory"
+	releaseall
 	end
 
 AncientMirroh_Aerodactyl_2:
@@ -99,19 +101,19 @@ AncientMirroh_Aerodactyl_11:
 
 
 AncientMirroh_Tenebris_Item::
-# 70 "data//maps/AncientMirroh_Caves/scripts.pory"
-	lockall
 # 71 "data//maps/AncientMirroh_Caves/scripts.pory"
-	removeobject 4
+	lockall
 # 72 "data//maps/AncientMirroh_Caves/scripts.pory"
-	giveitem ITEM_RARE_SHARD
+	removeobject 4
 # 73 "data//maps/AncientMirroh_Caves/scripts.pory"
-	delay 16
+	giveitem ITEM_RARE_SHARD
 # 74 "data//maps/AncientMirroh_Caves/scripts.pory"
+	delay 16
+# 75 "data//maps/AncientMirroh_Caves/scripts.pory"
 	msgbox AncientMirroh_Tenebris_Item_Text_0
-# 76 "data//maps/AncientMirroh_Caves/scripts.pory"
-	setflag FLAG_ITEM_ANCIENTMIRROH_F
 # 77 "data//maps/AncientMirroh_Caves/scripts.pory"
+	setflag FLAG_ITEM_ANCIENTMIRROH_F
+# 78 "data//maps/AncientMirroh_Caves/scripts.pory"
 	releaseall
 	end
 
@@ -167,5 +169,5 @@ AncientMirroh_Aerodactyl_Text_1:
 	.string "sleep...$"
 
 AncientMirroh_Tenebris_Item_Text_0:
-# 74 "data//maps/AncientMirroh_Caves/scripts.pory"
+# 75 "data//maps/AncientMirroh_Caves/scripts.pory"
 	.string "Was this left behind by that lady?$"
