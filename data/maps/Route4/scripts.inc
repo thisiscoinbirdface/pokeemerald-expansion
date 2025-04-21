@@ -412,10 +412,10 @@ Route4_NPC_Cook::
 # 279 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_5
-# 297 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_7, MSGBOX_NPC
+# 292 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_5, MSGBOX_NPC
 Route4_NPC_Cook_1:
-# 302 "data//maps/Route4/scripts.pory"
+# 297 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
@@ -430,8 +430,8 @@ Route4_NPC_Cook_5:
 # 281 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_8
-# 294 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_6, MSGBOX_NPC
+# 289 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_4, MSGBOX_NPC
 	goto Route4_NPC_Cook_1
 
 Route4_NPC_Cook_8:
@@ -441,28 +441,93 @@ Route4_NPC_Cook_8:
 	msgbox Route4_NPC_Cook_Text_2, MSGBOX_SIGN
 # 284 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_3
-# 285 "data//maps/Route4/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, Route4_NPC_Cook_Text_4, Route4_NPC_Cook_Text_5
 # 286 "data//maps/Route4/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq Route4_NPC_Cook_12
-# 289 "data//maps/Route4/scripts.pory"
-	giveitem ITEM_ADRENALINE_ORB
-Route4_NPC_Cook_11:
-# 291 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_0, MSGBOX_NPC
-# 292 "data//maps/Route4/scripts.pory"
-	setflag FLAG_ROUTE4_COOK
+	goto Route4_NPC_Cook_Reward
 	goto Route4_NPC_Cook_1
 
-Route4_NPC_Cook_12:
-# 287 "data//maps/Route4/scripts.pory"
+
+Route4_NPC_Cook_Reward::
+# 301 "data//maps/Route4/scripts.pory"
+	message Route4_NPC_Cook_Reward_Text_0
+# 302 "data//maps/Route4/scripts.pory"
+	waitmessage
+# 303 "data//maps/Route4/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, Route4_NPC_Cook_Reward_Text_1, Route4_NPC_Cook_Reward_Text_2
+# 304 "data//maps/Route4/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route4_NPC_Cook_Reward_1
+# 307 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_RewardB
+	return
+
+Route4_NPC_Cook_Reward_1:
+# 305 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_RewardA
+	return
+
+
+Route4_NPC_Cook_RewardA::
+# 312 "data//maps/Route4/scripts.pory"
+	setvar VAR_0x8006, ITEM_SHELL_BELL
+# 313 "data//maps/Route4/scripts.pory"
+	showitemdescription
+# 314 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_RewardA_Text_0, MSGBOX_YESNO
+# 315 "data//maps/Route4/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route4_NPC_Cook_RewardA_1
+# 320 "data//maps/Route4/scripts.pory"
+	hideitemdescription
+# 321 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_Reward
+	return
+
+Route4_NPC_Cook_RewardA_1:
+# 316 "data//maps/Route4/scripts.pory"
+	hideitemdescription
+# 317 "data//maps/Route4/scripts.pory"
 	giveitem ITEM_SHELL_BELL
-	goto Route4_NPC_Cook_11
+# 318 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_RewardEnd
+	return
+
+
+Route4_NPC_Cook_RewardB::
+# 326 "data//maps/Route4/scripts.pory"
+	setvar VAR_0x8006, ITEM_ADRENALINE_ORB
+# 327 "data//maps/Route4/scripts.pory"
+	showitemdescription
+# 328 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_RewardA_Text_0, MSGBOX_YESNO
+# 329 "data//maps/Route4/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route4_NPC_Cook_RewardB_1
+# 334 "data//maps/Route4/scripts.pory"
+	hideitemdescription
+# 335 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_Reward
+	return
+
+Route4_NPC_Cook_RewardB_1:
+# 330 "data//maps/Route4/scripts.pory"
+	hideitemdescription
+# 331 "data//maps/Route4/scripts.pory"
+	giveitem ITEM_ADRENALINE_ORB
+# 332 "data//maps/Route4/scripts.pory"
+	goto Route4_NPC_Cook_RewardEnd
+	return
+
+
+Route4_NPC_Cook_RewardEnd::
+# 340 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_COOK
+# 341 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_0, MSGBOX_NPC
+	end
 
 
 Route4_NPC_D::
-# 307 "data//maps/Route4/scripts.pory"
+# 347 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_D_Text_0, MSGBOX_NPC
 	end
 
@@ -810,25 +875,33 @@ Route4_NPC_Cook_Text_3:
 	.string "may like.$"
 
 Route4_NPC_Cook_Text_4:
-# 285 "data//maps/Route4/scripts.pory"
-	.string "SHELL BELL$"
-
-Route4_NPC_Cook_Text_5:
-# 285 "data//maps/Route4/scripts.pory"
-	.string "ADRENALINE ORB$"
-
-Route4_NPC_Cook_Text_6:
-# 294 "data//maps/Route4/scripts.pory"
+# 289 "data//maps/Route4/scripts.pory"
 	.string "I don't see any RAWST berries on you.\n"
 	.string "Come back when you get one!$"
 
-Route4_NPC_Cook_Text_7:
-# 297 "data//maps/Route4/scripts.pory"
+Route4_NPC_Cook_Text_5:
+# 292 "data//maps/Route4/scripts.pory"
 	.string "A shame! But no matter - I'll continue\n"
 	.string "my search.$"
 
+Route4_NPC_Cook_Reward_Text_0:
+# 301 "data//maps/Route4/scripts.pory"
+	.string "Please take one!$"
+
+Route4_NPC_Cook_Reward_Text_1:
+# 303 "data//maps/Route4/scripts.pory"
+	.string "SHELL BELL$"
+
+Route4_NPC_Cook_Reward_Text_2:
+# 303 "data//maps/Route4/scripts.pory"
+	.string "ADRENALINE ORB$"
+
+Route4_NPC_Cook_RewardA_Text_0:
+# 314 "data//maps/Route4/scripts.pory"
+	.string "Are you sure?$"
+
 Route4_NPC_D_Text_0:
-# 307 "data//maps/Route4/scripts.pory"
+# 347 "data//maps/Route4/scripts.pory"
 	.string "There are some grunts blocking the\n"
 	.string "path to Ceram Base Camp! They remind me\l"
 	.string "of my younger days...I used to be in an\l"

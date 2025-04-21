@@ -277,9 +277,9 @@ Route1_House_RewardEnd_Text_0:
 
 Route1_House_StartQuest_Text_0:
 # 99 "data//maps/Route1_House/scripts.pory"
-	.string "I think my poor baby AZURILL ate\n"
+	.string "I think my poor baby Azurill ate\n"
 	.string "something bad and now has food\l"
-	.string "poisoning! I wish I had a PECHA BERRY to\l"
+	.string "poisoning! I wish I had a Pecha Berry to\l"
 	.string "cure her. Say, trainer, good timing.\l"
 	.string "Would you be willing to find a PECHA\l"
 	.string "BERRY for my baby?$"
@@ -291,16 +291,16 @@ Route1_House_StartQuest_Text_1:
 
 Route1_House_StartQuest_Text_2:
 # 105 "data//maps/Route1_House/scripts.pory"
-	.string "You'd watch AZURILL suffer? You're so\n"
+	.string "You'd watch Azurill suffer? You're so\n"
 	.string "cold-hearted!$"
 
 Route1_House_Azurill_Text_0:
 # 118 "data//maps/Route1_House/scripts.pory"
-	.string "AZURILL looks full of joy! Must be the\n"
-	.string "love of its trainer...or is it the PECHA\l"
-	.string "BERRY?$"
+	.string "Azurill looks full of joy! Must be the\n"
+	.string "love of its trainer...or is it the Pecha\l"
+	.string "Berry?$"
 
 Route1_House_Azurill_Text_1:
 # 120 "data//maps/Route1_House/scripts.pory"
 	.string "AZURILL: zu...\p"
-	.string "AZURILL looks quite sick.$"
+	.string "Azurill looks quite sick.$"

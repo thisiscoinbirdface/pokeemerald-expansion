@@ -548,15 +548,15 @@ SilversunCity_BlindOrphanage_OldManQuest_4:
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 3
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_8
 SilversunCity_BlindOrphanage_OldManQuest_7:
-# 370 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 362 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2
 	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_11
 SilversunCity_BlindOrphanage_OldManQuest_10:
-# 376 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 368 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	compare VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1
-	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_18
-SilversunCity_BlindOrphanage_OldManQuest_17:
-# 389 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_14
+SilversunCity_BlindOrphanage_OldManQuest_13:
+# 381 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	releaseall
 	end
 
@@ -578,49 +578,114 @@ SilversunCity_BlindOrphanage_OldManQuest_8:
 # 357 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_2
 # 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_BlindOrphanage_OldManQuest_Text_3, SilversunCity_BlindOrphanage_OldManQuest_Text_4
-# 360 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_14
-# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	giveitem ITEM_MUSCLE_BAND
-SilversunCity_BlindOrphanage_OldManQuest_13:
-# 365 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4
-# 366 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_5, MSGBOX_NPC
+	goto SilversunCity_BlindOrphanage_Reward
 	goto SilversunCity_BlindOrphanage_OldManQuest_7
 
 SilversunCity_BlindOrphanage_OldManQuest_11:
-# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_6
-# 372 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_3
+# 364 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
 	goto SilversunCity_BlindOrphanage_OldManQuest_10
 
 SilversunCity_BlindOrphanage_OldManQuest_14:
-# 361 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	giveitem ITEM_WISE_GLASSES
+# 369 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_4, MSGBOX_YESNO
+# 370 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_16
+# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_6
 	goto SilversunCity_BlindOrphanage_OldManQuest_13
 
-SilversunCity_BlindOrphanage_OldManQuest_18:
-# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_7, MSGBOX_YESNO
-# 378 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq SilversunCity_BlindOrphanage_OldManQuest_20
-# 385 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_9
-	goto SilversunCity_BlindOrphanage_OldManQuest_17
-
-SilversunCity_BlindOrphanage_OldManQuest_20:
-# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_8
-# 380 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_16:
+# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_OldManQuest_Text_5
+# 372 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	release
-# 382 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 374 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2
-	goto SilversunCity_BlindOrphanage_OldManQuest_17
+	goto SilversunCity_BlindOrphanage_OldManQuest_13
+
+
+SilversunCity_BlindOrphanage_Reward::
+# 389 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	message SilversunCity_BlindOrphanage_Reward_Text_0
+# 390 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	waitmessage
+# 391 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_BlindOrphanage_Reward_Text_1, SilversunCity_BlindOrphanage_Reward_Text_2
+# 393 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SilversunCity_BlindOrphanage_Reward_1
+# 396 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	giveitem ITEM_MUSCLE_BAND
+	return
+
+SilversunCity_BlindOrphanage_Reward_1:
+# 394 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	giveitem ITEM_WISE_GLASSES
+	return
+
+
+SilversunCity_BlindOrphanage_RewardA::
+# 400 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	setvar VAR_0x8006, ITEM_WISE_GLASSES
+# 401 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	showitemdescription
+# 402 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_RewardA_Text_0, MSGBOX_YESNO
+# 403 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_BlindOrphanage_RewardA_1
+# 408 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	hideitemdescription
+# 409 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto SilversunCity_BlindOrphanage_Reward
+	return
+
+SilversunCity_BlindOrphanage_RewardA_1:
+# 404 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	hideitemdescription
+# 405 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	giveitem ITEM_WISE_GLASSES
+# 406 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto SilversunCity_BlindOrphanage_RewardEnd
+	return
+
+
+SilversunCity_BlindOrphanage_RewardB::
+# 413 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	setvar VAR_0x8006, ITEM_MUSCLE_BAND
+# 414 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	showitemdescription
+# 415 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_RewardA_Text_0, MSGBOX_YESNO
+# 416 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_BlindOrphanage_RewardB_1
+# 421 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	hideitemdescription
+# 422 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto SilversunCity_BlindOrphanage_Reward
+	return
+
+SilversunCity_BlindOrphanage_RewardB_1:
+# 417 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	hideitemdescription
+# 418 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	giveitem ITEM_MUSCLE_BAND
+# 419 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	goto SilversunCity_BlindOrphanage_RewardEnd
+	return
+
+
+SilversunCity_BlindOrphanage_RewardEnd::
+# 426 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	setvar VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4
+# 427 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	msgbox SilversunCity_BlindOrphanage_RewardEnd_Text_0, MSGBOX_NPC
+	end
 
 
 # 186 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -869,27 +934,14 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_2:
 	.string "grateful. Please accept something as a\l"
 	.string "token of your time. Since we often\l"
 	.string "receive donations, we have many things\l"
-	.string "lying around. Perhaps you may find one\l"
-	.string "of these useful?$"
+	.string "lying around.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_3:
-# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "WISE GLASSES$"
-
-SilversunCity_BlindOrphanage_OldManQuest_Text_4:
-# 358 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "MUSCLE BAND$"
-
-SilversunCity_BlindOrphanage_OldManQuest_Text_5:
-# 366 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "Please visit us again!$"
-
-SilversunCity_BlindOrphanage_OldManQuest_Text_6:
-# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+# 363 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "How's the volunteering going?$"
 
-SilversunCity_BlindOrphanage_OldManQuest_Text_7:
-# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_Text_4:
+# 369 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "You've got the look of someone with a\n"
 	.string "kind heart - and strong legs. Both are\l"
 	.string "useful around here. Tell me, would you\l"
@@ -898,8 +950,8 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_7:
 	.string "their Pokémon could use a little extra\l"
 	.string "care.$"
 
-SilversunCity_BlindOrphanage_OldManQuest_Text_8:
-# 379 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_Text_5:
+# 371 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Excellent! Kindness like yours is what\n"
 	.string "keeps us going. You won't have to do\l"
 	.string "much - just lend a hand here and there.\l"
@@ -907,7 +959,28 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_8:
 	.string "help. Come speak to me again once you're\l"
 	.string "finished.$"
 
-SilversunCity_BlindOrphanage_OldManQuest_Text_9:
-# 385 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+SilversunCity_BlindOrphanage_OldManQuest_Text_6:
+# 377 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Oh well. Whenever you'd like to, we're\n"
 	.string "always looking for help!$"
+
+SilversunCity_BlindOrphanage_Reward_Text_0:
+# 389 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Perhaps you may find one of these\n"
+	.string "useful?$"
+
+SilversunCity_BlindOrphanage_Reward_Text_1:
+# 391 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Wise Glasses$"
+
+SilversunCity_BlindOrphanage_Reward_Text_2:
+# 391 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Muscle Band$"
+
+SilversunCity_BlindOrphanage_RewardA_Text_0:
+# 402 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Are you sure?$"
+
+SilversunCity_BlindOrphanage_RewardEnd_Text_0:
+# 427 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
+	.string "Please visit us again!$"
