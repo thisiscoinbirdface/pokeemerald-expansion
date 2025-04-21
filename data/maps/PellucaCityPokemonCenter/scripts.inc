@@ -23,3 +23,14 @@ PellucaCity_PokemonCenter_EventScript_Nurse::
 	releaseall
 	return
 
+
+PellucaCity_PokemonCenter_Nurse1::
+# 18 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_PokemonCenter_Nurse1_Text_0, MSGBOX_NPC
+	return
+
+
+PellucaCity_PokemonCenter_Nurse1_Text_0:
+# 18 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	.string "We've had enough of the Heal Pass\n"
+	.string "system. We're unionising!$"
