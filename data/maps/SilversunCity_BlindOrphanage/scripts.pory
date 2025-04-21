@@ -354,16 +354,8 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     }
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 3){
-        msgbox(format("The orphanage is really impressed with your work, {PLAYER}. We're ever so grateful. Please accept something as a token of your time. Since we often receive donations, we have many things lying around. Perhaps you may find one of these useful?"))
-        dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WISE GLASSES", "MUSCLE BAND")
-
-        if (var(VAR_RESULT) == 0){
-            giveitem(ITEM_WISE_GLASSES)
-        } else{
-            giveitem(ITEM_MUSCLE_BAND)
-        }
-        setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4)
-        msgbox(format("Please visit us again!"), MSGBOX_NPC)
+        msgbox(format("The orphanage is really impressed with your work, {PLAYER}. We're ever so grateful. Please accept something as a token of your time. Since we often receive donations, we have many things lying around."))
+        goto(SilversunCity_BlindOrphanage_Reward)
     }
 
 
@@ -390,3 +382,52 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     end
 
 }
+
+
+
+script SilversunCity_BlindOrphanage_Reward{
+    message(format("Perhaps you may find one of these useful?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Wise Glasses", "Muscle Band")
+
+    if (var(VAR_RESULT) == 0){
+        giveitem(ITEM_WISE_GLASSES)
+    } else{
+        giveitem(ITEM_MUSCLE_BAND)
+    }
+}
+script SilversunCity_BlindOrphanage_RewardA{
+    setvar(VAR_0x8006, ITEM_WISE_GLASSES)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_WISE_GLASSES)
+        goto(SilversunCity_BlindOrphanage_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(SilversunCity_BlindOrphanage_Reward)
+    }
+}
+script SilversunCity_BlindOrphanage_RewardB{
+    setvar(VAR_0x8006, ITEM_MUSCLE_BAND)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_MUSCLE_BAND)
+        goto(SilversunCity_BlindOrphanage_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(SilversunCity_BlindOrphanage_Reward)
+    }
+}
+script SilversunCity_BlindOrphanage_RewardEnd{
+    setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 4)
+    msgbox(format("Please visit us again!"), MSGBOX_NPC)
+    end
+}
+
+
+
+
