@@ -175,17 +175,8 @@ script SilversunCity_Theater_NPC5{
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
             msgbox(format("To be honest, it's not even my fault. The theater should arrange better seating, especially if they're charging the same price for all tickets!"), MSGBOX_NPC)
         } else {
-            msgbox(format("I'm glad I brought lenses because the performance was great! Do you want a pair? I brought an extra."))
-            dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_WIDE_LENS)
-                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
-            } else {
-                giveitem(ITEM_SCOPE_LENS)
-                msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will land more critical hits."), MSGBOX_NPC)
-            }
-            
-            setflag(FLAG_SILVERSUN_THEATER_LENS)
+            msgbox(format("I'm glad I brought lenses because the performance was great!"))
+            goto(SilversunCity_Theater_Lens_Reward)
         }
     } else {
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
@@ -193,17 +184,7 @@ script SilversunCity_Theater_NPC5{
         } else {
             msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
-                msgbox(format("Why don't you wear a pair of lenses? I've got extra."))            
-                dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "WIDE LENS", "SCOPE LENS")
-                if (var(VAR_RESULT) == 0){
-                    giveitem(ITEM_WIDE_LENS)
-                    msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will have their accuracy increased."), MSGBOX_NPC)
-                } else {
-                    giveitem(ITEM_SCOPE_LENS)
-                    msgbox(format("You can use it outside of the theater too! Any Pokémon holding it will land more critical hits."), MSGBOX_NPC)
-                }
-                
-                setflag(FLAG_SILVERSUN_THEATER_LENS)            
+                goto(SilversunCity_Theater_Lens_Reward)
             } else {
                 msgbox(format("Got better seats? Good for you! I wish I'd booked mine faster."), MSGBOX_NPC)
             }
@@ -211,6 +192,55 @@ script SilversunCity_Theater_NPC5{
     }
     end
 }
+
+script SilversunCity_Theater_Lens_Reward{
+    message(format("Why don't you wear a pair of lenses? I've got extra."))    
+    waitmessage        
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Wide Lens", "Scope Lens")
+    if (var(VAR_RESULT) == 0){
+        goto(SilversunCity_Theater_Lens_RewardA)
+    } else {
+        goto(SilversunCity_Theater_Lens_RewardB)
+    }
+}
+script SilversunCity_Theater_Lens_RewardA{
+    setvar(VAR_0x8006, ITEM_WIDE_LENS)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_WIDE_LENS)
+        goto(SilversunCity_Theater_Lens_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(SilversunCity_Theater_Lens_Reward)
+    }
+}
+script SilversunCity_Theater_Lens_RewardB{
+    setvar(VAR_0x8006, ITEM_SCOPE_LENS)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_SCOPE_LENS)
+        goto(SilversunCity_Theater_Lens_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(SilversunCity_Theater_Lens_Reward)
+    }
+}
+script SilversunCity_Theater_Lens_RewardEnd{
+    setflag(FLAG_SILVERSUN_THEATER_LENS)
+    msgbox(format("You can use it outside of the theater too!"), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
 
 
 //backstage actress
