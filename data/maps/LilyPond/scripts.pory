@@ -8,6 +8,7 @@ script LilyPond_OnFrame{
     if (flag(FLAG_HIDE_LILY_POND_KOHLA)){end}
 
     lockall
+    setrespawn(HEAL_LOCATION_WINTERLILY_HOLLOW)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     msgbox(format("KOHLA: Well...that was certainly a first for me."))
     release    

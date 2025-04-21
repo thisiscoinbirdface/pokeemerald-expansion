@@ -15,58 +15,60 @@ LilyPond_OnFrame::
 # 10 "data//maps/LilyPond/scripts.pory"
 	lockall
 # 11 "data//maps/LilyPond/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilyPond_OnFrame_Movement_0
+	setrespawn HEAL_LOCATION_WINTERLILY_HOLLOW
 # 12 "data//maps/LilyPond/scripts.pory"
-	msgbox LilyPond_OnFrame_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, LilyPond_OnFrame_Movement_0
 # 13 "data//maps/LilyPond/scripts.pory"
-	release
+	msgbox LilyPond_OnFrame_Text_0
 # 14 "data//maps/LilyPond/scripts.pory"
-	delay 16
+	release
 # 15 "data//maps/LilyPond/scripts.pory"
-	msgbox LilyPond_OnFrame_Text_1
+	delay 16
 # 16 "data//maps/LilyPond/scripts.pory"
-	release
+	msgbox LilyPond_OnFrame_Text_1
 # 17 "data//maps/LilyPond/scripts.pory"
-	delay 16
+	release
 # 18 "data//maps/LilyPond/scripts.pory"
-	applymovement 2, LilyPond_OnFrame_Movement_1
+	delay 16
 # 19 "data//maps/LilyPond/scripts.pory"
-	waitmovement 0
+	applymovement 2, LilyPond_OnFrame_Movement_1
 # 20 "data//maps/LilyPond/scripts.pory"
-	delay 16
-# 21 "data//maps/LilyPond/scripts.pory"
-	msgbox LilyPond_OnFrame_Text_2
-# 22 "data//maps/LilyPond/scripts.pory"
-	release
-# 24 "data//maps/LilyPond/scripts.pory"
-	delay 16
-# 25 "data//maps/LilyPond/scripts.pory"
-	applymovement 2, LilyPond_OnFrame_Movement_2
-# 26 "data//maps/LilyPond/scripts.pory"
 	waitmovement 0
-# 27 "data//maps/LilyPond/scripts.pory"
+# 21 "data//maps/LilyPond/scripts.pory"
 	delay 16
+# 22 "data//maps/LilyPond/scripts.pory"
+	msgbox LilyPond_OnFrame_Text_2
+# 23 "data//maps/LilyPond/scripts.pory"
+	release
+# 25 "data//maps/LilyPond/scripts.pory"
+	delay 16
+# 26 "data//maps/LilyPond/scripts.pory"
+	applymovement 2, LilyPond_OnFrame_Movement_2
+# 27 "data//maps/LilyPond/scripts.pory"
+	waitmovement 0
 # 28 "data//maps/LilyPond/scripts.pory"
-	msgbox LilyPond_OnFrame_Text_3
+	delay 16
 # 29 "data//maps/LilyPond/scripts.pory"
-	release
+	msgbox LilyPond_OnFrame_Text_3
 # 30 "data//maps/LilyPond/scripts.pory"
-	delay 24
-# 31 "data//maps/LilyPond/scripts.pory"
-	msgbox LilyPond_OnFrame_Text_4
-# 32 "data//maps/LilyPond/scripts.pory"
 	release
-# 34 "data//maps/LilyPond/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 31 "data//maps/LilyPond/scripts.pory"
+	delay 24
+# 32 "data//maps/LilyPond/scripts.pory"
+	msgbox LilyPond_OnFrame_Text_4
+# 33 "data//maps/LilyPond/scripts.pory"
+	release
 # 35 "data//maps/LilyPond/scripts.pory"
-	removeobject 2
+	fadescreen FADE_TO_BLACK
 # 36 "data//maps/LilyPond/scripts.pory"
+	removeobject 2
+# 37 "data//maps/LilyPond/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 38 "data//maps/LilyPond/scripts.pory"
-	setflag FLAG_HIDE_LILY_POND_KOHLA
 # 39 "data//maps/LilyPond/scripts.pory"
+	setflag FLAG_HIDE_LILY_POND_KOHLA
+# 40 "data//maps/LilyPond/scripts.pory"
 	completequest QUEST_DREAMSTONE_MYSTERIES
-# 41 "data//maps/LilyPond/scripts.pory"
+# 42 "data//maps/LilyPond/scripts.pory"
 	releaseall
 	end
 
@@ -74,36 +76,36 @@ LilyPond_OnFrame_2:
 	end
 
 
-# 11 "data//maps/LilyPond/scripts.pory"
+# 12 "data//maps/LilyPond/scripts.pory"
 LilyPond_OnFrame_Movement_0:
-# 11 "data//maps/LilyPond/scripts.pory"
+# 12 "data//maps/LilyPond/scripts.pory"
 	face_right
 	step_end
 
-# 18 "data//maps/LilyPond/scripts.pory"
+# 19 "data//maps/LilyPond/scripts.pory"
 LilyPond_OnFrame_Movement_1:
-# 18 "data//maps/LilyPond/scripts.pory"
+# 19 "data//maps/LilyPond/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 25 "data//maps/LilyPond/scripts.pory"
+# 26 "data//maps/LilyPond/scripts.pory"
 LilyPond_OnFrame_Movement_2:
-# 25 "data//maps/LilyPond/scripts.pory"
+# 26 "data//maps/LilyPond/scripts.pory"
 	emote_question_mark
 	step_end
 
 LilyPond_OnFrame_Text_0:
-# 12 "data//maps/LilyPond/scripts.pory"
+# 13 "data//maps/LilyPond/scripts.pory"
 	.string "KOHLA: Well...that was certainly a first\n"
 	.string "for me.$"
 
 LilyPond_OnFrame_Text_1:
-# 15 "data//maps/LilyPond/scripts.pory"
+# 16 "data//maps/LilyPond/scripts.pory"
 	.string "KOHLA: So you were sent there by Moxie\n"
 	.string "before I came?$"
 
 LilyPond_OnFrame_Text_2:
-# 21 "data//maps/LilyPond/scripts.pory"
+# 22 "data//maps/LilyPond/scripts.pory"
 	.string "KOHLA: You had a chance to stop Melea!\n"
 	.string "Had I been a little faster, I would've\l"
 	.string "stopped them from getting that Ancient\l"
@@ -116,7 +118,7 @@ LilyPond_OnFrame_Text_2:
 	.string "KOHLA: Not mine. Yours!$"
 
 LilyPond_OnFrame_Text_3:
-# 28 "data//maps/LilyPond/scripts.pory"
+# 29 "data//maps/LilyPond/scripts.pory"
 	.string "KOHLA: What? You have something to\n"
 	.string "say?\p"
 	.string "...\p"
@@ -139,7 +141,7 @@ LilyPond_OnFrame_Text_3:
 	.string "detectives thought so highly of you.$"
 
 LilyPond_OnFrame_Text_4:
-# 31 "data//maps/LilyPond/scripts.pory"
+# 32 "data//maps/LilyPond/scripts.pory"
 	.string "KOHLA: I disliked you because I\n"
 	.string "thought you didn't deserve the\l"
 	.string "attention you got. But now? You're\l"

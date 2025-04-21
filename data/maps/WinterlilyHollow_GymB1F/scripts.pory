@@ -69,15 +69,18 @@ script WinterlilyHollow_Gym_Trainer_E{
 
 
 script WinterlilyHollow_LastTrainer_Trigger{
+    if (flag(FLAG_WINTERLILY_GYM_TRICK_TRAINER)) {end}
     lockall
+    setflag(FLAG_WINTERLILY_GYM_TRICK_TRAINER)
     applymovement(6, moves(emote_exclamation_mark jump_in_place_left))
     delay(30)
-    msgbox(format("Oh, a trainer? Don't worry, I won't fight you. I'm just fixing up the wiring here. Go on, flip the switch."))
+    msgbox(format("Oh, a trainer? Don't worry, I won't fight you. I'm just fixing up the wiring here. Go on, flip the switch."), MSGBOX_NPC)
+    end
 }
 
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_F{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format("Hah! Sike! I'm about to crush you!"), "You crushed me!")
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format("Hah! Gotcha! I'm about to crush you!"), "You crushed me!")
     msgbox(format("Leader VINIEL's right up ahead. He stationed me out here to make sure weaker trainers don't disturb his AMPHAROS."))
     releaseall
     end
