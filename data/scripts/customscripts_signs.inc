@@ -298,50 +298,62 @@ WhiteSign_PellucaCity_ToCableCar::
 	end
 
 
+WhiteSign_CableCar_ToMirroh::
+# 295 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_CableCar_ToMirroh_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_CableCar_ToPelluca::
+# 299 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_CableCar_ToPelluca_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_MirrohBaseCamp_Gym::
-# 296 "data//scripts/customscripts_signs.pory"
+# 305 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohBaseCamp_Main::
-# 301 "data//scripts/customscripts_signs.pory"
+# 310 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohBaseCamp_Martha::
-# 306 "data//scripts/customscripts_signs.pory"
+# 315 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Martha_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_ToBaseCamp::
-# 313 "data//scripts/customscripts_signs.pory"
+# 322 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_ToBaseCamp_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_ToMtMirroh::
-# 317 "data//scripts/customscripts_signs.pory"
+# 326 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_ToMtMirroh_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_Dojo::
-# 321 "data//scripts/customscripts_signs.pory"
+# 330 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_Dojo_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohPeak_ToMirrohInt::
-# 329 "data//scripts/customscripts_signs.pory"
+# 338 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohPeak_ToMirrohInt_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohPeak_ToWinterlilyHollow::
-# 333 "data//scripts/customscripts_signs.pory"
+# 342 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0, MSGBOX_SIGN
 	end
 
@@ -615,44 +627,53 @@ WhiteSign_PellucaCity_Fishery_Text_0:
 
 WhiteSign_PellucaCity_ToCableCar_Text_0:
 # 289 "data//scripts/customscripts_signs.pory"
-	.string "{LEFT_ARROW}Cable Car to Mirroh Base Camp$"
+	.string "{LEFT_ARROW} Mirroh Base Camp\n"
+	.string "Please wear warm clothing!$"
+
+WhiteSign_CableCar_ToMirroh_Text_0:
+# 295 "data//scripts/customscripts_signs.pory"
+	.string "{Cable Car to Mirroh Base Camp$"
+
+WhiteSign_CableCar_ToPelluca_Text_0:
+# 299 "data//scripts/customscripts_signs.pory"
+	.string "{Cable Car to Pelluca City$"
 
 WhiteSign_MirrohBaseCamp_Gym_Text_0:
-# 296 "data//scripts/customscripts_signs.pory"
+# 305 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Base Camp Gym\n"
 	.string "NOW DECOMISSIONED.$"
 
 WhiteSign_MirrohBaseCamp_Main_Text_0:
-# 301 "data//scripts/customscripts_signs.pory"
+# 310 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Base Camp\n"
 	.string "NOW DECOMISSIONED.$"
 
 WhiteSign_MirrohBaseCamp_Martha_Text_0:
-# 306 "data//scripts/customscripts_signs.pory"
+# 315 "data//scripts/customscripts_signs.pory"
 	.string "Graveyard Management\n"
 	.string "Caretaker: Martha$"
 
 WhiteSign_Route8_ToBaseCamp_Text_0:
-# 313 "data//scripts/customscripts_signs.pory"
+# 322 "data//scripts/customscripts_signs.pory"
 	.string "Route 8\p"
-	.string "{DOWN_ARROW}Mirroh Base Camp.\n"
-	.string "{UP_ARROW}Mt. Mirroh.$"
+	.string "{DOWN_ARROW} Mirroh Base Camp.\n"
+	.string "{UP_ARROW} Mt. Mirroh.$"
 
 WhiteSign_Route8_ToMtMirroh_Text_0:
-# 317 "data//scripts/customscripts_signs.pory"
+# 326 "data//scripts/customscripts_signs.pory"
 	.string "Mt Mirroh Caverns\p"
-	.string "{UP_ARROW}Winterlily Hollow.\n"
-	.string "{DOWN_ARROW}Mirroh Base Camp.$"
+	.string "{UP_ARROW} Winterlily Hollow.\n"
+	.string "{DOWN_ARROW} Mirroh Base Camp.$"
 
 WhiteSign_Route8_Dojo_Text_0:
-# 321 "data//scripts/customscripts_signs.pory"
+# 330 "data//scripts/customscripts_signs.pory"
 	.string "Fighting Dojo$"
 
 WhiteSign_MirrohPeak_ToMirrohInt_Text_0:
-# 329 "data//scripts/customscripts_signs.pory"
+# 338 "data//scripts/customscripts_signs.pory"
 	.string "Mt Mirroh Caverns\p"
-	.string "{LEFT_ARROW}Winterlily Hollow.$"
+	.string "{LEFT_ARROW} Winterlily Hollow.$"
 
 WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0:
-# 333 "data//scripts/customscripts_signs.pory"
-	.string "{UP_ARROW}Winterlily Hollow.{LEFT_ARROW}Mt Mirroh Peak.$"
+# 342 "data//scripts/customscripts_signs.pory"
+	.string "{UP_ARROW} Winterlily Hollow.{LEFT_ARROW} Mt Mirroh Peak.$"
