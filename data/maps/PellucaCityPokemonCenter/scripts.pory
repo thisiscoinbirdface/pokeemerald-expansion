@@ -16,5 +16,23 @@ script PellucaCity_PokemonCenter_EventScript_Nurse{
 
 script PellucaCity_PokemonCenter_Nurse1{
 	msgbox(format("We've had enough of the Heal Pass system. We're unionising!"), MSGBOX_NPC)
+	end
+}
+script PellucaCity_PokemonCenter_Nurse2{
+	msgbox(format("Down with Heal Passes! Or at least station us in decent spots!"), MSGBOX_NPC)
+	end
+}
+script PellucaCity_PokemonCenter_Nurse3{
+	msgbox(format("We've all got it bad, but the worst is the nurse up in Winterlily Hollow! I'm going up there with these Chanseys to help her out."), MSGBOX_NPC)
+	end
+}
+script PellucaCity_PokemonCenter_Nurse4{
+	msgbox(format("The nurse in Winterlily Hollow requested for some extra help. Since the higher-ups don't care, we're going to look out for our sisters!"), MSGBOX_NPC)
+	end
+}
+script PellucaCity_PokemonCenter_Chansey{
+	playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+	msgbox(format("CHANSEY: seeyyy!!\pChansey wants to unionise too!"), MSGBOX_NPC)
+	end
 }
 

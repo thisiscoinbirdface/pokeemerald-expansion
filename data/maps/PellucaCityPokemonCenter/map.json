@@ -38,20 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PellucaCity_PokemonCenter_Nurse1",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "x": 2,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilversunCity_PokemonCenter_EventScript_Nurse",
-      "flag": "0"
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
@@ -63,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilversunCity_PokemonCenter_EventScript_Nurse",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Nurse4",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
@@ -76,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilversunCity_PokemonCenter_EventScript_Nurse",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Nurse2",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
@@ -89,21 +76,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilversunCity_PokemonCenter_EventScript_Nurse",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Nurse3",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
-      "x": 8,
-      "y": 5,
+      "x": 1,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Chansey",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
@@ -115,8 +102,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Chansey",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
@@ -128,12 +115,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Chansey",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHANSEY)",
-      "x": 8,
+      "x": 9,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -141,8 +128,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PellucaCity_PokemonCenter_Chansey",
+      "flag": "FLAG_MIRROH_NURSE_QUEST_START"
     }
   ],
   "warp_events": [
