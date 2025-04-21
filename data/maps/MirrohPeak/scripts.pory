@@ -7,6 +7,11 @@ raw`
 
 mapscripts MirrohPeak_MapScripts{}
 
+//One NPC - tells you to heal
+script MirrohPeak_NPC_1{
+    msgbox(format("You look exhausted! You'd better head to Winterlily Hollow - go right from here and enter the cave."), MSGBOX_NPC)
+    end
+}
 
 //Pre-peak Gym Leader encounter VINIEL
 //Viniel stuck between 4 grunts - taking all of them on

@@ -310,10 +310,22 @@ script WhiteSign_Route8_ToBaseCamp{
     end
 }
 script WhiteSign_Route8_ToMtMirroh{
-    msgbox(format("Route 8\p{UP_ARROW}Mt. Mirroh.\n{UP_ARROW}Winterlily Hollow."), MSGBOX_SIGN)
+    msgbox(format("Mt Mirroh Caverns\p{UP_ARROW}Winterlily Hollow.\n{DOWN_ARROW}Mirroh Base Camp."), MSGBOX_SIGN)
     end
 }
 script WhiteSign_Route8_Dojo{
     msgbox(format("Fighting Dojo"), MSGBOX_SIGN)
+    end
+}
+
+
+
+//mirroh peak
+script WhiteSign_MirrohPeak_ToMirrohInt{
+    msgbox(format("Mt Mirroh Caverns\p{LEFT_ARROW}Winterlily Hollow."), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_MirrohPeak_ToWinterlilyHollow{
+    msgbox(format("{UP_ARROW}Winterlily Hollow.{LEFT_ARROW}Mt Mirroh Peak."), MSGBOX_SIGN)
     end
 }
