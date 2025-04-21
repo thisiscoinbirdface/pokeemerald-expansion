@@ -13,13 +13,12 @@ mapscripts MirrohInterior_1F_MapScripts{
     ]
 }
 
-//MirrohInterior_1F_EventScript_NurseQuest_End
-
 
 //entry
 //picnicker 
 //nurse joy + 3 chanseys
-//one trainer at item, one NPC at blocker
+//one trainer at item, one NPC nearby
+//two hidden items - one is a bergmite
 //one npc lady below exit
 //npc lady + mon on bridge
 //trainer
@@ -293,3 +292,51 @@ script MirrohInterior_1F_Pineco{
     msgbox(format("Pineco looks cold!"), MSGBOX_NPC)
     end
 }
+
+
+
+
+
+
+
+
+//Bergmite encounter
+script MirrohInterior_Bergmite_A{
+    if (flag(FLAG_MIRROH_BERGMITE_A)){
+        msgbox(format("There's nothing here."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    setflag(FLAG_MIRROH_BERGMITE_A)
+    setwildbattle(SPECIES_BERGMITE, 28)
+    dowildbattle
+    end
+}
+
+script MirrohInterior_Bergmite_B{
+    if (flag(FLAG_MIRROH_BERGMITE_B)){
+        msgbox(format("There's nothing here."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    setflag(FLAG_MIRROH_BERGMITE_B)
+    setwildbattle(SPECIES_BERGMITE, 28)
+    dowildbattle
+    end
+}
+
+script MirrohInterior_Bergmite_C{
+    if (flag(FLAG_MIRROH_BERGMITE_C)){
+        msgbox(format("There's nothing here."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    setflag(FLAG_MIRROH_BERGMITE_C)
+    setwildbattle(SPECIES_BERGMITE, 28)
+    dowildbattle
+    end
+}
+

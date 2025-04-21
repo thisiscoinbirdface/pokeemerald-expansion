@@ -13350,12 +13350,12 @@
           "map": "MAP_MIRROH_INTERIOR_1F",
           "base_label": "gMirrohInterior_1F0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 26,
                 "max_level": 30,
-                "species": "SPECIES_BERGMITE"
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 26,
@@ -13375,7 +13375,7 @@
               {
                 "min_level": 26,
                 "max_level": 30,
-                "species": "SPECIES_BERGMITE"
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 26,
@@ -13390,7 +13390,7 @@
               {
                 "min_level": 26,
                 "max_level": 30,
-                "species": "SPECIES_BERGMITE"
+                "species": "SPECIES_GLIMMET"
               },
               {
                 "min_level": 26,
@@ -13419,7 +13419,7 @@
           "map": "MAP_MIRROH_INTERIOR_2F",
           "base_label": "gMirrohInterior_2F0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 27,
@@ -13754,7 +13754,7 @@
           "map": "MAP_ANCIENT_MIRROH_CAVES",
           "base_label": "gAncientMirroh_Caves0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 5,
@@ -13823,7 +13823,7 @@
           "map": "MAP_ANCIENT_MIRROH_CAVES_B1F",
           "base_label": "gAncientMirroh_Caves_B1F0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 5,
