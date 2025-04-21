@@ -79,24 +79,24 @@ script MtMirrohExterior_Trainer_B{
     end
 }
 script MtMirrohExterior_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHEXT_C, format("My Palpitoad and I are training to beat the Winterlily Hollow Gym. A battle will be better training than a jog though!"), "It was good training!")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_MIRROHEXT_C, format("I'd rather be skiing on these slopes but I don't mind a battle!"), "Yup - I prefer skiing!")
+    msgbox(format("You won't get slopes like these in all of Cormoria!"))
     releaseall
     end
 }
 
-script MtMirrohExterior_Trainer_D{
-    trainerbattle_single(TRAINER_MIRROHEXT_D, format("Are you another of those weird Team Sombrero grunts? Stop harrassing innocent people!"), "I guess you're not one of them!")
-    msgbox(format("I found some Team Sombrero - or was it Somber? - grunts harrassing an old man. You can't be doing stuff like that! So I put an end to it. I wonder what they're upto..."))
-    releaseall
-    end
-}
-script MtMirrohExterior_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHEXT_E, format("I'm from the Fighting Dojo! Guess you know what that means, right?"), "You knew what that meant!")
-    msgbox(format("The Fighting Dojo is the pinnacle for us FIGHTING type users! It's where you become the best of the best"))
-    releaseall
-    end
-}
+// script MtMirrohExterior_Trainer_D{
+//     trainerbattle_single(TRAINER_MIRROHEXT_D, format("Are you another of those weird Team Sombrero grunts? Stop harrassing innocent people!"), "I guess you're not one of them!")
+//     msgbox(format("I found some Team Sombrero - or was it Somber? - grunts harrassing an old man. You can't be doing stuff like that! So I put an end to it. I wonder what they're upto..."))
+//     releaseall
+//     end
+// }
+// script MtMirrohExterior_Trainer_E{
+//     trainerbattle_single(TRAINER_MIRROHEXT_E, format("I'm from the Fighting Dojo! Guess you know what that means, right?"), "You knew what that meant!")
+//     msgbox(format("The Fighting Dojo is the pinnacle for us FIGHTING type users! It's where you become the best of the best"))
+//     releaseall
+//     end
+// }
 
 
 
@@ -116,21 +116,21 @@ script MtMirrohExterior_Trainer_E{
 script MtMirrohExterior_NPC_A{
     lockall
     faceplayer
-    msgbox(format("Be careful child! There are some nasty types around. They're wearing dark suits and harrassing everyone they see. They even threatened me - a senior citizen!"))
+    msgbox(format("Be careful! There are some nasty types around. They're wearing dark suits and harrassing everyone they see. They even threatened me - a senior citizen!"))
     releaseall
     end
 }
 script MtMirrohExterior_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach Winterlily Hollow, you have to cross the caves inside the mountain."))
+    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach Winterlily Hollow, you have to cross the caverns inside the mountain."))
     releaseall
     end
 }
 script MtMirrohExterior_NPC_C{
     lockall
     faceplayer
-    msgbox(format("the VIVILLON care for the flowers here, which is why they grow even in such cold weather!"))
+    msgbox(format("The Vivillon here take good care of the flowers, which is why they grow even in such cold weather!"))
     releaseall
     end
 }
@@ -138,20 +138,20 @@ script MtMirrohExterior_NPC_C{
 //left battle girl
 script MtMirrohExterior_NPC_D{
     lockall
-    msgbox(format("Hang in there CONKELDURR!"))
+    msgbox(format("Hang in there Conkeldurr!"))
     release
     applymovement(12, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
     applymovement(12, moves(face_right))
+    waitmovement(0)
     releaseall
     end
 }
 script MtMirrohExterior_Conkeldurr{
     lockall
-    faceplayer
     playmoncry(SPECIES_CONKELDURR, CRY_MODE_NORMAL)
-    msgbox(format("CONKELDURR: durr!!!!\pThe TOXICROAK has poisoned it, but it's still going strong!"))
+    msgbox(format("CONKELDURR: durr!!!!\pThe Toxicroak has poisoned it, but it's still going strong!"))
     releaseall
     end
 }
@@ -160,20 +160,20 @@ script MtMirrohExterior_Conkeldurr{
 script MtMirrohExterior_NPC_E{
     lockall
     faceplayer
-    msgbox(format("Finish this, TOXICROAK!"))
+    msgbox(format("Finish this, Toxicroak!"))
     release
     applymovement(13, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
     applymovement(13, moves(face_right))
+    waitmovement(0)
     releaseall
     end
 }
 script MtMirrohExterior_Toxicroak{
     lockall
-    faceplayer
     playmoncry(SPECIES_TOXICROAK, CRY_MODE_NORMAL)
-    msgbox(format("TOXICROAK: croooaaakk!!!!\pIt's hammering the CONKELDURR with Posion Jabs!"))
+    msgbox(format("TOXICROAK: croooaaakk!!!!\pIt's hammering the Conkeldurr with Posion Jabs!"))
     releaseall
     end
 }

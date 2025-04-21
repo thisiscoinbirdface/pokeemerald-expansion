@@ -112,28 +112,8 @@ MtMirrohExterior_Trainer_C::
 # 82 "data//maps/MtMirrohExterior/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHEXT_C, MtMirrohExterior_Trainer_C_Text_0, MtMirrohExterior_Trainer_C_Text_1
 # 83 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_B_Text_2
+	msgbox MtMirrohExterior_Trainer_C_Text_2
 # 84 "data//maps/MtMirrohExterior/scripts.pory"
-	releaseall
-	end
-
-
-MtMirrohExterior_Trainer_D::
-# 89 "data//maps/MtMirrohExterior/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHEXT_D, MtMirrohExterior_Trainer_D_Text_0, MtMirrohExterior_Trainer_D_Text_1
-# 90 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_D_Text_2
-# 91 "data//maps/MtMirrohExterior/scripts.pory"
-	releaseall
-	end
-
-
-MtMirrohExterior_Trainer_E::
-# 95 "data//maps/MtMirrohExterior/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHEXT_E, MtMirrohExterior_Trainer_E_Text_0, MtMirrohExterior_Trainer_E_Text_1
-# 96 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_E_Text_2
-# 97 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
@@ -190,15 +170,15 @@ MtMirrohExterior_NPC_D::
 # 146 "data//maps/MtMirrohExterior/scripts.pory"
 	applymovement 12, MtMirrohExterior_BreechTrigger_Movement_3
 # 147 "data//maps/MtMirrohExterior/scripts.pory"
+	waitmovement 0
+# 148 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Conkeldurr::
-# 151 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
 # 152 "data//maps/MtMirrohExterior/scripts.pory"
-	faceplayer
+	lockall
 # 153 "data//maps/MtMirrohExterior/scripts.pory"
 	playmoncry SPECIES_CONKELDURR, CRY_MODE_NORMAL
 # 154 "data//maps/MtMirrohExterior/scripts.pory"
@@ -226,15 +206,15 @@ MtMirrohExterior_NPC_E::
 # 168 "data//maps/MtMirrohExterior/scripts.pory"
 	applymovement 13, MtMirrohExterior_BreechTrigger_Movement_3
 # 169 "data//maps/MtMirrohExterior/scripts.pory"
+	waitmovement 0
+# 170 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Toxicroak::
-# 173 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
 # 174 "data//maps/MtMirrohExterior/scripts.pory"
-	faceplayer
+	lockall
 # 175 "data//maps/MtMirrohExterior/scripts.pory"
 	playmoncry SPECIES_TOXICROAK, CRY_MODE_NORMAL
 # 176 "data//maps/MtMirrohExterior/scripts.pory"
@@ -376,71 +356,41 @@ MtMirrohExterior_Trainer_B_Text_2:
 
 MtMirrohExterior_Trainer_C_Text_0:
 # 82 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "My Palpitoad and I are training to beat\n"
-	.string "the Winterlily Hollow Gym. A battle will\l"
-	.string "be better training than a jog though!$"
+	.string "I'd rather be skiing on these slopes but\n"
+	.string "I don't mind a battle!$"
 
 MtMirrohExterior_Trainer_C_Text_1:
 # 82 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "It was good training!$"
+	.string "Yup - I prefer skiing!$"
 
-MtMirrohExterior_Trainer_D_Text_0:
-# 89 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Are you another of those weird Team\n"
-	.string "Sombrero grunts? Stop harrassing\l"
-	.string "innocent people!$"
-
-MtMirrohExterior_Trainer_D_Text_1:
-# 89 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I guess you're not one of them!$"
-
-MtMirrohExterior_Trainer_D_Text_2:
-# 90 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I found some Team Sombrero - or was it\n"
-	.string "Somber? - grunts harrassing an old man.\l"
-	.string "You can't be doing stuff like that! So I\l"
-	.string "put an end to it. I wonder what they're\l"
-	.string "upto...$"
-
-MtMirrohExterior_Trainer_E_Text_0:
-# 95 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I'm from the Fighting Dojo! Guess you\n"
-	.string "know what that means, right?$"
-
-MtMirrohExterior_Trainer_E_Text_1:
-# 95 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "You knew what that meant!$"
-
-MtMirrohExterior_Trainer_E_Text_2:
-# 96 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "The Fighting Dojo is the pinnacle for us\n"
-	.string "FIGHTING type users! It's where you\l"
-	.string "become the best of the best$"
+MtMirrohExterior_Trainer_C_Text_2:
+# 83 "data//maps/MtMirrohExterior/scripts.pory"
+	.string "You won't get slopes like these in all of\n"
+	.string "Cormoria!$"
 
 MtMirrohExterior_NPC_A_Text_0:
 # 119 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Be careful child! There are some nasty\n"
-	.string "types around. They're wearing dark\l"
-	.string "suits and harrassing everyone they\l"
-	.string "see. They even threatened me - a senior\l"
-	.string "citizen!$"
+	.string "Be careful! There are some nasty types\n"
+	.string "around. They're wearing dark suits and\l"
+	.string "harrassing everyone they see. They\l"
+	.string "even threatened me - a senior citizen!$"
 
 MtMirrohExterior_NPC_B_Text_0:
 # 126 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Higher up, the weather becomes too\n"
 	.string "harsh to climb, so to reach Winterlily\l"
-	.string "Hollow, you have to cross the caves\l"
+	.string "Hollow, you have to cross the caverns\l"
 	.string "inside the mountain.$"
 
 MtMirrohExterior_NPC_C_Text_0:
 # 133 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "the VIVILLON care for the flowers here,\n"
-	.string "which is why they grow even in such cold\l"
-	.string "weather!$"
+	.string "The Vivillon here take good care of the\n"
+	.string "flowers, which is why they grow even in\l"
+	.string "such cold weather!$"
 
 MtMirrohExterior_NPC_D_Text_0:
 # 141 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Hang in there CONKELDURR!$"
+	.string "Hang in there Conkeldurr!$"
 
 MtMirrohExterior_NPC_D_Text_1:
 # 144 "data//maps/MtMirrohExterior/scripts.pory"
@@ -449,17 +399,17 @@ MtMirrohExterior_NPC_D_Text_1:
 MtMirrohExterior_Conkeldurr_Text_0:
 # 154 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "CONKELDURR: durr!!!!\p"
-	.string "The TOXICROAK has poisoned it, but it's\n"
+	.string "The Toxicroak has poisoned it, but it's\n"
 	.string "still going strong!$"
 
 MtMirrohExterior_NPC_E_Text_0:
 # 163 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Finish this, TOXICROAK!$"
+	.string "Finish this, Toxicroak!$"
 
 MtMirrohExterior_Toxicroak_Text_0:
 # 176 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "TOXICROAK: croooaaakk!!!!\p"
-	.string "It's hammering the CONKELDURR with\n"
+	.string "It's hammering the Conkeldurr with\n"
 	.string "Posion Jabs!$"
 
 MtMirrohExterior_NPC_F_Text_0:

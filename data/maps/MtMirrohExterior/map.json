@@ -61,8 +61,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
-      "x": 42,
-      "y": 35,
+      "x": 45,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -307,7 +307,7 @@
       "flag": "NULL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_SKIIER_F",
       "x": 19,
       "y": 36,
       "elevation": 0,
@@ -316,7 +316,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MtMirrohExterior_Trainer_D",
+      "script": "MtMirrohExterior_Trainer_C",
       "flag": "0"
     },
     {

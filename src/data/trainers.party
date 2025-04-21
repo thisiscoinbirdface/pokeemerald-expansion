@@ -712,7 +712,7 @@ IVs: 10 HP / 0 Atk / 4 Def / 0 SpA / 4 SpD / 0 Spe
 - Water Pulse
 
 === TRAINER_GALECREST_ROBBER ===
-Name: XANDER
+Name: Xander
 Class: Burglar
 Pic: Burglar
 Gender: Female
@@ -1909,7 +1909,7 @@ Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Banette
-Level: 31
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_B ===
@@ -1936,23 +1936,18 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_MIRROHEXT_C ===
 Name: GEOFF
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Class: Skiier
+Pic: Skiier F
+Gender: Female
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Rufflet
+Snover
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Palpitoad
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Muk-Alola
+Sandshrew-Alola
 Level: 30
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -2055,11 +2050,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Cetoddle
-Level: 32
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Graveler-Alola
-Level: 32
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_B ===
@@ -2072,11 +2067,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 32
+Level: 29
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Linoone-Galar
-Level: 32
+Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 
@@ -2098,20 +2093,24 @@ Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_D ===
-Name: JOCELYN
-Class: Battle Girl
-Pic: Battle Girl
-Gender: Female
+Name: Friston
+Class: Burglar
+Pic: Burglar
+Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Gurdurr
-Level: 35
+Nickit
+Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Lilligant-Hisui
-Level: 35
+Thievul
+Level: 29
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Murkrow
+Level: 31
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
@@ -2123,12 +2122,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Check Bad Move
 
-Corvisquire
+Duskull
+Level: 31
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Duskull
+Level: 31
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Mime Jr.
 Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Duskull
-Level: 32
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_F ===
@@ -2153,11 +2160,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Froslass 
+Shuppet 
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mr. Mime-Galar  
+Dreepy
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2174,7 +2181,7 @@ Piloswine
 Level: 30
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Ivysaur
+Carkoal
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
