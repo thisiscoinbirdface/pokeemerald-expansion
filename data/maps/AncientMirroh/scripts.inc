@@ -236,15 +236,15 @@ AncientMirroh_Tenebris_Trigger_Movement_1:
 # 27 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_Tenebris_Trigger_Movement_2:
 # 27 "data//maps/AncientMirroh/scripts.pory"
-	walk_up
-# 27 "data//maps/AncientMirroh/scripts.pory"
-	walk_up
-# 27 "data//maps/AncientMirroh/scripts.pory"
-	walk_up
-# 27 "data//maps/AncientMirroh/scripts.pory"
 	walk_right
 # 27 "data//maps/AncientMirroh/scripts.pory"
 	walk_right
+# 27 "data//maps/AncientMirroh/scripts.pory"
+	walk_up
+# 27 "data//maps/AncientMirroh/scripts.pory"
+	walk_up
+# 27 "data//maps/AncientMirroh/scripts.pory"
+	walk_up
 	step_end
 
 # 42 "data//maps/AncientMirroh/scripts.pory"

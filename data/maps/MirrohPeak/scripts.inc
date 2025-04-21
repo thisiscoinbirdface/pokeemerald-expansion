@@ -52,7 +52,7 @@ MirrohPeak_EventScript_Viniel_Trigger1::
 # 50 "data//maps/MirrohPeak/scripts.pory"
 	special SpawnCameraObject
 # 51 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
 # 52 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 53 "data//maps/MirrohPeak/scripts.pory"
@@ -233,13 +233,13 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 155 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 5, MirrohPeak_EventScript_Somber_Trigger_Movement_0
 # 156 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
 # 157 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 158 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 6, MirrohPeak_EventScript_Somber_Trigger_Movement_0
 # 159 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
 # 160 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 161 "data//maps/MirrohPeak/scripts.pory"
@@ -257,7 +257,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 168 "data//maps/MirrohPeak/scripts.pory"
 	special SpawnCameraObject
 # 169 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
 # 170 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 171 "data//maps/MirrohPeak/scripts.pory"
@@ -364,30 +364,32 @@ MirrohPeak_EventScript_Somber_Trigger::
 	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_6
 # 234 "data//maps/MirrohPeak/scripts.pory"
 	release
+# 237 "data//maps/MirrohPeak/scripts.pory"
+	trainerbattle_no_intro TRAINER_MIRROHPEAK_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Text_7
 # 240 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_9
 # 241 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 242 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_7
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_8
 # 243 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
 # 244 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 245 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_8
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_9
 # 246 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 247 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_3
 # 248 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_9
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_10
 # 249 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
 # 250 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 251 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_10
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_11
 # 252 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 253 "data//maps/MirrohPeak/scripts.pory"
@@ -401,7 +403,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 257 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 3, MirrohPeak_EventScript_Viniel_Movement_7
 # 258 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_11
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_12
 # 259 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 260 "data//maps/MirrohPeak/scripts.pory"
@@ -421,7 +423,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 269 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 270 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_12
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_13
 # 271 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 272 "data//maps/MirrohPeak/scripts.pory"
@@ -451,7 +453,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 290 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_7
 # 291 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_13
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_14
 # 292 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 294 "data//maps/MirrohPeak/scripts.pory"
@@ -571,16 +573,6 @@ MirrohPeak_EventScript_Viniel_Trigger0_Movement_0:
 # 37 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
 # 37 "data//maps/MirrohPeak/scripts.pory"
-	walk_up
-# 37 "data//maps/MirrohPeak/scripts.pory"
-	walk_right
-	step_end
-
-# 51 "data//maps/MirrohPeak/scripts.pory"
-MirrohPeak_EventScript_Viniel_Trigger1_Movement_0:
-# 51 "data//maps/MirrohPeak/scripts.pory"
-	walk_up
-# 51 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
 	step_end
 
@@ -946,17 +938,21 @@ MirrohPeak_EventScript_Somber_Trigger_Text_6:
 	.string "after us again!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_7:
+# 237 "data//maps/MirrohPeak/scripts.pory"
+	.string "Insufferable!$"
+
+MirrohPeak_EventScript_Somber_Trigger_Text_8:
 # 242 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: Argh! How could I have lost!$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_8:
+MirrohPeak_EventScript_Somber_Trigger_Text_9:
 # 245 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: One of you!\p"
 	.string "...\p"
 	.string "MOXIE: You there, wearing the HEAVY\n"
 	.string "DUTY BOOTS!$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_9:
+MirrohPeak_EventScript_Somber_Trigger_Text_10:
 # 248 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Y-yes boss?\p"
 	.string "MOXIE: Hurry up and go inside the\n"
@@ -964,12 +960,12 @@ MirrohPeak_EventScript_Somber_Trigger_Text_9:
 	.string "She needs to be prepared.\p"
 	.string "GRUNT: B-but boss, it's -$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_10:
+MirrohPeak_EventScript_Somber_Trigger_Text_11:
 # 251 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: No buts! Get moving, fast!\p"
 	.string "GRUNT: O-ok boss!$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_11:
+MirrohPeak_EventScript_Somber_Trigger_Text_12:
 # 258 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: But boss...what if I don't come\n"
 	.string "back?\p"
@@ -977,7 +973,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_11:
 	.string "family - now hurry up or I'll be forced\l"
 	.string "to send roses right now!$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_12:
+MirrohPeak_EventScript_Somber_Trigger_Text_13:
 # 270 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: I know you're going to chase\n"
 	.string "MELEA and try to stop her from getting\l"
@@ -988,7 +984,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_12:
 	.string "exit, you'll be stuck there forever!\p"
 	.string "Hahaha!$"
 
-MirrohPeak_EventScript_Somber_Trigger_Text_13:
+MirrohPeak_EventScript_Somber_Trigger_Text_14:
 # 291 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: Now you lot! Let's go get our\n"
 	.string "construction equipment so we can carry\l"
