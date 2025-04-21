@@ -24,7 +24,7 @@ script AncientMirroh_Tenebris_Trigger{
     setflag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE)
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3 walk_right * 2))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves( walk_right * 2 walk_up * 3))
     waitmovement(0)
     special(RemoveCameraObject)
 

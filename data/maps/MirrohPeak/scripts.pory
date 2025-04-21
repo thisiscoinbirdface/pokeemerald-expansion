@@ -34,7 +34,7 @@ script MirrohPeak_EventScript_Viniel_Trigger0{
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2 walk_right))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     waitmovement(0)
     special(RemoveCameraObject)
 
@@ -129,6 +129,10 @@ script MirrohPeak_EventScript_Viniel{
 
     setflag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2 walk_left))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     releaseall
     end
@@ -230,7 +234,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     release
 
     //Battle
-//    trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
+    trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
 
     //Post-battle
     applymovement(LOCALID_MOXIE, moves(jump_in_place_down emote_exclamation_mark))
@@ -324,7 +328,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
 
     //warp
     fadescreen(FADE_TO_BLACK)
-    warp(MAP_ANCIENT_MIRROH, 10, 10)
+    warp(MAP_ANCIENT_MIRROH, 12, 22)
     releaseall
     end
 }
