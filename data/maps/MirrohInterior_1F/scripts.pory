@@ -5,6 +5,8 @@ raw`
     .set LOCALID_CH2, 25
     .set LOCALID_CH3, 26        
     .set LOCALID_CHANSEY_LAST, 32
+    .set LOCALID_GRUNT1, 29
+    .set LOCALID_GRUNT2, 17        
 `
 
 mapscripts MirrohInterior_1F_MapScripts{
@@ -340,3 +342,87 @@ script MirrohInterior_Bergmite_C{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Somber grunts
+//FLAG_MIRROH_INT_SOMBER_GRUNTS
+script MirrohInterior_1F_SomberGrunts_Trigger{
+    if (flag(FLAG_MIRROH_INT_SOMBER_GRUNTS)) {end}
+
+    lockall
+    applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Did you move all the equipment? The boss is gonna be angry - we gotta get the Dreamalyser up and running quick!"))
+    release
+    applymovement(LOCALID_GRUNT2, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem! Haha!"))
+    release
+    delay(24)   
+
+    applymovement(LOCALID_GRUNT1, moves(jump_in_place_right emote_exclamation_mark))
+    applymovement(LOCALID_GRUNT2, moves(jump_in_place_right emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+
+    msgbox(format("GRUNT: Hey! What are you doing? Didn't your parents tell you it was rude to eavesdrop!"))
+    release
+
+    applymovement(LOCALID_GRUNT1, moves(walk_right))
+    applymovement(LOCALID_GRUNT2, moves(walk_right))    
+    waitmovement(0)
+    delay(24)
+
+    trainerbattle_no_intro(TRAINER_MIRROHINT_E, format("Darn, we lost! My Pokemon are useless!"))
+
+    applymovement(LOCALID_GRUNT1, moves(jump_in_place_right emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("GRUNT: Argh! Stupid Mime Jr! You're useless!"))
+    release    
+    delay(8)
+    applymovement(LOCALID_GRUNT2, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)    
+    msgbox(format("GRUNT: Hey - aren't you that lab assistant who beat boss Melea back in Silversun City?"))    
+    release
+    delay(24)
+
+    applymovement(LOCALID_GRUNT1, moves(face_down))
+    applymovement(LOCALID_GRUNT2, moves(face_up))    
+    waitmovement(0)
+    msgbox(format("GRUNT: Yeah its the same trainer! The boss will want to know. Let's go!"))           
+    release
+
+    //exit
+    applymovement(LOCALID_GRUNT1, moves(walk_left * 4 walk_down * 3))
+    applymovement(LOCALID_GRUNT2, moves(walk_left * 4 walk_down * 3))     
+    waitmovement(0)
+    removeobject(LOCALID_GRUNT2)   
+    applymovement(LOCALID_GRUNT1, moves(walk_down))  
+    waitmovement(0)  
+    removeobject(LOCALID_GRUNT1)  
+
+    setflag(FLAG_MIRROH_INT_SOMBER_GRUNTS)
+
+    releaseall
+    end
+}

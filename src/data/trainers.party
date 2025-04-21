@@ -2115,42 +2115,34 @@ Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
-Name: TIANA
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
-Double Battle: No
+Name: JAY & ROSE
+Class: Team Somber
+Pic: Somber Grunt Duo
+Gender: Male
+Music: Suspicious
+Double Battle: Yes
 AI: Check Bad Move
 
 Corvisquire
 Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Perrserker
+Duskull
 Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_F ===
 Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
 Duskull
 Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Sableye
-Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Grumpig
-Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MIRROHINT2_A ===
 Name: SYLVIA

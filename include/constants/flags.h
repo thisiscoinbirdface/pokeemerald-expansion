@@ -109,7 +109,7 @@
 #define FLAG_MIRROHBASECAMP_MASTERBALL_RUE  0x271 // Unused Flag
 #define FLAG_MIRROHBASECAMP_MASTERBALL_GET  0x272 // Unused Flag
 #define FLAG_WINTERLILY_HOUSE_ITEM  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_MIRROH_INT_SOMBER_GRUNTS  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
