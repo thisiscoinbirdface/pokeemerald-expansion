@@ -75,8 +75,9 @@ AncientMirroh_Aerodactyl_4:
 AncientMirroh_Aerodactyl_7:
 # 57 "data//maps/AncientMirroh_Caves/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq AncientMirroh_Aerodactyl_10
-	return
+	goto_if_eq AncientMirroh_Aerodactyl_11
+AncientMirroh_Aerodactyl_10:
+	end
 
 AncientMirroh_Aerodactyl_2:
 	end
@@ -91,10 +92,10 @@ AncientMirroh_Aerodactyl_8:
 	setflag FLAG_ANCIENT_MIRROH_AERODACTYL
 	goto AncientMirroh_Aerodactyl_7
 
-AncientMirroh_Aerodactyl_10:
+AncientMirroh_Aerodactyl_11:
 # 58 "data//maps/AncientMirroh_Caves/scripts.pory"
 	msgbox AncientMirroh_Aerodactyl_Text_1
-	return
+	goto AncientMirroh_Aerodactyl_10
 
 
 # 17 "data//maps/AncientMirroh_Caves/scripts.pory"

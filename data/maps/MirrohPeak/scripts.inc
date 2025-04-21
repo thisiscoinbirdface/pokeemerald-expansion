@@ -117,7 +117,7 @@ MirrohPeak_EventScript_Viniel::
 # 84 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 85 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
+	delay 40
 # 86 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_4
 # 87 "data//maps/MirrohPeak/scripts.pory"
@@ -654,8 +654,6 @@ MirrohPeak_EventScript_Viniel_Movement_11:
 	walk_down
 # 133 "data//maps/MirrohPeak/scripts.pory"
 	walk_down
-# 133 "data//maps/MirrohPeak/scripts.pory"
-	walk_left
 	step_end
 
 # 155 "data//maps/MirrohPeak/scripts.pory"
@@ -804,7 +802,7 @@ MirrohPeak_EventScript_Viniel_Text_0:
 
 MirrohPeak_EventScript_Viniel_Text_1:
 # 67 "data//maps/MirrohPeak/scripts.pory"
-	.string "GRUNT: It's public space, VINIEL! Didn't\n"
+	.string "GRUNT: It's public space, Viniel! Didn't\n"
 	.string "they teach you that at Gym Leader\l"
 	.string "School?$"
 
@@ -827,13 +825,13 @@ MirrohPeak_EventScript_Viniel_Text_4:
 MirrohPeak_EventScript_Viniel_Text_5:
 # 95 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: Who are you? Are you another\n"
-	.string "grunt? C'mon, AMPHAROS and I can take\l"
+	.string "grunt? C'mon, Ampharos and I can take\l"
 	.string "all six of you together!$"
 
 MirrohPeak_EventScript_Viniel_Text_6:
 # 99 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Wait...isn't that the trainer who\n"
-	.string "beat MELEA in Silversun City?$"
+	.string "beat Melea in Silversun City?$"
 
 MirrohPeak_EventScript_Viniel_Text_7:
 # 103 "data//maps/MirrohPeak/scripts.pory"
@@ -863,7 +861,7 @@ MirrohPeak_EventScript_Viniel_Text_9:
 
 MirrohPeak_EventScript_Viniel_Text_10:
 # 127 "data//maps/MirrohPeak/scripts.pory"
-	.string "VINIEL: AMPHAROS is raring to go! Now\n"
+	.string "VINIEL: Ampharos is raring to go! Now\n"
 	.string "c'mon you cowards - I'm going to shock\l"
 	.string "some sense into all four of you\l"
 	.string "together!$"

@@ -88,7 +88,7 @@ script Mart_Mints_TwoBadges{
     
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint")
+        "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
@@ -99,8 +99,8 @@ script Mart_Mints_ThreeBadges{
     
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
-        "Hasty Mint", "Adamant Mint")
+        "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint", "Naive Mint", 
+        "Hasty Mint", "Lax Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
@@ -111,9 +111,9 @@ script Mart_Mints_FourBadges{
     
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
-        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
-        "Naive Mint")
+        "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint", "Naive Mint", 
+        "Hasty Mint", "Lax Mint", "Mild Mint", "Rash Mint",
+        "Timid Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
@@ -124,9 +124,9 @@ script Mart_Mints_FiveBadges{
     
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
-        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
-        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint")
+        "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint", "Naive Mint", 
+        "Hasty Mint", "Lax Mint", "Mild Mint", "Rash Mint",
+        "Timid Mint", "Naughty Mint", "Quiet Mint", "Lonely Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
@@ -137,10 +137,10 @@ script Mart_Mints_SixBadges{
     
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
-        "Careful Mint", "Sassy Mint", "Naughty Mint", "Brave Mint", "Timid Mint", 
-        "Hasty Mint", "Adamant Mint", "Mild Mint", "Rash Mint",
-        "Naive Mint", "Lax Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
-        "Serious Mint", "Modest Mint")
+        "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint", "Naive Mint", 
+        "Hasty Mint", "Lax Mint", "Mild Mint", "Rash Mint",
+        "Timid Mint", "Naughty Mint", "Quiet Mint", "Lonely Mint", "Jolly Mint",
+        "Adamant Mint", "Modest Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
     hidemoneybox
     goto(Mart_MintPurchaseDecision)
@@ -161,28 +161,31 @@ script Mart_Mints_SixBadges{
 
 
 //var 0x8006 is the item
-
+        
 script Mart_MintPurchaseDecision{
     if (var(VAR_TEMP_3) == 0) {setvar(VAR_0x8006, ITEM_IMPISH_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 1) {setvar(VAR_0x8006, ITEM_CALM_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 2) {setvar(VAR_0x8006, ITEM_RELAXED_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 3) {setvar(VAR_0x8006, ITEM_BOLD_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 4) {setvar(VAR_0x8006, ITEM_GENTLE_MINT) goto(MintPurchase_Common)}
+
     if (var(VAR_TEMP_3) == 5) {setvar(VAR_0x8006, ITEM_CAREFUL_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 6) {setvar(VAR_0x8006, ITEM_SASSY_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 7) {setvar(VAR_0x8006, ITEM_NAUGHTY_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 7) {setvar(VAR_0x8006, ITEM_SERIOUS_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 8) {setvar(VAR_0x8006, ITEM_BRAVE_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 9) {setvar(VAR_0x8006, ITEM_TIMID_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 9) {setvar(VAR_0x8006, ITEM_NAIVE_MINT) goto(MintPurchase_Common)}
+
     if (var(VAR_TEMP_3) == 10) {setvar(VAR_0x8006, ITEM_HASTY_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 11) {setvar(VAR_0x8006, ITEM_ADAMANT_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 11) {setvar(VAR_0x8006, ITEM_LAX_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 12) {setvar(VAR_0x8006, ITEM_MILD_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 13) {setvar(VAR_0x8006, ITEM_RASH_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 14) {setvar(VAR_0x8006, ITEM_NAIVE_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 15) {setvar(VAR_0x8006, ITEM_LAX_MINT) goto(MintPurchase_Common)}
+
+    if (var(VAR_TEMP_3) == 14) {setvar(VAR_0x8006, ITEM_TIMID_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 15) {setvar(VAR_0x8006, ITEM_NAUGHTY_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 16) {setvar(VAR_0x8006, ITEM_QUIET_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 17) {setvar(VAR_0x8006, ITEM_LONELY_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 18) {setvar(VAR_0x8006, ITEM_JOLLY_MINT) goto(MintPurchase_Common)}
-    if (var(VAR_TEMP_3) == 19) {setvar(VAR_0x8006, ITEM_SERIOUS_MINT) goto(MintPurchase_Common)}
+    if (var(VAR_TEMP_3) == 19) {setvar(VAR_0x8006, ITEM_ADAMANT_MINT) goto(MintPurchase_Common)}
     if (var(VAR_TEMP_3) == 20) {setvar(VAR_0x8006, ITEM_MODEST_MINT) goto(MintPurchase_Common)}
 
     release
