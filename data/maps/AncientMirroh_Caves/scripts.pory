@@ -57,7 +57,8 @@ script AncientMirroh_Aerodactyl{
     if (var(VAR_RESULT) == B_OUTCOME_RAN){
         msgbox(format("The Pokémon settles back into its sleep..."))
     }
-
+    
+    end
 }
 
 
