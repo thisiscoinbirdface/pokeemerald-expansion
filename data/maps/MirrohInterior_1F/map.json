@@ -101,7 +101,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MIRROH_INT_A"
     },
@@ -114,7 +114,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM14",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MIRROH_INT_C"
     },
@@ -402,7 +402,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_LUSTER_STONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_MIRROH_INT_E"
+      "flag": "FLAG_ITEM_MIRROH_INT_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
@@ -429,6 +429,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MirrohInterior_1F_EventScript_Chansey",
       "flag": "FLAG_HIDE_MIRROH_LAST_CHANSEY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 5,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_SHARD",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROH_INT_D"
     }
   ],
   "warp_events": [
@@ -530,6 +543,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MirrohInterior_Bergmite_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHINT_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 26,
+      "y": 45,
+      "elevation": 0,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHINT_B"
     }
   ]
 }

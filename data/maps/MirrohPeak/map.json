@@ -349,6 +349,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WhiteSign_MirrohPeak_ToMirrohInt"
+    },
+    {
+      "type": "hidden_item",
+      "x": 26,
+      "y": 47,
+      "elevation": 0,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHPEAK_B"
+    },
+    {
+      "type": "hidden_item",
+      "x": 21,
+      "y": 73,
+      "elevation": 0,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHPEAK_A"
     }
   ]
 }

@@ -328,6 +328,18 @@ WhiteSign_Route8_Dojo::
 	end
 
 
+WhiteSign_MirrohPeak_ToMirrohInt::
+# 325 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_MirrohPeak_ToMirrohInt_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_MirrohPeak_ToWinterlilyHollow::
+# 329 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_CarabrueTown_Main_Text_0:
 # 6 "data//scripts/customscripts_signs.pory"
 	.string "Carabrue Town\n"
@@ -618,10 +630,19 @@ WhiteSign_Route8_ToBaseCamp_Text_0:
 
 WhiteSign_Route8_ToMtMirroh_Text_0:
 # 313 "data//scripts/customscripts_signs.pory"
-	.string "Route 8\p"
-	.string "{UP_ARROW}Mt. Mirroh.\n"
-	.string "{UP_ARROW}Winterlily Hollow.$"
+	.string "Mt Mirroh Caverns\p"
+	.string "{UP_ARROW}Winterlily Hollow.\n"
+	.string "{DOWN_ARROW}Mirroh Base Camp.$"
 
 WhiteSign_Route8_Dojo_Text_0:
 # 317 "data//scripts/customscripts_signs.pory"
 	.string "Fighting Dojo$"
+
+WhiteSign_MirrohPeak_ToMirrohInt_Text_0:
+# 325 "data//scripts/customscripts_signs.pory"
+	.string "Mt Mirroh Caverns\p"
+	.string "{LEFT_ARROW}Winterlily Hollow.$"
+
+WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0:
+# 329 "data//scripts/customscripts_signs.pory"
+	.string "{UP_ARROW}Winterlily Hollow.{LEFT_ARROW}Mt Mirroh Peak.$"

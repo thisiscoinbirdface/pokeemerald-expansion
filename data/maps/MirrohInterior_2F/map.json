@@ -153,7 +153,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ULTRA_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM33",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MIRROH_INT_D"
     },
@@ -398,6 +398,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MirrohInterior_Bergmite_B"
+    },
+    {
+      "type": "hidden_item",
+      "x": 36,
+      "y": 3,
+      "elevation": 0,
+      "item": "ITEM_CLEAR_AMULET",
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHINT_C"
     }
   ]
 }

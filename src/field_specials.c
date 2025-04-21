@@ -1395,7 +1395,7 @@ bool8 FoundAbandonedShipRoom4Key(void)
 bool8 FoundAbandonedShipRoom6Key(void)
 {
     u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_6_KEY;
+    u16 flag = FLAG_HIDDEN_ITEM_MIRROHINT_A;
     *specVar = flag;
     if (!FlagGet(flag))
         return FALSE;

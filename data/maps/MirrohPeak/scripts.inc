@@ -13,22 +13,28 @@ MirrohPeak_MapScripts::
 	.byte 0
 
 
+MirrohPeak_NPC_1::
+# 12 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
 MirrohPeak_EventScript_Viniel_Trigger0::
-# 26 "data//maps/MirrohPeak/scripts.pory"
-	goto_if_set FLAG_MIRROHPEAK_VINIEL_CUTSCENE, MirrohPeak_EventScript_Viniel_Trigger0_2
-# 28 "data//maps/MirrohPeak/scripts.pory"
-	lockall
-# 29 "data//maps/MirrohPeak/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 31 "data//maps/MirrohPeak/scripts.pory"
-	special SpawnCameraObject
-# 32 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
+	goto_if_set FLAG_MIRROHPEAK_VINIEL_CUTSCENE, MirrohPeak_EventScript_Viniel_Trigger0_2
 # 33 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	lockall
 # 34 "data//maps/MirrohPeak/scripts.pory"
-	special RemoveCameraObject
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 36 "data//maps/MirrohPeak/scripts.pory"
+	special SpawnCameraObject
+# 37 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger0_Movement_0
+# 38 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 39 "data//maps/MirrohPeak/scripts.pory"
+	special RemoveCameraObject
+# 41 "data//maps/MirrohPeak/scripts.pory"
 	goto MirrohPeak_EventScript_Viniel
 	return
 
@@ -37,21 +43,21 @@ MirrohPeak_EventScript_Viniel_Trigger0_2:
 
 
 MirrohPeak_EventScript_Viniel_Trigger1::
-# 40 "data//maps/MirrohPeak/scripts.pory"
-	goto_if_set FLAG_MIRROHPEAK_VINIEL_CUTSCENE, MirrohPeak_EventScript_Viniel_Trigger1_2
-# 42 "data//maps/MirrohPeak/scripts.pory"
-	lockall
-# 43 "data//maps/MirrohPeak/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 45 "data//maps/MirrohPeak/scripts.pory"
-	special SpawnCameraObject
-# 46 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	goto_if_set FLAG_MIRROHPEAK_VINIEL_CUTSCENE, MirrohPeak_EventScript_Viniel_Trigger1_2
 # 47 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	lockall
 # 48 "data//maps/MirrohPeak/scripts.pory"
-	special RemoveCameraObject
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 50 "data//maps/MirrohPeak/scripts.pory"
+	special SpawnCameraObject
+# 51 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+# 52 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 53 "data//maps/MirrohPeak/scripts.pory"
+	special RemoveCameraObject
+# 55 "data//maps/MirrohPeak/scripts.pory"
 	goto MirrohPeak_EventScript_Viniel
 	return
 
@@ -60,451 +66,451 @@ MirrohPeak_EventScript_Viniel_Trigger1_2:
 
 
 MirrohPeak_EventScript_Viniel::
-# 55 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_0
-# 56 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 57 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_0
-# 58 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 59 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_1
 # 60 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_0
 # 61 "data//maps/MirrohPeak/scripts.pory"
-	delay 16
+	waitmovement 0
 # 62 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_1
+	msgbox MirrohPeak_EventScript_Viniel_Text_0
 # 63 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 64 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_2
+	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_1
 # 65 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 66 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_2
+	delay 16
 # 67 "data//maps/MirrohPeak/scripts.pory"
-	release
+	msgbox MirrohPeak_EventScript_Viniel_Text_1
 # 68 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
+	release
 # 69 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_3
-# 70 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_3
-# 71 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_3
-# 72 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_3
-# 73 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 74 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_3
-# 75 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 76 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_2
-# 77 "data//maps/MirrohPeak/scripts.pory"
+# 70 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
-# 78 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_4
-# 79 "data//maps/MirrohPeak/scripts.pory"
+# 71 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_2
+# 72 "data//maps/MirrohPeak/scripts.pory"
 	release
-# 80 "data//maps/MirrohPeak/scripts.pory"
+# 73 "data//maps/MirrohPeak/scripts.pory"
 	delay 30
-# 81 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_4
-# 82 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_4
-# 83 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_4
-# 84 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_4
-# 85 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_4
-# 86 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_4
-# 87 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 88 "data//maps/MirrohPeak/scripts.pory"
-	delay 24
-# 90 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_5
-# 91 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 92 "data//maps/MirrohPeak/scripts.pory"
+# 74 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_3
+# 75 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_3
+# 76 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_3
+# 77 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_3
+# 78 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 79 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_3
+# 80 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 81 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_2
+# 82 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 83 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_4
+# 84 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 85 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 86 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_4
+# 87 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_4
+# 88 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_4
+# 89 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_4
+# 90 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_4
+# 91 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_4
+# 92 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
 # 93 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 94 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_6
+	delay 24
 # 95 "data//maps/MirrohPeak/scripts.pory"
-	release
+	msgbox MirrohPeak_EventScript_Viniel_Text_5
 # 96 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_2
+	release
 # 97 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_3
 # 98 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_7
+	waitmovement 0
 # 99 "data//maps/MirrohPeak/scripts.pory"
-	release
+	msgbox MirrohPeak_EventScript_Viniel_Text_6
 # 100 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 19, MirrohPeak_EventScript_Viniel_Movement_5
+	release
 # 101 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_2
 # 102 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_8
+	waitmovement 0
 # 103 "data//maps/MirrohPeak/scripts.pory"
-	release
+	msgbox MirrohPeak_EventScript_Viniel_Text_7
 # 104 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 19, MirrohPeak_EventScript_Viniel_Movement_6
+	release
 # 105 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	applymovement 19, MirrohPeak_EventScript_Viniel_Movement_5
 # 106 "data//maps/MirrohPeak/scripts.pory"
-	removeobject 19
-# 108 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_3
-# 109 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_9
-# 110 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 111 "data//maps/MirrohPeak/scripts.pory"
-	delay 16
-# 112 "data//maps/MirrohPeak/scripts.pory"
-	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
-# 113 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_7
-# 114 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_8
-# 115 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_9
-# 116 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_9
-# 117 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_10
-# 118 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_0
-# 119 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
-# 120 "data//maps/MirrohPeak/scripts.pory"
-	delay 16
-# 122 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Viniel_Text_10
-# 123 "data//maps/MirrohPeak/scripts.pory"
+# 107 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_8
+# 108 "data//maps/MirrohPeak/scripts.pory"
 	release
+# 109 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 19, MirrohPeak_EventScript_Viniel_Movement_6
+# 110 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 111 "data//maps/MirrohPeak/scripts.pory"
+	removeobject 19
+# 113 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_3
+# 114 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_9
+# 115 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 116 "data//maps/MirrohPeak/scripts.pory"
+	delay 16
+# 117 "data//maps/MirrohPeak/scripts.pory"
+	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+# 118 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_7
+# 119 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 14, MirrohPeak_EventScript_Viniel_Movement_8
+# 120 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 15, MirrohPeak_EventScript_Viniel_Movement_9
+# 121 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_9
+# 122 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_10
+# 123 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_0
+# 124 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
 # 125 "data//maps/MirrohPeak/scripts.pory"
-	setflag FLAG_MIRROHPEAK_VINIEL_CUTSCENE
+	delay 16
+# 127 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Viniel_Text_10
 # 128 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 130 "data//maps/MirrohPeak/scripts.pory"
+	setflag FLAG_MIRROHPEAK_VINIEL_CUTSCENE
+# 133 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
 MirrohPeak_GruntsVSViniel_GenericDialogue::
-# 133 "data//maps/MirrohPeak/scripts.pory"
+# 138 "data//maps/MirrohPeak/scripts.pory"
 	lockall
-# 134 "data//maps/MirrohPeak/scripts.pory"
+# 139 "data//maps/MirrohPeak/scripts.pory"
 	msgbox MirrohPeak_GruntsVSViniel_GenericDialogue_Text_0
-# 135 "data//maps/MirrohPeak/scripts.pory"
+# 140 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
 MirrohPeak_EventScript_Somber_Trigger::
-# 140 "data//maps/MirrohPeak/scripts.pory"
+# 145 "data//maps/MirrohPeak/scripts.pory"
 	goto_if_set FLAG_MIRROHPEAK_MOXIE_DEFEATED, MirrohPeak_EventScript_Somber_Trigger_2
-# 142 "data//maps/MirrohPeak/scripts.pory"
-	lockall
-# 143 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 146 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 5, MirrohPeak_EventScript_Somber_Trigger_Movement_0
 # 147 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+	lockall
 # 148 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 149 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 6, MirrohPeak_EventScript_Somber_Trigger_Movement_0
-# 150 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
-# 151 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 152 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 2, MirrohPeak_EventScript_Somber_Trigger_Movement_1
-# 153 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_2
-# 154 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 155 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_1
-# 156 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_2
-# 157 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 159 "data//maps/MirrohPeak/scripts.pory"
-	special SpawnCameraObject
-# 160 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
-# 161 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 162 "data//maps/MirrohPeak/scripts.pory"
-	special RemoveCameraObject
-# 163 "data//maps/MirrohPeak/scripts.pory"
-	delay 60
-# 166 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Viniel_Movement_3
-# 167 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 168 "data//maps/MirrohPeak/scripts.pory"
-	delay 16
-# 169 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_0
-# 170 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 171 "data//maps/MirrohPeak/scripts.pory"
 	delay 30
-# 172 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_3
-# 173 "data//maps/MirrohPeak/scripts.pory"
+# 151 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 5, MirrohPeak_EventScript_Somber_Trigger_Movement_0
+# 152 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+# 153 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
+# 154 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 6, MirrohPeak_EventScript_Somber_Trigger_Movement_0
+# 155 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+# 156 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 157 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 2, MirrohPeak_EventScript_Somber_Trigger_Movement_1
+# 158 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_2
+# 159 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 160 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_1
+# 161 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_2
+# 162 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 164 "data//maps/MirrohPeak/scripts.pory"
+	special SpawnCameraObject
+# 165 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Viniel_Trigger1_Movement_0
+# 166 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 167 "data//maps/MirrohPeak/scripts.pory"
+	special RemoveCameraObject
+# 168 "data//maps/MirrohPeak/scripts.pory"
+	delay 60
+# 171 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Viniel_Movement_3
+# 172 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 173 "data//maps/MirrohPeak/scripts.pory"
+	delay 16
 # 174 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_1
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_0
 # 175 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 176 "data//maps/MirrohPeak/scripts.pory"
-	delay 60
-# 178 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 177 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_3
-# 179 "data//maps/MirrohPeak/scripts.pory"
+# 178 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
+# 179 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_1
 # 180 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_2
-# 181 "data//maps/MirrohPeak/scripts.pory"
 	release
-# 182 "data//maps/MirrohPeak/scripts.pory"
+# 181 "data//maps/MirrohPeak/scripts.pory"
 	delay 60
 # 183 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_3
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_3
 # 184 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 185 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_3
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_2
 # 186 "data//maps/MirrohPeak/scripts.pory"
 	release
+# 187 "data//maps/MirrohPeak/scripts.pory"
+	delay 60
+# 188 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_3
 # 189 "data//maps/MirrohPeak/scripts.pory"
-	setweather WEATHER_RAIN_THUNDERSTORM
+	waitmovement 0
 # 190 "data//maps/MirrohPeak/scripts.pory"
-	doweather
-# 192 "data//maps/MirrohPeak/scripts.pory"
-	delay 60
-# 193 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_4
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_3
+# 191 "data//maps/MirrohPeak/scripts.pory"
+	release
 # 194 "data//maps/MirrohPeak/scripts.pory"
-	release
+	setweather WEATHER_RAIN_THUNDERSTORM
 # 195 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_4
-# 196 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	doweather
 # 197 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 200 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8004, 2
-# 201 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8005, 2
-# 202 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8006, 8
-# 203 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8007, 5
-# 204 "data//maps/MirrohPeak/scripts.pory"
-	special ShakeCamera
-# 205 "data//maps/MirrohPeak/scripts.pory"
-	waitstate
-# 206 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 209 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_5
-# 210 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 211 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_5
-# 212 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 213 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_6
-# 214 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 215 "data//maps/MirrohPeak/scripts.pory"
-	delay 24
-# 218 "data//maps/MirrohPeak/scripts.pory"
-	special SpawnCameraObject
-# 219 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Somber_Trigger_Movement_7
-# 220 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 221 "data//maps/MirrohPeak/scripts.pory"
-	special RemoveCameraObject
-# 222 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_8
-# 223 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 224 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_6
-# 225 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 231 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_9
-# 232 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 233 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_7
-# 234 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
-# 235 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 236 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_8
-# 237 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 238 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_3
-# 239 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_9
-# 240 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
-# 241 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 242 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_10
-# 243 "data//maps/MirrohPeak/scripts.pory"
-	release
-# 244 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_10
-# 245 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 246 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_8
-# 247 "data//maps/MirrohPeak/scripts.pory"
 	delay 60
-# 248 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Viniel_Movement_7
-# 249 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_11
-# 250 "data//maps/MirrohPeak/scripts.pory"
+# 198 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_4
+# 199 "data//maps/MirrohPeak/scripts.pory"
 	release
-# 251 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_11
-# 252 "data//maps/MirrohPeak/scripts.pory"
+# 200 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_4
+# 201 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
+# 202 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 205 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8004, 2
+# 206 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8005, 2
+# 207 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8006, 8
+# 208 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8007, 5
+# 209 "data//maps/MirrohPeak/scripts.pory"
+	special ShakeCamera
+# 210 "data//maps/MirrohPeak/scripts.pory"
+	waitstate
+# 211 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 214 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_5
+# 215 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 216 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_5
+# 217 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 218 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MELEA, MirrohPeak_EventScript_Somber_Trigger_Movement_6
+# 219 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 220 "data//maps/MirrohPeak/scripts.pory"
+	delay 24
+# 223 "data//maps/MirrohPeak/scripts.pory"
+	special SpawnCameraObject
+# 224 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, MirrohPeak_EventScript_Somber_Trigger_Movement_7
+# 225 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 226 "data//maps/MirrohPeak/scripts.pory"
+	special RemoveCameraObject
+# 227 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_8
+# 228 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 229 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_6
+# 230 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 236 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_9
+# 237 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 238 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_7
+# 239 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
+# 240 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 241 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_8
+# 242 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 243 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_3
+# 244 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_9
+# 245 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_2
+# 246 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 247 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_10
+# 248 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 249 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_10
+# 250 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 251 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_8
+# 252 "data//maps/MirrohPeak/scripts.pory"
+	delay 60
 # 253 "data//maps/MirrohPeak/scripts.pory"
-	delay 48
+	applymovement 3, MirrohPeak_EventScript_Viniel_Movement_7
+# 254 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_11
 # 255 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_6
+	release
 # 256 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_11
+# 257 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 258 "data//maps/MirrohPeak/scripts.pory"
-	delay 24
-# 259 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_7
+	delay 48
 # 260 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
+	applymovement 3, MirrohPeak_EventScript_Somber_Trigger_Movement_6
 # 261 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_12
-# 262 "data//maps/MirrohPeak/scripts.pory"
-	release
+	waitmovement 0
 # 263 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_12
-# 264 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 267 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8004, 2
-# 268 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8005, 2
-# 269 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8006, 8
-# 270 "data//maps/MirrohPeak/scripts.pory"
-	setvar VAR_0x8007, 5
-# 271 "data//maps/MirrohPeak/scripts.pory"
-	special ShakeCamera
-# 272 "data//maps/MirrohPeak/scripts.pory"
-	waitstate
-# 273 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 275 "data//maps/MirrohPeak/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_6
-# 276 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 280 "data//maps/MirrohPeak/scripts.pory"
 	delay 24
-# 281 "data//maps/MirrohPeak/scripts.pory"
+# 264 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_7
-# 282 "data//maps/MirrohPeak/scripts.pory"
-	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_13
-# 283 "data//maps/MirrohPeak/scripts.pory"
+# 265 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 266 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_12
+# 267 "data//maps/MirrohPeak/scripts.pory"
 	release
-# 285 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 286 "data//maps/MirrohPeak/scripts.pory"
-	removeobject LOCALID_MOXIE
-# 287 "data//maps/MirrohPeak/scripts.pory"
-	removeobject 2
-# 288 "data//maps/MirrohPeak/scripts.pory"
-	removeobject 5
-# 289 "data//maps/MirrohPeak/scripts.pory"
-	removeobject 6
-# 290 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 292 "data//maps/MirrohPeak/scripts.pory"
-	delay 60
-# 293 "data//maps/MirrohPeak/scripts.pory"
-	setobjectxyperm 20, 19, 14
-# 294 "data//maps/MirrohPeak/scripts.pory"
-	addobject 20
-# 295 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 296 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 20, MirrohPeak_EventScript_Somber_Trigger_Movement_13
-# 297 "data//maps/MirrohPeak/scripts.pory"
+# 268 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Somber_Trigger_Movement_12
+# 269 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
-# 298 "data//maps/MirrohPeak/scripts.pory"
-	delay 16
-# 299 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 20, MirrohPeak_EventScript_Viniel_Movement_3
-# 300 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 301 "data//maps/MirrohPeak/scripts.pory"
-	delay 90
-# 303 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 20, MirrohPeak_EventScript_Viniel_Movement_2
-# 304 "data//maps/MirrohPeak/scripts.pory"
-	waitmovement 0
-# 305 "data//maps/MirrohPeak/scripts.pory"
-	delay 30
-# 306 "data//maps/MirrohPeak/scripts.pory"
+# 272 "data//maps/MirrohPeak/scripts.pory"
 	setvar VAR_0x8004, 2
-# 307 "data//maps/MirrohPeak/scripts.pory"
+# 273 "data//maps/MirrohPeak/scripts.pory"
 	setvar VAR_0x8005, 2
-# 308 "data//maps/MirrohPeak/scripts.pory"
+# 274 "data//maps/MirrohPeak/scripts.pory"
 	setvar VAR_0x8006, 8
-# 309 "data//maps/MirrohPeak/scripts.pory"
+# 275 "data//maps/MirrohPeak/scripts.pory"
 	setvar VAR_0x8007, 5
-# 310 "data//maps/MirrohPeak/scripts.pory"
+# 276 "data//maps/MirrohPeak/scripts.pory"
 	special ShakeCamera
-# 311 "data//maps/MirrohPeak/scripts.pory"
+# 277 "data//maps/MirrohPeak/scripts.pory"
 	waitstate
-# 312 "data//maps/MirrohPeak/scripts.pory"
+# 278 "data//maps/MirrohPeak/scripts.pory"
 	delay 30
-# 313 "data//maps/MirrohPeak/scripts.pory"
-	applymovement 20, MirrohPeak_EventScript_Somber_Trigger_Movement_6
-# 314 "data//maps/MirrohPeak/scripts.pory"
+# 280 "data//maps/MirrohPeak/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohPeak_EventScript_Somber_Trigger_Movement_6
+# 281 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
-# 317 "data//maps/MirrohPeak/scripts.pory"
-	setflag FLAG_MIRROHPEAK_MOXIE_DEFEATED
-# 318 "data//maps/MirrohPeak/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7
-# 321 "data//maps/MirrohPeak/scripts.pory"
+# 285 "data//maps/MirrohPeak/scripts.pory"
+	delay 24
+# 286 "data//maps/MirrohPeak/scripts.pory"
+	applymovement LOCALID_MOXIE, MirrohPeak_EventScript_Viniel_Movement_7
+# 287 "data//maps/MirrohPeak/scripts.pory"
+	msgbox MirrohPeak_EventScript_Somber_Trigger_Text_13
+# 288 "data//maps/MirrohPeak/scripts.pory"
+	release
+# 290 "data//maps/MirrohPeak/scripts.pory"
 	fadescreen FADE_TO_BLACK
+# 291 "data//maps/MirrohPeak/scripts.pory"
+	removeobject LOCALID_MOXIE
+# 292 "data//maps/MirrohPeak/scripts.pory"
+	removeobject 2
+# 293 "data//maps/MirrohPeak/scripts.pory"
+	removeobject 5
+# 294 "data//maps/MirrohPeak/scripts.pory"
+	removeobject 6
+# 295 "data//maps/MirrohPeak/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 297 "data//maps/MirrohPeak/scripts.pory"
+	delay 60
+# 298 "data//maps/MirrohPeak/scripts.pory"
+	setobjectxyperm 20, 19, 14
+# 299 "data//maps/MirrohPeak/scripts.pory"
+	addobject 20
+# 300 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 301 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 20, MirrohPeak_EventScript_Somber_Trigger_Movement_13
+# 302 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 303 "data//maps/MirrohPeak/scripts.pory"
+	delay 16
+# 304 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 20, MirrohPeak_EventScript_Viniel_Movement_3
+# 305 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 306 "data//maps/MirrohPeak/scripts.pory"
+	delay 90
+# 308 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 20, MirrohPeak_EventScript_Viniel_Movement_2
+# 309 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
+# 310 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 311 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8004, 2
+# 312 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8005, 2
+# 313 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8006, 8
+# 314 "data//maps/MirrohPeak/scripts.pory"
+	setvar VAR_0x8007, 5
+# 315 "data//maps/MirrohPeak/scripts.pory"
+	special ShakeCamera
+# 316 "data//maps/MirrohPeak/scripts.pory"
+	waitstate
+# 317 "data//maps/MirrohPeak/scripts.pory"
+	delay 30
+# 318 "data//maps/MirrohPeak/scripts.pory"
+	applymovement 20, MirrohPeak_EventScript_Somber_Trigger_Movement_6
+# 319 "data//maps/MirrohPeak/scripts.pory"
+	waitmovement 0
 # 322 "data//maps/MirrohPeak/scripts.pory"
-	warp MAP_ANCIENT_MIRROH, 10, 10
+	setflag FLAG_MIRROHPEAK_MOXIE_DEFEATED
 # 323 "data//maps/MirrohPeak/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7
+# 326 "data//maps/MirrohPeak/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 327 "data//maps/MirrohPeak/scripts.pory"
+	warp MAP_ANCIENT_MIRROH, 10, 10
+# 328 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
@@ -513,319 +519,325 @@ MirrohPeak_EventScript_Somber_Trigger_2:
 
 
 MirrohPeak_Grunt_A::
-# 359 "data//maps/MirrohPeak/scripts.pory"
+# 364 "data//maps/MirrohPeak/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHPEAK_A, MirrohPeak_Grunt_A_Text_0, MirrohPeak_Grunt_A_Text_1
-# 360 "data//maps/MirrohPeak/scripts.pory"
+# 365 "data//maps/MirrohPeak/scripts.pory"
 	msgbox MirrohPeak_Grunt_A_Text_2
-# 361 "data//maps/MirrohPeak/scripts.pory"
+# 366 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
 MirrohPeak_Grunt_B::
-# 366 "data//maps/MirrohPeak/scripts.pory"
+# 371 "data//maps/MirrohPeak/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHPEAK_B, MirrohPeak_Grunt_B_Text_0, MirrohPeak_Grunt_B_Text_1
-# 367 "data//maps/MirrohPeak/scripts.pory"
+# 372 "data//maps/MirrohPeak/scripts.pory"
 	msgbox MirrohPeak_Grunt_B_Text_2
-# 368 "data//maps/MirrohPeak/scripts.pory"
+# 373 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
 MirrohPeak_Grunt_C::
-# 373 "data//maps/MirrohPeak/scripts.pory"
+# 378 "data//maps/MirrohPeak/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHPEAK_C, MirrohPeak_Grunt_C_Text_0, MirrohPeak_Grunt_C_Text_1
-# 374 "data//maps/MirrohPeak/scripts.pory"
+# 379 "data//maps/MirrohPeak/scripts.pory"
 	msgbox MirrohPeak_Grunt_C_Text_2
-# 375 "data//maps/MirrohPeak/scripts.pory"
+# 380 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
 MirrohPeak_Grunt_D::
-# 380 "data//maps/MirrohPeak/scripts.pory"
+# 385 "data//maps/MirrohPeak/scripts.pory"
 	trainerbattle_single TRAINER_MIRROHPEAK_D, MirrohPeak_Grunt_C_Text_0, MirrohPeak_Grunt_C_Text_1
-# 381 "data//maps/MirrohPeak/scripts.pory"
+# 386 "data//maps/MirrohPeak/scripts.pory"
 	msgbox MirrohPeak_Grunt_C_Text_2
-# 382 "data//maps/MirrohPeak/scripts.pory"
+# 387 "data//maps/MirrohPeak/scripts.pory"
 	releaseall
 	end
 
 
-# 32 "data//maps/MirrohPeak/scripts.pory"
+# 37 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Trigger0_Movement_0:
-# 32 "data//maps/MirrohPeak/scripts.pory"
+# 37 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 32 "data//maps/MirrohPeak/scripts.pory"
+# 37 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 32 "data//maps/MirrohPeak/scripts.pory"
+# 37 "data//maps/MirrohPeak/scripts.pory"
 	walk_right
 	step_end
 
-# 46 "data//maps/MirrohPeak/scripts.pory"
+# 51 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Trigger1_Movement_0:
-# 46 "data//maps/MirrohPeak/scripts.pory"
+# 51 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 46 "data//maps/MirrohPeak/scripts.pory"
+# 51 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
 	step_end
 
-# 55 "data//maps/MirrohPeak/scripts.pory"
+# 60 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_0:
-# 55 "data//maps/MirrohPeak/scripts.pory"
+# 60 "data//maps/MirrohPeak/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 59 "data//maps/MirrohPeak/scripts.pory"
+# 64 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_1:
-# 59 "data//maps/MirrohPeak/scripts.pory"
+# 64 "data//maps/MirrohPeak/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 64 "data//maps/MirrohPeak/scripts.pory"
+# 69 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_2:
-# 64 "data//maps/MirrohPeak/scripts.pory"
+# 69 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 69 "data//maps/MirrohPeak/scripts.pory"
+# 74 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_3:
-# 69 "data//maps/MirrohPeak/scripts.pory"
+# 74 "data//maps/MirrohPeak/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 81 "data//maps/MirrohPeak/scripts.pory"
+# 86 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_4:
-# 81 "data//maps/MirrohPeak/scripts.pory"
+# 86 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
-# 81 "data//maps/MirrohPeak/scripts.pory"
+# 86 "data//maps/MirrohPeak/scripts.pory"
 	face_down
 	step_end
 
-# 100 "data//maps/MirrohPeak/scripts.pory"
+# 105 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_5:
-# 100 "data//maps/MirrohPeak/scripts.pory"
+# 105 "data//maps/MirrohPeak/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 104 "data//maps/MirrohPeak/scripts.pory"
+# 109 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_6:
-# 104 "data//maps/MirrohPeak/scripts.pory"
+# 109 "data//maps/MirrohPeak/scripts.pory"
 	walk_fast_left
-# 104 "data//maps/MirrohPeak/scripts.pory"
+# 109 "data//maps/MirrohPeak/scripts.pory"
 	walk_fast_up
-# 104 "data//maps/MirrohPeak/scripts.pory"
+# 109 "data//maps/MirrohPeak/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 113 "data//maps/MirrohPeak/scripts.pory"
+# 118 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_7:
-# 113 "data//maps/MirrohPeak/scripts.pory"
+# 118 "data//maps/MirrohPeak/scripts.pory"
 	face_down
 	step_end
 
-# 114 "data//maps/MirrohPeak/scripts.pory"
+# 119 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_8:
-# 114 "data//maps/MirrohPeak/scripts.pory"
+# 119 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
 
-# 115 "data//maps/MirrohPeak/scripts.pory"
+# 120 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_9:
-# 115 "data//maps/MirrohPeak/scripts.pory"
+# 120 "data//maps/MirrohPeak/scripts.pory"
 	face_right
 	step_end
 
-# 117 "data//maps/MirrohPeak/scripts.pory"
+# 122 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Viniel_Movement_10:
-# 117 "data//maps/MirrohPeak/scripts.pory"
+# 122 "data//maps/MirrohPeak/scripts.pory"
 	face_left
 	step_end
 
-# 146 "data//maps/MirrohPeak/scripts.pory"
+# 151 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_0:
-# 146 "data//maps/MirrohPeak/scripts.pory"
+# 151 "data//maps/MirrohPeak/scripts.pory"
 	face_left
-# 146 "data//maps/MirrohPeak/scripts.pory"
+# 151 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 152 "data//maps/MirrohPeak/scripts.pory"
+# 157 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_1:
-# 152 "data//maps/MirrohPeak/scripts.pory"
+# 157 "data//maps/MirrohPeak/scripts.pory"
 	face_right
-# 152 "data//maps/MirrohPeak/scripts.pory"
+# 157 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 153 "data//maps/MirrohPeak/scripts.pory"
+# 158 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_2:
-# 153 "data//maps/MirrohPeak/scripts.pory"
+# 158 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
 	step_end
 
-# 172 "data//maps/MirrohPeak/scripts.pory"
+# 177 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_3:
-# 172 "data//maps/MirrohPeak/scripts.pory"
+# 177 "data//maps/MirrohPeak/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 195 "data//maps/MirrohPeak/scripts.pory"
+# 200 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_4:
-# 195 "data//maps/MirrohPeak/scripts.pory"
+# 200 "data//maps/MirrohPeak/scripts.pory"
 	walk_down
-# 195 "data//maps/MirrohPeak/scripts.pory"
+# 200 "data//maps/MirrohPeak/scripts.pory"
 	walk_left
-# 195 "data//maps/MirrohPeak/scripts.pory"
+# 200 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
 
-# 211 "data//maps/MirrohPeak/scripts.pory"
+# 216 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_5:
-# 211 "data//maps/MirrohPeak/scripts.pory"
+# 216 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 211 "data//maps/MirrohPeak/scripts.pory"
+# 216 "data//maps/MirrohPeak/scripts.pory"
 	walk_left
-# 211 "data//maps/MirrohPeak/scripts.pory"
+# 216 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
 
-# 213 "data//maps/MirrohPeak/scripts.pory"
+# 218 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_6:
-# 213 "data//maps/MirrohPeak/scripts.pory"
+# 218 "data//maps/MirrohPeak/scripts.pory"
 	fly_up
 	step_end
 
-# 219 "data//maps/MirrohPeak/scripts.pory"
+# 224 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_7:
-# 219 "data//maps/MirrohPeak/scripts.pory"
+# 224 "data//maps/MirrohPeak/scripts.pory"
 	walk_down
 	step_end
 
-# 222 "data//maps/MirrohPeak/scripts.pory"
+# 227 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_8:
-# 222 "data//maps/MirrohPeak/scripts.pory"
+# 227 "data//maps/MirrohPeak/scripts.pory"
 	walk_right
-# 222 "data//maps/MirrohPeak/scripts.pory"
+# 227 "data//maps/MirrohPeak/scripts.pory"
 	face_down
 	step_end
 
-# 231 "data//maps/MirrohPeak/scripts.pory"
+# 236 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_9:
-# 231 "data//maps/MirrohPeak/scripts.pory"
+# 236 "data//maps/MirrohPeak/scripts.pory"
 	jump_in_place_down
-# 231 "data//maps/MirrohPeak/scripts.pory"
+# 236 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_10:
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_down
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_right
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_right
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	walk_left
-# 244 "data//maps/MirrohPeak/scripts.pory"
+# 249 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
 
-# 251 "data//maps/MirrohPeak/scripts.pory"
+# 256 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_11:
-# 251 "data//maps/MirrohPeak/scripts.pory"
+# 256 "data//maps/MirrohPeak/scripts.pory"
 	face_up
-# 251 "data//maps/MirrohPeak/scripts.pory"
+# 256 "data//maps/MirrohPeak/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 263 "data//maps/MirrohPeak/scripts.pory"
+# 268 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_12:
-# 263 "data//maps/MirrohPeak/scripts.pory"
+# 268 "data//maps/MirrohPeak/scripts.pory"
 	walk_left
-# 263 "data//maps/MirrohPeak/scripts.pory"
+# 268 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
 
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 MirrohPeak_EventScript_Somber_Trigger_Movement_13:
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_up
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	walk_left
-# 296 "data//maps/MirrohPeak/scripts.pory"
+# 301 "data//maps/MirrohPeak/scripts.pory"
 	face_up
 	step_end
+
+MirrohPeak_NPC_1_Text_0:
+# 12 "data//maps/MirrohPeak/scripts.pory"
+	.string "You look exhausted! You'd better head\n"
+	.string "to Winterlily Hollow - go right from here\l"
+	.string "and enter the cave.$"
 
 MirrohPeak_EventScript_Viniel_Text_0:
-# 57 "data//maps/MirrohPeak/scripts.pory"
+# 62 "data//maps/MirrohPeak/scripts.pory"
 	.string "???: Come at me, you lousy grunts! You\n"
 	.string "think I'm going to let the likes of you\l"
 	.string "mess around in MY backyard?$"
 
 MirrohPeak_EventScript_Viniel_Text_1:
-# 62 "data//maps/MirrohPeak/scripts.pory"
+# 67 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: It's public space, VINIEL! Didn't\n"
 	.string "they teach you that at Gym Leader\l"
 	.string "School?$"
 
 MirrohPeak_EventScript_Viniel_Text_2:
-# 66 "data//maps/MirrohPeak/scripts.pory"
+# 71 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: There IS no Gym Leader School!\n"
 	.string "How stupid are you?$"
 
 MirrohPeak_EventScript_Viniel_Text_3:
-# 74 "data//maps/MirrohPeak/scripts.pory"
+# 79 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT:...yeah, we know. I was just\n"
 	.string "taunting you.$"
 
 MirrohPeak_EventScript_Viniel_Text_4:
-# 78 "data//maps/MirrohPeak/scripts.pory"
+# 83 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: That was a terrible taunt!\n"
 	.string "Didn't...didn't they teach you how to\l"
 	.string "taunt at taunting school?$"
 
 MirrohPeak_EventScript_Viniel_Text_5:
-# 90 "data//maps/MirrohPeak/scripts.pory"
+# 95 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: Who are you? Are you another\n"
 	.string "grunt? C'mon, AMPHAROS and I can take\l"
 	.string "all six of you together!$"
 
 MirrohPeak_EventScript_Viniel_Text_6:
-# 94 "data//maps/MirrohPeak/scripts.pory"
+# 99 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Wait...isn't that the trainer who\n"
 	.string "beat MELEA in Silversun City?$"
 
 MirrohPeak_EventScript_Viniel_Text_7:
-# 98 "data//maps/MirrohPeak/scripts.pory"
+# 103 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Yeah, it is! And also MOXIE at Mt.\n"
 	.string "Ceram!\p"
 	.string "GRUNT: Yikes - someone better tell go\n"
 	.string "them!$"
 
 MirrohPeak_EventScript_Viniel_Text_8:
-# 102 "data//maps/MirrohPeak/scripts.pory"
+# 107 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: I'm on it!$"
 
 MirrohPeak_EventScript_Viniel_Text_9:
-# 109 "data//maps/MirrohPeak/scripts.pory"
+# 114 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: So you're an enemy of theirs,\n"
 	.string "then, are you?\p"
 	.string "VINIEL: An enemy of an enemy is a\n"
@@ -840,29 +852,29 @@ MirrohPeak_EventScript_Viniel_Text_9:
 	.string "is right ahead - hurry up!$"
 
 MirrohPeak_EventScript_Viniel_Text_10:
-# 122 "data//maps/MirrohPeak/scripts.pory"
+# 127 "data//maps/MirrohPeak/scripts.pory"
 	.string "VINIEL: AMPHAROS is raring to go! Now\n"
 	.string "c'mon you cowards - I'm going to shock\l"
 	.string "some sense into all four of you\l"
 	.string "together!$"
 
 MirrohPeak_GruntsVSViniel_GenericDialogue_Text_0:
-# 134 "data//maps/MirrohPeak/scripts.pory"
+# 139 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Even with the four of us\n"
 	.string "together, its so hard! Guess that's why\l"
 	.string "he's a Gym Leader.\p"
 	.string "VINIEL: That all you got, grunts?$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_0:
-# 169 "data//maps/MirrohPeak/scripts.pory"
+# 174 "data//maps/MirrohPeak/scripts.pory"
 	.string "MELEA: Is it the child?$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_1:
-# 174 "data//maps/MirrohPeak/scripts.pory"
+# 179 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: I presume it is.$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_2:
-# 180 "data//maps/MirrohPeak/scripts.pory"
+# 185 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: Your tenacity is admirable,\n"
 	.string "child.\p"
 	.string "I must acknowledge that...despite your\n"
@@ -873,7 +885,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_2:
 	.string "two of us. Most displeased indeed...$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_3:
-# 185 "data//maps/MirrohPeak/scripts.pory"
+# 190 "data//maps/MirrohPeak/scripts.pory"
 	.string "MELEA: Beyond the dreamstone's gate\n"
 	.string "lie some of the most powerful Pokémon\l"
 	.string "this world has ever seen. And of them\l"
@@ -884,17 +896,17 @@ MirrohPeak_EventScript_Somber_Trigger_Text_3:
 	.string "used to do great things...$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_4:
-# 193 "data//maps/MirrohPeak/scripts.pory"
+# 198 "data//maps/MirrohPeak/scripts.pory"
 	.string "MELEA: Go on, MOXIE. Start the\n"
 	.string "Dreamalyser.$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_5:
-# 209 "data//maps/MirrohPeak/scripts.pory"
+# 214 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: MELEA, you go ahead. I'll deal\n"
 	.string "with the child.$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_6:
-# 224 "data//maps/MirrohPeak/scripts.pory"
+# 229 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: My dear colleague has gone\n"
 	.string "ahead, into Ancient Cormoria...you've\l"
 	.string "been there, no? I wonder what it looks\l"
@@ -916,18 +928,18 @@ MirrohPeak_EventScript_Somber_Trigger_Text_6:
 	.string "after us again!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_7:
-# 233 "data//maps/MirrohPeak/scripts.pory"
+# 238 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: Argh! How could I have lost!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_8:
-# 236 "data//maps/MirrohPeak/scripts.pory"
+# 241 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: One of you!\p"
 	.string "...\p"
 	.string "MOXIE: You there, wearing the HEAVY\n"
 	.string "DUTY BOOTS!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_9:
-# 239 "data//maps/MirrohPeak/scripts.pory"
+# 244 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: Y-yes boss?\p"
 	.string "MOXIE: Hurry up and go inside the\n"
 	.string "dreamstone. Tell MELEA what happened!\l"
@@ -935,12 +947,12 @@ MirrohPeak_EventScript_Somber_Trigger_Text_9:
 	.string "GRUNT: B-but boss, it's -$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_10:
-# 242 "data//maps/MirrohPeak/scripts.pory"
+# 247 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: No buts! Get moving, fast!\p"
 	.string "GRUNT: O-ok boss!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_11:
-# 249 "data//maps/MirrohPeak/scripts.pory"
+# 254 "data//maps/MirrohPeak/scripts.pory"
 	.string "GRUNT: But boss...what if I don't come\n"
 	.string "back?\p"
 	.string "MOXIE: Then we'll send roses to your\n"
@@ -948,7 +960,7 @@ MirrohPeak_EventScript_Somber_Trigger_Text_11:
 	.string "to send roses right now!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_12:
-# 261 "data//maps/MirrohPeak/scripts.pory"
+# 266 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: I know you're going to chase\n"
 	.string "MELEA and try to stop her from getting\l"
 	.string "the Ancient Wonders.\p"
@@ -959,52 +971,52 @@ MirrohPeak_EventScript_Somber_Trigger_Text_12:
 	.string "Hahaha!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_13:
-# 282 "data//maps/MirrohPeak/scripts.pory"
+# 287 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: Now you lot! Let's go get our\n"
 	.string "construction equipment so we can carry\l"
 	.string "all this away.\p"
 	.string "GRUNTS: Y-yes boss!!$"
 
 MirrohPeak_Grunt_A_Text_0:
-# 359 "data//maps/MirrohPeak/scripts.pory"
+# 364 "data//maps/MirrohPeak/scripts.pory"
 	.string "You're too late! The bosses have\n"
 	.string "already taken control of the\l"
 	.string "dreamstone with the Dreamalyser!$"
 
 MirrohPeak_Grunt_A_Text_1:
-# 359 "data//maps/MirrohPeak/scripts.pory"
+# 364 "data//maps/MirrohPeak/scripts.pory"
 	.string "You're still too late!$"
 
 MirrohPeak_Grunt_A_Text_2:
-# 360 "data//maps/MirrohPeak/scripts.pory"
+# 365 "data//maps/MirrohPeak/scripts.pory"
 	.string "I wonder what'll happen once they\n"
 	.string "activate the Dreamalyser...$"
 
 MirrohPeak_Grunt_B_Text_0:
-# 366 "data//maps/MirrohPeak/scripts.pory"
+# 371 "data//maps/MirrohPeak/scripts.pory"
 	.string "We're going to use the Dreamalyser to\n"
 	.string "revive the ANCIENT TERROR! Hahaha!$"
 
 MirrohPeak_Grunt_B_Text_1:
-# 366 "data//maps/MirrohPeak/scripts.pory"
+# 371 "data//maps/MirrohPeak/scripts.pory"
 	.string "You're playing dirty!$"
 
 MirrohPeak_Grunt_B_Text_2:
-# 367 "data//maps/MirrohPeak/scripts.pory"
+# 372 "data//maps/MirrohPeak/scripts.pory"
 	.string "Man, when will I become an admin?$"
 
 MirrohPeak_Grunt_C_Text_0:
-# 373 "data//maps/MirrohPeak/scripts.pory"
+# 378 "data//maps/MirrohPeak/scripts.pory"
 	.string "Nope. No way. You're not getting\n"
 	.string "through us. We've got the Dreamalyser\l"
 	.string "up and running, and we're not letting\l"
 	.string "you interfere!$"
 
 MirrohPeak_Grunt_C_Text_1:
-# 373 "data//maps/MirrohPeak/scripts.pory"
+# 378 "data//maps/MirrohPeak/scripts.pory"
 	.string "Fine then! Go ahead!$"
 
 MirrohPeak_Grunt_C_Text_2:
-# 374 "data//maps/MirrohPeak/scripts.pory"
+# 379 "data//maps/MirrohPeak/scripts.pory"
 	.string "You may have beaten us, but you can't\n"
 	.string "beat MELEA and MOXIE!$"

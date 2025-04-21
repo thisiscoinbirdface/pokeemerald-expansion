@@ -506,7 +506,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_HP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHINT_F"
     },
     {
       "type": "hidden_item",
@@ -514,7 +514,7 @@
       "y": 3,
       "elevation": 3,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_NUGGET"
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHPEAK_A"
     },
     {
       "type": "hidden_item",

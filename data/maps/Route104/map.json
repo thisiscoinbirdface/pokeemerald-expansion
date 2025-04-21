@@ -605,7 +605,7 @@
       "y": 55,
       "elevation": 3,
       "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_MIRROHINT_D"
     },
     {
       "type": "hidden_item",
