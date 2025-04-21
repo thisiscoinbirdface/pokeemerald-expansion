@@ -34,5 +34,30 @@ script AncientMirroh_Tenebris_Caves_Trigger{
     end
 }
 
+//aerodactyl FLAG_ANCIENT_MIRROH_AERODACTYL
+script AncientMirroh_Aerodactyl{
+    lockall
+    msgbox(format("It's an ancient Pokémon!\nIt's roosting. Wake it up?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0) {end}
+
+    playmoncry(SPECIES_AERODACTYL, CRY_MODE_NORMAL)
+
+    setwildbattle(SPECIES_AERODACTYL, 35)
+    dowildbattle
+
+    //result
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON){
+        setflag(FLAG_ANCIENT_MIRROH_AERODACTYL)
+    }
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        setflag(FLAG_ANCIENT_MIRROH_AERODACTYL)
+    }            
+    if (var(VAR_RESULT) == B_OUTCOME_RAN){
+        msgbox(format("The Pokémon settles back into its sleep..."))
+    }
+
+}
 
 

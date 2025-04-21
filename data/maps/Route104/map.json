@@ -589,7 +589,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_ANCIENTMIRROH_C"
     },
     {
       "type": "hidden_item",

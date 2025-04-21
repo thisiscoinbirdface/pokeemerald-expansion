@@ -222,7 +222,7 @@
 #define FLAG_MIRROH_BERGMITE_A 0x4E5 // Unused Flag
 #define FLAG_MIRROH_BERGMITE_B 0x49E // Unused Flag
 #define FLAG_MIRROH_BERGMITE_C 0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0 0x4A0 // Unused Flag
+#define FLAG_ANCIENT_MIRROH_AERODACTYL 0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1 0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2 0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3 0x4A3 // Unused Flag
@@ -770,9 +770,11 @@
 #define FLAG_HIDDEN_ITEM_MIRROHINT_F                         (FLAG_HIDDEN_ITEMS_START + 0x27)
 #define FLAG_HIDDEN_ITEM_MIRROHPEAK_A                        (FLAG_HIDDEN_ITEMS_START + 0x28)
 #define FLAG_HIDDEN_ITEM_MIRROHPEAK_B                        (FLAG_HIDDEN_ITEMS_START + 0x29)
-#define FLAG_HIDDEN_ITEM_ROUTE_114_REVIVE                    (FLAG_HIDDEN_ITEMS_START + 0x2A)
-#define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP                 (FLAG_HIDDEN_ITEMS_START + 0x2B)
-#define FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION              (FLAG_HIDDEN_ITEMS_START + 0x2C)
+
+#define FLAG_HIDDEN_ITEM_ANCIENTMIRROH_A                     (FLAG_HIDDEN_ITEMS_START + 0x2A)
+#define FLAG_HIDDEN_ITEM_ANCIENTMIRROH_B                     (FLAG_HIDDEN_ITEMS_START + 0x2B)
+#define FLAG_HIDDEN_ITEM_ANCIENTMIRROH_C                     (FLAG_HIDDEN_ITEMS_START + 0x2C)
+
 #define FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION              (FLAG_HIDDEN_ITEMS_START + 0x2D)
 #define FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x2E)
 #define FLAG_HIDDEN_ITEM_ROUTE_106_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x2F)
@@ -1246,14 +1248,15 @@
 #define FLAG_ITEM_MIRROH_INT_E                  0x42C
 #define FLAG_ITEM_MIRROH_INT_F                    0x42D
 #define FLAG_ITEM_MIRROH_PEAK_A                             0x42E
+#define FLAG_ITEM_MIRROH_PEAK_B                       0x42F
 
-#define FLAG_ITEM_ROUTE4_D                       0x42F
-#define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432
-#define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
-#define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0x435
+#define FLAG_ITEM_ANCIENTMIRROH_A                        0x430
+#define FLAG_ITEM_ANCIENTMIRROH_B                       0x431
+#define FLAG_ITEM_ANCIENTMIRROH_C                    0x432
+#define FLAG_ITEM_ANCIENTMIRROH_D                           0x433
+#define FLAG_ITEM_ANCIENTMIRROH_E                          0x434
+#define FLAG_ITEM_ANCIENTMIRROH_F    0x435
+
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER        0x436
 #define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
 #define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
