@@ -92,13 +92,13 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilyPond_Fisherman_C",
-      "flag": "FLAG_HIDE_IVYRIVER_FISHERMEN"
+      "script": "NULL",
+      "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZARUDE)",
       "x": 39,
-      "y": 63,
+      "y": 65,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -106,7 +106,46 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 37,
+      "y": 61,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 39,
+      "y": 61,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 40,
+      "y": 62,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
     }
   ],
   "warp_events": [
@@ -116,6 +155,20 @@
       "elevation": 0,
       "dest_map": "MAP_LILY_POND_CAVE",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 62,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER_ZARUDE_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 63,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER_ZARUDE_FOREST",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

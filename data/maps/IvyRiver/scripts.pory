@@ -275,6 +275,8 @@ script LilyPond_Fisherman_C{
         //setvar, increment quest
         setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
         setvar(VAR_LILYPOND_FISHERMAN_QUEST, 4)
+        clearflag(FLAG_HIDE_IVYRIVER_FISHERMEN)
+        clearflag(FLAG_IVYRIVER_ZARUDE_QUEST)
         subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1)        
         end
     }

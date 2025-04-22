@@ -144,6 +144,13 @@
       "elevation": 0,
       "dest_map": "MAP_IVY_RIVER_RESEARCH_FACILITY",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 46,
+      "y": 87,
+      "elevation": 0,
+      "dest_map": "MAP_LILY_POND_CAVE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

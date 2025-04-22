@@ -5460,6 +5460,16 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/LilyPondCave/border.bin",
       "blockdata_filepath": "data/layouts/LilyPondCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVY_RIVER_ZARUDE_FOREST",
+      "name": "IvyRiver_ZarudeForest_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/IvyRiver_ZarudeForest/border.bin",
+      "blockdata_filepath": "data/layouts/IvyRiver_ZarudeForest/map.bin"
     }
   ]
 }

@@ -231,8 +231,8 @@
 #define FLAG_LILYPOND_FISHERMAN_A_LETTER 0x4A6 // Unused Flag
 #define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // Unused Flag
 #define FLAG_HIDE_IVYRIVER_FISHERMEN 0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x1DE 0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF 0x1DF // Unused Flag
+#define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // Unused Flag
+#define FLAG_IVYRIVER_ZARUDE_REAL 0x1DF // Unused Flag
 #define FLAG_UNUSED_0x1E0 0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1 0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2 0x1E2 // Unused Flag
