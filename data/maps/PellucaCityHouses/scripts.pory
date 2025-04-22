@@ -79,7 +79,7 @@ script PellucaCityHouses_Mayor_Reward_End{
 script PellucaCityHouses_NPC1{
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 7){
         //quest done
-        msgbox(format("I haven't seen any Claunchers recently, so I can finally relax a little!"), MSGBOX_NPC)
+        msgbox(format("I haven't seen any Corsolas recently, so I can finally relax a little!"), MSGBOX_NPC)
         end
     }
 
@@ -87,7 +87,11 @@ script PellucaCityHouses_NPC1{
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
         //quest done
         msgbox(format("Have you done the job? Excellent! Sigh, what a relief. I admit it - I've been a weak mayor. Too many blunders! I should be more proactive in taking care of my city."), MSGBOX_NPC)
-        goto(PellucaCityHouses_Mayor_Reward)
+        //goto(PellucaCityHouses_Mayor_Reward)
+        msgbox(format("Please accept this reward. It's not much but I have no use for it, since I'm here all the time."))
+        giveitem(ITEM_DRIFBLIM_TRAVELS_PASS)
+        release
+        end
     }
 
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
@@ -96,7 +100,7 @@ script PellucaCityHouses_NPC1{
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
-        msgbox(format("It means Claunchers washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokemon stuck ashore."), MSGBOX_NPC)
+        msgbox(format("It means Corsolas washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokemon stuck ashore."), MSGBOX_NPC)
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
@@ -104,7 +108,7 @@ script PellucaCityHouses_NPC1{
         dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
 
         if (var(VAR_RESULT) == 0){
-            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Claunchers you see back into the river!"), MSGBOX_NPC)
+            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Corsolas you see back into the river!"), MSGBOX_NPC)
             startquest(QUEST_PELLUCA_MAYOR)
             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON1)
             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON2)
@@ -123,7 +127,7 @@ script PellucaCityHouses_NPC1{
     }
 
     //quest ongoing
-    msgbox(format("Please send five Claunchers back to the river!"), MSGBOX_NPC)
+    msgbox(format("Please send five Corsolas back to the river!"), MSGBOX_NPC)
     end
 }
 
@@ -131,12 +135,21 @@ script PellucaCityHouses_NPC1{
 script PellucaCity_Clauncher{
     lockall
     faceplayer
-    msgbox(format("It's a Clauncher! It's looking disoriented.\p{PLAYER} gently lifts the Clauncher and tosses it back into the river."))
+
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
+        msgbox(format("It's a Corsola!\p...\pWait, it doesn't look like a Corsola...it's a little paler...a little less cute..."))
+        setwildbattle(SPECIES_CURSOLA, 28)
+        dowildbattle
+        addvar(VAR_PELLUCA_MAYOR_QUEST, 1)
+        msgbox(format("That's five Corsolas...one way or another! Better get back to the mayor."))        
+    }
+
+    msgbox(format("It's a Corsola! It's looking disoriented.\p{PLAYER} gently lifts the Corsola and tosses it back into the river."))
     release
     fadescreen(FADE_TO_WHITE)
     removeobject(VAR_LAST_TALKED)
     fadescreen(FADE_FROM_WHITE)    
-    msgbox(format("See you Clauncher!"))
+    msgbox(format("See you Corsola!"))
 
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1)
 

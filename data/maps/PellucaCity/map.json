@@ -387,7 +387,7 @@
       "flag": "FLAG_GRETA_PELLUCACITY"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAUNCHER)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA_GALAR)",
       "x": 59,
       "y": 38,
       "elevation": 0,
@@ -400,7 +400,7 @@
       "flag": "FLAG_HIDE_PELLUCA_MAYOR_MON1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAUNCHER)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA_GALAR)",
       "x": 59,
       "y": 21,
       "elevation": 0,
@@ -413,7 +413,7 @@
       "flag": "FLAG_HIDE_PELLUCA_MAYOR_MON2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAUNCHER)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA_GALAR)",
       "x": 31,
       "y": 34,
       "elevation": 0,
@@ -426,7 +426,7 @@
       "flag": "FLAG_HIDE_PELLUCA_MAYOR_MON3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAUNCHER)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA_GALAR)",
       "x": 18,
       "y": 9,
       "elevation": 0,
@@ -439,7 +439,7 @@
       "flag": "FLAG_HIDE_PELLUCA_MAYOR_MON4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLAUNCHER)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORSOLA_GALAR)",
       "x": 16,
       "y": 37,
       "elevation": 0,

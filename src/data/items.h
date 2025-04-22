@@ -14255,5 +14255,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_HeavyDutyBoots,
     },
 
-
+    [ITEM_DRIFBLIM_TRAVELS_PASS] =
+    {
+        .name = _("Drifblim Pass"),
+        .pluralName = _("Drifblim Passes"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A commuter pass\n"
+            "given by Drifblim\n"
+            "Travels Pvt. Ltd."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ContestPass,
+        .iconPalette = gItemIconPalette_ContestPass,
+    },
 };

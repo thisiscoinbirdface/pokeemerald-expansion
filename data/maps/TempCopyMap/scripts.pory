@@ -810,6 +810,11 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
     lockall
     faceplayer
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
+    }
+
     msgbox(format("Drifblim opens a map and gestures towards Silversun City. Fly there?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
@@ -830,6 +835,11 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
     lockall
     faceplayer
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
+    }
+
     msgbox(format("Drifblim opens a map and gestures towards Pelluca City. Fly there?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){

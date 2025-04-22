@@ -1295,94 +1295,116 @@ Common_EventScript_DrifblimTravels_ToSilversun::
 # 812 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
 # 813 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_YESNO
-# 815 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
+	checkitem ITEM_DRIFBLIM_TRAVELS_PASS
+# 814 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_2
-# 824 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToSilversun_1:
+# 818 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_YESNO
+# 820 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_5
+# 829 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_2, MSGBOX_NPC
+Common_EventScript_DrifblimTravels_ToSilversun_4:
 	end
 
 Common_EventScript_DrifblimTravels_ToSilversun_2:
-# 816 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 818 "data//maps/TempCopyMap/scripts.pory"
-	hidefollower
-# 819 "data//maps/TempCopyMap/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 820 "data//maps/TempCopyMap/scripts.pory"
-	delay 30
-# 821 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_SILVERSUN_CITY, 28, 22
+# 815 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_NPC
 	goto Common_EventScript_DrifblimTravels_ToSilversun_1
+
+Common_EventScript_DrifblimTravels_ToSilversun_5:
+# 821 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 823 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 824 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 825 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 826 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_SILVERSUN_CITY, 28, 22
+	goto Common_EventScript_DrifblimTravels_ToSilversun_4
 
 
 Common_EventScript_DrifblimTravels_ToPelluca::
-# 830 "data//maps/TempCopyMap/scripts.pory"
-	lockall
-# 831 "data//maps/TempCopyMap/scripts.pory"
-	faceplayer
-# 832 "data//maps/TempCopyMap/scripts.pory"
-	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 833 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_ToPelluca_Text_0, MSGBOX_YESNO
 # 835 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
+	lockall
+# 836 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 837 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
+# 838 "data//maps/TempCopyMap/scripts.pory"
+	checkitem ITEM_DRIFBLIM_TRAVELS_PASS
+# 839 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_DrifblimTravels_ToPelluca_2
-# 844 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToPelluca_1:
+# 843 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToPelluca_Text_0, MSGBOX_YESNO
+# 845 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_DrifblimTravels_ToPelluca_5
+# 854 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_2, MSGBOX_NPC
+Common_EventScript_DrifblimTravels_ToPelluca_4:
 	end
 
 Common_EventScript_DrifblimTravels_ToPelluca_2:
-# 836 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 838 "data//maps/TempCopyMap/scripts.pory"
-	hidefollower
-# 839 "data//maps/TempCopyMap/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
 # 840 "data//maps/TempCopyMap/scripts.pory"
-	delay 30
-# 841 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_PELLUCA_CITY, 13, 16
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_NPC
 	goto Common_EventScript_DrifblimTravels_ToPelluca_1
+
+Common_EventScript_DrifblimTravels_ToPelluca_5:
+# 846 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 848 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 849 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 850 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 851 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_PELLUCA_CITY, 13, 16
+	goto Common_EventScript_DrifblimTravels_ToPelluca_4
 
 
 Common_EventScript_DrifblimTravels_ToGalecrest::
-# 851 "data//maps/TempCopyMap/scripts.pory"
+# 861 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 852 "data//maps/TempCopyMap/scripts.pory"
+# 862 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 853 "data//maps/TempCopyMap/scripts.pory"
+# 863 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 854 "data//maps/TempCopyMap/scripts.pory"
+# 864 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToGalecrest_Text_0, MSGBOX_YESNO
-# 856 "data//maps/TempCopyMap/scripts.pory"
+# 866 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_DrifblimTravels_ToGalecrest_2
-# 865 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_NPC
+# 875 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_2, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToGalecrest_1:
 	end
 
 Common_EventScript_DrifblimTravels_ToGalecrest_2:
-# 857 "data//maps/TempCopyMap/scripts.pory"
+# 867 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 859 "data//maps/TempCopyMap/scripts.pory"
+# 869 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 860 "data//maps/TempCopyMap/scripts.pory"
+# 870 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 861 "data//maps/TempCopyMap/scripts.pory"
+# 871 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 862 "data//maps/TempCopyMap/scripts.pory"
+# 872 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_GALECREST_CITY, 30, 47
 	goto Common_EventScript_DrifblimTravels_ToGalecrest_1
 
 
-# 819 "data//maps/TempCopyMap/scripts.pory"
+# 824 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
-# 819 "data//maps/TempCopyMap/scripts.pory"
+# 824 "data//maps/TempCopyMap/scripts.pory"
 	face_down
 	step_end
 
@@ -1690,21 +1712,25 @@ Common_EventScript_HyperTrainer_Text_10:
 	.string "{STR_VAR_1} became stronger!$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_0:
-# 813 "data//maps/TempCopyMap/scripts.pory"
+# 815 "data//maps/TempCopyMap/scripts.pory"
+	.string "It's a Drifblim!$"
+
+Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
+# 818 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Silversun City. Fly there?$"
 
-Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
-# 824 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_DrifblimTravels_ToSilversun_Text_2:
+# 829 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim looks dejected...$"
 
 Common_EventScript_DrifblimTravels_ToPelluca_Text_0:
-# 833 "data//maps/TempCopyMap/scripts.pory"
+# 843 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Pelluca City. Fly there?$"
 
 Common_EventScript_DrifblimTravels_ToGalecrest_Text_0:
-# 854 "data//maps/TempCopyMap/scripts.pory"
+# 864 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Galecrest City. Fly there?$"
 
