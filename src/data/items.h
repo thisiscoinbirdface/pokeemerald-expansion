@@ -14240,8 +14240,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_TREKKING_BOOTS] =
     {
-        .name = _("Heavy-Duty Boots"),
-        .pluralName = _("Heavy-Duty Boots"),
+        .name = _("Trekking Boots"),
+        .pluralName = _("Trekking Boots"),
         .price = 999999,
         .description = COMPOUND_STRING(
             "A pair of heavyset\n"
@@ -14268,7 +14268,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_ContestPass,
-        .iconPalette = gItemIconPalette_ContestPass,
+        .iconPic = gItemIcon_EonTicket,
+        .iconPalette = gItemIconPalette_EonTicket,
     },
 };
