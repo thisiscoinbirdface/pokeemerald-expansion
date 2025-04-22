@@ -376,7 +376,14 @@ const u32 gTrainerPalette_Ariana[] = INCBIN_U32("graphics/trainers/my_trainers/l
 const u32 gTrainerFrontPic_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
 const u32 gTrainerPalette_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
 
+const u32 gTrainerFrontPic_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
+const u32 gTrainerPalette_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
 
+const u32 gTrainerFrontPic_Viniel[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.4bpp.lz");
+const u32 gTrainerPalette_Viniel[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.gbapal.lz");
+
+const u32 gTrainerFrontPic_Jania[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.4bpp.lz");
+const u32 gTrainerPalette_Jania[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.gbapal.lz");
 
 
 // The first two parameters invoke a front pic and palette by
@@ -510,6 +517,9 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_INGER, gTrainerFrontPic_Inger, gTrainerPalette_Inger),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_ARIANA, gTrainerFrontPic_Ariana, gTrainerPalette_Ariana),
     TRAINER_SPRITE(TRAINER_PIC_LEADER_GLORIA, gTrainerFrontPic_Gloria, gTrainerPalette_Gloria),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_CARONA, gTrainerFrontPic_Carona, gTrainerPalette_Carona),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_VINIEL, gTrainerFrontPic_Viniel, gTrainerPalette_Viniel),
+    TRAINER_SPRITE(TRAINER_PIC_LEADER_JANIA, gTrainerFrontPic_Jania, gTrainerPalette_Jania),    
     TRAINER_SPRITE(TRAINER_PIC_MODEL, gTrainerFrontPic_Model, gTrainerPalette_Model),
     TRAINER_SPRITE(TRAINER_PIC_SKIIER_F, gTrainerFrontPic_SkiierF, gTrainerPalette_SkiierF),
 };

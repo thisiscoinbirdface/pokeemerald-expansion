@@ -260,18 +260,18 @@
 
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
-#define FLAG_HEAL_PASS_EXPLAIN                               0x4E7 // gym flag
-#define FLAG_HEAL_PASS_HAVE                              0x4E8 // gym flag
-#define FLAG_GASTREEGYM_SPENSER_WATER                         0x4E9 // gym flag
-#define FLAG_GASTREEGYM_SPENSER_REWARD                        0x4EA // gym flag
-#define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                             0x4EB // gym flag
-#define FLAG_CERAMBASECAMPGYM_SPENSER_REWARD                            0x4EC // gym flag
-#define FLAG_GALECRESTGYM_SPENSER_WATER                             0x4ED // gym flag
-#define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EE // gym flag
-#define FLAG_SILVERSUNGYM_SPENSER_WATER                                      0x4EF // gym flag
-#define FLAG_SILVERSUNGYM_SPENSER_REWARD                                         0x4E6 // gym flag
-#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER                                           0x4C1 // Unused Flag
-#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD                                           0x4C2 // Unused Flag
+#define FLAG_HEAL_PASS_EXPLAIN                                      0x4E7 // gym 
+#define FLAG_HEAL_PASS_HAVE                                         0x4E8 // gym 
+#define FLAG_GASTREEGYM_SPENSER_WATER                               0x4E9 // gym 
+#define FLAG_GASTREEGYM_SPENSER_REWARD                              0x4EA // gym 
+#define FLAG_CERAMBASECAMPGYM_SPENSER_WATER                         0x4EB // gym 
+#define FLAG_CERAMBASECAMPGYM_SPENSER_REWARD                        0x4EC // gym 
+#define FLAG_GALECRESTGYM_SPENSER_WATER                             0x4ED // gym 
+#define FLAG_GALECRESTGYM_SPENSER_REWARD                            0x4EE // gym 
+#define FLAG_SILVERSUNGYM_SPENSER_WATER                             0x4EF // gym 
+#define FLAG_SILVERSUNGYM_SPENSER_REWARD                            0x4E6 // gym 
+#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER                      0x4C1 // gym 
+#define FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD                     0x4C2 // gym 
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
 #define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
@@ -775,7 +775,10 @@
 #define FLAG_HIDDEN_ITEM_ANCIENTMIRROH_B                     (FLAG_HIDDEN_ITEMS_START + 0x2B)
 #define FLAG_HIDDEN_ITEM_ANCIENTMIRROH_C                     (FLAG_HIDDEN_ITEMS_START + 0x2C)
 
-#define FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION              (FLAG_HIDDEN_ITEMS_START + 0x2D)
+#define FLAG_HIDDEN_ITEM_HOLLOW_GYM_A                        (FLAG_HIDDEN_ITEMS_START + 0x2D)
+
+
+
 #define FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x2E)
 #define FLAG_HIDDEN_ITEM_ROUTE_106_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x2F)
 #define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1        (FLAG_HIDDEN_ITEMS_START + 0x30)

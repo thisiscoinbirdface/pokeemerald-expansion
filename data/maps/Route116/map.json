@@ -500,7 +500,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION"
+      "flag": "FLAG_HIDDEN_ITEM_HOLLOW_GYM_A"
     },
     {
       "type": "hidden_item",

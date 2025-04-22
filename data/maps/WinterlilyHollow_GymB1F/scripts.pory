@@ -111,41 +111,96 @@ script WinterlilyHollow_Gym_Trainer_F{
 
 script WinterlilyHollowGym_LeaderBattle {
     lockall
-    faceplayer
 
     if (flag(FLAG_BADGE05_GET)){
+        faceplayer
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        msgbox(format(""))
-        trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format(""))
+        msgbox(format("VINIEL: Go Ampharos! More! More!\pVINIEL: Wait - it looks like we've got a guest."))
+        faceplayer
+        msgbox(format("VINIEL: Ah, it's you! The enemy of my enemy.\pVINIEL: Hmm...\pVINIEL: You still look a little drained of energy. Do you really want to battle?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("VINIEL: Come back when you've got the spark back in you!"), MSGBOX_NPC)
+            end
+        }
+        
+        msgbox(format("VINIEL: Excellent! Your internal battery is full, then.\pVINIEL: Look around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't. That's what makes us, us. Hahaha!\pVINIEL: Back with those Team Somber grunts, you showed me that very energy.\pVINIEL: And now, I want you to bring it out again!"))
+
+        trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format("Sizzling! Crackling! Hahaha!"))
         
         //Receive the badge
-        msgbox(format("{PLAYER} received the CINDER BADGE from Ariana."))
-        release
-        setflag(FLAG_BADGE05_GET)
-
+        message(format("{PLAYER} received the Spark Badge from Viniel."))
+        waitmessage
         //Play gym badge fanfare
         call(Common_EventScript_PlayGymBadgeFanfare)
 
+        setflag(FLAG_BADGE05_GET)
+
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("The CINDER BADGE increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
-        msgbox(format("And I'd also like to give you this."))
+        msgbox(format("The Spark Badge lets you use HM Surf outside of battle. You don't need to teach your Pokémon the move - any compatible Pokémon can use it out of battle!"))
+        msgbox(format("And I'd also like you to have this."))
         release
         //Give TM also
-        giveitem(ITEM_TM_SUNNY_DAY)
-        msgbox(format("This TM will let your Pokémon bring sunlight on the battlefield, powering up FIRE-type moves!"))
+        giveitem(ITEM_RARE_SHARD, 2)
         release
 
         //Bye-bye
-        msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
+        msgbox(format("VINIEL: Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there. Keep your spirits up, {PLAYER}!"))
         releaseall
         
     }
 
     releaseall
-
+    end
 }
 
+
+
+
+
+
+
+
+script WinterlilyHollowGym_Red{
+    if (flag(FLAG_BADGE01_GET)){
+        if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD)){
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
+        } else {
+            lockall
+            faceplayer
+            msgbox(format("Well done champ-in-the-making! An electrifying showdown! In recognition of your skills, I'd like to give you something. Which of these do you fancy?"))
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Electric Gym", "Magnet")
+
+            if (var(VAR_RESULT) == 0){
+                giveitem(ITEM_ELECTRIC_GEM)
+            } else{
+                if (var(VAR_RESULT) == 1){
+                    giveitem(ITEM_MAGNET)
+                } else {
+                    
+                }
+            }
+
+
+            setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD)
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            
+        }
+    } else { 
+        if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)){
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon."), MSGBOX_NPC)
+        } else {
+            lockall
+            faceplayer
+            msgbox(format("Welcome to the Winterlily Hollow gym! It's not a gym so much as a power plant. The leader, Viniel, powers this town with his strong ELECTRIC-type Pokémon here in this plant. First, hydrate yourself!"))
+            giveitem(ITEM_FRESH_WATER)
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon."))
+            setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)
+            releaseall
+        }
+    }
+    end
+}
 
 
 

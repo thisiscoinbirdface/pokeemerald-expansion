@@ -130,11 +130,16 @@
 #define TRAINER_PIC_LEADER_INGER          108
 #define TRAINER_PIC_LEADER_ARIANA         109
 #define TRAINER_PIC_LEADER_GLORIA         110
+#define TRAINER_PIC_LEADER_CARONA         111
+#define TRAINER_PIC_LEADER_VINIEL         112
+#define TRAINER_PIC_LEADER_JANIA          113
+#define TRAINER_PIC_LEADER_RIVETSHORE     114
+#define TRAINER_PIC_LEADER_FINAL          115
 
-#define TRAINER_PIC_MODEL                 111
-#define TRAINER_PIC_SKIIER_F              112
+#define TRAINER_PIC_MODEL                 116
+#define TRAINER_PIC_SKIIER_F              117
 
-#define TRAINER_PIC_COUNT                 113
+#define TRAINER_PIC_COUNT                 118
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

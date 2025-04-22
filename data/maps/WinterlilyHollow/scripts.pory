@@ -219,7 +219,7 @@ script WinterlilyHollow_Froslass{
     lockall
     faceplayer
     playmoncry(SPECIES_FROSLASS, CRY_MODE_NORMAL)
-    msgbox(format("Froslass is circling the statue...which looks like a Froslass statue! Is there a connection?"))
+    msgbox(format("What is Froslass circling for?"))
     releaseall
     end
 }
@@ -233,7 +233,21 @@ script WinterlilyHollow_Sneasler{
 }
 
 
+script WinterlilyHollow_NPC_SurfMan{
+    lockall
+    faceplayer
+    msgbox(format("When I was younger, I once encountered a strange Pokemon in the Mirroh Caverns. It was shaped like a blue plant and scattered poisonous spikes everywhere! I'd like to see that Pokemon again."))
+    special(ChoosePartyMon)                 //choose your mon
+    waitstate                               //wait
+    copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
 
+    if (var(VAR_0x8004) == SPECIES_GLIMMORA){
+        giveitem(ITEM_HM05)
+    } 
+    
+    releaseall
+    end
+}
 
 
 
