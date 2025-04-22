@@ -317,6 +317,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_PELLUCA_MAYOR_MON4
 	setflag FLAG_HIDE_PELLUCA_MAYOR_MON5
 	setflag FLAG_HIDE_MIRROH_LAST_CHANSEY
+	setflag FLAG_HIDE_IVYRIVER_FISHERMEN
 	
 	call EventScript_ResetAllBerries
 	end
