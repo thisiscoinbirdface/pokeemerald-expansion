@@ -501,11 +501,10 @@ const u32 gObjectEventPic_GubukingWatering[] = INCBIN_U32("graphics/object_event
 const u32 gObjectEventPic_GubukingDecorating[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/decorating.4bpp");
 const u32 gObjectEventPic_GubukingUnderwater[] = INCBIN_U32("graphics/object_events/pics/custom/gubuking/underwater.4bpp");
 
-
-
 const u32 gObjectEventPic_LeaderInger[] = INCBIN_U32("graphics/object_events/pics/custom/leader_inger.4bpp");
 const u32 gObjectEventPic_LeaderAriana[] = INCBIN_U32("graphics/object_events/pics/custom/leader_ariana.4bpp");
 const u32 gObjectEventPic_LeaderGloria[] = INCBIN_U32("graphics/object_events/pics/custom/leader_gloria.4bpp");
+const u32 gObjectEventPic_LeaderViniel[] = INCBIN_U32("graphics/object_events/pics/custom/leader_viniel.4bpp");
 
 const u32 gObjectEventPic_BugCatcherF[] = INCBIN_U32("graphics/object_events/pics/custom/bug_catcher_f.4bpp");
 const u32 gObjectEventPic_SkiierF[] = INCBIN_U32("graphics/object_events/pics/custom/skiier_f.4bpp");

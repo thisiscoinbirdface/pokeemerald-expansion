@@ -508,6 +508,9 @@ $(OBJEVENTGFXDIR)/custom/leader_inger.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/custom/leader_gloria.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/custom/leader_viniel.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
 $(OBJEVENTGFXDIR)/custom/bug_catcher_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

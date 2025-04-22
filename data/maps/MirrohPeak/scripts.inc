@@ -947,8 +947,8 @@ MirrohPeak_EventScript_Somber_Trigger_Text_9:
 # 245 "data//maps/MirrohPeak/scripts.pory"
 	.string "MOXIE: One of you!\p"
 	.string "...\p"
-	.string "MOXIE: You there, wearing the HEAVY\n"
-	.string "DUTY BOOTS!$"
+	.string "MOXIE: You there, wearing the Trekking\n"
+	.string "Boots!$"
 
 MirrohPeak_EventScript_Somber_Trigger_Text_10:
 # 248 "data//maps/MirrohPeak/scripts.pory"

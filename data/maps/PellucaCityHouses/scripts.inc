@@ -398,7 +398,7 @@ PellucaCityHouses_NPC4_Text_0:
 # 159 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "My Delphox doesn't like the river air.\n"
 	.string "She prefers the dense fog of Vilethorn\l"
-	.string "Woods, where I caught her.$"
+	.string "Woods, where I first met her.$"
 
 PellucaCityHouses_Delphox_Text_0:
 # 170 "data//maps/PellucaCityHouses/scripts.pory"

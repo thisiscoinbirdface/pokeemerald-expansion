@@ -156,7 +156,7 @@ script PellucaCityHouses_NPC3{
     end
 }
 script PellucaCityHouses_NPC4{
-    msgbox(format("My Delphox doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I caught her."), MSGBOX_NPC)
+    msgbox(format("My Delphox doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I first met her."), MSGBOX_NPC)
     end
 }
 
