@@ -12224,8 +12224,8 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
-            "rod for catching\n"
-            "wild Pokémon."),
+            "rod to catch fish\n"
+            "shaped Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
