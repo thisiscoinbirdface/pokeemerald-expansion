@@ -100,6 +100,20 @@
       "elevation": 0,
       "dest_map": "MAP_IVY_RIVER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 53,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER_MAIN",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
