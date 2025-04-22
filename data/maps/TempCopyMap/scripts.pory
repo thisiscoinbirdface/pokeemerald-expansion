@@ -880,3 +880,40 @@ script Common_EventScript_DrifblimTravels_ToGalecrest{
 
 
 
+
+
+
+
+
+
+
+script Common_EventScript_Dugtrio_ToRoute3{
+    lockall
+    faceplayer
+    msgbox(format("Dugtrio is digging into the ground. Follow it?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        release
+        //fly
+        hidefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        delay(30)
+        warp(MAP_ROUTE3_UNDERPASS, 9, 26)
+    }
+
+}
+script Common_EventScript_Dugtrio_ToGalecrest{
+    lockall
+    faceplayer
+    msgbox(format("Dugtrio is digging into the ground. Follow it?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        release
+        //fly
+        hidefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        delay(30)
+        warp(MAP_GALECREST_CITY, 31, 65)
+    }
+
+}

@@ -1402,6 +1402,58 @@ Common_EventScript_DrifblimTravels_ToGalecrest_2:
 	goto Common_EventScript_DrifblimTravels_ToGalecrest_1
 
 
+Common_EventScript_Dugtrio_ToRoute3::
+# 891 "data//maps/TempCopyMap/scripts.pory"
+	lockall
+# 892 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 893 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
+# 895 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_Dugtrio_ToRoute3_1
+	return
+
+Common_EventScript_Dugtrio_ToRoute3_1:
+# 896 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 898 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 899 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 900 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 901 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_ROUTE3_UNDERPASS, 9, 26
+	return
+
+
+Common_EventScript_Dugtrio_ToGalecrest::
+# 906 "data//maps/TempCopyMap/scripts.pory"
+	lockall
+# 907 "data//maps/TempCopyMap/scripts.pory"
+	faceplayer
+# 908 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
+# 910 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_Dugtrio_ToGalecrest_1
+	return
+
+Common_EventScript_Dugtrio_ToGalecrest_1:
+# 911 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 913 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 914 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 915 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 916 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_GALECREST_CITY, 31, 65
+	return
+
+
 # 824 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
 # 824 "data//maps/TempCopyMap/scripts.pory"
@@ -1733,6 +1785,11 @@ Common_EventScript_DrifblimTravels_ToGalecrest_Text_0:
 # 864 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Galecrest City. Fly there?$"
+
+Common_EventScript_Dugtrio_ToRoute3_Text_0:
+# 893 "data//maps/TempCopyMap/scripts.pory"
+	.string "Dugtrio is digging into the ground.\n"
+	.string "Follow it?$"
 
 Common_Text_Greta_Comecome::
 # 494 "data//maps/TempCopyMap/scripts.pory"

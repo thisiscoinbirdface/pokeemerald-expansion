@@ -228,8 +228,8 @@
       "x": 35,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_FENNILAHL_TUNNEL",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_ROUTE3_UNDERPASS",
+      "dest_warp_id": "12"
     },
     {
       "x": 41,
