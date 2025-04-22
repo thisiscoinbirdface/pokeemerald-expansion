@@ -35,5 +35,5 @@ Movement_SetInvisible:
 
 gText_FallDownHole::
 	.string "The cracked floor breaks under the\n"
-	.string "weight of the HEAVY DUTY BOOTS!$"
+	.string "weight of the Trekking Boots!$"
 

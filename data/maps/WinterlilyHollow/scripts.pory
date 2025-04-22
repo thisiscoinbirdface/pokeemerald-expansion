@@ -232,19 +232,54 @@ script WinterlilyHollow_Sneasler{
     end
 }
 
-
 script WinterlilyHollow_NPC_SurfMan{
     lockall
     faceplayer
-    msgbox(format("When I was younger, I once encountered a strange Pokemon in the Mirroh Caverns. It was shaped like a blue plant and scattered poisonous spikes everywhere! I'd like to see that Pokemon again."))
+
+    if (flag(FLAG_WINTERLILY_HOLLOW_SURF)){
+        msgbox(format("Ivy River takes you straight down to Pelluca City. Far better than trekking down Mt. Mirroh!"))
+    }
+
+    msgbox(format("I surfed up here through the Ivy River. Since I'm settling here, I don't need the HM any more. What I need instead is a Heart Scale to decorate my room. I'd be happy to trade my HM with anyone who can give me a Heart Scale. Have you got 3 Blue Shards?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("My search continues!"))
+    }
+
+    checkitem(ITEM_HEART_SCALE)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Hey, you don't have any Heart Scales!"))
+    }
+
+    msgbox(format("{PLAYER} gave the man a Heart Scale"), MSGBOX_SIGN)
+    msgbox(format("Thank you! This is just what I wanted. As promised, here you go."))
+    giveitem(ITEM_HM05)
+    msgbox(format("You don't need to teach your Pokemon the move. Any compatible Pokemon can use it on any water body!"))
+
+    setflag(FLAG_WINTERLILY_HOLLOW_SURF)
+
+}
+script WinterlilyHollow_NPC_SurfManAlt{
+    lockall
+    faceplayer
+    msgbox(format("When I was younger, I once encountered a strange Pokemon in the Mirroh Caverns. It was shaped like a blue plant and scattered poisonous spikes everywhere! I'd like to see that Pokemon again. Do you have such a Pokemon?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Ah. My search continues then."))
+    }
+
     special(ChoosePartyMon)                 //choose your mon
     waitstate                               //wait
     copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+    copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+    specialvar(VAR_RESULT, GetTradeSpecies)
 
-    if (var(VAR_0x8004) == SPECIES_GLIMMORA){
+    if (var(VAR_RESULT) == SPECIES_GLIMMET){
         giveitem(ITEM_HM05)
     } 
-    
+    if (var(VAR_RESULT) == SPECIES_GLIMMORA){
+        giveitem(ITEM_HM05)
+    } 
+
     releaseall
     end
 }

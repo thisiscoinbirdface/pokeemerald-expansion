@@ -125,7 +125,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(3, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Y-yes boss! Right here boss!\pGRUNT: These HEAVY DUTY BOOTS are making it hard to move..."))
+    msgbox(format("GRUNT: Y-yes boss! Right here boss!\pGRUNT: These Trekking Boots are making it hard to move..."))
     release    
 
     applymovement(3, moves(walk_up face_right))
@@ -163,7 +163,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)    
     delay(30)
 
-    msgbox(format("MELEA: What are you doing?!\pGRUNT: Boss, my HEAVY DUTY BOOTS got stuck on these cracks!\pMELEA: Hurry, idiot! Toss those boots aside!"))
+    msgbox(format("MELEA: What are you doing?!\pGRUNT: Boss, my Trekking Boots got stuck on these cracks!\pMELEA: Hurry, idiot! Toss those Trekking Boots aside!"))
     release
 
     clearflag(FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS)

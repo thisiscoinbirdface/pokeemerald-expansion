@@ -14238,4 +14238,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_StellarTeraShard,
     },
 
+    [ITEM_TREKKING_BOOTS] =
+    {
+        .name = _("Heavy-Duty Boots"),
+        .pluralName = _("Heavy-Duty Boots"),
+        .price = 999999,
+        .description = COMPOUND_STRING(
+            "A pair of heavyset\n"
+            "boots perfect for\n"
+            "tough treks."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_HeavyDutyBoots,
+        .iconPalette = gItemIconPalette_HeavyDutyBoots,
+    },
+
+
 };
