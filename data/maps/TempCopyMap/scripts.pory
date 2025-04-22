@@ -894,7 +894,7 @@ script Common_EventScript_Dugtrio_ToRoute3{
 
     if (var(VAR_RESULT) == 1){
         release
-        //fly
+        //dig
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         delay(30)
@@ -909,11 +909,13 @@ script Common_EventScript_Dugtrio_ToGalecrest{
 
     if (var(VAR_RESULT) == 1){
         release
-        //fly
+        //dig
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         delay(30)
         warp(MAP_GALECREST_CITY, 31, 64)
     }
-
 }
+
+
+
