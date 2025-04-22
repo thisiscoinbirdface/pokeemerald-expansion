@@ -445,11 +445,11 @@ LilyPond_Fisherman_C_2:
 # 273 "data//maps/IvyRiver/scripts.pory"
 	removeobject 8
 # 276 "data//maps/IvyRiver/scripts.pory"
-	setvar VAR_LILYPOND_FISHERMAN_QUEST, 4
-# 277 "data//maps/IvyRiver/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1
-# 278 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_FISHERMAN_QUEST_START
+# 277 "data//maps/IvyRiver/scripts.pory"
+	setvar VAR_LILYPOND_FISHERMAN_QUEST, 4
+# 278 "data//maps/IvyRiver/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1
 	end
 
 LilyPond_Fisherman_C_5:

@@ -5285,7 +5285,7 @@
       "id": "LAYOUT_IVY_RIVER_MAIN",
       "name": "IvyRiver_Main_Layout",
       "width": 50,
-      "height": 130,
+      "height": 115,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/IvyRiver_Main/border.bin",

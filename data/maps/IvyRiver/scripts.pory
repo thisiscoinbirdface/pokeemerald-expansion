@@ -273,9 +273,9 @@ script LilyPond_Fisherman_C{
         removeobject(8)
 
         //setvar, increment quest
+        setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
         setvar(VAR_LILYPOND_FISHERMAN_QUEST, 4)
         subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1)        
-        setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
         end
     }
 
