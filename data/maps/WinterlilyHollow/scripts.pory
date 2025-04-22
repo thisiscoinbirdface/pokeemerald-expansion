@@ -240,7 +240,7 @@ script WinterlilyHollow_NPC_SurfMan{
         msgbox(format("Ivy River takes you straight down to Pelluca City. Far better than trekking down Mt. Mirroh!"))
     }
 
-    msgbox(format("I surfed up here through the Ivy River. Since I'm settling here, I don't need the HM any more. What I need instead is a Heart Scale to decorate my room. I'd be happy to trade my HM with anyone who can give me a Heart Scale. Have you got 3 Blue Shards?"), MSGBOX_YESNO)
+    msgbox(format("I surfed up here through the Ivy River. Since I'm settling here, I don't need the HM any more. What I need instead is a Heart Scale to decorate my room. I'd be happy to trade my HM with anyone who can give me a Heart Scale. Have you got one?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         msgbox(format("My search continues!"))
@@ -248,7 +248,8 @@ script WinterlilyHollow_NPC_SurfMan{
 
     checkitem(ITEM_HEART_SCALE)
     if (var(VAR_RESULT) == 0){
-        msgbox(format("Hey, you don't have any Heart Scales!"))
+        msgbox(format("Hey, you don't have any Heart Scales!"), MSGBOX_NPC)
+        end
     }
 
     msgbox(format("{PLAYER} gave the man a Heart Scale"), MSGBOX_SIGN)

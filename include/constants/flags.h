@@ -223,8 +223,8 @@
 #define FLAG_MIRROH_BERGMITE_B 0x49E // Unused Flag
 #define FLAG_MIRROH_BERGMITE_C 0x49F // Unused Flag
 #define FLAG_ANCIENT_MIRROH_AERODACTYL 0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1 0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2 0x4A2 // Unused Flag
+#define FLAG_LILYPOND_DREEPY_FIRST 0x4A1 // Unused Flag
+#define FLAG_LILYPOND_DREEPY_SECOND 0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3 0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4 0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5 0x4A5 // Unused Flag
