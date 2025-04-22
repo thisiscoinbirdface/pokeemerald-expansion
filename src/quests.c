@@ -455,7 +455,7 @@ static const struct SubQuest sSubQuests4[QUEST_4_SUB_COUNT] =
 	),
 
 	sub_quest(
-		2,
+		3,
 		gText_SubQuest4_Name4,
 		gText_SubQuest4_Desc4,
 		gText_SideQuestMap3,
@@ -463,6 +463,39 @@ static const struct SubQuest sSubQuests4[QUEST_4_SUB_COUNT] =
 		OBJECT,
 		sText_Empty
   ),
+};
+
+static const struct SubQuest sSubQuests5[QUEST_5_SUB_COUNT] =
+{
+	sub_quest(
+		0,
+		gText_SubQuest5_Name1,
+		gText_SubQuest5_Desc1,
+		gText_SideQuestMap1,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+	),
+
+	sub_quest(
+		1,
+		gText_SubQuest5_Name2,
+		gText_SubQuest5_Desc2,
+		gText_SideQuestMap2,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+	),
+
+	sub_quest(
+		2,
+		gText_SubQuest5_Name3,
+		gText_SubQuest5_Desc3,
+		gText_SideQuestMap3,
+		OBJ_EVENT_GFX_WALLY,
+		OBJECT,
+		sText_Empty
+	),
 };
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
@@ -643,7 +676,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
 	      NULL,
-	      0
+	      QUEST_5_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_18,

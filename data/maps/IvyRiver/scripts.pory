@@ -189,4 +189,56 @@ script LilyPond_Cave_Lapras{
 script LilyPond_Fisherman_A{
 
 }
+script LilyPond_Fisherman_B{
+
+}
+script LilyPond_Fisherman_C{
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {
+        msgbox(format("Have you delivered the mail to my brothers yet?"), MSGBOX_NPC)
+        end
+    }
+
+
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {
+        msgbox(format("Have you delivered the mail to my brothers yet?"), MSGBOX_NPC)
+        end
+    }
+
+
+    //Startquest
+    lockall
+    msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one. Do you want to hear our story?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Just as well. It hurts to tell it."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("We were four brothers. Many years ago, we came to Lily Pond to fish for our first Pokemon. While three of us stayed here, our youngest brother said he wanted to go down the waterfall and into Ivy River. We tried to stop him, but he went away, and was never seen again."))
+    release
+    delay(16)
+    message(format("A sad story, I know."))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm sorry to hear that.", "I'm sure he's safe.", "Don't give up!")
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Thank you.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
+        end
+    }
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("Don't give up, you say? But what can we do? Search again?\p...\pBut you're right, of course. We mustn't lose hope! I'd like to try searching once again. Perhaps my brothers would too. If I write them a letter asking them to help search, would you deliver it to them?"))
+
+    
+    setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
+    setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+
+    releaseall
+    end
+}
+
+
 

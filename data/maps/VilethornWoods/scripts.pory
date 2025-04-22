@@ -343,3 +343,14 @@ script VilethornWoods_NPC3{
 }
 
 
+
+
+
+
+script VilethornWoods_Celebi_Seed{
+    msgbox(format("It's fertile soil...but not the same as berry tree soil."))
+    release
+    end
+}
+
+

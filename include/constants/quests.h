@@ -44,7 +44,7 @@
 #define QUEST_CORMORIA_HISTORY          13
 #define QUEST_PELLUCA_MAYOR             14
 #define QUEST_MIRROH_NURSE_CHANSEY      15
-#define QUEST_17        16
+#define QUEST_LILYPOND_FISHERMAN        16
 #define QUEST_18        17
 #define QUEST_19        18
 #define QUEST_20        19
@@ -80,9 +80,9 @@
 #define SUB_QUEST_18        17  //QUEST_CORMORIA_HISTORY
 #define SUB_QUEST_19        18  //QUEST_CORMORIA_HISTORY
 #define SUB_QUEST_20        19  //QUEST_CORMORIA_HISTORY
-#define SUB_QUEST_21        20
-#define SUB_QUEST_22        21
-#define SUB_QUEST_23        22
+#define SUB_QUEST_21        20  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
+#define SUB_QUEST_22        21  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
+#define SUB_QUEST_23        22  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
 #define SUB_QUEST_24        23
 #define SUB_QUEST_25        24
 #define SUB_QUEST_26        25
@@ -95,7 +95,8 @@
 #define QUEST_2_SUB_COUNT 10
 #define QUEST_3_SUB_COUNT 3
 #define QUEST_4_SUB_COUNT 4
-#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT + QUEST_3_SUB_COUNT + QUEST_4_SUB_COUNT + 1)
+#define QUEST_5_SUB_COUNT 3
+#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT + QUEST_3_SUB_COUNT + QUEST_4_SUB_COUNT + QUEST_5_SUB_COUNT + 1)
 
 #define QUEST_ARRAY_COUNT (SUB_QUEST_COUNT > QUEST_COUNT ? SUB_QUEST_COUNT : QUEST_COUNT)
 #endif // GUARD_CONSTANTS_QUESTS_H

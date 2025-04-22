@@ -475,6 +475,14 @@ VilethornWoods_NPC3_5:
 	goto VilethornWoods_NPC3_1
 
 
+VilethornWoods_Celebi_Seed::
+# 351 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_0
+# 352 "data//maps/VilethornWoods/scripts.pory"
+	release
+	end
+
+
 # 37 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_Ralts_FirstTrigger_Movement_0:
 # 37 "data//maps/VilethornWoods/scripts.pory"
@@ -783,3 +791,8 @@ VilethornWoods_NPC3_Text_3:
 # 339 "data//maps/VilethornWoods/scripts.pory"
 	.string "Just as well. It's a root after all -\n"
 	.string "what use would it have?$"
+
+VilethornWoods_Celebi_Seed_Text_0:
+# 351 "data//maps/VilethornWoods/scripts.pory"
+	.string "It's fertile soil...but not the same as\n"
+	.string "berry tree soil.$"

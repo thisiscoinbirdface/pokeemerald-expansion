@@ -282,7 +282,7 @@
     #define VAR_SUPPLY_DEPOT_STATE                           0x4081 // checks for the somber music or not
     #define VAR_PELLUCA_MAYOR_QUEST                          0x4064 // Unused Var
     #define VAR_MIRROH_NURSE_CHANSEY_QUEST                   0x4065 // Unused Var
-    #define VAR_ROUTE107_STATE                               0x4066 // Unused Var
+    #define VAR_LILYPOND_FISHERMAN_QUEST                     0x4066 // Unused Var
     #define VAR_ROUTE108_STATE                               0x4067 // Unused Var
     #define VAR_ROUTE109_STATE                               0x4068 // Unused Var
     #define VAR_ROUTE111_STATE                               0x406A // Unused Var

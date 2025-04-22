@@ -1342,7 +1342,7 @@ const u8 gText_SideQuestName_13[] = _("Fishy Business");
 const u8 gText_SideQuestName_14[] = _("The History of Cormoria");
 const u8 gText_SideQuestName_15[] = _("The Mayor's White Hair");
 const u8 gText_SideQuestName_16[] = _("The Healers Need Help!");
-const u8 gText_SideQuestName_17[] = _("Side Quest 17");
+const u8 gText_SideQuestName_17[] = _("The Lost Brother");
 const u8 gText_SideQuestName_18[] = _("Side Quest 18");
 const u8 gText_SideQuestName_19[] = _("Side Quest 19");
 const u8 gText_SideQuestName_20[] = _("Side Quest 20");
@@ -1374,7 +1374,7 @@ const u8 gText_SideQuestDesc_13[] = _("A Mega Sharpedo is terrorising the Pelluc
 const u8 gText_SideQuestDesc_14[] = _("To understand Team Somber's motives, I\nneed to learn more about the ancient\nhistory of Cormoria.");
 const u8 gText_SideQuestDesc_15[] = _("I need to find 5 Claunchers that were\n washed ashore in Pelluca City and\nsend them back into the river!");
 const u8 gText_SideQuestDesc_16[] = _("A Chansey is lost inside Mt Mirroh!\nThey've always healed me when I needed it,\nand now it's my turn to repay them!");
-const u8 gText_SideQuestDesc_17[] = _("Description 17");
+const u8 gText_SideQuestDesc_17[] = _("Three fishermen in Lily Pond want to\nsearch for their lost brother. Will they\nfind him or has too much time passed?");
 const u8 gText_SideQuestDesc_18[] = _("Description 18");
 const u8 gText_SideQuestDesc_19[] = _("Description 19");
 const u8 gText_SideQuestDesc_20[] = _("Description 20");
@@ -1515,6 +1515,15 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest4_Desc2[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of MT MIRROH. Could it\nbe related to Team Somber's goals?");
     const u8 gText_SubQuest4_Desc3[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of MT CERAM. Perhaps its tied\nto the Professor's disappearance?");
     const u8 gText_SubQuest4_Desc4[] = _("There's a cave painting of an ancient {PKMN}\nat the bottom of the GLIMMERING TRENCH. Is\nthis the final piece of the puzzle?");
+
+    //FISHERMEN (ZARUDE FISHERMEN SIDE QUEST)
+    const u8 gText_SubQuest5_Name1[] = _("Deliver The Letter");
+    const u8 gText_SubQuest5_Name2[] = _("Assemble in Ivy River!");
+    const u8 gText_SubQuest5_Name3[] = _("The Search Continues");
+
+    const u8 gText_SubQuest5_Desc1[] = _("");
+    const u8 gText_SubQuest5_Desc2[] = _("");
+    const u8 gText_SubQuest5_Desc3[] = _("");
 
 
 
