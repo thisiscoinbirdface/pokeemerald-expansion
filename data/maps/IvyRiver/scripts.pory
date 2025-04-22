@@ -192,58 +192,67 @@ script LilyPond_Fisherman_A{
         end
     }
 
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1){
-        msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)   
-        applymovement(1, moves(emote_question_mark))
-        waitmovement(0)
-        delay(24)
-        msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no? I'm going ahead!"))     
-        addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
-        setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
-        
-        //move the fisherman
-        applymovement(1, moves(walk_left face_up))
-        waitmovement(0)
-        delay(8)
-        removeobject(1)
-        //move the ship
-        applymovement(2, moves(walk_right * 10))
-        waitmovement(0)
-        removeobject(2)
-
-        end
-    }
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {goto(LilyPond_Fisherman_A_QuestScript)}
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {goto(LilyPond_Fisherman_A_QuestScript)}
 
 }
+script LilyPond_Fisherman_A_QuestScript{
+    msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)   
+    applymovement(1, moves(emote_question_mark))
+    waitmovement(0)
+    delay(24)
+    msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no? I'm going ahead!"))  
+    release   
+    setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
+    
+    //move the fisherman
+    applymovement(1, moves(walk_left face_up))
+    waitmovement(0)
+    delay(8)
+    removeobject(1)
+    //move the ship
+    applymovement(2, moves(walk_right * 10))
+    waitmovement(0)
+    removeobject(2)
+
+    end
+}
+
+
 script LilyPond_Fisherman_B{
     if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 0) {
         msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)
         end
     }
 
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1){
-        msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)   
-        applymovement(3, moves(emote_question_mark))
-        waitmovement(0)
-        delay(24)
-        msgbox(format("You have a letter for me? What does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
-        addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
-        setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
-
-        //move the fisherman
-        applymovement(3, moves(walk_right face_up))
-        waitmovement(0)
-        delay(8)
-        removeobject(3)
-        //move the ship
-        applymovement(5, moves(walk_right * 5 walk_down *7))
-        waitmovement(0)
-        removeobject(5)
-
-        end
-    }
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {goto(LilyPond_Fisherman_B_QuestScript)}
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {goto(LilyPond_Fisherman_B_QuestScript)}    
 
 }
+
+script LilyPond_Fisherman_B_QuestScript{
+    msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)   
+    applymovement(3, moves(emote_question_mark))
+    waitmovement(0)
+    delay(24)
+    msgbox(format("You have a letter for me? What does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
+    release
+    addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+    setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
+
+    //move the fisherman
+    applymovement(3, moves(walk_right face_up))
+    waitmovement(0)
+    delay(8)
+    removeobject(3)
+    //move the ship
+    applymovement(5, moves(walk_right * 5 walk_down *7))
+    waitmovement(0)
+    removeobject(5)
+
+    end    
+}
+
 script LilyPond_Fisherman_C{
     if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {
         msgbox(format("Have you delivered the mail to my brothers yet?"), MSGBOX_NPC)
