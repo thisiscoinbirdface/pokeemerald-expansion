@@ -228,8 +228,8 @@
 #define FLAG_LILYPOND_DREEPY_THIRD 0x4A3 // Unused Flag
 #define FLAG_LILYPOND_LAPRAS 0x4A4 // Unused Flag
 #define FLAG_LILYPOND_FISHERMAN_QUEST_START 0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6 0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7 0x4A7 // Unused Flag
+#define FLAG_LILYPOND_FISHERMAN_A_LETTER 0x4A6 // Unused Flag
+#define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8 0x4A8 // Unused Flag
 #define FLAG_UNUSED_0x1DE 0x1DE // Unused Flag
 #define FLAG_UNUSED_0x1DF 0x1DF // Unused Flag

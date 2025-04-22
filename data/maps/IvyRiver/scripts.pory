@@ -187,9 +187,61 @@ script LilyPond_Cave_Lapras{
 
 
 script LilyPond_Fisherman_A{
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 0) {
+        msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)
+        end
+    }
+
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1){
+        msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)   
+        applymovement(1, moves(emote_question_mark))
+        waitmovement(0)
+        delay(24)
+        msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no? I'm going ahead!"))     
+        addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+        setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
+        
+        //move the fisherman
+        applymovement(1, moves(walk_left face_up))
+        waitmovement(0)
+        delay(8)
+        removeobject(1)
+        //move the ship
+        applymovement(2, moves(walk_right * 10))
+        waitmovement(0)
+        removeobject(2)
+
+        end
+    }
 
 }
 script LilyPond_Fisherman_B{
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 0) {
+        msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)
+        end
+    }
+
+    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1){
+        msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)   
+        applymovement(3, moves(emote_question_mark))
+        waitmovement(0)
+        delay(24)
+        msgbox(format("You have a letter for me? What does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
+        addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+        setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
+
+        //move the fisherman
+        applymovement(3, moves(walk_right face_up))
+        waitmovement(0)
+        delay(8)
+        removeobject(3)
+        //move the ship
+        applymovement(5, moves(walk_right * 5 walk_down *7))
+        waitmovement(0)
+        removeobject(5)
+
+        end
+    }
 
 }
 script LilyPond_Fisherman_C{
@@ -231,8 +283,9 @@ script LilyPond_Fisherman_C{
     }
 
     msgbox(format("Don't give up, you say? But what can we do? Search again?\p...\pBut you're right, of course. We mustn't lose hope! I'd like to try searching once again. Perhaps my brothers would too. If I write them a letter asking them to help search, would you deliver it to them?"))
-
-    
+    release
+    giveitem(ITEM_FISHERMAN_LETTER)
+    startquest(QUEST_LILYPOND_FISHERMAN)
     setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
     setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
 

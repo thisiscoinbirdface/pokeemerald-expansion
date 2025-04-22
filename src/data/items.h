@@ -14271,4 +14271,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_EonTicket,
         .iconPalette = gItemIconPalette_EonTicket,
     },
+    [ITEM_FISHERMAN_LETTER] =
+    {
+        .name = _("Brother's Letter"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A letter written by\n"
+            "a fisherman to his\n"
+            "two brothers."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Letter,
+        .iconPalette = gItemIconPalette_LavaCookieAndLetter,
+    },
+
 };
