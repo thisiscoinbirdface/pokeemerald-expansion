@@ -12,26 +12,7 @@ mapscripts IvyRiver_MapScripts{}
 //lapras quest
 //not a quest, but dreepy tells you to follow
 //inside a cave, you see a wounded lapras
-script LilyPond_Dreepy_Trigger_Second{
-    if (flag(FLAG_LILYPOND_DREEPY_SECOND)) {end}
 
-    lockall
-    delay(24)
-    applymovement(LOCALID_DR_SC, moves(face_down emote_exclamation_mark))
-    delay(24)
-
-    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
-    applymovement(LOCALID_DR_SC, moves(walk_fast_down *2 jump_in_place_left emote_exclamation_mark jump_in_place_left jump_in_place_left ))
-    waitmovement(0)
-    delay(40)
-
-    applymovement(LOCALID_DR_SC, moves(walk_fast_up * 6))
-    waitmovement(0)
-    removeobject(LOCALID_DR_SC)
-
-    setflag(FLAG_LILYPOND_DREEPY_SECOND)
-
-}
 
 script LilyPond_Dreepy_Trigger_First{
     if (flag(FLAG_LILYPOND_DREEPY_FIRST)) {end}
@@ -53,3 +34,25 @@ script LilyPond_Dreepy_Trigger_First{
     setflag(FLAG_LILYPOND_DREEPY_FIRST)
 
 }
+
+script LilyPond_Dreepy_Trigger_Second{
+    if (flag(FLAG_LILYPOND_DREEPY_SECOND)) {end}
+
+    lockall
+    delay(24)
+    applymovement(LOCALID_DR_SC, moves(face_down emote_exclamation_mark))
+    delay(24)
+
+    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
+    applymovement(LOCALID_DR_SC, moves(walk_fast_down *3 jump_in_place_left emote_exclamation_mark jump_in_place_left jump_in_place_left ))
+    waitmovement(0)
+    delay(40)
+
+    applymovement(LOCALID_DR_SC, moves(walk_fast_up * 7))
+    waitmovement(0)
+    removeobject(LOCALID_DR_SC)
+
+    setflag(FLAG_LILYPOND_DREEPY_SECOND)
+
+}
+

@@ -93,7 +93,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DREEPY)",
       "x": 50,
-      "y": 13,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 2,
