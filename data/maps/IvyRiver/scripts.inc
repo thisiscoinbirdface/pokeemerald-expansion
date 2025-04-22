@@ -350,7 +350,7 @@ LilyPond_Fisherman_B_QuestScript::
 # 241 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_FISHERMAN_B_LETTER
 # 244 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Fisherman_B_QuestScript_Movement_0
+	applymovement 3, LilyPond_Fisherman_A_QuestScript_Movement_1
 # 245 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
 # 246 "data//maps/IvyRiver/scripts.pory"
@@ -358,7 +358,7 @@ LilyPond_Fisherman_B_QuestScript::
 # 247 "data//maps/IvyRiver/scripts.pory"
 	removeobject 3
 # 249 "data//maps/IvyRiver/scripts.pory"
-	applymovement 5, LilyPond_Fisherman_B_QuestScript_Movement_1
+	applymovement 5, LilyPond_Fisherman_B_QuestScript_Movement_0
 # 250 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
 # 251 "data//maps/IvyRiver/scripts.pory"
@@ -680,16 +680,8 @@ LilyPond_Fisherman_A_QuestScript_Movement_2:
 	walk_right
 	step_end
 
-# 244 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_B_QuestScript_Movement_0:
-# 244 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 244 "data//maps/IvyRiver/scripts.pory"
-	face_up
-	step_end
-
 # 249 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_B_QuestScript_Movement_1:
+LilyPond_Fisherman_B_QuestScript_Movement_0:
 # 249 "data//maps/IvyRiver/scripts.pory"
 	walk_right
 # 249 "data//maps/IvyRiver/scripts.pory"

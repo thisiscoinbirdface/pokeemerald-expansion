@@ -241,7 +241,7 @@ script LilyPond_Fisherman_B_QuestScript{
     setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
 
     //move the fisherman
-    applymovement(3, moves(walk_right face_up))
+    applymovement(3, moves(walk_left face_up))
     waitmovement(0)
     delay(8)
     removeobject(3)
