@@ -146,10 +146,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
-      "x": 37,
-      "y": 43,
+      "x": 16,
+      "y": 22,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -379,19 +379,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
-      "x": 40,
-      "y": 45,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "VilethornWoods_EventScript_NurseDemo",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 34,
       "y": 5,
@@ -452,13 +439,6 @@
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_VILETHORN_HOUSE",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 40,
-      "y": 44,
-      "elevation": 0,
-      "dest_map": "MAP_VILETHORN_MANSION",
       "dest_warp_id": "0"
     }
   ],
@@ -528,8 +508,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 44,
-      "y": 43,
+      "x": 5,
+      "y": 28,
       "elevation": 0,
       "item": "ITEM_ZINC",
       "flag": "FLAG_HIDDEN_ITEM_VILETHORN_WOODS_C"
