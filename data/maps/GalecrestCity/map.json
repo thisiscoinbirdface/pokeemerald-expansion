@@ -595,7 +595,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUGTRIO_ALOLA)",
       "x": 31,
-      "y": 66,
+      "y": 65,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,

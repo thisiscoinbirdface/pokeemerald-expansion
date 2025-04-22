@@ -913,7 +913,7 @@ script Common_EventScript_Dugtrio_ToGalecrest{
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         delay(30)
-        warp(MAP_GALECREST_CITY, 31, 65)
+        warp(MAP_GALECREST_CITY, 31, 64)
     }
 
 }

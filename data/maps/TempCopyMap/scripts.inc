@@ -1450,7 +1450,7 @@ Common_EventScript_Dugtrio_ToGalecrest_1:
 # 915 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 916 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_GALECREST_CITY, 31, 65
+	warp MAP_GALECREST_CITY, 31, 64
 	return
 
 
