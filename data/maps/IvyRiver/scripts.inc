@@ -86,6 +86,12 @@ LilyPond_Dreepy_Trigger_First_Movement_0:
 # 26 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Dreepy_Trigger_First_Movement_1:
 # 26 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_left
+# 26 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_left
+# 26 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_left
+# 26 "data//maps/IvyRiver/scripts.pory"
 	jump_in_place_left
 # 26 "data//maps/IvyRiver/scripts.pory"
 	emote_exclamation_mark
@@ -97,6 +103,12 @@ LilyPond_Dreepy_Trigger_First_Movement_1:
 
 # 30 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Dreepy_Trigger_First_Movement_2:
+# 30 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_right
+# 30 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_right
+# 30 "data//maps/IvyRiver/scripts.pory"
+	walk_fast_right
 # 30 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
 # 30 "data//maps/IvyRiver/scripts.pory"

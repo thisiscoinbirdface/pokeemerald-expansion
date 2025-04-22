@@ -23,11 +23,11 @@ script LilyPond_Dreepy_Trigger_First{
     delay(24)
 
     playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
-    applymovement(LOCALID_DR_FR, moves(jump_in_place_left emote_exclamation_mark jump_in_place_left jump_in_place_left ))
+    applymovement(LOCALID_DR_FR, moves(walk_fast_left * 3 jump_in_place_left emote_exclamation_mark jump_in_place_left jump_in_place_left ))
     waitmovement(0)
     delay(40)
 
-    applymovement(LOCALID_DR_FR, moves(walk_fast_down * 6))
+    applymovement(LOCALID_DR_FR, moves(walk_fast_right * 3 walk_fast_down * 6))
     waitmovement(0)
     removeobject(LOCALID_DR_FR)
 

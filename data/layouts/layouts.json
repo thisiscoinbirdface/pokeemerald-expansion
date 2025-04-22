@@ -5450,6 +5450,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Silversun_Pokemart/border.bin",
       "blockdata_filepath": "data/layouts/Silversun_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_LILY_POND_CAVE",
+      "name": "LilyPondCave_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/LilyPondCave/border.bin",
+      "blockdata_filepath": "data/layouts/LilyPondCave/map.bin"
     }
   ]
 }
