@@ -1,7 +1,11 @@
 raw`
     .set LOCALID_DR_FR, 7
     .set LOCALID_DR_SC, 6
+    .set LOCALID_DR_TH, 2   
+    .set LOCALID_LAP, 1
 `
+//note on raw: lapras and dreepy third are on different maps
+
 
 mapscripts IvyRiver_MapScripts{}
 
@@ -56,3 +60,96 @@ script LilyPond_Dreepy_Trigger_Second{
 
 }
 
+script LilyPond_Dreepy_Trigger_Third{
+     if (flag(FLAG_LILYPOND_DREEPY_THIRD)) {end}
+
+    lockall
+    delay(24)
+
+    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
+    applymovement(LOCALID_DR_TH, moves(walk_fast_down * 2 jump_in_place_down emote_exclamation_mark jump_in_place_down * 2 ))
+    waitmovement(0)
+    delay(40)
+
+    applymovement(LOCALID_DR_TH, moves(walk_fast_up * 7))
+    waitmovement(0)
+    removeobject(LOCALID_DR_TH)
+
+    setflag(FLAG_LILYPOND_DREEPY_THIRD)
+   
+}
+
+script LilyPond_Cave_Dreepy{
+    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
+    msgbox(format("Dreepy is nuzzling Lapras' wound, but it's not helping much."), MSGBOX_NPC)
+    end
+}
+script LilyPond_Cave_Drakloak{
+    playmoncry(SPECIES_DRAKLOAK, CRY_MODE_NORMAL)
+    msgbox(format("Drakloak looks worried. Must be hard, knowing there's nothing you can do..."), MSGBOX_NPC)
+    end
+}
+script LilyPond_Cave_Dragapult{
+    playmoncry(SPECIES_DRAGAPULT, CRY_MODE_NORMAL)
+    msgbox(format("Dragapult is looking around. Perhaps its trying to keep everyone safe?"), MSGBOX_NPC)
+    end
+}
+
+script LilyPond_Cave_Lapras{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)    
+    msgbox(format("Lapras is crying in pain! What happened?\p...\pThere's a huge wound on its side! A regular Potion or Super Potion won't cut it for this..."), MSGBOX_NPC)
+    delay(8)
+    checkitem(ITEM_HYPER_POTION)
+    if (var(VAR_RESULT) == 0){end}
+
+    msgbox(format("Administer a Hyper Potion on Lapras' wound?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0){end}
+
+    playse(SE_USE_ITEM)
+    msgbox(format("{PLAYER} used a Hyper Potion on Lapras."))
+    release
+    delay(16)
+    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)    
+    msgbox(format("Lapras is looking better!"))
+    release
+
+    //dragapult leaves
+    applymovement(3, moves(emote_exclamation_mark))
+    applymovement(4, moves(emote_exclamation_mark))
+    applymovement(5, moves(emote_exclamation_mark))
+    applymovement(6, moves(emote_exclamation_mark))
+    waitmovement(0)
+    
+    delay(24)
+    applymovement(1, moves(walk_up * 7))
+    applymovement(3, moves(walk_down * 4))
+    applymovement(4, moves(walk_down * 7))
+    applymovement(5, moves(walk_down * 7))
+    applymovement(6, moves(walk_down * 7))
+    waitmovement(0)    
+
+    delay(8)
+    applymovement(3, moves(walk_left walk_up * 2))
+    waitmovement(0)
+
+    delay(16)
+
+    applymovement(3, moves(emote_exclamation_mark))
+    msgbox(format("DREEPY: dreee!!!"))
+    release
+    applymovement(3, moves(walk_fast_down * 4))
+    waitmovement(0)
+
+    removeobject(1)
+    removeobject(3)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+
+    setflag(FLAG_LILYPOND_LAPRAS)
+    //thank you
+
+
+}

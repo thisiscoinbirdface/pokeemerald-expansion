@@ -225,8 +225,8 @@
 #define FLAG_ANCIENT_MIRROH_AERODACTYL 0x4A0 // Unused Flag
 #define FLAG_LILYPOND_DREEPY_FIRST 0x4A1 // Unused Flag
 #define FLAG_LILYPOND_DREEPY_SECOND 0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3 0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4 0x4A4 // Unused Flag
+#define FLAG_LILYPOND_DREEPY_THIRD 0x4A3 // Unused Flag
+#define FLAG_LILYPOND_LAPRAS 0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5 0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6 0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7 0x4A7 // Unused Flag
