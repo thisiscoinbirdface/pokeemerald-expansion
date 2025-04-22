@@ -177,49 +177,57 @@ LilyPond_Cave_Lapras::
 	applymovement 6, LilyPond_Cave_Lapras_Movement_0
 # 123 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 124 "data//maps/IvyRiver/scripts.pory"
 	delay 24
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	applymovement 1, LilyPond_Cave_Lapras_Movement_1
+# 126 "data//maps/IvyRiver/scripts.pory"
+	waitmovement 0
 # 127 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Lapras_Movement_2
+	applymovement 1, LilyPond_Cave_Lapras_Movement_2
 # 128 "data//maps/IvyRiver/scripts.pory"
-	applymovement 4, LilyPond_Cave_Lapras_Movement_3
+	applymovement 3, LilyPond_Cave_Lapras_Movement_3
 # 129 "data//maps/IvyRiver/scripts.pory"
-	applymovement 5, LilyPond_Cave_Lapras_Movement_3
+	applymovement 4, LilyPond_Cave_Lapras_Movement_4
 # 130 "data//maps/IvyRiver/scripts.pory"
-	applymovement 6, LilyPond_Cave_Lapras_Movement_3
+	applymovement 5, LilyPond_Cave_Lapras_Movement_4
 # 131 "data//maps/IvyRiver/scripts.pory"
+	applymovement 6, LilyPond_Cave_Lapras_Movement_4
+# 132 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
-# 133 "data//maps/IvyRiver/scripts.pory"
-	delay 8
 # 134 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Lapras_Movement_4
+	delay 8
 # 135 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, LilyPond_Cave_Lapras_Movement_5
+# 136 "data//maps/IvyRiver/scripts.pory"
+	applymovement 3, LilyPond_Cave_Lapras_Movement_6
 # 137 "data//maps/IvyRiver/scripts.pory"
-	delay 16
-# 139 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Lapras_Movement_0
-# 140 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Text_4
-# 141 "data//maps/IvyRiver/scripts.pory"
-	release
-# 142 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Lapras_Movement_5
-# 143 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
+# 139 "data//maps/IvyRiver/scripts.pory"
+	delay 16
+# 141 "data//maps/IvyRiver/scripts.pory"
+	playmoncry SPECIES_DREEPY, CRY_MODE_NORMAL
+# 142 "data//maps/IvyRiver/scripts.pory"
+	applymovement 3, LilyPond_Cave_Lapras_Movement_0
+# 143 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Cave_Lapras_Text_4
+# 144 "data//maps/IvyRiver/scripts.pory"
+	release
 # 145 "data//maps/IvyRiver/scripts.pory"
-	removeobject 1
+	applymovement 3, LilyPond_Cave_Lapras_Movement_7
 # 146 "data//maps/IvyRiver/scripts.pory"
-	removeobject 3
-# 147 "data//maps/IvyRiver/scripts.pory"
-	removeobject 4
+	waitmovement 0
 # 148 "data//maps/IvyRiver/scripts.pory"
-	removeobject 5
+	removeobject 1
 # 149 "data//maps/IvyRiver/scripts.pory"
-	removeobject 6
+	removeobject 3
+# 150 "data//maps/IvyRiver/scripts.pory"
+	removeobject 4
 # 151 "data//maps/IvyRiver/scripts.pory"
+	removeobject 5
+# 152 "data//maps/IvyRiver/scripts.pory"
+	removeobject 6
+# 154 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_LAPRAS
 	return
 
@@ -344,34 +352,26 @@ LilyPond_Cave_Lapras_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Lapras_Movement_1:
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
-	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
-	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
-	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
-	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
-	walk_up
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
 	step_end
 
 # 127 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Lapras_Movement_2:
 # 127 "data//maps/IvyRiver/scripts.pory"
-	walk_down
+	walk_up
 # 127 "data//maps/IvyRiver/scripts.pory"
-	walk_down
+	walk_up
 # 127 "data//maps/IvyRiver/scripts.pory"
-	walk_down
+	walk_up
 # 127 "data//maps/IvyRiver/scripts.pory"
-	walk_down
+	walk_up
+# 127 "data//maps/IvyRiver/scripts.pory"
+	walk_up
 	step_end
 
 # 128 "data//maps/IvyRiver/scripts.pory"
@@ -384,33 +384,51 @@ LilyPond_Cave_Lapras_Movement_3:
 	walk_down
 # 128 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 128 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 128 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 128 "data//maps/IvyRiver/scripts.pory"
-	walk_down
 	step_end
 
-# 134 "data//maps/IvyRiver/scripts.pory"
+# 129 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Lapras_Movement_4:
-# 134 "data//maps/IvyRiver/scripts.pory"
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+# 129 "data//maps/IvyRiver/scripts.pory"
+	walk_down
+	step_end
+
+# 135 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Cave_Lapras_Movement_5:
+# 135 "data//maps/IvyRiver/scripts.pory"
+	face_down
+	step_end
+
+# 136 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Cave_Lapras_Movement_6:
+# 136 "data//maps/IvyRiver/scripts.pory"
 	walk_left
-# 134 "data//maps/IvyRiver/scripts.pory"
+# 136 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 134 "data//maps/IvyRiver/scripts.pory"
+# 136 "data//maps/IvyRiver/scripts.pory"
 	walk_up
 	step_end
 
-# 142 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Cave_Lapras_Movement_5:
-# 142 "data//maps/IvyRiver/scripts.pory"
+# 145 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Cave_Lapras_Movement_7:
+# 145 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 142 "data//maps/IvyRiver/scripts.pory"
+# 145 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 142 "data//maps/IvyRiver/scripts.pory"
+# 145 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 142 "data//maps/IvyRiver/scripts.pory"
+# 145 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -453,5 +471,5 @@ LilyPond_Cave_Lapras_Text_3:
 	.string "Lapras is looking better!$"
 
 LilyPond_Cave_Lapras_Text_4:
-# 140 "data//maps/IvyRiver/scripts.pory"
+# 143 "data//maps/IvyRiver/scripts.pory"
 	.string "DREEPY: dreee!!!$"

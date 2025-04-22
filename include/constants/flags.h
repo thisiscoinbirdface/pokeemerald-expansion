@@ -227,7 +227,7 @@
 #define FLAG_LILYPOND_DREEPY_SECOND 0x4A2 // Unused Flag
 #define FLAG_LILYPOND_DREEPY_THIRD 0x4A3 // Unused Flag
 #define FLAG_LILYPOND_LAPRAS 0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5 0x4A5 // Unused Flag
+#define FLAG_LILYPOND_FISHERMAN_QUEST_START 0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6 0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7 0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8 0x4A8 // Unused Flag
@@ -249,14 +249,14 @@
 #define FLAG_UNUSED_0x4BE 0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF 0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0 0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x054  0x54  // Unused Flag
-#define FLAG_UNUSED_0x055  0x55  // Unused Flag
-#define FLAG_UNUSED_0x068  0x68  // Unused Flag
-#define FLAG_UNUSED_0x0E9  0xE9 // Unused Flag
-#define FLAG_UNUSED_0x1AA  0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB  0x1AB // Unused Flag
-#define FLAG_UNUSED_0x1DA  0x1DA // Unused Flag
-#define FLAG_UNUSED_0x2D9  0x2D9 // Unused Flag
+#define FLAG_UNUSED_0x054 0x54  // Unused Flag
+#define FLAG_UNUSED_0x055 0x55  // Unused Flag
+#define FLAG_UNUSED_0x068 0x68  // Unused Flag
+#define FLAG_UNUSED_0x0E9 0xE9 // Unused Flag
+#define FLAG_UNUSED_0x1AA 0x1AA // Unused Flag
+#define FLAG_UNUSED_0x1AB 0x1AB // Unused Flag
+#define FLAG_UNUSED_0x1DA 0x1DA // Unused Flag
+#define FLAG_UNUSED_0x2D9 0x2D9 // Unused Flag
 
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS

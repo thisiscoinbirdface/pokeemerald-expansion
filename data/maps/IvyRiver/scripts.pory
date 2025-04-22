@@ -121,9 +121,10 @@ script LilyPond_Cave_Lapras{
     applymovement(5, moves(emote_exclamation_mark))
     applymovement(6, moves(emote_exclamation_mark))
     waitmovement(0)
-    
     delay(24)
-    applymovement(1, moves(walk_up * 7))
+    applymovement(1, moves(walk_up * 2))
+    waitmovement(0)        
+    applymovement(1, moves(walk_up * 5))
     applymovement(3, moves(walk_down * 4))
     applymovement(4, moves(walk_down * 7))
     applymovement(5, moves(walk_down * 7))
@@ -131,14 +132,17 @@ script LilyPond_Cave_Lapras{
     waitmovement(0)    
 
     delay(8)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(3, moves(walk_left walk_up * 2))
     waitmovement(0)
 
     delay(16)
 
-    applymovement(3, moves(emote_exclamation_mark))
+    playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)    
+    applymovement(3, moves(emote_exclamation_mark jump_in_place_up))
     msgbox(format("DREEPY: dreee!!!"))
     release
+    delay(16)
     applymovement(3, moves(walk_fast_down * 4))
     waitmovement(0)
 
@@ -150,6 +154,39 @@ script LilyPond_Cave_Lapras{
 
     setflag(FLAG_LILYPOND_LAPRAS)
     //thank you
-
+    releaseall
+    end
 
 }
+
+
+
+
+
+
+
+
+
+//fisherman quest - get trolling rod and legendary
+//three brothers are fishing in lily pond
+//when they were young, they had a fourth brother who went missing somewhere in ivy river
+//brother was raised by zarude
+
+//part 1: deliver mail to the other two fishermen (get rod for this)
+    //the mail is asking the brothers if they want to try and search
+    //player has input and says yes
+//part 2: meet them further south (access to legendary)
+    //they begin searching and ask the player to help
+    //find a boy's scarf
+    //take it back to the fishermen - they confirm it's their brothers
+//part 3: 
+    //zarude and brother are there
+    //reunited
+    //zarude leaves
+//part 4: find zarude later in that patch
+
+
+script LilyPond_Fisherman_A{
+
+}
+
