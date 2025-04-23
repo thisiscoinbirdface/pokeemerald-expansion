@@ -36,7 +36,8 @@ script IvyRiver_Ranger_FirstQuest{
         msgbox(format("Hmm? Ravine has a package for me?"))
         release
         removeitem(ITEM_RANGER_PACKAGE)
-        msgbox(format("{PLAYER} gave the Ranger scientist the Ranger Package"))
+        delay(8)
+        msgbox(format("{PLAYER} gave the Ranger scientist the Ranger Package."))
         release
         delay(8)    
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
@@ -45,7 +46,7 @@ script IvyRiver_Ranger_FirstQuest{
         msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff indeed.\pYou see, {PLAYER}, the Ivy River Ranger Institute studies Pokémon evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about how Pokémon evolve, when they evolve, and what changes that might cause in its surroundings."))
         release
         delay(16)
-        msgbox(format("Director Ravine sent us a collection of items that induce evolution in certain Pokémon. We've been waiting for this for a long time!\pThank you, {PLAYER}\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission and I now promote you to the rank of Candidate!"))
+        msgbox(format("Director Ravine sent us a collection of items that induce evolution in certain Pokémon. We've been waiting for this for a long time!\pThank you, {PLAYER}!\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission and I now promote you to the rank of Candidate!"))
         release
         delay(8)
 
@@ -54,12 +55,17 @@ script IvyRiver_Ranger_FirstQuest{
         waitmessage
         call(Common_EventScript_PlayGymBadgeFanfare)
 
-
-        //set vars, quest
-        setvar(VAR_RANGER_INSTITUTE, 4)
-        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1)        
-
-        releaseall
+        msgbox(format("I should also give you a reward...hmm, what do we have with us?\pSorry, we're quite a bare-bones setup here."))
+        delay(8)
+        applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)   
+        msgbox(format("How about this? Why don't you pick from one of the evolution items Director Ravine sent us?"))
+        release
+        delay(8)
+        
+        //goto reward        
+        goto(IvyRiver_Ranger_FirstQuest_Reward)      
         end
     }
 
@@ -67,3 +73,73 @@ script IvyRiver_Ranger_FirstQuest{
     releaseall
     end
 }
+
+
+script IvyRiver_Ranger_FirstQuest_Reward{
+    message(format("Anything you'd like to take?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Peat Block", "??", "??")
+
+    if (var(VAR_RESULT) == 0) {goto(IvyRiver_Ranger_FirstQuest_Reward_A)}
+    if (var(VAR_RESULT) == 1) {goto(IvyRiver_Ranger_FirstQuest_Reward_B)}
+    if (var(VAR_RESULT) == 2) {goto(IvyRiver_Ranger_FirstQuest_Reward_C)}        
+}
+
+script IvyRiver_Ranger_FirstQuest_Reward_A{
+    setvar(VAR_0x8006, ITEM_PEAT_BLOCK)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_PEAT_BLOCK)
+        goto(IvyRiver_Ranger_FirstQuest_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(IvyRiver_Ranger_FirstQuest_Reward)
+    }
+}
+script IvyRiver_Ranger_FirstQuest_Reward_B{
+    setvar(VAR_0x8006, ITEM_PEAT_BLOCK)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_PEAT_BLOCK)
+        goto(IvyRiver_Ranger_FirstQuest_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(IvyRiver_Ranger_FirstQuest_Reward)
+    }
+}
+script IvyRiver_Ranger_FirstQuest_Reward_C{
+    setvar(VAR_0x8006, ITEM_PEAT_BLOCK)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_PEAT_BLOCK)
+        goto(IvyRiver_Ranger_FirstQuest_RewardEnd)
+    } else {
+        hideitemdescription
+        goto(IvyRiver_Ranger_FirstQuest_Reward)
+    }
+}
+
+
+script IvyRiver_Ranger_FirstQuest_RewardEnd{
+
+    msgbox(format("Great!\pNow, as a Candidate, you'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your second mission, I'll have you help out our second floor for a while. We rely heavily on outside help for our research, so you'll be a huge help.\pGo upstairs and help out!"))
+
+    //set vars, quest
+    setvar(VAR_RANGER_INSTITUTE, 4)
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1)  
+
+    releaseall
+    end
+
+}
+
+
+
+
+
