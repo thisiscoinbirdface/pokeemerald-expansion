@@ -250,74 +250,74 @@ static const u16 sMachampFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeFormSpeciesIdTable[] = {
-    SPECIES_GEODUDE,
 #if P_ALOLAN_FORMS
     SPECIES_GEODUDE_ALOLA,
 #endif
+    SPECIES_GEODUDE,
     FORM_SPECIES_END,
 };
 
 static const u16 sGravelerFormSpeciesIdTable[] = {
-    SPECIES_GRAVELER,
 #if P_ALOLAN_FORMS
     SPECIES_GRAVELER_ALOLA,
 #endif
+    SPECIES_GRAVELER,
     FORM_SPECIES_END,
 };
 
 static const u16 sGolemFormSpeciesIdTable[] = {
-    SPECIES_GOLEM,
 #if P_ALOLAN_FORMS
     SPECIES_GOLEM_ALOLA,
 #endif
+    SPECIES_GOLEM,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GEODUDE
 
 #if P_FAMILY_PONYTA
 static const u16 sPonytaFormSpeciesIdTable[] = {
-    SPECIES_PONYTA,
 #if P_GALARIAN_FORMS
     SPECIES_PONYTA_GALAR,
 #endif
+    SPECIES_PONYTA,
     FORM_SPECIES_END,
 };
 
 static const u16 sRapidashFormSpeciesIdTable[] = {
-    SPECIES_RAPIDASH,
 #if P_GALARIAN_FORMS
     SPECIES_RAPIDASH_GALAR,
 #endif
+    SPECIES_RAPIDASH,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_PONYTA
 
 #if P_FAMILY_SLOWPOKE
 static const u16 sSlowpokeFormSpeciesIdTable[] = {
-    SPECIES_SLOWPOKE,
 #if P_GALARIAN_FORMS
     SPECIES_SLOWPOKE_GALAR,
 #endif
+    SPECIES_SLOWPOKE,
     FORM_SPECIES_END,
 };
 
 static const u16 sSlowbroFormSpeciesIdTable[] = {
+#if P_GALARIAN_FORMS
+    SPECIES_SLOWBRO_GALAR,
+#endif
     SPECIES_SLOWBRO,
 #if P_MEGA_EVOLUTIONS
     SPECIES_SLOWBRO_MEGA,
-#endif
-#if P_GALARIAN_FORMS
-    SPECIES_SLOWBRO_GALAR,
 #endif
     FORM_SPECIES_END,
 };
 
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSlowkingFormSpeciesIdTable[] = {
-    SPECIES_SLOWKING,
 #if P_GALARIAN_FORMS
     SPECIES_SLOWKING_GALAR,
 #endif
+    SPECIES_SLOWKING,
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -388,18 +388,18 @@ static const u16 sKinglerFormSpeciesIdTable[] = {
 
 #if P_FAMILY_VOLTORB
 static const u16 sVoltorbFormSpeciesIdTable[] = {
-    SPECIES_VOLTORB,
 #if P_HISUIAN_FORMS
     SPECIES_VOLTORB_HISUI,
 #endif
+    SPECIES_VOLTORB,
     FORM_SPECIES_END,
 };
 
 static const u16 sElectrodeFormSpeciesIdTable[] = {
-    SPECIES_ELECTRODE,
 #if P_HISUIAN_FORMS
     SPECIES_ELECTRODE_HISUI,
 #endif
+    SPECIES_ELECTRODE,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_VOLTORB
@@ -447,10 +447,10 @@ static const u16 sKangaskhanFormSpeciesIdTable[] = {
 
 #if P_FAMILY_MR_MIME
 static const u16 sMrMimeFormSpeciesIdTable[] = {
-    SPECIES_MR_MIME,
 #if P_GALARIAN_FORMS
     SPECIES_MR_MIME_GALAR,
 #endif
+    SPECIES_MR_MIME,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MR_MIME
@@ -1275,10 +1275,10 @@ static const u16 sStunfiskFormSpeciesIdTable[] = {
 
 #if P_FAMILY_RUFFLET
 static const u16 sBraviaryFormSpeciesIdTable[] = {
-    SPECIES_BRAVIARY,
 #if P_HISUIAN_FORMS
     SPECIES_BRAVIARY_HISUI,
 #endif
+    SPECIES_BRAVIARY,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_RUFFLET
