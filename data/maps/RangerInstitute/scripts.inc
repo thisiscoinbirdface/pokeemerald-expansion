@@ -578,124 +578,124 @@ RangerInstitute_Ravine::
 
 RangerInstitute_Ravine_1:
 # 418 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Ravine_Text_0
-	return
+	msgbox RangerInstitute_Ravine_Text_0, MSGBOX_NPC
+	end
 
 
 RangerInstitute_2F_NPC_1::
-# 423 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 424 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 425 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_1_Text_0
+	faceplayer
 # 426 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_1_Text_0
+# 427 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_2::
-# 430 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 431 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 432 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_2_Text_0
+	faceplayer
 # 433 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_2_Text_0
+# 434 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_3::
-# 437 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 438 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 439 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_3_Text_0
+	faceplayer
 # 440 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_3_Text_0
+# 441 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_4::
-# 444 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 445 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 446 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_NPC_4_Text_0
+	faceplayer
 # 447 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_NPC_4_Text_0
+# 448 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Mon_Bayleef::
-# 474 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 475 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 476 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 477 "data//maps/RangerInstitute/scripts.pory"
 	goto_if_set FLAG_RANGER_INSTITUTE_BAYLEEF, RangerInstitute_Mon_Bayleef_2
-# 479 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_BAYLEEF, CRY_MODE_NORMAL
 # 480 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Bayleef_Text_1
+	playmoncry SPECIES_BAYLEEF, CRY_MODE_NORMAL
 # 481 "data//maps/RangerInstitute/scripts.pory"
-	giveitem ITEM_POTION
+	msgbox RangerInstitute_Mon_Bayleef_Text_1
 # 482 "data//maps/RangerInstitute/scripts.pory"
-	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
+	giveitem ITEM_POTION
 # 483 "data//maps/RangerInstitute/scripts.pory"
+	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
+# 484 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_2
 RangerInstitute_Mon_Bayleef_1:
-# 485 "data//maps/RangerInstitute/scripts.pory"
+# 486 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 RangerInstitute_Mon_Bayleef_2:
-# 477 "data//maps/RangerInstitute/scripts.pory"
+# 478 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_0
 	goto RangerInstitute_Mon_Bayleef_1
 
 
 RangerInstitute_Mon_Palpitoad::
-# 489 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 490 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 491 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
+	faceplayer
 # 492 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Palpitoad_Text_0
+	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
 # 493 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_Mon_Palpitoad_Text_0
+# 494 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Mon_Frogadier::
-# 497 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 498 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 499 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
+	faceplayer
 # 500 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Frogadier_Text_0
+	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
 # 501 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_Mon_Frogadier_Text_0
+# 502 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Mon_Scyther::
-# 505 "data//maps/RangerInstitute/scripts.pory"
-	lockall
 # 506 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
+	lockall
 # 507 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
+	faceplayer
 # 508 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Scyther_Text_0
+	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
 # 509 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_Mon_Scyther_Text_0
+# 510 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
@@ -1339,49 +1339,49 @@ RangerInstitute_Ravine_Text_0:
 	.string "Have you delivered the package yet?$"
 
 RangerInstitute_2F_NPC_1_Text_0:
-# 425 "data//maps/RangerInstitute/scripts.pory"
+# 426 "data//maps/RangerInstitute/scripts.pory"
 	.string "Director Ravine has a bad habit of\n"
 	.string "daydreaming at work...$"
 
 RangerInstitute_2F_NPC_2_Text_0:
-# 432 "data//maps/RangerInstitute/scripts.pory"
+# 433 "data//maps/RangerInstitute/scripts.pory"
 	.string "Hello there, new recruit! Wanna see what\n"
 	.string "I'm working on? I'm analysing the\l"
 	.string "weather patterns in Cormoria. I stay on\l"
 	.string "the lookout for any unnatural changes.$"
 
 RangerInstitute_2F_NPC_3_Text_0:
-# 439 "data//maps/RangerInstitute/scripts.pory"
+# 440 "data//maps/RangerInstitute/scripts.pory"
 	.string "Gah! I hate being on inventory duty. I\n"
 	.string "miss the field!$"
 
 RangerInstitute_2F_NPC_4_Text_0:
-# 446 "data//maps/RangerInstitute/scripts.pory"
+# 447 "data//maps/RangerInstitute/scripts.pory"
 	.string "How's it going, {PLAYER}?$"
 
 RangerInstitute_Mon_Bayleef_Text_0:
-# 477 "data//maps/RangerInstitute/scripts.pory"
+# 478 "data//maps/RangerInstitute/scripts.pory"
 	.string "BAYLEEF is singing happily!$"
 
 RangerInstitute_Mon_Bayleef_Text_1:
-# 480 "data//maps/RangerInstitute/scripts.pory"
+# 481 "data//maps/RangerInstitute/scripts.pory"
 	.string "BAYLEEF is singing happily! It snuggles\n"
 	.string "upto you and gives you something...$"
 
 RangerInstitute_Mon_Bayleef_Text_2:
-# 483 "data//maps/RangerInstitute/scripts.pory"
+# 484 "data//maps/RangerInstitute/scripts.pory"
 	.string "Thanks BAYLEEF!$"
 
 RangerInstitute_Mon_Palpitoad_Text_0:
-# 492 "data//maps/RangerInstitute/scripts.pory"
+# 493 "data//maps/RangerInstitute/scripts.pory"
 	.string "PALPITOAD grunts and waddles around.\n"
 	.string "It seems upset...$"
 
 RangerInstitute_Mon_Frogadier_Text_0:
-# 500 "data//maps/RangerInstitute/scripts.pory"
+# 501 "data//maps/RangerInstitute/scripts.pory"
 	.string "$"
 
 RangerInstitute_Mon_Scyther_Text_0:
-# 508 "data//maps/RangerInstitute/scripts.pory"
+# 509 "data//maps/RangerInstitute/scripts.pory"
 	.string "SCYTHER looks as bummed out as its\n"
 	.string "trainer!$"

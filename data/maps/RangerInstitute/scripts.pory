@@ -415,7 +415,8 @@ script RangerInstitute_Ravine{
     lockall
     faceplayer
     if (var(VAR_RANGER_INSTITUTE) == 3){
-        msgbox(format("RAVINE: How's my newest Recruit doing? Have you delivered the package yet?"))
+        msgbox(format("RAVINE: How's my newest Recruit doing? Have you delivered the package yet?"), MSGBOX_NPC)
+        end
     }
 }
 
