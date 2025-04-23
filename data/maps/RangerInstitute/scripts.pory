@@ -50,7 +50,8 @@ script RangerInstitute_1F_ApplicationPC{
     release
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("YOU ALREADY HAVE AN APPLICATION IN PROGRESS."))
+        msgbox(format("YOU ALREADY HAVE AN APPLICATION IN PROGRESS."), MSGBOX_SIGN)
+        end
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 0){
@@ -68,9 +69,13 @@ script RangerInstitute_1F_ApplicationPC{
         } else {
 
         }
+        releaseall
+        end
     }
 
+    msgbox(format("YOU HAVE ALREADY CLEARED THE INTERVIEW."), MSGBOX_SIGN)
     releaseall
+    end
 }
 
 
@@ -181,6 +186,7 @@ script RangerInstitute_1F_InterviewPass{
     msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokémon Ranger Recruit. Welcome to the Cormoria Pokémon Ranger Institute! Please head upstairs for your induction."))
     releaseall
     setvar(VAR_RANGER_INSTITUTE, 2)
+    setflag(FLAG_RANGER_ACCEPTED)
 }
 
 //NPCs
@@ -216,21 +222,17 @@ script RangerInstitute_1F_BlockerBasement{
     end
 }
 script RangerInstitute_1F_BlockerUpstairs{
-    lockall
-    faceplayer
-
     if (var(VAR_RANGER_INSTITUTE) == 0){
-        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."), MSGBOX_NPC)
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
+        msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."), MSGBOX_NPC)
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 2){
-        msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit! So I'll be keeping an eye on you."))
+        msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit! So I'll be keeping an eye on you."), MSGBOX_NPC)
     }
-    releaseall
     end
 }
 

@@ -337,3 +337,9 @@ script LilyPond_Fisherman_C{
 
 
 
+script IvyRiver_Ranger_Blocker{
+    msgbox(format("Sorry - to access the Ivy River Ranger Institute, you must be a member."), MSGBOX_NPC)
+    end
+}
+
+

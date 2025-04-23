@@ -223,19 +223,19 @@
 #define FLAG_MIRROH_BERGMITE_B 0x49E // Unused Flag
 #define FLAG_MIRROH_BERGMITE_C 0x49F // Unused Flag
 #define FLAG_ANCIENT_MIRROH_AERODACTYL 0x4A0 // Unused Flag
-#define FLAG_LILYPOND_DREEPY_FIRST 0x4A1 // Unused Flag
-#define FLAG_LILYPOND_DREEPY_SECOND 0x4A2 // Unused Flag
-#define FLAG_LILYPOND_DREEPY_THIRD 0x4A3 // Unused Flag
-#define FLAG_LILYPOND_LAPRAS 0x4A4 // Unused Flag
-#define FLAG_LILYPOND_FISHERMAN_QUEST_START 0x4A5 // Unused Flag
-#define FLAG_LILYPOND_FISHERMAN_A_LETTER 0x4A6 // Unused Flag
-#define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // Unused Flag
-#define FLAG_HIDE_IVYRIVER_FISHERMEN 0x4A8 // Unused Flag
-#define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // Unused Flag
-#define FLAG_IVYRIVER_ZARUDE_REAL 0x1DF // Unused Flag
-#define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // Unused Flag
-#define FLAG_RANGER_TAUROS_USE 0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2 0x1E2 // Unused Flag
+#define FLAG_LILYPOND_DREEPY_FIRST 0x4A1 // dreepy 
+#define FLAG_LILYPOND_DREEPY_SECOND 0x4A2 // dreepy 
+#define FLAG_LILYPOND_DREEPY_THIRD 0x4A3 // dreepy
+#define FLAG_LILYPOND_LAPRAS 0x4A4 // heal the lapras
+#define FLAG_LILYPOND_FISHERMAN_QUEST_START 0x4A5 // get the letter and start quest
+#define FLAG_LILYPOND_FISHERMAN_A_LETTER 0x4A6 // give letter to brother A
+#define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // give letter to brother B
+#define FLAG_HIDE_IVYRIVER_FISHERMEN 0x4A8 // meet the fishermen at ivy river
+#define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // full zarude cutscene
+#define FLAG_IVYRIVER_ZARUDE_REAL 0x1DF // mythical zarude flag
+#define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // the one-time lapras encounter done or not
+#define FLAG_RANGER_TAUROS_USE 0x1E1 // can use the ranger tauros
+#define FLAG_RANGER_ACCEPTED 0x1E2 // cleared the interview 
 #define FLAG_UNUSED_0x1E3 0x1E3 // Unused Flag
 #define FLAG_UNUSED_0x4B5 0x4B5 // Unused Flag
 #define FLAG_UNUSED_0x4B6 0x4B6 // Unused Flag

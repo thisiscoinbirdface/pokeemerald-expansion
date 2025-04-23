@@ -14,7 +14,7 @@ script CeramBaseCampGym_Red{
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
         } else {
             msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "FIRE GEM", "CHARCOAL")
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Fire Gem", "Charcoal")
 
             if (var(VAR_RESULT) == 0){
                 giveitem(ITEM_FIRE_GEM)
