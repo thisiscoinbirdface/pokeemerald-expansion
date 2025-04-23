@@ -159,7 +159,16 @@ script LilyPond_Cave_Lapras{
 
 }
 
-
+script LilyPond_Cave_Lapras_Encounter{
+    lockall
+    playmoncry(SPECIES_LAPRAS)
+    setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
+    removeobject(7)
+    setwildbattle(SPECIES_LAPRAS, 35)
+    dowildbattle
+    releaseall
+    end
+}
 
 
 

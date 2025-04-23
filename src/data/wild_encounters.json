@@ -50,10 +50,10 @@
             20,
             20,
             40,
-            40,
-            15,
-            4,
-            1
+            20,
+            20,
+            10,
+            10
           ],
           "groups": {
             "old_rod": [
@@ -13284,15 +13284,70 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 31,
+                "max_level": 34,
                 "species": "SPECIES_PANCHAM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_SEVIPER"
               },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_SEVIPER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 31,
+                "max_level": 34,
+                "species": "SPECIES_SCYTHER"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
@@ -13306,42 +13361,42 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_FINNEON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_CARVANHA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_CARVANHA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_CLODSIRE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DEWOTT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_TYNAMO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DEWOTT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_TYNAMO"
               }
             ]
           }
@@ -13474,12 +13529,12 @@
               {
                 "min_level": 27,
                 "max_level": 31,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_BELDUM"
               },
               {
                 "min_level": 27,
                 "max_level": 31,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_BELDUM"
               }
             ]
           }
@@ -13884,6 +13939,75 @@
                 "min_level": 28,
                 "max_level": 32,
                 "species": "SPECIES_ARCTOVISH"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_IVY_RIVER_ZARUDE_FOREST",
+          "base_label": "gIvyRiver_ZarudeForest0",
+          "land_mons": {
+            "encounter_rate": 9,
+            "mons": [
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_ORANGURU"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_ORANGURU"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_ORANGURU"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_ORANGURU"
+              },
+              {
+                "min_level": 32,
+                "max_level": 35,
+                "species": "SPECIES_ORANGURU"
               }
             ]
           }
