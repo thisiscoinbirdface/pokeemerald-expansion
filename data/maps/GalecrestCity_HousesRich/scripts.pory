@@ -132,8 +132,8 @@ script GalecrestCity_HousesRich_NPC9{
 
 
 script GalecrestCity_HousesRich_Keckleon{
-    playmoncry(SPECIES_GLALIE, CRY_MODE_NORMAL)
-    msgbox(format("Glalie glares intently at you."), MSGBOX_NPC)
+    playmoncry(SPECIES_CLAUNCHER, CRY_MODE_NORMAL)
+    msgbox(format("Clauncher glares intently at you."), MSGBOX_NPC)
     end
 }
 

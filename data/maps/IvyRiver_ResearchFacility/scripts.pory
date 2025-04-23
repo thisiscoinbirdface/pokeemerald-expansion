@@ -43,10 +43,10 @@ script IvyRiver_Ranger_FirstQuest{
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)            
-        msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff indeed.\pYou see, {PLAYER}, the Ivy River Ranger Institute studies Pokémon evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about how Pokémon evolve, when they evolve, and what changes that might cause in its surroundings."))
+        msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff indeed.\pYou see, {PLAYER}, the Ivy River Ranger Institute studies Pokémon mega evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about these abnormal evolutions. This has become particularly important since the Mega Sharpedo sighting..."))
         release
         delay(16)
-        msgbox(format("Director Ravine sent us a collection of items that induce evolution in certain Pokémon. We've been waiting for this for a long time!\pThank you, {PLAYER}!\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission and I now promote you to the rank of Candidate!"))
+        msgbox(format("Director Ravine sent us a collection of items that induce mega evolution in certain Pokémon. We've been waiting for this for a long time!\pThank you, {PLAYER}!\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission and I now promote you to the rank of Candidate!"))
         release
         delay(8)
 
@@ -61,7 +61,7 @@ script IvyRiver_Ranger_FirstQuest{
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)   
-        msgbox(format("How about this? Why don't you pick from one of the evolution items Director Ravine sent us?"))
+        msgbox(format("How about this? Why don't you pick from one of the items Director Ravine sent us?"))
         release
         delay(8)
         
@@ -79,7 +79,9 @@ script IvyRiver_Ranger_FirstQuest{
 script IvyRiver_Ranger_FirstQuest_Reward{
     message(format("Anything you'd like to take?"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Peat Block", "??", "??")
+    dynmultichoice(0,0, TRUE, 21, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Peat Block", "??", "??"
+    )
 
     if (var(VAR_RESULT) == 0) {goto(IvyRiver_Ranger_FirstQuest_Reward_A)}
     if (var(VAR_RESULT) == 1) {goto(IvyRiver_Ranger_FirstQuest_Reward_B)}
