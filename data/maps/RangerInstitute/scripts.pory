@@ -110,12 +110,13 @@ script RangerInstitute_1F_InterviewFail{
 script RangerInstitute_1F_InterviewQ1{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these types is super-effective against DEWPIDER?"))
+    message(format("Q: Which of these types is super-effective against Dewpider?"))
+    waitmessage
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "FAIRY", "GRASS", "FIRE", "ROCK")
 
     //Check answers
     if (var(VAR_RESULT) == 3){
-        msgbox(format("Correct! DEWPIDER, a BUG/WATER type, is weak to ROCK-type attacks.\pOnto the next question!"))
+        msgbox(format("Correct! Dewpider, a BUG and WATER type, is weak to ROCK-type attacks.\pOnto the next question!"))
         goto(RangerInstitute_1F_InterviewQ2)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -125,12 +126,13 @@ script RangerInstitute_1F_InterviewQ1{
 script RangerInstitute_1F_InterviewQ2{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these Pokémon does NOT have a normal evolution?"))
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TOXEL", "KOFFING", "ABSOL", "CYNDAQUIL")
+    message(format("Q: Which of these Pokémon does NOT have a normal evolution?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Toxel", "Koffing", "Absol", "Cyndaquil")
 
     //Check answers
     if (var(VAR_RESULT) == 2){
-        msgbox(format("Correct! ABSOL has no normal evolution, but it can MEGA EVOLVE.\pOnto the next question!"))
+        msgbox(format("Correct! Absol has no normal evolution, but it can Mega Evolve.\pOnto the next question!"))
         goto(RangerInstitute_1F_InterviewQ3)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -140,12 +142,13 @@ script RangerInstitute_1F_InterviewQ2{
 script RangerInstitute_1F_InterviewQ3{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: Which of these Pokémon is GHOST type?"))
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "DHELMISE", "ZIGZAGOON", "DELPHOX", "NINETALES")
+    message(format("Q: Which of these Pokémon is GHOST type?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Dhelmise", "Zigzagoon", "Delphox", "Ninetales")
 
     //Check answers
     if (var(VAR_RESULT) == 0){
-        msgbox(format("Correct! DHELMISE is a GHOST/GRASS type Pokémon, commonly found underwater.\pOnto the next question!"))
+        msgbox(format("Correct! Dhelmise is a GHOST and GRASS type Pokémon found underwater.\pOnto the next question!"))
         goto(RangerInstitute_1F_InterviewQ4)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -155,12 +158,13 @@ script RangerInstitute_1F_InterviewQ3{
 script RangerInstitute_1F_InterviewQ4{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: What happens if you use BLACK AUGURITE on a SCYTHER?"))
+    message(format("Q: What happens if you use Black Augurite on a Scyther?"))
+    waitmessage
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Full Heal", "Evolution", "Nothing", "Boost BUG power")
 
     //Check answers
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Correct! Using BLACK AUGURITE evolves SCYTHER into KLEAVOR.\pOnto the last question!"))
+        msgbox(format("Correct! Using Black Augurite evolves Scyther into Kleavor.\pOnto the last question!"))
         goto(RangerInstitute_1F_InterviewQ5)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -170,7 +174,8 @@ script RangerInstitute_1F_InterviewQ4{
 script RangerInstitute_1F_InterviewQ5{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    msgbox(format("Q: If you see a stranger in need of help, what do you do?"))
+    message(format("Q: If you see a stranger in need of help, what do you do?"))
+    waitmessage
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Nothing", "Laugh", "Help them", "Take a video")
 
     //Check answers
@@ -183,7 +188,16 @@ script RangerInstitute_1F_InterviewQ5{
 }
 
 script RangerInstitute_1F_InterviewPass{
-    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokémon Ranger Recruit. Welcome to the Cormoria Pokémon Ranger Institute! Please head upstairs for your induction."))
+    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokémon Ranger Recruit. Welcome to the Cormoria Pokémon Ranger Institute!"))
+    release
+    delay(8)
+
+    //promotion
+    message(format("{PLAYER} is now a Recruit!"))
+    waitmessage
+    call(Common_EventScript_PlayGymBadgeFanfare)    
+
+    msgbox(format("Please head upstairs for your induction. All the best, Recruit!"))
     releaseall
     setvar(VAR_RANGER_INSTITUTE, 2)
     setflag(FLAG_RANGER_ACCEPTED)
@@ -278,7 +292,7 @@ script RangerInstitute_2F_Trigger0{
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to RAVINE, the Institute Head."))
+        msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to Ravine, the Institute Head."))
         release
 
         //move to Ravine
@@ -347,7 +361,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     release    
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the RANGER INSTITUTE, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokémon Rangers do?"))
+    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the Ranger Institute, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokémon Rangers do?"))
     release
     applymovement(LOCALID_RANGER1, moves(walk_left face_down))
     waitmovement(0)

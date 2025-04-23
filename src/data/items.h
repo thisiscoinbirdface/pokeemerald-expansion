@@ -14126,9 +14126,9 @@ const struct Item gItemsInfo[] =
         .name = _("Ranger Package"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A package for the \n"
-            "RANGER INSTITUTE.\n"
-            "at IVY RIVER.\n"
+            "A package for the\n"
+            "Ranger Institute\n"
+            "at Ivy River.\n"
         ),
         .importance = 1,                
         .pocket = POCKET_KEY_ITEMS,
