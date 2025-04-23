@@ -59,6 +59,8 @@ script IvyRiver_Main_Fisherman_AssembleTrigger{
         setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)         
         releaseall
         end
+
+    
 }
 
 script IvyRiver_Main_GreenScarf{
@@ -102,7 +104,7 @@ script IvyRiver_Main_GreenScarf{
     //F3 entry
     addobject(LOCALID_F3)
     setobjectxy(LOCALID_F3, 38, 57)
-    delay(8)    
+    delay(8)
     applymovement(LOCALID_F3, moves(walk_down))
     waitmovement(0)    
     delay(8)

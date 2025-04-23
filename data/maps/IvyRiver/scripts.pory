@@ -36,7 +36,6 @@ script LilyPond_Dreepy_Trigger_First{
     removeobject(LOCALID_DR_FR)
 
     setflag(FLAG_LILYPOND_DREEPY_FIRST)
-
 }
 
 script LilyPond_Dreepy_Trigger_Second{
@@ -57,7 +56,6 @@ script LilyPond_Dreepy_Trigger_Second{
     removeobject(LOCALID_DR_SC)
 
     setflag(FLAG_LILYPOND_DREEPY_SECOND)
-
 }
 
 script LilyPond_Dreepy_Trigger_Third{
@@ -76,7 +74,6 @@ script LilyPond_Dreepy_Trigger_Third{
     removeobject(LOCALID_DR_TH)
 
     setflag(FLAG_LILYPOND_DREEPY_THIRD)
-   
 }
 
 script LilyPond_Cave_Dreepy{
@@ -156,7 +153,6 @@ script LilyPond_Cave_Lapras{
     //thank you
     releaseall
     end
-
 }
 
 script LilyPond_Cave_Lapras_Encounter{
@@ -237,7 +233,6 @@ script LilyPond_Fisherman_B{
 
     if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {goto(LilyPond_Fisherman_B_QuestScript)}
     if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {goto(LilyPond_Fisherman_B_QuestScript)}    
-
 }
 
 script LilyPond_Fisherman_B_QuestScript{
