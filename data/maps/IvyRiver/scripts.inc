@@ -498,6 +498,12 @@ LilyPond_Fisherman_C_17:
 	end
 
 
+IvyRiver_Ranger_Blocker::
+# 341 "data//maps/IvyRiver/scripts.pory"
+	msgbox IvyRiver_Ranger_Blocker_Text_0, MSGBOX_NPC
+	end
+
+
 # 26 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Dreepy_Trigger_First_Movement_0:
 # 26 "data//maps/IvyRiver/scripts.pory"
@@ -949,3 +955,8 @@ LilyPond_Fisherman_C_Text_12:
 	.string "If I write them a letter asking them to\n"
 	.string "help search, would you deliver it to\l"
 	.string "them?$"
+
+IvyRiver_Ranger_Blocker_Text_0:
+# 341 "data//maps/IvyRiver/scripts.pory"
+	.string "Sorry - to access the Ivy River Ranger\n"
+	.string "Institute, you must be a member.$"

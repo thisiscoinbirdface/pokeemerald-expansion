@@ -1,4 +1,69 @@
+raw`
+    .set LOCALID_MAIN, 4
+    .set LOCALID_Q1, 5
+    .set LOCALID_Q2, 6
+    .set LOCALID_Q3, 7
+    .set LOCALID_Q4, 8
+    .set LOCALID_EV, 1
+`
+
 mapscripts IvyRiver_ResearchFacility_MapScripts{}
 
 
+//8 people
+//1 main quest dude
+//3 next quest dudes
+//3 randoms
+//1 EV trainer
 
+//4 mons
+//3 generic
+//1 item giver
+
+script IvyRiver_Ranger_FirstQuest{
+    //give the quest item
+    if (var(VAR_RANGER_INSTITUTE) == 3){
+
+        //first part
+        lockall
+        faceplayer
+        msgbox(format("Hmm? A Recruit? Welcome to the Ivy River Ranger Institute! We're a tad remote - to say the least - but we've made this place our home...and yours too!\p..."))
+        release
+        delay(8)
+        applymovement(LOCALID_MAIN, moves(emote_question_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Hmm? Ravine has a package for me?"))
+        release
+        removeitem(ITEM_RANGER_PACKAGE)
+        msgbox(format("{PLAYER} gave the Ranger scientist the Ranger Package"))
+        release
+        delay(8)    
+        applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)            
+        msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff indeed.\pYou see, {PLAYER}, the Ivy River Ranger Institute studies Pokémon evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about how Pokémon evolve, when they evolve, and what changes that might cause in its surroundings."))
+        release
+        delay(16)
+        msgbox(format("Director Ravine sent us a collection of items that induce evolution in certain Pokémon. We've been waiting for this for a long time!\pThank you, {PLAYER}\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission and I now promote you to the rank of Candidate!"))
+        release
+        delay(8)
+
+        //promotion
+        message(format("{PLAYER} was promoted from Recruit to Candidate!"))
+        waitmessage
+        call(Common_EventScript_PlayGymBadgeFanfare)
+
+
+        //set vars, quest
+        setvar(VAR_RANGER_INSTITUTE, 4)
+        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1)        
+
+        releaseall
+        end
+    }
+
+
+    releaseall
+    end
+}

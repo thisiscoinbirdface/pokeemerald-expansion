@@ -358,11 +358,11 @@ CeramBaseCampGym_Red_Text_1:
 
 CeramBaseCampGym_Red_Text_2:
 # 17 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "FIRE GEM$"
+	.string "Fire Gem$"
 
 CeramBaseCampGym_Red_Text_3:
 # 17 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "CHARCOAL$"
+	.string "Charcoal$"
 
 CeramBaseCampGym_Red_Text_4:
 # 30 "data//maps/CeramBaseCampGym/scripts.pory"

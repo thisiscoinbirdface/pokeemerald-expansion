@@ -385,6 +385,18 @@ script RangerInstitute_2F_EventScript_Welcome{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 script RangerInstitute_Ravine{
     lockall
     faceplayer
