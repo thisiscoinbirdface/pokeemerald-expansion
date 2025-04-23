@@ -1585,7 +1585,7 @@ Music: Cool
 Double Battle: Yes
 AI: Basic Trainer
 
-Frogadier
+Croconaw
 Level: 25
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -1624,7 +1624,7 @@ Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_E ===
-Name: KOAN
+Name: Koan
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1633,7 +1633,7 @@ Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Frogadier
+Croconaw
 Level: 27
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 

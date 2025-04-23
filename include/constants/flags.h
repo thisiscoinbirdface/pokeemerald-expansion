@@ -777,12 +777,15 @@
 
 #define FLAG_HIDDEN_ITEM_HOLLOW_GYM_A                        (FLAG_HIDDEN_ITEMS_START + 0x2D)
 
+//lily pond
+#define FLAG_HIDDEN_ITEM_LILY_POND_A                         (FLAG_HIDDEN_ITEMS_START + 0x2E)
+
+//ivy river
+#define FLAG_HIDDEN_ITEM_IVY_RIVER_A                         (FLAG_HIDDEN_ITEMS_START + 0x2F)
+#define FLAG_HIDDEN_ITEM_IVY_RIVER_B                         (FLAG_HIDDEN_ITEMS_START + 0x30)
+#define FLAG_HIDDEN_ITEM_IVY_RIVER_C                         (FLAG_HIDDEN_ITEMS_START + 0x31)
 
 
-#define FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x2E)
-#define FLAG_HIDDEN_ITEM_ROUTE_106_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x2F)
-#define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1        (FLAG_HIDDEN_ITEMS_START + 0x30)
-#define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2        (FLAG_HIDDEN_ITEMS_START + 0x31)
 #define FLAG_HIDDEN_ITEM_ROUTE_109_REVIVE                    (FLAG_HIDDEN_ITEMS_START + 0x32)
 #define FLAG_HIDDEN_ITEM_ROUTE_109_GREAT_BALL                (FLAG_HIDDEN_ITEMS_START + 0x33)
 #define FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_1             (FLAG_HIDDEN_ITEMS_START + 0x34)
@@ -1244,6 +1247,7 @@
 #define FLAG_ITEM_PELLUCA_CITY_B                   0x426
 #define FLAG_ITEM_PELLUCA_CITY_C                  0x427
 
+//mirroh
 #define FLAG_ITEM_MIRROH_INT_A                    0x428
 #define FLAG_ITEM_MIRROH_INT_B                   0x429
 #define FLAG_ITEM_MIRROH_INT_C                            0x42A
@@ -1260,15 +1264,20 @@
 #define FLAG_ITEM_ANCIENTMIRROH_E                          0x434
 #define FLAG_ITEM_ANCIENTMIRROH_F    0x435
 
-#define FLAG_ITEM_IVYRIVER_GREEN_SCARF        0x436
-#define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
-#define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
-#define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
-#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
-#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
-#define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
-#define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_PSYCHIC                       0x43E
+//lily pond
+#define FLAG_ITEM_LILY_POND_A        0x436
+#define FLAG_ITEM_LILY_POND_B                        0x437
+#define FLAG_ITEM_LILY_POND_C                0x438
+
+//ivy river
+#define FLAG_ITEM_IVYRIVER_GREEN_SCARF                     0x439
+#define FLAG_ITEM_IVY_RIVER_A                  0x43A
+#define FLAG_ITEM_IVY_RIVER_B                   0x43B
+#define FLAG_ITEM_IVY_RIVER_C                        0x43C
+#define FLAG_ITEM_IVY_RIVER_D                             0x43D
+#define FLAG_ITEM_IVY_RIVER_E                       0x43E
+
+
 #define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441

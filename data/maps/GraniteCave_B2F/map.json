@@ -177,7 +177,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_EVERSTONE",
-      "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1"
+      "flag": "FLAG_HIDDEN_ITEM_IVY_RIVER_B"
     },
     {
       "type": "hidden_item",
@@ -185,7 +185,7 @@
       "y": 11,
       "elevation": 3,
       "item": "ITEM_EVERSTONE",
-      "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2"
+      "flag": "FLAG_HIDDEN_ITEM_IVY_RIVER_C"
     }
   ]
 }
