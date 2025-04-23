@@ -822,6 +822,7 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
         //fly
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)        
         delay(30)
         warp(MAP_SILVERSUN_CITY, 28, 22)
 
@@ -847,6 +848,7 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
         //fly
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
         delay(30)
         warp(MAP_PELLUCA_CITY, 13, 16)
 
@@ -856,29 +858,6 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
 
     end
 }
-
-script Common_EventScript_DrifblimTravels_ToGalecrest{
-    lockall
-    faceplayer
-    playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
-    msgbox(format("Drifblim opens a map and gestures towards Galecrest City. Fly there?"), MSGBOX_YESNO)
-
-    if (var(VAR_RESULT) == 1){
-        release
-        //fly
-        hidefollower
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-        delay(30)
-        warp(MAP_GALECREST_CITY, 30, 47)
-
-    } else {
-        msgbox(format("Drifblim looks dejected..."), MSGBOX_NPC)
-    }
-
-    end
-}
-
-
 
 
 
@@ -897,6 +876,7 @@ script Common_EventScript_Dugtrio_ToRoute3{
         //dig
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL)
         delay(30)
         warp(MAP_ROUTE3_UNDERPASS, 9, 26)
     }
@@ -912,9 +892,66 @@ script Common_EventScript_Dugtrio_ToGalecrest{
         //dig
         hidefollower
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL)        
         delay(30)
         warp(MAP_GALECREST_CITY, 31, 64)
     }
+}
+
+
+
+
+
+
+
+script Common_EventScript_Tauros_IvyRiver{
+    lockall
+    faceplayer
+    msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        release
+        //dig
+        hidefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+        delay(30)
+        warp(MAP_PELLUCA_CITY, 15, 24)
+    }    
+}
+
+script Common_EventScript_Tauros_PellucaCity{
+    lockall
+    faceplayer
+    msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+
+        message(format("Where should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
+
+        if (var(VAR_RESULT) == 0){
+            release
+            //dig
+            hidefollower
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+            delay(30)
+            warp(MAP_IVY_RIVER, 19, 69)
+        }
+
+        if (var(VAR_RESULT) == 1){
+            release
+            //dig
+            hidefollower
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+            delay(30)
+            warp(MAP_ROUTE6, 31, 64)
+        }
+
+    }    
 }
 
 

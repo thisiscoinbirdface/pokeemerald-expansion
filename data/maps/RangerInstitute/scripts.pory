@@ -24,6 +24,9 @@ mapscripts RangerInstitute_MapScripts{}
     //spoken to Ivy River head, got the pokedex mission
 //6: second mission complete
     //caught 3 specific mons for Ivy River
+        //get an item only held by a pokemon (catch from vilethorn woods)
+        //show a specific pokemon (breed vivillon)
+        //trade a specific pokemon (get a trade mon from rivetshore)
     //reward: ? + Associate (EV Editor in Ivy River)
 //7: third mission
     //???
