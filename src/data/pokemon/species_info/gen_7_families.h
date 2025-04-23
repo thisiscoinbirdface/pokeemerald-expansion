@@ -2059,7 +2059,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sRockruffTeachableLearnset,
         .eggMoveLearnset = sRockruffEggMoveLearnset,
         .formSpeciesIdTable = sRockruffFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_DUSK, 25, SPECIES_LYCANROC_DUSK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LYCANROC_DUSK}),
     },
 
     [SPECIES_LYCANROC_MIDDAY] =

@@ -15289,8 +15289,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMimeJrLevelUpLearnset,
         .teachableLearnset = sMimeJrTeachableLearnset,
         .eggMoveLearnset = sMimeJrEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
-                                {EVO_NONE, 0, SPECIES_MR_MIME_GALAR}),
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME_GALAR},
+                                {EVO_NONE, 0, SPECIES_MR_MIME}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

@@ -56,6 +56,7 @@ script IvyRiver_Ranger_FirstQuest{
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         msgbox(format("I should also give you a reward...hmm, what do we have with us?\pSorry, we're quite a bare-bones setup here."))
+        release
         delay(8)
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
         waitmovement(0)
@@ -65,7 +66,7 @@ script IvyRiver_Ranger_FirstQuest{
         delay(8)
         
         //goto reward        
-        goto(IvyRiver_Ranger_FirstQuest_Reward)      
+        goto(IvyRiver_Ranger_FirstQuest_Reward)
         end
     }
 
@@ -128,7 +129,7 @@ script IvyRiver_Ranger_FirstQuest_Reward_C{
 
 script IvyRiver_Ranger_FirstQuest_RewardEnd{
 
-    msgbox(format("Great!\pNow, as a Candidate, you'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your second mission, I'll have you help out our second floor for a while. We rely heavily on outside help for our research, so you'll be a huge help.\pGo upstairs and help out!"))
+    msgbox(format("Great!\pYou'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your second mission, I'll have you help out our second floor for a while. We rely heavily on outside help for our research, so you'll be a huge help.\pGo upstairs and help out!"))
 
     //set vars, quest
     setvar(VAR_RANGER_INSTITUTE, 4)
