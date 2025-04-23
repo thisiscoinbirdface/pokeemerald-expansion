@@ -1,0 +1,49 @@
+mapscripts IvyRiver_Main_MapScripts{}
+
+script IvyRiver_Main_Fisherman_AssembleTrigger{
+    lockall
+    applymovement(1, moves(face_right emote_exclamation_mark))
+    applymovement(2, moves(face_right emote_exclamation_mark))
+    applymovement(3, moves(face_right emote_exclamation_mark))
+    waitmovement(0)
+
+    delay(16)
+    applymovement(1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("{PLAYER}! You came! Let's start our search...but after so many years, we don't remember that day too clearly.\pThe only thing we remember that day is that it was really cold and we were all dressed in green. Let's spread out and search the river for anything we can find!"))
+    release
+
+    //fuck off
+        //start with fish 3
+        applymovement(1, moves(face_left))
+        applymovement(2, moves(face_left))
+        applymovement(3, moves(face_left))   
+        waitmovement(0)
+        delay(8)
+        removeobject(3) 
+        //fish 2
+        applymovement(1, moves(walk_left *2 face_down))
+        applymovement(2, moves(walk_left walk_down face_left))
+        waitmovement(0)
+        delay(8)
+        removeobject(2)
+        //fish 1
+        applymovement(1, moves(walk_down face_left))      
+        waitmovement(0)
+        delay(8)
+        removeobject(1) 
+        //move ship
+        applymovement(4, moves(walk_left * 4))
+        waitmovement(0)
+        removeobject(4)
+
+
+        //flags and quests
+        setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)         
+        releaseall
+        end
+
+
+}
+

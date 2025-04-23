@@ -85,7 +85,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 38,
-      "y": 64,
+      "y": 67,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -98,7 +98,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZARUDE)",
       "x": 39,
-      "y": 65,
+      "y": 68,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -110,8 +110,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 37,
-      "y": 61,
+      "x": 43,
+      "y": 56,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -123,8 +123,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 39,
-      "y": 61,
+      "x": 44,
+      "y": 56,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -136,8 +136,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 40,
-      "y": 62,
+      "x": 45,
+      "y": 56,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -146,6 +146,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_IVYRIVER_ZARUDE_QUEST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 38,
+      "y": 60,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_GREEN_SCARF",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_IVYRIVER_GREEN_SCARF"
     }
   ],
   "warp_events": [
@@ -179,7 +192,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "IvyRiver_Main_Fisherman_AssembleTrigger"
     },
     {
       "type": "trigger",
@@ -188,7 +201,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "IvyRiver_Main_Fisherman_AssembleTrigger"
     }
   ],
   "bg_events": [

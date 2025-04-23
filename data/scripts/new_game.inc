@@ -319,6 +319,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_MIRROH_LAST_CHANSEY
 	setflag FLAG_HIDE_IVYRIVER_FISHERMEN
 	setflag FLAG_IVYRIVER_ZARUDE_QUEST
+	setflag FLAG_IVYRIVER_ZARUDE_REAL
 	
 	call EventScript_ResetAllBerries
 	end

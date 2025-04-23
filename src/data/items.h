@@ -7391,9 +7391,9 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Green Scarves"),
         .price = 100,
         .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "raises Smart in\n"
-            "Contests."),
+            "A tattered old\n"
+            "green scarf for\n"
+            "a young boy."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
