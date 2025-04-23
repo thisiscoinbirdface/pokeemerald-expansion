@@ -910,14 +910,15 @@ script Common_EventScript_Tauros_IvyRiver{
     msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-        release
-        //dig
-        hidefollower
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-        playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
-        delay(30)
-        warp(MAP_PELLUCA_CITY, 15, 24)
-    }    
+
+        message(format("Where should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
+
+    }       
 }
 
 script Common_EventScript_Tauros_PellucaCity{
@@ -931,28 +932,53 @@ script Common_EventScript_Tauros_PellucaCity{
         waitmessage
         dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
 
-        if (var(VAR_RESULT) == 0){
-            release
-            //dig
-            hidefollower
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-            playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
-            delay(30)
-            warp(MAP_IVY_RIVER, 19, 69)
-        }
-
-        if (var(VAR_RESULT) == 1){
-            release
-            //dig
-            hidefollower
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-            playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
-            delay(30)
-            warp(MAP_ROUTE6, 31, 64)
-        }
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
 
     }    
 }
 
+script Common_EventScript_Tauros_Route6{
+    lockall
+    faceplayer
+    msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
 
+    if (var(VAR_RESULT) == 1){
+        message(format("Where should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
 
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoPelluca)}
+
+    }    
+}
+
+script Common_EventScript_Tauros_GotoIvy{
+    release
+    hidefollower
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+    delay(30)
+    warp(MAP_IVY_RIVER, 19, 69)    
+}
+
+script Common_EventScript_Tauros_GotoPelluca{
+    release
+    //dig
+    hidefollower
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+    delay(30)
+    warp(MAP_PELLUCA_CITY, 15, 24)   
+}
+
+script Common_EventScript_Tauros_GotoRoute6{
+    release
+    //dig
+    hidefollower
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+    delay(30)
+    warp(MAP_ROUTE6, 52, 116) 
+}
