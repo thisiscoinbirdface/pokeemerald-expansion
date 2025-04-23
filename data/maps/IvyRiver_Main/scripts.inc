@@ -113,273 +113,443 @@ IvyRiver_Main_GreenScarf::
 	applymovement LOCALID_SHIP, IvyRiver_Main_GreenScarf_Movement_0
 # 77 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
+# 78 "data//maps/IvyRiver_Main/scripts.pory"
+	setobjectxy LOCALID_SHIP, 38, 56
 # 79 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_1
+	setobjectxyperm LOCALID_SHIP, 38, 56
 # 80 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
-# 81 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 8
+# 82 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_1
+# 83 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 84 "data//maps/IvyRiver_Main/scripts.pory"
-	addobject LOCALID_F1
-# 85 "data//maps/IvyRiver_Main/scripts.pory"
-	setobjectxy LOCALID_F1, 38, 57
-# 86 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
 # 87 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_2
+	addobject LOCALID_F1
 # 88 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	setobjectxy LOCALID_F1, 38, 57
 # 89 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
+# 90 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_2
+# 91 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 92 "data//maps/IvyRiver_Main/scripts.pory"
-	addobject LOCALID_F2
-# 93 "data//maps/IvyRiver_Main/scripts.pory"
-	setobjectxy LOCALID_F2, 38, 57
-# 94 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
 # 95 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_3
+	addobject LOCALID_F2
 # 96 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	setobjectxy LOCALID_F2, 38, 57
 # 97 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
+# 98 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_3
+# 99 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 100 "data//maps/IvyRiver_Main/scripts.pory"
-	addobject LOCALID_F3
-# 101 "data//maps/IvyRiver_Main/scripts.pory"
-	setobjectxy LOCALID_F3, 38, 57
-# 102 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
 # 103 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_4
+	addobject LOCALID_F3
 # 104 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	setobjectxy LOCALID_F3, 38, 57
 # 105 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
+# 106 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_4
+# 107 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 108 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_0
-# 109 "data//maps/IvyRiver_Main/scripts.pory"
-	release
-# 110 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
 # 111 "data//maps/IvyRiver_Main/scripts.pory"
-	removeitem ITEM_GREEN_SCARF
+	msgbox IvyRiver_Main_GreenScarf_Text_0
 # 112 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_1, MSGBOX_SIGN
+	release
 # 113 "data//maps/IvyRiver_Main/scripts.pory"
-	release
-# 114 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 8
+# 114 "data//maps/IvyRiver_Main/scripts.pory"
+	removeitem ITEM_GREEN_SCARF
+# 115 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_1, MSGBOX_SIGN
 # 116 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
+	release
 # 117 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
-# 118 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
+	delay 8
 # 119 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 120 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 122 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_2
-# 123 "data//maps/IvyRiver_Main/scripts.pory"
-	release
-# 124 "data//maps/IvyRiver_Main/scripts.pory"
 	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
-# 125 "data//maps/IvyRiver_Main/scripts.pory"
+# 120 "data//maps/IvyRiver_Main/scripts.pory"
 	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
-# 126 "data//maps/IvyRiver_Main/scripts.pory"
+# 121 "data//maps/IvyRiver_Main/scripts.pory"
 	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
+# 122 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 123 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 125 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_2
+# 126 "data//maps/IvyRiver_Main/scripts.pory"
+	release
 # 127 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_6
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
 # 128 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
 # 129 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
+# 130 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_5
+# 131 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 132 "data//maps/IvyRiver_Main/scripts.pory"
-	addobject LOCALID_BRO
-# 133 "data//maps/IvyRiver_Main/scripts.pory"
-	setobjectxy LOCALID_BRO, 38, 66
+	delay 16
 # 135 "data//maps/IvyRiver_Main/scripts.pory"
-	special SpawnCameraObject
+	addobject LOCALID_BRO
 # 136 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_7
-# 137 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	setobjectxy LOCALID_BRO, 38, 66
 # 138 "data//maps/IvyRiver_Main/scripts.pory"
-	special RemoveCameraObject
-# 140 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_3
-# 141 "data//maps/IvyRiver_Main/scripts.pory"
-	release
-# 142 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_5
-# 143 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 144 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 146 "data//maps/IvyRiver_Main/scripts.pory"
 	special SpawnCameraObject
-# 147 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_8
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_9
-# 149 "data//maps/IvyRiver_Main/scripts.pory"
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_6
+# 140 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
-# 150 "data//maps/IvyRiver_Main/scripts.pory"
+# 141 "data//maps/IvyRiver_Main/scripts.pory"
 	special RemoveCameraObject
-# 152 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
-# 153 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 154 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 155 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_4
-# 156 "data//maps/IvyRiver_Main/scripts.pory"
+# 143 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_3
+# 144 "data//maps/IvyRiver_Main/scripts.pory"
 	release
+# 145 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_7
+# 146 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 147 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 149 "data//maps/IvyRiver_Main/scripts.pory"
+	special SpawnCameraObject
+# 150 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_8
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_9
+# 152 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 153 "data//maps/IvyRiver_Main/scripts.pory"
+	special RemoveCameraObject
+# 155 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+# 156 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 157 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
+# 158 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_4
 # 159 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
-# 160 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
-# 161 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
-# 162 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 163 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 164 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_5
-# 165 "data//maps/IvyRiver_Main/scripts.pory"
 	release
+# 160 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 162 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
+# 163 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
+# 164 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
+# 165 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 166 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
+# 167 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_5
 # 168 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+	release
 # 169 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 170 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
 # 171 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_6
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
 # 172 "data//maps/IvyRiver_Main/scripts.pory"
-	release
+	waitmovement 0
 # 173 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
+# 174 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_6
 # 175 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
-# 176 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
-# 177 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
-# 178 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 179 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 180 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_7
-# 181 "data//maps/IvyRiver_Main/scripts.pory"
 	release
+# 176 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 178 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_7
+# 179 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_7
+# 180 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_7
+# 181 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 182 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
+# 183 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_7
 # 184 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+	release
 # 185 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 186 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
 # 187 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_8
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_11
 # 188 "data//maps/IvyRiver_Main/scripts.pory"
-	release
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_11
 # 189 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_11
+# 190 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
 # 191 "data//maps/IvyRiver_Main/scripts.pory"
-	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
+	delay 16
 # 192 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_5
+	msgbox IvyRiver_Main_GreenScarf_Text_8
 # 193 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_5
+	release
 # 194 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_5
-# 195 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_6
+	delay 16
 # 196 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_5
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
 # 197 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
 # 198 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
+# 199 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_9
+# 200 "data//maps/IvyRiver_Main/scripts.pory"
+	release
 # 201 "data//maps/IvyRiver_Main/scripts.pory"
-	addobject LOCALID_ZA
-# 202 "data//maps/IvyRiver_Main/scripts.pory"
-	setobjectxy LOCALID_ZA, 39, 66
+	delay 16
 # 203 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 8
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
 # 204 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_11
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_7
 # 205 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_7
 # 206 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 8
-# 208 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_7
+# 207 "data//maps/IvyRiver_Main/scripts.pory"
 	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_5
+# 208 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_7
 # 209 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
 # 210 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
-# 211 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_9
-# 212 "data//maps/IvyRiver_Main/scripts.pory"
-	release
 # 213 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
+	addobject LOCALID_ZA
+# 214 "data//maps/IvyRiver_Main/scripts.pory"
+	setobjectxy LOCALID_ZA, 39, 66
 # 215 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_12
+	delay 8
 # 216 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_12
 # 217 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
+	waitmovement 0
+# 218 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
 # 219 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_13
 # 220 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
 # 221 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 222 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_10
+	delay 8
 # 223 "data//maps/IvyRiver_Main/scripts.pory"
-	release
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_14
 # 224 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 225 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
 # 226 "data//maps/IvyRiver_Main/scripts.pory"
-	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
+	msgbox IvyRiver_Main_GreenScarf_Text_10
 # 227 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_13
-# 228 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmovement 0
-# 229 "data//maps/IvyRiver_Main/scripts.pory"
-	delay 16
-# 231 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Main_GreenScarf_Text_11
-# 232 "data//maps/IvyRiver_Main/scripts.pory"
 	release
-# 233 "data//maps/IvyRiver_Main/scripts.pory"
+# 228 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 230 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_15
+# 231 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 232 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 234 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+# 235 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 236 "data//maps/IvyRiver_Main/scripts.pory"
 	delay 16
 # 237 "data//maps/IvyRiver_Main/scripts.pory"
-	setwildbattle SPECIES_ZARUDE_DADA, 40
+	msgbox IvyRiver_Main_GreenScarf_Text_11
 # 238 "data//maps/IvyRiver_Main/scripts.pory"
-	dowildbattle
+	release
+# 239 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 241 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
 # 242 "data//maps/IvyRiver_Main/scripts.pory"
-	setflag FLAG_HIDE_IVYRIVER_FISHERMEN
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_16
 # 243 "data//maps/IvyRiver_Main/scripts.pory"
-	setflag FLAG_IVYRIVER_ZARUDE_QUEST
+	waitmovement 0
 # 244 "data//maps/IvyRiver_Main/scripts.pory"
-	clearflag FLAG_IVYRIVER_ZARUDE_REAL
-# 245 "data//maps/IvyRiver_Main/scripts.pory"
-	completequest QUEST_LILYPOND_FISHERMAN
+	delay 16
+# 246 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
 # 247 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 248 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 249 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_12
+# 250 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 251 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 253 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
+# 254 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_17
+# 255 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 256 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 258 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_10
+# 259 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 260 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 261 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_13
+# 262 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 263 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 266 "data//maps/IvyRiver_Main/scripts.pory"
+	special SpawnCameraObject
+# 269 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_1
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_18
+# 271 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 272 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_0
+# 273 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 275 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_14
+# 276 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 277 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 278 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
+# 279 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_10
+# 280 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 281 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_19
+# 283 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 284 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 287 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_1
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_20
+# 289 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 291 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_15
+# 292 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 296 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_21
+# 297 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F3, IvyRiver_Main_GreenScarf_Movement_21
+# 298 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 299 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 8
+# 300 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject LOCALID_F3
+# 301 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F2, IvyRiver_Main_GreenScarf_Movement_22
+# 302 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 303 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 8
+# 304 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject LOCALID_F2
+# 305 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_F1, IvyRiver_Main_GreenScarf_Movement_23
+# 306 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 307 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 8
+# 308 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject LOCALID_F1
+# 310 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_21
+# 311 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 312 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 313 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_24
+# 314 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 315 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Main_GreenScarf_Text_16
+# 316 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_25
+# 318 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 319 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 16
+# 321 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_BRO, IvyRiver_Main_GreenScarf_Movement_21
+# 322 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 323 "data//maps/IvyRiver_Main/scripts.pory"
+	delay 8
+# 324 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject LOCALID_BRO
+# 327 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_8
+# 328 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_8
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_SHIP, IvyRiver_Main_GreenScarf_Movement_26
+# 330 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_27
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_27
+# 335 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 336 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_28
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_29
+# 338 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmovement 0
+# 340 "data//maps/IvyRiver_Main/scripts.pory"
+	special RemoveCameraObject
+# 341 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject LOCALID_ZA
+# 345 "data//maps/IvyRiver_Main/scripts.pory"
+	setflag FLAG_HIDE_IVYRIVER_FISHERMEN
+# 346 "data//maps/IvyRiver_Main/scripts.pory"
+	setflag FLAG_IVYRIVER_ZARUDE_QUEST
+# 347 "data//maps/IvyRiver_Main/scripts.pory"
+	clearflag FLAG_IVYRIVER_ZARUDE_REAL
+# 348 "data//maps/IvyRiver_Main/scripts.pory"
+	completequest QUEST_LILYPOND_FISHERMAN
+# 350 "data//maps/IvyRiver_Main/scripts.pory"
 	releaseall
 	end
 
@@ -462,126 +632,298 @@ IvyRiver_Main_GreenScarf_Movement_0:
 	walk_down
 	step_end
 
-# 79 "data//maps/IvyRiver_Main/scripts.pory"
+# 82 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_1:
-# 79 "data//maps/IvyRiver_Main/scripts.pory"
+# 82 "data//maps/IvyRiver_Main/scripts.pory"
 	face_up
 	step_end
 
-# 87 "data//maps/IvyRiver_Main/scripts.pory"
+# 90 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_2:
-# 87 "data//maps/IvyRiver_Main/scripts.pory"
+# 90 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_right
-# 87 "data//maps/IvyRiver_Main/scripts.pory"
+# 90 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_down
 	step_end
 
-# 95 "data//maps/IvyRiver_Main/scripts.pory"
+# 98 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_3:
-# 95 "data//maps/IvyRiver_Main/scripts.pory"
+# 98 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_left
-# 95 "data//maps/IvyRiver_Main/scripts.pory"
+# 98 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_down
 	step_end
 
-# 103 "data//maps/IvyRiver_Main/scripts.pory"
+# 106 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_4:
-# 103 "data//maps/IvyRiver_Main/scripts.pory"
+# 106 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_down
 	step_end
 
-# 116 "data//maps/IvyRiver_Main/scripts.pory"
+# 119 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_5:
-# 116 "data//maps/IvyRiver_Main/scripts.pory"
+# 119 "data//maps/IvyRiver_Main/scripts.pory"
 	emote_exclamation_mark
-	step_end
-
-# 127 "data//maps/IvyRiver_Main/scripts.pory"
-IvyRiver_Main_GreenScarf_Movement_6:
-# 127 "data//maps/IvyRiver_Main/scripts.pory"
-	emote_exclamation_mark
-# 127 "data//maps/IvyRiver_Main/scripts.pory"
+# 119 "data//maps/IvyRiver_Main/scripts.pory"
 	face_down
 	step_end
 
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_6:
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 139 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+	step_end
+
+# 145 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_7:
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
-# 136 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
+# 145 "data//maps/IvyRiver_Main/scripts.pory"
+	emote_exclamation_mark
 	step_end
 
-# 147 "data//maps/IvyRiver_Main/scripts.pory"
+# 150 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_8:
-# 147 "data//maps/IvyRiver_Main/scripts.pory"
+# 150 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
-# 147 "data//maps/IvyRiver_Main/scripts.pory"
+# 150 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
-# 147 "data//maps/IvyRiver_Main/scripts.pory"
+# 150 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
 	step_end
 
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_9:
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 148 "data//maps/IvyRiver_Main/scripts.pory"
+# 151 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_up
 	step_end
 
-# 152 "data//maps/IvyRiver_Main/scripts.pory"
+# 155 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_10:
-# 152 "data//maps/IvyRiver_Main/scripts.pory"
+# 155 "data//maps/IvyRiver_Main/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
+# 187 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_11:
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_up
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_left
-# 204 "data//maps/IvyRiver_Main/scripts.pory"
+# 187 "data//maps/IvyRiver_Main/scripts.pory"
+	emote_question_mark
+	step_end
+
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_12:
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_fast_up
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_fast_up
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_fast_up
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_fast_up
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_fast_left
+# 216 "data//maps/IvyRiver_Main/scripts.pory"
 	face_up
 	step_end
 
-# 215 "data//maps/IvyRiver_Main/scripts.pory"
-IvyRiver_Main_GreenScarf_Movement_12:
-# 215 "data//maps/IvyRiver_Main/scripts.pory"
+# 219 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_13:
+# 219 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+# 219 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+# 219 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 223 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_14:
+# 223 "data//maps/IvyRiver_Main/scripts.pory"
+	face_up
+# 223 "data//maps/IvyRiver_Main/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 230 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_15:
+# 230 "data//maps/IvyRiver_Main/scripts.pory"
 	emote_question_mark
-# 215 "data//maps/IvyRiver_Main/scripts.pory"
+# 230 "data//maps/IvyRiver_Main/scripts.pory"
 	face_down
 	step_end
 
-# 227 "data//maps/IvyRiver_Main/scripts.pory"
-IvyRiver_Main_GreenScarf_Movement_13:
-# 227 "data//maps/IvyRiver_Main/scripts.pory"
+# 242 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_16:
+# 242 "data//maps/IvyRiver_Main/scripts.pory"
 	emote_exclamation_mark
-# 227 "data//maps/IvyRiver_Main/scripts.pory"
+# 242 "data//maps/IvyRiver_Main/scripts.pory"
 	jump_in_place_down
+	step_end
+
+# 254 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_17:
+# 254 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_down
+	step_end
+
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_18:
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_right
+# 270 "data//maps/IvyRiver_Main/scripts.pory"
+	face_down
+	step_end
+
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_19:
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 282 "data//maps/IvyRiver_Main/scripts.pory"
+	face_down
+	step_end
+
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_20:
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_right
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 288 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 296 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_21:
+# 296 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+	step_end
+
+# 301 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_22:
+# 301 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_right
+# 301 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+	step_end
+
+# 305 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_23:
+# 305 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 305 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+	step_end
+
+# 313 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_24:
+# 313 "data//maps/IvyRiver_Main/scripts.pory"
+	face_down
+	step_end
+
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_25:
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+# 317 "data//maps/IvyRiver_Main/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_26:
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+# 329 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_up
+	step_end
+
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_27:
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 333 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+	step_end
+
+# 336 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_28:
+# 336 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_left
+# 336 "data//maps/IvyRiver_Main/scripts.pory"
+	face_down
+	step_end
+
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_29:
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 337 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
 	step_end
 
 IvyRiver_Main_Fisherman_AssembleTrigger_Text_0:
@@ -591,21 +933,21 @@ IvyRiver_Main_Fisherman_AssembleTrigger_Text_0:
 	.string "don't remember that day too clearly.\p"
 	.string "The only thing we remember that day is\n"
 	.string "that it was really cold and we were all\l"
-	.string "dressed in green. Let's spread out and\l"
+	.string "dressed in purple. Let's spread out and\l"
 	.string "search the river for anything we can\l"
 	.string "find!$"
 
 IvyRiver_Main_GreenScarf_Text_0:
-# 108 "data//maps/IvyRiver_Main/scripts.pory"
+# 111 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "{PLAYER}, did you find anything?$"
 
 IvyRiver_Main_GreenScarf_Text_1:
-# 112 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "{PLAYER} handed the Green Scarf to\n"
+# 115 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "{PLAYER} handed the Purple Scarf to\n"
 	.string "the fishermen.$"
 
 IvyRiver_Main_GreenScarf_Text_2:
-# 122 "data//maps/IvyRiver_Main/scripts.pory"
+# 125 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Th-this is...it's our brother's scarf!\n"
 	.string "This is incredible! We shouldn't have\l"
 	.string "given up after all.\p"
@@ -614,16 +956,16 @@ IvyRiver_Main_GreenScarf_Text_2:
 	.string "somewhere -$"
 
 IvyRiver_Main_GreenScarf_Text_3:
-# 140 "data//maps/IvyRiver_Main/scripts.pory"
+# 143 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I left my scarf here somewhere...where\n"
 	.string "could it have gone?$"
 
 IvyRiver_Main_GreenScarf_Text_4:
-# 155 "data//maps/IvyRiver_Main/scripts.pory"
+# 158 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Brothers - is that you?$"
 
 IvyRiver_Main_GreenScarf_Text_5:
-# 164 "data//maps/IvyRiver_Main/scripts.pory"
+# 167 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Y-yes...are you-are you alright? It's -\n"
 	.string "it's just - we're so glad to se you!\p"
 	.string "When we lost you all those years ago, we\n"
@@ -631,34 +973,65 @@ IvyRiver_Main_GreenScarf_Text_5:
 	.string "you manage to stay alive?$"
 
 IvyRiver_Main_GreenScarf_Text_6:
-# 171 "data//maps/IvyRiver_Main/scripts.pory"
+# 174 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I was raised by a Pokemon! It took care\n"
 	.string "of me, fed me, and raised me. I owe it my\l"
 	.string "life.$"
 
 IvyRiver_Main_GreenScarf_Text_7:
-# 180 "data//maps/IvyRiver_Main/scripts.pory"
+# 183 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "What a story...where is that Pokemon?\n"
 	.string "We owe it too - for keeping our brother\l"
 	.string "safe all these years.\p"
-	.string "Brother, will you come back with us?$"
+	.string "...\p"
+	.string "...$"
 
 IvyRiver_Main_GreenScarf_Text_8:
-# 187 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Y-yes. Yes of course. You're my family.$"
+# 192 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Brother - we lost so many years. We\n"
+	.string "don't want to lose more.\p"
+	.string "Will you come back with us?$"
 
 IvyRiver_Main_GreenScarf_Text_9:
-# 211 "data//maps/IvyRiver_Main/scripts.pory"
+# 199 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Y-yes. Yes of course. You're my family.$"
+
+IvyRiver_Main_GreenScarf_Text_10:
+# 226 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "No - Dada! It's fine. They're my family.\n"
 	.string "The brothers I told you about!$"
 
-IvyRiver_Main_GreenScarf_Text_10:
-# 222 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Text_11:
+# 237 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Dada - it's time for me to leave. I'm\n"
 	.string "going to go back to the city with them.$"
 
-IvyRiver_Main_GreenScarf_Text_11:
-# 231 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Text_12:
+# 249 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I'll be fine.\p"
 	.string "...\p"
 	.string "Because you raised me to be fine.$"
+
+IvyRiver_Main_GreenScarf_Text_13:
+# 261 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I'll miss you too. But my home is\n"
+	.string "elsewhere.\p"
+	.string "...\p"
+	.string "Dada, you made me who I am. I'll never\n"
+	.string "forget that.$"
+
+IvyRiver_Main_GreenScarf_Text_14:
+# 275 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "We want to thank you for taking care of\n"
+	.string "our brother. Please keep his purple\l"
+	.string "scarf with you.$"
+
+IvyRiver_Main_GreenScarf_Text_15:
+# 291 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Shall we go then? We have much to catch\n"
+	.string "up on.$"
+
+IvyRiver_Main_GreenScarf_Text_16:
+# 315 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "See you Dada.\p"
+	.string "I-I'll never forget you.$"

@@ -7387,19 +7387,19 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GREEN_SCARF] =
     {
-        .name = _("Green Scarf"),
-        .pluralName = _("Green Scarves"),
+        .name = _("Purple Scarf"),
+        .pluralName = _("Purple Scarves"),
         .price = 100,
         .description = COMPOUND_STRING(
             "A tattered old\n"
-            "green scarf for\n"
+            "purple scarf for\n"
             "a young boy."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
         .iconPic = gItemIcon_Scarf,
-        .iconPalette = gItemIconPalette_GreenScarf,
+        .iconPalette = gItemIconPalette_PinkScarf,
     },
 
     [ITEM_YELLOW_SCARF] =

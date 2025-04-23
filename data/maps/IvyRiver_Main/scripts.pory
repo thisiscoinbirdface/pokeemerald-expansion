@@ -27,7 +27,7 @@ script IvyRiver_Main_Fisherman_AssembleTrigger{
     applymovement(1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox(format("{PLAYER}! You came! Let's start our search...but after so many years, we don't remember that day too clearly.\pThe only thing we remember that day is that it was really cold and we were all dressed in green. Let's spread out and search the river for anything we can find!"))
+    msgbox(format("{PLAYER}! You came! Let's start our search...but after so many years, we don't remember that day too clearly.\pThe only thing we remember that day is that it was really cold and we were all dressed in purple. Let's spread out and search the river for anything we can find!"))
     release
 
     //fuck off
@@ -75,6 +75,9 @@ script IvyRiver_Main_GreenScarf{
     setobjectxy(LOCALID_SHIP, 38, 53)
     applymovement(LOCALID_SHIP, moves(walk_down * 3))
     waitmovement(0)
+    setobjectxy(LOCALID_SHIP, 38, 56)
+    setobjectxyperm(LOCALID_SHIP, 38, 56)
+    waitmovement(0)
         //face player up
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
@@ -109,21 +112,21 @@ script IvyRiver_Main_GreenScarf{
     release
     delay(8)
     removeitem(ITEM_GREEN_SCARF)
-    msgbox(format("{PLAYER} handed the Green Scarf to the fishermen."), MSGBOX_SIGN)
+    msgbox(format("{PLAYER} handed the Purple Scarf to the fishermen."), MSGBOX_SIGN)
     release
     delay(8)
 
-    applymovement(LOCALID_F1, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F2, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F3, moves(emote_exclamation_mark))    
+    applymovement(LOCALID_F1, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F2, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F3, moves(emote_exclamation_mark face_down))    
     waitmovement(0)
     delay(16)
 
     msgbox(format("Th-this is...it's our brother's scarf! This is incredible! We shouldn't have given up after all.\pWhere did you find it?\pRight here? Then he's got to be somewhere -"))
     release
-    applymovement(LOCALID_F1, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F2, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F3, moves(emote_exclamation_mark))    
+    applymovement(LOCALID_F1, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F2, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F3, moves(emote_exclamation_mark face_down))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_down))
     waitmovement(0)
     delay(16)
@@ -145,7 +148,7 @@ script IvyRiver_Main_GreenScarf{
 
     special(SpawnCameraObject)
     applymovement(LOCALID_BRO, moves(walk_up * 3))
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 6))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
     waitmovement(0)
     special(RemoveCameraObject)
 
@@ -156,9 +159,9 @@ script IvyRiver_Main_GreenScarf{
     release
     delay(16)
 
-    applymovement(LOCALID_F1, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F2, moves(emote_exclamation_mark))
-    applymovement(LOCALID_F3, moves(emote_exclamation_mark))
+    applymovement(LOCALID_F1, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F2, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_F3, moves(emote_exclamation_mark face_down))  
     waitmovement(0)
     delay(16)    
     msgbox(format("Y-yes...are you-are you alright? It's - it's just - we're so glad to se you!\pWhen we lost you all those years ago, we thought you were gone for good. How did you manage to stay alive?"))
@@ -177,7 +180,16 @@ script IvyRiver_Main_GreenScarf{
     applymovement(LOCALID_F3, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)    
-    msgbox(format("What a story...where is that Pokemon? We owe it too - for keeping our brother safe all these years.\pBrother, will you come back with us?"))
+    msgbox(format("What a story...where is that Pokemon? We owe it too - for keeping our brother safe all these years.\p...\p..."))
+    release
+    delay(16)
+
+    applymovement(LOCALID_F1, moves(emote_question_mark))
+    applymovement(LOCALID_F2, moves(emote_question_mark))
+    applymovement(LOCALID_F3, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)    
+    msgbox(format("Brother - we lost so many years. We don't want to lose more.\pWill you come back with us?"))
     release
     delay(16)
 
@@ -201,11 +213,14 @@ script IvyRiver_Main_GreenScarf{
     addobject(LOCALID_ZA)
     setobjectxy(LOCALID_ZA, 39, 66)
     delay(8)    
-    applymovement(LOCALID_ZA, moves(walk_up * 4 walk_left face_up))
+    applymovement(LOCALID_ZA, moves(walk_fast_up * 4 walk_fast_left face_up))
+    waitmovement(0)
+    playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+    applymovement(LOCALID_ZA, moves(jump_in_place_up * 3))
     waitmovement(0)    
     delay(8)
 
-    applymovement(LOCALID_BRO, moves(emote_exclamation_mark))
+    applymovement(LOCALID_BRO, moves(face_up emote_exclamation_mark))
     waitmovement(0)
     delay(16)
     msgbox(format("No - Dada! It's fine. They're my family. The brothers I told you about!"))
@@ -228,14 +243,102 @@ script IvyRiver_Main_GreenScarf{
     waitmovement(0)
     delay(16)
 
+    applymovement(LOCALID_BRO, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
     msgbox(format("I'll be fine.\p...\pBecause you raised me to be fine."))
     release
     delay(16)
 
+    playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+    applymovement(LOCALID_ZA, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
 
-    //zarude fight
-    setwildbattle(SPECIES_ZARUDE_DADA, 40)
-    dowildbattle
+    applymovement(LOCALID_BRO, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("I'll miss you too. But my home is elsewhere.\p...\pDada, you made me who I am. I'll never forget that."))
+    release
+    delay(16)
+
+    //lock camera
+    special(SpawnCameraObject)
+
+    //Give scarf to dada
+    applymovement(LOCALID_ZA, moves(face_up))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2 walk_right face_down))
+    waitmovement(0)
+    applymovement(LOCALID_F3, moves(walk_down * 3))
+    waitmovement(0)
+
+    msgbox(format("We want to thank you for taking care of our brother. Please keep his purple scarf with you."))
+    release
+    delay(16)
+    playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+    applymovement(LOCALID_ZA, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    applymovement(LOCALID_F3, moves(walk_up * 3 face_down))
+    waitmovement(0)
+    delay(16)
+
+    //bro leaves
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_BRO, moves(walk_left walk_up * 2 walk_right walk_up * 2 jump_in_place_up))
+    waitmovement(0)
+
+    msgbox(format("Shall we go then? We have much to catch up on."))
+    release
+
+
+    //exit
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up))    
+    applymovement(LOCALID_F3, moves(walk_up))
+    waitmovement(0)    
+    delay(8)
+    removeobject(LOCALID_F3)
+    applymovement(LOCALID_F2, moves(walk_right walk_up))
+    waitmovement(0)    
+    delay(8)
+    removeobject(LOCALID_F2)
+    applymovement(LOCALID_F1, moves(walk_left walk_up))
+    waitmovement(0)    
+    delay(8)
+    removeobject(LOCALID_F1)
+
+    applymovement(LOCALID_BRO, moves(walk_up))
+    waitmovement(0)
+    delay(16)
+    applymovement(LOCALID_BRO, moves(face_down))
+    delay(16)
+    msgbox(format("See you Dada.\pI-I'll never forget you."))
+    release
+    applymovement(LOCALID_ZA, moves(walk_up * 2 jump_in_place_up * 3))
+    waitmovement(0)
+    delay(16)
+
+    applymovement(LOCALID_BRO, moves(walk_up))
+    waitmovement(0)    
+    delay(8)
+    removeobject(LOCALID_BRO)
+
+    //ship leaving
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+    applymovement(LOCALID_ZA, moves(walk_up * 3))
+    applymovement(LOCALID_SHIP, moves(walk_left * 4 walk_up * 5))
+    waitmovement(0)
+
+    //zarude exit
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
+    applymovement(LOCALID_ZA, moves(walk_down * 4))    
+    waitmovement(0)    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
+    applymovement(LOCALID_ZA, moves(walk_down * 8))    
+    waitmovement(0)    
+
+    special(RemoveCameraObject)
+    removeobject(LOCALID_ZA)
 
 
     //questcomplete

@@ -1523,7 +1523,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
 
     const u8 gText_SubQuest5_Desc1[] = _("The fisherman in Lily Pond wants me to take\na letter to his other brothers. It's time\nto search for the missing brother!");
     const u8 gText_SubQuest5_Desc2[] = _("The three brothers have gone ahead into Ivy\nRiver. They'll be waiting for me down there.");
-    const u8 gText_SubQuest5_Desc3[] = _("It was really cold that day and the brothers\nall wore green. Can I find anything that\ncould've belonged to the missing brother?");
+    const u8 gText_SubQuest5_Desc3[] = _("It was really cold that day and the brothers\nall wore purple. Can I find anything that\ncould've belonged to the missing brother?");
 
 
 
