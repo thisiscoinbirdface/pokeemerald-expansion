@@ -5324,10 +5324,10 @@
     {
       "id": "LAYOUT_IVY_RIVER_RESEARCH_FACILITY",
       "name": "IvyRiver_ResearchFacility_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/IvyRiver_ResearchFacility/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_ResearchFacility/map.bin"
     },
