@@ -528,13 +528,13 @@ IvyRiver_Main_GreenScarf::
 # 333 "data//maps/IvyRiver_Main/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, IvyRiver_Main_GreenScarf_Movement_27
 # 334 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_27
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_28
 # 335 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
 # 336 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_28
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Main_GreenScarf_Movement_29
 # 337 "data//maps/IvyRiver_Main/scripts.pory"
-	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_29
+	applymovement LOCALID_ZA, IvyRiver_Main_GreenScarf_Movement_30
 # 338 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmovement 0
 # 340 "data//maps/IvyRiver_Main/scripts.pory"
@@ -550,6 +550,32 @@ IvyRiver_Main_GreenScarf::
 # 348 "data//maps/IvyRiver_Main/scripts.pory"
 	completequest QUEST_LILYPOND_FISHERMAN
 # 350 "data//maps/IvyRiver_Main/scripts.pory"
+	releaseall
+	end
+
+
+IvyRiver_Main_Zarude_Legendary::
+# 357 "data//maps/IvyRiver_Main/scripts.pory"
+	lockall
+# 359 "data//maps/IvyRiver_Main/scripts.pory"
+	special SaveGame
+# 360 "data//maps/IvyRiver_Main/scripts.pory"
+	waitstate
+# 361 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+# 364 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
+# 365 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmoncry
+# 366 "data//maps/IvyRiver_Main/scripts.pory"
+	setflag FLAG_IVYRIVER_ZARUDE_REAL
+# 368 "data//maps/IvyRiver_Main/scripts.pory"
+	setwildbattle SPECIES_ZARUDE_DADA, 40
+# 369 "data//maps/IvyRiver_Main/scripts.pory"
+	dowildbattle
+# 370 "data//maps/IvyRiver_Main/scripts.pory"
+	removeobject 1
+# 372 "data//maps/IvyRiver_Main/scripts.pory"
 	releaseall
 	end
 
@@ -898,8 +924,22 @@ IvyRiver_Main_GreenScarf_Movement_27:
 	walk_down
 	step_end
 
-# 336 "data//maps/IvyRiver_Main/scripts.pory"
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_GreenScarf_Movement_28:
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+# 334 "data//maps/IvyRiver_Main/scripts.pory"
+	walk_down
+	step_end
+
+# 336 "data//maps/IvyRiver_Main/scripts.pory"
+IvyRiver_Main_GreenScarf_Movement_29:
 # 336 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_left
 # 336 "data//maps/IvyRiver_Main/scripts.pory"
@@ -907,9 +947,7 @@ IvyRiver_Main_GreenScarf_Movement_28:
 	step_end
 
 # 337 "data//maps/IvyRiver_Main/scripts.pory"
-IvyRiver_Main_GreenScarf_Movement_29:
-# 337 "data//maps/IvyRiver_Main/scripts.pory"
-	walk_down
+IvyRiver_Main_GreenScarf_Movement_30:
 # 337 "data//maps/IvyRiver_Main/scripts.pory"
 	walk_down
 # 337 "data//maps/IvyRiver_Main/scripts.pory"

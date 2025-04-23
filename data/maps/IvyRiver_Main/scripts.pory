@@ -331,10 +331,10 @@ script IvyRiver_Main_GreenScarf{
 
     //zarude exit
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
-    applymovement(LOCALID_ZA, moves(walk_down * 4))    
+    applymovement(LOCALID_ZA, moves(walk_down * 5))    
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
-    applymovement(LOCALID_ZA, moves(walk_down * 8))    
+    applymovement(LOCALID_ZA, moves(walk_down * 7))    
     waitmovement(0)    
 
     special(RemoveCameraObject)
@@ -349,6 +349,28 @@ script IvyRiver_Main_GreenScarf{
 
     releaseall
     end               
+}
+
+
+
+script IvyRiver_Main_Zarude_Legendary{
+    lockall
+    //save
+    special(SaveGame)
+    waitstate
+    release
+
+    //setflag
+    playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_IVYRIVER_ZARUDE_REAL)
+
+    setwildbattle(SPECIES_ZARUDE_DADA, 40)
+    dowildbattle
+    removeobject(1)
+
+    releaseall
+    end
 }
 
 
