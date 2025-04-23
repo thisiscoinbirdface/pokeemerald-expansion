@@ -2081,8 +2081,8 @@ static const u16 sUrshifuFormSpeciesIdTable[] = {
 
 #if P_FAMILY_ZARUDE
 static const u16 sZarudeFormSpeciesIdTable[] = {
-    SPECIES_ZARUDE,
     SPECIES_ZARUDE_DADA,
+    SPECIES_ZARUDE,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_ZARUDE

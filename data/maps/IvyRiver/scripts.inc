@@ -372,50 +372,50 @@ LilyPond_Fisherman_C::
 # 259 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_LILYPOND_FISHERMAN_QUEST, 3
 	goto_if_eq LilyPond_Fisherman_C_2
-# 288 "data//maps/IvyRiver/scripts.pory"
+# 286 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_LILYPOND_FISHERMAN_QUEST, 2
 	goto_if_eq LilyPond_Fisherman_C_5
-# 294 "data//maps/IvyRiver/scripts.pory"
+# 292 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_LILYPOND_FISHERMAN_QUEST, 1
 	goto_if_eq LilyPond_Fisherman_C_8
-# 301 "data//maps/IvyRiver/scripts.pory"
+# 299 "data//maps/IvyRiver/scripts.pory"
 	lockall
-# 302 "data//maps/IvyRiver/scripts.pory"
+# 300 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_3, MSGBOX_YESNO
-# 304 "data//maps/IvyRiver/scripts.pory"
+# 302 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LilyPond_Fisherman_C_11
-# 309 "data//maps/IvyRiver/scripts.pory"
+# 307 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_5
-# 310 "data//maps/IvyRiver/scripts.pory"
+# 308 "data//maps/IvyRiver/scripts.pory"
 	release
-# 311 "data//maps/IvyRiver/scripts.pory"
+# 309 "data//maps/IvyRiver/scripts.pory"
 	delay 16
-# 312 "data//maps/IvyRiver/scripts.pory"
+# 310 "data//maps/IvyRiver/scripts.pory"
 	message LilyPond_Fisherman_C_Text_6
-# 313 "data//maps/IvyRiver/scripts.pory"
+# 311 "data//maps/IvyRiver/scripts.pory"
 	waitmessage
-# 314 "data//maps/IvyRiver/scripts.pory"
+# 312 "data//maps/IvyRiver/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, LilyPond_Fisherman_C_Text_7, LilyPond_Fisherman_C_Text_8, LilyPond_Fisherman_C_Text_9
-# 316 "data//maps/IvyRiver/scripts.pory"
+# 314 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LilyPond_Fisherman_C_14
-# 320 "data//maps/IvyRiver/scripts.pory"
+# 318 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq LilyPond_Fisherman_C_17
-# 325 "data//maps/IvyRiver/scripts.pory"
+# 323 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_12
-# 326 "data//maps/IvyRiver/scripts.pory"
+# 324 "data//maps/IvyRiver/scripts.pory"
 	release
-# 327 "data//maps/IvyRiver/scripts.pory"
+# 325 "data//maps/IvyRiver/scripts.pory"
 	giveitem ITEM_FISHERMAN_LETTER
-# 328 "data//maps/IvyRiver/scripts.pory"
+# 326 "data//maps/IvyRiver/scripts.pory"
 	startquest QUEST_LILYPOND_FISHERMAN
-# 329 "data//maps/IvyRiver/scripts.pory"
+# 327 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_FISHERMAN_QUEST_START
-# 330 "data//maps/IvyRiver/scripts.pory"
+# 328 "data//maps/IvyRiver/scripts.pory"
 	setvar VAR_LILYPOND_FISHERMAN_QUEST, 1
-# 332 "data//maps/IvyRiver/scripts.pory"
+# 330 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
@@ -450,36 +450,32 @@ LilyPond_Fisherman_C_2:
 	setvar VAR_LILYPOND_FISHERMAN_QUEST, 4
 # 280 "data//maps/IvyRiver/scripts.pory"
 	clearflag FLAG_HIDE_IVYRIVER_FISHERMEN
-# 281 "data//maps/IvyRiver/scripts.pory"
-	clearflag FLAG_IVYRIVER_ZARUDE_QUEST
 # 282 "data//maps/IvyRiver/scripts.pory"
-	clearflag FLAG_IVYRIVER_ZARUDE_REAL
-# 284 "data//maps/IvyRiver/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1
 	end
 
 LilyPond_Fisherman_C_5:
-# 289 "data//maps/IvyRiver/scripts.pory"
+# 287 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_2, MSGBOX_NPC
 	end
 
 LilyPond_Fisherman_C_8:
-# 295 "data//maps/IvyRiver/scripts.pory"
+# 293 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_2, MSGBOX_NPC
 	end
 
 LilyPond_Fisherman_C_11:
-# 305 "data//maps/IvyRiver/scripts.pory"
+# 303 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_4, MSGBOX_NPC
 	end
 
 LilyPond_Fisherman_C_14:
-# 317 "data//maps/IvyRiver/scripts.pory"
+# 315 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_10, MSGBOX_NPC
 	end
 
 LilyPond_Fisherman_C_17:
-# 321 "data//maps/IvyRiver/scripts.pory"
+# 319 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_11, MSGBOX_NPC
 	end
 
@@ -867,23 +863,23 @@ LilyPond_Fisherman_C_Text_1:
 	.string "speak to us. I hope to see you there!$"
 
 LilyPond_Fisherman_C_Text_2:
-# 289 "data//maps/IvyRiver/scripts.pory"
+# 287 "data//maps/IvyRiver/scripts.pory"
 	.string "Have you delivered the mail to my\n"
 	.string "brothers yet?$"
 
 LilyPond_Fisherman_C_Text_3:
-# 302 "data//maps/IvyRiver/scripts.pory"
+# 300 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I fish around Lily Pond.\n"
 	.string "We have a connection to this place -\l"
 	.string "although not a happy one. Do you want\l"
 	.string "to hear our story?$"
 
 LilyPond_Fisherman_C_Text_4:
-# 305 "data//maps/IvyRiver/scripts.pory"
+# 303 "data//maps/IvyRiver/scripts.pory"
 	.string "Just as well. It hurts to tell it.$"
 
 LilyPond_Fisherman_C_Text_5:
-# 309 "data//maps/IvyRiver/scripts.pory"
+# 307 "data//maps/IvyRiver/scripts.pory"
 	.string "We were four brothers. Many years ago,\n"
 	.string "we came to Lily Pond to fish for our\l"
 	.string "first Pokemon. While three of us stayed\l"
@@ -893,35 +889,35 @@ LilyPond_Fisherman_C_Text_5:
 	.string "he went away, and was never seen again.$"
 
 LilyPond_Fisherman_C_Text_6:
-# 312 "data//maps/IvyRiver/scripts.pory"
+# 310 "data//maps/IvyRiver/scripts.pory"
 	.string "A sad story, I know.$"
 
 LilyPond_Fisherman_C_Text_7:
-# 314 "data//maps/IvyRiver/scripts.pory"
+# 312 "data//maps/IvyRiver/scripts.pory"
 	.string "I'm sorry to hear that.$"
 
 LilyPond_Fisherman_C_Text_8:
-# 314 "data//maps/IvyRiver/scripts.pory"
+# 312 "data//maps/IvyRiver/scripts.pory"
 	.string "I'm sure he's safe.$"
 
 LilyPond_Fisherman_C_Text_9:
-# 314 "data//maps/IvyRiver/scripts.pory"
+# 312 "data//maps/IvyRiver/scripts.pory"
 	.string "Don't give up!$"
 
 LilyPond_Fisherman_C_Text_10:
-# 317 "data//maps/IvyRiver/scripts.pory"
+# 315 "data//maps/IvyRiver/scripts.pory"
 	.string "Thank you.\p"
 	.string "I've taken up too much of your time. I\n"
 	.string "appreciate you listening to me.$"
 
 LilyPond_Fisherman_C_Text_11:
-# 321 "data//maps/IvyRiver/scripts.pory"
+# 319 "data//maps/IvyRiver/scripts.pory"
 	.string "Thank you. I'm sure too.\p"
 	.string "I've taken up too much of your time. I\n"
 	.string "appreciate you listening to me.$"
 
 LilyPond_Fisherman_C_Text_12:
-# 325 "data//maps/IvyRiver/scripts.pory"
+# 323 "data//maps/IvyRiver/scripts.pory"
 	.string "Don't give up, you say? But what can we\n"
 	.string "do? Search again?\p"
 	.string "...\p"
