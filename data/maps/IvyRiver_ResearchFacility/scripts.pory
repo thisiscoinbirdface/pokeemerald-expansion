@@ -79,7 +79,7 @@ script IvyRiver_Ranger_FirstQuest{
 script IvyRiver_Ranger_FirstQuest_Reward{
     message(format("Choose carefully! You might not get another one for a while."))
     waitmessage
-    dynmultichoice(0,0, TRUE, 21, 0, DYN_MULTICHOICE_CB_NONE, 
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
         "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
         "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",
@@ -103,7 +103,7 @@ script IvyRiver_Ranger_FirstQuest_Reward{
     if (var(VAR_RESULT) == 14) {setvar(VAR_0x8006, ITEM_PINSIRITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
     if (var(VAR_RESULT) == 15) {setvar(VAR_0x8006, ITEM_SHARPEDONITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
     if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_AMPHAROSITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTRICITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
+    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
     if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
 }
 
