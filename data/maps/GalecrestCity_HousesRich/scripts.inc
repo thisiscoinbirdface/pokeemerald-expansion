@@ -193,7 +193,7 @@ GalecrestCity_HousesRich_NPC9_6:
 
 GalecrestCity_HousesRich_Keckleon::
 # 135 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	playmoncry SPECIES_GLALIE, CRY_MODE_NORMAL
+	playmoncry SPECIES_CLAUNCHER, CRY_MODE_NORMAL
 # 136 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_Keckleon_Text_0, MSGBOX_NPC
 	end
@@ -325,7 +325,7 @@ GalecrestCity_HousesRich_NPC9_Text_3:
 
 GalecrestCity_HousesRich_Keckleon_Text_0:
 # 136 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "Glalie glares intently at you.$"
+	.string "Clauncher glares intently at you.$"
 
 GalecrestCity_HousesRich_Wingull_Text_0:
 # 142 "data//maps/GalecrestCity_HousesRich/scripts.pory"

@@ -321,7 +321,7 @@ WinterlilyHollow_Froslass::
 # 220 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
 # 221 "data//maps/WinterlilyHollow/scripts.pory"
-	playmoncry SPECIES_FROSLASS, CRY_MODE_NORMAL
+	playmoncry SPECIES_SNOVER, CRY_MODE_NORMAL
 # 222 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_Froslass_Text_0
 # 223 "data//maps/WinterlilyHollow/scripts.pory"
@@ -698,7 +698,8 @@ WinterlilyHollow_MimeJr_3_Text_7:
 
 WinterlilyHollow_Froslass_Text_0:
 # 222 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "What is Froslass circling for?$"
+	.string "Snover is getting dizzy...what is it\n"
+	.string "circling for?$"
 
 WinterlilyHollow_Sneasler_Text_0:
 # 230 "data//maps/WinterlilyHollow/scripts.pory"
