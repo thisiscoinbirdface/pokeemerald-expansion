@@ -8,13 +8,28 @@ mapscripts RangerInstitute_MapScripts{}
 
 //FULL RANGER QUESTLINE
 //VAR_RANGER_INSTITUTE
+    //Stages: Recruit, Trainee, Associate, Ranger (end-game)
+
 //0: quest not started
 //1: application form printed
     //now go to interview. If you fail, var resets to 0
 //2: interview completed
-    //Become a Recruit. Get RANGER BIKE and access to second floor.
+    //Become a Recruit. Get Ranger Bike and access to second floor.
 //3: first mission
-    //spoken to RAVINE, got the delivery mission
+    //spoken to Ravine, got the delivery mission
+//4: first mission complete
+    //delivered to Ivy River
+    //reward: ? + Trainee (Shard vendor in Route 6)
+//5: second mission
+    //spoken to Ivy River head, got the pokedex mission
+//6: second mission complete
+    //caught 3 specific mons for Ivy River
+    //reward: ? + Associate (EV Editor in Ivy River)
+//7: third mission
+    //???
+//8: third mission complete
+    //???
+    //reward: ? + Ranger (?)
 
 
 
