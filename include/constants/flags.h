@@ -234,7 +234,7 @@
 #define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // Unused Flag
 #define FLAG_IVYRIVER_ZARUDE_REAL 0x1DF // Unused Flag
 #define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1 0x1E1 // Unused Flag
+#define FLAG_RANGER_TAUROS_USE 0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2 0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3 0x1E3 // Unused Flag
 #define FLAG_UNUSED_0x4B5 0x4B5 // Unused Flag
