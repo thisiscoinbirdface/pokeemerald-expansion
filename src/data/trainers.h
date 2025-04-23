@@ -3808,7 +3808,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1588
-            .species = SPECIES_FROGADIER,
+            .species = SPECIES_CROCONAW,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1590
             .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
@@ -3910,7 +3910,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE6_E] =
     {
 #line 1627
-        .trainerName = _("KOAN"),
+        .trainerName = _("Koan"),
 #line 1628
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1629
@@ -3929,7 +3929,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1636
-            .species = SPECIES_FROGADIER,
+            .species = SPECIES_CROCONAW,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1638
             .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),

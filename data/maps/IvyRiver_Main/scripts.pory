@@ -343,6 +343,7 @@ script IvyRiver_Main_GreenScarf{
 
     //questcomplete
     setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)
+    setflag(FLAG_ITEM_IVYRIVER_GREEN_SCARF)
     setflag(FLAG_IVYRIVER_ZARUDE_QUEST)
     clearflag(FLAG_IVYRIVER_ZARUDE_REAL)
     completequest(QUEST_LILYPOND_FISHERMAN)

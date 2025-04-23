@@ -544,38 +544,40 @@ IvyRiver_Main_GreenScarf::
 # 345 "data//maps/IvyRiver_Main/scripts.pory"
 	setflag FLAG_HIDE_IVYRIVER_FISHERMEN
 # 346 "data//maps/IvyRiver_Main/scripts.pory"
-	setflag FLAG_IVYRIVER_ZARUDE_QUEST
+	setflag FLAG_ITEM_IVYRIVER_GREEN_SCARF
 # 347 "data//maps/IvyRiver_Main/scripts.pory"
-	clearflag FLAG_IVYRIVER_ZARUDE_REAL
+	setflag FLAG_IVYRIVER_ZARUDE_QUEST
 # 348 "data//maps/IvyRiver_Main/scripts.pory"
+	clearflag FLAG_IVYRIVER_ZARUDE_REAL
+# 349 "data//maps/IvyRiver_Main/scripts.pory"
 	completequest QUEST_LILYPOND_FISHERMAN
-# 350 "data//maps/IvyRiver_Main/scripts.pory"
+# 351 "data//maps/IvyRiver_Main/scripts.pory"
 	releaseall
 	end
 
 
 IvyRiver_Main_Zarude_Legendary::
-# 357 "data//maps/IvyRiver_Main/scripts.pory"
+# 358 "data//maps/IvyRiver_Main/scripts.pory"
 	lockall
-# 359 "data//maps/IvyRiver_Main/scripts.pory"
-	special SaveGame
 # 360 "data//maps/IvyRiver_Main/scripts.pory"
-	waitstate
+	special SaveGame
 # 361 "data//maps/IvyRiver_Main/scripts.pory"
+	waitstate
+# 362 "data//maps/IvyRiver_Main/scripts.pory"
 	release
-# 364 "data//maps/IvyRiver_Main/scripts.pory"
-	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
 # 365 "data//maps/IvyRiver_Main/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL
 # 366 "data//maps/IvyRiver_Main/scripts.pory"
+	waitmoncry
+# 367 "data//maps/IvyRiver_Main/scripts.pory"
 	setflag FLAG_IVYRIVER_ZARUDE_REAL
-# 368 "data//maps/IvyRiver_Main/scripts.pory"
-	setwildbattle SPECIES_ZARUDE_DADA, 40
 # 369 "data//maps/IvyRiver_Main/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_ZARUDE_DADA, 40
 # 370 "data//maps/IvyRiver_Main/scripts.pory"
+	dowildbattle
+# 371 "data//maps/IvyRiver_Main/scripts.pory"
 	removeobject 1
-# 372 "data//maps/IvyRiver_Main/scripts.pory"
+# 373 "data//maps/IvyRiver_Main/scripts.pory"
 	releaseall
 	end
 

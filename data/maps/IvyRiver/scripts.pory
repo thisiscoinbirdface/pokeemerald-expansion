@@ -161,7 +161,7 @@ script LilyPond_Cave_Lapras{
 
 script LilyPond_Cave_Lapras_Encounter{
     lockall
-    playmoncry(SPECIES_LAPRAS)
+    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)
     setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
     removeobject(7)
     setwildbattle(SPECIES_LAPRAS, 35)
