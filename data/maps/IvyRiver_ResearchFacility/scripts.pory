@@ -1,10 +1,9 @@
 raw`
     .set LOCALID_MAIN, 4
-    .set LOCALID_Q1, 5
-    .set LOCALID_Q2, 6
-    .set LOCALID_Q3, 7
-    .set LOCALID_Q4, 8
-    .set LOCALID_EV, 1
+    .set LOCALID_Q1, 6
+    .set LOCALID_Q2, 7
+    .set LOCALID_Q3, 8
+    .set LOCALID_EV, 9
     .set LOCALID_TAUROS_RANGER, 13
 `
 
@@ -56,13 +55,13 @@ script IvyRiver_Ranger_FirstQuest{
         waitmessage
         call(Common_EventScript_PlayGymBadgeFanfare)
 
-        msgbox(format("I should also give you a reward...hmm, what do we have with us?\pSorry, we're quite a bare-bones setup here."))
+        msgbox(format("I should also give you a reward...hmm, what do we have with us?\pSorry, we're a bare-bones setup here."))
         release
         delay(8)
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)   
-        msgbox(format("How about this? Why don't you pick from one of the items Director Ravine sent us?"))
+        msgbox(format("How about this? Take your pick from one of the items Director Ravine sent us."))
         release
         delay(8)
         
@@ -200,4 +199,138 @@ script IvyRiver_Ranger_TaurosBreeder{
 
 
 //Second floor Quests
+//shiinotic, toedscool, pinsir
+
+//shiinotic
+script IvyRiver_Ranger_Scientist_A{
+    if (flag(FLAG_IVY_RIVER_RANGER_SCIENTIST_A)){
+        msgbox(format("Want to know the results of my study?\pThe spores are just spores. There's no connection to mega evolution. What a waste of time! I'll never get published like this."), MSGBOX_NPC)
+        end
+    }
+
+    //quest
+    msgbox(format("Did you know that Shiinotic emits flickering spores that can cause drowsiness? I'm studying whether those spores may be connected to mega evolution somehow. But since we're so far away from Vilethorn Woods, it's hard to conduct experiments."), MSGBOX_NPC)
+    
+    showmonpic(SPECIES_SHIINOTIC, 10, 3)
+    msgbox(format("Do you have a Shiinotic that I can take spore samples of?"), MSGBOX_YESNO)
+    release
+    hidemonpic
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Ah. Come back when you do!"), MSGBOX_NPC)
+        end
+    }
+    
+    special(ChoosePartyMon)                 //choose your mon
+    waitstate                               //wait
+    copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+    copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+    specialvar(VAR_RESULT, GetTradeSpecies)
+
+    if (var(VAR_RESULT) == SPECIES_SHIINOTIC){
+        applymovement(LOCALID_Q1, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Amazing! Such a beautiful, yet dangerous, Pokemon.\pHang on while I take some samples.\p...\p...\p..."))
+        release
+        playse(SE_BANG)
+        msgbox(format("And...done!\pThank you, Candidate. This'll be very helpful. Come back later if you want to find out the results of my research!"), MSGBOX_NPC)
+        release
+        addvar(VAR_RANGER_INSTITUTE, 1)
+        setflag(FLAG_IVY_RIVER_RANGER_SCIENTIST_A)
+        end
+    } else {
+        msgbox(format("Hey, that's not a Shiinotic! You need to work harder, Candidate!"), MSGBOX_NPC)
+        end
+    }
+}
+
+//shiinotic
+script IvyRiver_Ranger_Scientist_B{
+    if (flag(FLAG_IVY_RIVER_RANGER_SCIENTIST_B)){
+        msgbox(format("Want to know the results of my study?\pThere seems to be no correlation between mega evolution and regional forms. This might be a failed experiment, but that's a learning in and of itself!"), MSGBOX_NPC)
+        end
+    }
+
+    //quest
+    msgbox(format("Did you know that Toedscool is a regional form of a Pokemon called Tentacool? I'm studying whether regional forms may be connected to mega evolution somehow. But I have no idea where to find a Toedscool!"), MSGBOX_NPC)
+    
+    showmonpic(SPECIES_TOEDSCOOL, 10, 3)
+    msgbox(format("Do you have a Toedscool that I can study?"), MSGBOX_YESNO)
+    release
+    hidemonpic
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Ah. Come back when you do!"), MSGBOX_NPC)
+        end
+    }
+    
+    special(ChoosePartyMon)                 //choose your mon
+    waitstate                               //wait
+    copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+    copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+    specialvar(VAR_RESULT, GetTradeSpecies)
+
+    if (var(VAR_RESULT) == SPECIES_TOEDSCOOL){
+        applymovement(LOCALID_Q2, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Wonderful! Toedscool and Tentacool look so similar, yet so different. The beauty of nature!\pHang on while I take some photographs.\p...\p...\p..."))
+        release
+        playse(SE_BANG)
+        msgbox(format("And...done!\pThank you, Candidate. This'll be very helpful. Come back later if you want to find out the results of my research!"), MSGBOX_NPC)
+        release
+        addvar(VAR_RANGER_INSTITUTE, 1)
+        setflag(FLAG_IVY_RIVER_RANGER_SCIENTIST_B)
+        end
+    } else {
+        msgbox(format("Hey, that's not a Toedscool! You need to work harder, Candidate!"), MSGBOX_NPC)
+        end
+    }
+}
+
+
+//pinsir
+script IvyRiver_Ranger_Scientist_C{
+    if (flag(FLAG_IVY_RIVER_RANGER_SCIENTIST_C)){
+        msgbox(format("Want to know the results of my study?\pThere's no connection between gigantamaxing and mega evolution.\pI'm neither happy nor sad. This is the nature of the job, after all."), MSGBOX_NPC)
+        end
+    }
+
+    //quest
+    msgbox(format("Did you know that in other regions, Lapras can undergo a transformation known as Gigantamaxing? I'm studying it's connection with mega evolution. But a Lapras is hard to come by..."), MSGBOX_NPC)
+    
+    showmonpic(SPECIES_LAPRAS, 10, 3)
+    msgbox(format("Do you have a Lapras for me to take a look at?"), MSGBOX_YESNO)
+    release
+    hidemonpic
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Ah. Come back when you do!"), MSGBOX_NPC)
+        end
+    }
+    
+    special(ChoosePartyMon)                 //choose your mon
+    waitstate                               //wait
+    copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+    copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+    specialvar(VAR_RESULT, GetTradeSpecies)
+
+    if (var(VAR_RESULT) == SPECIES_LAPRAS){
+        applymovement(LOCALID_Q3, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Oh my! Such an elegant creature!\pHang on while I make some notes.\p...\p...\p..."))
+        release
+        playse(SE_BANG)
+        msgbox(format("And...done!\pThank you, Candidate. This'll be very helpful. Come back later if you want to find out the results of my research!"), MSGBOX_NPC)
+        release
+        addvar(VAR_RANGER_INSTITUTE, 1)
+        setflag(FLAG_IVY_RIVER_RANGER_SCIENTIST_C)
+        end
+    } else {
+        msgbox(format("Hey, that's not a Lapras! You need to work harder, Candidate!"), MSGBOX_NPC)
+        end
+    }
+}
 

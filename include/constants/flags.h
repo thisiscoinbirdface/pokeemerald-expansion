@@ -236,9 +236,9 @@
 #define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // the one-time lapras encounter done or not
 #define FLAG_RANGER_TAUROS_USE 0x1E1 // can use the ranger tauros
 #define FLAG_RANGER_ACCEPTED 0x1E2 // cleared the interview 
-#define FLAG_UNUSED_0x1E3 0x1E3 // Unused Flag
-#define FLAG_UNUSED_0x4B5 0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6 0x4B6 // Unused Flag
+#define FLAG_IVY_RIVER_RANGER_SCIENTIST_A 0x1E3 // Unused Flag
+#define FLAG_IVY_RIVER_RANGER_SCIENTIST_B 0x4B5 // Unused Flag
+#define FLAG_IVY_RIVER_RANGER_SCIENTIST_C 0x4B6 // Unused Flag
 #define FLAG_UNUSED_0x4B7 0x4B7 // Unused Flag
 #define FLAG_UNUSED_0x4B8 0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9 0x4B9 // Unused Flag
