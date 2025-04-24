@@ -42,7 +42,7 @@ Route1_EventScripts_RandomDude_Text_0:
 # 4 "data//maps/Route1/scripts.pory"
 	.string "A Pokémon that uses a move of the same\n"
 	.string "type as itself gets a boost. So if\l"
-	.string "ROOKIDEE uses PECK, it'll deal more\l"
+	.string "Rookidee uses Peck, it'll deal more\l"
 	.string "damage!$"
 
 Route1_TrainerBattle_A_Text_0:

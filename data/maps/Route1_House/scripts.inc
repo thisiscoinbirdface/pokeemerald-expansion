@@ -167,40 +167,50 @@ Route1_House_StartQuest::
 # 98 "data//maps/Route1_House/scripts.pory"
 	faceplayer
 # 99 "data//maps/Route1_House/scripts.pory"
-	msgbox Route1_House_StartQuest_Text_0, MSGBOX_YESNO
+	msgbox Route1_House_StartQuest_Text_0
 # 101 "data//maps/Route1_House/scripts.pory"
+	setvar VAR_0x8006, ITEM_PECHA_BERRY
+# 102 "data//maps/Route1_House/scripts.pory"
+	showitemdescription
+# 103 "data//maps/Route1_House/scripts.pory"
+	msgbox Route1_House_StartQuest_Text_1, MSGBOX_YESNO
+# 105 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route1_House_StartQuest_2
-# 105 "data//maps/Route1_House/scripts.pory"
-	msgbox Route1_House_StartQuest_Text_2
+# 110 "data//maps/Route1_House/scripts.pory"
+	hideitemdescription
+# 111 "data//maps/Route1_House/scripts.pory"
+	msgbox Route1_House_StartQuest_Text_3
 Route1_House_StartQuest_1:
-# 107 "data//maps/Route1_House/scripts.pory"
+# 113 "data//maps/Route1_House/scripts.pory"
 	releaseall
 	end
 
 Route1_House_StartQuest_2:
-# 102 "data//maps/Route1_House/scripts.pory"
-	msgbox Route1_House_StartQuest_Text_1
-# 103 "data//maps/Route1_House/scripts.pory"
+# 106 "data//maps/Route1_House/scripts.pory"
+	hideitemdescription
+# 107 "data//maps/Route1_House/scripts.pory"
+	msgbox Route1_House_StartQuest_Text_2
+# 108 "data//maps/Route1_House/scripts.pory"
 	startquest QUEST_ROUTE1_PECHA_BERRY
 	goto Route1_House_StartQuest_1
 
 
 Route1_House_Azurill::
-# 114 "data//maps/Route1_House/scripts.pory"
+# 120 "data//maps/Route1_House/scripts.pory"
 	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
-# 115 "data//maps/Route1_House/scripts.pory"
+# 121 "data//maps/Route1_House/scripts.pory"
 	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY
-# 117 "data//maps/Route1_House/scripts.pory"
+# 123 "data//maps/Route1_House/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route1_House_Azurill_2
-# 120 "data//maps/Route1_House/scripts.pory"
+# 126 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_Azurill_Text_1, MSGBOX_NPC
 Route1_House_Azurill_1:
 	end
 
 Route1_House_Azurill_2:
-# 118 "data//maps/Route1_House/scripts.pory"
+# 124 "data//maps/Route1_House/scripts.pory"
 	msgbox Route1_House_Azurill_Text_0, MSGBOX_NPC
 	goto Route1_House_Azurill_1
 
@@ -280,27 +290,30 @@ Route1_House_StartQuest_Text_0:
 	.string "I think my poor baby Azurill ate\n"
 	.string "something bad and now has food\l"
 	.string "poisoning! I wish I had a Pecha Berry to\l"
-	.string "cure her. Say, trainer, good timing.\l"
-	.string "Would you be willing to find a PECHA\l"
-	.string "BERRY for my baby?$"
+	.string "cure her. Say, trainer, good timing.$"
 
 Route1_House_StartQuest_Text_1:
-# 102 "data//maps/Route1_House/scripts.pory"
+# 103 "data//maps/Route1_House/scripts.pory"
+	.string "Would you be willing to find a Pecha\n"
+	.string "Berry for my baby?$"
+
+Route1_House_StartQuest_Text_2:
+# 107 "data//maps/Route1_House/scripts.pory"
 	.string "Oh, thank you so much. You're very kind.\n"
 	.string "I'll be waiting here.$"
 
-Route1_House_StartQuest_Text_2:
-# 105 "data//maps/Route1_House/scripts.pory"
+Route1_House_StartQuest_Text_3:
+# 111 "data//maps/Route1_House/scripts.pory"
 	.string "You'd watch Azurill suffer? You're so\n"
 	.string "cold-hearted!$"
 
 Route1_House_Azurill_Text_0:
-# 118 "data//maps/Route1_House/scripts.pory"
+# 124 "data//maps/Route1_House/scripts.pory"
 	.string "Azurill looks full of joy! Must be the\n"
 	.string "love of its trainer...or is it the Pecha\l"
 	.string "Berry?$"
 
 Route1_House_Azurill_Text_1:
-# 120 "data//maps/Route1_House/scripts.pory"
-	.string "AZURILL: zu...\p"
+# 126 "data//maps/Route1_House/scripts.pory"
+	.string "Zu...\p"
 	.string "Azurill looks quite sick.$"
