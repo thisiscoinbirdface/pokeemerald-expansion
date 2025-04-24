@@ -147,7 +147,7 @@ script PellucaGym_Leader {
         //Intro
         msgbox(format(""))
         //Battle
-        trainerbattle_no_intro(TRAINER_PELLUCAGYM_LEADER, format(""))
+        trainerbattle_no_intro(TRAINER_PELLUCA_CITY_GYM_LEADER, format(""))
 
         //Post battle
         //Receive the badge

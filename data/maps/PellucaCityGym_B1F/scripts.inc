@@ -153,7 +153,7 @@ PellucaGym_Leader::
 # 148 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Trainer_A_Text_0
 # 150 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_no_intro TRAINER_PELLUCAGYM_LEADER, PellucaGym_Trainer_A_Text_0
+	trainerbattle_no_intro TRAINER_PELLUCA_CITY_GYM_LEADER, PellucaGym_Trainer_A_Text_0
 # 154 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_1
 # 155 "data//maps/PellucaCityGym_B1F/scripts.pory"

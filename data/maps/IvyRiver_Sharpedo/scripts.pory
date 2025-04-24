@@ -9,17 +9,19 @@ mapscripts IvyRiver_Sharpedo_MapScripts{}
 
 
 
-script IvyRiver_Sharpedo_Jania_Trigger0{
+script IvyRiver_Sharpedo_Jania_Trigger{
+    if (flag(FLAG_IVY_RIVER_SHARPEDO_JANIA)) {end}
+
     lockall
     delay(30)
-    applymovement(LOCALID_JANIA, moves(jump_in_place_left))
+    applymovement(LOCALID_JANIA, moves(face_left))
     waitmovement(0)
     msgbox(format("???: That should do it, Gyarados. Now the Mega Sharpedo can't get out."))
     release
     delay(8)
 
     playmoncry(SPECIES_GYARADOS, CRY_MODE_NORMAL)
-    applymovement(LOCALID_GYARADOS, moves(jump_in_place_right))
+    applymovement(LOCALID_GYARADOS, moves(face_right))
     waitmovement(0)
     delay(30)
 
@@ -30,7 +32,7 @@ script IvyRiver_Sharpedo_Jania_Trigger0{
 
     delay(16)
 
-    msgbox(format("???: Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\p???: You know about the Mega Sharpedo? Okay. Be careful nonetheless.\p???: See over there?"))
+    msgbox(format("???: Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\p???: You know about the Mega Sharpedo? Okay. Be careful nonetheless.\p???: Come here."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
@@ -39,23 +41,81 @@ script IvyRiver_Sharpedo_Jania_Trigger0{
     applymovement(LOCALID_CLAUNCHER, moves(face_up))
     applymovement(LOCALID_GYARADOS, moves(face_up))
     waitmovement(0)
+    delay(8)
+    msgbox(format("???: See over there?"))
+    release
     
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     waitmovement(0)
-    msgbox(format("???: My Gyarados and I have been tracking this Mega Sharpedo for weeks. I finally found its hideout and managed to trap it in these currents."))
+    message(format("???: My Gyarados and I have been tracking this Mega Sharpedo for weeks. I finally found its hideout and managed to trap it in these currents."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 9))
     waitmovement(0)
+    waitmessage
+    waitbuttonpress
     release
-
+    delay(30)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
     waitmovement(0)
-    msgbox(format("???: This should keep it trapped while it calms down and becomes a regular Sharpedo again."))
+    message(format("???: These currents should keep it at bay while it calms down and becomes a regular Sharpedo again."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
     waitmovement(0)
+    waitmessage
+    waitbuttonpress
     release
     special(RemoveCameraObject)    
+    delay(16)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_JANIA, moves(face_left))
+    applymovement(LOCALID_CLAUNCHER, moves(face_up))
+    applymovement(LOCALID_GYARADOS, moves(face_up))    
+    waitmovement(0)
+    delay(16)
+    msgbox(format("???: You can't use Pokeballs on it - it's too enraged. So whatever you want to do, be careful.\p???: See you."))
+    release
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_CLAUNCHER)
+    removeobject(LOCALID_GYARADOS)
+    removeobject(LOCALID_JANIA)
+
+    setflag(FLAG_IVY_RIVER_SHARPEDO_JANIA)
+
+    fadescreen(FADE_FROM_BLACK)
+
 
     releaseall
     end
 }
+
+
+script IvyRiver_Sharpedo_Encounter{
+    playmoncry(SPECIES_SHARPEDO_MEGA, CRY_MODE_ENCOUNTER)
+    waitmoncry
+
+    setflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
+    msgbox(format("The Mega Sharpedo attacks!"))
+    setwildbattle(SPECIES_SHARPEDO_MEGA, 45)
+    dowildbattle  
+
+    //result
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON){
+        setflag(FLAG_IVY_RIVER_SHARPEDO_MAIN)
+        removeobject(LOCALID_SHARPEDO)
+    }
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+        setflag(FLAG_IVY_RIVER_SHARPEDO_MAIN)
+        removeobject(LOCALID_SHARPEDO)
+    }            
+    if (var(VAR_RESULT) == B_OUTCOME_RAN){
+        msgbox(format("The Mega Sharpedo glares at you, daring you to try again."))
+    }
+
+    clearflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
+    releaseall
+    end
+}
+
+
