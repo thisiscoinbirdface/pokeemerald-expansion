@@ -1433,132 +1433,133 @@ Common_EventScript_Dugtrio_ToGalecrest_1:
 
 Common_EventScript_Tauros_IvyRiver::
 # 908 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_IvyRiver_1
-# 922 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_4, MSGBOX_NPC
-	return
-
+	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_IvyRiver_2
+# 916 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
 Common_EventScript_Tauros_IvyRiver_1:
+# 918 "data//maps/TempCopyMap/scripts.pory"
+	release
+	end
+
+Common_EventScript_Tauros_IvyRiver_2:
 # 909 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_0, MSGBOX_YESNO
-# 911 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_IvyRiver_4
-	return
-
-Common_EventScript_Tauros_IvyRiver_4:
-# 913 "data//maps/TempCopyMap/scripts.pory"
-	message Common_EventScript_Tauros_IvyRiver_Text_1
-# 914 "data//maps/TempCopyMap/scripts.pory"
+	message Common_EventScript_Tauros_IvyRiver_Text_0
+# 910 "data//maps/TempCopyMap/scripts.pory"
 	waitmessage
-# 915 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_IvyRiver_Text_2, Common_EventScript_Tauros_IvyRiver_Text_3
-# 917 "data//maps/TempCopyMap/scripts.pory"
+# 911 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_IvyRiver_Text_1, Common_EventScript_Tauros_IvyRiver_Text_2
+# 913 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Common_EventScript_Tauros_IvyRiver_7
-Common_EventScript_Tauros_IvyRiver_6:
-# 918 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_eq Common_EventScript_Tauros_IvyRiver_6
+Common_EventScript_Tauros_IvyRiver_5:
+# 914 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_IvyRiver_9
-	return
+	goto_if_eq Common_EventScript_Tauros_IvyRiver_8
+	goto Common_EventScript_Tauros_IvyRiver_1
 
-Common_EventScript_Tauros_IvyRiver_7:
-# 917 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_IvyRiver_6:
+# 913 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoPelluca
-	goto Common_EventScript_Tauros_IvyRiver_6
+	goto Common_EventScript_Tauros_IvyRiver_5
 
-Common_EventScript_Tauros_IvyRiver_9:
-# 918 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_IvyRiver_8:
+# 914 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoRoute6
-	return
+	goto Common_EventScript_Tauros_IvyRiver_1
 
 
 Common_EventScript_Tauros_PellucaCity::
-# 927 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_PellucaCity_1
-# 941 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_4, MSGBOX_NPC
-	return
-
-Common_EventScript_Tauros_PellucaCity_1:
-# 928 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_0, MSGBOX_YESNO
-# 930 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_PellucaCity_4
-	return
-
-Common_EventScript_Tauros_PellucaCity_4:
+# 923 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_PellucaCity_2
 # 932 "data//maps/TempCopyMap/scripts.pory"
-	message Common_EventScript_Tauros_IvyRiver_Text_1
-# 933 "data//maps/TempCopyMap/scripts.pory"
-	waitmessage
+	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
+Common_EventScript_Tauros_PellucaCity_1:
 # 934 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_3
-# 936 "data//maps/TempCopyMap/scripts.pory"
+	release
+	end
+
+Common_EventScript_Tauros_PellucaCity_2:
+# 924 "data//maps/TempCopyMap/scripts.pory"
+	message Common_EventScript_Tauros_IvyRiver_Text_0
+# 925 "data//maps/TempCopyMap/scripts.pory"
+	waitmessage
+# 926 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_2
+# 928 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Common_EventScript_Tauros_PellucaCity_7
-Common_EventScript_Tauros_PellucaCity_6:
-# 937 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_eq Common_EventScript_Tauros_PellucaCity_6
+Common_EventScript_Tauros_PellucaCity_5:
+# 929 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_PellucaCity_9
-	return
+	goto_if_eq Common_EventScript_Tauros_PellucaCity_8
+	goto Common_EventScript_Tauros_PellucaCity_1
 
-Common_EventScript_Tauros_PellucaCity_7:
-# 936 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_PellucaCity_6:
+# 928 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoIvy
-	goto Common_EventScript_Tauros_PellucaCity_6
+	goto Common_EventScript_Tauros_PellucaCity_5
 
-Common_EventScript_Tauros_PellucaCity_9:
-# 937 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_PellucaCity_8:
+# 929 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoRoute6
-	return
+	goto Common_EventScript_Tauros_PellucaCity_1
 
 
 Common_EventScript_Tauros_Route6::
-# 946 "data//maps/TempCopyMap/scripts.pory"
-	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_Route6_1
-# 959 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_4, MSGBOX_NPC
-	return
-
-Common_EventScript_Tauros_Route6_1:
+# 939 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_Route6_2
 # 947 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Tauros_IvyRiver_Text_0, MSGBOX_YESNO
+	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
+Common_EventScript_Tauros_Route6_1:
 # 949 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_Route6_4
-	return
+	release
+	end
 
-Common_EventScript_Tauros_Route6_4:
-# 950 "data//maps/TempCopyMap/scripts.pory"
-	message Common_EventScript_Tauros_IvyRiver_Text_1
-# 951 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_Route6_2:
+# 940 "data//maps/TempCopyMap/scripts.pory"
+	message Common_EventScript_Tauros_IvyRiver_Text_0
+# 941 "data//maps/TempCopyMap/scripts.pory"
 	waitmessage
-# 952 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_2
-# 954 "data//maps/TempCopyMap/scripts.pory"
+# 942 "data//maps/TempCopyMap/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_1
+# 944 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Common_EventScript_Tauros_Route6_7
-Common_EventScript_Tauros_Route6_6:
-# 955 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_eq Common_EventScript_Tauros_Route6_6
+Common_EventScript_Tauros_Route6_5:
+# 945 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Tauros_Route6_9
-	return
+	goto_if_eq Common_EventScript_Tauros_Route6_8
+	goto Common_EventScript_Tauros_Route6_1
 
-Common_EventScript_Tauros_Route6_7:
-# 954 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_Route6_6:
+# 944 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoIvy
-	goto Common_EventScript_Tauros_Route6_6
+	goto Common_EventScript_Tauros_Route6_5
 
-Common_EventScript_Tauros_Route6_9:
-# 955 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_Route6_8:
+# 945 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoPelluca
-	return
+	goto Common_EventScript_Tauros_Route6_1
 
 
 Common_EventScript_Tauros_GotoIvy::
-# 964 "data//maps/TempCopyMap/scripts.pory"
+# 954 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 955 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 956 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 957 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
+# 958 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 959 "data//maps/TempCopyMap/scripts.pory"
+	warp MAP_IVY_RIVER, 19, 69
+	return
+
+
+Common_EventScript_Tauros_GotoPelluca::
+# 963 "data//maps/TempCopyMap/scripts.pory"
 	release
 # 965 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
@@ -1569,11 +1570,11 @@ Common_EventScript_Tauros_GotoIvy::
 # 968 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 969 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_IVY_RIVER, 19, 69
+	warp MAP_PELLUCA_CITY, 15, 24
 	return
 
 
-Common_EventScript_Tauros_GotoPelluca::
+Common_EventScript_Tauros_GotoRoute6::
 # 973 "data//maps/TempCopyMap/scripts.pory"
 	release
 # 975 "data//maps/TempCopyMap/scripts.pory"
@@ -1585,22 +1586,6 @@ Common_EventScript_Tauros_GotoPelluca::
 # 978 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 979 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_PELLUCA_CITY, 15, 24
-	return
-
-
-Common_EventScript_Tauros_GotoRoute6::
-# 983 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 985 "data//maps/TempCopyMap/scripts.pory"
-	hidefollower
-# 986 "data//maps/TempCopyMap/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 987 "data//maps/TempCopyMap/scripts.pory"
-	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 988 "data//maps/TempCopyMap/scripts.pory"
-	delay 30
-# 989 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_ROUTE6, 52, 116
 	return
 
@@ -1939,26 +1924,23 @@ Common_EventScript_Dugtrio_ToRoute3_Text_0:
 
 Common_EventScript_Tauros_IvyRiver_Text_0:
 # 909 "data//maps/TempCopyMap/scripts.pory"
-	.string "Tauros is grazing impatiently. Ride it?$"
-
-Common_EventScript_Tauros_IvyRiver_Text_1:
-# 913 "data//maps/TempCopyMap/scripts.pory"
+	.string "Tauros is grazing impatiently.\n"
 	.string "Where should Tauros go?$"
 
-Common_EventScript_Tauros_IvyRiver_Text_2:
-# 915 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_IvyRiver_Text_1:
+# 911 "data//maps/TempCopyMap/scripts.pory"
 	.string "Pelluca City$"
 
-Common_EventScript_Tauros_IvyRiver_Text_3:
-# 915 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_IvyRiver_Text_2:
+# 911 "data//maps/TempCopyMap/scripts.pory"
 	.string "Route 6 HQ$"
 
-Common_EventScript_Tauros_IvyRiver_Text_4:
-# 922 "data//maps/TempCopyMap/scripts.pory"
+Common_EventScript_Tauros_IvyRiver_Text_3:
+# 916 "data//maps/TempCopyMap/scripts.pory"
 	.string "Tauros is grazing impatiently.$"
 
 Common_EventScript_Tauros_PellucaCity_Text_0:
-# 934 "data//maps/TempCopyMap/scripts.pory"
+# 926 "data//maps/TempCopyMap/scripts.pory"
 	.string "Ivy River HQ$"
 
 Common_Text_Greta_Comecome::

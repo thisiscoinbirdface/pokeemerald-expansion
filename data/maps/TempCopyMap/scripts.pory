@@ -906,58 +906,48 @@ script Common_EventScript_Dugtrio_ToGalecrest{
 
 script Common_EventScript_Tauros_IvyRiver{
     if (flag(FLAG_RANGER_TAUROS_USE)){
-        msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
+        message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
 
-        if (var(VAR_RESULT) == 1){
-
-            message(format("Where should Tauros go?")) 
-            waitmessage
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
-
-            if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
-            if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
-
-        }     
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}   
     }  else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
     }
+    release
+    end
 }
 
 script Common_EventScript_Tauros_PellucaCity{
     if (flag(FLAG_RANGER_TAUROS_USE)){    
-        msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
+        message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
 
-        if (var(VAR_RESULT) == 1){
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
 
-            message(format("Where should Tauros go?")) 
-            waitmessage
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
-
-            if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
-            if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
-
-        }   
-    }  else {
+    } else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
-    }         
+    }      
+    release
+    end   
 }
 
 script Common_EventScript_Tauros_Route6{
     if (flag(FLAG_RANGER_TAUROS_USE)){   
-        msgbox(format("Tauros is grazing impatiently. Ride it?"), MSGBOX_YESNO)
+        message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
 
-        if (var(VAR_RESULT) == 1){
-            message(format("Where should Tauros go?")) 
-            waitmessage
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
-
-            if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
-            if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoPelluca)}
-
-        }
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoPelluca)}
     }  else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
     }  
+    release
+    end
 }
 
 script Common_EventScript_Tauros_GotoIvy{
