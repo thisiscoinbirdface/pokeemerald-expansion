@@ -898,10 +898,10 @@ Route104_EventScript_RematchHaley::
 	end
 
 Route104_EventScript_Winston::
-	trainerbattle_single TRAINER_WINSTON_1, Route104_Text_WinstonIntro, Route104_Text_WinstonDefeat, Route104_EventScript_TryRegisterWinstonAfterBattle
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_C, Route104_Text_WinstonIntro, Route104_Text_WinstonDefeat, Route104_EventScript_TryRegisterWinstonAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchWinston
-	setvar VAR_0x8004, TRAINER_WINSTON_1
+	setvar VAR_0x8004, TRAINER_PELLUCA_CITY_GYM_C
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterWinston
 	msgbox Route104_Text_WinstonPostBattle, MSGBOX_DEFAULT
@@ -917,7 +917,7 @@ Route104_EventScript_TryRegisterWinstonAfterBattle::
 
 Route104_EventScript_RegisterWinstonAfterBattle::
 	msgbox Route104_Text_WinstonRegister2, MSGBOX_DEFAULT
-	register_matchcall TRAINER_WINSTON_1
+	register_matchcall TRAINER_PELLUCA_CITY_GYM_C
 	release
 	end
 
@@ -929,12 +929,12 @@ Route104_EventScript_TryRegisterWinston::
 
 Route104_EventScript_RegisterWinston::
 	msgbox Route104_Text_WinstonRegister1, MSGBOX_DEFAULT
-	register_matchcall TRAINER_WINSTON_1
+	register_matchcall TRAINER_PELLUCA_CITY_GYM_C
 	release
 	end
 
 Route104_EventScript_RematchWinston::
-	trainerbattle_rematch TRAINER_WINSTON_1, Route104_Text_WinstonRematchIntro, Route104_Text_WinstonRematchDefeat
+	trainerbattle_rematch TRAINER_PELLUCA_CITY_GYM_C, Route104_Text_WinstonRematchIntro, Route104_Text_WinstonRematchDefeat
 	msgbox Route104_Text_WinstonPostRematch, MSGBOX_AUTOCLOSE
 	end
 

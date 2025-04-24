@@ -1,10 +1,55 @@
 mapscripts PellucaCityGym_B1F_MapScripts{}
 
 
-
+//Gabrielle
 script PellucaGym_Trainer_A{
-    trainerbattle_single(TRAINER_MATTHEW, format("Different Pokémon inhabit different areas. I caught mine right here!"), format("Oh no!"))
-    msgbox(format("No matter where they're from, all Pokémon need love and care."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_A, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
+//Cooltrainer
+script PellucaGym_Trainer_B{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_B, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//The rest are all swimmers
+script PellucaGym_Trainer_C{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_C, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script PellucaGym_Trainer_D{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_D, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script PellucaGym_Trainer_E{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_E, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script PellucaGym_Trainer_F{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_F, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script PellucaGym_Trainer_G{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_G, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script PellucaGym_Trainer_H{
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_H, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
+
 

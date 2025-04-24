@@ -1323,7 +1323,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_WANT, EC_WORD_TO, EC_WORD_STUDY, EC_WORD_MORE},
         .monSet = (const u16[]){FRONTIER_MONS_SCHOOL_KID_2}
     },
-    [FRONTIER_TRAINER_GARRETT] = {
+    [FRONTIER_TRAINER_PELLUCA_CITY_GYM_ET] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("GARRETT"),
         .speechBefore = {EC_WORD_I, EC_WORD_ENJOY, EC_WORD_COMICS, EC_WORD_AND, EC_WORD_THIS, EC_WORD_GAME},

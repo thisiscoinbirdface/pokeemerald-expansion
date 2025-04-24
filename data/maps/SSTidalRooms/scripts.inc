@@ -53,7 +53,7 @@ SSTidalRooms_EventScript_Lea::
 	end
 
 SSTidalRooms_EventScript_Garret::
-	trainerbattle_single TRAINER_GARRET, SSTidalRooms_Text_GarretIntro, SSTidalRooms_Text_GarretDefeat
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_E, SSTidalRooms_Text_GarretIntro, SSTidalRooms_Text_GarretDefeat
 	msgbox SSTidalRooms_Text_GarretPostBattle, MSGBOX_AUTOCLOSE
 	end
 

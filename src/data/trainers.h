@@ -6248,12 +6248,12 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2543
-    [DIFFICULTY_NORMAL][TRAINER_JESSICA_4] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_A] =
     {
 #line 2544
         .trainerName = _("JESSICA"),
 #line 2545
-        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
 #line 2546
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
@@ -6307,7 +6307,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2568
-    [DIFFICULTY_NORMAL][TRAINER_JESSICA_5] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_B] =
     {
 #line 2569
         .trainerName = _("JESSICA"),
@@ -6366,7 +6366,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2593
-    [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_C] =
     {
 #line 2594
         .trainerName = _("WINSTON"),
@@ -6402,7 +6402,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2607
-    [DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_D] =
     {
 #line 2608
         .trainerName = _("MOLLIE"),
@@ -6447,7 +6447,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2624
-    [DIFFICULTY_NORMAL][TRAINER_GARRET] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_E] =
     {
 #line 2625
         .trainerName = _("GARRET"),
@@ -6483,7 +6483,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2638
-    [DIFFICULTY_NORMAL][TRAINER_WINSTON_2] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_F] =
     {
 #line 2639
         .trainerName = _("WINSTON"),
@@ -6519,7 +6519,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2652
-    [DIFFICULTY_NORMAL][TRAINER_WINSTON_3] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_G] =
     {
 #line 2653
         .trainerName = _("WINSTON"),
@@ -6555,7 +6555,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2666
-    [DIFFICULTY_NORMAL][TRAINER_WINSTON_4] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_H] =
     {
 #line 2667
         .trainerName = _("WINSTON"),
@@ -6591,7 +6591,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2680
-    [DIFFICULTY_NORMAL][TRAINER_WINSTON_5] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_I] =
     {
 #line 2681
         .trainerName = _("WINSTON"),
@@ -6634,7 +6634,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2698
-    [DIFFICULTY_NORMAL][TRAINER_STEVE_1] =
+    [DIFFICULTY_NORMAL][TRAINER_PELLUCA_CITY_GYM_LEADER] =
     {
 #line 2699
         .trainerName = _("STEVE"),

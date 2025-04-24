@@ -27,7 +27,7 @@ Route133_EventScript_Beck::
 	end
 
 Route133_EventScript_Mollie::
-	trainerbattle_single TRAINER_MOLLIE, Route133_Text_MollieIntro, Route133_Text_MollieDefeat
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_D, Route133_Text_MollieIntro, Route133_Text_MollieDefeat
 	msgbox Route133_Text_MolliePostBattle, MSGBOX_AUTOCLOSE
 	end
 

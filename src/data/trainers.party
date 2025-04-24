@@ -2540,9 +2540,9 @@ Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
-=== TRAINER_JESSICA_4 ===
+=== TRAINER_PELLUCA_CITY_GYM_A ===
 Name: JESSICA
-Class: Beauty
+Class: Pkmn Trainer 2
 Pic: Beauty
 Gender: Female
 Music: Female
@@ -2565,7 +2565,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Glare
 - Crunch
 
-=== TRAINER_JESSICA_5 ===
+=== TRAINER_PELLUCA_CITY_GYM_B ===
 Name: JESSICA
 Class: Beauty
 Pic: Beauty
@@ -2590,7 +2590,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Glare
 - Crunch
 
-=== TRAINER_WINSTON_1 ===
+=== TRAINER_PELLUCA_CITY_GYM_C ===
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2604,7 +2604,7 @@ Zigzagoon @ Nugget
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MOLLIE ===
+=== TRAINER_PELLUCA_CITY_GYM_D ===
 Name: MOLLIE
 Class: Expert
 Pic: Expert F
@@ -2621,7 +2621,7 @@ Meditite
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_GARRET ===
+=== TRAINER_PELLUCA_CITY_GYM_E ===
 Name: GARRET
 Class: Rich Boy
 Pic: Rich Boy
@@ -2635,7 +2635,7 @@ Azumarill @ Nugget
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_2 ===
+=== TRAINER_PELLUCA_CITY_GYM_F ===
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2649,7 +2649,7 @@ Linoone @ Nugget
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_3 ===
+=== TRAINER_PELLUCA_CITY_GYM_G ===
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2663,7 +2663,7 @@ Linoone @ Nugget
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_4 ===
+=== TRAINER_PELLUCA_CITY_GYM_H ===
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2677,7 +2677,7 @@ Linoone @ Nugget
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_5 ===
+=== TRAINER_PELLUCA_CITY_GYM_I ===
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -2695,7 +2695,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_STEVE_1 ===
+=== TRAINER_PELLUCA_CITY_GYM_LEADER ===
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac

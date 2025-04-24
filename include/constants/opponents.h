@@ -198,16 +198,18 @@
     #define TRAINER_WINTERLILY_HOLLOW_GYM_LEADER  133
 
 
-#define TRAINER_JESSICA_4                   134
-#define TRAINER_JESSICA_5                   135
-#define TRAINER_WINSTON_1                   136
-#define TRAINER_MOLLIE                      137
-#define TRAINER_GARRET                      138
-#define TRAINER_WINSTON_2                   139
-#define TRAINER_WINSTON_3                   140
-#define TRAINER_WINSTON_4                   141
-#define TRAINER_WINSTON_5                   142
-#define TRAINER_STEVE_1                     143
+    //Pelluca Gym
+    #define TRAINER_PELLUCA_CITY_GYM_A            134
+    #define TRAINER_PELLUCA_CITY_GYM_B            135
+    #define TRAINER_PELLUCA_CITY_GYM_C            136
+    #define TRAINER_PELLUCA_CITY_GYM_D            137
+    #define TRAINER_PELLUCA_CITY_GYM_E            138
+    #define TRAINER_PELLUCA_CITY_GYM_F            139
+    #define TRAINER_PELLUCA_CITY_GYM_G            140
+    #define TRAINER_PELLUCA_CITY_GYM_H            141
+    #define TRAINER_PELLUCA_CITY_GYM_I            142
+    #define TRAINER_PELLUCA_CITY_GYM_LEADER       143
+
 #define TRAINER_THALIA_1                    144
 #define TRAINER_MARK                        145
 #define TRAINER_GRUNT_MT_CHIMNEY_1          146
