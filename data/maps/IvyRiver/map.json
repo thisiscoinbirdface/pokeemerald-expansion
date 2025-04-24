@@ -180,6 +180,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IvyRiver_Ranger_Blocker",
       "flag": "FLAG_RANGER_ACCEPTED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 18,
+      "y": 70,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IvyRiver_Ranger_TaurosBreeder",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -313,6 +326,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "LilyPond_Dreepy_Trigger_First"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 66,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IvyRiver_Ranger_TaurosTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 66,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IvyRiver_Ranger_TaurosTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 65,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IvyRiver_Ranger_TaurosTrigger"
     }
   ],
   "bg_events": [

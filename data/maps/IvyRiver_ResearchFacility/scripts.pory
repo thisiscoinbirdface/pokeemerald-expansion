@@ -5,6 +5,7 @@ raw`
     .set LOCALID_Q3, 7
     .set LOCALID_Q4, 8
     .set LOCALID_EV, 1
+    .set LOCALID_TAUROS_RANGER, 13
 `
 
 mapscripts IvyRiver_ResearchFacility_MapScripts{}
@@ -123,7 +124,8 @@ script IvyRiver_Ranger_FirstQuest_Reward_Give{
 
 script IvyRiver_Ranger_FirstQuest_RewardEnd{
 
-    msgbox(format("Great!\pYou'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your second mission, I'll have you help out our second floor for a while. We rely heavily on outside help for our research, so you'll be a huge help.\pGo upstairs and help out!"))
+    msgbox(format("You'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your next mission, I'll have you help out our second floor. Three of our researchers need someone on the field and we're short on hands.\pGo upstairs, find the three researchers and complete their tasks!"))
+    release
 
     //set vars, quest
     setvar(VAR_RANGER_INSTITUTE, 4)
@@ -137,4 +139,65 @@ script IvyRiver_Ranger_FirstQuest_RewardEnd{
 
 
 
+
+
+
+
+
+
+
+
+
+
+//NOT IN THIS MAP - IN IVY RIVER
+script IvyRiver_Ranger_TaurosTrigger{
+    if (flag(FLAG_RANGER_TAUROS_USE)){end}
+
+    if (var(VAR_RANGER_INSTITUTE) >= 4){
+
+        lockall
+        applymovement(LOCALID_TAUROS_RANGER, moves(face_up emote_exclamation_mark))
+        waitmovement(0)
+
+        msgbox(format("Hey! You're the new Candidate right? Come here for a second."))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2))
+        waitmovement(0)
+        delay(12)
+
+        applymovement(LOCALID_TAUROS_RANGER, moves(face_up))
+        waitmovement(0)
+        msgbox(format("See this here Tauros? This is my baby right here - raised him all by myself, I did! This one's been traiend specially to take Rangers up and down Mt. Mirroh in a flash! You can head straight to Pelluca City or even to the Route 6 HQ if you like! All Candidates can use it."))
+        release
+
+        setflag(FLAG_RANGER_TAUROS_USE)
+    }
+
+    releaseall
+    end
+}
+
+script IvyRiver_Ranger_TaurosBreeder{
+    if (flag(FLAG_RANGER_TAUROS_USE)){
+        msgbox(format("Gotta love the speed on this bull, eh?"), MSGBOX_NPC)
+    } else {
+        msgbox(format("This here Tauros is my baby! It can take you up and down Mt Mirroh...oh, you aren't a Candidate yet? Sorry, only Candidates are allowed to use it."), MSGBOX_NPC)
+    }
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Second floor Quests
 
