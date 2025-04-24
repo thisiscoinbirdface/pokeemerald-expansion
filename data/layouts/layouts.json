@@ -5044,10 +5044,10 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_GYM",
       "name": "PellucaCityGym_Layout",
-      "width": 20,
-      "height": 12,
+      "width": 80,
+      "height": 90,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_PellucaGym",
       "border_filepath": "data/layouts/PellucaCityGym/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityGym/map.bin"
     },

@@ -17,7 +17,41 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 10,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_GYM",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_GYM",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 10,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_GYM",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_PELLUCA_CITY_GYM",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 
