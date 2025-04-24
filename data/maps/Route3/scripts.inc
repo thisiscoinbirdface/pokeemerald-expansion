@@ -171,7 +171,7 @@ Route3_TrainerBattle_Kim_Text_1:
 Route3_TrainerBattle_Kim_Text_2:
 # 10 "data//maps/Route3/scripts.pory"
 	.string "My sister is up ahead, near the Gastree\n"
-	.string "City exit.$"
+	.string "City exit. She's super strong!$"
 
 Route3_TrainerBattle_Ronnie_Text_0:
 # 18 "data//maps/Route3/scripts.pory"

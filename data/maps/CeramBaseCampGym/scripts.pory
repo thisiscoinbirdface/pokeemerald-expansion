@@ -107,11 +107,11 @@ script CeramBaseCampGym_EventScript_NPC_LetterPrint{
             msgbox(format("You'll have to get this letter signed by the assistant manager in the basement."))
         }
     } else {
-        msgbox(format("You're a trainer and want an APPOINTMENT LETTER? I can print you a letter, but first I'll need to see your credentials.\p...\pNo, not your trainer card. Don't you have a Pokémon League Pass? You don't? Well then a battle should prove that you really are who you say you are!"))
+        msgbox(format("You're a trainer and want an Appointment Letter? I can print you a letter, but first I'll need to see your credentials.\p...\pNo, not your trainer card. Don't you have a Pokémon League Pass? You don't? Well then a battle should prove that you really are who you say you are!"))
         release
 
         //battle
-        trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I lost")
+        trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I'm better with spreadsheets!")
 
         //print letter
         msgbox(format("Very good! Well then, let me do my job. Here you go!"))
@@ -131,7 +131,7 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
     } else {
         if (checkitem(ITEM_APPOINTMENT_LETTER)){
 
-            msgbox(format("So you got an APPOINTMENT LETTER and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?"))
+            msgbox(format("So you got an Appointment Letter and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?"))
             release
             showmoneybox(0, 0)
             msgbox(format("Will you slip the money under the table?"), MSGBOX_YESNO)
@@ -150,12 +150,12 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
             }
 
             msgbox(format("Alright, I'll sign the letter."))
-            msgbox(format("{PLAYER} got the APPOINTMENT LETTER signed by the assistant manager."))
+            msgbox(format("{PLAYER} got the Appointment Letter signed by the assistant manager."))
             release
             setflag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)
             msgbox(format("I'm busy now. Get out."))        
         } else {
-            msgbox(format("You're a trainer and want an APPOINTMENT LETTER? You'll have to go upstairs, get a letter printed, and then I can sign and approve it.")) 
+            msgbox(format("You're a trainer and want an Appointment Letter? You'll have to go upstairs, get a letter printed, and then I can sign and approve it.")) 
         }
     }
 
@@ -198,7 +198,7 @@ script CeramBaseCampGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
         //Receive the badge
-        msgbox(format("{PLAYER} received the CINDER BADGE from Ariana."))
+        msgbox(format("{PLAYER} received the Cinder Badge from Ariana."))
         release
         setflag(FLAG_BADGE02_GET)
 
@@ -206,16 +206,20 @@ script CeramBaseCampGym_LeaderBattle {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("The CINDER BADGE increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
+        speakername("Ariana")
+        msgbox(format("The Cinder Badge increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
+        speakername("Ariana")
         msgbox(format("And I'd also like to give you this."))
         release
         //Give TM also
         giveitem(ITEM_RARE_SHARD, 2)
 
+        speakername("Ariana")
         msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a shrine close to Route 4, so why don't you use these there?"))
         release
 
         //Bye-bye
+        speakername("Ariana")
         msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
         releaseall
         

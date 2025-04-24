@@ -311,9 +311,8 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_Movement_0:
 
 CeramBaseCamp_RedBlockGym_Text_0:
 # 9 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "The Gym Leader's gone to the Supply\n"
-	.string "Depot to sort out some commotion\l"
-	.string "there.$"
+	.string "The Leader's gone to the Supply Depot\n"
+	.string "to sort out some commotion there.$"
 
 CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 # 26 "data//maps/CeramBaseCamp/scripts.pory"

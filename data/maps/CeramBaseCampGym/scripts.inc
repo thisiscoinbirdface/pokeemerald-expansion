@@ -290,23 +290,31 @@ CeramBaseCampGym_LeaderBattle::
 # 206 "data//maps/CeramBaseCampGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 209 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_2
+	speakername CeramBaseCampGym_LeaderBattle_Text_2
 # 210 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_3
 # 211 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
-# 213 "data//maps/CeramBaseCampGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
-# 215 "data//maps/CeramBaseCampGym/scripts.pory"
+	speakername CeramBaseCampGym_LeaderBattle_Text_2
+# 212 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_4
-# 216 "data//maps/CeramBaseCampGym/scripts.pory"
+# 213 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 219 "data//maps/CeramBaseCampGym/scripts.pory"
+# 215 "data//maps/CeramBaseCampGym/scripts.pory"
+	giveitem ITEM_RARE_SHARD, 2
+# 217 "data//maps/CeramBaseCampGym/scripts.pory"
+	speakername CeramBaseCampGym_LeaderBattle_Text_2
+# 218 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_5
-# 220 "data//maps/CeramBaseCampGym/scripts.pory"
+# 219 "data//maps/CeramBaseCampGym/scripts.pory"
+	release
+# 222 "data//maps/CeramBaseCampGym/scripts.pory"
+	speakername CeramBaseCampGym_LeaderBattle_Text_2
+# 223 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_6
+# 224 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 CeramBaseCampGym_LeaderBattle_1:
-# 224 "data//maps/CeramBaseCampGym/scripts.pory"
+# 228 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
@@ -457,7 +465,7 @@ CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_1:
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2:
 # 110 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You're a trainer and want an\n"
-	.string "APPOINTMENT LETTER? I can print you a\l"
+	.string "Appointment Letter? I can print you a\l"
 	.string "letter, but first I'll need to see your\l"
 	.string "credentials.\p"
 	.string "...\p"
@@ -468,7 +476,7 @@ CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_2:
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_3:
 # 114 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "I lost$"
+	.string "I'm better with spreadsheets!$"
 
 CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_4:
 # 117 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -484,7 +492,7 @@ CeramBaseCampGym_EventScript_NPC_LetterPrint_Text_5:
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_0:
 # 134 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "So you got an APPOINTMENT LETTER and\n"
+	.string "So you got an Appointment Letter and\n"
 	.string "want my signature on it? Well...I\l"
 	.string "wouldn't mind doing it for a small token\l"
 	.string "of appreciation...say...500?$"
@@ -513,13 +521,13 @@ CeramBaseCampGym_EventScript_NPC_Signature_Text_5:
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_6:
 # 153 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "{PLAYER} got the APPOINTMENT LETTER\n"
+	.string "{PLAYER} got the Appointment Letter\n"
 	.string "signed by the assistant manager.$"
 
 CeramBaseCampGym_EventScript_NPC_Signature_Text_7:
 # 158 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "You're a trainer and want an\n"
-	.string "APPOINTMENT LETTER? You'll have to go\l"
+	.string "Appointment Letter? You'll have to go\l"
 	.string "upstairs, get a letter printed, and then\l"
 	.string "I can sign and approve it.$"
 
@@ -530,28 +538,32 @@ CeramBaseCampGym_LeaderBattle_Text_0:
 
 CeramBaseCampGym_LeaderBattle_Text_1:
 # 201 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "{PLAYER} received the CINDER BADGE\n"
+	.string "{PLAYER} received the Cinder Badge\n"
 	.string "from Ariana.$"
 
 CeramBaseCampGym_LeaderBattle_Text_2:
 # 209 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The CINDER BADGE increases the ATK of\n"
-	.string "all your Pokémon and lets you control\l"
-	.string "Pokémon upto lv. 20.$"
+	.string "Ariana$"
 
 CeramBaseCampGym_LeaderBattle_Text_3:
 # 210 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "And I'd also like to give you this.$"
+	.string "The Cinder Badge increases the ATK of\n"
+	.string "all your Pokémon and lets you control\l"
+	.string "Pokémon upto lv. 20.$"
 
 CeramBaseCampGym_LeaderBattle_Text_4:
-# 215 "data//maps/CeramBaseCampGym/scripts.pory"
+# 212 "data//maps/CeramBaseCampGym/scripts.pory"
+	.string "And I'd also like to give you this.$"
+
+CeramBaseCampGym_LeaderBattle_Text_5:
+# 218 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Since this is your second badge, you\n"
 	.string "must know what these shards do by now.\l"
 	.string "There's a shrine close to Route 4, so\l"
 	.string "why don't you use these there?$"
 
-CeramBaseCampGym_LeaderBattle_Text_5:
-# 219 "data//maps/CeramBaseCampGym/scripts.pory"
+CeramBaseCampGym_LeaderBattle_Text_6:
+# 223 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And now it's time for you to set off on\n"
 	.string "your journey. I hope you manage to find\l"
 	.string "the dreamstone and Professor Tenebris.\l"
@@ -560,7 +572,7 @@ CeramBaseCampGym_LeaderBattle_Text_5:
 	.string "run into them!$"
 
 CeramBaseCampGym_Text_Intro::
-# 229 "data//maps/CeramBaseCampGym/scripts.pory"
+# 233 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Who's my next appointment? Ah! It's\n"
 	.string "you, {PLAYER}. A pleasant surprise.\l"
 	.string "I'm sick of all this work. This office is\l"
@@ -571,7 +583,7 @@ CeramBaseCampGym_Text_Intro::
 	.string "change!$"
 
 CeramBaseCampGym_Text_Defeated::
-# 233 "data//maps/CeramBaseCampGym/scripts.pory"
+# 237 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "What a match! What a display! I could\n"
 	.string "not be more pleased, {PLAYER}. The\l"
 	.string "way you stand, you might be able to\l"

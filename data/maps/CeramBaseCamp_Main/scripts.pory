@@ -68,15 +68,26 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     lockall
     applymovement(LOCALID_LEADER, moves(jump_in_place_up))
     waitmovement(0)
-    delay(24)
-    msgbox(format("???: Release our shopkeeper at once! How dare you!"))
+    delay(8)
+    speakername("???")
+    msgbox(format("Release our shopkeeper at once! How dare you!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    delay(24)
-    msgbox(format("???: Get out of my face, leader! We have business that concerns you not one bit. We want his supplies for our trek up Mt. Ceram!"))
-    msgbox(format("ARIANA: The name's Ariana! And no way! This is MY base camp! You're not harming anyone while I'm around!"))
-    msgbox(format("???: Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when there's just one of you?"))
+    delay(8)
+    speakername("???")
+    msgbox(format("Get out of my face, leader! We have business that concerns you not one bit. We're going to take his supplies for our trek up Mt. Ceram!"))
+    release
+    applymovement(LOCALID_LEADER, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(8)
+
+    speakername("Ariana")
+    msgbox(format("The name's Ariana! And no way! This is MY base camp! You're not harrassing anyone while I'm around!"))
+    release
+    delay(8)
+    speakername("???")
+    msgbox(format("Hahaha! Well said! You are a leader after all. But how do you intend to handle the two of us, when I can only count one of you?"))
     release
 
 
@@ -86,7 +97,8 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(emote_exclamation_mark))
     waitmovement(0)    
     delay(24)
-    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are trying to steal the shopkeeper's supplies. We have to stop them!\pI'll take the boss. You deal with the one on the right for me!"))
+    speakername("Ariana")
+    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are trying to steal the shopkeeper's supplies.\nWe have to stop them!\pI'll take the boss. You deal with the one on the right for me!"))
     release
 
     //Player walks up and deals with grunt
@@ -95,22 +107,34 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_GRUNT4, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GABRIELLE: It's you?"))
+    speakername("Gabrielle")
+    msgbox(format("It's you?"))
     release
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("GABRIELLE: Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
+    speakername("Gabrielle")
+    msgbox(format("Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox(format("???: That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later. \pGABRIELLE:...yes boss.\p???: But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    speakername("???")
+    msgbox(format("That wasn't a dreamstone you idiot - that was an everstone! Nonetheless, remind me to punish you for that later."))
     release
+    delay(8)
+    speakername("Gabrielle")
+    msgbox(format("...yes boss."))
+    release
+    delay(8)
+    speakername("???")
+    msgbox(format("But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    release        
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
     delay(16)    
-    msgbox(format("GABRIELLE: You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
+    speakername("Gabrielle")
+    msgbox(format("You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
     release 
 
     //Set all sprites facing each other
@@ -125,23 +149,30 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //Defeat, but it doesn't matter - they'll just make it up the mountain anyway
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("???: Agh! You and your stupid FIRE-type Pokémon! I just didn't have my Pokémon with me.\pARIANA: Serves you right! Now move over and give our shopkeeper back."))
+    speakername("???")
+    msgbox(format("Agh! You and your stupid FIRE-type Pokémon! I just didn't have my Pokémon with me."))
+    release
+    speakername("Ariana")
+    msgbox(format("Serves you right! Now move over and give our shopkeeper back."))
     release
     delay(16)
     applymovement(LOCALID_GRUNT4, moves(face_left))
     waitmovement(0)
-    msgbox(format("GABRIELLE: I...I'm sorry boss! I lost again."))
+    speakername("Gabrielle")
+    msgbox(format("I...I'm sorry boss! I lost again."))
     release 
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
     delay(16)    
-    msgbox(format("???: You useless, incompetent fool! Argh! How can we accomplish anything with such terrible support!"))   
+    speakername("???")
+    msgbox(format("You useless, incompetent fool! Argh! How can we accomplish anything with such terrible support!"))   
     release 
     applymovement(LOCALID_BOSS, moves(face_down))
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
     delay(16)    
-    msgbox(format("???: Fine, take your stupid shopkeeper back. We'll make it up the mountain anyway and there's nothing you can do to stop us!"))
+    speakername("???")
+    msgbox(format("Fine, take your stupid shopkeeper back. We'll make it up the mountain anyway and there's nothing you can do to stop us!"))
     release
 
     //Walk out
@@ -155,13 +186,18 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     //ARIAN says the boss was powerful...I can't let you go alone without at least getting the badge
     applymovement(LOCALID_LEADER, moves(face_right))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    waitmovement(0)    
-    msgbox(format("ARIANA: Thanks for the help trainer!"))
+    waitmovement(0)   
+    speakername("Ariana") 
+    msgbox(format("Thanks for the help trainer!"))
+    release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     applymovement(LOCALID_LEADER, moves(face_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("ARIANA: They didn't harm you right?\pSHOPKEEPER: No they didn't. Thank you Ariana! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    speakername("Ariana")
+    msgbox(format("They didn't harm you right?"))
+    speakername("Shopkeeper")
+    msgbox(format("No they didn't. Thank you Ariana! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
     release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
     waitmovement(0)
@@ -170,10 +206,14 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     applymovement(LOCALID_LEADER, moves(face_right))
     waitmovement(0)
-    msgbox(format("ARIANA: That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
-    msgbox(format("ARIANA: They're connected to Professor Tenebris' disappearance? \pARIANA: Well I gotta do something - Professor Tenebris is the one who gave me my Tauros."))
-    msgbox(format("ARIANA: Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
-    msgbox(format("ARIANA: {PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence. See you around, {PLAYER}!"))
+    speakername("Ariana") 
+    msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
+    speakername("Ariana") 
+    msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris is the one who gave me my Tauros."))
+    speakername("Ariana") 
+    msgbox(format("Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
+    speakername("Ariana") 
+    msgbox(format("{PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\nSee you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -325,7 +365,7 @@ script CeramBaseCamp_Main_NPC3{
 script CeramBaseCamp_Main_NPC4{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("This isn't really a town, so the supply depot and the management office is all we have."), MSGBOX_NPC)
+        msgbox(format("This isn't really a town, so the supply depot and the management office-cum-gym is all we have."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
         msgbox(format("Shh! Don't look here! You'll attract their attention!"), MSGBOX_NPC)
@@ -437,7 +477,7 @@ script CeramBaseCamp_Main_NPC5{
 script CeramBaseCamp_Main_NPC6{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native CENTISKORCH and SCOLIPEDE fight each other."), MSGBOX_NPC)
+        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native Centiskorch and Scolipede fight each other."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
         msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)

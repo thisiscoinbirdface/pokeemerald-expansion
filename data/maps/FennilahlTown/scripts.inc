@@ -661,15 +661,14 @@ Fennilahl_Breech_QuestInProgress_Text_3:
 
 Fennilahl_Breech_QuestInProgress_Text_4:
 # 91 "data//maps/FennilahlTown/scripts.pory"
-	.string "clee!!!$"
+	.string "Clee!!!$"
 
 Fennilahl_Breech_QuestInProgress_Text_5:
 # 93 "data//maps/FennilahlTown/scripts.pory"
 	.string "Ouch! Clefairy stop! Haha! Alright\n"
 	.string "alright, you come along with me then.\l"
 	.string "But you're not my Pokémon okay? I don't\l"
-	.string "like battling. You'll be my hiking\l"
-	.string "partner!$"
+	.string "battle. You'll be my hiking partner!$"
 
 Fennilahl_Breech_QuestInProgress_Text_6:
 # 101 "data//maps/FennilahlTown/scripts.pory"

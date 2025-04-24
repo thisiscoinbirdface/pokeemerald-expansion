@@ -6,7 +6,7 @@ mapscripts CeramBaseCamp_MapScripts{}
             script CeramBaseCamp_RedBlockGym{
                 lockall
                 faceplayer
-                msgbox(format("The Gym Leader's gone to the Supply Depot to sort out some commotion there."))
+                msgbox(format("The Leader's gone to the Supply Depot to sort out some commotion there."))
                 release
                 applymovement(8, moves(face_down))
                 releaseall

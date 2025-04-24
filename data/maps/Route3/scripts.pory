@@ -7,7 +7,7 @@ mapscripts Route3_MapScripts{}
 script Route3_TrainerBattle_Kim {
 
     trainerbattle_single(TRAINER_ROUTE3_KIM, format("Mom gifted my sister and me a cool FLYING-type Pokémon!"), "My sister will beat you!")
-    msgbox(format("My sister is up ahead, near the Gastree City exit."))
+    msgbox(format("My sister is up ahead, near the Gastree City exit. She's super strong!"))
     release
     end
 

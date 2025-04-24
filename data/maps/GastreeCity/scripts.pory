@@ -49,7 +49,9 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
     delay(12)
 
     //Kohla talks trash
+    speakername("Kohla")
     msgbox(GastreeCity_KohlaIntro1)
+    speakername("Kohla")
     msgbox(GastreeCity_KohlaIntro2)
 
     //Battle
@@ -57,6 +59,7 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
     playbgm(MUS_RG_ENCOUNTER_RIVAL, FALSE)
 
     //Lose battle
+    speakername("Kohla")
     msgbox(GastreeCity_KohlaPostBattle)
     release
     
@@ -72,13 +75,13 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 }
 
 text GastreeCity_KohlaIntro1 {
-    format("KOHLA: Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the GYM BADGE.")
+    format("Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the GYM BADGE.")
 }
 text GastreeCity_KohlaIntro2{
-    format("KOHLA: I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
+    format("I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("KOHLA: You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help. Over and out, chum!")
+    format("You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help. Over and out, chum!")
 }
 
 
@@ -195,7 +198,7 @@ script GastreeCity_NPC9{
         delay(36)
         applymovement(3, moves(walk_right * 3 face_up))
         waitmovement(0)           
-        msgbox(format("Trainer! Trainer! You saw what happened, right? Oh, you have to bring my SKITTY back, you absolutely have to! I don't want her to get hurt...please find her!"))
+        msgbox(format("Trainer! Trainer! You saw what happened, right? Oh, you have to bring my Skitty back, you absolutely have to! I don't want her to get hurt...please find her!"))
         release
         setflag(FLAG_HIDE_GASTREE_SKITTY)
         startquest(QUEST_GASTREE_SKITTY)

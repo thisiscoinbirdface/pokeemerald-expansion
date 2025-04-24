@@ -24,7 +24,9 @@ script Route4_EventScript_EvilTeam{
     //Block text
     lockall
     msgbox(format("Hey kid - this road is closed due to...uh...repairs. Yeah. Sorry."))
-    msgbox(format("We look suspicious? We're just...um...construction workers. Sorry. Yeah."))
+    release
+    delay(8)
+    msgbox(format("You're saying we look suspicious? We're just...um...construction workers. Sorry. Yeah."))
     msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         msgbox(format("Good. Now scram!"))
@@ -111,7 +113,7 @@ script Route4_TrainerBattle_Jenny {
         trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout and now you're going to pay!"), format("Waah!"))
 
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
-            msgbox(format("Eek! It's the DEWPIDER!"))
+            msgbox(format("Eek! It's the Dewpider!"))
         } else {
             msgbox(format("It's summer break so we play here all day until the sun goes down!"))
         }
@@ -144,7 +146,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("You have proved your worth, old one. You may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 
             setflag(FLAG_ROUTE4_KIDGANG)
-            msgbox(format("...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I'm not scared of any DEWPIDERS. I want...I want to be outside all day!"))  
+            msgbox(format("...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I'm not scared of any Dewpiders. I want...I want to be outside all day!"))  
         }
         releaseall
         end
@@ -219,7 +221,7 @@ script Route4_TrainerBattle_Jenny {
         applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
         waitmovement(0)
         delay(12)
-        msgbox(format("You saved us! Thank you. We were so scared!\p...\pI'll go home. I can't let my friends be hurt by the DEWPIDER."))
+        msgbox(format("You saved us! Thank you. We were so scared!\p...\pI'll go home. I can't let my friends be hurt by the Dewpider."))
         release
         applymovement(1, moves(walk_down jump_in_place_down emote_exclamation_mark))
         waitmovement(0)        
@@ -271,36 +273,44 @@ script Route4_NPC_B{
 script Route4_NPC_Cook{
 
     if (flag(FLAG_ROUTE4_COOK)){
+        speakername("Chef")
         msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)        
     } else {
         lockall
         faceplayer
-        msgbox(format("Hello young trainer! I'm a cook from the Pelluca Restaurant, all the way on the other side of Cormoria! Why am I here, you ask? It's because I travel all across Cormoria to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around Mt. Ceram. It's called a RAWST BERRY. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
+        speakername("Chef")
+        msgbox(format("Hello young trainer! I'm a chef from the Pelluca Restaurant, all the way on the other side of Cormoria! Why am I here, you ask? It's because I travel all across Cormoria to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around Mt. Ceram. It's called a Rawst Berry. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_RAWST_BERRY)
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_RAWST_BERRY)
-                msgbox(format("{PLAYER} gave the chef a RAWST BERRY."), MSGBOX_SIGN)
-                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature APPLE PIE!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange for the berry, I have a couple of trinkets you may like."))
+                speakername(NULL)
+                msgbox(format("{PLAYER} gave the chef a Rawst Berry."), MSGBOX_SIGN)
+                speakername("Chef")
+                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature apple pie!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange for the berry, I have a couple of trinkets you may like."))
 
                 goto(Route4_NPC_Cook_Reward)
 
             } else {
-                msgbox(format("I don't see any RAWST berries on you. Come back when you get one!"), MSGBOX_NPC)
+                speakername("Chef")
+                msgbox(format("I don't see any Rawst Berries on you. Come back when you get one!"), MSGBOX_NPC)
             }
         } else {
+            speakername("Chef")
             msgbox(format("A shame! But no matter - I'll continue my search."), MSGBOX_NPC)
         }
     }
 
 
     releaseall
+    end
 }
 
 script Route4_NPC_Cook_Reward{
+    speakername("Chef")
     message(format("Please take one!"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHELL BELL", "ADRENALINE ORB")
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Shell Bell", "Adrenaline Orb")
     if (var(VAR_RESULT) == 0){
         goto(Route4_NPC_Cook_RewardA)
     } else {
@@ -311,6 +321,7 @@ script Route4_NPC_Cook_Reward{
 script Route4_NPC_Cook_RewardA{
     setvar(VAR_0x8006, ITEM_SHELL_BELL)
     showitemdescription
+    speakername("Chef")
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         hideitemdescription
@@ -325,6 +336,7 @@ script Route4_NPC_Cook_RewardA{
 script Route4_NPC_Cook_RewardB{
     setvar(VAR_0x8006, ITEM_ADRENALINE_ORB)
     showitemdescription
+    speakername("Chef")
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         hideitemdescription
@@ -338,6 +350,7 @@ script Route4_NPC_Cook_RewardB{
 
 script Route4_NPC_Cook_RewardEnd{
     setflag(FLAG_ROUTE4_COOK)
+    speakername("Chef")
     msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)            
     end
 }

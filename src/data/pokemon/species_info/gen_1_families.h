@@ -9119,7 +9119,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #elif P_UPDATED_EXP_YIELDS >= GEN_4
     #define GEODUDE_EXP_YIELD 73
 #else
-    #define GEODUDE_EXP_YIELD 86
+    #define GEODUDE_EXP_YIELD 60//86
 #endif
 
 #define GOLEM_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)

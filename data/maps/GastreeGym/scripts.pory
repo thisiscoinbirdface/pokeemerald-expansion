@@ -21,20 +21,22 @@ script GastreeGym_TrainerBattle_Jaco {
 
 script GastreeGym_LeaderBattle {
     if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("Inger: I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
+        msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
     } else { //else do the battle
         special(SaveGame)
         waitstate
         release
 
         lockall
-        msgbox(format("Inger: C'mon! C'mon!!\p...\pInger: C'moooooooo--"))
+        speakername("Inger")
+        msgbox(format("C'mon! C'mon!!\p...\pC'moooooooo--"))
         release
         applymovement(9, moves(jump_in_place_down emote_exclamation_mark))
         waitmovement(0)
         delay(24)
 
-        msgbox(format("Inger: Who're you? A trainer? You're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
+        speakername("Inger")
+        msgbox(format("Who're you? A trainer? You're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
 
         trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
         release
@@ -54,22 +56,26 @@ script GastreeGym_EventScript_Victory{
     call(Common_EventScript_PlayGymBadgeFanfare)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
+    speakername("Inger")
     msgbox(format("The Hard Badge allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
     release
     delay(16)
     //Also give 3 rare shards
-    msgbox(format("INGER: I also want to give you these."))
+    speakername("Inger")
+    msgbox(format("I also want to give you these."))
     giveitem(ITEM_RARE_SHARD, 2)
-    msgbox(format("INGER: These are incredibly rare stones that react in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
+    speakername("Inger")
+    msgbox(format("These are incredibly rare stones that react in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
     release
     delay(16)
     //Bye-bye
-    msgbox(format("INGER: So where are you headed next?\p...\pINGER: So you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\pINGER:...but I can't say I've heard anything about these dreamstones.\pINGER: So next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pINGER: All the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
+    speakername("Inger")
+    msgbox(format("So where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("INGER: ...you look a little green. It is nerves? First gym battle?\p...\pINGER: I know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pINGER: I'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("...you look a little green. It is nerves? First gym battle?\p...\pI know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pI'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
