@@ -1,0 +1,61 @@
+raw`
+    .set LOCALID_SHARPEDO, 1
+    .set LOCALID_JANIA, 2
+    .set LOCALID_CLAUNCHER, 3
+    .set LOCALID_GYARADOS, 4
+`
+
+mapscripts IvyRiver_Sharpedo_MapScripts{}
+
+
+
+script IvyRiver_Sharpedo_Jania_Trigger0{
+    lockall
+    delay(30)
+    applymovement(LOCALID_JANIA, moves(jump_in_place_left))
+    waitmovement(0)
+    msgbox(format("???: That should do it, Gyarados. Now the Mega Sharpedo can't get out."))
+    release
+    delay(8)
+
+    playmoncry(SPECIES_GYARADOS, CRY_MODE_NORMAL)
+    applymovement(LOCALID_GYARADOS, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(30)
+
+    applymovement(LOCALID_JANIA, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_CLAUNCHER, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_GYARADOS, moves(emote_exclamation_mark jump_in_place_down))
+    waitmovement(0)
+
+    delay(16)
+
+    msgbox(format("???: Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\p???: You know about the Mega Sharpedo? Okay. Be careful nonetheless.\p???: See over there?"))
+    release
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    waitmovement(0)
+    applymovement(LOCALID_JANIA, moves(face_up))
+    applymovement(LOCALID_CLAUNCHER, moves(face_up))
+    applymovement(LOCALID_GYARADOS, moves(face_up))
+    waitmovement(0)
+    
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+    waitmovement(0)
+    msgbox(format("???: My Gyarados and I have been tracking this Mega Sharpedo for weeks. I finally found its hideout and managed to trap it in these currents."))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 9))
+    waitmovement(0)
+    release
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+    msgbox(format("???: This should keep it trapped while it calms down and becomes a regular Sharpedo again."))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
+    waitmovement(0)
+    release
+    special(RemoveCameraObject)    
+
+    releaseall
+    end
+}

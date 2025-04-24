@@ -5480,6 +5480,16 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/PellucaCityGym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityGym_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_IVY_RIVER_SHARPEDO",
+      "name": "IvyRiver_Sharpedo_Layout",
+      "width": 24,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/IvyRiver_Sharpedo/border.bin",
+      "blockdata_filepath": "data/layouts/IvyRiver_Sharpedo/map.bin"
     }
   ]
 }

@@ -247,6 +247,13 @@
       "elevation": 0,
       "dest_map": "MAP_IVY_RIVER_ZARUDE_FOREST",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 94,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER_SHARPEDO",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

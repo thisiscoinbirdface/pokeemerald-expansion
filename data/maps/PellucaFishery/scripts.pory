@@ -9,7 +9,7 @@ script PellucaFishery_NPC1{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("Shucks! I can't wait to get back out to sea but OLD MAN BRINEY doesn't want to do anything while the SHARPEDO's out and about!"))
+        msgbox(format("Shucks! I can't wait to get back out to sea but Old Man Slakka doesn't want to do anything while the Sharpedo's out and about!"))
     }
     releaseall
     end
@@ -22,7 +22,7 @@ script PellucaFishery_NPC2{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("I bet me and my TOEDSCRUEL could give that SHARPEDO a whooping and a half, but OLD MAN BRINEY doesn't want us to risk it."))
+        msgbox(format("I bet me and my Toedscruel could give that Sharpedo a whooping and a half, but Old Man Slakka doesn't want us to risk it."))
     }
     releaseall
     end
@@ -35,7 +35,7 @@ script PellucaFishery_NPC3{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("Did you know that a CASTING ROD and TROLLING ROD catch different Pokémon?"))
+        msgbox(format("Did you know that a Casting Rod and Trolling Rod catch different Pokémon?"))
     }
     releaseall
     end
@@ -56,63 +56,58 @@ script PellucaFishery_EventScript_MainDude{
     }
 
     if (var(VAR_PELLUCA_FISHERY) == 2){
-        msgbox(format("BRINEY: Have you taken care of the shark?"), MSGBOX_YESNO)
+        msgbox(format("SLAKKA: Have you taken care of the shark?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
-            msgbox(format("BRINEY: Amazing! You're a saviour!"))
+            msgbox(format("SLAKKA: Amazing! You're a saviour!"))
             release
 
             completequest(QUEST_PELLUCA_FISHERY)
 
             giveitem(ITEM_POTION)   //give the quest reward
-            msgbox(format("BRINEY: Amazing! You're a saviour!"))
+            msgbox(format("SLAKKA: Amazing! You're a saviour!"))
             setvar(VAR_PELLUCA_FISHERY, 3)
             release
 
-            
         } else {
-            msgbox(format("BRINEY: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
+            msgbox(format("SLAKKA: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
             release
         }
     }
 
     if (var(VAR_PELLUCA_FISHERY) == 1){
-        msgbox(format("BRINEY: Ah, there you are! Let's see your MEGA RING."), MSGBOX_YESNO)
+        msgbox(format("SLAKKA: Ah, there you are! Let's see your Mega Ring."), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_MEGA_RING)
             if (var(VAR_RESULT) == 1){
-                msgbox(format("BRINEY: Good, good. Now you've got a chance against the SHARPEDO. Well then, all that's left is for you to make your way there. You'll need to head north of here and climb up a waterfall to reach it's cave. Here you go."))
-                release
-                giveitem(ITEM_HM_WATERFALL)   //give the quest reward
-                msgbox(format("BRINEY: This is the HM WATERFALL. Any Pokémon that knows it will be able to climb up waterfalls while surfing. But you'll need the CASCADE BADGE. But that's on you. I've done what I can - now go teach that MEGA SHARPEDO a lesson!"))
+                msgbox(format("SLAKKA: Good, good. Now you've got a chance against the Mega Sharpedo. Well then, all that's left is for you to make your way there. The Sharpedo lives north of here, up in Ivy River. You can either surf up there or go through Mt. Mirroh and come down. Go teach that Mega Sharpedo a lesson, kid! I'm counting on ya."))
                 release
                 setvar(VAR_PELLUCA_FISHERY, 2)
             
             } else {
-                msgbox(format("BRINEY: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
+                msgbox(format("SLAKKA: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
                 release
             }
         } else {
-            msgbox(format("BRINEY: Hmpf. Come back when you do!"))
+            msgbox(format("SLAKKA: Hmpf. Come back when you do!"))
         }
       
     }
 
     if (var(VAR_PELLUCA_FISHERY) == 0){
         //first dialogue
-        msgbox(format("BRINEY: Ohh, what am I going to do about this mess! My fishery business was booming until we started getting attacked by a monstrous SHARPEDO! And none of us can handle it!\pIt's a total disaster.\p...\pBRINEY: Eh? You wanna try? You...don't look like you can handle it. That SHARPEDO's strong, see. Not normal. It's MEGA evolved in the wild! You still wanna go up against it?"), MSGBOX_YESNO)
+        msgbox(format("SLAKKA: What am I going to do about this mess! My fishery business was booming until we started getting attacked by a monstrous Sharpedo! And none of us can handle it!\pIt's a total disaster.\p...\pSLAKKA: Eh? You wanna try? You...don't look like you can handle it. That Sharpedo's strong, see. Not normal. It's mega evolved in the wild! You still wanna go up against it?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("BRINEY: Haha! You may not look like much, but you've got a backbone in there, eh? I like that.\pCan't sail the seas without a strong mast.\pFine, you're in. But I'm an old man now and I can't push you into the deep end without preparing you first. Get yourself a MEGA RING somehow and then come back."))
+            msgbox(format("SLAKKA: Haha! You may not look like much, but you've got some spine, eh? I like that.\pCan't sail the seas without a strong mast.\pFine, you're in. But I'm an old man now and I can't push you into the deep end without preparing you first.\pSLAKKA: If you're going up against a mega evolved Pokemon, you'll need to be able to mega evolve yourself! Get yourself a Mega Ring somehow and then come back."))
             release
             setvar(VAR_PELLUCA_FISHERY, 1)
 
             startquest(QUEST_PELLUCA_FISHERY)
 
         } else {
-            msgbox(format("BRINEY: A wise choice, kid. That thing is terrifying! Worse than a raging seastorm it is!"))
+            msgbox(format("SLAKKA: Good choice, kid. That thing is terrifying! Worse than a raging seastorm it is!"))
         }
-
     }
 
 
