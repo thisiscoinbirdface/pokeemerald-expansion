@@ -5474,7 +5474,7 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_GYM_B1F",
       "name": "PellucaCityGym_B1F_Layout",
-      "width": 40,
+      "width": 50,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",

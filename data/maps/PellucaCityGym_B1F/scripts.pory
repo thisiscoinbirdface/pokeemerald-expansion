@@ -1,0 +1,10 @@
+mapscripts PellucaCityGym_B1F_MapScripts{}
+
+
+
+script PellucaGym_Trainer_A{
+    trainerbattle_single(TRAINER_MATTHEW, format("Different Pokémon inhabit different areas. I caught mine right here!"), format("Oh no!"))
+    msgbox(format("No matter where they're from, all Pokémon need love and care."), MSGBOX_NPC)
+    end
+}
+
