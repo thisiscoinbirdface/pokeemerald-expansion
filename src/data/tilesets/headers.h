@@ -1012,3 +1012,14 @@ const struct Tileset gTileset_Rivetshore =
     .metatileAttributes = gMetatileAttributes_Rivetshore,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PellucaGym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PellucaGym,
+    .palettes = gTilesetPalettes_PellucaGym,
+    .metatiles = gMetatiles_PellucaGym,
+    .metatileAttributes = gMetatileAttributes_PellucaGym,
+    .callback = NULL,
+};

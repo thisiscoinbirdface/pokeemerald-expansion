@@ -259,3 +259,6 @@ const u16 gMetatileAttributes_WinterlilyGym[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_Rivetshore[] = INCBIN_U16("data/tilesets/primary/rivetshore/metatiles.bin");
 const u16 gMetatileAttributes_Rivetshore[] = INCBIN_U16("data/tilesets/primary/rivetshore/metatile_attributes.bin");
+
+const u16 gMetatiles_PellucaGym[] = INCBIN_U16("data/tilesets/secondary/pelluca_gym/metatiles.bin");
+const u16 gMetatileAttributes_PellucaGym[] = INCBIN_U16("data/tilesets/secondary/pelluca_gym/metatile_attributes.bin");

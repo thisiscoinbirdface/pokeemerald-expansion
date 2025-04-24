@@ -272,10 +272,10 @@
 #define FLAG_SILVERSUNGYM_SPENSER_REWARD                            0x4E6 // gym 
 #define FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER                      0x4C1 // gym 
 #define FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD                     0x4C2 // gym 
-#define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
-#define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
-#define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
+#define FLAG_PELLUCAGYM_SPENSER_WATER                               0x4C3 // gym
+#define FLAG_PELLUCAGYM_SPENSER_REWARD                              0x4C4 // gym
+#define FLAG_RIVETSHOREGYM_SPENSER_WATER                            0x4C5 // gym
+#define FLAG_RIVETSHOREGYM_SPENSER_REWARD                           0x4C6 // gym
 #define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
 #define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
