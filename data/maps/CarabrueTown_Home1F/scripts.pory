@@ -18,9 +18,10 @@ script CarabrueTown_Home1F_EventScript_StartGame{
 
     //TV plays info about prof disappearance
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    speakername("TV")
     msgbox(
         format(
-            "TV: And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokémon Professor have vanished to? And why?"
+            "And in the big news of the day, we have a mysterious event to report. The famous Professor Tenebris of Carabrue Town was reported missing. Where could such a renowned Pokémon Professor have vanished to? And why?"
         )
     )
     release
@@ -35,24 +36,31 @@ script CarabrueTown_Home1F_EventScript_StartGame{
 
     //Player faces mom, dialogue starts
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    waitmovement(OBJ_EVENT_ID_PLAYER)   
-    msgbox(format("MOM: How scary...even in a small town like ours, people can go missing.\pAnd it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor, so do your best, okay?" ))
+    waitmovement(OBJ_EVENT_ID_PLAYER) 
+    speakername("Mom")  
+    msgbox(format("How scary...even in a small town like ours, people can go missing.\pAnd it's your first day working at the lab too! Gosh, I'm so scared...be safe out there! I'm sure the lab will need all the help it can get without the Professor, so do your best, okay?" ))
     release
 
     applymovement(1, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(1)
-    msgbox(format("MOM: I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
+    speakername("Mom") 
+    msgbox(format("I almost forgot! Here you go - a new pair of shoes for a new adventure!"))
     release
     playfanfare(MUS_OBTAIN_ITEM)
-    msgbox(format("{PLAYER} switched shoes with the RUNNING SHOES."))
+    msgbox(format("{PLAYER} switched shoes with the Running Shoes."))
 	waitfanfare    
     release
 
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
     setflag(FLAG_SYS_B_DASH)    
 
-    msgbox(format("MOM: {PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. Slip on these Running Shoes and race in the great outdoors!"))
-    msgbox(format("MOM: And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
+    speakername("Mom") 
+    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. Slip on these Running Shoes and race in the great outdoors!"))
+    release
+    delay(8)
+
+    speakername("Mom") 
+    msgbox(format("And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
     release
 
     //Set var to done
@@ -100,11 +108,13 @@ script CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage{
 script CarabrueTown_Home1F_EventScript_MomGeneric{
     lockall
     faceplayer
-    msgbox(format("Mom: I love you! You're looking a bit tired. Why don't you rest?"))
+    speakername("Mom")     
+    msgbox(format("I love you! You're looking a bit tired. Why don't you rest?"))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
 	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
-	msgbox(format("Mom: Take care, {PLAYER}!"))
+    speakername("Mom")     
+	msgbox(format("Take care, {PLAYER}!"))
     release
     applymovement(1, moves(face_right))
 	releaseall

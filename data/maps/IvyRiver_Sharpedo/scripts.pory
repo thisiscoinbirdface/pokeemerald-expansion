@@ -16,8 +16,8 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     delay(30)
     applymovement(LOCALID_JANIA, moves(face_left))
     waitmovement(0)
-    speakername("Jaina")
-    msgbox(format("???: That should do it, Gyarados. Now the Mega Sharpedo can't get out."))
+    speakername("???")
+    msgbox(format("That should do it, Gyarados. Now the Mega Sharpedo can't get out."))
     release
     delay(8)
 
@@ -32,8 +32,8 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     waitmovement(0)
 
     delay(16)
-
-    msgbox(format("???: Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\p???: You know about the Mega Sharpedo? Okay. Be careful nonetheless.\p???: Come here."))
+    speakername("???")
+    msgbox(format("Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\pYou know about the Mega Sharpedo? Okay. Be careful nonetheless.\pCome here."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
@@ -43,13 +43,15 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(LOCALID_GYARADOS, moves(face_up))
     waitmovement(0)
     delay(8)
-    msgbox(format("???: See over there?"))
+    speakername("???")    
+    msgbox(format("See over there?"))
     release
     
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     waitmovement(0)
-    message(format("???: My Gyarados and I have been tracking this Mega Sharpedo for weeks. I finally found its hideout and managed to trap it in these currents."))
+    speakername("???")
+    message(format("My Gyarados and I have been tracking this Mega Sharpedo for weeks. I finally found its hideout and managed to trap it in these currents."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 9))
     waitmovement(0)
     waitmessage
@@ -58,7 +60,8 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     delay(30)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
     waitmovement(0)
-    message(format("???: These currents should keep it at bay while it calms down and becomes a regular Sharpedo again."))
+    speakername("???")
+    message(format("These currents should keep it at bay while it calms down and becomes a regular Sharpedo again."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
     waitmovement(0)
     waitmessage
@@ -73,7 +76,8 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(LOCALID_GYARADOS, moves(face_up))    
     waitmovement(0)
     delay(16)
-    msgbox(format("???: You can't use Pokeballs on it - it's too enraged. So whatever you want to do, be careful.\p???: See you."))
+    speakername("???")
+    msgbox(format("You can't use Pokeballs on it - it's too enraged. So whatever you want to do, be careful.\pSee you."))
     release
 
     fadescreen(FADE_TO_BLACK)

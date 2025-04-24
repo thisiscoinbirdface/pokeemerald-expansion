@@ -1,7 +1,7 @@
 mapscripts Route1_MapScripts {}
 
 script Route1_EventScripts_RandomDude {
-    msgbox(format("A Pokémon that uses a move of the same type as itself gets a boost. So if ROOKIDEE uses PECK, it'll deal more damage!"), MSGBOX_NPC)
+    msgbox(format("A Pokémon that uses a move of the same type as itself gets a boost. So if Rookidee uses Peck, it'll deal more damage!"), MSGBOX_NPC)
     end
 }
 

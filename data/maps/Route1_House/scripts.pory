@@ -96,12 +96,18 @@ script Route1_House_RewardEnd{
 script Route1_House_StartQuest{
     lockall
     faceplayer
-    msgbox(format("I think my poor baby Azurill ate something bad and now has food poisoning! I wish I had a Pecha Berry to cure her. Say, trainer, good timing. Would you be willing to find a PECHA BERRY for my baby?"), MSGBOX_YESNO)
+    msgbox(format("I think my poor baby Azurill ate something bad and now has food poisoning! I wish I had a Pecha Berry to cure her. Say, trainer, good timing."))
+
+	setvar(VAR_0x8006, ITEM_PECHA_BERRY)
+    showitemdescription
+    msgbox(format("Would you be willing to find a Pecha Berry for my baby?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
+        hideitemdescription
         msgbox(format("Oh, thank you so much. You're very kind. I'll be waiting here."))
         startquest(QUEST_ROUTE1_PECHA_BERRY)
     } else {
+        hideitemdescription
         msgbox(format("You'd watch Azurill suffer? You're so cold-hearted!"))        
     }
     releaseall
@@ -117,7 +123,7 @@ script Route1_House_Azurill {
     if (var(VAR_RESULT) == 1) {
         msgbox(format("Azurill looks full of joy! Must be the love of its trainer...or is it the Pecha Berry?"), MSGBOX_NPC)
     } else {
-        msgbox(format("AZURILL: zu... \pAzurill looks quite sick."), MSGBOX_NPC) 
+        msgbox(format("Zu... \pAzurill looks quite sick."), MSGBOX_NPC) 
     }
     end
 }

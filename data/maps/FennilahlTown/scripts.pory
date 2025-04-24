@@ -43,13 +43,16 @@ script FennilahlTown_EventScript_HikerTunnel {
 
 script Fennilahl_Breech_StartQuest{
 
-    msgbox(format("I found a STRANGE ROCK in the caves south of town, but a small pink Pokémon took it and ran away! And I don't have any Pokémon to help me get it back! I don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me?"), MSGBOX_YESNO)
+    speakername("???")
+    msgbox(format("I found a Strange Rock in the caves south of town, but a small pink Pokémon took it and ran away! And I don't have any Pokémon to help me get it back!\pI don't want to battle - I can't deal with conflict.\pI don't know what to do! Will you help me out and get my rock back?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
+        speakername("???")
         msgbox(format("Amazing! You've answered my prayers. I saw the pink Pokémon run down south, towards Route 2. I really liked that Strange Rock! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {
+        speakername("???")
         msgbox(format("Oh, what will I do!"))
     }
 
@@ -60,7 +63,8 @@ script Fennilahl_Breech_StartQuest{
 script Fennilahl_Breech_QuestInProgress{
 
     if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-        msgbox(format("You brought my Strange Rock? Amazing! How can I thank you for this?\p...\pA Clefairy was keeping it? Where'd it go?")) 
+        speakername("???")
+        msgbox(format("You brought my Strange Rock? Amazing! How can I thank you for this?\p...\pA Clefairy had it it? Where'd it go?")) 
         release
         delay(16)
         applymovement(LOCALID_BREECH, moves(face_down emote_exclamation_mark))
@@ -71,24 +75,31 @@ script Fennilahl_Breech_QuestInProgress{
         applymovement(LOCALID_CLEF, moves(walk_fast_up * 6))
         waitmovement(0)
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
-        msgbox(format("CLEFAIRY: clee!!!!"))
+        speakername("Clefairy")
+        msgbox(format("Clee!!!!"))
         delay(16)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         applymovement(LOCALID_BREECH, moves(emote_exclamation_mark jump_in_place_down))
+        speakername("???")
         msgbox(format("This is the Clefairy? It must've been following you around because it can't let go of the rock!"))
         release
         delay(16)
         playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
         applymovement(LOCALID_CLEF, moves(jump_in_place_up * 3))
         waitmovement(0)
-        msgbox(format("CLEFAIRY: clee!!!\pOuch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokémon okay? I don't like battling. You'll be my hiking partner!"))        
+        speakername("Clefairy")
+        msgbox(format("clee!!!"))
+        speakername("???")
+        msgbox(format("Ouch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokémon okay? I don't like battling. You'll be my hiking partner!"))        
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
         applymovement(LOCALID_BREECH, moves(face_down))
         waitmovement(0)
         delay(16)
-        msgbox(format("BREECH: Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
+
+        speakername("Breech")
+        msgbox(format("Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
         release
 
         fadescreen(FADE_TO_BLACK)
@@ -102,6 +113,7 @@ script Fennilahl_Breech_QuestInProgress{
         //complete quest
         completequest(QUEST_FENNILAHL_HIKER) 
     } else {
+        speakername("???")
         msgbox(format("Why do bad things happen to me?"))        
     }
     releaseall
@@ -149,28 +161,28 @@ script FennilahlTown_Budew_FirstBerry{
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 3))
     waitmovement(0)
-    msgbox(format("BUDEW seems to want something..."))
+    msgbox(format("Budew seems to want something..."))
     release
 
     checkitem(ITEM_ORAN_BERRY)
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Give BUDEW an ORAN BERRY?"), MSGBOX_YESNO)
+        msgbox(format("Give Budew an Oran Berry?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_ORAN_BERRY)
             faceplayer  
             waitmovement(0)
             delay(12)             
-            msgbox(format("{PLAYER} gave BUDEW an ORAN BERRY."), MSGBOX_SIGN)
+            msgbox(format("{PLAYER} gave Budew an Oran Berry."), MSGBOX_SIGN)
             release
             applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 3))   
             waitmovement(0)       
-            msgbox(format("BUDEW seems happy!"))
+            msgbox(format("Budew seems happy!"))
             release
 
             setvar(VAR_FENNILAHL_BUDEW, 1)
 
         } else {
-        msgbox(format("BUDEW seems disappointed..."))
+        msgbox(format("Budew seems disappointed..."))
         release
         }
     } else {
@@ -186,28 +198,28 @@ script FennilahlTown_Budew_SecondBerry{
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 2))
     waitmovement(0)
-    msgbox(format("BUDEW seems to want something again...but not an ORAN BERRY."))
+    msgbox(format("Budew seems to want something again...but not an Oran Berry."))
     release
 
     checkitem(ITEM_PECHA_BERRY)
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Give BUDEW a PECHA BERRY?"), MSGBOX_YESNO)
+        msgbox(format("Give Budew a Pecha Berry?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_PECHA_BERRY)
             faceplayer 
             waitmovement(0)
             delay(12)             
-            msgbox(format("{PLAYER} gave BUDEW a PECHA BERRY."), MSGBOX_SIGN)
+            msgbox(format("{PLAYER} gave Budew a Pecha Berry."), MSGBOX_SIGN)
             release
             applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 2))   
             waitmovement(0)       
-            msgbox(format("BUDEW seems happy!"))
+            msgbox(format("Budew seems happy!"))
             release
 
             setvar(VAR_FENNILAHL_BUDEW, 2)
 
         } else {
-        msgbox(format("BUDEW seems disappointed..."))
+        msgbox(format("Budew seems disappointed..."))
         release
         }
     } else {
@@ -223,22 +235,22 @@ script FennilahlTown_Budew_ThirdBerry{
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
     applymovement(8, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("What could BUDEW want now?"))
+    msgbox(format("What could Budew want now?"))
     release
 
     checkitem(ITEM_RAWST_BERRY)
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Give BUDEW a RAWST BERRY?"), MSGBOX_YESNO)
+        msgbox(format("Give Budew a Rawst Berry?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_RAWST_BERRY)
             faceplayer 
             waitmovement(0)
             delay(12)             
-            msgbox(format("{PLAYER} gave BUDEW a RAWST BERRY."), MSGBOX_SIGN)
+            msgbox(format("{PLAYER} gave Budew a Rawst Berry."), MSGBOX_SIGN)
             release
             applymovement(LOCALID_BUDEW, moves(jump_in_place_down))   
             waitmovement(0)       
-            msgbox(format("BUDEW seems happy!"))
+            msgbox(format("Budew seems happy!"))
             release
 
             setvar(VAR_FENNILAHL_BUDEW, 3)
@@ -246,7 +258,7 @@ script FennilahlTown_Budew_ThirdBerry{
             goto(FennilahlTown_Budew_JoinParty)
 
         } else {
-        msgbox(format("BUDEW seems disappointed..."))
+        msgbox(format("Budew seems disappointed..."))
         release
         }
     } else {
@@ -261,19 +273,19 @@ script FennilahlTown_Budew_JoinParty{
     applymovement(LOCALID_BUDEW, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("BUDEW is looking at the Pokeballs on your belt curiously..."))
+    msgbox(format("Budew is looking at the Pokeballs on your belt curiously..."))
     release
     delay(16)
-    msgbox(format("BUDEW nudges the Pokeballs on your belt. It seems to want to join your party! Will you become BUDEW's trainer?"), MSGBOX_YESNO)
+    msgbox(format("Budew nudges the Pokeballs on your belt. It seems to want to join your party! Will you become Budew's trainer?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         removeobject(LOCALID_BUDEW)
         givemon(SPECIES_BUDEW, 5)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox(format("The BUDEW has joined your party!\pWelcome, BUDEW! Let's get along well together!"))
+        msgbox(format("Budew has joined your party!\pWelcome, Budew! Let's get along well together!"))
     } else {
         applymovement(LOCALID_BUDEW, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
         removeobject(LOCALID_BUDEW)
-        msgbox(format("BUDEW ran off..."))
+        msgbox(format("Budew ran off..."))
         release
     }
 
