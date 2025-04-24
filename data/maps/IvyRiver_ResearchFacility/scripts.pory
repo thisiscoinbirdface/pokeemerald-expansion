@@ -21,7 +21,8 @@ mapscripts IvyRiver_ResearchFacility_MapScripts{}
 //1 item giver
 
 script IvyRiver_Ranger_FirstQuest{
-    //give the quest item
+
+//give the first quest item
     if (var(VAR_RANGER_INSTITUTE) == 3){
 
         //first part
@@ -70,6 +71,21 @@ script IvyRiver_Ranger_FirstQuest{
         end
     }
 
+ //complete the second quest
+    if (var(VAR_RANGER_INSTITUTE) == 7){
+        msgbox(format("Ah, {PLAYER}! There you are. The second floor has reported that your performance has been splendid! I hereby promote you to the rank of Associate!"))
+        release
+
+        //promotion
+        message(format("{PLAYER} was promoted from Candidate to Associate!"))
+        waitmessage
+        call(Common_EventScript_PlayGymBadgeFanfare)
+
+        msgbox(format("Director Ravine will be happy to know. You should go and see him!"), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("{PLAYER}! I hope you're settling in well here."), MSGBOX_NPC)
 
     releaseall
     end
@@ -127,7 +143,7 @@ script IvyRiver_Ranger_FirstQuest_RewardEnd{
     release
 
     //set vars, quest
-    setvar(VAR_RANGER_INSTITUTE, 4)
+    setvar(VAR_RANGER_INSTITUTE, 4)     //now this will go to 5, 6, 7 after completing three quests
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1)  
 
     releaseall

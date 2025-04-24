@@ -20,17 +20,14 @@ mapscripts RangerInstitute_MapScripts{}
 //4: first mission complete
     //delivered to Ivy River
     //reward: ? + Trainee (Shard vendor in Route 6 and Tauros)
-//5: second mission
-    //spoken to Ivy River head, got the pokedex mission
-//6: second mission complete
-    //caught 3 specific mons for Ivy River
-        //get an item only held by a pokemon (morgrem)
-        //show a specific pokemon (toedscool)
-        //trade a specific pokemon (get a trade mon - pinsir from rivetshore)
+//5, 6, 7: second mission
+    //spoken to Ivy River head, got the show pokemon mission
+        //show three pokemon, increment var three times
+//8: second mission complete
     //reward: ? + Associate (EV Editor in Ivy River)
-//7: third mission
-    //???
-//8: third mission complete
+//9: third mission
+    //catch diancie - the new mega evolution
+//10: third mission complete
     //???
     //reward: ? + Ranger (?)
 
