@@ -1363,3 +1363,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LilyPondCave/scripts.inc"
 
 	.include "data/maps/IvyRiver_ZarudeForest/scripts.inc"
+
+	.include "data/maps/PellucaCityGym_B1F/scripts.inc"

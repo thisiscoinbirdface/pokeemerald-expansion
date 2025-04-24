@@ -5044,10 +5044,10 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_GYM",
       "name": "PellucaCityGym_Layout",
-      "width": 80,
-      "height": 90,
+      "width": 19,
+      "height": 12,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_PellucaGym",
+      "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/PellucaCityGym/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityGym/map.bin"
     },
@@ -5470,6 +5470,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/IvyRiver_ZarudeForest/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_ZarudeForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CITY_GYM_B1F",
+      "name": "PellucaCityGym_B1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/PellucaCityGym_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCityGym_B1F/map.bin"
     }
   ]
 }
