@@ -10,6 +10,7 @@
 #define STD_WINDOW_PALETTE_NUM 14
 #define STD_WINDOW_PALETTE_SIZE PLTT_SIZEOF(10)
 #define STD_WINDOW_BASE_TILE_NUM 0x214
+#define DLW_WIN_PLATE_SIZE  8
 
 #define MENU_NOTHING_CHOSEN -2
 #define MENU_B_PRESSED -1
@@ -49,6 +50,7 @@ struct MenuAction
 extern const u16 gStandardMenuPalette[];
 extern EWRAM_DATA u8 gPopupTaskId;
 
+void DrawDialogueFrameWithNameplate(u8 windowId, bool8 copyToVram);
 void FreeAllOverworldWindowBuffers(void);
 void InitStandardTextBoxWindows(void);
 void InitTextBoxGfxAndPrinters(void);

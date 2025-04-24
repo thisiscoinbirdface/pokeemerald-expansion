@@ -16,6 +16,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     delay(30)
     applymovement(LOCALID_JANIA, moves(face_left))
     waitmovement(0)
+    speakername("Jaina")
     msgbox(format("???: That should do it, Gyarados. Now the Mega Sharpedo can't get out."))
     release
     delay(8)
