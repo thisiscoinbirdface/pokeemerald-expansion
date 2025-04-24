@@ -81,20 +81,21 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     msgbox(format("C'mon Cyndaquil!"))
     playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
     applymovement(9, moves(emote_exclamation_mark jump_in_place_down))
-    msgbox(format("CYNDAQUIL: quiiillll!!!\pSigh, it's just not good enough..."))
+    waitmoncry
+    msgbox(format("Sigh, it's just not good enough..."))
     release
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled Ariana and my Cyndaquil saw the move SUNNY DAY for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("We battled Ariana and Cyndaquil saw the move Sunny Day for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM SUNNY DAY."))
+        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM Sunny Day."))
         release
         startquest(QUEST_CERAM_CYNDAQUIL)
     } else {
-        msgbox(format("Oh well. See you."))
+        msgbox(format("Oh well. We'll keep training.\nSigh...it's just not working..."))
     }
     releaseall
     end
@@ -105,7 +106,7 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
     //Check TM
     checkitem(ITEM_TM_SUNNY_DAY)
     if (var(VAR_RESULT) == 1){  //Yes TM
-        msgbox(format("Did you bring SUNNY DAY?\nYes? Perfect! Let's get to it."))
+        msgbox(format("Did you bring Sunny Day?\nYes? Perfect! Let's get to it."))
         release
         delay(20)
 
@@ -113,7 +114,12 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         release
         applymovement(4, moves(emote_exclamation_mark))    
         waitmovement(0)
-        msgbox(format("Thank you! Isn't this great, Cyndaquil?\pCYNDAQUIL: quiii!!!\pHere, you must take this. No no, I insist."))
+        msgbox(format("Thank you! Isn't this great, Cyndaquil?"))
+        playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)        
+        msgbox(format("Quiii!!!!!"))
+        release
+        delay(8)     
+        msgbox(format("Here, you must take this. No no, I insist."))
         giveitem(ITEM_POTION)
         completequest(QUEST_CERAM_CYNDAQUIL)
     } else { //refuse to give TM

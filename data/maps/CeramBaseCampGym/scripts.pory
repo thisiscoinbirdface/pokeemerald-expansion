@@ -188,12 +188,13 @@ script CeramBaseCampGym_LeaderBattle {
     faceplayer
 
     if (flag(FLAG_BADGE02_GET)){
+        speakername("Ariana")
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
         special(SaveGame)
         waitstate
         release
-
+        speakername("Ariana")
         msgbox(CeramBaseCampGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         

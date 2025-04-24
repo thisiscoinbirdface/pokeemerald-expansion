@@ -84,7 +84,8 @@ script MtCeram_Eavesdrop_Trigger0{
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
     delay(16)
 
-    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up face_right))
@@ -102,7 +103,8 @@ script MtCeram_Eavesdrop_Trigger1{
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
     delay(16)
 
-    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up face_right))
@@ -120,7 +122,8 @@ script MtCeram_Eavesdrop_Trigger2{
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
     delay(16)
 
-    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up face_right))
@@ -138,7 +141,8 @@ script MtCeram_Eavesdrop_Trigger3{
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_down))
     delay(16)
 
-    msgbox(format("KOHLA: {PLAYER} - what are you doing? Come here, you idiot!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up face_right))
@@ -153,7 +157,8 @@ script MtCeram_EventScript_Eavesdrop{
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_right))
     //Koha text
-    msgbox(format("KOHLA: I've been spying on those two Team Somber Grunts. Don't make a sound!"))
+    speakername("Kohla")
+    msgbox(format("I've been spying on those two Team Somber Grunts. Don't make a sound!"))
     release   
 
     special(SpawnCameraObject)
@@ -165,17 +170,25 @@ script MtCeram_EventScript_Eavesdrop{
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     waitmovement(0)
     delay(30)
-    msgbox(format("GRUNT 1: ...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
+    speakername("Grunt A")
+    msgbox(format("...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
     applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
-    msgbox(format("GRUNT 2: But where's the boss? And Gabrielle?"))
+    speakername("Grunt B")
+    msgbox(format("But where's the boss? And Gabrielle?"))
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
-    msgbox(format("GRUNT 1: The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
+    speakername("Grunt A")
+    msgbox(format("The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
     release
     delay(16)
     applymovement(LOCALID_FOOTGRUNT2, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("GRUNT 2: Serves her right for losing! Team Somber doesn't need any losers!\pGRUNT 1: Yeah what a loser she is! Now lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
+    speakername("Grunt B")
+    msgbox(format("Serves her right for losing! Team Somber doesn't need any losers!"))
+    release
+    delay(8)
+    speakername("Grunt A")
+    msgbox(format("Yeah what a loser she is!\pNow lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
     release
 
     //Somber walk off
@@ -194,7 +207,8 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_left))
-    msgbox(format("KOHLA: Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\pKOHLA: What? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only ACE ROOKIE, and I've told you before - I'm strong enough alone. I don't need your help, chum!"))
+    speakername("Kohla")
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone. I don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -261,21 +275,25 @@ script MtCeram_EventScript_BeforePeakBattle{
     //First kohla and the grunts exchange dialogue
     applymovement(LOCALID_TOPKOHLA, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("KOHLA: That's enough of your mischief Team Somber! You're getting in the way of police business!"))
+    speakername("Kohla")
+    msgbox(format("That's enough of your mischief Team Somber! You're getting in the way of police business!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("GRUNT 2: You're just a kid. Where's the police?"))
+    speakername("Grunt A")
+    msgbox(format("You're just a kid. Where's the police?"))
     release
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KOHLA: I'm not a kid! I'm the ACE ROOKIE of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
+    speakername("Kohla")
+    msgbox(format("I'm not a kid! I'm the Ace Rookie of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("GRUNT 1: You alone against the two of us?"))
+    speakername("Grunt B")
+    msgbox(format("You alone? Against the two of us?"))
     release
     delay(16)
     //Notice player
@@ -286,15 +304,20 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT2, moves(emote_exclamation_mark))
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("GRUNT 2: The help arrives. But you're both just kids! Hahaha!"))
+    speakername("Grunt B")
+    msgbox(format("The help arrives. But you're both just kids! Hahaha!"))
     release
 
     //Kohla says he doesn't need help
-    msgbox(format("KOHLA: I told you I don't need your help! You'll just get in the way."))
+    speakername("Kohla")
+    msgbox(format("{PLAYER}, I told you I don't need your help! You'll just get in the way."))
     release  
+    delay(8)
     applymovement(LOCALID_TOPKOHLA, moves(face_up))
     waitmovement(0)
-    msgbox(format("KOHLA: Now come on Team Somber! Bring it on!"))
+    delay(8)
+    speakername("Kohla")
+    msgbox(format("Now come on Team Somber! Bring it on!"))
     release  
     fadeoutbgm(0)
 
@@ -304,7 +327,12 @@ script MtCeram_EventScript_BeforePeakBattle{
     waitse
     playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
     waitmoncry
-    msgbox(format("KOHLA: No! CHARCADET!\pGRUNT 1: Hahaha! Your ace was a pushover, ACE ROOKE!"))
+    speakername("Kohla")
+    msgbox(format("No! CHARCADET!"))
+    release
+    delay(8)
+    speakername("Grunt A")
+    msgbox(format("Hahaha! Your ace was a pushover, Ace Rookie!"))
     release  
     fadescreen(FADE_FROM_BLACK)
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
@@ -314,7 +342,8 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 
     //Kohla exit
-    msgbox(format("KOHLA: My Pokemon...I have to go and heal them...I couldn't stop Team Somber..."))
+    speakername("Kohla")
+    msgbox(format("My Pokemon...I have to go and heal them...I couldn't stop Team Somber..."))
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
@@ -324,10 +353,16 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("GRUNT 1: And you? You want a beating too?"))
+    speakername("Grunt A")
+    msgbox(format("And you? You want a beating too?"))
     applymovement(LOCALID_TOPGRUNT2, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("GRUNT 2: Hey, aren't you the trainer that beat Gabrielle?\pGRUNT 1: Yes you are! Let's see what you've got!"))
+    speakername("Grunt B")
+    msgbox(format("Hey, aren't you the trainer that beat Gabrielle?"))
+    release
+    delay(8)
+    speakername("Grunt A")
+    msgbox(format("Yes you are! But Gabrielle's just a loser. We're the real deal! Let's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -339,9 +374,17 @@ script MtCeram_EventScript_BeforePeakBattle{
 
 
     //grunts beaten, disappear
-    msgbox(format("GRUNT 1: How could you beat us?\pGRUNT 2: We-we've got to tell the boss...GRUNT 1: Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
+    speakername("Grunt A")
+    msgbox(format("GRUNT 1: How could you beat us?"))
+    release
+    delay(8)
+    speakername("Grunt B")
+    msgbox(format("We-we've got to tell the boss..."))
+    release
+    delay(8)
+    speakername("Grunt A")
+    msgbox(format("Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
     release   
-
 
     //Move on
     fadescreen(FADE_TO_BLACK)
@@ -466,13 +509,13 @@ script MtCeram_EventScript_NPCNurse{
     lockall
     faceplayer
 
-    msgbox(format("CHANSEY and I have been hiding from these thugs behind this tree...although CHANSEY's not able to hide herself too well."))
+    msgbox(format("Chansey and I have been hiding from these thugs behind this tree...although Chansey's not able to hide herself too well."))
     release
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL) 
     applymovement(24, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("Don't worry, CHANSEY! We're safe here. Meanwhile, if you have a HEAL PASS, I can heal your Pokemon!"))
+    msgbox(format("Don't worry, Chansey! We're safe here. Meanwhile, if you have a HEAL PASS, I can heal your Pokemon!"))
     call(Common_EventScript_NurseJoyOnRoute)
 
     releaseall
@@ -481,7 +524,8 @@ script MtCeram_EventScript_NPCNurse{
 
 script MtCeram_EventScript_Gabrielle{
     lockall
-    msgbox(format("GABRIELLE: Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\p..."))
+    speakername("Gabrielle")
+    msgbox(format("Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\p..."))
     release
     delay(30)
     applymovement(5, moves(emote_exclamation_mark))
@@ -489,7 +533,8 @@ script MtCeram_EventScript_Gabrielle{
     release    
     faceplayer
     delay(20)
-    msgbox(format("GABRIELLE: Don't look at me like that! You don't know what its like..."))
+    speakername("Gabrielle")
+    msgbox(format("Don't look at me like that! You don't know what its like..."))
     release
     applymovement(5, moves(face_left))
     waitmovement(0)

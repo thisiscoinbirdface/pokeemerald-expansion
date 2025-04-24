@@ -271,56 +271,60 @@ CeramBaseCampGym_LeaderBattle::
 	faceplayer
 # 190 "data//maps/CeramBaseCampGym/scripts.pory"
 	goto_if_set FLAG_BADGE02_GET, CeramBaseCampGym_LeaderBattle_2
-# 193 "data//maps/CeramBaseCampGym/scripts.pory"
-	special SaveGame
 # 194 "data//maps/CeramBaseCampGym/scripts.pory"
-	waitstate
+	special SaveGame
 # 195 "data//maps/CeramBaseCampGym/scripts.pory"
+	waitstate
+# 196 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
 # 197 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_Text_Intro
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 198 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_Text_Intro
+# 199 "data//maps/CeramBaseCampGym/scripts.pory"
 	trainerbattle_no_intro TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated
-# 201 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_1
 # 202 "data//maps/CeramBaseCampGym/scripts.pory"
-	release
+	msgbox CeramBaseCampGym_LeaderBattle_Text_2
 # 203 "data//maps/CeramBaseCampGym/scripts.pory"
+	release
+# 204 "data//maps/CeramBaseCampGym/scripts.pory"
 	setflag FLAG_BADGE02_GET
-# 206 "data//maps/CeramBaseCampGym/scripts.pory"
+# 207 "data//maps/CeramBaseCampGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 209 "data//maps/CeramBaseCampGym/scripts.pory"
-	speakername CeramBaseCampGym_LeaderBattle_Text_2
 # 210 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_3
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 211 "data//maps/CeramBaseCampGym/scripts.pory"
-	speakername CeramBaseCampGym_LeaderBattle_Text_2
+	msgbox CeramBaseCampGym_LeaderBattle_Text_3
 # 212 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 213 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_4
+# 214 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 215 "data//maps/CeramBaseCampGym/scripts.pory"
+# 216 "data//maps/CeramBaseCampGym/scripts.pory"
 	giveitem ITEM_RARE_SHARD, 2
-# 217 "data//maps/CeramBaseCampGym/scripts.pory"
-	speakername CeramBaseCampGym_LeaderBattle_Text_2
 # 218 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_5
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 219 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_5
+# 220 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
-# 222 "data//maps/CeramBaseCampGym/scripts.pory"
-	speakername CeramBaseCampGym_LeaderBattle_Text_2
 # 223 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_6
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 224 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_6
+# 225 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 CeramBaseCampGym_LeaderBattle_1:
-# 228 "data//maps/CeramBaseCampGym/scripts.pory"
+# 229 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
 	return
 
 CeramBaseCampGym_LeaderBattle_2:
 # 191 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_LeaderBattle_Text_0
+	speakername CeramBaseCampGym_LeaderBattle_Text_0
+# 192 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox CeramBaseCampGym_LeaderBattle_Text_1
 	goto CeramBaseCampGym_LeaderBattle_1
 
 
@@ -533,37 +537,37 @@ CeramBaseCampGym_EventScript_NPC_Signature_Text_7:
 
 CeramBaseCampGym_LeaderBattle_Text_0:
 # 191 "data//maps/CeramBaseCampGym/scripts.pory"
+	.string "Ariana$"
+
+CeramBaseCampGym_LeaderBattle_Text_1:
+# 192 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "That was a great battle. You've earned\n"
 	.string "my confidence. Go get 'em, {PLAYER}!$"
 
-CeramBaseCampGym_LeaderBattle_Text_1:
-# 201 "data//maps/CeramBaseCampGym/scripts.pory"
+CeramBaseCampGym_LeaderBattle_Text_2:
+# 202 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the Cinder Badge\n"
 	.string "from Ariana.$"
 
-CeramBaseCampGym_LeaderBattle_Text_2:
-# 209 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Ariana$"
-
 CeramBaseCampGym_LeaderBattle_Text_3:
-# 210 "data//maps/CeramBaseCampGym/scripts.pory"
+# 211 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The Cinder Badge increases the ATK of\n"
 	.string "all your Pokémon and lets you control\l"
 	.string "Pokémon upto lv. 20.$"
 
 CeramBaseCampGym_LeaderBattle_Text_4:
-# 212 "data//maps/CeramBaseCampGym/scripts.pory"
+# 213 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And I'd also like to give you this.$"
 
 CeramBaseCampGym_LeaderBattle_Text_5:
-# 218 "data//maps/CeramBaseCampGym/scripts.pory"
+# 219 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Since this is your second badge, you\n"
 	.string "must know what these shards do by now.\l"
 	.string "There's a shrine close to Route 4, so\l"
 	.string "why don't you use these there?$"
 
 CeramBaseCampGym_LeaderBattle_Text_6:
-# 223 "data//maps/CeramBaseCampGym/scripts.pory"
+# 224 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "And now it's time for you to set off on\n"
 	.string "your journey. I hope you manage to find\l"
 	.string "the dreamstone and Professor Tenebris.\l"
@@ -572,7 +576,7 @@ CeramBaseCampGym_LeaderBattle_Text_6:
 	.string "run into them!$"
 
 CeramBaseCampGym_Text_Intro::
-# 233 "data//maps/CeramBaseCampGym/scripts.pory"
+# 234 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Who's my next appointment? Ah! It's\n"
 	.string "you, {PLAYER}. A pleasant surprise.\l"
 	.string "I'm sick of all this work. This office is\l"
@@ -583,7 +587,7 @@ CeramBaseCampGym_Text_Intro::
 	.string "change!$"
 
 CeramBaseCampGym_Text_Defeated::
-# 237 "data//maps/CeramBaseCampGym/scripts.pory"
+# 238 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "What a match! What a display! I could\n"
 	.string "not be more pleased, {PLAYER}. The\l"
 	.string "way you stand, you might be able to\l"
