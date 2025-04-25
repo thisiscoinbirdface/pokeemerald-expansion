@@ -1367,3 +1367,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PellucaCityGym_B1F/scripts.inc"
 
 	.include "data/maps/IvyRiver_Sharpedo/scripts.inc"
+
+	.include "data/maps/Route3_Underpass_Extended/scripts.inc"

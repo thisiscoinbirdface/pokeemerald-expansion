@@ -5490,6 +5490,16 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/IvyRiver_Sharpedo/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_Sharpedo/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3_UNDERPASS_EXTENDED",
+      "name": "Route3_Underpass_Extended_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/Route3_Underpass_Extended/border.bin",
+      "blockdata_filepath": "data/layouts/Route3_Underpass_Extended/map.bin"
     }
   ]
 }

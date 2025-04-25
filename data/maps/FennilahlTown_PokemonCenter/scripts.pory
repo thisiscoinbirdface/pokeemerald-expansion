@@ -24,6 +24,16 @@ script FennilahlTown_PokemonCenter_NPC1{
 	end
 }
 
+script FennilahlTown_PokemonCenter_NPC2{
+	msgbox(format("You just got your first Pokémon too? Mine's a Rattata - we're gonna become Pokémon Champions one day!"), MSGBOX_NPC)		
+	end
+}
+
+script FennilahlTown_PokemonCenter_Rattata{
+	playmoncry(SPECIES_RATTATA, CRY_MODE_NORMAL)
+	msgbox(format("Rattata is raring to go!"), MSGBOX_NPC)		
+	end
+}
 
 
 

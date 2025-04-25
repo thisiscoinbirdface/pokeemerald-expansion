@@ -15,7 +15,19 @@ script CeramBaseCamp_PokemonCenter_EventScript_Nurse{
 }
 
 script CeramBaseCamp_PokemonCenter_NPC1{
+	msgbox(format("The selection of books here is great!"), MSGBOX_NPC)
+	end
+}
+
+script CeramBaseCamp_PokemonCenter_Pineco{
+	playmoncry(SPECIES_PINECO, CRY_MODE_NORMAL)
+	msgbox(format("Pineco is browsing the books."), MSGBOX_NPC)
+	end
+}
+
+script CeramBaseCamp_PokemonCenter_NPC2{
 	msgbox(format("Apparently you can't meet Ariana, the Gym Leader, without getting an appointment first."), MSGBOX_NPC)
 	end
 }
+
 
