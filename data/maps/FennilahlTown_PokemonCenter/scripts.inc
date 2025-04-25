@@ -38,6 +38,20 @@ FennilahlTown_PokemonCenter_NPC1_2:
 	goto FennilahlTown_PokemonCenter_NPC1_1
 
 
+FennilahlTown_PokemonCenter_NPC2::
+# 28 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	msgbox FennilahlTown_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
+FennilahlTown_PokemonCenter_Rattata::
+# 33 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	playmoncry SPECIES_RATTATA, CRY_MODE_NORMAL
+# 34 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	msgbox FennilahlTown_PokemonCenter_Rattata_Text_0, MSGBOX_NPC
+	end
+
+
 FennilahlTown_PokemonCenter_NPC1_Text_0:
 # 20 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "You're the one who stopped the\n"
@@ -48,3 +62,13 @@ FennilahlTown_PokemonCenter_NPC1_Text_1:
 	.string "We've had an increase in pickpocketing\n"
 	.string "recently. We suspect it's a nearby\l"
 	.string "Pokémon.$"
+
+FennilahlTown_PokemonCenter_NPC2_Text_0:
+# 28 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	.string "You just got your first Pokémon too?\n"
+	.string "Mine's a Rattata - we're gonna become\l"
+	.string "Pokémon Champions one day!$"
+
+FennilahlTown_PokemonCenter_Rattata_Text_0:
+# 34 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
+	.string "Rattata is raring to go!$"

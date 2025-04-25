@@ -15,6 +15,7 @@ mart GastreeCity_Pokemart_Inventory {
     ITEM_POTION
     ITEM_POKE_BALL
     ITEM_ANTIDOTE
+    ITEM_REVIVE
     ITEM_PARALYZE_HEAL
     ITEM_ENERGY_POWDER
     ITEM_REPEL

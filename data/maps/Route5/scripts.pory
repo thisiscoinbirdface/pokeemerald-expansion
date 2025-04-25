@@ -11,7 +11,7 @@ script Route5_NPC_A{
 script Route5_NPC_B{
     lockall
     faceplayer
-    msgbox(format("I saw a rough-looking fellow and a Professor run past me right now! What's going on?"))
+    msgbox(format("I saw a rough-looking fellow in a dark outfit run past me. What's going on?"))
     releaseall
     end
 }

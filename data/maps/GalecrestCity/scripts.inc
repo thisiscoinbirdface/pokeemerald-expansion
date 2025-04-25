@@ -661,18 +661,24 @@ GalecrestCity_NPC_20::
 	end
 
 
+GalecrestCity_NPC_21::
+# 509 "data//maps/GalecrestCity/scripts.pory"
+	msgbox GalecrestCity_NPC_21_Text_0, MSGBOX_NPC
+	end
+
+
 GalecrestCity_NPC_Ranger::
-# 510 "data//maps/GalecrestCity/scripts.pory"
+# 514 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Ranger_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_NPC_Red::
-# 516 "data//maps/GalecrestCity/scripts.pory"
+# 520 "data//maps/GalecrestCity/scripts.pory"
 	msgbox GalecrestCity_NPC_Red_Text_0, MSGBOX_NPC
-# 517 "data//maps/GalecrestCity/scripts.pory"
+# 521 "data//maps/GalecrestCity/scripts.pory"
 	applymovement 38, GalecrestCity_NPC_Red_Movement_0
-# 518 "data//maps/GalecrestCity/scripts.pory"
+# 522 "data//maps/GalecrestCity/scripts.pory"
 	waitmovement 0
 	end
 
@@ -813,9 +819,9 @@ GalecrestCity_NPC_14_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 517 "data//maps/GalecrestCity/scripts.pory"
+# 521 "data//maps/GalecrestCity/scripts.pory"
 GalecrestCity_NPC_Red_Movement_0:
-# 517 "data//maps/GalecrestCity/scripts.pory"
+# 521 "data//maps/GalecrestCity/scripts.pory"
 	face_down
 	step_end
 
@@ -1174,15 +1180,24 @@ GalecrestCity_NPC_20_Text_0:
 	.string "people are all the same - always looking\l"
 	.string "for handouts!$"
 
+GalecrestCity_NPC_21_Text_0:
+# 509 "data//maps/GalecrestCity/scripts.pory"
+	.string "There's a Dugtrio there that's been\n"
+	.string "digging into the ground. It threw up all\l"
+	.string "these rocks! Nobody from the city\l"
+	.string "office will do anything about it\l"
+	.string "because this neighborhood is low\l"
+	.string "priority.$"
+
 GalecrestCity_NPC_Ranger_Text_0:
-# 510 "data//maps/GalecrestCity/scripts.pory"
+# 514 "data//maps/GalecrestCity/scripts.pory"
 	.string "I'm a Pokémon Ranger. What am I doing?\n"
 	.string "Ranger duty of course! I'm cleaning up\l"
 	.string "the city. There's so much junk lying\l"
 	.string "around!$"
 
 GalecrestCity_NPC_Red_Text_0:
-# 516 "data//maps/GalecrestCity/scripts.pory"
+# 520 "data//maps/GalecrestCity/scripts.pory"
 	.string "The Gym Leader's not in right now. He\n"
 	.string "should be back soon. Check out the\l"
 	.string "Detective Academy in the meantime!$"

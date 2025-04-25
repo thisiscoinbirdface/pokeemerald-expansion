@@ -592,6 +592,23 @@ SomberHQ_Grunt_H::
 	end
 
 
+SomberHQ_SaveGameTrigger::
+# 427 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_SOMBERHQ_MAIN, SomberHQ_SaveGameTrigger_2
+# 431 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	special SaveGame
+# 432 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	waitstate
+# 433 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	release
+# 435 "data//maps/SilversunCity_SomberHQ/scripts.pory"
+	setvar VAR_TEMP_C, 1
+	end
+
+SomberHQ_SaveGameTrigger_2:
+	end
+
+
 # 20 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 SilversunCity_SomberHQ_EventScript_Main_Trigger0_Movement_0:
 # 20 "data//maps/SilversunCity_SomberHQ/scripts.pory"

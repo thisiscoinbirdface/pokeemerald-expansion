@@ -836,6 +836,7 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
     checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
     if (var(VAR_RESULT) == 0){
         msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
+        end
     }
 
     msgbox(format("Drifblim opens a map and gestures towards Silversun City. Fly there?"), MSGBOX_YESNO)
@@ -862,6 +863,7 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
     checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
     if (var(VAR_RESULT) == 0){
         msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
+        end
     }
 
     msgbox(format("Drifblim opens a map and gestures towards Pelluca City. Fly there?"), MSGBOX_YESNO)

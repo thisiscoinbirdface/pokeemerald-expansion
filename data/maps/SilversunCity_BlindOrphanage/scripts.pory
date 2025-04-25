@@ -391,9 +391,9 @@ script SilversunCity_BlindOrphanage_Reward{
     dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Wise Glasses", "Muscle Band")
 
     if (var(VAR_RESULT) == 0){
-        giveitem(ITEM_WISE_GLASSES)
+        goto(SilversunCity_BlindOrphanage_RewardA)
     } else{
-        giveitem(ITEM_MUSCLE_BAND)
+        goto(SilversunCity_BlindOrphanage_RewardB)
     }
 }
 script SilversunCity_BlindOrphanage_RewardA{
@@ -427,6 +427,8 @@ script SilversunCity_BlindOrphanage_RewardEnd{
     msgbox(format("Please visit us again!"), MSGBOX_NPC)
     end
 }
+
+
 
 
 

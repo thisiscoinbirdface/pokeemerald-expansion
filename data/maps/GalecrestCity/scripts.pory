@@ -505,6 +505,10 @@ script GalecrestCity_NPC_20{
     end
 }
 
+script GalecrestCity_NPC_21{
+    msgbox(format("There's a Dugtrio there that's been digging into the ground. It threw up all these rocks! Nobody from the city office will do anything about it because this neighborhood is low priority."), MSGBOX_NPC)
+    end
+}
 
 script GalecrestCity_NPC_Ranger{ 
     msgbox(format("I'm a Pokémon Ranger. What am I doing? Ranger duty of course! I'm cleaning up the city. There's so much junk lying around!"), MSGBOX_NPC)

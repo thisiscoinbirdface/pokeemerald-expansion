@@ -26,6 +26,15 @@ script VilethornWoods_NurseJoy_OnRoute{
 
 
 
+
+
+
+
+
+
+
+
+
 ///RALTS - teleports twice, third time you can encounter it
 //flags :FLAG_HIDE_VILETHORN_RALTS_1, _2, _3 
 script VilethornWoods_Ralts_FirstTrigger{

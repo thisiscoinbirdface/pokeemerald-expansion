@@ -30,8 +30,30 @@ CeramBaseCamp_PokemonCenter_NPC1::
 	end
 
 
+CeramBaseCamp_PokemonCenter_Pineco::
+# 23 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+	playmoncry SPECIES_PINECO, CRY_MODE_NORMAL
+# 24 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+	msgbox CeramBaseCamp_PokemonCenter_Pineco_Text_0, MSGBOX_NPC
+	end
+
+
+CeramBaseCamp_PokemonCenter_NPC2::
+# 29 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+	msgbox CeramBaseCamp_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
 CeramBaseCamp_PokemonCenter_NPC1_Text_0:
 # 18 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+	.string "The selection of books here is great!$"
+
+CeramBaseCamp_PokemonCenter_Pineco_Text_0:
+# 24 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
+	.string "Pineco is browsing the books.$"
+
+CeramBaseCamp_PokemonCenter_NPC2_Text_0:
+# 29 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
 	.string "Apparently you can't meet Ariana, the\n"
 	.string "Gym Leader, without getting an\l"
 	.string "appointment first.$"

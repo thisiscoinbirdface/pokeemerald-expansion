@@ -480,6 +480,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "SilversunCity_SomberHQ_EventScript_Main_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "MtCeram_Peak_SaveGameTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "SomberHQ_SaveGameTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "SomberHQ_SaveGameTrigger"
     }
   ],
   "bg_events": [

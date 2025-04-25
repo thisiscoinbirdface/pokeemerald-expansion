@@ -410,3 +410,34 @@ script SomberHQ_Grunt_H{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+script SomberHQ_SaveGameTrigger{
+    if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)){
+        end
+    }   
+
+    special(SaveGame)
+	waitstate
+    release
+
+    setvar(VAR_TEMP_C, 1)
+
+    end
+}
+
+
+
+
+

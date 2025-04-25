@@ -619,12 +619,12 @@ SilversunCity_BlindOrphanage_Reward::
 	compare VAR_RESULT, 0
 	goto_if_eq SilversunCity_BlindOrphanage_Reward_1
 # 396 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	giveitem ITEM_MUSCLE_BAND
+	goto SilversunCity_BlindOrphanage_RewardB
 	return
 
 SilversunCity_BlindOrphanage_Reward_1:
 # 394 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	giveitem ITEM_WISE_GLASSES
+	goto SilversunCity_BlindOrphanage_RewardA
 	return
 
 

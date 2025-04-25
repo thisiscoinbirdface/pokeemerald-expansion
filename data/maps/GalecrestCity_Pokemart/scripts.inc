@@ -28,35 +28,33 @@ GalecrestCity_Pokemart_Inventory:
 # 16 "data//maps/GalecrestCity_Pokemart/scripts.pory"
 	.2byte ITEM_SUPER_POTION
 # 17 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_POKE_BALL
-# 18 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_GREAT_BALL
-# 19 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_QUICK_BALL
-# 20 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_ANTIDOTE
-# 21 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
-# 22 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_BURN_HEAL
-# 23 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_REPEL
-# 24 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_SUPER_REPEL
-# 25 "data//maps/GalecrestCity_Pokemart/scripts.pory"
 	.2byte ITEM_REVIVE
-# 26 "data//maps/GalecrestCity_Pokemart/scripts.pory"
-	.2byte ITEM_ETHER
+# 18 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_POKE_BALL
+# 19 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_GREAT_BALL
+# 20 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_QUICK_BALL
+# 21 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_ANTIDOTE
+# 22 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_PARALYZE_HEAL
+# 23 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_BURN_HEAL
+# 24 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_REPEL
+# 25 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_NONE
 
 GalecrestCity_Pokemart_NPC::
-# 31 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+# 29 "data//maps/GalecrestCity_Pokemart/scripts.pory"
 	msgbox GalecrestCity_Pokemart_NPC_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_Pokemart_NPC_Text_0:
-# 31 "data//maps/GalecrestCity_Pokemart/scripts.pory"
+# 29 "data//maps/GalecrestCity_Pokemart/scripts.pory"
 	.string "Each town's Poké Mart has unique items\n"
 	.string "on sale. Goes to show that Cormoria's\l"
 	.string "economy isn't fully integrated.$"

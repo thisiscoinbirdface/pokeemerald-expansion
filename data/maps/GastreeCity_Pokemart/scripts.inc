@@ -30,19 +30,21 @@ GastreeCity_Pokemart_Inventory:
 # 17 "data//maps/GastreeCity_Pokemart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
 # 18 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_REVIVE
 # 19 "data//maps/GastreeCity_Pokemart/scripts.pory"
-	.2byte ITEM_ENERGY_POWDER
+	.2byte ITEM_PARALYZE_HEAL
 # 20 "data//maps/GastreeCity_Pokemart/scripts.pory"
+	.2byte ITEM_ENERGY_POWDER
+# 21 "data//maps/GastreeCity_Pokemart/scripts.pory"
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 
 GastreeCity_Pokemart_NPC::
-# 24 "data//maps/GastreeCity_Pokemart/scripts.pory"
+# 25 "data//maps/GastreeCity_Pokemart/scripts.pory"
 	msgbox GastreeCity_Pokemart_NPC_Text_0, MSGBOX_NPC
 	end
 
 
 GastreeCity_Pokemart_NPC_Text_0:
-# 24 "data//maps/GastreeCity_Pokemart/scripts.pory"
+# 25 "data//maps/GastreeCity_Pokemart/scripts.pory"
 	.string "Don't forget to sell your extra items!$"

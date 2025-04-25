@@ -578,29 +578,29 @@ WhiteSign_HoyaRiverNorth_Text_0:
 # 241 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River North Crossin\n"
 	.string "No swimming in these waters!\p"
-	.string "{RIGHT_ARROW}Silversun City.\n"
-	.string "{DOWN_ARROW}Route 6.$"
+	.string "{RIGHT_ARROW} Silversun City.\n"
+	.string "{DOWN_ARROW} Route 6.$"
 
 WhiteSign_HoyaRiverSouth_Text_0:
 # 246 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River South Crossing\n"
 	.string "No swimming in these waters!\p"
-	.string "{LEFT_ARROW}Pelluca City.\n"
-	.string "{RIGHT_ARROW}Route 6.$"
+	.string "{LEFT_ARROW} Pelluca City.\n"
+	.string "{RIGHT_ARROW} Route 6.$"
 
 WhiteSign_Route6_ToSilversun_Text_0:
 # 251 "data//scripts/customscripts_signs.pory"
 	.string "Route 6\n"
 	.string "Beware the marshes!\p"
-	.string "{UP_ARROW}Silversun City.\n"
-	.string "{DOWN_ARROW}Pelluca City.$"
+	.string "{UP_ARROW} Silversun City.\n"
+	.string "{DOWN_ARROW} Pelluca City.$"
 
 WhiteSign_Route6_ToPelluca_Text_0:
 # 256 "data//scripts/customscripts_signs.pory"
 	.string "Route 6\n"
 	.string "Beware the marshes!\p"
-	.string "{LEFT_ARROW}Pelluca City.\n"
-	.string "{RIGHT_ARROW}Silversun City.$"
+	.string "{LEFT_ARROW} Pelluca City.\n"
+	.string "{RIGHT_ARROW} Silversun City.$"
 
 WhiteSign_Route6_RangerInstitute_Text_0:
 # 261 "data//scripts/customscripts_signs.pory"

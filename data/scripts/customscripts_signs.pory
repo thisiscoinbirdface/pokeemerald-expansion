@@ -238,22 +238,22 @@ script WhiteSign_SilversunCity_Gym{
 
 //Route 6 Hoya River
 script WhiteSign_HoyaRiverNorth{
-    msgbox(format("Hoya River North Crossin\nNo swimming in these waters!\p{RIGHT_ARROW}Silversun City.\n{DOWN_ARROW}Route 6."), MSGBOX_SIGN)
+    msgbox(format("Hoya River North Crossin\nNo swimming in these waters!\p{RIGHT_ARROW} Silversun City.\n{DOWN_ARROW} Route 6."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_HoyaRiverSouth{
-    msgbox(format("Hoya River South Crossing\nNo swimming in these waters!\p{LEFT_ARROW}Pelluca City.\n{RIGHT_ARROW}Route 6."), MSGBOX_SIGN)
+    msgbox(format("Hoya River South Crossing\nNo swimming in these waters!\p{LEFT_ARROW} Pelluca City.\n{RIGHT_ARROW} Route 6."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_Route6_ToSilversun{
-    msgbox(format("Route 6\nBeware the marshes!\p{UP_ARROW}Silversun City.\n{DOWN_ARROW}Pelluca City."), MSGBOX_SIGN)
+    msgbox(format("Route 6\nBeware the marshes!\p{UP_ARROW} Silversun City.\n{DOWN_ARROW} Pelluca City."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_Route6_ToPelluca{
-    msgbox(format("Route 6\nBeware the marshes!\p{LEFT_ARROW}Pelluca City.\n{RIGHT_ARROW}Silversun City."), MSGBOX_SIGN)
+    msgbox(format("Route 6\nBeware the marshes!\p{LEFT_ARROW} Pelluca City.\n{RIGHT_ARROW} Silversun City."), MSGBOX_SIGN)
     end
 }
 

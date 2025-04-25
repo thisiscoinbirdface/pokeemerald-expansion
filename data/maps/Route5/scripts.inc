@@ -188,9 +188,8 @@ Route5_NPC_A_Text_0:
 
 Route5_NPC_B_Text_0:
 # 14 "data//maps/Route5/scripts.pory"
-	.string "I saw a rough-looking fellow and a\n"
-	.string "Professor run past me right now! What's\l"
-	.string "going on?$"
+	.string "I saw a rough-looking fellow in a dark\n"
+	.string "outfit run past me. What's going on?$"
 
 Route5_Greta_Main_Text_0:
 # 49 "data//maps/Route5/scripts.pory"
