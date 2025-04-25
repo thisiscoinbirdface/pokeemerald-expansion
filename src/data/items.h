@@ -12785,7 +12785,7 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Heal Passes"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Trade with Nurse Joy\n"
+            "Give to Nurse Joy\n"
             "on any route to heal\n"
             "your {PKMN}."),
         .importance = 1,

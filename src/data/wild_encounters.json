@@ -12032,63 +12032,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_LILEEP"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_LILEEP"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_LILEEP"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_TYRUNT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_TYRUNT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_TYRUNT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_LILEEP"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_SHIELDON"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 15,
+                "max_level": 16,
                 "species": "SPECIES_TYRUNT"
               }
             ]
@@ -12101,62 +12101,62 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_VENIPEDE"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_VENIPEDE"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_FLETCHLING"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_FLETCHLING"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_FLETCHLING"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_LARVESTA"
               },
               {
-                "min_level": 11,
+                "min_level": 12,
                 "max_level": 14,
                 "species": "SPECIES_LARVESTA"
               }

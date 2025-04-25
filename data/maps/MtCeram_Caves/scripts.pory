@@ -16,7 +16,8 @@ script MtCeram_Caves_Greta_Trigger0{
     waitmovement(0)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
     applymovement(LOCALID_VEN, moves(jump_in_place_left))
-    msgbox(format("???: HELP!"))
+    speakername("???")
+    msgbox(format("Help!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up * 2))
@@ -34,7 +35,8 @@ script MtCeram_Caves_Greta_Trigger1{
     waitmovement(0)
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
     applymovement(LOCALID_VEN, moves(jump_in_place_left))
-    msgbox(format("???: HELP!"))
+    speakername("???")
+    msgbox(format("Help!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up * 2))
@@ -54,7 +56,8 @@ script MtCeram_Caves_Greta_Trigger2{
     applymovement(LOCALID_SIZZ, moves(jump_in_place_right))
     applymovement(LOCALID_VEN, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("???: HELP!"))
+    speakername("???")
+    msgbox(format("Help!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up * 2))
@@ -67,7 +70,8 @@ script MtCeram_Caves_Greta_Trigger2{
 //	.macro setwildbattle species:req, level:req, item=ITEM_NONE, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE
 
 script MtCeram_Caves_Greta_Main{
-    msgbox(format("???: I'm trapped in between this SIZZLIPEDE and VENIPEDE who are fighting each other! I can't get free!"))
+    speakername("???")
+    msgbox(format("I'm trapped in between this Sizzlipede and Venipede who are fighting each other! I can't get free!"))
     release 
     delay(24)
     playmoncry(SPECIES_SIZZLIPEDE, CRY_MODE_ENCOUNTER)
@@ -76,7 +80,8 @@ script MtCeram_Caves_Greta_Main{
     applymovement(LOCALID_VEN, moves(face_down emote_exclamation_mark))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: Uh oh, they've noticed you..."))
+    speakername("???")
+    msgbox(format("Uh oh, they've noticed you..."))
     release
     applymovement(LOCALID_SIZZ, moves(walk_down face_right))
     applymovement(LOCALID_VEN, moves(walk_down face_left))
@@ -87,13 +92,18 @@ script MtCeram_Caves_Greta_Main{
 
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
-    msgbox(format("???: Thank you so much! I forgot my Pokémon at home and couldn't do anything! People at the Ceram Base Camp told me that the SIZZLIPEDE and VENIPEDE fight all the time...that's what I get for not taking them seriously!\pGRETA: My name's GRETA. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
+    speakername("???")
+    msgbox(format("Thank you so much! I forgot my Pokémon at home and couldn't do anything! People at the Ceram Base Camp told me that the Sizzlipede and Venipede fight all the time...that's what I get for not taking them seriously!"))
+    speakername("Greta")
+    msgbox(format("My name's Greta. I'm a traveling merchant. Are you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
     release
-    msgbox(format("GRETA: I have some leftover stock that you might like. These gems came all the way from Mt Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
+    delay(16)
+    speakername("Greta")
+    msgbox(format("I have some leftover stock that you might like. These gems came all the way from Mt Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
     release
     
     delay(24)
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "DARK GEM", "FIGHTING GEM", "PSYCHIC GEM")
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Dark Gem", "Fighting Gem", "Psychic Gem")
     if (var(VAR_RESULT) == 0){
         giveitem(ITEM_DARK_GEM)
     } 
@@ -109,8 +119,8 @@ script MtCeram_Caves_Greta_Main{
         }
     } 
 
-
-    msgbox(format("GRETA: I travel across all the routes and towns of Cormoria, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
+    speakername("Greta")
+    msgbox(format("I travel across all the routes and towns of Cormoria, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
     release
     setflag(FLAG_CERAM_CAVES_GRETA_MEETING)
 

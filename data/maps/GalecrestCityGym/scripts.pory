@@ -144,28 +144,33 @@ script GalecrestCityGym_Leader {
         release
         
         //Intro
+        speakername("Kohla")
         msgbox(GalecrestCityGym_Text_LeaderIntro)
         //Battle
         trainerbattle_no_intro(TRAINER_GALECRESTGYM_LEADER, GalecrestCityGym_Text_Defeated)
 
         //Post battle
         //Receive the badge
-        msgbox(format("KOHLA: This is yours, {PLAYER}."))
+        speakername("Kohla")
+        msgbox(format("This is yours, {PLAYER}."))
         release        
 
         //Play gym badge fanfare
         call(Common_EventScript_PlayGymBadgeFanfare)
-        setflag(FLAG_BADGE03_GET)        
+        setflag(FLAG_BADGE03_GET)   
+        speakername("Kohla")     
         msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("KOHLA: The Stoic Badge lets you use the HM move ROCK SMASH outside of battle.\p...\pKOHLA: And these are yours too."))
+        speakername("Kohla")
+        msgbox(format("The Stoic Badge lets you use the HM move ROCK SMASH outside of battle.\p...\pAnd these are yours too."))
         release
         giveitem(ITEM_RARE_SHARD, 2)
         delay(16)
         
         //Bye-bye
-        msgbox(format("KOHLA: {PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pKOHLA: Now enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
+        speakername("Kohla")
+        msgbox(format("{PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pNow enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
         release
         delay(16)
         
@@ -187,11 +192,11 @@ script GalecrestCityGym_Leader {
 
 
 text GalecrestCityGym_Text_LeaderIntro{
-    format("KOHLA: Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pKOHLA: And this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pKOHLA: I'm going to crush you with my REAL team!")
+    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pAnd this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pI'll crush you with my REAL team!")
 }
 
 text GalecrestCityGym_Text_Defeated{
-    format("KOHLA: Another defeat...despite evolving my Charcadet, I still couldn't win. I need more strength...")
+    format("Another defeat...despite evolving my Charcadet, I still couldn't win. I need more strength...")
 }
 
 

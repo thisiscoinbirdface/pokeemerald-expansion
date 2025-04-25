@@ -573,11 +573,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Sneasel-Hisui
-Level: 13
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Mankey
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_B ===
@@ -590,7 +590,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Cyndaquil
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -604,11 +604,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Fletchling
-Level: 12
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Sizzlipede
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -622,7 +622,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Mareep
-Level: 14
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wooloo
@@ -640,7 +640,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Woobat
-Level: 15
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_GRUNT2 ===
@@ -670,19 +670,19 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Drowzee
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Woobat
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Elgyem
-Level: 16
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Murkrow
-Level: 17
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMPEAK_MOXIE ===
@@ -693,23 +693,23 @@ Gender: Male
 Music: Cool
 Items: Super Potion
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Murkrow
-Level: 18
-IVs: 10 HP / 0 Atk / 0 Def / 6 SpA / 0 SpD / 0 Spe
+Level: 20
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Inkay
-Level: 18
-IVs: 10 HP / 0 Atk / 0 Def / 6 SpA / 0 SpD / 0 Spe
+Level: 20
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Slowpoke-Galar
-Level: 20
-IVs: 10 HP / 0 Atk / 4 Def / 0 SpA / 4 SpD / 0 Spe
+Level: 22
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Acid
 - Yawn
-- Confusion
+- Psychic
 - Water Pulse
 
 === TRAINER_GALECREST_ROBBER ===

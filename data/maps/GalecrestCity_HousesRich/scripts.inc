@@ -220,8 +220,8 @@ GalecrestCity_HousesRich_NPC2_Text_0:
 
 GalecrestCity_HousesRich_NPC3_Text_0:
 # 21 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "My parents only care about big bro.\n"
-	.string "They're always mean to me!$"
+	.string "My parents only care about my big\n"
+	.string "brother. They're always mean to me!$"
 
 GalecrestCity_HousesRich_NPC4_Text_0:
 # 27 "data//maps/GalecrestCity_HousesRich/scripts.pory"
@@ -291,8 +291,8 @@ GalecrestCity_HousesRich_NPC6_Text_0:
 GalecrestCity_HousesRich_NPC7_Text_0:
 # 102 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "I don't know where Mom and Dad are...I've\n"
-	.string "been sitting here waiting for dinner. We\l"
-	.string "never eat together.$"
+	.string "been sitting here waiting for dinner.\p"
+	.string "We never eat together.$"
 
 GalecrestCity_HousesRich_NPC8_Text_0:
 # 108 "data//maps/GalecrestCity_HousesRich/scripts.pory"

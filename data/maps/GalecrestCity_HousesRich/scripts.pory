@@ -18,7 +18,7 @@ script GalecrestCity_HousesRich_NPC2{
 
 
 script GalecrestCity_HousesRich_NPC3{
-    msgbox(format("My parents only care about big bro. They're always mean to me!"), MSGBOX_NPC)
+    msgbox(format("My parents only care about my big brother. They're always mean to me!"), MSGBOX_NPC)
     end
 }
 
@@ -99,7 +99,7 @@ script GalecrestCity_HousesRich_NPC6{
 
 
 script GalecrestCity_HousesRich_NPC7{
-    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner. We never eat together."), MSGBOX_NPC)
+    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner.\pWe never eat together."), MSGBOX_NPC)
     end
 }
 

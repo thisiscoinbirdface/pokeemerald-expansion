@@ -4383,7 +4383,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #define MINIOR_MISC_INFO(color)                                             \
         .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),                         \
         .catchRate = 30,                                                    \
-        .expYield = 154,                                                    \
+        .expYield = 104,                                                    \
         .evYield_Defense = 1,                                               \
         .evYield_SpDefense = 1,                                             \
         .itemRare = ITEM_STAR_PIECE,                                        \

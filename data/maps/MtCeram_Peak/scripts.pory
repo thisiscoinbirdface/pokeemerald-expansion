@@ -23,7 +23,8 @@ script MtCeram_Peak_SaveGameTrigger{
 script MtCeramPeak_MainEvent_Trigger{
     if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}
     lockall
-    msgbox(format("???: So you broke through my grunts. Come here then."))
+    speakername("???")
+    msgbox(format("So you broke through my grunts. Come here then."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 6))
@@ -34,12 +35,16 @@ script MtCeramPeak_MainEvent_Trigger{
     waitmovement(0)
     special(RemoveCameraObject)
 
-    msgbox(format("???: A dreamstone. This is the first time I've ever seen one."))
+    speakername("???")
+    msgbox(format("A dreamstone. This is the first time I've ever seen one."))
     release
 
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: Move. I want to see this trainers face."))
+    delay(20)
+
+    speakername("???")
+    msgbox(format("Move. I want to see this trainers face."))
     release    
 
 
@@ -49,7 +54,8 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(4, moves(walk_right face_left))    
     waitmovement(0)
 
-    msgbox(format("???: Now step up to me."))
+    speakername("???")
+    msgbox(format("Now step up to me."))
     release    
 
     //move player
@@ -59,31 +65,43 @@ script MtCeramPeak_MainEvent_Trigger{
     //Villain monologue
     //Explain tenebris research
     //Explain somber goals
-    msgbox(format("???: Why, young trainer, have you been a thorn in my organisations side? What's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
+    speakername("???")
+    msgbox(format("Why, young trainer, have you been a thorn in my organisations side? What's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokémon fall asleep, their past memories resurface. A dreamstone absorbs this."))
+    speakername("???")
+    msgbox(format("Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokémon fall asleep, their past memories resurface. A dreamstone absorbs this."))
     release
     delay(16)
-    msgbox(format("???: Fascinating stuff. This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
+    speakername("???")
+    msgbox(format("Fascinating stuff. This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)   
+    speakername("???")
     msgbox(format("And she discovered something incredible!"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
     delay(30)
-    msgbox(format("???: That stone behind me contains the memories of hundreds of generations of Pokémon - all the way back to prehistoric times!"))
+    speakername("???")
+    msgbox(format("That stone behind me contains the memories of hundreds of generations of Pokémon - all the way back to prehistoric times!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("???: Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokémon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
+    speakername("???")
+    msgbox(format("Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokémon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
-    msgbox(format("???: And if we get such power, there would be nothing stopping Team Somber from having absolute control! A noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!\pMOXIE: I, MOXIE, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
+    delay(16)
+    speakername("???")
+    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control! A noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
+    release
+    delay(16)
+    speakername("Moxie")
+    msgbox(format("I, Moxie, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
     release
 
     //Battle
@@ -94,19 +112,23 @@ script MtCeramPeak_MainEvent_Trigger{
     //Gabrielle, go get it.
     //She gets stuck
     //Everyone else runs
-    msgbox(format("MOXIE: Argh! Impossible! How could I have lost!"))
+    speakername("Moxie")
+    msgbox(format("Argh! Impossible! How could I have lost!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("MOXIE: Fine! Whatever! I don't have time to waste. We need the dreamstone and I will get this one no matter what!"))
+    speakername("Moxie")
+    msgbox(format("Fine! Whatever! I don't have time to waste. We need the dreamstone and I will get this one no matter what!"))
     release
     applymovement(LOCALID_BOSS, moves(face_left))
     waitmovement(0)
-    msgbox(format("MOXIE: Gabrielle! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
+    speakername("Moxie")
+    msgbox(format("Gabrielle! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
     release  
     applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("GABRIELLE: Y-yes boss!"))
+    speakername("Gabrielle")
+    msgbox(format("Y-yes boss!"))
     release  
     applymovement(LOCALID_GAB, moves(walk_up * 2 walk_right face_up))
     waitmovement(0)
@@ -117,11 +139,41 @@ script MtCeramPeak_MainEvent_Trigger{
     waitmovement(0)
     
     delay(16)
-    
-    msgbox(format("GABRIELLE: Ugh! It's not moving!\pMOXIE: You idiot! Put some backbone in it!\p...\pGABRIELLE: Boss?\pMOXIE: What?\pGABRIELLE: ...I'm stuck. I can't move...I'm stuck to the stone!"))
+    speakername("Gabrielle")
+    msgbox(format("Ugh! It's not moving!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_BOSS, moves(jump_in_place_up emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    speakername("Moxie")
+    msgbox(format("You idiot! Put some backbone in it!"))
+    release
+    delay(16)
+
+    speakername("Gabrielle")
+    msgbox(format("...Boss?"))
     release  
     delay(16)
-    msgbox(format("GABRIELLE: Boss...I feel sick. What's happening? Is this supposed to happen?\pMOXIE: You must've messed it up!"))
+
+    speakername("Moxie")
+    msgbox(format("What?"))
+    release
+    delay(16)
+
+    speakername("Gabrielle")
+    msgbox(format("...I'm stuck. I can't move...I'm stuck to the stone!"))
+    release  
+    delay(16)
+
+    speakername("Gabrielle")
+    msgbox(format("Boss...I feel sick. What's happening? Is this supposed to happen?"))
+    release  
+    delay(16)
+
+    speakername("Moxie")
+    msgbox(format("You must've messed it up!"))
     release     
 
 
@@ -143,8 +195,18 @@ script MtCeramPeak_MainEvent_Trigger{
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather
 
-    msgbox(format("MOXIE: Is that an earthquake? It'll trigger a volcanic eruption! Gabrielle, you - aaargh! You've released the dreamstone's energy somehow!\pGABRIELLE: I just did what you told me to do! I wanted to be useful!\pMOXIE: And now you've doomed us all!"))
+    speakername("Moxie")
+    msgbox(format("Is that an earthquake? It'll trigger a volcanic eruption! Gabrielle, you - aaargh! You've released the dreamstone's energy somehow!"))
+    release
+    delay(16)
+
+    speakername("Gabrielle")
+    msgbox(format("I just did what you told me to do!\nI wanted to be useful!"))
+    
+    speakername("Moxie")
+    msgbox(format("And now you've doomed us all!"))
     release  
+
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
 	setvar(VAR_0x8006, 12)  //num shakes
@@ -153,25 +215,31 @@ script MtCeramPeak_MainEvent_Trigger{
     waitstate
 	delay(30)
 
-    msgbox(format("MOXIE: This is bad...come on you two! Let's get out of here before this mountain erupts!"))
+    speakername("Moxie")
+    msgbox(format("This is bad...come on you two! Let's get out of here before this mountain erupts!"))
     release    
     applymovement(4, moves(walk_down * 6))    
     applymovement(5, moves(walk_down * 6))    
     waitmovement(0)
     applymovement(LOCALID_BOSS, moves(walk_right walk_down * 2 walk_left walk_down face_up))  
     waitmovement(0)
-    applymovement(LOCALID_GAB, moves(face_down))    
-    msgbox(format("GABRIELLE: Boss - what about me?"))
+    applymovement(LOCALID_GAB, moves(face_down))
+    speakername("Gabrielle")    
+    msgbox(format("Boss - what about me?"))
     release
-    msgbox(format("MOXIE: Take care Gabrielle. I wish you had done more with your life."))
+    delay(16)
+    speakername("Moxie")
+    msgbox(format("Take care Gabrielle. I wish you had done more with your life."))
     release
     applymovement(LOCALID_BOSS, moves(walk_down * 8))  
     waitmovement(0)
-    msgbox(format("GABRIELLE: He-he just left me..."))
+    speakername("Gabrielle")
+    msgbox(format("He-he just left me..."))
     release
 
     applymovement(LOCALID_GAB, moves(face_up emote_exclamation_mark))    
-    msgbox(format("GABRIELLE: I'm still stuck! H-hey, {PLAYER} - please, you have to help me."))
+    speakername("Gabrielle")
+    msgbox(format("I'm still stuck! H-hey, {PLAYER} - please, you have to help me."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))    
     waitmovement(0)
@@ -186,7 +254,8 @@ script MtCeramPeak_MainEvent_Trigger{
     fadescreen(FADE_TO_BLACK)
     fadescreen(FADE_FROM_BLACK)
 
-    msgbox(format("GABRIELLE: W-what's happening?"))
+    speakername("Gabrielle")
+    msgbox(format("W-what's happening?"))
     release
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan
@@ -198,7 +267,9 @@ script MtCeramPeak_MainEvent_Trigger{
     
     fadescreen(FADE_TO_BLACK)
     fadescreen(FADE_FROM_BLACK)
-    msgbox(format("GABRIELLE: Ahhh!!!"))   
+
+    speakername("Gabrielle")
+    msgbox(format("Ahhh!!!"))   
     release
 	setvar(VAR_0x8004, 2)  //vertical pan
 	setvar(VAR_0x8005, 2)  //horizontal pan

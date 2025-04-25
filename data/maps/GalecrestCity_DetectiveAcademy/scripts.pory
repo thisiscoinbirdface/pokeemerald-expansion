@@ -12,13 +12,15 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
     //Kohla stares blankly
     //Explains his past and motivations
-    msgbox(format("...\p...\p...\pKOHLA: I saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
+    speakername("Kohla")
+    msgbox(format("...\p...\p...\pI saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
     release
     //Turns, thanks player for telling him what he needs
     faceplayer
     waitmovement(0)
     delay(24)
-    msgbox(format("KOHLA: {PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
+    speakername("Kohla")
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
     release 
 
     //Start walking out
@@ -26,7 +28,8 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
-    msgbox(format("KOHLA: Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
+    speakername("Kohla")
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))
@@ -41,7 +44,8 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 
 //BREECH
 script GalecrestCity_DetectiveAcademy_Breech{
-    msgbox(format("BREECH: It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokémon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pBREECH: Not that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
+    speakername("Breech")
+    msgbox(format("It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokémon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pNot that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
     applymovement(13, moves(face_left))
     end
 }
@@ -58,9 +62,14 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
         applymovement(17, moves(emote_exclamation_mark))
         faceplayer
         waitmovement(0)
+        delay(16)
+        speakername("Clefairy")
+        msgbox(format("Clee---!!!"))
+        release
+        delay(16)
         msgbox(format("Clefairy hands you an item..."))
         giveitem(ITEM_FOCUS_BAND)
-        msgbox(format("This must be the secret of  Clefairy 's focus! Better not disturb her any further...thank you Clefairy!"))
+        msgbox(format("This must be the secret of Clefairy 's focus! Better not disturb her any further...thank you Clefairy!"))
         release
         applymovement(17, moves(face_left))
         waitmovement(0)

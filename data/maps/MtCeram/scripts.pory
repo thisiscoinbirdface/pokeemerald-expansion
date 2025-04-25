@@ -45,7 +45,7 @@ script MtCeram_Charizard{
             waitmovement(0)
             delay(16)
             playmoncry(SPECIES_CHARIZARD, CRY_MODE_ENCOUNTER)
-            msgbox(format("The CHARIZARD is furious!"))
+            msgbox(format("The Charizard is furious!"))
             setwildbattle(SPECIES_CHARIZARD, 48)     
             dowildbattle  
 
@@ -60,7 +60,7 @@ script MtCeram_Charizard{
                 setflag(FLAG_CERAM_CHARIZARD)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
-                msgbox(format("The CHARIZARD grunts and falls back asleep. Better not disturb it again!"))
+                msgbox(format("The Charizard grunts and falls back asleep. Better not disturb it again!"))
                 release
             }
         } else {
@@ -169,7 +169,7 @@ script MtCeram_EventScript_Eavesdrop{
     //Somber dialogue  
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     waitmovement(0)
-    delay(30)
+    delay(16)
     speakername("Grunt A")
     msgbox(format("...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
@@ -178,7 +178,7 @@ script MtCeram_EventScript_Eavesdrop{
     msgbox(format("But where's the boss? And Gabrielle?"))
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     speakername("Grunt A")
-    msgbox(format("The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...well, after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
+    msgbox(format("The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
     release
     delay(16)
     applymovement(LOCALID_FOOTGRUNT2, moves(jump_in_place_left))
@@ -187,6 +187,9 @@ script MtCeram_EventScript_Eavesdrop{
     msgbox(format("Serves her right for losing! Team Somber doesn't need any losers!"))
     release
     delay(8)
+    applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
     speakername("Grunt A")
     msgbox(format("Yeah what a loser she is!\pNow lets go stand guard. We can't let anyone pass until the boss gets the dreamstone at the peak!"))
     release
@@ -207,8 +210,10 @@ script MtCeram_EventScript_Eavesdrop{
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_left))
+    waitmovement(0)
+    delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone. I don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -355,6 +360,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     waitmovement(0)
     speakername("Grunt A")
     msgbox(format("And you? You want a beating too?"))
+    release
     applymovement(LOCALID_TOPGRUNT2, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)    
     speakername("Grunt B")
@@ -362,7 +368,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Yes you are! But Gabrielle's just a loser. We're the real deal! Let's see what you've got!"))
+    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pWe're the real deal! Let's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -375,7 +381,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //grunts beaten, disappear
     speakername("Grunt A")
-    msgbox(format("GRUNT 1: How could you beat us?"))
+    msgbox(format("How could you beat us?"))
     release
     delay(8)
     speakername("Grunt B")
@@ -383,7 +389,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Yeah...c'mon let's hurry. {PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
+    msgbox(format("Yeah...c'mon let's hurry.\p{PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
     release   
 
     //Move on
