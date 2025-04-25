@@ -712,30 +712,34 @@ MtCeram_EventScript_Gabrielle::
 # 526 "data//maps/MtCeram/scripts.pory"
 	lockall
 # 527 "data//maps/MtCeram/scripts.pory"
-	msgbox MtCeram_EventScript_Gabrielle_Text_0
+	speakername MtCeram_EventScript_Gabrielle_Text_0
 # 528 "data//maps/MtCeram/scripts.pory"
-	release
-# 529 "data//maps/MtCeram/scripts.pory"
-	delay 30
-# 530 "data//maps/MtCeram/scripts.pory"
-	applymovement 5, MtCeram_Charizard_Movement_0
-# 531 "data//maps/MtCeram/scripts.pory"
-	waitmovement 0
-# 532 "data//maps/MtCeram/scripts.pory"
-	release
-# 533 "data//maps/MtCeram/scripts.pory"
-	faceplayer
-# 534 "data//maps/MtCeram/scripts.pory"
-	delay 20
-# 535 "data//maps/MtCeram/scripts.pory"
 	msgbox MtCeram_EventScript_Gabrielle_Text_1
-# 536 "data//maps/MtCeram/scripts.pory"
+# 529 "data//maps/MtCeram/scripts.pory"
 	release
-# 537 "data//maps/MtCeram/scripts.pory"
-	applymovement 5, MtCeram_EventScript_Gabrielle_Movement_0
-# 538 "data//maps/MtCeram/scripts.pory"
+# 530 "data//maps/MtCeram/scripts.pory"
+	delay 30
+# 531 "data//maps/MtCeram/scripts.pory"
+	applymovement 5, MtCeram_Charizard_Movement_0
+# 532 "data//maps/MtCeram/scripts.pory"
 	waitmovement 0
+# 533 "data//maps/MtCeram/scripts.pory"
+	release
+# 534 "data//maps/MtCeram/scripts.pory"
+	faceplayer
+# 535 "data//maps/MtCeram/scripts.pory"
+	delay 20
+# 536 "data//maps/MtCeram/scripts.pory"
+	speakername MtCeram_EventScript_Gabrielle_Text_0
+# 537 "data//maps/MtCeram/scripts.pory"
+	msgbox MtCeram_EventScript_Gabrielle_Text_2
+# 538 "data//maps/MtCeram/scripts.pory"
+	release
 # 539 "data//maps/MtCeram/scripts.pory"
+	applymovement 5, MtCeram_EventScript_Gabrielle_Movement_0
+# 540 "data//maps/MtCeram/scripts.pory"
+	waitmovement 0
+# 541 "data//maps/MtCeram/scripts.pory"
 	releaseall
 	return
 
@@ -1048,9 +1052,9 @@ MtCeram_EventScript_NPCNurse_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 537 "data//maps/MtCeram/scripts.pory"
+# 539 "data//maps/MtCeram/scripts.pory"
 MtCeram_EventScript_Gabrielle_Movement_0:
-# 537 "data//maps/MtCeram/scripts.pory"
+# 539 "data//maps/MtCeram/scripts.pory"
 	face_left
 	step_end
 
@@ -1338,27 +1342,31 @@ MtCeram_EventScript_NPC3_Text_1:
 
 MtCeram_EventScript_NPCNurse_Text_0:
 # 512 "data//maps/MtCeram/scripts.pory"
-	.string "CHANSEY and I have been hiding from\n"
+	.string "Chansey and I have been hiding from\n"
 	.string "these thugs behind this tree...although\l"
-	.string "CHANSEY's not able to hide herself too\l"
+	.string "Chansey's not able to hide herself too\l"
 	.string "well.$"
 
 MtCeram_EventScript_NPCNurse_Text_1:
 # 518 "data//maps/MtCeram/scripts.pory"
-	.string "Don't worry, CHANSEY! We're safe here.\n"
+	.string "Don't worry, Chansey! We're safe here.\n"
 	.string "Meanwhile, if you have a HEAL PASS, I\l"
 	.string "can heal your Pokemon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 527 "data//maps/MtCeram/scripts.pory"
-	.string "GABRIELLE: Why do I have to be\n"
-	.string "punished every time? I'm trying my\l"
-	.string "best! I don't want to steal other\l"
-	.string "people's stuff but I'm still doing it for\l"
-	.string "the team. It's not fair!\p"
-	.string "...$"
+	.string "Gabrielle$"
 
 MtCeram_EventScript_Gabrielle_Text_1:
-# 535 "data//maps/MtCeram/scripts.pory"
-	.string "GABRIELLE: Don't look at me like that!\n"
-	.string "You don't know what its like...$"
+# 528 "data//maps/MtCeram/scripts.pory"
+	.string "Why do I have to be punished every\n"
+	.string "time? I'm trying my best! I don't want\l"
+	.string "to steal other people's stuff but I'm\l"
+	.string "still doing it for the team. It's not\l"
+	.string "fair!\p"
+	.string "...$"
+
+MtCeram_EventScript_Gabrielle_Text_2:
+# 537 "data//maps/MtCeram/scripts.pory"
+	.string "Don't look at me like that! You don't\n"
+	.string "know what its like...$"
