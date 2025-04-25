@@ -357,8 +357,8 @@ GalecrestCityGym_Leader_Text_2:
 
 GalecrestCityGym_Leader_Text_3:
 # 162 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "{PLAYER} received the STOIC BADGE\n"
-	.string "from KOHLA.$"
+	.string "{PLAYER} received the Stoic Badge\n"
+	.string "from Kohla.$"
 
 GalecrestCityGym_Leader_Text_4:
 # 166 "data//maps/GalecrestCityGym/scripts.pory"

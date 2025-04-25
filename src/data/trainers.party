@@ -1349,7 +1349,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Punch
 
 === TRAINER_SOMBERHQ_A ===
-Name: GEORGE
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1362,7 +1362,7 @@ Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_B ===
-Name: BERKE
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1380,7 +1380,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_SOMBERHQ_C ===
-Name: BRAXTON
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1399,7 +1399,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_SOMBERHQ_D ===
-Name: VINCENT
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1420,7 +1420,7 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_E ===
-Name: LEROY
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1437,7 +1437,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_F ===
-Name: WILTON
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1454,7 +1454,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_G ===
-Name: EDGAR
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1473,7 +1473,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_SOMBERHQ_H ===
-Name: ALBERT
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1500,15 +1500,15 @@ AI: Check Bad Move
 Mugshot: Purple
 
 Slowpoke
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Elgyem
-Level: 28
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Jynx
-Level: 28
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_KOHLA ===
@@ -1522,23 +1522,23 @@ Double Battle: No
 AI: Check Bad Move / Ace Pokemon
 
 Boltund
-Level: 23
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Kirlia
-Level: 26
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Axew
-Level: 26
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewott
-Level: 27
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ceruledge @ Fire Gem
-Level: 29
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 

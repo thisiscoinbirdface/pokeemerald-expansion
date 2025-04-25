@@ -14,13 +14,13 @@ script SilversunCity_Sewers_NPC6{
     if (var(VAR_SEWERS_DUSKULL) == 0){
         lockall
         faceplayer
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the Sewer Scourge gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
         releaseall
     }
 
-    msgbox(format("Please hurry. I don't want her to be attacked by the SEWER SCOURGE!"), MSGBOX_NPC)
+    msgbox(format("Please hurry. I don't want her to be attacked by the Sewer Scourge!"), MSGBOX_NPC)
     end
 }
 
@@ -32,7 +32,7 @@ script SilversunCity_Sewers_ManLostWife_Trigger0{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the Sewer Scourge gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
 
@@ -48,7 +48,7 @@ script SilversunCity_Sewers_ManLostWife_Trigger1{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the SEWER SCOURGE gets her? Please help me find her!"))
+        msgbox(format("Hey - are you a trainer? Look, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her at all!\pI'm really worried. What if the Sewer Scourge gets her? Please help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
         releaseall
@@ -140,8 +140,7 @@ if (flag(FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE)){
         applymovement(9, moves(face_right))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
-
-        msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the SEWER SCOURGE. It was so scary!"))
+        msgbox(format("You're okay! I'm so glad you aren't hurt.\pThis trainer here saved me. I felt something weird attacking me, honey! I think it might've been the Sewer Scourge. It was so scary!"))
         release
         applymovement(9, moves(face_down))
         applymovement(1, moves(face_down))
@@ -387,7 +386,7 @@ script SilversunCity_Sewers_Market_Muk{
     checkitem(ITEM_BOTTLE_CAP)
     if (var(VAR_RESULT) == 1){
 
-        msgbox(format("Give Muk a Bottle Caps"), MSGBOX_YESNO)
+        msgbox(format("Give Muk a Bottle Cap?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
 
             msgbox(format("{PLAYER} handed a Bottle Cap to Muk.\pMuk chomps down on it with joy!\p...\pIt spits out something onto the floor."))

@@ -17,7 +17,7 @@ script VilethornWoods_EventScript_NurseDemo{
 script VilethornWoods_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("These woods are so creepy! I'm so glad CHANSEY is here with me."))
+    msgbox(format("These woods are so creepy! I'm so glad Chansey is here with me."))
     call(Common_EventScript_NurseJoyOnRoute)
     delay(30)
     releaseall
@@ -48,7 +48,7 @@ script VilethornWoods_Ralts_FirstTrigger{
 
 
     //Final msg
-    msgbox(format("RALTS teleported away! It can't have gone far..."))
+    msgbox(format("Ralts teleported away!\nIt can't have gone far..."))
     release
 
     releaseall
@@ -75,7 +75,7 @@ script VilethornWoods_Ralts_SecondTrigger{
 
 
     //Final msg
-    msgbox(format("RALTS teleported away again! It must be somewhere in this accursed forest..."))
+    msgbox(format("Ralts teleported away again! It must be somewhere in this accursed forest..."))
     release
 
     releaseall
@@ -91,7 +91,7 @@ script VilethornWoods_Ralts{
     faceplayer
     waitmovement(0)
     delay(16)
-    msgbox(format("Aha! RALTS can't escape this time!"))
+    msgbox(format("Aha! Ralts can't escape this time!"))
     release
 
     setwildbattle(SPECIES_RALTS, 18)
@@ -136,7 +136,17 @@ script VilethornWoods_EventScript_TriggerProf{
     applymovement(LOCALID_GRUNT, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: ...yes boss. We've picked up the Professor.\p...\pGRUNT: No, nobody saw us, boss.\p...\pGRUNT: Yes boss, I'm positive.\p...\pGRUNT: ...okay, we'll head back to HQ right away."))
+    speakername("Grunt")
+    msgbox(format("...yes boss. We've picked up the Professor."))
+    msgbox(format("..."))
+    speakername("Grunt")
+    msgbox(format("No, nobody saw us, boss."))
+    msgbox(format("..."))
+    speakername("Grunt")
+    msgbox(format("Yes boss, I'm positive."))
+    msgbox(format("..."))
+    speakername("Grunt")
+    msgbox(format("...okay, we'll head back to HQ right away."))
     release
 
     //get out
@@ -153,7 +163,8 @@ script VilethornWoods_EventScript_TriggerProf{
     applymovement(LOCALID_GRUNT, moves(face_right))
     waitmovement(0)
     delay(36)
-    msgbox(format("GRUNT: Must be a wild Impidimp or something..."))
+    speakername("Grunt")    
+    msgbox(format("Must be a wild Impidimp or something..."))
     release
     applymovement(LOCALID_GRUNT, moves(walk_up *6))
     waitmovement(0)
@@ -254,22 +265,27 @@ script VilethornWoods_NPC2{
     faceplayer
 
     if (flag(FLAG_VILETHORN_NPC_MUSHROOMS)){
+        speakername("Chef")
         msgbox(format("These mushrooms are really rare, you know?"))
     } else {
-        msgbox(format("Oh, it's you again! Fancy seeing you here. I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find TINY MUSHROOMs! Say, why don't you help me? If you can get me a BIG MUSHROOM, I'll find something to give you in exchange!\pHave you got a BIG MUSHROOM?"), MSGBOX_YESNO)
+        speakername("Chef")
+        msgbox(format("Oh, it's you again! Fancy seeing you here. I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find Tiny Mushrooms! Say, why don't you help me? If you can get me a Big Mushroom, I'll find something to give you in exchange!\pHave you got a Big Mushroom?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             //check
             if (checkitem(ITEM_BIG_MUSHROOM)){
                 removeitem(ITEM_BIG_MUSHROOM)
+                speakername("Chef")
                 msgbox(format("Perfect! This'll be a great addition to our pantry. Thank you! Now I must give you something in exchage."))
                 
                 goto(VilethornWoods_Cook_Reward)
 
             } else {
-                msgbox(format("Hey, you don't have any! Are you trying to trick me? The DROWZEE and MORELULL doing enough of that!"))
+                speakername("Chef")
+                msgbox(format("Hey, you don't have any! Are you trying to trick me? The Drowzee and Morelull doing enough of that!"))
             }
         } else {
+            speakername("Chef")
             msgbox(format("Come back when you do!"))
         }
     }

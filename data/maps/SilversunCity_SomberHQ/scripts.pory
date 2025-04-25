@@ -38,9 +38,18 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(jump_in_place_left))
     waitmovement(0)
     delay(24)
-    msgbox(format("???: Ahh...beautiful. We have much to thank you for, Asst. Prof. Rue.\p???: Your Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone.\pRUE: You mean the one on Mt. Mirroh?\p???: Precisely."))
-    release
+    speakername("???")
+    msgbox(format("Ahh...beautiful. We have much to thank you for, Asst. Prof. Rue.\pYour Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone."))
     
+    speakername("Rue")
+    msgbox(format("You mean the one on Mt. Mirroh?"))
+    
+    speakername("???")
+    msgbox(format("Precisely."))
+    release
+
+    delay(16)
+
     //Everyone turn around and exclamation mark
     applymovement(LOCALID_PROF, moves(face_left, emote_exclamation_mark))
     applymovement(LOCALID_GAB, moves(face_left, emote_exclamation_mark))
@@ -53,7 +62,8 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(jump_in_place_left))
     waitmovement(0)
     delay(24)    
-    msgbox(format("???: Come here child. Let me see your face."))
+    speakername("???")
+    msgbox(format("Come here child. Let me see your face."))
     release
     delay(30)
     //Small shake
@@ -62,7 +72,8 @@ script SilversunCity_SomberHQ_EventScript_Main{
 	setvar(VAR_0x8006, 8)  //num shakes
 	setvar(VAR_0x8007, 5)  //shake delay        
     special(ShakeCamera)
-    msgbox(format("???: I said COME!!"))
+    speakername("???")
+    msgbox(format("I said COME!!"))
     release
 
     //Move to Melea
@@ -75,7 +86,10 @@ script SilversunCity_SomberHQ_EventScript_Main{
     delay(24)
 
     //Prof gets introduced
-    msgbox(format("???: So you're the one who defeated Moxie at Mt. Ceram. So young...you must've gotten really lucky.\p???: Meet your Asst. Prof. Rue. He's been of immense help to us...albeit unwillingly.\pRUE: {PLAYER}, I'm sorry. Th-they got to me."))
+    speakername("???")
+    msgbox(format("So you're the one who defeated Moxie at Mt. Ceram. So young...you must've gotten really lucky.\pMeet your Asst. Prof. Rue. He's been of immense help to us...albeit unwillingly."))
+    speakername("Rue")
+    msgbox(format("{PLAYER}, I'm sorry. Th-they got to me."))
     release
     delay(36)
 
@@ -92,47 +106,84 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
     delay(36)
-    msgbox(format("???: How did you get inside our headquarters, I wonder..."))
+    speakername("???")
+    msgbox(format("How did you get inside our headquarters, I wonder..."))
     release
     applymovement(LOCALID_GRUNT, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("GRUNT: Boss! Boss! Gabrielle was on guard duty.\p???: So it was you, Gabrielle? Hmm...what a blunder. Moxie was right. You really are useless."))
+    delay(16)
+    speakername("Grunt")
+    msgbox(format("Boss! Boss! Gabrielle was on guard duty."))
+    release 
+    delay(16)
+
+    applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+
+    speakername("???")
+    msgbox(format("So it was you, Gabrielle? Hmm...what a blunder. Moxie was right. You really are useless."))
     release
+    delay(16)
+
     applymovement(LOCALID_MELEA, moves(walk_left walk_up face_left))
     waitmovement(0)
     delay(16)
     applymovement(LOCALID_GAB, moves(face_right emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GABRIELLE: Miss Melea, I-I'm sorry. I owed {PLAYER} and I didn't-"))
+    speakername("Gabrielle")
+    msgbox(format("Miss Melea, I-I'm sorry. I owed {PLAYER} and I didn't-"))
     release
     delay(16)
     applymovement(LOCALID_MELEA, moves(jump_in_place_left emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("MELEA: Y-you OWED {PLAYER}? You mean that it was INTENTIONAL!? And don't use my name in public, you moron!\pGABRIELLE: Y-yes, I'm so sorry. I just - "))
-    
-    applymovement(LOCALID_MELEA, moves(jump_in_place_left emote_exclamation_mark))
+    speakername("Melea")
+    msgbox(format("Y-you OWED {PLAYER}? You mean that it was INTENTIONAL!? And don't use my name in public, you moron!"))
+    speakername("Gabrielle")
+    msgbox(format("Y-yes, I'm so sorry. I just - "))
+    release
+    delay(8)
+    applymovement(LOCALID_MELEA, moves(emote_exclamation_mark jump_in_place_left * 2))
     waitmovement(0)
     delay(16)    
-    msgbox(format("MELEA: You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of Team Somber! And I'm going to have a squad chase you all over Cormoria!"))
+    speakername("Melea")
+    msgbox(format("You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of Team Somber! And I'm going to have a squad chase you all over Cormoria!"))
     release
+    delay(16)
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GABRIELLE: No boss, please! I really need this work!\pMELEA: Should've thought of that before betraying us then! Now GET OUT!\pGABRIELLE:..."))
+    speakername("Gabrielle")
+    msgbox(format("No boss, please! I really need this work!"))
     release
+    delay(16)
+
+    applymovement(LOCALID_MELEA, moves(jump_in_place_left))
+    waitmovement(0)    
+    delay(16)    
+    speakername("Melea")
+    msgbox(format("Should've thought of that before betraying us then! Now GET OUT!"))
+    
+    delay(16)
+    speakername("Gabrielle")
+    msgbox(format("..."))
+    release
+    delay(8)
     applymovement(LOCALID_GAB, moves(walk_faster_left walk_faster_down walk_faster_left *5))
     waitmovement(0)
     removeobject(LOCALID_GAB)
 
     //Melea explains the plan
         //next dreamstone in mt mirroh
-    msgbox(format("MELEA: An absolutely pathetic character. I would deal with her myself...if not for you, {PLAYER}."))
+    speakername("Melea")
+    msgbox(format("An absolutely pathetic character. I would deal with her myself...if not for you, {PLAYER}."))
     release
     applymovement(LOCALID_MELEA, moves(walk_down face_left))
     waitmovement(0)    
-    msgbox(format("MELEA: So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest? Well you'll never see any of it, because I'm going to put an end to you - right here, right now!"))    
+    speakername("Melea")
+    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest? Well you'll never see any of it, because I'm going to put an end to you - right here, right now!"))    
 
     //Battle
     trainerbattle_no_intro(TRAINER_SOMBERHQ_MELEA, format("You stupid child!"))
@@ -143,13 +194,15 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
     //Never mind
     //We've got what we need
-    msgbox(format("MELEA: Unbelievable! Just unbelievable!\pMELEA: Fine. You can have your Asst. Prof. Rue back, child! We've got what we need from him anyway. Let's go!"))
+    speakername("Melea")
+    msgbox(format("Unbelievable! Just unbelievable!\pFine. You can have your Asst. Prof. Rue back, child! We've got what we need from him anyway. Let's go!"))
     release
     applymovement(LOCALID_GRUNT, moves(face_left walk_left * 4))
     applymovement(LOCALID_MELEA, moves(walk_up walk_left *2 walk_down walk_left *2 face_right))
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    msgbox(format("MELEA: Heed this warning, {PLAYER}. Do NOT try to thwart us at Mt. Mirroh, or else we will crush you!"))
+    speakername("Melea")
+    msgbox(format("Heed this warning, {PLAYER}. Do NOT try to thwart us at Mt. Mirroh, or else we will crush you!"))
     release
     applymovement(LOCALID_MELEA, moves(face_right))
     applymovement(LOCALID_GRUNT, moves(walk_left *2 walk_up))
@@ -163,7 +216,8 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(LOCALID_PROF, moves(walk_left walk_down face_left))
     waitmovement(0)
-    msgbox(format("Rue: You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\pRUE: There are detectives outside? Let's go and meet them."))
+    speakername("Rue")
+    msgbox(format("You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\pThere are detectives outside? Let's go and meet them."))
     release
 
     clearflag(FLAG_HIDE_SILVERSUN_PROF)
@@ -206,7 +260,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
 script SomberHQ_EventScript_NPCNurse{
     lockall
-    msgbox(format("NURSE JOY: Chansey and I were posted in the Silversun Theater but got lost! Now we're surrounded by criminals and we don't know how to get out. So we've been hiding here."))
+    msgbox(format("Chansey and I were posted in the Silversun Theater but got lost! Now we're surrounded by criminals and we don't know how to get out. So we've been hiding here."))
     release
     goto(Common_EventScript_NurseJoyOnRoute)
     releaseall

@@ -46,9 +46,11 @@ script Route5_Greta_Trigger1{
 
 
 script Route5_Greta_Main{
-    msgbox(format("GRETA: It's you! The wandering saviour from Mt. Ceram. How wonderful! A new customer."))
+    speakername("Greta")
+    msgbox(format("It's you! The wandering saviour from Mt. Ceram. How wonderful! A new customer."))
     release
     delay(20)
+    speakername("Greta")
     msgbox(Common_Text_Greta_Comecome)
     release
     delay(20)
@@ -62,7 +64,8 @@ script Route5_Greta_GottaGo{
     release
     applymovement(7, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("GRETA: Would you look at the time! I've gotta run. See you around!"))
+    speakername("Greta")
+    msgbox(format("Would you look at the time! I've gotta run. See you around!"))
     release
     applymovement(7, moves(walk_left * 8))
     waitmovement(0)

@@ -496,6 +496,7 @@ text Common_Text_Greta_Comecome{
 }
 
 script Route5_Greta_AskToShow{
+    speakername("Greta")
     msgbox(format("Wanna buy anything?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1) {goto(Route5_Greta_ShowItemsForSale)}
     
@@ -507,6 +508,7 @@ script Route5_Greta_AskToShow{
 
 script Route5_Greta_ShowItemsForSale{
     showmoneybox(18, 0)
+    speakername("Greta")
     msgbox(format("The egg is 10,000. The rock is 5,000. The fish is only 100!"))    
 //	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
     dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Strange Egg", "Mysterious Rock", "Ugly Fish")
@@ -531,18 +533,21 @@ script Route5_Greta_ShowItemsForSale{
 
 script Route5_Greta_StrangeEgg{
     checkmoney(10000)
-    if (var(VAR_RESULT) == 0){       
+    if (var(VAR_RESULT) == 0){     
+        speakername("Greta")  
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(Route5_Greta_ShowItemsForSale)
     } else {
+        speakername("Greta")
         msgbox(format("A discerning choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removemoney(10000)
             giveegg(SPECIES_HONEDGE)
             msgbox(format("{PLAYER} received a Strange Egg from Greta."), MSGBOX_SIGN)
             release
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)
@@ -552,18 +557,21 @@ script Route5_Greta_StrangeEgg{
 
 script Route5_Greta_UglyFish{
     checkmoney(100)
-    if (var(VAR_RESULT) == 0){       
+    if (var(VAR_RESULT) == 0){   
+        speakername("Greta")    
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(Route5_Greta_ShowItemsForSale)
     } else {
+        speakername("Greta")
         msgbox(format("A...budget-friendly choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removemoney(100)
             givemon(SPECIES_FEEBAS, 5)
             msgbox(format("{PLAYER} received a Feebas from Greta."), MSGBOX_SIGN)
             release
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)            
@@ -573,16 +581,19 @@ script Route5_Greta_UglyFish{
 
 script Route5_Greta_MysteriousRock{
     checkmoney(5000)
-    if (var(VAR_RESULT) == 0){       
+    if (var(VAR_RESULT) == 0){     
+        speakername("Greta")  
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(Route5_Greta_ShowItemsForSale)
     } else {
+        speakername("Greta")
         msgbox(format("A reasonable choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removemoney(5000)
             giveitem(ITEM_RARE_SHARD)
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)            
@@ -610,10 +621,12 @@ script Route5_Greta_MysteriousRock{
 //GRETA PELLUCA
 
 script PellucaCity_Greta_AskToShow{
+    speakername("Greta")
     msgbox(format("Wanna buy anything?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1) {goto(PellucaCity_Greta_ShowItemsForSale)}
 
     hidemoneybox
+    speakername("Greta")
     msgbox(format("Bummer!"))
     release
     
@@ -622,6 +635,7 @@ script PellucaCity_Greta_AskToShow{
 
 script PellucaCity_Greta_ShowItemsForSale{
     showmoneybox(18, 0)
+    speakername("Greta")
     msgbox(format("Each stone retails for 6000, but for you, I'll do 5200!"))    
 //	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
     dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Fire Stone", "Shiny Stone", "Water Stone")
@@ -646,18 +660,21 @@ script PellucaCity_Greta_ShowItemsForSale{
 script PellucaCity_Greta_FireStone{
     checkmoney(5200)
     if (var(VAR_RESULT) == 0){       
+        speakername("Greta")
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
         setvar(VAR_0x8006, ITEM_FIRE_STONE)
         showitemdescription        
+        speakername("Greta")
         msgbox(format("A fiery choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
             giveitem(ITEM_FIRE_STONE)
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription
@@ -669,18 +686,21 @@ script PellucaCity_Greta_FireStone{
 script PellucaCity_Greta_ShinyStone{
     checkmoney(5200)
     if (var(VAR_RESULT) == 0){       
+        speakername("Greta")
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
         setvar(VAR_0x8006, ITEM_SHINY_STONE)
         showitemdescription
+        speakername("Greta")
         msgbox(format("A natural choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
             giveitem(ITEM_SHINY_STONE)
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription
@@ -691,19 +711,22 @@ script PellucaCity_Greta_ShinyStone{
 
 script PellucaCity_Greta_WaterStone{
     checkmoney(5200)
-    if (var(VAR_RESULT) == 0){       
+    if (var(VAR_RESULT) == 0){    
+        speakername("Greta")   
         msgbox(format("Hey! You can't afford this!"))
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
         setvar(VAR_0x8006, ITEM_WATER_STONE)
         showitemdescription
+        speakername("Greta")
         msgbox(format("A cool choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
             giveitem(ITEM_WATER_STONE)
-            msgbox(format("GRETA: Good doing business with you! Now, what about -"))
+            speakername("Greta")
+            msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription

@@ -159,7 +159,7 @@ script GalecrestCityGym_Leader {
         call(Common_EventScript_PlayGymBadgeFanfare)
         setflag(FLAG_BADGE03_GET)   
         speakername("Kohla")     
-        msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
+        msgbox(format("{PLAYER} received the Stoic Badge from Kohla."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         speakername("Kohla")

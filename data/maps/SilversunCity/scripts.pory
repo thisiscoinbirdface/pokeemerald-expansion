@@ -25,26 +25,35 @@ script SilversunCity_OnFrame{
                 waitmovement(0)
                 delay(30)
 
-                msgbox(format("DETECTIVE: Asst. Prof. Rue!? Are you okay?\pRUE: All well, thanks to {PLAYER}.\pDETECTIVE: We...we thought it was Professor Tenebris with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
+                speakername("Detective")
+                msgbox(format("Asst. Prof. Rue!? Are you okay?"))
+                speakername("Rue")
+                msgbox(format("All well, thanks to {PLAYER}."))
+                speakername("Detective")
+                msgbox(format("We...we thought it was Professor Tenebris with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
                 waitmovement(0)
-                msgbox(format("DETECTIVE: How did they get to you, Rue?"))
+                speakername("Detective")
+                msgbox(format("How did they get to you, Rue?"))
                 release
                 applymovement(LOCALID_TENEBRIS, moves(emote_exclamation_mark))
                 waitmovement(0)
                 msgbox(format("Rue: Oh, it was terrible! They barged into our lab and started threatening everyone unless we handed over the Dreamalyser blueprints! I managed to hold them off while the other research associates escaped, but they overpowered me and forced me to hand over the blueprints..."))
                 release
                 delay(30)
-                msgbox(format("DETECTIVE: Spilt milk. Don't fret over what can't be changed. What do they want to do with the Dreamalyser?\pRUE: Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her GABRIELLE. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
+                speakername("Detective")
+                msgbox(format("Spilt milk. Don't fret over what can't be changed. What do they want to do with the Dreamalyser?\pRUE: Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her GABRIELLE. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
-                msgbox(format("DETECTIVE: So they want to build a Dreamalyser and use it to go to Ancient Cormoria?\pRUE: Yes.\pDETECTIVE: There must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's KOHLA when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                speakername("Detective")
+                msgbox(format("So they want to build a Dreamalyser and use it to go to Ancient Cormoria?\pRUE: Yes.\pThere must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's KOHLA when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
                 release
                 delay(24)
-                msgbox(format("DETECTIVE: Rue - go back home. You've had a hard time. Take care of yourself.\pRUE: Y-yes, I better...see you all soon. Thanks again {PLAYER}."))
+                speakername("Detective")
+                msgbox(format("Rue - go back home. You've had a hard time. Take care of yourself.\pRUE: Y-yes, I better...see you all soon. Thanks again {PLAYER}."))
                 release
 
                 //rue walks out
@@ -52,11 +61,12 @@ script SilversunCity_OnFrame{
                 waitmovement(0)
                 removeobject(LOCALID_TENEBRIS)
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
-                msgbox(format("DETECTIVE: {PLAYER} - to find out what Team Somber wants with the past, we need to find out about Ancient Cormoria. I have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard there. Please tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is KOHLA? He should be done chasing Rue's leads by now...we've got to go find him."))
+                speakername("Detective")
+                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out about Ancient Cormoria. I have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard there. Please tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is KOHLA? He should be done chasing Rue's leads by now...we've got to go find him."))
                 release
-                // KOHLA is still chasing the leads from Rue. \pDETECTIVE: So Professor, you hid the dreamstone from Fennilahl Town on Mt. Mirroh?\pTENEBRIS: 
+                // KOHLA is still chasing the leads from Rue. \pSo Professor, you hid the dreamstone from Fennilahl Town on Mt. Mirroh?\pTENEBRIS: 
                 // Yes. I began to suspect that someone might be after it, so I took the dreamstone and disappeared. But they found me...and the dreamstone's location.\p
-                // DETECTIVE: What's done is done. If you're safe and sound, we can close the case.\pDETECTIVE: But while the case is closed, the job is not yet done. 
+                // What's done is done. If you're safe and sound, we can close the case.\pBut while the case is closed, the job is not yet done. 
                 // {PLAYER}, we must stop them from obtaining the dreamstone! Head to Mt. Mirroh as soon as possible.\p
                 // TENEBRIS: I must return to the lab then and talk to Rue. Thank you again {PLAYER}."))
 
@@ -85,28 +95,34 @@ script SilversunCity_EventScript_Detectives{
     lockall
 
     if (flag(FLAG_SILVERSUN_DETECTIVES_ENTER)){
-        msgbox(format("DETECTIVE: Have you found the Professor yet? No? Then what are you standing here for?"))
+        speakername("Detective")
+        msgbox(format("Have you found the Professor yet? No? Then what are you standing here for?"))
     } else {
 
         //talk
         //first explain they're in disguise
+        speakername("Detective")
         msgbox(format("...\p...\p..."))
+        release
         applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
         applymovement(LOCALID_DET2, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(24)
 
-        msgbox(format("DETECTIVE: Can't you see we're in disguise, you idiot? You'll attract attention!\pBe casual.\nGo admire those flowerpots.")) 
+        speakername("Detective")
+        msgbox(format("Can't you see we're in disguise, you idiot? You'll attract attention!\pBe casual.\nGo admire those flowerpots.")) 
         release
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2 walk_up)) 
         waitmovement(0)
         delay(24)
 
-        msgbox(format("DETECTIVE: Better. Now tell me - what updates have you got?\p...\pDETECTIVE: What!? You overheard a Team Somber grunt talking about the Pofessor?"))
+        speakername("Detective")
+        msgbox(format("Better. Now tell me - what updates have you got?\p...\pWhat!? You overheard a Team Somber grunt talking about the Pofessor?"))
         release
         delay(30)
-        msgbox(format("DETECTIVE: This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRUE has given us a separate lead that KOHLA is following up on, so you're on your own on this one.\pGood luck."))
+        speakername("Detective")
+        msgbox(format("This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRue has given us a separate lead that Kohla is following up on, so you're on your own on this one.\pGood luck."))
         release
 
         //setvars and quest
@@ -132,7 +148,7 @@ script SilversunCity_EventScript_Detectives{
 
 //NPCs
 script SilversunCity_NPC1{
-    msgbox(format("GLORIA, the city's Gym Leader is also a famous actress! Her work centers around the dark and eerie."), MSGBOX_NPC)
+    msgbox(format("Gloria, the city's Gym Leader is also a famous actress! Her work centers around the dark and eerie."), MSGBOX_NPC)
     end
 }
 script SilversunCity_NPC2{

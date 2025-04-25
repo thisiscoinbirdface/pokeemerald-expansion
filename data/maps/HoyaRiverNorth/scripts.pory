@@ -48,7 +48,8 @@ script Route6_Transition_KohlaBattle_Trigger1{
 script Route6_Transition_EventScript_KohlaBattle{
 
     //Dialogue
-    msgbox(format("KOHLA: I've been waiting for you.\pOnce again you save the day while I run off chasing dead leads. Your stupid Professor Rue's lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
+    speakername("Kohla")
+    msgbox(format("I've been waiting for you.\pOnce again you save the day while I run off chasing dead leads. Your stupid Professor Rue's lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
     release
 
     //Battle
@@ -56,14 +57,17 @@ script Route6_Transition_EventScript_KohlaBattle{
 
     applymovement(1, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KOHLA: No!! Not again!"))
+    speakername("Kohla")
+    msgbox(format("No!! Not again!"))
     applymovement(1, moves(face_right))
     delay(24)
-    msgbox(format("BOLTUND, you're too weak! You just lost me the battle! You need to push yourself harder!"))
+    speakername("Kohla")
+    msgbox(format("Boltund, you're too weak! You just lost me the battle! You need to push yourself harder!"))
     release
     applymovement(1, moves(face_up))
     delay(24)
-    msgbox(format("KOHLA: {PLAYER}, this isn't over. Mark my words!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER}, this isn't over. Mark my words!"))
     release
 
     applymovement(1, moves(walk_down * 7))

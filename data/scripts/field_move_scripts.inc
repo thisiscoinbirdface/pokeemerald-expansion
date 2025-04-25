@@ -229,7 +229,7 @@ EventScript_StrengthBoulder::
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	checkpartymove MOVE_STRENGTH
 @	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
-@	setfieldeffectargument 0, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
 @	msgbox Text_WantToStrength, MSGBOX_YESNO
 @	goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
 @	closemessage

@@ -13,7 +13,8 @@ script SilversunCity_Theater_Leader{
     faceplayer
 
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("GLORIA: Such art! Such expression!\p...\pGLORIA: Now be a dear and get offstage, {PLAYER}. The audience doesn't seem to be too fond of you."))
+        speakername("Gloria")
+        msgbox(format("Such art! Such expression!\p...\pNow be a dear and get offstage, {PLAYER}. The audience doesn't seem to be too fond of you."))
         releaseall
         end
     }
@@ -24,7 +25,8 @@ script SilversunCity_Theater_Leader{
     release
 
     //dialogue
-    msgbox(format("GLORIA: Hmm, so it's you. Not spectacular, but you'll do.")) 
+    speakername("Gloria")
+    msgbox(format("Hmm, so it's you. Not spectacular, but you'll do.")) 
     fadescreen(FADE_TO_BLACK)    
     setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
@@ -37,13 +39,16 @@ script SilversunCity_Theater_Leader{
     special(RemoveCameraObject)
 
     fadescreen(FADE_FROM_BLACK)    
+    speakername("Gloria")
     msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
     release
     playse(SE_APPLAUSE)
-    msgbox(format("AUDIENCE: Woohoo! Go Gloria!"))
+    speakername("Audience")
+    msgbox(format("Woohoo! Go Gloria!"))
     release
-    applymovement(8, moves(face_left))   
-    msgbox(format("GLORIA: You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
+    applymovement(8, moves(face_left)) 
+    speakername("Gloria")  
+    msgbox(format("You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
     //Move player and leader
     fadescreen(FADE_TO_BLACK)
 
@@ -54,7 +59,8 @@ script SilversunCity_Theater_Leader{
     fadescreen(FADE_FROM_BLACK)
 
     //Talk
-    msgbox(format("GLORIA: Now, {PLAYER}, enthrall me with your danse macabre!"))
+    speakername("Gloria")
+    msgbox(format("Now, {PLAYER}, enthrall me with your danse macabre!"))
     release
 
     //Battle
@@ -69,27 +75,35 @@ script SilversunCity_Theater_Leader{
     waitmovement(0)
     special(RemoveCameraObject)
 
-    msgbox(format("GLORIA: A cheer from the audience, please!\pAUDIENCE: Boo! How dare you beat Gloria, you horrible trainer! Boo!\p{PLAYER} ducked to avoid a tomato!"))
+    speakername("Gloria")
+    msgbox(format("A cheer from the audience, please!"))
+    speakername("Audience")
+    msgbox(format("Boo! How dare you beat Gloria, you horrible trainer! Boo!"))
+    msgbox(format("{PLAYER} ducked to avoid a tomato!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left))
     waitmovement(0)    
-    msgbox(format("GLORIA: Ah...don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
+    speakername("Gloria")
+    msgbox(format("Ah...don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
 
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
     //Receive the badge
+    speakername("Gloria")
     msgbox(format("{PLAYER} received the Drama Badge from Gloria."))
     release
     setflag(FLAG_BADGE04_GET)
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
-    msgbox(format("GLORIA: The Drama Badge will let you use HM STRENGTH outside of battle. And I must give you these beautiful jewels too."))
+    speakername("Gloria")
+    msgbox(format("The Drama Badge will let you use HM Strength outside of battle. And I must give you these beautiful jewels too."))
     //Give item also
     giveitem(ITEM_RARE_SHARD, 2)
 
     //Bye-bye
-    msgbox(format("GLORIA: It was a pleasure sharing the stage with you. May you weave and bob with elegance in the dance of life, {PLAYER}!"))   
+    speakername("Gloria")
+    msgbox(format("It was a pleasure sharing the stage with you. May you elegantly bob and weave through the dance of life, {PLAYER}!"))   
     release
 
     fadescreen(FADE_TO_BLACK)
@@ -113,8 +127,10 @@ script SilversunCity_Theater_Leader{
 script SilversunCity_Theater_EventScript_SomberBlocker{
     lockall
     faceplayer
-    msgbox(format("GABRIELLE: Hey, nobody's allowed back here. Scram!\p...oh, it's you. I can guess what you're here for.\p...\p...\pGo on, get inside then. I won't stop you. With this, we're square, hear me?\pOh, I'm going to get into trouble...but I always pay back my debts!\pI really hope the grunts inside kick you right back out!"))
-
+    speakername("Gabrielle")
+    msgbox(format("Hey, nobody's allowed back here. Scram!\p...oh, it's you. I can guess what you're here for.\p...\p...\pGo on, get inside then. I won't stop you. With this, we're square, hear me?\pOh, I'm going to get into trouble...but I always pay back my debts!\pI really hope the grunts inside kick you right back out!"))
+    release
+    
     setflag(FLAG_SILVERSUN_SOMBERHQ_ENTRANCE)
 
     applymovement(6, moves(walk_up))

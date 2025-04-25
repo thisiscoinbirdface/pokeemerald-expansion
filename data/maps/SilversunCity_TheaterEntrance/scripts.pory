@@ -12,7 +12,7 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
     if (flag(FLAG_SILVERSUN_BACKSTAGEPASS_USE)){
         msgbox(format("I hope you enjoy the show!"))
     } else {
-        msgbox(format("Sorry - backstage access is for the cast and crew only. Do you have a BACKSTAGE PASS?"), MSGBOX_YESNO)
+        msgbox(format("Sorry - backstage access is for the cast and crew only. Do you have a Backstage Pass?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             if (checkitem(ITEM_BACKSTAGE_PASS)){
                 msgbox(format("...\pThis seems to be in order.\pPlease, right this way."))
@@ -26,9 +26,7 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
         } else {
             msgbox(format("Sorry, I can't let you pass."))
         }
-
     }
-
     releaseall
     end
 }

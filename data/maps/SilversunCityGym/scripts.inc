@@ -141,7 +141,7 @@ SilversunCityGym_EventScript_BackstagePass_Text_1:
 	.string "performing at the Silversun Theater\l"
 	.string "tonight, so the Gym Challenge is on\l"
 	.string "hold. As compensation, please accept\l"
-	.string "this BACKSTAGE PASS to tonight's show.$"
+	.string "this Backstage Pass to tonight's show.$"
 
 SilversunCityGym_EventScript_Red_Text_0:
 # 31 "data//maps/SilversunCityGym/scripts.pory"

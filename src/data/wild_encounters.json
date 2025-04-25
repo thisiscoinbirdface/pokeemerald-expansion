@@ -12447,62 +12447,62 @@
             "mons": [
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_QWILFISH_HISUI"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_QWILFISH_HISUI"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_KOFFING"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_KOFFING"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 22,
-                "max_level": 25,
+                "max_level": 24,
                 "species": "SPECIES_TOXEL"
               }
             ]
