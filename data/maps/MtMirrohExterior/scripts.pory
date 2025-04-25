@@ -24,14 +24,15 @@ script MtMirrohExterior_BreechTrigger{
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
-
-    msgbox(format("BREECH: Clefaible, did you see the Team Somber grunts too?"))
+    speakername("Breech")
+    msgbox(format("Clefable, did you see the Team Somber grunts too?"))
     release
     applymovement(LOCALID_CLEF, moves(jump_in_place_up))
     waitmovement(0)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
     delay(24)
-    msgbox(format("CLEFABLE: clee!!!"))
+    speakername("Clefable")    
+    msgbox(format("Clee!!!"))
     release
     delay(30)
 
@@ -41,18 +42,26 @@ script MtMirrohExterior_BreechTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(30)
-    msgbox(format("BREECH: {PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pBREECH: So you're chasing Team Somber. I admire you, {PLAYER}. Clefairy and I just saw a couple of them enter Mt. Mirroh. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
+    speakername("Breech")    
+    msgbox(format("{PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pSo you're chasing Team Somber. I admire you, {PLAYER}. Clefairy and I just saw a couple of them enter Mt. Mirroh. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
     release
     delay(30)
     applymovement(LOCALID_BREECH, moves(face_left emote_exclamation_mark))    
     applymovement(LOCALID_CLEF, moves(face_left emote_exclamation_mark)) 
     waitmovement(0)
     delay(30)
-    msgbox(format("BREECH: I see...so they must be using all this equipment to build and carry this Dreamalyser thing you're talking about. How scary!"))
+    speakername("Breech")    
+    msgbox(format("I see...so they must be using all this equipment to build and carry this Dreamalyser thing you're talking about. How scary!"))
     release
     delay(60)
-    msgbox(format("BREECH: Clefable and I have become stronger now, but I really don't want to get involved in all these matters. We'll find some other way through the mountain. All the best, {PLAYER}!"))
+    speakername("Breech")    
+    msgbox(format("Clefable and I have become stronger now, but I really don't want to get involved in all these matters. We'll find some other way through the mountain. All the best, {PLAYER}!"))
     release
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    speakername("Clefable")    
+    msgbox(format("Clee!!!"))
+    release    
+    delay(24)
 
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_BREECH)

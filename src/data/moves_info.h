@@ -8289,7 +8289,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Stops the foe from moving\n"
             "with rocks and cuts Speed."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 50,
+        .power = 50,// B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 50,
         .type = TYPE_ROCK,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 80,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 10,

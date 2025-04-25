@@ -118,68 +118,76 @@ MirrohBaseCamp_EventScript_NPC2::
 # 76 "data//maps/MirrohBaseCamp/scripts.pory"
 	faceplayer
 # 77 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_EventScript_NPC2_Text_0
+	speakername MirrohBaseCamp_EventScript_NPC2_Text_0
 # 78 "data//maps/MirrohBaseCamp/scripts.pory"
-	release
+	msgbox MirrohBaseCamp_EventScript_NPC2_Text_1
 # 79 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_EventScript_NPC2_Movement_0
+	speakername MirrohBaseCamp_EventScript_NPC2_Text_2
 # 80 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement LOCALID_MARTHA, MirrohBaseCamp_EventScript_NPC2_Movement_1
+	msgbox MirrohBaseCamp_EventScript_NPC2_Text_3
 # 81 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
+	release
 # 82 "data//maps/MirrohBaseCamp/scripts.pory"
-	removeobject LOCALID_MARTHA
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_EventScript_NPC2_Movement_0
 # 83 "data//maps/MirrohBaseCamp/scripts.pory"
-	setflag FLAG_HIDE_GRAVEYARD_HISTORIAN
+	applymovement LOCALID_MARTHA, MirrohBaseCamp_EventScript_NPC2_Movement_1
 # 84 "data//maps/MirrohBaseCamp/scripts.pory"
-	clearflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
+	waitmovement 0
 # 85 "data//maps/MirrohBaseCamp/scripts.pory"
+	removeobject LOCALID_MARTHA
+# 86 "data//maps/MirrohBaseCamp/scripts.pory"
+	setflag FLAG_HIDE_GRAVEYARD_HISTORIAN
+# 87 "data//maps/MirrohBaseCamp/scripts.pory"
+	clearflag FLAG_HIDE_MIRROHBASECAMP_HISTORIAN
+# 88 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
 
 MirrohBaseCamp_Rue_Trigger::
-# 97 "data//maps/MirrohBaseCamp/scripts.pory"
+# 100 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto_if_set FLAG_MIRROHBASECAMP_MASTERBALL_RUE, MirrohBaseCamp_Rue_Trigger_2
-# 101 "data//maps/MirrohBaseCamp/scripts.pory"
+# 104 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
-# 102 "data//maps/MirrohBaseCamp/scripts.pory"
-	opendoor 13, 27
-# 103 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitdooranim
 # 105 "data//maps/MirrohBaseCamp/scripts.pory"
-	addobject LOCALID_RUE
+	opendoor 13, 27
 # 106 "data//maps/MirrohBaseCamp/scripts.pory"
-	setobjectxy LOCALID_RUE, 13, 27
-# 108 "data//maps/MirrohBaseCamp/scripts.pory"
-	delay 8
-# 110 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Rue_Trigger_Movement_0
-# 111 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
-# 112 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
-# 113 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
-# 114 "data//maps/MirrohBaseCamp/scripts.pory"
-	closedoor 13, 27
-# 115 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitdooranim
-# 116 "data//maps/MirrohBaseCamp/scripts.pory"
-	delay 16
-# 117 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Rue_Trigger_Text_0
-# 118 "data//maps/MirrohBaseCamp/scripts.pory"
-	release
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
-	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
-# 120 "data//maps/MirrohBaseCamp/scripts.pory"
+# 108 "data//maps/MirrohBaseCamp/scripts.pory"
+	addobject LOCALID_RUE
+# 109 "data//maps/MirrohBaseCamp/scripts.pory"
+	setobjectxy LOCALID_RUE, 13, 27
+# 111 "data//maps/MirrohBaseCamp/scripts.pory"
+	delay 8
+# 113 "data//maps/MirrohBaseCamp/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Rue_Trigger_Movement_0
+# 114 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
+# 116 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitmovement 0
+# 117 "data//maps/MirrohBaseCamp/scripts.pory"
+	closedoor 13, 27
+# 118 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitdooranim
+# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+	delay 16
+# 120 "data//maps/MirrohBaseCamp/scripts.pory"
+	speakername MirrohBaseCamp_Rue_Trigger_Text_0
 # 121 "data//maps/MirrohBaseCamp/scripts.pory"
-	removeobject LOCALID_RUE
+	msgbox MirrohBaseCamp_Rue_Trigger_Text_1
 # 122 "data//maps/MirrohBaseCamp/scripts.pory"
-	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+	release
 # 123 "data//maps/MirrohBaseCamp/scripts.pory"
+	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
+# 124 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitmovement 0
+# 125 "data//maps/MirrohBaseCamp/scripts.pory"
+	removeobject LOCALID_RUE
+# 126 "data//maps/MirrohBaseCamp/scripts.pory"
+	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
+# 127 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
@@ -187,77 +195,77 @@ MirrohBaseCamp_Rue_Trigger_2:
 	end
 
 
-# 79 "data//maps/MirrohBaseCamp/scripts.pory"
+# 82 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_EventScript_NPC2_Movement_0:
-# 79 "data//maps/MirrohBaseCamp/scripts.pory"
+# 82 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 79 "data//maps/MirrohBaseCamp/scripts.pory"
+# 82 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_down
 	step_end
 
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_EventScript_NPC2_Movement_1:
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 80 "data//maps/MirrohBaseCamp/scripts.pory"
+# 83 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
 	step_end
 
-# 110 "data//maps/MirrohBaseCamp/scripts.pory"
+# 113 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_0:
-# 110 "data//maps/MirrohBaseCamp/scripts.pory"
+# 113 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 110 "data//maps/MirrohBaseCamp/scripts.pory"
+# 113 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_right
 	step_end
 
-# 112 "data//maps/MirrohBaseCamp/scripts.pory"
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_1:
-# 112 "data//maps/MirrohBaseCamp/scripts.pory"
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 112 "data//maps/MirrohBaseCamp/scripts.pory"
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_left
-# 112 "data//maps/MirrohBaseCamp/scripts.pory"
+# 115 "data//maps/MirrohBaseCamp/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_2:
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 119 "data//maps/MirrohBaseCamp/scripts.pory"
+# 123 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
 	step_end
 
@@ -296,30 +304,43 @@ MirrohBaseCamp_EventScript_NPC1_Text_0:
 
 MirrohBaseCamp_EventScript_NPC2_Text_0:
 # 77 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "???$"
+
+MirrohBaseCamp_EventScript_NPC2_Text_1:
+# 78 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "The Pokémon Graveyard lies ahead.\n"
 	.string "Please be respectful.\p"
-	.string "...\p"
+	.string "...$"
+
+MirrohBaseCamp_EventScript_NPC2_Text_2:
+# 79 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "Martha$"
+
+MirrohBaseCamp_EventScript_NPC2_Text_3:
+# 80 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "My name? It's Martha, dear. I manage the\n"
 	.string "graveyard.\p"
-	.string "MARTHA: You want to talk to me?\n"
-	.string "Something about dreamstones? Well this\l"
-	.string "will be a longer conversation, so why\l"
-	.string "don't you drop by my house later?$"
+	.string "You want to talk to me? Something\n"
+	.string "about dreamstones? Well this will be a\l"
+	.string "longer conversation, so why don't you\l"
+	.string "drop by my house later?$"
 
 MirrohBaseCamp_Rue_Trigger_Text_0:
-# 117 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "RUE: {PLAYER}? What are you doing all\n"
-	.string "the way over here?\p"
+# 120 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "Rue$"
+
+MirrohBaseCamp_Rue_Trigger_Text_1:
+# 121 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "{PLAYER}? What are you doing all the\n"
+	.string "way over here?\p"
 	.string "...\p"
-	.string "RUE: Ah, yes. The detectives are\n"
-	.string "correct. Martha is an expert on\l"
-	.string "Cormorian history. She would be helpful.\p"
-	.string "RUE: I came here to make some social\n"
-	.string "calls. Since Mirroh Base Camp is quiet\l"
-	.string "and secluded, many academics reside\l"
-	.string "here - Martha being one of them. I\l"
-	.string "suppose I should go pay her a visit\l"
-	.string "next.\p"
-	.string "RUE: Take care, {PLAYER}. Stay safe in\n"
-	.string "Mt. Mirroh. Listen to what the\l"
-	.string "detectives tell you to do, okay?$"
+	.string "Ah, yes. The detectives are correct.\n"
+	.string "Martha is an expert on Cormorian\l"
+	.string "history. She would be helpful.\p"
+	.string "I came here to make some social calls.\n"
+	.string "Since Mirroh Base Camp is quiet and\l"
+	.string "secluded, many academics reside here -\l"
+	.string "Martha being one of them.\p"
+	.string "Take care, {PLAYER}. Stay safe in Mt.\n"
+	.string "Mirroh. Listen to what the detectives\l"
+	.string "tell you to do, okay?$"

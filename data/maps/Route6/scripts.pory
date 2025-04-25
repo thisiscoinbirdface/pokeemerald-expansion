@@ -90,8 +90,8 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a CASTING ROD. Too bad you don't have one!"), "You beat me without a rod!")
-    msgbox(format("I wonder what Pokémon I can catch here with a TROLLING ROD instead..."))
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Casting Rod. Too bad you don't have one!"), "You beat me without a rod!")
+    msgbox(format("I wonder what Pokémon I can catch here with a Trolling Rod instead..."))
     releaseall
     end
 }
@@ -104,7 +104,7 @@ script Route6_Trainer_E{
 }
 //Black Belt
 script Route6_Trainer_F{
-    trainerbattle_single(TRAINER_ROUTE6_F, format("My CROAGUNK and I love to train here because it makes us tough!"), "We're not tough eonugh!")
+    trainerbattle_single(TRAINER_ROUTE6_F, format("My Croagunk and I love to train here because it makes us tough!"), "We're not tough eonugh!")
     msgbox(format("Wading around in the marshes here works your core!"))
     releaseall
     end
@@ -274,7 +274,16 @@ script Route6_Gabrielle_Trigger{
     //no longer a part of somber, now give us all your pokemon
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
     delay(24)    
-    msgbox(format("GRUNT: C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!\pGABRILLE: No! They're mine! Why should I give you losers anything?\pGRUNTS: They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zorua, you know? And now it's time to collect!\pGABRIELLE: That's not how it works!\pGRUNT: What are you gonna do? Complain to the boss? HAHA!"))
+    speakername("Grunt")
+    msgbox(format("C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!"))
+    speakername("Gabrielle")
+    msgbox(format("No! They're mine! Why should I give you losers anything?"))
+    speakername("Grunt")
+    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zorua, you know? And now it's time to collect!"))
+    speakername("Gabrielle")
+    msgbox(format("That's not how it works!"))
+    speakername("Grunt")
+    msgbox(format("What are you gonna do? Complain to the boss? HAHA!"))
     release 
 
     //Notice
@@ -286,11 +295,13 @@ script Route6_Gabrielle_Trigger{
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down))
 
-    msgbox(format("GABRIELLE: {PLAYER}, it's you! These grunts are trying to take my Pokémon off me - you have to help!"))
+    speakername("Gabrielle")
+    msgbox(format("{PLAYER}, it's you! These grunts are trying to take my Pokémon off me - you have to help!"))
     release
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_down))
-    msgbox(format("GRUNT: Have you no shame Gabrielle? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your Pokémon AND beat the trainer that's stopped our plans twice!"))
+    speakername("Grunt")
+    msgbox(format("Have you no shame Gabrielle? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your Pokémon AND beat the trainer that's stopped our plans twice!"))
     release
     //walk up
     applymovement(LOCALID_GRUNT1, moves(face_right))
@@ -315,12 +326,13 @@ script Route6_Gabrielle_ChooseDoubleBattleParty{
 }
 
 script Route6_Gabrielle_HurryUp{
-    msgbox(format("GABRIELLE: What are you doing? They're about to attack!"))
+    speakername("Gabrielle")
+    msgbox(format("What are you doing? They're about to attack!"))
     goto(Route6_Gabrielle_ChooseDoubleBattleParty)
 }
 
 script Route6_Gabrielle_DoBattle{
-    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid ZORUA!", TRAINER_ROUTE6_GRUNT2, "I need better Pokemon!", PARTNER_ROUTE6_GAB)
+    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zorua!", TRAINER_ROUTE6_GRUNT2, "I need better Pokemon!", PARTNER_ROUTE6_GAB)
  	if (var(VAR_RESULT) == 1){
         goto(Route6_Gabrielle_Victory)
     }
@@ -332,7 +344,8 @@ script Route6_Gabrielle_DoBattle{
 script Route6_Gabrielle_Victory{
     //somber exit
     //
-    msgbox(format("GRUNT: You got lucky that {PLAYER} was around, GABRIELLE! Next time we'll get your ZOROARK for sure!"))
+    speakername("Grunt")
+    msgbox(format("You got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zorua for sure!"))
     release
     //gabrielle thanks and lives in pelluca
     applymovement(LOCALID_GRUNT1, moves(walk_down * 2 walk_left * 3 walk_down *4))
@@ -345,11 +358,13 @@ script Route6_Gabrielle_Victory{
     applymovement(LOCALID_GAB, moves(face_down))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
-    msgbox(format("GABRIELLE: Thank you {PLAYER}. You saved me there.\pLet me heal your Pokemon."))
+    speakername("Gabrielle")
+    msgbox(format("Thank you {PLAYER}. You saved me there.\pLet me heal your Pokemon."))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
     
-    msgbox(format("GABRIELLE: I live Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
+    speakername("Gabrielle")
+    msgbox(format("I live Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
     release
     applymovement(LOCALID_GRUNT1, moves(walk_left walk_down * 2 walk_left * 3 walk_down *4))    
     waitmovement(0)

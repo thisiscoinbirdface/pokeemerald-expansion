@@ -107,26 +107,33 @@ script PellucaCityRestaurant_Cook3{
     faceplayer
 
     if (var(VAR_PELLUCA_COOK) == 2){
+        speakername("Chef")
         msgbox(format("How's my favourite trainer and Applin doing?"))
     }
 
     if (var(VAR_PELLUCA_COOK) == 1){
+        speakername("Chef")
         msgbox(format("Have you brought the Nevermelt Ice?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_NEVER_MELT_ICE)
             if (var(VAR_RESULT) == 1){
                 //accept quest
+                speakername("Chef")
                 msgbox(format("Wonderful! This will keep our ingredients cool until we can fix the fridge.")) 
-                completequest(QUEST_PELLUCA_RESTAURANT)                
+                completequest(QUEST_PELLUCA_RESTAURANT)    
+                speakername("Chef")            
                 msgbox(format("My friend, you must accept this."))
                 release
                 givemon(SPECIES_APPLIN, 25)
+                speakername("Chef")
                 msgbox(format("Take good care of our Applin! Maybe I'll see the two of you together the next time I go ingredient-hunting."))
                 setvar(VAR_PELLUCA_COOK, 2) 
             } else {
+                speakername("Chef")
                 msgbox(format("Hmmm, it doesn't seem like you do. Come back when you get it from the Mirroh Base Camp!"))
             }
         } else {
+            speakername("Chef")
             msgbox(format("Come back when you get it from the Mirroh Base Camp!"))
         }
     }
@@ -136,12 +143,15 @@ script PellucaCityRestaurant_Cook3{
         delay(24)
         applymovement(12, moves(emote_exclamation_mark))
         waitmovement(0)
-        msgbox(format("Aha! Why hello there my fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
+        speakername("Chef")
+        msgbox(format("Aha! It's my favourite fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //accept quest
+            speakername("Chef")
             msgbox(format("I knew I could rely on you!\pSome Nevermelt Ice will do the trick. You can buy Nevermelt Ice at the Mirroh Base Camp. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
             release
-            giveitem(ITEM_CABLECAR_PASS)        
+            giveitem(ITEM_CABLECAR_PASS)
+            speakername("Chef")
             msgbox(format("I'll be waiting here!"))
             release
             setvar(VAR_PELLUCA_COOK, 1)
@@ -149,6 +159,7 @@ script PellucaCityRestaurant_Cook3{
             startquest(QUEST_PELLUCA_RESTAURANT)
 
         } else {
+            speakername("Chef")
             msgbox(format("Oh no! But I understand. You must be busy."))
         }
     }

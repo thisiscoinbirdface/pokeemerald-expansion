@@ -74,7 +74,10 @@ script MirrohBaseCamp_EventScript_NPC1{
 script MirrohBaseCamp_EventScript_NPC2{
     lockall
     faceplayer
-    msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p...\pMy name? It's Martha, dear. I manage the graveyard.\pMARTHA: You want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
+    speakername("???")
+    msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p..."))
+    speakername("Martha")
+    msgbox(format("My name? It's Martha, dear. I manage the graveyard.\pYou want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
     applymovement(LOCALID_MARTHA, moves(walk_right walk_down * 3 walk_left * 9))
@@ -114,7 +117,8 @@ script MirrohBaseCamp_Rue_Trigger{
     closedoor(13, 27)
     waitdooranim    
     delay(16)
-    msgbox(format("RUE: {PLAYER}? What are you doing all the way over here?\p...\pRUE: Ah, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pRUE: I came here to make some social calls. Since Mirroh Base Camp is quiet and secluded, many academics reside here - Martha being one of them. I suppose I should go pay her a visit next.\pRUE: Take care, {PLAYER}. Stay safe in Mt. Mirroh. Listen to what the detectives tell you to do, okay?"))
+    speakername("Rue")
+    msgbox(format("{PLAYER}? What are you doing all the way over here?\p...\pAh, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pI came here to make some social calls. Since Mirroh Base Camp is quiet and secluded, many academics reside here - Martha being one of them.\pTake care, {PLAYER}. Stay safe in Mt. Mirroh. Listen to what the detectives tell you to do, okay?"))
     release
     applymovement(LOCALID_RUE, moves(walk_right * 7))
     waitmovement(0)    

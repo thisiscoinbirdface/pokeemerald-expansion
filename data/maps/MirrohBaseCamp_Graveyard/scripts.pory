@@ -8,16 +8,19 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
     faceplayer
     //kohla talk
     delay(30)
-    msgbox(format("KOHLA: It's you."))
+    speakername("Kohla")
+    msgbox(format("It's you."))
     release
     applymovement(1, moves(face_up))
     delay(48)
-    msgbox(format("KOHLA: Do you know what happens if you push something too hard?"))
+    speakername("Kohla")
+    msgbox(format("Do you know what happens if you push something too hard?"))
     release
     delay(48)
     faceplayer
     delay(16)
-    msgbox(format("KOHLA: No, I suppose you don't."))
+    speakername("Kohla")
+    msgbox(format("No, I suppose you don't."))
     release
     delay(16)
 
@@ -26,7 +29,8 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
 
     //stare at player
     delay(48)    
-    msgbox(format("KOHLA: I have to carry on.\pI'll see you at Mt. Mirroh."))
+    speakername("Kohla")
+    msgbox(format("I have to carry on.\pI'll see you at Mt. Mirroh."))
     release
     delay(48)
     applymovement(1, moves(walk_left * 5 walk_down * 7))

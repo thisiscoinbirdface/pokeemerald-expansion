@@ -11,9 +11,9 @@ Text_PokemonCenterBookShelf:
 	.string "ADORABLE POKéMON…$"
 
 Text_Vase:
-	.string "This vase looks expensive…\n"
-	.string "Peered inside…\p"
-	.string "But, it was empty.$"
+	.string "This vase looks expensive.\n"
+	.string "{PLAYER} peered inside…\p"
+	.string "It's empty.$"
 
 Text_EmptyTrashCan:
 	.string "It's empty.$"
