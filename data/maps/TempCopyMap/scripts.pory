@@ -591,7 +591,7 @@ script Route5_Greta_MysteriousRock{
         msgbox(format("A reasonable choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             removemoney(5000)
-            giveitem(ITEM_RARE_SHARD)
+            giveitem(ITEM_ODD_KEYSTONE)
             speakername("Greta")
             msgbox(format("Good doing business with you! Now, what about -"))
             goto(Route5_Greta_GottaGo)
@@ -665,14 +665,14 @@ script PellucaCity_Greta_Item_A{
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
-        setvar(VAR_0x8006, ITEM_SUN_STONe)
+        setvar(VAR_0x8006, ITEM_SUN_STONE)
         showitemdescription        
         speakername("Greta")
         msgbox(format("A shining choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
-            giveitem(ITEM_SUN_STONe)
+            giveitem(ITEM_SUN_STONE)
             speakername("Greta")
             msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)

@@ -1044,48 +1044,48 @@ PellucaCity_Greta_ShowItemsForSale_2:
 # 644 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
 # 645 "data//maps/TempCopyMap/scripts.pory"
-	goto PellucaCity_Greta_FireStone
+	goto PellucaCity_Greta_Item_A
 	goto PellucaCity_Greta_ShowItemsForSale_1
 
 PellucaCity_Greta_ShowItemsForSale_5:
 # 648 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
 # 649 "data//maps/TempCopyMap/scripts.pory"
-	goto PellucaCity_Greta_ShinyStone
+	goto PellucaCity_Greta_Item_B
 	goto PellucaCity_Greta_ShowItemsForSale_4
 
 PellucaCity_Greta_ShowItemsForSale_8:
 # 652 "data//maps/TempCopyMap/scripts.pory"
 	hidemoneybox
 # 653 "data//maps/TempCopyMap/scripts.pory"
-	goto PellucaCity_Greta_WaterStone
+	goto PellucaCity_Greta_Item_C
 	goto PellucaCity_Greta_ShowItemsForSale_7
 
 
-PellucaCity_Greta_FireStone::
+PellucaCity_Greta_Item_A::
 # 661 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 5200
 # 662 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq PellucaCity_Greta_FireStone_1
+	goto_if_eq PellucaCity_Greta_Item_A_1
 # 668 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_0x8006, ITEM_FIRE_STONE
+	setvar VAR_0x8006, ITEM_SUN_STONe
 # 669 "data//maps/TempCopyMap/scripts.pory"
 	showitemdescription
 # 670 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 671 "data//maps/TempCopyMap/scripts.pory"
-	msgbox PellucaCity_Greta_FireStone_Text_0, MSGBOX_YESNO
+	msgbox PellucaCity_Greta_Item_A_Text_0, MSGBOX_YESNO
 # 672 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq PellucaCity_Greta_FireStone_4
+	goto_if_eq PellucaCity_Greta_Item_A_4
 # 680 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 681 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_FireStone_1:
+PellucaCity_Greta_Item_A_1:
 # 663 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 664 "data//maps/TempCopyMap/scripts.pory"
@@ -1096,13 +1096,13 @@ PellucaCity_Greta_FireStone_1:
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_FireStone_4:
+PellucaCity_Greta_Item_A_4:
 # 673 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 674 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5200
 # 675 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_FIRE_STONE
+	giveitem ITEM_SUN_STONe
 # 676 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 677 "data//maps/TempCopyMap/scripts.pory"
@@ -1112,30 +1112,30 @@ PellucaCity_Greta_FireStone_4:
 	return
 
 
-PellucaCity_Greta_ShinyStone::
+PellucaCity_Greta_Item_B::
 # 687 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 5200
 # 688 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq PellucaCity_Greta_ShinyStone_1
+	goto_if_eq PellucaCity_Greta_Item_B_1
 # 694 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_0x8006, ITEM_SHINY_STONE
+	setvar VAR_0x8006, ITEM_PRISM_SCALE
 # 695 "data//maps/TempCopyMap/scripts.pory"
 	showitemdescription
 # 696 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 697 "data//maps/TempCopyMap/scripts.pory"
-	msgbox PellucaCity_Greta_ShinyStone_Text_0, MSGBOX_YESNO
+	msgbox PellucaCity_Greta_Item_B_Text_0, MSGBOX_YESNO
 # 698 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq PellucaCity_Greta_ShinyStone_4
+	goto_if_eq PellucaCity_Greta_Item_B_4
 # 706 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 707 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_ShinyStone_1:
+PellucaCity_Greta_Item_B_1:
 # 689 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 690 "data//maps/TempCopyMap/scripts.pory"
@@ -1146,13 +1146,13 @@ PellucaCity_Greta_ShinyStone_1:
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_ShinyStone_4:
+PellucaCity_Greta_Item_B_4:
 # 699 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 700 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5200
 # 701 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_SHINY_STONE
+	giveitem ITEM_PRISM_SCALE
 # 702 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 703 "data//maps/TempCopyMap/scripts.pory"
@@ -1162,30 +1162,30 @@ PellucaCity_Greta_ShinyStone_4:
 	return
 
 
-PellucaCity_Greta_WaterStone::
+PellucaCity_Greta_Item_C::
 # 713 "data//maps/TempCopyMap/scripts.pory"
 	checkmoney 5200
 # 714 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq PellucaCity_Greta_WaterStone_1
+	goto_if_eq PellucaCity_Greta_Item_C_1
 # 720 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_0x8006, ITEM_WATER_STONE
+	setvar VAR_0x8006, ITEM_DAWN_STONE
 # 721 "data//maps/TempCopyMap/scripts.pory"
 	showitemdescription
 # 722 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 723 "data//maps/TempCopyMap/scripts.pory"
-	msgbox PellucaCity_Greta_WaterStone_Text_0, MSGBOX_YESNO
+	msgbox PellucaCity_Greta_Item_C_Text_0, MSGBOX_YESNO
 # 724 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq PellucaCity_Greta_WaterStone_4
+	goto_if_eq PellucaCity_Greta_Item_C_4
 # 732 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 733 "data//maps/TempCopyMap/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_WaterStone_1:
+PellucaCity_Greta_Item_C_1:
 # 715 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 716 "data//maps/TempCopyMap/scripts.pory"
@@ -1196,13 +1196,13 @@ PellucaCity_Greta_WaterStone_1:
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
-PellucaCity_Greta_WaterStone_4:
+PellucaCity_Greta_Item_C_4:
 # 725 "data//maps/TempCopyMap/scripts.pory"
 	hideitemdescription
 # 726 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5200
 # 727 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_WATER_STONE
+	giveitem ITEM_DAWN_STONE
 # 728 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 729 "data//maps/TempCopyMap/scripts.pory"
@@ -1874,25 +1874,25 @@ PellucaCity_Greta_ShowItemsForSale_Text_0:
 
 PellucaCity_Greta_ShowItemsForSale_Text_1:
 # 641 "data//maps/TempCopyMap/scripts.pory"
-	.string "Fire Stone$"
+	.string "Sun Stone$"
 
 PellucaCity_Greta_ShowItemsForSale_Text_2:
 # 641 "data//maps/TempCopyMap/scripts.pory"
-	.string "Shiny Stone$"
+	.string "Prism Scale$"
 
 PellucaCity_Greta_ShowItemsForSale_Text_3:
 # 641 "data//maps/TempCopyMap/scripts.pory"
-	.string "Water Stone$"
+	.string "Dawn Stone$"
 
-PellucaCity_Greta_FireStone_Text_0:
+PellucaCity_Greta_Item_A_Text_0:
 # 671 "data//maps/TempCopyMap/scripts.pory"
-	.string "A fiery choice! You sure?$"
+	.string "A shining choice! You sure?$"
 
-PellucaCity_Greta_ShinyStone_Text_0:
+PellucaCity_Greta_Item_B_Text_0:
 # 697 "data//maps/TempCopyMap/scripts.pory"
-	.string "A natural choice! You sure?$"
+	.string "A brilliant choice! You sure?$"
 
-PellucaCity_Greta_WaterStone_Text_0:
+PellucaCity_Greta_Item_C_Text_0:
 # 723 "data//maps/TempCopyMap/scripts.pory"
 	.string "A cool choice! You sure?$"
 

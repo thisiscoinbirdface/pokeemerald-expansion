@@ -239,7 +239,7 @@
 #define FLAG_IVY_RIVER_RANGER_SCIENTIST_A 0x1E3 // Unused Flag
 #define FLAG_IVY_RIVER_RANGER_SCIENTIST_B 0x4B5 // Unused Flag
 #define FLAG_IVY_RIVER_RANGER_SCIENTIST_C 0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7 0x4B7 // Unused Flag
+#define FLAG_GRAVEYARD_SPIRITOMB 0x4B7 // Unused Flag
 #define FLAG_UNUSED_0x4B8 0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9 0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA 0x4BA // Unused Flag

@@ -42,3 +42,33 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
     releaseall
 
 }
+
+
+
+
+
+
+
+
+
+
+
+script MirrohBaseCamp_Graveyard_Spiritomb{
+    msgbox(format("A patch of dirt. Perhaps for a new gravestone?"), MSGBOX_NPC)
+
+    if (flag(FLAG_GRAVEYARD_SPIRITOMB)) {end}
+
+    checkitem(ITEM_ODD_KEYSTONE)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Bury the Odd Keystone?"), MSGBOX_YESNO)
+
+        if var((VAR_RESULT) == 1){
+            setflag(FLAG_GRAVEYARD_SPIRITOMB)
+            setwildbattle(SPECIES_SPIRITOMB, 30)
+            dowildbattle
+
+            end
+        }
+    }
+    end
+}
