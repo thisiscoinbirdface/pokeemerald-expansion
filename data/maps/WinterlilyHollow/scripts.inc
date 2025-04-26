@@ -685,12 +685,17 @@ WinterlilyHollow_NPC2_Text_0:
 
 WinterlilyHollow_NPC2_Text_1:
 # 86 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "$"
+	.string "Mom told me never to go into Ivy River!\n"
+	.string "She says kids my age go missing there.\l"
+	.string "So of course I'm gonna go!\p"
+	.string "...\p"
+	.string "But only when Mom's not looking.$"
 
 WinterlilyHollow_NPC3_Text_0:
 # 92 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Visitors are rare here. You must be\n"
-	.string "brave - or lost.$"
+	.string "Did you come from Ivy River or Mt\n"
+	.string "Mirroh? Of course you didn't come from\l"
+	.string "Ivy River - nobody goes there.$"
 
 WinterlilyHollow_NPC4_Text_0:
 # 100 "data//maps/WinterlilyHollow/scripts.pory"

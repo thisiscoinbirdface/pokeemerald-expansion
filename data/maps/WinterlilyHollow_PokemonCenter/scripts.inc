@@ -23,3 +23,40 @@ WinterlilyHollow_PokemonCenter_EventScript_Nurse::
 	releaseall
 	return
 
+
+WinterlilyHollow_PokemonCenter_NPC1::
+# 19 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	msgbox WinterlilyHollow_PokemonCenter_NPC1_Text_0, MSGBOX_NPC
+	end
+
+
+WinterlilyHollow_PokemonCenter_Chansey::
+# 23 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+# 24 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	msgbox WinterlilyHollow_PokemonCenter_Chansey_Text_0, MSGBOX_NPC
+	end
+
+
+WinterlilyHollow_PokemonCenter_NPC2::
+# 28 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	msgbox WinterlilyHollow_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
+WinterlilyHollow_PokemonCenter_NPC1_Text_0:
+# 19 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	.string "{PLAYER} - it's you! Thank you again\n"
+	.string "for saving Chansey. We'll stay here a\l"
+	.string "while and give the nurse company before\l"
+	.string "heading back down.$"
+
+WinterlilyHollow_PokemonCenter_Chansey_Text_0:
+# 24 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	.string "Seeyyyy!!$"
+
+WinterlilyHollow_PokemonCenter_NPC2_Text_0:
+# 28 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
+	.string "This is my first time in Winterlily\n"
+	.string "Hollow. I came to visit the Ranger\l"
+	.string "Institute further down in Ivy River.$"

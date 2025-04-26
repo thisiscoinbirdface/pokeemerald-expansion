@@ -187,10 +187,12 @@ PellucaFishery_NPC1_Text_1:
 
 PellucaFishery_NPC2_Text_0:
 # 25 "data//maps/PellucaFishery/scripts.pory"
-	.string "I bet me and my Toedscruel could give\n"
-	.string "that Sharpedo a whooping and a half,\l"
-	.string "but Old Man Slakka doesn't want us to\l"
-	.string "risk it.$"
+	.string "People avoid the Ivy River not just\n"
+	.string "because of the Mega Sharpedo, but\l"
+	.string "because it's cursed! A long time ago, a\l"
+	.string "boy went missing on a fishing trip\l"
+	.string "there. Since then, people have stopped\l"
+	.string "going there.$"
 
 PellucaFishery_NPC3_Text_0:
 # 38 "data//maps/PellucaFishery/scripts.pory"

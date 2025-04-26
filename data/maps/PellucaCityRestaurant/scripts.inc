@@ -394,13 +394,14 @@ PellucaCityRestaurant_Cook3_Movement_0:
 
 PellucaCityRestaurant_NPC1_Text_0:
 # 11 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "I reconnected with my daughter after\n"
-	.string "many years. What do I say to her?$"
+	.string "My daughter only thinks about gyms and\n"
+	.string "badges. She doesn't live in the moment!$"
 
 PellucaCityRestaurant_NPC2_Text_0:
 # 19 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "I'm seeing my dad after a long time. It's\n"
-	.string "awkward.$"
+	.string "Apparently they're closing down the\n"
+	.string "Mirroh Base Camp Gym. Where will I get my\l"
+	.string "next badge from?$"
 
 PellucaCityRestaurant_NPC3_Text_0:
 # 27 "data//maps/PellucaCityRestaurant/scripts.pory"
