@@ -130,3 +130,92 @@ script MirrohBaseCamp_Rue_Trigger{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Gym challenge trainers
+//3 people outside
+
+//Pokemon Breeder (horses)
+script MirrohBaseCamp_Trainer_A{
+    lockall
+    faceplayer
+
+    msgbox(format("Haven't you heard? They're closing the gym here. So everyone's queueing up to get a badge before it closes.\pHey, wanna do a warm-up battle?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        trainerbattle_no_intro(TRAINER_MIRROHEXT_D, format(""))
+        setflag(FLAG_MIRROHBASECAMP_TRAINER_A)
+        msgbox(format(""))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+        applymovement(8, moves(walk_left walk_up walk_left *10))
+        waitmovement(0)
+        removeobject(8)
+    }
+
+    releaseall
+    end
+}
+
+//Cooltrainer
+script MirrohBaseCamp_Trainer_A{
+    lockall
+    faceplayer
+
+    msgbox(format("Yes"), MSGBOX_NPC)
+
+    if (flag(FLAG_MIRROHBASECAMP_TRAINER_A)) {
+        msgbox(format(""), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format(""))
+            setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
+            msgbox(format(""))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+            applymovement(9, moves(walk_left *10))
+            waitmovement(0)
+            removeobject(9)
+        }
+    }
+
+    releaseall
+    end
+}
+
+
+//Ruin maniac
+script MirrohBaseCamp_Trainer_A{
+    lockall
+    faceplayer
+
+    msgbox(format("Get outta here! Carona has only one badge left to give and it's mine!"), MSGBOX_NPC)
+
+    if (flag(FLAG_MIRROHBASECAMP_TRAINER_B)) {
+        msgbox(format("What? If you keep looking at me like that, I'll make you pay!"))
+        if (var(VAR_RESULT) == 1){
+            trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format(""))
+            setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
+            msgbox(format(""))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+            applymovement(10, moves(walk_left *10))
+            waitmovement(0)
+            removeobject(10)
+        }
+    }
+
+
+    releaseall
+    end
+}
+

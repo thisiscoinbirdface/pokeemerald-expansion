@@ -1950,9 +1950,9 @@ Level: 33
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_MIRROHEXT_D ===
-Name: ISAAC
+Name: Bianca
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder F
 Gender: Male
 Music: Male
 Double Battle: No
@@ -1968,13 +1968,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_MIRROHEXT_E ===
-Name: STONE
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
+Name: Anaya
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Pangoro
 Level: 29
@@ -1989,10 +1989,10 @@ Level: 32
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_F ===
-Name: PATRICIA
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
+Name: Ringer
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
@@ -2006,37 +2006,37 @@ Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHEXT_G ===
-Name: KINDRA
-Class: Hex Maniac
-Pic: Hex Maniac
+Name: Kindra
+Class: Black Belt
+Pic: Black Belt
 Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Duskull
-Level: 30
+Croagunk
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shuppet
-Level: 30
+Passimian
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHEXT_H ===
 Name: TAMMY
-Class: Hex Maniac
-Pic: Hex Maniac
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Duskull
-Level: 29
+Pancham
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shuppet
-Level: 29
+Primeape
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_A ===
