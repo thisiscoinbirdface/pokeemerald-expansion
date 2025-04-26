@@ -305,40 +305,18 @@ script VilethornWoods_NPC2{
 script VilethornWoods_Cook_Reward{
     message(format("Perhaps a spoon from the restaurant? Or this seed I found?"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "TWISTEDSPOON", "MIRACLE SEED")
-    if (var(VAR_RESULT) == 0){
-        goto(VilethornWoods_Cook_RewardA)
-    } else {
-        goto(VilethornWoods_Cook_RewardB)
-    }
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Twisted Spoon", "Miracle Seed")
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_TWISTEDSPOON)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_MIRACLE_SEED)}
+    goto(VilethornWoods_Cook_Reward_Give)
 }
 
-script VilethornWoods_Cook_RewardA{
-    setvar(VAR_0x8006, ITEM_TWISTEDSPOON)
+script VilethornWoods_Cook_Reward_Give{
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        giveitem(ITEM_TWISTEDSPOON)
-        goto(VilethornWoods_Cook_RewardEnd)
-    } else {
-        hideitemdescription
-        goto(VilethornWoods_Cook_Reward)
-    }
-}
-
-script VilethornWoods_Cook_RewardB{
-    setvar(VAR_0x8006, ITEM_MIRACLE_SEED)
-    showitemdescription
-    msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        giveitem(ITEM_MIRACLE_SEED)
-        goto(VilethornWoods_Cook_RewardEnd)
-    } else {
-        hideitemdescription
-        goto(VilethornWoods_Cook_Reward)
-    }
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(VilethornWoods_Cook_RewardEnd)} 
+    else {goto(VilethornWoods_Cook_Reward)}
 }
 
 script VilethornWoods_Cook_RewardEnd{

@@ -144,7 +144,8 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
 
 
 script CeramBaseCamp_Cyndaquil_Reward{
-    msgbox(format("In exchangeo you want one of these other TMs I've got?"))
+    message(format("In exchange, do you want one of these other TMs I've got?"))
+    waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "TM Sandstorm", "TM Skill Swap") 
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_TM37)}
     if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_TM48)}
@@ -155,10 +156,7 @@ script CeramBaseCamp_Cyndaquil_Reward_Give{
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     hideitemdescription
-    if (var(VAR_RESULT) == 1){
-        giveitem(VAR_0x8006)
-        goto(CeramBaseCamp_Cyndaquil_Reward_End)
-    } 
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(CeramBaseCamp_Cyndaquil_Reward_End)} 
     else {goto(CeramBaseCamp_Cyndaquil_Reward)}
 }
 

@@ -29,46 +29,40 @@ script PellucaCityHouses_GabSibling3{
 
 
 
+script MtMirrohExterior_Breech_Reward{
+    message(format("We don't need these any more, so would you like one?"), MSGBOX_NPC)
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Assault Vest", "Rocky Helmet") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_ASSAULT_VEST)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_ROCKY_HELMET)}
+    goto(MtMirrohExterior_Breech_Reward)
+}
+
+script MtMirrohExterior_Breech_Reward{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(MtMirrohExterior_Breech_Reward_End)} 
+    else {goto(MtMirrohExterior_Breech_Reward)}
+}
 
 
 //Quest NPC
 script PellucaCityHouses_Mayor_Reward{
-    msgbox(format("Please accept this reward."), MSGBOX_NPC)
+    message(format("Please accept this reward."), MSGBOX_NPC)
+    waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
-    if (var(VAR_RESULT) == 1){
-        goto(PellucaCityHouses_Mayor_Reward1)
-    } else {
-        goto(PellucaCityHouses_Mayor_Reward2)
-    }
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)}
+    goto(PellucaCityHouses_Mayor_Reward_Give)
 }
 
-script PellucaCityHouses_Mayor_Reward1{
-    setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)
+script PellucaCityHouses_Mayor_Reward_Give{
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        //giveitem
-        giveitem(ITEM_WEAKNESS_POLICY)
-        goto(PellucaCityHouses_Mayor_Reward_End)
-    } else {
-        hideitemdescription
-        goto(PellucaCityHouses_Mayor_Reward)
-    }
-}
-
-script PellucaCityHouses_Mayor_Reward2{
-    setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)
-    showitemdescription
-    msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        giveitem(ITEM_BLUNDER_POLICY)
-        goto(PellucaCityHouses_Mayor_Reward_End)
-    } else {
-        hideitemdescription
-        goto(PellucaCityHouses_Mayor_Reward)
-    }
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(PellucaCityHouses_Mayor_Reward_End)} 
+    else {goto(PellucaCityHouses_Mayor_Reward)}
 }
 
 script PellucaCityHouses_Mayor_Reward_End{
