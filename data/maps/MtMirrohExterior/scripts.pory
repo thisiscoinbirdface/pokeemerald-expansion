@@ -109,7 +109,7 @@ script MtMirrohExterior_Trainer_A{
 }
 script MtMirrohExterior_Trainer_B{
     trainerbattle_single(TRAINER_MIRROHEXT_B, format("I know what you're eyeing! That's why I planted myself here - hahaha!"), "Aw I lost!")
-    msgbox(format(""))
+    msgbox(format("I love the mountains! There are so many good hiding spots."))
     releaseall
     end
 }
