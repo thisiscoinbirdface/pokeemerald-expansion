@@ -1873,19 +1873,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toxicroak
-Level: 30
+Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pangoro
-Level: 31
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Monferno
-Level: 31
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Lucario @ Lucarionite
 Level: 33
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Annihilape
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Medicham @ Medichamite
+Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_A ===
@@ -1899,15 +1899,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Bayleef
-Level: 29
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Vulpix-Alola
-Level: 29
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Banette
-Level: 30
+Shuppet
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_B ===
@@ -1920,15 +1920,15 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint
 
 Vivillon
-Level: 28
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Snom
-Level: 29
+Level: 31
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Dottler
-Level: 29
+Orbeetle
+Level: 33
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 
@@ -1942,11 +1942,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Snover
-Level: 29
+Level: 32
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Sandshrew-Alola
-Level: 30
+Level: 33
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_MIRROHEXT_D ===
@@ -1958,13 +1958,14 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Rapidash-Galar
-Level: 31
+Stantler
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Mudsdale
-Level: 32
+Rapidash-Galar
+Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 
 === TRAINER_MIRROHEXT_E ===
 Name: STONE
@@ -2048,11 +2049,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Cetoddle
-Level: 30
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Graveler-Alola
-Level: 31
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_B ===
@@ -2065,11 +2066,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 29
+Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Linoone-Galar
-Level: 31
+Sinistcha
+Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 
@@ -2083,11 +2084,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Lairon
-Level: 31
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Bergmite
-Level: 31
+Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_D ===
@@ -2100,15 +2101,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Nickit
-Level: 28
+Level: 32
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Thievul
-Level: 29
+Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Murkrow
-Level: 31
+Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
@@ -2120,19 +2121,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Check Bad Move
 
-Duskull
+Elgyem
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Duskull
+Drowzee
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Mime Jr.
-Level: 32
+Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Duskull
+Hypno
 Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -2159,11 +2160,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet 
-Level: 30
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dreepy
-Level: 32
+Sinistcha
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_B ===
@@ -2176,11 +2177,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Piloswine
-Level: 30
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Carkol
-Level: 31
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MIRROHINT2_C ===
@@ -2193,12 +2194,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb-Hisui
-Level: 29
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lycanroc
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 30 Spe
 
 
 === TRAINER_MIRROHINT2_D ===
@@ -2211,11 +2212,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Snover
-Level: 28
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sandslash-Alola
-Level: 31
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHINT2_E ===
@@ -2228,15 +2229,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pineco
-Level: 31
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Furret
-Level: 31
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Altaria
-Level: 33
+Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -2250,11 +2251,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Cetoddle
-Level: 30
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Frigibax
-Level: 31
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -2269,19 +2270,19 @@ AI: Check Bad Move
 Mugshot: Purple
 
 Herdier
-Level: 32
+Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Corvisquire
-Level: 32
+Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Raticate-Alola
-Level: 33
+Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Marowak-Alola
-Level: 34
+Level: 36
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 
@@ -2295,8 +2296,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 30
+Elgyem
+Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHPEAK_B ===
@@ -2309,8 +2310,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 33
+Murkrow
+Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_C ===
@@ -2323,13 +2324,9 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Fury Swipes
-- Mud Sport
-- Odor Sleuth
-- Sand Attack
+Murkrow
+Level: 35
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_D ===
 Name: MELISSA
@@ -2341,9 +2338,9 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Murkrow
+Level: 35
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_E ===
 Name: SHEILA
@@ -2370,19 +2367,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Honchkrow
-Level: 34
+Level: 36
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Malamar
-Level: 35
+Level: 36
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Slowking-Galar
-Level: 35
+Level: 37
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Houndoom @ Houndoominite
-Level: 36
+Level: 38
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_A ===
@@ -2519,20 +2516,20 @@ Starting Status: Electric Terrain
 Mugshot: Yellow
 
 Kilowattrel
-Level: 37
+Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Golem-Alola
-Level: 38
+Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Magneton
-Level: 38
+Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 Ampharos @ Ampharosite
-Level: 40
+Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -2545,21 +2542,14 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+Dewpider
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Seviper
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
+Skrelp
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 
 === TRAINER_PELLUCA_CITY_GYM_B ===
 Name: JESSICA
@@ -2570,21 +2560,19 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+Clauncher
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Seviper
-Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
+Basculin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Mareanie
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_C ===
 Name: WINSTON
@@ -2596,9 +2584,14 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cursola
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Barraskewda
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 
 === TRAINER_PELLUCA_CITY_GYM_D ===
 Name: MOLLIE
@@ -2609,13 +2602,14 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Whiscash
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Masquerain
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Meditite
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Carvanha
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 
 === TRAINER_PELLUCA_CITY_GYM_E ===
 Name: GARRET
@@ -2627,9 +2621,15 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill @ Nugget
-Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewpider
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Palpitoad
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_F ===
 Name: WINSTON
@@ -2641,9 +2641,13 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewpider
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Skrelp
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_G ===
 Name: WINSTON
@@ -2655,9 +2659,14 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lanturn
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Bruxish
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 
 === TRAINER_PELLUCA_CITY_GYM_H ===
 Name: WINSTON
@@ -2669,9 +2678,17 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mareanie
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Qwilfish-Hisui
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Masquerain
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_I ===
 Name: WINSTON
@@ -2683,26 +2700,49 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Linoone @ Nugget
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Fury Swipes
-- Mud Sport
-- Odor Sleuth
-- Sand Attack
+Lapras
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_LEADER ===
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
-Gender: Male
+Name: Jania
+Class: Leader
+Pic: Leader Inger
+Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+Level: 42
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Rain Dance
+- Hurricane
+- Muddy Water
+
+Toxapex @ Black Sludge
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Muddy Water
+- Toxic
+- Baneful Bunker
+- Recover
+
+Overqwil
+Ability: Swift Swim
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Clawitzer
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Gyarados @ Gyaradosite
+Level: 46
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
