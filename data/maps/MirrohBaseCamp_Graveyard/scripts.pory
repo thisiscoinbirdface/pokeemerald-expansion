@@ -60,9 +60,13 @@ script MirrohBaseCamp_Graveyard_Spiritomb{
 
     checkitem(ITEM_ODD_KEYSTONE)
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Bury the Odd Keystone?"), MSGBOX_YESNO)
+        msgbox(format("Place the Odd Keystone?"), MSGBOX_YESNO)
 
-        if var((VAR_RESULT) == 1){
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("{PLAYER} placed the Odd Keystone on the dirt patch."), MSGBOX_SIGN)
+            delay(16)
+            playmoncry(SPECIES_SPIRITOMB, CRY_MODE_NORMAL)
+            waitmoncry
             setflag(FLAG_GRAVEYARD_SPIRITOMB)
             setwildbattle(SPECIES_SPIRITOMB, 30)
             dowildbattle
@@ -72,3 +76,5 @@ script MirrohBaseCamp_Graveyard_Spiritomb{
     }
     end
 }
+
+

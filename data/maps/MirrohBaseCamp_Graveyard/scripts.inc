@@ -64,6 +64,48 @@ MirrohBaseCamp_Graveyard_KohlaBattle::
 	return
 
 
+MirrohBaseCamp_Graveyard_Spiritomb::
+# 57 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	msgbox MirrohBaseCamp_Graveyard_Spiritomb_Text_0, MSGBOX_NPC
+# 59 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	goto_if_set FLAG_GRAVEYARD_SPIRITOMB, MirrohBaseCamp_Graveyard_Spiritomb_2
+# 61 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	checkitem ITEM_ODD_KEYSTONE
+# 62 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq MirrohBaseCamp_Graveyard_Spiritomb_5
+MirrohBaseCamp_Graveyard_Spiritomb_4:
+	end
+
+MirrohBaseCamp_Graveyard_Spiritomb_2:
+	end
+
+MirrohBaseCamp_Graveyard_Spiritomb_5:
+# 63 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	msgbox MirrohBaseCamp_Graveyard_Spiritomb_Text_1, MSGBOX_YESNO
+# 65 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq MirrohBaseCamp_Graveyard_Spiritomb_7
+	goto MirrohBaseCamp_Graveyard_Spiritomb_4
+
+MirrohBaseCamp_Graveyard_Spiritomb_7:
+# 66 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	msgbox MirrohBaseCamp_Graveyard_Spiritomb_Text_2, MSGBOX_SIGN
+# 67 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	delay 16
+# 68 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	playmoncry SPECIES_SPIRITOMB, CRY_MODE_NORMAL
+# 69 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	waitmoncry
+# 70 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	setflag FLAG_GRAVEYARD_SPIRITOMB
+# 71 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	setwildbattle SPECIES_SPIRITOMB, 30
+# 72 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	dowildbattle
+	end
+
+
 # 14 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 MirrohBaseCamp_Graveyard_KohlaBattle_Movement_0:
 # 14 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
@@ -123,3 +165,17 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Text_5:
 # 33 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "I have to carry on.\p"
 	.string "I'll see you at Mt. Mirroh.$"
+
+MirrohBaseCamp_Graveyard_Spiritomb_Text_0:
+# 57 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	.string "A patch of dirt. Perhaps for a new\n"
+	.string "gravestone?$"
+
+MirrohBaseCamp_Graveyard_Spiritomb_Text_1:
+# 63 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	.string "Place the Odd Keystone?$"
+
+MirrohBaseCamp_Graveyard_Spiritomb_Text_2:
+# 66 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
+	.string "{PLAYER} placed the Odd Keystone on\n"
+	.string "the dirt patch.$"

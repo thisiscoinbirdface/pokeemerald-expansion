@@ -978,7 +978,7 @@ Route5_Greta_MysteriousRock_4:
 # 593 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5000
 # 594 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_RARE_SHARD
+	giveitem ITEM_ODD_KEYSTONE
 # 595 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 596 "data//maps/TempCopyMap/scripts.pory"
@@ -1069,7 +1069,7 @@ PellucaCity_Greta_Item_A::
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_Item_A_1
 # 668 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_0x8006, ITEM_SUN_STONe
+	setvar VAR_0x8006, ITEM_SUN_STONE
 # 669 "data//maps/TempCopyMap/scripts.pory"
 	showitemdescription
 # 670 "data//maps/TempCopyMap/scripts.pory"
@@ -1102,7 +1102,7 @@ PellucaCity_Greta_Item_A_4:
 # 674 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5200
 # 675 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_SUN_STONe
+	giveitem ITEM_SUN_STONE
 # 676 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 677 "data//maps/TempCopyMap/scripts.pory"
