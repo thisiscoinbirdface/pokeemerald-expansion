@@ -406,111 +406,91 @@ VilethornWoods_Cook_Reward::
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, VilethornWoods_Cook_Reward_Text_1, VilethornWoods_Cook_Reward_Text_2
 # 309 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq VilethornWoods_Cook_Reward_1
-# 312 "data//maps/VilethornWoods/scripts.pory"
-	goto VilethornWoods_Cook_RewardB
-	return
-
+	goto_if_eq VilethornWoods_Cook_Reward_2
 VilethornWoods_Cook_Reward_1:
 # 310 "data//maps/VilethornWoods/scripts.pory"
-	goto VilethornWoods_Cook_RewardA
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Cook_Reward_5
+VilethornWoods_Cook_Reward_4:
+# 311 "data//maps/VilethornWoods/scripts.pory"
+	goto VilethornWoods_Cook_Reward_Give
 	return
 
-
-VilethornWoods_Cook_RewardA::
-# 317 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Cook_Reward_2:
+# 309 "data//maps/VilethornWoods/scripts.pory"
 	setvar VAR_0x8006, ITEM_TWISTEDSPOON
-# 318 "data//maps/VilethornWoods/scripts.pory"
-	showitemdescription
-# 319 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Cook_RewardA_Text_0, MSGBOX_YESNO
-# 320 "data//maps/VilethornWoods/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq VilethornWoods_Cook_RewardA_1
-# 325 "data//maps/VilethornWoods/scripts.pory"
-	hideitemdescription
-# 326 "data//maps/VilethornWoods/scripts.pory"
-	goto VilethornWoods_Cook_Reward
-	return
+	goto VilethornWoods_Cook_Reward_1
 
-VilethornWoods_Cook_RewardA_1:
-# 321 "data//maps/VilethornWoods/scripts.pory"
-	hideitemdescription
-# 322 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_TWISTEDSPOON
-# 323 "data//maps/VilethornWoods/scripts.pory"
-	goto VilethornWoods_Cook_RewardEnd
-	return
-
-
-VilethornWoods_Cook_RewardB::
-# 331 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Cook_Reward_5:
+# 310 "data//maps/VilethornWoods/scripts.pory"
 	setvar VAR_0x8006, ITEM_MIRACLE_SEED
-# 332 "data//maps/VilethornWoods/scripts.pory"
+	goto VilethornWoods_Cook_Reward_4
+
+
+VilethornWoods_Cook_Reward_Give::
+# 315 "data//maps/VilethornWoods/scripts.pory"
 	showitemdescription
-# 333 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Cook_RewardA_Text_0, MSGBOX_YESNO
-# 334 "data//maps/VilethornWoods/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq VilethornWoods_Cook_RewardB_1
-# 339 "data//maps/VilethornWoods/scripts.pory"
+# 316 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Cook_Reward_Give_Text_0, MSGBOX_YESNO
+# 317 "data//maps/VilethornWoods/scripts.pory"
 	hideitemdescription
-# 340 "data//maps/VilethornWoods/scripts.pory"
+# 318 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Cook_Reward_Give_1
+# 319 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_Reward
 	return
 
-VilethornWoods_Cook_RewardB_1:
-# 335 "data//maps/VilethornWoods/scripts.pory"
-	hideitemdescription
-# 336 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_MIRACLE_SEED
-# 337 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Cook_Reward_Give_1:
+# 318 "data//maps/VilethornWoods/scripts.pory"
+	giveitem VAR_0x8006
+# 318 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_RewardEnd
 	return
 
 
 VilethornWoods_Cook_RewardEnd::
-# 345 "data//maps/VilethornWoods/scripts.pory"
+# 323 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_MUSHROOMS
-# 346 "data//maps/VilethornWoods/scripts.pory"
+# 324 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Cook_RewardEnd_Text_0, MSGBOX_NPC
 	end
 
 
 VilethornWoods_NPC3::
-# 354 "data//maps/VilethornWoods/scripts.pory"
+# 332 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
-# 357 "data//maps/VilethornWoods/scripts.pory"
+# 335 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_1, MSGBOX_YESNO
-# 358 "data//maps/VilethornWoods/scripts.pory"
+# 336 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC3_5
-# 364 "data//maps/VilethornWoods/scripts.pory"
+# 342 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_3, MSGBOX_NPC
 VilethornWoods_NPC3_1:
 	end
 
 VilethornWoods_NPC3_2:
-# 355 "data//maps/VilethornWoods/scripts.pory"
+# 333 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_0, MSGBOX_NPC
 	goto VilethornWoods_NPC3_1
 
 VilethornWoods_NPC3_5:
-# 359 "data//maps/VilethornWoods/scripts.pory"
+# 337 "data//maps/VilethornWoods/scripts.pory"
 	giveitem ITEM_BIG_ROOT
-# 360 "data//maps/VilethornWoods/scripts.pory"
+# 338 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 361 "data//maps/VilethornWoods/scripts.pory"
+# 339 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_ITEM
-# 362 "data//maps/VilethornWoods/scripts.pory"
+# 340 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_2, MSGBOX_NPC
 	goto VilethornWoods_NPC3_1
 
 
 VilethornWoods_Celebi_Seed::
-# 376 "data//maps/VilethornWoods/scripts.pory"
+# 354 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_0
-# 377 "data//maps/VilethornWoods/scripts.pory"
+# 355 "data//maps/VilethornWoods/scripts.pory"
 	release
 	end
 
@@ -803,44 +783,44 @@ VilethornWoods_Cook_Reward_Text_0:
 
 VilethornWoods_Cook_Reward_Text_1:
 # 308 "data//maps/VilethornWoods/scripts.pory"
-	.string "TWISTEDSPOON$"
+	.string "Twisted Spoon$"
 
 VilethornWoods_Cook_Reward_Text_2:
 # 308 "data//maps/VilethornWoods/scripts.pory"
-	.string "MIRACLE SEED$"
+	.string "Miracle Seed$"
 
-VilethornWoods_Cook_RewardA_Text_0:
-# 319 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Cook_Reward_Give_Text_0:
+# 316 "data//maps/VilethornWoods/scripts.pory"
 	.string "Are you sure?$"
 
 VilethornWoods_Cook_RewardEnd_Text_0:
-# 346 "data//maps/VilethornWoods/scripts.pory"
+# 324 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over Cormoria. And if you\l"
 	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
 VilethornWoods_NPC3_Text_0:
-# 355 "data//maps/VilethornWoods/scripts.pory"
+# 333 "data//maps/VilethornWoods/scripts.pory"
 	.string "My foot hurts!$"
 
 VilethornWoods_NPC3_Text_1:
-# 357 "data//maps/VilethornWoods/scripts.pory"
+# 335 "data//maps/VilethornWoods/scripts.pory"
 	.string "Gah! I got lost in this stupid forest\n"
 	.string "and tripped on a giant tree root. I got\l"
 	.string "mad and ripped it out! Do you want it?$"
 
 VilethornWoods_NPC3_Text_2:
-# 362 "data//maps/VilethornWoods/scripts.pory"
+# 340 "data//maps/VilethornWoods/scripts.pory"
 	.string "Good riddance! I hope you find some use\n"
 	.string "for it.$"
 
 VilethornWoods_NPC3_Text_3:
-# 364 "data//maps/VilethornWoods/scripts.pory"
+# 342 "data//maps/VilethornWoods/scripts.pory"
 	.string "Just as well. It's a root after all -\n"
 	.string "what use would it have?$"
 
 VilethornWoods_Celebi_Seed_Text_0:
-# 376 "data//maps/VilethornWoods/scripts.pory"
+# 354 "data//maps/VilethornWoods/scripts.pory"
 	.string "It's fertile soil...but not the same as\n"
 	.string "berry tree soil.$"

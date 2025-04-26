@@ -60,7 +60,7 @@ script MtMirrohExterior_BreechTrigger{
 }
 
 script MtMirrohExterior_Breech_Reward{
-    message(format("We don't need these any more, so would you like one?"), MSGBOX_NPC)
+    message(format("We don't need these any more, so would you like one?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Assault Vest", "Rocky Helmet") 
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_ASSAULT_VEST)}
