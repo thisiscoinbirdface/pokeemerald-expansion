@@ -542,15 +542,14 @@ MirrohBaseCamp_Trainer_A_Text_2:
 
 MirrohBaseCamp_Trainer_B_Text_0:
 # 178 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "What dreadfully sad little town! It's a\n"
-	.string "wonder this gym lasted so long.$"
+	.string "What a dreadfully sad little town! It's\n"
+	.string "a wonder this gym lasted so long.$"
 
 MirrohBaseCamp_Trainer_B_Text_1:
 # 181 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "I saw the battle with the trainer\n"
-	.string "behind me. You're not bad, but you'll\l"
-	.string "have to try harder than that to beat\l"
-	.string "me!$"
+	.string "I saw the battle with the other trainer.\n"
+	.string "You're not bad, but you'll have to try\l"
+	.string "harder than that to beat me!$"
 
 MirrohBaseCamp_Trainer_B_Text_2:
 # 183 "data//maps/MirrohBaseCamp/scripts.pory"

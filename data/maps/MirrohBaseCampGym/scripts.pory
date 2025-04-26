@@ -1,3 +1,10 @@
+raw`
+    .set LOCALID_TRF, 2
+    .set LOCALID_TRM, 3
+    .set LOCALID_CAR, 1
+    .set LOCALID_SP, 4
+`
+
 mapscripts MirrohBaseCampGym_MapScripts{
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_MIRROHBASECAMPGYM_STATE, 0: MirrohBaseCampGym_EventScript_Main
@@ -6,12 +13,46 @@ mapscripts MirrohBaseCampGym_MapScripts{
 
 script MirrohBaseCampGym_EventScript_Main{
     lockall
+
+    //camera
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
     waitmovement(0)
 
+    //trainers crying
+    //first boy cries
+    applymovement(LOCALID_TRM, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format(""), MSGBOX_NPC)
+    release
+    delay(16)
+    //then girl cries
+    applymovement(LOCALID_TRF, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format(""), MSGBOX_NPC)
+    release
+    delay(16)
+
+    //carona consoles
+
+
+
+    //spenser sees the trainer, asks how many badges left
+
+
+
+    //carona tells the trainers to get into position
+    
+
+
+    //End camera
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
+    waitmovement(0)    
     special(RemoveCameraObject)
 
+    //vars
     setvar(VAR_MIRROHBASECAMPGYM_STATE, 1)
     releaseall
     end

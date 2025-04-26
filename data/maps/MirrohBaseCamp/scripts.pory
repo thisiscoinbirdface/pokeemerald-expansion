@@ -175,10 +175,10 @@ script MirrohBaseCamp_Trainer_B{
     lockall
     faceplayer
 
-    msgbox(format("What dreadfully sad little town! It's a wonder this gym lasted so long."), MSGBOX_NPC)
+    msgbox(format("What a dreadfully sad little town! It's a wonder this gym lasted so long."), MSGBOX_NPC)
 
     if (flag(FLAG_MIRROHBASECAMP_TRAINER_A)) {
-        msgbox(format("I saw the battle with the trainer behind me. You're not bad, but you'll have to try harder than that to beat me!"))
+        msgbox(format("I saw the battle with the other trainer. You're not bad, but you'll have to try harder than that to beat me!"))
         if (var(VAR_RESULT) == 1){
             trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format("Stop trying so hard!"))
             setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
