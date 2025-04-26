@@ -123,7 +123,7 @@ WinterlilyHollowGym_LeaderBattle::
 # 113 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	lockall
 # 115 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	goto_if_set FLAG_BADGE05_GET, WinterlilyHollowGym_LeaderBattle_2
+	goto_if_set FLAG_BADGE06_GET, WinterlilyHollowGym_LeaderBattle_2
 # 119 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	msgbox WinterlilyHollowGym_LeaderBattle_Text_1
 # 120 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -144,7 +144,7 @@ WinterlilyHollowGym_LeaderBattle::
 # 136 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 138 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
 # 141 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	msgbox WinterlilyHollowGym_LeaderBattle_Text_7
 # 142 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
