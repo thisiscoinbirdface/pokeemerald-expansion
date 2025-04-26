@@ -268,7 +268,7 @@ Route6_NPC4_8:
 	goto Route6_NPC4_7
 
 Route6_NPC4_10:
-	checkitem ITEM_FRESH_START_MOCHI
+	checkitem ITEM_OLD_GATEAU
 # 0 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne Route6_NPC4_15
@@ -292,7 +292,7 @@ Route6_NPC4_15:
 # 209 "data//maps/Route6/scripts.pory"
 	release
 # 210 "data//maps/Route6/scripts.pory"
-	removeitem ITEM_FRESH_START_MOCHI
+	removeitem ITEM_OLD_GATEAU
 # 211 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_3
 # 212 "data//maps/Route6/scripts.pory"
@@ -901,7 +901,7 @@ Route6_NPC4_Text_0:
 
 Route6_NPC4_Text_1:
 # 203 "data//maps/Route6/scripts.pory"
-	.string "Have you brought a MOCHI?$"
+	.string "Have you brought an Apple Pie?$"
 
 Route6_NPC4_Text_2:
 # 208 "data//maps/Route6/scripts.pory"
@@ -934,9 +934,8 @@ Route6_NPC4_Text_6:
 # 224 "data//maps/Route6/scripts.pory"
 	.string "You're right - unless I try, I'll never\n"
 	.string "know! Say, can you help me out? I want\l"
-	.string "to try making MOCHI but I don't know\l"
-	.string "what it tastes like. Can you bring me\l"
-	.string "one?$"
+	.string "to try making an Apple Pie. Can you\l"
+	.string "bring me one?$"
 
 Route6_NPC4_Text_7:
 # 227 "data//maps/Route6/scripts.pory"
