@@ -1774,12 +1774,10 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Thievul
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 31
 
 Hypno
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 32
 
 === TRAINER_ROUTE6_GRUNT2 ===
 Name: HOPE
@@ -1792,16 +1790,10 @@ Double Battle: No
 AI: Basic Trainer
 
 Swoobat
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Baltoy
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 30
 
 Hypno
 Level: 32
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GAB ===
 Name: Gabrielle
@@ -1813,16 +1805,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Zoroark
-Level: 30
+Zorua
+Level: 31
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Baltoy
-Level: 28
+Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Mawile
-Level: 28
+Level: 32
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SHANNON ===

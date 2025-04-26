@@ -638,26 +638,26 @@ script PellucaCity_Greta_ShowItemsForSale{
     speakername("Greta")
     msgbox(format("Each stone retails for 6000, but for you, I'll do 5200!"))    
 //	.macro _dynmultichoice left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg
-    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Fire Stone", "Shiny Stone", "Water Stone")
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Sun Stone", "Prism Scale", "Dawn Stone")
 
     if (var(VAR_RESULT) == 0) {
         hidemoneybox
-        goto(PellucaCity_Greta_FireStone)
+        goto(PellucaCity_Greta_Item_A)
     }
     if (var(VAR_RESULT) == 1) {
         hidemoneybox
-        goto(PellucaCity_Greta_ShinyStone)
+        goto(PellucaCity_Greta_Item_B)
     }
     if (var(VAR_RESULT) == 2) {
         hidemoneybox
-        goto(PellucaCity_Greta_WaterStone)
+        goto(PellucaCity_Greta_Item_C)
     }
  
     goto(PellucaCity_Greta_AskToShow)
 
 }
 
-script PellucaCity_Greta_FireStone{
+script PellucaCity_Greta_Item_A{
     checkmoney(5200)
     if (var(VAR_RESULT) == 0){       
         speakername("Greta")
@@ -665,14 +665,14 @@ script PellucaCity_Greta_FireStone{
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
-        setvar(VAR_0x8006, ITEM_FIRE_STONE)
+        setvar(VAR_0x8006, ITEM_SUN_STONe)
         showitemdescription        
         speakername("Greta")
-        msgbox(format("A fiery choice! You sure?"), MSGBOX_YESNO)
+        msgbox(format("A shining choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
-            giveitem(ITEM_FIRE_STONE)
+            giveitem(ITEM_SUN_STONe)
             speakername("Greta")
             msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)
@@ -683,7 +683,7 @@ script PellucaCity_Greta_FireStone{
     }
 }
 
-script PellucaCity_Greta_ShinyStone{
+script PellucaCity_Greta_Item_B{
     checkmoney(5200)
     if (var(VAR_RESULT) == 0){       
         speakername("Greta")
@@ -691,14 +691,14 @@ script PellucaCity_Greta_ShinyStone{
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
-        setvar(VAR_0x8006, ITEM_SHINY_STONE)
+        setvar(VAR_0x8006, ITEM_PRISM_SCALE)
         showitemdescription
         speakername("Greta")
-        msgbox(format("A natural choice! You sure?"), MSGBOX_YESNO)
+        msgbox(format("A brilliant choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
-            giveitem(ITEM_SHINY_STONE)
+            giveitem(ITEM_PRISM_SCALE)
             speakername("Greta")
             msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)
@@ -709,7 +709,7 @@ script PellucaCity_Greta_ShinyStone{
     }
 }
 
-script PellucaCity_Greta_WaterStone{
+script PellucaCity_Greta_Item_C{
     checkmoney(5200)
     if (var(VAR_RESULT) == 0){    
         speakername("Greta")   
@@ -717,14 +717,14 @@ script PellucaCity_Greta_WaterStone{
         release
         goto(PellucaCity_Greta_ShowItemsForSale)
     } else {
-        setvar(VAR_0x8006, ITEM_WATER_STONE)
+        setvar(VAR_0x8006, ITEM_DAWN_STONE)
         showitemdescription
         speakername("Greta")
         msgbox(format("A cool choice! You sure?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             hideitemdescription
             removemoney(5200)
-            giveitem(ITEM_WATER_STONE)
+            giveitem(ITEM_DAWN_STONE)
             speakername("Greta")
             msgbox(format("Good doing business with you! Now, what about -"))
             goto(PellucaCity_Greta_GottaGo)

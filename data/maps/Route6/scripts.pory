@@ -32,10 +32,9 @@ script Route6_Nurse_Demo{
 script Route6_EventScript_Nurse{
     lockall
     faceplayer
-    msgbox(format("Oh I don't know what happened! I went out for a walk and ended up in this storm! I'm waiting here till it passes. If you have a HEAL PASS, CHANSEY can heal your Pokémon meanwhile."))
+    msgbox(format("Eek! The bugs! The humidity! I can't wait to get back to Pelluca City. These Heal Pass assignments are the worst!\pIf you have a Heal Pass, Chansey can heal your Pokémon meanwhile."))
     release
 	call(Common_EventScript_NurseJoyOnRoute)
-    msgbox(format("Be careful - once you slide down this ledge, you won't be able to come back!"))
     release
 }
 
@@ -257,19 +256,37 @@ script Route6_NPC4{
 
 
 
+script Route6_Gabrielle_SaveGameTrigger{
+    if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)){end}   
+
+    special(SaveGame)
+	waitstate
+    release
+
+    setvar(VAR_TEMP_C, 1)
+
+    end
+}
 
 
-
-
-
+script Route6_Gabrielle_Trigger0{
+    if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)) {end}
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right))
+    waitmovement(0)
+    goto(Route6_Gabrielle_Main)
+}
+script Route6_Gabrielle_Trigger1{
+    if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)) {end}
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up face_right))
+    waitmovement(0)
+    goto(Route6_Gabrielle_Main)
+}
 
 
 //GABRIELLE encounter
-script Route6_Gabrielle_Trigger{
-    if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)) {end}
-
-    lockall
-
+script Route6_Gabrielle_Main{
     //Dialogue
     //no longer a part of somber, now give us all your pokemon
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
@@ -290,7 +307,7 @@ script Route6_Gabrielle_Trigger{
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    applymovement(LOCALID_GAB, moves(walk_down * 2 walk_left *2))
+    applymovement(LOCALID_GAB, moves(walk_down * 2 walk_left))
     waitmovement(0)
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down))
@@ -306,8 +323,8 @@ script Route6_Gabrielle_Trigger{
     //walk up
     applymovement(LOCALID_GRUNT1, moves(face_right))
     applymovement(LOCALID_GRUNT2, moves(face_right))    
-    applymovement(LOCALID_GAB, moves(walk_right * 2 walk_up *2 face_left))    
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 walk_up face_left))
+    applymovement(LOCALID_GAB, moves(walk_right walk_up *2 face_left))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2 walk_up face_left))
     waitmovement(0)
 
     goto(Route6_Gabrielle_ChooseDoubleBattleParty)
