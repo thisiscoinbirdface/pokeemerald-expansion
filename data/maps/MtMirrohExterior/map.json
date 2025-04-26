@@ -99,9 +99,9 @@
       "flag": "FLAG_MIRROH_EXTERIOR_BREECH"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
       "x": 33,
-      "y": 12,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,

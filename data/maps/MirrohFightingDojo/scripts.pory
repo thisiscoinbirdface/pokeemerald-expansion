@@ -3,12 +3,34 @@ mapscripts MirrohFightingDojo_MapScripts{}
 
 
 
-//dojo head wants to move the dojo away from the shrines because a mysterious pokemon attacks at night
-//trainers say its a bad idea because the shrines are their thing
-//dojo says she can't protect all of them
-//DOJO DEMON (infernape)
-//Trainer allowed into shrine, (chase sequence), go to the end and fight the DOJO DEMON
-//DOJO DEMON just wants CHIMCHAR to survive in the cold, so it was asking for help.
+//flower shop
+    //sells herbs and seeds
+
+
+//cashier
+script GardenShop_Cashier{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Pelluca Restaurant! Unfortunately we're fully booked out today."))
+	message(format("But you can still order something to take away!"))
+	waitmessage
+	pokemart(GardenShop_Inventory)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+    end
+}
+
+mart GardenShop_Inventory {
+    ITEM_WHITE_HERB
+    ITEM_MENTAL_HERB
+    ITEM_POWER_HERB
+    ITEM_MIRROR_HERB
+    ITEM_ELECTRIC_SEED
+    ITEM_PSYCHIC_SEED
+    ITEM_MISTY_SEED
+    ITEM_GRASSY_SEED
+}
+
 
 
 

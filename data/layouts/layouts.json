@@ -5174,10 +5174,10 @@
     {
       "id": "LAYOUT_MIRROH_FIGHTING_DOJO",
       "name": "MirrohFightingDojo_Layout",
-      "width": 10,
-      "height": 11,
+      "width": 15,
+      "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PetalburgGym",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
       "border_filepath": "data/layouts/MirrohFightingDojo/border.bin",
       "blockdata_filepath": "data/layouts/MirrohFightingDojo/map.bin"
     },
