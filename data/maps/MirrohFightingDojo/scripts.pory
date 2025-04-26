@@ -35,3 +35,34 @@ mart GardenShop_Inventory {
 
 
 
+
+
+
+
+
+
+
+script FlowerShop_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script FlowerShop_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script FlowerShop_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+script FlowerShop_Roselia{
+    playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script FlowerShop_Lilligant{
+    playmoncry(SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
