@@ -499,9 +499,9 @@ MtMirrohExterior_NPC_B_Text_0:
 
 MtMirrohExterior_NPC_C_Text_0:
 # 168 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "The Vivillon here take good care of the\n"
-	.string "flowers, which is why they grow even in\l"
-	.string "such cold weather!$"
+	.string "The Vivillon from the Garden Shop take\n"
+	.string "good care of the flowers, which is why\l"
+	.string "they grow even in such cold weather!$"
 
 MtMirrohExterior_NPC_D_Text_0:
 # 176 "data//maps/MtMirrohExterior/scripts.pory"

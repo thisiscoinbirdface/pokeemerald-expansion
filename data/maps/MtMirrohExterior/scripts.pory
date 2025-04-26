@@ -165,7 +165,7 @@ script MtMirrohExterior_NPC_B{
 script MtMirrohExterior_NPC_C{
     lockall
     faceplayer
-    msgbox(format("The Vivillon here take good care of the flowers, which is why they grow even in such cold weather!"))
+    msgbox(format("The Vivillon from the Garden Shop take good care of the flowers, which is why they grow even in such cold weather!"))
     releaseall
     end
 }

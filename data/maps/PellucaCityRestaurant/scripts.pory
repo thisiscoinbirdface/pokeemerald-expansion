@@ -69,14 +69,25 @@ script PellucaCityRestaurant_NPC8{
     end
 }
 //cashier
-script PellucaCityRestaurant_NPC9{
+script PellucaCityRestaurant_Cashier{
     lockall
     faceplayer
     msgbox(format("Welcome to the Pelluca Restaurant! Unfortunately we're fully booked out today."))
-    releaseall
+	message(format("But you can still order something to take away!"))
+	waitmessage
+	pokemart(Pelluca_Restaurant_Inventory)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
     end
 }
 
+mart Pelluca_Restaurant_Inventory {
+    ITEM_LEMONADE    
+    ITEM_OLD_GATEAU
+    ITEM_SWEET_APPLE
+    ITEM_TART_APPLE
+    ITEM_SYRUPY_APPLE
+}
 
 
 
@@ -282,5 +293,12 @@ script PellucaCityRestaurant_NPC_Trade{
     }
 
 end
-
 }
+
+
+
+
+
+
+
+

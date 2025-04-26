@@ -200,14 +200,14 @@ script Route6_NPC4{
     }
 
     if (var(VAR_ROUTE6_FISHERMAN) == 1){
-        msgbox(format("Have you brought a MOCHI?"), MSGBOX_YESNO)
+        msgbox(format("Have you brought an Apple Pie?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
 
-            if (checkitem(ITEM_FRESH_START_MOCHI)){
+            if (checkitem(ITEM_OLD_GATEAU)){
                 msgbox(format("Yes, this looks amazing!\p...\pInteresting flavour. I think I can make it!"))
                 release
-                removeitem(ITEM_FRESH_START_MOCHI)
+                removeitem(ITEM_OLD_GATEAU)
                 msgbox(format("I suppose I don't need this any more. Here, why don't you take it? You could start a new hobby too!"))
                 giveitem(ITEM_GOOD_ROD)
                 setvar(VAR_ROUTE6_FISHERMAN, 2)
@@ -221,7 +221,7 @@ script Route6_NPC4{
         msgbox(format("These waters are too strong to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby. I'd like to try cooking, but I might be no good. What do you think? Should I try cooking?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //yes
-            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? I want to try making MOCHI but I don't know what it tastes like. Can you bring me one?"), MSGBOX_YESNO)
+            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? I want to try making an Apple Pie. Can you bring me one?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     //Start quest
                     msgbox(format("Thank you so much! I'll be waiting here for you."))
