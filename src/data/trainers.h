@@ -4753,11 +4753,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHEXT_D] =
     {
 #line 1953
-        .trainerName = _("ISAAC"),
+        .trainerName = _("Bianca"),
 #line 1954
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 1955
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
 #line 1957
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -4796,18 +4796,20 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHEXT_E] =
     {
 #line 1971
-        .trainerName = _("STONE"),
+        .trainerName = _("Anaya"),
 #line 1972
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1973
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
+#line 1974
+F_TRAINER_FEMALE | 
 #line 1975
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 1976
         .doubleBattle = FALSE,
 #line 1977
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -4850,14 +4852,12 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHEXT_F] =
     {
 #line 1992
-        .trainerName = _("PATRICIA"),
+        .trainerName = _("Ringer"),
 #line 1993
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 1994
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1995
-F_TRAINER_FEMALE | 
 #line 1996
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 1997
@@ -4895,11 +4895,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHEXT_G] =
     {
 #line 2009
-        .trainerName = _("KINDRA"),
+        .trainerName = _("Kindra"),
 #line 2010
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 2011
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
 #line 2012
 F_TRAINER_FEMALE | 
@@ -4914,23 +4914,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2017
-            .species = SPECIES_DUSKULL,
+            .species = SPECIES_CROAGUNK,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2019
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 2018
-            .lvl = 30,
+            .lvl = 32,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 2021
-            .species = SPECIES_SHUPPET,
+            .species = SPECIES_PASSIMIAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2023
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 2022
-            .lvl = 30,
+            .lvl = 34,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -4942,9 +4942,9 @@ F_TRAINER_FEMALE |
 #line 2026
         .trainerName = _("TAMMY"),
 #line 2027
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 2028
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
 #line 2029
 F_TRAINER_FEMALE | 
@@ -4959,23 +4959,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2034
-            .species = SPECIES_DUSKULL,
+            .species = SPECIES_PANCHAM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2036
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 2035
-            .lvl = 29,
+            .lvl = 32,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 2038
-            .species = SPECIES_SHUPPET,
+            .species = SPECIES_PRIMEAPE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2040
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 2039
-            .lvl = 29,
+            .lvl = 33,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

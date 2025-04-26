@@ -159,7 +159,8 @@ script MirrohBaseCamp_Trainer_A{
         trainerbattle_no_intro(TRAINER_MIRROHEXT_D, format(""))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_A)
         msgbox(format(""))
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(8, moves(walk_left walk_up walk_left *10))
         waitmovement(0)
         removeobject(8)
@@ -170,7 +171,7 @@ script MirrohBaseCamp_Trainer_A{
 }
 
 //Cooltrainer
-script MirrohBaseCamp_Trainer_A{
+script MirrohBaseCamp_Trainer_B{
     lockall
     faceplayer
 
@@ -182,7 +183,8 @@ script MirrohBaseCamp_Trainer_A{
             trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format(""))
             setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
             msgbox(format(""))
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+            release
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
             applymovement(9, moves(walk_left *10))
             waitmovement(0)
             removeobject(9)
@@ -195,7 +197,7 @@ script MirrohBaseCamp_Trainer_A{
 
 
 //Ruin maniac
-script MirrohBaseCamp_Trainer_A{
+script MirrohBaseCamp_Trainer_C{
     lockall
     faceplayer
 
@@ -207,7 +209,8 @@ script MirrohBaseCamp_Trainer_A{
             trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format(""))
             setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
             msgbox(format(""))
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_up))
+            release
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
             applymovement(10, moves(walk_left *10))
             waitmovement(0)
             removeobject(10)
