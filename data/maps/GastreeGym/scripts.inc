@@ -246,7 +246,7 @@ GastreeGym_EventScript_Victory_Text_0:
 GastreeGym_EventScript_Victory_Text_1:
 # 60 "data//maps/GastreeGym/scripts.pory"
 	.string "The Hard Badge allows you to use HM\n"
-	.string "SPLASH outside of battle. Hop and skip\l"
+	.string "Splash outside of battle. Hop and skip\l"
 	.string "across all the water bodies of Cormoria!$"
 
 GastreeGym_EventScript_Victory_Text_2:
@@ -257,11 +257,10 @@ GastreeGym_EventScript_Victory_Text_3:
 # 68 "data//maps/GastreeGym/scripts.pory"
 	.string "This is an incredibly rare stone that\n"
 	.string "reacts in the prescence of an ancient\l"
-	.string "statue. Nobody knows where they're\l"
-	.string "from, but they're a key secret to any\l"
-	.string "strong trainer's success! Go to any\l"
-	.string "ancient statue to try it out. There's\l"
-	.string "one in Gastree City!$"
+	.string "statue. Any Pokemon you give it to can\l"
+	.string "maximise one of its innate stats! Go to\l"
+	.string "any ancient statue to try it out.\l"
+	.string "There's one in Gastree City!$"
 
 GastreeGym_EventScript_Victory_Text_4:
 # 73 "data//maps/GastreeGym/scripts.pory"
