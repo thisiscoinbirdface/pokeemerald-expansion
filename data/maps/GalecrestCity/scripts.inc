@@ -382,15 +382,15 @@ GalecrestCity_NPC_4::
 	end
 
 
-GalecrestCity_Froakie::
+GalecrestCity_Totodile::
 # 310 "data//maps/GalecrestCity/scripts.pory"
 	lockall
 # 311 "data//maps/GalecrestCity/scripts.pory"
 	faceplayer
 # 312 "data//maps/GalecrestCity/scripts.pory"
-	playmoncry SPECIES_FROAKIE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TOTODILE, CRY_MODE_ENCOUNTER
 # 313 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_Froakie_Text_0
+	msgbox GalecrestCity_Totodile_Text_0
 # 314 "data//maps/GalecrestCity/scripts.pory"
 	releaseall
 	end
@@ -980,9 +980,10 @@ GalecrestCity_NPC_4_Text_0:
 	.string "When I grow up, I want to be just like my\n"
 	.string "sister!$"
 
-GalecrestCity_Froakie_Text_0:
+GalecrestCity_Totodile_Text_0:
 # 313 "data//maps/GalecrestCity/scripts.pory"
-	.string "FROAKIE is having fun with the siblings!$"
+	.string "Totodile is having fun with the\n"
+	.string "siblings!$"
 
 GalecrestCity_NPC_5_Text_0:
 # 326 "data//maps/GalecrestCity/scripts.pory"
