@@ -5074,7 +5074,7 @@ static void Cmd_getexp(void)
                 calculatedExp /= 7;
 
             if (B_TRAINER_EXP_MULTIPLIER <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-                calculatedExp = (calculatedExp * 150) / 100;
+                calculatedExp = (calculatedExp * 150) / 100; 
 
             if (B_SPLIT_EXP < GEN_6)
             {
