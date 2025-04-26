@@ -373,7 +373,7 @@
       "y": 23,
       "elevation": 3,
       "item": "ITEM_REVIVE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_REVIVE"
+      "flag": "FLAG_HIDDEN_ITEM_PELLUCA_RESTAURANT_A"
     },
     {
       "type": "hidden_item",
@@ -389,7 +389,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_GREAT_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_GREAT_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_PELLUCA_RESTAURANT_B"
     },
     {
       "type": "hidden_item",

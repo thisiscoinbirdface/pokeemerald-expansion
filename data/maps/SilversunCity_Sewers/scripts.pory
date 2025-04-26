@@ -342,10 +342,8 @@ script SilversunCity_Sewers_Market_C{
 
 mart SilversunCity_Sewers_Market_C_Inventory{
     ITEM_BLACK_AUGURITE
-    ITEM_DUBIOUS_DISC
-    ITEM_REAPER_CLOTH
-    ITEM_LUSTER_STONE
-    ITEM_SHINY_STONE
+    ITEM_METAL_COAT
+    ITEM_RAZOR_CLAW
     ITEM_CHIPPED_POT
     ITEM_MASTERPIECE_TEACUP
 }
@@ -368,10 +366,8 @@ script SilversunCity_Sewers_Market_D{
 
 mart SilversunCity_Sewers_Market_D_Inventory{
     ITEM_BLACK_AUGURITE
-    ITEM_DUBIOUS_DISC
-    ITEM_REAPER_CLOTH
-    ITEM_LUSTER_STONE
-    ITEM_SHINY_STONE
+    ITEM_METAL_COAT
+    ITEM_RAZOR_CLAW
     ITEM_CHIPPED_POT
     ITEM_MASTERPIECE_TEACUP
 }

@@ -244,6 +244,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 29,
+      "elevation": 0,
+      "item": "ITEM_LEFTOVERS",
+      "flag": "FLAG_HIDDEN_ITEM_PELLUCA_RESTAURANT_A"
+    }
   ]
 }

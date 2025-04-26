@@ -233,12 +233,12 @@ script SilversunCity_Theater_Lens_RewardA{
     }
 }
 script SilversunCity_Theater_Lens_RewardB{
-    setvar(VAR_0x8006, ITEM_SCOPE_LENS)
+    setvar(VAR_0x8006, ITEM_ZOOM_LENS)
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         hideitemdescription
-        giveitem(ITEM_SCOPE_LENS)
+        giveitem(ITEM_ZOOM_LENS)
         goto(SilversunCity_Theater_Lens_RewardEnd)
     } else {
         hideitemdescription

@@ -74,6 +74,7 @@ script PellucaCityHouses_Mayor_Reward2{
 script PellucaCityHouses_Mayor_Reward_End{
     setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
     msgbox(format("On the behalf of residents of Pelluca City, thank you for your service!"), MSGBOX_NPC)
+    end
 }
 
 script PellucaCityHouses_NPC1{

@@ -329,7 +329,7 @@ SilversunCity_Theater_Lens_RewardA_1:
 
 SilversunCity_Theater_Lens_RewardB::
 # 236 "data//maps/SilversunCity_Theater/scripts.pory"
-	setvar VAR_0x8006, ITEM_SCOPE_LENS
+	setvar VAR_0x8006, ITEM_ZOOM_LENS
 # 237 "data//maps/SilversunCity_Theater/scripts.pory"
 	showitemdescription
 # 238 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -347,7 +347,7 @@ SilversunCity_Theater_Lens_RewardB_1:
 # 240 "data//maps/SilversunCity_Theater/scripts.pory"
 	hideitemdescription
 # 241 "data//maps/SilversunCity_Theater/scripts.pory"
-	giveitem ITEM_SCOPE_LENS
+	giveitem ITEM_ZOOM_LENS
 # 242 "data//maps/SilversunCity_Theater/scripts.pory"
 	goto SilversunCity_Theater_Lens_RewardEnd
 	return

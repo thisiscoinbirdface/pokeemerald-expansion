@@ -119,11 +119,10 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         msgbox(format("Quiii!!!!!"))
         release
         delay(8)     
-        msgbox(format("Here, you must take this. No no, I insist."))
-        giveitem(ITEM_POTION)
-        completequest(QUEST_CERAM_CYNDAQUIL)
+
+        goto(CeramBaseCamp_Cyndaquil_Reward)
     } else { //refuse to give TM
-        msgbox(format("Please bring the TM SUNNY DAY for Cyndaquil!"))
+        msgbox(format("Please bring the TM Sunny Day for Cyndaquil!"))
         release
     }
 
@@ -133,6 +132,54 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+script CeramBaseCamp_Cyndaquil_Reward{
+    msgbox(format("In exchangeo you want one of these other TMs I've got?"))
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "TM Sandstorm", "TM Skill Swap") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_TM37)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_TM48)}
+    goto(CeramBaseCamp_Cyndaquil_Reward_Give)
+}
+
+script CeramBaseCamp_Cyndaquil_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){
+        giveitem(VAR_0x8006)
+        goto(CeramBaseCamp_Cyndaquil_Reward_End)
+    } 
+    else {goto(CeramBaseCamp_Cyndaquil_Reward)}
+}
+
+script CeramBaseCamp_Cyndaquil_Reward_End{
+    completequest(QUEST_CERAM_CYNDAQUIL)
+    msgbox(format("See you trainer!"), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 //NPC5 - giveitem
 script CeramBaseCamp_NPC5{    
     if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
@@ -141,7 +188,7 @@ script CeramBaseCamp_NPC5{
         lockall
         faceplayer
         msgbox(format("Mt. Ceram's geology is unique. Many rare rocks can be found up there. Here, have one."))
-        giveitem(ITEM_DAWN_STONE)
+        giveitem(ITEM_KINGS_ROCK)
         setflag(FLAG_CERAMBASECAMP_NPCITEM)
         msgbox(format("Don't worry. I've got tons of these!"), MSGBOX_NPC)
         release

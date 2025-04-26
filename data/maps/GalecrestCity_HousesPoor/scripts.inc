@@ -39,7 +39,7 @@ GalecrestCity_HousesPoor_NPC1_8:
 # 19 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	removeitem ITEM_BLUE_FLUTE
 # 20 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	giveitem ITEM_PEAT_BLOCK
+	giveitem ITEM_AMULET_COIN
 # 21 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	setflag FLAG_GALECREST_POOR_TRADEITEM
 # 22 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
@@ -110,13 +110,17 @@ GalecrestCity_HousesPoor_NPC1_Text_1:
 	.string "want to see her happy...\p"
 	.string "Would you be willing to give me a Blue\n"
 	.string "Flute? I can't offer money, but in\l"
-	.string "exchange, I can give you this PEAT\l"
-	.string "BLOCK.$"
+	.string "exchange, I can give you this Amulet\l"
+	.string "Coin. It's supposed to bring you good\l"
+	.string "fortune...but it's never worked for me.$"
 
 GalecrestCity_HousesPoor_NPC1_Text_2:
 # 18 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "Thank you so much! This will be a\n"
-	.string "perfect gift for her.$"
+	.string "perfect gift for her.\p"
+	.string "Here, take this Amulet Coin. Not like it\n"
+	.string "ever did me any good. I hope it brings\l"
+	.string "you luck.$"
 
 GalecrestCity_HousesPoor_NPC1_Text_3:
 # 22 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
@@ -130,8 +134,9 @@ GalecrestCity_HousesPoor_NPC1_Text_4:
 
 GalecrestCity_HousesPoor_NPC1_Text_5:
 # 27 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "I understand. This Peat Block is\n"
-	.string "worthless compared to a Blue Flute.$"
+	.string "I understand. It's out of your way.\p"
+	.string "Sigh...I just wish I had more money, you\n"
+	.string "know?$"
 
 GalecrestCity_HousesPoor_NPC2_Text_0:
 # 36 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
@@ -164,7 +169,7 @@ GalecrestCity_HousesPoor_NPC5_Text_0:
 
 GalecrestCity_HousesPoor_NPC6_Text_0:
 # 67 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "My wife has high ambitious for the kids.\n"
+	.string "My wife has high ambitions for the kids.\n"
 	.string "I'll support her, but personally I'll be\l"
 	.string "happy as long as they grow up to become\l"
 	.string "responsible adults.$"

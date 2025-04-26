@@ -55,12 +55,58 @@ script MtMirrohExterior_BreechTrigger{
     release
     delay(60)
     speakername("Breech")    
-    msgbox(format("Clefable and I have become stronger now, but I really don't want to get involved in all these matters. We'll find some other way through the mountain. All the best, {PLAYER}!"))
+    msgbox(format("Clefable and I just made our way down Mt. Mirroh. We're going to take a break from the mountains.\pWhere are we going next?\pRivetshore City! We're going to enjoy the sea breeze for a while."))
+    goto(MtMirrohExterior_Breech_Reward)
+}
+
+script MtMirrohExterior_Breech_Reward{
+    msgbox(format("We don't need these any more, so would you like one?"), MSGBOX_NPC)
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Assault Vest", "Rocky Helmet") 
+    if (var(VAR_RESULT) == 1){
+        goto(MtMirrohExterior_Breech_Reward1)
+    } else {
+        goto(MtMirrohExterior_Breech_Reward2)
+    }
+}
+
+script MtMirrohExterior_Breech_Reward1{
+    setvar(VAR_0x8006, ITEM_ASSAULT_VEST)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_ASSAULT_VEST)
+        goto(MtMirrohExterior_Breech_Reward_End)
+    } else {
+        hideitemdescription
+        goto(MtMirrohExterior_Breech_Reward)
+    }
+}
+
+script MtMirrohExterior_Breech_Reward2{
+    setvar(VAR_0x8006, ITEM_ROCKY_HELMET)
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(ITEM_ROCKY_HELMET)
+        goto(MtMirrohExterior_Breech_Reward_End)
+    } else {
+        hideitemdescription
+        goto(MtMirrohExterior_Breech_Reward)
+    }
+}
+
+script MtMirrohExterior_Breech_Reward_End{
+    speakername("Breech")    
+    msgbox(format("Maybe we'll see you in Rivetshore City!"))
     release
+    delay(16)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    delay(8)
     speakername("Clefable")    
     msgbox(format("Clee!!!"))
-    release    
+    release
     delay(24)
 
     fadescreen(FADE_TO_BLACK)
@@ -71,8 +117,9 @@ script MtMirrohExterior_BreechTrigger{
     setflag(FLAG_MIRROH_EXTERIOR_BREECH)
     releaseall
     end
-
 }
+
+
 
 //Trainers
 script MtMirrohExterior_Trainer_A{
