@@ -83,15 +83,15 @@ script WinterlilyHollow_NPC2{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
         msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."), MSGBOX_NPC)
     } else {
-        msgbox(format("")) 
+        msgbox(format("Mom told me never to go into Ivy River! She says kids my age go missing there. So of course I'm gonna go!\p...\pBut only when Mom's not looking.")) 
     }
     end
 }
 script WinterlilyHollow_NPC3{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Visitors are rare here. You must be brave - or lost."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     } else {
-        msgbox(format("Visitors are rare here. You must be brave - or lost."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     }
     end
 }

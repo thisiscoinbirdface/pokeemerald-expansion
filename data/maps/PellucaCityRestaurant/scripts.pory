@@ -8,7 +8,7 @@ mapscripts PellucaCityRestaurant_MapScripts{}
 script PellucaCityRestaurant_NPC1{
     lockall
     faceplayer
-    msgbox(format("I reconnected with my daughter after many years. What do I say to her?"))
+    msgbox(format("My daughter only thinks about gyms and badges. She doesn't live in the moment!"))
     releaseall
     end
 }
@@ -16,7 +16,7 @@ script PellucaCityRestaurant_NPC1{
 script PellucaCityRestaurant_NPC2{
     lockall
     faceplayer
-    msgbox(format("I'm seeing my dad after a long time. It's awkward."))
+    msgbox(format("Apparently they're closing down the Mirroh Base Camp Gym. Where will I get my next badge from?"))
     releaseall
     end
 }

@@ -22,7 +22,7 @@ script PellucaFishery_NPC2{
     if (var(VAR_PELLUCA_FISHERY) == 3){
         msgbox(format(""))
     } else {
-        msgbox(format("I bet me and my Toedscruel could give that Sharpedo a whooping and a half, but Old Man Slakka doesn't want us to risk it."))
+        msgbox(format("People avoid the Ivy River not just because of the Mega Sharpedo, but because it's cursed! A long time ago, a boy went missing on a fishing trip there. Since then, people have stopped going there."))
     }
     releaseall
     end
