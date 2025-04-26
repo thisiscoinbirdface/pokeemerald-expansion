@@ -5144,7 +5144,7 @@
     {
       "id": "LAYOUT_MIRROH_BASE_CAMP_GYM",
       "name": "MirrohBaseCampGym_Layout",
-      "width": 10,
+      "width": 8,
       "height": 13,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleTent",

@@ -4940,7 +4940,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHEXT_H] =
     {
 #line 2026
-        .trainerName = _("TAMMY"),
+        .trainerName = _("Tammy"),
 #line 2027
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 2028
