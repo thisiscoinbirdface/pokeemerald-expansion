@@ -57,7 +57,7 @@ script GastreeGym_EventScript_Victory{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Inger")
-    msgbox(format("The Hard Badge allows you to use HM SPLASH outside of battle. Hop and skip across all the water bodies of Cormoria!"))
+    msgbox(format("The Hard Badge allows you to use HM Splash outside of battle. Hop and skip across all the water bodies of Cormoria!"))
     release
     delay(16)
     //Also give 3 rare shards
@@ -65,7 +65,7 @@ script GastreeGym_EventScript_Victory{
     msgbox(format("I also want to give you this."))
     giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
-    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
+    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokemon you give it to can maximise one of its innate stats! Go to any ancient statue to try it out. There's one in Gastree City!"))
     release
     delay(16)
     //Bye-bye
