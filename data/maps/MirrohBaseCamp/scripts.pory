@@ -154,7 +154,7 @@ script MirrohBaseCamp_Trainer_A{
     lockall
     faceplayer
 
-    msgbox(format("Haven't you heard? They're closing the gym here. So everyone's queueing up to get a badge before it closes.\pHey, wanna do a warm-up battle?"), MSGBOX_YESNO)
+    msgbox(format("Haven't you heard? They're closing the gym here. So everyone's queueing up to get a badge before it closes.\pWanna do a warm-up battle?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         trainerbattle_no_intro(TRAINER_MIRROHEXT_D, format("You were warmed up already!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_A)

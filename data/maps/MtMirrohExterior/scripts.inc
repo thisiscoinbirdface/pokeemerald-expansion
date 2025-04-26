@@ -467,7 +467,8 @@ MtMirrohExterior_Trainer_B_Text_1:
 
 MtMirrohExterior_Trainer_B_Text_2:
 # 112 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "$"
+	.string "I love the mountains! There are so many\n"
+	.string "good hiding spots.$"
 
 MtMirrohExterior_Trainer_C_Text_0:
 # 117 "data//maps/MtMirrohExterior/scripts.pory"

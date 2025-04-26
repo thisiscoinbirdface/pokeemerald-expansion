@@ -216,7 +216,7 @@ MirrohBaseCamp_Trainer_A_2:
 # 160 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_A
 # 161 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Trainer_A_Text_1
+	msgbox MirrohBaseCamp_Trainer_A_Text_2
 # 162 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
 # 163 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -246,7 +246,7 @@ MirrohBaseCamp_Trainer_B_1:
 
 MirrohBaseCamp_Trainer_B_2:
 # 181 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Trainer_A_Text_1, MSGBOX_YESNO
+	msgbox MirrohBaseCamp_Trainer_B_Text_1
 # 182 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Trainer_B_4
@@ -254,11 +254,11 @@ MirrohBaseCamp_Trainer_B_2:
 
 MirrohBaseCamp_Trainer_B_4:
 # 183 "data//maps/MirrohBaseCamp/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHEXT_E, MirrohBaseCamp_Trainer_A_Text_1
+	trainerbattle_no_intro TRAINER_MIRROHEXT_E, MirrohBaseCamp_Trainer_B_Text_2
 # 184 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_B
 # 185 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Trainer_A_Text_1
+	msgbox MirrohBaseCamp_Trainer_B_Text_3
 # 186 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
 # 187 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -282,7 +282,7 @@ MirrohBaseCamp_Trainer_C::
 # 206 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto_if_set FLAG_MIRROHBASECAMP_TRAINER_B, MirrohBaseCamp_Trainer_C_2
 MirrohBaseCamp_Trainer_C_1:
-# 221 "data//maps/MirrohBaseCamp/scripts.pory"
+# 220 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
@@ -296,11 +296,11 @@ MirrohBaseCamp_Trainer_C_2:
 
 MirrohBaseCamp_Trainer_C_4:
 # 209 "data//maps/MirrohBaseCamp/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHEXT_F, MirrohBaseCamp_Trainer_A_Text_1
+	trainerbattle_no_intro TRAINER_MIRROHEXT_F, MirrohBaseCamp_Trainer_C_Text_2
 # 210 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_C
 # 211 "data//maps/MirrohBaseCamp/scripts.pory"
-	msgbox MirrohBaseCamp_Trainer_A_Text_1
+	msgbox MirrohBaseCamp_Trainer_C_Text_3
 # 212 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
 # 213 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -529,15 +529,37 @@ MirrohBaseCamp_Trainer_A_Text_0:
 	.string "Haven't you heard? They're closing the\n"
 	.string "gym here. So everyone's queueing up to\l"
 	.string "get a badge before it closes.\p"
-	.string "Hey, wanna do a warm-up battle?$"
+	.string "Wanna do a warm-up battle?$"
 
 MirrohBaseCamp_Trainer_A_Text_1:
 # 159 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "$"
+	.string "You were warmed up already!$"
+
+MirrohBaseCamp_Trainer_A_Text_2:
+# 161 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "Oh no! I'll have to heal my Pokemon. Hold\n"
+	.string "my place in line - I'll be right back!$"
 
 MirrohBaseCamp_Trainer_B_Text_0:
 # 178 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Yes$"
+	.string "What dreadfully sad little town! It's a\n"
+	.string "wonder this gym lasted so long.$"
+
+MirrohBaseCamp_Trainer_B_Text_1:
+# 181 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "I saw the battle with the trainer\n"
+	.string "behind me. You're not bad, but you'll\l"
+	.string "have to try harder than that to beat\l"
+	.string "me!$"
+
+MirrohBaseCamp_Trainer_B_Text_2:
+# 183 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "Stop trying so hard!$"
+
+MirrohBaseCamp_Trainer_B_Text_3:
+# 185 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "If I can't beat a kid like you, what\n"
+	.string "chance do I have against Carona?$"
 
 MirrohBaseCamp_Trainer_C_Text_0:
 # 204 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -548,3 +570,13 @@ MirrohBaseCamp_Trainer_C_Text_1:
 # 207 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "What? If you keep looking at me like\n"
 	.string "that, I'll make you pay!$"
+
+MirrohBaseCamp_Trainer_C_Text_2:
+# 209 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "You made me pay!$"
+
+MirrohBaseCamp_Trainer_C_Text_3:
+# 211 "data//maps/MirrohBaseCamp/scripts.pory"
+	.string "Grr - fine! Go in first! I'll have to go\n"
+	.string "heal. I hope Carona wipes the floor with\l"
+	.string "you!$"
