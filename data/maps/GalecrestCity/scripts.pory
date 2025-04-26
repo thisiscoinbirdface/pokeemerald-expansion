@@ -306,11 +306,11 @@ script GalecrestCity_NPC_4{
     end
 }
 
-script GalecrestCity_Froakie{
+script GalecrestCity_Totodile{
     lockall
     faceplayer
-    playmoncry(SPECIES_FROAKIE, CRY_MODE_ENCOUNTER)
-    msgbox(format("FROAKIE is having fun with the siblings!"))
+    playmoncry(SPECIES_TOTODILE, CRY_MODE_ENCOUNTER)
+    msgbox(format("Totodile is having fun with the siblings!"))
     releaseall
     end
 }

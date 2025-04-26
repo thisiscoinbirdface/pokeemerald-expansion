@@ -12562,7 +12562,7 @@
               {
                 "min_level": 24,
                 "max_level": 27,
-                "species": "SPECIES_FROGADIER"
+                "species": "SPECIES_CROCONAW"
               },
               {
                 "min_level": 24,
@@ -12572,7 +12572,7 @@
               {
                 "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_FROGADIER"
+                "species": "SPECIES_CROCONAW"
               }
             ]
           },
