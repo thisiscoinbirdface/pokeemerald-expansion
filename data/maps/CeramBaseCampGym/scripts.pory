@@ -213,7 +213,7 @@ script CeramBaseCampGym_LeaderBattle {
         msgbox(format("And I'd also like to give you this."))
         release
         //Give TM also
-        giveitem(ITEM_RARE_SHARD, 2)
+        giveitem(ITEM_RARE_SHARD)
 
         speakername("Ariana")
         msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a shrine close to Route 4, so why don't you use these there?"))

@@ -62,10 +62,10 @@ script GastreeGym_EventScript_Victory{
     delay(16)
     //Also give 3 rare shards
     speakername("Inger")
-    msgbox(format("I also want to give you these."))
-    giveitem(ITEM_RARE_SHARD, 2)
+    msgbox(format("I also want to give you this."))
+    giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
-    msgbox(format("These are incredibly rare stones that react in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
+    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Nobody knows where they're from, but they're a key secret to any strong trainer's success! Go to any ancient statue to try it out. There's one in Gastree City!"))
     release
     delay(16)
     //Bye-bye

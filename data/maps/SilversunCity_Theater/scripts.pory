@@ -97,9 +97,9 @@ script SilversunCity_Theater_Leader{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Gloria")
-    msgbox(format("The Drama Badge will let you use HM Strength outside of battle. And I must give you these beautiful jewels too."))
+    msgbox(format("The Drama Badge will let you use HM Strength outside of battle. And I must give you this beautiful jewel too."))
     //Give item also
-    giveitem(ITEM_RARE_SHARD, 2)
+    giveitem(ITEM_RARE_SHARD)
 
     //Bye-bye
     speakername("Gloria")

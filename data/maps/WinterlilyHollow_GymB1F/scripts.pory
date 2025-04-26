@@ -142,7 +142,7 @@ script WinterlilyHollowGym_LeaderBattle {
         msgbox(format("And I'd also like you to have this."))
         release
         //Give TM also
-        giveitem(ITEM_RARE_SHARD, 2)
+        giveitem(ITEM_RARE_SHARD)
         release
 
         //Bye-bye
