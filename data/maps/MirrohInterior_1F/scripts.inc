@@ -457,94 +457,108 @@ MirrohInterior_1F_SomberGrunts_Trigger::
 # 371 "data//maps/MirrohInterior_1F/scripts.pory"
 	delay 16
 # 372 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_0
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_0
 # 373 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
-# 374 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_1
-# 375 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 376 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 16
-# 377 "data//maps/MirrohInterior_1F/scripts.pory"
 	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_1
+# 374 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 375 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_1
+# 376 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 377 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 16
 # 378 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_2
 # 379 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 24
+	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_3
+# 380 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
 # 381 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT1, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
-# 382 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT2, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
+	delay 24
 # 383 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 384 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 24
-# 386 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_2
-# 387 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
-# 389 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_2
-# 390 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_2
-# 391 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 392 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 24
-# 394 "data//maps/MirrohInterior_1F/scripts.pory"
-	trainerbattle_no_intro TRAINER_MIRROHINT_E, MirrohInterior_1F_SomberGrunts_Trigger_Text_3
-# 396 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement LOCALID_GRUNT1, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
-# 397 "data//maps/MirrohInterior_1F/scripts.pory"
+# 384 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT2, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
+# 385 "data//maps/MirrohInterior_1F/scripts.pory"
 	waitmovement 0
-# 398 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 16
-# 399 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_4
-# 400 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
-# 401 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 8
-# 402 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_3
-# 403 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 404 "data//maps/MirrohInterior_1F/scripts.pory"
-	delay 16
-# 405 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_5
-# 406 "data//maps/MirrohInterior_1F/scripts.pory"
-	release
-# 407 "data//maps/MirrohInterior_1F/scripts.pory"
+# 386 "data//maps/MirrohInterior_1F/scripts.pory"
 	delay 24
-# 409 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_4
-# 410 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT2, MirrohInterior_1F_EventScript_NurseQuest_End_Movement_8
-# 411 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 412 "data//maps/MirrohInterior_1F/scripts.pory"
-	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_6
-# 413 "data//maps/MirrohInterior_1F/scripts.pory"
+# 388 "data//maps/MirrohInterior_1F/scripts.pory"
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_0
+# 389 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_4
+# 390 "data//maps/MirrohInterior_1F/scripts.pory"
 	release
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
-	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_5
-# 417 "data//maps/MirrohInterior_1F/scripts.pory"
+# 392 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_2
+# 393 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_2
+# 394 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 395 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 24
+# 397 "data//maps/MirrohInterior_1F/scripts.pory"
+	trainerbattle_no_intro TRAINER_MIRROHINT_E, MirrohInterior_1F_SomberGrunts_Trigger_Text_5
+# 399 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT1, MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Movement_0
+# 400 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 401 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 16
+# 402 "data//maps/MirrohInterior_1F/scripts.pory"
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_0
+# 403 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_6
+# 404 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 405 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 8
+# 406 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_3
+# 407 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 408 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 16
+# 409 "data//maps/MirrohInterior_1F/scripts.pory"
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_2
+# 410 "data//maps/MirrohInterior_1F/scripts.pory"
+	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_7
+# 411 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 412 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 24
+# 414 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_4
+# 415 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_5
+# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 417 "data//maps/MirrohInterior_1F/scripts.pory"
+	delay 16
 # 418 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
+	speakername MirrohInterior_1F_SomberGrunts_Trigger_Text_0
 # 419 "data//maps/MirrohInterior_1F/scripts.pory"
-	removeobject LOCALID_GRUNT2
+	msgbox MirrohInterior_1F_SomberGrunts_Trigger_Text_8
 # 420 "data//maps/MirrohInterior_1F/scripts.pory"
+	release
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_6
-# 421 "data//maps/MirrohInterior_1F/scripts.pory"
-	waitmovement 0
-# 422 "data//maps/MirrohInterior_1F/scripts.pory"
-	removeobject LOCALID_GRUNT1
 # 424 "data//maps/MirrohInterior_1F/scripts.pory"
-	setflag FLAG_MIRROH_INT_SOMBER_GRUNTS
+	applymovement LOCALID_GRUNT2, MirrohInterior_1F_SomberGrunts_Trigger_Movement_6
+# 425 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
 # 426 "data//maps/MirrohInterior_1F/scripts.pory"
+	removeobject LOCALID_GRUNT2
+# 427 "data//maps/MirrohInterior_1F/scripts.pory"
+	applymovement LOCALID_GRUNT1, MirrohInterior_1F_SomberGrunts_Trigger_Movement_7
+# 428 "data//maps/MirrohInterior_1F/scripts.pory"
+	waitmovement 0
+# 429 "data//maps/MirrohInterior_1F/scripts.pory"
+	removeobject LOCALID_GRUNT1
+# 431 "data//maps/MirrohInterior_1F/scripts.pory"
+	setflag FLAG_MIRROH_INT_SOMBER_GRUNTS
+# 433 "data//maps/MirrohInterior_1F/scripts.pory"
 	releaseall
 	end
 
@@ -720,58 +734,68 @@ MirrohInterior_1F_SomberGrunts_Trigger_Movement_0:
 	jump_in_place_down
 	step_end
 
-# 374 "data//maps/MirrohInterior_1F/scripts.pory"
+# 375 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_SomberGrunts_Trigger_Movement_1:
-# 374 "data//maps/MirrohInterior_1F/scripts.pory"
+# 375 "data//maps/MirrohInterior_1F/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 389 "data//maps/MirrohInterior_1F/scripts.pory"
+# 392 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_SomberGrunts_Trigger_Movement_2:
-# 389 "data//maps/MirrohInterior_1F/scripts.pory"
+# 392 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_right
 	step_end
 
-# 402 "data//maps/MirrohInterior_1F/scripts.pory"
+# 406 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_SomberGrunts_Trigger_Movement_3:
-# 402 "data//maps/MirrohInterior_1F/scripts.pory"
+# 406 "data//maps/MirrohInterior_1F/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 409 "data//maps/MirrohInterior_1F/scripts.pory"
+# 414 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_SomberGrunts_Trigger_Movement_4:
-# 409 "data//maps/MirrohInterior_1F/scripts.pory"
+# 414 "data//maps/MirrohInterior_1F/scripts.pory"
+	emote_exclamation_mark
+# 414 "data//maps/MirrohInterior_1F/scripts.pory"
 	face_down
 	step_end
 
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 415 "data//maps/MirrohInterior_1F/scripts.pory"
 MirrohInterior_1F_SomberGrunts_Trigger_Movement_5:
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 415 "data//maps/MirrohInterior_1F/scripts.pory"
+	emote_exclamation_mark
+# 415 "data//maps/MirrohInterior_1F/scripts.pory"
+	face_up
+	step_end
+
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_SomberGrunts_Trigger_Movement_6:
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_left
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_left
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_left
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_left
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
-# 416 "data//maps/MirrohInterior_1F/scripts.pory"
+# 423 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
 	step_end
 
-# 420 "data//maps/MirrohInterior_1F/scripts.pory"
-MirrohInterior_1F_SomberGrunts_Trigger_Movement_6:
-# 420 "data//maps/MirrohInterior_1F/scripts.pory"
+# 427 "data//maps/MirrohInterior_1F/scripts.pory"
+MirrohInterior_1F_SomberGrunts_Trigger_Movement_7:
+# 427 "data//maps/MirrohInterior_1F/scripts.pory"
 	walk_down
 	step_end
 
 MirrohInterior_1F_EventScript_Nurse_Text_0:
 # 36 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: Have you found Chansey yet?\n"
-	.string "We're all really worried!$"
+	.string "Have you found Chansey yet? We're all\n"
+	.string "really worried!$"
 
 MirrohInterior_1F_EventScript_Chansey_Text_0:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -780,22 +804,22 @@ MirrohInterior_1F_EventScript_Chansey_Text_0:
 
 MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Text_0:
 # 84 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: Hey! Are you a trainer? I need\n"
-	.string "your help!$"
+	.string "Hey! Are you a trainer? I need your\n"
+	.string "help!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0:
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: I was taking these Chanseys up\n"
-	.string "to Winterlily Hollow to help the Nurse\l"
-	.string "Joy there, but there was a cave-in and\l"
-	.string "one of the Chanseys got lost! We can't\l"
-	.string "go through these caves alone - the\l"
+	.string "I was taking these Chanseys up to\n"
+	.string "Winterlily Hollow to help the Nurse Joy\l"
+	.string "there, but there was a cave-in and one\l"
+	.string "of the Chanseys got lost! We can't go\l"
+	.string "through these caves alone - the\l"
 	.string "Pokémon are too fierce. Please find\l"
 	.string "Chansey for us!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_0:
 # 102 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Chansey: seyy!!!\p"
+	.string "seyy!!!\p"
 	.string "Chansey looks so relieved - it's about\n"
 	.string "to cry!\p"
 	.string "It must have been really scared alone\n"
@@ -811,31 +835,30 @@ MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_1:
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_0:
 # 131 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: Chansey!$"
+	.string "Chansey!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_1:
 # 135 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: Oh my! Chansey! Are you alright?$"
+	.string "Oh my! Chansey! Are you alright?$"
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_2:
 # 140 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "CHANSEY: seyyy!!!$"
+	.string "Seyyy!!!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_3:
 # 146 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: Thank you trainer! You saved\n"
-	.string "Chansey!\p"
+	.string "Thank you trainer! You saved Chansey!\p"
 	.string "...\p"
-	.string "NURSE: So these Team Somber people\n"
-	.string "caused the cave-ins. How scary! I hope\l"
-	.string "we don't run into them.\p"
+	.string "So these Team Somber people caused the\n"
+	.string "cave-ins. How scary! I hope we don't run\l"
+	.string "into them.\p"
 	.string "We're all in your debt, {PLAYER}.\n"
 	.string "There's not much in the way of a reward\l"
 	.string "that I can...oh?$"
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_4:
 # 153 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "CHANSEY: seeyyy!!\p"
+	.string "seeyyy!!\p"
 	.string "Chansey pulls something out of its\n"
 	.string "pocket and hands it to you!$"
 
@@ -845,12 +868,12 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_5:
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_6:
 # 161 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "NURSE: We should head off to Winterlily\n"
-	.string "Hollow now. The nurse there must be\l"
-	.string "waiting for us.\p"
-	.string "NURSE: Thank you again, {PLAYER} and\n"
-	.string "we wish you all the best in your journey.\l"
-	.string "Drop by the Pokémon Center any time!$"
+	.string "We should head off to Winterlily Hollow\n"
+	.string "now. The nurse there must be waiting\l"
+	.string "for us.\p"
+	.string "Thank you again, {PLAYER} and we wish\n"
+	.string "you all the best in your journey. Drop\l"
+	.string "by the Pokémon Center any time!$"
 
 MirrohInterior_1F_Trainer_A_Text_0:
 # 199 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -972,40 +995,45 @@ MirrohInterior_Bergmite_A_Text_1:
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_0:
 # 372 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Did you move all the equipment?\n"
-	.string "The boss is gonna be angry - we gotta\l"
-	.string "get the Dreamalyser up and running\l"
-	.string "quick!$"
+	.string "Grunt A$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_1:
-# 377 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Would you relax? I'm not\n"
-	.string "Gabrielle - of course I moved\l"
-	.string "everything! Caused some cave-ins, but\l"
-	.string "that's not our problem! Haha!$"
+# 373 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Did you move all the equipment? The\n"
+	.string "boss is gonna be angry - we gotta get\l"
+	.string "the Dreamalyser up and running quick!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_2:
-# 386 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Hey! What are you doing? Didn't\n"
-	.string "your parents tell you it was rude to\l"
-	.string "eavesdrop!$"
+# 378 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Grunt B$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_3:
-# 394 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Darn, we lost! My Pokemon are useless!$"
+# 379 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Would you relax? I'm not Gabrielle - of\n"
+	.string "course I moved everything! Caused some\l"
+	.string "cave-ins, but that's not our problem!\l"
+	.string "Haha!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_4:
-# 399 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Argh! Stupid Mime Jr! You're\n"
-	.string "useless!$"
+# 389 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Hey! What are you doing? Didn't your\n"
+	.string "parents tell you it was rude to\l"
+	.string "eavesdrop!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_5:
-# 405 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Hey - aren't you that lab\n"
-	.string "assistant who beat boss Melea back in\l"
-	.string "Silversun City?$"
+# 397 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Darn, we lost! My Pokemon are useless!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_6:
-# 412 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "GRUNT: Yeah its the same trainer! The\n"
-	.string "boss will want to know. Let's go!$"
+# 403 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Argh! Stupid Mime Jr! You're useless!$"
+
+MirrohInterior_1F_SomberGrunts_Trigger_Text_7:
+# 410 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Hey - aren't you that lab assistant who\n"
+	.string "beat boss Melea back in Silversun City?$"
+
+MirrohInterior_1F_SomberGrunts_Trigger_Text_8:
+# 419 "data//maps/MirrohInterior_1F/scripts.pory"
+	.string "Yeah its the same trainer! The boss will\n"
+	.string "want to know. Let's go!$"

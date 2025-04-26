@@ -59,16 +59,19 @@ script MirrohPeak_EventScript_Viniel{
 
     applymovement(LOCALID_VINIEL, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("???: Come at me, you lousy grunts! You think I'm going to let the likes of you mess around in MY backyard?"))
+    speakername("???")
+    msgbox(format("Come at me, you lousy grunts! You think I'm going to let the likes of you mess around in MY backyard?"))
     release
     applymovement(15, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: It's public space, Viniel! Didn't they teach you that at Gym Leader School?"))
+    speakername("Grunt")
+    msgbox(format("It's public space, Viniel! Didn't they teach you that at Gym Leader School?"))
     release
     applymovement(LOCALID_VINIEL, moves(emote_exclamation_mark))
     waitmovement(0) 
-    msgbox(format("VINIEL: There IS no Gym Leader School! How stupid are you?"))
+    speakername("Viniel")
+    msgbox(format("There IS no Gym Leader School! How stupid are you?"))
     release
     delay(30)
     applymovement(11, moves(emote_question_mark))
@@ -76,13 +79,15 @@ script MirrohPeak_EventScript_Viniel{
     applymovement(15, moves(emote_question_mark))
     applymovement(17, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("GRUNT:...yeah, we know. I was just taunting you."))
+    speakername("Grunt")
+    msgbox(format("...yeah, we know. I was just taunting you."))
     release
     applymovement(LOCALID_VINIEL, moves(emote_exclamation_mark))
     waitmovement(0) 
-    msgbox(format("VINIEL: That was a terrible taunt! Didn't...didn't they teach you how to taunt at taunting school?"))
+    speakername("Viniel")
+    msgbox(format("That was a terrible taunt! Didn't...didn't they teach you how to taunt at taunting school?"))
     release
-    delay(40)
+    delay(48)
     applymovement(11, moves(emote_exclamation_mark face_down))
     applymovement(14, moves(emote_exclamation_mark face_down))
     applymovement(15, moves(emote_exclamation_mark face_down))
@@ -92,26 +97,31 @@ script MirrohPeak_EventScript_Viniel{
     waitmovement(0)
     delay(24)
 
-    msgbox(format("VINIEL: Who are you? Are you another grunt? C'mon, Ampharos and I can take all six of you together!"))
+    speakername("Viniel")
+    msgbox(format("Who are you? Are you another grunt? C'mon, Ampharos and I can take all six of you together!"))
     release    
     applymovement(17, moves(emote_question_mark))  
     waitmovement(0)  
-    msgbox(format("GRUNT: Wait...isn't that the trainer who beat Melea in Silversun City?"))
+    speakername("Grunt")
+    msgbox(format("Wait...isn't that the trainer who beat Melea in Silversun City?"))
     release
     applymovement(14, moves(emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("GRUNT: Yeah, it is! And also MOXIE at Mt. Ceram!\pGRUNT: Yikes - someone better tell go them!"))
+    speakername("Grunt")
+    msgbox(format("Yeah, it is! And also Moxie at Mt. Ceram!\pYikes - someone better tell go them!"))
     release
     applymovement(19, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("GRUNT: I'm on it!"))
+    speakername("Grunt")
+    msgbox(format("I'm on it!"))
     release
     applymovement(19, moves(walk_fast_left walk_fast_up * 2))
     waitmovement(0)
     removeobject(19)    
 
     applymovement(LOCALID_VINIEL, moves(emote_question_mark))
-    msgbox(format("VINIEL: So you're an enemy of theirs, then, are you?\pVINIEL: An enemy of an enemy is a friend!\pVINIEL: Trainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the people of Winterlily Hollow. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
+    speakername("Viniel")
+    msgbox(format("So you're an enemy of theirs, then, are you?\pAn enemy of an enemy is a friend!\pTrainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the people of Winterlily Hollow. So I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
     release
     delay(16)
     playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
@@ -124,7 +134,8 @@ script MirrohPeak_EventScript_Viniel{
     waitmovement(0)
     delay(16)
 
-    msgbox(format("VINIEL: Ampharos is raring to go! Now c'mon you cowards - I'm going to shock some sense into all four of you together!"))
+    speakername("Viniel")
+    msgbox(format("Ampharos is raring to go! Now c'mon you cowards - I'm going to shock some sense into all four of you together!"))
     release
 
     setflag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)
@@ -140,7 +151,7 @@ script MirrohPeak_EventScript_Viniel{
 
 script MirrohPeak_GruntsVSViniel_GenericDialogue{
     lockall
-    msgbox(format("GRUNT: Even with the four of us together, its so hard! Guess that's why he's a Gym Leader.\pVINIEL: That all you got, grunts?"))
+    msgbox(format("Even with the four of us together, its so hard! Guess that's why he's a Gym Leader.\pThat all you got, grunts?"))
     releaseall
     end
 }
@@ -175,23 +186,27 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("MELEA: Is it the child?"))
+    speakername("Melea")
+    msgbox(format("Is it the child?"))
     release
     delay(30)
     applymovement(LOCALID_MOXIE, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MOXIE: I presume it is."))
+    speakername("Moxie")
+    msgbox(format("I presume it is."))
     release
     delay(60)
 
     applymovement(LOCALID_MOXIE, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MOXIE: Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern.\pMOXIE: After our defeats at your hand, LEADER was most displeased with the two of us. Most displeased indeed..."))
+    speakername("Moxie")
+    msgbox(format("Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern.\pAfter our defeats at your hand, LEADER was most displeased with the two of us. Most displeased indeed..."))
     release
     delay(60)
     applymovement(LOCALID_MELEA, moves(jump_in_place_up))
     waitmovement(0)
-    msgbox(format("MELEA: Beyond the dreamstone's gate lie some of the most powerful Pokémon this world has ever seen. And of them all, one stood the strongest. The fiercest, most vicious. Long gone, extinct today. But in the hands of people with purpose, such power can be used to do great things..."))
+    speakername("Melea")
+    msgbox(format("Beyond the dreamstone's gate lie some of the most powerful Pokémon this world has ever seen. And of them all, one stood the strongest. The fiercest, most vicious. Long gone, extinct today. But in the hands of people with purpose, such power can be used to do great things..."))
     release
 
             //Set weather beforehand for correct timing
@@ -199,7 +214,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
             doweather
 
     delay(60)    
-    msgbox(format("MELEA: Go on, MOXIE. Start the Dreamalyser."))
+    speakername("Melea")
+    msgbox(format("Go on, Moxie. Start the Dreamalyser."))
     release
     applymovement(LOCALID_MOXIE, moves(walk_down walk_left face_up))
     waitmovement(0)
@@ -215,7 +231,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
 	delay(30)
 
     //MELEA goes ahead
-    msgbox(format("MOXIE: MELEA, you go ahead. I'll deal with the child."))
+    speakername("Moxie")
+    msgbox(format("Melea, you go ahead. I'll deal with the child."))
     release   
     applymovement(LOCALID_MELEA, moves(walk_up walk_left face_up))
     waitmovement(0)
@@ -230,7 +247,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
     special(RemoveCameraObject)    
     applymovement(LOCALID_MOXIE, moves(walk_right face_down))
     waitmovement(0)
-    msgbox(format("MOXIE: My dear colleague has gone ahead, into Ancient Cormoria...you've been there, no? I wonder what it looks like. MELEA will tell me about it when she returns.\p...\pMOXIE: Child, we are at the cusp of attaining our goal. The ANCIENT TERROR will soon be ours.\p...\pMOXIE: I will give you a chance to turn around. Walk away from what you don't understand.\p...\pMOXIE: No?\pMOXIE: Very well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
+    speakername("Moxie")
+    msgbox(format("My dear colleague has gone ahead into Ancient Cormoria...you've been there, no? I wonder what it looks like. Melea will tell me about it when she returns.\p...\pChild, we are at the cusp of attaining our goal. The Ancient Terror will soon be ours.\p...\pI will give you a chance to turn around. Walk away from what you don't understand.\p...\pNo?\pVery well then. This will be our final battle. I will make sure that after this, you won't have the heart to come after us again!"))    
     release
 
     //Battle
@@ -239,24 +257,48 @@ script MirrohPeak_EventScript_Somber_Trigger{
     //Post-battle
     applymovement(LOCALID_MOXIE, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("MOXIE: Argh! How could I have lost!"))
+    speakername("Moxie")
+    msgbox(format("Argh! How could I have lost!"))
     applymovement(LOCALID_MOXIE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("MOXIE: One of you!\p...\pMOXIE: You there, wearing the Trekking Boots!"))
+    speakername("Moxie")
+    msgbox(format("One of you!\p...\pYou there, wearing the Trekking Boots!"))
     release
     applymovement(3, moves(jump_in_place_up))
-    msgbox(format("GRUNT: Y-yes boss?\pMOXIE: Hurry up and go inside the dreamstone. Tell MELEA what happened! She needs to be prepared.\pGRUNT: B-but boss, it's -"))
+    speakername("Grunt")
+    msgbox(format("Y-yes boss?"))
+    release
+    delay(8)
+    speakername("Moxie")
+    msgbox(format("Hurry up and go inside the dreamstone. Tell Melea what happened! She needs to be prepared."))
+    speakername("Grunt")
+    msgbox(format("B-but boss, it's -"))
+    release
+    delay(8)
     applymovement(LOCALID_MOXIE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("MOXIE: No buts! Get moving, fast!\pGRUNT: O-ok boss!"))
+    delay(16)
+    speakername("Moxie")
+    msgbox(format("No buts! Get moving - fast! Or I'll have you'll join Gabrielle!"))
+    
+    speakername("Grunt")
+    msgbox(format("O-ok boss!"))
     release
     applymovement(3, moves(walk_down walk_right * 2 walk_up * 4 walk_left face_up)) 
     waitmovement(0) 
     applymovement(LOCALID_MOXIE, moves(face_up))
     delay(60)
     applymovement(3, moves(face_down))
-    msgbox(format("GRUNT: But boss...what if I don't come back?\pMOXIE: Then we'll send roses to your family - now hurry up or I'll be forced to send roses right now!"))
+    waitmovement(0)
+    speakername("Grunt")
+    msgbox(format("But boss...what if I don't come back?"))
     release
+    delay(8)
+
+    speakername("Moxie")
+    msgbox(format("Then we'll send roses to your family - now hurry up or I'll be forced to send roses right now!"))
+    release
+    delay(12)
     applymovement(3, moves(face_up emote_exclamation_mark))   
     waitmovement(0)
     delay(48) 
@@ -267,7 +309,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
     delay(24)
     applymovement(LOCALID_MOXIE, moves(face_down))
     waitmovement(0)
-    msgbox(format("MOXIE: I know you're going to chase MELEA and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one exit out, and once MELEA takes that exit, you'll be stuck there forever!\pHahaha!"))
+    speakername("Moxie")
+    msgbox(format("I know you're going to chase Melea and try to stop her from getting the Ancient Wonders.\pLet me do you a favour, {PLAYER}. I'll send you inside myself. There's only one exit out, and once Melea takes that exit, you'll be stuck there forever!\pHahaha!"))
     release
     applymovement(LOCALID_MOXIE, moves(walk_left face_up))
     waitmovement(0)
@@ -288,7 +331,10 @@ script MirrohPeak_EventScript_Somber_Trigger{
 
     delay(24)
     applymovement(LOCALID_MOXIE, moves(face_down))
-    msgbox(format("MOXIE: Now you lot! Let's go get our construction equipment so we can carry all this away.\pGRUNTS: Y-yes boss!!"))
+    speakername("Moxie")
+    msgbox(format("Now you lot! Let's go get our construction equipment so we can carry all this away."))
+    speakername("Grunts")
+    msgbox(format("Y-yes boss!!"))
     release
 
     fadescreen(FADE_TO_BLACK)

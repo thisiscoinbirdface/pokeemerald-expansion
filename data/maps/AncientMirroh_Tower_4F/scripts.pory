@@ -36,12 +36,14 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_KOHLA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("KOHLA: Wait right there, Team Somber! The ACE ROOKIE is here now, so stop your dastardly - "))
+    speakername("Kohla")
+    msgbox(format("Wait right there, Team Somber! The Ace Rookie is here now, so stop your dastardly - "))
 
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
 
-    msgbox(format("MELEA: Shh! It's sleeping. If you wake it up, we'll all be goners!"))
+    speakername("Melea")
+    msgbox(format("Shh! It's sleeping. If you wake it up, we'll all be goners!"))
     release
     delay(30)
 
@@ -50,31 +52,37 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)
 
-    msgbox(format("MELEA: Beautiful, isn't it? How incredible it is that we're here now, today.\pMELEA: Your Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pMELEA: It's like science fiction...LEADER was right all along..."))
+    speakername("Melea")
+    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...LEADER was right all along..."))
     release
     delay(30)
 
     applymovement(LOCALID_MELEA, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("MELEA: But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pMELEA: But there were other minds who did understand the greatness, the potential, the power!\pAnd that's why Team Somber exists."))
+    delay(8)
+    speakername("Melea")
+    msgbox(format("But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pBut there were other minds who did understand the greatness, the potential, the power!\pAnd that's why Team Somber exists."))
     release
 
 
     applymovement(LOCALID_KOHLA, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("KOHLA: I don't get it! What do you people even plan to do?"))
+    speakername("Kohla")
+    msgbox(format("I don't get it! What do you people even plan to do?"))
     release
 
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("MELEA: Us? What do we want? Power, obviously. You're asking the wrong question.\pMELEA: Forgivable, considering your age.\pMELEA: The real question you should be asking...is why."))
+    speakername("Melea")
+    msgbox(format("Us? What do we want? Power, obviously. You're asking the wrong question.\pForgivable, considering your age.\pThe real question you should be asking...is why."))
     release
 
     applymovement(3, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Y-yeah, boss! Even I wanna know why."))
+    speakername("Grunt")
+    msgbox(format("Y-yeah, boss! Even I wanna know why."))
     release
 
     setvar(VAR_0x8004, 2)  //vertical pan
@@ -84,7 +92,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
     special(ShakeCamera)
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("MELEA: SILENCE!\pMELEA: How dare you interrupt me?"))
+    speakername("Melea")
+    msgbox(format("SILENCE!\pHow dare you interrupt me?"))
     release
 	delay(30)
 
@@ -100,7 +109,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     delay(60)
 
-    msgbox(format("GRUNT: Uh...boss? I think we woke it up..."))
+    speakername("Grunt")
+    msgbox(format("Uh...boss? I think we woke it up..."))
     release
 
     setvar(VAR_0x8004, 2)  //vertical pan
@@ -115,17 +125,20 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("MELEA: We've got to hurry! I wasted too much time talking to you two."))
+    speakername("Melea")
+    msgbox(format("We've got to hurry! I wasted too much time talking to you two."))
     release
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)    
-    msgbox(format("MELEA: GRUNT! MASTER BALL!"))
+    speakername("Melea")
+    msgbox(format("GRUNT! MASTER BALL!"))
     release
 
     applymovement(3, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Y-yes boss! Right here boss!\pGRUNT: These Trekking Boots are making it hard to move..."))
+    speakername("Grunt")
+    msgbox(format("Y-yes boss! Right here boss!\p...\pThese Trekking Boots are making it hard to move..."))
     release    
 
     applymovement(3, moves(walk_up face_right))
@@ -139,7 +152,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)    
-    msgbox(format("MELEA: Come, ANCIENT TERROR! Let Team Somber show you the future!"))
+    speakername("Melea")
+    msgbox(format("Come, Ancient Terror! Let Team Somber show you the future!"))
     release
 
     fadescreen(FADE_TO_WHITE)
@@ -153,7 +167,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)
     delay(30)    
-    msgbox(format("MELEA: And now it's time to bid adieu! I hope you enjoy your time here in Ancient Cormoria - because you'll never leave!\pHahaha!"))
+    speakername("Melea")
+    msgbox(format("And now it's time to bid adieu! I hope you enjoy your time here in Ancient Cormoria - because you'll never leave!\pHahaha!"))
     release
     applymovement(3, moves(face_up))
     applymovement(LOCALID_MELEA, moves(walk_up * 2))    
@@ -163,7 +178,15 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)    
     delay(30)
 
-    msgbox(format("MELEA: What are you doing?!\pGRUNT: Boss, my Trekking Boots got stuck on these cracks!\pMELEA: Hurry, idiot! Toss those Trekking Boots aside!"))
+    speakername("Melea")
+    msgbox(format("What are you doing?!"))
+    release
+    delay(8)
+    speakername("Grunt")
+    msgbox(format("Boss, my Trekking Boots got stuck on these cracks!"))
+        
+    speakername("Melea")
+    msgbox(format("Hurry, idiot! Toss those Trekking Boots aside!"))
     release
 
     clearflag(FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS)
@@ -190,7 +213,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_KOHLA, moves(jump_in_place_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
-    msgbox(format("KOHLA: they got away! We've got to find a way back somehow...but they took the dreamstone out!\p...\pKOHLA: You're saying that since I came separately, there must be another dreamstone somewhere? Then what are we waiting for?\pKOHLA: I'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
+    speakername("Kohla")
+    msgbox(format("They got away! We've got to find a way back somehow...but they took the dreamstone out!\p...\pBut since I came separately, there must be another dreamstone somewhere!\pI'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
@@ -203,9 +227,6 @@ script AncientMirroh_Tower_4F_MainTrigger{
     setflag(FLAG_ANCIENT_MIRROH_KORAIDON)
     releaseall
     end
-
-
-
 }
 
 

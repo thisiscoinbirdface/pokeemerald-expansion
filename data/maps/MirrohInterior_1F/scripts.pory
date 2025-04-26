@@ -33,7 +33,7 @@ mapscripts MirrohInterior_1F_MapScripts{
 
 //NURSE
 script MirrohInterior_1F_EventScript_Nurse{
-    msgbox(format("NURSE: Have you found Chansey yet? We're all really worried!"), MSGBOX_NPC)
+    msgbox(format("Have you found Chansey yet? We're all really worried!"), MSGBOX_NPC)
     end
 }
 
@@ -81,12 +81,12 @@ script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
     waitmovement(0)
     delay(20)
 
-    msgbox(format("NURSE: Hey! Are you a trainer? I need your help!"))
+    msgbox(format("Hey! Are you a trainer? I need your help!"))
     release
     return
 }
 script MirrohInterior_1F_EventScript_NurseQuest_Main{
-    msgbox(format("NURSE: I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
+    msgbox(format("I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
@@ -99,7 +99,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
     lockall
     faceplayer
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("Chansey: seyy!!!\pChansey looks so relieved - it's about to cry!\pIt must have been really scared alone here.\p...\pChansey stretches out a hand..."))
+    msgbox(format("seyy!!!\pChansey looks so relieved - it's about to cry!\pIt must have been really scared alone here.\p...\pChansey stretches out a hand..."))
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(format("Thank you Chansey! You don't need to worry any more. It's time to take you back to Nurse Joy."))
     release
@@ -128,29 +128,29 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         waitmovement(LOCALID_CH1)
         delay(20)
         
-        msgbox(format("NURSE: Chansey!"))
+        msgbox(format("Chansey!"))
         release
         applymovement(LOCALID_NURSE, moves(walk_up face_right))
         waitmovement(0)
-        msgbox(format("NURSE: Oh my! Chansey! Are you alright?"))
+        msgbox(format("Oh my! Chansey! Are you alright?"))
         release
         delay(16)
         applymovement(LOCALID_CHANSEY_LAST, moves(jump_in_place_right))
         playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-        msgbox(format("CHANSEY: seyyy!!!"))
+        msgbox(format("Seyyy!!!"))
         
         release
         delay(16)
         applymovement(LOCALID_NURSE, moves(walk_down face_right))        
         waitmovement(0)
-        msgbox(format("NURSE: Thank you trainer! You saved Chansey!\p...\pNURSE: So these Team Somber people caused the cave-ins. How scary! I hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
+        msgbox(format("Thank you trainer! You saved Chansey!\p...\pSo these Team Somber people caused the cave-ins. How scary! I hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
         applymovement(LOCALID_CHANSEY_LAST, moves(jump_in_place_down, emote_exclamation_mark))
         waitmovement(0)
         delay(16)
-        msgbox(format("CHANSEY: seeyyy!!\pChansey pulls something out of its pocket and hands it to you!"))
+        msgbox(format("seeyyy!!\pChansey pulls something out of its pocket and hands it to you!"))
         giveitem(ITEM_EVIOLITE)
         msgbox(format("Thank you Chansey!"))
         release
@@ -158,7 +158,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)
         delay(16)
-        msgbox(format("NURSE: We should head off to Winterlily Hollow now. The nurse there must be waiting for us.\pNURSE: Thank you again, {PLAYER} and we wish you all the best in your journey. Drop by the Pokémon Center any time!"))
+        msgbox(format("We should head off to Winterlily Hollow now. The nurse there must be waiting for us.\pThank you again, {PLAYER} and we wish you all the best in your journey. Drop by the Pokémon Center any time!"))
         release
 
         //fade
@@ -369,12 +369,14 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Did you move all the equipment? The boss is gonna be angry - we gotta get the Dreamalyser up and running quick!"))
+    speakername("Grunt A")
+    msgbox(format("Did you move all the equipment? The boss is gonna be angry - we gotta get the Dreamalyser up and running quick!"))
     release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem! Haha!"))
+    speakername("Grunt B")
+    msgbox(format("Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem! Haha!"))
     release
     delay(24)   
 
@@ -383,7 +385,8 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(24)
 
-    msgbox(format("GRUNT: Hey! What are you doing? Didn't your parents tell you it was rude to eavesdrop!"))
+    speakername("Grunt A")
+    msgbox(format("Hey! What are you doing? Didn't your parents tell you it was rude to eavesdrop!"))
     release
 
     applymovement(LOCALID_GRUNT1, moves(walk_right))
@@ -396,20 +399,24 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Argh! Stupid Mime Jr! You're useless!"))
+    speakername("Grunt A")
+    msgbox(format("Argh! Stupid Mime Jr! You're useless!"))
     release    
     delay(8)
     applymovement(LOCALID_GRUNT2, moves(emote_question_mark))
     waitmovement(0)
     delay(16)    
-    msgbox(format("GRUNT: Hey - aren't you that lab assistant who beat boss Melea back in Silversun City?"))    
+    speakername("Grunt B")
+    msgbox(format("Hey - aren't you that lab assistant who beat boss Melea back in Silversun City?"))    
     release
     delay(24)
 
-    applymovement(LOCALID_GRUNT1, moves(face_down))
-    applymovement(LOCALID_GRUNT2, moves(face_up))    
+    applymovement(LOCALID_GRUNT1, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_GRUNT2, moves(emote_exclamation_mark face_up))    
     waitmovement(0)
-    msgbox(format("GRUNT: Yeah its the same trainer! The boss will want to know. Let's go!"))           
+    delay(16)
+    speakername("Grunt A")
+    msgbox(format("Yeah its the same trainer! The boss will want to know. Let's go!"))           
     release
 
     //exit

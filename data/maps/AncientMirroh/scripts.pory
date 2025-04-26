@@ -51,16 +51,20 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     applymovement(7, moves(jump_in_place_left))    
     waitmovement(0)
     delay(16)
-    msgbox(format("GRUNT: Darn! These HEAVY DUTY BOOTS are really slowing me down! I gotta catch up to boss MELEA!"))
+    speakername("Grunt")
+    msgbox(format("Darn! These Trekking Boots are really slowing me down! I gotta catch up to boss MELEA!"))
     release
     applymovement(7, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("GRUNT: Oh no, you're here already? Gotta go!"))
+    delay(16)
+    speakername("Grunt")
+    msgbox(format("Oh no, you're here already? Gotta go!"))
     release
     applymovement(7, moves(walk_down * 7))
     waitmovement(0)
-
-    msgbox(format("???: Hey GRUNT! Wait right there!"))
+    delay(16)
+    speakername("???")
+    msgbox(format("Hey grunt! Wait right there!"))
     release
     setobjectxyperm(LOCALID_KOHLA, 52, 38)
     addobject(LOCALID_KOHLA)
@@ -70,7 +74,8 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
 
     applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KOHLA: {PLAYER}? How'd you get over here?\p...\pKOHLA: So that's what happened. I must have reached the peak after you did, then. When I came, nobody was there. I found this big machine and pressed a button, and then suddenly got transported here!\p...\pKOHLA: Slow as usual, you are. I came after you and still managed to catch up. Bet you wasted your time exploring this area and catching Pokémon while MELEA went on to catch the ANCIENT TERROR!\p...\pKOHLA: Well I'm here to do the right thing, so get out of my way. Go on - move!"))
+    speakername("Kohla")
+    msgbox(format("{PLAYER}? How'd you get over here?\p...\pSo that's what happened. I must have reached the peak after you did, then. When I came, nobody was there. I found this big machine and pressed a button, and then suddenly got transported here!\p...\pSlow as usual, you are. I came after you and still managed to catch up. Bet you wasted your time exploring this area and catching Pokémon while Melea went on to catch the Ancient Terror!\p...\pWell I'm here to do the right thing, so get out of my way. Go on - move!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 face_down))
     applymovement(LOCALID_KOHLA, moves(walk_up * 2 walk_left * 3 walk_down * 8))   
@@ -93,7 +98,8 @@ script AncientMirroh_KolhaFinal_Trigger {
     if (flag(FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER)) {end}
 
     lockall
-    msgbox(format("KOHLA: There you are! Hurry up."))
+    speakername("Kohla")
+    msgbox(format("There you are! Hurry up."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left * 4))
     waitmovement(0)
@@ -102,17 +108,17 @@ script AncientMirroh_KolhaFinal_Trigger {
 }
 
 script AncientMirroh_GoBackYesNo{
-    msgbox(format("KOHLA: Do you want to take the dreamstone back?"), MSGBOX_YESNO)
+    msgbox(format("Do you want to take the dreamstone back?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         //exit
-        msgbox(format("KOHLA: Let's get ready then."))
+        speakername("Kohla")
+        msgbox(format("Let's get ready then."))
         release
         applymovement(LOCALID_KOHLA, moves(face_up))
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up face_left))
         waitmovement(0)
         delay(24)
-        msgbox(format("KOHLA: 3...2...1..."))
+        msgbox(format("3...2...1..."))
         release
         delay(24)
         setvar(VAR_0x8004, 2)  //vertical pan
@@ -130,7 +136,8 @@ script AncientMirroh_GoBackYesNo{
         warp(MAP_LILY_POND, 12, 4)
 
     } else {
-        msgbox(format("KOHLA: What are you waiting for?"))        
+        speakername("Kohla")
+        msgbox(format("What are you waiting for?"))        
     }
 
 
