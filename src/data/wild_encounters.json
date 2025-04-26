@@ -12515,63 +12515,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_PALPITOAD"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_YANMA"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_CROAGUNK"
               },
               {
-                "min_level": 21,
-                "max_level": 24,
+                "min_level": 22,
+                "max_level": 25,
                 "species": "SPECIES_TYMPOLE"
               },
               {
-                "min_level": 26,
-                "max_level": 28,
+                "min_level": 27,
+                "max_level": 27,
                 "species": "SPECIES_YANMEGA"
               },
               {
                 "min_level": 26,
-                "max_level": 28,
+                "max_level": 29,
                 "species": "SPECIES_CROAGUNK"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_CLODSIRE"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
+                "min_level": 23,
+                "max_level": 26,
                 "species": "SPECIES_CLODSIRE"
               },
               {
                 "min_level": 23,
                 "max_level": 26,
+                "species": "SPECIES_CLODSIRE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_GOOMY"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_FROGADIER"
               },
               {
-                "min_level": 23,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 27,
                 "species": "SPECIES_GOOMY"
               },
               {
-                "min_level": 22,
-                "max_level": 24,
+                "min_level": 24,
+                "max_level": 26,
                 "species": "SPECIES_FROGADIER"
               }
             ]

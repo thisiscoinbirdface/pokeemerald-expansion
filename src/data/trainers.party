@@ -1552,11 +1552,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Palpitoad
-Level: 26
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Yanma
-Level: 27
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_B ===
@@ -1569,7 +1569,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 25
+Level: 27
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Primeape
@@ -1586,15 +1586,15 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Croconaw
-Level: 25
+Level: 26
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Scyther
-Level: 25
+Level: 26
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Herdier
-Level: 26
+Level: 27
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Bayleef
@@ -1612,15 +1612,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Toedscool
-Level: 25
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Finneon
-Level: 25
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Carvanha
-Level: 26
+Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_E ===
@@ -1634,7 +1634,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Croconaw
-Level: 27
+Level: 30
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_ROUTE6_F ===
@@ -1647,11 +1647,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Croagunk
-Level: 26
+Level: 28   
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Croagunk
-Level: 27
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1666,15 +1666,15 @@ AI: Check Bad Move
 Mugshot: Green
 
 Manectric
-Level: 27
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Houndoom
-Level: 27
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lycanroc
-Level: 29
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1713,11 +1713,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swablu
-Level: 27
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skrelp
-Level: 28
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_J ===
@@ -1730,19 +1730,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Raticate-Alola
-Level: 26
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Corvisquire
-Level: 27
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Rufflet
-Level: 27
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Teddiursa
-Level: 28
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1756,11 +1756,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 29
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Cursola
-Level: 29
+Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT1 ===
