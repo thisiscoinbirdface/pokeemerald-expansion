@@ -116,11 +116,11 @@
 #define FLAG_WINTERLILY_HOLLOW_SURF  0x278 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_JANIA  0x279 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_MAIN  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
+#define FLAG_MIRROHBASECAMP_TRAINER_A  0x27B // Unused Flag
+#define FLAG_MIRROHBASECAMP_TRAINER_B  0x27C // Unused Flag
+#define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // Unused Flag
+#define FLAG_MIRROHGYM_TRAINER_A  0x27E // Unused Flag
+#define FLAG_MIRROHGYM_TRAINER_B  0x27F // Unused Flag
 #define FLAG_UNUSED_0x495  0x495 // Unused Flag
 #define FLAG_UNUSED_0x496  0x496 // Unused Flag
 #define FLAG_UNUSED_0x497  0x497 // Unused Flag
@@ -276,8 +276,8 @@
 #define FLAG_PELLUCAGYM_SPENSER_REWARD                              0x4C4 // gym
 #define FLAG_RIVETSHOREGYM_SPENSER_WATER                            0x4C5 // gym
 #define FLAG_RIVETSHOREGYM_SPENSER_REWARD                           0x4C6 // gym
-#define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
-#define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
+#define FLAG_MIRROHBASECAMPGYM_SPENSER_WATER                        0x4C7 // gym
+#define FLAG_MIRROHBASECAMPGYM_SPENSER_REWARD                       0x4C8 // gym
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
