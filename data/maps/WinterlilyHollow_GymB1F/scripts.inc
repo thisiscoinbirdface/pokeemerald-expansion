@@ -152,7 +152,7 @@ WinterlilyHollowGym_LeaderBattle::
 # 143 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	release
 # 145 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 146 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	release
 # 149 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"

@@ -128,7 +128,7 @@ SilversunCity_Theater_Leader::
 # 100 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_14
 # 102 "data//maps/SilversunCity_Theater/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 105 "data//maps/SilversunCity_Theater/scripts.pory"
 	speakername SilversunCity_Theater_Leader_Text_0
 # 106 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -546,7 +546,7 @@ SilversunCity_Theater_Leader_Text_14:
 # 100 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "The Drama Badge will let you use HM\n"
 	.string "Strength outside of battle. And I must\l"
-	.string "give you these beautiful jewels too.$"
+	.string "give you this beautiful jewel too.$"
 
 SilversunCity_Theater_Leader_Text_15:
 # 106 "data//maps/SilversunCity_Theater/scripts.pory"

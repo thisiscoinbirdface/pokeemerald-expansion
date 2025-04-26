@@ -302,7 +302,7 @@ CeramBaseCampGym_LeaderBattle::
 # 214 "data//maps/CeramBaseCampGym/scripts.pory"
 	release
 # 216 "data//maps/CeramBaseCampGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 218 "data//maps/CeramBaseCampGym/scripts.pory"
 	speakername CeramBaseCampGym_LeaderBattle_Text_0
 # 219 "data//maps/CeramBaseCampGym/scripts.pory"

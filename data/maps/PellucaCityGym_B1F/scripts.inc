@@ -169,7 +169,7 @@ PellucaGym_Leader::
 # 164 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
 # 165 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 166 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	delay 16
 # 169 "data//maps/PellucaCityGym_B1F/scripts.pory"

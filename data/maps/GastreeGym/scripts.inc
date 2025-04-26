@@ -84,7 +84,7 @@ GastreeGym_EventScript_Victory::
 # 65 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_EventScript_Victory_Text_2
 # 66 "data//maps/GastreeGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 67 "data//maps/GastreeGym/scripts.pory"
 	speakername GastreeGym_LeaderBattle_Text_1
 # 68 "data//maps/GastreeGym/scripts.pory"
@@ -251,12 +251,12 @@ GastreeGym_EventScript_Victory_Text_1:
 
 GastreeGym_EventScript_Victory_Text_2:
 # 65 "data//maps/GastreeGym/scripts.pory"
-	.string "I also want to give you these.$"
+	.string "I also want to give you this.$"
 
 GastreeGym_EventScript_Victory_Text_3:
 # 68 "data//maps/GastreeGym/scripts.pory"
-	.string "These are incredibly rare stones that\n"
-	.string "react in the prescence of an ancient\l"
+	.string "This is an incredibly rare stone that\n"
+	.string "reacts in the prescence of an ancient\l"
 	.string "statue. Nobody knows where they're\l"
 	.string "from, but they're a key secret to any\l"
 	.string "strong trainer's success! Go to any\l"

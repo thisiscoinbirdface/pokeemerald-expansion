@@ -181,7 +181,7 @@ GalecrestCityGym_Leader::
 # 167 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 # 168 "data//maps/GalecrestCityGym/scripts.pory"
-	giveitem ITEM_RARE_SHARD, 2
+	giveitem ITEM_RARE_SHARD
 # 169 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
 # 172 "data//maps/GalecrestCityGym/scripts.pory"
@@ -365,7 +365,7 @@ GalecrestCityGym_Leader_Text_4:
 	.string "The Stoic Badge lets you use the HM\n"
 	.string "move ROCK SMASH outside of battle.\p"
 	.string "...\p"
-	.string "And these are yours too.$"
+	.string "And this is yours too.$"
 
 GalecrestCityGym_Leader_Text_5:
 # 173 "data//maps/GalecrestCityGym/scripts.pory"
