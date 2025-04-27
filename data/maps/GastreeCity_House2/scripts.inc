@@ -39,13 +39,15 @@ GastreeCity_House2_NPC1_Text_0:
 
 GastreeCity_House2_NPC1_Text_1:
 # 9 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "I don't want to put too much salt on my\n"
-	.string "food. Here, why don't you take some of\l"
-	.string "my extra salt?$"
+	.string "I don't want to put too much salt on the\n"
+	.string "food I cook for the childen.\p"
+	.string "Here, why don't you take some of my\n"
+	.string "extra salt?$"
 
 GastreeCity_House2_NPC2_Text_0:
 # 19 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "My mother cares a lot about eating\n"
+	.string "Mom cares a lot about eating\n"
 	.string "healthy...but the food is somewhat\l"
-	.string "bland. I just don't want to tell her or\l"
+	.string "bland.\p"
+	.string "I just don't want to tell her or else\n"
 	.string "she'll think I'm ungrateful.$"

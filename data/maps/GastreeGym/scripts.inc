@@ -312,8 +312,8 @@ GastreeGym_Red_Text_5:
 	.string "Welcome to the Gastree gym!\n"
 	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
-	.string "in the underpass to Fennilahl Town. The\l"
-	.string "previous trainer beat him and Inger\l"
+	.string "in the underpass to Fennilahl Town.\p"
+	.string "The previous trainer beat him and Inger\n"
 	.string "just can't stand losing! You'll have to\l"
 	.string "go into the underpass and find him\l"
 	.string "there.$"
@@ -323,8 +323,8 @@ GastreeGym_Red_Text_6:
 	.string "Welcome to the Gastree gym!\n"
 	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
-	.string "in the underpass to Fennilahl Town. The\l"
-	.string "previous trainer beat him and Inger\l"
+	.string "in the underpass to Fennilahl Town.\p"
+	.string "The previous trainer beat him and Inger\n"
 	.string "just can't stand losing! You'll have to\l"
 	.string "go into the underpass and find him\l"
 	.string "there. Take this with you.$"
@@ -332,9 +332,8 @@ GastreeGym_Red_Text_6:
 GastreeGym_Red_Text_7:
 # 124 "data//maps/GastreeGym/scripts.pory"
 	.string "Inger loves ROCK type Pokémon, so avoid\n"
-	.string "using FIRE, FLYING and BUG type\l"
-	.string "Pokémon. Now go get 'em,\l"
-	.string "champ-in-the-making!$"
+	.string "using FLYING and BUG type Pokémon.\p"
+	.string "Now go get 'em, champ-in-the-making!$"
 
 GastreeGym_WeatheredRock_Text_0:
 # 135 "data//maps/GastreeGym/scripts.pory"

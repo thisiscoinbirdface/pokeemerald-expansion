@@ -13,7 +13,7 @@ script GastreeCity_TeaHouse_EventScript_OldLady{
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 1) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest)}
     //Else regular (currently just some text, maybe later a shop)
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {
-        msgbox(format("How are you doing, {PLAYER}? You know, my brother runs a restaurant further out west, in Pelluca City. You should visit sometime."), MSGBOX_NPC)
+        msgbox(format("How are you doing, {PLAYER}? You know, my brother runs a restaurant further out west, in Pelluca City.\pYou should visit sometime."), MSGBOX_NPC)
     }   
     end
 }
@@ -65,7 +65,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest{
 script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
     lockall  
     faceplayer
-    msgbox(format("Welcome to...oh, it's you! My eyes aren't what they used to be.\pHave you brought the ingredients I need?"))   
+    msgbox(format("Welcome to...oh, it's you! Sorry, my eyes aren't what they used to be.\pHave you brought the ingredients?"))   
     release
 
     //Check for 3 items
@@ -90,19 +90,20 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
 script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     lockall
     //Text for give reward
-    msgbox(format("{PLAYER} handed the owner the ingredients."), MSGBOX_SIGN)
+    msgbox(format("{PLAYER} handed over the ingredients."), MSGBOX_SIGN)
     release
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)     
     delay(12)
-    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You have done me a great service."))
+    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You've done me a great service."))
     release
     completequest(QUEST_GASTREE_TEA)
     delay(16)
 
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
-    msgbox(format("Now - I must reward you somehow.\pNo no! I insist. The kitchen is managed by my staff of Poltchageist and Sinistea. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?\pWould you like to take one of them as a companion?")) //Yes/No option perhaps?
+    message(format("Now - I must reward you somehow.\pNo no! I insist.\pThe kitchen is managed by my staff of Poltchageist and Sinistea. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?\pWould you like to take one of them as a companion?")) //Yes/No option perhaps?
+    waitmessage
     dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Poltchageist", "Sinistea")
 
     if (var(VAR_RESULT) == 0){

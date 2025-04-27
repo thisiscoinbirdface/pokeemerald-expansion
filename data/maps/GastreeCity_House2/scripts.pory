@@ -6,7 +6,7 @@ script GastreeCity_House2_NPC1{
         msgbox(format("Too much salt raises your blood pressure!"), MSGBOX_NPC)   
         release     
     } else {
-        msgbox(format("I don't want to put too much salt on my food. Here, why don't you take some of my extra salt?"), MSGBOX_NPC)
+        msgbox(format("I don't want to put too much salt on the food I cook for the childen.\pHere, why don't you take some of my extra salt?"), MSGBOX_NPC)
         release
         setflag(FLAG_GASTREE_NPC_SHOAL_SALT)
         giveitem(ITEM_SHOAL_SALT)        
@@ -16,7 +16,7 @@ script GastreeCity_House2_NPC1{
 
 
 script GastreeCity_House2_NPC2{
-    msgbox(format("My mother cares a lot about eating healthy...but the food is somewhat bland. I just don't want to tell her or she'll think I'm ungrateful."), MSGBOX_NPC)
+    msgbox(format("Mom cares a lot about eating healthy...but the food is somewhat bland.\pI just don't want to tell her or else she'll think I'm ungrateful."), MSGBOX_NPC)
     end 
 }
 

@@ -104,7 +104,7 @@ script GastreeCity_NPC4{
 
     //Info
 script GastreeCity_NPC5{
-    msgbox(format("Inger, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type Pokémon right? So then why am I getting cold feet?"), MSGBOX_NPC)
+    msgbox(format("Inger, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type Pokémon right?\pSo then why am I getting cold feet?"), MSGBOX_NPC)
     end
 }
 
@@ -240,7 +240,7 @@ script GastreeCity_NPC9{
                 msgbox(format("Skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_CUT)
-                msgbox(format("You do need to have at least one Gym Badge to use it. Now come here Skitty!"))
+                msgbox(format("I'm not a trainer so I don't need it. All I need is my Skitty!\pYou don't need to teach it to any of your Pokémon, but you need at least one Gym Badge to use it.\pNow come here Skitty!"))
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
                 setflag(FLAG_GASTREE_NPC_SKITTY)
@@ -334,7 +334,7 @@ script GastreeCity_NPC9{
         lockall
         faceplayer    
         playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)        
-        msgbox(format("SKITTY: skee~~"))
+        msgbox(format("Skee~~"))
         releaseall
         end
     }
@@ -344,7 +344,7 @@ script GastreeCity_Poltchageist{
     lockall
     playmoncry(SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("Poltchageist is picking herbs for the teahouse!"))
+    msgbox(format("Poltchageist is picking Revival Herbs for the teahouse!"))
     releaseall
     end
 }

@@ -26,7 +26,7 @@ script Route4_EventScript_EvilTeam{
     msgbox(format("Hey kid - this road is closed due to...uh...repairs. Yeah. Sorry."))
     release
     delay(8)
-    msgbox(format("You're saying we look suspicious? We're just...um...construction workers. Sorry. Yeah."))
+    msgbox(format("Huh? We look suspicious? We're just...um...construction workers. Sorry. Yeah."))
     msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         msgbox(format("Good. Now scram!"))
@@ -88,7 +88,7 @@ script Route4_TrainerBattle_Raha {
 }
 
 script Route4_TrainerBattle_Cammy {
-    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let this old lady teach you some new tricks."), format("Well fought!"))
+    trainerbattle_single(TRAINER_ROUTE4_CAMMY, format("Are you a new trainer? Let this old lady teach you some new tricks!"), format("You know a trick or two yourself!"))
     msgbox(format("You were the teacher and I was the student! Haha!"))
     release
     end
@@ -250,7 +250,7 @@ script Route4_NPC_Couple2{
 
 //Generic NPC
 script Route4_NPC_A{
-    msgbox(format("I don't understand why they don't just build a bridge across to Ceram Base Camp. Sure, trainers can cross with HM SPLASH, but the city management needs to think about us civilians too. We're not all trainers!"), MSGBOX_NPC)
+    msgbox(format("I don't understand why they don't just build a bridge to Ceram Base Camp.\pSure, trainers can cross with HM Splash, but the city management needs to think about us civilians too.\pWe're not all trainers!"), MSGBOX_NPC)
     end
 }
 

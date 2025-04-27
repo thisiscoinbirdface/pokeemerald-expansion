@@ -3,7 +3,7 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!"), "Okay, go disturb the Kinger!")
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!\pWho's the Kinger?\pInger the King, of course!"), "Okay, go disturb the Kinger!")
     msgbox(format("Kinger is what everyone should aspire to be like!"))
     release
     end
@@ -47,11 +47,9 @@ script GastreeGym_LeaderBattle {
 }
 
 script GastreeGym_EventScript_Victory{
-    //Receive the badge
-    msgbox(format("{PLAYER} received the Hard Badge from Inger."))
-    release
     setflag(FLAG_BADGE01_GET)
-
+    //Receive the badge
+    message(format("{PLAYER} received the Hard Badge from Inger."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
 
@@ -65,17 +63,17 @@ script GastreeGym_EventScript_Victory{
     msgbox(format("I also want to give you this."))
     giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
-    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokemon you give it to can maximise one of its innate stats! Go to any ancient statue to try it out. There's one in Gastree City!"))
+    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokemon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in Gastree City!"))
     release
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("So where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a whooping for me!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a kick and a slap on behalf of the Kinger!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("...you look a little green. It is nerves? First gym battle?\p...\pI know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pI'm Inger, master of ROCK-types and the unshakable strength of the earth. My ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("...you look a little green. It is nerves? First gym battle?\p...\pI know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pI'm Inger, master of ROCK-types and the unshakable strength of the earth.\pMy ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{

@@ -145,7 +145,7 @@
       "flag": "FLAG_HIDE_ROUTE3_UNDERPASS_GYM"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 79,
       "y": 10,
       "elevation": 0,
