@@ -39,9 +39,14 @@ GastreeCity_PokemonCenter_NPC2::
 GastreeCity_PokemonCenter_NPC1_Text_0:
 # 19 "data//maps/GastreeCity_PokemonCenter/scripts.pory"
 	.string "This city's Gym Leader is Inger, the\n"
-	.string "ROCK specialist. He's a local hero!$"
+	.string "ROCK specialist. He's a local hero!\p"
+	.string "His trainers call him Inger the King, or\n"
+	.string "Kinger for short.\p"
+	.string "Hehe! I'd like a nickname like that.$"
 
 GastreeCity_PokemonCenter_NPC2_Text_0:
 # 24 "data//maps/GastreeCity_PokemonCenter/scripts.pory"
-	.string "Up north is Mt. Ceram and down south is\n"
-	.string "the giant Vine River.$"
+	.string "Down south is the giant Vine River. It's\n"
+	.string "one of the three great rivers!\p"
+	.string "The other two are the Ivy and Hoya\n"
+	.string "Rivers, further out west.$"

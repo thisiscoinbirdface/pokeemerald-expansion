@@ -803,8 +803,12 @@ GastreeCity_NPC2_Text_3:
 
 GastreeCity_NPC2_Text_4:
 # 243 "data//maps/GastreeCity/scripts.pory"
-	.string "You do need to have at least one Gym\n"
-	.string "Badge to use it. Now come here Skitty!$"
+	.string "I'm not a trainer so I don't need it. All\n"
+	.string "I need is my Skitty!\p"
+	.string "You don't need to teach it to any of\n"
+	.string "your Pokémon, but you need at least one\l"
+	.string "Gym Badge to use it.\p"
+	.string "Now come here Skitty!$"
 
 GastreeCity_NPC2_Text_5:
 # 248 "data//maps/GastreeCity/scripts.pory"
@@ -838,12 +842,12 @@ GastreeCity_EventScripts_SkittyTrigger3_Text_1:
 
 GastreeCity_NPC_Skitty_Text_0:
 # 337 "data//maps/GastreeCity/scripts.pory"
-	.string "SKITTY: skee~~$"
+	.string "Skee~~$"
 
 GastreeCity_Poltchageist_Text_0:
 # 347 "data//maps/GastreeCity/scripts.pory"
-	.string "Poltchageist is picking herbs for the\n"
-	.string "teahouse!$"
+	.string "Poltchageist is picking Revival Herbs\n"
+	.string "for the teahouse!$"
 
 GastreeCity_KohlaIntro1::
 # 77 "data//maps/GastreeCity/scripts.pory"

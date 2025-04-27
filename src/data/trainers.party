@@ -293,7 +293,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_GRUNTS ===
-Name: MEL & PAUL
+Name: Grunts
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Male
@@ -377,7 +377,7 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_RAHA ===
-Name: RAHA
+Name: Raha
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -385,7 +385,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Larvesta
+Chinchou
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -437,7 +437,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID1 ===
-Name: MORTY
+Name: Morty
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -450,7 +450,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID2 ===
-Name: LALA
+Name: Lala
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -463,7 +463,7 @@ Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_KID3 ===
-Name: PINE
+Name: Pine
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -481,7 +481,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_A ===
-Name: TANNER
+Name: Tanner
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -494,7 +494,7 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_B ===
-Name: BRON
+Name: Bron
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -511,7 +511,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_C ===
-Name: JORDI
+Name: Jordi
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -524,7 +524,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMBASECAMPGYM_D ===
-Name: ALBA
+Name: Alba
 Class: Employee
 Pic: Employee
 Gender: Male

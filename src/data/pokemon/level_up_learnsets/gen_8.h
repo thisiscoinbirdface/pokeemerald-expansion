@@ -10936,7 +10936,6 @@ static const struct LevelUpMove sDrifblimLevelUpLearnset[] = {
 
 #if P_FAMILY_BUNEARY
 static const struct LevelUpMove sBunearyLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 4, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 8, MOVE_BABY_DOLL_EYES),

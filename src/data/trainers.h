@@ -569,7 +569,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE4_GRUNTS] =
     {
 #line 296
-        .trainerName = _("MEL & PAUL"),
+        .trainerName = _("Grunts"),
 #line 297
         .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
 #line 298
@@ -775,7 +775,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE4_RAHA] =
     {
 #line 380
-        .trainerName = _("RAHA"),
+        .trainerName = _("Raha"),
 #line 381
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 382
@@ -792,7 +792,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 388
-            .species = SPECIES_LARVESTA,
+            .species = SPECIES_CHINCHOU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 390
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -931,7 +931,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE4_KID1] =
     {
 #line 440
-        .trainerName = _("MORTY"),
+        .trainerName = _("Morty"),
 #line 441
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 442
@@ -963,7 +963,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE4_KID2] =
     {
 #line 453
-        .trainerName = _("LALA"),
+        .trainerName = _("Lala"),
 #line 454
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 455
@@ -997,7 +997,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE4_KID3] =
     {
 #line 466
-        .trainerName = _("PINE"),
+        .trainerName = _("Pine"),
 #line 467
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 468
@@ -1042,7 +1042,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_A] =
     {
 #line 484
-        .trainerName = _("TANNER"),
+        .trainerName = _("Tanner"),
 #line 485
         .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 486
@@ -1074,7 +1074,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_B] =
     {
 #line 497
-        .trainerName = _("BRON"),
+        .trainerName = _("Bron"),
 #line 498
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 499
@@ -1117,7 +1117,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_C] =
     {
 #line 514
-        .trainerName = _("JORDI"),
+        .trainerName = _("Jordi"),
 #line 515
         .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 516
@@ -1149,7 +1149,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CERAMBASECAMPGYM_D] =
     {
 #line 527
-        .trainerName = _("ALBA"),
+        .trainerName = _("Alba"),
 #line 528
         .trainerClass = TRAINER_CLASS_EMPLOYEE,
 #line 529

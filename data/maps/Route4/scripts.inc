@@ -624,7 +624,7 @@ Route4_EventScript_EvilTeam_Text_0:
 
 Route4_EventScript_EvilTeam_Text_1:
 # 29 "data//maps/Route4/scripts.pory"
-	.string "You're saying we look suspicious? We're\n"
+	.string "Huh? We look suspicious? We're\n"
 	.string "just...um...construction workers. Sorry.\l"
 	.string "Yeah.$"
 
@@ -680,11 +680,11 @@ Route4_TrainerBattle_Raha_Text_2:
 Route4_TrainerBattle_Cammy_Text_0:
 # 91 "data//maps/Route4/scripts.pory"
 	.string "Are you a new trainer? Let this old lady\n"
-	.string "teach you some new tricks.$"
+	.string "teach you some new tricks!$"
 
 Route4_TrainerBattle_Cammy_Text_1:
 # 91 "data//maps/Route4/scripts.pory"
-	.string "Well fought!$"
+	.string "You know a trick or two yourself!$"
 
 Route4_TrainerBattle_Cammy_Text_2:
 # 92 "data//maps/Route4/scripts.pory"
@@ -839,11 +839,11 @@ Route4_NPC_Couple2_Text_0:
 Route4_NPC_A_Text_0:
 # 253 "data//maps/Route4/scripts.pory"
 	.string "I don't understand why they don't just\n"
-	.string "build a bridge across to Ceram Base\l"
-	.string "Camp. Sure, trainers can cross with HM\l"
-	.string "SPLASH, but the city management needs\l"
-	.string "to think about us civilians too. We're\l"
-	.string "not all trainers!$"
+	.string "build a bridge to Ceram Base Camp.\p"
+	.string "Sure, trainers can cross with HM Splash,\n"
+	.string "but the city management needs to think\l"
+	.string "about us civilians too.\p"
+	.string "We're not all trainers!$"
 
 Route4_NPC_B_Text_0:
 # 260 "data//maps/Route4/scripts.pory"
