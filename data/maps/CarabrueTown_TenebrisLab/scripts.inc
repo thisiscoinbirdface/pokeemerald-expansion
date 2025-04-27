@@ -1251,8 +1251,7 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_3:
 # 30 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm Assistant Professor Rue and\n"
 	.string "welcome to the Tenebris\l"
-	.string "Laboratory...er...\n"
-	.string "{PLAYER}, was it?$"
+	.string "Laboratory...er...{PLAYER}, was it?$"
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_4:
 # 36 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

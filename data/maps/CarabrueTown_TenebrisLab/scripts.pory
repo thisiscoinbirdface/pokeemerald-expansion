@@ -27,7 +27,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
     speakername("Rue") 
-    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...er...\n{PLAYER}, was it?"))
+    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...er...{PLAYER}, was it?"))
     release
     applymovement(3, moves(face_left face_right face_down))
     waitmovement(3)
