@@ -1126,8 +1126,9 @@ static const struct SpriteFrameImage sPicTable_TMHMBall[] = {
     overworld_frame(gObjectEventPic_TMHMBall, 2, 4, 0),
 };
 
-#if OW_FOLLOWERS_POKEBALLS
+extern const struct SpriteFrameImage gFieldEffectObjectPicTable_BallLight[];
 
+#if OW_FOLLOWERS_POKEBALLS
 #define POKEBALL_PIC_FRAMES(name)                              \
     overworld_frame(gObjectEventPic_##name##Ball, 2, 4, 0),    \
     overworld_frame(gObjectEventPic_##name##Ball, 2, 4, 1),    \

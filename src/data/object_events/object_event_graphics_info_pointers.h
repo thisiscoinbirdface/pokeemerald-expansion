@@ -277,6 +277,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderVinie
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugCatcherF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkiierF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfTenebris;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BallLight;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bard;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
@@ -565,6 +566,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BUG_CATCHER_F] =              &gObjectEventGraphicsInfo_BugCatcherF,
     [OBJ_EVENT_GFX_SKIIER_F] =                   &gObjectEventGraphicsInfo_SkiierF,
     [OBJ_EVENT_GFX_PROF_TENEBRIS] =              &gObjectEventGraphicsInfo_ProfTenebris,    
+    [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

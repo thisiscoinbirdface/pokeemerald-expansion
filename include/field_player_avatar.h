@@ -2,6 +2,7 @@
 #define GUARD_FIELD_PLAYER_AVATAR_H
 
 void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys);
+bool8 TryDoMetatileBehaviorForcedMovement();
 void ClearPlayerAvatarInfo(void);
 void SetPlayerAvatarExtraStateTransition(u16, u8);
 u8 GetPlayerAvatarGenderByGraphicsId(u16);
@@ -74,5 +75,8 @@ void ResetPlayerAvatar(u8 gfxId);
 void Task_Fishing(u8);
 
 extern bool8 gRunToggleBtnSet;
+void UpdateSpinData(void);
+void ResetSpinTimer(void);
+bool32 CanTriggerSpinEvolution();
 
 #endif // GUARD_FIELD_PLAYER_AVATAR_H
