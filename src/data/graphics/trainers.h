@@ -364,6 +364,8 @@ const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/my_trainers/mo
 const u32 gTrainerFrontPic_SkiierF[] = INCBIN_U32("graphics/trainers/my_trainers/skiier_f.4bpp.lz");
 const u32 gTrainerPalette_SkiierF[] = INCBIN_U32("graphics/trainers/my_trainers/skiier_f.gbapal.lz");
 
+const u32 gTrainerFrontPic_KimonoGirl[] = INCBIN_U32("graphics/trainers/my_trainers/kimono_girl.4bpp.lz");
+const u32 gTrainerPalette_KimonoGirl[] = INCBIN_U32("graphics/trainers/my_trainers/kimono_girl.gbapal.lz");
 
 
 //gym leaders
@@ -376,8 +378,8 @@ const u32 gTrainerPalette_Ariana[] = INCBIN_U32("graphics/trainers/my_trainers/l
 const u32 gTrainerFrontPic_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
 const u32 gTrainerPalette_Gloria[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
 
-const u32 gTrainerFrontPic_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.4bpp.lz");
-const u32 gTrainerPalette_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_gloria.gbapal.lz");
+const u32 gTrainerFrontPic_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_carona.4bpp.lz");
+const u32 gTrainerPalette_Carona[] = INCBIN_U32("graphics/trainers/my_trainers/leader_carona.gbapal.lz");
 
 const u32 gTrainerFrontPic_Viniel[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.4bpp.lz");
 const u32 gTrainerPalette_Viniel[] = INCBIN_U32("graphics/trainers/my_trainers/leader_viniel.gbapal.lz");
@@ -522,6 +524,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_JANIA, gTrainerFrontPic_Jania, gTrainerPalette_Jania),    
     TRAINER_SPRITE(TRAINER_PIC_MODEL, gTrainerFrontPic_Model, gTrainerPalette_Model),
     TRAINER_SPRITE(TRAINER_PIC_SKIIER_F, gTrainerFrontPic_SkiierF, gTrainerPalette_SkiierF),
+    TRAINER_SPRITE(TRAINER_PIC_KIMONO_GIRL, gTrainerFrontPic_KimonoGirl, gTrainerPalette_KimonoGirl),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
