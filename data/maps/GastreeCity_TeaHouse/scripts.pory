@@ -22,13 +22,15 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     lockall
     faceplayer
     //first complain about the menu getting stale
-    msgbox(format("OWNER: Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want anything traditional?"))
+    msgbox(format("Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want anything traditional?"))
     release
-    msgbox(format("Sigh...you young ones just have no taste.\pWell...times are changing I suppose, and our business should change with them."))
+    msgbox(format("Sigh...all you young ones just have no taste.\pWell, times are changing I suppose, and our business should change with them."))
     release
+    delay(8)
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("OWNER: Yes, I'd like to try crafting a modern tea. Something with zing and zap! Like those energy drinks."))
+    delay(16)
+    msgbox(format("Yes, I'd like to try crafting a modern tea. Something with zing and zap!\pLike those energy drinks."))
     release 
 
     //Ask player yes/no
@@ -39,7 +41,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     goto_if_eq(GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest)
 
     //Else if no, carry on (and end the convo)
-    msgbox(format("I understand. Please come back if you'd like to help me out."))
+    msgbox(format("No taste and no grace! What's happening to society?"))
     releaseall   
     //If no, end
 }

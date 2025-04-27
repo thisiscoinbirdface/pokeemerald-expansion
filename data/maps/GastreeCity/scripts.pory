@@ -122,7 +122,7 @@ script GastreeCity_NPC6{
 
     //Pokémon flavour
 script GastreeCity_NPC7{
-    msgbox(format("I want to have tea too! When I get my first Pokémon, I want it to be Poltchageist."), MSGBOX_NPC)
+    msgbox(format("When I get my first Pokémon, I want it to be Poltchageist!"), MSGBOX_NPC)
     end
 }
 
@@ -131,12 +131,14 @@ script GastreeCity_NPC8{
     msgbox(format("Hiiiiyah!\pI'm trying to teach my Kecleon some new moves so that we can go and explore Route 4 together! C'mon Kecleon! C'mon!!"), MSGBOX_NPC)
     applymovement(5, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("KECLEON: keeee!!!\pKecleon is as fired up as its trainer is!"), MSGBOX_NPC)
+    playmoncry(SPECIES_KECLEON, CRY_MODE_NORMAL)
+    msgbox(format("Keeee!!!\pKecleon is as fired up as its trainer is!"), MSGBOX_NPC)
     end
 }
 
 script GastreeCity_NPC_Keckleon{ 
-    msgbox(format("KECKLEON: keeee!!\pKecleon is trying hard to match its trainers energy. Go Kecleon!"), MSGBOX_NPC)
+    playmoncry(SPECIES_KECLEON, CRY_MODE_NORMAL)
+    msgbox(format("Keeee!!\pKecleon is trying hard to match its trainers energy. Go Kecleon!"), MSGBOX_NPC)
     end
 }
 
@@ -144,8 +146,8 @@ script GastreeCity_NPC9{
     lockall
     faceplayer    
     msgbox(format("Yo, trainer! Come here. What's the most useful move a Pokémon can learn?"))
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ERUPTION", "QUIVER DANCE", "EXPANDING FORCE", "EARTHQUAKE")        
-    msgbox(format("Nope - trick question! It's SPLASH!\p...\pNo, seriously. Most people think it's useless, but if you have HM SPLASH, your Pokémon can hop onto rocks in the water like the one here. But you need at least one Gym Badge to be able to use HMs."))
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Eruption", "Quiver Dance", "Expanding Force", "Geomancy")        
+    msgbox(format("Nope - trick question! It's Splash!\p...\pNo, seriously. Most people think it's useless, but if you have HM Splash, your Pokémon can hop onto rocks in the water like the one here. But you need at least one Gym Badge to use HMs."))
     releaseall
     end
 }
