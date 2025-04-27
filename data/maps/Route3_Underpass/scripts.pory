@@ -94,14 +94,19 @@ script Route3_Underpass_EvilBattle{
     waitmovement(0)    
     speakername("???")    
     msgbox(format("Give it to me!"))
+    release
+    delay(12)
     applymovement(LOCALID_BREECH, moves(walk_right face_left))
     waitmovement(0)    
+    delay(12)
     speakername("Breech")   
     msgbox(format("No! Stay away! Clefairy is MY partner!"))
     speakername("???") 
     msgbox(format("I said give it to me! It's holding a dreamstone. That's too precious to be held by someone like you!"))
+    release
     applymovement(LOCALID_GAB, moves(walk_right))
     waitmovement(0)
+    delay(12)
     speakername("Breech")
     msgbox(format("I don't know anything about any dreamstones, please! Just stop!"))
     release
@@ -121,10 +126,13 @@ script Route3_Underpass_EvilBattle{
     waitmovement(0)
     speakername("???") 
     msgbox(format("Who's there? What you do want?"))
+    release
+    delay(8)
     applymovement(LOCALID_BREECH, moves(face_up))
     waitmovement(0) 
+    delay(8)
     speakername("Breech")        
-    msgbox(format("{PLAYER}! It's you! This thug is trying to take Clefairy away! Help me, please!"))
+    msgbox(format("{PLAYER}! It's you! This thug is trying to take Clefairy away!\pYou have to help me, please!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)  
@@ -133,7 +141,7 @@ script Route3_Underpass_EvilBattle{
     release
     delay(16)
     speakername("Gabrielle")    
-    msgbox(format("No?\pNo?!?!\pWell then...let Gabrielle teach you a lesson: don't stick your nose where it doesn't belong!"))
+    msgbox(format("No?\pNo?!?!\pWell then...let Gabrielle teach you a lesson: don't go sticking your nose where it doesn't belong!"))
     release
 
     //Start battle
@@ -184,10 +192,10 @@ script Route3_Underpass_EvilBattle{
     applymovement(LOCALID_CLEF, moves(walk_left walk_down * 2 face_up))
     waitmovement(LOCALID_CLEF)
     delay(30)
+    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
     applymovement(LOCALID_CLEF, moves(jump_in_place_up))    
     waitmovement(0)
     delay(8)
-    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
     speakername("Clefairy")  
     msgbox(format("Clee!!!"))
     release

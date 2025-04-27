@@ -48,7 +48,7 @@ script WhiteSign_FennilahlTown_TowardsRoute3{
 }
 
 script WoodSign_FennilahlTown_Nicknaming {
-    msgbox(format("TRAINER TIPS: You can nickname your Pokémon directly from their summary screen!"), MSGBOX_SIGN)
+    msgbox(format("TRAINER TIPS: You can nickname your Pokémon from the summary screen!"), MSGBOX_SIGN)
     end
 }
 

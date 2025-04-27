@@ -212,14 +212,14 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [ITEMS_POCKET] =    COMPOUND_STRING("ITEMS"),
-    [MEDICINE_POCKET] = COMPOUND_STRING("MEDICINE"),
-    [BALLS_POCKET] =    COMPOUND_STRING("POKé BALLS"),
-    [BATTLEITEMS_POCKET] = COMPOUND_STRING("BATTLE ITEM"),
+    [ITEMS_POCKET] =    COMPOUND_STRING("Items"),
+    [MEDICINE_POCKET] = COMPOUND_STRING("Medicine"),
+    [BALLS_POCKET] =    COMPOUND_STRING("Pokéballs"),
+    [BATTLEITEMS_POCKET] = COMPOUND_STRING("Battle Item"),
     [TMHM_POCKET]  =    COMPOUND_STRING("TMs & HMs"),
-    [BERRIES_POCKET] =  COMPOUND_STRING("BERRIES"),
-    [TREASURES_POCKET] = COMPOUND_STRING("TREASURES"),
-    [KEYITEMS_POCKET] = COMPOUND_STRING("KEY ITEMS")
+    [BERRIES_POCKET] =  COMPOUND_STRING("Berries"),
+    [TREASURES_POCKET] = COMPOUND_STRING("Treasures"),
+    [KEYITEMS_POCKET] = COMPOUND_STRING("Key Items")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
@@ -507,14 +507,14 @@ const u8 gText_Beauty2[] = _("BEAUTY");
 const u8 gText_Cute2[] = _("CUTE");
 const u8 gText_Smart2[] = _("SMART");
 const u8 gText_Tough2[] = _("TOUGH");
-const u8 gText_Items[] = _("ITEMS");
-const u8 gText_Key_Items[] = _("KEY ITEMS");
-const u8 gText_Poke_Balls[] = _("POKé BALLS");
+const u8 gText_Items[] = _("Items");
+const u8 gText_Key_Items[] = _("Key Items");
+const u8 gText_Poke_Balls[] = _("Pokéballs");
 const u8 gText_TMs_Hms[] = _("TMs & HMs");
-const u8 gText_Berries2[] = _("BERRIES");
-const u8 gText_Medicine[] = _("MEDICINE");
-const u8 gText_BattleItems[] = _("BATTLE ITEM");
-const u8 gText_Treasures[] = _("TREASURES");
+const u8 gText_Berries2[] = _("Berries");
+const u8 gText_Medicine[] = _("Medicine");
+const u8 gText_BattleItems[] = _("Battle Item");
+const u8 gText_Treasures[] = _("Treasures");
 const u8 gText_SomeonesPC[] = _("SOMEONE'S PC");
 const u8 gText_LanettesPC[] = _("LANETTE'S PC");
 const u8 gText_PlayersPC[] = _("{PLAYER}'s PC");
@@ -1321,9 +1321,10 @@ const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbec
 
 //// side quest data
 //generic strings
-const u8 gText_QuestAnnounce[] = _("The quest {STR_VAR_1}\nis now {STR_VAR_2}");
-const u8 gText_QuestComplete[] =_("complete! Well done!");
-const u8 gText_QuestActive[] =_("active! Gotta get going!");
+const u8 gText_QuestAnnounce[] = _("The quest {STR_VAR_1}\n{STR_VAR_2}");
+const u8 gText_QuestComplete[] =_("is now complete! Well done!");
+const u8 gText_QuestActive[] =_("is now active! Gotta get going!");
+const u8 gText_QuestUpdated[] =_("has been updated! Keep it up!");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Lab Assistant");

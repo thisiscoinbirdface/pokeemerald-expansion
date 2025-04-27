@@ -32,13 +32,13 @@ FennilahlTown_House3_Mawile::
 
 FennilahlTown_House3_NPC1_Text_0:
 # 5 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "Did you know that some Pokémon can\n"
-	.string "Mega evolve?$"
+	.string "Did you know that there are Pokémon\n"
+	.string "that can mega evolve?$"
 
 FennilahlTown_House3_NPC2_Text_0:
 # 11 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "My Rockruff's ability is OWN TEMPO! I\n"
-	.string "caught it on Route 2, south of here.$"
+	.string "My Rockruff's ability is Own Tempo!\p"
+	.string "I met it on Route 2, south of here.$"
 
 FennilahlTown_House3_Rockruff_Text_0:
 # 17 "data//maps/FennilahlTown_House3/scripts.pory"

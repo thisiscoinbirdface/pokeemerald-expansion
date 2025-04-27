@@ -115,8 +115,7 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_1:
 CarabrueTown_EventScript_PoliceRoadBlock_Text_2:
 # 12 "data//maps/CarabrueTown/scripts.pory"
 	.string "Is this the evidence from the lab?\n"
-	.string "Perfect. Thanks, kid. We'll take it from\l"
-	.string "here.\p"
+	.string "Thanks, kid. We'll take it from here.\p"
 	.string "...$"
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_3:
@@ -142,18 +141,17 @@ CarabrueTown_EventScript_NPC1_Text_0:
 CarabrueTown_EventScript_NPC1_Text_1:
 # 52 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those cops over\n"
-	.string "there? They came all the way from\l"
-	.string "Fennilahl Town to investigate the\l"
-	.string "Professor's disappearance. They're\l"
-	.string "blocking access to Route 1 while they\l"
-	.string "investigate.$"
+	.string "there?\p"
+	.string "They came all the way from Fennilahl\n"
+	.string "Town to investigate the Professor's\l"
+	.string "disappearance. They're blocking access\l"
+	.string "to Route 1 while they investigate.$"
 
 CarabrueTown_EventScript_NPC2_Text_0:
 # 58 "data//maps/CarabrueTown/scripts.pory"
 	.string "My Chikorita and I love how cozy\n"
 	.string "Carabrue Town is! That's because it's\l"
-	.string "nestled deep in the southern hills of\l"
-	.string "Cormoria.$"
+	.string "nestled deep in the hills of Cormoria.$"
 
 CarabrueTown_Chikorita_Text_0:
 # 64 "data//maps/CarabrueTown/scripts.pory"

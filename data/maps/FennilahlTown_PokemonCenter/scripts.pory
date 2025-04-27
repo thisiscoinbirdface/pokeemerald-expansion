@@ -17,15 +17,15 @@ script FennilahlTown_PokemonCenter_EventScript_Nurse{
 
 script FennilahlTown_PokemonCenter_NPC1{
 	if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
-		msgbox(format("You're the one who stopped the pickpocketing CLEFAIRY? Well done!"), MSGBOX_NPC)		
+		msgbox(format("You're the one who stopped the pickpocketing Clefairy? Well done!"), MSGBOX_NPC)		
 	} else {
-		msgbox(format("We've had an increase in pickpocketing recently. We suspect it's a nearby Pokémon."), MSGBOX_NPC)		
+		msgbox(format("There's been an increase in pickpocketing recently. Personally, I'm sure it's a nearby Pokémon!"), MSGBOX_NPC)		
 	}
 	end
 }
 
 script FennilahlTown_PokemonCenter_NPC2{
-	msgbox(format("You just got your first Pokémon too? Mine's a Rattata - we're gonna become Pokémon Champions one day!"), MSGBOX_NPC)		
+	msgbox(format("You just got your first Pokémon too? Rattata and I are gonna be Pokémon Champions one day!"), MSGBOX_NPC)		
 	end
 }
 

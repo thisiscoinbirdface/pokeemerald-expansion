@@ -224,7 +224,7 @@ F_TRAINER_FEMALE |
 #line 161
 F_TRAINER_FEMALE | 
 #line 162
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 163
         .doubleBattle = FALSE,
 #line 164

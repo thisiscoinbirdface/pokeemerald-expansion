@@ -1,16 +1,16 @@
 gText_WouldYouLikeToRestYourPkmn::
 	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
+	.string "the Pokémon Center.\p"
+	.string "We restore your tired Pokémon\n"
 	.string "to full health.\p"
-	.string "Would you like to rest your POKéMON?$"
+	.string "Would you like to rest your Pokémon?$"
 
 gText_IllTakeYourPkmn::
 	.string "Welcome to the Pokemon Center!\n"
-	.string "Allow me to heal your POKéMON.$"
+	.string "Allow me to heal your Pokémon.$"
 
 gText_RestoredPkmnToFullHealth::
-	.string "We've restored your POKéMON\n"
+	.string "We've restored your Pokémon\n"
 	.string "to full health.$"
 
 gText_WeHopeToSeeYouAgain::
@@ -18,8 +18,8 @@ gText_WeHopeToSeeYouAgain::
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
+	.string "the Pokémon Center.\p"
+	.string "We restore your tired Pokémon\n"
 	.string "to full health.\p"
 	.string "Would you like to…$"
 
@@ -33,7 +33,7 @@ gText_NoticesGoldCard::
 	.string "you're the first TRAINER I've ever\l"
 	.string "seen with a GOLD CARD!\p"
 	.string "Okay, {PLAYER}, please allow me\n"
-	.string "the honor of resting your POKéMON!$"
+	.string "the honor of resting your Pokémon!$"
 
 gText_YouWantTheUsual::
 	.string "I'm delighted to see you, {PLAYER}!\n"
@@ -41,7 +41,7 @@ gText_YouWantTheUsual::
 
 gText_IllTakeYourPkmn2::
 	.string "Welcome to the Pokemon Center!\n"
-	.string "Allow me to heal your POKéMON.$"
+	.string "Allow me to heal your Pokémon.$"
 
 gText_ThankYouForWaiting::
 	.string "Thank you for waiting.\n"
@@ -51,20 +51,20 @@ gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
 
 gText_TakeHealPass::
-	.string "I'll give you a new HEAL PASS too!$"
+	.string "I'll give you a new Heal Pass too!$"
 
 gText_ExplainHealPass::
 	.string "Trainer, is this your first time at a\n"
-	.string "POKéMON CENTER?\p"
+	.string "Pokémon Center?\p"
 	.string "Then I have good news - we have a special\n"
 	.string "promotion running right now!\p"
-	.string "Each Trainer that heals in any POKéMON\n"
-	.string "CENTER can receive up to one HEAL PASS.\p"
+	.string "Each Trainer that heals in any Pokémon\n"
+	.string "Center can receive up to one Heal Pass.\p"
 	.string "Trade it in with any Nurse Joy outside\n"
-	.string "a POKéMON CENTER to heal your POKéMON.\p"
-	.string "But you can only have one HEAL PASS\n"
-	.string "at a time. Once you have traded your\l"
-	.string "HEAL PASS in, please come back to any\l"
-	.string "POKéMON CENTER to receive a new one!$"
+	.string "a Pokémon Center to heal your Pokémon.\p"
+	.string "But you can only have one Heal Pass\n"
+	.string "at a time. Once you've used up your\l"
+	.string "Heal Pass, please come back to any\l"
+	.string "Pokémon Center to receive a new one!$"
 
 

@@ -70,14 +70,14 @@ Route1_TrainerBattle_B_Text_1:
 
 Route1_TrainerBattle_B_Text_2:
 # 20 "data//maps/Route1/scripts.pory"
-	.string "A good Pokémon team needs variety, I\n"
-	.string "guess.$"
+	.string "I guess A good Pokémon team needs type\n"
+	.string "variety!$"
 
 Route1_TrainerBattle_C_Text_0:
 # 27 "data//maps/Route1/scripts.pory"
 	.string "I came from Gastree City to find cool\n"
-	.string "bug-type Pokémon here...but I found\l"
-	.string "you instead!$"
+	.string "bug-type Pokémon...but I found you\l"
+	.string "instead!$"
 
 Route1_TrainerBattle_C_Text_1:
 # 27 "data//maps/Route1/scripts.pory"

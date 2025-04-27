@@ -75,20 +75,20 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 }
 
 text GastreeCity_KohlaIntro1 {
-    format("Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the GYM BADGE.")
+    format("Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the Hard Badge.")
 }
 text GastreeCity_KohlaIntro2{
     format("I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help. Over and out, chum!")
+    format("You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help.\pOver and out, chum!")
 }
 
 
 
 //NPCs
 script GastreeCity_NPC1{
-    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - be careful on Route 4! There's a dangerouns Dewpider that attacks people."), MSGBOX_NPC)
+    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - you have to be careful on Route 4! There's a dangerous Dewpider that attacks people."), MSGBOX_NPC)
     end
 }
 
@@ -178,6 +178,7 @@ script GastreeCity_NPC9{
         waitmovement(0)
         msgbox(format("No! Skitty!"))
         release
+        playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
         applymovement(LOCALID_SKITTYOG, moves(walk_fast_right *2 walk_fast_down * 6))
         waitmovement(0)
         applymovement(3, moves(face_down))
@@ -234,10 +235,10 @@ script GastreeCity_NPC9{
                 msgbox(format("Thank you trainer - my Skitty is back!"))
                 release
                 playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
-                msgbox(format("SKITTY: skiiii!!!"))
+                msgbox(format("Skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_CUT)
-                msgbox(format("You do need to have at least one GYM BADGE to use it. Now come here Skitty!"))
+                msgbox(format("You do need to have at least one Gym Badge to use it. Now come here Skitty!"))
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)
                 completequest(QUEST_GASTREE_SKITTY)
                 setflag(FLAG_GASTREE_NPC_SKITTY)

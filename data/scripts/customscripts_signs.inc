@@ -406,8 +406,7 @@ WhiteSign_FennilahlTown_TowardsRoute3_Text_0:
 WoodSign_FennilahlTown_Nicknaming_Text_0:
 # 51 "data//scripts/customscripts_signs.pory"
 	.string "TRAINER TIPS: You can nickname your\n"
-	.string "Pokémon directly from their summary\l"
-	.string "screen!$"
+	.string "Pokémon from the summary screen!$"
 
 WhiteSign_Route3_TowardsFennilahl_Text_0:
 # 60 "data//scripts/customscripts_signs.pory"

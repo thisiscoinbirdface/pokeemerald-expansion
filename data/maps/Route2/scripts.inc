@@ -47,18 +47,20 @@ Route2_Clefairy_Trigger0_1:
 # 30 "data//maps/Route2/scripts.pory"
 	removeobject LOCALID_CLEFAIRY
 # 31 "data//maps/Route2/scripts.pory"
+	playse SE_EXIT
+# 32 "data//maps/Route2/scripts.pory"
 	delay 24
-# 33 "data//maps/Route2/scripts.pory"
+# 34 "data//maps/Route2/scripts.pory"
 	setvar VAR_FENNILAHL_CLEFAIRY_QUEST, 1
-# 36 "data//maps/Route2/scripts.pory"
-	special SpawnCameraObject
 # 37 "data//maps/Route2/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route2_Clefairy_Trigger0_Movement_4
+	special SpawnCameraObject
 # 38 "data//maps/Route2/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_CAMERA, Route2_Clefairy_Trigger0_Movement_4
 # 39 "data//maps/Route2/scripts.pory"
+	waitmovement 0
+# 40 "data//maps/Route2/scripts.pory"
 	special RemoveCameraObject
-# 41 "data//maps/Route2/scripts.pory"
+# 42 "data//maps/Route2/scripts.pory"
 	releaseall
 	end
 
@@ -97,14 +99,14 @@ Route2_Clefairy_Trigger0_Movement_3:
 	walk_up
 	step_end
 
-# 37 "data//maps/Route2/scripts.pory"
+# 38 "data//maps/Route2/scripts.pory"
 Route2_Clefairy_Trigger0_Movement_4:
-# 37 "data//maps/Route2/scripts.pory"
+# 38 "data//maps/Route2/scripts.pory"
 	walk_up
-# 37 "data//maps/Route2/scripts.pory"
+# 38 "data//maps/Route2/scripts.pory"
 	walk_up
-# 37 "data//maps/Route2/scripts.pory"
+# 38 "data//maps/Route2/scripts.pory"
 	walk_up
-# 37 "data//maps/Route2/scripts.pory"
+# 38 "data//maps/Route2/scripts.pory"
 	walk_up
 	step_end

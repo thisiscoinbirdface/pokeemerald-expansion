@@ -192,9 +192,8 @@ Route3_TrainerBattle_Jana_Text_0:
 # 27 "data//maps/Route3/scripts.pory"
 	.string "I'm a Pokémon Breeder! All Breeders\n"
 	.string "specialise in one Pokémon variety, such\l"
-	.string "as dog Pokémon, cat Pokémon, or even\l"
-	.string "bear Pokémon! Can you guess my\l"
-	.string "specialty?$"
+	.string "as dog, cat, or even bear Pokémon!\p"
+	.string "Can you guess my specialty?$"
 
 Route3_TrainerBattle_Jana_Text_1:
 # 27 "data//maps/Route3/scripts.pory"
@@ -223,8 +222,8 @@ Route3_TrainerBattle_Chara_Text_2:
 
 Route3_NPC1_Text_0:
 # 54 "data//maps/Route3/scripts.pory"
-	.string "I love the high-altitude winds! I feel\n"
-	.string "one with the hills.$"
+	.string "I love the high-altitude winds!\p"
+	.string "I feel one with the hills.$"
 
 Route3_NPC2_Text_0:
 # 59 "data//maps/Route3/scripts.pory"

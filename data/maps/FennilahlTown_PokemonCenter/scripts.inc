@@ -55,19 +55,19 @@ FennilahlTown_PokemonCenter_Rattata::
 FennilahlTown_PokemonCenter_NPC1_Text_0:
 # 20 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "You're the one who stopped the\n"
-	.string "pickpocketing CLEFAIRY? Well done!$"
+	.string "pickpocketing Clefairy? Well done!$"
 
 FennilahlTown_PokemonCenter_NPC1_Text_1:
 # 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	.string "We've had an increase in pickpocketing\n"
-	.string "recently. We suspect it's a nearby\l"
-	.string "Pokémon.$"
+	.string "There's been an increase in\n"
+	.string "pickpocketing recently. Personally, I'm\l"
+	.string "sure it's a nearby Pokémon!$"
 
 FennilahlTown_PokemonCenter_NPC2_Text_0:
 # 28 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "You just got your first Pokémon too?\n"
-	.string "Mine's a Rattata - we're gonna become\l"
-	.string "Pokémon Champions one day!$"
+	.string "Rattata and I are gonna be Pokémon\l"
+	.string "Champions one day!$"
 
 FennilahlTown_PokemonCenter_Rattata_Text_0:
 # 34 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"

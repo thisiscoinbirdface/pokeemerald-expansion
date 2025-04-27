@@ -8,30 +8,44 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
 	lockall
     applymovement(1, moves(face_down))
     waitmovement(0)
+    speakername("Shopkeeper")
     msgbox(format("Ah, are you from the Tenebris Lab? Your supplies have been sitting here for a while now. Come here."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_left))
     waitmovement(0)
     applymovement(1, moves(face_right))
     waitmovement(0)    
-    msgbox(format("We've been waiting for a pickup. Of course, I understand you must be busy, what with your Professor disappearing into thin air and everything. Now where was it?"))
+    speakername("Shopkeeper")
+    msgbox(format("We've been waiting for a pickup.\nOf course, I understand you must be busy, what with your Professor disappearing into thin air and everything.\pNow where was it?"))
     release
     applymovement(1, moves(walk_up))
     waitmovement(0)  
+    speakername("Shopkeeper")
     msgbox(format("It should be right here...hold on...maybe under this...or was it here? "))
     release
     applymovement(1, moves(walk_down))
     waitmovement(0)  
+    speakername("Shopkeeper")
     msgbox(format("It's not here either. Where could it have gone?")) 
     applymovement(1, moves(face_right))
     waitmovement(0)     
-    msgbox(format("Let me check our records...hmm, that's strange. It says that Professor Tenebris already picked it up last week. Weird...I'm sorry, I can't help you. You should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
+    speakername("Shopkeeper")
+    msgbox(format("Let me check our records...hmm, that's strange. It says that Professor Tenebris already picked it up last week. Weird...I'm sorry, I can't help you.\pYou should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
 	releaseall
 
     //flags and vars
     clearflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
     setvar(VAR_FENNILAHL_MART_SUPPLIES, 1)
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_3)
+
+    //update quest announce
+    questmenu(QUEST_MENU_BUFFER_QUEST_NAME, QUEST_LAB_FIRST_DAY)
+    bufferstring(1, gText_QuestUpdated)
+	playfanfare(MUS_LEVEL_UP)
+	msgbox(gText_QuestAnnounce, MSGBOX_SIGN)
+
+    releaseall
+    end
 
 }
 
@@ -62,7 +76,7 @@ mart FennilahlTown_Pokemart_Inventory {
 
 
 script FennilahlTown_Pokemart_NPC{
-    msgbox(format("This Poké Mart doesn't sell much because we're in a remote town. But you can find these mint vending machines everywhere! It scans your Trainer Card and sells you mints based on how many badges you have."), MSGBOX_NPC)
+    msgbox(format("This Poké Mart doesn't sell much because we're in a remote town.\pBut you can find these mint vending machines everywhere! It scans your Trainer Card and sells you mints based on how many badges you have."), MSGBOX_NPC)
     end
 }
 

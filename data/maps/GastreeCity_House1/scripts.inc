@@ -44,10 +44,10 @@ GastreeCity_House1_NPC1_Text_0:
 
 GastreeCity_House1_Buneary_Text_0:
 # 14 "data//maps/GastreeCity_House1/scripts.pory"
-	.string "BUNEARY looks curiously at your\n"
+	.string "Buneary looks curiously at your\n"
 	.string "Pokémon...$"
 
 GastreeCity_House1_Buneary_Text_1:
 # 16 "data//maps/GastreeCity_House1/scripts.pory"
-	.string "BUNEARY looks curiously at your\n"
+	.string "Buneary looks curiously at your\n"
 	.string "Pokémon...it hands you something!$"

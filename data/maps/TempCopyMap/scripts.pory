@@ -14,7 +14,7 @@ script Common_EventScript_NurseDemo{
 //ALL COMMON EVENT SCRIPTS GO HERE
 script Common_EventScript_MintVendingMachine{
 
-    msgbox(format("There's a slot to swipe your TRAINER CARD. Swipe?"), MSGBOX_YESNO)
+    msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) {
         release
         end
@@ -1004,3 +1004,19 @@ script Common_EventScript_Tauros_GotoRoute6{
     delay(30)
     warp(MAP_ROUTE6, 52, 116) 
 }
+
+
+
+
+
+
+
+
+
+// script QuestMenu_UpdateQuest{
+//     questmenu(QUEST_MENU_BUFFER_QUEST_NAME, )
+//     bufferstring(1, gText_QuestUpdated)
+// 	playfanfare(MUS_LEVEL_UP)
+// 	msgbox(gText_QuestAnnounce, MSGBOX_SIGN)
+// }
+

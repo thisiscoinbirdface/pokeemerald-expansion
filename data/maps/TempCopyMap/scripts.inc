@@ -1651,8 +1651,7 @@ Common_EventScript_NurseDemo_Text_0:
 
 Common_EventScript_MintVendingMachine_Text_0:
 # 17 "data//maps/TempCopyMap/scripts.pory"
-	.string "There's a slot to swipe your TRAINER\n"
-	.string "CARD. Swipe?$"
+	.string "Swipe your Trainer Card?$"
 
 Common_EventScript_MintVendingMachine_Text_1:
 # 25 "data//maps/TempCopyMap/scripts.pory"

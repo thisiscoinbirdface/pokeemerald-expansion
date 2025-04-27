@@ -141,202 +141,218 @@ Route3_Underpass_EvilBattle::
 # 96 "data//maps/Route3_Underpass/scripts.pory"
 	msgbox Route3_Underpass_EvilBattle_Text_1
 # 97 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_2
+	release
 # 98 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	delay 12
 # 99 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_2
 # 100 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_3
+	waitmovement 0
 # 101 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_0
+	delay 12
 # 102 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_4
+	speakername Route3_Underpass_EvilBattle_Text_2
 # 103 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_3
+	msgbox Route3_Underpass_EvilBattle_Text_3
 # 104 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	speakername Route3_Underpass_EvilBattle_Text_0
 # 105 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	msgbox Route3_Underpass_EvilBattle_Text_4
 # 106 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_5
+	release
 # 107 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_3
 # 108 "data//maps/Route3_Underpass/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	waitmovement 0
 # 109 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_4
+	delay 12
 # 110 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	speakername Route3_Underpass_EvilBattle_Text_2
 # 111 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_6
+	msgbox Route3_Underpass_EvilBattle_Text_5
 # 112 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_7
+	release
 # 113 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
 # 114 "data//maps/Route3_Underpass/scripts.pory"
-	delay 8
+	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_4
 # 115 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_0
+	waitmovement 0
 # 116 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_8
+	speakername Route3_Underpass_EvilBattle_Text_6
 # 117 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_7
+# 118 "data//maps/Route3_Underpass/scripts.pory"
 	release
+# 119 "data//maps/Route3_Underpass/scripts.pory"
+	delay 8
 # 120 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_5
+	speakername Route3_Underpass_EvilBattle_Text_0
 # 121 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	msgbox Route3_Underpass_EvilBattle_Text_8
 # 122 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_0
-# 123 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_9
-# 124 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_6
+	release
 # 125 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_5
 # 126 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	waitmovement 0
 # 127 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_10
-# 128 "data//maps/Route3_Underpass/scripts.pory"
-	release
-# 129 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Movement_0
-# 130 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 131 "data//maps/Route3_Underpass/scripts.pory"
 	speakername Route3_Underpass_EvilBattle_Text_0
+# 128 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_9
+# 129 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 130 "data//maps/Route3_Underpass/scripts.pory"
+	delay 8
+# 131 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_6
 # 132 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_11
+	waitmovement 0
 # 133 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	delay 8
 # 134 "data//maps/Route3_Underpass/scripts.pory"
-	delay 16
+	speakername Route3_Underpass_EvilBattle_Text_2
 # 135 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_12
+	msgbox Route3_Underpass_EvilBattle_Text_10
 # 136 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_13
+	release
 # 137 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Movement_0
+# 138 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 139 "data//maps/Route3_Underpass/scripts.pory"
+	speakername Route3_Underpass_EvilBattle_Text_0
 # 140 "data//maps/Route3_Underpass/scripts.pory"
-	trainerbattle_no_intro TRAINER_ROUTE3_EVIL_GABRIELLE, Route3_Underpass_EvilBattle_Text_14
+	msgbox Route3_Underpass_EvilBattle_Text_11
+# 141 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 142 "data//maps/Route3_Underpass/scripts.pory"
+	delay 16
 # 143 "data//maps/Route3_Underpass/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAGMA, FALSE
+	speakername Route3_Underpass_EvilBattle_Text_12
 # 144 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_7
+	msgbox Route3_Underpass_EvilBattle_Text_13
 # 145 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 146 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_8
-# 147 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	release
 # 148 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_12
-# 149 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_15
-# 150 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	trainerbattle_no_intro TRAINER_ROUTE3_EVIL_GABRIELLE, Route3_Underpass_EvilBattle_Text_14
 # 151 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_9
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 152 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_7
 # 153 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_12
+	waitmovement 0
 # 154 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_16
+	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_8
 # 155 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	waitmovement 0
 # 156 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_10
+	speakername Route3_Underpass_EvilBattle_Text_12
 # 157 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	msgbox Route3_Underpass_EvilBattle_Text_15
 # 158 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject LOCALID_GAB
+	release
 # 159 "data//maps/Route3_Underpass/scripts.pory"
-	fadedefaultbgm
-# 162 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_11
-# 163 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_12
-# 164 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_9
+# 160 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
+# 161 "data//maps/Route3_Underpass/scripts.pory"
+	speakername Route3_Underpass_EvilBattle_Text_12
+# 162 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_16
+# 163 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 164 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement LOCALID_GAB, Route3_Underpass_EvilBattle_Movement_10
 # 165 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	waitmovement 0
 # 166 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_17
+	removeobject LOCALID_GAB
 # 167 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
-# 168 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_18
-# 169 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	fadedefaultbgm
 # 170 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_19
+	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_11
 # 171 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_2
+	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_12
 # 172 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_20
+	waitmovement 0
 # 173 "data//maps/Route3_Underpass/scripts.pory"
 	speakername Route3_Underpass_EvilBattle_Text_2
 # 174 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_21
+	msgbox Route3_Underpass_EvilBattle_Text_17
 # 175 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	speakername Route3_Underpass_EvilBattle_Text_2
 # 176 "data//maps/Route3_Underpass/scripts.pory"
-	giveitem ITEM_EVERSTONE
+	msgbox Route3_Underpass_EvilBattle_Text_18
 # 177 "data//maps/Route3_Underpass/scripts.pory"
 	speakername Route3_Underpass_EvilBattle_Text_2
 # 178 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_22
+	msgbox Route3_Underpass_EvilBattle_Text_19
 # 179 "data//maps/Route3_Underpass/scripts.pory"
 	speakername Route3_Underpass_EvilBattle_Text_2
 # 180 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_23
+	msgbox Route3_Underpass_EvilBattle_Text_20
 # 181 "data//maps/Route3_Underpass/scripts.pory"
-	release
+	speakername Route3_Underpass_EvilBattle_Text_2
 # 182 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Trigger1_Movement_0
+	msgbox Route3_Underpass_EvilBattle_Text_21
 # 183 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_13
-# 184 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_14
-# 185 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement LOCALID_CLEF
-# 186 "data//maps/Route3_Underpass/scripts.pory"
-	delay 30
-# 187 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_9
-# 188 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
-# 189 "data//maps/Route3_Underpass/scripts.pory"
-	delay 8
-# 190 "data//maps/Route3_Underpass/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-# 191 "data//maps/Route3_Underpass/scripts.pory"
-	speakername Route3_Underpass_EvilBattle_Text_6
-# 192 "data//maps/Route3_Underpass/scripts.pory"
-	msgbox Route3_Underpass_EvilBattle_Text_7
-# 193 "data//maps/Route3_Underpass/scripts.pory"
 	release
+# 184 "data//maps/Route3_Underpass/scripts.pory"
+	giveitem ITEM_EVERSTONE
+# 185 "data//maps/Route3_Underpass/scripts.pory"
+	speakername Route3_Underpass_EvilBattle_Text_2
+# 186 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_22
+# 187 "data//maps/Route3_Underpass/scripts.pory"
+	speakername Route3_Underpass_EvilBattle_Text_2
+# 188 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_23
+# 189 "data//maps/Route3_Underpass/scripts.pory"
+	release
+# 190 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route3_Underpass_EvilBattle_Trigger1_Movement_0
+# 191 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement LOCALID_BREECH, Route3_Underpass_EvilBattle_Movement_13
+# 192 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_14
+# 193 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement LOCALID_CLEF
 # 194 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_15
+	delay 30
 # 195 "data//maps/Route3_Underpass/scripts.pory"
-	waitmovement 0
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
 # 196 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject LOCALID_BREECH
+	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_9
 # 197 "data//maps/Route3_Underpass/scripts.pory"
-	removeobject LOCALID_CLEF
-# 199 "data//maps/Route3_Underpass/scripts.pory"
-	special SpawnCameraObject
-# 200 "data//maps/Route3_Underpass/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route3_Underpass_EvilBattle_Movement_11
-# 201 "data//maps/Route3_Underpass/scripts.pory"
 	waitmovement 0
+# 198 "data//maps/Route3_Underpass/scripts.pory"
+	delay 8
+# 199 "data//maps/Route3_Underpass/scripts.pory"
+	speakername Route3_Underpass_EvilBattle_Text_6
+# 200 "data//maps/Route3_Underpass/scripts.pory"
+	msgbox Route3_Underpass_EvilBattle_Text_7
+# 201 "data//maps/Route3_Underpass/scripts.pory"
+	release
 # 202 "data//maps/Route3_Underpass/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_CLEF, Route3_Underpass_EvilBattle_Movement_15
+# 203 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 204 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject LOCALID_BREECH
 # 205 "data//maps/Route3_Underpass/scripts.pory"
+	removeobject LOCALID_CLEF
+# 207 "data//maps/Route3_Underpass/scripts.pory"
+	special SpawnCameraObject
+# 208 "data//maps/Route3_Underpass/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route3_Underpass_EvilBattle_Movement_11
+# 209 "data//maps/Route3_Underpass/scripts.pory"
+	waitmovement 0
+# 210 "data//maps/Route3_Underpass/scripts.pory"
+	special RemoveCameraObject
+# 213 "data//maps/Route3_Underpass/scripts.pory"
 	setflag FLAG_ROUTE3_UNDERPASS_EVILTEAM
-# 206 "data//maps/Route3_Underpass/scripts.pory"
+# 214 "data//maps/Route3_Underpass/scripts.pory"
 	releaseall
 	return
 
@@ -375,135 +391,135 @@ Route3_Underpass_EvilBattle_Movement_1:
 	jump_in_place_right
 	step_end
 
-# 97 "data//maps/Route3_Underpass/scripts.pory"
+# 99 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_2:
-# 97 "data//maps/Route3_Underpass/scripts.pory"
+# 99 "data//maps/Route3_Underpass/scripts.pory"
 	walk_right
-# 97 "data//maps/Route3_Underpass/scripts.pory"
+# 99 "data//maps/Route3_Underpass/scripts.pory"
 	face_left
 	step_end
 
-# 103 "data//maps/Route3_Underpass/scripts.pory"
+# 107 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_3:
-# 103 "data//maps/Route3_Underpass/scripts.pory"
+# 107 "data//maps/Route3_Underpass/scripts.pory"
 	walk_right
 	step_end
 
-# 109 "data//maps/Route3_Underpass/scripts.pory"
+# 114 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_4:
-# 109 "data//maps/Route3_Underpass/scripts.pory"
+# 114 "data//maps/Route3_Underpass/scripts.pory"
 	jump_in_place_left
-# 109 "data//maps/Route3_Underpass/scripts.pory"
+# 114 "data//maps/Route3_Underpass/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 120 "data//maps/Route3_Underpass/scripts.pory"
+# 125 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_5:
-# 120 "data//maps/Route3_Underpass/scripts.pory"
+# 125 "data//maps/Route3_Underpass/scripts.pory"
 	jump_in_place_up
-# 120 "data//maps/Route3_Underpass/scripts.pory"
+# 125 "data//maps/Route3_Underpass/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 124 "data//maps/Route3_Underpass/scripts.pory"
+# 131 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_6:
-# 124 "data//maps/Route3_Underpass/scripts.pory"
+# 131 "data//maps/Route3_Underpass/scripts.pory"
 	face_up
 	step_end
 
-# 144 "data//maps/Route3_Underpass/scripts.pory"
+# 152 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_7:
-# 144 "data//maps/Route3_Underpass/scripts.pory"
+# 152 "data//maps/Route3_Underpass/scripts.pory"
 	face_left
 	step_end
 
-# 146 "data//maps/Route3_Underpass/scripts.pory"
+# 154 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_8:
-# 146 "data//maps/Route3_Underpass/scripts.pory"
+# 154 "data//maps/Route3_Underpass/scripts.pory"
 	face_right
 	step_end
 
-# 151 "data//maps/Route3_Underpass/scripts.pory"
+# 159 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_9:
-# 151 "data//maps/Route3_Underpass/scripts.pory"
+# 159 "data//maps/Route3_Underpass/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_10:
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 156 "data//maps/Route3_Underpass/scripts.pory"
+# 164 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 	step_end
 
-# 162 "data//maps/Route3_Underpass/scripts.pory"
+# 170 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_11:
-# 162 "data//maps/Route3_Underpass/scripts.pory"
+# 170 "data//maps/Route3_Underpass/scripts.pory"
 	walk_up
 	step_end
 
-# 163 "data//maps/Route3_Underpass/scripts.pory"
+# 171 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_12:
-# 163 "data//maps/Route3_Underpass/scripts.pory"
+# 171 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
-# 163 "data//maps/Route3_Underpass/scripts.pory"
+# 171 "data//maps/Route3_Underpass/scripts.pory"
 	face_up
 	step_end
 
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_13:
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 183 "data//maps/Route3_Underpass/scripts.pory"
+# 191 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 	step_end
 
-# 184 "data//maps/Route3_Underpass/scripts.pory"
+# 192 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_14:
-# 184 "data//maps/Route3_Underpass/scripts.pory"
+# 192 "data//maps/Route3_Underpass/scripts.pory"
 	walk_left
-# 184 "data//maps/Route3_Underpass/scripts.pory"
+# 192 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 184 "data//maps/Route3_Underpass/scripts.pory"
+# 192 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 184 "data//maps/Route3_Underpass/scripts.pory"
+# 192 "data//maps/Route3_Underpass/scripts.pory"
 	face_up
 	step_end
 
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 Route3_Underpass_EvilBattle_Movement_15:
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
-# 194 "data//maps/Route3_Underpass/scripts.pory"
+# 202 "data//maps/Route3_Underpass/scripts.pory"
 	walk_down
 	step_end
 
@@ -543,119 +559,119 @@ Route3_Underpass_EvilBattle_Text_1:
 	.string "Give it to me!$"
 
 Route3_Underpass_EvilBattle_Text_2:
-# 99 "data//maps/Route3_Underpass/scripts.pory"
+# 102 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Breech$"
 
 Route3_Underpass_EvilBattle_Text_3:
-# 100 "data//maps/Route3_Underpass/scripts.pory"
+# 103 "data//maps/Route3_Underpass/scripts.pory"
 	.string "No! Stay away! Clefairy is MY partner!$"
 
 Route3_Underpass_EvilBattle_Text_4:
-# 102 "data//maps/Route3_Underpass/scripts.pory"
+# 105 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I said give it to me! It's holding a\n"
 	.string "dreamstone. That's too precious to be\l"
 	.string "held by someone like you!$"
 
 Route3_Underpass_EvilBattle_Text_5:
-# 106 "data//maps/Route3_Underpass/scripts.pory"
+# 111 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I don't know anything about any\n"
 	.string "dreamstones, please! Just stop!$"
 
 Route3_Underpass_EvilBattle_Text_6:
-# 111 "data//maps/Route3_Underpass/scripts.pory"
+# 116 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Clefairy$"
 
 Route3_Underpass_EvilBattle_Text_7:
-# 112 "data//maps/Route3_Underpass/scripts.pory"
+# 117 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Clee!!!$"
 
 Route3_Underpass_EvilBattle_Text_8:
-# 116 "data//maps/Route3_Underpass/scripts.pory"
+# 121 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Hahaha! Your Clefairy wants to protect\n"
 	.string "you, but you don't even have the will to\l"
 	.string "fight alongside her. Just give up\l"
 	.string "before I bring my Pokémon out!$"
 
 Route3_Underpass_EvilBattle_Text_9:
-# 123 "data//maps/Route3_Underpass/scripts.pory"
+# 128 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Who's there? What you do want?$"
 
 Route3_Underpass_EvilBattle_Text_10:
-# 127 "data//maps/Route3_Underpass/scripts.pory"
+# 135 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER}! It's you! This thug is\n"
-	.string "trying to take Clefairy away! Help me,\l"
-	.string "please!$"
+	.string "trying to take Clefairy away!\p"
+	.string "You have to help me, please!$"
 
 Route3_Underpass_EvilBattle_Text_11:
-# 132 "data//maps/Route3_Underpass/scripts.pory"
+# 140 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Oh, you're just some stupid kid. How\n"
 	.string "about you mind your own business?$"
 
 Route3_Underpass_EvilBattle_Text_12:
-# 135 "data//maps/Route3_Underpass/scripts.pory"
+# 143 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Gabrielle$"
 
 Route3_Underpass_EvilBattle_Text_13:
-# 136 "data//maps/Route3_Underpass/scripts.pory"
+# 144 "data//maps/Route3_Underpass/scripts.pory"
 	.string "No?\p"
 	.string "No?!?!\p"
 	.string "Well then...let Gabrielle teach you a\n"
-	.string "lesson: don't stick your nose where it\l"
-	.string "doesn't belong!$"
+	.string "lesson: don't go sticking your nose\l"
+	.string "where it doesn't belong!$"
 
 Route3_Underpass_EvilBattle_Text_14:
-# 140 "data//maps/Route3_Underpass/scripts.pory"
+# 148 "data//maps/Route3_Underpass/scripts.pory"
 	.string "My Pokémon just aren't good enough!$"
 
 Route3_Underpass_EvilBattle_Text_15:
-# 149 "data//maps/Route3_Underpass/scripts.pory"
+# 157 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Fine - keep your stupid Clefairy!$"
 
 Route3_Underpass_EvilBattle_Text_16:
-# 154 "data//maps/Route3_Underpass/scripts.pory"
+# 162 "data//maps/Route3_Underpass/scripts.pory"
 	.string "And you! I'll remember this, {PLAYER}.\n"
 	.string "You'll regret messing with Team Somber!$"
 
 Route3_Underpass_EvilBattle_Text_17:
-# 166 "data//maps/Route3_Underpass/scripts.pory"
+# 174 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER} - Clefairy and I are in your\n"
 	.string "debt. The way you handled that thug was\l"
 	.string "incredible.$"
 
 Route3_Underpass_EvilBattle_Text_18:
-# 168 "data//maps/Route3_Underpass/scripts.pory"
+# 176 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I've realised something. When alone, I\n"
 	.string "was free to do as I wish and avoid\l"
 	.string "battling. But with a partner, I can't be\l"
 	.string "that way.$"
 
 Route3_Underpass_EvilBattle_Text_19:
-# 170 "data//maps/Route3_Underpass/scripts.pory"
+# 178 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Clefairy was ready to protect me, but I\n"
 	.string "wasn't prepared to do the same for her.\p"
 	.string "...\p"
 	.string "I let her down.$"
 
 Route3_Underpass_EvilBattle_Text_20:
-# 172 "data//maps/Route3_Underpass/scripts.pory"
+# 180 "data//maps/Route3_Underpass/scripts.pory"
 	.string "But no more! I'm going to learn to hold\n"
 	.string "my ground. If Team Somber comes after\l"
 	.string "Clefairy again, we'll be ready.$"
 
 Route3_Underpass_EvilBattle_Text_21:
-# 174 "data//maps/Route3_Underpass/scripts.pory"
+# 182 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER} - we owe you. As thanks,\n"
 	.string "Clefairy and I want to give you the\l"
 	.string "stone that Gabrielle person was after...$"
 
 Route3_Underpass_EvilBattle_Text_22:
-# 178 "data//maps/Route3_Underpass/scripts.pory"
+# 186 "data//maps/Route3_Underpass/scripts.pory"
 	.string "I don't know about dreamstones, but it\n"
 	.string "looks like a regular Everstone to me.\l"
 	.string "Who knows what she saw?$"
 
 Route3_Underpass_EvilBattle_Text_23:
-# 180 "data//maps/Route3_Underpass/scripts.pory"
+# 188 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Don't worry - Clefairy's bored of that\n"
 	.string "stone already. Next, we'll head to Mt.\l"
 	.string "Ceram to collect rare stones there!$"

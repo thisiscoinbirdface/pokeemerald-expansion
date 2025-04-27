@@ -28,6 +28,7 @@ script Route2_Clefairy_Trigger0{
     waitmovement(0)
     delay(12)   
     removeobject(LOCALID_CLEFAIRY) 
+    playse(SE_EXIT)
     delay(24)
 
     setvar(VAR_FENNILAHL_CLEFAIRY_QUEST, 1)

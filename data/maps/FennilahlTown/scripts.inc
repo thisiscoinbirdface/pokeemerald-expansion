@@ -598,7 +598,8 @@ FennilahlTown_EventScript_Man_Text_0:
 # 15 "data//maps/FennilahlTown/scripts.pory"
 	.string "I was watching the news the other day.\n"
 	.string "They say that the Pokémon\l"
-	.string "Psychologist has gone missing. Who?\l"
+	.string "Psychologist has gone missing.\p"
+	.string "Who?\p"
 	.string "Professor Tenebris of course!$"
 
 FennilahlTown_EventScript_Woman_Text_0:

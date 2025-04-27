@@ -17,14 +17,14 @@ script Route1_TrainerBattle_A {
 script Route1_TrainerBattle_B {
 
     trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokémon. Let me show you my favourite!"), "My FLYING type Pokémon lost!")
-    msgbox(format("A good Pokémon team needs variety, I guess."))
+    msgbox(format("I guess A good Pokémon team needs type variety!"))
     release
     end
 
 }
 
 script Route1_TrainerBattle_C {
-    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find cool bug-type Pokémon here...but I found you instead!"), "Well, back to bug-hunting for me.")
+    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find cool bug-type Pokémon...but I found you instead!"), "Well, back to bug-hunting for me.")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
     end

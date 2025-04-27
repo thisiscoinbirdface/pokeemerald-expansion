@@ -40,7 +40,7 @@ u32 GetCurrentLevelCap(void)
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
-    static const u32 sExpScalingDown[5] = { 2, 3, 4, 8, 16 };
+    static const u32 sExpScalingDown[5] = { 2, 2, 3, 3, 4 };
     static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
 
     u32 levelDifference;

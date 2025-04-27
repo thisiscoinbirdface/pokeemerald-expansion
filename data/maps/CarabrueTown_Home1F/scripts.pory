@@ -69,6 +69,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_QUEST_MENU_GET)
     startquest(QUEST_LAB_FIRST_DAY)
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1)
+    msgbox(format("You can check active quests in the Quest Log via the START Menu!"), MSGBOX_SIGN)
 
     //Mom sits back down
     applymovement(1, moves(

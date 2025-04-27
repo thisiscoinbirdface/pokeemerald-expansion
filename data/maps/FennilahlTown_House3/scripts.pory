@@ -2,13 +2,13 @@ mapscripts FennilahlTown_House3_MapScripts{}
 
 
 script FennilahlTown_House3_NPC1{
-    msgbox(format("Did you know that some Pokémon can Mega evolve?"), MSGBOX_NPC)
+    msgbox(format("Did you know that there are Pokémon that can mega evolve?"), MSGBOX_NPC)
     end
 }
 
 
 script FennilahlTown_House3_NPC2{
-    msgbox(format("My Rockruff's ability is OWN TEMPO! I caught it on Route 2, south of here."), MSGBOX_NPC)
+    msgbox(format("My Rockruff's ability is Own Tempo!\pI met it on Route 2, south of here."), MSGBOX_NPC)
     end
 }
 

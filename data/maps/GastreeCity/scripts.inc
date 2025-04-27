@@ -201,241 +201,243 @@ GastreeCity_EventScript_SkittyQuestStart::
 # 180 "data//maps/GastreeCity/scripts.pory"
 	release
 # 181 "data//maps/GastreeCity/scripts.pory"
-	applymovement LOCALID_SKITTYOG, GastreeCity_EventScript_SkittyQuestStart_Movement_0
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 182 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_SKITTYOG, GastreeCity_EventScript_SkittyQuestStart_Movement_0
 # 183 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_1
+	waitmovement 0
 # 184 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_1
 # 185 "data//maps/GastreeCity/scripts.pory"
-	removeobject LOCALID_SKITTYOG
+	waitmovement 0
 # 186 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_2
-# 187 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 188 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScript_SkittyQuestStart_Text_1
-# 189 "data//maps/GastreeCity/scripts.pory"
-	release
-# 190 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_3
-# 191 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 192 "data//maps/GastreeCity/scripts.pory"
-	delay 36
-# 193 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_4
-# 194 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 195 "data//maps/GastreeCity/scripts.pory"
-	delay 36
-# 196 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_NPC8_Movement_0
-# 197 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 198 "data//maps/GastreeCity/scripts.pory"
-	delay 36
-# 199 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_5
-# 200 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 201 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScript_SkittyQuestStart_Text_2
-# 202 "data//maps/GastreeCity/scripts.pory"
-	release
-# 203 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_HIDE_GASTREE_SKITTY
-# 204 "data//maps/GastreeCity/scripts.pory"
-	startquest QUEST_GASTREE_SKITTY
-# 205 "data//maps/GastreeCity/scripts.pory"
-	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_6
-# 206 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
-# 211 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_HIDE_GASTREE_SKITTY
-# 212 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_SKITTYOG
-# 215 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY1
+# 187 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_2
+# 188 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 189 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScript_SkittyQuestStart_Text_1
+# 190 "data//maps/GastreeCity/scripts.pory"
+	release
+# 191 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_3
+# 192 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 193 "data//maps/GastreeCity/scripts.pory"
+	delay 36
+# 194 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_4
+# 195 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 196 "data//maps/GastreeCity/scripts.pory"
+	delay 36
+# 197 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_NPC8_Movement_0
+# 198 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 199 "data//maps/GastreeCity/scripts.pory"
+	delay 36
+# 200 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_5
+# 201 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 202 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScript_SkittyQuestStart_Text_2
+# 203 "data//maps/GastreeCity/scripts.pory"
+	release
+# 204 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_HIDE_GASTREE_SKITTY
+# 205 "data//maps/GastreeCity/scripts.pory"
+	startquest QUEST_GASTREE_SKITTY
+# 206 "data//maps/GastreeCity/scripts.pory"
+	applymovement 3, GastreeCity_EventScript_SkittyQuestStart_Movement_6
+# 207 "data//maps/GastreeCity/scripts.pory"
+	waitmovement 0
+# 212 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_HIDE_GASTREE_SKITTY
+# 213 "data//maps/GastreeCity/scripts.pory"
+	removeobject LOCALID_SKITTYOG
 # 216 "data//maps/GastreeCity/scripts.pory"
+	clearflag FLAG_HIDE_GASTREE_SKITTY1
+# 217 "data//maps/GastreeCity/scripts.pory"
 	addobject LOCALID_SKITTY1
-# 219 "data//maps/GastreeCity/scripts.pory"
-	setvar VAR_GASTREE_SKITTY_QUEST, 1
 # 220 "data//maps/GastreeCity/scripts.pory"
+	setvar VAR_GASTREE_SKITTY_QUEST, 1
+# 221 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_NPC2::
-# 226 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 227 "data//maps/GastreeCity/scripts.pory"
+	lockall
+# 228 "data//maps/GastreeCity/scripts.pory"
 	faceplayer
-# 229 "data//maps/GastreeCity/scripts.pory"
+# 230 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_NPC_SKITTY, GastreeCity_NPC2_2
-# 232 "data//maps/GastreeCity/scripts.pory"
+# 233 "data//maps/GastreeCity/scripts.pory"
 	goto_if_set FLAG_GASTREE_TRIGGER_SKITTY, GastreeCity_NPC2_5
-# 245 "data//maps/GastreeCity/scripts.pory"
+# 246 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_5
 GastreeCity_NPC2_1:
-# 248 "data//maps/GastreeCity/scripts.pory"
+# 249 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 GastreeCity_NPC2_2:
-# 230 "data//maps/GastreeCity/scripts.pory"
+# 231 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_0, MSGBOX_NPC
 	goto GastreeCity_NPC2_1
 
 GastreeCity_NPC2_5:
-# 233 "data//maps/GastreeCity/scripts.pory"
-	addobject LOCALID_SKITTYOG
 # 234 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_1
+	addobject LOCALID_SKITTYOG
 # 235 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_NPC2_Text_1
 # 236 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	release
 # 237 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_2
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 238 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_3
+	msgbox GastreeCity_NPC2_Text_2
 # 239 "data//maps/GastreeCity/scripts.pory"
-	giveitem ITEM_HM_CUT
+	msgbox GastreeCity_NPC2_Text_3
 # 240 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC2_Text_4
+	giveitem ITEM_HM_CUT
 # 241 "data//maps/GastreeCity/scripts.pory"
-	setvar VAR_GASTREE_SKITTY_QUEST, 5
+	msgbox GastreeCity_NPC2_Text_4
 # 242 "data//maps/GastreeCity/scripts.pory"
-	completequest QUEST_GASTREE_SKITTY
+	setvar VAR_GASTREE_SKITTY_QUEST, 5
 # 243 "data//maps/GastreeCity/scripts.pory"
+	completequest QUEST_GASTREE_SKITTY
+# 244 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_NPC_SKITTY
 	goto GastreeCity_NPC2_1
 
 
 GastreeCity_EventScripts_SkittyTrigger1::
-# 253 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_0
 # 254 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_0
 # 255 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	release
 # 256 "data//maps/GastreeCity/scripts.pory"
-	delay 16
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 257 "data//maps/GastreeCity/scripts.pory"
-	applymovement LOCALID_SKITTY1, GastreeCity_EventScripts_SkittyTrigger1_Movement_0
+	delay 16
 # 258 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_SKITTY1, GastreeCity_EventScripts_SkittyTrigger1_Movement_0
 # 259 "data//maps/GastreeCity/scripts.pory"
-	removeobject 17
+	waitmovement 0
 # 260 "data//maps/GastreeCity/scripts.pory"
+	removeobject 17
+# 261 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_1
-# 264 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_HIDE_GASTREE_SKITTY1
 # 265 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_HIDE_GASTREE_SKITTY1
+# 266 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_SKITTY1
-# 268 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY2
 # 269 "data//maps/GastreeCity/scripts.pory"
+	clearflag FLAG_HIDE_GASTREE_SKITTY2
+# 270 "data//maps/GastreeCity/scripts.pory"
 	addobject LOCALID_SKITTY2
-# 272 "data//maps/GastreeCity/scripts.pory"
-	setvar VAR_GASTREE_SKITTY_QUEST, 2
 # 273 "data//maps/GastreeCity/scripts.pory"
+	setvar VAR_GASTREE_SKITTY_QUEST, 2
+# 274 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_EventScripts_SkittyTrigger2::
-# 278 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_0
 # 279 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_EventScripts_SkittyTrigger1_Text_0
 # 280 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	release
 # 281 "data//maps/GastreeCity/scripts.pory"
-	delay 16
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 282 "data//maps/GastreeCity/scripts.pory"
-	applymovement LOCALID_SKITTY2, GastreeCity_EventScripts_SkittyTrigger2_Movement_0
+	delay 16
 # 283 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_SKITTY2, GastreeCity_EventScripts_SkittyTrigger2_Movement_0
 # 284 "data//maps/GastreeCity/scripts.pory"
-	removeobject LOCALID_SKITTY2
+	waitmovement 0
 # 285 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger2_Text_0
-# 288 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_HIDE_GASTREE_SKITTY2
-# 289 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_SKITTY2
-# 292 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY3
+# 286 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScripts_SkittyTrigger2_Text_0
+# 289 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_HIDE_GASTREE_SKITTY2
+# 290 "data//maps/GastreeCity/scripts.pory"
+	removeobject LOCALID_SKITTY2
 # 293 "data//maps/GastreeCity/scripts.pory"
+	clearflag FLAG_HIDE_GASTREE_SKITTY3
+# 294 "data//maps/GastreeCity/scripts.pory"
 	addobject LOCALID_SKITTY3
-# 296 "data//maps/GastreeCity/scripts.pory"
-	setvar VAR_GASTREE_SKITTY_QUEST, 3
 # 297 "data//maps/GastreeCity/scripts.pory"
+	setvar VAR_GASTREE_SKITTY_QUEST, 3
+# 298 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_EventScripts_SkittyTrigger3::
-# 303 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger3_Text_0
 # 304 "data//maps/GastreeCity/scripts.pory"
-	release
+	msgbox GastreeCity_EventScripts_SkittyTrigger3_Text_0
 # 305 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	release
 # 306 "data//maps/GastreeCity/scripts.pory"
-	delay 16
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 307 "data//maps/GastreeCity/scripts.pory"
-	applymovement LOCALID_SKITTY3, GastreeCity_EventScripts_SkittyTrigger3_Movement_0
+	delay 16
 # 308 "data//maps/GastreeCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_SKITTY3, GastreeCity_EventScripts_SkittyTrigger3_Movement_0
 # 309 "data//maps/GastreeCity/scripts.pory"
-	removeobject LOCALID_SKITTY3
+	waitmovement 0
 # 310 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_EventScripts_SkittyTrigger3_Text_1
-# 313 "data//maps/GastreeCity/scripts.pory"
-	setflag FLAG_HIDE_GASTREE_SKITTY3
-# 314 "data//maps/GastreeCity/scripts.pory"
 	removeobject LOCALID_SKITTY3
-# 317 "data//maps/GastreeCity/scripts.pory"
-	clearflag FLAG_HIDE_GASTREE_SKITTY
+# 311 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_EventScripts_SkittyTrigger3_Text_1
+# 314 "data//maps/GastreeCity/scripts.pory"
+	setflag FLAG_HIDE_GASTREE_SKITTY3
+# 315 "data//maps/GastreeCity/scripts.pory"
+	removeobject LOCALID_SKITTY3
 # 318 "data//maps/GastreeCity/scripts.pory"
+	clearflag FLAG_HIDE_GASTREE_SKITTY
+# 319 "data//maps/GastreeCity/scripts.pory"
 	addobject LOCALID_SKITTYOG
-# 321 "data//maps/GastreeCity/scripts.pory"
+# 322 "data//maps/GastreeCity/scripts.pory"
 	setvar VAR_GASTREE_SKITTY_QUEST, 4
-# 324 "data//maps/GastreeCity/scripts.pory"
+# 325 "data//maps/GastreeCity/scripts.pory"
 	setflag FLAG_GASTREE_TRIGGER_SKITTY
-# 326 "data//maps/GastreeCity/scripts.pory"
+# 327 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_NPC_Skitty::
-# 331 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 332 "data//maps/GastreeCity/scripts.pory"
-	faceplayer
+	lockall
 # 333 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	faceplayer
 # 334 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_NPC_Skitty_Text_0
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
 # 335 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_NPC_Skitty_Text_0
+# 336 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_Poltchageist::
-# 341 "data//maps/GastreeCity/scripts.pory"
-	lockall
 # 342 "data//maps/GastreeCity/scripts.pory"
-	playmoncry SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL
+	lockall
 # 343 "data//maps/GastreeCity/scripts.pory"
-	faceplayer
+	playmoncry SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL
 # 344 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_Poltchageist_Text_0
+	faceplayer
 # 345 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_Poltchageist_Text_0
+# 346 "data//maps/GastreeCity/scripts.pory"
 	releaseall
 	end
 
@@ -490,173 +492,173 @@ GastreeCity_NPC8_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_0:
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 181 "data//maps/GastreeCity/scripts.pory"
+# 182 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 183 "data//maps/GastreeCity/scripts.pory"
+# 184 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_1:
-# 183 "data//maps/GastreeCity/scripts.pory"
+# 184 "data//maps/GastreeCity/scripts.pory"
 	face_down
 	step_end
 
-# 186 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_2:
-# 186 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 	jump_in_place_down
-# 186 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 	jump_in_place_down
-# 186 "data//maps/GastreeCity/scripts.pory"
+# 187 "data//maps/GastreeCity/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 190 "data//maps/GastreeCity/scripts.pory"
+# 191 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_3:
-# 190 "data//maps/GastreeCity/scripts.pory"
+# 191 "data//maps/GastreeCity/scripts.pory"
 	face_left
 	step_end
 
-# 193 "data//maps/GastreeCity/scripts.pory"
+# 194 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_4:
-# 193 "data//maps/GastreeCity/scripts.pory"
+# 194 "data//maps/GastreeCity/scripts.pory"
 	face_right
 	step_end
 
-# 199 "data//maps/GastreeCity/scripts.pory"
+# 200 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_5:
-# 199 "data//maps/GastreeCity/scripts.pory"
+# 200 "data//maps/GastreeCity/scripts.pory"
 	walk_right
-# 199 "data//maps/GastreeCity/scripts.pory"
+# 200 "data//maps/GastreeCity/scripts.pory"
 	walk_right
-# 199 "data//maps/GastreeCity/scripts.pory"
+# 200 "data//maps/GastreeCity/scripts.pory"
 	walk_right
-# 199 "data//maps/GastreeCity/scripts.pory"
+# 200 "data//maps/GastreeCity/scripts.pory"
 	face_up
 	step_end
 
-# 205 "data//maps/GastreeCity/scripts.pory"
+# 206 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_6:
-# 205 "data//maps/GastreeCity/scripts.pory"
+# 206 "data//maps/GastreeCity/scripts.pory"
 	walk_left
-# 205 "data//maps/GastreeCity/scripts.pory"
+# 206 "data//maps/GastreeCity/scripts.pory"
 	walk_left
-# 205 "data//maps/GastreeCity/scripts.pory"
+# 206 "data//maps/GastreeCity/scripts.pory"
 	walk_left
-# 205 "data//maps/GastreeCity/scripts.pory"
+# 206 "data//maps/GastreeCity/scripts.pory"
 	face_right
 	step_end
 
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScripts_SkittyTrigger1_Movement_0:
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	emote_exclamation_mark
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
-# 257 "data//maps/GastreeCity/scripts.pory"
+# 258 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScripts_SkittyTrigger2_Movement_0:
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	emote_exclamation_mark
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
-# 282 "data//maps/GastreeCity/scripts.pory"
+# 283 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScripts_SkittyTrigger3_Movement_0:
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	emote_exclamation_mark
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
-# 307 "data//maps/GastreeCity/scripts.pory"
+# 308 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
 	step_end
 
@@ -672,9 +674,9 @@ GastreeCity_NPC1_Text_0:
 # 91 "data//maps/GastreeCity/scripts.pory"
 	.string "You came all the way from Carabrue\n"
 	.string "Town? Woah! Then I bet you don't know -\l"
-	.string "be careful on Route 4! There's a\l"
-	.string "dangerouns Dewpider that attacks\l"
-	.string "people.$"
+	.string "you have to be careful on Route 4!\l"
+	.string "There's a dangerous Dewpider that\l"
+	.string "attacks people.$"
 
 GastreeCity_NPC3_Text_0:
 # 96 "data//maps/GastreeCity/scripts.pory"
@@ -768,11 +770,11 @@ GastreeCity_EventScript_SkittyQuestStart_Text_0:
 	.string "No! Skitty!$"
 
 GastreeCity_EventScript_SkittyQuestStart_Text_1:
-# 188 "data//maps/GastreeCity/scripts.pory"
+# 189 "data//maps/GastreeCity/scripts.pory"
 	.string "Skitty! Come back!!!$"
 
 GastreeCity_EventScript_SkittyQuestStart_Text_2:
-# 201 "data//maps/GastreeCity/scripts.pory"
+# 202 "data//maps/GastreeCity/scripts.pory"
 	.string "Trainer! Trainer! You saw what\n"
 	.string "happened, right? Oh, you have to bring\l"
 	.string "my Skitty back, you absolutely have to!\l"
@@ -780,64 +782,64 @@ GastreeCity_EventScript_SkittyQuestStart_Text_2:
 	.string "find her!$"
 
 GastreeCity_NPC2_Text_0:
-# 230 "data//maps/GastreeCity/scripts.pory"
+# 231 "data//maps/GastreeCity/scripts.pory"
 	.string "Skitty ran away because she got\n"
 	.string "bored...maybe I should catch a Purrloin\l"
 	.string "or Meowth for her to play with.$"
 
 GastreeCity_NPC2_Text_1:
-# 234 "data//maps/GastreeCity/scripts.pory"
+# 235 "data//maps/GastreeCity/scripts.pory"
 	.string "Thank you trainer - my Skitty is back!$"
 
 GastreeCity_NPC2_Text_2:
-# 237 "data//maps/GastreeCity/scripts.pory"
-	.string "SKITTY: skiiii!!!$"
+# 238 "data//maps/GastreeCity/scripts.pory"
+	.string "Skiiii!!!$"
 
 GastreeCity_NPC2_Text_3:
-# 238 "data//maps/GastreeCity/scripts.pory"
+# 239 "data//maps/GastreeCity/scripts.pory"
 	.string "Please take this as a reward.$"
 
 GastreeCity_NPC2_Text_4:
-# 240 "data//maps/GastreeCity/scripts.pory"
-	.string "You do need to have at least one GYM\n"
-	.string "BADGE to use it. Now come here Skitty!$"
+# 241 "data//maps/GastreeCity/scripts.pory"
+	.string "You do need to have at least one Gym\n"
+	.string "Badge to use it. Now come here Skitty!$"
 
 GastreeCity_NPC2_Text_5:
-# 245 "data//maps/GastreeCity/scripts.pory"
+# 246 "data//maps/GastreeCity/scripts.pory"
 	.string "Have you found my Skitty yet? She\n"
 	.string "might be stuck in a tree - please look\l"
 	.string "for her pink tail!$"
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_0:
-# 253 "data//maps/GastreeCity/scripts.pory"
+# 254 "data//maps/GastreeCity/scripts.pory"
 	.string "There's something in the tree...\p"
 	.string "It's Skitty!$"
 
 GastreeCity_EventScripts_SkittyTrigger1_Text_1:
-# 260 "data//maps/GastreeCity/scripts.pory"
+# 261 "data//maps/GastreeCity/scripts.pory"
 	.string "Skitty ran away! Gotta chase it!$"
 
 GastreeCity_EventScripts_SkittyTrigger2_Text_0:
-# 285 "data//maps/GastreeCity/scripts.pory"
+# 286 "data//maps/GastreeCity/scripts.pory"
 	.string "Skitty ran away again. It's too\n"
 	.string "slippery!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_0:
-# 303 "data//maps/GastreeCity/scripts.pory"
+# 304 "data//maps/GastreeCity/scripts.pory"
 	.string "It's Skitty! Okay, this time you'd\n"
 	.string "better come here, Skitty!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_1:
-# 310 "data//maps/GastreeCity/scripts.pory"
+# 311 "data//maps/GastreeCity/scripts.pory"
 	.string "Phew! Finally. Looks like Skitty ran\n"
 	.string "back to its owner!$"
 
 GastreeCity_NPC_Skitty_Text_0:
-# 334 "data//maps/GastreeCity/scripts.pory"
+# 335 "data//maps/GastreeCity/scripts.pory"
 	.string "SKITTY: skee~~$"
 
 GastreeCity_Poltchageist_Text_0:
-# 344 "data//maps/GastreeCity/scripts.pory"
+# 345 "data//maps/GastreeCity/scripts.pory"
 	.string "Poltchageist is picking herbs for the\n"
 	.string "teahouse!$"
 
@@ -846,7 +848,7 @@ GastreeCity_KohlaIntro1::
 	.string "Well well, look who thought it was\n"
 	.string "fashionable to be late! I'm way ahead of\l"
 	.string "you, chum! I've already beaten Inger\l"
-	.string "and got the GYM BADGE.$"
+	.string "and got the Hard Badge.$"
 
 GastreeCity_KohlaIntro2::
 # 80 "data//maps/GastreeCity/scripts.pory"
@@ -862,5 +864,5 @@ GastreeCity_KohlaPostBattle::
 	.string "group called Team Somber is also after\l"
 	.string "the dreamstone. I'm going to head north\l"
 	.string "towards the Ceram Base Camp. Don't come\l"
-	.string "after me - I don't need your help. Over\l"
-	.string "and out, chum!$"
+	.string "after me - I don't need your help.\p"
+	.string "Over and out, chum!$"
