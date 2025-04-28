@@ -1427,6 +1427,7 @@ bool8 IsMapTypeOutdoors(u8 mapType)
 {
     if (mapType == MAP_TYPE_ROUTE
      || mapType == MAP_TYPE_TOWN
+     || mapType == MAP_TYPE_SNOW
      || mapType == MAP_TYPE_UNDERWATER
      || mapType == MAP_TYPE_CITY
      || mapType == MAP_TYPE_OCEAN_ROUTE)

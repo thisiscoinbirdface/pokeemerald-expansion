@@ -19,6 +19,9 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_LONG_GRASS_SOUTH_EDGE]              = TILE_FLAG_UNUSED,
     [MB_NO_RUNNING]                         = TILE_FLAG_UNUSED,
     [MB_INDOOR_ENCOUNTER]                   = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_ICE_CAVE_ENCOUNTER]                 = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_VOLCANO_ENCOUNTER]                  = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_GRAVEYARD_ENCOUNTER]                = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_MOUNTAIN_TOP]                       = TILE_FLAG_UNUSED,
     [MB_BATTLE_PYRAMID_WARP]                = TILE_FLAG_UNUSED,
     [MB_MOSSDEEP_GYM_WARP]                  = TILE_FLAG_UNUSED,
@@ -850,7 +853,27 @@ bool8 MetatileBehavior_IsIndoorEncounter(u8 metatileBehavior)
     else
         return FALSE;
 }
-
+bool8 MetatileBehavior_IsVolcanoEncounter(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_VOLCANO_ENCOUNTER)
+        return TRUE;
+    else
+        return FALSE;
+}
+bool8 MetatileBehavior_IsGraveyardEncounter(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_GRAVEYARD_ENCOUNTER)
+        return TRUE;
+    else
+        return FALSE;
+}
+bool8 MetatileBehavior_IsIceCaveEncounter(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_ICE_CAVE_ENCOUNTER)
+        return TRUE;
+    else
+        return FALSE;
+}
 bool8 MetatileBehavior_IsMountain(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_MOUNTAIN_TOP)

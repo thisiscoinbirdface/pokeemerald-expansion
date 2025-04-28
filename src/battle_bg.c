@@ -701,6 +701,43 @@ const struct BattleBackground sBattleTerrainTable[] =
         .entryTilemap = gBattleTerrainAnimTilemap_Building,
         .palette = gBattleTerrainPalette_Plain,
     },
+    
+    [BATTLE_TERRAIN_VOLCANO] =
+    {
+        .tileset = gBattleTerrainTiles_Volcano,
+        .tilemap = gBattleTerrainTilemap_Volcano,
+        .entryTileset = gBattleTerrainAnimTiles_Cave,
+        .entryTilemap = gBattleTerrainAnimTilemap_Cave,
+        .palette = gBattleTerrainPalette_Cave,
+    },
+    
+    [BATTLE_TERRAIN_SNOW] =
+    {
+        .tileset = gBattleTerrainTiles_Snow,
+        .tilemap = gBattleTerrainTilemap_Snow,
+        .entryTileset = gBattleTerrainAnimTiles_Cave,
+        .entryTilemap = gBattleTerrainAnimTilemap_Cave,
+        .palette = gBattleTerrainPalette_Snow,
+    },
+    
+    [BATTLE_TERRAIN_ICE] =
+    {
+        .tileset = gBattleTerrainTiles_IceCave,
+        .tilemap = gBattleTerrainTilemap_IceCave,
+        .entryTileset = gBattleTerrainAnimTiles_Cave,
+        .entryTilemap = gBattleTerrainAnimTilemap_Cave,
+        .palette = gBattleTerrainPalette_IceCave,
+    },
+    
+    [BATTLE_TERRAIN_BURIAL_GROUND] =
+    {
+        .tileset = gBattleTerrainTiles_Graveyard,
+        .tilemap = gBattleTerrainTilemap_Graveyard,
+        .entryTileset = gBattleTerrainAnimTiles_Sand,
+        .entryTilemap = gBattleTerrainAnimTilemap_Sand,
+        .palette = gBattleTerrainPalette_Graveyard,
+    },
+    
 };
 
 void BattleInitBgsAndWindows(void)

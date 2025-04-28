@@ -540,28 +540,30 @@ u8 BattleSetup_GetTerrainId(void)
 
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (MetatileBehavior_IsTallGrass(tileBehavior))
-        return BATTLE_TERRAIN_GRASS;
-    if (MetatileBehavior_IsLongGrass(tileBehavior))
-        return BATTLE_TERRAIN_LONG_GRASS;
-    if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
-        return BATTLE_TERRAIN_SAND;
-
     switch (gMapHeader.mapType)
     {
     case MAP_TYPE_TOWN:
     case MAP_TYPE_CITY:
-    case MAP_TYPE_ROUTE:
+    case MAP_TYPE_ROUTE:    
         break;
     case MAP_TYPE_UNDERGROUND:
         if (MetatileBehavior_IsIndoorEncounter(tileBehavior))
             return BATTLE_TERRAIN_BUILDING;
+        if (MetatileBehavior_IsIceCaveEncounter(tileBehavior))
+            return BATTLE_TERRAIN_ICE;
+        if (MetatileBehavior_IsVolcanoEncounter(tileBehavior))
+            return BATTLE_TERRAIN_VOLCANO;
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_TERRAIN_POND;
         return BATTLE_TERRAIN_CAVE;
     case MAP_TYPE_INDOOR:
-    case MAP_TYPE_SECRET_BASE:
+        if (MetatileBehavior_IsGraveyardEncounter(tileBehavior))
+            return BATTLE_TERRAIN_BURIAL_GROUND;
         return BATTLE_TERRAIN_BUILDING;
+    case MAP_TYPE_SECRET_BASE:
+        return BATTLE_TERRAIN_SNOW;
+    case MAP_TYPE_SNOW:
+        return BATTLE_TERRAIN_SNOW;        
     case MAP_TYPE_UNDERWATER:
         return BATTLE_TERRAIN_UNDERWATER;
     case MAP_TYPE_OCEAN_ROUTE:
@@ -569,6 +571,14 @@ u8 BattleSetup_GetTerrainId(void)
             return BATTLE_TERRAIN_WATER;
         return BATTLE_TERRAIN_PLAIN;
     }
+    
+    if (MetatileBehavior_IsTallGrass(tileBehavior))
+        return BATTLE_TERRAIN_GRASS;
+    if (MetatileBehavior_IsLongGrass(tileBehavior))
+        return BATTLE_TERRAIN_LONG_GRASS;
+    if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
+        return BATTLE_TERRAIN_SAND;
+    
     if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
         return BATTLE_TERRAIN_WATER;
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
@@ -588,6 +598,7 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SAND;
     if (GetSavedWeather() == WEATHER_SANDSTORM)
         return BATTLE_TERRAIN_SAND;
+
 
     return BATTLE_TERRAIN_PLAIN;
 }

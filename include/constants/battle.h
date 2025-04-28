@@ -484,13 +484,13 @@ enum MoveEffects
 // New battle terrains are used for Secret Power but not fully implemented.
 #define BATTLE_TERRAIN_SOARING          10
 #define BATTLE_TERRAIN_SKY_PILLAR       11
-#define BATTLE_TERRAIN_BURIAL_GROUND    12
+#define BATTLE_TERRAIN_BURIAL_GROUND    12  //Graveyard
 #define BATTLE_TERRAIN_PUDDLE           13
 #define BATTLE_TERRAIN_MARSH            14
 #define BATTLE_TERRAIN_SWAMP            15
-#define BATTLE_TERRAIN_SNOW             16
-#define BATTLE_TERRAIN_ICE              17
-#define BATTLE_TERRAIN_VOLCANO          18
+#define BATTLE_TERRAIN_SNOW             16  //Mt. Mirroh Exterior, Ancient Mirroh
+#define BATTLE_TERRAIN_ICE              17  //Mt. Mirroh Interior
+#define BATTLE_TERRAIN_VOLCANO          18  //Mt. Ceram interior
 #define BATTLE_TERRAIN_DISTORTION_WORLD 19
 #define BATTLE_TERRAIN_SPACE            20
 #define BATTLE_TERRAIN_ULTRA_SPACE      21

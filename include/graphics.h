@@ -255,6 +255,20 @@ extern const u32 gBattleTerrainTilemap_Cave[];
 extern const u32 gBattleTerrainAnimTiles_Cave[];
 extern const u32 gBattleTerrainAnimTilemap_Cave[];
 extern const u32 gBattleTerrainPalette_Cave[];
+
+extern const u32 gBattleTerrainTiles_IceCave[];
+extern const u32 gBattleTerrainTilemap_IceCave[];
+extern const u32 gBattleTerrainPalette_IceCave[];
+extern const u32 gBattleTerrainTiles_Volcano[];
+extern const u32 gBattleTerrainTilemap_Volcano[];
+extern const u32 gBattleTerrainPalette_Volcano[];
+extern const u32 gBattleTerrainTiles_Graveyard[];
+extern const u32 gBattleTerrainTilemap_Graveyard[];
+extern const u32 gBattleTerrainPalette_Graveyard[];
+extern const u32 gBattleTerrainTiles_Snow[];
+extern const u32 gBattleTerrainTilemap_Snow[];
+extern const u32 gBattleTerrainPalette_Snow[];
+
 extern const u32 gBattleTerrainTiles_Building[];
 extern const u32 gBattleTerrainTilemap_Building[];
 extern const u32 gBattleTerrainAnimTiles_Building[];
