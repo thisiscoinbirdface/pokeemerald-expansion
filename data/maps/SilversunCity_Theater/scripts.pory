@@ -272,7 +272,7 @@ script SilversunCity_Theater_NPC6{
                 msgbox(format("Oh wow! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     msgbox(format("...Thank you! Please take this. A little something to remember me by!"), MSGBOX_NPC)
-                    giveitem(ITEM_SILK_SCARF)
+                    giveitem(ITEM_DESTINY_KNOT)
                     setflag(FLAG_SILVERSUN_THEATER_SCARF)
                 }
             } else {
