@@ -140,7 +140,14 @@
 #define TRAINER_PIC_SKIIER_F              117
 #define TRAINER_PIC_KIMONO_GIRL           118
 
-#define TRAINER_PIC_COUNT                 119
+#define TRAINER_PIC_BACKPACKER            119
+#define TRAINER_PIC_FIREFIGHTER           120
+#define TRAINER_PIC_FAIRY_LADY            121
+#define TRAINER_PIC_COOL_GIRL             122
+#define TRAINER_PIC_WAITRESS              123
+#define TRAINER_PIC_COOL_GUY              124
+
+#define TRAINER_PIC_COUNT                 125
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -409,8 +416,14 @@
 #define TRAINER_CLASS_MODEL          0x51
 #define TRAINER_CLASS_SKIIER         0x52
 #define TRAINER_CLASS_KIMONO_GIRL    0x53
+#define TRAINER_CLASS_BACKPACKER     0x54
+#define TRAINER_CLASS_FIREFIGHTER    0x55
+#define TRAINER_CLASS_FAIRY_LADY     0x56
+#define TRAINER_CLASS_COOL_GIRL      0x57
+#define TRAINER_CLASS_WAITRESS       0x58
+#define TRAINER_CLASS_COOL_GUY       0x59
 
-#define TRAINER_CLASS_COUNT          0x55
+#define TRAINER_CLASS_COUNT          0x60
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

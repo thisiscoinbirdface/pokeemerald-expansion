@@ -406,7 +406,7 @@ SilversunCity_Theater_NPC6_12:
 # 274 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_NPC6_Text_4, MSGBOX_NPC
 # 275 "data//maps/SilversunCity_Theater/scripts.pory"
-	giveitem ITEM_SILK_SCARF
+	giveitem ITEM_DESTINY_KNOT
 # 276 "data//maps/SilversunCity_Theater/scripts.pory"
 	setflag FLAG_SILVERSUN_THEATER_SCARF
 	goto SilversunCity_Theater_NPC6_5
