@@ -620,6 +620,7 @@ gSongTable::
 	song mus_custom_sensible, 0, 0
 	song mus_custom_lilac, 0, 0
 	song mus_custom_purple_cum, 0, 0
+	song bw_accumula_town, 0, 0
 
 	.align 2
 dummy_song_header:

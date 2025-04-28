@@ -552,7 +552,7 @@
 #define MUS_CUSTOM_SENSIBLE         613
 #define MUS_CUSTOM_LILAC            614
 #define MUS_CUSTOM_PURPLE_CUM       615
-
+#define MUS_BW_ACCUMULA_TOWN        616
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
