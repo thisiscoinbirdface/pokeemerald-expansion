@@ -181,7 +181,7 @@ script CeramBaseCamp_Cyndaquil_Reward_End{
 //NPC5 - giveitem
 script CeramBaseCamp_NPC5{    
     if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
-        msgbox(format("since so many trekkers try to climb the mountain, you can find stuff they dropped!"), MSGBOX_NPC)
+        msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
     } else {
         lockall
         faceplayer
@@ -210,7 +210,7 @@ script CeramBaseCamp_Dude_Reward_Give{
 
 script CeramBaseCamp_Dude_Reward_End{
     setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
-    msgbox(format("since so many trekkers try to climb the mountain, you can find stuff they dropped!"), MSGBOX_NPC)
+    msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
     end
 }
 
