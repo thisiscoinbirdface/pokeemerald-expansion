@@ -31,6 +31,7 @@
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
 static void HealPlayerBoxes(void);
+void SetMonPokeball(void);
 
 void HealPlayerParty(void)
 {
@@ -326,6 +327,15 @@ void SetTeraType(struct ScriptContext *ctx)
 
     if (type < NUMBER_OF_MON_TYPES && partyIndex < PARTY_SIZE)
         SetMonData(&gPlayerParty[partyIndex], MON_DATA_TERA_TYPE, &type);
+}
+
+
+//sets a pokemon's pokeball
+void SetMonPokeball(void)
+{
+    enum PokeBall ball;
+    ball = ItemIdToBallId(gSpecialVar_0x8005);
+    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_POKEBALL, &ball);
 }
 
 /* Creates a Pokemon via script

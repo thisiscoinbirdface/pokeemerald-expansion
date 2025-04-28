@@ -564,3 +564,4 @@ gSpecials::
 	def_special EnterCode
 	def_special GetCodeFeedback
     def_special StartMining
+	def_special SetMonPokeball

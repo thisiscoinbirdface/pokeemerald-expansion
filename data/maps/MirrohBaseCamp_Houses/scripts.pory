@@ -63,7 +63,36 @@ script MirrohBaseCamp_Houses_MasterballGuy{
 }
 
 script MirrohBaseCamp_Houses_MasterballFriend{
-    msgbox(format("This man here is the only person in all of Cormoria who can make a master ball. A master of the craft!"), MSGBOX_NPC)
+    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Pokeballs of any of your Pokemon. Would you like me to?"), MSGBOX_YESNO)
+
+    //Change Pokeballs
+    if (var(VAR_RESULT) == 1){
+        special(ChoosePartyMon)
+        waitstate
+        message(format("Now which Pokeball should I switch to?"))
+
+        bufferitemname(STR_VAR_1, ITEM_POKE_BALL)
+        dynmultipush("{STR_VAR_1}", ITEM_POKE_BALL)
+        bufferitemname(STR_VAR_2, ITEM_GREAT_BALL)
+        dynmultipush("{STR_VAR_2}", ITEM_GREAT_BALL)
+        bufferitemname(STR_VAR_3, ITEM_ULTRA_BALL)
+        dynmultipush("{STR_VAR_3}", ITEM_ULTRA_BALL)
+        dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+
+        if (var(VAR_RESULT) == 1) {setvar(VAR_0x8005, ITEM_POKE_BALL)}
+        if (var(VAR_RESULT) == 2) {setvar(VAR_0x8005, ITEM_GREAT_BALL)}
+        if (var(VAR_RESULT) == 3) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)}
+
+        msgbox(format("...\p..."))
+        release
+        playse(SE_BALL)
+        msgbox(format("...and done! Come back if you need me to do any more!"))
+        
+        special(SetMonPokeball)
+    }
+
+
+    releaseall
     end
 }
 
