@@ -95,7 +95,7 @@ MirrohBaseCamp_Houses_MasterballFriend::
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_2
 MirrohBaseCamp_Houses_MasterballFriend_1:
-# 95 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 94 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -133,15 +133,15 @@ MirrohBaseCamp_Houses_MasterballFriend_7:
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_11
 MirrohBaseCamp_Houses_MasterballFriend_10:
 # 86 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_5
-# 87 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	release
-# 88 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	playse SE_BALL
-# 89 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_6
-# 91 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	special SetMonPokeball
+# 87 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_5
+# 88 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	release
+# 89 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	playse SE_BALL
+# 90 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_6
 	goto MirrohBaseCamp_Houses_MasterballFriend_1
 
 MirrohBaseCamp_Houses_MasterballFriend_5:
@@ -280,11 +280,11 @@ MirrohBaseCamp_Houses_MasterballFriend_Text_4:
 	.string "{STR_VAR_3}$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_5:
-# 86 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 87 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "...\p"
 	.string "...$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_6:
-# 89 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 90 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "...and done! Come back if you need me to\n"
 	.string "do any more!$"

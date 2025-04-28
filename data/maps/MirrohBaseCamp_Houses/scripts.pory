@@ -63,6 +63,8 @@ script MirrohBaseCamp_Houses_MasterballGuy{
 }
 
 script MirrohBaseCamp_Houses_MasterballFriend{
+    lockall
+    faceplayer
     msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Pokeballs of any of your Pokemon. Would you like me to?"), MSGBOX_YESNO)
 
     //Change Pokeballs
@@ -90,8 +92,7 @@ script MirrohBaseCamp_Houses_MasterballFriend{
         
         special(SetMonPokeball)
     }
-
-
+    
     releaseall
     end
 }
