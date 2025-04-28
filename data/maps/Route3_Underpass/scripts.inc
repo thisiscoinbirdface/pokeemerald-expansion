@@ -547,8 +547,8 @@ Route3_Underpass_NPC1_Text_0:
 Route3_Underpass_NPC2_Text_0:
 # 45 "data//maps/Route3_Underpass/scripts.pory"
 	.string "They say that a rare Pokémon has made\n"
-	.string "these caves its home. I need to go\l"
-	.string "deeper down!$"
+	.string "these caves its home. If it's true, then\l"
+	.string "it's probably deeper down.$"
 
 Route3_Underpass_EvilBattle_Text_0:
 # 95 "data//maps/Route3_Underpass/scripts.pory"

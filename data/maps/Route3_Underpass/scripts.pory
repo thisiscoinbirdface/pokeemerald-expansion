@@ -42,7 +42,7 @@ script Route3_Underpass_NPC1{
 }
 
 script Route3_Underpass_NPC2{
-    msgbox(format("They say that a rare Pokémon has made these caves its home. I need to go deeper down!"), MSGBOX_NPC)
+    msgbox(format("They say that a rare Pokémon has made these caves its home. If it's true, then it's probably deeper down."), MSGBOX_NPC)
     end
 }
 

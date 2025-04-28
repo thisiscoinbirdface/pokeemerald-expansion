@@ -552,9 +552,9 @@ CeramBaseCamp_Cyndaquil_Reward_End_Text_0:
 
 CeramBaseCamp_NPC5_Text_0:
 # 184 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "since so many trekkers try to climb the\n"
-	.string "mountain, you can find stuff they\l"
-	.string "dropped!$"
+	.string "Many trekkers climb the mountain. You\n"
+	.string "can find dropped stuff everywhere!\p"
+	.string "...is it stealing?$"
 
 CeramBaseCamp_NPC5_Text_1:
 # 188 "data//maps/CeramBaseCamp/scripts.pory"
