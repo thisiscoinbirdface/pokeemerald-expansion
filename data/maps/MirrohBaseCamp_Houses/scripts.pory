@@ -85,12 +85,11 @@ script MirrohBaseCamp_Houses_MasterballFriend{
         if (var(VAR_RESULT) == 2) {setvar(VAR_0x8005, ITEM_GREAT_BALL)}
         if (var(VAR_RESULT) == 3) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)}
 
+        special(SetMonPokeball)
         msgbox(format("...\p..."))
         release
         playse(SE_BALL)
         msgbox(format("...and done! Come back if you need me to do any more!"))
-        
-        special(SetMonPokeball)
     }
     
     releaseall
