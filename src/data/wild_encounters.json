@@ -13997,63 +13997,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_MAWILE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_ARON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_MAWILE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_ARON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_CARBINK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_CARBINK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_CARBINK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_CARBINK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CARBINK"
+                "min_level": 19,
+                "max_level": 22,
+                "species": "SPECIES_TINKATUFF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CARBINK"
+                "min_level": 19,
+                "max_level": 22,
+                "species": "SPECIES_TINKATUFF"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_AXEW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 22,
                 "species": "SPECIES_AXEW"
               }
             ]

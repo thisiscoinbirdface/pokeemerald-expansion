@@ -1277,10 +1277,10 @@
 #define FLAG_ITEM_IVY_RIVER_D                             0x43D
 #define FLAG_ITEM_IVY_RIVER_E                       0x43E
 
-
-#define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
-#define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
-#define FLAG_ITEM_MT_PYRE_6F_TM_SHADOW_BALL                         0x441
+//route 3 extended
+#define FLAG_ITEM_ROUTE3_EXT_A                     0x43F
+#define FLAG_ITEM_ROUTE3_EXT_B                        0x440
+#define FLAG_ITEM_ROUTE3_EXT_C                         0x441
 #define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_EARTHQUAKE              0x442
 #define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444

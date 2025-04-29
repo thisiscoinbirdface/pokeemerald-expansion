@@ -1,0 +1,11 @@
+mapscripts Route3_Underpass_Extended_MapScripts{}
+
+script Route3_Ext_NPC1{
+    msgbox(format("They say there's a rare Pokemon that makes its home down here, but I can't find any here! Did I come to the wrong place?"), MSGBOX_NPC)
+    end
+}
+
+script Route3_Ext_Trainer_A{
+    trainerbattle_single(TRAINER_ROUTE3_EXT_C, format("Hoho! Fancy seeing another explorer! But you won't take any of my spoils!"), "I didn't want to explore this!")
+    msgbox(format("I wonder what secrets lie in these caverns..."))
+}

@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route3_Ext_NPC1",
       "flag": "0"
     },
     {
@@ -35,9 +35,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route3_Ext_Trainer_A",
       "flag": "0"
     },
     {
@@ -49,7 +49,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_3_A"
     },
@@ -62,7 +62,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM32",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_3_A"
     },
@@ -75,7 +75,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_REPEL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_3_A"
     }
