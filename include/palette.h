@@ -73,7 +73,6 @@ bool32 BeginNormalPaletteFade(u32 selectedPalettes, s8 delay, u8 startY, u8 targ
 void ResetPaletteFadeControl(void);
 void InvertPlttBuffer(u32 selectedPalettes);
 void TintPlttBuffer(u32 selectedPalettes, s8 r, s8 g, s8 b);
-void UpdateBlendRegisters(void);
 void UnfadePlttBuffer(u32 selectedPalettes);
 void BeginFastPaletteFade(u32 submode);
 void BeginHardwarePaletteFade(u32 blendCnt, u32 delay, u32 y, u32 targetY, u32 shouldResetBlendRegisters);
