@@ -5085,7 +5085,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_PSYCHIC),
         .catchRate = 180,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 91,
+        .expYield = 74, //(P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 91,
         .evYield_Speed = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,

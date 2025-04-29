@@ -588,6 +588,12 @@ gStdScripts_End::
 
 EventScript_WhiteOut::
 	speakername NULL
+	removeitem ITEM_HEAL_PASS
+	removeitem ITEM_HEAL_PASS
+	removeitem ITEM_HEAL_PASS
+	removeitem ITEM_HEAL_PASS
+	removeitem ITEM_HEAL_PASS
+	additem ITEM_HEAL_PASS
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	goto EventScript_ResetMrBriney
 	end

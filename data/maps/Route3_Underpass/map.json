@@ -356,10 +356,10 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 62,
-      "y": 32,
+      "x": 45,
+      "y": 16,
       "elevation": 0,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE3_D"
     },
     {

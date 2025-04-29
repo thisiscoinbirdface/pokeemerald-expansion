@@ -51,7 +51,7 @@ script Route3_TrainerBattle_Chara {
 ///NPCs
 
 script Route3_NPC1{
-    msgbox(format("I love the high-altitude winds!\pI feel one with the hills."), MSGBOX_NPC)
+    msgbox(format("I love the high-altitude winds!\nI feel one with the hills."), MSGBOX_NPC)
     end
 }
 
