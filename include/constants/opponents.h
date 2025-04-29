@@ -210,9 +210,12 @@
     #define TRAINER_PELLUCA_CITY_GYM_I            142
     #define TRAINER_PELLUCA_CITY_GYM_LEADER       143
 
-#define TRAINER_THALIA_1                    144
-#define TRAINER_MARK                        145
-#define TRAINER_GRUNT_MT_CHIMNEY_1          146
+//Route 3 Extended
+#define TRAINER_ROUTE3_EXT_A                144
+#define TRAINER_ROUTE3_EXT_B                145
+#define TRAINER_ROUTE3_EXT_C                146
+
+
 #define TRAINER_STEVE_2                     147
 #define TRAINER_STEVE_3                     148
 #define TRAINER_STEVE_4                     149

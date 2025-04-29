@@ -209,7 +209,6 @@ script CeramBaseCamp_Dude_Reward_Give{
 }
 
 script CeramBaseCamp_Dude_Reward_End{
-    setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
     msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
     end
 }

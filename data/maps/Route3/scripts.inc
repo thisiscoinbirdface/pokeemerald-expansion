@@ -151,6 +151,92 @@ Route3_Skarmory_Battle_8:
 	goto Route3_Skarmory_Battle_7
 
 
+Route3_Ext_TrainerBattle_A::
+# 135 "data//maps/Route3/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE3_EXT_A, Route3_Ext_TrainerBattle_A_Text_0, Route3_Ext_TrainerBattle_A_Text_1
+# 136 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Ext_TrainerBattle_A_Text_2
+# 137 "data//maps/Route3/scripts.pory"
+	release
+	end
+
+
+Route3_Ext_TrainerBattle_B::
+# 141 "data//maps/Route3/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE3_EXT_B, Route3_Ext_TrainerBattle_B_Text_0, Route3_Ext_TrainerBattle_B_Text_1, Route3_Ext_DoubleBattle_ItemGive
+# 142 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Ext_TrainerBattle_B_Text_2
+# 143 "data//maps/Route3/scripts.pory"
+	release
+	end
+
+
+Route3_Ext_DoubleBattle_ItemGive::
+# 147 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Ext_DoubleBattle_ItemGive_Text_0
+# 148 "data//maps/Route3/scripts.pory"
+	goto Route3_Ext_DoubleBattle_Reward
+	return
+
+
+Route3_Ext_DoubleBattle_Reward::
+# 152 "data//maps/Route3/scripts.pory"
+	message Route3_Ext_DoubleBattle_Reward_Text_0
+# 153 "data//maps/Route3/scripts.pory"
+	waitmessage
+# 154 "data//maps/Route3/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, Route3_Ext_DoubleBattle_Reward_Text_1, Route3_Ext_DoubleBattle_Reward_Text_2
+# 155 "data//maps/Route3/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route3_Ext_DoubleBattle_Reward_2
+Route3_Ext_DoubleBattle_Reward_1:
+# 156 "data//maps/Route3/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route3_Ext_DoubleBattle_Reward_5
+Route3_Ext_DoubleBattle_Reward_4:
+# 157 "data//maps/Route3/scripts.pory"
+	goto Route3_Ext_DoubleBattle_Reward_Give
+	return
+
+Route3_Ext_DoubleBattle_Reward_2:
+# 155 "data//maps/Route3/scripts.pory"
+	setvar VAR_0x8006, ITEM_BLACK_BELT
+	goto Route3_Ext_DoubleBattle_Reward_1
+
+Route3_Ext_DoubleBattle_Reward_5:
+# 156 "data//maps/Route3/scripts.pory"
+	setvar VAR_0x8006, ITEM_SHARP_BEAK
+	goto Route3_Ext_DoubleBattle_Reward_4
+
+
+Route3_Ext_DoubleBattle_Reward_Give::
+# 161 "data//maps/Route3/scripts.pory"
+	showitemdescription
+# 162 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Ext_DoubleBattle_Reward_Give_Text_0, MSGBOX_YESNO
+# 163 "data//maps/Route3/scripts.pory"
+	hideitemdescription
+# 164 "data//maps/Route3/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Route3_Ext_DoubleBattle_Reward_Give_1
+# 165 "data//maps/Route3/scripts.pory"
+	goto Route3_Ext_DoubleBattle_Reward
+	return
+
+Route3_Ext_DoubleBattle_Reward_Give_1:
+# 164 "data//maps/Route3/scripts.pory"
+	giveitem VAR_0x8006
+# 164 "data//maps/Route3/scripts.pory"
+	goto Route3_Ext_DoubleBattle_Reward_End
+	return
+
+
+Route3_Ext_DoubleBattle_Reward_End::
+# 169 "data//maps/Route3/scripts.pory"
+	msgbox Route3_Ext_DoubleBattle_Reward_End_Text_0, MSGBOX_NPC
+	end
+
+
 # 75 "data//maps/Route3/scripts.pory"
 Route3_Skarmory_Trigger_Movement_0:
 # 75 "data//maps/Route3/scripts.pory"
@@ -244,3 +330,60 @@ Route3_Skarmory_Battle_Text_1:
 	.string "The SKARMORY preens its steely\n"
 	.string "feathers victoriously. Better not\l"
 	.string "disturb it again!$"
+
+Route3_Ext_TrainerBattle_A_Text_0:
+# 135 "data//maps/Route3/scripts.pory"
+	.string "My buddy and I train here every day!\n"
+	.string "Let me show you how strong we've\l"
+	.string "become!$"
+
+Route3_Ext_TrainerBattle_A_Text_1:
+# 135 "data//maps/Route3/scripts.pory"
+	.string "No way! Against the two of us!$"
+
+Route3_Ext_TrainerBattle_A_Text_2:
+# 136 "data//maps/Route3/scripts.pory"
+	.string "We're going to keep training together\n"
+	.string "until we become the strongest!$"
+
+Route3_Ext_TrainerBattle_B_Text_0:
+# 141 "data//maps/Route3/scripts.pory"
+	.string "You wanna take on me and my buddy\n"
+	.string "together? When we fight side by side,\l"
+	.string "our strength multiplies!$"
+
+Route3_Ext_TrainerBattle_B_Text_1:
+# 141 "data//maps/Route3/scripts.pory"
+	.string "How? It was two-on-one!$"
+
+Route3_Ext_TrainerBattle_B_Text_2:
+# 142 "data//maps/Route3/scripts.pory"
+	.string "You need good friends if you want to\n"
+	.string "reach the top!$"
+
+Route3_Ext_DoubleBattle_ItemGive_Text_0:
+# 147 "data//maps/Route3/scripts.pory"
+	.string "What a battle! You beat the two of us\n"
+	.string "together. You're really strong - strong\l"
+	.string "enough to be our third buddy!$"
+
+Route3_Ext_DoubleBattle_Reward_Text_0:
+# 152 "data//maps/Route3/scripts.pory"
+	.string "Take one of these - you gotta have one\n"
+	.string "as our third buddy!$"
+
+Route3_Ext_DoubleBattle_Reward_Text_1:
+# 154 "data//maps/Route3/scripts.pory"
+	.string "Black Belt$"
+
+Route3_Ext_DoubleBattle_Reward_Text_2:
+# 154 "data//maps/Route3/scripts.pory"
+	.string "Sharp Beak$"
+
+Route3_Ext_DoubleBattle_Reward_Give_Text_0:
+# 162 "data//maps/Route3/scripts.pory"
+	.string "Are you sure?$"
+
+Route3_Ext_DoubleBattle_Reward_End_Text_0:
+# 169 "data//maps/Route3/scripts.pory"
+	.string "Come train with us again sometime!$"

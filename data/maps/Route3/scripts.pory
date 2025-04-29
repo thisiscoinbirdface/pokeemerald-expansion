@@ -119,3 +119,53 @@ script Route3_Skarmory_Battle{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+//More trainers
+//bird keeper
+script Route3_Ext_TrainerBattle_A {
+    trainerbattle_single(TRAINER_ROUTE3_EXT_A, format("My buddy and I train here every day! Let me show you how strong we've become!"), "No way! Against the two of us!")
+    msgbox(format("We're going to keep training together until we become the strongest!"))
+    release
+    end
+}
+script Route3_Ext_TrainerBattle_B {
+    trainerbattle_single(TRAINER_ROUTE3_EXT_B, format("You wanna take on me and my buddy together? When we fight side by side, our strength multiplies!"), "How? It was two-on-one!", Route3_Ext_DoubleBattle_ItemGive)
+    msgbox(format("You need good friends if you want to reach the top!"))
+    release
+    end
+}
+script Route3_Ext_DoubleBattle_ItemGive {
+    msgbox(format("What a battle! You beat the two of us together. You're really strong - strong enough to be our third buddy!"))
+    goto(Route3_Ext_DoubleBattle_Reward)
+}
+
+script Route3_Ext_DoubleBattle_Reward {
+    message(format("Take one of these - you gotta have one as our third buddy!"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Black Belt", "Sharp Beak") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_BLACK_BELT)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_SHARP_BEAK)}
+    goto(Route3_Ext_DoubleBattle_Reward_Give)
+}
+
+script Route3_Ext_DoubleBattle_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(Route3_Ext_DoubleBattle_Reward_End)} 
+    else {goto(Route3_Ext_DoubleBattle_Reward)}
+}
+
+script Route3_Ext_DoubleBattle_Reward_End{
+    msgbox(format("Come train with us again sometime!"), MSGBOX_NPC)
+    end
+}

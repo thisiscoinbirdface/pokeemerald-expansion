@@ -319,74 +319,72 @@ CeramBaseCamp_Dude_Reward_Give_1:
 
 CeramBaseCamp_Dude_Reward_End::
 # 212 "data//maps/CeramBaseCamp/scripts.pory"
-	setvar VAR_PELLUCA_MAYOR_QUEST, 7
-# 213 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_NPC5_Text_0, MSGBOX_NPC
 	end
 
 
 CeramBaseCamp_Excadrill::
-# 222 "data//maps/CeramBaseCamp/scripts.pory"
+# 221 "data//maps/CeramBaseCamp/scripts.pory"
 	goto_if_set FLAG_CERAMBASECAMP_EXCADRILL, CeramBaseCamp_Excadrill_2
-# 230 "data//maps/CeramBaseCamp/scripts.pory"
+# 229 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_1, MSGBOX_YESNO
-# 231 "data//maps/CeramBaseCamp/scripts.pory"
+# 230 "data//maps/CeramBaseCamp/scripts.pory"
 	release
-# 232 "data//maps/CeramBaseCamp/scripts.pory"
+# 231 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Excadrill_5
 CeramBaseCamp_Excadrill_1:
-# 257 "data//maps/CeramBaseCamp/scripts.pory"
+# 256 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Excadrill_2:
-# 224 "data//maps/CeramBaseCamp/scripts.pory"
+# 223 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_0
-# 225 "data//maps/CeramBaseCamp/scripts.pory"
+# 224 "data//maps/CeramBaseCamp/scripts.pory"
 	releaseall
 	end
 
 CeramBaseCamp_Excadrill_5:
-# 235 "data//maps/CeramBaseCamp/scripts.pory"
+# 234 "data//maps/CeramBaseCamp/scripts.pory"
 	playmoncry SPECIES_DRILBUR, CRY_MODE_ENCOUNTER
-# 236 "data//maps/CeramBaseCamp/scripts.pory"
+# 235 "data//maps/CeramBaseCamp/scripts.pory"
 	delay 40
-# 237 "data//maps/CeramBaseCamp/scripts.pory"
+# 236 "data//maps/CeramBaseCamp/scripts.pory"
 	waitmoncry
-# 238 "data//maps/CeramBaseCamp/scripts.pory"
+# 237 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_2
-# 239 "data//maps/CeramBaseCamp/scripts.pory"
+# 238 "data//maps/CeramBaseCamp/scripts.pory"
 	setwildbattle SPECIES_DRILBUR, 15
-# 240 "data//maps/CeramBaseCamp/scripts.pory"
+# 239 "data//maps/CeramBaseCamp/scripts.pory"
 	dowildbattle
-# 243 "data//maps/CeramBaseCamp/scripts.pory"
+# 242 "data//maps/CeramBaseCamp/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 244 "data//maps/CeramBaseCamp/scripts.pory"
+# 243 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq CeramBaseCamp_Excadrill_8
 CeramBaseCamp_Excadrill_7:
-# 247 "data//maps/CeramBaseCamp/scripts.pory"
+# 246 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq CeramBaseCamp_Excadrill_11
 CeramBaseCamp_Excadrill_10:
-# 250 "data//maps/CeramBaseCamp/scripts.pory"
+# 249 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq CeramBaseCamp_Excadrill_13
 	goto CeramBaseCamp_Excadrill_1
 
 CeramBaseCamp_Excadrill_8:
-# 245 "data//maps/CeramBaseCamp/scripts.pory"
+# 244 "data//maps/CeramBaseCamp/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EXCADRILL
 	goto CeramBaseCamp_Excadrill_7
 
 CeramBaseCamp_Excadrill_11:
-# 248 "data//maps/CeramBaseCamp/scripts.pory"
+# 247 "data//maps/CeramBaseCamp/scripts.pory"
 	setflag FLAG_CERAMBASECAMP_EXCADRILL
 	goto CeramBaseCamp_Excadrill_10
 
 CeramBaseCamp_Excadrill_13:
-# 251 "data//maps/CeramBaseCamp/scripts.pory"
+# 250 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Excadrill_Text_3
 	goto CeramBaseCamp_Excadrill_1
 
@@ -574,18 +572,18 @@ CeramBaseCamp_Dude_Reward_Text_2:
 	.string "Quick Claw$"
 
 CeramBaseCamp_Excadrill_Text_0:
-# 224 "data//maps/CeramBaseCamp/scripts.pory"
+# 223 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill.$"
 
 CeramBaseCamp_Excadrill_Text_1:
-# 230 "data//maps/CeramBaseCamp/scripts.pory"
+# 229 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "An old mechanical drill...peek inside?$"
 
 CeramBaseCamp_Excadrill_Text_2:
-# 238 "data//maps/CeramBaseCamp/scripts.pory"
+# 237 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "A wild Pokémon attacks!$"
 
 CeramBaseCamp_Excadrill_Text_3:
-# 251 "data//maps/CeramBaseCamp/scripts.pory"
+# 250 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "The Drilbur retreats back into its home.\n"
 	.string "Better not disturb it again!$"

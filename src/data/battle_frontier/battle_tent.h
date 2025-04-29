@@ -1586,7 +1586,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .speechLose = {EC_WORD_NO, EC_WORD_SLEEP, EC_WORD_UNTIL, EC_WORD_I, EC_WORD_GET, EC_WORD_HOME},
         .monSet = gVerdanturfBattleTentTrainerMons_Eliana
     },
-    [VERDANTURF_TENT_TRAINER_MARKUS] = {
+    [VERDANTURF_TENT_TRAINER_ROUTE3_EXT_BUS] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("MARKUS"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_SMART, EC_WORD_EXCL, EC_WORD_IF_I_LOSE, EC_WORD_I, EC_MOVE(SELF_DESTRUCT)},

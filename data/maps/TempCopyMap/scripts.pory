@@ -456,7 +456,7 @@ script Common_EventScript_NurseJoyOnRoute{
 
     } else {
         //don't heal
-        msgbox(format("Sorry, you don't have a HEAL PASS. Please visit a Pokémon  CENTER to receive a HEAL PASS."))
+        msgbox(format("Sorry, you don't have a Heal Pass. Please visit a Pokémon Center to receive a Heal Pass."))
         release
     }
     return
@@ -466,7 +466,7 @@ script Common_EventScript_ChanseyOnRoute{
     lockall
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
     faceplayer
-    msgbox(format("CHANSEY is happy as always!"))
+    msgbox(format("Chansey is happy as always!"))
     release
     releaseall
     end

@@ -1800,13 +1800,13 @@ Common_EventScript_NurseJoyOnRoute_Text_3:
 
 Common_EventScript_NurseJoyOnRoute_Text_4:
 # 459 "data//maps/TempCopyMap/scripts.pory"
-	.string "Sorry, you don't have a HEAL PASS.\n"
-	.string "Please visit a Pokémon CENTER to\l"
-	.string "receive a HEAL PASS.$"
+	.string "Sorry, you don't have a Heal Pass.\n"
+	.string "Please visit a Pokémon Center to\l"
+	.string "receive a Heal Pass.$"
 
 Common_EventScript_ChanseyOnRoute_Text_0:
 # 469 "data//maps/TempCopyMap/scripts.pory"
-	.string "CHANSEY is happy as always!$"
+	.string "Chansey is happy as always!$"
 
 Route5_Greta_AskToShow_Text_0:
 # 499 "data//maps/TempCopyMap/scripts.pory"

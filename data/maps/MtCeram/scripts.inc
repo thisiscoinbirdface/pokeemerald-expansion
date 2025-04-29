@@ -1257,23 +1257,23 @@ MtCeram_TrainerBattle_A_Text_2:
 
 MtCeram_TrainerBattle_B_Text_0:
 # 433 "data//maps/MtCeram/scripts.pory"
-	.string "I love collecting rare Pokemon. Bet your\n"
-	.string "eyes will pop when you see what I\l"
-	.string "caught here!$"
+	.string "I'm a firefighter! I'm training against\n"
+	.string "all the FIRE types here. You look like\l"
+	.string "you could use a dowsing of water!$"
 
 MtCeram_TrainerBattle_B_Text_1:
 # 433 "data//maps/MtCeram/scripts.pory"
-	.string "Is rarity not enough?$"
+	.string "You can't be extinguished!$"
 
 MtCeram_TrainerBattle_B_Text_2:
 # 434 "data//maps/MtCeram/scripts.pory"
-	.string "I love my Pokémon as friends and\n"
-	.string "partners...and collectibles!$"
+	.string "Fire safety starts with awareness -\n"
+	.string "stay safe, stay prepared!$"
 
 MtCeram_TrainerBattle_C_Text_0:
 # 441 "data//maps/MtCeram/scripts.pory"
-	.string "My SIZZLEPEDE loves preying on the\n"
-	.string "VENIPEDE around here!$"
+	.string "My Sizzlepede loves preying on the\n"
+	.string "Venipede around here!$"
 
 MtCeram_TrainerBattle_C_Text_1:
 # 441 "data//maps/MtCeram/scripts.pory"
@@ -1281,7 +1281,7 @@ MtCeram_TrainerBattle_C_Text_1:
 
 MtCeram_TrainerBattle_C_Text_2:
 # 442 "data//maps/MtCeram/scripts.pory"
-	.string "SIZZLEPEDE and VENIPEDE are sworn\n"
+	.string "Sizzlepede and Venipede are sworn\n"
 	.string "enemies, much like their evolutions.$"
 
 MtCeram_TrainerBattle_D_Text_0:
@@ -1361,8 +1361,8 @@ MtCeram_EventScript_NPCNurse_Text_0:
 MtCeram_EventScript_NPCNurse_Text_1:
 # 524 "data//maps/MtCeram/scripts.pory"
 	.string "Don't worry, Chansey! We're safe here.\n"
-	.string "Meanwhile, if you have a HEAL PASS, I\l"
-	.string "can heal your Pokemon!$"
+	.string "Meanwhile, if you have a Heal Pass, I can\l"
+	.string "heal your Pokemon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 533 "data//maps/MtCeram/scripts.pory"
