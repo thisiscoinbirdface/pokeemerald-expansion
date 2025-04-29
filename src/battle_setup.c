@@ -561,9 +561,11 @@ u8 BattleSetup_GetTerrainId(void)
             return BATTLE_TERRAIN_BURIAL_GROUND;
         return BATTLE_TERRAIN_BUILDING;
     case MAP_TYPE_SECRET_BASE:
-        return BATTLE_TERRAIN_SNOW;
+        return BATTLE_TERRAIN_BUILDING;
     case MAP_TYPE_SNOW:
-        return BATTLE_TERRAIN_SNOW;        
+        return BATTLE_TERRAIN_SNOW;       
+    case MAP_TYPE_HILL:
+        return BATTLE_TERRAIN_MOUNTAIN;           
     case MAP_TYPE_UNDERWATER:
         return BATTLE_TERRAIN_UNDERWATER;
     case MAP_TYPE_OCEAN_ROUTE:

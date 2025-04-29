@@ -12,6 +12,7 @@
 #define MAP_TYPE_INDOOR      8
 #define MAP_TYPE_SECRET_BASE 9
 #define MAP_TYPE_SNOW        10
+#define MAP_TYPE_HILL        11
 
 #define MAP_BATTLE_SCENE_NORMAL       0
 #define MAP_BATTLE_SCENE_GYM          1
