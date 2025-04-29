@@ -14287,4 +14287,19 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_LavaCookieAndLetter,
     },
 
+    [ITEM_TIME_SEED] =
+    {
+        .name = _("Time Seed"),
+        .description = COMPOUND_STRING(
+            "A strange, withered\n"
+            "old seed. Where can\n"
+            "it be planted?"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_MiracleSeed,
+        .iconPalette = gItemIconPalette_MiracleSeed,
+    },
+
 };

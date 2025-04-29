@@ -303,11 +303,11 @@ script VilethornWoods_NPC2{
 }
 
 script VilethornWoods_Cook_Reward{
-    message(format("Perhaps a spoon from the restaurant? Or this seed I found?"))
+    message(format("Perhaps a spoon from the restaurant? Or this incense?"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Twisted Spoon", "Miracle Seed")
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Twisted Spoon", "Rose Incense")
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_TWISTEDSPOON)}
-    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_MIRACLE_SEED)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_ROSE_INCENSE)}
     goto(VilethornWoods_Cook_Reward_Give)
 }
 
@@ -334,6 +334,8 @@ script VilethornWoods_NPC3{
     } else {
         msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root. I got mad and ripped it out! Do you want it?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
+            msgbox(format("I'm so angry that you'll have to battle me for it!"))
+            trainerbattle_no_intro(TRAINER_VILETHORN_I, "My anger is gone now!")
             giveitem(ITEM_BIG_ROOT)
             release
             setflag(FLAG_VILETHORN_NPC_ITEM)
@@ -351,8 +353,23 @@ script VilethornWoods_NPC3{
 
 
 script VilethornWoods_Celebi_Seed{
-    msgbox(format("It's fertile soil...but not the same as berry tree soil."))
-    release
+    msgbox(format("It's fertile soil...but not the same as berry tree soil."), MSGBOX_NPC)
+
+    checkitem(ITEM_TIME_SEED)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Plant a Time Seed?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_TIME_SEED)
+
+            msgbox(format("{PLAYER} planted the time seed in the fertile soil."), MSGBOX_SIGN)
+            release
+            delay(16)
+            msgbox(format("Maybe it needs some type of water to grow..."), MSGBOX_SIGN)
+        }
+
+    }
     end
 }
 

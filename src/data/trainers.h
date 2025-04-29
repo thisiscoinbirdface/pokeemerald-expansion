@@ -2236,7 +2236,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_F] =
     {
 #line 960
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("Gabby & Ty"),
 #line 961
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 962
@@ -2279,11 +2279,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VILETHORN_G] =
     {
 #line 977
-        .trainerName = _("Anja"),
+        .trainerName = _("Stanja"),
 #line 978
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER_F,
+        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 979
-        .trainerPic = TRAINER_PIC_BUG_CATCHER_F,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
 #line 981
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -2386,14 +2386,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1021
-    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_4] =
+    [DIFFICULTY_NORMAL][TRAINER_VILETHORN_I] =
     {
 #line 1022
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("Shoe"),
 #line 1023
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
+        .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 1024
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
 #line 1026
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
@@ -2406,23 +2406,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1030
-            .species = SPECIES_MAGNETON,
+            .species = SPECIES_GROWLITHE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1032
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 1031
-            .lvl = 33,
+            .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 1034
-            .species = SPECIES_LOUDRED,
+            .species = SPECIES_HERDIER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1036
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 1035
-            .lvl = 33,
+            .lvl = 22,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

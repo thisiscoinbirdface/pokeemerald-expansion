@@ -957,7 +957,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
 === TRAINER_VILETHORN_F ===
-Name: GABBY & TY
+Name: Gabby & Ty
 Class: Interviewer
 Pic: Interviewer
 Gender: Male
@@ -974,9 +974,9 @@ Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VILETHORN_G ===
-Name: Anja
-Class: Bug Catcher F
-Pic: Bug Catcher F
+Name: Stanja
+Class: Bug Maniac
+Pic: Bug Maniac
 Gender: Male
 Music: Male
 Double Battle: No
@@ -1018,21 +1018,21 @@ Raticate-Alola
 Level: 22
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_GABBY_AND_TY_4 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
+=== TRAINER_VILETHORN_I ===
+Name: Shoe
+Class: Gentleman
+Pic: Gentleman
 Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Check Bad Move
 
-Magneton
-Level: 33
+Growlithe-Hisui
+Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Loudred
-Level: 33
+Herdier
+Level: 22
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_GABBY_AND_TY_5 ===

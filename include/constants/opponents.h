@@ -85,7 +85,7 @@
 #define TRAINER_VILETHORN_H                  53
 
 //Vilethorn Mansion
-#define TRAINER_GABBY_AND_TY_4               54
+#define TRAINER_VILETHORN_I               54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
 

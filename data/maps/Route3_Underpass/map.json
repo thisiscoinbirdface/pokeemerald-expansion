@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LIZA",
       "x": 35,
-      "y": 31,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
@@ -159,12 +159,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUGTRIO_ALOLA)",
-      "x": 9,
+      "x": 43,
       "y": 25,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_EventScript_Dugtrio_ToGalecrest",
@@ -172,8 +172,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 38,
-      "y": 29,
+      "x": 40,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -185,8 +185,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 39,
-      "y": 30,
+      "x": 41,
+      "y": 34,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -214,14 +214,14 @@
     },
     {
       "x": 28,
-      "y": 23,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
       "dest_warp_id": "1"
     },
     {
-      "x": 44,
-      "y": 37,
+      "x": 46,
+      "y": 41,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3",
       "dest_warp_id": "3"
@@ -290,8 +290,8 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 46,
-      "y": 24,
+      "x": 48,
+      "y": 28,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS_EXTENDED",
       "dest_warp_id": "0"
