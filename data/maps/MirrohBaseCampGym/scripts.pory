@@ -279,7 +279,7 @@ script MirrohBaseCampGym_Leader{
 
             //trainers cheer
 
-            fadescreen(FADE_TO_BLACK)
+            fadescreenswapbuffers(FADE_TO_BLACK)
             release
             setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
 
@@ -289,7 +289,7 @@ script MirrohBaseCampGym_Leader{
             special(RemoveCameraObject)
             applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
             applymovement(1, moves(face_left))
-            fadescreen(FADE_FROM_BLACK)
+            fadescreenswapbuffers(FADE_FROM_BLACK)
             speakername("Carona")
             msgbox(format("Now, trainer, feel the force of these iron fists!"))
             release
@@ -310,11 +310,11 @@ script MirrohBaseCampGym_Leader{
             special(RemoveCameraObject)
 
 
-            // fadescreen(FADE_TO_BLACK)
+            // fadescreenswapbuffers(FADE_TO_BLACK)
             // setobjectxy(OBJ_EVENT_ID_PLAYER, 7, 5)
             // applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
             // applymovement(1, moves(face_left))
-            // fadescreen(FADE_FROM_BLACK)
+            // fadescreenswapbuffers(FADE_FROM_BLACK)
 
             speakername("Carona")
             msgbox(format("How gratifying that my last badge goes to someone with your guts!"))

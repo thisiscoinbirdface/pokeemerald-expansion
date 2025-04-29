@@ -34,13 +34,13 @@ CarabrueTown_EventScript_PoliceRoadBlock::
 # 24 "data//maps/CarabrueTown/scripts.pory"
 	release
 # 25 "data//maps/CarabrueTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 27 "data//maps/CarabrueTown/scripts.pory"
 	removeobject 1
 # 28 "data//maps/CarabrueTown/scripts.pory"
 	removeobject 2
 # 30 "data//maps/CarabrueTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 32 "data//maps/CarabrueTown/scripts.pory"
 	removeitem ITEM_LAB_WELCOMEPACKAGE
 # 33 "data//maps/CarabrueTown/scripts.pory"

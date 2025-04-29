@@ -333,7 +333,7 @@ script Route6_Gabrielle_Main{
 script Route6_Gabrielle_ChooseDoubleBattleParty{
     //battle
 	special(SavePlayerParty)
-	fadescreen(FADE_TO_BLACK)
+	fadescreenswapbuffers(FADE_TO_BLACK)
 	special(ChooseHalfPartyForBattle)
 	waitstate
 	goto_if_ne(VAR_RESULT, 0, Route6_Gabrielle_DoBattle)
@@ -353,7 +353,7 @@ script Route6_Gabrielle_DoBattle{
  	if (var(VAR_RESULT) == 1){
         goto(Route6_Gabrielle_Victory)
     }
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     special(SetCB2WhiteOut)
     waitstate
 }
@@ -399,7 +399,7 @@ script Route6_Gabrielle_Victory{
 // 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
 // 	waitmovement 0
 // 	special(SavePlayerParty)
-// 	fadescreen(FADE_TO_BLACK)
+// 	fadescreenswapbuffers(FADE_TO_BLACK)
 // 	special(ChooseHalfPartyForBattle)
 // 	waitstate
 // 	goto_if_ne(VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle)

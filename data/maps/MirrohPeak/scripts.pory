@@ -337,12 +337,12 @@ script MirrohPeak_EventScript_Somber_Trigger{
     msgbox(format("Y-yes boss!!"))
     release
 
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_MOXIE)
     removeobject(2)    
     removeobject(5)
     removeobject(6)    
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     delay(60)
     setobjectxyperm(20, 19, 14)
@@ -373,7 +373,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7)    
 
     //warp
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     warp(MAP_ANCIENT_MIRROH, 12, 22)
     releaseall
     end

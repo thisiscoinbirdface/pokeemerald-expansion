@@ -215,7 +215,7 @@ AncientMirroh_GoBackYesNo_2:
 # 130 "data//maps/AncientMirroh/scripts.pory"
 	setflag FLAG_ANCIENT_MIRROH_DONE
 # 135 "data//maps/AncientMirroh/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 136 "data//maps/AncientMirroh/scripts.pory"
 	warp MAP_LILY_POND, 12, 4
 	goto AncientMirroh_GoBackYesNo_1

@@ -786,10 +786,10 @@ script Common_EventScript_HyperTrainer{
             if (var(VAR_RESULT) == 5){hypertrain(STAT_SPEED, VAR_0x8004)}
 
             release
-            fadescreen(FADE_TO_WHITE)
+            fadescreenswapbuffers(FADE_TO_WHITE)
             playse(SE_USE_ITEM)
             delay(24)
-            fadescreen(FADE_FROM_WHITE)
+            fadescreenswapbuffers(FADE_FROM_WHITE)
 
             removeitem(ITEM_RARE_SHARD)
             msgbox(format("Imbued with the shrine's memories, {STR_VAR_1} became stronger!"))

@@ -448,7 +448,7 @@ MirrohBaseCampGym_Leader_5:
 # 278 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Leader_Text_7
 # 282 "data//maps/MirrohBaseCampGym/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 283 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
 # 284 "data//maps/MirrohBaseCampGym/scripts.pory"
@@ -466,7 +466,7 @@ MirrohBaseCampGym_Leader_5:
 # 291 "data//maps/MirrohBaseCampGym/scripts.pory"
 	applymovement 1, MirrohBaseCampGym_EventScript_Main_Movement_11
 # 292 "data//maps/MirrohBaseCampGym/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 293 "data//maps/MirrohBaseCampGym/scripts.pory"
 	speakername MirrohBaseCampGym_EventScript_Main_Text_6
 # 294 "data//maps/MirrohBaseCampGym/scripts.pory"

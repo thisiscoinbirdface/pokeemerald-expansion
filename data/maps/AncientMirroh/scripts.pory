@@ -132,7 +132,7 @@ script AncientMirroh_GoBackYesNo{
         //quest
 
 
-        fadescreen(FADE_TO_BLACK)
+        fadescreenswapbuffers(FADE_TO_BLACK)
         warp(MAP_LILY_POND, 12, 4)
 
     } else {

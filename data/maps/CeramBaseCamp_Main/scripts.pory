@@ -217,7 +217,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
 
     //End encounter
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_GRUNT1)
     removeobject(LOCALID_GRUNT2)
     removeobject(LOCALID_GRUNT3)
@@ -230,7 +230,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     clearflag(FLAG_HIDE_BASECAMP_SHOPKEEPER)
     setvar(VAR_SUPPLY_DEPOT_STATE, 1)
 
-    fadescreen(FADE_FROM_BLACK)    
+    fadescreenswapbuffers(FADE_FROM_BLACK)    
     releaseall
 
 }

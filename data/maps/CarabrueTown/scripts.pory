@@ -22,12 +22,12 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
         speakername("Detective")
         msgbox(format("What's the matter with you guys? Can't keep it together without the Professor around to help you?"))
         release
-        fadescreen(FADE_TO_BLACK)
+        fadescreenswapbuffers(FADE_TO_BLACK)
 
         removeobject(1)
         removeobject(2) 
 
-        fadescreen(FADE_FROM_BLACK)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
 
         removeitem(ITEM_LAB_WELCOMEPACKAGE)
         setflag(FLAG_CARABRUE_POLICE)

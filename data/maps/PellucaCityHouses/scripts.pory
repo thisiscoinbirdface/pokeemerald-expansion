@@ -126,9 +126,9 @@ script PellucaCity_Clauncher{
 
     msgbox(format("It's a Corsola! It's looking disoriented.\p{PLAYER} gently lifts the Corsola and tosses it back into the river."))
     release
-    fadescreen(FADE_TO_WHITE)
+    fadescreenswapbuffers(FADE_TO_WHITE)
     removeobject(VAR_LAST_TALKED)
-    fadescreen(FADE_FROM_WHITE)    
+    fadescreenswapbuffers(FADE_FROM_WHITE)    
     msgbox(format("See you Corsola!"))
 
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1)

@@ -97,7 +97,7 @@ Route4_EventScript_EvilTeamDefeated::
 # 67 "data//maps/Route4/scripts.pory"
 	release
 # 70 "data//maps/Route4/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 71 "data//maps/Route4/scripts.pory"
 	removeobject LOCALID_GRUNT1
 # 72 "data//maps/Route4/scripts.pory"
@@ -105,7 +105,7 @@ Route4_EventScript_EvilTeamDefeated::
 # 73 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_EVIL_BATTLE
 # 74 "data//maps/Route4/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 75 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
@@ -353,7 +353,7 @@ Route4_Dewpider_Defeated::
 # 230 "data//maps/Route4/scripts.pory"
 	release
 # 232 "data//maps/Route4/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 233 "data//maps/Route4/scripts.pory"
 	removeobject 1
 # 234 "data//maps/Route4/scripts.pory"
@@ -361,7 +361,7 @@ Route4_Dewpider_Defeated::
 # 235 "data//maps/Route4/scripts.pory"
 	removeobject 3
 # 236 "data//maps/Route4/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	return
 
 

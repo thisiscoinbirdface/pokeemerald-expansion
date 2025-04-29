@@ -176,13 +176,13 @@ Fennilahl_Breech_QuestInProgress_2:
 # 103 "data//maps/FennilahlTown/scripts.pory"
 	release
 # 105 "data//maps/FennilahlTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 106 "data//maps/FennilahlTown/scripts.pory"
 	removeobject LOCALID_CLEF
 # 107 "data//maps/FennilahlTown/scripts.pory"
 	removeobject LOCALID_BREECH
 # 108 "data//maps/FennilahlTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 110 "data//maps/FennilahlTown/scripts.pory"
 	setflag FLAG_FENNILAHL_HIKER_BLOCK
 # 111 "data//maps/FennilahlTown/scripts.pory"

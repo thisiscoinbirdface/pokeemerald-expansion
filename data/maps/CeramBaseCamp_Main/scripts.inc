@@ -336,7 +336,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter::
 # 217 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 # 220 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 221 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	removeobject LOCALID_GRUNT1
 # 222 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -358,7 +358,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter::
 # 231 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	setvar VAR_SUPPLY_DEPOT_STATE, 1
 # 233 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 234 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	releaseall
 	return

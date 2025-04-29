@@ -20,7 +20,7 @@ SilversunCity_Theater_Leader::
 # 29 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_2
 # 30 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 31 "data//maps/SilversunCity_Theater/scripts.pory"
 	setobjectxy OBJ_EVENT_ID_PLAYER, 3, 6
 # 32 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -38,7 +38,7 @@ SilversunCity_Theater_Leader::
 # 39 "data//maps/SilversunCity_Theater/scripts.pory"
 	special RemoveCameraObject
 # 41 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 42 "data//maps/SilversunCity_Theater/scripts.pory"
 	speakername SilversunCity_Theater_Leader_Text_0
 # 43 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -60,7 +60,7 @@ SilversunCity_Theater_Leader::
 # 51 "data//maps/SilversunCity_Theater/scripts.pory"
 	msgbox SilversunCity_Theater_Leader_Text_6
 # 53 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 55 "data//maps/SilversunCity_Theater/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_Theater_Leader_Movement_2
 # 56 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -70,7 +70,7 @@ SilversunCity_Theater_Leader::
 # 58 "data//maps/SilversunCity_Theater/scripts.pory"
 	hidefollower
 # 59 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 62 "data//maps/SilversunCity_Theater/scripts.pory"
 	speakername SilversunCity_Theater_Leader_Text_0
 # 63 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -136,7 +136,7 @@ SilversunCity_Theater_Leader::
 # 107 "data//maps/SilversunCity_Theater/scripts.pory"
 	release
 # 109 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 110 "data//maps/SilversunCity_Theater/scripts.pory"
 	special SpawnCameraObject
 # 111 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -146,7 +146,7 @@ SilversunCity_Theater_Leader::
 # 113 "data//maps/SilversunCity_Theater/scripts.pory"
 	special RemoveCameraObject
 # 114 "data//maps/SilversunCity_Theater/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 115 "data//maps/SilversunCity_Theater/scripts.pory"
 	releaseall
 	end

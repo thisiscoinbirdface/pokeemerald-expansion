@@ -408,9 +408,9 @@ MtCeramPeak_MainEvent_Trigger::
 # 253 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 30
 # 254 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 255 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 257 "data//maps/MtCeram_Peak/scripts.pory"
 	speakername MtCeramPeak_MainEvent_Trigger_Text_18
 # 258 "data//maps/MtCeram_Peak/scripts.pory"
@@ -432,9 +432,9 @@ MtCeramPeak_MainEvent_Trigger::
 # 266 "data//maps/MtCeram_Peak/scripts.pory"
 	delay 30
 # 268 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 269 "data//maps/MtCeram_Peak/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 271 "data//maps/MtCeram_Peak/scripts.pory"
 	speakername MtCeramPeak_MainEvent_Trigger_Text_18
 # 272 "data//maps/MtCeram_Peak/scripts.pory"

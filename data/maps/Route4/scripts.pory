@@ -67,11 +67,11 @@ script Route4_EventScript_EvilTeamDefeated{
     release
     
     //End the sequence
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_GRUNT1)
     removeobject(LOCALID_GRUNT2)
     setflag(FLAG_ROUTE4_EVIL_BATTLE)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     releaseall
 }
 
@@ -229,11 +229,11 @@ script Route4_TrainerBattle_Jenny {
         msgbox(format("C'mon gang! Let's go."))
         release
 
-        fadescreen(FADE_TO_BLACK)
+        fadescreenswapbuffers(FADE_TO_BLACK)
         removeobject(1)
         removeobject(2)
         removeobject(3)
-        fadescreen(FADE_FROM_BLACK)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
     }
 
 

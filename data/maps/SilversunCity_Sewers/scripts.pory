@@ -391,9 +391,9 @@ script SilversunCity_Sewers_Market_Muk{
             msgbox(format("Muk disappears into the sewers..."))
             release
 
-            fadescreen(FADE_TO_BLACK)
+            fadescreenswapbuffers(FADE_TO_BLACK)
             removeobject(19)
-            fadescreen(FADE_FROM_BLACK)
+            fadescreenswapbuffers(FADE_FROM_BLACK)
 
         }
     }

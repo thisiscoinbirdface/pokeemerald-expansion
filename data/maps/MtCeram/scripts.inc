@@ -482,7 +482,7 @@ MtCeram_EventScript_BeforePeakBattle::
 # 327 "data//maps/MtCeram/scripts.pory"
 	fadeoutbgm 0
 # 330 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 331 "data//maps/MtCeram/scripts.pory"
 	playse SE_SUPER_EFFECTIVE
 # 332 "data//maps/MtCeram/scripts.pory"
@@ -506,7 +506,7 @@ MtCeram_EventScript_BeforePeakBattle::
 # 341 "data//maps/MtCeram/scripts.pory"
 	release
 # 342 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 343 "data//maps/MtCeram/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 # 345 "data//maps/MtCeram/scripts.pory"
@@ -584,7 +584,7 @@ MtCeram_EventScript_BeforePeakBattle::
 # 393 "data//maps/MtCeram/scripts.pory"
 	release
 # 396 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 397 "data//maps/MtCeram/scripts.pory"
 	removeobject LOCALID_TOPGRUNT1
 # 398 "data//maps/MtCeram/scripts.pory"
@@ -592,7 +592,7 @@ MtCeram_EventScript_BeforePeakBattle::
 # 399 "data//maps/MtCeram/scripts.pory"
 	removeobject LOCALID_GAB
 # 400 "data//maps/MtCeram/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 402 "data//maps/MtCeram/scripts.pory"
 	fadedefaultbgm
 # 405 "data//maps/MtCeram/scripts.pory"

@@ -545,7 +545,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 338 "data//maps/MirrohPeak/scripts.pory"
 	release
 # 340 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 341 "data//maps/MirrohPeak/scripts.pory"
 	removeobject LOCALID_MOXIE
 # 342 "data//maps/MirrohPeak/scripts.pory"
@@ -555,7 +555,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 344 "data//maps/MirrohPeak/scripts.pory"
 	removeobject 6
 # 345 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 347 "data//maps/MirrohPeak/scripts.pory"
 	delay 60
 # 348 "data//maps/MirrohPeak/scripts.pory"
@@ -605,7 +605,7 @@ MirrohPeak_EventScript_Somber_Trigger::
 # 373 "data//maps/MirrohPeak/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7
 # 376 "data//maps/MirrohPeak/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 377 "data//maps/MirrohPeak/scripts.pory"
 	warp MAP_ANCIENT_MIRROH, 12, 22
 # 378 "data//maps/MirrohPeak/scripts.pory"

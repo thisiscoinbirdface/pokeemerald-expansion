@@ -247,7 +247,7 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 157 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	release
 # 159 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_WHITE
 # 160 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	playmoncry SPECIES_KORAIDON, CRY_MODE_NORMAL
 # 161 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -255,7 +255,7 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 162 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	removeobject 4
 # 163 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_FROM_WHITE
 # 166 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_4
 # 167 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -315,7 +315,7 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	delay 16
 # 200 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 201 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	removeobject LOCALID_MELEA
 # 202 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -323,7 +323,7 @@ AncientMirroh_Tower_4F_MainTrigger::
 # 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	removeobject 1
 # 204 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 207 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	special SpawnCameraObject
 # 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"

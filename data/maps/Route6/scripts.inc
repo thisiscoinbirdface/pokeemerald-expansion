@@ -436,7 +436,7 @@ Route6_Gabrielle_ChooseDoubleBattleParty::
 # 335 "data//maps/Route6/scripts.pory"
 	special SavePlayerParty
 # 336 "data//maps/Route6/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 337 "data//maps/Route6/scripts.pory"
 	special ChooseHalfPartyForBattle
 # 338 "data//maps/Route6/scripts.pory"
@@ -468,7 +468,7 @@ Route6_Gabrielle_DoBattle::
 	goto_if_eq Route6_Gabrielle_DoBattle_2
 Route6_Gabrielle_DoBattle_1:
 # 356 "data//maps/Route6/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 357 "data//maps/Route6/scripts.pory"
 	special SetCB2WhiteOut
 # 358 "data//maps/Route6/scripts.pory"

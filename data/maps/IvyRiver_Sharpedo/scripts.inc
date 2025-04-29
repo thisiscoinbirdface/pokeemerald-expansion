@@ -139,7 +139,7 @@ IvyRiver_Sharpedo_Jania_Trigger::
 # 81 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	release
 # 83 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 84 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	removeobject LOCALID_CLAUNCHER
 # 85 "data//maps/IvyRiver_Sharpedo/scripts.pory"
@@ -149,7 +149,7 @@ IvyRiver_Sharpedo_Jania_Trigger::
 # 88 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	setflag FLAG_IVY_RIVER_SHARPEDO_JANIA
 # 90 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 93 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	releaseall
 	end

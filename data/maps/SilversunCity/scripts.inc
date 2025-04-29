@@ -113,13 +113,13 @@ SilversunCity_OnFrame_1:
 # 66 "data//maps/SilversunCity/scripts.pory"
 	release
 # 74 "data//maps/SilversunCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 75 "data//maps/SilversunCity/scripts.pory"
 	removeobject LOCALID_DET1
 # 76 "data//maps/SilversunCity/scripts.pory"
 	removeobject LOCALID_DET2
 # 77 "data//maps/SilversunCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 80 "data//maps/SilversunCity/scripts.pory"
 	setflag FLAG_HIDE_SILVERSUN_PROF
 # 81 "data//maps/SilversunCity/scripts.pory"

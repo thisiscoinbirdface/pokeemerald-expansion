@@ -160,13 +160,13 @@ MtMirrohExterior_Breech_Reward_End::
 # 89 "data//maps/MtMirrohExterior/scripts.pory"
 	delay 24
 # 91 "data//maps/MtMirrohExterior/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 92 "data//maps/MtMirrohExterior/scripts.pory"
 	removeobject LOCALID_BREECH
 # 93 "data//maps/MtMirrohExterior/scripts.pory"
 	removeobject LOCALID_CLEF
 # 94 "data//maps/MtMirrohExterior/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 96 "data//maps/MtMirrohExterior/scripts.pory"
 	setflag FLAG_MIRROH_EXTERIOR_BREECH
 # 97 "data//maps/MtMirrohExterior/scripts.pory"

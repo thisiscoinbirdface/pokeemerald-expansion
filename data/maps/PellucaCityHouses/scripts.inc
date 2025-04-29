@@ -198,11 +198,11 @@ PellucaCity_Clauncher_1:
 # 128 "data//maps/PellucaCityHouses/scripts.pory"
 	release
 # 129 "data//maps/PellucaCityHouses/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_WHITE
 # 130 "data//maps/PellucaCityHouses/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 131 "data//maps/PellucaCityHouses/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_FROM_WHITE
 # 132 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_3
 # 134 "data//maps/PellucaCityHouses/scripts.pory"

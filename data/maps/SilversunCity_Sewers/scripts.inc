@@ -543,11 +543,11 @@ SilversunCity_Sewers_Market_Muk_4:
 # 392 "data//maps/SilversunCity_Sewers/scripts.pory"
 	release
 # 394 "data//maps/SilversunCity_Sewers/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 395 "data//maps/SilversunCity_Sewers/scripts.pory"
 	removeobject 19
 # 396 "data//maps/SilversunCity_Sewers/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	goto SilversunCity_Sewers_Market_Muk_1
 
 

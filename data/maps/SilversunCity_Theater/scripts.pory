@@ -27,7 +27,7 @@ script SilversunCity_Theater_Leader{
     //dialogue
     speakername("Gloria")
     msgbox(format("Hmm, so it's you. Not spectacular, but you'll do.")) 
-    fadescreen(FADE_TO_BLACK)    
+    fadescreenswapbuffers(FADE_TO_BLACK)    
     setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(8, moves(face_down))
@@ -38,7 +38,7 @@ script SilversunCity_Theater_Leader{
     waitmovement(0)
     special(RemoveCameraObject)
 
-    fadescreen(FADE_FROM_BLACK)    
+    fadescreenswapbuffers(FADE_FROM_BLACK)    
     speakername("Gloria")
     msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
     release
@@ -50,13 +50,13 @@ script SilversunCity_Theater_Leader{
     speakername("Gloria")  
     msgbox(format("You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
     //Move player and leader
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left))
     waitmovement(0)
     hidefollower
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     //Talk
     speakername("Gloria")
@@ -106,12 +106,12 @@ script SilversunCity_Theater_Leader{
     msgbox(format("It was a pleasure sharing the stage with you. May you elegantly bob and weave through the dance of life, {PLAYER}!"))   
     release
 
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     special(SpawnCameraObject)
     setobjectxy(OBJ_EVENT_ID_CAMERA, 5, 6)
     delay(16)
     special(RemoveCameraObject)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     releaseall
     end
 }

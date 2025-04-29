@@ -59,11 +59,11 @@ LilyPond_OnFrame::
 # 33 "data//maps/LilyPond/scripts.pory"
 	release
 # 35 "data//maps/LilyPond/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 36 "data//maps/LilyPond/scripts.pory"
 	removeobject 2
 # 37 "data//maps/LilyPond/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 39 "data//maps/LilyPond/scripts.pory"
 	setflag FLAG_HIDE_LILY_POND_KOHLA
 # 40 "data//maps/LilyPond/scripts.pory"

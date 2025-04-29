@@ -36,9 +36,9 @@ script GalecrestCity_OnFrame{
     release
     
     //Remove gab
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_GAB)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     setflag(FLAG_GALECREST_POST_ANCIENT)
     releaseall
@@ -231,10 +231,10 @@ script GalecrestCity_DetectiveMeet_Main{
     release
 
     //exit
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_DET1)
     removeobject(LOCALID_DET2)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     //Setvars quests etc
     setflag(FLAG_GALECREST_DETECTIVE_CONVO)
@@ -428,10 +428,10 @@ script GalecrestCity_NPC_14{
         msgbox(format("I knew I shouldn't have tried to steal anything near the Detective Academy!"))
         release
 
-        fadescreen(FADE_TO_BLACK)
+        fadescreenswapbuffers(FADE_TO_BLACK)
         removeobject(12)
         removeobject(36)
-        fadescreen(FADE_FROM_BLACK)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
 
         setflag(FLAG_GALECREST_ROBBER)
         setvar(VAR_GALECREST_RICH_PEARLS, 2)

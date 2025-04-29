@@ -36,11 +36,11 @@ GalecrestCity_OnFrame::
 # 36 "data//maps/GalecrestCity/scripts.pory"
 	release
 # 39 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 40 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_GAB
 # 41 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 43 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_POST_ANCIENT
 # 44 "data//maps/GalecrestCity/scripts.pory"
@@ -325,13 +325,13 @@ GalecrestCity_DetectiveMeet_Main::
 # 231 "data//maps/GalecrestCity/scripts.pory"
 	release
 # 234 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 235 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_DET1
 # 236 "data//maps/GalecrestCity/scripts.pory"
 	removeobject LOCALID_DET2
 # 237 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 240 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_DETECTIVE_CONVO
 # 241 "data//maps/GalecrestCity/scripts.pory"
@@ -541,13 +541,13 @@ GalecrestCity_NPC_14::
 # 429 "data//maps/GalecrestCity/scripts.pory"
 	release
 # 431 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 432 "data//maps/GalecrestCity/scripts.pory"
 	removeobject 12
 # 433 "data//maps/GalecrestCity/scripts.pory"
 	removeobject 36
 # 434 "data//maps/GalecrestCity/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 436 "data//maps/GalecrestCity/scripts.pory"
 	setflag FLAG_GALECREST_ROBBER
 # 437 "data//maps/GalecrestCity/scripts.pory"

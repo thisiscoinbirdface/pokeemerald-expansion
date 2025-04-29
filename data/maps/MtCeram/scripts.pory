@@ -327,7 +327,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     fadeoutbgm(0)
 
     //Fade screen and defeat Kohla
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     playse(SE_SUPER_EFFECTIVE)
     waitse
     playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
@@ -339,7 +339,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     speakername("Grunt A")
     msgbox(format("Hahaha! Your ace was a pushover, Ace Rookie!"))
     release  
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
 
     applymovement(LOCALID_TOPKOHLA, moves(walk_down))
@@ -393,11 +393,11 @@ script MtCeram_EventScript_BeforePeakBattle{
     release   
 
     //Move on
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(LOCALID_TOPGRUNT1)
     removeobject(LOCALID_TOPGRUNT2)
     removeobject(LOCALID_GAB)
-    fadescreen(FADE_FROM_BLACK)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     fadedefaultbgm
 
