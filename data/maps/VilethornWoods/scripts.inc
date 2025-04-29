@@ -688,10 +688,9 @@ VilethornWoods_Trainer_C_Text_2:
 
 VilethornWoods_Trainer_D_Text_0:
 # 219 "data//maps/VilethornWoods/scripts.pory"
-	.string "I'm a Pokémon Breeder. Like all\n"
-	.string "breeders, we specialise in certain\l"
-	.string "Pokémon forms. I'm a horse breeding\l"
-	.string "expert!$"
+	.string "I'm a Pokémon Breeder. We all specialise\n"
+	.string "in different Pokémon forms. I'm a horse\l"
+	.string "breeding expert!$"
 
 VilethornWoods_Trainer_D_Text_1:
 # 219 "data//maps/VilethornWoods/scripts.pory"
@@ -700,7 +699,7 @@ VilethornWoods_Trainer_D_Text_1:
 VilethornWoods_Trainer_D_Text_2:
 # 220 "data//maps/VilethornWoods/scripts.pory"
 	.string "I need to raise my horses to become\n"
-	.string "stronger. Maybe some VITAMINS would\l"
+	.string "stronger. Maybe some Vitamins would\l"
 	.string "help...$"
 
 VilethornWoods_Trainer_E_Text_0:

@@ -216,8 +216,8 @@ script VilethornWoods_Trainer_C{
 }
 
 script VilethornWoods_Trainer_D{
-    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokémon Breeder. Like all breeders, we specialise in certain Pokémon forms. I'm a horse breeding expert!"), "Well fought!")
-    msgbox(format("I need to raise my horses to become stronger. Maybe some VITAMINS would help..."))
+    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokémon Breeder. We  all specialise in different Pokémon forms. I'm a horse breeding expert!"), "Well fought!")
+    msgbox(format("I need to raise my horses to become stronger. Maybe some Vitamins would help..."))
     releaseall
     end
 }
