@@ -268,6 +268,9 @@ extern const u32 gBattleTerrainPalette_Graveyard[];
 extern const u32 gBattleTerrainTiles_Snow[];
 extern const u32 gBattleTerrainTilemap_Snow[];
 extern const u32 gBattleTerrainPalette_Snow[];
+extern const u32 gBattleTerrainTiles_Town[];
+extern const u32 gBattleTerrainTilemap_Town[];
+extern const u32 gBattleTerrainPalette_Town[];
 
 extern const u32 gBattleTerrainTiles_Building[];
 extern const u32 gBattleTerrainTilemap_Building[];

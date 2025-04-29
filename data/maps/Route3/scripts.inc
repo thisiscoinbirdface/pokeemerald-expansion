@@ -308,7 +308,7 @@ Route3_TrainerBattle_Chara_Text_2:
 
 Route3_NPC1_Text_0:
 # 54 "data//maps/Route3/scripts.pory"
-	.string "I love the high-altitude winds!\p"
+	.string "I love the high-altitude winds!\n"
 	.string "I feel one with the hills.$"
 
 Route3_NPC2_Text_0:

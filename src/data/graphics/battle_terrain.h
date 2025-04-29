@@ -46,6 +46,10 @@ const u32 gBattleTerrainTiles_Graveyard[] = INCBIN_U32("graphics/battle_terrain/
 const u32 gBattleTerrainPalette_Graveyard[] = INCBIN_U32("graphics/battle_terrain/graveyard/tiles.gbapal.lz");
 const u32 gBattleTerrainTilemap_Graveyard[] = INCBIN_U32("graphics/battle_terrain/graveyard/map.bin.lz");
 
+const u32 gBattleTerrainTiles_Town[] = INCBIN_U32("graphics/battle_terrain/town/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_Town[] = INCBIN_U32("graphics/battle_terrain/town/tiles.gbapal.lz");
+const u32 gBattleTerrainTilemap_Town[] = INCBIN_U32("graphics/battle_terrain/town/map.bin.lz");
+
 const u32 gBattleTerrainPalette_Plain[] = INCBIN_U32("graphics/battle_terrain/plain/palette.gbapal.lz");
 
 const u32 gBattleTerrainTiles_Building[] = INCBIN_U32("graphics/battle_terrain/building/tiles.4bpp.lz");

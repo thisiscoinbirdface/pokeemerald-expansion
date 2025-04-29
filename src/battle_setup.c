@@ -543,7 +543,9 @@ u8 BattleSetup_GetTerrainId(void)
     switch (gMapHeader.mapType)
     {
     case MAP_TYPE_TOWN:
+        return BATTLE_TERRAIN_TOWN;
     case MAP_TYPE_CITY:
+        return BATTLE_TERRAIN_TOWN;
     case MAP_TYPE_ROUTE:    
         break;
     case MAP_TYPE_UNDERGROUND:

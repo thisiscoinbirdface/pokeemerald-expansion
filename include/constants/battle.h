@@ -494,8 +494,9 @@ enum MoveEffects
 #define BATTLE_TERRAIN_DISTORTION_WORLD 19
 #define BATTLE_TERRAIN_SPACE            20
 #define BATTLE_TERRAIN_ULTRA_SPACE      21
+#define BATTLE_TERRAIN_TOWN             22
 
-#define BATTLE_TERRAIN_COUNT            22
+#define BATTLE_TERRAIN_COUNT            23
 
 #define B_WAIT_TIME_LONG        (B_WAIT_TIME_MULTIPLIER * 3)
 #define B_WAIT_TIME_MED         (B_WAIT_TIME_MULTIPLIER * 3)
