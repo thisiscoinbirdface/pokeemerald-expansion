@@ -1445,7 +1445,7 @@ Common_EventScript_Dugtrio_ToRoute3_1:
 # 906 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 907 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_ROUTE3_UNDERPASS, 9, 26
+	warp MAP_ROUTE3_UNDERPASS, 43, 26
 	return
 
 

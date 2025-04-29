@@ -904,7 +904,7 @@ script Common_EventScript_Dugtrio_ToRoute3{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         playmoncry(SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL)
         delay(30)
-        warp(MAP_ROUTE3_UNDERPASS, 9, 26)
+        warp(MAP_ROUTE3_UNDERPASS, 43, 26)
     }
 
 }
