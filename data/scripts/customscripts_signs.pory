@@ -226,7 +226,7 @@ script WhiteSign_SilversunCity_Sewers{
 }
 
 script WhiteSign_SilversunCity_DrifblimTravels{
-    msgbox(format("Drifblim Travels Pvt. Ltd.\nNo free rides!"), MSGBOX_SIGN)
+    msgbox(format("Drifblim Travels Pvt. Ltd.\nAffordable intercity rides!"), MSGBOX_SIGN)
     end
 }
 

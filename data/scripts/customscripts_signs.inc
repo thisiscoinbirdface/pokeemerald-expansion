@@ -566,7 +566,7 @@ WhiteSign_SilversunCity_Sewers_Text_0:
 WhiteSign_SilversunCity_DrifblimTravels_Text_0:
 # 229 "data//scripts/customscripts_signs.pory"
 	.string "Drifblim Travels Pvt. Ltd.\n"
-	.string "No free rides!$"
+	.string "Affordable intercity rides!$"
 
 WhiteSign_SilversunCity_Gym_Text_0:
 # 234 "data//scripts/customscripts_signs.pory"
