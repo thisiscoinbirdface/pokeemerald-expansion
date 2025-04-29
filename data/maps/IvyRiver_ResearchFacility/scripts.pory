@@ -350,3 +350,31 @@ script IvyRiver_Ranger_Scientist_C{
     }
 }
 
+
+
+
+
+
+
+
+script IvyRiver_Ranger_NPC_A{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script IvyRiver_Ranger_NPC_B{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script IvyRiver_Ranger_NPC_C{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script IvyRiver_Ranger_NPC_D{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script IvyRiver_Ranger_NPC_E{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+

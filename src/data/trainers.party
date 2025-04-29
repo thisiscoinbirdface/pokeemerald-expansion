@@ -2540,9 +2540,9 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_A ===
-Name: JESSICA
+Name: Gabrielle
 Class: Pkmn Trainer 2
-Pic: Beauty
+Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
@@ -2581,9 +2581,9 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_C ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+Name: Winston
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
 Music: Rich
 Items: Full Restore

@@ -638,6 +638,36 @@ IvyRiver_Ranger_Scientist_C_7:
 	end
 
 
+IvyRiver_Ranger_NPC_A::
+# 361 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	end
+
+
+IvyRiver_Ranger_NPC_B::
+# 365 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	end
+
+
+IvyRiver_Ranger_NPC_C::
+# 369 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	end
+
+
+IvyRiver_Ranger_NPC_D::
+# 373 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	end
+
+
+IvyRiver_Ranger_NPC_E::
+# 377 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	end
+
+
 # 34 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 IvyRiver_Ranger_FirstQuest_Movement_0:
 # 34 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
@@ -1000,3 +1030,7 @@ IvyRiver_Ranger_Scientist_C_Text_4:
 # 348 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hey, that's not a Lapras! You need to\n"
 	.string "work harder, Candidate!$"
+
+IvyRiver_Ranger_NPC_A_Text_0:
+# 361 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "$"

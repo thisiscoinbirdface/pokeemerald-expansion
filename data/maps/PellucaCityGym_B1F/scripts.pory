@@ -138,48 +138,39 @@ script PellucaGym_Leader {
     faceplayer
     
     if (flag(FLAG_BADGE06_GET)){
-        msgbox(format("You win."))
+        msgbox(format("The tides of time wait for nobody. Do what you have to do!"))
     } else {
         special(SaveGame)
         waitstate
         release
         
         //Intro
-        msgbox(format(""))
+        speakername("Jania")
+        msgbox(format("Welcome, trainer, to the Pelluca City Gym. My name is Jania and I am the leader.\pThe flow of water is calm, but never underestimate its strength. Let's see if you can ride the wave to victory!"))
         //Battle
-        trainerbattle_no_intro(TRAINER_PELLUCA_CITY_GYM_LEADER, format(""))
+        trainerbattle_no_intro(TRAINER_PELLUCA_CITY_GYM_LEADER, format("You're one with the tides!"))
 
         //Post battle
         //Receive the badge
-        msgbox(format("KOHLA: This is yours, {PLAYER}."))
+        speakername("Jania")        
+        msgbox(format("{PLAYER}, that was a spectacular battle. You've earned this."))
         release        
 
         //Play gym badge fanfare
+        message(format("{PLAYER} received the River Badge from Jania."))
         call(Common_EventScript_PlayGymBadgeFanfare)
         setflag(FLAG_BADGE06_GET)        
-        msgbox(format("{PLAYER} received the STOIC BADGE from KOHLA."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("KOHLA: The Stoic Badge lets you use the HM move ROCK SMASH outside of battle.\p...\pKOHLA: And these are yours too."))
+        msgbox(format("And I must also give you this."))
         release
         giveitem(ITEM_RARE_SHARD)
         delay(16)
         
         //Bye-bye
-        msgbox(format("KOHLA: {PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pKOHLA: Now enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
+        speakername("Jania") 
+        msgbox(format("The eighth and last Gym Badge is given by Raazi of Rivetshore City. Head south from here down the river.\pGood luck, {PLAYER}."))
         release
-        delay(16)
-        
-        opendoor(25, 52)
-        waitdooranim
-        applymovement(5, moves(walk_up))
-        waitmovement(0)
-        delay(8)
-        removeobject(5)
-        delay(8)
-        closedoor(25, 52)
-        waitdooranim
-
 
     }
     releaseall
