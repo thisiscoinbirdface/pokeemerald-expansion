@@ -9,7 +9,7 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
     applymovement(1, moves(face_down))
     waitmovement(0)
     speakername("Shopkeeper")
-    msgbox(format("Ah, are you from the Tenebris Lab? Your supplies have been sitting here for a while now. Come here."))
+    msgbox(format("Ah, are you from the Tenebris Lab?\pYour supplies have been sitting here for a while now. Come here."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_left))
     waitmovement(0)

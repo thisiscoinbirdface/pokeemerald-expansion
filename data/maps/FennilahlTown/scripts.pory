@@ -276,7 +276,7 @@ script FennilahlTown_Budew_JoinParty{
     msgbox(format("Budew is looking at the Pokeballs on your belt curiously..."))
     release
     delay(16)
-    msgbox(format("Budew nudges the Pokeballs on your belt. It seems to want to join your party! Will you become Budew's trainer?"), MSGBOX_YESNO)
+    msgbox(format("Budew nudges you gently...\nIt seems to want to join your party!\pWill you become Budew's trainer?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         removeobject(LOCALID_BUDEW)
         givemon(SPECIES_BUDEW, 5)

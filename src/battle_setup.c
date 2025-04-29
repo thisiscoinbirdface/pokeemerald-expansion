@@ -571,7 +571,9 @@ u8 BattleSetup_GetTerrainId(void)
             return BATTLE_TERRAIN_WATER;
         return BATTLE_TERRAIN_PLAIN;
     }
-    
+
+    if (MetatileBehavior_IsAshGrass(tileBehavior))
+        return BATTLE_TERRAIN_GRASS;
     if (MetatileBehavior_IsTallGrass(tileBehavior))
         return BATTLE_TERRAIN_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))

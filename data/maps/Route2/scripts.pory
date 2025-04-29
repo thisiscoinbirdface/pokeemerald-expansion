@@ -1,6 +1,6 @@
 raw`
-    .set LOCALID_CLEFAIRY, 4
-    .set LOCALID_CLEFAIRY_FOLLOW, 5
+    .set LOCALID_CLEFAIRY, 3
+    .set LOCALID_CLEFAIRY_FOLLOW, 4
 `
 
 mapscripts Route2_MapScripts{}
@@ -31,6 +31,7 @@ script Route2_Clefairy_Trigger0{
     playse(SE_EXIT)
     delay(24)
 
+    setflag(FLAG_FENNILAHL_CLEFAIRY_FIRST_SIGHTING)
     setvar(VAR_FENNILAHL_CLEFAIRY_QUEST, 1)
 
     //camera

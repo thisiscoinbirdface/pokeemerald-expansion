@@ -33,7 +33,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything. Did you bring your welcome package? Yes? Oh wonderful! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police!\pThis bag here is your welcome package.\nGo on - open it!"))
+    msgbox(format("I'm sorry for the mess...we're scrambling to get things done, what with the Professor gone missing and everything.\pDid you bring your welcome package?\pYes?\pOh wonderful! You see, we sent you the wrong package. The one we sent you is the evidence bag for the police!\pThis bag here is your welcome package.\nGo on - open it!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
@@ -65,7 +65,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab. If we had our supplies, I could give you the standard companion Pokémon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around. But I promise - as soon as you bring the supplies back from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon, but without Professor Tenebris, everything's gone haywire here. You'll have to make do with what you find lying around.\pBut I promise - as soon as you bring the supplies back from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))

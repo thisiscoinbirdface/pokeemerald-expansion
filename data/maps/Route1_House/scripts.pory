@@ -51,7 +51,7 @@ script Route1_House_QuestInProgress{
 script Route1_House_Reward {
     message(format("Which of these would you like?"))
     waitmessage
-    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "SHINY CHARM", "CATCHING CHARM")
+    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Shiny Charm", "Catching Charm")
     if (var(VAR_RESULT) == 0){
         goto(Route1_House_RewardA)
     } else {
@@ -96,7 +96,7 @@ script Route1_House_RewardEnd{
 script Route1_House_StartQuest{
     lockall
     faceplayer
-    msgbox(format("I think my poor baby Azurill ate something bad and now has food poisoning! I wish I had a Pecha Berry to cure her. Say, trainer, good timing."))
+    msgbox(format("I think my poor baby Azurill ate something bad and now has food poisoning! I wish I had a Pecha Berry.\pSay, trainer, good timing!"))
 
 	setvar(VAR_0x8006, ITEM_PECHA_BERRY)
     showitemdescription
