@@ -102,8 +102,8 @@ script Route4_TrainerBattle_Sona {
 }
 
 script Route4_TrainerBattle_Jenny {
-    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("My PANCHAM and I train here every morning. We want to become the strongest!"), format("We need to train harder!"))
-    msgbox(format("Pancham and I will become Pokémon Champions one day!"))
+    trainerbattle_single(TRAINER_ROUTE4_JENNY, format("Oof! It's getting hotter and hotter. Where's the air conditioning?"), format("You're too hot!"))
+    msgbox(format("Tinkatink and I can't stand the heat of the volcano!"))
     release
     end
 }

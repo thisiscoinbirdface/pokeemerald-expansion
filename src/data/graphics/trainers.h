@@ -34,8 +34,8 @@ const u32 gTrainerPalette_ExpertM[] = INCBIN_U32("graphics/trainers/front_pics/e
 const u32 gTrainerFrontPic_AquaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_m.4bpp.lz");
 const u32 gTrainerPalette_AquaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_m.gbapal.lz");
 
-const u32 gTrainerFrontPic_BlackBelt[] = INCBIN_U32("graphics/trainers/front_pics/black_belt.4bpp.lz");
-const u32 gTrainerPalette_BlackBelt[] = INCBIN_U32("graphics/trainers/front_pics/black_belt.gbapal.lz");
+const u32 gTrainerFrontPic_BlackBelt[] = INCBIN_U32("graphics/trainers/my_trainers/black_belt_alt.4bpp.lz");
+const u32 gTrainerPalette_BlackBelt[] = INCBIN_U32("graphics/trainers/my_trainers/black_belt_alt.gbapal.lz");
 
 const u32 gTrainerFrontPic_AquaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_f.4bpp.lz");
 const u32 gTrainerPalette_AquaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/aqua_admin_f.gbapal.lz");
@@ -193,8 +193,8 @@ const u32 gTrainerPalette_DragonTamer[] = INCBIN_U32("graphics/trainers/front_pi
 const u32 gTrainerFrontPic_NinjaBoy[] = INCBIN_U32("graphics/trainers/front_pics/ninja_boy.4bpp.lz");
 const u32 gTrainerPalette_NinjaBoy[] = INCBIN_U32("graphics/trainers/front_pics/ninja_boy.gbapal.lz");
 
-const u32 gTrainerFrontPic_BattleGirl[] = INCBIN_U32("graphics/trainers/front_pics/battle_girl.4bpp.lz");
-const u32 gTrainerPalette_BattleGirl[] = INCBIN_U32("graphics/trainers/front_pics/battle_girl.gbapal.lz");
+const u32 gTrainerFrontPic_BattleGirl[] = INCBIN_U32("graphics/trainers/my_trainers/battle_girl_alt.4bpp.lz");
+const u32 gTrainerPalette_BattleGirl[] = INCBIN_U32("graphics/trainers/my_trainers/battle_girl_alt.gbapal.lz");
 
 const u32 gTrainerFrontPic_ParasolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.4bpp.lz");
 const u32 gTrainerPalette_ParasolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.gbapal.lz");

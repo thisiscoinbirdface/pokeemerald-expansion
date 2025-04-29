@@ -707,18 +707,17 @@ Route4_TrainerBattle_Sona_Text_2:
 
 Route4_TrainerBattle_Jenny_Text_0:
 # 105 "data//maps/Route4/scripts.pory"
-	.string "My PANCHAM and I train here every\n"
-	.string "morning. We want to become the\l"
-	.string "strongest!$"
+	.string "Oof! It's getting hotter and hotter.\n"
+	.string "Where's the air conditioning?$"
 
 Route4_TrainerBattle_Jenny_Text_1:
 # 105 "data//maps/Route4/scripts.pory"
-	.string "We need to train harder!$"
+	.string "You're too hot!$"
 
 Route4_TrainerBattle_Jenny_Text_2:
 # 106 "data//maps/Route4/scripts.pory"
-	.string "Pancham and I will become Pokémon\n"
-	.string "Champions one day!$"
+	.string "Tinkatink and I can't stand the heat of\n"
+	.string "the volcano!$"
 
 Route4_TrainerBattle_Kid1_Text_0:
 # 113 "data//maps/Route4/scripts.pory"

@@ -676,9 +676,10 @@ VilethornWoods_Trainer_D_Text_2:
 
 VilethornWoods_Trainer_E_Text_0:
 # 226 "data//maps/VilethornWoods/scripts.pory"
-	.string "Eek! These woods creep me out! I'm so\n"
-	.string "scared of the DROWZEE - what if I get\l"
-	.string "hypnotised?$"
+	.string "Eek! These woods creep me out! I was\n"
+	.string "supposed to go to Gloria's theater\l"
+	.string "studio in Silversun City...but I got\l"
+	.string "lost!$"
 
 VilethornWoods_Trainer_E_Text_1:
 # 226 "data//maps/VilethornWoods/scripts.pory"
@@ -687,7 +688,7 @@ VilethornWoods_Trainer_E_Text_1:
 VilethornWoods_Trainer_E_Text_2:
 # 227 "data//maps/VilethornWoods/scripts.pory"
 	.string "I've been stuck here for hours. I need\n"
-	.string "to get out of here...$"
+	.string "to get out!$"
 
 VilethornWoods_Trainer_F1_Text_0:
 # 235 "data//maps/VilethornWoods/scripts.pory"

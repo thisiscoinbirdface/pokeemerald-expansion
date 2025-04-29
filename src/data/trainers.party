@@ -173,18 +173,18 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_RONNIE ===
 Name: Ronnie
-Class: Youngster
-Pic: Youngster
+Class: Backpacker
+Pic: Backpacker
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Rattata-Alola
+Cubone
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Cubone
+Sentret
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -233,8 +233,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GASTREEGYM_SKIP ===
 Name: Skip
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Builder
+Pic: Builder
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -425,14 +425,14 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_JENNY ===
 Name: Jenny
-Class: Battle Girl
-Pic: Battle Girl
+Class: Cool Girl
+Pic: Cool Girl
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Pancham
+Tinkatink
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -588,14 +588,18 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_B ===
 Name: Edsun
-Class: Collector
-Pic: Collector
+Class: Firefighter
+Pic: Firefighter
 Gender: Male
-Music: Suspicious
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Cyndaquil
+Finneon
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Totodile
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -637,7 +641,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_MTCERAM_GRUNT1 ===
-Name: GALE
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -650,7 +654,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_GRUNT2 ===
-Name: DENNY
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -667,7 +671,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MTCERAM_GRUNT_DOUBLE ===
-Name: JAY & ROSE
+Name: Grunts
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Female
@@ -692,7 +696,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CERAMPEAK_MOXIE ===
-Name: MOXIE
+Name: Moxie
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
@@ -736,7 +740,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GALECREST_DETECTIVE_A ===
-Name: CANDY
+Name: Candy
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -771,7 +775,7 @@ Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_GALECRESTGYM_A ===
-Name: RONNY
+Name: Ronnie
 Class: Cadet
 Pic: Cadet M
 Gender: Male
@@ -792,7 +796,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 === TRAINER_GALECRESTGYM_B ===
-Name: ROSE
+Name: Rose
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -813,7 +817,7 @@ Level: 18
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_GALECRESTGYM_C ===
-Name: BONNIE
+Name: Bonnie
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -880,22 +884,22 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VILETHORN_B ===
 Name: Dusty
-Class: Bug Catcher
-Pic: Bug Catcher
+Class: Psychic
+Pic: Psychic M
 Gender: Male
-Music: Hiker
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Dottler
+Morelull
 Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Beedrill
+Chingling
 Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Whirlipede
+Bruxish
 Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
@@ -909,12 +913,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Morelull
-Level: 20
+Poltchageist
+Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-Gothorita
-Level: 22
+Shuppet
+Level: 21
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_VILETHORN_D ===
@@ -935,7 +939,7 @@ Level: 22
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_VILETHORN_E ===
-Name: MELISSA
+Name: Melissa
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -943,15 +947,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Skitty
-Level: 20
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-
 Buneary
 Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Brionne
+Roselia
 Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -965,7 +965,7 @@ Music: Interviewer
 Double Battle: Yes
 AI: Check Bad Move
 
-Braixen
+Magnemite 
 Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 

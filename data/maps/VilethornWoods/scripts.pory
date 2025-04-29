@@ -223,8 +223,8 @@ script VilethornWoods_Trainer_D{
 }
 
 script VilethornWoods_Trainer_E{
-    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out! I'm so scared of the DROWZEE - what if I get hypnotised?"), "You creep me out too!")
-    msgbox(format("I've been stuck here for hours. I need to get out of here..."))
+    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out! I was supposed to go to Gloria's theater studio in Silversun City...but I got lost!"), "You creep me out too!")
+    msgbox(format("I've been stuck here for hours. I need to get out!"))
     releaseall
     end
 }

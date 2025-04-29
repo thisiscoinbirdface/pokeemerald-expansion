@@ -176,8 +176,8 @@ Route3_TrainerBattle_Kim_Text_2:
 Route3_TrainerBattle_Ronnie_Text_0:
 # 18 "data//maps/Route3/scripts.pory"
 	.string "I'm on my way to Gastree City to\n"
-	.string "challenge the Pokémon Gym there. Let me\l"
-	.string "practice with you!$"
+	.string "challenge the Pokémon Gym, but I'm not\l"
+	.string "sure I can win. Can I practice with you?$"
 
 Route3_TrainerBattle_Ronnie_Text_1:
 # 18 "data//maps/Route3/scripts.pory"

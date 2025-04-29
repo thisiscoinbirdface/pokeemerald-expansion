@@ -15,7 +15,7 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokémon Gym there. Let me practice with you!"), "Looks like I need more practice!")
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokémon Gym, but I'm not sure I can win. Can I practice with you?"), "Looks like I need more practice!")
     msgbox(format("I heard that the Gastree City Gym Leader uses ROCK type Pokémon."))
     release
     end
