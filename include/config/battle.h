@@ -313,6 +313,6 @@
 #define B_POOL_RULE_ITEM_CLAUSE             FALSE    // Only allow each item to be picked once
 #define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE    // Exclude items listed in poolItemClauseExclusions
 
-#define B_BATTLE_SPEED TRUE // Usage with a variable
+#define B_BATTLE_SPEED VAR_BATTLE_SPEED // Usage with a variable
 
 #endif // GUARD_CONFIG_BATTLE_H

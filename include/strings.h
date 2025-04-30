@@ -269,6 +269,13 @@ extern const u8 gText_FollowerOn[];
 extern const u8 gText_DifficultyEasy[];
 extern const u8 gText_DifficultyNormal[];
 extern const u8 gText_DifficultyHard[];
+
+extern const u8 gText_BattleSpeed[];
+extern const u8 gText_BattleSpeed1X[];
+extern const u8 gText_BattleSpeed2X[];
+extern const u8 gText_BattleSpeed3X[];
+extern const u8 gText_BattleSpeed4X[];
+
 extern const u8 gText_Option[];
 extern const u8 gText_OptionMenu[];
 extern const u8 gText_SmallDot[];

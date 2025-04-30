@@ -26,7 +26,7 @@
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
 #define tFollower data[7]
-#define tDifficulty data[8]
+#define tBattleSpeed data[8]
 
 enum
 {
@@ -43,7 +43,7 @@ enum
 enum 
 {
     MENUITEM_FOLLOWER,
-    MENUITEM_DIFFICULTY,
+    MENUITEM_BATTLESPEED,
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
@@ -62,7 +62,7 @@ enum
 #define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
 
 #define YPOS_FOLLOWER        (MENUITEM_FOLLOWER * 16)
-#define YPOS_DIFFICULTY      (MENUITEM_DIFFICULTY * 16)
+#define YPOS_BATTLESPEED      (MENUITEM_BATTLESPEED * 16)
 
 #define PAGE_COUNT  2
 
@@ -81,8 +81,8 @@ static u8 BattleStyle_ProcessInput(u8 selection);
 static void BattleStyle_DrawChoices(u8 selection);
 static u8   Follower_ProcessInput(u8 selection);
 static void Follower_DrawChoices(u8 selection);
-static u8   Difficulty_ProcessInput(u8 selection);
-static void Difficulty_DrawChoices(u8 selection);
+static u8   BattleSpeed_ProcessInput(u8 selection);
+static void BattleSpeed_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
@@ -114,7 +114,7 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
 {
     [MENUITEM_FOLLOWER]        = gText_Follower,
-    [MENUITEM_DIFFICULTY]      = gText_Difficulty,
+    [MENUITEM_BATTLESPEED]      = gText_BattleSpeed,
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
@@ -188,7 +188,7 @@ static void VBlankCB(void)
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
 #define tFollower data[7]
-#define tDifficulty data[8]
+#define tBattleSpeed data[8]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -200,7 +200,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
     gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
     gTasks[taskId].tFollower = FlagGet(FLAG_UNUSED_0x4FF);
-    gTasks[taskId].tDifficulty = VarGet(VAR_BATTLE_SPEED);
+    gTasks[taskId].tBattleSpeed = VarGet(VAR_BATTLE_SPEED);
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -220,7 +220,7 @@ static void DrawOptionsPg2(u8 taskId)
 {
     ReadAllCurrentSettings(taskId);
     Follower_DrawChoices(gTasks[taskId].tFollower);
-    Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
+    BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -515,12 +515,12 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
             if (previousOption != gTasks[taskId].tFollower)
                 Follower_DrawChoices(gTasks[taskId].tFollower);
             break;
-        case MENUITEM_DIFFICULTY:
-            previousOption = gTasks[taskId].tDifficulty;
-            gTasks[taskId].tDifficulty = Difficulty_ProcessInput(gTasks[taskId].tDifficulty);
+        case MENUITEM_BATTLESPEED:
+            previousOption = gTasks[taskId].tBattleSpeed;
+            gTasks[taskId].tBattleSpeed = BattleSpeed_ProcessInput(gTasks[taskId].tBattleSpeed);
 
-            if (previousOption != gTasks[taskId].tDifficulty)
-                Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
+            if (previousOption != gTasks[taskId].tBattleSpeed)
+                BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
             break;
         default:
             return;
@@ -543,7 +543,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
     gTasks[taskId].tFollower == 0 ? FlagClear(FLAG_UNUSED_0x4FF) : FlagSet(FLAG_UNUSED_0x4FF);
-    VarSet(VAR_BATTLE_SPEED, gTasks[taskId].tDifficulty);
+    VarSet(VAR_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
 
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -825,12 +825,12 @@ static void Follower_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_FollowerOn, GetStringRightAlignXOffset(FONT_NORMAL, gText_FollowerOn, 198), YPOS_FOLLOWER, styles[1]);
 }
 
-static u8 Difficulty_ProcessInput(u8 selection)
+static u8 BattleSpeed_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
-        if (selection <= 1)
-            selection;
+        if (selection <= 2)
+            selection++;
         else
             selection = 0;
 
@@ -841,16 +841,15 @@ static u8 Difficulty_ProcessInput(u8 selection)
         if (selection != 0)
             selection--;
         else
-            selection = 2;
+            selection = 3;
 
         sArrowPressed = TRUE;
     }
     return selection;
 }
 
-static void Difficulty_DrawChoices(u8 selection)
+static void BattleSpeed_DrawChoices(u8 selection)
 {
-    u8 styles[3];
     /* FALSE = Have the middle text be exactly in between where the first text ends and second text begins.
        TRUE = Have the mid text be in the middle of the frame, ignoring the first and last text size. 
     Setting it to FALSE is how vanilla code does it for the TEST SPEED, but the layout looks off-center if there's
@@ -859,27 +858,22 @@ static void Difficulty_DrawChoices(u8 selection)
     bool8 centerMid = TRUE;
     s32 widthEasy, widthNormal, widthHard, xMid;
 
-    styles[0] = 0;
-    styles[1] = 0;
-    styles[2] = 0;
+//    ALT
+    u8 styles[4];
+
+    styles[0] = 0; //1x
+    styles[1] = 0; //2x
+    styles[2] = 0; //3x
+    styles[3] = 0; //4x
+
     styles[selection] = 1;
 
-    DrawOptionMenuChoice(gText_DifficultyEasy, 104, YPOS_DIFFICULTY, styles[0]);
+    DrawOptionMenuChoice(gText_BattleSpeed1X, 104, YPOS_BATTLESPEED, styles[0]);
+    DrawOptionMenuChoice(gText_BattleSpeed2X, 128, YPOS_BATTLESPEED, styles[1]);
+    DrawOptionMenuChoice(gText_BattleSpeed3X, 152, YPOS_BATTLESPEED, styles[2]);
+    DrawOptionMenuChoice(gText_BattleSpeed4X, 176, YPOS_BATTLESPEED, styles[3]);
 
-    widthNormal = GetStringWidth(FONT_NORMAL, gText_DifficultyNormal, 0);
-    if (centerMid){
-        xMid = (94 - widthNormal) / 2 + 104;
-    }
-    else{
-        widthEasy = GetStringWidth(FONT_NORMAL, gText_DifficultyEasy, 0);
-        widthHard = GetStringWidth(FONT_NORMAL, gText_DifficultyHard, 0);
-        widthNormal -= 94;
-        xMid = (widthEasy - widthNormal - widthHard) / 2 + 104;
-    }
 
-    DrawOptionMenuChoice(gText_DifficultyNormal, xMid, YPOS_DIFFICULTY, styles[1]);
-
-    DrawOptionMenuChoice(gText_DifficultyHard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultyHard, 198), YPOS_DIFFICULTY, styles[2]);
 }
 
 
