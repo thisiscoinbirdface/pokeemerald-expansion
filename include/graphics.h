@@ -274,6 +274,8 @@ extern const u32 gBattleTerrainPalette_Town[];
 
 extern const u32 gBattleTerrainTiles_Building[];
 extern const u32 gBattleTerrainTilemap_Building[];
+extern const u32 gBattleTerrainTiles_Plain[];
+extern const u32 gBattleTerrainTilemap_Plain[];
 extern const u32 gBattleTerrainAnimTiles_Building[];
 extern const u32 gBattleTerrainAnimTilemap_Building[];
 extern const u32 gBattleTerrainPalette_Building[];
