@@ -29,6 +29,7 @@ mart GardenShop_Inventory {
     ITEM_PSYCHIC_SEED
     ITEM_MISTY_SEED
     ITEM_GRASSY_SEED
+    ITEM_TIME_SEED
 }
 
 
@@ -43,26 +44,26 @@ mart GardenShop_Inventory {
 
 
 script FlowerShop_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What - you thought I fought with only fists?\pA good trainer uses whatever they can, and I'm gonna power up my punches with this Power Herb!"), MSGBOX_NPC)
     end
 }
 script FlowerShop_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I'm not here to buy anything - my Roselia just enjoys the ambience."), MSGBOX_NPC)
     end
 }
 script FlowerShop_NPC3{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What's a Time Seed?"), MSGBOX_NPC)
     end
 }
 
 script FlowerShop_Roselia{
     playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Roselia is smelling the flowerpots...or is she smelling herself?"), MSGBOX_NPC)
     end
 }
 script FlowerShop_Lilligant{
     playmoncry(SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Lilligant seems bored...perhaps it wants to battle?"), MSGBOX_NPC)
     end
 }
 

@@ -646,25 +646,25 @@ IvyRiver_Ranger_NPC_A::
 
 IvyRiver_Ranger_NPC_B::
 # 365 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	msgbox IvyRiver_Ranger_NPC_B_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_C::
 # 369 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	msgbox IvyRiver_Ranger_NPC_C_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_D::
 # 373 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	msgbox IvyRiver_Ranger_NPC_D_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_E::
 # 377 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
+	msgbox IvyRiver_Ranger_NPC_E_Text_0, MSGBOX_NPC
 	end
 
 
@@ -1033,4 +1033,29 @@ IvyRiver_Ranger_Scientist_C_Text_4:
 
 IvyRiver_Ranger_NPC_A_Text_0:
 # 361 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	.string "$"
+	.string "Hello! Are you a Candidate too? I just\n"
+	.string "reached here for my first mission.\l"
+	.string "They're making me catch wild Dreepy!$"
+
+IvyRiver_Ranger_NPC_B_Text_0:
+# 365 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "I've come to train my Kangaskhan with\n"
+	.string "the CrazyTrain 2.0!$"
+
+IvyRiver_Ranger_NPC_C_Text_0:
+# 369 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "The CrazyTrain 2.0 is incredible! And\n"
+	.string "you can even retrain your Pokemon any\l"
+	.string "time you like!$"
+
+IvyRiver_Ranger_NPC_D_Text_0:
+# 373 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "You need to be an Associate to use the\n"
+	.string "CrazyTrain 2.0. Come back after\l"
+	.string "completing some more missions!$"
+
+IvyRiver_Ranger_NPC_E_Text_0:
+# 377 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "It's too stuffy upstairs! Too many\n"
+	.string "stuffy scientists who don't know what\l"
+	.string "its like to be out in the field.$"

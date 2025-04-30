@@ -358,23 +358,23 @@ script IvyRiver_Ranger_Scientist_C{
 
 
 script IvyRiver_Ranger_NPC_A{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Hello! Are you a Candidate too? I just reached here for my first mission. They're making me catch wild Dreepy!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_B{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I've come to train my Kangaskhan with the CrazyTrain 2.0!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_C{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("The CrazyTrain 2.0 is incredible! And you can even retrain your Pokemon any time you like!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_D{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("You need to be an Associate to use the CrazyTrain 2.0. Come back after completing some more missions!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_E{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("It's too stuffy upstairs! Too many stuffy scientists who don't know what its like to be out in the field."), MSGBOX_NPC)
     end
 }
 

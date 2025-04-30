@@ -25,9 +25,11 @@ script Route2_Caves_EventScript_ClefairyBattle{
     dowildbattle
     release
 
-    removeobject(LOCALID_CLEFAIRY)
     msgbox(format("The Clefairy dropped the Strange Rock. Stealing is bad, Clefairy!\p...\pIt looks dismayed and runs away..."))    
     release
+    applymovement(LOCALID_CLEFAIRY, moves(walk_fast_up * 6))
+    waitmovement(0)
+    removeobject(LOCALID_CLEFAIRY)
     giveitem(ITEM_STRANGE_ROCK) 
     release
 
