@@ -170,9 +170,9 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0:
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_1:
 # 12 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.string "Ah, are you from the Tenebris Lab? Your\n"
-	.string "supplies have been sitting here for a\l"
-	.string "while now. Come here.$"
+	.string "Ah, are you from the Tenebris Lab?\p"
+	.string "Your supplies have been sitting here\n"
+	.string "for a while now. Come here.$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_2:
 # 19 "data//maps/FennilahlTown_Pokemart/scripts.pory"

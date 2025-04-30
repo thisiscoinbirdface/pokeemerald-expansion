@@ -40,10 +40,9 @@ Route1_TrainerBattle_C::
 
 Route1_EventScripts_RandomDude_Text_0:
 # 4 "data//maps/Route1/scripts.pory"
-	.string "A Pokémon that uses a move of the same\n"
-	.string "type as itself gets a boost. So if\l"
-	.string "Rookidee uses Peck, it'll deal more\l"
-	.string "damage!$"
+	.string "A Pokémon using a move of the same type\n"
+	.string "as itself gets a boost. If Rookidee\l"
+	.string "uses Peck, it'll deal more damage!$"
 
 Route1_TrainerBattle_A_Text_0:
 # 10 "data//maps/Route1/scripts.pory"

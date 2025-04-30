@@ -566,7 +566,13 @@ FennilahlTown_Budew_JoinParty_Movement_0:
 # 286 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_JoinParty_Movement_1:
 # 286 "data//maps/FennilahlTown/scripts.pory"
+	walk_fast_up
+# 286 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_right
+# 286 "data//maps/FennilahlTown/scripts.pory"
+	walk_fast_right
+# 286 "data//maps/FennilahlTown/scripts.pory"
+	walk_fast_down
 # 286 "data//maps/FennilahlTown/scripts.pory"
 	walk_fast_down
 # 286 "data//maps/FennilahlTown/scripts.pory"
@@ -740,9 +746,9 @@ FennilahlTown_Budew_JoinParty_Text_0:
 
 FennilahlTown_Budew_JoinParty_Text_1:
 # 279 "data//maps/FennilahlTown/scripts.pory"
-	.string "Budew nudges the Pokeballs on your\n"
-	.string "belt. It seems to want to join your\l"
-	.string "party! Will you become Budew's trainer?$"
+	.string "Budew nudges you gently...\n"
+	.string "It seems to want to join your party!\p"
+	.string "Will you become Budew's trainer?$"
 
 FennilahlTown_Budew_JoinParty_Text_2:
 # 284 "data//maps/FennilahlTown/scripts.pory"

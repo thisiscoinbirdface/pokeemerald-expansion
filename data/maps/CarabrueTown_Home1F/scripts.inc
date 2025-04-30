@@ -218,11 +218,11 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_0:
 CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 # 24 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And in the big news of the day, we have\n"
-	.string "a mysterious event to report. The\l"
-	.string "famous Professor Tenebris of Carabrue\l"
-	.string "Town was reported missing. Where could\l"
-	.string "such a renowned Pokémon Professor\l"
-	.string "have vanished to? And why?$"
+	.string "a mysterious event to report.\p"
+	.string "The famous Professor Tenebris of\n"
+	.string "Carabrue Town was reported missing.\p"
+	.string "Where could such a renowned Pokémon\n"
+	.string "Professor have vanished to? And why?$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_2:
 # 40 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -265,7 +265,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_7:
 CarabrueTown_Home1F_EventScript_StartGame_Text_8:
 # 72 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "You can check active quests in the\n"
-	.string "Quest Log via the START Menu!$"
+	.string "Quest Log via the Start Menu!$"
 
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0:
 # 99 "data//maps/CarabrueTown_Home1F/scripts.pory"

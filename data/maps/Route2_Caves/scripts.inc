@@ -42,22 +42,26 @@ Route2_Caves_EventScript_ClefairyBattle::
 # 26 "data//maps/Route2_Caves/scripts.pory"
 	release
 # 28 "data//maps/Route2_Caves/scripts.pory"
-	removeobject LOCALID_CLEFAIRY
-# 29 "data//maps/Route2_Caves/scripts.pory"
 	msgbox Route2_Caves_EventScript_ClefairyBattle_Text_1
+# 29 "data//maps/Route2_Caves/scripts.pory"
+	release
 # 30 "data//maps/Route2_Caves/scripts.pory"
-	release
+	applymovement LOCALID_CLEFAIRY, Route2_Caves_EventScript_ClefairyBattle_Movement_0
 # 31 "data//maps/Route2_Caves/scripts.pory"
-	giveitem ITEM_STRANGE_ROCK
+	waitmovement 0
 # 32 "data//maps/Route2_Caves/scripts.pory"
-	release
+	removeobject LOCALID_CLEFAIRY
+# 33 "data//maps/Route2_Caves/scripts.pory"
+	giveitem ITEM_STRANGE_ROCK
 # 34 "data//maps/Route2_Caves/scripts.pory"
-	setflag FLAG_FENNILAHL_HIKER_GEAR_GET
-# 35 "data//maps/Route2_Caves/scripts.pory"
-	setvar VAR_FENNILAHL_CLEFAIRY_QUEST, 3
+	release
 # 36 "data//maps/Route2_Caves/scripts.pory"
-	clearflag FLAG_BATTLE_NO_RUNNING_CATCHING
+	setflag FLAG_FENNILAHL_HIKER_GEAR_GET
+# 37 "data//maps/Route2_Caves/scripts.pory"
+	setvar VAR_FENNILAHL_CLEFAIRY_QUEST, 3
 # 38 "data//maps/Route2_Caves/scripts.pory"
+	clearflag FLAG_BATTLE_NO_RUNNING_CATCHING
+# 40 "data//maps/Route2_Caves/scripts.pory"
 	releaseall
 	return
 
@@ -72,13 +76,29 @@ Route2_Caves_EventScript_ClefairyTrigger_Movement_0:
 	face_down
 	step_end
 
+# 30 "data//maps/Route2_Caves/scripts.pory"
+Route2_Caves_EventScript_ClefairyBattle_Movement_0:
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+# 30 "data//maps/Route2_Caves/scripts.pory"
+	walk_fast_up
+	step_end
+
 Route2_Caves_EventScript_ClefairyBattle_Text_0:
 # 21 "data//maps/Route2_Caves/scripts.pory"
 	.string "A wild Pokémon attacks you! It's\n"
 	.string "holding the Strange Rock!$"
 
 Route2_Caves_EventScript_ClefairyBattle_Text_1:
-# 29 "data//maps/Route2_Caves/scripts.pory"
+# 28 "data//maps/Route2_Caves/scripts.pory"
 	.string "The Clefairy dropped the Strange Rock.\n"
 	.string "Stealing is bad, Clefairy!\p"
 	.string "...\p"
