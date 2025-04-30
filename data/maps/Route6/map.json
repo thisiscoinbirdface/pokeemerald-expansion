@@ -462,6 +462,13 @@
       "elevation": 0,
       "dest_map": "MAP_RANGER_INSTITUTE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 47,
+      "y": 49,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE6_ZERAORA_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

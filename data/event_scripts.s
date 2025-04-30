@@ -1375,3 +1375,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IvyRiver_Sharpedo/scripts.inc"
 
 	.include "data/maps/Route3_Underpass_Extended/scripts.inc"
+
+	.include "data/maps/Route6_ZeraoraCave/scripts.inc"

@@ -5500,6 +5500,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/Route3_Underpass_Extended/border.bin",
       "blockdata_filepath": "data/layouts/Route3_Underpass_Extended/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6_ZERAORA_CAVE",
+      "name": "Route6_ZeraoraCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/Route6_ZeraoraCave/border.bin",
+      "blockdata_filepath": "data/layouts/Route6_ZeraoraCave/map.bin"
     }
   ]
 }

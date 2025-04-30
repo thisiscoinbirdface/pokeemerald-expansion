@@ -232,7 +232,7 @@
 #define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // give letter to brother B
 #define FLAG_HIDE_IVYRIVER_FISHERMEN 0x4A8 // meet the fishermen at ivy river
 #define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // full zarude cutscene
-#define FLAG_IVYRIVER_ZARUDE_REAL 0x1DF // mythical zarude flag
+#define FLAG_UNUSED_0x1DF 0x1DF // unused flag
 #define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // the one-time lapras encounter done or not
 #define FLAG_RANGER_TAUROS_USE 0x1E1 // can use the ranger tauros
 #define FLAG_RANGER_ACCEPTED 0x1E2 // cleared the interview 
@@ -291,8 +291,8 @@
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
 #define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
 #define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
+#define FLAG_ZERAORA                                                0x4D6 // Unused Flag
+#define FLAG_IVYRIVER_ZARUDE_REAL                                   0x4D7 // Unused Flag
 
 
 // Scripts
