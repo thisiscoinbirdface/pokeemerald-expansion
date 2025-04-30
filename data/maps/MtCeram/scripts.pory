@@ -202,11 +202,15 @@ script MtCeram_EventScript_Eavesdrop{
     //remove objects
     removeobject(LOCALID_FOOTGRUNT1)
     removeobject(LOCALID_FOOTGRUNT2)
+    delay(8)
+
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2 walk_left * 2))
     waitmovement(0)
     special(RemoveCameraObject)
+
+    delay(8)
 
     //Kohla talk
     applymovement(LOCALID_FOOTKOHLA, moves(emote_exclamation_mark face_left))
