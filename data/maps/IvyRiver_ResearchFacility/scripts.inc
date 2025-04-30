@@ -129,7 +129,7 @@ IvyRiver_Ranger_FirstQuest_Reward::
 # 97 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	waitmessage
 # 98 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, IvyRiver_Ranger_FirstQuest_Reward_Text_1, IvyRiver_Ranger_FirstQuest_Reward_Text_2, IvyRiver_Ranger_FirstQuest_Reward_Text_3, IvyRiver_Ranger_FirstQuest_Reward_Text_4, IvyRiver_Ranger_FirstQuest_Reward_Text_5, IvyRiver_Ranger_FirstQuest_Reward_Text_6, IvyRiver_Ranger_FirstQuest_Reward_Text_7, IvyRiver_Ranger_FirstQuest_Reward_Text_8, IvyRiver_Ranger_FirstQuest_Reward_Text_9, IvyRiver_Ranger_FirstQuest_Reward_Text_10, IvyRiver_Ranger_FirstQuest_Reward_Text_11, IvyRiver_Ranger_FirstQuest_Reward_Text_12, IvyRiver_Ranger_FirstQuest_Reward_Text_13, IvyRiver_Ranger_FirstQuest_Reward_Text_14, IvyRiver_Ranger_FirstQuest_Reward_Text_15, IvyRiver_Ranger_FirstQuest_Reward_Text_16, IvyRiver_Ranger_FirstQuest_Reward_Text_17, IvyRiver_Ranger_FirstQuest_Reward_Text_18, IvyRiver_Ranger_FirstQuest_Reward_Text_19
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, IvyRiver_Ranger_FirstQuest_Reward_Text_1, IvyRiver_Ranger_FirstQuest_Reward_Text_2, IvyRiver_Ranger_FirstQuest_Reward_Text_3, IvyRiver_Ranger_FirstQuest_Reward_Text_4, IvyRiver_Ranger_FirstQuest_Reward_Text_5, IvyRiver_Ranger_FirstQuest_Reward_Text_6, IvyRiver_Ranger_FirstQuest_Reward_Text_7, IvyRiver_Ranger_FirstQuest_Reward_Text_8, IvyRiver_Ranger_FirstQuest_Reward_Text_9, IvyRiver_Ranger_FirstQuest_Reward_Text_10, IvyRiver_Ranger_FirstQuest_Reward_Text_11, IvyRiver_Ranger_FirstQuest_Reward_Text_12, IvyRiver_Ranger_FirstQuest_Reward_Text_13, IvyRiver_Ranger_FirstQuest_Reward_Text_14, IvyRiver_Ranger_FirstQuest_Reward_Text_15, IvyRiver_Ranger_FirstQuest_Reward_Text_16, IvyRiver_Ranger_FirstQuest_Reward_Text_17, IvyRiver_Ranger_FirstQuest_Reward_Text_18, IvyRiver_Ranger_FirstQuest_Reward_Text_19, IvyRiver_Ranger_FirstQuest_Reward_Text_20
 # 105 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq IvyRiver_Ranger_FirstQuest_Reward_2
@@ -204,7 +204,11 @@ IvyRiver_Ranger_FirstQuest_Reward_49:
 IvyRiver_Ranger_FirstQuest_Reward_52:
 # 123 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 18
-	goto_if_eq IvyRiver_Ranger_FirstQuest_Reward_55
+	goto_if_eq IvyRiver_Ranger_FirstQuest_Reward_56
+IvyRiver_Ranger_FirstQuest_Reward_55:
+# 124 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	compare VAR_RESULT, 19
+	goto_if_eq IvyRiver_Ranger_FirstQuest_Reward_58
 	return
 
 IvyRiver_Ranger_FirstQuest_Reward_2:
@@ -333,60 +337,67 @@ IvyRiver_Ranger_FirstQuest_Reward_53:
 	goto IvyRiver_Ranger_FirstQuest_Reward_Give
 	goto IvyRiver_Ranger_FirstQuest_Reward_52
 
-IvyRiver_Ranger_FirstQuest_Reward_55:
+IvyRiver_Ranger_FirstQuest_Reward_56:
 # 123 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	setvar VAR_0x8006, ITEM_ABSOLITE
 # 123 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	goto IvyRiver_Ranger_FirstQuest_Reward_Give
+	goto IvyRiver_Ranger_FirstQuest_Reward_55
+
+IvyRiver_Ranger_FirstQuest_Reward_58:
+# 124 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	setvar VAR_0x8006, ITEM_LUCARIONITE
+# 124 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto IvyRiver_Ranger_FirstQuest_Reward_Give
 	return
 
 
 IvyRiver_Ranger_FirstQuest_Reward_Give::
-# 127 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	showitemdescription
 # 128 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_FirstQuest_Reward_Give_Text_0, MSGBOX_YESNO
+	showitemdescription
 # 129 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_FirstQuest_Reward_Give_Text_0, MSGBOX_YESNO
+# 130 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq IvyRiver_Ranger_FirstQuest_Reward_Give_1
-# 134 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	hideitemdescription
 # 135 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	hideitemdescription
+# 136 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto IvyRiver_Ranger_FirstQuest_Reward
 	return
 
 IvyRiver_Ranger_FirstQuest_Reward_Give_1:
-# 130 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	hideitemdescription
 # 131 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	giveitem VAR_0x8006
+	hideitemdescription
 # 132 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	giveitem VAR_0x8006
+# 133 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto IvyRiver_Ranger_FirstQuest_RewardEnd
 	return
 
 
 IvyRiver_Ranger_FirstQuest_RewardEnd::
-# 142 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_FirstQuest_RewardEnd_Text_0
 # 143 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_FirstQuest_RewardEnd_Text_0
+# 144 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	release
-# 146 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	setvar VAR_RANGER_INSTITUTE, 4
 # 147 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	setvar VAR_RANGER_INSTITUTE, 4
+# 148 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1
-# 149 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 150 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	releaseall
 	end
 
 
 IvyRiver_Ranger_TaurosTrigger::
-# 169 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 170 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto_if_set FLAG_RANGER_TAUROS_USE, IvyRiver_Ranger_TaurosTrigger_2
-# 171 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 172 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 4
 	goto_if_ge IvyRiver_Ranger_TaurosTrigger_5
 IvyRiver_Ranger_TaurosTrigger_4:
-# 191 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 192 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	releaseall
 	end
 
@@ -394,276 +405,276 @@ IvyRiver_Ranger_TaurosTrigger_2:
 	end
 
 IvyRiver_Ranger_TaurosTrigger_5:
-# 173 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	lockall
 # 174 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement LOCALID_TAUROS_RANGER, IvyRiver_Ranger_TaurosTrigger_Movement_0
+	lockall
 # 175 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	applymovement LOCALID_TAUROS_RANGER, IvyRiver_Ranger_TaurosTrigger_Movement_0
+# 176 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	waitmovement 0
-# 177 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_TaurosTrigger_Text_0
 # 178 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_TaurosTrigger_Text_0
 # 179 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Ranger_TaurosTrigger_Movement_1
-# 180 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitmovement 0
-# 181 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	delay 12
-# 183 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement LOCALID_TAUROS_RANGER, IvyRiver_Ranger_TaurosTrigger_Movement_2
-# 184 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitmovement 0
-# 185 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_TaurosTrigger_Text_1
-# 186 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	release
-# 188 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 180 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, IvyRiver_Ranger_TaurosTrigger_Movement_1
+# 181 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	waitmovement 0
+# 182 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	delay 12
+# 184 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	applymovement LOCALID_TAUROS_RANGER, IvyRiver_Ranger_TaurosTrigger_Movement_2
+# 185 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	waitmovement 0
+# 186 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_TaurosTrigger_Text_1
+# 187 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	release
+# 189 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	setflag FLAG_RANGER_TAUROS_USE
 	goto IvyRiver_Ranger_TaurosTrigger_4
 
 
 IvyRiver_Ranger_TaurosBreeder::
-# 196 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 197 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto_if_set FLAG_RANGER_TAUROS_USE, IvyRiver_Ranger_TaurosBreeder_2
-# 199 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 200 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_TaurosBreeder_Text_1, MSGBOX_NPC
 IvyRiver_Ranger_TaurosBreeder_1:
 	end
 
 IvyRiver_Ranger_TaurosBreeder_2:
-# 197 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 198 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_TaurosBreeder_Text_0, MSGBOX_NPC
 	goto IvyRiver_Ranger_TaurosBreeder_1
 
 
 IvyRiver_Ranger_Scientist_A::
-# 222 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 223 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto_if_set FLAG_IVY_RIVER_RANGER_SCIENTIST_A, IvyRiver_Ranger_Scientist_A_2
-# 228 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 229 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_1, MSGBOX_NPC
-# 230 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	showmonpic SPECIES_SHIINOTIC, 10, 3
 # 231 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_A_Text_2, MSGBOX_YESNO
+	showmonpic SPECIES_SHIINOTIC, 10, 3
 # 232 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_A_Text_2, MSGBOX_YESNO
 # 233 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	release
+# 234 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	hidemonpic
-# 235 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 236 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq IvyRiver_Ranger_Scientist_A_5
-# 240 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	special ChoosePartyMon
 # 241 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitstate
+	special ChoosePartyMon
 # 242 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
+	waitstate
 # 243 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
+	copyvar VAR_0x800A, VAR_0x8004
 # 244 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 245 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	specialvar VAR_RESULT, GetTradeSpecies
-# 246 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 247 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, SPECIES_SHIINOTIC
 	goto_if_eq IvyRiver_Ranger_Scientist_A_7
-# 259 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 260 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_6, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_A_2:
-# 223 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 224 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_0, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_A_5:
-# 236 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 237 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_3, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_A_7:
-# 247 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement LOCALID_Q1, IvyRiver_Ranger_FirstQuest_Movement_1
 # 248 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_Q1, IvyRiver_Ranger_FirstQuest_Movement_1
 # 249 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	delay 16
+	waitmovement 0
 # 250 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_A_Text_4
+	delay 16
 # 251 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_A_Text_4
 # 252 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	playse SE_BANG
-# 253 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
-# 254 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	release
+# 253 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	playse SE_BANG
+# 254 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
 # 255 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	addvar VAR_RANGER_INSTITUTE, 1
+	release
 # 256 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	addvar VAR_RANGER_INSTITUTE, 1
+# 257 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	setflag FLAG_IVY_RIVER_RANGER_SCIENTIST_A
 	end
 
 
 IvyRiver_Ranger_Scientist_B::
-# 266 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 267 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto_if_set FLAG_IVY_RIVER_RANGER_SCIENTIST_B, IvyRiver_Ranger_Scientist_B_2
-# 272 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 273 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_B_Text_1, MSGBOX_NPC
-# 274 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	showmonpic SPECIES_TOEDSCOOL, 10, 3
 # 275 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_B_Text_2, MSGBOX_YESNO
+	showmonpic SPECIES_TOEDSCOOL, 10, 3
 # 276 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_B_Text_2, MSGBOX_YESNO
 # 277 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	release
+# 278 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	hidemonpic
-# 279 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 280 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq IvyRiver_Ranger_Scientist_B_5
-# 284 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	special ChoosePartyMon
 # 285 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitstate
+	special ChoosePartyMon
 # 286 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
+	waitstate
 # 287 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
+	copyvar VAR_0x800A, VAR_0x8004
 # 288 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 289 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	specialvar VAR_RESULT, GetTradeSpecies
-# 290 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 291 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, SPECIES_TOEDSCOOL
 	goto_if_eq IvyRiver_Ranger_Scientist_B_7
-# 303 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 304 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_B_Text_4, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_B_2:
-# 267 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 268 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_B_Text_0, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_B_5:
-# 280 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 281 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_3, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_B_7:
-# 291 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement LOCALID_Q2, IvyRiver_Ranger_FirstQuest_Movement_1
 # 292 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_Q2, IvyRiver_Ranger_FirstQuest_Movement_1
 # 293 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	delay 16
+	waitmovement 0
 # 294 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_B_Text_3
+	delay 16
 # 295 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_B_Text_3
 # 296 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	playse SE_BANG
-# 297 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
-# 298 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	release
+# 297 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	playse SE_BANG
+# 298 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
 # 299 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	addvar VAR_RANGER_INSTITUTE, 1
+	release
 # 300 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	addvar VAR_RANGER_INSTITUTE, 1
+# 301 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	setflag FLAG_IVY_RIVER_RANGER_SCIENTIST_B
 	end
 
 
 IvyRiver_Ranger_Scientist_C::
-# 311 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 312 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	goto_if_set FLAG_IVY_RIVER_RANGER_SCIENTIST_C, IvyRiver_Ranger_Scientist_C_2
-# 317 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 318 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_C_Text_1, MSGBOX_NPC
-# 319 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	showmonpic SPECIES_LAPRAS, 10, 3
 # 320 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_C_Text_2, MSGBOX_YESNO
+	showmonpic SPECIES_LAPRAS, 10, 3
 # 321 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_C_Text_2, MSGBOX_YESNO
 # 322 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	release
+# 323 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	hidemonpic
-# 324 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 325 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq IvyRiver_Ranger_Scientist_C_5
-# 329 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	special ChoosePartyMon
 # 330 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitstate
+	special ChoosePartyMon
 # 331 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
+	waitstate
 # 332 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
+	copyvar VAR_0x800A, VAR_0x8004
 # 333 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 334 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	specialvar VAR_RESULT, GetTradeSpecies
-# 335 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 336 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	compare VAR_RESULT, SPECIES_LAPRAS
 	goto_if_eq IvyRiver_Ranger_Scientist_C_7
-# 348 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 349 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_C_Text_4, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_C_2:
-# 312 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 313 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_C_Text_0, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_C_5:
-# 325 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 326 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_Scientist_A_Text_3, MSGBOX_NPC
 	end
 
 IvyRiver_Ranger_Scientist_C_7:
-# 336 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	applymovement LOCALID_Q3, IvyRiver_Ranger_FirstQuest_Movement_1
 # 337 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_Q3, IvyRiver_Ranger_FirstQuest_Movement_1
 # 338 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	delay 16
+	waitmovement 0
 # 339 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_C_Text_3
+	delay 16
 # 340 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	release
+	msgbox IvyRiver_Ranger_Scientist_C_Text_3
 # 341 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	playse SE_BANG
-# 342 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
-# 343 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	release
+# 342 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	playse SE_BANG
+# 343 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	msgbox IvyRiver_Ranger_Scientist_A_Text_5, MSGBOX_NPC
 # 344 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	addvar VAR_RANGER_INSTITUTE, 1
+	release
 # 345 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	addvar VAR_RANGER_INSTITUTE, 1
+# 346 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	setflag FLAG_IVY_RIVER_RANGER_SCIENTIST_C
 	end
 
 
 IvyRiver_Ranger_NPC_A::
-# 361 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 362 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_NPC_A_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_B::
-# 365 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 366 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_NPC_B_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_C::
-# 369 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 370 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_NPC_C_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_D::
-# 373 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 374 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_NPC_D_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_NPC_E::
-# 377 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 378 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	msgbox IvyRiver_Ranger_NPC_E_Text_0, MSGBOX_NPC
 	end
 
@@ -680,25 +691,25 @@ IvyRiver_Ranger_FirstQuest_Movement_1:
 	emote_exclamation_mark
 	step_end
 
-# 174 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 175 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 IvyRiver_Ranger_TaurosTrigger_Movement_0:
-# 174 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 175 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	face_up
-# 174 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 175 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 179 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 180 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 IvyRiver_Ranger_TaurosTrigger_Movement_1:
-# 179 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 180 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	walk_down
-# 179 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 180 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	walk_down
 	step_end
 
-# 183 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 184 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 IvyRiver_Ranger_TaurosTrigger_Movement_2:
-# 183 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 184 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	face_up
 	step_end
 
@@ -869,12 +880,16 @@ IvyRiver_Ranger_FirstQuest_Reward_Text_19:
 # 102 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Absolite$"
 
+IvyRiver_Ranger_FirstQuest_Reward_Text_20:
+# 102 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.string "Lucarionite$"
+
 IvyRiver_Ranger_FirstQuest_Reward_Give_Text_0:
-# 128 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 129 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Are you sure?$"
 
 IvyRiver_Ranger_FirstQuest_RewardEnd_Text_0:
-# 142 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 143 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "You'll be eyeing the rank of Associate\n"
 	.string "next. And for that, you'll need to clear\l"
 	.string "one more mission.\p"
@@ -886,12 +901,12 @@ IvyRiver_Ranger_FirstQuest_RewardEnd_Text_0:
 	.string "and complete their tasks!$"
 
 IvyRiver_Ranger_TaurosTrigger_Text_0:
-# 177 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 178 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hey! You're the new Candidate right?\n"
 	.string "Come here for a second.$"
 
 IvyRiver_Ranger_TaurosTrigger_Text_1:
-# 185 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 186 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "See this here Tauros? This is my baby\n"
 	.string "right here - raised him all by myself, I\l"
 	.string "did! This one's been traiend specially\l"
@@ -901,18 +916,18 @@ IvyRiver_Ranger_TaurosTrigger_Text_1:
 	.string "if you like! All Candidates can use it.$"
 
 IvyRiver_Ranger_TaurosBreeder_Text_0:
-# 197 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 198 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Gotta love the speed on this bull, eh?$"
 
 IvyRiver_Ranger_TaurosBreeder_Text_1:
-# 199 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 200 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "This here Tauros is my baby! It can take\n"
 	.string "you up and down Mt Mirroh...oh, you\l"
 	.string "aren't a Candidate yet? Sorry, only\l"
 	.string "Candidates are allowed to use it.$"
 
 IvyRiver_Ranger_Scientist_A_Text_0:
-# 223 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 224 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Want to know the results of my study?\p"
 	.string "The spores are just spores. There's no\n"
 	.string "connection to mega evolution. What a\l"
@@ -920,7 +935,7 @@ IvyRiver_Ranger_Scientist_A_Text_0:
 	.string "like this.$"
 
 IvyRiver_Ranger_Scientist_A_Text_1:
-# 228 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 229 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Did you know that Shiinotic emits\n"
 	.string "flickering spores that can cause\l"
 	.string "drowsiness? I'm studying whether those\l"
@@ -930,16 +945,16 @@ IvyRiver_Ranger_Scientist_A_Text_1:
 	.string "to conduct experiments.$"
 
 IvyRiver_Ranger_Scientist_A_Text_2:
-# 231 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 232 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Do you have a Shiinotic that I can take\n"
 	.string "spore samples of?$"
 
 IvyRiver_Ranger_Scientist_A_Text_3:
-# 236 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 237 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Ah. Come back when you do!$"
 
 IvyRiver_Ranger_Scientist_A_Text_4:
-# 250 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 251 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Amazing! Such a beautiful, yet\n"
 	.string "dangerous, Pokemon.\p"
 	.string "Hang on while I take some samples.\p"
@@ -948,19 +963,19 @@ IvyRiver_Ranger_Scientist_A_Text_4:
 	.string "...$"
 
 IvyRiver_Ranger_Scientist_A_Text_5:
-# 253 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 254 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "And...done!\p"
 	.string "Thank you, Candidate. This'll be very\n"
 	.string "helpful. Come back later if you want to\l"
 	.string "find out the results of my research!$"
 
 IvyRiver_Ranger_Scientist_A_Text_6:
-# 259 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 260 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hey, that's not a Shiinotic! You need to\n"
 	.string "work harder, Candidate!$"
 
 IvyRiver_Ranger_Scientist_B_Text_0:
-# 267 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 268 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Want to know the results of my study?\p"
 	.string "There seems to be no correlation\n"
 	.string "between mega evolution and regional\l"
@@ -969,7 +984,7 @@ IvyRiver_Ranger_Scientist_B_Text_0:
 	.string "of itself!$"
 
 IvyRiver_Ranger_Scientist_B_Text_1:
-# 272 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 273 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Did you know that Toedscool is a\n"
 	.string "regional form of a Pokemon called\l"
 	.string "Tentacool? I'm studying whether\l"
@@ -978,12 +993,12 @@ IvyRiver_Ranger_Scientist_B_Text_1:
 	.string "idea where to find a Toedscool!$"
 
 IvyRiver_Ranger_Scientist_B_Text_2:
-# 275 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 276 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Do you have a Toedscool that I can\n"
 	.string "study?$"
 
 IvyRiver_Ranger_Scientist_B_Text_3:
-# 294 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 295 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Wonderful! Toedscool and Tentacool\n"
 	.string "look so similar, yet so different. The\l"
 	.string "beauty of nature!\p"
@@ -993,12 +1008,12 @@ IvyRiver_Ranger_Scientist_B_Text_3:
 	.string "...$"
 
 IvyRiver_Ranger_Scientist_B_Text_4:
-# 303 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 304 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hey, that's not a Toedscool! You need\n"
 	.string "to work harder, Candidate!$"
 
 IvyRiver_Ranger_Scientist_C_Text_0:
-# 312 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 313 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Want to know the results of my study?\p"
 	.string "There's no connection between\n"
 	.string "gigantamaxing and mega evolution.\p"
@@ -1006,7 +1021,7 @@ IvyRiver_Ranger_Scientist_C_Text_0:
 	.string "nature of the job, after all.$"
 
 IvyRiver_Ranger_Scientist_C_Text_1:
-# 317 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 318 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Did you know that in other regions,\n"
 	.string "Lapras can undergo a transformation\l"
 	.string "known as Gigantamaxing? I'm studying\l"
@@ -1014,12 +1029,12 @@ IvyRiver_Ranger_Scientist_C_Text_1:
 	.string "But a Lapras is hard to come by...$"
 
 IvyRiver_Ranger_Scientist_C_Text_2:
-# 320 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 321 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Do you have a Lapras for me to take a\n"
 	.string "look at?$"
 
 IvyRiver_Ranger_Scientist_C_Text_3:
-# 339 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 340 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Oh my! Such an elegant creature!\p"
 	.string "Hang on while I make some notes.\p"
 	.string "...\p"
@@ -1027,35 +1042,35 @@ IvyRiver_Ranger_Scientist_C_Text_3:
 	.string "...$"
 
 IvyRiver_Ranger_Scientist_C_Text_4:
-# 348 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 349 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hey, that's not a Lapras! You need to\n"
 	.string "work harder, Candidate!$"
 
 IvyRiver_Ranger_NPC_A_Text_0:
-# 361 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 362 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hello! Are you a Candidate too? I just\n"
 	.string "reached here for my first mission.\l"
 	.string "They're making me catch wild Dreepy!$"
 
 IvyRiver_Ranger_NPC_B_Text_0:
-# 365 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 366 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "I've come to train my Kangaskhan with\n"
 	.string "the CrazyTrain 2.0!$"
 
 IvyRiver_Ranger_NPC_C_Text_0:
-# 369 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 370 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "The CrazyTrain 2.0 is incredible! And\n"
 	.string "you can even retrain your Pokemon any\l"
 	.string "time you like!$"
 
 IvyRiver_Ranger_NPC_D_Text_0:
-# 373 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 374 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "You need to be an Associate to use the\n"
 	.string "CrazyTrain 2.0. Come back after\l"
 	.string "completing some more missions!$"
 
 IvyRiver_Ranger_NPC_E_Text_0:
-# 377 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+# 378 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "It's too stuffy upstairs! Too many\n"
 	.string "stuffy scientists who don't know what\l"
 	.string "its like to be out in the field.$"

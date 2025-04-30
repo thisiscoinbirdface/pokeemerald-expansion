@@ -78,7 +78,7 @@ script LilyPond_Dreepy_Trigger_Third{
 
 script LilyPond_Cave_Dreepy{
     playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)
-    msgbox(format("Dreepy is nuzzling Lapras' wound, but it's not helping much."), MSGBOX_NPC)
+    msgbox(format("Dreepy is nuzzling Blastoise's wound, but it's not helping much."), MSGBOX_NPC)
     end
 }
 script LilyPond_Cave_Drakloak{
@@ -92,24 +92,24 @@ script LilyPond_Cave_Dragapult{
     end
 }
 
-script LilyPond_Cave_Lapras{
+script LilyPond_Cave_Blastoise{
     lockall
     faceplayer
-    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)    
-    msgbox(format("Lapras is crying in pain! What happened?\p...\pThere's a huge wound on its side! A regular Potion or Super Potion won't cut it for this..."), MSGBOX_NPC)
+    playmoncry(SPECIES_BLASTOISE, CRY_MODE_NORMAL)    
+    msgbox(format("Blastoise is crying in pain! What happened?\p...\pThere's a huge wound on its side! A regular Potion or Super Potion won't cut it for this..."), MSGBOX_NPC)
     delay(8)
     checkitem(ITEM_HYPER_POTION)
     if (var(VAR_RESULT) == 0){end}
 
-    msgbox(format("Administer a Hyper Potion on Lapras' wound?"), MSGBOX_YESNO)
+    msgbox(format("Administer a Hyper Potion on Blastoise' wound?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0){end}
 
     playse(SE_USE_ITEM)
-    msgbox(format("{PLAYER} used a Hyper Potion on Lapras."))
+    msgbox(format("{PLAYER} used a Hyper Potion on Blastoise."))
     release
     delay(16)
-    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)    
-    msgbox(format("Lapras is looking better!"))
+    playmoncry(SPECIES_BLASTOISE, CRY_MODE_NORMAL)    
+    msgbox(format("Blastoise is looking better!"))
     release
 
     //dragapult leaves
@@ -137,7 +137,7 @@ script LilyPond_Cave_Lapras{
 
     playmoncry(SPECIES_DREEPY, CRY_MODE_NORMAL)    
     applymovement(3, moves(emote_exclamation_mark jump_in_place_up))
-    msgbox(format("DREEPY: dreee!!!"))
+    msgbox(format("Dreee!!!"))
     release
     delay(16)
     applymovement(3, moves(walk_fast_down * 4))
@@ -157,11 +157,55 @@ script LilyPond_Cave_Lapras{
 
 script LilyPond_Cave_Lapras_Encounter{
     lockall
-    playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)
-    setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
-    removeobject(7)
-    setwildbattle(SPECIES_LAPRAS, 35)
-    dowildbattle
+
+//  temp quickfix
+    msgbox(format("It's asleep..."))
+    releaseall
+    end
+
+
+
+
+    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+            //excadrill encounter
+            msgbox(format("..."))
+            release
+            applymovement(18, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(30)
+            applymovement(18, moves(emote_question_mark face_left))
+            waitmovement(0)
+            delay(60)
+            applymovement(18, moves(emote_question_mark face_right))
+            waitmovement(0)
+            delay(60)
+            applymovement(18, moves(face_down emote_exclamation_mark))
+            waitmovement(0)
+            delay(16)
+            playmoncry(SPECIES_BLASTOISE, CRY_MODE_ENCOUNTER)
+            msgbox(format("The Blastoise wakes up! It looks healthy now - too healthy!"))
+            setwildbattle(SPECIES_BLASTOISE, 48)     
+            dowildbattle  
+
+            //result
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            if (var(VAR_RESULT) == B_OUTCOME_WON){
+                removeobject(18)
+                setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
+            }
+            if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+                removeobject(18)
+                setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
+            }            
+            if (var(VAR_RESULT) == B_OUTCOME_RAN){
+                msgbox(format("The Blastoise grunts and falls back asleep. It needs its beauty sleep!"))
+                release
+            }
+        } else {
+            release
+        }
     releaseall
     end
 }

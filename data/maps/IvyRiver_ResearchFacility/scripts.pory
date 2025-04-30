@@ -99,7 +99,7 @@ script IvyRiver_Ranger_FirstQuest_Reward{
         "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
         "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
         "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",
-        "Sharpedonite", "Ampharosite", "Manectricite", "Absolite"
+        "Sharpedonite", "Ampharosite", "Manectricite", "Absolite", "Lucarionite"
     )
 
     if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_MEDICHAMITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
@@ -121,6 +121,7 @@ script IvyRiver_Ranger_FirstQuest_Reward{
     if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_AMPHAROSITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
     if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
     if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
+    if (var(VAR_RESULT) == 19) {setvar(VAR_0x8006, ITEM_LUCARIONITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}    
 }
 
 script IvyRiver_Ranger_FirstQuest_Reward_Give{

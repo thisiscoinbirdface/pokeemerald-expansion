@@ -40,20 +40,57 @@ script Route6_EventScript_Nurse{
 
 
 //Marshtomp
-script Route6_Marshtomp{
+script Route6_Venusaur{
     lockall
-    faceplayer
-    applymovement(32, moves(emote_exclamation_mark))
-    waitmovement(0)
-    delay(16)    
-    msgbox(format("It's a wild Pokémon!"))
-    playmoncry(SPECIES_MARSHTOMP, CRY_MODE_ENCOUNTER)
-    waitmoncry
 
-    setwildbattle(SPECIES_MARSHTOMP, 25)     
-    dowildbattle  
+//  temp quickfix
+    msgbox(format("It's asleep..."))
+    releaseall
+    end
 
-    setflag(FLAG_ROUTE6_MARSHTOMP)
+
+
+
+    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+            //excadrill encounter
+            msgbox(format("..."))
+            release
+            applymovement(18, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(30)
+            applymovement(18, moves(emote_question_mark face_left))
+            waitmovement(0)
+            delay(60)
+            applymovement(18, moves(emote_question_mark face_right))
+            waitmovement(0)
+            delay(60)
+            applymovement(18, moves(face_down emote_exclamation_mark))
+            waitmovement(0)
+            delay(16)
+            playmoncry(SPECIES_VENUSAUR, CRY_MODE_ENCOUNTER)
+            msgbox(format("The Venusaur wakes up...it's groggy.."))
+            setwildbattle(SPECIES_VENUSAUR, 48)     
+            dowildbattle  
+
+            //result
+            specialvar(VAR_RESULT, GetBattleOutcome)
+            if (var(VAR_RESULT) == B_OUTCOME_WON){
+                removeobject(18)
+                setflag(FLAG_ROUTE6_VENUSAUR)
+            }
+            if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+                removeobject(18)
+                setflag(FLAG_ROUTE6_VENUSAUR)
+            }            
+            if (var(VAR_RESULT) == B_OUTCOME_RAN){
+                msgbox(format("The Venusaur grunts and falls back asleep. It needs its beauty sleep!"))
+                release
+            }
+        } else {
+            release
+        }
     releaseall
     end
 }
