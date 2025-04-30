@@ -244,8 +244,9 @@
 #define MAPSEC_MT_MIRROH_INTERIOR           0xEE
 #define MAPSEC_VINE_CAVERNS                 0xF0
 #define MAPSEC_FENNILAHL_TUNNEL             0xF1
+#define MAPSEC_ROUTE3_UNDERPASS             0xF2
 
-#define MAPSEC_NONE                         0xF2
+#define MAPSEC_NONE                         0xF3
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
