@@ -125,7 +125,6 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox(format("The Tea House Owner has gifted you a Sinistea!"))
         hidemonpic
-        call(NicknamePartyMon)
         release
         delay(12)
         msgbox(format("This one's a keeper - extremely well-trained and hospitable. I'm sure you two will have a great time together. I'll miss you, Sinistea!"))
