@@ -37,7 +37,7 @@ GalecrestCity_HousesRich_NPC4_2:
 # 32 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	msgbox GalecrestCity_HousesRich_NPC4_Text_1
 # 33 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	giveitem ITEM_TM17
+	giveitem ITEM_DIAMOND
 # 34 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	setvar VAR_GALECREST_RICH_PEARLS, 4
 # 35 "data//maps/GalecrestCity_HousesRich/scripts.pory"

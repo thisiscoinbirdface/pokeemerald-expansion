@@ -1,4 +1,31 @@
-mapscripts Route3_Underpass_Extended_MapScripts{}
+raw`
+    .set LOCALID_DIANCIE, 7
+`
+
+mapscripts Route3_Underpass_Extended_MapScripts{
+    MAP_SCRIPT_ON_LOAD {
+        goto(Route3_Underpass_Extended_SetLayout)
+    }
+}
+
+script Route3_Underpass_Extended_SetLayout{
+    if (var(VAR_DIANCIE) == 3){
+        setmetatile(33, 4, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE)
+        setmetatile(33, 3, METATILE_MeteorFalls_CaveEntrance_Top, TRUE)
+        special(DrawWholeMapView)
+    } else {
+
+    }
+    return
+}
+
+
+
+
+
+
+
+
 
 script Route3_Ext_NPC1{
     msgbox(format("They say there's a rare Pokemon that makes its home down here, but I can't find it! Did I come to the wrong place?"), MSGBOX_NPC)
@@ -9,5 +36,122 @@ script Route3_Ext_Trainer_A{
     trainerbattle_single(TRAINER_ROUTE3_EXT_C, format("Hoho! Fancy seeing another explorer! But you won't take any of my spoils!"), "I didn't want to explore this!")
     msgbox(format("I wonder what secrets lie in these caverns..."))
 }
+
+
+
+
+
+
+script Route3_Ext_Stone_A{
+    lockall
+    msgbox(format("There's a crevice in this stone...streaks of blue mark the sides..."))
+
+    checkitem(ITEM_SAPPHIRE)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("The Sapphire fits perfectly!\nInsert Sapphire into crevice?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_SAPPHIRE)
+            msgbox(format("{PLAYER} gently slotted the Sapphire in the crevice."))
+            release
+            
+            addvar(VAR_DIANCIE, 1)
+            if (var(VAR_DIANCIE) == 3){goto(Route3_Ext_Diancie_OpenDoor)}
+        }
+    }
+
+    releaseall
+    end
+}
+
+script Route3_Ext_Stone_B{
+    lockall
+    msgbox(format("There's a crevice in this stone...pale red lines run down the rock..."))
+
+    checkitem(ITEM_RUBY)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("The Ruby fits perfectly!\nInsert Ruby into crevice?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_RUBY)
+            msgbox(format("{PLAYER} gently slotted the Ruby in the crevice."))
+            release
+            
+            addvar(VAR_DIANCIE, 1)
+            if (var(VAR_DIANCIE) == 3){goto(Route3_Ext_Diancie_OpenDoor)}            
+        }
+    }
+
+    releaseall
+    end
+}
+
+script Route3_Ext_Stone_C{
+    lockall
+    msgbox(format("There's a crevice in this stone...there are traces of something glittering..."))
+
+    checkitem(ITEM_DIAMOND)
+
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("The Diamond fits perfectly!\nInsert Diamond into crevice?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            removeitem(ITEM_DIAMOND)
+            msgbox(format("{PLAYER} gently slotted the Diamond in the crevice."))
+            release
+            
+            addvar(VAR_DIANCIE, 1)
+            if (var(VAR_DIANCIE) == 3){goto(Route3_Ext_Diancie_OpenDoor)}   
+        }
+    }
+
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+script Route3_Ext_Diancie_OpenDoor{
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 30)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+    waitstate
+    setmetatile(33, 4, METATILE_MeteorFalls_CaveEntrance_Bottom, FALSE)
+    setmetatile(33, 3, METATILE_MeteorFalls_CaveEntrance_Top, TRUE)
+    special(DrawWholeMapView)
+    release    
+
+    end
+}
+
+script Route3_Ext_Diancie{
+    lockall
+    //save
+    special(SaveGame)
+    waitstate
+    release
+
+    //setflag
+    faceplayer
+    playmoncry(SPECIES_DIANCIE, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_DIANCIE)
+
+    setwildbattle(SPECIES_DIANCIE, 50)
+    dowildbattle
+    removeobject(LOCALID_DIANCIE)
+
+    releaseall
+    end
+}
+
 
 

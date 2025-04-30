@@ -290,7 +290,7 @@
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
 #define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
+#define FLAG_DIANCIE                                                0x4D5 // Unused Flag
 #define FLAG_ZERAORA                                                0x4D6 // Unused Flag
 #define FLAG_IVYRIVER_ZARUDE_REAL                                   0x4D7 // Unused Flag
 
@@ -1239,52 +1239,54 @@
 #define FLAG_ITEM_MIRROHEXT_E                        0x420
 
 //misc items (FORGOT TO DO BEFORE) 
-#define FLAG_ITEM_GASTREE_A                               0x421
-#define FLAG_ITEM_GASTREE_B                             0x422
-#define FLAG_ITEM_GALECREST_D                    0x423
-#define FLAG_ITEM_GALECREST_E                  0x424
-#define FLAG_ITEM_PELLUCA_CITY_A                 0x425
-#define FLAG_ITEM_PELLUCA_CITY_B                   0x426
-#define FLAG_ITEM_PELLUCA_CITY_C                  0x427
+#define FLAG_ITEM_GASTREE_A                 0x421
+#define FLAG_ITEM_GASTREE_B                 0x422
+#define FLAG_ITEM_GALECREST_D               0x423
+#define FLAG_ITEM_GALECREST_E               0x424
+#define FLAG_ITEM_PELLUCA_CITY_A            0x425
+#define FLAG_ITEM_PELLUCA_CITY_B            0x426
+#define FLAG_ITEM_PELLUCA_CITY_C            0x427
 
 //mirroh
-#define FLAG_ITEM_MIRROH_INT_A                    0x428
-#define FLAG_ITEM_MIRROH_INT_B                   0x429
-#define FLAG_ITEM_MIRROH_INT_C                            0x42A
-#define FLAG_ITEM_MIRROH_INT_D                 0x42B
-#define FLAG_ITEM_MIRROH_INT_E                  0x42C
-#define FLAG_ITEM_MIRROH_INT_F                    0x42D
-#define FLAG_ITEM_MIRROH_PEAK_A                             0x42E
-#define FLAG_ITEM_MIRROH_PEAK_B                       0x42F
+#define FLAG_ITEM_MIRROH_INT_A              0x428
+#define FLAG_ITEM_MIRROH_INT_B              0x429
+#define FLAG_ITEM_MIRROH_INT_C              0x42A
+#define FLAG_ITEM_MIRROH_INT_D              0x42B
+#define FLAG_ITEM_MIRROH_INT_E              0x42C
+#define FLAG_ITEM_MIRROH_INT_F              0x42D
+#define FLAG_ITEM_MIRROH_PEAK_A             0x42E
+#define FLAG_ITEM_MIRROH_PEAK_B             0x42F
 
-#define FLAG_ITEM_ANCIENTMIRROH_A                        0x430
-#define FLAG_ITEM_ANCIENTMIRROH_B                       0x431
-#define FLAG_ITEM_ANCIENTMIRROH_C                    0x432
-#define FLAG_ITEM_ANCIENTMIRROH_D                           0x433
-#define FLAG_ITEM_ANCIENTMIRROH_E                          0x434
-#define FLAG_ITEM_ANCIENTMIRROH_F    0x435
+#define FLAG_ITEM_ANCIENTMIRROH_A           0x430
+#define FLAG_ITEM_ANCIENTMIRROH_B           0x431
+#define FLAG_ITEM_ANCIENTMIRROH_C           0x432
+#define FLAG_ITEM_ANCIENTMIRROH_D           0x433
+#define FLAG_ITEM_ANCIENTMIRROH_E           0x434
+#define FLAG_ITEM_ANCIENTMIRROH_F           0x435
 
 //lily pond
-#define FLAG_ITEM_LILY_POND_A        0x436
-#define FLAG_ITEM_LILY_POND_B                        0x437
-#define FLAG_ITEM_LILY_POND_C                0x438
+#define FLAG_ITEM_LILY_POND_A               0x436
+#define FLAG_ITEM_LILY_POND_B               0x437
+#define FLAG_ITEM_LILY_POND_C               0x438
 
 //ivy river
-#define FLAG_ITEM_IVYRIVER_GREEN_SCARF                     0x439
-#define FLAG_ITEM_IVY_RIVER_A                  0x43A
-#define FLAG_ITEM_IVY_RIVER_B                   0x43B
-#define FLAG_ITEM_IVY_RIVER_C                        0x43C
-#define FLAG_ITEM_IVY_RIVER_D                             0x43D
-#define FLAG_ITEM_IVY_RIVER_E                       0x43E
+#define FLAG_ITEM_IVYRIVER_GREEN_SCARF      0x439
+#define FLAG_ITEM_IVY_RIVER_A               0x43A
+#define FLAG_ITEM_IVY_RIVER_B               0x43B
+#define FLAG_ITEM_IVY_RIVER_C               0x43C
+#define FLAG_ITEM_IVY_RIVER_D               0x43D
+#define FLAG_ITEM_IVY_RIVER_E               0x43E
 
 //route 3 extended
-#define FLAG_ITEM_ROUTE3_EXT_A                     0x43F
-#define FLAG_ITEM_ROUTE3_EXT_B                        0x440
-#define FLAG_ITEM_ROUTE3_EXT_C                         0x441
+#define FLAG_ITEM_ROUTE3_EXT_A              0x43F
+#define FLAG_ITEM_ROUTE3_EXT_B              0x440
+#define FLAG_ITEM_ROUTE3_EXT_C              0x441
 
 //mirroh B1F (diancie)
 #define FLAG_ITEM_MIRROH_B1F_A              0x442
-#define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
+#define FLAG_ITEM_CERAM_PEAK_A              0x443
+
+
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
 #define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM              0x446
