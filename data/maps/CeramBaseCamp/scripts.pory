@@ -209,6 +209,7 @@ script CeramBaseCamp_Dude_Reward_Give{
 }
 
 script CeramBaseCamp_Dude_Reward_End{
+    setflag(FLAG_CERAMBASECAMP_NPCITEM)
     msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
     end
 }
