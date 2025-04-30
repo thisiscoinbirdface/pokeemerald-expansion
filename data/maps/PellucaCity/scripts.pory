@@ -4,6 +4,25 @@ raw`
 
 mapscripts PellucaCity_MapScripts{}
 
+
+
+
+
+
+
+
+
+//Earthquake cutscene
+
+
+
+
+
+
+
+
+
+
 //GRETA
 script PellucaCity_Greta_Trigger0{
     if (flag(FLAG_GRETA_PELLUCACITY)) {end}
