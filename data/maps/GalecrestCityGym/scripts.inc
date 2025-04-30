@@ -26,7 +26,7 @@ GalecrestCityGym_Red::
 # 53 "data//maps/GalecrestCityGym/scripts.pory"
 	giveitem ITEM_FRESH_WATER
 # 54 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Red_Text_7
+	msgbox GalecrestCityGym_Red_Text_7, MSGBOX_NPC
 # 55 "data//maps/GalecrestCityGym/scripts.pory"
 	setflag FLAG_GALECRESTGYM_SPENSER_WATER
 GalecrestCityGym_Red_1:
@@ -51,17 +51,17 @@ GalecrestCityGym_Red_11:
 # 45 "data//maps/GalecrestCityGym/scripts.pory"
 	setflag FLAG_GALECRESTGYM_SPENSER_REWARD
 # 46 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Red_Text_4
+	msgbox GalecrestCityGym_Red_Text_4, MSGBOX_NPC
 	goto GalecrestCityGym_Red_1
 
 GalecrestCityGym_Red_5:
 # 30 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Red_Text_0
+	msgbox GalecrestCityGym_Red_Text_0, MSGBOX_NPC
 	goto GalecrestCityGym_Red_1
 
 GalecrestCityGym_Red_8:
 # 50 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Red_Text_5
+	msgbox GalecrestCityGym_Red_Text_5, MSGBOX_NPC
 	goto GalecrestCityGym_Red_1
 
 GalecrestCityGym_Red_12:
@@ -77,153 +77,135 @@ GalecrestCityGym_Red_15:
 
 GalecrestCityGym_NPC1::
 # 64 "data//maps/GalecrestCityGym/scripts.pory"
-	lockall
-# 65 "data//maps/GalecrestCityGym/scripts.pory"
-	faceplayer
-# 66 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_NPC1_Text_0
-# 67 "data//maps/GalecrestCityGym/scripts.pory"
-	releaseall
-	return
+	msgbox GalecrestCityGym_NPC1_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCityGym_NPC2::
-# 71 "data//maps/GalecrestCityGym/scripts.pory"
-	lockall
-# 72 "data//maps/GalecrestCityGym/scripts.pory"
-	faceplayer
-# 73 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_NPC2_Text_0
-# 74 "data//maps/GalecrestCityGym/scripts.pory"
-	releaseall
-	return
+# 69 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_NPC2_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCityGym_NPC3::
-# 78 "data//maps/GalecrestCityGym/scripts.pory"
-	lockall
-# 79 "data//maps/GalecrestCityGym/scripts.pory"
-	faceplayer
-# 80 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_NPC3_Text_0
-# 81 "data//maps/GalecrestCityGym/scripts.pory"
-	releaseall
-	return
+# 74 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_NPC3_Text_0, MSGBOX_NPC
+	end
 
 
 GalecrestCityGym_Trainer1::
-# 100 "data//maps/GalecrestCityGym/scripts.pory"
+# 94 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_single TRAINER_GALECRESTGYM_A, GalecrestCityGym_Trainer1_Text_0, GalecrestCityGym_Trainer1_Text_1
-# 101 "data//maps/GalecrestCityGym/scripts.pory"
+# 95 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Trainer1_Text_2
-# 102 "data//maps/GalecrestCityGym/scripts.pory"
+# 96 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
 
 
 GalecrestCityGym_Trainer2::
-# 107 "data//maps/GalecrestCityGym/scripts.pory"
+# 101 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_single TRAINER_GALECRESTGYM_B, GalecrestCityGym_Trainer2_Text_0, GalecrestCityGym_Trainer2_Text_1
-# 108 "data//maps/GalecrestCityGym/scripts.pory"
+# 102 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Trainer2_Text_1
-# 109 "data//maps/GalecrestCityGym/scripts.pory"
+# 103 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
 
 
 GalecrestCityGym_Trainer3::
-# 114 "data//maps/GalecrestCityGym/scripts.pory"
+# 108 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_single TRAINER_GALECRESTGYM_C, GalecrestCityGym_Trainer3_Text_0, GalecrestCityGym_Trainer3_Text_1
-# 115 "data//maps/GalecrestCityGym/scripts.pory"
+# 109 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Trainer3_Text_2
-# 116 "data//maps/GalecrestCityGym/scripts.pory"
+# 110 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 	end
 
 
 GalecrestCityGym_Leader::
-# 136 "data//maps/GalecrestCityGym/scripts.pory"
+# 130 "data//maps/GalecrestCityGym/scripts.pory"
 	lockall
-# 137 "data//maps/GalecrestCityGym/scripts.pory"
+# 131 "data//maps/GalecrestCityGym/scripts.pory"
 	faceplayer
-# 139 "data//maps/GalecrestCityGym/scripts.pory"
+# 133 "data//maps/GalecrestCityGym/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, GalecrestCityGym_Leader_2
-# 142 "data//maps/GalecrestCityGym/scripts.pory"
+# 136 "data//maps/GalecrestCityGym/scripts.pory"
 	special SaveGame
-# 143 "data//maps/GalecrestCityGym/scripts.pory"
+# 137 "data//maps/GalecrestCityGym/scripts.pory"
 	waitstate
-# 144 "data//maps/GalecrestCityGym/scripts.pory"
+# 138 "data//maps/GalecrestCityGym/scripts.pory"
 	release
-# 147 "data//maps/GalecrestCityGym/scripts.pory"
+# 141 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
-# 148 "data//maps/GalecrestCityGym/scripts.pory"
+# 142 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Text_LeaderIntro
-# 150 "data//maps/GalecrestCityGym/scripts.pory"
+# 144 "data//maps/GalecrestCityGym/scripts.pory"
 	trainerbattle_no_intro TRAINER_GALECRESTGYM_LEADER, GalecrestCityGym_Text_Defeated
-# 154 "data//maps/GalecrestCityGym/scripts.pory"
+# 148 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
-# 155 "data//maps/GalecrestCityGym/scripts.pory"
+# 149 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_2
-# 156 "data//maps/GalecrestCityGym/scripts.pory"
+# 150 "data//maps/GalecrestCityGym/scripts.pory"
 	release
-# 159 "data//maps/GalecrestCityGym/scripts.pory"
+# 153 "data//maps/GalecrestCityGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 160 "data//maps/GalecrestCityGym/scripts.pory"
+# 154 "data//maps/GalecrestCityGym/scripts.pory"
 	setflag FLAG_BADGE03_GET
-# 161 "data//maps/GalecrestCityGym/scripts.pory"
+# 155 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
-# 162 "data//maps/GalecrestCityGym/scripts.pory"
+# 156 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_3
-# 165 "data//maps/GalecrestCityGym/scripts.pory"
+# 159 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
-# 166 "data//maps/GalecrestCityGym/scripts.pory"
+# 160 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_4
-# 167 "data//maps/GalecrestCityGym/scripts.pory"
+# 161 "data//maps/GalecrestCityGym/scripts.pory"
 	release
-# 168 "data//maps/GalecrestCityGym/scripts.pory"
+# 162 "data//maps/GalecrestCityGym/scripts.pory"
 	giveitem ITEM_RARE_SHARD
+# 163 "data//maps/GalecrestCityGym/scripts.pory"
+	delay 16
+# 166 "data//maps/GalecrestCityGym/scripts.pory"
+	speakername GalecrestCityGym_Leader_Text_1
+# 167 "data//maps/GalecrestCityGym/scripts.pory"
+	msgbox GalecrestCityGym_Leader_Text_5
+# 168 "data//maps/GalecrestCityGym/scripts.pory"
+	release
 # 169 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 16
-# 172 "data//maps/GalecrestCityGym/scripts.pory"
-	speakername GalecrestCityGym_Leader_Text_1
-# 173 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Leader_Text_5
-# 174 "data//maps/GalecrestCityGym/scripts.pory"
-	release
-# 175 "data//maps/GalecrestCityGym/scripts.pory"
-	delay 16
-# 177 "data//maps/GalecrestCityGym/scripts.pory"
+# 171 "data//maps/GalecrestCityGym/scripts.pory"
 	opendoor 25, 52
-# 178 "data//maps/GalecrestCityGym/scripts.pory"
+# 172 "data//maps/GalecrestCityGym/scripts.pory"
 	waitdooranim
-# 179 "data//maps/GalecrestCityGym/scripts.pory"
+# 173 "data//maps/GalecrestCityGym/scripts.pory"
 	applymovement 5, GalecrestCityGym_Leader_Movement_0
-# 180 "data//maps/GalecrestCityGym/scripts.pory"
+# 174 "data//maps/GalecrestCityGym/scripts.pory"
 	waitmovement 0
-# 181 "data//maps/GalecrestCityGym/scripts.pory"
+# 175 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 8
-# 182 "data//maps/GalecrestCityGym/scripts.pory"
+# 176 "data//maps/GalecrestCityGym/scripts.pory"
 	removeobject 5
-# 183 "data//maps/GalecrestCityGym/scripts.pory"
+# 177 "data//maps/GalecrestCityGym/scripts.pory"
 	delay 8
-# 184 "data//maps/GalecrestCityGym/scripts.pory"
+# 178 "data//maps/GalecrestCityGym/scripts.pory"
 	closedoor 25, 52
-# 185 "data//maps/GalecrestCityGym/scripts.pory"
+# 179 "data//maps/GalecrestCityGym/scripts.pory"
 	waitdooranim
 GalecrestCityGym_Leader_1:
-# 189 "data//maps/GalecrestCityGym/scripts.pory"
+# 183 "data//maps/GalecrestCityGym/scripts.pory"
 	releaseall
 	return
 
 GalecrestCityGym_Leader_2:
-# 140 "data//maps/GalecrestCityGym/scripts.pory"
+# 134 "data//maps/GalecrestCityGym/scripts.pory"
 	msgbox GalecrestCityGym_Leader_Text_0
 	goto GalecrestCityGym_Leader_1
 
 
-# 179 "data//maps/GalecrestCityGym/scripts.pory"
+# 173 "data//maps/GalecrestCityGym/scripts.pory"
 GalecrestCityGym_Leader_Movement_0:
-# 179 "data//maps/GalecrestCityGym/scripts.pory"
+# 173 "data//maps/GalecrestCityGym/scripts.pory"
 	walk_up
 	step_end
 
@@ -281,57 +263,57 @@ GalecrestCityGym_Red_Text_7:
 	.string "attacks!$"
 
 GalecrestCityGym_NPC1_Text_0:
-# 66 "data//maps/GalecrestCityGym/scripts.pory"
+# 64 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "This Gym is supposed to be a normal\n"
 	.string "type gym...except all the trainers have\l"
 	.string "a Charcadet! How is that fair?$"
 
 GalecrestCityGym_NPC2_Text_0:
-# 73 "data//maps/GalecrestCityGym/scripts.pory"
+# 69 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "I'm the detective overseeing the\n"
 	.string "cadets. All the best for your gym\l"
 	.string "challenge!$"
 
 GalecrestCityGym_NPC3_Text_0:
-# 80 "data//maps/GalecrestCityGym/scripts.pory"
+# 74 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "For a bunch of students, these trainers\n"
 	.string "sure don't take it easy on you...$"
 
 GalecrestCityGym_Trainer1_Text_0:
-# 100 "data//maps/GalecrestCityGym/scripts.pory"
+# 94 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "I'm a first-year at the Academy. But\n"
 	.string "don't think I'm a pushover!$"
 
 GalecrestCityGym_Trainer1_Text_1:
-# 100 "data//maps/GalecrestCityGym/scripts.pory"
+# 94 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "You're not half bad. Go through the door\n"
 	.string "that rhymes with FIGHT.$"
 
 GalecrestCityGym_Trainer1_Text_2:
-# 101 "data//maps/GalecrestCityGym/scripts.pory"
+# 95 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Go through the door that rhymes with\n"
 	.string "FIGHT.$"
 
 GalecrestCityGym_Trainer2_Text_0:
-# 107 "data//maps/GalecrestCityGym/scripts.pory"
+# 101 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "After our internship here, we can\n"
 	.string "evolve our Charcadet into Armarouge!$"
 
 GalecrestCityGym_Trainer2_Text_1:
-# 107 "data//maps/GalecrestCityGym/scripts.pory"
+# 101 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "If I keep losing to trainers like you,\n"
 	.string "I'll never get an Armarouge! Go through\l"
 	.string "the left door if you DON'T like the awful\l"
 	.string "Ceruledge.$"
 
 GalecrestCityGym_Trainer3_Text_0:
-# 114 "data//maps/GalecrestCityGym/scripts.pory"
+# 108 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "The gym leader is through the next\n"
 	.string "door. But you won't make it because\l"
 	.string "your journey ends here!$"
 
 GalecrestCityGym_Trainer3_Text_1:
-# 114 "data//maps/GalecrestCityGym/scripts.pory"
+# 108 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "You may have beaten me, but you won't\n"
 	.string "beat our Gym Leader. He's already\l"
 	.string "evolved his Charcadet to Armarouge!\l"
@@ -339,36 +321,36 @@ GalecrestCityGym_Trainer3_Text_1:
 	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Trainer3_Text_2:
-# 115 "data//maps/GalecrestCityGym/scripts.pory"
+# 109 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Don't not go through the door that\n"
 	.string "isn't not to the left of the right.$"
 
 GalecrestCityGym_Leader_Text_0:
-# 140 "data//maps/GalecrestCityGym/scripts.pory"
+# 134 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "You win.$"
 
 GalecrestCityGym_Leader_Text_1:
-# 147 "data//maps/GalecrestCityGym/scripts.pory"
+# 141 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Kohla$"
 
 GalecrestCityGym_Leader_Text_2:
-# 155 "data//maps/GalecrestCityGym/scripts.pory"
+# 149 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "This is yours, {PLAYER}.$"
 
 GalecrestCityGym_Leader_Text_3:
-# 162 "data//maps/GalecrestCityGym/scripts.pory"
+# 156 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER} received the Stoic Badge\n"
 	.string "from Kohla.$"
 
 GalecrestCityGym_Leader_Text_4:
-# 166 "data//maps/GalecrestCityGym/scripts.pory"
+# 160 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "The Stoic Badge lets you use the HM\n"
 	.string "move ROCK SMASH outside of battle.\p"
 	.string "...\p"
 	.string "And this is yours too.$"
 
 GalecrestCityGym_Leader_Text_5:
-# 173 "data//maps/GalecrestCityGym/scripts.pory"
+# 167 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER}, despite being the chum you\n"
 	.string "are, I owe you. You showed me my lack of\l"
 	.string "strength. That's why I chose Ceruledge\l"
@@ -381,7 +363,7 @@ GalecrestCityGym_Leader_Text_5:
 	.string "in Silversun City.$"
 
 GalecrestCityGym_Text_LeaderIntro::
-# 194 "data//maps/GalecrestCityGym/scripts.pory"
+# 188 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Yes {PLAYER}, it's me. Traditionally,\n"
 	.string "the Ace Rookie of the graduating class\l"
 	.string "assumes Gym Leader duties for a year\l"
@@ -393,7 +375,7 @@ GalecrestCityGym_Text_LeaderIntro::
 	.string "I'll crush you with my REAL team!$"
 
 GalecrestCityGym_Text_Defeated::
-# 198 "data//maps/GalecrestCityGym/scripts.pory"
+# 192 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Another defeat...despite evolving my\n"
 	.string "Charcadet, I still couldn't win. I need\l"
 	.string "more strength...$"

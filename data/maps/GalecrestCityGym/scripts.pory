@@ -27,7 +27,7 @@ script GalecrestCityGym_Red {
 
     if (flag(FLAG_BADGE03_GET)){
         if (flag(FLAG_GALECRESTGYM_SPENSER_REWARD)){
-            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
         } else {
             msgbox(format("Well done champ-in-the-making! The Gym Leader pulled a fast one on you, using his real team, and you still made it out! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
             dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL GEM", "SILK SCARF")
@@ -43,15 +43,15 @@ script GalecrestCityGym_Red {
             }
 
             setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+            msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            
         }
     } else { 
         if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
-            msgbox(format("Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
+            msgbox(format("Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"), MSGBOX_NPC)
         } else {
             msgbox(format("Greetings trainer! Good to see you again.  First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
+            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"), MSGBOX_NPC)
             setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
         }
     }
@@ -61,24 +61,18 @@ script GalecrestCityGym_Red {
 
 
 script GalecrestCityGym_NPC1 {
-    lockall
-    faceplayer
-    msgbox(format("This Gym is supposed to be a normal type gym...except all the trainers have a Charcadet! How is that fair?"))
-    releaseall
+    msgbox(format("This Gym is supposed to be a normal type gym...except all the trainers have a Charcadet! How is that fair?"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCityGym_NPC2 {
-    lockall
-    faceplayer
-    msgbox(format("I'm the detective overseeing the cadets. All the best for your gym challenge!"))
-    releaseall
+    msgbox(format("I'm the detective overseeing the cadets. All the best for your gym challenge!"), MSGBOX_NPC)
+    end
 }
 
 script GalecrestCityGym_NPC3 {
-    lockall
-    faceplayer
-    msgbox(format("For a bunch of students, these trainers sure don't take it easy on you..."))
-    releaseall
+    msgbox(format("For a bunch of students, these trainers sure don't take it easy on you..."), MSGBOX_NPC)
+    end
 }
 
 

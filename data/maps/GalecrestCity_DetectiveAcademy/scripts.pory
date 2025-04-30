@@ -340,10 +340,8 @@ script GalecrestCity_DetectiveAcademy_Yamper_Battle{
 
 script GalecrestCity_DetectiveAcademy_Charcadet_A{
     lockall
-    faceplayer
     playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
-    msgbox(format("Charcadet is also curious about the class rankings!"))
-    releaseall
+    msgbox(format("Charcadet is also curious about the class rankings!"), MSGBOX_NPC)
     end
 }
 

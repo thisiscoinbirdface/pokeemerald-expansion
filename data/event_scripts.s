@@ -1377,3 +1377,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route3_Underpass_Extended/scripts.inc"
 
 	.include "data/maps/Route6_ZeraoraCave/scripts.inc"
+
+	.include "data/maps/MirrohInterior_B1F/scripts.inc"

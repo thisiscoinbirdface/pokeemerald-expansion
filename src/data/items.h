@@ -14145,14 +14145,14 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "One-day student ID\n"
-            "for the GALECREST\n"
-            "DETECTIVE ACADEMY."),
+            "for the Galecrest\n"
+            "Detective Academy."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_ContestPass,
-        .iconPalette = gItemIconPalette_ContestPass,
+        .iconPic = gItemIcon_TriPass,
+        .iconPalette = gItemIconPalette_TriPass,
     },
 
     [ITEM_FAKE_STUDENT_ID] =
@@ -14162,8 +14162,8 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A fake student ID\n"
-            "for the GALECREST\n"
-            "DETECTIVE ACADEMY."),
+            "for the Galecrest\n"
+            "Detective Academy."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14179,8 +14179,8 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A book I found in\n"
-            "the SILVERSUN\n"
-            "BLIND ORPHANAGE."),
+            "the Silversun\n"
+            "Blind Orphanage."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14196,9 +14196,9 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Heal Passes"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Trade with Nurse Joy\n"
-            "on any route to heal\n"
-            "your {PKMN}."),
+            "Trade with Nurse\n"
+            "Joy on any route to\n"
+            "heal your {PKMN}."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

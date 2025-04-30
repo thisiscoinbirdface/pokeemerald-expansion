@@ -1982,10 +1982,8 @@ F_TRAINER_FEMALE |
 #line 860
             .species = SPECIES_CERULEDGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 860
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 862
-            .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 861
             .lvl = 21,
             .nature = NATURE_HARDY,

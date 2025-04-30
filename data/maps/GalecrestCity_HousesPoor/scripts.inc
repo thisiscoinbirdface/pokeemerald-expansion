@@ -61,14 +61,12 @@ GalecrestCity_HousesPoor_Jigglypuff::
 # 43 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	playmoncry SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL
 # 44 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	release
-# 45 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	delay 30
+# 45 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	msgbox GalecrestCity_HousesPoor_Jigglypuff_Text_0, MSGBOX_NPC
 # 46 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	msgbox GalecrestCity_HousesPoor_Jigglypuff_Text_0
-# 47 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	releaseall
-	return
+	end
 
 
 GalecrestCity_HousesPoor_NPC3::
@@ -145,7 +143,7 @@ GalecrestCity_HousesPoor_NPC2_Text_0:
 	.string "house!$"
 
 GalecrestCity_HousesPoor_Jigglypuff_Text_0:
-# 46 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 45 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "Jigglypuff is singing happily! Better\n"
 	.string "leave before I fall asleep...$"
 
