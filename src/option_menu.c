@@ -330,7 +330,7 @@ static u8 Process_ChangePage(u8 CurrentPage)
     if (JOY_NEW(R_BUTTON))
     {
         if (CurrentPage < PAGE_COUNT - 1)
-            CurrentPage;
+            CurrentPage++;
         else
             CurrentPage = 0;
     }
@@ -370,7 +370,7 @@ static void Task_OptionMenuFadeIn(u8 taskId)
 
 static void Task_OptionMenuProcessInput(u8 taskId)
 {
-    if (JOY_NEW(L_BUTTON) || JOY_NEW(R_BUTTON))
+    if (JOY_NEW(R_BUTTON))
     {
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
@@ -470,7 +470,7 @@ static void Task_OptionMenuFadeIn_Pg2(u8 taskId)
 
 static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 {
-    if (JOY_NEW(L_BUTTON) || JOY_NEW(R_BUTTON))
+    if (JOY_NEW(L_BUTTON))
     {
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
@@ -497,7 +497,7 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
     else if (JOY_NEW(DPAD_DOWN))
     {
         if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG2)
-            gTasks[taskId].tMenuSelection;
+            gTasks[taskId].tMenuSelection++;
         else
             gTasks[taskId].tMenuSelection = 0;
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
