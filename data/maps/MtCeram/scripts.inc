@@ -1256,7 +1256,7 @@ MtCeram_TrainerBattle_A_Text_1:
 
 MtCeram_TrainerBattle_A_Text_2:
 # 430 "data//maps/MtCeram/scripts.pory"
-	.string "Since its so hot here, you sweat more.\n"
+	.string "Since it's so hot here, you sweat more.\n"
 	.string "And sweat is good!$"
 
 MtCeram_TrainerBattle_B_Text_0:

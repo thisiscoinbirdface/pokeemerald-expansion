@@ -109,8 +109,14 @@ script Route4_TrainerBattle_Jenny {
 }
 
     //The Kids Trio
+    script Route4_Kids_ClearFlag{
+        clearflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
+        end
+    }
+
     script Route4_TrainerBattle_Kid1 {
-        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout and now you're going to pay!"), format("Waah!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID1, format("Hah! Bet you didn't see me there, did you? You entered our secret hideout and now you're going to pay!"), format("Waah!"), Route4_Kids_ClearFlag)
+
 
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
             msgbox(format("Eek! It's the Dewpider!"))
@@ -122,7 +128,7 @@ script Route4_TrainerBattle_Jenny {
     }
 
     script Route4_TrainerBattle_Kid2 {
-        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"))
+        trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"), Route4_Kids_ClearFlag)
 
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
             msgbox(format("Someone help the boss! The Dewpider is attacking him!"))
@@ -138,8 +144,14 @@ script Route4_TrainerBattle_Jenny {
         faceplayer
 
         if (flag(FLAG_ROUTE4_KIDGANG)){
-            msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
+             
+            if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
+                msgbox(format("It's you! The old one! Please get Dewpider away from me!"), MSGBOX_NPC)
+            } else {
+                msgbox(format("I have so much fun with my friends here...I hate going back home. I hate my family!"))
+            }
         } else {
+            clearflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
             msgbox(format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something...Even us kids are strong!"))
             trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My Pokémon! Adults are lame!"))
 

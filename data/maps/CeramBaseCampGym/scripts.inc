@@ -58,7 +58,7 @@ CeramBaseCampGym_Red_5:
 
 CeramBaseCampGym_Red_8:
 # 34 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_Red_Text_5
+	msgbox CeramBaseCampGym_Red_Text_5, MSGBOX_NPC
 	goto CeramBaseCampGym_Red_1
 
 CeramBaseCampGym_Red_12:

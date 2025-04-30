@@ -427,7 +427,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 //TRAINERS
 script MtCeram_TrainerBattle_A {
     trainerbattle_single(TRAINER_MTCERAM_A, format("These mountains are the perfect training spot. Don't you agree?"), format("It's never enough!"))
-    msgbox(format("Since its so hot here, you sweat more. And sweat is good!"))
+    msgbox(format("Since it's so hot here, you sweat more. And sweat is good!"))
     release
     end
 }

@@ -1251,7 +1251,7 @@ F_TRAINER_FEMALE |
 #line 568
             .ability = ABILITY_INTIMIDATE,
 #line 569
-            .lvl = 18,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
