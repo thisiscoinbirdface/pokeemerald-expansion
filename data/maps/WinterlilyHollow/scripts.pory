@@ -228,61 +228,25 @@ script WinterlilyHollow_Froslass{
 }
 script WinterlilyHollow_Sneasler{
     playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
-    if (flag(FLAG_WINTERLILY_SNEASLER)){
-        msgbox(format("Sneasler seems to be trying to dig into the wall with limited success.\pDon't give up, Sneasler!"), MSGBOX_NPC)
-    } else {
-        msgbox(format("Sneasler seems to be trying to dig into the wall with limited success.\pClink...\pClink...\pAha! Sneasler struck somthing in the wall!\pTwo stones fell out of the wall."))
-        goto(WinterlilyHollow_Sneasler_Reward)
+    msgbox(format("Sneasler is digging into the wall...\nThere's a hole!\pFollow Sneasler into the hole?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        warp(MAP_MIRROH_INTERIOR_B1F, 16, 68)
     }
+    releaseall
     end
 }
 
-script WinterlilyHollow_Sneasler_Reward{
-    msgbox(format("Sneasler wants you to have one!"), MSGBOX_NPC)
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Fire Stone", "Ice Stone") 
-    if (var(VAR_RESULT) == 1){
-        goto(WinterlilyHollow_Sneasler_Reward1)
-    } else {
-        goto(WinterlilyHollow_Sneasler_Reward2)
-    }
-}
+script MirrohInterior_Sneasler{
+    playmoncry(SPECIES_SNEASLER, CRY_MODE_NORMAL)
+    msgbox(format("Sneasler is digging into the wall...\nThere's a hole!\pFollow Sneasler into the hole?"), MSGBOX_YESNO)
 
-script WinterlilyHollow_Sneasler_Reward1{
-    setvar(VAR_0x8006, ITEM_FIRE_STONE)
-    showitemdescription
-    msgbox(format("Are you sure?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        //giveitem
-        giveitem(ITEM_FIRE_STONE)
-        goto(WinterlilyHollow_Sneasler_Reward_End)
-    } else {
-        hideitemdescription
-        goto(WinterlilyHollow_Sneasler_Reward)
+        warp(MAP_WINTERLILY_HOLLOW, 38, 16)
     }
-}
-
-script WinterlilyHollow_Sneasler_Reward2{
-    setvar(VAR_0x8006, ITEM_ICE_STONE)
-    showitemdescription
-    msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1){
-        hideitemdescription
-        giveitem(ITEM_ICE_STONE)
-        goto(WinterlilyHollow_Sneasler_Reward_End)
-    } else {
-        hideitemdescription
-        goto(WinterlilyHollow_Sneasler_Reward)
-    }
-}
-
-script WinterlilyHollow_Sneasler_Reward_End{
-    setflag(FLAG_WINTERLILY_SNEASLER)
-    msgbox(format("Thank you Sneasler!"), MSGBOX_NPC)
+    releaseall
     end
 }
-
-
 
 
 

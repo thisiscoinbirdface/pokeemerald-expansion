@@ -4736,7 +4736,7 @@
       "name": "MtCeram_Layout",
       "width": 60,
       "height": 80,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Autumn",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtCeram/border.bin",
       "blockdata_filepath": "data/layouts/MtCeram/map.bin"
@@ -4756,7 +4756,7 @@
       "name": "MtCeram_Peak_Layout",
       "width": 30,
       "height": 20,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Autumn",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/MtCeram_Peak/border.bin",
       "blockdata_filepath": "data/layouts/MtCeram_Peak/map.bin"

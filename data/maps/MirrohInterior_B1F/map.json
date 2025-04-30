@@ -3,7 +3,7 @@
   "name": "MirrohInterior_B1F",
   "layout": "LAYOUT_MIRROH_INTERIOR_B1F",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_MT_MIRROH_INTERIOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
