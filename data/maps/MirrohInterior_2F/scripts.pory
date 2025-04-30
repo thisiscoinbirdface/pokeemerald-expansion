@@ -1,4 +1,12 @@
-mapscripts MirrohInterior_2F_MapScripts{}
+mapscripts MirrohInterior_2F_MapScripts{
+    MAP_SCRIPT_ON_RESUME: MirrohInterior_2F_SetHoleWarp
+}
+
+script MirrohInterior_2F_SetHoleWarp{
+    setstepcallback(STEP_CB_CRACKED_FLOOR)
+	setholewarp(MAP_MIRROH_INTERIOR_B1F)
+	end
+}
 
 //MAIN: walking wake painting
 

@@ -1281,7 +1281,9 @@
 #define FLAG_ITEM_ROUTE3_EXT_A                     0x43F
 #define FLAG_ITEM_ROUTE3_EXT_B                        0x440
 #define FLAG_ITEM_ROUTE3_EXT_C                         0x441
-#define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_EARTHQUAKE              0x442
+
+//mirroh B1F (diancie)
+#define FLAG_ITEM_MIRROH_B1F_A              0x442
 #define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
 #define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445

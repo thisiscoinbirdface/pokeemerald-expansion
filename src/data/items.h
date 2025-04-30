@@ -14302,4 +14302,19 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MiracleSeed,
     },
 
+    [ITEM_DIAMOND] =
+    {
+        .name = _("Diamond"),
+        .pluralName = _("Diamond"),
+        .description = COMPOUND_STRING(
+            "A lustrous gleaming\n"
+            "gem that symbolizes\n"
+            "virtue."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyXL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
 };

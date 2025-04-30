@@ -1226,7 +1226,7 @@ bool8 MetatileBehavior_IsCrackedFloorHole(u8 metatileBehavior)
 //come back to this
 bool8 MetatileBehavior_IsCrackedFloor(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_CRACKED_FLOOR && CheckBagHasItem(ITEM_HEAVY_DUTY_BOOTS, 1))
+    if (metatileBehavior == MB_CRACKED_FLOOR && CheckBagHasItem(ITEM_TREKKING_BOOTS, 1))
         return TRUE;
     else
         return FALSE;
