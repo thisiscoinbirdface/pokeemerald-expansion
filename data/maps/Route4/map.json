@@ -339,7 +339,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 29,
+      "y": 70,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 28,
+      "y": 70,
+      "elevation": 0,
+      "dest_map": "MAP_GASTREE_CITY",
+      "dest_warp_id": "9"
+    }
   ],
   "coord_events": [
     {

@@ -342,6 +342,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 29,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE4",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -104,6 +104,7 @@ void AnimTask_BlendBattleAnimPalExclude(u8 taskId)
 void AnimTask_SetCamouflageBlend(u8 taskId)
 {
     u32 selectedPalettes = UnpackSelectedBattlePalettes(gBattleAnimArgs[0]);
+    
     switch (gBattleTerrain)
     {
     case BATTLE_TERRAIN_GRASS:
@@ -152,6 +153,7 @@ void AnimTask_SetCamouflageBlend(u8 taskId)
         gBattleAnimArgs[4] = RGB_WHITE;
         break;
     }
+    gBattleAnimArgs[4] = RGB_WHITE;
 
     StartBlendAnimSpriteColor(taskId, selectedPalettes);
 }
