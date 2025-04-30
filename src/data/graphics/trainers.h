@@ -368,22 +368,22 @@ const u32 gTrainerFrontPic_KimonoGirl[] = INCBIN_U32("graphics/trainers/my_train
 const u32 gTrainerPalette_KimonoGirl[] = INCBIN_U32("graphics/trainers/my_trainers/kimono_girl.gbapal.lz");
 
 const u32 gTrainerFrontPic_Backpacker[] = INCBIN_U32("graphics/trainers/my_trainers/backpacker.4bpp.lz");
-const u16 gTrainerPalette_Backpacker[] = INCBIN_U16("graphics/trainers/my_trainers/backpacker.gbapal");
+const u32 gTrainerPalette_Backpacker[] = INCBIN_U32("graphics/trainers/my_trainers/backpacker.gbapal.lz");
 
 const u32 gTrainerFrontPic_Firefighter[] = INCBIN_U32("graphics/trainers/my_trainers/firefighter.4bpp.lz");
-const u16 gTrainerPalette_Firefighter[] = INCBIN_U16("graphics/trainers/my_trainers/firefighter.gbapal");
+const u32 gTrainerPalette_Firefighter[] = INCBIN_U32("graphics/trainers/my_trainers/firefighter.gbapal.lz");
 
 const u32 gTrainerFrontPic_FairyLady[] = INCBIN_U32("graphics/trainers/my_trainers/fairy_lady.4bpp.lz");
-const u16 gTrainerPalette_FairyLady[] = INCBIN_U16("graphics/trainers/my_trainers/fairy_lady.gbapal");
+const u32 gTrainerPalette_FairyLady[] = INCBIN_U32("graphics/trainers/my_trainers/fairy_lady.gbapal.lz");
 
 const u32 gTrainerFrontPic_CoolGirl[] = INCBIN_U32("graphics/trainers/my_trainers/cool_girl.4bpp.lz");
-const u16 gTrainerPalette_CoolGirl[] = INCBIN_U16("graphics/trainers/my_trainers/cool_girl.gbapal");
+const u32 gTrainerPalette_CoolGirl[] = INCBIN_U32("graphics/trainers/my_trainers/cool_girl.gbapal.lz");
 
 const u32 gTrainerFrontPic_Waitress[] = INCBIN_U32("graphics/trainers/my_trainers/waitress.4bpp.lz");
-const u16 gTrainerPalette_Waitress[] = INCBIN_U16("graphics/trainers/my_trainers/waitress.gbapal");
+const u32 gTrainerPalette_Waitress[] = INCBIN_U32("graphics/trainers/my_trainers/waitress.gbapal.lz");
 
 const u32 gTrainerFrontPic_CoolGuy[] = INCBIN_U32("graphics/trainers/my_trainers/cool_guy.4bpp.lz");
-const u16 gTrainerPalette_CoolGuy[] = INCBIN_U16("graphics/trainers/my_trainers/cool_guy.gbapal");
+const u32 gTrainerPalette_CoolGuy[] = INCBIN_U32("graphics/trainers/my_trainers/cool_guy.gbapal.lz");
 
 
 
