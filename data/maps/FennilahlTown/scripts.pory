@@ -283,7 +283,7 @@ script FennilahlTown_Budew_JoinParty{
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox(format("Budew has joined your party!\pWelcome, Budew! Let's get along well together!"))
     } else {
-        applymovement(LOCALID_BUDEW, moves(walk_fast_right walk_fast_down * 3 walk_fast_right * 2 walk_fast_down * 4))
+        applymovement(LOCALID_BUDEW, moves(walk_fast_up walk_fast_right * 2 walk_fast_down * 4 walk_fast_right * 2 walk_fast_down * 4))
         removeobject(LOCALID_BUDEW)
         msgbox(format("Budew ran off..."))
         release

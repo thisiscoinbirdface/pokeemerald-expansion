@@ -14,8 +14,7 @@ script Route1_House_Quest_Done{
 
 
 script Route1_House_QuestInProgress{
-    lockall
-    faceplayer
+    msgbox(format("Ah, trainer, welcome back! Azurill and I have been waiting for you."), MSGBOX_NPC)
     msgbox(format("Have you brought a Pecha Berry?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         checkitem(ITEM_PECHA_BERRY)
@@ -30,7 +29,7 @@ script Route1_House_QuestInProgress{
             release
             playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
             applymovement(2, moves(jump_in_place_down))
-            msgbox(format("AZURILL: zuuu!!!!!\nIt seems to have revived!"))
+            msgbox(format("Zuuu!!!!!\nAzurill has revived!"))
             release
             faceplayer
             msgbox(format("Child, you must have something in return. The least I can do."))
@@ -38,10 +37,10 @@ script Route1_House_QuestInProgress{
             goto(Route1_House_Reward)
             
         } else {
-            msgbox(format("I don't see a Pecha Berry here...please come back when you have one."))
+            msgbox(format("I don't see a Pecha Berry here...please come back when you have one."), MSGBOX_NPC)
         }
     } else {
-        msgbox(format("Please hurry - my baby's suffering!"))
+        msgbox(format("Please hurry - my baby's suffering!"), MSGBOX_NPC)
     }
 
     releaseall

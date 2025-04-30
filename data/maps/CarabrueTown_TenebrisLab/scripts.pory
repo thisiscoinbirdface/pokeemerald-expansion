@@ -401,11 +401,9 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
 
 script CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric{
-    lockall
-    faceplayer
     speakername("Detective")
-    msgbox(format("Don't let one victory get to your head. Kohla's already got a head start. You'd better hurry if you want to catch up."))
-    releaseall
+    msgbox(format("Don't let one victory get to your head. Kohla's already got a head start. You'd better hurry if you want to catch up."), MSGBOX_NPC)
+    end
 }
 
 
