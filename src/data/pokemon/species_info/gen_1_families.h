@@ -5088,7 +5088,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 190,
-        .expYield = 54,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 63,
+        .expYield = 58,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 63,
         .evYield_Speed = 1,
         .itemRare = ITEM_SNOWBALL,
         .genderRatio = PERCENT_FEMALE(75),
@@ -9119,7 +9119,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #elif P_UPDATED_EXP_YIELDS >= GEN_4
     #define GEODUDE_EXP_YIELD 73
 #else
-    #define GEODUDE_EXP_YIELD 60//86
+    #define GEODUDE_EXP_YIELD 66//86
 #endif
 
 #define GOLEM_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)
