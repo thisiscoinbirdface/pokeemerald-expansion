@@ -402,8 +402,8 @@ script Route6_Gabrielle_Victory{
     msgbox(format("You got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zorua for sure!"))
     release
     //gabrielle thanks and lives in pelluca
-    applymovement(LOCALID_GRUNT1, moves(walk_down * 2 walk_left * 3 walk_down *4))
-    applymovement(LOCALID_GRUNT2, moves(walk_down walk_left * 3 walk_down *4))   
+    applymovement(LOCALID_GRUNT1, moves(walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3)) 
+    applymovement(LOCALID_GRUNT2, moves(walk_down walk_left * 4 walk_up *2 walk_left * 3))  
     waitmovement(0)
 
     removeobject(LOCALID_GRUNT1)
@@ -420,7 +420,7 @@ script Route6_Gabrielle_Victory{
     speakername("Gabrielle")
     msgbox(format("I live Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
     release
-    applymovement(LOCALID_GRUNT1, moves(walk_left walk_down * 2 walk_left * 3 walk_down *4))    
+    applymovement(LOCALID_GAB, moves(walk_left walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3))    
     waitmovement(0)
     removeobject(LOCALID_GAB)
     setflag(FLAG_ROUTE6_GABRIELLE_BULLY)

@@ -492,10 +492,8 @@ GalecrestCity_DetectiveAcademy_Yamper_Battle::
 
 GalecrestCity_DetectiveAcademy_Charcadet_A::
 # 342 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	lockall
-# 343 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	playmoncry SPECIES_CHARCADET, CRY_MODE_NORMAL
-# 344 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 343 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Charcadet_A_Text_0, MSGBOX_NPC
 	end
 
@@ -878,6 +876,6 @@ GalecrestCity_DetectiveAcademy_Yamper_Battle_Text_0:
 	.string "Yamper's not backing down!$"
 
 GalecrestCity_DetectiveAcademy_Charcadet_A_Text_0:
-# 344 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 343 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Charcadet is also curious about the\n"
 	.string "class rankings!$"

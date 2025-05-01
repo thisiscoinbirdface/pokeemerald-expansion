@@ -584,7 +584,7 @@ Route6_Gabrielle_Victory::
 # 422 "data//maps/Route6/scripts.pory"
 	release
 # 423 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_3
+	applymovement LOCALID_GAB, Route6_Gabrielle_Victory_Movement_3
 # 424 "data//maps/Route6/scripts.pory"
 	waitmovement 0
 # 425 "data//maps/Route6/scripts.pory"
@@ -713,13 +713,17 @@ Route6_Gabrielle_Victory_Movement_0:
 # 405 "data//maps/Route6/scripts.pory"
 	walk_left
 # 405 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
 # 405 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 405 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 405 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
+# 405 "data//maps/Route6/scripts.pory"
+	walk_left
+# 405 "data//maps/Route6/scripts.pory"
+	walk_left
 	step_end
 
 # 406 "data//maps/Route6/scripts.pory"
@@ -733,13 +737,17 @@ Route6_Gabrielle_Victory_Movement_1:
 # 406 "data//maps/Route6/scripts.pory"
 	walk_left
 # 406 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
 # 406 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 406 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 406 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
+# 406 "data//maps/Route6/scripts.pory"
+	walk_left
+# 406 "data//maps/Route6/scripts.pory"
+	walk_left
 	step_end
 
 # 413 "data//maps/Route6/scripts.pory"
@@ -763,13 +771,17 @@ Route6_Gabrielle_Victory_Movement_3:
 # 423 "data//maps/Route6/scripts.pory"
 	walk_left
 # 423 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
 # 423 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 423 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_up
 # 423 "data//maps/Route6/scripts.pory"
-	walk_down
+	walk_left
+# 423 "data//maps/Route6/scripts.pory"
+	walk_left
+# 423 "data//maps/Route6/scripts.pory"
+	walk_left
 	step_end
 
 Route6_Nurse_Demo_Text_0:

@@ -469,26 +469,22 @@ script RangerInstitute_2F_NPC_4{
 //MONS
 //Bayleef
 script RangerInstitute_Mon_Bayleef{
-    lockall
-    faceplayer
     if (flag(FLAG_RANGER_INSTITUTE_BAYLEEF)){
-        msgbox(format("BAYLEEF is singing happily!"))        
+        msgbox(format("Bayleef is singing happily!"), MSGBOX_NPC)        
     } else {
+        lockall
+        faceplayer
         playmoncry(SPECIES_BAYLEEF, CRY_MODE_NORMAL)
-        msgbox(format("BAYLEEF is singing happily! It snuggles upto you and gives you something..."))
-        giveitem(ITEM_POTION)
+        msgbox(format("Bayleef is singing happily! It snuggles upto you and gives you something..."))
+        giveitem(ITEM_MAX_REVIVE)
         setflag(FLAG_RANGER_INSTITUTE_BAYLEEF)
-        msgbox(format("Thanks BAYLEEF!"))
+        msgbox(format("Thanks Bayleef!"), MSGBOX_NPC)
     }
-    releaseall
     end
 }
 script RangerInstitute_Mon_Palpitoad{
-    lockall
-    faceplayer
     playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
-    msgbox(format("PALPITOAD grunts and waddles around. It seems upset..."))
-    releaseall
+    msgbox(format("Palpitoad grunts and waddles around. It seems upset..."), MSGBOX_NPC)
     end
 }
 script RangerInstitute_Mon_Frogadier{
@@ -496,15 +492,11 @@ script RangerInstitute_Mon_Frogadier{
     faceplayer
     playmoncry(SPECIES_FROGADIER, CRY_MODE_NORMAL)
     msgbox(format(""))
-    releaseall
     end
 }
 script RangerInstitute_Mon_Scyther{
-    lockall
-    faceplayer
     playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
-    msgbox(format("SCYTHER looks as bummed out as its trainer!"))
-    releaseall
+    msgbox(format("Scyther looks as bummed out as its trainer!"), MSGBOX_NPC)
     end
 }
 
