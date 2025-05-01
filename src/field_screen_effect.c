@@ -12,6 +12,7 @@
 #include "field_screen_effect.h"
 #include "field_special_scene.h"
 #include "field_weather.h"
+#include "fishing_game.h"
 #include "gpu_regs.h"
 #include "heal_location.h"
 #include "io_reg.h"
@@ -470,6 +471,14 @@ static void Task_ReturnToFieldNoScript(u8 taskId)
     }
 }
 
+static void Task_ReturnToFieldFishTreasure(u8 taskId)
+{
+    if (WaitForWeatherFadeIn() == 1)
+    {
+        gTasks[taskId].func = Task_DoReturnToFieldFishTreasure;
+    }
+}
+
 void FieldCB_ReturnToFieldNoScript(void)
 {
     LockPlayerFieldControls();
@@ -483,6 +492,15 @@ void FieldCB_ReturnToFieldNoScriptCheckMusic(void)
     Overworld_PlaySpecialMapMusic();
     FadeInFromBlack();
     CreateTask(Task_ReturnToFieldNoScript, 10);
+}
+
+bool8 FieldCB_ReturnToFieldFishTreasure(void)
+{
+    LockPlayerFieldControls();
+    Overworld_PlaySpecialMapMusic();
+    FadeInFromBlack();
+    CreateTask(Task_ReturnToFieldFishTreasure, 10);
+    return TRUE;
 }
 
 static bool32 PaletteFadeActive(void)
