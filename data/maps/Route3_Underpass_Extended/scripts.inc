@@ -41,7 +41,7 @@ Route3_Ext_Trainer_A::
 # 36 "data//maps/Route3_Underpass_Extended/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE3_EXT_C, Route3_Ext_Trainer_A_Text_0, Route3_Ext_Trainer_A_Text_1
 # 37 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	msgbox Route3_Ext_Trainer_A_Text_2
+	msgbox Route3_Ext_Trainer_A_Text_2, MSGBOX_NPC
 	return
 
 

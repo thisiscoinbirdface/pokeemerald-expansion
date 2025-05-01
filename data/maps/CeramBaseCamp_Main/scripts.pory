@@ -337,7 +337,7 @@ script CeramBaseCamp_Main_NPC2{
 
 script CeramBaseCamp_Main_Smeargle{
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
-    msgbox(format("SMEARGLE looks resolute. What is it thinking?"), MSGBOX_NPC)
+    msgbox(format("Smeargle looks resolute. What is it thinking?"), MSGBOX_NPC)
     end
 }
 

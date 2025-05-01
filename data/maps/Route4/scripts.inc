@@ -639,9 +639,8 @@ Route4_EventScript_EvilTeam_Text_0:
 
 Route4_EventScript_EvilTeam_Text_1:
 # 29 "data//maps/Route4/scripts.pory"
-	.string "Huh? We look suspicious? We're\n"
-	.string "just...um...construction workers. Sorry.\l"
-	.string "Yeah.$"
+	.string "Huh? We're suspicious? We're just...um...\n"
+	.string "...construction workers. Sorry. Yeah.$"
 
 Route4_EventScript_EvilTeam_Text_2:
 # 30 "data//maps/Route4/scripts.pory"

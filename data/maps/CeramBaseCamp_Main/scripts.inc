@@ -1042,7 +1042,7 @@ CeramBaseCamp_Main_NPC2_Text_1:
 
 CeramBaseCamp_Main_Smeargle_Text_0:
 # 340 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "SMEARGLE looks resolute. What is it\n"
+	.string "Smeargle looks resolute. What is it\n"
 	.string "thinking?$"
 
 CeramBaseCamp_Main_NPC3_Text_0:
