@@ -146,7 +146,7 @@ script WinterlilyHollowGym_LeaderBattle {
         release
 
         //Bye-bye
-        msgbox(format("VINIEL: Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there. Keep your spirits up, {PLAYER}!"))
+        msgbox(format("Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there...\p...but that's for another day. This is the end of the demo. Thank you for playing! Please drop any feedback and bug reports on Discord, and stay tuned for further updates!")) //Keep your spirits up, {PLAYER}!"))
         releaseall
         
     }
@@ -158,12 +158,20 @@ script WinterlilyHollowGym_LeaderBattle {
 
 
 
+script WinterlilyHollow_Gym_Ampharos{
+    playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
+    msgbox(format("The air around Ampharos is crackling with electricity!"), MSGBOX_NPC)
+    end
+}
+
+
+
 
 
 
 
 script WinterlilyHollowGym_Red{
-    if (flag(FLAG_BADGE01_GET)){
+    if (flag(FLAG_BADGE06_GET)){
         if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD)){
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
         } else {

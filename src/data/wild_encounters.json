@@ -13280,12 +13280,12 @@
               {
                 "min_level": 26,
                 "max_level": 30,
-                "species": "SPECIES_FRIGIBAX"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 26,
                 "max_level": 30,
-                "species": "SPECIES_FRIGIBAX"
+                "species": "SPECIES_BALTOY"
               }
             ]
           }
@@ -14055,6 +14055,75 @@
                 "min_level": 19,
                 "max_level": 22,
                 "species": "SPECIES_RIOLU"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_MIRROH_INTERIOR_B1F",
+          "base_label": "gMirrohInterior_B1F0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_SANDSHREW_ALOLA"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_CETODDLE"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_SANDSHREW_ALOLA"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_CETODDLE"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_CETODDLE"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_SWINUB"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_SWINUB"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 33,
+                "max_level": 35,
+                "species": "SPECIES_FRIGIBAX"
               }
             ]
           }

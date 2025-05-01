@@ -262,6 +262,11 @@ script MirrohInterior_Sneasler{
 
 
 script WinterlilyHollow_NPC_SurfMan{
+    //for the demo only
+    msgbox(format("If you surf through Lily Pond, you'll reach the Ivy River. Head down it and you'll reach Pelluca City!"), MSGBOX_NPC)
+    end
+
+    //true text
     lockall
     faceplayer
 

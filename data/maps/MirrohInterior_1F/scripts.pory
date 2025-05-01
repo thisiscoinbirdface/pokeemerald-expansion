@@ -103,6 +103,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(format("Thank you Chansey! You don't need to worry any more. It's time to take you back to Nurse Joy."))
     release
+    setflag(FLAG_MIRROH_NURSE_QUEST_CHANSEYGET)
     clearflag(FLAG_HIDE_MIRROH_LAST_CHANSEY)
     setvar(VAR_MIRROH_NURSE_CHANSEY_QUEST, 2)    
     warp(MAP_MIRROH_INTERIOR_1F, 42, 46)
