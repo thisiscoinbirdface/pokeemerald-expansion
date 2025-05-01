@@ -99,7 +99,7 @@ script MtCeram_Caves_Greta_Main{
     release
     delay(16)
     speakername("Greta")
-    msgbox(format("I have some leftover stock that you might like. These gems came all the way from Mt Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
+    msgbox(format("I have some leftover stock that you might like. These gems came all the way from Mt. Mirroh, on the other side of Cormoria! Once per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
     release
     
     delay(24)

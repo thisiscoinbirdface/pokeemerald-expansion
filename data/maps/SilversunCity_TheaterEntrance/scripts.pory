@@ -59,7 +59,7 @@ script SilversunCity_TheaterEntrance_EventScript_Receptionist{
 //Kid
 script SilversunCity_TheaterEntrance_EventScript_NPC1{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("The SERPERIOR was so scary!"), MSGBOX_NPC)
+        msgbox(format("The Servine was so scary!"), MSGBOX_NPC)
     } else {
         msgbox(format("Theater is so boring! I don't know why my parents like it."), MSGBOX_NPC)
     }
@@ -71,7 +71,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("The action! The tension! And all the razzle-dazzle! Gloria was sizzling! Too bad she lost though."), MSGBOX_NPC)
     } else {
-        msgbox(format("I write for Cormoria CULTURE, the leading arts and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
+        msgbox(format("I write for Cormoria Culture, the leading arts and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
     }
     end
 }

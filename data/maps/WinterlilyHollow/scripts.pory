@@ -89,9 +89,9 @@ script WinterlilyHollow_NPC2{
 }
 script WinterlilyHollow_NPC3{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Did you come from Ivy River or Mt Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt. Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     } else {
-        msgbox(format("Did you come from Ivy River or Mt Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt. Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     }
     end
 }

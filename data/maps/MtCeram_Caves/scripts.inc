@@ -387,7 +387,7 @@ MtCeram_Caves_Greta_Main_Text_5:
 # 102 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "I have some leftover stock that you\n"
 	.string "might like. These gems came all the way\l"
-	.string "from Mt Mirroh, on the other side of\l"
+	.string "from Mt. Mirroh, on the other side of\l"
 	.string "Cormoria! Once per battle, a gem\l"
 	.string "increases the power of its\l"
 	.string "corresponding move type by a third.\l"

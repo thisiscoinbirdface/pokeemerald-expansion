@@ -231,7 +231,7 @@ FennilahlTown_Budew_FirstBerry::
 # 161 "data//maps/FennilahlTown/scripts.pory"
 	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
 # 162 "data//maps/FennilahlTown/scripts.pory"
-	applymovement LOCALID_BUDEW, Fennilahl_Breech_QuestInProgress_Movement_4
+	applymovement LOCALID_BUDEW, FennilahlTown_Budew_FirstBerry_Movement_0
 # 163 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
 # 164 "data//maps/FennilahlTown/scripts.pory"
@@ -337,7 +337,7 @@ FennilahlTown_Budew_SecondBerry_5:
 # 213 "data//maps/FennilahlTown/scripts.pory"
 	release
 # 214 "data//maps/FennilahlTown/scripts.pory"
-	applymovement LOCALID_BUDEW, FennilahlTown_Budew_SecondBerry_Movement_1
+	applymovement LOCALID_BUDEW, FennilahlTown_Budew_SecondBerry_Movement_0
 # 215 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
 # 216 "data//maps/FennilahlTown/scripts.pory"
@@ -519,29 +519,21 @@ Fennilahl_Breech_QuestInProgress_Movement_6:
 	face_down
 	step_end
 
-# 177 "data//maps/FennilahlTown/scripts.pory"
+# 162 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_FirstBerry_Movement_0:
-# 177 "data//maps/FennilahlTown/scripts.pory"
+# 162 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 177 "data//maps/FennilahlTown/scripts.pory"
+# 162 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 177 "data//maps/FennilahlTown/scripts.pory"
+# 162 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
 
 # 199 "data//maps/FennilahlTown/scripts.pory"
 FennilahlTown_Budew_SecondBerry_Movement_0:
 # 199 "data//maps/FennilahlTown/scripts.pory"
-	jump_in_place_up
-# 199 "data//maps/FennilahlTown/scripts.pory"
-	jump_in_place_up
-	step_end
-
-# 214 "data//maps/FennilahlTown/scripts.pory"
-FennilahlTown_Budew_SecondBerry_Movement_1:
-# 214 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
-# 214 "data//maps/FennilahlTown/scripts.pory"
+# 199 "data//maps/FennilahlTown/scripts.pory"
 	jump_in_place_down
 	step_end
 

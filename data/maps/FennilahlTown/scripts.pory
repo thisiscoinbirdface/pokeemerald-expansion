@@ -159,7 +159,7 @@ script FennilahlTown_Budew{
 script FennilahlTown_Budew_FirstBerry{
 
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
-    applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 3))
+    applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 3))
     waitmovement(0)
     msgbox(format("Budew seems to want something..."))
     release
@@ -196,7 +196,7 @@ script FennilahlTown_Budew_FirstBerry{
 script FennilahlTown_Budew_SecondBerry{
 
     playmoncry(SPECIES_BUDEW, CRY_MODE_NORMAL)
-    applymovement(LOCALID_BUDEW, moves(jump_in_place_up * 2))
+    applymovement(LOCALID_BUDEW, moves(jump_in_place_down * 2))
     waitmovement(0)
     msgbox(format("Budew seems to want something again...but not an Oran Berry."))
     release

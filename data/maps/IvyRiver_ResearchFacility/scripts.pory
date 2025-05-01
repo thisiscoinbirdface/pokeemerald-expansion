@@ -197,7 +197,7 @@ script IvyRiver_Ranger_TaurosBreeder{
     if (flag(FLAG_RANGER_TAUROS_USE)){
         msgbox(format("Gotta love the speed on this bull, eh?"), MSGBOX_NPC)
     } else {
-        msgbox(format("This here Tauros is my baby! It can take you up and down Mt Mirroh...oh, you aren't a Candidate yet? Sorry, only Candidates are allowed to use it."), MSGBOX_NPC)
+        msgbox(format("This here Tauros is my baby! It can take you up and down Mt. Mirroh...oh, you aren't a Candidate yet? Sorry, only Candidates are allowed to use it."), MSGBOX_NPC)
     }
     end
 }

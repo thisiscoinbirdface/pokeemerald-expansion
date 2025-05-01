@@ -922,7 +922,7 @@ IvyRiver_Ranger_TaurosBreeder_Text_0:
 IvyRiver_Ranger_TaurosBreeder_Text_1:
 # 200 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "This here Tauros is my baby! It can take\n"
-	.string "you up and down Mt Mirroh...oh, you\l"
+	.string "you up and down Mt. Mirroh...oh, you\l"
 	.string "aren't a Candidate yet? Sorry, only\l"
 	.string "Candidates are allowed to use it.$"
 

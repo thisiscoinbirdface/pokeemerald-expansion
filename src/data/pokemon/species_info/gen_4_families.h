@@ -2260,7 +2260,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 63,
+        .expYield = 48, //(P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 63,
         .evYield_Speed = 1,
         .itemRare = ITEM_HONEY,
         .genderRatio = PERCENT_FEMALE(12.5),

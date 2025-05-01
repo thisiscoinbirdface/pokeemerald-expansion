@@ -635,7 +635,7 @@ WinterlilyHollow_NPC2_Text_1:
 
 WinterlilyHollow_NPC3_Text_0:
 # 92 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Did you come from Ivy River or Mt\n"
+	.string "Did you come from Ivy River or Mt.\n"
 	.string "Mirroh? Of course you didn't come from\l"
 	.string "Ivy River - nobody goes there.$"
 

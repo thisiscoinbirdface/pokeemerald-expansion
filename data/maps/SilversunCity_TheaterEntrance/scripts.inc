@@ -222,7 +222,7 @@ SilversunCity_TheaterEntrance_EventScript_Receptionist_Text_1:
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_0:
 # 62 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "The SERPERIOR was so scary!$"
+	.string "The Servine was so scary!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_1:
 # 64 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -237,7 +237,7 @@ SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_1:
 # 74 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "I write for Cormoria CULTURE, the\n"
+	.string "I write for Cormoria Culture, the\n"
 	.string "leading arts and entertainment portal\l"
 	.string "in Cormoria! Let's see what Gloria has in\l"
 	.string "store today...it's supposed to be an\l"
