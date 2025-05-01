@@ -332,7 +332,9 @@ script VilethornWoods_NPC3{
     if (flag(FLAG_VILETHORN_NPC_ITEM)){
         msgbox(format("My foot hurts!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root. I got mad and ripped it out! Do you want it?"), MSGBOX_YESNO)
+        lockall
+        faceplayer
+        msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root. I got mad and ripped it out! Do you want it?"))
         if (var(VAR_RESULT) == 1){
             msgbox(format("I'm so angry that you'll have to battle me for it!"))
             trainerbattle_no_intro(TRAINER_VILETHORN_I, "My anger is gone now!")

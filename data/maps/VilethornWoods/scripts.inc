@@ -461,11 +461,15 @@ VilethornWoods_NPC3::
 # 332 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
 # 335 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC3_Text_1, MSGBOX_YESNO
+	lockall
 # 336 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 337 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC3_Text_1
+# 338 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC3_5
-# 344 "data//maps/VilethornWoods/scripts.pory"
+# 346 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_5, MSGBOX_NPC
 VilethornWoods_NPC3_1:
 	end
@@ -476,50 +480,50 @@ VilethornWoods_NPC3_2:
 	goto VilethornWoods_NPC3_1
 
 VilethornWoods_NPC3_5:
-# 337 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC3_Text_2
-# 338 "data//maps/VilethornWoods/scripts.pory"
-	trainerbattle_no_intro TRAINER_VILETHORN_I, VilethornWoods_NPC3_Text_3
 # 339 "data//maps/VilethornWoods/scripts.pory"
-	giveitem ITEM_BIG_ROOT
+	msgbox VilethornWoods_NPC3_Text_2
 # 340 "data//maps/VilethornWoods/scripts.pory"
-	release
+	trainerbattle_no_intro TRAINER_VILETHORN_I, VilethornWoods_NPC3_Text_3
 # 341 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_VILETHORN_NPC_ITEM
+	giveitem ITEM_BIG_ROOT
 # 342 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 343 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_NPC_ITEM
+# 344 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_4, MSGBOX_NPC
 	goto VilethornWoods_NPC3_1
 
 
 VilethornWoods_Celebi_Seed::
-# 356 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_0, MSGBOX_NPC
 # 358 "data//maps/VilethornWoods/scripts.pory"
-	checkitem ITEM_TIME_SEED
+	msgbox VilethornWoods_Celebi_Seed_Text_0, MSGBOX_NPC
 # 360 "data//maps/VilethornWoods/scripts.pory"
+	checkitem ITEM_TIME_SEED
+# 362 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_2
 VilethornWoods_Celebi_Seed_1:
 	end
 
 VilethornWoods_Celebi_Seed_2:
-# 361 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_1, MSGBOX_YESNO
 # 363 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_1, MSGBOX_YESNO
+# 365 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_4
 	goto VilethornWoods_Celebi_Seed_1
 
 VilethornWoods_Celebi_Seed_4:
-# 364 "data//maps/VilethornWoods/scripts.pory"
-	removeitem ITEM_TIME_SEED
 # 366 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_2, MSGBOX_SIGN
-# 367 "data//maps/VilethornWoods/scripts.pory"
-	release
+	removeitem ITEM_TIME_SEED
 # 368 "data//maps/VilethornWoods/scripts.pory"
-	delay 16
+	msgbox VilethornWoods_Celebi_Seed_Text_2, MSGBOX_SIGN
 # 369 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 370 "data//maps/VilethornWoods/scripts.pory"
+	delay 16
+# 371 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_3, MSGBOX_SIGN
 	goto VilethornWoods_Celebi_Seed_1
 
@@ -834,45 +838,45 @@ VilethornWoods_NPC3_Text_0:
 	.string "My foot hurts!$"
 
 VilethornWoods_NPC3_Text_1:
-# 335 "data//maps/VilethornWoods/scripts.pory"
+# 337 "data//maps/VilethornWoods/scripts.pory"
 	.string "Gah! I got lost in this stupid forest\n"
 	.string "and tripped on a giant tree root. I got\l"
 	.string "mad and ripped it out! Do you want it?$"
 
 VilethornWoods_NPC3_Text_2:
-# 337 "data//maps/VilethornWoods/scripts.pory"
+# 339 "data//maps/VilethornWoods/scripts.pory"
 	.string "I'm so angry that you'll have to battle\n"
 	.string "me for it!$"
 
 VilethornWoods_NPC3_Text_3:
-# 338 "data//maps/VilethornWoods/scripts.pory"
+# 340 "data//maps/VilethornWoods/scripts.pory"
 	.string "My anger is gone now!$"
 
 VilethornWoods_NPC3_Text_4:
-# 342 "data//maps/VilethornWoods/scripts.pory"
+# 344 "data//maps/VilethornWoods/scripts.pory"
 	.string "Good riddance! I hope you find some use\n"
 	.string "for it.$"
 
 VilethornWoods_NPC3_Text_5:
-# 344 "data//maps/VilethornWoods/scripts.pory"
+# 346 "data//maps/VilethornWoods/scripts.pory"
 	.string "Just as well. It's a root after all -\n"
 	.string "what use would it have?$"
 
 VilethornWoods_Celebi_Seed_Text_0:
-# 356 "data//maps/VilethornWoods/scripts.pory"
+# 358 "data//maps/VilethornWoods/scripts.pory"
 	.string "It's fertile soil...but not the same as\n"
 	.string "berry tree soil.$"
 
 VilethornWoods_Celebi_Seed_Text_1:
-# 361 "data//maps/VilethornWoods/scripts.pory"
+# 363 "data//maps/VilethornWoods/scripts.pory"
 	.string "Plant a Time Seed?$"
 
 VilethornWoods_Celebi_Seed_Text_2:
-# 366 "data//maps/VilethornWoods/scripts.pory"
+# 368 "data//maps/VilethornWoods/scripts.pory"
 	.string "{PLAYER} planted the time seed in the\n"
 	.string "fertile soil.$"
 
 VilethornWoods_Celebi_Seed_Text_3:
-# 369 "data//maps/VilethornWoods/scripts.pory"
+# 371 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe it needs some type of water to\n"
 	.string "grow...$"

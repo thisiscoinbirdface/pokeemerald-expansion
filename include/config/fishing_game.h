@@ -1,10 +1,10 @@
 #ifndef GUARD_CONFIG_FISHING_GAME_H
 #define GUARD_CONFIG_FISHING_GAME_H
 
-#define FG_FISH_MINIGAME_ENABLED            TRUE    // If set to FALSE, this fishing minigame will be completely disabled.
+#define FG_FISH_MINIGAME_ENABLED            TRUE//FLAG_SYS_FISHING_MINIGAME    // If set to FALSE, this fishing minigame will be completely disabled.
 
 #define FG_MINIGAME_ON_SEPARATE_SCREEN      FALSE   // If TRUE, play the minigame on its own dedicated screen instead of in the overworld.
-#define FG_DO_DOTS_GAME_BEFORE_MAIN_GAME    TRUE    // If FALSE, the fish will be hooked instantly, instead of doing the dots game.
+#define FG_DO_DOTS_GAME_BEFORE_MAIN_GAME    FALSE    // If FALSE, the fish will be hooked instantly, instead of doing the dots game.
 #define FG_PREVENT_FAILURE_IN_DOTS_GAME     TRUE    // If TRUE, the dots game cannot be failed.
 #define FG_OBSCURE_UNDISCOVERED_MONS        TRUE    // If TRUE, the Pokemon icon will be obscured if that species has not been seen in the Pokedex.
 #define FG_VAGUE_FISH_FOR_OBSCURED          FALSE   // If TRUE, uses a vague fish shape instead of a blacked out Pokemon icon when obscured.
