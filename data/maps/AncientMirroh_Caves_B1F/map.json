@@ -2,7 +2,7 @@
   "id": "MAP_ANCIENT_MIRROH_CAVES_B1F",
   "name": "AncientMirroh_Caves_B1F",
   "layout": "LAYOUT_ANCIENT_MIRROH_CAVES_B1F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CAVE_OF_ORIGIN",
   "region_map_section": "MAPSEC_ANCIENT_CERAM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

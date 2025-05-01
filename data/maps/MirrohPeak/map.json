@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_MIRROH_PEAK",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_SNOW",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,

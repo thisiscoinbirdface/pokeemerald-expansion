@@ -904,9 +904,9 @@ F_TRAINER_FEMALE |
 #line 429
         .trainerName = _("Jenny"),
 #line 430
-        .trainerClass = TRAINER_CLASS_COOL_GIRL,
+        .trainerClass = TRAINER_CLASS_LASS,
 #line 431
-        .trainerPic = TRAINER_PIC_COOL_GIRL,
+        .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
 #line 432
 F_TRAINER_FEMALE | 
@@ -5457,11 +5457,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIRROHINT2_E] =
     {
 #line 2231
-        .trainerName = _("TALLOW"),
+        .trainerName = _("Chara"),
 #line 2232
-        .trainerClass = TRAINER_CLASS_LASS,
+        .trainerClass = TRAINER_CLASS_COOL_GIRL,
 #line 2233
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerPic = TRAINER_PIC_COOL_GIRL,
         .encounterMusic_gender =
 #line 2234
 F_TRAINER_FEMALE | 

@@ -59,11 +59,11 @@ LilyPond_OnFrame::
 # 33 "data//maps/LilyPond/scripts.pory"
 	release
 # 35 "data//maps/LilyPond/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 36 "data//maps/LilyPond/scripts.pory"
 	removeobject 2
 # 37 "data//maps/LilyPond/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 39 "data//maps/LilyPond/scripts.pory"
 	setflag FLAG_HIDE_LILY_POND_KOHLA
 # 40 "data//maps/LilyPond/scripts.pory"
@@ -135,7 +135,7 @@ LilyPond_OnFrame_Text_3:
 	.string "KOHLA: And you just somehow happened\n"
 	.string "to see her?\p"
 	.string "...\p"
-	.string "KOHLA: {PLAYER}. xThat sounds like a\n"
+	.string "KOHLA: {PLAYER}. That sounds like a\n"
 	.string "complete lie to me.\p"
 	.string "KOHLA: Pathetic. To think the\n"
 	.string "detectives thought so highly of you.$"

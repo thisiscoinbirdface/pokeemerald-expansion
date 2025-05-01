@@ -108,7 +108,7 @@ WinterlilyHollow_NPC2::
 # 83 "data//maps/WinterlilyHollow/scripts.pory"
 	goto_if_set FLAG_MIRROHPEAK_MOXIE_DEFEATED, WinterlilyHollow_NPC2_2
 # 86 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC2_Text_1
+	msgbox WinterlilyHollow_NPC2_Text_1, MSGBOX_NPC
 WinterlilyHollow_NPC2_1:
 	end
 
@@ -390,7 +390,7 @@ WinterlilyHollow_NPC_SurfMan_1:
 # 286 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_SurfMan_Text_5
 # 287 "data//maps/WinterlilyHollow/scripts.pory"
-	giveitem ITEM_HM05
+	giveitem ITEM_HM03
 # 288 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_SurfMan_Text_6
 # 290 "data//maps/WinterlilyHollow/scripts.pory"

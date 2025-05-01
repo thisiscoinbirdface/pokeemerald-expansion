@@ -43,7 +43,7 @@ script MtMirrohExterior_BreechTrigger{
     waitmovement(0)
     delay(30)
     speakername("Breech")    
-    msgbox(format("{PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pSo you're chasing Team Somber. I admire you, {PLAYER}. Clefairy and I just saw a couple of them enter Mt. Mirroh. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
+    msgbox(format("{PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pSo you're chasing Team Somber. I admire you, {PLAYER}. Clefable and I just saw a couple of them enter Mt. Mirroh. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
     release
     delay(30)
     applymovement(LOCALID_BREECH, moves(face_left emote_exclamation_mark))    
@@ -175,10 +175,11 @@ script MtMirrohExterior_NPC_D{
     lockall
     msgbox(format("Hang in there Conkeldurr!"))
     release
-    applymovement(12, moves(emote_exclamation_mark))
+    faceplayer
+    applymovement(9, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
-    applymovement(12, moves(face_right))
+    applymovement(9, moves(face_right))
     waitmovement(0)
     releaseall
     end
@@ -186,7 +187,7 @@ script MtMirrohExterior_NPC_D{
 script MtMirrohExterior_Conkeldurr{
     lockall
     playmoncry(SPECIES_CONKELDURR, CRY_MODE_NORMAL)
-    msgbox(format("CONKELDURR: durr!!!!\pThe Toxicroak has poisoned it, but it's still going strong!"))
+    msgbox(format("Durr!!!!\pConkeldurr's been poisoned, but it's still going strong!"))
     releaseall
     end
 }
@@ -194,13 +195,13 @@ script MtMirrohExterior_Conkeldurr{
 //right expert belt
 script MtMirrohExterior_NPC_E{
     lockall
-    faceplayer
     msgbox(format("Finish this, Toxicroak!"))
     release
-    applymovement(13, moves(emote_exclamation_mark))
+    faceplayer
+    applymovement(10, moves(emote_exclamation_mark))
     msgbox(format("Don't disturb us - we're training!"))
     release
-    applymovement(13, moves(face_right))
+    applymovement(10, moves(face_left))
     waitmovement(0)
     releaseall
     end
@@ -208,7 +209,7 @@ script MtMirrohExterior_NPC_E{
 script MtMirrohExterior_Toxicroak{
     lockall
     playmoncry(SPECIES_TOXICROAK, CRY_MODE_NORMAL)
-    msgbox(format("TOXICROAK: croooaaakk!!!!\pIt's hammering the Conkeldurr with Posion Jabs!"))
+    msgbox(format("Croooaaakk!!!!\pIt's hammering Conkeldurr with Posion Jabs!"))
     releaseall
     end
 }

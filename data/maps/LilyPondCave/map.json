@@ -3,19 +3,19 @@
   "name": "LilyPondCave",
   "layout": "LAYOUT_LILY_POND_CAVE",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LILY_POND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LAPRAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BLASTOISE)",
       "x": 13,
       "y": 22,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "FLAG_LILYPOND_LAPRAS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LAPRAS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BLASTOISE)",
       "x": 13,
       "y": 13,
       "elevation": 0,

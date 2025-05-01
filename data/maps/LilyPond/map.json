@@ -3,7 +3,7 @@
   "name": "LilyPond",
   "layout": "LAYOUT_LILY_POND",
   "music": "MUS_RG_ROUTE11",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LILY_POND",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
   "map_type": "MAP_TYPE_ROUTE",

@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_MT_MIRROH_EXTERIOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_SECRET_BASE",
+  "map_type": "MAP_TYPE_SNOW",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -216,7 +216,7 @@
       "flag": "FLAG_ITEM_MIRROHEXT_E"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 39,
       "y": 44,
       "elevation": 0,
@@ -224,7 +224,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM43",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM14",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MIRROHEXT_C"
     },
@@ -301,8 +301,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "MtMirrohExterior_Trainer_C",
       "flag": "0"
     },

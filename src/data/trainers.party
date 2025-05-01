@@ -427,8 +427,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_JENNY ===
 Name: Jenny
-Class: Cool Girl
-Pic: Cool Girl
+Class: Lass
+Pic: Lass
 Gender: Female
 Music: Intense
 Double Battle: No
@@ -2228,9 +2228,9 @@ Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHINT2_E ===
-Name: TALLOW
-Class: Lass
-Pic: Lass
+Name: Chara
+Class: Cool Girl
+Pic: Cool Girl
 Gender: Female
 Music: Female
 Double Battle: No

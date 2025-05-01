@@ -13,6 +13,8 @@ mapscripts IvyRiver_Main_MapScripts{}
 
 script IvyRiver_Main_Fisherman_AssembleTrigger{
     if (flag(FLAG_HIDE_IVYRIVER_FISHERMEN)) {end}
+//should not trigger if quest is not active
+
 
     lockall
     applymovement(1, moves(face_right emote_exclamation_mark))

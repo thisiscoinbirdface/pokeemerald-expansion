@@ -303,8 +303,8 @@ MirrohInterior_2F_Trainer_D_Text_2:
 
 MirrohInterior_2F_Trainer_E_Text_0:
 # 128 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Hey, didn't I battle you before in Route\n"
-	.string "3? You're the one that beat me and my\l"
+	.string "Didn't I battle you before in Route 3?\n"
+	.string "You're the one that beat me and my\l"
 	.string "sister!$"
 
 MirrohInterior_2F_Trainer_E_Text_1:

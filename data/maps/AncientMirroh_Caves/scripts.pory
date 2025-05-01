@@ -50,9 +50,11 @@ script AncientMirroh_Aerodactyl{
     specialvar(VAR_RESULT, GetBattleOutcome)
     if (var(VAR_RESULT) == B_OUTCOME_WON){
         setflag(FLAG_ANCIENT_MIRROH_AERODACTYL)
+        removeobject(1)
     }
     if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
         setflag(FLAG_ANCIENT_MIRROH_AERODACTYL)
+        removeobject(1)
     }            
     if (var(VAR_RESULT) == B_OUTCOME_RAN){
         msgbox(format("The Pokémon settles back into its sleep..."))

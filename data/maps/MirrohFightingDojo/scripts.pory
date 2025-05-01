@@ -11,8 +11,7 @@ mapscripts MirrohFightingDojo_MapScripts{}
 script GardenShop_Cashier{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Pelluca Restaurant! Unfortunately we're fully booked out today."))
-	message(format("But you can still order something to take away!"))
+    msgbox(format("Welcome to the Mirroh Gardenery!"))
 	waitmessage
 	pokemart(GardenShop_Inventory)
     msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
