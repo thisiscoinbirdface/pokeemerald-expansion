@@ -341,11 +341,8 @@ script GastreeCity_NPC9{
 
 
 script GastreeCity_Poltchageist{
-    lockall
     playmoncry(SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL)
-    faceplayer
-    msgbox(format("Poltchageist is picking Revival Herbs for the teahouse!"))
-    releaseall
+    msgbox(format("Poltchageist is picking Revival Herbs for the teahouse!"), MSGBOX_NPC)
     end
 }
 

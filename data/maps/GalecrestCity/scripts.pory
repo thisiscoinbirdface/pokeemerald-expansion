@@ -307,11 +307,8 @@ script GalecrestCity_NPC_4{
 }
 
 script GalecrestCity_Totodile{
-    lockall
-    faceplayer
-    playmoncry(SPECIES_TOTODILE, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
     msgbox(format("Totodile is having fun with the siblings!"))
-    releaseall
     end
 }
 

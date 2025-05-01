@@ -126,9 +126,9 @@ script PellucaCity_Clauncher{
 
     msgbox(format("It's a Corsola! It's looking disoriented.\p{PLAYER} gently lifts the Corsola and tosses it back into the river."))
     release
-    fadescreenswapbuffers(FADE_TO_WHITE)
+    fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_FROM_WHITE)    
+    fadescreenswapbuffers(FADE_TO_BLACK)    
     msgbox(format("See you Corsola!"))
 
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1)
@@ -157,11 +157,8 @@ script PellucaCityHouses_NPC4{
 
 //MONS
 script PellucaCityHouses_Delphox{
-    lockall
     playmoncry(SPECIES_DELPHOX, CRY_MODE_NORMAL)
-    faceplayer
     msgbox(format("Delphox looks wistful..."), MSGBOX_NPC)
-    releaseall
     end
 }
 

@@ -219,11 +219,8 @@ script WinterlilyHollow_MimeJr_3{
 
 
 script WinterlilyHollow_Froslass{
-    lockall
-    faceplayer
     playmoncry(SPECIES_SNOVER, CRY_MODE_NORMAL)
-    msgbox(format("Snover is getting dizzy...what is it circling for?"))
-    releaseall
+    msgbox(format("Snover is getting dizzy...what is it circling for?"), MSGBOX_NPC)
     end
 }
 script WinterlilyHollow_Sneasler{

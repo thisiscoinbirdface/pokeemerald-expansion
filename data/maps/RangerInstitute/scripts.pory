@@ -488,10 +488,8 @@ script RangerInstitute_Mon_Palpitoad{
     end
 }
 script RangerInstitute_Mon_Frogadier{
-    lockall
-    faceplayer
     playmoncry(SPECIES_FROGADIER, CRY_MODE_NORMAL)
-    msgbox(format(""))
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
 script RangerInstitute_Mon_Scyther{

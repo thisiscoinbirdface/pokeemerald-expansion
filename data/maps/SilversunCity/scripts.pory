@@ -175,11 +175,8 @@ script SilversunCity_NPC6{
 }
 
 script SilversunCity_Murkrow{
-    lockall
-    faceplayer
     playmoncry(SPECIES_MURKROW, CRY_MODE_NORMAL)
-    msgbox(format("Murkrow glares at you. It's as if its saying, 'Get out of the way!'"))
-    releaseall
+    msgbox(format("Murkrow glares at you. It's as if its saying, 'Get out of the way!'"), MSGBOX_NPC)
     end
 }
 

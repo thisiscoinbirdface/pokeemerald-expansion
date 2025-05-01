@@ -181,10 +181,8 @@ script GastreeCity_TeaHouse_Snorunt{
 }
 
 script GastreeCity_TeaHouse_Sinistea{
-    lockall
     playmoncry(SPECIES_SINISTEA, CRY_MODE_NORMAL)
-    msgbox(format("Sinistea is busy serving tea. Better not disturb it!"))
-    releaseall
+    msgbox(format("Sinistea is busy serving tea. Better not disturb it!"), MSGBOX_NPC)
     end
 }
 

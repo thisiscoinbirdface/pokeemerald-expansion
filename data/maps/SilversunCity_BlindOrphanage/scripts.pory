@@ -302,26 +302,20 @@ script SilversunCity_BlindOrphanage_NPC_6{
 }
 
 script SilversunCity_BlindOrphanage_Ralts{
-    lockall
     playmoncry(SPECIES_RALTS, CRY_MODE_NORMAL)
-    msgbox(format("Ralts is focused intently on its child...perhaps its sending some warm thoughts across."))
-    releaseall
+    msgbox(format("Ralts is focused intently on its child...perhaps its sending some warm thoughts across."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_BlindOrphanage_Noibat{
-    lockall
     playmoncry(SPECIES_NOIBAT, CRY_MODE_NORMAL)
-    msgbox(format("Noibat looks bored...it must be waiting for night-time!"))
-    releaseall
+    msgbox(format("Noibat looks bored...it must be waiting for night-time!"), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_BlindOrphanage_Furfrou{
-    lockall
     playmoncry(SPECIES_FURFROU, CRY_MODE_NORMAL)
-    msgbox(format("Furfrou barks! And barks again!"))
-    releaseall
+    msgbox(format("Furfrou barks! And barks again!"), MSGBOX_NPC)
     end
 }
 

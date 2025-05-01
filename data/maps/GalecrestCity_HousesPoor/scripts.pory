@@ -38,12 +38,8 @@ script GalecrestCity_HousesPoor_NPC2{
 }
 
 script GalecrestCity_HousesPoor_Jigglypuff{
-    lockall
-    faceplayer
     playmoncry(SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL)
-    delay(30)
     msgbox(format("Jigglypuff is singing happily! Better leave before I fall asleep..."), MSGBOX_NPC)
-    releaseall
     end
 }
 

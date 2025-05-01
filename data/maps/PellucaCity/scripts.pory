@@ -180,8 +180,6 @@ script PellucaCity_Zorua{
 
 //MONS
 script PellucaCity_Lycanroc{
-    lockall
-    faceplayer
     playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
     msgbox(format("Lycanroc is howling. It must be pining for a table at the restaurant!"), MSGBOX_NPC)
     end
