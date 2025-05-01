@@ -391,6 +391,25 @@ CeramBaseCamp_Excadrill_13:
 	goto CeramBaseCamp_Excadrill_1
 
 
+CeramBaseCamp_TalonFlame::
+# 276 "data//maps/CeramBaseCamp/scripts.pory"
+	playmoncry SPECIES_TALONFLAME, CRY_MODE_NORMAL
+# 277 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_TalonFlame_Text_0, MSGBOX_YESNO
+# 278 "data//maps/CeramBaseCamp/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq CeramBaseCamp_TalonFlame_2
+CeramBaseCamp_TalonFlame_1:
+# 281 "data//maps/CeramBaseCamp/scripts.pory"
+	releaseall
+	end
+
+CeramBaseCamp_TalonFlame_2:
+# 279 "data//maps/CeramBaseCamp/scripts.pory"
+	warp MAP_MT_CERAM, 11, 20
+	goto CeramBaseCamp_TalonFlame_1
+
+
 # 11 "data//maps/CeramBaseCamp/scripts.pory"
 CeramBaseCamp_RedBlockGym_Movement_0:
 # 11 "data//maps/CeramBaseCamp/scripts.pory"
@@ -439,9 +458,9 @@ CeramBaseCamp_RedBlockGym_Text_0:
 CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 # 26 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Hey kid! The rules are you can't climb\n"
-	.string "unless you have the FIRE BADGE. If you\l"
-	.string "can't beat Ariana, you won't be able to\l"
-	.string "handle the heat of the mountain!$"
+	.string "unless you have the Cinder Badge. If\l"
+	.string "you can't beat Ariana, you won't be able\l"
+	.string "to handle the heat of the mountain!$"
 
 CeramBaseCamp_NPC_Exit_Text_0:
 # 34 "data//maps/CeramBaseCamp/scripts.pory"
@@ -462,7 +481,7 @@ CeramBaseCamp_NPC2_Text_0:
 	.string "This camp was established to dig a\n"
 	.string "tunnel through Mt. Ceram. Old equipment\l"
 	.string "from back then is left here. I remember\l"
-	.string "a DRILBUR made its home inside one of\l"
+	.string "a Drilbur made its home inside one of\l"
 	.string "these machines and refused to leave!\l"
 	.string "Haha! I wonder if it's still there...$"
 
@@ -589,3 +608,8 @@ CeramBaseCamp_Excadrill_Text_3:
 # 251 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "The Drilbur retreats back into its home.\n"
 	.string "Better not disturb it again!$"
+
+CeramBaseCamp_TalonFlame_Text_0:
+# 277 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "Talonflame's about to fly to the peak!\n"
+	.string "Hitch a ride?$"

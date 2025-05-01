@@ -79,6 +79,7 @@ script MirrohBaseCamp_EventScript_NPC2{
     speakername("Martha")
     msgbox(format("My name? It's Martha, dear. I manage the graveyard.\pYou want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
     release
+    hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
     applymovement(LOCALID_MARTHA, moves(walk_right walk_down * 3 walk_left * 9))
     waitmovement(0)

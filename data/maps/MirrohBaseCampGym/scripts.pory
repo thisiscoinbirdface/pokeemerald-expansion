@@ -272,78 +272,70 @@ script MirrohBaseCampGym_Leader{
         release
         delay(60)
         speakername("Carona")
-        msgbox(format("...but that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I have one badge left. Do you wish to challenge me for it?"), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1){
-            speakername("Carona")
-            msgbox(format("Come then, let us battle."))
+        msgbox(format("...but that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I have one badge left. Will you be the one to deliver the final blow?"))
 
-            //trainers cheer
+        hidefollower
 
-            fadescreenswapbuffers(FADE_TO_BLACK)
-            release
-            setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        release
+        setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
 
-            special(SpawnCameraObject)
-            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
-            waitmovement(0)
-            special(RemoveCameraObject)
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-            applymovement(1, moves(face_left))
-            fadescreenswapbuffers(FADE_FROM_BLACK)
-            speakername("Carona")
-            msgbox(format("Now, trainer, feel the force of these iron fists!"))
-            release
+        special(SpawnCameraObject)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
+        waitmovement(0)
+        special(RemoveCameraObject)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        applymovement(1, moves(face_left))
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        speakername("Carona")
+        msgbox(format("Now, trainer, feel the force of these iron fists!"))
+        release
 
-            //Battle
-            trainerbattle_no_intro(TRAINER_MIRROHBASECAMP_LEADER, "A glorious battle!")
+        //Battle
+        trainerbattle_no_intro(TRAINER_MIRROHBASECAMP_LEADER, "A glorious battle!")
 
-            //Post battle
-            //Receive the badge
-            speakername("Carona")
-            msgbox(format("What a beautiful display! What a thrill! This is why we do what we do, trainer!\pNow come to me."))
-            release
+        //Post battle
+        //Receive the badge
+        speakername("Carona")
+        msgbox(format("What a beautiful display! What a thrill! This is why we do what we do, trainer!\pNow come to me."))
+        release
 
-            special(SpawnCameraObject)
-            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
-            waitmovement(0)
-            special(RemoveCameraObject)
+        special(SpawnCameraObject)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 2))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
+        waitmovement(0)
+        special(RemoveCameraObject)
 
 
-            // fadescreenswapbuffers(FADE_TO_BLACK)
-            // setobjectxy(OBJ_EVENT_ID_PLAYER, 7, 5)
-            // applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-            // applymovement(1, moves(face_left))
-            // fadescreenswapbuffers(FADE_FROM_BLACK)
+        // fadescreenswapbuffers(FADE_TO_BLACK)
+        // setobjectxy(OBJ_EVENT_ID_PLAYER, 7, 5)
+        // applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+        // applymovement(1, moves(face_left))
+        // fadescreenswapbuffers(FADE_FROM_BLACK)
 
-            speakername("Carona")
-            msgbox(format("How gratifying that my last badge goes to someone with your guts!"))
-            release
-            delay(8)
+        speakername("Carona")
+        msgbox(format("How gratifying that my last badge goes to someone with your guts!"))
+        release
+        delay(8)
 
-            //Play gym badge fanfare
-            setflag(FLAG_BADGE05_GET)
-            message(format("{PLAYER} received the Ironfist Badge from Carona."))
-            call(Common_EventScript_PlayGymBadgeFanfare)
+        //Play gym badge fanfare
+        setflag(FLAG_BADGE05_GET)
+        message(format("{PLAYER} received the Ironfist Badge from Carona."))
+        call(Common_EventScript_PlayGymBadgeFanfare)
 
-            speakername("Carona")
-            msgbox(format("I see the closure of this gym as destiny's way of telling Lucario and me to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))
-            setflag(FLAG_MIRROHBASECAMP_LEADER)
-    
-            giveitem(ITEM_MEGA_RING)
+        speakername("Carona")
+        msgbox(format("I see the closure of this gym as destiny's way of telling Medicham and me to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))
+        setflag(FLAG_MIRROHBASECAMP_LEADER)
 
-            speakername("Carona")
-            msgbox(format("The Mega Ring will allow you to Mega Evolve specific Pokémon as long as they hold their unique Mega Stone.\pPlease take these with you as well.")) 
-            giveitem(ITEM_RARE_SHARD)
-            speakername("Carona")
-            msgbox(format("I feel satisfied. A fitting end - to have been bested by a trainer of your caliber!\pCarry on our legacy, {PLAYER}! Show the world your iron fists!"))
-            release
+        giveitem(ITEM_MEGA_RING)
 
-        } else {
-            speakername("Carona")
-            msgbox(format("My final battle isn't today, it seems."))
-            release
-        }
+        speakername("Carona")
+        msgbox(format("The Mega Ring will allow you to Mega Evolve specific Pokémon as long as they hold their unique Mega Stone.\pPlease take these with you as well.")) 
+        giveitem(ITEM_RARE_SHARD)
+        speakername("Carona")
+        msgbox(format("I feel satisfied. A fitting end - to have been bested by a trainer of your caliber!\pCarry on our legacy, {PLAYER}! Show the world your iron fists!"))
+        release
+
     }
     releaseall
 }

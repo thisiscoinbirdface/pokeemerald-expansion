@@ -202,7 +202,7 @@ PellucaCity_Clauncher_1:
 # 130 "data//maps/PellucaCityHouses/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 131 "data//maps/PellucaCityHouses/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 132 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_3
 # 134 "data//maps/PellucaCityHouses/scripts.pory"

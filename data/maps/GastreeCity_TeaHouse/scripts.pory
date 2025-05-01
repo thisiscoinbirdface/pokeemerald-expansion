@@ -24,14 +24,16 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     //first complain about the menu getting stale
     msgbox(format("Welcome to our tea shop, young one. Please enjoy a selection of our finely crafted traditional matchas...you don't want anything traditional?"))
     release
-    msgbox(format("Sigh...all you young ones just have no taste.\pWell, times are changing I suppose, and our business should change with them."))
+    delay(16)
+    msgbox(format("Sigh...all you young ones are completely devoid of taste.\pWell, times are changing I suppose, and our business should change with them."))
     release
     delay(8)
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    msgbox(format("Yes, I'd like to try crafting a modern tea. Something with zing and zap!\pLike those energy drinks."))
+    msgbox(format("Yes, I'd like to try crafting a modern tea. Something with zing and zap!\pLike those energy drinks!"))
     release 
+    delay(16)
 
     //Ask player yes/no
     msgbox(format("Young one, will you help me?"), MSGBOX_YESNO)
@@ -113,7 +115,6 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
         playfanfare(MUS_OBTAIN_ITEM)        
         msgbox(format("The Tea House Owner has gifted you a Poltchageist!"))
         hidemonpic
-        call(NicknamePartyMon)
         release
         delay(12)
         msgbox(format("This one's a keeper - extremely well-trained and hospitable. I'm sure you two will have a great time together. I'll miss you, Poltchageist!"))

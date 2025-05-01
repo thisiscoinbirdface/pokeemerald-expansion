@@ -34,8 +34,7 @@ GastreeCity_House2_NPC2::
 
 GastreeCity_House2_NPC1_Text_0:
 # 6 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "Too much salt raises your blood\n"
-	.string "pressure!$"
+	.string "Too much salt raises blood pressure!$"
 
 GastreeCity_House2_NPC1_Text_1:
 # 9 "data//maps/GastreeCity_House2/scripts.pory"
@@ -46,8 +45,7 @@ GastreeCity_House2_NPC1_Text_1:
 
 GastreeCity_House2_NPC2_Text_0:
 # 19 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "Mom cares a lot about eating\n"
-	.string "healthy...but the food is somewhat\l"
-	.string "bland.\p"
+	.string "Mom cares about eating healthy...but\n"
+	.string "the food is somewhat bland.\p"
 	.string "I just don't want to tell her or else\n"
 	.string "she'll think I'm ungrateful.$"

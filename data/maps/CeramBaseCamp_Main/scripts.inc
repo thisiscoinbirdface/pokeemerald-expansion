@@ -889,9 +889,8 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_14:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_15:
 # 153 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "Agh! You and your stupid FIRE-type\n"
-	.string "Pokémon! I just didn't have my Pokémon\l"
-	.string "with me.$"
+	.string "Agh! You and your stupid Tauros! I just\n"
+	.string "didn't have my Pokémon with me.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_16:
 # 156 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -947,8 +946,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_25:
 	.string "They're connected to Professor\n"
 	.string "Tenebris' disappearance?\p"
 	.string "I gotta do something - Professor\n"
-	.string "Tenebris is the one who gave me my\l"
-	.string "Tauros.$"
+	.string "Tenebris gave me my Tauros!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_26:
 # 214 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -963,7 +961,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_27:
 	.string "around here are you can't climb unless\l"
 	.string "you have my gym badge and my blessing.\l"
 	.string "If you can beat me, I'll be able to send\l"
-	.string "you up the hill with confidence.\n"
+	.string "you up the hill with confidence.\p"
 	.string "See you around, {PLAYER}!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0:
@@ -979,12 +977,12 @@ CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_1:
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_2:
 # 243 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "We're here to collect supplies for the\n"
-	.string "climb up Mt. Ceram.$"
+	.string "climb up Mt. Ceram!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_0:
 # 249 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "We're going to steal all the climbing\n"
-	.string "supplies here!$"
+	.string "supplies! You can't stop us!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_1:
 # 249 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -997,9 +995,9 @@ CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_2:
 
 CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_0:
 # 256 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "How did you get this far? No matter -\n"
-	.string "you can't stop us from taking all the\l"
-	.string "supplies!$"
+	.string "How did you get this far?\p"
+	.string "No matter - you can't stop us from\n"
+	.string "taking the supplies! Hahaha!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt3_Text_1:
 # 256 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -1037,8 +1035,7 @@ CeramBaseCamp_Main_NPC2_Text_1:
 # 333 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I overheard them talking about a\n"
 	.string "dreamstone! Dreamstones are supposed\l"
-	.string "to be very rare. What do they want with\l"
-	.string "one?$"
+	.string "to be very rare. Why do they want one?$"
 
 CeramBaseCamp_Main_Smeargle_Text_0:
 # 340 "data//maps/CeramBaseCamp_Main/scripts.pory"

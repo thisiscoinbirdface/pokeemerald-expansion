@@ -22,9 +22,15 @@ script MtCeram_Peak_SaveGameTrigger{
 
 script MtCeramPeak_MainEvent_Trigger{
     if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}
+
+    //Set talonflame
+    if (flag(FLAG_CERAM_TALONFLAME)){
+        clearflag(FLAG_CERAM_TALONFLAME)
+    }
+
     lockall
     speakername("???")
-    msgbox(format("So you broke through my grunts. Come here then."))
+    msgbox(format("So you broke through my grunts.\nCome here then."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 6))
@@ -66,17 +72,17 @@ script MtCeramPeak_MainEvent_Trigger{
     //Explain tenebris research
     //Explain somber goals
     speakername("???")
-    msgbox(format("Why, young trainer, have you been a thorn in my organisations side? What's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
+    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
     delay(30)
     speakername("???")
-    msgbox(format("Young trainer, do you even know what the good professor was researching? Do you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokémon fall asleep, their past memories resurface. A dreamstone absorbs this."))
+    msgbox(format("Young trainer, do you even know what the good professor was researching?\pDo you even know what a dreamstone is?\pA dreamstone is little but a triangular rock. At first sight. But it possesses a unique property. When Pokémon fall asleep, their past memories resurface.\pA dreamstone absorbs this."))
     release
     delay(16)
     speakername("???")
-    msgbox(format("Fascinating stuff. This is what your dear professor was researching, child.\pHow does this dreamstone work? What kind of memories can a dreamstone absorb?"))
+    msgbox(format("Fascinating stuff. This is what your dear professor was researching, child.\pHow do these dreamstones actually work? What kind of memories can dreamstones absorb?"))
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)   
     speakername("???")
@@ -91,13 +97,13 @@ script MtCeramPeak_MainEvent_Trigger{
     applymovement(LOCALID_BOSS, moves(jump_in_place_up))
     waitmovement(0)
     speakername("???")
-    msgbox(format("Can you imagine child? Can you?! The potential of such an object? Even as pure energy, a dreamstone is overflowing! But there's more. So much more. What if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokémon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
+    msgbox(format("Can you imagine child? Can you?!\nThe potential of such an object?\pEven as pure energy, a dreamstone is overflowing! But there's more.\pSo much more.\pWhat if we could reverse the process? Use the dreamstone to revive these memories? Such powerful Pokémon once roamed across Cormoria - wouldn't it be grand to have them do your bidding?"))
     release
     applymovement(LOCALID_BOSS, moves(face_down))
     waitmovement(0)
     delay(16)
     speakername("???")
-    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control! A noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
+    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
     release
     delay(16)
     speakername("Moxie")

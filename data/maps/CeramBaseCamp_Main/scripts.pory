@@ -150,7 +150,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     speakername("???")
-    msgbox(format("Agh! You and your stupid FIRE-type Pokémon! I just didn't have my Pokémon with me."))
+    msgbox(format("Agh! You and your stupid Tauros! I just didn't have my Pokémon with me."))
     release
     speakername("Ariana")
     msgbox(format("Serves you right! Now move over and give our shopkeeper back."))
@@ -209,11 +209,11 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     speakername("Ariana") 
     msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
     speakername("Ariana") 
-    msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris is the one who gave me my Tauros."))
+    msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris gave me my Tauros!"))
     speakername("Ariana") 
     msgbox(format("Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
     speakername("Ariana") 
-    msgbox(format("{PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\nSee you around, {PLAYER}!"))
+    msgbox(format("{PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\pSee you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -240,20 +240,20 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
     trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This Supply Depot is under Team Somber's control!"), format("Gah! I lost!"))
-    msgbox(format("We're here to collect supplies for the climb up Mt. Ceram."))
+    msgbox(format("We're here to collect supplies for the climb up Mt. Ceram!"))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format("We're going to steal all the climbing supplies here!"), format("I can't believe it!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format("We're going to steal all the climbing supplies! You can't stop us!"), format("I can't believe it!"))
     msgbox(format("You just got lucky. I'll crush you if I ever see you again!"))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far? No matter - you can't stop us from taking all the supplies!"), format("No! My Pokémon were too weak!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far?\pNo matter - you can't stop us from taking the supplies! Hahaha!"), format("No! My Pokémon were too weak!"))
     msgbox(format("You're too late - the boss is already with the shopkeeper."))
     release
     end
@@ -330,7 +330,7 @@ script CeramBaseCamp_Main_NPC2{
         msgbox(format("It's believed that a dreamstone is a crystallised representation of a Pokémon's memories."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. What do they want with one?"), MSGBOX_NPC)
+        msgbox(format("I overheard them talking about a dreamstone! Dreamstones are supposed to be very rare. Why do they want one?"), MSGBOX_NPC)
     }
     end
 }

@@ -710,15 +710,15 @@ Mugshot: Purple
 
 Murkrow
 Level: 19
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Inkay
-Level: 20
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Slowpoke-Galar
-Level: 22
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Level: 21
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Acid
 - Yawn
 - Psychic
@@ -1187,10 +1187,10 @@ Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Loudred
-Level: 25
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Toxtricity
+Toxel
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1872,7 +1872,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MIRROHBASECAMP_LEADER ===
 Name: Carona
 Class: Leader
-Pic: Leader Roxanne
+Pic: Leader Carona
 Gender: Female
 Music: Cool
 Items: Full Restore
@@ -2006,11 +2006,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Banette
-Level: 41
+Level: 32
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Lunatone
-Level: 41
+Cetoddle
+Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_G ===

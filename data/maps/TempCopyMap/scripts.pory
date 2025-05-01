@@ -429,7 +429,7 @@ script Common_EventScript_NurseJoyOnRoute{
     checkitem(ITEM_HEAL_PASS)
     if (var(VAR_RESULT) == 1){
         //heal
-        msgbox(format("Should I heal your Pokémon? You can come back later if you wish."), MSGBOX_YESNO)
+        msgbox(format("Should I heal your Pokémon?\nYou can come back later if you wish."), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_HEAL_PASS)

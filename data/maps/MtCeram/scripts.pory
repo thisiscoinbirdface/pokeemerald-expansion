@@ -171,14 +171,14 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Grunt A")
-    msgbox(format("...so the boss told us to be EXTRA careful not to let anyone up the mountain."))
+    msgbox(format("...boss told us to be EXTRA careful not to let anyone up the mountain."))
     release
     applymovement(LOCALID_FOOTGRUNT2, moves(emote_question_mark))
     speakername("Grunt B")
     msgbox(format("But where's the boss? And Gabrielle?"))
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
     speakername("Grunt A")
-    msgbox(format("The boss found the dreamstone on top of the mountain! He's trying to climb it right now.\pAs for Gabrielle...after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
+    msgbox(format("The boss found the dreamstone at the mountain peak! He's heading there now.\pAs for Gabrielle...after her punishment for losing to that Tenebris Lab trainer twice...she's been a little down."))
     release
     delay(16)
     applymovement(LOCALID_FOOTGRUNT2, moves(jump_in_place_left))
@@ -217,7 +217,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber! That's called responsibility - something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Sxomething you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -337,7 +337,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     playmoncry(SPECIES_CHARCADET, CRY_MODE_NORMAL)
     waitmoncry
     speakername("Kohla")
-    msgbox(format("No! CHARCADET!"))
+    msgbox(format("No! Charcadet!"))
     release
     delay(8)
     speakername("Grunt A")
@@ -372,7 +372,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pWe're the real deal! Let's see what you've got!"))
+    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pBut we're the real deal! Let's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -450,22 +450,22 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair is getting singed in the heat!"), format("I should go back down."))
-    msgbox(format("Most Pokémon Breeders specialise in a single group. I specialise in rearing sheep!"))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair got singed in the heat!"), format("I should go back down."))
+    msgbox(format("Pokémon Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
 }
 
 script MtCeram_TrainerBattle_GRUNT1 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey kid, you're not supposed to be here. Why? Stop asking questions and get lost!"), format("Fine! Don't get lost!"))
-    msgbox(format("Team Somber has control of this mountain for now! Well except for you."))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey, kid! Where'd you come from?\nYou're not supposed to be here.\pWhy?\pStop asking questions and get lost!"), format("Fine! Don't get lost!"))
+    msgbox(format("Team Somber has control of this mountain now! Well...except for you."))
     release
     end
 }
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us! Wait, you're not a grunt. Get out of here!"), format("I'm going to be punished for this!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
     msgbox(format("I love Team Somber! No wait...I love money!"))
     release
     end
@@ -519,13 +519,13 @@ script MtCeram_EventScript_NPCNurse{
     lockall
     faceplayer
 
-    msgbox(format("Chansey and I have been hiding from these thugs behind this tree...although Chansey's not able to hide herself too well."))
+    msgbox(format("Chansey and I have been hiding from these thugs behind this tree...although Chansey can't hide herself too well."))
     release
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL) 
     applymovement(24, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("Don't worry, Chansey! We're safe here. Meanwhile, if you have a Heal Pass, I can heal your Pokemon!"))
+    msgbox(format("Don't worry, Chansey! We're safe here.\pMeanwhile, if you have a Heal Pass,\nI can heal your Pokemon!"))
     call(Common_EventScript_NurseJoyOnRoute)
 
     releaseall

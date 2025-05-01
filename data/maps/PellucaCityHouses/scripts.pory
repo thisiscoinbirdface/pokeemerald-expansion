@@ -128,7 +128,7 @@ script PellucaCity_Clauncher{
     release
     fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_TO_BLACK)    
+    fadescreenswapbuffers(FADE_FROM_BLACK)    
     msgbox(format("See you Corsola!"))
 
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1)

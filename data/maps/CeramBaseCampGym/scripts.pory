@@ -53,7 +53,7 @@ script CeramBaseCampGym_Guard{
 script CeramBaseCampGym_NPC_A{
     lockall
     faceplayer
-    msgbox(format("I can't battle. Ariana tried to teach me but both she and her Pokémon are so intimidating!"))
+    msgbox(format("I can't battle. Ariana tried to teach me but her Pokémon are so intimidating!"))
     releaseall
 }
 
@@ -66,8 +66,8 @@ script CeramBaseCampGym_NPC_B{
 
 
 script CeramBaseCampGym_TrainerBattle_A {
-    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, format("Who would've thought managing a basecamp would involve so much paperwork?"), "Back to my work!")
-    msgbox(format("The base camp doubling as a Gym is just extra work for the employees! And we didn't get a raise too!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, format("Who would've thought managing a basecamp would mean so much paperwork?"), "Back to my work!")
+    msgbox(format("The base camp doubling as a Gym is just extra work for the employees.\pWe didn't even get a raise!"))
     release
     end
 }
@@ -87,7 +87,7 @@ script CeramBaseCampGym_GuardTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("Hold on! You can't have a meeting with the manager without an appointment. Please come back once you have a signed APPOINTMENT LETTER."))
+    msgbox(format("Hold on! You can't have a meeting with the manager without an appointment. Please come back once you have a signed Appointment Letter."))
     release
     applymovement(LOCALID_GUARD, moves(face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
@@ -199,6 +199,7 @@ script CeramBaseCampGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
         //Receive the badge
+        msgbox(format("I could not be more pleased, {PLAYER}. The way you stand, you might be able to handle yourself on Mt. Ceram. I present you with the Cinder Badge."))
         msgbox(format("{PLAYER} received the Cinder Badge from Ariana."))
         release
         setflag(FLAG_BADGE02_GET)
@@ -219,6 +220,8 @@ script CeramBaseCampGym_LeaderBattle {
         msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a shrine close to Route 4, so why don't you use these there?"))
         release
 
+        delay(16)
+        
         //Bye-bye
         speakername("Ariana")
         msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
@@ -232,11 +235,11 @@ script CeramBaseCampGym_LeaderBattle {
 
 
 text CeramBaseCampGym_Text_Intro{
-    format("Who's my next appointment? Ah! It's you, {PLAYER}. A pleasant surprise. I'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors. It's good to have a chance to battle for a change!")
+    format("Who's my next appointment? Ah! It's you, {PLAYER}. A pleasant surprise.\pI'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors.\pIt's good to have a chance to battle for a change!")
 }
 
 text CeramBaseCampGym_Text_Defeated{
-    format("What a match! What a display! I could not be more pleased, {PLAYER}. The way you stand, you might be able to handle yourself on Mt. Ceram. I present you with the CINDER BADGE.")
+    format("What a match!")
 }
 
 

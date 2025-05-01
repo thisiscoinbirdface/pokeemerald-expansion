@@ -1606,7 +1606,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_MURKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 713
-            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .iv = TRAINER_PARTY_IVS(7, 7, 7, 7, 7, 7),
 #line 712
             .lvl = 19,
             .nature = NATURE_HARDY,
@@ -1617,9 +1617,9 @@ F_TRAINER_FEMALE |
             .species = SPECIES_INKAY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 717
-            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .iv = TRAINER_PARTY_IVS(7, 7, 7, 7, 7, 7),
 #line 716
-            .lvl = 20,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -1628,9 +1628,9 @@ F_TRAINER_FEMALE |
             .species = SPECIES_SLOWPOKE_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 721
-            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .iv = TRAINER_PARTY_IVS(7, 7, 7, 7, 7, 7),
 #line 720
-            .lvl = 22,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -2814,13 +2814,13 @@ F_TRAINER_FEMALE |
 #line 1191
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 1190
-            .lvl = 25,
+            .lvl = 24,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 1193
-            .species = SPECIES_TOXTRICITY,
+            .species = SPECIES_TOXEL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1195
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -4541,7 +4541,7 @@ F_TRAINER_FEMALE |
 #line 1874
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 1875
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerPic = TRAINER_PIC_LEADER_CARONA,
         .encounterMusic_gender =
 #line 1876
 F_TRAINER_FEMALE | 
@@ -4888,18 +4888,18 @@ F_TRAINER_FEMALE |
 #line 2010
             .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
 #line 2009
-            .lvl = 41,
+            .lvl = 32,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 2012
-            .species = SPECIES_LUNATONE,
+            .species = SPECIES_CETODDLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2014
             .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
 #line 2013
-            .lvl = 41,
+            .lvl = 33,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

@@ -1783,8 +1783,8 @@ MintPurchase_Common_Text_0:
 
 Common_EventScript_NurseJoyOnRoute_Text_0:
 # 432 "data//maps/TempCopyMap/scripts.pory"
-	.string "Should I heal your Pokémon? You can\n"
-	.string "come back later if you wish.$"
+	.string "Should I heal your Pokémon?\n"
+	.string "You can come back later if you wish.$"
 
 Common_EventScript_NurseJoyOnRoute_Text_1:
 # 446 "data//maps/TempCopyMap/scripts.pory"

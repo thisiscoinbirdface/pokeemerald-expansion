@@ -23,7 +23,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
     applymovement(7, moves(face_left emote_exclamation_mark))
     waitmovement(0)
     release
-    msgbox(format("Hey kid! The rules are you can't climb unless you have the FIRE BADGE. If you can't beat Ariana, you won't be able to handle the heat of the mountain!"))
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the Cinder Badge. If you can't beat Ariana, you won't be able to handle the heat of the mountain!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -44,7 +44,7 @@ script CeramBaseCamp_NPC1{
 
 //NPC2 - generic
 script CeramBaseCamp_NPC2{
-    msgbox(format("This camp was established to dig a tunnel through Mt. Ceram. Old equipment from back then is left here. I remember a DRILBUR made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."), MSGBOX_NPC)
+    msgbox(format("This camp was established to dig a tunnel through Mt. Ceram. Old equipment from back then is left here. I remember a Drilbur made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."), MSGBOX_NPC)
     end
 }
 
@@ -254,6 +254,30 @@ script CeramBaseCamp_Excadrill{
 
     }
 
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script CeramBaseCamp_TalonFlame{
+    playmoncry(SPECIES_TALONFLAME, CRY_MODE_NORMAL)
+    msgbox(format("Talonflame's about to fly to the peak! Hitch a ride?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        warp(MAP_MT_CERAM, 11, 20)
+    }
     releaseall
     end
 }

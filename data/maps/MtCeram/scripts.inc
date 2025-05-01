@@ -1115,9 +1115,8 @@ MtCeram_EventScript_Eavesdrop_Text_1:
 
 MtCeram_EventScript_Eavesdrop_Text_2:
 # 174 "data//maps/MtCeram/scripts.pory"
-	.string "...so the boss told us to be EXTRA\n"
-	.string "careful not to let anyone up the\l"
-	.string "mountain.$"
+	.string "...boss told us to be EXTRA careful not\n"
+	.string "to let anyone up the mountain.$"
 
 MtCeram_EventScript_Eavesdrop_Text_3:
 # 177 "data//maps/MtCeram/scripts.pory"
@@ -1129,9 +1128,8 @@ MtCeram_EventScript_Eavesdrop_Text_4:
 
 MtCeram_EventScript_Eavesdrop_Text_5:
 # 181 "data//maps/MtCeram/scripts.pory"
-	.string "The boss found the dreamstone on top\n"
-	.string "of the mountain! He's trying to climb it\l"
-	.string "right now.\p"
+	.string "The boss found the dreamstone at the\n"
+	.string "mountain peak! He's heading there now.\p"
 	.string "As for Gabrielle...after her punishment\n"
 	.string "for losing to that Tenebris Lab trainer\l"
 	.string "twice...she's been a little down.$"
@@ -1151,9 +1149,9 @@ MtCeram_EventScript_Eavesdrop_Text_7:
 MtCeram_EventScript_Eavesdrop_Text_8:
 # 220 "data//maps/MtCeram/scripts.pory"
 	.string "Heard that? I've got to get that\n"
-	.string "dreamstone before Team Somber! That's\l"
-	.string "called responsibility - something you\l"
-	.string "wouldn't know about.\p"
+	.string "dreamstone before Team Somber!\p"
+	.string "That's called responsibility.\n"
+	.string "Sxomething you wouldn't know about.\p"
 	.string "...\p"
 	.string "What? You're coming too? Hah! We're not\n"
 	.string "buddies, {PLAYER}. I'm the one and\l"
@@ -1197,7 +1195,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_6:
 
 MtCeram_EventScript_BeforePeakBattle_Text_7:
 # 340 "data//maps/MtCeram/scripts.pory"
-	.string "No! CHARCADET!$"
+	.string "No! Charcadet!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_8:
 # 344 "data//maps/MtCeram/scripts.pory"
@@ -1221,7 +1219,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_11:
 MtCeram_EventScript_BeforePeakBattle_Text_12:
 # 375 "data//maps/MtCeram/scripts.pory"
 	.string "Hey - yeah! But Gabrielle's just a loser.\p"
-	.string "We're the real deal! Let's see what\n"
+	.string "But we're the real deal! Let's see what\n"
 	.string "you've got!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_13:
@@ -1291,8 +1289,7 @@ MtCeram_TrainerBattle_C_Text_2:
 MtCeram_TrainerBattle_D_Text_0:
 # 453 "data//maps/MtCeram/scripts.pory"
 	.string "I brought my sheep Pokémon here but\n"
-	.string "their hair is getting singed in the\l"
-	.string "heat!$"
+	.string "their hair got singed in the heat!$"
 
 MtCeram_TrainerBattle_D_Text_1:
 # 453 "data//maps/MtCeram/scripts.pory"
@@ -1300,15 +1297,15 @@ MtCeram_TrainerBattle_D_Text_1:
 
 MtCeram_TrainerBattle_D_Text_2:
 # 454 "data//maps/MtCeram/scripts.pory"
-	.string "Most Pokémon Breeders specialise in a\n"
-	.string "single group. I specialise in rearing\l"
-	.string "sheep!$"
+	.string "Pokémon Breeders specialise in a single\n"
+	.string "group. I specialise in rearing sheep!$"
 
 MtCeram_TrainerBattle_GRUNT1_Text_0:
 # 460 "data//maps/MtCeram/scripts.pory"
-	.string "Hey kid, you're not supposed to be here.\n"
-	.string "Why? Stop asking questions and get\l"
-	.string "lost!$"
+	.string "Hey, kid! Where'd you come from?\n"
+	.string "You're not supposed to be here.\p"
+	.string "Why?\p"
+	.string "Stop asking questions and get lost!$"
 
 MtCeram_TrainerBattle_GRUNT1_Text_1:
 # 460 "data//maps/MtCeram/scripts.pory"
@@ -1317,13 +1314,14 @@ MtCeram_TrainerBattle_GRUNT1_Text_1:
 MtCeram_TrainerBattle_GRUNT1_Text_2:
 # 461 "data//maps/MtCeram/scripts.pory"
 	.string "Team Somber has control of this\n"
-	.string "mountain for now! Well except for you.$"
+	.string "mountain now! Well...except for you.$"
 
 MtCeram_TrainerBattle_GRUNT2_Text_0:
 # 468 "data//maps/MtCeram/scripts.pory"
 	.string "We're going to get the dreamstone and\n"
-	.string "Team Somber will reward us! Wait, you're\l"
-	.string "not a grunt. Get out of here!$"
+	.string "Team Somber will reward us!\p"
+	.string "Wait, you're not a grunt.\n"
+	.string "Get out of here!$"
 
 MtCeram_TrainerBattle_GRUNT2_Text_1:
 # 468 "data//maps/MtCeram/scripts.pory"
@@ -1359,14 +1357,13 @@ MtCeram_EventScript_NPCNurse_Text_0:
 # 522 "data//maps/MtCeram/scripts.pory"
 	.string "Chansey and I have been hiding from\n"
 	.string "these thugs behind this tree...although\l"
-	.string "Chansey's not able to hide herself too\l"
-	.string "well.$"
+	.string "Chansey can't hide herself too well.$"
 
 MtCeram_EventScript_NPCNurse_Text_1:
 # 528 "data//maps/MtCeram/scripts.pory"
-	.string "Don't worry, Chansey! We're safe here.\n"
-	.string "Meanwhile, if you have a Heal Pass, I can\l"
-	.string "heal your Pokemon!$"
+	.string "Don't worry, Chansey! We're safe here.\p"
+	.string "Meanwhile, if you have a Heal Pass,\n"
+	.string "I can heal your Pokemon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 537 "data//maps/MtCeram/scripts.pory"
