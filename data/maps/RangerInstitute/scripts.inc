@@ -666,20 +666,16 @@ RangerInstitute_Mon_Palpitoad::
 
 RangerInstitute_Mon_Frogadier::
 # 491 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 492 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
-# 493 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
-# 494 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Frogadier_Text_0
+# 492 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_Mon_Frogadier_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Scyther::
-# 498 "data//maps/RangerInstitute/scripts.pory"
+# 496 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
-# 499 "data//maps/RangerInstitute/scripts.pory"
+# 497 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Scyther_Text_0, MSGBOX_NPC
 	end
 
@@ -1362,10 +1358,10 @@ RangerInstitute_Mon_Palpitoad_Text_0:
 	.string "seems upset...$"
 
 RangerInstitute_Mon_Frogadier_Text_0:
-# 494 "data//maps/RangerInstitute/scripts.pory"
+# 492 "data//maps/RangerInstitute/scripts.pory"
 	.string "$"
 
 RangerInstitute_Mon_Scyther_Text_0:
-# 499 "data//maps/RangerInstitute/scripts.pory"
+# 497 "data//maps/RangerInstitute/scripts.pory"
 	.string "Scyther looks as bummed out as its\n"
 	.string "trainer!$"

@@ -434,15 +434,9 @@ GastreeCity_NPC_Skitty::
 
 GastreeCity_Poltchageist::
 # 344 "data//maps/GastreeCity/scripts.pory"
-	lockall
-# 345 "data//maps/GastreeCity/scripts.pory"
 	playmoncry SPECIES_POLTCHAGEIST, CRY_MODE_NORMAL
-# 346 "data//maps/GastreeCity/scripts.pory"
-	faceplayer
-# 347 "data//maps/GastreeCity/scripts.pory"
-	msgbox GastreeCity_Poltchageist_Text_0
-# 348 "data//maps/GastreeCity/scripts.pory"
-	releaseall
+# 345 "data//maps/GastreeCity/scripts.pory"
+	msgbox GastreeCity_Poltchageist_Text_0, MSGBOX_NPC
 	end
 
 
@@ -845,7 +839,7 @@ GastreeCity_NPC_Skitty_Text_0:
 	.string "Skee~~$"
 
 GastreeCity_Poltchageist_Text_0:
-# 347 "data//maps/GastreeCity/scripts.pory"
+# 345 "data//maps/GastreeCity/scripts.pory"
 	.string "Poltchageist is picking Revival Herbs\n"
 	.string "for the teahouse!$"
 

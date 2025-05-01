@@ -273,13 +273,9 @@ GastreeCity_TeaHouse_Snorunt::
 
 GastreeCity_TeaHouse_Sinistea::
 # 184 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	lockall
-# 185 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	playmoncry SPECIES_SINISTEA, CRY_MODE_NORMAL
-# 186 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_Sinistea_Text_0
-# 187 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	releaseall
+# 185 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_Sinistea_Text_0, MSGBOX_NPC
 	end
 
 
@@ -439,6 +435,6 @@ GastreeCity_TeaHouse_Snorunt_Text_0:
 	.string "like it?$"
 
 GastreeCity_TeaHouse_Sinistea_Text_0:
-# 186 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 185 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Sinistea is busy serving tea. Better\n"
 	.string "not disturb it!$"

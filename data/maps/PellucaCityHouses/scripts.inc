@@ -198,11 +198,11 @@ PellucaCity_Clauncher_1:
 # 128 "data//maps/PellucaCityHouses/scripts.pory"
 	release
 # 129 "data//maps/PellucaCityHouses/scripts.pory"
-	fadescreenswapbuffers FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_BLACK
 # 130 "data//maps/PellucaCityHouses/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 131 "data//maps/PellucaCityHouses/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_TO_BLACK
 # 132 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_3
 # 134 "data//maps/PellucaCityHouses/scripts.pory"
@@ -245,15 +245,9 @@ PellucaCityHouses_NPC4::
 
 PellucaCityHouses_Delphox::
 # 160 "data//maps/PellucaCityHouses/scripts.pory"
-	lockall
-# 161 "data//maps/PellucaCityHouses/scripts.pory"
 	playmoncry SPECIES_DELPHOX, CRY_MODE_NORMAL
-# 162 "data//maps/PellucaCityHouses/scripts.pory"
-	faceplayer
-# 163 "data//maps/PellucaCityHouses/scripts.pory"
+# 161 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_Delphox_Text_0, MSGBOX_NPC
-# 164 "data//maps/PellucaCityHouses/scripts.pory"
-	releaseall
 	end
 
 
@@ -419,5 +413,5 @@ PellucaCityHouses_NPC4_Text_0:
 	.string "Woods, where I first met her.$"
 
 PellucaCityHouses_Delphox_Text_0:
-# 163 "data//maps/PellucaCityHouses/scripts.pory"
+# 161 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Delphox looks wistful...$"

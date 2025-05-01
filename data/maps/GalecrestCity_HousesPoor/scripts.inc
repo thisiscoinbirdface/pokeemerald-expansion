@@ -55,40 +55,32 @@ GalecrestCity_HousesPoor_NPC2::
 
 GalecrestCity_HousesPoor_Jigglypuff::
 # 41 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	lockall
-# 42 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	faceplayer
-# 43 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	playmoncry SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL
-# 44 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	delay 30
-# 45 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 42 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_Jigglypuff_Text_0, MSGBOX_NPC
-# 46 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	releaseall
 	end
 
 
 GalecrestCity_HousesPoor_NPC3::
-# 52 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 48 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC4::
-# 57 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 53 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC5::
-# 62 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 58 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC5_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC6::
-# 67 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC6_Text_0, MSGBOX_NPC
 	end
 
@@ -143,30 +135,30 @@ GalecrestCity_HousesPoor_NPC2_Text_0:
 	.string "house!$"
 
 GalecrestCity_HousesPoor_Jigglypuff_Text_0:
-# 45 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 42 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "Jigglypuff is singing happily! Better\n"
 	.string "leave before I fall asleep...$"
 
 GalecrestCity_HousesPoor_NPC3_Text_0:
-# 52 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 48 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "The Poochyena regularly block the\n"
 	.string "roads here. They're a menace to\l"
 	.string "society!$"
 
 GalecrestCity_HousesPoor_NPC4_Text_0:
-# 57 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 53 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "The Poochyena are so cute! I'd like to\n"
 	.string "adopt one someday.$"
 
 GalecrestCity_HousesPoor_NPC5_Text_0:
-# 62 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 58 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "My children play outside all day. Let\n"
 	.string "them have their fun! Soon they'll be\l"
 	.string "studying all day to enter the Detective\l"
 	.string "Academy.$"
 
 GalecrestCity_HousesPoor_NPC6_Text_0:
-# 67 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "My wife has high ambitions for the kids.\n"
 	.string "I'll support her, but personally I'll be\l"
 	.string "happy as long as they grow up to become\l"
