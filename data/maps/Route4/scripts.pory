@@ -26,7 +26,7 @@ script Route4_EventScript_EvilTeam{
     msgbox(format("Hey kid - this road is closed due to...uh...repairs. Yeah. Sorry."))
     release
     delay(8)
-    msgbox(format("Huh? We look suspicious? We're just...um...construction workers. Sorry. Yeah."))
+    msgbox(format("Huh? We're suspicious? We're just...um...\n...construction workers. Sorry. Yeah."))
     msgbox(format("So you'll step back and let us do our work, right?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         msgbox(format("Good. Now scram!"))
