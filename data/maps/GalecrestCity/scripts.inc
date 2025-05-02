@@ -1119,8 +1119,8 @@ GalecrestCity_NPC_14_Text_4:
 
 GalecrestCity_Nickit_Text_0:
 # 445 "data//maps/GalecrestCity/scripts.pory"
-	.string "Nickit is grinning mischievously. What's\n"
-	.string "it upto?$"
+	.string "Nickit is grinning mischievously.\p"
+	.string "What's it up to?$"
 
 GalecrestCity_NPC_15_Text_0:
 # 452 "data//maps/GalecrestCity/scripts.pory"

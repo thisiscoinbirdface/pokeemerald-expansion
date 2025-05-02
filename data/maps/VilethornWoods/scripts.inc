@@ -465,7 +465,7 @@ VilethornWoods_NPC3::
 # 336 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
 # 337 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC3_Text_1
+	msgbox VilethornWoods_NPC3_Text_1, MSGBOX_YESNO
 # 338 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC3_5

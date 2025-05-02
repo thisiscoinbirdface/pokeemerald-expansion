@@ -668,7 +668,7 @@ Elgyem
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Murkrow
+Nymble
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -693,7 +693,7 @@ Elgyem
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Murkrow
+Nymble
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -708,17 +708,17 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Murkrow
+Whirlipede
 Level: 19
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Inkay
 Level: 19
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Slowpoke-Galar
 Level: 21
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Acid
 - Yawn
 - Psychic
@@ -865,7 +865,6 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shadow Sneak
 - Will O Wisp
 - Flame Charge
-- Swords Dance
 
 === TRAINER_VILETHORN_A ===
 Name: YENI

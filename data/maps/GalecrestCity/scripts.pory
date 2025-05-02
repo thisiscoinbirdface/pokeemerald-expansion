@@ -442,7 +442,7 @@ script GalecrestCity_NPC_14{
 script GalecrestCity_Nickit{
     lockall
     playmoncry(SPECIES_NICKIT, CRY_MODE_NORMAL)
-    msgbox(format("Nickit is grinning mischievously. What's it upto?"))
+    msgbox(format("Nickit is grinning mischievously.\pWhat's it up to?"))
     releaseall
     end
 }
