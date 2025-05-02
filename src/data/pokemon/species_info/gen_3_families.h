@@ -7567,7 +7567,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
-        .expYield = 56,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 74,  
+        .expYield = 74,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 74,  
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,

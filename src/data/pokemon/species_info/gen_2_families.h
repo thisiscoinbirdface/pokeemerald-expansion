@@ -1331,7 +1331,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 90,
+        .expYield = 90,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 90,
         .evYield_HP = 1,
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .genderRatio = PERCENT_FEMALE(50),
