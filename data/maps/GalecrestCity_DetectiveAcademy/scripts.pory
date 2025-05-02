@@ -20,7 +20,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     delay(24)
     speakername("Kohla")
-    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough. To stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough.\pTo stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
     release 
 
     //Start walking out
@@ -29,7 +29,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
     speakername("Kohla")
-    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM ROCK SMASH, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM Rock Smash, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))

@@ -878,11 +878,11 @@ AI: Check Bad Move
 
 Pancham
 Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Thwackey
+Passimian
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_VILETHORN_B ===
 Name: Dusty
@@ -898,11 +898,11 @@ Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Chingling
-Level: 19
+Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Bruxish
-Level: 20
+Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 
@@ -920,7 +920,7 @@ Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Shuppet
-Level: 21
+Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_VILETHORN_D ===
@@ -933,11 +933,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Stantler
-Level: 20
+Level: 19
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Ponyta-Galar
-Level: 22
+Level: 21
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_VILETHORN_E ===
@@ -954,7 +954,7 @@ Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Roselia
-Level: 22
+Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
@@ -968,11 +968,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Magnemite 
-Level: 23
+Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Impidimp
-Level: 23
+Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VILETHORN_G ===
@@ -986,11 +986,11 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Dottler
-Level: 21
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Dewpider
-Level: 22
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lokix
@@ -1013,12 +1013,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Nickit
-Level: 21
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Level: 19
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Raticate-Alola
-Level: 22
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VILETHORN_I ===
 Name: Shoe
@@ -1031,11 +1031,11 @@ AI: Check Bad Move
 
 Growlithe-Hisui
 Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Herdier
 Level: 22
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GABBY_AND_TY_5 ===
 Name: GABBY & TY
@@ -1149,11 +1149,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Grimer-Alola
-Level: 25
+Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Gurdurr
-Level: 26
+Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_SEWERS_B ===
@@ -1166,11 +1166,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Litwick
-Level: 25
+Level: 22
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Greavard
-Level: 26
+Level: 23
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_SEWERS_C ===
@@ -1183,15 +1183,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb-Hisui
-Level: 23
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Loudred
-Level: 24
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Toxel
-Level: 26
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SEWERS_D ===
@@ -1238,7 +1238,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Floragato
-Level: 25
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SILVERSUNGYM_B ===
@@ -1250,12 +1250,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Linoone-Galar
-Level: 25
+Zigzagoon-Galar
+Level: 23
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Servine
-Level: 26
+Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SILVERSUNGYM_C ===
@@ -1268,15 +1268,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Petilil
-Level: 24
+Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Impidimp
-Level: 24
+Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Linoone-Galar
-Level: 26
+Zigzagoon-Galar
+Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 
@@ -1289,8 +1289,8 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Umbreon
-Level: 27
+Linoone-Galar
+Level: 26
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 
@@ -1313,7 +1313,7 @@ Floragato
 Level: 26
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
-Umbreon @ Sitrus Berry
+Linoone-Galar @ Sitrus Berry
 Level: 26
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
@@ -1436,12 +1436,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Linoone-Galar
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 Murkrow
 Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Baltoy
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_SOMBERHQ_F ===
@@ -1507,7 +1507,7 @@ Double Battle: No
 AI: Check Bad Move
 Mugshot: Purple
 
-Slowpoke
+Slowpoke-Galar
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 

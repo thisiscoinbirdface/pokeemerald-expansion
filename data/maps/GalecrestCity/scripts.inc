@@ -853,8 +853,8 @@ GalecrestCity_DetectiveMeet_Trigger0_Text_1:
 GalecrestCity_DetectiveMeet_Main_Text_0:
 # 155 "data//maps/GalecrestCity/scripts.pory"
 	.string "We heard from Kohla that you went up to\n"
-	.string "the peak to stop Team Somber. What\l"
-	.string "happened up there?\p"
+	.string "the peak to stop Team Somber.\p"
+	.string "What happened up there?\p"
 	.string "...\p"
 	.string "...$"
 
@@ -863,8 +863,8 @@ GalecrestCity_DetectiveMeet_Main_Text_1:
 	.string "What! Is that true? Did all of that\n"
 	.string "happen?\p"
 	.string "...\p"
-	.string "I'm glad you're safe, {PLAYER}. What a\n"
-	.string "series of events!$"
+	.string "I'm glad you're safe, {PLAYER}.\n"
+	.string "What a series of events!$"
 
 GalecrestCity_DetectiveMeet_Main_Text_2:
 # 164 "data//maps/GalecrestCity/scripts.pory"
@@ -892,12 +892,13 @@ GalecrestCity_DetectiveMeet_Main_Text_5:
 GalecrestCity_DetectiveMeet_Main_Text_6:
 # 182 "data//maps/GalecrestCity/scripts.pory"
 	.string "{PLAYER}, you encountered ancient\n"
-	.string "Pokémon there, right? I wonder...\p"
+	.string "Pokémon there, right?\p"
+	.string "I wonder...\p"
 	.string "Did the dreamstone take you back to\n"
 	.string "the past somehow?\p"
 	.string "Incredible...so much we don't yet know...\p"
-	.string "I need to do some research. I'm going to\n"
-	.string "head back to the lab.\p"
+	.string "I need to do some research.\n"
+	.string "I'm going to head back to the lab.\p"
 	.string "{PLAYER}, the detectives have some\n"
 	.string "updates for you.\p"
 	.string "...\p"
@@ -919,15 +920,15 @@ GalecrestCity_DetectiveMeet_Main_Text_8:
 	.string "somewhere around Silversun City too.\p"
 	.string "If the Professor, her dreamstone and\n"
 	.string "Team Somber are in the same spot,\l"
-	.string "things could erupt. We have to be there!$"
+	.string "things could erupt.\p"
+	.string "We have to be there!$"
 
 GalecrestCity_DetectiveMeet_Main_Text_9:
 # 208 "data//maps/GalecrestCity/scripts.pory"
-	.string "But now that we know Team Somber is\n"
-	.string "involved, it's not safe for you,\l"
-	.string "{PLAYER}. You may have handled a\l"
-	.string "couple of grunts, but you're still a\l"
-	.string "child.\p"
+	.string "But now that Team Somber is involved,\n"
+	.string "it's not safe for you, {PLAYER}.\p"
+	.string "You may have handled a couple of\n"
+	.string "grunts, but you're still a child.\p"
 	.string "So heed these instructions carefully -\n"
 	.string "make your way to Silversun City as soon\l"
 	.string "as possible and keep a low profile.\p"
@@ -937,9 +938,9 @@ GalecrestCity_DetectiveMeet_Main_Text_9:
 GalecrestCity_DetectiveMeet_Main_Text_10:
 # 219 "data//maps/GalecrestCity/scripts.pory"
 	.string "This building is the Detective Academy.\n"
-	.string "Your friend Kohla was trained here. He\l"
-	.string "knows the plan already. Go and talk to\l"
-	.string "him first.$"
+	.string "Your friend Kohla was trained here.\p"
+	.string "He knows the plan already. Go and talk\n"
+	.string "to him first.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_11:
 # 230 "data//maps/GalecrestCity/scripts.pory"

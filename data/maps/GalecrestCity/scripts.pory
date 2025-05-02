@@ -152,13 +152,13 @@ script GalecrestCity_DetectiveMeet_Trigger3{
 
 script GalecrestCity_DetectiveMeet_Main{
     speakername("Rue")
-    msgbox(format("We heard from Kohla that you went up to the peak to stop Team Somber. What happened up there?\p...\p..."))
+    msgbox(format("We heard from Kohla that you went up to the peak to stop Team Somber.\pWhat happened up there?\p...\p..."))
     applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
     waitmovement(0)    
     speakername("Rue")
-    msgbox(format("What! Is that true? Did all of that happen?\p...\pI'm glad you're safe, {PLAYER}. What a series of events!"))
+    msgbox(format("What! Is that true? Did all of that happen?\p...\pI'm glad you're safe, {PLAYER}.\nWhat a series of events!"))
     release
     delay(8)
     speakername("Detective")
@@ -179,7 +179,7 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_RUE, moves(face_right))
     delay(16)
     speakername("Rue")
-    msgbox(format("{PLAYER}, you encountered ancient Pokémon there, right? I wonder...\pDid the dreamstone take you back to the past somehow?\pIncredible...so much we don't yet know...\pI need to do some research. I'm going to head back to the lab.\p{PLAYER}, the detectives have some updates for you.\p...\pI'm glad you're okay."))
+    msgbox(format("{PLAYER}, you encountered ancient Pokémon there, right?\pI wonder...\pDid the dreamstone take you back to the past somehow?\pIncredible...so much we don't yet know...\pI need to do some research.\nI'm going to head back to the lab.\p{PLAYER}, the detectives have some updates for you.\p...\pI'm glad you're okay."))
     release
 
     //Rue exit
@@ -200,12 +200,12 @@ script GalecrestCity_DetectiveMeet_Main{
     release
     delay(16)
     speakername("Detective")
-    msgbox(format("There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Silversun City too.\pIf the Professor, her dreamstone and Team Somber are in the same spot, things could erupt. We have to be there!"))
+    msgbox(format("There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Silversun City too.\pIf the Professor, her dreamstone and Team Somber are in the same spot, things could erupt.\pWe have to be there!"))
     release
     delay(16)
     
     speakername("Detective")
-    msgbox(format("But now that we know Team Somber is involved, it's not safe for you, {PLAYER}. You may have handled a couple of grunts, but you're still a child.\pSo heed these instructions carefully - make your way to Silversun City as soon as possible and keep a low profile.\pDo NOT engage with any suspicious individuals!"))       
+    msgbox(format("But now that Team Somber is involved, it's not safe for you, {PLAYER}.\pYou may have handled a couple of grunts, but you're still a child.\pSo heed these instructions carefully - make your way to Silversun City as soon as possible and keep a low profile.\pDo NOT engage with any suspicious individuals!"))       
     release
     applymovement(LOCALID_DET1, moves(face_up))
     applymovement(LOCALID_DET2, moves(face_up))    
@@ -216,7 +216,7 @@ script GalecrestCity_DetectiveMeet_Main{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     speakername("Detective")
-    msgbox(format("This building is the Detective Academy. Your friend Kohla was trained here. He knows the plan already. Go and talk to him first."))       
+    msgbox(format("This building is the Detective Academy. Your friend Kohla was trained here.\pHe knows the plan already. Go and talk to him first."))       
     release
 
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 5))    

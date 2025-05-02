@@ -12029,7 +12029,7 @@
           "map": "MAP_ANCIENT_CERAM",
           "base_label": "gAncientCeram0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 15,

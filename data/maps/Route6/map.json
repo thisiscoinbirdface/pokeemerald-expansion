@@ -79,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 34,
+      "x": 33,
       "y": 58,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",

@@ -3764,7 +3764,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpDefense = 86,
         .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
         .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 72,
+        .expYield = 58,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 72,
         .evYield_Defense = 1,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
