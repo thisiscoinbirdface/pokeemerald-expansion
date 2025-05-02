@@ -368,133 +368,137 @@ MirrohInterior_Sneasler_2:
 
 
 WinterlilyHollow_NPC_SurfMan::
-# 265 "data//maps/WinterlilyHollow/scripts.pory"
-	lockall
 # 266 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_0, MSGBOX_NPC
+# 267 "data//maps/WinterlilyHollow/scripts.pory"
+	end
+# 270 "data//maps/WinterlilyHollow/scripts.pory"
+	lockall
+# 271 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 268 "data//maps/WinterlilyHollow/scripts.pory"
+# 273 "data//maps/WinterlilyHollow/scripts.pory"
 	goto_if_set FLAG_WINTERLILY_HOLLOW_SURF, WinterlilyHollow_NPC_SurfMan_2
 WinterlilyHollow_NPC_SurfMan_1:
-# 272 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_1, MSGBOX_YESNO
-# 274 "data//maps/WinterlilyHollow/scripts.pory"
+# 277 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_2, MSGBOX_YESNO
+# 279 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WinterlilyHollow_NPC_SurfMan_5
-# 279 "data//maps/WinterlilyHollow/scripts.pory"
+# 284 "data//maps/WinterlilyHollow/scripts.pory"
 	checkitem ITEM_HEART_SCALE
-# 280 "data//maps/WinterlilyHollow/scripts.pory"
+# 285 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WinterlilyHollow_NPC_SurfMan_8
-# 285 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_4, MSGBOX_SIGN
-# 286 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_5
-# 287 "data//maps/WinterlilyHollow/scripts.pory"
-	giveitem ITEM_HM03
-# 288 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_6
 # 290 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_5, MSGBOX_SIGN
+# 291 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_6
+# 292 "data//maps/WinterlilyHollow/scripts.pory"
+	giveitem ITEM_HM03
+# 293 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_7
+# 295 "data//maps/WinterlilyHollow/scripts.pory"
 	setflag FLAG_WINTERLILY_HOLLOW_SURF
 	return
 
 WinterlilyHollow_NPC_SurfMan_2:
-# 269 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_0
+# 274 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_1
 	goto WinterlilyHollow_NPC_SurfMan_1
 
 WinterlilyHollow_NPC_SurfMan_5:
-# 275 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_2, MSGBOX_NPC
+# 280 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_3, MSGBOX_NPC
 	end
 
 WinterlilyHollow_NPC_SurfMan_8:
-# 281 "data//maps/WinterlilyHollow/scripts.pory"
-	msgbox WinterlilyHollow_NPC_SurfMan_Text_3, MSGBOX_NPC
+# 286 "data//maps/WinterlilyHollow/scripts.pory"
+	msgbox WinterlilyHollow_NPC_SurfMan_Text_4, MSGBOX_NPC
 	end
 
 
 WinterlilyHollow_NPC_SurfManAlt::
-# 294 "data//maps/WinterlilyHollow/scripts.pory"
+# 299 "data//maps/WinterlilyHollow/scripts.pory"
 	lockall
-# 295 "data//maps/WinterlilyHollow/scripts.pory"
+# 300 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 296 "data//maps/WinterlilyHollow/scripts.pory"
+# 301 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_SurfManAlt_Text_0, MSGBOX_YESNO
-# 297 "data//maps/WinterlilyHollow/scripts.pory"
+# 302 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WinterlilyHollow_NPC_SurfManAlt_2
 WinterlilyHollow_NPC_SurfManAlt_1:
-# 301 "data//maps/WinterlilyHollow/scripts.pory"
+# 306 "data//maps/WinterlilyHollow/scripts.pory"
 	special ChoosePartyMon
-# 302 "data//maps/WinterlilyHollow/scripts.pory"
-	waitstate
-# 303 "data//maps/WinterlilyHollow/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
-# 304 "data//maps/WinterlilyHollow/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 305 "data//maps/WinterlilyHollow/scripts.pory"
-	specialvar VAR_RESULT, GetTradeSpecies
 # 307 "data//maps/WinterlilyHollow/scripts.pory"
+	waitstate
+# 308 "data//maps/WinterlilyHollow/scripts.pory"
+	copyvar VAR_0x800A, VAR_0x8004
+# 309 "data//maps/WinterlilyHollow/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 310 "data//maps/WinterlilyHollow/scripts.pory"
+	specialvar VAR_RESULT, GetTradeSpecies
+# 312 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, SPECIES_GLIMMET
 	goto_if_eq WinterlilyHollow_NPC_SurfManAlt_5
 WinterlilyHollow_NPC_SurfManAlt_4:
-# 310 "data//maps/WinterlilyHollow/scripts.pory"
+# 315 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, SPECIES_GLIMMORA
 	goto_if_eq WinterlilyHollow_NPC_SurfManAlt_8
 WinterlilyHollow_NPC_SurfManAlt_7:
-# 314 "data//maps/WinterlilyHollow/scripts.pory"
+# 319 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
 WinterlilyHollow_NPC_SurfManAlt_2:
-# 298 "data//maps/WinterlilyHollow/scripts.pory"
+# 303 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_SurfManAlt_Text_1
 	goto WinterlilyHollow_NPC_SurfManAlt_1
 
 WinterlilyHollow_NPC_SurfManAlt_5:
-# 308 "data//maps/WinterlilyHollow/scripts.pory"
+# 313 "data//maps/WinterlilyHollow/scripts.pory"
 	giveitem ITEM_HM05
 	goto WinterlilyHollow_NPC_SurfManAlt_4
 
 WinterlilyHollow_NPC_SurfManAlt_8:
-# 311 "data//maps/WinterlilyHollow/scripts.pory"
+# 316 "data//maps/WinterlilyHollow/scripts.pory"
 	giveitem ITEM_HM05
 	goto WinterlilyHollow_NPC_SurfManAlt_7
 
 
 WinterlilyHollow_NPC_Miner::
-# 331 "data//maps/WinterlilyHollow/scripts.pory"
+# 336 "data//maps/WinterlilyHollow/scripts.pory"
 	lockall
-# 332 "data//maps/WinterlilyHollow/scripts.pory"
+# 337 "data//maps/WinterlilyHollow/scripts.pory"
 	faceplayer
-# 333 "data//maps/WinterlilyHollow/scripts.pory"
+# 338 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_0, MSGBOX_YESNO
-# 335 "data//maps/WinterlilyHollow/scripts.pory"
+# 340 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_2
-# 344 "data//maps/WinterlilyHollow/scripts.pory"
+# 349 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_2
 WinterlilyHollow_NPC_Miner_1:
-# 346 "data//maps/WinterlilyHollow/scripts.pory"
+# 351 "data//maps/WinterlilyHollow/scripts.pory"
 	applymovement 3, WinterlilyHollow_NPC_Miner_Movement_0
-# 347 "data//maps/WinterlilyHollow/scripts.pory"
+# 352 "data//maps/WinterlilyHollow/scripts.pory"
 	waitmovement 0
-# 349 "data//maps/WinterlilyHollow/scripts.pory"
+# 354 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
 WinterlilyHollow_NPC_Miner_2:
-# 336 "data//maps/WinterlilyHollow/scripts.pory"
+# 341 "data//maps/WinterlilyHollow/scripts.pory"
 	checkmoney 500
-# 338 "data//maps/WinterlilyHollow/scripts.pory"
+# 343 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_5
-# 341 "data//maps/WinterlilyHollow/scripts.pory"
+# 346 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_1
 	goto WinterlilyHollow_NPC_Miner_1
 
 WinterlilyHollow_NPC_Miner_5:
-# 339 "data//maps/WinterlilyHollow/scripts.pory"
+# 344 "data//maps/WinterlilyHollow/scripts.pory"
 	special StartMining
 	goto WinterlilyHollow_NPC_Miner_1
 
@@ -541,9 +545,9 @@ WinterlilyHollow_MimeJr_1_Movement_0:
 	fly_up
 	step_end
 
-# 346 "data//maps/WinterlilyHollow/scripts.pory"
+# 351 "data//maps/WinterlilyHollow/scripts.pory"
 WinterlilyHollow_NPC_Miner_Movement_0:
-# 346 "data//maps/WinterlilyHollow/scripts.pory"
+# 351 "data//maps/WinterlilyHollow/scripts.pory"
 	face_right
 	step_end
 
@@ -736,13 +740,19 @@ WinterlilyHollow_Sneasler_Text_0:
 	.string "Follow Sneasler into the hole?$"
 
 WinterlilyHollow_NPC_SurfMan_Text_0:
-# 269 "data//maps/WinterlilyHollow/scripts.pory"
+# 266 "data//maps/WinterlilyHollow/scripts.pory"
+	.string "If you surf through Lily Pond, you'll\n"
+	.string "reach the Ivy River. Head down it and\l"
+	.string "you'll reach Pelluca City!$"
+
+WinterlilyHollow_NPC_SurfMan_Text_1:
+# 274 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Ivy River takes you straight down to\n"
 	.string "Pelluca City. Far better than trekking\l"
 	.string "down Mt. Mirroh!$"
 
-WinterlilyHollow_NPC_SurfMan_Text_1:
-# 272 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_2:
+# 277 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "I surfed up here through the Ivy River.\n"
 	.string "Since I'm settling here, I don't need\l"
 	.string "the HM any more. What I need instead is\l"
@@ -751,31 +761,31 @@ WinterlilyHollow_NPC_SurfMan_Text_1:
 	.string "can give me a Heart Scale. Have you got\l"
 	.string "one?$"
 
-WinterlilyHollow_NPC_SurfMan_Text_2:
-# 275 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_3:
+# 280 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "My search continues!$"
 
-WinterlilyHollow_NPC_SurfMan_Text_3:
-# 281 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_4:
+# 286 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Hey, you don't have any Heart Scales!$"
 
-WinterlilyHollow_NPC_SurfMan_Text_4:
-# 285 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_5:
+# 290 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "{PLAYER} gave the man a Heart Scale$"
 
-WinterlilyHollow_NPC_SurfMan_Text_5:
-# 286 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_6:
+# 291 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Thank you! This is just what I wanted.\n"
 	.string "As promised, here you go.$"
 
-WinterlilyHollow_NPC_SurfMan_Text_6:
-# 288 "data//maps/WinterlilyHollow/scripts.pory"
+WinterlilyHollow_NPC_SurfMan_Text_7:
+# 293 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You don't need to teach your Pokemon\n"
 	.string "the move. Any compatible Pokemon can\l"
 	.string "use it on any water body!$"
 
 WinterlilyHollow_NPC_SurfManAlt_Text_0:
-# 296 "data//maps/WinterlilyHollow/scripts.pory"
+# 301 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "When I was younger, I once encountered\n"
 	.string "a strange Pokemon in the Mirroh\l"
 	.string "Caverns. It was shaped like a blue plant\l"
@@ -785,21 +795,21 @@ WinterlilyHollow_NPC_SurfManAlt_Text_0:
 	.string "Pokemon?$"
 
 WinterlilyHollow_NPC_SurfManAlt_Text_1:
-# 298 "data//maps/WinterlilyHollow/scripts.pory"
+# 303 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Ah. My search continues then.$"
 
 WinterlilyHollow_NPC_Miner_Text_0:
-# 333 "data//maps/WinterlilyHollow/scripts.pory"
+# 338 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "See all these crystals on the walls? I'm\n"
 	.string "trying to dig it up. Wanna try? You can\l"
 	.string "borrow my spare pickaxe, but it'll cost\l"
 	.string "you 500.$"
 
 WinterlilyHollow_NPC_Miner_Text_1:
-# 341 "data//maps/WinterlilyHollow/scripts.pory"
+# 346 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You don't have enough money.$"
 
 WinterlilyHollow_NPC_Miner_Text_2:
-# 344 "data//maps/WinterlilyHollow/scripts.pory"
+# 349 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You can dig up some great stuff, you\n"
 	.string "know?$"

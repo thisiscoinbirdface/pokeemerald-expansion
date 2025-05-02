@@ -2521,12 +2521,12 @@ const struct Item gItemsInfo[] =
 
     [ITEM_BOTTLE_CAP] =
     {
-        .name = _("Bottle Cap"),
+        .name = _("Trash"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 5000,
         .description = COMPOUND_STRING(
-            "A beautiful bottle\n"
-            "cap that gives off\n"
-            "a silver gleam."),
+            "Trash left by\n"
+            "travelers with\n"
+            "no civic sense."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

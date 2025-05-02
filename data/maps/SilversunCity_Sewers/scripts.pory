@@ -377,15 +377,15 @@ script SilversunCity_Sewers_Market_Muk{
     lockall
     faceplayer
     playmoncry(SPECIES_MUK, CRY_MODE_NORMAL)
-    msgbox(format("It's a Muk! It's looking for junk to eat...its chomping on Bottle Caps!"))
+    msgbox(format("It's a Muk! It's looking for junk to eat...its chomping on Trash!"))
     
     checkitem(ITEM_BOTTLE_CAP)
     if (var(VAR_RESULT) == 1){
 
-        msgbox(format("Give Muk a Bottle Cap?"), MSGBOX_YESNO)
+        msgbox(format("Give Muk some Trash?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
 
-            msgbox(format("{PLAYER} handed a Bottle Cap to Muk.\pMuk chomps down on it with joy!\p...\pIt spits out something onto the floor."))
+            msgbox(format("{PLAYER} handed some Trash to Muk.\pMuk chomps down on it with joy!\p...\pIt spits out something onto the floor."))
             removeitem(ITEM_BOTTLE_CAP)
             giveitem(ITEM_ABILITY_CAPSULE)
             msgbox(format("Muk disappears into the sewers..."))

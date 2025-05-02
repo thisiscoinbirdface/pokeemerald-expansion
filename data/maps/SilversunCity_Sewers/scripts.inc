@@ -872,15 +872,15 @@ SilversunCity_Sewers_Market_D_Text_0:
 SilversunCity_Sewers_Market_Muk_Text_0:
 # 380 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "It's a Muk! It's looking for junk to\n"
-	.string "eat...its chomping on Bottle Caps!$"
+	.string "eat...its chomping on Trash!$"
 
 SilversunCity_Sewers_Market_Muk_Text_1:
 # 385 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.string "Give Muk a Bottle Cap?$"
+	.string "Give Muk some Trash?$"
 
 SilversunCity_Sewers_Market_Muk_Text_2:
 # 388 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.string "{PLAYER} handed a Bottle Cap to Muk.\p"
+	.string "{PLAYER} handed some Trash to Muk.\p"
 	.string "Muk chomps down on it with joy!\p"
 	.string "...\p"
 	.string "It spits out something onto the floor.$"
