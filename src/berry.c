@@ -2226,7 +2226,7 @@ void ObjectEventInteractionPickBerryTree(void)
 
     if (!OW_BERRY_MUTATIONS || mutation == 0)
     {
-        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
+        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id) + 2);
         return;
     }
     gSpecialVar_0x8004 = (CheckBagHasSpace(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id)) && CheckBagHasSpace(BerryTypeToItemId(mutation), 1)) + 2;
