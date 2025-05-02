@@ -13560,7 +13560,7 @@
           "map": "MAP_ANCIENT_MIRROH",
           "base_label": "gAncientMirroh0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 28,
