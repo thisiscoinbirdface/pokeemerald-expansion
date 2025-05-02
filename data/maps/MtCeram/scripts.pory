@@ -280,7 +280,6 @@ script MtCeram_BeforePeak_Trigger1{
 }
 
 script MtCeram_EventScript_BeforePeakBattle{
-
     //First kohla and the grunts exchange dialogue
     applymovement(LOCALID_TOPKOHLA, moves(jump_in_place_up))
     waitmovement(0)
@@ -356,7 +355,6 @@ script MtCeram_EventScript_BeforePeakBattle{
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
-    removeobject(LOCALID_TOPKOHLA)
 
     //Team Somber dialogue
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
@@ -380,10 +378,8 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //now you battle
     trainerbattle_no_intro(TRAINER_MTCERAM_GRUNT_DOUBLE, format("Argh! You stupid kid!"))
-    
 
-
-    //grunts beaten, disappear
+    // grunts beaten, disappear
     speakername("Grunt A")
     msgbox(format("How could you beat us?"))
     release
@@ -401,6 +397,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     removeobject(LOCALID_TOPGRUNT1)
     removeobject(LOCALID_TOPGRUNT2)
     removeobject(LOCALID_GAB)
+    removeobject(LOCALID_TOPKOHLA)
     fadescreenswapbuffers(FADE_FROM_BLACK)
 
     fadedefaultbgm
@@ -409,6 +406,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     setflag(FLAG_MT_CERAM_SOMBER_PEAK)
 
     releaseall
+    end
 }
 
 
