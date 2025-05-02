@@ -223,7 +223,7 @@ script VilethornWoods_Trainer_D{
 }
 
 script VilethornWoods_Trainer_E{
-    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods creep me out! I was supposed to go to Gloria's theater studio in Silversun City...but I got lost!"), "You creep me out too!")
+    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods are creepy! I was supposed to go to Gloria's theater studio in Silversun City...but I'm lost!"), "You creep me out too!")
     msgbox(format("I've been stuck here for hours. I need to get out!"))
     releaseall
     end
@@ -337,6 +337,7 @@ script VilethornWoods_NPC3{
         msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root. I got mad and ripped it out! Do you want it?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("I'm so angry that you'll have to battle me for it!"))
+            release
             trainerbattle_no_intro(TRAINER_VILETHORN_I, "My anger is gone now!")
             giveitem(ITEM_BIG_ROOT)
             release

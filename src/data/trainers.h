@@ -2327,7 +2327,7 @@ F_TRAINER_FEMALE |
 #line 997
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 996
-            .lvl = 22,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -2338,7 +2338,7 @@ F_TRAINER_FEMALE |
 #line 1001
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 1000
-            .lvl = 24,
+            .lvl = 23,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -2376,7 +2376,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1018
-            .species = SPECIES_RATICATE_ALOLA,
+            .species = SPECIES_RATTATA_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1020
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

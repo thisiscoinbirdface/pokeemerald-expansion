@@ -31,6 +31,7 @@ script SilversunCity_Houses_Artist{
                 speakername("Arsalan")             
                 msgbox(format("Amazing! You are a life-saver. Here, I must repay you somehow. Take this, have it!"))
                 release
+                setflag(FLAG_SYS_GOT_STRENGTH)
                 giveitem(ITEM_HM04)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
                 speakername("Arsalan")

@@ -1564,7 +1564,7 @@
 #define FLAG_SYS_EXP_ALL                            (SYSTEM_FLAGS + 0x85) // Unused Flag
 #define FLAG_SYS_FISHING_MINIGAME                   (SYSTEM_FLAGS + 0x86) // Unused Flag
 #define FLAG_SYS_TERA_ORB                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
+#define FLAG_SYS_GOT_STRENGTH                       (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
