@@ -11763,12 +11763,12 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 5,
                 "max_level": 6,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_TEDDIURSA"
               },
               {
                 "min_level": 5,
@@ -11783,7 +11783,7 @@
               {
                 "min_level": 7,
                 "max_level": 9,
-                "species": "SPECIES_AXEW"
+                "species": "SPECIES_NOIBAT"
               }
             ]
           },

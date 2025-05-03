@@ -486,16 +486,7 @@
       "x": 43,
       "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_C",
-      "var_value": "0",
-      "script": "MtCeram_Peak_SaveGameTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 43,
-      "y": 16,
-      "elevation": 0,
-      "var": "VAR_TEMP_C",
+      "var": "VAR_TEMP_E",
       "var_value": "0",
       "script": "SomberHQ_SaveGameTrigger"
     },
@@ -504,7 +495,7 @@
       "x": 43,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TEMP_C",
+      "var": "VAR_TEMP_E",
       "var_value": "0",
       "script": "SomberHQ_SaveGameTrigger"
     }

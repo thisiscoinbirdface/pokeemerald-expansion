@@ -31,10 +31,24 @@ Route6_Transition_KohlaBattle_Trigger0::
 # 31 "data//maps/HoyaRiverNorth/scripts.pory"
 	delay 30
 # 33 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Transition_KohlaBattle_Trigger0_Movement_0
+	special SpawnCameraObject
 # 34 "data//maps/HoyaRiverNorth/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_CAMERA, Route6_Transition_KohlaBattle_Trigger0_Movement_0
 # 35 "data//maps/HoyaRiverNorth/scripts.pory"
+	waitmovement 0
+# 38 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 39 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_KohlaBattle_Trigger0_Text_1
+# 40 "data//maps/HoyaRiverNorth/scripts.pory"
+	release
+# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Transition_KohlaBattle_Trigger0_Movement_0
+# 44 "data//maps/HoyaRiverNorth/scripts.pory"
+	waitmovement 0
+# 45 "data//maps/HoyaRiverNorth/scripts.pory"
+	special RemoveCameraObject
+# 47 "data//maps/HoyaRiverNorth/scripts.pory"
 	call Route6_Transition_EventScript_KohlaBattle
 	return
 
@@ -43,17 +57,31 @@ Route6_Transition_KohlaBattle_Trigger0_2:
 
 
 Route6_Transition_KohlaBattle_Trigger1::
-# 39 "data//maps/HoyaRiverNorth/scripts.pory"
+# 51 "data//maps/HoyaRiverNorth/scripts.pory"
 	goto_if_set FLAG_ROUTE6_KOHLA_BATTLE, Route6_Transition_KohlaBattle_Trigger1_2
-# 40 "data//maps/HoyaRiverNorth/scripts.pory"
+# 53 "data//maps/HoyaRiverNorth/scripts.pory"
 	lockall
-# 41 "data//maps/HoyaRiverNorth/scripts.pory"
+# 54 "data//maps/HoyaRiverNorth/scripts.pory"
 	delay 30
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Transition_KohlaBattle_Trigger1_Movement_0
-# 44 "data//maps/HoyaRiverNorth/scripts.pory"
+# 56 "data//maps/HoyaRiverNorth/scripts.pory"
+	special SpawnCameraObject
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route6_Transition_KohlaBattle_Trigger1_Movement_0
+# 58 "data//maps/HoyaRiverNorth/scripts.pory"
 	waitmovement 0
-# 45 "data//maps/HoyaRiverNorth/scripts.pory"
+# 61 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 62 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_KohlaBattle_Trigger0_Text_1
+# 63 "data//maps/HoyaRiverNorth/scripts.pory"
+	release
+# 66 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Transition_KohlaBattle_Trigger1_Movement_0
+# 67 "data//maps/HoyaRiverNorth/scripts.pory"
+	waitmovement 0
+# 68 "data//maps/HoyaRiverNorth/scripts.pory"
+	special RemoveCameraObject
+# 70 "data//maps/HoyaRiverNorth/scripts.pory"
 	call Route6_Transition_EventScript_KohlaBattle
 	return
 
@@ -62,114 +90,114 @@ Route6_Transition_KohlaBattle_Trigger1_2:
 
 
 Route6_Transition_EventScript_KohlaBattle::
-# 51 "data//maps/HoyaRiverNorth/scripts.pory"
-	speakername Route6_Transition_EventScript_KohlaBattle_Text_0
-# 52 "data//maps/HoyaRiverNorth/scripts.pory"
-	msgbox Route6_Transition_EventScript_KohlaBattle_Text_1
-# 53 "data//maps/HoyaRiverNorth/scripts.pory"
-	release
-# 56 "data//maps/HoyaRiverNorth/scripts.pory"
-	trainerbattle_no_intro TRAINER_ROUTE6_KOHLA, Route6_Transition_EventScript_KohlaBattle_Text_2
-# 58 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_0
-# 59 "data//maps/HoyaRiverNorth/scripts.pory"
-	waitmovement 0
-# 60 "data//maps/HoyaRiverNorth/scripts.pory"
-	speakername Route6_Transition_EventScript_KohlaBattle_Text_0
-# 61 "data//maps/HoyaRiverNorth/scripts.pory"
-	msgbox Route6_Transition_EventScript_KohlaBattle_Text_3
-# 62 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_1
-# 63 "data//maps/HoyaRiverNorth/scripts.pory"
-	delay 24
-# 64 "data//maps/HoyaRiverNorth/scripts.pory"
-	speakername Route6_Transition_EventScript_KohlaBattle_Text_0
-# 65 "data//maps/HoyaRiverNorth/scripts.pory"
-	msgbox Route6_Transition_EventScript_KohlaBattle_Text_4
-# 66 "data//maps/HoyaRiverNorth/scripts.pory"
-	release
-# 67 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_2
-# 68 "data//maps/HoyaRiverNorth/scripts.pory"
-	delay 24
-# 69 "data//maps/HoyaRiverNorth/scripts.pory"
-	speakername Route6_Transition_EventScript_KohlaBattle_Text_0
-# 70 "data//maps/HoyaRiverNorth/scripts.pory"
-	msgbox Route6_Transition_EventScript_KohlaBattle_Text_5
-# 71 "data//maps/HoyaRiverNorth/scripts.pory"
-	release
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
-	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_3
-# 74 "data//maps/HoyaRiverNorth/scripts.pory"
-	waitmovement 0
-# 75 "data//maps/HoyaRiverNorth/scripts.pory"
-	removeobject 1
+# 76 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 77 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_EventScript_KohlaBattle_Text_0
 # 78 "data//maps/HoyaRiverNorth/scripts.pory"
+	release
+# 81 "data//maps/HoyaRiverNorth/scripts.pory"
+	trainerbattle_no_intro TRAINER_ROUTE6_KOHLA, Route6_Transition_EventScript_KohlaBattle_Text_1
+# 83 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_0
+# 84 "data//maps/HoyaRiverNorth/scripts.pory"
+	waitmovement 0
+# 85 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 86 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_EventScript_KohlaBattle_Text_2
+# 87 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_1
+# 88 "data//maps/HoyaRiverNorth/scripts.pory"
+	delay 24
+# 89 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 90 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_EventScript_KohlaBattle_Text_3
+# 91 "data//maps/HoyaRiverNorth/scripts.pory"
+	release
+# 92 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_2
+# 93 "data//maps/HoyaRiverNorth/scripts.pory"
+	delay 24
+# 94 "data//maps/HoyaRiverNorth/scripts.pory"
+	speakername Route6_Transition_KohlaBattle_Trigger0_Text_0
+# 95 "data//maps/HoyaRiverNorth/scripts.pory"
+	msgbox Route6_Transition_EventScript_KohlaBattle_Text_4
+# 96 "data//maps/HoyaRiverNorth/scripts.pory"
+	release
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
+	applymovement 1, Route6_Transition_EventScript_KohlaBattle_Movement_3
+# 99 "data//maps/HoyaRiverNorth/scripts.pory"
+	waitmovement 0
+# 100 "data//maps/HoyaRiverNorth/scripts.pory"
+	removeobject 1
+# 103 "data//maps/HoyaRiverNorth/scripts.pory"
 	setflag FLAG_ROUTE6_KOHLA_BATTLE
-# 79 "data//maps/HoyaRiverNorth/scripts.pory"
+# 104 "data//maps/HoyaRiverNorth/scripts.pory"
 	releaseall
 	end
 
 
-# 33 "data//maps/HoyaRiverNorth/scripts.pory"
+# 34 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_KohlaBattle_Trigger0_Movement_0:
-# 33 "data//maps/HoyaRiverNorth/scripts.pory"
+# 34 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 33 "data//maps/HoyaRiverNorth/scripts.pory"
+# 34 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 33 "data//maps/HoyaRiverNorth/scripts.pory"
+# 34 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 33 "data//maps/HoyaRiverNorth/scripts.pory"
+# 34 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
 	step_end
 
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_KohlaBattle_Trigger1_Movement_0:
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_left
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 43 "data//maps/HoyaRiverNorth/scripts.pory"
+# 57 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
 	step_end
 
-# 58 "data//maps/HoyaRiverNorth/scripts.pory"
+# 83 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_0:
-# 58 "data//maps/HoyaRiverNorth/scripts.pory"
+# 83 "data//maps/HoyaRiverNorth/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 62 "data//maps/HoyaRiverNorth/scripts.pory"
+# 87 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_1:
-# 62 "data//maps/HoyaRiverNorth/scripts.pory"
+# 87 "data//maps/HoyaRiverNorth/scripts.pory"
 	face_right
 	step_end
 
-# 67 "data//maps/HoyaRiverNorth/scripts.pory"
+# 92 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_2:
-# 67 "data//maps/HoyaRiverNorth/scripts.pory"
+# 92 "data//maps/HoyaRiverNorth/scripts.pory"
 	face_up
 	step_end
 
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 Route6_Transition_EventScript_KohlaBattle_Movement_3:
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
-# 73 "data//maps/HoyaRiverNorth/scripts.pory"
+# 98 "data//maps/HoyaRiverNorth/scripts.pory"
 	walk_down
 	step_end
 
@@ -183,13 +211,16 @@ Route6_Transition_EventScript_SharpedoBlocker_Text_0:
 	.string "Don't be shocked - it's a wild Mega\n"
 	.string "Sharpedo!$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_0:
-# 51 "data//maps/HoyaRiverNorth/scripts.pory"
+Route6_Transition_KohlaBattle_Trigger0_Text_0:
+# 38 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "Kohla$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_1:
-# 52 "data//maps/HoyaRiverNorth/scripts.pory"
-	.string "I've been waiting for you.\p"
+Route6_Transition_KohlaBattle_Trigger0_Text_1:
+# 39 "data//maps/HoyaRiverNorth/scripts.pory"
+	.string "I've been waiting for you.$"
+
+Route6_Transition_EventScript_KohlaBattle_Text_0:
+# 77 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "Once again you save the day while I run\n"
 	.string "off chasing dead leads. Your stupid\l"
 	.string "Professor Rue's lead was bogus!\p"
@@ -204,21 +235,21 @@ Route6_Transition_EventScript_KohlaBattle_Text_1:
 	.string "want you to know that I will NEVER be\l"
 	.string "inferior to you!$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_2:
-# 56 "data//maps/HoyaRiverNorth/scripts.pory"
+Route6_Transition_EventScript_KohlaBattle_Text_1:
+# 81 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "...again...$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_3:
-# 61 "data//maps/HoyaRiverNorth/scripts.pory"
+Route6_Transition_EventScript_KohlaBattle_Text_2:
+# 86 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "No!! Not again!$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_4:
-# 65 "data//maps/HoyaRiverNorth/scripts.pory"
+Route6_Transition_EventScript_KohlaBattle_Text_3:
+# 90 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "Boltund, you're too weak! You just lost\n"
 	.string "me the battle! You need to push\l"
 	.string "yourself harder!$"
 
-Route6_Transition_EventScript_KohlaBattle_Text_5:
-# 70 "data//maps/HoyaRiverNorth/scripts.pory"
+Route6_Transition_EventScript_KohlaBattle_Text_4:
+# 95 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "{PLAYER}, this isn't over. Mark my\n"
 	.string "words!$"

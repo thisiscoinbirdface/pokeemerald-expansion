@@ -173,7 +173,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     delay(8)
     applymovement(LOCALID_GAB, moves(walk_faster_left walk_faster_down walk_faster_left *5))
     waitmovement(0)
-    removeobject(LOCALID_GAB)
+    setobjectxy(LOCALID_GAB, 0, 0)
 
     //Melea explains the plan
         //next dreamstone in mt mirroh
@@ -221,6 +221,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     release
 
     clearflag(FLAG_HIDE_SILVERSUN_PROF)
+    removeobject(LOCALID_GAB)
 
     //exit
     warp(MAP_SILVERSUN_CITY, 23, 11)
@@ -432,7 +433,7 @@ script SomberHQ_SaveGameTrigger{
 	waitstate
     release
 
-    setvar(VAR_TEMP_C, 1)
+    setvar(VAR_TEMP_E, 1)
 
     end
 }
