@@ -58,7 +58,7 @@ script RangerInstitute_1F_ApplicationPC{
             msgbox(format("IT WILL COST 500. PROCEED WITH PRINTING?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
                 hidemoneybox
-                msgbox(format("...\pA peice of paper comes out of the PC!\pPLEASE BRING THIS FORM TO THE INTERVIEWER ON DUTY."))
+                msgbox(format("...\pA piece of paper comes out of the PC!\pPLEASE BRING THIS FORM TO THE INTERVIEWER ON DUTY."))
                 setvar(VAR_RANGER_INSTITUTE, 1)
             } else {
 
@@ -478,7 +478,8 @@ script RangerInstitute_Mon_Bayleef{
         msgbox(format("Bayleef is singing happily! It snuggles upto you and gives you something..."))
         giveitem(ITEM_MAX_REVIVE)
         setflag(FLAG_RANGER_INSTITUTE_BAYLEEF)
-        msgbox(format("Thanks Bayleef!"), MSGBOX_NPC)
+        msgbox(format("Thanks Bayleef!"))
+        releaseall
     }
     end
 }

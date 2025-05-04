@@ -556,9 +556,9 @@ Route6_Gabrielle_Victory::
 # 403 "data//maps/Route6/scripts.pory"
 	release
 # 405 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_0
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Victory_Movement_0
 # 406 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Victory_Movement_1
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_1
 # 407 "data//maps/Route6/scripts.pory"
 	waitmovement 0
 # 409 "data//maps/Route6/scripts.pory"
@@ -1150,7 +1150,7 @@ Route6_Gabrielle_Victory_Text_1:
 
 Route6_Gabrielle_Victory_Text_2:
 # 421 "data//maps/Route6/scripts.pory"
-	.string "I live Pelluca City, just past the Hoya\n"
-	.string "River. I was on my way home when those\l"
-	.string "grunts ambushed me...I'm going there\l"
-	.string "now. See you around.$"
+	.string "I live in Pelluca City, just past the\n"
+	.string "Hoya River. I was on my way home when\l"
+	.string "those grunts ambushed me...I'm going\l"
+	.string "there now. See you around.$"

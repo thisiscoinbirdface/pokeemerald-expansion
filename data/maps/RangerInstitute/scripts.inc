@@ -646,7 +646,9 @@ RangerInstitute_Mon_Bayleef::
 # 480 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
 # 481 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Bayleef_Text_2, MSGBOX_NPC
+	msgbox RangerInstitute_Mon_Bayleef_Text_2
+# 482 "data//maps/RangerInstitute/scripts.pory"
+	releaseall
 RangerInstitute_Mon_Bayleef_1:
 	end
 
@@ -657,25 +659,25 @@ RangerInstitute_Mon_Bayleef_2:
 
 
 RangerInstitute_Mon_Palpitoad::
-# 486 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
 # 487 "data//maps/RangerInstitute/scripts.pory"
+	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
+# 488 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Palpitoad_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Frogadier::
-# 491 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
 # 492 "data//maps/RangerInstitute/scripts.pory"
+	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
+# 493 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Frogadier_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Scyther::
-# 496 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
 # 497 "data//maps/RangerInstitute/scripts.pory"
+	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
+# 498 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Scyther_Text_0, MSGBOX_NPC
 	end
 
@@ -967,7 +969,7 @@ RangerInstitute_1F_ApplicationPC_Text_3:
 RangerInstitute_1F_ApplicationPC_Text_4:
 # 61 "data//maps/RangerInstitute/scripts.pory"
 	.string "...\p"
-	.string "A peice of paper comes out of the PC!\p"
+	.string "A piece of paper comes out of the PC!\p"
 	.string "PLEASE BRING THIS FORM TO THE\n"
 	.string "INTERVIEWER ON DUTY.$"
 
@@ -1353,15 +1355,15 @@ RangerInstitute_Mon_Bayleef_Text_2:
 	.string "Thanks Bayleef!$"
 
 RangerInstitute_Mon_Palpitoad_Text_0:
-# 487 "data//maps/RangerInstitute/scripts.pory"
+# 488 "data//maps/RangerInstitute/scripts.pory"
 	.string "Palpitoad grunts and waddles around. It\n"
 	.string "seems upset...$"
 
 RangerInstitute_Mon_Frogadier_Text_0:
-# 492 "data//maps/RangerInstitute/scripts.pory"
+# 493 "data//maps/RangerInstitute/scripts.pory"
 	.string "$"
 
 RangerInstitute_Mon_Scyther_Text_0:
-# 497 "data//maps/RangerInstitute/scripts.pory"
+# 498 "data//maps/RangerInstitute/scripts.pory"
 	.string "Scyther looks as bummed out as its\n"
 	.string "trainer!$"

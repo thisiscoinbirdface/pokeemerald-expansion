@@ -650,7 +650,7 @@ PellucaCity_EventScripts_Gabrielle_Text_7:
 
 PellucaCity_EventScripts_Gabrielle_Text_8:
 # 149 "data//maps/PellucaCity/scripts.pory"
-	.string "Who we are is defined by the chocies we\n"
+	.string "Who we are is defined by the choices we\n"
 	.string "make, and once we lock in, we can't\l"
 	.string "change.\p"
 	.string "I can't erase what I've done, but I'm\n"
