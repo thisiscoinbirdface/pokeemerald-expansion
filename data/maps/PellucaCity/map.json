@@ -540,7 +540,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_PELLUCA_MAYOR_FIGHT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
@@ -553,7 +553,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_PELLUCA_MAYOR_FIGHT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
@@ -566,7 +566,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_PELLUCA_MAYOR_FIGHT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
@@ -579,7 +579,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_PELLUCA_MAYOR_FIGHT"
     }
   ],
   "warp_events": [
@@ -674,6 +674,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "PellucaCity_Greta_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PellucaCity_MayorFight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PellucaCity_MayorFight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PellucaCity_MayorFight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PellucaCity_MayorFight_Trigger"
     }
   ],
   "bg_events": [

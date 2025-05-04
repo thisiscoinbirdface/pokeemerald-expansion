@@ -22,20 +22,28 @@ mapscripts PellucaCity_MapScripts{}
 script PellucaCity_MayorFight_Trigger{
     if (flag(FLAG_PELLUCA_MAYOR_FIGHT)) {end}
 
+    lockall
+
+    //camera pan down
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     //argument
     applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark jump_in_place_left))
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("But you can't be doing this! This is our city!"))
+    msgbox(format("But you can't be doing this to our citizens! This is our city!"))
     release
     delay(16)
 
     applymovement(LOCALID_S2, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
     delay(16)
-    speakername("Qwilsquad Boss")
-    msgbox(format("I've told you a hundred times, you paper-pushing wimp! Don't mess with the Qwilsquad! This is our turf - we don't give a hoot about you and your title!"))
+    speakername("Q-squad Boss")
+    msgbox(format("I've told you a hundred times, you paper-pushing wimp! Don't you dare mess with the Qwilsquad!\pThis is our turf - we don't give a hoot about you and your title!"))
     release
     delay(16)
 
@@ -43,22 +51,22 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("No! I'm putting my foot down. You and your lot lot aren't allowed in Pelluca City any more!"))
+    msgbox(format("No! Enough is enough! I'm putting my foot down.\pYou and your lot lot aren't allowed in Pelluca City any more!"))
     release
     delay(16)
 
-    applymovement(LOCALID_S1, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_S1, moves(face_down))
     waitmovement(0)
     delay(16)
-    speakername("Qwilsquad B")
+    speakername("Q-squad Grunt")
     msgbox(format("Hahaha! What a lame mayor!"))
     release
     delay(16)
 
-    applymovement(LOCALID_S1, moves(emote_exclamation_mark jump_in_place_up))
+    applymovement(LOCALID_S3, moves(face_up))
     waitmovement(0)
     delay(16)
-    speakername("Qwilsquad C")
+    speakername("Q-squad Grunt")
     msgbox(format("Yeah! He really thinks he can tell us what to do!"))
     release
     delay(16)
@@ -66,8 +74,36 @@ script PellucaCity_MayorFight_Trigger{
     applymovement(LOCALID_S1, moves( jump_in_place_right))
     applymovement(LOCALID_S3, moves( jump_in_place_right))
     delay(16)
-    speakername("Qwilsquad A")
+    speakername("Q-squad Grunt")
     msgbox(format("Go on boss - teach him a lesson!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S2, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("You heard 'em Mayor. Looks like my boys want me to prove that we own this city!\pWanna try me? Right here?"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    applymovement(LOCALID_MAYOR, moves(walk_right face_left))
+    waitmovement(0)
+    delay(16)
+
+    speakername("Mayor")
+    msgbox(format("Nono - see, I'm not - look, I'm just asking for a little cooperation and -"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S1, moves( jump_in_place_right))
+    applymovement(LOCALID_S3, moves( jump_in_place_right))
+    delay(16)
+    speakername("Q-squad Grunt")
+    msgbox(format("Hahaha! Look at the wimp! Poor guy."))
     release
     delay(16)
 
