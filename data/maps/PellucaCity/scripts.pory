@@ -1,5 +1,10 @@
 raw`
     .set LOCALID_GAB, 5
+
+    .set LOCALID_MAYOR, 39
+    .set LOCALID_S1, 40
+    .set LOCALID_S2, 41
+    .set LOCALID_S3, 42
 `
 
 mapscripts PellucaCity_MapScripts{}
@@ -12,7 +17,73 @@ mapscripts PellucaCity_MapScripts{}
 
 
 
-//Earthquake cutscene
+//Earthquake Ministory
+//Initial cutscene
+script PellucaCity_MayorFight_Trigger{
+    if (flag(FLAG_PELLUCA_MAYOR_FIGHT)) {end}
+
+    //argument
+    applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("But you can't be doing this! This is our city!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S2, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    speakername("Qwilsquad Boss")
+    msgbox(format("I've told you a hundred times, you paper-pushing wimp! Don't mess with the Qwilsquad! This is our turf - we don't give a hoot about you and your title!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_MAYOR, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("No! I'm putting my foot down. You and your lot lot aren't allowed in Pelluca City any more!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S1, moves(emote_exclamation_mark jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    speakername("Qwilsquad B")
+    msgbox(format("Hahaha! What a lame mayor!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S1, moves(emote_exclamation_mark jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    speakername("Qwilsquad C")
+    msgbox(format("Yeah! He really thinks he can tell us what to do!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_S1, moves( jump_in_place_right))
+    applymovement(LOCALID_S3, moves( jump_in_place_right))
+    delay(16)
+    speakername("Qwilsquad A")
+    msgbox(format("Go on boss - teach him a lesson!"))
+    release
+    delay(16)
+
+    //mayor asks for help
+
+
+    removeobject(LOCALID_MAYOR)
+    removeobject(LOCALID_S1)
+    removeobject(LOCALID_S2)
+    removeobject(LOCALID_S3)        
+    setflag(FLAG_PELLUCA_MAYOR_FIGHT)
+
+    releaseall
+    end
+
+}
 
 
 

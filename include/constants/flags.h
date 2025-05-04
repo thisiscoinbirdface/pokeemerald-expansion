@@ -121,7 +121,7 @@
 #define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // Unused Flag
 #define FLAG_MIRROHGYM_TRAINER_A  0x27E // Unused Flag
 #define FLAG_MIRROHGYM_TRAINER_B  0x27F // Unused Flag
-#define FLAG_UNUSED_0x495  0x495 // Unused Flag
+#define FLAG_PELLUCA_MAYOR_FIGHT  0x495 // Unused Flag
 #define FLAG_UNUSED_0x496  0x496 // Unused Flag
 #define FLAG_UNUSED_0x497  0x497 // Unused Flag
 #define FLAG_UNUSED_0x498  0x498 // Unused Flag
@@ -1566,7 +1566,7 @@
 #define FLAG_SYS_TERA_ORB                           (SYSTEM_FLAGS + 0x87) // Unused Flag
 #define FLAG_SYS_GOT_STRENGTH                       (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_SYS_SURF_ENABLED                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
