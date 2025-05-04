@@ -281,13 +281,13 @@ script MirrohInterior_1F_NPC_C{
 
 //end dude?
 script MirrohInterior_1F_NPC_D{
-    msgbox(format("Past this is the trek upto the mountain peak. The weather is harsh!"), MSGBOX_NPC)
+    msgbox(format("Past this is the trek up to the mountain peak. The weather is harsh!"), MSGBOX_NPC)
     end
 }
 
 //lady with pineco on bridge
 script MirrohInterior_1F_NPC_E{
-    msgbox(format("Past this is the trek upto the mountain peak. The weather is harsh!"), MSGBOX_NPC)
+    msgbox(format("Past this is the trek up to the mountain peak. The weather is harsh!"), MSGBOX_NPC)
     end
 }
 script MirrohInterior_1F_Pineco{

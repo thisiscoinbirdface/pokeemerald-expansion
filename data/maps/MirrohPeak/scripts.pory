@@ -236,6 +236,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     release   
     applymovement(LOCALID_MELEA, moves(walk_up walk_left face_up))
     waitmovement(0)
+    delay(8)
     applymovement(LOCALID_MELEA, moves(fly_up))
     waitmovement(0)
     delay(24)

@@ -978,8 +978,8 @@ MirrohInterior_1F_NPC_C_Text_0:
 
 MirrohInterior_1F_NPC_D_Text_0:
 # 284 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Past this is the trek upto the mountain\n"
-	.string "peak. The weather is harsh!$"
+	.string "Past this is the trek up to the\n"
+	.string "mountain peak. The weather is harsh!$"
 
 MirrohInterior_1F_Pineco_Text_0:
 # 295 "data//maps/MirrohInterior_1F/scripts.pory"
