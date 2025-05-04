@@ -107,8 +107,57 @@ script PellucaCity_MayorFight_Trigger{
     release
     delay(16)
 
+    applymovement(LOCALID_S2, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("Got it, mayor? You're not in charge - I am! And this town belongs to the Qwilsquad!"))
+    release
+    delay(16)
+
+    //exit
+    applymovement(LOCALID_S2, moves(walk_left))
+    waitmovement(0)    
+    applymovement(LOCALID_S2, moves(walk_left))
+    applymovement(LOCALID_S1, moves(walk_down))
+    waitmovement(0)
+    applymovement(LOCALID_S2, moves(walk_left))
+    applymovement(LOCALID_S1, moves(walk_left))
+    applymovement(LOCALID_S3, moves(walk_up))
+    waitmovement(0)
+    applymovement(LOCALID_S2, moves(walk_left * 9))
+    applymovement(LOCALID_S1, moves(walk_left * 9))
+    applymovement(LOCALID_S3, moves(walk_left * 9))
+    waitmovement(0)
+
     //mayor asks for help
 
+
+    applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark face_up))
+    waitmovement(0)
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("Oh trainer! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, the restaurant here is famous! You should give it a try."))
+    release
+    delay(16)
+
+    applymovement(LOCALID_MAYOR, moves(walk_left * 5 walk_down))
+    waitmovement(0)
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("Sigh..what will I do?"))
+    release
+    delay(16)
+    applymovement(LOCALID_MAYOR, moves(walk_down * 6))
+    waitmovement(0)
+    delay(16)
+
+
+    //end
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     removeobject(LOCALID_MAYOR)
     removeobject(LOCALID_S1)
@@ -120,6 +169,34 @@ script PellucaCity_MayorFight_Trigger{
     end
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
