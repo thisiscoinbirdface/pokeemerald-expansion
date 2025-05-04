@@ -5,6 +5,7 @@ raw`
     .set LOCALID_S1, 40
     .set LOCALID_S2, 41
     .set LOCALID_S3, 42
+    .set LOCALID_S_ENTRANCE, 8
 `
 
 mapscripts PellucaCity_MapScripts{}
@@ -43,7 +44,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("I've told you a hundred times, you paper-pushing wimp! Don't you dare mess with the Qwilsquad!\pThis is our turf - we don't give a hoot about you and your title!"))
+    msgbox(format("I've told you a hundred times, you paper-pushing wimp! You ain't doing a single thing right for our city, so don't you dare mess with the Qwilsquad!\pThis is our turf - we don't give a hoot about you and your title!"))
     release
     delay(16)
 
@@ -111,7 +112,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Got it, mayor? You're not in charge - I am! And this town belongs to the Qwilsquad!"))
+    msgbox(format("Got it, mayor? You're not in charge here.\pI am! And this town belongs to the Qwilsquad!"))
     release
     delay(16)
 
@@ -145,7 +146,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("Sigh..what will I do?"))
+    msgbox(format("Sigh...what will I do?"))
     release
     delay(16)
     applymovement(LOCALID_MAYOR, moves(walk_down * 6))
@@ -180,14 +181,86 @@ script PellucaCity_MayorFight_Trigger{
 
 
 
+//Sailor who won't let you in without showing a Qwilfish
+script PellucaCity_Sailor_Entrance{
+    lockall
+    faceplayer
 
+    speakername("Q-squad Grunt")
+    msgbox(format("Beat it, kid! This is private property belonging to the Qwilsquad."))
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){release end}
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 1){release end}
 
+    goto(PellucaCity_Sailor_Multichoice)
 
+    releaseall
+    end
+}
 
+script PellucaCity_Sailor_Multichoice{
+    message(format("Only Qwilsquad members can enter!"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "What's a Qwilsquad?", "I'm a member!")
 
+    if (var(VAR_RESULT) == 0){goto(PellucaCity_Sailor_QwilsquadExplanation)}
+    if (var(VAR_RESULT) == 1){goto(PellucaCity_Sailor_MemberCheck)}    
+}
 
+script PellucaCity_Sailor_QwilsquadExplanation{
+    speakername("Q-squad Grunt")
+    msgbox(format("You interested in joining or something, kid? The Qwilsquad is all about trust and brotherhood. You gotta have each other's backs! We're from Pelluca, but we went down to Rivetshore to sail. Now we're back here, and we're not happy with how the mayor is bungling his job! So we're taking matters into our own hands."))
+    goto(PellucaCity_Sailor_Multichoice)
+}
 
+script PellucaCity_Sailor_MemberCheck{
+    speakername("Q-squad Grunt")
+    msgbox(format("Heh? A pipsqueak like you is in the squad? You a new member or something? You got any proof?"), MSGBOX_YESNO)
 
+    if (var(VAR_RESULT) == 0){
+        speakername("Q-squad Grunt")
+        msgbox(format("Then beat it, kid!"))
+    }
+    if (var(VAR_RESULT) == 1){
+        speakername("Q-squad Grunt")
+        msgbox(format("Show me!"))
+        release
+
+        //qwilfish or overqwil check
+        special(ChoosePartyMon)                 //choose your mon
+        waitstate                               //wait
+        copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+        copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+        specialvar(VAR_RESULT, GetTradeSpecies)
+
+        if (var(VAR_RESULT) == SPECIES_QWILFISH_HISUI){goto(PellucaCity_Sailor_MemberAccepted)}
+        if (var(VAR_RESULT) == SPECIES_OVERQWIL){goto(PellucaCity_Sailor_MemberAccepted)}
+
+        applymovement(LOCALID_S_ENTRANCE, moves(emote_exclamation_mark))
+        delay(16)
+        speakername("Q-squad Grunt")
+        msgbox(format("That don't look like no Qwilfish to me!\pBeat it, kid!"))        
+
+    }
+
+    releaseall 
+    end
+}
+
+script PellucaCity_Sailor_MemberAccepted{
+    applymovement(LOCALID_S_ENTRANCE, moves(emote_exclamation_mark))
+    delay(16)    
+    speakername("Q-squad Grunt")
+    msgbox(format("Alright, now that's what I'm talking about! You're one of us, kid. Go on, get inside!"))      
+    release
+    applymovement(LOCALID_S_ENTRANCE, moves(walk_up))
+    delay(16)
+    playse(SE_EXIT)
+    removeobject(LOCALID_S_ENTRANCE)
+
+    setflag(FLAG_PELLUCA_QWILSQUAD_ENTRANCE)
+    releaseall
+    end
+}
 
 
 
@@ -378,6 +451,7 @@ script PellucaCity_Lycanroc{
 //NPCs
 //tuber at beach
 script PellucaCity_NPC1{
+    setflag(FLAG_SYS_SURF_ENABLED)
     msgbox(format("Whee!!!"), MSGBOX_NPC)
     end
 }

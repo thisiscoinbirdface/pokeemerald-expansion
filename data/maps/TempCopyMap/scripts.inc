@@ -1413,7 +1413,7 @@ Common_EventScript_DrifblimTravels_ToPelluca_5:
 # 862 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 863 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_PELLUCA_CITY, 13, 16
+	warp MAP_PELLUCA_CITY, 14, 28
 	goto Common_EventScript_DrifblimTravels_ToPelluca_4
 
 

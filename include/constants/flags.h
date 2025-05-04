@@ -116,13 +116,13 @@
 #define FLAG_WINTERLILY_HOLLOW_SURF  0x278 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_JANIA  0x279 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_MAIN  0x27A // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_A  0x27B // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_B  0x27C // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // Unused Flag
-#define FLAG_MIRROHGYM_TRAINER_A  0x27E // Unused Flag
-#define FLAG_MIRROHGYM_TRAINER_B  0x27F // Unused Flag
-#define FLAG_PELLUCA_MAYOR_FIGHT  0x495 // Unused Flag
-#define FLAG_UNUSED_0x496  0x496 // Unused Flag
+#define FLAG_MIRROHBASECAMP_TRAINER_A  0x27B // outside gym trainer
+#define FLAG_MIRROHBASECAMP_TRAINER_B  0x27C // outside gym trainer
+#define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // outside gym trainer
+#define FLAG_MIRROHGYM_TRAINER_A  0x27E // inside double battle
+#define FLAG_MIRROHGYM_TRAINER_B  0x27F // inside double battle
+#define FLAG_PELLUCA_MAYOR_FIGHT  0x495 // the first confrontation with the qwilsquad
+#define FLAG_PELLUCA_QWILSQUAD_ENTRANCE  0x496 // dude that's blocking the entrance to the shack in pelluca
 #define FLAG_UNUSED_0x497  0x497 // Unused Flag
 #define FLAG_UNUSED_0x498  0x498 // Unused Flag
 #define FLAG_UNUSED_0x499  0x499 // Unused Flag
