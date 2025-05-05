@@ -8,9 +8,10 @@ raw`
     .set LOCALID_S_ENTRANCE, 8
     .set LOCALID_S_BLOCKER, 7
 
-    .set LOCALID_FL_MA, 50
-    .set LOCALID_FL_QW, 49
+    .set LOCALID_FL_MAYOR, 50
+    .set LOCALID_FL_QWIL, 49
     .set LOCALID_FL_CITIZEN, 47
+    .set LOCALID_FL_JANIA, 56
 
 `
 
@@ -385,7 +386,7 @@ script PellucaCityFlooded_MainEvent{
 
     //camera pan
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 8 walk_left * 6 walk_right * 12 walk_left *6 walk_up*8))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 8 walk_left * 6 walk_right * 12 walk_left *6 walk_fast_up*8))
 
     delay(60)  
 
@@ -401,12 +402,115 @@ script PellucaCityFlooded_MainEvent{
     speakername("Citizen")
     msgbox(format("No - there are still four people in the water! We have to save them fast!"))    
     
-    applymovement()
+    //the two bosses fight
+    applymovement(LOCALID_FL_QWIL, moves(jump_in_place_right))
+    delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Is everyone safe?"))
+    msgbox(format("Yeah, go on Mayor. Go save them!"))
+    applymovement(LOCALID_FL_MAYOR, moves(jump_in_place_left))
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("W-what do you mean? Weren't you the one in control of this city?"))
 
+    //citizens tell them to stfu
+    applymovement(LOCALID_FL_CITIZEN, moves(emote_exclamation_mark jump_in_place_down))        
+    speakername("Citizen")
+    msgbox(format("ENOUGH!"))
+    release
+    delay(16)
 
-    
+    applymovement(LOCALID_FL_MAYOR, moves(face_up))
+    applymovement(LOCALID_FL_QWIL, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(48, moves(face_up))       //this is that one sailor
+    waitmovement(0)
+    delay(16)
+
+    speakername("Citizen")
+    msgbox(format("While you two bicker, it's us that pays the price every time! Both of you are strong - a tough trainer and a smart politician - and yet, neither of you bother to actually do anything for us citizens! And now people are in danger and you're still fighting! We've all had it upto here with you two!"))
+    release
+
+    applymovement(43, moves(emote_exclamation_mark))   
+    applymovement(44, moves(emote_exclamation_mark))   
+    applymovement(45, moves(emote_exclamation_mark))   
+    applymovement(46, moves(emote_exclamation_mark))   
+    applymovement(47, moves(emote_exclamation_mark))   
+    applymovement(51, moves(emote_exclamation_mark))   
+
+    speakername("Citizen")
+    msgbox(format("Yeah!\pHear hear!"))
+    release
+
+    delay(30)
+
+    //jania comes and agrees
+    speakername("???")
+    msgbox(format("I agree too."))
+    release
+    delay(16)
+
+    applymovement(43, moves(face_up))   
+    applymovement(44, moves(face_up))   
+    applymovement(45, moves(face_up))   
+    applymovement(46, moves(face_up))   
+    applymovement(47, moves(walk_right face_up))  
+    applymovement(48, moves(face_up))   
+    applymovement(51, moves(face_up))   
+
+    addobject(LOCALID_FL_JANIA)
+    applymovement(LOCALID_FL_JANIA, moves(walk_down * 7 walk_right * 2 walk_down))
+    waitmovement(0)
+
+    speakername("Citizen")
+    msgbox(format("Is that Jania!\pYeah! It's the Gym Leader! In the flesh!\pWow..."))
+    release
+
+    applymovement(43, moves(face_down))   
+    applymovement(44, moves(face_down))   
+    applymovement(45, moves(face_down))   
+    applymovement(46, moves(face_down))   
+    applymovement(47, moves(face_down))  
+    applymovement(48, moves(face_right))  
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))       
+    applymovement(51, moves(face_down))   
+
+    applymovement(LOCALID_FL_MAYOR, moves(emote_exclamation_mark))   
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("Oh, Jania! It's you! Finally. Please - you have to save those still drowning!"))
+    release    
+    delay(16)
+
+    applymovement(LOCALID_FL_QWIL, moves(emote_exclamation_mark))   
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("Yeah, Jania! You're an even stronger trainer than I am. You can do it!"))
+    release     
+    delay(16)
+
+    speakername("Jania")
+    msgbox(format("No, I won't\pYou two want to be responsible for this city? Start right here, right now."))
+    release    
+
+    applymovement(LOCALID_FL_JANIA, moves(face_right))   
+    delay(16)
+    speakername("Jania")
+    msgbox(format("And who might you be?\p...\p{PLAYER}?\p...\pI see. So that's how you got involved with these two.\pHere, take this."))
+    release     
+    setflag(FLAG_SYS_SURF_ENABLED)
+    giveitem(ITEM_HM03)
+    delay(16)
+    speakername("Jania")
+    msgbox(format("Consider this my help. Now the two of you - and {PLAYER} - take this opportunity and do the right thing!"))
+    release
+    delay(16)
+
+    //Jania exit
+    applymovement(LOCALID_FL_JANIA, moves(walk_up walk_left * 2 walk_up * 7))
+    waitmovement(0)
+
+    //trainer is asked to help
+
 
     special(RemoveCameraObject)
     releaseall
@@ -614,7 +718,6 @@ script PellucaCity_Lycanroc{
 //NPCs
 //tuber at beach
 script PellucaCity_NPC1{
-    setflag(FLAG_SYS_SURF_ENABLED)
     msgbox(format("Whee!!!"), MSGBOX_NPC)
     end
 }
