@@ -759,6 +759,8 @@ script PellucaCityFlooded_Complete_Trigger{
     setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
     setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
 
+    clearflag(FLAG_PELLUCA_PC_CHARS)
+
     //warp out
     warp(MAP_PELLUCA_CITY_POKEMON_CENTER, 6, 6)
 

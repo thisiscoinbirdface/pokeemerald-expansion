@@ -1181,27 +1181,29 @@ PellucaCityFlooded_Complete_Trigger_2:
 	setflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED
 # 760 "data//maps/PellucaCity/scripts.pory"
 	setflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED
-# 763 "data//maps/PellucaCity/scripts.pory"
-	warp MAP_PELLUCA_CITY_POKEMON_CENTER, 6, 6
+# 762 "data//maps/PellucaCity/scripts.pory"
+	clearflag FLAG_PELLUCA_PC_CHARS
 # 765 "data//maps/PellucaCity/scripts.pory"
+	warp MAP_PELLUCA_CITY_POKEMON_CENTER, 6, 6
+# 767 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_Greta_Trigger0::
-# 795 "data//maps/PellucaCity/scripts.pory"
-	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger0_2
 # 797 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 798 "data//maps/PellucaCity/scripts.pory"
-	applymovement 27, PellucaCity_Greta_Trigger0_Movement_0
+	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger0_2
 # 799 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	lockall
 # 800 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_4
+	applymovement 27, PellucaCity_Greta_Trigger0_Movement_0
 # 801 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
 # 802 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_4
+# 803 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 804 "data//maps/PellucaCity/scripts.pory"
 	goto PellucaCity_Greta_Main
 	return
 
@@ -1210,19 +1212,19 @@ PellucaCity_Greta_Trigger0_2:
 
 
 PellucaCity_Greta_Trigger1::
-# 806 "data//maps/PellucaCity/scripts.pory"
-	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger1_2
 # 808 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 809 "data//maps/PellucaCity/scripts.pory"
-	applymovement 27, PellucaCity_Greta_Trigger1_Movement_0
+	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger1_2
 # 810 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	lockall
 # 811 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_5
+	applymovement 27, PellucaCity_Greta_Trigger1_Movement_0
 # 812 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
 # 813 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_5
+# 814 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 815 "data//maps/PellucaCity/scripts.pory"
 	goto PellucaCity_Greta_Main
 	return
 
@@ -1231,19 +1233,19 @@ PellucaCity_Greta_Trigger1_2:
 
 
 PellucaCity_Greta_Trigger2::
-# 817 "data//maps/PellucaCity/scripts.pory"
-	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger2_2
 # 819 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 820 "data//maps/PellucaCity/scripts.pory"
-	applymovement 27, PellucaCity_Greta_Trigger2_Movement_0
+	goto_if_set FLAG_GRETA_PELLUCACITY, PellucaCity_Greta_Trigger2_2
 # 821 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	lockall
 # 822 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_5
+	applymovement 27, PellucaCity_Greta_Trigger2_Movement_0
 # 823 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
 # 824 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaCityFlooded_MainEvent_Movement_5
+# 825 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 826 "data//maps/PellucaCity/scripts.pory"
 	goto PellucaCity_Greta_Main
 	return
 
@@ -1252,372 +1254,372 @@ PellucaCity_Greta_Trigger2_2:
 
 
 PellucaCity_Greta_Main::
-# 830 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_Greta_Main_Text_0
-# 831 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_Greta_Main_Text_1
 # 832 "data//maps/PellucaCity/scripts.pory"
-	release
-# 833 "data//maps/PellucaCity/scripts.pory"
-	delay 20
-# 834 "data//maps/PellucaCity/scripts.pory"
 	speakername PellucaCity_Greta_Main_Text_0
-# 835 "data//maps/PellucaCity/scripts.pory"
-	msgbox Common_Text_Greta_Comecome
-# 836 "data//maps/PellucaCity/scripts.pory"
+# 833 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_Greta_Main_Text_1
+# 834 "data//maps/PellucaCity/scripts.pory"
 	release
-# 837 "data//maps/PellucaCity/scripts.pory"
+# 835 "data//maps/PellucaCity/scripts.pory"
 	delay 20
+# 836 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_Greta_Main_Text_0
+# 837 "data//maps/PellucaCity/scripts.pory"
+	msgbox Common_Text_Greta_Comecome
+# 838 "data//maps/PellucaCity/scripts.pory"
+	release
 # 839 "data//maps/PellucaCity/scripts.pory"
+	delay 20
+# 841 "data//maps/PellucaCity/scripts.pory"
 	goto PellucaCity_Greta_ShowItemsForSale
 	return
 
 
 PellucaCity_Greta_GottaGo::
-# 843 "data//maps/PellucaCity/scripts.pory"
-	release
-# 844 "data//maps/PellucaCity/scripts.pory"
-	applymovement 27, PellucaCity_MayorFight_Trigger_Movement_7
 # 845 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
-# 846 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_Greta_Main_Text_0
-# 847 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_Greta_GottaGo_Text_0
-# 848 "data//maps/PellucaCity/scripts.pory"
 	release
-# 849 "data//maps/PellucaCity/scripts.pory"
-	applymovement 27, PellucaCity_Greta_GottaGo_Movement_0
-# 850 "data//maps/PellucaCity/scripts.pory"
+# 846 "data//maps/PellucaCity/scripts.pory"
+	applymovement 27, PellucaCity_MayorFight_Trigger_Movement_7
+# 847 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
+# 848 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_Greta_Main_Text_0
+# 849 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_Greta_GottaGo_Text_0
+# 850 "data//maps/PellucaCity/scripts.pory"
+	release
 # 851 "data//maps/PellucaCity/scripts.pory"
-	removeobject 27
+	applymovement 27, PellucaCity_Greta_GottaGo_Movement_0
 # 852 "data//maps/PellucaCity/scripts.pory"
-	setflag FLAG_GRETA_PELLUCACITY
+	waitmovement 0
 # 853 "data//maps/PellucaCity/scripts.pory"
-	fadedefaultbgm
+	removeobject 27
+# 854 "data//maps/PellucaCity/scripts.pory"
+	setflag FLAG_GRETA_PELLUCACITY
 # 855 "data//maps/PellucaCity/scripts.pory"
+	fadedefaultbgm
+# 857 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_EventScripts_Gabrielle::
-# 875 "data//maps/PellucaCity/scripts.pory"
+# 877 "data//maps/PellucaCity/scripts.pory"
 	lockall
-# 876 "data//maps/PellucaCity/scripts.pory"
+# 878 "data//maps/PellucaCity/scripts.pory"
 	goto_if_set FLAG_PELLUCA_GABRIELLE_CHOICEBAND, PellucaCity_EventScripts_Gabrielle_2
-# 882 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
-# 883 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_2
 # 884 "data//maps/PellucaCity/scripts.pory"
-	release
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
 # 885 "data//maps/PellucaCity/scripts.pory"
-	delay 24
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_2
 # 886 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	release
 # 887 "data//maps/PellucaCity/scripts.pory"
 	delay 24
 # 888 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+	faceplayer
 # 889 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_3, MSGBOX_YESNO
+	delay 24
 # 890 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+# 891 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_3, MSGBOX_YESNO
+# 892 "data//maps/PellucaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_EventScripts_Gabrielle_6
-# 899 "data//maps/PellucaCity/scripts.pory"
-	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
-# 900 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
 # 901 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_5
+	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
 # 902 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+# 903 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_5
+# 904 "data//maps/PellucaCity/scripts.pory"
 	release
 PellucaCity_EventScripts_Gabrielle_5:
-# 904 "data//maps/PellucaCity/scripts.pory"
-	delay 30
-# 905 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
 # 906 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_6
+	delay 30
 # 907 "data//maps/PellucaCity/scripts.pory"
-	release
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
 # 908 "data//maps/PellucaCity/scripts.pory"
-	delay 24
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_6
 # 909 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
+	release
 # 910 "data//maps/PellucaCity/scripts.pory"
 	delay 24
 # 911 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+	faceplayer
 # 912 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_7
+	delay 24
 # 913 "data//maps/PellucaCity/scripts.pory"
-	release
-# 914 "data//maps/PellucaCity/scripts.pory"
-	giveitem ITEM_CHOICE_BAND
-# 915 "data//maps/PellucaCity/scripts.pory"
 	speakername PellucaCity_EventScripts_Gabrielle_Text_0
-# 916 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_8
-# 917 "data//maps/PellucaCity/scripts.pory"
+# 914 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_7
+# 915 "data//maps/PellucaCity/scripts.pory"
 	release
+# 916 "data//maps/PellucaCity/scripts.pory"
+	giveitem ITEM_CHOICE_BAND
+# 917 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
 # 918 "data//maps/PellucaCity/scripts.pory"
-	setflag FLAG_PELLUCA_GABRIELLE_CHOICEBAND
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_8
 # 919 "data//maps/PellucaCity/scripts.pory"
-	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
+	release
 # 920 "data//maps/PellucaCity/scripts.pory"
+	setflag FLAG_PELLUCA_GABRIELLE_CHOICEBAND
+# 921 "data//maps/PellucaCity/scripts.pory"
+	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
+# 922 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
 PellucaCity_EventScripts_Gabrielle_1:
-# 922 "data//maps/PellucaCity/scripts.pory"
+# 924 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	return
 
 PellucaCity_EventScripts_Gabrielle_2:
-# 877 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
-# 878 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_1
 # 879 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+# 880 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_1
+# 881 "data//maps/PellucaCity/scripts.pory"
 	release
 	goto PellucaCity_EventScripts_Gabrielle_1
 
 PellucaCity_EventScripts_Gabrielle_6:
-# 892 "data//maps/PellucaCity/scripts.pory"
-	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
-# 893 "data//maps/PellucaCity/scripts.pory"
-	delay 24
 # 894 "data//maps/PellucaCity/scripts.pory"
-	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+	applymovement LOCALID_GAB, PellucaCityFlooded_MainEvent_Movement_5
 # 895 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_EventScripts_Gabrielle_Text_4
+	delay 24
 # 896 "data//maps/PellucaCity/scripts.pory"
+	speakername PellucaCity_EventScripts_Gabrielle_Text_0
+# 897 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_EventScripts_Gabrielle_Text_4
+# 898 "data//maps/PellucaCity/scripts.pory"
 	release
 	goto PellucaCity_EventScripts_Gabrielle_5
 
 
 PellucaCity_Zorua::
-# 927 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 928 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
 # 929 "data//maps/PellucaCity/scripts.pory"
-	playmoncry SPECIES_ZORUA, CRY_MODE_NORMAL
+	lockall
 # 930 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_Zorua_Text_0
+	faceplayer
 # 931 "data//maps/PellucaCity/scripts.pory"
-	release
+	playmoncry SPECIES_ZORUA, CRY_MODE_NORMAL
 # 932 "data//maps/PellucaCity/scripts.pory"
-	applymovement 25, PellucaCityFlooded_MainEvent_Movement_5
+	msgbox PellucaCity_Zorua_Text_0
 # 933 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	release
 # 934 "data//maps/PellucaCity/scripts.pory"
+	applymovement 25, PellucaCityFlooded_MainEvent_Movement_5
+# 935 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 936 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_Lycanroc::
-# 950 "data//maps/PellucaCity/scripts.pory"
+# 952 "data//maps/PellucaCity/scripts.pory"
 	playmoncry SPECIES_LYCANROC, CRY_MODE_NORMAL
-# 951 "data//maps/PellucaCity/scripts.pory"
+# 953 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_Lycanroc_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC1::
-# 964 "data//maps/PellucaCity/scripts.pory"
+# 966 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC2::
-# 969 "data//maps/PellucaCity/scripts.pory"
+# 971 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC3::
-# 974 "data//maps/PellucaCity/scripts.pory"
+# 976 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC4::
-# 979 "data//maps/PellucaCity/scripts.pory"
+# 981 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC5::
-# 984 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 985 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC5_Text_0
 # 986 "data//maps/PellucaCity/scripts.pory"
-	release
+	lockall
 # 987 "data//maps/PellucaCity/scripts.pory"
-	special SpawnCameraObject
+	msgbox PellucaCity_NPC5_Text_0
 # 988 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, PellucaCity_NPC5_Movement_0
-# 989 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
-# 990 "data//maps/PellucaCity/scripts.pory"
-	special RemoveCameraObject
-# 991 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC5_Text_1
-# 992 "data//maps/PellucaCity/scripts.pory"
 	release
-# 993 "data//maps/PellucaCity/scripts.pory"
+# 989 "data//maps/PellucaCity/scripts.pory"
 	special SpawnCameraObject
-# 994 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, PellucaCity_NPC5_Movement_1
-# 995 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, PellucaCity_NPC5_Movement_0
+# 991 "data//maps/PellucaCity/scripts.pory"
 	waitmovement 0
-# 996 "data//maps/PellucaCity/scripts.pory"
+# 992 "data//maps/PellucaCity/scripts.pory"
 	special RemoveCameraObject
+# 993 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC5_Text_1
+# 994 "data//maps/PellucaCity/scripts.pory"
+	release
+# 995 "data//maps/PellucaCity/scripts.pory"
+	special SpawnCameraObject
+# 996 "data//maps/PellucaCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, PellucaCity_NPC5_Movement_1
 # 997 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC5_Text_2, MSGBOX_NPC
+	waitmovement 0
 # 998 "data//maps/PellucaCity/scripts.pory"
+	special RemoveCameraObject
+# 999 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_NPC5_Text_2, MSGBOX_NPC
+# 1000 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC6::
-# 1003 "data//maps/PellucaCity/scripts.pory"
+# 1005 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC6_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC7::
-# 1008 "data//maps/PellucaCity/scripts.pory"
+# 1010 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC7_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC8::
-# 1013 "data//maps/PellucaCity/scripts.pory"
+# 1015 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC8_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_Sealeo::
-# 1018 "data//maps/PellucaCity/scripts.pory"
-	lockall
-# 1019 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
 # 1020 "data//maps/PellucaCity/scripts.pory"
-	playmoncry SPECIES_SEALEO, CRY_MODE_NORMAL
+	lockall
 # 1021 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_Sealeo_Text_0, MSGBOX_NPC
+	faceplayer
 # 1022 "data//maps/PellucaCity/scripts.pory"
-	release
+	playmoncry SPECIES_SEALEO, CRY_MODE_NORMAL
 # 1023 "data//maps/PellucaCity/scripts.pory"
-	applymovement 26, PellucaCity_MayorFight_Trigger_Movement_4
+	msgbox PellucaCity_Sealeo_Text_0, MSGBOX_NPC
 # 1024 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	release
 # 1025 "data//maps/PellucaCity/scripts.pory"
+	applymovement 26, PellucaCity_MayorFight_Trigger_Movement_4
+# 1026 "data//maps/PellucaCity/scripts.pory"
+	waitmovement 0
+# 1027 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_NPC9::
-# 1033 "data//maps/PellucaCity/scripts.pory"
+# 1035 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC9_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_WingullGirl::
-# 1042 "data//maps/PellucaCity/scripts.pory"
-	lock
-# 1043 "data//maps/PellucaCity/scripts.pory"
-	faceplayer
 # 1044 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_WingullGirl_Text_0
+	lock
 # 1045 "data//maps/PellucaCity/scripts.pory"
-	dynmultichoice 16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, PellucaCity_WingullGirl_Text_1, PellucaCity_WingullGirl_Text_2
+	faceplayer
+# 1046 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullGirl_Text_0
 # 1047 "data//maps/PellucaCity/scripts.pory"
+	dynmultichoice 16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, PellucaCity_WingullGirl_Text_1, PellucaCity_WingullGirl_Text_2
+# 1049 "data//maps/PellucaCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_WingullGirl_2
-# 1061 "data//maps/PellucaCity/scripts.pory"
+# 1063 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_WingullGirl_Text_5, MSGBOX_NPC
 PellucaCity_WingullGirl_1:
-# 1064 "data//maps/PellucaCity/scripts.pory"
+# 1066 "data//maps/PellucaCity/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_WingullGirl_2:
-# 1049 "data//maps/PellucaCity/scripts.pory"
-	applymovement 15, PellucaCity_MayorFight_Trigger_Movement_5
-# 1050 "data//maps/PellucaCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PellucaCity_MayorFight_Trigger_Movement_5
 # 1051 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_WingullGirl_Text_3
+	applymovement 15, PellucaCity_MayorFight_Trigger_Movement_5
 # 1052 "data//maps/PellucaCity/scripts.pory"
-	release
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaCity_MayorFight_Trigger_Movement_5
 # 1053 "data//maps/PellucaCity/scripts.pory"
-	applymovement 16, PellucaCity_MayorFight_Trigger_Movement_7
+	msgbox PellucaCity_WingullGirl_Text_3
 # 1054 "data//maps/PellucaCity/scripts.pory"
-	applymovement 17, PellucaCity_MayorFight_Trigger_Movement_7
+	release
 # 1055 "data//maps/PellucaCity/scripts.pory"
-	waitmovement 0
+	applymovement 16, PellucaCity_MayorFight_Trigger_Movement_7
 # 1056 "data//maps/PellucaCity/scripts.pory"
-	delay 16
+	applymovement 17, PellucaCity_MayorFight_Trigger_Movement_7
 # 1057 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_WingullGirl_Text_4
+	waitmovement 0
 # 1058 "data//maps/PellucaCity/scripts.pory"
-	setwildbattle SPECIES_WINGULL, 25
+	delay 16
 # 1059 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_WingullGirl_Text_4
+# 1060 "data//maps/PellucaCity/scripts.pory"
+	setwildbattle SPECIES_WINGULL, 25
+# 1061 "data//maps/PellucaCity/scripts.pory"
 	dowildbattle
 	goto PellucaCity_WingullGirl_1
 
 
 PellucaCity_WingullMother::
-# 1069 "data//maps/PellucaCity/scripts.pory"
+# 1071 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_WingullMother_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_WingullCritique::
-# 1074 "data//maps/PellucaCity/scripts.pory"
+# 1076 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_WingullCritique_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC10::
-# 1087 "data//maps/PellucaCity/scripts.pory"
+# 1089 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC10_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC11::
-# 1093 "data//maps/PellucaCity/scripts.pory"
+# 1095 "data//maps/PellucaCity/scripts.pory"
 	goto_if_set FLAG_PELLUCA_CITY_TM_GIVER, PellucaCity_NPC11_2
-# 1098 "data//maps/PellucaCity/scripts.pory"
-	msgbox PellucaCity_NPC11_Text_1, MSGBOX_NPC
-# 1099 "data//maps/PellucaCity/scripts.pory"
-	giveitem ITEM_TM01
 # 1100 "data//maps/PellucaCity/scripts.pory"
-	setflag FLAG_PELLUCA_CITY_TM_GIVER
+	msgbox PellucaCity_NPC11_Text_1, MSGBOX_NPC
 # 1101 "data//maps/PellucaCity/scripts.pory"
+	giveitem ITEM_TM01
+# 1102 "data//maps/PellucaCity/scripts.pory"
+	setflag FLAG_PELLUCA_CITY_TM_GIVER
+# 1103 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC11_Text_2, MSGBOX_NPC
 	end
 
 PellucaCity_NPC11_2:
-# 1094 "data//maps/PellucaCity/scripts.pory"
+# 1096 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC11_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_NPC12::
-# 1107 "data//maps/PellucaCity/scripts.pory"
+# 1109 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_NPC12_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_Stantler::
-# 1112 "data//maps/PellucaCity/scripts.pory"
+# 1114 "data//maps/PellucaCity/scripts.pory"
 	playmoncry SPECIES_STANTLER, CRY_MODE_NORMAL
-# 1113 "data//maps/PellucaCity/scripts.pory"
+# 1115 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_Stantler_Text_0, MSGBOX_NPC
 	end
 
@@ -1988,115 +1990,115 @@ PellucaCityFlooded_Complete_Trigger_Movement_2:
 	walk_down
 	step_end
 
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_Greta_Trigger0_Movement_0:
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 798 "data//maps/PellucaCity/scripts.pory"
+# 800 "data//maps/PellucaCity/scripts.pory"
 	face_left
 	step_end
 
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_Greta_Trigger1_Movement_0:
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_left
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 809 "data//maps/PellucaCity/scripts.pory"
+# 811 "data//maps/PellucaCity/scripts.pory"
 	face_right
 	step_end
 
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_Greta_Trigger2_Movement_0:
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 820 "data//maps/PellucaCity/scripts.pory"
+# 822 "data//maps/PellucaCity/scripts.pory"
 	face_right
 	step_end
 
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_Greta_GottaGo_Movement_0:
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
-# 849 "data//maps/PellucaCity/scripts.pory"
+# 851 "data//maps/PellucaCity/scripts.pory"
 	walk_up
 	step_end
 
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_NPC5_Movement_0:
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
-# 988 "data//maps/PellucaCity/scripts.pory"
+# 990 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_NPC5_Movement_1:
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
-# 994 "data//maps/PellucaCity/scripts.pory"
+# 996 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -2515,30 +2517,30 @@ PellucaCityFlooded_Complete_Trigger_Text_5:
 	.string "that's just happened!$"
 
 PellucaCity_Greta_Main_Text_0:
-# 830 "data//maps/PellucaCity/scripts.pory"
+# 832 "data//maps/PellucaCity/scripts.pory"
 	.string "Greta$"
 
 PellucaCity_Greta_Main_Text_1:
-# 831 "data//maps/PellucaCity/scripts.pory"
+# 833 "data//maps/PellucaCity/scripts.pory"
 	.string "Oh, it's you again, {PLAYER}! Fancy\n"
 	.string "seeing you in these parts. Route 6 was a\l"
 	.string "tough trek, eh?$"
 
 PellucaCity_Greta_GottaGo_Text_0:
-# 847 "data//maps/PellucaCity/scripts.pory"
+# 849 "data//maps/PellucaCity/scripts.pory"
 	.string "Would you look at the time! I've gotta\n"
 	.string "run. See you around!$"
 
 PellucaCity_EventScripts_Gabrielle_Text_0:
-# 877 "data//maps/PellucaCity/scripts.pory"
+# 879 "data//maps/PellucaCity/scripts.pory"
 	.string "Gabrielle$"
 
 PellucaCity_EventScripts_Gabrielle_Text_1:
-# 878 "data//maps/PellucaCity/scripts.pory"
+# 880 "data//maps/PellucaCity/scripts.pory"
 	.string "Ahh, I love the smell of the river!$"
 
 PellucaCity_EventScripts_Gabrielle_Text_2:
-# 883 "data//maps/PellucaCity/scripts.pory"
+# 885 "data//maps/PellucaCity/scripts.pory"
 	.string "I grew up here on this cliff without my\n"
 	.string "parents. Life was hard.\p"
 	.string "I didn't want my younger siblings to go\n"
@@ -2549,22 +2551,22 @@ PellucaCity_EventScripts_Gabrielle_Text_2:
 	.string "I was so scared I would lose Zorua!$"
 
 PellucaCity_EventScripts_Gabrielle_Text_3:
-# 889 "data//maps/PellucaCity/scripts.pory"
+# 891 "data//maps/PellucaCity/scripts.pory"
 	.string "Was I just like that when you met me\n"
 	.string "with that hiker with the Clefairy?$"
 
 PellucaCity_EventScripts_Gabrielle_Text_4:
-# 895 "data//maps/PellucaCity/scripts.pory"
+# 897 "data//maps/PellucaCity/scripts.pory"
 	.string "Yeah...I doubt he'd ever forgive me.$"
 
 PellucaCity_EventScripts_Gabrielle_Text_5:
-# 901 "data//maps/PellucaCity/scripts.pory"
+# 903 "data//maps/PellucaCity/scripts.pory"
 	.string "You're just trying to make me feel\n"
 	.string "better, aren't you? I don't need your\l"
 	.string "pity. I know what I've done.$"
 
 PellucaCity_EventScripts_Gabrielle_Text_6:
-# 906 "data//maps/PellucaCity/scripts.pory"
+# 908 "data//maps/PellucaCity/scripts.pory"
 	.string "After getting kicked out of Team\n"
 	.string "Somber, I feel like I've come to my\l"
 	.string "senses a little. I'm going to support my\l"
@@ -2572,7 +2574,7 @@ PellucaCity_EventScripts_Gabrielle_Text_6:
 	.string "Responsible.$"
 
 PellucaCity_EventScripts_Gabrielle_Text_7:
-# 912 "data//maps/PellucaCity/scripts.pory"
+# 914 "data//maps/PellucaCity/scripts.pory"
 	.string "I want you to have this. As a thank you.\n"
 	.string "For saving me - not just once, but so\l"
 	.string "many times. You're a strong trainer, but\l"
@@ -2580,7 +2582,7 @@ PellucaCity_EventScripts_Gabrielle_Text_7:
 	.string "I hope to be like you.$"
 
 PellucaCity_EventScripts_Gabrielle_Text_8:
-# 916 "data//maps/PellucaCity/scripts.pory"
+# 918 "data//maps/PellucaCity/scripts.pory"
 	.string "Who we are is defined by the chocies we\n"
 	.string "make, and once we lock in, we can't\l"
 	.string "change.\p"
@@ -2592,52 +2594,52 @@ PellucaCity_EventScripts_Gabrielle_Text_8:
 	.string "Best of luck, {PLAYER}.$"
 
 PellucaCity_Zorua_Text_0:
-# 930 "data//maps/PellucaCity/scripts.pory"
+# 932 "data//maps/PellucaCity/scripts.pory"
 	.string "Gabrielle's Zorua looks content. Life is\n"
 	.string "more peaceful for it now!$"
 
 PellucaCity_Lycanroc_Text_0:
-# 951 "data//maps/PellucaCity/scripts.pory"
+# 953 "data//maps/PellucaCity/scripts.pory"
 	.string "Lycanroc is howling. It must be pining\n"
 	.string "for a table at the restaurant!$"
 
 PellucaCity_NPC1_Text_0:
-# 964 "data//maps/PellucaCity/scripts.pory"
+# 966 "data//maps/PellucaCity/scripts.pory"
 	.string "Whee!!!$"
 
 PellucaCity_NPC2_Text_0:
-# 969 "data//maps/PellucaCity/scripts.pory"
+# 971 "data//maps/PellucaCity/scripts.pory"
 	.string "A tourist! Have you come to eat at the\n"
 	.string "Pelluca Restaurant?$"
 
 PellucaCity_NPC3_Text_0:
-# 974 "data//maps/PellucaCity/scripts.pory"
+# 976 "data//maps/PellucaCity/scripts.pory"
 	.string "I would've trained up in Mt. Mirroh but I\n"
 	.string "can't go there without a Cable Car Pass.\l"
 	.string "So I'm jogging here instead.$"
 
 PellucaCity_NPC4_Text_0:
-# 979 "data//maps/PellucaCity/scripts.pory"
+# 981 "data//maps/PellucaCity/scripts.pory"
 	.string "This bridge is too small. It's nothing\n"
 	.string "like the cycling roads in other regions!\l"
 	.string "Why does the mayor even let us cycle\l"
 	.string "then?$"
 
 PellucaCity_NPC5_Text_0:
-# 985 "data//maps/PellucaCity/scripts.pory"
+# 987 "data//maps/PellucaCity/scripts.pory"
 	.string "Look over there...$"
 
 PellucaCity_NPC5_Text_1:
-# 991 "data//maps/PellucaCity/scripts.pory"
+# 993 "data//maps/PellucaCity/scripts.pory"
 	.string "The Gym Leader of Pelluca City had her\n"
 	.string "gym constructed on a separate island.$"
 
 PellucaCity_NPC5_Text_2:
-# 997 "data//maps/PellucaCity/scripts.pory"
+# 999 "data//maps/PellucaCity/scripts.pory"
 	.string "Talk about entitlement!$"
 
 PellucaCity_NPC6_Text_0:
-# 1003 "data//maps/PellucaCity/scripts.pory"
+# 1005 "data//maps/PellucaCity/scripts.pory"
 	.string "Are you headed to the Mirroh Base Camp?\n"
 	.string "You'll have to take the cable car just\l"
 	.string "past the Poké Mart.\p"
@@ -2645,77 +2647,77 @@ PellucaCity_NPC6_Text_0:
 	.string "though.$"
 
 PellucaCity_NPC7_Text_0:
-# 1008 "data//maps/PellucaCity/scripts.pory"
+# 1010 "data//maps/PellucaCity/scripts.pory"
 	.string "There are no free tables at the\n"
 	.string "restaurant! I should've made a\l"
 	.string "reservation.$"
 
 PellucaCity_NPC8_Text_0:
-# 1013 "data//maps/PellucaCity/scripts.pory"
+# 1015 "data//maps/PellucaCity/scripts.pory"
 	.string "What's even the point of fishing if the\n"
 	.string "Mega Sharpedo's going to scare all the\l"
 	.string "fish away? I wish our mayor would do\l"
 	.string "something about it.$"
 
 PellucaCity_Sealeo_Text_0:
-# 1021 "data//maps/PellucaCity/scripts.pory"
+# 1023 "data//maps/PellucaCity/scripts.pory"
 	.string "Sealeo wants to catch fish!$"
 
 PellucaCity_NPC9_Text_0:
-# 1033 "data//maps/PellucaCity/scripts.pory"
+# 1035 "data//maps/PellucaCity/scripts.pory"
 	.string "This is the Pelluca Fishery! But it's\n"
 	.string "closed due to the Mega Sharpedo\l"
 	.string "attacks.$"
 
 PellucaCity_WingullGirl_Text_0:
-# 1044 "data//maps/PellucaCity/scripts.pory"
+# 1046 "data//maps/PellucaCity/scripts.pory"
 	.string "Hahaha! I'm throwing stones at the\n"
 	.string "Wingulls over there. Wanna throw some?$"
 
 PellucaCity_WingullGirl_Text_1:
-# 1045 "data//maps/PellucaCity/scripts.pory"
+# 1047 "data//maps/PellucaCity/scripts.pory"
 	.string "That's mean$"
 
 PellucaCity_WingullGirl_Text_2:
-# 1045 "data//maps/PellucaCity/scripts.pory"
+# 1047 "data//maps/PellucaCity/scripts.pory"
 	.string "Gimme a stone!$"
 
 PellucaCity_WingullGirl_Text_3:
-# 1051 "data//maps/PellucaCity/scripts.pory"
+# 1053 "data//maps/PellucaCity/scripts.pory"
 	.string "{PLAYER} threw a stone at a Wingull!$"
 
 PellucaCity_WingullGirl_Text_4:
-# 1057 "data//maps/PellucaCity/scripts.pory"
+# 1059 "data//maps/PellucaCity/scripts.pory"
 	.string "The Wingull gets angry!$"
 
 PellucaCity_WingullGirl_Text_5:
-# 1061 "data//maps/PellucaCity/scripts.pory"
+# 1063 "data//maps/PellucaCity/scripts.pory"
 	.string "Mean? You're mean!$"
 
 PellucaCity_WingullMother_Text_0:
-# 1069 "data//maps/PellucaCity/scripts.pory"
+# 1071 "data//maps/PellucaCity/scripts.pory"
 	.string "My daughter loves throwing stones at\n"
 	.string "Wingulls. She's just so cute!$"
 
 PellucaCity_WingullCritique_Text_0:
-# 1074 "data//maps/PellucaCity/scripts.pory"
+# 1076 "data//maps/PellucaCity/scripts.pory"
 	.string "That little girl is so bad! Throwing\n"
 	.string "stones at Pokémon...that's poor\l"
 	.string "parenting. The mayor should really do\l"
 	.string "something but he's too incompetent.$"
 
 PellucaCity_NPC10_Text_0:
-# 1087 "data//maps/PellucaCity/scripts.pory"
+# 1089 "data//maps/PellucaCity/scripts.pory"
 	.string "I ate too many apple tarts! I'm too full.\n"
 	.string "Whoever said people have a second\l"
 	.string "stomach for dessert was lying!$"
 
 PellucaCity_NPC11_Text_0:
-# 1094 "data//maps/PellucaCity/scripts.pory"
+# 1096 "data//maps/PellucaCity/scripts.pory"
 	.string "Life is too short to worry!$"
 
 PellucaCity_NPC11_Text_1:
-# 1098 "data//maps/PellucaCity/scripts.pory"
+# 1100 "data//maps/PellucaCity/scripts.pory"
 	.string "The Pelluca Gym is across the\n"
 	.string "water...when I was younger, I tried to\l"
 	.string "challenge Jania many times, but I could\l"
@@ -2730,18 +2732,18 @@ PellucaCity_NPC11_Text_1:
 	.string "like to use this.$"
 
 PellucaCity_NPC11_Text_2:
-# 1101 "data//maps/PellucaCity/scripts.pory"
+# 1103 "data//maps/PellucaCity/scripts.pory"
 	.string "It's time for me to let go.$"
 
 PellucaCity_NPC12_Text_0:
-# 1107 "data//maps/PellucaCity/scripts.pory"
+# 1109 "data//maps/PellucaCity/scripts.pory"
 	.string "The mayor isn't maintaining the city one\n"
 	.string "bit! My Stantler eating the overgrown\l"
 	.string "flowers is actually contributing to\l"
 	.string "city maintenance.$"
 
 PellucaCity_Stantler_Text_0:
-# 1113 "data//maps/PellucaCity/scripts.pory"
+# 1115 "data//maps/PellucaCity/scripts.pory"
 	.string "Stantler is nonchalantly chomping on\n"
 	.string "the flowers.$"
 
