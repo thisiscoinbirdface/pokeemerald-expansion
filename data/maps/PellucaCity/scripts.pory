@@ -25,7 +25,7 @@ mapscripts PellucaCity_MapScripts{
 }
 
 script PellucaCity_SetLayout{
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 3){
+    if (var(VAR_PELLUCA_MAP_STATE) == 1){
         setmaplayoutindex(LAYOUT_PELLUCA_CITY_FLOODED)
         setweather(WEATHER_RAIN_THUNDERSTORM)
         doweather
@@ -323,57 +323,121 @@ text PellucaCityFlooded_TriggerText{
     format("I need to save the drowning citizens!")
 }
 script PellucaCityFlooded_TriggerDown{
-    lockall
-    msgbox(PellucaCityFlooded_TriggerText)
-    release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
-    waitmovement(0)
-    releaseall
-    end
+    if (var(VAR_PELLUCA_MAP_STATE) == 1){
+        lockall
+        msgbox(PellucaCityFlooded_TriggerText)
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        releaseall
+        end
+    } else {
+        end
+    }
 }
 script PellucaCityFlooded_TriggerUp{
-    lockall
-    msgbox(PellucaCityFlooded_TriggerText)
-    release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
-    waitmovement(0)
-    releaseall
-    end
+    if (var(VAR_PELLUCA_MAP_STATE) == 1){
+        lockall
+        msgbox(PellucaCityFlooded_TriggerText)
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+        waitmovement(0)
+        releaseall
+        end
+    } else {
+        end
+    }
 }
 script PellucaCityFlooded_TriggerLeft{
-    lockall
-    msgbox(PellucaCityFlooded_TriggerText)
-    release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
-    waitmovement(0)
-    releaseall
-    end
+    if (var(VAR_PELLUCA_MAP_STATE) == 1){
+        lockall
+        msgbox(PellucaCityFlooded_TriggerText)
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+        waitmovement(0)
+        releaseall
+        end
+    } else {
+        end
+    }
 }
 script PellucaCityFlooded_TriggerRight{
-    lockall
-    msgbox(PellucaCityFlooded_TriggerText)
-    release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
-    waitmovement(0)
-    releaseall
-    end
+    if (var(VAR_PELLUCA_MAP_STATE) == 1){
+        lockall
+        msgbox(PellucaCityFlooded_TriggerText)
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+        waitmovement(0)
+        releaseall
+        end
+    } else {
+        end
+    }
 }
-
-script PellucaCityFlooded_SaveCitizen{
+script PellucaCityFlooded_SaveCitizen_A{
     lockall
     faceplayer
-    msgbox(format("Thank you trainer, you saved me!"))
+    msgbox(format("Help! Help! Over here!\p...\pThank you so much - I'm saved!"))
     release
 
     fadescreenswapbuffers(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
     fadescreenswapbuffers(FADE_FROM_BLACK)
 
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
+    addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
+
     releaseall
     end    
-
 }
+script PellucaCityFlooded_SaveCitizen_B{
+    lockall
+    faceplayer
+    msgbox(format("I can't stay afloat any more!\p...\pJust in time!"))
+    release
 
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(VAR_LAST_TALKED)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
+    addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
+
+    releaseall
+    end    
+}
+script PellucaCityFlooded_SaveCitizen_C{
+    lockall
+    faceplayer
+    msgbox(format("Ahh! It's too cold!\p...\pWaah! Wahh! It was so scary!"))
+    release
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(VAR_LAST_TALKED)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
+    addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
+
+    releaseall
+    end    
+}
+script PellucaCityFlooded_SaveCitizen_D{
+    lockall
+    faceplayer
+    msgbox(format("Help! Someone save me!\p...\pYaay! You came!"))
+    release
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(VAR_LAST_TALKED)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
+    addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
+
+    releaseall
+    end    
+}
 
 script PellucaCityFlooded_MainEvent{
     lockall
@@ -436,7 +500,9 @@ script PellucaCityFlooded_MainEvent{
     applymovement(46, moves(emote_exclamation_mark))   
     applymovement(47, moves(emote_exclamation_mark))   
     applymovement(51, moves(emote_exclamation_mark))   
-
+    waitmovement(0)
+    delay(24)
+    
     speakername("Citizen")
     msgbox(format("Yeah!\pHear hear!"))
     release
@@ -489,10 +555,21 @@ script PellucaCityFlooded_MainEvent{
     delay(16)
 
     speakername("Jania")
-    msgbox(format("No, I won't\pYou two want to be responsible for this city? Start right here, right now. Your citizens are miserably tired of both of you - when will you two change?"))
-    release    
+    msgbox(format("No, I won't."))
+    release
+    delay(16)
 
+    applymovement(LOCALID_FL_MAYOR, moves(emote_exclamation_mark jump_in_place_up)) 
+    applymovement(LOCALID_FL_QWIL, moves(emote_exclamation_mark jump_in_place_up))   
+    waitmovement(0)
+    delay(24)
+
+    speakername("Jania")
+    msgbox(format("Don't look at me like that!\pYou two want to be responsible for this city? Start right here, right now.\pYour citizens are miserably tired of both of you - when will you two change?"))
+    release    
+    delay(16)
     applymovement(LOCALID_FL_JANIA, moves(face_right))   
+    waitmovement(0)
     delay(16)
     speakername("Jania")
     msgbox(format("And who might you be?\p...\p{PLAYER}?\p...\pI see. So that's how you got involved with these two.\pHere, take this."))
@@ -503,38 +580,45 @@ script PellucaCityFlooded_MainEvent{
     applymovement(LOCALID_FL_JANIA, moves(face_down))   
     delay(16)
     speakername("Jania")
-    msgbox(format("Consider this my help.\pNow the two of you - and {PLAYER} - take this opportunity and do the right thing!"))
+    msgbox(format("Consider this my help.\pNow I'm going to track the Mega Sharpedo down and make sure it doesn't harm anyone else.\pAnd the two of you - and {PLAYER} - take this chance to do the right thing!"))
     release
     delay(16)
 
     //Jania exit
     applymovement(LOCALID_FL_JANIA, moves(walk_up walk_left * 2 walk_up * 7))
     waitmovement(0)
+    applymovement(47, moves(walk_left face_down))   
+    waitmovement(0)   
 
     //trainer is asked to help
     applymovement(LOCALID_FL_MAYOR, moves(face_left))   
     applymovement(LOCALID_FL_QWIL, moves(face_right))   
     delay(16)
     speakername("Mayor")
-    msgbox(format("Y-you know, she's - "))
-    speakername("Q-squad Boss")
-    msgbox(format("Yeah, I know.\p..."))
-    release     
+    msgbox(format("Hmpf."))
+    release
     delay(16)
-    speakername("Mayor")
-    msgbox(format("So - together then?"))
     speakername("Q-squad Boss")
-    msgbox(format("Together."))
-    delay(16)    
+    msgbox(format("Tchah!"))
+    release     
+    delay(24)
+    speakername("Mayor")
+    msgbox(format("..."))
+    release
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("..."))
+    release
+    delay(30)    
 
     applymovement(LOCALID_FL_MAYOR, moves(face_up))   
     applymovement(LOCALID_FL_QWIL, moves(face_up)) 
     speakername("Q-squad Boss")
-    msgbox(format("All of you - we'd like to say we're sorry, but there's not much time. I'll - no, we'll - prove it with our actions instead!"))
+    msgbox(format("All of you! We've been letting you down. But now we're gonna prove that we care about this city with our actions!"))
     speakername("Mayor")
-    msgbox(format("{PLAYER} - the two of us will handle the citizens on the bridge and on land. Can you use the HM Surf that Jania gave you and rescue the four remaining citizens?\pOnce you've picked all four of them up, come back here."))
+    msgbox(format("{PLAYER} - the two of us will handle the citizens on the bridge and on land. Can you surf and rescue the four remaining citizens?\pOnce you've picked all four of them up, come back here."))
     speakername("Q-squad Boss")
-    msgbox(format("Good luck, {PLAYER}! We're on top of things here, so you go on into the river. You don't need to teach any of your Pokémon how to surf - just hop on the water!"))
+    msgbox(format("Good luck, {PLAYER}! We're on top of things here, so you go on into the river. You don't need to teach any Pokémon how to surf - just hop on the water!"))
     release    
 
 
@@ -544,13 +628,146 @@ script PellucaCityFlooded_MainEvent{
 }
 
 
+script PellucaCityFlooded_Mayor{
+    speakername("Mayor")
+    msgbox(format("Have you saved everyone yet?\nPlease hurry!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_QwilBoss{
+    speakername("Q-squad Boss")
+    msgbox(format("We're keeping the citizens safe, so you go get the rest!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPC1{
+    msgbox(format("The Mayor and the Qwilsquad boss working together? Hah! I'll believe it when I see it."), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPC2{
+    msgbox(format("If the two of them collaborate, maybe things will finally improve..."), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPC3{
+    msgbox(format("I'm so scared - I hope you can save the others!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPC4{
+    msgbox(format("I hate that Mega Sharpedo for doing this to my home!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPCSailor{
+    msgbox(format("Go on, {PLAYER}! Hurry up and do what the boss says."), MSGBOX_NPC)
+    end
+}
+
+script PellucaCityFlooded_NPCSaved_A{
+    msgbox(format("You saved me! I can't thank you enough, trainer."), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPCSaved_B{
+    msgbox(format("I owe you, trainer. I'll never forget this!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPCSaved_C{
+    msgbox(format("Brr - the water was so cold! How do Pokemon swim in it?"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_NPCSaved_D{
+    msgbox(format("When I grow up, I wanna be just like you!"), MSGBOX_NPC)
+    end
+}
 
 
 
+script PellucaCityFlooded_Complete_Trigger{
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 8){
+
+    lockall
+    applymovement(LOCALID_FL_MAYOR, moves(walk_left face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *3))
+    waitmovement(0)
+    delay(16)
+
+    //headcount 
+    speakername("Q-squad Boss") 
+    msgbox(format("That's one, two, three...and four! Yup, we're all accounted for."))   
+    release
+    delay(16)
+
+    //you saved everyone
+    speakername("Mayor") 
+    msgbox(format("Finally! Thank you {PLAYER}. You did us - the city of Pelluca - a great service. You're a hero!"))   
+    release
+    delay(16)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+    waitmovement(0)
 
 
+    //cheer
+    applymovement(43, moves(emote_exclamation_mark))   
+    applymovement(44, moves(emote_exclamation_mark))   
+    applymovement(45, moves(emote_exclamation_mark))   
+    applymovement(46, moves(emote_exclamation_mark))   
+    applymovement(47, moves(emote_exclamation_mark))   
+    applymovement(51, moves(emote_exclamation_mark))   
+    waitmovement(0)
+    delay(24)
+    
+    speakername("Citizen")
+    msgbox(format("Thank you {PLAYER}!\pYou're the best!"))
+    release
+    delay(16)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+    delay(16)
+    //wrap up - go to PC
+    applymovement(LOCALID_FL_QWIL, moves(jump_in_place_right)) 
+    waitmovement(0)
+    delay(16)   
+    speakername("Q-squad Boss") 
+    msgbox(format("It looks like we're all safe for now."))   
+    release
+    delay(16)
+
+    //you saved everyone
+    applymovement(LOCALID_FL_MAYOR, moves(jump_in_place_left)) 
+    waitmovement(0)
+    delay(16)   
+    speakername("Mayor") 
+    msgbox(format("Yeah. All that remains is to wait until the water recedes, and then we can go back to normal.\pCome, shall we wait in the Pokemon Center until then?"))   
+    release
+    delay(16)     
+
+    speakername("Q-squad Boss") 
+    msgbox(format("Sounds like a good idea. {PLAYER} here needs some rest after everything that's just happened!"))   
+    release
+    delay(16)
 
 
+    //Set all vars
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 9)
+    setvar(VAR_PELLUCA_MAP_STATE, 0)
+
+    clearflag(FLAG_PELLUCA_REGULAR_CITIZENS)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZENS)
+
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
+
+    //warp out
+    warp(MAP_PELLUCA_CITY_POKEMON_CENTER, 6, 6)
+
+    releaseall
+    end
+    }
+
+    end
+}
 
 
 

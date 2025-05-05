@@ -217,7 +217,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Sxomething you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off

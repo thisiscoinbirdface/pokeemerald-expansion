@@ -253,7 +253,8 @@ script MirrohPeak_EventScript_Somber_Trigger{
 
     //Battle
     trainerbattle_no_intro(TRAINER_MIRROHPEAK_MOXIE, "Insufferable!")
-
+    removeobject(LOCALID_MELEA)
+    
     //Post-battle
     applymovement(LOCALID_MOXIE, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)
