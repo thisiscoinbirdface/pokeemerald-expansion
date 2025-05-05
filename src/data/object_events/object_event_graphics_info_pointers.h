@@ -273,6 +273,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderArian
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderInger;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderGloria;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderViniel;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderCarona;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderJania;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LeaderRaazi;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugCatcherF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkiierF;
@@ -561,7 +564,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LEADER_INGER] =               &gObjectEventGraphicsInfo_LeaderInger,
     [OBJ_EVENT_GFX_LEADER_ARIANA] =              &gObjectEventGraphicsInfo_LeaderAriana,
     [OBJ_EVENT_GFX_LEADER_GLORIA] =              &gObjectEventGraphicsInfo_LeaderGloria,
-    [OBJ_EVENT_GFX_LEADER_VINIEL] =              &gObjectEventGraphicsInfo_LeaderViniel,    
+    [OBJ_EVENT_GFX_LEADER_VINIEL] =              &gObjectEventGraphicsInfo_LeaderViniel,  
+    [OBJ_EVENT_GFX_LEADER_CARONA] =              &gObjectEventGraphicsInfo_LeaderCarona,        
+    [OBJ_EVENT_GFX_LEADER_JANIA] =              &gObjectEventGraphicsInfo_LeaderJania,  
+    [OBJ_EVENT_GFX_LEADER_RAAZI] =              &gObjectEventGraphicsInfo_LeaderRaazi,  
     [OBJ_EVENT_GFX_BUG_CATCHER_F] =              &gObjectEventGraphicsInfo_BugCatcherF,
     [OBJ_EVENT_GFX_SKIIER_F] =                   &gObjectEventGraphicsInfo_SkiierF,
     [OBJ_EVENT_GFX_PROF_TENEBRIS] =              &gObjectEventGraphicsInfo_ProfTenebris,    

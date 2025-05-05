@@ -511,6 +511,15 @@ $(OBJEVENTGFXDIR)/custom/leader_gloria.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/custom/leader_viniel.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4	
 
+$(OBJEVENTGFXDIR)/custom/leader_carona.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/custom/leader_jania.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
+$(OBJEVENTGFXDIR)/custom/leader_raazi.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4	
+
 $(OBJEVENTGFXDIR)/custom/bug_catcher_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

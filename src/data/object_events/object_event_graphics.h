@@ -505,6 +505,9 @@ const u32 gObjectEventPic_LeaderInger[] = INCBIN_U32("graphics/object_events/pic
 const u32 gObjectEventPic_LeaderAriana[] = INCBIN_U32("graphics/object_events/pics/custom/leader_ariana.4bpp");
 const u32 gObjectEventPic_LeaderGloria[] = INCBIN_U32("graphics/object_events/pics/custom/leader_gloria.4bpp");
 const u32 gObjectEventPic_LeaderViniel[] = INCBIN_U32("graphics/object_events/pics/custom/leader_viniel.4bpp");
+const u32 gObjectEventPic_LeaderCarona[] = INCBIN_U32("graphics/object_events/pics/custom/leader_carona.4bpp");
+const u32 gObjectEventPic_LeaderJania[] = INCBIN_U32("graphics/object_events/pics/custom/leader_jania.4bpp");
+const u32 gObjectEventPic_LeaderRaazi[] = INCBIN_U32("graphics/object_events/pics/custom/leader_raazi.4bpp");
 
 const u32 gObjectEventPic_BugCatcherF[] = INCBIN_U32("graphics/object_events/pics/custom/bug_catcher_f.4bpp");
 const u32 gObjectEventPic_SkiierF[] = INCBIN_U32("graphics/object_events/pics/custom/skiier_f.4bpp");

@@ -125,10 +125,10 @@
 #define FLAG_PELLUCA_QWILSQUAD_ENTRANCE  0x496 // dude that's blocking the entrance to the shack in pelluca
 #define FLAG_PELLUCA_REGULAR_CITIZENS  0x497 // Unused Flag
 #define FLAG_PELLUCA_FLOODED_CITIZENS  0x498 // Unused Flag
-#define FLAG_UNUSED_0x499  0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A  0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B  0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C  0x49C // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A  0x499 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B  0x49A // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C  0x49B // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D  0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D  0x49D // Unused Flag
 #define FLAG_UNUSED_0x4A9  0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA  0x4AA // Unused Flag

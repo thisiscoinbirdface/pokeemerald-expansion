@@ -6988,7 +6988,7 @@ F_TRAINER_FEMALE |
 #line 2845
         .doubleBattle = FALSE,
 #line 2846
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_ACE_POKEMON,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

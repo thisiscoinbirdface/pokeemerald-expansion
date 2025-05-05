@@ -7,12 +7,20 @@ raw`
     .set LOCALID_S3, 42
     .set LOCALID_S_ENTRANCE, 8
     .set LOCALID_S_BLOCKER, 7
+
+    .set LOCALID_FL_MA, 50
+    .set LOCALID_FL_QW, 49
+    .set LOCALID_FL_CITIZEN, 47
+
 `
 
 mapscripts PellucaCity_MapScripts{
         MAP_SCRIPT_ON_TRANSITION {
         goto(PellucaCity_SetLayout)
     }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PELLUCA_MAYOR_QUEST, 3: PellucaCityFlooded_MainEvent    
+    ]    
 }
 
 script PellucaCity_SetLayout{
@@ -33,7 +41,7 @@ script PellucaCity_SetLayout{
 
 
 
-//Earthquake Ministory
+//Flood Ministory
 //Initial cutscene
 script PellucaCity_MayorFight_Trigger{
     if (flag(FLAG_PELLUCA_MAYOR_FIGHT)) {end}
@@ -211,7 +219,6 @@ script PellucaCity_Sailor_Entrance{
     releaseall
     end
 }
-
 script PellucaCity_Sailor_Multichoice{
     message(format("Only Qwilsquad members can enter!"))
     waitmessage
@@ -220,13 +227,11 @@ script PellucaCity_Sailor_Multichoice{
     if (var(VAR_RESULT) == 0){goto(PellucaCity_Sailor_QwilsquadExplanation)}
     if (var(VAR_RESULT) == 1){goto(PellucaCity_Sailor_MemberCheck)}    
 }
-
 script PellucaCity_Sailor_QwilsquadExplanation{
     speakername("Q-squad Grunt")
     msgbox(format("You interested in joining or something, kid? The Qwilsquad is all about trust and brotherhood. You gotta have each other's backs! We're from Pelluca, but we went down to Rivetshore to sail. Now we're back here, and we're not happy with how the mayor is bungling his job! So we're taking matters into our own hands."))
     goto(PellucaCity_Sailor_Multichoice)
 }
-
 script PellucaCity_Sailor_MemberCheck{
     speakername("Q-squad Grunt")
     msgbox(format("Heh? A pipsqueak like you is in the squad? You a new member or something? You got any proof?"), MSGBOX_YESNO)
@@ -260,7 +265,6 @@ script PellucaCity_Sailor_MemberCheck{
     releaseall 
     end
 }
-
 script PellucaCity_Sailor_MemberAccepted{
     applymovement(LOCALID_S_ENTRANCE, moves(emote_exclamation_mark))
     delay(16)    
@@ -291,7 +295,6 @@ script PellucaCity_Blocker{
     msgbox(format("This is our city! Got any problems?"))
     end
 }
-
 script PellucaCity_Blocker_Trigger{
     applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
     speakername("Q-squad Grunt")
@@ -302,6 +305,131 @@ script PellucaCity_Blocker_Trigger{
     releaseall
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+//Flooded Pelluca
+text PellucaCityFlooded_TriggerText{
+    format("I need to save the drowning citizens!")
+}
+script PellucaCityFlooded_TriggerDown{
+    lockall
+    msgbox(PellucaCityFlooded_TriggerText)
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+script PellucaCityFlooded_TriggerUp{
+    lockall
+    msgbox(PellucaCityFlooded_TriggerText)
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
+    releaseall
+    end
+}
+script PellucaCityFlooded_TriggerLeft{
+    lockall
+    msgbox(PellucaCityFlooded_TriggerText)
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+    waitmovement(0)
+    releaseall
+    end
+}
+script PellucaCityFlooded_TriggerRight{
+    lockall
+    msgbox(PellucaCityFlooded_TriggerText)
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script PellucaCityFlooded_SaveCitizen{
+    lockall
+    faceplayer
+    msgbox(format("Thank you trainer, you saved me!"))
+    release
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(VAR_LAST_TALKED)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    releaseall
+    end    
+
+}
+
+
+script PellucaCityFlooded_MainEvent{
+    lockall
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 4)
+
+    speakername("Q-squad Boss")
+    msgbox(format("What on earth is this?"))
+    release
+    delay(16)  
+
+    //camera pan
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 8 walk_left * 6 walk_right * 12 walk_left *6 walk_up*8))
+
+    delay(60)  
+
+    //citizen1
+    speakername("Citizen")
+    msgbox(format("What a disaster!\pHow could we be so unlucky!"))
+    speakername("Q-squad Boss")
+    msgbox(format("What happened?"))
+    speakername("Mayor")
+    msgbox(format("A Mega Sharpedo came rampaging down from the Ivy River and kicked up a storm! The riverbanks have flooded.\pThe city's underwater!"))
+    speakername("Q-squad Boss")
+    msgbox(format("Is everyone safe?"))
+    speakername("Citizen")
+    msgbox(format("No - there are still four people in the water! We have to save them fast!"))    
+    
+    applymovement()
+    speakername("Q-squad Boss")
+    msgbox(format("Is everyone safe?"))
+
+
+    
+
+    special(RemoveCameraObject)
+    releaseall
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
