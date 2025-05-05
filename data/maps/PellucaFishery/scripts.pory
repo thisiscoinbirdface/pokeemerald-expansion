@@ -116,6 +116,9 @@ script PellucaFishery_EventScript_MainDude{
     release
 
     //exit
+    setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)    
+    
     setvar(VAR_PELLUCA_MAYOR_QUEST, 3)
     warp(MAP_PELLUCA_CITY, 43, 28)
 

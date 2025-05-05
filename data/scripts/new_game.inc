@@ -321,6 +321,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_IVYRIVER_ZARUDE_QUEST
 	setflag FLAG_IVYRIVER_ZARUDE_REAL
 	setflag FLAG_CERAM_TALONFLAME
+	setflag FLAG_PELLUCA_FLOODED_CITIZENS
 	
 	call EventScript_ResetAllBerries
 	end

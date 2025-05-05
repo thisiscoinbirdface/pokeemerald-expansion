@@ -123,8 +123,8 @@
 #define FLAG_MIRROHGYM_TRAINER_B  0x27F // inside double battle
 #define FLAG_PELLUCA_MAYOR_FIGHT  0x495 // the first confrontation with the qwilsquad
 #define FLAG_PELLUCA_QWILSQUAD_ENTRANCE  0x496 // dude that's blocking the entrance to the shack in pelluca
-#define FLAG_UNUSED_0x497  0x497 // Unused Flag
-#define FLAG_UNUSED_0x498  0x498 // Unused Flag
+#define FLAG_PELLUCA_REGULAR_CITIZENS  0x497 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZENS  0x498 // Unused Flag
 #define FLAG_UNUSED_0x499  0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A  0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B  0x49B // Unused Flag

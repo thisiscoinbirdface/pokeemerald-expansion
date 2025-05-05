@@ -141,7 +141,7 @@ PellucaFishery_EventScript_MainDude::
 # 103 "data//maps/PellucaFishery/scripts.pory"
 	special ShakeCamera
 # 104 "data//maps/PellucaFishery/scripts.pory"
-	delay 60
+	delay 48
 # 106 "data//maps/PellucaFishery/scripts.pory"
 	applymovement LOCALID_S1, PellucaFishery_EventScript_MainDude_Movement_9
 # 107 "data//maps/PellucaFishery/scripts.pory"
@@ -155,16 +155,24 @@ PellucaFishery_EventScript_MainDude::
 # 111 "data//maps/PellucaFishery/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PellucaFishery_EventScript_MainDude_Movement_9
 # 112 "data//maps/PellucaFishery/scripts.pory"
-	speakername PellucaFishery_EventScript_MainDude_Text_0
+	waitmovement 0
 # 113 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_13
+	delay 24
 # 114 "data//maps/PellucaFishery/scripts.pory"
+	speakername PellucaFishery_EventScript_MainDude_Text_0
+# 115 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_13
+# 116 "data//maps/PellucaFishery/scripts.pory"
 	release
-# 117 "data//maps/PellucaFishery/scripts.pory"
+# 119 "data//maps/PellucaFishery/scripts.pory"
+	setflag FLAG_PELLUCA_REGULAR_CITIZENS
+# 120 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZENS
+# 122 "data//maps/PellucaFishery/scripts.pory"
 	setvar VAR_PELLUCA_MAYOR_QUEST, 3
-# 118 "data//maps/PellucaFishery/scripts.pory"
+# 123 "data//maps/PellucaFishery/scripts.pory"
 	warp MAP_PELLUCA_CITY, 43, 28
-# 121 "data//maps/PellucaFishery/scripts.pory"
+# 126 "data//maps/PellucaFishery/scripts.pory"
 	releaseall
 	end
 
@@ -379,8 +387,7 @@ PellucaFishery_EventScript_MainDude_Text_12:
 	.string "{PLAYER}?\p"
 	.string "...\p"
 	.string "The mayor sent you? Why are you even\n"
-	.string "listening to that stupid blundering\l"
-	.string "idiot?\p"
+	.string "listening to that blundering idiot?\p"
 	.string "He's totally useless! That's why I\n"
 	.string "decided to step in. Pelluca City is my\l"
 	.string "home.\p"
@@ -388,7 +395,7 @@ PellucaFishery_EventScript_MainDude_Text_12:
 	.string "consider talking to him again.$"
 
 PellucaFishery_EventScript_MainDude_Text_13:
-# 113 "data//maps/PellucaFishery/scripts.pory"
+# 115 "data//maps/PellucaFishery/scripts.pory"
 	.string "What was that?\p"
 	.string "Boys - we gotta go outside and see\n"
 	.string "what's going on!\p"
