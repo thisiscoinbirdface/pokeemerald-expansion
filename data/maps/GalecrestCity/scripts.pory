@@ -337,8 +337,6 @@ script GalecrestCity_NPC_5{
 }
 
 script GalecrestCity_NPC_6{
-    giveitem(ITEM_TERA_ORB)
-    setflag(FLAG_SYS_TERA_ORB)
     msgbox(format("If you head west, you enter the elite residential neighborhood.\pThe area south of here is poorer."), MSGBOX_NPC)
     end
 }
