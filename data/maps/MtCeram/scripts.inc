@@ -1150,8 +1150,8 @@ MtCeram_EventScript_Eavesdrop_Text_8:
 # 220 "data//maps/MtCeram/scripts.pory"
 	.string "Heard that? I've got to get that\n"
 	.string "dreamstone before Team Somber!\p"
-	.string "That's called responsibility.\n"
-	.string "Sxomething you wouldn't know about.\p"
+	.string "That's called responsibility. Something\n"
+	.string "you wouldn't know about.\p"
 	.string "...\p"
 	.string "What? You're coming too? Hah! We're not\n"
 	.string "buddies, {PLAYER}. I'm the one and\l"
@@ -1204,7 +1204,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_8:
 
 MtCeram_EventScript_BeforePeakBattle_Text_9:
 # 354 "data//maps/MtCeram/scripts.pory"
-	.string "My Pokemon...I have to go and heal\n"
+	.string "My Pokémon...I have to go and heal\n"
 	.string "them...I couldn't stop Team Somber...$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_10:
@@ -1363,7 +1363,7 @@ MtCeram_EventScript_NPCNurse_Text_1:
 # 526 "data//maps/MtCeram/scripts.pory"
 	.string "Don't worry, Chansey! We're safe here.\p"
 	.string "Meanwhile, if you have a Heal Pass,\n"
-	.string "I can heal your Pokemon!$"
+	.string "I can heal your Pokémon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 535 "data//maps/MtCeram/scripts.pory"

@@ -172,7 +172,8 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
             msgbox(format("Everything seems to be in order. What happened - did they forget to give you your Charcadet at the entrance ceremony? Well, no matter. Here you go!"))
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox(format("The Detective Academy has gifted you a Charcadet!"))
-            call(NicknamePartyMon)            msgbox(format("Please treat your Charcadet with love and care!"))
+            givemon(SPECIES_CHARCADET, 20)
+            msgbox(format("Please treat your Charcadet with love and care!"))
             release
             setflag(FLAG_GALECREST_CHARCADET_GET)
         }
@@ -187,7 +188,6 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Charcadet{
             goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)    
         }
     }
-
 
     releaseall
     end

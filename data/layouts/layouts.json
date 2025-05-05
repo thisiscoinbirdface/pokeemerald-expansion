@@ -5520,6 +5520,16 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/MirrohInterior_B1F/border.bin",
       "blockdata_filepath": "data/layouts/MirrohInterior_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PELLUCA_CITY_FLOODED",
+      "name": "PellucaCityFlooded_Layout",
+      "width": 80,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/PellucaCityFlooded/border.bin",
+      "blockdata_filepath": "data/layouts/PellucaCityFlooded/map.bin"
     }
   ]
 }

@@ -217,7 +217,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Sxomething you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -351,7 +351,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //Kohla exit
     speakername("Kohla")
-    msgbox(format("My Pokemon...I have to go and heal them...I couldn't stop Team Somber..."))
+    msgbox(format("My Pokémon...I have to go and heal them...I couldn't stop Team Somber..."))
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
@@ -523,7 +523,7 @@ script MtCeram_EventScript_NPCNurse{
     applymovement(24, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("Don't worry, Chansey! We're safe here.\pMeanwhile, if you have a Heal Pass,\nI can heal your Pokemon!"))
+    msgbox(format("Don't worry, Chansey! We're safe here.\pMeanwhile, if you have a Heal Pass,\nI can heal your Pokémon!"))
     call(Common_EventScript_NurseJoyOnRoute)
 
     releaseall

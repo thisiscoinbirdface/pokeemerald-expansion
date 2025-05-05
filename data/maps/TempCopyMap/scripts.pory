@@ -860,7 +860,7 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
         delay(30)
-        warp(MAP_PELLUCA_CITY, 13, 16)
+        warp(MAP_PELLUCA_CITY, 14, 28)
 
     } else {
         msgbox(format("Drifblim looks dejected..."), MSGBOX_NPC)

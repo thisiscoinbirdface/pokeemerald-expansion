@@ -116,24 +116,24 @@
 #define FLAG_WINTERLILY_HOLLOW_SURF  0x278 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_JANIA  0x279 // Unused Flag
 #define FLAG_IVY_RIVER_SHARPEDO_MAIN  0x27A // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_A  0x27B // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_B  0x27C // Unused Flag
-#define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // Unused Flag
-#define FLAG_MIRROHGYM_TRAINER_A  0x27E // Unused Flag
-#define FLAG_MIRROHGYM_TRAINER_B  0x27F // Unused Flag
-#define FLAG_UNUSED_0x495  0x495 // Unused Flag
-#define FLAG_UNUSED_0x496  0x496 // Unused Flag
-#define FLAG_UNUSED_0x497  0x497 // Unused Flag
-#define FLAG_UNUSED_0x498  0x498 // Unused Flag
-#define FLAG_UNUSED_0x499  0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A  0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B  0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C  0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D  0x49D // Unused Flag
-#define FLAG_UNUSED_0x4A9  0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA  0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB  0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC  0x4AC // Unused Flag
+#define FLAG_MIRROHBASECAMP_TRAINER_A  0x27B // outside gym trainer
+#define FLAG_MIRROHBASECAMP_TRAINER_B  0x27C // outside gym trainer
+#define FLAG_MIRROHBASECAMP_TRAINER_C  0x27D // outside gym trainer
+#define FLAG_MIRROHGYM_TRAINER_A  0x27E // inside double battle
+#define FLAG_MIRROHGYM_TRAINER_B  0x27F // inside double battle
+#define FLAG_PELLUCA_MAYOR_FIGHT  0x495 // the first confrontation with the qwilsquad
+#define FLAG_PELLUCA_QWILSQUAD_ENTRANCE  0x496 // dude that's blocking the entrance to the shack in pelluca
+#define FLAG_PELLUCA_REGULAR_CITIZENS  0x497 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZENS  0x498 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A  0x499 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B  0x49A // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C  0x49B // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D  0x49C // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED  0x49D // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED  0x4A9 // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED  0x4AA // Unused Flag
+#define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED  0x4AB // Unused Flag
+#define FLAG_PELLUCA_PC_CHARS  0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD  0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE  0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF  0x4AF // Unused Flag
@@ -1566,7 +1566,7 @@
 #define FLAG_SYS_TERA_ORB                           (SYSTEM_FLAGS + 0x87) // Unused Flag
 #define FLAG_SYS_GOT_STRENGTH                       (SYSTEM_FLAGS + 0x88) // Unused Flag
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_SYS_SURF_ENABLED                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag

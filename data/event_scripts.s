@@ -1379,3 +1379,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route6_ZeraoraCave/scripts.inc"
 
 	.include "data/maps/MirrohInterior_B1F/scripts.inc"
+
+	.include "data/maps/PellucaCityFlooded/scripts.inc"

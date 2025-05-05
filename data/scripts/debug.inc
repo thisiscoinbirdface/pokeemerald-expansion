@@ -137,10 +137,13 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	warp MAP_MT_CHIMNEY, 12, 6
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
+	warp MAP_PELLUCA_CITY, 43, 28
+	release
 	end
 
 Debug_EventScript_Script_2::
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
 	release
 	end
 

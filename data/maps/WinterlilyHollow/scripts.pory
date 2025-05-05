@@ -290,7 +290,7 @@ script WinterlilyHollow_NPC_SurfMan{
     msgbox(format("{PLAYER} gave the man a Heart Scale"), MSGBOX_SIGN)
     msgbox(format("Thank you! This is just what I wanted. As promised, here you go."))
     giveitem(ITEM_HM03)
-    msgbox(format("You don't need to teach your Pokemon the move. Any compatible Pokemon can use it on any water body!"))
+    msgbox(format("You don't need to teach your Pokémon the move. Any compatible Pokémon can use it on any water body!"))
 
     setflag(FLAG_WINTERLILY_HOLLOW_SURF)
 
@@ -298,7 +298,7 @@ script WinterlilyHollow_NPC_SurfMan{
 script WinterlilyHollow_NPC_SurfManAlt{
     lockall
     faceplayer
-    msgbox(format("When I was younger, I once encountered a strange Pokemon in the Mirroh Caverns. It was shaped like a blue plant and scattered poisonous spikes everywhere! I'd like to see that Pokemon again. Do you have such a Pokemon?"), MSGBOX_YESNO)
+    msgbox(format("When I was younger, I once encountered a strange Pokémon in the Mirroh Caverns. It was shaped like a blue plant and scattered poisonous spikes everywhere! I'd like to see that Pokémon again. Do you have such a Pokémon?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0){
         msgbox(format("Ah. My search continues then."))
     }

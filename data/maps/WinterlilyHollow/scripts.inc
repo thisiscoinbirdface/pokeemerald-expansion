@@ -780,19 +780,19 @@ WinterlilyHollow_NPC_SurfMan_Text_6:
 
 WinterlilyHollow_NPC_SurfMan_Text_7:
 # 293 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "You don't need to teach your Pokemon\n"
-	.string "the move. Any compatible Pokemon can\l"
+	.string "You don't need to teach your Pokémon\n"
+	.string "the move. Any compatible Pokémon can\l"
 	.string "use it on any water body!$"
 
 WinterlilyHollow_NPC_SurfManAlt_Text_0:
 # 301 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "When I was younger, I once encountered\n"
-	.string "a strange Pokemon in the Mirroh\l"
+	.string "a strange Pokémon in the Mirroh\l"
 	.string "Caverns. It was shaped like a blue plant\l"
 	.string "and scattered poisonous spikes\l"
 	.string "everywhere! I'd like to see that\l"
-	.string "Pokemon again. Do you have such a\l"
-	.string "Pokemon?$"
+	.string "Pokémon again. Do you have such a\l"
+	.string "Pokémon?$"
 
 WinterlilyHollow_NPC_SurfManAlt_Text_1:
 # 303 "data//maps/WinterlilyHollow/scripts.pory"

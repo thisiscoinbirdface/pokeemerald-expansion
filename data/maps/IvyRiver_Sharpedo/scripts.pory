@@ -33,7 +33,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
 
     delay(16)
     speakername("???")
-    msgbox(format("Who're you? How'd you get here? Please leave immediately - a dangerous Pokemon is nearby.\p...\pYou know about the Mega Sharpedo? Okay. Be careful nonetheless.\pCome here."))
+    msgbox(format("Who're you? How'd you get here? Please leave immediately - a dangerous Pokémon is nearby.\p...\pYou know about the Mega Sharpedo? Okay. Be careful nonetheless.\pCome here."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))

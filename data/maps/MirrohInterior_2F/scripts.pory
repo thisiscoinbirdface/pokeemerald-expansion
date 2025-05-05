@@ -28,7 +28,7 @@ script MirrohInterior_2F_CavePainting_WalkingWake{
     lockall
 
     //a descrption of koraidon
-    msgbox(format("It's an ancient cave painting...a never before seen Pokemon! It looks somewhat reptilian, but also has feathers. Terrifying!"))
+    msgbox(format("It's an ancient cave painting...a never before seen Pokémon! It looks somewhat reptilian, but also has feathers. Terrifying!"))
 
     releaseall
     end
@@ -104,7 +104,7 @@ script MirrohInterior_2F_Trainer_A{
 //maniac
 script MirrohInterior_2F_Trainer_B{
     trainerbattle_single(TRAINER_MIRROHINT2_B, format("Why are you here? Are you trying to steal my Pokémon like those Team Somber grunts?"), format("I guess you're not!"))
-    msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my Pokemon. But I beat one of them and ran away from the other!"))
+    msgbox(format("When I was on the upper floor, some Team Somber grunts tried to take my Pokémon. But I beat one of them and ran away from the other!"))
     releaseall
 }
 //triathlete F

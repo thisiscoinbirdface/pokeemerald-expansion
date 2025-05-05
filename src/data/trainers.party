@@ -2801,54 +2801,63 @@ Carbink
 Level: 20
 
 
-=== TRAINER_STEVE_2 ===
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+=== TRAINER_PELLUCA_QWILSQUAD_A ===
+Name: Grunt
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lairon
-Level: 27
+Clauncher
+Level: 31
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Qwilfish-Hisui
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_STEVE_3 ===
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+=== TRAINER_PELLUCA_QWILSQUAD_B ===
+Name: Grunt
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lairon
-Level: 29
+Carvanha
+Level: 32
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Rhyhorn
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Qwilfish-Hisui
+Level: 33
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_STEVE_4 ===
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+
+=== TRAINER_PELLUCA_QWILSQUAD_BOSS ===
+Name: Boss
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
 Lairon
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Rhyhorn
-Level: 32
+Clauncher
+Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_STEVE_5 ===
+Overqwil
+Level: 35
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_PELLUCA_DETECTIVE ===
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac

@@ -215,11 +215,11 @@
 #define TRAINER_ROUTE3_EXT_B                145
 #define TRAINER_ROUTE3_EXT_C                146
 
-
-#define TRAINER_STEVE_2                     147
-#define TRAINER_STEVE_3                     148
-#define TRAINER_STEVE_4                     149
-#define TRAINER_STEVE_5                     150
+//Pelluca
+#define TRAINER_PELLUCA_QWILSQUAD_A                     147
+#define TRAINER_PELLUCA_QWILSQUAD_B                     148
+#define TRAINER_PELLUCA_QWILSQUAD_BOSS                  149
+#define TRAINER_PELLUCA_DETECTIVE                       150
 #define TRAINER_LUIS                        151
 #define TRAINER_DOMINIK                     152
 #define TRAINER_DOUGLAS                     153

@@ -228,7 +228,7 @@ Route3_Ext_Diancie::
 
 Route3_Ext_NPC1_Text_0:
 # 31 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "They say there's a rare Pokemon that\n"
+	.string "They say there's a rare Pokémon that\n"
 	.string "makes its home down here, but I can't\l"
 	.string "find it! Did I come to the wrong place?$"
 

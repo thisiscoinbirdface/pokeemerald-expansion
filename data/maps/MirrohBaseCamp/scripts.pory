@@ -159,7 +159,7 @@ script MirrohBaseCamp_Trainer_A{
     if (var(VAR_RESULT) == 1){
         trainerbattle_no_intro(TRAINER_MIRROHEXT_D, format("You were warmed up already!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_A)
-        msgbox(format("Oh no! I'll have to heal my Pokemon. Hold my place in line - I'll be right back!"))
+        msgbox(format("Oh no! I'll have to heal my Pokémon. Hold my place in line - I'll be right back!"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(8, moves(walk_left walk_up walk_left *10))

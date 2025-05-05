@@ -1581,6 +1581,18 @@ static const struct SpriteFrameImage sPicTable_LeaderViniel[] = {
     overworld_ascending_frames(gObjectEventPic_LeaderViniel, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_LeaderCarona[] = {
+    overworld_ascending_frames(gObjectEventPic_LeaderCarona, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LeaderJania[] = {
+    overworld_ascending_frames(gObjectEventPic_LeaderJania, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LeaderRaazi[] = {
+    overworld_ascending_frames(gObjectEventPic_LeaderRaazi, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_BugCatcherF[] = {
     overworld_ascending_frames(gObjectEventPic_BugCatcherF, 2, 4),
 };

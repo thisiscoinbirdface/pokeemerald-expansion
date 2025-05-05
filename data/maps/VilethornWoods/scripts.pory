@@ -202,7 +202,7 @@ script VilethornWoods_Trainer_A{
 }
 
 script VilethornWoods_Trainer_B{
-    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type Pokemon, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
+    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type Pokémon, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
     msgbox(format("This forest is weird...a dense fog, no BUG types..."))
     releaseall
     end

@@ -603,7 +603,8 @@ WhiteSign_Route6_ToPelluca_Text_0:
 
 WhiteSign_Route6_RangerInstitute_Text_0:
 # 261 "data//scripts/customscripts_signs.pory"
-	.string "The Pokemon Ranger Institute$"
+	.string "The Pokémon Ranger Institute\n"
+	.string "Route 6 Branch$"
 
 WhiteSign_PellucaCity_Main_Text_0:
 # 269 "data//scripts/customscripts_signs.pory"
