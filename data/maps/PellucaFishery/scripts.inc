@@ -122,7 +122,49 @@ PellucaFishery_EventScript_MainDude::
 	release
 # 91 "data//maps/PellucaFishery/scripts.pory"
 	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_BOSS, PellucaFishery_EventScript_MainDude_Text_11
+# 93 "data//maps/PellucaFishery/scripts.pory"
+	delay 16
 # 94 "data//maps/PellucaFishery/scripts.pory"
+	speakername PellucaFishery_EventScript_MainDude_Text_0
+# 95 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_12
+# 96 "data//maps/PellucaFishery/scripts.pory"
+	release
+# 99 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8004, 2
+# 100 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8005, 2
+# 101 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8006, 8
+# 102 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8007, 5
+# 103 "data//maps/PellucaFishery/scripts.pory"
+	special ShakeCamera
+# 104 "data//maps/PellucaFishery/scripts.pory"
+	delay 60
+# 106 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S1, PellucaFishery_EventScript_MainDude_Movement_9
+# 107 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S2, PellucaFishery_EventScript_MainDude_Movement_9
+# 108 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S3, PellucaFishery_EventScript_MainDude_Movement_9
+# 109 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_9
+# 110 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S_MAIN, PellucaFishery_EventScript_MainDude_Movement_9
+# 111 "data//maps/PellucaFishery/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaFishery_EventScript_MainDude_Movement_9
+# 112 "data//maps/PellucaFishery/scripts.pory"
+	speakername PellucaFishery_EventScript_MainDude_Text_0
+# 113 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_13
+# 114 "data//maps/PellucaFishery/scripts.pory"
+	release
+# 117 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
+# 118 "data//maps/PellucaFishery/scripts.pory"
+	warp MAP_PELLUCA_CITY, 43, 28
+# 121 "data//maps/PellucaFishery/scripts.pory"
 	releaseall
 	end
 
@@ -227,6 +269,14 @@ PellucaFishery_EventScript_MainDude_Movement_8:
 	face_left
 	step_end
 
+# 106 "data//maps/PellucaFishery/scripts.pory"
+PellucaFishery_EventScript_MainDude_Movement_9:
+# 106 "data//maps/PellucaFishery/scripts.pory"
+	emote_exclamation_mark
+# 106 "data//maps/PellucaFishery/scripts.pory"
+	jump_in_place_down
+	step_end
+
 PellucaFishery_NPC1_Text_0:
 # 14 "data//maps/PellucaFishery/scripts.pory"
 	.string "Yeah, that's right! I've got the Qwil\n"
@@ -319,3 +369,27 @@ PellucaFishery_EventScript_MainDude_Text_10:
 PellucaFishery_EventScript_MainDude_Text_11:
 # 91 "data//maps/PellucaFishery/scripts.pory"
 	.string "Overqwil! Noo!$"
+
+PellucaFishery_EventScript_MainDude_Text_12:
+# 95 "data//maps/PellucaFishery/scripts.pory"
+	.string "Argh! Fine! Fine!\p"
+	.string "I'm man enough to admit defeat. You're\n"
+	.string "strong, kid. I'll give you that.\p"
+	.string "What's your name?\p"
+	.string "{PLAYER}?\p"
+	.string "...\p"
+	.string "The mayor sent you? Why are you even\n"
+	.string "listening to that stupid blundering\l"
+	.string "idiot?\p"
+	.string "He's totally useless! That's why I\n"
+	.string "decided to step in. Pelluca City is my\l"
+	.string "home.\p"
+	.string "But if you say so, I'm willing to\n"
+	.string "consider talking to him again.$"
+
+PellucaFishery_EventScript_MainDude_Text_13:
+# 113 "data//maps/PellucaFishery/scripts.pory"
+	.string "What was that?\p"
+	.string "Boys - we gotta go outside and see\n"
+	.string "what's going on!\p"
+	.string "C'mon {PLAYER}!$"

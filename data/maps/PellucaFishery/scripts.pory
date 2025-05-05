@@ -92,11 +92,33 @@ script PellucaFishery_EventScript_MainDude{
 
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid.\p...\pThe mayor sent you? That stupid blundering - do you even know what he's done?\pNothing! Nothing at all! He's totally useless! That's why I decided to step in. I love Pelluca City - this is my home.\pbut if you say so, I'm willing to consider talking to him again."))
+    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home.\pBut if you say so, I'm willing to consider talking to him again."))
     release    
 
     //Camera shake
-    
+	setvar(VAR_0x8004, 2)  //vertical pan
+	setvar(VAR_0x8005, 2)  //horizontal pan
+	setvar(VAR_0x8006, 8)  //num shakes
+	setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)    
+    delay(48)
+
+    applymovement(LOCALID_S1, moves(emote_exclamation_mark jump_in_place_down))    
+    applymovement(LOCALID_S2, moves(emote_exclamation_mark jump_in_place_down))    
+    applymovement(LOCALID_S3, moves(emote_exclamation_mark jump_in_place_down))    
+    applymovement(LOCALID_S4, moves(emote_exclamation_mark jump_in_place_down))    
+    applymovement(LOCALID_S_MAIN, moves(emote_exclamation_mark jump_in_place_down))    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark jump_in_place_down))   
+    waitmovement(0)
+    delay(24)     
+    speakername("Q-squad Boss")
+    msgbox(format("What was that?\pBoys - we gotta go outside and see what's going on!\pC'mon {PLAYER}!"))    
+    release
+
+    //exit
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 3)
+    warp(MAP_PELLUCA_CITY, 43, 28)
+
 
     releaseall
     end

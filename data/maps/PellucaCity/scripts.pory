@@ -9,8 +9,22 @@ raw`
     .set LOCALID_S_BLOCKER, 7
 `
 
-mapscripts PellucaCity_MapScripts{}
+mapscripts PellucaCity_MapScripts{
+        MAP_SCRIPT_ON_TRANSITION {
+        goto(PellucaCity_SetLayout)
+    }
+}
 
+script PellucaCity_SetLayout{
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 3){
+        setmaplayoutindex(LAYOUT_PELLUCA_CITY_FLOODED)
+        setweather(WEATHER_RAIN_THUNDERSTORM)
+        doweather
+    } else {
+        setmaplayoutindex(LAYOUT_PELLUCA_CITY)
+    }
+    return
+}
 
 
 
