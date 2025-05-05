@@ -1,45 +1,32 @@
+raw`
+    .set LOCALID_S_MAIN, 3
+    .set LOCALID_S1, 1
+    .set LOCALID_S2, 2
+    .set LOCALID_S3, 4
+    .set LOCALID_S4, 5
+`
+
 mapscripts PellucaFishery_MapScripts{}
 
-//3 NPCs
-//front sailor
+
+
 script PellucaFishery_NPC1{
-    lockall
-    faceplayer
-    //Post-quest
-    if (var(VAR_PELLUCA_FISHERY) == 3){
-        msgbox(format(""))
-    } else {
-        msgbox(format("Shucks! I can't wait to get back out to sea but Old Man Slakka doesn't want to do anything while the Sharpedo's out and about!"))
-    }
-    releaseall
+    msgbox(format("Yeah, that's right! I've got the Qwil blood in my veins! I dream about Qwilfish - nobody's a bigger Qwilsquadder than me!\p...\p...is that a Detective Academy pass?\pListen, I'm an agent working undercover. Don't blow my cover!"), MSGBOX_NPC)
     end
 }
-//back sailor
 script PellucaFishery_NPC2{
-    lockall
-    faceplayer
-    //Post-quest
-    if (var(VAR_PELLUCA_FISHERY) == 3){
-        msgbox(format(""))
-    } else {
-        msgbox(format("People avoid the Ivy River not just because of the Mega Sharpedo, but because it's cursed! A long time ago, a boy went missing on a fishing trip there. Since then, people have stopped going there."))
-    }
-    releaseall
+    msgbox(format("The boss is actually gonna make some real change happen around here! But for that, we need money. That's why we're taxing the citizens!"), MSGBOX_NPC)
     end
 }
-//fisherman
 script PellucaFishery_NPC3{
-    lockall
-    faceplayer
-    //Post-quest
-    if (var(VAR_PELLUCA_FISHERY) == 3){
-        msgbox(format(""))
-    } else {
-        msgbox(format("Did you know that a Casting Rod and Trolling Rod catch different Pokémon?"))
-    }
-    releaseall
+    msgbox(format("What's up new recruit?"), MSGBOX_NPC)
     end
 }
+script PellucaFishery_NPC4{
+    msgbox(format("This used to be a boathouse before we came in. All this stuff is from back then."), MSGBOX_NPC)
+    end
+}
+
 
 //1 main dude
 //0: start the quest (sharpedo is attacking but its not normal)
@@ -51,65 +38,67 @@ script PellucaFishery_EventScript_MainDude{
     lockall
     faceplayer
 
-    if (var(VAR_PELLUCA_FISHERY) == 3){
-        msgbox(format(""))
-    }
+    speakername("Q-squad Boss")
+    msgbox(format("So you're the new recruit, eh? Got a Qwilfish and everything, do ya?\p...\pFunny thing is, I don't remember any new recruits signing up."))
+    release
 
-    if (var(VAR_PELLUCA_FISHERY) == 2){
-        msgbox(format("SLAKKA: Have you taken care of the shark?"), MSGBOX_YESNO)
-
-        if (var(VAR_RESULT) == 1){
-            msgbox(format("SLAKKA: Amazing! You're a saviour!"))
-            release
-
-            completequest(QUEST_PELLUCA_FISHERY)
-
-            giveitem(ITEM_POTION)   //give the quest reward
-            msgbox(format("SLAKKA: Amazing! You're a saviour!"))
-            setvar(VAR_PELLUCA_FISHERY, 3)
-            release
-
-        } else {
-            msgbox(format("SLAKKA: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
-            release
-        }
-    }
-
-    if (var(VAR_PELLUCA_FISHERY) == 1){
-        msgbox(format("SLAKKA: Ah, there you are! Let's see your Mega Ring."), MSGBOX_YESNO)
-
-        if (var(VAR_RESULT) == 1){
-            checkitem(ITEM_MEGA_RING)
-            if (var(VAR_RESULT) == 1){
-                msgbox(format("SLAKKA: Good, good. Now you've got a chance against the Mega Sharpedo. Well then, all that's left is for you to make your way there. The Sharpedo lives north of here, up in Ivy River. You can either surf up there or go through Mt. Mirroh and come down. Go teach that Mega Sharpedo a lesson, kid! I'm counting on ya."))
-                release
-                setvar(VAR_PELLUCA_FISHERY, 2)
-            
-            } else {
-                msgbox(format("SLAKKA: Huh? Where? You trying to pull a fast one on a sailor? I may be past my prime but I can still give you a knocking, you know."))
-                release
-            }
-        } else {
-            msgbox(format("SLAKKA: Hmpf. Come back when you do!"))
-        }
-      
-    }
-
-    if (var(VAR_PELLUCA_FISHERY) == 0){
-        //first dialogue
-        msgbox(format("SLAKKA: What am I going to do about this mess! My fishery business was booming until we started getting attacked by a monstrous Sharpedo! And none of us can handle it!\pIt's a total disaster.\p...\pSLAKKA: Eh? You wanna try? You...don't look like you can handle it. That Sharpedo's strong, see. Not normal. It's mega evolved in the wild! You still wanna go up against it?"), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1){
-            msgbox(format("SLAKKA: Haha! You may not look like much, but you've got some spine, eh? I like that.\pCan't sail the seas without a strong mast.\pFine, you're in. But I'm an old man now and I can't push you into the deep end without preparing you first.\pSLAKKA: If you're going up against a mega evolved Pokemon, you'll need to be able to mega evolve yourself! Get yourself a Mega Ring somehow and then come back."))
-            release
-            setvar(VAR_PELLUCA_FISHERY, 1)
-
-            startquest(QUEST_PELLUCA_FISHERY)
-
-        } else {
-            msgbox(format("SLAKKA: Good choice, kid. That thing is terrifying! Worse than a raging seastorm it is!"))
-        }
-    }
+    delay(16)
+    //camera pan down
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2 walk_right * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
 
+    //move all the sailors
+    applymovement(LOCALID_S1, moves(walk_right * 2 walk_up * 2 face_right))
+    applymovement(LOCALID_S3, moves(walk_down * 2 walk_right face_up))
+    applymovement(LOCALID_S4, moves(walk_left * 5))
+    applymovement(LOCALID_S2, moves(walk_left * 3 walk_down * 4 face_up))
+    waitmovement(0)
+
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("Thought you were being slick, eh? Trying to pull a fast one on us?\pMake the kid pay, boys!"))
+    release    
+    delay(16)
+
+    //battle 1
+    applymovement(LOCALID_S1, moves(jump_in_place_right))    
+    speakername("Q-squad Grunt")
+    msgbox(format("Aye-aye boss!\pYou're about to get crushed, kid! That's what you get for messing with the Qwilsquad!"))    
+    trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_A, format("I let you down, boss!"))
+    
+    delay(8)
+    applymovement(LOCALID_S1, moves(walk_left face_right))    
+    speakername("Q-squad Grunt")
+    msgbox(format("Argh! This kid is good!"))    
+
+    applymovement(LOCALID_S4, moves(jump_in_place_left))    
+    speakername("Q-squad Grunt")
+    msgbox(format("S'matter with you? You're ruining our squad's name!\pC'mon kid, you think you can get away with this?"))    
+    trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_B, format("No! I lost! Sorry, boss!"))
+    
+    delay(8)
+    applymovement(LOCALID_S4, moves(walk_right face_left))    
+    speakername("Q-squad Grunt")
+    msgbox(format("Boss! We-we can't handle this trainer. You gotta take care of this!"))    
+
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("...\pFine then.\pI respect a strong trainer. But respect goes only so far. You're going to pay for what you did to my boys!"))
+    release    
+    trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_BOSS, format("Overqwil! Noo!"))
+
+    delay(16)
+    speakername("Q-squad Boss")
+    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid.\p...\pThe mayor sent you? That stupid blundering - do you even know what he's done?\pNothing! Nothing at all! He's totally useless! That's why I decided to step in. I love Pelluca City - this is my home.\pbut if you say so, I'm willing to consider talking to him again."))
+    release    
+
+    //Camera shake
+    
+
+    releaseall
+    end
 }
 

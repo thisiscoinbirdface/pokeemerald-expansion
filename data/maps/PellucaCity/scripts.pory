@@ -6,6 +6,7 @@ raw`
     .set LOCALID_S2, 41
     .set LOCALID_S3, 42
     .set LOCALID_S_ENTRANCE, 8
+    .set LOCALID_S_BLOCKER, 7
 `
 
 mapscripts PellucaCity_MapScripts{}
@@ -267,6 +268,26 @@ script PellucaCity_Sailor_MemberAccepted{
 
 
 
+
+
+
+
+//Sailor who blocks access to mt. mirroh
+script PellucaCity_Blocker{
+    msgbox(format("This is our city! Got any problems?"))
+    end
+}
+
+script PellucaCity_Blocker_Trigger{
+    applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
+    speakername("Q-squad Grunt")
+    msgbox(format("Hey, kid! There's a toll if you wanna get out.\pYeah, that's right! You gotta pay 999999.\pAin't got the money?\pThen get packing!"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+    waitmovement(0)
+    releaseall
+    end
+}
 
 
 
