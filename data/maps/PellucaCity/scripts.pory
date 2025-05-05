@@ -762,7 +762,7 @@ script PellucaCityFlooded_Complete_Trigger{
     clearflag(FLAG_PELLUCA_PC_CHARS)
 
     //warp out
-    warp(MAP_PELLUCA_CITY_POKEMON_CENTER, 6, 6)
+    warp(MAP_PELLUCA_CITY_POKEMON_CENTER, 7, 6)
 
     releaseall
     end

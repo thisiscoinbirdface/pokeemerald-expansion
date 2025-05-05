@@ -53,7 +53,7 @@ script PellucaCity_EventEnd{
     speakername("Q-squad Boss") 
     msgbox(format("Oh yeah! Now with this - "))   
     release
-	applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark face_left)) 
+	applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark face_right)) 
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
@@ -70,7 +70,7 @@ script PellucaCity_EventEnd{
     msgbox(format("Ack! I'm sorry, {PLAYER}! My hands are too rough for such a fragile disk.\pI don't have a copy myself or I'd give you one...but wait! I'll figure out something I can repay you with!"))
     release
     delay(16)	
-	applymovement(LOCALID_MAYOR, moves(jump_in_place_left)) 
+	applymovement(LOCALID_MAYOR, moves(jump_in_place_right)) 
     speakername("Mayor") 
     msgbox(format("Let me - on your behalf."))
     release
@@ -79,10 +79,41 @@ script PellucaCity_EventEnd{
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
-    msgbox(format("{PLAYER} - sorry about the HM breaking. Instead, why don't you take this instead? It's very valuable...but not to me, since I'm not a trainer. And it's the least we can do for you."))   
+    msgbox(format("{PLAYER} - sorry about the HM breaking. Instead, why don't you take this instead? It's very valuable...but not to me, since I'm not a trainer.\pIt's the least we can do for you."))   
 	release
 	giveitem(ITEM_MEGA_RING)
 	release
+
+    speakername("Q-squad Boss") 
+    msgbox(format("This flooding has woken us up, {PLAYER}. Infighting and bullying will get us nowhere."))
+    release
+    delay(16)	
+    speakername("Mayor") 
+    msgbox(format("And neither will laziness and inaction.\pWe're going to work together..."))
+    release
+    delay(16)	
+    speakername("Q-squad Boss") 
+    msgbox(format("...the Mayor will actively enact some new policies..."))
+    release
+    delay(16)	
+    speakername("Mayor") 
+    msgbox(format("...and the Qwilsquad will start doing things by the book.\pYou won't recognise Pelluca City the next time you visit - we promise!"))
+    release
+    delay(16)	
+    speakername("Q-squad Boss") 
+    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are. If I were you, I'd be extra careful!"))
+    release
+    delay(16)	
+
+
+	//exit
+	applymovement(LOCALID_QWIL, moves(walk_left walk_down * 2))
+	applymovement(LOCALID_MAYOR, moves(walk_down * 3))
+	waitmovement(0)
+	removeobject(LOCALID_MAYOR)
+	applymovement(LOCALID_QWIL, moves(walk_down))
+	waitmovement(0)
+	removeobject(LOCALID_QWIL)		
 
 	setvar(VAR_PELLUCA_MAYOR_QUEST, 10)
 	setflag(FLAG_PELLUCA_PC_CHARS)
