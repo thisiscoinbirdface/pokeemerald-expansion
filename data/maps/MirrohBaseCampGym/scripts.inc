@@ -481,28 +481,24 @@ MirrohBaseCampGym_Leader::
 	message MirrohBaseCampGym_Leader_Text_11
 # 324 "data//maps/MirrohBaseCampGym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
+# 325 "data//maps/MirrohBaseCampGym/scripts.pory"
+	speakername MirrohBaseCampGym_EventScript_Main_Text_6
 # 326 "data//maps/MirrohBaseCampGym/scripts.pory"
-	speakername MirrohBaseCampGym_EventScript_Main_Text_6
-# 327 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Leader_Text_12
-# 328 "data//maps/MirrohBaseCampGym/scripts.pory"
-	setflag FLAG_MIRROHBASECAMP_LEADER
-# 330 "data//maps/MirrohBaseCampGym/scripts.pory"
-	giveitem ITEM_MEGA_RING
-# 332 "data//maps/MirrohBaseCampGym/scripts.pory"
-	speakername MirrohBaseCampGym_EventScript_Main_Text_6
-# 333 "data//maps/MirrohBaseCampGym/scripts.pory"
-	msgbox MirrohBaseCampGym_Leader_Text_13
-# 334 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 327 "data//maps/MirrohBaseCampGym/scripts.pory"
 	giveitem ITEM_RARE_SHARD
-# 335 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 328 "data//maps/MirrohBaseCampGym/scripts.pory"
 	speakername MirrohBaseCampGym_EventScript_Main_Text_6
-# 336 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 329 "data//maps/MirrohBaseCampGym/scripts.pory"
+	msgbox MirrohBaseCampGym_Leader_Text_13
+# 330 "data//maps/MirrohBaseCampGym/scripts.pory"
+	speakername MirrohBaseCampGym_EventScript_Main_Text_6
+# 331 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Leader_Text_14
-# 337 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 332 "data//maps/MirrohBaseCampGym/scripts.pory"
 	release
 MirrohBaseCampGym_Leader_1:
-# 340 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 335 "data//maps/MirrohBaseCampGym/scripts.pory"
 	releaseall
 	return
 
@@ -919,23 +915,19 @@ MirrohBaseCampGym_Leader_Text_11:
 	.string "from Carona.$"
 
 MirrohBaseCampGym_Leader_Text_12:
-# 327 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 326 "data//maps/MirrohBaseCampGym/scripts.pory"
+	.string "And you must accept this as well. This\n"
+	.string "is my last one!$"
+
+MirrohBaseCampGym_Leader_Text_13:
+# 329 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "I see the closure of this gym as\n"
 	.string "destiny's way of telling Medicham and\l"
 	.string "me to lay down our fists. It's time we\l"
-	.string "explored new things. So I won't need\l"
-	.string "this any more, and as my final opponent,\l"
-	.string "I want you to have it.$"
-
-MirrohBaseCampGym_Leader_Text_13:
-# 333 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "The Mega Ring will allow you to Mega\n"
-	.string "Evolve specific Pokémon as long as they\l"
-	.string "hold their unique Mega Stone.\p"
-	.string "Please take these with you as well.$"
+	.string "explored new things.$"
 
 MirrohBaseCampGym_Leader_Text_14:
-# 336 "data//maps/MirrohBaseCampGym/scripts.pory"
+# 331 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "I feel satisfied. A fitting end - to\n"
 	.string "have been bested by a trainer of your\l"
 	.string "caliber!\p"

@@ -246,14 +246,14 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet::
 # 0 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2
-# 180 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 181 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	checkitem ITEM_DETECTIVE_STUDENT_ID
-# 182 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 183 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_8
-# 186 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_6
 # 187 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_6
+# 188 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Multichoice
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1:
 # 192 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
@@ -270,12 +270,12 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_2:
 # 174 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3
 # 175 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	call NicknamePartyMon
-# 175 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4
+	givemon SPECIES_CHARCADET, 20
 # 176 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	release
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4
 # 177 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	release
+# 178 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	setflag FLAG_GALECREST_CHARCADET_GET
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
@@ -285,9 +285,9 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_5:
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_8:
-# 183 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5
 # 184 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+	msgbox GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5
+# 185 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Multichoice
 	goto GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_1
 
@@ -749,17 +749,17 @@ GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_3:
 	.string "Charcadet!$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_4:
-# 175 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 176 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Please treat your Charcadet with love\n"
 	.string "and care!$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_5:
-# 183 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 184 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Sorry, as a temporary student, you're\n"
 	.string "not eligible for a Charcadet.$"
 
 GalecrestCity_DetectiveAcademy_Receptionist_Charcadet_Text_6:
-# 186 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
+# 187 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Sorry, only students are eligible for a\n"
 	.string "Charcadet.$"
 

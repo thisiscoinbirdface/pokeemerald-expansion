@@ -137,8 +137,8 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	setvar VAR_PELLUCA_MAYOR_QUEST, 3
-	warp MAP_PELLUCA_CITY, 43, 28
+	setflag FLAG_SYS_SURF_ENABLED
+	giveitem ITEM_HM03
 	release
 	end
 

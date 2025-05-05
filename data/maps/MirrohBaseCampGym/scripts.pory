@@ -322,16 +322,11 @@ script MirrohBaseCampGym_Leader{
         setflag(FLAG_BADGE05_GET)
         message(format("{PLAYER} received the Ironfist Badge from Carona."))
         call(Common_EventScript_PlayGymBadgeFanfare)
-
         speakername("Carona")
-        msgbox(format("I see the closure of this gym as destiny's way of telling Medicham and me to lay down our fists. It's time we explored new things. So I won't need this any more, and as my final opponent, I want you to have it."))
-        setflag(FLAG_MIRROHBASECAMP_LEADER)
-
-        giveitem(ITEM_MEGA_RING)
-
+        msgbox(format("And you must accept this as well. This is my last one!"))
+        giveitem(ITEM_RARE_SHARD) 
         speakername("Carona")
-        msgbox(format("The Mega Ring will allow you to Mega Evolve specific Pokémon as long as they hold their unique Mega Stone.\pPlease take these with you as well.")) 
-        giveitem(ITEM_RARE_SHARD)
+        msgbox(format("I see the closure of this gym as destiny's way of telling Medicham and me to lay down our fists. It's time we explored new things."))
         speakername("Carona")
         msgbox(format("I feel satisfied. A fitting end - to have been bested by a trainer of your caliber!\pCarry on our legacy, {PLAYER}! Show the world your iron fists!"))
         release
