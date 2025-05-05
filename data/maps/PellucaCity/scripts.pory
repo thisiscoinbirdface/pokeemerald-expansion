@@ -457,13 +457,13 @@ script PellucaCityFlooded_MainEvent{
     applymovement(48, moves(face_up))   
     applymovement(51, moves(face_up))   
 
+    speakername("Citizen")
+    msgbox(format("Is that Jania?\pYeah! It's the Gym Leader! In the flesh!"))
+    release
+
     addobject(LOCALID_FL_JANIA)
     applymovement(LOCALID_FL_JANIA, moves(walk_down * 7 walk_right * 2 walk_down))
     waitmovement(0)
-
-    speakername("Citizen")
-    msgbox(format("Is that Jania!\pYeah! It's the Gym Leader! In the flesh!\pWow..."))
-    release
 
     applymovement(43, moves(face_down))   
     applymovement(44, moves(face_down))   
@@ -489,7 +489,7 @@ script PellucaCityFlooded_MainEvent{
     delay(16)
 
     speakername("Jania")
-    msgbox(format("No, I won't\pYou two want to be responsible for this city? Start right here, right now."))
+    msgbox(format("No, I won't\pYou two want to be responsible for this city? Start right here, right now. Your citizens are miserably tired of both of you - when will you two change?"))
     release    
 
     applymovement(LOCALID_FL_JANIA, moves(face_right))   
@@ -500,8 +500,10 @@ script PellucaCityFlooded_MainEvent{
     setflag(FLAG_SYS_SURF_ENABLED)
     giveitem(ITEM_HM03)
     delay(16)
+    applymovement(LOCALID_FL_JANIA, moves(face_down))   
+    delay(16)
     speakername("Jania")
-    msgbox(format("Consider this my help. Now the two of you - and {PLAYER} - take this opportunity and do the right thing!"))
+    msgbox(format("Consider this my help.\pNow the two of you - and {PLAYER} - take this opportunity and do the right thing!"))
     release
     delay(16)
 
@@ -510,6 +512,30 @@ script PellucaCityFlooded_MainEvent{
     waitmovement(0)
 
     //trainer is asked to help
+    applymovement(LOCALID_FL_MAYOR, moves(face_left))   
+    applymovement(LOCALID_FL_QWIL, moves(face_right))   
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("Y-you know, she's - "))
+    speakername("Q-squad Boss")
+    msgbox(format("Yeah, I know.\p..."))
+    release     
+    delay(16)
+    speakername("Mayor")
+    msgbox(format("So - together then?"))
+    speakername("Q-squad Boss")
+    msgbox(format("Together."))
+    delay(16)    
+
+    applymovement(LOCALID_FL_MAYOR, moves(face_up))   
+    applymovement(LOCALID_FL_QWIL, moves(face_up)) 
+    speakername("Q-squad Boss")
+    msgbox(format("All of you - we'd like to say we're sorry, but there's not much time. I'll - no, we'll - prove it with our actions instead!"))
+    speakername("Mayor")
+    msgbox(format("{PLAYER} - the two of us will handle the citizens on the bridge and on land. Can you use the HM Surf that Jania gave you and rescue the four remaining citizens?\pOnce you've picked all four of them up, come back here."))
+    speakername("Q-squad Boss")
+    msgbox(format("Good luck, {PLAYER}! We're on top of things here, so you go on into the river. You don't need to teach any of your Pokémon how to surf - just hop on the water!"))
+    release    
 
 
     special(RemoveCameraObject)

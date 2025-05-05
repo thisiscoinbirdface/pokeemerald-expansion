@@ -248,7 +248,7 @@ script IvyRiver_Ranger_Scientist_A{
         applymovement(LOCALID_Q1, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
-        msgbox(format("Amazing! Such a beautiful, yet dangerous, Pokemon.\pHang on while I take some samples.\p...\p...\p..."))
+        msgbox(format("Amazing! Such a beautiful, yet dangerous, Pokémon.\pHang on while I take some samples.\p...\p...\p..."))
         release
         playse(SE_BANG)
         msgbox(format("And...done!\pThank you, Candidate. This'll be very helpful. Come back later if you want to find out the results of my research!"), MSGBOX_NPC)
@@ -270,7 +270,7 @@ script IvyRiver_Ranger_Scientist_B{
     }
 
     //quest
-    msgbox(format("Did you know that Toedscool is a regional form of a Pokemon called Tentacool? I'm studying whether regional forms may be connected to mega evolution somehow. But I have no idea where to find a Toedscool!"), MSGBOX_NPC)
+    msgbox(format("Did you know that Toedscool is a regional form of a Pokémon called Tentacool? I'm studying whether regional forms may be connected to mega evolution somehow. But I have no idea where to find a Toedscool!"), MSGBOX_NPC)
     
     showmonpic(SPECIES_TOEDSCOOL, 10, 3)
     msgbox(format("Do you have a Toedscool that I can study?"), MSGBOX_YESNO)
@@ -367,7 +367,7 @@ script IvyRiver_Ranger_NPC_B{
     end
 }
 script IvyRiver_Ranger_NPC_C{
-    msgbox(format("The CrazyTrain 2.0 is incredible! And you can even retrain your Pokemon any time you like!"), MSGBOX_NPC)
+    msgbox(format("The CrazyTrain 2.0 is incredible! And you can even retrain your Pokémon any time you like!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_D{

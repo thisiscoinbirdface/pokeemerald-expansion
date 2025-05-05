@@ -715,7 +715,7 @@ SilversunCity_BlindOrphanage_PokedexGameStart_Text_3:
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_4:
 # 32 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "{PLAYER} gave the boy a copy of\n"
-	.string "POKEMON A TO Z.$"
+	.string "POKéMON A TO Z.$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_5:
 # 34 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"

@@ -1204,7 +1204,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_8:
 
 MtCeram_EventScript_BeforePeakBattle_Text_9:
 # 354 "data//maps/MtCeram/scripts.pory"
-	.string "My Pokemon...I have to go and heal\n"
+	.string "My Pokémon...I have to go and heal\n"
 	.string "them...I couldn't stop Team Somber...$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_10:
@@ -1363,7 +1363,7 @@ MtCeram_EventScript_NPCNurse_Text_1:
 # 526 "data//maps/MtCeram/scripts.pory"
 	.string "Don't worry, Chansey! We're safe here.\p"
 	.string "Meanwhile, if you have a Heal Pass,\n"
-	.string "I can heal your Pokemon!$"
+	.string "I can heal your Pokémon!$"
 
 MtCeram_EventScript_Gabrielle_Text_0:
 # 535 "data//maps/MtCeram/scripts.pory"

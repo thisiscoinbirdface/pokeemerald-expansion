@@ -63,7 +63,7 @@ script GastreeGym_EventScript_Victory{
     msgbox(format("I also want to give you this."))
     giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
-    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokemon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in Gastree City!"))
+    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokémon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in Gastree City!"))
     release
     delay(16)
     //Bye-bye

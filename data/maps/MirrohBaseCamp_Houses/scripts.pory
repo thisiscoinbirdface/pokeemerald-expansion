@@ -21,7 +21,7 @@ script MirrohBaseCamp_Houses_Historian{
         release
         delay(30)
         speakername("Martha")
-        msgbox(format("You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the damaged fossilised remains of those Pokémon. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify different Pokémon.\p...\pBut there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pNo known Pokemon we could think of could give us an answer. What kind of monstrous being could do something like that?"))
+        msgbox(format("You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the damaged fossilised remains of those Pokémon. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify different Pokémon.\p...\pBut there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pNo known Pokémon we could think of could give us an answer. What kind of monstrous being could do something like that?"))
         release
         delay(30)
         speakername("Martha")
@@ -65,7 +65,7 @@ script MirrohBaseCamp_Houses_MasterballGuy{
 script MirrohBaseCamp_Houses_MasterballFriend{
     lockall
     faceplayer
-    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Pokeballs of any of your Pokemon. Would you like me to?"), MSGBOX_YESNO)
+    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Pokeballs of any of your Pokémon. Would you like me to?"), MSGBOX_YESNO)
 
     //Change Pokeballs
     if (var(VAR_RESULT) == 1){

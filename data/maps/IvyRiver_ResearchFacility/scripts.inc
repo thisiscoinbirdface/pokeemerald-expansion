@@ -956,7 +956,7 @@ IvyRiver_Ranger_Scientist_A_Text_3:
 IvyRiver_Ranger_Scientist_A_Text_4:
 # 251 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Amazing! Such a beautiful, yet\n"
-	.string "dangerous, Pokemon.\p"
+	.string "dangerous, Pokémon.\p"
 	.string "Hang on while I take some samples.\p"
 	.string "...\p"
 	.string "...\p"
@@ -986,7 +986,7 @@ IvyRiver_Ranger_Scientist_B_Text_0:
 IvyRiver_Ranger_Scientist_B_Text_1:
 # 273 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Did you know that Toedscool is a\n"
-	.string "regional form of a Pokemon called\l"
+	.string "regional form of a Pokémon called\l"
 	.string "Tentacool? I'm studying whether\l"
 	.string "regional forms may be connected to\l"
 	.string "mega evolution somehow. But I have no\l"
@@ -1060,7 +1060,7 @@ IvyRiver_Ranger_NPC_B_Text_0:
 IvyRiver_Ranger_NPC_C_Text_0:
 # 370 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "The CrazyTrain 2.0 is incredible! And\n"
-	.string "you can even retrain your Pokemon any\l"
+	.string "you can even retrain your Pokémon any\l"
 	.string "time you like!$"
 
 IvyRiver_Ranger_NPC_D_Text_0:

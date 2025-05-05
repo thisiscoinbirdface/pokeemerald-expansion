@@ -993,7 +993,7 @@ MirrohInterior_Bergmite_A_Text_1:
 # 313 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "{PLAYER} searched the rock...\p"
 	.string "...but it wasn't a rock! It was a wild\n"
-	.string "Pokemon!$"
+	.string "Pokémon!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_0:
 # 373 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -1024,7 +1024,7 @@ MirrohInterior_1F_SomberGrunts_Trigger_Text_4:
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_5:
 # 398 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Darn, we lost! My Pokemon are useless!$"
+	.string "Darn, we lost! My Pokémon are useless!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_6:
 # 404 "data//maps/MirrohInterior_1F/scripts.pory"

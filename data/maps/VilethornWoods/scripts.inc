@@ -665,7 +665,7 @@ VilethornWoods_Trainer_A_Text_2:
 VilethornWoods_Trainer_B_Text_0:
 # 205 "data//maps/VilethornWoods/scripts.pory"
 	.string "I thought these woods would have BUG\n"
-	.string "type Pokemon, but I can't find any. I'm\l"
+	.string "type Pokémon, but I can't find any. I'm\l"
 	.string "so bummed! But beating you in battle\l"
 	.string "will make me feel better!$"
 

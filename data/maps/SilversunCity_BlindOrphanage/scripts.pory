@@ -29,7 +29,7 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
             checkitem(ITEM_ORPHANAGE_BOOK)
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_ORPHANAGE_BOOK)
-                msgbox(format("{PLAYER} gave the boy a copy of POKEMON A TO Z."), MSGBOX_SIGN)
+                msgbox(format("{PLAYER} gave the boy a copy of POKéMON A TO Z."), MSGBOX_SIGN)
                 release
                 msgbox(format("Yayy! Thank you!"))
                 release  

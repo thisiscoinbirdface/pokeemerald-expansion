@@ -386,7 +386,7 @@ script Route6_Gabrielle_HurryUp{
 }
 
 script Route6_Gabrielle_DoBattle{
-    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zorua!", TRAINER_ROUTE6_GRUNT2, "I need better Pokemon!", PARTNER_ROUTE6_GAB)
+    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zorua!", TRAINER_ROUTE6_GRUNT2, "I need better Pokémon!", PARTNER_ROUTE6_GAB)
  	if (var(VAR_RESULT) == 1){
         goto(Route6_Gabrielle_Victory)
     }
@@ -413,7 +413,7 @@ script Route6_Gabrielle_Victory{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
     speakername("Gabrielle")
-    msgbox(format("Thank you {PLAYER}. You saved me there.\pLet me heal your Pokemon."))
+    msgbox(format("Thank you {PLAYER}. You saved me there.\pLet me heal your Pokémon."))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
     

@@ -69,11 +69,11 @@ PellucaCityHouses_MayorQuestStart_8:
 # 55 "data//maps/PellucaCityHouses/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, PellucaCityHouses_MayorQuestStart_Text_6, PellucaCityHouses_MayorQuestStart_Text_7
 # 57 "data//maps/PellucaCityHouses/scripts.pory"
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, 0
 	goto_if_eq PellucaCityHouses_MayorQuestStart_11
 PellucaCityHouses_MayorQuestStart_10:
 # 62 "data//maps/PellucaCityHouses/scripts.pory"
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, 1
 	goto_if_eq PellucaCityHouses_MayorQuestStart_13
 	goto PellucaCityHouses_MayorQuestStart_7
 
@@ -252,7 +252,7 @@ PellucaCityHouses_NPC1_8:
 # 193 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_NPC1_Text_6
 # 194 "data//maps/PellucaCityHouses/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, PellucaCityHouses_MayorQuestStart_Text_6, PellucaCityHouses_MayorQuestStart_Text_7
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, PellucaCityHouses_MayorQuestStart_Text_7, PellucaCityHouses_MayorQuestStart_Text_6
 # 196 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCityHouses_NPC1_11
@@ -371,8 +371,7 @@ PellucaCityHouses_MayorQuestStart_Text_1:
 # 31 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Have you managed to do something about\n"
 	.string "the Qwilsquad yet? No?\p"
-	.string "Sigh...I suppose I was foolish to ask a\n"
-	.string "child.$"
+	.string "Sigh...I was foolish to ask a child.$"
 
 PellucaCityHouses_MayorQuestStart_Text_2:
 # 37 "data//maps/PellucaCityHouses/scripts.pory"
@@ -409,15 +408,16 @@ PellucaCityHouses_MayorQuestStart_Text_4:
 
 PellucaCityHouses_MayorQuestStart_Text_5:
 # 53 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "I just don't know what to do about the Qwilsquad...$"
+	.string "I just don't know what to do about the\n"
+	.string "Qwilsquad...$"
 
 PellucaCityHouses_MayorQuestStart_Text_6:
 # 55 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Can I help?$"
+	.string "That's too bad$"
 
 PellucaCityHouses_MayorQuestStart_Text_7:
 # 55 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "That's too bad$"
+	.string "Can I help?$"
 
 PellucaCityHouses_MayorQuestStart_Text_8:
 # 59 "data//maps/PellucaCityHouses/scripts.pory"
@@ -510,7 +510,7 @@ PellucaCityHouses_NPC1_Text_5:
 	.string "other day! It's a massive maintenance\l"
 	.string "cost just trying to send all the\l"
 	.string "Claunchers back into the water! Not to\l"
-	.string "mention the poor Pokemon stuck ashore.$"
+	.string "mention the poor Pokémon stuck ashore.$"
 
 PellucaCityHouses_NPC1_Text_6:
 # 193 "data//maps/PellucaCityHouses/scripts.pory"

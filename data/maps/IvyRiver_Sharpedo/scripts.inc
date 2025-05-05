@@ -310,7 +310,7 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_2:
 # 36 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "Who're you? How'd you get here? Please\n"
 	.string "leave immediately - a dangerous\l"
-	.string "Pokemon is nearby.\p"
+	.string "Pokémon is nearby.\p"
 	.string "...\p"
 	.string "You know about the Mega Sharpedo?\n"
 	.string "Okay. Be careful nonetheless.\p"

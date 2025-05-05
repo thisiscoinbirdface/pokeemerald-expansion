@@ -351,7 +351,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //Kohla exit
     speakername("Kohla")
-    msgbox(format("My Pokemon...I have to go and heal them...I couldn't stop Team Somber..."))
+    msgbox(format("My Pokémon...I have to go and heal them...I couldn't stop Team Somber..."))
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
@@ -523,7 +523,7 @@ script MtCeram_EventScript_NPCNurse{
     applymovement(24, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("Don't worry, Chansey! We're safe here.\pMeanwhile, if you have a Heal Pass,\nI can heal your Pokemon!"))
+    msgbox(format("Don't worry, Chansey! We're safe here.\pMeanwhile, if you have a Heal Pass,\nI can heal your Pokémon!"))
     call(Common_EventScript_NurseJoyOnRoute)
 
     releaseall

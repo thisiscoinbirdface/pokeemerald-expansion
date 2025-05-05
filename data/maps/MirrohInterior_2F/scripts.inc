@@ -191,7 +191,7 @@ MirrohInterior_2F_NPC_D::
 MirrohInterior_2F_CavePainting_WalkingWake_Text_0:
 # 31 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "It's an ancient cave painting...a never\n"
-	.string "before seen Pokemon! It looks somewhat\l"
+	.string "before seen Pokémon! It looks somewhat\l"
 	.string "reptilian, but also has feathers.\l"
 	.string "Terrifying!$"
 
@@ -266,7 +266,7 @@ MirrohInterior_2F_Trainer_B_Text_2:
 # 107 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "When I was on the upper floor, some\n"
 	.string "Team Somber grunts tried to take my\l"
-	.string "Pokemon. But I beat one of them and ran\l"
+	.string "Pokémon. But I beat one of them and ran\l"
 	.string "away from the other!$"
 
 MirrohInterior_2F_Trainer_C_Text_0:

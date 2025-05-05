@@ -1134,7 +1134,7 @@ Route6_Gabrielle_DoBattle_Text_0:
 
 Route6_Gabrielle_DoBattle_Text_1:
 # 389 "data//maps/Route6/scripts.pory"
-	.string "I need better Pokemon!$"
+	.string "I need better Pokémon!$"
 
 Route6_Gabrielle_Victory_Text_0:
 # 402 "data//maps/Route6/scripts.pory"
@@ -1146,7 +1146,7 @@ Route6_Gabrielle_Victory_Text_1:
 # 416 "data//maps/Route6/scripts.pory"
 	.string "Thank you {PLAYER}. You saved me\n"
 	.string "there.\p"
-	.string "Let me heal your Pokemon.$"
+	.string "Let me heal your Pokémon.$"
 
 Route6_Gabrielle_Victory_Text_2:
 # 421 "data//maps/Route6/scripts.pory"

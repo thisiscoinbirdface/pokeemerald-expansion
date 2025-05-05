@@ -28,7 +28,7 @@ script Route3_Underpass_Extended_SetLayout{
 
 
 script Route3_Ext_NPC1{
-    msgbox(format("They say there's a rare Pokemon that makes its home down here, but I can't find it! Did I come to the wrong place?"), MSGBOX_NPC)
+    msgbox(format("They say there's a rare Pokémon that makes its home down here, but I can't find it! Did I come to the wrong place?"), MSGBOX_NPC)
     end
 }
 

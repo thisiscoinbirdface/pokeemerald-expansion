@@ -258,7 +258,7 @@ script WhiteSign_Route6_ToPelluca{
 }
 
 script WhiteSign_Route6_RangerInstitute{
-    msgbox(format("The Pokemon Ranger Institute"), MSGBOX_SIGN)
+    msgbox(format("The Pokémon Ranger Institute\nRoute 6 Branch"), MSGBOX_SIGN)
     end
 }
 

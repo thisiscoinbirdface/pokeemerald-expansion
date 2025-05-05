@@ -211,7 +211,7 @@ MirrohBaseCamp_Houses_Historian_Text_4:
 	.string "But there was one fossil we found that\n"
 	.string "was damaged in ways...in ways so\l"
 	.string "horrific they...well...\p"
-	.string "No known Pokemon we could think of\n"
+	.string "No known Pokémon we could think of\n"
 	.string "could give us an answer. What kind of\l"
 	.string "monstrous being could do something like\l"
 	.string "that?$"
@@ -264,7 +264,7 @@ MirrohBaseCamp_Houses_MasterballFriend_Text_0:
 	.string "A master of the craft!\p"
 	.string "I'm not like him, but I've got a couple of\n"
 	.string "tricks up my sleeve too! I can change\l"
-	.string "the Pokeballs of any of your Pokemon.\l"
+	.string "the Pokeballs of any of your Pokémon.\l"
 	.string "Would you like me to?$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_1:

@@ -539,7 +539,7 @@ MirrohBaseCamp_Trainer_A_Text_1:
 
 MirrohBaseCamp_Trainer_A_Text_2:
 # 162 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Oh no! I'll have to heal my Pokemon. Hold\n"
+	.string "Oh no! I'll have to heal my Pokémon. Hold\n"
 	.string "my place in line - I'll be right back!$"
 
 MirrohBaseCamp_Trainer_B_Text_0:

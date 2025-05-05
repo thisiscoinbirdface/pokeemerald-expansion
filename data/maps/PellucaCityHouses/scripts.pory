@@ -186,7 +186,7 @@ script PellucaCityHouses_NPC1{
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
-        msgbox(format("It means Corsolas washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokemon stuck ashore."), MSGBOX_NPC)
+        msgbox(format("It means Corsolas washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokémon stuck ashore."), MSGBOX_NPC)
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    

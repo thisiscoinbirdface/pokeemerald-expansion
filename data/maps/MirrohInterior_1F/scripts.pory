@@ -310,7 +310,7 @@ script MirrohInterior_Bergmite_A{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_A)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -323,7 +323,7 @@ script MirrohInterior_Bergmite_B{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_B)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -336,7 +336,7 @@ script MirrohInterior_Bergmite_C{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokemon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_C)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -395,7 +395,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(24)
 
-    trainerbattle_no_intro(TRAINER_MIRROHINT_E, format("Darn, we lost! My Pokemon are useless!"))
+    trainerbattle_no_intro(TRAINER_MIRROHINT_E, format("Darn, we lost! My Pokémon are useless!"))
 
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)

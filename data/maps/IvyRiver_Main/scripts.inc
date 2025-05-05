@@ -1014,13 +1014,13 @@ IvyRiver_Main_GreenScarf_Text_5:
 
 IvyRiver_Main_GreenScarf_Text_6:
 # 178 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "I was raised by a Pokemon! It took care\n"
+	.string "I was raised by a Pokémon! It took care\n"
 	.string "of me, fed me, and raised me. I owe it my\l"
 	.string "life.$"
 
 IvyRiver_Main_GreenScarf_Text_7:
 # 187 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "What a story...where is that Pokemon?\n"
+	.string "What a story...where is that Pokémon?\n"
 	.string "We owe it too - for keeping our brother\l"
 	.string "safe all these years.\p"
 	.string "...\p"

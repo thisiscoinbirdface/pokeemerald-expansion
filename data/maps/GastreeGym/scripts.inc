@@ -257,7 +257,7 @@ GastreeGym_EventScript_Victory_Text_3:
 # 66 "data//maps/GastreeGym/scripts.pory"
 	.string "This is an incredibly rare stone that\n"
 	.string "reacts in the prescence of an ancient\l"
-	.string "statue. Any Pokemon you give it to can\l"
+	.string "statue. Any Pokémon you give it to can\l"
 	.string "maximise one of its innate stats!\p"
 	.string "Go to an ancient statue to try it.\n"
 	.string "There's one in Gastree City!$"
