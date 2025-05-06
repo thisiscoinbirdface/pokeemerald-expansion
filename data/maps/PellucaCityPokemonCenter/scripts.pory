@@ -145,6 +145,22 @@ script PellucaCity_PokemonCenter_EventScript_Nurse{
 	releaseall
 }
 
+
+
+
+
+
+script PellucaCity_PokemonCenter_NPC1{
+    msgbox(format("The signature mark of the Qwilsquad is their Qwilfish! Apparently the spikes represent their passion or something."))
+}
+script PellucaCity_PokemonCenter_NPC2{
+    msgbox(format("They're closing the gym in Mirroh Base Camp! I need to go and get the badge, but the Qwilsquad grunt outside won't let me."))
+}
+
+
+
+
+
 script PellucaCity_PokemonCenter_Nurse1{
 	msgbox(format("We've had enough of the Heal Pass system. We're unionising!"), MSGBOX_NPC)
 	end

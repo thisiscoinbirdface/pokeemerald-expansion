@@ -826,7 +826,6 @@ script PellucaCity_Greta_Trigger2{
     goto(PellucaCity_Greta_Main)
 }
 
-
 script PellucaCity_Greta_Main{
     
     speakername("Greta")
@@ -968,7 +967,7 @@ script PellucaCity_NPC1{
 }
 //bridge lady
 script PellucaCity_NPC2{
-    msgbox(format("A tourist! Have you come to eat at the Pelluca Restaurant?"), MSGBOX_NPC)
+    msgbox(format("A tourist! Have you come to eat at the Pelluca Restaurant?\p...that's the only thing our mayor cares about promoting."), MSGBOX_NPC)
     end
 }
 //bridge black belt
@@ -978,7 +977,7 @@ script PellucaCity_NPC3{
 }
 //bridge cyclist
 script PellucaCity_NPC4{
-    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions! Why does the mayor even let us cycle then?"), MSGBOX_NPC)
+    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions! Why doesn't the mayor do anything?"), MSGBOX_NPC)
     end
 }
 //bridge other dude
@@ -990,13 +989,13 @@ script PellucaCity_NPC5{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 7))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("The Gym Leader of Pelluca City had her gym constructed on a separate island."))
+    msgbox(format("Jania, the Gym Leader of Pelluca City had her gym constructed on a separate island."))
     release
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 7))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("Talk about entitlement!"), MSGBOX_NPC)    
+    msgbox(format("She never gets involved in city affairs!"), MSGBOX_NPC)    
     releaseall
     end
 }
@@ -1007,7 +1006,7 @@ script PellucaCity_NPC6{
 }
 //main island
 script PellucaCity_NPC7{
-    msgbox(format("There are no free tables at the restaurant! I should've made a reservation."), MSGBOX_NPC)
+    msgbox(format("With the way things are, I'm half in support of the Qwilsquad. I know they're bullies, but maybe they'll do something good for the city."), MSGBOX_NPC)
     end
 }
 //fishery 1
@@ -1073,7 +1072,7 @@ script PellucaCity_WingullMother{
 }
 
 script PellucaCity_WingullCritique{
-    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting. The mayor should really do something but he's too incompetent."), MSGBOX_NPC)
+    msgbox(format("That little girl is so bad! Throwing stones at Pokémon...that's poor parenting."), MSGBOX_NPC)
     end
 }
 

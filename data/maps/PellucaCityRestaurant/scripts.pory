@@ -40,7 +40,7 @@ script PellucaCityRestaurant_NPC4{
 script PellucaCityRestaurant_NPC5{
     lockall
     faceplayer
-    msgbox(format("Apparently the staff here all have Pokémon from the Applin family to help them!"))
+    msgbox(format("This is the one nice place in the entire city! I hope the Qwilsquad does a better job than the mayor...but they're just a bunch of mean people with strong Pokemon."))
     releaseall
     end
 }
