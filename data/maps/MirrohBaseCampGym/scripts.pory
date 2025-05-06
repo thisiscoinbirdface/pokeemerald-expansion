@@ -303,7 +303,7 @@ script MirrohBaseCampGym_Leader{
 
         special(SpawnCameraObject)
         applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 2))
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 5))
         waitmovement(0)
         special(RemoveCameraObject)
 

@@ -698,8 +698,6 @@ MirrohBaseCampGym_Leader_Movement_2:
 	walk_right
 # 306 "data//maps/MirrohBaseCampGym/scripts.pory"
 	walk_right
-# 306 "data//maps/MirrohBaseCampGym/scripts.pory"
-	walk_right
 	step_end
 
 MirrohBaseCampGym_EventScript_Main_Text_0:
