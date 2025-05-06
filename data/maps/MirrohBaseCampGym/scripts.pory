@@ -276,7 +276,7 @@ script MirrohBaseCampGym_Leader{
 
         hidefollower
 
-        fadescreenswapbuffers(FADE_TO_BLACK)
+        fadescreen(FADE_TO_BLACK)
         release
         setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
 
@@ -286,7 +286,8 @@ script MirrohBaseCampGym_Leader{
         special(RemoveCameraObject)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
         applymovement(1, moves(face_left))
-        fadescreenswapbuffers(FADE_FROM_BLACK)
+        waitmovement(0)
+        fadescreen(FADE_FROM_BLACK)
         speakername("Carona")
         msgbox(format("Now, trainer, feel the force of these iron fists!"))
         release

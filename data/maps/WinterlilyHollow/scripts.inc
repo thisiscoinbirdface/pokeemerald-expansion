@@ -61,11 +61,11 @@ WinterlilyHollow_OnFrame_1:
 # 36 "data//maps/WinterlilyHollow/scripts.pory"
 	waitmovement 0
 # 37 "data//maps/WinterlilyHollow/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 38 "data//maps/WinterlilyHollow/scripts.pory"
 	removeobject LOCALID_VINIEL
 # 39 "data//maps/WinterlilyHollow/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 41 "data//maps/WinterlilyHollow/scripts.pory"
 	setflag FLAG_WINTERLILY_VINIEL_CUTSCENE
 # 42 "data//maps/WinterlilyHollow/scripts.pory"

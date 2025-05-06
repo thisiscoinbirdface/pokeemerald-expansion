@@ -23,6 +23,18 @@ script Route6_Transition_Weather_StormTrigger{
         end
     }
 }
+script HoyaRiverNorth_SaveGameTrigger{
+    if (flag(FLAG_ROUTE6_KOHLA_BATTLE)){end}   
+
+    special(SaveGame)
+	waitstate
+    release
+
+    setvar(VAR_TEMP_C, 1)
+
+    end
+}
+
 
 script Route6_Transition_KohlaBattle_Trigger0{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
