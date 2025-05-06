@@ -719,7 +719,7 @@
 #define METATILE_Slateport_Door_BattleTent  0x393
 
 // gTileset_Snow
-#define METATILE_Snow_Door  0x021
+#define METATILE_Snow_SnowDoor  0x111
 
 // gTileset_Sootopolis
 #define METATILE_Sootopolis_Door             0x21E
