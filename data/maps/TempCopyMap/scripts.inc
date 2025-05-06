@@ -1944,7 +1944,7 @@ Common_EventScript_HyperTrainer_Text_9:
 
 Common_EventScript_HyperTrainer_Text_10:
 # 779 "data//maps/TempCopyMap/scripts.pory"
-	.string "Imbued with the shrine's memories,\n"
+	.string "Imbued with the statue's memories,\n"
 	.string "{STR_VAR_1} became stronger!$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_0:

@@ -217,7 +217,7 @@ script CeramBaseCampGym_LeaderBattle {
         giveitem(ITEM_RARE_SHARD)
 
         speakername("Ariana")
-        msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a shrine close to Route 4, so why don't you use these there?"))
+        msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a statue close to Route 4, so why don't you use these there?"))
         release
 
         delay(16)

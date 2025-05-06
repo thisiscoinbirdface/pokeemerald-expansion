@@ -4,6 +4,10 @@ raw `
     .set LOCALID_SKITTY1, 16
     .set LOCALID_SKITTY2, 17
     .set LOCALID_SKITTY3, 18
+    .set LOCALID_BERG, 10
+    .set LOCALID_TRAINER, 5
+    .set LOCALID_OLD_WOMAN, 21
+    .set LOCALID_SHRINE, 20
 `
 
 mapscripts GastreeCity_MapScripts{
@@ -126,19 +130,104 @@ script GastreeCity_NPC7{
     end
 }
 
+
+//Shard quest
+script GastreeCity_Shard_NPC{
+    if (flag(FLAG_SHRINE_QUEST)){
+        //quest has started
+        msgbox(format("Take your time child. I'll be waiting here."), MSGBOX_NPC)
+        end
+    } else {
+        msgbox(format("Come to admire this statue, have you?\pThese statues are a vital legacy of Cormoria's past.\pYou know, back then they didn't have the tools to scult such intricate works, but yet they managed to make these.\pIncredible!"), MSGBOX_NPC)
+        end
+    }
+}
+
+script GastreeCity_Shard_Trigger{
+    if (flag(FLAG_SHRINE_QUEST)) {end}
+
+    checkitem(ITEM_RARE_SHARD)
+    if (var(VAR_RESULT) == 0) {end}
+
+    lockall
+    applymovement(LOCALID_OLD_WOMAN, moves(face_down emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Child! Is that a Rare Shard you have?\pMy my...come here, quickly!"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    msgbox(format("That Rare Shard you have has a mysterious connection with these statues.\pDid you know that Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them. But a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values! Why don't you try it now?"))
+    release
+    delay(16)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    delay(16)
+
+    applymovement(LOCALID_TRAINER, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("C'mon Bergmite! Use Rock Slide!"))
+    release
+    delay(16)
+    applymovement(LOCALID_BERG, moves(jump_in_place_down * 3))
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    waitmovement(0)
+    delay(16)
+    msgbox(format("keee!!!"))
+    release
+    delay(16)
+
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 20)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    removeobject(LOCALID_SHRINE)
+    special(ShakeCamera)
+    waitstate
+    release    
+
+    applymovement(LOCALID_OLD_WOMAN, moves(jump_in_place_left emote_exclamation_mark))
+    applymovement(LOCALID_BERG, moves(face_right))
+    applymovement(LOCALID_TRAINER, moves(face_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("What have you done! You stupid, muscle-brained trainer!\pYou and your Bergmite have destroyed the ancient statue!"))
+    release
+    delay(16)
+    
+    msgbox(format("Oh no! I'm so sorry! I didn't mean to - I promise!"))
+    release
+    delay(16)
+    applymovement(LOCALID_BERG, moves(face_right))
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    waitmovement(0)
+    delay(16)
+    msgbox(format("keee...?"))
+    release
+    delay(16)
+
+    releaseall
+    end
+}
+
     //Pokémon flavour
 script GastreeCity_NPC8{
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my Kecleon some new moves so that we can go and explore Route 4 together! C'mon Kecleon! C'mon!!"), MSGBOX_NPC)
-    applymovement(5, moves(emote_exclamation_mark))
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and explore Route 4 together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)
+    applymovement(10, moves(emote_exclamation_mark jump_in_place_down))
     waitmovement(0)
-    playmoncry(SPECIES_KECLEON, CRY_MODE_NORMAL)
-    msgbox(format("Keeee!!!\pKecleon is as fired up as its trainer is!"), MSGBOX_NPC)
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    delay(16)
+    msgbox(format("Keeee!!!\pBergmite is as fired up as its trainer is!"), MSGBOX_NPC)
     end
 }
 
 script GastreeCity_NPC_Keckleon{ 
-    playmoncry(SPECIES_KECLEON, CRY_MODE_NORMAL)
-    msgbox(format("Keeee!!\pKecleon is trying hard to match its trainers energy. Go Kecleon!"), MSGBOX_NPC)
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    msgbox(format("Keeee!!\pBergmite is trying hard to match its trainers energy. Go Bergmite!"), MSGBOX_NPC)
     end
 }
 

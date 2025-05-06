@@ -2465,17 +2465,18 @@ static void Task_HandleInput(u8 taskId)
             }
             else
             {
-                if (BW_SUMMARY_IV_EV_DISPLAY != BW_IV_EV_HIDDEN)
-                {
-                    // Cycle through IVs/EVs/stats on pressing A
-                    ChangeSummaryState(data, taskId);
-                    DrawNextSkillsButtonPrompt(tSkillsState);
-                    PlaySE(SE_SELECT);
-                    if (BW_SUMMARY_IV_EV_DISPLAY == BW_IV_EV_GRADED)
-                        ShowGradeIcons(tSkillsState);
-                    else
-                        BufferAndPrintStats_HandleState(tSkillsState);
-                }
+                //Remove EVs
+                // if (BW_SUMMARY_IV_EV_DISPLAY != BW_IV_EV_HIDDEN)
+                // {
+                //     // Cycle through IVs/EVs/stats on pressing A
+                //     ChangeSummaryState(data, taskId);
+                //     DrawNextSkillsButtonPrompt(tSkillsState);
+                //     PlaySE(SE_SELECT);
+                //     if (BW_SUMMARY_IV_EV_DISPLAY == BW_IV_EV_GRADED)
+                //         ShowGradeIcons(tSkillsState);
+                //     else
+                //         BufferAndPrintStats_HandleState(tSkillsState);
+                // }
             }
         }
         else if (JOY_NEW(B_BUTTON))
@@ -3683,12 +3684,13 @@ static void PrintPageNamesAndStats(void)
             PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVS, FALSE, iconXPos);
             PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVS, sText_ViewIVs_Graded, stringXPos, 1, 0, 1);
 
-            stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs_Graded, skillsLabelWidth);
-            iconXPos = stringXPos - 16;
-            if (iconXPos < 0)
-                iconXPos = 0;
-            PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 1);
+            //Remove EVs
+            // stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, sText_ViewEVs_Graded, skillsLabelWidth);
+            // iconXPos = stringXPos - 16;
+            // if (iconXPos < 0)
+            //     iconXPos = 0;
+            // PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_EVS, FALSE, iconXPos);
+            // PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_EVS, sText_ViewEVs_Graded, stringXPos, 1, 0, 1);
         }
         else // precise display
         {

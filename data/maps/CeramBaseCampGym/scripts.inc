@@ -573,7 +573,7 @@ CeramBaseCampGym_LeaderBattle_Text_6:
 # 220 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Since this is your second badge, you\n"
 	.string "must know what these shards do by now.\l"
-	.string "There's a shrine close to Route 4, so\l"
+	.string "There's a statue close to Route 4, so\l"
 	.string "why don't you use these there?$"
 
 CeramBaseCampGym_LeaderBattle_Text_7:
