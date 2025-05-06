@@ -1381,3 +1381,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MirrohInterior_B1F/scripts.inc"
 
 	.include "data/maps/PellucaCityFlooded/scripts.inc"
+
+	.include "data/maps/RivetshoreCity_PokemonCenter/scripts.inc"

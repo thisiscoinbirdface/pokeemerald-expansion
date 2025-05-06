@@ -1,0 +1,21 @@
+mapscripts RivetshoreCity_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: RivetshoreCity_PokemonCenter_OnTransition
+}
+
+script RivetshoreCity_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_SILVERSUN_CITY)
+}
+
+script RivetshoreCity_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+
+script RivetshoreCity_PokemonCenter_NPC1{
+	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a Mega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."), MSGBOX_NPC)
+	end
+}
+
