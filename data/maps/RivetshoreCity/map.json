@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE8",
       "offset": 32,
       "direction": "up"
+    },
+    {
+      "map": "MAP_RIVETSHORE_QUARRY",
+      "offset": -19,
+      "direction": "left"
     }
   ],
   "object_events": [

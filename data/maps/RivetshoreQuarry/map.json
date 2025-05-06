@@ -1,0 +1,34 @@
+{
+  "id": "MAP_RIVETSHORE_QUARRY",
+  "name": "RivetshoreQuarry",
+  "layout": "LAYOUT_RIVETSHORE_QUARRY",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_RIVETSHORE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_RIVETSHORE_CITY",
+      "offset": 19,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

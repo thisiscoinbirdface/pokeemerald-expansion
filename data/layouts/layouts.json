@@ -5540,6 +5540,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/RivetshoreCity_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_QUARRY",
+      "name": "RivetshoreQuarry_Layout",
+      "width": 48,
+      "height": 60,
+      "primary_tileset": "gTileset_Rivetshore",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/RivetshoreQuarry/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreQuarry/map.bin"
     }
   ]
 }
