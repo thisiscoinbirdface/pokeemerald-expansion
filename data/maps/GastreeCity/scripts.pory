@@ -156,9 +156,15 @@ script GastreeCity_Shard_Trigger{
     msgbox(format("Child! Is that a Rare Shard you have?\pMy my...come here, quickly!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
-    msgbox(format("That Rare Shard you have has a mysterious connection with these statues.\pDid you know that Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them. But a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values! Why don't you try it now?"))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Your Rare Shard has a mysterious connection with these statues.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them.\pBut normally is the key word!\pA Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
     release
     delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_OLD_WOMAN, moves(face_left emote_question_mark))
+    waitmovement(0)
+    delay(24)
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
@@ -190,6 +196,7 @@ script GastreeCity_Shard_Trigger{
     waitstate
     release    
 
+    delay(24)
     applymovement(LOCALID_OLD_WOMAN, moves(jump_in_place_left emote_exclamation_mark))
     applymovement(LOCALID_BERG, moves(face_right))
     applymovement(LOCALID_TRAINER, moves(face_right))
@@ -199,16 +206,34 @@ script GastreeCity_Shard_Trigger{
     release
     delay(16)
     
-    msgbox(format("Oh no! I'm so sorry! I didn't mean to - I promise!"))
+    msgbox(format("Oh no! I'm so sorry! I really didn't mean to - I promise!"))
     release
     delay(16)
-    applymovement(LOCALID_BERG, moves(face_right))
+    applymovement(LOCALID_TRAINER, moves(face_up))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Bergmite! We gotta say sorry!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_BERG, moves(jump_in_place_right))
     playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
     waitmovement(0)
     delay(16)
-    msgbox(format("keee...?"))
+    msgbox(format("keee..."))
     release
     delay(16)
+    applymovement(LOCALID_OLD_WOMAN, moves(face_left))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("...\pSigh. Such a loss to culture and history...for such a mundane reason!"))
+    release
+    delay(16)
+    applymovement(LOCALID_OLD_WOMAN, moves(face_down))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("I can't let this happen any more. We must preser"))
+    release
 
     releaseall
     end
