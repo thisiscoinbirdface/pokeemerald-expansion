@@ -1380,12 +1380,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Swoobat
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-
-Bronzor
-Level: 24
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -1452,7 +1447,6 @@ AI: Check Bad Move
 Elgyem
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 
 Linoone-Galar
 Level: 26
@@ -1546,10 +1540,6 @@ Palpitoad
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Yanma
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 === TRAINER_ROUTE6_B ===
 Name: Punchia
 Class: Battle Girl
@@ -1564,30 +1554,17 @@ Level: 27
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_ROUTE6_C ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: Sanya
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Basic Trainer
 
-Croconaw
-Level: 26
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
 Scyther
 Level: 26
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Herdier
-Level: 27
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Bayleef
-Level: 27
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
 
 === TRAINER_ROUTE6_D ===
 Name: Ahren
@@ -1649,7 +1626,7 @@ AI: Check Bad Move
 Mugshot: Green
 
 Manectric
-Level: 30
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Houndoom
@@ -1716,16 +1693,8 @@ Raticate-Alola
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Corvisquire
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 Rufflet
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Teddiursa
-Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
