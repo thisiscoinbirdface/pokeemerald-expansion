@@ -905,7 +905,7 @@ script Common_EventScript_Dugtrio_ToGalecrest{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         playmoncry(SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL)        
         delay(30)
-        warp(MAP_GALECREST_CITY, 31, 64)
+        warp(MAP_GALECREST_CITY, 31, 65)
     }
 }
 

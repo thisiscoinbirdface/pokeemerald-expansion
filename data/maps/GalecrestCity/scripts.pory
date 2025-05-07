@@ -308,7 +308,7 @@ script GalecrestCity_NPC_4{
 
 script GalecrestCity_Totodile{
     playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
-    msgbox(format("Totodile is having fun with the siblings!"))
+    msgbox(format("Totodile is having fun with the siblings!"), MSGBOX_NPC)
     end
 }
 

@@ -199,7 +199,7 @@ script GalecrestCity_DetectiveAcademy_Guard{
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
         msgbox(format("You got a one-day student ID? Maybe I should get one too..."), MSGBOX_NPC)
     } else {
-        msgbox(format("Garden access is for students only. That ARMAROUGE won't let you in without a STUDENT ID!"), MSGBOX_NPC)
+        msgbox(format("Garden access is for students only. That Armarouge won't let you in without a Student ID!"), MSGBOX_NPC)
     }
     end
 }
@@ -211,6 +211,10 @@ script GalecrestCity_DetectiveAcademy_Armarouge_Garden{
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
         msgbox(format("Armarouge leers down at you...and nods approvingly!"))
         release
+        
+        if (flag(FLAG_GALECREST_ARMAROUGE_1_MOVED)) {end}
+        setflag(FLAG_GALECREST_ARMAROUGE_1_MOVED)
+
         applymovement(22, moves(walk_left face_down))
         waitmovement(0)
     } else {
@@ -229,6 +233,10 @@ script GalecrestCity_DetectiveAcademy_Armarouge_Classroom{
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
         msgbox(format("Armarouge leers down at you...and nods approvingly!"))
         release
+
+        if (flag(FLAG_GALECREST_ARMAROUGE_2_MOVED)) {end}
+        setflag(FLAG_GALECREST_ARMAROUGE_2_MOVED)
+
         applymovement(23, moves(walk_right face_down))
         waitmovement(0)
     } else {

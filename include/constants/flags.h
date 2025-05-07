@@ -135,8 +135,8 @@
 #define FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED  0x4AB // Unused Flag
 #define FLAG_PELLUCA_PC_CHARS  0x4AC // Unused Flag
 #define FLAG_SHRINE_QUEST  0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE  0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF  0x4AF // Unused Flag
+#define FLAG_GALECREST_ARMAROUGE_1_MOVED  0x4AE // stops the detective academy armarouge from moving again and again
+#define FLAG_GALECREST_ARMAROUGE_2_MOVED  0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0  0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1  0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2  0x4B2 // Unused Flag

@@ -342,3 +342,15 @@ script WhiteSign_MirrohPeak_ToWinterlilyHollow{
     msgbox(format("{UP_ARROW} Winterlily Hollow.{LEFT_ARROW} Mt. Mirroh Peak."), MSGBOX_SIGN)
     end
 }
+
+
+
+
+
+
+
+//Ivy river
+script WhiteSign_IvyRiver_RangerInstitute{
+    msgbox(format("The Pokémon Ranger Institute\Ivy River Branch"), MSGBOX_SIGN)
+    end
+}
