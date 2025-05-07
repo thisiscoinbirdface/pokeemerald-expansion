@@ -875,10 +875,6 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Pancham
-Level: 19
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
 Passimian
 Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
@@ -947,10 +943,6 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
-
-Buneary
-Level: 21
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Roselia
 Level: 21
@@ -1166,10 +1158,6 @@ AI: Check Bad Move
 
 Litwick
 Level: 22
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Greavard
-Level: 23
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_SEWERS_C ===
@@ -1409,10 +1397,6 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
-
-Baltoy
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Bronzor
 Level: 24
@@ -1913,10 +1897,6 @@ Vulpix-Alola
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Shuppet
-Level: 34
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 === TRAINER_MIRROHEXT_B ===
 Name: BROOKE
 Class: Ninja Boy
@@ -1934,13 +1914,8 @@ Snom
 Level: 31
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Orbeetle
-Level: 33
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-
-
 === TRAINER_MIRROHEXT_C ===
-Name: GEOFF
+Name: Bianca
 Class: Skiier
 Pic: Skiier F
 Gender: Female
@@ -2064,7 +2039,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_B ===
-Name: WYATT
+Name: Wyatt
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2090,12 +2065,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Lairon
-Level: 33
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
 Bergmite
-Level: 35
+Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_D ===
@@ -2120,7 +2091,7 @@ Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
-Name: JAY & ROSE
+Name: Duo
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Male
@@ -2132,16 +2103,8 @@ Elgyem
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Drowzee
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
 Mime Jr.
 Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
-Hypno
-Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_F ===
@@ -2158,7 +2121,7 @@ Level: 42
 
 
 === TRAINER_MIRROHINT2_A ===
-Name: SYLVIA
+Name: Sylvia
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -2175,7 +2138,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT2_B ===
-Name: STEVE
+Name: Shin
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2184,7 +2147,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Piloswine
-Level: 33
+Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Carkol
@@ -2210,7 +2173,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 30 Spe
 
 
 === TRAINER_MIRROHINT2_D ===
-Name: Sylvia
+Name: Araya
 Class: Skiier
 Pic: Skiier F
 Gender: Female
@@ -2294,7 +2257,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 
 === TRAINER_MIRROHPEAK_A ===
-Name: CINDY
+Name: Cindy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -2308,7 +2271,7 @@ Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHPEAK_B ===
-Name: CINDY
+Name: Jan
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Female
@@ -2322,12 +2285,11 @@ Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_C ===
-Name: CINDY
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt M
-Gender: Female
-Music: Female
-Items: Full Restore
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
@@ -2336,12 +2298,11 @@ Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_D ===
-Name: MELISSA
+Name: Grunt
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -2408,7 +2369,7 @@ Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_B ===
-Name: WINDHORST
+Name: Windhorst
 Class: Electrician
 Pic: Electrician
 Gender: Male
@@ -2416,10 +2377,6 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 Starting Status: Electric Terrain
-
-Charjabug
-Level: 33
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Kilowattrel
 Level: 33
@@ -2435,7 +2392,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_C ===
-Name: BRIDGET
+Name: Bridget
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -2453,7 +2410,7 @@ Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_D ===
-Name: MARCUS
+Name: Marcus
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -2466,17 +2423,13 @@ Magneton
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Porygon2
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
 Furret
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_E ===
-Name: BLEACH
+Name: Bleach
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -2494,7 +2447,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_F ===
-Name: TAMARON
+Name: Tamaron
 Class: Electrician
 Pic: Electrician
 Gender: Male
@@ -2507,12 +2460,8 @@ Kilowattrel
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Electabuzz
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 === TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
-Name: VINIEL
+Name: Viniel
 Class: Leader
 Pic: Leader Viniel
 Gender: Male
@@ -2533,7 +2482,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Magneton
 Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 
 Ampharos @ Ampharosite
 Level: 41
@@ -2647,10 +2595,6 @@ Music: Rich
 Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
-
-Dewpider
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Skrelp
 Level: 40
