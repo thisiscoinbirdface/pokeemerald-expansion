@@ -143,7 +143,6 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setvar VAR_PELLUCA_MAYOR_QUEST, 3
 	release
 	end
 
