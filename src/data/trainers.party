@@ -1534,7 +1534,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_ROUTE6_A ===
-Name: OWEN
+Name: Owen
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
@@ -1558,10 +1558,6 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
-
-Pancham
-Level: 27
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Primeape
 Level: 27
@@ -1594,7 +1590,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 
 === TRAINER_ROUTE6_D ===
-Name: AHREN
+Name: Ahren
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -1603,10 +1599,6 @@ Double Battle: No
 AI: Check Bad Move
 
 Toedscool
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Finneon
 Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -1647,7 +1639,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_ROUTE6_G ===
-Name: ADINYA
+Name: Adinya
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
