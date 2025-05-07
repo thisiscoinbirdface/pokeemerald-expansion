@@ -353,7 +353,7 @@
     {
       "type": "hidden_item",
       "x": 26,
-      "y": 47,
+      "y": 46,
       "elevation": 0,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_MIRROHPEAK_B"

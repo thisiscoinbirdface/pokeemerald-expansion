@@ -358,6 +358,12 @@ WhiteSign_MirrohPeak_ToWinterlilyHollow::
 	end
 
 
+WhiteSign_IvyRiver_RangerInstitute::
+# 354 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_IvyRiver_RangerInstitute_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_CarabrueTown_Main_Text_0:
 # 6 "data//scripts/customscripts_signs.pory"
 	.string "Carabrue Town\n"
@@ -677,3 +683,8 @@ WhiteSign_MirrohPeak_ToMirrohInt_Text_0:
 WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0:
 # 342 "data//scripts/customscripts_signs.pory"
 	.string "{UP_ARROW} Winterlily Hollow.{LEFT_ARROW} Mt. Mirroh Peak.$"
+
+WhiteSign_IvyRiver_RangerInstitute_Text_0:
+# 354 "data//scripts/customscripts_signs.pory"
+	.string "The Pokémon Ranger Institute\n"
+	.string "Ivy River Branch$"

@@ -386,7 +386,7 @@ GalecrestCity_Totodile::
 # 310 "data//maps/GalecrestCity/scripts.pory"
 	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
 # 311 "data//maps/GalecrestCity/scripts.pory"
-	msgbox GalecrestCity_Totodile_Text_0
+	msgbox GalecrestCity_Totodile_Text_0, MSGBOX_NPC
 	end
 
 

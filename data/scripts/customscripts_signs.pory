@@ -351,6 +351,6 @@ script WhiteSign_MirrohPeak_ToWinterlilyHollow{
 
 //Ivy river
 script WhiteSign_IvyRiver_RangerInstitute{
-    msgbox(format("The Pokémon Ranger Institute\Ivy River Branch"), MSGBOX_SIGN)
+    msgbox(format("The Pokémon Ranger Institute\nIvy River Branch"), MSGBOX_SIGN)
     end
 }
