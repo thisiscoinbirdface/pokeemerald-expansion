@@ -1,5 +1,7 @@
 raw`
     .set LOCALID_VINIEL, 10
+    .set LOCALID_MIME1, 9
+    .set LOCALID_MIME2, 5
 `
 
 mapscripts WinterlilyHollow_MapScripts{
@@ -121,12 +123,12 @@ script WinterlilyHollow_MimeJr_1{
             msgbox(format("Mime Jr. takes the Soothe Bell and shakes it...it chimes softly.\pMime Jr. smiles at you."))
             release
             setvar(VAR_HOLLOW_MIMEJR, 1)
-            applymovement(10, moves(fly_up))
+            applymovement(LOCALID_MIME1, moves(fly_up))
             waitmovement(0)
             msgbox(format("Wait, where'd it go?"))
 
             //setflags
-            removeobject(10)
+            removeobject(LOCALID_MIME1)
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_1)
             clearflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
 
@@ -159,11 +161,11 @@ script WinterlilyHollow_MimeJr_2{   //play with it
             msgbox(format("Mime Jr. takes the Pokeshi Doll and plays with it...\pMime Jr. smiles at you."))
             release
             setvar(VAR_HOLLOW_MIMEJR, 1)
-            applymovement(6, moves(fly_up))
+            applymovement(LOCALID_MIME2, moves(fly_up))
             waitmovement(0)
             msgbox(format("Wait, where'd it go now?"))
             //setflags
-            removeobject(6)
+            removeobject(LOCALID_MIME2)
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_2)
             clearflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
 

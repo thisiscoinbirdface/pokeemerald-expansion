@@ -666,11 +666,11 @@ RangerInstitute_Mon_Palpitoad::
 	end
 
 
-RangerInstitute_Mon_Frogadier::
+RangerInstitute_Mon_Surskit::
 # 492 "data//maps/RangerInstitute/scripts.pory"
-	playmoncry SPECIES_FROGADIER, CRY_MODE_NORMAL
+	playmoncry SPECIES_MASQUERAIN, CRY_MODE_NORMAL
 # 493 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Mon_Frogadier_Text_0, MSGBOX_NPC
+	msgbox RangerInstitute_Mon_Surskit_Text_0, MSGBOX_NPC
 	end
 
 
@@ -1359,9 +1359,9 @@ RangerInstitute_Mon_Palpitoad_Text_0:
 	.string "Palpitoad grunts and waddles around. It\n"
 	.string "seems upset...$"
 
-RangerInstitute_Mon_Frogadier_Text_0:
+RangerInstitute_Mon_Surskit_Text_0:
 # 493 "data//maps/RangerInstitute/scripts.pory"
-	.string "$"
+	.string "Masquerain wants to be in the water!$"
 
 RangerInstitute_Mon_Scyther_Text_0:
 # 498 "data//maps/RangerInstitute/scripts.pory"

@@ -488,9 +488,9 @@ script RangerInstitute_Mon_Palpitoad{
     msgbox(format("Palpitoad grunts and waddles around. It seems upset..."), MSGBOX_NPC)
     end
 }
-script RangerInstitute_Mon_Frogadier{
-    playmoncry(SPECIES_FROGADIER, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+script RangerInstitute_Mon_Surskit{
+    playmoncry(SPECIES_MASQUERAIN, CRY_MODE_NORMAL)
+    msgbox(format("Masquerain wants to be in the water!"), MSGBOX_NPC)
     end
 }
 script RangerInstitute_Mon_Scyther{
