@@ -220,6 +220,7 @@
 #define TRAINER_PELLUCA_QWILSQUAD_B                     148
 #define TRAINER_PELLUCA_QWILSQUAD_BOSS                  149
 #define TRAINER_PELLUCA_DETECTIVE                       150
+
 #define TRAINER_LUIS                        151
 #define TRAINER_DOMINIK                     152
 #define TRAINER_DOUGLAS                     153

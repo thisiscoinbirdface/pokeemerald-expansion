@@ -1941,11 +1941,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Stantler
-Level: 33
+Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Rapidash-Galar
-Level: 34
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1981,10 +1981,6 @@ AI: Check Bad Move
 
 Banette
 Level: 32
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-
-Cetoddle
-Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_G ===

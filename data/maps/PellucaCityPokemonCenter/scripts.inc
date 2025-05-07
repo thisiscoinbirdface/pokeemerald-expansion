@@ -491,5 +491,5 @@ PellucaCity_PokemonCenter_Nurse4_Text_0:
 
 PellucaCity_PokemonCenter_Chansey_Text_0:
 # 182 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	.string "CHANSEY: seeyyy!!\p"
+	.string "Seeyyy!!\p"
 	.string "Chansey wants to unionise too!$"

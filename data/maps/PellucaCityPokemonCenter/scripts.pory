@@ -179,7 +179,7 @@ script PellucaCity_PokemonCenter_Nurse4{
 }
 script PellucaCity_PokemonCenter_Chansey{
 	playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-	msgbox(format("CHANSEY: seeyyy!!\pChansey wants to unionise too!"), MSGBOX_NPC)
+	msgbox(format("Seeyyy!!\pChansey wants to unionise too!"), MSGBOX_NPC)
 	end
 }
 
