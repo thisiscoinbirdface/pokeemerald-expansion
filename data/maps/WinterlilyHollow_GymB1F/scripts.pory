@@ -115,18 +115,22 @@ script WinterlilyHollowGym_LeaderBattle {
 
     if (flag(FLAG_BADGE06_GET)){
         faceplayer
+        speakername("Viniel")
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        msgbox(format("VINIEL: Go Ampharos! More! More!\pVINIEL: Wait - it looks like we've got a guest."))
+        speakername("Viniel")
+        msgbox(format("Go Ampharos! More! More!\pWait - it looks like we've got a guest."))
         faceplayer
-        msgbox(format("VINIEL: Ah, it's you! The enemy of my enemy.\pVINIEL: Hmm...\pVINIEL: You still look a little drained of energy. Do you really want to battle?"), MSGBOX_YESNO)
+        speakername("Viniel")
+        msgbox(format("Ah, it's you! The enemy of my enemy.\pHmm...\pYou still look a little drained of energy. Do you really want to battle?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
-            msgbox(format("VINIEL: Come back when you've got the spark back in you!"), MSGBOX_NPC)
+            speakername("Viniel")
+            msgbox(format("Come back when you've got the spark back in you!"), MSGBOX_NPC)
             end
         }
-        
-        msgbox(format("VINIEL: Excellent! Your internal battery is full, then.\pVINIEL: Look around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't. That's what makes us, us. Hahaha!\pVINIEL: Back with those Team Somber grunts, you showed me that very energy.\pVINIEL: And now, I want you to bring it out again!"))
+        speakername("Viniel")
+        msgbox(format("Excellent! Your internal battery is full, then.\pLook around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't. That's what makes us, us. Hahaha!\pBack with those Team Somber grunts, you showed me that very energy.\pAnd now, I want you to bring it out again!"))
 
         trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format("Sizzling! Crackling! Hahaha!"))
         
@@ -137,9 +141,14 @@ script WinterlilyHollowGym_LeaderBattle {
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         setflag(FLAG_BADGE06_GET)
+        setflag(FLAG_SYS_SURF_ENABLED)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
+        speakername("Viniel")
         msgbox(format("The Spark Badge lets you use HM Surf outside of battle. You don't need to teach your Pokémon the move - any compatible Pokémon can use it out of battle!"))
+        release
+        delay(8)
+        speakername("Viniel")
         msgbox(format("And I'd also like you to have this."))
         release
         //Give TM also
@@ -147,6 +156,7 @@ script WinterlilyHollowGym_LeaderBattle {
         release
 
         //Bye-bye
+        speakername("Viniel")
         msgbox(format("Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there...\p...but that's for another day. This is the end of the demo. Thank you for playing! Please drop any feedback and bug reports on Discord, and stay tuned for further updates!")) //Keep your spirits up, {PLAYER}!"))
         releaseall
         
