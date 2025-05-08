@@ -150,6 +150,27 @@
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 29,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

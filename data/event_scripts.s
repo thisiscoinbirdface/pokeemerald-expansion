@@ -1385,3 +1385,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RivetshoreCity_PokemonCenter/scripts.inc"
 
 	.include "data/maps/RivetshoreQuarry/scripts.inc"
+
+	.include "data/maps/RivetshoreCity_Houses/scripts.inc"
+
+	.include "data/maps/RivetshoreCity_Construction/scripts.inc"

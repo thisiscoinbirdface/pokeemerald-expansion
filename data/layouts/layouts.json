@@ -5550,6 +5550,26 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/RivetshoreQuarry/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreQuarry/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_CITY_HOUSES",
+      "name": "RivetshoreCity_Houses_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RivetshoreCity_Houses/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreCity_Houses/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_CITY_CONSTRUCTION",
+      "name": "RivetshoreCity_Construction_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RivetshoreCity_Construction/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreCity_Construction/map.bin"
     }
   ]
 }

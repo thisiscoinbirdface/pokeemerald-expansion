@@ -1,0 +1,69 @@
+{
+  "id": "MAP_RIVETSHORE_CITY_HOUSES",
+  "name": "RivetshoreCity_Houses",
+  "layout": "LAYOUT_RIVETSHORE_CITY_HOUSES",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_RIVETSHORE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 3,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 5,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

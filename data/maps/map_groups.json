@@ -159,7 +159,9 @@
     "IvyRiver_ZarudeForest",
     "IvyRiver_Sharpedo",
     "RivetshoreCity_PokemonCenter",
-    "RivetshoreQuarry"
+    "RivetshoreQuarry",
+    "RivetshoreCity_Houses",
+    "RivetshoreCity_Construction"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
