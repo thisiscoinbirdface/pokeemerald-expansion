@@ -1759,11 +1759,13 @@ PellucaCity_PostGymEvent_Trigger_5:
 	waitmovement 0
 # 1220 "data//maps/PellucaCity/scripts.pory"
 	delay 16
-# 1223 "data//maps/PellucaCity/scripts.pory"
+# 1222 "data//maps/PellucaCity/scripts.pory"
+	special RemoveCameraObject
+# 1225 "data//maps/PellucaCity/scripts.pory"
 	removeobject LOCALID_FL_JANIA
-# 1224 "data//maps/PellucaCity/scripts.pory"
-	removeobject LOCALID_GAB
 # 1226 "data//maps/PellucaCity/scripts.pory"
+	removeobject LOCALID_GAB
+# 1228 "data//maps/PellucaCity/scripts.pory"
 	setflag FLAG_PELLUCA_POSTGYM
 	end
 

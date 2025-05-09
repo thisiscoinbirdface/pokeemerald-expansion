@@ -138,8 +138,8 @@
 #define FLAG_GALECREST_ARMAROUGE_1_MOVED  0x4AE // stops the detective academy armarouge from moving again and again
 #define FLAG_GALECREST_ARMAROUGE_2_MOVED  0x4AF // Unused Flag
 #define FLAG_PELLUCA_POSTGYM  0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1  0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2  0x4B2 // Unused Flag
+#define FLAG_RIVETSHORE_ASSEMBLY  0x4B1 // some of the gym leaders and kohla assemble
+#define FLAG_RIVETSHORE_ASSEMBLY_GYM  0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3  0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4  0x4B4 // Unused Flag
 #define FLAG_UNUSED_0x4C0 0x4C0 // Unused Flag
