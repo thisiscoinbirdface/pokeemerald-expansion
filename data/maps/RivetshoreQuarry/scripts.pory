@@ -1,0 +1,32 @@
+raw`
+    .set LOCALID_BLOCKER, 7
+`
+mapscripts RivetshoreQuarry_MapScripts{}
+
+
+
+
+
+
+script RivetshoreQuarry_Blocker_Trigger{
+    if (flag(FLAG_RIVETSHORE_ASSEMBLY)) {end}
+
+    lockall
+    applymovement(LOCALID_BLOCKER, moves(emote_exclamation_mark face_right))
+    movedelay
+    msgbox(format("Sorry. The quarry's closed sinze Raazi's not here right now.\pWhere'd he go?\pWhat's it to you, kid?"))
+    release
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script RivetshoreQuarry_Blocker_NPC{
+    msgbox(format("Raazi's down at the bottom of the quarry."), MSGBOX_NPC)
+    end
+}
+
+
+
+

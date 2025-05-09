@@ -3,7 +3,7 @@
   "name": "IvyRiver_ZarudeForest",
   "layout": "LAYOUT_IVY_RIVER_ZARUDE_FOREST",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_IVY_RIVER",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_ROUTE",

@@ -366,6 +366,20 @@
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 41,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_HARBOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_CONSTRUCTION",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

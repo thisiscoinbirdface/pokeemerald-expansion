@@ -1,0 +1,48 @@
+mapscripts RivetshoreCity_Harbor_MapScripts{}
+
+
+
+
+script RivetshoreCity_Harbor_Inger{
+    lockall
+    speakername("Inger")
+    msgbox(format("Go Minior! Use Rollout!"))
+    releaseall
+    end
+}
+script RivetshoreCity_Harbor_Minior{
+    lockall
+    playmoncry(SPECIES_MINIOR, CRY_MODE_NORMAL)
+    msgbox(format("miiiiii!!!\pMinior is curling up into a ball...but it's already a ball!\pHow does that work?"))
+    releaseall
+    end
+}
+script RivetshoreCity_Harbor_Ariana{
+    lockall
+    speakername("Ariana")
+    msgbox(format("Tauros! Flame Charge right through the Rollout!"))
+    releaseall
+    end
+}
+script RivetshoreCity_Harbor_Tauros{
+    playmoncry(SPECIES_MINIOR, CRY_MODE_NORMAL)
+    msgbox(format("Tauros is huffing and releasing heat!"))
+    releaseall
+    end
+}
+
+script RivetshoreCity_Harbor_Jania{
+    lockall
+    speakername("Jania")
+    msgbox(format("...I heard your last performance was simply breathtaking!\pI wish I could have seen it live..."))
+    releaseall
+    end
+}
+script RivetshoreCity_Harbor_Gloria{
+    lockall
+    speakername("Gloria")
+    msgbox(format("...Arsalan spoke very highly your work. You really must do an exhibition!"))
+    releaseall
+    end
+}
+
