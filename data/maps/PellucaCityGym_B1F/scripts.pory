@@ -75,7 +75,7 @@ script PellucaGym_Red {
     lockall
     faceplayer
 
-    if (flag(FLAG_BADGE06_GET)){
+    if (flag(FLAG_BADGE07_GET)){
         if (flag(FLAG_PELLUCAGYM_SPENSER_REWARD)){
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
         } else {
@@ -137,7 +137,7 @@ script PellucaGym_Leader {
     lockall
     faceplayer
     
-    if (flag(FLAG_BADGE06_GET)){
+    if (flag(FLAG_BADGE07_GET)){
         msgbox(format("The tides of time wait for nobody. Do what you have to do!"))
     } else {
         special(SaveGame)
@@ -159,7 +159,7 @@ script PellucaGym_Leader {
         //Play gym badge fanfare
         message(format("{PLAYER} received the River Badge from Jania."))
         call(Common_EventScript_PlayGymBadgeFanfare)
-        setflag(FLAG_BADGE06_GET)        
+        setflag(FLAG_BADGE07_GET)        
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         msgbox(format("And I must also give you this."))

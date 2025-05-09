@@ -137,12 +137,20 @@
 #define FLAG_SHRINE_QUEST  0x4AD // Unused Flag
 #define FLAG_GALECREST_ARMAROUGE_1_MOVED  0x4AE // stops the detective academy armarouge from moving again and again
 #define FLAG_GALECREST_ARMAROUGE_2_MOVED  0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0  0x4B0 // Unused Flag
+#define FLAG_PELLUCA_POSTGYM  0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1  0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2  0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3  0x4B3 // Unused Flag
 #define FLAG_UNUSED_0x4B4  0x4B4 // Unused Flag
-
+#define FLAG_UNUSED_0x4C0 0x4C0 // Unused Flag
+#define FLAG_UNUSED_0x054 0x54  // Unused Flag
+#define FLAG_UNUSED_0x055 0x55  // Unused Flag
+#define FLAG_UNUSED_0x068 0x68  // Unused Flag
+#define FLAG_UNUSED_0x0E9 0xE9 // Unused Flag
+#define FLAG_UNUSED_0x1AA 0x1AA // Unused Flag
+#define FLAG_UNUSED_0x1AB 0x1AB // Unused Flag
+#define FLAG_UNUSED_0x1DA 0x1DA // Unused Flag
+#define FLAG_UNUSED_0x2D9 0x2D9 // Unused Flag
 
 
 //I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
@@ -248,15 +256,6 @@
 #define FLAG_UNUSED_0x4BD 0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE 0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF 0x4BF // Unused Flag
-#define FLAG_UNUSED_0x4C0 0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x054 0x54  // Unused Flag
-#define FLAG_UNUSED_0x055 0x55  // Unused Flag
-#define FLAG_UNUSED_0x068 0x68  // Unused Flag
-#define FLAG_UNUSED_0x0E9 0xE9 // Unused Flag
-#define FLAG_UNUSED_0x1AA 0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB 0x1AB // Unused Flag
-#define FLAG_UNUSED_0x1DA 0x1DA // Unused Flag
-#define FLAG_UNUSED_0x2D9 0x2D9 // Unused Flag
 
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS

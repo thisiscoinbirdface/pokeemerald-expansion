@@ -80,7 +80,7 @@ PellucaGym_Red::
 # 76 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	faceplayer
 # 78 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	goto_if_set FLAG_BADGE06_GET, PellucaGym_Red_2
+	goto_if_set FLAG_BADGE07_GET, PellucaGym_Red_2
 # 99 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	goto_if_set FLAG_PELLUCAGYM_SPENSER_WATER, PellucaGym_Red_8
 # 102 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -143,7 +143,7 @@ PellucaGym_Leader::
 # 138 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	faceplayer
 # 140 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	goto_if_set FLAG_BADGE06_GET, PellucaGym_Leader_2
+	goto_if_set FLAG_BADGE07_GET, PellucaGym_Leader_2
 # 143 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	special SaveGame
 # 144 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -167,7 +167,7 @@ PellucaGym_Leader::
 # 161 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 162 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
 # 165 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_6
 # 166 "data//maps/PellucaCityGym_B1F/scripts.pory"

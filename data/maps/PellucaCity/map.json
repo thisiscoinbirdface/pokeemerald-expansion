@@ -1304,6 +1304,15 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "PellucaCityFlooded_Complete_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 37,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PellucaCity_PostGymEvent_Trigger"
     }
   ],
   "bg_events": [

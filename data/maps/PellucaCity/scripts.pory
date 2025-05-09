@@ -1114,3 +1114,121 @@ script PellucaCity_Stantler{
     msgbox(format("Stantler is nonchalantly chomping on the flowers."), MSGBOX_NPC)
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///Post-gym event
+script PellucaCity_PostGymEvent_Trigger{
+    if (flag(FLAG_PELLUCA_POSTGYM)) {end}
+
+    if (flag(FLAG_BADGE07_GET)){
+        lockall
+
+        //Open door
+        opendoor(37, 8)
+        waitdooranim
+
+        //spawn jania
+        addobject(LOCALID_FL_JANIA)
+        setobjectxy(LOCALID_FL_JANIA, 37, 8)
+
+        applymovement(LOCALID_FL_JANIA, moves(walk_down))
+        waitmovement(0)
+        
+        //close door
+        closedoor(37, 8)
+
+        applymovement(LOCALID_FL_JANIA, moves(walk_down * 2))
+        waitmovement(0)
+
+        speakername("Jania")
+        msgbox(format("Excuse me."))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
+        applymovement(LOCALID_FL_JANIA, moves(walk_down * 2))
+        waitmovement(0)
+        delay(16)
+        applymovement(LOCALID_FL_JANIA, moves(face_up))
+        waitmovement(0)
+        delay(16)
+        speakername("Jania")
+        msgbox(format("Where am I going?\pTo Rivetshore City. All the Gym Leaders have been called there."))
+        release
+        
+        special(SpawnCameraObject)
+        applymovement(LOCALID_FL_JANIA, moves(walk_down * 2 walk_left * 3))
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+        waitmovement(0)
+
+        opendoor(37, 8)
+        waitdooranim
+
+        //spawn gabrielle
+        addobject(LOCALID_GAB)
+        setobjectxy(LOCALID_GAB, 37, 8)
+        applymovement(LOCALID_GAB, moves(walk_down emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        speakername("Gabrielle")
+        msgbox(format("{PLAYER}! Over here!"))
+        release
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 face_left))
+        waitmovement(0)
+        applymovement(LOCALID_GAB, moves(face_right))
+        waitmovement(0)
+        delay(16)
+
+        speakername("Gabrielle")
+        msgbox(format("I overheard Jania talking to someone!\p...\pWhat? I wasn't eavesdropping!\nShe was just nearby.\pShe was talking to the eighth Gym Leader. They mentioned Team Somber!\pThey must be upto something in Rivetshore City!\p..."))
+        release
+        applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        speakername("Gabrielle")
+        msgbox(format("You're off the case?\p...\pSo?\pThe {PLAYER} I know wouldn't be stopped by something like that!\pYou taught me the difference between right and wrong. Have you forgotten why you're doing this in the first place?\pIt was to find YOUR Professor. You don't need anybody's permission!\p...\pI'm not letting you give up, {PLAYER}.\pI'm going to Rivetshore City to get the final gym badge. It's south of Pelluca City - you can get there by surfing.\pI'll be waiting for you!"))
+        release
+        delay(16)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        applymovement(LOCALID_GAB, moves(walk_down * 3 face_up))
+        waitmovement(0)
+        delay(16)
+        speakername("Gabrielle")
+        msgbox(format("You'd better be there, {PLAYER}!"))
+        release        
+        applymovement(LOCALID_GAB, moves(walk_down * 3))
+        waitmovement(0)
+        delay(16)
+
+        special(RemoveCameraObject)
+
+
+        removeobject(LOCALID_FL_JANIA)
+        removeobject(LOCALID_GAB)
+
+        setflag(FLAG_PELLUCA_POSTGYM)
+        end
+    }
+
+    end
+}
+
