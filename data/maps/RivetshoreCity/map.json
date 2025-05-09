@@ -26,8 +26,8 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
-      "x": 46,
+      "graphics_id": "OBJ_EVENT_GFX_MR_BRINEYS_BOAT",
+      "x": 45,
       "y": 37,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",

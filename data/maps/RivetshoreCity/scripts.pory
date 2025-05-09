@@ -1,4 +1,6 @@
 raw`
+    .set LOCALID_SPEEDBOAT, 1
+
     .set LOCALID_KOHLA, 21
     .set LOCALID_DET1, 22
     .set LOCALID_DET2, 23
@@ -41,14 +43,12 @@ script RivetshoreCity_Assembly_Trigger{
     movedelay
     msgbox_delay("Detective", format("Thank you gym leaders for assembling here on such short notice."))
     //leaders say its our duty
-    applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
+    applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
     movedelay
     msgbox_delay("???", format("It's our duty, detectives.\nNo need to thank us."))
-    applymovement(LOCALID_ARIANA, moves(emote_exclamation_mark))
+    applymovement(LOCALID_ARIANA, moves(jump_in_place_left emote_exclamation_mark))
     movedelay
     msgbox_delay("Ariana", format("Easy for you to say, Raazi!\pYou live here. Inger and I came all the way from the other side of Cormoria!"))
-    applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
-    movedelay
     msgbox_delay("Raazi", format("Which is also your duty."))
 
     //Who's missing?
@@ -57,14 +57,14 @@ script RivetshoreCity_Assembly_Trigger{
     msgbox_delay("Detective", format("I don't see all of you, though.\nWho's missing?"))
     applymovement(LOCALID_GLORIA, moves(jump_in_place_left))
     movedelay
-    msgbox_delay("Gloria", format("Viniel and Carona sent word - they're on their way.\nThey'll take some time, considering how remote they are."))
+    msgbox_delay("Gloria", format("Viniel and Carona sent word - they're on their way. They'll take some time, considering how remote they are."))
 
     //detectives explain the situation: 
     //third dreamstone at sea, gotta go stop team somber and find prof tenebris
     //we've all but given up hope on the prof
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the situation as it stands.\pAll of you know about the disappearance of Professor Tenebris in connection with the dreamstones and the involvement of Team Somber in this case."))
+    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the situation as it stands.\pYou all know about the disappearance of Professor Tenebris in connection with the dreamstones and Team Somber's involvement in this case."))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Raazi", format("Yes."))
@@ -77,19 +77,24 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found. Nobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recoded by the Pokemon Ranger Institute yesterday.\pThe heat signatures were off the charts. I quote the Ranger Head verbatim here - it's like the beginning of a region-wide drought.\pThe location?\pAn uncharted island off the coast of Rivetshore City."))
+    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found.\pNobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recoded by the Pokemon Ranger Institute yesterday.\pThe heat signatures were off the charts. According to the Ranger Head, it's like the beginning of a region-wide drought."))
+    
+    applymovement(LOCALID_JANIA, moves(emote_question_mark))
+    movedelay
+    msgbox_delay("Jania", format("The location?"))    
+    msgbox_delay("Detective", format("An uncharted island off the coast of Rivetshore City."))
+
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
     movedelay
-    msgbox_delay("Raazi", format("That explains the heatwave we had yesterday. It must be Team Somber's doing."))
-    applymovement(LOCALID_DET1, moves(jump_in_place_down))
-    movedelay
-    msgbox_delay("Detective", format("Kohla here has been working the case. He's handed over his Gym Leader duties to the next Ace Rookie, and is now pursuing Team Somber with all his energy."))
+    msgbox_delay("Raazi", format("That explains the heatwave we had here yesterday.\pIt must have been Team Somber's doing."))
+
+    msgbox_delay("Detective", format("Kohla here has been working the case.\pHe's handed over his Gym Leader duties to the next Ace Rookie, and is now pursuing Team Somber."))
     applymovement(LOCALID_DET1, moves(face_right))
     movedelay
-    msgbox_delay("Detective", format("Kohla - tell them about the Ancient Terror."))
+    msgbox_delay("Detective", format("Kohla - go on and tell them about the Ancient Terror."))
     applymovement(LOCALID_KOHLA, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Kohla", format("Right, yes, well.\pAhem.\pSo,well...they've got the Ancient Terror."))
+    msgbox_delay("Kohla", format("Right, yes, well.\pAhem.\pSo, well...they...they've captured the Ancient Terror."))
 
     applymovement(LOCALID_GLORIA, moves(emote_exclamation_mark))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
@@ -101,7 +106,7 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_KOHLA, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Kohla", format("My ex-colleague and I chased them into Ancient Cormoria through a dreamstone...where I saw Melea, one of the admins, capture the Ancient Terror with a Master Ball."))
+    msgbox_delay("Kohla", format("My...ex-colleague and I chased them into Ancient Cormoria through a dreamstone and Melea captured the Ancient Terror with a Master Ball!"))
 
     applymovement(LOCALID_ARIANA, moves(emote_exclamation_mark))
     movedelay
@@ -109,21 +114,95 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_DET1, moves(face_down))
     movedelay
-    msgbox_delay("Detective", format("Yes...which is why we need the combined power of the eight strongest trainers in all of Cormoria.\pWe think heatwave has something to do with the Ancient Terror...and we also have reason to believe worse is on the way.\pSo we need to get to this uncharted island ASAP!"))
+    msgbox_delay("Detective", format("Yes...which is why we need the combined power of the eight strongest trainers in all of Cormoria.\pWe think heatwave has something to do with the Ancient Terror...and we also believe worse is on the way.\pSo we need to get to this uncharted island ASAP!"))
 
     //raazi says we'll wait for viniel and carona
-    applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
+    applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
     movedelay
-    msgbox_delay("Raazi", format("We should wait for Viniel and Carona however. Without Medicham and Ampharos, we'll lose a lot of our firepower."))
+    msgbox_delay("Raazi", format("We should wait for Viniel and Carona however. Without Medicham and Ampharos, we'll lose a lot of firepower."))
     applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
     movedelay
-    msgbox_delay("Detective", format("Time is of the essence, Raazi. We need someone to go now."))
-    msgbox_delay("Raazi", format("Then I propose Kohla.\pHe's a star and I can vouch for his strength."))
+    msgbox_delay("Detective", format("Time is of the essence, Raazi.\nWe need someone to go now."))
+    msgbox_delay("Raazi", format("Then I propose Kohla.\pHe's a star and I can personally vouch for his strength."))
     applymovement(LOCALID_INGER, moves(emote_question_mark))
     movedelay
     msgbox_delay("Inger", format("Did he beat you, Raazi?"))
-    msgbox_delay("Raazi", format("Yes. He's now got all eight badges and is a fearsome trainer.\pNot to mention - he's been fighting Team Somber from the start. His dedication to the cause is far beyond the rest of us."))
+    msgbox_delay("Raazi", format("Yes. He's a fearsome trainer.\pNot to mention - he's been fighting Team Somber from the start.\pHis dedication to the cause is far beyond the rest of us combined."))
 
+    applymovement(LOCALID_DET1, moves(emote_question_mark))
+    movedelay
+    msgbox_delay("Detective", format("Those in favour of sending Kohla ahead?"))
+
+    msgbox_delay("Inger", format("Yeah!"))
+    msgbox_delay("Ariana", format("Of course!"))
+    msgbox_delay("Gloria", format("Without question."))
+    msgbox_delay("Jania", format("He's the best choice."))
+    msgbox_delay("Raazi", format("Needless to say, detective, we're all in favour.\pKohla, you have the respect of all the other leaders in Cormoria. You're the one we're counting on.\pI'm not going to ask you whether you're upto the task...because I know you are."))
+
+    applymovement(LOCALID_DET1, moves(face_down))
+    movedelay
+    msgbox_delay("Detective", format("Kohla - you're coming with us on the speedboat then.\pThere's a cruise ship that's scheduled to leave soon. The other Gym Leaders can come on that.\pLet's get to it!"))
+
+    //exit
+    applymovement(LOCALID_KOHLA, moves(walk_up))
+    applymovement(LOCALID_DET1, moves(walk_right))
+    applymovement(LOCALID_DET2, moves(walk_right))    
+    waitmovement(0)
+    removeobject(LOCALID_KOHLA)
+
+    applymovement(LOCALID_DET1, moves(walk_up))
+    applymovement(LOCALID_DET2, moves(walk_right))    
+    waitmovement(0)
+    removeobject(LOCALID_DET1)
+
+    applymovement(LOCALID_DET2, moves(walk_up))    
+    waitmovement(0)
+    removeobject(LOCALID_DET2)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 6 walk_up * 4))
+    waitmovement(0)    
+
+    //ship goes away
+    applymovement(LOCALID_SPEEDBOAT, moves(walk_fast_right * 10))
+    waitmovement(0)        
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4 walk_left * 6))
+    waitmovement(0)    
+
+    applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
+    movedelay
+    msgbox_delay("Raazi", format("I'm heading back to the quarry. The rest of you can wait in the harbor."))
+
+    applymovement(LOCALID_JANIA, moves(walk_right *2))
+    applymovement(LOCALID_ARIANA, moves(walk_up * 2))
+    applymovement(LOCALID_INGER, moves(walk_up walk_left))
+    applymovement(LOCALID_GLORIA, moves(walk_left walk_up))
+    waitmovement(0)
+    removeobject(LOCALID_GLORIA)
+
+    applymovement(LOCALID_JANIA, moves(walk_right))
+    applymovement(LOCALID_ARIANA, moves(walk_left))
+    applymovement(LOCALID_INGER, moves(walk_up))
+    waitmovement(0)
+    removeobject(LOCALID_INGER)
+
+    applymovement(LOCALID_JANIA, moves(walk_up))
+    applymovement(LOCALID_ARIANA, moves(walk_up))
+    waitmovement(0)
+    removeobject(LOCALID_ARIANA)
+
+    applymovement(LOCALID_JANIA, moves(walk_up * 2))
+    waitmovement(0)
+    removeobject(LOCALID_JANIA)
+
+    //raazi exit
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(LOCALID_RAAZI)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 8))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     //end
     setflag(FLAG_RIVETSHORE_ASSEMBLY)
