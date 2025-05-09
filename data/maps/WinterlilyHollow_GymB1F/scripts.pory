@@ -143,11 +143,6 @@ script WinterlilyHollowGym_LeaderBattle {
         setflag(FLAG_BADGE06_GET)
         setflag(FLAG_SYS_SURF_ENABLED)
 
-        //Describe the badge features (use HMs, allow pokemon control etc.)
-        speakername("Viniel")
-        msgbox(format("The Spark Badge lets you use HM Surf outside of battle. You don't need to teach your Pokémon the move - any compatible Pokémon can use it out of battle!"))
-        release
-        delay(8)
         speakername("Viniel")
         msgbox(format("And I'd also like you to have this."))
         release
@@ -157,9 +152,12 @@ script WinterlilyHollowGym_LeaderBattle {
 
         //Bye-bye
         speakername("Viniel")
-        msgbox(format("Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there...\p...but that's for another day. This is the end of the demo. Thank you for playing! Please drop any feedback and bug reports on Discord, and stay tuned for further updates!")) //Keep your spirits up, {PLAYER}!"))
-        releaseall
-        
+        msgbox(format("Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
+        release
+        giveitem(ITEM_HM03)
+        speakername("Viniel")
+        msgbox(format("Keep your spirits high, {PLAYER}!"))
+
     }
 
     releaseall

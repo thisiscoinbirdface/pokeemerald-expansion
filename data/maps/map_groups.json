@@ -161,7 +161,8 @@
     "RivetshoreCity_PokemonCenter",
     "RivetshoreQuarry",
     "RivetshoreCity_Houses",
-    "RivetshoreCity_Construction"
+    "RivetshoreCity_Construction",
+    "RivetshoreCity_Harbor"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
