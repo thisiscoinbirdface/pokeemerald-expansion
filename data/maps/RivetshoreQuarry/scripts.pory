@@ -134,8 +134,8 @@ script Rivetshore_Raazi_Talk{
     lockall
     msgbox_delay("Raazi", format("You managed to come out of that cave unscathed?\pI'm impressed.\p...\pOr perhaps it's simply time for me to expand the cave?\pNo matter - a trainer who faces me is a trainer who I must face.\pI am Raazi! The Gym Leader of Rivetshore City and the strongest leader in all of Cormoria. Few trainers posess enough grit to reach where you stand, {PLAYER}. But their fate is to be crushed by my hand! Will you fall? Or will you rise?"))
 
-    applymovement(LOCALID_RAAZI, moves(lock_facing_direction jump_left face_right))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction jump_right face_left))
+    applymovement(LOCALID_RAAZI, moves(lock_facing_direction jump_left face_right unlock_facing_direction))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction jump_right face_left unlock_facing_direction))
     waitmovement(0)
     playbgm(MUS_VS_GYM_LEADER, FALSE)
     msgbox_delay("Raazi", format("Let me see whether you can face the might and fury of -"))
@@ -153,7 +153,7 @@ script Rivetshore_Raazi_Talk{
     applymovement(LOCALID_RAAZI, moves(face_down))
     waitmovement(0)
     delay(16)    
-    msgbox_delay("Raazi", format("Hello?\p...\p...\pViniel and Carona are here?\pVery well. I'm coming."))
+    msgbox_delay("Raazi", format("Hello?\p...\p...\pViniel and Carona are here?\pVery well. I'm coming.\nWe'll depart as soon as I reach."))
     playse(SE_POKENAV_HANG_UP)
     waitse
     delay(16)
@@ -162,7 +162,7 @@ script Rivetshore_Raazi_Talk{
     delay(16)
     msgbox_delay("Raazi", format("Apologies, {PLAYER}. I must put this challenge on hold as I have an unavoidable engagement.\pShall we do this another time?"))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up face_down))
-    applymovement(LOCALID_RAAZI, moves(walk_right * 10))
+    applymovement(LOCALID_RAAZI, moves(walk_right * 10 walk_up * 7))
     waitmovement(0)
 
     removeobject(LOCALID_RAAZI)

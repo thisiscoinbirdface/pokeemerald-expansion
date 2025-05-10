@@ -308,6 +308,8 @@ Rivetshore_Raazi_Talk_Movement_0:
 	jump_left
 # 137 "data//maps/RivetshoreQuarry/scripts.pory"
 	face_right
+# 137 "data//maps/RivetshoreQuarry/scripts.pory"
+	unlock_facing_direction
 	step_end
 
 # 138 "data//maps/RivetshoreQuarry/scripts.pory"
@@ -318,6 +320,8 @@ Rivetshore_Raazi_Talk_Movement_1:
 	jump_right
 # 138 "data//maps/RivetshoreQuarry/scripts.pory"
 	face_left
+# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+	unlock_facing_direction
 	step_end
 
 # 148 "data//maps/RivetshoreQuarry/scripts.pory"
@@ -368,6 +372,20 @@ Rivetshore_Raazi_Talk_Movement_6:
 	walk_right
 # 165 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_right
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
 	step_end
 
 RivetshoreQuarry_Raazi_Callout_Trigger_Text_0:
@@ -439,7 +457,8 @@ Rivetshore_Raazi_Talk_Text_3:
 	.string "...\p"
 	.string "...\p"
 	.string "Viniel and Carona are here?\p"
-	.string "Very well. I'm coming.$"
+	.string "Very well. I'm coming.\n"
+	.string "We'll depart as soon as I reach.$"
 
 Rivetshore_Raazi_Talk_Text_4:
 # 163 "data//maps/RivetshoreQuarry/scripts.pory"
