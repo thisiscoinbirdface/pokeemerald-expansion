@@ -134,7 +134,11 @@ static void WarpToTruck(void)
     SetWarpDestination(MAP_GROUP(CARABRUE_TOWN_HOME1F), MAP_NUM(CARABRUE_TOWN_HOME1F), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
-
+void WarpToStorage(void)
+{
+    SetWarpDestination(MAP_GROUP(SSELEGANT_INSIDE_STORAGE), MAP_NUM(SSELEGANT_INSIDE_STORAGE), WARP_ID_NONE, -1, -1);
+    WarpIntoMap();
+}
 void Sav2_ClearSetDefault(void)
 {
     ClearSav2();

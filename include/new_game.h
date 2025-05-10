@@ -10,6 +10,7 @@ void SetTrainerId(u32 trainerId, u8 *dst);
 u32 GetTrainerId(u8 *trainerId);
 void CopyTrainerId(u8 *dst, u8 *src);
 void NewGameInitData(void);
+void WarpToStorage(void);
 void ResetMenuAndMonGlobals(void);
 void Sav2_ClearSetDefault(void);
 
