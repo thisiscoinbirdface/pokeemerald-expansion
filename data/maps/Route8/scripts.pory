@@ -1,31 +1,36 @@
 mapscripts Route8_MapScripts{}
 
 
-
+//TRAINERS
+//swimmer
 script Route8_Trainer_A{
     trainerbattle_single(TRAINER_ROUTE8_A, format(""), format("") )
     msgbox(format(""))
     releaseall
     end
 }
+//swimmer
 script Route8_Trainer_B{
     trainerbattle_single(TRAINER_ROUTE8_B, format(""), format(""))
     msgbox(format(""))
     releaseall
     end
 }
+//staring contest A
 script Route8_Trainer_C{
     trainerbattle_single(TRAINER_ROUTE8_C, format(""), format(""))
     msgbox(format(""))
     releaseall
     end
 }
+//staring contest B
 script Route8_Trainer_D{
     trainerbattle_single(TRAINER_ROUTE8_D, format(""), format(""))
     msgbox(format(""))
     releaseall
     end
 }
+//last dude
 script Route8_Trainer_E{
     trainerbattle_single(TRAINER_ROUTE8_E, format(""), format(""))
     msgbox(format(""))

@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_RED_SHARD",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_124_RED_SHARD"
+      "flag": "FLAG_ITEM_ROUTE8_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_BLUE_SHARD",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_124_BLUE_SHARD"
+      "flag": "FLAG_ITEM_ROUTE8_B"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",

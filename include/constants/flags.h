@@ -1285,15 +1285,19 @@
 #define FLAG_ITEM_MIRROH_B1F_A              0x442
 #define FLAG_ITEM_CERAM_PEAK_A              0x443
 
+//route 8
+#define FLAG_ITEM_ROUTE8_A                  0x444
+#define FLAG_ITEM_ROUTE8_B                  0x445
+#define FLAG_ITEM_ROUTE8_C                  0x446
+#define FLAG_ITEM_ROUTE8_D                  0x447
 
-#define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
-#define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM              0x446
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_TM_ICE_BEAM              0x44A
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE                  0x44B
+//rivetshore city
+#define FLAG_ITEM_RIVETSHORE_A              0x448
+#define FLAG_ITEM_RIVETSHORE_B              0x449
+#define FLAG_ITEM_RIVETSHORE_C              0x44A
+#define FLAG_ITEM_RIVETSHORE_D              0x44B
+
+
 #define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E

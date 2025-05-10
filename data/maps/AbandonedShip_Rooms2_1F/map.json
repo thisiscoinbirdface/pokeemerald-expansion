@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE"
+      "flag": "FLAG_ITEM_RIVETSHORE_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",

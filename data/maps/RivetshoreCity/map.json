@@ -157,12 +157,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARON)",
-      "x": 28,
-      "y": 33,
+      "x": 32,
+      "y": 34,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -336,6 +336,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 40,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RIVETSHORE_A"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 33,
+      "y": 64,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RIVETSHORE_C"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
+      "x": 32,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_RIVETSHORE_B"
     }
   ],
   "warp_events": [
