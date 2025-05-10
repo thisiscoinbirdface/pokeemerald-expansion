@@ -170,8 +170,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARON)",
-      "x": 29,
-      "y": 32,
+      "x": 21,
+      "y": 43,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -375,6 +375,45 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM41",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_RIVETSHORE_B"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 32,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 35,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 29,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RivetshoreCity_NPC_StorageBaySailor",
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     }
   ],
   "warp_events": [
@@ -426,6 +465,13 @@
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_UNDERPASS",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 29,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_CITY_STORAGE_BAY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

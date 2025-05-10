@@ -5575,7 +5575,7 @@
       "id": "LAYOUT_RIVETSHORE_CITY_HARBOR",
       "name": "RivetshoreCity_Harbor_Layout",
       "width": 24,
-      "height": 15,
+      "height": 18,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RivetshoreCity_Harbor/border.bin",
@@ -5600,6 +5600,16 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/RivetshoreQuarry_Interior/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreQuarry_Interior/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_CITY_STORAGE_BAY",
+      "name": "RivetshoreCity_StorageBay_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RivetshoreCity_StorageBay/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreCity_StorageBay/map.bin"
     }
   ]
 }

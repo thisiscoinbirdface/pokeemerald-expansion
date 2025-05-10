@@ -143,7 +143,7 @@
 #define FLAG_RIVETSHORE_RAAZI_CALL  0x4B3 // Unused Flag
 #define FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED  0x4B4 // Unused Flag
 #define FLAG_RIVETSHORE_RAAZI_CALLOUT 0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x054 0x54  // Unused Flag
+#define FLAG_RIVETSHORE_STORAGE_BAY_SLAKING 0x54  // Unused Flag
 #define FLAG_UNUSED_0x055 0x55  // Unused Flag
 #define FLAG_UNUSED_0x068 0x68  // Unused Flag
 #define FLAG_UNUSED_0x0E9 0xE9 // Unused Flag

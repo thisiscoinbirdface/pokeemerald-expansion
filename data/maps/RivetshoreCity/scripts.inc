@@ -310,6 +310,60 @@ RivetshoreCity_Assembly_Trigger_2:
 	end
 
 
+RivetshoreCity_NPC_StorageBaySailor::
+# 227 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_StorageBaySailor_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_1::
+# 232 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_2::
+# 236 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_3::
+# 240 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_4::
+# 244 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_5::
+# 248 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_6::
+# 252 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_7::
+# 256 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
+RivetshoreCity_NPC_8::
+# 260 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
+	end
+
+
 # 37 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_0:
 # 37 "data//maps/RivetshoreCity/scripts.pory"
@@ -762,3 +816,14 @@ RivetshoreCity_Assembly_Trigger_Text_41:
 # 174 "data//maps/RivetshoreCity/scripts.pory"
 	.string "I'm heading back to the quarry. The rest\n"
 	.string "of you can wait in the harbor.$"
+
+RivetshoreCity_NPC_StorageBaySailor_Text_0:
+# 227 "data//maps/RivetshoreCity/scripts.pory"
+	.string "This is the storage bay. We're busy\n"
+	.string "loading up on supplies for the S.S.\l"
+	.string "Elegant! I'm on guard duty and I'm not\l"
+	.string "leaving until we're ready to depart!$"
+
+RivetshoreCity_NPC_1_Text_0:
+# 232 "data//maps/RivetshoreCity/scripts.pory"
+	.string "$"

@@ -214,3 +214,51 @@ script RivetshoreCity_Assembly_Trigger{
 
 
 
+
+
+
+
+
+
+
+
+
+script RivetshoreCity_NPC_StorageBaySailor{
+    msgbox(format("This is the storage bay. We're busy loading up on supplies for the S.S. Elegant! I'm on guard duty and I'm not leaving until we're ready to depart!"), MSGBOX_NPC)
+    end
+}
+
+script RivetshoreCity_NPC_1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_4{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_5{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_6{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_7{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_NPC_8{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+

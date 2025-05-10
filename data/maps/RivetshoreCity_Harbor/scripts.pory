@@ -3,6 +3,28 @@ mapscripts RivetshoreCity_Harbor_MapScripts{}
 
 
 
+
+
+
+
+script RivetshoreCity_Harbor_LoadBox{
+    lockall
+
+
+    releaseall
+    end
+}
+
+script RivetshoreCity_Harbor_Attendant{
+    msgbox(format("Sorry, you need a Cruise Ticket to board the ship."), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
 script RivetshoreCity_Harbor_Inger{
     lockall
     speakername("Inger")

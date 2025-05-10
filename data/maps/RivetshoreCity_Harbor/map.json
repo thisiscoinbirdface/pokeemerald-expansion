@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
-      "x": 4,
-      "y": 9,
+      "x": 8,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_ARIANA",
-      "x": 11,
-      "y": 12,
+      "x": 5,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_INGER",
-      "x": 8,
-      "y": 12,
+      "x": 2,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -55,10 +55,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_JANIA",
-      "x": 0,
-      "y": 12,
+      "x": 12,
+      "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -68,10 +68,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_GLORIA",
-      "x": 0,
-      "y": 13,
+      "x": 14,
+      "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MINIOR)",
-      "x": 9,
-      "y": 12,
+      "x": 3,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -94,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_BLAZE)",
-      "x": 10,
-      "y": 12,
+      "x": 4,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
       "movement_range_x": 0,
@@ -104,19 +104,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Tauros",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VIGOROTH)",
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 8,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RivetshoreCity_Harbor_Attendant",
+      "flag": "FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 7,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RivetshoreCity_Harbor_Attendant",
+      "flag": "FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT"
     }
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 14,
+      "x": 12,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY",
       "dest_warp_id": "4"
     },
     {
-      "x": 3,
-      "y": 14,
+      "x": 11,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY",
       "dest_warp_id": "4"
@@ -126,6 +165,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RivetshoreCity_Harbor_LoadBox"
+    }
   ]
 }

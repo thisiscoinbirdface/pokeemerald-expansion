@@ -1,0 +1,39 @@
+mapscripts RivetshoreCity_StorageBay_MapScripts{}
+
+script RivetshoreCity_StorageBay_Slaking{
+    msgbox(format("It's fast asleep..."), MSGBOX_NPC)
+    end
+
+    //if flute is used
+    checkitem(ITEM_POKE_FLUTE)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's fast asleep..."), MSGBOX_NPC)
+        end        
+    } else {
+        msgbox(format("It's fast asleep...\nUse Poké Flute?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 0){
+            end
+        } else {
+            playmoncry(SPECIES_SLAKING, CRY_MODE_NORMAL)
+            applymovement(1, moves(jump_in_place_up))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("Slaking woke up!"))
+            release
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_right))
+            applymovement(1, moves(walk_up walk_right * 4 walk_down * 4))
+            waitmovement(0)
+            removeobject(1)
+            msgbox(format("Slaking lumbered off somewhere...was waking it up the wrong thing to do?"))
+            release
+            setflag(FLAG_RIVETSHORE_STORAGE_BAY_SLAKING)
+            releaseall
+            end
+        }
+
+
+
+    }
+}
+

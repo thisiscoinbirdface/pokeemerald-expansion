@@ -164,7 +164,8 @@
     "RivetshoreCity_Construction",
     "RivetshoreCity_Harbor",
     "Rivetshore_Underpass",
-    "RivetshoreQuarry_Interior"
+    "RivetshoreQuarry_Interior",
+    "RivetshoreCity_StorageBay"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
