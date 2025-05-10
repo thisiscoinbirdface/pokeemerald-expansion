@@ -33244,7 +33244,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 13270
-    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_HDRE] =
+    [DIFFICULTY_NORMAL][TRAINER_DEANDRE] =
     {
 #line 13271
         .trainerName = _("DEANDRE"),
