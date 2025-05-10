@@ -3,10 +3,51 @@ raw`
 `
 mapscripts RivetshoreQuarry_MapScripts{}
 
+script RivetshoreQuarry_Raazi_Callout_Trigger{
+    lockall
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4 walk_left * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
+    speakername("Raazi")
+    msgbox(format("Who do we have here?\pSeems like you're here to contest me for my gym badge. Very well then - come over here and show me your worth!"))
+    release
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 4 walk_up * 4))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
+    releaseall
+    end
+}
+
+script RivetshoreQuarry_Fall_Trigger{
+    lockall
+
+    msgbox(format("The floor was rigged! It's a trap!"), MSGBOX_NPC)
+    release
+    delay(16)
+    speakername("Raazi")
+    message(format("Come back up and challenge me, trainer...if you can!"))
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 30)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+    waitstate
+
+//	applymovement(OBJ_EVENT_ID_PLAYER, Movement_SetInvisible)
+//	waitmovement(0)
+	playse(SE_FALL)
+//	delay(60)
+	warphole(MAP_RIVETSHORE_QUARRY_INTERIOR)
+
+    releaseall
+    end
+}
 
 script RivetshoreQuarry_Blocker_Trigger{
     if (flag(FLAG_RIVETSHORE_ASSEMBLY)) {end}
@@ -79,4 +120,12 @@ script Rivetshore_Quarry_Aron{
     playmoncry(SPECIES_ARON, CRY_MODE_NORMAL)
     end
 }
+
+
+
+
+
+
+
+
 

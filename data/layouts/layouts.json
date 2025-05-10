@@ -5590,6 +5590,16 @@
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/Rivetshore_Underpass/border.bin",
       "blockdata_filepath": "data/layouts/Rivetshore_Underpass/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_QUARRY_INTERIOR",
+      "name": "RivetshoreQuarry_Interior_Layout",
+      "width": 48,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/RivetshoreQuarry_Interior/border.bin",
+      "blockdata_filepath": "data/layouts/RivetshoreQuarry_Interior/map.bin"
     }
   ]
 }

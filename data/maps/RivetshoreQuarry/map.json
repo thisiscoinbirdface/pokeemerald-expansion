@@ -86,11 +86,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 16,
-      "y": 25,
+      "graphics_id": "OBJ_EVENT_GFX_LEADER_JANIA",
+      "x": 15,
+      "y": 28,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -399,7 +399,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 16,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_QUARRY_INTERIOR",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
     {
@@ -428,6 +434,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "RivetshoreQuarry_Blocker_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RivetshoreQuarry_Fall_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RivetshoreQuarry_Raazi_Callout_Trigger"
     }
   ],
   "bg_events": [

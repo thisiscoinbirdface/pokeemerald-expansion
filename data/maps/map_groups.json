@@ -163,7 +163,8 @@
     "RivetshoreCity_Houses",
     "RivetshoreCity_Construction",
     "RivetshoreCity_Harbor",
-    "Rivetshore_Underpass"
+    "Rivetshore_Underpass",
+    "RivetshoreQuarry_Interior"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
