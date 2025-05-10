@@ -5,6 +5,9 @@ raw`
 mapscripts RivetshoreQuarry_MapScripts{}
 
 script RivetshoreQuarry_Raazi_Callout_Trigger{
+    if (flag(FLAG_RIVETSHORE_RAAZI_CALLOUT)) {end}
+    setflag(FLAG_RIVETSHORE_RAAZI_CALLOUT)
+
     lockall
 
     special(SpawnCameraObject)
