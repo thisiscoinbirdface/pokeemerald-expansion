@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_RIVETSHORE_QUARRY_INTERIOR, 16, 22
+	warp MAP_SSELEGANT_INSIDE_STORAGE, 2, 2
 	release
 	end
 

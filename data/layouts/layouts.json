@@ -5610,6 +5610,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RivetshoreCity_StorageBay/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity_StorageBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_SSELEGANT_INSIDE_STORAGE",
+      "name": "SSElegant_InsideStorage_Layout",
+      "width": 5,
+      "height": 5,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideOfTruck",
+      "border_filepath": "data/layouts/SSElegant_InsideStorage/border.bin",
+      "blockdata_filepath": "data/layouts/SSElegant_InsideStorage/map.bin"
     }
   ]
 }

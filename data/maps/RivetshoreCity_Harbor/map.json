@@ -106,19 +106,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VIGOROTH)",
-      "x": 3,
-      "y": 6,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
       "x": 8,
       "y": 13,
@@ -143,6 +130,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Attendant",
       "flag": "FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(VIGOROTH)",
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -165,13 +165,6 @@
 
   ],
   "bg_events": [
-    {
-      "type": "sign",
-      "x": 2,
-      "y": 5,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RivetshoreCity_Harbor_LoadBox"
-    }
+
   ]
 }

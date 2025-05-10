@@ -1397,3 +1397,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RivetshoreQuarry_Interior/scripts.inc"
 
 	.include "data/maps/RivetshoreCity_StorageBay/scripts.inc"
+
+	.include "data/maps/SSElegant_InsideStorage/scripts.inc"
