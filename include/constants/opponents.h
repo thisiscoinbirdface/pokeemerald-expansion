@@ -221,23 +221,27 @@
 #define TRAINER_PELLUCA_QWILSQUAD_BOSS                  149
 #define TRAINER_PELLUCA_DETECTIVE                       150
 
-#define TRAINER_LUIS                        151
-#define TRAINER_DOMINIK                     152
-#define TRAINER_DOUGLAS                     153
-#define TRAINER_DARRIN                      154
-#define TRAINER_TONY_1                      155
-#define TRAINER_JEROME                      156
-#define TRAINER_MATTHEW                     157
-#define TRAINER_DAVID                       158
-#define TRAINER_SPENCER                     159
-#define TRAINER_ROLAND                      160
-#define TRAINER_NOLEN                       161
-#define TRAINER_STAN                        162
-#define TRAINER_BARRY                       163
-#define TRAINER_DEAN                        164
-#define TRAINER_RODNEY                      165
-#define TRAINER_RICHARD                     166
-#define TRAINER_HERMAN                      167
+//Route 8
+#define TRAINER_ROUTE8_A                     151
+#define TRAINER_ROUTE8_B                     152
+#define TRAINER_ROUTE8_C                     153
+#define TRAINER_ROUTE8_D                     154
+#define TRAINER_ROUTE8_E                     155
+#define TRAINER_ROUTE8_F                     156
+
+//Rivetshore Quarry
+#define TRAINER_RIVETSHORE_GYM_A                     157
+#define TRAINER_RIVETSHORE_GYM_B                     158
+#define TRAINER_RIVETSHORE_GYM_C                     159
+#define TRAINER_RIVETSHORE_GYM_D                     160
+#define TRAINER_RIVETSHORE_GYM_E                     161
+#define TRAINER_RIVETSHORE_GYM_F                     162
+#define TRAINER_RIVETSHORE_GYM_G                     163
+#define TRAINER_RIVETSHORE_GYM_H                     164
+#define TRAINER_RIVETSHORE_GYM_I                     165
+#define TRAINER_RIVETSHORE_GYM_J                     166
+#define TRAINER_RIVETSHORE_GYM_LEADER                167
+
 #define TRAINER_SANTIAGO                    168
 #define TRAINER_GILBERT                     169
 #define TRAINER_FRANKLIN                    170
@@ -785,7 +789,7 @@
 #define TRAINER_ANGELINA                    712
 #define TRAINER_KAI                         713
 #define TRAINER_CHARLOTTE                   714
-#define TRAINER_DEANDRE                     715
+#define TRAINER_RIVETSHORE_GYM_HDRE                     715
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_1       716
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_2       717
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_3       718

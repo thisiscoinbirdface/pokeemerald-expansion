@@ -1,0 +1,37 @@
+mapscripts Route8_MapScripts{}
+
+
+
+script Route8_Trainer_A{
+    trainerbattle_single(TRAINER_ROUTE8_A, format(""), format("") )
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route8_Trainer_B{
+    trainerbattle_single(TRAINER_ROUTE8_B, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route8_Trainer_C{
+    trainerbattle_single(TRAINER_ROUTE8_C, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route8_Trainer_D{
+    trainerbattle_single(TRAINER_ROUTE8_D, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Route8_Trainer_E{
+    trainerbattle_single(TRAINER_ROUTE8_E, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+

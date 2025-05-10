@@ -2,12 +2,12 @@ Route108_MapScripts::
 	.byte 0
 
 Route108_EventScript_Jerome::
-	trainerbattle_single TRAINER_JEROME, Route108_Text_JeromeIntro, Route108_Text_JeromeDefeated
+	trainerbattle_single TRAINER_ROUTE8_F, Route108_Text_JeromeIntro, Route108_Text_JeromeDefeated
 	msgbox Route108_Text_JeromePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route108_EventScript_Matthew::
-	trainerbattle_single TRAINER_MATTHEW, Route108_Text_MatthewIntro, Route108_Text_MatthewDefeated
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Route108_Text_MatthewIntro, Route108_Text_MatthewDefeated
 	msgbox Route108_Text_MatthewPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -21,12 +21,12 @@ Route125_OnFrame:
 	.2byte 0
 
 Route125_EventScript_Nolen::
-	trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_E, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
 	msgbox Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route125_EventScript_Stan::
-	trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_F, Route125_Text_StanIntro, Route125_Text_StanDefeat
 	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
 	end
 

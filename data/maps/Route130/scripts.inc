@@ -34,7 +34,7 @@ Route130_EventScript_CheckSetAbnormalWeather::
 	return
 
 Route130_EventScript_Rodney::
-	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_I, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
 	msgbox Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE
 	end
 

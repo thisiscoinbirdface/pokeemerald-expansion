@@ -7,12 +7,12 @@ Route126_OnTransition:
 	end
 
 Route126_EventScript_Barry::
-	trainerbattle_single TRAINER_BARRY, Route126_Text_BarryIntro, Route126_Text_BarryDefeat
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_G, Route126_Text_BarryIntro, Route126_Text_BarryDefeat
 	msgbox Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route126_EventScript_Dean::
-	trainerbattle_single TRAINER_DEAN, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_H, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
 	msgbox Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE
 	end
 

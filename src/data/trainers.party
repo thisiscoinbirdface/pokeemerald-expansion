@@ -2763,8 +2763,8 @@ Rhydon
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_LUIS ===
-Name: LUIS
+=== TRAINER_ROUTE8_A ===
+Name: Luin
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2776,8 +2776,8 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DOMINIK ===
-Name: DOMINIK
+=== TRAINER_ROUTE8_B ===
+Name: Danneon
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2789,8 +2789,8 @@ Tentacool
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DOUGLAS ===
-Name: DOUGLAS
+=== TRAINER_ROUTE8_C ===
+Name: Digglen
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2806,8 +2806,8 @@ Tentacool
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_DARRIN ===
-Name: DARRIN
+=== TRAINER_ROUTE8_D ===
+Name: Derrin
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2827,8 +2827,8 @@ Tentacool
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_TONY_1 ===
-Name: TONY
+=== TRAINER_ROUTE8_E ===
+Name: Bony
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2840,8 +2840,8 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JEROME ===
-Name: JEROME
+=== TRAINER_ROUTE8_F ===
+Name: Jirra
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2853,7 +2853,7 @@ Tentacruel
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MATTHEW ===
+=== TRAINER_RIVETSHORE_GYM_A ===
 Name: MATTHEW
 Class: Swimmer M
 Pic: Swimmer M
@@ -2866,7 +2866,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAVID ===
+=== TRAINER_RIVETSHORE_GYM_B ===
 Name: DAVID
 Class: Swimmer M
 Pic: Swimmer M
@@ -2883,7 +2883,7 @@ Carvanha
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SPENCER ===
+=== TRAINER_RIVETSHORE_GYM_C ===
 Name: SPENCER
 Class: Swimmer M
 Pic: Swimmer M
@@ -2900,7 +2900,7 @@ Wingull
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROLAND ===
+=== TRAINER_RIVETSHORE_GYM_D ===
 Name: ROLAND
 Class: Swimmer M
 Pic: Swimmer M
@@ -2913,7 +2913,7 @@ Carvanha
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NOLEN ===
+=== TRAINER_RIVETSHORE_GYM_E ===
 Name: NOLEN
 Class: Swimmer M
 Pic: Swimmer M
@@ -2926,7 +2926,7 @@ Tentacruel
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_STAN ===
+=== TRAINER_RIVETSHORE_GYM_F ===
 Name: STAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -2939,7 +2939,7 @@ Horsea
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BARRY ===
+=== TRAINER_RIVETSHORE_GYM_G ===
 Name: BARRY
 Class: Swimmer M
 Pic: Swimmer M
@@ -2952,7 +2952,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEAN ===
+=== TRAINER_RIVETSHORE_GYM_H ===
 Name: DEAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -2973,7 +2973,7 @@ Carvanha
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RODNEY ===
+=== TRAINER_RIVETSHORE_GYM_I ===
 Name: RODNEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -2986,7 +2986,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RICHARD ===
+=== TRAINER_RIVETSHORE_GYM_J ===
 Name: RICHARD
 Class: Swimmer M
 Pic: Swimmer M
@@ -2999,7 +2999,7 @@ Pelipper
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_HERMAN ===
+=== TRAINER_RIVETSHORE_GYM_LEADER ===
 Name: HERMAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -13267,7 +13267,7 @@ Nuzleaf
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEANDRE ===
+=== TRAINER_RIVETSHORE_GYM_HDRE ===
 Name: DEANDRE
 Class: Youngster
 Pic: Youngster

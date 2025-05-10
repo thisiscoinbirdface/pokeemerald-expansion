@@ -32,6 +32,62 @@ RivetshoreQuarry_Blocker_Trigger_2:
 	end
 
 
+RivetshoreQuarry_Blocker_NPC::
+# 26 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox RivetshoreQuarry_Blocker_NPC_Text_0, MSGBOX_NPC
+	end
+
+
+Rivetshore_Gym_Trainer_A::
+# 40 "data//maps/RivetshoreQuarry/scripts.pory"
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
+# 41 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox Rivetshore_Gym_Trainer_A_Text_0
+# 42 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
+Rivetshore_Gym_Trainer_B::
+# 46 "data//maps/RivetshoreQuarry/scripts.pory"
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
+# 47 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox Rivetshore_Gym_Trainer_A_Text_0
+# 48 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
+Rivetshore_Gym_Trainer_C::
+# 52 "data//maps/RivetshoreQuarry/scripts.pory"
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
+# 53 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox Rivetshore_Gym_Trainer_A_Text_0
+# 54 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
+Rivetshore_Gym_Trainer_D::
+# 58 "data//maps/RivetshoreQuarry/scripts.pory"
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
+# 59 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox Rivetshore_Gym_Trainer_A_Text_0
+# 60 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
+Rivetshore_Gym_Trainer_E::
+# 64 "data//maps/RivetshoreQuarry/scripts.pory"
+	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
+# 65 "data//maps/RivetshoreQuarry/scripts.pory"
+	msgbox Rivetshore_Gym_Trainer_A_Text_0
+# 66 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
 # 15 "data//maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Blocker_Trigger_Movement_0:
 # 15 "data//maps/RivetshoreQuarry/scripts.pory"
@@ -52,3 +108,12 @@ RivetshoreQuarry_Blocker_Trigger_Text_0:
 	.string "not here right now.\p"
 	.string "Where'd he go?\p"
 	.string "What's it to you, kid?$"
+
+RivetshoreQuarry_Blocker_NPC_Text_0:
+# 26 "data//maps/RivetshoreQuarry/scripts.pory"
+	.string "Raazi's down at the bottom of the\n"
+	.string "quarry.$"
+
+Rivetshore_Gym_Trainer_A_Text_0:
+# 40 "data//maps/RivetshoreQuarry/scripts.pory"
+	.string "$"

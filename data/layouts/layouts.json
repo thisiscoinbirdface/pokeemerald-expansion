@@ -5580,6 +5580,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RivetshoreCity_Harbor/border.bin",
       "blockdata_filepath": "data/layouts/RivetshoreCity_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_UNDERPASS",
+      "name": "Rivetshore_Underpass_Layout",
+      "width": 24,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/Rivetshore_Underpass/border.bin",
+      "blockdata_filepath": "data/layouts/Rivetshore_Underpass/map.bin"
     }
   ]
 }

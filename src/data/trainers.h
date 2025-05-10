@@ -6779,10 +6779,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2766
-    [DIFFICULTY_NORMAL][TRAINER_LUIS] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_A] =
     {
 #line 2767
-        .trainerName = _("LUIS"),
+        .trainerName = _("Luin"),
 #line 2768
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2769
@@ -6811,10 +6811,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2779
-    [DIFFICULTY_NORMAL][TRAINER_DOMINIK] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_B] =
     {
 #line 2780
-        .trainerName = _("DOMINIK"),
+        .trainerName = _("Danneon"),
 #line 2781
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2782
@@ -6843,10 +6843,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2792
-    [DIFFICULTY_NORMAL][TRAINER_DOUGLAS] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_C] =
     {
 #line 2793
-        .trainerName = _("DOUGLAS"),
+        .trainerName = _("Digglen"),
 #line 2794
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2795
@@ -6886,10 +6886,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2809
-    [DIFFICULTY_NORMAL][TRAINER_DARRIN] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_D] =
     {
 #line 2810
-        .trainerName = _("DARRIN"),
+        .trainerName = _("Derrin"),
 #line 2811
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2812
@@ -6940,10 +6940,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2830
-    [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_E] =
     {
 #line 2831
-        .trainerName = _("TONY"),
+        .trainerName = _("Bony"),
 #line 2832
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2833
@@ -6972,10 +6972,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2843
-    [DIFFICULTY_NORMAL][TRAINER_JEROME] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE8_F] =
     {
 #line 2844
-        .trainerName = _("JEROME"),
+        .trainerName = _("Jirra"),
 #line 2845
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2846
@@ -7004,7 +7004,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2856
-    [DIFFICULTY_NORMAL][TRAINER_MATTHEW] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_A] =
     {
 #line 2857
         .trainerName = _("MATTHEW"),
@@ -7036,7 +7036,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2869
-    [DIFFICULTY_NORMAL][TRAINER_DAVID] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_B] =
     {
 #line 2870
         .trainerName = _("DAVID"),
@@ -7079,7 +7079,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2886
-    [DIFFICULTY_NORMAL][TRAINER_SPENCER] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_C] =
     {
 #line 2887
         .trainerName = _("SPENCER"),
@@ -7122,7 +7122,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2903
-    [DIFFICULTY_NORMAL][TRAINER_ROLAND] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_D] =
     {
 #line 2904
         .trainerName = _("ROLAND"),
@@ -7154,7 +7154,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2916
-    [DIFFICULTY_NORMAL][TRAINER_NOLEN] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_E] =
     {
 #line 2917
         .trainerName = _("NOLEN"),
@@ -7186,7 +7186,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2929
-    [DIFFICULTY_NORMAL][TRAINER_STAN] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_F] =
     {
 #line 2930
         .trainerName = _("STAN"),
@@ -7218,7 +7218,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2942
-    [DIFFICULTY_NORMAL][TRAINER_BARRY] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_G] =
     {
 #line 2943
         .trainerName = _("BARRY"),
@@ -7250,7 +7250,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2955
-    [DIFFICULTY_NORMAL][TRAINER_DEAN] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_H] =
     {
 #line 2956
         .trainerName = _("DEAN"),
@@ -7304,7 +7304,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2976
-    [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_I] =
     {
 #line 2977
         .trainerName = _("RODNEY"),
@@ -7336,7 +7336,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2989
-    [DIFFICULTY_NORMAL][TRAINER_RICHARD] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_J] =
     {
 #line 2990
         .trainerName = _("RICHARD"),
@@ -7368,7 +7368,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3002
-    [DIFFICULTY_NORMAL][TRAINER_HERMAN] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_LEADER] =
     {
 #line 3003
         .trainerName = _("HERMAN"),
@@ -33244,7 +33244,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 13270
-    [DIFFICULTY_NORMAL][TRAINER_DEANDRE] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_HDRE] =
     {
 #line 13271
         .trainerName = _("DEANDRE"),

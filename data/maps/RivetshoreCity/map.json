@@ -380,6 +380,13 @@
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY_CONSTRUCTION",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_RIVETSHORE_UNDERPASS",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

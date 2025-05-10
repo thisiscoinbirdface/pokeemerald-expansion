@@ -30,3 +30,42 @@ script RivetshoreQuarry_Blocker_NPC{
 
 
 
+
+
+
+
+
+
+script Rivetshore_Gym_Trainer_A{
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Rivetshore_Gym_Trainer_B{
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Rivetshore_Gym_Trainer_C{
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Rivetshore_Gym_Trainer_D{
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+script Rivetshore_Gym_Trainer_E{
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format(""), format(""))
+    msgbox(format(""))
+    releaseall
+    end
+}
+
+
+

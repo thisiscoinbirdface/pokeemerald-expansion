@@ -1391,3 +1391,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RivetshoreCity_Construction/scripts.inc"
 
 	.include "data/maps/RivetshoreCity_Harbor/scripts.inc"
+
+	.include "data/maps/Rivetshore_Underpass/scripts.inc"

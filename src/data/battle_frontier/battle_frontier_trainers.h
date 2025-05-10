@@ -1995,7 +1995,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_WHAT, EC_WORD_I_VE, EC_WORD_BEEN, EC_WORD_HEARING, EC_WORD_IS, EC_WORD_RIGHT},
         .monSet = (const u16[]){FRONTIER_MONS_EXPERT_2C(DRAGONITE)}
     },
-    [FRONTIER_TRAINER_ROLANDO] = {
+    [FRONTIER_TRAINER_RIVETSHORE_GYM_DO] = {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("ROLANDO"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_SUPER, EC_WORD_POKEMON, EC_WORD_HERO, EC_WORD_EXCL},
@@ -2003,7 +2003,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_BEAT, EC_WORD_A, EC_WORD_HERO},
         .monSet = (const u16[]){FRONTIER_MONS_PSYCHIC_2(LATIOS, ARTICUNO, ZAPDOS, MOLTRES)}
     },
-    [FRONTIER_TRAINER_STANLY] = {
+    [FRONTIER_TRAINER_RIVETSHORE_GYM_FLY] = {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("STANLY"),
         .speechBefore = {EC_WORD_THIS, EC_WORD_SHOULD, EC_WORD_BE, EC_WORD_AN, EC_WORD_EASY, EC_WORD_MATCH},

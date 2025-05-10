@@ -1010,7 +1010,7 @@ const struct Tileset gTileset_Rivetshore =
     .palettes = gTilesetPalettes_Rivetshore,
     .metatiles = gMetatiles_Rivetshore,
     .metatileAttributes = gMetatileAttributes_Rivetshore,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_PellucaGym =
