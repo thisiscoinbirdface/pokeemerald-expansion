@@ -45,44 +45,16 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 1,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    },
-    {
-      "type": "trigger",
-      "x": 0,
-      "y": 4,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 4,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    }
+
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RivetshoreCity_StorageBay_Trigger0"
+    }
   ]
 }

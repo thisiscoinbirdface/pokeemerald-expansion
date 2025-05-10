@@ -1,15 +1,9 @@
 mapscripts RivetshoreCity_StorageBay_MapScripts{}
 
 script RivetshoreCity_StorageBay_Slaking{
-    msgbox(format("It's fast asleep..."), MSGBOX_NPC)
-    end
-
     //if flute is used
     checkitem(ITEM_POKE_FLUTE)
-    if (var(VAR_RESULT) == 0){
-        msgbox(format("It's fast asleep..."), MSGBOX_NPC)
-        end        
-    } else {
+    if (var(VAR_RESULT) == 1){
         msgbox(format("It's fast asleep...\nUse Poké Flute?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
@@ -31,9 +25,61 @@ script RivetshoreCity_StorageBay_Slaking{
             releaseall
             end
         }
-
-
-
+    
+    } else {
+        msgbox(format("It's fast asleep..."), MSGBOX_NPC)
+        end    
     }
 }
+
+script RivetshoreCity_StorageBay_Trigger0{
+    lockall
+
+    msgbox(format("There's a label on this container...\pCARGO FOR S.S. ELEGANT\pTap the storage container?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("It sounds hollow...maybe there's enough space inside to fit in!\pEnter the storage container?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Are you sure? Once you enter, there's no coming back!"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                //move player
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_right))
+                waitmovement(0)
+
+                //the exit cutscene
+
+
+                //stepcallback
+                callnative(CB2_StorageCutscene)
+            }
+        }
+    }
+    releaseall
+    end
+}
+
+script RivetshoreCity_StorageBay_Trigger1{
+    lockall
+
+    msgbox(format("There's a label on this container...\pCARGO FOR S.S. ELEGANT\pTap the storage container?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("It sounds hollow...maybe there's enough space inside to fit in!\pEnter the storage container?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Are you sure? Once you enter, there's no coming back!"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == 1){
+                //move player
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_up jump_right))
+                waitmovement(0)
+
+                //the exit cutscene
+
+
+                //stepcallback
+                callnative(CB2_StorageCutscene)
+            }
+        }
+    }
+    releaseall
+    end
+}
+
 

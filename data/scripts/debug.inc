@@ -143,8 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-@	warp MAP_SSELEGANT_INSIDE_STORAGE, 2, 2
-	callnative CB2_StorageCutscene
+	warp MAP_RIVETSHORE_CITY_STORAGE_BAY, 0, 4
 	release
 	end
 

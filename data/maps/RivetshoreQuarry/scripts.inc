@@ -1,8 +1,8 @@
-# 1 "data//maps/RivetshoreQuarry/scripts.pory"
+# 1 "data/maps/RivetshoreQuarry/scripts.pory"
 
-# 2 "data//maps/RivetshoreQuarry/scripts.pory"
+# 2 "data/maps/RivetshoreQuarry/scripts.pory"
     .set LOCALID_BLOCKER, 7
-# 3 "data//maps/RivetshoreQuarry/scripts.pory"
+# 3 "data/maps/RivetshoreQuarry/scripts.pory"
     .set LOCALID_RAAZI, 6
 
 RivetshoreQuarry_MapScripts::
@@ -10,31 +10,35 @@ RivetshoreQuarry_MapScripts::
 
 
 RivetshoreQuarry_Raazi_Callout_Trigger::
-# 8 "data//maps/RivetshoreQuarry/scripts.pory"
+# 8 "data/maps/RivetshoreQuarry/scripts.pory"
 	goto_if_set FLAG_RIVETSHORE_RAAZI_CALLOUT, RivetshoreQuarry_Raazi_Callout_Trigger_2
-# 10 "data//maps/RivetshoreQuarry/scripts.pory"
+# 10 "data/maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 12 "data//maps/RivetshoreQuarry/scripts.pory"
+# 12 "data/maps/RivetshoreQuarry/scripts.pory"
 	special SpawnCameraObject
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreQuarry_Raazi_Callout_Trigger_Movement_0
-# 14 "data//maps/RivetshoreQuarry/scripts.pory"
-	waitmovement OBJ_EVENT_ID_CAMERA
-# 16 "data//maps/RivetshoreQuarry/scripts.pory"
-	speakername RivetshoreQuarry_Raazi_Callout_Trigger_Text_0
-# 17 "data//maps/RivetshoreQuarry/scripts.pory"
-	msgbox RivetshoreQuarry_Raazi_Callout_Trigger_Text_1
-# 18 "data//maps/RivetshoreQuarry/scripts.pory"
-	release
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreQuarry_Raazi_Callout_Trigger_Movement_1
-# 21 "data//maps/RivetshoreQuarry/scripts.pory"
-	waitmovement OBJ_EVENT_ID_CAMERA
-# 22 "data//maps/RivetshoreQuarry/scripts.pory"
+# 14 "data/maps/RivetshoreQuarry/scripts.pory"
+	waitmovement 0
+# 15 "data/maps/RivetshoreQuarry/scripts.pory"
 	special RemoveCameraObject
-# 24 "data//maps/RivetshoreQuarry/scripts.pory"
+# 17 "data/maps/RivetshoreQuarry/scripts.pory"
+	speakername RivetshoreQuarry_Raazi_Callout_Trigger_Text_0
+# 18 "data/maps/RivetshoreQuarry/scripts.pory"
+	msgbox RivetshoreQuarry_Raazi_Callout_Trigger_Text_1
+# 19 "data/maps/RivetshoreQuarry/scripts.pory"
+	release
+# 21 "data/maps/RivetshoreQuarry/scripts.pory"
+	special SpawnCameraObject
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreQuarry_Raazi_Callout_Trigger_Movement_1
+# 23 "data/maps/RivetshoreQuarry/scripts.pory"
+	waitmovement 0
+# 24 "data/maps/RivetshoreQuarry/scripts.pory"
+	special RemoveCameraObject
+# 26 "data/maps/RivetshoreQuarry/scripts.pory"
 	setflag FLAG_RIVETSHORE_RAAZI_CALLOUT
-# 25 "data//maps/RivetshoreQuarry/scripts.pory"
+# 27 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
@@ -43,37 +47,37 @@ RivetshoreQuarry_Raazi_Callout_Trigger_2:
 
 
 RivetshoreQuarry_Fall_Trigger::
-# 30 "data//maps/RivetshoreQuarry/scripts.pory"
+# 32 "data/maps/RivetshoreQuarry/scripts.pory"
 	goto_if_set FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED, RivetshoreQuarry_Fall_Trigger_2
-# 32 "data//maps/RivetshoreQuarry/scripts.pory"
+# 34 "data/maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 34 "data//maps/RivetshoreQuarry/scripts.pory"
+# 36 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox RivetshoreQuarry_Fall_Trigger_Text_0, MSGBOX_NPC
-# 35 "data//maps/RivetshoreQuarry/scripts.pory"
+# 37 "data/maps/RivetshoreQuarry/scripts.pory"
 	release
-# 36 "data//maps/RivetshoreQuarry/scripts.pory"
+# 38 "data/maps/RivetshoreQuarry/scripts.pory"
 	delay 16
-# 37 "data//maps/RivetshoreQuarry/scripts.pory"
+# 39 "data/maps/RivetshoreQuarry/scripts.pory"
 	speakername RivetshoreQuarry_Raazi_Callout_Trigger_Text_0
-# 38 "data//maps/RivetshoreQuarry/scripts.pory"
+# 40 "data/maps/RivetshoreQuarry/scripts.pory"
 	message RivetshoreQuarry_Fall_Trigger_Text_1
-# 39 "data//maps/RivetshoreQuarry/scripts.pory"
+# 41 "data/maps/RivetshoreQuarry/scripts.pory"
 	setvar VAR_0x8004, 2
-# 40 "data//maps/RivetshoreQuarry/scripts.pory"
+# 42 "data/maps/RivetshoreQuarry/scripts.pory"
 	setvar VAR_0x8005, 2
-# 41 "data//maps/RivetshoreQuarry/scripts.pory"
+# 43 "data/maps/RivetshoreQuarry/scripts.pory"
 	setvar VAR_0x8006, 30
-# 42 "data//maps/RivetshoreQuarry/scripts.pory"
+# 44 "data/maps/RivetshoreQuarry/scripts.pory"
 	setvar VAR_0x8007, 5
-# 43 "data//maps/RivetshoreQuarry/scripts.pory"
+# 45 "data/maps/RivetshoreQuarry/scripts.pory"
 	special ShakeCamera
-# 44 "data//maps/RivetshoreQuarry/scripts.pory"
+# 46 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitstate
-# 48 "data//maps/RivetshoreQuarry/scripts.pory"
+# 50 "data/maps/RivetshoreQuarry/scripts.pory"
 	playse SE_FALL
-# 50 "data//maps/RivetshoreQuarry/scripts.pory"
+# 52 "data/maps/RivetshoreQuarry/scripts.pory"
 	warphole MAP_RIVETSHORE_QUARRY_INTERIOR
-# 52 "data//maps/RivetshoreQuarry/scripts.pory"
+# 54 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
@@ -82,9 +86,9 @@ RivetshoreQuarry_Fall_Trigger_2:
 
 
 RivetshoreQuarry_Trap_Cleared_Trigger::
-# 57 "data//maps/RivetshoreQuarry/scripts.pory"
+# 59 "data/maps/RivetshoreQuarry/scripts.pory"
 	goto_if_set FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED, RivetshoreQuarry_Trap_Cleared_Trigger_2
-# 58 "data//maps/RivetshoreQuarry/scripts.pory"
+# 60 "data/maps/RivetshoreQuarry/scripts.pory"
 	setflag FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED
 	end
 
@@ -93,23 +97,23 @@ RivetshoreQuarry_Trap_Cleared_Trigger_2:
 
 
 RivetshoreQuarry_Blocker_Trigger::
-# 63 "data//maps/RivetshoreQuarry/scripts.pory"
+# 65 "data/maps/RivetshoreQuarry/scripts.pory"
 	goto_if_set FLAG_RIVETSHORE_ASSEMBLY, RivetshoreQuarry_Blocker_Trigger_2
-# 65 "data//maps/RivetshoreQuarry/scripts.pory"
+# 67 "data/maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 66 "data//maps/RivetshoreQuarry/scripts.pory"
+# 68 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_BLOCKER, RivetshoreQuarry_Blocker_Trigger_Movement_0
-# 67 "data//maps/RivetshoreQuarry/scripts.pory"
+# 69 "data/maps/RivetshoreQuarry/scripts.pory"
 	movedelay
-# 68 "data//maps/RivetshoreQuarry/scripts.pory"
+# 70 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox RivetshoreQuarry_Blocker_Trigger_Text_0
-# 69 "data//maps/RivetshoreQuarry/scripts.pory"
+# 71 "data/maps/RivetshoreQuarry/scripts.pory"
 	release
-# 70 "data//maps/RivetshoreQuarry/scripts.pory"
+# 72 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreQuarry_Blocker_Trigger_Movement_1
-# 71 "data//maps/RivetshoreQuarry/scripts.pory"
+# 73 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 72 "data//maps/RivetshoreQuarry/scripts.pory"
+# 74 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
@@ -118,317 +122,317 @@ RivetshoreQuarry_Blocker_Trigger_2:
 
 
 RivetshoreQuarry_Blocker_NPC::
-# 77 "data//maps/RivetshoreQuarry/scripts.pory"
+# 79 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox RivetshoreQuarry_Blocker_NPC_Text_0, MSGBOX_NPC
 	end
 
 
 Rivetshore_Gym_Trainer_A::
-# 91 "data//maps/RivetshoreQuarry/scripts.pory"
+# 93 "data/maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
-# 92 "data//maps/RivetshoreQuarry/scripts.pory"
+# 94 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox Rivetshore_Gym_Trainer_A_Text_0
-# 93 "data//maps/RivetshoreQuarry/scripts.pory"
+# 95 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Gym_Trainer_B::
-# 97 "data//maps/RivetshoreQuarry/scripts.pory"
+# 99 "data/maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
-# 98 "data//maps/RivetshoreQuarry/scripts.pory"
+# 100 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox Rivetshore_Gym_Trainer_A_Text_0
-# 99 "data//maps/RivetshoreQuarry/scripts.pory"
+# 101 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Gym_Trainer_C::
-# 103 "data//maps/RivetshoreQuarry/scripts.pory"
+# 105 "data/maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
-# 104 "data//maps/RivetshoreQuarry/scripts.pory"
+# 106 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox Rivetshore_Gym_Trainer_A_Text_0
-# 105 "data//maps/RivetshoreQuarry/scripts.pory"
+# 107 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Gym_Trainer_D::
-# 109 "data//maps/RivetshoreQuarry/scripts.pory"
+# 111 "data/maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
-# 110 "data//maps/RivetshoreQuarry/scripts.pory"
+# 112 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox Rivetshore_Gym_Trainer_A_Text_0
-# 111 "data//maps/RivetshoreQuarry/scripts.pory"
+# 113 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Gym_Trainer_E::
-# 115 "data//maps/RivetshoreQuarry/scripts.pory"
+# 117 "data/maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_A, Rivetshore_Gym_Trainer_A_Text_0, Rivetshore_Gym_Trainer_A_Text_0
-# 116 "data//maps/RivetshoreQuarry/scripts.pory"
+# 118 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox Rivetshore_Gym_Trainer_A_Text_0
-# 117 "data//maps/RivetshoreQuarry/scripts.pory"
+# 119 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Quarry_Aron::
-# 130 "data//maps/RivetshoreQuarry/scripts.pory"
+# 132 "data/maps/RivetshoreQuarry/scripts.pory"
 	playmoncry SPECIES_ARON, CRY_MODE_NORMAL
 	end
 
 
 Rivetshore_Raazi_Talk::
-# 135 "data//maps/RivetshoreQuarry/scripts.pory"
+# 137 "data/maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 136 "data//maps/RivetshoreQuarry/scripts.pory"
+# 138 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_0
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_RAAZI, Rivetshore_Raazi_Talk_Movement_0
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Rivetshore_Raazi_Talk_Movement_1
-# 140 "data//maps/RivetshoreQuarry/scripts.pory"
+# 142 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 141 "data//maps/RivetshoreQuarry/scripts.pory"
+# 143 "data/maps/RivetshoreQuarry/scripts.pory"
 	playbgm MUS_VS_GYM_LEADER, FALSE
-# 142 "data//maps/RivetshoreQuarry/scripts.pory"
+# 144 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_1
-# 143 "data//maps/RivetshoreQuarry/scripts.pory"
+# 145 "data/maps/RivetshoreQuarry/scripts.pory"
 	release
-# 146 "data//maps/RivetshoreQuarry/scripts.pory"
+# 148 "data/maps/RivetshoreQuarry/scripts.pory"
 	playbgm MUS_DUMMY, FALSE
-# 147 "data//maps/RivetshoreQuarry/scripts.pory"
+# 149 "data/maps/RivetshoreQuarry/scripts.pory"
 	playse SE_POKENAV_CALL
-# 148 "data//maps/RivetshoreQuarry/scripts.pory"
+# 150 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitse
-# 149 "data//maps/RivetshoreQuarry/scripts.pory"
+# 151 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_RAAZI, Rivetshore_Raazi_Talk_Movement_2
-# 150 "data//maps/RivetshoreQuarry/scripts.pory"
+# 152 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 151 "data//maps/RivetshoreQuarry/scripts.pory"
+# 153 "data/maps/RivetshoreQuarry/scripts.pory"
 	delay 16
-# 152 "data//maps/RivetshoreQuarry/scripts.pory"
+# 154 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_2
-# 154 "data//maps/RivetshoreQuarry/scripts.pory"
+# 156 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_RAAZI, Rivetshore_Raazi_Talk_Movement_3
-# 155 "data//maps/RivetshoreQuarry/scripts.pory"
+# 157 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 156 "data//maps/RivetshoreQuarry/scripts.pory"
+# 158 "data/maps/RivetshoreQuarry/scripts.pory"
 	delay 16
-# 157 "data//maps/RivetshoreQuarry/scripts.pory"
+# 159 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_3
-# 158 "data//maps/RivetshoreQuarry/scripts.pory"
+# 160 "data/maps/RivetshoreQuarry/scripts.pory"
 	playse SE_POKENAV_HANG_UP
-# 159 "data//maps/RivetshoreQuarry/scripts.pory"
+# 161 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitse
-# 160 "data//maps/RivetshoreQuarry/scripts.pory"
+# 162 "data/maps/RivetshoreQuarry/scripts.pory"
 	delay 16
-# 161 "data//maps/RivetshoreQuarry/scripts.pory"
+# 163 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_RAAZI, Rivetshore_Raazi_Talk_Movement_4
-# 162 "data//maps/RivetshoreQuarry/scripts.pory"
+# 164 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 163 "data//maps/RivetshoreQuarry/scripts.pory"
+# 165 "data/maps/RivetshoreQuarry/scripts.pory"
 	delay 16
-# 164 "data//maps/RivetshoreQuarry/scripts.pory"
+# 166 "data/maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_4
-# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+# 167 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Rivetshore_Raazi_Talk_Movement_5
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	applymovement LOCALID_RAAZI, Rivetshore_Raazi_Talk_Movement_6
-# 167 "data//maps/RivetshoreQuarry/scripts.pory"
+# 169 "data/maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
-# 169 "data//maps/RivetshoreQuarry/scripts.pory"
+# 171 "data/maps/RivetshoreQuarry/scripts.pory"
 	removeobject LOCALID_RAAZI
-# 170 "data//maps/RivetshoreQuarry/scripts.pory"
+# 172 "data/maps/RivetshoreQuarry/scripts.pory"
 	setflag FLAG_RIVETSHORE_RAAZI_CALL
-# 172 "data//maps/RivetshoreQuarry/scripts.pory"
+# 174 "data/maps/RivetshoreQuarry/scripts.pory"
 	fadenewbgm MUS_RG_PEWTER
-# 173 "data//maps/RivetshoreQuarry/scripts.pory"
+# 175 "data/maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Raazi_Callout_Trigger_Movement_0:
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_down
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_down
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_down
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_down
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_left
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_left
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_left
-# 13 "data//maps/RivetshoreQuarry/scripts.pory"
+# 13 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_left
 	step_end
 
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Raazi_Callout_Trigger_Movement_1:
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 20 "data//maps/RivetshoreQuarry/scripts.pory"
+# 22 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
 	step_end
 
-# 66 "data//maps/RivetshoreQuarry/scripts.pory"
+# 68 "data/maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Blocker_Trigger_Movement_0:
-# 66 "data//maps/RivetshoreQuarry/scripts.pory"
+# 68 "data/maps/RivetshoreQuarry/scripts.pory"
 	emote_exclamation_mark
-# 66 "data//maps/RivetshoreQuarry/scripts.pory"
+# 68 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_right
 	step_end
 
-# 70 "data//maps/RivetshoreQuarry/scripts.pory"
+# 72 "data/maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Blocker_Trigger_Movement_1:
-# 70 "data//maps/RivetshoreQuarry/scripts.pory"
+# 72 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_down
 	step_end
 
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_0:
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 	lock_facing_direction
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 	jump_left
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_right
-# 138 "data//maps/RivetshoreQuarry/scripts.pory"
+# 140 "data/maps/RivetshoreQuarry/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_1:
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 	lock_facing_direction
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 	jump_right
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_left
-# 139 "data//maps/RivetshoreQuarry/scripts.pory"
+# 141 "data/maps/RivetshoreQuarry/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 149 "data//maps/RivetshoreQuarry/scripts.pory"
+# 151 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_2:
-# 149 "data//maps/RivetshoreQuarry/scripts.pory"
+# 151 "data/maps/RivetshoreQuarry/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 154 "data//maps/RivetshoreQuarry/scripts.pory"
+# 156 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_3:
-# 154 "data//maps/RivetshoreQuarry/scripts.pory"
+# 156 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_down
 	step_end
 
-# 161 "data//maps/RivetshoreQuarry/scripts.pory"
+# 163 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_4:
-# 161 "data//maps/RivetshoreQuarry/scripts.pory"
+# 163 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_right
 	step_end
 
-# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+# 167 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_5:
-# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+# 167 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 165 "data//maps/RivetshoreQuarry/scripts.pory"
+# 167 "data/maps/RivetshoreQuarry/scripts.pory"
 	face_down
 	step_end
 
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 Rivetshore_Raazi_Talk_Movement_6:
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
-# 166 "data//maps/RivetshoreQuarry/scripts.pory"
+# 168 "data/maps/RivetshoreQuarry/scripts.pory"
 	walk_up
 	step_end
 
 RivetshoreQuarry_Raazi_Callout_Trigger_Text_0:
-# 16 "data//maps/RivetshoreQuarry/scripts.pory"
+# 17 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Raazi$"
 
 RivetshoreQuarry_Raazi_Callout_Trigger_Text_1:
-# 17 "data//maps/RivetshoreQuarry/scripts.pory"
+# 18 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Who do we have here?\p"
 	.string "Seems like you're here to contest me\n"
 	.string "for my gym badge. Very well then - come\l"
 	.string "over here and show me your worth!$"
 
 RivetshoreQuarry_Fall_Trigger_Text_0:
-# 34 "data//maps/RivetshoreQuarry/scripts.pory"
+# 36 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "The floor was rigged! It's a trap!$"
 
 RivetshoreQuarry_Fall_Trigger_Text_1:
-# 38 "data//maps/RivetshoreQuarry/scripts.pory"
+# 40 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Come back up and challenge me,\n"
 	.string "trainer...if you can!$"
 
 RivetshoreQuarry_Blocker_Trigger_Text_0:
-# 68 "data//maps/RivetshoreQuarry/scripts.pory"
+# 70 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Sorry. The quarry's closed sinze Raazi's\n"
 	.string "not here right now.\p"
 	.string "Where'd he go?\p"
 	.string "What's it to you, kid?$"
 
 RivetshoreQuarry_Blocker_NPC_Text_0:
-# 77 "data//maps/RivetshoreQuarry/scripts.pory"
+# 79 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Raazi's down at the bottom of the\n"
 	.string "quarry.$"
 
 Rivetshore_Gym_Trainer_A_Text_0:
-# 91 "data//maps/RivetshoreQuarry/scripts.pory"
+# 93 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "$"
 
 Rivetshore_Raazi_Talk_Text_0:
-# 136 "data//maps/RivetshoreQuarry/scripts.pory"
+# 138 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "You managed to come out of that cave\n"
 	.string "unscathed?\p"
 	.string "I'm impressed.\p"
@@ -446,16 +450,16 @@ Rivetshore_Raazi_Talk_Text_0:
 	.string "will you rise?$"
 
 Rivetshore_Raazi_Talk_Text_1:
-# 142 "data//maps/RivetshoreQuarry/scripts.pory"
+# 144 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Let me see whether you can face the\n"
 	.string "might and fury of -$"
 
 Rivetshore_Raazi_Talk_Text_2:
-# 152 "data//maps/RivetshoreQuarry/scripts.pory"
+# 154 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Forgive me. I must take this call.$"
 
 Rivetshore_Raazi_Talk_Text_3:
-# 157 "data//maps/RivetshoreQuarry/scripts.pory"
+# 159 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Hello?\p"
 	.string "...\p"
 	.string "...\p"
@@ -464,7 +468,7 @@ Rivetshore_Raazi_Talk_Text_3:
 	.string "We'll depart as soon as I reach.$"
 
 Rivetshore_Raazi_Talk_Text_4:
-# 164 "data//maps/RivetshoreQuarry/scripts.pory"
+# 166 "data/maps/RivetshoreQuarry/scripts.pory"
 	.string "Apologies, {PLAYER}. I must put this\n"
 	.string "challenge on hold as I have an\l"
 	.string "unavoidable engagement.\p"

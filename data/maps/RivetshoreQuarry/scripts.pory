@@ -11,14 +11,16 @@ script RivetshoreQuarry_Raazi_Callout_Trigger{
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4 walk_left * 4))
-    waitmovement(OBJ_EVENT_ID_CAMERA)
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     speakername("Raazi")
     msgbox(format("Who do we have here?\pSeems like you're here to contest me for my gym badge. Very well then - come over here and show me your worth!"))
     release
 
+    special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 4 walk_up * 4))
-    waitmovement(OBJ_EVENT_ID_CAMERA)
+    waitmovement(0)
     special(RemoveCameraObject)
 
     setflag(FLAG_RIVETSHORE_RAAZI_CALLOUT)
