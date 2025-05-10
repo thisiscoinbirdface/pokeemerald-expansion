@@ -2,7 +2,7 @@
   "id": "MAP_RIVETSHORE_QUARRY",
   "name": "RivetshoreQuarry",
   "layout": "LAYOUT_RIVETSHORE_QUARRY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_PEWTER",
   "region_map_section": "MAPSEC_RIVETSHORE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -95,8 +95,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Rivetshore_Raazi_Talk",
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
@@ -452,6 +452,15 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "RivetshoreQuarry_Raazi_Callout_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RivetshoreQuarry_Trap_Cleared_Trigger"
     }
   ],
   "bg_events": [

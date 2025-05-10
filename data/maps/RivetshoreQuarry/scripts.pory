@@ -1,5 +1,6 @@
 raw`
     .set LOCALID_BLOCKER, 7
+    .set LOCALID_RAAZI, 6
 `
 mapscripts RivetshoreQuarry_MapScripts{}
 
@@ -25,6 +26,8 @@ script RivetshoreQuarry_Raazi_Callout_Trigger{
 }
 
 script RivetshoreQuarry_Fall_Trigger{
+    if (flag(FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED)) {end} 
+
     lockall
 
     msgbox(format("The floor was rigged! It's a trap!"), MSGBOX_NPC)
@@ -46,6 +49,12 @@ script RivetshoreQuarry_Fall_Trigger{
 	warphole(MAP_RIVETSHORE_QUARRY_INTERIOR)
 
     releaseall
+    end
+}
+
+script RivetshoreQuarry_Trap_Cleared_Trigger{
+    if (flag(FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED)) {end}
+    setflag(FLAG_RIVETSHORE_QUARRY_TRAP_CLEARED)
     end
 }
 
@@ -121,7 +130,48 @@ script Rivetshore_Quarry_Aron{
     end
 }
 
+script Rivetshore_Raazi_Talk{
+    lockall
+    msgbox_delay("Raazi", format("You managed to come out of that cave unscathed?\pI'm impressed.\p...\pOr perhaps it's simply time for me to expand the cave?\pNo matter - a trainer who faces me is a trainer who I must face.\pI am Raazi! The Gym Leader of Rivetshore City and the strongest leader in all of Cormoria. Few trainers posess enough grit to reach where you stand, {PLAYER}. But their fate is to be crushed by my hand! Will you fall? Or will you rise?"))
 
+    applymovement(LOCALID_RAAZI, moves(lock_facing_direction jump_left face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction jump_right face_left))
+    waitmovement(0)
+    playbgm(MUS_VS_GYM_LEADER, FALSE)
+    msgbox_delay("Raazi", format("Let me see whether you can face the might and fury of -"))
+    release
+
+    //exit
+    playbgm(MUS_DUMMY, FALSE)
+    playse(SE_POKENAV_CALL)
+    waitse
+    applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)    
+    msgbox_delay("Raazi", format("Forgive me. I must take this call."))
+    
+    applymovement(LOCALID_RAAZI, moves(face_down))
+    waitmovement(0)
+    delay(16)    
+    msgbox_delay("Raazi", format("Hello?\p...\p...\pViniel and Carona are here?\pVery well. I'm coming."))
+    playse(SE_POKENAV_HANG_UP)
+    waitse
+    delay(16)
+    applymovement(LOCALID_RAAZI, moves(face_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Raazi", format("Apologies, {PLAYER}. I must put this challenge on hold as I have an unavoidable engagement.\pShall we do this another time?"))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up face_down))
+    applymovement(LOCALID_RAAZI, moves(walk_right * 10))
+    waitmovement(0)
+
+    removeobject(LOCALID_RAAZI)
+    setflag(FLAG_RIVETSHORE_RAAZI_CALL)
+
+    fadenewbgm(MUS_RG_PEWTER)
+    releaseall
+    end
+}
 
 
 
