@@ -143,6 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+	warp MAP_RIVETSHORE_QUARRY, 37, 27
 	release
 	end
 

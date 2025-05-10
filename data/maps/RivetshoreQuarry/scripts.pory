@@ -69,3 +69,14 @@ script Rivetshore_Gym_Trainer_E{
 
 
 
+
+
+
+
+
+
+script Rivetshore_Quarry_Aron{
+    playmoncry(SPECIES_ARON, CRY_MODE_NORMAL)
+    end
+}
+

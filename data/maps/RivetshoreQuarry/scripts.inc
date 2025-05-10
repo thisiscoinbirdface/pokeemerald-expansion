@@ -88,6 +88,12 @@ Rivetshore_Gym_Trainer_E::
 	end
 
 
+Rivetshore_Quarry_Aron::
+# 79 "data//maps/RivetshoreQuarry/scripts.pory"
+	playmoncry SPECIES_ARON, CRY_MODE_NORMAL
+	end
+
+
 # 15 "data//maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Blocker_Trigger_Movement_0:
 # 15 "data//maps/RivetshoreQuarry/scripts.pory"

@@ -134,8 +134,8 @@
   ],
   "warp_events": [
     {
-      "x": 5,
-      "y": 1,
+      "x": 4,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_WINTERLILY_HOLLOW",
       "dest_warp_id": "7"
