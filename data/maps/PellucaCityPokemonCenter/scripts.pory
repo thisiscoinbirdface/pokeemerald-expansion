@@ -117,6 +117,7 @@ script PellucaCity_EventEnd{
 
 	setvar(VAR_PELLUCA_MAYOR_QUEST, 10)
 	setflag(FLAG_PELLUCA_PC_CHARS)
+    setflag(FLAG_PELLUCA_QUEST_END)
 
 	releaseall
 	end
