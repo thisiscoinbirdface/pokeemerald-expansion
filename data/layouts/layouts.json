@@ -5620,6 +5620,16 @@
       "secondary_tileset": "gTileset_InsideOfTruck",
       "border_filepath": "data/layouts/SSElegant_InsideStorage/border.bin",
       "blockdata_filepath": "data/layouts/SSElegant_InsideStorage/map.bin"
+    },
+    {
+      "id": "LAYOUT_SSELEGANT",
+      "name": "SSElegant_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SSElegant",
+      "border_filepath": "data/layouts/SSElegant/border.bin",
+      "blockdata_filepath": "data/layouts/SSElegant/map.bin"
     }
   ]
 }

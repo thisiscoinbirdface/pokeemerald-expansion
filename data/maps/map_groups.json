@@ -4,6 +4,7 @@
     "gMapGroup_Phase2",
     "gMapGroup_Phase3",
     "gMapGroup_Phase4",
+    "gMapGroup_Phase5",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -167,6 +168,9 @@
     "RivetshoreQuarry_Interior",
     "RivetshoreCity_StorageBay",
     "SSElegant_InsideStorage"
+  ],
+  "gMapGroup_Phase5": [
+    "SSElegant"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

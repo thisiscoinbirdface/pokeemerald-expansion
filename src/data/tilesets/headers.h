@@ -1023,3 +1023,14 @@ const struct Tileset gTileset_PellucaGym =
     .metatileAttributes = gMetatileAttributes_PellucaGym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SSElegant =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SSElegant,
+    .palettes = gTilesetPalettes_SSElegant,
+    .metatiles = gMetatiles_SSElegant,
+    .metatileAttributes = gMetatileAttributes_SSElegant,
+    .callback = NULL,
+};
