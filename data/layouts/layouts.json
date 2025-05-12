@@ -5660,6 +5660,16 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/SSElegant_Common/border.bin",
       "blockdata_filepath": "data/layouts/SSElegant_Common/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNCHARTED_ISLAND",
+      "name": "UnchartedIsland_Layout",
+      "width": 80,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/UnchartedIsland/border.bin",
+      "blockdata_filepath": "data/layouts/UnchartedIsland/map.bin"
     }
   ]
 }

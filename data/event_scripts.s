@@ -1407,3 +1407,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SSElegant_Rooms/scripts.inc"
 
 	.include "data/maps/SSElegant_Common/scripts.inc"
+
+	.include "data/maps/UnchartedIsland/scripts.inc"
