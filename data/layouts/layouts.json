@@ -5654,8 +5654,8 @@
     {
       "id": "LAYOUT_SSELEGANT_COMMON",
       "name": "SSElegant_Common_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 9,
+      "height": 10,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/SSElegant_Common/border.bin",

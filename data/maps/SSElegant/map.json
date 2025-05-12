@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_RAAZI",
       "x": 21,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(AGGRON)",
       "x": 22,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -54,6 +54,13 @@
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT_ROOMS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_SSELEGANT_COMMON",
       "dest_warp_id": "0"
     }
   ],
