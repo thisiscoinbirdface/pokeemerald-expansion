@@ -21,22 +21,22 @@
       "x": 4,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_RIVETSHORE_CITY",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 4,
-      "y": 1,
-      "elevation": 0,
-      "dest_map": "MAP_RIVETSHORE_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_SSELEGANT_STORAGE",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     },
     {
       "x": 4,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_RIVETSHORE_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_SSELEGANT_STORAGE",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_SSELEGANT_STORAGE",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     }
   ],
   "coord_events": [

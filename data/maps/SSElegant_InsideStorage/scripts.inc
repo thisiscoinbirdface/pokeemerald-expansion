@@ -7,6 +7,7 @@ InsideStorage_OnLoad:
 	setmetatile 4, 1, METATILE_InsideOfTruck_ExitLight_Top, FALSE
 	setmetatile 4, 2, METATILE_InsideOfTruck_ExitLight_Mid, FALSE
 	setmetatile 4, 3, METATILE_InsideOfTruck_ExitLight_Bottom, FALSE
+	setdynamicwarp MAP_SSELEGANT_STORAGE, 1, 2
 	end
 
 InsideStorage_OnResume:
