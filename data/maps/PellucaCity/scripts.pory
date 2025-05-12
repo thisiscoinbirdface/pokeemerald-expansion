@@ -297,6 +297,8 @@ script PellucaCity_Blocker{
     end
 }
 script PellucaCity_Blocker_Trigger{
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 10) {end}
+
     applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
     speakername("Q-squad Grunt")
     msgbox(format("Hey, kid! There's a toll if you wanna get out.\pYeah, that's right! You gotta pay 999999.\pAin't got the money?\pThen get packing!"))
