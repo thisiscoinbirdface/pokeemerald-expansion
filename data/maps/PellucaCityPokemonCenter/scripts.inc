@@ -205,77 +205,81 @@ PellucaCity_EventEnd::
 	waitmovement 0
 # 116 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	removeobject LOCALID_QWIL
-# 118 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	setvar VAR_PELLUCA_MAYOR_QUEST, 10
 # 119 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	setflag FLAG_PELLUCA_PC_CHARS
+	clearflag FLAG_SYS_SURF_ENABLED
 # 120 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	removeitem ITEM_HM03
+# 123 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	setvar VAR_PELLUCA_MAYOR_QUEST, 10
+# 124 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	setflag FLAG_PELLUCA_PC_CHARS
+# 125 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	setflag FLAG_PELLUCA_QUEST_END
-# 122 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 127 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_PokemonCenter_OnTransition::
-# 138 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 143 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	setrespawn HEAL_LOCATION_PELLUCA_CITY
 	return
 
 
 PellucaCity_PokemonCenter_EventScript_Nurse::
-# 142 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 147 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	lockall
-# 143 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 148 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	setvar VAR_0x800B, 1
-# 144 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 149 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
-# 145 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 150 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	waitmessage
-# 146 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 151 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	releaseall
 	return
 
 
 PellucaCity_PokemonCenter_NPC1::
-# 155 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 160 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_NPC1_Text_0
 	return
 
 
 PellucaCity_PokemonCenter_NPC2::
-# 158 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_NPC2_Text_0
 	return
 
 
 PellucaCity_PokemonCenter_Nurse1::
-# 166 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 171 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse1_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse2::
-# 170 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 175 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse3::
-# 174 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 179 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse3_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse4::
-# 178 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse4_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Chansey::
-# 182 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 187 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 188 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Chansey_Text_0, MSGBOX_NPC
 	end
 
@@ -455,43 +459,43 @@ PellucaCity_EventEnd_Text_17:
 	.string "I were you, I'd be extra careful!$"
 
 PellucaCity_PokemonCenter_NPC1_Text_0:
-# 155 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 160 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "The signature mark of the Qwilsquad is\n"
 	.string "their Qwilfish! Apparently the spikes\l"
 	.string "represent their passion or something.$"
 
 PellucaCity_PokemonCenter_NPC2_Text_0:
-# 158 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "They're closing the gym in Mirroh Base\n"
 	.string "Camp! I need to go and get the badge,\l"
 	.string "but the Qwilsquad grunt outside won't\l"
 	.string "let me.$"
 
 PellucaCity_PokemonCenter_Nurse1_Text_0:
-# 166 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 171 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "We've had enough of the Heal Pass\n"
 	.string "system. We're unionising!$"
 
 PellucaCity_PokemonCenter_Nurse2_Text_0:
-# 170 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 175 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Down with Heal Passes! Or at least\n"
 	.string "station us in decent spots!$"
 
 PellucaCity_PokemonCenter_Nurse3_Text_0:
-# 174 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 179 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "We've all got it bad, but the worst is\n"
 	.string "the nurse up in Winterlily Hollow! I'm\l"
 	.string "going up there with these Chanseys to\l"
 	.string "help her out.$"
 
 PellucaCity_PokemonCenter_Nurse4_Text_0:
-# 178 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "The nurse in Winterlily Hollow requested\n"
 	.string "for some extra help. Since the\l"
 	.string "higher-ups don't care, we're going to\l"
 	.string "look out for our sisters!$"
 
 PellucaCity_PokemonCenter_Chansey_Text_0:
-# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 188 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Seeyyy!!\p"
 	.string "Chansey wants to unionise too!$"

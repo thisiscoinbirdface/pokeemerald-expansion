@@ -11,18 +11,17 @@ mapscripts PellucaFishery_MapScripts{}
 
 
 script PellucaFishery_NPC1{
+    speakername("Q-squad Grunt")
     msgbox(format("Yeah, that's right! I've got the Qwil blood in my veins! I dream about Qwilfish - nobody's a bigger Qwilsquadder than me!\p...\p...is that a Detective Academy pass?\pListen, I'm an agent working undercover. Don't blow my cover!"), MSGBOX_NPC)
     end
 }
 script PellucaFishery_NPC2{
+    speakername("Q-squad Grunt")
     msgbox(format("The boss is actually gonna make some real change happen around here! But for that, we need money. That's why we're taxing the citizens!"), MSGBOX_NPC)
     end
 }
 script PellucaFishery_NPC3{
-	setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
-	setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
-	setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
-	setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)   
+    speakername("Q-squad Grunt")
     msgbox(format("What's up new recruit?"), MSGBOX_NPC)
     end
 }
@@ -39,6 +38,11 @@ script PellucaFishery_NPC4{
 //3: completed quest
 
 script PellucaFishery_EventScript_MainDude{
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 10){
+        speakername("Q-squad Boss")
+        msgbox(format("How's it going, {PLAYER}?"), MSGBOX_NPC)
+        end
+    }
 
     lockall
     faceplayer

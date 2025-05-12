@@ -115,6 +115,11 @@ script PellucaCity_EventEnd{
 	waitmovement(0)
 	removeobject(LOCALID_QWIL)		
 
+    //remove surf TM
+    clearflag(FLAG_SYS_SURF_ENABLED)
+    removeitem(ITEM_HM03)
+
+    //vars flags
 	setvar(VAR_PELLUCA_MAYOR_QUEST, 10)
 	setflag(FLAG_PELLUCA_PC_CHARS)
     setflag(FLAG_PELLUCA_QUEST_END)
