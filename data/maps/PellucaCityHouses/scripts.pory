@@ -26,6 +26,12 @@ script PellucaCityHouses_MayorQuestStart{
     lockall
     faceplayer
 
+    if (var(VAR_PELLUCA_MAYOR_QUEST) == 10){
+        speakername("Mayor")
+        msgbox(format("Now that we've teamed up, we're doing much better!"), MSGBOX_NPC)
+        end
+    }
+
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 2){
         speakername("Mayor")
         msgbox(format("Have you managed to do something about the Qwilsquad yet? No?\pSigh...I was foolish to ask a child."))
