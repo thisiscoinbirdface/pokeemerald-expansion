@@ -1776,6 +1776,12 @@ PellucaCity_PostGymEvent_Trigger_5:
 	end
 
 
+PellucaCity_Red_GymBlock::
+# 1247 "data//maps/PellucaCity/scripts.pory"
+	msgbox PellucaCity_Red_GymBlock_Text_0, MSGBOX_NPC
+	end
+
+
 # 54 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_MayorFight_Trigger_Movement_0:
 # 54 "data//maps/PellucaCity/scripts.pory"
@@ -3030,6 +3036,12 @@ PellucaCity_PostGymEvent_Trigger_Text_4:
 PellucaCity_PostGymEvent_Trigger_Text_5:
 # 1218 "data//maps/PellucaCity/scripts.pory"
 	.string "You'd better be there, {PLAYER}!$"
+
+PellucaCity_Red_GymBlock_Text_0:
+# 1247 "data//maps/PellucaCity/scripts.pory"
+	.string "Jania's gone to deal with the Mega\n"
+	.string "Sharpedo. You'll find her up in Ivy River\l"
+	.string "somewhere.$"
 
 PellucaCityFlooded_TriggerText::
 # 324 "data//maps/PellucaCity/scripts.pory"

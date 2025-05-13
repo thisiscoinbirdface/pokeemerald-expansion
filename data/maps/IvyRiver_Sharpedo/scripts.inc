@@ -139,7 +139,7 @@ IvyRiver_Sharpedo_Jania_Trigger::
 # 81 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	release
 # 83 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 84 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	removeobject LOCALID_CLAUNCHER
 # 85 "data//maps/IvyRiver_Sharpedo/scripts.pory"
@@ -149,7 +149,7 @@ IvyRiver_Sharpedo_Jania_Trigger::
 # 88 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	setflag FLAG_IVY_RIVER_SHARPEDO_JANIA
 # 90 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 93 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	releaseall
 	end
@@ -299,7 +299,7 @@ IvyRiver_Sharpedo_Jania_Trigger_Movement_7:
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_0:
 # 19 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	.string "???$"
+	.string "Jania$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_1:
 # 20 "data//maps/IvyRiver_Sharpedo/scripts.pory"
@@ -308,12 +308,9 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_1:
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_2:
 # 36 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	.string "Who're you? How'd you get here? Please\n"
-	.string "leave immediately - a dangerous\l"
-	.string "Pokémon is nearby.\p"
-	.string "...\p"
-	.string "You know about the Mega Sharpedo?\n"
-	.string "Okay. Be careful nonetheless.\p"
+	.string "It's you, {PLAYER}.\p"
+	.string "I must thank you for bringing peace to\n"
+	.string "Pelluca City.\p"
 	.string "Come here.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_3:
@@ -322,22 +319,21 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_3:
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_4:
 # 54 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	.string "My Gyarados and I have been tracking\n"
-	.string "this Mega Sharpedo for weeks. I finally\l"
-	.string "found its hideout and managed to trap\l"
-	.string "it in these currents.$"
+	.string "My Gyarados and I finally found its\n"
+	.string "hideout and managed to trap it in these\l"
+	.string "currents.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_5:
 # 64 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "These currents should keep it at bay\n"
-	.string "while it calms down and becomes a\l"
-	.string "regular Sharpedo again.$"
+	.string "while it calms down.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_6:
 # 80 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	.string "You can't use Pokeballs on it - it's too\n"
+	.string "You can't use Poké Balls on it - it's too\n"
 	.string "enraged. So whatever you want to do, be\l"
 	.string "careful.\p"
+	.string "I'm heading back to my gym.\n"
 	.string "See you.$"
 
 IvyRiver_Sharpedo_Encounter_Text_0:

@@ -733,7 +733,7 @@ FennilahlTown_Budew_ThirdBerry_Text_2:
 
 FennilahlTown_Budew_JoinParty_Text_0:
 # 276 "data//maps/FennilahlTown/scripts.pory"
-	.string "Budew is looking at the Pokeballs on\n"
+	.string "Budew is looking at the Poké Balls on\n"
 	.string "your belt curiously...$"
 
 FennilahlTown_Budew_JoinParty_Text_1:

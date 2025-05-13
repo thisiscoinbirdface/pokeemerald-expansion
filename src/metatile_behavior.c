@@ -1,6 +1,7 @@
 #include "global.h"
 #include "metatile_behavior.h"
 #include "constants/metatile_behaviors.h"
+#include "event_data.h"
 #include "item.h"
 
 #define TILE_FLAG_HAS_ENCOUNTERS (1 << 0)
@@ -420,7 +421,7 @@ bool8 MetatileBehavior_IsWalkEast(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsNorthwardCurrent(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_NORTHWARD_CURRENT)
+    if ((metatileBehavior == MB_NORTHWARD_CURRENT) & !FlagGet(FLAG_SYS_WHIRLPOOL_ENABLED))
         return TRUE;
     else
         return FALSE;
@@ -428,7 +429,7 @@ bool8 MetatileBehavior_IsNorthwardCurrent(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsSouthwardCurrent(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_SOUTHWARD_CURRENT)
+    if ((metatileBehavior == MB_SOUTHWARD_CURRENT) & !FlagGet(FLAG_SYS_WHIRLPOOL_ENABLED))
         return TRUE;
     else
         return FALSE;
@@ -436,7 +437,7 @@ bool8 MetatileBehavior_IsSouthwardCurrent(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsWestwardCurrent(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_WESTWARD_CURRENT)
+    if ((metatileBehavior == MB_WESTWARD_CURRENT) & !FlagGet(FLAG_SYS_WHIRLPOOL_ENABLED))
         return TRUE;
     else
         return FALSE;
@@ -444,7 +445,7 @@ bool8 MetatileBehavior_IsWestwardCurrent(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsEastwardCurrent(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_EASTWARD_CURRENT)
+    if ((metatileBehavior == MB_EASTWARD_CURRENT) & !FlagGet(FLAG_SYS_WHIRLPOOL_ENABLED))
         return TRUE;
     else
         return FALSE;

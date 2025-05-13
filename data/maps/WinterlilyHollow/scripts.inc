@@ -729,8 +729,8 @@ WinterlilyHollow_MimeJr_3_Text_6:
 WinterlilyHollow_MimeJr_3_Text_7:
 # 215 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "...Mime Jr. goes back to staring at the\n"
-	.string "water. Maybe it needs a comforting\l"
-	.string "Pokeball to be in.$"
+	.string "water. Maybe it needs a comforting Poké\l"
+	.string "Ball to be in.$"
 
 WinterlilyHollow_Froslass_Text_0:
 # 225 "data//maps/WinterlilyHollow/scripts.pory"
