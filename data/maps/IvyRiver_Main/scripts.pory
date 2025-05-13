@@ -393,7 +393,12 @@ script IvyRiver_Main_Zarude_Legendary{
 //Trainers
 //man 1
 script IvyRiver_Trainer_A {
-    trainerbattle_single(TRAINER_IVY_RIVER_A, format(""), format(""))
+    trainerbattle_single(
+        TRAINER_IVY_RIVER_A, 
+        format("I didn't expect to see another trainer here! Are you collecting rare Pokémon too?"), 
+        format("Because Ivy River is untouched by people, rare Pokémon can thrive.")
+    )
+    
     msgbox(format(""))
     release
     end
@@ -401,7 +406,12 @@ script IvyRiver_Trainer_A {
 
 //swimmer
 script IvyRiver_Trainer_B {
-    trainerbattle_single(TRAINER_IVY_RIVER_B, format(""), format(""))
+    trainerbattle_single(
+        TRAINER_IVY_RIVER_B, 
+        format("Swimming in this river is only for the toughest swimmers like me!"), 
+        format("I bet I could beat you if you weren't surfing on your Pokémon!")
+    )
+    
     msgbox(format(""))
     release
     end
@@ -409,7 +419,12 @@ script IvyRiver_Trainer_B {
 
 //woman 1
 script IvyRiver_Trainer_C {
-    trainerbattle_single(TRAINER_IVY_RIVER_C, format(""), format(""))
+    trainerbattle_single(
+        TRAINER_IVY_RIVER_C, 
+        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship! And someone like me needs the best Pokémon around!"), 
+        format("I bet I'll see you at the Pokémon Championship!")
+    )
+    
     msgbox(format(""))
     release
     end
@@ -418,11 +433,11 @@ script IvyRiver_Trainer_C {
 
 //NPCs
 script IvyRiver_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Fancy coming down Ivy River to reach Pelluca City! You're a rare breed."), MSGBOX_NPC)
     end
 }
 script IvyRiver_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Most of the people you'll meet here are either collecting rare Pokémon...or lost. Like me!"), MSGBOX_NPC)
     end
 }
 

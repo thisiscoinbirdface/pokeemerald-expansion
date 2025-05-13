@@ -1075,3 +1075,7 @@ IvyRiver_Main_GreenScarf_Text_16:
 # 319 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "See you Dada.\p"
 	.string "I-I'll never forget you.$"
+
+IvyRiver_Trainer_A_Text_0:
+# 396 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "$"

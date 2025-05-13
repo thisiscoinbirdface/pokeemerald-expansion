@@ -3023,47 +3023,53 @@ Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IVY_RIVER_A ===
-Name: SANTIAGO
-Class: Swimmer M
-Pic: Swimmer M
+Name: Santiago
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
-Music: Swimmer
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Tentacruel
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bombirdier
+Level: 36
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Metang
+Level: 38
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_IVY_RIVER_B ===
-Name: GILBERT
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
+Name: Galona
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Sharpedo
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tynamo
+Level: 37
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Carvanha
+Level: 39
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
 
 === TRAINER_IVY_RIVER_C ===
-Name: FRANKLIN
-Class: Swimmer M
-Pic: Swimmer M
+Name: Terra
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Purple
 
-Sealeo
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scyther
+Level: 40
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_IVY_RIVER_D ===
 Name: KEVIN
