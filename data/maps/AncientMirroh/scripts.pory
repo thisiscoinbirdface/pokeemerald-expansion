@@ -52,7 +52,7 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("Darn! These Trekking Boots are really slowing me down! I gotta catch up to boss MELEA!"))
+    msgbox(format("Darn! These Trekking Boots are really slowing me down! I gotta catch up to Melea!"))
     release
     applymovement(7, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)
@@ -60,7 +60,7 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     speakername("Grunt")
     msgbox(format("Oh no, you're here already? Gotta go!"))
     release
-    applymovement(7, moves(walk_down * 7))
+    applymovement(7, moves(walk_fast_down * 7))
     waitmovement(0)
     delay(16)
     speakername("???")

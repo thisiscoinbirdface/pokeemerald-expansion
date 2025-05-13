@@ -673,7 +673,8 @@ WhiteSign_Route8_ToMtMirroh_Text_0:
 
 WhiteSign_Route8_Dojo_Text_0:
 # 330 "data//scripts/customscripts_signs.pory"
-	.string "Fighting Dojo$"
+	.string "Garden Shop\n"
+	.string "For all your gardening needs!$"
 
 WhiteSign_MirrohPeak_ToMirrohInt_Text_0:
 # 338 "data//scripts/customscripts_signs.pory"

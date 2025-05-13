@@ -505,7 +505,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_4:
 	.string "latent potential within the dreams and\l"
 	.string "memories of Pokémon today and created\l"
 	.string "a way to visit the past!\p"
-	.string "It's like science fiction...LEADER was\n"
+	.string "It's like science fiction...Leader was\n"
 	.string "right all along...$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_5:

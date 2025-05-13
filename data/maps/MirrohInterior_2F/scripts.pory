@@ -28,7 +28,7 @@ script MirrohInterior_2F_CavePainting_WalkingWake{
     lockall
 
     //a descrption of koraidon
-    msgbox(format("It's an ancient cave painting...a never before seen Pokémon! It looks somewhat reptilian, but also has feathers. Terrifying!"))
+    msgbox(format("It's an ancient cave painting...a never before seen Pokémon! It looks somewhat reptilian, but also has feathers.\pTerrifying!"))
 
     releaseall
     end
@@ -116,7 +116,7 @@ script MirrohInterior_2F_Trainer_C{
 //skiier F
 script MirrohInterior_2F_Trainer_D{
     trainerbattle_single(TRAINER_MIRROHINT2_D, format("Why don't these runners understand? Skiing takes more technique than running!"), format("Even my technique didn't help!"))
-    msgbox(format("To be frank with you, if I didn't have access to a ski slope, I'd be running myself."))
+    msgbox(format("To be frank, if I didn't have access to a ski slope, I'd be running myself."))
     releaseall
 }
 
@@ -170,7 +170,7 @@ script MirrohInterior_2F_NPC_B{
 }
 //researcher old man
 script MirrohInterior_2F_NPC_C{
-    msgbox(format("What a fearsome Pokémon! One must be grateful it's not alive in this day and age."), MSGBOX_NPC)
+    msgbox(format("What a fearsome Pokémon! One must be grateful it's not alive today."), MSGBOX_NPC)
     end
 }
 //pokefan f

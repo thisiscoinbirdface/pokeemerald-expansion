@@ -24,8 +24,21 @@ script WinterlilyHollow_GymB1F_SetLayout{
         setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_SWITCHED)        
         setvar(VAR_HOLLOW_GYM_LAYOUT, 0)
     }
+
+    if (var(VAR_HOLLOW_GYM_LAYOUT) == 2){
+        setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_SWITCHED)
+    }
+
     return
 }
+
+script WinterlilyHollow_GymB1F_SetPermaOpenDoors{
+    lockall
+    setvar(VAR_HOLLOW_GYM_LAYOUT, 2)
+    releaseall
+    end
+}
+
 
 //6 trainers
 //ELECTRICIAN
@@ -90,6 +103,11 @@ script WinterlilyHollow_Gym_Trainer_F{
 
 
 
+//Helper NPC
+script WinterlilyHollow_Gym_NPC1{
+    msgbox(format("This is the door that takes you to Viniel, but I can't figure out how to reach this when it's open. At this rate, I'll never get my gym badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
+    end
+}
 
 
 
@@ -119,6 +137,10 @@ script WinterlilyHollowGym_LeaderBattle {
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
         speakername("Viniel")
+        //savegame
+        
+
+
         msgbox(format("Go Ampharos! More! More!\pWait - it looks like we've got a guest."))
         faceplayer
         speakername("Viniel")

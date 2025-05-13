@@ -294,19 +294,19 @@ AncientMirroh_KolhaMeeting_Trigger_Movement_2:
 # 63 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_3:
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 # 63 "data//maps/AncientMirroh/scripts.pory"
-	walk_down
+	walk_fast_down
 	step_end
 
 # 71 "data//maps/AncientMirroh/scripts.pory"
@@ -411,7 +411,7 @@ AncientMirroh_KolhaMeeting_Trigger_Text_1:
 # 55 "data//maps/AncientMirroh/scripts.pory"
 	.string "Darn! These Trekking Boots are really\n"
 	.string "slowing me down! I gotta catch up to\l"
-	.string "boss MELEA!$"
+	.string "Melea!$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_2:
 # 61 "data//maps/AncientMirroh/scripts.pory"

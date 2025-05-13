@@ -327,7 +327,7 @@ script WhiteSign_Route8_ToMtMirroh{
     end
 }
 script WhiteSign_Route8_Dojo{
-    msgbox(format("Fighting Dojo"), MSGBOX_SIGN)
+    msgbox(format("Garden Shop\nFor all your gardening needs!"), MSGBOX_SIGN)
     end
 }
 

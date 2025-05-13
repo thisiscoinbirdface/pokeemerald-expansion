@@ -53,7 +53,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
 
     speakername("Melea")
-    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...LEADER was right all along..."))
+    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...Leader was right all along..."))
     release
     delay(30)
 

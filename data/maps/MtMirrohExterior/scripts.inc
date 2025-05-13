@@ -538,9 +538,11 @@ MtMirrohExterior_Toxicroak_Text_0:
 
 MtMirrohExterior_NPC_F_Text_0:
 # 221 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "I can't believe what's happening inside\n"
-	.string "the Fighting Dojo! How could the master\l"
-	.string "have lost her mind like this?$"
+	.string "Someone told me you could buy Mega\n"
+	.string "Stones here, but it turned out to be a\l"
+	.string "garden supply store!\p"
+	.string "I heard you can get them in Rivetshore\n"
+	.string "City though.$"
 
 MtMirrohExterior_NPC_G_Text_0:
 # 228 "data//maps/MtMirrohExterior/scripts.pory"

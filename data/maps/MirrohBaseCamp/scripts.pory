@@ -105,10 +105,12 @@ script MirrohBaseCamp_Greavard_Outside{
             release
             applymovement(11, moves(walk_fast_up * 7))
             waitmovement(0)
+            removeobject(11)
             msgbox(format("It ran off with the Old Bone!"))
             release
             applymovement(12, moves(emote_exclamation_mark walk_fast_up * 7))
             waitmovement(0)
+            removeobject(12)
             msgbox(format("The other one chased after it!\p...\pIs it alright to let them run around freely?"))
             release
 
@@ -117,12 +119,17 @@ script MirrohBaseCamp_Greavard_Outside{
             addobject(LOCALID_MARTHA)
             setobjectxy(LOCALID_MARTHA, 5, 9)
 
-            applymovement(LOCALID_MARTHA, moves(walk_up * 6))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+            speakername("Martha")
+            msgbox(format("{PLAYER}! Wait!")) 
+            release
+
+            applymovement(LOCALID_MARTHA, moves(walk_up * 5))
             waitmovement(0)
 
             //martha gives mega stone
             speakername("Martha")
-            msgbox(format("{PLAYER}! Wait! Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
+            msgbox(format("Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
             goto(MirrohBaseCamp_Martha_OfferMegaStone)
 
             releaseall
@@ -140,7 +147,7 @@ script MirrohBaseCamp_Greavard_Outside{
 script MirrohBaseCamp_Martha_OfferMegaStone{
     message(format("Choose carefully! You might not get another one for a while."))
     waitmessage
-    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+    dynmultichoice(0,0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
         "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
         "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
         "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",

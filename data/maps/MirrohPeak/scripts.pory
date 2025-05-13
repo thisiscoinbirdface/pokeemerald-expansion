@@ -13,6 +13,20 @@ script MirrohPeak_NPC_1{
     end
 }
 
+script MtMirroh_Peak_SaveGameTrigger{
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
+        end
+    }   
+
+    special(SaveGame)
+	waitstate
+    release
+
+    setvar(VAR_TEMP_C, 1)
+
+    end
+}
+
 //Pre-peak Gym Leader encounter VINIEL
 //Viniel stuck between 4 grunts - taking all of them on
 //You cant come into my town!
@@ -151,7 +165,11 @@ script MirrohPeak_EventScript_Viniel{
 
 script MirrohPeak_GruntsVSViniel_GenericDialogue{
     lockall
-    msgbox(format("Even with the four of us together, its so hard! Guess that's why he's a Gym Leader.\pThat all you got, grunts?"))
+    speakername("Grunt")
+    msgbox(format("Even with the four of us together, its so hard! Guess that's why he's a Gym Leader."))
+    release
+    speakername("Viniel")
+    msgbox(format("That all you got, grunts?"))
     releaseall
     end
 }
@@ -200,7 +218,7 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(LOCALID_MOXIE, moves(jump_in_place_up))
     waitmovement(0)
     speakername("Moxie")
-    msgbox(format("Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern.\pAfter our defeats at your hand, LEADER was most displeased with the two of us. Most displeased indeed..."))
+    msgbox(format("Your tenacity is admirable, child.\pI must acknowledge that...despite your insufferable propensity for ruining plans which are none of your concern.\pAfter our defeats at your hand, Leader was most displeased with the two of us. Most displeased indeed..."))
     release
     delay(60)
     applymovement(LOCALID_MELEA, moves(jump_in_place_up))
@@ -420,22 +438,22 @@ script MirrohPeak_Grunt_A{
 }
 
 script MirrohPeak_Grunt_B{
-    trainerbattle_single(TRAINER_MIRROHPEAK_B, format("We're going to use the Dreamalyser to revive the ANCIENT TERROR! Hahaha!"), "You're playing dirty!")
+    trainerbattle_single(TRAINER_MIRROHPEAK_B, format("We're going to use the Dreamalyser to revive the Ancient Terror! Hahaha!"), "You're playing dirty!")
     msgbox(format("Man, when will I become an admin?"))
     releaseall
     end
 }
 
 script MirrohPeak_Grunt_C{
-    trainerbattle_single(TRAINER_MIRROHPEAK_C, format("Nope. No way. You're not getting through us. We've got the Dreamalyser up and running, and we're not letting you interfere!"), "Fine then! Go ahead!")
-    msgbox(format("You may have beaten us, but you can't beat MELEA and MOXIE!"))
+    trainerbattle_single(TRAINER_MIRROHPEAK_C, format("Nope. No way. You're not getting through us!"), "Fine then!")
+    msgbox(format("You may have beaten us, but you can't beat Melea and Moxie!"))
     releaseall
     end
 }
 
 script MirrohPeak_Grunt_D{
-    trainerbattle_single(TRAINER_MIRROHPEAK_D, format("Nope. No way. You're not getting through us. We've got the Dreamalyser up and running, and we're not letting you interfere!"), "Fine then! Go ahead!")
-    msgbox(format("You may have beaten us, but you can't beat MELEA and MOXIE!"))
+    trainerbattle_single(TRAINER_MIRROHPEAK_D, format("Yeah! We've got the Dreamalyser up and running, and we're not letting you interfere!"), "Go ahead!")
+    msgbox(format("You may have beaten us, but you can't beat Melea and Moxie!"))
     releaseall
     end
 }

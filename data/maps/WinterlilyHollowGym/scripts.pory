@@ -4,7 +4,7 @@ mapscripts WinterlilyHollowGym_MapScripts{
 
 script WinterlilyHollowGym_SetHoleWarp{
     //reset the var for the gym layout
-    setvar(VAR_HOLLOW_GYM_LAYOUT, 0)
+    if (var(VAR_HOLLOW_GYM_LAYOUT) == 1){setvar(VAR_HOLLOW_GYM_LAYOUT, 0)}
 
     setstepcallback(STEP_CB_CRACKED_FLOOR)
 	setholewarp(MAP_WINTERLILY_HOLLOW_GYM_B1F)

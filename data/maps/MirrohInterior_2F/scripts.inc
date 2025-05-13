@@ -192,7 +192,7 @@ MirrohInterior_2F_CavePainting_WalkingWake_Text_0:
 # 31 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "It's an ancient cave painting...a never\n"
 	.string "before seen Pokémon! It looks somewhat\l"
-	.string "reptilian, but also has feathers.\l"
+	.string "reptilian, but also has feathers.\p"
 	.string "Terrifying!$"
 
 MirrohInterior_2F_SkiierA_Text_0:
@@ -297,9 +297,8 @@ MirrohInterior_2F_Trainer_D_Text_1:
 
 MirrohInterior_2F_Trainer_D_Text_2:
 # 119 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "To be frank with you, if I didn't have\n"
-	.string "access to a ski slope, I'd be running\l"
-	.string "myself.$"
+	.string "To be frank, if I didn't have access to a\n"
+	.string "ski slope, I'd be running myself.$"
 
 MirrohInterior_2F_Trainer_E_Text_0:
 # 128 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -361,8 +360,7 @@ MirrohInterior_2F_NPC_B_Text_0:
 MirrohInterior_2F_NPC_C_Text_0:
 # 173 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "What a fearsome Pokémon! One must be\n"
-	.string "grateful it's not alive in this day and\l"
-	.string "age.$"
+	.string "grateful it's not alive today.$"
 
 MirrohInterior_2F_NPC_D_Text_0:
 # 178 "data//maps/MirrohInterior_2F/scripts.pory"

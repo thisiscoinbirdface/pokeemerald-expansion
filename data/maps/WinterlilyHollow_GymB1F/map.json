@@ -2,7 +2,7 @@
   "id": "MAP_WINTERLILY_HOLLOW_GYM_B1F",
   "name": "WinterlilyHollow_GymB1F",
   "layout": "LAYOUT_WINTERLILY_HOLLOW_GYM_B1F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_GYM",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -88,7 +88,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "WinterlilyHollow_Gym_Trainer_F",
       "flag": "0"
     },
@@ -130,6 +130,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "WinterlilyHollowGym_Red",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 40,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WinterlilyHollow_Gym_NPC1",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -150,6 +163,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "WinterlilyHollow_LastTrainer_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "WinterlilyHollow_GymB1F_SetPermaOpenDoors"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "WinterlilyHollow_GymB1F_SetPermaOpenDoors"
     }
   ],
   "bg_events": [

@@ -1267,22 +1267,22 @@ Common_EventScript_HyperTrainer_26:
 # 772 "data//maps/TempCopyMap/scripts.pory"
 	release
 # 773 "data//maps/TempCopyMap/scripts.pory"
-	fadescreenswapbuffers FADE_TO_WHITE
+	fadescreen FADE_TO_WHITE
 # 774 "data//maps/TempCopyMap/scripts.pory"
 	playse SE_USE_ITEM
 # 775 "data//maps/TempCopyMap/scripts.pory"
 	delay 24
 # 776 "data//maps/TempCopyMap/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_WHITE
+	fadescreen FADE_FROM_WHITE
 # 778 "data//maps/TempCopyMap/scripts.pory"
 	removeitem ITEM_RARE_SHARD
 # 779 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_HyperTrainer_Text_10
 # 780 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 781 "data//maps/TempCopyMap/scripts.pory"
-	fadedefaultbgm
 Common_EventScript_HyperTrainer_4:
+# 783 "data//maps/TempCopyMap/scripts.pory"
+	fadedefaultbgm
 # 784 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end

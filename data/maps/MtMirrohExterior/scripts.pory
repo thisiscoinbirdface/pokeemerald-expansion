@@ -218,7 +218,7 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format("I can't believe what's happening inside the Fighting Dojo! How could the master have lost her mind like this?"))
+    msgbox(format("Someone told me you could buy Mega Stones here, but it turned out to be a garden supply store!\pI heard you can get them in Rivetshore City though."))
     releaseall
     end
 }
