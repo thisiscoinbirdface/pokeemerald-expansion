@@ -84,13 +84,117 @@ script MirrohBaseCamp_EventScript_NPC2{
     applymovement(LOCALID_MARTHA, moves(walk_right walk_down * 3 walk_left * 9))
     waitmovement(0)
     removeobject(LOCALID_MARTHA)
+    speakername("Martha")
+    msgbox(format("Come now, boys! Playtime is over - come home!\p...\pSigh...they just don't listen to me..."))
+    release
     setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
     clearflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     releaseall
     end
 }
+script MirrohBaseCamp_Greavard_Outside{
+    playmoncry(SPECIES_GREAVARD, CRY_MODE_NORMAL)
+
+    checkitem(ITEM_RARE_BONE)
+
+    if (var(VAR_RESULT) == 1){
+        lockall
+        msgbox(format("Greavard is playing!\nGive it the Old Bone?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Greavard snaps up the Old Bone and starts playing with it!"))
+            release
+            applymovement(11, moves(walk_fast_up * 7))
+            waitmovement(0)
+            msgbox(format("It ran off with the Old Bone!"))
+            release
+            applymovement(12, moves(emote_exclamation_mark walk_fast_up * 7))
+            waitmovement(0)
+            msgbox(format("The other one chased after it!\p...\pIs it alright to let them run around freely?"))
+            release
+
+            setflag(FLAG_MIRROH_GREAVARD_BLOCKER)
+
+            addobject(LOCALID_MARTHA)
+            setobjectxy(LOCALID_MARTHA, 5, 9)
+
+            applymovement(LOCALID_MARTHA, moves(walk_up * 6))
+            waitmovement(0)
+
+            //martha gives mega stone
+            speakername("Martha")
+            msgbox(format("{PLAYER}! Wait! Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
+            goto(MirrohBaseCamp_Martha_OfferMegaStone)
+
+            releaseall
+            end
+        }
+
+        end
+    } else {
+        msgbox(format("Greavard is playing!"), MSGBOX_NPC)
+        end        
+    }
+
+}
+
+script MirrohBaseCamp_Martha_OfferMegaStone{
+    message(format("Choose carefully! You might not get another one for a while."))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
+        "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
+        "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",
+        "Sharpedonite", "Ampharosite", "Manectricite", "Absolite", "Lucarionite"
+    )
+
+    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_MEDICHAMITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 1) {setvar(VAR_0x8006, ITEM_AGGRONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 2) {setvar(VAR_0x8006, ITEM_ALTARIANITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 3) {setvar(VAR_0x8006, ITEM_LOPUNNITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 4) {setvar(VAR_0x8006, ITEM_BANETTITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 5) {setvar(VAR_0x8006, ITEM_ABOMASITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 6) {setvar(VAR_0x8006, ITEM_GYARADOSITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 7) {setvar(VAR_0x8006, ITEM_MAWILITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 8) {setvar(VAR_0x8006, ITEM_GARDEVOIRITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 9) {setvar(VAR_0x8006, ITEM_GALLADITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 10) {setvar(VAR_0x8006, ITEM_HOUNDOOMINITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 11) {setvar(VAR_0x8006, ITEM_METAGROSSITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 12) {setvar(VAR_0x8006, ITEM_SCIZORITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 13) {setvar(VAR_0x8006, ITEM_KANGASKHANITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 14) {setvar(VAR_0x8006, ITEM_PINSIRITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 15) {setvar(VAR_0x8006, ITEM_SHARPEDONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_AMPHAROSITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 19) {setvar(VAR_0x8006, ITEM_LUCARIONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}    
+}
+
+script MirrohBaseCamp_Martha_GiveMegaStone{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(VAR_0x8006)
+        goto(MirrohBaseCamp_Martha_End)
+    } else {
+        hideitemdescription
+        goto(MirrohBaseCamp_Martha_OfferMegaStone)
+    }
+}
 
 
+script MirrohBaseCamp_Martha_End{
+    speakername("Martha")
+    msgbox(format("Well then. That's my job done.\pI wish you all the best, {PLAYER}!"))
+    release
+
+    applymovement(LOCALID_MARTHA, moves(walk_down * 8))
+    removeobject(LOCALID_MARTHA)
+
+    releaseall
+    end
+
+}
 
 
 
@@ -180,16 +284,14 @@ script MirrohBaseCamp_Trainer_B{
 
     if (flag(FLAG_MIRROHBASECAMP_TRAINER_A)) {
         msgbox(format("I saw the battle with the other trainer. You're not bad, but you'll have to try harder than that to beat me!"))
-        if (var(VAR_RESULT) == 1){
-            trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format("Stop trying so hard!"))
-            setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
-            msgbox(format("If I can't beat a kid like you, what chance do I have against Carona?"))
-            release
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
-            applymovement(9, moves(walk_left *10))
-            waitmovement(0)
-            removeobject(9)
-        }
+        trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format("Stop trying so hard!"))
+        setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
+        msgbox(format("If I can't beat a kid like you, what chance do I have against Carona?"))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
+        applymovement(9, moves(walk_left *10))
+        waitmovement(0)
+        removeobject(9)
     }
 
     releaseall
@@ -206,16 +308,14 @@ script MirrohBaseCamp_Trainer_C{
 
     if (flag(FLAG_MIRROHBASECAMP_TRAINER_B)) {
         msgbox(format("What? If you keep looking at me like that, I'll make you pay!"))
-        if (var(VAR_RESULT) == 1){
-            trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format("You made me pay!"))
-            setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
-            msgbox(format("Grr - fine! Go in first! I'll have to go heal. I hope Carona wipes the floor with you!"))
-            release
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
-            applymovement(10, moves(walk_left *10))
-            waitmovement(0)
-            removeobject(10)
-        }
+        trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format("You made me pay!"))
+        setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
+        msgbox(format("Grr - fine! Go in first! I'll have to go heal. I hope Carona wipes the floor with you!"))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
+        applymovement(10, moves(walk_left *10))
+        waitmovement(0)
+        removeobject(10)
     }
 
     releaseall

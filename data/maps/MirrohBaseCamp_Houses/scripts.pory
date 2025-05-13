@@ -32,7 +32,11 @@ script MirrohBaseCamp_Houses_Historian{
         applymovement(1, moves(emote_exclamation_mark))
         waitmovement(0)
         speakername("Martha")
-        msgbox(format("Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this information helps you in your journey.\pYou should go to Mt. Mirroh and see the cave painting for yourself. As for me, I must get back to my reading..."))
+        msgbox(format("Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this information helps you in your journey.\pYou should go to Mt. Mirroh and see the cave painting for yourself.\pHere - take this and give it to the Greavard playing outside. It'll distract them.")) 
+        release
+        giveitem(ITEM_RARE_BONE)
+        speakername("Martha")
+        msgbox(format("As for me, I must get back to my reading..."))
         release
 
         subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6)
@@ -48,7 +52,6 @@ script MirrohBaseCamp_Houndstone{
     msgbox(format("Houndstone is walking slowly. It's getting old now..."), MSGBOX_NPC)
     end
 }
-
 
 
 

@@ -372,7 +372,7 @@ MirrohBaseCampGym_Leader::
 # 245 "data//maps/MirrohBaseCampGym/scripts.pory"
 	faceplayer
 # 247 "data//maps/MirrohBaseCampGym/scripts.pory"
-	goto_if_set FLAG_MIRROHBASECAMP_LEADER, MirrohBaseCampGym_Leader_2
+	goto_if_set FLAG_BADGE05_GET, MirrohBaseCampGym_Leader_2
 # 252 "data//maps/MirrohBaseCampGym/scripts.pory"
 	speakername MirrohBaseCampGym_EventScript_Main_Text_6
 # 253 "data//maps/MirrohBaseCampGym/scripts.pory"

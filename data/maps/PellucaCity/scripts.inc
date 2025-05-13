@@ -2234,10 +2234,26 @@ PellucaCity_NPC5_Movement_0:
 	walk_fast_up
 # 991 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_up
+# 991 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_up
+# 991 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_up
+# 991 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_up
+# 991 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_up
 	step_end
 
 # 997 "data//maps/PellucaCity/scripts.pory"
 PellucaCity_NPC5_Movement_1:
+# 997 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_down
+# 997 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_down
+# 997 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_down
+# 997 "data//maps/PellucaCity/scripts.pory"
+	walk_fast_down
 # 997 "data//maps/PellucaCity/scripts.pory"
 	walk_fast_down
 # 997 "data//maps/PellucaCity/scripts.pory"
@@ -2420,12 +2436,13 @@ PellucaCity_Sailor_QwilsquadExplanation_Text_0:
 	.string "You interested in joining or something,\n"
 	.string "kid? The Qwilsquad is all about trust\l"
 	.string "and brotherhood. You gotta have each\l"
-	.string "other's backs! We're from Pelluca, but\l"
-	.string "we went down to Rivetshore to sail. Now\l"
-	.string "we're back here, and we're not happy\l"
-	.string "with how the mayor is bungling his job!\l"
-	.string "So we're taking matters into our own\l"
-	.string "hands.$"
+	.string "other's backs! And you gotta have a\l"
+	.string "Qwilfish of course.\p"
+	.string "We're from Pelluca, but we went down to\n"
+	.string "Rivetshore to sail. Now we're back, and\l"
+	.string "we're not happy with how the mayor is\l"
+	.string "bungling his job! So we're taking\l"
+	.string "matters into our own hands.$"
 
 PellucaCity_Sailor_MemberCheck_Text_0:
 # 238 "data//maps/PellucaCity/scripts.pory"

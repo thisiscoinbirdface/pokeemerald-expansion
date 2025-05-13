@@ -79,7 +79,7 @@ script PellucaCity_EventEnd{
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
-    msgbox(format("{PLAYER} - sorry about the HM breaking. Instead, why don't you take this instead? It's very valuable...but not to me, since I'm not a trainer.\pIt's the least we can do for you."))   
+    msgbox(format("{PLAYER} - sorry about the HM breaking. Why don't you take this instead? It's very valuable...but not to me, since I'm not a trainer.\pIt's the least we can do for you."))   
 	release
 	giveitem(ITEM_MEGA_RING)
 	release
@@ -157,10 +157,19 @@ script PellucaCity_PokemonCenter_EventScript_Nurse{
 
 
 script PellucaCity_PokemonCenter_NPC1{
-    msgbox(format("The signature mark of the Qwilsquad is their Qwilfish! Apparently the spikes represent their passion or something."))
+    lockall
+    faceplayer
+    showmonpic(SPECIES_QWILFISH_HISUI, 10, 3)
+    msgbox(format("The signature of the Qwilsquad is their Qwilfish! You need a Qwilfish to join the squad!"))
+    release
+    hidemonpic
+
+    msgbox(format("Apparently the spikes represent their passion or something."), MSGBOX_NPC)
+    end
 }
 script PellucaCity_PokemonCenter_NPC2{
-    msgbox(format("They're closing the gym in Mirroh Base Camp! I need to go and get the badge, but the Qwilsquad grunt outside won't let me."))
+    msgbox(format("They're closing the gym in Mirroh Base Camp! I need to go and get the badge, but the Qwilsquad grunt outside won't let me."), MSGBOX_NPC)
+    end
 }
 
 
@@ -176,7 +185,7 @@ script PellucaCity_PokemonCenter_Nurse2{
 	end
 }
 script PellucaCity_PokemonCenter_Nurse3{
-	msgbox(format("We've all got it bad, but the worst is the nurse up in Winterlily Hollow! I'm going up there with these Chanseys to help her out."), MSGBOX_NPC)
+	msgbox(format("We've all got it bad, but the worst is the nurse up in Winterlily Hollow!\pI'm going up there with these Chanseys to help her out."), MSGBOX_NPC)
 	end
 }
 script PellucaCity_PokemonCenter_Nurse4{

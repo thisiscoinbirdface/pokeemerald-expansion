@@ -149,6 +149,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MirrohBaseCamp_Trainer_C",
       "flag": "FLAG_MIRROHBASECAMP_TRAINER_C"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GREAVARD)",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MirrohBaseCamp_Greavard_Outside",
+      "flag": "FLAG_MIRROH_GREAVARD_BLOCKER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GREAVARD)",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MirrohBaseCamp_Greavard_Outside",
+      "flag": "FLAG_MIRROH_GREAVARD_BLOCKER"
     }
   ],
   "warp_events": [

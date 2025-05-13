@@ -244,7 +244,7 @@ script MirrohBaseCampGym_Leader{
     lockall
     faceplayer
     
-    if (flag(FLAG_MIRROHBASECAMP_LEADER)){
+    if (flag(FLAG_BADGE05_GET)){
         speakername("Carona")
         msgbox(format("Use your power wisely. As for me, it's time to move on."))
     } else {

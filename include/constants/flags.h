@@ -145,8 +145,8 @@
 #define FLAG_RIVETSHORE_RAAZI_CALLOUT 0x4C0 // Unused Flag
 #define FLAG_RIVETSHORE_STORAGE_BAY_SLAKING 0x54  // Unused Flag
 #define FLAG_PELLUCA_QUEST_END 0x55  // Unused Flag
-#define FLAG_UNUSED_0x068 0x68  // Unused Flag
-#define FLAG_UNUSED_0x0E9 0xE9 // Unused Flag
+#define FLAG_MIRROH_GREAVARD_BLOCKER 0x68  // flags for the greavard playing
+#define FLAG_HIDE_MIRROH_GREAVARD_INHOUSE 0xE9 // flag to hide the greavard indoors (once they're done playing)
 #define FLAG_UNUSED_0x1AA 0x1AA // Unused Flag
 #define FLAG_UNUSED_0x1AB 0x1AB // Unused Flag
 #define FLAG_UNUSED_0x1DA 0x1DA // Unused Flag

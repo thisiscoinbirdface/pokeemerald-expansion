@@ -2846,16 +2846,16 @@ const struct Item gItemsInfo[] =
 
     [ITEM_RARE_BONE] =
     {
-        .name = _("Rare Bone"),
+        .name = _("Old Bone"),
         .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR: 10000,
         .description = COMPOUND_STRING(
-            "A very rare bone.\n"
-            "It can be sold at\n"
-            "a high price."),
-        .pocket = POCKET_ITEMS,
+            "A chewed-out old\n"
+            "bone - perhaps a\n"
+            "Pokémon's toy?"),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
         .iconPic = gItemIcon_RareBone,
         .iconPalette = gItemIconPalette_RareBone,
     },

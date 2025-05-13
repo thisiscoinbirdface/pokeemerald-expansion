@@ -339,9 +339,8 @@ PellucaFishery_NPC3_Text_0:
 
 PellucaFishery_NPC4_Text_0:
 # 29 "data//maps/PellucaFishery/scripts.pory"
-	.string "This used to be a boathouse before we\n"
-	.string "came in. All this stuff is from back\l"
-	.string "then.$"
+	.string "This was a fishery before we came in. All\n"
+	.string "this stuff is from back then.$"
 
 PellucaFishery_EventScript_MainDude_Text_0:
 # 42 "data//maps/PellucaFishery/scripts.pory"
