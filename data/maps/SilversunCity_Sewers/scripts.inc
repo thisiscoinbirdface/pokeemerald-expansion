@@ -519,7 +519,7 @@ SilversunCity_Sewers_Market_Muk::
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Sewers_Market_Muk_2
 SilversunCity_Sewers_Market_Muk_1:
-# 401 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 395 "data//maps/SilversunCity_Sewers/scripts.pory"
 	releaseall
 	end
 
@@ -536,19 +536,70 @@ SilversunCity_Sewers_Market_Muk_4:
 	msgbox SilversunCity_Sewers_Market_Muk_Text_2
 # 389 "data//maps/SilversunCity_Sewers/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 390 "data//maps/SilversunCity_Sewers/scripts.pory"
-	giveitem ITEM_ABILITY_CAPSULE
 # 391 "data//maps/SilversunCity_Sewers/scripts.pory"
-	msgbox SilversunCity_Sewers_Market_Muk_Text_3
-# 392 "data//maps/SilversunCity_Sewers/scripts.pory"
-	release
-# 394 "data//maps/SilversunCity_Sewers/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 395 "data//maps/SilversunCity_Sewers/scripts.pory"
-	removeobject 19
-# 396 "data//maps/SilversunCity_Sewers/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	goto SilversunCity_Sewers_Market_Muk_Reward
 	goto SilversunCity_Sewers_Market_Muk_1
+
+
+SilversunCity_Sewers_Market_Muk_Reward::
+# 403 "data//maps/SilversunCity_Sewers/scripts.pory"
+	message SilversunCity_Sewers_Market_Muk_Reward_Text_0
+# 404 "data//maps/SilversunCity_Sewers/scripts.pory"
+	waitmessage
+# 405 "data//maps/SilversunCity_Sewers/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, SilversunCity_Sewers_Market_Muk_Reward_Text_1, SilversunCity_Sewers_Market_Muk_Reward_Text_2
+# 409 "data//maps/SilversunCity_Sewers/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SilversunCity_Sewers_Market_Muk_Reward_2
+SilversunCity_Sewers_Market_Muk_Reward_1:
+# 410 "data//maps/SilversunCity_Sewers/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_Sewers_Market_Muk_Reward_4
+	return
+
+SilversunCity_Sewers_Market_Muk_Reward_2:
+# 409 "data//maps/SilversunCity_Sewers/scripts.pory"
+	setvar VAR_0x8006, ITEM_ABILITY_PILL
+# 409 "data//maps/SilversunCity_Sewers/scripts.pory"
+	goto SilversunCity_Sewers_Market_Muk_GiveReward
+	goto SilversunCity_Sewers_Market_Muk_Reward_1
+
+SilversunCity_Sewers_Market_Muk_Reward_4:
+# 410 "data//maps/SilversunCity_Sewers/scripts.pory"
+	setvar VAR_0x8006, ITEM_ABILITY_CAPSULE
+# 410 "data//maps/SilversunCity_Sewers/scripts.pory"
+	goto SilversunCity_Sewers_Market_Muk_GiveReward
+	return
+
+
+SilversunCity_Sewers_Market_Muk_GiveReward::
+# 416 "data//maps/SilversunCity_Sewers/scripts.pory"
+	showitemdescription
+# 417 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox SilversunCity_Sewers_Market_Muk_GiveReward_Text_0, MSGBOX_YESNO
+# 418 "data//maps/SilversunCity_Sewers/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SilversunCity_Sewers_Market_Muk_GiveReward_1
+# 423 "data//maps/SilversunCity_Sewers/scripts.pory"
+	hideitemdescription
+# 424 "data//maps/SilversunCity_Sewers/scripts.pory"
+	goto SilversunCity_Sewers_Market_Muk_Reward
+	return
+
+SilversunCity_Sewers_Market_Muk_GiveReward_1:
+# 419 "data//maps/SilversunCity_Sewers/scripts.pory"
+	hideitemdescription
+# 420 "data//maps/SilversunCity_Sewers/scripts.pory"
+	giveitem VAR_0x8006
+# 421 "data//maps/SilversunCity_Sewers/scripts.pory"
+	goto SilversunCity_Sewers_Market_Muk_End
+	return
+
+
+SilversunCity_Sewers_Market_Muk_End::
+# 430 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox SilversunCity_Sewers_Market_Muk_End_Text_0, MSGBOX_NPC
+	end
 
 
 # 30 "data//maps/SilversunCity_Sewers/scripts.pory"
@@ -885,6 +936,22 @@ SilversunCity_Sewers_Market_Muk_Text_2:
 	.string "...\p"
 	.string "It spits out something onto the floor.$"
 
-SilversunCity_Sewers_Market_Muk_Text_3:
-# 391 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.string "Muk disappears into the sewers...$"
+SilversunCity_Sewers_Market_Muk_Reward_Text_0:
+# 403 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Which one will you pick up?$"
+
+SilversunCity_Sewers_Market_Muk_Reward_Text_1:
+# 406 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Ability Pill$"
+
+SilversunCity_Sewers_Market_Muk_Reward_Text_2:
+# 406 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Ability Capsule$"
+
+SilversunCity_Sewers_Market_Muk_GiveReward_Text_0:
+# 417 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Are you sure?$"
+
+SilversunCity_Sewers_Market_Muk_End_Text_0:
+# 430 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Muk happily chomps on the Trash!$"

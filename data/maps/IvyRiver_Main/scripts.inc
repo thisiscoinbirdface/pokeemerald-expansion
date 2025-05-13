@@ -1121,7 +1121,7 @@ IvyRiver_Main_GreenScarf_Text_16:
 IvyRiver_Trainer_A_Text_0:
 # 398 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I didn't expect to see another trainer\n"
-	.string "here! Are you collecting rare Pokémon\l"
+	.string "here. Are you collecting rare Pokémon\l"
 	.string "too?$"
 
 IvyRiver_Trainer_A_Text_1:
@@ -1136,7 +1136,7 @@ IvyRiver_Trainer_A_Text_2:
 IvyRiver_Trainer_B_Text_0:
 # 411 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Swimming in this river is only for the\n"
-	.string "toughest swimmers like me! I don't even\l"
+	.string "toughest swimmers like me. I don't even\l"
 	.string "need HM Flip Turn to swim!$"
 
 IvyRiver_Trainer_B_Text_1:
@@ -1147,7 +1147,7 @@ IvyRiver_Trainer_B_Text_1:
 IvyRiver_Trainer_C_Text_0:
 # 424 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I'm not your usual trainer - I'm aiming\n"
-	.string "for the Pokémon Championship! And\l"
+	.string "for the Pokémon Championship. And\l"
 	.string "that's why I've partnered with the best\l"
 	.string "Pokémon around!$"
 

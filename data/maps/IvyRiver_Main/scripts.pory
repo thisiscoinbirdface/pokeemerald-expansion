@@ -395,7 +395,7 @@ script IvyRiver_Main_Zarude_Legendary{
 script IvyRiver_Trainer_A {
     trainerbattle_single(
         TRAINER_IVY_RIVER_A, 
-        format("I didn't expect to see another trainer here! Are you collecting rare Pokémon too?"), 
+        format("I didn't expect to see another trainer here. Are you collecting rare Pokémon too?"), 
         format("Because Ivy River is untouched by people, rare Pokémon can thrive.")
     )
     
@@ -408,7 +408,7 @@ script IvyRiver_Trainer_A {
 script IvyRiver_Trainer_B {
     trainerbattle_single(
         TRAINER_IVY_RIVER_B, 
-        format("Swimming in this river is only for the toughest swimmers like me! I don't even need HM Flip Turn to swim!"), 
+        format("Swimming in this river is only for the toughest swimmers like me. I don't even need HM Flip Turn to swim!"), 
         format("I bet I could beat you if you weren't surfing on your Pokémon!")
     )
     
@@ -421,7 +421,7 @@ script IvyRiver_Trainer_B {
 script IvyRiver_Trainer_C {
     trainerbattle_single(
         TRAINER_IVY_RIVER_C, 
-        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship! And that's why I've partnered with the best Pokémon around!"), 
+        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship. And that's why I've partnered with the best Pokémon around!"), 
         format("You're championship material!")
     )
     

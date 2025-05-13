@@ -387,18 +387,47 @@ script SilversunCity_Sewers_Market_Muk{
 
             msgbox(format("{PLAYER} handed some Trash to Muk.\pMuk chomps down on it with joy!\p...\pIt spits out something onto the floor."))
             removeitem(ITEM_BOTTLE_CAP)
-            giveitem(ITEM_ABILITY_CAPSULE)
-            msgbox(format("Muk disappears into the sewers..."))
-            release
 
-            fadescreenswapbuffers(FADE_TO_BLACK)
-            removeobject(19)
-            fadescreenswapbuffers(FADE_FROM_BLACK)
-
+            goto(SilversunCity_Sewers_Market_Muk_Reward)
         }
     }
 
     releaseall
+    end
+}
+
+
+
+
+script SilversunCity_Sewers_Market_Muk_Reward{
+    message(format("Which one will you pick up?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Ability Pill", "Ability Capsule"
+    )
+
+    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_ABILITY_PILL) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}
+    if (var(VAR_RESULT) == 1) {setvar(VAR_0x8006, ITEM_ABILITY_CAPSULE) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}  
+}
+
+
+
+script SilversunCity_Sewers_Market_Muk_GiveReward{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        hideitemdescription
+        giveitem(VAR_0x8006)
+        goto(SilversunCity_Sewers_Market_Muk_End)
+    } else {
+        hideitemdescription
+        goto(SilversunCity_Sewers_Market_Muk_Reward)
+    }
+}
+
+
+script SilversunCity_Sewers_Market_Muk_End{
+    msgbox(format("Muk happily chomps on the Trash!"), MSGBOX_NPC)
     end
 }
 
