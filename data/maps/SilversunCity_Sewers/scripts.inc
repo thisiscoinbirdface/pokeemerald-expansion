@@ -559,7 +559,7 @@ SilversunCity_Sewers_Market_Muk_Reward_1:
 
 SilversunCity_Sewers_Market_Muk_Reward_2:
 # 409 "data//maps/SilversunCity_Sewers/scripts.pory"
-	setvar VAR_0x8006, ITEM_ABILITY_PILL
+	setvar VAR_0x8006, ITEM_ABILITY_PATCH
 # 409 "data//maps/SilversunCity_Sewers/scripts.pory"
 	goto SilversunCity_Sewers_Market_Muk_GiveReward
 	goto SilversunCity_Sewers_Market_Muk_Reward_1

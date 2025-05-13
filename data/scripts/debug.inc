@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_RIVETSHORE_CITY_STORAGE_BAY, 0, 4
+    warp MAP_SSELEGANT_STORAGE, 1, 2  
 	release
 	end
 

@@ -406,7 +406,7 @@ script SilversunCity_Sewers_Market_Muk_Reward{
         "Ability Pill", "Ability Capsule"
     )
 
-    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_ABILITY_PILL) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}
+    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_ABILITY_PATCH) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}
     if (var(VAR_RESULT) == 1) {setvar(VAR_0x8006, ITEM_ABILITY_CAPSULE) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}  
 }
 
