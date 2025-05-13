@@ -582,6 +582,48 @@ IvyRiver_Main_Zarude_Legendary::
 	end
 
 
+IvyRiver_Trainer_A::
+# 396 "data//maps/IvyRiver_Main/scripts.pory"
+	trainerbattle_single TRAINER_IVY_RIVER_A, IvyRiver_Trainer_A_Text_0, IvyRiver_Trainer_A_Text_1
+# 402 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Trainer_A_Text_2
+# 403 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+	end
+
+
+IvyRiver_Trainer_B::
+# 409 "data//maps/IvyRiver_Main/scripts.pory"
+	trainerbattle_single TRAINER_IVY_RIVER_B, IvyRiver_Trainer_B_Text_0, IvyRiver_Trainer_B_Text_1
+# 415 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Trainer_A_Text_2
+# 416 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+	end
+
+
+IvyRiver_Trainer_C::
+# 422 "data//maps/IvyRiver_Main/scripts.pory"
+	trainerbattle_single TRAINER_IVY_RIVER_C, IvyRiver_Trainer_C_Text_0, IvyRiver_Trainer_C_Text_1
+# 428 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Trainer_A_Text_2
+# 429 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+	end
+
+
+IvyRiver_NPC1::
+# 436 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_NPC1_Text_0, MSGBOX_NPC
+	end
+
+
+IvyRiver_NPC2::
+# 440 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
 # 20 "data//maps/IvyRiver_Main/scripts.pory"
 IvyRiver_Main_Fisherman_AssembleTrigger_Movement_0:
 # 20 "data//maps/IvyRiver_Main/scripts.pory"
@@ -1077,5 +1119,50 @@ IvyRiver_Main_GreenScarf_Text_16:
 	.string "I-I'll never forget you.$"
 
 IvyRiver_Trainer_A_Text_0:
-# 396 "data//maps/IvyRiver_Main/scripts.pory"
+# 398 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I didn't expect to see another trainer\n"
+	.string "here! Are you collecting rare Pokémon\l"
+	.string "too?$"
+
+IvyRiver_Trainer_A_Text_1:
+# 399 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Because Ivy River is untouched by\n"
+	.string "people, rare Pokémon can thrive.$"
+
+IvyRiver_Trainer_A_Text_2:
+# 402 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "$"
+
+IvyRiver_Trainer_B_Text_0:
+# 411 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Swimming in this river is only for the\n"
+	.string "toughest swimmers like me!$"
+
+IvyRiver_Trainer_B_Text_1:
+# 412 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I bet I could beat you if you weren't\n"
+	.string "surfing on your Pokémon!$"
+
+IvyRiver_Trainer_C_Text_0:
+# 424 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I'm not your usual trainer - I'm aiming\n"
+	.string "for the Pokémon Championship! And\l"
+	.string "someone like me needs the best Pokémon\l"
+	.string "around!$"
+
+IvyRiver_Trainer_C_Text_1:
+# 425 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I bet I'll see you at the Pokémon\n"
+	.string "Championship!$"
+
+IvyRiver_NPC1_Text_0:
+# 436 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Fancy coming down Ivy River to reach\n"
+	.string "Pelluca City! You're a rare breed.$"
+
+IvyRiver_NPC2_Text_0:
+# 440 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Most of the people you'll meet here are\n"
+	.string "either collecting rare Pokémon...or\l"
+	.string "lost!\p"
+	.string "Like me...$"

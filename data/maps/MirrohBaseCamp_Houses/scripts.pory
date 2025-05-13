@@ -61,20 +61,20 @@ script MirrohBaseCamp_Houndstone{
 
 //masterball house
 script MirrohBaseCamp_Houses_MasterballGuy{
-    msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Pokeball craftsman instead!"), MSGBOX_NPC)
+    msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
     end
 }
 
 script MirrohBaseCamp_Houses_MasterballFriend{
     lockall
     faceplayer
-    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Pokeballs of any of your Pokémon. Would you like me to?"), MSGBOX_YESNO)
+    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Poké Balls of any of your Pokémon. Would you like me to?"), MSGBOX_YESNO)
 
     //Change Pokeballs
     if (var(VAR_RESULT) == 1){
         special(ChoosePartyMon)
         waitstate
-        message(format("Now which Pokeball should I switch to?"))
+        message(format("Now which Poké Ball should I switch to?"))
 
         bufferitemname(STR_VAR_1, ITEM_POKE_BALL)
         dynmultipush("{STR_VAR_1}", ITEM_POKE_BALL)

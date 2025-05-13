@@ -19,51 +19,51 @@
     #define TRAINER_ROUTE3_EVIL_GABRIELLE     9
 
 //Gastree City Gym    
-#define TRAINER_GASTREEGYM_JACO              10
-#define TRAINER_GASTREEGYM_SKIP              11
-#define TRAINER_GASTREEGYM_LEADER            12
-#define TRAINER_GASTREE_KOHLA                13
+#define TRAINER_GASTREEGYM_JACO               10
+#define TRAINER_GASTREEGYM_SKIP               11
+#define TRAINER_GASTREEGYM_LEADER             12
+#define TRAINER_GASTREE_KOHLA                 13
 
 //Route 4 Evil Encounter
-#define TRAINER_ROUTE4_GRUNTS                14
+#define TRAINER_ROUTE4_GRUNTS                 14
 
 //Mt. Ceram Base Camp Evil Encounter
-#define TRAINER_CERAMBASECAMP_EVIL_GABRIELLE 15
-#define TRAINER_CERAMBASECAMP_GRUNT1         16
-#define TRAINER_CERAMBASECAMP_GRUNT2         17
-#define TRAINER_CERAMBASECAMP_GRUNT3         18
+#define TRAINER_CERAMBASECAMP_EVIL_GABRIELLE  15
+#define TRAINER_CERAMBASECAMP_GRUNT1          16
+#define TRAINER_CERAMBASECAMP_GRUNT2          17
+#define TRAINER_CERAMBASECAMP_GRUNT3          18
 
 //Route 4 Trainers
     //regular
-    #define TRAINER_ROUTE4_RAHA              19
-    #define TRAINER_ROUTE4_CAMMY             20
-    #define TRAINER_ROUTE4_SONA              21
-    #define TRAINER_ROUTE4_JENNY             22
+    #define TRAINER_ROUTE4_RAHA               19
+    #define TRAINER_ROUTE4_CAMMY              20
+    #define TRAINER_ROUTE4_SONA               21
+    #define TRAINER_ROUTE4_JENNY              22
 
 //Ninja kids
-    #define TRAINER_ROUTE4_KID1            23
-    #define TRAINER_ROUTE4_KID2            24
-    #define TRAINER_ROUTE4_KID3            25
+    #define TRAINER_ROUTE4_KID1               23
+    #define TRAINER_ROUTE4_KID2               24
+    #define TRAINER_ROUTE4_KID3               25
 
 //Base camp trainers and leader
-#define TRAINER_CERAMBASECAMPGYM_A           26
-#define TRAINER_CERAMBASECAMPGYM_B           27
-#define TRAINER_CERAMBASECAMPGYM_C           28
-#define TRAINER_CERAMBASECAMPGYM_D           29
-#define TRAINER_CERAMBASECAMPGYM_LEADER      30
+#define TRAINER_CERAMBASECAMPGYM_A            26
+#define TRAINER_CERAMBASECAMPGYM_B            27
+#define TRAINER_CERAMBASECAMPGYM_C            28
+#define TRAINER_CERAMBASECAMPGYM_D            29
+#define TRAINER_CERAMBASECAMPGYM_LEADER       30
 
 //Ceram
     //Trainers
-    #define TRAINER_MTCERAM_A                    31
-    #define TRAINER_MTCERAM_B                    32
-    #define TRAINER_MTCERAM_C                    33
-    #define TRAINER_MTCERAM_D                    34
+    #define TRAINER_MTCERAM_A                 31
+    #define TRAINER_MTCERAM_B                 32
+    #define TRAINER_MTCERAM_C                 33
+    #define TRAINER_MTCERAM_D                 34
     //Somber
-    #define TRAINER_MTCERAM_GRUNT1               35
-    #define TRAINER_MTCERAM_GRUNT2               36
-    #define TRAINER_MTCERAM_GRUNT_DOUBLE         37
+    #define TRAINER_MTCERAM_GRUNT1            35
+    #define TRAINER_MTCERAM_GRUNT2            36
+    #define TRAINER_MTCERAM_GRUNT_DOUBLE      37
     //Boss battle at peak
-    #define TRAINER_CERAMPEAK_MOXIE              38
+    #define TRAINER_CERAMPEAK_MOXIE           38
 
 //Galecrest
 #define TRAINER_GALECREST_ROBBER             39
@@ -85,7 +85,7 @@
 #define TRAINER_VILETHORN_H                  53
 
 //Vilethorn Mansion
-#define TRAINER_VILETHORN_I               54
+#define TRAINER_VILETHORN_I                  54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
 
@@ -143,14 +143,14 @@
 //Route 6 Gabrielle double battle
 #define TRAINER_ROUTE6_GRUNT1                94
 #define TRAINER_ROUTE6_GRUNT2                95
-#define TRAINER_ROUTE6_GAB                    96
+#define TRAINER_ROUTE6_GAB                   96
 
 //Pelluca random trainer
 #define TRAINER_SHANNON                      97
 
 //Mirroh Base Camp
-#define TRAINER_MIRROHBASECAMP_KOHLA        98
-#define TRAINER_MIRROHBASECAMP_LEADER       99
+#define TRAINER_MIRROHBASECAMP_KOHLA         98
+#define TRAINER_MIRROHBASECAMP_LEADER        99
 
 //TRAINER_NONE
 //Mt Mirroh Exterior
@@ -211,23 +211,23 @@
     #define TRAINER_PELLUCA_CITY_GYM_LEADER       143
 
 //Route 3 Extended
-#define TRAINER_ROUTE3_EXT_A                144
-#define TRAINER_ROUTE3_EXT_B                145
-#define TRAINER_ROUTE3_EXT_C                146
+#define TRAINER_ROUTE3_EXT_A                         144
+#define TRAINER_ROUTE3_EXT_B                         145
+#define TRAINER_ROUTE3_EXT_C                         146
 
 //Pelluca
-#define TRAINER_PELLUCA_QWILSQUAD_A                     147
-#define TRAINER_PELLUCA_QWILSQUAD_B                     148
-#define TRAINER_PELLUCA_QWILSQUAD_BOSS                  149
-#define TRAINER_PELLUCA_DETECTIVE                       150
+#define TRAINER_PELLUCA_QWILSQUAD_A                  147
+#define TRAINER_PELLUCA_QWILSQUAD_B                  148
+#define TRAINER_PELLUCA_QWILSQUAD_BOSS               149
+#define TRAINER_PELLUCA_DETECTIVE                    150
 
 //Route 8
-#define TRAINER_ROUTE8_A                     151
-#define TRAINER_ROUTE8_B                     152
-#define TRAINER_ROUTE8_C                     153
-#define TRAINER_ROUTE8_D                     154
-#define TRAINER_ROUTE8_E                     155
-#define TRAINER_ROUTE8_F                     156
+#define TRAINER_ROUTE8_A                             151
+#define TRAINER_ROUTE8_B                             152
+#define TRAINER_ROUTE8_C                             153
+#define TRAINER_ROUTE8_D                             154
+#define TRAINER_ROUTE8_E                             155
+#define TRAINER_ROUTE8_F                             156
 
 //Rivetshore Quarry
 #define TRAINER_RIVETSHORE_GYM_A                     157
@@ -247,6 +247,16 @@
 #define TRAINER_IVY_RIVER_B                 169
 #define TRAINER_IVY_RIVER_C                 170
 #define TRAINER_IVY_RIVER_D                 171
+
+
+
+
+
+
+
+
+
+
 #define TRAINER_JACK                        172
 #define TRAINER_DUDLEY                      173
 #define TRAINER_CHAD                        174

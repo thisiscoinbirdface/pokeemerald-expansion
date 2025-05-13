@@ -212,7 +212,7 @@ script WinterlilyHollow_MimeJr_3{
         }
     } else {
         applymovement(1, moves(face_down))
-        msgbox(format("...Mime Jr. goes back to staring at the water. Maybe it needs a comforting Pokeball to be in."))
+        msgbox(format("...Mime Jr. goes back to staring at the water. Maybe it needs a comforting Poké Ball to be in."))
     }
 
     releaseall

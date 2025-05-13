@@ -1234,3 +1234,19 @@ script PellucaCity_PostGymEvent_Trigger{
     end
 }
 
+
+
+
+
+
+
+
+
+
+script PellucaCity_Red_GymBlock{
+    msgbox(format("Jania's gone to deal with the Mega Sharpedo. You'll find her up in Ivy River somewhere."), MSGBOX_NPC)
+    end
+}
+
+
+

@@ -437,7 +437,7 @@ script IvyRiver_NPC1{
     end
 }
 script IvyRiver_NPC2{
-    msgbox(format("Most of the people you'll meet here are either collecting rare Pokémon...or lost. Like me!"), MSGBOX_NPC)
+    msgbox(format("Most of the people you'll meet here are either collecting rare Pokémon...or lost!\pLike me..."), MSGBOX_NPC)
     end
 }
 
