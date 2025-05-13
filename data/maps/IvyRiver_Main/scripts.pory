@@ -408,7 +408,7 @@ script IvyRiver_Trainer_A {
 script IvyRiver_Trainer_B {
     trainerbattle_single(
         TRAINER_IVY_RIVER_B, 
-        format("Swimming in this river is only for the toughest swimmers like me!"), 
+        format("Swimming in this river is only for the toughest swimmers like me! I don't even need HM Flip Turn to swim!"), 
         format("I bet I could beat you if you weren't surfing on your Pokémon!")
     )
     
@@ -421,11 +421,11 @@ script IvyRiver_Trainer_B {
 script IvyRiver_Trainer_C {
     trainerbattle_single(
         TRAINER_IVY_RIVER_C, 
-        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship! And someone like me needs the best Pokémon around!"), 
-        format("I bet I'll see you at the Pokémon Championship!")
+        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship! And that's why I've partnered with the best Pokémon around!"), 
+        format("You're championship material!")
     )
     
-    msgbox(format(""))
+    msgbox(format("I bet I'll see you at the Pokémon Championship!"))
     release
     end
 }
@@ -433,7 +433,7 @@ script IvyRiver_Trainer_C {
 
 //NPCs
 script IvyRiver_NPC1{
-    msgbox(format("Fancy coming down Ivy River to reach Pelluca City! You're a rare breed."), MSGBOX_NPC)
+    msgbox(format("You can't navigate the strong currents here without HM Flip Turn.\pOh, you don't have it?\pToo bad."), MSGBOX_NPC)
     end
 }
 script IvyRiver_NPC2{

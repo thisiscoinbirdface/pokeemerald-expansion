@@ -606,7 +606,7 @@ IvyRiver_Trainer_C::
 # 422 "data//maps/IvyRiver_Main/scripts.pory"
 	trainerbattle_single TRAINER_IVY_RIVER_C, IvyRiver_Trainer_C_Text_0, IvyRiver_Trainer_C_Text_1
 # 428 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Trainer_A_Text_2
+	msgbox IvyRiver_Trainer_C_Text_2
 # 429 "data//maps/IvyRiver_Main/scripts.pory"
 	release
 	end
@@ -1136,7 +1136,8 @@ IvyRiver_Trainer_A_Text_2:
 IvyRiver_Trainer_B_Text_0:
 # 411 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Swimming in this river is only for the\n"
-	.string "toughest swimmers like me!$"
+	.string "toughest swimmers like me! I don't even\l"
+	.string "need HM Flip Turn to swim!$"
 
 IvyRiver_Trainer_B_Text_1:
 # 412 "data//maps/IvyRiver_Main/scripts.pory"
@@ -1147,18 +1148,24 @@ IvyRiver_Trainer_C_Text_0:
 # 424 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I'm not your usual trainer - I'm aiming\n"
 	.string "for the Pokémon Championship! And\l"
-	.string "someone like me needs the best Pokémon\l"
-	.string "around!$"
+	.string "that's why I've partnered with the best\l"
+	.string "Pokémon around!$"
 
 IvyRiver_Trainer_C_Text_1:
 # 425 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "You're championship material!$"
+
+IvyRiver_Trainer_C_Text_2:
+# 428 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I bet I'll see you at the Pokémon\n"
 	.string "Championship!$"
 
 IvyRiver_NPC1_Text_0:
 # 436 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Fancy coming down Ivy River to reach\n"
-	.string "Pelluca City! You're a rare breed.$"
+	.string "You can't navigate the strong currents\n"
+	.string "here without HM Flip Turn.\p"
+	.string "Oh, you don't have it?\p"
+	.string "Too bad.$"
 
 IvyRiver_NPC2_Text_0:
 # 440 "data//maps/IvyRiver_Main/scripts.pory"

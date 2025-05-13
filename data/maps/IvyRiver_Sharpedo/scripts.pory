@@ -51,7 +51,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     waitmovement(0)
     speakername("Jania")
-    message(format("My Gyarados and I finally found its hideout and managed to trap it in these currents."))
+    message(format("My Gyarados and I finally found its hideout and managed to trap it here. Only a trainer with HM Flip Turn can pass these currents, and even then, you'll need my badge to use the HM."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 9))
     waitmovement(0)
     waitmessage
@@ -61,7 +61,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
     waitmovement(0)
     speakername("Jania")
-    message(format("These currents should keep it at bay while it calms down."))
+    message(format("This should keep it at bay while it calms down."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
     waitmovement(0)
     waitmessage

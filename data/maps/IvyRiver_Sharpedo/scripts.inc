@@ -320,13 +320,15 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_3:
 IvyRiver_Sharpedo_Jania_Trigger_Text_4:
 # 54 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "My Gyarados and I finally found its\n"
-	.string "hideout and managed to trap it in these\l"
-	.string "currents.$"
+	.string "hideout and managed to trap it here.\l"
+	.string "Only a trainer with HM Flip Turn can\l"
+	.string "pass these currents, and even then,\l"
+	.string "you'll need my badge to use the HM.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_5:
 # 64 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	.string "These currents should keep it at bay\n"
-	.string "while it calms down.$"
+	.string "This should keep it at bay while it calms\n"
+	.string "down.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_6:
 # 80 "data//maps/IvyRiver_Sharpedo/scripts.pory"

@@ -819,14 +819,14 @@
 #define ITEM_TM99 680
 #define ITEM_TM100 681
 
-#define ITEM_HM01 682
-#define ITEM_HM02 683
-#define ITEM_HM03 684
-#define ITEM_HM04 685
-#define ITEM_HM05 686
-#define ITEM_HM06 687
-#define ITEM_HM07 688
-#define ITEM_HM08 689
+#define ITEM_HM01 682 //splash
+#define ITEM_HM02 683 //fly
+#define ITEM_HM03 684 //surf
+#define ITEM_HM04 685 //strength
+#define ITEM_HM05 686 //flip turn
+#define ITEM_HM06 687 //rock smash
+#define ITEM_HM07 688 //waterfall
+#define ITEM_HM08 689 //dive
 
 // Charms
 #define ITEM_OVAL_CHARM 690

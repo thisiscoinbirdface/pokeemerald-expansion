@@ -1275,6 +1275,7 @@
 #define FLAG_ITEM_IVY_RIVER_C               0x43C
 #define FLAG_ITEM_IVY_RIVER_D               0x43D
 #define FLAG_ITEM_IVY_RIVER_E               0x43E
+#define FLAG_ITEM_IVY_RIVER_F               0x44C
 
 //route 3 extended
 #define FLAG_ITEM_ROUTE3_EXT_A              0x43F
@@ -1298,7 +1299,7 @@
 #define FLAG_ITEM_RIVETSHORE_D              0x44B
 
 
-#define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C
+#define FLAG_ITEM_IVY_RIVER_F        0x44C
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E
 #define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
