@@ -320,10 +320,10 @@ script GalecrestCity_NPC_5{
     faceplayer    
 
     if (flag(FLAG_GALECREST_ROCKSMASH)){
-        msgbox(format("I need to find a Pokémon that can learn ROCK SMASH..."), MSGBOX_NPC)
+        msgbox(format("I need to find a Pokémon that can learn Rock Smash..."), MSGBOX_NPC)
     } else {
         msgbox(format("This rock can be smashed by a Pokémon that knows a certain move...I forgot which one though! Do you know?"))
-        dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "ROCK BLAST", "ROCK SLIDE", "ROCK SMASH", "STONE EDGE")
+        dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Rock Blast", "Rock Slide", "Rock Smash", "Stone Edge")
         if (var(VAR_RESULT) == 2){
             msgbox(format("Yes! Now I remember! In fact, I also remember that I have the HM for it here. Why don't you keep it?"))
             giveitem(ITEM_HM_ROCK_SMASH)

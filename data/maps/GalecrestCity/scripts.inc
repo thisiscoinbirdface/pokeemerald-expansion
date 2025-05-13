@@ -983,7 +983,7 @@ GalecrestCity_Totodile_Text_0:
 GalecrestCity_NPC_5_Text_0:
 # 323 "data//maps/GalecrestCity/scripts.pory"
 	.string "I need to find a Pokémon that can learn\n"
-	.string "ROCK SMASH...$"
+	.string "Rock Smash...$"
 
 GalecrestCity_NPC_5_Text_1:
 # 325 "data//maps/GalecrestCity/scripts.pory"
@@ -993,19 +993,19 @@ GalecrestCity_NPC_5_Text_1:
 
 GalecrestCity_NPC_5_Text_2:
 # 326 "data//maps/GalecrestCity/scripts.pory"
-	.string "ROCK BLAST$"
+	.string "Rock Blast$"
 
 GalecrestCity_NPC_5_Text_3:
 # 326 "data//maps/GalecrestCity/scripts.pory"
-	.string "ROCK SLIDE$"
+	.string "Rock Slide$"
 
 GalecrestCity_NPC_5_Text_4:
 # 326 "data//maps/GalecrestCity/scripts.pory"
-	.string "ROCK SMASH$"
+	.string "Rock Smash$"
 
 GalecrestCity_NPC_5_Text_5:
 # 326 "data//maps/GalecrestCity/scripts.pory"
-	.string "STONE EDGE$"
+	.string "Stone Edge$"
 
 GalecrestCity_NPC_5_Text_6:
 # 328 "data//maps/GalecrestCity/scripts.pory"

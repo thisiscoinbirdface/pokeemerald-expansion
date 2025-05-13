@@ -344,8 +344,8 @@ GalecrestCityGym_Leader_Text_3:
 
 GalecrestCityGym_Leader_Text_4:
 # 160 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "The Stoic Badge lets you use the HM\n"
-	.string "move ROCK SMASH outside of battle.\p"
+	.string "The Stoic Badge lets you use Rock\n"
+	.string "Smash outside of battle.\p"
 	.string "...\p"
 	.string "And this is yours too.$"
 

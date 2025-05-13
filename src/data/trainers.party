@@ -1537,7 +1537,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Palpitoad
-Level: 27
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_B ===
@@ -1550,7 +1550,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Primeape
-Level: 27
+Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_ROUTE6_C ===
@@ -1576,11 +1576,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Toedscool
-Level: 27
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Carvanha
-Level: 28
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_E ===
@@ -1607,11 +1607,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Croagunk
-Level: 28   
+Level: 27   
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Croagunk
-Level: 30
+Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1626,15 +1626,15 @@ AI: Check Bad Move
 Mugshot: Green
 
 Manectric
-Level: 31
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Houndoom
-Level: 31
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lycanroc
-Level: 33
+Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -1648,7 +1648,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Swadloon
-Level: 27
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dottler
@@ -1656,7 +1656,7 @@ Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Wimpod
-Level: 27
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Beedrill
@@ -1673,11 +1673,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Swablu
-Level: 30
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skrelp
-Level: 31
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_J ===
@@ -1708,11 +1708,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 32
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Cursola
-Level: 33
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT1 ===
@@ -1721,15 +1721,14 @@ Class: Team Somber
 Pic: Somber Grunt M
 Gender: Female
 Music: Cool
-Items: Super Potion
 Double Battle: Yes
 AI: Basic Trainer
 
 Thievul
-Level: 31
+Level: 28
 
-Hypno
-Level: 32
+Drowzee
+Level: 29
 
 === TRAINER_ROUTE6_GRUNT2 ===
 Name: HOPE
@@ -1737,15 +1736,14 @@ Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
 Swoobat
-Level: 30
+Level: 28
 
 Hypno
-Level: 32
+Level: 30
 
 === TRAINER_ROUTE6_GAB ===
 Name: Gabrielle
@@ -1758,11 +1756,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Zorua
-Level: 31
+Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Baltoy
-Level: 30
+Level: 31
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Mawile
