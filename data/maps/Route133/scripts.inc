@@ -2,7 +2,7 @@ Route133_MapScripts::
 	.byte 0
 
 Route133_EventScript_Franklin::
-	trainerbattle_single TRAINER_FRANKLIN, Route133_Text_FranklinIntro, Route133_Text_FranklinDefeat
+	trainerbattle_single TRAINER_IVY_RIVER_C, Route133_Text_FranklinIntro, Route133_Text_FranklinDefeat
 	msgbox Route133_Text_FranklinPostBattle, MSGBOX_AUTOCLOSE
 	end
 

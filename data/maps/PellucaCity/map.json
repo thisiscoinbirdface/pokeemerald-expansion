@@ -846,8 +846,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
-      "y": 8,
+      "x": 28,
+      "y": 0,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CITY_HOUSES",
       "dest_warp_id": "2"

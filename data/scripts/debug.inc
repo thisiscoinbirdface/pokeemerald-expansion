@@ -148,7 +148,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	clearflag FLAG_MIRROH_EXTERIOR_BREECH
+	setflag FLAG_ITEM_IVYRIVER_GREEN_SCARF
 	release
 	end
 

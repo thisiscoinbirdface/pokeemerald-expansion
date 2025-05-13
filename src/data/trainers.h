@@ -7431,7 +7431,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3025
-    [DIFFICULTY_NORMAL][TRAINER_SANTIAGO] =
+    [DIFFICULTY_NORMAL][TRAINER_IVY_RIVER_A] =
     {
 #line 3026
         .trainerName = _("SANTIAGO"),
@@ -7474,7 +7474,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3042
-    [DIFFICULTY_NORMAL][TRAINER_GILBERT] =
+    [DIFFICULTY_NORMAL][TRAINER_IVY_RIVER_B] =
     {
 #line 3043
         .trainerName = _("GILBERT"),
@@ -7506,7 +7506,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3055
-    [DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
+    [DIFFICULTY_NORMAL][TRAINER_IVY_RIVER_C] =
     {
 #line 3056
         .trainerName = _("FRANKLIN"),
@@ -7538,7 +7538,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3068
-    [DIFFICULTY_NORMAL][TRAINER_KEVIN] =
+    [DIFFICULTY_NORMAL][TRAINER_IVY_RIVER_D] =
     {
 #line 3069
         .trainerName = _("KEVIN"),

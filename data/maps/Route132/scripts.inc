@@ -2,7 +2,7 @@ Route132_MapScripts::
 	.byte 0
 
 Route132_EventScript_Gilbert::
-	trainerbattle_single TRAINER_GILBERT, Route132_Text_GilbertIntro, Route132_Text_GilbertDefeat
+	trainerbattle_single TRAINER_IVY_RIVER_B, Route132_Text_GilbertIntro, Route132_Text_GilbertDefeat
 	msgbox Route132_Text_GilbertPostBattle, MSGBOX_AUTOCLOSE
 	end
 

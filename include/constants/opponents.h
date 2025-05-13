@@ -242,10 +242,11 @@
 #define TRAINER_RIVETSHORE_GYM_J                     166
 #define TRAINER_RIVETSHORE_GYM_LEADER                167
 
-#define TRAINER_SANTIAGO                    168
-#define TRAINER_GILBERT                     169
-#define TRAINER_FRANKLIN                    170
-#define TRAINER_KEVIN                       171
+//Ivy River
+#define TRAINER_IVY_RIVER_A                 168
+#define TRAINER_IVY_RIVER_B                 169
+#define TRAINER_IVY_RIVER_C                 170
+#define TRAINER_IVY_RIVER_D                 171
 #define TRAINER_JACK                        172
 #define TRAINER_DUDLEY                      173
 #define TRAINER_CHAD                        174

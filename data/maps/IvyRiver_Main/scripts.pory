@@ -380,3 +380,49 @@ script IvyRiver_Main_Zarude_Legendary{
 
 
 
+
+
+
+
+
+
+
+
+
+
+//Trainers
+//man 1
+script IvyRiver_Trainer_A {
+    trainerbattle_single(TRAINER_IVY_RIVER_A, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+//swimmer
+script IvyRiver_Trainer_B {
+    trainerbattle_single(TRAINER_IVY_RIVER_B, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+//woman 1
+script IvyRiver_Trainer_C {
+    trainerbattle_single(TRAINER_IVY_RIVER_C, format(""), format(""))
+    msgbox(format(""))
+    release
+    end
+}
+
+
+//NPCs
+script IvyRiver_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script IvyRiver_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+

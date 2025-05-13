@@ -196,8 +196,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
-      "x": 45,
-      "y": 88,
+      "x": 59,
+      "y": 80,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
