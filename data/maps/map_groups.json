@@ -167,7 +167,9 @@
     "Rivetshore_Underpass",
     "RivetshoreQuarry_Interior",
     "RivetshoreCity_StorageBay",
-    "SSElegant_InsideStorage"
+    "SSElegant_InsideStorage",
+    "Rivetshore_RangerInstitute",
+    "Rivetshore_RangerInstitute_Interior"
   ],
   "gMapGroup_Phase5": [
     "SSElegant",

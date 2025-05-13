@@ -5434,7 +5434,7 @@
     {
       "id": "LAYOUT_RIVETSHORE_CITY",
       "name": "RivetshoreCity_Layout",
-      "width": 68,
+      "width": 62,
       "height": 72,
       "primary_tileset": "gTileset_Rivetshore",
       "secondary_tileset": "gTileset_Slateport",
@@ -5670,6 +5670,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/UnchartedIsland/border.bin",
       "blockdata_filepath": "data/layouts/UnchartedIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_RANGER_INSTITUTE",
+      "name": "Rivetshore_RangerInstitute_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Rivetshore",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Rivetshore_RangerInstitute/border.bin",
+      "blockdata_filepath": "data/layouts/Rivetshore_RangerInstitute/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVETSHORE_RANGER_INSTITUTE_INTERIOR",
+      "name": "Rivetshore_RangerInstitute_Interior_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Rivetshore_RangerInstitute_Interior/border.bin",
+      "blockdata_filepath": "data/layouts/Rivetshore_RangerInstitute_Interior/map.bin"
     }
   ]
 }

@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 24,
-      "y": 13,
+      "x": 23,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
       "movement_range_x": 5,
@@ -54,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 15,
-      "y": 29,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
       "movement_range_x": 4,

@@ -22,6 +22,11 @@
       "map": "MAP_RIVETSHORE_QUARRY",
       "offset": -19,
       "direction": "left"
+    },
+    {
+      "map": "MAP_RIVETSHORE_RANGER_INSTITUTE",
+      "offset": 8,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -66,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 13,
-      "y": 22,
+      "x": 14,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -144,8 +149,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARON)",
-      "x": 14,
-      "y": 22,
+      "x": 13,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
