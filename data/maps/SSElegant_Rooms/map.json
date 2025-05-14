@@ -95,14 +95,14 @@
   ],
   "warp_events": [
     {
-      "x": 20,
+      "x": 12,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT",
       "dest_warp_id": "1"
     },
     {
-      "x": 19,
+      "x": 11,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT",
@@ -151,7 +151,7 @@
       "dest_warp_id": "5"
     },
     {
-      "x": 25,
+      "x": 24,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT_ROOMS",
@@ -186,7 +186,7 @@
       "dest_warp_id": "11"
     },
     {
-      "x": 22,
+      "x": 17,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT_ROOMS",
@@ -200,7 +200,7 @@
       "dest_warp_id": "13"
     },
     {
-      "x": 25,
+      "x": 20,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_SSELEGANT_ROOMS",
@@ -218,6 +218,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

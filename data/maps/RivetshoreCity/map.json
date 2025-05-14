@@ -167,7 +167,7 @@
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 0,
-      "movement_range_y": 4,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -437,14 +437,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
+      "x": 29,
       "y": 39,
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",
       "dest_warp_id": "2"
     },
     {
-      "x": 29,
+      "x": 16,
       "y": 39,
       "elevation": 0,
       "dest_map": "MAP_RIVETSHORE_CITY_HOUSES",

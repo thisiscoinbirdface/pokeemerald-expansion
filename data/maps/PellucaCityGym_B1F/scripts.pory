@@ -76,13 +76,13 @@ script PellucaGym_Gabrielle_Trigger2{
     end
 }
 text PellucaCity_Gym_Text_Gab_Intro{
-    format("{PLAYER}! Are you here to challenge Jania too? I've decided on my next goal - to collect all eight badges and become the Pokemon Champion!")
+    format("{PLAYER}! Are you here to challenge Jania too? I've decided on my next goal - to collect all eight badges and become the PokémonChampion!")
 }
 text PellucaCity_Gym_Text_Gab_Defeat{
     format("I was so close!")
 }
 text PellucaCity_Gym_Text_Gab_PostDefeat{
-    format("Adjusting to life after Team Somber hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on! We didn't win today, but mark my words - we'll beat you at the Pokemon Championships, {PLAYER}!")
+    format("Adjusting to life after Team Somber hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on! We didn't win today, but mark my words - we'll beat you at the PokémonChampionships, {PLAYER}!")
 }
 script PellucaGym_Trainer_Gabrielle{
     msgbox(format("Jania's a really strong leader. But you might stand a chance!"), MSGBOX_NPC)
@@ -91,7 +91,7 @@ script PellucaGym_Trainer_Gabrielle{
 //Cooltrainer
 script PellucaGym_Trainer_B{
     trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_B, format("What's a wimp like you doing here? This is a tough gym for elite trainers only!"), format("You're not a wimp!"))
-    msgbox(format("Jania uses strong WATER type Pokemon on home ground. You'd better be prepared!"), MSGBOX_NPC)
+    msgbox(format("Jania uses strong WATER type Pokémonon home ground. You'd better be prepared!"), MSGBOX_NPC)
     end
 }
 //The rest are all swimmers

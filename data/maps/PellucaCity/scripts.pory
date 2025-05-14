@@ -670,7 +670,7 @@ script PellucaCityFlooded_NPCSaved_B{
     end
 }
 script PellucaCityFlooded_NPCSaved_C{
-    msgbox(format("Brr - the water was so cold! How do Pokemon swim in it?"), MSGBOX_NPC)
+    msgbox(format("Brr - the water was so cold! How do Pokémonswim in it?"), MSGBOX_NPC)
     end
 }
 script PellucaCityFlooded_NPCSaved_D{
@@ -739,7 +739,7 @@ script PellucaCityFlooded_Complete_Trigger{
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
-    msgbox(format("Yeah. All that remains is to wait until the water recedes, and then we can go back to normal.\pCome, shall we wait in the Pokemon Center until then?"))   
+    msgbox(format("Yeah. All that remains is to wait until the water recedes, and then we can go back to normal.\pCome, shall we wait in the PokémonCenter until then?"))   
     release
     delay(16)     
 

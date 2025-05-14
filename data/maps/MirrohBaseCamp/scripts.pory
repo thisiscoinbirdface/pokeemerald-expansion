@@ -261,7 +261,7 @@ script MirrohBaseCamp_Rue_Trigger{
 //Gym challenge trainers
 //3 people outside
 
-//Pokemon Breeder (horses)
+//Pokémon Breeder (horses)
 script MirrohBaseCamp_Trainer_A{
     lockall
     faceplayer

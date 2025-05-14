@@ -2715,7 +2715,7 @@ PellucaCityFlooded_NPCSaved_B_Text_0:
 PellucaCityFlooded_NPCSaved_C_Text_0:
 # 673 "data//maps/PellucaCity/scripts.pory"
 	.string "Brr - the water was so cold! How do\n"
-	.string "Pokemon swim in it?$"
+	.string "Pokémonswim in it?$"
 
 PellucaCityFlooded_NPCSaved_D_Text_0:
 # 677 "data//maps/PellucaCity/scripts.pory"
@@ -2746,8 +2746,8 @@ PellucaCityFlooded_Complete_Trigger_Text_4:
 	.string "Yeah. All that remains is to wait until\n"
 	.string "the water recedes, and then we can go\l"
 	.string "back to normal.\p"
-	.string "Come, shall we wait in the Pokemon\n"
-	.string "Center until then?$"
+	.string "Come, shall we wait in the\n"
+	.string "PokémonCenter until then?$"
 
 PellucaCityFlooded_Complete_Trigger_Text_5:
 # 747 "data//maps/PellucaCity/scripts.pory"

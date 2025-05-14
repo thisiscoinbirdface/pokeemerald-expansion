@@ -77,7 +77,7 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found.\pNobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recoded by the Pokemon Ranger Institute yesterday.\pThe heat signatures were off the charts. According to the Ranger Head, it's like the beginning of a region-wide drought."))
+    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found.\pNobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recorded by the Pokémon Ranger Institute yesterday.\pThe heat signatures were off the charts. According to the Ranger Head, it's like the beginning of a region-wide drought."))
     
     applymovement(LOCALID_JANIA, moves(emote_question_mark))
     movedelay

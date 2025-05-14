@@ -670,7 +670,7 @@ RivetshoreCity_Assembly_Trigger_Text_17:
 	.string "holding her captive somewhere...\p"
 	.string "...and that leads us to today.\p"
 	.string "A massive uptick in geological activity\n"
-	.string "was recoded by the Pokemon Ranger\l"
+	.string "was recorded by the Pokémon Ranger\l"
 	.string "Institute yesterday.\p"
 	.string "The heat signatures were off the\n"
 	.string "charts. According to the Ranger Head,\l"

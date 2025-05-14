@@ -12,7 +12,7 @@ script RivetshoreCity_Houses_NPC1{
     end
 }
 script RivetshoreCity_Houses_NPC2{
-    msgbox(format("My husband claims our Scolipede gets seasick, but he's the one that gets seasick!"), MSGBOX_NPC)
+    msgbox(format("My husband claims our Scolipede gets seasick, but Scolipede's always been fine at sea.\pHe's the one that gets seasick!"), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Houses_Scolipede{
@@ -23,30 +23,87 @@ script RivetshoreCity_Houses_Scolipede{
 
 //House 2 - quest (mimikyu playing pranks on people)
 script RivetshoreCity_Houses_NPC3{
-    msgbox(format("One of the shopkeepers Pokemon was found lost deep inside the quarry the other day. It got pranked by a mysterious Pokemon!"), MSGBOX_NPC)
+    msgbox(format("One of the shopkeepers Pokémon was found lost deep inside the quarry the other day. Apparently it was a prank by someone!"), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Houses_NPC4{
-    msgbox(format("There's a mean Pokemon playing pranks on everyone's Pokemon in the city! But it hasn't tried anything on our Clodsire."), MSGBOX_NPC)
+    msgbox(format("There's a mean Pokémon playing pranks on everyone's Pokémon in the city!\pBut it hasn't tried anything yet on our Clodsire."), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Houses_Clodsire{
     playmoncry(SPECIES_CLODSIRE, CRY_MODE_NORMAL)
-    msgbox(format("Clodsire looks blissfully unaware of it's surroundings."), MSGBOX_NPC)
+    msgbox(format("Clodsire looks blissfully unaware of its surroundings."), MSGBOX_NPC)
     end
 }
 
 //House 3 - free item
+//two brothers and grandma
 script RivetshoreCity_Houses_NPC5{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Grandma won't let us get Pokemon! So we're playing card games instead."), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Houses_NPC6{
-    msgbox(format(""), MSGBOX_NPC)
+    if (var(VAR_RIVETSHORE_EGG_QUEST) == 2){
+        msgbox(format("We've hidden the Egg behind the house. Grandma will never find out!"))
+        releaseall
+        end
+    }
+
+    if (var(VAR_RIVETSHORE_EGG_QUEST) == 1){
+        msgbox(format("Did you bring us a Pokémon Egg?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Cool! Let us see!"))
+            release
+
+            special(ChoosePartyMon)                 //choose your mon
+            waitstate                               //wait
+            copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+            copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+            specialvar(VAR_RESULT, GetTradeSpecies)
+
+            if (var(VAR_RESULT) == SPECIES_EGG){
+                msgbox(format("Oh wow! This is perfect! Which egg is it?\p...\pNo, don't tell us! It doesn't matter what Pokemon it is. We'll treat it like our third sibling!\pThank you so much!\p...\pUm. We want to give you something...but we don't have anything.\pI bet you're an adult so you find cards boring, but we've got this extra Red Card. Will you take this?"))
+                setvar(VAR_RIVETSHORE_EGG_QUEST, 2)
+
+                giveitem(ITEM_RED_CARD)
+                releaseall
+                end
+            } else {
+                msgbox(format("We need a Pokemon Egg or else Grandma will find out!"))
+                releaseall
+                end
+            }
+
+
+        } else {
+            msgbox(format("Sigh..."))
+            release
+            end
+        }
+    }
+
+    if (var(VAR_RIVETSHORE_EGG_QUEST) == 0){
+        msgbox(format("I wish we could get Pokémon and challenge Raazi!\p...\pHey, you're a trainer! I bet you could get us a Pokemon!\pWill you bring us a Pokemon?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Yay! Just one Pokémon is fine - we'll raise it together! But it can't be a big one or Grandma will find out. Can you bring a Pokémon Egg?"))
+            release
+
+            setvar(VAR_RIVETSHORE_EGG_QUEST, 1)
+        }
+
+        msgbox(format("Sigh...adults are so lame.\nC'mon bro, shuffle the deck."))
+        end
+    }
+
+    releaseall
     end
 }
 script RivetshoreCity_Houses_NPC7{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("My grandchildren will make fine doctors and lawyers one day!\pI don't want them to turn out like you, trainer."), MSGBOX_NPC)
     end
 }
+
+
+
 

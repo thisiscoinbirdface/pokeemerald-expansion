@@ -348,8 +348,8 @@ PellucaGym_Trainer_B_Text_1:
 
 PellucaGym_Trainer_B_Text_2:
 # 94 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Jania uses strong WATER type Pokemon\n"
-	.string "on home ground. You'd better be\l"
+	.string "Jania uses strong WATER type\n"
+	.string "Pokémonon home ground. You'd better be\l"
 	.string "prepared!$"
 
 PellucaGym_Trainer_C_Text_0:
@@ -526,7 +526,7 @@ PellucaCity_Gym_Text_Gab_Intro::
 	.string "{PLAYER}! Are you here to challenge\n"
 	.string "Jania too? I've decided on my next goal\l"
 	.string "- to collect all eight badges and\l"
-	.string "become the Pokemon Champion!$"
+	.string "become the PokémonChampion!$"
 
 PellucaCity_Gym_Text_Gab_Defeat::
 # 81 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -539,5 +539,5 @@ PellucaCity_Gym_Text_Gab_PostDefeat::
 	.string "and getting badges has given me and\l"
 	.string "Zorua something to focus on! We didn't\l"
 	.string "win today, but mark my words - we'll beat\l"
-	.string "you at the Pokemon Championships,\l"
+	.string "you at the PokémonChampionships,\l"
 	.string "{PLAYER}!$"

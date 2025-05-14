@@ -286,7 +286,7 @@
     #define VAR_MIRROHBASECAMPGYM_STATE                      0x4067 // Unused Var
     #define VAR_DIANCIE                                      0x4068 // Unused Var
     #define VAR_PELLUCA_MAP_STATE                            0x406A // 0 is normal, 1 is flooded
-    #define VAR_ROUTE112_STATE                               0x406B // Unused Var
+    #define VAR_RIVETSHORE_EGG_QUEST                         0x406B // Unused Var
     #define VAR_ROUTE113_STATE                               0x406C // Unused Var
 
 
