@@ -5664,10 +5664,10 @@
     {
       "id": "LAYOUT_UNCHARTED_ISLAND",
       "name": "UnchartedIsland_Layout",
-      "width": 80,
+      "width": 90,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/UnchartedIsland/border.bin",
       "blockdata_filepath": "data/layouts/UnchartedIsland/map.bin"
     },
