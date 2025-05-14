@@ -250,7 +250,7 @@
 #define FLAG_GRAVEYARD_SPIRITOMB 0x4B7 // Unused Flag
 #define FLAG_WINTERLILY_SNEASLER 0x4B8 // Unused Flag
 #define FLAG_CERAM_TALONFLAME 0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA 0x4BA // Unused Flag
+#define FLAG_PELLUCA_GYM_GABRIELLE_BATTLE 0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB 0x4BB // Unused Flag
 #define FLAG_UNUSED_0x4BC 0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD 0x4BD // Unused Flag

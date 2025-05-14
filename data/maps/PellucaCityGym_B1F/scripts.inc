@@ -2,209 +2,437 @@ PellucaCityGym_B1F_MapScripts::
 	.byte 0
 
 
-PellucaGym_Trainer_A::
+PellucaGym_Gabrielle_Trigger0::
 # 6 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_A, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 7 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+	goto_if_set FLAG_PELLUCA_GYM_GABRIELLE_BATTLE, PellucaGym_Gabrielle_Trigger0_2
+# 9 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	playbgm MUS_ENCOUNTER_GIRL, FALSE
+# 10 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement 4, PellucaGym_Gabrielle_Trigger0_Movement_0
+# 11 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 12 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	delay 48
+# 13 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaGym_Gabrielle_Trigger0_Movement_1
+# 14 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 17 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	speakername PellucaGym_Gabrielle_Trigger0_Text_0
+# 18 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_Intro
+# 19 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_no_intro TRAINER_PELLUCA_CITY_GYM_A, PellucaCity_Gym_Text_Gab_Defeat
+# 20 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_PostDefeat
+# 22 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setflag FLAG_PELLUCA_GYM_GABRIELLE_BATTLE
+# 25 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	releaseall
+	end
+
+PellucaGym_Gabrielle_Trigger0_2:
+	end
+
+
+PellucaGym_Gabrielle_Trigger1::
+# 29 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	goto_if_set FLAG_PELLUCA_GYM_GABRIELLE_BATTLE, PellucaGym_Gabrielle_Trigger1_2
+# 32 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	playbgm MUS_ENCOUNTER_GIRL, FALSE
+# 33 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement 4, PellucaGym_Gabrielle_Trigger0_Movement_0
+# 34 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 35 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	delay 48
+# 36 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement 4, PellucaGym_Gabrielle_Trigger1_Movement_0
+# 37 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 38 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaGym_Gabrielle_Trigger0_Movement_1
+# 39 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 42 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	speakername PellucaGym_Gabrielle_Trigger0_Text_0
+# 43 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_Intro
+# 44 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_no_intro TRAINER_PELLUCA_CITY_GYM_A, PellucaCity_Gym_Text_Gab_Defeat
+# 45 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_PostDefeat
+# 47 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setflag FLAG_PELLUCA_GYM_GABRIELLE_BATTLE
+# 50 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	releaseall
+	end
+
+PellucaGym_Gabrielle_Trigger1_2:
+	end
+
+
+PellucaGym_Gabrielle_Trigger2::
+# 54 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	goto_if_set FLAG_PELLUCA_GYM_GABRIELLE_BATTLE, PellucaGym_Gabrielle_Trigger2_2
+# 57 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	playbgm MUS_ENCOUNTER_GIRL, FALSE
+# 58 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement 4, PellucaGym_Gabrielle_Trigger0_Movement_0
+# 59 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 60 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement 4, PellucaGym_Gabrielle_Trigger2_Movement_0
+# 61 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 62 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	delay 48
+# 63 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaGym_Gabrielle_Trigger0_Movement_1
+# 64 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	waitmovement 0
+# 67 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	speakername PellucaGym_Gabrielle_Trigger0_Text_0
+# 68 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_Intro
+# 69 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_no_intro TRAINER_PELLUCA_CITY_GYM_A, PellucaCity_Gym_Text_Gab_Defeat
+# 70 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaCity_Gym_Text_Gab_PostDefeat
+# 72 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setflag FLAG_PELLUCA_GYM_GABRIELLE_BATTLE
+# 75 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	releaseall
+	end
+
+PellucaGym_Gabrielle_Trigger2_2:
+	end
+
+
+PellucaGym_Trainer_Gabrielle::
+# 88 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_Gabrielle_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_B::
-# 12 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_B, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 13 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 93 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_B, PellucaGym_Trainer_B_Text_0, PellucaGym_Trainer_B_Text_1
+# 94 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_B_Text_2, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_C::
-# 18 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_C, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 19 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_C, PellucaGym_Trainer_C_Text_0, PellucaGym_Trainer_C_Text_1
+# 101 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_C_Text_2, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_D::
-# 23 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_D, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 24 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 106 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_D, PellucaGym_Trainer_D_Text_0, PellucaGym_Trainer_D_Text_1
+# 107 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_D_Text_2, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_E::
-# 28 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_E, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 29 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 112 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_E, PellucaGym_Trainer_E_Text_0, PellucaGym_Trainer_E_Text_1
+# 113 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_E_Text_2, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_F::
-# 33 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_F, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 34 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 118 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_F, PellucaGym_Trainer_F_Text_0, PellucaGym_Trainer_F_Text_1
+# 119 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_F_Text_2, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_G::
-# 38 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_G, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 39 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 124 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_G, PellucaGym_Trainer_G_Text_0, PellucaGym_Trainer_F_Text_1
+# 125 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_G_Text_1, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_H::
-# 43 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_H, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 44 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 131 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_H, PellucaGym_Trainer_H_Text_0, PellucaGym_Trainer_H_Text_0
+# 132 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_H_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaGym_Trainer_I::
-# 48 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_I, PellucaGym_Trainer_A_Text_0, PellucaGym_Trainer_A_Text_0
-# 49 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Trainer_A_Text_0, MSGBOX_NPC
+# 137 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	trainerbattle_single TRAINER_PELLUCA_CITY_GYM_I, PellucaGym_Trainer_H_Text_0, PellucaGym_Trainer_H_Text_0
+# 138 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Trainer_H_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaGym_Red::
-# 75 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 164 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	lockall
-# 76 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 165 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	faceplayer
-# 78 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 167 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, PellucaGym_Red_2
-# 99 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 188 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	goto_if_set FLAG_PELLUCAGYM_SPENSER_WATER, PellucaGym_Red_8
-# 102 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 191 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_6
-# 103 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 192 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	giveitem ITEM_FRESH_WATER
-# 104 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 193 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_7
-# 105 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 194 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	setflag FLAG_PELLUCAGYM_SPENSER_WATER
 PellucaGym_Red_1:
-# 108 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 197 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	releaseall
 	end
 
 PellucaGym_Red_2:
-# 79 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 168 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	goto_if_set FLAG_PELLUCAGYM_SPENSER_REWARD, PellucaGym_Red_5
-# 82 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 171 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_1
-# 83 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, PellucaGym_Red_Text_2, PellucaGym_Red_Text_3
-# 85 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 174 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaGym_Red_12
-# 88 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 177 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaGym_Red_15
 PellucaGym_Red_11:
-# 95 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 184 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	setflag FLAG_PELLUCAGYM_SPENSER_REWARD
-# 96 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 185 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_4
 	goto PellucaGym_Red_1
 
 PellucaGym_Red_5:
-# 80 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 169 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_0
 	goto PellucaGym_Red_1
 
 PellucaGym_Red_8:
-# 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 189 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Red_Text_5
 	goto PellucaGym_Red_1
 
 PellucaGym_Red_12:
-# 86 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 175 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	giveitem ITEM_NORMAL_GEM
 	goto PellucaGym_Red_11
 
 PellucaGym_Red_15:
-# 89 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 178 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	giveitem ITEM_SILK_SCARF
 	goto PellucaGym_Red_11
 
 
 PellucaGym_Leader::
-# 137 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 226 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	lockall
-# 138 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 227 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	faceplayer
-# 140 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 228 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setrespawn HEAL_LOCATION_PELLUCA_CITY
+# 230 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, PellucaGym_Leader_2
-# 143 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 233 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	special SaveGame
-# 144 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 234 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	waitstate
-# 145 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 235 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
-# 148 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 238 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	speakername PellucaGym_Leader_Text_1
-# 149 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 239 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_2
-# 151 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 241 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	trainerbattle_no_intro TRAINER_PELLUCA_CITY_GYM_LEADER, PellucaGym_Leader_Text_3
-# 155 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 245 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	speakername PellucaGym_Leader_Text_1
-# 156 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 246 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_4
-# 157 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 247 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
-# 160 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 250 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	message PellucaGym_Leader_Text_5
-# 161 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 251 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 162 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 252 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	setflag FLAG_BADGE07_GET
-# 165 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 253 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setflag FLAG_SYS_WHIRLPOOL_ENABLED
+# 256 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_6
-# 166 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 257 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
-# 167 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 258 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	giveitem ITEM_RARE_SHARD
-# 168 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 259 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	delay 16
-# 171 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 262 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	speakername PellucaGym_Leader_Text_1
-# 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 263 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_7
-# 173 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 264 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
 PellucaGym_Leader_1:
-# 176 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 267 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	releaseall
 	return
 
 PellucaGym_Leader_2:
-# 141 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 231 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_0
 	goto PellucaGym_Leader_1
 
 
-PellucaGym_Trainer_A_Text_0:
-# 6 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 10 "data//maps/PellucaCityGym_B1F/scripts.pory"
+PellucaGym_Gabrielle_Trigger0_Movement_0:
+# 10 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 13 "data//maps/PellucaCityGym_B1F/scripts.pory"
+PellucaGym_Gabrielle_Trigger0_Movement_1:
+# 13 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	face_right
+	step_end
+
+# 36 "data//maps/PellucaCityGym_B1F/scripts.pory"
+PellucaGym_Gabrielle_Trigger1_Movement_0:
+# 36 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	walk_left
+	step_end
+
+# 60 "data//maps/PellucaCityGym_B1F/scripts.pory"
+PellucaGym_Gabrielle_Trigger2_Movement_0:
+# 60 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	walk_left
+# 60 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	walk_left
+	step_end
+
+PellucaGym_Gabrielle_Trigger0_Text_0:
+# 17 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Gabrielle$"
+
+PellucaGym_Trainer_Gabrielle_Text_0:
+# 88 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Jania's a really strong leader. But you\n"
+	.string "might stand a chance!$"
+
+PellucaGym_Trainer_B_Text_0:
+# 93 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "What's a wimp like you doing here? This\n"
+	.string "is a tough gym for elite trainers only!$"
+
+PellucaGym_Trainer_B_Text_1:
+# 93 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "You're not a wimp!$"
+
+PellucaGym_Trainer_B_Text_2:
+# 94 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Jania uses strong WATER type Pokemon\n"
+	.string "on home ground. You'd better be\l"
+	.string "prepared!$"
+
+PellucaGym_Trainer_C_Text_0:
+# 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "I've been training to withstand these\n"
+	.string "strong currents. You could use some\l"
+	.string "training too!$"
+
+PellucaGym_Trainer_C_Text_1:
+# 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "You don't need training!$"
+
+PellucaGym_Trainer_C_Text_2:
+# 101 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Jania won't go easy on anyone!$"
+
+PellucaGym_Trainer_D_Text_0:
+# 106 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Getting lost in the currents, are we?$"
+
+PellucaGym_Trainer_D_Text_1:
+# 106 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "I'm lost too!$"
+
+PellucaGym_Trainer_D_Text_2:
+# 107 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Jania beat me earlier and now I can't\n"
+	.string "find my way out of this gym!$"
+
+PellucaGym_Trainer_E_Text_0:
+# 112 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Gloria rejected me from her Theatre\n"
+	.string "Studio! So I'm going to get all eight\l"
+	.string "badges and challenge her for ownership!$"
+
+PellucaGym_Trainer_E_Text_1:
+# 112 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "I couldn't even challenge you!$"
+
+PellucaGym_Trainer_E_Text_2:
+# 113 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Once I beat Gloria, I'll be the new owner\n"
+	.string "of the Silversun Theatre Studio!\p"
+	.string "...\p"
+	.string "You're saying that's not how ownership\n"
+	.string "works?$"
+
+PellucaGym_Trainer_F_Text_0:
+# 118 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Yeah! By low-level, we mean you!$"
+
+PellucaGym_Trainer_F_Text_1:
+# 118 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Twin down!$"
+
+PellucaGym_Trainer_F_Text_2:
+# 119 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Want a tip?\p"
+	.string "Jania's Pelipper sets up the rain so you\n"
+	.string "need to work around that!$"
+
+PellucaGym_Trainer_G_Text_0:
+# 124 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "We're the Rain Twins! Jania's selected\n"
+	.string "us to keep low-level trainers away.$"
+
+PellucaGym_Trainer_G_Text_1:
+# 125 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Want a tip?\p"
+	.string "Jania's Toxapex is scary!$"
+
+PellucaGym_Trainer_H_Text_0:
+# 131 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "$"
 
 PellucaGym_Red_Text_0:
-# 80 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 169 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Well done champ-in-the-making! Now get\n"
 	.string "on out there and find the next gym -\l"
 	.string "I'll see you there!$"
 
 PellucaGym_Red_Text_1:
-# 82 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 171 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Well done champ-in-the-making! The Gym\n"
 	.string "Leader pulled a fast one on you, using\l"
 	.string "his real team, and you still made it out!\l"
@@ -213,20 +441,20 @@ PellucaGym_Red_Text_1:
 	.string "do you fancy?$"
 
 PellucaGym_Red_Text_2:
-# 83 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "NORMAL GEM$"
 
 PellucaGym_Red_Text_3:
-# 83 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "SILK SCARF$"
 
 PellucaGym_Red_Text_4:
-# 96 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 185 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Now get on out there and find the next\n"
 	.string "gym - I'll see you there!$"
 
 PellucaGym_Red_Text_5:
-# 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 189 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Most detectives use NORMAL type\n"
 	.string "Pokémon that are comfortable in a\l"
 	.string "variety of urban situations. FIGHTING\l"
@@ -235,12 +463,12 @@ PellucaGym_Red_Text_5:
 	.string "NORMAL type attacks!$"
 
 PellucaGym_Red_Text_6:
-# 102 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 191 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Greetings trainer! Good to see you\n"
 	.string "again. First, have some water.$"
 
 PellucaGym_Red_Text_7:
-# 104 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 193 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "This Gym is managed by the Detective\n"
 	.string "Academy Student Council. Most\l"
 	.string "detectives use NORMAL type Pokémon\l"
@@ -251,16 +479,16 @@ PellucaGym_Red_Text_7:
 	.string "attacks!$"
 
 PellucaGym_Leader_Text_0:
-# 141 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 231 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "The tides of time wait for nobody. Do\n"
 	.string "what you have to do!$"
 
 PellucaGym_Leader_Text_1:
-# 148 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 238 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Jania$"
 
 PellucaGym_Leader_Text_2:
-# 149 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 239 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Welcome, trainer, to the Pelluca City\n"
 	.string "Gym. My name is Jania and I am the\l"
 	.string "leader.\p"
@@ -269,26 +497,47 @@ PellucaGym_Leader_Text_2:
 	.string "if you can ride the wave to victory!$"
 
 PellucaGym_Leader_Text_3:
-# 151 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 241 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "You're one with the tides!$"
 
 PellucaGym_Leader_Text_4:
-# 156 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 246 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "{PLAYER}, that was a spectacular\n"
 	.string "battle. You've earned this.$"
 
 PellucaGym_Leader_Text_5:
-# 160 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 250 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "{PLAYER} received the River Badge\n"
 	.string "from Jania.$"
 
 PellucaGym_Leader_Text_6:
-# 165 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 256 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "And I must also give you this.$"
 
 PellucaGym_Leader_Text_7:
-# 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 263 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "The eighth and last Gym Badge is given\n"
 	.string "by Raazi of Rivetshore City. Head south\l"
 	.string "from here down the river.\p"
 	.string "Good luck, {PLAYER}.$"
+
+PellucaCity_Gym_Text_Gab_Intro::
+# 78 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "{PLAYER}! Are you here to challenge\n"
+	.string "Jania too? I've decided on my next goal\l"
+	.string "- to collect all eight badges and\l"
+	.string "become the Pokemon Champion!$"
+
+PellucaCity_Gym_Text_Gab_Defeat::
+# 81 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "I was so close!$"
+
+PellucaCity_Gym_Text_Gab_PostDefeat::
+# 84 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "Adjusting to life after Team Somber\n"
+	.string "hasn't been easy. But battling trainers\l"
+	.string "and getting badges has given me and\l"
+	.string "Zorua something to focus on! We didn't\l"
+	.string "win today, but mark my words - we'll beat\l"
+	.string "you at the Pokemon Championships,\l"
+	.string "{PLAYER}!$"

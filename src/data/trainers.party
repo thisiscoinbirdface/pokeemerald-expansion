@@ -2438,23 +2438,31 @@ Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Dewpider
+Zoroark
+Level: 42
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Claydol
 Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Skrelp
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Hakamo-o
+Level: 39
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Mawile
+Level: 41
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_B ===
-Name: JESSICA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
+Name: Jamin
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
@@ -2473,12 +2481,11 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_C ===
-Name: Winston
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Name: Laria
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
 Music: Rich
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -2492,10 +2499,10 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_D ===
-Name: MOLLIE
-Class: Expert
-Pic: Expert F
-Gender: Female
+Name: Mollen
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
@@ -2510,10 +2517,10 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_E ===
-Name: GARRET
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
+Name: Jasmina
+Class: Beauty
+Pic: Beauty
+Gender: Female
 Music: Rich
 Items: Full Restore
 Double Battle: No
@@ -2530,12 +2537,11 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_F ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+Name: Arya
+Class: Swimmer F
+Pic: Swimmer F
 Gender: Male
 Music: Rich
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -2544,18 +2550,13 @@ Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_G ===
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+Name: Wint
+Class: Swimmer M
+Pic: Swimmer M
 Gender: Male
 Music: Rich
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
-
-Lanturn
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Bruxish
 Level: 41
@@ -2601,7 +2602,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_PELLUCA_CITY_GYM_LEADER ===
 Name: Jania
 Class: Leader
-Pic: Leader Inger
+Pic: Leader Jania
 Gender: Female
 Music: Suspicious
 Double Battle: No
