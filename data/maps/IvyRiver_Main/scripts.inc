@@ -548,7 +548,7 @@ IvyRiver_Main_GreenScarf::
 # 351 "data//maps/IvyRiver_Main/scripts.pory"
 	setflag FLAG_IVYRIVER_ZARUDE_QUEST
 # 352 "data//maps/IvyRiver_Main/scripts.pory"
-	clearflag FLAG_IVYRIVER_ZARUDE_REAL
+	clearflag FLAG_ZARUDE
 # 353 "data//maps/IvyRiver_Main/scripts.pory"
 	completequest QUEST_LILYPOND_FISHERMAN
 # 355 "data//maps/IvyRiver_Main/scripts.pory"
@@ -570,7 +570,7 @@ IvyRiver_Main_Zarude_Legendary::
 # 370 "data//maps/IvyRiver_Main/scripts.pory"
 	waitmoncry
 # 371 "data//maps/IvyRiver_Main/scripts.pory"
-	setflag FLAG_IVYRIVER_ZARUDE_REAL
+	setflag FLAG_ZARUDE
 # 373 "data//maps/IvyRiver_Main/scripts.pory"
 	setwildbattle SPECIES_ZARUDE_DADA, 40
 # 374 "data//maps/IvyRiver_Main/scripts.pory"

@@ -1,0 +1,52 @@
+mapscripts RivetshoreCity_Houses_MapScripts{}
+
+
+
+
+
+
+
+//House 1 - generic
+script RivetshoreCity_Houses_NPC1{
+    msgbox(format("We can't go on the S.S. Elegant cruise because our Scolipede gets seasick. Unfortunate, but what can one do?"), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_NPC2{
+    msgbox(format("My husband claims our Scolipede gets seasick, but he's the one that gets seasick!"), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_Scolipede{
+    playmoncry(SPECIES_SCOLIPEDE, CRY_MODE_NORMAL)
+    msgbox(format("Scolipede is looking wistfully at the harbor..."), MSGBOX_NPC)
+    end
+}
+
+//House 2 - quest (mimikyu playing pranks on people)
+script RivetshoreCity_Houses_NPC3{
+    msgbox(format("One of the shopkeepers Pokemon was found lost deep inside the quarry the other day. It got pranked by a mysterious Pokemon!"), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_NPC4{
+    msgbox(format("There's a mean Pokemon playing pranks on everyone's Pokemon in the city! But it hasn't tried anything on our Clodsire."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_Clodsire{
+    playmoncry(SPECIES_CLODSIRE, CRY_MODE_NORMAL)
+    msgbox(format("Clodsire looks blissfully unaware of it's surroundings."), MSGBOX_NPC)
+    end
+}
+
+//House 3 - free item
+script RivetshoreCity_Houses_NPC5{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_NPC6{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Houses_NPC7{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+

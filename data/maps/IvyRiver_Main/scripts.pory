@@ -349,7 +349,7 @@ script IvyRiver_Main_GreenScarf{
     setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)
     setflag(FLAG_ITEM_IVYRIVER_GREEN_SCARF)
     setflag(FLAG_IVYRIVER_ZARUDE_QUEST)
-    clearflag(FLAG_IVYRIVER_ZARUDE_REAL)
+    clearflag(FLAG_ZARUDE)
     completequest(QUEST_LILYPOND_FISHERMAN)
 
     releaseall
@@ -368,7 +368,7 @@ script IvyRiver_Main_Zarude_Legendary{
     //setflag
     playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
     waitmoncry
-    setflag(FLAG_IVYRIVER_ZARUDE_REAL)
+    setflag(FLAG_ZARUDE)
 
     setwildbattle(SPECIES_ZARUDE_DADA, 40)
     dowildbattle
