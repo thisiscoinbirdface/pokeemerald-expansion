@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 15,
       "y": 30,
       "elevation": 0,
@@ -87,7 +87,7 @@
       "movement_range_y": 6,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route8_NPC1",
       "flag": "0"
     },
     {
@@ -100,7 +100,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route8_Trainer_E",
+      "script": "Route8_NPC2",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
+      "trainer_sight_or_berry_tree_id": "ITEM_AIR_BALLOON",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE8_A"
     },
@@ -152,7 +152,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route8_NPC3",
       "flag": "0"
     }
   ],

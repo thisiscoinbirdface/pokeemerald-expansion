@@ -4,39 +4,54 @@ mapscripts Route8_MapScripts{}
 //TRAINERS
 //swimmer
 script Route8_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE8_A, format(""), format("") )
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_A, format("Swimming here is much better than swimming in Ivy River!"), format("You're as bad as Ivy River!") )
+    msgbox(format("I can't handle the currents of Ivy River. I prefer a relaxed swim."))
     releaseall
     end
 }
 //swimmer
 script Route8_Trainer_B{
-    trainerbattle_single(TRAINER_ROUTE8_B, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_B, format("Open waters and pleasant sunlight! Who could ask for more?"), format("I didn't ask for this!"))
+    msgbox(format("We aren't allowed to go out to sea from Rivetshore City. This is the best we can do."))
     releaseall
     end
 }
 //staring contest A
 script Route8_Trainer_C{
-    trainerbattle_single(TRAINER_ROUTE8_C, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_C, format("Get out of the way! If I break my gaze, I won't get that TM!"), format("I won't get the TM!"))
+    msgbox(format("Instead of getting into a staring contest, I should have been more reasonable."))
     releaseall
     end
 }
 //staring contest B
 script Route8_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE8_D, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_D, format("We're in a staring contest for the TM - you're disturbing us!"), format("Fine! The TM is yours then!"))
+    msgbox(format("I should have stared harder!"))
     releaseall
     end
 }
-//last dude
-script Route8_Trainer_E{
-    trainerbattle_single(TRAINER_ROUTE8_E, format(""), format(""))
-    msgbox(format(""))
-    releaseall
+    //unused
+    script Route8_Trainer_E{
+        trainerbattle_single(TRAINER_ROUTE8_E, format(""), format(""))
+        msgbox(format(""))
+        releaseall
+        end
+    }
+
+
+
+
+//NPCs
+script Route8_NPC1{
+    msgbox(format("Leader Raazi in Rivetshore uses the strongest items for his Pokemon! I'm here to find some items for mine too."), MSGBOX_NPC)
     end
 }
-
-
+script Route8_NPC2{
+    msgbox(format("I'm on the way to Rivetshore City. I need to deliver a contract to Rivetshore Construction."), MSGBOX_NPC)
+    end
+}
+script Route8_NPC3{
+    msgbox(format("Rivetshore City is just past this cave. They built a barrier to prevent flooding so you have to take the underpass."), MSGBOX_NPC)
+    end
+}
 

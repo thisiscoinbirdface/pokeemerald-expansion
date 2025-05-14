@@ -6783,11 +6783,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE8_A] =
     {
 #line 2766
-        .trainerName = _("Luin"),
+        .trainerName = _("Lana"),
 #line 2767
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 2768
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
 #line 2770
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -6847,11 +6847,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE8_C] =
     {
 #line 2792
-        .trainerName = _("Digglen"),
+        .trainerName = _("Pralia"),
 #line 2793
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 2794
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
 #line 2796
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -6892,9 +6892,9 @@ F_TRAINER_FEMALE |
 #line 2809
         .trainerName = _("Derrin"),
 #line 2810
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 2811
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
 #line 2813
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,

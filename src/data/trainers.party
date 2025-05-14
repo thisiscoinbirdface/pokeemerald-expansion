@@ -2763,9 +2763,9 @@ Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ROUTE8_A ===
-Name: Luin
-Class: Swimmer M
-Pic: Swimmer M
+Name: Lana
+Class: Swimmer F
+Pic: Swimmer F
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2789,9 +2789,9 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE8_C ===
-Name: Digglen
-Class: Swimmer M
-Pic: Swimmer M
+Name: Pralia
+Class: Aroma Lady
+Pic: Aroma Lady
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -2807,8 +2807,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_ROUTE8_D ===
 Name: Derrin
-Class: Swimmer M
-Pic: Swimmer M
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
 Music: Swimmer
 Double Battle: No
