@@ -60,7 +60,7 @@ script RivetshoreCity_Construction_NPC9{
     end
 }
 script RivetshoreCity_Construction_NPC10{
-    msgbox(format("Even a big-time CEO has a weak point, and our CEO's weak point is his prized Perrserker."), MSGBOX_NPC)
+    msgbox(format("Even a big-time CEO has a weakness, and our CEO's weakness is his prized Perrserker."), MSGBOX_NPC)
     end
 }
 
@@ -72,21 +72,45 @@ script RivetshoreCity_Construction_NPC10{
     //2: have you found perrserker yet
     //3: good, take the poke flute
 script RivetshoreCity_Construction_CEO{
+    if (var(VAR_RIVETSHORE_CEO_QUEST) == 3){
+        msgbox(format("How are things, {PLAYER}?\pYou're always welcome to work here if academia bores you."))
+    }
+
+    if (var(VAR_RIVETSHORE_CEO_QUEST) == 1){
+        speakername("CEO")
+        msgbox(format("Trainer! Have you found my Percy?"))
+    }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 0){
         speakername("CEO")
-        msgbox(format("Yes, child, come. You're here for the contract offer right?\p...\pNo?\pA pity. You look reliable.\pMy beautiful Perrserker has gone missing, you see. I'm looking for a strong trainer to bring Perrserker back!\p...\pRun away?"))
+        msgbox(format("Yes, child, come. You're here for the contract offer right?\p...\pNo?\pA pity. You look reliable.\pMy beautiful Percy has gone missing, you see. I'm looking for a strong trainer to bring Percy back!\p...\pRun away?"))
         release
         delay(16)
         applymovement(LOCALID_CEO, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
 
-        speakername("CEO")
-        msgbox(format("Absolutely not! I loved and cared for it since the day it was born. It would never run away!"))
-    }
+        msgbox_delay("CEO", format("Absolutely not! I loved and cared for it since the day it was born. It would never run away!"))
+        msgbox_delay("CEO", format("Would you be interested in finding Percy for me? I'll make it well worth your while."))
 
+        if (var(VAR_RESULT) == 0){
+            msgbox_delay("CEO", format("A shame. See you, trainer."))
+            end
+        }
+        
+        msgbox_delay("CEO", format("Brilliant! Percy must be somewhere in Rivetshore City. It can't swim!\pI'll be waiting here for my Percy."))
+        clearflag(FLAG_HIDE_RIVETSHORE_PERCY)
+
+        setvar(VAR_RIVETSHORE_CEO_QUEST, 1)
+
+    }
 
     releaseall
     end
+
 }
+
+
+
+
+

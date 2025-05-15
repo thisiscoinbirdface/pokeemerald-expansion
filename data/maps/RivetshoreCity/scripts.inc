@@ -821,8 +821,9 @@ RivetshoreCity_NPC_StorageBaySailor_Text_0:
 # 227 "data//maps/RivetshoreCity/scripts.pory"
 	.string "This is the storage bay. We're busy\n"
 	.string "loading up on supplies for the S.S.\l"
-	.string "Elegant! I'm on guard duty and I'm not\l"
-	.string "leaving until we're ready to depart!$"
+	.string "Elegant!\p"
+	.string "What - you trying to stow away?\p"
+	.string "Scram!$"
 
 RivetshoreCity_NPC_1_Text_0:
 # 232 "data//maps/RivetshoreCity/scripts.pory"

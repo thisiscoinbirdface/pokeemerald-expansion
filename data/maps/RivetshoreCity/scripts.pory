@@ -224,7 +224,7 @@ script RivetshoreCity_Assembly_Trigger{
 
 
 script RivetshoreCity_NPC_StorageBaySailor{
-    msgbox(format("This is the storage bay. We're busy loading up on supplies for the S.S. Elegant! I'm on guard duty and I'm not leaving until we're ready to depart!"), MSGBOX_NPC)
+    msgbox(format("This is the storage bay. We're busy loading up on supplies for the S.S. Elegant!\pWhat - you trying to stow away?\pScram!"), MSGBOX_NPC)
     end
 }
 
