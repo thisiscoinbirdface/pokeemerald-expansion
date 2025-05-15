@@ -287,7 +287,7 @@
     #define VAR_DIANCIE                                      0x4068 // Unused Var
     #define VAR_PELLUCA_MAP_STATE                            0x406A // 0 is normal, 1 is flooded
     #define VAR_RIVETSHORE_EGG_QUEST                         0x406B // Unused Var
-    #define VAR_ROUTE113_STATE                               0x406C // Unused Var
+    #define VAR_RIVETSHORE_CEO_QUEST                         0x406C // Unused Var
 
 
 

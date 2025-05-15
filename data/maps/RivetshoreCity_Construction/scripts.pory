@@ -1,0 +1,92 @@
+raw`
+    .set LOCALID_CEO, 11
+`
+
+mapscripts RivetshoreCity_Construction_MapScripts{}
+
+
+//lobby
+script RivetshoreCity_Construction_Nurse{
+    msgbox(format("Welcome to Rivetshore Construction!\nIf you're here about the contract job, please head upstairs to speak to our CEO."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Construction_NPC1{
+    msgbox(format("I came from Pelluca City. Our bridge was build by Rivetshore Construction!"), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Construction_NPC2{
+    msgbox(format("I applied for a job here, but they haven't replied to me yet..."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Construction_NPC3{
+    msgbox(format("Are you the contractor the CEO hired?\pNo?\pThe CEO was looking for a trainer to help him out."), MSGBOX_NPC)
+    end
+}
+
+//employees meeting
+script RivetshoreCity_Construction_NPC4{
+    lockall
+    msgbox(format("...so based on this years financials, we're not likely to...\pSounds like a important meeting.\nBetter not disturb them!"))
+    releaseall
+    end
+}
+script RivetshoreCity_Construction_NPC5{
+    lockall
+    msgbox(format("...while I hear what you're saying, our clients would never...\pSounds like a important meeting.\nBetter not disturb them!"))
+    releaseall
+    end
+}
+script RivetshoreCity_Construction_NPC6{
+    lockall
+    msgbox(format("...but the underlying factor here is the lack of concrete...\pSounds like a important meeting.\nBetter not disturb them!"))
+    releaseall
+    end
+}
+
+//employees computer
+script RivetshoreCity_Construction_NPC7{
+    msgbox(format("Important meeting?\pPah! All these business and marketing types do is sit and talk all day."), MSGBOX_NPC)
+    end
+}
+//trade?
+script RivetshoreCity_Construction_NPC8{
+    msgbox(format("I heard we got a new investor. He's someone from the academic world."), MSGBOX_NPC)
+    end
+}
+
+//top floor old couple
+script RivetshoreCity_Construction_NPC9{
+    msgbox(format("I told the CEO he shouldn't use company assets for personal reasons. That's why he's hiring a contractor out of his own pocket."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Construction_NPC10{
+    msgbox(format("Even a big-time CEO has a weak point, and our CEO's weak point is his prized Perrserker."), MSGBOX_NPC)
+    end
+}
+
+
+//CEO Quest
+    //VAR_RIVETSHORE_CEO_QUEST
+    //0: not start
+    //1: start
+    //2: have you found perrserker yet
+    //3: good, take the poke flute
+script RivetshoreCity_Construction_CEO{
+
+    if (var(VAR_RIVETSHORE_CEO_QUEST) == 0){
+        speakername("CEO")
+        msgbox(format("Yes, child, come. You're here for the contract offer right?\p...\pNo?\pA pity. You look reliable.\pMy beautiful Perrserker has gone missing, you see. I'm looking for a strong trainer to bring Perrserker back!\p...\pRun away?"))
+        release
+        delay(16)
+        applymovement(LOCALID_CEO, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+
+        speakername("CEO")
+        msgbox(format("Absolutely not! I loved and cared for it since the day it was born. It would never run away!"))
+    }
+
+
+    releaseall
+    end
+}
