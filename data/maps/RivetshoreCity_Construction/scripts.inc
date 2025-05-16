@@ -237,7 +237,7 @@ RivetshoreCity_Construction_CEO_Text_1:
 
 RivetshoreCity_Construction_CEO_Text_2:
 # 81 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	.string "Trainer! Have you found my Percy?$"
+	.string "Trainer! Have you found Percy?$"
 
 RivetshoreCity_Construction_CEO_Text_3:
 # 86 "data//maps/RivetshoreCity_Construction/scripts.pory"

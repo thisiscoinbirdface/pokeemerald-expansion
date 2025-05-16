@@ -1,5 +1,6 @@
 raw`
     .set LOCALID_SPEEDBOAT, 1
+    .set LOCALID_GAB, 28
 
     .set LOCALID_KOHLA, 21
     .set LOCALID_DET1, 22
@@ -17,6 +18,34 @@ raw`
 
 mapscripts RivetshoreCity_MapScripts{}
 
+
+
+
+
+
+
+
+script RivetshoreCity_Gabrielle_Trigger{
+    if (flag(FLAG_RIVETSHORE_GAB)) {end}
+
+    lockall
+
+    addobject(LOCALID_GAB)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_GAB, moves(walk_right * 10))
+    waitmovement(0)
+
+    msgbox_delay("Gabrielle", format("{PLAYER}! I knew you'd come.\pListen - I overheard some of the Gym Leaders by the harbor talking about their plans. I don't know much but they're planning to sail east from here!\pThere's a cruise set to depart soon.\nWe can follow them!\pI got my ticket already so hurry up and buy yours before they sell out!"))
+
+    applymovement(LOCALID_GAB, moves(walk_left * 8))
+    waitmovement(0)
+    removeobject(LOCALID_GAB)
+
+    setflag(FLAG_RIVETSHORE_GAB)
+    releaseall
+    end
+}
 
 
 
@@ -228,37 +257,68 @@ script RivetshoreCity_NPC_StorageBaySailor{
     end
 }
 
+//beach tuber
 script RivetshoreCity_NPC_1{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//beach fisherman
 script RivetshoreCity_NPC_2{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//lady outside PC
 script RivetshoreCity_NPC_3{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//maniac outside construction
 script RivetshoreCity_NPC_4{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//boy at market
 script RivetshoreCity_NPC_5{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//gentleman south shore
 script RivetshoreCity_NPC_6{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//man harbor
 script RivetshoreCity_NPC_7{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+//old woman harbor
 script RivetshoreCity_NPC_8{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//pokefan south shore on sea
+script RivetshoreCity_NPC_9{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
 
 
+
+
+
+
+
+//shops
+//market 1
+script RivetshoreCity_Market_Shop_1{
+
+}
+//market 2
+script RivetshoreCity_Market_Shop_2{
+    
+}
+//secret market
+script RivetshoreCity_Market_Shop_Secret{
+    
+}
