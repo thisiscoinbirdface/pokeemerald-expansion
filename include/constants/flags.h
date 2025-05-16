@@ -148,18 +148,24 @@
 #define FLAG_MIRROH_GREAVARD_BLOCKER 0x68  // flags for the greavard playing
 #define FLAG_HIDE_MIRROH_GREAVARD_INHOUSE 0xE9 // flag to hide the greavard indoors (once they're done playing)
 #define FLAG_RIVETSHORE_GAB 0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB 0x1AB // Unused Flag
-#define FLAG_UNUSED_0x1DA 0x1DA // Unused Flag
-#define FLAG_UNUSED_0x2D9 0x2D9 // Unused Flag
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
-#define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
-#define FLAG_UNUSED_0x479                                           0x479 // Unused Flag
-#define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
-
+#define FLAG_UNUSED_0x1AB                 0x1AB // Unused Flag
+#define FLAG_UNUSED_0x1DA                 0x1DA // Unused Flag
+#define FLAG_UNUSED_0x2D9                 0x2D9 // Unused Flag
+#define FLAG_UNUSED_0x465                 0x465 // Unused Flag
+#define FLAG_UNUSED_0x466                 0x466 // Unused Flag
+#define FLAG_UNUSED_0x467                 0x467 // Unused Flag
+#define FLAG_UNUSED_0x468                 0x468 // Unused Flag
+#define FLAG_UNUSED_0x470                 0x470 // Unused Flag
+#define FLAG_UNUSED_0x472                 0x472 // Unused Flag
+#define FLAG_UNUSED_0x479                 0x479 // Unused Flag
+#define FLAG_UNUSED_0x46D                 0x46D // Unused Flag
+#define FLAG_UNUSED_0x4BC                 0x4BC // Unused Flag
+#define FLAG_UNUSED_0x4BD                 0x4BD // Unused Flag
+#define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
+#define FLAG_UNUSED_0x4BF                 0x4BF // Unused Flag
+#define FLAG_UNUSED_0x4F9                 0x4F9 // Unused Flag
+#define FLAG_UNUSED_0x4FA                 0x4FA // Unused Flag
+#define FLAG_UNUSED_0x4FF                 0x4FF // Unused Flag
 
 
 //I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
@@ -261,13 +267,23 @@
 #define FLAG_CERAM_TALONFLAME 0x4B9 // Unused Flag
 #define FLAG_PELLUCA_GYM_GABRIELLE_BATTLE 0x4BA // Unused Flag
 #define FLAG_HIDE_RIVETSHORE_PERCY        0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC       0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD       0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE       0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF       0x4BF // Unused Flag
-#define FLAG_UNUSED_0x4F9       0x4F9 // Unused Flag
-#define FLAG_UNUSED_0x4FA       0x4FA // Unused Flag
-#define FLAG_UNUSED_0x4FF       0x4FF // Unused Flag
+#define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
+#define FLAG_WONDER_CARD_UNUSED_2            0x13E
+#define FLAG_WONDER_CARD_UNUSED_3            0x13F
+#define FLAG_WONDER_CARD_UNUSED_4            0x140
+#define FLAG_WONDER_CARD_UNUSED_5            0x141
+#define FLAG_WONDER_CARD_UNUSED_6            0x142
+#define FLAG_WONDER_CARD_UNUSED_7            0x143
+#define FLAG_WONDER_CARD_UNUSED_8            0x144
+#define FLAG_WONDER_CARD_UNUSED_9            0x145
+#define FLAG_WONDER_CARD_UNUSED_10           0x146
+#define FLAG_WONDER_CARD_UNUSED_11           0x147
+#define FLAG_WONDER_CARD_UNUSED_12           0x148
+#define FLAG_WONDER_CARD_UNUSED_13           0x149
+#define FLAG_WONDER_CARD_UNUSED_14           0x14A
+#define FLAG_WONDER_CARD_UNUSED_15           0x14B
+#define FLAG_WONDER_CARD_UNUSED_16           0x14C
+#define FLAG_WONDER_CARD_UNUSED_17           0x14D
 
 //I AM GOING TO USE THESE ONE BY ONE | CUSTOM or SPECIAL FLAGS
 #define FLAG_HEAL_PASS_EXPLAIN                                      0x4E7 // gym 
@@ -545,24 +561,7 @@
 #define FLAG_RECEIVED_AURORA_TICKET          0x13A
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
-#define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
-#define FLAG_WONDER_CARD_UNUSED_5            0x141
-#define FLAG_WONDER_CARD_UNUSED_6            0x142
-#define FLAG_WONDER_CARD_UNUSED_7            0x143
-#define FLAG_WONDER_CARD_UNUSED_8            0x144
-#define FLAG_WONDER_CARD_UNUSED_9            0x145
-#define FLAG_WONDER_CARD_UNUSED_10           0x146
-#define FLAG_WONDER_CARD_UNUSED_11           0x147
-#define FLAG_WONDER_CARD_UNUSED_12           0x148
-#define FLAG_WONDER_CARD_UNUSED_13           0x149
-#define FLAG_WONDER_CARD_UNUSED_14           0x14A
-#define FLAG_WONDER_CARD_UNUSED_15           0x14B
-#define FLAG_WONDER_CARD_UNUSED_16           0x14C
-#define FLAG_WONDER_CARD_UNUSED_17           0x14D
-#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
+#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_RECEIVED_OLD_SEA_MAP - FLAG_RECEIVED_AURORA_TICKET)
 
 #define FLAG_MIRAGE_TOWER_VISIBLE            0x14E
 #define FLAG_CHOSE_ROOT_FOSSIL               0x14F

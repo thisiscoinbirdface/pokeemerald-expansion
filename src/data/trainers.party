@@ -2853,77 +2853,94 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVETSHORE_GYM_A ===
-Name: MATTHEW
-Class: Swimmer M
-Pic: Swimmer M
+Name: Matti
+Class: Builder
+Pic: Builder
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dugtrio-Alola
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Skarmory
+Level: 46
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_B ===
-Name: DAVID
-Class: Swimmer M
-Pic: Swimmer M
+Name: Dana
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Perrserker
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Carvanha
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Conkeldurr
+Level: 46
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_C ===
-Name: SPENCER
-Class: Swimmer M
-Pic: Swimmer M
+Name: Pariah
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fearow
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scolipede
+Level: 46
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Feraligatr
+Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
 
 === TRAINER_RIVETSHORE_GYM_D ===
-Name: ROLAND
-Class: Swimmer M
-Pic: Swimmer M
+Name: Roland
+Class: Builder
+Pic: Builder
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Revavroom
+Level: 45
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Lairon
+Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_E ===
-Name: NOLEN
-Class: Swimmer M
-Pic: Swimmer M
+Name: Nolen
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacruel
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Glimmora
+Level: 47
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Coalossal
+Level: 48
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_F ===
 Name: STAN
@@ -3007,21 +3024,21 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Skarmory
+Corviknight
 Level: 51
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Forretress
+Excadrill
 Level: 52
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Magnezone
+Coalossal
 Level: 52
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Aggron @ Aggronite
 Level: 55
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_IVY_RIVER_A ===
 Name: Santiago
