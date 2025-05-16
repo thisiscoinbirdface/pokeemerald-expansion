@@ -259,47 +259,47 @@ script RivetshoreCity_NPC_StorageBaySailor{
 
 //beach tuber
 script RivetshoreCity_NPC_1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Look! Look! My footprints stay on the sand."), MSGBOX_NPC)
     end
 }
 //beach fisherman
 script RivetshoreCity_NPC_2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("They've turned this town into a monstrosity! It used to be a beautiful fishing spot until they built the quarry and harbor and drove all the Pokemon away."), MSGBOX_NPC)
     end
 }
 //lady outside PC
 script RivetshoreCity_NPC_3{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I wanted to go on the SS Elegant cruise but I couldn't get a ticket."), MSGBOX_NPC)
     end
 }
 //maniac outside construction
 script RivetshoreCity_NPC_4{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("My house has rickety stairs! I'm going to sue Rivetshore Construction."), MSGBOX_NPC)
     end
 }
 //boy at market
 script RivetshoreCity_NPC_5{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("You won't find this stuff anywhere else!"), MSGBOX_NPC)
     end
 }
 //gentleman south shore
 script RivetshoreCity_NPC_6{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Whose boat is that floating over there?"), MSGBOX_NPC)
     end
 }
 //man harbor
 script RivetshoreCity_NPC_7{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What a day for a walk at the harbor!"), MSGBOX_NPC)
     end
 }
 //old woman harbor
 script RivetshoreCity_NPC_8{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Shoo, child! Don't disturb me."), MSGBOX_NPC)
     end
 }
 //pokefan south shore on sea
 script RivetshoreCity_NPC_9{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What am I doing here? Enjoying the sea breeze, of course!\p...\pFine. My boat drifted away so I'm waiting to get picked up."), MSGBOX_NPC)
     end
 }
 
@@ -312,13 +312,57 @@ script RivetshoreCity_NPC_9{
 //shops
 //market 1
 script RivetshoreCity_Market_Shop_1{
-
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(RivetshoreCity_Mart_1)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
 }
 //market 2
 script RivetshoreCity_Market_Shop_2{
-    
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(RivetshoreCity_Mart_2)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
 }
 //secret market
 script RivetshoreCity_Market_Shop_Secret{
-    
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(RivetshoreCity_Mart_Secret)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end    
+}
+
+mart RivetshoreCity_Mart_1{
+    ITEM_HYPER_POTION
+    ITEM_MAX_REVIVE
+    ITEM_FULL_RESTORE
+    ITEM_FULL_HEAL
+}
+mart RivetshoreCity_Mart_2{
+    ITEM_TM11
+    ITEM_TM15
+    ITEM_TM16
+    ITEM_TM17
+    ITEM_TM18
+    ITEM_TM19
+    ITEM_TM20
+    ITEM_TM19
+    ITEM_TM20
+    ITEM_TM21
+}
+mart RivetshoreCity_Mart_Secret{
+    ITEM_GALARICA_CUFF
+    ITEM_GALARICA_WREATH
 }
