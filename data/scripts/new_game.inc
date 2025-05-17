@@ -333,6 +333,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_PELLUCA_PC_CHARS
 	setflag FLAG_ITEM_IVYRIVER_GREEN_SCARF
 	setflag FLAG_HIDE_RIVETSHORE_PERCY
-
+	setflag FLAG_HIDE_CONSTRUCTION_HQ_PERCY
 	call EventScript_ResetAllBerries
 	end

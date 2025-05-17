@@ -6,7 +6,7 @@ RivetshoreCity_PokemonCenter_MapScripts::
 
 RivetshoreCity_PokemonCenter_OnTransition::
 # 6 "data//maps/RivetshoreCity_PokemonCenter/scripts.pory"
-	setrespawn HEAL_LOCATION_SILVERSUN_CITY
+	setrespawn HEAL_LOCATION_RIVETSHORE_CITY
 	return
 
 

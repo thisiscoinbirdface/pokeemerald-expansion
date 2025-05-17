@@ -3,7 +3,7 @@ mapscripts RivetshoreCity_PokemonCenter_MapScripts{
 }
 
 script RivetshoreCity_PokemonCenter_OnTransition{
-    setrespawn(HEAL_LOCATION_SILVERSUN_CITY)
+    setrespawn(HEAL_LOCATION_RIVETSHORE_CITY)
 }
 
 script RivetshoreCity_PokemonCenter_EventScript_Nurse{

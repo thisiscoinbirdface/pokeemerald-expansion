@@ -1,8 +1,85 @@
 raw`
     .set LOCALID_BLOCKER, 7
     .set LOCALID_RAAZI, 6
+    
+    .set LOCALID_PERCY, 30
 `
 mapscripts RivetshoreQuarry_MapScripts{}
+
+
+
+
+
+
+
+
+
+
+
+//percy
+script RivetshoreQuarry_Percy{
+
+    lockall
+
+    msgbox(format("Percy goes back to its owner!"))
+    release
+
+    //move out
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 face_down))
+    applymovement(LOCALID_PERCY, moves(walk_right * 3 walk_down * 5 walk_left walk_down * 3))
+    waitmovement(0)
+
+    //flags quests    
+    setflag(FLAG_HIDE_RIVETSHORE_PERCY)
+    clearflag(FLAG_HIDE_CONSTRUCTION_HQ_PERCY)
+    setvar(VAR_RIVETSHORE_CEO_QUEST, 2)
+
+    //end
+    releaseall
+    end
+}
+
+//nurse
+script RivetshoreQuarry_Nurse{
+    lockall
+    faceplayer   
+    msgbox(format("We have a small infirmary here to treat builders and Pokemon that get hurt.\pWhy don't you rest for a bit?"))
+    release
+	call(Common_EventScript_OutOfCenterPartyHeal)
+	msgbox(format("Take care, trainer!"))
+	releaseall
+	end
+}
+//chansey
+script RivetshoreQuarry_Chansey{
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox(format("Chansey is bouncing with happiness!"), MSGBOX_NPC)
+    end
+}
+
+//relaxing dudes
+script RivetshoreQuarry_NPC1{
+    msgbox(format("I'm the shift manager at the quarry!\p...\pWhy am I not out there with my team?\pIt's too hot!"), MSGBOX_NPC)
+    end
+}
+script RivetshoreQuarry_NPC2{
+    msgbox(format("Work has become much easier after the CEO had this infirmary and resting spot constructed. He really understands our struggles!\pI can't say the same for the shift manager though."), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script RivetshoreQuarry_Raazi_Callout_Trigger{
     if (flag(FLAG_RIVETSHORE_RAAZI_CALLOUT)) {end}
@@ -123,6 +200,9 @@ script Rivetshore_Gym_Trainer_E{
     releaseall
     end
 }
+
+
+
 
 
 

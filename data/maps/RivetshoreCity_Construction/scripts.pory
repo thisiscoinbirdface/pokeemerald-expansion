@@ -76,6 +76,12 @@ script RivetshoreCity_Construction_CEO{
         msgbox(format("How are things, {PLAYER}?\pYou're always welcome to work here if academia bores you."))
     }
 
+    if (var(VAR_RIVETSHORE_CEO_QUEST) == 2){
+        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique."))
+        giveitem(ITEM_POKE_FLUTE)
+        setvar(VAR_RIVETSHORE_CEO_QUEST, 3)
+    }
+
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 1){
         speakername("CEO")
         msgbox(format("Trainer! Have you found Percy?"))
@@ -91,7 +97,8 @@ script RivetshoreCity_Construction_CEO{
         delay(16)
 
         msgbox_delay("CEO", format("Absolutely not! I loved and cared for it since the day it was born. It would never run away!"))
-        msgbox_delay("CEO", format("Would you be interested in finding Percy for me? I'll make it well worth your while."))
+        speakername("CEO")
+        msgbox(format("Would you be interested in finding Percy for me? I'll make it well worth your while."), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
             msgbox_delay("CEO", format("A shame. See you, trainer."))

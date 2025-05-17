@@ -132,6 +132,10 @@ script MirrohBaseCamp_Greavard_Outside{
             msgbox(format("Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
             goto(MirrohBaseCamp_Martha_OfferMegaStone)
 
+            setflag(FLAG_ITEM_IVYRIVER_GREEN_SCARF)
+            setflag(FLAG_HIDE_RIVETSHORE_PERCY)
+            setflag(FLAG_HIDE_CONSTRUCTION_HQ_PERCY)
+
             releaseall
             end
         }

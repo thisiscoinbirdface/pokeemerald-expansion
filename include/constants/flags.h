@@ -267,7 +267,7 @@
 #define FLAG_CERAM_TALONFLAME 0x4B9 // Unused Flag
 #define FLAG_PELLUCA_GYM_GABRIELLE_BATTLE 0x4BA // Unused Flag
 #define FLAG_HIDE_RIVETSHORE_PERCY        0x4BB // Unused Flag
-#define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
+#define FLAG_HIDE_CONSTRUCTION_HQ_PERCY      0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_WONDER_CARD_UNUSED_2            0x13E
 #define FLAG_WONDER_CARD_UNUSED_3            0x13F
 #define FLAG_WONDER_CARD_UNUSED_4            0x140
