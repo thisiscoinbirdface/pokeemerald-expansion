@@ -1,5 +1,7 @@
 mapscripts SSElegant_Storage_MapScripts{}
 
+
+//setrespawn(HEAL_LOCATION_RIVETSHORE_CITY)
 //test
 script SSElegant_Storage_Catcher1{
     msgbox(format("Hey! We've got a stowaway!"))
