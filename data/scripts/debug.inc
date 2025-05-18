@@ -143,12 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    warp MAP_UNCHARTED_ISLAND, 6, 34  
+	setflag FLAG_SYS_OW_FOLLOWERS_DISABLED
+    warp MAP_UNCHARTED_ISLAND, 6, 34
 	release
 	end
 
 Debug_EventScript_Script_3::
-	clearflag FLAG_SYS_WHIRLPOOL_ENABLED
 	release
 	end
 

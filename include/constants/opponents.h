@@ -257,13 +257,13 @@
 
 
 
-#define TRAINER_JACK                        172
-#define TRAINER_DUDLEY                      173
-#define TRAINER_CHAD                        174
-#define TRAINER_TONY_2                      175
-#define TRAINER_TONY_3                      176
-#define TRAINER_TONY_4                      177
-#define TRAINER_TONY_5                      178
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_A                        172
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_B                      173
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_C                        174
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_D                      175
+#define TRAINER_UNCHARTED_ISLAND_MOXIE                      176
+#define TRAINER_UNCHARTED_ISLAND_MELEA                      177
+#define TRAINER_UNCHARTED_ISLAND_RUE                      178
 #define TRAINER_TAKAO                       179
 #define TRAINER_HITOSHI                     180
 #define TRAINER_KIYO                        181
@@ -334,11 +334,11 @@
 #define TRAINER_MAURA                       246
 #define TRAINER_KAYLA                       247
 #define TRAINER_ALEXIS                      248
-#define TRAINER_JACKI_1                     249
-#define TRAINER_JACKI_2                     250
-#define TRAINER_JACKI_3                     251
-#define TRAINER_JACKI_4                     252
-#define TRAINER_JACKI_5                     253
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_AI_1                     249
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_AI_2                     250
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_AI_3                     251
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_AI_4                     252
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_AI_5                     253
 #define TRAINER_WALTER_1                    254
 #define TRAINER_MICAH                       255
 #define TRAINER_THOMAS                      256
@@ -637,13 +637,13 @@
 #define TRAINER_LYDIA_3                     549
 #define TRAINER_LYDIA_4                     550
 #define TRAINER_LYDIA_5                     551
-#define TRAINER_JACKSON_1                   552
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_1                   552
 #define TRAINER_LORENZO                     553
 #define TRAINER_SEBASTIAN                   554
-#define TRAINER_JACKSON_2                   555
-#define TRAINER_JACKSON_3                   556
-#define TRAINER_JACKSON_4                   557
-#define TRAINER_JACKSON_5                   558
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_2                   555
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_3                   556
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_4                   557
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_5                   558
 #define TRAINER_CATHERINE_1                 559
 #define TRAINER_JENNA                       560
 #define TRAINER_SOPHIA                      561

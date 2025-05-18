@@ -3116,7 +3116,7 @@ Spheal
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACK ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
 Name: JACK
 Class: Swimmer M
 Pic: Swimmer M
@@ -3129,7 +3129,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUDLEY ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_B ===
 Name: DUDLEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3150,7 +3150,7 @@ Tentacruel
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHAD ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_C ===
 Name: CHAD
 Class: Swimmer M
 Pic: Swimmer M
@@ -3167,7 +3167,7 @@ Wailmer
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TONY_2 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3180,7 +3180,7 @@ Sharpedo
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_TONY_3 ===
+=== TRAINER_UNCHARTED_ISLAND_MOXIE ===
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3193,7 +3193,7 @@ Sharpedo
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_TONY_4 ===
+=== TRAINER_UNCHARTED_ISLAND_MELEA ===
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -3210,7 +3210,7 @@ Sharpedo
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_TONY_5 ===
+=== TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -4426,7 +4426,7 @@ Xatu
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACKI_1 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_AI_1 ===
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4443,7 +4443,7 @@ Lunatone
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACKI_2 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_AI_2 ===
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4460,7 +4460,7 @@ Lunatone
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_JACKI_3 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_AI_3 ===
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4477,7 +4477,7 @@ Lunatone
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_JACKI_4 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_AI_4 ===
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -4494,7 +4494,7 @@ Lunatone
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_JACKI_5 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_AI_5 ===
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -10295,7 +10295,7 @@ Seaking
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_JACKSON_1 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_1 ===
 Name: JACKSON
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -10345,7 +10345,7 @@ Cacturne
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_JACKSON_2 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_2 ===
 Name: JACKSON
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -10359,7 +10359,7 @@ Breloom
 Level: 31
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-=== TRAINER_JACKSON_3 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_3 ===
 Name: JACKSON
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -10373,7 +10373,7 @@ Breloom
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_JACKSON_4 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_4 ===
 Name: JACKSON
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -10387,7 +10387,7 @@ Breloom
 Level: 37
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-=== TRAINER_JACKSON_5 ===
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_5 ===
 Name: JACKSON
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M

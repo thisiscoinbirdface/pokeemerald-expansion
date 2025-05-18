@@ -7,7 +7,7 @@ Route134_OnResume:
 	end
 
 Route134_EventScript_Jack::
-	trainerbattle_single TRAINER_JACK, Route134_Text_JackIntro, Route134_Text_JackDefeat
+	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_A, Route134_Text_JackIntro, Route134_Text_JackDefeat
 	msgbox Route134_Text_JackPostBattle, MSGBOX_AUTOCLOSE
 	end
 

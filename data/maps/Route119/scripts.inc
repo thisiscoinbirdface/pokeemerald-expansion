@@ -352,7 +352,7 @@ Route119_EventScript_Kent::
 	end
 
 Route119_EventScript_Jackson::
-	trainerbattle_single TRAINER_JACKSON_1, Route119_Text_JacksonIntro, Route119_Text_JacksonDefeat, Route119_EventScript_RegisterJackson
+	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_1, Route119_Text_JacksonIntro, Route119_Text_JacksonDefeat, Route119_EventScript_RegisterJackson
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_RematchJackson
 	msgbox Route119_Text_JacksonPostBattle, MSGBOX_DEFAULT
@@ -363,12 +363,12 @@ Route119_EventScript_RegisterJackson::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route119_Text_JacksonRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JACKSON_1
+	register_matchcall TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_1
 	release
 	end
 
 Route119_EventScript_RematchJackson::
-	trainerbattle_rematch TRAINER_JACKSON_1, Route119_Text_JacksonRematchIntro, Route119_Text_JacksonRematchDefeat
+	trainerbattle_rematch TRAINER_UNCHARTED_ISLAND_GRUNT_ASON_1, Route119_Text_JacksonRematchIntro, Route119_Text_JacksonRematchDefeat
 	msgbox Route119_Text_JacksonPostRematch, MSGBOX_AUTOCLOSE
 	end
 
