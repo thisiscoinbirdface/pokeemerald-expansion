@@ -1,7 +1,7 @@
 # 1 "data//maps/UnchartedIsland/scripts.pory"
 
 # 2 "data//maps/UnchartedIsland/scripts.pory"
-    .set LOCALID_MOXIE_1, 1
+    .set LOCALID_MOXIE_1, 18
 
 UnchartedIsland_MapScripts::
 	.byte 0
@@ -99,21 +99,74 @@ UnchartedIsland_Grunt_C::
 	end
 
 
-UnchartedIsland_Moxie::
-# 76 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_C, UnchartedIsland_Grunt_A_Text_0, UnchartedIsland_Grunt_A_Text_0
-# 77 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Grunt_A_Text_0, MSGBOX_NPC
+UnchartedIsland_Moxie_Viewpoint_Trigger::
+# 87 "data//maps/UnchartedIsland/scripts.pory"
+	goto_if_set FLAG_ISLAND_MOXIE_VIEWPOINT, UnchartedIsland_Moxie_Viewpoint_Trigger_2
+# 89 "data//maps/UnchartedIsland/scripts.pory"
+	lockall
+# 91 "data//maps/UnchartedIsland/scripts.pory"
+	special SpawnCameraObject
+# 92 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_0
+# 93 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 96 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_1
+# 97 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 98 "data//maps/UnchartedIsland/scripts.pory"
+	delay 24
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_2
+# 100 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 101 "data//maps/UnchartedIsland/scripts.pory"
+	removeobject LOCALID_MOXIE_1
+# 103 "data//maps/UnchartedIsland/scripts.pory"
+	setflag FLAG_ISLAND_MOXIE_VIEWPOINT
+# 105 "data//maps/UnchartedIsland/scripts.pory"
+	releaseall
 	end
+
+UnchartedIsland_Moxie_Viewpoint_Trigger_2:
+	end
+
+
+UnchartedIsland_Moxie::
+# 112 "data//maps/UnchartedIsland/scripts.pory"
+	lockall
+	return
 
 
 UnchartedIsland_Melea::
-# 81 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_C, UnchartedIsland_Grunt_A_Text_0, UnchartedIsland_Grunt_A_Text_0
-# 82 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Grunt_A_Text_0, MSGBOX_NPC
-	end
+	return
 
+
+# 92 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_0:
+# 92 "data//maps/UnchartedIsland/scripts.pory"
+	walk_down
+# 92 "data//maps/UnchartedIsland/scripts.pory"
+	walk_down
+	step_end
+
+# 96 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_1:
+# 96 "data//maps/UnchartedIsland/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_2:
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 99 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+	step_end
 
 UnchartedIsland_Leader_Caught_A_Text_0:
 # 12 "data//maps/UnchartedIsland/scripts.pory"

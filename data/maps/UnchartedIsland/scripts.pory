@@ -1,5 +1,5 @@
 raw`
-    .set LOCALID_MOXIE_1, 1
+    .set LOCALID_MOXIE_1, 18
 `
 
 
@@ -72,15 +72,68 @@ script UnchartedIsland_Grunt_C{
     end
 }
 
-script UnchartedIsland_Moxie{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+
+
+
+
+
+
+
+
+
+
+
+script UnchartedIsland_Moxie_Viewpoint_Trigger{
+    if (flag(FLAG_ISLAND_MOXIE_VIEWPOINT)){end}
+
+    lockall
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+    waitmovement(0)
+
+
+    applymovement(LOCALID_MOXIE_1, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+    applymovement(LOCALID_MOXIE_1, moves(walk_right * 4))
+    waitmovement(0)
+    removeobject(LOCALID_MOXIE_1)
+
+    setflag(FLAG_ISLAND_MOXIE_VIEWPOINT)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    releaseall
     end
 }
-script UnchartedIsland_Melea{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
-    end
+
+
+
+script UnchartedIsland_Moxie_Trigger0{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 4))
+    
+    goto(UnchartedIsland_Moxie_Melea_Fight)
 }
+script UnchartedIsland_Moxie_Trigger1{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 5))
+
+    goto(UnchartedIsland_Moxie_Melea_Fight)
+}
+
+script UnchartedIsland_Moxie_Melea_Fight{
+
+}
+
+
+
+
+
+
+
 
 

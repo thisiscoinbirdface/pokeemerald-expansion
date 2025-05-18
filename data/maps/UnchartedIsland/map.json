@@ -127,7 +127,7 @@
       "movement_range_x": 0,
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "UnchartedIsland_Inger",
       "flag": "0"
     },
@@ -140,7 +140,7 @@
       "movement_range_x": 5,
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "UnchartedIsland_Ariana",
       "flag": "0"
     },
@@ -186,13 +186,13 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_JANIA",
       "x": 49,
-      "y": 42,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 2,
-      "movement_range_y": 6,
+      "movement_range_y": 7,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "UnchartedIsland_Jania",
       "flag": "0"
     },
@@ -205,7 +205,7 @@
       "movement_range_x": 5,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "UnchartedIsland_Raazi",
       "flag": "0"
     },
@@ -237,16 +237,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAXIE",
-      "x": 60,
-      "y": 42,
+      "x": 57,
+      "y": 41,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 4,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "UnchartedIsland_Grunt_A",
-      "flag": "0"
+      "flag": "FLAG_ISLAND_MOXIE_VIEWPOINT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_VINIEL",
@@ -328,10 +328,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-      "x": 78,
-      "y": 30,
+      "x": 84,
+      "y": 55,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -341,8 +341,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_TENEBRIS",
-      "x": 67,
-      "y": 43,
+      "x": 82,
+      "y": 55,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -377,13 +377,83 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 83,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 69,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "UnchartedIsland_Grunt_A",
+      "flag": "FLAG_ISLAND_MOXIE_MELEA_BATTLE"
     }
   ],
   "warp_events": [
 
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 38,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UnchartedIsland_Moxie_Viewpoint_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UnchartedIsland_Moxie_Trigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "UnchartedIsland_Moxie_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    }
   ],
   "bg_events": [
 
