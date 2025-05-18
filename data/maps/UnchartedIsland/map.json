@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
       "x": 65,
       "y": 50,
       "elevation": 0,
@@ -219,7 +219,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_Grunt_C",
       "flag": "0"
     },
     {
@@ -232,7 +232,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_Grunt_B",
       "flag": "0"
     },
     {

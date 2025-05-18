@@ -573,7 +573,7 @@ u8 BattleSetup_GetTerrainId(void)
     case MAP_TYPE_OCEAN_ROUTE:
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_TERRAIN_WATER;
-        return BATTLE_TERRAIN_PLAIN;
+        return BATTLE_TERRAIN_WATER;
     }
 
     if (MetatileBehavior_IsAshGrass(tileBehavior))
