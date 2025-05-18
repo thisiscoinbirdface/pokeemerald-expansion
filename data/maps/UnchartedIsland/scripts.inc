@@ -125,6 +125,12 @@ UnchartedIsland_Moxie_Viewpoint_Trigger::
 # 103 "data//maps/UnchartedIsland/scripts.pory"
 	setflag FLAG_ISLAND_MOXIE_VIEWPOINT
 # 105 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_3
+# 106 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 107 "data//maps/UnchartedIsland/scripts.pory"
+	special RemoveCameraObject
+# 109 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
@@ -132,13 +138,27 @@ UnchartedIsland_Moxie_Viewpoint_Trigger_2:
 	end
 
 
-UnchartedIsland_Moxie::
-# 112 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Trigger0::
+# 116 "data//maps/UnchartedIsland/scripts.pory"
 	lockall
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger0_Movement_0
+# 119 "data//maps/UnchartedIsland/scripts.pory"
+	goto UnchartedIsland_Moxie_Melea_Fight
 	return
 
 
-UnchartedIsland_Melea::
+UnchartedIsland_Moxie_Trigger1::
+# 122 "data//maps/UnchartedIsland/scripts.pory"
+	lockall
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger1_Movement_0
+# 125 "data//maps/UnchartedIsland/scripts.pory"
+	goto UnchartedIsland_Moxie_Melea_Fight
+	return
+
+
+UnchartedIsland_Moxie_Melea_Fight::
 	return
 
 
@@ -165,6 +185,48 @@ UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_2:
 # 99 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 # 99 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+	step_end
+
+# 105 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_3:
+# 105 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+# 105 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+	step_end
+
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Trigger0_Movement_0:
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 117 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+	step_end
+
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+UnchartedIsland_Moxie_Trigger1_Movement_0:
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_up
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 123 "data//maps/UnchartedIsland/scripts.pory"
+	walk_right
+# 123 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
