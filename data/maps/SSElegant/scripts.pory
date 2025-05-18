@@ -1,7 +1,65 @@
 mapscripts SSElegant_MapScripts{}
 
+//raazi fight, sailor blockers, jania, inger/ariana (and mons), 4 NPCs (sailor, man, picnicker, dude)
+script SSElegant_SailorBlocker{
+    msgbox(format("You can't get off now - are you crazy? We're in the middle of the ocean!"), MSGBOX_NPC)
+    end
+}
 
 
 
+
+
+script SSElegant_Raazi{
+
+}
+script SSElegant_Aggron{
+    playmoncry(SPECIES_AGGRON, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+script SSElegant_Jania{
+
+}
+
+script SSElegant_Inger{
+
+}
+script SSElegant_Minior{
+    playmoncry(SPECIES_MINIOR, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+script SSElegant_Ariana{
+
+}
+script SSElegant_Tauros{
+    playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//sailor
+script SSElegant_NPC1{
+    msgbox(format(""), MSGBOX_NPC)    
+    end    
+}
+//man 2F
+script SSElegant_NPC2{
+    msgbox(format(""), MSGBOX_NPC)    
+    end    
+}
+//dude 1F
+script SSElegant_NPC3{
+    msgbox(format(""), MSGBOX_NPC)    
+    end    
+}
+//picnicker 1F
+script SSElegant_NPC4{
+    msgbox(format(""), MSGBOX_NPC)    
+    end    
+}
 
 
