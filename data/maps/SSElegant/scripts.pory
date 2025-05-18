@@ -20,7 +20,10 @@ script SSElegant_Aggron{
 }
 
 script SSElegant_Jania{
-
+    trainerbattle_single(TRAINER_SSELEGANT_JANIA, format("What? A leader can't have any hobbies?"), format("Back to drawing, Smeargle!"))
+    msgbox(format("I don't get much free time, but when I do, I enjoy painting."))
+    releaseall
+    end
 }
 
 script SSElegant_Inger{

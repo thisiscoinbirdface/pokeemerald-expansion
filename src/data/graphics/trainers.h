@@ -385,6 +385,9 @@ const u32 gTrainerPalette_Waitress[] = INCBIN_U32("graphics/trainers/my_trainers
 const u32 gTrainerFrontPic_CoolGuy[] = INCBIN_U32("graphics/trainers/my_trainers/cool_guy.4bpp.lz");
 const u32 gTrainerPalette_CoolGuy[] = INCBIN_U32("graphics/trainers/my_trainers/cool_guy.gbapal.lz");
 
+const u32 gTrainerFrontPic_JaniaArtist[] = INCBIN_U32("graphics/trainers/my_trainers/jania_artist.4bpp.lz");
+const u32 gTrainerPalette_JaniaArtist[] = INCBIN_U32("graphics/trainers/my_trainers/jania_artist.gbapal.lz");
+
 
 
 //gym leaders
@@ -554,6 +557,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_COOL_GIRL, gTrainerFrontPic_CoolGirl ,gTrainerPalette_CoolGirl),
     TRAINER_SPRITE(TRAINER_PIC_WAITRESS, gTrainerFrontPic_Waitress ,gTrainerPalette_Waitress),
     TRAINER_SPRITE(TRAINER_PIC_COOL_GUY, gTrainerFrontPic_CoolGuy ,gTrainerPalette_CoolGuy),
+    TRAINER_SPRITE(TRAINER_PIC_JANIA_ARTIST, gTrainerFrontPic_JaniaArtist ,gTrainerPalette_JaniaArtist),
 
 };
 

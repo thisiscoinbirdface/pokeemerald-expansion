@@ -2968,7 +2968,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVETSHORE_GYM_H ===
+=== TRAINER_SSELEGANT_INGER ===
 Name: DEAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -2977,19 +2977,19 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lycanroc
+Level: 45
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-Wingull
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Golem-Alola
+Level: 46
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Minior
+Level: 47
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-=== TRAINER_RIVETSHORE_GYM_I ===
+=== TRAINER_SSELEGANT_ARIANA ===
 Name: RODNEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -2998,22 +2998,36 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Talonflame
+Level: 47
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-=== TRAINER_RIVETSHORE_GYM_J ===
-Name: RICHARD
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
+Centiskorch
+Level: 47
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+Tauros-Paldea-Blaze
+Level: 49
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+=== TRAINER_SSELEGANT_JANIA ===
+Name: Jania
+Class: Artist
+Pic: Jania Artist
+Gender: Female
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Pelipper
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Smeargle
+Level: 48
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+Clawitzer
+Level: 50
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+
 
 === TRAINER_RIVETSHORE_GYM_LEADER ===
 Name: Raazi

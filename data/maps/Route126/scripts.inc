@@ -12,7 +12,7 @@ Route126_EventScript_Barry::
 	end
 
 Route126_EventScript_Dean::
-	trainerbattle_single TRAINER_RIVETSHORE_GYM_H, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
+	trainerbattle_single TRAINER_SSELEGANT_INGER, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
 	msgbox Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -21,7 +21,13 @@ SSElegant_Aggron::
 
 
 SSElegant_Jania::
-	return
+# 23 "data//maps/SSElegant/scripts.pory"
+	trainerbattle_single TRAINER_SSELEGANT_JANIA, SSElegant_Jania_Text_0, SSElegant_Jania_Text_1
+# 24 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Jania_Text_2
+# 25 "data//maps/SSElegant/scripts.pory"
+	releaseall
+	end
 
 
 SSElegant_Inger::
@@ -29,9 +35,9 @@ SSElegant_Inger::
 
 
 SSElegant_Minior::
-# 30 "data//maps/SSElegant/scripts.pory"
+# 33 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
-# 31 "data//maps/SSElegant/scripts.pory"
+# 34 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
@@ -41,33 +47,33 @@ SSElegant_Ariana::
 
 
 SSElegant_Tauros::
-# 39 "data//maps/SSElegant/scripts.pory"
+# 42 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 40 "data//maps/SSElegant/scripts.pory"
+# 43 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC1::
-# 46 "data//maps/SSElegant/scripts.pory"
+# 49 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC2::
-# 51 "data//maps/SSElegant/scripts.pory"
+# 54 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC3::
-# 56 "data//maps/SSElegant/scripts.pory"
+# 59 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC4::
-# 61 "data//maps/SSElegant/scripts.pory"
+# 64 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
@@ -80,3 +86,16 @@ SSElegant_SailorBlocker_Text_0:
 SSElegant_Aggron_Text_0:
 # 18 "data//maps/SSElegant/scripts.pory"
 	.string "$"
+
+SSElegant_Jania_Text_0:
+# 23 "data//maps/SSElegant/scripts.pory"
+	.string "What? A leader can't have any hobbies?$"
+
+SSElegant_Jania_Text_1:
+# 23 "data//maps/SSElegant/scripts.pory"
+	.string "Back to drawing, Smeargle!$"
+
+SSElegant_Jania_Text_2:
+# 24 "data//maps/SSElegant/scripts.pory"
+	.string "I don't get much free time, but when I\n"
+	.string "do, I enjoy painting.$"
