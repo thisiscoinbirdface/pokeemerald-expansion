@@ -1,0 +1,14 @@
+mapscripts UnchartedIsland_MapScripts{}
+
+
+script UnchartedIsland_Leader_Caught{
+    msgbox(format("Hey! What are you doing here? You should be on the S.S. Elegant."))
+    warp(MAP_UNCHARTED_ISLAND, 6, 34)
+    delay(60)
+}
+script UnchartedIsland_Inger{
+    speakername("Inger")
+    call(UnchartedIsland_Leader_Caught)
+}
+
+
