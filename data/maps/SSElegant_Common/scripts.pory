@@ -1,6 +1,44 @@
 mapscripts SSElegant_Common_MapScripts{}
 
 
+//nurse, sailor, dude, carona
 
+//nurse
+script SSElegant_Common_Nurse{
+    lockall
+    faceplayer   
+    msgbox(format("Hello! We hope you're enjoying your time on the S.S. Elegant.\pWhy don't you rest for a bit?"))
+    release
+	call(Common_EventScript_OutOfCenterPartyHeal)
+	msgbox(format("Take care, trainer!"))
+	releaseall
+	end
+}
+script SSElegant_Common_Chansey{
+    playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
+    msgbox(format("Chansey is bobbing up and down with the ship."), MSGBOX_NPC)
+    end
+}
 
+//sailor
+script SSElegant_Common_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//dude
+script SSElegant_Common_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//carona
+script SSElegant_Common_Carona{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script SSElegant_Common_Medicham{
+    playmoncry(SPECIES_MEDICHAM, CRY_MODE_NORMAL)
+    msgbox(format("Medicham is reading a book.\nBetter not disturb it!"), MSGBOX_NPC)
+    end
+}
 

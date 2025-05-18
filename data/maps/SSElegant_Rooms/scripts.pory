@@ -3,3 +3,59 @@ mapscripts SSElegant_Rooms_MapScripts{}
 
 
 
+
+//gabrielle, breech/clef, poke-couple, artist, gloria locked door
+
+
+
+
+//gabrielle
+script SSElegant_Rooms_Gabrielle{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script SSElegant_Rooms_Zoroark{
+    playmoncry(SPECIES_ZOROARK_HISUI, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//breech
+script SSElegant_Rooms_Breech{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+//clef
+script SSElegant_Rooms_Clefable{
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//couple
+script SSElegant_Rooms_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script SSElegant_Rooms_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script SSElegant_Rooms_Weezing{
+    playmoncry(SPECIES_WEEZING_GALAR, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+//artist
+script SSElegant_Rooms_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script SSElegant_Rooms_Smeargle{
+    playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+
