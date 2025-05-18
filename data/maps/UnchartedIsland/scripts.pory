@@ -16,7 +16,7 @@ script UnchartedIsland_Leader_Caught_A{
 //caught after clearing section 1
 script UnchartedIsland_Leader_Caught_B{
     msgbox(format("Hey! What are you doing here? You should be on the S.S. Elegant."))
-    warp(MAP_UNCHARTED_ISLAND, 6, 34)
+    warp(MAP_UNCHARTED_ISLAND, 37, 24)
     delay(60)
 }
 

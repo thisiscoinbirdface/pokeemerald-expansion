@@ -21,7 +21,7 @@ UnchartedIsland_Leader_Caught_B::
 # 18 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 19 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_UNCHARTED_ISLAND, 6, 34
+	warp MAP_UNCHARTED_ISLAND, 37, 24
 # 20 "data//maps/UnchartedIsland/scripts.pory"
 	delay 60
 	return
