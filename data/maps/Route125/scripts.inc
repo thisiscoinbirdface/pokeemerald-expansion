@@ -26,7 +26,7 @@ Route125_EventScript_Nolen::
 	end
 
 Route125_EventScript_Stan::
-	trainerbattle_single TRAINER_RIVETSHORE_GYM_F, Route125_Text_StanIntro, Route125_Text_StanDefeat
+	trainerbattle_single TRAINER_SSELEGANT_A, Route125_Text_StanIntro, Route125_Text_StanDefeat
 	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -235,8 +235,8 @@
 #define TRAINER_RIVETSHORE_GYM_C                     159
 #define TRAINER_RIVETSHORE_GYM_D                     160
 #define TRAINER_RIVETSHORE_GYM_E                     161
-#define TRAINER_RIVETSHORE_GYM_F                     162
-#define TRAINER_RIVETSHORE_GYM_G                     163
+#define TRAINER_SSELEGANT_A                     162
+#define TRAINER_SSELEGANT_B                     163
 #define TRAINER_SSELEGANT_INGER                     164
 #define TRAINER_SSELEGANT_ARIANA                     165
 #define TRAINER_SSELEGANT_JANIA                     166

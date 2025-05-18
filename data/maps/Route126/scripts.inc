@@ -7,7 +7,7 @@ Route126_OnTransition:
 	end
 
 Route126_EventScript_Barry::
-	trainerbattle_single TRAINER_RIVETSHORE_GYM_G, Route126_Text_BarryIntro, Route126_Text_BarryDefeat
+	trainerbattle_single TRAINER_SSELEGANT_B, Route126_Text_BarryIntro, Route126_Text_BarryDefeat
 	msgbox Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -7231,7 +7231,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2945
-    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_F] =
+    [DIFFICULTY_NORMAL][TRAINER_SSELEGANT_A] =
     {
 #line 2946
         .trainerName = _("STAN"),
@@ -7263,7 +7263,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 2958
-    [DIFFICULTY_NORMAL][TRAINER_RIVETSHORE_GYM_G] =
+    [DIFFICULTY_NORMAL][TRAINER_SSELEGANT_B] =
     {
 #line 2959
         .trainerName = _("BARRY"),
