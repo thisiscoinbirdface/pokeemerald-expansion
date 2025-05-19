@@ -303,7 +303,7 @@ Music: Aqua
 Double Battle: Yes
 AI: Check Bad Move
 
-Nickit
+Impidimp
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -353,7 +353,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Nickit
+Impidimp
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -370,11 +370,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Woobat
+Bronzor
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nickit
+Yanma
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -651,7 +651,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Woobat
+Yanma
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -664,11 +664,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Elgyem
+Impidimp
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nymble
+Drowzee
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -685,15 +685,15 @@ Drowzee
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Woobat
+Impidimp
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Elgyem
+Yanma
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nymble
+Bronzor
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -702,17 +702,17 @@ Name: Moxie
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
-Music: Cool
+Music: Aqua
 Items: Super Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Whirlipede
+Impidimp
 Level: 19
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-Inkay
+Murkrow
 Level: 19
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
@@ -737,7 +737,7 @@ Nickit
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Murkrow
+Rattata-Alola
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1348,7 +1348,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Thievul
+Lokix
 Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1361,11 +1361,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Thievul
+Bronzor
 Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Elgyem
+Grimer-Alola
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1379,7 +1379,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Swoobat
+Yanma
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1393,11 +1393,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Bronzor
+Drowzee
 Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Thievul
+Lokix
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1414,7 +1414,7 @@ Murkrow
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Baltoy
+Impidimp
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1444,11 +1444,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Elgyem
+Impidimp
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Linoone-Galar
+Grimer-Alola
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1462,11 +1462,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Elgyem
+Lokix
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Linoone-Galar
+Murkrow
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1474,23 +1474,29 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Name: Melea
 Class: Somber Admin
 Pic: Somber Admin Melea
-Gender: Male
+Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Slowpoke-Galar
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Elgyem
+Grimer-Alola
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Jynx
+Yanmega
+Ability: Speed Boost
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Air Cutter
+- Lunge
+- Ancient Power
+- Hypnosis
+
 
 === TRAINER_ROUTE6_KOHLA ===
 Name: Kohla
@@ -1724,11 +1730,13 @@ Music: Cool
 Double Battle: Yes
 AI: Basic Trainer
 
-Thievul
+Grimer-Alola
 Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Hypno
 Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT2 ===
 Name: HOPE
@@ -1739,11 +1747,13 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Swoobat
+Lokix
 Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Hypno
 Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GAB ===
 Name: Gabrielle
@@ -2042,12 +2052,12 @@ Music: Suspicious
 Double Battle: Yes
 AI: Check Bad Move
 
-Elgyem
-Level: 31
+Grimer-Alola
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Mime Jr.
-Level: 30
+Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_F ===
@@ -2209,7 +2219,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Elgyem
+Yanmega
 Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -2249,7 +2259,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Murkrow
+Bronzong
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -2271,17 +2281,17 @@ Name: Moxie
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
-Music: Male
+Music: Aqua
 Items: Super Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Honchkrow
+Morgrem
 Level: 36
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Malamar
+Honchkrow
 Level: 36
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
@@ -3117,54 +3127,50 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
-Name: JACK
-Class: Swimmer M
-Pic: Swimmer M
+Name: Grunt
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Swimmer
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Muk-Alola
+Level: 49
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_B ===
-Name: DUDLEY
-Class: Swimmer M
-Pic: Swimmer M
+Name: Grunt
+Class: Team Somber
+Pic: Somber Grunt F
 Gender: Male
-Music: Swimmer
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 33
+Yanmega
+Level: 46
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Tentacruel
-Level: 33
+Bronzong
+Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_C ===
-Name: CHAD
-Class: Swimmer M
-Pic: Swimmer M
+Name: Grunt
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
-Music: Swimmer
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 33
+Honchkrow
+Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
-Level: 33
+Hypno
+Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
@@ -3181,34 +3187,65 @@ Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
-Name: TONY
-Class: Swimmer M
-Pic: Swimmer M
+Name: Moxie
+Class: Somber Admin
+Pic: Somber Admin Moxie
 Gender: Male
-Music: Swimmer
+Music: Aqua
+Items: Super Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
-Sharpedo
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Grimmsnarl
+Level: 53
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Honchkrow
+Level: 54
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Slowking-Galar
+Level: 54
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Great Tusk
+Level: 56
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Houndoom @ Houndoominite
+Level: 57
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
-Name: TONY
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
-Music: Swimmer
+Name: Melea
+Class: Somber Admin
+Pic: Somber Admin Melea
+Gender: Female
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
-Staryu
-Level: 34
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Yanmega
+Level: 53
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-Sharpedo
-Level: 36
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Muk-Alola
+Level: 54
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Slowking-Galar
+Level: 54
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Flutter Mane
+Level: 56
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Absol @ Absolite
+Level: 57
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: TONY
