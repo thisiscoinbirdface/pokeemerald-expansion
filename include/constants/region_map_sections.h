@@ -144,14 +144,7 @@
 #define MAPSEC_POKEMON_TOWER                0x8C
 #define MAPSEC_CERULEAN_CAVE                0x8D
 #define MAPSEC_POWER_PLANT                  0x8E
-#define MAPSEC_ONE_ISLAND                   0x8F
-#define MAPSEC_TWO_ISLAND                   0x90
-#define MAPSEC_THREE_ISLAND                 0x91
-#define MAPSEC_FOUR_ISLAND                  0x92
-#define MAPSEC_FIVE_ISLAND                  0x93
-#define MAPSEC_SEVEN_ISLAND                 0x94
-#define MAPSEC_SIX_ISLAND                   0x95
-#define MAPSEC_KINDLE_ROAD                  0x96
+
 #define MAPSEC_TREASURE_BEACH               0x97
 #define MAPSEC_CAPE_BRINK                   0x98
 #define MAPSEC_BOND_BRIDGE                  0x99
@@ -246,9 +239,26 @@
 #define MAPSEC_FENNILAHL_TUNNEL             0xF1
 #define MAPSEC_ROUTE3_UNDERPASS             0xF2
 #define MAPSEC_RIVETSHORE_CITY              0xF3
-#define MAPSEC_SSELEGANT                  0xF4
+#define MAPSEC_SSELEGANT                    0xF4
+#define MAPSEC_ROUTE8                       0xF5
+#define MAPSEC_CERAM_PEAK                   0xF6
+#define MAPSEC_UNCHARTED_ISLAND             0xF7
+#define MAPSEC_PELLUCA_CABLE_CAR            0xF8
+#define MAPSEC_RANGER_INSTITUTE_IVY         0xF9
+#define MAPSEC_RANGER_INSTITUTE_RIVETSHORE  0xFA
+//#define MAPSEC_PELLUCA_CABLE_CAR            0xFB
 
-#define MAPSEC_NONE                         0xF5
+#define MAPSEC_IVY_RIVER_MAIN               0x8F
+#define MAPSEC_TWO_ISLAND                   0x90
+#define MAPSEC_THREE_ISLAND                 0x91
+#define MAPSEC_FOUR_ISLAND                  0x92
+#define MAPSEC_FIVE_ISLAND                  0x93
+#define MAPSEC_SEVEN_ISLAND                 0x94
+#define MAPSEC_SIX_ISLAND                   0x95
+#define MAPSEC_KINDLE_ROAD                  0x96
+
+
+#define MAPSEC_NONE                         0xFB
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
