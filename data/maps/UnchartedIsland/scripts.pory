@@ -115,13 +115,11 @@ script UnchartedIsland_Moxie_Viewpoint_Trigger{
 script UnchartedIsland_Moxie_Trigger0{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 4))
-    
     goto(UnchartedIsland_Moxie_Melea_Fight)
 }
 script UnchartedIsland_Moxie_Trigger1{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 5))
-
     goto(UnchartedIsland_Moxie_Melea_Fight)
 }
 

@@ -5690,6 +5690,16 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/Rivetshore_RangerInstitute_Interior/border.bin",
       "blockdata_filepath": "data/layouts/Rivetshore_RangerInstitute_Interior/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD",
+      "name": "VictoryRoad_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/VictoryRoad/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad/map.bin"
     }
   ]
 }

@@ -143,17 +143,17 @@ UnchartedIsland_Moxie_Trigger0::
 	lockall
 # 117 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger0_Movement_0
-# 119 "data//maps/UnchartedIsland/scripts.pory"
+# 118 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Moxie_Melea_Fight
 	return
 
 
 UnchartedIsland_Moxie_Trigger1::
-# 122 "data//maps/UnchartedIsland/scripts.pory"
+# 121 "data//maps/UnchartedIsland/scripts.pory"
 	lockall
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger1_Movement_0
-# 125 "data//maps/UnchartedIsland/scripts.pory"
+# 123 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Moxie_Melea_Fight
 	return
 
@@ -212,21 +212,21 @@ UnchartedIsland_Moxie_Trigger0_Movement_0:
 	walk_right
 	step_end
 
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Trigger1_Movement_0:
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 123 "data//maps/UnchartedIsland/scripts.pory"
+# 122 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 

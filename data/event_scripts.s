@@ -1413,3 +1413,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Rivetshore_RangerInstitute/scripts.inc"
 
 	.include "data/maps/Rivetshore_RangerInstitute_Interior/scripts.inc"
+
+	.include "data/maps/VictoryRoad/scripts.inc"
