@@ -3,7 +3,7 @@
   "name": "IvyRiver",
   "layout": "LAYOUT_IVY_RIVER",
   "music": "MUS_RG_ROUTE11",
-  "region_map_section": "MAPSEC_LILY_POND",
+  "region_map_section": "MAPSEC_IVY_RIVER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -227,8 +227,8 @@
       "x": 46,
       "y": 87,
       "elevation": 0,
-      "dest_map": "MAP_LILY_POND_CAVE",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_IVE_RIVER_CAVES",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

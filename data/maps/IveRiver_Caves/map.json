@@ -3,7 +3,7 @@
   "name": "IveRiver_Caves",
   "layout": "LAYOUT_IVE_RIVER_CAVES",
   "music": "MUS_RG_ROUTE11",
-  "region_map_section": "MAPSEC_IVY_RIVER",
+  "region_map_section": "MAPSEC_IVY_RIVER_UNDERPASS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 27,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_IVY_RIVER_MAIN",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

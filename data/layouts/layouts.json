@@ -5294,10 +5294,10 @@
     {
       "id": "LAYOUT_IVE_RIVER_CAVES",
       "name": "IveRiver_Caves_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/IveRiver_Caves/border.bin",
       "blockdata_filepath": "data/layouts/IveRiver_Caves/map.bin"
     },
