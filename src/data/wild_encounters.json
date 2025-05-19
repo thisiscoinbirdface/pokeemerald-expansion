@@ -12617,17 +12617,17 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_DRATINI"
+                "species": "SPECIES_MAREANIE"
               },
               {
                 "min_level": 22,
                 "max_level": 25,
-                "species": "SPECIES_DRATINI"
+                "species": "SPECIES_MAREANIE"
               },
               {
                 "min_level": 18,
                 "max_level": 20,
-                "species": "SPECIES_DRATINI"
+                "species": "SPECIES_MAREANIE"
               }
             ]
           }
