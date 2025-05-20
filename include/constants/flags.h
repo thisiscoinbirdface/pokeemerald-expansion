@@ -147,16 +147,16 @@
 #define FLAG_PELLUCA_QUEST_END 0x55  // Unused Flag
 #define FLAG_MIRROH_GREAVARD_BLOCKER 0x68  // flags for the greavard playing
 #define FLAG_HIDE_MIRROH_GREAVARD_INHOUSE 0xE9 // flag to hide the greavard indoors (once they're done playing)
-#define FLAG_RIVETSHORE_GAB 0x1AA // Unused Flag
+#define FLAG_RIVETSHORE_GAB 0x1AA // meeting gab in rivetshore
 #define FLAG_ISLAND_MOXIE_VIEWPOINT       0x1AB // Unused Flag
 #define FLAG_ISLAND_MOXIE_MELEA_BATTLE    0x1DA // Unused Flag
 #define FLAG_HIDE_ISLAND_FINALE           0x2D9 // Unused Flag
-#define FLAG_UNUSED_0x465                 0x465 // Unused Flag
-#define FLAG_UNUSED_0x466                 0x466 // Unused Flag
-#define FLAG_UNUSED_0x467                 0x467 // Unused Flag
-#define FLAG_UNUSED_0x468                 0x468 // Unused Flag
-#define FLAG_UNUSED_0x470                 0x470 // Unused Flag
-#define FLAG_UNUSED_0x472                 0x472 // Unused Flag
+#define FLAG_RAAZI_BEATEN                 0x465 // once raazi is beaten, the gym leaders vanish
+#define FLAG_GAB_BREECH_TEAMUP            0x466 // Unused Flag
+#define FLAG_STORAGE_GAB_ZOROARK          0x467 // this is set after the zoroark fake scene
+#define FLAG_STORAGE_MOONBLAST            0x468 // bust open the wall with moonblast
+#define FLAG_HIDE_GAB_BREECH_OUTDOOR      0x470 // hide gab and breech on deck
+#define FLAG_HIDE_GAB_BREECH_STORAGE      0x472 // hide gab and breech in storage
 #define FLAG_UNUSED_0x479                 0x479 // Unused Flag
 #define FLAG_UNUSED_0x46D                 0x46D // Unused Flag
 #define FLAG_UNUSED_0x4BC                 0x4BC // Unused Flag

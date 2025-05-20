@@ -5700,6 +5700,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/VictoryRoad/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_SSELEGANT_STORAGE_BUSTED",
+      "name": "SSElegant_Storage_Busted_Layout",
+      "width": 17,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/SSElegant_Storage_Busted/border.bin",
+      "blockdata_filepath": "data/layouts/SSElegant_Storage_Busted/map.bin"
     }
   ]
 }

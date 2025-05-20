@@ -3,7 +3,7 @@
   "name": "SSElegant_Common",
   "layout": "LAYOUT_SSELEGANT_COMMON",
   "music": "MUS_RG_CINNABAR",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_SSELEGANT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSElegant_Common_Carona",
-      "flag": "0"
+      "flag": "FLAG_RAAZI_BEATEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MEDICHAM_MEGA)",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSElegant_Common_Medicham",
-      "flag": "0"
+      "flag": "FLAG_RAAZI_BEATEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",

@@ -1,3 +1,12 @@
+raw`
+    .set LOCALID_RAAZI, 1
+    .set LOCALID_AG, 2
+    .set LOCALID_GAB, 14
+    .set LOCALID_ZORO, 15
+    .set LOCALID_BREECH, 16
+    .set LOCALID_CLEF, 17
+`
+
 mapscripts SSElegant_MapScripts{}
 
 //raazi fight, sailor blockers, jania, inger/ariana (and mons), 4 NPCs (sailor, man, picnicker, dude)
@@ -6,16 +15,95 @@ script SSElegant_SailorBlocker{
     end
 }
 
+//full cutscene overview
+//beat raazi - raazi exits
+//walk down - meet gab who explains they have to break out
+    //but they need help
+    //breech comes
+    //gab and breech make up
+    //zoroark transforms into raazi
+    //when ready, come to the storage (chance to heal, switch mons)
 
-
+//storage cutscene
+    //gab speaks on behalf of raazi
+    //tells sailors to come with her to the common room ASAP
+    //breech and clefairy use moonblast and go ahead
+    //tells player to hide your pokemon
+    //auto-warp out
 
 
 script SSElegant_Raazi{
+    lockall
+    faceplayer
+    //battle dialogue
 
+    //battle
+
+    //ship stops
+
+    //raazi exit
+    applymovement(LOCALID_RAAZI, moves(walk_down * 8))
+    applymovement(LOCALID_AG, moves(walk_down * 8))
+    waitmovement(0)
+
+    removeobject(LOCALID_RAAZI)
+    removeobject(LOCALID_AG)
+    //end
+    setflag(FLAG_RAAZI_BEATEN)
+
+    releaseall
+    end
 }
+
+script SSElegant_Gab_Breech_TeamUp_Trigger{
+    if (flag(FLAG_GAB_BREECH_TEAMUP)) {end} //if the cutscene is done, dont retrigger
+
+    if (flag(FLAG_RAAZI_BEATEN)){   //only start the cutscene after raazi
+        lockall
+        addobject(LOCALID_GAB)
+        addobject(LOCALID_ZORO)
+
+        applymovement(LOCALID_GAB, moves(walk_up * 5))
+        applymovement(LOCALID_ZORO, moves(walk_up * 5))
+        waitmovement(0)
+
+        releaseall
+        end
+    }
+
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 script SSElegant_Aggron{
     playmoncry(SPECIES_AGGRON, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Aggron glares at you."), MSGBOX_NPC)
     end
 }
 
