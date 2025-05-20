@@ -2,7 +2,7 @@
   "id": "MAP_RIVETSHORE_CITY",
   "name": "RivetshoreCity",
   "layout": "LAYOUT_RIVETSHORE_CITY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_FUCHSIA",
   "region_map_section": "MAPSEC_RIVETSHORE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

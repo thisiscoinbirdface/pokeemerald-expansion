@@ -2,7 +2,7 @@
   "id": "MAP_RIVETSHORE_CITY_POKEMON_CENTER",
   "name": "RivetshoreCity_PokemonCenter",
   "layout": "LAYOUT_RIVETSHORE_CITY_POKEMON_CENTER",
-  "music": "MUS_DUMMY",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_RIVETSHORE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

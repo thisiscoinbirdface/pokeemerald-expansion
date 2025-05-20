@@ -249,8 +249,8 @@
 //#define MAPSEC_PELLUCA_CABLE_CAR            0xFB
 
 #define MAPSEC_IVY_RIVER_MAIN               0x8F
-#define MAPSEC_IVY_RIVER_UNDERPASS                   0x90
-#define MAPSEC_LILY_GROTTO                 0x91
+#define MAPSEC_IVY_RIVER_UNDERPASS          0x90
+#define MAPSEC_LILY_GROTTO                  0x91
 #define MAPSEC_FOUR_ISLAND                  0x92
 #define MAPSEC_FIVE_ISLAND                  0x93
 #define MAPSEC_SEVEN_ISLAND                 0x94

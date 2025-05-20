@@ -2,7 +2,7 @@
   "id": "MAP_SSELEGANT",
   "name": "SSElegant",
   "layout": "LAYOUT_SSELEGANT",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_CINNABAR",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
