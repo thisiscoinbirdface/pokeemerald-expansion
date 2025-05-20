@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSElegant_Aggron",
-      "flag": "0"
+      "flag": "FLAG_RAAZI_BEATEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
@@ -55,8 +55,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_ARIANA",
-      "x": 27,
-      "y": 12,
+      "x": 26,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_INGER",
       "x": 30,
-      "y": 12,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_BLAZE)",
-      "x": 27,
-      "y": 11,
+      "x": 26,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -95,7 +95,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MINIOR)",
       "x": 30,
-      "y": 11,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -107,10 +107,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_JANIA",
-      "x": 16,
+      "x": 12,
       "y": 13,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -146,10 +146,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 12,
+      "x": 16,
       "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -186,9 +186,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
       "x": 21,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -197,11 +197,11 @@
       "flag": "FLAG_HIDE_GAB_BREECH_OUTDOOR"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZOROARK)",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_A",
       "x": 22,
-      "y": 19,
+      "y": 18,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -212,9 +212,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 21,
-      "y": 20,
+      "y": 19,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -225,9 +225,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CLEFABLE)",
       "x": 22,
-      "y": 20,
+      "y": 19,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

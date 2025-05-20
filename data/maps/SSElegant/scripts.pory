@@ -60,13 +60,104 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
 
     if (flag(FLAG_RAAZI_BEATEN)){   //only start the cutscene after raazi
         lockall
+        msgbox_delay("Gabrielle", format("{PLAYER}!"))
+        setvar(VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_SPECIES(ZOROARK_HISUI))
+
         addobject(LOCALID_GAB)
         addobject(LOCALID_ZORO)
 
-        applymovement(LOCALID_GAB, moves(walk_up * 5))
-        applymovement(LOCALID_ZORO, moves(walk_up * 5))
+        applymovement(LOCALID_GAB, moves(walk_up * 4))
+        applymovement(LOCALID_ZORO, moves(walk_up * 4))
         waitmovement(0)
 
+        msgbox_delay("Gabrielle", format("You heard the announcement, right?\nWe've reached!\pThe gym leaders are getting off, but the crew won't let the civilians leave!\pWe've got to find a way past them somehow...but with just the two of us, I really don't know how we can do it...\p..."))
+        delay(48)
+
+        //breech comes
+        msgbox_delay("Breech", format("We'll help out!"))
+        applymovement(LOCALID_GAB, moves(emote_question_mark face_down))
+        applymovement(LOCALID_ZORO, moves(face_down))
+        waitmovement(0)
+        delay(16)        
+
+        addobject(LOCALID_BREECH)
+        addobject(LOCALID_CLEF)
+
+        special(SpawnCameraObject)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3))
+        waitmovement(0)
+
+        applymovement(LOCALID_BREECH, moves(walk_up * 2))
+        applymovement(LOCALID_CLEF, moves(walk_up * 2))
+        waitmovement(0)
+
+        applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)      
+        msgbox_delay("Gabrielle", format("It's you! The hiker with the Clefairy near Fennilahl Town!"))
+
+        applymovement(LOCALID_BREECH, moves(jump_in_place_up))
+        waitmovement(0)
+        delay(16)      
+        msgbox_delay("Breech", format("You're the Team Somber grunt! You tried to take Clefable's everstone!"))
+
+        applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)      
+        msgbox_delay("Gabrielle", format("I-I uh...\p...\pAhem.\pZoroark and I are sorry for what we did to you two back there.\pWe really are."))
+        msgbox_delay("Breech", format("Why are you helping {PLAYER}? Are you still part of Team Somber?"))
+        msgbox_delay("Gabrielle", format("No. I-uh...I got fired.\nFor helping {PLAYER} sneak into our headquarters.\pAnd since then, Zoroark and I...we've been trying to do better. Trying to be more like {PLAYER}."))
+        msgbox_delay("Breech", format("I guess both of us learned something from {PLAYER}.\p...\pWhat you did was really bad.\pBut right now, we'd be bad for not helping you do a good thing!"))
+
+        msgbox_delay("Gabrielle", format("So...we team up for now?"))
+        msgbox_delay("Breech", format("Yeah, we team up for now."))
+
+        applymovement(LOCALID_BREECH, moves(emote_question_mark))
+        waitmovement(0)
+        delay(16)      
+        msgbox_delay("Breech", format("So what's the plan?"))
+        msgbox_delay("Gabrielle", format("This is the plan!"))
+        applymovement(LOCALID_GAB, moves(face_right))
+        waitmovement(0)
+        delay(16)  
+        msgbox_delay("Gabrielle", format("Go on, Zoroark!"))
+
+        playse(SE_EXIT)
+        //swap zoroark sprite
+        setvar(VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LEADER_RAAZI)
+        removeobject(LOCALID_ZORO)
+        addobject(LOCALID_ZORO)  
+        setobjectxy(LOCALID_ZORO, 22, 14)      
+        delay(16)
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_in_place_down emote_exclamation_mark))
+        applymovement(LOCALID_BREECH, moves(jump_in_place_up emote_exclamation_mark))
+        applymovement(LOCALID_CLEF, moves(jump_in_place_up emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+
+        msgbox_delay("Gabrielle", format("Zoroark and I will go down to the storage hold and distract the crew there!\pAfter that, you two try and find a way out through the hold."))
+        msgbox_delay("Breech", format("Okay, we'll do what we can."))
+        msgbox_delay("Gabrielle", format("Got it, {PLAYER}?\nWhen you're ready, meet us at the storage hold. Make sure you have everything you need!"))
+
+        //go
+        applymovement(LOCALID_BREECH, moves(walk_down walk_left * 6 walk_down *5))
+        applymovement(LOCALID_CLEF, moves(walk_down walk_left * 7 walk_down *5))
+        applymovement(LOCALID_GAB, moves(walk_down *4 walk_left * 6 walk_down *5))
+        applymovement(LOCALID_ZORO, moves(walk_down *4 walk_left * 7 walk_down *5))
+        waitmovement(0)
+
+        removeobject(LOCALID_BREECH)
+        removeobject(LOCALID_CLEF)
+        removeobject(LOCALID_GAB)
+        removeobject(LOCALID_ZORO)
+
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+        waitmovement(0)
+        special(RemoveCameraObject)
+
+        //end
+        setflag(FLAG_GAB_BREECH_TEAMUP)
         releaseall
         end
     }
