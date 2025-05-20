@@ -273,7 +273,7 @@
       "flag": "FLAG_ITEM_ROUTE6_B"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 8,
       "y": 66,
       "elevation": 0,
@@ -281,7 +281,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM03",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_D"
     },
@@ -294,7 +294,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_SHARD",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_F"
     },
@@ -320,7 +320,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM43",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_H"
     },

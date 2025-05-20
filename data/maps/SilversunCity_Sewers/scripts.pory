@@ -290,11 +290,12 @@ script SilversunCity_Sewers_Market_A{
 }
 
 mart SilversunCity_Sewers_Market_A_Inventory{
-    ITEM_TM16
+    ITEM_TM17
+    ITEM_TM19    
     ITEM_TM21
-    ITEM_TM36
-    ITEM_TM42
-    ITEM_TM46
+    ITEM_TM34
+    ITEM_TM37
+    ITEM_TM40
 }
 
 //Ability capsules dude
@@ -340,6 +341,7 @@ script SilversunCity_Sewers_Market_C{
 	end
 }
 
+//evo scyther, cups and sneasler
 mart SilversunCity_Sewers_Market_C_Inventory{
     ITEM_BLACK_AUGURITE
     ITEM_METAL_COAT
@@ -352,24 +354,6 @@ script SilversunCity_Sewers_Market_D{
     //temp
     msgbox(format("Trying to get something unsavoury, are we? Hehehe..."), MSGBOX_NPC)
     end
-
-    //real
-    lock
-	faceplayer
-	message(format("You look like you'd make good use of this stuff!"))
-	waitmessage
-	pokemart(SilversunCity_Sewers_Market_C_Inventory)
-	msgbox(format("Quit wasting my time!"), MSGBOX_DEFAULT)
-	release
-	end
-}
-
-mart SilversunCity_Sewers_Market_D_Inventory{
-    ITEM_BLACK_AUGURITE
-    ITEM_METAL_COAT
-    ITEM_RAZOR_CLAW
-    ITEM_CHIPPED_POT
-    ITEM_MASTERPIECE_TEACUP
 }
 
 //Muk

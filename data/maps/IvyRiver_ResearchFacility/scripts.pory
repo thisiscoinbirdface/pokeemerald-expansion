@@ -96,32 +96,13 @@ script IvyRiver_Ranger_FirstQuest_Reward{
     message(format("Choose carefully! You might not get another one for a while."))
     waitmessage
     dynmultichoice(0,0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
-        "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
-        "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",
-        "Sharpedonite", "Ampharosite", "Manectricite", "Absolite", "Lucarionite"
+        "Venusaurite", "Blastoisite", "Charizardite X", "Charizardite Y",
     )
 
-    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_MEDICHAMITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 1) {setvar(VAR_0x8006, ITEM_AGGRONITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 2) {setvar(VAR_0x8006, ITEM_ALTARIANITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 3) {setvar(VAR_0x8006, ITEM_LOPUNNITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 4) {setvar(VAR_0x8006, ITEM_BANETTITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 5) {setvar(VAR_0x8006, ITEM_ABOMASITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 6) {setvar(VAR_0x8006, ITEM_GYARADOSITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 7) {setvar(VAR_0x8006, ITEM_MAWILITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 8) {setvar(VAR_0x8006, ITEM_GARDEVOIRITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 9) {setvar(VAR_0x8006, ITEM_GALLADITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 10) {setvar(VAR_0x8006, ITEM_HOUNDOOMINITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 11) {setvar(VAR_0x8006, ITEM_METAGROSSITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 12) {setvar(VAR_0x8006, ITEM_SCIZORITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 13) {setvar(VAR_0x8006, ITEM_KANGASKHANITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 14) {setvar(VAR_0x8006, ITEM_PINSIRITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 15) {setvar(VAR_0x8006, ITEM_SHARPEDONITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_AMPHAROSITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
-    if (var(VAR_RESULT) == 19) {setvar(VAR_0x8006, ITEM_LUCARIONITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}    
+    if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_VENUSAURITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
+    if (var(VAR_RESULT) == 1) {setvar(VAR_0x8006, ITEM_BLASTOISINITE) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
+    if (var(VAR_RESULT) == 2) {setvar(VAR_0x8006, ITEM_CHARIZARDITE_X) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
+    if (var(VAR_RESULT) == 3) {setvar(VAR_0x8006, ITEM_CHARIZARDITE_Y) goto(IvyRiver_Ranger_FirstQuest_Reward_Give)}
 }
 
 script IvyRiver_Ranger_FirstQuest_Reward_Give{

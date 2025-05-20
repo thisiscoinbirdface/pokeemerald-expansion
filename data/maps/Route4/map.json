@@ -195,7 +195,7 @@
       "flag": "FLAG_ROUTE4_EVIL_BATTLE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 31,
       "y": 23,
       "elevation": 0,
@@ -203,7 +203,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM12",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_4_C"
     },
@@ -333,7 +333,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM16",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MIRROH_PEAK_B"
     }

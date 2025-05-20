@@ -225,13 +225,35 @@ script RangerInstitute_1F_NPC3{
 
 //Blockers
 script RangerInstitute_1F_BlockerBasement{
-    lockall
-    faceplayer
-    msgbox(format("Sorry, this area is closed off for repairs."))
-//    msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."))
-    releaseall
-    end
+    if (var(VAR_RANGER_INSTITUTE) == 0){
+        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokemon Rangers only."), MSGBOX_NPC)
+        end
+    }
+    if (var(VAR_RANGER_INSTITUTE) == 1){
+        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokemon Rangers only."), MSGBOX_NPC)
+        end
+    }
+
+    lock
+	faceplayer
+	message(format("Welcome to the Ranger TM Store!"))
+	waitmessage
+	pokemart(RangerInstitute_1F_TM_Mart)
+	msgbox(format("See you another time, Ranger!"), MSGBOX_DEFAULT)
+	release
+	end
 }
+
+mart RangerInstitute_1F_TM_Mart{
+    ITEM_TM10
+    ITEM_TM27
+    ITEM_TM28
+    ITEM_TM32
+    ITEM_TM36
+    ITEM_TM42
+}
+
+
 script RangerInstitute_1F_BlockerUpstairs{
     if (var(VAR_RANGER_INSTITUTE) == 0){
         msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."), MSGBOX_NPC)

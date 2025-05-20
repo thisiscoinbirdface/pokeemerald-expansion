@@ -291,70 +291,109 @@ RangerInstitute_1F_NPC3::
 
 RangerInstitute_1F_BlockerBasement::
 # 228 "data//maps/RangerInstitute/scripts.pory"
-	lockall
-# 229 "data//maps/RangerInstitute/scripts.pory"
-	faceplayer
-# 230 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_1F_BlockerBasement_Text_0
+	compare VAR_RANGER_INSTITUTE, 0
+	goto_if_eq RangerInstitute_1F_BlockerBasement_2
 # 232 "data//maps/RangerInstitute/scripts.pory"
-	releaseall
+	compare VAR_RANGER_INSTITUTE, 1
+	goto_if_eq RangerInstitute_1F_BlockerBasement_5
+# 237 "data//maps/RangerInstitute/scripts.pory"
+	lock
+# 238 "data//maps/RangerInstitute/scripts.pory"
+	faceplayer
+# 239 "data//maps/RangerInstitute/scripts.pory"
+	message RangerInstitute_1F_BlockerBasement_Text_1
+# 240 "data//maps/RangerInstitute/scripts.pory"
+	waitmessage
+# 241 "data//maps/RangerInstitute/scripts.pory"
+	pokemart RangerInstitute_1F_TM_Mart
+# 242 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_1F_BlockerBasement_Text_2, MSGBOX_DEFAULT
+# 243 "data//maps/RangerInstitute/scripts.pory"
+	release
+	end
+
+RangerInstitute_1F_BlockerBasement_2:
+# 229 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_1F_BlockerBasement_Text_0, MSGBOX_NPC
+	end
+
+RangerInstitute_1F_BlockerBasement_5:
+# 233 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_1F_BlockerBasement_Text_0, MSGBOX_NPC
 	end
 
 
+	.align 2
+# 247 "data//maps/RangerInstitute/scripts.pory"
+RangerInstitute_1F_TM_Mart:
+# 248 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM10
+# 249 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM27
+# 250 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM28
+# 251 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM32
+# 252 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM36
+# 253 "data//maps/RangerInstitute/scripts.pory"
+	.2byte ITEM_TM42
+	.2byte ITEM_NONE
+
 RangerInstitute_1F_BlockerUpstairs::
-# 236 "data//maps/RangerInstitute/scripts.pory"
+# 258 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 0
 	goto_if_eq RangerInstitute_1F_BlockerUpstairs_2
 RangerInstitute_1F_BlockerUpstairs_1:
-# 240 "data//maps/RangerInstitute/scripts.pory"
+# 262 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 1
 	goto_if_eq RangerInstitute_1F_BlockerUpstairs_5
 RangerInstitute_1F_BlockerUpstairs_4:
-# 244 "data//maps/RangerInstitute/scripts.pory"
+# 266 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 2
 	goto_if_eq RangerInstitute_1F_BlockerUpstairs_8
 RangerInstitute_1F_BlockerUpstairs_7:
 	end
 
 RangerInstitute_1F_BlockerUpstairs_2:
-# 237 "data//maps/RangerInstitute/scripts.pory"
+# 259 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerUpstairs_Text_0, MSGBOX_NPC
 	goto RangerInstitute_1F_BlockerUpstairs_1
 
 RangerInstitute_1F_BlockerUpstairs_5:
-# 241 "data//maps/RangerInstitute/scripts.pory"
+# 263 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerUpstairs_Text_0, MSGBOX_NPC
 	goto RangerInstitute_1F_BlockerUpstairs_4
 
 RangerInstitute_1F_BlockerUpstairs_8:
-# 245 "data//maps/RangerInstitute/scripts.pory"
+# 267 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerUpstairs_Text_1, MSGBOX_NPC
 	goto RangerInstitute_1F_BlockerUpstairs_7
 
 
 RangerInstitute_1F_TriggerUpstairs::
-# 251 "data//maps/RangerInstitute/scripts.pory"
+# 273 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 1
 	goto_if_gt RangerInstitute_1F_TriggerUpstairs_2
-# 253 "data//maps/RangerInstitute/scripts.pory"
+# 275 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 254 "data//maps/RangerInstitute/scripts.pory"
+# 276 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 6, RangerInstitute_1F_TriggerUpstairs_Movement_0
-# 255 "data//maps/RangerInstitute/scripts.pory"
+# 277 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 256 "data//maps/RangerInstitute/scripts.pory"
+# 278 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_1F_BlockerUpstairs_Text_0
-# 257 "data//maps/RangerInstitute/scripts.pory"
+# 279 "data//maps/RangerInstitute/scripts.pory"
 	release
-# 258 "data//maps/RangerInstitute/scripts.pory"
+# 280 "data//maps/RangerInstitute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_1F_TriggerUpstairs_Movement_1
-# 259 "data//maps/RangerInstitute/scripts.pory"
+# 281 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 260 "data//maps/RangerInstitute/scripts.pory"
+# 282 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 6, RangerInstitute_1F_TriggerUpstairs_Movement_2
-# 261 "data//maps/RangerInstitute/scripts.pory"
+# 283 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 262 "data//maps/RangerInstitute/scripts.pory"
+# 284 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
@@ -363,321 +402,321 @@ RangerInstitute_1F_TriggerUpstairs_2:
 
 
 RangerInstitute_2F_Trigger0::
-# 286 "data//maps/RangerInstitute/scripts.pory"
+# 308 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 2
 	goto_if_eq RangerInstitute_2F_Trigger0_2
 	end
 
 RangerInstitute_2F_Trigger0_1:
-# 305 "data//maps/RangerInstitute/scripts.pory"
+# 327 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 RangerInstitute_2F_Trigger0_2:
-# 287 "data//maps/RangerInstitute/scripts.pory"
+# 309 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 288 "data//maps/RangerInstitute/scripts.pory"
+# 310 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 12, RangerInstitute_2F_Trigger0_Movement_0
-# 289 "data//maps/RangerInstitute/scripts.pory"
+# 311 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 290 "data//maps/RangerInstitute/scripts.pory"
+# 312 "data//maps/RangerInstitute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_Trigger0_Movement_1
-# 291 "data//maps/RangerInstitute/scripts.pory"
+# 313 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 292 "data//maps/RangerInstitute/scripts.pory"
+# 314 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_Trigger0_Text_0
-# 293 "data//maps/RangerInstitute/scripts.pory"
+# 315 "data//maps/RangerInstitute/scripts.pory"
 	release
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	applymovement 12, RangerInstitute_2F_Trigger0_Movement_2
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_Trigger0_Movement_3
-# 298 "data//maps/RangerInstitute/scripts.pory"
+# 320 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 300 "data//maps/RangerInstitute/scripts.pory"
+# 322 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_2F_EventScript_Welcome
 	goto RangerInstitute_2F_Trigger0_1
 
 
 RangerInstitute_2F_Trigger1::
-# 310 "data//maps/RangerInstitute/scripts.pory"
+# 332 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 2
 	goto_if_eq RangerInstitute_2F_Trigger1_2
 	end
 
 RangerInstitute_2F_Trigger1_1:
-# 328 "data//maps/RangerInstitute/scripts.pory"
+# 350 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 RangerInstitute_2F_Trigger1_2:
-# 311 "data//maps/RangerInstitute/scripts.pory"
+# 333 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 312 "data//maps/RangerInstitute/scripts.pory"
+# 334 "data//maps/RangerInstitute/scripts.pory"
 	applymovement LOCALID_RANGER1, RangerInstitute_2F_Trigger0_Movement_0
-# 313 "data//maps/RangerInstitute/scripts.pory"
+# 335 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 314 "data//maps/RangerInstitute/scripts.pory"
+# 336 "data//maps/RangerInstitute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_Trigger0_Movement_1
-# 315 "data//maps/RangerInstitute/scripts.pory"
+# 337 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 316 "data//maps/RangerInstitute/scripts.pory"
+# 338 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_Trigger1_Text_0
-# 317 "data//maps/RangerInstitute/scripts.pory"
+# 339 "data//maps/RangerInstitute/scripts.pory"
 	release
-# 320 "data//maps/RangerInstitute/scripts.pory"
+# 342 "data//maps/RangerInstitute/scripts.pory"
 	applymovement LOCALID_RANGER1, RangerInstitute_2F_Trigger0_Movement_2
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_Trigger1_Movement_0
-# 322 "data//maps/RangerInstitute/scripts.pory"
+# 344 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
-# 324 "data//maps/RangerInstitute/scripts.pory"
+# 346 "data//maps/RangerInstitute/scripts.pory"
 	goto RangerInstitute_2F_EventScript_Welcome
 	goto RangerInstitute_2F_Trigger1_1
 
 
 RangerInstitute_2F_EventScript_Welcome::
-# 333 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_0
-# 334 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
-# 335 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_0
-# 336 "data//maps/RangerInstitute/scripts.pory"
-	release
-# 337 "data//maps/RangerInstitute/scripts.pory"
-	delay 60
-# 338 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_1
-# 339 "data//maps/RangerInstitute/scripts.pory"
-	release
-# 340 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_1
-# 341 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
-# 342 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_2
-# 343 "data//maps/RangerInstitute/scripts.pory"
-	release
-# 344 "data//maps/RangerInstitute/scripts.pory"
-	delay 60
-# 345 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_3
-# 346 "data//maps/RangerInstitute/scripts.pory"
-	release
-# 347 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_2
-# 348 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
-# 349 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_4
-# 350 "data//maps/RangerInstitute/scripts.pory"
-	release
-# 351 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RAVINE, RangerInstitute_2F_EventScript_Welcome_Movement_3
-# 352 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
-# 353 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_5
-# 354 "data//maps/RangerInstitute/scripts.pory"
-	release
 # 355 "data//maps/RangerInstitute/scripts.pory"
 	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_0
 # 356 "data//maps/RangerInstitute/scripts.pory"
 	waitmovement 0
 # 357 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_6
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_0
 # 358 "data//maps/RangerInstitute/scripts.pory"
 	release
 # 359 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RAVINE, RangerInstitute_2F_Trigger0_Movement_0
+	delay 60
 # 360 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_1
 # 361 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_7
+	release
 # 362 "data//maps/RangerInstitute/scripts.pory"
-	release
+	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_1
 # 363 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_4
+	waitmovement 0
 # 364 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_2
 # 365 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_8
+	release
 # 366 "data//maps/RangerInstitute/scripts.pory"
-	release
+	delay 60
 # 367 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RAVINE, RangerInstitute_2F_Trigger0_Movement_0
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_3
 # 368 "data//maps/RangerInstitute/scripts.pory"
-	waitmovement 0
+	release
 # 369 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_9
+	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_2
 # 370 "data//maps/RangerInstitute/scripts.pory"
-	release
+	waitmovement 0
 # 371 "data//maps/RangerInstitute/scripts.pory"
-	giveitem ITEM_MACH_BIKE
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_4
 # 372 "data//maps/RangerInstitute/scripts.pory"
-	giveitem ITEM_RANGER_CARD
+	release
 # 373 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_10
+	applymovement LOCALID_RAVINE, RangerInstitute_2F_EventScript_Welcome_Movement_3
 # 374 "data//maps/RangerInstitute/scripts.pory"
-	release
+	waitmovement 0
 # 375 "data//maps/RangerInstitute/scripts.pory"
-	delay 32
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_5
 # 376 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_11
+	release
 # 377 "data//maps/RangerInstitute/scripts.pory"
-	release
+	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_0
 # 378 "data//maps/RangerInstitute/scripts.pory"
-	delay 16
+	waitmovement 0
 # 379 "data//maps/RangerInstitute/scripts.pory"
-	applymovement LOCALID_RAVINE, RangerInstitute_2F_EventScript_Welcome_Movement_5
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_6
 # 380 "data//maps/RangerInstitute/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_EventScript_Welcome_Movement_6
-# 381 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_12
-# 382 "data//maps/RangerInstitute/scripts.pory"
 	release
+# 381 "data//maps/RangerInstitute/scripts.pory"
+	applymovement LOCALID_RAVINE, RangerInstitute_2F_Trigger0_Movement_0
+# 382 "data//maps/RangerInstitute/scripts.pory"
+	waitmovement 0
 # 383 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_13
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_7
 # 384 "data//maps/RangerInstitute/scripts.pory"
 	release
 # 385 "data//maps/RangerInstitute/scripts.pory"
-	delay 24
+	applymovement LOCALID_RANGER1, RangerInstitute_2F_EventScript_Welcome_Movement_4
 # 386 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_14
+	waitmovement 0
 # 387 "data//maps/RangerInstitute/scripts.pory"
-	release
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_8
 # 388 "data//maps/RangerInstitute/scripts.pory"
-	removeobject LOCALID_PACKAGE
+	release
 # 389 "data//maps/RangerInstitute/scripts.pory"
-	giveitem ITEM_RANGER_PACKAGE
+	applymovement LOCALID_RAVINE, RangerInstitute_2F_Trigger0_Movement_0
 # 390 "data//maps/RangerInstitute/scripts.pory"
-	startquest QUEST_POKEMON_RANGER
+	waitmovement 0
 # 391 "data//maps/RangerInstitute/scripts.pory"
-	setflag FLAG_RANGER_GOT_FIRST_MISSION
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_9
 # 392 "data//maps/RangerInstitute/scripts.pory"
-	setvar VAR_RANGER_INSTITUTE, 3
+	release
 # 393 "data//maps/RangerInstitute/scripts.pory"
-	delay 16
+	giveitem ITEM_MACH_BIKE
 # 394 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_2F_EventScript_Welcome_Text_15
+	giveitem ITEM_RANGER_CARD
 # 395 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_10
+# 396 "data//maps/RangerInstitute/scripts.pory"
+	release
+# 397 "data//maps/RangerInstitute/scripts.pory"
+	delay 32
+# 398 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_11
+# 399 "data//maps/RangerInstitute/scripts.pory"
+	release
+# 400 "data//maps/RangerInstitute/scripts.pory"
+	delay 16
+# 401 "data//maps/RangerInstitute/scripts.pory"
+	applymovement LOCALID_RAVINE, RangerInstitute_2F_EventScript_Welcome_Movement_5
+# 402 "data//maps/RangerInstitute/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RangerInstitute_2F_EventScript_Welcome_Movement_6
+# 403 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_12
+# 404 "data//maps/RangerInstitute/scripts.pory"
+	release
+# 405 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_13
+# 406 "data//maps/RangerInstitute/scripts.pory"
+	release
+# 407 "data//maps/RangerInstitute/scripts.pory"
+	delay 24
+# 408 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_14
+# 409 "data//maps/RangerInstitute/scripts.pory"
+	release
+# 410 "data//maps/RangerInstitute/scripts.pory"
+	removeobject LOCALID_PACKAGE
+# 411 "data//maps/RangerInstitute/scripts.pory"
+	giveitem ITEM_RANGER_PACKAGE
+# 412 "data//maps/RangerInstitute/scripts.pory"
+	startquest QUEST_POKEMON_RANGER
+# 413 "data//maps/RangerInstitute/scripts.pory"
+	setflag FLAG_RANGER_GOT_FIRST_MISSION
+# 414 "data//maps/RangerInstitute/scripts.pory"
+	setvar VAR_RANGER_INSTITUTE, 3
+# 415 "data//maps/RangerInstitute/scripts.pory"
+	delay 16
+# 416 "data//maps/RangerInstitute/scripts.pory"
+	msgbox RangerInstitute_2F_EventScript_Welcome_Text_15
+# 417 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Ravine::
-# 412 "data//maps/RangerInstitute/scripts.pory"
+# 434 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 413 "data//maps/RangerInstitute/scripts.pory"
+# 435 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 414 "data//maps/RangerInstitute/scripts.pory"
+# 436 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 3
 	goto_if_eq RangerInstitute_Ravine_1
 	return
 
 RangerInstitute_Ravine_1:
-# 415 "data//maps/RangerInstitute/scripts.pory"
+# 437 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Ravine_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_2F_NPC_1::
-# 421 "data//maps/RangerInstitute/scripts.pory"
+# 443 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 422 "data//maps/RangerInstitute/scripts.pory"
+# 444 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 423 "data//maps/RangerInstitute/scripts.pory"
+# 445 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_NPC_1_Text_0
-# 424 "data//maps/RangerInstitute/scripts.pory"
+# 446 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_2::
-# 428 "data//maps/RangerInstitute/scripts.pory"
+# 450 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 429 "data//maps/RangerInstitute/scripts.pory"
+# 451 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 430 "data//maps/RangerInstitute/scripts.pory"
+# 452 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_NPC_2_Text_0
-# 431 "data//maps/RangerInstitute/scripts.pory"
+# 453 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_3::
-# 435 "data//maps/RangerInstitute/scripts.pory"
+# 457 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 436 "data//maps/RangerInstitute/scripts.pory"
+# 458 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 437 "data//maps/RangerInstitute/scripts.pory"
+# 459 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_NPC_3_Text_0
-# 438 "data//maps/RangerInstitute/scripts.pory"
+# 460 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_2F_NPC_4::
-# 442 "data//maps/RangerInstitute/scripts.pory"
+# 464 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 443 "data//maps/RangerInstitute/scripts.pory"
+# 465 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 444 "data//maps/RangerInstitute/scripts.pory"
+# 466 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_2F_NPC_4_Text_0
-# 445 "data//maps/RangerInstitute/scripts.pory"
+# 467 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 
 RangerInstitute_Mon_Bayleef::
-# 472 "data//maps/RangerInstitute/scripts.pory"
+# 494 "data//maps/RangerInstitute/scripts.pory"
 	goto_if_set FLAG_RANGER_INSTITUTE_BAYLEEF, RangerInstitute_Mon_Bayleef_2
-# 475 "data//maps/RangerInstitute/scripts.pory"
+# 497 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 476 "data//maps/RangerInstitute/scripts.pory"
+# 498 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 477 "data//maps/RangerInstitute/scripts.pory"
+# 499 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_BAYLEEF, CRY_MODE_NORMAL
-# 478 "data//maps/RangerInstitute/scripts.pory"
+# 500 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_1
-# 479 "data//maps/RangerInstitute/scripts.pory"
+# 501 "data//maps/RangerInstitute/scripts.pory"
 	giveitem ITEM_MAX_REVIVE
-# 480 "data//maps/RangerInstitute/scripts.pory"
+# 502 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
-# 481 "data//maps/RangerInstitute/scripts.pory"
+# 503 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_2
-# 482 "data//maps/RangerInstitute/scripts.pory"
+# 504 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 RangerInstitute_Mon_Bayleef_1:
 	end
 
 RangerInstitute_Mon_Bayleef_2:
-# 473 "data//maps/RangerInstitute/scripts.pory"
+# 495 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_0, MSGBOX_NPC
 	goto RangerInstitute_Mon_Bayleef_1
 
 
 RangerInstitute_Mon_Palpitoad::
-# 487 "data//maps/RangerInstitute/scripts.pory"
+# 509 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
-# 488 "data//maps/RangerInstitute/scripts.pory"
+# 510 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Palpitoad_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Surskit::
-# 492 "data//maps/RangerInstitute/scripts.pory"
+# 514 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_MASQUERAIN, CRY_MODE_NORMAL
-# 493 "data//maps/RangerInstitute/scripts.pory"
+# 515 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Surskit_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Scyther::
-# 497 "data//maps/RangerInstitute/scripts.pory"
+# 519 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
-# 498 "data//maps/RangerInstitute/scripts.pory"
+# 520 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Scyther_Text_0, MSGBOX_NPC
 	end
 
@@ -710,239 +749,239 @@ RangerInstitute_1F_InterviewQ1_Movement_0:
 	emote_question_mark
 	step_end
 
-# 254 "data//maps/RangerInstitute/scripts.pory"
+# 276 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_1F_TriggerUpstairs_Movement_0:
-# 254 "data//maps/RangerInstitute/scripts.pory"
+# 276 "data//maps/RangerInstitute/scripts.pory"
 	face_left
-# 254 "data//maps/RangerInstitute/scripts.pory"
+# 276 "data//maps/RangerInstitute/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 258 "data//maps/RangerInstitute/scripts.pory"
+# 280 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_1F_TriggerUpstairs_Movement_1:
-# 258 "data//maps/RangerInstitute/scripts.pory"
+# 280 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
 	step_end
 
-# 260 "data//maps/RangerInstitute/scripts.pory"
+# 282 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_1F_TriggerUpstairs_Movement_2:
-# 260 "data//maps/RangerInstitute/scripts.pory"
+# 282 "data//maps/RangerInstitute/scripts.pory"
 	face_down
 	step_end
 
-# 288 "data//maps/RangerInstitute/scripts.pory"
+# 310 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_Trigger0_Movement_0:
-# 288 "data//maps/RangerInstitute/scripts.pory"
+# 310 "data//maps/RangerInstitute/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 290 "data//maps/RangerInstitute/scripts.pory"
+# 312 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_Trigger0_Movement_1:
-# 290 "data//maps/RangerInstitute/scripts.pory"
+# 312 "data//maps/RangerInstitute/scripts.pory"
 	face_up
 	step_end
 
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_Trigger0_Movement_2:
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 296 "data//maps/RangerInstitute/scripts.pory"
+# 318 "data//maps/RangerInstitute/scripts.pory"
 	face_down
 	step_end
 
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_Trigger0_Movement_3:
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 297 "data//maps/RangerInstitute/scripts.pory"
+# 319 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
 	step_end
 
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_Trigger1_Movement_0:
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_up
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 321 "data//maps/RangerInstitute/scripts.pory"
+# 343 "data//maps/RangerInstitute/scripts.pory"
 	face_left
 	step_end
 
-# 333 "data//maps/RangerInstitute/scripts.pory"
+# 355 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_0:
-# 333 "data//maps/RangerInstitute/scripts.pory"
+# 355 "data//maps/RangerInstitute/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 340 "data//maps/RangerInstitute/scripts.pory"
+# 362 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_1:
-# 340 "data//maps/RangerInstitute/scripts.pory"
+# 362 "data//maps/RangerInstitute/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 347 "data//maps/RangerInstitute/scripts.pory"
+# 369 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_2:
-# 347 "data//maps/RangerInstitute/scripts.pory"
+# 369 "data//maps/RangerInstitute/scripts.pory"
 	emote_exclamation_mark
-# 347 "data//maps/RangerInstitute/scripts.pory"
+# 369 "data//maps/RangerInstitute/scripts.pory"
 	jump_in_place_left
-# 347 "data//maps/RangerInstitute/scripts.pory"
+# 369 "data//maps/RangerInstitute/scripts.pory"
 	jump_in_place_left
-# 347 "data//maps/RangerInstitute/scripts.pory"
+# 369 "data//maps/RangerInstitute/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 351 "data//maps/RangerInstitute/scripts.pory"
+# 373 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_3:
-# 351 "data//maps/RangerInstitute/scripts.pory"
+# 373 "data//maps/RangerInstitute/scripts.pory"
 	emote_exclamation_mark
-# 351 "data//maps/RangerInstitute/scripts.pory"
+# 373 "data//maps/RangerInstitute/scripts.pory"
 	face_right
 	step_end
 
-# 363 "data//maps/RangerInstitute/scripts.pory"
+# 385 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_4:
-# 363 "data//maps/RangerInstitute/scripts.pory"
+# 385 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 363 "data//maps/RangerInstitute/scripts.pory"
+# 385 "data//maps/RangerInstitute/scripts.pory"
 	face_down
 	step_end
 
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_5:
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 379 "data//maps/RangerInstitute/scripts.pory"
+# 401 "data//maps/RangerInstitute/scripts.pory"
 	face_right
 	step_end
 
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 RangerInstitute_2F_EventScript_Welcome_Movement_6:
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_right
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_down
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
-# 380 "data//maps/RangerInstitute/scripts.pory"
+# 402 "data//maps/RangerInstitute/scripts.pory"
 	walk_left
 	step_end
 
@@ -1166,25 +1205,35 @@ RangerInstitute_1F_NPC3_Text_0:
 	.string "no easy task, let me tell you.$"
 
 RangerInstitute_1F_BlockerBasement_Text_0:
-# 230 "data//maps/RangerInstitute/scripts.pory"
-	.string "Sorry, this area is closed off for\n"
-	.string "repairs.$"
+# 229 "data//maps/RangerInstitute/scripts.pory"
+	.string "Welcome to the Ranger TM Store!\p"
+	.string "...\p"
+	.string "You're not a Ranger?\p"
+	.string "Sorry, this for Pokemon Rangers only.$"
+
+RangerInstitute_1F_BlockerBasement_Text_1:
+# 239 "data//maps/RangerInstitute/scripts.pory"
+	.string "Welcome to the Ranger TM Store!$"
+
+RangerInstitute_1F_BlockerBasement_Text_2:
+# 242 "data//maps/RangerInstitute/scripts.pory"
+	.string "See you another time, Ranger!$"
 
 RangerInstitute_1F_BlockerUpstairs_Text_0:
-# 237 "data//maps/RangerInstitute/scripts.pory"
+# 259 "data//maps/RangerInstitute/scripts.pory"
 	.string "Sorry, only Pokémon Rangers are allowed\n"
 	.string "inside. If you'd like to apply, you can\l"
 	.string "print an application form using the PC\l"
 	.string "by the entrance.$"
 
 RangerInstitute_1F_BlockerUpstairs_Text_1:
-# 245 "data//maps/RangerInstitute/scripts.pory"
+# 267 "data//maps/RangerInstitute/scripts.pory"
 	.string "You're not a fully-fledged Pokémon\n"
 	.string "Ranger yet - just a Recruit! So I'll be\l"
 	.string "keeping an eye on you.$"
 
 RangerInstitute_2F_Trigger0_Text_0:
-# 292 "data//maps/RangerInstitute/scripts.pory"
+# 314 "data//maps/RangerInstitute/scripts.pory"
 	.string "A new Ranger Recruit? Welcome to the\n"
 	.string "Ranger Institute, recruit! It's been a\l"
 	.string "while since someone passed our\l"
@@ -1193,7 +1242,7 @@ RangerInstitute_2F_Trigger0_Text_0:
 	.string "to Ravine, the Institute Head.$"
 
 RangerInstitute_2F_Trigger1_Text_0:
-# 316 "data//maps/RangerInstitute/scripts.pory"
+# 338 "data//maps/RangerInstitute/scripts.pory"
 	.string "A new Ranger Recruit? Welcome to the\n"
 	.string "Ranger Institute, recruit! It's been a\l"
 	.string "while since someone passed our\l"
@@ -1202,34 +1251,34 @@ RangerInstitute_2F_Trigger1_Text_0:
 	.string "to RAVINE, the Institute Director.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_0:
-# 335 "data//maps/RangerInstitute/scripts.pory"
+# 357 "data//maps/RangerInstitute/scripts.pory"
 	.string "Director RAVINE! Meet {PLAYER}, our\n"
 	.string "newest Recruit.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_1:
-# 338 "data//maps/RangerInstitute/scripts.pory"
+# 360 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Hmm...yes...\p"
 	.string "...\p"
 	.string "...yes this is -$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_2:
-# 342 "data//maps/RangerInstitute/scripts.pory"
+# 364 "data//maps/RangerInstitute/scripts.pory"
 	.string "Director RAVINE!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_3:
-# 345 "data//maps/RangerInstitute/scripts.pory"
+# 367 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE:...ahh...hmm...$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_4:
-# 349 "data//maps/RangerInstitute/scripts.pory"
+# 371 "data//maps/RangerInstitute/scripts.pory"
 	.string "DIRECTOR RAVINE!!!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_5:
-# 353 "data//maps/RangerInstitute/scripts.pory"
+# 375 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Yes! Yes! What is it!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_6:
-# 357 "data//maps/RangerInstitute/scripts.pory"
+# 379 "data//maps/RangerInstitute/scripts.pory"
 	.string "Sigh...\n"
 	.string "Director Ravine! Meet {PLAYER}, our\l"
 	.string "newest recruit.\p"
@@ -1237,7 +1286,7 @@ RangerInstitute_2F_EventScript_Welcome_Text_6:
 	.string "Director, you were daydreaming again!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_7:
-# 361 "data//maps/RangerInstitute/scripts.pory"
+# 383 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: No I was most definitely not,\n"
 	.string "how dare you? I was -ahem- deep in my\l"
 	.string "research.\p"
@@ -1250,17 +1299,17 @@ RangerInstitute_2F_EventScript_Welcome_Text_7:
 	.string "Pokémon Rangers do?$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_8:
-# 365 "data//maps/RangerInstitute/scripts.pory"
+# 387 "data//maps/RangerInstitute/scripts.pory"
 	.string "Psst...Director, the bike and stuff.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_9:
-# 369 "data//maps/RangerInstitute/scripts.pory"
+# 391 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Ah yes! As part of your welcome\n"
 	.string "package, the Ranger Institute is\l"
 	.string "pleased to provide you with these!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_10:
-# 373 "data//maps/RangerInstitute/scripts.pory"
+# 395 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: The Ranger Bike and Ranger\n"
 	.string "Card - the two emblems of a Pokémon\l"
 	.string "Ranger in Cormoria! The Ranger Bike will\l"
@@ -1271,12 +1320,12 @@ RangerInstitute_2F_EventScript_Welcome_Text_10:
 	.string "Ranger Institutes with this.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_11:
-# 376 "data//maps/RangerInstitute/scripts.pory"
+# 398 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Now, do you know what we\n"
 	.string "Pokémon Rangers do? No? Follow me.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_12:
-# 381 "data//maps/RangerInstitute/scripts.pory"
+# 403 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: As Pokémon Rangers, our job is\n"
 	.string "to protect nature and maintain harmony\l"
 	.string "between people, Pokémon, and the\l"
@@ -1291,7 +1340,7 @@ RangerInstitute_2F_EventScript_Welcome_Text_12:
 	.string "worthwhile.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_13:
-# 383 "data//maps/RangerInstitute/scripts.pory"
+# 405 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: But none of that for you just\n"
 	.string "yet! You have to earn your stripes here.\l"
 	.string "As a Ranger Recruit, you'll have to\l"
@@ -1299,14 +1348,14 @@ RangerInstitute_2F_EventScript_Welcome_Text_13:
 	.string "ranking.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_14:
-# 386 "data//maps/RangerInstitute/scripts.pory"
+# 408 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: Now, I have some important\n"
 	.string "items that the Ranger Institute at Ivy\l"
 	.string "River wants. Your first mission will be\l"
 	.string "to deliver this to them!$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_15:
-# 394 "data//maps/RangerInstitute/scripts.pory"
+# 416 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: If you complete this mission,\n"
 	.string "you'll rank up from Recruit to\l"
 	.string "Candidate. The Ranger Institute at Ivy\l"
@@ -1316,54 +1365,54 @@ RangerInstitute_2F_EventScript_Welcome_Text_15:
 	.string "training for a recruit, eh?$"
 
 RangerInstitute_Ravine_Text_0:
-# 415 "data//maps/RangerInstitute/scripts.pory"
+# 437 "data//maps/RangerInstitute/scripts.pory"
 	.string "RAVINE: How's my newest Recruit doing?\n"
 	.string "Have you delivered the package yet?$"
 
 RangerInstitute_2F_NPC_1_Text_0:
-# 423 "data//maps/RangerInstitute/scripts.pory"
+# 445 "data//maps/RangerInstitute/scripts.pory"
 	.string "Director Ravine has a bad habit of\n"
 	.string "daydreaming at work...$"
 
 RangerInstitute_2F_NPC_2_Text_0:
-# 430 "data//maps/RangerInstitute/scripts.pory"
+# 452 "data//maps/RangerInstitute/scripts.pory"
 	.string "Hello there, new recruit! Wanna see what\n"
 	.string "I'm working on? I'm analysing the\l"
 	.string "weather patterns in Cormoria. I stay on\l"
 	.string "the lookout for any unnatural changes.$"
 
 RangerInstitute_2F_NPC_3_Text_0:
-# 437 "data//maps/RangerInstitute/scripts.pory"
+# 459 "data//maps/RangerInstitute/scripts.pory"
 	.string "Gah! I hate being on inventory duty. I\n"
 	.string "miss the field!$"
 
 RangerInstitute_2F_NPC_4_Text_0:
-# 444 "data//maps/RangerInstitute/scripts.pory"
+# 466 "data//maps/RangerInstitute/scripts.pory"
 	.string "How's it going, {PLAYER}?$"
 
 RangerInstitute_Mon_Bayleef_Text_0:
-# 473 "data//maps/RangerInstitute/scripts.pory"
+# 495 "data//maps/RangerInstitute/scripts.pory"
 	.string "Bayleef is singing happily!$"
 
 RangerInstitute_Mon_Bayleef_Text_1:
-# 478 "data//maps/RangerInstitute/scripts.pory"
+# 500 "data//maps/RangerInstitute/scripts.pory"
 	.string "Bayleef is singing happily! It snuggles\n"
 	.string "upto you and gives you something...$"
 
 RangerInstitute_Mon_Bayleef_Text_2:
-# 481 "data//maps/RangerInstitute/scripts.pory"
+# 503 "data//maps/RangerInstitute/scripts.pory"
 	.string "Thanks Bayleef!$"
 
 RangerInstitute_Mon_Palpitoad_Text_0:
-# 488 "data//maps/RangerInstitute/scripts.pory"
+# 510 "data//maps/RangerInstitute/scripts.pory"
 	.string "Palpitoad grunts and waddles around. It\n"
 	.string "seems upset...$"
 
 RangerInstitute_Mon_Surskit_Text_0:
-# 493 "data//maps/RangerInstitute/scripts.pory"
+# 515 "data//maps/RangerInstitute/scripts.pory"
 	.string "Masquerain wants to be in the water!$"
 
 RangerInstitute_Mon_Scyther_Text_0:
-# 498 "data//maps/RangerInstitute/scripts.pory"
+# 520 "data//maps/RangerInstitute/scripts.pory"
 	.string "Scyther looks as bummed out as its\n"
 	.string "trainer!$"

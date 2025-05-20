@@ -130,7 +130,7 @@
       "flag": "FLAG_LILYPOND_FISHERMAN_QUEST_START"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 27,
       "y": 52,
       "elevation": 0,
@@ -138,7 +138,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM02",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_LILY_POND_B"
     },

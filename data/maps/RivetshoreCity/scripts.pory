@@ -321,7 +321,8 @@ script RivetshoreCity_Market_Shop_1{
 	release
 	end
 }
-//market 2
+
+//market 2 - TMs
 script RivetshoreCity_Market_Shop_2{
     lock
 	faceplayer
@@ -332,6 +333,8 @@ script RivetshoreCity_Market_Shop_2{
 	release
 	end
 }
+
+
 //secret market
 script RivetshoreCity_Market_Shop_Secret{
     lock
@@ -350,18 +353,16 @@ mart RivetshoreCity_Mart_1{
     ITEM_FULL_RESTORE
     ITEM_FULL_HEAL
 }
+
 mart RivetshoreCity_Mart_2{
-    ITEM_TM11
+    ITEM_TM04
     ITEM_TM15
-    ITEM_TM16
-    ITEM_TM17
-    ITEM_TM18
-    ITEM_TM19
-    ITEM_TM20
-    ITEM_TM19
-    ITEM_TM20
-    ITEM_TM21
+    ITEM_TM24
+    ITEM_TM30
+    ITEM_TM35
+    ITEM_TM38
 }
+
 mart RivetshoreCity_Mart_Secret{
     ITEM_GALARICA_CUFF
     ITEM_GALARICA_WREATH

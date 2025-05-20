@@ -422,85 +422,77 @@ RivetshoreCity_Market_Shop_1::
 
 
 RivetshoreCity_Market_Shop_2::
-# 326 "data//maps/RivetshoreCity/scripts.pory"
-	lock
 # 327 "data//maps/RivetshoreCity/scripts.pory"
-	faceplayer
+	lock
 # 328 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
+	faceplayer
 # 329 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 330 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_2
+	waitmessage
 # 331 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart RivetshoreCity_Mart_2
 # 332 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 333 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 RivetshoreCity_Market_Shop_Secret::
-# 337 "data//maps/RivetshoreCity/scripts.pory"
-	lock
-# 338 "data//maps/RivetshoreCity/scripts.pory"
-	faceplayer
-# 339 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
 # 340 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	lock
 # 341 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_Secret
+	faceplayer
 # 342 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	message gText_HowMayIServeYou
 # 343 "data//maps/RivetshoreCity/scripts.pory"
+	waitmessage
+# 344 "data//maps/RivetshoreCity/scripts.pory"
+	pokemart RivetshoreCity_Mart_Secret
+# 345 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 346 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 347 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_1:
-# 348 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_HYPER_POTION
-# 349 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
 # 350 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
+RivetshoreCity_Mart_1:
 # 351 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_HYPER_POTION
+# 352 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_MAX_REVIVE
+# 353 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 354 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_NONE
 
 	.align 2
-# 353 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_2:
-# 354 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM11
-# 355 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM15
-# 356 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM16
 # 357 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM17
+RivetshoreCity_Mart_2:
 # 358 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM18
+	.2byte ITEM_TM04
 # 359 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM19
+	.2byte ITEM_TM15
 # 360 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM20
+	.2byte ITEM_TM24
 # 361 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM19
+	.2byte ITEM_TM30
 # 362 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM20
+	.2byte ITEM_TM35
 # 363 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM21
+	.2byte ITEM_TM38
 	.2byte ITEM_NONE
 
 	.align 2
-# 365 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 366 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 367 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_GALARICA_CUFF
+# 368 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
 	.2byte ITEM_NONE
 

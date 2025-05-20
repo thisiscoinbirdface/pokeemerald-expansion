@@ -261,14 +261,6 @@
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
-      "type": "hidden_item",
-      "x": 9,
-      "y": 29,
-      "elevation": 0,
-      "item": "ITEM_PARALYZE_HEAL",
-      "flag": "FLAG_HIDDEN_ITEM_FENNILAHL_TOWN_A"
-    },
-    {
       "type": "sign",
       "x": 25,
       "y": 21,

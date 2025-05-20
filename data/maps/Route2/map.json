@@ -110,6 +110,14 @@
       "elevation": 0,
       "item": "ITEM_POTION",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE2_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 16,
+      "y": 4,
+      "elevation": 0,
+      "item": "ITEM_PARALYZE_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_FENNILAHL_TOWN_A"
     }
   ]
 }
