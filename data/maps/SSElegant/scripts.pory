@@ -110,7 +110,9 @@ script SSElegant_Raazi{
     removeobject(5)
     removeobject(6)
     removeobject(7)
+
     //end
+    setvar(VAR_SSELEGANT_CUTSCENES, 1)
     setflag(FLAG_RAAZI_BEATEN)
 
     releaseall
@@ -133,7 +135,7 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
         waitmovement(0)
 
         msgbox_delay("Gabrielle", format("You heard the announcement, right?\nWe've reached!\pThe gym leaders are getting off, but the crew won't let the civilians leave!\pWe've got to find a way past them somehow...but with just the two of us, I really don't know how we can do it...\p..."))
-        delay(48)
+        delay(24)
 
         //breech comes
         msgbox_delay("Breech", format("We'll help out!"))
@@ -222,7 +224,9 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
         special(RemoveCameraObject)
 
         //end
+        setvar(VAR_SSELEGANT_CUTSCENES, 2)
         setflag(FLAG_GAB_BREECH_TEAMUP)
+        clearflag(FLAG_HIDE_GAB_BREECH_STORAGE)
         releaseall
         end
     }

@@ -1,5 +1,167 @@
-mapscripts SSElegant_Storage_MapScripts{}
+mapscripts SSElegant_Storage_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_SSELEGANT_CUTSCENES, 2: SSElegant_Storage_GabConfronts
+        VAR_SSELEGANT_CUTSCENES, 4: SSElegant_Storage_Moonblast
+    ]
 
+    MAP_SCRIPT_ON_TRANSITION: SSElegant_Storage_SetPositions
+}
+
+script SSElegant_Storage_SetPositions{
+    if (var(VAR_SSELEGANT_CUTSCENES) == 2){
+        setobjectxyperm(1 ,10, 8)
+        setobjectxyperm(2 ,10, 9)
+        setobjectxyperm(3 ,10, 10)
+        setobjectxyperm(4 ,11, 9)
+
+        setobjectmovementtype(1, MOVEMENT_TYPE_FACE_RIGHT)
+        setobjectmovementtype(2, MOVEMENT_TYPE_FACE_RIGHT)
+        setobjectmovementtype(3, MOVEMENT_TYPE_FACE_RIGHT)
+        setobjectmovementtype(4, MOVEMENT_TYPE_FACE_RIGHT)
+    }
+
+    if (var(VAR_SSELEGANT_CUTSCENES) == 3){
+        setvar(VAR_SSELEGANT_CUTSCENES, 4)
+    }
+
+    if (var(VAR_SSELEGANT_CUTSCENES) == 4){
+        setobjectxyperm(8 ,14, 2)
+        setobjectxyperm(7 ,13, 2)     
+        setobjectmovementtype(8, MOVEMENT_TYPE_FACE_DOWN)
+        setobjectmovementtype(7, MOVEMENT_TYPE_FACE_DOWN)
+        setobjectmovementtype(OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_UP)                        
+        setmaplayoutindex(LAYOUT_SSELEGANT_STORAGE_BUSTED)
+    }
+
+    end
+}   
+
+script SSElegant_Storage_Moonblast{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(7, moves(face_down))
+    applymovement(8, moves(face_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Breech", format("We can jump out through this wall!\pClefable and I will go on ahead and make sure nobody's around.\pKeep your Pokemon hidden, okay?"))
+
+    //breech exit
+    applymovement(7, moves(walk_up))
+    applymovement(8, moves(walk_left))
+    waitmovement(0)
+    delay(8)
+
+    playse(SE_EXIT)
+    removeobject(7)
+
+    applymovement(8, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(8)
+
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox_delay("Clefable", format("cleee!!!"))
+
+    applymovement(8, moves(walk_up))
+    waitmovement(0)
+    delay(8)
+    
+    playse(SE_EXIT)
+    removeobject(8)
+
+    //setflags
+    setflag(FLAG_HIDE_GAB_BREECH_STORAGE)
+
+    //player exit
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+	setflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
+    warp(MAP_UNCHARTED_ISLAND, 6, 34)
+
+}
+
+script SSElegant_Storage_GabConfronts{
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up *3 face_left))
+    waitmovement(0)
+    delay(16)
+
+    msgbox_delay("Gabrielle", format("...and that's what Raazi wants you to do!"))
+    applymovement(4, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Sailor", format("Yes ma'am!\pAnd sir!"))
+
+    applymovement(5, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Gabrielle", format("Now hurry up and get outside, or it'll all fall apart!"))
+
+    applymovement(4, moves(face_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Sailor", format("C'mon, you lot! The Gym Leader's made us a special request.\pLet's get to it!"))
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    removeobject(2)
+    removeobject(3)
+    removeobject(4)
+    fadescreen(FADE_FROM_BLACK)
+
+
+    applymovement(5, moves(face_right))
+    applymovement(6, moves(face_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Gabrielle", format("Zoroark and I will go outside and keep them from entering the storage hold.\pYou two find a way out from here!\p...\p{PLAYER} - don't do anything stupid! And hide your Pokemon once you get off the ship, or the leaders might catch you.\p..."))    
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(7, moves(face_down))
+    applymovement(8, moves(face_down))
+    applymovement(6, moves(walk_down * 3 face_up))
+    applymovement(5, moves(walk_down * 2 walk_right face_up))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Gabrielle", format("Good luck!"))
+    applymovement(6, moves(walk_down))
+    applymovement(5, moves(walk_down))
+    waitmovement(0)
+
+    playse(SE_EXIT)
+    removeobject(5)
+    removeobject(6)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement(0)
+    delay(8)
+
+    msgbox_delay("Breech", format("Let's check out the back wall - I'm sure we can find a spot to break through!"))
+
+    //walk up to the busted wall
+    applymovement(8, moves(walk_up * 6))
+    applymovement(7, moves(walk_right walk_up * 5 walk_left walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right walk_up * 5 walk_left walk_up))
+    waitmovement(0)
+
+    msgbox_delay("Breech", format("This wall looks like it can be broken...Clefable, can you do it?"))
+
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox_delay("Clefable", "cleee!!!")
+
+    msgbox_delay("Breech", format("Clefable - use Moonblast!"))
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox_delay("Clefable", "cleee!!!")
+    playse(SE_SUPER_EFFECTIVE)
+
+    //set
+    setflag(FLAG_STORAGE_GAB_ZOROARK)
+    clearflag(FLAG_HIDE_GAB_BREECH_STORAGE)
+    setvar(VAR_SSELEGANT_CUTSCENES, 3)
+
+    //warpout
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    warp(MAP_SSELEGANT_STORAGE, VAR_TEMP_2, VAR_TEMP_3)
+    end
+}
 
 //setrespawn(HEAL_LOCATION_RIVETSHORE_CITY)
 //test
@@ -9,3 +171,12 @@ script SSElegant_Storage_Catcher1{
     delay(60)
     
 }
+
+
+
+
+
+
+
+//Run the cutscene
+
