@@ -74,7 +74,7 @@ script SSElegant_Raazi{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Raazi")
-    msgbox(format("The Drama Badge will let you use the HM Dive outside of battle. I'd also like to give you something we dug up in the quarry a while ago."))
+    msgbox(format("The Granite Badge will let you use the HM Dive outside of battle. I'd also like to give you something we dug up in the quarry a while ago."))
     //Give item also
     giveitem(ITEM_RARE_SHARD)
     speakername("Raazi")

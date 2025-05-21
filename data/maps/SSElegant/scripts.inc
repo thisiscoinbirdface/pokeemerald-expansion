@@ -71,62 +71,78 @@ SSElegant_Raazi::
 # 68 "data//maps/SSElegant/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 70 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Raazi_Text_6
+	speakername NULL
 # 71 "data//maps/SSElegant/scripts.pory"
-	release
+	msgbox SSElegant_Raazi_Text_6
 # 72 "data//maps/SSElegant/scripts.pory"
+	release
+# 73 "data//maps/SSElegant/scripts.pory"
 	setflag FLAG_BADGE08_GET
-# 75 "data//maps/SSElegant/scripts.pory"
-	speakername SSElegant_Raazi_Text_0
 # 76 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Raazi_Text_7
-# 78 "data//maps/SSElegant/scripts.pory"
-	giveitem ITEM_RARE_SHARD
-# 79 "data//maps/SSElegant/scripts.pory"
 	speakername SSElegant_Raazi_Text_0
+# 77 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Raazi_Text_7
+# 79 "data//maps/SSElegant/scripts.pory"
+	giveitem ITEM_RARE_SHARD
 # 80 "data//maps/SSElegant/scripts.pory"
+	speakername SSElegant_Raazi_Text_0
+# 81 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Raazi_Text_8
-# 83 "data//maps/SSElegant/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Raazi_Movement_7
-# 84 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_7
+# 82 "data//maps/SSElegant/scripts.pory"
+	release
 # 85 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Raazi_Movement_7
 # 86 "data//maps/SSElegant/scripts.pory"
-	delay 16
-# 89 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_9, SSElegant_Raazi_Text_10
-# 90 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_11
-# 93 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_8
-# 94 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_AG, SSElegant_Raazi_Movement_8
-# 95 "data//maps/SSElegant/scripts.pory"
-	applymovement 4, SSElegant_Raazi_Movement_9
-# 96 "data//maps/SSElegant/scripts.pory"
-	applymovement 6, SSElegant_Raazi_Movement_9
-# 97 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_7
+# 87 "data//maps/SSElegant/scripts.pory"
 	waitmovement 0
-# 99 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_RAAZI
-# 100 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_AG
+# 88 "data//maps/SSElegant/scripts.pory"
+	delay 16
+# 91 "data//maps/SSElegant/scripts.pory"
+	msgbox_delay SSElegant_Raazi_Text_9, SSElegant_Raazi_Text_10
+# 93 "data//maps/SSElegant/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Raazi_Movement_8
+# 94 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_9
+# 95 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
+# 96 "data//maps/SSElegant/scripts.pory"
+	delay 16
+# 98 "data//maps/SSElegant/scripts.pory"
+	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_11
 # 101 "data//maps/SSElegant/scripts.pory"
-	removeobject 4
+	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_10
 # 102 "data//maps/SSElegant/scripts.pory"
-	removeobject 6
+	applymovement LOCALID_AG, SSElegant_Raazi_Movement_10
+# 103 "data//maps/SSElegant/scripts.pory"
+	applymovement 4, SSElegant_Raazi_Movement_11
 # 104 "data//maps/SSElegant/scripts.pory"
+	applymovement 6, SSElegant_Raazi_Movement_11
+# 105 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
+# 107 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_RAAZI
+# 108 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_AG
+# 109 "data//maps/SSElegant/scripts.pory"
+	removeobject 4
+# 110 "data//maps/SSElegant/scripts.pory"
+	removeobject 5
+# 111 "data//maps/SSElegant/scripts.pory"
+	removeobject 6
+# 112 "data//maps/SSElegant/scripts.pory"
+	removeobject 7
+# 114 "data//maps/SSElegant/scripts.pory"
 	setflag FLAG_RAAZI_BEATEN
-# 106 "data//maps/SSElegant/scripts.pory"
+# 116 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Gab_Breech_TeamUp_Trigger::
-# 111 "data//maps/SSElegant/scripts.pory"
+# 121 "data//maps/SSElegant/scripts.pory"
 	goto_if_set FLAG_GAB_BREECH_TEAMUP, SSElegant_Gab_Breech_TeamUp_Trigger_2
-# 113 "data//maps/SSElegant/scripts.pory"
+# 123 "data//maps/SSElegant/scripts.pory"
 	goto_if_set FLAG_RAAZI_BEATEN, SSElegant_Gab_Breech_TeamUp_Trigger_5
 	end
 
@@ -134,68 +150,52 @@ SSElegant_Gab_Breech_TeamUp_Trigger_2:
 	end
 
 SSElegant_Gab_Breech_TeamUp_Trigger_5:
-# 114 "data//maps/SSElegant/scripts.pory"
+# 124 "data//maps/SSElegant/scripts.pory"
 	lockall
-# 115 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_1
-# 116 "data//maps/SSElegant/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_SPECIES ( ZOROARK_HISUI )
-# 118 "data//maps/SSElegant/scripts.pory"
-	addobject LOCALID_GAB
-# 119 "data//maps/SSElegant/scripts.pory"
-	addobject LOCALID_ZORO
-# 121 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0
-# 122 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0
-# 123 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
 # 125 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_2
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_1
 # 126 "data//maps/SSElegant/scripts.pory"
-	delay 48
+	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_SPECIES ( ZOROARK_HISUI )
+# 128 "data//maps/SSElegant/scripts.pory"
+	addobject LOCALID_GAB
 # 129 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_4
-# 130 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_1
+	addobject LOCALID_ZORO
 # 131 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_2
+	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0
 # 132 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0
 # 133 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	waitmovement 0
 # 135 "data//maps/SSElegant/scripts.pory"
-	addobject LOCALID_BREECH
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_2
 # 136 "data//maps/SSElegant/scripts.pory"
-	addobject LOCALID_CLEF
-# 138 "data//maps/SSElegant/scripts.pory"
-	special SpawnCameraObject
+	delay 48
 # 139 "data//maps/SSElegant/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_3
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_4
 # 140 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_1
+# 141 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_2
 # 142 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4
+	waitmovement 0
 # 143 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4
-# 144 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	delay 16
+# 145 "data//maps/SSElegant/scripts.pory"
+	addobject LOCALID_BREECH
 # 146 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_5
-# 147 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	addobject LOCALID_CLEF
 # 148 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	special SpawnCameraObject
 # 149 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_5
-# 151 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_6
-# 152 "data//maps/SSElegant/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_3
+# 150 "data//maps/SSElegant/scripts.pory"
 	waitmovement 0
+# 152 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4
 # 153 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4
 # 154 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_6
+	waitmovement 0
 # 156 "data//maps/SSElegant/scripts.pory"
 	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_5
 # 157 "data//maps/SSElegant/scripts.pory"
@@ -203,114 +203,130 @@ SSElegant_Gab_Breech_TeamUp_Trigger_5:
 # 158 "data//maps/SSElegant/scripts.pory"
 	delay 16
 # 159 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_7
-# 160 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_8
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_5
 # 161 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_9
+	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_6
 # 162 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_10
+	waitmovement 0
+# 163 "data//maps/SSElegant/scripts.pory"
+	delay 16
 # 164 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_11
-# 165 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_12
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_6
+# 166 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_5
 # 167 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_7
+	waitmovement 0
 # 168 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	delay 16
 # 169 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_7
 # 170 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_13
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_8
 # 171 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_14
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_9
 # 172 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_8
-# 173 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_10
 # 174 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_11
 # 175 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_15
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_12
 # 177 "data//maps/SSElegant/scripts.pory"
-	playse SE_EXIT
+	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_7
+# 178 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
 # 179 "data//maps/SSElegant/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LEADER_RAAZI
+	delay 16
 # 180 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_ZORO
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_13
 # 181 "data//maps/SSElegant/scripts.pory"
-	addobject LOCALID_ZORO
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_14
 # 182 "data//maps/SSElegant/scripts.pory"
-	setobjectxy LOCALID_ZORO, 22, 14
+	applymovement LOCALID_GAB, SSElegant_Raazi_Movement_8
 # 183 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
+# 184 "data//maps/SSElegant/scripts.pory"
 	delay 16
 # 185 "data//maps/SSElegant/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_9
-# 186 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_10
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_15
 # 187 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_10
-# 188 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	playse SE_EXIT
 # 189 "data//maps/SSElegant/scripts.pory"
-	delay 16
+	setvar VAR_OBJ_GFX_ID_A, OBJ_EVENT_GFX_LEADER_RAAZI
+# 190 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_ZORO
 # 191 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_16
+	addobject LOCALID_ZORO
 # 192 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_17
+	setobjectxy LOCALID_ZORO, 22, 14
 # 193 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_11
-# 194 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
-# 195 "data//maps/SSElegant/scripts.pory"
 	delay 16
+# 195 "data//maps/SSElegant/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_8
 # 196 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_18
+	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_9
+# 197 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_9
+# 198 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
 # 199 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_12
-# 200 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_13
+	delay 16
 # 201 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_14
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_16
 # 202 "data//maps/SSElegant/scripts.pory"
-	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_15
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_3, SSElegant_Gab_Breech_TeamUp_Trigger_Text_17
 # 203 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_10
+# 204 "data//maps/SSElegant/scripts.pory"
 	waitmovement 0
 # 205 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_BREECH
+	delay 16
 # 206 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_CLEF
-# 207 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_GAB
-# 208 "data//maps/SSElegant/scripts.pory"
-	removeobject LOCALID_ZORO
+	msgbox_delay SSElegant_Gab_Breech_TeamUp_Trigger_Text_0, SSElegant_Gab_Breech_TeamUp_Trigger_Text_18
+# 209 "data//maps/SSElegant/scripts.pory"
+	applymovement LOCALID_BREECH, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_11
 # 210 "data//maps/SSElegant/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_16
+	applymovement LOCALID_CLEF, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_12
 # 211 "data//maps/SSElegant/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GAB, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_13
 # 212 "data//maps/SSElegant/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_ZORO, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_14
+# 213 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
 # 215 "data//maps/SSElegant/scripts.pory"
-	setflag FLAG_GAB_BREECH_TEAMUP
+	removeobject LOCALID_BREECH
 # 216 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_CLEF
+# 217 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_GAB
+# 218 "data//maps/SSElegant/scripts.pory"
+	removeobject LOCALID_ZORO
+# 220 "data//maps/SSElegant/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, SSElegant_Gab_Breech_TeamUp_Trigger_Movement_15
+# 221 "data//maps/SSElegant/scripts.pory"
+	waitmovement 0
+# 222 "data//maps/SSElegant/scripts.pory"
+	special RemoveCameraObject
+# 225 "data//maps/SSElegant/scripts.pory"
+	setflag FLAG_GAB_BREECH_TEAMUP
+# 226 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Aggron::
-# 251 "data//maps/SSElegant/scripts.pory"
+# 261 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_AGGRON, CRY_MODE_NORMAL
-# 252 "data//maps/SSElegant/scripts.pory"
+# 262 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_Jania::
-# 257 "data//maps/SSElegant/scripts.pory"
+# 267 "data//maps/SSElegant/scripts.pory"
 	trainerbattle_single TRAINER_SSELEGANT_JANIA, SSElegant_Jania_Text_0, SSElegant_Jania_Text_1
-# 258 "data//maps/SSElegant/scripts.pory"
+# 268 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Jania_Text_2
-# 259 "data//maps/SSElegant/scripts.pory"
+# 269 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
@@ -320,9 +336,9 @@ SSElegant_Inger::
 
 
 SSElegant_Minior::
-# 267 "data//maps/SSElegant/scripts.pory"
+# 277 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
-# 268 "data//maps/SSElegant/scripts.pory"
+# 278 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
@@ -332,33 +348,33 @@ SSElegant_Ariana::
 
 
 SSElegant_Tauros::
-# 276 "data//maps/SSElegant/scripts.pory"
+# 286 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 277 "data//maps/SSElegant/scripts.pory"
+# 287 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC1::
-# 283 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
-	end
-
-
-SSElegant_NPC2::
-# 288 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
-	end
-
-
-SSElegant_NPC3::
 # 293 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
 
-SSElegant_NPC4::
+SSElegant_NPC2::
 # 298 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+	end
+
+
+SSElegant_NPC3::
+# 303 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+	end
+
+
+SSElegant_NPC4::
+# 308 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
@@ -429,281 +445,287 @@ SSElegant_Raazi_Movement_6:
 	walk_left
 	step_end
 
-# 83 "data//maps/SSElegant/scripts.pory"
+# 85 "data//maps/SSElegant/scripts.pory"
 SSElegant_Raazi_Movement_7:
-# 83 "data//maps/SSElegant/scripts.pory"
+# 85 "data//maps/SSElegant/scripts.pory"
 	emote_exclamation_mark
-# 83 "data//maps/SSElegant/scripts.pory"
+# 85 "data//maps/SSElegant/scripts.pory"
 	face_down
 	step_end
 
 # 93 "data//maps/SSElegant/scripts.pory"
 SSElegant_Raazi_Movement_8:
 # 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 93 "data//maps/SSElegant/scripts.pory"
-	walk_down
-	step_end
-
-# 95 "data//maps/SSElegant/scripts.pory"
-SSElegant_Raazi_Movement_9:
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_right
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 95 "data//maps/SSElegant/scripts.pory"
-	walk_down
-	step_end
-
-# 121 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0:
-# 121 "data//maps/SSElegant/scripts.pory"
-	walk_up
-# 121 "data//maps/SSElegant/scripts.pory"
-	walk_up
-# 121 "data//maps/SSElegant/scripts.pory"
-	walk_up
-# 121 "data//maps/SSElegant/scripts.pory"
-	walk_up
-	step_end
-
-# 130 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_1:
-# 130 "data//maps/SSElegant/scripts.pory"
-	emote_question_mark
-# 130 "data//maps/SSElegant/scripts.pory"
-	face_down
-	step_end
-
-# 131 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_2:
-# 131 "data//maps/SSElegant/scripts.pory"
-	face_down
-	step_end
-
-# 139 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_3:
-# 139 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 139 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 139 "data//maps/SSElegant/scripts.pory"
-	walk_down
-	step_end
-
-# 142 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4:
-# 142 "data//maps/SSElegant/scripts.pory"
-	walk_up
-# 142 "data//maps/SSElegant/scripts.pory"
-	walk_up
-	step_end
-
-# 146 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_5:
-# 146 "data//maps/SSElegant/scripts.pory"
-	emote_exclamation_mark
-	step_end
-
-# 151 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_6:
-# 151 "data//maps/SSElegant/scripts.pory"
-	jump_in_place_up
-	step_end
-
-# 167 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_7:
-# 167 "data//maps/SSElegant/scripts.pory"
-	emote_question_mark
-	step_end
-
-# 172 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_8:
-# 172 "data//maps/SSElegant/scripts.pory"
 	face_right
 	step_end
 
-# 185 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_9:
-# 185 "data//maps/SSElegant/scripts.pory"
-	jump_in_place_down
-# 185 "data//maps/SSElegant/scripts.pory"
+# 94 "data//maps/SSElegant/scripts.pory"
+SSElegant_Raazi_Movement_9:
+# 94 "data//maps/SSElegant/scripts.pory"
+	face_left
+	step_end
+
+# 101 "data//maps/SSElegant/scripts.pory"
+SSElegant_Raazi_Movement_10:
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 101 "data//maps/SSElegant/scripts.pory"
+	walk_down
+	step_end
+
+# 103 "data//maps/SSElegant/scripts.pory"
+SSElegant_Raazi_Movement_11:
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_right
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 103 "data//maps/SSElegant/scripts.pory"
+	walk_down
+	step_end
+
+# 131 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_0:
+# 131 "data//maps/SSElegant/scripts.pory"
+	walk_up
+# 131 "data//maps/SSElegant/scripts.pory"
+	walk_up
+# 131 "data//maps/SSElegant/scripts.pory"
+	walk_up
+# 131 "data//maps/SSElegant/scripts.pory"
+	walk_up
+	step_end
+
+# 140 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_1:
+# 140 "data//maps/SSElegant/scripts.pory"
+	emote_question_mark
+# 140 "data//maps/SSElegant/scripts.pory"
+	face_down
+	step_end
+
+# 141 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_2:
+# 141 "data//maps/SSElegant/scripts.pory"
+	face_down
+	step_end
+
+# 149 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_3:
+# 149 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 149 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 149 "data//maps/SSElegant/scripts.pory"
+	walk_down
+	step_end
+
+# 152 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_4:
+# 152 "data//maps/SSElegant/scripts.pory"
+	walk_up
+# 152 "data//maps/SSElegant/scripts.pory"
+	walk_up
+	step_end
+
+# 156 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_5:
+# 156 "data//maps/SSElegant/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 186 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_10:
-# 186 "data//maps/SSElegant/scripts.pory"
+# 161 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_6:
+# 161 "data//maps/SSElegant/scripts.pory"
 	jump_in_place_up
-# 186 "data//maps/SSElegant/scripts.pory"
+	step_end
+
+# 177 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_7:
+# 177 "data//maps/SSElegant/scripts.pory"
+	emote_question_mark
+	step_end
+
+# 195 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_8:
+# 195 "data//maps/SSElegant/scripts.pory"
+	jump_in_place_down
+# 195 "data//maps/SSElegant/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 193 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_11:
-# 193 "data//maps/SSElegant/scripts.pory"
+# 196 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_9:
+# 196 "data//maps/SSElegant/scripts.pory"
+	jump_in_place_up
+# 196 "data//maps/SSElegant/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 203 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_10:
+# 203 "data//maps/SSElegant/scripts.pory"
 	face_up
 	step_end
 
-# 199 "data//maps/SSElegant/scripts.pory"
+# 209 "data//maps/SSElegant/scripts.pory"
+SSElegant_Gab_Breech_TeamUp_Trigger_Movement_11:
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 209 "data//maps/SSElegant/scripts.pory"
+	walk_down
+	step_end
+
+# 210 "data//maps/SSElegant/scripts.pory"
 SSElegant_Gab_Breech_TeamUp_Trigger_Movement_12:
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 199 "data//maps/SSElegant/scripts.pory"
+# 210 "data//maps/SSElegant/scripts.pory"
 	walk_down
 	step_end
 
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
 SSElegant_Gab_Breech_TeamUp_Trigger_Movement_13:
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 200 "data//maps/SSElegant/scripts.pory"
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 211 "data//maps/SSElegant/scripts.pory"
+	walk_down
+# 211 "data//maps/SSElegant/scripts.pory"
 	walk_down
 	step_end
 
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 SSElegant_Gab_Breech_TeamUp_Trigger_Movement_14:
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_left
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
+	walk_left
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
-# 201 "data//maps/SSElegant/scripts.pory"
+# 212 "data//maps/SSElegant/scripts.pory"
 	walk_down
 	step_end
 
-# 202 "data//maps/SSElegant/scripts.pory"
+# 220 "data//maps/SSElegant/scripts.pory"
 SSElegant_Gab_Breech_TeamUp_Trigger_Movement_15:
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_left
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-# 202 "data//maps/SSElegant/scripts.pory"
-	walk_down
-	step_end
-
-# 210 "data//maps/SSElegant/scripts.pory"
-SSElegant_Gab_Breech_TeamUp_Trigger_Movement_16:
-# 210 "data//maps/SSElegant/scripts.pory"
+# 220 "data//maps/SSElegant/scripts.pory"
 	walk_up
-# 210 "data//maps/SSElegant/scripts.pory"
+# 220 "data//maps/SSElegant/scripts.pory"
 	walk_up
-# 210 "data//maps/SSElegant/scripts.pory"
+# 220 "data//maps/SSElegant/scripts.pory"
 	walk_up
 	step_end
 
@@ -766,31 +788,31 @@ SSElegant_Raazi_Text_5:
 	.string "to award you with the Granite Badge.$"
 
 SSElegant_Raazi_Text_6:
-# 70 "data//maps/SSElegant/scripts.pory"
+# 71 "data//maps/SSElegant/scripts.pory"
 	.string "{PLAYER} received the Granite Badge\n"
 	.string "from Raazi.$"
 
 SSElegant_Raazi_Text_7:
-# 76 "data//maps/SSElegant/scripts.pory"
-	.string "The Drama Badge will let you use the HM\n"
-	.string "Dive outside of battle. I'd also like to\l"
-	.string "give you something we dug up in the\l"
+# 77 "data//maps/SSElegant/scripts.pory"
+	.string "The Granite Badge will let you use the\n"
+	.string "HM Dive outside of battle. I'd also like\l"
+	.string "to give you something we dug up in the\l"
 	.string "quarry a while ago.$"
 
 SSElegant_Raazi_Text_8:
-# 80 "data//maps/SSElegant/scripts.pory"
+# 81 "data//maps/SSElegant/scripts.pory"
 	.string "And now you've collected all eight gym\n"
 	.string "badges, {PLAYER}!\p"
 	.string "The last mountain in your path is the\n"
-	.string "Pokemon Championship, held every year\l"
-	.string "at -$"
+	.string "Pokemon Championship. They're held\l"
+	.string "every year at -$"
 
 SSElegant_Raazi_Text_9:
-# 89 "data//maps/SSElegant/scripts.pory"
+# 91 "data//maps/SSElegant/scripts.pory"
 	.string "S.S. Elegant$"
 
 SSElegant_Raazi_Text_10:
-# 89 "data//maps/SSElegant/scripts.pory"
+# 91 "data//maps/SSElegant/scripts.pory"
 	.string "ATTENTION ALL PASSENGERS.\p"
 	.string "THE S.S. ELEGANT WILL NOW BE MAKING A\n"
 	.string "BRIEF UNSCHEDULED STOP.\p"
@@ -800,7 +822,7 @@ SSElegant_Raazi_Text_10:
 	.string "ARE NOT PERMITTED TO DEBOARD THE SHIP.$"
 
 SSElegant_Raazi_Text_11:
-# 90 "data//maps/SSElegant/scripts.pory"
+# 98 "data//maps/SSElegant/scripts.pory"
 	.string "You may be aware of where the Gym\n"
 	.string "Leaders are going now.\p"
 	.string "I must warn you, {PLAYER}.\p"
@@ -811,15 +833,15 @@ SSElegant_Raazi_Text_11:
 	.string "Stay on the ship.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_0:
-# 115 "data//maps/SSElegant/scripts.pory"
+# 125 "data//maps/SSElegant/scripts.pory"
 	.string "Gabrielle$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_1:
-# 115 "data//maps/SSElegant/scripts.pory"
+# 125 "data//maps/SSElegant/scripts.pory"
 	.string "{PLAYER}!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_2:
-# 125 "data//maps/SSElegant/scripts.pory"
+# 135 "data//maps/SSElegant/scripts.pory"
 	.string "You heard the announcement, right?\n"
 	.string "We've reached!\p"
 	.string "The gym leaders are getting off, but\n"
@@ -830,25 +852,25 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_2:
 	.string "...$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_3:
-# 129 "data//maps/SSElegant/scripts.pory"
+# 139 "data//maps/SSElegant/scripts.pory"
 	.string "Breech$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_4:
-# 129 "data//maps/SSElegant/scripts.pory"
+# 139 "data//maps/SSElegant/scripts.pory"
 	.string "We'll help out!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_5:
-# 149 "data//maps/SSElegant/scripts.pory"
+# 159 "data//maps/SSElegant/scripts.pory"
 	.string "It's you! The hiker with the Clefairy\n"
 	.string "near Fennilahl Town!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_6:
-# 154 "data//maps/SSElegant/scripts.pory"
+# 164 "data//maps/SSElegant/scripts.pory"
 	.string "You're the Team Somber grunt! You tried\n"
 	.string "to take Clefable's everstone!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_7:
-# 159 "data//maps/SSElegant/scripts.pory"
+# 169 "data//maps/SSElegant/scripts.pory"
 	.string "I-I uh...\p"
 	.string "...\p"
 	.string "Ahem.\p"
@@ -857,12 +879,12 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_7:
 	.string "We really are.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_8:
-# 160 "data//maps/SSElegant/scripts.pory"
+# 170 "data//maps/SSElegant/scripts.pory"
 	.string "Why are you helping {PLAYER}? Are you\n"
 	.string "still part of Team Somber?$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_9:
-# 161 "data//maps/SSElegant/scripts.pory"
+# 171 "data//maps/SSElegant/scripts.pory"
 	.string "No. I-uh...I got fired.\n"
 	.string "For helping {PLAYER} sneak into our\l"
 	.string "headquarters.\p"
@@ -871,7 +893,7 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_9:
 	.string "more like {PLAYER}.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_10:
-# 162 "data//maps/SSElegant/scripts.pory"
+# 172 "data//maps/SSElegant/scripts.pory"
 	.string "I guess both of us learned something\n"
 	.string "from {PLAYER}.\p"
 	.string "...\p"
@@ -880,27 +902,27 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_10:
 	.string "helping you do a good thing!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_11:
-# 164 "data//maps/SSElegant/scripts.pory"
+# 174 "data//maps/SSElegant/scripts.pory"
 	.string "So...we team up for now?$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_12:
-# 165 "data//maps/SSElegant/scripts.pory"
+# 175 "data//maps/SSElegant/scripts.pory"
 	.string "Yeah, we team up for now.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_13:
-# 170 "data//maps/SSElegant/scripts.pory"
+# 180 "data//maps/SSElegant/scripts.pory"
 	.string "So what's the plan?$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_14:
-# 171 "data//maps/SSElegant/scripts.pory"
+# 181 "data//maps/SSElegant/scripts.pory"
 	.string "This is the plan!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_15:
-# 175 "data//maps/SSElegant/scripts.pory"
+# 185 "data//maps/SSElegant/scripts.pory"
 	.string "Go on, Zoroark!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_16:
-# 191 "data//maps/SSElegant/scripts.pory"
+# 201 "data//maps/SSElegant/scripts.pory"
 	.string "Zoroark and I will go down to the\n"
 	.string "storage hold and distract the crew\l"
 	.string "there!\p"
@@ -908,33 +930,33 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_16:
 	.string "out through the hold.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_17:
-# 192 "data//maps/SSElegant/scripts.pory"
+# 202 "data//maps/SSElegant/scripts.pory"
 	.string "Okay, we'll do what we can.$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_18:
-# 196 "data//maps/SSElegant/scripts.pory"
+# 206 "data//maps/SSElegant/scripts.pory"
 	.string "Got it, {PLAYER}?\n"
 	.string "When you're ready, meet us at the\l"
 	.string "storage hold. Make sure you have\l"
 	.string "everything you need!$"
 
 SSElegant_Aggron_Text_0:
-# 252 "data//maps/SSElegant/scripts.pory"
+# 262 "data//maps/SSElegant/scripts.pory"
 	.string "Aggron glares at you.$"
 
 SSElegant_Jania_Text_0:
-# 257 "data//maps/SSElegant/scripts.pory"
+# 267 "data//maps/SSElegant/scripts.pory"
 	.string "What? A leader can't have any hobbies?$"
 
 SSElegant_Jania_Text_1:
-# 257 "data//maps/SSElegant/scripts.pory"
+# 267 "data//maps/SSElegant/scripts.pory"
 	.string "Back to drawing, Smeargle!$"
 
 SSElegant_Jania_Text_2:
-# 258 "data//maps/SSElegant/scripts.pory"
+# 268 "data//maps/SSElegant/scripts.pory"
 	.string "I don't get much free time, but when I\n"
 	.string "do, I enjoy painting.$"
 
 SSElegant_Minior_Text_0:
-# 268 "data//maps/SSElegant/scripts.pory"
+# 278 "data//maps/SSElegant/scripts.pory"
 	.string "$"
