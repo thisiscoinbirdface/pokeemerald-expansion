@@ -3,7 +3,16 @@ raw`
 `
 
 
-mapscripts UnchartedIsland_MapScripts{}
+mapscripts UnchartedIsland_MapScripts{    
+    MAP_SCRIPT_ON_TRANSITION: UnchartedIsland_OnTransition
+}
+
+
+//on transition
+script UnchartedIsland_OnTransition{
+    setrespawn(HEAL_LOCATION_UNCHARTED_ISLAND)
+    end
+}
 
 
 

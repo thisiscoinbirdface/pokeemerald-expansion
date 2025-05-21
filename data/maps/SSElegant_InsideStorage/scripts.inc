@@ -15,7 +15,7 @@ InsideStorage_OnResume:
 
 InsideStorage_SetFlags::
 	lockall
-	setdynamicwarp MAP_SSELEGANT_STORAGE, 1, 2
+	setdynamicwarp MAP_SSELEGANT_STORAGE, 2, 2
 	releaseall
 	end
 

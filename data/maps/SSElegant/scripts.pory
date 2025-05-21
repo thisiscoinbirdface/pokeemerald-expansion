@@ -7,7 +7,16 @@ raw`
     .set LOCALID_CLEF, 17
 `
 
-mapscripts SSElegant_MapScripts{}
+mapscripts SSElegant_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: SSElegant_OnTransition
+}
+
+
+//on transition
+script SSElegant_OnTransition{
+    setrespawn(HEAL_LOCATION_SSELEGANT)
+    end
+}
 
 //raazi fight, sailor blockers, jania, inger/ariana (and mons), 4 NPCs (sailor, man, picnicker, dude)
 script SSElegant_SailorBlocker{
