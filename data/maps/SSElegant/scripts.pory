@@ -46,7 +46,7 @@ script SSElegant_Raazi{
     faceplayer
     //battle dialogue
     msgbox_delay("Raazi", format("Can I help you?\p...\pAh, you're the trainer who challenged me at the quarry. My apologies for delaying the fight.\pWhat's your name?\p...\p{PLAYER}?\pSounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor Rue's fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge.\pCome, then. It's quiet on the upper deck and the sea breeze is pleasant.\pA fine place to battle, wouldn't you say?"))
-
+    fadenewbgm(MUS_RG_GYM)
     //Move into position
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
@@ -57,11 +57,14 @@ script SSElegant_Raazi{
     applymovement(LOCALID_RAAZI, moves(walk_right * 2 walk_down face_left))
     waitmovement(0)
     special(RemoveCameraObject)
-    
+
+    delay(60)
+
     //battle
+//    fadenewbgm(MUS_RG_GYM)
     msgbox_delay("Raazi", format("I am Raazi, the Gym Leader of Rivetshore City and the strongest Leader in all of Cormoria!\pThe quarry has forged my heart into steel and my fists into granite.\pCan you break through?"))
     trainerbattle_no_intro(TRAINER_RIVETSHORE_GYM_LEADER, format("I can't believe I lost..."))
-
+    playbgm(MUS_RG_GYM, FALSE)  
     //post-battle
     msgbox_delay("Raazi", format("Spectacular!"))
 
@@ -90,6 +93,8 @@ script SSElegant_Raazi{
     msgbox(format("And now you've collected all eight gym badges, {PLAYER}!\pThe last mountain in your path is the Pokemon Championship. They're held every year at -"))
     release
 
+    playbgm(MUS_DUMMY, FALSE)
+    playse(SE_CONTEST_PLACE)
     //announce
     applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_down))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark face_down))
@@ -104,6 +109,7 @@ script SSElegant_Raazi{
     waitmovement(0)
     delay(16)
 
+    fadedefaultbgm
     msgbox_delay("Raazi", format("You may be aware of where the Gym Leaders are going now.\pI must warn you, {PLAYER}.\pYou're strong, but you're not equipped to deal with what's coming. Try not to get in our way. You'll do more harm than good.\pStay on the ship."))
 
     //LEADERS exit

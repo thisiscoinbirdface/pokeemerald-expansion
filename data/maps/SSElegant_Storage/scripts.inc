@@ -258,7 +258,7 @@ SSElegant_Storage_Catcher1::
 # 169 "data//maps/SSElegant_Storage/scripts.pory"
 	msgbox SSElegant_Storage_Catcher1_Text_0
 # 170 "data//maps/SSElegant_Storage/scripts.pory"
-	warp MAP_SSELEGANT_STORAGE, 1, 2
+	warp MAP_SSELEGANT_STORAGE, 2, 2
 # 171 "data//maps/SSElegant_Storage/scripts.pory"
 	delay 60
 	return

@@ -167,7 +167,7 @@ script SSElegant_Storage_GabConfronts{
 //test
 script SSElegant_Storage_Catcher1{
     msgbox(format("Hey! We've got a stowaway!"))
-    warp(MAP_SSELEGANT_STORAGE, 1, 2)
+    warp(MAP_SSELEGANT_STORAGE, 2, 2)
     delay(60)
     
 }
