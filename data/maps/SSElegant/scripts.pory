@@ -36,18 +36,80 @@ script SSElegant_Raazi{
     lockall
     faceplayer
     //battle dialogue
+    msgbox_delay("Raazi", format("Can I help you?\p...\pAh, you're the trainer who challenged me at the quarry. My apologies for delaying the fight.\pWhat's your name?\p...\p{PLAYER}?\pSounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor Rue's fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge.\pCome, then. It's quiet on the upper deck and the sea breeze is pleasant.\pA fine place to battle, wouldn't you say?"))
 
+    //Move into position
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_left * 2 face_right))
+    applymovement(LOCALID_RAAZI, moves(walk_down walk_right))
+    waitmovement(0)
+    applymovement(LOCALID_AG, moves(walk_down walk_right * 2 face_left))
+    applymovement(LOCALID_RAAZI, moves(walk_right * 2 walk_down face_left))
+    waitmovement(0)
+    special(RemoveCameraObject)
+    
     //battle
+    msgbox_delay("Raazi", format("I am Raazi, the Gym Leader of Rivetshore City and the strongest Leader in all of Cormoria!\pThe quarry has forged my heart into steel and my fists into granite.\pCan you break through?"))
+    trainerbattle_no_intro(TRAINER_RIVETSHORE_GYM_LEADER, format("I can't believe I lost..."))
+
+    //post-battle
+    msgbox_delay("Raazi", format("Spectacular!"))
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
+    applymovement(LOCALID_RAAZI, moves(walk_left *2))
+    applymovement(LOCALID_AG, moves(walk_left *2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+    msgbox_delay("Raazi", format("You'd be of use in the quarry, I can tell you.\pFor your tenacity and grit, I am pleased to award you with the Granite Badge."))
+
+    //Play gym badge fanfare
+    call(Common_EventScript_PlayGymBadgeFanfare)
+    //Receive the badge
+    speakername(NULL)
+    msgbox(format("{PLAYER} received the Granite Badge from Raazi."))
+    release
+    setflag(FLAG_BADGE08_GET)
+
+    //Describe the badge features (use HMs, allow pokemon control etc.)
+    speakername("Raazi")
+    msgbox(format("The Drama Badge will let you use the HM Dive outside of battle. I'd also like to give you something we dug up in the quarry a while ago."))
+    //Give item also
+    giveitem(ITEM_RARE_SHARD)
+    speakername("Raazi")
+    msgbox(format("And now you've collected all eight gym badges, {PLAYER}!\pThe last mountain in your path is the Pokemon Championship. They're held every year at -"))
+    release
+
+    //announce
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark face_down))
+    waitmovement(0)
+    delay(16)
 
     //ship stops
+    msgbox_delay("S.S. Elegant", format("ATTENTION ALL PASSENGERS.\pTHE S.S. ELEGANT WILL NOW BE MAKING A BRIEF UNSCHEDULED STOP.\pALL GYM LEADERS ARE REQUESTED TO MEET BY THE EXIT IMMEDIATELY.\pDUE TO SAFETY CONCERNS, PASSENGERS ARE NOT PERMITTED TO DEBOARD THE SHIP."))
 
-    //raazi exit
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_RAAZI, moves(face_left))
+    waitmovement(0)
+    delay(16)
+
+    msgbox_delay("Raazi", format("You may be aware of where the Gym Leaders are going now.\pI must warn you, {PLAYER}.\pYou're strong, but you're not equipped to deal with what's coming. Try not to get in our way. You'll do more harm than good.\pStay on the ship."))
+
+    //LEADERS exit
     applymovement(LOCALID_RAAZI, moves(walk_down * 8))
     applymovement(LOCALID_AG, moves(walk_down * 8))
+    applymovement(4, moves(walk_right walk_down * 8))
+    applymovement(6, moves(walk_right walk_down * 8))
     waitmovement(0)
 
     removeobject(LOCALID_RAAZI)
     removeobject(LOCALID_AG)
+    removeobject(4)
+    removeobject(5)
+    removeobject(6)
+    removeobject(7)
     //end
     setflag(FLAG_RAAZI_BEATEN)
 
@@ -98,7 +160,7 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
 
         applymovement(LOCALID_BREECH, moves(jump_in_place_up))
         waitmovement(0)
-        delay(16)      
+        delay(16)
         msgbox_delay("Breech", format("You're the Team Somber grunt! You tried to take Clefable's everstone!"))
 
         applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
@@ -138,6 +200,9 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
 
         msgbox_delay("Gabrielle", format("Zoroark and I will go down to the storage hold and distract the crew there!\pAfter that, you two try and find a way out through the hold."))
         msgbox_delay("Breech", format("Okay, we'll do what we can."))
+        applymovement(LOCALID_GAB, moves(face_up))
+        waitmovement(0)
+        delay(16)
         msgbox_delay("Gabrielle", format("Got it, {PLAYER}?\nWhen you're ready, meet us at the storage hold. Make sure you have everything you need!"))
 
         //go
