@@ -11,6 +11,10 @@ raw`
     .set LOCALID_TENE_2, 33
     .set LOCALID_KOHLA_2, 6
 
+    .set LOCALID_KOR, 34
+    .set LOCALID_BREECH, 27
+    .set LOCALID_CLEF, 28
+
 `
 
 
@@ -240,7 +244,114 @@ script UnchartedIsland_Finale_Battle{
 
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_RUE, format("No! Nooo! NOOO!!!"))
 
+    goto(UnchartedIsland_Finale_Ending)
+}
+
+script UnchartedIsland_Finale_Ending{
+    applymovement(LOCALID_RUE_2, moves(walk_down))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Rue", format("I lost...\pHow could I lose?\pTo a research associate?\pI..."))
+
+    applymovement(LOCALID_MELEA_2, moves(walk_down jump_in_place_right))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Melea", format("Boss!"))
+
+    applymovement(LOCALID_MOXIE_2, moves(walk_down jump_in_place_left))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Moxie", format("C'mon boss! Let's get out of here before the detectives come!"))
+
+    delay(24)
+    msgbox_delay("Rue", format("No..."))
+
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 12)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+    applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
+    msgbox_delay("Rue", format("NO!!!"))
+
+    applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Rue", format("I will not be bested!\pIf we can get the dreamstone, we can try again.\pAncient Terror! Come forth and bring me the dreamstone!"))
+
+    fadescreen(FADE_TO_BLACK)
+    setobjectxyperm(LOCALID_KOR, 79, 26)
+    addobject(LOCALID_KOR)
+    playmoncry(SPECIES_KORAIDON, CRY_MODE_NORMAL)
+    waitmoncry
+    fadescreen(FADE_FROM_BLACK)
+
+    msgbox_delay("Rue", format("Now hurry up and get me -"))
+
+    //everyone surprise
+    applymovement(LOCALID_MELEA_2, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_MOXIE_2, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_TENE_2, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_KOR, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_KOHLA_2, moves(emote_exclamation_mark jump_in_place_down))
+    waitmovement(0)
+    delay(20)
+
+    //breech clef intro
+    msgbox_delay("Breech", format("Clefable! It's dangerous!\nCome back!"))
+
+    setobjectxyperm(LOCALID_CLEF, 78, 33)
+    addobject(LOCALID_CLEF)
+    setobjectxyperm(LOCALID_BREECH, 78, 34)
+    addobject(LOCALID_BREECH)
+
+    //breech clef movement
+    applymovement(LOCALID_BREECH, moves(walk_fast_up *5 walk_fast_left walk_fast_up walk_fast_left face_up))
+    applymovement(LOCALID_CLEF, moves(walk_fast_up *4 walk_fast_left walk_fast_up walk_fast_left walk_fast_up*3 walk_fast_right walk_fast_up walk_fast_right face_up))
+    waitmovement(0)
+
+    //everyone face up
+    applymovement(LOCALID_MELEA_2, moves(face_up))
+    applymovement(LOCALID_MOXIE_2, moves(face_up))
+    applymovement(LOCALID_RUE_2, moves(face_up))
+    applymovement(LOCALID_TENE_2, moves(face_up))
+    applymovement(LOCALID_KOR, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(LOCALID_KOHLA_2, moves(face_up))
+    waitmovement(0)
+
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+
+    delay(16)    
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox_delay("Clefable", format("cleee!!!"))    
+    applymovement(LOCALID_CLEF, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(8)
+    applymovement(2, moves(jump_2_up))
+    waitmovement(0)
+    removeobject(2)
+
+    delay(30)
+
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 12)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+    applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
+    msgbox_delay("Rue", format("NO!!!"))
+
+    //END
     setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 5)
+    setflag(FLAG_FINALE_DONE)
+
+    warp(MAP_CARABRUE_TOWN_TENEBRIS_LAB_FINALE, 5, 4)
+
+
     releaseall
     end
 }

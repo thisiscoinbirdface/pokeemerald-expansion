@@ -337,7 +337,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_GAB_BREECH_OUTDOOR
 	setflag FLAG_HIDE_GAB_BREECH_STORAGE
 	setflag FLAG_HIDE_ISLAND_FINALE
-	
+	setflag FLAG_HIDE_TENEBRIS_FINALE
 
 
 

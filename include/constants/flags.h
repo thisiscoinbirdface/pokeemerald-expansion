@@ -159,7 +159,7 @@
 #define FLAG_HIDE_GAB_BREECH_STORAGE      0x472 // hide gab and breech in storage
 #define FLAG_HIDE_TENEBRIS_FINALE         0x479 // Unused Flag
 #define FLAG_SKIP_FINALE_CUTSCENE         0x46D // Unused Flag
-#define FLAG_UNUSED_0x4BC                 0x4BC // Unused Flag
+#define FLAG_FINALE_DONE                  0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                 0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                 0x4BF // Unused Flag
