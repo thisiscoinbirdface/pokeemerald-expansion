@@ -1145,30 +1145,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_IVY_RIVER_MAIN",
-      "name": "ONE ISLAND",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_IVY_RIVER_UNDERPASS",
-      "name": "TWO ISLAND",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_LILY_GROTTO",
-      "name": "THREE ISLAND",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_FOUR_ISLAND",
       "name": "FOUR ISLAND",
       "x": 0,
@@ -1707,23 +1683,39 @@
     {
       "map_section": "MAPSEC_CARABRUE_TOWN",
       "name": "Carabrue Town",
-      "x": 15,
-      "y": 10,
+      "x": 18,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_FENNILAHL_TOWN",
       "name": "Fennilahl Town",
-      "x": 0,
-      "y": 0,
+      "x": 20,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_FENNILAHL_TUNNEL",
+      "name": "Fennilahl Tunnel",
+      "x": 21,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_VINE_CAVERNS",
+      "name": "Vine Caverns",
+      "x": 20,
+      "y": 10,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_GASTREE_CITY",
       "name": "Gastree City",
-      "x": 16,
+      "x": 25,
       "y": 8,
       "width": 1,
       "height": 1
@@ -1731,51 +1723,67 @@
     {
       "map_section": "MAPSEC_ROUTE1",
       "name": "Route 1",
-      "x": 0,
-      "y": 0,
+      "x": 19,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_ROUTE2",
       "name": "Route 2",
-      "x": 0,
-      "y": 0,
+      "x": 20,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_ROUTE3",
       "name": "Route 3",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 22,
+      "y": 8,
+      "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE4",
-      "name": "Route 4",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE3_UNDERPASS",
+      "name": "Route 3 Underpass",
+      "x": 23,
+      "y": 7,
       "width": 1,
       "height": 1
+    },    
+    {
+      "map_section": "MAPSEC_ROUTE4",
+      "name": "Route 4",
+      "x": 25,
+      "y": 6,
+      "width": 1,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_CERAM_BASE_CAMP",
       "name": "Ceram Base Camp",
-      "x": 0,
-      "y": 0,
+      "x": 25,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_MT_CERAM",
       "name": "Mt. Ceram",
-      "x": 0,
-      "y": 0,
+      "x": 25,
+      "y": 4,
       "width": 1,
       "height": 1
     },
+    {
+      "map_section": "MAPSEC_CERAM_PEAK",
+      "name": "Ceram Peak",
+      "x": 25,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },    
     {
       "map_section": "MAPSEC_ANCIENT_CERAM",
       "name": "???",
@@ -1787,79 +1795,103 @@
     {
       "map_section": "MAPSEC_GALECREST_CITY",
       "name": "Galecrest City",
-      "x": 0,
-      "y": 0,
+      "x": 19,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_ROUTE5",
       "name": "Route 5",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 14,
+      "y": 2,
+      "width": 5,
       "height": 1
     },
     {
       "map_section": "MAPSEC_VILETHORN_WOODS",
       "name": "Vilethorn Woods",
-      "x": 0,
-      "y": 0,
+      "x": 16,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SILVERSUN_CITY",
       "name": "Silversun City",
-      "x": 0,
-      "y": 0,
+      "x": 13,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
+      "map_section": "MAPSEC_HOYA_RIVER_NORTH",
+      "name": "Hoya River North",
+      "x": 12,
+      "y": 2,
+      "width": 1,
+      "height": 2
+    },
+    {
       "map_section": "MAPSEC_ROUTE6",
       "name": "Route 6",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 12,
+      "y": 4,
+      "width": 5,
       "height": 1
     },
     {
       "map_section": "MAPSEC_RANGER_INSTITUTE",
       "name": "Ranger Institute",
-      "x": 0,
-      "y": 0,
+      "x": 13,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_HOYA_RIVER_SOUTH",
+      "name": "Hoya River South",
+      "x": 10,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_PELLUCA_CITY",
       "name": "Pelluca City",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 8,
+      "y": 8,
+      "width": 2,
       "height": 1
     },
     {
+      "map_section": "MAPSEC_PELLUCA_CABLE_CAR",
+      "name": "Cable Car Stn.",
+      "x": 8,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },    
+    {
       "map_section": "MAPSEC_MIRROH_BASE_CAMP",
       "name": "Mirroh Base Camp",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_MT_MIRROH_EXTERIOR",
       "name": "Mirroh Exterior",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 4,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "map_section": "MAPSEC_MIRROH_PEAK",
       "name": "Mt. Mirroh Peak",
-      "x": 0,
+      "x": 3,
       "y": 0,
       "width": 1,
       "height": 1
@@ -1867,66 +1899,106 @@
     {
       "map_section": "MAPSEC_MT_MIRROH_INTERIOR",
       "name": "Mt. Mirroh",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 3,
       "width": 1,
       "height": 1
     },    
     {
-      "map_section": "MAPSEC_HOYA_RIVER_NORTH",
-      "name": "Hoya River North",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_HOYA_RIVER_SOUTH",
-      "name": "Hoya River South",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_WINTERLILY_HOLLOW",
       "name": "Winterlily Hollow",
-      "x": 5,
-      "y": 6,
+      "x": 4,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_LILY_POND",
       "name": "Lily Pond",
-      "x": 9,
-      "y": 6,
+      "x": 5,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_IVY_RIVER",
+      "name": "Lily Pond",
+      "x": 6,
+      "y": 2,
+      "width": 1,
+      "height": 3
+    },  
+    {
+      "map_section": "MAPSEC_RANGER_INSTITUTE_IVY",
+      "name": "Ranger Institute",
+      "x": 6,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },   
+    {
+      "map_section": "MAPSEC_IVY_RIVER_UNDERPASS",
+      "name": "Ivy Tunnel",
+      "x": 7,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_LILY_GROTTO",
+      "name": "Lily Grotto",
+      "x": 6,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },  
+    {
+      "map_section": "MAPSEC_IVY_RIVER_MAIN",
       "name": "Ivy River",
-      "x": 9,
-      "y": 9,
+      "x": 8,
+      "y": 4,
       "width": 1,
-      "height": 1
-    },
+      "height": 4
+    },    
     {
-      "map_section": "MAPSEC_FENNILAHL_TUNNEL",
-      "name": "Fennilahl Tunnel",
-      "x": 9,
+      "map_section": "MAPSEC_ROUTE8",
+      "name": "Route 8",
+      "x": 8,
       "y": 9,
       "width": 1,
-      "height": 1
-    },
+      "height": 3
+    },    
     {
-      "map_section": "MAPSEC_VINE_CAVERNS",
-      "name": "Vine Caverns",
-      "x": 9,
-      "y": 9,
+      "map_section": "MAPSEC_RIVETSHORE_CITY",
+      "name": "Rivetshore City",
+      "x": 8,
+      "y": 12,
       "width": 1,
       "height": 1
-    }        
+    },    
+    {
+      "map_section": "MAPSEC_RANGER_INSTITUTE_RIVETSHORE",
+      "name": "Ranger Institute",
+      "x": 8,
+      "y": 13,
+      "width": 1,
+      "height": 1
+    },    
+    {
+      "map_section": "MAPSEC_SSELEGANT",
+      "name": "S.S. Elegant",
+      "x": 12,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    },    
+    {
+      "map_section": "MAPSEC_UNCHARTED_ISLAND",
+      "name": "Uncharted Isle",
+      "x": 16,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    }      
   ]
 }
