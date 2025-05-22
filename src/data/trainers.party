@@ -3249,21 +3249,34 @@ Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
-Name: TONY
-Class: Swimmer M
-Pic: Swimmer M
+Name: Rue
+Class: Team Somber
+Pic: Somber Grunt M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
-Starmie
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Toedscruel
+Level: 55
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
-Sharpedo
-Level: 39
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Spiritomb
+Level: 57
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+
+Roaring Moon
+Level: 58
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+
+Metagross @ Metagrossite
+Level: 58
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+
+Koraidon
+Level: 60
+IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
+
 
 === TRAINER_TAKAO ===
 Name: TAKAO

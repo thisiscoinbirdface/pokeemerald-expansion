@@ -157,8 +157,8 @@
 #define FLAG_STORAGE_MOONBLAST            0x468 // bust open the wall with moonblast
 #define FLAG_HIDE_GAB_BREECH_OUTDOOR      0x470 // hide gab and breech on deck
 #define FLAG_HIDE_GAB_BREECH_STORAGE      0x472 // hide gab and breech in storage
-#define FLAG_UNUSED_0x479                 0x479 // Unused Flag
-#define FLAG_UNUSED_0x46D                 0x46D // Unused Flag
+#define FLAG_HIDE_TENEBRIS_FINALE         0x479 // Unused Flag
+#define FLAG_SKIP_FINALE_CUTSCENE         0x46D // Unused Flag
 #define FLAG_UNUSED_0x4BC                 0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                 0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
