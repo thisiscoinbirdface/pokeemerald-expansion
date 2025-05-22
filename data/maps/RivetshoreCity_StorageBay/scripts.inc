@@ -61,7 +61,7 @@ RivetshoreCity_StorageBay_Trigger0::
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger0_2
 RivetshoreCity_StorageBay_Trigger0_1:
-# 56 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 57 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	releaseall
 	end
 
@@ -75,57 +75,59 @@ RivetshoreCity_StorageBay_Trigger0_2:
 
 RivetshoreCity_StorageBay_Trigger0_4:
 # 42 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Trigger0_Text_2, MSGBOX_YESNO
+	msgbox RivetshoreCity_StorageBay_Trigger0_Text_2, MSGBOX_POKENAV
 # 43 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	compare VAR_RESULT, 1
+	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, RivetshoreCity_StorageBay_Trigger0_Text_3, RivetshoreCity_StorageBay_Trigger0_Text_4
+# 44 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq RivetshoreCity_StorageBay_Trigger0_6
 	goto RivetshoreCity_StorageBay_Trigger0_1
 
 RivetshoreCity_StorageBay_Trigger0_6:
-# 45 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Trigger0_Movement_0
 # 46 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Trigger0_Movement_0
+# 47 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	waitmovement 0
-# 52 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 53 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	callnative CB2_StorageCutscene
 	goto RivetshoreCity_StorageBay_Trigger0_1
 
 
 RivetshoreCity_StorageBay_Trigger1::
-# 61 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 62 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	lockall
-# 63 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Trigger0_Text_0, MSGBOX_YESNO
 # 64 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	msgbox RivetshoreCity_StorageBay_Trigger0_Text_0, MSGBOX_YESNO
+# 65 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_2
 RivetshoreCity_StorageBay_Trigger1_1:
-# 81 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 82 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	releaseall
 	end
 
 RivetshoreCity_StorageBay_Trigger1_2:
-# 65 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Trigger0_Text_1, MSGBOX_YESNO
 # 66 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	msgbox RivetshoreCity_StorageBay_Trigger0_Text_1, MSGBOX_YESNO
+# 67 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_4
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 RivetshoreCity_StorageBay_Trigger1_4:
-# 67 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Trigger0_Text_2, MSGBOX_YESNO
 # 68 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	msgbox RivetshoreCity_StorageBay_Trigger1_Text_0, MSGBOX_YESNO
+# 69 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_6
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 RivetshoreCity_StorageBay_Trigger1_6:
-# 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Trigger1_Movement_0
 # 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Trigger1_Movement_0
+# 72 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	waitmovement 0
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 78 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	callnative CB2_StorageCutscene
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
@@ -166,19 +168,19 @@ RivetshoreCity_StorageBay_Slaking_Movement_2:
 	walk_down
 	step_end
 
-# 45 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 46 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Trigger0_Movement_0:
-# 45 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 46 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	jump_right
 	step_end
 
-# 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Trigger1_Movement_0:
-# 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_left
-# 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_up
-# 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	jump_right
 	step_end
 
@@ -214,5 +216,18 @@ RivetshoreCity_StorageBay_Trigger0_Text_1:
 
 RivetshoreCity_StorageBay_Trigger0_Text_2:
 # 42 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	.string "Choose carefully! Once you enter,\n"
+	.string "there's no coming back!$"
+
+RivetshoreCity_StorageBay_Trigger0_Text_3:
+# 43 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	.string "Enter$"
+
+RivetshoreCity_StorageBay_Trigger0_Text_4:
+# 43 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	.string "Leave$"
+
+RivetshoreCity_StorageBay_Trigger1_Text_0:
+# 68 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	.string "Are you sure? Once you enter, there's\n"
 	.string "no coming back!$"

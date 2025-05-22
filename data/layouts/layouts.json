@@ -5720,6 +5720,26 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/UnchartedIsland_Destroyed/border.bin",
       "blockdata_filepath": "data/layouts/UnchartedIsland_Destroyed/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_CORMORIA_FINAL",
+      "name": "AncientCormoriaFinal_Layout",
+      "width": 22,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/AncientCormoriaFinal/border.bin",
+      "blockdata_filepath": "data/layouts/AncientCormoriaFinal/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_CORMORIA_FINAL_ISLAND",
+      "name": "AncientCormoriaFinalIsland_Layout",
+      "width": 22,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/AncientCormoriaFinalIsland/border.bin",
+      "blockdata_filepath": "data/layouts/AncientCormoriaFinalIsland/map.bin"
     }
   ]
 }

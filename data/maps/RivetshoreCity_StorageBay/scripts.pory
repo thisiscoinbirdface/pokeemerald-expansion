@@ -39,8 +39,9 @@ script RivetshoreCity_StorageBay_Trigger0{
     if (var(VAR_RESULT) == 1){
         msgbox(format("It sounds hollow...maybe there's enough space inside to fit in!\pEnter the storage container?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Are you sure? Once you enter, there's no coming back!"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == 1){
+            msgbox(format("Choose carefully! Once you enter, there's no coming back!"), MSGBOX_POKENAV)
+            dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Enter", "Leave")             
+            if (var(VAR_RESULT) == 0){
                 //move player
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_right))
                 waitmovement(0)

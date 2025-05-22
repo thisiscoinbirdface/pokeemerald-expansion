@@ -1,0 +1,15 @@
+mapscripts AncientCormoriaFinal_MapScripts{}
+
+script AncientCormoriaFinal_Dreamstone{
+    lockall
+    setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 4)    
+    warp(MAP_UNCHARTED_ISLAND, 78, 24)
+    releaseall
+    end
+}
+
+script AncientCormoriaFinal_Tenebris{
+    msgbox_delay("Tenebris", format("Touch the dreamstone whenever you're ready!"))
+    end
+}
+

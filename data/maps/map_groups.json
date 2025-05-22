@@ -179,7 +179,9 @@
     "UnchartedIsland",
     "VictoryRoad",
     "SSElegant_Storage_Busted",
-    "UnchartedIsland_Destroyed"
+    "UnchartedIsland_Destroyed",
+    "AncientCormoriaFinal",
+    "AncientCormoriaFinalIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

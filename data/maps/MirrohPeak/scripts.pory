@@ -347,8 +347,6 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(fly_up))
     waitmovement(0)
 
-
-
     delay(24)
     applymovement(LOCALID_MOXIE, moves(face_down))
     speakername("Moxie")

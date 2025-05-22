@@ -5,13 +5,24 @@ raw`
     .set LOCALID_KOHLA_1, 29
     .set LOCALID_TENE, 26
 
+    .set LOCALID_MOXIE_2, 5
+    .set LOCALID_MELEA_2, 4
+    .set LOCALID_RUE_2, 3
+    .set LOCALID_TENE_2, 33
+    .set LOCALID_KOHLA_2, 6
+
 `
 
 
 mapscripts UnchartedIsland_MapScripts{    
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_UNCHARTED_ISLAND_CUTSCENES, 4: UnchartedIsland_OnWarp
+    ]
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_UNCHARTED_ISLAND_CUTSCENES, 4: UnchartedIsland_Finale
+    ]
     MAP_SCRIPT_ON_TRANSITION: UnchartedIsland_OnTransition
 }
-
 
 //on transition
 script UnchartedIsland_OnTransition{
@@ -23,6 +34,53 @@ script UnchartedIsland_OnTransition{
     end
 }
 
+//on warp (used in the final cutscene)
+script UnchartedIsland_OnWarp{
+    hideobjectat(OBJ_EVENT_ID_PLAYER, 0)
+    end
+}
+
+
+script UnchartedIsland_Finale{
+    lockall
+
+    //set the camera
+    special(SpawnCameraObject)
+
+    //silently move the player up 7 steps
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3))
+    waitmovement(0)
+
+
+    msgbox_delay("Kohla", format("Ceruledge...Ceruledge!!\pNo!!"))
+
+    applymovement(LOCALID_MELEA_2, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("The famous Ace Rookie and his Ceruledge...burned to dust!"))
+
+    applymovement(LOCALID_MOXIE_2, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("And with this, nobody can stop us from -"))
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
+    applymovement(LOCALID_MOXIE_2, moves(emote_exclamation_mark jump_in_place_up))
+    applymovement(LOCALID_MELEA_2, moves(emote_exclamation_mark jump_in_place_up))
+    applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark jump_in_place_up))
+    waitmovement(0)
+    delay(30)
+
+    showobjectat(OBJ_EVENT_ID_PLAYER, 0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(fly_down))
+    waitmovement(0)
+
+
+
+    setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 5)
+    releaseall
+    end
+}
 
 //Breech
 script UnchartedIsland_Breech{
@@ -156,6 +214,7 @@ script UnchartedIsland_Moxie_Trigger0{
     goto(UnchartedIsland_Moxie_Melea_Fight)
 }
 script UnchartedIsland_Moxie_Trigger1{
+    if (flag(FLAG_ISLAND_MOXIE_MELEA_BATTLE)) {end}        
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 5))
     waitmovement(0)
@@ -350,6 +409,89 @@ script UnchartedIsland_Melea_Destroy_Trigger{
     end
 }
 
+
+script UnchartedIsland_Tenebris{
+    if (var(VAR_UNCHARTED_ISLAND_CUTSCENES) == 2){
+        lockall
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_right)) 
+        waitmovement(0)
+        delay(16)       
+        msgbox_delay("???", format("Hey you - wait!"))
+
+        special(SpawnCameraObject)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 3 walk_down))
+        waitmovement(0)
+
+        //add prof tenebris
+        setobjectxyperm(LOCALID_TENE, 67, 45)
+        addobject(LOCALID_TENE)
+        setobjectxy(LOCALID_TENE, 67, 45)
+
+        playse(SE_PUDDLE)
+        applymovement(LOCALID_TENE, moves(jump_2_up))
+        waitmovement(0)
+        delay(16)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left *3 walk_up))
+        applymovement(LOCALID_TENE, moves(walk_left * 3 walk_up * 2 walk_left * 4 face_down))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up)) 
+        waitmovement(0)
+        delay(16)
+
+        special(RemoveCameraObject)
+
+        applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
+        waitmovement(0)
+        delay(16)
+        msgbox_delay("???", format("I never forget a face when I see one.\pI remember signing off on your application, {PLAYER}.\pIt's long overdue, but it gives me great pleasure to welcome you to the Tenebris Lab...although I wish it were under better circumstances."))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark jump_in_place_up)) 
+        waitmovement(0)
+        delay(24)
+        applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
+        waitmovement(0)
+        delay(16)
+        msgbox_delay("Tenebris", format("Yes, I'm Professor Tenebris.\pI've been hiding in Ancient Cormoria...but Team Somber found the dreamstones any way, so my effort was, it seems, wasted."))
+        applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
+        waitmovement(0)
+        delay(16)
+        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your best to put an end to Team Somber's plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it. I didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me, but clearly it wasn't.\pSomeone from Team Somber had eyes on me and the dreamstone from the very beginning!\pAnd after my time in Ancient Cormoria, I know why."))
+        delay(16)
+        msgbox_delay("Tenebris", format("The Ancient Terror..."))
+        showmonpic(SPECIES_KORAIDON, 10, 3)
+        msgbox_delay("Tenebris", format("Of the many strong Pokemon that ruled over Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
+        hidemonpic
+        delay(16)
+        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokemon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
+        
+        //last choice joke
+        speakername(NULL)
+        msgbox(format("This is your last choice in the game! Please choose carefully."), MSGBOX_POKENAV)
+        delay(16)
+        speakername("Tenebris")
+        message(format("{PLAYER} - will you stop Team Somber?"))
+        waitmessage
+        dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Yeah!", "Of course!", "Definitely!") 
+
+        //get moving
+        applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
+        waitmovement(0)
+        delay(16)
+        msgbox_delay("Tenebris", format("You truly are a gem of a human being.\pNow come! Let us enter Ancient Cormoria once more...and exit right where the dreamstone is!"))
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *4 walk_down *2 walk_right * 3))
+        applymovement(LOCALID_TENE, moves(walk_right *4 walk_down *2 walk_right * 3 jump_2_down))
+        waitmovement(0)
+        removeobject(LOCALID_TENE)
+        delay(8)
+
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_2_down))
+        warp(MAP_ANCIENT_CORMORIA_FINAL, 9, 51)
+
+        setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 3)
+        releaseall
+        end
+    }
+}
 
 
 
