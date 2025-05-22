@@ -1417,3 +1417,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VictoryRoad/scripts.inc"
 
 	.include "data/maps/SSElegant_Storage_Busted/scripts.inc"
+
+	.include "data/maps/UnchartedIsland_Destroyed/scripts.inc"

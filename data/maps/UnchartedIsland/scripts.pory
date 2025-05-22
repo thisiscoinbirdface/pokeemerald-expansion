@@ -1,5 +1,10 @@
 raw`
-    .set LOCALID_MOXIE_1, 18
+    .set LOCALID_MOXIE_VIEWPOINT, 18
+    .set LOCALID_MOXIE_1, 30
+    .set LOCALID_MELEA_1, 25
+    .set LOCALID_KOHLA_1, 29
+    .set LOCALID_TENE, 26
+
 `
 
 
@@ -11,6 +16,21 @@ mapscripts UnchartedIsland_MapScripts{
 //on transition
 script UnchartedIsland_OnTransition{
     setrespawn(HEAL_LOCATION_UNCHARTED_ISLAND)
+
+    if (var(VAR_UNCHARTED_ISLAND_CUTSCENES) == 2){
+        setmaplayoutindex(LAYOUT_UNCHARTED_ISLAND_DESTROYED)
+    }
+    end
+}
+
+
+//Breech
+script UnchartedIsland_Breech{
+    msgbox_delay("Breech", format("{PLAYER} - you made it through!\pClefable and I will hide here behind the trees. You go on ahead, but be careful! I saw all the gym leaders out there. If they catch you, they'll send you back to the ship!\p...\pYou're just like you were back when I met you in Fennilahl Town. The only thing that changed is that you saved a hiker back then and you're saving all of Cormoria now.\pYou're really cool, {PLAYER}.\nI'm happy we met.\pGood luck!"))
+}
+script UnchartedIsland_Clefable{
+    playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
+    msgbox_delay("Clefairy", format("cleee!!!"))
     end
 }
 
@@ -26,6 +46,13 @@ script UnchartedIsland_Leader_Caught_A{
 script UnchartedIsland_Leader_Caught_B{
     msgbox(format("Hey! What are you doing here? You should be on the S.S. Elegant."))
     warp(MAP_UNCHARTED_ISLAND, 37, 24)
+    delay(60)
+}
+
+//caught after clearing section 2
+script UnchartedIsland_Leader_Caught_C{
+    msgbox(format("Hey! What are you doing here? You should be on the S.S. Elegant."))
+    warp(MAP_UNCHARTED_ISLAND, 53, 41)
     delay(60)
 }
 
@@ -50,11 +77,11 @@ script UnchartedIsland_Carona{
 
 script UnchartedIsland_Jania{
     speakername("Jania")
-    call(UnchartedIsland_Leader_Caught_B)
+    call(UnchartedIsland_Leader_Caught_C)
 }
 script UnchartedIsland_Raazi{
     speakername("Raazi")
-    call(UnchartedIsland_Leader_Caught_B)
+    call(UnchartedIsland_Leader_Caught_C)
 }
 
 
@@ -66,19 +93,19 @@ script UnchartedIsland_Raazi{
 
 
 script UnchartedIsland_Grunt_A{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
-    end
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format("The boss gave me new Pokemon just to stop the Ace Rookie. You can't stop us - wait, you're not the Ace Rookie!"), format("Guess you're still on the case!"))
+    msgbox(format("It doesn't matter who's on the case. You can't stop us now!"))
+    releaseall
 }
 script UnchartedIsland_Grunt_B{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_B, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
-    end
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_B, format("They said the Ace Rookie was coming. Why are you here instead?"), format("I'd rather fight the Ace Rookie!"))
+    msgbox(format(""))
+    releaseall
 }
 script UnchartedIsland_Grunt_C{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
-    end
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format("Yeah, weren't you kicked off the case? Well whatever! We've almost achieved our goal - you think we'll let you stop us now?"), format("Don't ruin our plan!"))
+    msgbox(format(""))
+    releaseall
 }
 
 
@@ -102,12 +129,12 @@ script UnchartedIsland_Moxie_Viewpoint_Trigger{
     waitmovement(0)
 
 
-    applymovement(LOCALID_MOXIE_1, moves(emote_exclamation_mark))
+    applymovement(LOCALID_MOXIE_VIEWPOINT, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    applymovement(LOCALID_MOXIE_1, moves(walk_right * 4))
+    applymovement(LOCALID_MOXIE_VIEWPOINT, moves(walk_right * 4))
     waitmovement(0)
-    removeobject(LOCALID_MOXIE_1)
+    removeobject(LOCALID_MOXIE_VIEWPOINT)
 
     setflag(FLAG_ISLAND_MOXIE_VIEWPOINT)
 
@@ -122,24 +149,206 @@ script UnchartedIsland_Moxie_Viewpoint_Trigger{
 
 
 script UnchartedIsland_Moxie_Trigger0{
+    if (flag(FLAG_ISLAND_MOXIE_MELEA_BATTLE)) {end}
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 4))
+    waitmovement(0)
     goto(UnchartedIsland_Moxie_Melea_Fight)
 }
 script UnchartedIsland_Moxie_Trigger1{
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 walk_right * 5))
+    waitmovement(0)
     goto(UnchartedIsland_Moxie_Melea_Fight)
 }
 
 script UnchartedIsland_Moxie_Melea_Fight{
+    if (flag(FLAG_ISLAND_MOXIE_MELEA_BATTLE)) {end}    
+    //set the pokemon hide flag
+    clearflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
 
+    msgbox_delay("Moxie", format("{PLAYER}.\pA familiar face by now.\nHow many times has it been?\pWe received intel that you were off the case, and we would only have to deal with the Ace Rookie.\pIt was our mistake, I suppose, to assume you wouldn't come any way."))
+    
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+
+    msgbox_delay("Moxie", format("Melea!\n{PLAYER}'s here!"))
+
+    //add melea
+    addobject(LOCALID_MELEA_1)
+    setobjectxy(LOCALID_MELEA_1, 60, 41)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_MELEA_1, moves(walk_right *3 walk_up *3 walk_right *4))
+    waitmovement(0)
+
+    msgbox_delay("Melea", format("So you came after all.\pTime and again we've tried to explain how insignificant you are in our plans."))
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Moxie", format("And yet, pest that you are, you manage to find your way to us and foil our plans again and again!"))
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("Look across the water."))
+
+    applymovement(LOCALID_MOXIE_1, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovement(0)
+    delay(16)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 10 walk_up * 14))
+    waitmovement(0)
+
+    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
+
+    setobjectxyperm(LOCALID_MELEA_1, 67, 38)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 14 walk_left * 10))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    applymovement(LOCALID_MOXIE_1, moves(face_left))
+    applymovement(LOCALID_MELEA_1, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("And this is where we'll finally complete the plan!"))
+
+
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Moxie", format("You bested us before.\pWe're not taking that risk again. Not here. Not now.\pYou can't beat the two of us, {PLAYER}!\nIf only you had some help."))
+
+    //kohla
+    applymovement(LOCALID_MOXIE_1, moves(emote_exclamation_mark face_left))
+    applymovement(LOCALID_MELEA_1, moves(emote_exclamation_mark face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_left))   
+
+    addobject(LOCALID_KOHLA_1)
+    setobjectxy(LOCALID_KOHLA_1, 60, 41)
+    applymovement(LOCALID_KOHLA_1, moves(walk_right *3 walk_up *2 walk_right *3 emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Moxie", format("Poetic - right on cue, the help arrives."))
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)    
+    msgbox_delay("Melea", format("No matter - they can't beat the two of us.\pI'll take the Ace Rookie.\nYou deal with {PLAYER}!"))
+    delay(16)
+
+    msgbox_delay("Kohla", format("..."))
+    delay(24)
+
+    applymovement(LOCALID_KOHLA_1, moves(walk_fast_right * 6 walk_fast_down *5))
+    waitmovement(0)
+    removeobject(LOCALID_KOHLA_1)
+
+    msgbox_delay("Melea", format("..."))
+
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("Hahaha! I can't believe it! You've been thrown under the bus! The Ace Rookie just left you alone!"))
+
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pCome then, it's time to end this - once and for all!"))
+
+    //battle 1
+    //trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))
+    //post-battle 1
+    applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Moxie", format("No!\pNoo!!!\pI..."))
+
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Melea", format("Calm down Moxie! I'm here.\pGo now - go and stop Kohla.\nI'll finish {PLAYER} off!"))
+
+    applymovement(LOCALID_MOXIE_1, moves(walk_fast_right *3 walk_fast_down *5))
+    waitmovement(0)
+
+    //battle 2
+    //trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MELEA, format("This can't be happening!"))
+    //post-battle 2
+    msgbox_delay("Melea", format("No!\pWe've worked too hard...I can't let it end like this.\pNo!!!"))
+    applymovement(LOCALID_MELEA_1, moves(walk_fast_down walk_fast_right *5 walk_fast_down *5))
+    waitmovement(0)
+
+    //set the new location for melea
+    setobjectxyperm(LOCALID_MELEA_1, 79, 42)
+    setobjectxy(LOCALID_MELEA_1, 79, 42)
+
+    removeobject(LOCALID_MOXIE_1)
+
+    setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 1)
+    setflag(FLAG_ISLAND_MOXIE_MELEA_BATTLE)
+    end
 }
 
+script UnchartedIsland_Melea_Destroy_Trigger{
+    if (var(VAR_UNCHARTED_ISLAND_CUTSCENES) == 1) {
 
+    lockall
+    
 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    waitmovement(0)
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down *2 walk_right *3))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_down))
+    msgbox_delay("Melea", format("Absol! Destroy those rocks!\nWe can't let anyone come after us!"))
+
+    applymovement(LOCALID_MELEA_1, moves(jump_in_place_left))
+    msgbox_delay("Melea", format("You'll never make it through!\pSo long, {PLAYER}. You've caused us enough pain and now we'll finally be rid of you!"))
+    
+    playmoncry(SPECIES_ABSOL_MEGA, CRY_MODE_NORMAL)
+
+    //shake camera
+    setvar(VAR_0x8004, 2)  //vertical pan
+    setvar(VAR_0x8005, 2)  //horizontal pan
+    setvar(VAR_0x8006, 30)  //num shakes
+    setvar(VAR_0x8007, 5)  //shake delay
+    special(ShakeCamera)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left *3 walk_up * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    //warpout
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 2)
+    warp(MAP_UNCHARTED_ISLAND, VAR_TEMP_2, VAR_TEMP_3)
+
+    releaseall
+    end
+    }
+    end
+}
 
 
 

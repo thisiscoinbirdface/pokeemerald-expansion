@@ -143,13 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	setflag FLAG_SYS_OW_FOLLOWERS_DISABLED
-    warp MAP_UNCHARTED_ISLAND, 6, 34
+    getplayerxy VAR_TEMP_2, VAR_TEMP_3
+    warp MAP_UNCHARTED_ISLAND, VAR_TEMP_2, VAR_TEMP_3
 	release
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_RIVETSHORE_CITY_STORAGE_BAY, 0, 4
 	release
 	end
 

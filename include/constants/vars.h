@@ -284,7 +284,7 @@
     #define VAR_RIVETSHORE_CEO_QUEST                         0x406C // Unused Var
 
     #define VAR_SSELEGANT_CUTSCENES                          0x4061 // Unused Var
-    #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
+    #define VAR_UNCHARTED_ISLAND_CUTSCENES                   0x4062 // Unused Var
     #define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
     #define VAR_UNUSED_0x40BB                                0x40BB // Unused Var
     #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var

@@ -70,6 +70,7 @@ script SSElegant_Storage_Moonblast{
 
     //setflags
     setflag(FLAG_HIDE_GAB_BREECH_STORAGE)
+    setvar(VAR_SSELEGANT_CUTSCENES, 5)
 
     //player exit
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
@@ -156,7 +157,7 @@ script SSElegant_Storage_GabConfronts{
     setflag(FLAG_STORAGE_GAB_ZOROARK)
     clearflag(FLAG_HIDE_GAB_BREECH_STORAGE)
     setvar(VAR_SSELEGANT_CUTSCENES, 3)
-
+    
     //warpout
     getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
     warp(MAP_SSELEGANT_STORAGE, VAR_TEMP_2, VAR_TEMP_3)
