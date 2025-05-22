@@ -1,5 +1,11 @@
-mapscripts AncientCormoriaFinal_MapScripts{}
+mapscripts AncientCormoriaFinal_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: AncientCormoria_OnTransition
+}
 
+script AncientCormoria_OnTransition{
+    setrespawn(HEAL_LOCATION_ANCIENT_CORMORIA_FINAL_ISLAND)
+    end
+}
 script AncientCormoriaFinal_Dreamstone{
     lockall
     setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 4)    
@@ -13,4 +19,6 @@ script AncientCormoriaFinal_Tenebris{
     msgbox_delay("Tenebris", format("Touch the dreamstone whenever you're ready!"))
     end
 }
+
+
 
