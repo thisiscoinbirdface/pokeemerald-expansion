@@ -1425,3 +1425,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AncientCormoriaFinalIsland/scripts.inc"
 
 	.include "data/maps/CarabrueTown_TenebrisLab_Finale/scripts.inc"
+
+	.include "data/maps/VictoryRoadCormoria/scripts.inc"
