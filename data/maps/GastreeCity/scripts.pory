@@ -138,7 +138,7 @@ script GastreeCity_Shard_NPC{
         msgbox(format("Take your time child. I'll be waiting here."), MSGBOX_NPC)
         end
     } else {
-        msgbox(format("Come to admire this statue, have you?\pThese statues are a vital legacy of Cormoria's past.\pYou know, back then they didn't have the tools to scult such intricate works, but yet they managed to make these.\pIncredible!"), MSGBOX_NPC)
+        msgbox(format("Come to admire this statue, have you?\pI'm researching the origins of these statues. They're a vital legacy of Cormoria's past."), MSGBOX_NPC)
         end
     }
 }
@@ -158,7 +158,7 @@ script GastreeCity_Shard_Trigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
     waitmovement(0)
     delay(16)
-    msgbox(format("Your Rare Shard has a mysterious connection with these statues.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them.\pBut normally is the key word!\pA Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
+    msgbox(format("I've been researching these statues for many years.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them.\pBut a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
     release
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
@@ -202,7 +202,7 @@ script GastreeCity_Shard_Trigger{
     applymovement(LOCALID_TRAINER, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox(format("What have you done! You stupid, muscle-brained trainer!\pYou and your Bergmite have destroyed the ancient statue!"))
+    msgbox(format("Argh, you idiot boy!\nWhat have you done?\pYou and your Bergmite have destroyed the ancient statue!"))
     release
     delay(16)
     
@@ -226,13 +226,13 @@ script GastreeCity_Shard_Trigger{
     applymovement(LOCALID_OLD_WOMAN, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("...\pSigh. Such a loss to culture and history...for such a mundane reason!"))
+    msgbox(format("...\pSigh. Such a loss to culture and history..."))
     release
     delay(16)
     applymovement(LOCALID_OLD_WOMAN, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox(format("I can't let this happen any more. We must preser"))
+    msgbox(format("I can't let this happen any more. We must preserve these statues.\pI'm now too old to go around Cormoria, but you, my dear, are young and able! You must help me preserve these statues!\pFind all the statues around Cormoria and come back to me."))
     release
 
     releaseall

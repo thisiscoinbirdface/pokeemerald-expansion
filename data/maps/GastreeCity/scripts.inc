@@ -982,13 +982,9 @@ GastreeCity_Shard_NPC_Text_0:
 GastreeCity_Shard_NPC_Text_1:
 # 141 "data//maps/GastreeCity/scripts.pory"
 	.string "Come to admire this statue, have you?\p"
-	.string "These statues are a vital legacy of\n"
-	.string "Cormoria's past.\p"
-	.string "You know, back then they didn't have\n"
-	.string "the tools to scult such intricate\l"
-	.string "works, but yet they managed to make\l"
-	.string "these.\p"
-	.string "Incredible!$"
+	.string "I'm researching the origins of these\n"
+	.string "statues. They're a vital legacy of\l"
+	.string "Cormoria's past.$"
 
 GastreeCity_Shard_Trigger_Text_0:
 # 156 "data//maps/GastreeCity/scripts.pory"
@@ -997,15 +993,14 @@ GastreeCity_Shard_Trigger_Text_0:
 
 GastreeCity_Shard_Trigger_Text_1:
 # 161 "data//maps/GastreeCity/scripts.pory"
-	.string "Your Rare Shard has a mysterious\n"
-	.string "connection with these statues.\p"
+	.string "I've been researching these statues\n"
+	.string "for many years.\p"
 	.string "Did you know that all Pokémon have\n"
 	.string "innate Individual Values for each of\l"
 	.string "their stats? Pokémon Professors grade\l"
 	.string "them from E- to S+.\p"
 	.string "Normally, there's no way to change them.\p"
-	.string "But normally is the key word!\p"
-	.string "A Rare Shard, when held in the\n"
+	.string "But a Rare Shard, when held in the\n"
 	.string "prescence of an ancient statue like\l"
 	.string "this one, can maximise one of your\l"
 	.string "Pokémon's Individual Values!\p"
@@ -1022,8 +1017,8 @@ GastreeCity_Shard_Trigger_Text_3:
 
 GastreeCity_Shard_Trigger_Text_4:
 # 205 "data//maps/GastreeCity/scripts.pory"
-	.string "What have you done! You stupid,\n"
-	.string "muscle-brained trainer!\p"
+	.string "Argh, you idiot boy!\n"
+	.string "What have you done?\p"
 	.string "You and your Bergmite have destroyed\n"
 	.string "the ancient statue!$"
 
@@ -1044,12 +1039,18 @@ GastreeCity_Shard_Trigger_Text_8:
 # 229 "data//maps/GastreeCity/scripts.pory"
 	.string "...\p"
 	.string "Sigh. Such a loss to culture and\n"
-	.string "history...for such a mundane reason!$"
+	.string "history...$"
 
 GastreeCity_Shard_Trigger_Text_9:
 # 235 "data//maps/GastreeCity/scripts.pory"
 	.string "I can't let this happen any more. We\n"
-	.string "must preser$"
+	.string "must preserve these statues.\p"
+	.string "I'm now too old to go around Cormoria,\n"
+	.string "but you, my dear, are young and able!\l"
+	.string "You must help me preserve these\l"
+	.string "statues!\p"
+	.string "Find all the statues around Cormoria\n"
+	.string "and come back to me.$"
 
 GastreeCity_NPC8_Text_0:
 # 244 "data//maps/GastreeCity/scripts.pory"

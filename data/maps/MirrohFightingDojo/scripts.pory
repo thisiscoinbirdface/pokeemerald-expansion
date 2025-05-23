@@ -31,9 +31,62 @@ mart GardenShop_Inventory {
     ITEM_TIME_SEED
 }
 
+script GardenShop_Cashier2{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Mirroh Gardenery!\pSince berries don't grow in the cold, we import them."))
+	waitmessage
+    //choose berry type
+    message(format("Which type of berry would you like?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Normal Effects", "Damage Reduction")
 
+    if (var(VAR_RESULT) == 0){pokemart(GardenShop_Inventory2)}
+    if (var(VAR_RESULT) == 1){pokemart(GardenShop_Inventory3)}
 
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+    end
+}
 
+mart GardenShop_Inventory2 {
+    ITEM_CHERI_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_LEPPA_BERRY
+    ITEM_ORAN_BERRY
+    ITEM_LUM_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_LIECHI_BERRY
+    ITEM_GANLON_BERRY
+    ITEM_SALAC_BERRY
+    ITEM_PETAYA_BERRY
+    ITEM_APICOT_BERRY
+    ITEM_LANSAT_BERRY
+    ITEM_STARF_BERRY
+}
+
+mart GardenShop_Inventory3 {
+    ITEM_CHILAN_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_ROSELI_BERRY
+}
 
 
 

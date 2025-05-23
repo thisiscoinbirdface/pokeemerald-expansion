@@ -21,10 +21,28 @@ script RivetshoreQuarry_Percy{
 
     lockall
 
+    msgbox(format("It's the Rivetshore Construction CEO's Percy!\pWhat's it doing here? Was it led here by another Pokemon?"))
+    release
+
+    delay(16)
+
+    addobject(33)
+    applymovement(33, moves(fly_down))
+    waitmovement(0)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_in_place_right))
+    waitmovement(0)
+    
+    msgbox(format("It's a Mimikyu! Mimikyu must have been the one playing pranks on everyone!\pMimikyu - you shouldn't be playing pranks on people!"))
+    release
+
+    setwildbattle(SPECIES_MIMIKYU, 40)
+    dowildbattle
+
+    //move perrserker out
     msgbox(format("Percy goes back to its owner!"))
     release
 
-    //move out
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 face_down))
     applymovement(LOCALID_PERCY, moves(walk_right * 3 walk_down * 5 walk_left walk_down * 3))
     waitmovement(0)

@@ -1227,6 +1227,8 @@ script PellucaCity_PostGymEvent_Trigger{
         removeobject(LOCALID_FL_JANIA)
         removeobject(LOCALID_GAB)
 
+        //flags and stuff
+        startquest(QUEST_STOP_TEAM_SOMBER)
         setflag(FLAG_PELLUCA_POSTGYM)
         end
     }
