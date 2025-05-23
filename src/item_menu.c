@@ -760,7 +760,7 @@ static bool8 SetupBagMenu(void)
         CopyPocketNameToWindow(0);
         DrawPocketIndicatorSquare(0, FALSE);
         DrawPocketIndicatorSquare(5, FALSE);
-//        DrawPocketIndicatorSquare(6, FALSE);
+        DrawPocketIndicatorSquare(6, FALSE);
 //        DrawPocketIndicatorSquare(7, FALSE);
         DrawPocketIndicatorSquare(gBagPosition.pocket, TRUE);
         gMain.state++;

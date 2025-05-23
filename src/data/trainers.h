@@ -1265,11 +1265,11 @@ F_TRAINER_FEMALE |
             .species = SPECIES_TAUROS_PALDEA_BLAZE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 578
-            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+            .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
 #line 576
             .ability = ABILITY_INTIMIDATE,
 #line 577
-            .lvl = 18,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

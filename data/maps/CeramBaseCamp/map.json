@@ -323,6 +323,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WhiteSign_CeramBaseCamp_SupplyDepot"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WoodSign_CeramBaseCamp_Something"
     }
   ]
 }

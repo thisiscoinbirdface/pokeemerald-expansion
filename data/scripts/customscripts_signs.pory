@@ -143,9 +143,12 @@ script WhiteSign_CeramBaseCamp_Gym{
     end
 }
 script WoodSign_CeramBaseCamp_Something {
-    msgbox(format("TRAINER TIPS: You don't need to teach your Pokémon HMs to use them! But you do need enough badges."), MSGBOX_SIGN)
+    msgbox(format("TRAINER TIPS: You can relearn old moves via the Pokémon Summary Screen!"), MSGBOX_SIGN)
     end
 }
+
+
+
 
 
 //Mt. Ceram

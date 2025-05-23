@@ -483,7 +483,7 @@ CeramBaseCamp_Main_NPC3_2:
 # 351 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC3_Text_1, MSGBOX_NPC
 # 352 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	giveitem ITEM_OCCA_BERRY, 2
+	giveitem ITEM_OCCA_BERRY, 5
 # 353 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	release
 # 354 "data//maps/CeramBaseCamp_Main/scripts.pory"

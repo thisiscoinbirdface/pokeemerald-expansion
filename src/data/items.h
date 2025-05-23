@@ -7570,7 +7570,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Normal-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7588,7 +7588,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Fire-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7607,7 +7607,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Water-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7625,7 +7625,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "boosts Electric-\n"
             "type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7640,7 +7640,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_GRASS_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sRoseIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7659,7 +7659,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Ice-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7677,7 +7677,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "boosts Fighting-\n"
             "type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7695,7 +7695,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Poison-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 70,
@@ -7714,7 +7714,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Ground-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7732,7 +7732,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Flying-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 50,
@@ -7747,7 +7747,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_PSYCHIC_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sOddIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7766,7 +7766,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Bug-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7781,7 +7781,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_ROCK_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sRockIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -7799,7 +7799,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Ghost-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7817,7 +7817,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Dragon-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 70,
@@ -7836,7 +7836,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Dark-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7854,7 +7854,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "raises the power of\n"
             "Steel-type moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -7874,7 +7874,7 @@ const struct Item gItemsInfo[] =
             "Boosts Attack, but\n"
             "allows the use of\n"
             "only one move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7892,7 +7892,7 @@ const struct Item gItemsInfo[] =
             "Boosts Sp. Atk, but\n"
             "allows the use of\n"
             "only one move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7910,7 +7910,7 @@ const struct Item gItemsInfo[] =
             "Boosts Speed, but\n"
             "allows the use of\n"
             "only one move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7929,7 +7929,7 @@ const struct Item gItemsInfo[] =
             "A bizarre orb that\n"
             "inflicts a burn on\n"
             "holder in battle."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7946,7 +7946,7 @@ const struct Item gItemsInfo[] =
             "A bizarre orb that\n"
             "badly poisons the\n"
             "holder in battle."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7965,7 +7965,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of Rain Dance if\n"
             "used by the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7982,7 +7982,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of Sunny Day if\n"
             "used by the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7999,7 +7999,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of Sandstorm if\n"
             "used by the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8016,7 +8016,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of the move Hail\n"
             "used by the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
@@ -8036,7 +8036,7 @@ const struct Item gItemsInfo[] =
             "Boosts Defense on\n"
             "Electric Terrain,\n"
             "but only one time."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8054,7 +8054,7 @@ const struct Item gItemsInfo[] =
             "Boosts Sp. Def. on\n"
             "Psychic Terrain,\n"
             "but only one time."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8072,7 +8072,7 @@ const struct Item gItemsInfo[] =
             "Boosts Sp. Def. on\n"
             "Misty Terrain,\n"
             "but only one time."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8090,7 +8090,7 @@ const struct Item gItemsInfo[] =
             "Boosts Defense on\n"
             "Grassy Terrain,\n"
             "but only one time."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8110,7 +8110,7 @@ const struct Item gItemsInfo[] =
             "Raises Sp. Atk if\n"
             "the holder is hit by\n"
             "a Water-type move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8129,7 +8129,7 @@ const struct Item gItemsInfo[] =
             "Raises Attack if\n"
             "the holder is hit by\n"
             "an Electric move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8148,7 +8148,7 @@ const struct Item gItemsInfo[] =
             "Raises Sp. Def if\n"
             "the holder is hit by\n"
             "a Water-type move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8166,7 +8166,7 @@ const struct Item gItemsInfo[] =
             "Raises Atk if its\n"
             "holder is hit by an\n"
             "Ice-type move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8187,7 +8187,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "casts a glare to\n"
             "reduce accuracy."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8204,7 +8204,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "restores any\n"
             "lowered stat."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8247,7 +8247,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "occasionally allows\n"
             "the first strike."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8287,7 +8287,7 @@ const struct Item gItemsInfo[] =
             "snaps Pokémon out\n"
             "of infatuation."),
         #endif
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8302,7 +8302,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8331,7 +8331,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 5000 : 200,
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sPureIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8348,7 +8348,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "assures fleeing\n"
             "from wild Pokémon."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8366,7 +8366,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "occasionally\n"
             "prevents fainting."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8383,7 +8383,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "boosts Exp. points\n"
             "earned in battle."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8401,7 +8401,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "improves the\n"
             "critical-hit rate."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8420,7 +8420,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "gradually restores\n"
             "HP in battle."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8438,7 +8438,7 @@ const struct Item gItemsInfo[] =
             "A hold item that\n"
             "restores HP upon\n"
             "striking the foe."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8457,7 +8457,7 @@ const struct Item gItemsInfo[] =
             "A magnifying lens\n"
             "that boosts the\n"
             "accuracy of moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8475,7 +8475,7 @@ const struct Item gItemsInfo[] =
             "A headband that\n"
             "boosts the power\n"
             "of physical moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8494,7 +8494,7 @@ const struct Item gItemsInfo[] =
             "A pair of glasses\n"
             "that ups the power\n"
             "of special moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8512,7 +8512,7 @@ const struct Item gItemsInfo[] =
             "A belt that boosts\n"
             "the power of super\n"
             "effective moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8530,7 +8530,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of barrier moves\n"
             "used by the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8547,7 +8547,7 @@ const struct Item gItemsInfo[] =
             "Boosts move power\n"
             "but holder loses HP\n"
             "with each attack."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8564,7 +8564,7 @@ const struct Item gItemsInfo[] =
             "Allows immediate\n"
             "use of a move that\n"
             "charges first."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8582,7 +8582,7 @@ const struct Item gItemsInfo[] =
             "If the holder has\n"
             "full HP, it endures\n"
             "KO hits with 1 HP."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8601,7 +8601,7 @@ const struct Item gItemsInfo[] =
             "If the holder moves\n"
             "after the foe, it'll\n"
             "boost accuracy."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8619,7 +8619,7 @@ const struct Item gItemsInfo[] =
             "A held item that\n"
             "boosts a move used\n"
             "consecutively."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8636,7 +8636,7 @@ const struct Item gItemsInfo[] =
             "Cuts Speed and\n"
             "becomes vulnerable\n"
             "to Ground moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
@@ -8650,7 +8650,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .description = sFullIncenseDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8667,7 +8667,7 @@ const struct Item gItemsInfo[] =
             "If the holder falls\n"
             "in love, the foe\n"
             "does too."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8685,7 +8685,7 @@ const struct Item gItemsInfo[] =
             "Restores HP for\n"
             "Poison-types.\n"
             "Damages all others."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8702,7 +8702,7 @@ const struct Item gItemsInfo[] =
             "A held item that\n"
             "extends binding\n"
             "moves like Wrap."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 90,
@@ -8719,7 +8719,7 @@ const struct Item gItemsInfo[] =
             "Damages the holder\n"
             "each turn. May\n"
             "latch on to foes."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8736,7 +8736,7 @@ const struct Item gItemsInfo[] =
             "Allows the holder\n"
             "to switch out\n"
             "without fail."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8754,7 +8754,7 @@ const struct Item gItemsInfo[] =
             "A held item that\n"
             "ups the power of\n"
             "HP-stealing moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8771,7 +8771,7 @@ const struct Item gItemsInfo[] =
             "A hooked claw that\n"
             "ups the holder's\n"
             "critical-hit ratio."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8787,7 +8787,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8806,7 +8806,7 @@ const struct Item gItemsInfo[] =
             "Raises the Def and\n"
             "Sp. Def of Pokémon\n"
             "that can evolve."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
@@ -8819,7 +8819,7 @@ const struct Item gItemsInfo[] =
         .name = _("Luster Stone"),
         .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
         .description = sEvolutionStoneDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8837,7 +8837,7 @@ const struct Item gItemsInfo[] =
             "Hurts the foe if\n"
             "they touch its\n"
             "holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -8855,7 +8855,7 @@ const struct Item gItemsInfo[] =
             "Makes the holder\n"
             "float but bursts\n"
             "if hit by an attack."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8873,7 +8873,7 @@ const struct Item gItemsInfo[] =
             "Switches out the\n"
             "foe if they hit the\n"
             "holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8891,7 +8891,7 @@ const struct Item gItemsInfo[] =
             "Moves that usually\n"
             "have no effect will\n"
             "hit the holder."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8908,7 +8908,7 @@ const struct Item gItemsInfo[] =
             "Increases the\n"
             "power of binding\n"
             "moves when held."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8926,7 +8926,7 @@ const struct Item gItemsInfo[] =
             "Switches out the\n"
             "user if they're hit\n"
             "by the foe."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8945,7 +8945,7 @@ const struct Item gItemsInfo[] =
             "If hit by a super-\n"
             "effective move,\n"
             "ups Atk and Sp. Atk."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8963,7 +8963,7 @@ const struct Item gItemsInfo[] =
             "Raises Sp. Def but\n"
             "prevents the use\n"
             "of status moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8981,7 +8981,7 @@ const struct Item gItemsInfo[] =
             "Protect from\n"
             "weather damage and\n"
             "powder moves."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8998,7 +8998,7 @@ const struct Item gItemsInfo[] =
             "This orb boosts\n"
             "Speed if the holder\n"
             "is intimidated."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -9015,7 +9015,7 @@ const struct Item gItemsInfo[] =
             "Extends the length\n"
             "of the active\n"
             "battle terrain."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -9033,7 +9033,7 @@ const struct Item gItemsInfo[] =
             "Guard the holder\n"
             "from contact move\n"
             "effects."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -9050,7 +9050,7 @@ const struct Item gItemsInfo[] =
             "Raises Sp. Atk. if\n"
             "the holder uses a\n"
             "sound-based move."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -9067,7 +9067,7 @@ const struct Item gItemsInfo[] =
             "Forces the user to\n"
             "switch if its stats\n"
             "are lowered."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 50,
@@ -9085,7 +9085,7 @@ const struct Item gItemsInfo[] =
             "Boots that prevent\n"
             "effects of traps\n"
             "set in the field."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -9103,7 +9103,7 @@ const struct Item gItemsInfo[] =
             "Raises Speed if\n"
             "the user misses\n"
             "due to Accuracy."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -9120,7 +9120,7 @@ const struct Item gItemsInfo[] =
             "Lowers Speed if\n"
             "Trick Room is\n"
             "active."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -9137,7 +9137,7 @@ const struct Item gItemsInfo[] =
             "An umbrella that\n"
             "protects from\n"
             "weather effects."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
