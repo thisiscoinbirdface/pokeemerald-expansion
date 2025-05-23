@@ -370,7 +370,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pBut we're the real deal! Let's see what you've got!"))
+    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pOn the other hand, we're the real deal!\pLet's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -464,7 +464,7 @@ script MtCeram_TrainerBattle_GRUNT1 {
 
 script MtCeram_TrainerBattle_GRUNT2 {
     trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
-    msgbox(format("I love Team Somber! No wait...I love money!"))
+    msgbox(format("I love Team Somber! No wait...\nI love money!"))
     release
     end
 }
@@ -493,7 +493,7 @@ script MtCeram_EventScript_NPC1{
 
 //Change this guys dialogue
 script MtCeram_EventScript_NPC2{
-    msgbox(format("I saw a Larvesta here the other day! But they're very rare. The constant Sizzlipede and Venipede fighting scare them away."), MSGBOX_NPC)
+    msgbox(format("If you're here, that means you've got two gym badges, right?\pTo take part in the Pokemon Championship, you'll need all eight badges."), MSGBOX_NPC)
     end
 }
 
@@ -533,7 +533,7 @@ script MtCeram_EventScript_NPCNurse{
 script MtCeram_EventScript_Gabrielle{
     lockall
     speakername("Gabrielle")
-    msgbox(format("Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team. It's not fair!\p..."))
+    msgbox(format("Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team.\pIt's not fair!\p..."))
     release
     delay(30)
     applymovement(5, moves(emote_exclamation_mark))

@@ -478,7 +478,7 @@ script GalecrestCity_NPC_18{
         faceplayer  
         msgbox(format("Have you ever felt like I do?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Experience does not discriminate. We all feel regret.\pBut you still have time to change.\pTake this as a memento - don't let anything bind you!"))
+            msgbox(format("Experience does not discriminate.\nWe all feel regret.\pBut you still have time to change.\pTake this as a memento - don't let anything bind you!"))
             giveitem(ITEM_BINDING_BAND)
             setflag(FLAG_GALECREST_REGRETFULMAN)
         } else {
@@ -503,7 +503,7 @@ script GalecrestCity_NPC_20{
 }
 
 script GalecrestCity_NPC_21{
-    msgbox(format("There's a Dugtrio there that's been digging into the ground. It threw up all these rocks! Nobody from the city office will do anything about it because this neighborhood is low priority."), MSGBOX_NPC)
+    msgbox(format("There's a Dugtrio there that's been digging into the ground down there.\pIt threw up all these rocks!\pNobody will do anything because this neighborhood is low priority."), MSGBOX_NPC)
     end
 }
 

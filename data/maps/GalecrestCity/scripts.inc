@@ -1147,8 +1147,8 @@ GalecrestCity_NPC_18_Text_1:
 
 GalecrestCity_NPC_18_Text_2:
 # 481 "data//maps/GalecrestCity/scripts.pory"
-	.string "Experience does not discriminate. We all\n"
-	.string "feel regret.\p"
+	.string "Experience does not discriminate.\n"
+	.string "We all feel regret.\p"
 	.string "But you still have time to change.\p"
 	.string "Take this as a memento - don't let\n"
 	.string "anything bind you!$"
@@ -1179,11 +1179,10 @@ GalecrestCity_NPC_20_Text_0:
 GalecrestCity_NPC_21_Text_0:
 # 506 "data//maps/GalecrestCity/scripts.pory"
 	.string "There's a Dugtrio there that's been\n"
-	.string "digging into the ground. It threw up all\l"
-	.string "these rocks! Nobody from the city\l"
-	.string "office will do anything about it\l"
-	.string "because this neighborhood is low\l"
-	.string "priority.$"
+	.string "digging into the ground down there.\p"
+	.string "It threw up all these rocks!\p"
+	.string "Nobody will do anything because this\n"
+	.string "neighborhood is low priority.$"
 
 GalecrestCity_NPC_Ranger_Text_0:
 # 511 "data//maps/GalecrestCity/scripts.pory"

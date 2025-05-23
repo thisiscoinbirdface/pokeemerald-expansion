@@ -141,21 +141,20 @@ GalecrestCity_HousesPoor_Jigglypuff_Text_0:
 
 GalecrestCity_HousesPoor_NPC3_Text_0:
 # 48 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "The Poochyena regularly block the\n"
-	.string "roads here. They're a menace to\l"
-	.string "society!$"
+	.string "The Poochyena always block the roads.\n"
+	.string "They're a menace to society!$"
 
 GalecrestCity_HousesPoor_NPC4_Text_0:
 # 53 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "The Poochyena are so cute! I'd like to\n"
-	.string "adopt one someday.$"
+	.string "The Poochyena are so cute!\n"
+	.string "I'd like to adopt one someday.$"
 
 GalecrestCity_HousesPoor_NPC5_Text_0:
 # 58 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "My children play outside all day. Let\n"
-	.string "them have their fun! Soon they'll be\l"
-	.string "studying all day to enter the Detective\l"
-	.string "Academy.$"
+	.string "My children play outside all day.\n"
+	.string "Let them have their fun!\p"
+	.string "Soon they'll be studying all day to\n"
+	.string "enter the Detective Academy.$"
 
 GalecrestCity_HousesPoor_NPC6_Text_0:
 # 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"

@@ -1219,8 +1219,8 @@ MtCeram_EventScript_BeforePeakBattle_Text_11:
 MtCeram_EventScript_BeforePeakBattle_Text_12:
 # 373 "data//maps/MtCeram/scripts.pory"
 	.string "Hey - yeah! But Gabrielle's just a loser.\p"
-	.string "But we're the real deal! Let's see what\n"
-	.string "you've got!$"
+	.string "On the other hand, we're the real deal!\p"
+	.string "Let's see what you've got!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_13:
 # 380 "data//maps/MtCeram/scripts.pory"
@@ -1329,8 +1329,8 @@ MtCeram_TrainerBattle_GRUNT2_Text_1:
 
 MtCeram_TrainerBattle_GRUNT2_Text_2:
 # 467 "data//maps/MtCeram/scripts.pory"
-	.string "I love Team Somber! No wait...I love\n"
-	.string "money!$"
+	.string "I love Team Somber! No wait...\n"
+	.string "I love money!$"
 
 MtCeram_EventScript_NPC1_Text_0:
 # 490 "data//maps/MtCeram/scripts.pory"
@@ -1339,10 +1339,11 @@ MtCeram_EventScript_NPC1_Text_0:
 
 MtCeram_EventScript_NPC2_Text_0:
 # 496 "data//maps/MtCeram/scripts.pory"
-	.string "I saw a Larvesta here the other day!\n"
-	.string "But they're very rare. The constant\l"
-	.string "Sizzlipede and Venipede fighting scare\l"
-	.string "them away.$"
+	.string "If you're here, that means you've got\n"
+	.string "two gym badges, right?\p"
+	.string "To take part in the Pokemon\n"
+	.string "Championship, you'll need all eight\l"
+	.string "badges.$"
 
 MtCeram_EventScript_NPC3_Text_0:
 # 503 "data//maps/MtCeram/scripts.pory"
@@ -1374,8 +1375,8 @@ MtCeram_EventScript_Gabrielle_Text_1:
 	.string "Why do I have to be punished every\n"
 	.string "time? I'm trying my best! I don't want\l"
 	.string "to steal other people's stuff but I'm\l"
-	.string "still doing it for the team. It's not\l"
-	.string "fair!\p"
+	.string "still doing it for the team.\p"
+	.string "It's not fair!\p"
 	.string "...$"
 
 MtCeram_EventScript_Gabrielle_Text_2:

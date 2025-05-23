@@ -377,8 +377,9 @@ MtCeram_Caves_Greta_Main_Text_3:
 MtCeram_Caves_Greta_Main_Text_4:
 # 98 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "My name's Greta. I'm a traveling\n"
-	.string "merchant. Are you a trainer? What's\l"
-	.string "your name?\p"
+	.string "merchant.\p"
+	.string "Are you a trainer?\n"
+	.string "What's your name?\p"
 	.string "...\p"
 	.string "{PLAYER}? Nice to meet you! I have to\n"
 	.string "thank you for saving me. Lets see...$"
@@ -386,12 +387,11 @@ MtCeram_Caves_Greta_Main_Text_4:
 MtCeram_Caves_Greta_Main_Text_5:
 # 102 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "I have some leftover stock that you\n"
-	.string "might like. These gems came all the way\l"
-	.string "from Mt. Mirroh, on the other side of\l"
-	.string "Cormoria! Once per battle, a gem\l"
-	.string "increases the power of its\l"
-	.string "corresponding move type by a third.\l"
-	.string "Take any one you like!$"
+	.string "might like. These gems came from Mt.\l"
+	.string "Mirroh, on the other side of Cormoria!\p"
+	.string "Once per battle, a gem increases the\n"
+	.string "power of its corresponding move type\l"
+	.string "by a third. Take any one you like!$"
 
 MtCeram_Caves_Greta_Main_Text_6:
 # 106 "data//maps/MtCeram_Caves/scripts.pory"

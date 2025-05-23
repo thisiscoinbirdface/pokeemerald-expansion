@@ -45,17 +45,17 @@ script GalecrestCity_HousesPoor_Jigglypuff{
 
 
 script GalecrestCity_HousesPoor_NPC3{
-    msgbox(format("The Poochyena regularly block the roads here. They're a menace to society!"), MSGBOX_NPC)
+    msgbox(format("The Poochyena always block the roads.\nThey're a menace to society!"), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_HousesPoor_NPC4{
-    msgbox(format("The Poochyena are so cute! I'd like to adopt one someday."), MSGBOX_NPC)
+    msgbox(format("The Poochyena are so cute!\nI'd like to adopt one someday."), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_HousesPoor_NPC5{
-    msgbox(format("My children play outside all day. Let them have their fun! Soon they'll be studying all day to enter the Detective Academy."), MSGBOX_NPC)
+    msgbox(format("My children play outside all day.\nLet them have their fun!\pSoon they'll be studying all day to enter the Detective Academy."), MSGBOX_NPC)
     end
 }
 
