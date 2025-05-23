@@ -20,7 +20,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
         giveitem(ITEM_EXP_SHARE)
         speakername("Detective")
-        msgbox(format("What's the matter with you guys? Can't keep it together without the Professor around to help you?"))
+        msgbox(format("What's the matter with you guys?\pCan't keep it together without the Professor around to help you?"))
         release
         fadescreenswapbuffers(FADE_TO_BLACK)
 

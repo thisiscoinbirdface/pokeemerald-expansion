@@ -132,7 +132,7 @@ CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives::
 # 91 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	speakername CarabrueTown_TenebrisLab_EventScript_Start_Text_2
 # 92 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives_Text_0
+	message CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives_Text_0
 # 93 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	applymovement 3, CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives_Movement_0
 # 94 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1266,14 +1266,16 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_5:
 CarabrueTown_TenebrisLab_EventScript_Start_Text_6:
 # 59 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Right, now normally I would brief you on\n"
-	.string "your work, but we've got no time. So I'm\l"
-	.string "just going to have you start working\l"
-	.string "right away. We've been running low on\l"
-	.string "supplies and the nearest Poké Mart is\l"
-	.string "in Fennilahl Town, past Route 1.\p"
+	.string "your work, but we've got no time.\p"
+	.string "So I'm just going to have you start\n"
+	.string "working right away, okay?\p"
+	.string "We've been running low on supplies and\n"
+	.string "the nearest Poké Mart is in Fennilahl\l"
+	.string "Town, past Route 1.\p"
 	.string "Please go and pick up our shipment and\n"
-	.string "bring it back. Be careful! There are\l"
-	.string "some important things in there!$"
+	.string "bring it back.\p"
+	.string "Be careful! There are some important\n"
+	.string "things in there.$"
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_7:
 # 68 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1283,9 +1285,9 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_7:
 	.string "If we had our supplies, I could give you\n"
 	.string "the standard companion Pokémon, but\l"
 	.string "without Professor Tenebris,\l"
-	.string "everything's gone haywire here. You'll\l"
-	.string "have to make do with what you find lying\l"
-	.string "around.\p"
+	.string "everything's gone haywire here.\p"
+	.string "You'll have to make do with what you\n"
+	.string "find lying around.\p"
 	.string "But I promise - as soon as you bring the\n"
 	.string "supplies back from the Poké Mart, we'll\l"
 	.string "pair you with the Pokémon you're meant\l"
@@ -1520,10 +1522,11 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_33:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_34:
 # 306 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "You can't give this kid a job like that!\n"
-	.string "What's your name? {PLAYER}? Pshh,\l"
-	.string "whatever. Look at you! Your Pokémon\l"
-	.string "look exhausted after a single trip to\l"
-	.string "Fennilahl Town!$"
+	.string "What's your name?\p"
+	.string "{PLAYER}?\p"
+	.string "Pshh, whatever. Look at you! Your\n"
+	.string "Pokémon look exhausted after a single\l"
+	.string "trip to Fennilahl Town!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_35:
 # 315 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

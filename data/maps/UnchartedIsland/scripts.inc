@@ -383,6 +383,8 @@ UnchartedIsland_Finale_Battle::
 	delay 24
 # 243 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_10, UnchartedIsland_Finale_Battle_Text_1
+# 245 "data//maps/UnchartedIsland/scripts.pory"
+	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_RUE, UnchartedIsland_Finale_Battle_Text_2
 # 247 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Finale_Ending
 	return
@@ -1994,6 +1996,10 @@ UnchartedIsland_Finale_Battle_Text_1:
 	.string "One of us must step aside.\p"
 	.string "...\p"
 	.string "I'm sorry.$"
+
+UnchartedIsland_Finale_Battle_Text_2:
+# 245 "data//maps/UnchartedIsland/scripts.pory"
+	.string "No! Nooo! NOOO!!!$"
 
 UnchartedIsland_Finale_Ending_Text_0:
 # 254 "data//maps/UnchartedIsland/scripts.pory"

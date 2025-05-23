@@ -4,7 +4,7 @@ mapscripts GastreeGym_MapScripts{}
 script GastreeGym_TrainerBattle_Skip {
 
     trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!\pWho's the Kinger?\pInger the King, of course!"), "Okay, go disturb the Kinger!")
-    msgbox(format("Kinger is what everyone should aspire to be like!"))
+    msgbox(format("The Kinger is what everyone should aspire to be like!"))
     release
     end
 
@@ -27,6 +27,8 @@ script GastreeGym_LeaderBattle {
         waitstate
         release
 
+        fadenewbgm(MUS_RG_GYM)
+
         lockall
         speakername("Inger")
         msgbox(format("C'mon! C'mon!!\p...\pC'moooooooo--"))
@@ -37,8 +39,10 @@ script GastreeGym_LeaderBattle {
 
         speakername("Inger")
         msgbox(format("Who're you? A trainer? You're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
-
-        trainerbattle_single(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Intro, GastreeGym_Text_Defeated, GastreeGym_EventScript_Victory, NO_MUSIC)
+        speakername("Inger")
+        msgbox(GastreeGym_Text_Intro)
+        trainerbattle_no_intro(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Defeated)
+        goto(GastreeGym_EventScript_Victory)
         release
     }
 
@@ -61,6 +65,7 @@ script GastreeGym_EventScript_Victory{
     //Also give 3 rare shards
     speakername("Inger")
     msgbox(format("I also want to give you this."))
+    speakername(NULL)
     giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
     msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokémon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in Gastree City!"))
@@ -68,7 +73,7 @@ script GastreeGym_EventScript_Victory{
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4. If its for the Professor, I would've loved to join you, but I've got a gym to run.\pAll the best, {PLAYER}! Give these Team Somber people a kick and a slap on behalf of the Kinger!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pAll the best, {PLAYER}! Teach Team Somber a lesson on behalf of the Kinger!"))
     releaseall
 }
 
@@ -77,7 +82,7 @@ text GastreeGym_Text_Intro{
 }
 
 text GastreeGym_Text_Defeated{
-    format("Two defeats in a day? What's happening to me!")
+    format("No way! Two defeats in a day?")
 }
 
 

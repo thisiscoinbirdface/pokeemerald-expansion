@@ -52,6 +52,11 @@ script WoodSign_FennilahlTown_Nicknaming {
     end
 }
 
+script WoodSign_Fennilahl_Pokedex{
+    msgbox(format("TRAINER TIPS: You can check your Pokedex for detailed information on Pokemon such as moves and evolution methods!"), MSGBOX_SIGN)
+    end
+}
+
 
 
 
@@ -137,7 +142,10 @@ script WhiteSign_CeramBaseCamp_Gym{
     msgbox(format("Ceram Base Camp Gym and\nManagement Office"), MSGBOX_SIGN)
     end
 }
-
+script WoodSign_CeramBaseCamp_Something {
+    msgbox(format("TRAINER TIPS: You don't need to teach your Pokémon HMs to use them! But you do need enough badges."), MSGBOX_SIGN)
+    end
+}
 
 
 //Mt. Ceram

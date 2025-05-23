@@ -41,8 +41,8 @@ Route1_TrainerBattle_C::
 Route1_EventScripts_RandomDude_Text_0:
 # 4 "data//maps/Route1/scripts.pory"
 	.string "A Pokémon using a move of the same type\n"
-	.string "as itself gets a boost. If Rookidee\l"
-	.string "uses Peck, it'll deal more damage!$"
+	.string "as itself gets a boost. If Pidove uses\l"
+	.string "Peck, it'll deal more damage!$"
 
 Route1_TrainerBattle_A_Text_0:
 # 10 "data//maps/Route1/scripts.pory"
@@ -74,8 +74,8 @@ Route1_TrainerBattle_B_Text_2:
 
 Route1_TrainerBattle_C_Text_0:
 # 27 "data//maps/Route1/scripts.pory"
-	.string "I came from Gastree City to find cool\n"
-	.string "bug-type Pokémon...but I found you\l"
+	.string "I came from Gastree City to find\n"
+	.string "BUG-type Pokémon...but I found you\l"
 	.string "instead!$"
 
 Route1_TrainerBattle_C_Text_1:

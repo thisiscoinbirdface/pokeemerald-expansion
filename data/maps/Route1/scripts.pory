@@ -1,7 +1,7 @@
 mapscripts Route1_MapScripts {}
 
 script Route1_EventScripts_RandomDude {
-    msgbox(format("A Pokémon using a move of the same type as itself gets a boost. If Rookidee uses Peck, it'll deal more damage!"), MSGBOX_NPC)
+    msgbox(format("A Pokémon using a move of the same type as itself gets a boost. If Pidove uses Peck, it'll deal more damage!"), MSGBOX_NPC)
     end
 }
 
@@ -24,7 +24,7 @@ script Route1_TrainerBattle_B {
 }
 
 script Route1_TrainerBattle_C {
-    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find cool bug-type Pokémon...but I found you instead!"), "Well, back to bug-hunting for me.")
+    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find BUG-type Pokémon...but I found you instead!"), "Well, back to bug-hunting for me.")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
     end

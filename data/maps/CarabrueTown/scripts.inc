@@ -125,9 +125,9 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_3:
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_4:
 # 23 "data//maps/CarabrueTown/scripts.pory"
-	.string "What's the matter with you guys? Can't\n"
-	.string "keep it together without the Professor\l"
-	.string "around to help you?$"
+	.string "What's the matter with you guys?\p"
+	.string "Can't keep it together without the\n"
+	.string "Professor around to help you?$"
 
 CarabrueTown_Sign_ChampionHouse_Text_0:
 # 44 "data//maps/CarabrueTown/scripts.pory"
