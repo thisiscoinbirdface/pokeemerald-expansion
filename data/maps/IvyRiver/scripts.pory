@@ -305,9 +305,7 @@ script LilyPond_Fisherman_B_QuestScript{
 script LilyPond_Fisherman_C{
 
     if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 3){
-        msgbox(format("Thank you {PLAYER}! I met my brothers and they've already left for Ivy River. I stayed behind to give you this."), MSGBOX_NPC)
-        giveitem(ITEM_SUPER_ROD)
-        msgbox(format("It has a different mechanism than a Casting Rod and can catch different varieties of Pokémon. A staple in any fisherman's toolkit!\pAnd now it's time for me to leave too.\p...\p{PLAYER}, will you be coming down Ivy River? If it's not too much to ask, we'd appreciate your help in the search. We'll be there, so if you do come, please speak to us. I hope to see you there!"))
+        msgbox(format("Thank you {PLAYER}! I met my brothers and they've already left for Ivy River.\p...\p{PLAYER}, will you be coming down Ivy River? If it's not too much to ask, we'd appreciate your help in the search. We'll be there, so if you do come, please speak to us. I hope to see you there!"))
         release
         delay(8)
 

@@ -206,12 +206,12 @@ CeramBaseCamp_Cyndaquil_Reward_4:
 
 CeramBaseCamp_Cyndaquil_Reward_2:
 # 150 "data//maps/CeramBaseCamp/scripts.pory"
-	setvar VAR_0x8006, ITEM_TM37
+	setvar VAR_0x8006, ITEM_EJECT_BUTTON
 	goto CeramBaseCamp_Cyndaquil_Reward_1
 
 CeramBaseCamp_Cyndaquil_Reward_5:
 # 151 "data//maps/CeramBaseCamp/scripts.pory"
-	setvar VAR_0x8006, ITEM_TM48
+	setvar VAR_0x8006, ITEM_PUNCHING_GLOVE
 	goto CeramBaseCamp_Cyndaquil_Reward_4
 
 
@@ -511,7 +511,7 @@ CeramBaseCamp_Cyndaquil_StartQuest_Text_2:
 	.string "Since then we've been trying to learn it\l"
 	.string "but it's just not working...say, would\l"
 	.string "you be able to help us out? Will you find\l"
-	.string "the TM SUNNY DAY and teach my\l"
+	.string "the TM Sunny Day and teach my\l"
 	.string "Cyndaquil?$"
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_3:
@@ -550,16 +550,15 @@ CeramBaseCamp_Cyndaquil_QuestInProgress_Text_4:
 
 CeramBaseCamp_Cyndaquil_Reward_Text_0:
 # 147 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "In exchange, do you want one of these\n"
-	.string "other TMs I've got?$"
+	.string "In exchange, do you want one of these?$"
 
 CeramBaseCamp_Cyndaquil_Reward_Text_1:
 # 149 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "TM Sandstorm$"
+	.string "Eject Button$"
 
 CeramBaseCamp_Cyndaquil_Reward_Text_2:
 # 149 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "TM Skill Swap$"
+	.string "Punching Glove$"
 
 CeramBaseCamp_Cyndaquil_Reward_Give_Text_0:
 # 157 "data//maps/CeramBaseCamp/scripts.pory"

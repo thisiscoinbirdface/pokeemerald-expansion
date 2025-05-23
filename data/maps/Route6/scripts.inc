@@ -363,7 +363,7 @@ Route6_NPC4_15:
 # 248 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_3
 # 249 "data//maps/Route6/scripts.pory"
-	giveitem ITEM_GOOD_ROD
+	giveitem ITEM_SUPER_ROD
 # 250 "data//maps/Route6/scripts.pory"
 	setvar VAR_ROUTE6_FISHERMAN, 2
 	goto Route6_NPC4_4
@@ -875,7 +875,7 @@ Route6_Trainer_C2_Text_1:
 Route6_Trainer_D_Text_0:
 # 129 "data//maps/Route6/scripts.pory"
 	.string "The secret to catching strong Water\n"
-	.string "Pokémon ? Patience and a Casting Rod.\l"
+	.string "Pokémon ? Patience and a Trolling Rod.\l"
 	.string "Too bad you don't have one!$"
 
 Route6_Trainer_D_Text_1:
@@ -885,7 +885,7 @@ Route6_Trainer_D_Text_1:
 Route6_Trainer_D_Text_2:
 # 130 "data//maps/Route6/scripts.pory"
 	.string "I wonder what Pokémon I can catch here\n"
-	.string "with a Trolling Rod instead...$"
+	.string "with a Casting Rod instead...$"
 
 Route6_Trainer_E_Text_0:
 # 136 "data//maps/Route6/scripts.pory"

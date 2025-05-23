@@ -435,9 +435,14 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Tinkatink
-Level: 14
+Buneary
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chikorita
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_ROUTE4_KID1 ===
 Name: Morty
@@ -492,7 +497,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
+Rolycoly
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -535,7 +540,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magby
+Fletchling
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 

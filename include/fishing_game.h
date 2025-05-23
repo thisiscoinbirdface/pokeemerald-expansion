@@ -3,7 +3,7 @@
 
 // Easily Changed Constants
 #define OLD_ROD_BAR_WIDTH               40   // Default pixel width of the fishing bar. Cannot be below 33 or above 64.
-#define GOOD_ROD_BAR_WIDTH              50   // Fishing bar pixel width for the Good Rod. FG_BAR_WIDTH_FROM_ROD_TYPE must be TRUE. Cannot be below 33 or above 64.
+#define GOOD_ROD_BAR_WIDTH              60   // Fishing bar pixel width for the Good Rod. FG_BAR_WIDTH_FROM_ROD_TYPE must be TRUE. Cannot be below 33 or above 64.
 #define SUPER_ROD_BAR_WIDTH             60   // Fishing bar pixel width for the Super Rod. FG_BAR_WIDTH_FROM_ROD_TYPE must be TRUE. Cannot be below 33 or above 64.
 #define FISHING_BAR_MAX_SPEED           50   // The greater the number, the faster the bar is allowed to go.
 #define FISHING_BAR_BOUNCINESS          1.3  // The greater the number, the less the bar will bounce when it hits the left side. (Decimals are encouraged, as a little goes a long way.)
@@ -11,11 +11,11 @@
 
 #define STARTING_SCORE                  300  // The number of points you already have when the game starts.
 #define SCORE_INCREASE                  4    // The score increases by this many point every frame while the fish is within the bar.
-#define SCORE_DECREASE                  5    // The score decreases by this many point every frame while the fish is outside the bar.
+#define SCORE_DECREASE                  3    // The score decreases by this many point every frame while the fish is outside the bar.
 #define SCORE_MAX                       1920 // The number of points required to win. Must be divisible by SCORE_AREA_WIDTH.
 
 #define FISH_FIRST_MOVE_DELAY           0.8  // Number of seconds before the fish will make its first movement.
-#define FISH_ICON_HITBOX_WIDTH          12   // Width of the fish's hitbox in number of pixels.
+#define FISH_ICON_HITBOX_WIDTH          16   // Width of the fish's hitbox in number of pixels.
 #define FISH_SPEED_MULTIPLIER           125  // Global fish speed multiplier. It is a percent, so 50 would be half speed and 200 would be double speed.
 
 #define DEFAULT_TREASURE_CHANCE         30   // Percent chance a random treasure will spawn if FG_VAR_TREASURE_CHANCE is 0.

@@ -87,7 +87,7 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled Ariana and Cyndaquil saw the move Sunny Day for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM SUNNY DAY and teach my Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("We battled Ariana and Cyndaquil saw the move Sunny Day for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM Sunny Day and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
@@ -144,11 +144,11 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
 
 
 script CeramBaseCamp_Cyndaquil_Reward{
-    message(format("In exchange, do you want one of these other TMs I've got?"))
+    message(format("In exchange, do you want one of these?"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "TM Sandstorm", "TM Skill Swap") 
-    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_TM37)}
-    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_TM48)}
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Eject Button", "Punching Glove") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_EJECT_BUTTON)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_PUNCHING_GLOVE)}
     goto(CeramBaseCamp_Cyndaquil_Reward_Give)
 }
 

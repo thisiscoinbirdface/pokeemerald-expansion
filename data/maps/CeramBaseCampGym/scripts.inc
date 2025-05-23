@@ -389,8 +389,8 @@ CeramBaseCampGym_Red_Text_5:
 # 34 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
-	.string "intimidating FIRE type Pokémon. Avoid\l"
-	.string "using physical attackers!$"
+	.string "intimidating FIRE type Pokémon.\p"
+	.string "Avoid using physical attackers!$"
 
 CeramBaseCampGym_Red_Text_6:
 # 36 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -402,9 +402,9 @@ CeramBaseCampGym_Red_Text_7:
 # 38 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
-	.string "intimidating FIRE type Pokémon. Avoid\l"
-	.string "using physical attackers! Now go get\l"
-	.string "'em, champ-in-the-making!$"
+	.string "intimidating FIRE type Pokémon.\p"
+	.string "Avoid using physical attackers!\p"
+	.string "Now go get 'em, champ-in-the-making!$"
 
 CeramBaseCampGym_Guard_Text_0:
 # 49 "data//maps/CeramBaseCampGym/scripts.pory"

@@ -126,8 +126,8 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Casting Rod. Too bad you don't have one!"), "You beat me without a rod!")
-    msgbox(format("I wonder what Pokémon I can catch here with a Trolling Rod instead..."))
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Trolling Rod. Too bad you don't have one!"), "You beat me without a rod!")
+    msgbox(format("I wonder what Pokémon I can catch here with a Casting Rod instead..."))
     releaseall
     end
 }
@@ -246,7 +246,7 @@ script Route6_NPC4{
                 release
                 removeitem(ITEM_OLD_GATEAU)
                 msgbox(format("I suppose I don't need this any more. Here, why don't you take it? You could start a new hobby too!"))
-                giveitem(ITEM_GOOD_ROD)
+                giveitem(ITEM_SUPER_ROD)
                 setvar(VAR_ROUTE6_FISHERMAN, 2)
             } else {
                 msgbox(format("No, it looks like you haven't. I'll be here when you get one."))

@@ -31,11 +31,11 @@ script CeramBaseCampGym_Red{
         }
     } else { 
         if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)){
-            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon. Avoid using physical attackers!"), MSGBOX_NPC)
+            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon.\pAvoid using physical attackers!"), MSGBOX_NPC)
         } else {
             msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon. Avoid using physical attackers! Now go get 'em, champ-in-the-making!"))
+            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon.\pAvoid using physical attackers!\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)
         }
     }
