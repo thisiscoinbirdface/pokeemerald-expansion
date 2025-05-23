@@ -87,7 +87,7 @@
 #define SUB_QUEST_25        24  //FINALE
 #define SUB_QUEST_26        25
 #define SUB_QUEST_27        26
-#define SUB_QUEST_28        27  
+#define SUB_QUEST_28        27
 #define SUB_QUEST_29        28
 #define SUB_QUEST_30        29
 

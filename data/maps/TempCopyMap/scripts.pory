@@ -1005,3 +1005,6 @@ script Common_EventScript_Tauros_GotoRoute6{
 // 	msgbox(gText_QuestAnnounce, MSGBOX_SIGN)
 // }
 
+
+
+
