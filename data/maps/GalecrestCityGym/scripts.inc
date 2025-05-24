@@ -257,10 +257,10 @@ GalecrestCityGym_Red_Text_7:
 	.string "Academy Student Council. Most\l"
 	.string "detectives use NORMAL type Pokémon\l"
 	.string "that are comfortable in a variety of\l"
-	.string "urban situations. FIGHTING type\l"
-	.string "Pokémon should do well here, and GHOST\l"
-	.string "type Pokémon are immune to NORMAL type\l"
-	.string "attacks!$"
+	.string "urban situations.\p"
+	.string "FIGHTING type Pokémon should do well\n"
+	.string "here, and GHOST type Pokémon are\l"
+	.string "immune to NORMAL type attacks!$"
 
 GalecrestCityGym_NPC1_Text_0:
 # 64 "data//maps/GalecrestCityGym/scripts.pory"

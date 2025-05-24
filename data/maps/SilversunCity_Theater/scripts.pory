@@ -128,7 +128,7 @@ script SilversunCity_Theater_EventScript_SomberBlocker{
     lockall
     faceplayer
     speakername("Gabrielle")
-    msgbox(format("Hey, nobody's allowed back here. Scram!\p...oh, it's you. I can guess what you're here for.\p...\p...\pGo on, get inside then. I won't stop you. With this, we're square, hear me?\pOh, I'm going to get into trouble...but I always pay back my debts!\pI really hope the grunts inside kick you right back out!"))
+    msgbox(format("Hey, nobody's allowed back here. Scram!\p...oh, it's you. Sigh...I can guess what you're here for.\p...\pGo on, get inside then. I won't stop you. With this, we're square, hear me?\pOh, I'm going to get into trouble...but I always pay back my debts!\pI really hope the grunts inside kick you right back out!"))
     release
     
     setflag(FLAG_SILVERSUN_SOMBERHQ_ENTRANCE)
@@ -160,9 +160,9 @@ script SilversunCity_Theater_NPC1{
 //old woman 1st row
 script SilversunCity_Theater_NPC2{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Incredible! Her Servine and Absol! Such a shame they lost, and to such a...nondescript opponent."), MSGBOX_NPC)
+        msgbox(format("Incredible! Her Bombirdier! Such a shame she lost, and to such a...nondescript opponent."), MSGBOX_NPC)
     } else {
-        msgbox(format("They say Gloria caught her Seviper and Absol while shooting on set in the HOENN region."), MSGBOX_NPC)
+        msgbox(format("They say Gloria caught her Bombirdier while shooting an adventure flick in the Ivy River."), MSGBOX_NPC)
     }
     end
 }
@@ -171,14 +171,14 @@ script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("What a show!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I wish Pokémon were allowed in. I would've brought my Sprigatito along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
+        msgbox(format("I wish Pokémon were allowed in. I would've brought my Budew along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
     }
     end
 }
 //girl red right
 script SilversunCity_Theater_NPC4{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Did you see Gloria's Servine! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."), MSGBOX_NPC)
+        msgbox(format("Did you see Gloria's Bombirdier! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."), MSGBOX_NPC)
     } else {
         msgbox(format("I'm a huuuge Gloria fan! I've been waiting for this show for months!"), MSGBOX_NPC)
     }
@@ -265,21 +265,24 @@ script SilversunCity_Theater_NPC6{
         msgbox(format("Right now I'm only an extra, but I'm about to land my first starring role any day now!"), MSGBOX_NPC)
     } else {
         lockall
+        faceplayer
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
          msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
             if (var (VAR_RESULT) == 1){
-                msgbox(format("Oh wow! You're a star! Can I have your autograph?"), MSGBOX_YESNO)
+                msgbox(format("Oh wow! You're a star!\nCan I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
-                    msgbox(format("...Thank you! Please take this. A little something to remember me by!"), MSGBOX_NPC)
+                    msgbox(format("...Thank you! Please take this."))
                     giveitem(ITEM_DESTINY_KNOT)
                     setflag(FLAG_SILVERSUN_THEATER_SCARF)
+                    msgbox(format("A little something to remember me by!"), MSGBOX_NPC)
+                    end
                 }
             } else {
                 msgbox(format("So you're an extra too? Sigh...when will we get our big break?"), MSGBOX_NPC)
             }
         } else {
-            msgbox(format("Oh, so you're part of the crew. I'm an extra, so we're both playing support roles."), MSGBOX_NPC)
+            msgbox(format("Oh, you're part of the crew. I'm an extra, so we're both playing support roles.\pSigh...when will we get our big break?"), MSGBOX_NPC)
         }
         releaseall
     }

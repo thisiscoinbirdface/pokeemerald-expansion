@@ -248,7 +248,7 @@ script VilethornWoods_Trainer_F2{
 }
 
 script VilethornWoods_Trainer_G{
-    trainerbattle_single(TRAINER_VILETHORN_G, format("I'm one of the best bug catchers around. I want to become a Gym Leader one day!"), "Are you a Gym Leader or something?")
+    trainerbattle_single(TRAINER_VILETHORN_G, format("I'm not like the others! I'm one of the best bug catchers around.\pI'm going to become the first BUG-type Pokemon Champion one day!"), "Are you a Gym Leader or something?")
     msgbox(format("As a Gym Leader to-be, my team needs to be able to handle a variety of threats."))
     releaseall
     end

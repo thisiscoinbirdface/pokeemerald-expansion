@@ -982,8 +982,8 @@ GalecrestCity_Totodile_Text_0:
 
 GalecrestCity_NPC_5_Text_0:
 # 323 "data//maps/GalecrestCity/scripts.pory"
-	.string "I need to find a Pokémon that can learn\n"
-	.string "Rock Smash...$"
+	.string "I need to beat the Galecrest Gym\n"
+	.string "Leader to use Rock Smash...$"
 
 GalecrestCity_NPC_5_Text_1:
 # 325 "data//maps/GalecrestCity/scripts.pory"
@@ -1069,7 +1069,7 @@ GalecrestCity_NPC_11_Text_2:
 
 GalecrestCity_Chansey_Text_0:
 # 383 "data//maps/GalecrestCity/scripts.pory"
-	.string "CHANSEY looks happy to be out in the\n"
+	.string "Chansey looks happy to be out in the\n"
 	.string "garden!$"
 
 GalecrestCity_NPC_12_Text_0:

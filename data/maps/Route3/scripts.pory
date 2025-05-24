@@ -75,7 +75,7 @@ script Route3_Skarmory_Trigger{
     applymovement(LOCALID_SKARM, moves(emote_exclamation_mark jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("SKARMORY stares defiantly at you. It roars! Could be dangerous to approach."))
+    msgbox(format("Skarmory stares defiantly at you. It roars! Could be dangerous to approach."))
 
     setvar(VAR_TEMP_0, 1)
 
@@ -90,7 +90,7 @@ script Route3_Skarmory_Battle{
     applymovement(LOCALID_SKARM, moves(emote_exclamation_mark jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("The wild SKARMORY roars and attacks!"))
+    msgbox(format("The wild Skarmory roars and attacks!"))
     release
 
     setwildbattle(SPECIES_SKARMORY, 12)
@@ -109,7 +109,7 @@ script Route3_Skarmory_Battle{
         releaseall
     }            
     if (var(VAR_RESULT) == B_OUTCOME_RAN){
-        msgbox(format("The SKARMORY preens its steely feathers victoriously. Better not disturb it again!"))
+        msgbox(format("The Skarmory preens its steely feathers victoriously. Better not disturb it again!"))
         release
     }
 
@@ -166,6 +166,7 @@ script Route3_Ext_DoubleBattle_Reward_Give{
 }
 
 script Route3_Ext_DoubleBattle_Reward_End{
-    msgbox(format("Come train with us again sometime!"), MSGBOX_NPC)
+    msgbox(format("Come train with us again sometime!"))
+    releaseall
     end
 }

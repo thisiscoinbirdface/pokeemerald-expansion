@@ -233,7 +233,9 @@ Route3_Ext_DoubleBattle_Reward_Give_1:
 
 Route3_Ext_DoubleBattle_Reward_End::
 # 169 "data//maps/Route3/scripts.pory"
-	msgbox Route3_Ext_DoubleBattle_Reward_End_Text_0, MSGBOX_NPC
+	msgbox Route3_Ext_DoubleBattle_Reward_End_Text_0
+# 170 "data//maps/Route3/scripts.pory"
+	releaseall
 	end
 
 
@@ -318,16 +320,16 @@ Route3_NPC2_Text_0:
 
 Route3_Skarmory_Trigger_Text_0:
 # 78 "data//maps/Route3/scripts.pory"
-	.string "SKARMORY stares defiantly at you. It\n"
+	.string "Skarmory stares defiantly at you. It\n"
 	.string "roars! Could be dangerous to approach.$"
 
 Route3_Skarmory_Battle_Text_0:
 # 93 "data//maps/Route3/scripts.pory"
-	.string "The wild SKARMORY roars and attacks!$"
+	.string "The wild Skarmory roars and attacks!$"
 
 Route3_Skarmory_Battle_Text_1:
 # 112 "data//maps/Route3/scripts.pory"
-	.string "The SKARMORY preens its steely\n"
+	.string "The Skarmory preens its steely\n"
 	.string "feathers victoriously. Better not\l"
 	.string "disturb it again!$"
 

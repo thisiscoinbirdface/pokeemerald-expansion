@@ -48,11 +48,11 @@ script SilversunCityGym_EventScript_Red{
         }
     } else { 
         if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
-            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
         } else {
             msgbox(format("Welcome to the Silversun Gym...and Theater Studio! First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead! Silversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
             setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
         }
     }

@@ -51,7 +51,7 @@ script GalecrestCityGym_Red {
         } else {
             msgbox(format("Greetings trainer! Good to see you again.  First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"), MSGBOX_NPC)
+            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations.\pFIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"), MSGBOX_NPC)
             setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
         }
     }

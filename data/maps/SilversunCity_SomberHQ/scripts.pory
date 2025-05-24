@@ -78,7 +78,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
     //Move to Melea
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
-    applymovement(LOCALID_PROF, moves(walk_right walk_up walk_right face_left))
+    applymovement(LOCALID_PROF, moves(walk_right walk_down walk_right face_left))
     waitmovement(0)
     applymovement(LOCALID_GAB, moves(face_down))
     applymovement(LOCALID_GRUNT, moves(face_up))
@@ -89,7 +89,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     speakername("???")
     msgbox(format("So you're the one who defeated Moxie at Mt. Ceram. So young...you must've gotten really lucky.\pMeet your Asst. Prof. Rue. He's been of immense help to us...albeit unwillingly."))
     speakername("Rue")
-    msgbox(format("{PLAYER}, I'm sorry. Th-they got to me."))
+    msgbox(format("{PLAYER}, I'm sorry. Th-they got me."))
     release
     delay(36)
 
@@ -183,7 +183,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(walk_down face_left))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest? Well you'll never see any of it, because I'm going to put an end to you - right here, right now!"))    
+    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it, because I'm going to put an end to you - right here, right now!"))    
 
     //Battle
     trainerbattle_no_intro(TRAINER_SOMBERHQ_MELEA, format("You stupid child!"))
@@ -214,10 +214,10 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
     //Go outside and meet the detectives.
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-    applymovement(LOCALID_PROF, moves(walk_left walk_down face_left))
+    applymovement(LOCALID_PROF, moves(walk_left walk_up face_left))
     waitmovement(0)
     speakername("Rue")
-    msgbox(format("You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\pThere are detectives outside? Let's go and meet them."))
+    msgbox(format("You saved me. You've really become a strong trainer...perhaps I shouldn't have worried about you so much.\p...\pThere are detectives outside?\nLet's go and meet them."))
     release
 
     clearflag(FLAG_HIDE_SILVERSUN_PROF)
@@ -261,7 +261,7 @@ script SilversunCity_SomberHQ_EventScript_Main{
 
 script SomberHQ_EventScript_NPCNurse{
     lockall
-    msgbox(format("Chansey and I were posted in the Silversun Theater but got lost! Now we're surrounded by criminals and we don't know how to get out. So we've been hiding here."))
+    msgbox(format("Chansey and I were posted in the Silversun Theater but got lost!\pNow we're surrounded by criminals and we don't know how to get out.\pSo we've been hiding here."))
     release
     goto(Common_EventScript_NurseJoyOnRoute)
     releaseall
@@ -287,20 +287,20 @@ script SomberHQ_NPC2{
 script SomberHQ_NPC3{
     lockall
     faceplayer
-    msgbox(format("These organised criminals act so high-and-mighty...they don't understand the struggles of us small-time smugglers..."))
+    msgbox(format("These organised criminals act so high-and-mighty...they don't understand the struggles of us small-time smugglers!"))
     releaseall
     end
 }
 script SomberHQ_NPC4{
     lockall
     faceplayer
-    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes. There are dangerous Pokémon down there."))
+    msgbox(format("If you ship contraband through the sewers, things get delayed sometimes."))
     releaseall
     end
 }
 script SomberHQ_NPCGrunt{
     lockall
-    msgbox(format("So you're telling me the shipment's been delayed again? Why, I've got half a mind to -"))
+    msgbox(format("So you're saying the shipment's been delayed again? Why, I've got half a mind to -"))
     applymovement(12, moves(emote_exclamation_mark))
     waitmovement(0)
     faceplayer
@@ -374,8 +374,8 @@ script SomberHQ_Grunt_B{
     end
 }
 script SomberHQ_Grunt_C{
-    trainerbattle_single(TRAINER_SOMBERHQ_C, format("It's you! Think you can just waltz into Team Somber's HQ? Think again!"), "I should think again!")
-    msgbox(format("This is where we plan our business, like how to get the next dreamstone."))
+    trainerbattle_single(TRAINER_SOMBERHQ_C, format("We're going to get the next dreamstone with a certain someone's help!"), "I'm not telling you who it is!")
+    msgbox(format("Okay fine, I'll tell you who's going to help us. It's Nurse Joy.\p...\pHah! Can't believe you fell for that."))
     releaseall
     end
 }
@@ -386,13 +386,13 @@ script SomberHQ_Grunt_D{
     end
 }
 script SomberHQ_Grunt_E{
-    trainerbattle_single(TRAINER_SOMBERHQ_E, format("We're going to get the next dreamstone with a certain someone's help!"), "I'm not telling you who it is!")
-    msgbox(format("Ok fine, I'll tell you. it's Nurse Joy.\p...\pHah! Can't believe you fell for that."))
+    trainerbattle_single(TRAINER_SOMBERHQ_E, format("Thought you could sneak past me?"), "I wish you had sneaked past me!")
+    msgbox(format("What's the point of catching people sneaking around if I just lose?"))
     releaseall
     end
 }
 script SomberHQ_Grunt_F{
-    trainerbattle_single(TRAINER_SOMBERHQ_F, format("That stupid Gabrielle must've let you in - I know it!"), "Stupid Gabrielle!")
+    trainerbattle_single(TRAINER_SOMBERHQ_F, format("You again? That stupid Gabrielle must've let you in - I know it!"), "Stupid Gabrielle!")
     msgbox(format("She's such a klutz - she's singlehandedly ruining this great organisation's image."))
     releaseall
     end
@@ -404,8 +404,8 @@ script SomberHQ_Grunt_G{
     end
 }
 script SomberHQ_Grunt_H{
-    trainerbattle_single(TRAINER_SOMBERHQ_H, format("Gabrielle and I were next up for admin positions...until she goofed at Mt. Ceram! Now it's just me. Let me show you why!"), "You didn't let me show you!")
-    msgbox(format("Fine, go ahead. You can't beat the boss anyway!"))
+    trainerbattle_single(TRAINER_SOMBERHQ_H, format("Gabrielle and I were next up for admin positions...until she goofed at Mt. Ceram! Now it's just me.\pLet me show you why!"), "Guess I'm not admin level yet!")
+    msgbox(format("Fine, go ahead.\nYou can't beat the boss anyway!"))
     releaseall
     end
 }

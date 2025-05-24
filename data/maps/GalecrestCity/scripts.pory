@@ -320,7 +320,7 @@ script GalecrestCity_NPC_5{
     faceplayer    
 
     if (flag(FLAG_GALECREST_ROCKSMASH)){
-        msgbox(format("I need to find a Pokémon that can learn Rock Smash..."), MSGBOX_NPC)
+        msgbox(format("I need to beat the Galecrest Gym Leader to use Rock Smash..."), MSGBOX_NPC)
     } else {
         msgbox(format("This rock can be smashed by a Pokémon that knows a certain move...I forgot which one though! Do you know?"))
         dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Rock Blast", "Rock Slide", "Rock Smash", "Stone Edge")
@@ -380,7 +380,7 @@ script GalecrestCity_NPC_11{
 
 script GalecrestCity_Chansey{
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("CHANSEY looks happy to be out in the garden!"), MSGBOX_NPC)
+    msgbox(format("Chansey looks happy to be out in the garden!"), MSGBOX_NPC)
     end
 }
 

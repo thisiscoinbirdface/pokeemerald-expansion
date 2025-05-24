@@ -54,12 +54,15 @@ script SilversunCity_OnFrame{
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
-                speakername("Detective")
-                msgbox(format("So they want to build a Dreamalyser and use it to go to Ancient Cormoria?\pRUE: Yes.\pThere must be something we're missing. What's there in the past? What could they want?\p...\p...\p...and where's Kohla when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                waitmovement(0)
+                delay(16)
+                msgbox_delay("Detective", format("So they want to build a Dreamalyser and use it to go to Ancient Cormoria?"))
                 release
-                delay(24)
-                speakername("Detective")
-                msgbox(format("Rue - go back home. You've had a hard time. Take care of yourself."))
+                delay(16)
+                msgbox_delay("Rue", format("Yes."))
+                msgbox_delay("Detective", format("There must be something we're missing. What's there in the past?\nWhat could they want?\p...\p...\p...and where's Kohla when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                delay(16)
+                msgbox_delay("Detective", format("Rue - go back home. You've had a hard time. Take care of yourself."))
                 release
                 delay(16)
                 speakername("Rue")
@@ -72,7 +75,7 @@ script SilversunCity_OnFrame{
                 removeobject(LOCALID_TENEBRIS)
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
                 speakername("Detective")
-                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out about Ancient Cormoria. I have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard there. Please tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is Kohla? He should be done chasing Rue's leads by now...we've got to go find him."))
+                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out more about Ancient Cormoria.\pI have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard at the base camp.\pPlease go there and tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is Kohla? He should be done chasing Rue's leads by now...we've got to go find him."))
                 release
                 // KOHLA is still chasing the leads from Rue. \pSo Professor, you hid the dreamstone from Fennilahl Town on Mt. Mirroh?\pTENEBRIS: 
                 // Yes. I began to suspect that someone might be after it, so I took the dreamstone and disappeared. But they found me...and the dreamstone's location.\p

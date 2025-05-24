@@ -341,7 +341,7 @@ SilversunCity_SomberHQ_EventScript_Main::
 # 216 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SilversunCity_SomberHQ_EventScript_Main_Movement_17
 # 217 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_20
+	applymovement LOCALID_PROF, SilversunCity_SomberHQ_EventScript_Main_Movement_9
 # 218 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	waitmovement 0
 # 219 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -648,7 +648,7 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_2:
 # 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_right
 # 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_up
+	walk_down
 # 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	walk_right
 # 81 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -811,16 +811,6 @@ SilversunCity_SomberHQ_EventScript_Main_Movement_19:
 	walk_left
 	step_end
 
-# 217 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-SilversunCity_SomberHQ_EventScript_Main_Movement_20:
-# 217 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_left
-# 217 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	walk_down
-# 217 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	face_left
-	step_end
-
 SilversunCity_SomberHQ_EventScript_Main_Text_0:
 # 41 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "???$"
@@ -976,10 +966,10 @@ SilversunCity_SomberHQ_EventScript_Main_Text_27:
 SomberHQ_EventScript_NPCNurse_Text_0:
 # 264 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Chansey and I were posted in the\n"
-	.string "Silversun Theater but got lost! Now\l"
-	.string "we're surrounded by criminals and we\l"
-	.string "don't know how to get out. So we've been\l"
-	.string "hiding here.$"
+	.string "Silversun Theater but got lost!\p"
+	.string "Now we're surrounded by criminals and\n"
+	.string "we don't know how to get out.\p"
+	.string "So we've been hiding here.$"
 
 SomberHQ_NPC1_Text_0:
 # 276 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -1001,18 +991,16 @@ SomberHQ_NPC3_Text_0:
 	.string "These organised criminals act so\n"
 	.string "high-and-mighty...they don't\l"
 	.string "understand the struggles of us\l"
-	.string "small-time smugglers...$"
+	.string "small-time smugglers!$"
 
 SomberHQ_NPC4_Text_0:
 # 297 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "If you ship contraband through the\n"
-	.string "sewers, things get delayed sometimes.\l"
-	.string "There are dangerous Pokémon down\l"
-	.string "there.$"
+	.string "sewers, things get delayed sometimes.$"
 
 SomberHQ_NPCGrunt_Text_0:
 # 303 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "So you're telling me the shipment's been\n"
+	.string "So you're saying the shipment's been\n"
 	.string "delayed again? Why, I've got half a mind\l"
 	.string "to -$"
 
@@ -1095,17 +1083,19 @@ SomberHQ_Grunt_B_Text_2:
 
 SomberHQ_Grunt_C_Text_0:
 # 377 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "It's you! Think you can just waltz into\n"
-	.string "Team Somber's HQ? Think again!$"
+	.string "We're going to get the next dreamstone\n"
+	.string "with a certain someone's help!$"
 
 SomberHQ_Grunt_C_Text_1:
 # 377 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "I should think again!$"
+	.string "I'm not telling you who it is!$"
 
 SomberHQ_Grunt_C_Text_2:
 # 378 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "This is where we plan our business, like\n"
-	.string "how to get the next dreamstone.$"
+	.string "Okay fine, I'll tell you who's going to\n"
+	.string "help us. It's Nurse Joy.\p"
+	.string "...\p"
+	.string "Hah! Can't believe you fell for that.$"
 
 SomberHQ_Grunt_D_Text_0:
 # 383 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -1125,23 +1115,21 @@ SomberHQ_Grunt_D_Text_2:
 
 SomberHQ_Grunt_E_Text_0:
 # 389 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "We're going to get the next dreamstone\n"
-	.string "with a certain someone's help!$"
+	.string "Thought you could sneak past me?$"
 
 SomberHQ_Grunt_E_Text_1:
 # 389 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "I'm not telling you who it is!$"
+	.string "I wish you had sneaked past me!$"
 
 SomberHQ_Grunt_E_Text_2:
 # 390 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "Ok fine, I'll tell you. it's Nurse Joy.\p"
-	.string "...\p"
-	.string "Hah! Can't believe you fell for that.$"
+	.string "What's the point of catching people\n"
+	.string "sneaking around if I just lose?$"
 
 SomberHQ_Grunt_F_Text_0:
 # 395 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "That stupid Gabrielle must've let you in\n"
-	.string "- I know it!$"
+	.string "You again? That stupid Gabrielle\n"
+	.string "must've let you in - I know it!$"
 
 SomberHQ_Grunt_F_Text_1:
 # 395 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -1161,14 +1149,14 @@ SomberHQ_Grunt_H_Text_0:
 # 407 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Gabrielle and I were next up for admin\n"
 	.string "positions...until she goofed at Mt.\l"
-	.string "Ceram! Now it's just me. Let me show you\l"
-	.string "why!$"
+	.string "Ceram! Now it's just me.\p"
+	.string "Let me show you why!$"
 
 SomberHQ_Grunt_H_Text_1:
 # 407 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "You didn't let me show you!$"
+	.string "Guess I'm not admin level yet!$"
 
 SomberHQ_Grunt_H_Text_2:
 # 408 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "Fine, go ahead. You can't beat the boss\n"
-	.string "anyway!$"
+	.string "Fine, go ahead.\n"
+	.string "You can't beat the boss anyway!$"

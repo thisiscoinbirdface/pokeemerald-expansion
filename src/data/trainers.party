@@ -816,7 +816,7 @@ Herdier
 Level: 16
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Kecleon
+Tranquill
 Level: 17
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -837,7 +837,7 @@ Charcadet
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Teddiursa
+Sentret
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -854,7 +854,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Yamper
-Level: 18
+Level: 19
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Kirlia
@@ -867,7 +867,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Ceruledge @ Oran Berry
 Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Shadow Sneak
 - Will O Wisp
 - Flame Charge
@@ -1226,7 +1226,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Floragato
+Roselia
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1243,7 +1243,7 @@ Zigzagoon-Galar
 Level: 23
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Servine
+Bayleef
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -1260,7 +1260,7 @@ Petilil
 Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Impidimp
+Budew
 Level: 23
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -1294,11 +1294,11 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Absol
+Bayleef
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
-Floragato
+Roselia
 Level: 26
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
@@ -1306,7 +1306,7 @@ Linoone-Galar @ Sitrus Berry
 Level: 26
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
-Servine @ Grass Gem
+Bombirdier @ Flying Gem
 Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
@@ -1487,7 +1487,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Slowpoke-Galar
-Level: 28
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Grimer-Alola
@@ -1496,13 +1496,16 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Yanmega
 Ability: Speed Boost
-Level: 29
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Air Cutter
 - Lunge
 - Ancient Power
 - Hypnosis
 
+Absol
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_KOHLA ===
 Name: Kohla

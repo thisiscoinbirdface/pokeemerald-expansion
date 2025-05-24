@@ -740,9 +740,10 @@ VilethornWoods_Trainer_F1_Text_2:
 
 VilethornWoods_Trainer_G_Text_0:
 # 251 "data//maps/VilethornWoods/scripts.pory"
-	.string "I'm one of the best bug catchers\n"
-	.string "around. I want to become a Gym Leader\l"
-	.string "one day!$"
+	.string "I'm not like the others! I'm one of the\n"
+	.string "best bug catchers around.\p"
+	.string "I'm going to become the first BUG-type\n"
+	.string "Pokemon Champion one day!$"
 
 VilethornWoods_Trainer_G_Text_1:
 # 251 "data//maps/VilethornWoods/scripts.pory"
