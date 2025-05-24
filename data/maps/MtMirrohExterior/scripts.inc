@@ -148,198 +148,208 @@ MtMirrohExterior_Breech_Reward_End::
 # 83 "data//maps/MtMirrohExterior/scripts.pory"
 	delay 16
 # 84 "data//maps/MtMirrohExterior/scripts.pory"
-	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+	applymovement SPECIES_CLEFABLE, MtMirrohExterior_Breech_Reward_End_Movement_0
 # 85 "data//maps/MtMirrohExterior/scripts.pory"
-	delay 8
+	waitmovement 0
 # 86 "data//maps/MtMirrohExterior/scripts.pory"
-	speakername MtMirrohExterior_BreechTrigger_Text_2
+	delay 16
 # 87 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_BreechTrigger_Text_3
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
 # 88 "data//maps/MtMirrohExterior/scripts.pory"
-	release
+	delay 8
 # 89 "data//maps/MtMirrohExterior/scripts.pory"
-	delay 24
+	speakername MtMirrohExterior_BreechTrigger_Text_2
+# 90 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_BreechTrigger_Text_3
 # 91 "data//maps/MtMirrohExterior/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	release
 # 92 "data//maps/MtMirrohExterior/scripts.pory"
-	removeobject LOCALID_BREECH
-# 93 "data//maps/MtMirrohExterior/scripts.pory"
-	removeobject LOCALID_CLEF
-# 94 "data//maps/MtMirrohExterior/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	delay 24
+# 95 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtMirrohExterior_Breech_Reward_End_Movement_1
 # 96 "data//maps/MtMirrohExterior/scripts.pory"
-	setflag FLAG_MIRROH_EXTERIOR_BREECH
+	applymovement LOCALID_BREECH, MtMirrohExterior_Breech_Reward_End_Movement_2
 # 97 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement LOCALID_CLEF, MtMirrohExterior_Breech_Reward_End_Movement_3
+# 98 "data//maps/MtMirrohExterior/scripts.pory"
+	waitmovement 0
+# 99 "data//maps/MtMirrohExterior/scripts.pory"
+	removeobject LOCALID_BREECH
+# 100 "data//maps/MtMirrohExterior/scripts.pory"
+	removeobject LOCALID_CLEF
+# 102 "data//maps/MtMirrohExterior/scripts.pory"
+	setflag FLAG_MIRROH_EXTERIOR_BREECH
+# 103 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Trainer_A::
-# 105 "data//maps/MtMirrohExterior/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHEXT_A, MtMirrohExterior_Trainer_A_Text_0, MtMirrohExterior_Trainer_A_Text_1
-# 106 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_A_Text_2
-# 107 "data//maps/MtMirrohExterior/scripts.pory"
-	releaseall
-	end
-
-
-MtMirrohExterior_Trainer_B::
 # 111 "data//maps/MtMirrohExterior/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHEXT_B, MtMirrohExterior_Trainer_B_Text_0, MtMirrohExterior_Trainer_B_Text_1
+	trainerbattle_single TRAINER_MIRROHEXT_A, MtMirrohExterior_Trainer_A_Text_0, MtMirrohExterior_Trainer_A_Text_1
 # 112 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_B_Text_2
+	msgbox MtMirrohExterior_Trainer_A_Text_2
 # 113 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
-MtMirrohExterior_Trainer_C::
+MtMirrohExterior_Trainer_B::
 # 117 "data//maps/MtMirrohExterior/scripts.pory"
-	trainerbattle_single TRAINER_MIRROHEXT_C, MtMirrohExterior_Trainer_C_Text_0, MtMirrohExterior_Trainer_C_Text_1
+	trainerbattle_single TRAINER_MIRROHEXT_B, MtMirrohExterior_Trainer_B_Text_0, MtMirrohExterior_Trainer_B_Text_1
 # 118 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_Trainer_C_Text_2
+	msgbox MtMirrohExterior_Trainer_B_Text_2
 # 119 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
+MtMirrohExterior_Trainer_C::
+# 123 "data//maps/MtMirrohExterior/scripts.pory"
+	trainerbattle_single TRAINER_MIRROHEXT_C, MtMirrohExterior_Trainer_C_Text_0, MtMirrohExterior_Trainer_C_Text_1
+# 124 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_Trainer_C_Text_2
+# 125 "data//maps/MtMirrohExterior/scripts.pory"
+	releaseall
+	end
+
+
 MtMirrohExterior_NPC_A::
-# 152 "data//maps/MtMirrohExterior/scripts.pory"
+# 158 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 153 "data//maps/MtMirrohExterior/scripts.pory"
+# 159 "data//maps/MtMirrohExterior/scripts.pory"
 	faceplayer
-# 154 "data//maps/MtMirrohExterior/scripts.pory"
+# 160 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_NPC_A_Text_0
-# 155 "data//maps/MtMirrohExterior/scripts.pory"
+# 161 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_B::
-# 159 "data//maps/MtMirrohExterior/scripts.pory"
+# 165 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 160 "data//maps/MtMirrohExterior/scripts.pory"
+# 166 "data//maps/MtMirrohExterior/scripts.pory"
 	faceplayer
-# 161 "data//maps/MtMirrohExterior/scripts.pory"
+# 167 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_NPC_B_Text_0
-# 162 "data//maps/MtMirrohExterior/scripts.pory"
+# 168 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_C::
-# 166 "data//maps/MtMirrohExterior/scripts.pory"
+# 172 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 167 "data//maps/MtMirrohExterior/scripts.pory"
+# 173 "data//maps/MtMirrohExterior/scripts.pory"
 	faceplayer
-# 168 "data//maps/MtMirrohExterior/scripts.pory"
+# 174 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_NPC_C_Text_0
-# 169 "data//maps/MtMirrohExterior/scripts.pory"
+# 175 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_D::
-# 175 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
-# 176 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_NPC_D_Text_0
-# 177 "data//maps/MtMirrohExterior/scripts.pory"
-	release
-# 178 "data//maps/MtMirrohExterior/scripts.pory"
-	faceplayer
-# 179 "data//maps/MtMirrohExterior/scripts.pory"
-	applymovement 9, MtMirrohExterior_NPC_D_Movement_0
-# 180 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_NPC_D_Text_1
 # 181 "data//maps/MtMirrohExterior/scripts.pory"
-	release
+	lockall
 # 182 "data//maps/MtMirrohExterior/scripts.pory"
-	applymovement 9, MtMirrohExterior_BreechTrigger_Movement_3
+	msgbox MtMirrohExterior_NPC_D_Text_0
 # 183 "data//maps/MtMirrohExterior/scripts.pory"
-	waitmovement 0
+	release
 # 184 "data//maps/MtMirrohExterior/scripts.pory"
+	faceplayer
+# 185 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement 9, MtMirrohExterior_NPC_D_Movement_0
+# 186 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_NPC_D_Text_1
+# 187 "data//maps/MtMirrohExterior/scripts.pory"
+	release
+# 188 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement 9, MtMirrohExterior_BreechTrigger_Movement_3
+# 189 "data//maps/MtMirrohExterior/scripts.pory"
+	waitmovement 0
+# 190 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Conkeldurr::
-# 188 "data//maps/MtMirrohExterior/scripts.pory"
+# 194 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 189 "data//maps/MtMirrohExterior/scripts.pory"
+# 195 "data//maps/MtMirrohExterior/scripts.pory"
 	playmoncry SPECIES_CONKELDURR, CRY_MODE_NORMAL
-# 190 "data//maps/MtMirrohExterior/scripts.pory"
+# 196 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_Conkeldurr_Text_0
-# 191 "data//maps/MtMirrohExterior/scripts.pory"
+# 197 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_E::
-# 197 "data//maps/MtMirrohExterior/scripts.pory"
-	lockall
-# 198 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_NPC_E_Text_0
-# 199 "data//maps/MtMirrohExterior/scripts.pory"
-	release
-# 200 "data//maps/MtMirrohExterior/scripts.pory"
-	faceplayer
-# 201 "data//maps/MtMirrohExterior/scripts.pory"
-	applymovement 10, MtMirrohExterior_NPC_D_Movement_0
-# 202 "data//maps/MtMirrohExterior/scripts.pory"
-	msgbox MtMirrohExterior_NPC_D_Text_1
 # 203 "data//maps/MtMirrohExterior/scripts.pory"
-	release
+	lockall
 # 204 "data//maps/MtMirrohExterior/scripts.pory"
-	applymovement 10, MtMirrohExterior_NPC_E_Movement_0
+	msgbox MtMirrohExterior_NPC_E_Text_0
 # 205 "data//maps/MtMirrohExterior/scripts.pory"
-	waitmovement 0
+	release
 # 206 "data//maps/MtMirrohExterior/scripts.pory"
+	faceplayer
+# 207 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement 10, MtMirrohExterior_NPC_D_Movement_0
+# 208 "data//maps/MtMirrohExterior/scripts.pory"
+	msgbox MtMirrohExterior_NPC_D_Text_1
+# 209 "data//maps/MtMirrohExterior/scripts.pory"
+	release
+# 210 "data//maps/MtMirrohExterior/scripts.pory"
+	applymovement 10, MtMirrohExterior_NPC_E_Movement_0
+# 211 "data//maps/MtMirrohExterior/scripts.pory"
+	waitmovement 0
+# 212 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Toxicroak::
-# 210 "data//maps/MtMirrohExterior/scripts.pory"
+# 216 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 211 "data//maps/MtMirrohExterior/scripts.pory"
+# 217 "data//maps/MtMirrohExterior/scripts.pory"
 	playmoncry SPECIES_TOXICROAK, CRY_MODE_NORMAL
-# 212 "data//maps/MtMirrohExterior/scripts.pory"
+# 218 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_Toxicroak_Text_0
-# 213 "data//maps/MtMirrohExterior/scripts.pory"
+# 219 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_F::
-# 219 "data//maps/MtMirrohExterior/scripts.pory"
+# 225 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 220 "data//maps/MtMirrohExterior/scripts.pory"
+# 226 "data//maps/MtMirrohExterior/scripts.pory"
 	faceplayer
-# 221 "data//maps/MtMirrohExterior/scripts.pory"
+# 227 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_NPC_F_Text_0
-# 222 "data//maps/MtMirrohExterior/scripts.pory"
+# 228 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_NPC_G::
-# 227 "data//maps/MtMirrohExterior/scripts.pory"
+# 233 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 228 "data//maps/MtMirrohExterior/scripts.pory"
+# 234 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_NPC_G_Text_0
-# 229 "data//maps/MtMirrohExterior/scripts.pory"
+# 235 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
 
 MtMirrohExterior_Medicham::
-# 234 "data//maps/MtMirrohExterior/scripts.pory"
+# 240 "data//maps/MtMirrohExterior/scripts.pory"
 	lockall
-# 235 "data//maps/MtMirrohExterior/scripts.pory"
+# 241 "data//maps/MtMirrohExterior/scripts.pory"
 	msgbox MtMirrohExterior_Medicham_Text_0
-# 236 "data//maps/MtMirrohExterior/scripts.pory"
+# 242 "data//maps/MtMirrohExterior/scripts.pory"
 	releaseall
 	end
 
@@ -370,15 +380,87 @@ MtMirrohExterior_BreechTrigger_Movement_3:
 	face_right
 	step_end
 
-# 179 "data//maps/MtMirrohExterior/scripts.pory"
+# 84 "data//maps/MtMirrohExterior/scripts.pory"
+MtMirrohExterior_Breech_Reward_End_Movement_0:
+# 84 "data//maps/MtMirrohExterior/scripts.pory"
+	jump_in_place_left
+	step_end
+
+# 95 "data//maps/MtMirrohExterior/scripts.pory"
+MtMirrohExterior_Breech_Reward_End_Movement_1:
+# 95 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_left
+# 95 "data//maps/MtMirrohExterior/scripts.pory"
+	face_right
+	step_end
+
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+MtMirrohExterior_Breech_Reward_End_Movement_2:
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_left
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 96 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+	step_end
+
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+MtMirrohExterior_Breech_Reward_End_Movement_3:
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_left
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_left
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_down
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+# 97 "data//maps/MtMirrohExterior/scripts.pory"
+	walk_right
+	step_end
+
+# 185 "data//maps/MtMirrohExterior/scripts.pory"
 MtMirrohExterior_NPC_D_Movement_0:
-# 179 "data//maps/MtMirrohExterior/scripts.pory"
+# 185 "data//maps/MtMirrohExterior/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 204 "data//maps/MtMirrohExterior/scripts.pory"
+# 210 "data//maps/MtMirrohExterior/scripts.pory"
 MtMirrohExterior_NPC_E_Movement_0:
-# 204 "data//maps/MtMirrohExterior/scripts.pory"
+# 210 "data//maps/MtMirrohExterior/scripts.pory"
 	face_left
 	step_end
 
@@ -449,95 +531,95 @@ MtMirrohExterior_Breech_Reward_End_Text_0:
 	.string "Maybe we'll see you in Rivetshore City!$"
 
 MtMirrohExterior_Trainer_A_Text_0:
-# 105 "data//maps/MtMirrohExterior/scripts.pory"
+# 111 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Once you jump over that ledge over\n"
 	.string "there, you can't come back. So let me\l"
 	.string "battle you before you go!$"
 
 MtMirrohExterior_Trainer_A_Text_1:
-# 105 "data//maps/MtMirrohExterior/scripts.pory"
+# 111 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Okay, you can go!$"
 
 MtMirrohExterior_Trainer_A_Text_2:
-# 106 "data//maps/MtMirrohExterior/scripts.pory"
+# 112 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I'm training here so that I can safely\n"
 	.string "go back to the Pokémon Center if I need\l"
 	.string "to.$"
 
 MtMirrohExterior_Trainer_B_Text_0:
-# 111 "data//maps/MtMirrohExterior/scripts.pory"
+# 117 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I know what you're eyeing! That's why I\n"
 	.string "planted myself here - hahaha!$"
 
 MtMirrohExterior_Trainer_B_Text_1:
-# 111 "data//maps/MtMirrohExterior/scripts.pory"
+# 117 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Aw I lost!$"
 
 MtMirrohExterior_Trainer_B_Text_2:
-# 112 "data//maps/MtMirrohExterior/scripts.pory"
+# 118 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I love the mountains! There are so many\n"
 	.string "good hiding spots.$"
 
 MtMirrohExterior_Trainer_C_Text_0:
-# 117 "data//maps/MtMirrohExterior/scripts.pory"
+# 123 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "I'd rather be skiing on these slopes but\n"
 	.string "I don't mind a battle!$"
 
 MtMirrohExterior_Trainer_C_Text_1:
-# 117 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Yup - I prefer skiing!$"
+# 123 "data//maps/MtMirrohExterior/scripts.pory"
+	.string "I definitely prefer skiing!$"
 
 MtMirrohExterior_Trainer_C_Text_2:
-# 118 "data//maps/MtMirrohExterior/scripts.pory"
+# 124 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "You won't get slopes like these in all of\n"
 	.string "Cormoria!$"
 
 MtMirrohExterior_NPC_A_Text_0:
-# 154 "data//maps/MtMirrohExterior/scripts.pory"
+# 160 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Be careful! There are some nasty types\n"
 	.string "around. They're wearing dark suits and\l"
 	.string "harrassing everyone they see. They\l"
 	.string "even threatened me - a senior citizen!$"
 
 MtMirrohExterior_NPC_B_Text_0:
-# 161 "data//maps/MtMirrohExterior/scripts.pory"
+# 167 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Higher up, the weather becomes too\n"
 	.string "harsh to climb, so to reach Winterlily\l"
 	.string "Hollow, you have to cross the caverns\l"
 	.string "inside the mountain.$"
 
 MtMirrohExterior_NPC_C_Text_0:
-# 168 "data//maps/MtMirrohExterior/scripts.pory"
+# 174 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "The Vivillon from the Garden Shop take\n"
 	.string "good care of the flowers, which is why\l"
 	.string "they grow even in such cold weather!$"
 
 MtMirrohExterior_NPC_D_Text_0:
-# 176 "data//maps/MtMirrohExterior/scripts.pory"
+# 182 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Hang in there Conkeldurr!$"
 
 MtMirrohExterior_NPC_D_Text_1:
-# 180 "data//maps/MtMirrohExterior/scripts.pory"
+# 186 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Don't disturb us - we're training!$"
 
 MtMirrohExterior_Conkeldurr_Text_0:
-# 190 "data//maps/MtMirrohExterior/scripts.pory"
+# 196 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Durr!!!!\p"
 	.string "Conkeldurr's been poisoned, but it's\n"
 	.string "still going strong!$"
 
 MtMirrohExterior_NPC_E_Text_0:
-# 198 "data//maps/MtMirrohExterior/scripts.pory"
+# 204 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Finish this, Toxicroak!$"
 
 MtMirrohExterior_Toxicroak_Text_0:
-# 212 "data//maps/MtMirrohExterior/scripts.pory"
+# 218 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Croooaaakk!!!!\p"
 	.string "It's hammering Conkeldurr with Posion\n"
 	.string "Jabs!$"
 
 MtMirrohExterior_NPC_F_Text_0:
-# 221 "data//maps/MtMirrohExterior/scripts.pory"
+# 227 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Someone told me you could buy Mega\n"
 	.string "Stones here, but it turned out to be a\l"
 	.string "garden supply store!\p"
@@ -545,11 +627,11 @@ MtMirrohExterior_NPC_F_Text_0:
 	.string "City though.$"
 
 MtMirrohExterior_NPC_G_Text_0:
-# 228 "data//maps/MtMirrohExterior/scripts.pory"
+# 234 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "She's meditating with her\n"
 	.string "Medicham...best not disturb her.$"
 
 MtMirrohExterior_Medicham_Text_0:
-# 235 "data//maps/MtMirrohExterior/scripts.pory"
+# 241 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "She's meditating with her trainer...best\n"
 	.string "not disturb her.$"

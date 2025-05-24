@@ -814,10 +814,10 @@ MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0:
 	.string "I was taking these Chanseys up to\n"
 	.string "Winterlily Hollow to help the Nurse Joy\l"
 	.string "there, but there was a cave-in and one\l"
-	.string "of the Chanseys got lost! We can't go\l"
-	.string "through these caves alone - the\l"
-	.string "Pokémon are too fierce. Please find\l"
-	.string "Chansey for us!$"
+	.string "of the Chanseys got lost!\p"
+	.string "We can't go through these caves alone -\n"
+	.string "the Pokémon are too fierce.\p"
+	.string "Please find Chansey for us!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_0:
 # 102 "data//maps/MirrohInterior_1F/scripts.pory"

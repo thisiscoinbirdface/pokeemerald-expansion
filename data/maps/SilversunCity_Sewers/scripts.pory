@@ -293,7 +293,6 @@ mart SilversunCity_Sewers_Market_A_Inventory{
     ITEM_TM17
     ITEM_TM19    
     ITEM_TM21
-    ITEM_TM34
     ITEM_TM37
     ITEM_TM40
 }

@@ -328,13 +328,13 @@ script WhiteSign_MirrohBaseCamp_Martha{
 }
 
 
-//route 8
+//mirroh ext
 script WhiteSign_Route8_ToBaseCamp{
-    msgbox(format("Route 8\p{DOWN_ARROW} Mirroh Base Camp.\n{UP_ARROW} Mt. Mirroh."), MSGBOX_SIGN)
+    msgbox(format("Mt. Mirroh\p{DOWN_ARROW} Mirroh Base Camp.\n{UP_ARROW} Mirroh Caverns."), MSGBOX_SIGN)
     end
 }
 script WhiteSign_Route8_ToMtMirroh{
-    msgbox(format("Mt. Mirroh Caverns\p{UP_ARROW} Winterlily Hollow.\n{DOWN_ARROW} Mirroh Base Camp."), MSGBOX_SIGN)
+    msgbox(format("Mirroh Caverns\p{UP_ARROW} Winterlily Hollow.\n{DOWN_ARROW} Mirroh Base Camp."), MSGBOX_SIGN)
     end
 }
 script WhiteSign_Route8_Dojo{

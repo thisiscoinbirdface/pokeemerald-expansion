@@ -928,20 +928,20 @@ MirrohBaseCampGym_Leader_Text_11:
 
 MirrohBaseCampGym_Leader_Text_12:
 # 324 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "And you must accept this as well. This\n"
-	.string "is my last one!$"
+	.string "And you must accept this as well.\n"
+	.string "This is my last one!$"
 
 MirrohBaseCampGym_Leader_Text_13:
 # 327 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "I see the closure of this gym as\n"
 	.string "destiny's way of telling Medicham and\l"
-	.string "me to lay down our fists. It's time we\l"
-	.string "explored new things.$"
+	.string "me to lay down our fists.\p"
+	.string "It's time we explored new things.$"
 
 MirrohBaseCampGym_Leader_Text_14:
 # 329 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "I feel satisfied. A fitting end - to\n"
-	.string "have been bested by a trainer of your\l"
-	.string "caliber!\p"
-	.string "Carry on our legacy, {PLAYER}! Show\n"
-	.string "the world your iron fists!$"
+	.string "I feel satisfied. This is a fitting end -\n"
+	.string "to have been bested by a trainer of\l"
+	.string "your caliber!\p"
+	.string "Carry on our legacy, {PLAYER}!\n"
+	.string "Show the world your iron fists!$"

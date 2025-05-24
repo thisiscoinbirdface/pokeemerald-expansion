@@ -685,13 +685,13 @@ WhiteSign_MirrohBaseCamp_Martha_Text_0:
 
 WhiteSign_Route8_ToBaseCamp_Text_0:
 # 333 "data//scripts/customscripts_signs.pory"
-	.string "Route 8\p"
+	.string "Mt. Mirroh\p"
 	.string "{DOWN_ARROW} Mirroh Base Camp.\n"
-	.string "{UP_ARROW} Mt. Mirroh.$"
+	.string "{UP_ARROW} Mirroh Caverns.$"
 
 WhiteSign_Route8_ToMtMirroh_Text_0:
 # 337 "data//scripts/customscripts_signs.pory"
-	.string "Mt. Mirroh Caverns\p"
+	.string "Mirroh Caverns\p"
 	.string "{UP_ARROW} Winterlily Hollow.\n"
 	.string "{DOWN_ARROW} Mirroh Base Camp.$"
 

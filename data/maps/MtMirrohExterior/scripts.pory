@@ -81,6 +81,9 @@ script MtMirrohExterior_Breech_Reward_End{
     msgbox(format("Maybe we'll see you in Rivetshore City!"))
     release
     delay(16)
+    applymovement(SPECIES_CLEFABLE, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
     delay(8)
     speakername("Clefable")    
@@ -88,10 +91,13 @@ script MtMirrohExterior_Breech_Reward_End{
     release
     delay(24)
 
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    //moveout
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_right))
+    applymovement(LOCALID_BREECH, moves(walk_left walk_down * 3 walk_right * 8))
+    applymovement(LOCALID_CLEF, moves(walk_left*2 walk_down * 3 walk_right * 8))
+    waitmovement(0)
     removeobject(LOCALID_BREECH)
     removeobject(LOCALID_CLEF)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
 
     setflag(FLAG_MIRROH_EXTERIOR_BREECH)
     releaseall
@@ -114,7 +120,7 @@ script MtMirrohExterior_Trainer_B{
     end
 }
 script MtMirrohExterior_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHEXT_C, format("I'd rather be skiing on these slopes but I don't mind a battle!"), "Yup - I prefer skiing!")
+    trainerbattle_single(TRAINER_MIRROHEXT_C, format("I'd rather be skiing on these slopes but I don't mind a battle!"), "I definitely prefer skiing!")
     msgbox(format("You won't get slopes like these in all of Cormoria!"))
     releaseall
     end

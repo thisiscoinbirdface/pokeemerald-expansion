@@ -39,7 +39,7 @@ script MirrohInterior_1F_EventScript_Nurse{
 
 script MirrohInterior_1F_EventScript_Chansey{
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("Chansey looks stressed! It must be worried about its friend."), MSGBOX_NPC)
+    msgbox(format("Chansey looks stressed!\nMust be worried about its friend."), MSGBOX_NPC)
     end
 }
 
@@ -86,7 +86,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
     return
 }
 script MirrohInterior_1F_EventScript_NurseQuest_Main{
-    msgbox(format("I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost! We can't go through these caves alone - the Pokémon are too fierce. Please find Chansey for us!"))
+    msgbox(format("I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost!\pWe can't go through these caves alone - the Pokémon are too fierce.\pPlease find Chansey for us!"))
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
@@ -204,8 +204,8 @@ script MirrohInterior_1F_Trainer_A{
 
 //MANIAC (ITEM PROTECTOR)
 script MirrohInterior_1F_Trainer_B{
-    trainerbattle_single(TRAINER_MIRROHINT_B, format("No! That item's mine!"), format("Fine, you can have it..."))
-    msgbox(format("Travelers often leave rare items inside caves and mountains. That's where the money is, baby!"))
+    trainerbattle_single(TRAINER_MIRROHINT_B, format("Nope! No way! That item's mine!"), format("Fine, you can have it..."))
+    msgbox(format("Travelers often leave rare items inside caves and mountains."))
     releaseall
 }
 
@@ -270,7 +270,7 @@ script MirrohInterior_1F_NPC_A{
 }
 //Generic lady
 script MirrohInterior_1F_NPC_B{
-    msgbox(format("The way to Winterlily Hollow is past the ledge above. But how do I cross the ledge?"), MSGBOX_NPC)
+    msgbox(format("Winterlily Hollow is past the ledge above.\nBut how do I cross the ledge?"), MSGBOX_NPC)
     end
 }
 //lass

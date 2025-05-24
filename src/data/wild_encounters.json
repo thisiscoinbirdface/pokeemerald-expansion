@@ -13335,7 +13335,7 @@
           "map": "MAP_MIRROH_INTERIOR_1F",
           "base_label": "gMirrohInterior_1F0",
           "land_mons": {
-            "encounter_rate": 9,
+            "encounter_rate": 8,
             "mons": [
               {
                 "min_level": 26,
