@@ -92,7 +92,7 @@ script MirrohBaseCampGym_EventScript_Main{
         waitmovement(0)
         delay(16)
         speakername("Carona")
-        msgbox(format("I don't remember training two crybabies! You have to be antifragile. Life is going to throw much harder challenges than this. Now come on, wipe those tears!"), MSGBOX_NPC)
+        msgbox(format("I don't remember training two crybabies! You need to be resilient.\pLife is going to throw much harder challenges than this.\pNow come on - wipe those tears!"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -107,7 +107,7 @@ script MirrohBaseCampGym_EventScript_Main{
         waitmovement(0)
         delay(16)
         speakername("Carona")
-        msgbox(format("No buts! Stop moping. You two said it yourself - we had such a good time. I want you two to cherish that. Got it?"), MSGBOX_NPC)
+        msgbox(format("No buts! Stop moping. You two said it yourself - we had such a good time.\pI want you two to cherish that.\nGot it?"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -220,13 +220,13 @@ script MirrohBaseCampGym_EventScript_Main{
 
 
 script MirrohBaseCampGym_TrainerA{
-    trainerbattle_single(TRAINER_MIRROHEXT_G ,format("I've trained my FIGHTING type Pokémon in the strongest gym in Cormoria!"), format("I don't want to leave!"))
+    trainerbattle_single(TRAINER_MIRROHEXT_G ,format("I've trained my FIGHTING type Pokémon in the strongest gym in Cormoria!\pGive me your best shot!"), format("I don't want to leave!"))
     msgbox(format("Sniff...that was a good battle, trainer."))
     releaseall
     end
 }
 script MirrohBaseCampGym_TrainerB{
-    trainerbattle_single(TRAINER_MIRROHEXT_H ,format("Leader Carona taught me and my Pokémon to use our fists for maximum impact!"), format("This is our home!"))
+    trainerbattle_single(TRAINER_MIRROHEXT_H ,format("Leader Carona taught me and my Pokémon to use our fists for maximum impact!\pYou're going down!"), format("This is our home!"))
     msgbox(format("Sob...what a great last battle."))
     releaseall
     end
@@ -248,17 +248,21 @@ script MirrohBaseCampGym_Leader{
         speakername("Carona")
         msgbox(format("Use your power wisely. As for me, it's time to move on."))
     } else {
+        special(SaveGame)
+        waitstate
+        release
+
         //Intro
         speakername("Carona")
         msgbox(format("Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left to welcome you to."))
         release
         delay(16)
         speakername("Carona")
-        msgbox(format("My name is Carona, trainer. I am the former Leader of the Mirroh Base Camp Gym. The Pokémon League recently decomissioned this gym."))
+        msgbox(format("My name is Carona. I am the former Leader of the Mirroh Base Camp Gym.\pYou see, the Pokémon League recently decomissioned this gym."))
         release
         delay(60)
         speakername("Carona")
-        msgbox(format("They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, my trainers left. Only my two best trainers stayed with me."))
+        msgbox(format("They took the entrance statues out first. Then they removed all the gym puzzle equipment.\p...\pFinally, one by one, my trainers left.\pOnly my two best trainers stayed."))
         release
         delay(30)
         speakername("Carona")
@@ -268,17 +272,17 @@ script MirrohBaseCampGym_Leader{
         waitmovement(0)
         delay(12)
         speakername("Carona")
-        msgbox(format("But I was a Gym Leader once! You understand? I was powerful and strong. I was something, someone! Countless trainers paid me their respects in battle, and to the chosen few destined for the top, I would award the coveted lapel pin known as the Ironfist Badge!"))
+        msgbox(format("But I was a Gym Leader once, you understand? I was powerful and strong.\pI was something, someone! Countless trainers paid me their respects in battle, and to the chosen few destined for the top, I would award the coveted lapel pin known as the Ironfist Badge!"))
         release
         delay(60)
         speakername("Carona")
-        msgbox(format("...but that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I have one badge left. Will you be the one to deliver the final blow?"))
+        msgbox(format("...but that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I have one badge left.\pPerhaps you are the one destined to deliver the final blow...\pBut I'm still a Leader! And I will be until the very end!"))
 
         hidefollower
 
         fadescreen(FADE_TO_BLACK)
         release
-        setobjectxy(OBJ_EVENT_ID_PLAYER, 1, 5)
+        setobjectxy(OBJ_EVENT_ID_PLAYER, 0, 5)
 
         special(SpawnCameraObject)
         applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
@@ -289,7 +293,7 @@ script MirrohBaseCampGym_Leader{
         waitmovement(0)
         fadescreen(FADE_FROM_BLACK)
         speakername("Carona")
-        msgbox(format("Now, trainer, feel the force of these iron fists!"))
+        msgbox(format("Now, trainer, I'll make you feel the force of these iron fists!"))
         release
 
         //Battle
@@ -303,16 +307,9 @@ script MirrohBaseCampGym_Leader{
 
         special(SpawnCameraObject)
         applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 2))
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 5))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 6))
         waitmovement(0)
         special(RemoveCameraObject)
-
-
-        // fadescreenswapbuffers(FADE_TO_BLACK)
-        // setobjectxy(OBJ_EVENT_ID_PLAYER, 7, 5)
-        // applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-        // applymovement(1, moves(face_left))
-        // fadescreenswapbuffers(FADE_FROM_BLACK)
 
         speakername("Carona")
         msgbox(format("How gratifying that my last badge goes to someone with your guts!"))
@@ -324,12 +321,12 @@ script MirrohBaseCampGym_Leader{
         message(format("{PLAYER} received the Ironfist Badge from Carona."))
         call(Common_EventScript_PlayGymBadgeFanfare)
         speakername("Carona")
-        msgbox(format("And you must accept this as well. This is my last one!"))
+        msgbox(format("And you must accept this as well.\nThis is my last one!"))
         giveitem(ITEM_RARE_SHARD) 
         speakername("Carona")
-        msgbox(format("I see the closure of this gym as destiny's way of telling Medicham and me to lay down our fists. It's time we explored new things."))
+        msgbox(format("I see the closure of this gym as destiny's way of telling Medicham and me to lay down our fists.\pIt's time we explored new things."))
         speakername("Carona")
-        msgbox(format("I feel satisfied. A fitting end - to have been bested by a trainer of your caliber!\pCarry on our legacy, {PLAYER}! Show the world your iron fists!"))
+        msgbox(format("I feel satisfied. This is a fitting end - to have been bested by a trainer of your caliber!\pCarry on our legacy, {PLAYER}!\nShow the world your iron fists!"))
         release
 
     }

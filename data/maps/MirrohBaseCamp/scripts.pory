@@ -289,8 +289,6 @@ script MirrohBaseCamp_Trainer_B{
     lockall
     faceplayer
 
-    msgbox(format("What a dreadfully sad little town! It's a wonder this gym lasted so long."), MSGBOX_NPC)
-
     if (flag(FLAG_MIRROHBASECAMP_TRAINER_A)) {
         msgbox(format("I saw the battle with the other trainer. You're not bad, but you'll have to try harder than that to beat me!"))
         trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format("Stop trying so hard!"))
@@ -301,6 +299,8 @@ script MirrohBaseCamp_Trainer_B{
         applymovement(9, moves(walk_left *10))
         waitmovement(0)
         removeobject(9)
+    } else {
+        msgbox(format("What a dreadfully sad little town!\pIt's a wonder this gym lasted so long."), MSGBOX_NPC)
     }
 
     releaseall
@@ -319,7 +319,7 @@ script MirrohBaseCamp_Trainer_C{
         msgbox(format("What? If you keep looking at me like that, I'll make you pay!"))
         trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format("You made me pay!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
-        msgbox(format("Grr - fine! Go in first! I'll have to go heal. I hope Carona wipes the floor with you!"))
+        msgbox(format("Grr - fine! Go inside! I bet Carona wipes the floor with you!"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(10, moves(walk_left *10))
