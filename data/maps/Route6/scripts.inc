@@ -429,7 +429,7 @@ Route6_Gabrielle_Trigger1_2:
 
 Route6_Gabrielle_Main::
 # 329 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_0
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_0
 # 330 "data//maps/Route6/scripts.pory"
 	delay 24
 # 331 "data//maps/Route6/scripts.pory"
@@ -875,7 +875,7 @@ Route6_Trainer_C2_Text_1:
 Route6_Trainer_D_Text_0:
 # 129 "data//maps/Route6/scripts.pory"
 	.string "The secret to catching strong Water\n"
-	.string "Pokémon ? Patience and a Trolling Rod.\l"
+	.string "Pokémon ? Patience and a Trolling Rod.\p"
 	.string "Too bad you don't have one!$"
 
 Route6_Trainer_D_Text_1:
@@ -995,15 +995,14 @@ Route6_Trainer_K_Text_2:
 Route6_NPC1_Text_0:
 # 212 "data//maps/Route6/scripts.pory"
 	.string "When I was young, there was no route\n"
-	.string "through these marshes. Now Route 6\l"
-	.string "connects Silversun City to Pelluca\l"
-	.string "City.$"
+	.string "through these marshes.\p"
+	.string "Now Route 6 connects Silversun City to\n"
+	.string "Pelluca City.$"
 
 Route6_NPC2_Text_0:
 # 220 "data//maps/Route6/scripts.pory"
-	.string "I wonder what's over there...if I had a\n"
-	.string "Pokémon that knew SURF, I could swim\l"
-	.string "over!$"
+	.string "I wonder what's over there...if I had the\n"
+	.string "HM Surf, I could swim over!$"
 
 Route6_NPC3_Text_0:
 # 227 "data//maps/Route6/scripts.pory"
@@ -1152,5 +1151,9 @@ Route6_Gabrielle_Victory_Text_2:
 # 421 "data//maps/Route6/scripts.pory"
 	.string "I live in Pelluca City, just past the\n"
 	.string "Hoya River. I was on my way home when\l"
-	.string "those grunts ambushed me...I'm going\l"
-	.string "there now. See you around.$"
+	.string "those grunts ambushed me...\p"
+	.string "It's not fair! I've already been kicked\n"
+	.string "out of Team Somber.\p"
+	.string "I wish they'd just leave me alone!\p"
+	.string "I'm going back home now.\n"
+	.string "See you around.$"

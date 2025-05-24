@@ -35,7 +35,7 @@ script SilversunCity_Houses_Artist{
                 giveitem(ITEM_HM04)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
                 speakername("Arsalan")
-                msgbox(format("I have no need of it, because my true strength lies in my artistic vision! But you, my dear helpful philistine, might benefit from it. But you'll need to receive the Drama Badge from Gloria before your Pokémon can use it. Farewell!"), MSGBOX_NPC)
+                msgbox(format("I have no need of it, because my true strength lies in my artistic vision! But you, my dear helpful philistine, might benefit from it. But you'll need to receive the Drama Badge from Gloria before your Pokémon can use it.\pFarewell!"), MSGBOX_NPC)
             } else {
                 speakername("Arsalan")
                 msgbox(format("But you do not have it! An artist's eyes cannot be fooled."), MSGBOX_NPC)

@@ -916,7 +916,7 @@ script PellucaCity_EventScripts_Gabrielle{
     release
     giveitem(ITEM_CHOICE_BAND)
     speakername("Gabrielle")
-    msgbox(format("Who we are is defined by the choices we make, and once we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already. Best of luck, {PLAYER}."))
+    msgbox(format("Who we are is defined by the choices we make.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already.\pBest of luck, {PLAYER}."))
     release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))

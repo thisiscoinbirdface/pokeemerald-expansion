@@ -43,11 +43,11 @@ mapscripts RangerInstitute_MapScripts{}
 
 //THE INTERVIEW
 script RangerInstitute_1F_ApplicationPC{
-    msgbox(format("{PLAYER} booted up the Application PC."))
+    msgbox(format("{PLAYER} booted up the Pokémon Ranger Application PC."))
     release
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("YOU ALREADY HAVE AN APPLICATION IN PROGRESS."), MSGBOX_SIGN)
+        msgbox(format("ERROR: YOU ALREADY HAVE AN\nAPPLICATION IN PROGRESS."), MSGBOX_SIGN)
         end
     }
 
@@ -55,9 +55,9 @@ script RangerInstitute_1F_ApplicationPC{
         msgbox(format("WOULD YOU LIKE TO PRINT AN APPLICATION FORM?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             showmoneybox(0, 0)
-            msgbox(format("IT WILL COST 500. PROCEED WITH PRINTING?"), MSGBOX_YESNO)
+            msgbox(format("IT WILL COST 500.\nPROCEED WITH PRINTING?"), MSGBOX_YESNO)
+            hidemoneybox
             if (var(VAR_RESULT) == 1){
-                hidemoneybox
                 msgbox(format("...\pA piece of paper comes out of the PC!\pPLEASE BRING THIS FORM TO THE INTERVIEWER ON DUTY."))
                 setvar(VAR_RANGER_INSTITUTE, 1)
             } else {
@@ -88,7 +88,8 @@ script RangerInstitute_1F_Interviewer{
         applymovement(4, moves(face_left))
         waitmovement(0)
         delay(30)
-
+        msgbox(format("This interview will consist of five questions. You are expected to answer all of them correctly. If even one question is wrong, you'll fail.\pGot it?\pGood, let's start."))
+        release
         goto(RangerInstitute_1F_InterviewQ1)
 
     } else {
@@ -99,7 +100,7 @@ script RangerInstitute_1F_Interviewer{
 }
 
 script RangerInstitute_1F_InterviewFail{
-    msgbox(format("Sorry! That's the wrong answer. You have failed this interview.\pPlease feel free to apply again!\p...\p...sigh, when will we ever get a decent candidate?"))
+    msgbox(format("Sorry! That's the wrong answer. You have failed this interview.\pPlease feel free to apply again!\p...\p...sigh, when will we ever get a\ndecent candidate?"))
     release
     setvar(VAR_RANGER_INSTITUTE, 0)
 }
@@ -139,7 +140,7 @@ script RangerInstitute_1F_InterviewQ2{
 script RangerInstitute_1F_InterviewQ3{
     //Question 1
     applymovement(4, moves(emote_question_mark))
-    message(format("Q: Which of these Pokémon is GHOST type?"))
+    message(format("Q: Which of the following is a GHOST type Pokémon?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Dhelmise", "Zigzagoon", "Delphox", "Ninetales")
 
@@ -177,7 +178,7 @@ script RangerInstitute_1F_InterviewQ5{
 
     //Check answers
     if (var(VAR_RESULT) == 2){
-        msgbox(format("Correct! And with that, this interview is over."))
+        msgbox(format("Correct! And that's the final question! This interview is over."))
         goto(RangerInstitute_1F_InterviewPass)
     } else {
         goto(RangerInstitute_1F_InterviewFail)
@@ -185,12 +186,12 @@ script RangerInstitute_1F_InterviewQ5{
 }
 
 script RangerInstitute_1F_InterviewPass{
-    msgbox(format("Congratulations {PLAYER}! You've cleared the interview and we are now proud to call you a Pokémon Ranger Recruit. Welcome to the Cormoria Pokémon Ranger Institute!"))
+    msgbox(format("Congratulations {PLAYER}! You've cleared the interview. We're now proud to call you a Pokémon Ranger Recruit.\pWelcome to the Cormoria Pokémon\nRanger Institute!"))
     release
     delay(8)
 
     //promotion
-    message(format("{PLAYER} is now a Recruit!"))
+    message(format("{PLAYER} is now an official Pokémon Ranger Recruit!"))
     waitmessage
     call(Common_EventScript_PlayGymBadgeFanfare)    
 
@@ -226,11 +227,11 @@ script RangerInstitute_1F_NPC3{
 //Blockers
 script RangerInstitute_1F_BlockerBasement{
     if (var(VAR_RANGER_INSTITUTE) == 0){
-        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokemon Rangers only."), MSGBOX_NPC)
+        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
         end
     }
     if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokemon Rangers only."), MSGBOX_NPC)
+        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
         end
     }
 
@@ -264,7 +265,7 @@ script RangerInstitute_1F_BlockerUpstairs{
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 2){
-        msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit! So I'll be keeping an eye on you."), MSGBOX_NPC)
+        msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit!\lSo I'll be keeping an eye on you."), MSGBOX_NPC)
     }
     end
 }
@@ -311,7 +312,7 @@ script RangerInstitute_2F_Trigger0{
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("A new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction. Follow me. I'll introduce you to Ravine, the Institute Head."))
+        msgbox(format("Hey wait-  oh, a new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction.\pFollow me. I'll introduce you to Ravine, the Ranger Institute Head."))
         release
 
         //move to Ravine
@@ -354,17 +355,17 @@ script RangerInstitute_2F_Trigger1{
 script RangerInstitute_2F_EventScript_Welcome{
     applymovement(LOCALID_RANGER1, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("Director RAVINE! Meet {PLAYER}, our newest Recruit."))
+    msgbox(format("Director Ravine! Meet {PLAYER}, our newest Recruit."))
     release
     delay(60)
-    msgbox(format("RAVINE: Hmm...yes...\p...\p...yes this is -"))
+    msgbox_delay("Ravine", format("Hmm...yes...\p...\p...yes this is -"))
     release
     applymovement(LOCALID_RANGER1, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("Director RAVINE!"))
+    msgbox(format("Director Ravine!"))
     release
     delay(60)
-    msgbox(format("RAVINE:...ahh...hmm..."))
+    msgbox_delay("Ravine", format("...ahh...hmm..."))
     release
     applymovement(LOCALID_RANGER1, moves(emote_exclamation_mark jump_in_place_left * 3))
     waitmovement(0)
@@ -372,40 +373,43 @@ script RangerInstitute_2F_EventScript_Welcome{
     release
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark face_right))
     waitmovement(0)
-    msgbox(format("RAVINE: Yes! Yes! What is it!"))
+    msgbox_delay("Ravine", format("Yes! Yes! What is it?"))
     release
     applymovement(LOCALID_RANGER1, moves(jump_in_place_down))
     waitmovement(0)
-    msgbox(format("Sigh...\nDirector Ravine! Meet {PLAYER}, our newest recruit.\p...\pDirector, you were daydreaming again!"))
+    msgbox(format("Sigh...\pDirector Ravine! Meet {PLAYER}, our newest recruit.\p...\pDirector, you were daydreaming again!"))
     release    
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("RAVINE: No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pRAVINE: Anyway. Yes. Welcome to the Ranger Institute, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokémon Rangers do?"))
+    msgbox_delay("Ravine", format("No I was most definitely not, how dare you? I was -ahem- deep in my research.\p...\pNow. Yes. Welcome to the Ranger Institute, {PLAYER}! Congratulations on clearing the interview. I'm so pleased to see our family grow. Do you know what we Pokémon Rangers do?"))
     release
     applymovement(LOCALID_RANGER1, moves(walk_left face_down))
     waitmovement(0)
+    delay(16)
     msgbox(format("Psst...Director, the bike and stuff."))
-    release        
+    release    
+    delay(16)    
     applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("RAVINE: Ah yes! As part of your welcome package, the Ranger Institute is pleased to provide you with these!"))
+    delay(16)
+    msgbox_delay("Ravine", format("Ah yes! As part of your welcome package, the Ranger Institute is pleased to provide you with these!"))
     release
     giveitem(ITEM_MACH_BIKE)
     giveitem(ITEM_RANGER_CARD)
-    msgbox(format("RAVINE: The Ranger Bike and Ranger Card - the two emblems of a Pokémon Ranger in Cormoria! The Ranger Bike will allow you to speedily traverse all of Cormoria, and the Ranger Card lets everyone know you're a proper Pokémon Ranger! You can access the other Ranger Institutes with this."))
+    msgbox_delay("Ravine", format("The Ranger Bike and Ranger Card - the two emblems of a Pokémon Ranger in Cormoria! The Ranger Bike will allow you to speedily traverse all of Cormoria, and the Ranger Card lets everyone know you're a proper Pokémon Ranger!\pYou can access the other Ranger Institutes with this.\pWe have a branch up north by the Ivy River, and down south by the sea near Rivetshore City."))
     release
     delay(32)     
-    msgbox(format("RAVINE: Now, do you know what we Pokémon Rangers do? No? Follow me."))
+    msgbox_delay("Ravine", format("{PLAYER}, do you know what we Pokémon Rangers are tasked with doing?\pNo?\pFollow me."))
     release
     delay(16)
     applymovement(LOCALID_RAVINE, moves(walk_down walk_right * 5 walk_down * 5 walk_left *5 face_right))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down walk_right * 5 walk_down * 5 walk_left * 4))
-    msgbox(format("RAVINE: As Pokémon Rangers, our job is to protect nature and maintain harmony between people, Pokémon, and the environment. Whether it's rescuing Pokémon in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both Pokémon and the world around us makes it all worthwhile."))
+    msgbox_delay("Ravine", format("As Pokémon Rangers, our job is to protect nature and maintain harmony between people, Pokémon, and the environment. Whether it's rescuing Pokémon in danger, resolving conflicts, or stopping threats to the ecosystem, we're always out in the field, ensuring the wild stays safe and balanced. It's challenging work, but knowing we're making a difference for both Pokémon and the world around us makes it all worthwhile."))
     release
-    msgbox(format("RAVINE: But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
+    msgbox_delay("Ravine", format("But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release
     delay(24)
-    msgbox(format("RAVINE: Now, I have some important items that the Ranger Institute at Ivy River wants. Your first mission will be to deliver this to them!"))
+    msgbox_delay("Ravine", format("Now, I have some important items that the Ranger Institute at Ivy River wants. Your first mission will be to deliver this to them!"))
     release
     removeobject(LOCALID_PACKAGE)
     giveitem(ITEM_RANGER_PACKAGE)
@@ -413,7 +417,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     setflag(FLAG_RANGER_GOT_FIRST_MISSION)
     setvar(VAR_RANGER_INSTITUTE, 3)
     delay(16)
-    msgbox(format("RAVINE: If you complete this mission, you'll rank up from Recruit to Candidate. The Ranger Institute at Ivy River is a little hard to find. You'll have to surf down from Winterlily Hollow and explore the riverbank. Good training for a recruit, eh?"))
+    msgbox_delay("Ravine", format("If you complete this mission, you'll rank up from Recruit to Candidate.\pThe Ranger Institute at Ivy River is a little hard to find. You'll have to surf down from Winterlily Hollow and explore Lily Pond.\pGood training for a recruit, eh?"))
     releaseall
     end
 }
@@ -434,7 +438,8 @@ script RangerInstitute_Ravine{
     lockall
     faceplayer
     if (var(VAR_RANGER_INSTITUTE) == 3){
-        msgbox(format("RAVINE: How's my newest Recruit doing? Have you delivered the package yet?"), MSGBOX_NPC)
+        speakername("Ravine")
+        msgbox(format("How's my newest Recruit doing? Have you delivered the package yet?"), MSGBOX_NPC)
         end
     }
 }
@@ -449,14 +454,14 @@ script RangerInstitute_2F_NPC_1{
 script RangerInstitute_2F_NPC_2{
     lockall
     faceplayer
-    msgbox(format("Hello there, new recruit! Wanna see what I'm working on? I'm analysing the weather patterns in Cormoria. I stay on the lookout for any unnatural changes."))
+    msgbox(format("Hello there, new recruit!\nWanna see what I'm working on?\pI'm analysing the weather patterns in Cormoria. I stay on the lookout for any unnatural changes."))
     releaseall
     end
 }
 script RangerInstitute_2F_NPC_3{
     lockall
     faceplayer
-    msgbox(format("Gah! I hate being on inventory duty. I miss the field!"))
+    msgbox(format("Gah! I hate being on inventory duty.\nI miss the field!"))
     releaseall
     end
 }
@@ -507,7 +512,7 @@ script RangerInstitute_Mon_Bayleef{
 }
 script RangerInstitute_Mon_Palpitoad{
     playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
-    msgbox(format("Palpitoad grunts and waddles around. It seems upset..."), MSGBOX_NPC)
+    msgbox(format("Palpitoad grunts and waddles around.\nIt seems upset..."), MSGBOX_NPC)
     end
 }
 script RangerInstitute_Mon_Surskit{
@@ -517,7 +522,7 @@ script RangerInstitute_Mon_Surskit{
 }
 script RangerInstitute_Mon_Scyther{
     playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
-    msgbox(format("Scyther looks as bummed out as its trainer!"), MSGBOX_NPC)
+    msgbox(format("Scyther looks bummed out!\pIt probably wants to be out on the field, just like its trainer."), MSGBOX_NPC)
     end
 }
 

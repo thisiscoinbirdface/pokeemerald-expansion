@@ -853,8 +853,7 @@ SilversunCity_SomberHQ_EventScript_Main_Text_7:
 
 SilversunCity_SomberHQ_EventScript_Main_Text_8:
 # 92 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "{PLAYER}, I'm sorry. Th-they got to\n"
-	.string "me.$"
+	.string "{PLAYER}, I'm sorry. Th-they got me.$"
 
 SilversunCity_SomberHQ_EventScript_Main_Text_9:
 # 110 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -932,8 +931,8 @@ SilversunCity_SomberHQ_EventScript_Main_Text_23:
 	.string "your Asst. Prof. Rue handed us right\l"
 	.string "now, we're going to build a Dreamalyser\l"
 	.string "and take it to Mt. Mirroh. We'll obtain\l"
-	.string "the dreamstone there...and the rest?\l"
-	.string "Well you'll never see any of it, because\l"
+	.string "the dreamstone there...and the rest?\p"
+	.string "Well you'll never see any of it, because\n"
 	.string "I'm going to put an end to you - right\l"
 	.string "here, right now!$"
 
@@ -960,8 +959,8 @@ SilversunCity_SomberHQ_EventScript_Main_Text_27:
 	.string "strong trainer...perhaps I shouldn't\l"
 	.string "have worried about you so much.\p"
 	.string "...\p"
-	.string "There are detectives outside? Let's go\n"
-	.string "and meet them.$"
+	.string "There are detectives outside?\n"
+	.string "Let's go and meet them.$"
 
 SomberHQ_EventScript_NPCNurse_Text_0:
 # 264 "data//maps/SilversunCity_SomberHQ/scripts.pory"

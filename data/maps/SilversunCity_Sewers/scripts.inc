@@ -553,9 +553,9 @@ SilversunCity_Sewers_Market_Muk_GiveReward::
 # 403 "data//maps/SilversunCity_Sewers/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Sewers_Market_Muk_GiveReward_1
-# 408 "data//maps/SilversunCity_Sewers/scripts.pory"
-	hideitemdescription
 # 409 "data//maps/SilversunCity_Sewers/scripts.pory"
+	hideitemdescription
+# 410 "data//maps/SilversunCity_Sewers/scripts.pory"
 	goto SilversunCity_Sewers_Market_Muk_Reward
 	return
 
@@ -565,12 +565,14 @@ SilversunCity_Sewers_Market_Muk_GiveReward_1:
 # 405 "data//maps/SilversunCity_Sewers/scripts.pory"
 	giveitem VAR_0x8006
 # 406 "data//maps/SilversunCity_Sewers/scripts.pory"
+	release
+# 407 "data//maps/SilversunCity_Sewers/scripts.pory"
 	goto SilversunCity_Sewers_Market_Muk_End
 	return
 
 
 SilversunCity_Sewers_Market_Muk_End::
-# 415 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 416 "data//maps/SilversunCity_Sewers/scripts.pory"
 	msgbox SilversunCity_Sewers_Market_Muk_End_Text_0, MSGBOX_NPC
 	end
 
@@ -925,5 +927,5 @@ SilversunCity_Sewers_Market_Muk_GiveReward_Text_0:
 	.string "Are you sure?$"
 
 SilversunCity_Sewers_Market_Muk_End_Text_0:
-# 415 "data//maps/SilversunCity_Sewers/scripts.pory"
+# 416 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Muk happily chomps on the Trash!$"

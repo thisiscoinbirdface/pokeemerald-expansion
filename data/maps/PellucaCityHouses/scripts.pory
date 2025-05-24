@@ -114,10 +114,11 @@ script PellucaCityHouses_GabSibling2{
 script PellucaCityHouses_GabSibling3{
     lockall
     faceplayer
-    msgbox(format("Gabrielle keeps us afloat. Without her, I wouldn't be able to afford to study. I got her a gift."))
+    msgbox(format("Gabrielle keeps us afloat. Without her, I wouldn't be able to afford to study.\pI got her a gift."))
     release
     showmonpic(SPECIES_JANGMO_O, 10, 3)
-    delay(120)
+    playmoncry(SPECIES_JANGMO_O, CRY_MODE_NORMAL)
+    waitmoncry
     hidemonpic
     msgbox(format("A traveling merchant sold it to me. It's the least I can do for her."), MSGBOX_NPC)
     releaseall

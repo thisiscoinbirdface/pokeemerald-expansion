@@ -397,12 +397,13 @@ script SilversunCity_Sewers_Market_Muk_Reward{
 
 
 
-script SilversunCity_Sewers_Market_Muk_GiveReward{
+script SilversunCity_Sewers_Market_Muk_GiveReward{  
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         hideitemdescription
         giveitem(VAR_0x8006)
+        release
         goto(SilversunCity_Sewers_Market_Muk_End)
     } else {
         hideitemdescription

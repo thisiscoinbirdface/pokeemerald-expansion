@@ -126,7 +126,7 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Trolling Rod. Too bad you don't have one!"), "You beat me without a rod!")
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Trolling Rod.\pToo bad you don't have one!"), "You beat me without a rod!")
     msgbox(format("I wonder what Pokémon I can catch here with a Casting Rod instead..."))
     releaseall
     end
@@ -209,7 +209,7 @@ script Route6_Trainer_K{
 script Route6_NPC1{
     lockall
     faceplayer
-    msgbox(format("When I was young, there was no route through these marshes. Now Route 6 connects Silversun City to Pelluca City."))
+    msgbox(format("When I was young, there was no route through these marshes.\pNow Route 6 connects Silversun City to Pelluca City."))
     releaseall
     end
 }
@@ -217,7 +217,7 @@ script Route6_NPC1{
 script Route6_NPC2{
     lockall
     faceplayer
-    msgbox(format("I wonder what's over there...if I had a Pokémon that knew SURF, I could swim over!"))
+    msgbox(format("I wonder what's over there...if I had the HM Surf, I could swim over!"))
     releaseall
     end
 }
@@ -326,7 +326,7 @@ script Route6_Gabrielle_Trigger1{
 script Route6_Gabrielle_Main{
     //Dialogue
     //no longer a part of somber, now give us all your pokemon
-    applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
+    applymovement(LOCALID_GRUNT2, moves(jump_in_place_right))
     delay(24)    
     speakername("Grunt")
     msgbox(format("C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!"))
@@ -418,7 +418,7 @@ script Route6_Gabrielle_Victory{
 	call(Common_EventScript_OutOfCenterPartyHeal)
     
     speakername("Gabrielle")
-    msgbox(format("I live in Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...I'm going there now. See you around."))  
+    msgbox(format("I live in Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...\pIt's not fair! I've already been kicked out of Team Somber.\pI wish they'd just leave me alone!\pI'm going back home now.\nSee you around."))  
     release
     applymovement(LOCALID_GAB, moves(walk_left walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3))    
     waitmovement(0)

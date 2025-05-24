@@ -4194,7 +4194,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1746
-            .species = SPECIES_HYPNO,
+            .species = SPECIES_DROWZEE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1748
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -4239,7 +4239,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1763
-            .species = SPECIES_HYPNO,
+            .species = SPECIES_MURKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1765
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

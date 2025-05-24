@@ -260,7 +260,7 @@ SilversunCity_Houses_Artist_Text_5:
 	.string "you, my dear helpful philistine, might\l"
 	.string "benefit from it. But you'll need to\l"
 	.string "receive the Drama Badge from Gloria\l"
-	.string "before your Pokémon can use it.\l"
+	.string "before your Pokémon can use it.\p"
 	.string "Farewell!$"
 
 SilversunCity_Houses_Artist_Text_6:

@@ -28,6 +28,7 @@ script SilversunCity_Theater_Leader{
     speakername("Gloria")
     msgbox(format("Hmm, so it's you. Not spectacular, but you'll do.")) 
     fadescreenswapbuffers(FADE_TO_BLACK)    
+    hidefollower
     setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(8, moves(face_down))
@@ -46,21 +47,12 @@ script SilversunCity_Theater_Leader{
     speakername("Audience")
     msgbox(format("Woohoo! Go Gloria!"))
     release
-    applymovement(8, moves(face_left)) 
-    speakername("Gloria")  
-    msgbox(format("You're a trainer, correct? Then you must be after my Gym Badge. If you want it, you'll have to earn it, right here on stage! The lights, the sound! The audience, the emotions! I specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them. And tonight, your defeat will be my next performance!")) 
-    //Move player and leader
-    fadescreenswapbuffers(FADE_TO_BLACK)
-
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-    applymovement(8, moves(face_left))
+    applymovement(8, moves(face_left)) 
     waitmovement(0)
-    hidefollower
-    fadescreenswapbuffers(FADE_FROM_BLACK)
-
-    //Talk
-    speakername("Gloria")
-    msgbox(format("Now, {PLAYER}, enthrall me with your danse macabre!"))
+    delay(16)
+    speakername("Gloria")  
+    msgbox(format("You're a trainer, correct? Then you must want my badge. If you want it, you'll have to earn it, right here on stage!\pThe lights, the sound!\nThe audience, the emotions!\pI specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them.\pAnd tonight, your defeat will be my next performance!\pNow, {PLAYER}, enthrall me with your danse macabre!"))
     release
 
     //Battle
@@ -69,7 +61,8 @@ script SilversunCity_Theater_Leader{
 
     //Camera, need to sort this bit properly
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
+    applymovement(8, moves(walk_left face_down))
     waitmovement(0)
     applymovement(8, moves(face_down))
     waitmovement(0)
@@ -169,7 +162,7 @@ script SilversunCity_Theater_NPC2{
 //girl breeder left
 script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("What a show!"), MSGBOX_NPC)
+        msgbox(format("...\pFine, I threw the tomato!\nI'm sorry...\p...\p...no, I'm not! I love Gloria!\nBoo to you!"), MSGBOX_NPC)
     } else {
         msgbox(format("I wish Pokémon were allowed in. I would've brought my Budew along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
     }
