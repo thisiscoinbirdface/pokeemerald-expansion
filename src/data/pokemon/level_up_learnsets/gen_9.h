@@ -5964,11 +5964,10 @@ static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {
 #if P_HISUIAN_FORMS
 static const struct LevelUpMove sQwilfishHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
     LEVEL_UP_MOVE( 8, MOVE_BITE),
     LEVEL_UP_MOVE(12, MOVE_FELL_STINGER),
-    LEVEL_UP_MOVE(16, MOVE_MINIMIZE),
+    LEVEL_UP_MOVE(16, MOVE_POISON_STING),
     LEVEL_UP_MOVE(20, MOVE_SPIKES),
     LEVEL_UP_MOVE(24, MOVE_BRINE),
     LEVEL_UP_MOVE(28, MOVE_BARB_BARRAGE),
@@ -5985,11 +5984,10 @@ static const struct LevelUpMove sQwilfishHisuiLevelUpLearnset[] = {
 
 static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
     LEVEL_UP_MOVE( 8, MOVE_BITE),
     LEVEL_UP_MOVE(12, MOVE_FELL_STINGER),
-    LEVEL_UP_MOVE(16, MOVE_MINIMIZE),
+    LEVEL_UP_MOVE(16, MOVE_POISON_STING),
     LEVEL_UP_MOVE(20, MOVE_SPIKES),
     LEVEL_UP_MOVE(24, MOVE_BRINE),
     LEVEL_UP_MOVE(28, MOVE_BARB_BARRAGE),

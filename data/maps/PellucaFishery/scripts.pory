@@ -17,7 +17,7 @@ script PellucaFishery_NPC1{
 }
 script PellucaFishery_NPC2{
     speakername("Q-squad Grunt")
-    msgbox(format("The boss is actually gonna make some real change happen around here! But for that, we need money. That's why we're taxing the citizens!"), MSGBOX_NPC)
+    msgbox(format("The boss is actually gonna make some real change happen around here!\pBut for that, we need money. That's why we're taxing the citizens!"), MSGBOX_NPC)
     end
 }
 script PellucaFishery_NPC3{
@@ -26,7 +26,7 @@ script PellucaFishery_NPC3{
     end
 }
 script PellucaFishery_NPC4{
-    msgbox(format("This was a fishery before we came in. All this stuff is from back then."), MSGBOX_NPC)
+    msgbox(format("This was a fishery before we came in.\nAll this stuff is from back then."), MSGBOX_NPC)
     end
 }
 
@@ -75,7 +75,7 @@ script PellucaFishery_EventScript_MainDude{
     //battle 1
     applymovement(LOCALID_S1, moves(jump_in_place_right))    
     speakername("Q-squad Grunt")
-    msgbox(format("Aye-aye boss!\pYou're about to get crushed, kid! That's what you get for messing with the Qwilsquad!"))    
+    msgbox(format("Aye-aye boss!\pI'll crush you, kid! That's what you get for messing with the Qwilsquad!"))    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_A, format("I let you down, boss!"))
     
     delay(8)
@@ -85,7 +85,7 @@ script PellucaFishery_EventScript_MainDude{
 
     applymovement(LOCALID_S4, moves(jump_in_place_left))    
     speakername("Q-squad Grunt")
-    msgbox(format("S'matter with you? You're ruining our squad's name!\pC'mon kid, you think you can get away with this?"))    
+    msgbox(format("S'matter with you, losing like that?\pYou're ruining our squad's name!\pC'mon kid - you really think you can get away with this?"))    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_B, format("No! I lost! Sorry, boss!"))
     
     delay(8)
@@ -101,7 +101,7 @@ script PellucaFishery_EventScript_MainDude{
 
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home.\pBut if you say so, I'm willing to consider talking to him again."))
+    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
     release    
 
     //Camera shake
@@ -121,7 +121,7 @@ script PellucaFishery_EventScript_MainDude{
     waitmovement(0)
     delay(24)     
     speakername("Q-squad Boss")
-    msgbox(format("What was that?\pBoys - we gotta go outside and see what's going on!\pC'mon {PLAYER}!"))    
+    msgbox(format("What was that?\pBoys - we gotta go outside and see what's going on!\pC'mon {PLAYER} - you too!"))    
     release
 
     //exit

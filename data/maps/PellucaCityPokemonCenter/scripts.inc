@@ -467,8 +467,8 @@ PellucaCity_EventEnd_Text_17:
 	.string "Team Somber, eh? One of my boys told me\n"
 	.string "about 'em. Something about an operation\l"
 	.string "up in Mt. Mirroh.\p"
-	.string "They're rotten to the core, they are. If\n"
-	.string "I were you, I'd be extra careful!$"
+	.string "They're rotten to the core, they are.\n"
+	.string "If I were you, I'd be extra careful!$"
 
 PellucaCity_PokemonCenter_NPC1_Text_0:
 # 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"

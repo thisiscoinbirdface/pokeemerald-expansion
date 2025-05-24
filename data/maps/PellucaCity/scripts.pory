@@ -136,7 +136,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Got it, mayor? You're not in charge here.\pI am! And this town belongs to the Qwilsquad!"))
+    msgbox(format("Got it, mayor? You're not in charge here.\pI am! And from now on, this town belongs to the Qwilsquad!"))
     release
     delay(16)
 
@@ -162,7 +162,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("Oh trainer! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, the restaurant here is famous! You should give it a try."))
+    msgbox(format("Oh - a tourist! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, the restaurant here is famous! You should give it a try."))
     release
     delay(16)
 
@@ -270,12 +270,17 @@ script PellucaCity_Sailor_MemberAccepted{
     applymovement(LOCALID_S_ENTRANCE, moves(emote_exclamation_mark))
     delay(16)    
     speakername("Q-squad Grunt")
-    msgbox(format("Alright, now that's what I'm talking about! You're one of us, kid. Go on, get inside!"))      
+    msgbox(format("Now that's what I'm talking about! You're one of us, kid. Go on, get inside!"))      
     release
+
+    opendoor(3, 42)
+    waitdooranim    
     applymovement(LOCALID_S_ENTRANCE, moves(walk_up))
     delay(16)
     playse(SE_EXIT)
     removeobject(LOCALID_S_ENTRANCE)
+    closedoor(3, 42)
+    waitdooranim
 
     setflag(FLAG_PELLUCA_QWILSQUAD_ENTRANCE)
     releaseall
@@ -301,7 +306,7 @@ script PellucaCity_Blocker_Trigger{
 
     applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
     speakername("Q-squad Grunt")
-    msgbox(format("Hey, kid! There's a toll if you wanna get out.\pYeah, that's right! You gotta pay 999999.\pAin't got the money?\pThen get packing!"))
+    msgbox(format("Hey kid, where d'you think yer goin?\nThere's a toll if you wanna get out.\pYeah, that's right!\nYou gotta pay 999999.\pAin't got the money?\pThen get packing!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
     waitmovement(0)
@@ -691,7 +696,7 @@ script PellucaCityFlooded_Complete_Trigger{
 
     //headcount 
     speakername("Q-squad Boss") 
-    msgbox(format("That's one, two, three...and four! Yup, we're all accounted for."))   
+    msgbox(format("That's one, two, three...and four!\pYup, we're all accounted for."))   
     release
     delay(16)
 
@@ -916,7 +921,7 @@ script PellucaCity_EventScripts_Gabrielle{
     release
     giveitem(ITEM_CHOICE_BAND)
     speakername("Gabrielle")
-    msgbox(format("Who we are is defined by the choices we make.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already.\pBest of luck, {PLAYER}."))
+    msgbox(format("The choices we make define who we are.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already.\pBest of luck, {PLAYER}."))
     release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))
@@ -930,7 +935,7 @@ script PellucaCity_Zorua{
     lockall
     faceplayer
     playmoncry(SPECIES_ZORUA, CRY_MODE_NORMAL)
-    msgbox(format("Gabrielle's Zorua looks content. Life is more peaceful for it now!"))
+    msgbox(format("Gabrielle's Zorua looks content.\nLife is more peaceful for it now!"))
     release
     applymovement(25, moves(face_left))
     waitmovement(0)

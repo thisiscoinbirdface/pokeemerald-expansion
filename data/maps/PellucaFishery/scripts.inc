@@ -329,9 +329,9 @@ PellucaFishery_NPC1_Text_1:
 PellucaFishery_NPC2_Text_0:
 # 20 "data//maps/PellucaFishery/scripts.pory"
 	.string "The boss is actually gonna make some\n"
-	.string "real change happen around here! But for\l"
-	.string "that, we need money. That's why we're\l"
-	.string "taxing the citizens!$"
+	.string "real change happen around here!\p"
+	.string "But for that, we need money. That's why\n"
+	.string "we're taxing the citizens!$"
 
 PellucaFishery_NPC3_Text_0:
 # 25 "data//maps/PellucaFishery/scripts.pory"
@@ -339,8 +339,8 @@ PellucaFishery_NPC3_Text_0:
 
 PellucaFishery_NPC4_Text_0:
 # 29 "data//maps/PellucaFishery/scripts.pory"
-	.string "This was a fishery before we came in. All\n"
-	.string "this stuff is from back then.$"
+	.string "This was a fishery before we came in.\n"
+	.string "All this stuff is from back then.$"
 
 PellucaFishery_EventScript_MainDude_Text_0:
 # 42 "data//maps/PellucaFishery/scripts.pory"
@@ -367,9 +367,8 @@ PellucaFishery_EventScript_MainDude_Text_3:
 PellucaFishery_EventScript_MainDude_Text_4:
 # 78 "data//maps/PellucaFishery/scripts.pory"
 	.string "Aye-aye boss!\p"
-	.string "You're about to get crushed, kid! That's\n"
-	.string "what you get for messing with the\l"
-	.string "Qwilsquad!$"
+	.string "I'll crush you, kid! That's what you get\n"
+	.string "for messing with the Qwilsquad!$"
 
 PellucaFishery_EventScript_MainDude_Text_5:
 # 79 "data//maps/PellucaFishery/scripts.pory"
@@ -381,10 +380,10 @@ PellucaFishery_EventScript_MainDude_Text_6:
 
 PellucaFishery_EventScript_MainDude_Text_7:
 # 88 "data//maps/PellucaFishery/scripts.pory"
-	.string "S'matter with you? You're ruining our\n"
-	.string "squad's name!\p"
-	.string "C'mon kid, you think you can get away\n"
-	.string "with this?$"
+	.string "S'matter with you, losing like that?\p"
+	.string "You're ruining our squad's name!\p"
+	.string "C'mon kid - you really think you can get\n"
+	.string "away with this?$"
 
 PellucaFishery_EventScript_MainDude_Text_8:
 # 89 "data//maps/PellucaFishery/scripts.pory"
@@ -419,7 +418,7 @@ PellucaFishery_EventScript_MainDude_Text_12:
 	.string "listening to that blundering idiot?\p"
 	.string "He's totally useless! That's why I\n"
 	.string "decided to step in. Pelluca City is my\l"
-	.string "home.\p"
+	.string "home - it's all our homes!\p"
 	.string "But if you say so, I'm willing to\n"
 	.string "consider talking to him again.$"
 
@@ -428,4 +427,4 @@ PellucaFishery_EventScript_MainDude_Text_13:
 	.string "What was that?\p"
 	.string "Boys - we gotta go outside and see\n"
 	.string "what's going on!\p"
-	.string "C'mon {PLAYER}!$"
+	.string "C'mon {PLAYER} - you too!$"

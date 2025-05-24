@@ -101,7 +101,7 @@ script PellucaCity_EventEnd{
     release
     delay(16)	
     speakername("Q-squad Boss") 
-    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are. If I were you, I'd be extra careful!"))
+    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are.\nIf I were you, I'd be extra careful!"))
     release
     delay(16)	
 

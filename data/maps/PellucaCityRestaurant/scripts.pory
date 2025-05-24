@@ -159,11 +159,7 @@ script PellucaCityRestaurant_Cook3{
         if (var(VAR_RESULT) == 1){
             //accept quest
             speakername("Chef")
-            msgbox(format("I knew I could rely on you!\pSome Nevermelt Ice will do the trick. You can buy Nevermelt Ice at the Mirroh Base Camp. Head northwest from here and use the cable car. You'll need a pass, so take this with you."))
-            release
-            giveitem(ITEM_CABLECAR_PASS)
-            speakername("Chef")
-            msgbox(format("I'll be waiting here!"))
+            msgbox(format("I knew I could rely on you!\pSome Nevermelt Ice will do the trick. You can buy Nevermelt Ice at the Mirroh Base Camp. Head northwest from here and use the cable car.\pI'll be waiting here!"))
             release
             setvar(VAR_PELLUCA_COOK, 1)
 

@@ -260,8 +260,8 @@ MirrohBaseCamp_Houses_Historian_Text_7:
 
 MirrohBaseCamp_Houndstone_Text_0:
 # 52 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Houndstone is walking slowly. It's\n"
-	.string "getting old now...$"
+	.string "Houndstone is walking slowly.\n"
+	.string "It's getting old now...$"
 
 MirrohBaseCamp_Houses_MasterballGuy_Text_0:
 # 64 "data//maps/MirrohBaseCamp_Houses/scripts.pory"

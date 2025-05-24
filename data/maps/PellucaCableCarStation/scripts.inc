@@ -33,9 +33,10 @@ PellucaCableCarStation_EventScript_ExitCableCar::
 PellucaCableCarStation_EventScript_Attendant::
 	lock
 	faceplayer
-	checkitem ITEM_CABLECAR_PASS
-	goto_if_eq VAR_RESULT, TRUE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
-	goto_if_eq VAR_RESULT, FALSE, PellucaCableCarStation_EventScript_AttendantNeedCableCarPass
+	goto PellucaCableCarStation_EventScript_AttendantAskForCableCar
+@	checkitem ITEM_CABLECAR_PASS
+@	goto_if_eq VAR_RESULT, TRUE, PellucaCableCarStation_EventScript_AttendantAskForCableCar
+@	goto_if_eq VAR_RESULT, FALSE, PellucaCableCarStation_EventScript_AttendantNeedCableCarPass
 
 PellucaCableCarStation_EventScript_AttendantNeedCableCarPass::
 	msgbox PellucaCableCarStation_Text_NeedPass
@@ -97,8 +98,8 @@ PellucaCableCarStation_Movement_ExitCableCar:
 	step_end
 
 PellucaCableCarStation_Text_CableCarReadyGetOn:
-	.string "The CABLE CAR is ready to go up.\n"
-	.string "Would you like to be on it?$"
+	.string "The Cable Car is ready to go up.\n"
+	.string "Would you like to ride it?$"
 
 PellucaCableCarStation_Text_StepThisWay:
 	.string "Please step this way.$"

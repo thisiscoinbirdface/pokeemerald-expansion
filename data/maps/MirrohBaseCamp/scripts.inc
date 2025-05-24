@@ -916,8 +916,8 @@ MirrohBaseCamp_EventScript_NPC2_Text_2:
 
 MirrohBaseCamp_EventScript_NPC2_Text_3:
 # 80 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "My name? It's Martha, dear. I manage the\n"
-	.string "graveyard.\p"
+	.string "My name? It's Martha, dear.\n"
+	.string "I manage the graveyard.\p"
 	.string "You want to talk to me? Something\n"
 	.string "about dreamstones? Well this will be a\l"
 	.string "longer conversation, so why don't you\l"
@@ -925,7 +925,7 @@ MirrohBaseCamp_EventScript_NPC2_Text_3:
 
 MirrohBaseCamp_EventScript_NPC2_Text_4:
 # 88 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Come now, boys! Playtime is over - come\n"
+	.string "Come now boys! Playtime's over - come\n"
 	.string "home!\p"
 	.string "...\p"
 	.string "Sigh...they just don't listen to me...$"

@@ -77,7 +77,7 @@ script MirrohBaseCamp_EventScript_NPC2{
     speakername("???")
     msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p..."))
     speakername("Martha")
-    msgbox(format("My name? It's Martha, dear. I manage the graveyard.\pYou want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
+    msgbox(format("My name? It's Martha, dear.\nI manage the graveyard.\pYou want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
     release
     hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
@@ -85,7 +85,7 @@ script MirrohBaseCamp_EventScript_NPC2{
     waitmovement(0)
     removeobject(LOCALID_MARTHA)
     speakername("Martha")
-    msgbox(format("Come now, boys! Playtime is over - come home!\p...\pSigh...they just don't listen to me..."))
+    msgbox(format("Come now, boys! Playtime's over!\p...\pSigh...they just don't listen to me..."))
     release
     setflag(FLAG_HIDE_GRAVEYARD_HISTORIAN)
     clearflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
@@ -111,7 +111,7 @@ script MirrohBaseCamp_Greavard_Outside{
             applymovement(12, moves(emote_exclamation_mark walk_fast_up * 7))
             waitmovement(0)
             removeobject(12)
-            msgbox(format("The other one chased after it!\p...\pIs it alright to let them run around freely?"))
+            msgbox(format("The other one chased after it!\p...\pWill they be okay?"))
             release
 
             setflag(FLAG_MIRROH_GREAVARD_BLOCKER)
@@ -123,6 +123,7 @@ script MirrohBaseCamp_Greavard_Outside{
             speakername("Martha")
             msgbox(format("{PLAYER}! Wait!")) 
             release
+            hidefollower
 
             applymovement(LOCALID_MARTHA, moves(walk_up * 5))
             waitmovement(0)
@@ -195,7 +196,8 @@ script MirrohBaseCamp_Martha_End{
     msgbox(format("Well then. That's my job done.\pI wish you all the best, {PLAYER}!"))
     release
 
-    applymovement(LOCALID_MARTHA, moves(walk_down * 8))
+    applymovement(LOCALID_MARTHA, moves(walk_down * 7))
+    waitmovement(0)
     removeobject(LOCALID_MARTHA)
 
     releaseall
