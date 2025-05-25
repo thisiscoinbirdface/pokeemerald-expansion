@@ -20,19 +20,22 @@ script AncientMirroh_Tenebris_Trigger{
 
     lockall
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3 walk_left * 2))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4 walk_left * 2))
     waitmovement(0)
     special(RemoveCameraObject)
+    delay(20)
 
     applymovement(LOCALID_PROFT, moves(walk_left * 3 walk_up))
     waitmovement(0)
 
+    playse(SE_EXIT)
+    delay(4)
     removeobject(LOCALID_PROFT)
-
+    delay(20)
     setflag(FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE)
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves( walk_right * 2 walk_up * 3))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves( walk_right * 2 walk_up * 4))
     waitmovement(0)
     special(RemoveCameraObject)
 
@@ -52,7 +55,7 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("Darn! These Trekking Boots are really slowing me down! I gotta catch up to Melea!"))
+    msgbox(format("I gotta catch up to Melea but these Trekking Boots are slowing me down!"))
     release
     applymovement(7, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)
@@ -60,6 +63,7 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     speakername("Grunt")
     msgbox(format("Oh no, you're here already? Gotta go!"))
     release
+    playse(SE_FLEE)
     applymovement(7, moves(walk_fast_down * 7))
     waitmovement(0)
     delay(16)
@@ -75,7 +79,7 @@ script AncientMirroh_KolhaMeeting_Trigger{ //at the stairs (52, 38 kohla startin
     applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
     speakername("Kohla")
-    msgbox(format("{PLAYER}? How'd you get over here?\p...\pSo that's what happened. I must have reached the peak after you did, then. When I came, nobody was there. I found this big machine and pressed a button, and then suddenly got transported here!\p...\pSlow as usual, you are. I came after you and still managed to catch up. Bet you wasted your time exploring this area and catching Pokémon while Melea went on to catch the Ancient Terror!\p...\pWell I'm here to do the right thing, so get out of my way. Go on - move!"))
+    msgbox(format("{PLAYER}? How'd you get over here?\p...\pSo that's what happened. I must have reached the peak after you did, then.\pNobody was there when I came. I found this big machine and pressed a button, and then got transported here!\p...\pSlow as usual, you are. I came after you and still managed to catch up.\pBet you wasted your time exploring and catching Pokémon while Melea went on to catch the Ancient Terror!\p...\pWell I'm here to do the right thing, so get out of my way.\pGo on - move!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2 face_down))
     applymovement(LOCALID_KOHLA, moves(walk_up * 2 walk_left * 3 walk_down * 8))   
@@ -106,9 +110,9 @@ script AncientMirroh_KolhaFinal_Trigger {
     setflag(FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER)
     goto(AncientMirroh_GoBackYesNo)
 }
-
+//x                                                   x
 script AncientMirroh_GoBackYesNo{
-    msgbox(format("Do you want to take the dreamstone back?"), MSGBOX_YESNO)
+    msgbox(format("Head back using the dreamstone?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         //exit
@@ -150,5 +154,10 @@ script AncientMirroh_Dreamstone{
     lockall
     msgbox(format("It's a dreamstone...the surface is so smooth. It doesn't look natural at all."))
     release
+    end
+}
+
+script AncientMirroh_KohlaGoBack{
+    msgbox(format("What are you waiting for?\nLet's hurry up and go back!"), MSGBOX_NPC)
     end
 }

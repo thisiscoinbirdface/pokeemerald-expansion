@@ -30,23 +30,31 @@ AncientMirroh_Tenebris_Trigger::
 	waitmovement 0
 # 25 "data//maps/AncientMirroh/scripts.pory"
 	special RemoveCameraObject
-# 27 "data//maps/AncientMirroh/scripts.pory"
-	applymovement LOCALID_PROFT, AncientMirroh_Tenebris_Trigger_Movement_1
+# 26 "data//maps/AncientMirroh/scripts.pory"
+	delay 20
 # 28 "data//maps/AncientMirroh/scripts.pory"
+	applymovement LOCALID_PROFT, AncientMirroh_Tenebris_Trigger_Movement_1
+# 29 "data//maps/AncientMirroh/scripts.pory"
 	waitmovement 0
-# 30 "data//maps/AncientMirroh/scripts.pory"
-	removeobject LOCALID_PROFT
+# 31 "data//maps/AncientMirroh/scripts.pory"
+	playse SE_EXIT
 # 32 "data//maps/AncientMirroh/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE
+	delay 4
+# 33 "data//maps/AncientMirroh/scripts.pory"
+	removeobject LOCALID_PROFT
 # 34 "data//maps/AncientMirroh/scripts.pory"
-	special SpawnCameraObject
+	delay 20
 # 35 "data//maps/AncientMirroh/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, AncientMirroh_Tenebris_Trigger_Movement_2
-# 36 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
+	setflag FLAG_ANCIENT_MIRROH_PROF_TENEBRIS_OUTSIDE
 # 37 "data//maps/AncientMirroh/scripts.pory"
-	special RemoveCameraObject
+	special SpawnCameraObject
+# 38 "data//maps/AncientMirroh/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, AncientMirroh_Tenebris_Trigger_Movement_2
 # 39 "data//maps/AncientMirroh/scripts.pory"
+	waitmovement 0
+# 40 "data//maps/AncientMirroh/scripts.pory"
+	special RemoveCameraObject
+# 42 "data//maps/AncientMirroh/scripts.pory"
 	releaseall
 	end
 
@@ -55,85 +63,87 @@ AncientMirroh_Tenebris_Trigger_2:
 
 
 AncientMirroh_KolhaMeeting_Trigger::
-# 45 "data//maps/AncientMirroh/scripts.pory"
+# 48 "data//maps/AncientMirroh/scripts.pory"
 	goto_if_set FLAG_ANCIENT_MIRROH_KOHLA_MEETING, AncientMirroh_KolhaMeeting_Trigger_2
-# 47 "data//maps/AncientMirroh/scripts.pory"
-	lockall
-# 49 "data//maps/AncientMirroh/scripts.pory"
-	delay 30
 # 50 "data//maps/AncientMirroh/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_0
-# 51 "data//maps/AncientMirroh/scripts.pory"
-	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_1
+	lockall
 # 52 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
+	delay 30
 # 53 "data//maps/AncientMirroh/scripts.pory"
-	delay 16
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_0
 # 54 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_0
+	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_1
 # 55 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_1
+	waitmovement 0
 # 56 "data//maps/AncientMirroh/scripts.pory"
-	release
+	delay 16
 # 57 "data//maps/AncientMirroh/scripts.pory"
-	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_2
-# 58 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
-# 59 "data//maps/AncientMirroh/scripts.pory"
-	delay 16
-# 60 "data//maps/AncientMirroh/scripts.pory"
 	speakername AncientMirroh_KolhaMeeting_Trigger_Text_0
+# 58 "data//maps/AncientMirroh/scripts.pory"
+	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_1
+# 59 "data//maps/AncientMirroh/scripts.pory"
+	release
+# 60 "data//maps/AncientMirroh/scripts.pory"
+	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_2
 # 61 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_2
+	waitmovement 0
 # 62 "data//maps/AncientMirroh/scripts.pory"
-	release
-# 63 "data//maps/AncientMirroh/scripts.pory"
-	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_3
-# 64 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
-# 65 "data//maps/AncientMirroh/scripts.pory"
 	delay 16
+# 63 "data//maps/AncientMirroh/scripts.pory"
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_0
+# 64 "data//maps/AncientMirroh/scripts.pory"
+	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_2
+# 65 "data//maps/AncientMirroh/scripts.pory"
+	release
 # 66 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_3
+	playse SE_FLEE
 # 67 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_4
+	applymovement 7, AncientMirroh_KolhaMeeting_Trigger_Movement_3
 # 68 "data//maps/AncientMirroh/scripts.pory"
-	release
+	waitmovement 0
 # 69 "data//maps/AncientMirroh/scripts.pory"
-	setobjectxyperm LOCALID_KOHLA, 52, 38
+	delay 16
 # 70 "data//maps/AncientMirroh/scripts.pory"
-	addobject LOCALID_KOHLA
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_3
 # 71 "data//maps/AncientMirroh/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_4
+	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_4
 # 72 "data//maps/AncientMirroh/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_5
-# 73 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
-# 75 "data//maps/AncientMirroh/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_6
-# 76 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
-# 77 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
-# 78 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_6
-# 79 "data//maps/AncientMirroh/scripts.pory"
 	release
-# 80 "data//maps/AncientMirroh/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_7
-# 81 "data//maps/AncientMirroh/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_8
-# 82 "data//maps/AncientMirroh/scripts.pory"
+# 73 "data//maps/AncientMirroh/scripts.pory"
+	setobjectxyperm LOCALID_KOHLA, 52, 38
+# 74 "data//maps/AncientMirroh/scripts.pory"
+	addobject LOCALID_KOHLA
+# 75 "data//maps/AncientMirroh/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_4
+# 76 "data//maps/AncientMirroh/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_5
+# 77 "data//maps/AncientMirroh/scripts.pory"
 	waitmovement 0
+# 79 "data//maps/AncientMirroh/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_6
+# 80 "data//maps/AncientMirroh/scripts.pory"
+	waitmovement 0
+# 81 "data//maps/AncientMirroh/scripts.pory"
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
+# 82 "data//maps/AncientMirroh/scripts.pory"
+	msgbox AncientMirroh_KolhaMeeting_Trigger_Text_6
+# 83 "data//maps/AncientMirroh/scripts.pory"
+	release
 # 84 "data//maps/AncientMirroh/scripts.pory"
-	removeobject 7
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaMeeting_Trigger_Movement_7
 # 85 "data//maps/AncientMirroh/scripts.pory"
-	setobjectxyperm LOCALID_KOHLA, 26, 55
+	applymovement LOCALID_KOHLA, AncientMirroh_KolhaMeeting_Trigger_Movement_8
 # 86 "data//maps/AncientMirroh/scripts.pory"
-	setobjectxy LOCALID_KOHLA, 26, 55
+	waitmovement 0
 # 88 "data//maps/AncientMirroh/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_KOHLA_MEETING
+	removeobject 7
 # 89 "data//maps/AncientMirroh/scripts.pory"
+	setobjectxyperm LOCALID_KOHLA, 26, 55
+# 90 "data//maps/AncientMirroh/scripts.pory"
+	setobjectxy LOCALID_KOHLA, 26, 55
+# 92 "data//maps/AncientMirroh/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_KOHLA_MEETING
+# 93 "data//maps/AncientMirroh/scripts.pory"
 	releaseall
 	end
 
@@ -142,23 +152,23 @@ AncientMirroh_KolhaMeeting_Trigger_2:
 
 
 AncientMirroh_KolhaFinal_Trigger::
-# 98 "data//maps/AncientMirroh/scripts.pory"
-	goto_if_set FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER, AncientMirroh_KolhaFinal_Trigger_2
-# 100 "data//maps/AncientMirroh/scripts.pory"
-	lockall
-# 101 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
 # 102 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_KolhaFinal_Trigger_Text_0
-# 103 "data//maps/AncientMirroh/scripts.pory"
-	release
+	goto_if_set FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER, AncientMirroh_KolhaFinal_Trigger_2
 # 104 "data//maps/AncientMirroh/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaFinal_Trigger_Movement_0
+	lockall
 # 105 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
 # 106 "data//maps/AncientMirroh/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER
+	msgbox AncientMirroh_KolhaFinal_Trigger_Text_0
 # 107 "data//maps/AncientMirroh/scripts.pory"
+	release
+# 108 "data//maps/AncientMirroh/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_KolhaFinal_Trigger_Movement_0
+# 109 "data//maps/AncientMirroh/scripts.pory"
+	waitmovement 0
+# 110 "data//maps/AncientMirroh/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_FINAL_KOHLA_TRIGGER
+# 111 "data//maps/AncientMirroh/scripts.pory"
 	goto AncientMirroh_GoBackYesNo
 	return
 
@@ -167,67 +177,73 @@ AncientMirroh_KolhaFinal_Trigger_2:
 
 
 AncientMirroh_GoBackYesNo::
-# 111 "data//maps/AncientMirroh/scripts.pory"
+# 115 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_GoBackYesNo_Text_0, MSGBOX_YESNO
-# 113 "data//maps/AncientMirroh/scripts.pory"
+# 117 "data//maps/AncientMirroh/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq AncientMirroh_GoBackYesNo_2
-# 139 "data//maps/AncientMirroh/scripts.pory"
+# 143 "data//maps/AncientMirroh/scripts.pory"
 	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
-# 140 "data//maps/AncientMirroh/scripts.pory"
+# 144 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_GoBackYesNo_Text_3
 AncientMirroh_GoBackYesNo_1:
-# 144 "data//maps/AncientMirroh/scripts.pory"
+# 148 "data//maps/AncientMirroh/scripts.pory"
 	releaseall
 	end
 
 AncientMirroh_GoBackYesNo_2:
-# 115 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
-# 116 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_GoBackYesNo_Text_1
-# 117 "data//maps/AncientMirroh/scripts.pory"
-	release
-# 118 "data//maps/AncientMirroh/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_GoBackYesNo_Movement_0
 # 119 "data//maps/AncientMirroh/scripts.pory"
-	waitmovement 0
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
 # 120 "data//maps/AncientMirroh/scripts.pory"
-	delay 24
+	msgbox AncientMirroh_GoBackYesNo_Text_1
 # 121 "data//maps/AncientMirroh/scripts.pory"
-	msgbox AncientMirroh_GoBackYesNo_Text_2
-# 122 "data//maps/AncientMirroh/scripts.pory"
 	release
+# 122 "data//maps/AncientMirroh/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_GoBackYesNo_Movement_0
 # 123 "data//maps/AncientMirroh/scripts.pory"
-	delay 24
+	waitmovement 0
 # 124 "data//maps/AncientMirroh/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 24
 # 125 "data//maps/AncientMirroh/scripts.pory"
-	setvar VAR_0x8005, 2
+	msgbox AncientMirroh_GoBackYesNo_Text_2
 # 126 "data//maps/AncientMirroh/scripts.pory"
-	setvar VAR_0x8006, 8
+	release
 # 127 "data//maps/AncientMirroh/scripts.pory"
-	setvar VAR_0x8007, 5
+	delay 24
 # 128 "data//maps/AncientMirroh/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8004, 2
 # 129 "data//maps/AncientMirroh/scripts.pory"
-	clearflag FLAG_HIDE_LILY_POND_KOHLA
+	setvar VAR_0x8005, 2
 # 130 "data//maps/AncientMirroh/scripts.pory"
+	setvar VAR_0x8006, 8
+# 131 "data//maps/AncientMirroh/scripts.pory"
+	setvar VAR_0x8007, 5
+# 132 "data//maps/AncientMirroh/scripts.pory"
+	special ShakeCamera
+# 133 "data//maps/AncientMirroh/scripts.pory"
+	clearflag FLAG_HIDE_LILY_POND_KOHLA
+# 134 "data//maps/AncientMirroh/scripts.pory"
 	setflag FLAG_ANCIENT_MIRROH_DONE
-# 135 "data//maps/AncientMirroh/scripts.pory"
+# 139 "data//maps/AncientMirroh/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 136 "data//maps/AncientMirroh/scripts.pory"
+# 140 "data//maps/AncientMirroh/scripts.pory"
 	warp MAP_LILY_POND, 12, 4
 	goto AncientMirroh_GoBackYesNo_1
 
 
 AncientMirroh_Dreamstone::
-# 150 "data//maps/AncientMirroh/scripts.pory"
+# 154 "data//maps/AncientMirroh/scripts.pory"
 	lockall
-# 151 "data//maps/AncientMirroh/scripts.pory"
+# 155 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_Dreamstone_Text_0
-# 152 "data//maps/AncientMirroh/scripts.pory"
+# 156 "data//maps/AncientMirroh/scripts.pory"
 	release
+	end
+
+
+AncientMirroh_KohlaGoBack::
+# 161 "data//maps/AncientMirroh/scripts.pory"
+	msgbox AncientMirroh_KohlaGoBack_Text_0, MSGBOX_NPC
 	end
 
 
@@ -240,237 +256,244 @@ AncientMirroh_Tenebris_Trigger_Movement_0:
 # 23 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
 # 23 "data//maps/AncientMirroh/scripts.pory"
+	walk_down
+# 23 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
 # 23 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
 	step_end
 
-# 27 "data//maps/AncientMirroh/scripts.pory"
+# 28 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_Tenebris_Trigger_Movement_1:
-# 27 "data//maps/AncientMirroh/scripts.pory"
+# 28 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 27 "data//maps/AncientMirroh/scripts.pory"
+# 28 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 27 "data//maps/AncientMirroh/scripts.pory"
+# 28 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 27 "data//maps/AncientMirroh/scripts.pory"
+# 28 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
 	step_end
 
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_Tenebris_Trigger_Movement_2:
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
 	walk_right
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
 	walk_right
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 35 "data//maps/AncientMirroh/scripts.pory"
+# 38 "data//maps/AncientMirroh/scripts.pory"
+	walk_up
+# 38 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
 	step_end
 
-# 50 "data//maps/AncientMirroh/scripts.pory"
+# 53 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_0:
-# 50 "data//maps/AncientMirroh/scripts.pory"
+# 53 "data//maps/AncientMirroh/scripts.pory"
 	face_left
 	step_end
 
-# 51 "data//maps/AncientMirroh/scripts.pory"
+# 54 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_1:
-# 51 "data//maps/AncientMirroh/scripts.pory"
+# 54 "data//maps/AncientMirroh/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 57 "data//maps/AncientMirroh/scripts.pory"
+# 60 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_2:
-# 57 "data//maps/AncientMirroh/scripts.pory"
+# 60 "data//maps/AncientMirroh/scripts.pory"
 	jump_in_place_right
-# 57 "data//maps/AncientMirroh/scripts.pory"
+# 60 "data//maps/AncientMirroh/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_3:
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
-# 63 "data//maps/AncientMirroh/scripts.pory"
+# 67 "data//maps/AncientMirroh/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 71 "data//maps/AncientMirroh/scripts.pory"
+# 75 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_4:
-# 71 "data//maps/AncientMirroh/scripts.pory"
+# 75 "data//maps/AncientMirroh/scripts.pory"
 	face_down
 	step_end
 
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_5:
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 72 "data//maps/AncientMirroh/scripts.pory"
+# 76 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
 	step_end
 
-# 75 "data//maps/AncientMirroh/scripts.pory"
+# 79 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_6:
-# 75 "data//maps/AncientMirroh/scripts.pory"
+# 79 "data//maps/AncientMirroh/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 80 "data//maps/AncientMirroh/scripts.pory"
+# 84 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_7:
-# 80 "data//maps/AncientMirroh/scripts.pory"
+# 84 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 80 "data//maps/AncientMirroh/scripts.pory"
+# 84 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 80 "data//maps/AncientMirroh/scripts.pory"
+# 84 "data//maps/AncientMirroh/scripts.pory"
 	face_down
 	step_end
 
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaMeeting_Trigger_Movement_8:
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_up
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 81 "data//maps/AncientMirroh/scripts.pory"
+# 85 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
 	step_end
 
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_KolhaFinal_Trigger_Movement_0:
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 	walk_down
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
-# 104 "data//maps/AncientMirroh/scripts.pory"
+# 108 "data//maps/AncientMirroh/scripts.pory"
 	walk_left
 	step_end
 
-# 118 "data//maps/AncientMirroh/scripts.pory"
+# 122 "data//maps/AncientMirroh/scripts.pory"
 AncientMirroh_GoBackYesNo_Movement_0:
-# 118 "data//maps/AncientMirroh/scripts.pory"
+# 122 "data//maps/AncientMirroh/scripts.pory"
 	face_up
 	step_end
 
 AncientMirroh_KolhaMeeting_Trigger_Text_0:
-# 54 "data//maps/AncientMirroh/scripts.pory"
+# 57 "data//maps/AncientMirroh/scripts.pory"
 	.string "Grunt$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_1:
-# 55 "data//maps/AncientMirroh/scripts.pory"
-	.string "Darn! These Trekking Boots are really\n"
-	.string "slowing me down! I gotta catch up to\l"
-	.string "Melea!$"
+# 58 "data//maps/AncientMirroh/scripts.pory"
+	.string "I gotta catch up to Melea but these\n"
+	.string "Trekking Boots are slowing me down!$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_2:
-# 61 "data//maps/AncientMirroh/scripts.pory"
+# 64 "data//maps/AncientMirroh/scripts.pory"
 	.string "Oh no, you're here already? Gotta go!$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_3:
-# 66 "data//maps/AncientMirroh/scripts.pory"
+# 70 "data//maps/AncientMirroh/scripts.pory"
 	.string "???$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_4:
-# 67 "data//maps/AncientMirroh/scripts.pory"
+# 71 "data//maps/AncientMirroh/scripts.pory"
 	.string "Hey grunt! Wait right there!$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_5:
-# 77 "data//maps/AncientMirroh/scripts.pory"
+# 81 "data//maps/AncientMirroh/scripts.pory"
 	.string "Kohla$"
 
 AncientMirroh_KolhaMeeting_Trigger_Text_6:
-# 78 "data//maps/AncientMirroh/scripts.pory"
+# 82 "data//maps/AncientMirroh/scripts.pory"
 	.string "{PLAYER}? How'd you get over here?\p"
 	.string "...\p"
 	.string "So that's what happened. I must have\n"
-	.string "reached the peak after you did, then.\l"
-	.string "When I came, nobody was there. I found\l"
+	.string "reached the peak after you did, then.\p"
+	.string "Nobody was there when I came. I found\n"
 	.string "this big machine and pressed a button,\l"
-	.string "and then suddenly got transported\l"
-	.string "here!\p"
+	.string "and then got transported here!\p"
 	.string "...\p"
 	.string "Slow as usual, you are. I came after you\n"
-	.string "and still managed to catch up. Bet you\l"
-	.string "wasted your time exploring this area\l"
-	.string "and catching Pokémon while Melea went\l"
-	.string "on to catch the Ancient Terror!\p"
+	.string "and still managed to catch up.\p"
+	.string "Bet you wasted your time exploring and\n"
+	.string "catching Pokémon while Melea went on to\l"
+	.string "catch the Ancient Terror!\p"
 	.string "...\p"
 	.string "Well I'm here to do the right thing, so\n"
-	.string "get out of my way. Go on - move!$"
+	.string "get out of my way.\p"
+	.string "Go on - move!$"
 
 AncientMirroh_KolhaFinal_Trigger_Text_0:
-# 102 "data//maps/AncientMirroh/scripts.pory"
+# 106 "data//maps/AncientMirroh/scripts.pory"
 	.string "There you are! Hurry up.$"
 
 AncientMirroh_GoBackYesNo_Text_0:
-# 111 "data//maps/AncientMirroh/scripts.pory"
-	.string "Do you want to take the dreamstone\n"
-	.string "back?$"
+# 115 "data//maps/AncientMirroh/scripts.pory"
+	.string "Head back using the dreamstone?$"
 
 AncientMirroh_GoBackYesNo_Text_1:
-# 116 "data//maps/AncientMirroh/scripts.pory"
+# 120 "data//maps/AncientMirroh/scripts.pory"
 	.string "Let's get ready then.$"
 
 AncientMirroh_GoBackYesNo_Text_2:
-# 121 "data//maps/AncientMirroh/scripts.pory"
+# 125 "data//maps/AncientMirroh/scripts.pory"
 	.string "3...2...1...$"
 
 AncientMirroh_GoBackYesNo_Text_3:
-# 140 "data//maps/AncientMirroh/scripts.pory"
+# 144 "data//maps/AncientMirroh/scripts.pory"
 	.string "What are you waiting for?$"
 
 AncientMirroh_Dreamstone_Text_0:
-# 151 "data//maps/AncientMirroh/scripts.pory"
+# 155 "data//maps/AncientMirroh/scripts.pory"
 	.string "It's a dreamstone...the surface is so\n"
 	.string "smooth. It doesn't look natural at all.$"
+
+AncientMirroh_KohlaGoBack_Text_0:
+# 161 "data//maps/AncientMirroh/scripts.pory"
+	.string "What are you waiting for?\n"
+	.string "Let's hurry up and go back!$"

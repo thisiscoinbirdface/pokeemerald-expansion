@@ -248,113 +248,175 @@ AncientMirroh_Tower_4F_MainTrigger::
 	release
 # 159 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 160 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	playmoncry SPECIES_KORAIDON, CRY_MODE_NORMAL
-# 161 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmoncry
 # 162 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	removeobject 4
+	playmoncry SPECIES_KORAIDON, CRY_MODE_NORMAL
 # 163 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	waitmoncry
 # 166 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+	playse SE_BALL_THROW
 # 167 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+	waitse
 # 168 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
+	delay 20
 # 169 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	delay 30
+	playse SE_BALL_BOUNCE_1
 # 170 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
+	waitse
 # 171 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_16
+	delay 24
 # 172 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	release
+	playse SE_BALL_BOUNCE_2
 # 173 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_10
+	waitse
 # 174 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_1
+	delay 10
 # 175 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
+	playse SE_BALL_BOUNCE_3
 # 176 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	delay 30
+	waitse
 # 177 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+	delay 2
 # 178 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
+	playse SE_BALL_BOUNCE_4
 # 179 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	delay 30
+	waitse
+# 180 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 14
 # 181 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
+	playse SE_BALL
 # 182 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_17
+	waitse
 # 183 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	release
-# 184 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	delay 8
-# 185 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	speakername AncientMirroh_Tower_4F_MainTrigger_Text_8
-# 186 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_18
-# 188 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
-# 189 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_19
-# 190 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	release
-# 192 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	clearflag FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS
-# 193 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	addobject 6
-# 194 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	delay 30
+# 184 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	playse SE_BALL
+# 185 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitse
+# 186 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 30
+# 187 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	playse SE_BALL
+# 188 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitse
+# 189 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 30
+# 190 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	playse SE_RG_BALL_CLICK
+# 191 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitse
+# 192 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 20
+# 194 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	removeobject 4
 # 195 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_1
-# 196 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
-# 197 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	delay 16
+	fadescreen FADE_FROM_WHITE
+# 198 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+# 199 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_4
 # 200 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	waitmovement 0
 # 201 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	removeobject LOCALID_MELEA
+	delay 30
 # 202 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	removeobject 3
+	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
 # 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	removeobject 1
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_16
 # 204 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 207 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	special SpawnCameraObject
-# 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, AncientMirroh_Tower_4F_MainTrigger_Movement_11
-# 209 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
-# 210 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	special RemoveCameraObject
-# 213 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_12
-# 214 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_13
-# 215 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	waitmovement 0
-# 216 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	speakername AncientMirroh_Tower_4F_MainTrigger_Text_0
-# 217 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_20
-# 218 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	release
-# 220 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_4
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_14
-# 222 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 205 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_10
+# 206 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_1
+# 207 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	waitmovement 0
-# 223 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	removeobject LOCALID_KOHLA
+# 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 30
+# 209 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_MELEA, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+# 210 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 211 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 30
+# 213 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
+# 214 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_17
+# 215 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	release
+# 216 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 8
+# 217 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	speakername AncientMirroh_Tower_4F_MainTrigger_Text_8
+# 218 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_18
+# 220 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	speakername AncientMirroh_Tower_4F_MainTrigger_Text_2
+# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_19
+# 222 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	release
+# 224 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	clearflag FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS
+# 225 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	addobject 6
+# 226 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 30
 # 227 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	setflag FLAG_ANCIENT_MIRROH_KORAIDON
+	applymovement 3, AncientMirroh_Tower_4F_MainTrigger_Movement_1
 # 228 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 229 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 16
+# 232 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 233 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	playse SE_WARP_OUT
+# 234 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitse
+# 235 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	removeobject LOCALID_MELEA
+# 236 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	removeobject 3
+# 237 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	removeobject 1
+# 238 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 241 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	special SpawnCameraObject
+# 242 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, AncientMirroh_Tower_4F_MainTrigger_Movement_11
+# 243 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 244 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	special RemoveCameraObject
+# 247 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_12
+# 248 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_13
+# 249 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 250 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	speakername AncientMirroh_Tower_4F_MainTrigger_Text_0
+# 251 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	msgbox AncientMirroh_Tower_4F_MainTrigger_Text_20
+# 252 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	release
+# 254 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, AncientMirroh_Tower_4F_MainTrigger_Movement_4
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	applymovement LOCALID_KOHLA, AncientMirroh_Tower_4F_MainTrigger_Movement_14
+# 256 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitmovement 0
+# 257 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	removeobject LOCALID_KOHLA
+# 258 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	playse SE_EXIT
+# 259 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	waitse
+# 262 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	setflag FLAG_ANCIENT_MIRROH_KORAIDON
+# 263 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	releaseall
 	end
 
@@ -442,39 +504,39 @@ AncientMirroh_Tower_4F_MainTrigger_Movement_10:
 	face_up
 	step_end
 
-# 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 242 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 AncientMirroh_Tower_4F_MainTrigger_Movement_11:
-# 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 242 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 208 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 242 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
 	step_end
 
-# 213 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 247 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 AncientMirroh_Tower_4F_MainTrigger_Movement_12:
-# 213 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 247 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 214 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 248 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 AncientMirroh_Tower_4F_MainTrigger_Movement_13:
-# 214 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 248 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	face_right
 	step_end
 
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 AncientMirroh_Tower_4F_MainTrigger_Movement_14:
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_left
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
-# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 255 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	walk_down
 	step_end
 
@@ -484,9 +546,9 @@ AncientMirroh_Tower_4F_MainTrigger_Text_0:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_1:
 # 40 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Wait right there, Team Somber! The Ace\n"
-	.string "Rookie is here now, so stop your\l"
-	.string "dastardly -$"
+	.string "Wait right there, Team Somber!\p"
+	.string "The Ace Rookie is here now, so stop\n"
+	.string "your dastardly -$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_2:
 # 45 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -494,8 +556,8 @@ AncientMirroh_Tower_4F_MainTrigger_Text_2:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_3:
 # 46 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Shh! It's sleeping. If you wake it up,\n"
-	.string "we'll all be goners!$"
+	.string "Shh, you idiot! It's sleeping.\n"
+	.string "If you wake it, we'll all be goners!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_4:
 # 56 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -505,8 +567,8 @@ AncientMirroh_Tower_4F_MainTrigger_Text_4:
 	.string "latent potential within the dreams and\l"
 	.string "memories of Pokémon today and created\l"
 	.string "a way to visit the past!\p"
-	.string "It's like science fiction...Leader was\n"
-	.string "right all along...$"
+	.string "It's like science fiction...\n"
+	.string "Leader was right all along...$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_5:
 # 64 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -522,12 +584,13 @@ AncientMirroh_Tower_4F_MainTrigger_Text_5:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_6:
 # 72 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "I don't get it! What do you people even\n"
-	.string "plan to do?$"
+	.string "I don't get it!\n"
+	.string "What do you people even plan to do?$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_7:
 # 78 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Us? What do we want? Power, obviously.\n"
+	.string "What do we want?\p"
+	.string "What we want is power, obviously.\n"
 	.string "You're asking the wrong question.\p"
 	.string "Forgivable, considering your age.\p"
 	.string "The real question you should be\n"
@@ -539,7 +602,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_8:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_9:
 # 85 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Y-yeah, boss! Even I wanna know why.$"
+	.string "Yeah, boss! Even I wanna know why.$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_10:
 # 96 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -552,8 +615,8 @@ AncientMirroh_Tower_4F_MainTrigger_Text_11:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_12:
 # 129 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "We've got to hurry! I wasted too much\n"
-	.string "time talking to you two.$"
+	.string "Oh no - we've got to hurry! I wasted too\n"
+	.string "much time talking to you two.$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_13:
 # 134 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -563,42 +626,41 @@ AncientMirroh_Tower_4F_MainTrigger_Text_14:
 # 141 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "Y-yes boss! Right here boss!\p"
 	.string "...\p"
-	.string "These Trekking Boots are making it hard\n"
-	.string "to move...$"
+	.string "Gah! I can't move properly in these\n"
+	.string "Trekking Boots!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_15:
 # 156 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Come, Ancient Terror! Let Team Somber\n"
-	.string "show you the future!$"
+	.string "Come, Ancient Terror!\n"
+	.string "Let Team Somber show you the future!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_16:
-# 171 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "And now it's time to bid adieu! I hope\n"
 	.string "you enjoy your time here in Ancient\l"
 	.string "Cormoria - because you'll never leave!\p"
 	.string "Hahaha!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_17:
-# 182 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 214 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "What are you doing?!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_18:
-# 186 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Boss, my Trekking Boots got stuck on\n"
-	.string "these cracks!$"
+# 218 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	.string "Boss - wait! My Trekking Boots got\n"
+	.string "stuck on these cracks!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_19:
-# 189 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Hurry, idiot! Toss those Trekking Boots\n"
-	.string "aside!$"
+# 221 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	.string "Toss those Trekking Boots aside, idiot!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_20:
-# 217 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "They got away! We've got to find a way\n"
-	.string "back somehow...but they took the\l"
-	.string "dreamstone out!\p"
+# 251 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	.string "They got away!\p"
+	.string "We've got to find a way back somehow...\n"
+	.string "but they used the dreamstone!\p"
 	.string "...\p"
 	.string "But since I came separately, there must\n"
-	.string "be another dreamstone somewhere!\p"
+	.string "be another dreamstone somewhere.\p"
 	.string "I'm going to go look for it, so you'd\n"
 	.string "better hurry up, {PLAYER}!$"

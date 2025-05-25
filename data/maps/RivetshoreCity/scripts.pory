@@ -192,6 +192,7 @@ script RivetshoreCity_Assembly_Trigger{
     waitmovement(0)    
 
     //ship goes away
+    playse(SE_SHIP)
     applymovement(LOCALID_SPEEDBOAT, moves(walk_fast_right * 10))
     waitmovement(0)        
 

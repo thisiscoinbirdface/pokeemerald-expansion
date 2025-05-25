@@ -37,13 +37,13 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Wait right there, Team Somber! The Ace Rookie is here now, so stop your dastardly - "))
+    msgbox(format("Wait right there, Team Somber!\pThe Ace Rookie is here now, so stop\nyour dastardly - "))
 
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
 
     speakername("Melea")
-    msgbox(format("Shh! It's sleeping. If you wake it up, we'll all be goners!"))
+    msgbox(format("Shh, you idiot! It's sleeping.\nIf you wake it, we'll all be goners!"))
     release
     delay(30)
 
@@ -53,7 +53,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
 
     speakername("Melea")
-    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...Leader was right all along..."))
+    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...\nLeader was right all along..."))
     release
     delay(30)
 
@@ -69,20 +69,20 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("I don't get it! What do you people even plan to do?"))
+    msgbox(format("I don't get it!\nWhat do you people even plan to do?"))
     release
 
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
     waitmovement(0)
     speakername("Melea")
-    msgbox(format("Us? What do we want? Power, obviously. You're asking the wrong question.\pForgivable, considering your age.\pThe real question you should be asking...is why."))
+    msgbox(format("What do we want?\pWhat we want is power, obviously.\nYou're asking the wrong question.\pForgivable, considering your age.\pThe real question you should be asking...is why."))
     release
 
     applymovement(3, moves(emote_question_mark))
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("Y-yeah, boss! Even I wanna know why."))
+    msgbox(format("Yeah, boss! Even I wanna know why."))
     release
 
     setvar(VAR_0x8004, 2)  //vertical pan
@@ -126,7 +126,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(16)
     speakername("Melea")
-    msgbox(format("We've got to hurry! I wasted too much time talking to you two."))
+    msgbox(format("Oh no - we've got to hurry! I wasted too much time talking to you two."))
     release
     applymovement(LOCALID_MELEA, moves(face_down))
     waitmovement(0)    
@@ -138,7 +138,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("Y-yes boss! Right here boss!\p...\pThese Trekking Boots are making it hard to move..."))
+    msgbox(format("Y-yes boss! Right here boss!\p...\pGah! I can't move properly in these Trekking Boots!"))
     release    
 
     applymovement(3, moves(walk_up face_right))
@@ -153,12 +153,44 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("Come, Ancient Terror! Let Team Somber show you the future!"))
+    msgbox(format("Come, Ancient Terror!\nLet Team Somber show you the future!"))
     release
 
     fadescreen(FADE_TO_WHITE)
+
+    //koraidon cry
     playmoncry(SPECIES_KORAIDON, CRY_MODE_NORMAL)
     waitmoncry
+
+    //ball sequence
+    playse(SE_BALL_THROW)
+    waitse
+	delay(20)
+    playse(SE_BALL_BOUNCE_1)
+    waitse
+	delay(24)
+    playse(SE_BALL_BOUNCE_2)
+    waitse
+	delay(10)
+    playse(SE_BALL_BOUNCE_3)
+    waitse
+	delay(2)
+    playse(SE_BALL_BOUNCE_4)
+    waitse
+	delay(14)
+    playse(SE_BALL)
+    waitse
+    delay(30)
+    playse(SE_BALL)
+    waitse
+    delay(30)
+    playse(SE_BALL)
+    waitse
+    delay(30)
+    playse(SE_RG_BALL_CLICK)
+    waitse
+    delay(20)
+
     removeobject(4)
     fadescreen(FADE_FROM_WHITE)
 
@@ -183,10 +215,10 @@ script AncientMirroh_Tower_4F_MainTrigger{
     release
     delay(8)
     speakername("Grunt")
-    msgbox(format("Boss, my Trekking Boots got stuck on these cracks!"))
+    msgbox(format("Boss - wait! My Trekking Boots got stuck on these cracks!"))
         
     speakername("Melea")
-    msgbox(format("Hurry, idiot! Toss those Trekking Boots aside!"))
+    msgbox(format("Toss those Trekking Boots aside, idiot!"))
     release
 
     clearflag(FLAG_ANCIENT_MIRROH_HEAVYDUTYBOOTS)
@@ -198,6 +230,8 @@ script AncientMirroh_Tower_4F_MainTrigger{
 
     //fadeout
     fadescreen(FADE_TO_BLACK) 
+    playse(SE_WARP_OUT)
+    waitse
     removeobject(LOCALID_MELEA)
     removeobject(3)
     removeobject(1)
@@ -214,14 +248,15 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     speakername("Kohla")
-    msgbox(format("They got away! We've got to find a way back somehow...but they took the dreamstone out!\p...\pBut since I came separately, there must be another dreamstone somewhere!\pI'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
+    msgbox(format("They got away!\pWe've got to find a way back somehow...\nbut they used the dreamstone!\p...\pBut since I came separately, there must be another dreamstone somewhere.\pI'm going to go look for it, so you'd better hurry up, {PLAYER}!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(LOCALID_KOHLA, moves(walk_down walk_left walk_down * 4))
     waitmovement(0)
     removeobject(LOCALID_KOHLA)
-
+    playse(SE_EXIT)
+    waitse
 
     //flags
     setflag(FLAG_ANCIENT_MIRROH_KORAIDON)

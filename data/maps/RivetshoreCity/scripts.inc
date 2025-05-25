@@ -272,70 +272,72 @@ RivetshoreCity_Assembly_Trigger::
 # 192 "data//maps/RivetshoreCity/scripts.pory"
 	waitmovement 0
 # 195 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_SPEEDBOAT, RivetshoreCity_Assembly_Trigger_Movement_12
+	playse SE_SHIP
 # 196 "data//maps/RivetshoreCity/scripts.pory"
+	applymovement LOCALID_SPEEDBOAT, RivetshoreCity_Assembly_Trigger_Movement_12
+# 197 "data//maps/RivetshoreCity/scripts.pory"
 	waitmovement 0
-# 198 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreCity_Assembly_Trigger_Movement_13
 # 199 "data//maps/RivetshoreCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreCity_Assembly_Trigger_Movement_13
+# 200 "data//maps/RivetshoreCity/scripts.pory"
 	waitmovement 0
-# 201 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_RAAZI, RivetshoreCity_Assembly_Trigger_Movement_2
 # 202 "data//maps/RivetshoreCity/scripts.pory"
-	movedelay
+	applymovement LOCALID_RAAZI, RivetshoreCity_Assembly_Trigger_Movement_2
 # 203 "data//maps/RivetshoreCity/scripts.pory"
+	movedelay
+# 204 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox_delay RivetshoreCity_Assembly_Trigger_Text_6, RivetshoreCity_Assembly_Trigger_Text_41
-# 205 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_14
 # 206 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_15
+	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_14
 # 207 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_INGER, RivetshoreCity_Assembly_Trigger_Movement_16
+	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_15
 # 208 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_GLORIA, RivetshoreCity_Assembly_Trigger_Movement_17
+	applymovement LOCALID_INGER, RivetshoreCity_Assembly_Trigger_Movement_16
 # 209 "data//maps/RivetshoreCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_GLORIA, RivetshoreCity_Assembly_Trigger_Movement_17
 # 210 "data//maps/RivetshoreCity/scripts.pory"
+	waitmovement 0
+# 211 "data//maps/RivetshoreCity/scripts.pory"
 	removeobject LOCALID_GLORIA
-# 212 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_10
 # 213 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_18
+	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_10
 # 214 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_INGER, RivetshoreCity_Assembly_Trigger_Movement_9
+	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_18
 # 215 "data//maps/RivetshoreCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_INGER, RivetshoreCity_Assembly_Trigger_Movement_9
 # 216 "data//maps/RivetshoreCity/scripts.pory"
+	waitmovement 0
+# 217 "data//maps/RivetshoreCity/scripts.pory"
 	removeobject LOCALID_INGER
-# 218 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_9
 # 219 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_9
+	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_9
 # 220 "data//maps/RivetshoreCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_ARIANA, RivetshoreCity_Assembly_Trigger_Movement_9
 # 221 "data//maps/RivetshoreCity/scripts.pory"
+	waitmovement 0
+# 222 "data//maps/RivetshoreCity/scripts.pory"
 	removeobject LOCALID_ARIANA
-# 223 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_15
 # 224 "data//maps/RivetshoreCity/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_JANIA, RivetshoreCity_Assembly_Trigger_Movement_15
 # 225 "data//maps/RivetshoreCity/scripts.pory"
-	removeobject LOCALID_JANIA
-# 228 "data//maps/RivetshoreCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 229 "data//maps/RivetshoreCity/scripts.pory"
-	removeobject LOCALID_RAAZI
-# 230 "data//maps/RivetshoreCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 232 "data//maps/RivetshoreCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreCity_Gabrielle_Trigger_Movement_2
-# 233 "data//maps/RivetshoreCity/scripts.pory"
 	waitmovement 0
+# 226 "data//maps/RivetshoreCity/scripts.pory"
+	removeobject LOCALID_JANIA
+# 229 "data//maps/RivetshoreCity/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 230 "data//maps/RivetshoreCity/scripts.pory"
+	removeobject LOCALID_RAAZI
+# 231 "data//maps/RivetshoreCity/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 233 "data//maps/RivetshoreCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreCity_Gabrielle_Trigger_Movement_2
 # 234 "data//maps/RivetshoreCity/scripts.pory"
+	waitmovement 0
+# 235 "data//maps/RivetshoreCity/scripts.pory"
 	special RemoveCameraObject
-# 237 "data//maps/RivetshoreCity/scripts.pory"
-	setflag FLAG_RIVETSHORE_ASSEMBLY
 # 238 "data//maps/RivetshoreCity/scripts.pory"
+	setflag FLAG_RIVETSHORE_ASSEMBLY
+# 239 "data//maps/RivetshoreCity/scripts.pory"
 	releaseall
 	end
 
@@ -344,155 +346,155 @@ RivetshoreCity_Assembly_Trigger_2:
 
 
 RivetshoreCity_NPC_StorageBaySailor::
-# 256 "data//maps/RivetshoreCity/scripts.pory"
+# 257 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_StorageBaySailor_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_1::
-# 262 "data//maps/RivetshoreCity/scripts.pory"
+# 263 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_1_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_2::
-# 267 "data//maps/RivetshoreCity/scripts.pory"
+# 268 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_2_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_3::
-# 272 "data//maps/RivetshoreCity/scripts.pory"
+# 273 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_3_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_4::
-# 277 "data//maps/RivetshoreCity/scripts.pory"
+# 278 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_4_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_5::
-# 282 "data//maps/RivetshoreCity/scripts.pory"
+# 283 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_5_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_6::
-# 287 "data//maps/RivetshoreCity/scripts.pory"
+# 288 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_6_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_7::
-# 292 "data//maps/RivetshoreCity/scripts.pory"
+# 293 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_7_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_8::
-# 297 "data//maps/RivetshoreCity/scripts.pory"
+# 298 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_8_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_NPC_9::
-# 302 "data//maps/RivetshoreCity/scripts.pory"
+# 303 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_NPC_9_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_Market_Shop_1::
-# 315 "data//maps/RivetshoreCity/scripts.pory"
-	lock
 # 316 "data//maps/RivetshoreCity/scripts.pory"
-	faceplayer
+	lock
 # 317 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
+	faceplayer
 # 318 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 319 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_1
+	waitmessage
 # 320 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart RivetshoreCity_Mart_1
 # 321 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 322 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 RivetshoreCity_Market_Shop_2::
-# 327 "data//maps/RivetshoreCity/scripts.pory"
-	lock
 # 328 "data//maps/RivetshoreCity/scripts.pory"
-	faceplayer
+	lock
 # 329 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
+	faceplayer
 # 330 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 331 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_2
+	waitmessage
 # 332 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart RivetshoreCity_Mart_2
 # 333 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 334 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 RivetshoreCity_Market_Shop_Secret::
-# 340 "data//maps/RivetshoreCity/scripts.pory"
-	lock
 # 341 "data//maps/RivetshoreCity/scripts.pory"
-	faceplayer
+	lock
 # 342 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
+	faceplayer
 # 343 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 344 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_Secret
+	waitmessage
 # 345 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart RivetshoreCity_Mart_Secret
 # 346 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 347 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 350 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_1:
 # 351 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_HYPER_POTION
+RivetshoreCity_Mart_1:
 # 352 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_HYPER_POTION
 # 353 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_REVIVE
 # 354 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 355 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_NONE
 
 	.align 2
-# 357 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_2:
 # 358 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM04
+RivetshoreCity_Mart_2:
 # 359 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM15
+	.2byte ITEM_TM04
 # 360 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM24
+	.2byte ITEM_TM15
 # 361 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM30
+	.2byte ITEM_TM24
 # 362 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM35
+	.2byte ITEM_TM30
 # 363 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TM35
+# 364 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TM38
 	.2byte ITEM_NONE
 
 	.align 2
-# 366 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 367 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 368 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_GALARICA_CUFF
+# 369 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
 	.2byte ITEM_NONE
 
@@ -652,89 +654,89 @@ RivetshoreCity_Assembly_Trigger_Movement_11:
 	walk_up
 	step_end
 
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_12:
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
-# 195 "data//maps/RivetshoreCity/scripts.pory"
+# 196 "data//maps/RivetshoreCity/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_13:
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_down
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_down
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_down
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_down
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 198 "data//maps/RivetshoreCity/scripts.pory"
+# 199 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
 	step_end
 
-# 205 "data//maps/RivetshoreCity/scripts.pory"
+# 206 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_14:
-# 205 "data//maps/RivetshoreCity/scripts.pory"
+# 206 "data//maps/RivetshoreCity/scripts.pory"
 	walk_right
-# 205 "data//maps/RivetshoreCity/scripts.pory"
+# 206 "data//maps/RivetshoreCity/scripts.pory"
 	walk_right
 	step_end
 
-# 206 "data//maps/RivetshoreCity/scripts.pory"
+# 207 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_15:
-# 206 "data//maps/RivetshoreCity/scripts.pory"
+# 207 "data//maps/RivetshoreCity/scripts.pory"
 	walk_up
-# 206 "data//maps/RivetshoreCity/scripts.pory"
+# 207 "data//maps/RivetshoreCity/scripts.pory"
 	walk_up
 	step_end
 
-# 207 "data//maps/RivetshoreCity/scripts.pory"
+# 208 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_16:
-# 207 "data//maps/RivetshoreCity/scripts.pory"
+# 208 "data//maps/RivetshoreCity/scripts.pory"
 	walk_up
-# 207 "data//maps/RivetshoreCity/scripts.pory"
+# 208 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
 	step_end
 
-# 208 "data//maps/RivetshoreCity/scripts.pory"
+# 209 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_17:
-# 208 "data//maps/RivetshoreCity/scripts.pory"
+# 209 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
-# 208 "data//maps/RivetshoreCity/scripts.pory"
+# 209 "data//maps/RivetshoreCity/scripts.pory"
 	walk_up
 	step_end
 
-# 213 "data//maps/RivetshoreCity/scripts.pory"
+# 214 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Assembly_Trigger_Movement_18:
-# 213 "data//maps/RivetshoreCity/scripts.pory"
+# 214 "data//maps/RivetshoreCity/scripts.pory"
 	walk_left
 	step_end
 
@@ -991,12 +993,12 @@ RivetshoreCity_Assembly_Trigger_Text_40:
 	.string "Let's get to it!$"
 
 RivetshoreCity_Assembly_Trigger_Text_41:
-# 203 "data//maps/RivetshoreCity/scripts.pory"
+# 204 "data//maps/RivetshoreCity/scripts.pory"
 	.string "I'm heading back to the quarry. The rest\n"
 	.string "of you can wait in the harbor.$"
 
 RivetshoreCity_NPC_StorageBaySailor_Text_0:
-# 256 "data//maps/RivetshoreCity/scripts.pory"
+# 257 "data//maps/RivetshoreCity/scripts.pory"
 	.string "This is the storage bay. We're busy\n"
 	.string "loading up on supplies for the S.S.\l"
 	.string "Elegant!\p"
@@ -1004,12 +1006,12 @@ RivetshoreCity_NPC_StorageBaySailor_Text_0:
 	.string "Scram!$"
 
 RivetshoreCity_NPC_1_Text_0:
-# 262 "data//maps/RivetshoreCity/scripts.pory"
+# 263 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Look! Look! My footprints stay on the\n"
 	.string "sand.$"
 
 RivetshoreCity_NPC_2_Text_0:
-# 267 "data//maps/RivetshoreCity/scripts.pory"
+# 268 "data//maps/RivetshoreCity/scripts.pory"
 	.string "They've turned this town into a\n"
 	.string "monstrosity! It used to be a beautiful\l"
 	.string "fishing spot until they built the quarry\l"
@@ -1017,34 +1019,34 @@ RivetshoreCity_NPC_2_Text_0:
 	.string "away.$"
 
 RivetshoreCity_NPC_3_Text_0:
-# 272 "data//maps/RivetshoreCity/scripts.pory"
+# 273 "data//maps/RivetshoreCity/scripts.pory"
 	.string "I wanted to go on the SS Elegant cruise\n"
 	.string "but I couldn't get a ticket.$"
 
 RivetshoreCity_NPC_4_Text_0:
-# 277 "data//maps/RivetshoreCity/scripts.pory"
+# 278 "data//maps/RivetshoreCity/scripts.pory"
 	.string "My house has rickety stairs! I'm going\n"
 	.string "to sue Rivetshore Construction.$"
 
 RivetshoreCity_NPC_5_Text_0:
-# 282 "data//maps/RivetshoreCity/scripts.pory"
+# 283 "data//maps/RivetshoreCity/scripts.pory"
 	.string "You won't find this stuff anywhere\n"
 	.string "else!$"
 
 RivetshoreCity_NPC_6_Text_0:
-# 287 "data//maps/RivetshoreCity/scripts.pory"
+# 288 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Whose boat is that floating over there?$"
 
 RivetshoreCity_NPC_7_Text_0:
-# 292 "data//maps/RivetshoreCity/scripts.pory"
+# 293 "data//maps/RivetshoreCity/scripts.pory"
 	.string "What a day for a walk at the harbor!$"
 
 RivetshoreCity_NPC_8_Text_0:
-# 297 "data//maps/RivetshoreCity/scripts.pory"
+# 298 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Shoo, child! Don't disturb me.$"
 
 RivetshoreCity_NPC_9_Text_0:
-# 302 "data//maps/RivetshoreCity/scripts.pory"
+# 303 "data//maps/RivetshoreCity/scripts.pory"
 	.string "What am I doing here? Enjoying the sea\n"
 	.string "breeze, of course!\p"
 	.string "...\p"
