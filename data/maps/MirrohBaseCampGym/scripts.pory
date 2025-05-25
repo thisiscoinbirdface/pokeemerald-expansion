@@ -277,13 +277,12 @@ script MirrohBaseCampGym_Leader{
         delay(60)
         speakername("Carona")
         msgbox(format("...but that's all in the past. Next week the construction crew will come to demolish this building. You were lucky you found me. I have one badge left.\pPerhaps you are the one destined to deliver the final blow...\pBut I'm still a Leader! And I will be until the very end!"))
-
-        hidefollower
-
-        fadescreen(FADE_TO_BLACK)
         release
+        
+        //camera setup
+        fadescreen(FADE_TO_BLACK)
+        hidefollower
         setobjectxy(OBJ_EVENT_ID_PLAYER, 0, 5)
-
         special(SpawnCameraObject)
         applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2))
         waitmovement(0)
@@ -292,6 +291,7 @@ script MirrohBaseCampGym_Leader{
         applymovement(1, moves(face_left))
         waitmovement(0)
         fadescreen(FADE_FROM_BLACK)
+
         speakername("Carona")
         msgbox(format("Now, trainer, I'll make you feel the force of these iron fists!"))
         release

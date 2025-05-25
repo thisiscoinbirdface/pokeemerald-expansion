@@ -99,9 +99,9 @@ script MirrohInterior_1F_EventScript_NurseQuest_MissingChansey{
     lockall
     faceplayer
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("seyy!!!\pChansey looks so relieved - it's about to cry!\pIt must have been really scared alone here.\p...\pChansey stretches out a hand..."))
+    msgbox(format("seyy!!!\pChansey looks so relieved...\nIt's about to cry!\pIt must have been really scared,\nstuck all alone in here.\p...\pChansey stretches out a hand..."))
     call(Common_EventScript_OutOfCenterPartyHeal)
-    msgbox(format("Thank you Chansey! You don't need to worry any more. It's time to take you back to Nurse Joy."))
+    msgbox(format("Thank you Chansey!\pYou don't need to worry any more.\nLet's go back to Nurse Joy!"))
     release
     setflag(FLAG_MIRROH_NURSE_QUEST_CHANSEYGET)
     clearflag(FLAG_HIDE_MIRROH_LAST_CHANSEY)
@@ -144,7 +144,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         delay(16)
         applymovement(LOCALID_NURSE, moves(walk_down face_right))        
         waitmovement(0)
-        msgbox(format("Thank you trainer! You saved Chansey!\p...\pSo these Team Somber people caused the cave-ins. How scary! I hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
+        msgbox(format("Thank you trainer! You saved Chansey!\pThis group of people calling themselves Team Somber caused these cave-ins!\pThey came in here with big machinery and collapsed parts of the cavern.\pThey seemed so scary!\nI hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
@@ -159,7 +159,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)
         delay(16)
-        msgbox(format("We should head off to Winterlily Hollow now. The nurse there must be waiting for us.\pThank you again, {PLAYER} and we wish you all the best in your journey. Drop by the Pokémon Center any time!"))
+        msgbox(format("We should go to Winterlily Hollow now.\nThe nurse must be waiting for us.\pThank you again, {PLAYER} and we wish you all the best in your journey.\pDrop by the Pokémon Center any time!"))
         release
 
         //fade
@@ -227,7 +227,7 @@ script MirrohInterior_1F_Trainer_D{
     msgbox(format("Who're you? Mind your own business, kid.\p...\pYou're going to return Chansey to Nurse Joy by the entrance?\pHah! Fat chance. Ever heard about finders keepers? Well I'll teach you since nobody else did!"))
 
     trainerbattle_no_intro(TRAINER_MIRROHINT_D, format("No! My new Chansey!"))
-    msgbox(format("Fine! Give that Chansey back to Nurse Joy! I'm outta here!"))
+    msgbox(format("Fine! You can go give that Chansey back to Nurse Joy! I'm outta here!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_down))
     applymovement(LOCALID_ROBBER, moves(walk_down * 7))
@@ -310,7 +310,7 @@ script MirrohInterior_Bergmite_A{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock!\nIt was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_A)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -323,7 +323,7 @@ script MirrohInterior_Bergmite_B{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock!\nIt was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_B)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -336,7 +336,7 @@ script MirrohInterior_Bergmite_C{
         end
     }
 
-    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock! It was a wild Pokémon!"))
+    msgbox(format("{PLAYER} searched the rock...\p...but it wasn't a rock!\nIt was a wild Pokémon!"))
     setflag(FLAG_MIRROH_BERGMITE_C)
     setwildbattle(SPECIES_BERGMITE, 28)
     dowildbattle
@@ -377,7 +377,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Grunt B")
-    msgbox(format("Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem! Haha!"))
+    msgbox(format("Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem!\pHaha!"))
     release
     delay(24)   
 
@@ -387,7 +387,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     delay(24)
 
     speakername("Grunt A")
-    msgbox(format("Hey! What are you doing? Didn't your parents tell you it was rude to eavesdrop!"))
+    msgbox(format("Hey! Didn't your parents tell you it was rude to eavesdrop?"))
     release
 
     applymovement(LOCALID_GRUNT1, moves(walk_right))
@@ -395,7 +395,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(24)
 
-    trainerbattle_no_intro(TRAINER_MIRROHINT_E, format("Darn, we lost! My Pokémon are useless!"))
+    trainerbattle_no_intro(TRAINER_MIRROHINT_E, format("Argh! My Pokémon are so weak!"))
 
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right emote_exclamation_mark))
     waitmovement(0)
@@ -408,7 +408,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)    
     speakername("Grunt B")
-    msgbox(format("Hey - aren't you that lab assistant who beat boss Melea back in Silversun City?"))    
+    msgbox(format("Hey - aren't you that lab assistant who beat Melea back in Silversun City?"))    
     release
     delay(24)
 
@@ -417,7 +417,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Grunt A")
-    msgbox(format("Yeah its the same trainer! The boss will want to know. Let's go!"))           
+    msgbox(format("Yeah - the same one who beat Moxie up in Mt. Ceram too!\pThe bosses will want to know this.\nLet's go!"))           
     release
 
     //exit

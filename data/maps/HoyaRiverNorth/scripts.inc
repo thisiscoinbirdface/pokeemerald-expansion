@@ -220,7 +220,6 @@ Route6_Transition_EventScript_KohlaBattle_Movement_3:
 
 Route6_Transition_EventScript_SharpedoBlocker_Text_0:
 # 7 "data//maps/HoyaRiverNorth/scripts.pory"
-	.string "I'm from the Pokémon Ranger Institute.\p"
 	.string "There's a dangerous Pokémon in the\n"
 	.string "Hoya River - it smashed into the\l"
 	.string "riverbank and threw these boulders up!\p"

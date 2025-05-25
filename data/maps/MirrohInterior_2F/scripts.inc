@@ -217,25 +217,25 @@ MirrohInterior_2F_Sandshrew_Text_0:
 
 MirrohInterior_2F_SkiierB_Text_0:
 # 68 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Why don't you runners get it? Skiing is\n"
-	.string "just superior!$"
+	.string "Why don't you runners get it?\n"
+	.string "Skiing is just superior!$"
 
 MirrohInterior_2F_TriathleteB_Text_0:
 # 73 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "The snow has addled your brains! Clear\n"
-	.string "it out with a good run!$"
+	.string "The snow has addled your brains!\n"
+	.string "Clear it out with a good run!$"
 
 MirrohInterior_2F_Lycanroc_Text_0:
 # 79 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Lycanroc is fighting...but\n"
-	.string "half-heartedly. Perhaps it wants to try\l"
-	.string "skiing once?$"
+	.string "Lycanroc is fighting...but only\n"
+	.string "half-heartedly.\p"
+	.string "Perhaps it wants to try skiing once?$"
 
 MirrohInterior_2F_Snover_Text_0:
 # 85 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Snover won't back down...but isn't\n"
-	.string "showing much energy. Maybe it's looking\l"
-	.string "to try new things?$"
+	.string "showing much energy.\p"
+	.string "Maybe it's looking to try new things?$"
 
 MirrohInterior_2F_Trainer_A_Text_0:
 # 100 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -271,10 +271,10 @@ MirrohInterior_2F_Trainer_B_Text_2:
 
 MirrohInterior_2F_Trainer_C_Text_0:
 # 112 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "No it's not! Running needs more\n"
-	.string "endurance than skiing! Hey, trainer!\l"
-	.string "You be the one to decide which one is\l"
-	.string "better!$"
+	.string "So what if it does? Running needs more\n"
+	.string "endurance than skiing!\p"
+	.string "Hey, trainer!\n"
+	.string "You decide which one is better!$"
 
 MirrohInterior_2F_Trainer_C_Text_1:
 # 112 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -287,9 +287,8 @@ MirrohInterior_2F_Trainer_C_Text_2:
 
 MirrohInterior_2F_Trainer_D_Text_0:
 # 118 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Why don't these runners understand?\n"
-	.string "Skiing takes more technique than\l"
-	.string "running!$"
+	.string "Why don't runners get it? Skiing takes\n"
+	.string "more technique than running!$"
 
 MirrohInterior_2F_Trainer_D_Text_1:
 # 118 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -303,12 +302,11 @@ MirrohInterior_2F_Trainer_D_Text_2:
 MirrohInterior_2F_Trainer_E_Text_0:
 # 128 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Didn't I battle you before in Route 3?\n"
-	.string "You're the one that beat me and my\l"
-	.string "sister!$"
+	.string "You beat me and my sister!$"
 
 MirrohInterior_2F_Trainer_E_Text_1:
 # 128 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "You beat me then too!$"
+	.string "You win again!$"
 
 MirrohInterior_2F_Trainer_E_Text_2:
 # 129 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -353,9 +351,9 @@ MirrohInterior_2F_NPC_A_Text_0:
 
 MirrohInterior_2F_NPC_B_Text_0:
 # 168 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "My husband is an avid history buff. He's\n"
-	.string "down there examining some old cave\l"
-	.string "paintings.$"
+	.string "My husband is an avid history buff.\n"
+	.string "He's down there right now, examining\l"
+	.string "some old cave paintings.$"
 
 MirrohInterior_2F_NPC_C_Text_0:
 # 173 "data//maps/MirrohInterior_2F/scripts.pory"

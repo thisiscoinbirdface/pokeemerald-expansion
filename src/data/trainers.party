@@ -2296,21 +2296,40 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Morgrem
-Level: 36
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Honchkrow
-Level: 36
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Slowking-Galar
-Level: 37
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Houndoom @ Houndoominite
+Morgrem @ Eviolite
+Ability: Prankster
 Level: 38
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Fake Out
+- Dazzling Gleam
+- Reflect
+- Light Screen
+
+Honchkrow @ Razor Claw
+Ability: Super Luck
+Level: 39
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Taunt
+- Sucker Punch
+- Aerial Ace
+- Night Slash
+
+Slowking-Galar @ Leftovers
+Ability: Regenerator
+Level: 39
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Toxic
+- Sludge Bomb
+- Calm Mind
+- Slack Off
+
+Houndoom @ Houndoominite
+Level: 42
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Flamethrower
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_A ===
 Name: SMIRNOFF
@@ -2434,20 +2453,20 @@ Starting Status: Electric Terrain
 Mugshot: Yellow
 
 Kilowattrel
-Level: 38
+Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Toxtricity
-Level: 39
+Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lanturn
-Level: 39
+Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Ampharos @ Ampharosite
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Level: 45
+IVs: 30 HP / 15 Atk / 30 Def / 0 SpA / 30 SpD / 15 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_A ===

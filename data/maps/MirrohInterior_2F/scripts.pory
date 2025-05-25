@@ -65,24 +65,24 @@ script MirrohInterior_2F_Sandshrew{
 
 //second skiier vs triathlete
 script MirrohInterior_2F_SkiierB{
-    msgbox(format("Why don't you runners get it? Skiing is just superior!"))
+    msgbox(format("Why don't you runners get it?\nSkiing is just superior!"))
     release
     end
 }
 script MirrohInterior_2F_TriathleteB{
-    msgbox(format("The snow has addled your brains! Clear it out with a good run!"))
+    msgbox(format("The snow has addled your brains!\nClear it out with a good run!"))
     release
     end
 }
 script MirrohInterior_2F_Lycanroc{
     playmoncry(SPECIES_LYCANROC, CRY_MODE_NORMAL)
-    msgbox(format("Lycanroc is fighting...but half-heartedly. Perhaps it wants to try skiing once?"))
+    msgbox(format("Lycanroc is fighting...but only half-heartedly.\pPerhaps it wants to try skiing once?"))
     release
     end
 }
 script MirrohInterior_2F_Snover{
     playmoncry(SPECIES_SNOVER, CRY_MODE_NORMAL)
-    msgbox(format("Snover won't back down...but isn't showing much energy. Maybe it's looking to try new things?"))
+    msgbox(format("Snover won't back down...but isn't showing much energy.\pMaybe it's looking to try new things?"))
     release
     end
 }
@@ -109,13 +109,13 @@ script MirrohInterior_2F_Trainer_B{
 }
 //triathlete F
 script MirrohInterior_2F_Trainer_C{
-    trainerbattle_single(TRAINER_MIRROHINT2_C, format("No it's not! Running needs more endurance than skiing! Hey, trainer! You be the one to decide which one is better!"), format("Even my endurance didn't help!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_C, format("So what if it does? Running needs more endurance than skiing!\pHey, trainer!\nYou decide which one is better!"), format("Even my endurance didn't help!"))
     msgbox(format("I don't know why we argue when the bottom line is that all sports are fun."))
     releaseall
 }
 //skiier F
 script MirrohInterior_2F_Trainer_D{
-    trainerbattle_single(TRAINER_MIRROHINT2_D, format("Why don't these runners understand? Skiing takes more technique than running!"), format("Even my technique didn't help!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_D, format("Why don't runners get it? Skiing takes more technique than running!"), format("Even my technique didn't help!"))
     msgbox(format("To be frank, if I didn't have access to a ski slope, I'd be running myself."))
     releaseall
 }
@@ -125,7 +125,7 @@ script MirrohInterior_2F_Trainer_D{
 
 //lass
 script MirrohInterior_2F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Didn't I battle you before in Route 3? You're the one that beat me and my sister!"), format("You beat me then too!"))
+    trainerbattle_single(TRAINER_MIRROHINT2_E, format("Didn't I battle you before in Route 3? You beat me and my sister!"), format("You win again!"))
     msgbox(format("I'm going to collect all 8 gym badges! But I only have 4 so far."))
     releaseall
 }
@@ -165,7 +165,7 @@ script MirrohInterior_2F_NPC_A{
 }
 //woman staring
 script MirrohInterior_2F_NPC_B{
-    msgbox(format("My husband is an avid history buff. He's down there examining some old cave paintings."), MSGBOX_NPC)
+    msgbox(format("My husband is an avid history buff.\nHe's down there right now, examining some old cave paintings."), MSGBOX_NPC)
     end
 }
 //researcher old man

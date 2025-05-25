@@ -2,7 +2,7 @@
   "id": "MAP_ANCIENT_MIRROH",
   "name": "AncientMirroh",
   "layout": "LAYOUT_ANCIENT_MIRROH",
-  "music": "MUS_CAVE_OF_ORIGIN",
+  "music": "MUS_ROUTE113",
   "region_map_section": "MAPSEC_ANCIENT_CERAM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -801,8 +801,8 @@ MirrohInterior_1F_EventScript_Nurse_Text_0:
 
 MirrohInterior_1F_EventScript_Chansey_Text_0:
 # 42 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Chansey looks stressed! It must be\n"
-	.string "worried about its friend.$"
+	.string "Chansey looks stressed!\n"
+	.string "Must be worried about its friend.$"
 
 MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Text_0:
 # 84 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -822,18 +822,18 @@ MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0:
 MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_0:
 # 102 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "seyy!!!\p"
-	.string "Chansey looks so relieved - it's about\n"
-	.string "to cry!\p"
-	.string "It must have been really scared alone\n"
-	.string "here.\p"
+	.string "Chansey looks so relieved...\n"
+	.string "It's about to cry!\p"
+	.string "It must have been really scared,\n"
+	.string "stuck all alone in here.\p"
 	.string "...\p"
 	.string "Chansey stretches out a hand...$"
 
 MirrohInterior_1F_EventScript_NurseQuest_MissingChansey_Text_1:
 # 104 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Thank you Chansey! You don't need to\n"
-	.string "worry any more. It's time to take you\l"
-	.string "back to Nurse Joy.$"
+	.string "Thank you Chansey!\p"
+	.string "You don't need to worry any more.\n"
+	.string "Let's go back to Nurse Joy!$"
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_0:
 # 132 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -850,10 +850,12 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_2:
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_3:
 # 147 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Thank you trainer! You saved Chansey!\p"
-	.string "...\p"
-	.string "So these Team Somber people caused the\n"
-	.string "cave-ins. How scary! I hope we don't run\l"
-	.string "into them.\p"
+	.string "This group of people calling themselves\n"
+	.string "Team Somber caused these cave-ins!\p"
+	.string "They came in here with big machinery\n"
+	.string "and collapsed parts of the cavern.\p"
+	.string "They seemed so scary!\n"
+	.string "I hope we don't run into them.\p"
 	.string "We're all in your debt, {PLAYER}.\n"
 	.string "There's not much in the way of a reward\l"
 	.string "that I can...oh?$"
@@ -870,12 +872,11 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_5:
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_6:
 # 162 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "We should head off to Winterlily Hollow\n"
-	.string "now. The nurse there must be waiting\l"
-	.string "for us.\p"
+	.string "We should go to Winterlily Hollow now.\n"
+	.string "The nurse must be waiting for us.\p"
 	.string "Thank you again, {PLAYER} and we wish\n"
-	.string "you all the best in your journey. Drop\l"
-	.string "by the Pokémon Center any time!$"
+	.string "you all the best in your journey.\p"
+	.string "Drop by the Pokémon Center any time!$"
 
 MirrohInterior_1F_Trainer_A_Text_0:
 # 200 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -893,7 +894,7 @@ MirrohInterior_1F_Trainer_A_Text_2:
 
 MirrohInterior_1F_Trainer_B_Text_0:
 # 207 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "No! That item's mine!$"
+	.string "Nope! No way! That item's mine!$"
 
 MirrohInterior_1F_Trainer_B_Text_1:
 # 207 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -902,8 +903,7 @@ MirrohInterior_1F_Trainer_B_Text_1:
 MirrohInterior_1F_Trainer_B_Text_2:
 # 208 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Travelers often leave rare items inside\n"
-	.string "caves and mountains. That's where the\l"
-	.string "money is, baby!$"
+	.string "caves and mountains.$"
 
 MirrohInterior_1F_Trainer_C_Text_0:
 # 214 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -941,8 +941,8 @@ MirrohInterior_1F_Trainer_D_Text_2:
 
 MirrohInterior_1F_Trainer_D_Text_3:
 # 230 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Fine! Give that Chansey back to Nurse\n"
-	.string "Joy! I'm outta here!$"
+	.string "Fine! You can go give that Chansey back\n"
+	.string "to Nurse Joy! I'm outta here!$"
 
 MirrohInterior_1F_Trainer_E_Text_0:
 # 244 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -965,9 +965,9 @@ MirrohInterior_1F_NPC_A_Text_0:
 
 MirrohInterior_1F_NPC_B_Text_0:
 # 273 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "The way to Winterlily Hollow is past the\n"
-	.string "ledge above. But how do I cross the\l"
-	.string "ledge?$"
+	.string "Winterlily Hollow is past the ledge\n"
+	.string "above.\n"
+	.string "But how do I cross the ledge?$"
 
 MirrohInterior_1F_NPC_C_Text_0:
 # 278 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -992,8 +992,8 @@ MirrohInterior_Bergmite_A_Text_0:
 MirrohInterior_Bergmite_A_Text_1:
 # 313 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "{PLAYER} searched the rock...\p"
-	.string "...but it wasn't a rock! It was a wild\n"
-	.string "Pokémon!$"
+	.string "...but it wasn't a rock!\n"
+	.string "It was a wild Pokémon!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_0:
 # 373 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -1013,18 +1013,17 @@ MirrohInterior_1F_SomberGrunts_Trigger_Text_3:
 # 380 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Would you relax? I'm not Gabrielle - of\n"
 	.string "course I moved everything! Caused some\l"
-	.string "cave-ins, but that's not our problem!\l"
+	.string "cave-ins, but that's not our problem!\p"
 	.string "Haha!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_4:
 # 390 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Hey! What are you doing? Didn't your\n"
-	.string "parents tell you it was rude to\l"
-	.string "eavesdrop!$"
+	.string "Hey! Didn't your parents tell you it was\n"
+	.string "rude to eavesdrop?$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_5:
 # 398 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Darn, we lost! My Pokémon are useless!$"
+	.string "Argh! My Pokémon are so weak!$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_6:
 # 404 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -1033,9 +1032,11 @@ MirrohInterior_1F_SomberGrunts_Trigger_Text_6:
 MirrohInterior_1F_SomberGrunts_Trigger_Text_7:
 # 411 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Hey - aren't you that lab assistant who\n"
-	.string "beat boss Melea back in Silversun City?$"
+	.string "beat Melea back in Silversun City?$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_8:
 # 420 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Yeah its the same trainer! The boss will\n"
-	.string "want to know. Let's go!$"
+	.string "Yeah - the same one who beat Moxie up\n"
+	.string "in Mt. Ceram too!\p"
+	.string "The bosses will want to know this.\n"
+	.string "Let's go!$"

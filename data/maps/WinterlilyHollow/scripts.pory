@@ -75,17 +75,18 @@ script WinterlilyHollow_NPC_Red{
 
 script WinterlilyHollow_NPC1{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Is Viniel going to be able to handle all those Team Somber grunts alone? I wish we could help but he's far stronger than any of us. We'd only get in the way!"), MSGBOX_NPC)
+        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity!\pViniel's Pokémon powers this town."), MSGBOX_NPC) 
+       
     } else {
-        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity! Viniel's Pokémon powers this town."), MSGBOX_NPC) 
+         msgbox(format("Viniel is handling all those Team Somber grunts alone?\pHe's so strong and cool!"), MSGBOX_NPC) 
     }
     end
 }
 script WinterlilyHollow_NPC2{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."), MSGBOX_NPC)
-    } else {
         msgbox(format("Mom told me never to go into Ivy River! She says kids my age go missing there. So of course I'm gonna go!\p...\pBut only when Mom's not looking."), MSGBOX_NPC) 
+    } else {
+        msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."), MSGBOX_NPC)
     }
     end
 }
