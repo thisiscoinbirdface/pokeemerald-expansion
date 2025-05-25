@@ -336,3 +336,22 @@ script MirrohBaseCampGym_Leader{
 
 
 
+
+
+
+
+
+
+
+
+
+script MirrohBaseCampGym_Red{
+    if (flag(FLAG_BADGE06_GET)){
+        msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
+    } else { 
+        msgbox(format("Welcome to the Mirroh Base Camp Gym, trainer!\pUnfortunately, we've packed everything up, so I don't have any Fresh Water for you.\pCarona - the Gym Leader glaring at us - uses FIGHTING type Pokemon with strength and skill. Watch out for her Swagger confusing you!\pAnd beware, she's got a hidden ace up her sleeve..."), MSGBOX_NPC)
+    }
+    end
+}
+
+

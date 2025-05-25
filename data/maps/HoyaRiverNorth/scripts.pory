@@ -4,7 +4,7 @@ mapscripts HoyaRiverNorth_MapScripts{}
 
 
 script Route6_Transition_EventScript_SharpedoBlocker{
-    msgbox(format("I'm from the Pokémon Ranger Institute.\pThere's a dangerous Pokémon in the Hoya River - it smashed into the riverbank and threw these boulders up!\pWhat is it?\pDon't be shocked - it's a wild Mega Sharpedo!"), MSGBOX_NPC)
+    msgbox(format("There's a dangerous Pokémon in the Hoya River - it smashed into the riverbank and threw these boulders up!\pWhat is it?\pDon't be shocked - it's a wild Mega Sharpedo!"), MSGBOX_NPC)
     end
 }
 
