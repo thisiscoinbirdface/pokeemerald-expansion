@@ -5443,7 +5443,8 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
 
         evs[i] += evIncrease;
         totalEVs += evIncrease;
-        SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
+// Removing EV gain from the game
+//        SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
     }
 }
 
