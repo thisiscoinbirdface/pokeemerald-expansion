@@ -140,6 +140,9 @@ script AncientMirroh_GoBackYesNo{
         warp(MAP_LILY_POND, 12, 4)
 
     } else {
+        applymovement(LOCALID_KOHLA, moves(emote_exclamation_mark jump_in_place_right))
+        waitmovement(0)
+        delay(16)
         speakername("Kohla")
         msgbox(format("What are you waiting for?"))        
     }

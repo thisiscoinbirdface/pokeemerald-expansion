@@ -561,7 +561,7 @@ WinterlilyHollow_OnFrame_Text_0:
 
 WinterlilyHollow_OnFrame_Text_1:
 # 26 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Ah, it's you! The enemy of my enemy!$"
+	.string "Aha - it's you! The enemy of my enemy!$"
 
 WinterlilyHollow_OnFrame_Text_2:
 # 31 "data//maps/WinterlilyHollow/scripts.pory"
@@ -569,15 +569,15 @@ WinterlilyHollow_OnFrame_Text_2:
 	.string "down! Hahaha! But when I went to the\l"
 	.string "peak, everyone had gone!\p"
 	.string "...\p"
-	.string "...\p"
-	.string "So that's what's been going on. Poor\n"
-	.string "Professor Tenebris. I'd heard about her\l"
-	.string "disappearance on the news.\p"
-	.string "News comes late here, since we're so\n"
-	.string "remote.\p"
+	.string "So that's what's been going on.\n"
+	.string "Poor Professor Tenebris.\p"
+	.string "I heard about her disappearance on the\n"
+	.string "news just the other day.\p"
+	.string "News comes late here, since we're in\n"
+	.string "such a remote corner of Cormoria.\p"
 	.string "Professor Tenebris and I fought each\n"
 	.string "other together several times when we\l"
-	.string "were younger! I never lost though.\l"
+	.string "were younger! I never lost though.\p"
 	.string "Hahaha!$"
 
 WinterlilyHollow_OnFrame_Text_3:
@@ -586,9 +586,9 @@ WinterlilyHollow_OnFrame_Text_3:
 	.string "...\p"
 	.string "Oh, you're off the case? I understand.\n"
 	.string "You're too young to keep up with a big\l"
-	.string "criminal organisation like Team Somber.\l"
-	.string "It's time for the grown-ups to take\l"
-	.string "over.\p"
+	.string "criminal organisation like Team Somber.\p"
+	.string "It's time for the grown-ups to take\n"
+	.string "over now, {PLAYER}.\p"
 	.string "What's wrong, young champ? You look\n"
 	.string "paralysed. Don't let the shock wear you\l"
 	.string "down.\p"

@@ -2,7 +2,7 @@
   "id": "MAP_IVE_RIVER_CAVES",
   "name": "IveRiver_Caves",
   "layout": "LAYOUT_IVE_RIVER_CAVES",
-  "music": "MUS_RG_ROUTE11",
+  "music": "MUS_SAFARI_ZONE",
   "region_map_section": "MAPSEC_IVY_RIVER_UNDERPASS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

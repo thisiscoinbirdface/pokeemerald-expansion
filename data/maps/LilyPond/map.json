@@ -2,7 +2,7 @@
   "id": "MAP_LILY_POND",
   "name": "LilyPond",
   "layout": "LAYOUT_LILY_POND",
-  "music": "MUS_RG_ROUTE11",
+  "music": "MUS_SAFARI_ZONE",
   "region_map_section": "MAPSEC_LILY_POND",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

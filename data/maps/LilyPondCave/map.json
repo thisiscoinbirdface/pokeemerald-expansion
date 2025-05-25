@@ -2,7 +2,7 @@
   "id": "MAP_LILY_POND_CAVE",
   "name": "LilyPondCave",
   "layout": "LAYOUT_LILY_POND_CAVE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_SEALED_CHAMBER",
   "region_map_section": "MAPSEC_LILY_GROTTO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -183,11 +183,17 @@ AncientMirroh_GoBackYesNo::
 	compare VAR_RESULT, 1
 	goto_if_eq AncientMirroh_GoBackYesNo_2
 # 143 "data//maps/AncientMirroh/scripts.pory"
-	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
+	applymovement LOCALID_KOHLA, AncientMirroh_GoBackYesNo_Movement_1
 # 144 "data//maps/AncientMirroh/scripts.pory"
+	waitmovement 0
+# 145 "data//maps/AncientMirroh/scripts.pory"
+	delay 16
+# 146 "data//maps/AncientMirroh/scripts.pory"
+	speakername AncientMirroh_KolhaMeeting_Trigger_Text_5
+# 147 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_GoBackYesNo_Text_3
 AncientMirroh_GoBackYesNo_1:
-# 148 "data//maps/AncientMirroh/scripts.pory"
+# 151 "data//maps/AncientMirroh/scripts.pory"
 	releaseall
 	end
 
@@ -232,17 +238,17 @@ AncientMirroh_GoBackYesNo_2:
 
 
 AncientMirroh_Dreamstone::
-# 154 "data//maps/AncientMirroh/scripts.pory"
+# 157 "data//maps/AncientMirroh/scripts.pory"
 	lockall
-# 155 "data//maps/AncientMirroh/scripts.pory"
+# 158 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_Dreamstone_Text_0
-# 156 "data//maps/AncientMirroh/scripts.pory"
+# 159 "data//maps/AncientMirroh/scripts.pory"
 	release
 	end
 
 
 AncientMirroh_KohlaGoBack::
-# 161 "data//maps/AncientMirroh/scripts.pory"
+# 164 "data//maps/AncientMirroh/scripts.pory"
 	msgbox AncientMirroh_KohlaGoBack_Text_0, MSGBOX_NPC
 	end
 
@@ -423,6 +429,14 @@ AncientMirroh_GoBackYesNo_Movement_0:
 	face_up
 	step_end
 
+# 143 "data//maps/AncientMirroh/scripts.pory"
+AncientMirroh_GoBackYesNo_Movement_1:
+# 143 "data//maps/AncientMirroh/scripts.pory"
+	emote_exclamation_mark
+# 143 "data//maps/AncientMirroh/scripts.pory"
+	jump_in_place_right
+	step_end
+
 AncientMirroh_KolhaMeeting_Trigger_Text_0:
 # 57 "data//maps/AncientMirroh/scripts.pory"
 	.string "Grunt$"
@@ -485,15 +499,15 @@ AncientMirroh_GoBackYesNo_Text_2:
 	.string "3...2...1...$"
 
 AncientMirroh_GoBackYesNo_Text_3:
-# 144 "data//maps/AncientMirroh/scripts.pory"
+# 147 "data//maps/AncientMirroh/scripts.pory"
 	.string "What are you waiting for?$"
 
 AncientMirroh_Dreamstone_Text_0:
-# 155 "data//maps/AncientMirroh/scripts.pory"
+# 158 "data//maps/AncientMirroh/scripts.pory"
 	.string "It's a dreamstone...the surface is so\n"
 	.string "smooth. It doesn't look natural at all.$"
 
 AncientMirroh_KohlaGoBack_Text_0:
-# 161 "data//maps/AncientMirroh/scripts.pory"
+# 164 "data//maps/AncientMirroh/scripts.pory"
 	.string "What are you waiting for?\n"
 	.string "Let's hurry up and go back!$"

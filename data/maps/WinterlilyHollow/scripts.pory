@@ -23,16 +23,16 @@ script WinterlilyHollow_OnFrame{
             applymovement(LOCALID_VINIEL, moves(walk_down emote_exclamation_mark))
             delay(24)
             speakername("Viniel")
-            msgbox(format("Ah, it's you! The enemy of my enemy!"))
+            msgbox(format("Aha - it's you! The enemy of my enemy!"))
             release
             applymovement(LOCALID_VINIEL, moves(walk_down*2))
             waitmovement(0)
             speakername("Viniel")
-            msgbox(format("Ampharos and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\p...\pSo that's what's been going on. Poor Professor Tenebris. I'd heard about her disappearance on the news.\pNews comes late here, since we're so remote.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though. Hahaha!"))
+            msgbox(format("Ampharos and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\pSo that's what's been going on.\nPoor Professor Tenebris.\pI heard about her disappearance on\nthe news just the other day.\pNews comes late here, since we're in such a remote corner of Cormoria.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though.\pHahaha!"))
             release
             delay(24)
             speakername("Viniel")
-            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber. It's time for the grown-ups to take over.\pWhat's wrong, young champ? You look paralysed. Don't let the shock wear you down.\pI see you have five gym badges. Why not try to aim for all eight? Starting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
+            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber.\pIt's time for the grown-ups to take over now, {PLAYER}.\pWhat's wrong, young champ?\pYou look paralysed.\nDon't let the shock wear you down!\pI see you have five gym badges.\nWhy not try to aim for all eight?\pStarting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
             release
             applymovement(LOCALID_VINIEL, moves(walk_up * 5))
             waitmovement(0)
