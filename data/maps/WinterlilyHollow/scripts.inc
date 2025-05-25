@@ -571,8 +571,8 @@ WinterlilyHollow_OnFrame_Text_2:
 	.string "...\p"
 	.string "So that's what's been going on.\n"
 	.string "Poor Professor Tenebris.\p"
-	.string "I heard about her disappearance on the\n"
-	.string "news just the other day.\p"
+	.string "I heard about her disappearance on\n"
+	.string "the news just the other day.\p"
 	.string "News comes late here, since we're in\n"
 	.string "such a remote corner of Cormoria.\p"
 	.string "Professor Tenebris and I fought each\n"
@@ -587,14 +587,14 @@ WinterlilyHollow_OnFrame_Text_3:
 	.string "Oh, you're off the case? I understand.\n"
 	.string "You're too young to keep up with a big\l"
 	.string "criminal organisation like Team Somber.\p"
-	.string "It's time for the grown-ups to take\n"
-	.string "over now, {PLAYER}.\p"
-	.string "What's wrong, young champ? You look\n"
-	.string "paralysed. Don't let the shock wear you\l"
-	.string "down.\p"
-	.string "I see you have five gym badges. Why not\n"
-	.string "try to aim for all eight? Starting with\l"
-	.string "me, of course. Hahaha!\p"
+	.string "It's time for the grown-ups to\n"
+	.string "take over, {PLAYER}.\p"
+	.string "What's wrong, young champ?\p"
+	.string "You look paralysed.\n"
+	.string "Don't let the shock wear you down!\p"
+	.string "I see you have five gym badges.\n"
+	.string "Why not try to aim for all eight?\p"
+	.string "Starting with me, of course. Hahaha!\p"
 	.string "...\p"
 	.string "You know, it's alright to fail. From what\n"
 	.string "you told me, you've done great so far.\l"
@@ -642,14 +642,14 @@ WinterlilyHollow_NPC3_Text_0:
 
 WinterlilyHollow_NPC4_Text_0:
 # 103 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "A Team Somber grunt accosted me, so I\n"
-	.string "taught the young fool a lesson! After\l"
-	.string "that, he threw away his Pokémon saying\l"
-	.string "it was too weak!$"
+	.string "A Team Somber grunt accosted me, so\n"
+	.string "I taught the young fool a lesson!\p"
+	.string "After that, he threw away his Pokémon\n"
+	.string "saying it was too weak.$"
 
 WinterlilyHollow_MimeJr_1_Text_0:
 # 115 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Sniff...sniff...\n"
+	.string "Sniff...sniff...\p"
 	.string "Mime Jr. is bawling!\p"
 	.string "Can it be soothed somehow?$"
 
@@ -669,9 +669,9 @@ WinterlilyHollow_MimeJr_1_Text_3:
 
 WinterlilyHollow_MimeJr_2_Text_0:
 # 153 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Sniff...sniff...\n"
-	.string "Mime Jr. looks sad...maybe it wants a doll\l"
-	.string "to play with?$"
+	.string "Sniff...sniff...\p"
+	.string "Mime Jr. looks sad...maybe it wants\n"
+	.string "a doll to play with?$"
 
 WinterlilyHollow_MimeJr_2_Text_1:
 # 158 "data//maps/WinterlilyHollow/scripts.pory"
@@ -689,11 +689,9 @@ WinterlilyHollow_MimeJr_2_Text_3:
 
 WinterlilyHollow_MimeJr_3_Text_0:
 # 189 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Mime Jr. is no longer crying! It's looking\n"
-	.string "at its own reflection in the water\l"
-	.string "instead...maybe it's pondering its\l"
-	.string "future. Understandable, given that its\l"
-	.string "last Trainer treated it so badly.$"
+	.string "Mime Jr. is no longer crying!\p"
+	.string "It's looking at the water...\n"
+	.string "what's it thinking about?$"
 
 WinterlilyHollow_MimeJr_3_Text_1:
 # 192 "data//maps/WinterlilyHollow/scripts.pory"
@@ -723,13 +721,12 @@ WinterlilyHollow_MimeJr_3_Text_5:
 WinterlilyHollow_MimeJr_3_Text_6:
 # 212 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Mime Jr. looks hurt. It goes back to\n"
-	.string "staring at its reflection$"
+	.string "staring at its reflection.$"
 
 WinterlilyHollow_MimeJr_3_Text_7:
 # 216 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "...Mime Jr. goes back to staring at the\n"
-	.string "water. Maybe it needs a comforting Poké\l"
-	.string "Ball to be in.$"
+	.string "...Mime Jr. backs away. Maybe it needs a\n"
+	.string "comforting Poké Ball to be in.$"
 
 WinterlilyHollow_Froslass_Text_0:
 # 226 "data//maps/WinterlilyHollow/scripts.pory"
@@ -744,9 +741,10 @@ WinterlilyHollow_Sneasler_Text_0:
 
 WinterlilyHollow_NPC_SurfMan_Text_0:
 # 269 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "If you surf through Lily Pond, you'll\n"
-	.string "reach the Ivy River. Head down it and\l"
-	.string "you'll reach Pelluca City!$"
+	.string "If you surf through Lily Pond,\n"
+	.string "you'll reach the Ivy River.\p"
+	.string "Head down the river and you'll\n"
+	.string "eventually reach Pelluca City!$"
 
 WinterlilyHollow_NPC_SurfMan_Text_1:
 # 277 "data//maps/WinterlilyHollow/scripts.pory"
@@ -803,10 +801,11 @@ WinterlilyHollow_NPC_SurfManAlt_Text_1:
 
 WinterlilyHollow_NPC_Miner_Text_0:
 # 341 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "See all these crystals on the walls? I'm\n"
-	.string "trying to dig it up. Wanna try? You can\l"
-	.string "borrow my spare pickaxe, but it'll cost\l"
-	.string "you 500.$"
+	.string "See all these crystals on the walls?\n"
+	.string "I'm trying to dig it up.\p"
+	.string "Wanna try?\p"
+	.string "You can borrow my spare pickaxe,\n"
+	.string "but it'll cost you 500.$"
 
 WinterlilyHollow_NPC_Miner_Text_1:
 # 349 "data//maps/WinterlilyHollow/scripts.pory"
@@ -814,5 +813,5 @@ WinterlilyHollow_NPC_Miner_Text_1:
 
 WinterlilyHollow_NPC_Miner_Text_2:
 # 352 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "You can dig up some great stuff, you\n"
-	.string "know?$"
+	.string "Too bad, You can dig up some great\n"
+	.string "stuff, you know?$"

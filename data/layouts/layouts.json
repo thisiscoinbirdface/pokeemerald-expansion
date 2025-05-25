@@ -5760,6 +5760,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/VictoryRoadCormoria/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoadCormoria/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_OPEN",
+      "name": "WinterlilyHollow_GymB1F_Open_Layout",
+      "width": 42,
+      "height": 44,
+      "primary_tileset": "gTileset_Snow",
+      "secondary_tileset": "gTileset_WinterlilyGym",
+      "border_filepath": "data/layouts/WinterlilyHollow_GymB1F_Open/border.bin",
+      "blockdata_filepath": "data/layouts/WinterlilyHollow_GymB1F_Open/map.bin"
     }
   ]
 }

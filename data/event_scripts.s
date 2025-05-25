@@ -1427,3 +1427,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CarabrueTown_TenebrisLab_Finale/scripts.inc"
 
 	.include "data/maps/VictoryRoadCormoria/scripts.inc"
+
+	.include "data/maps/WinterlilyHollow_GymB1F_Open/scripts.inc"

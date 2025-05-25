@@ -16,17 +16,28 @@ script WinterlilyHollow_GymB1F_Button{
     end
 }
 
+script WinterlilyHollow_GymB1F_FinalButton{
+    lockall
+    msgbox(format("{PLAYER} found the master switch!\nThis will open all the doors."))
+    playse(SE_CLICK)
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    warp(MAP_WINTERLILY_HOLLOW_GYM_B1F, VAR_TEMP_2, VAR_TEMP_3)
+    releaseall
+    end
+}
+
 script WinterlilyHollow_GymB1F_SetLayout{
+    if (var(VAR_HOLLOW_GYM_LAYOUT) == 2){
+        setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_OPEN)
+        return
+    }
+
     if (var(VAR_HOLLOW_GYM_LAYOUT) == 0){
         setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F)
         setvar(VAR_HOLLOW_GYM_LAYOUT, 1)
     } else {
         setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_SWITCHED)        
         setvar(VAR_HOLLOW_GYM_LAYOUT, 0)
-    }
-
-    if (var(VAR_HOLLOW_GYM_LAYOUT) == 2){
-        setmaplayoutindex(LAYOUT_WINTERLILY_HOLLOW_GYM_B1F_SWITCHED)
     }
 
     return
@@ -75,8 +86,8 @@ script WinterlilyHollow_Gym_Trainer_D{
 
 //SCIENTIST
 script WinterlilyHollow_Gym_Trainer_E{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format("Viniel hired me to do some research on efficient electricity storage, but all I've been doing is battling chums like you!"), "Another chum I lost to!")
-    msgbox(format("Since Winterlily Hollow gets no electricity, we need robust storage solutions."))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_E, format("Viniel hired me to research efficient electricity storage, but all I've been doing is battling trainers like you!"), "Another trainer I lost to!")
+    msgbox(format("We need more robust electricity storage solutions."))
     releaseall
     end
 }
@@ -88,14 +99,14 @@ script WinterlilyHollow_LastTrainer_Trigger{
     setflag(FLAG_WINTERLILY_GYM_TRICK_TRAINER)
     applymovement(6, moves(emote_exclamation_mark jump_in_place_left))
     delay(30)
-    msgbox(format("Oh, a trainer? Don't worry, I won't fight you. I'm just fixing up the wiring here. Go on, flip the switch."), MSGBOX_NPC)
+    msgbox(format("Oh, a trainer?\pDon't worry, I won't fight you.\nI'm just fixing up the wiring here.\pGo on, flip the switch."), MSGBOX_NPC)
     end
 }
 
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_F{
     trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format("Hah! Gotcha! I'm about to crush you!"), "You crushed me!")
-    msgbox(format("Leader Viniel's right up ahead. He stationed me out here to make sure weaker trainers don't disturb his Ampharos."))
+    msgbox(format("Leader Viniel's right up ahead.\nHe put me here to make sure weak\ltrainers don't disturb his Ampharos."))
     releaseall
     end
 }
@@ -105,7 +116,11 @@ script WinterlilyHollow_Gym_Trainer_F{
 
 //Helper NPC
 script WinterlilyHollow_Gym_NPC1{
-    msgbox(format("This is the door that takes you to Viniel, but I can't figure out how to reach this when it's open. At this rate, I'll never get my gym badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
+    if (var(VAR_HOLLOW_GYM_LAYOUT) == 0){
+        msgbox(format("You opened the door to Viniel!\pI'll only come once I figure this puzzle out on my own."), MSGBOX_NPC)
+    } else {
+        msgbox(format("This door takes you to Viniel, but I don't know how to get here when it's open.\pAt this rate, I'll never get my badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
+    }
     end
 }
 
@@ -144,15 +159,15 @@ script WinterlilyHollowGym_LeaderBattle {
         msgbox(format("Go Ampharos! More! More!\pWait - it looks like we've got a guest."))
         faceplayer
         speakername("Viniel")
-        msgbox(format("Ah, it's you! The enemy of my enemy.\pHmm...\pYou still look a little drained of energy. Do you really want to battle?"), MSGBOX_YESNO)
+        msgbox(format("Ah, it's you! The enemy of my enemy.\pHmm...\pYou still look a little drained.\nDo you really want to battle?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
             speakername("Viniel")
-            msgbox(format("Come back when you've got the spark back in you!"), MSGBOX_NPC)
+            msgbox(format("Come again when you've got the\nspark back in you!"), MSGBOX_NPC)
             end
         }
         speakername("Viniel")
-        msgbox(format("Excellent! Your internal battery is full, then.\pLook around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't. That's what makes us, us. Hahaha!\pBack with those Team Somber grunts, you showed me that very energy.\pAnd now, I want you to bring it out again!"))
+        msgbox(format("Excellent! I can hear your internal battery crackling with energy.\pLook around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't.\pThat's what makes us, us.\nHahaha!\pBack with those Team Somber grunts, you showed me the same spirit.\pAnd now, I want to see you to bring it out again!"))
 
         trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format("Sizzling! Crackling! Hahaha!"))
         
@@ -227,13 +242,13 @@ script WinterlilyHollowGym_Red{
         }
     } else { 
         if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)){
-            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon."), MSGBOX_NPC)
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon.\pNow go get 'em, champ-in-the-making!"), MSGBOX_NPC)
         } else {
             lockall
             faceplayer
             msgbox(format("Welcome to the Winterlily Hollow gym! It's not a gym so much as a power plant. The leader, Viniel, powers this town with his strong ELECTRIC-type Pokémon here in this plant. First, hydrate yourself!"))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon."))
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)
             releaseall
         }

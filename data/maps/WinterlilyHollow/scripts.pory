@@ -32,7 +32,7 @@ script WinterlilyHollow_OnFrame{
             release
             delay(24)
             speakername("Viniel")
-            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber.\pIt's time for the grown-ups to take over now, {PLAYER}.\pWhat's wrong, young champ?\pYou look paralysed.\nDon't let the shock wear you down!\pI see you have five gym badges.\nWhy not try to aim for all eight?\pStarting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
+            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber.\pIt's time for the grown-ups to\ntake over, {PLAYER}.\pWhat's wrong, young champ?\pYou look paralysed.\nDon't let the shock wear you down!\pI see you have five gym badges.\nWhy not try to aim for all eight?\pStarting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
             release
             applymovement(LOCALID_VINIEL, moves(walk_up * 5))
             waitmovement(0)
@@ -100,9 +100,9 @@ script WinterlilyHollow_NPC3{
 }
 script WinterlilyHollow_NPC4{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("A Team Somber grunt accosted me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak!"), MSGBOX_NPC)
+        msgbox(format("A Team Somber grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
     } else {
-        msgbox(format("A Team Somber grunt accosted me, so I taught the young fool a lesson! After that, he threw away his Pokémon saying it was too weak!"), MSGBOX_NPC)
+        msgbox(format("A Team Somber grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
     }
     end
 }
@@ -112,7 +112,7 @@ script WinterlilyHollow_MimeJr_1{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("Sniff...sniff...\nMime Jr. is bawling!\pCan it be soothed somehow?"))
+    msgbox(format("Sniff...sniff...\pMime Jr. is bawling!\pCan it be soothed somehow?"))
 
     checkitem(ITEM_SOOTHE_BELL)
     if (var(VAR_RESULT) == 1){
@@ -150,7 +150,7 @@ script WinterlilyHollow_MimeJr_2{   //play with it
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("Sniff...sniff...\nMime Jr. looks sad...maybe it wants a doll to play with?"))
+    msgbox(format("Sniff...sniff...\pMime Jr. looks sad...maybe it wants\na doll to play with?"))
 
     checkitem(ITEM_POKE_DOLL)
     if (var(VAR_RESULT) == 1){
@@ -186,7 +186,7 @@ script WinterlilyHollow_MimeJr_3{
     faceplayer
     playmoncry(SPECIES_MIME_JR, CRY_MODE_NORMAL)
 
-    msgbox(format("Mime Jr. is no longer crying! It's looking at its own reflection in the water instead...maybe it's pondering its future. Understandable, given that its last Trainer treated it so badly."))
+    msgbox(format("Mime Jr. is no longer crying!\pIt's looking at the water...\nwhat's it thinking about?"))
     release
     delay(30)
     msgbox(format("Mime Jr. looks at you.\p...\pDoes Mime Jr. want to join the party?"))
@@ -209,11 +209,11 @@ script WinterlilyHollow_MimeJr_3{
             msgbox(format("Welcome to the team, Mime Jr.! You'll be happy withh all your new friends!"))
         } else {
             applymovement(1, moves(face_down))
-            msgbox(format("Mime Jr. looks hurt. It goes back to staring at its reflection"))
+            msgbox(format("Mime Jr. looks hurt. It goes back to staring at its reflection."))
         }
     } else {
         applymovement(1, moves(face_down))
-        msgbox(format("...Mime Jr. goes back to staring at the water. Maybe it needs a comforting Poké Ball to be in."))
+        msgbox(format("...Mime Jr. backs away. Maybe it needs a comforting Poké Ball to be in."))
     }
 
     releaseall
@@ -266,7 +266,7 @@ script MirrohInterior_Sneasler{
 
 script WinterlilyHollow_NPC_SurfMan{
     //for the demo only
-    msgbox(format("If you surf through Lily Pond, you'll reach the Ivy River. Head down it and you'll reach Pelluca City!"), MSGBOX_NPC)
+    msgbox(format("If you surf through Lily Pond,\nyou'll reach the Ivy River.\pHead down the river and you'll eventually reach Pelluca City!"), MSGBOX_NPC)
     end
 
     //true text
@@ -338,7 +338,7 @@ script WinterlilyHollow_NPC_SurfManAlt{
 script WinterlilyHollow_NPC_Miner{
     lockall
     faceplayer
-    msgbox(format("See all these crystals on the walls? I'm trying to dig it up. Wanna try? You can borrow my spare pickaxe, but it'll cost you 500."), MSGBOX_YESNO)
+    msgbox(format("See all these crystals on the walls?\nI'm trying to dig it up.\pWanna try?\pYou can borrow my spare pickaxe,\nbut it'll cost you 500."), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         checkmoney(500)
@@ -349,7 +349,7 @@ script WinterlilyHollow_NPC_Miner{
             msgbox(format("You don't have enough money."))
         }
     } else {
-        msgbox(format("You can dig up some great stuff, you know?"))
+        msgbox(format("Too bad, You can dig up some great stuff, you know?"))
     }
     applymovement(3, moves(face_right))
     waitmovement(0)
