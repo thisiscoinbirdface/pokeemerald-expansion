@@ -2381,22 +2381,25 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_C ===
-Name: Bridget
-Class: Battle Girl
-Pic: Battle Girl
-Gender: Female
-Music: Female
+Name: Gozliak
+Class: Collector
+Pic: Collector
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 Starting Status: Electric Terrain
 
-Toxicroak
+Sneasler @ Electric Seed
+Ability: Poison Touch
 Level: 35
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shiny: Yes
+IVs: 15 HP / 20 Atk / 15 Def / 15 SpA / 15 SpD / 20 Spe
+- Dire Claw
+- Close Combat
+- Swords Dance
+- Toxic
 
-Donphan
-Level: 36
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_D ===
 Name: Marcus
