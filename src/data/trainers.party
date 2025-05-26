@@ -2091,21 +2091,27 @@ Level: 42
 
 
 === TRAINER_MIRROHINT2_A ===
-Name: Sylvia
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
+Name: Rein
+Class: Psychic
+Pic: Psychic M
+Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Shuppet 
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ponyta-Galar 
+Level: 32
+Ability: Pastel Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Will o Wisp
+- Stomp
+- Psybeam
+- Morning Sun
 
-Sinistcha
+Wyrdeer
 Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
 
 === TRAINER_MIRROHINT2_B ===
 Name: Shin

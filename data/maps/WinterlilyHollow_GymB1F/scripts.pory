@@ -117,7 +117,7 @@ script WinterlilyHollow_Gym_Trainer_F{
 //Helper NPC
 script WinterlilyHollow_Gym_NPC1{
     if (var(VAR_HOLLOW_GYM_LAYOUT) == 0){
-        msgbox(format("You opened the door to Viniel!\pI'll only come once I figure this puzzle out on my own."), MSGBOX_NPC)
+        msgbox(format("You opened the door to Viniel!\pI'll only come once I figure the switch order out on my own."), MSGBOX_NPC)
     } else {
         msgbox(format("This door takes you to Viniel, but I don't know how to get here when it's open.\pAt this rate, I'll never get my badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
     }
