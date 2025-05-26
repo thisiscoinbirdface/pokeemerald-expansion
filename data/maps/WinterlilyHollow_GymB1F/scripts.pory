@@ -189,7 +189,7 @@ script WinterlilyHollowGym_LeaderBattle {
 
         //Bye-bye
         speakername("Viniel")
-        msgbox(format("Since you're off the case now, why don't you take part in the Pokémon Championship this year? You need two more badges - but I warn you! Jania and Raazi are the strongest Gym Leaders in all of Cormoria!\pIf you want to try, I suggest you head back down to Pelluca City. You'll find the next gym there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
+        msgbox(format("Since you're off the case now, why don't you take part in the Pokémon Championship this year? You need two more badges - but I warn you! Jania and Raazi are the strongest Gym Leaders in all of Cormoria!\pIf you want to try, I suggest you head back down to Pelluca City.\lYou'll find the next gym there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
         release
         giveitem(ITEM_HM03)
         speakername("Viniel")

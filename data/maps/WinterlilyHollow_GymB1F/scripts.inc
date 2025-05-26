@@ -364,7 +364,8 @@ WinterlilyHollow_Gym_Trainer_B_Text_1:
 
 WinterlilyHollow_Gym_Trainer_C_Text_0:
 # 73 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Are you here to challenge Viniel too?$"
+	.string "Challenge Viniel? Pah!\n"
+	.string "My Pokemon are rarer than his!$"
 
 WinterlilyHollow_Gym_Trainer_C_Text_1:
 # 73 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -372,9 +373,9 @@ WinterlilyHollow_Gym_Trainer_C_Text_1:
 
 WinterlilyHollow_Gym_Trainer_C_Text_2:
 # 74 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "I wanted to challenge Leader Viniel, but\n"
-	.string "the doors are locked and I can't find\l"
-	.string "the switches!$"
+	.string "I wanted to show my Qwilfish off to\n"
+	.string "Viniel, but I can't find the right\l"
+	.string "switches!$"
 
 WinterlilyHollow_Gym_Trainer_D_Text_0:
 # 81 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -431,8 +432,8 @@ WinterlilyHollow_Gym_Trainer_F_Text_2:
 WinterlilyHollow_Gym_NPC1_Text_0:
 # 120 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "You opened the door to Viniel!\p"
-	.string "I'll only come once I figure this puzzle\n"
-	.string "out on my own.$"
+	.string "I'll only come once I figure the switch\n"
+	.string "order out on my own.$"
 
 WinterlilyHollow_Gym_NPC1_Text_1:
 # 122 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -507,8 +508,8 @@ WinterlilyHollowGym_LeaderBattle_Text_9:
 	.string "Raazi are the strongest Gym Leaders in\l"
 	.string "all of Cormoria!\p"
 	.string "If you want to try, I suggest you head\n"
-	.string "back down to Pelluca City. You'll find\l"
-	.string "the next gym there.\p"
+	.string "back down to Pelluca City.\l"
+	.string "You'll find the next gym there.\p"
 	.string "You can go down the Ivy River...\p"
 	.string "...for which you'll need Surf!$"
 

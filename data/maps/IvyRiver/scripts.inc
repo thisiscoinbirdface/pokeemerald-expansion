@@ -902,11 +902,11 @@ LilyPond_Cave_Dragapult_Text_0:
 
 LilyPond_Cave_Blastoise_Text_0:
 # 99 "data//maps/IvyRiver/scripts.pory"
-	.string "Blastoise is crying in pain! What\n"
-	.string "happened?\p"
+	.string "Blastoise is crying in pain!\n"
+	.string "What happened?\p"
 	.string "...\p"
-	.string "There's a huge wound on its side! A\n"
-	.string "regular Potion or Super Potion won't\l"
+	.string "There's a huge wound on its side!\p"
+	.string "A regular Potion or Super Potion won't\n"
 	.string "cut it for this...$"
 
 LilyPond_Cave_Blastoise_Text_1:
@@ -997,8 +997,8 @@ LilyPond_Fisherman_C_Text_2:
 # 346 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I fish around Lily Pond.\n"
 	.string "We have a connection to this place -\l"
-	.string "although not a happy one. Do you want\l"
-	.string "to hear our story?$"
+	.string "although not a happy one.\p"
+	.string "Do you want to hear our story?$"
 
 LilyPond_Fisherman_C_Text_3:
 # 349 "data//maps/IvyRiver/scripts.pory"

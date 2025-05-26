@@ -96,7 +96,7 @@ script LilyPond_Cave_Blastoise{
     lockall
     faceplayer
     playmoncry(SPECIES_BLASTOISE, CRY_MODE_NORMAL)    
-    msgbox(format("Blastoise is crying in pain! What happened?\p...\pThere's a huge wound on its side! A regular Potion or Super Potion won't cut it for this..."), MSGBOX_NPC)
+    msgbox(format("Blastoise is crying in pain!\nWhat happened?\p...\pThere's a huge wound on its side!\pA regular Potion or Super Potion won't cut it for this..."), MSGBOX_NPC)
     delay(8)
     checkitem(ITEM_HYPER_POTION)
     if (var(VAR_RESULT) == 0){end}
@@ -343,7 +343,7 @@ script LilyPond_Fisherman_C{
 
     //Startquest
     lockall
-    msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one. Do you want to hear our story?"), MSGBOX_YESNO)
+    msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one.\pDo you want to hear our story?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         msgbox(format("Just as well. It hurts to tell it."), MSGBOX_NPC)

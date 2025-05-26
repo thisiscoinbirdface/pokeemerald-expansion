@@ -2,7 +2,7 @@
   "id": "MAP_RIVETSHORE_RANGER_INSTITUTE_INTERIOR",
   "name": "Rivetshore_RangerInstitute_Interior",
   "layout": "LAYOUT_RIVETSHORE_RANGER_INSTITUTE_INTERIOR",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CONTEST_RESULTS",
   "region_map_section": "MAPSEC_RANGER_INSTITUTE_RIVETSHORE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
