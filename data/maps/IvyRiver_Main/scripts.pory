@@ -421,7 +421,7 @@ script IvyRiver_Trainer_B {
 script IvyRiver_Trainer_C {
     trainerbattle_single(
         TRAINER_IVY_RIVER_C, 
-        format("I'm not your usual trainer - I'm aiming for the Pokémon Championship. And that's why I've partnered with the best Pokémon around!"), 
+        format("Every four years, the strongest trainers in Cormoria compete in the Pokémon Championship. You're looking at the future winner!"), 
         format("You're championship material!")
     )
     

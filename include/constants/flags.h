@@ -158,9 +158,9 @@
 #define FLAG_HIDE_GAB_BREECH_OUTDOOR      0x470 // hide gab and breech on deck
 #define FLAG_HIDE_GAB_BREECH_STORAGE      0x472 // hide gab and breech in storage
 #define FLAG_HIDE_TENEBRIS_FINALE         0x479 // Unused Flag
-#define FLAG_SKIP_FINALE_CUTSCENE         0x46D // Unused Flag
-#define FLAG_FINALE_DONE                  0x4BC // Unused Flag
-#define FLAG_HIDE_RIVETSHORE_MIMIKYU      0x4BD // Unused Flag
+#define FLAG_FINALE_DONE                  0x46D // Unused Flag
+#define FLAG_HIDE_RIVETSHORE_MIMIKYU      0x4BC // Unused Flag
+#define FLAG_UNUSED_0x4BD                 0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                 0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4F9                 0x4F9 // Unused Flag
@@ -1571,7 +1571,7 @@
 #define FLAG_PREVENT_OVERWORLD_SPEEDUP              (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_SYS_SURF_ENABLED                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_SYS_WHIRLPOOL_ENABLED                  (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_SYS_OW_FOLLOWERS_DISABLED               (SYSTEM_FLAGS + 0x8C) // Unused Flag
+#define FLAG_SYS_OW_FOLLOWERS_DISABLED              (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
@@ -1584,10 +1584,12 @@
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
 #define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
-#define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag
+
+//cutscene skips
+#define FLAG_SKIP_CERAM_CUTSCENE                    (SYSTEM_FLAGS + 0x99) // Unused Flag
+#define FLAG_SKIP_SILVERSUN_CUTSCENE                (SYSTEM_FLAGS + 0x9A) // Unused Flag
+#define FLAG_SKIP_MIRROH_CUTSCENE                   (SYSTEM_FLAGS + 0x9B) // Unused Flag
+#define FLAG_SKIP_FINALE_CUTSCENE                   (SYSTEM_FLAGS + 0x9C) // Unused Flag
 #define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
 #define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
 #define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag

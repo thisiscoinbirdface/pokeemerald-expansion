@@ -417,7 +417,7 @@ SSElegant_Storage_Moonblast_Text_1:
 	.string "We can jump out through this wall!\p"
 	.string "Clefable and I will go on ahead and make\n"
 	.string "sure nobody's around.\p"
-	.string "Keep your Pokemon hidden, okay?$"
+	.string "Keep your Pokémon hidden, okay?$"
 
 SSElegant_Storage_Moonblast_Text_2:
 # 62 "data//maps/SSElegant_Storage/scripts.pory"
@@ -463,7 +463,7 @@ SSElegant_Storage_GabConfronts_Text_6:
 	.string "You two find a way out from here!\p"
 	.string "...\p"
 	.string "{PLAYER} - don't do anything stupid!\n"
-	.string "And hide your Pokemon once you get off\l"
+	.string "And hide your Pokémon once you get off\l"
 	.string "the ship, or the leaders might catch\l"
 	.string "you.\p"
 	.string "...$"

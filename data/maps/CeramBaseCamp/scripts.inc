@@ -478,12 +478,12 @@ CeramBaseCamp_NPC1_Text_0:
 
 CeramBaseCamp_NPC2_Text_0:
 # 47 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "This camp was established to dig a\n"
-	.string "tunnel through Mt. Ceram. Old equipment\l"
-	.string "from back then is left here. I remember\l"
-	.string "a Drilbur made its home inside one of\l"
-	.string "these machines and refused to leave!\l"
-	.string "Haha! I wonder if it's still there...$"
+	.string "This camp was built by Rivetshore\n"
+	.string "Construction! Old equipment from back\l"
+	.string "then is left here. I remember a Drilbur\l"
+	.string "made its home inside one of these\l"
+	.string "machines and refused to leave! Haha! I\l"
+	.string "wonder if it's still there...$"
 
 CeramBaseCamp_NPC3_Text_0:
 # 53 "data//maps/CeramBaseCamp/scripts.pory"

@@ -53,7 +53,7 @@ script WoodSign_FennilahlTown_Nicknaming {
 }
 
 script WoodSign_Fennilahl_Pokedex{
-    msgbox(format("TRAINER TIPS: You can check your Pokedex for detailed information on Pokemon such as moves and evolution methods!"), MSGBOX_SIGN)
+    msgbox(format("TRAINER TIPS: You can check your Pokedex for detailed information on Pokémon such as moves and evolution methods!"), MSGBOX_SIGN)
     end
 }
 

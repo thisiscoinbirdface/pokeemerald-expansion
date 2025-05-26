@@ -1146,10 +1146,10 @@ IvyRiver_Trainer_B_Text_1:
 
 IvyRiver_Trainer_C_Text_0:
 # 424 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "I'm not your usual trainer - I'm aiming\n"
-	.string "for the Pokémon Championship. And\l"
-	.string "that's why I've partnered with the best\l"
-	.string "Pokémon around!$"
+	.string "Every four years, the strongest\n"
+	.string "trainers in Cormoria compete in the\l"
+	.string "Pokémon Championship. You're looking at\l"
+	.string "the future winner!$"
 
 IvyRiver_Trainer_C_Text_1:
 # 425 "data//maps/IvyRiver_Main/scripts.pory"

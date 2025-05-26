@@ -45,6 +45,10 @@ GalecrestCity_PokemonCenter_NPC1_Text_0:
 
 GalecrestCity_PokemonCenter_NPC2_Text_0:
 # 24 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	.string "Galecrest City has really become quite\n"
-	.string "unmaintained. I keep finding Bottle\l"
-	.string "Caps lying around!$"
+	.string "Do you know about the Pokémon\n"
+	.string "Championships? Every four years, the\l"
+	.string "best trainers in Cormoria compete in a\l"
+	.string "tournament to decide who's the\l"
+	.string "strongest! You need all eight gym\l"
+	.string "badges to enter...which means regular\l"
+	.string "people like me can never make it!$"

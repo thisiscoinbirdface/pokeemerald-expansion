@@ -830,7 +830,7 @@ SSElegant_Raazi_Text_8:
 	.string "And now you've collected all eight gym\n"
 	.string "badges, {PLAYER}!\p"
 	.string "The last mountain in your path is the\n"
-	.string "Pokemon Championship. They're held\l"
+	.string "Pokémon Championship. They're held\l"
 	.string "every year at -$"
 
 SSElegant_Raazi_Text_9:

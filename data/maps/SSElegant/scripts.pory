@@ -90,7 +90,7 @@ script SSElegant_Raazi{
     //Give item also
     giveitem(ITEM_RARE_SHARD)
     speakername("Raazi")
-    msgbox(format("And now you've collected all eight gym badges, {PLAYER}!\pThe last mountain in your path is the Pokemon Championship. They're held every year at -"))
+    msgbox(format("And now you've collected all eight gym badges, {PLAYER}!\pThe last mountain in your path is the Pokémon Championship. They're held every year at -"))
     release
 
     playbgm(MUS_DUMMY, FALSE)

@@ -386,14 +386,16 @@ PellucaCityRestaurant_Cook3_Movement_0:
 
 PellucaCityRestaurant_NPC1_Text_0:
 # 11 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "My daughter only thinks about gyms and\n"
-	.string "badges. She doesn't live in the moment!$"
+	.string "My daughter only thinks about the\n"
+	.string "Pokémon Championship. She doesn't live\l"
+	.string "in the moment!$"
 
 PellucaCityRestaurant_NPC2_Text_0:
 # 19 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Apparently they're closing down the\n"
-	.string "Mirroh Base Camp Gym. Where will I get my\l"
-	.string "next badge from?$"
+	.string "Mirroh Base Camp Gym. If I dont get the\l"
+	.string "gym badge, how will I enter the Pokémon\l"
+	.string "Championship?$"
 
 PellucaCityRestaurant_NPC3_Text_0:
 # 27 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -407,11 +409,10 @@ PellucaCityRestaurant_NPC4_Text_0:
 
 PellucaCityRestaurant_NPC5_Text_0:
 # 43 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "This is the one nice place in the entire\n"
-	.string "city! I hope the Qwilsquad does a\l"
-	.string "better job than the mayor...but they're\l"
-	.string "just a bunch of mean people with strong\l"
-	.string "Pokemon.$"
+	.string "I hope the Qwilsquad does a better job\n"
+	.string "than the mayor...but they're just a\l"
+	.string "bunch of mean people with strong\l"
+	.string "Pokémon.$"
 
 PellucaCityRestaurant_NPC6_Text_0:
 # 51 "data//maps/PellucaCityRestaurant/scripts.pory"

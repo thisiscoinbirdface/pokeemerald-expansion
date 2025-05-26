@@ -430,7 +430,7 @@ WoodSign_Fennilahl_Pokedex_Text_0:
 # 56 "data//scripts/customscripts_signs.pory"
 	.string "TRAINER TIPS: You can check your\n"
 	.string "Pokedex for detailed information on\l"
-	.string "Pokemon such as moves and evolution\l"
+	.string "Pokémon such as moves and evolution\l"
 	.string "methods!$"
 
 WhiteSign_Route3_TowardsFennilahl_Text_0:

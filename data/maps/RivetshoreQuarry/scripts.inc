@@ -542,7 +542,7 @@ RivetshoreQuarry_Percy_Text_0:
 	.string "It's the Rivetshore Construction CEO's\n"
 	.string "Percy!\p"
 	.string "What's it doing here? Was it led here by\n"
-	.string "another Pokemon?$"
+	.string "another Pokémon?$"
 
 RivetshoreQuarry_Percy_Text_1:
 # 36 "data//maps/RivetshoreQuarry/scripts.pory"
@@ -558,7 +558,7 @@ RivetshoreQuarry_Percy_Text_2:
 RivetshoreQuarry_Nurse_Text_0:
 # 64 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "We have a small infirmary here to treat\n"
-	.string "builders and Pokemon that get hurt.\p"
+	.string "builders and Pokémon that get hurt.\p"
 	.string "Why don't you rest for a bit?$"
 
 RivetshoreQuarry_Nurse_Text_1:

@@ -23,7 +23,7 @@ CeramBaseCampGym_Red::
 # 37 "data//maps/CeramBaseCampGym/scripts.pory"
 	giveitem ITEM_FRESH_WATER
 # 38 "data//maps/CeramBaseCampGym/scripts.pory"
-	msgbox CeramBaseCampGym_Red_Text_7
+	msgbox CeramBaseCampGym_Red_Text_5
 # 39 "data//maps/CeramBaseCampGym/scripts.pory"
 	setflag FLAG_CERAMBASECAMPGYM_SPENSER_WATER
 CeramBaseCampGym_Red_1:
@@ -389,22 +389,15 @@ CeramBaseCampGym_Red_Text_5:
 # 34 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
-	.string "intimidating FIRE type Pokémon.\p"
-	.string "Avoid using physical attackers!$"
+	.string "intimidating FIRE type Pokémon. An Occa\l"
+	.string "Berry might come in useful.\p"
+	.string "Now go get 'em, champ-in-the-making!$"
 
 CeramBaseCampGym_Red_Text_6:
 # 36 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Welcome to the Ceram Base Camp\n"
 	.string "Management Office And Gym! First, have\l"
 	.string "some water.$"
-
-CeramBaseCampGym_Red_Text_7:
-# 38 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The Gym Leader Ariana, who also manages\n"
-	.string "the base camp, specialises in\l"
-	.string "intimidating FIRE type Pokémon.\p"
-	.string "Avoid using physical attackers!\p"
-	.string "Now go get 'em, champ-in-the-making!$"
 
 CeramBaseCampGym_Guard_Text_0:
 # 49 "data//maps/CeramBaseCampGym/scripts.pory"

@@ -21,7 +21,7 @@ script RivetshoreQuarry_Percy{
 
     lockall
 
-    msgbox(format("It's the Rivetshore Construction CEO's Percy!\pWhat's it doing here? Was it led here by another Pokemon?"))
+    msgbox(format("It's the Rivetshore Construction CEO's Percy!\pWhat's it doing here? Was it led here by another Pokémon?"))
     release
 
     delay(16)
@@ -61,7 +61,7 @@ script RivetshoreQuarry_Percy{
 script RivetshoreQuarry_Nurse{
     lockall
     faceplayer   
-    msgbox(format("We have a small infirmary here to treat builders and Pokemon that get hurt.\pWhy don't you rest for a bit?"))
+    msgbox(format("We have a small infirmary here to treat builders and Pokémon that get hurt.\pWhy don't you rest for a bit?"))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
 	msgbox(format("Take care, trainer!"))

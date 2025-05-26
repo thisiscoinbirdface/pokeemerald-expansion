@@ -134,7 +134,7 @@ Route8_Trainer_E_Text_0:
 Route8_NPC1_Text_0:
 # 46 "data//maps/Route8/scripts.pory"
 	.string "Leader Raazi in Rivetshore uses the\n"
-	.string "strongest items for his Pokemon! I'm\l"
+	.string "strongest items for his Pokémon! I'm\l"
 	.string "here to find some items for mine too.$"
 
 Route8_NPC2_Text_0:

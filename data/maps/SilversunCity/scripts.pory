@@ -182,6 +182,16 @@ script SilversunCity_NPC6{
     end
 }
 
+script SilversunCity_NPC7{
+    msgbox(format("Silversun City has a lovely theater but no fine dining! I'd love a fancy spot like the Pelluca Restaurant here."), MSGBOX_NPC)
+    end
+}
+
+script SilversunCity_NPC8{
+    msgbox(format("Did you hear about the Mega Sharpedo in Hoya River? Apparently its headed to Pelluca City."), MSGBOX_NPC)
+    end
+}
+
 script SilversunCity_Murkrow{
     playmoncry(SPECIES_MURKROW, CRY_MODE_NORMAL)
     msgbox(format("Murkrow glares at you. It's as if its saying, 'Get out of the way!'"), MSGBOX_NPC)

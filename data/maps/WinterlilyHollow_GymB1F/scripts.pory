@@ -54,7 +54,7 @@ script WinterlilyHollow_GymB1F_SetPermaOpenDoors{
 //6 trainers
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_A{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format("What's a civilian doing here? Viniel's Ampharos overloads the atmosphere with ions, creating electric terrain here. It's dangerous!"), "I guess you can stay!")
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format("What's a civilian doing here?\nThe Electric Terrain is dangerous!"), "I guess you're okay!")
     msgbox(format("Leader Viniel's Ampharos overloads the atmosphere with ions, creating electric terrain here."))
     releaseall
     end
@@ -189,7 +189,7 @@ script WinterlilyHollowGym_LeaderBattle {
 
         //Bye-bye
         speakername("Viniel")
-        msgbox(format("Since you're off the case now, I suggest you head back down to Pelluca City. You'll find the next gym leader, Jania, there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
+        msgbox(format("Since you're off the case now, why don't you take part in the Pokémon Championship this year? You need two more badges - but I warn you! Jania and Raazi are the strongest Gym Leaders in all of Cormoria!\pIf you want to try, I suggest you head back down to Pelluca City. You'll find the next gym there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
         release
         giveitem(ITEM_HM03)
         speakername("Viniel")
@@ -242,13 +242,13 @@ script WinterlilyHollowGym_Red{
         }
     } else { 
         if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)){
-            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon.\pNow go get 'em, champ-in-the-making!"), MSGBOX_NPC)
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain!\pSome trainers even bring Electric Seeds to boost their Pokémon in battle.\pNow go get 'em, champ-in-the-making!"), MSGBOX_NPC)
         } else {
             lockall
             faceplayer
             msgbox(format("Welcome to the Winterlily Hollow gym! It's not a gym so much as a power plant. The leader, Viniel, powers this town with his strong ELECTRIC-type Pokémon here in this plant. First, hydrate yourself!"))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain! Steer clear of FLYING and WATER type Pokémon.\pNow go get 'em, champ-in-the-making!"))
+            msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain!\pSome trainers even bring Electric Seeds to boost their Pokémon in battle.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)
             releaseall
         }

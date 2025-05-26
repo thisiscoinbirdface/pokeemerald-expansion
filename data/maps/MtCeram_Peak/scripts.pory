@@ -23,11 +23,6 @@ script MtCeram_Peak_SaveGameTrigger{
 script MtCeramPeak_MainEvent_Trigger{
     if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}
 
-    //Set talonflame
-    if (flag(FLAG_CERAM_TALONFLAME)){
-        clearflag(FLAG_CERAM_TALONFLAME)
-    }
-
     lockall
     speakername("???")
     msgbox(format("So you broke through my grunts.\nCome here then."))
@@ -35,6 +30,45 @@ script MtCeramPeak_MainEvent_Trigger{
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 6))
     waitmovement(0)
+
+    //skip cutscene 
+    if (flag(FLAG_SKIP_CERAM_CUTSCENE)){
+        msgbox(format("Skip cutscene?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            goto(MtCeramPeak_MainEvent_Cutscene)
+        } else {
+            //set all positions
+            fadescreen(FADE_TO_BLACK)
+
+            //move grunts
+            special(SpawnCameraObject)
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 1))
+            applymovement(LOCALID_BOSS, moves(face_down))            
+            applymovement(3, moves(face_right))    
+            applymovement(5, moves(face_left))
+            applymovement(4, moves(walk_right face_left))    
+            waitmovement(0)
+            special(RemoveCameraObject)
+            //move player
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+            waitmovement(0)
+
+            fadescreen(FADE_FROM_BLACK)
+
+            goto(MtCeramPeak_MainEvent_Battle)
+        }
+    } else {
+        goto(MtCeramPeak_MainEvent_Cutscene)
+    }
+}
+
+script MtCeramPeak_MainEvent_Cutscene{
+    
+    //set skip and talonflame flags
+    if (flag(FLAG_CERAM_TALONFLAME)){clearflag(FLAG_CERAM_TALONFLAME)}
+    setflag(FLAG_SKIP_CERAM_CUTSCENE)
+    //
 
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 1))
@@ -106,6 +140,12 @@ script MtCeramPeak_MainEvent_Trigger{
     msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
     release
     delay(16)
+
+    goto(MtCeramPeak_MainEvent_Battle)
+}
+
+script MtCeramPeak_MainEvent_Battle{
+    //Pre-battle
     speakername("Moxie")
     msgbox(format("I, Moxie, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
     release

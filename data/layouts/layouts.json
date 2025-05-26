@@ -5054,7 +5054,7 @@
     {
       "id": "LAYOUT_ROUTE7",
       "name": "Route7_Layout",
-      "width": 28,
+      "width": 30,
       "height": 16,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SnowCableCar",

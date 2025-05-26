@@ -223,6 +223,13 @@ script RangerInstitute_1F_NPC3{
     releaseall
     end
 }
+script RangerInstitute_1F_NPC4{
+    lockall
+    faceplayer
+    msgbox(format("You heard about the Mega Sharpedo in the Hoya River, right?\pWe're tracking it on our scanners - it's headed to Pelluca City. I hope it doesn't cause any damage..."))
+    releaseall
+    end
+}
 
 //Blockers
 script RangerInstitute_1F_BlockerBasement{

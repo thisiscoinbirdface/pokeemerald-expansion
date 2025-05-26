@@ -21,7 +21,7 @@ script GalecrestCity_PokemonCenter_NPC1{
 }
 
 script GalecrestCity_PokemonCenter_NPC2{
-	msgbox(format("Galecrest City has really become quite unmaintained. I keep finding Bottle Caps lying around!"), MSGBOX_NPC)
+	msgbox(format("Do you know about the Pokémon Championships? Every four years, the best trainers in Cormoria compete in a tournament to decide who's the strongest! You need all eight gym badges to enter...which means regular people like me can never make it!"), MSGBOX_NPC)
 	end
 }
 

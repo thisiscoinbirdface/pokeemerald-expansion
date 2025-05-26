@@ -2869,9 +2869,9 @@ PellucaCity_NPC3_Text_0:
 
 PellucaCity_NPC4_Text_0:
 # 987 "data//maps/PellucaCity/scripts.pory"
-	.string "This bridge is too small. It's nothing\n"
-	.string "like the cycling roads in other regions!\l"
-	.string "Why doesn't the mayor do anything?$"
+	.string "This bridge was built by Rivetshore\n"
+	.string "Construction. It's nothing like the\l"
+	.string "cycling roads in other regions though!$"
 
 PellucaCity_NPC5_Text_0:
 # 993 "data//maps/PellucaCity/scripts.pory"

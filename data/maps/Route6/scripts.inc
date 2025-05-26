@@ -833,17 +833,18 @@ Route6_Trainer_A_Text_2:
 
 Route6_Trainer_B_Text_0:
 # 108 "data//maps/Route6/scripts.pory"
-	.string "The road to Pelluca City is\n"
-	.string "long....beating you will give me energy!$"
+	.string "I was in Silversun City to catch a\n"
+	.string "Qwilfish. Now I can join the Qwilsquad!\p"
+	.string "What - never heard of 'em? Come to\n"
+	.string "Pelluca City and you'll find out!$"
 
 Route6_Trainer_B_Text_1:
 # 108 "data//maps/Route6/scripts.pory"
-	.string "I lost even more energy!$"
+	.string "My Qwilfish lost!$"
 
 Route6_Trainer_B_Text_2:
 # 109 "data//maps/Route6/scripts.pory"
-	.string "Maybe I should take a Corviknight Taxi\n"
-	.string "to Pelluca City instead.$"
+	.string "The Qwilsquad are the strongest!$"
 
 Route6_Trainer_C1_Text_0:
 # 115 "data//maps/Route6/scripts.pory"

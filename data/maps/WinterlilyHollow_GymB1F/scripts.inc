@@ -338,14 +338,12 @@ WinterlilyHollow_GymB1F_FinalButton_Text_0:
 
 WinterlilyHollow_Gym_Trainer_A_Text_0:
 # 57 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "What's a civilian doing here? Viniel's\n"
-	.string "Ampharos overloads the atmosphere\l"
-	.string "with ions, creating electric terrain\l"
-	.string "here. It's dangerous!$"
+	.string "What's a civilian doing here?\n"
+	.string "The Electric Terrain is dangerous!$"
 
 WinterlilyHollow_Gym_Trainer_A_Text_1:
 # 57 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "I guess you can stay!$"
+	.string "I guess you're okay!$"
 
 WinterlilyHollow_Gym_Trainer_A_Text_2:
 # 58 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -502,10 +500,15 @@ WinterlilyHollowGym_LeaderBattle_Text_8:
 
 WinterlilyHollowGym_LeaderBattle_Text_9:
 # 192 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Since you're off the case now, I\n"
-	.string "suggest you head back down to Pelluca\l"
-	.string "City. You'll find the next gym leader,\l"
-	.string "Jania, there.\p"
+	.string "Since you're off the case now, why don't\n"
+	.string "you take part in the Pokémon\l"
+	.string "Championship this year? You need two\l"
+	.string "more badges - but I warn you! Jania and\l"
+	.string "Raazi are the strongest Gym Leaders in\l"
+	.string "all of Cormoria!\p"
+	.string "If you want to try, I suggest you head\n"
+	.string "back down to Pelluca City. You'll find\l"
+	.string "the next gym there.\p"
 	.string "You can go down the Ivy River...\p"
 	.string "...for which you'll need Surf!$"
 
@@ -549,8 +552,9 @@ WinterlilyHollowGym_Red_Text_5:
 # 245 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "The electricity generated in this plant\n"
 	.string "ionises the air and creates electric\l"
-	.string "terrain! Steer clear of FLYING and\l"
-	.string "WATER type Pokémon.\p"
+	.string "terrain!\p"
+	.string "Some trainers even bring Electric Seeds\n"
+	.string "to boost their Pokémon in battle.\p"
 	.string "Now go get 'em, champ-in-the-making!$"
 
 WinterlilyHollowGym_Red_Text_6:

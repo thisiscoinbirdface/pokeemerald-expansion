@@ -189,7 +189,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...and Team Somber, with our army of strong Ancient Pokemon, can do all of that!\pFor a fee, of course."))
+    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...and Team Somber, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
@@ -444,7 +444,7 @@ script UnchartedIsland_Raazi{
 
 
 script UnchartedIsland_Grunt_A{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format("The boss gave me new Pokemon just to stop the Ace Rookie. You can't stop us - wait, you're not the Ace Rookie!"), format("Guess you're still on the case!"))
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format("The boss gave me new Pokémon just to stop the Ace Rookie. You can't stop us - wait, you're not the Ace Rookie!"), format("Guess you're still on the case!"))
     msgbox(format("It doesn't matter who's on the case. You can't stop us now!"))
     releaseall
 }
@@ -751,10 +751,10 @@ script UnchartedIsland_Tenebris{
         delay(16)
         msgbox_delay("Tenebris", format("The Ancient Terror..."))
         showmonpic(SPECIES_KORAIDON, 10, 3)
-        msgbox_delay("Tenebris", format("Of the many strong Pokemon that ruled over Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
+        msgbox_delay("Tenebris", format("Of the many strong Pokémon that ruled over Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
         hidemonpic
         delay(16)
-        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokemon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
+        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokémon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
         
         //last choice joke
         speakername(NULL)

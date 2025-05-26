@@ -1341,7 +1341,7 @@ MtCeram_EventScript_NPC2_Text_0:
 # 496 "data//maps/MtCeram/scripts.pory"
 	.string "If you're here, that means you've got\n"
 	.string "two gym badges, right?\p"
-	.string "To take part in the Pokemon\n"
+	.string "To take part in the Pokémon\n"
 	.string "Championship, you'll need all eight\l"
 	.string "badges.$"
 

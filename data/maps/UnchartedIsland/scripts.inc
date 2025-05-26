@@ -1935,7 +1935,7 @@ UnchartedIsland_Finale_Cutscene_Text_20:
 	.string "emergency services, repairs,\l"
 	.string "construction, delivery of\l"
 	.string "essentials...and Team Somber, with our\l"
-	.string "army of strong Ancient Pokemon, can do\l"
+	.string "army of strong Ancient Pokémon, can do\l"
 	.string "all of that!\p"
 	.string "For a fee, of course.$"
 
@@ -2107,7 +2107,7 @@ UnchartedIsland_Raazi_Text_0:
 
 UnchartedIsland_Grunt_A_Text_0:
 # 447 "data//maps/UnchartedIsland/scripts.pory"
-	.string "The boss gave me new Pokemon just to\n"
+	.string "The boss gave me new Pokémon just to\n"
 	.string "stop the Ace Rookie. You can't stop us -\l"
 	.string "wait, you're not the Ace Rookie!$"
 
@@ -2313,7 +2313,7 @@ UnchartedIsland_Tenebris_Text_5:
 
 UnchartedIsland_Tenebris_Text_6:
 # 754 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Of the many strong Pokemon that ruled\n"
+	.string "Of the many strong Pokémon that ruled\n"
 	.string "over Ancient Cormoria, the Ancient\l"
 	.string "Terror was the strongest! The most\l"
 	.string "vicious!\p"
@@ -2331,7 +2331,7 @@ UnchartedIsland_Tenebris_Text_6:
 UnchartedIsland_Tenebris_Text_7:
 # 757 "data//maps/UnchartedIsland/scripts.pory"
 	.string "We must stop them...but I don't have my\n"
-	.string "Pokemon. Even if I did, I'm not much\l"
+	.string "Pokémon. Even if I did, I'm not much\l"
 	.string "resistance.\p"
 	.string "I can't stop them, {PLAYER}. And I\n"
 	.string "fear neither can your Ace Rookie\l"

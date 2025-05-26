@@ -32,6 +32,33 @@ script SilversunCity_SomberHQ_EventScript_Main_Trigger1{
 
 script SilversunCity_SomberHQ_EventScript_Main{
 
+    //cutscene skip
+    if (flag(FLAG_SKIP_SILVERSUN_CUTSCENE)){
+        msgbox(format("Skip cutscene?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            goto(SilversunCity_SomberHQ_EventScript_Cutscene)
+        } else {
+            //set positions
+            fadescreen(FADE_TO_BLACK)
+                setobjectxy(LOCALID_GAB, 0, 0)
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
+                applymovement(LOCALID_MELEA, moves(walk_left))
+                applymovement(LOCALID_PROF, moves(walk_right walk_down walk_right face_left))    
+                waitmovement(0)            
+            fadescreen(FADE_FROM_BLACK)
+
+            goto(SilversunCity_SomberHQ_EventScript_Skip)
+        }
+    } else {
+        goto(SilversunCity_SomberHQ_EventScript_Cutscene)
+    }
+}
+
+script SilversunCity_SomberHQ_EventScript_Cutscene{
+    
+    //set cutscene skip flag
+    setflag(FLAG_SKIP_SILVERSUN_CUTSCENE)
 
     //Dialogue between prof and Melea
     //Melea laughs at the profs attempt to hide the dreamstone in mt mirroh
@@ -183,7 +210,15 @@ script SilversunCity_SomberHQ_EventScript_Main{
     applymovement(LOCALID_MELEA, moves(walk_down face_left))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it, because I'm going to put an end to you - right here, right now!"))    
+    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it.")) 
+    
+    goto(SilversunCity_SomberHQ_EventScript_Skip)
+}
+
+script SilversunCity_SomberHQ_EventScript_Skip{
+
+    speakername("Melea")
+    msgbox(format("I'm going to put an end to you - right here, right now!"))    
 
     //Battle
     trainerbattle_no_intro(TRAINER_SOMBERHQ_MELEA, format("You stupid child!"))

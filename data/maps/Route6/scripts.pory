@@ -105,8 +105,8 @@ script Route6_Trainer_A{
 }
 //Battle Girl
 script Route6_Trainer_B{
-    trainerbattle_single(TRAINER_ROUTE6_B, format("The road to Pelluca City is long....beating you will give me energy!"), "I lost even more energy!")
-    msgbox(format("Maybe I should take a Corviknight Taxi to Pelluca City instead."))
+    trainerbattle_single(TRAINER_ROUTE6_B, format("I was in Silversun City to catch a Qwilfish. Now I can join the Qwilsquad!\pWhat - never heard of 'em? Come to Pelluca City and you'll find out!"), "My Qwilfish lost!")
+    msgbox(format("The Qwilsquad are the strongest!"))
     releaseall
     end
 }

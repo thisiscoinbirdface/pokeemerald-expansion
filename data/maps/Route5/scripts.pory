@@ -16,6 +16,13 @@ script Route5_NPC_B{
     end
 }
 
+script Route5_NPC_C{
+    lockall
+    faceplayer
+    msgbox(format("I wish they'd clear those boulders in Vilethorn Woods! It's blocking the path back to Galecrest City."))
+    releaseall
+    end
+}
 
 
 

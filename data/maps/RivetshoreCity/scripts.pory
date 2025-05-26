@@ -265,7 +265,7 @@ script RivetshoreCity_NPC_1{
 }
 //beach fisherman
 script RivetshoreCity_NPC_2{
-    msgbox(format("They've turned this town into a monstrosity! It used to be a beautiful fishing spot until they built the quarry and harbor and drove all the Pokemon away."), MSGBOX_NPC)
+    msgbox(format("They've turned this town into a monstrosity! It used to be a beautiful fishing spot until they built the quarry and harbor and drove all the Pokémon away."), MSGBOX_NPC)
     end
 }
 //lady outside PC
@@ -367,6 +367,7 @@ mart RivetshoreCity_Mart_2{
 mart RivetshoreCity_Mart_Secret{
     ITEM_GALARICA_CUFF
     ITEM_GALARICA_WREATH
+    ITEM_TIME_WATER
 }
 
 

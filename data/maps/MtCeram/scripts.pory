@@ -493,7 +493,7 @@ script MtCeram_EventScript_NPC1{
 
 //Change this guys dialogue
 script MtCeram_EventScript_NPC2{
-    msgbox(format("If you're here, that means you've got two gym badges, right?\pTo take part in the Pokemon Championship, you'll need all eight badges."), MSGBOX_NPC)
+    msgbox(format("If you're here, that means you've got two gym badges, right?\pTo take part in the Pokémon Championship, you'll need all eight badges."), MSGBOX_NPC)
     end
 }
 

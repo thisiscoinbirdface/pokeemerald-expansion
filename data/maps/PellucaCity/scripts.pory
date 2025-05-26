@@ -984,7 +984,7 @@ script PellucaCity_NPC3{
 }
 //bridge cyclist
 script PellucaCity_NPC4{
-    msgbox(format("This bridge is too small. It's nothing like the cycling roads in other regions! Why doesn't the mayor do anything?"), MSGBOX_NPC)
+    msgbox(format("This bridge was built by Rivetshore Construction. It's nothing like the cycling roads in other regions though!"), MSGBOX_NPC)
     end
 }
 //bridge other dude

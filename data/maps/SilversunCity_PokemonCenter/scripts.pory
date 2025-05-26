@@ -19,3 +19,7 @@ script SilversunCity_PokemonCenter_NPC1{
 	end
 }
 
+script SilversunCity_PokemonCenter_NPC2{
+	msgbox(format("This year is the year of the Pokémon Championships! It happens only once every four years - should I take part?"), MSGBOX_NPC)
+	end
+}

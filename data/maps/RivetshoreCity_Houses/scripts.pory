@@ -39,7 +39,7 @@ script RivetshoreCity_Houses_Clodsire{
 //House 3 - free item
 //two brothers and grandma
 script RivetshoreCity_Houses_NPC5{
-    msgbox(format("Grandma won't let us get Pokemon! So we're playing card games instead."), MSGBOX_NPC)
+    msgbox(format("Grandma won't let us get Pokémon! So we're playing card games instead."), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Houses_NPC6{
@@ -63,14 +63,14 @@ script RivetshoreCity_Houses_NPC6{
             specialvar(VAR_RESULT, GetTradeSpecies)
 
             if (var(VAR_RESULT) == SPECIES_EGG){
-                msgbox(format("Oh wow! This is perfect! Which egg is it?\p...\pNo, don't tell us! It doesn't matter what Pokemon it is. We'll treat it like our third sibling!\pThank you so much!\p...\pUm. We want to give you something...but we don't have anything.\pI bet you're an adult so you find cards boring, but we've got this extra Red Card. Will you take this?"))
+                msgbox(format("Oh wow! This is perfect! Which egg is it?\p...\pNo, don't tell us! It doesn't matter what Pokémon it is. We'll treat it like our third sibling!\pThank you so much!\p...\pUm. We want to give you something...but we don't have anything.\pI bet you're an adult so you find cards boring, but we've got this extra Red Card. Will you take this?"))
                 setvar(VAR_RIVETSHORE_EGG_QUEST, 2)
 
                 giveitem(ITEM_RED_CARD)
                 releaseall
                 end
             } else {
-                msgbox(format("We need a Pokemon Egg or else Grandma will find out!"))
+                msgbox(format("We need a Pokémon Egg or else Grandma will find out!"))
                 releaseall
                 end
             }
@@ -84,7 +84,7 @@ script RivetshoreCity_Houses_NPC6{
     }
 
     if (var(VAR_RIVETSHORE_EGG_QUEST) == 0){
-        msgbox(format("I wish we could get Pokémon and challenge Raazi!\p...\pHey, you're a trainer! I bet you could get us a Pokemon!\pWill you bring us a Pokemon?"), MSGBOX_YESNO)
+        msgbox(format("I wish we could get Pokémon and challenge Raazi!\p...\pHey, you're a trainer! I bet you could get us a Pokémon!\pWill you bring us a Pokémon?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             msgbox(format("Yay! Just one Pokémon is fine - we'll raise it together! But it can't be a big one or Grandma will find out. Can you bring a Pokémon Egg?"))
             release

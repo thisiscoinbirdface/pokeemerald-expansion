@@ -14293,7 +14293,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_TIME_SEED] =
     {
-        .name = _("Time Seed"),
+        .name = _("Seed of Time"),
         .description = COMPOUND_STRING(
             "A strange, withered\n"
             "old seed. Where can\n"
@@ -14321,4 +14321,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_ExpCandyXL,
         .iconPalette = gItemIconPalette_ExpCandies,
     },
+
+    [ITEM_TIME_WATER] =
+    {
+        .name = _("Water of Time"),
+        .description = COMPOUND_STRING(
+            "A bottle of mystical\n"
+            "glowing water. What\n"
+            "is it used for?"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_FreshWater,
+        .iconPalette = gItemIconPalette_FreshWater,
+    },    
+
 };

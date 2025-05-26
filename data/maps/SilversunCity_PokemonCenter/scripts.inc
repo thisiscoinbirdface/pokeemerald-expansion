@@ -30,9 +30,21 @@ SilversunCity_PokemonCenter_NPC1::
 	end
 
 
+SilversunCity_PokemonCenter_NPC2::
+# 23 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
+	msgbox SilversunCity_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
 SilversunCity_PokemonCenter_NPC1_Text_0:
 # 18 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
 	.string "They've blocked off the Hoya River\n"
 	.string "North Crossing because they saw a Mega\l"
 	.string "Sharpedo in the wild! So I'm waiting here\l"
 	.string "until it's safe to cross again.$"
+
+SilversunCity_PokemonCenter_NPC2_Text_0:
+# 23 "data//maps/SilversunCity_PokemonCenter/scripts.pory"
+	.string "This year is the year of the Pokémon\n"
+	.string "Championships! It happens only once\l"
+	.string "every four years - should I take part?$"

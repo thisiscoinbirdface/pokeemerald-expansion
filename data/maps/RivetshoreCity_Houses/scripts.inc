@@ -182,7 +182,7 @@ RivetshoreCity_Houses_Clodsire_Text_0:
 
 RivetshoreCity_Houses_NPC5_Text_0:
 # 42 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "Grandma won't let us get Pokemon! So\n"
+	.string "Grandma won't let us get Pokémon! So\n"
 	.string "we're playing card games instead.$"
 
 RivetshoreCity_Houses_NPC6_Text_0:
@@ -203,7 +203,7 @@ RivetshoreCity_Houses_NPC6_Text_3:
 	.string "Oh wow! This is perfect! Which egg is it?\p"
 	.string "...\p"
 	.string "No, don't tell us! It doesn't matter\n"
-	.string "what Pokemon it is. We'll treat it like\l"
+	.string "what Pokémon it is. We'll treat it like\l"
 	.string "our third sibling!\p"
 	.string "Thank you so much!\p"
 	.string "...\p"
@@ -215,7 +215,7 @@ RivetshoreCity_Houses_NPC6_Text_3:
 
 RivetshoreCity_Houses_NPC6_Text_4:
 # 73 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "We need a Pokemon Egg or else Grandma\n"
+	.string "We need a Pokémon Egg or else Grandma\n"
 	.string "will find out!$"
 
 RivetshoreCity_Houses_NPC6_Text_5:
@@ -228,8 +228,8 @@ RivetshoreCity_Houses_NPC6_Text_6:
 	.string "challenge Raazi!\p"
 	.string "...\p"
 	.string "Hey, you're a trainer! I bet you could\n"
-	.string "get us a Pokemon!\p"
-	.string "Will you bring us a Pokemon?$"
+	.string "get us a Pokémon!\p"
+	.string "Will you bring us a Pokémon?$"
 
 RivetshoreCity_Houses_NPC6_Text_7:
 # 89 "data//maps/RivetshoreCity_Houses/scripts.pory"

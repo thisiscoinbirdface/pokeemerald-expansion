@@ -8,7 +8,7 @@ mapscripts PellucaCityRestaurant_MapScripts{}
 script PellucaCityRestaurant_NPC1{
     lockall
     faceplayer
-    msgbox(format("My daughter only thinks about gyms and badges. She doesn't live in the moment!"))
+    msgbox(format("My daughter only thinks about the Pokémon Championship. She doesn't live in the moment!"))
     releaseall
     end
 }
@@ -16,7 +16,7 @@ script PellucaCityRestaurant_NPC1{
 script PellucaCityRestaurant_NPC2{
     lockall
     faceplayer
-    msgbox(format("Apparently they're closing down the Mirroh Base Camp Gym. Where will I get my next badge from?"))
+    msgbox(format("Apparently they're closing down the Mirroh Base Camp Gym. If I dont get the gym badge, how will I enter the Pokémon Championship?"))
     releaseall
     end
 }
@@ -40,7 +40,7 @@ script PellucaCityRestaurant_NPC4{
 script PellucaCityRestaurant_NPC5{
     lockall
     faceplayer
-    msgbox(format("This is the one nice place in the entire city! I hope the Qwilsquad does a better job than the mayor...but they're just a bunch of mean people with strong Pokemon."))
+    msgbox(format("I hope the Qwilsquad does a better job than the mayor...but they're just a bunch of mean people with strong Pokémon."))
     releaseall
     end
 }

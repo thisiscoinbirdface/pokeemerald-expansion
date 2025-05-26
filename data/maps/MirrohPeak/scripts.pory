@@ -163,7 +163,7 @@ script MirrohPeak_EventScript_Viniel{
     end
 }
 
-script MirrohPeak_GruntsVSViniel_GenericDialogue{//xxxxx
+script MirrohPeak_GruntsVSViniel_GenericDialogue{
     lockall
     speakername("Grunt")
     msgbox(format("Even with four of us, its so hard!\nGuess that's why he's a Gym Leader."))
@@ -200,6 +200,33 @@ script MirrohPeak_EventScript_Somber_Trigger{
     waitmovement(0)
     special(RemoveCameraObject)
     delay(60)
+    
+    //skip cutscene
+        //cutscene skip
+    if (flag(FLAG_SKIP_MIRROH_CUTSCENE)){
+        msgbox(format("Skip cutscene?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            goto(MirrohPeak_EventScript_Somber_Cutscene)
+        } else {
+            //set positions
+            fadescreen(FADE_TO_BLACK)
+                applymovement(LOCALID_MOXIE, moves(walk_down))
+                applymovement(LOCALID_MELEA, moves(fly_up))
+                waitmovement(0)     
+            fadescreen(FADE_FROM_BLACK)
+
+            goto(MirrohPeak_EventScript_Somber_Skip)
+        }
+    } else {
+        goto(MirrohPeak_EventScript_Somber_Cutscene)
+    }
+}
+
+script MirrohPeak_EventScript_Somber_Cutscene{
+
+    //set cutscene flag
+    setflag(FLAG_SKIP_MIRROH_CUTSCENE)
 
     //MOXIE MELEA
     applymovement(LOCALID_MELEA, moves(emote_question_mark))
@@ -269,7 +296,15 @@ script MirrohPeak_EventScript_Somber_Trigger{
     applymovement(LOCALID_MOXIE, moves(walk_right face_down))
     waitmovement(0)
     speakername("Moxie")
-    msgbox(format("My dear colleague has gone ahead into Ancient Cormoria...you've seen it, no?\pI wonder what it looks like.\pMelea will tell me when she returns.\p...\pChild, we stand right at the very cusp of attaining our goal.\pThe Ancient Terror will soon be ours.\p...\pI will give you a chance to turn around.\pWalk away from that which you\ndon't understand.\p...\pNo?\pVery well then.\nThis will be our final battle.\pI will make sure that you won't have the heart to come after us again!"))    
+    msgbox(format("My dear colleague has gone ahead into Ancient Cormoria...you've seen it, no?\pI wonder what it looks like.\pMelea will tell me when she returns.\p...\pChild, we stand right at the very cusp of attaining our goal.\pThe Ancient Terror will soon be ours.\p...\pI will give you a chance to turn around.\pWalk away from that which you\ndon't understand.\p...\pNo?\pVery well then.\nThis will be our final battle."))
+    
+    goto(MirrohPeak_EventScript_Somber_Skip)
+}
+
+script MirrohPeak_EventScript_Somber_Skip{
+    
+    speakername("Moxie")
+    msgbox(format("I will make sure that you won't have the heart to come after us again!"))    
     release
 
     //Battle

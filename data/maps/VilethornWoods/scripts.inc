@@ -743,7 +743,7 @@ VilethornWoods_Trainer_G_Text_0:
 	.string "I'm not like the others! I'm one of the\n"
 	.string "best bug catchers around.\p"
 	.string "I'm going to become the first BUG-type\n"
-	.string "Pokemon Champion one day!$"
+	.string "Pokémon Champion one day!$"
 
 VilethornWoods_Trainer_G_Text_1:
 # 251 "data//maps/VilethornWoods/scripts.pory"

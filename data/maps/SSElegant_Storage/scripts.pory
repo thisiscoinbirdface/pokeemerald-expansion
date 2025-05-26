@@ -43,7 +43,7 @@ script SSElegant_Storage_Moonblast{
     applymovement(8, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Breech", format("We can jump out through this wall!\pClefable and I will go on ahead and make sure nobody's around.\pKeep your Pokemon hidden, okay?"))
+    msgbox_delay("Breech", format("We can jump out through this wall!\pClefable and I will go on ahead and make sure nobody's around.\pKeep your Pokémon hidden, okay?"))
 
     //breech exit
     applymovement(7, moves(walk_up))
@@ -113,7 +113,7 @@ script SSElegant_Storage_GabConfronts{
     applymovement(6, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Gabrielle", format("Zoroark and I will go outside and keep them from entering the storage hold.\pYou two find a way out from here!\p...\p{PLAYER} - don't do anything stupid! And hide your Pokemon once you get off the ship, or the leaders might catch you.\p..."))    
+    msgbox_delay("Gabrielle", format("Zoroark and I will go outside and keep them from entering the storage hold.\pYou two find a way out from here!\p...\p{PLAYER} - don't do anything stupid! And hide your Pokémon once you get off the ship, or the leaders might catch you.\p..."))    
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(7, moves(face_down))

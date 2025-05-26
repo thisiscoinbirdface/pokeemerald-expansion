@@ -496,6 +496,8 @@ RivetshoreCity_Mart_Secret:
 	.2byte ITEM_GALARICA_CUFF
 # 369 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
+# 370 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 
 # 35 "data//maps/RivetshoreCity/scripts.pory"
@@ -1015,7 +1017,7 @@ RivetshoreCity_NPC_2_Text_0:
 	.string "They've turned this town into a\n"
 	.string "monstrosity! It used to be a beautiful\l"
 	.string "fishing spot until they built the quarry\l"
-	.string "and harbor and drove all the Pokemon\l"
+	.string "and harbor and drove all the Pokémon\l"
 	.string "away.$"
 
 RivetshoreCity_NPC_3_Text_0:

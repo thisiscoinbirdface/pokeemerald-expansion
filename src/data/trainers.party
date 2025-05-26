@@ -1556,15 +1556,15 @@ Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_B ===
-Name: Punchia
-Class: Battle Girl
-Pic: Battle Girl
-Gender: Female
+Name: Puncher
+Class: Sailor
+Pic: Sailor
+Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Primeape
+Qwilfish-Hisui
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -1966,6 +1966,10 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
+Pancham
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 Passimian
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
@@ -1978,6 +1982,10 @@ Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
+
+Gurdurr
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Primeape
 Level: 32
@@ -2437,7 +2445,7 @@ Double Battle: No
 AI: Check Bad Move
 Starting Status: Electric Terrain
 
-Kilowattrel
+Kilowattrel @ Electric Seed
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -2452,15 +2460,15 @@ AI: Smart Trainer / Ace Pokemon
 Starting Status: Electric Terrain
 Mugshot: Yellow
 
-Kilowattrel
+Kilowattrel @ Focus Sash
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Toxtricity
+Toxtricity @ Throat Spray
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Lanturn
+Lanturn @ Electric Seed
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
