@@ -365,7 +365,7 @@ script IvyRiver_Ranger_NPC_B{
     end
 }
 script IvyRiver_Ranger_NPC_C{
-    msgbox(format("The CrazyTrain 2.0 is incredible!\nIt boosts all of a Pokemon's stats."), MSGBOX_NPC)
+    msgbox(format("The CrazyTrain 2.0 is incredible!\nIt boosts all of a Pokémon's stats."), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_D{

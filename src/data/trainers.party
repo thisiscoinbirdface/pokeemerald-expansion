@@ -1858,22 +1858,40 @@ Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_A ===
-Name: JULIE
+Name: Sentry
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Cooltrainer MACEY
 Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Bayleef
+Palpitoad
+Ability: Water Absorb
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Bubblebeam
+- Flail
+- Mud Shot
+- Uproar
 
-Vulpix-Alola
-Level: 32
+Quilava
+Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Swift
+- Fire Spin
+- Smokescreen
+- Endure
+
+Lairon
+Level: 32
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Protect
+- Iron Head
+- Rock Slide
+- Take Down
 
 === TRAINER_MIRROHEXT_B ===
 Name: BROOKE
@@ -2513,7 +2531,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 
 === TRAINER_PELLUCA_CITY_GYM_B ===
-Name: Jamin
+Name: JL
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -2521,16 +2539,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Clauncher
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Basculin
+Lampent
 Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Mareanie
-Level: 39
+Delphox @ Leftovers
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Dreepy
+Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
@@ -2729,19 +2747,16 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EXT_C ===
-Name: Palanc
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Name: Grim
+Class: Backpacker
+Pic: Backpacker
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 19
-
-Carbink
-Level: 20
+Mimikyu
+Level: 21
 
 
 === TRAINER_PELLUCA_QWILSQUAD_A ===

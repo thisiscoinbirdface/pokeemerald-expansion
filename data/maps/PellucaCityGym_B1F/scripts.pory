@@ -91,7 +91,7 @@ script PellucaGym_Trainer_Gabrielle{
 //Cooltrainer
 script PellucaGym_Trainer_B{
     trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_B, format("What's a wimp like you doing here? This is a tough gym for elite trainers only!"), format("You're not a wimp!"))
-    msgbox(format("Jania uses strong WATER type Pokémonon home ground. You'd better be prepared!"), MSGBOX_NPC)
+    msgbox(format("Jania uses strong WATER type Pokémon. You'd better be prepared!\p...\pWhy am I using FIRE types then?\pNone of your business!"), MSGBOX_NPC)
     end
 }
 //The rest are all swimmers

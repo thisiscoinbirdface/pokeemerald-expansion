@@ -33,8 +33,8 @@ script Route3_Ext_NPC1{
 }
 
 script Route3_Ext_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE3_EXT_C, format("Hoho! Fancy seeing another explorer! But you won't take any of my spoils!"), "I didn't want to explore this!")
-    msgbox(format("I wonder what secrets lie in these caverns..."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_ROUTE3_EXT_C, format("My Pokémon played a prank on me and now I'm lost in these caves!"), "Lost and defeated!")
+    msgbox(format("I love my Mimikyu but its so naughty!"), MSGBOX_NPC)
 }
 
 
