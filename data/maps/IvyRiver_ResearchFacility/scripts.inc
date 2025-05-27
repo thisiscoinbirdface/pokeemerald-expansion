@@ -909,7 +909,7 @@ IvyRiver_Ranger_NPC_B_Text_0:
 IvyRiver_Ranger_NPC_C_Text_0:
 # 368 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "The CrazyTrain 2.0 is incredible!\n"
-	.string "It boosts all of a Pokemon's stats.$"
+	.string "It boosts all of a Pokémon's stats.$"
 
 IvyRiver_Ranger_NPC_D_Text_0:
 # 372 "data//maps/IvyRiver_ResearchFacility/scripts.pory"

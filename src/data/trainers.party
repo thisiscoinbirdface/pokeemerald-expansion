@@ -1860,7 +1860,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MIRROHEXT_A ===
 Name: Sentry
 Class: Cooltrainer
-Pic: Cooltrainer MACEY
+Pic: Cooltrainer M
 Gender: Female
 Music: Cool
 Items: Hyper Potion
@@ -1946,7 +1946,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
 === TRAINER_MIRROHEXT_E ===
-Name: Anaya
+Name: Junipurr
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1954,13 +1954,35 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Sneasel-Hisui
+Dreepy
+Ability: Infiltrator
 Level: 30
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Dragon Tail
+- Sucker Punch
+- Quick Attack
+- Facade
 
-Gurdurr
-Level: 31
+Tinkatuff
+Level: 30
+Nature: Adamant
+Ability: Mold breaker
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Play Rough
+- Flash Cannon
+- Ice Hammer
+- Foul Play
+
+Braixen
+Level: 32
+Nature: Timid
+Ability: Blaze
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Flamethrower
+- Will o Wisp
+- Sunny Day
+- Grass Knot
+
 
 === TRAINER_MIRROHEXT_F ===
 Name: Ringer
@@ -2957,25 +2979,24 @@ Level: 46
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_C ===
-Name: Pariah
+Name: Babeneitor
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Cooltrainer M
 Gender: Male
-Music: Swimmer
+Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Fearow
-Level: 44
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Scolipede
-Level: 46
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Feraligatr
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+Nature: Jolly
 Level: 47
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+-Head Smash
+-Flare Blitz
+-Extreme Speed
+-Wild Charge 
+
 
 
 === TRAINER_RIVETSHORE_GYM_D ===

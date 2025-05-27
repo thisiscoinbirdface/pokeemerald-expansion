@@ -234,17 +234,16 @@ Route3_Ext_NPC1_Text_0:
 
 Route3_Ext_Trainer_A_Text_0:
 # 36 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "Hoho! Fancy seeing another explorer!\n"
-	.string "But you won't take any of my spoils!$"
+	.string "My Pokémon played a prank on me and now\n"
+	.string "I'm lost in these caves!$"
 
 Route3_Ext_Trainer_A_Text_1:
 # 36 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "I didn't want to explore this!$"
+	.string "Lost and defeated!$"
 
 Route3_Ext_Trainer_A_Text_2:
 # 37 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "I wonder what secrets lie in these\n"
-	.string "caverns...$"
+	.string "I love my Mimikyu but its so naughty!$"
 
 Route3_Ext_Stone_A_Text_0:
 # 47 "data//maps/Route3_Underpass_Extended/scripts.pory"

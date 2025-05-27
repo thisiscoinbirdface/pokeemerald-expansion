@@ -197,10 +197,10 @@ script Rivetshore_Gym_Trainer_B{
     releaseall
     end
 }
-//cooltrainer F
+//cooltrainer M - baneneitor
 script Rivetshore_Gym_Trainer_C{
-    trainerbattle_single(TRAINER_RIVETSHORE_GYM_C, format("Are you a serious trainer? Or just goofing around?"), format("Yeah, you're serious alright!"))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_C, format("My partner and I grew up together. We even made it all the way to the final gym. You can't break our bond!"), format("You broke our bond!"))
+    msgbox(format("Losing to you fires me and Arcanine up even more!"))
     releaseall
     end
 }

@@ -348,9 +348,11 @@ PellucaGym_Trainer_B_Text_1:
 
 PellucaGym_Trainer_B_Text_2:
 # 94 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Jania uses strong WATER type\n"
-	.string "Pokémonon home ground. You'd better be\l"
-	.string "prepared!$"
+	.string "Jania uses strong WATER type Pokémon.\n"
+	.string "You'd better be prepared!\p"
+	.string "...\p"
+	.string "Why am I using FIRE types then?\p"
+	.string "None of your business!$"
 
 PellucaGym_Trainer_C_Text_0:
 # 100 "data//maps/PellucaCityGym_B1F/scripts.pory"

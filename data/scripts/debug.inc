@@ -143,13 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    getplayerxy VAR_TEMP_2, VAR_TEMP_3
-    warp MAP_UNCHARTED_ISLAND, VAR_TEMP_2, VAR_TEMP_3
+    warp MAP_SILVERSUN_CITY_SOMBER_HQ, 42, 17
 	release
 	end
 
 Debug_EventScript_Script_3::
-    warp MAP_SILVERSUN_CITY_SOMBER_HQ, 42, 17	
+	trainerbattle_no_intro TRAINER_HEIDI, Debug_EventScript_Text_OffensiveIVs
 	release
 	end
 
