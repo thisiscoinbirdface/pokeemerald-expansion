@@ -20,7 +20,7 @@ GastreeCity_House1_Buneary::
 # 16 "data//maps/GastreeCity_House1/scripts.pory"
 	msgbox GastreeCity_House1_Buneary_Text_1
 # 17 "data//maps/GastreeCity_House1/scripts.pory"
-	giveitem ITEM_CHARTI_BERRY, 2
+	giveitem ITEM_CHARTI_BERRY, 3
 # 18 "data//maps/GastreeCity_House1/scripts.pory"
 	setflag FLAG_GASTREE_HOUSE1_BUNEARY
 GastreeCity_House1_Buneary_1:

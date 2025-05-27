@@ -450,7 +450,7 @@ script GastreeCity_NPC9{
         lockall
         faceplayer    
         playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)        
-        msgbox(format("Skee~~"))
+        msgbox(format("Skee!!"))
         releaseall
         end
     }

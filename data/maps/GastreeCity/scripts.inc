@@ -1178,7 +1178,7 @@ GastreeCity_EventScripts_SkittyTrigger3_Text_1:
 
 GastreeCity_NPC_Skitty_Text_0:
 # 453 "data//maps/GastreeCity/scripts.pory"
-	.string "Skee~~$"
+	.string "Skee!!$"
 
 GastreeCity_Poltchageist_Text_0:
 # 461 "data//maps/GastreeCity/scripts.pory"

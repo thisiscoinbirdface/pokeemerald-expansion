@@ -2,7 +2,7 @@ raw`
     .set LOCALID_MOXIE, 4
     .set LOCALID_MELEA, 13
     .set LOCALID_VINIEL, 16
-    .set LOCALID_AMPHAROS, 18
+    .set LOCALID_MANECTRIC, 18
 `
 
 mapscripts MirrohPeak_MapScripts{}
@@ -106,13 +106,13 @@ script MirrohPeak_EventScript_Viniel{
     applymovement(14, moves(emote_exclamation_mark face_down))
     applymovement(15, moves(emote_exclamation_mark face_down))
     applymovement(17, moves(emote_exclamation_mark face_down))
-    applymovement(LOCALID_AMPHAROS, moves(emote_exclamation_mark face_down))
+    applymovement(LOCALID_MANECTRIC, moves(emote_exclamation_mark face_down))
     applymovement(LOCALID_VINIEL, moves(emote_exclamation_mark face_down))
     waitmovement(0)
     delay(24)
 
     speakername("Viniel")
-    msgbox(format("Who are you? Are you another grunt? C'mon, Ampharos and I can take all six of you together!"))
+    msgbox(format("Who are you? Are you another grunt? C'mon, Manectric and I can take all six of you together!"))
     release    
     applymovement(17, moves(emote_question_mark))  
     waitmovement(0)  
@@ -138,18 +138,18 @@ script MirrohPeak_EventScript_Viniel{
     msgbox(format("So you're an enemy of theirs?\pAn enemy of an enemy is a friend!\pTrainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the great people of Winterlily Hollow.\pSo I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
     release
     delay(16)
-    playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_MANECTRIC, CRY_MODE_NORMAL)
     applymovement(11, moves(face_down))
     applymovement(14, moves(face_up))
     applymovement(15, moves(face_right))
     applymovement(17, moves(face_right))
     applymovement(LOCALID_VINIEL, moves(face_left))
-    applymovement(LOCALID_AMPHAROS, moves(jump_in_place_left))
+    applymovement(LOCALID_MANECTRIC, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)
 
     speakername("Viniel")
-    msgbox(format("Ampharos is raring to go! Now c'mon you cowards - I'm going to shock some sense into all four of you together!"))
+    msgbox(format("Manectric is raring to go! Now c'mon you cowards - I'm going to shock some sense into all four of you together!"))
     release
 
     setflag(FLAG_MIRROHPEAK_VINIEL_CUTSCENE)

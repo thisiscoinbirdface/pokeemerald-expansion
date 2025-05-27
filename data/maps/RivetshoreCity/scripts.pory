@@ -148,7 +148,7 @@ script RivetshoreCity_Assembly_Trigger{
     //raazi says we'll wait for viniel and carona
     applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
     movedelay
-    msgbox_delay("Raazi", format("We should wait for Viniel and Carona however. Without Medicham and Ampharos, we'll lose a lot of firepower."))
+    msgbox_delay("Raazi", format("We should wait for Viniel and Carona however. Without Medicham and Manectric, we'll lose a lot of firepower."))
     applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Detective", format("Time is of the essence, Raazi.\nWe need someone to go now."))

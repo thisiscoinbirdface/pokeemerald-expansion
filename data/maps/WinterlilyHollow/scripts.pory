@@ -28,7 +28,7 @@ script WinterlilyHollow_OnFrame{
             applymovement(LOCALID_VINIEL, moves(walk_down*2))
             waitmovement(0)
             speakername("Viniel")
-            msgbox(format("Ampharos and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\pSo that's what's been going on.\nPoor Professor Tenebris.\pI heard about her disappearance on\nthe news just the other day.\pNews comes late here, since we're in such a remote corner of Cormoria.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though.\pHahaha!"))
+            msgbox(format("Manectric and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\pSo that's what's been going on.\nPoor Professor Tenebris.\pI heard about her disappearance on\nthe news just the other day.\pNews comes late here, since we're in such a remote corner of Cormoria.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though.\pHahaha!"))
             release
             delay(24)
             speakername("Viniel")

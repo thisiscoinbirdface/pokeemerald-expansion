@@ -241,7 +241,7 @@ Rivetshore_Gym_Trainer_C::
 # 202 "data//maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_C, Rivetshore_Gym_Trainer_C_Text_0, Rivetshore_Gym_Trainer_C_Text_1
 # 203 "data//maps/RivetshoreQuarry/scripts.pory"
-	msgbox Rivetshore_Gym_Trainer_A_Text_2
+	msgbox Rivetshore_Gym_Trainer_C_Text_2
 # 204 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
@@ -642,12 +642,18 @@ Rivetshore_Gym_Trainer_B_Text_1:
 
 Rivetshore_Gym_Trainer_C_Text_0:
 # 202 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "Are you a serious trainer? Or just\n"
-	.string "goofing around?$"
+	.string "My partner and I grew up together. We\n"
+	.string "even made it all the way to the final\l"
+	.string "gym. You can't break our bond!$"
 
 Rivetshore_Gym_Trainer_C_Text_1:
 # 202 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "Yeah, you're serious alright!$"
+	.string "You broke our bond!$"
+
+Rivetshore_Gym_Trainer_C_Text_2:
+# 203 "data//maps/RivetshoreQuarry/scripts.pory"
+	.string "Losing to you fires me and Arcanine up\n"
+	.string "even more!$"
 
 Rivetshore_Gym_Trainer_D_Text_0:
 # 209 "data//maps/RivetshoreQuarry/scripts.pory"

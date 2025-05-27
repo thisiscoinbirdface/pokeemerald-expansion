@@ -152,7 +152,7 @@ script MirrohBaseCamp_Martha_OfferMegaStone{
         "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
         "Abomasite", "Gyaradosite", "Mawilite", "Gardevoirite", "Galladite",
         "Houndoominite", "Metagrossite", "Scizorite", "Kangaskhanite", "Pinsirite",
-        "Sharpedonite", "Ampharosite", "Manectricite", "Absolite", "Lucarionite"
+        "Sharpedonite", "Manectricite", "Absolite", "Lucarionite"
     )
 
     if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_MEDICHAMITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
@@ -171,10 +171,9 @@ script MirrohBaseCamp_Martha_OfferMegaStone{
     if (var(VAR_RESULT) == 13) {setvar(VAR_0x8006, ITEM_KANGASKHANITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
     if (var(VAR_RESULT) == 14) {setvar(VAR_0x8006, ITEM_PINSIRITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
     if (var(VAR_RESULT) == 15) {setvar(VAR_0x8006, ITEM_SHARPEDONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
-    if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_AMPHAROSITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
-    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
-    if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
-    if (var(VAR_RESULT) == 19) {setvar(VAR_0x8006, ITEM_LUCARIONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}    
+    if (var(VAR_RESULT) == 16) {setvar(VAR_0x8006, ITEM_MANECTITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 17) {setvar(VAR_0x8006, ITEM_ABSOLITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}
+    if (var(VAR_RESULT) == 18) {setvar(VAR_0x8006, ITEM_LUCARIONITE) goto(MirrohBaseCamp_Martha_GiveMegaStone)}    
 }
 
 script MirrohBaseCamp_Martha_GiveMegaStone{
