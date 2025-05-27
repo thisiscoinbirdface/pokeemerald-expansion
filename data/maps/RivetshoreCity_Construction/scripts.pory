@@ -7,11 +7,11 @@ mapscripts RivetshoreCity_Construction_MapScripts{}
 
 //lobby
 script RivetshoreCity_Construction_Nurse{
-    msgbox(format("Welcome to Rivetshore Construction!\nIf you're here about the contract job, please head upstairs to speak to our CEO."), MSGBOX_NPC)
+    msgbox(format("Welcome to Rivetshore Construction!\nIf you're here about the job, please head upstairs to speak to our CEO."), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Construction_NPC1{
-    msgbox(format("I came from Pelluca City. Our bridge was build by Rivetshore Construction!"), MSGBOX_NPC)
+    msgbox(format("I came from Pelluca City. Our bridge was built by Rivetshore Construction!"), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Construction_NPC2{
@@ -19,26 +19,26 @@ script RivetshoreCity_Construction_NPC2{
     end
 }
 script RivetshoreCity_Construction_NPC3{
-    msgbox(format("Are you the contractor the CEO hired?\pNo?\pThe CEO was looking for a trainer to help him out."), MSGBOX_NPC)
+    msgbox(format("Are you the contractor the CEO hired?\pNo?\pThe CEO was looking for a Pokemon trainer to help him out."), MSGBOX_NPC)
     end
 }
 
 //employees meeting
 script RivetshoreCity_Construction_NPC4{
     lockall
-    msgbox(format("...so based on this years financials, we're not likely to...\pSounds like a important meeting.\nBetter not disturb them!"))
+    msgbox(format("...so based on this years financial estimate, we're not likely to...\pSounds like a important meeting.\nBetter not disturb them!"))
     releaseall
     end
 }
 script RivetshoreCity_Construction_NPC5{
     lockall
-    msgbox(format("...while I hear what you're saying, our clients would never...\pSounds like a important meeting.\nBetter not disturb them!"))
+    msgbox(format("...while I hear what you're saying, our stakeholders would never...\pSounds like a important meeting.\nBetter not disturb them!"))
     releaseall
     end
 }
 script RivetshoreCity_Construction_NPC6{
     lockall
-    msgbox(format("...but the underlying factor here is the lack of concrete...\pSounds like a important meeting.\nBetter not disturb them!"))
+    msgbox(format("...but the underlying factor here is the lack of any concrete...\pSounds like a important meeting.\nBetter not disturb them!"))
     releaseall
     end
 }

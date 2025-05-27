@@ -86,8 +86,8 @@ Route8_Trainer_A_Text_2:
 
 Route8_Trainer_B_Text_0:
 # 14 "data//maps/Route8/scripts.pory"
-	.string "Open waters and pleasant sunlight! Who\n"
-	.string "could ask for more?$"
+	.string "Open waters and pleasant sunlight!\n"
+	.string "Who could ask for more?$"
 
 Route8_Trainer_B_Text_1:
 # 14 "data//maps/Route8/scripts.pory"
@@ -134,14 +134,15 @@ Route8_Trainer_E_Text_0:
 Route8_NPC1_Text_0:
 # 46 "data//maps/Route8/scripts.pory"
 	.string "Leader Raazi in Rivetshore uses the\n"
-	.string "strongest items for his Pokémon! I'm\l"
-	.string "here to find some items for mine too.$"
+	.string "strongest items for his Pokémon!\p"
+	.string "I'm here to find some for mine too.$"
 
 Route8_NPC2_Text_0:
 # 50 "data//maps/Route8/scripts.pory"
-	.string "I'm on the way to Rivetshore City. I\n"
-	.string "need to deliver a contract to\l"
-	.string "Rivetshore Construction.$"
+	.string "I need deliver a contract to Rivetshore\n"
+	.string "Construction.\p"
+	.string "Why won't this stupid rock get out of my\n"
+	.string "way?$"
 
 Route8_NPC3_Text_0:
 # 54 "data//maps/Route8/scripts.pory"

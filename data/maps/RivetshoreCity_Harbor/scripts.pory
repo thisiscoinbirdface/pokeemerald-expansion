@@ -16,7 +16,7 @@ script RivetshoreCity_Harbor_LoadBox{
 }
 
 script RivetshoreCity_Harbor_Attendant{
-    msgbox(format("Sorry, you need a Cruise Ticket to board the ship."), MSGBOX_NPC)
+    msgbox(format("Sorry, you need a Cruise Ticket to board the S.S. Elegant."), MSGBOX_NPC)
     end
 }
 
@@ -28,21 +28,21 @@ script RivetshoreCity_Harbor_Attendant{
 script RivetshoreCity_Harbor_Inger{
     lockall
     speakername("Inger")
-    msgbox(format("Go Minior! Use Rollout!"))
+    msgbox(format("Go Minior! Roll her Tauros flat!"))
     releaseall
     end
 }
 script RivetshoreCity_Harbor_Minior{
     lockall
     playmoncry(SPECIES_MINIOR, CRY_MODE_NORMAL)
-    msgbox(format("miiiiii!!!\pMinior is curling up into a ball...but it's already a ball!\pHow does that work?"))
+    msgbox(format("miiiiii!!!\pMinior is curling up into a ball...\nbut it's already a ball!\pHow does that work?"))
     releaseall
     end
 }
 script RivetshoreCity_Harbor_Ariana{
     lockall
     speakername("Ariana")
-    msgbox(format("Tauros! Flame Charge right through the Rollout!"))
+    msgbox(format("Tauros! Flame Charge through the Rollout!"))
     releaseall
     end
 }

@@ -38,7 +38,8 @@ script RivetshoreQuarry_Percy{
 
     setwildbattle(SPECIES_MIMIKYU, 40)
     dowildbattle
-
+    removeobject(33)
+    
     //move perrserker out
     msgbox(format("Percy goes back to its owner!"))
     release
@@ -49,6 +50,7 @@ script RivetshoreQuarry_Percy{
 
     //flags quests    
     setflag(FLAG_HIDE_RIVETSHORE_PERCY)
+    setflag(FLAG_HIDE_RIVETSHORE_MIMIKYU)
     clearflag(FLAG_HIDE_CONSTRUCTION_HQ_PERCY)
     setvar(VAR_RIVETSHORE_CEO_QUEST, 2)
 

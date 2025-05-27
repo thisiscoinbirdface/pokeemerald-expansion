@@ -17,6 +17,11 @@
       "map": "MAP_FENNILAHL_TOWN",
       "offset": -8,
       "direction": "up"
+    },
+    {
+      "map": "MAP_VICTORY_ROAD_CORMORIA",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [

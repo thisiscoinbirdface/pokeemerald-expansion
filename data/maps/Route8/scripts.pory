@@ -11,7 +11,7 @@ script Route8_Trainer_A{
 }
 //swimmer
 script Route8_Trainer_B{
-    trainerbattle_single(TRAINER_ROUTE8_B, format("Open waters and pleasant sunlight! Who could ask for more?"), format("I didn't ask for this!"))
+    trainerbattle_single(TRAINER_ROUTE8_B, format("Open waters and pleasant sunlight!\nWho could ask for more?"), format("I didn't ask for this!"))
     msgbox(format("We aren't allowed to go out to sea from Rivetshore City. This is the best we can do."))
     releaseall
     end
@@ -43,11 +43,11 @@ script Route8_Trainer_D{
 
 //NPCs
 script Route8_NPC1{
-    msgbox(format("Leader Raazi in Rivetshore uses the strongest items for his Pokémon! I'm here to find some items for mine too."), MSGBOX_NPC)
+    msgbox(format("Leader Raazi in Rivetshore uses the strongest items for his Pokémon!\pI'm here to find some for mine too."), MSGBOX_NPC)
     end
 }
 script Route8_NPC2{
-    msgbox(format("I'm on the way to Rivetshore City. I need to deliver a contract to Rivetshore Construction."), MSGBOX_NPC)
+    msgbox(format("I need deliver a contract to Rivetshore Construction.\pWhy won't this stupid rock get out of my way?"), MSGBOX_NPC)
     end
 }
 script Route8_NPC3{

@@ -83,7 +83,7 @@ script RivetshoreCity_Assembly_Trigger{
     //Who's missing?
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("I don't see all of you, though.\nWho's missing?"))
+    msgbox_delay("Detective", format("I don't see all of you though.\nWho's missing?"))
     applymovement(LOCALID_GLORIA, moves(jump_in_place_left))
     movedelay
     msgbox_delay("Gloria", format("Viniel and Carona sent word - they're on their way. They'll take some time, considering how remote they are."))
@@ -93,31 +93,31 @@ script RivetshoreCity_Assembly_Trigger{
     //we've all but given up hope on the prof
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the situation as it stands.\pYou all know about the disappearance of Professor Tenebris in connection with the dreamstones and Team Somber's involvement in this case."))
+    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the current situation as it stands.\pYou all know about the disappearance of Professor Tenebris in connection with the dreamstones and Team Somber's involvement in this case."))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Raazi", format("Yes."))
     applymovement(LOCALID_JANIA, moves(emote_exclamation_mark))
     movedelay
-    msgbox_delay("Jania", format("I hope the Professor is safe, wherever she is."))
+    msgbox_delay("Jania", format("I hope the Professor is safe,\nwherever she is."))
     applymovement(LOCALID_INGER, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Inger", format("Just you watch - I'm going to teach Team Somber a lesson!"))        
 
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found.\pNobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recorded by the Pokémon Ranger Institute yesterday.\pThe heat signatures were off the charts. According to the Ranger Head, it's like the beginning of a region-wide drought."))
+    msgbox_delay("Detective", format("We regret to say that despite all our efforts, not a single trace of the Professor has yet been found.\pNobody has seen her anywhere. Our working theory is that Team Somber is holding her captive somewhere...\p...and that leads us to today.\pA massive uptick in geological activity was recorded by the Pokémon Ranger Institute yesterday.\pThe heat signatures were off the charts. Ravine, the Ranger Head says it's like the start of a region-wide drought."))
     
     applymovement(LOCALID_JANIA, moves(emote_question_mark))
     movedelay
     msgbox_delay("Jania", format("The location?"))    
-    msgbox_delay("Detective", format("An uncharted island off the coast of Rivetshore City."))
+    msgbox_delay("Detective", format("An uncharted island off the coast.\nFurther east from here."))
 
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
     movedelay
-    msgbox_delay("Raazi", format("That explains the heatwave we had here yesterday.\pIt must have been Team Somber's doing."))
+    msgbox_delay("Raazi", format("So that explains the heatwave\nwe had here yesterday.\pIt must have been Team Somber's doing."))
 
-    msgbox_delay("Detective", format("Kohla here has been working the case.\pHe's handed over his Gym Leader duties to the next Ace Rookie, and is now pursuing Team Somber."))
+    msgbox_delay("Detective", format("Kohla here has been working the case.\pHe's handed over his Gym Leader duties to the next Ace Rookie, and is now pursuing Team Somber full-time."))
     applymovement(LOCALID_DET1, moves(face_right))
     movedelay
     msgbox_delay("Detective", format("Kohla - go on and tell them about the Ancient Terror."))
@@ -143,7 +143,7 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_DET1, moves(face_down))
     movedelay
-    msgbox_delay("Detective", format("Yes...which is why we need the combined power of the eight strongest trainers in all of Cormoria.\pWe think heatwave has something to do with the Ancient Terror...and we also believe worse is on the way.\pSo we need to get to this uncharted island ASAP!"))
+    msgbox_delay("Detective", format("Yes...which is why we need the combined power of the eight strongest trainers in all of Cormoria.\pWe think this heatwave has something to do with the Ancient Terror...and we also believe worse is on the way.\pThat's why we need to get to this\nuncharted island ASAP!"))
 
     //raazi says we'll wait for viniel and carona
     applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
@@ -152,7 +152,7 @@ script RivetshoreCity_Assembly_Trigger{
     applymovement(LOCALID_DET1, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Detective", format("Time is of the essence, Raazi.\nWe need someone to go now."))
-    msgbox_delay("Raazi", format("Then I propose Kohla.\pHe's a star and I can personally vouch for his strength."))
+    msgbox_delay("Raazi", format("Then I propose Kohla.\pHe's a star and I can personally\nvouch for his strength."))
     applymovement(LOCALID_INGER, moves(emote_question_mark))
     movedelay
     msgbox_delay("Inger", format("Did he beat you, Raazi?"))
@@ -160,17 +160,17 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_DET1, moves(emote_question_mark))
     movedelay
-    msgbox_delay("Detective", format("Those in favour of sending Kohla ahead?"))
+    msgbox_delay("Detective", format("Right then. Those in favour of sending Kohla ahead?"))
 
     msgbox_delay("Inger", format("Yeah!"))
     msgbox_delay("Ariana", format("Of course!"))
     msgbox_delay("Gloria", format("Without question."))
     msgbox_delay("Jania", format("He's the best choice."))
-    msgbox_delay("Raazi", format("Needless to say, detective, we're all in favour.\pKohla, you have the respect of all the other leaders in Cormoria. You're the one we're counting on.\pI'm not going to ask you whether you're upto the task...because I know you are."))
+    msgbox_delay("Raazi", format("Needless to say, detective,\nwe're all in favour.\pKohla, you have the respect of all the other leaders in Cormoria.\pWe're counting on you.\pI'm not going to ask you whether you're upto the task...because I know you are."))
 
     applymovement(LOCALID_DET1, moves(face_down))
     movedelay
-    msgbox_delay("Detective", format("Kohla - you're coming with us on the speedboat then.\pThere's a cruise ship that's scheduled to leave soon. The other Gym Leaders can come on that.\pLet's get to it!"))
+    msgbox_delay("Detective", format("Kohla - you're coming with us on the speedboat then.\pThere's a cruise ship that's scheduled to leave soon. The other Gym Leaders can follow us on that.\pLet's get to it!"))
 
     //exit
     applymovement(LOCALID_KOHLA, moves(walk_up))
@@ -201,7 +201,7 @@ script RivetshoreCity_Assembly_Trigger{
 
     applymovement(LOCALID_RAAZI, moves(jump_in_place_right))
     movedelay
-    msgbox_delay("Raazi", format("I'm heading back to the quarry. The rest of you can wait in the harbor."))
+    msgbox_delay("Raazi", format("I'm heading back to the quarry.\nThe rest of you - wait in the harbor."))
 
     applymovement(LOCALID_JANIA, moves(walk_right *2))
     applymovement(LOCALID_ARIANA, moves(walk_up * 2))
@@ -254,7 +254,7 @@ script RivetshoreCity_Assembly_Trigger{
 
 
 script RivetshoreCity_NPC_StorageBaySailor{
-    msgbox(format("This is the storage bay. We're busy loading up on supplies for the S.S. Elegant!\pWhat - you trying to stow away?\pScram!"), MSGBOX_NPC)
+    msgbox(format("This is the storage bay. We're loading supplies for the S.S. Elegant!\pWhat - you trying to stow away?\pScram!"), MSGBOX_NPC)
     end
 }
 
@@ -265,7 +265,7 @@ script RivetshoreCity_NPC_1{
 }
 //beach fisherman
 script RivetshoreCity_NPC_2{
-    msgbox(format("They've turned this town into a monstrosity! It used to be a beautiful fishing spot until they built the quarry and harbor and drove all the Pokémon away."), MSGBOX_NPC)
+    msgbox(format("They've turned this town into a monstrosity! It used to be a beautiful fishing spot until they built the quarry and drove all the Pokémon away."), MSGBOX_NPC)
     end
 }
 //lady outside PC
@@ -280,7 +280,7 @@ script RivetshoreCity_NPC_4{
 }
 //boy at market
 script RivetshoreCity_NPC_5{
-    msgbox(format("You won't find this stuff anywhere else!"), MSGBOX_NPC)
+    msgbox(format("You won't find the stuff they sell here anywhere else!"), MSGBOX_NPC)
     end
 }
 //gentleman south shore
