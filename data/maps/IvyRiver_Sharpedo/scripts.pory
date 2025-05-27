@@ -61,7 +61,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
     waitmovement(0)
     speakername("Jania")
-    message(format("This should keep it at bay while it calms down."))
+    message(format("This should be enough to keep it at bay while it calms down."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
     waitmovement(0)
     waitmessage
@@ -77,7 +77,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Jania")
-    msgbox(format("You can't use Poké Balls on it - it's too enraged. So whatever you want to do, be careful.\pI'm heading back to my gym.\nSee you."))
+    msgbox(format("You can't use Poké Balls on it - it's too enraged right now.\pwhatever you want to do, be careful.\pI'm heading back to my gym. See you."))
     release
 
     fadescreen(FADE_TO_BLACK)

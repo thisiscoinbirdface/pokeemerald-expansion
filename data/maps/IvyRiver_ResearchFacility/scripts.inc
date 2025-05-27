@@ -685,8 +685,8 @@ IvyRiver_Ranger_FirstQuest_Text_10:
 
 IvyRiver_Ranger_FirstQuest_Text_11:
 # 88 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	.string "{PLAYER}! I hope you're settling in\n"
-	.string "well here.$"
+	.string "Hello {PLAYER}! I hope you're settling\n"
+	.string "in well here.$"
 
 IvyRiver_Ranger_FirstQuest_Reward_Text_0:
 # 96 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
@@ -734,7 +734,7 @@ IvyRiver_Ranger_TaurosTrigger_Text_1:
 # 167 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "See this here Tauros? This is my baby\n"
 	.string "right here - raised him all by myself, I\l"
-	.string "did! This one's been traiend specially\l"
+	.string "did! This one's been trained specially\l"
 	.string "to take Rangers up and down Mt. Mirroh\l"
 	.string "in a flash! You can head straight to\l"
 	.string "Pelluca City or even to the Route 6 HQ\l"

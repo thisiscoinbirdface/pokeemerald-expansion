@@ -334,8 +334,8 @@ PellucaGym_Gabrielle_Trigger0_Text_0:
 
 PellucaGym_Trainer_Gabrielle_Text_0:
 # 88 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Jania's a really strong leader. But you\n"
-	.string "might stand a chance!$"
+	.string "Jania's a really strong leader.\n"
+	.string "But you might stand a chance!$"
 
 PellucaGym_Trainer_B_Text_0:
 # 93 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -356,9 +356,9 @@ PellucaGym_Trainer_B_Text_2:
 
 PellucaGym_Trainer_C_Text_0:
 # 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "I've been training to withstand these\n"
-	.string "strong currents. You could use some\l"
-	.string "training too!$"
+	.string "I've been training with Jania to\n"
+	.string "withstand these strong currents.\p"
+	.string "You could use some training too!$"
 
 PellucaGym_Trainer_C_Text_1:
 # 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -457,28 +457,27 @@ PellucaGym_Red_Text_4:
 
 PellucaGym_Red_Text_5:
 # 189 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Most detectives use NORMAL type\n"
-	.string "Pokémon that are comfortable in a\l"
-	.string "variety of urban situations. FIGHTING\l"
-	.string "type Pokémon should do well here, and\l"
-	.string "GHOST type Pokémon are immune to\l"
-	.string "NORMAL type attacks!$"
+	.string "Jania's Gyarados isn't her only threat!\n"
+	.string "Her Clawitzer wears Choice Specs, which\l"
+	.string "means it hits harder, but it can only\l"
+	.string "use one move. Could you use that to\l"
+	.string "turn the tables?$"
 
 PellucaGym_Red_Text_6:
 # 191 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Greetings trainer! Good to see you\n"
-	.string "again. First, have some water.$"
+	.string "Greetings champ-in-the-making! Good\n"
+	.string "to see you again.\p"
+	.string "First, have some water.$"
 
 PellucaGym_Red_Text_7:
 # 193 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "This Gym is managed by the Detective\n"
-	.string "Academy Student Council. Most\l"
-	.string "detectives use NORMAL type Pokémon\l"
-	.string "that are comfortable in a variety of\l"
-	.string "urban situations. FIGHTING type\l"
-	.string "Pokémon should do well here, and GHOST\l"
-	.string "type Pokémon are immune to NORMAL type\l"
-	.string "attacks!$"
+	.string "Jania built this massive underground\n"
+	.string "cave to let her Gyarados go wild in\l"
+	.string "battles! But Gyarados isn't her only\l"
+	.string "threat! Her Clawitzer wears Choice\l"
+	.string "Specs, which means it hits harder, but\l"
+	.string "it can only use one move. Could you use\l"
+	.string "that to turn the tables?$"
 
 PellucaGym_Leader_Text_0:
 # 231 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -491,9 +490,8 @@ PellucaGym_Leader_Text_1:
 
 PellucaGym_Leader_Text_2:
 # 239 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Welcome, trainer, to the Pelluca City\n"
-	.string "Gym. My name is Jania and I am the\l"
-	.string "leader.\p"
+	.string "Hello {PLAYER}. Welcome to the\n"
+	.string "Pelluca City Gym.\p"
 	.string "The flow of water is calm, but never\n"
 	.string "underestimate its strength. Let's see\l"
 	.string "if you can ride the wave to victory!$"
@@ -519,8 +517,8 @@ PellucaGym_Leader_Text_6:
 PellucaGym_Leader_Text_7:
 # 263 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "The eighth and last Gym Badge is given\n"
-	.string "by Raazi of Rivetshore City. Head south\l"
-	.string "from here down the river.\p"
+	.string "by Raazi of Rivetshore City.\p"
+	.string "Head south from here down the river.\p"
 	.string "Good luck, {PLAYER}.$"
 
 PellucaCity_Gym_Text_Gab_Intro::
@@ -528,7 +526,7 @@ PellucaCity_Gym_Text_Gab_Intro::
 	.string "{PLAYER}! Are you here to challenge\n"
 	.string "Jania too? I've decided on my next goal\l"
 	.string "- to collect all eight badges and\l"
-	.string "become the PokémonChampion!$"
+	.string "become the Pokémon Champion!$"
 
 PellucaCity_Gym_Text_Gab_Defeat::
 # 81 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -539,7 +537,7 @@ PellucaCity_Gym_Text_Gab_PostDefeat::
 	.string "Adjusting to life after Team Somber\n"
 	.string "hasn't been easy. But battling trainers\l"
 	.string "and getting badges has given me and\l"
-	.string "Zorua something to focus on! We didn't\l"
-	.string "win today, but mark my words - we'll beat\l"
-	.string "you at the PokémonChampionships,\l"
-	.string "{PLAYER}!$"
+	.string "Zorua something to focus on!\p"
+	.string "We didn't win today, but mark my words -\n"
+	.string "we'll beat you at the Pokémon\l"
+	.string "Championships, {PLAYER}!$"

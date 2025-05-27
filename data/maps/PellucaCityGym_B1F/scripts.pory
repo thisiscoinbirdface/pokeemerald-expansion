@@ -76,16 +76,16 @@ script PellucaGym_Gabrielle_Trigger2{
     end
 }
 text PellucaCity_Gym_Text_Gab_Intro{
-    format("{PLAYER}! Are you here to challenge Jania too? I've decided on my next goal - to collect all eight badges and become the PokémonChampion!")
+    format("{PLAYER}! Are you here to challenge Jania too? I've decided on my next goal - to collect all eight badges and become the Pokémon Champion!")
 }
 text PellucaCity_Gym_Text_Gab_Defeat{
     format("I was so close!")
 }
 text PellucaCity_Gym_Text_Gab_PostDefeat{
-    format("Adjusting to life after Team Somber hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on! We didn't win today, but mark my words - we'll beat you at the PokémonChampionships, {PLAYER}!")
+    format("Adjusting to life after Team Somber hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on!\pWe didn't win today, but mark my words - we'll beat you at the Pokémon Championships, {PLAYER}!")
 }
 script PellucaGym_Trainer_Gabrielle{
-    msgbox(format("Jania's a really strong leader. But you might stand a chance!"), MSGBOX_NPC)
+    msgbox(format("Jania's a really strong leader.\nBut you might stand a chance!"), MSGBOX_NPC)
     end
 }
 //Cooltrainer
@@ -97,7 +97,7 @@ script PellucaGym_Trainer_B{
 //The rest are all swimmers
 //first lady on the left
 script PellucaGym_Trainer_C{
-    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_C, format("I've been training to withstand these strong currents. You could use some training too!"), format("You don't need training!"))
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_C, format("I've been training with Jania to withstand these strong currents.\pYou could use some training too!"), format("You don't need training!"))
     msgbox(format("Jania won't go easy on anyone!"), MSGBOX_NPC)
     end
 }
@@ -186,11 +186,11 @@ script PellucaGym_Red {
         }
     } else { 
         if (flag(FLAG_PELLUCAGYM_SPENSER_WATER)){
-            msgbox(format("Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
+            msgbox(format("Jania's Gyarados isn't her only threat! Her Clawitzer wears Choice Specs, which means it hits harder, but it can only use one move. Could you use that to turn the tables?"))
         } else {
-            msgbox(format("Greetings trainer! Good to see you again.  First, have some water."))
+            msgbox(format("Greetings champ-in-the-making! Good to see you again.\pFirst, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("This Gym is managed by the Detective Academy Student Council. Most detectives use NORMAL type Pokémon that are comfortable in a variety of urban situations. FIGHTING type Pokémon should do well here, and GHOST type Pokémon are immune to NORMAL type attacks!"))
+            msgbox(format("Jania built this massive underground cave to let her Gyarados go wild in battles! But Gyarados isn't her only threat! Her Clawitzer wears Choice Specs, which means it hits harder, but it can only use one move. Could you use that to turn the tables?"))
             setflag(FLAG_PELLUCAGYM_SPENSER_WATER)
         }
     }
@@ -236,7 +236,7 @@ script PellucaGym_Leader {
         
         //Intro
         speakername("Jania")
-        msgbox(format("Welcome, trainer, to the Pelluca City Gym. My name is Jania and I am the leader.\pThe flow of water is calm, but never underestimate its strength. Let's see if you can ride the wave to victory!"))
+        msgbox(format("Hello {PLAYER}. Welcome to the\nPelluca City Gym.\pThe flow of water is calm, but never underestimate its strength. Let's see if you can ride the wave to victory!"))
         //Battle
         trainerbattle_no_intro(TRAINER_PELLUCA_CITY_GYM_LEADER, format("You're one with the tides!"))
 
@@ -260,7 +260,7 @@ script PellucaGym_Leader {
         
         //Bye-bye
         speakername("Jania") 
-        msgbox(format("The eighth and last Gym Badge is given by Raazi of Rivetshore City. Head south from here down the river.\pGood luck, {PLAYER}."))
+        msgbox(format("The eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))
         release
 
     }

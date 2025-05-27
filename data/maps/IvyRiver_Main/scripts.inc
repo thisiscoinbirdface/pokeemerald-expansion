@@ -596,7 +596,7 @@ IvyRiver_Trainer_B::
 # 409 "data//maps/IvyRiver_Main/scripts.pory"
 	trainerbattle_single TRAINER_IVY_RIVER_B, IvyRiver_Trainer_B_Text_0, IvyRiver_Trainer_B_Text_1
 # 415 "data//maps/IvyRiver_Main/scripts.pory"
-	msgbox IvyRiver_Trainer_A_Text_2
+	msgbox IvyRiver_Trainer_B_Text_2
 # 416 "data//maps/IvyRiver_Main/scripts.pory"
 	release
 	end
@@ -1120,36 +1120,38 @@ IvyRiver_Main_GreenScarf_Text_16:
 
 IvyRiver_Trainer_A_Text_0:
 # 398 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "I didn't expect to see another trainer\n"
-	.string "here. Are you collecting rare Pokémon\l"
-	.string "too?$"
+	.string "Are you collecting rare Pokémon too?$"
 
 IvyRiver_Trainer_A_Text_1:
 # 399 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Because Ivy River is untouched by\n"
-	.string "people, rare Pokémon can thrive.$"
+	.string "Wow, your Pokémon are rare!$"
 
 IvyRiver_Trainer_A_Text_2:
 # 402 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "$"
+	.string "Because Ivy River is untouched by\n"
+	.string "people, rare Pokémon can thrive.$"
 
 IvyRiver_Trainer_B_Text_0:
 # 411 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Swimming in this river is only for the\n"
-	.string "toughest swimmers like me. I don't even\l"
-	.string "need HM Flip Turn to swim!$"
+	.string "toughest swimmers like me.\p"
+	.string "I don't even need the HM Flip Turn!$"
 
 IvyRiver_Trainer_B_Text_1:
 # 412 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "I bet I could beat you if you weren't\n"
 	.string "surfing on your Pokémon!$"
 
+IvyRiver_Trainer_B_Text_2:
+# 415 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Swimming is the best full-body\n"
+	.string "exercise!$"
+
 IvyRiver_Trainer_C_Text_0:
 # 424 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Every four years, the strongest\n"
-	.string "trainers in Cormoria compete in the\l"
-	.string "Pokémon Championship. You're looking at\l"
-	.string "the future winner!$"
+	.string "Every four years, the best trainers\n"
+	.string "compete in the Pokémon Championship.\p"
+	.string "You're looking at the future winner!$"
 
 IvyRiver_Trainer_C_Text_1:
 # 425 "data//maps/IvyRiver_Main/scripts.pory"
@@ -1169,7 +1171,6 @@ IvyRiver_NPC1_Text_0:
 
 IvyRiver_NPC2_Text_0:
 # 440 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Most of the people you'll meet here are\n"
-	.string "either collecting rare Pokémon...or\l"
-	.string "lost!\p"
+	.string "Most people you'll meet here are either\n"
+	.string "collecting rare Pokémon...or lost!\p"
 	.string "Like me...$"

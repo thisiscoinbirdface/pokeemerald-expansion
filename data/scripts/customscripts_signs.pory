@@ -365,3 +365,9 @@ script WhiteSign_IvyRiver_RangerInstitute{
     msgbox(format("The Pokémon Ranger Institute\nIvy River Branch"), MSGBOX_SIGN)
     end
 }
+
+script WhiteSign_IvyRiver_Main{
+    msgbox(format("Ivy River\n{UP_ARROW} Winterlily Hollow.{DOWN_ARROW} Pelluca City."), MSGBOX_SIGN)
+    end
+}
+

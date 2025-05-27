@@ -1178,7 +1178,7 @@ script PellucaCity_PostGymEvent_Trigger{
         waitmovement(0)
         delay(16)
         speakername("Jania")
-        msgbox(format("Where am I going?\pTo Rivetshore City. All the Gym Leaders have been called there."))
+        msgbox(format("Where am I going?\pI'm going to Rivetshore City.\nAll the Gym Leaders have been called there."))
         release
         
         special(SpawnCameraObject)
@@ -1194,6 +1194,7 @@ script PellucaCity_PostGymEvent_Trigger{
         setobjectxy(LOCALID_GAB, 37, 8)
         applymovement(LOCALID_GAB, moves(walk_down emote_exclamation_mark))
         waitmovement(0)
+        closedoor(37, 8)
         delay(16)
         speakername("Gabrielle")
         msgbox(format("{PLAYER}! Over here!"))
@@ -1212,7 +1213,7 @@ script PellucaCity_PostGymEvent_Trigger{
         waitmovement(0)
         delay(16)
         speakername("Gabrielle")
-        msgbox(format("You're off the case?\p...\pSo?\pThe {PLAYER} I know wouldn't be stopped by something like that!\pYou taught me the difference between right and wrong. Have you forgotten why you're doing this in the first place?\pIt was to find YOUR Professor. You don't need anybody's permission!\p...\pI'm not letting you give up, {PLAYER}.\pI'm going to Rivetshore City to get the final gym badge. It's south of Pelluca City - you can get there by surfing.\pI'll be waiting for you!"))
+        msgbox(format("You're off the case?\p...\pSo?\pThe {PLAYER} I know wouldn't be stopped by something like that!\pYou taught me the difference between right and wrong. Have you forgotten why you're doing this in the first place?\pIt was to find YOUR Professor.\nYou don't need anyone's permission!\p...\pI'm not letting you give up, {PLAYER}.\pI'm going to Rivetshore City to get the final gym badge. It's south of Pelluca City - you can get there by surfing.\pI'll be waiting for you!"))
         release
         delay(16)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))

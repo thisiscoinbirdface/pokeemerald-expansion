@@ -85,7 +85,7 @@ script IvyRiver_Ranger_FirstQuest{
         end
     }
 
-    msgbox(format("{PLAYER}! I hope you're settling in well here."), MSGBOX_NPC)
+    msgbox(format("Hello {PLAYER}! I hope you're settling in well here."), MSGBOX_NPC)
 
     releaseall
     end
@@ -164,7 +164,7 @@ script IvyRiver_Ranger_TaurosTrigger{
 
         applymovement(LOCALID_TAUROS_RANGER, moves(face_up))
         waitmovement(0)
-        msgbox(format("See this here Tauros? This is my baby right here - raised him all by myself, I did! This one's been traiend specially to take Rangers up and down Mt. Mirroh in a flash! You can head straight to Pelluca City or even to the Route 6 HQ if you like! All Candidates can use it."))
+        msgbox(format("See this here Tauros? This is my baby right here - raised him all by myself, I did! This one's been trained specially to take Rangers up and down Mt. Mirroh in a flash! You can head straight to Pelluca City or even to the Route 6 HQ if you like! All Candidates can use it."))
         release
 
         setflag(FLAG_RANGER_TAUROS_USE)

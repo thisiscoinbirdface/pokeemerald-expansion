@@ -93,7 +93,7 @@ script RangerInstitute_1F_Interviewer{
         goto(RangerInstitute_1F_InterviewQ1)
 
     } else {
-        msgbox(format("I'm the interviewer on duty. We get so many applicants!"))        
+        msgbox(format("I'm the interviewer on duty.\pWe get so many applicants!"))        
     }
 
     releaseall
@@ -265,15 +265,15 @@ mart RangerInstitute_1F_TM_Mart{
 script RangerInstitute_1F_BlockerUpstairs{
     if (var(VAR_RANGER_INSTITUTE) == 0){
         msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."), MSGBOX_NPC)
+        end
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 1){
         msgbox(format("Sorry, only Pokémon Rangers are allowed inside. If you'd like to apply, you can print an application form using the PC by the entrance."), MSGBOX_NPC)
+        end
     }
 
-    if (var(VAR_RANGER_INSTITUTE) == 2){
-        msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit!\lSo I'll be keeping an eye on you."), MSGBOX_NPC)
-    }
+    msgbox(format("You're not a fully-fledged Pokémon Ranger yet - just a Recruit!\lSo I'll be keeping an eye on you."), MSGBOX_NPC)
     end
 }
 
@@ -442,13 +442,9 @@ script RangerInstitute_2F_EventScript_Welcome{
 
 
 script RangerInstitute_Ravine{
-    lockall
-    faceplayer
-    if (var(VAR_RANGER_INSTITUTE) == 3){
-        speakername("Ravine")
-        msgbox(format("How's my newest Recruit doing? Have you delivered the package yet?"), MSGBOX_NPC)
-        end
-    }
+    speakername("Ravine")
+    msgbox(format("How's my newest member doing?"))
+    end
 }
 
 script RangerInstitute_2F_NPC_1{

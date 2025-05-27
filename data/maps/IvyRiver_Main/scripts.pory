@@ -395,11 +395,11 @@ script IvyRiver_Main_Zarude_Legendary{
 script IvyRiver_Trainer_A {
     trainerbattle_single(
         TRAINER_IVY_RIVER_A, 
-        format("I didn't expect to see another trainer here. Are you collecting rare Pokémon too?"), 
-        format("Because Ivy River is untouched by people, rare Pokémon can thrive.")
+        format("Are you collecting rare Pokémon too?"), 
+        format("Wow, your Pokémon are rare!")
     )
     
-    msgbox(format(""))
+        msgbox(format("Because Ivy River is untouched by people, rare Pokémon can thrive."))
     release
     end
 }
@@ -408,11 +408,11 @@ script IvyRiver_Trainer_A {
 script IvyRiver_Trainer_B {
     trainerbattle_single(
         TRAINER_IVY_RIVER_B, 
-        format("Swimming in this river is only for the toughest swimmers like me. I don't even need HM Flip Turn to swim!"), 
+        format("Swimming in this river is only for the toughest swimmers like me.\pI don't even need the HM Flip Turn!"), 
         format("I bet I could beat you if you weren't surfing on your Pokémon!")
     )
     
-    msgbox(format(""))
+    msgbox(format("Swimming is the best full-body exercise!"))
     release
     end
 }
@@ -421,7 +421,7 @@ script IvyRiver_Trainer_B {
 script IvyRiver_Trainer_C {
     trainerbattle_single(
         TRAINER_IVY_RIVER_C, 
-        format("Every four years, the strongest trainers in Cormoria compete in the Pokémon Championship. You're looking at the future winner!"), 
+        format("Every four years, the best trainers compete in the Pokémon Championship.\pYou're looking at the future winner!"), 
         format("You're championship material!")
     )
     
@@ -437,7 +437,7 @@ script IvyRiver_NPC1{
     end
 }
 script IvyRiver_NPC2{
-    msgbox(format("Most of the people you'll meet here are either collecting rare Pokémon...or lost!\pLike me..."), MSGBOX_NPC)
+    msgbox(format("Most people you'll meet here are either collecting rare Pokémon...or lost!\pLike me..."), MSGBOX_NPC)
     end
 }
 

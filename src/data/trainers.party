@@ -2706,31 +2706,32 @@ AI: Smart Trainer / Ace Pokemon
 
 Pelipper @ Damp Rock
 Ability: Drizzle
-Level: 42
+Level: 41
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Rain Dance
 - Hurricane
 - Muddy Water
 
-Toxapex @ Black Sludge
+Clawitzer @ Choice Specs
+Ability: Mega Launcher
 Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Water Pulse
+
+Toxapex @ Black Sludge
+Level: 42
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Muddy Water
 - Toxic
 - Baneful Bunker
 - Recover
 
-Overqwil
-Ability: Swift Swim
+Toedscruel @ Leftovers
 Level: 43
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Clawitzer
-Level: 44
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
 Gyarados @ Gyaradosite
-Level: 46
+Level: 45
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 
