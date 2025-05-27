@@ -6129,10 +6129,10 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2524
-            .species = SPECIES_AMPHAROS,
+            .species = SPECIES_MANECTRIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2524
-            .heldItem = ITEM_AMPHAROSITE,
+            .heldItem = ITEM_MANECTITE,
 #line 2526
             .iv = TRAINER_PARTY_IVS(30, 15, 30, 15, 0, 30),
 #line 2525

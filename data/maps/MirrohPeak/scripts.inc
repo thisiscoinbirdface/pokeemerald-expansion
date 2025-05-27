@@ -7,7 +7,7 @@
 # 4 "data//maps/MirrohPeak/scripts.pory"
     .set LOCALID_VINIEL, 16
 # 5 "data//maps/MirrohPeak/scripts.pory"
-    .set LOCALID_AMPHAROS, 18
+    .set LOCALID_MANECTRIC, 18
 
 MirrohPeak_MapScripts::
 	.byte 0
@@ -154,7 +154,7 @@ MirrohPeak_EventScript_Viniel::
 # 108 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 17, MirrohPeak_EventScript_Viniel_Movement_4
 # 109 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_4
+	applymovement LOCALID_MANECTRIC, MirrohPeak_EventScript_Viniel_Movement_4
 # 110 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_4
 # 111 "data//maps/MirrohPeak/scripts.pory"
@@ -214,7 +214,7 @@ MirrohPeak_EventScript_Viniel::
 # 140 "data//maps/MirrohPeak/scripts.pory"
 	delay 16
 # 141 "data//maps/MirrohPeak/scripts.pory"
-	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	playmoncry SPECIES_MANECTRIC, CRY_MODE_NORMAL
 # 142 "data//maps/MirrohPeak/scripts.pory"
 	applymovement 11, MirrohPeak_EventScript_Viniel_Movement_7
 # 143 "data//maps/MirrohPeak/scripts.pory"
@@ -226,7 +226,7 @@ MirrohPeak_EventScript_Viniel::
 # 146 "data//maps/MirrohPeak/scripts.pory"
 	applymovement LOCALID_VINIEL, MirrohPeak_EventScript_Viniel_Movement_10
 # 147 "data//maps/MirrohPeak/scripts.pory"
-	applymovement LOCALID_AMPHAROS, MirrohPeak_EventScript_Viniel_Movement_0
+	applymovement LOCALID_MANECTRIC, MirrohPeak_EventScript_Viniel_Movement_0
 # 148 "data//maps/MirrohPeak/scripts.pory"
 	waitmovement 0
 # 149 "data//maps/MirrohPeak/scripts.pory"
@@ -1012,7 +1012,7 @@ MirrohPeak_EventScript_Viniel_Text_7:
 MirrohPeak_EventScript_Viniel_Text_8:
 # 115 "data//maps/MirrohPeak/scripts.pory"
 	.string "Who are you? Are you another grunt?\n"
-	.string "C'mon, Ampharos and I can take all six\l"
+	.string "C'mon, Manectric and I can take all six\l"
 	.string "of you together!$"
 
 MirrohPeak_EventScript_Viniel_Text_9:
@@ -1045,7 +1045,7 @@ MirrohPeak_EventScript_Viniel_Text_12:
 
 MirrohPeak_EventScript_Viniel_Text_13:
 # 152 "data//maps/MirrohPeak/scripts.pory"
-	.string "Ampharos is raring to go! Now c'mon you\n"
+	.string "Manectric is raring to go! Now c'mon you\n"
 	.string "cowards - I'm going to shock some sense\l"
 	.string "into all four of you together!$"
 

@@ -565,7 +565,7 @@ WinterlilyHollow_OnFrame_Text_1:
 
 WinterlilyHollow_OnFrame_Text_2:
 # 31 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Ampharos and I took all those grunts\n"
+	.string "Manectric and I took all those grunts\n"
 	.string "down! Hahaha! But when I went to the\l"
 	.string "peak, everyone had gone!\p"
 	.string "...\p"

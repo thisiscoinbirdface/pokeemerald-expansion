@@ -929,7 +929,7 @@ RivetshoreCity_Assembly_Trigger_Text_29:
 # 151 "data//maps/RivetshoreCity/scripts.pory"
 	.string "We should wait for Viniel and Carona\n"
 	.string "however. Without Medicham and\l"
-	.string "Ampharos, we'll lose a lot of firepower.$"
+	.string "Manectric, we'll lose a lot of firepower.$"
 
 RivetshoreCity_Assembly_Trigger_Text_30:
 # 154 "data//maps/RivetshoreCity/scripts.pory"

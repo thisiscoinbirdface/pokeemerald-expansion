@@ -248,11 +248,11 @@ WinterlilyHollowGym_LeaderBattle_6:
 	end
 
 
-WinterlilyHollow_Gym_Ampharos::
+WinterlilyHollow_Gym_Manectric::
 # 208 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	playmoncry SPECIES_MANECTRIC, CRY_MODE_NORMAL
 # 209 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	msgbox WinterlilyHollow_Gym_Ampharos_Text_0, MSGBOX_NPC
+	msgbox WinterlilyHollow_Gym_Manectric_Text_0, MSGBOX_NPC
 	end
 
 
@@ -347,7 +347,7 @@ WinterlilyHollow_Gym_Trainer_A_Text_1:
 
 WinterlilyHollow_Gym_Trainer_A_Text_2:
 # 58 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Leader Viniel's Ampharos overloads the\n"
+	.string "Leader Viniel's Manectric overloads the\n"
 	.string "atmosphere with ions, creating electric\l"
 	.string "terrain here.$"
 
@@ -427,7 +427,7 @@ WinterlilyHollow_Gym_Trainer_F_Text_2:
 # 109 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "Leader Viniel's right up ahead.\n"
 	.string "He put me here to make sure weak\l"
-	.string "trainers don't disturb his Ampharos.$"
+	.string "trainers don't disturb his Manectric.$"
 
 WinterlilyHollow_Gym_NPC1_Text_0:
 # 120 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -455,7 +455,7 @@ WinterlilyHollowGym_LeaderBattle_Text_1:
 
 WinterlilyHollowGym_LeaderBattle_Text_2:
 # 159 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Go Ampharos! More! More!\p"
+	.string "Go Manectric! More! More!\p"
 	.string "Wait - it looks like we've got a guest.$"
 
 WinterlilyHollowGym_LeaderBattle_Text_3:
@@ -517,9 +517,9 @@ WinterlilyHollowGym_LeaderBattle_Text_10:
 # 196 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "Keep your spirits high, {PLAYER}!$"
 
-WinterlilyHollow_Gym_Ampharos_Text_0:
+WinterlilyHollow_Gym_Manectric_Text_0:
 # 209 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "The air around Ampharos is crackling\n"
+	.string "The air around Manectric is crackling\n"
 	.string "with electricity!$"
 
 WinterlilyHollowGym_Red_Text_0:
