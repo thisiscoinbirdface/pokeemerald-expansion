@@ -41,73 +41,73 @@ VR_Trainer_A::
 
 
 VR_Trainer_B::
-# 36 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_B, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
 # 37 "data//maps/VictoryRoadCormoria/scripts.pory"
+	trainerbattle_single TRAINER_VICTORY_ROAD_B, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
+# 38 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_C::
-# 41 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 43 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_C, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 42 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 44 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_D::
-# 46 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 49 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_D, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 47 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 50 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_E::
-# 51 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 55 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_E, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 52 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 56 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_F::
-# 56 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_F, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 57 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_A_Text_0
-	end
-
-
-VR_Trainer_G::
 # 61 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_G, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
+	trainerbattle_single TRAINER_VICTORY_ROAD_F, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
 # 62 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
-VR_Trainer_H::
-# 66 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_H, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
+VR_Trainer_G::
 # 67 "data//maps/VictoryRoadCormoria/scripts.pory"
+	trainerbattle_single TRAINER_VICTORY_ROAD_G, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
+# 68 "data//maps/VictoryRoadCormoria/scripts.pory"
+	msgbox VR_Trainer_A_Text_0
+	end
+
+
+VR_Trainer_H::
+# 73 "data//maps/VictoryRoadCormoria/scripts.pory"
+	trainerbattle_single TRAINER_VICTORY_ROAD_H, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
+# 74 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_I::
-# 71 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 79 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_I, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 72 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 80 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 
 
 VR_Trainer_J::
-# 76 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 85 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_J, VR_Trainer_A_Text_0, VR_Trainer_A_Text_0
-# 77 "data//maps/VictoryRoadCormoria/scripts.pory"
+# 86 "data//maps/VictoryRoadCormoria/scripts.pory"
 	msgbox VR_Trainer_A_Text_0
 	end
 

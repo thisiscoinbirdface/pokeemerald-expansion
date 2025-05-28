@@ -2218,7 +2218,7 @@ Pineco
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Furret
+Ursaring
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3366,11 +3366,11 @@ AI: Basic Trainer
 
 Marowak-Alola
 Level: 52
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate-Alola
 Level: 54
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE1_STRONG_B ===
 Name: Sana
@@ -3383,15 +3383,16 @@ AI: Basic Trainer
 
 Noivern
 Level: 53
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pelipper
 Level: 53
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Unfezant
 Level: 54
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_ROUTE1_STRONG_C ===
 Name: Manya
@@ -3404,58 +3405,78 @@ AI: Basic Trainer
 
 Orbeetle
 Level: 53
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lokix
 Level: 53
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_A ===
 Name: Koichi
-Class: Black Belt
-Pic: Black Belt
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sinistea
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 28
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Araquanid
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Coalossal
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
 
 === TRAINER_VICTORY_ROAD_B ===
-Name: NOB
-Class: Black Belt
-Pic: Black Belt
+Name: Nobs
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Toxtricity
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Seismitoad
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_VICTORY_ROAD_C ===
-Name: NOB
-Class: Black Belt
-Pic: Black Belt
+Name: Slob
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machoke
-Level: 27
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Yanmega
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Wyrdeer
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_VICTORY_ROAD_D ===
-Name: NOB
+Name: Pinto
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -3463,126 +3484,136 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Lilligant
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Oranguru
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_E ===
-Name: NOB
-Class: Black Belt
-Pic: Black Belt
+Name: Anaya
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Weezing-Galar
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Alomomola
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_VICTORY_ROAD_F ===
-Name: NOB
-Class: Black Belt
-Pic: Black Belt
+Name: Nicotay
+Class: Hiker
+Pic: Hiker
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 33
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Glimmora
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 33
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Golem-Alola
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 33
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Dugtrio-Alola
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machamp @ Black Belt
-Level: 33
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_VICTORY_ROAD_G ===
 Name: YUJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Makuhita
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Braviary-Hisui
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bombirdier
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Skarmory
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Talonflame
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_VICTORY_ROAD_H ===
-Name: DAISUKE
-Class: Black Belt
-Pic: Black Belt
+Name: Saisu
+Class: Backpacker
+Pic: Backpacker
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Machop
-Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Furret
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Forretress
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lycanroc-Midnight
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
 
 === TRAINER_VICTORY_ROAD_I ===
-Name: ATSUSHI
-Class: Black Belt
-Pic: Black Belt
+Name: Kirk
+Class: Rich Boy
+Pic: Rich Boy
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Hariyama
-Level: 32
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Charizard @ Charizardite-X
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_J ===
-Name: KIRK
-Class: Guitarist
-Pic: Guitarist
+Name: Pia
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Electrike
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Quick Attack
-- Thunder Wave
-- Spark
-- Leer
+Masquerain
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Voltorb
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Charge
-- Shock Wave
-- Screech
+Frosmoth
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Goodra
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_K ===
 Name: Grunt
@@ -3666,55 +3697,76 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHAMPIONSHIP_A ===
-Name: DALTON
-Class: Guitarist
-Pic: Guitarist
-Gender: Male
+Name: Chara
+Class: Cool Girl
+Pic: Cool Girl
+Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
-Magnemite
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ursaluna
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Whismur
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Typhlosion-Hisui
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magnemite
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Forretress
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Barraskewda
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Altaria @ Altarianite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_CHAMPIONSHIP_B ===
-Name: DALTON
-Class: Guitarist
-Pic: Guitarist
+Name: 
+Class: Bug Maniac
+Pic: Bug Maniac
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
-Magnemite
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Scolipede
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Loudred
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Amoonguss
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magnemite
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Glimmora
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Toxapex
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pinsir @ Pinsirite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_CHAMPIONSHIP_C ===
-Name: DALTON
+Name: Exor
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
 Magneton
 Level: 31
@@ -3729,38 +3781,70 @@ Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_CHAMPIONSHIP_D ===
-Name: DALTON
-Class: Guitarist
-Pic: Guitarist
-Gender: Male
+Name: Gabrielle
+Class: Pkmn Trainer 2
+Pic: Somber Grunt F
+Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
-Magneton
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Zoroark-Hisui
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Exploud
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Claydol
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magneton
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Kommo-o
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Milotic
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mawile @ Mawilite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_CHAMPIONSHIP_E ===
-Name: COLE
-Class: Kindler
-Pic: Kindler
+Name: Kohla
+Class: Ace Rookie
+Pic: Wally
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Excadrill
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Aegislash
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Samurott
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Kleavor
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gallade @ Galladite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Ceruledge
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 
 === TRAINER_CHAMPIONSHIP_F ===
 Name: JEFF
