@@ -2,21 +2,43 @@ mapscripts Route6_ZeraoraCave_MapScripts{}
 
 script Route6_Zeraora{
     lockall
-    //save
-    special(SaveGame)
-    waitstate
-    release
 
-    //setflag
-    faceplayer
     playmoncry(SPECIES_ZERAORA, CRY_MODE_NORMAL)
-    waitmoncry
-    setflag(FLAG_ZERAORA)
-
-    setwildbattle(SPECIES_ZERAORA, 40)
-    dowildbattle
+    applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(1, moves(jump_2_down * 3))
+    waitmovement(0)
+    delay(16)
+    
+    playse(SE_EXIT)
     removeobject(1)
+    waitse
 
-    releaseall
+    //flags and end
+    setflag(FLAG_ZERAORA)
+    special(InitRoamer)
+    setseenmon(SPECIES_ZERAORA)
+
     end
+
+    // lockall
+    // //save
+    // special(SaveGame)
+    // waitstate
+    // release
+
+    // //setflag
+    // faceplayer
+    // playmoncry(SPECIES_ZERAORA, CRY_MODE_NORMAL)
+    // waitmoncry
+    // setflag(FLAG_ZERAORA)
+
+    // setwildbattle(SPECIES_ZERAORA, 40)
+    // dowildbattle
+    // removeobject(1)
+
+    // releaseall
+    // end
 }

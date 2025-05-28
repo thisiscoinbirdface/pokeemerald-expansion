@@ -1837,8 +1837,8 @@
       "name": "Route 6",
       "x": 12,
       "y": 4,
-      "width": 5,
-      "height": 1
+      "width": 1,
+      "height": 5
     },
     {
       "map_section": "MAPSEC_RANGER_INSTITUTE",

@@ -159,7 +159,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	setflag FLAG_FINALE_DONE
+	warp MAP_ROUTE6_ZERAORA_CAVE, 7, 11
 	release
 	end
 
