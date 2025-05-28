@@ -15,6 +15,9 @@ mapscripts CarabrueTown_TenebrisLab_Finale_MapScripts{
 script CarabrueTown_TenebrisLab_PostFinale{
     setvar(VAR_TEMP_1, 1)
 
+    setrespawn(HEAL_LOCATION_CARABRUE_TOWN)
+    special(HealPlayerParty)
+
     lockall
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
 
@@ -67,25 +70,71 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("{PLAYER}, you were just incredible. You stood up against huge organisation like Team Somber and fought them off time and again!"))
+    msgbox_delay("Tenebris", format("{PLAYER}, you were just incredible. You stood up against a huge organisation like Team Somber and fought them off  time and again!"))
     
     applymovement(LOCALID_DET1, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Detective", format("And even after you were taken off the case, you did what was right, {PLAYER}.\pWe're in your debt.")) 
+    msgbox_delay("Detective", format("Even after you were taken off the case, you did what was right, {PLAYER}.\pWe're in your debt.")) 
 
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
     msgbox_delay("Tenebris", format("I couldn't be prouder of my newest research associate.\pNow that all of this is finished,\nI'll finally get to know you better.\p...but before you rejoin the lab,\nthere is one last thing to do."))
 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+
+    msgbox_delay("Tenebris", format("The detectives told me that you defeated Leader Raazi.\pYou know what that means, right?\p..."))
+    applymovement(LOCALID_TENE, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("You've qualified for this year's Pokemon Championship!\pThe Championship is held every four years, down at Victory Cape.\pIf you hurry, you might be able to\ncatch a boat off Route 2."))
+
+    msgbox_delay("Tenebris", format("Don't worry - we can start your research work when you're back.\p{PLAYER}, of all the trainers I've known, few have the caliber and drive that you do.\pI know you'll do well at the tournament!"))
+
+    delay(16)
+    msgbox_delay("Detective", format("...\pWell?\pWhat are you waiting for?\pHead to Route 2 and catch a boat to Victory Cape - ASAP!")) 
+
+    //setflags
+    setflag(FLAG_POST_FINALE_CUTSCENE)
+    setflag(FLAG_HIDE_ROUTE1_NORMAL)
+    clearflag(FLAG_HIDE_TENEBRIS_TENEBRIS)
+
+    releaseall
+    end
+}
+
+script TenebrisLab_Finale_Detective{
+    speakername("Detective")
+    msgbox(format("What's taking you so long? I bet Kohla's already reached Victory Cape.\pHow many slow starts do you need to learn your lesson?"), MSGBOX_NPC)
+    end
+}
+script TenebrisLab_Finale_Tenebris{
+    msgbox_delay("Detective", format("I believe in you, {PLAYER}!"))
+    end
 }
 
 
 
 
-
-
+script TenebrisLab_Finale_Scientist_A{
+    msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"), MSGBOX_NPC)
+    end
+}
+script TenebrisLab_Finale_Scientist_B{
+    msgbox(format("The detectives told us the entire story. You're incredible, {PLAYER}!"), MSGBOX_NPC)
+    end
+}
+script TenebrisLab_Finale_Scientist_C{
+    msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"), MSGBOX_NPC)
+    end
+}
+script TenebrisLab_Finale_Gardevoir{
+    playmoncry(SPECIES_GARDEVOIR, CRY_MODE_NORMAL)
+    msgbox(format("Gardevoir regards you intently...\pDid it smile?"), MSGBOX_NPC)
+}
 
 
 

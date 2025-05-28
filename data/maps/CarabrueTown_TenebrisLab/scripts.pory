@@ -569,16 +569,31 @@ script CarabrueTown_TenebrisLab_EventScript_Rue{
 
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist1{
+    if (flag(FLAG_POST_FINALE_CUTSCENE)){
+        msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"))
+        end
+    }
+
     msgbox(format("There's so much work that I don't even know where to start! So I'm just staring at all these books instead."), MSGBOX_NPC)
     end
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist2{
+    if (flag(FLAG_POST_FINALE_CUTSCENE)){
+        msgbox(format("The detectives told us the entire story. You're incredible, {PLAYER}!"))
+        end
+    }
+
     msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."), MSGBOX_NPC)
     end
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist3{
+    if (flag(FLAG_POST_FINALE_CUTSCENE)){
+        msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"))
+        end
+    }
+    
     if (flag(FLAG_LAB_CALLTOACTION)){
         msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"), MSGBOX_NPC)
     } else {
@@ -611,5 +626,8 @@ script CarabrueTown_TenebrisLab_Metagross{
 }
 
 
-
+script CarabrueTown_TenebrisLab_Tenebris{
+    msgbox_delay("Tenebris", format("Go {PLAYER} go!"))
+    end
+}
 

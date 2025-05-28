@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist1",
+      "script": "TenebrisLab_Finale_Scientist_A",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist3",
+      "script": "TenebrisLab_Finale_Scientist_B",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist2",
+      "script": "TenebrisLab_Finale_Scientist_C",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist3",
+      "script": "TenebrisLab_Finale_Tenebris",
       "flag": "0"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist3",
+      "script": "TenebrisLab_Finale_Detective",
       "flag": "0"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CarabrueTown_TenebrisLab_EventScript_Scientist3",
+      "script": "TenebrisLab_Finale_Detective",
       "flag": "0"
     },
     {

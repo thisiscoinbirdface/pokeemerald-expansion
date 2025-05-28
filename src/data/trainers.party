@@ -3412,13 +3412,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_VICTORY_ROAD_A ===
-Name: KOICHI
+Name: Koichi
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 24
@@ -3435,7 +3435,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 19
@@ -3448,7 +3448,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machoke
 Level: 27
@@ -3461,7 +3461,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 29
@@ -3478,7 +3478,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 31
@@ -3499,7 +3499,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 33
@@ -3524,7 +3524,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Makuhita
 Level: 26
@@ -3541,7 +3541,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Machop
 Level: 19
@@ -3554,7 +3554,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Hariyama
 Level: 32
@@ -3567,7 +3567,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Electrike
 Level: 17
@@ -3591,7 +3591,7 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Poochyena
 Level: 31
@@ -3608,7 +3608,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Carvanha
 Level: 32
@@ -3621,7 +3621,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Voltorb
 Level: 17
@@ -3638,7 +3638,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Electrike
 Level: 30
@@ -3655,7 +3655,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Magnemite
 Level: 15

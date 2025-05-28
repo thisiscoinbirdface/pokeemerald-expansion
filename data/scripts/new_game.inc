@@ -343,6 +343,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_RIVETSHORE_MIMIKYU
 	
 	setflag FLAG_HIDE_ROUTE1_STRONG
+	setflag FLAG_HIDE_TENEBRIS_TENEBRIS
 
 
 

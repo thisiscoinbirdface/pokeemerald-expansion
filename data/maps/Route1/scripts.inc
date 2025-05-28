@@ -42,7 +42,7 @@ Route1_TrainerBattle_Strong_B::
 # 40 "data//maps/Route1/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE1_STRONG_B, Route1_TrainerBattle_Strong_B_Text_0, Route1_TrainerBattle_B_Text_1
 # 41 "data//maps/Route1/scripts.pory"
-	msgbox Route1_TrainerBattle_B_Text_2
+	msgbox Route1_TrainerBattle_Strong_B_Text_1
 # 42 "data//maps/Route1/scripts.pory"
 	release
 	end
@@ -110,13 +110,19 @@ Route1_TrainerBattle_B_Text_1:
 
 Route1_TrainerBattle_B_Text_2:
 # 34 "data//maps/Route1/scripts.pory"
-	.string "I guess a good Pokémon team needs type\n"
-	.string "variety!$"
+	.string "I guess a good Pokémon team\p"
+	.string "needs type variety!$"
 
 Route1_TrainerBattle_Strong_B_Text_0:
 # 40 "data//maps/Route1/scripts.pory"
-	.string "I traveled all over Cormoria...\n"
+	.string "Since our last battle,\n"
+	.string "I traveled all over Cormoria...\p"
 	.string "and I still love FLYING types!$"
+
+Route1_TrainerBattle_Strong_B_Text_1:
+# 41 "data//maps/Route1/scripts.pory"
+	.string "I'm going to travel to another region\n"
+	.string "and catch FLYING types there!$"
 
 Route1_TrainerBattle_C_Text_0:
 # 47 "data//maps/Route1/scripts.pory"
@@ -136,4 +142,4 @@ Route1_TrainerBattle_C_Text_2:
 Route1_TrainerBattle_Strong_C_Text_0:
 # 53 "data//maps/Route1/scripts.pory"
 	.string "My BUG types and I have been training\n"
-	.string "so much!$"
+	.string "so much! You'll see!$"
