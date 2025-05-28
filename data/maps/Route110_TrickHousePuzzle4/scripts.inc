@@ -18,7 +18,7 @@ Route110_TrickHousePuzzle4_EventScript_Cora::
 	end
 
 Route110_TrickHousePuzzle4_EventScript_Yuji::
-	trainerbattle_single TRAINER_YUJI, Route110_TrickHousePuzzle4_Text_YujiIntro, Route110_TrickHousePuzzle4_Text_YujiDefeat
+	trainerbattle_single TRAINER_VICTORY_ROAD_G, Route110_TrickHousePuzzle4_Text_YujiIntro, Route110_TrickHousePuzzle4_Text_YujiDefeat
 	msgbox Route110_TrickHousePuzzle4_Text_YujiPostBattle, MSGBOX_AUTOCLOSE
 	end
 

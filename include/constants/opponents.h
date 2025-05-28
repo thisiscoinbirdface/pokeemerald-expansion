@@ -248,15 +248,7 @@
 #define TRAINER_IVY_RIVER_C                 170
 #define TRAINER_IVY_RIVER_D                 171
 
-
-
-
-
-
-
-
-
-
+//Uncharted Island
 #define TRAINER_UNCHARTED_ISLAND_GRUNT_A                        172
 #define TRAINER_UNCHARTED_ISLAND_GRUNT_B                      173
 #define TRAINER_UNCHARTED_ISLAND_GRUNT_C                        174
@@ -264,30 +256,36 @@
 #define TRAINER_UNCHARTED_ISLAND_MOXIE                      176
 #define TRAINER_UNCHARTED_ISLAND_MELEA                      177
 #define TRAINER_UNCHARTED_ISLAND_RUE                      178
+
+//Route 1 Stronger
 #define TRAINER_TAKAO                       179
 #define TRAINER_HITOSHI                     180
 #define TRAINER_KIYO                        181
-#define TRAINER_KOICHI                      182
-#define TRAINER_NOB_1                       183
-#define TRAINER_NOB_2                       184
-#define TRAINER_NOB_3                       185
-#define TRAINER_NOB_4                       186
-#define TRAINER_NOB_5                       187
-#define TRAINER_YUJI                        188
-#define TRAINER_DAISUKE                     189
-#define TRAINER_ATSUSHI                     190
-#define TRAINER_KIRK                        191
-#define TRAINER_GRUNT_AQUA_HIDEOUT_7        192
-#define TRAINER_GRUNT_AQUA_HIDEOUT_8        193
-#define TRAINER_SHAWN                       194
-#define TRAINER_FERNANDO_1                  195
-#define TRAINER_DALTON_1                    196
-#define TRAINER_DALTON_2                    197
-#define TRAINER_DALTON_3                    198
-#define TRAINER_DALTON_4                    199
-#define TRAINER_DALTON_5                    200
-#define TRAINER_COLE                        201
-#define TRAINER_JEFF                        202
+
+//Victory Road
+#define TRAINER_VICTORY_ROAD_A                      182
+#define TRAINER_VICTORY_ROAD_B                       183
+#define TRAINER_VICTORY_ROAD_C                       184
+#define TRAINER_VICTORY_ROAD_D                       185
+#define TRAINER_VICTORY_ROAD_E                       186
+#define TRAINER_VICTORY_ROAD_F                       187
+#define TRAINER_VICTORY_ROAD_G                        188
+#define TRAINER_VICTORY_ROAD_H                     189
+#define TRAINER_VICTORY_ROAD_I                     190
+#define TRAINER_VICTORY_ROAD_J                        191
+#define TRAINER_VICTORY_ROAD_K        192
+#define TRAINER_VICTORY_ROAD_L        193
+#define TRAINER_VICTORY_ROAD_M                       194
+#define TRAINER_VICTORY_ROAD_N                  195
+#define TRAINER_VICTORY_ROAD_O                    196
+
+//Championship
+#define TRAINER_CHAMPIONSHIP_A                    197
+#define TRAINER_CHAMPIONSHIP_B                    198
+#define TRAINER_CHAMPIONSHIP_C                    199
+#define TRAINER_CHAMPIONSHIP_D                    200
+#define TRAINER_CHAMPIONSHIP_E                        201
+#define TRAINER_CHAMPIONSHIP_F                        202
 #define TRAINER_AXLE                        203
 #define TRAINER_JACE                        204
 #define TRAINER_KEEGAN                      205
@@ -311,12 +309,12 @@
 #define TRAINER_BRENT                       223
 #define TRAINER_DONALD                      224
 #define TRAINER_TAYLOR                      225
-#define TRAINER_JEFFREY_1                   226
+#define TRAINER_CHAMPIONSHIP_FREY_1                   226
 #define TRAINER_DEREK                       227
-#define TRAINER_JEFFREY_2                   228
-#define TRAINER_JEFFREY_3                   229
-#define TRAINER_JEFFREY_4                   230
-#define TRAINER_JEFFREY_5                   231
+#define TRAINER_CHAMPIONSHIP_FREY_2                   228
+#define TRAINER_CHAMPIONSHIP_FREY_3                   229
+#define TRAINER_CHAMPIONSHIP_FREY_4                   230
+#define TRAINER_CHAMPIONSHIP_FREY_5                   231
 #define TRAINER_EDWARD                      232
 #define TRAINER_PRESTON                     233
 #define TRAINER_VIRGIL                      234

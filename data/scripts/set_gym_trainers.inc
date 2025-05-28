@@ -26,21 +26,21 @@ DewfordTown_Gym_SetGymTrainers::
 	return
 
 MauvilleCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_KIRK
-	settrainerflag TRAINER_SHAWN
+	settrainerflag TRAINER_VICTORY_ROAD_J
+	settrainerflag TRAINER_VICTORY_ROAD_M
 	settrainerflag TRAINER_BEN
 	settrainerflag TRAINER_VIVIAN
 	settrainerflag TRAINER_ANGELO
 	return
 
 LavaridgeTown_Gym_SetGymTrainers::
-	settrainerflag TRAINER_COLE
+	settrainerflag TRAINER_CHAMPIONSHIP_E
 	settrainerflag TRAINER_AXLE
 	settrainerflag TRAINER_KEEGAN
 	settrainerflag TRAINER_GERALD
 	settrainerflag TRAINER_DANIELLE
 	settrainerflag TRAINER_JACE
-	settrainerflag TRAINER_JEFF
+	settrainerflag TRAINER_CHAMPIONSHIP_F
 	settrainerflag TRAINER_ELI
 	return
 

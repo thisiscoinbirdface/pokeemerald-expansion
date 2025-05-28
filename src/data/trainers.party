@@ -3399,7 +3399,7 @@ Hariyama
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_KOICHI ===
+=== TRAINER_VICTORY_ROAD_A ===
 Name: KOICHI
 Class: Black Belt
 Pic: Black Belt
@@ -3416,7 +3416,7 @@ Machoke
 Level: 28
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_NOB_1 ===
+=== TRAINER_VICTORY_ROAD_B ===
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3429,7 +3429,7 @@ Machop
 Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_NOB_2 ===
+=== TRAINER_VICTORY_ROAD_C ===
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3442,7 +3442,7 @@ Machoke
 Level: 27
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_NOB_3 ===
+=== TRAINER_VICTORY_ROAD_D ===
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3459,7 +3459,7 @@ Machoke
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_NOB_4 ===
+=== TRAINER_VICTORY_ROAD_E ===
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3480,7 +3480,7 @@ Machoke
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_NOB_5 ===
+=== TRAINER_VICTORY_ROAD_F ===
 Name: NOB
 Class: Black Belt
 Pic: Black Belt
@@ -3505,7 +3505,7 @@ Machamp @ Black Belt
 Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_YUJI ===
+=== TRAINER_VICTORY_ROAD_G ===
 Name: YUJI
 Class: Black Belt
 Pic: Black Belt
@@ -3522,7 +3522,7 @@ Machoke
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_DAISUKE ===
+=== TRAINER_VICTORY_ROAD_H ===
 Name: DAISUKE
 Class: Black Belt
 Pic: Black Belt
@@ -3535,7 +3535,7 @@ Machop
 Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ATSUSHI ===
+=== TRAINER_VICTORY_ROAD_I ===
 Name: ATSUSHI
 Class: Black Belt
 Pic: Black Belt
@@ -3548,7 +3548,7 @@ Hariyama
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_KIRK ===
+=== TRAINER_VICTORY_ROAD_J ===
 Name: KIRK
 Class: Guitarist
 Pic: Guitarist
@@ -3572,7 +3572,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Screech
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
+=== TRAINER_VICTORY_ROAD_K ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -3589,7 +3589,7 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
+=== TRAINER_VICTORY_ROAD_L ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -3602,7 +3602,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SHAWN ===
+=== TRAINER_VICTORY_ROAD_M ===
 Name: SHAWN
 Class: Guitarist
 Pic: Guitarist
@@ -3619,7 +3619,7 @@ Magnemite
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_FERNANDO_1 ===
+=== TRAINER_VICTORY_ROAD_N ===
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
@@ -3636,7 +3636,7 @@ Loudred
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DALTON_1 ===
+=== TRAINER_VICTORY_ROAD_O ===
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3653,7 +3653,7 @@ Whismur
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DALTON_2 ===
+=== TRAINER_CHAMPIONSHIP_A ===
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3674,7 +3674,7 @@ Magnemite
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_DALTON_3 ===
+=== TRAINER_CHAMPIONSHIP_B ===
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3695,7 +3695,7 @@ Magnemite
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_DALTON_4 ===
+=== TRAINER_CHAMPIONSHIP_C ===
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3716,7 +3716,7 @@ Magneton
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_DALTON_5 ===
+=== TRAINER_CHAMPIONSHIP_D ===
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -3737,7 +3737,7 @@ Magneton
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_COLE ===
+=== TRAINER_CHAMPIONSHIP_E ===
 Name: COLE
 Class: Kindler
 Pic: Kindler
@@ -3750,7 +3750,7 @@ Numel
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JEFF ===
+=== TRAINER_CHAMPIONSHIP_F ===
 Name: JEFF
 Class: Kindler
 Pic: Kindler
@@ -4158,7 +4158,7 @@ Dustox
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JEFFREY_1 ===
+=== TRAINER_CHAMPIONSHIP_FREY_1 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4196,7 +4196,7 @@ Beautifly
 Level: 16
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_JEFFREY_2 ===
+=== TRAINER_CHAMPIONSHIP_FREY_2 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4217,7 +4217,7 @@ Surskit
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_JEFFREY_3 ===
+=== TRAINER_CHAMPIONSHIP_FREY_3 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4238,7 +4238,7 @@ Masquerain
 Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_JEFFREY_4 ===
+=== TRAINER_CHAMPIONSHIP_FREY_4 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4263,7 +4263,7 @@ Masquerain
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_JEFFREY_5 ===
+=== TRAINER_CHAMPIONSHIP_FREY_5 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
