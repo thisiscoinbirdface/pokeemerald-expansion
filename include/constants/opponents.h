@@ -263,29 +263,31 @@
 #define TRAINER_KIYO                        181
 
 //Victory Road
-#define TRAINER_VICTORY_ROAD_A                      182
-#define TRAINER_VICTORY_ROAD_B                       183
-#define TRAINER_VICTORY_ROAD_C                       184
-#define TRAINER_VICTORY_ROAD_D                       185
-#define TRAINER_VICTORY_ROAD_E                       186
-#define TRAINER_VICTORY_ROAD_F                       187
-#define TRAINER_VICTORY_ROAD_G                        188
-#define TRAINER_VICTORY_ROAD_H                     189
-#define TRAINER_VICTORY_ROAD_I                     190
-#define TRAINER_VICTORY_ROAD_J                        191
-#define TRAINER_VICTORY_ROAD_K        192
-#define TRAINER_VICTORY_ROAD_L        193
-#define TRAINER_VICTORY_ROAD_M                       194
-#define TRAINER_VICTORY_ROAD_N                  195
-#define TRAINER_VICTORY_ROAD_O                    196
+#define TRAINER_VICTORY_ROAD_A              182
+#define TRAINER_VICTORY_ROAD_B              183
+#define TRAINER_VICTORY_ROAD_C              184
+#define TRAINER_VICTORY_ROAD_D              185
+#define TRAINER_VICTORY_ROAD_E              186
+#define TRAINER_VICTORY_ROAD_F              187
+#define TRAINER_VICTORY_ROAD_G              188
+#define TRAINER_VICTORY_ROAD_H              189
+#define TRAINER_VICTORY_ROAD_I              190
+#define TRAINER_VICTORY_ROAD_J              191
+#define TRAINER_VICTORY_ROAD_K              192
+#define TRAINER_VICTORY_ROAD_L              193
+#define TRAINER_VICTORY_ROAD_M              194
+#define TRAINER_VICTORY_ROAD_N              195
+#define TRAINER_VICTORY_ROAD_O              196
 
 //Championship
-#define TRAINER_CHAMPIONSHIP_A                    197
-#define TRAINER_CHAMPIONSHIP_B                    198
-#define TRAINER_CHAMPIONSHIP_C                    199
-#define TRAINER_CHAMPIONSHIP_D                    200
-#define TRAINER_CHAMPIONSHIP_E                        201
-#define TRAINER_CHAMPIONSHIP_F                        202
+#define TRAINER_CHAMPIONSHIP_A              197
+#define TRAINER_CHAMPIONSHIP_B              198
+#define TRAINER_CHAMPIONSHIP_C              199
+#define TRAINER_CHAMPIONSHIP_D              200
+#define TRAINER_CHAMPIONSHIP_E              201
+#define TRAINER_CHAMPIONSHIP_F              202
+
+
 #define TRAINER_AXLE                        203
 #define TRAINER_JACE                        204
 #define TRAINER_KEEGAN                      205
