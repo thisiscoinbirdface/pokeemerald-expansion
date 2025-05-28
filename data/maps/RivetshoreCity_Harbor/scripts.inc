@@ -89,7 +89,7 @@ RivetshoreCity_Harbor_Gloria::
 RivetshoreCity_Harbor_Attendant_Text_0:
 # 19 "data//maps/RivetshoreCity_Harbor/scripts.pory"
 	.string "Sorry, you need a Cruise Ticket to board\n"
-	.string "the ship.$"
+	.string "the S.S. Elegant.$"
 
 RivetshoreCity_Harbor_Inger_Text_0:
 # 30 "data//maps/RivetshoreCity_Harbor/scripts.pory"
@@ -97,13 +97,13 @@ RivetshoreCity_Harbor_Inger_Text_0:
 
 RivetshoreCity_Harbor_Inger_Text_1:
 # 31 "data//maps/RivetshoreCity_Harbor/scripts.pory"
-	.string "Go Minior! Use Rollout!$"
+	.string "Go Minior! Roll her Tauros flat!$"
 
 RivetshoreCity_Harbor_Minior_Text_0:
 # 38 "data//maps/RivetshoreCity_Harbor/scripts.pory"
 	.string "miiiiii!!!\p"
-	.string "Minior is curling up into a ball...but it's\n"
-	.string "already a ball!\p"
+	.string "Minior is curling up into a ball...\n"
+	.string "but it's already a ball!\p"
 	.string "How does that work?$"
 
 RivetshoreCity_Harbor_Ariana_Text_0:
@@ -112,7 +112,7 @@ RivetshoreCity_Harbor_Ariana_Text_0:
 
 RivetshoreCity_Harbor_Ariana_Text_1:
 # 45 "data//maps/RivetshoreCity_Harbor/scripts.pory"
-	.string "Tauros! Flame Charge right through the\n"
+	.string "Tauros! Flame Charge through the\n"
 	.string "Rollout!$"
 
 RivetshoreCity_Harbor_Tauros_Text_0:

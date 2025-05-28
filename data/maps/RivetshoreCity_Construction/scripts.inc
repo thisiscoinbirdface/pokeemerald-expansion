@@ -174,14 +174,13 @@ RivetshoreCity_Construction_CEO_Movement_0:
 RivetshoreCity_Construction_Nurse_Text_0:
 # 10 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Welcome to Rivetshore Construction!\n"
-	.string "If you're here about the contract job,\l"
-	.string "please head upstairs to speak to our\l"
-	.string "CEO.$"
+	.string "If you're here about the job, please\l"
+	.string "head upstairs to speak to our CEO.$"
 
 RivetshoreCity_Construction_NPC1_Text_0:
 # 14 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "I came from Pelluca City. Our bridge was\n"
-	.string "build by Rivetshore Construction!$"
+	.string "built by Rivetshore Construction!$"
 
 RivetshoreCity_Construction_NPC2_Text_0:
 # 18 "data//maps/RivetshoreCity_Construction/scripts.pory"
@@ -192,27 +191,27 @@ RivetshoreCity_Construction_NPC3_Text_0:
 # 22 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Are you the contractor the CEO hired?\p"
 	.string "No?\p"
-	.string "The CEO was looking for a trainer to\n"
-	.string "help him out.$"
+	.string "The CEO was looking for a Pokemon\n"
+	.string "trainer to help him out.$"
 
 RivetshoreCity_Construction_NPC4_Text_0:
 # 29 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	.string "...so based on this years financials,\n"
-	.string "we're not likely to...\p"
+	.string "...so based on this years financial\n"
+	.string "estimate, we're not likely to...\p"
 	.string "Sounds like a important meeting.\n"
 	.string "Better not disturb them!$"
 
 RivetshoreCity_Construction_NPC5_Text_0:
 # 35 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "...while I hear what you're saying, our\n"
-	.string "clients would never...\p"
+	.string "stakeholders would never...\p"
 	.string "Sounds like a important meeting.\n"
 	.string "Better not disturb them!$"
 
 RivetshoreCity_Construction_NPC6_Text_0:
 # 41 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "...but the underlying factor here is the\n"
-	.string "lack of concrete...\p"
+	.string "lack of any concrete...\p"
 	.string "Sounds like a important meeting.\n"
 	.string "Better not disturb them!$"
 

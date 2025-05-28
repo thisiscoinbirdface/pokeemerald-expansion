@@ -387,9 +387,9 @@ script PellucaCityFlooded_SaveCitizen_A{
     msgbox(format("Help! Help! Over here!\p...\pThank you so much - I'm saved!"))
     release
 
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    fadescreen(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
+    fadescreen(FADE_FROM_BLACK)
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -403,9 +403,9 @@ script PellucaCityFlooded_SaveCitizen_B{
     msgbox(format("I can't stay afloat any more!\p...\pJust in time!"))
     release
 
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    fadescreen(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
+    fadescreen(FADE_FROM_BLACK)
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -419,9 +419,9 @@ script PellucaCityFlooded_SaveCitizen_C{
     msgbox(format("Ahh! It's too cold!\p...\pWaah! Wahh! It was so scary!"))
     release
 
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    fadescreen(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
+    fadescreen(FADE_FROM_BLACK)
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -435,9 +435,9 @@ script PellucaCityFlooded_SaveCitizen_D{
     msgbox(format("Help! Someone save me!\p...\pYaay! You came!"))
     release
 
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    fadescreen(FADE_TO_BLACK)
     removeobject(VAR_LAST_TALKED)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
+    fadescreen(FADE_FROM_BLACK)
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -498,7 +498,7 @@ script PellucaCityFlooded_MainEvent{
     delay(16)
 
     speakername("Citizen")
-    msgbox(format("While you two bicker, it's us that pays the price every time! Both of you are strong - a tough trainer and a smart politician - and yet, neither of you bother to actually do anything for us citizens! And now people are in danger and you're still fighting! We've all had it upto here with you two!"))
+    msgbox(format("While you two bicker, it's us that pays the price every time! Both of you are strong - a tough trainer and a smart politician - and yet, neither of you bother to actually do anything for us citizens! And now people are in danger and you're still fighting! We've all had it up to here with you two!"))
     release
 
     applymovement(43, moves(emote_exclamation_mark))   
@@ -1207,7 +1207,7 @@ script PellucaCity_PostGymEvent_Trigger{
         delay(16)
 
         speakername("Gabrielle")
-        msgbox(format("I overheard Jania talking to someone!\p...\pWhat? I wasn't eavesdropping!\nShe was just nearby.\pShe was talking to the eighth Gym Leader. They mentioned Team Somber!\pThey must be upto something in Rivetshore City!\p..."))
+        msgbox(format("I overheard Jania talking to someone!\p...\pWhat? I wasn't eavesdropping!\nShe was just nearby.\pShe was talking to the eighth Gym Leader. They mentioned Team Somber!\pThey must be up to something in Rivetshore City!\p..."))
         release
         applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
         waitmovement(0)

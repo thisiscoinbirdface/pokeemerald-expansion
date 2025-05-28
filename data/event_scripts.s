@@ -1429,3 +1429,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VictoryRoadCormoria/scripts.inc"
 
 	.include "data/maps/WinterlilyHollow_GymB1F_Open/scripts.inc"
+
+	.include "data/maps/Championship/scripts.inc"

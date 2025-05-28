@@ -610,11 +610,11 @@ PellucaCityFlooded_SaveCitizen_A::
 # 388 "data//maps/PellucaCity/scripts.pory"
 	release
 # 390 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 391 "data//maps/PellucaCity/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 392 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 394 "data//maps/PellucaCity/scripts.pory"
 	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED
 # 395 "data//maps/PellucaCity/scripts.pory"
@@ -634,11 +634,11 @@ PellucaCityFlooded_SaveCitizen_B::
 # 404 "data//maps/PellucaCity/scripts.pory"
 	release
 # 406 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 407 "data//maps/PellucaCity/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 408 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 410 "data//maps/PellucaCity/scripts.pory"
 	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED
 # 411 "data//maps/PellucaCity/scripts.pory"
@@ -658,11 +658,11 @@ PellucaCityFlooded_SaveCitizen_C::
 # 420 "data//maps/PellucaCity/scripts.pory"
 	release
 # 422 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 423 "data//maps/PellucaCity/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 424 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 426 "data//maps/PellucaCity/scripts.pory"
 	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED
 # 427 "data//maps/PellucaCity/scripts.pory"
@@ -682,11 +682,11 @@ PellucaCityFlooded_SaveCitizen_D::
 # 436 "data//maps/PellucaCity/scripts.pory"
 	release
 # 438 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 439 "data//maps/PellucaCity/scripts.pory"
 	removeobject VAR_LAST_TALKED
 # 440 "data//maps/PellucaCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 442 "data//maps/PellucaCity/scripts.pory"
 	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED
 # 443 "data//maps/PellucaCity/scripts.pory"
@@ -2578,7 +2578,7 @@ PellucaCityFlooded_MainEvent_Text_10:
 	.string "bother to actually do anything for us\l"
 	.string "citizens! And now people are in danger\l"
 	.string "and you're still fighting! We've all had\l"
-	.string "it upto here with you two!$"
+	.string "it up to here with you two!$"
 
 PellucaCityFlooded_MainEvent_Text_11:
 # 514 "data//maps/PellucaCity/scripts.pory"
@@ -3021,7 +3021,7 @@ PellucaCity_PostGymEvent_Trigger_Text_3:
 	.string "She was just nearby.\p"
 	.string "She was talking to the eighth Gym\n"
 	.string "Leader. They mentioned Team Somber!\p"
-	.string "They must be upto something in\n"
+	.string "They must be up to something in\n"
 	.string "Rivetshore City!\p"
 	.string "...$"
 

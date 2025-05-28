@@ -796,7 +796,7 @@ RivetshoreCity_Assembly_Trigger_Text_7:
 
 RivetshoreCity_Assembly_Trigger_Text_8:
 # 86 "data//maps/RivetshoreCity/scripts.pory"
-	.string "I don't see all of you, though.\n"
+	.string "I don't see all of you though.\n"
 	.string "Who's missing?$"
 
 RivetshoreCity_Assembly_Trigger_Text_9:
@@ -813,8 +813,8 @@ RivetshoreCity_Assembly_Trigger_Text_11:
 # 96 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Unfortunately we don't have time to\n"
 	.string "wait for them.\p"
-	.string "Allow us to explain the situation as it\n"
-	.string "stands.\p"
+	.string "Allow us to explain the current\n"
+	.string "situation as it stands.\p"
 	.string "You all know about the disappearance\n"
 	.string "of Professor Tenebris in connection\l"
 	.string "with the dreamstones and Team Somber's\l"
@@ -830,8 +830,8 @@ RivetshoreCity_Assembly_Trigger_Text_13:
 
 RivetshoreCity_Assembly_Trigger_Text_14:
 # 102 "data//maps/RivetshoreCity/scripts.pory"
-	.string "I hope the Professor is safe, wherever\n"
-	.string "she is.$"
+	.string "I hope the Professor is safe,\n"
+	.string "wherever she is.$"
 
 RivetshoreCity_Assembly_Trigger_Text_15:
 # 105 "data//maps/RivetshoreCity/scripts.pory"
@@ -855,8 +855,8 @@ RivetshoreCity_Assembly_Trigger_Text_17:
 	.string "was recorded by the Pokémon Ranger\l"
 	.string "Institute yesterday.\p"
 	.string "The heat signatures were off the\n"
-	.string "charts. According to the Ranger Head,\l"
-	.string "it's like the beginning of a region-wide\l"
+	.string "charts. Ravine, the Ranger Head says\l"
+	.string "it's like the start of a region-wide\l"
 	.string "drought.$"
 
 RivetshoreCity_Assembly_Trigger_Text_18:
@@ -865,13 +865,13 @@ RivetshoreCity_Assembly_Trigger_Text_18:
 
 RivetshoreCity_Assembly_Trigger_Text_19:
 # 114 "data//maps/RivetshoreCity/scripts.pory"
-	.string "An uncharted island off the coast of\n"
-	.string "Rivetshore City.$"
+	.string "An uncharted island off the coast.\n"
+	.string "Further east from here.$"
 
 RivetshoreCity_Assembly_Trigger_Text_20:
 # 118 "data//maps/RivetshoreCity/scripts.pory"
-	.string "That explains the heatwave we had here\n"
-	.string "yesterday.\p"
+	.string "So that explains the heatwave\n"
+	.string "we had here yesterday.\p"
 	.string "It must have been Team Somber's doing.$"
 
 RivetshoreCity_Assembly_Trigger_Text_21:
@@ -879,7 +879,7 @@ RivetshoreCity_Assembly_Trigger_Text_21:
 	.string "Kohla here has been working the case.\p"
 	.string "He's handed over his Gym Leader duties\n"
 	.string "to the next Ace Rookie, and is now\l"
-	.string "pursuing Team Somber.$"
+	.string "pursuing Team Somber full-time.$"
 
 RivetshoreCity_Assembly_Trigger_Text_22:
 # 123 "data//maps/RivetshoreCity/scripts.pory"
@@ -919,11 +919,11 @@ RivetshoreCity_Assembly_Trigger_Text_28:
 	.string "Yes...which is why we need the combined\n"
 	.string "power of the eight strongest trainers\l"
 	.string "in all of Cormoria.\p"
-	.string "We think heatwave has something to do\n"
-	.string "with the Ancient Terror...and we also\l"
-	.string "believe worse is on the way.\p"
-	.string "So we need to get to this uncharted\n"
-	.string "island ASAP!$"
+	.string "We think this heatwave has something\n"
+	.string "to do with the Ancient Terror...and we\l"
+	.string "also believe worse is on the way.\p"
+	.string "That's why we need to get to this\n"
+	.string "uncharted island ASAP!$"
 
 RivetshoreCity_Assembly_Trigger_Text_29:
 # 151 "data//maps/RivetshoreCity/scripts.pory"
@@ -939,8 +939,8 @@ RivetshoreCity_Assembly_Trigger_Text_30:
 RivetshoreCity_Assembly_Trigger_Text_31:
 # 155 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Then I propose Kohla.\p"
-	.string "He's a star and I can personally vouch\n"
-	.string "for his strength.$"
+	.string "He's a star and I can personally\n"
+	.string "vouch for his strength.$"
 
 RivetshoreCity_Assembly_Trigger_Text_32:
 # 158 "data//maps/RivetshoreCity/scripts.pory"
@@ -956,8 +956,8 @@ RivetshoreCity_Assembly_Trigger_Text_33:
 
 RivetshoreCity_Assembly_Trigger_Text_34:
 # 163 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Those in favour of sending Kohla\n"
-	.string "ahead?$"
+	.string "Right then. Those in favour of sending\n"
+	.string "Kohla ahead?$"
 
 RivetshoreCity_Assembly_Trigger_Text_35:
 # 165 "data//maps/RivetshoreCity/scripts.pory"
@@ -977,13 +977,13 @@ RivetshoreCity_Assembly_Trigger_Text_38:
 
 RivetshoreCity_Assembly_Trigger_Text_39:
 # 169 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Needless to say, detective, we're all in\n"
-	.string "favour.\p"
+	.string "Needless to say, detective,\n"
+	.string "we're all in favour.\p"
 	.string "Kohla, you have the respect of all the\n"
-	.string "other leaders in Cormoria. You're the\l"
-	.string "one we're counting on.\p"
-	.string "I'm not going to ask you whether you're\n"
-	.string "upto the task...because I know you are.$"
+	.string "other leaders in Cormoria.\p"
+	.string "We're counting on you.\p"
+	.string "I'm not going to ask whether you're up\n"
+	.string "to the task...because I know you are.$"
 
 RivetshoreCity_Assembly_Trigger_Text_40:
 # 173 "data//maps/RivetshoreCity/scripts.pory"
@@ -991,19 +991,18 @@ RivetshoreCity_Assembly_Trigger_Text_40:
 	.string "speedboat then.\p"
 	.string "There's a cruise ship that's scheduled\n"
 	.string "to leave soon. The other Gym Leaders\l"
-	.string "can come on that.\p"
+	.string "can follow us on that.\p"
 	.string "Let's get to it!$"
 
 RivetshoreCity_Assembly_Trigger_Text_41:
 # 204 "data//maps/RivetshoreCity/scripts.pory"
-	.string "I'm heading back to the quarry. The rest\n"
-	.string "of you can wait in the harbor.$"
+	.string "I'm heading back to the quarry.\n"
+	.string "The rest of you - wait in the harbor.$"
 
 RivetshoreCity_NPC_StorageBaySailor_Text_0:
 # 257 "data//maps/RivetshoreCity/scripts.pory"
-	.string "This is the storage bay. We're busy\n"
-	.string "loading up on supplies for the S.S.\l"
-	.string "Elegant!\p"
+	.string "This is the storage bay. We're loading\n"
+	.string "supplies for the S.S. Elegant!\p"
 	.string "What - you trying to stow away?\p"
 	.string "Scram!$"
 
@@ -1017,8 +1016,7 @@ RivetshoreCity_NPC_2_Text_0:
 	.string "They've turned this town into a\n"
 	.string "monstrosity! It used to be a beautiful\l"
 	.string "fishing spot until they built the quarry\l"
-	.string "and harbor and drove all the Pokémon\l"
-	.string "away.$"
+	.string "and drove all the Pokémon away.$"
 
 RivetshoreCity_NPC_3_Text_0:
 # 273 "data//maps/RivetshoreCity/scripts.pory"
@@ -1032,8 +1030,8 @@ RivetshoreCity_NPC_4_Text_0:
 
 RivetshoreCity_NPC_5_Text_0:
 # 283 "data//maps/RivetshoreCity/scripts.pory"
-	.string "You won't find this stuff anywhere\n"
-	.string "else!$"
+	.string "You won't find the stuff they sell here\n"
+	.string "anywhere else!$"
 
 RivetshoreCity_NPC_6_Text_0:
 # 288 "data//maps/RivetshoreCity/scripts.pory"

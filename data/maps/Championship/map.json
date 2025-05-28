@@ -1,7 +1,7 @@
 {
-  "id": "MAP_VICTORY_ROAD_CORMORIA",
-  "name": "VictoryRoadCormoria",
-  "layout": "LAYOUT_VICTORY_ROAD_CORMORIA",
+  "id": "MAP_CHAMPIONSHIP",
+  "name": "Championship",
+  "layout": "LAYOUT_CHAMPIONSHIP",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -12,13 +12,7 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_ROUTE2",
-      "offset": -8,
-      "direction": "left"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
