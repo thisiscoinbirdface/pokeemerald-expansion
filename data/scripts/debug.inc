@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    warp MAP_VICTORY_ROAD_CORMORIA, 48, 75
+    warp MAP_CARABRUE_TOWN_TENEBRIS_LAB_FINALE, 5, 4
 	release
 	end
 

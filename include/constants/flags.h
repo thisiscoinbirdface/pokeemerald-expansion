@@ -270,7 +270,7 @@
 #define FLAG_HIDE_CONSTRUCTION_HQ_PERCY      0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_HIDE_ROUTE1_NORMAL              0x13E
 #define FLAG_HIDE_ROUTE1_STRONG              0x13F
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
+#define FLAG_POST_FINALE_CUTSCENE            0x140
 #define FLAG_WONDER_CARD_UNUSED_5            0x141
 #define FLAG_WONDER_CARD_UNUSED_6            0x142
 #define FLAG_WONDER_CARD_UNUSED_7            0x143

@@ -1,0 +1,91 @@
+raw`
+    .set LOCALID_DET1, 6
+    .set LOCALID_DET2, 5
+    .set LOCALID_TENE, 4
+`
+
+
+mapscripts CarabrueTown_TenebrisLab_Finale_MapScripts{
+        MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_1, 0: CarabrueTown_TenebrisLab_PostFinale
+    ]
+}
+
+//FLAG_POST_FINALE_CUTSCENE
+script CarabrueTown_TenebrisLab_PostFinale{
+    setvar(VAR_TEMP_1, 1)
+
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+
+    applymovement(LOCALID_DET1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("...and now Rue won't be allowed to plot any schemes for a long, long time."))
+
+
+    applymovement(LOCALID_TENE, moves(emote_question_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("All's well that ends well, then?"))
+
+    applymovement(LOCALID_DET1, moves(emote_exclamation_mark jump_in_place_right))
+    applymovement(LOCALID_DET2, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("Yes. Case closed!"))
+
+    //complete quest
+
+    applymovement(LOCALID_TENE, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("I'm ever so grateful for your help, detectives.\pWithout your leadership on this case, who knows how long I would have been trapped in Ancient Cormoria?"))
+   
+    applymovement(LOCALID_DET1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("We're only doing our duty, Professor.\pWe also have people to thank...\pKohla of course, although he's not here now, was instrumental in chasing Team Somber across Cormoria. He's got the makings of a truly detective!\pThe Gym Leaders are the ones who actually took Team Somber apart.\pInger and Ariana are with Gloria in Silversun City right now, clearing out their headquarters."))
+
+    applymovement(LOCALID_TENE, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("So it was a team effort, then?\nNo doubt you all came through."))
+
+    applymovement(LOCALID_DET1, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("Absolutely.\pThere was no solving this case without Kohla and the Gym Leaders...\p...")) 
+    
+    applymovement(LOCALID_DET1, moves(face_down))
+    applymovement(LOCALID_DET2, moves(face_down))
+    applymovement(LOCALID_TENE, moves(face_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("...and you, {PLAYER}.")) 
+
+    applymovement(LOCALID_TENE, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("{PLAYER}, you were just incredible. You stood up against huge organisation like Team Somber and fought them off time and again!"))
+    
+    applymovement(LOCALID_DET1, moves(face_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Detective", format("And even after you were taken off the case, you did what was right, {PLAYER}.\pWe're in your debt.")) 
+
+    applymovement(LOCALID_TENE, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)
+    msgbox_delay("Tenebris", format("I couldn't be prouder of my newest research associate.\pNow that all of this is finished,\nI'll finally get to know you better.\p...but before you rejoin the lab,\nthere is one last thing to do."))
+
+}
+
+
+
+
+
+
+
+
+

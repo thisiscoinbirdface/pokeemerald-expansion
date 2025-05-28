@@ -39,31 +39,31 @@ Route1_TrainerBattle_B::
 
 
 Route1_TrainerBattle_Strong_B::
-# 41 "data//maps/Route1/scripts.pory"
+# 40 "data//maps/Route1/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE1_STRONG_B, Route1_TrainerBattle_Strong_B_Text_0, Route1_TrainerBattle_B_Text_1
-# 42 "data//maps/Route1/scripts.pory"
+# 41 "data//maps/Route1/scripts.pory"
 	msgbox Route1_TrainerBattle_B_Text_2
-# 43 "data//maps/Route1/scripts.pory"
+# 42 "data//maps/Route1/scripts.pory"
 	release
 	end
 
 
 Route1_TrainerBattle_C::
-# 49 "data//maps/Route1/scripts.pory"
+# 47 "data//maps/Route1/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE1_C, Route1_TrainerBattle_C_Text_0, Route1_TrainerBattle_C_Text_1
-# 50 "data//maps/Route1/scripts.pory"
+# 48 "data//maps/Route1/scripts.pory"
 	msgbox Route1_TrainerBattle_C_Text_2
-# 51 "data//maps/Route1/scripts.pory"
+# 49 "data//maps/Route1/scripts.pory"
 	release
 	end
 
 
 Route1_TrainerBattle_Strong_C::
-# 56 "data//maps/Route1/scripts.pory"
+# 53 "data//maps/Route1/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE1_STRONG_C, Route1_TrainerBattle_Strong_C_Text_0, Route1_TrainerBattle_C_Text_1
-# 57 "data//maps/Route1/scripts.pory"
+# 54 "data//maps/Route1/scripts.pory"
 	msgbox Route1_TrainerBattle_C_Text_2
-# 58 "data//maps/Route1/scripts.pory"
+# 55 "data//maps/Route1/scripts.pory"
 	release
 	end
 
@@ -114,26 +114,26 @@ Route1_TrainerBattle_B_Text_2:
 	.string "variety!$"
 
 Route1_TrainerBattle_Strong_B_Text_0:
-# 41 "data//maps/Route1/scripts.pory"
+# 40 "data//maps/Route1/scripts.pory"
 	.string "I traveled all over Cormoria...\n"
 	.string "and I still love FLYING types!$"
 
 Route1_TrainerBattle_C_Text_0:
-# 49 "data//maps/Route1/scripts.pory"
+# 47 "data//maps/Route1/scripts.pory"
 	.string "I came from Gastree City to find\n"
 	.string "BUG-type Pokémon...but I found you\l"
 	.string "instead!$"
 
 Route1_TrainerBattle_C_Text_1:
-# 49 "data//maps/Route1/scripts.pory"
+# 47 "data//maps/Route1/scripts.pory"
 	.string "Well, back to bug-hunting for me.$"
 
 Route1_TrainerBattle_C_Text_2:
-# 50 "data//maps/Route1/scripts.pory"
+# 48 "data//maps/Route1/scripts.pory"
 	.string "There are many bug catchers like me.\n"
 	.string "It's a huge hobby!$"
 
 Route1_TrainerBattle_Strong_C_Text_0:
-# 56 "data//maps/Route1/scripts.pory"
+# 53 "data//maps/Route1/scripts.pory"
 	.string "My BUG types and I have been training\n"
 	.string "so much!$"

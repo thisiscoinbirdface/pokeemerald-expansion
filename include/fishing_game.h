@@ -5,9 +5,9 @@
 #define OLD_ROD_BAR_WIDTH               40   // Default pixel width of the fishing bar. Cannot be below 33 or above 64.
 #define GOOD_ROD_BAR_WIDTH              60   // Fishing bar pixel width for the Good Rod. FG_BAR_WIDTH_FROM_ROD_TYPE must be TRUE. Cannot be below 33 or above 64.
 #define SUPER_ROD_BAR_WIDTH             60   // Fishing bar pixel width for the Super Rod. FG_BAR_WIDTH_FROM_ROD_TYPE must be TRUE. Cannot be below 33 or above 64.
-#define FISHING_BAR_MAX_SPEED           50   // The greater the number, the faster the bar is allowed to go.
-#define FISHING_BAR_BOUNCINESS          1.3  // The greater the number, the less the bar will bounce when it hits the left side. (Decimals are encouraged, as a little goes a long way.)
-#define BAR_SPEED_SLOWING               2.0  // The greater the value, the slower the bar changes speed. (Decimals are encouraged, as a little goes a long way.) (Can affect the max speed.)
+#define FISHING_BAR_MAX_SPEED           40   // The greater the number, the faster the bar is allowed to go.
+#define FISHING_BAR_BOUNCINESS          1.7  // The greater the number, the less the bar will bounce when it hits the left side. (Decimals are encouraged, as a little goes a long way.)
+#define BAR_SPEED_SLOWING               1.1  // The greater the value, the slower the bar changes speed. (Decimals are encouraged, as a little goes a long way.) (Can affect the max speed.)
 
 #define STARTING_SCORE                  300  // The number of points you already have when the game starts.
 #define SCORE_INCREASE                  4    // The score increases by this many point every frame while the fish is within the bar.
