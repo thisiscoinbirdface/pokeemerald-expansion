@@ -22,3 +22,59 @@ script VR_SetWeather_Rain{
 
 
 
+
+
+
+//Trainers
+
+script VR_Trainer_A{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_A, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_B{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_B, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_C{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_C, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_D{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_D, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_E{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_E, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_F{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_F, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_G{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_G, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_H{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_H, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_I{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_I, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+script VR_Trainer_J{
+    trainerbattle_single(TRAINER_VICTORY_ROAD_J, format(""), format(""))
+    msgbox(format(""))
+    end
+}
+
