@@ -27,7 +27,7 @@ Route134_EventScript_Aaron::
 	end
 
 Route134_EventScript_Hitoshi::
-	trainerbattle_single TRAINER_HITOSHI, Route134_Text_HitoshiIntro, Route134_Text_HitoshiDefeat
+	trainerbattle_single TRAINER_ROUTE1_STRONG_B, Route134_Text_HitoshiIntro, Route134_Text_HitoshiDefeat
 	msgbox Route134_Text_HitoshiPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -112,7 +112,7 @@ DewfordTown_Gym_EventScript_AnimateFlashFullBrightness::
 
 DewfordTown_Gym_EventScript_CountTrainersDefeated::
 	setvar VAR_0x8000, 0
-	goto_if_not_defeated TRAINER_TAKAO, DewfordTown_Gym_EventScript_CheckJocelyn
+	goto_if_not_defeated TRAINER_ROUTE1_STRONG_A, DewfordTown_Gym_EventScript_CheckJocelyn
 	addvar VAR_0x8000, 1
 DewfordTown_Gym_EventScript_CheckJocelyn::
 	goto_if_not_defeated TRAINER_JOCELYN, DewfordTown_Gym_EventScript_CheckLaura
@@ -188,7 +188,7 @@ DewfordTown_Gym_EventScript_BrawlyRematch::
 	end
 
 DewfordTown_Gym_EventScript_Takao::
-	trainerbattle_single TRAINER_TAKAO, DewfordTown_Gym_Text_TakaoIntro, DewfordTown_Gym_Text_TakaoDefeat, DewfordTown_Gym_EventScript_TakaoBrightenRoom
+	trainerbattle_single TRAINER_ROUTE1_STRONG_A, DewfordTown_Gym_Text_TakaoIntro, DewfordTown_Gym_Text_TakaoDefeat, DewfordTown_Gym_EventScript_TakaoBrightenRoom
 	msgbox DewfordTown_Gym_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE
 	end
 

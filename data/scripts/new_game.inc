@@ -341,6 +341,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ISLAND_FINALE
 	setflag FLAG_HIDE_TENEBRIS_FINALE
 	setflag FLAG_HIDE_RIVETSHORE_MIMIKYU
+	
+	setflag FLAG_HIDE_ROUTE1_STRONG
 
 
 

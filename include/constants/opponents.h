@@ -249,18 +249,18 @@
 #define TRAINER_IVY_RIVER_D                 171
 
 //Uncharted Island
-#define TRAINER_UNCHARTED_ISLAND_GRUNT_A                        172
-#define TRAINER_UNCHARTED_ISLAND_GRUNT_B                      173
-#define TRAINER_UNCHARTED_ISLAND_GRUNT_C                        174
-#define TRAINER_UNCHARTED_ISLAND_GRUNT_D                      175
-#define TRAINER_UNCHARTED_ISLAND_MOXIE                      176
-#define TRAINER_UNCHARTED_ISLAND_MELEA                      177
-#define TRAINER_UNCHARTED_ISLAND_RUE                      178
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_A    172
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_B    173
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_C    174
+#define TRAINER_UNCHARTED_ISLAND_GRUNT_D    175
+#define TRAINER_UNCHARTED_ISLAND_MOXIE      176
+#define TRAINER_UNCHARTED_ISLAND_MELEA      177
+#define TRAINER_UNCHARTED_ISLAND_RUE        178
 
 //Route 1 Stronger
-#define TRAINER_TAKAO                       179
-#define TRAINER_HITOSHI                     180
-#define TRAINER_KIYO                        181
+#define TRAINER_ROUTE1_STRONG_A             179
+#define TRAINER_ROUTE1_STRONG_B             180
+#define TRAINER_ROUTE1_STRONG_C             181
 
 //Victory Road
 #define TRAINER_VICTORY_ROAD_A              182

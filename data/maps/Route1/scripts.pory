@@ -1,14 +1,28 @@
 mapscripts Route1_MapScripts {}
 
+
+
+
+
 script Route1_EventScripts_RandomDude {
     msgbox(format("A Pokémon using a move of the same type as itself gets a boost. If Pidove uses Peck, it'll deal more damage!"), MSGBOX_NPC)
     end
 }
 
-script Route1_TrainerBattle_A {
 
+
+
+
+script Route1_TrainerBattle_A { 
     trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first Pokémon! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
     msgbox(format("My Rattata and I will become Pokémon Champions one day!"))
+    release
+    end
+
+}
+script Route1_TrainerBattle_Strong_A { 
+    trainerbattle_single(TRAINER_ROUTE1_STRONG_A, format("Hey - it's you again! Thought you were the only one training?\pI demand a rematch!"), "Aw man! I thought I could win!")
+    msgbox(format("Raticate and I are gonna get stronger and stronger!"))
     release
     end
 
@@ -17,7 +31,15 @@ script Route1_TrainerBattle_A {
 script Route1_TrainerBattle_B {
 
     trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokémon. Let me show you my favourite!"), "My FLYING type Pokémon lost!")
-    msgbox(format("I guess A good Pokémon team needs type variety!"))
+    msgbox(format("I guess a good Pokémon team needs type variety!"))
+    release
+    end
+
+}
+script Route1_TrainerBattle_Strong_B {
+
+    trainerbattle_single(TRAINER_ROUTE1_STRONG_B, format("I traveled all over Cormoria...\nand I still love FLYING types!"), "My FLYING type Pokémon lost!")
+    msgbox(format("I guess a good Pokémon team needs type variety!"))
     release
     end
 
@@ -25,6 +47,13 @@ script Route1_TrainerBattle_B {
 
 script Route1_TrainerBattle_C {
     trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find BUG-type Pokémon...but I found you instead!"), "Well, back to bug-hunting for me.")
+    msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
+    release
+    end
+
+}
+script Route1_TrainerBattle_Strong_C {
+    trainerbattle_single(TRAINER_ROUTE1_STRONG_C, format("My BUG types and I have been training so much!"), "Well, back to bug-hunting for me.")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
     end

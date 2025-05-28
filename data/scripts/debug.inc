@@ -153,10 +153,13 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	clearflag FLAG_HIDE_ROUTE1_STRONG
+	setflag FLAG_HIDE_ROUTE1_NORMAL
 	release
 	end
 
 Debug_EventScript_Script_5::
+	setflag FLAG_FINALE_DONE
 	release
 	end
 

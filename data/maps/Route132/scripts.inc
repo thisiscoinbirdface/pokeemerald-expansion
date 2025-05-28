@@ -17,7 +17,7 @@ Route132_EventScript_Ronald::
 	end
 
 Route132_EventScript_Kiyo::
-	trainerbattle_single TRAINER_KIYO, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat
+	trainerbattle_single TRAINER_ROUTE1_STRONG_C, Route132_Text_KiyoIntro, Route132_Text_KiyoDefeat
 	msgbox Route132_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
