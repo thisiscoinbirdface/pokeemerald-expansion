@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    warp MAP_SILVERSUN_CITY_SOMBER_HQ, 42, 17
+    warp MAP_VICTORY_ROAD_CORMORIA, 48, 75
 	release
 	end
 

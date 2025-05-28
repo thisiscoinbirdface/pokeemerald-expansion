@@ -180,6 +180,9 @@ const u32 gItemIconPalette_LavaCookieAndLetter[] = INCBIN_U32("graphics/items/ic
 const u32 gItemIcon_OldGateau[] = INCBIN_U32("graphics/items/icons/old_gateau.4bpp.lz");
 const u32 gItemIconPalette_OldGateau[] = INCBIN_U32("graphics/items/icon_palettes/old_gateau.gbapal.lz");
 
+const u32 gItemIcon_ApplePie[] = INCBIN_U32("graphics/items/icons/apple_pie.4bpp.lz");
+const u32 gItemIconPalette_ApplePie[] = INCBIN_U32("graphics/items/icon_palettes/apple_pie.gbapal.lz");
+
 const u32 gItemIcon_Casteliacone[] = INCBIN_U32("graphics/items/icons/casteliacone.4bpp.lz");
 const u32 gItemIconPalette_Casteliacone[] = INCBIN_U32("graphics/items/icon_palettes/casteliacone.gbapal.lz");
 

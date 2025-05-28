@@ -14440,6 +14440,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_VICTORY_ROAD_CORMORIA",
+          "base_label": "gVictoryRoadCormoria0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_RATICATE_ALOLA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_LYCANROC_MIDNIGHT"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_UNFEZANT"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_MAROWAK_ALOLA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_MAROWAK_ALOLA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_CLEFABLE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_CLEFABLE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_FORRETRESS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_FORRETRESS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_LYCANROC_MIDNIGHT"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_LYCANROC_DUSK"
+              },
+              {
+                "min_level": 50,
+                "max_level": 55,
+                "species": "SPECIES_LYCANROC_MIDDAY"
+              }
+            ]
+          }
         }
       ]
     },

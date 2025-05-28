@@ -5694,10 +5694,10 @@
     {
       "id": "LAYOUT_VICTORY_ROAD",
       "name": "VictoryRoad_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/VictoryRoad/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad/map.bin"
     },
@@ -5754,8 +5754,8 @@
     {
       "id": "LAYOUT_VICTORY_ROAD_CORMORIA",
       "name": "VictoryRoadCormoria_Layout",
-      "width": 19,
-      "height": 24,
+      "width": 60,
+      "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/VictoryRoadCormoria/border.bin",

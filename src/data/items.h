@@ -1223,7 +1223,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = COMPOUND_STRING(
             "A recipe by chef\n"
-            "________. Heals\n"
+            "BroDudeIII. Heals\n"
             "status problems."),
         .pocket = POCKET_MEDICINE,
         .type = ITEM_USE_PARTY_MENU,
@@ -1231,8 +1231,8 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_FullHeal,
         .flingPower = 30,
-        .iconPic = gItemIcon_OldGateau,
-        .iconPalette = gItemIconPalette_OldGateau,
+        .iconPic = gItemIcon_ApplePie,
+        .iconPalette = gItemIconPalette_ApplePie,
     },
 
     [ITEM_CASTELIACONE] =

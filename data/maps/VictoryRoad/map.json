@@ -12,7 +12,18 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_VICTORY_ROAD_CORMORIA",
+      "offset": -28,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_CHAMPIONSHIP",
+      "offset": -11,
+      "direction": "down"
+    }
+  ],
   "object_events": [
 
   ],
@@ -20,7 +31,114 @@
 
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Normal"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Normal"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Normal"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 49,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 49,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 49,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Shade"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 50,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Rain"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 50,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Rain"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 50,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VR_SetWeather_Rain"
+    }
   ],
   "bg_events": [
 

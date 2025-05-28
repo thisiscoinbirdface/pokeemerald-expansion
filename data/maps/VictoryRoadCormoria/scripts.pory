@@ -1,0 +1,24 @@
+mapscripts VictoryRoadCormoria_MapScripts{}
+
+
+script VR_SetWeather_Normal{
+    setweather(WEATHER_NONE)
+    doweather
+    releaseall
+    end
+}
+script VR_SetWeather_Shade{
+    setweather(WEATHER_SHADE)
+    doweather
+    releaseall
+    end
+}
+script VR_SetWeather_Rain{
+    setweather(WEATHER_RAIN)
+    doweather
+    releaseall
+    end
+}
+
+
+
