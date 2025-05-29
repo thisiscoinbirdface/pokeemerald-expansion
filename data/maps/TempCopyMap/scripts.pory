@@ -762,12 +762,60 @@ script Common_EventScript_HyperTrainer{
             waitmessage
             dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defence", "Special Attack", "Special Defence", "Speed")
             
-            if (var(VAR_RESULT) == 0){hypertrain(STAT_HP, VAR_0x8004)}
-            if (var(VAR_RESULT) == 1){hypertrain(STAT_ATK, VAR_0x8004)}
-            if (var(VAR_RESULT) == 2){hypertrain(STAT_DEF, VAR_0x8004)}
-            if (var(VAR_RESULT) == 3){hypertrain(STAT_SPATK, VAR_0x8004)}
-            if (var(VAR_RESULT) == 4){hypertrain(STAT_SPDEF, VAR_0x8004)}
-            if (var(VAR_RESULT) == 5){hypertrain(STAT_SPEED, VAR_0x8004)}
+            if (var(VAR_RESULT) == 0){
+                canhypertrain(STAT_HP, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_HP, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 1){
+                canhypertrain(STAT_ATK, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_ATK, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 2){
+                canhypertrain(STAT_DEF, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_DEF, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 3){
+                canhypertrain(STAT_SPATK, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_SPATK, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 4){
+                canhypertrain(STAT_SPDEF, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_SPDEF, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 5){
+                canhypertrain(STAT_SPEED, VAR_0x8004)
+                if (var(VAR_RESULT) == 0){
+                    msgbox(format("{STR_VAR_1} cannot grow any stronger in that stat!"))
+                    releaseall
+                    end
+                }
+                hypertrain(STAT_SPEED, VAR_0x8004)
+            }
 
             release
             fadescreen(FADE_TO_WHITE)

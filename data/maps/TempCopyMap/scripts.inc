@@ -1244,46 +1244,46 @@ Common_EventScript_HyperTrainer::
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_HyperTrainer_12
 Common_EventScript_HyperTrainer_11:
-# 766 "data//maps/TempCopyMap/scripts.pory"
+# 774 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_HyperTrainer_15
 Common_EventScript_HyperTrainer_14:
-# 767 "data//maps/TempCopyMap/scripts.pory"
+# 783 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 2
-	goto_if_eq Common_EventScript_HyperTrainer_18
-Common_EventScript_HyperTrainer_17:
-# 768 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 3
 	goto_if_eq Common_EventScript_HyperTrainer_21
 Common_EventScript_HyperTrainer_20:
-# 769 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 4
-	goto_if_eq Common_EventScript_HyperTrainer_24
-Common_EventScript_HyperTrainer_23:
-# 770 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 5
+# 792 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 3
 	goto_if_eq Common_EventScript_HyperTrainer_27
 Common_EventScript_HyperTrainer_26:
-# 772 "data//maps/TempCopyMap/scripts.pory"
+# 801 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 4
+	goto_if_eq Common_EventScript_HyperTrainer_33
+Common_EventScript_HyperTrainer_32:
+# 810 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 5
+	goto_if_eq Common_EventScript_HyperTrainer_39
+Common_EventScript_HyperTrainer_38:
+# 820 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 773 "data//maps/TempCopyMap/scripts.pory"
+# 821 "data//maps/TempCopyMap/scripts.pory"
 	fadescreen FADE_TO_WHITE
-# 774 "data//maps/TempCopyMap/scripts.pory"
+# 822 "data//maps/TempCopyMap/scripts.pory"
 	playse SE_USE_ITEM
-# 775 "data//maps/TempCopyMap/scripts.pory"
+# 823 "data//maps/TempCopyMap/scripts.pory"
 	delay 24
-# 776 "data//maps/TempCopyMap/scripts.pory"
+# 824 "data//maps/TempCopyMap/scripts.pory"
 	fadescreen FADE_FROM_WHITE
-# 778 "data//maps/TempCopyMap/scripts.pory"
+# 826 "data//maps/TempCopyMap/scripts.pory"
 	removeitem ITEM_RARE_SHARD
-# 779 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_HyperTrainer_Text_10
-# 780 "data//maps/TempCopyMap/scripts.pory"
+# 827 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_11
+# 828 "data//maps/TempCopyMap/scripts.pory"
 	release
 Common_EventScript_HyperTrainer_4:
-# 783 "data//maps/TempCopyMap/scripts.pory"
+# 831 "data//maps/TempCopyMap/scripts.pory"
 	fadedefaultbgm
-# 784 "data//maps/TempCopyMap/scripts.pory"
+# 832 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
@@ -1301,343 +1301,415 @@ Common_EventScript_HyperTrainer_8:
 	goto Common_EventScript_HyperTrainer_4
 
 Common_EventScript_HyperTrainer_12:
-# 765 "data//maps/TempCopyMap/scripts.pory"
+# 766 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_HP, VAR_0x8004
+# 767 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_18
+# 772 "data//maps/TempCopyMap/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
 	goto Common_EventScript_HyperTrainer_11
 
 Common_EventScript_HyperTrainer_15:
-# 766 "data//maps/TempCopyMap/scripts.pory"
+# 775 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_ATK, VAR_0x8004
+# 776 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_24
+# 781 "data//maps/TempCopyMap/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
 	goto Common_EventScript_HyperTrainer_14
 
 Common_EventScript_HyperTrainer_18:
-# 767 "data//maps/TempCopyMap/scripts.pory"
-	hypertrain STAT_DEF, VAR_0x8004
-	goto Common_EventScript_HyperTrainer_17
+# 768 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 769 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
 
 Common_EventScript_HyperTrainer_21:
-# 768 "data//maps/TempCopyMap/scripts.pory"
-	hypertrain STAT_SPATK, VAR_0x8004
+# 784 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_DEF, VAR_0x8004
+# 785 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_30
+# 790 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_DEF, VAR_0x8004
 	goto Common_EventScript_HyperTrainer_20
 
 Common_EventScript_HyperTrainer_24:
-# 769 "data//maps/TempCopyMap/scripts.pory"
-	hypertrain STAT_SPDEF, VAR_0x8004
-	goto Common_EventScript_HyperTrainer_23
+# 777 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 778 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
 
 Common_EventScript_HyperTrainer_27:
-# 770 "data//maps/TempCopyMap/scripts.pory"
-	hypertrain STAT_SPEED, VAR_0x8004
+# 793 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_SPATK, VAR_0x8004
+# 794 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_36
+# 799 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPATK, VAR_0x8004
 	goto Common_EventScript_HyperTrainer_26
+
+Common_EventScript_HyperTrainer_30:
+# 786 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 787 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_HyperTrainer_33:
+# 802 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_SPDEF, VAR_0x8004
+# 803 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_42
+# 808 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPDEF, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_32
+
+Common_EventScript_HyperTrainer_36:
+# 795 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 796 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_HyperTrainer_39:
+# 811 "data//maps/TempCopyMap/scripts.pory"
+	canhypertrain STAT_SPEED, VAR_0x8004
+# 812 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_HyperTrainer_45
+# 817 "data//maps/TempCopyMap/scripts.pory"
+	hypertrain STAT_SPEED, VAR_0x8004
+	goto Common_EventScript_HyperTrainer_38
+
+Common_EventScript_HyperTrainer_42:
+# 804 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 805 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_HyperTrainer_45:
+# 813 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_HyperTrainer_Text_10
+# 814 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
 
 
 Common_EventScript_DrifblimTravels_ToSilversun::
-# 818 "data//maps/TempCopyMap/scripts.pory"
+# 866 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 819 "data//maps/TempCopyMap/scripts.pory"
+# 867 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 820 "data//maps/TempCopyMap/scripts.pory"
+# 868 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 821 "data//maps/TempCopyMap/scripts.pory"
+# 869 "data//maps/TempCopyMap/scripts.pory"
 	checkitem ITEM_DRIFBLIM_TRAVELS_PASS
-# 822 "data//maps/TempCopyMap/scripts.pory"
+# 870 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_2
-# 827 "data//maps/TempCopyMap/scripts.pory"
+# 875 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_1, MSGBOX_YESNO
-# 829 "data//maps/TempCopyMap/scripts.pory"
+# 877 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_DrifblimTravels_ToSilversun_5
-# 839 "data//maps/TempCopyMap/scripts.pory"
+# 887 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_2, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToSilversun_4:
 	end
 
 Common_EventScript_DrifblimTravels_ToSilversun_2:
-# 823 "data//maps/TempCopyMap/scripts.pory"
+# 871 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_NPC
 	end
 
 Common_EventScript_DrifblimTravels_ToSilversun_5:
-# 830 "data//maps/TempCopyMap/scripts.pory"
+# 878 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 832 "data//maps/TempCopyMap/scripts.pory"
+# 880 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 833 "data//maps/TempCopyMap/scripts.pory"
+# 881 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 834 "data//maps/TempCopyMap/scripts.pory"
+# 882 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 835 "data//maps/TempCopyMap/scripts.pory"
+# 883 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 836 "data//maps/TempCopyMap/scripts.pory"
+# 884 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_SILVERSUN_CITY, 28, 22
 	goto Common_EventScript_DrifblimTravels_ToSilversun_4
 
 
 Common_EventScript_DrifblimTravels_ToPelluca::
-# 845 "data//maps/TempCopyMap/scripts.pory"
+# 893 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 846 "data//maps/TempCopyMap/scripts.pory"
+# 894 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 847 "data//maps/TempCopyMap/scripts.pory"
+# 895 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 848 "data//maps/TempCopyMap/scripts.pory"
+# 896 "data//maps/TempCopyMap/scripts.pory"
 	checkitem ITEM_DRIFBLIM_TRAVELS_PASS
-# 849 "data//maps/TempCopyMap/scripts.pory"
+# 897 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_DrifblimTravels_ToPelluca_2
-# 854 "data//maps/TempCopyMap/scripts.pory"
+# 902 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToPelluca_Text_0, MSGBOX_YESNO
-# 856 "data//maps/TempCopyMap/scripts.pory"
+# 904 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_DrifblimTravels_ToPelluca_5
-# 866 "data//maps/TempCopyMap/scripts.pory"
+# 914 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_2, MSGBOX_NPC
 Common_EventScript_DrifblimTravels_ToPelluca_4:
 	end
 
 Common_EventScript_DrifblimTravels_ToPelluca_2:
-# 850 "data//maps/TempCopyMap/scripts.pory"
+# 898 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_DrifblimTravels_ToSilversun_Text_0, MSGBOX_NPC
 	end
 
 Common_EventScript_DrifblimTravels_ToPelluca_5:
-# 857 "data//maps/TempCopyMap/scripts.pory"
+# 905 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 859 "data//maps/TempCopyMap/scripts.pory"
+# 907 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 860 "data//maps/TempCopyMap/scripts.pory"
+# 908 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 861 "data//maps/TempCopyMap/scripts.pory"
+# 909 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DRIFBLIM, CRY_MODE_NORMAL
-# 862 "data//maps/TempCopyMap/scripts.pory"
+# 910 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 863 "data//maps/TempCopyMap/scripts.pory"
+# 911 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_PELLUCA_CITY, 14, 28
 	goto Common_EventScript_DrifblimTravels_ToPelluca_4
 
 
 Common_EventScript_Dugtrio_ToRoute3::
-# 880 "data//maps/TempCopyMap/scripts.pory"
+# 928 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 881 "data//maps/TempCopyMap/scripts.pory"
+# 929 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 882 "data//maps/TempCopyMap/scripts.pory"
+# 930 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
-# 884 "data//maps/TempCopyMap/scripts.pory"
+# 932 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Dugtrio_ToRoute3_2
 Common_EventScript_Dugtrio_ToRoute3_1:
-# 893 "data//maps/TempCopyMap/scripts.pory"
+# 941 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_Dugtrio_ToRoute3_2:
-# 885 "data//maps/TempCopyMap/scripts.pory"
+# 933 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 887 "data//maps/TempCopyMap/scripts.pory"
+# 935 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 888 "data//maps/TempCopyMap/scripts.pory"
+# 936 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 889 "data//maps/TempCopyMap/scripts.pory"
+# 937 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL
-# 890 "data//maps/TempCopyMap/scripts.pory"
+# 938 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 891 "data//maps/TempCopyMap/scripts.pory"
+# 939 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_ROUTE3_UNDERPASS, 43, 26
 	goto Common_EventScript_Dugtrio_ToRoute3_1
 
 
 Common_EventScript_Dugtrio_ToGalecrest::
-# 897 "data//maps/TempCopyMap/scripts.pory"
+# 945 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 898 "data//maps/TempCopyMap/scripts.pory"
+# 946 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 899 "data//maps/TempCopyMap/scripts.pory"
+# 947 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
-# 901 "data//maps/TempCopyMap/scripts.pory"
+# 949 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Dugtrio_ToGalecrest_1
 	return
 
 Common_EventScript_Dugtrio_ToGalecrest_1:
-# 902 "data//maps/TempCopyMap/scripts.pory"
+# 950 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 904 "data//maps/TempCopyMap/scripts.pory"
+# 952 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 905 "data//maps/TempCopyMap/scripts.pory"
+# 953 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 906 "data//maps/TempCopyMap/scripts.pory"
+# 954 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL
-# 907 "data//maps/TempCopyMap/scripts.pory"
+# 955 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 908 "data//maps/TempCopyMap/scripts.pory"
+# 956 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_GALECREST_CITY, 31, 65
 	return
 
 
 Common_EventScript_Tauros_IvyRiver::
-# 919 "data//maps/TempCopyMap/scripts.pory"
+# 967 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_IvyRiver_2
-# 927 "data//maps/TempCopyMap/scripts.pory"
+# 975 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
 Common_EventScript_Tauros_IvyRiver_1:
-# 929 "data//maps/TempCopyMap/scripts.pory"
+# 977 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
 Common_EventScript_Tauros_IvyRiver_2:
-# 920 "data//maps/TempCopyMap/scripts.pory"
+# 968 "data//maps/TempCopyMap/scripts.pory"
 	message Common_EventScript_Tauros_IvyRiver_Text_0
-# 921 "data//maps/TempCopyMap/scripts.pory"
+# 969 "data//maps/TempCopyMap/scripts.pory"
 	waitmessage
-# 922 "data//maps/TempCopyMap/scripts.pory"
+# 970 "data//maps/TempCopyMap/scripts.pory"
 	dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_IvyRiver_Text_1, Common_EventScript_Tauros_IvyRiver_Text_2
-# 924 "data//maps/TempCopyMap/scripts.pory"
+# 972 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_Tauros_IvyRiver_6
 Common_EventScript_Tauros_IvyRiver_5:
-# 925 "data//maps/TempCopyMap/scripts.pory"
+# 973 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Tauros_IvyRiver_8
 	goto Common_EventScript_Tauros_IvyRiver_1
 
 Common_EventScript_Tauros_IvyRiver_6:
-# 924 "data//maps/TempCopyMap/scripts.pory"
+# 972 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoPelluca
 	goto Common_EventScript_Tauros_IvyRiver_5
 
 Common_EventScript_Tauros_IvyRiver_8:
-# 925 "data//maps/TempCopyMap/scripts.pory"
+# 973 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoRoute6
 	goto Common_EventScript_Tauros_IvyRiver_1
 
 
 Common_EventScript_Tauros_PellucaCity::
-# 934 "data//maps/TempCopyMap/scripts.pory"
+# 982 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_PellucaCity_2
-# 943 "data//maps/TempCopyMap/scripts.pory"
+# 991 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
 Common_EventScript_Tauros_PellucaCity_1:
-# 945 "data//maps/TempCopyMap/scripts.pory"
+# 993 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
 Common_EventScript_Tauros_PellucaCity_2:
-# 935 "data//maps/TempCopyMap/scripts.pory"
+# 983 "data//maps/TempCopyMap/scripts.pory"
 	message Common_EventScript_Tauros_IvyRiver_Text_0
-# 936 "data//maps/TempCopyMap/scripts.pory"
+# 984 "data//maps/TempCopyMap/scripts.pory"
 	waitmessage
-# 937 "data//maps/TempCopyMap/scripts.pory"
+# 985 "data//maps/TempCopyMap/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_2
-# 939 "data//maps/TempCopyMap/scripts.pory"
+# 987 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_Tauros_PellucaCity_6
 Common_EventScript_Tauros_PellucaCity_5:
-# 940 "data//maps/TempCopyMap/scripts.pory"
+# 988 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Tauros_PellucaCity_8
 	goto Common_EventScript_Tauros_PellucaCity_1
 
 Common_EventScript_Tauros_PellucaCity_6:
-# 939 "data//maps/TempCopyMap/scripts.pory"
+# 987 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoIvy
 	goto Common_EventScript_Tauros_PellucaCity_5
 
 Common_EventScript_Tauros_PellucaCity_8:
-# 940 "data//maps/TempCopyMap/scripts.pory"
+# 988 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoRoute6
 	goto Common_EventScript_Tauros_PellucaCity_1
 
 
 Common_EventScript_Tauros_Route6::
-# 950 "data//maps/TempCopyMap/scripts.pory"
+# 998 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_Route6_2
-# 958 "data//maps/TempCopyMap/scripts.pory"
+# 1006 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
 Common_EventScript_Tauros_Route6_1:
-# 960 "data//maps/TempCopyMap/scripts.pory"
+# 1008 "data//maps/TempCopyMap/scripts.pory"
 	release
 	end
 
 Common_EventScript_Tauros_Route6_2:
-# 951 "data//maps/TempCopyMap/scripts.pory"
+# 999 "data//maps/TempCopyMap/scripts.pory"
 	message Common_EventScript_Tauros_IvyRiver_Text_0
-# 952 "data//maps/TempCopyMap/scripts.pory"
+# 1000 "data//maps/TempCopyMap/scripts.pory"
 	waitmessage
-# 953 "data//maps/TempCopyMap/scripts.pory"
+# 1001 "data//maps/TempCopyMap/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_1
-# 955 "data//maps/TempCopyMap/scripts.pory"
+# 1003 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_Tauros_Route6_6
 Common_EventScript_Tauros_Route6_5:
-# 956 "data//maps/TempCopyMap/scripts.pory"
+# 1004 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Tauros_Route6_8
 	goto Common_EventScript_Tauros_Route6_1
 
 Common_EventScript_Tauros_Route6_6:
-# 955 "data//maps/TempCopyMap/scripts.pory"
+# 1003 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoIvy
 	goto Common_EventScript_Tauros_Route6_5
 
 Common_EventScript_Tauros_Route6_8:
-# 956 "data//maps/TempCopyMap/scripts.pory"
+# 1004 "data//maps/TempCopyMap/scripts.pory"
 	goto Common_EventScript_Tauros_GotoPelluca
 	goto Common_EventScript_Tauros_Route6_1
 
 
 Common_EventScript_Tauros_GotoIvy::
-# 965 "data//maps/TempCopyMap/scripts.pory"
+# 1013 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 966 "data//maps/TempCopyMap/scripts.pory"
+# 1014 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 967 "data//maps/TempCopyMap/scripts.pory"
+# 1015 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 968 "data//maps/TempCopyMap/scripts.pory"
+# 1016 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 969 "data//maps/TempCopyMap/scripts.pory"
+# 1017 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 970 "data//maps/TempCopyMap/scripts.pory"
+# 1018 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_IVY_RIVER, 19, 69
 	return
 
 
 Common_EventScript_Tauros_GotoPelluca::
-# 974 "data//maps/TempCopyMap/scripts.pory"
+# 1022 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 976 "data//maps/TempCopyMap/scripts.pory"
+# 1024 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 977 "data//maps/TempCopyMap/scripts.pory"
+# 1025 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 978 "data//maps/TempCopyMap/scripts.pory"
+# 1026 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 979 "data//maps/TempCopyMap/scripts.pory"
+# 1027 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 980 "data//maps/TempCopyMap/scripts.pory"
+# 1028 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_PELLUCA_CITY, 10, 33
 	return
 
 
 Common_EventScript_Tauros_GotoRoute6::
-# 984 "data//maps/TempCopyMap/scripts.pory"
+# 1032 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 986 "data//maps/TempCopyMap/scripts.pory"
+# 1034 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 987 "data//maps/TempCopyMap/scripts.pory"
+# 1035 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 988 "data//maps/TempCopyMap/scripts.pory"
+# 1036 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 989 "data//maps/TempCopyMap/scripts.pory"
+# 1037 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 990 "data//maps/TempCopyMap/scripts.pory"
+# 1038 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_ROUTE6, 52, 116
 	return
 
 
-# 833 "data//maps/TempCopyMap/scripts.pory"
+# 881 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
-# 833 "data//maps/TempCopyMap/scripts.pory"
+# 881 "data//maps/TempCopyMap/scripts.pory"
 	face_down
 	step_end
 
@@ -1943,52 +2015,57 @@ Common_EventScript_HyperTrainer_Text_9:
 	.string "Speed$"
 
 Common_EventScript_HyperTrainer_Text_10:
-# 779 "data//maps/TempCopyMap/scripts.pory"
+# 768 "data//maps/TempCopyMap/scripts.pory"
+	.string "{STR_VAR_1} cannot grow any\n"
+	.string "stronger in that stat!$"
+
+Common_EventScript_HyperTrainer_Text_11:
+# 827 "data//maps/TempCopyMap/scripts.pory"
 	.string "Imbued with the statue's memories,\n"
 	.string "{STR_VAR_1} became stronger!$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_0:
-# 823 "data//maps/TempCopyMap/scripts.pory"
+# 871 "data//maps/TempCopyMap/scripts.pory"
 	.string "It's a Drifblim!$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
-# 827 "data//maps/TempCopyMap/scripts.pory"
+# 875 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Silversun City. Fly there?$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_2:
-# 839 "data//maps/TempCopyMap/scripts.pory"
+# 887 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim looks dejected...$"
 
 Common_EventScript_DrifblimTravels_ToPelluca_Text_0:
-# 854 "data//maps/TempCopyMap/scripts.pory"
+# 902 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
 	.string "towards Pelluca City. Fly there?$"
 
 Common_EventScript_Dugtrio_ToRoute3_Text_0:
-# 882 "data//maps/TempCopyMap/scripts.pory"
+# 930 "data//maps/TempCopyMap/scripts.pory"
 	.string "Dugtrio is digging into the ground.\n"
 	.string "Follow it?$"
 
 Common_EventScript_Tauros_IvyRiver_Text_0:
-# 920 "data//maps/TempCopyMap/scripts.pory"
+# 968 "data//maps/TempCopyMap/scripts.pory"
 	.string "Tauros is grazing impatiently.\n"
 	.string "Where should Tauros go?$"
 
 Common_EventScript_Tauros_IvyRiver_Text_1:
-# 922 "data//maps/TempCopyMap/scripts.pory"
+# 970 "data//maps/TempCopyMap/scripts.pory"
 	.string "Pelluca City$"
 
 Common_EventScript_Tauros_IvyRiver_Text_2:
-# 922 "data//maps/TempCopyMap/scripts.pory"
+# 970 "data//maps/TempCopyMap/scripts.pory"
 	.string "Route 6 HQ$"
 
 Common_EventScript_Tauros_IvyRiver_Text_3:
-# 927 "data//maps/TempCopyMap/scripts.pory"
+# 975 "data//maps/TempCopyMap/scripts.pory"
 	.string "Tauros is grazing impatiently.$"
 
 Common_EventScript_Tauros_PellucaCity_Text_0:
-# 937 "data//maps/TempCopyMap/scripts.pory"
+# 985 "data//maps/TempCopyMap/scripts.pory"
 	.string "Ivy River HQ$"
 
 Common_Text_Greta_Comecome::
