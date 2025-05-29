@@ -8469,7 +8469,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTORY_ROAD_C] =
     {
 #line 3457
-        .trainerName = _("Slob"),
+        .trainerName = _("Sari"),
 #line 3458
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 3459
@@ -8609,7 +8609,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTORY_ROAD_F] =
     {
 #line 3514
-        .trainerName = _("Nicotay"),
+        .trainerName = _("Toctay"),
 #line 3515
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 3516
@@ -8663,7 +8663,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTORY_ROAD_G] =
     {
 #line 3536
-        .trainerName = _("YUJI"),
+        .trainerName = _("Yuna"),
 #line 3537
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 3538
@@ -8730,7 +8730,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTORY_ROAD_H] =
     {
 #line 3562
-        .trainerName = _("Saisu"),
+        .trainerName = _("Sai"),
 #line 3563
         .trainerClass = TRAINER_CLASS_BACKPACKER,
 #line 3564
