@@ -4514,7 +4514,7 @@
     {
       "id": "LAYOUT_FENNILAHL_TOWN_POKEMON_CENTER",
       "name": "FennilahlTown_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_GASTREE_CITY_POKEMON_CENTER",
       "name": "GastreeCity_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -4664,7 +4664,7 @@
     {
       "id": "LAYOUT_CERAM_BASE_CAMP_POKEMON_CENTER",
       "name": "CeramBaseCamp_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -4794,7 +4794,7 @@
     {
       "id": "LAYOUT_GALECREST_CITY_POKEMON_CENTER",
       "name": "GalecrestCity_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -4924,7 +4924,7 @@
     {
       "id": "LAYOUT_SILVERSUN_CITY_POKEMON_CENTER",
       "name": "SilversunCity_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -5084,7 +5084,7 @@
     {
       "id": "LAYOUT_PELLUCA_CITY_POKEMON_CENTER",
       "name": "PellucaCityPokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -5124,7 +5124,7 @@
     {
       "id": "LAYOUT_MIRROH_BASE_CAMP_POKEMON_CENTER",
       "name": "MirrohBaseCamp_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
@@ -5234,7 +5234,7 @@
     {
       "id": "LAYOUT_WINTERLILY_HOLLOW_POKEMON_CENTER",
       "name": "WinterlilyHollow_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
