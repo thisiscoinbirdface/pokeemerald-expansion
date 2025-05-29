@@ -3,7 +3,7 @@
   "name": "AncientCormoriaFinalIsland",
   "layout": "LAYOUT_ANCIENT_CORMORIA_FINAL_ISLAND",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ANCIENT_CERAM",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

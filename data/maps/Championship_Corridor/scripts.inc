@@ -1,54 +1,51 @@
 Championship_Corridor_MapScripts::
-# 2 "data//maps/Championship_Corridor/scripts.pory"
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Championship_Corridor_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
-Championship_Corridor_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 3 "data//maps/Championship_Corridor/scripts.pory"
-	map_script_2 VAR_TEMP_A, 0, Championship_Register
-	.2byte 0
 
-
-Championship_Register::
-# 8 "data//maps/Championship_Corridor/scripts.pory"
+Championship_Corridor_Register::
+# 4 "data//maps/Championship_Corridor/scripts.pory"
 	lockall
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Championship_Register_Movement_0
-# 11 "data//maps/Championship_Corridor/scripts.pory"
-	waitmovement 0
-# 12 "data//maps/Championship_Corridor/scripts.pory"
-	applymovement 1, Championship_Register_Movement_1
-# 14 "data//maps/Championship_Corridor/scripts.pory"
-	msgbox Championship_Register_Text_0
-# 15 "data//maps/Championship_Corridor/scripts.pory"
+# 6 "data//maps/Championship_Corridor/scripts.pory"
+	applymovement 1, Championship_Corridor_Register_Movement_0
+# 8 "data//maps/Championship_Corridor/scripts.pory"
+	msgbox Championship_Corridor_Register_Text_0
+# 9 "data//maps/Championship_Corridor/scripts.pory"
 	release
-# 17 "data//maps/Championship_Corridor/scripts.pory"
+# 11 "data//maps/Championship_Corridor/scripts.pory"
 	delay 20
-# 18 "data//maps/Championship_Corridor/scripts.pory"
+# 12 "data//maps/Championship_Corridor/scripts.pory"
 	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
-# 19 "data//maps/Championship_Corridor/scripts.pory"
+# 13 "data//maps/Championship_Corridor/scripts.pory"
 	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
-# 20 "data//maps/Championship_Corridor/scripts.pory"
+# 14 "data//maps/Championship_Corridor/scripts.pory"
 	delay 40
-# 21 "data//maps/Championship_Corridor/scripts.pory"
+# 15 "data//maps/Championship_Corridor/scripts.pory"
 	setvar VAR_TEMP_A, 1
-# 24 "data//maps/Championship_Corridor/scripts.pory"
+# 17 "data//maps/Championship_Corridor/scripts.pory"
+	special GameClear
+# 18 "data//maps/Championship_Corridor/scripts.pory"
 	releaseall
 	end
 
 
+Championship_Corridor_Register_Nurse::
+# 23 "data//maps/Championship_Corridor/scripts.pory"
+	msgbox Championship_Corridor_Register_Nurse_Text_0, MSGBOX_NPC
+	end
+
+
 Championship_Corridor_Exit_Nurse::
-# 29 "data//maps/Championship_Corridor/scripts.pory"
+# 28 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_Exit_Nurse_Text_0, MSGBOX_YESNO
-# 30 "data//maps/Championship_Corridor/scripts.pory"
+# 29 "data//maps/Championship_Corridor/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Championship_Corridor_Exit_Nurse_2
 Championship_Corridor_Exit_Nurse_1:
 	end
 
 Championship_Corridor_Exit_Nurse_2:
-# 31 "data//maps/Championship_Corridor/scripts.pory"
-	warp MAP_CHAMPIONSHIP, 10, 10
+# 30 "data//maps/Championship_Corridor/scripts.pory"
+	special StartCredits
 	goto Championship_Corridor_Exit_Nurse_1
 
 
@@ -60,7 +57,7 @@ Championship_Corridor_NPC1::
 
 Championship_Corridor_Mon1::
 # 48 "data//maps/Championship_Corridor/scripts.pory"
-	playmoncry SPECIES_EELECTROSS, CRY_MODE_NORMAL
+	playmoncry SPECIES_EELEKTROSS, CRY_MODE_NORMAL
 # 49 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_Mon1_Text_0
 	end
@@ -102,56 +99,42 @@ Championship_Corridor_NPC4::
 
 Championship_Corridor_Mon4::
 # 84 "data//maps/Championship_Corridor/scripts.pory"
-	playmoncry SPECIES_EELECTROSS, CRY_MODE_NORMAL
+	playmoncry SPECIES_TOXTRICITY, CRY_MODE_NORMAL
 # 85 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_Mon4_Text_0
 	end
 
 
 Championship_Corridor_NPC5::
-# 91 "data//maps/Championship_Corridor/scripts.pory"
+# 92 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_NPC5_Text_0, MSGBOX_NPC
 	end
 
 
 Championship_Corridor_Mon5::
-# 96 "data//maps/Championship_Corridor/scripts.pory"
-	playmoncry SPECIES_EELECTROSS, CRY_MODE_NORMAL
 # 97 "data//maps/Championship_Corridor/scripts.pory"
+	playmoncry SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL
+# 98 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_Mon5_Text_0
 	end
 
 
 Championship_Corridor_TV::
-# 102 "data//maps/Championship_Corridor/scripts.pory"
-	playse SE_APPLAUSE
 # 103 "data//maps/Championship_Corridor/scripts.pory"
+	playse SE_APPLAUSE
+# 104 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox_delay Championship_Corridor_TV_Text_0, Championship_Corridor_TV_Text_1
-	return
+	end
 
 
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-Championship_Register_Movement_0:
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	walk_up
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	walk_up
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	walk_up
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	walk_up
-# 10 "data//maps/Championship_Corridor/scripts.pory"
-	face_right
-	step_end
-
-# 12 "data//maps/Championship_Corridor/scripts.pory"
-Championship_Register_Movement_1:
-# 12 "data//maps/Championship_Corridor/scripts.pory"
+# 6 "data//maps/Championship_Corridor/scripts.pory"
+Championship_Corridor_Register_Movement_0:
+# 6 "data//maps/Championship_Corridor/scripts.pory"
 	face_left
 	step_end
 
-Championship_Register_Text_0:
-# 14 "data//maps/Championship_Corridor/scripts.pory"
+Championship_Corridor_Register_Text_0:
+# 8 "data//maps/Championship_Corridor/scripts.pory"
 	.string "With your defeat to Chara, you have\n"
 	.string "been eliminated from the Cormoria\l"
 	.string "Pokemon Championship.\p"
@@ -163,8 +146,13 @@ Championship_Register_Text_0:
 	.string "For our record, we will now proceed to\n"
 	.string "enter your team into the Hall of Fame.$"
 
+Championship_Corridor_Register_Nurse_Text_0:
+# 23 "data//maps/Championship_Corridor/scripts.pory"
+	.string "Whenever ready, please use the machine\n"
+	.string "next to me.$"
+
 Championship_Corridor_Exit_Nurse_Text_0:
-# 29 "data//maps/Championship_Corridor/scripts.pory"
+# 28 "data//maps/Championship_Corridor/scripts.pory"
 	.string "Would you like to return to the\n"
 	.string "Championship hall?$"
 
@@ -209,23 +197,23 @@ Championship_Corridor_Mon4_Text_0:
 	.string "Toxtricity looks dejected...$"
 
 Championship_Corridor_NPC5_Text_0:
-# 91 "data//maps/Championship_Corridor/scripts.pory"
+# 92 "data//maps/Championship_Corridor/scripts.pory"
 	.string "Listen up, Avalugg! We're not gonna lose\n"
 	.string "next time, got it?\p"
 	.string "We're going to win!\p"
 	.string "...sniff...next time...$"
 
 Championship_Corridor_Mon5_Text_0:
-# 97 "data//maps/Championship_Corridor/scripts.pory"
+# 98 "data//maps/Championship_Corridor/scripts.pory"
 	.string "Avalugg is trying to put on a brave face\n"
 	.string "for its trainer.$"
 
 Championship_Corridor_TV_Text_0:
-# 103 "data//maps/Championship_Corridor/scripts.pory"
+# 104 "data//maps/Championship_Corridor/scripts.pory"
 	.string "TV$"
 
 Championship_Corridor_TV_Text_1:
-# 103 "data//maps/Championship_Corridor/scripts.pory"
+# 104 "data//maps/Championship_Corridor/scripts.pory"
 	.string "And the crowd goes wild as Kohla's\n"
 	.string "Ceruledge knocks out another Pokemon!\l"
 	.string "I must say, we haven't seen a trainer\l"

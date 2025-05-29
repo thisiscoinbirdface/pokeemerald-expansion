@@ -1,0 +1,13 @@
+mapscripts Championship_R1_Lobby_MapScripts{}
+
+
+script Championship_Lobby_Nurse{
+    lockall
+
+    msgbox(format("Congraluations on your victory, trainer!\pI'll now heal your Pokemon."))
+    special(HealPlayerParty)
+    msgbox(format("All the best!"))
+
+    releaseall
+    end
+}

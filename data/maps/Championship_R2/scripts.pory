@@ -1,18 +1,18 @@
-mapscripts Championship_R1_MapScripts{
+mapscripts Championship_R2_MapScripts{    
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-        VAR_TEMP_0, 0: Championship_R1_OnWarp
+        VAR_TEMP_0, 0: Championship_R2_OnWarp
     ]
 
     MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TEMP_1, 0: Championship_R1 
+        VAR_TEMP_1, 0: Championship_R2 
     ]
 }
 
-script Championship_R1_OnWarp{
+script Championship_R2_OnWarp{
     setvar(VAR_TEMP_0, 1)
 }
 
-script Championship_R1{
+script Championship_R2{
     lockall
     setvar(VAR_TEMP_1, 1)
 
@@ -35,9 +35,9 @@ script Championship_R1{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("Before we start, do you recognise me? We met on Route 3.\pThen again at Mt. Mirroh!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
+    msgbox_delay("Chara", format("Hey - before we start, do you recognise me? We met on Route 3.\pThen again at Mt. Mirroh!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
 
-    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_A, format("So this is the Pokemon Championship..."))
+    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_B, format("So this is the Pokemon Championship..."))
 
     //opponent exit
     applymovement(1, moves(jump_in_place_left))

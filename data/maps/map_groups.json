@@ -191,7 +191,15 @@
     "Championship_Hotel_Rooms",
     "Championship_Venue",
     "Championship_R1",
-    "Championship_Corridor"
+    "Championship_Corridor",
+    "Championship_R1_Lobby",
+    "Championship_R2",
+    "Championship_R2_Lobby",
+    "Championship_R3",
+    "Championship_R3_Lobby",
+    "Championship_R4",
+    "Championship_R5",
+    "Championship_R4_Lobby"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

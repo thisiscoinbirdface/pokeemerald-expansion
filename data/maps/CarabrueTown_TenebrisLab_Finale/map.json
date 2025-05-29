@@ -3,7 +3,7 @@
   "name": "CarabrueTown_TenebrisLab_Finale",
   "layout": "LAYOUT_CARABRUE_TOWN_TENEBRIS_LAB_FINALE",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_CARABRUE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

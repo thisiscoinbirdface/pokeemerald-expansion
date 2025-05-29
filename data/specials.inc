@@ -565,3 +565,4 @@ gSpecials::
 	def_special GetCodeFeedback
     def_special StartMining
 	def_special SetMonPokeball
+	def_special StartCredits

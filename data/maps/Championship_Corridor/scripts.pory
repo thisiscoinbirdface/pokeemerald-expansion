@@ -1,14 +1,8 @@
-mapscripts Championship_Corridor_MapScripts{
-    MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TEMP_A, 0: Championship_Register
-    ]
-}
+mapscripts Championship_Corridor_MapScripts{}
 
-script Championship_Register{
+script Championship_Corridor_Register{
     lockall
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_right))
-    waitmovement(0)
     applymovement(1, moves(face_left))
 
     msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 64.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers.\pFor our record, we will now proceed to enter your team into the Hall of Fame."))
@@ -20,15 +14,21 @@ script Championship_Register{
 	delay(40)
     setvar(VAR_TEMP_A, 1)
 
-//    special(GameClear)
+    special(GameClear)
     releaseall
+    end
+}
+
+script Championship_Corridor_Register_Nurse{
+    msgbox(format("Whenever ready, please use the machine next to me."), MSGBOX_NPC)
     end
 }
 
 script Championship_Corridor_Exit_Nurse{
     msgbox(format("Would you like to return to the Championship hall?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
-        warp(MAP_CHAMPIONSHIP, 10, 10)
+        special(StartCredits)
+//        warp(MAP_CHAMPIONSHIP, 10, 10)
     }
     end
 }
@@ -45,7 +45,7 @@ script Championship_Corridor_NPC1{
 }
 
 script Championship_Corridor_Mon1{
-    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_EELEKTROSS, CRY_MODE_NORMAL)
     msgbox(format("Eelectross is in a daze..."))
     end
 }
@@ -81,9 +81,10 @@ script Championship_Corridor_NPC4{
 }
 
 script Championship_Corridor_Mon4{
-    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_TOXTRICITY, CRY_MODE_NORMAL)
     msgbox(format("Toxtricity looks dejected..."))
     end
+
 }
 
 
@@ -93,7 +94,7 @@ script Championship_Corridor_NPC5{
 }
 
 script Championship_Corridor_Mon5{
-    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL)
     msgbox(format("Avalugg is trying to put on a brave face for its trainer."))
     end
 }
@@ -101,4 +102,5 @@ script Championship_Corridor_Mon5{
 script Championship_Corridor_TV{
     playse(SE_APPLAUSE)
     msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokemon! I must say, we haven't seen a trainer like this in years! He sure is this years favourite!"))
+    end
 }

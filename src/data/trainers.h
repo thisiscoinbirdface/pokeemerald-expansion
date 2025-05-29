@@ -9159,6 +9159,8 @@ F_TRAINER_FEMALE |
 #line 3730
     [DIFFICULTY_NORMAL][TRAINER_CHAMPIONSHIP_B] =
     {
+#line 3731
+        .trainerName = _("Stanja"),
 #line 3732
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3733

@@ -5840,6 +5840,86 @@
       "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/Championship_Corridor/border.bin",
       "blockdata_filepath": "data/layouts/Championship_Corridor/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R1_LOBBY",
+      "name": "Championship_R1_Lobby_Layout",
+      "width": 9,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R1_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R1_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R2",
+      "name": "Championship_R2_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R2/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R2_LOBBY",
+      "name": "Championship_R2_Lobby_Layout",
+      "width": 9,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R2_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R2_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R3",
+      "name": "Championship_R3_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R3/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R3_LOBBY",
+      "name": "Championship_R3_Lobby_Layout",
+      "width": 9,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R3_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R3_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R4",
+      "name": "Championship_R4_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R4/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R4/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R5",
+      "name": "Championship_R5_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/Championship_R5/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R5/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R4_LOBBY",
+      "name": "Championship_R4_Lobby_Layout",
+      "width": 9,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_R4_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R4_Lobby/map.bin"
     }
   ]
 }

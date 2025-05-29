@@ -1443,3 +1443,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Championship_R1/scripts.inc"
 
 	.include "data/maps/Championship_Corridor/scripts.inc"
+
+	.include "data/maps/Championship_R1_Lobby/scripts.inc"
+
+	.include "data/maps/Championship_R2/scripts.inc"
+
+	.include "data/maps/Championship_R2_Lobby/scripts.inc"
+
+	.include "data/maps/Championship_R3/scripts.inc"
+
+	.include "data/maps/Championship_R3_Lobby/scripts.inc"
+
+	.include "data/maps/Championship_R4/scripts.inc"
+
+	.include "data/maps/Championship_R5/scripts.inc"
+
+	.include "data/maps/Championship_R4_Lobby/scripts.inc"
