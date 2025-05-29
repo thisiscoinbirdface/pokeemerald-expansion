@@ -1,19 +1,27 @@
 mapscripts Championship_Corridor_MapScripts{
     MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TEMP_0, 0: Championship_Register
+        VAR_TEMP_A, 0: Championship_Register
     ]
 }
 
 script Championship_Register{
     lockall
-    setvar(VAR_TEMP_0, 1)
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5 face_right))
     waitmovement(0)
+    applymovement(1, moves(face_left))
 
+    msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 64.\pCongratulations, {PLAYER}!"))
+    release
+
+	delay(20)
 	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	delay(40)
+    setvar(VAR_TEMP_A, 1)
+    
     special(GameClear)
+
 
     releaseall
     end
