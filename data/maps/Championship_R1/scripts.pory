@@ -14,7 +14,10 @@ script Championship_R1_OnWarp{
 
 script Championship_R1{
     lockall
+
+    //vars and stuff
     setvar(VAR_TEMP_1, 1)
+    setdynamicwarp(MAP_CHAMPIONSHIP_R1_LOBBY, 4, 13)
 
     special(SpawnCameraObject)
 
@@ -25,7 +28,7 @@ script Championship_R1{
     waitmovement(0)
     delay(16)
     
-    msgbox_delay("Announcer", format("Welcome one and all to the Cormoria Pokemon Championship!\pThe first round, the round of 64, is set to begin shortly.\pLet's hear a huge cheer for the trainers! Show your support!"))
+    msgbox_delay("Announcer", format("Welcome one and all to the Cormoria Pokemon Championship!\pThe first round, the round of 32, is set to begin shortly.\pLet's hear a huge cheer for the trainers! Show your support!"))
 
     delay(24)
 
@@ -60,6 +63,7 @@ script Championship_R1{
     waitmovement(0)
     removeobject(2)
 
+    setvar(VAR_CHAMP_STAGE, 2)
     setflag(FLAG_BEAT_R1)
 
     releaseall

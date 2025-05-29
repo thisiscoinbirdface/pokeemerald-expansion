@@ -274,7 +274,7 @@ ChampionshipVenue_SignUp_Text_18:
 # 55 "data//maps/Championship_Venue/scripts.pory"
 	.string "And we're all set!\n"
 	.string "You came right on time, {PLAYER}.\p"
-	.string "We have 64 spots available for trainers\n"
+	.string "We have 32 spots available for trainers\n"
 	.string "and you took the last one!$"
 
 ChampionshipVenue_SignUp_Text_19:
@@ -288,7 +288,7 @@ ChampionshipVenue_SignUp_Text_20:
 	.string "rules carefully, okay?\p"
 	.string "The Cormoria Pokemon Championship is a\n"
 	.string "single-elimination tournament where\l"
-	.string "the 64 strongest trainers in Cormoria\l"
+	.string "the 32 strongest trainers in Cormoria\l"
 	.string "compete for the title of Champion!\p"
 	.string "Each round, you'll be paired against a\n"
 	.string "random opponent. If you win your\l"
@@ -296,9 +296,9 @@ ChampionshipVenue_SignUp_Text_20:
 	.string "If you lose, you'll be eliminated from\l"
 	.string "the tournament!\p"
 	.string "There are four stages - the round of\n"
-	.string "64, the round of 32, the quarter-finals\l"
+	.string "32, the round of 16, the quarter-finals\l"
 	.string "and the semi-finals. Make it through\l"
-	.string "and you'll be a Grand Finalist!$"
+	.string "and you'll be in the grand finals!$"
 
 ChampionshipVenue_SignUp_Text_21:
 # 62 "data//maps/Championship_Venue/scripts.pory"

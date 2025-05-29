@@ -25,163 +25,167 @@ Championship_R1_OnWarp::
 Championship_R1::
 # 16 "data//maps/Championship_R1/scripts.pory"
 	lockall
-# 17 "data//maps/Championship_R1/scripts.pory"
-	setvar VAR_TEMP_1, 1
 # 19 "data//maps/Championship_R1/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 20 "data//maps/Championship_R1/scripts.pory"
+	setdynamicwarp MAP_CHAMPIONSHIP_R1_LOBBY, 4, 13
+# 22 "data//maps/Championship_R1/scripts.pory"
 	special SpawnCameraObject
-# 21 "data//maps/Championship_R1/scripts.pory"
-	setrespawn HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR
-# 23 "data//maps/Championship_R1/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Championship_R1_Movement_0
 # 24 "data//maps/Championship_R1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Championship_R1_Movement_1
-# 25 "data//maps/Championship_R1/scripts.pory"
-	waitmovement 0
+	setrespawn HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR
 # 26 "data//maps/Championship_R1/scripts.pory"
-	delay 16
+	applymovement OBJ_EVENT_ID_CAMERA, Championship_R1_Movement_0
+# 27 "data//maps/Championship_R1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Championship_R1_Movement_1
 # 28 "data//maps/Championship_R1/scripts.pory"
+	waitmovement 0
+# 29 "data//maps/Championship_R1/scripts.pory"
+	delay 16
+# 31 "data//maps/Championship_R1/scripts.pory"
 	msgbox_delay Championship_R1_Text_0, Championship_R1_Text_1
-# 30 "data//maps/Championship_R1/scripts.pory"
-	delay 24
-# 32 "data//maps/Championship_R1/scripts.pory"
-	applymovement 1, Championship_R1_Movement_2
 # 33 "data//maps/Championship_R1/scripts.pory"
-	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_3
-# 35 "data//maps/Championship_R1/scripts.pory"
-	msgbox_delay Championship_R1_Text_0, Championship_R1_Text_4
-# 37 "data//maps/Championship_R1/scripts.pory"
-	applymovement 1, Championship_R1_Movement_2
-# 38 "data//maps/Championship_R1/scripts.pory"
-	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_5
-# 40 "data//maps/Championship_R1/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_A, Championship_R1_Text_6
-# 43 "data//maps/Championship_R1/scripts.pory"
-	applymovement 1, Championship_R1_Movement_2
-# 44 "data//maps/Championship_R1/scripts.pory"
-	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_7
-# 46 "data//maps/Championship_R1/scripts.pory"
-	playmoncry SPECIES_ALTARIA, CRY_MODE_NORMAL
-# 47 "data//maps/Championship_R1/scripts.pory"
-	applymovement 2, Championship_R1_Movement_2
-# 48 "data//maps/Championship_R1/scripts.pory"
-	waitmovement 0
-# 49 "data//maps/Championship_R1/scripts.pory"
 	delay 24
+# 35 "data//maps/Championship_R1/scripts.pory"
+	applymovement 1, Championship_R1_Movement_2
+# 36 "data//maps/Championship_R1/scripts.pory"
+	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_3
+# 38 "data//maps/Championship_R1/scripts.pory"
+	msgbox_delay Championship_R1_Text_0, Championship_R1_Text_4
+# 40 "data//maps/Championship_R1/scripts.pory"
+	applymovement 1, Championship_R1_Movement_2
+# 41 "data//maps/Championship_R1/scripts.pory"
+	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_5
+# 43 "data//maps/Championship_R1/scripts.pory"
+	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_A, Championship_R1_Text_6
+# 46 "data//maps/Championship_R1/scripts.pory"
+	applymovement 1, Championship_R1_Movement_2
+# 47 "data//maps/Championship_R1/scripts.pory"
+	msgbox_delay Championship_R1_Text_2, Championship_R1_Text_7
+# 49 "data//maps/Championship_R1/scripts.pory"
+	playmoncry SPECIES_ALTARIA, CRY_MODE_NORMAL
+# 50 "data//maps/Championship_R1/scripts.pory"
+	applymovement 2, Championship_R1_Movement_2
 # 51 "data//maps/Championship_R1/scripts.pory"
-	applymovement 1, Championship_R1_Movement_3
-# 52 "data//maps/Championship_R1/scripts.pory"
 	waitmovement 0
+# 52 "data//maps/Championship_R1/scripts.pory"
+	delay 24
 # 54 "data//maps/Championship_R1/scripts.pory"
-	applymovement 2, Championship_R1_Movement_4
+	applymovement 1, Championship_R1_Movement_3
 # 55 "data//maps/Championship_R1/scripts.pory"
-	applymovement 1, Championship_R1_Movement_5
-# 56 "data//maps/Championship_R1/scripts.pory"
 	waitmovement 0
 # 57 "data//maps/Championship_R1/scripts.pory"
-	removeobject 1
-# 59 "data//maps/Championship_R1/scripts.pory"
 	applymovement 2, Championship_R1_Movement_4
-# 60 "data//maps/Championship_R1/scripts.pory"
+# 58 "data//maps/Championship_R1/scripts.pory"
+	applymovement 1, Championship_R1_Movement_5
+# 59 "data//maps/Championship_R1/scripts.pory"
 	waitmovement 0
-# 61 "data//maps/Championship_R1/scripts.pory"
-	removeobject 2
+# 60 "data//maps/Championship_R1/scripts.pory"
+	removeobject 1
+# 62 "data//maps/Championship_R1/scripts.pory"
+	applymovement 2, Championship_R1_Movement_4
 # 63 "data//maps/Championship_R1/scripts.pory"
+	waitmovement 0
+# 64 "data//maps/Championship_R1/scripts.pory"
+	removeobject 2
+# 66 "data//maps/Championship_R1/scripts.pory"
+	setvar VAR_CHAMP_STAGE, 2
+# 67 "data//maps/Championship_R1/scripts.pory"
 	setflag FLAG_BEAT_R1
-# 65 "data//maps/Championship_R1/scripts.pory"
+# 69 "data//maps/Championship_R1/scripts.pory"
 	releaseall
 	end
 
 
-# 23 "data//maps/Championship_R1/scripts.pory"
+# 26 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_0:
-# 23 "data//maps/Championship_R1/scripts.pory"
+# 26 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 23 "data//maps/Championship_R1/scripts.pory"
+# 26 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 23 "data//maps/Championship_R1/scripts.pory"
+# 26 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 23 "data//maps/Championship_R1/scripts.pory"
+# 26 "data//maps/Championship_R1/scripts.pory"
 	walk_up
 	step_end
 
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_1:
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	walk_left
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	walk_left
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	walk_up
-# 24 "data//maps/Championship_R1/scripts.pory"
+# 27 "data//maps/Championship_R1/scripts.pory"
 	face_right
 	step_end
 
-# 32 "data//maps/Championship_R1/scripts.pory"
+# 35 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_2:
-# 32 "data//maps/Championship_R1/scripts.pory"
+# 35 "data//maps/Championship_R1/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 51 "data//maps/Championship_R1/scripts.pory"
+# 54 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_3:
-# 51 "data//maps/Championship_R1/scripts.pory"
+# 54 "data//maps/Championship_R1/scripts.pory"
 	walk_left
-# 51 "data//maps/Championship_R1/scripts.pory"
+# 54 "data//maps/Championship_R1/scripts.pory"
 	walk_down
 	step_end
 
-# 54 "data//maps/Championship_R1/scripts.pory"
+# 57 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_4:
-# 54 "data//maps/Championship_R1/scripts.pory"
+# 57 "data//maps/Championship_R1/scripts.pory"
 	walk_left
-# 54 "data//maps/Championship_R1/scripts.pory"
+# 57 "data//maps/Championship_R1/scripts.pory"
 	walk_down
-# 54 "data//maps/Championship_R1/scripts.pory"
+# 57 "data//maps/Championship_R1/scripts.pory"
 	walk_left
 	step_end
 
-# 55 "data//maps/Championship_R1/scripts.pory"
+# 58 "data//maps/Championship_R1/scripts.pory"
 Championship_R1_Movement_5:
-# 55 "data//maps/Championship_R1/scripts.pory"
+# 58 "data//maps/Championship_R1/scripts.pory"
 	walk_down
-# 55 "data//maps/Championship_R1/scripts.pory"
+# 58 "data//maps/Championship_R1/scripts.pory"
 	walk_left
-# 55 "data//maps/Championship_R1/scripts.pory"
+# 58 "data//maps/Championship_R1/scripts.pory"
 	walk_down
 	step_end
 
 Championship_R1_Text_0:
-# 28 "data//maps/Championship_R1/scripts.pory"
+# 31 "data//maps/Championship_R1/scripts.pory"
 	.string "Announcer$"
 
 Championship_R1_Text_1:
-# 28 "data//maps/Championship_R1/scripts.pory"
+# 31 "data//maps/Championship_R1/scripts.pory"
 	.string "Welcome one and all to the Cormoria\n"
 	.string "Pokemon Championship!\p"
-	.string "The first round, the round of 64, is set\n"
+	.string "The first round, the round of 32, is set\n"
 	.string "to begin shortly.\p"
 	.string "Let's hear a huge cheer for the\n"
 	.string "trainers! Show your support!$"
 
 Championship_R1_Text_2:
-# 33 "data//maps/Championship_R1/scripts.pory"
+# 36 "data//maps/Championship_R1/scripts.pory"
 	.string "Chara$"
 
 Championship_R1_Text_3:
-# 33 "data//maps/Championship_R1/scripts.pory"
+# 36 "data//maps/Championship_R1/scripts.pory"
 	.string "I bet they're all cheering outside, but\n"
 	.string "we can't hear anything here.$"
 
 Championship_R1_Text_4:
-# 35 "data//maps/Championship_R1/scripts.pory"
+# 38 "data//maps/Championship_R1/scripts.pory"
 	.string "Trainers - are you ready?$"
 
 Championship_R1_Text_5:
-# 38 "data//maps/Championship_R1/scripts.pory"
+# 41 "data//maps/Championship_R1/scripts.pory"
 	.string "Before we start, do you recognise me?\n"
 	.string "We met on Route 3.\p"
 	.string "Then again at Mt. Mirroh!\n"
@@ -194,11 +198,11 @@ Championship_R1_Text_5:
 	.string "revenge for her!$"
 
 Championship_R1_Text_6:
-# 40 "data//maps/Championship_R1/scripts.pory"
+# 43 "data//maps/Championship_R1/scripts.pory"
 	.string "So this is the Pokemon Championship...$"
 
 Championship_R1_Text_7:
-# 44 "data//maps/Championship_R1/scripts.pory"
+# 47 "data//maps/Championship_R1/scripts.pory"
 	.string "That was such a tough battle!\n"
 	.string "You're a really strong trainer.\p"
 	.string "But I didn't back down even one bit!\n"

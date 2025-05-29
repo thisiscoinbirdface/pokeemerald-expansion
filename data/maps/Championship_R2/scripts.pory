@@ -14,8 +14,12 @@ script Championship_R2_OnWarp{
 
 script Championship_R2{
     lockall
-    setvar(VAR_TEMP_1, 1)
 
+    //vars and stuff
+    setvar(VAR_TEMP_1, 1)
+    setdynamicwarp(MAP_CHAMPIONSHIP_R2_LOBBY, 4, 13)
+
+    //main cutscene
     special(SpawnCameraObject)
 
     setrespawn(HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR)
@@ -25,25 +29,25 @@ script Championship_R2{
     waitmovement(0)
     delay(16)
     
-    msgbox_delay("Announcer", format("Welcome one and all to the Cormoria Pokemon Championship!\pThe first round, the round of 64, is set to begin shortly.\pLet's hear a huge cheer for the trainers! Show your support!"))
+    msgbox_delay("Announcer", format("We're back with the round of 16 in the Cormoria Pokemon Championship!\pLet's hear a huge cheer for the trainers! Show your support!\pThe previous round featured some explosive matches, with crowd favourite Kohla bulldozing..."))
 
     delay(24)
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("I bet they're all cheering outside, but we can't hear anything here."))
+    msgbox_delay("Stanja", format("How pointless - praising an early victory when the only thing that matters is who finishes as the Champion!"))
 
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("Hey - before we start, do you recognise me? We met on Route 3.\pThen again at Mt. Mirroh!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
+    msgbox_delay("Stanja", format("I'm Stanja, the ultimate Bug Maniac!\pMy goal was to become a Gym Leader, but then do you know what happened?\pI beat them all! And then I realised I've got what it takes to become the Champion.\pI know you. I've lost to you before - in Vilethorn Woods.\pBut this battle is different. Thes stakes are different.\pI'M different!"))
 
-    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_B, format("So this is the Pokemon Championship..."))
+    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_B, format("I was so close!"))
 
     //opponent exit
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("That was such a tough battle!\nYou're a really strong trainer.\pBut I didn't back down even one bit! That's enough to make sister proud, right?\pGood luck!"))    
+    msgbox_delay("Stanja", format("Fine. Fine! FINE!\pI know when I'm beat.\nYou were the better trainer.\pI've beaten countless trainers with my Pinsir, but this time, we couldn't pull through.\pI guess this is the caliber of the Pokemon Championship...\pGood luck, {PLAYER}. You're tough - I'm rooting for you!"))    
     
-    playmoncry(SPECIES_ALTARIA, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_PINSIR, CRY_MODE_NORMAL)
     applymovement(2, moves(jump_in_place_left))
     waitmovement(0)
     delay(24)
@@ -60,6 +64,7 @@ script Championship_R2{
     waitmovement(0)
     removeobject(2)
 
+    setvar(VAR_CHAMP_STAGE, 3)
     setflag(FLAG_BEAT_R1)
 
     releaseall

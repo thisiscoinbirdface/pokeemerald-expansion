@@ -52,11 +52,11 @@ script ChampionshipVenue_SignUp{
             playse(SE_DING_DONG)
             msgbox_delay("PC", format("TRAINER {PLAYER} IS ELIGIBLE FOR THE POKEMON CHAMPIONSHIP."))
 
-            msgbox(format("And we're all set!\nYou came right on time, {PLAYER}.\pWe have 64 spots available for trainers and you took the last one!")) 
+            msgbox(format("And we're all set!\nYou came right on time, {PLAYER}.\pWe have 32 spots available for trainers and you took the last one!")) 
             msgbox(format("Do you want me to explain the tournament rules to you?"), MSGBOX_YESNO) 
 
             if (var(VAR_RESULT) == 1){
-                msgbox(format("Alright - make sure you listen to the rules carefully, okay?\pThe Cormoria Pokemon Championship is a single-elimination tournament where the 64 strongest trainers in Cormoria compete for the title of Champion!\pEach round, you'll be paired against a random opponent. If you win your battle, you advance to the next stage. If you lose, you'll be eliminated from the tournament!\pThere are four stages - the round of 64, the round of 32, the quarter-finals and the semi-finals. Make it through and you'll be a Grand Finalist!"))
+                msgbox(format("Alright - make sure you listen to the rules carefully, okay?\pThe Cormoria Pokemon Championship is a single-elimination tournament where the 32 strongest trainers in Cormoria compete for the title of Champion!\pEach round, you'll be paired against a random opponent. If you win your battle, you advance to the next stage. If you lose, you'll be eliminated from the tournament!\pThere are four stages - the round of 32, the round of 16, the quarter-finals and the semi-finals. Make it through and you'll be in the grand finals!"))
             }
 
             msgbox(format("You can check your paired opponent on the noticeboard to the left.\pWhen you're ready, please head inside through the door to your right.\pGood luck!"))

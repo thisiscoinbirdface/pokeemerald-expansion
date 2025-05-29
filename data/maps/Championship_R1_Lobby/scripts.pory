@@ -1,5 +1,27 @@
 mapscripts Championship_R1_Lobby_MapScripts{}
 
+script Championship_Lobby_Teala{
+    lockall
+    msgbox(format("Are you ready to proceed to the next round?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        //move sequence
+        applymovement(2, moves(walk_right face_left))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+        waitmovement(0)
+        delay(8)
+
+
+        if (var(VAR_CHAMP_STAGE) == 2) {warp(MAP_CHAMPIONSHIP_R2, 4, 8)}
+        if (var(VAR_CHAMP_STAGE) == 3) {warp(MAP_CHAMPIONSHIP_R3, 4, 8)}
+        if (var(VAR_CHAMP_STAGE) == 4) {warp(MAP_CHAMPIONSHIP_R4, 4, 8)}
+        
+    }
+
+    releaseall
+    end
+}
+
 
 script Championship_Lobby_Nurse{
     lockall
