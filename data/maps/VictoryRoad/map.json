@@ -2,15 +2,15 @@
   "id": "MAP_VICTORY_ROAD",
   "name": "VictoryRoad",
   "layout": "LAYOUT_VICTORY_ROAD",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "music": "MUS_RG_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_VICTORY_CAPE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {

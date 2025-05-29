@@ -1,0 +1,45 @@
+mapscripts Championship_MapScripts{}
+
+
+//NPCs
+script VictoryCape_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC4{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC5{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC6{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC7{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+script VictoryCape_NPC8{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+
+//Gabrielle
+script VictoryCape_Gab{
+    msgbox(format(""), MSGBOX_NPC)
+    end    
+}
+
+
+

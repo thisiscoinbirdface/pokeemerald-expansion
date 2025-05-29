@@ -1441,3 +1441,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Championship_Venue/scripts.inc"
 
 	.include "data/maps/Championship_R1/scripts.inc"
+
+	.include "data/maps/Championship_Corridor/scripts.inc"

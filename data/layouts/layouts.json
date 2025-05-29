@@ -5814,8 +5814,8 @@
     {
       "id": "LAYOUT_CHAMPIONSHIP_VENUE",
       "name": "Championship_Venue_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 19,
+      "height": 18,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleFactory",
       "border_filepath": "data/layouts/Championship_Venue/border.bin",
@@ -5830,6 +5830,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Championship_R1/border.bin",
       "blockdata_filepath": "data/layouts/Championship_R1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_CORRIDOR",
+      "name": "Championship_Corridor_Layout",
+      "width": 9,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/Championship_Corridor/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Corridor/map.bin"
     }
   ]
 }
