@@ -7,11 +7,11 @@ mapscripts Championship_Corridor_MapScripts{
 script Championship_Register{
     lockall
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5 face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_right))
     waitmovement(0)
     applymovement(1, moves(face_left))
 
-    msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 64.\pCongratulations, {PLAYER}!"))
+    msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 64.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers.\pFor our record, we will now proceed to enter your team into the Hall of Fame."))
     release
 
 	delay(20)
@@ -19,11 +19,86 @@ script Championship_Register{
 	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	delay(40)
     setvar(VAR_TEMP_A, 1)
-    
-    special(GameClear)
 
-
+//    special(GameClear)
     releaseall
     end
 }
 
+script Championship_Corridor_Exit_Nurse{
+    msgbox(format("Would you like to return to the Championship hall?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1){
+        warp(MAP_CHAMPIONSHIP, 10, 10)
+    }
+    end
+}
+
+
+
+
+
+
+//defeated trainers
+script Championship_Corridor_NPC1{
+    msgbox(format("We could've been up there..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_Corridor_Mon1{
+    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    msgbox(format("Eelectross is in a daze..."))
+    end
+}
+
+
+script Championship_Corridor_NPC2{
+    msgbox(format("Sniff...I just can't believe it...after all our training..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_Corridor_Mon2{
+    playmoncry(SPECIES_EXCADRILL, CRY_MODE_NORMAL)
+    msgbox(format("Excadrill is trying to console its trainer, but it's clearly sad too."))
+    end
+}
+
+
+script Championship_Corridor_NPC3{
+    msgbox(format("My first-round opponent was the Ace Rookie from Galecrest...\pRoserade and I never had a chance.\pIt's fine...\pI just...sniff..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_Corridor_Mon3{
+    playmoncry(SPECIES_ROSERADE, CRY_MODE_NORMAL)
+    msgbox(format("Roserade's petals look a little singed..."))
+    end
+}
+
+
+script Championship_Corridor_NPC4{
+    msgbox(format("...\pToxtricity and I trained for years...it was over so fast..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_Corridor_Mon4{
+    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    msgbox(format("Toxtricity looks dejected..."))
+    end
+}
+
+
+script Championship_Corridor_NPC5{
+    msgbox(format("Listen up, Avalugg! We're not gonna lose next time, got it?\pWe're going to win!\p...sniff...next time..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_Corridor_Mon5{
+    playmoncry(SPECIES_EELECTROSS, CRY_MODE_NORMAL)
+    msgbox(format("Avalugg is trying to put on a brave face for its trainer."))
+    end
+}
+
+script Championship_Corridor_TV{
+    playse(SE_APPLAUSE)
+    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokemon! I must say, we haven't seen a trainer like this in years! He sure is this years favourite!"))
+}
