@@ -1,23 +1,23 @@
-mapscripts Championship_R2_MapScripts{    
+mapscripts Championship_R3_MapScripts{    
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-        VAR_TEMP_0, 0: Championship_R2_OnWarp
+        VAR_TEMP_0, 0: Championship_R3_OnWarp
     ]
 
     MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TEMP_1, 0: Championship_R2 
+        VAR_TEMP_1, 0: Championship_R3
     ]
 }
 
-script Championship_R2_OnWarp{
+script Championship_R3_OnWarp{
     setvar(VAR_TEMP_0, 1)
 }
 
-script Championship_R2{
+script Championship_R3{
     lockall
 
     //vars and stuff
     setvar(VAR_TEMP_1, 1)
-    setdynamicwarp(MAP_CHAMPIONSHIP_R2_LOBBY, 4, 13)
+    setdynamicwarp(MAP_CHAMPIONSHIP_R3_LOBBY, 4, 13)
 
     //main cutscene
     special(SpawnCameraObject)
@@ -62,12 +62,10 @@ script Championship_R2{
     waitmovement(0)
     removeobject(2)
 
-    setvar(VAR_CHAMP_STAGE, 3)
-    setflag(FLAG_BEAT_R2)
+    setvar(VAR_CHAMP_STAGE, 4)
+    setflag(FLAG_BEAT_R3)
 
     releaseall
     end
 
 }
-
-

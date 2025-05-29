@@ -44,7 +44,7 @@ script Championship_R1{
 
     //opponent exit
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("That was such a tough battle!\nYou're a really strong trainer.\pBut I didn't back down even one bit! That's enough to make sister proud, right?\pGood luck!"))    
+    msgbox_delay("Chara", format("That was such a tough battle!\nYou're a really strong trainer.\pBut you know what? I didn't back down even one bit! That's enough to make my sister proud, right?\pGood luck!"))    
     
     playmoncry(SPECIES_ALTARIA, CRY_MODE_NORMAL)
     applymovement(2, moves(jump_in_place_left))
@@ -59,7 +59,7 @@ script Championship_R1{
     waitmovement(0)
     removeobject(1)
 
-    applymovement(2, moves(walk_left walk_down walk_left))
+    applymovement(2, moves(walk_down))
     waitmovement(0)
     removeobject(2)
 

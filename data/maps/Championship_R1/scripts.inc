@@ -82,7 +82,7 @@ Championship_R1::
 # 60 "data//maps/Championship_R1/scripts.pory"
 	removeobject 1
 # 62 "data//maps/Championship_R1/scripts.pory"
-	applymovement 2, Championship_R1_Movement_4
+	applymovement 2, Championship_R1_Movement_6
 # 63 "data//maps/Championship_R1/scripts.pory"
 	waitmovement 0
 # 64 "data//maps/Championship_R1/scripts.pory"
@@ -158,6 +158,12 @@ Championship_R1_Movement_5:
 	walk_down
 	step_end
 
+# 62 "data//maps/Championship_R1/scripts.pory"
+Championship_R1_Movement_6:
+# 62 "data//maps/Championship_R1/scripts.pory"
+	walk_down
+	step_end
+
 Championship_R1_Text_0:
 # 31 "data//maps/Championship_R1/scripts.pory"
 	.string "Announcer$"
@@ -205,7 +211,7 @@ Championship_R1_Text_7:
 # 47 "data//maps/Championship_R1/scripts.pory"
 	.string "That was such a tough battle!\n"
 	.string "You're a really strong trainer.\p"
-	.string "But I didn't back down even one bit!\n"
-	.string "That's enough to make sister proud,\l"
-	.string "right?\p"
+	.string "But you know what? I didn't back down\n"
+	.string "even one bit! That's enough to make my\l"
+	.string "sister proud, right?\p"
 	.string "Good luck!$"

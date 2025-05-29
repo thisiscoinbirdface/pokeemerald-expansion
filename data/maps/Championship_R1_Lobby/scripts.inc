@@ -61,7 +61,7 @@ Championship_Lobby_Nurse::
 # 29 "data//maps/Championship_R1_Lobby/scripts.pory"
 	msgbox Championship_Lobby_Nurse_Text_0
 # 30 "data//maps/Championship_R1_Lobby/scripts.pory"
-	special HealPlayerParty
+	call Common_EventScript_OutOfCenterPartyHeal
 # 31 "data//maps/Championship_R1_Lobby/scripts.pory"
 	msgbox Championship_Lobby_Nurse_Text_1
 # 33 "data//maps/Championship_R1_Lobby/scripts.pory"

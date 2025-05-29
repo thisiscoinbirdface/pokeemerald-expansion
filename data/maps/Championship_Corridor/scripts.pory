@@ -55,25 +55,27 @@ script Championship_Corridor_Exit_Nurse{
 
 //defeated trainers
 script Championship_Corridor_NPC1{
-    msgbox(format("We could've been up there..."), MSGBOX_NPC)
+    lockall
+    msgbox(format("We could've been up there..."))
+    releaseall
     end
 }
 
 script Championship_Corridor_Mon1{
     playmoncry(SPECIES_EELEKTROSS, CRY_MODE_NORMAL)
-    msgbox(format("Eelectross is in a daze..."))
+    msgbox(format("Eelectross is in a daze..."), MSGBOX_NPC)
     end
 }
 
 
 script Championship_Corridor_NPC2{
-    msgbox(format("Sniff...I just can't believe it...after all our training..."), MSGBOX_NPC)
+    msgbox(format("Sniff...I just can't believe it..\n...after all our training..."), MSGBOX_NPC)
     end
 }
 
 script Championship_Corridor_Mon2{
     playmoncry(SPECIES_EXCADRILL, CRY_MODE_NORMAL)
-    msgbox(format("Excadrill is trying to console its trainer, but it's clearly sad too."))
+    msgbox(format("Excadrill is trying to console its trainer, but it's clearly sad too."), MSGBOX_NPC)
     end
 }
 
@@ -85,37 +87,39 @@ script Championship_Corridor_NPC3{
 
 script Championship_Corridor_Mon3{
     playmoncry(SPECIES_ROSERADE, CRY_MODE_NORMAL)
-    msgbox(format("Roserade's petals look a little singed..."))
+    msgbox(format("Roserade's petals look a little singed..."), MSGBOX_NPC)
     end
 }
 
 
 script Championship_Corridor_NPC4{
-    msgbox(format("...\pToxtricity and I trained for years...it was over so fast..."), MSGBOX_NPC)
+    msgbox(format("...\pToxtricity and I trained for years...\n...it was over so fast..."), MSGBOX_NPC)
     end
 }
 
 script Championship_Corridor_Mon4{
     playmoncry(SPECIES_TOXTRICITY, CRY_MODE_NORMAL)
-    msgbox(format("Toxtricity looks dejected..."))
+    msgbox(format("Toxtricity looks dejected..."), MSGBOX_NPC)
     end
 
 }
 
 
 script Championship_Corridor_NPC5{
-    msgbox(format("Listen up, Avalugg! We're not gonna lose next time, got it?\pWe're going to win!\p...sniff...next time..."), MSGBOX_NPC)
+    lockall
+    msgbox(format("Listen up, Avalugg! We're not gonna lose next time, got it?\pWe're going to win!\p...sniff...next time..."))
+    releaseall
     end
 }
 
 script Championship_Corridor_Mon5{
     playmoncry(SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL)
-    msgbox(format("Avalugg is trying to put on a brave face for its trainer."))
+    msgbox(format("Avalugg is trying to put on a brave face for its trainer."), MSGBOX_NPC)
     end
 }
 
 script Championship_Corridor_TV{
     playse(SE_APPLAUSE)
-    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokemon! I must say, we haven't seen a trainer like this in years! He sure is this years favourite!"))
+    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokemon! I must say, we haven't seen a trainer like this in years! The skill! The style!\pHe sure is this years favourite!"))
     end
 }

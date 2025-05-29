@@ -44,54 +44,52 @@ Championship_R2::
 # 32 "data//maps/Championship_R2/scripts.pory"
 	msgbox_delay Championship_R2_Text_0, Championship_R2_Text_1
 # 34 "data//maps/Championship_R2/scripts.pory"
-	delay 24
-# 36 "data//maps/Championship_R2/scripts.pory"
 	applymovement 1, Championship_R2_Movement_2
-# 37 "data//maps/Championship_R2/scripts.pory"
+# 35 "data//maps/Championship_R2/scripts.pory"
 	msgbox_delay Championship_R2_Text_2, Championship_R2_Text_3
-# 39 "data//maps/Championship_R2/scripts.pory"
+# 37 "data//maps/Championship_R2/scripts.pory"
 	msgbox_delay Championship_R2_Text_0, Championship_R2_Text_4
-# 41 "data//maps/Championship_R2/scripts.pory"
+# 39 "data//maps/Championship_R2/scripts.pory"
 	applymovement 1, Championship_R2_Movement_2
-# 42 "data//maps/Championship_R2/scripts.pory"
+# 40 "data//maps/Championship_R2/scripts.pory"
 	msgbox_delay Championship_R2_Text_2, Championship_R2_Text_5
-# 44 "data//maps/Championship_R2/scripts.pory"
+# 42 "data//maps/Championship_R2/scripts.pory"
 	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_B, Championship_R2_Text_6
-# 47 "data//maps/Championship_R2/scripts.pory"
+# 45 "data//maps/Championship_R2/scripts.pory"
 	applymovement 1, Championship_R2_Movement_2
-# 48 "data//maps/Championship_R2/scripts.pory"
+# 46 "data//maps/Championship_R2/scripts.pory"
 	msgbox_delay Championship_R2_Text_2, Championship_R2_Text_7
-# 50 "data//maps/Championship_R2/scripts.pory"
+# 48 "data//maps/Championship_R2/scripts.pory"
 	playmoncry SPECIES_PINSIR, CRY_MODE_NORMAL
-# 51 "data//maps/Championship_R2/scripts.pory"
+# 49 "data//maps/Championship_R2/scripts.pory"
 	applymovement 2, Championship_R2_Movement_2
-# 52 "data//maps/Championship_R2/scripts.pory"
+# 50 "data//maps/Championship_R2/scripts.pory"
 	waitmovement 0
-# 53 "data//maps/Championship_R2/scripts.pory"
+# 51 "data//maps/Championship_R2/scripts.pory"
 	delay 24
-# 55 "data//maps/Championship_R2/scripts.pory"
+# 53 "data//maps/Championship_R2/scripts.pory"
 	applymovement 1, Championship_R2_Movement_3
+# 54 "data//maps/Championship_R2/scripts.pory"
+	waitmovement 0
 # 56 "data//maps/Championship_R2/scripts.pory"
-	waitmovement 0
-# 58 "data//maps/Championship_R2/scripts.pory"
 	applymovement 2, Championship_R2_Movement_4
-# 59 "data//maps/Championship_R2/scripts.pory"
+# 57 "data//maps/Championship_R2/scripts.pory"
 	applymovement 1, Championship_R2_Movement_5
-# 60 "data//maps/Championship_R2/scripts.pory"
+# 58 "data//maps/Championship_R2/scripts.pory"
 	waitmovement 0
-# 61 "data//maps/Championship_R2/scripts.pory"
+# 59 "data//maps/Championship_R2/scripts.pory"
 	removeobject 1
-# 63 "data//maps/Championship_R2/scripts.pory"
-	applymovement 2, Championship_R2_Movement_4
-# 64 "data//maps/Championship_R2/scripts.pory"
+# 61 "data//maps/Championship_R2/scripts.pory"
+	applymovement 2, Championship_R2_Movement_6
+# 62 "data//maps/Championship_R2/scripts.pory"
 	waitmovement 0
-# 65 "data//maps/Championship_R2/scripts.pory"
+# 63 "data//maps/Championship_R2/scripts.pory"
 	removeobject 2
-# 67 "data//maps/Championship_R2/scripts.pory"
+# 65 "data//maps/Championship_R2/scripts.pory"
 	setvar VAR_CHAMP_STAGE, 3
+# 66 "data//maps/Championship_R2/scripts.pory"
+	setflag FLAG_BEAT_R2
 # 68 "data//maps/Championship_R2/scripts.pory"
-	setflag FLAG_BEAT_R1
-# 70 "data//maps/Championship_R2/scripts.pory"
 	releaseall
 	end
 
@@ -124,37 +122,43 @@ Championship_R2_Movement_1:
 	face_right
 	step_end
 
-# 36 "data//maps/Championship_R2/scripts.pory"
+# 34 "data//maps/Championship_R2/scripts.pory"
 Championship_R2_Movement_2:
-# 36 "data//maps/Championship_R2/scripts.pory"
+# 34 "data//maps/Championship_R2/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 55 "data//maps/Championship_R2/scripts.pory"
+# 53 "data//maps/Championship_R2/scripts.pory"
 Championship_R2_Movement_3:
-# 55 "data//maps/Championship_R2/scripts.pory"
+# 53 "data//maps/Championship_R2/scripts.pory"
 	walk_left
-# 55 "data//maps/Championship_R2/scripts.pory"
+# 53 "data//maps/Championship_R2/scripts.pory"
 	walk_down
 	step_end
 
-# 58 "data//maps/Championship_R2/scripts.pory"
+# 56 "data//maps/Championship_R2/scripts.pory"
 Championship_R2_Movement_4:
-# 58 "data//maps/Championship_R2/scripts.pory"
+# 56 "data//maps/Championship_R2/scripts.pory"
 	walk_left
-# 58 "data//maps/Championship_R2/scripts.pory"
+# 56 "data//maps/Championship_R2/scripts.pory"
 	walk_down
-# 58 "data//maps/Championship_R2/scripts.pory"
+# 56 "data//maps/Championship_R2/scripts.pory"
 	walk_left
 	step_end
 
-# 59 "data//maps/Championship_R2/scripts.pory"
+# 57 "data//maps/Championship_R2/scripts.pory"
 Championship_R2_Movement_5:
-# 59 "data//maps/Championship_R2/scripts.pory"
+# 57 "data//maps/Championship_R2/scripts.pory"
 	walk_down
-# 59 "data//maps/Championship_R2/scripts.pory"
+# 57 "data//maps/Championship_R2/scripts.pory"
 	walk_left
-# 59 "data//maps/Championship_R2/scripts.pory"
+# 57 "data//maps/Championship_R2/scripts.pory"
+	walk_down
+	step_end
+
+# 61 "data//maps/Championship_R2/scripts.pory"
+Championship_R2_Movement_6:
+# 61 "data//maps/Championship_R2/scripts.pory"
 	walk_down
 	step_end
 
@@ -173,40 +177,39 @@ Championship_R2_Text_1:
 	.string "favourite Kohla bulldozing...$"
 
 Championship_R2_Text_2:
-# 37 "data//maps/Championship_R2/scripts.pory"
+# 35 "data//maps/Championship_R2/scripts.pory"
 	.string "Stanja$"
 
 Championship_R2_Text_3:
-# 37 "data//maps/Championship_R2/scripts.pory"
+# 35 "data//maps/Championship_R2/scripts.pory"
 	.string "How pointless - praising an early\n"
 	.string "victory when the only thing that\l"
-	.string "matters is who finishes as the\l"
-	.string "Champion!$"
+	.string "matters is who becomes the Champion!$"
 
 Championship_R2_Text_4:
-# 39 "data//maps/Championship_R2/scripts.pory"
+# 37 "data//maps/Championship_R2/scripts.pory"
 	.string "Trainers - are you ready?$"
 
 Championship_R2_Text_5:
-# 42 "data//maps/Championship_R2/scripts.pory"
+# 40 "data//maps/Championship_R2/scripts.pory"
 	.string "I'm Stanja, the ultimate Bug Maniac!\p"
 	.string "My goal was to become a Gym Leader, but\n"
 	.string "then do you know what happened?\p"
-	.string "I beat them all! And then I realised I've\n"
-	.string "got what it takes to become the\l"
-	.string "Champion.\p"
-	.string "I know you. I've lost to you before - in\n"
-	.string "Vilethorn Woods.\p"
-	.string "But this battle is different. Thes\n"
-	.string "stakes are different.\p"
+	.string "I beat them all! And then I realised\n"
+	.string "that Pinsir and I had what it takes to\l"
+	.string "become the Champion.\p"
+	.string "I know you. I've lost to you before.\n"
+	.string "We fought in Vilethorn Woods.\p"
+	.string "But this battle is different.\n"
+	.string "The stakes are different.\p"
 	.string "I'M different!$"
 
 Championship_R2_Text_6:
-# 44 "data//maps/Championship_R2/scripts.pory"
+# 42 "data//maps/Championship_R2/scripts.pory"
 	.string "I was so close!$"
 
 Championship_R2_Text_7:
-# 48 "data//maps/Championship_R2/scripts.pory"
+# 46 "data//maps/Championship_R2/scripts.pory"
 	.string "Fine. Fine! FINE!\p"
 	.string "I know when I'm beat.\n"
 	.string "You were the better trainer.\p"
