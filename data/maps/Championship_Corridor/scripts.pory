@@ -1,0 +1,21 @@
+mapscripts Championship_Corridor_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_0, 0: Championship_Register
+    ]
+}
+
+script Championship_Register{
+    lockall
+    setvar(VAR_TEMP_0, 1)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5))
+    waitmovement(0)
+
+	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+    special(GameClear)
+
+    releaseall
+    end
+}
+

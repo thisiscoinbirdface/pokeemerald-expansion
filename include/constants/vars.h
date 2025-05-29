@@ -285,7 +285,7 @@
 
     #define VAR_SSELEGANT_CUTSCENES                          0x4061 // Unused Var
     #define VAR_UNCHARTED_ISLAND_CUTSCENES                   0x4062 // Unused Var
-    #define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
+    #define VAR_CHAMP_STAGE                                  0x40B8 // Unused Var (0: not start, 1,2,3,4,5, 6 - win)
     #define VAR_UNUSED_0x40BB                                0x40BB // Unused Var
     #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
     #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var

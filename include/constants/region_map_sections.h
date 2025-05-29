@@ -254,8 +254,8 @@
 #define MAPSEC_ANCIENT_CORMORIA_FINAL_ISLAND 0x92
 #define MAPSEC_VICTORY_CAPE                  0x93
 #define MAPSEC_VICTORY_ROAD_CORMORIA         0x94
-#define MAPSEC_SIX_ISLAND                   0x95
-#define MAPSEC_KINDLE_ROAD                  0x96
+#define MAPSEC_CHAMPIONSHIP_CORRIDOR        0x95
+#define MAPSEC_CHAMPIONSHIP                  0x96 //this is unused
 
 
 #define MAPSEC_NONE                         0xFB

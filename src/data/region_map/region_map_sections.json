@@ -1146,7 +1146,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_SIX_ISLAND",
+      "map_section": "MAPSEC_CHAMPIONSHIP_CORRIDOR",
       "name": "SIX ISLAND",
       "x": 0,
       "y": 0,
@@ -1154,7 +1154,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KINDLE_ROAD",
+      "map_section": "MAPSEC_CHAMPIONSHIP",
       "name": "KINDLE ROAD",
       "x": 0,
       "y": 0,

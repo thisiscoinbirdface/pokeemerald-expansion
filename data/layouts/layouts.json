@@ -5824,20 +5824,20 @@
     {
       "id": "LAYOUT_CHAMPIONSHIP_R1",
       "name": "Championship_R1_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/Championship_R1/border.bin",
       "blockdata_filepath": "data/layouts/Championship_R1/map.bin"
     },
     {
       "id": "LAYOUT_CHAMPIONSHIP_CORRIDOR",
       "name": "Championship_Corridor_Layout",
-      "width": 9,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/Championship_Corridor/border.bin",
       "blockdata_filepath": "data/layouts/Championship_Corridor/map.bin"
     }

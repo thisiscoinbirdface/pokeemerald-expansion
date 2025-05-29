@@ -1,0 +1,109 @@
+raw`
+    .set LOCALID_TEALA, 1
+`
+
+mapscripts Championship_Venue_MapScripts{}
+
+
+
+
+
+
+script ChampionshipVenue_SignUp{
+    if (flag(FLAG_CHAMP_SIGNUP_DONE)){
+        msgbox(format("Please head to your designated battle hall through the right.\pGood luck, trainer!"), MSGBOX_NPC)
+        end
+    } else {
+        msgbox(format("Welcome, trainer, to this years\nCormoria Pokemon Championships!\pAre you here to register your participation?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("This sign-up center is for participating trainers only.\pIf you're looking for the hotel,\nit's to the left of this building.\pHave a nice day!"), MSGBOX_NPC)
+            end
+        } else {
+            msgbox(format("Very good!\pFirstly, I'll need your trainer card."))
+            msgbox(format("{PLAYER} handed the attendant the Trainer Card."), MSGBOX_SIGN)
+            msgbox(format("I'll just swipe in in here..."))
+            msgbox_delay("PC", format("PROCESSING...\pTRAINER NAME: {PLAYER}"))
+            msgbox_delay("PC", format("HARD BADGE..."))
+            playse(SE_NOTE_C)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("FLAME BADGE..."))
+            playse(SE_NOTE_D)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("NORMAL BADGE..."))
+            playse(SE_NOTE_E)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("DRAMA BADGE..."))
+            playse(SE_NOTE_F)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("IRONFIST BADGE..."))
+            playse(SE_NOTE_G)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("SPARK BADGE..."))
+            playse(SE_NOTE_A)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("WAVE BADGE..."))
+            playse(SE_NOTE_B)
+            msgbox_delay("PC", format("REGISTERED."))
+            msgbox_delay("PC", format("RUST BADGE..."))
+            playse(SE_NOTE_C_HIGH)
+            msgbox_delay("PC", format("REGISTERED."))
+            delay(16)
+            playse(SE_DING_DONG)
+            msgbox_delay("PC", format("TRAINER {PLAYER} IS ELIGIBLE FOR THE POKEMON CHAMPIONSHIP."))
+
+            msgbox(format("And we're all set!\nYou came right on time, {PLAYER}.\pWe have 64 spots available for trainers and you took the last one!")) 
+            msgbox(format("Do you want me to explain the tournament rules to you?"), MSGBOX_YESNO) 
+
+            if (var(VAR_RESULT) == 1){
+                msgbox(format("Alright - make sure you listen to the rules carefully, okay?\pThe Cormoria Pokemon Championship is a single-elimination tournament where the 64 strongest trainers in Cormoria compete for the title of Champion!\pEach round, you'll be paired against a random opponent. If you win your battle, you advance to the next stage. If you lose, you'll be eliminated from the tournament!\pThere are four stages - the round of 64, the round of 32, the quarter-finals and the semi-finals. Make it through and you'll be a Grand Finalist!"))
+            }
+
+            msgbox(format("You can check your paired opponent on the noticeboard to the left.\pWhen you're ready, please head inside through the door to your right.\pGood luck!"))
+
+            setflag(FLAG_CHAMP_SIGNUP_DONE)
+            setvar(VAR_CHAMP_STAGE, 1)
+
+            releaseall
+            end
+
+        }
+    }
+}
+
+script ChampionshipVenue_Entry{
+    if (flag(FLAG_CHAMP_SIGNUP_DONE)){
+        msgbox(format("Welcome trainer!\nAre you ready for your match?"), MSGBOX_YESNO)
+
+        if (var(VAR_RESULT) == 1){
+            //pokenav confirmation
+
+            msgbox(format("Warning! You are about to enter the Pokemon Championship.\pIf you lose at any point in the tournament, you will be eliminated\Nand your game will auto-save.\pMake sure you're ready!"), MSGBOX_POKENAV)
+            dynmultichoice(10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm ready!", "Not yet")              
+
+            if (var(VAR_RESULT) == 1) {end}
+
+            msgbox(format("Very good. Please follow me."))
+            release
+
+            applymovement(LOCALID_TEALA, moves(walk_up * 2 walk_right face_left))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4))
+            waitmovement(0)
+
+            //exit to relevant round
+            if (var(VAR_CHAMP_STAGE) == 1){
+                warp(MAP_CHAMPIONSHIP_R1, 4, 8)
+            }
+        }
+
+    } else {
+        msgbox(format("Sorry, only participating trainers may enter past this point.\pAre you a trainer?\pPlease register yourself at the\nfront desk to your left."), MSGBOX_NPC)
+    }
+
+    release
+    end
+}
+
+
+
+

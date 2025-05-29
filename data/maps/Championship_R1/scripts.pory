@@ -1,0 +1,47 @@
+mapscripts Championship_R1_MapScripts{
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_TEMP_0, 0: Championship_R1_OnWarp
+    ]
+
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_1, 0: Championship_R1 
+    ]
+}
+
+script Championship_R1_OnWarp{
+    setvar(VAR_TEMP_0, 1)
+}
+
+script Championship_R1{
+    lockall
+    setvar(VAR_TEMP_1, 1)
+
+    special(SpawnCameraObject)
+
+    setrespawn(HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up * 2 face_right))
+    waitmovement(0)
+    delay(16)
+    
+    msgbox_delay("Announcer", format("Welcome one and all to the Cormoria Pokemon Championship!\pThe first round, the round of 64, is set to begin shortly.\pLet's hear a huge cheer for the trainers! Show your support!"))
+
+    delay(24)
+
+    applymovement(1, moves(jump_in_place_left))
+    msgbox_delay("Chara", format("I bet they're all cheering outside, but we can't hear anything here."))
+
+    msgbox_delay("Announcer", format("Trainers - are you ready?"))
+
+    applymovement(1, moves(jump_in_place_left))
+    msgbox_delay("Chara", format("Hey - before we start, do you recognise me? We met on Route 3.\pThen again at Mt. Mirroh!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
+
+    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_A, format("So this is the Pokemon Championship..."))
+
+    releaseall
+    end
+
+}
+
+
