@@ -1,0 +1,189 @@
+{
+  "id": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+  "name": "Championship_Hotel_Rooms",
+  "layout": "LAYOUT_CHAMPIONSHIP_HOTEL_ROOMS",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 18,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 6,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 3,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 21,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 4,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 3,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 19,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 18,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 4,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 3,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 19,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 18,
+      "y": 39,
+      "elevation": 0,
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
+      "dest_warp_id": "11"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

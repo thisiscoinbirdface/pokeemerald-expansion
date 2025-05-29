@@ -5780,6 +5780,56 @@
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/Championship/border.bin",
       "blockdata_filepath": "data/layouts/Championship/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_POKEMART",
+      "name": "Championship_Pokemart_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Championship_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_HOTEL",
+      "name": "Championship_Hotel_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/Championship_Hotel/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Hotel/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_HOTEL_ROOMS",
+      "name": "Championship_Hotel_Rooms_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/Championship_Hotel_Rooms/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Hotel_Rooms/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_VENUE",
+      "name": "Championship_Venue_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/Championship_Venue/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Venue/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_R1",
+      "name": "Championship_R1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Championship_R1/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_R1/map.bin"
     }
   ]
 }

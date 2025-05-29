@@ -185,7 +185,12 @@
     "AncientCormoriaFinalIsland",
     "CarabrueTown_TenebrisLab_Finale",
     "VictoryRoadCormoria",
-    "Championship"
+    "Championship",
+    "Championship_Pokemart",
+    "Championship_Hotel",
+    "Championship_Hotel_Rooms",
+    "Championship_Venue",
+    "Championship_R1"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

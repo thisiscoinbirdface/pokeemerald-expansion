@@ -1431,3 +1431,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WinterlilyHollow_GymB1F_Open/scripts.inc"
 
 	.include "data/maps/Championship/scripts.inc"
+
+	.include "data/maps/Championship_Pokemart/scripts.inc"
+
+	.include "data/maps/Championship_Hotel/scripts.inc"
+
+	.include "data/maps/Championship_Hotel_Rooms/scripts.inc"
+
+	.include "data/maps/Championship_Venue/scripts.inc"
+
+	.include "data/maps/Championship_R1/scripts.inc"
