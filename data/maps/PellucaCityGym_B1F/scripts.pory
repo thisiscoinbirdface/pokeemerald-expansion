@@ -248,13 +248,13 @@ script PellucaGym_Leader {
 
         //Play gym badge fanfare
         message(format("{PLAYER} received the River Badge from Jania."))
+        speakername(NULL)
         call(Common_EventScript_PlayGymBadgeFanfare)
         setflag(FLAG_BADGE07_GET)        
         setflag(FLAG_SYS_WHIRLPOOL_ENABLED)
         
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox(format("And I must also give you this."))
-        release
+        msgbox_delay("Jania", format("The River Badge lets you use the HM Flip Turn out of battle. With it, you can surf across strong currents like the ones in this gym.\pAnd I must also give you this."))
         giveitem(ITEM_RARE_SHARD)
         delay(16)
         

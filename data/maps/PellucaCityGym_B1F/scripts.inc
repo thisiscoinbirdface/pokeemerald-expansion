@@ -272,15 +272,15 @@ PellucaGym_Leader::
 # 250 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	message PellucaGym_Leader_Text_5
 # 251 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
+	speakername NULL
 # 252 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	setflag FLAG_BADGE07_GET
+	call Common_EventScript_PlayGymBadgeFanfare
 # 253 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	setflag FLAG_BADGE07_GET
+# 254 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	setflag FLAG_SYS_WHIRLPOOL_ENABLED
-# 256 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Leader_Text_6
 # 257 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	release
+	msgbox_delay PellucaGym_Leader_Text_1, PellucaGym_Leader_Text_6
 # 258 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	giveitem ITEM_RARE_SHARD
 # 259 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -511,7 +511,11 @@ PellucaGym_Leader_Text_5:
 	.string "from Jania.$"
 
 PellucaGym_Leader_Text_6:
-# 256 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 257 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "The River Badge lets you use the HM Flip\n"
+	.string "Turn out of battle. With it, you can surf\l"
+	.string "across strong currents like the ones in\l"
+	.string "this gym.\p"
 	.string "And I must also give you this.$"
 
 PellucaGym_Leader_Text_7:

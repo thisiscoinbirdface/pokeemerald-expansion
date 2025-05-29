@@ -37,7 +37,6 @@ static const u16 sTreasureItems[] =
     ITEM_MAX_REPEL,
     ITEM_MAX_REVIVE,
     ITEM_ELIXIR,
-    ITEM_RARE_CANDY,
     ITEM_KINGS_ROCK,
     ITEM_LEFTOVERS,
     ITEM_TM_EARTHQUAKE,
