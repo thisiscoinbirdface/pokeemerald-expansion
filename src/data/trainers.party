@@ -3454,7 +3454,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_C ===
-Name: Slob
+Name: Sari
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
@@ -3511,7 +3511,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_F ===
-Name: Nicotay
+Name: Toctay
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -3533,7 +3533,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_G ===
-Name: YUJI
+Name: Yuna
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -3559,7 +3559,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_H ===
-Name: Saisu
+Name: Sai
 Class: Backpacker
 Pic: Backpacker
 Gender: Male
