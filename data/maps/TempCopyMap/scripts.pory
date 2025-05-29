@@ -977,7 +977,7 @@ script Common_EventScript_Tauros_GotoPelluca{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
     delay(30)
-    warp(MAP_PELLUCA_CITY, 15, 24)   
+    warp(MAP_PELLUCA_CITY, 10, 33)   
 }
 
 script Common_EventScript_Tauros_GotoRoute6{

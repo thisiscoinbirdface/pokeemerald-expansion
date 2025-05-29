@@ -9240,11 +9240,11 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHAMPIONSHIP_C] =
     {
 #line 3762
-        .trainerName = _("Exor"),
+        .trainerName = _("Freya"),
 #line 3763
-        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .trainerClass = TRAINER_CLASS_FAIRY_LADY,
 #line 3764
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_FAIRY_LADY,
         .encounterMusic_gender =
 #line 3766
             TRAINER_ENCOUNTER_MUSIC_INTENSE,

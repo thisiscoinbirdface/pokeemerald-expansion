@@ -1459,3 +1459,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Championship_R5/scripts.inc"
 
 	.include "data/maps/Championship_R4_Lobby/scripts.inc"
+
+	.include "data/maps/Cormoria_HallOfFame/scripts.inc"

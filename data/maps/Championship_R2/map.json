@@ -2,7 +2,7 @@
   "id": "MAP_CHAMPIONSHIP_R2",
   "name": "Championship_R2",
   "layout": "LAYOUT_CHAMPIONSHIP_R2",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

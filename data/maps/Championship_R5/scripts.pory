@@ -1,0 +1,94 @@
+mapscripts Championship_R5_MapScripts{  
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+        VAR_TEMP_0, 0: Championship_R5_OnWarp
+    ]
+
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TEMP_1, 0: Championship_R5
+    ]
+}
+
+script Championship_R5_OnWarp{
+    setvar(VAR_TEMP_0, 1)
+}
+
+script Championship_R5{
+    lockall
+
+    //vars and stuff
+    setvar(VAR_TEMP_1, 1)
+    setdynamicwarp(MAP_CHAMPIONSHIP_R2_LOBBY, 4, 13)
+
+    //main cutscene
+    special(SpawnCameraObject)
+
+    setrespawn(HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4 walk_right * 4))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 face_right))
+    waitmovement(0)
+    delay(16)
+    
+    msgbox_delay("Announcer", format("This is it, everyone!\pAfter countless tough battles, we're finally here with the two strongest trainers in all of Cormoria!\pLet's hear a huge cheer for the grand finalists!"))
+    playse(SE_APPLAUSE)
+    waitse
+    msgbox_delay("Announcer", format("On the right, we have the overwhelming cword favourite and this year's frontrunner for Champion - the fiery Ace Rookie from the Galecrest Decetive Academy - Kohla!\pWith his partner Ceruledge, he's been dominant in the..."))
+
+
+    applymovement(1, moves(jump_in_place_left))
+    msgbox_delay("Kohla", format("It had to be you, {PLAYER}.\pPoetic."))
+
+    msgbox_delay("Announcer", format("Trainers - are you ready?"))
+
+    applymovement(1, moves(jump_in_place_left))
+    msgbox_delay("Kohla", format("What?\pWhy did I take you off the case?\pWhy did I leave you alone with Moxie and Melea back at the island?\pBecause I hate you, {PLAYER}.\pI resent you. I despise you.\pAnd I will never ever let you upstage me again, {PLAYER}!"))
+
+    playse(SE_APPLAUSE)
+    msgbox_delay("Announcer", format("Trainers, at position!"))
+
+    applymovement(1, moves(walk_left * 2))
+    applymovement(2, moves(walk_left * 2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
+    waitmovement(0)    
+
+    fadenewbgm(MUS_DUMMY)
+    playse(SE_APPLAUSE)
+    waitse
+    msgbox_delay("Announcer", format("3...\p2...\p1...\pBattle!"))
+
+    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_E, format("Argh! No!"))
+
+    //opponent exit
+    special(SpawnCameraObject)
+    msgbox_delay("Kohla", format("..."))
+
+    applymovement(1, moves(walk_right *2))
+    applymovement(2, moves(walk_right *2 face_left))
+    waitmovement(0)
+
+    applymovement(1, moves(walk_down *3))
+    applymovement(2, moves(walk_left walk_down *2))
+    waitmovement(0)
+    removeobject(1)
+
+    applymovement(2, moves(walk_down))
+    waitmovement(0)
+    removeobject(2)
+
+    setvar(VAR_CHAMP_STAGE, 6)
+    setflag(FLAG_BEAT_FINALS)
+
+    //game win
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right *3 face_down))
+    msgbox_delay("Announcer", format("To everyone watching this show in the stands and all across Cormoria...you're looking at the new Pokemon Champion!"))
+
+    playse(SE_APPLAUSE)
+    fadescreen(FADE_TO_BLACK)
+    special(GameClear)
+
+    releaseall
+    end
+
+}
+
+

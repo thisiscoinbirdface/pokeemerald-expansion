@@ -5920,6 +5920,16 @@
       "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/Championship_R4_Lobby/border.bin",
       "blockdata_filepath": "data/layouts/Championship_R4_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORMORIA_HALL_OF_FAME",
+      "name": "Cormoria_HallOfFame_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Cormoria_HallOfFame/border.bin",
+      "blockdata_filepath": "data/layouts/Cormoria_HallOfFame/map.bin"
     }
   ]
 }

@@ -15,6 +15,7 @@ script Championship_Lobby_Teala{
         if (var(VAR_CHAMP_STAGE) == 2) {warp(MAP_CHAMPIONSHIP_R2, 4, 8)}
         if (var(VAR_CHAMP_STAGE) == 3) {warp(MAP_CHAMPIONSHIP_R3, 4, 8)}
         if (var(VAR_CHAMP_STAGE) == 4) {warp(MAP_CHAMPIONSHIP_R4, 4, 8)}
+        if (var(VAR_CHAMP_STAGE) == 5) {warp(MAP_CHAMPIONSHIP_R5, 4, 9)}
 
     }
 

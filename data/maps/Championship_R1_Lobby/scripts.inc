@@ -13,7 +13,7 @@ Championship_Lobby_Teala::
 	compare VAR_RESULT, 1
 	goto_if_eq Championship_Lobby_Teala_2
 Championship_Lobby_Teala_1:
-# 21 "data//maps/Championship_R1_Lobby/scripts.pory"
+# 22 "data//maps/Championship_R1_Lobby/scripts.pory"
 	releaseall
 	end
 
@@ -36,7 +36,11 @@ Championship_Lobby_Teala_4:
 Championship_Lobby_Teala_7:
 # 17 "data//maps/Championship_R1_Lobby/scripts.pory"
 	compare VAR_CHAMP_STAGE, 4
-	goto_if_eq Championship_Lobby_Teala_10
+	goto_if_eq Championship_Lobby_Teala_11
+Championship_Lobby_Teala_10:
+# 18 "data//maps/Championship_R1_Lobby/scripts.pory"
+	compare VAR_CHAMP_STAGE, 5
+	goto_if_eq Championship_Lobby_Teala_13
 	goto Championship_Lobby_Teala_1
 
 Championship_Lobby_Teala_5:
@@ -49,22 +53,27 @@ Championship_Lobby_Teala_8:
 	warp MAP_CHAMPIONSHIP_R3, 4, 8
 	goto Championship_Lobby_Teala_7
 
-Championship_Lobby_Teala_10:
+Championship_Lobby_Teala_11:
 # 17 "data//maps/Championship_R1_Lobby/scripts.pory"
 	warp MAP_CHAMPIONSHIP_R4, 4, 8
+	goto Championship_Lobby_Teala_10
+
+Championship_Lobby_Teala_13:
+# 18 "data//maps/Championship_R1_Lobby/scripts.pory"
+	warp MAP_CHAMPIONSHIP_R5, 4, 9
 	goto Championship_Lobby_Teala_1
 
 
 Championship_Lobby_Nurse::
-# 27 "data//maps/Championship_R1_Lobby/scripts.pory"
+# 28 "data//maps/Championship_R1_Lobby/scripts.pory"
 	lockall
-# 29 "data//maps/Championship_R1_Lobby/scripts.pory"
-	msgbox Championship_Lobby_Nurse_Text_0
 # 30 "data//maps/Championship_R1_Lobby/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
+	msgbox Championship_Lobby_Nurse_Text_0
 # 31 "data//maps/Championship_R1_Lobby/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 32 "data//maps/Championship_R1_Lobby/scripts.pory"
 	msgbox Championship_Lobby_Nurse_Text_1
-# 33 "data//maps/Championship_R1_Lobby/scripts.pory"
+# 34 "data//maps/Championship_R1_Lobby/scripts.pory"
 	releaseall
 	end
 
@@ -91,11 +100,11 @@ Championship_Lobby_Teala_Text_0:
 	.string "round?$"
 
 Championship_Lobby_Nurse_Text_0:
-# 29 "data//maps/Championship_R1_Lobby/scripts.pory"
+# 30 "data//maps/Championship_R1_Lobby/scripts.pory"
 	.string "Congraluations on your victory,\n"
 	.string "trainer!\p"
 	.string "I'll now heal your Pokemon.$"
 
 Championship_Lobby_Nurse_Text_1:
-# 31 "data//maps/Championship_R1_Lobby/scripts.pory"
+# 32 "data//maps/Championship_R1_Lobby/scripts.pory"
 	.string "All the best!$"

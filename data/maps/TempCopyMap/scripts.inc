@@ -1615,7 +1615,7 @@ Common_EventScript_Tauros_GotoPelluca::
 # 979 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
 # 980 "data//maps/TempCopyMap/scripts.pory"
-	warp MAP_PELLUCA_CITY, 15, 24
+	warp MAP_PELLUCA_CITY, 10, 33
 	return
 
 
