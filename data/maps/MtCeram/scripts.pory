@@ -17,19 +17,23 @@ mapscripts MtCeram_MapScripts {}
 script MtCeram_Charizard{
     lockall
 
+    checkitem(ITEM_POKE_FLUTE)
 
-//  temp quickfix
-    msgbox(format("It's asleep..."))
-    releaseall
-    end
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's asleep..."))
+        releaseall
+        end
+    }
 
 
 
-
-    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
+    msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-            //excadrill encounter
+            fadeoutbgm(1)
+            playse(MUS_RG_POKE_FLUTE)
+            msgbox(format("{PLAYER} played the Poke Flute."))
+            delay(128)
             msgbox(format("..."))
             release
             applymovement(18, moves(emote_exclamation_mark))
@@ -60,6 +64,7 @@ script MtCeram_Charizard{
                 setflag(FLAG_CERAM_CHARIZARD)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
+                applymovement(18, moves(face_up))
                 msgbox(format("The Charizard grunts and falls back asleep. Better not disturb it again!"))
                 release
             }

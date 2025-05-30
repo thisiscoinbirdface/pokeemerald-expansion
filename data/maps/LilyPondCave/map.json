@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRAGAPULT)",
       "x": 11,
-      "y": 24,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,

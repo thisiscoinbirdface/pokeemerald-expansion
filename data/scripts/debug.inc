@@ -159,7 +159,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_VILETHORN_WOODS, 41, 45
+	warp MAP_MT_CERAM, 42, 9
 	release
 	end
 

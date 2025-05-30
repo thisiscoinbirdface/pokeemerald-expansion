@@ -158,33 +158,32 @@ script LilyPond_Cave_Blastoise{
 script LilyPond_Cave_Lapras_Encounter{
     lockall
 
-//  temp quickfix
-    msgbox(format("It's asleep..."))
-    releaseall
-    end
+    checkitem(ITEM_POKE_FLUTE)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's asleep..."))
+        releaseall
+        end
+    }
 
 
 
 
-    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
+    msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-            //excadrill encounter
+            fadeoutbgm(1)
+            playse(MUS_RG_POKE_FLUTE)
+            msgbox(format("{PLAYER} played the Poke Flute."))
+            delay(128)
             msgbox(format("..."))
             release
             applymovement(18, moves(emote_exclamation_mark))
             waitmovement(0)
             delay(30)
-            applymovement(18, moves(emote_question_mark face_left))
-            waitmovement(0)
-            delay(60)
-            applymovement(18, moves(emote_question_mark face_right))
-            waitmovement(0)
-            delay(60)
-            applymovement(18, moves(face_down emote_exclamation_mark))
-            waitmovement(0)
-            delay(16)
             playmoncry(SPECIES_BLASTOISE, CRY_MODE_ENCOUNTER)
+            applymovement(18, moves(walk_fast_left walk_fast_right * 2 walk_fast_left * 2 walk_fast_right face_down))
+            waitmovement(0)
             msgbox(format("The Blastoise wakes up! It looks healthy now - too healthy!"))
             setwildbattle(SPECIES_BLASTOISE, 48)     
             dowildbattle  

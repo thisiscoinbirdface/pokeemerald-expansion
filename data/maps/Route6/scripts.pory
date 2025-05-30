@@ -2,6 +2,7 @@ raw`
     .set LOCALID_GAB, 29
     .set LOCALID_GRUNT1, 11
     .set LOCALID_GRUNT2, 10
+    .set LOCALID_VENU, 31
 `
 
 mapscripts Route6_MapScripts{}
@@ -43,48 +44,45 @@ script Route6_EventScript_Nurse{
 script Route6_Venusaur{
     lockall
 
-//  temp quickfix
-    msgbox(format("It's asleep..."))
-    releaseall
-    end
+    checkitem(ITEM_POKE_FLUTE)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's asleep..."))
+        releaseall
+        end
+    }
 
 
 
 
-    msgbox(format("It's asleep...wake it up?"), MSGBOX_YESNO)
+    msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
-            //excadrill encounter
+            fadeoutbgm(1)
+            playse(MUS_RG_POKE_FLUTE)
+            msgbox(format("{PLAYER} played the Poke Flute."))
+            delay(128)
             msgbox(format("..."))
             release
-            applymovement(18, moves(emote_exclamation_mark))
-            waitmovement(0)
-            delay(30)
-            applymovement(18, moves(emote_question_mark face_left))
-            waitmovement(0)
-            delay(60)
-            applymovement(18, moves(emote_question_mark face_right))
-            waitmovement(0)
-            delay(60)
-            applymovement(18, moves(face_down emote_exclamation_mark))
+            applymovement(LOCALID_VENU, moves(emote_question_mark))
             waitmovement(0)
             delay(16)
             playmoncry(SPECIES_VENUSAUR, CRY_MODE_ENCOUNTER)
-            msgbox(format("The Venusaur wakes up...it's groggy.."))
+            msgbox(format("The Venusaur wakes up...it's groggy..."))
             setwildbattle(SPECIES_VENUSAUR, 48)     
             dowildbattle  
 
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){
-                removeobject(18)
+                removeobject(LOCALID_VENU)
                 setflag(FLAG_ROUTE6_VENUSAUR)
             }
             if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
-                removeobject(18)
+                removeobject(LOCALID_VENU)
                 setflag(FLAG_ROUTE6_VENUSAUR)
             }            
-            if (var(VAR_RESULT) == B_OUTCOME_RAN){
+            if (var(VAR_RESULT) == B_OUTCOME_RAN){applymovement(LOCALID_VENU, moves(face_up))
                 msgbox(format("The Venusaur grunts and falls back asleep. It needs its beauty sleep!"))
                 release
             }

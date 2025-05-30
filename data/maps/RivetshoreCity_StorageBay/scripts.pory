@@ -4,11 +4,15 @@ script RivetshoreCity_StorageBay_Slaking{
     //if flute is used
     checkitem(ITEM_POKE_FLUTE)
     if (var(VAR_RESULT) == 1){
-        msgbox(format("It's fast asleep...\nUse Poké Flute?"), MSGBOX_YESNO)
+    msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
             end
         } else {
+            fadeoutbgm(1)
+            playse(MUS_RG_POKE_FLUTE)
+            msgbox(format("{PLAYER} played the Poke Flute."))
+            delay(128)
             playmoncry(SPECIES_SLAKING, CRY_MODE_NORMAL)
             applymovement(1, moves(jump_in_place_up))
             waitmovement(0)
@@ -22,12 +26,13 @@ script RivetshoreCity_StorageBay_Slaking{
             msgbox(format("Slaking lumbered off somewhere...was waking it up the wrong thing to do?"))
             release
             setflag(FLAG_RIVETSHORE_STORAGE_BAY_SLAKING)
+            fadedefaultbgm
             releaseall
             end
         }
     
     } else {
-        msgbox(format("It's fast asleep..."), MSGBOX_NPC)
+        msgbox(format("It's asleep..."), MSGBOX_NPC)
         end    
     }
 }
