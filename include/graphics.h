@@ -283,6 +283,8 @@ extern const u32 gBattleTerrainPalette_Plain[];
 extern const u32 gBattleTerrainPalette_Frontier[];
 extern const u32 gBattleTerrainTiles_Stadium[];
 extern const u32 gBattleTerrainTilemap_Stadium[];
+extern const u32 gBattleTerrainPalette_Stadium[];
+
 extern const u32 gBattleTerrainTiles_Rayquaza[];
 extern const u32 gBattleTerrainTilemap_Rayquaza[];
 extern const u32 gBattleTerrainAnimTiles_Rayquaza[];
