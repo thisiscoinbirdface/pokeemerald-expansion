@@ -3057,13 +3057,14 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SSELEGANT_INGER ===
-Name: DEAN
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
-Music: Swimmer
+Name: Inger
+Class: Leader
+Pic: Leader Inger
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
+Items: Hyper Potion
 
 Lycanroc
 Level: 45
@@ -3078,13 +3079,14 @@ Level: 47
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_SSELEGANT_ARIANA ===
-Name: RODNEY
-Class: Swimmer M
-Pic: Swimmer M
+Name: Ariana
+Class: Leader
+Pic: Leader Ariana
 Gender: Male
-Music: Swimmer
+Music: Aqua
+Items: Super Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
 Talonflame
 Level: 47

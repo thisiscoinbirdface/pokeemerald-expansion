@@ -272,7 +272,7 @@
 #define FLAG_HIDE_ROUTE1_STRONG              0x13F
 #define FLAG_POST_FINALE_CUTSCENE            0x140
 #define FLAG_HIDE_TENEBRIS_TENEBRIS          0x141
-#define FLAG_WONDER_CARD_UNUSED_6            0x142
+#define FLAG_HOLLOW_ARMOR_GET                0x142
 #define FLAG_WONDER_CARD_UNUSED_7            0x143
 #define FLAG_WONDER_CARD_UNUSED_8            0x144
 #define FLAG_WONDER_CARD_UNUSED_9            0x145
@@ -801,8 +801,8 @@
 #define FLAG_HIDDEN_ITEM_PELLUCA_RESTAURANT_B                (FLAG_HIDDEN_ITEMS_START + 0x33)
 
 //Hollow
-#define FLAG_HIDDEN_ITEM_HOLLOW_A                            (FLAG_HIDDEN_ITEMS_START + 0x34)
-#define FLAG_HIDDEN_ITEM_HOLLOW_B                            (FLAG_HIDDEN_ITEMS_START + 0x35)
+#define FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_1             (FLAG_HIDDEN_ITEMS_START + 0x34)
+#define FLAG_HIDDEN_ITEM_ROUTE_110_GREAT_BALL                (FLAG_HIDDEN_ITEMS_START + 0x35)
 
 
 #define FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE                    (FLAG_HIDDEN_ITEMS_START + 0x36)

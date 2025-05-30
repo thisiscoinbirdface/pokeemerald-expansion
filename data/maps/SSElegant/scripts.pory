@@ -290,41 +290,48 @@ script SSElegant_Jania{
 }
 
 script SSElegant_Inger{
-
+    trainerbattle_single(TRAINER_SSELEGANT_INGER, format("Alright, c'mon Ariana! This time I won't lose to you!\pHey, {PLAYER}! I didn't know you were on the cruise."), format("This reminds of my first loss!"))
+    msgbox(format("We're training to take down Team Somber! Yaaah!"))
+    releaseall
+    end    
 }
 script SSElegant_Minior{
     playmoncry(SPECIES_MINIOR, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Minior is glaring at Tauros...\nbut it falters and cracks a smile!\pThey must be good friends."), MSGBOX_NPC)
     end
 }
 
 script SSElegant_Ariana{
+    trainerbattle_single(TRAINER_SSELEGANT_INGER, format("Hey, since {PLAYER} is here...how about a double battle?"), format("Tough as ever!"))
+    msgbox(format("We heard you were off the case. Don't worry - we'll finish what you started!"))
+    releaseall
+    end    
 
 }
 script SSElegant_Tauros{
     playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Tauros is huffing at Minior...\nand then flashes a grin!\pA wholesome rivalry."), MSGBOX_NPC)
     end
 }
 
 //sailor
 script SSElegant_NPC1{
-    msgbox(format(""), MSGBOX_NPC)    
+    msgbox(format("There's nothing like being out on the ocean, I tell you!"), MSGBOX_NPC)    
     end    
 }
 //man 2F
 script SSElegant_NPC2{
-    msgbox(format(""), MSGBOX_NPC)    
+    msgbox(format("These Gym Leaders are so intimidating! This was supposed to be a luxury cruise."), MSGBOX_NPC)    
     end    
 }
 //dude 1F
 script SSElegant_NPC3{
-    msgbox(format(""), MSGBOX_NPC)    
+    msgbox(format("Why did all the Gym Leaders board at the last minute?\pI'm somewhat of a natural detective myself...I think they're conspiring to take over Cormoria!"), MSGBOX_NPC)    
     end    
 }
 //picnicker 1F
 script SSElegant_NPC4{
-    msgbox(format(""), MSGBOX_NPC)    
+    msgbox(format("The S.S. Elegant stops at Victory Cape. That's where this year's Pokemon Championships will be!"), MSGBOX_NPC)    
     end    
 }
 

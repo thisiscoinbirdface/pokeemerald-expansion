@@ -39,32 +39,34 @@ script WinterlilyHollow_Houses_NPC4{
     end
 }
 script WinterlilyHollow_Houses_Carkol{
-    playmoncry(SPECIES_ARMOROUGE, CRY_MODE_NORMAL)
-    msgbox(format("Armorouge seems tired..."), MSGBOX_NPC)
+    playmoncry(SPECIES_ARMAROUGE, CRY_MODE_NORMAL)
+    msgbox(format("Armarouge is tired...carrying all that armor must be exhausing"), MSGBOX_NPC)
     if (flag(FLAG_HOLLOW_ARMOR_GET)) {end}
-    goto(WinterlilyHollow_Houses_Armorouge_Reward)
+    goto(WinterlilyHollow_Houses_Armarouge_Reward)
 }
 
-script WinterlilyHollow_Houses_Armorouge_Reward{
+script WinterlilyHollow_Houses_Armarouge_Reward{
+    lockall
     message(format("It hands you two sets of armor..."))
     waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Malicious Armor", "Auspicious Armor") 
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_KINGS_ROCK)}
     if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_QUICK_CLAW)}
-    goto(WinterlilyHollow_Houses_Armorouge_Reward_Give)
+    goto(WinterlilyHollow_Houses_Armarouge_Reward_Give)
 }
 
-script WinterlilyHollow_Houses_Armorouge_Reward_Give{
+script WinterlilyHollow_Houses_Armarouge_Reward_Give{
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     hideitemdescription
-    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(WinterlilyHollow_Houses_Armorouge_Reward_End)} 
-    else {goto(WinterlilyHollow_Houses_Armorouge_Reward)}
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(WinterlilyHollow_Houses_Armarouge_Reward_End)} 
+    else {goto(WinterlilyHollow_Houses_Armarouge_Reward)}
 }
 
-script WinterlilyHollow_Houses_Armorouge_Reward_End{
+script WinterlilyHollow_Houses_Armarouge_Reward_End{
     setflag(FLAG_HOLLOW_ARMOR_GET)
-    msgbox(format("Armorouge has decided to peacefully retire too!"), MSGBOX_NPC)
+    msgbox(format("Armarouge has decided to peacefully retire too!"), MSGBOX_NPC)
+    releaseall
     end
 }
 

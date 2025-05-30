@@ -61,9 +61,80 @@ WinterlilyHollow_Houses_NPC4::
 
 WinterlilyHollow_Houses_Carkol::
 # 42 "data//maps/WinterlilyHollow_Houses/scripts.pory"
-	playmoncry SPECIES_CARKOL, CRY_MODE_NORMAL
+	playmoncry SPECIES_ARMAROUGE, CRY_MODE_NORMAL
 # 43 "data//maps/WinterlilyHollow_Houses/scripts.pory"
 	msgbox WinterlilyHollow_Houses_Carkol_Text_0, MSGBOX_NPC
+# 44 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	goto_if_set FLAG_HOLLOW_ARMOR_GET, WinterlilyHollow_Houses_Carkol_2
+# 45 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	goto WinterlilyHollow_Houses_Armarouge_Reward
+	return
+
+WinterlilyHollow_Houses_Carkol_2:
+	end
+
+
+WinterlilyHollow_Houses_Armarouge_Reward::
+# 49 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	lockall
+# 50 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	message WinterlilyHollow_Houses_Armarouge_Reward_Text_0
+# 51 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	waitmessage
+# 52 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, WinterlilyHollow_Houses_Armarouge_Reward_Text_1, WinterlilyHollow_Houses_Armarouge_Reward_Text_2
+# 53 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq WinterlilyHollow_Houses_Armarouge_Reward_2
+WinterlilyHollow_Houses_Armarouge_Reward_1:
+# 54 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WinterlilyHollow_Houses_Armarouge_Reward_5
+WinterlilyHollow_Houses_Armarouge_Reward_4:
+# 55 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	goto WinterlilyHollow_Houses_Armarouge_Reward_Give
+	return
+
+WinterlilyHollow_Houses_Armarouge_Reward_2:
+# 53 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	setvar VAR_0x8006, ITEM_KINGS_ROCK
+	goto WinterlilyHollow_Houses_Armarouge_Reward_1
+
+WinterlilyHollow_Houses_Armarouge_Reward_5:
+# 54 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	setvar VAR_0x8006, ITEM_QUICK_CLAW
+	goto WinterlilyHollow_Houses_Armarouge_Reward_4
+
+
+WinterlilyHollow_Houses_Armarouge_Reward_Give::
+# 59 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	showitemdescription
+# 60 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	msgbox WinterlilyHollow_Houses_Armarouge_Reward_Give_Text_0, MSGBOX_YESNO
+# 61 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	hideitemdescription
+# 62 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WinterlilyHollow_Houses_Armarouge_Reward_Give_1
+# 63 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	goto WinterlilyHollow_Houses_Armarouge_Reward
+	return
+
+WinterlilyHollow_Houses_Armarouge_Reward_Give_1:
+# 62 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	giveitem VAR_0x8006
+# 62 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	goto WinterlilyHollow_Houses_Armarouge_Reward_End
+	return
+
+
+WinterlilyHollow_Houses_Armarouge_Reward_End::
+# 67 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	setflag FLAG_HOLLOW_ARMOR_GET
+# 68 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	msgbox WinterlilyHollow_Houses_Armarouge_Reward_End_Text_0, MSGBOX_NPC
+# 69 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	releaseall
 	end
 
 
@@ -101,10 +172,32 @@ WinterlilyHollow_Houses_NPC3_Text_2:
 
 WinterlilyHollow_Houses_NPC4_Text_0:
 # 38 "data//maps/WinterlilyHollow_Houses/scripts.pory"
-	.string "Without Carkol, I'd never survive in\n"
-	.string "such a cold place!$"
+	.string "I'm a retired detective. After a life of\n"
+	.string "crime-fighting, I think I've earned the\l"
+	.string "right to a peaceful retirement!$"
 
 WinterlilyHollow_Houses_Carkol_Text_0:
 # 43 "data//maps/WinterlilyHollow_Houses/scripts.pory"
-	.string "Carkol is steaming! The cold seems not\n"
-	.string "to affect it at all.$"
+	.string "Armarouge is tired...carrying all that\n"
+	.string "armor must be exhausing$"
+
+WinterlilyHollow_Houses_Armarouge_Reward_Text_0:
+# 50 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	.string "It hands you two sets of armor...$"
+
+WinterlilyHollow_Houses_Armarouge_Reward_Text_1:
+# 52 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	.string "Malicious Armor$"
+
+WinterlilyHollow_Houses_Armarouge_Reward_Text_2:
+# 52 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	.string "Auspicious Armor$"
+
+WinterlilyHollow_Houses_Armarouge_Reward_Give_Text_0:
+# 60 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	.string "Are you sure?$"
+
+WinterlilyHollow_Houses_Armarouge_Reward_End_Text_0:
+# 68 "data//maps/WinterlilyHollow_Houses/scripts.pory"
+	.string "Armarouge has decided to peacefully\n"
+	.string "retire too!$"

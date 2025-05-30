@@ -358,50 +358,62 @@ SSElegant_Jania::
 
 
 SSElegant_Inger::
-	return
+# 293 "data//maps/SSElegant/scripts.pory"
+	trainerbattle_single TRAINER_SSELEGANT_INGER, SSElegant_Inger_Text_0, SSElegant_Inger_Text_1
+# 294 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Inger_Text_2
+# 295 "data//maps/SSElegant/scripts.pory"
+	releaseall
+	end
 
 
 SSElegant_Minior::
-# 296 "data//maps/SSElegant/scripts.pory"
+# 299 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
-# 297 "data//maps/SSElegant/scripts.pory"
+# 300 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_Ariana::
-	return
+# 305 "data//maps/SSElegant/scripts.pory"
+	trainerbattle_single TRAINER_SSELEGANT_INGER, SSElegant_Ariana_Text_0, SSElegant_Ariana_Text_1
+# 306 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Ariana_Text_2
+# 307 "data//maps/SSElegant/scripts.pory"
+	releaseall
+	end
 
 
 SSElegant_Tauros::
-# 305 "data//maps/SSElegant/scripts.pory"
+# 312 "data//maps/SSElegant/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 306 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+# 313 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Tauros_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC1::
-# 312 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+# 319 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC2::
-# 317 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+# 324 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC3::
-# 322 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+# 329 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC4::
-# 327 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
+# 334 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
@@ -983,6 +995,48 @@ SSElegant_Jania_Text_2:
 	.string "I don't get much free time, but when I\n"
 	.string "do, I enjoy painting.$"
 
+SSElegant_Inger_Text_0:
+# 293 "data//maps/SSElegant/scripts.pory"
+	.string "Alright, c'mon Ariana! This time I won't\n"
+	.string "lose to you!\p"
+	.string "Hey, {PLAYER}! I didn't know you were\n"
+	.string "on the cruise.$"
+
+SSElegant_Inger_Text_1:
+# 293 "data//maps/SSElegant/scripts.pory"
+	.string "This reminds of my first loss!$"
+
+SSElegant_Inger_Text_2:
+# 294 "data//maps/SSElegant/scripts.pory"
+	.string "We're training to take down Team\n"
+	.string "Somber! Yaaah!$"
+
 SSElegant_Minior_Text_0:
-# 297 "data//maps/SSElegant/scripts.pory"
+# 300 "data//maps/SSElegant/scripts.pory"
+	.string "Minior is glaring at Tauros...\n"
+	.string "but it falters and cracks a smile!\p"
+	.string "They must be good friends.$"
+
+SSElegant_Ariana_Text_0:
+# 305 "data//maps/SSElegant/scripts.pory"
+	.string "Hey, since {PLAYER} is here...how\n"
+	.string "about a double battle?$"
+
+SSElegant_Ariana_Text_1:
+# 305 "data//maps/SSElegant/scripts.pory"
+	.string "Tough as ever!$"
+
+SSElegant_Ariana_Text_2:
+# 306 "data//maps/SSElegant/scripts.pory"
+	.string "We heard you were off the case. Don't\n"
+	.string "worry - we'll finish what you started!$"
+
+SSElegant_Tauros_Text_0:
+# 313 "data//maps/SSElegant/scripts.pory"
+	.string "Tauros is huffing at Minior...\n"
+	.string "and then flashes a grin!\p"
+	.string "A wholesome rivalry.$"
+
+SSElegant_NPC1_Text_0:
+# 319 "data//maps/SSElegant/scripts.pory"
 	.string "$"
