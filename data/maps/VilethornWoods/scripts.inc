@@ -522,7 +522,7 @@ VilethornWoods_Celebi_Seed::
 # 370 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_CELEBI, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_2
-# 411 "data//maps/VilethornWoods/scripts.pory"
+# 412 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_CELEBI, 0
 	goto_if_eq VilethornWoods_Celebi_Seed_5
 	end
@@ -539,11 +539,11 @@ VilethornWoods_Celebi_Seed_7:
 	end
 
 VilethornWoods_Celebi_Seed_5:
-# 413 "data//maps/VilethornWoods/scripts.pory"
+# 414 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_4, MSGBOX_NPC
-# 415 "data//maps/VilethornWoods/scripts.pory"
+# 416 "data//maps/VilethornWoods/scripts.pory"
 	checkitem ITEM_TIME_SEED
-# 417 "data//maps/VilethornWoods/scripts.pory"
+# 418 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_11
 VilethornWoods_Celebi_Seed_10:
@@ -558,9 +558,9 @@ VilethornWoods_Celebi_Seed_8:
 	goto VilethornWoods_Celebi_Seed_7
 
 VilethornWoods_Celebi_Seed_11:
-# 418 "data//maps/VilethornWoods/scripts.pory"
+# 419 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_5, MSGBOX_YESNO
-# 420 "data//maps/VilethornWoods/scripts.pory"
+# 421 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_15
 	goto VilethornWoods_Celebi_Seed_10
@@ -570,8 +570,6 @@ VilethornWoods_Celebi_Seed_13:
 	setvar VAR_CELEBI, 2
 # 380 "data//maps/VilethornWoods/scripts.pory"
 	removeitem ITEM_TIME_SEED
-# 381 "data//maps/VilethornWoods/scripts.pory"
-	setvar VAR_CELEBI, 1
 # 382 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_2, MSGBOX_SIGN
 # 383 "data//maps/VilethornWoods/scripts.pory"
@@ -604,52 +602,54 @@ VilethornWoods_Celebi_Seed_13:
 	special ShakeCamera
 # 399 "data//maps/VilethornWoods/scripts.pory"
 	delay 20
-# 401 "data//maps/VilethornWoods/scripts.pory"
-	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 400 "data//maps/VilethornWoods/scripts.pory"
+	waitmessage
 # 402 "data//maps/VilethornWoods/scripts.pory"
-	warp MAP_VILETHORN_WOODS, VAR_TEMP_2, VAR_TEMP_3
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
 # 403 "data//maps/VilethornWoods/scripts.pory"
+	warp MAP_VILETHORN_WOODS, VAR_TEMP_2, VAR_TEMP_3
+# 404 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	goto VilethornWoods_Celebi_Seed_7
 
 VilethornWoods_Celebi_Seed_15:
-# 421 "data//maps/VilethornWoods/scripts.pory"
-	removeitem ITEM_TIME_SEED
 # 422 "data//maps/VilethornWoods/scripts.pory"
-	setvar VAR_CELEBI, 1
+	removeitem ITEM_TIME_SEED
 # 423 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_6, MSGBOX_SIGN
+	setvar VAR_CELEBI, 1
 # 424 "data//maps/VilethornWoods/scripts.pory"
-	release
+	msgbox VilethornWoods_Celebi_Seed_Text_6, MSGBOX_SIGN
 # 425 "data//maps/VilethornWoods/scripts.pory"
-	delay 16
+	release
 # 426 "data//maps/VilethornWoods/scripts.pory"
+	delay 16
+# 427 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Celebi_Seed_Text_7, MSGBOX_SIGN
 	goto VilethornWoods_Celebi_Seed_10
 
 
 VilethornWoods_Celebi::
-# 438 "data//maps/VilethornWoods/scripts.pory"
+# 439 "data//maps/VilethornWoods/scripts.pory"
 	lockall
-# 440 "data//maps/VilethornWoods/scripts.pory"
-	special SaveGame
 # 441 "data//maps/VilethornWoods/scripts.pory"
-	waitstate
+	special SaveGame
 # 442 "data//maps/VilethornWoods/scripts.pory"
+	waitstate
+# 443 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 445 "data//maps/VilethornWoods/scripts.pory"
-	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
 # 446 "data//maps/VilethornWoods/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
 # 447 "data//maps/VilethornWoods/scripts.pory"
+	waitmoncry
+# 448 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_CELEBI
-# 449 "data//maps/VilethornWoods/scripts.pory"
-	setwildbattle SPECIES_CELEBI, 50
 # 450 "data//maps/VilethornWoods/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_CELEBI, 50
 # 451 "data//maps/VilethornWoods/scripts.pory"
+	dowildbattle
+# 452 "data//maps/VilethornWoods/scripts.pory"
 	removeobject LOCALID_CELEBI
-# 453 "data//maps/VilethornWoods/scripts.pory"
+# 454 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
@@ -1009,20 +1009,20 @@ VilethornWoods_Celebi_Seed_Text_3:
 	.string "The trees shift...$"
 
 VilethornWoods_Celebi_Seed_Text_4:
-# 413 "data//maps/VilethornWoods/scripts.pory"
+# 414 "data//maps/VilethornWoods/scripts.pory"
 	.string "It's fertile soil...but not the same as\n"
 	.string "berry tree soil.$"
 
 VilethornWoods_Celebi_Seed_Text_5:
-# 418 "data//maps/VilethornWoods/scripts.pory"
+# 419 "data//maps/VilethornWoods/scripts.pory"
 	.string "Plant a Seed of Time?$"
 
 VilethornWoods_Celebi_Seed_Text_6:
-# 423 "data//maps/VilethornWoods/scripts.pory"
+# 424 "data//maps/VilethornWoods/scripts.pory"
 	.string "{PLAYER} planted Seed of Time in the\n"
 	.string "fertile soil.$"
 
 VilethornWoods_Celebi_Seed_Text_7:
-# 426 "data//maps/VilethornWoods/scripts.pory"
+# 427 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe it needs some type of water to\n"
 	.string "grow...$"

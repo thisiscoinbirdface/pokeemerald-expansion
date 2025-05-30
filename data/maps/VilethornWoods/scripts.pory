@@ -378,7 +378,7 @@ script VilethornWoods_Celebi_Seed{
             if (var(VAR_RESULT) == 1){
                 setvar(VAR_CELEBI, 2)
                 removeitem(ITEM_TIME_SEED)
-                setvar(VAR_CELEBI, 1)
+
                 msgbox(format("{PLAYER} watered the fertile soil with the Water of Time."), MSGBOX_SIGN)
                 release
                 delay(32)
@@ -397,6 +397,7 @@ script VilethornWoods_Celebi_Seed{
                 setvar(VAR_0x8007, 5)  //shake delay
                 special(ShakeCamera)
                 delay(20)
+                waitmessage
 
                 getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
                 warp(MAP_VILETHORN_WOODS, VAR_TEMP_2, VAR_TEMP_3)
