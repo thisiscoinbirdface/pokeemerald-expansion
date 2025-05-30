@@ -1018,23 +1018,23 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("SEASOR"),
-        .species = SPECIES_HORSEA,
+        .nickname = _("Buggles"),
+        .species = SPECIES_PINSIR,
         .ivs = {5, 4, 4, 4, 5, 4},
         .abilityNum = 0,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
-        .heldItem = ITEM_WAVE_MAIL,
+        .heldItem = ITEM_LIFE_ORB,
         .mailNum = 1,
-        .otName = _("SKYLAR"),
+        .otName = _("Skylar"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_PANGORO
     },
     [INGAME_TRADE_MEOWTH] = //Houndour
     {
-        .nickname = _("BOWOW"),
+        .nickname = _("Bowow"),
         .species = SPECIES_HOUNDOUR,
         .ivs = {4, 5, 4, 31, 31, 4},
         .abilityNum = 0,
@@ -1043,14 +1043,14 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x8B,
         .heldItem = ITEM_CHARCOAL,
         .mailNum = 2,
-        .otName = _("ISIS"),
+        .otName = _("Ormot"),
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_TOXEL
     },
     [INGAME_TRADE_WIMPOD] = //Ponyta Galar
     {
-        .nickname = _("BRYNN"),
+        .nickname = _("Brynn"),
         .species = SPECIES_PONYTA_GALAR,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0,
@@ -1059,7 +1059,7 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x8B,
         .heldItem = ITEM_FAIRY_FEATHER,
         .mailNum = 3,
-        .otName = _("VIEN"),
+        .otName = _("Vien"),
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_DEWPIDER

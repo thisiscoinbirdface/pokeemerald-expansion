@@ -273,7 +273,7 @@
 #define FLAG_POST_FINALE_CUTSCENE            0x140
 #define FLAG_HIDE_TENEBRIS_TENEBRIS          0x141
 #define FLAG_HOLLOW_ARMOR_GET                0x142
-#define FLAG_WONDER_CARD_UNUSED_7            0x143
+#define FLAG_RIVETSHORE_PINSIR_TRADE         0x143
 #define FLAG_WONDER_CARD_UNUSED_8            0x144
 #define FLAG_WONDER_CARD_UNUSED_9            0x145
 #define FLAG_WONDER_CARD_UNUSED_10           0x146
