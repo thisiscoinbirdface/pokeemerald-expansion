@@ -42,7 +42,7 @@ SSElegant_Common_NPC2::
 
 SSElegant_Common_Carona::
 # 36 "data//maps/SSElegant_Common/scripts.pory"
-	msgbox SSElegant_Common_NPC1_Text_0, MSGBOX_NPC
+	msgbox SSElegant_Common_Carona_Text_0, MSGBOX_NPC
 	end
 
 
@@ -72,6 +72,10 @@ SSElegant_Common_Chansey_Text_0:
 SSElegant_Common_NPC1_Text_0:
 # 25 "data//maps/SSElegant_Common/scripts.pory"
 	.string "$"
+
+SSElegant_Common_Carona_Text_0:
+# 36 "data//maps/SSElegant_Common/scripts.pory"
+	.string "How nice to see you, {PLAYER}!$"
 
 SSElegant_Common_Medicham_Text_0:
 # 41 "data//maps/SSElegant_Common/scripts.pory"

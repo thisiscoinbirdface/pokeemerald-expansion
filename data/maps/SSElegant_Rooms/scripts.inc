@@ -64,6 +64,22 @@ SSElegant_Rooms_Smeargle::
 	end
 
 
+SSElegant_Rooms_Gloria_Locked::
+# 62 "data//maps/SSElegant_Rooms/scripts.pory"
+	msgbox_delay SSElegant_Rooms_Gloria_Locked_Text_0, SSElegant_Rooms_Gloria_Locked_Text_1
+	end
+
+
+SSElegant_Rooms_Trainer_A::
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+	trainerbattle_single TRAINER_SSELEGANT_A, SSElegant_Rooms_Trainer_A_Text_0, SSElegant_Rooms_Trainer_A_Text_1
+# 69 "data//maps/SSElegant_Rooms/scripts.pory"
+	msgbox SSElegant_Rooms_Trainer_A_Text_2
+# 70 "data//maps/SSElegant_Rooms/scripts.pory"
+	releaseall
+	end
+
+
 SSElegant_Rooms_Gabrielle_Text_0:
 # 14 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "{PLAYER}, you managed to get on!\n"
@@ -117,3 +133,24 @@ SSElegant_Rooms_NPC3_Text_0:
 SSElegant_Rooms_Smeargle_Text_0:
 # 57 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Smeargle looks seasick too...$"
+
+SSElegant_Rooms_Gloria_Locked_Text_0:
+# 62 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Gloria$"
+
+SSElegant_Rooms_Gloria_Locked_Text_1:
+# 62 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Please don't disturb me!$"
+
+SSElegant_Rooms_Trainer_A_Text_0:
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Hey! You're not getting that TM for\n"
+	.string "free!$"
+
+SSElegant_Rooms_Trainer_A_Text_1:
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Alright, you can have the TM!$"
+
+SSElegant_Rooms_Trainer_A_Text_2:
+# 69 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Earthquake is a really strong TM!$"
