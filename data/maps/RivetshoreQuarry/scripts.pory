@@ -117,7 +117,7 @@ script RivetshoreQuarry_Raazi_Callout_Trigger{
     lockall
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4 walk_left * 4))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3 walk_left * 4))
     waitmovement(0)
     special(RemoveCameraObject)
 
@@ -126,7 +126,7 @@ script RivetshoreQuarry_Raazi_Callout_Trigger{
     release
 
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 4 walk_up * 4))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 4 walk_up * 3))
     waitmovement(0)
     special(RemoveCameraObject)
 

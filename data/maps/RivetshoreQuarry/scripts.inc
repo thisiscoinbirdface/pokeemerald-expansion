@@ -452,8 +452,6 @@ RivetshoreQuarry_Raazi_Callout_Trigger_Movement_0:
 # 120 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_down
 # 120 "data//maps/RivetshoreQuarry/scripts.pory"
-	walk_down
-# 120 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_left
 # 120 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_left
@@ -473,8 +471,6 @@ RivetshoreQuarry_Raazi_Callout_Trigger_Movement_1:
 	walk_right
 # 129 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_right
-# 129 "data//maps/RivetshoreQuarry/scripts.pory"
-	walk_up
 # 129 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_up
 # 129 "data//maps/RivetshoreQuarry/scripts.pory"
