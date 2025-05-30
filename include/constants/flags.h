@@ -1314,9 +1314,9 @@
 #define FLAG_ITEM_RIVETSHORE_C              0x44A
 #define FLAG_ITEM_RIVETSHORE_D              0x44B
 
-
+//more misc items
 #define FLAG_ITEM_IVY_RIVER_F        0x44C
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D
+#define FLAG_ITEM_SSELEGANT_A    0x44D
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_RAIN_DANCE  0x44E
 #define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
 #define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450

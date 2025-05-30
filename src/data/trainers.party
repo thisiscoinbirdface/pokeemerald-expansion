@@ -3031,17 +3031,25 @@ Level: 48
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_SSELEGANT_A ===
-Name: STAN
-Class: Swimmer M
-Pic: Swimmer M
+Name: Adario
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
-Music: Swimmer
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clodsire
+Level: 46
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+Dhelmise
+Level: 47
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+Morgrem
+Level: 49
+IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_SSELEGANT_B ===
 Name: BARRY

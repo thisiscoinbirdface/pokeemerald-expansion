@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_WATER_STONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE"
+      "flag": "FLAG_ITEM_SSELEGANT_A"
     }
   ],
   "warp_events": [

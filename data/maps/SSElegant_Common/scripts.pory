@@ -33,7 +33,7 @@ script SSElegant_Common_NPC2{
 
 //carona
 script SSElegant_Common_Carona{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("How nice to see you, {PLAYER}!"), MSGBOX_NPC)
     end
 }
 script SSElegant_Common_Medicham{
