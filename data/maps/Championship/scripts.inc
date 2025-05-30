@@ -51,7 +51,7 @@ VictoryCape_NPC8::
 
 
 VictoryCape_Gab::
-# 40 "data//maps/Championship/scripts.pory"
+# 42 "data//maps/Championship/scripts.pory"
 	msgbox VictoryCape_NPC1_Text_0, MSGBOX_NPC
 	end
 

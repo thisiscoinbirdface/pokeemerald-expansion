@@ -11,50 +11,50 @@ mapscripts SSElegant_Rooms_MapScripts{}
 
 //gabrielle
 script SSElegant_Rooms_Gabrielle{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("{PLAYER}, you managed to get on!\nDid you get a ticket?\p...\pYou stowed away in a storage container? Whoa..."), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_Zoroark{
     playmoncry(SPECIES_ZOROARK_HISUI, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Zoroark is licking its fur.\p...\pJust a thought - can it impersonate humans?"), MSGBOX_NPC)
     end
 }
 
 //breech
 script SSElegant_Rooms_Breech{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Hey {PLAYER}! Fancy seeing you here. This is a welcome change for us - after so much mountaineering, Clefable and I are really enjoying the sea breeze!"), MSGBOX_NPC)
     end
 }
 //clef
 script SSElegant_Rooms_Clefable{
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Clefable is happy!"), MSGBOX_NPC)
     end
 }
 
 //couple
 script SSElegant_Rooms_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Our daughter is taking part in the Cormoria Pokemon Championship.\pWe're on our way to Victory Cape to support her!"), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("When I was younger, I tried to enter the Pokemon Championship...but I could only get four badges."), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_Weezing{
     playmoncry(SPECIES_WEEZING_GALAR, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Weezing looks content."), MSGBOX_NPC)
     end
 }
 
 //artist
 script SSElegant_Rooms_NPC3{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I thought I'd find inspiration for a masterpiece that could compete with Arsalan...but I've just been seasick the whole cruise!"), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_Smeargle{
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Smeargle looks seasick too..."), MSGBOX_NPC)
     end
 }
 

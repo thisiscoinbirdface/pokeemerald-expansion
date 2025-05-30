@@ -35,6 +35,8 @@ script VictoryCape_NPC8{
     end    
 }
 
+//Viniel 
+
 //Gabrielle
 script VictoryCape_Gab{
     msgbox(format(""), MSGBOX_NPC)

@@ -3739,26 +3739,33 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
+Glimmora @ Power Herb
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Meteor Beam
+- Sludge Wave
+- Stealth Rock
+- Solar Beam
+
 Scolipede
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Amoonguss
+Amoonguss @ Rocky Helmet
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Glimmora
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Toxapex
+Toxapex @ Leftovers
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pinsir @ Pinsirite
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
+- X-Scissor  
+- Swords Dance
+- Quick Attack  
+- Double Edge
 
 === TRAINER_CHAMPIONSHIP_C ===
 Name: Freya
@@ -3792,26 +3799,47 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
-Zoroark-Hisui
+Claydol @ Leftovers
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Psychic
+- Scorching Sands
+- Toxic
 
-Claydol
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Kommo-o
+Zoroark-Hisui @ Life Orb
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
+- Shadow Ball
+- Hyper Voice
+- Focus Blast
 
-Milotic
+Kommo-o @ Throat Spray
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Clangorous Soul
+- Clanging Scales
+- Boomburst
+- Earthquake
+
+Milotic @ Sitrus Berry
+Level: 65
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Calm Mind
+- Scald
+- Recover
+- Confuse Ray
 
 Mawile @ Mawilite
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
+- Swords Dance
+- Play Rough
+- Sucker Punch
+- Brick Break
 
 === TRAINER_CHAMPIONSHIP_E ===
 Name: Kohla
