@@ -936,6 +936,8 @@ UnchartedIsland_Moxie_Melea_Fight::
 	delay 16
 # 622 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_12
+# 625 "data//maps/UnchartedIsland/scripts.pory"
+	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_MOXIE, UnchartedIsland_Moxie_Melea_Fight_Text_13
 # 627 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 628 "data//maps/UnchartedIsland/scripts.pory"
@@ -945,7 +947,7 @@ UnchartedIsland_Moxie_Melea_Fight::
 # 630 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
 # 631 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_13
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_14
 # 633 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_10
 # 634 "data//maps/UnchartedIsland/scripts.pory"
@@ -955,13 +957,15 @@ UnchartedIsland_Moxie_Melea_Fight::
 # 636 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
 # 637 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_14
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_15
 # 639 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_11
 # 640 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
+# 643 "data//maps/UnchartedIsland/scripts.pory"
+	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_MELEA, UnchartedIsland_Moxie_Melea_Fight_Text_16
 # 645 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_15
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_17
 # 646 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_12
 # 647 "data//maps/UnchartedIsland/scripts.pory"
@@ -2229,18 +2233,26 @@ UnchartedIsland_Moxie_Melea_Fight_Text_12:
 	.string "and for all!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_13:
+# 625 "data//maps/UnchartedIsland/scripts.pory"
+	.string "No! Everything's ruined!$"
+
+UnchartedIsland_Moxie_Melea_Fight_Text_14:
 # 631 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No!\p"
 	.string "Noo!!!\p"
 	.string "I...$"
 
-UnchartedIsland_Moxie_Melea_Fight_Text_14:
+UnchartedIsland_Moxie_Melea_Fight_Text_15:
 # 637 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Calm down Moxie! I'm here.\p"
 	.string "Go now - go and stop Kohla.\n"
 	.string "I'll finish {PLAYER} off!$"
 
-UnchartedIsland_Moxie_Melea_Fight_Text_15:
+UnchartedIsland_Moxie_Melea_Fight_Text_16:
+# 643 "data//maps/UnchartedIsland/scripts.pory"
+	.string "This can't be happening!$"
+
+UnchartedIsland_Moxie_Melea_Fight_Text_17:
 # 645 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No!\p"
 	.string "We've worked too hard...I can't let it\n"

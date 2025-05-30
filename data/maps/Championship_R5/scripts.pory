@@ -41,10 +41,10 @@ script Championship_R5{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Kohla", format("What?\pWhy did I take you off the case?\pWhy did I leave you alone with Moxie and Melea back at the island?\pBecause I hate you, {PLAYER}.\pI resent you. I despise you.\pAnd I will never ever let you upstage me again, {PLAYER}!"))
+    msgbox_delay("Kohla", format("In the end, it was you.\pWhile the world will give me all the credit, I know the truth.\pI can't deny the truth.\pYou were the one who stopped Rue and Team Somber."))
 
     playse(SE_APPLAUSE)
-    msgbox_delay("Announcer", format("Trainers, at position!"))
+    msgbox_delay("Announcer", format("Trainers, to your positions!"))
 
     applymovement(1, moves(walk_left * 2))
     applymovement(2, moves(walk_left * 2))
