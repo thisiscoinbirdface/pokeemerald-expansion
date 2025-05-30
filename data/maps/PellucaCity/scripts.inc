@@ -2786,8 +2786,8 @@ PellucaCityFlooded_NPCSaved_D_Text_0:
 
 PellucaCityFlooded_EventScript_TimesUp_Text_0:
 # 692 "data//maps/PellucaCity/scripts.pory"
-	.string "The tides rise higher and higher...it's\n"
-	.string "too late!$"
+	.string "The tides rise higher and higher...\n"
+	.string "it's too late!$"
 
 PellucaCityFlooded_EventScript_TimesRunningOut_Text_0:
 # 712 "data//maps/PellucaCity/scripts.pory"
