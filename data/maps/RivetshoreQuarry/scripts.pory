@@ -25,14 +25,18 @@ script RivetshoreQuarry_Percy{
     release
 
     delay(16)
-
+    hidefollower
     addobject(33)
     applymovement(33, moves(fly_down))
     waitmovement(0)
 
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_in_place_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
-    
+    delay(16)
+    applymovement(33, moves(face_left))    
+    waitmovement(0)
+    delay(16)
+
     msgbox(format("It's a Mimikyu! Mimikyu must have been the one playing pranks on everyone!\pMimikyu - you shouldn't be playing pranks on people!"))
     release
 
@@ -47,6 +51,7 @@ script RivetshoreQuarry_Percy{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 3 face_down))
     applymovement(LOCALID_PERCY, moves(walk_right * 3 walk_down * 5 walk_left walk_down * 3))
     waitmovement(0)
+    removeobject(LOCALID_PERCY)
 
     //flags quests    
     setflag(FLAG_HIDE_RIVETSHORE_PERCY)
@@ -89,7 +94,7 @@ script RivetshoreQuarry_NPC2{
 
 //blocker 
 script RivetshoreQuarry_Blocker_NPC{
-    msgbox(format("Why aren't people allowed when Raazi's not around?\pCause it's dangerous, idiot!"), MSGBOX_NPC)
+    msgbox(format("Why aren't people allowed in the quarry when Raazi's not around?\pCause it's dangerous, idiot!"), MSGBOX_NPC)
     end
 }
 

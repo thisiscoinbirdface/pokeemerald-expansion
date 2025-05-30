@@ -5534,7 +5534,7 @@
     {
       "id": "LAYOUT_RIVETSHORE_CITY_POKEMON_CENTER",
       "name": "RivetshoreCity_PokemonCenter_Layout",
-      "width": 13,
+      "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
