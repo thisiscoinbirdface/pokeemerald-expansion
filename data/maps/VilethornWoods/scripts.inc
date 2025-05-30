@@ -10,63 +10,84 @@
     .set LOCALID_RALTS2, 19
 # 6 "data//maps/VilethornWoods/scripts.pory"
     .set LOCALID_RALTS3, 20
+# 7 "data//maps/VilethornWoods/scripts.pory"
+    .set LOCALID_CELEBI, 31
 
 VilethornWoods_MapScripts::
+# 11 "data//maps/VilethornWoods/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, VilethornWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+VilethornWoods_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+# 12 "data//maps/VilethornWoods/scripts.pory"
+	goto VilethornWoods_SetLayout
+	return
+
+
+VilethornWoods_SetLayout::
+# 16 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_CELEBI, 2
+	goto_if_eq VilethornWoods_SetLayout_1
+	return
+
+VilethornWoods_SetLayout_1:
+# 17 "data//maps/VilethornWoods/scripts.pory"
+	setmaplayoutindex LAYOUT_VILETHORN_MANSION
+	return
 
 
 VilethornWoods_EventScript_NurseDemo::
-# 13 "data//maps/VilethornWoods/scripts.pory"
+# 23 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_EventScript_NurseDemo_Text_0, MSGBOX_NPC
 	end
 
 
 VilethornWoods_NurseJoy_OnRoute::
-# 18 "data//maps/VilethornWoods/scripts.pory"
+# 28 "data//maps/VilethornWoods/scripts.pory"
 	lockall
-# 19 "data//maps/VilethornWoods/scripts.pory"
+# 29 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
-# 20 "data//maps/VilethornWoods/scripts.pory"
+# 30 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NurseJoy_OnRoute_Text_0
-# 21 "data//maps/VilethornWoods/scripts.pory"
+# 31 "data//maps/VilethornWoods/scripts.pory"
 	call Common_EventScript_NurseJoyOnRoute
-# 22 "data//maps/VilethornWoods/scripts.pory"
+# 32 "data//maps/VilethornWoods/scripts.pory"
 	delay 30
-# 23 "data//maps/VilethornWoods/scripts.pory"
+# 33 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Ralts_FirstTrigger::
-# 41 "data//maps/VilethornWoods/scripts.pory"
+# 51 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_HIDE_VILETHORN_RALTS_1, VilethornWoods_Ralts_FirstTrigger_2
-# 42 "data//maps/VilethornWoods/scripts.pory"
+# 52 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_RALTS_FINISHED, VilethornWoods_Ralts_FirstTrigger_5
-# 44 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 45 "data//maps/VilethornWoods/scripts.pory"
-	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
-# 46 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_RALTS1, VilethornWoods_Ralts_FirstTrigger_Movement_0
-# 47 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 48 "data//maps/VilethornWoods/scripts.pory"
-	delay 24
-# 49 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_RALTS1, VilethornWoods_Ralts_FirstTrigger_Movement_1
-# 50 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
 # 54 "data//maps/VilethornWoods/scripts.pory"
-	removeobject LOCALID_RALTS1
+	lockall
 # 55 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_HIDE_VILETHORN_RALTS_1
+	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
 # 56 "data//maps/VilethornWoods/scripts.pory"
-	clearflag FLAG_HIDE_VILETHORN_RALTS_2
+	applymovement LOCALID_RALTS1, VilethornWoods_Ralts_FirstTrigger_Movement_0
+# 57 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 58 "data//maps/VilethornWoods/scripts.pory"
+	delay 24
+# 59 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_RALTS1, VilethornWoods_Ralts_FirstTrigger_Movement_1
 # 60 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 64 "data//maps/VilethornWoods/scripts.pory"
+	removeobject LOCALID_RALTS1
+# 65 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_HIDE_VILETHORN_RALTS_1
+# 66 "data//maps/VilethornWoods/scripts.pory"
+	clearflag FLAG_HIDE_VILETHORN_RALTS_2
+# 70 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Ralts_FirstTrigger_Text_0
-# 61 "data//maps/VilethornWoods/scripts.pory"
+# 71 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 63 "data//maps/VilethornWoods/scripts.pory"
+# 73 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
@@ -78,35 +99,35 @@ VilethornWoods_Ralts_FirstTrigger_5:
 
 
 VilethornWoods_Ralts_SecondTrigger::
-# 68 "data//maps/VilethornWoods/scripts.pory"
+# 78 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_HIDE_VILETHORN_RALTS_2, VilethornWoods_Ralts_SecondTrigger_2
-# 69 "data//maps/VilethornWoods/scripts.pory"
+# 79 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_RALTS_FINISHED, VilethornWoods_Ralts_SecondTrigger_5
-# 71 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 72 "data//maps/VilethornWoods/scripts.pory"
-	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
-# 73 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_RALTS2, VilethornWoods_Ralts_FirstTrigger_Movement_0
-# 74 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 75 "data//maps/VilethornWoods/scripts.pory"
-	delay 24
-# 76 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_RALTS2, VilethornWoods_Ralts_FirstTrigger_Movement_1
-# 77 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
 # 81 "data//maps/VilethornWoods/scripts.pory"
-	removeobject LOCALID_RALTS2
+	lockall
 # 82 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_HIDE_VILETHORN_RALTS_2
+	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
 # 83 "data//maps/VilethornWoods/scripts.pory"
-	clearflag FLAG_HIDE_VILETHORN_RALTS_3
+	applymovement LOCALID_RALTS2, VilethornWoods_Ralts_FirstTrigger_Movement_0
+# 84 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 85 "data//maps/VilethornWoods/scripts.pory"
+	delay 24
+# 86 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_RALTS2, VilethornWoods_Ralts_FirstTrigger_Movement_1
 # 87 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 91 "data//maps/VilethornWoods/scripts.pory"
+	removeobject LOCALID_RALTS2
+# 92 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_HIDE_VILETHORN_RALTS_2
+# 93 "data//maps/VilethornWoods/scripts.pory"
+	clearflag FLAG_HIDE_VILETHORN_RALTS_3
+# 97 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Ralts_SecondTrigger_Text_0
-# 88 "data//maps/VilethornWoods/scripts.pory"
+# 98 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 90 "data//maps/VilethornWoods/scripts.pory"
+# 100 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
@@ -118,121 +139,121 @@ VilethornWoods_Ralts_SecondTrigger_5:
 
 
 VilethornWoods_Ralts::
-# 96 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 97 "data//maps/VilethornWoods/scripts.pory"
-	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
-# 98 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_RALTS3, VilethornWoods_Ralts_Movement_0
-# 99 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 100 "data//maps/VilethornWoods/scripts.pory"
-	faceplayer
-# 101 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 102 "data//maps/VilethornWoods/scripts.pory"
-	delay 16
-# 103 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Ralts_Text_0
-# 104 "data//maps/VilethornWoods/scripts.pory"
-	release
 # 106 "data//maps/VilethornWoods/scripts.pory"
-	setwildbattle SPECIES_RALTS, 18
+	lockall
 # 107 "data//maps/VilethornWoods/scripts.pory"
-	dowildbattle
+	playmoncry SPECIES_RALTS, CRY_MODE_NORMAL
+# 108 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_RALTS3, VilethornWoods_Ralts_Movement_0
 # 109 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_HIDE_VILETHORN_RALTS_3
+	waitmovement 0
 # 110 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_VILETHORN_RALTS_FINISHED
+	faceplayer
 # 111 "data//maps/VilethornWoods/scripts.pory"
-	removeobject LOCALID_RALTS3
+	waitmovement 0
+# 112 "data//maps/VilethornWoods/scripts.pory"
+	delay 16
 # 113 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Ralts_Text_0
+# 114 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 116 "data//maps/VilethornWoods/scripts.pory"
+	setwildbattle SPECIES_RALTS, 18
+# 117 "data//maps/VilethornWoods/scripts.pory"
+	dowildbattle
+# 119 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_HIDE_VILETHORN_RALTS_3
+# 120 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_RALTS_FINISHED
+# 121 "data//maps/VilethornWoods/scripts.pory"
+	removeobject LOCALID_RALTS3
+# 123 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_EventScript_TriggerProf::
-# 138 "data//maps/VilethornWoods/scripts.pory"
-	goto_if_set FLAG_VILETHORN_PROF, VilethornWoods_EventScript_TriggerProf_2
-# 142 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 145 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, VilethornWoods_Ralts_Movement_0
-# 146 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 147 "data//maps/VilethornWoods/scripts.pory"
-	delay 16
 # 148 "data//maps/VilethornWoods/scripts.pory"
-	speakername VilethornWoods_EventScript_TriggerProf_Text_0
-# 149 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_1
-# 150 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
-# 151 "data//maps/VilethornWoods/scripts.pory"
-	speakername VilethornWoods_EventScript_TriggerProf_Text_0
+	goto_if_set FLAG_VILETHORN_PROF, VilethornWoods_EventScript_TriggerProf_2
 # 152 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_3
-# 153 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
-# 154 "data//maps/VilethornWoods/scripts.pory"
-	speakername VilethornWoods_EventScript_TriggerProf_Text_0
+	lockall
 # 155 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_4
+	applymovement LOCALID_GRUNT, VilethornWoods_Ralts_Movement_0
 # 156 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
+	waitmovement 0
 # 157 "data//maps/VilethornWoods/scripts.pory"
-	speakername VilethornWoods_EventScript_TriggerProf_Text_0
-# 158 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_5
-# 159 "data//maps/VilethornWoods/scripts.pory"
-	release
-# 162 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_PROF, VilethornWoods_EventScript_TriggerProf_Movement_0
-# 163 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_0
-# 164 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 165 "data//maps/VilethornWoods/scripts.pory"
 	delay 16
-# 166 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_1
-# 167 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 168 "data//maps/VilethornWoods/scripts.pory"
-	delay 36
-# 169 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_2
-# 170 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 171 "data//maps/VilethornWoods/scripts.pory"
-	delay 36
-# 172 "data//maps/VilethornWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_3
-# 173 "data//maps/VilethornWoods/scripts.pory"
-	waitmovement 0
-# 174 "data//maps/VilethornWoods/scripts.pory"
-	delay 36
-# 175 "data//maps/VilethornWoods/scripts.pory"
+# 158 "data//maps/VilethornWoods/scripts.pory"
 	speakername VilethornWoods_EventScript_TriggerProf_Text_0
-# 176 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_EventScript_TriggerProf_Text_6
-# 177 "data//maps/VilethornWoods/scripts.pory"
+# 159 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_1
+# 160 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
+# 161 "data//maps/VilethornWoods/scripts.pory"
+	speakername VilethornWoods_EventScript_TriggerProf_Text_0
+# 162 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_3
+# 163 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
+# 164 "data//maps/VilethornWoods/scripts.pory"
+	speakername VilethornWoods_EventScript_TriggerProf_Text_0
+# 165 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_4
+# 166 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2
+# 167 "data//maps/VilethornWoods/scripts.pory"
+	speakername VilethornWoods_EventScript_TriggerProf_Text_0
+# 168 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_5
+# 169 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 178 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_PROF, VilethornWoods_EventScript_TriggerProf_Movement_0
+# 173 "data//maps/VilethornWoods/scripts.pory"
 	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_0
+# 174 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 175 "data//maps/VilethornWoods/scripts.pory"
+	delay 16
+# 176 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_1
+# 177 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 178 "data//maps/VilethornWoods/scripts.pory"
+	delay 36
 # 179 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_2
+# 180 "data//maps/VilethornWoods/scripts.pory"
 	waitmovement 0
 # 181 "data//maps/VilethornWoods/scripts.pory"
-	setobjectxyperm LOCALID_GRUNT, 0, 0
+	delay 36
 # 182 "data//maps/VilethornWoods/scripts.pory"
-	setobjectxyperm LOCALID_PROF, 1, 0
+	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_3
 # 183 "data//maps/VilethornWoods/scripts.pory"
-	setobjectxy LOCALID_GRUNT, 0, 0
+	waitmovement 0
 # 184 "data//maps/VilethornWoods/scripts.pory"
-	setobjectxy LOCALID_PROF, 1, 0
+	delay 36
+# 185 "data//maps/VilethornWoods/scripts.pory"
+	speakername VilethornWoods_EventScript_TriggerProf_Text_0
 # 186 "data//maps/VilethornWoods/scripts.pory"
-	setflag FLAG_VILETHORN_PROF
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_6
 # 187 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 188 "data//maps/VilethornWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, VilethornWoods_EventScript_TriggerProf_Movement_0
+# 189 "data//maps/VilethornWoods/scripts.pory"
+	waitmovement 0
+# 191 "data//maps/VilethornWoods/scripts.pory"
+	setobjectxyperm LOCALID_GRUNT, 0, 0
+# 192 "data//maps/VilethornWoods/scripts.pory"
+	setobjectxyperm LOCALID_PROF, 1, 0
+# 193 "data//maps/VilethornWoods/scripts.pory"
+	setobjectxy LOCALID_GRUNT, 0, 0
+# 194 "data//maps/VilethornWoods/scripts.pory"
+	setobjectxy LOCALID_PROF, 1, 0
+# 196 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_VILETHORN_PROF
+# 197 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	return
 
@@ -241,136 +262,136 @@ VilethornWoods_EventScript_TriggerProf_2:
 
 
 VilethornWoods_Trainer_A::
-# 198 "data//maps/VilethornWoods/scripts.pory"
+# 208 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_A, VilethornWoods_Trainer_A_Text_0, VilethornWoods_Trainer_A_Text_1
-# 199 "data//maps/VilethornWoods/scripts.pory"
+# 209 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_A_Text_2
-# 200 "data//maps/VilethornWoods/scripts.pory"
+# 210 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_B::
-# 205 "data//maps/VilethornWoods/scripts.pory"
+# 215 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_B, VilethornWoods_Trainer_B_Text_0, VilethornWoods_Trainer_B_Text_1
-# 206 "data//maps/VilethornWoods/scripts.pory"
+# 216 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_B_Text_2
-# 207 "data//maps/VilethornWoods/scripts.pory"
+# 217 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_C::
-# 212 "data//maps/VilethornWoods/scripts.pory"
+# 222 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_C, VilethornWoods_Trainer_C_Text_0, VilethornWoods_Trainer_C_Text_1
-# 213 "data//maps/VilethornWoods/scripts.pory"
+# 223 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_C_Text_2
-# 214 "data//maps/VilethornWoods/scripts.pory"
+# 224 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_D::
-# 219 "data//maps/VilethornWoods/scripts.pory"
+# 229 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_D, VilethornWoods_Trainer_D_Text_0, VilethornWoods_Trainer_D_Text_1
-# 220 "data//maps/VilethornWoods/scripts.pory"
+# 230 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_D_Text_2
-# 221 "data//maps/VilethornWoods/scripts.pory"
+# 231 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_E::
-# 226 "data//maps/VilethornWoods/scripts.pory"
+# 236 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_E, VilethornWoods_Trainer_E_Text_0, VilethornWoods_Trainer_E_Text_1
-# 227 "data//maps/VilethornWoods/scripts.pory"
+# 237 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_E_Text_2
-# 228 "data//maps/VilethornWoods/scripts.pory"
+# 238 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_F1::
-# 233 "data//maps/VilethornWoods/scripts.pory"
+# 243 "data//maps/VilethornWoods/scripts.pory"
 	lockall
-# 234 "data//maps/VilethornWoods/scripts.pory"
+# 244 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
-# 235 "data//maps/VilethornWoods/scripts.pory"
+# 245 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_F, VilethornWoods_Trainer_F1_Text_0, VilethornWoods_Trainer_F1_Text_1
-# 236 "data//maps/VilethornWoods/scripts.pory"
+# 246 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_F1_Text_2
-# 237 "data//maps/VilethornWoods/scripts.pory"
+# 247 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_F2::
-# 242 "data//maps/VilethornWoods/scripts.pory"
+# 252 "data//maps/VilethornWoods/scripts.pory"
 	lockall
-# 243 "data//maps/VilethornWoods/scripts.pory"
+# 253 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
-# 244 "data//maps/VilethornWoods/scripts.pory"
+# 254 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_F, VilethornWoods_Trainer_F1_Text_0, VilethornWoods_Trainer_F1_Text_1
-# 245 "data//maps/VilethornWoods/scripts.pory"
+# 255 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_F1_Text_2
-# 246 "data//maps/VilethornWoods/scripts.pory"
+# 256 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_G::
-# 251 "data//maps/VilethornWoods/scripts.pory"
+# 261 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_G, VilethornWoods_Trainer_G_Text_0, VilethornWoods_Trainer_G_Text_1
-# 252 "data//maps/VilethornWoods/scripts.pory"
+# 262 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_G_Text_2
-# 253 "data//maps/VilethornWoods/scripts.pory"
+# 263 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_Trainer_H::
-# 258 "data//maps/VilethornWoods/scripts.pory"
+# 268 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_single TRAINER_VILETHORN_H, VilethornWoods_Trainer_H_Text_0, VilethornWoods_Trainer_H_Text_1
-# 259 "data//maps/VilethornWoods/scripts.pory"
+# 269 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Trainer_H_Text_2
-# 260 "data//maps/VilethornWoods/scripts.pory"
+# 270 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 
 VilethornWoods_NPC1::
-# 267 "data//maps/VilethornWoods/scripts.pory"
+# 277 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 VilethornWoods_NPC2::
-# 273 "data//maps/VilethornWoods/scripts.pory"
-	lockall
-# 274 "data//maps/VilethornWoods/scripts.pory"
-	faceplayer
-# 276 "data//maps/VilethornWoods/scripts.pory"
-	goto_if_set FLAG_VILETHORN_NPC_MUSHROOMS, VilethornWoods_NPC2_2
-# 280 "data//maps/VilethornWoods/scripts.pory"
-	speakername VilethornWoods_NPC2_Text_0
-# 281 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_NPC2_Text_2, MSGBOX_YESNO
 # 283 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 284 "data//maps/VilethornWoods/scripts.pory"
+	faceplayer
+# 286 "data//maps/VilethornWoods/scripts.pory"
+	goto_if_set FLAG_VILETHORN_NPC_MUSHROOMS, VilethornWoods_NPC2_2
+# 290 "data//maps/VilethornWoods/scripts.pory"
+	speakername VilethornWoods_NPC2_Text_0
+# 291 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_NPC2_Text_2, MSGBOX_YESNO
+# 293 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC2_5
-# 297 "data//maps/VilethornWoods/scripts.pory"
+# 307 "data//maps/VilethornWoods/scripts.pory"
 	speakername VilethornWoods_NPC2_Text_0
-# 298 "data//maps/VilethornWoods/scripts.pory"
+# 308 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC2_Text_5
 VilethornWoods_NPC2_1:
-# 301 "data//maps/VilethornWoods/scripts.pory"
+# 311 "data//maps/VilethornWoods/scripts.pory"
 	releaseall
 	end
 
 VilethornWoods_NPC2_2:
-# 277 "data//maps/VilethornWoods/scripts.pory"
+# 287 "data//maps/VilethornWoods/scripts.pory"
 	speakername VilethornWoods_NPC2_Text_0
-# 278 "data//maps/VilethornWoods/scripts.pory"
+# 288 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC2_Text_1
 	goto VilethornWoods_NPC2_1
 
@@ -379,412 +400,515 @@ VilethornWoods_NPC2_5:
 # 0 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne VilethornWoods_NPC2_8
-# 293 "data//maps/VilethornWoods/scripts.pory"
+# 303 "data//maps/VilethornWoods/scripts.pory"
 	speakername VilethornWoods_NPC2_Text_0
-# 294 "data//maps/VilethornWoods/scripts.pory"
+# 304 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC2_Text_4
 	goto VilethornWoods_NPC2_1
 
 VilethornWoods_NPC2_8:
-# 286 "data//maps/VilethornWoods/scripts.pory"
+# 296 "data//maps/VilethornWoods/scripts.pory"
 	removeitem ITEM_BIG_MUSHROOM
-# 287 "data//maps/VilethornWoods/scripts.pory"
+# 297 "data//maps/VilethornWoods/scripts.pory"
 	speakername VilethornWoods_NPC2_Text_0
-# 288 "data//maps/VilethornWoods/scripts.pory"
+# 298 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC2_Text_3
-# 290 "data//maps/VilethornWoods/scripts.pory"
+# 300 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_Reward
 	goto VilethornWoods_NPC2_1
 
 
 VilethornWoods_Cook_Reward::
-# 306 "data//maps/VilethornWoods/scripts.pory"
+# 316 "data//maps/VilethornWoods/scripts.pory"
 	message VilethornWoods_Cook_Reward_Text_0
-# 307 "data//maps/VilethornWoods/scripts.pory"
+# 317 "data//maps/VilethornWoods/scripts.pory"
 	waitmessage
-# 308 "data//maps/VilethornWoods/scripts.pory"
+# 318 "data//maps/VilethornWoods/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, VilethornWoods_Cook_Reward_Text_1, VilethornWoods_Cook_Reward_Text_2
-# 309 "data//maps/VilethornWoods/scripts.pory"
+# 319 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq VilethornWoods_Cook_Reward_2
 VilethornWoods_Cook_Reward_1:
-# 310 "data//maps/VilethornWoods/scripts.pory"
+# 320 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Cook_Reward_5
 VilethornWoods_Cook_Reward_4:
-# 311 "data//maps/VilethornWoods/scripts.pory"
+# 321 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_Reward_Give
 	return
 
 VilethornWoods_Cook_Reward_2:
-# 309 "data//maps/VilethornWoods/scripts.pory"
+# 319 "data//maps/VilethornWoods/scripts.pory"
 	setvar VAR_0x8006, ITEM_TWISTEDSPOON
 	goto VilethornWoods_Cook_Reward_1
 
 VilethornWoods_Cook_Reward_5:
-# 310 "data//maps/VilethornWoods/scripts.pory"
+# 320 "data//maps/VilethornWoods/scripts.pory"
 	setvar VAR_0x8006, ITEM_ROSE_INCENSE
 	goto VilethornWoods_Cook_Reward_4
 
 
 VilethornWoods_Cook_Reward_Give::
-# 315 "data//maps/VilethornWoods/scripts.pory"
+# 325 "data//maps/VilethornWoods/scripts.pory"
 	showitemdescription
-# 316 "data//maps/VilethornWoods/scripts.pory"
+# 326 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Cook_Reward_Give_Text_0, MSGBOX_YESNO
-# 317 "data//maps/VilethornWoods/scripts.pory"
+# 327 "data//maps/VilethornWoods/scripts.pory"
 	hideitemdescription
-# 318 "data//maps/VilethornWoods/scripts.pory"
+# 328 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_Cook_Reward_Give_1
-# 319 "data//maps/VilethornWoods/scripts.pory"
+# 329 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_Reward
 	return
 
 VilethornWoods_Cook_Reward_Give_1:
-# 318 "data//maps/VilethornWoods/scripts.pory"
+# 328 "data//maps/VilethornWoods/scripts.pory"
 	giveitem VAR_0x8006
-# 318 "data//maps/VilethornWoods/scripts.pory"
+# 328 "data//maps/VilethornWoods/scripts.pory"
 	goto VilethornWoods_Cook_RewardEnd
 	return
 
 
 VilethornWoods_Cook_RewardEnd::
-# 323 "data//maps/VilethornWoods/scripts.pory"
+# 333 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_MUSHROOMS
-# 324 "data//maps/VilethornWoods/scripts.pory"
+# 334 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_Cook_RewardEnd_Text_0, MSGBOX_NPC
 	end
 
 
 VilethornWoods_NPC3::
-# 332 "data//maps/VilethornWoods/scripts.pory"
+# 342 "data//maps/VilethornWoods/scripts.pory"
 	goto_if_set FLAG_VILETHORN_NPC_ITEM, VilethornWoods_NPC3_2
-# 335 "data//maps/VilethornWoods/scripts.pory"
+# 345 "data//maps/VilethornWoods/scripts.pory"
 	lockall
-# 336 "data//maps/VilethornWoods/scripts.pory"
+# 346 "data//maps/VilethornWoods/scripts.pory"
 	faceplayer
-# 337 "data//maps/VilethornWoods/scripts.pory"
+# 347 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_1, MSGBOX_YESNO
-# 338 "data//maps/VilethornWoods/scripts.pory"
+# 348 "data//maps/VilethornWoods/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq VilethornWoods_NPC3_5
-# 347 "data//maps/VilethornWoods/scripts.pory"
+# 357 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_5, MSGBOX_NPC
 VilethornWoods_NPC3_1:
 	end
 
 VilethornWoods_NPC3_2:
-# 333 "data//maps/VilethornWoods/scripts.pory"
+# 343 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_0, MSGBOX_NPC
 	goto VilethornWoods_NPC3_1
 
 VilethornWoods_NPC3_5:
-# 339 "data//maps/VilethornWoods/scripts.pory"
+# 349 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_2
-# 340 "data//maps/VilethornWoods/scripts.pory"
+# 350 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 341 "data//maps/VilethornWoods/scripts.pory"
+# 351 "data//maps/VilethornWoods/scripts.pory"
 	trainerbattle_no_intro TRAINER_VILETHORN_I, VilethornWoods_NPC3_Text_3
-# 342 "data//maps/VilethornWoods/scripts.pory"
+# 352 "data//maps/VilethornWoods/scripts.pory"
 	giveitem ITEM_BIG_ROOT
-# 343 "data//maps/VilethornWoods/scripts.pory"
+# 353 "data//maps/VilethornWoods/scripts.pory"
 	release
-# 344 "data//maps/VilethornWoods/scripts.pory"
+# 354 "data//maps/VilethornWoods/scripts.pory"
 	setflag FLAG_VILETHORN_NPC_ITEM
-# 345 "data//maps/VilethornWoods/scripts.pory"
+# 355 "data//maps/VilethornWoods/scripts.pory"
 	msgbox VilethornWoods_NPC3_Text_4, MSGBOX_NPC
 	goto VilethornWoods_NPC3_1
 
 
 VilethornWoods_Celebi_Seed::
-# 359 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_0, MSGBOX_NPC
-# 361 "data//maps/VilethornWoods/scripts.pory"
-	checkitem ITEM_TIME_SEED
-# 363 "data//maps/VilethornWoods/scripts.pory"
-	compare VAR_RESULT, 1
+# 370 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_CELEBI, 1
 	goto_if_eq VilethornWoods_Celebi_Seed_2
-VilethornWoods_Celebi_Seed_1:
+# 411 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_CELEBI, 0
+	goto_if_eq VilethornWoods_Celebi_Seed_5
 	end
 
 VilethornWoods_Celebi_Seed_2:
-# 364 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_1, MSGBOX_YESNO
-# 366 "data//maps/VilethornWoods/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq VilethornWoods_Celebi_Seed_4
-	goto VilethornWoods_Celebi_Seed_1
-
-VilethornWoods_Celebi_Seed_4:
-# 367 "data//maps/VilethornWoods/scripts.pory"
-	removeitem ITEM_TIME_SEED
-# 369 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_2, MSGBOX_SIGN
-# 370 "data//maps/VilethornWoods/scripts.pory"
-	release
 # 371 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_0, MSGBOX_NPC
+# 373 "data//maps/VilethornWoods/scripts.pory"
+	checkitem ITEM_TIME_WATER
+# 375 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Celebi_Seed_8
+VilethornWoods_Celebi_Seed_7:
+	end
+
+VilethornWoods_Celebi_Seed_5:
+# 413 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_4, MSGBOX_NPC
+# 415 "data//maps/VilethornWoods/scripts.pory"
+	checkitem ITEM_TIME_SEED
+# 417 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Celebi_Seed_11
+VilethornWoods_Celebi_Seed_10:
+	end
+
+VilethornWoods_Celebi_Seed_8:
+# 376 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_1, MSGBOX_YESNO
+# 378 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Celebi_Seed_13
+	goto VilethornWoods_Celebi_Seed_7
+
+VilethornWoods_Celebi_Seed_11:
+# 418 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_5, MSGBOX_YESNO
+# 420 "data//maps/VilethornWoods/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq VilethornWoods_Celebi_Seed_15
+	goto VilethornWoods_Celebi_Seed_10
+
+VilethornWoods_Celebi_Seed_13:
+# 379 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_CELEBI, 2
+# 380 "data//maps/VilethornWoods/scripts.pory"
+	removeitem ITEM_TIME_SEED
+# 381 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_CELEBI, 1
+# 382 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_2, MSGBOX_SIGN
+# 383 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 384 "data//maps/VilethornWoods/scripts.pory"
+	delay 32
+# 385 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2, MSGBOX_SIGN
+# 386 "data//maps/VilethornWoods/scripts.pory"
+	delay 32
+# 387 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2, MSGBOX_SIGN
+# 388 "data//maps/VilethornWoods/scripts.pory"
+	delay 32
+# 389 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_EventScript_TriggerProf_Text_2, MSGBOX_SIGN
+# 390 "data//maps/VilethornWoods/scripts.pory"
+	delay 32
+# 392 "data//maps/VilethornWoods/scripts.pory"
+	message VilethornWoods_Celebi_Seed_Text_3
+# 394 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_0x8004, 2
+# 395 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_0x8005, 2
+# 396 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_0x8006, 30
+# 397 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_0x8007, 5
+# 398 "data//maps/VilethornWoods/scripts.pory"
+	special ShakeCamera
+# 399 "data//maps/VilethornWoods/scripts.pory"
+	delay 20
+# 401 "data//maps/VilethornWoods/scripts.pory"
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 402 "data//maps/VilethornWoods/scripts.pory"
+	warp MAP_VILETHORN_WOODS, VAR_TEMP_2, VAR_TEMP_3
+# 403 "data//maps/VilethornWoods/scripts.pory"
+	releaseall
+	goto VilethornWoods_Celebi_Seed_7
+
+VilethornWoods_Celebi_Seed_15:
+# 421 "data//maps/VilethornWoods/scripts.pory"
+	removeitem ITEM_TIME_SEED
+# 422 "data//maps/VilethornWoods/scripts.pory"
+	setvar VAR_CELEBI, 1
+# 423 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_6, MSGBOX_SIGN
+# 424 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 425 "data//maps/VilethornWoods/scripts.pory"
 	delay 16
-# 372 "data//maps/VilethornWoods/scripts.pory"
-	msgbox VilethornWoods_Celebi_Seed_Text_3, MSGBOX_SIGN
-	goto VilethornWoods_Celebi_Seed_1
+# 426 "data//maps/VilethornWoods/scripts.pory"
+	msgbox VilethornWoods_Celebi_Seed_Text_7, MSGBOX_SIGN
+	goto VilethornWoods_Celebi_Seed_10
 
 
-# 46 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Celebi::
+# 438 "data//maps/VilethornWoods/scripts.pory"
+	lockall
+# 440 "data//maps/VilethornWoods/scripts.pory"
+	special SaveGame
+# 441 "data//maps/VilethornWoods/scripts.pory"
+	waitstate
+# 442 "data//maps/VilethornWoods/scripts.pory"
+	release
+# 445 "data//maps/VilethornWoods/scripts.pory"
+	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
+# 446 "data//maps/VilethornWoods/scripts.pory"
+	waitmoncry
+# 447 "data//maps/VilethornWoods/scripts.pory"
+	setflag FLAG_CELEBI
+# 449 "data//maps/VilethornWoods/scripts.pory"
+	setwildbattle SPECIES_CELEBI, 50
+# 450 "data//maps/VilethornWoods/scripts.pory"
+	dowildbattle
+# 451 "data//maps/VilethornWoods/scripts.pory"
+	removeobject LOCALID_CELEBI
+# 453 "data//maps/VilethornWoods/scripts.pory"
+	releaseall
+	end
+
+
+# 56 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_Ralts_FirstTrigger_Movement_0:
-# 46 "data//maps/VilethornWoods/scripts.pory"
+# 56 "data//maps/VilethornWoods/scripts.pory"
 	face_up
-# 46 "data//maps/VilethornWoods/scripts.pory"
+# 56 "data//maps/VilethornWoods/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 49 "data//maps/VilethornWoods/scripts.pory"
+# 59 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_Ralts_FirstTrigger_Movement_1:
-# 49 "data//maps/VilethornWoods/scripts.pory"
+# 59 "data//maps/VilethornWoods/scripts.pory"
 	fly_up
 	step_end
 
-# 98 "data//maps/VilethornWoods/scripts.pory"
+# 108 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_Ralts_Movement_0:
-# 98 "data//maps/VilethornWoods/scripts.pory"
+# 108 "data//maps/VilethornWoods/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_EventScript_TriggerProf_Movement_0:
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
-# 162 "data//maps/VilethornWoods/scripts.pory"
+# 172 "data//maps/VilethornWoods/scripts.pory"
 	walk_up
 	step_end
 
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_EventScript_TriggerProf_Movement_1:
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	walk_down
-# 166 "data//maps/VilethornWoods/scripts.pory"
+# 176 "data//maps/VilethornWoods/scripts.pory"
 	emote_question_mark
 	step_end
 
-# 169 "data//maps/VilethornWoods/scripts.pory"
+# 179 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_EventScript_TriggerProf_Movement_2:
-# 169 "data//maps/VilethornWoods/scripts.pory"
+# 179 "data//maps/VilethornWoods/scripts.pory"
 	face_left
 	step_end
 
-# 172 "data//maps/VilethornWoods/scripts.pory"
+# 182 "data//maps/VilethornWoods/scripts.pory"
 VilethornWoods_EventScript_TriggerProf_Movement_3:
-# 172 "data//maps/VilethornWoods/scripts.pory"
+# 182 "data//maps/VilethornWoods/scripts.pory"
 	face_right
 	step_end
 
 VilethornWoods_EventScript_NurseDemo_Text_0:
-# 13 "data//maps/VilethornWoods/scripts.pory"
+# 23 "data//maps/VilethornWoods/scripts.pory"
 	.string "This area is closed for the demo.$"
 
 VilethornWoods_NurseJoy_OnRoute_Text_0:
-# 20 "data//maps/VilethornWoods/scripts.pory"
+# 30 "data//maps/VilethornWoods/scripts.pory"
 	.string "These woods are so creepy! I'm so glad\n"
 	.string "Chansey is here with me.$"
 
 VilethornWoods_Ralts_FirstTrigger_Text_0:
-# 60 "data//maps/VilethornWoods/scripts.pory"
+# 70 "data//maps/VilethornWoods/scripts.pory"
 	.string "Ralts teleported away!\n"
 	.string "It can't have gone far...$"
 
 VilethornWoods_Ralts_SecondTrigger_Text_0:
-# 87 "data//maps/VilethornWoods/scripts.pory"
+# 97 "data//maps/VilethornWoods/scripts.pory"
 	.string "Ralts teleported away again! It must be\n"
 	.string "somewhere in this accursed forest...$"
 
 VilethornWoods_Ralts_Text_0:
-# 103 "data//maps/VilethornWoods/scripts.pory"
+# 113 "data//maps/VilethornWoods/scripts.pory"
 	.string "Aha! Ralts can't escape this time!$"
 
 VilethornWoods_EventScript_TriggerProf_Text_0:
-# 148 "data//maps/VilethornWoods/scripts.pory"
+# 158 "data//maps/VilethornWoods/scripts.pory"
 	.string "Grunt$"
 
 VilethornWoods_EventScript_TriggerProf_Text_1:
-# 149 "data//maps/VilethornWoods/scripts.pory"
+# 159 "data//maps/VilethornWoods/scripts.pory"
 	.string "...yes boss. We've picked up the\n"
 	.string "Professor.$"
 
 VilethornWoods_EventScript_TriggerProf_Text_2:
-# 150 "data//maps/VilethornWoods/scripts.pory"
+# 160 "data//maps/VilethornWoods/scripts.pory"
 	.string "...$"
 
 VilethornWoods_EventScript_TriggerProf_Text_3:
-# 152 "data//maps/VilethornWoods/scripts.pory"
+# 162 "data//maps/VilethornWoods/scripts.pory"
 	.string "No, nobody saw us, boss.$"
 
 VilethornWoods_EventScript_TriggerProf_Text_4:
-# 155 "data//maps/VilethornWoods/scripts.pory"
+# 165 "data//maps/VilethornWoods/scripts.pory"
 	.string "Yes boss, I'm positive.$"
 
 VilethornWoods_EventScript_TriggerProf_Text_5:
-# 158 "data//maps/VilethornWoods/scripts.pory"
+# 168 "data//maps/VilethornWoods/scripts.pory"
 	.string "...okay, we'll head back to HQ right away.$"
 
 VilethornWoods_EventScript_TriggerProf_Text_6:
-# 176 "data//maps/VilethornWoods/scripts.pory"
+# 186 "data//maps/VilethornWoods/scripts.pory"
 	.string "Must be a wild Impidimp or something...$"
 
 VilethornWoods_Trainer_A_Text_0:
-# 198 "data//maps/VilethornWoods/scripts.pory"
+# 208 "data//maps/VilethornWoods/scripts.pory"
 	.string "PSYCHIC type Pokémon are my natural\n"
 	.string "enemies! That's why I'm training here.$"
 
 VilethornWoods_Trainer_A_Text_1:
-# 198 "data//maps/VilethornWoods/scripts.pory"
+# 208 "data//maps/VilethornWoods/scripts.pory"
 	.string "I like PSYCHIC types more than you!$"
 
 VilethornWoods_Trainer_A_Text_2:
-# 199 "data//maps/VilethornWoods/scripts.pory"
+# 209 "data//maps/VilethornWoods/scripts.pory"
 	.string "I like training but I don't want to go to\n"
 	.string "deep into this forest...$"
 
 VilethornWoods_Trainer_B_Text_0:
-# 205 "data//maps/VilethornWoods/scripts.pory"
+# 215 "data//maps/VilethornWoods/scripts.pory"
 	.string "I thought these woods would have BUG\n"
 	.string "type Pokémon, but I can't find any. I'm\l"
 	.string "so bummed! But beating you in battle\l"
 	.string "will make me feel better!$"
 
 VilethornWoods_Trainer_B_Text_1:
-# 205 "data//maps/VilethornWoods/scripts.pory"
+# 215 "data//maps/VilethornWoods/scripts.pory"
 	.string "I don't feel better at all!$"
 
 VilethornWoods_Trainer_B_Text_2:
-# 206 "data//maps/VilethornWoods/scripts.pory"
+# 216 "data//maps/VilethornWoods/scripts.pory"
 	.string "This forest is weird...a dense fog, no\n"
 	.string "BUG types...$"
 
 VilethornWoods_Trainer_C_Text_0:
-# 212 "data//maps/VilethornWoods/scripts.pory"
+# 222 "data//maps/VilethornWoods/scripts.pory"
 	.string "The sweet, delicious fog envelops\n"
 	.string "us...we are one with the mindwaves!$"
 
 VilethornWoods_Trainer_C_Text_1:
-# 212 "data//maps/VilethornWoods/scripts.pory"
+# 222 "data//maps/VilethornWoods/scripts.pory"
 	.string "You're not one with the mindwaves!$"
 
 VilethornWoods_Trainer_C_Text_2:
-# 213 "data//maps/VilethornWoods/scripts.pory"
+# 223 "data//maps/VilethornWoods/scripts.pory"
 	.string "I want to go deeper...sink\n"
 	.string "deeper...escape my real life...$"
 
 VilethornWoods_Trainer_D_Text_0:
-# 219 "data//maps/VilethornWoods/scripts.pory"
+# 229 "data//maps/VilethornWoods/scripts.pory"
 	.string "I'm a Pokémon Breeder. We all specialise\n"
 	.string "in different Pokémon forms. I'm a horse\l"
 	.string "breeding expert!$"
 
 VilethornWoods_Trainer_D_Text_1:
-# 219 "data//maps/VilethornWoods/scripts.pory"
+# 229 "data//maps/VilethornWoods/scripts.pory"
 	.string "Well fought!$"
 
 VilethornWoods_Trainer_D_Text_2:
-# 220 "data//maps/VilethornWoods/scripts.pory"
+# 230 "data//maps/VilethornWoods/scripts.pory"
 	.string "I need to raise my horses to become\n"
 	.string "stronger. Maybe some Vitamins would\l"
 	.string "help...$"
 
 VilethornWoods_Trainer_E_Text_0:
-# 226 "data//maps/VilethornWoods/scripts.pory"
+# 236 "data//maps/VilethornWoods/scripts.pory"
 	.string "Eek! These woods are creepy! I was\n"
 	.string "supposed to go to Gloria's theater\l"
 	.string "studio in Silversun City...but I'm lost!$"
 
 VilethornWoods_Trainer_E_Text_1:
-# 226 "data//maps/VilethornWoods/scripts.pory"
+# 236 "data//maps/VilethornWoods/scripts.pory"
 	.string "You creep me out too!$"
 
 VilethornWoods_Trainer_E_Text_2:
-# 227 "data//maps/VilethornWoods/scripts.pory"
+# 237 "data//maps/VilethornWoods/scripts.pory"
 	.string "I've been stuck here for hours. I need\n"
 	.string "to get out!$"
 
 VilethornWoods_Trainer_F1_Text_0:
-# 235 "data//maps/VilethornWoods/scripts.pory"
+# 245 "data//maps/VilethornWoods/scripts.pory"
 	.string "We're on our way to Silversun City to\n"
 	.string "interview the great Gloria! Get out of\l"
 	.string "our way!$"
 
 VilethornWoods_Trainer_F1_Text_1:
-# 235 "data//maps/VilethornWoods/scripts.pory"
+# 245 "data//maps/VilethornWoods/scripts.pory"
 	.string "We lost!$"
 
 VilethornWoods_Trainer_F1_Text_2:
-# 236 "data//maps/VilethornWoods/scripts.pory"
+# 246 "data//maps/VilethornWoods/scripts.pory"
 	.string "If we can get an exclusive interview\n"
 	.string "with her, itll be the scoop of the week!$"
 
 VilethornWoods_Trainer_G_Text_0:
-# 251 "data//maps/VilethornWoods/scripts.pory"
+# 261 "data//maps/VilethornWoods/scripts.pory"
 	.string "I'm not like the others! I'm one of the\n"
 	.string "best bug catchers around.\p"
 	.string "I'm going to become the first BUG-type\n"
 	.string "Pokémon Champion one day!$"
 
 VilethornWoods_Trainer_G_Text_1:
-# 251 "data//maps/VilethornWoods/scripts.pory"
+# 261 "data//maps/VilethornWoods/scripts.pory"
 	.string "Are you a Gym Leader or something?$"
 
 VilethornWoods_Trainer_G_Text_2:
-# 252 "data//maps/VilethornWoods/scripts.pory"
+# 262 "data//maps/VilethornWoods/scripts.pory"
 	.string "As a Gym Leader to-be, my team needs to\n"
 	.string "be able to handle a variety of threats.$"
 
 VilethornWoods_Trainer_H_Text_0:
-# 258 "data//maps/VilethornWoods/scripts.pory"
+# 268 "data//maps/VilethornWoods/scripts.pory"
 	.string "I wonder what's inside this\n"
 	.string "house...maybe there's some loot!$"
 
 VilethornWoods_Trainer_H_Text_1:
-# 258 "data//maps/VilethornWoods/scripts.pory"
+# 268 "data//maps/VilethornWoods/scripts.pory"
 	.string "No loot for me!$"
 
 VilethornWoods_Trainer_H_Text_2:
-# 259 "data//maps/VilethornWoods/scripts.pory"
+# 269 "data//maps/VilethornWoods/scripts.pory"
 	.string "Fine, I'll just stand here and look while\n"
 	.string "you loot everything...$"
 
 VilethornWoods_NPC1_Text_0:
-# 267 "data//maps/VilethornWoods/scripts.pory"
+# 277 "data//maps/VilethornWoods/scripts.pory"
 	.string "The Morelull here in Vilethorn Woods\n"
 	.string "release spores when in danger. That's\l"
 	.string "what creates this fog.$"
 
 VilethornWoods_NPC2_Text_0:
-# 277 "data//maps/VilethornWoods/scripts.pory"
+# 287 "data//maps/VilethornWoods/scripts.pory"
 	.string "Chef$"
 
 VilethornWoods_NPC2_Text_1:
-# 278 "data//maps/VilethornWoods/scripts.pory"
+# 288 "data//maps/VilethornWoods/scripts.pory"
 	.string "These mushrooms are really rare, you\n"
 	.string "know?$"
 
 VilethornWoods_NPC2_Text_2:
-# 281 "data//maps/VilethornWoods/scripts.pory"
+# 291 "data//maps/VilethornWoods/scripts.pory"
 	.string "Oh, it's you again! Fancy seeing you\n"
 	.string "here. I'm a traveling chef! While I\l"
 	.string "usually cook at the Pelluca Restaurant,\l"
@@ -796,89 +920,109 @@ VilethornWoods_NPC2_Text_2:
 	.string "Have you got a Big Mushroom?$"
 
 VilethornWoods_NPC2_Text_3:
-# 288 "data//maps/VilethornWoods/scripts.pory"
+# 298 "data//maps/VilethornWoods/scripts.pory"
 	.string "Perfect! This'll be a great addition to\n"
 	.string "our pantry. Thank you! Now I must give\l"
 	.string "you something in exchage.$"
 
 VilethornWoods_NPC2_Text_4:
-# 294 "data//maps/VilethornWoods/scripts.pory"
+# 304 "data//maps/VilethornWoods/scripts.pory"
 	.string "Hey, you don't have any! Are you trying\n"
 	.string "to trick me? The Drowzee and Morelull\l"
 	.string "doing enough of that!$"
 
 VilethornWoods_NPC2_Text_5:
-# 298 "data//maps/VilethornWoods/scripts.pory"
+# 308 "data//maps/VilethornWoods/scripts.pory"
 	.string "Come back when you do!$"
 
 VilethornWoods_Cook_Reward_Text_0:
-# 306 "data//maps/VilethornWoods/scripts.pory"
+# 316 "data//maps/VilethornWoods/scripts.pory"
 	.string "Perhaps a spoon from the restaurant?\n"
 	.string "Or this incense?$"
 
 VilethornWoods_Cook_Reward_Text_1:
-# 308 "data//maps/VilethornWoods/scripts.pory"
+# 318 "data//maps/VilethornWoods/scripts.pory"
 	.string "Twisted Spoon$"
 
 VilethornWoods_Cook_Reward_Text_2:
-# 308 "data//maps/VilethornWoods/scripts.pory"
+# 318 "data//maps/VilethornWoods/scripts.pory"
 	.string "Rose Incense$"
 
 VilethornWoods_Cook_Reward_Give_Text_0:
-# 316 "data//maps/VilethornWoods/scripts.pory"
+# 326 "data//maps/VilethornWoods/scripts.pory"
 	.string "Are you sure?$"
 
 VilethornWoods_Cook_RewardEnd_Text_0:
-# 324 "data//maps/VilethornWoods/scripts.pory"
+# 334 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over Cormoria. And if you\l"
 	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
 VilethornWoods_NPC3_Text_0:
-# 333 "data//maps/VilethornWoods/scripts.pory"
+# 343 "data//maps/VilethornWoods/scripts.pory"
 	.string "My foot hurts!$"
 
 VilethornWoods_NPC3_Text_1:
-# 337 "data//maps/VilethornWoods/scripts.pory"
+# 347 "data//maps/VilethornWoods/scripts.pory"
 	.string "Gah! I got lost in this stupid forest\n"
 	.string "and tripped on a giant tree root. I got\l"
 	.string "mad and ripped it out! Do you want it?$"
 
 VilethornWoods_NPC3_Text_2:
-# 339 "data//maps/VilethornWoods/scripts.pory"
+# 349 "data//maps/VilethornWoods/scripts.pory"
 	.string "I'm so angry that you'll have to battle\n"
 	.string "me for it!$"
 
 VilethornWoods_NPC3_Text_3:
-# 341 "data//maps/VilethornWoods/scripts.pory"
+# 351 "data//maps/VilethornWoods/scripts.pory"
 	.string "My anger is gone now!$"
 
 VilethornWoods_NPC3_Text_4:
-# 345 "data//maps/VilethornWoods/scripts.pory"
+# 355 "data//maps/VilethornWoods/scripts.pory"
 	.string "Good riddance! I hope you find some use\n"
 	.string "for it.$"
 
 VilethornWoods_NPC3_Text_5:
-# 347 "data//maps/VilethornWoods/scripts.pory"
+# 357 "data//maps/VilethornWoods/scripts.pory"
 	.string "Just as well. It's a root after all -\n"
 	.string "what use would it have?$"
 
 VilethornWoods_Celebi_Seed_Text_0:
-# 359 "data//maps/VilethornWoods/scripts.pory"
+# 371 "data//maps/VilethornWoods/scripts.pory"
+	.string "A mystical seed has been planted in\n"
+	.string "this soil.\p"
+	.string "Maybe it needs some type of water to\n"
+	.string "grow...$"
+
+VilethornWoods_Celebi_Seed_Text_1:
+# 376 "data//maps/VilethornWoods/scripts.pory"
+	.string "Water with the Water of Time?$"
+
+VilethornWoods_Celebi_Seed_Text_2:
+# 382 "data//maps/VilethornWoods/scripts.pory"
+	.string "{PLAYER} watered the fertile soil\n"
+	.string "with the Water of Time.$"
+
+VilethornWoods_Celebi_Seed_Text_3:
+# 392 "data//maps/VilethornWoods/scripts.pory"
+	.string "The trees shift...$"
+
+VilethornWoods_Celebi_Seed_Text_4:
+# 413 "data//maps/VilethornWoods/scripts.pory"
 	.string "It's fertile soil...but not the same as\n"
 	.string "berry tree soil.$"
 
-VilethornWoods_Celebi_Seed_Text_1:
-# 364 "data//maps/VilethornWoods/scripts.pory"
-	.string "Plant a Time Seed?$"
+VilethornWoods_Celebi_Seed_Text_5:
+# 418 "data//maps/VilethornWoods/scripts.pory"
+	.string "Plant a Seed of Time?$"
 
-VilethornWoods_Celebi_Seed_Text_2:
-# 369 "data//maps/VilethornWoods/scripts.pory"
-	.string "{PLAYER} planted the time seed in the\n"
+VilethornWoods_Celebi_Seed_Text_6:
+# 423 "data//maps/VilethornWoods/scripts.pory"
+	.string "{PLAYER} planted Seed of Time in the\n"
 	.string "fertile soil.$"
 
-VilethornWoods_Celebi_Seed_Text_3:
-# 372 "data//maps/VilethornWoods/scripts.pory"
+VilethornWoods_Celebi_Seed_Text_7:
+# 426 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe it needs some type of water to\n"
 	.string "grow...$"

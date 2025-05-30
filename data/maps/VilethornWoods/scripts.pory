@@ -4,10 +4,20 @@ raw `
     .set LOCALID_RALTS1, 18
     .set LOCALID_RALTS2, 19
     .set LOCALID_RALTS3, 20
+    .set LOCALID_CELEBI, 31
 `
 
-mapscripts VilethornWoods_MapScripts{}
-
+mapscripts VilethornWoods_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION {
+        goto(VilethornWoods_SetLayout)
+    }
+}
+script VilethornWoods_SetLayout{
+    if (var(VAR_CELEBI) == 2){
+        setmaplayoutindex(LAYOUT_VILETHORN_MANSION)
+        return
+    }
+}
 
 script VilethornWoods_EventScript_NurseDemo{
     msgbox(format("This area is closed for the demo."), MSGBOX_NPC)
@@ -379,7 +389,18 @@ script VilethornWoods_Celebi_Seed{
                 msgbox(format("..."), MSGBOX_SIGN)
                 delay(32)
 
-                goto(VilethornWoods_Celebi_Start)
+                message(format("The trees shift..."))
+                //Else get out
+                setvar(VAR_0x8004, 2)  //vertical pan
+                setvar(VAR_0x8005, 2)  //horizontal pan
+                setvar(VAR_0x8006, 30)  //num shakes
+                setvar(VAR_0x8007, 5)  //shake delay
+                special(ShakeCamera)
+                delay(20)
+
+                getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+                warp(MAP_VILETHORN_WOODS, VAR_TEMP_2, VAR_TEMP_3)
+                releaseall
             }
 
         }
@@ -413,8 +434,24 @@ script VilethornWoods_Celebi_Seed{
 }
 
 
-script VilethornWoods_Celebi_Start{
-    
+script VilethornWoods_Celebi{
+    lockall
+    //save
+    special(SaveGame)
+    waitstate
+    release
+
+    //setflag
+    playmoncry(SPECIES_CELEBI, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_CELEBI)
+
+    setwildbattle(SPECIES_CELEBI, 50)
+    dowildbattle
+    removeobject(LOCALID_CELEBI)
+
+    releaseall
+    end
 }
 
 
