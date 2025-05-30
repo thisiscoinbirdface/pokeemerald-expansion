@@ -2,38 +2,65 @@ mapscripts Championship_MapScripts{}
 
 
 //NPCs
+//woman with amoonguss
 script VictoryCape_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What? You think I'm too old to be a competitor?\pI'll have you know I had my eighth badge before you were born!"), MSGBOX_NPC)
     end    
 }
+script VictoryCape_Mon1{
+    playmoncry(SPECIES_AMOONGUSS, CRY_MODE_NORMAL)
+    msgbox(format("Amoonguss is pottering about!"), MSGBOX_NPC)
+    end    
+} 
+
 script VictoryCape_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("They say the Ace Rookie from the Detective Academy is going to compete! I wish I don't draw him as an opponent."), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC3{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("This is my second time participating. I was knocked out in the first round last time!"), MSGBOX_NPC)
     end    
 }
+script VictoryCape_Mon2{
+    playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
+    msgbox(format("Palpitoad has a deadly glint in its eye. It doesn't want to lose in the first round again!"), MSGBOX_NPC)
+    end    
+} 
 script VictoryCape_NPC4{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Am I participating? No. I've just come to spectate!"), MSGBOX_NPC)
     end    
 }
+script VictoryCape_Mon3{
+    playmoncry(SPECIES_LOKIX, CRY_MODE_NORMAL)
+    msgbox(format("Lokix seems downcast...\nMaybe it wanted to participate?"), MSGBOX_NPC)
+    end    
+} 
 script VictoryCape_NPC5{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("The Cormoria Pokemon Championships are big business, kid!\pI made a killing shipping supplies to Victory Cape."), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC6{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("This never-ending downpour is such a damper on the event!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC7{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("A former Team Somber grunt is in the Championship...\nI'm not sure if they should let criminals participate!"), MSGBOX_NPC)
     end    
 }
+script VictoryCape_Mon4{
+    playmoncry(SPECIES_YANMEGA, CRY_MODE_NORMAL)
+    msgbox(format("Yanmega looks unfazed. It could probably see through Zoroark's disguises with its many eyes!"), MSGBOX_NPC)
+    end    
+} 
 script VictoryCape_NPC8{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("As a spiritual being, I possess supernatural control over my emotions.\p...so why am I feeling so nervous?"), MSGBOX_NPC)
     end    
 }
+script VictoryCape_Mon5{
+    playmoncry(SPECIES_ZOROARK, CRY_MODE_NORMAL)
+    msgbox(format("Banette is psyching itself up!"), MSGBOX_NPC)
+    end    
+} 
 
 //Viniel 
 script VictoryCape_Viniel{
@@ -54,7 +81,7 @@ script VictoryCape_Viniel_Kids{
     end    
 } 
 script VictoryCape_Viniel_Parent{
-    msgbox(format("It's really kind of a superstar like Viniel to spend time with our children. He's a great role model."), MSGBOX_NPC)
+    msgbox(format("It's really kind of a superstar like Viniel to spend time with our children. He's a great role model.\p...\pI should take them inside before they catch a cold in the rain."), MSGBOX_NPC)
     end    
 } 
 
@@ -62,9 +89,13 @@ script VictoryCape_Viniel_Parent{
 
 //Gabrielle
 script VictoryCape_Gab{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("What a huge stadium...are we really going to battle inside this?"), MSGBOX_NPC)
     end    
 }
-
+script VictoryCape_Zoroark{
+    playmoncry(SPECIES_ZOROARK, CRY_MODE_NORMAL)
+    msgbox(format("Zoroark doesn't seem as scared as Gabrielle is."), MSGBOX_NPC)
+    end    
+} 
 
 
