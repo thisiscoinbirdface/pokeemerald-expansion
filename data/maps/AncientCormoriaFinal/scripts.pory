@@ -10,6 +10,7 @@ script AncientCormoriaFinal_Dreamstone{
     lockall
     setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 4)    
     setflag(FLAG_HIDE_TENEBRIS_FINALE)
+    clearflag(FLAG_HIDE_ISLAND_FINALE)
     warp(MAP_UNCHARTED_ISLAND, 78, 24)
     releaseall
     end

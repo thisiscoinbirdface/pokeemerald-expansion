@@ -382,6 +382,42 @@ WhiteSign_IvyRiver_Main::
 	end
 
 
+WhiteSign_Rivetshore_Main::
+# 378 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Main_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Rivetshore_Construction::
+# 382 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Construction_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Rivetshore_Quarry::
+# 386 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Quarry_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Rivetshore_Storage::
+# 390 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Storage_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Rivetshore_Harbor::
+# 394 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Harbor_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_Rivetshore_Ranger::
+# 398 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_Rivetshore_Ranger_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_CarabrueTown_Main_Text_0:
 # 6 "data//scripts/customscripts_signs.pory"
 	.string "Carabrue Town\n"
@@ -724,3 +760,31 @@ WhiteSign_IvyRiver_Main_Text_0:
 # 370 "data//scripts/customscripts_signs.pory"
 	.string "Ivy River\n"
 	.string "{UP_ARROW} Winterlily Hollow.{DOWN_ARROW} Pelluca City.$"
+
+WhiteSign_Rivetshore_Main_Text_0:
+# 378 "data//scripts/customscripts_signs.pory"
+	.string "Rivetshore City$"
+
+WhiteSign_Rivetshore_Construction_Text_0:
+# 382 "data//scripts/customscripts_signs.pory"
+	.string "Rivetshore Construction\n"
+	.string "A legacy of strong foundations$"
+
+WhiteSign_Rivetshore_Quarry_Text_0:
+# 386 "data//scripts/customscripts_signs.pory"
+	.string "Rivetshore Quarry$"
+
+WhiteSign_Rivetshore_Storage_Text_0:
+# 390 "data//scripts/customscripts_signs.pory"
+	.string "Storage Bay\n"
+	.string "No tresspassers allowed!$"
+
+WhiteSign_Rivetshore_Harbor_Text_0:
+# 394 "data//scripts/customscripts_signs.pory"
+	.string "Rivetshore Harbor\n"
+	.string "The biggest harbor in Cormoria!$"
+
+WhiteSign_Rivetshore_Ranger_Text_0:
+# 398 "data//scripts/customscripts_signs.pory"
+	.string "The Pokémon Ranger Institute\n"
+	.string "Rivetshore City Branch$"

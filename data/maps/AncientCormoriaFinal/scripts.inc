@@ -18,23 +18,25 @@ AncientCormoriaFinal_Dreamstone::
 # 12 "data//maps/AncientCormoriaFinal/scripts.pory"
 	setflag FLAG_HIDE_TENEBRIS_FINALE
 # 13 "data//maps/AncientCormoriaFinal/scripts.pory"
-	warp MAP_UNCHARTED_ISLAND, 78, 24
+	clearflag FLAG_HIDE_ISLAND_FINALE
 # 14 "data//maps/AncientCormoriaFinal/scripts.pory"
+	warp MAP_UNCHARTED_ISLAND, 78, 24
+# 15 "data//maps/AncientCormoriaFinal/scripts.pory"
 	releaseall
 	end
 
 
 AncientCormoriaFinal_Tenebris::
-# 19 "data//maps/AncientCormoriaFinal/scripts.pory"
+# 20 "data//maps/AncientCormoriaFinal/scripts.pory"
 	msgbox_delay AncientCormoriaFinal_Tenebris_Text_0, AncientCormoriaFinal_Tenebris_Text_1
 	end
 
 
 AncientCormoriaFinal_Tenebris_Text_0:
-# 19 "data//maps/AncientCormoriaFinal/scripts.pory"
+# 20 "data//maps/AncientCormoriaFinal/scripts.pory"
 	.string "Tenebris$"
 
 AncientCormoriaFinal_Tenebris_Text_1:
-# 19 "data//maps/AncientCormoriaFinal/scripts.pory"
+# 20 "data//maps/AncientCormoriaFinal/scripts.pory"
 	.string "Touch the dreamstone whenever you're\n"
 	.string "ready!$"

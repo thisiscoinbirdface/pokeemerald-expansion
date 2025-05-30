@@ -371,3 +371,32 @@ script WhiteSign_IvyRiver_Main{
     end
 }
 
+
+
+//Rivetshore
+script WhiteSign_Rivetshore_Main{
+    msgbox(format("Rivetshore City"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Rivetshore_Construction{
+    msgbox(format("Rivetshore Construction\nA legacy of strong foundations"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Rivetshore_Quarry{
+    msgbox(format("Rivetshore Quarry"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Rivetshore_Storage{
+    msgbox(format("Storage Bay\nNo tresspassers allowed!"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Rivetshore_Harbor{
+    msgbox(format("Rivetshore Harbor\nThe biggest harbor in Cormoria!"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_Rivetshore_Ranger{
+    msgbox(format("The Pokémon Ranger Institute\nRivetshore City Branch"), MSGBOX_SIGN)
+    end
+}
+
+

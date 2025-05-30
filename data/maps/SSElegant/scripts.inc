@@ -401,19 +401,19 @@ SSElegant_NPC1::
 
 SSElegant_NPC2::
 # 324 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
+	msgbox SSElegant_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC3::
 # 329 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
+	msgbox SSElegant_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC4::
 # 334 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
+	msgbox SSElegant_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
@@ -1039,4 +1039,24 @@ SSElegant_Tauros_Text_0:
 
 SSElegant_NPC1_Text_0:
 # 319 "data//maps/SSElegant/scripts.pory"
-	.string "$"
+	.string "There's nothing like being out on the\n"
+	.string "ocean, I tell you!$"
+
+SSElegant_NPC2_Text_0:
+# 324 "data//maps/SSElegant/scripts.pory"
+	.string "These Gym Leaders are so intimidating!\n"
+	.string "This was supposed to be a luxury cruise.$"
+
+SSElegant_NPC3_Text_0:
+# 329 "data//maps/SSElegant/scripts.pory"
+	.string "Why did all the Gym Leaders board at the\n"
+	.string "last minute?\p"
+	.string "I'm somewhat of a natural detective\n"
+	.string "myself...I think they're conspiring to\l"
+	.string "take over Cormoria!$"
+
+SSElegant_NPC4_Text_0:
+# 334 "data//maps/SSElegant/scripts.pory"
+	.string "The S.S. Elegant stops at Victory Cape.\n"
+	.string "That's where this year's Pokemon\l"
+	.string "Championships will be!$"

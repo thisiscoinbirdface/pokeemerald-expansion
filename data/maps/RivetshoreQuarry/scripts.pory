@@ -87,6 +87,11 @@ script RivetshoreQuarry_NPC2{
     end
 }
 
+//blocker 
+script RivetshoreQuarry_Blocker_NPC{
+    msgbox(format("Why aren't people allowed when Raazi's not around?\pCause it's dangerous, idiot!"), MSGBOX_NPC)
+    end
+}
 
 
 
@@ -169,11 +174,6 @@ script RivetshoreQuarry_Blocker_Trigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
     releaseall
-    end
-}
-
-script RivetshoreQuarry_Blocker_NPC{
-    msgbox(format("Raazi's down at the bottom of the quarry."), MSGBOX_NPC)
     end
 }
 
