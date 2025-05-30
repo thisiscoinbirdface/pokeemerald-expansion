@@ -35,15 +35,36 @@ script WinterlilyHollow_Houses_NPC3{
 }
 //dude with carkol (interaction)
 script WinterlilyHollow_Houses_NPC4{
-    msgbox(format("Without Carkol, I'd never survive in such a cold place!"), MSGBOX_NPC)
+    msgbox(format("I'm a retired detective. After a life of crime-fighting, I think I've earned the right to a peaceful retirement!"), MSGBOX_NPC)
     end
 }
 script WinterlilyHollow_Houses_Carkol{
-    playmoncry(SPECIES_CARKOL, CRY_MODE_NORMAL)
-    msgbox(format("Carkol is steaming! The cold seems not to affect it at all."), MSGBOX_NPC)
-    end
+    playmoncry(SPECIES_ARMOROUGE, CRY_MODE_NORMAL)
+    msgbox(format("Armorouge seems tired..."), MSGBOX_NPC)
+    if (flag(FLAG_HOLLOW_ARMOR_GET)) {end}
+    goto(WinterlilyHollow_Houses_Armorouge_Reward)
 }
 
+script WinterlilyHollow_Houses_Armorouge_Reward{
+    message(format("It hands you two sets of armor..."))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Malicious Armor", "Auspicious Armor") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_KINGS_ROCK)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_QUICK_CLAW)}
+    goto(WinterlilyHollow_Houses_Armorouge_Reward_Give)
+}
 
+script WinterlilyHollow_Houses_Armorouge_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(WinterlilyHollow_Houses_Armorouge_Reward_End)} 
+    else {goto(WinterlilyHollow_Houses_Armorouge_Reward)}
+}
 
+script WinterlilyHollow_Houses_Armorouge_Reward_End{
+    setflag(FLAG_HOLLOW_ARMOR_GET)
+    msgbox(format("Armorouge has decided to peacefully retire too!"), MSGBOX_NPC)
+    end
+}
 

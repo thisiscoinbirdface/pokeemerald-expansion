@@ -11506,7 +11506,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_ROOKIDEE"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 2,
@@ -11531,12 +11531,12 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_ROOKIDEE"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_ROOKIDEE"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 2,
