@@ -88,8 +88,9 @@ RivetshoreCity_Harbor_Gloria::
 
 RivetshoreCity_Harbor_Attendant_Text_0:
 # 19 "data//maps/RivetshoreCity_Harbor/scripts.pory"
-	.string "Sorry, you need a Cruise Ticket to board\n"
-	.string "the S.S. Elegant.$"
+	.string "Sorry, we've sold out of Cruise Tickets\n"
+	.string "for the S.S. Elegant.\p"
+	.string "Please come next year!$"
 
 RivetshoreCity_Harbor_Inger_Text_0:
 # 30 "data//maps/RivetshoreCity_Harbor/scripts.pory"

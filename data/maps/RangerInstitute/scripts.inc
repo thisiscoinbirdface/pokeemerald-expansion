@@ -622,7 +622,7 @@ RangerInstitute_Ravine::
 # 445 "data//maps/RangerInstitute/scripts.pory"
 	speakername RangerInstitute_2F_EventScript_Welcome_Text_1
 # 446 "data//maps/RangerInstitute/scripts.pory"
-	msgbox RangerInstitute_Ravine_Text_0
+	msgbox RangerInstitute_Ravine_Text_0, MSGBOX_NPC
 	end
 
 

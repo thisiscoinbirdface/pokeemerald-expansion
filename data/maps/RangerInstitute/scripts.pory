@@ -443,7 +443,7 @@ script RangerInstitute_2F_EventScript_Welcome{
 
 script RangerInstitute_Ravine{
     speakername("Ravine")
-    msgbox(format("How's my newest member doing?"))
+    msgbox(format("How's my newest member doing?"), MSGBOX_NPC)
     end
 }
 

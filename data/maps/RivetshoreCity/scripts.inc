@@ -1021,7 +1021,7 @@ RivetshoreCity_NPC_2_Text_0:
 RivetshoreCity_NPC_3_Text_0:
 # 273 "data//maps/RivetshoreCity/scripts.pory"
 	.string "I wanted to go on the SS Elegant cruise\n"
-	.string "but I couldn't get a ticket.$"
+	.string "but I couldn't get a ticket!$"
 
 RivetshoreCity_NPC_4_Text_0:
 # 278 "data//maps/RivetshoreCity/scripts.pory"
@@ -1030,8 +1030,10 @@ RivetshoreCity_NPC_4_Text_0:
 
 RivetshoreCity_NPC_5_Text_0:
 # 283 "data//maps/RivetshoreCity/scripts.pory"
-	.string "You won't find the stuff they sell here\n"
-	.string "anywhere else!$"
+	.string "I heard there was a secret shopkeeper\n"
+	.string "selling rare items here!\p"
+	.string "But these shopkeepers just have the\n"
+	.string "regular stuff...was it just a rumour?$"
 
 RivetshoreCity_NPC_6_Text_0:
 # 288 "data//maps/RivetshoreCity/scripts.pory"

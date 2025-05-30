@@ -71,7 +71,7 @@ script IvyRiver_Ranger_FirstQuest{
         end
     }
 
- //complete the second quest
+//complete the second quest
     if (var(VAR_RANGER_INSTITUTE) == 7){
         msgbox(format("Ah, {PLAYER}! There you are. The second floor has reported that your performance has been splendid! I hereby promote you to the rank of Associate!"))
         release
@@ -82,10 +82,12 @@ script IvyRiver_Ranger_FirstQuest{
         call(Common_EventScript_PlayGymBadgeFanfare)
 
         msgbox(format("Director Ravine will be happy to know. You should go and see him!"), MSGBOX_NPC)
+
+        setvar(VAR_RANGER_INSTITUTE, 8)
         end
     }
 
-    msgbox(format("Hello {PLAYER}! I hope you're settling in well here."), MSGBOX_NPC)
+    msgbox(format("Hello {PLAYER}! What are you upto?"), MSGBOX_NPC)
 
     releaseall
     end

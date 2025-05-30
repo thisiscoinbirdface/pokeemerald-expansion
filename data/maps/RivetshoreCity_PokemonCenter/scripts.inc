@@ -32,7 +32,6 @@ RivetshoreCity_PokemonCenter_NPC1::
 
 RivetshoreCity_PokemonCenter_NPC1_Text_0:
 # 18 "data//maps/RivetshoreCity_PokemonCenter/scripts.pory"
-	.string "They've blocked off the Hoya River\n"
-	.string "North Crossing because they saw a Mega\l"
-	.string "Sharpedo in the wild! So I'm waiting here\l"
-	.string "until it's safe to cross again.$"
+	.string "I once ran across a strange old lady.\n"
+	.string "She tried to sell me all these rare\l"
+	.string "items! I could never find her again...$"
