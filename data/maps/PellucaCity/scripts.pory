@@ -449,6 +449,7 @@ script PellucaCityFlooded_SaveCitizen_D{
 script PellucaCityFlooded_MainEvent{
     lockall
     setvar(VAR_PELLUCA_MAYOR_QUEST, 4)
+    playbgm(MUS_DUMMY, FALSE)
 
     speakername("Q-squad Boss")
     msgbox(format("What on earth is this?"))
@@ -627,7 +628,11 @@ script PellucaCityFlooded_MainEvent{
     speakername("Q-squad Boss")
     msgbox(format("Good luck, {PLAYER}! We're on top of things here, so you go on into the river. You don't need to teach any Pokémon how to surf - just hop on the water!"))
     release    
+    speakername("Mayor")
+    msgbox(format("But hurry! There's not much time."))
+    release
 
+    special(EnterSafariMode)
 
     special(RemoveCameraObject)
     releaseall
@@ -680,6 +685,32 @@ script PellucaCityFlooded_NPCSaved_C{
 }
 script PellucaCityFlooded_NPCSaved_D{
     msgbox(format("When I grow up, I wanna be just like you!"), MSGBOX_NPC)
+    end
+}
+script PellucaCityFlooded_EventScript_TimesUp{
+    lockall
+    msgbox(format("The tides rise higher and higher...\nit's too late!"))
+    special(ExitSafariMode)
+
+    setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
+
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A)  
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B)  
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C)  
+    clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D)  
+
+    setvar(VAR_PELLUCA_MAP_STATE, 1)
+
+	warp(MAP_PELLUCA_CITY, 42, 30)
+	waitstate
+	end    
+}
+
+script PellucaCityFlooded_EventScript_TimesRunningOut{
+    lockall
+    msgbox(format("The water level is risng...\nThere's not much time left!"))    
+    release
     end
 }
 

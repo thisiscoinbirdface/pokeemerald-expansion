@@ -51,6 +51,8 @@ script PellucaFishery_EventScript_MainDude{
     msgbox(format("So you're the new recruit, eh? Got a Qwilfish and everything, do ya?\p...\pFunny thing is, I don't remember any new recruits signing up."))
     release
 
+    fadenewbgm(MUS_ENCOUNTER_AQUA)
+
     delay(16)
     //camera pan down
     special(SpawnCameraObject)
@@ -77,6 +79,7 @@ script PellucaFishery_EventScript_MainDude{
     speakername("Q-squad Grunt")
     msgbox(format("Aye-aye boss!\pI'll crush you, kid! That's what you get for messing with the Qwilsquad!"))    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_A, format("I let you down, boss!"))
+    playbgm(MUS_ENCOUNTER_AQUA, FALSE)   
     
     delay(8)
     applymovement(LOCALID_S1, moves(walk_left face_right))    
@@ -87,6 +90,7 @@ script PellucaFishery_EventScript_MainDude{
     speakername("Q-squad Grunt")
     msgbox(format("S'matter with you, losing like that?\pYou're ruining our squad's name!\pC'mon kid - you really think you can get away with this?"))    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_B, format("No! I lost! Sorry, boss!"))
+    playbgm(MUS_ENCOUNTER_AQUA, FALSE)  
     
     delay(8)
     applymovement(LOCALID_S4, moves(walk_right face_left))    
@@ -98,11 +102,14 @@ script PellucaFishery_EventScript_MainDude{
     msgbox(format("...\pFine then.\pI respect a strong trainer. But respect goes only so far. You're going to pay for what you did to my boys!"))
     release    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_BOSS, format("Overqwil! Noo!"))
+    playbgm(MUS_ENCOUNTER_AQUA, FALSE)  
 
     delay(16)
     speakername("Q-squad Boss")
     msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
     release    
+
+    fadenewbgm(SE_THUNDERSTORM)
 
     //Camera shake
 	setvar(VAR_0x8004, 2)  //vertical pan

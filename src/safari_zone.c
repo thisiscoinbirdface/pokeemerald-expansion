@@ -23,6 +23,8 @@ struct PokeblockFeeder
 
 #define NUM_POKEBLOCK_FEEDERS 10
 
+extern const u8 PellucaCityFlooded_EventScript_TimesUp[];
+extern const u8 PellucaCityFlooded_EventScript_TimesRunningOut[];
 extern const u8 SafariZone_EventScript_TimesUp[];
 extern const u8 SafariZone_EventScript_RetirePrompt[];
 extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
@@ -58,7 +60,7 @@ void EnterSafariMode(void)
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
     gNumSafariBalls = 30;
-    sSafariZoneStepCounter = 500;
+    sSafariZoneStepCounter = 300;
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }
@@ -81,9 +83,18 @@ bool8 SafariZoneTakeStep(void)
 
     DecrementFeederStepCounters();
     sSafariZoneStepCounter--;
+
+    if (sSafariZoneStepCounter == 75)
+    {
+        ScriptContext_SetupScript(PellucaCityFlooded_EventScript_TimesRunningOut);
+//        ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+        return TRUE;
+    }
+
     if (sSafariZoneStepCounter == 0)
     {
-        ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+        ScriptContext_SetupScript(PellucaCityFlooded_EventScript_TimesUp);
+//        ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
         return TRUE;
     }
     return FALSE;
