@@ -159,7 +159,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_ROUTE6_ZERAORA_CAVE, 7, 11
+	warp MAP_RIVETSHORE_QUARRY, 30, 28
 	release
 	end
 

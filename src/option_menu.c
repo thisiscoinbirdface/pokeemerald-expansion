@@ -199,7 +199,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
     gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
     gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
-    gTasks[taskId].tFollower = FlagGet(FLAG_UNUSED_0x4FF);
+    gTasks[taskId].tFollower = FlagGet(FLAG_SYS_OW_FOLLOWERS_DISABLED);
     gTasks[taskId].tBattleSpeed = VarGet(VAR_BATTLE_SPEED);
 }
 
@@ -542,7 +542,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
-    gTasks[taskId].tFollower == 0 ? FlagClear(FLAG_UNUSED_0x4FF) : FlagSet(FLAG_UNUSED_0x4FF);
+    gTasks[taskId].tFollower == 0 ? FlagClear(FLAG_SYS_OW_FOLLOWERS_DISABLED) : FlagSet(FLAG_SYS_OW_FOLLOWERS_DISABLED);
     VarSet(VAR_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
 
 
@@ -821,8 +821,8 @@ static void Follower_DrawChoices(u8 selection)
     styles[0] = 0;
     styles[1] = 0;
     styles[selection] = 1;
-    DrawOptionMenuChoice(gText_FollowerOff, 104, YPOS_FOLLOWER, styles[0]);
-    DrawOptionMenuChoice(gText_FollowerOn, GetStringRightAlignXOffset(FONT_NORMAL, gText_FollowerOn, 198), YPOS_FOLLOWER, styles[1]);
+    DrawOptionMenuChoice(gText_FollowerOn, 104, YPOS_FOLLOWER, styles[0]);
+    DrawOptionMenuChoice(gText_FollowerOff, GetStringRightAlignXOffset(FONT_NORMAL, gText_FollowerOn, 198), YPOS_FOLLOWER, styles[1]);
 }
 
 static u8 BattleSpeed_ProcessInput(u8 selection)

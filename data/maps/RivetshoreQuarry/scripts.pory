@@ -290,4 +290,18 @@ script Rivetshore_Raazi_Talk{
 
 
 
+script Rivetshore_Quarry_HideFollower{
+    lockall
+    hidefollower
+    delay(4)
+    setflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
+    releaseall
+    end
+}
 
+script Rivetshore_Quarry_ShowFollower{
+    lockall
+    clearflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
+    releaseall
+    end
+}

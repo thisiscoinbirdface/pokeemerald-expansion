@@ -36,6 +36,29 @@ script VictoryCape_NPC8{
 }
 
 //Viniel 
+script VictoryCape_Viniel{
+    lockall
+    msgbox(format("Think you rugrats are stronger than a Gym Leader? Manectric and I can take all four of you together! Hahaha!"))
+    releaseall
+    end    
+} 
+script VictoryCape_Manectric{
+    lockall
+    playmoncry(SPECIES_MANECTRIC, CRY_MODE_NORMAL)
+    msgbox(format("Manectric is playing with the children!"))
+    releaseall
+    end    
+} 
+script VictoryCape_Viniel_Kids{
+    msgbox(format("Leader Viniel is so cool!\nI wanna be just like him!"), MSGBOX_NPC)
+    end    
+} 
+script VictoryCape_Viniel_Parent{
+    msgbox(format("It's really kind of a superstar like Viniel to spend time with our children. He's a great role model."), MSGBOX_NPC)
+    end    
+} 
+
+
 
 //Gabrielle
 script VictoryCape_Gab{

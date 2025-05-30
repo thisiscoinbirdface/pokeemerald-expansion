@@ -359,6 +359,30 @@ Rivetshore_Raazi_Talk::
 	end
 
 
+Rivetshore_Quarry_HideFollower::
+# 294 "data//maps/RivetshoreQuarry/scripts.pory"
+	lockall
+# 295 "data//maps/RivetshoreQuarry/scripts.pory"
+	hidefollower
+# 296 "data//maps/RivetshoreQuarry/scripts.pory"
+	delay 4
+# 297 "data//maps/RivetshoreQuarry/scripts.pory"
+	setflag FLAG_SYS_OW_FOLLOWERS_DISABLED
+# 298 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
+Rivetshore_Quarry_ShowFollower::
+# 303 "data//maps/RivetshoreQuarry/scripts.pory"
+	lockall
+# 304 "data//maps/RivetshoreQuarry/scripts.pory"
+	clearflag FLAG_SYS_OW_FOLLOWERS_DISABLED
+# 305 "data//maps/RivetshoreQuarry/scripts.pory"
+	releaseall
+	end
+
+
 # 30 "data//maps/RivetshoreQuarry/scripts.pory"
 RivetshoreQuarry_Percy_Movement_0:
 # 30 "data//maps/RivetshoreQuarry/scripts.pory"
