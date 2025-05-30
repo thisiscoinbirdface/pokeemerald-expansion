@@ -15,7 +15,7 @@ script RivetshoreCity_PokemonCenter_EventScript_Nurse{
 }
 
 script RivetshoreCity_PokemonCenter_NPC1{
-	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a Mega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."), MSGBOX_NPC)
+	msgbox(format("I once ran across a strange old lady. She tried to sell me all these rare items! I could never find her again..."), MSGBOX_NPC)
 	end
 }
 

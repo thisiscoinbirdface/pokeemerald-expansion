@@ -166,9 +166,9 @@ Route6_Trainer_C1::
 
 Route6_Trainer_C2::
 # 120 "data//maps/Route6/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE6_C, Route6_Trainer_C2_Text_0, Route6_Trainer_C1_Text_1
+	trainerbattle_single TRAINER_ROUTE6_C, Route6_Trainer_C2_Text_0, Route6_Trainer_C2_Text_1
 # 121 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Trainer_C2_Text_1
+	msgbox Route6_Trainer_C2_Text_2
 # 122 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
@@ -805,17 +805,18 @@ Route6_Venusaur_Text_5:
 
 Route6_Trainer_A_Text_0:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "The marshes of Route 6 are teeming with\n"
-	.string "life. Let's see how well you handle it!$"
+	.string "But until we find that rare Pokémon,\n"
+	.string "we'll train with you!$"
 
 Route6_Trainer_A_Text_1:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "Impressive!$"
+	.string "Good training!$"
 
 Route6_Trainer_A_Text_2:
 # 100 "data//maps/Route6/scripts.pory"
-	.string "Looks like you can handle yourself in\n"
-	.string "these parts.$"
+	.string "The Pokémon we're tracking looks like a\n"
+	.string "giant yellow cat! Ever seen a Pokémon\l"
+	.string "like that?$"
 
 Route6_Trainer_B_Text_0:
 # 106 "data//maps/Route6/scripts.pory"
@@ -835,18 +836,18 @@ Route6_Trainer_B_Text_2:
 Route6_Trainer_C1_Text_0:
 # 113 "data//maps/Route6/scripts.pory"
 	.string "We're from the Pokémon Ranger\n"
-	.string "Institute. We're on assignment to\l"
-	.string "survey new Pokémon. Have you got any?$"
+	.string "Institute. We're here to track down a\l"
+	.string "rare Pokémon!$"
 
 Route6_Trainer_C1_Text_1:
 # 113 "data//maps/Route6/scripts.pory"
-	.string "You do have new Pokémon!$"
+	.string "You're so strong!$"
 
 Route6_Trainer_C1_Text_2:
 # 114 "data//maps/Route6/scripts.pory"
-	.string "The Pokémon Ranger Institute is the\n"
-	.string "headquarters for us Rangers in\l"
-	.string "Cormoria.$"
+	.string "The Director of the Pokémon Ranger\n"
+	.string "Institute sent us to track the rare\l"
+	.string "Pokémon.$"
 
 Route6_Trainer_C2_Text_0:
 # 120 "data//maps/Route6/scripts.pory"
@@ -855,6 +856,10 @@ Route6_Trainer_C2_Text_0:
 	.string "Have you got any?$"
 
 Route6_Trainer_C2_Text_1:
+# 120 "data//maps/Route6/scripts.pory"
+	.string "You do have new Pokémon!$"
+
+Route6_Trainer_C2_Text_2:
 # 121 "data//maps/Route6/scripts.pory"
 	.string "The Ranger Institute gives us newbies\n"
 	.string "such hard assignments!$"
@@ -862,7 +867,7 @@ Route6_Trainer_C2_Text_1:
 Route6_Trainer_D_Text_0:
 # 127 "data//maps/Route6/scripts.pory"
 	.string "The secret to catching strong Water\n"
-	.string "Pokémon ? Patience and a Trolling Rod.\p"
+	.string "Pokémon? Patience and a Trolling Rod.\p"
 	.string "Too bad you don't have one!$"
 
 Route6_Trainer_D_Text_1:

@@ -270,7 +270,7 @@ script RivetshoreCity_NPC_2{
 }
 //lady outside PC
 script RivetshoreCity_NPC_3{
-    msgbox(format("I wanted to go on the SS Elegant cruise but I couldn't get a ticket."), MSGBOX_NPC)
+    msgbox(format("I wanted to go on the SS Elegant cruise but I couldn't get a ticket!"), MSGBOX_NPC)
     end
 }
 //maniac outside construction
@@ -280,7 +280,7 @@ script RivetshoreCity_NPC_4{
 }
 //boy at market
 script RivetshoreCity_NPC_5{
-    msgbox(format("You won't find the stuff they sell here anywhere else!"), MSGBOX_NPC)
+    msgbox(format("I heard there was a secret shopkeeper selling rare items here!\pBut these shopkeepers just have the regular stuff...was it just a rumour?"), MSGBOX_NPC)
     end
 }
 //gentleman south shore

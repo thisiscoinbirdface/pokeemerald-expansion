@@ -96,8 +96,8 @@ script Route6_Venusaur{
 
 //Ranger
 script Route6_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE6_A, format("The marshes of Route 6 are teeming with life. Let's see how well you handle it!"), "Impressive!")
-    msgbox(format("Looks like you can handle yourself in these parts."))
+    trainerbattle_single(TRAINER_ROUTE6_A, format("But until we find that rare Pokémon, we'll train with you!"), "Good training!")
+    msgbox(format("The Pokémon we're tracking looks like a giant yellow cat! Ever seen a Pokémon like that?"))
     releaseall
     end
 }
@@ -110,8 +110,8 @@ script Route6_Trainer_B{
 }
 //Ranger
 script Route6_Trainer_C1{
-    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokémon Ranger Institute. We're on assignment to survey new Pokémon. Have you got any?"), "You do have new Pokémon!")
-    msgbox(format("The Pokémon Ranger Institute is the headquarters for us Rangers in Cormoria."))
+    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokémon Ranger Institute. We're here to track down a rare Pokémon!"), "You're so strong!")
+    msgbox(format("The Director of the Pokémon Ranger Institute sent us to track the rare Pokémon."))
     releaseall
     end
 }
@@ -124,7 +124,7 @@ script Route6_Trainer_C2{
 }
 //Fisherman
 script Route6_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon ? Patience and a Trolling Rod.\pToo bad you don't have one!"), "You beat me without a rod!")
+    trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a Trolling Rod.\pToo bad you don't have one!"), "You beat me without a rod!")
     msgbox(format("I wonder what Pokémon I can catch here with a Casting Rod instead..."))
     releaseall
     end
@@ -323,7 +323,7 @@ script Route6_Gabrielle_Trigger1{
 //GABRIELLE encounter
 script Route6_Gabrielle_Main{
     //Dialogue
-    //no longer a part of somber, now give us all your pokemon
+    //no longer a part of somber, now give us all your Pokémon
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_right))
     delay(24)    
     speakername("Grunt")

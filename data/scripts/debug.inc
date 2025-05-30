@@ -159,7 +159,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_MT_CERAM, 42, 9
+	warp MAP_ROUTE6, 42, 9
 	release
 	end
 
