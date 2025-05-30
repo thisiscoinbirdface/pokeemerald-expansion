@@ -622,7 +622,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pCome then, it's time to end this - once and for all!"))
 
     //battle 1
-    //trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))
+    trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))
     //post-battle 1
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
@@ -640,7 +640,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     waitmovement(0)
 
     //battle 2
-    //trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MELEA, format("This can't be happening!"))
+    trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MELEA, format("This can't be happening!"))
     //post-battle 2
     msgbox_delay("Melea", format("No!\pWe've worked too hard...I can't let it end like this.\pNo!!!"))
     applymovement(LOCALID_MELEA_1, moves(walk_fast_down walk_fast_right *5 walk_fast_down *5))
