@@ -29,62 +29,62 @@ script VR_SetWeather_Rain{
 //cooltrainer F
 script VR_Trainer_A{
     trainerbattle_single(TRAINER_VICTORY_ROAD_A, format("You missed the last boat? Too bad - you won't be making it further than here!"), format("I guess I won't be making it farther than here!"))
-    msgbox(format("I missed the boat and now I need to go through this forest!"))
+    msgbox(format("I missed the boat and now I need to go through this forest!"), MSGBOX_NPC)
     end
 }
 //cooltrainer M
 script VR_Trainer_B{
     trainerbattle_single(TRAINER_VICTORY_ROAD_B, format("You know why I'm on this route instead of on the boat?\pTo get rid of some of the competition right away!\pI'm the first member of the Crush Crew and I'm ending your journey right here!"), format("I can't get rid of you!"))
-    msgbox(format("Hmpf. I'll see you at Victory Cape."))
+    msgbox(format("Hmpf. I'll see you at Victory Cape."), MSGBOX_NPC)
     end
 }
 //cooltrainer F
 script VR_Trainer_C{
     trainerbattle_single(TRAINER_VICTORY_ROAD_C, format("My Pokemon and I have trained all over Cormoria.\pYou're not beating us!"), format("You beat us!"))
-    msgbox(format("The talent coming to the Championship sure is on another level..."))
+    msgbox(format("The talent coming to the Championship sure is on another level..."), MSGBOX_NPC)
     end
 }
 //black belt 
 script VR_Trainer_D{
     trainerbattle_single(TRAINER_VICTORY_ROAD_D, format("I trained with Carona and I've come here to carry on the legacy of the Iron Fist!"), format("No! The legacy crumbles!"))
-    msgbox(format("I need to train again with Carona."))
+    msgbox(format("I need to train again with Carona."), MSGBOX_NPC)
     end
 }
 //cooltrainer F
 script VR_Trainer_E{
     trainerbattle_single(TRAINER_VICTORY_ROAD_E, format("Think you're making it to the Pokemon Championship?\pThink again! I'm the second member of the Crush Crew and your journey will end with me!"), format("Your journey doesn't end with me!"))
-    msgbox(format("The Crush Crew's leader paid us to eliminate the competition for him."))
+    msgbox(format("The Crush Crew's leader paid us to eliminate the competition for him."), MSGBOX_NPC)
     end
 }
 //hiker
 script VR_Trainer_F{
     trainerbattle_single(TRAINER_VICTORY_ROAD_F, format("The Championship will know the strength of the mountains!"), format("Is the strength of the mountains not enough?"))
-    msgbox(format("I'm in shock - I thought my mountain Pokemon were unbeatable!"))
+    msgbox(format("I'm in shock - I thought my mountain Pokemon were unbeatable!"), MSGBOX_NPC)
     end
 }
 //breeder F
 script VR_Trainer_G{
     trainerbattle_single(TRAINER_VICTORY_ROAD_G, format("I'm the strongest Pokemon Breeder in all of Cormoria!\pCan you handle the storm?"), format("You can handle the storm!"))
-    msgbox(format(""))
+    msgbox(format("I don't just love my birds like other breeders...I train them to be the strongest!"), MSGBOX_NPC)
     end
 }
 //backpacker
 script VR_Trainer_H{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_H, format(""), format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_H, format("I thought I could find a shortcut to Victory Cape, but I'm lost and just keep losing to these tough trainers...oh no, don't tell me you're another one!"), format("Why did we have to lock eyes?"))
+    msgbox(format("Just let me get to Victory Cape already!"), MSGBOX_NPC)
     end
 }
 //rich boy
 script VR_Trainer_I{
     trainerbattle_single(TRAINER_VICTORY_ROAD_I, format("Didn't my crew crush you?\pHmpf. Useless fools.\pI'm going to do everything it takes to win the Pokemon Championship, and money is no object! Hahaha!"), format("I spent so much money on Charizard!"))
-    msgbox(format("I guess money can't beat skill. I should invest in training for the next Championship."))
+    msgbox(format("I guess money can't beat skill. I should invest in training for the next Championship."), MSGBOX_NPC)
     end
 }
 
 //cooltrainer - unused for now
 script VR_Trainer_J{
     trainerbattle_single(TRAINER_VICTORY_ROAD_J, format(""), format(""))
-    msgbox(format(""))
+    msgbox(format(""), MSGBOX_NPC)
     end
 }
 

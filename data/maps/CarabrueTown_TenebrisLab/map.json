@@ -181,7 +181,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CarabrueTown_TenebrisLab_Metagross",
-      "flag": "0"
+      "flag": "FLAG_POST_FINALE_CUTSCENE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_TENEBRIS",

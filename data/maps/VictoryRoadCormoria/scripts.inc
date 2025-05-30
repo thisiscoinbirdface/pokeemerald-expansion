@@ -36,7 +36,7 @@ VR_Trainer_A::
 # 31 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_A, VR_Trainer_A_Text_0, VR_Trainer_A_Text_1
 # 32 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_A_Text_2
+	msgbox VR_Trainer_A_Text_2, MSGBOX_NPC
 	end
 
 
@@ -44,7 +44,7 @@ VR_Trainer_B::
 # 37 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_B, VR_Trainer_B_Text_0, VR_Trainer_B_Text_1
 # 38 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_B_Text_2
+	msgbox VR_Trainer_B_Text_2, MSGBOX_NPC
 	end
 
 
@@ -52,7 +52,7 @@ VR_Trainer_C::
 # 43 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_C, VR_Trainer_C_Text_0, VR_Trainer_C_Text_1
 # 44 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_C_Text_2
+	msgbox VR_Trainer_C_Text_2, MSGBOX_NPC
 	end
 
 
@@ -60,7 +60,7 @@ VR_Trainer_D::
 # 49 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_D, VR_Trainer_D_Text_0, VR_Trainer_D_Text_1
 # 50 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_D_Text_2
+	msgbox VR_Trainer_D_Text_2, MSGBOX_NPC
 	end
 
 
@@ -68,7 +68,7 @@ VR_Trainer_E::
 # 55 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_E, VR_Trainer_E_Text_0, VR_Trainer_E_Text_1
 # 56 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_E_Text_2
+	msgbox VR_Trainer_E_Text_2, MSGBOX_NPC
 	end
 
 
@@ -76,7 +76,7 @@ VR_Trainer_F::
 # 61 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_F, VR_Trainer_F_Text_0, VR_Trainer_F_Text_1
 # 62 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_F_Text_2
+	msgbox VR_Trainer_F_Text_2, MSGBOX_NPC
 	end
 
 
@@ -84,15 +84,15 @@ VR_Trainer_G::
 # 67 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_G, VR_Trainer_G_Text_0, VR_Trainer_G_Text_1
 # 68 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_G_Text_2
+	msgbox VR_Trainer_G_Text_2, MSGBOX_NPC
 	end
 
 
 VR_Trainer_H::
 # 73 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_H, VR_Trainer_G_Text_2, VR_Trainer_G_Text_2
+	trainerbattle_single TRAINER_VICTORY_ROAD_H, VR_Trainer_H_Text_0, VR_Trainer_H_Text_1
 # 74 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_G_Text_2
+	msgbox VR_Trainer_H_Text_2, MSGBOX_NPC
 	end
 
 
@@ -100,15 +100,15 @@ VR_Trainer_I::
 # 79 "data//maps/VictoryRoadCormoria/scripts.pory"
 	trainerbattle_single TRAINER_VICTORY_ROAD_I, VR_Trainer_I_Text_0, VR_Trainer_I_Text_1
 # 80 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_I_Text_2
+	msgbox VR_Trainer_I_Text_2, MSGBOX_NPC
 	end
 
 
 VR_Trainer_J::
 # 86 "data//maps/VictoryRoadCormoria/scripts.pory"
-	trainerbattle_single TRAINER_VICTORY_ROAD_J, VR_Trainer_G_Text_2, VR_Trainer_G_Text_2
+	trainerbattle_single TRAINER_VICTORY_ROAD_J, VR_Trainer_J_Text_0, VR_Trainer_J_Text_0
 # 87 "data//maps/VictoryRoadCormoria/scripts.pory"
-	msgbox VR_Trainer_G_Text_2
+	msgbox VR_Trainer_J_Text_0, MSGBOX_NPC
 	end
 
 
@@ -217,7 +217,25 @@ VR_Trainer_G_Text_1:
 
 VR_Trainer_G_Text_2:
 # 68 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "$"
+	.string "I don't just love my birds like other\n"
+	.string "breeders...I train them to be the\l"
+	.string "strongest!$"
+
+VR_Trainer_H_Text_0:
+# 73 "data//maps/VictoryRoadCormoria/scripts.pory"
+	.string "I thought I could find a shortcut to\n"
+	.string "Victory Cape, but I'm lost and just keep\l"
+	.string "losing to these tough trainers...oh no,\l"
+	.string "don't tell me you're another one!$"
+
+VR_Trainer_H_Text_1:
+# 73 "data//maps/VictoryRoadCormoria/scripts.pory"
+	.string "Why did we have to lock eyes?$"
+
+VR_Trainer_H_Text_2:
+# 74 "data//maps/VictoryRoadCormoria/scripts.pory"
+	.string "Just let me get to Victory Cape\n"
+	.string "already!$"
 
 VR_Trainer_I_Text_0:
 # 79 "data//maps/VictoryRoadCormoria/scripts.pory"
@@ -236,3 +254,7 @@ VR_Trainer_I_Text_2:
 	.string "I guess money can't beat skill. I should\n"
 	.string "invest in training for the next\l"
 	.string "Championship.$"
+
+VR_Trainer_J_Text_0:
+# 86 "data//maps/VictoryRoadCormoria/scripts.pory"
+	.string "$"
