@@ -356,24 +356,65 @@ script VilethornWoods_NPC3{
 
 
 script VilethornWoods_Celebi_Seed{
-    msgbox(format("It's fertile soil...but not the same as berry tree soil."), MSGBOX_NPC)
 
-    checkitem(ITEM_TIME_SEED)
-
-    if (var(VAR_RESULT) == 1){
-        msgbox(format("Plant a Time Seed?"), MSGBOX_YESNO)
+    if (var(VAR_CELEBI) == 1){
+        msgbox(format("A mystical seed has been planted in this soil.\pMaybe it needs some type of water to grow..."), MSGBOX_NPC)
+        
+        checkitem(ITEM_TIME_WATER)
 
         if (var(VAR_RESULT) == 1){
-            removeitem(ITEM_TIME_SEED)
+            msgbox(format("Water with the Water of Time?"), MSGBOX_YESNO)
 
-            msgbox(format("{PLAYER} planted the time seed in the fertile soil."), MSGBOX_SIGN)
-            release
-            delay(16)
-            msgbox(format("Maybe it needs some type of water to grow..."), MSGBOX_SIGN)
+            if (var(VAR_RESULT) == 1){
+                setvar(VAR_CELEBI, 2)
+                removeitem(ITEM_TIME_SEED)
+                setvar(VAR_CELEBI, 1)
+                msgbox(format("{PLAYER} watered the fertile soil with the Water of Time."), MSGBOX_SIGN)
+                release
+                delay(32)
+                msgbox(format("..."), MSGBOX_SIGN)
+                delay(32)
+                msgbox(format("..."), MSGBOX_SIGN)
+                delay(32)
+                msgbox(format("..."), MSGBOX_SIGN)
+                delay(32)
+
+                goto(VilethornWoods_Celebi_Start)
+            }
+
         }
+        end
 
     }
+
+    if (var(VAR_CELEBI) == 0){
+
+        msgbox(format("It's fertile soil...but not the same as berry tree soil."), MSGBOX_NPC)
+
+        checkitem(ITEM_TIME_SEED)
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Plant a Seed of Time?"), MSGBOX_YESNO)
+
+            if (var(VAR_RESULT) == 1){
+                removeitem(ITEM_TIME_SEED)
+                setvar(VAR_CELEBI, 1)
+                msgbox(format("{PLAYER} planted Seed of Time in the fertile soil."), MSGBOX_SIGN)
+                release
+                delay(16)
+                msgbox(format("Maybe it needs some type of water to grow..."), MSGBOX_SIGN)
+            }
+
+        }
+        end
+    }
+
     end
+}
+
+
+script VilethornWoods_Celebi_Start{
+    
 }
 
 
