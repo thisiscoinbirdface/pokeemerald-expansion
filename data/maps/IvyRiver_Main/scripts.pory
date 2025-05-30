@@ -421,14 +421,27 @@ script IvyRiver_Trainer_B {
 script IvyRiver_Trainer_C {
     trainerbattle_single(
         TRAINER_IVY_RIVER_C, 
-        format("Every four years, the best trainers compete in the Pokémon Championship.\pYou're looking at the future winner!"), 
-        format("You're championship material!")
+        format("Deep in the river lurks an unknown malaise...keep your eyes wide open or it'll eat your mind!"), 
+        format("Your mind can't be eaten!")
     )
     
-    msgbox(format("I bet I'll see you at the Pokémon Championship!"))
+    msgbox(format("To be honest with you, there's no malaise. There are strong currents, and that's about it."))
     release
     end
 }
+
+//saving the dialogue for another trainer somewhere
+// script IvyRiver_Trainer_D {
+//     trainerbattle_single(
+//         TRAINER_IVY_RIVER_C, 
+//         format("Every four years, the best trainers compete in the Pokémon Championship.\pYou're looking at the future winner!"), 
+//         format("You're championship material!")
+//     )
+    
+//     msgbox(format("I bet I'll see you at the Pokémon Championship!"))
+//     release
+//     end
+// }
 
 
 //NPCs

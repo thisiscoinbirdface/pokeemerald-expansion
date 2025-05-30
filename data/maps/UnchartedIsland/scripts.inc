@@ -2229,8 +2229,10 @@ UnchartedIsland_Moxie_Melea_Fight_Text_12:
 	.string "You're finished, {PLAYER}! Once we\n"
 	.string "deal with you, we'll go and stop the Ace\l"
 	.string "Rookie.\p"
-	.string "Come then, it's time to end this - once\n"
-	.string "and for all!$"
+	.string "Now that we control the dreamstone,\n"
+	.string "we've picked up some rare ancient\l"
+	.string "Pokemon of our own!\p"
+	.string "It's time to end this once and for all!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_13:
 # 625 "data//maps/UnchartedIsland/scripts.pory"

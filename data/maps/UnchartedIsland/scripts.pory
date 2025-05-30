@@ -619,7 +619,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pCome then, it's time to end this - once and for all!"))
+    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pNow that we control the dreamstone, we've picked up some rare ancient Pokemon of our own!\pIt's time to end this once and for all!"))
 
     //battle 1
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))

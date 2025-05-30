@@ -4970,6 +4970,7 @@ static s32 AI_ForceSetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 
     case EFFECT_CHILLY_RECEPTION:
     case EFFECT_GEOMANCY:
     case EFFECT_VICTORY_DANCE:
+    case EFFECT_TRICK:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_HIT:

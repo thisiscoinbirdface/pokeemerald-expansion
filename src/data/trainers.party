@@ -3189,18 +3189,41 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 
 === TRAINER_IVY_RIVER_C ===
-Name: Terra
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Male
+Name: Eden
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
-Mugshot: Purple
+AI: Basic Trainer / Force Setup First Turn
 
-Scyther
-Level: 40
+Morgrem @ Lagging Tail
+Level: 37
+Ability: Prankster
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Trick
+- Parting Shot
+- Fake Out
+- Sucker Punch
+
+Polteageist
+Level: 38
+Ability: Weak Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Strength Sap
+- Nasty Plot
+- Baton Pass
+- Endure
+
+Spiritomb
+Level: 39 
+Ability: Infiltrator
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Foul Play
+- Will-O-Wisp
+- Hex
+- Pain Split
+
 
 === TRAINER_IVY_RIVER_D ===
 Name: KEVIN

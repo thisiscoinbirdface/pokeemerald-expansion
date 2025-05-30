@@ -264,18 +264,16 @@ Championship_R5_Text_5:
 
 Championship_R5_Text_6:
 # 44 "data//maps/Championship_R5/scripts.pory"
-	.string "What?\p"
-	.string "Why did I take you off the case?\p"
-	.string "Why did I leave you alone with Moxie and\n"
-	.string "Melea back at the island?\p"
-	.string "Because I hate you, {PLAYER}.\p"
-	.string "I resent you. I despise you.\p"
-	.string "And I will never ever let you upstage me\n"
-	.string "again, {PLAYER}!$"
+	.string "In the end, it was you.\p"
+	.string "While the world will give me all the\n"
+	.string "credit, I know the truth.\p"
+	.string "I can't deny the truth.\p"
+	.string "You were the one who stopped Rue and\n"
+	.string "Team Somber.$"
 
 Championship_R5_Text_7:
 # 47 "data//maps/Championship_R5/scripts.pory"
-	.string "Trainers, at position!$"
+	.string "Trainers, to your positions!$"
 
 Championship_R5_Text_8:
 # 57 "data//maps/Championship_R5/scripts.pory"

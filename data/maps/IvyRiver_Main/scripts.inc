@@ -613,13 +613,13 @@ IvyRiver_Trainer_C::
 
 
 IvyRiver_NPC1::
-# 436 "data//maps/IvyRiver_Main/scripts.pory"
+# 449 "data//maps/IvyRiver_Main/scripts.pory"
 	msgbox IvyRiver_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_NPC2::
-# 440 "data//maps/IvyRiver_Main/scripts.pory"
+# 453 "data//maps/IvyRiver_Main/scripts.pory"
 	msgbox IvyRiver_NPC2_Text_0, MSGBOX_NPC
 	end
 
@@ -1149,28 +1149,29 @@ IvyRiver_Trainer_B_Text_2:
 
 IvyRiver_Trainer_C_Text_0:
 # 424 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Every four years, the best trainers\n"
-	.string "compete in the Pokémon Championship.\p"
-	.string "You're looking at the future winner!$"
+	.string "Deep in the river lurks an unknown\n"
+	.string "malaise...keep your eyes wide open or\l"
+	.string "it'll eat your mind!$"
 
 IvyRiver_Trainer_C_Text_1:
 # 425 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "You're championship material!$"
+	.string "Your mind can't be eaten!$"
 
 IvyRiver_Trainer_C_Text_2:
 # 428 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "I bet I'll see you at the Pokémon\n"
-	.string "Championship!$"
+	.string "To be honest with you, there's no\n"
+	.string "malaise. There are strong currents, and\l"
+	.string "that's about it.$"
 
 IvyRiver_NPC1_Text_0:
-# 436 "data//maps/IvyRiver_Main/scripts.pory"
+# 449 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "You can't navigate the strong currents\n"
 	.string "here without HM Flip Turn.\p"
 	.string "Oh, you don't have it?\p"
 	.string "Too bad.$"
 
 IvyRiver_NPC2_Text_0:
-# 440 "data//maps/IvyRiver_Main/scripts.pory"
+# 453 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Most people you'll meet here are either\n"
 	.string "collecting rare Pokémon...or lost!\p"
 	.string "Like me...$"
