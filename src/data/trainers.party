@@ -3767,7 +3767,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Glimmora @ Power Herb
@@ -3805,7 +3805,7 @@ Pic: Fairy Lady
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Magneton
@@ -3827,7 +3827,7 @@ Pic: Somber Grunt F
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Claydol @ Leftovers
@@ -3879,33 +3879,58 @@ Pic: Wally
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
-Excadrill
+Samurott @ Leftovers
 Level: 65
+EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flip Turn
+- Ceaseless Edge
+- Aqua Jet
+- Drill Run
 
-Aegislash
+Kleavor @ Focus Sash
+Ability: Sharpness
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stone Axe
+- X-Scissor
+- Trailblaze
 
-Samurott
+Excadrill @ Choice Band
+Ability: Mold Breaker
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Rock Slide
+- Iron Head
 
-Kleavor
+Aegislash @ Air Balloon
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Kings Shield
+- Shadow Ball
+- Shadow Sneak
+- Flash Cannon
 
 Gallade @ Galladite
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drain Punch
+- Zen Headbutt
+- Shadow Sneak
+- Fire Punch
 
-Ceruledge
+Ceruledge @ Life Orb
+Ability: Weak Armor
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
+- Bitter Blade
+- Swords Dance
+- Shadow Sneak
+- Close Combat
 
 === TRAINER_CHAMPIONSHIP_F ===
 Name: JEFF
