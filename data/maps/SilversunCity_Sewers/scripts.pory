@@ -387,7 +387,7 @@ script SilversunCity_Sewers_Market_Muk_Reward{
     message(format("Which one will you pick up?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Ability Pill", "Ability Capsule"
+        "Ability Patch", "Ability Capsule"
     )
 
     if (var(VAR_RESULT) == 0) {setvar(VAR_0x8006, ITEM_ABILITY_PATCH) goto(SilversunCity_Sewers_Market_Muk_GiveReward)}

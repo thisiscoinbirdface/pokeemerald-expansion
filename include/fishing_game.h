@@ -20,7 +20,7 @@
 
 #define DEFAULT_TREASURE_CHANCE         30   // Percent chance a random treasure will spawn if FG_VAR_TREASURE_CHANCE is 0.
 #define TREASURE_ITEM_POOL_SIZE         14   // Number of different items allowed in the treasure pool.
-#define TREASURE_ITEM_COMMON_WEIGHT     50   // The percent chance the treasure item will be restricted to the lower(more common) half of the current pool.
+#define TREASURE_ITEM_COMMON_WEIGHT     30   // The percent chance the treasure item will be restricted to the lower(more common) half of the current pool.
 #define TREASURE_ICON_HITBOX_WIDTH      12   // Width of the treasure's hitbox in number of pixels.
 
 
