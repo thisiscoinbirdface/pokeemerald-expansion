@@ -145,7 +145,13 @@ script MirrohBaseCamp_Houses_MasterballFriend{
         dynmultipush("Quick Ball", ITEM_QUICK_BALL)
         dynmultipush("Luxury Ball", ITEM_LUXURY_BALL) 
         dynmultipush("Dream Ball", ITEM_DREAM_BALL)         
-        dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+        dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("Come back any time!"))
+            releaseall
+            end
+        }
 
         if (var(VAR_RESULT) == ITEM_POKE_BALL) {setvar(VAR_0x8005, ITEM_POKE_BALL)       bufferitemname(STR_VAR_1, ITEM_POKE_BALL)}
         if (var(VAR_RESULT) == ITEM_GREAT_BALL) {setvar(VAR_0x8005, ITEM_GREAT_BALL)      bufferitemname(STR_VAR_1, ITEM_GREAT_BALL)}

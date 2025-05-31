@@ -212,10 +212,10 @@ MirrohBaseCamp_Houses_MasterballFriend_1:
 # 135 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_6
-# 175 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_15
+# 181 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_11
 MirrohBaseCamp_Houses_MasterballFriend_5:
-# 178 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 184 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -246,120 +246,130 @@ MirrohBaseCamp_Houses_MasterballFriend_6:
 # 147 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_10, ITEM_DREAM_BALL
 # 148 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultistack 0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
 # 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_POKE_BALL
+	compare VAR_RESULT, 0
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_10
-MirrohBaseCamp_Houses_MasterballFriend_9:
-# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_GREAT_BALL
+# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_POKE_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_13
 MirrohBaseCamp_Houses_MasterballFriend_12:
-# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_ULTRA_BALL
+# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_GREAT_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_16
 MirrohBaseCamp_Houses_MasterballFriend_15:
-# 153 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_DIVE_BALL
+# 158 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_ULTRA_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_19
 MirrohBaseCamp_Houses_MasterballFriend_18:
-# 154 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_HEAL_BALL
+# 159 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_DIVE_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_22
 MirrohBaseCamp_Houses_MasterballFriend_21:
-# 155 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_QUICK_BALL
+# 160 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_HEAL_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_25
 MirrohBaseCamp_Houses_MasterballFriend_24:
-# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_LUXURY_BALL
+# 161 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_QUICK_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_28
 MirrohBaseCamp_Houses_MasterballFriend_27:
-# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, ITEM_DREAM_BALL
+# 162 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_LUXURY_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_31
 MirrohBaseCamp_Houses_MasterballFriend_30:
-# 160 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	checkitem VAR_0x8005
-# 162 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, 0
+# 163 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	compare VAR_RESULT, ITEM_DREAM_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_34
-# 167 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	removeitem VAR_0x8005
+MirrohBaseCamp_Houses_MasterballFriend_33:
+# 166 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	checkitem VAR_0x8005
 # 168 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_12, MSGBOX_SIGN
-# 169 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	special SetMonPokeball
-# 170 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_13
-# 171 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	release
-# 172 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	playse SE_BALL
+	compare VAR_RESULT, 0
+	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_37
 # 173 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	removeitem VAR_0x8005
+# 174 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_13, MSGBOX_SIGN
+# 175 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	special SetMonPokeball
+# 176 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_14
+# 177 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	release
+# 178 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	playse SE_BALL
+# 179 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_15
 	goto MirrohBaseCamp_Houses_MasterballFriend_5
 
 MirrohBaseCamp_Houses_MasterballFriend_10:
-# 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_POKE_BALL
-# 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_POKE_BALL
-	goto MirrohBaseCamp_Houses_MasterballFriend_9
+# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_11
+# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	releaseall
+	end
 
 MirrohBaseCamp_Houses_MasterballFriend_13:
-# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_GREAT_BALL
-# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_GREAT_BALL
+# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_POKE_BALL
+# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_POKE_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_12
 
 MirrohBaseCamp_Houses_MasterballFriend_16:
-# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_ULTRA_BALL
-# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_ULTRA_BALL
+# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_GREAT_BALL
+# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_GREAT_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_15
 
 MirrohBaseCamp_Houses_MasterballFriend_19:
-# 153 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_DIVE_BALL
-# 153 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_DIVE_BALL
+# 158 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_ULTRA_BALL
+# 158 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_ULTRA_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_18
 
 MirrohBaseCamp_Houses_MasterballFriend_22:
-# 154 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_HEAL_BALL
-# 154 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_HEAL_BALL
+# 159 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_DIVE_BALL
+# 159 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_DIVE_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_21
 
 MirrohBaseCamp_Houses_MasterballFriend_25:
-# 155 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_QUICK_BALL
-# 155 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_QUICK_BALL
+# 160 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_HEAL_BALL
+# 160 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_HEAL_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_24
 
 MirrohBaseCamp_Houses_MasterballFriend_28:
-# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_LUXURY_BALL
-# 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_LUXURY_BALL
+# 161 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_QUICK_BALL
+# 161 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_QUICK_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_27
 
 MirrohBaseCamp_Houses_MasterballFriend_31:
-# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	setvar VAR_0x8005, ITEM_DREAM_BALL
-# 157 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	bufferitemname STR_VAR_1, ITEM_DREAM_BALL
+# 162 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_LUXURY_BALL
+# 162 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_LUXURY_BALL
 	goto MirrohBaseCamp_Houses_MasterballFriend_30
 
 MirrohBaseCamp_Houses_MasterballFriend_34:
 # 163 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_11
-# 164 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	setvar VAR_0x8005, ITEM_DREAM_BALL
+# 163 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	bufferitemname STR_VAR_1, ITEM_DREAM_BALL
+	goto MirrohBaseCamp_Houses_MasterballFriend_33
+
+MirrohBaseCamp_Houses_MasterballFriend_37:
+# 169 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_12
+# 170 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -582,26 +592,26 @@ MirrohBaseCamp_Houses_MasterballFriend_Text_10:
 	.string "Dream Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_11:
-# 163 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Come back any time!$"
+
+MirrohBaseCamp_Houses_MasterballFriend_Text_12:
+# 169 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "You don't have a {STR_VAR_1}.\p"
 	.string "I can switch Poké Balls but I can't make\n"
 	.string "them appear out of thin air!$"
 
-MirrohBaseCamp_Houses_MasterballFriend_Text_12:
-# 168 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+MirrohBaseCamp_Houses_MasterballFriend_Text_13:
+# 174 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "{PLAYER} handed a {STR_VAR_1}\n"
 	.string "over to the craftsman.$"
 
-MirrohBaseCamp_Houses_MasterballFriend_Text_13:
-# 170 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+MirrohBaseCamp_Houses_MasterballFriend_Text_14:
+# 176 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "...\p"
 	.string "...$"
 
-MirrohBaseCamp_Houses_MasterballFriend_Text_14:
-# 173 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+MirrohBaseCamp_Houses_MasterballFriend_Text_15:
+# 179 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "...and done! Come back if you need me to\n"
 	.string "do any more!$"
-
-MirrohBaseCamp_Houses_MasterballFriend_Text_15:
-# 175 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Come back any time!$"
