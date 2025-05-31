@@ -161,6 +161,76 @@ ChampionshipVenue_Entry_10:
 	goto ChampionshipVenue_Entry_1
 
 
+Champ_Venue_NPC1::
+# 111 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC1_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NPC2::
+# 116 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NPC3::
+# 121 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC3_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NPC4::
+# 126 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC4_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NPC5::
+# 131 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC5_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NPC6::
+# 136 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NPC6_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_Inger::
+# 145 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_Inger_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_Minior::
+# 149 "data//maps/Championship_Venue/scripts.pory"
+	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
+# 150 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_Minior_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_Ariana::
+# 154 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_Ariana_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_Tauros::
+# 158 "data//maps/Championship_Venue/scripts.pory"
+	playmoncry SPECIES_TAUROS, CRY_MODE_NORMAL
+# 159 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_Tauros_Text_0, MSGBOX_NPC
+	end
+
+
+Champ_Venue_NoticeBoard::
+# 167 "data//maps/Championship_Venue/scripts.pory"
+	msgbox Champ_Venue_NoticeBoard_Text_0
+	return
+
+
 # 89 "data//maps/Championship_Venue/scripts.pory"
 ChampionshipVenue_Entry_Movement_0:
 # 89 "data//maps/Championship_Venue/scripts.pory"
@@ -341,3 +411,70 @@ ChampionshipVenue_Entry_Text_5:
 	.string "Are you a trainer?\p"
 	.string "Please register yourself at the\n"
 	.string "front desk to your left.$"
+
+Champ_Venue_NPC1_Text_0:
+# 111 "data//maps/Championship_Venue/scripts.pory"
+	.string "Move, kid! You're getting in the shot!$"
+
+Champ_Venue_NPC2_Text_0:
+# 116 "data//maps/Championship_Venue/scripts.pory"
+	.string "We're trying to get an exclusive scoop\n"
+	.string "with the Ace Rookie!\p"
+	.string "...so get out of the way!$"
+
+Champ_Venue_NPC3_Text_0:
+# 121 "data//maps/Championship_Venue/scripts.pory"
+	.string "I remember my first Pokemon\n"
+	.string "Championship! I was a young lad, around\l"
+	.string "your age. I'm old now, but the thrill is\l"
+	.string "the same!$"
+
+Champ_Venue_NPC4_Text_0:
+# 126 "data//maps/Championship_Venue/scripts.pory"
+	.string "I'm not competing - I thought this was\n"
+	.string "the hotel.$"
+
+Champ_Venue_NPC5_Text_0:
+# 131 "data//maps/Championship_Venue/scripts.pory"
+	.string "Will my son be alright? He's a bug maniac\n"
+	.string "and I've always supported his dreams.\l"
+	.string "But I don't know if he's as strong as\l"
+	.string "the other trainers here.$"
+
+Champ_Venue_NPC6_Text_0:
+# 136 "data//maps/Championship_Venue/scripts.pory"
+	.string "Haaah! Haaaaaaaaaah!\n"
+	.string "It's showtime!$"
+
+Champ_Venue_Inger_Text_0:
+# 145 "data//maps/Championship_Venue/scripts.pory"
+	.string "What's up {PLAYER}? Come to see your\n"
+	.string "opponent details?$"
+
+Champ_Venue_Minior_Text_0:
+# 150 "data//maps/Championship_Venue/scripts.pory"
+	.string "Minior is curling up to Inger!$"
+
+Champ_Venue_Ariana_Text_0:
+# 154 "data//maps/Championship_Venue/scripts.pory"
+	.string "Gym Leaders aren't allowed to compete,\n"
+	.string "since we're part of the system.\l"
+	.string "Otherwise Raazi would win every time!$"
+
+Champ_Venue_Tauros_Text_0:
+# 159 "data//maps/Championship_Venue/scripts.pory"
+	.string "Tauros looks at the noticeboard...\n"
+	.string "It huffs, disappointed.$"
+
+Champ_Venue_NoticeBoard_Text_0:
+# 167 "data//maps/Championship_Venue/scripts.pory"
+	.string "{PLAYER} scanned the noticeboard...\p"
+	.string "...\p"
+	.string "ROUND 1 PAIRINGS\n"
+	.string "Kohla vs. Brent...\l"
+	.string "...\l"
+	.string "...Gabrielle vs. Anaya\l"
+	.string "...\l"
+	.string "...\l"
+	.string "...Aha!\p"
+	.string "{PLAYER} vs. Chara.$"
