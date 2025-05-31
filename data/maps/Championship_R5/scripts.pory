@@ -84,6 +84,7 @@ script Championship_R5{
 
     playse(SE_APPLAUSE)
     fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_GAME_CLEAR)
     special(GameClear)
 
     releaseall

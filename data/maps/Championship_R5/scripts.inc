@@ -118,8 +118,10 @@ Championship_R5::
 # 86 "data//maps/Championship_R5/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 87 "data//maps/Championship_R5/scripts.pory"
+	setflag FLAG_GAME_CLEAR
+# 88 "data//maps/Championship_R5/scripts.pory"
 	special GameClear
-# 89 "data//maps/Championship_R5/scripts.pory"
+# 90 "data//maps/Championship_R5/scripts.pory"
 	releaseall
 	end
 

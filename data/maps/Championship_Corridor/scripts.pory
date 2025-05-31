@@ -28,7 +28,7 @@ script Championship_Corridor_Register{
 	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	delay(40)
     setvar(VAR_TEMP_A, 1)
-
+    setflag(FLAG_GAME_CLEAR)
     special(GameClear)
     releaseall
     end

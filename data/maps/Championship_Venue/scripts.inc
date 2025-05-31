@@ -112,150 +112,157 @@ ChampionshipVenue_SignUp_8:
 
 
 ChampionshipVenue_Entry::
-# 75 "data//maps/Championship_Venue/scripts.pory"
-	goto_if_set FLAG_CHAMP_SIGNUP_DONE, ChampionshipVenue_Entry_2
-# 100 "data//maps/Championship_Venue/scripts.pory"
-	msgbox ChampionshipVenue_Entry_Text_5, MSGBOX_NPC
-ChampionshipVenue_Entry_1:
-# 103 "data//maps/Championship_Venue/scripts.pory"
+# 76 "data//maps/Championship_Venue/scripts.pory"
+	goto_if_set FLAG_GAME_CLEAR, ChampionshipVenue_Entry_2
+# 81 "data//maps/Championship_Venue/scripts.pory"
+	goto_if_set FLAG_CHAMP_SIGNUP_DONE, ChampionshipVenue_Entry_5
+# 106 "data//maps/Championship_Venue/scripts.pory"
+	msgbox ChampionshipVenue_Entry_Text_6, MSGBOX_NPC
+ChampionshipVenue_Entry_4:
+# 109 "data//maps/Championship_Venue/scripts.pory"
 	release
 	end
 
 ChampionshipVenue_Entry_2:
-# 76 "data//maps/Championship_Venue/scripts.pory"
-	msgbox ChampionshipVenue_Entry_Text_0, MSGBOX_YESNO
-# 78 "data//maps/Championship_Venue/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq ChampionshipVenue_Entry_5
-	goto ChampionshipVenue_Entry_1
+# 77 "data//maps/Championship_Venue/scripts.pory"
+	msgbox ChampionshipVenue_Entry_Text_0, MSGBOX_NPC
+	end
 
 ChampionshipVenue_Entry_5:
-# 81 "data//maps/Championship_Venue/scripts.pory"
-	msgbox ChampionshipVenue_Entry_Text_1, MSGBOX_POKENAV
 # 82 "data//maps/Championship_Venue/scripts.pory"
-	dynmultichoice 10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, ChampionshipVenue_Entry_Text_2, ChampionshipVenue_Entry_Text_3
+	msgbox ChampionshipVenue_Entry_Text_1, MSGBOX_YESNO
 # 84 "data//maps/Championship_Venue/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq ChampionshipVenue_Entry_8
-# 86 "data//maps/Championship_Venue/scripts.pory"
-	msgbox ChampionshipVenue_Entry_Text_4
-# 87 "data//maps/Championship_Venue/scripts.pory"
-	release
-# 89 "data//maps/Championship_Venue/scripts.pory"
-	applymovement LOCALID_TEALA, ChampionshipVenue_Entry_Movement_0
-# 90 "data//maps/Championship_Venue/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, ChampionshipVenue_Entry_Movement_1
-# 91 "data//maps/Championship_Venue/scripts.pory"
-	waitmovement 0
-# 94 "data//maps/Championship_Venue/scripts.pory"
-	compare VAR_CHAMP_STAGE, 1
-	goto_if_eq ChampionshipVenue_Entry_10
-	goto ChampionshipVenue_Entry_1
+	goto ChampionshipVenue_Entry_4
 
 ChampionshipVenue_Entry_8:
+# 87 "data//maps/Championship_Venue/scripts.pory"
+	msgbox ChampionshipVenue_Entry_Text_2, MSGBOX_POKENAV
+# 88 "data//maps/Championship_Venue/scripts.pory"
+	dynmultichoice 10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, ChampionshipVenue_Entry_Text_3, ChampionshipVenue_Entry_Text_4
+# 90 "data//maps/Championship_Venue/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq ChampionshipVenue_Entry_11
+# 92 "data//maps/Championship_Venue/scripts.pory"
+	msgbox ChampionshipVenue_Entry_Text_5
+# 93 "data//maps/Championship_Venue/scripts.pory"
+	release
+# 95 "data//maps/Championship_Venue/scripts.pory"
+	applymovement LOCALID_TEALA, ChampionshipVenue_Entry_Movement_0
+# 96 "data//maps/Championship_Venue/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, ChampionshipVenue_Entry_Movement_1
+# 97 "data//maps/Championship_Venue/scripts.pory"
+	waitmovement 0
+# 100 "data//maps/Championship_Venue/scripts.pory"
+	compare VAR_CHAMP_STAGE, 1
+	goto_if_eq ChampionshipVenue_Entry_13
+	goto ChampionshipVenue_Entry_4
+
+ChampionshipVenue_Entry_11:
 	end
 
-ChampionshipVenue_Entry_10:
-# 95 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_13:
+# 101 "data//maps/Championship_Venue/scripts.pory"
 	warp MAP_CHAMPIONSHIP_R1, 4, 8
-	goto ChampionshipVenue_Entry_1
+	goto ChampionshipVenue_Entry_4
 
 
 Champ_Venue_NPC1::
-# 111 "data//maps/Championship_Venue/scripts.pory"
+# 117 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NPC2::
-# 116 "data//maps/Championship_Venue/scripts.pory"
+# 122 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NPC3::
-# 121 "data//maps/Championship_Venue/scripts.pory"
+# 127 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NPC4::
-# 126 "data//maps/Championship_Venue/scripts.pory"
+# 132 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NPC5::
-# 131 "data//maps/Championship_Venue/scripts.pory"
+# 137 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC5_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NPC6::
-# 136 "data//maps/Championship_Venue/scripts.pory"
+# 142 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NPC6_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_Inger::
-# 145 "data//maps/Championship_Venue/scripts.pory"
+# 151 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_Inger_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_Minior::
-# 149 "data//maps/Championship_Venue/scripts.pory"
+# 155 "data//maps/Championship_Venue/scripts.pory"
 	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
-# 150 "data//maps/Championship_Venue/scripts.pory"
+# 156 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_Minior_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_Ariana::
-# 154 "data//maps/Championship_Venue/scripts.pory"
+# 160 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_Ariana_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_Tauros::
-# 158 "data//maps/Championship_Venue/scripts.pory"
+# 164 "data//maps/Championship_Venue/scripts.pory"
 	playmoncry SPECIES_TAUROS, CRY_MODE_NORMAL
-# 159 "data//maps/Championship_Venue/scripts.pory"
+# 165 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_Tauros_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Venue_NoticeBoard::
-# 167 "data//maps/Championship_Venue/scripts.pory"
+# 173 "data//maps/Championship_Venue/scripts.pory"
 	lockall
-# 168 "data//maps/Championship_Venue/scripts.pory"
+# 174 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NoticeBoard_Text_0
-# 169 "data//maps/Championship_Venue/scripts.pory"
+# 175 "data//maps/Championship_Venue/scripts.pory"
 	releaseall
 	end
 
 
-# 89 "data//maps/Championship_Venue/scripts.pory"
+# 95 "data//maps/Championship_Venue/scripts.pory"
 ChampionshipVenue_Entry_Movement_0:
-# 89 "data//maps/Championship_Venue/scripts.pory"
+# 95 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
-# 89 "data//maps/Championship_Venue/scripts.pory"
+# 95 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
-# 89 "data//maps/Championship_Venue/scripts.pory"
+# 95 "data//maps/Championship_Venue/scripts.pory"
 	walk_right
-# 89 "data//maps/Championship_Venue/scripts.pory"
+# 95 "data//maps/Championship_Venue/scripts.pory"
 	face_left
 	step_end
 
-# 90 "data//maps/Championship_Venue/scripts.pory"
+# 96 "data//maps/Championship_Venue/scripts.pory"
 ChampionshipVenue_Entry_Movement_1:
-# 90 "data//maps/Championship_Venue/scripts.pory"
+# 96 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
-# 90 "data//maps/Championship_Venue/scripts.pory"
+# 96 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
-# 90 "data//maps/Championship_Venue/scripts.pory"
+# 96 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
-# 90 "data//maps/Championship_Venue/scripts.pory"
+# 96 "data//maps/Championship_Venue/scripts.pory"
 	walk_up
 	step_end
 
@@ -383,12 +390,17 @@ ChampionshipVenue_SignUp_Text_21:
 	.string "Good luck!$"
 
 ChampionshipVenue_Entry_Text_0:
-# 76 "data//maps/Championship_Venue/scripts.pory"
+# 77 "data//maps/Championship_Venue/scripts.pory"
+	.string "Thank you for participating in this\n"
+	.string "year's Championship!$"
+
+ChampionshipVenue_Entry_Text_1:
+# 82 "data//maps/Championship_Venue/scripts.pory"
 	.string "Welcome trainer!\n"
 	.string "Are you ready for your match?$"
 
-ChampionshipVenue_Entry_Text_1:
-# 81 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_Text_2:
+# 87 "data//maps/Championship_Venue/scripts.pory"
 	.string "Warning! You are about to enter the\n"
 	.string "Pokemon Championship.\p"
 	.string "If you lose at any point in the\n"
@@ -396,20 +408,20 @@ ChampionshipVenue_Entry_Text_1:
 	.string "and your game will auto-save.\p"
 	.string "Make sure you're ready!$"
 
-ChampionshipVenue_Entry_Text_2:
-# 82 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_Text_3:
+# 88 "data//maps/Championship_Venue/scripts.pory"
 	.string "I'm ready!$"
 
-ChampionshipVenue_Entry_Text_3:
-# 82 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_Text_4:
+# 88 "data//maps/Championship_Venue/scripts.pory"
 	.string "Not yet$"
 
-ChampionshipVenue_Entry_Text_4:
-# 86 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_Text_5:
+# 92 "data//maps/Championship_Venue/scripts.pory"
 	.string "Very good. Please follow me.$"
 
-ChampionshipVenue_Entry_Text_5:
-# 100 "data//maps/Championship_Venue/scripts.pory"
+ChampionshipVenue_Entry_Text_6:
+# 106 "data//maps/Championship_Venue/scripts.pory"
 	.string "Sorry, only participating trainers may\n"
 	.string "enter past this point.\p"
 	.string "Are you a trainer?\p"
@@ -417,61 +429,61 @@ ChampionshipVenue_Entry_Text_5:
 	.string "front desk to your left.$"
 
 Champ_Venue_NPC1_Text_0:
-# 111 "data//maps/Championship_Venue/scripts.pory"
+# 117 "data//maps/Championship_Venue/scripts.pory"
 	.string "Move, kid! You're getting in the shot!$"
 
 Champ_Venue_NPC2_Text_0:
-# 116 "data//maps/Championship_Venue/scripts.pory"
+# 122 "data//maps/Championship_Venue/scripts.pory"
 	.string "We're trying to get an exclusive scoop\n"
 	.string "with the Ace Rookie!\p"
 	.string "...so get out of the way!$"
 
 Champ_Venue_NPC3_Text_0:
-# 121 "data//maps/Championship_Venue/scripts.pory"
+# 127 "data//maps/Championship_Venue/scripts.pory"
 	.string "I remember my first Pokemon\n"
 	.string "Championship! I was a young lad, around\l"
 	.string "your age. I'm old now, but the thrill is\l"
 	.string "the same!$"
 
 Champ_Venue_NPC4_Text_0:
-# 126 "data//maps/Championship_Venue/scripts.pory"
+# 132 "data//maps/Championship_Venue/scripts.pory"
 	.string "I'm not competing - I thought this was\n"
 	.string "the hotel.$"
 
 Champ_Venue_NPC5_Text_0:
-# 131 "data//maps/Championship_Venue/scripts.pory"
+# 137 "data//maps/Championship_Venue/scripts.pory"
 	.string "Will my son be alright? He's a bug maniac\n"
 	.string "and I've always supported his dreams.\l"
 	.string "But I don't know if he's as strong as\l"
 	.string "the other trainers here.$"
 
 Champ_Venue_NPC6_Text_0:
-# 136 "data//maps/Championship_Venue/scripts.pory"
+# 142 "data//maps/Championship_Venue/scripts.pory"
 	.string "Haaah! Haaaaaaaaaah!\n"
 	.string "It's showtime!$"
 
 Champ_Venue_Inger_Text_0:
-# 145 "data//maps/Championship_Venue/scripts.pory"
+# 151 "data//maps/Championship_Venue/scripts.pory"
 	.string "What's up {PLAYER}? Come to see your\n"
 	.string "opponent details?$"
 
 Champ_Venue_Minior_Text_0:
-# 150 "data//maps/Championship_Venue/scripts.pory"
+# 156 "data//maps/Championship_Venue/scripts.pory"
 	.string "Minior is curling up to Inger!$"
 
 Champ_Venue_Ariana_Text_0:
-# 154 "data//maps/Championship_Venue/scripts.pory"
+# 160 "data//maps/Championship_Venue/scripts.pory"
 	.string "Gym Leaders aren't allowed to compete,\n"
 	.string "since we're part of the system.\l"
 	.string "Otherwise Raazi would win every time!$"
 
 Champ_Venue_Tauros_Text_0:
-# 159 "data//maps/Championship_Venue/scripts.pory"
+# 165 "data//maps/Championship_Venue/scripts.pory"
 	.string "Tauros looks at the noticeboard...\n"
 	.string "It huffs, disappointed.$"
 
 Champ_Venue_NoticeBoard_Text_0:
-# 168 "data//maps/Championship_Venue/scripts.pory"
+# 174 "data//maps/Championship_Venue/scripts.pory"
 	.string "{PLAYER} scanned the noticeboard...\p"
 	.string "...\p"
 	.string "ROUND 1 PAIRINGS\n"

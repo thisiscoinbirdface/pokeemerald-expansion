@@ -33,6 +33,8 @@ Championship_Corridor_Register_10:
 	delay 40
 # 30 "data//maps/Championship_Corridor/scripts.pory"
 	setvar VAR_TEMP_A, 1
+# 31 "data//maps/Championship_Corridor/scripts.pory"
+	setflag FLAG_GAME_CLEAR
 # 32 "data//maps/Championship_Corridor/scripts.pory"
 	special GameClear
 # 33 "data//maps/Championship_Corridor/scripts.pory"

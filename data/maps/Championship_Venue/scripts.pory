@@ -72,6 +72,12 @@ script ChampionshipVenue_SignUp{
 }
 
 script ChampionshipVenue_Entry{
+
+    if (flag(FLAG_GAME_CLEAR)){
+        msgbox(format("Thank you for participating in this year's Championship!"), MSGBOX_NPC)
+        end
+    }
+
     if (flag(FLAG_CHAMP_SIGNUP_DONE)){
         msgbox(format("Welcome trainer!\nAre you ready for your match?"), MSGBOX_YESNO)
 
