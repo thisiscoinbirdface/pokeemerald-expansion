@@ -180,7 +180,7 @@ Championship_R3_Text_1:
 
 Championship_R3_Text_2:
 # 35 "data//maps/Championship_R3/scripts.pory"
-	.string "Freja$"
+	.string "Berger$"
 
 Championship_R3_Text_3:
 # 35 "data//maps/Championship_R3/scripts.pory"
