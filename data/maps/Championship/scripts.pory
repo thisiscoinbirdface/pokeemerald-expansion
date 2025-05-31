@@ -4,7 +4,7 @@ mapscripts Championship_MapScripts{}
 //NPCs
 //woman with amoonguss
 script VictoryCape_NPC1{
-    msgbox(format("What? You think I'm too old to be a competitor?\pI'll have you know I had my eighth badge before you were born!"), MSGBOX_NPC)
+    msgbox(format("What's that look? You think I'm too old to be a competitor?\pI'll have you know I had my eighth\ngym badge before you were born!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon1{
@@ -18,16 +18,16 @@ script VictoryCape_NPC2{
     end    
 }
 script VictoryCape_NPC3{
-    msgbox(format("This is my second time participating. I was knocked out in the first round last time!"), MSGBOX_NPC)
+    msgbox(format("This is my second time participating.\pI lost in the first round last time!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon2{
     playmoncry(SPECIES_PALPITOAD, CRY_MODE_NORMAL)
-    msgbox(format("Palpitoad has a deadly glint in its eye. It doesn't want to lose in the first round again!"), MSGBOX_NPC)
+    msgbox(format("Palpitoad has a deadly glint in its eye.\nNo first round exits this time!"), MSGBOX_NPC)
     end    
 } 
 script VictoryCape_NPC4{
-    msgbox(format("Am I participating? No. I've just come to spectate!"), MSGBOX_NPC)
+    msgbox(format("Am I participating? No.\nI've just come to spectate!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon3{
@@ -36,7 +36,7 @@ script VictoryCape_Mon3{
     end    
 } 
 script VictoryCape_NPC5{
-    msgbox(format("The Cormoria Pokemon Championships are big business, kid!\pI made a killing shipping supplies to Victory Cape."), MSGBOX_NPC)
+    msgbox(format("The Cormoria Pokemon Championship\nis big business, kid!\pI made a killing by shipping\nsupplies to Victory Cape."), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC6{
@@ -44,12 +44,12 @@ script VictoryCape_NPC6{
     end    
 }
 script VictoryCape_NPC7{
-    msgbox(format("A former Team Somber grunt is in the Championship...\nI'm not sure if they should let criminals participate!"), MSGBOX_NPC)
+    msgbox(format("They say a former Team Somber grunt is in the Championship...\pI'm not sure if they should be leetting criminals participate!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon4{
     playmoncry(SPECIES_YANMEGA, CRY_MODE_NORMAL)
-    msgbox(format("Yanmega looks unfazed. It could probably see through Zoroark's disguises with its many eyes!"), MSGBOX_NPC)
+    msgbox(format("Yanmega looks unfazed. xIt could probably see through Zoroark's disguises with its many eyes!"), MSGBOX_NPC)
     end    
 } 
 script VictoryCape_NPC8{
@@ -57,15 +57,17 @@ script VictoryCape_NPC8{
     end    
 }
 script VictoryCape_Mon5{
-    playmoncry(SPECIES_ZOROARK, CRY_MODE_NORMAL)
-    msgbox(format("Banette is psyching itself up!"), MSGBOX_NPC)
+    playmoncry(SPECIES_CHIMECHO, CRY_MODE_NORMAL)
+    msgbox(format("Chimecho is psyching itself up!"), MSGBOX_NPC)
     end    
 } 
 
 //Viniel 
 script VictoryCape_Viniel{
     lockall
+    speakername("Viniel")
     msgbox(format("Think you rugrats are stronger than a Gym Leader? Manectric and I can take all four of you together! Hahaha!"))
+    speakername(NULL)
     releaseall
     end    
 } 

@@ -246,7 +246,7 @@
       "x": 40,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -259,7 +259,7 @@
       "x": 39,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -272,7 +272,7 @@
       "x": 40,
       "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -285,7 +285,7 @@
       "x": 41,
       "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -298,7 +298,7 @@
       "x": 42,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -311,7 +311,7 @@
       "x": 41,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -346,7 +346,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BANETTE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHIMECHO)",
       "x": 18,
       "y": 41,
       "elevation": 0,
@@ -521,7 +521,7 @@
       "x": 20,
       "y": 38,
       "elevation": 0,
-      "dest_map": "MAP_CHAMPIONSHIP",
+      "dest_map": "MAP_CHAMPIONSHIP_HOTEL",
       "dest_warp_id": "0"
     },
     {
@@ -536,6 +536,37 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 38,
+      "y": 37,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_VictoryCape_Venue"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 38,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_VictoryCape_Hotel"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_VictoryCape_Mart"
+    },
+    {
+      "type": "sign",
+      "x": 29,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WhiteSign_VictoryCape_Main"
+    }
   ]
 }

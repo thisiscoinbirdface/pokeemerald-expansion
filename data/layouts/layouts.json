@@ -5936,7 +5936,7 @@
       "name": "Championship_Museum_Layout",
       "width": 22,
       "height": 14,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_LilycoveMuseum",
       "border_filepath": "data/layouts/Championship_Museum/border.bin",
       "blockdata_filepath": "data/layouts/Championship_Museum/map.bin"

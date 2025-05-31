@@ -6,3 +6,106 @@ mapscripts Championship_Pokemart_MapScripts{}
 //3 NPCs
 
 
+//vendors
+
+script Champ_Mart_A{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Items Corner!\pWe have a wide variety of useful tools to power up your Pokemon!"))
+	waitmessage
+	pokemart(Champ_Mart_Inventory_A)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+    end
+}
+script Champ_Mart_B{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the TM Corner!\pGive your Pokemon an edge in battle with these exclusive TMs!"))
+	waitmessage
+	pokemart(Champ_Mart_Inventory_B)
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+    end
+}
+///garden stall
+script Champ_Mart_C{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Gardenery Corner!\pWe came all the way from Mt. Mirroh to open a stall here!"))
+	waitmessage
+    //choose berry type
+    message(format("Which type of berry would you like?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Normal Effects", "Damage Reduction")
+
+    if (var(VAR_RESULT) == 0){pokemart(GardenShop_Inventory2)}
+    if (var(VAR_RESULT) == 1){pokemart(GardenShop_Inventory3)}
+
+    msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+    end
+}
+//held items
+mart Champ_Mart_Inventory_A{
+    ITEM_LOADED_DICE
+    ITEM_CLEAR_AMULET
+    ITEM_BLUNDER_POLICY
+    ITEM_SAFETY_GOGGLES
+    ITEM_THROAT_SPRAY
+    ITEM_EJECT_BUTTON
+    ITEM_WEAKNESS_POLICY  
+}
+//TMs
+mart Champ_Mart_Inventory_B{
+
+    
+}
+mart Champ_Mart_Inventory_C{
+    
+
+}
+
+
+
+
+///NPCs
+//lady
+script Champ_Mart_NPC_A{
+    msgbox(format("My Lilligant knows Bullet Seed. With the Loaded Dice I bought, we can't lose!"), MSGBOX_NPC)
+    end
+}
+script Champ_Mart_NPC_A_Mon{
+    playmoncry(SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL)
+    msgbox(format("Lilligant is rolling the Loaded Dice in its hand."), MSGBOX_NPC)
+    end
+}
+//man
+script Champ_Mart_NPC_B{
+    msgbox(format("This place must be raking in the cash!"), MSGBOX_NPC)
+    end
+}
+//fisherman
+script Champ_Mart_NPC_C{
+    msgbox(format("It's a shame they don't have anything catering to fishermen."), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
+//Gloria
+script Champ_Mart_NPC_Gloria{
+    speakername("Gloria")
+    msgbox(format("{PLAYER}! A welcome surprise.\nAre you competing this year?\p...\pVery good, very good.\nAll the best - you're a star!\pWhat am I doing here?\pBombirdier wants something but it's unable to decide..."), MSGBOX_NPC)
+    end
+}
+script Champ_Mart_NPC_Bombirdier{
+    playmoncry(SPECIES_BOMBIRDIER, CRY_MODE_NORMAL)
+    msgbox(format("Bombirdier looks confused..."), MSGBOX_NPC)
+    end
+}
+

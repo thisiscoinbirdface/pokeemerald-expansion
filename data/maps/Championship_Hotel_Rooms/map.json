@@ -2,7 +2,7 @@
   "id": "MAP_CHAMPIONSHIP_HOTEL_ROOMS",
   "name": "Championship_Hotel_Rooms",
   "layout": "LAYOUT_CHAMPIONSHIP_HOTEL_ROOMS",
-  "music": "MUS_DUMMY",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_VICTORY_CAPE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

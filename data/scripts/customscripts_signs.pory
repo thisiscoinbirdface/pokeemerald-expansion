@@ -400,3 +400,24 @@ script WhiteSign_Rivetshore_Ranger{
 }
 
 
+
+
+
+
+//Victory Road and Cape
+script WhiteSign_VictoryCape_Main{
+    msgbox(format("Victory Cape\nThe Cormoria Pokémon Championship"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_VictoryCape_Hotel{
+    msgbox(format("The Victory Cape Hotel"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_VictoryCape_Mart{
+    msgbox(format("Victory Cape Dept. Store"), MSGBOX_SIGN)
+    end
+}
+script WhiteSign_VictoryCape_Venue{
+    msgbox(format("Championship Stadium"), MSGBOX_SIGN)
+    end
+}
