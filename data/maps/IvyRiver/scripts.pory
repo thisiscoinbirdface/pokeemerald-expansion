@@ -178,11 +178,11 @@ script LilyPond_Cave_Lapras_Encounter{
             delay(128)
             msgbox(format("..."))
             release
-            applymovement(18, moves(emote_exclamation_mark))
+            applymovement(7, moves(emote_exclamation_mark))
             waitmovement(0)
             delay(30)
             playmoncry(SPECIES_BLASTOISE, CRY_MODE_ENCOUNTER)
-            applymovement(18, moves(walk_fast_left walk_fast_right * 2 walk_fast_left * 2 walk_fast_right face_down))
+            applymovement(7, moves(walk_fast_left walk_fast_right * 2 walk_fast_left * 2 walk_fast_right face_down))
             waitmovement(0)
             msgbox(format("The Blastoise wakes up! It looks healthy now - too healthy!"))
             setwildbattle(SPECIES_BLASTOISE, 48)     
@@ -191,11 +191,11 @@ script LilyPond_Cave_Lapras_Encounter{
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){
-                removeobject(18)
+                removeobject(7)
                 setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
             }
             if (var(VAR_RESULT) == B_OUTCOME_CAUGHT){
-                removeobject(18)
+                removeobject(7)
                 setflag(FLAG_LILYPOND_LAPRAS_ENCOUNTER)
             }            
             if (var(VAR_RESULT) == B_OUTCOME_RAN){
@@ -249,7 +249,7 @@ script LilyPond_Fisherman_A_QuestScript{
     applymovement(1, moves(emote_question_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no? I'm going ahead!"))  
+    msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no?\nI'm going ahead!"))  
     release   
     addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)    
     setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
@@ -283,7 +283,7 @@ script LilyPond_Fisherman_B_QuestScript{
     applymovement(3, moves(emote_question_mark))
     waitmovement(0)
     delay(24)
-    msgbox(format("You have a letter for me? What does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
+    msgbox(format("You have a letter for me?\nWhat does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
     release
     addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
     setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
@@ -342,6 +342,7 @@ script LilyPond_Fisherman_C{
 
     //Startquest
     lockall
+    faceplayer
     msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one.\pDo you want to hear our story?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
@@ -361,15 +362,14 @@ script LilyPond_Fisherman_C{
         end
     }
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
+        msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time.\nI appreciate you listening to me."), MSGBOX_NPC)
         end
     }
 
-    msgbox(format("Don't give up, you say? But what can we do? Search again?\p...\pBut you're right, of course. We mustn't lose hope! I'd like to try searching once again. Perhaps my brothers would too.\pWhat's your name?\p...\p{PLAYER}?\pIf I write them a letter asking them to help search, would you deliver it to them?"))
+    msgbox(format("Don't give up? But what can we do?\nShould we try to search again?\p...\pYou're right, of course. We can't lose hope! I'd like to try searching once again. Perhaps my brothers would too.\pWhat's your name?\p...\p{PLAYER}?\pI'll write them a letter asking for their help in searching.\pWould you deliver it to them?"))
     release
     giveitem(ITEM_FISHERMAN_LETTER)
     startquest(QUEST_LILYPOND_FISHERMAN)
-    setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
     setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
 
     releaseall

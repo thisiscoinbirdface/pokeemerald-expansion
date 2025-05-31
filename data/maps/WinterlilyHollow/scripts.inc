@@ -705,9 +705,8 @@ WinterlilyHollow_MimeJr_3_Text_2:
 
 WinterlilyHollow_MimeJr_3_Text_3:
 # 201 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Mime Jr. doesn't wait for you to catch it\n"
-	.string "- it leaps into the Luxury Ball on its\l"
-	.string "own!.$"
+	.string "Mime Jr. doesn't wait for you - it leaps\n"
+	.string "into the Luxury Ball on its own!$"
 
 WinterlilyHollow_MimeJr_3_Text_4:
 # 204 "data//maps/WinterlilyHollow/scripts.pory"
@@ -715,8 +714,8 @@ WinterlilyHollow_MimeJr_3_Text_4:
 
 WinterlilyHollow_MimeJr_3_Text_5:
 # 209 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Welcome to the team, Mime Jr.! You'll be\n"
-	.string "happy withh all your new friends!$"
+	.string "Welcome to the team, Mime Jr.!\n"
+	.string "You'll be happy with your new friends!$"
 
 WinterlilyHollow_MimeJr_3_Text_6:
 # 212 "data//maps/WinterlilyHollow/scripts.pory"

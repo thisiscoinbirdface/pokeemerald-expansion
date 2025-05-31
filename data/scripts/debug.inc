@@ -169,7 +169,7 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
-	setvar VAR_RIVETSHORE_CEO_QUEST, 0
+	clearflag FLAG_LILYPOND_FISHERMAN_QUEST_START
 	release
 	end
 

@@ -29,7 +29,7 @@ script IvyRiver_Main_Fisherman_AssembleTrigger{
     applymovement(1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox(format("{PLAYER}! You came! Let's start our search...but after so many years, we don't remember that day too clearly.\pThe only thing we remember that day is that it was really cold and we were all dressed in purple. Let's spread out and search the river for anything we can find!"))
+    msgbox(format("{PLAYER}! You came! Let's start our search...but after so many years, we don't remember that day too clearly.\pThe only thing we remember that day is that it was really cold and we were all dressed in purple clothes.\pLet's spread out and search for anything we can find!"))
     release
 
     //fuck off

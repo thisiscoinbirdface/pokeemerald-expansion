@@ -1015,9 +1015,9 @@ IvyRiver_Main_Fisherman_AssembleTrigger_Text_0:
 	.string "don't remember that day too clearly.\p"
 	.string "The only thing we remember that day is\n"
 	.string "that it was really cold and we were all\l"
-	.string "dressed in purple. Let's spread out and\l"
-	.string "search the river for anything we can\l"
-	.string "find!$"
+	.string "dressed in purple clothes.\p"
+	.string "Let's spread out and search for\n"
+	.string "anything we can find!$"
 
 IvyRiver_Main_GreenScarf_Text_0:
 # 115 "data//maps/IvyRiver_Main/scripts.pory"

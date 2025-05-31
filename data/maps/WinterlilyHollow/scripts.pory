@@ -198,7 +198,7 @@ script WinterlilyHollow_MimeJr_3{
         if (var(VAR_RESULT) == 1){
             removeitem(ITEM_LUXURY_BALL)
 
-            msgbox(format("Mime Jr. doesn't wait for you to catch it - it leaps into the Luxury Ball on its own!."))
+            msgbox(format("Mime Jr. doesn't wait for you - it leaps into the Luxury Ball on its own!"))
             removeobject(1)
             givemon(SPECIES_MIME_JR, 25)
             msgbox(format("Mime Jr. joined {PLAYER}'s party!"))
@@ -206,7 +206,7 @@ script WinterlilyHollow_MimeJr_3{
             waitfanfare
             setflag(FLAG_HIDE_HOLLOW_MIMEJR_3)
             setflag(FLAG_HOLLOW_MIMEJR)
-            msgbox(format("Welcome to the team, Mime Jr.! You'll be happy withh all your new friends!"))
+            msgbox(format("Welcome to the team, Mime Jr.!\nYou'll be happy with your new friends!"))
         } else {
             applymovement(1, moves(face_down))
             msgbox(format("Mime Jr. looks hurt. It goes back to staring at its reflection."))
