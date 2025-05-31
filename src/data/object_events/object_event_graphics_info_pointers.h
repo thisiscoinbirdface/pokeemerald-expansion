@@ -561,6 +561,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GUBUKING_FIELD_MOVE] =        &gObjectEventGraphicsInfo_GubukingFieldMove,
     [OBJ_EVENT_GFX_GUBUKING_FISHING] =           &gObjectEventGraphicsInfo_GubukingFishing,
     [OBJ_EVENT_GFX_GUBUKING_WATERING] =          &gObjectEventGraphicsInfo_GubukingWatering,
+    
     [OBJ_EVENT_GFX_LEADER_INGER] =               &gObjectEventGraphicsInfo_LeaderInger,
     [OBJ_EVENT_GFX_LEADER_ARIANA] =              &gObjectEventGraphicsInfo_LeaderAriana,
     [OBJ_EVENT_GFX_LEADER_GLORIA] =              &gObjectEventGraphicsInfo_LeaderGloria,

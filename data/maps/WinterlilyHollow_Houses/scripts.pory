@@ -50,8 +50,8 @@ script WinterlilyHollow_Houses_Armarouge_Reward{
     message(format("It hands you two sets of armor..."))
     waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Malicious Armor", "Auspicious Armor") 
-    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_KINGS_ROCK)}
-    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_QUICK_CLAW)}
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_MALICIOUS_ARMOR)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_AUSPICIOUS_ARMOR)}
     goto(WinterlilyHollow_Houses_Armarouge_Reward_Give)
 }
 

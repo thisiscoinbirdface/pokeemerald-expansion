@@ -12055,27 +12055,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_MAREANIE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_MAREANIE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_TYMPOLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_TYMPOLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_TYMPOLE"
               }
             ]
           }
@@ -12645,9 +12645,9 @@
                 "species": "SPECIES_TYMPOLE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_YANMEGA"
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_YANMA"
               },
               {
                 "min_level": 26,

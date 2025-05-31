@@ -3767,7 +3767,7 @@ F_TRAINER_FEMALE |
 #line 1576
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1577
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 1578
         .aiFlags = AI_FLAG_BASIC_TRAINER,
         .partySize = 1,

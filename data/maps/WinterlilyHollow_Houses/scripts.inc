@@ -97,12 +97,12 @@ WinterlilyHollow_Houses_Armarouge_Reward_4:
 
 WinterlilyHollow_Houses_Armarouge_Reward_2:
 # 53 "data//maps/WinterlilyHollow_Houses/scripts.pory"
-	setvar VAR_0x8006, ITEM_KINGS_ROCK
+	setvar VAR_0x8006, ITEM_MALICIOUS_ARMOR
 	goto WinterlilyHollow_Houses_Armarouge_Reward_1
 
 WinterlilyHollow_Houses_Armarouge_Reward_5:
 # 54 "data//maps/WinterlilyHollow_Houses/scripts.pory"
-	setvar VAR_0x8006, ITEM_QUICK_CLAW
+	setvar VAR_0x8006, ITEM_AUSPICIOUS_ARMOR
 	goto WinterlilyHollow_Houses_Armarouge_Reward_4
 
 

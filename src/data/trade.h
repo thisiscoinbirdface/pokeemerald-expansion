@@ -1030,7 +1030,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Skylar"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_PANGORO
+        .requestedSpecies = SPECIES_BOMBIRDIER
     },
     [INGAME_TRADE_MEOWTH] = //Houndour
     {

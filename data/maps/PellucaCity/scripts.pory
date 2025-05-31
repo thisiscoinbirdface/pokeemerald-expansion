@@ -680,7 +680,7 @@ script PellucaCityFlooded_NPCSaved_B{
     end
 }
 script PellucaCityFlooded_NPCSaved_C{
-    msgbox(format("Brr - the water was so cold! How do Pokémonswim in it?"), MSGBOX_NPC)
+    msgbox(format("Brr - the water was so cold! How do Pokémon swim in it?"), MSGBOX_NPC)
     end
 }
 script PellucaCityFlooded_NPCSaved_D{
@@ -692,8 +692,15 @@ script PellucaCityFlooded_EventScript_TimesUp{
     msgbox(format("The tides rise higher and higher...\nit's too late!"))
     special(ExitSafariMode)
 
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 4)
+
     setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
     clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
+
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
+    setflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A)  
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B)  
@@ -701,6 +708,8 @@ script PellucaCityFlooded_EventScript_TimesUp{
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D)  
 
     setvar(VAR_PELLUCA_MAP_STATE, 1)
+    
+    delay(2)
 
 	warp(MAP_PELLUCA_CITY, 42, 30)
 	waitstate
@@ -718,6 +727,8 @@ script PellucaCityFlooded_EventScript_TimesRunningOut{
 
 script PellucaCityFlooded_Complete_Trigger{
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 8){
+
+    special(ExitSafariMode)
 
     lockall
     applymovement(LOCALID_FL_MAYOR, moves(walk_left face_down))
@@ -775,7 +786,7 @@ script PellucaCityFlooded_Complete_Trigger{
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
-    msgbox(format("Yeah. All that remains is to wait until the water recedes, and then we can go back to normal.\pCome, shall we wait in the PokémonCenter until then?"))   
+    msgbox(format("Yeah. All that remains is to wait until the water recedes, and then we can go back to normal.\pCome, shall we wait in the Pokémon Center until then?"))   
     release
     delay(16)     
 

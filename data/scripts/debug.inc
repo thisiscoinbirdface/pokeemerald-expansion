@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    warp MAP_CARABRUE_TOWN_TENEBRIS_LAB_FINALE, 5, 4
+    warp MAP_ROUTE6, 45, 64
 	release
 	end
 
@@ -169,6 +169,7 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
+	setvar VAR_RIVETSHORE_CEO_QUEST, 0
 	release
 	end
 

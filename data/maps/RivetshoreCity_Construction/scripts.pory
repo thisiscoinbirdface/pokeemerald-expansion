@@ -72,6 +72,9 @@ script RivetshoreCity_Construction_NPC10{
     //2: have you found perrserker yet
     //3: good, take the poke flute
 script RivetshoreCity_Construction_CEO{
+    lockall
+    faceplayer
+    
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 3){
         msgbox(format("How are things, {PLAYER}?\pYou're always welcome to work here if academia bores you."))
     }
