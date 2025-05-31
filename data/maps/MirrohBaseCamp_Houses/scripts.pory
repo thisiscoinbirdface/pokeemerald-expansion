@@ -139,12 +139,22 @@ script MirrohBaseCamp_Houses_MasterballFriend{
 
         dynmultipush("Poké Ball", ITEM_POKE_BALL)
         dynmultipush("Great Ball", ITEM_GREAT_BALL)
-        dynmultipush("Ultra Ball", ITEM_ULTRA_BALL)                                      
+        dynmultipush("Ultra Ball", ITEM_ULTRA_BALL) 
+        dynmultipush("Dive Ball", ITEM_DIVE_BALL)
+        dynmultipush("Heal Ball", ITEM_HEAL_BALL)
+        dynmultipush("Quick Ball", ITEM_QUICK_BALL)
+        dynmultipush("Luxury Ball", ITEM_LUXURY_BALL) 
+        dynmultipush("Dream Ball", ITEM_DREAM_BALL)         
         dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
 
-        if (var(VAR_RESULT) == 1) {setvar(VAR_0x8005, ITEM_POKE_BALL)       bufferitemname(STR_VAR_1, ITEM_POKE_BALL)}
-        if (var(VAR_RESULT) == 2) {setvar(VAR_0x8005, ITEM_GREAT_BALL)      bufferitemname(STR_VAR_1, ITEM_GREAT_BALL)}
-        if (var(VAR_RESULT) == 3) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)      bufferitemname(STR_VAR_1, ITEM_ULTRA_BALL)}
+        if (var(VAR_RESULT) == ITEM_POKE_BALL) {setvar(VAR_0x8005, ITEM_POKE_BALL)       bufferitemname(STR_VAR_1, ITEM_POKE_BALL)}
+        if (var(VAR_RESULT) == ITEM_GREAT_BALL) {setvar(VAR_0x8005, ITEM_GREAT_BALL)      bufferitemname(STR_VAR_1, ITEM_GREAT_BALL)}
+        if (var(VAR_RESULT) == ITEM_ULTRA_BALL) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)      bufferitemname(STR_VAR_1, ITEM_ULTRA_BALL)}
+        if (var(VAR_RESULT) == ITEM_DIVE_BALL) {setvar(VAR_0x8005, ITEM_DIVE_BALL)      bufferitemname(STR_VAR_1, ITEM_DIVE_BALL)}
+        if (var(VAR_RESULT) == ITEM_HEAL_BALL) {setvar(VAR_0x8005, ITEM_HEAL_BALL)       bufferitemname(STR_VAR_1, ITEM_HEAL_BALL)}
+        if (var(VAR_RESULT) == ITEM_QUICK_BALL) {setvar(VAR_0x8005, ITEM_QUICK_BALL)      bufferitemname(STR_VAR_1, ITEM_QUICK_BALL)}
+        if (var(VAR_RESULT) == ITEM_LUXURY_BALL) {setvar(VAR_0x8005, ITEM_LUXURY_BALL)      bufferitemname(STR_VAR_1, ITEM_LUXURY_BALL)}
+        if (var(VAR_RESULT) == ITEM_DREAM_BALL) {setvar(VAR_0x8005, ITEM_DREAM_BALL)      bufferitemname(STR_VAR_1, ITEM_DREAM_BALL)}
 
         //check if you have the ball
         checkitem(VAR_0x8005)
