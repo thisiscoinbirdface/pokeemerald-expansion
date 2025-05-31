@@ -847,11 +847,14 @@ script Common_EventScript_HyperTrainer{
         waitstate
         if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
             release
+            fadedefaultbgm
+            releaseall
+            end
         } else {
             bufferpartymonnick(STR_VAR_1, VAR_0x8004)
             message(format("{STR_VAR_1} is absorbing memories from the statue...what's it seeing?"))
             waitmessage
-            dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defence", "Special Attack", "Special Defence", "Speed")
+            dynmultichoice(0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defence", "Special Attack", "Special Defence", "Speed", "Cancel")
             
             if (var(VAR_RESULT) == 0){
                 canhypertrain(STAT_HP, VAR_0x8004)
@@ -906,6 +909,12 @@ script Common_EventScript_HyperTrainer{
                     end
                 }
                 hypertrain(STAT_SPEED, VAR_0x8004)
+            }
+            if (var(VAR_RESULT) == 6){
+                release
+                fadedefaultbgm
+                releaseall
+                end
             }
 
             release
