@@ -27,7 +27,6 @@ script Common_EventScript_MintVendingMachine{
         end
     }
     goto(MintVendingMachine_CheckBadge)
-
 }
 
 script MintVendingMachine_CheckBadge{

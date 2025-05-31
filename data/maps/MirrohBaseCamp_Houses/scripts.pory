@@ -68,7 +68,15 @@ script MirrohBaseCamp_Houses_MasterballGuy{
 script MirrohBaseCamp_Houses_MasterballFriend{
     lockall
     faceplayer
-    msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too! I can change the Poké Balls of any of your Pokémon. Would you like me to?"), MSGBOX_YESNO)
+
+    if (flag(FLAG_SKIP_BALL_CHANGER)){
+        
+    } else {
+        setflag(FLAG_SKIP_BALL_CHANGER)
+        msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too!"))
+    }
+
+    msgbox(format("I can change the Poké Balls of your Pokémon if you bring me the Poké Ball!\pWould you like me to?"), MSGBOX_YESNO)
 
     //Change Pokeballs
     if (var(VAR_RESULT) == 1){
@@ -76,23 +84,32 @@ script MirrohBaseCamp_Houses_MasterballFriend{
         waitstate
         message(format("Now which Poké Ball should I switch to?"))
 
-        bufferitemname(STR_VAR_1, ITEM_POKE_BALL)
-        dynmultipush("{STR_VAR_1}", ITEM_POKE_BALL)
-        bufferitemname(STR_VAR_2, ITEM_GREAT_BALL)
-        dynmultipush("{STR_VAR_2}", ITEM_GREAT_BALL)
-        bufferitemname(STR_VAR_3, ITEM_ULTRA_BALL)
-        dynmultipush("{STR_VAR_3}", ITEM_ULTRA_BALL)
+        dynmultipush("Poké Ball", ITEM_POKE_BALL)
+        dynmultipush("Great Ball", ITEM_GREAT_BALL)
+        dynmultipush("Ultra Ball", ITEM_ULTRA_BALL)                                      
         dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
 
-        if (var(VAR_RESULT) == 1) {setvar(VAR_0x8005, ITEM_POKE_BALL)}
-        if (var(VAR_RESULT) == 2) {setvar(VAR_0x8005, ITEM_GREAT_BALL)}
-        if (var(VAR_RESULT) == 3) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)}
+        if (var(VAR_RESULT) == 1) {setvar(VAR_0x8005, ITEM_POKE_BALL)       bufferitemname(STR_VAR_1, ITEM_POKE_BALL)}
+        if (var(VAR_RESULT) == 2) {setvar(VAR_0x8005, ITEM_GREAT_BALL)      bufferitemname(STR_VAR_1, ITEM_GREAT_BALL)}
+        if (var(VAR_RESULT) == 3) {setvar(VAR_0x8005, ITEM_ULTRA_BALL)      bufferitemname(STR_VAR_1, ITEM_ULTRA_BALL)}
 
+        //check if you have the ball
+        checkitem(VAR_0x8005)
+        
+        if (var(VAR_RESULT) == 0){
+            msgbox(format("You don't have a {STR_VAR_1}.\pI can switch Poké Balls but I can't make them appear out of thin air!"))
+            releaseall
+            end
+        }
+        removeitem(VAR_0x8005)
+        msgbox(format("{PLAYER} handed a {STR_VAR_1} over to the craftsman."), MSGBOX_SIGN)
         special(SetMonPokeball)
         msgbox(format("...\p..."))
         release
         playse(SE_BALL)
         msgbox(format("...and done! Come back if you need me to do any more!"))
+    } else {
+        msgbox(format("Come back any time!"))
     }
     
     releaseall
