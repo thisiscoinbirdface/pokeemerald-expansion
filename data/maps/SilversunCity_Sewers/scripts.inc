@@ -914,7 +914,7 @@ SilversunCity_Sewers_Market_Muk_Reward_Text_0:
 
 SilversunCity_Sewers_Market_Muk_Reward_Text_1:
 # 390 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.string "Ability Pill$"
+	.string "Ability Patch$"
 
 SilversunCity_Sewers_Market_Muk_Reward_Text_2:
 # 390 "data//maps/SilversunCity_Sewers/scripts.pory"

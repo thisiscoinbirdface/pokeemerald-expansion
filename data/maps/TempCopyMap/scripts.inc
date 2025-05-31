@@ -1496,56 +1496,59 @@ Common_EventScript_Dugtrio_ToRoute3::
 	faceplayer
 # 930 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
+# 931 "data//maps/TempCopyMap/scripts.pory"
+	release
 # 932 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Common_EventScript_Dugtrio_ToRoute3_2
 Common_EventScript_Dugtrio_ToRoute3_1:
-# 941 "data//maps/TempCopyMap/scripts.pory"
+# 940 "data//maps/TempCopyMap/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_Dugtrio_ToRoute3_2:
-# 933 "data//maps/TempCopyMap/scripts.pory"
-	release
-# 935 "data//maps/TempCopyMap/scripts.pory"
+# 934 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 936 "data//maps/TempCopyMap/scripts.pory"
+# 935 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 937 "data//maps/TempCopyMap/scripts.pory"
+# 936 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL
-# 938 "data//maps/TempCopyMap/scripts.pory"
+# 937 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 939 "data//maps/TempCopyMap/scripts.pory"
+# 938 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_ROUTE3_UNDERPASS, 43, 26
 	goto Common_EventScript_Dugtrio_ToRoute3_1
 
 
 Common_EventScript_Dugtrio_ToGalecrest::
-# 945 "data//maps/TempCopyMap/scripts.pory"
+# 944 "data//maps/TempCopyMap/scripts.pory"
 	lockall
-# 946 "data//maps/TempCopyMap/scripts.pory"
+# 945 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
-# 947 "data//maps/TempCopyMap/scripts.pory"
+# 946 "data//maps/TempCopyMap/scripts.pory"
 	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
-# 949 "data//maps/TempCopyMap/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Common_EventScript_Dugtrio_ToGalecrest_1
-	return
-
-Common_EventScript_Dugtrio_ToGalecrest_1:
-# 950 "data//maps/TempCopyMap/scripts.pory"
+# 947 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 952 "data//maps/TempCopyMap/scripts.pory"
-	hidefollower
-# 953 "data//maps/TempCopyMap/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 954 "data//maps/TempCopyMap/scripts.pory"
-	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL
-# 955 "data//maps/TempCopyMap/scripts.pory"
-	delay 30
+# 948 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_Dugtrio_ToGalecrest_2
+Common_EventScript_Dugtrio_ToGalecrest_1:
 # 956 "data//maps/TempCopyMap/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_Dugtrio_ToGalecrest_2:
+# 950 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 951 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 952 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_DUGTRIO_ALOLA, CRY_MODE_NORMAL
+# 953 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 954 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_GALECREST_CITY, 31, 65
-	return
+	goto Common_EventScript_Dugtrio_ToGalecrest_1
 
 
 Common_EventScript_Tauros_IvyRiver::
