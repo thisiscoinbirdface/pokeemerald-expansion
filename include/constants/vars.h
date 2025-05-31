@@ -287,7 +287,7 @@
     #define VAR_UNCHARTED_ISLAND_CUTSCENES                   0x4062 // Unused Var
     #define VAR_CHAMP_STAGE                                  0x40B8 // Unused Var (0: not start, 1,2,3,4,5, 6 - win)
     #define VAR_CELEBI                                       0x40BB // Unused Var
-    #define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
+    #define VAR_MASTERBALL_QUEST                             0x40DB // Unused Var
     #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 
 

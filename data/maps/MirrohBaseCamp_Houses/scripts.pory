@@ -61,7 +61,60 @@ script MirrohBaseCamp_Houndstone{
 
 //masterball house
 script MirrohBaseCamp_Houses_MasterballGuy{
-    msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
+    if (var(VAR_MASTERBALL_QUEST) == 2){
+        msgbox(format("Hello {PLAYER}!")) 
+    }
+
+    if (var(VAR_MASTERBALL_QUEST) == 1){
+        msgbox(format("Did you get everything?"), MSGBOX_NPC)
+
+        checkitem(ITEM_CASTELIACONE)
+        if (var(VAR_RESULT) == 0) {
+            msgbox(format("You didn't bring the Mirroh Cone!\pCome back with everything."), MSGBOX_NPC) 
+            end
+        }
+        checkitem(ITEM_OLD_GATEAU)
+        if (var(VAR_RESULT) == 0) {
+            msgbox(format("You didn't bring the Apple Pie!\pCome back with everything."), MSGBOX_NPC) 
+            end
+        }        
+        checkitem(ITEM_LAVA_COOKIE)
+        if (var(VAR_RESULT) == 0) {
+            msgbox(format("You didn't bring the Lava Cookie!\pCome back with everything."), MSGBOX_NPC) 
+            end
+        }        
+
+        //if you have everything
+        removeitem(ITEM_CASTELIACONE)
+        removeitem(ITEM_OLD_GATEAU)
+        removeitem(ITEM_LAVA_COOKIE)
+
+        msgbox(format("Aha! We've got everything we need right here...\p...so first I need the crust of the pie...mmm, delicious...\p...the ice cream is actually a binding agent\n...bound to my mouth, yes...\p...and this cookie, you see, holds the shell...tasy shell...\p..."))
+        playse(SE_BALL)
+        msgbox(format("And there we go! A brand-new Master Ball, just for you!\pNo, I didn't pull it out of my pocket. Are you seeing things?"), MSGBOX_NPC)
+        giveitem(ITEM_MASTER_BALL)
+        setvar(VAR_MASTERBALL_QUEST, 2)
+    }
+
+    if (var(VAR_MASTERBALL_QUEST) == 0){
+        msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
+        setvar(VAR_0x8006, ITEM_MASTER_BALL)
+        showitemdescription
+        msgbox(format("A few years ago, I finally perfected my opus magnum - the Master Ball!\pLooks beautiful, doesn't it?"), MSGBOX_NPC)
+        hideitemdescription
+        msgbox(format("Since you're Rue's assistant and he's an old friend, how about I do you a favour?\pI can make you one...if you get me the right crafting components!\pLet's see...I'll need...\p...one Apple Pie...\p...one Lava Cookie...\p...and one Mirroh Cone!"))
+        release
+        delay(16)
+        applymovement(2, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Of course these aren't for me!\nThese are for the Master Ball!\pAre you accusing me of using you?\p...\pAhem. I'll be waiting here!"))
+        release
+
+        //quest
+        setvar(VAR_MASTERBALL_QUEST, 1)
+    }
+    releaseall
     end
 }
 
