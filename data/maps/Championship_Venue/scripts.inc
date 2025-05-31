@@ -227,8 +227,12 @@ Champ_Venue_Tauros::
 
 Champ_Venue_NoticeBoard::
 # 167 "data//maps/Championship_Venue/scripts.pory"
+	lockall
+# 168 "data//maps/Championship_Venue/scripts.pory"
 	msgbox Champ_Venue_NoticeBoard_Text_0
-	return
+# 169 "data//maps/Championship_Venue/scripts.pory"
+	releaseall
+	end
 
 
 # 89 "data//maps/Championship_Venue/scripts.pory"
@@ -467,7 +471,7 @@ Champ_Venue_Tauros_Text_0:
 	.string "It huffs, disappointed.$"
 
 Champ_Venue_NoticeBoard_Text_0:
-# 167 "data//maps/Championship_Venue/scripts.pory"
+# 168 "data//maps/Championship_Venue/scripts.pory"
 	.string "{PLAYER} scanned the noticeboard...\p"
 	.string "...\p"
 	.string "ROUND 1 PAIRINGS\n"

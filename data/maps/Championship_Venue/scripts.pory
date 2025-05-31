@@ -164,6 +164,9 @@ script Champ_Venue_Tauros{
 
 //Noticeboard
 script Champ_Venue_NoticeBoard{
+    lockall
     msgbox(format("{PLAYER} scanned the noticeboard...\p...\pROUND 1 PAIRINGS\nKohla vs. Brent...\l...\l...Gabrielle vs. Anaya\l...\l...\l...Aha!\p{PLAYER} vs. Chara."))
+    releaseall
+    end
 }
 

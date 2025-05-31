@@ -5930,6 +5930,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Cormoria_HallOfFame/border.bin",
       "blockdata_filepath": "data/layouts/Cormoria_HallOfFame/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_MUSEUM",
+      "name": "Championship_Museum_Layout",
+      "width": 22,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/Championship_Museum/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_Museum/map.bin"
     }
   ]
 }
