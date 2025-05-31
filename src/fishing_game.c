@@ -3,6 +3,7 @@
 #include "fishing_game.h"
 #include "fishing_game_species_behavior.h"
 #include "fishing_game_treasures.h"
+#include "battle.h"
 #include "battle_main.h"
 #include "battle_setup.h"
 #include "battle_transition.h"
