@@ -213,7 +213,7 @@ MirrohBaseCamp_Houses_MasterballFriend_1:
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_6
 # 181 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_11
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_2
 MirrohBaseCamp_Houses_MasterballFriend_5:
 # 184 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
@@ -228,28 +228,28 @@ MirrohBaseCamp_Houses_MasterballFriend_6:
 # 137 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	waitstate
 # 138 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	message MirrohBaseCamp_Houses_MasterballFriend_Text_2
-# 140 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_3, ITEM_POKE_BALL
-# 141 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_4, ITEM_GREAT_BALL
-# 142 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_5, ITEM_ULTRA_BALL
-# 143 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_6, ITEM_DIVE_BALL
-# 144 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_7, ITEM_HEAL_BALL
-# 145 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_8, ITEM_QUICK_BALL
-# 146 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_9, ITEM_LUXURY_BALL
-# 147 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_10, ITEM_DREAM_BALL
-# 148 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
-# 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	compare VAR_RESULT, 0
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_10
+# 144 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	message MirrohBaseCamp_Houses_MasterballFriend_Text_3
+# 146 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_4, ITEM_POKE_BALL
+# 147 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_5, ITEM_GREAT_BALL
+# 148 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_6, ITEM_ULTRA_BALL
+# 149 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_7, ITEM_DIVE_BALL
+# 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_8, ITEM_HEAL_BALL
+# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_9, ITEM_QUICK_BALL
+# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_10, ITEM_LUXURY_BALL
+# 153 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultipush MirrohBaseCamp_Houses_MasterballFriend_Text_11, ITEM_DREAM_BALL
+# 154 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	dynmultistack 0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
 # 156 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	compare VAR_RESULT, ITEM_POKE_BALL
 	goto_if_eq MirrohBaseCamp_Houses_MasterballFriend_13
@@ -304,9 +304,9 @@ MirrohBaseCamp_Houses_MasterballFriend_33:
 	goto MirrohBaseCamp_Houses_MasterballFriend_5
 
 MirrohBaseCamp_Houses_MasterballFriend_10:
-# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_11
-# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+# 139 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	msgbox MirrohBaseCamp_Houses_MasterballFriend_Text_2
+# 140 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -556,44 +556,44 @@ MirrohBaseCamp_Houses_MasterballFriend_Text_1:
 	.string "Would you like me to?$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_2:
-# 138 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Now which Poké Ball should I switch to?$"
+# 139 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Come back any time!$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_3:
-# 140 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Poké Ball$"
+# 144 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Now which Poké Ball should I switch to?$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_4:
-# 141 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Great Ball$"
+# 146 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Poké Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_5:
-# 142 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Ultra Ball$"
+# 147 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Great Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_6:
-# 143 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Dive Ball$"
+# 148 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Ultra Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_7:
-# 144 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Heal Ball$"
+# 149 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Dive Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_8:
-# 145 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Quick Ball$"
+# 150 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Heal Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_9:
-# 146 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Luxury Ball$"
+# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Quick Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_10:
-# 147 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Dream Ball$"
+# 152 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Luxury Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_11:
-# 151 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Come back any time!$"
+# 153 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
+	.string "Dream Ball$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_12:
 # 169 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
