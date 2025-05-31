@@ -1953,6 +1953,7 @@ static void SpriteCB_Other(struct Sprite *sprite)
 static void CB2_FishingBattleTransition(void)
 {
     FreeMonIconPalettes();
+    gBattleTypeFlags = 0;
     PlayBattleBGM(); // Play the battle music.
     BattleTransition_Start(B_TRANSITION_WAVE); // Start the battle transition. The only other transitions that work properly here are B_TRANSITION_SLICE and B_TRANSITION_GRID_SQUARES.
     SetMainCallback2(CB2_FishingBattleStart);
@@ -2129,6 +2130,12 @@ void Task_DoReturnToFieldFishTreasure(u8 taskId)
                         case POCKET_ITEMS:
                             StringCopy(gStringVar3, gText_Items);
                             break;
+                        case POCKET_MEDICINE:
+                            StringCopy(gStringVar3, gText_Medicine);
+                            break;
+                        case POCKET_BATTLE_ITEMS:
+                            StringCopy(gStringVar3, gText_BattleItems);
+                        break;
                         case POCKET_POKE_BALLS:
                             StringCopy(gStringVar3, gText_Poke_Balls);
                             break;
