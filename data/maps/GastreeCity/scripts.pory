@@ -158,7 +158,7 @@ script GastreeCity_Shard_Trigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
     waitmovement(0)
     delay(16)
-    msgbox(format("I've been researching these statues for many years.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors grade them from E- to S+.\pNormally, there's no way to change them.\pBut a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
+    msgbox(format("I'm an archaeologist researching these ancient statues.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors will grade them from E- to S.\pNormally, there's no way to change them.\pBut a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
     release
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
@@ -206,7 +206,7 @@ script GastreeCity_Shard_Trigger{
     release
     delay(16)
     
-    msgbox(format("Oh no! I'm so sorry! I really didn't mean to - I promise!"))
+    msgbox(format("Oh no! I'm so sorry!\nI really didn't mean to - I promise!"))
     release
     delay(16)
     applymovement(LOCALID_TRAINER, moves(face_up))
@@ -223,17 +223,52 @@ script GastreeCity_Shard_Trigger{
     msgbox(format("keee..."))
     release
     delay(16)
+
+    applymovement(LOCALID_OLD_WOMAN, moves(jump_in_place_left * 2))
+    waitmovement(0)
+    msgbox(format("You think a sorry will suffice!\nYou blithering idiot!"))
+    release
+    delay(16)
+
+    applymovement(LOCALID_TRAINER, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Yikes, she's getting too worked up.\nBergmite - let's go!"))
+    release
+    applymovement(LOCALID_TRAINER, moves(walk_up * 7))
+    applymovement(LOCALID_BERG, moves(walk_up * 7))
+    waitmovement(0)
+    removeobject(LOCALID_TRAINER)
+    removeobject(LOCALID_BERG)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     applymovement(LOCALID_OLD_WOMAN, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("...\pSigh. Such a loss to culture and history..."))
+    msgbox(format("Such a loss to culture and history..."))
     release
     delay(16)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))    
     applymovement(LOCALID_OLD_WOMAN, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox(format("I can't let this happen any more. We must preserve these statues.\pI'm now too old to go around Cormoria, but you, my dear, are young and able! You must help me preserve these statues!\pFind all the statues around Cormoria and come back to me."))
+    msgbox(format("I can't let this happen any more. We must preserve these statues.\pI'm now too old to go around Cormoria, but you, my dear, are young and able! You must help me preserve these statues!\pTake this."))
     release
+    
+    applymovement(LOCALID_OLD_WOMAN, moves(walk_down walk_left face_down))
+    waitmovement(0)
+    delay(8)
+    giveitem(ITEM_ARCHAEOLENS)   
+
+    msgbox(format("This is an Archaelens. It scans and records ancient historical artifacts.\pNow that this statue is destroyed, there are ten statues left. \pScan all the statues around Cormoria and come back to me.\pA task of vital importance!\nI won't take no for an answer!"))
+    release
+
+    setflag(FLAG_SHRINE_QUEST)
+    startquest(QUEST_ANCIENT_STATUES)
 
     releaseall
     end

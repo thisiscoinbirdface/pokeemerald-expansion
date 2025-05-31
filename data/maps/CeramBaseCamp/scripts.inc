@@ -410,6 +410,20 @@ CeramBaseCamp_TalonFlame_2:
 	goto CeramBaseCamp_TalonFlame_1
 
 
+CeramBaseCamp_BergmiteTrainer::
+# 288 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_BergmiteTrainer_Text_0, MSGBOX_NPC
+	end
+
+
+CeramBaseCamp_Bergmite::
+# 292 "data//maps/CeramBaseCamp/scripts.pory"
+	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
+# 293 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox CeramBaseCamp_Bergmite_Text_0, MSGBOX_NPC
+	end
+
+
 # 11 "data//maps/CeramBaseCamp/scripts.pory"
 CeramBaseCamp_RedBlockGym_Movement_0:
 # 11 "data//maps/CeramBaseCamp/scripts.pory"
@@ -612,3 +626,20 @@ CeramBaseCamp_TalonFlame_Text_0:
 # 277 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Talonflame's about to fly to the peak!\n"
 	.string "Hitch a ride?$"
+
+CeramBaseCamp_BergmiteTrainer_Text_0:
+# 288 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "Aren't you the trainer with that old\n"
+	.string "archaeologist?\p"
+	.string "Yeah, you are!\p"
+	.string "...\p"
+	.string "I feel bad for what I did...\n"
+	.string "but it was an honest mistake!\p"
+	.string "We just...we trained too hard!\n"
+	.string "We want to be the strongest.$"
+
+CeramBaseCamp_Bergmite_Text_0:
+# 293 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "keee!!!\p"
+	.string "Bergmite seems apologetic.\p"
+	.string "It's okay, Bergmite!$"

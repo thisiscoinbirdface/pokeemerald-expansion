@@ -1360,7 +1360,7 @@ const u8 gText_SideQuestName_9[] = _("Precious Pearls");
 const u8 gText_SideQuestName_10[] = _("Malevolent Masterpiece");
 const u8 gText_SideQuestName_11[] = _("I Can't Find My Wife!");
 const u8 gText_SideQuestName_12[] = _("A Chef's Icy Troubles");
-const u8 gText_SideQuestName_13[] = _("Fishy Business");
+const u8 gText_SideQuestName_13[] = _("Historical Preservation");
 const u8 gText_SideQuestName_14[] = _("Pelluca's Leadership Tussle");
 const u8 gText_SideQuestName_15[] = _("The Mayor's White Hair");
 const u8 gText_SideQuestName_16[] = _("The Healers Need Help!");
@@ -1392,7 +1392,7 @@ const u8 gText_SideQuestDesc_9[] = _("A rich lady in Galecrest City has had her\
 const u8 gText_SideQuestDesc_10[] = _("A (self-proclaimed) famous artist in\nSilversun City wants Black Sludge to create\nthe perfect shade of black paint.");
 const u8 gText_SideQuestDesc_11[] = _("A man in the Silversun Sewers has gotten\nseparated from his wife. If I don't hurry, she\nmight get attacked by the Sewer Scourge!");
 const u8 gText_SideQuestDesc_12[] = _("The refrigerators at the Pelluca Restaurant\nare broken and their ingredients are going\nbad. I need to bring them a Nevermelt Ice.");
-const u8 gText_SideQuestDesc_13[] = _("A Mega Sharpedo is terrorising the Pelluca\nFishery. At this rate, they'll shut down!\nI need to confront the Mega Sharpedo.");
+const u8 gText_SideQuestDesc_13[] = _("An archaeologist in Gastree City has asked\nme to find all ten ancient statues across\nCormoria and scan them with the Archaeolens!");
 const u8 gText_SideQuestDesc_14[] = _("Pelluca City is in trouble! The mayor and\nthe Qwilsquad Gang leader are tussling for\npower and the city is suffering!");
 const u8 gText_SideQuestDesc_15[] = _("I need to find 5 Corsolas that were\n washed ashore in Pelluca City and\nsend them back into the river!");
 const u8 gText_SideQuestDesc_16[] = _("A Chansey is lost inside Mt Mirroh!\nThey've always healed me when I needed it,\nand now it's my turn to repay them!");
@@ -1526,7 +1526,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest3_Desc2[] = _("Scientists at the Ivy River Ranger Institute\nneed specimens of different Pokémon to study\ntheir potential for Mega Evolution.");
     const u8 gText_SubQuest3_Desc3[] = _("This is the final test I need to complete\nto become a fully-fledged Pokémon Ranger.\nCan I catch 100 different Pokémon?");
 
-    //CORMORIA HISTORY (ONGOING BIG SIDE QUEST)
+    //PELLUCA MAIN (ONGOING BIG SIDE QUEST)
     const u8 gText_SubQuest4_Name1[] = _("Help the Mayor!");
     const u8 gText_SubQuest4_Name2[] = _("Save the Citizens!");
 

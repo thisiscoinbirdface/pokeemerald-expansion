@@ -40,8 +40,8 @@
 #define QUEST_SILVERSUN_ARTIST          9
 #define QUEST_SILVERSUN_WIFE            10
 #define QUEST_PELLUCA_RESTAURANT        11
-#define QUEST_PELLUCA_FISHERY           12
-#define QUEST_CORMORIA_HISTORY          13
+#define QUEST_ANCIENT_STATUES           12
+#define QUEST_PELLUCA_MAIN              13
 #define QUEST_PELLUCA_MAYOR             14
 #define QUEST_MIRROH_NURSE_CHANSEY      15
 #define QUEST_LILYPOND_FISHERMAN        16

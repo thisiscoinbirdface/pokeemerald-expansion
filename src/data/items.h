@@ -14338,4 +14338,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_FreshWater,
     },    
 
+    [ITEM_ARCHAEOLENS] =
+    {
+        .name = _("Archaeolens"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A unique machine\n"
+            "that can scan and\n"
+            "record statues."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_SilphScope,
+        .iconPalette = gItemIconPalette_SilphScope,
+    },    
+
+
 };

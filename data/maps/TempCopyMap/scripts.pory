@@ -733,19 +733,111 @@ script PellucaCity_Greta_Item_C{
 
 
 
-script Common_EventScript_HyperTrainer{
+
+
+
+
+
+
+
+
+
+
+//List of statues: (4 per line) (10 total)
+//route1, ceram, galecrest/route 5, celebi
+//sewers, hoya river north, route 6 (surf), graveyard
+//lily pond, route 8
+
+
+script AncientStatue_Gastree{
+    msgbox(format("It's a statue of an ancient Pokémon..."))
+    release
+    end
+}
+
+script AncientStatue_Ceram{
     lockall
-    faceplayer
+    if (flag(FLAG_STATUE_CERAM)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_CERAM) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Galecrest{
+    lockall
+    if (flag(FLAG_STATUE_GALECREST)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_GALECREST) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Celebi{
+    lockall
+    if (flag(FLAG_STATUE_CELEBI)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_CELEBI) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Sewers{
+    lockall
+    if (flag(FLAG_STATUE_SEWERS)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_SEWERS) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Route6{
+    lockall
+    if (flag(FLAG_STATUE_ROUTE6)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_ROUTE6) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Graveyard{
+    lockall
+    if (flag(FLAG_STATUE_GRAVEYARD)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_GRAVEYARD) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_LilyPond{
+    lockall
+    if (flag(FLAG_STATUE_LILYPOND)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_LILYPOND) goto(AncientStatue_FirstTime)}
+    end    
+}
+script AncientStatue_Route8{
+    lockall
+    if (flag(FLAG_STATUE_ROUTE8)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_ROUTE8) goto(AncientStatue_FirstTime)}
+    end    
+}
+
+
+
+
+
+
+
+
+
+script AncientStatue_FirstTime{
+    addvar(VAR_STATUE_COUNT, 1)
+    buffernumberstring(STR_VAR_2, VAR_STATUE_COUNT)
+    msgbox(format("It's a statue of an ancient Pokémon...\p{PLAYER} found {STR_VAR_2} of 10 statues.\pScanning the ancient statue\nwith the Archaeolens..."))
+    playse(SE_CLICK)
+    msgbox(format("Done!"))
+    goto(AncientStatue_CheckRareShard) 
+}
+
+script AncientStatue_CheckRareShard{
 
     checkitem(ITEM_RARE_SHARD)
     if (var(VAR_RESULT) == 0){
-        msgbox(format("It's a statue of an ancient Pokémon."), MSGBOX_NPC)
+        releaseall
         end
     }
 
+    goto(Common_EventScript_HyperTrainer)
+}
+
+
+script Common_EventScript_HyperTrainer{
+
     fadenewbgm(MUS_B_PYRAMID_TOP)
 
-    msgbox(format("It's a statue of an ancient Pokémon...\pFrom within the bag, the Rare Shard begins to vibrate...\pTake out the Rare Shard from the bag?"), MSGBOX_YESNO)
+    msgbox(format("From within the bag, the Rare Shard begins to vibrate...\pTake out the Rare Shard from the bag?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
 
@@ -828,7 +920,7 @@ script Common_EventScript_HyperTrainer{
         }
     }
     fadedefaultbgm
-    release
+    releaseall
     end
 }
 

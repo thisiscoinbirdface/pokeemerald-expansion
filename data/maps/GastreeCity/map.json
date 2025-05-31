@@ -88,7 +88,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GastreeCity_NPC8",
-      "flag": "0"
+      "flag": "FLAG_SHRINE_QUEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -153,7 +153,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GastreeCity_NPC_Keckleon",
-      "flag": "0"
+      "flag": "FLAG_SHRINE_QUEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
@@ -282,13 +282,13 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Common_EventScript_HyperTrainer",
+      "script": "AncientStatue_Gastree",
       "flag": "FLAG_SHRINE_QUEST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-      "x": 51,
-      "y": 41,
+      "x": 37,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -383,8 +383,8 @@
     },
     {
       "type": "trigger",
-      "x": 50,
-      "y": 41,
+      "x": 36,
+      "y": 30,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

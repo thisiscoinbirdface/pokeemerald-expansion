@@ -4825,7 +4825,7 @@
       "id": "LAYOUT_VILETHORN_WOODS",
       "name": "VilethornWoods_Layout",
       "width": 60,
-      "height": 60,
+      "height": 90,
       "primary_tileset": "gTileset_Vilethorn",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/VilethornWoods/border.bin",

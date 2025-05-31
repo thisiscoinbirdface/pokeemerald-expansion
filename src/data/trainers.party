@@ -3799,26 +3799,44 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Edge
 
 === TRAINER_CHAMPIONSHIP_C ===
-Name: Freya
-Class: Fairy Lady
-Pic: Fairy Lady
+Name: Berger
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Prediction / Ace Pokemon / Force Setup First Turn
 Mugshot: Green
 
-Magneton
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ninetales-Alola @ Icy Rock
+Ability: Snow Warning
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aurora Veil
+- Moonblast
+- Blizzard
+- Freeze-Dry
 
-Loudred
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Baxcalibur
+Ability: Ice Body
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magneton
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Mr. Rime
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tinkaton
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash-Galar
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Avalugg-Hisui
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_D ===
 Name: Gabrielle

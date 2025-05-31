@@ -180,6 +180,19 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route1_TrainerBattle_Strong_C",
       "flag": "FLAG_HIDE_ROUTE1_STRONG"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE",
+      "x": 24,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_HyperTrainer",
+      "flag": "FLAG_SHRINE_QUEST"
     }
   ],
   "warp_events": [
@@ -237,8 +250,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 24,
-      "y": 16,
+      "x": 23,
+      "y": 18,
       "elevation": 0,
       "item": "ITEM_RARE_SHARD",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE1_A"

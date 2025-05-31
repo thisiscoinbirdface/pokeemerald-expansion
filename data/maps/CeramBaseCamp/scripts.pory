@@ -281,3 +281,15 @@ script CeramBaseCamp_TalonFlame{
     releaseall
     end
 }
+
+
+
+script CeramBaseCamp_BergmiteTrainer{
+    msgbox(format("Aren't you the trainer with that old archaeologist?\pYeah, you are!\p...\pI feel bad for what I did...\nbut it was an honest mistake!\pWe just...we trained too hard!\nWe want to be the strongest."), MSGBOX_NPC)
+    end
+}
+script CeramBaseCamp_Bergmite{
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    msgbox(format("keee!!!\pBergmite seems apologetic.\pIt's okay, Bergmite!"), MSGBOX_NPC)
+    end
+}
