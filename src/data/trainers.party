@@ -4054,13 +4054,65 @@ Items: Full Restore
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Slugma
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Typhlosion-Hisui
+Level: 65
+Ability: Frisk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Shadow Ball
+- Infernal Parade
+- Swift
 
-Wingull
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Aggron @ Aggronite
+Level: 69
+Ability: Rock Head
+Relaxed Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Head
+- Dragon Claw
+- Earthquake
+- Strength
+
+Dragapult
+Level: 66
+Ability: Cursed Body
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Claw
+- Bite
+- Dragon Darts
+- Phantom Force
+
+Obstagoon
+Level: 66
+Ability: Defiant
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Pin Missile
+- Cross Chop
+- Night Slash
+
+Seismitoad
+Level: 66
+Ability: Water Absorb
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dive
+- Aqua Ring
+- Muddy Water
+- Drain Punch
+
+Sinistcha
+Level: 66
+Ability: Heatproof
+Modest Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Matcha Gotcha
+- Strength Sap
+- Shadow Ball
+- Foul Play
+
 
 === TRAINER_PLAYER_EDEN ===
 Name: Eden
@@ -4073,13 +4125,57 @@ Items: Full Restore
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Slugma
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Obstagoon @ Assault Vest
+Level: 65
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Night Slash
+- Return
+- Pin Missile
+- Lick
 
-Pelipper
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Skarmory @ Muscle Band
+Level: 65
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Spikes
+- Slash
+- Steel Wing
+
+Skarmory @ Muscle Band
+Level: 65
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Scream Tail @ Fairy Feather
+Level: 65
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Play Rough
+- Psychic Fangs
+- Crunch
+- Noble Roar
+
+Milotic @ Leftovers
+Level: 65
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Recover
+- Ice Beam
+- Toxic
+
+Medicham @ Medichamite
+Level: 65
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Zen Headbutt
+- Fire Punch
+- Axe Kick
+- Ice Punch
+
+
 
 === TRAINER_PLAYER_GOZLIAK ===
 Name: Gozliak
@@ -4092,30 +4188,139 @@ Items: Full Restore
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Slugma
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Hydrapple @ Clear Amulet
+Level: 67
+Ability: Supersweet Syrup
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Syrup Bomb
+- Fickle Beam
+- Growth
+
+Gallade
+Level: 67
+Ability: Justified
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Close Combat
+- Night Slash
+- Psycho Cut
+
+Tinkaton @ Clear Amulet
+Level: 64
+Ability: Pickpocket
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Gigaton Hammer
+- Knock Off
+- Play Rough
+
+Mawile @ Mawilite
+Level: 67
+Ability: Hyper Cutter
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Play Rough
+- Iron Defense
+- Sucker Punch
+- Iron Head
+
+Corviknight @ Clear Amulet
+Level: 67
+Ability: Mirror Armor
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Power Trip
+- Steel Wing
+- Taunt
+
+Overqwil
+Level: 67
+Ability: Poison Point
+Shiny: Yes
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Barb Barrage
+- Crunch
+- Toxic
+
+
 
 Pelipper
 Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_BERNIE_5 ===
-Name: BERNIE
-Class: Kindler
-Pic: Kindler
+=== TRAINER_PLAYER_SHERRY ===
+Name: Sherry
+Class: Pkmn Trainer 2
+Pic: Brendan
 Gender: Male
-Music: Hiker
+Music: Elite Four
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
 
-Magcargo
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Excadrill @ Clear Amulet
+Level: 64
+Ability: Sand Force
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Strength
+- Rock Slide
+- Earthquake
+- Metal Claw
 
-Pelipper
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Mimikyu @ Leftovers
+Level: 63
+Ability: Disguise
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Claw
+- Play Rough
+- Hone Claws
+- Wood Hammer
+
+Roserade @ Big Root
+Level: 63
+Ability: Natural Cure
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Growth
+- Stun Spore
+- Sludge Bomb
+
+Gothitelle @ Psychic Gem
+Level: 64
+Ability: Frisk
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Psychic
+- Calm Mind
+- Thunderbolt
+
+Aerodactyl @ Aerodactylite
+Level: 64
+Ability: Rock Head
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Aerial Ace
+
+
+
 
 === TRAINER_DREW ===
 Name: DREW

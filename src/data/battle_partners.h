@@ -120,12 +120,12 @@
         {
             {
 #line 53
-            .species = SPECIES_ZOROARK,
+            .species = SPECIES_ZOROARK_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 55
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 54
-            .lvl = 30,
+            .lvl = 31,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -136,7 +136,7 @@
 #line 59
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 58
-            .lvl = 28,
+            .lvl = 29,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -147,7 +147,7 @@
 #line 63
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 62
-            .lvl = 28,
+            .lvl = 32,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
