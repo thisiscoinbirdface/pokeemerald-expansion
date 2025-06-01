@@ -1,3 +1,8 @@
+gText_PreBirch::
+	.string "This is a non-profit game.\n"
+	.string "Don't pay for it!\l"
+	.string "$"
+	
 gText_Birch_Welcome::
 	.string "TENEBRIS LABORATORY\n"
 	.string "LETTER OF APPOINTMENT\p"
