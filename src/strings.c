@@ -1035,6 +1035,11 @@ const u8 gText_Affection[] = _("Affection");
 const u8 gText_AffectionOn[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Enabled");
 const u8 gText_AffectionOff[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Disabled");
 
+const u8 gText_ExpCap[] = _("Exp Cap");
+const u8 gText_ExpCapNone[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}None");
+const u8 gText_ExpCapSoft[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Soft");
+const u8 gText_ExpCapHard[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Hard");
+
 const u8 gText_TextSpeedSlow[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Fast");
 const u8 gText_TextSpeedMid[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Hyper");
 const u8 gText_TextSpeedFast[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Ultra");

@@ -58,6 +58,7 @@ enum
 enum 
 {
     MENUITEM_DIFFICULTY,   
+    MENUITEM_EXPCAP,   
     MENUITEM_CANCEL_PG3,
     MENUITEM_COUNT_PG3,
 };
@@ -82,7 +83,9 @@ enum
 #define YPOS_QUICKRUN     (MENUITEM_QUICKRUN * 16)
 #define YPOS_BIKESURFMUS  (MENUITEM_BIKESURFMUS * 16)
 #define YPOS_AFFECTION    (MENUITEM_AFFECTION * 16)
+
 #define YPOS_DIFFICULTY   (MENUITEM_DIFFICULTY * 16)
+#define YPOS_EXPCAP       (MENUITEM_EXPCAP * 16)
 
 #define PAGE_COUNT  3
 
@@ -115,6 +118,8 @@ static u8   Affection_ProcessInput(u8 selection);
 static void Affection_DrawChoices(u8 selection);
 static u8   Difficulty_ProcessInput(u8 selection);
 static void Difficulty_DrawChoices(u8 selection);
+static u8   ExpCap_ProcessInput(u8 selection);
+static void ExpCap_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
@@ -157,6 +162,7 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
 static const u8 *const sOptionMenuItemsNames_Pg3[MENUITEM_COUNT_PG3] =
 {
     [MENUITEM_DIFFICULTY]      = gText_Difficulty,   
+    [MENUITEM_EXPCAP]          = gText_ExpCap,   
     [MENUITEM_CANCEL_PG3]      = gText_OptionMenuCancel,
 };
 
@@ -236,6 +242,7 @@ static void VBlankCB(void)
 #define tBikeSurfMus data[11]
 #define tAffection data[12]
 #define tDifficulty data[13]
+#define tExpCap data[14]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -253,6 +260,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);    
     gTasks[taskId].tAffection = FlagGet(FLAG_SYS_AFFECTION_ENABLED);  
     gTasks[taskId].tDifficulty = VarGet(VAR_SYS_DIFFICULTY);
+    gTasks[taskId].tExpCap = VarGet(VAR_SYS_EXP_CAP);    
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -283,7 +291,9 @@ static void DrawOptionsPg2(u8 taskId)
 
 static void DrawOptionsPg3(u8 taskId)
 { 
+    ReadAllCurrentSettings(taskId);    
     Difficulty_DrawChoices(gTasks[taskId].tDifficulty);    
+    ExpCap_DrawChoices(gTasks[taskId].tExpCap);    
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -686,7 +696,14 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
 
             if (previousOption != gTasks[taskId].tDifficulty)
                 Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
-            break;                               
+            break;         
+        case MENUITEM_EXPCAP:
+            previousOption = gTasks[taskId].tExpCap;
+            gTasks[taskId].tExpCap = ExpCap_ProcessInput(gTasks[taskId].tExpCap);
+
+            if (previousOption != gTasks[taskId].tExpCap)
+                ExpCap_DrawChoices(gTasks[taskId].tExpCap);
+            break;                                    
         default:
             return;
         }
@@ -715,8 +732,9 @@ static void Task_OptionMenuSave(u8 taskId)
     gTasks[taskId].tBikeSurfMus == 0 ? FlagClear(FLAG_SYS_BIKE_SURF_MUS) : FlagSet(FLAG_SYS_BIKE_SURF_MUS);
     gTasks[taskId].tAffection == 0 ? FlagClear(FLAG_SYS_AFFECTION_ENABLED) : FlagSet(FLAG_SYS_AFFECTION_ENABLED);
     VarSet(VAR_SYS_DIFFICULTY, gTasks[taskId].tDifficulty);
+    VarSet(VAR_SYS_EXP_CAP, gTasks[taskId].tExpCap);
 
-    //call the difficulty changing script here
+    //call the difficulty changing script here?
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -1188,6 +1206,56 @@ static void Difficulty_DrawChoices(u8 selection)
 
 }
 
+static u8 ExpCap_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_RIGHT))
+    {
+        if (selection <= 1)
+            selection++;
+        else
+            selection = 0;
+
+        sArrowPressed = TRUE;
+    }
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        if (selection != 0)
+            selection--;
+        else
+            selection = 2;
+
+        sArrowPressed = TRUE;
+    }
+    return selection;
+}
+
+static void ExpCap_DrawChoices(u8 selection)
+{
+    /* FALSE = Have the middle text be exactly in between where the first text ends and second text begins.
+       TRUE = Have the mid text be in the middle of the frame, ignoring the first and last text size. 
+    Setting it to FALSE is how vanilla code does it for the TEST SPEED, but the layout looks off-center if there's
+    multiple three-item options in one page and the length of characters for the first and last choices
+    of one of the options mismatch.*/
+    bool8 centerMid = TRUE;
+    s32 widthEasy, widthNormal, widthHard, xMid;
+
+//    ALT
+    u8 styles[4];
+
+    styles[0] = 0; //1x
+    styles[1] = 0; //2x
+    styles[2] = 0; //3x
+    styles[3] = 0; //4x
+
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_ExpCapNone, 104, YPOS_EXPCAP, styles[0]);       //normal
+    DrawOptionMenuChoice(gText_ExpCapSoft, 146, YPOS_EXPCAP, styles[1]);     //hard
+    DrawOptionMenuChoice(gText_ExpCapHard, 180, YPOS_EXPCAP, styles[2]);       //wild
+    // DrawOptionMenuChoice(gText_BattleSpeed4X, 176, YPOS_BATTLESPEED, styles[3]);
+
+
+}
 
 
 static void DrawHeaderText(void)

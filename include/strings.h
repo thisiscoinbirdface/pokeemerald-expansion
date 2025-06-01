@@ -306,6 +306,12 @@ extern const u8 gText_Affection[];
 extern const u8 gText_AffectionOn[];
 extern const u8 gText_AffectionOff[];
 
+
+extern const u8 gText_ExpCap[];
+extern const u8 gText_ExpCapNone[];
+extern const u8 gText_ExpCapSoft[];
+extern const u8 gText_ExpCapHard[];
+
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];
 
