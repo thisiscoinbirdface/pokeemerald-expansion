@@ -289,13 +289,13 @@
 #define VAR_UNUSED_0x409B                                0x409B // Unused Var
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_UNUSED_0x40A1                                0x40A1 // Unused var
-#define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
 
 
     //I AM GOING TO USE THESE | SYSTEM VARS
     #define VAR_OVERWORLD_SPEEDUP                            0x406E // Unused Var    
     #define VAR_SYS_EXP_ALL                                  0x406D // Unused Var    
-    #define VAR_BATTLE_SPEED                                 0x406C // Unused Var
+    #define VAR_SYS_BATTLE_SPEED                             0x406C // Unused Var
+    #define VAR_SYS_DIFFICULTY                               0x40A8 // Unused Var
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)

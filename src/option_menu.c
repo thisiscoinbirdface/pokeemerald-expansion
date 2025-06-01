@@ -50,10 +50,18 @@ enum
     MENUITEM_AUTORUN,
     MENUITEM_QUICKRUN,
     MENUITEM_BIKESURFMUS,
-    MENUITEM_AFFECTION,
+    MENUITEM_AFFECTION,    
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
+
+enum 
+{
+    MENUITEM_DIFFICULTY,   
+    MENUITEM_CANCEL_PG3,
+    MENUITEM_COUNT_PG3,
+};
+
 
 enum
 {
@@ -74,13 +82,16 @@ enum
 #define YPOS_QUICKRUN     (MENUITEM_QUICKRUN * 16)
 #define YPOS_BIKESURFMUS  (MENUITEM_BIKESURFMUS * 16)
 #define YPOS_AFFECTION    (MENUITEM_AFFECTION * 16)
+#define YPOS_DIFFICULTY   (MENUITEM_DIFFICULTY * 16)
 
-#define PAGE_COUNT  2
+#define PAGE_COUNT  3
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
 static void Task_OptionMenuFadeIn_Pg2(u8 taskId);
 static void Task_OptionMenuProcessInput_Pg2(u8 taskId);
+static void Task_OptionMenuFadeIn_Pg3(u8 taskId);
+static void Task_OptionMenuProcessInput_Pg3(u8 taskId);
 static void Task_OptionMenuSave(u8 taskId);
 static void Task_OptionMenuFadeOut(u8 taskId);
 static void HighlightOptionMenuItem(u8 selection);
@@ -102,6 +113,8 @@ static u8   BikeSurfMus_ProcessInput(u8 selection);
 static void BikeSurfMus_DrawChoices(u8 selection);
 static u8   Affection_ProcessInput(u8 selection);
 static void Affection_DrawChoices(u8 selection);
+static u8   Difficulty_ProcessInput(u8 selection);
+static void Difficulty_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
@@ -137,8 +150,14 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
     [MENUITEM_AUTORUN]      = gText_AutoRun,    
     [MENUITEM_QUICKRUN]      = gText_QuickRun,    
     [MENUITEM_BIKESURFMUS]      = gText_BikeSurfMus,  
-    [MENUITEM_AFFECTION]      = gText_Affection,    
+    [MENUITEM_AFFECTION]      = gText_Affection,      
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
+};
+
+static const u8 *const sOptionMenuItemsNames_Pg3[MENUITEM_COUNT_PG3] =
+{
+    [MENUITEM_DIFFICULTY]      = gText_Difficulty,   
+    [MENUITEM_CANCEL_PG3]      = gText_OptionMenuCancel,
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
@@ -216,6 +235,7 @@ static void VBlankCB(void)
 #define tQuickRun data[10]
 #define tBikeSurfMus data[11]
 #define tAffection data[12]
+#define tDifficulty data[13]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -227,11 +247,12 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
     gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
     gTasks[taskId].tFollower = FlagGet(FLAG_SYS_OW_FOLLOWERS_DISABLED);
-    gTasks[taskId].tBattleSpeed = VarGet(VAR_BATTLE_SPEED);
+    gTasks[taskId].tBattleSpeed = VarGet(VAR_SYS_BATTLE_SPEED);
     gTasks[taskId].tAutoRun = FlagGet(FLAG_SYS_RUN_TOGGLE_SETTING);    
     gTasks[taskId].tQuickRun = FlagGet(FLAG_SYS_QUICK_RUN);       
     gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);    
-    gTasks[taskId].tAffection = FlagGet(FLAG_SYS_AFFECTION_ENABLED);       
+    gTasks[taskId].tAffection = FlagGet(FLAG_SYS_AFFECTION_ENABLED);  
+    gTasks[taskId].tDifficulty = VarGet(VAR_SYS_DIFFICULTY);
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -259,6 +280,14 @@ static void DrawOptionsPg2(u8 taskId)
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
+
+static void DrawOptionsPg3(u8 taskId)
+{ 
+    Difficulty_DrawChoices(gTasks[taskId].tDifficulty);    
+    HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
+}
+
 
 void CB2_InitOptionMenu(void)
 {
@@ -347,7 +376,11 @@ void CB2_InitOptionMenu(void)
         case 1:
             taskId = CreateTask(Task_OptionMenuFadeIn_Pg2, 0);
             DrawOptionsPg2(taskId);
-            break;            
+            break;          
+        case 2:
+            taskId = CreateTask(Task_OptionMenuFadeIn_Pg3, 0);
+            DrawOptionsPg3(taskId);
+            break;                  
         }
         gMain.state++;
         break;
@@ -394,6 +427,10 @@ static void Task_ChangePage(u8 taskId)
         DrawOptionsPg2(taskId);
         gTasks[taskId].func = Task_OptionMenuFadeIn_Pg2;
         break;
+    case 2:
+        DrawOptionsPg3(taskId);
+        gTasks[taskId].func = Task_OptionMenuFadeIn_Pg3;
+        break;        
     }
 }
 
@@ -405,7 +442,7 @@ static void Task_OptionMenuFadeIn(u8 taskId)
 
 static void Task_OptionMenuProcessInput(u8 taskId)
 {
-    if (JOY_NEW(R_BUTTON))
+    if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
     {
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
@@ -505,7 +542,7 @@ static void Task_OptionMenuFadeIn_Pg2(u8 taskId)
 
 static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 {
-    if (JOY_NEW(L_BUTTON))
+    if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
     {
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
@@ -584,7 +621,7 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 
             if (previousOption != gTasks[taskId].tAffection)
                 Affection_DrawChoices(gTasks[taskId].tAffection);
-            break;                       
+            break;                                 
         default:
             return;
         }
@@ -597,6 +634,72 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
     }
 }
 
+static void Task_OptionMenuFadeIn_Pg3(u8 taskId)
+{
+    if (!gPaletteFade.active)
+        gTasks[taskId].func = Task_OptionMenuProcessInput_Pg3;
+}
+
+static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
+{
+    if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
+    {
+        FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
+        ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
+        sCurrPage = Process_ChangePage(sCurrPage);
+        gTasks[taskId].func = Task_ChangePage;
+    }
+    else if (JOY_NEW(A_BUTTON))
+    {
+        if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG2)
+            gTasks[taskId].func = Task_OptionMenuSave;
+    }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        gTasks[taskId].func = Task_OptionMenuSave;
+    }
+    else if (JOY_NEW(DPAD_UP))
+    {
+        if (gTasks[taskId].tMenuSelection > 0)
+            gTasks[taskId].tMenuSelection--;
+        else
+            gTasks[taskId].tMenuSelection = MENUITEM_CANCEL_PG2;
+        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    }
+    else if (JOY_NEW(DPAD_DOWN))
+    {
+        if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG2)
+            gTasks[taskId].tMenuSelection++;
+        else
+            gTasks[taskId].tMenuSelection = 0;
+        HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
+    }
+    else
+    {
+        u8 previousOption;
+
+        switch (gTasks[taskId].tMenuSelection)
+        {  
+        case MENUITEM_DIFFICULTY:
+            previousOption = gTasks[taskId].tDifficulty;
+            gTasks[taskId].tDifficulty = Difficulty_ProcessInput(gTasks[taskId].tDifficulty);
+
+            if (previousOption != gTasks[taskId].tDifficulty)
+                Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
+            break;                               
+        default:
+            return;
+        }
+
+        if (sArrowPressed)
+        {
+            sArrowPressed = FALSE;
+            CopyWindowToVram(WIN_OPTIONS, COPYWIN_GFX);
+        }
+    }
+}
+
+
 static void Task_OptionMenuSave(u8 taskId)
 {
     gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
@@ -606,11 +709,14 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
     gTasks[taskId].tFollower == 0 ? FlagClear(FLAG_SYS_OW_FOLLOWERS_DISABLED) : FlagSet(FLAG_SYS_OW_FOLLOWERS_DISABLED);
-    VarSet(VAR_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
+    VarSet(VAR_SYS_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
     gTasks[taskId].tAutoRun == 0 ? FlagClear(FLAG_SYS_RUN_TOGGLE_SETTING) : FlagSet(FLAG_SYS_RUN_TOGGLE_SETTING);
     gTasks[taskId].tQuickRun == 0 ? FlagClear(FLAG_SYS_QUICK_RUN) : FlagSet(FLAG_SYS_QUICK_RUN);
     gTasks[taskId].tBikeSurfMus == 0 ? FlagClear(FLAG_SYS_BIKE_SURF_MUS) : FlagSet(FLAG_SYS_BIKE_SURF_MUS);
     gTasks[taskId].tAffection == 0 ? FlagClear(FLAG_SYS_AFFECTION_ENABLED) : FlagSet(FLAG_SYS_AFFECTION_ENABLED);
+    VarSet(VAR_SYS_DIFFICULTY, gTasks[taskId].tDifficulty);
+
+    //call the difficulty changing script here
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -985,6 +1091,8 @@ static void QuickRun_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_QuickRunOff, 162, YPOS_QUICKRUN, styles[1]);
 }
 
+
+
 static u8 BikeSurfMus_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
@@ -1029,6 +1137,59 @@ static void Affection_DrawChoices(u8 selection)
 }
 
 
+static u8 Difficulty_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_RIGHT))
+    {
+        if (selection <= 1)
+            selection++;
+        else
+            selection = 0;
+
+        sArrowPressed = TRUE;
+    }
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        if (selection != 0)
+            selection--;
+        else
+            selection = 2;
+
+        sArrowPressed = TRUE;
+    }
+    return selection;
+}
+
+static void Difficulty_DrawChoices(u8 selection)
+{
+    /* FALSE = Have the middle text be exactly in between where the first text ends and second text begins.
+       TRUE = Have the mid text be in the middle of the frame, ignoring the first and last text size. 
+    Setting it to FALSE is how vanilla code does it for the TEST SPEED, but the layout looks off-center if there's
+    multiple three-item options in one page and the length of characters for the first and last choices
+    of one of the options mismatch.*/
+    bool8 centerMid = TRUE;
+    s32 widthEasy, widthNormal, widthHard, xMid;
+
+//    ALT
+    u8 styles[4];
+
+    styles[0] = 0; //1x
+    styles[1] = 0; //2x
+    styles[2] = 0; //3x
+    styles[3] = 0; //4x
+
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_DifficultyEasy, 104, YPOS_DIFFICULTY, styles[0]);       //normal
+    DrawOptionMenuChoice(gText_DifficultyNormal, 146, YPOS_DIFFICULTY, styles[1]);     //hard
+    DrawOptionMenuChoice(gText_DifficultyHard, 180, YPOS_DIFFICULTY, styles[2]);       //wild
+    // DrawOptionMenuChoice(gText_BattleSpeed4X, 176, YPOS_BATTLESPEED, styles[3]);
+
+
+}
+
+
+
 static void DrawHeaderText(void)
 {
     u32 i, widthOptions, xMid;
@@ -1069,6 +1230,10 @@ static void DrawOptionMenuTexts(void)
         items = MENUITEM_COUNT_PG2;
         menu = sOptionMenuItemsNames_Pg2;
         break;    
+    case 2:
+        items = MENUITEM_COUNT_PG3;
+        menu = sOptionMenuItemsNames_Pg3;
+        break;            
     }
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));

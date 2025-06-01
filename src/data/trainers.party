@@ -83,6 +83,7 @@ Double Battle: No
 
 === TRAINER_ROUTE1_A ===
 Name: Jose
+Difficulty: Normal
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -91,6 +92,20 @@ Double Battle: No
 AI: Basic Trainer
 
 Rattata-Alola
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE1_A ===
+Name: Jose
+Difficulty: Hard
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Gothita
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
