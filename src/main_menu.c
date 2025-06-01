@@ -441,8 +441,8 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 15,
-        .width = BIRCHSPEECH_WIN_A_WIDTH,
-        .height = BIRCHSPEECH_WIN_A_HEIGHT,
+        .width = 27,
+        .height = 4,
         .paletteNum = 15,
         .baseBlock = 1
     },
@@ -450,8 +450,8 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 2,
-        .width = BIRCHSPEECH_WIN_B_WIDTH,
-        .height = BIRCHSPEECH_WIN_B_HEIGHT,
+        .width = 8,
+        .height = 10,
         .paletteNum = 15,
         .baseBlock = 0x6D
     },
@@ -459,11 +459,16 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .bg = 0,
         .tilemapLeft = 3,
         .tilemapTop = 2,
-        .width = BIRCHSPEECH_WIN_C_WIDTH,
-        .height = BIRCHSPEECH_WIN_C_HEIGHT,
+        .width = 9,
+        .height = 10,
         .paletteNum = 15,
         .baseBlock = 0x85
     },
+    DUMMY_WIN_TEMPLATE
+};
+
+static const struct WindowTemplate sNewGameBirchSpeech_PreBirchWindow[] =
+{
     {//my new window
         .bg = 0,
         .tilemapLeft = 2,
@@ -471,7 +476,7 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .width = BIRCHSPEECH_WIN_D_WIDTH,
         .height = BIRCHSPEECH_WIN_D_HEIGHT,
         .paletteNum = 15,
-        .baseBlock = BIRCHSPEECH_WIN_D_BASEBLOCK
+        .baseBlock = 1
     },    
     DUMMY_WIN_TEMPLATE
 };
@@ -1425,7 +1430,8 @@ void CB2_NewGameBirchSpeech_FromNewMainMenu(void) // Combination of the Above fu
     ShowBg(0);
     SetVBlankCallback(VBlankCB_MainMenu);
     SetMainCallback2(CB2_MainMenu);
-    InitWindows(sNewGameBirchSpeechTextWindows);
+    InitWindows(sNewGameBirchSpeech_PreBirchWindow);
+    FillWindowPixelBuffer(0, PIXEL_FILL(TEXT_COLOR_TRANSPARENT));
     LoadMainMenuWindowFrameTiles(0, 0xF3);
     LoadMessageBoxGfx(0, 0xFC, BG_PLTT_ID(15));
     PutWindowTilemap(0);
@@ -1437,6 +1443,14 @@ static void Task_PreBirch1(u8 taskId)
     
     if (!RunTextPrintersAndIsPrinter0Active())
     {     
+
+        // InitWindows(sNewGameBirchSpeech_PreBirchWindow);
+        // LoadMainMenuWindowFrameTiles(0, 0xF3);
+        // LoadMessageBoxGfx(0, 0xFC, BG_PLTT_ID(15));
+        // NewGameBirchSpeech_ShowDialogueWindow(0, 1);
+        // PutWindowTilemap(0);
+        // CopyWindowToVram(0, COPYWIN_GFX);
+        // NewGameBirchSpeech_ClearWindow(0);      
         StringExpandPlaceholders(gStringVar4, gText_PreBirch);
         AddTextPrinterForFullScreen(TRUE);
         gTasks[taskId].func = Task_PreBirch2;
@@ -1454,7 +1468,10 @@ static void Task_PreBirch2(u8 taskId)
 
 static void Task_PreBirchSetup(u8 taskId)
 {
+    FreeAllWindowBuffers();
+    NewGameBirchSpeech_ClearWindow(0);
 
+    ShowBg(0);
     ShowBg(1);
     PlayBGM(MUS_ROUTE122);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
@@ -1478,8 +1495,15 @@ static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 0);
         NewGameBirchSpeech_StartFadePlatformOut(taskId, 0);
-        gTasks[taskId].tTimer = 0;
+        gTasks[taskId].tTimer = 2;
         gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome;
+
+        // InitWindows(sNewGameBirchSpeechTextWindows);
+        // LoadMainMenuWindowFrameTiles(0, 0xF3);
+        // LoadMessageBoxGfx(0, 0xFC, BG_PLTT_ID(15));
+        // NewGameBirchSpeech_ShowDialogueWindow(0, 1);
+        // PutWindowTilemap(0);
+        // CopyWindowToVram(0, COPYWIN_FULL);        
     }
 }
 
@@ -1490,17 +1514,17 @@ static void Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome(u8 taskId)
         gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
         if (gTasks[taskId].tTimer)
         {
-            gTasks[taskId].tTimer--;
-        }
-        else
-        {
             InitWindows(sNewGameBirchSpeechTextWindows);
             LoadMainMenuWindowFrameTiles(0, 0xF3);
             LoadMessageBoxGfx(0, 0xFC, BG_PLTT_ID(15));
             NewGameBirchSpeech_ShowDialogueWindow(0, 1);
             PutWindowTilemap(0);
-            CopyWindowToVram(0, COPYWIN_GFX);
-            NewGameBirchSpeech_ClearWindow(0);
+            CopyWindowToVram(0, COPYWIN_FULL);
+
+            gTasks[taskId].tTimer--;
+        }
+        else
+        {
             StringExpandPlaceholders(gStringVar4, gText_Birch_Welcome);
             AddTextPrinterForMessage(TRUE);
             gTasks[taskId].func = Task_NewGameBirchSpeech_ThisIsAPokemon;
@@ -2762,20 +2786,20 @@ static void NewGameBirchSpeech_ShowDialogueWindow(u8 windowId, u8 copyToVram)
 
 static void NewGameBirchSpeech_CreateDialogueWindowBorder(u8 bg, u8 x, u8 y, u8 width, u8 height, u8 palNum)
 {
-     FillBgTilemapBufferRect(bg, 0x0FC, x-2,       y-1, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, 0x0FD, x-1,       y-1, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, 0x0FE, x,         y-1, width,   1, palNum);
-     FillBgTilemapBufferRect(bg, 0x0FF, x+width-1, y-1, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, 0x100, x+width,   y-1, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, 0x0FC, x-2,       y-1, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, 0x0FD, x-1,       y-1, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, 0x0FE, x,         y-1, width,   1, palNum);
+    FillBgTilemapBufferRect(bg, 0x0FF, x+width-1, y-1, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, 0x100, x+width,   y-1, 1,       1, palNum);
     FillBgTilemapBufferRect(bg, 0x103, x-2,       y,   1,       5, palNum);
     FillBgTilemapBufferRect(bg, 0x104, x-1,       y,   width+1, 5, palNum);
-     FillBgTilemapBufferRect(bg, 0x105, x+width,   y,   1,       5, palNum);
- 
-     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FC), x-2,       y+height, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FD), x-1,       y+height, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FE), x,         y+height, width-1, 1, palNum);
-     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FF), x+width-1, y+height, 1,       1, palNum);
-     FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x100), x+width,   y+height, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, 0x105, x+width,   y,   1,       5, palNum);
+
+    FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FC), x-2,       y+height, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FD), x-1,       y+height, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FE), x,         y+height, width-1, 1, palNum);
+    FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x0FF), x+width-1, y+height, 1,       1, palNum);
+    FillBgTilemapBufferRect(bg, BG_TILE_V_FLIP(0x100), x+width,   y+height, 1,       1, palNum);
 }
 
 static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8 taskId)
