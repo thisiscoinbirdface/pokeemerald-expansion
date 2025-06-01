@@ -430,19 +430,22 @@ script IvyRiver_Trainer_C {
     end
 }
 
-//saving the dialogue for another trainer somewhere
-// script IvyRiver_Trainer_D {
-//     trainerbattle_single(
-//         TRAINER_IVY_RIVER_C, 
-//         format("Every four years, the best trainers compete in the Pokémon Championship.\pYou're looking at the future winner!"), 
-//         format("You're championship material!")
-//     )
+script IvyRiver_Trainer_D {
+    trainerbattle_single(
+        TRAINER_IVY_RIVER_D, 
+        format("You're the trainer who beat me back in Vilethorn Woods!\pI wanted to become the first BUG type Gym Leader but guess what - I've changed my dream. Now I'm going to be the first BUG type Pokémon Champion!"), 
+        format("How could I lose to you twice?")
+    )
     
-//     msgbox(format("I bet I'll see you at the Pokémon Championship!"))
-//     release
-//     end
-// }
-
+    msgbox(format("I lost to you today, but I'll beat you at the Pokémon Championship!"))
+    release
+    end
+}
+script IvyRiver_Trainer_D_Pinsir{
+    playmoncry(SPECIES_PINSIR, CRY_MODE_NORMAL)
+    msgbox(format("Pinsir looks grumpy it lost."), MSGBOX_NPC)
+    end
+}
 
 //NPCs
 script IvyRiver_NPC1{

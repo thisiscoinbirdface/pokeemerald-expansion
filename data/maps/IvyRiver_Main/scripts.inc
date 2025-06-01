@@ -612,14 +612,32 @@ IvyRiver_Trainer_C::
 	end
 
 
+IvyRiver_Trainer_D::
+# 434 "data//maps/IvyRiver_Main/scripts.pory"
+	trainerbattle_single TRAINER_IVY_RIVER_D, IvyRiver_Trainer_D_Text_0, IvyRiver_Trainer_D_Text_1
+# 440 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Trainer_D_Text_2
+# 441 "data//maps/IvyRiver_Main/scripts.pory"
+	release
+	end
+
+
+IvyRiver_Trainer_D_Pinsir::
+# 445 "data//maps/IvyRiver_Main/scripts.pory"
+	playmoncry SPECIES_PINSIR, CRY_MODE_NORMAL
+# 446 "data//maps/IvyRiver_Main/scripts.pory"
+	msgbox IvyRiver_Trainer_D_Pinsir_Text_0, MSGBOX_NPC
+	end
+
+
 IvyRiver_NPC1::
-# 449 "data//maps/IvyRiver_Main/scripts.pory"
+# 452 "data//maps/IvyRiver_Main/scripts.pory"
 	msgbox IvyRiver_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 IvyRiver_NPC2::
-# 453 "data//maps/IvyRiver_Main/scripts.pory"
+# 456 "data//maps/IvyRiver_Main/scripts.pory"
 	msgbox IvyRiver_NPC2_Text_0, MSGBOX_NPC
 	end
 
@@ -1163,15 +1181,37 @@ IvyRiver_Trainer_C_Text_2:
 	.string "malaise. There are strong currents, and\l"
 	.string "that's about it.$"
 
+IvyRiver_Trainer_D_Text_0:
+# 436 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "You're the trainer who beat me back in\n"
+	.string "Vilethorn Woods!\p"
+	.string "I wanted to become the first BUG type\n"
+	.string "Gym Leader but guess what - I've\l"
+	.string "changed my dream. Now I'm going to be\l"
+	.string "the first BUG type Pokémon Champion!$"
+
+IvyRiver_Trainer_D_Text_1:
+# 437 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "How could I lose to you twice?$"
+
+IvyRiver_Trainer_D_Text_2:
+# 440 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "I lost to you today, but I'll beat you at\n"
+	.string "the Pokémon Championship!$"
+
+IvyRiver_Trainer_D_Pinsir_Text_0:
+# 446 "data//maps/IvyRiver_Main/scripts.pory"
+	.string "Pinsir looks grumpy it lost.$"
+
 IvyRiver_NPC1_Text_0:
-# 449 "data//maps/IvyRiver_Main/scripts.pory"
+# 452 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "You can't navigate the strong currents\n"
 	.string "here without HM Flip Turn.\p"
 	.string "Oh, you don't have it?\p"
 	.string "Too bad.$"
 
 IvyRiver_NPC2_Text_0:
-# 453 "data//maps/IvyRiver_Main/scripts.pory"
+# 456 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "Most people you'll meet here are either\n"
 	.string "collecting rare Pokémon...or lost!\p"
 	.string "Like me...$"

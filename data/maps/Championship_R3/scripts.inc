@@ -52,13 +52,13 @@ Championship_R3::
 # 39 "data//maps/Championship_R3/scripts.pory"
 	applymovement 1, Championship_R3_Movement_2
 # 40 "data//maps/Championship_R3/scripts.pory"
-	msgbox_delay Championship_R3_Text_2, Championship_R3_Text_3
+	msgbox_delay Championship_R3_Text_2, Championship_R3_Text_5
 # 42 "data//maps/Championship_R3/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_C, Championship_R3_Text_3
+	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_C, Championship_R3_Text_6
 # 45 "data//maps/Championship_R3/scripts.pory"
 	applymovement 1, Championship_R3_Movement_2
 # 46 "data//maps/Championship_R3/scripts.pory"
-	msgbox_delay Championship_R3_Text_2, Championship_R3_Text_3
+	msgbox_delay Championship_R3_Text_2, Championship_R3_Text_7
 # 48 "data//maps/Championship_R3/scripts.pory"
 	playmoncry SPECIES_PINSIR, CRY_MODE_NORMAL
 # 49 "data//maps/Championship_R3/scripts.pory"
@@ -184,8 +184,35 @@ Championship_R3_Text_2:
 
 Championship_R3_Text_3:
 # 35 "data//maps/Championship_R3/scripts.pory"
-	.string "!$"
+	.string "Just you wait and watch - Avalugg and I\n"
+	.string "will crush the Ace Rookie!$"
 
 Championship_R3_Text_4:
 # 37 "data//maps/Championship_R3/scripts.pory"
 	.string "Trainers - are you ready?$"
+
+Championship_R3_Text_5:
+# 40 "data//maps/Championship_R3/scripts.pory"
+	.string "I can't believe I'm seeing you here of\n"
+	.string "all places!\p"
+	.string "...\p"
+	.string "Who would've guessed back in Gastree\n"
+	.string "City that you and I would follow the\l"
+	.string "same path?\p"
+	.string "Avalugg and I are strong - we're the\n"
+	.string "strongest duo in all of Cormoria!$"
+
+Championship_R3_Text_6:
+# 42 "data//maps/Championship_R3/scripts.pory"
+	.string "Avalugg...how could we lose?$"
+
+Championship_R3_Text_7:
+# 46 "data//maps/Championship_R3/scripts.pory"
+	.string "You were so strong, {PLAYER}...\n"
+	.string "I guess this is what it takes to become\l"
+	.string "the Pokemon Champion.\p"
+	.string "I get it. We get it!\n"
+	.string "We're not ready yet.\p"
+	.string "But next time, Avalugg and I will be\n"
+	.string "coming for the crown!\p"
+	.string "Good luck, {PLAYER}!$"

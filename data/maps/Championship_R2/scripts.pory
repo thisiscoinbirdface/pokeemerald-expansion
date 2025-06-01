@@ -37,7 +37,7 @@ script Championship_R2{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Stanja", format("I'm Stanja, the ultimate Bug Maniac!\pMy goal was to become a Gym Leader, but then do you know what happened?\pI beat them all! And then I realised that Pinsir and I had what it takes to become the Champion.\pI know you. I've lost to you before.\nWe fought in Vilethorn Woods.\pBut this battle is different.\nThe stakes are different.\pI'M different!"))
+    msgbox_delay("Stanja", format("I'm Stanja, the ultimate Bug Maniac!\pMy goal was to become a Gym Leader, but then do you know what happened?\pI beat them all! And then I realised that Pinsir and I had what it takes to become the Champion.\pI know you. I've lost to you before.\pWe fought in Vilethorn Woods.\nAnd then again in the Ivy River.\pBut this battle is different.\nThe stakes are different.\pI'M different!"))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_B, format("I was so close!"))
 
