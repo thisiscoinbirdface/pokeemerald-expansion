@@ -5,6 +5,7 @@
     "gMapGroup_Phase3",
     "gMapGroup_Phase4",
     "gMapGroup_Phase5",
+    "gMapGroup_Phase6",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -202,6 +203,9 @@
     "Championship_R4_Lobby",
     "Cormoria_HallOfFame",
     "Championship_Museum"
+  ],
+  "gMapGroup_Phase6": [
+    "Legends"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

@@ -4043,14 +4043,16 @@ Wingull
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BERNIE_2 ===
-Name: BERNIE
-Class: Kindler
-Pic: Kindler
+=== TRAINER_PLAYER_SENTRY ===
+Name: Sentry
+Class: Pkmn Trainer 2
+Pic: Gubuking
 Gender: Male
-Music: Hiker
+Music: Elite Four
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
 
 Slugma
 Level: 26
@@ -4060,14 +4062,16 @@ Wingull
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_BERNIE_3 ===
-Name: BERNIE
-Class: Kindler
-Pic: Kindler
+=== TRAINER_PLAYER_EDEN ===
+Name: Eden
+Class: Pkmn Trainer 2
+Pic: Gubuking
 Gender: Male
-Music: Hiker
+Music: Elite Four
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
 
 Slugma
 Level: 29
@@ -4077,14 +4081,16 @@ Pelipper
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_BERNIE_4 ===
-Name: BERNIE
-Class: Kindler
-Pic: Kindler
+=== TRAINER_PLAYER_GOZLIAK ===
+Name: Gozliak
+Class: Pkmn Trainer 2
+Pic: Brendan
 Gender: Male
-Music: Hiker
+Music: Elite Four
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
 
 Slugma
 Level: 32

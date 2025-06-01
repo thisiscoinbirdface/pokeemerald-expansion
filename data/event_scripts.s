@@ -1463,3 +1463,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Cormoria_HallOfFame/scripts.inc"
 
 	.include "data/maps/Championship_Museum/scripts.inc"
+
+	.include "data/maps/Legends/scripts.inc"

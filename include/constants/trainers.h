@@ -111,9 +111,9 @@
 
 //My pics I AM GOING TO USE THEM ONE BY ONE
 //Custom trainers
-#define TRAINER_PIC_MUNUCU                93    //main character 1
-#define TRAINER_PIC_SHUBUBU               94    //main char 2
-#define TRAINER_PIC_GUBUKING              95    //main char 3
+#define TRAINER_PIC_MUNUCU                93    //gold
+#define TRAINER_PIC_SHUBUBU               94    //teal bun dude
+#define TRAINER_PIC_GUBUKING              95    //leaf
 #define TRAINER_PIC_SOMBER_GRUNT_F        96
 #define TRAINER_PIC_SOMBER_GRUNT_M        97
 #define TRAINER_PIC_SOMBER_GRUNT_DUO      98

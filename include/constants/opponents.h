@@ -288,13 +288,19 @@
 #define TRAINER_CHAMPIONSHIP_F              202
 
 
+//past champions
 #define TRAINER_AXLE                        203
 #define TRAINER_JACE                        204
 #define TRAINER_KEEGAN                      205
 #define TRAINER_BERNIE_1                    206
-#define TRAINER_BERNIE_2                    207
-#define TRAINER_BERNIE_3                    208
-#define TRAINER_BERNIE_4                    209
+
+
+
+
+///PLAYERS WHO BEAT THE GAME
+#define TRAINER_PLAYER_SENTRY               207
+#define TRAINER_PLAYER_EDEN                 208
+#define TRAINER_PLAYER_GOZLIAK              209
 #define TRAINER_BERNIE_5                    210
 #define TRAINER_DREW                        211
 #define TRAINER_BEAU                        212

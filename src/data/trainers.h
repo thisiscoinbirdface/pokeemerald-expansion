@@ -9944,7 +9944,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 4046
-    [DIFFICULTY_NORMAL][TRAINER_BERNIE_2] =
+    [DIFFICULTY_NORMAL][TRAINER_PLAYER_SENTRY] =
     {
 #line 4047
         .trainerName = _("BERNIE"),
@@ -9987,7 +9987,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 4063
-    [DIFFICULTY_NORMAL][TRAINER_BERNIE_3] =
+    [DIFFICULTY_NORMAL][TRAINER_PLAYER_EDEN] =
     {
 #line 4064
         .trainerName = _("BERNIE"),
@@ -10030,7 +10030,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 4080
-    [DIFFICULTY_NORMAL][TRAINER_BERNIE_4] =
+    [DIFFICULTY_NORMAL][TRAINER_PLAYER_GOZLIAK] =
     {
 #line 4081
         .trainerName = _("BERNIE"),

@@ -1,0 +1,17 @@
+mapscripts Legends_MapScripts{}
+
+script Legends_Sentry{
+    trainerbattle_single(TRAINER_PLAYER_SENTRY, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Legends_Eden{
+    trainerbattle_single(TRAINER_PLAYER_EDEN, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Legends_Gozliak{
+    trainerbattle_single(TRAINER_PLAYER_GOZLIAK, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}

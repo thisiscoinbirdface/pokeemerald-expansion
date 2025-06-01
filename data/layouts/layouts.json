@@ -5940,6 +5940,16 @@
       "secondary_tileset": "gTileset_LilycoveMuseum",
       "border_filepath": "data/layouts/Championship_Museum/border.bin",
       "blockdata_filepath": "data/layouts/Championship_Museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS",
+      "name": "Legends_Layout",
+      "width": 15,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/Legends/border.bin",
+      "blockdata_filepath": "data/layouts/Legends/map.bin"
     }
   ]
 }
