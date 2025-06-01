@@ -28,6 +28,8 @@
 #define tFollower data[7]
 #define tBattleSpeed data[8]
 #define tAutoRun data[9]
+#define tQuickRun data[10]
+#define tBikeSurfMus data[11]
 
 enum
 {
@@ -47,6 +49,7 @@ enum
     MENUITEM_BATTLESPEED,
     MENUITEM_AUTORUN,
     MENUITEM_QUICKRUN,
+    MENUITEM_BIKESURFMUS,
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
@@ -68,6 +71,7 @@ enum
 #define YPOS_BATTLESPEED  (MENUITEM_BATTLESPEED * 16)
 #define YPOS_AUTORUN      (MENUITEM_AUTORUN * 16)
 #define YPOS_QUICKRUN     (MENUITEM_QUICKRUN * 16)
+#define YPOS_BIKESURFMUS  (MENUITEM_BIKESURFMUS * 16)
 
 #define PAGE_COUNT  2
 
@@ -92,6 +96,8 @@ static u8   AutoRun_ProcessInput(u8 selection);
 static void AutoRun_DrawChoices(u8 selection);
 static u8   QuickRun_ProcessInput(u8 selection);
 static void QuickRun_DrawChoices(u8 selection);
+static u8   BikeSurfMus_ProcessInput(u8 selection);
+static void BikeSurfMus_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
@@ -126,6 +132,7 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
     [MENUITEM_BATTLESPEED]      = gText_BattleSpeed,
     [MENUITEM_AUTORUN]      = gText_AutoRun,    
     [MENUITEM_QUICKRUN]      = gText_QuickRun,    
+    [MENUITEM_BIKESURFMUS]      = gText_BikeSurfMus,    
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
@@ -202,6 +209,7 @@ static void VBlankCB(void)
 #define tBattleSpeed data[8]
 #define tAutoRun data[9]
 #define tQuickRun data[10]
+#define tBikeSurfMus data[10]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -216,6 +224,7 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tBattleSpeed = VarGet(VAR_BATTLE_SPEED);
     gTasks[taskId].tAutoRun = FlagGet(FLAG_SYS_RUN_TOGGLE_SETTING);    
     gTasks[taskId].tQuickRun = FlagGet(FLAG_SYS_QUICK_RUN);       
+    gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);       
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -237,7 +246,8 @@ static void DrawOptionsPg2(u8 taskId)
     Follower_DrawChoices(gTasks[taskId].tFollower);
     BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
     AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
-    QuickRun_DrawChoices(gTasks[taskId].tQuickRun);    
+    QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
+    BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);    
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -552,7 +562,14 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 
             if (previousOption != gTasks[taskId].tQuickRun)
                 QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
-            break;                   
+            break;       
+        case MENUITEM_BIKESURFMUS:
+            previousOption = gTasks[taskId].tBikeSurfMus;
+            gTasks[taskId].tBikeSurfMus = BikeSurfMus_ProcessInput(gTasks[taskId].tBikeSurfMus);
+
+            if (previousOption != gTasks[taskId].tBikeSurfMus)
+                BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);
+            break;               
         default:
             return;
         }
@@ -577,6 +594,7 @@ static void Task_OptionMenuSave(u8 taskId)
     VarSet(VAR_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
     gTasks[taskId].tAutoRun == 0 ? FlagClear(FLAG_SYS_RUN_TOGGLE_SETTING) : FlagSet(FLAG_SYS_RUN_TOGGLE_SETTING);
     gTasks[taskId].tQuickRun == 0 ? FlagClear(FLAG_SYS_QUICK_RUN) : FlagSet(FLAG_SYS_QUICK_RUN);
+    gTasks[taskId].tBikeSurfMus == 0 ? FlagClear(FLAG_SYS_BIKE_SURF_MUS) : FlagSet(FLAG_SYS_BIKE_SURF_MUS);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -949,6 +967,27 @@ static void QuickRun_DrawChoices(u8 selection)
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_QuickRunOn, 104, YPOS_QUICKRUN, styles[0]);
     DrawOptionMenuChoice(gText_QuickRunOff, 162, YPOS_QUICKRUN, styles[1]);
+}
+
+static u8 BikeSurfMus_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void BikeSurfMus_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_BikeSurfMusOn, 104, YPOS_BIKESURFMUS, styles[0]);
+    DrawOptionMenuChoice(gText_BikeSurfMusOff, 162, YPOS_BIKESURFMUS, styles[1]);
 }
 
 

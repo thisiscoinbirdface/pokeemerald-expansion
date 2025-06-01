@@ -298,6 +298,10 @@ extern const u8 gText_QuickRun[];
 extern const u8 gText_QuickRunOn[];
 extern const u8 gText_QuickRunOff[];
 
+extern const u8 gText_BikeSurfMus[];
+extern const u8 gText_BikeSurfMusOn[];
+extern const u8 gText_BikeSurfMusOff[];
+
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];
 

@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bike.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
 #include "fieldmap.h"
@@ -1005,8 +1006,11 @@ void GetOnOffBike(u8 transitionFlags)
     else
     {
         SetPlayerAvatarTransitionFlags(transitionFlags);
-        Overworld_SetSavedMusic(MUS_CYCLING);
-        Overworld_ChangeMusicTo(MUS_CYCLING);
+        
+        if (FlagGet(FLAG_SYS_BIKE_SURF_MUS)){
+            Overworld_SetSavedMusic(MUS_CYCLING);
+            Overworld_ChangeMusicTo(MUS_CYCLING);
+        }
     }
 }
 

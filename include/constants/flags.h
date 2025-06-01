@@ -1579,7 +1579,7 @@
 #define FLAG_SYS_RUNNING_SHOES_TOGGLE               (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_SYS_RUN_TOGGLE_SETTING                 (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_SYS_QUICK_RUN                          (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
+#define FLAG_SYS_BIKE_SURF_MUS                      (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
