@@ -291,6 +291,8 @@ extern const u8 gText_ButtonMode[];
 extern const u8 gText_Follower[];
 extern const u8 gText_Difficulty[];
 extern const u8 gText_AutoRun[];
+extern const u8 gText_AutoRun_Toggle[];
+extern const u8 gText_AutoRun_Hold[];
 
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];

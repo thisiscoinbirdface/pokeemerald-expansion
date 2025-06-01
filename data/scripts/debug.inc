@@ -143,12 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    warp MAP_ROUTE6, 45, 64
+    setflag FLAG_SYS_RUN_TOGGLE_SETTING
 	release
 	end
 
 Debug_EventScript_Script_3::
-	trainerbattle_no_intro TRAINER_HEIDI, Debug_EventScript_Text_OffensiveIVs
+	clearflag FLAG_SYS_RUN_TOGGLE_SETTING
 	release
 	end
 
