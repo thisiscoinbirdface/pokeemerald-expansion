@@ -387,7 +387,7 @@ SSElegant_Minior::
 
 SSElegant_Ariana::
 # 310 "data//maps/SSElegant/scripts.pory"
-	trainerbattle_single TRAINER_SSELEGANT_INGER, SSElegant_Ariana_Text_0, SSElegant_Ariana_Text_1
+	trainerbattle_single TRAINER_SSELEGANT_ARIANA, SSElegant_Ariana_Text_0, SSElegant_Ariana_Text_1
 # 311 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Ariana_Text_2
 # 312 "data//maps/SSElegant/scripts.pory"
