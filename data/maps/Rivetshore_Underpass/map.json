@@ -2,7 +2,7 @@
   "id": "MAP_RIVETSHORE_UNDERPASS",
   "name": "Rivetshore_Underpass",
   "layout": "LAYOUT_RIVETSHORE_UNDERPASS",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_ROUTE24",
   "region_map_section": "MAPSEC_RIVETSHORE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

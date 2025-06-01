@@ -5,7 +5,8 @@ script RivetshoreCity_StorageBay_Slaking{
     checkitem(ITEM_POKE_FLUTE)
     if (var(VAR_RESULT) == 1){
     msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
-
+    release
+    
         if (var(VAR_RESULT) == 0){
             end
         } else {

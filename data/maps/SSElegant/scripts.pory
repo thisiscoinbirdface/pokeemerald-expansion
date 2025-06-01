@@ -307,7 +307,7 @@ script SSElegant_Minior{
 }
 
 script SSElegant_Ariana{
-    trainerbattle_single(TRAINER_SSELEGANT_INGER, format("Hey, since {PLAYER} is here...how about a double battle?"), format("Tough as ever!"))
+    trainerbattle_single(TRAINER_SSELEGANT_ARIANA, format("Hey, since {PLAYER} is here...how about a double battle?"), format("Tough as ever!"))
     msgbox(format("We heard you were off the case. Don't worry - we'll finish what you started!"))
     releaseall
     end    

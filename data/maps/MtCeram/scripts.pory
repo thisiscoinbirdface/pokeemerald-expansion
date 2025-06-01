@@ -28,7 +28,8 @@ script MtCeram_Charizard{
 
 
     msgbox(format("It's asleep...use Poké Flute?"), MSGBOX_YESNO)
-
+    release
+    
     if (var(VAR_RESULT) == 1){
             fadeoutbgm(1)
             playse(MUS_RG_POKE_FLUTE)
