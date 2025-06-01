@@ -12,6 +12,7 @@
 #include "battle_gimmick.h"
 #include "bg.h"
 #include "data.h"
+#include "event_data.h"
 #include "item.h"
 #include "item_menu.h"
 #include "link.h"
@@ -390,6 +391,14 @@ static void HandleInputChooseAction(u32 battler)
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_CANCEL_PARTNER, 0);
             PlayerBufferExecCompleted(battler);
         }
+        //Now quick run (which is just do the A button functionality here)
+        //FLAG_SYS_QUICK_RUN
+        else if (FlagGet(FLAG_SYS_QUICK_RUN))
+        {
+            PlaySE(SE_SELECT);
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_RUN, 0);    
+            PlayerBufferExecCompleted(battler);                
+        }
         else if (B_QUICK_MOVE_CURSOR_TO_RUN)
         {
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)) // If wild battle, pressing B moves cursor to "Run".
@@ -398,6 +407,7 @@ static void HandleInputChooseAction(u32 battler)
                 ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
                 gActionSelectionCursor[battler] = 3;
                 ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
+                
             }
         }
     }

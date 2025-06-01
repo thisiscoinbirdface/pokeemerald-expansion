@@ -143,12 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    setflag FLAG_SYS_RUN_TOGGLE_SETTING
+    setflag FLAG_SYS_QUICK_RUN
 	release
 	end
 
 Debug_EventScript_Script_3::
-	clearflag FLAG_SYS_RUN_TOGGLE_SETTING
+	clearflag FLAG_SYS_QUICK_RUN
 	release
 	end
 
