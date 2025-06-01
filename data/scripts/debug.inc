@@ -144,11 +144,13 @@ Debug_EventScript_Script_1::
 
 Debug_EventScript_Script_2::
     setvar VAR_SYS_EXP_CAP, 1
+	msgbox Debug_EventScript_Text_OffensiveIVs, MSGBOX_DEFAULT
 	release
 	end
 
 Debug_EventScript_Script_3::
 	setvar VAR_SYS_EXP_CAP, 2
+	msgbox Debug_EventScript_Text_DefensiveIVs, MSGBOX_DEFAULT
 	release
 	end
 
