@@ -2959,21 +2959,28 @@ Level: 46
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_B ===
-Name: Dana
-Class: Battle Girl
-Pic: Battle Girl
+Name: Berger
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Perrserker
+
+Ninetales-Alola
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Arctibax
 Level: 44
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Conkeldurr
+Avalugg-Hisui
 Level: 46
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+
 
 === TRAINER_RIVETSHORE_GYM_C ===
 Name: Babeneitor

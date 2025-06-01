@@ -45,7 +45,12 @@ script SSElegant_Raazi{
     lockall
     faceplayer
     //battle dialogue
-    msgbox_delay("Raazi", format("Can I help you?\p...\pAh, you're the trainer who challenged me at the quarry. My apologies for delaying the fight.\pWhat's your name?\p...\p{PLAYER}?\pSounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor Rue's fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge.\pCome, then. It's quiet on the upper deck and the sea breeze is pleasant.\pA fine place to battle, wouldn't you say?"))
+    msgbox_delay("Raazi", format("Can I help you?\p...\pAh, you're the trainer who challenged me at the quarry. My apologies for delaying the fight.\pWhat's your name?\p...\p{PLAYER}?\pSounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor Rue's fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge."))
+
+    msgbox(format("Are you ready to battle me?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) {end}
+
+    msgbox_delay("Raazi", format("Come, then. It's quiet on the upper deck and the sea breeze is pleasant.\pA fine place to battle, wouldn't you say?"))
     fadenewbgm(MUS_RG_GYM)
     //Move into position
     special(SpawnCameraObject)

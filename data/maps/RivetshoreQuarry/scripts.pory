@@ -197,13 +197,20 @@ script Rivetshore_Gym_Trainer_A{
     releaseall
     end
 }
+
 //some cool female trainer
 script Rivetshore_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("I used to train at the Mirroh Base Camp Gym before it shut down. Now I'm going to become a Gym Leader myself!"), format("I can't be a leader yet!"))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("The statue trainer! Have you found all the statues yet?\pBergmite and I have become quite strong, you know?\pBergmie even evolved into Avalugg. Now we're aiming for the Pokemon Championship!"), format("We need to work harder, Bergmite!"))
+    msgbox(format("We hate losing!"))
     releaseall
     end
 }
+script Rivetshore_Gym_Avalugg{
+    playmoncry(SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL)
+    msgbox(format("Avalugg looks really tough!\pWhere did the cute Bergmite go?"), MSGBOX_NPC)
+    end
+}
+
 //cooltrainer M - baneneitor
 script Rivetshore_Gym_Trainer_C{
     trainerbattle_single(TRAINER_RIVETSHORE_GYM_C, format("My partner and I grew up together. We even made it all the way to the final gym. You can't break our bond!"), format("You broke our bond!"))

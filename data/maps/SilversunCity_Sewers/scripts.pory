@@ -416,3 +416,17 @@ script SilversunCity_Sewers_Market_Muk_End{
     end
 }
 
+script SilversunCity_Sewers_Berger{
+    lockall
+    faceplayer
+    msgbox_delay("Berger", format("Hey! The statue trainer!\pBergmite and I came down here because we heard they sell rare TMs. But they're not letting me buy anything!"))
+    releaseall
+    end
+}
+
+script SilversunCity_Sewers_Bergmite{
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    msgbox(format("Bergmite is pinching its nose...must be hard without hands."), MSGBOX_NPC)
+    end
+}
+

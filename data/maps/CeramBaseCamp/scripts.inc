@@ -413,13 +413,15 @@ CeramBaseCamp_TalonFlame_2:
 CeramBaseCamp_BergmiteTrainer::
 # 288 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_BergmiteTrainer_Text_0, MSGBOX_NPC
+# 289 "data//maps/CeramBaseCamp/scripts.pory"
+	msgbox_delay CeramBaseCamp_BergmiteTrainer_Text_1, CeramBaseCamp_BergmiteTrainer_Text_2
 	end
 
 
 CeramBaseCamp_Bergmite::
-# 292 "data//maps/CeramBaseCamp/scripts.pory"
-	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
 # 293 "data//maps/CeramBaseCamp/scripts.pory"
+	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
+# 294 "data//maps/CeramBaseCamp/scripts.pory"
 	msgbox CeramBaseCamp_Bergmite_Text_0, MSGBOX_NPC
 	end
 
@@ -638,8 +640,17 @@ CeramBaseCamp_BergmiteTrainer_Text_0:
 	.string "We just...we trained too hard!\n"
 	.string "We want to be the strongest.$"
 
+CeramBaseCamp_BergmiteTrainer_Text_1:
+# 289 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "Berger$"
+
+CeramBaseCamp_BergmiteTrainer_Text_2:
+# 289 "data//maps/CeramBaseCamp/scripts.pory"
+	.string "My name's Berger. And Bergmite is my\n"
+	.string "best friend! See you around!$"
+
 CeramBaseCamp_Bergmite_Text_0:
-# 293 "data//maps/CeramBaseCamp/scripts.pory"
+# 294 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "keee!!!\p"
-	.string "Bergmite seems apologetic.\p"
-	.string "It's okay, Bergmite!$"
+	.string "Bergmite says hello!\n"
+	.string "Nice to meet you, Bergmite!$"

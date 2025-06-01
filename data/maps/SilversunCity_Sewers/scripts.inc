@@ -575,6 +575,26 @@ SilversunCity_Sewers_Market_Muk_End::
 	end
 
 
+SilversunCity_Sewers_Berger::
+# 420 "data//maps/SilversunCity_Sewers/scripts.pory"
+	lockall
+# 421 "data//maps/SilversunCity_Sewers/scripts.pory"
+	faceplayer
+# 422 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox_delay SilversunCity_Sewers_Berger_Text_0, SilversunCity_Sewers_Berger_Text_1
+# 423 "data//maps/SilversunCity_Sewers/scripts.pory"
+	releaseall
+	end
+
+
+SilversunCity_Sewers_Bergmite::
+# 428 "data//maps/SilversunCity_Sewers/scripts.pory"
+	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
+# 429 "data//maps/SilversunCity_Sewers/scripts.pory"
+	msgbox SilversunCity_Sewers_Bergmite_Text_0, MSGBOX_NPC
+	end
+
+
 # 30 "data//maps/SilversunCity_Sewers/scripts.pory"
 SilversunCity_Sewers_ManLostWife_Trigger0_Movement_0:
 # 30 "data//maps/SilversunCity_Sewers/scripts.pory"
@@ -927,3 +947,19 @@ SilversunCity_Sewers_Market_Muk_GiveReward_Text_0:
 SilversunCity_Sewers_Market_Muk_End_Text_0:
 # 415 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "Muk happily chomps on the Trash!$"
+
+SilversunCity_Sewers_Berger_Text_0:
+# 422 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Berger$"
+
+SilversunCity_Sewers_Berger_Text_1:
+# 422 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Hey! The statue trainer!\p"
+	.string "Bergmite and I came down here because\n"
+	.string "we heard they sell rare TMs. But they're\l"
+	.string "not letting me buy anything!$"
+
+SilversunCity_Sewers_Bergmite_Text_0:
+# 429 "data//maps/SilversunCity_Sewers/scripts.pory"
+	.string "Bergmite is pinching its nose...must be\n"
+	.string "hard without hands.$"
