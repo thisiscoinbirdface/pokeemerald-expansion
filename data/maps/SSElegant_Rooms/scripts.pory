@@ -59,6 +59,12 @@ script SSElegant_Rooms_Smeargle{
 }
 
 script SSElegant_Rooms_Gloria_Locked{
+    if (flag(FLAG_RAAZI_BEATEN)){
+        msgbox(format("It's locked."))
+        releaseall
+        end
+    }
+    
     msgbox_delay("Gloria", format("Please don't disturb me!"))
     end
 }

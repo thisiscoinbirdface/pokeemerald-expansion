@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSElegant_Rooms_Gabrielle",
-      "flag": "0"
+      "flag": "FLAG_RAAZI_BEATEN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSElegant_Rooms_Zoroark",
-      "flag": "0"
+      "flag": "FLAG_RAAZI_BEATEN"
     }
   ],
   "warp_events": [

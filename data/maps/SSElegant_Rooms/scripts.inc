@@ -66,16 +66,25 @@ SSElegant_Rooms_Smeargle::
 
 SSElegant_Rooms_Gloria_Locked::
 # 62 "data//maps/SSElegant_Rooms/scripts.pory"
-	msgbox_delay SSElegant_Rooms_Gloria_Locked_Text_0, SSElegant_Rooms_Gloria_Locked_Text_1
+	goto_if_set FLAG_RAAZI_BEATEN, SSElegant_Rooms_Gloria_Locked_2
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+	msgbox_delay SSElegant_Rooms_Gloria_Locked_Text_1, SSElegant_Rooms_Gloria_Locked_Text_2
+	end
+
+SSElegant_Rooms_Gloria_Locked_2:
+# 63 "data//maps/SSElegant_Rooms/scripts.pory"
+	msgbox SSElegant_Rooms_Gloria_Locked_Text_0
+# 64 "data//maps/SSElegant_Rooms/scripts.pory"
+	releaseall
 	end
 
 
 SSElegant_Rooms_Trainer_A::
-# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+# 74 "data//maps/SSElegant_Rooms/scripts.pory"
 	trainerbattle_single TRAINER_SSELEGANT_A, SSElegant_Rooms_Trainer_A_Text_0, SSElegant_Rooms_Trainer_A_Text_1
-# 69 "data//maps/SSElegant_Rooms/scripts.pory"
+# 75 "data//maps/SSElegant_Rooms/scripts.pory"
 	msgbox SSElegant_Rooms_Trainer_A_Text_2
-# 70 "data//maps/SSElegant_Rooms/scripts.pory"
+# 76 "data//maps/SSElegant_Rooms/scripts.pory"
 	releaseall
 	end
 
@@ -135,22 +144,26 @@ SSElegant_Rooms_Smeargle_Text_0:
 	.string "Smeargle looks seasick too...$"
 
 SSElegant_Rooms_Gloria_Locked_Text_0:
-# 62 "data//maps/SSElegant_Rooms/scripts.pory"
-	.string "Gloria$"
+# 63 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "It's locked.$"
 
 SSElegant_Rooms_Gloria_Locked_Text_1:
-# 62 "data//maps/SSElegant_Rooms/scripts.pory"
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+	.string "Gloria$"
+
+SSElegant_Rooms_Gloria_Locked_Text_2:
+# 68 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Please don't disturb me!$"
 
 SSElegant_Rooms_Trainer_A_Text_0:
-# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+# 74 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Hey! You're not getting that TM for\n"
 	.string "free!$"
 
 SSElegant_Rooms_Trainer_A_Text_1:
-# 68 "data//maps/SSElegant_Rooms/scripts.pory"
+# 74 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Alright, you can have the TM!$"
 
 SSElegant_Rooms_Trainer_A_Text_2:
-# 69 "data//maps/SSElegant_Rooms/scripts.pory"
+# 75 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Earthquake is a really strong TM!$"

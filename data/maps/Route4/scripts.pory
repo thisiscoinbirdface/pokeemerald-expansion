@@ -103,7 +103,7 @@ script Route4_TrainerBattle_Sona {
 
 script Route4_TrainerBattle_Jenny {
     trainerbattle_single(TRAINER_ROUTE4_JENNY, format("Oof! It's getting hotter and hotter. Where's the air conditioning?"), format("You're too hot!"))
-    msgbox(format("Tinkatink and I can't stand the heat of the volcano!"))
+    msgbox(format("Buneary, Chikorita and I can't stand the heat of the volcano!"))
     release
     end
 }

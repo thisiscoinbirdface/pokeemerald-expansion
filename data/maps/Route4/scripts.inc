@@ -730,8 +730,8 @@ Route4_TrainerBattle_Jenny_Text_1:
 
 Route4_TrainerBattle_Jenny_Text_2:
 # 106 "data//maps/Route4/scripts.pory"
-	.string "Tinkatink and I can't stand the heat of\n"
-	.string "the volcano!$"
+	.string "Buneary, Chikorita and I can't stand\n"
+	.string "the heat of the volcano!$"
 
 Route4_TrainerBattle_Kid1_Text_0:
 # 118 "data//maps/Route4/scripts.pory"
