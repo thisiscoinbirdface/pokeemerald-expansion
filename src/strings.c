@@ -1031,6 +1031,9 @@ const u8 gText_QuickRunOff[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Off");
 const u8 gText_BikeSurfMus[] = _("Bike/Surf Music");
 const u8 gText_BikeSurfMusOn[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}On");
 const u8 gText_BikeSurfMusOff[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Off");
+const u8 gText_Affection[] = _("Affection");
+const u8 gText_AffectionOn[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Enabled");
+const u8 gText_AffectionOff[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Disabled");
 
 const u8 gText_TextSpeedSlow[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Fast");
 const u8 gText_TextSpeedMid[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Hyper");

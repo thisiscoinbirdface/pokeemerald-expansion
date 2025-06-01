@@ -279,61 +279,68 @@ SilversunCity_Murkrow::
 
 
 SilversunCity_Meowth::
-# 202 "data//maps/SilversunCity/scripts.pory"
-	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
 # 203 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_Meowth_Text_0, MSGBOX_NPC
+	goto_if_set FLAG_SYS_AFFECTION_ENABLED, SilversunCity_Meowth_2
+# 207 "data//maps/SilversunCity/scripts.pory"
+	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
+# 208 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_Meowth_Text_1, MSGBOX_NPC
+	end
+
+SilversunCity_Meowth_2:
+# 203 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_Meowth_Text_0
 	end
 
 
 SilversunCity_Vivillon::
-# 208 "data//maps/SilversunCity/scripts.pory"
+# 213 "data//maps/SilversunCity/scripts.pory"
 	lockall
-# 209 "data//maps/SilversunCity/scripts.pory"
+# 214 "data//maps/SilversunCity/scripts.pory"
 	faceplayer
-# 210 "data//maps/SilversunCity/scripts.pory"
-	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
-# 212 "data//maps/SilversunCity/scripts.pory"
-	goto_if_set FLAG_SILVERSUN_VIVILLON, SilversunCity_Vivillon_2
 # 215 "data//maps/SilversunCity/scripts.pory"
+	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
+# 217 "data//maps/SilversunCity/scripts.pory"
+	goto_if_set FLAG_SILVERSUN_VIVILLON, SilversunCity_Vivillon_2
+# 220 "data//maps/SilversunCity/scripts.pory"
 	checkitem ITEM_LAVA_COOKIE
-# 216 "data//maps/SilversunCity/scripts.pory"
+# 221 "data//maps/SilversunCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Vivillon_5
-# 229 "data//maps/SilversunCity/scripts.pory"
+# 234 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_0
 SilversunCity_Vivillon_1:
-# 232 "data//maps/SilversunCity/scripts.pory"
+# 237 "data//maps/SilversunCity/scripts.pory"
 	releaseall
 	end
 
 SilversunCity_Vivillon_2:
-# 213 "data//maps/SilversunCity/scripts.pory"
+# 218 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_0
 	goto SilversunCity_Vivillon_1
 
 SilversunCity_Vivillon_5:
-# 217 "data//maps/SilversunCity/scripts.pory"
+# 222 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_1, MSGBOX_YESNO
-# 218 "data//maps/SilversunCity/scripts.pory"
+# 223 "data//maps/SilversunCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Vivillon_8
-# 226 "data//maps/SilversunCity/scripts.pory"
+# 231 "data//maps/SilversunCity/scripts.pory"
 	msgbox SilversunCity_Vivillon_Text_4
 	goto SilversunCity_Vivillon_1
 
 SilversunCity_Vivillon_8:
-# 219 "data//maps/SilversunCity/scripts.pory"
-	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
-# 220 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_Vivillon_Text_2
-# 221 "data//maps/SilversunCity/scripts.pory"
-	giveitem ITEM_SILVER_POWDER
-# 222 "data//maps/SilversunCity/scripts.pory"
-	msgbox SilversunCity_Vivillon_Text_3
-# 223 "data//maps/SilversunCity/scripts.pory"
-	release
 # 224 "data//maps/SilversunCity/scripts.pory"
+	playmoncry SPECIES_VIVILLON, CRY_MODE_NORMAL
+# 225 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_Vivillon_Text_2
+# 226 "data//maps/SilversunCity/scripts.pory"
+	giveitem ITEM_SILVER_POWDER
+# 227 "data//maps/SilversunCity/scripts.pory"
+	msgbox SilversunCity_Vivillon_Text_3
+# 228 "data//maps/SilversunCity/scripts.pory"
+	release
+# 229 "data//maps/SilversunCity/scripts.pory"
 	setflag FLAG_SILVERSUN_VIVILLON
 	goto SilversunCity_Vivillon_1
 
@@ -608,31 +615,35 @@ SilversunCity_Murkrow_Text_0:
 
 SilversunCity_Meowth_Text_0:
 # 203 "data//maps/SilversunCity/scripts.pory"
+	.string "affection$"
+
+SilversunCity_Meowth_Text_1:
+# 208 "data//maps/SilversunCity/scripts.pory"
 	.string "Meowth is skulking around the back of\n"
 	.string "the Silversun Theater. It looks angry -\l"
 	.string "better be careful!$"
 
 SilversunCity_Vivillon_Text_0:
-# 213 "data//maps/SilversunCity/scripts.pory"
+# 218 "data//maps/SilversunCity/scripts.pory"
 	.string "Vivillon looks hungry! It's eyeing your\n"
 	.string "bag...better move away quickly!$"
 
 SilversunCity_Vivillon_Text_1:
-# 217 "data//maps/SilversunCity/scripts.pory"
+# 222 "data//maps/SilversunCity/scripts.pory"
 	.string "Vivillon looks hungry! It's eyeing your\n"
 	.string "bag...\p"
 	.string "Give Vivillon a Lava Cookie?$"
 
 SilversunCity_Vivillon_Text_2:
-# 220 "data//maps/SilversunCity/scripts.pory"
+# 225 "data//maps/SilversunCity/scripts.pory"
 	.string "Vivillon chomped the cookie down!\p"
 	.string "It flutters towards you and puts\n"
 	.string "something in your bag...$"
 
 SilversunCity_Vivillon_Text_3:
-# 222 "data//maps/SilversunCity/scripts.pory"
+# 227 "data//maps/SilversunCity/scripts.pory"
 	.string "Thanks Vivillon!$"
 
 SilversunCity_Vivillon_Text_4:
-# 226 "data//maps/SilversunCity/scripts.pory"
+# 231 "data//maps/SilversunCity/scripts.pory"
 	.string "Better move away quickly!$"

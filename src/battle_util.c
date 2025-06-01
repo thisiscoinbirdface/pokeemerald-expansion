@@ -2039,7 +2039,7 @@ u8 DoFieldEndTurnEffects(void)
         case ENDTURN_STATUS_HEAL:
             for (gBattlerAttacker = 0; gBattlerAttacker < gBattlersCount; gBattlerAttacker++)
             {
-                if (B_AFFECTION_MECHANICS == TRUE
+                if (FlagGet(FLAG_SYS_AFFECTION_ENABLED)
                  && GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER
                  && GetBattlerAffectionHearts(gBattlerAttacker) >= AFFECTION_FOUR_HEARTS
                  && (Random() % 100 < 20))

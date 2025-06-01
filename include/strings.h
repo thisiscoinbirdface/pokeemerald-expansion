@@ -302,6 +302,10 @@ extern const u8 gText_BikeSurfMus[];
 extern const u8 gText_BikeSurfMusOn[];
 extern const u8 gText_BikeSurfMusOff[];
 
+extern const u8 gText_Affection[];
+extern const u8 gText_AffectionOn[];
+extern const u8 gText_AffectionOff[];
+
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];
 

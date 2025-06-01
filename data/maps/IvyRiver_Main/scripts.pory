@@ -393,7 +393,7 @@ script IvyRiver_Main_Zarude_Legendary{
 //Trainers
 //man 1
 script IvyRiver_Trainer_A {
-    trainerbattle_single(
+ trainerbattle_single(
         TRAINER_IVY_RIVER_A, 
         format("Are you collecting rare Pokémon too?"), 
         format("Wow, your Pokémon are rare!")

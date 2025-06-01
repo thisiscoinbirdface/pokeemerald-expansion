@@ -50,6 +50,7 @@ enum
     MENUITEM_AUTORUN,
     MENUITEM_QUICKRUN,
     MENUITEM_BIKESURFMUS,
+    MENUITEM_AFFECTION,
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
@@ -72,6 +73,7 @@ enum
 #define YPOS_AUTORUN      (MENUITEM_AUTORUN * 16)
 #define YPOS_QUICKRUN     (MENUITEM_QUICKRUN * 16)
 #define YPOS_BIKESURFMUS  (MENUITEM_BIKESURFMUS * 16)
+#define YPOS_AFFECTION    (MENUITEM_AFFECTION * 16)
 
 #define PAGE_COUNT  2
 
@@ -98,6 +100,8 @@ static u8   QuickRun_ProcessInput(u8 selection);
 static void QuickRun_DrawChoices(u8 selection);
 static u8   BikeSurfMus_ProcessInput(u8 selection);
 static void BikeSurfMus_DrawChoices(u8 selection);
+static u8   Affection_ProcessInput(u8 selection);
+static void Affection_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
 static u8 FrameType_ProcessInput(u8 selection);
@@ -132,7 +136,8 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
     [MENUITEM_BATTLESPEED]      = gText_BattleSpeed,
     [MENUITEM_AUTORUN]      = gText_AutoRun,    
     [MENUITEM_QUICKRUN]      = gText_QuickRun,    
-    [MENUITEM_BIKESURFMUS]      = gText_BikeSurfMus,    
+    [MENUITEM_BIKESURFMUS]      = gText_BikeSurfMus,  
+    [MENUITEM_AFFECTION]      = gText_Affection,    
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
@@ -209,7 +214,8 @@ static void VBlankCB(void)
 #define tBattleSpeed data[8]
 #define tAutoRun data[9]
 #define tQuickRun data[10]
-#define tBikeSurfMus data[10]
+#define tBikeSurfMus data[11]
+#define tAffection data[12]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -224,7 +230,8 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tBattleSpeed = VarGet(VAR_BATTLE_SPEED);
     gTasks[taskId].tAutoRun = FlagGet(FLAG_SYS_RUN_TOGGLE_SETTING);    
     gTasks[taskId].tQuickRun = FlagGet(FLAG_SYS_QUICK_RUN);       
-    gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);       
+    gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);    
+    gTasks[taskId].tAffection = FlagGet(FLAG_SYS_AFFECTION_ENABLED);       
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -247,7 +254,8 @@ static void DrawOptionsPg2(u8 taskId)
     BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
     AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
     QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
-    BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);    
+    BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);  
+    Affection_DrawChoices(gTasks[taskId].tAffection);    
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -569,7 +577,14 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 
             if (previousOption != gTasks[taskId].tBikeSurfMus)
                 BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);
-            break;               
+            break;      
+        case MENUITEM_AFFECTION:
+            previousOption = gTasks[taskId].tAffection;
+            gTasks[taskId].tAffection = Affection_ProcessInput(gTasks[taskId].tAffection);
+
+            if (previousOption != gTasks[taskId].tAffection)
+                Affection_DrawChoices(gTasks[taskId].tAffection);
+            break;                       
         default:
             return;
         }
@@ -595,6 +610,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gTasks[taskId].tAutoRun == 0 ? FlagClear(FLAG_SYS_RUN_TOGGLE_SETTING) : FlagSet(FLAG_SYS_RUN_TOGGLE_SETTING);
     gTasks[taskId].tQuickRun == 0 ? FlagClear(FLAG_SYS_QUICK_RUN) : FlagSet(FLAG_SYS_QUICK_RUN);
     gTasks[taskId].tBikeSurfMus == 0 ? FlagClear(FLAG_SYS_BIKE_SURF_MUS) : FlagSet(FLAG_SYS_BIKE_SURF_MUS);
+    gTasks[taskId].tAffection == 0 ? FlagClear(FLAG_SYS_AFFECTION_ENABLED) : FlagSet(FLAG_SYS_AFFECTION_ENABLED);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -988,6 +1004,28 @@ static void BikeSurfMus_DrawChoices(u8 selection)
     styles[selection] = 1;
     DrawOptionMenuChoice(gText_BikeSurfMusOn, 104, YPOS_BIKESURFMUS, styles[0]);
     DrawOptionMenuChoice(gText_BikeSurfMusOff, 162, YPOS_BIKESURFMUS, styles[1]);
+}
+
+
+static u8 Affection_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void Affection_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_AffectionOff, 104, YPOS_AFFECTION, styles[0]);
+    DrawOptionMenuChoice(gText_AffectionOn, 162, YPOS_AFFECTION, styles[1]);
 }
 
 
