@@ -389,6 +389,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "GastreeCity_Shard_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "GastreeCity_Shard_CantLeave_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "GastreeCity_Shard_CantLeave_Trigger"
     }
   ],
   "bg_events": [

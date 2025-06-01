@@ -86,10 +86,18 @@ Championship_R2::
 # 63 "data//maps/Championship_R2/scripts.pory"
 	removeobject 2
 # 65 "data//maps/Championship_R2/scripts.pory"
-	setvar VAR_CHAMP_STAGE, 3
+	special SpawnCameraObject
 # 66 "data//maps/Championship_R2/scripts.pory"
-	setflag FLAG_BEAT_R2
+	applymovement OBJ_EVENT_ID_CAMERA, Championship_R2_Movement_7
+# 67 "data//maps/Championship_R2/scripts.pory"
+	waitmovement 0
 # 68 "data//maps/Championship_R2/scripts.pory"
+	special RemoveCameraObject
+# 70 "data//maps/Championship_R2/scripts.pory"
+	setvar VAR_CHAMP_STAGE, 3
+# 71 "data//maps/Championship_R2/scripts.pory"
+	setflag FLAG_BEAT_R2
+# 73 "data//maps/Championship_R2/scripts.pory"
 	releaseall
 	end
 
@@ -159,6 +167,16 @@ Championship_R2_Movement_5:
 # 61 "data//maps/Championship_R2/scripts.pory"
 Championship_R2_Movement_6:
 # 61 "data//maps/Championship_R2/scripts.pory"
+	walk_down
+	step_end
+
+# 66 "data//maps/Championship_R2/scripts.pory"
+Championship_R2_Movement_7:
+# 66 "data//maps/Championship_R2/scripts.pory"
+	walk_left
+# 66 "data//maps/Championship_R2/scripts.pory"
+	walk_left
+# 66 "data//maps/Championship_R2/scripts.pory"
 	walk_down
 	step_end
 

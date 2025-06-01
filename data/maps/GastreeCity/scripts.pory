@@ -274,6 +274,23 @@ script GastreeCity_Shard_Trigger{
     end
 }
 
+script GastreeCity_Shard_CantLeave_Trigger{
+    if (flag(FLAG_SHRINE_QUEST)) {end}
+    if (flag(FLAG_BADGE01_GET)){
+        lockall
+        msgbox(format("I should use the Rare Shard Leader Inger gave me!"))
+        release
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        releaseall
+        end
+    }
+
+}
+
+
+
+
     //Pokémon flavour
 script GastreeCity_NPC8{
     msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and explore Route 4 together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)

@@ -19,10 +19,9 @@ script Championship_R1{
     setvar(VAR_TEMP_1, 1)
     setdynamicwarp(MAP_CHAMPIONSHIP_R1_LOBBY, 4, 13)
 
-    special(SpawnCameraObject)
-
     setrespawn(HEAL_LOCATION_CHAMPIONSHIP_CORRIDOR)
 
+    special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up * 2 face_right))
     waitmovement(0)
@@ -62,6 +61,12 @@ script Championship_R1{
     applymovement(2, moves(walk_down))
     waitmovement(0)
     removeobject(2)
+
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2 walk_down))
+    waitmovement(0)
+    special(RemoveCameraObject)
 
     setvar(VAR_CHAMP_STAGE, 2)
     setflag(FLAG_BEAT_R1)

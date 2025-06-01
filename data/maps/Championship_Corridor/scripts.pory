@@ -22,13 +22,13 @@ script Championship_Corridor_Register{
         release
     }
 
-
+    setflag(FLAG_GAME_CLEAR)
 	delay(20)
 	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	delay(40)
     setvar(VAR_TEMP_A, 1)
-    setflag(FLAG_GAME_CLEAR)
+
     special(GameClear)
     releaseall
     end

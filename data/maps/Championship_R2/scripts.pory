@@ -62,6 +62,11 @@ script Championship_R2{
     waitmovement(0)
     removeobject(2)
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 2 walk_down))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
     setvar(VAR_CHAMP_STAGE, 3)
     setflag(FLAG_BEAT_R2)
 

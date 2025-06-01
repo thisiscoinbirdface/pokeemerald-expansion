@@ -84,7 +84,7 @@ script ChampionshipVenue_Entry{
         if (var(VAR_RESULT) == 1){
             //pokenav confirmation
 
-            msgbox(format("Warning! You are about to enter the Pokemon Championship.\pIf you lose at any point in the tournament, you will be eliminated\Nand your game will auto-save.\pMake sure you're ready!"), MSGBOX_POKENAV)
+            msgbox(format("Warning! You are about to enter the Pokemon Championship.\pIf you lose at any point in the tournament, you will be eliminated\land your game will auto-save.\pMake sure you're ready!"), MSGBOX_POKENAV)
             dynmultichoice(10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm ready!", "Not yet")              
 
             if (var(VAR_RESULT) == 1) {end}
