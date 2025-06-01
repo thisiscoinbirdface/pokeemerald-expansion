@@ -143,12 +143,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    setflag FLAG_SYS_BIKE_SURF_MUS
+    setvar VAR_SYS_EXP_CAP, 1
 	release
 	end
 
 Debug_EventScript_Script_3::
-	clearflag FLAG_SYS_BIKE_SURF_MUS
+	setvar VAR_SYS_EXP_CAP, 2
 	release
 	end
 

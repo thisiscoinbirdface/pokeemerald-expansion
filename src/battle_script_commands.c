@@ -9,6 +9,7 @@
 #include "bw_summary_screen.h"
 #include "constants/moves.h"
 #include "constants/abilities.h"
+#include "event_data.h"
 #include "item.h"
 #include "util.h"
 #include "pokemon.h"
@@ -5164,7 +5165,7 @@ static void Cmd_getexp(void)
 
                     ApplyExperienceMultipliers(&gBattleStruct->battlerExpReward, *expMonId, gBattlerFainted);
 
-                    if (B_EXP_CAP_TYPE == EXP_CAP_HARD && gBattleStruct->battlerExpReward != 0)
+                    if (VarGet(VAR_SYS_EXP_CAP) == EXP_CAP_HARD && gBattleStruct->battlerExpReward != 0)
                     {
                         u32 growthRate = gSpeciesInfo[GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPECIES)].growthRate;
                         u32 currentExp = GetMonData(&gPlayerParty[*expMonId], MON_DATA_EXP);

@@ -284,18 +284,18 @@
     #define VAR_MASTERBALL_QUEST                             0x40DB // Unused Var
     #define VAR_STATUE_COUNT                                 0x40DC // Unused Var
 
-#define VAR_UNUSED_0x408B                                0x408B // Unused Var
 #define VAR_UNUSED_0x4091                                0x4091 // Unused Var
 #define VAR_UNUSED_0x409B                                0x409B // Unused Var
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_UNUSED_0x40A1                                0x40A1 // Unused var
 
 
-    //I AM GOING TO USE THESE | SYSTEM VARS
+    //I AM GOING TO USE THESE | SYSTEM VARS | OPTIONS MENU
     #define VAR_OVERWORLD_SPEEDUP                            0x406E // Unused Var    
     #define VAR_SYS_EXP_ALL                                  0x406D // Unused Var    
     #define VAR_SYS_BATTLE_SPEED                             0x406C // Unused Var
     #define VAR_SYS_DIFFICULTY                               0x40A8 // Unused Var
+    #define VAR_SYS_EXP_CAP                                  0x408B // (none, soft, hard)
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
