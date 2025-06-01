@@ -1576,8 +1576,8 @@
 #define FLAG_SYS_SURF_ENABLED                       (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_SYS_WHIRLPOOL_ENABLED                  (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_SYS_OW_FOLLOWERS_DISABLED              (SYSTEM_FLAGS + 0x8C) // Unused Flag
-#define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
+#define FLAG_SYS_RUNNING_SHOES_TOGGLE               (SYSTEM_FLAGS + 0x8D) // Unused Flag
+#define FLAG_SYS_RUN_TOGGLE_SETTING                 (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
