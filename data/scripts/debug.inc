@@ -148,7 +148,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_BOSS, Debug_BoxFilledMessage_Text
+	setflag FLAG_SYS_CHEATS_ENABLED
 	release
 	end
 

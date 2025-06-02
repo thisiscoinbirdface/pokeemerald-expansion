@@ -12,6 +12,90 @@ script Common_EventScript_NurseDemo{
 
 
 //ALL COMMON EVENT SCRIPTS GO HERE
+script Common_EventScript_Follower_Cheat{
+    message(format("What would you like to do?"))
+    waitmessage
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Portable PC", "Team Heal", "Apply Status", "Cancel")    
+    release
+    if (var(VAR_RESULT) == 0){
+        special(ShowPokemonStorageSystemPC)
+        waitstate        
+    }
+
+    if (var(VAR_RESULT) == 1){
+        call(Common_EventScript_OutOfCenterPartyHeal)
+    }
+
+    if (var(VAR_RESULT) == 2){
+        //choose mon
+        special(ChoosePartyMon)
+        waitstate
+
+        //check selection
+        if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
+            release
+            end
+        }
+
+        //burn it
+        callnative(ApplyStatusConditionFromField_Burn)
+        msgbox(format("burned!"))
+        release      
+    }
+
+    releaseall
+    end
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 script Common_EventScript_MintVendingMachine{
 
     msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)

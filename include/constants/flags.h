@@ -1583,7 +1583,7 @@
 #define FLAG_SYS_AFFECTION_ENABLED                  (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_SYS_STAT_EDITOR_ENABLED                (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_SYS_AUTOSCROLL                         (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_UNUSED_0x8F4                           (SYSTEM_FLAGS + 0x94) // Unused Flag
+#define FLAG_SYS_CHEATS_ENABLED                     (SYSTEM_FLAGS + 0x94) // Unused Flag
 #define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
 #define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag

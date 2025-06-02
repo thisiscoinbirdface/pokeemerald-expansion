@@ -11,10 +11,15 @@ gText_WantsToFly::
 	.string "{STR_VAR_1} looks up at the\nsky restlessly.\pWould you like to use FLY?$"
 
 EventScript_Follower::
+	goto_if_unset FLAG_SYS_CHEATS_ENABLED, EventScript_Follower_Normal 
+	goto_if_set FLAG_SYS_CHEATS_ENABLED, Common_EventScript_Follower_Cheat
+
+EventScript_Follower_Normal::
 	lock
 	bufferlivemonnickname 0
 	playfirstmoncry
 	getfolloweraction
+
 EventScript_FollowerEnd::
 	waitfieldeffect FLDEFF_EMOTE
 	release
