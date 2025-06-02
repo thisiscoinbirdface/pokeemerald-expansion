@@ -27,6 +27,7 @@ script Championship_R5{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4 walk_right * 4))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 3 face_right))
     waitmovement(0)
+
     delay(16)
     
     msgbox_delay("Announcer", format("This is it, everyone!\pAfter countless tough battles, we're finally here with the two strongest trainers in all of Cormoria!\pLet's hear a huge cheer for the grand finalists!"))
@@ -34,13 +35,9 @@ script Championship_R5{
     waitse
     msgbox_delay("Announcer", format("On the right, we have the overwhelming cword favourite and this year's frontrunner for Champion - the fiery Ace Rookie from the Galecrest Decetive Academy - Kohla!\pWith his partner Ceruledge, he's been dominant in the..."))
 
-
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Kohla", format("It had to be you, {PLAYER}.\pPoetic."))
-
-    msgbox_delay("Announcer", format("Trainers - are you ready?"))
-
-    applymovement(1, moves(jump_in_place_left))
+    msgbox_delay("Kohla", format("It had to be you, {PLAYER}."))
+    
     msgbox_delay("Kohla", format("In the end, it was you.\pWhile the world will give me all the credit, I know the truth.\pI can't deny the truth.\pYou were the one who stopped Rue and Team Somber."))
 
     playse(SE_APPLAUSE)
@@ -51,10 +48,7 @@ script Championship_R5{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
     waitmovement(0)    
 
-    fadenewbgm(MUS_DUMMY)
-    playse(SE_APPLAUSE)
-    waitse
-    msgbox_delay("Announcer", format("3...\p2...\p1...\pBattle!"))
+    msgbox_delay("Kohla", format("When I look at you, I see everything I don't have.\pEverything I deserve, but don't have.\pBut I'm still the Ace Rookie!\nI'm the one who put it all on the line against Team Somber! I'm the one who reached the finals of the Pokemon Championship!\pAnd today, right here, right now,...\p...I'm going to get what I deserve!"))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_E, format("Argh! No!"))
 
