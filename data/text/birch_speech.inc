@@ -1,8 +1,34 @@
-gText_PreBirch::
-	.string "This is a non-profit game.\n"
-	.string "Don't pay for it!\l"
+gText_PreBirch1::
+	.string "This is a non-profit game. If you paid\n"
+	.string "for it, please get your money back!\n"
+	.string "\n"	
+	.string "There are no EVs in this game. Do not\n"
+	.string "EV train your Pokémon. You can change\n"
+	.string "Natures and IVs over the course of\n"
+	.string "the game without needing to reset.\p"		
 	.string "$"
 	
+gText_PreBirch2::
+	.string "The mGBA emulator is recommended.\n"
+	.string "\n"
+	.string "Difficulty, cheats and a variety of\n"	
+	.string "features can be adjusted in the options.\n"
+	.string "\n"
+	.string "Documentation for the game is available\n"
+	.string "online. If you get stuck, look it up!\p"		
+	.string "$"
+	
+gText_PreBirch3::
+	.string "You are about to enter a living,\n"
+	.string "breathing world with people and Pokémon.\n"
+	.string "Take your time and explore every corner.\n"
+	.string "Undertake your journey and grow with\n"
+	.string "your trusted partners.\n"
+	.string "\n"	
+	.string "I hope you enjoy this labour of love.\p"		
+	.string "$"
+	
+
 gText_Birch_Welcome::
 	.string "TENEBRIS LABORATORY\n"
 	.string "LETTER OF APPOINTMENT\p"

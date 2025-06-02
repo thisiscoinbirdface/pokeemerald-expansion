@@ -196,6 +196,7 @@ static void Task_DisplayMainMenuInvalidActionError(u8);
 static void AddBirchSpeechObjects(u8);
 static void Task_PreBirch1(u8);
 static void Task_PreBirch2(u8);
+static void Task_PreBirch3(u8);
 static void Task_PreBirchSetup(u8);
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8);
 static void NewGameBirchSpeech_StartFadeInTarget1OutTarget2(u8, u8);
@@ -473,8 +474,8 @@ static const struct WindowTemplate sNewGameBirchSpeech_PreBirchWindow[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 2,
-        .width = BIRCHSPEECH_WIN_D_WIDTH,
-        .height = BIRCHSPEECH_WIN_D_HEIGHT,
+        .width = 27,
+        .height = 14,
         .paletteNum = 15,
         .baseBlock = 1
     },    
@@ -1451,7 +1452,7 @@ static void Task_PreBirch1(u8 taskId)
         // PutWindowTilemap(0);
         // CopyWindowToVram(0, COPYWIN_GFX);
         // NewGameBirchSpeech_ClearWindow(0);      
-        StringExpandPlaceholders(gStringVar4, gText_PreBirch);
+        StringExpandPlaceholders(gStringVar4, gText_PreBirch1);
         AddTextPrinterForFullScreen(TRUE);
         gTasks[taskId].func = Task_PreBirch2;
     }
@@ -1462,20 +1463,36 @@ static void Task_PreBirch2(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
+        StringExpandPlaceholders(gStringVar4, gText_PreBirch2);
+        AddTextPrinterForFullScreen(TRUE);
+        gTasks[taskId].func = Task_PreBirch3;   //change this to prebirch 3 if i want to show prebirch3 text
+    }     
+}
+
+static void Task_PreBirch3(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        StringExpandPlaceholders(gStringVar4, gText_PreBirch3);
+        AddTextPrinterForFullScreen(TRUE);
         gTasks[taskId].func = Task_PreBirchSetup;
     }     
 }
 
+
 static void Task_PreBirchSetup(u8 taskId)
 {
-    FreeAllWindowBuffers();
-    NewGameBirchSpeech_ClearWindow(0);
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        FreeAllWindowBuffers();
+        NewGameBirchSpeech_ClearWindow(0);
 
-    ShowBg(0);
-    ShowBg(1);
-    PlayBGM(MUS_ROUTE122);
-    BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
-    gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowBirch;
+        ShowBg(0);
+        ShowBg(1);
+        PlayBGM(MUS_ROUTE122);
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowBirch;
+    }
 }
 
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)
