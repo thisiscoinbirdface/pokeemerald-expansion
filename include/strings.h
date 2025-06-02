@@ -306,6 +306,9 @@ extern const u8 gText_Affection[];
 extern const u8 gText_AffectionOn[];
 extern const u8 gText_AffectionOff[];
 
+extern const u8 gText_Autoscroll[];
+extern const u8 gText_AutoscrollPress[];
+extern const u8 gText_AutoscrollAuto[];
 
 extern const u8 gText_ExpCap[];
 extern const u8 gText_ExpCapNone[];

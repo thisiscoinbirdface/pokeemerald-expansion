@@ -9,6 +9,8 @@
 #include "scanline_effect.h"
 #include "sprite.h"
 #include "strings.h"
+#include "sound.h"
+#include "constants/songs.h"
 #include "task.h"
 #include "text.h"
 #include "text_window.h"
@@ -59,6 +61,7 @@ enum
 {
     MENUITEM_DIFFICULTY,   
     MENUITEM_EXPCAP,   
+    MENUITEM_AUTOSCROLL,
     MENUITEM_CANCEL_PG3,
     MENUITEM_COUNT_PG3,
 };
@@ -86,6 +89,7 @@ enum
 
 #define YPOS_DIFFICULTY   (MENUITEM_DIFFICULTY * 16)
 #define YPOS_EXPCAP       (MENUITEM_EXPCAP * 16)
+#define YPOS_AUTOSCROLL   (MENUITEM_AUTOSCROLL * 16)
 
 #define PAGE_COUNT  3
 
@@ -116,6 +120,8 @@ static u8   BikeSurfMus_ProcessInput(u8 selection);
 static void BikeSurfMus_DrawChoices(u8 selection);
 static u8   Affection_ProcessInput(u8 selection);
 static void Affection_DrawChoices(u8 selection);
+static u8   Autoscroll_ProcessInput(u8 selection);
+static void Autoscroll_DrawChoices(u8 selection);
 static u8   Difficulty_ProcessInput(u8 selection);
 static void Difficulty_DrawChoices(u8 selection);
 static u8   ExpCap_ProcessInput(u8 selection);
@@ -163,6 +169,7 @@ static const u8 *const sOptionMenuItemsNames_Pg3[MENUITEM_COUNT_PG3] =
 {
     [MENUITEM_DIFFICULTY]      = gText_Difficulty,   
     [MENUITEM_EXPCAP]          = gText_ExpCap,   
+    [MENUITEM_AUTOSCROLL]          = gText_Autoscroll,   
     [MENUITEM_CANCEL_PG3]      = gText_OptionMenuCancel,
 };
 
@@ -243,6 +250,7 @@ static void VBlankCB(void)
 #define tAffection data[12]
 #define tDifficulty data[13]
 #define tExpCap data[14]
+#define tAutoscroll data[15]
 
 static void ReadAllCurrentSettings(u8 taskId)
 {
@@ -260,7 +268,8 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].tBikeSurfMus = FlagGet(FLAG_SYS_BIKE_SURF_MUS);    
     gTasks[taskId].tAffection = FlagGet(FLAG_SYS_AFFECTION_ENABLED);  
     gTasks[taskId].tDifficulty = VarGet(VAR_SYS_DIFFICULTY);
-    gTasks[taskId].tExpCap = VarGet(VAR_SYS_EXP_CAP);    
+    gTasks[taskId].tExpCap = VarGet(VAR_SYS_EXP_CAP);     
+    gTasks[taskId].tAutoscroll = FlagGet(FLAG_SYS_AUTOSCROLL); 
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -294,6 +303,7 @@ static void DrawOptionsPg3(u8 taskId)
     ReadAllCurrentSettings(taskId);    
     Difficulty_DrawChoices(gTasks[taskId].tDifficulty);    
     ExpCap_DrawChoices(gTasks[taskId].tExpCap);    
+    Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll);    
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -407,6 +417,7 @@ static u8 Process_ChangePage(u8 CurrentPage)
 {
     if (JOY_NEW(R_BUTTON))
     {
+        PlaySE(SE_SELECT);
         if (CurrentPage < PAGE_COUNT - 1)
             CurrentPage++;
         else
@@ -414,6 +425,7 @@ static u8 Process_ChangePage(u8 CurrentPage)
     }
     if (JOY_NEW(L_BUTTON))
     {
+        PlaySE(SE_SELECT);
         if (CurrentPage != 0)
             CurrentPage--;
         else
@@ -454,6 +466,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
 {
     if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
     {
+        PlaySE(SE_SELECT);
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
         sCurrPage = Process_ChangePage(sCurrPage);
@@ -463,13 +476,16 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     {
         if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL)
             gTasks[taskId].func = Task_OptionMenuSave;
+            PlaySE(SE_SELECT);
     }
     else if (JOY_NEW(B_BUTTON))
     {
+        PlaySE(SE_SELECT);
         gTasks[taskId].func = Task_OptionMenuSave;
     }
     else if (JOY_NEW(DPAD_UP))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection > 0)
             gTasks[taskId].tMenuSelection--;
         else
@@ -478,6 +494,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL)
             gTasks[taskId].tMenuSelection++;
         else
@@ -704,6 +721,13 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
             if (previousOption != gTasks[taskId].tExpCap)
                 ExpCap_DrawChoices(gTasks[taskId].tExpCap);
             break;                                    
+        case MENUITEM_AUTOSCROLL:
+            previousOption = gTasks[taskId].tAutoscroll;
+            gTasks[taskId].tAutoscroll = Autoscroll_ProcessInput(gTasks[taskId].tAutoscroll);
+
+            if (previousOption != gTasks[taskId].tAutoscroll)
+                Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll);
+            break;                                    
         default:
             return;
         }
@@ -733,6 +757,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gTasks[taskId].tAffection == 0 ? FlagClear(FLAG_SYS_AFFECTION_ENABLED) : FlagSet(FLAG_SYS_AFFECTION_ENABLED);
     VarSet(VAR_SYS_DIFFICULTY, gTasks[taskId].tDifficulty);
     VarSet(VAR_SYS_EXP_CAP, gTasks[taskId].tExpCap);
+    gTasks[taskId].tAutoscroll == 0 ? FlagClear(FLAG_SYS_AUTOSCROLL) : FlagSet(FLAG_SYS_AUTOSCROLL);
 
     //call the difficulty changing script here?
 
@@ -1159,7 +1184,7 @@ static u8 Difficulty_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
-        if (selection <= 1)
+        if (selection <= 0)
             selection++;
         else
             selection = 0;
@@ -1171,7 +1196,7 @@ static u8 Difficulty_ProcessInput(u8 selection)
         if (selection != 0)
             selection--;
         else
-            selection = 2;
+            selection = 1;
 
         sArrowPressed = TRUE;
     }
@@ -1200,7 +1225,7 @@ static void Difficulty_DrawChoices(u8 selection)
 
     DrawOptionMenuChoice(gText_DifficultyEasy, 104, YPOS_DIFFICULTY, styles[0]);       //normal
     DrawOptionMenuChoice(gText_DifficultyNormal, 146, YPOS_DIFFICULTY, styles[1]);     //hard
-    DrawOptionMenuChoice(gText_DifficultyHard, 180, YPOS_DIFFICULTY, styles[2]);       //wild
+//    DrawOptionMenuChoice(gText_DifficultyHard, 180, YPOS_DIFFICULTY, styles[2]);       //wild
     // DrawOptionMenuChoice(gText_BattleSpeed4X, 176, YPOS_BATTLESPEED, styles[3]);
 
 
@@ -1250,12 +1275,36 @@ static void ExpCap_DrawChoices(u8 selection)
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_ExpCapNone, 104, YPOS_EXPCAP, styles[0]);       //normal
-    DrawOptionMenuChoice(gText_ExpCapSoft, 146, YPOS_EXPCAP, styles[1]);     //hard
+    DrawOptionMenuChoice(gText_ExpCapSoft, 142, YPOS_EXPCAP, styles[1]);       //hard
     DrawOptionMenuChoice(gText_ExpCapHard, 180, YPOS_EXPCAP, styles[2]);       //wild
     // DrawOptionMenuChoice(gText_BattleSpeed4X, 176, YPOS_BATTLESPEED, styles[3]);
 
 
 }
+
+
+static u8 Autoscroll_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void Autoscroll_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_AutoscrollPress, 104, YPOS_AUTOSCROLL, styles[0]);
+    DrawOptionMenuChoice(gText_AutoscrollAuto, 162, YPOS_AUTOSCROLL, styles[1]);
+}
+
+
 
 
 static void DrawHeaderText(void)

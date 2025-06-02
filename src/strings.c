@@ -1057,8 +1057,13 @@ const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
 const u8 gText_FollowerOff[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Hide");
 const u8 gText_FollowerOn[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Show");
 const u8 gText_DifficultyEasy[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Normal");
-const u8 gText_DifficultyNormal[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Hard");
+const u8 gText_DifficultyNormal[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Challenge");
 const u8 gText_DifficultyHard[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Wild");
+
+const u8 gText_Autoscroll[] = _("Text Scroll");
+const u8 gText_AutoscrollPress[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Press");
+const u8 gText_AutoscrollAuto[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}Auto");
+
 
 const u8 gText_BattleSpeed[] = _("Battle Speed");
 const u8 gText_BattleSpeed1X[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}1x");

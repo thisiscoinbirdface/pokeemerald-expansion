@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle.h"
+#include "event_data.h"
 #include "main.h"
 #include "m4a.h"
 #include "palette.h"
@@ -1010,11 +1011,11 @@ void SetResultWithButtonPress(bool32 *result)
 bool32 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
 {
     bool32 result = FALSE;
-    if (gTextFlags.autoScroll != 0 || AUTO_SCROLL_TEXT)
+    if (gTextFlags.autoScroll != 0 || FlagGet(FLAG_SYS_AUTOSCROLL))
     {
         result = TextPrinterWaitAutoMode(textPrinter);
 
-        if (AUTO_SCROLL_TEXT)
+        if (FlagGet(FLAG_SYS_AUTOSCROLL))
             SetResultWithButtonPress(&result);
     }
     else
@@ -1028,11 +1029,11 @@ bool32 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
 bool32 TextPrinterWait(struct TextPrinter *textPrinter)
 {
     bool32 result = FALSE;
-    if (gTextFlags.autoScroll != 0 || AUTO_SCROLL_TEXT)
+    if (gTextFlags.autoScroll != 0 || FlagGet(FLAG_SYS_AUTOSCROLL))
     {
         result = TextPrinterWaitAutoMode(textPrinter);
 
-        if (AUTO_SCROLL_TEXT)
+        if (FlagGet(FLAG_SYS_AUTOSCROLL))
             SetResultWithButtonPress(&result);
     }
     else
