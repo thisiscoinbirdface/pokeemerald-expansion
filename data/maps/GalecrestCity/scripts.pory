@@ -373,6 +373,7 @@ script GalecrestCity_NPC_11{
         setflag(FLAG_GALECREST_NURSE_BERRY)        
         msgbox(format("They're yummy!"), MSGBOX_NPC)
     }
+    releaseall
     end
 }
 

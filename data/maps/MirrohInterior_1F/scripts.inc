@@ -252,7 +252,7 @@ MirrohInterior_1F_EventScript_NurseQuest_End_2:
 # 163 "data//maps/MirrohInterior_1F/scripts.pory"
 	release
 # 166 "data//maps/MirrohInterior_1F/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 167 "data//maps/MirrohInterior_1F/scripts.pory"
 	removeobject LOCALID_CH1
 # 168 "data//maps/MirrohInterior_1F/scripts.pory"
@@ -264,7 +264,7 @@ MirrohInterior_1F_EventScript_NurseQuest_End_2:
 # 171 "data//maps/MirrohInterior_1F/scripts.pory"
 	removeobject LOCALID_NURSE
 # 172 "data//maps/MirrohInterior_1F/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 175 "data//maps/MirrohInterior_1F/scripts.pory"
 	completequest QUEST_MIRROH_NURSE_CHANSEY
 # 176 "data//maps/MirrohInterior_1F/scripts.pory"

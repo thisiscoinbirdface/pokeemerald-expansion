@@ -55,7 +55,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_B_DASH)    
 
     speakername("Mom") 
-    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. Slip on these Running Shoes and race in the great outdoors!"))
+    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. You can switch between holding B and pressing B in the options!"))
     release
     delay(8)
 

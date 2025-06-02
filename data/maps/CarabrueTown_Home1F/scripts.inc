@@ -252,9 +252,9 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_6:
 # 58 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "{PLAYER}, those shoes came with\n"
 	.string "instructions: Press the B Button to\l"
-	.string "toggle running on and off. Slip on these\l"
-	.string "Running Shoes and race in the great\l"
-	.string "outdoors!$"
+	.string "toggle running on and off. You can\l"
+	.string "switch between holding B and pressing B\l"
+	.string "in the options!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_7:
 # 63 "data//maps/CarabrueTown_Home1F/scripts.pory"

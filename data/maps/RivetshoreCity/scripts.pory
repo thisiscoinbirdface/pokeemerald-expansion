@@ -226,9 +226,9 @@ script RivetshoreCity_Assembly_Trigger{
     removeobject(LOCALID_JANIA)
 
     //raazi exit
-    fadescreenswapbuffers(FADE_TO_BLACK)
+    fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_RAAZI)
-    fadescreenswapbuffers(FADE_FROM_BLACK)
+    fadescreen(FADE_FROM_BLACK)
 
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_left * 8))
     waitmovement(0)

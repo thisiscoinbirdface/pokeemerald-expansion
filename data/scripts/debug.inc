@@ -143,35 +143,27 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-    setvar VAR_SYS_EXP_CAP, 1
-	msgbox Debug_EventScript_Text_OffensiveIVs, MSGBOX_DEFAULT
+	warp MAP_ROUTE8, 47, 45
 	release
 	end
 
 Debug_EventScript_Script_3::
-	setvar VAR_SYS_EXP_CAP, 2
-	msgbox Debug_EventScript_Text_DefensiveIVs, MSGBOX_DEFAULT
 	release
 	end
 
 Debug_EventScript_Script_4::
-	clearflag FLAG_HIDE_ROUTE1_STRONG
-	setflag FLAG_HIDE_ROUTE1_NORMAL
 	release
 	end
 
 Debug_EventScript_Script_5::
-	warp MAP_ROUTE6, 42, 9
 	release
 	end
 
 Debug_EventScript_Script_6::
-	special EnterSafariMode
 	release
 	end
 
 Debug_EventScript_Script_7::
-	clearflag FLAG_LILYPOND_FISHERMAN_QUEST_START
 	release
 	end
 

@@ -87,7 +87,7 @@ script IvyRiver_Ranger_FirstQuest{
         end
     }
 
-    msgbox(format("Hello {PLAYER}! What are you upto?"), MSGBOX_NPC)
+    msgbox(format("Hello {PLAYER}! What are you up to?"), MSGBOX_NPC)
 
     releaseall
     end

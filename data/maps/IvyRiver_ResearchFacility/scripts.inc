@@ -687,7 +687,7 @@ IvyRiver_Ranger_FirstQuest_Text_10:
 
 IvyRiver_Ranger_FirstQuest_Text_11:
 # 90 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
-	.string "Hello {PLAYER}! What are you upto?$"
+	.string "Hello {PLAYER}! What are you up to?$"
 
 IvyRiver_Ranger_FirstQuest_Reward_Text_0:
 # 98 "data//maps/IvyRiver_ResearchFacility/scripts.pory"

@@ -58,7 +58,8 @@ script IvyRiver_Main_Fisherman_AssembleTrigger{
 
 
         //flags and quests
-        setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)         
+        setflag(FLAG_HIDE_IVYRIVER_FISHERMEN)   
+        clearflag(FLAG_ITEM_IVYRIVER_GREEN_SCARF)      
         releaseall
         end
 
@@ -456,4 +457,6 @@ script IvyRiver_NPC2{
     msgbox(format("Most people you'll meet here are either collecting rare Pokémon...or lost!\pLike me..."), MSGBOX_NPC)
     end
 }
+
+
 

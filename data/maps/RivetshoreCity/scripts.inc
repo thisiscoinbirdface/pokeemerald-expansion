@@ -324,11 +324,11 @@ RivetshoreCity_Assembly_Trigger::
 # 226 "data//maps/RivetshoreCity/scripts.pory"
 	removeobject LOCALID_JANIA
 # 229 "data//maps/RivetshoreCity/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 230 "data//maps/RivetshoreCity/scripts.pory"
 	removeobject LOCALID_RAAZI
 # 231 "data//maps/RivetshoreCity/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 # 233 "data//maps/RivetshoreCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, RivetshoreCity_Gabrielle_Trigger_Movement_2
 # 234 "data//maps/RivetshoreCity/scripts.pory"
