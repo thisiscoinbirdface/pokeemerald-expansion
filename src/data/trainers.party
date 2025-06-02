@@ -73,6 +73,10 @@ Comments can be added as C comment blocks
 /*Comments can also be on a single line*/
 
 
+
+
+
+
 === TRAINER_NONE ===
 Name:
 Class: Youngster
@@ -80,6 +84,7 @@ Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: No
+
 
 === TRAINER_ROUTE1_A ===
 Name: Jose
@@ -90,6 +95,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Purple
 
 Rattata-Alola
 Level: 3
@@ -103,15 +109,15 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
+Mugshot: Purple
 
-Gothita
+Timburr
 Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE1_B ===
-Name: Sana
 Difficulty: Easy
+Name: Sana
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -123,22 +129,24 @@ Pidove
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
 === TRAINER_ROUTE1_B ===
-Difficulty: Normal
 Name: Sana
+Difficulty: Normal
 Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Gothita
+Noibat
 Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_ROUTE1_C ===
 Name: Manya
+Difficulty: Easy
 Class: Bug Catcher F
 Pic: Bug Catcher F
 Gender: Male
@@ -154,8 +162,27 @@ Nymble
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_ROUTE1_C ===
+Name: Manya
+Difficulty: Normal
+Class: Bug Catcher F
+Pic: Bug Catcher F
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Blipbug
+Level: 3
+
+Nymble
+Level: 3
+
+
 === TRAINER_KOHLA_LAB ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
@@ -167,8 +194,23 @@ Charcadet
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_KOHLA_LAB ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Charcadet
+Level: 7
+
+
 === TRAINER_ROUTE3_JANA ===
 Name: Jana
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -184,8 +226,27 @@ Vulpix-Alola
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_JANA ===
+Name: Jana
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Fennekin
+Level: 7
+
+Vulpix-Alola
+Level: 8
+
+
+
 === TRAINER_ROUTE3_KIM ===
 Name: Kim
+Difficulty: Easy
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -201,8 +262,28 @@ Swablu
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_KIM ===
+Name: Kim
+Difficulty: Normal
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Pineco @ Choice Band
+Level: 7
+- Self-Destruct
+
+Swablu
+Level: 8
+
+
+
 === TRAINER_ROUTE3_RONNIE ===
 Name: Ronnie
+Difficulty: Easy
 Class: Backpacker
 Pic: Backpacker
 Gender: Male
@@ -218,8 +299,26 @@ Sentret
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_RONNIE ===
+Name: Ronnie
+Difficulty: Normal
+Class: Backpacker
+Pic: Backpacker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Cubone
+Level: 7
+
+Sentret
+Level: 9
+
+
 === TRAINER_ROUTE3_CHARA ===
 Name: Chara
+Difficulty: Easy
 Class: Cool Girl
 Pic: Cool Girl
 Gender: Female
@@ -235,8 +334,27 @@ Swablu
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_ROUTE3_CHARA ===
+Name: Chara
+Class: Cool Girl
+Pic: Cool Girl
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Teddiursa
+Level: 8
+
+Swablu
+Level: 9
+
+
+
 === TRAINER_ROUTE3_EVIL_GABRIELLE ===
 Name: Gabrielle
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -248,8 +366,24 @@ Zorua-Hisui
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_EVIL_GABRIELLE ===
+Name: Gabrielle
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Zorua-Hisui
+Level: 12
+
+
+
 === TRAINER_GASTREEGYM_JACO === 
 Name: Jaco
+Difficulty: Easy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -261,8 +395,23 @@ Geodude-Alola
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_GASTREEGYM_JACO === 
+Name: Jaco
+Difficulty: Normal
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Geodude-Alola
+Level: 10
+
+
 === TRAINER_GASTREEGYM_SKIP ===
 Name: Skip
+Difficulty: Easy
 Class: Builder
 Pic: Builder
 Gender: Male
@@ -278,8 +427,26 @@ Geodude-Alola
 Level: 11
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_GASTREEGYM_SKIP ===
+Name: Skip
+Difficulty: Normal
+Class: Builder
+Pic: Builder
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Smart Trainer
+
+Rockruff
+Level: 10
+
+Geodude-Alola
+Level: 11
+
+
 === TRAINER_GASTREEGYM_LEADER ===
 Name: Inger
+Difficulty: Easy
 Class: Leader
 Pic: Leader Inger
 Gender: Female
@@ -307,8 +474,40 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Confuse Ray
 - Rollout
 
+=== TRAINER_GASTREEGYM_LEADER ===
+Name: Inger
+Difficulty: Normal
+Class: Leader
+Pic: Leader Inger
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Items: Potion
+Mugshot: Yellow
+
+Rockruff
+Level: 12
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Tackle
+- Leer
+- Sand Attack
+- Rock Throw
+
+Geodude-Alola @ Oran Berry
+Level: 12
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+Minior @ Oran Berry
+Level: 12
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Confuse Ray
+- Rollout
+
+
 === TRAINER_GASTREE_KOHLA ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
@@ -324,8 +523,28 @@ Charcadet
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_GASTREE_KOHLA ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Yamper
+Level: 11
+
+Charcadet @ Oran Berry
+Level: 13
+
+
+
+
 === TRAINER_ROUTE4_GRUNTS ===
 Name: Grunts
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Male
@@ -341,10 +560,27 @@ Drowzee
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_GRUNTS ===
+Name: Grunts
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt Duo
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer
+
+Impidimp
+Level: 14
+
+Drowzee
+Level: 15
+
 
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
 Name: Gabrielle
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -361,8 +597,27 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
+=== TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
+Name: Gabrielle
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Zorua-Hisui @ Ghost Gem
+Level: 17
+
+Baltoy
+Level: 16
+
+
+
 === TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
@@ -374,8 +629,23 @@ Drowzee
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_CERAMBASECAMP_GRUNT1 ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Drowzee
+Level: 15
+
 === TRAINER_CERAMBASECAMP_GRUNT2 ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -391,8 +661,25 @@ Drowzee
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_CERAMBASECAMP_GRUNT2 ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Impidimp
+Level: 14
+
+Drowzee
+Level: 15
+
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
@@ -408,8 +695,27 @@ Yanma
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_CERAMBASECAMP_GRUNT3 ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Bronzor
+Level: 14
+
+Yanma
+Level: 15
+
+
 === TRAINER_ROUTE4_RAHA ===
 Name: Raha
+Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -422,8 +728,29 @@ Shiny: Yes
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_ROUTE4_RAHA ===
+Name: Raha
+Difficulty: Normal
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+Chinchou
+Shiny: Yes
+Level: 12
+
+Growlithe-Hisui
+Shiny: Yes
+Level: 13
+
+
 === TRAINER_ROUTE4_CAMMY ===
 Name: Cammy
+Difficulty: Easy
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -439,8 +766,26 @@ Swablu
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_CAMMY ===
+Name: Cammy
+Difficulty: Normal
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Swablu
+Level: 9
+
+Greavard
+Level: 11
+
+
 === TRAINER_ROUTE4_SONA ===
 Name: Sona
+Difficulty: Easy
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -456,8 +801,27 @@ Chikorita
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_ROUTE4_SONA ===
+Name: Sona
+Difficulty: Normal
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Chikorita
+Level: 11
+
+Mawile
+Level: 12
+
+
 === TRAINER_ROUTE4_JENNY ===
 Name: Jenny
+Difficulty: Easy
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -473,9 +837,26 @@ Chikorita
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_JENNY ===
+Name: Jenny
+Difficulty: Normal
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Chikorita
+Level: 12
+
+Mawile
+Level: 13
+
 
 === TRAINER_ROUTE4_KID1 ===
 Name: Morty
+Difficulty: Easy
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -487,8 +868,24 @@ Tyrogue
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_KID1 ===
+Name: Morty
+Difficulty: Normal
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Basic Trainer / Try To Faint
+
+Tyrogue
+Level: 11
+
+
+
 === TRAINER_ROUTE4_KID2 ===
 Name: Lala
+Difficulty: Easy
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -500,8 +897,24 @@ Budew
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_KID2 ===
+Name: Lala
+Difficulty: Normal
+Class: Picnicker
+Pic: Picnicker
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Basic Trainer / Try To Faint
+
+Budew
+Level: 12
+
+
+
 === TRAINER_ROUTE4_KID3 ===
 Name: Pine
+Difficulty: Easy
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -518,8 +931,29 @@ Mime Jr.
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE4_KID3 ===
+Name: Pine
+Difficulty: Normal
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Blue
+
+Riolu
+Level: 13
+
+Mime Jr.
+Level: 14
+
+
+
+
 === TRAINER_CERAMBASECAMPGYM_A ===
 Name: Tanner
+Difficulty: Easy
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -531,8 +965,23 @@ Rolycoly
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_CERAMBASECAMPGYM_A ===
+Name: Tanner
+Difficulty: Normal
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Rolycoly
+Level: 15
+
+
 === TRAINER_CERAMBASECAMPGYM_B ===
 Name: Bron
+Difficulty: Easy
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -548,8 +997,27 @@ Fletchling
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_CERAMBASECAMPGYM_B ===
+Name: Bron
+Difficulty: Normal
+Class: Kindler
+Pic: Kindler
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Rolycoly
+Level: 14
+
+Fletchling
+Level: 16
+
+
 === TRAINER_CERAMBASECAMPGYM_C ===
 Name: Jordi
+Difficulty: Easy
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -561,8 +1029,26 @@ Braixen
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_CERAMBASECAMPGYM_C ===
+Name: Jordi
+Difficulty: Normal
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Try To Faint
+
+Braixen
+Level: 16
+
+Fletchling
+Level: 16
+
+
 === TRAINER_CERAMBASECAMPGYM_D ===
 Name: Alba
+Difficulty: Easy
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -577,9 +1063,29 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Sizzlipede
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
- 
+
+
+
+=== TRAINER_CERAMBASECAMPGYM_D ===
+Name: Alba
+Difficulty: Normal
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Fletchling
+Level: 15
+
+Sizzlipede
+Level: 16
+
+
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
 Name: Ariana
+Difficulty: Easy
 Class: Leader
 Pic: Leader Ariana
 Gender: Male
@@ -607,8 +1113,38 @@ Ability: Intimidate
 Level: 17
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+
+=== TRAINER_CERAMBASECAMPGYM_LEADER ===
+Name: Ariana
+Difficulty: Normal
+Class: Leader
+Pic: Leader Ariana
+Gender: Male
+Music: Aqua
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Pink
+
+Growlithe-Hisui @ Oran Berry
+Ability: Intimidate
+Level: 16
+- Flame Wheel
+- Bite
+- Rock Tomb
+- Roar
+
+Sizzlipede @ Focus Sash
+Level: 16
+
+Tauros-Paldea-Blaze @ Oran Berry
+Ability: Intimidate
+Level: 17
+
+
 === TRAINER_MTCERAM_A ===
 Name: Xander
+Difficulty: Easy
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -624,8 +1160,26 @@ Mankey
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_MTCERAM_A ===
+Name: Xander
+Difficulty: Normal
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Sneasel-Hisui
+Level: 14
+
+Mankey
+Level: 15
+
+
 === TRAINER_MTCERAM_B ===
 Name: Edsun
+Difficulty: Easy
 Class: Firefighter
 Pic: Firefighter
 Gender: Male
@@ -642,8 +1196,32 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
+
+=== TRAINER_MTCERAM_B ===
+Name: Edsun
+Difficulty: Normal
+Class: Firefighter
+Pic: Firefighter
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Finneon
+Level: 14
+
+Basculin-White-Striped
+Ability: Adaptability
+Level: 15
+
+Totodile
+Level: 15
+
+
+
 === TRAINER_MTCERAM_C ===
 Name: Hayden
+Difficulty: Easy
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -660,8 +1238,27 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
+=== TRAINER_MTCERAM_C ===
+Name: Hayden
+Difficulty: Normal
+Class: Kindler
+Pic: Kindler
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Fletchling
+Level: 14
+
+Sizzlipede
+Level: 16
+
+
+
 === TRAINER_MTCERAM_D ===
 Name: Janet
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -677,9 +1274,28 @@ Wooloo
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_MTCERAM_D ===
+Name: Janet
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Mareep
+Level: 15
+
+Wooloo
+Level: 16
+
+
+
 
 === TRAINER_MTCERAM_GRUNT1 ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -691,8 +1307,23 @@ Yanma
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_MTCERAM_GRUNT1 ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Yanma @ Charti Berry
+Level: 16
+
+
 === TRAINER_MTCERAM_GRUNT2 ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -708,8 +1339,30 @@ Drowzee
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_MTCERAM_GRUNT2 ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Impidimp
+Level: 16
+
+Drowzee
+Level: 17
+
+
+
+
+
+
 === TRAINER_MTCERAM_GRUNT_DOUBLE ===
 Name: Grunts
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Female
@@ -733,8 +1386,35 @@ Bronzor
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+=== TRAINER_MTCERAM_GRUNT_DOUBLE ===
+Name: Grunts
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt Duo
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Risky
+
+Drowzee
+Level: 17
+
+Impidimp
+Level: 17
+
+Yanma
+Level: 18
+
+Bronzor @ Oran Berry
+Level: 19
+
+
+
 === TRAINER_CERAMPEAK_MOXIE ===
 Name: Moxie
+Difficulty: Easy
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
@@ -760,8 +1440,35 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Psychic
 - Water Pulse
 
+
+=== TRAINER_CERAMPEAK_MOXIE ===
+Name: Moxie
+Difficulty: Normal
+Class: Somber Admin
+Pic: Somber Admin Moxie
+Gender: Male
+Music: Aqua
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
+
+Impidimp
+Level: 20
+
+Murkrow @ Oran Berry
+Level: 21
+
+Slowpoke-Galar
+Level: 23
+- Acid
+- Yawn
+- Psychic
+- Water Pulse
+
 === TRAINER_GALECREST_ROBBER ===
 Name: Xander
+Difficulty: Easy
 Class: Burglar
 Pic: Burglar
 Gender: Female
@@ -777,8 +1484,27 @@ Rattata-Alola
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+=== TRAINER_GALECREST_ROBBER ===
+Name: Xander
+Difficulty: Normal
+Class: Burglar
+Pic: Burglar
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Nickit
+Level: 21
+
+Raticate-Alola
+Level: 22
+
+
 === TRAINER_GALECREST_DETECTIVE_A ===
 Name: Candy
+Difficulty: Easy
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -790,9 +1516,24 @@ Charcadet
 Level: 18
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+=== TRAINER_GALECREST_DETECTIVE_A ===
+Name: Candy
+Difficulty: Normal
+Class: Cadet
+Pic: Cadet F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Charcadet 
+Level: 19
+
+
 
 === TRAINER_GALECREST_B ===
 Name: Evio
+Difficulty: Easy
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -812,8 +1553,10 @@ Roselia
 Level: 10
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+
 === TRAINER_GALECRESTGYM_A ===
 Name: Ronnie
+Difficulty: Easy
 Class: Cadet
 Pic: Cadet M
 Gender: Male
@@ -829,12 +1572,34 @@ Furfrou
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Headbutt
-- Sand Attack
 - Snarl
 - Growl
 
+=== TRAINER_GALECRESTGYM_A ===
+Name: Ronnie
+Difficulty: Normal
+Class: Cadet
+Pic: Cadet M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Charcadet
+Level: 18
+
+Furfrou
+Level: 18
+- Headbutt
+- Snarl
+- Growl
+
+
+
+
 === TRAINER_GALECRESTGYM_B ===
 Name: Rose
+Difficulty: Easy
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -854,8 +1619,32 @@ Charcadet
 Level: 18
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+=== TRAINER_GALECRESTGYM_B ===
+Name: Rose
+Difficulty: Normal
+Class: Cadet
+Pic: Cadet F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Herdier
+Level: 16
+
+Tranquill
+Level: 17
+
+Charcadet
+Level: 19
+
+
+
+
+
 === TRAINER_GALECRESTGYM_C ===
 Name: Bonnie
+Difficulty: Easy
 Class: Cadet
 Pic: Cadet F
 Gender: Female
@@ -871,9 +1660,30 @@ Sentret
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+=== TRAINER_GALECRESTGYM_C ===
+Name: Bonnie
+Difficulty: Normal
+Class: Cadet
+Pic: Cadet F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Charcadet
+Level: 19
+
+Sentret
+Level: 20
+
+
+
+
+
 
 === TRAINER_GALECRESTGYM_LEADER ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
@@ -902,8 +1712,44 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Will O Wisp
 - Flame Charge
 
+
+=== TRAINER_GALECRESTGYM_LEADER ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Aqua
+Double Battle: No
+Items: Super Potion
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Blue
+
+Yamper 
+Level: 20
+
+Kirlia @ Rocky Helmet
+Level: 21
+
+Dewott
+Level: 21
+
+Ceruledge @ Sitrus Berry
+Level: 24
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Shadow Sneak
+- Swords Dance
+- Will O Wisp
+- Flame Charge
+
+
+
+
+
+
 === TRAINER_VILETHORN_A ===
 Name: YENI
+Difficulty: Easy
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -915,8 +1761,28 @@ Passimian
 Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
+=== TRAINER_VILETHORN_A ===
+Name: YENI
+Difficulty: Normal
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Passimian
+Level: 22
+
+
+
+
+
+
+
 === TRAINER_VILETHORN_B ===
 Name: Dusty
+Difficulty: Easy
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -936,9 +1802,34 @@ Bruxish
 Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
+=== TRAINER_VILETHORN_B ===
+Name: Dusty
+Difficulty: Normal
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Morelull
+Level: 19
+
+Chingling
+Level: 19
+
+Bruxish
+Level: 21
+
+
+
+
+
+
 
 === TRAINER_VILETHORN_C ===
 Name: Patricia
+Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -954,8 +1845,35 @@ Shuppet
 Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
+=== TRAINER_VILETHORN_C ===
+Name: Patricia
+Difficulty: Normal
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Poltchageist
+Level: 20
+
+Shuppet
+Level: 21
+
+Sinistea
+Level: 21
+
+
+
+
+
+
+
+
 === TRAINER_VILETHORN_D ===
 Name: Isaac
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
@@ -971,8 +1889,39 @@ Ponyta-Galar
 Level: 21
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
+=== TRAINER_VILETHORN_D ===
+Name: Isaac
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Stantler
+Level: 20
+
+Ponyta-Galar @ Oran Berry
+Level: 22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VILETHORN_E ===
 Name: Melissa
+Difficulty: Easy
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -984,9 +1933,38 @@ Roselia
 Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
+=== TRAINER_VILETHORN_E ===
+Name: Melissa
+Difficulty: Normal
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Roselia
+Level: 22
+
+Linoone-Galar
+Level: 22
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VILETHORN_F ===
 Name: Gabby & Ty
+Difficulty: Easy
 Class: Interviewer
 Pic: Interviewer
 Gender: Male
@@ -1002,8 +1980,31 @@ Impidimp
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+=== TRAINER_VILETHORN_F ===
+Name: Gabby & Ty
+Difficulty: Normal
+Class: Interviewer
+Pic: Interviewer
+Gender: Male
+Music: Interviewer
+Double Battle: Yes
+AI: Basic Trainer
+
+Magnemite 
+Level: 23
+
+Impidimp
+Level: 24
+
+
+
+
+
+
+
 === TRAINER_VILETHORN_G ===
 Name: Stanja
+Difficulty: Easy
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -1028,10 +2029,39 @@ Pinsir
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_VILETHORN_G ===
+Name: Stanja
+Difficulty: Normal
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Super Potion
+AI: Smart Trainer / Ace Pokemon / Prediction
+Mugshot: Green
+
+Dottler @ Oran Berry
+Level: 21
+
+Dewpider 
+Level: 22
+
+Lokix @ Bug Gem
+Level: 22
+
+Pinsir @ Leftovers
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+
+
+
 
 
 === TRAINER_VILETHORN_H ===
 Name: Ty
+Difficulty: Easy
 Class: Burglar
 Pic: Burglar
 Gender: Male
@@ -1047,8 +2077,37 @@ Rattata-Alola
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_VILETHORN_H ===
+Name: Ty
+Difficulty: Normal
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Nickit
+Level: 20
+
+Houndour
+Level: 22
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VILETHORN_I ===
 Name: Shoe
+Difficulty: Easy
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -1064,8 +2123,42 @@ Herdier
 Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_VILETHORN_I ===
+Name: Shoe
+Difficulty: Normal
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Interviewer
+Double Battle: Yes
+AI: Smart Trainer
+
+Herdier
+Level: 22
+
+Growlithe-Hisui @ Liechi Berry
+Ability: Intimidate
+Level: 23
+- Flame Charge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_GABBY_AND_TY_5 ===
 Name: GABBY & TY
+Difficulty: Easy
 Class: Interviewer
 Pic: Interviewer
 Gender: Male
@@ -1083,6 +2176,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_GABBY_AND_TY_6 ===
 Name: GABBY & TY
+Difficulty: Easy
 Class: Interviewer
 Pic: Interviewer
 Gender: Male
@@ -1108,6 +2202,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_ROUTE5_A ===
 Name: Lola
+Difficulty: Easy
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1125,6 +2220,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_ROUTE5_B ===
 Name: AUSTINA
+Difficulty: Easy
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1138,6 +2234,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE5_C ===
 Name: GWEN
+Difficulty: Easy
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1151,6 +2248,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE5_D ===
 Name: LOLA
+Difficulty: Easy
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1166,8 +2264,24 @@ Marill
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SEWERS_A ===
 Name: Gondor
+Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -1177,14 +2291,46 @@ AI: Check Bad Move
 
 Grimer-Alola
 Level: 23
+Shiny: Yes
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Gurdurr
 Level: 23
+Shiny: Yes
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+=== TRAINER_SEWERS_A ===
+Name: Gondor
+Difficulty: Normal
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+Grimer-Alola
+Level: 24
+Shiny: Yes
+
+Gurdurr
+Level: 25
+Shiny: Yes
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SEWERS_B ===
 Name: Tinglia
+Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -1196,8 +2342,35 @@ Litwick
 Level: 22
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+=== TRAINER_SEWERS_B ===
+Name: Tinglia
+Difficulty: Normal
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Litwick
+Level: 23
+
+Dreepy
+Level: 23
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SEWERS_C ===
-Name: KIRK
+Name: Kirk
+Difficulty: Easy
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
@@ -1213,8 +2386,39 @@ Toxel
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SEWERS_C ===
+Name: Kirk
+Difficulty: Normal
+Class: Guitarist
+Pic: Guitarist
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Voltorb-Hisui
+Level: 22
+
+Toxel @ Black Sludge
+Level: 24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SEWERS_D ===
 Name: RICKY
+Difficulty: Easy
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -1232,6 +2436,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SEWERS_E ===
 Name: SIMON
+Difficulty: Easy
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -1247,8 +2452,19 @@ Marill
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SILVERSUNGYM_A ===
-Name: ROSANNA
+Name: Rosanna
+Difficulty: Easy
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -1260,8 +2476,32 @@ Roselia
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_SILVERSUNGYM_A ===
+Name: Rosanna
+Difficulty: Normal
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Roselia
+Level: 25
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SILVERSUNGYM_B ===
-Name: JOHNNY
+Name: Johnston
+Difficulty: Easy
 Class: Model
 Pic: Model
 Gender: Male
@@ -1277,8 +2517,32 @@ Bayleef
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+=== TRAINER_SILVERSUNGYM_B ===
+Name: Johnston
+Difficulty: Normal
+Class: Model
+Pic: Model
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Smart Trainer
+
+Linoone-Galar
+Level: 24
+
+Bayleef
+Level: 26
+
+
+
+
+
+
+
+
 === TRAINER_SILVERSUNGYM_C ===
-Name: RICKY
+Name: Astra
+Difficulty: Easy
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -1298,9 +2562,41 @@ Zigzagoon-Galar
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+=== TRAINER_SILVERSUNGYM_C ===
+Name: Astra
+Difficulty: Normal
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Petilil
+Level: 23
+
+Budew
+Level: 23
+
+Linoone-Galar
+Level: 25
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SILVERSUNGYM_D ===
-Name: RICKY
+Name: Caster
+Difficulty: Easy
 Class: Model
 Pic: Model
 Gender: Male
@@ -1310,11 +2606,35 @@ AI: Check Bad Move
 
 Linoone-Galar
 Level: 26
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+=== TRAINER_SILVERSUNGYM_D ===
+Name: Caster
+Difficulty: Normal
+Class: Model
+Pic: Model
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Linoone-Galar @ Sitrus Berry
+Level: 27
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_SILVERSUNGYM_LEADER ===
 Name: GLORIA
+Difficulty: Easy
 Class: Leader
 Pic: Leader Gloria
 Gender: Female
@@ -1340,9 +2660,60 @@ Bombirdier @ Flying Gem
 Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
+=== TRAINER_SILVERSUNGYM_LEADER ===
+Name: GLORIA
+Difficulty: Normal
+Class: Leader
+Pic: Leader Gloria
+Gender: Female
+Music: Female
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Smart Trainer / Force Setup First Turn / Ace Pokemon
+Mugshot: Purple
+
+Bayleef @ Light Clay
+Level: 27
+- Sunny Day
+- Magical Leaf
+- Synthesis
+- Stomping Tantrum
+
+Roserade @ Big Root
+Level: 27
+- Growth
+- Giga Drain
+- Ingrain
+- Sludge Bomb
+
+Linoone-Galar @ Sitrus Berry
+Level: 28
+- Belly Drum
+- Extremespeed
+- Night Slash
+
+
+Bombirdier @ Rock Gem
+Ability: Rocky Payload
+Level: 29
+- Rock Slide
+- Acrobatics
+- Knock Off
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_THEATER_A ===
 Name: RANDALL
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1359,24 +2730,47 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wing Attack
 
 === TRAINER_THEATER_B ===
-Name: PARKER
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: Pillin
+Difficulty: Easy
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Basic Trainer
+
+Applin
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_THEATER_B ===
+Name: Pillin
+Difficulty: Normal
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Spinda
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Applin
+Level: 23
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SOMBERHQ_A ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1388,8 +2782,30 @@ Lokix
 Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_A ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Lokix
+Level: 25
+
+
+
+
+
+
+
+
+
 === TRAINER_SOMBERHQ_B ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1405,9 +2821,39 @@ Grimer-Alola
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_B ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Bronzor @ Colbur Berry
+Level: 25
+
+Grimer-Alola
+Level: 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SOMBERHQ_C ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1419,9 +2865,30 @@ Yanma
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_C ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+Items: Super Potion
+AI: Check Bad Move
+
+Yanma
+Level: 26
+
+
+
+
+
+
+
 
 === TRAINER_SOMBERHQ_D ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1437,8 +2904,36 @@ Lokix
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_D ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Drowzee
+Level: 26
+
+Lokix
+Level: 27
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SOMBERHQ_E ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1454,8 +2949,37 @@ Impidimp
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_E ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Murkrow
+Level: 27
+
+Impidimp
+Level: 28
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SOMBERHQ_F ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1471,8 +2995,38 @@ Drowzee
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_F ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Murkrow
+Level: 26
+
+Drowzee @ Oran Berry
+Level: 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SOMBERHQ_G ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1488,9 +3042,35 @@ Grimer-Alola
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_G ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Impidimp
+Level: 27
+
+Grimer-Alola @ Black Sludge
+Level: 27
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SOMBERHQ_H ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -1506,8 +3086,36 @@ Murkrow
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_H ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Lokix
+Level: 27
+
+Murkrow
+Level: 28
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SOMBERHQ_MELEA ===
 Name: Melea
+Difficulty: Easy
 Class: Somber Admin
 Pic: Somber Admin Melea
 Gender: Female
@@ -1537,8 +3145,52 @@ Absol
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_SOMBERHQ_MELEA ===
+Name: Melea
+Difficulty: Normal
+Class: Somber Admin
+Pic: Somber Admin Melea
+Gender: Female
+Music: Aqua
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Slowpoke-Galar @ Leftovers
+Level: 28
+
+Grimer-Alola @ Black Sludge
+Level: 28
+
+Yanmega @ Liechi Berry
+Ability: Speed Boost
+Level: 29
+- Air Cutter
+- Lunge
+- Ancient Power
+- Hypnosis
+
+Absol @ Life Orb
+Level: 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_KOHLA ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
@@ -1571,9 +3223,50 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Will O Wisp
 - Flame Charge
 
+=== TRAINER_ROUTE6_KOHLA ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Aqua
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+
+Boltund @ Leftovers
+Level: 27
+
+Kirlia @ Rocky Helmet
+Level: 30
+
+Axew @ Dragon Gem
+Level: 31
+
+Dewott @ Sitrus Berry
+Level: 31
+
+Ceruledge @ Sitrus Berry
+Level: 32
+- Swords Dance
+- Shadow Sneak
+- Will O Wisp
+- Flame Charge
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE6_A ===
 Name: Owen
+Difficulty: Easy
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
@@ -1585,8 +3278,32 @@ Palpitoad
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_ROUTE6_A ===
+Name: Owen
+Difficulty: Normal
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Smart Trainer
+
+Palpitoad
+Level: 28
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_B ===
 Name: Puncher
+Difficulty: Easy
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -1598,8 +3315,33 @@ Qwilfish-Hisui
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
+=== TRAINER_ROUTE6_B ===
+Name: Puncher
+Difficulty: Normal
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Qwilfish-Hisui @ Sticky Barb
+Level: 28
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_C ===
 Name: Sanya
+Difficulty: Easy
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
@@ -1613,6 +3355,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_ROUTE6_D ===
 Name: Ahren
+Difficulty: Easy
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -1630,6 +3373,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_E ===
 Name: Koan
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1644,6 +3388,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_ROUTE6_F ===
 Name: TAKAO
+Difficulty: Easy
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -1662,6 +3407,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_G ===
 Name: Adinya
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
@@ -1685,6 +3431,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ROUTE6_H ===
 Name: BRIAR
+Difficulty: Easy
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -1710,6 +3457,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_I ===
 Name: NICOLAS
+Difficulty: Easy
 Class: Dragon Tamer
 Pic: Dragon Tamer
 Gender: Male
@@ -1727,6 +3475,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE6_J ===
 Name: CALVIN
+Difficulty: Easy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -1745,6 +3494,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_K ===
 Name: PATRICIA
+Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -1762,6 +3512,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT1 ===
 Name: BROOKE
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Female
@@ -1779,6 +3530,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GRUNT2 ===
 Name: HOPE
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -1796,6 +3548,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ROUTE6_GAB ===
 Name: Gabrielle
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1818,6 +3571,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SHANNON ===
 Name: SHANNON
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1832,6 +3586,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHBASECAMP_KOHLA ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
@@ -1862,6 +3617,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHBASECAMP_LEADER ===
 Name: Carona
+Difficulty: Easy
 Class: Leader
 Pic: Leader Carona
 Gender: Female
@@ -1889,6 +3645,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_A ===
 Name: Sentry
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Female
@@ -1925,6 +3682,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHEXT_B ===
 Name: BROOKE
+Difficulty: Easy
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -1942,6 +3700,7 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_MIRROHEXT_C ===
 Name: Bianca
+Difficulty: Easy
 Class: Skiier
 Pic: Skiier F
 Gender: Female
@@ -1959,6 +3718,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_MIRROHEXT_D ===
 Name: Bianca
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Male
@@ -1977,6 +3737,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIRROHEXT_E ===
 Name: Junipurr
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -2016,6 +3777,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_F ===
 Name: Ringer
+Difficulty: Easy
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -2029,6 +3791,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_MIRROHEXT_G ===
 Name: Kindra
+Difficulty: Easy
 Class: Black Belt
 Pic: Black Belt
 Gender: Female
@@ -2046,6 +3809,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIRROHEXT_H ===
 Name: Tammy
+Difficulty: Easy
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -2063,6 +3827,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIRROHINT_A ===
 Name: ELI
+Difficulty: Easy
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -2080,6 +3845,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHINT_B ===
 Name: Wyatt
+Difficulty: Easy
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2098,6 +3864,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MIRROHINT_C ===
 Name: ELI
+Difficulty: Easy
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -2111,6 +3878,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_D ===
 Name: Friston
+Difficulty: Easy
 Class: Burglar
 Pic: Burglar
 Gender: Male
@@ -2132,6 +3900,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHINT_E ===
 Name: Duo
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt Duo
 Gender: Male
@@ -2149,6 +3918,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHINT_F ===
 Name: VALERIE
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -2162,6 +3932,7 @@ Level: 42
 
 === TRAINER_MIRROHINT2_A ===
 Name: Rein
+Difficulty: Easy
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -2185,6 +3956,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MIRROHINT2_B ===
 Name: Shin
+Difficulty: Easy
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2202,6 +3974,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MIRROHINT2_C ===
 Name: Elona
+Difficulty: Easy
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -2220,6 +3993,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 30 Spe
 
 === TRAINER_MIRROHINT2_D ===
 Name: Araya
+Difficulty: Easy
 Class: Skiier
 Pic: Skiier F
 Gender: Female
@@ -2237,6 +4011,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHINT2_E ===
 Name: Chara
+Difficulty: Easy
 Class: Cool Girl
 Pic: Cool Girl
 Gender: Female
@@ -2259,6 +4034,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHINT2_F ===
 Name: VICTOR
+Difficulty: Easy
 Class: Pokefan
 Pic: Pokefan M
 Gender: Male
@@ -2277,6 +4053,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MIRROHINT2_G ===
 Name: Calvin
+Difficulty: Easy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -2304,6 +4081,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_MIRROHPEAK_A ===
 Name: Cindy
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -2318,6 +4096,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_MIRROHPEAK_B ===
 Name: Jan
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Female
@@ -2332,6 +4111,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_C ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -2345,6 +4125,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_D ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Female
@@ -2358,6 +4139,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIRROHPEAK_E ===
 Name: SHEILA
+Difficulty: Easy
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2371,6 +4153,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIRROHPEAK_MOXIE ===
 Name: Moxie
+Difficulty: Easy
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
@@ -2417,6 +4200,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_A ===
 Name: SMIRNOFF
+Difficulty: Easy
 Class: Electrician
 Pic: Electrician
 Gender: Male
@@ -2435,6 +4219,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_B ===
 Name: Windhorst
+Difficulty: Easy
 Class: Electrician
 Pic: Electrician
 Gender: Male
@@ -2458,6 +4243,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_C ===
 Name: Gozliak
+Difficulty: Easy
 Class: Collector
 Pic: Collector
 Gender: Male
@@ -2479,6 +4265,7 @@ IVs: 15 HP / 20 Atk / 15 Def / 15 SpA / 15 SpD / 20 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_D ===
 Name: Marcus
+Difficulty: Easy
 Class: Employee
 Pic: Employee
 Gender: Male
@@ -2498,6 +4285,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_E ===
 Name: Bleach
+Difficulty: Easy
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -2516,6 +4304,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_F ===
 Name: Tamaron
+Difficulty: Easy
 Class: Electrician
 Pic: Electrician
 Gender: Male
@@ -2530,6 +4319,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
 Name: Viniel
+Difficulty: Easy
 Class: Leader
 Pic: Leader Viniel
 Gender: Male
@@ -2558,6 +4348,7 @@ IVs: 30 HP / 15 Atk / 30 Def / 0 SpA / 30 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_A ===
 Name: Gabrielle
+Difficulty: Easy
 Class: Pkmn Trainer 2
 Pic: Somber Grunt F
 Gender: Female
@@ -2584,6 +4375,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_B ===
 Name: JL
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -2607,6 +4399,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_C ===
 Name: Laria
+Difficulty: Easy
 Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
@@ -2625,6 +4418,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_D ===
 Name: Mollen
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2643,6 +4437,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_E ===
 Name: Jasmina
+Difficulty: Easy
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2663,6 +4458,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_F ===
 Name: Arya
+Difficulty: Easy
 Class: Swimmer F
 Pic: Swimmer F
 Gender: Male
@@ -2676,6 +4472,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_G ===
 Name: Wint
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2690,6 +4487,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_H ===
 Name: WINSTON
+Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -2712,6 +4510,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_I ===
 Name: WINSTON
+Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -2726,6 +4525,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_LEADER ===
 Name: Jania
+Difficulty: Easy
 Class: Leader
 Pic: Leader Jania
 Gender: Female
@@ -2767,6 +4567,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_ROUTE3_EXT_A ===
 Name: Flanning
+Difficulty: Easy
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
@@ -2784,6 +4585,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EXT_B ===
 Name: Barkle
+Difficulty: Easy
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -2801,6 +4603,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE3_EXT_C ===
 Name: Grim
+Difficulty: Easy
 Class: Backpacker
 Pic: Backpacker
 Gender: Male
@@ -2814,6 +4617,7 @@ Level: 21
 
 === TRAINER_PELLUCA_QWILSQUAD_A ===
 Name: Grunt
+Difficulty: Easy
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -2831,6 +4635,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PELLUCA_QWILSQUAD_B ===
 Name: Grunt
+Difficulty: Easy
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -2849,6 +4654,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PELLUCA_QWILSQUAD_BOSS ===
 Name: Boss
+Difficulty: Easy
 Class: Sailor
 Pic: Qwilsquad Boss
 Gender: Male
@@ -2870,6 +4676,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_PELLUCA_DETECTIVE ===
 Name: STEVE
+Difficulty: Easy
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
@@ -2887,6 +4694,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ROUTE8_A ===
 Name: Lana
+Difficulty: Easy
 Class: Swimmer F
 Pic: Swimmer F
 Gender: Male
@@ -2900,6 +4708,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_B ===
 Name: Danneon
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2913,6 +4722,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_C ===
 Name: Pralia
+Difficulty: Easy
 Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Male
@@ -2930,6 +4740,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_D ===
 Name: Mary
+Difficulty: Easy
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -2947,6 +4758,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_E ===
 Name: Bony
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2960,6 +4772,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_F ===
 Name: Jirra
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -2973,6 +4786,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVETSHORE_GYM_A ===
 Name: Matti
+Difficulty: Easy
 Class: Builder
 Pic: Builder
 Gender: Male
@@ -2990,6 +4804,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_B ===
 Name: Berger
+Difficulty: Easy
 Class: Pkmn Trainer 2
 Pic: Cool Guy
 Gender: Male
@@ -3014,6 +4829,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_C ===
 Name: Babeneitor
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -3035,6 +4851,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_D ===
 Name: Roland
+Difficulty: Easy
 Class: Builder
 Pic: Builder
 Gender: Male
@@ -3052,6 +4869,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_RIVETSHORE_GYM_E ===
 Name: Nolen
+Difficulty: Easy
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -3069,6 +4887,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_SSELEGANT_A ===
 Name: Adario
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -3090,6 +4909,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_SSELEGANT_B ===
 Name: BARRY
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -3103,6 +4923,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SSELEGANT_INGER ===
 Name: Inger
+Difficulty: Easy
 Class: Leader
 Pic: Leader Inger
 Gender: Female
@@ -3125,6 +4946,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_SSELEGANT_ARIANA ===
 Name: Ariana
+Difficulty: Easy
 Class: Leader
 Pic: Leader Ariana
 Gender: Male
@@ -3147,6 +4969,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_SSELEGANT_JANIA ===
 Name: Jania
+Difficulty: Easy
 Class: Artist
 Pic: Jania Artist
 Gender: Female
@@ -3166,6 +4989,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_RIVETSHORE_GYM_LEADER ===
 Name: Raazi
+Difficulty: Easy
 Class: Leader
 Pic: Leader Raazi
 Gender: Male
@@ -3192,6 +5016,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_IVY_RIVER_A ===
 Name: Santiago
+Difficulty: Easy
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -3209,6 +5034,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_IVY_RIVER_B ===
 Name: Galona
+Difficulty: Easy
 Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
@@ -3227,6 +5053,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_IVY_RIVER_C ===
 Name: Eden
+Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -3264,6 +5091,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_IVY_RIVER_D ===
 Name: Stanja
+Difficulty: Easy
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -3290,6 +5118,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -3303,6 +5132,7 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_B ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
 Gender: Male
@@ -3320,6 +5150,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_C ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
 Gender: Male
@@ -3337,6 +5168,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
 Name: TONY
+Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
@@ -3350,6 +5182,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
 Name: Moxie
+Difficulty: Easy
 Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
@@ -3381,6 +5214,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
 Name: Melea
+Difficulty: Easy
 Class: Somber Admin
 Pic: Somber Admin Melea
 Gender: Female
@@ -3411,6 +5245,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
+Difficulty: Easy
 Class: Rue
 Pic: Rue
 Gender: Male
@@ -3440,6 +5275,7 @@ IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 === TRAINER_ROUTE1_STRONG_A ===
 Name: Jose
+Difficulty: Easy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -3457,6 +5293,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE1_STRONG_B ===
 Name: Sana
+Difficulty: Easy
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -3479,6 +5316,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE1_STRONG_C ===
 Name: Manya
+Difficulty: Easy
 Class: Bug Catcher F
 Pic: Bug Catcher F
 Gender: Male
@@ -3497,6 +5335,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_A ===
 Name: Koichi
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
@@ -3520,6 +5359,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_B ===
 Name: Nobs
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -3538,6 +5378,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_C ===
 Name: Sari
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
@@ -3560,6 +5401,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_D ===
 Name: Tom
+Difficulty: Easy
 Class: Dragon Tamer
 Pic: Dragon Tamer
 Gender: Male
@@ -3579,6 +5421,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_E ===
 Name: Anaya
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
@@ -3597,6 +5440,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_F ===
 Name: Toctay
+Difficulty: Easy
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -3619,6 +5463,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_G ===
 Name: Yuna
+Difficulty: Easy
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -3645,6 +5490,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_H ===
 Name: Sai
+Difficulty: Easy
 Class: Backpacker
 Pic: Backpacker
 Gender: Male
@@ -3668,6 +5514,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_I ===
 Name: Kirk
+Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -3681,6 +5528,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_J ===
 Name: Pia
+Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
@@ -3702,6 +5550,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_K ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -3719,6 +5568,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VICTORY_ROAD_L ===
 Name: Grunt
+Difficulty: Easy
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -3732,6 +5582,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VICTORY_ROAD_M ===
 Name: SHAWN
+Difficulty: Easy
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
@@ -3749,6 +5600,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VICTORY_ROAD_N ===
 Name: FERNANDO
+Difficulty: Easy
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
@@ -3766,6 +5618,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VICTORY_ROAD_O ===
 Name: DALTON
+Difficulty: Easy
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
@@ -3783,6 +5636,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHAMPIONSHIP_A ===
 Name: Chara
+Difficulty: Easy
 Class: Cool Girl
 Pic: Cool Girl
 Gender: Female
@@ -3814,6 +5668,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_B ===
 Name: Stanja
+Difficulty: Easy
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -3852,6 +5707,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_C ===
 Name: Berger
+Difficulty: Easy
 Class: Pkmn Trainer 2
 Pic: Cool Guy
 Gender: Male
@@ -3892,6 +5748,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_D ===
 Name: Gabrielle
+Difficulty: Easy
 Class: Pkmn Trainer 2
 Pic: Somber Grunt F
 Gender: Female
@@ -3944,10 +5801,11 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_E ===
 Name: Kohla
+Difficulty: Easy
 Class: Ace Rookie
 Pic: Wally
 Gender: Male
-Music: Elite Four
+Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
@@ -4001,6 +5859,9 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Shadow Sneak
 - Close Combat
+
+
+
 
 === TRAINER_CHAMPIONSHIP_F ===
 Name: JEFF

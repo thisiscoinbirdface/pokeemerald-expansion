@@ -1364,6 +1364,12 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
             break;
+        case TRAINER_ENCOUNTER_MUSIC_KOHLA:
+            music = MUS_RG_TEACHY_TV_SHOW;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_FINAL:
+            music = MUS_RG_TEACHY_TV_SHOW;
+            break;            
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;
         }

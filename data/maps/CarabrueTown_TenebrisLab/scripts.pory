@@ -434,6 +434,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
                 msgbox(format("The Tenebris Laboratory has gifted you a Gothita!"))
+                hidemonpic
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -468,6 +469,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
                 msgbox(format("The Tenebris Laboratory has gifted you a Timburr!"))
+                hidemonpic
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -502,6 +504,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
                 msgbox(format("The Tenebris Laboratory has gifted you a Zigzagoon!"))
+                hidemonpic
                 removeobject(1)
                 setflag(FLAG_UNUSED_0x020)
                 call(NicknamePartyMon)
@@ -519,15 +522,15 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
 }
 
 script NicknamePartyMon{
-    msgbox(format("You can nickname your Pokemon from the summary screen!"), MSGBOX_POKENAV)
+    msgbox(format("You can nickname your Pokémon\nvia the summary screen!"), MSGBOX_POKENAV)
     release
 
-    msgbox("Give it a nickname?", MSGBOX_YESNO)
-    hidemonpic
-    if(var(VAR_RESULT) == YES){
-        call(Common_EventScript_GetGiftMonPartySlot)
-        call(Common_EventScript_NameReceivedPartyMon)
-    }
+    // msgbox("Give it a nickname?", MSGBOX_YESNO)
+    // hidemonpic
+    // if(var(VAR_RESULT) == YES){
+    //     call(Common_EventScript_GetGiftMonPartySlot)
+    //     call(Common_EventScript_NameReceivedPartyMon)
+    // }
  
 }
  

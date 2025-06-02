@@ -52,10 +52,32 @@ static bool32 ShouldRunTrainerSlideLastLowHp(u32 firstId, u32 lastId, u32 battle
 static void SetTrainerSlideParamters(u32 battler, u32* firstId, u32* lastId, u32* trainerId, u32* retValue);
 static bool32 IsSlideInitalizedOrPlayed(enum TrainerSlideType slideId);
 
+
+    // TRAINER_SLIDE_NONE,
+    // TRAINER_SLIDE_BEFORE_FIRST_TURN,
+    // TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT,
+    // TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT,
+    // TRAINER_SLIDE_PLAYER_LANDS_FIRST_SUPER_EFFECTIVE_HIT,
+    // TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE,
+    // TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN,
+    // TRAINER_SLIDE_ENEMY_MON_UNAFFECTED,
+    // TRAINER_SLIDE_LAST_SWITCHIN,
+    // TRAINER_SLIDE_LAST_HALF_HP,
+    // TRAINER_SLIDE_LAST_LOW_HP,
+    // TRAINER_SLIDE_MEGA_EVOLUTION,
+    // TRAINER_SLIDE_Z_MOVE,
+    // TRAINER_SLIDE_DYNAMAX,
+    // TRAINER_SLIDE_COUNT,
+
+    
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =
 {
     [DIFFICULTY_NORMAL] =
     {
+        [TRAINER_ROUTE1_A] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Ceruledge - it's you and me now!{PLAY_BGM MUS_RAYQUAZA_APPEARS}"), // find the id for the slide to be used.
+        }
     },
 };
 
