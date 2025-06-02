@@ -142,7 +142,7 @@ enum {
     FIELD_MOVE_DIVE,        // FLAG_BADGE07_GET
     FIELD_MOVE_WATERFALL,   // FLAG_BADGE08_GET
     // FIELD_MOVE_TELEPORT,
-    FIELD_MOVE_DIG,
+    // FIELD_MOVE_DIG,
     FIELD_MOVE_SECRET_POWER,
     FIELD_MOVE_MILK_DRINK,
     FIELD_MOVE_SOFT_BOILED,
@@ -4130,13 +4130,13 @@ static void CursorCb_FieldMove(u8 taskId)
             //     DisplayFieldMoveExitAreaMessage(taskId);
             //     sPartyMenuInternal->data[0] = fieldMove;
             //     break;
-            case FIELD_MOVE_DIG:
-                mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
-                GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
-                StringExpandPlaceholders(gStringVar4, gText_EscapeFromHere);
-                DisplayFieldMoveExitAreaMessage(taskId);
-                sPartyMenuInternal->data[0] = fieldMove;
-                break;
+            // case FIELD_MOVE_DIG:
+            //     mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
+            //     GetMapNameGeneric(gStringVar1, mapHeader->regionMapSectionId);
+            //     StringExpandPlaceholders(gStringVar4, gText_EscapeFromHere);
+            //     DisplayFieldMoveExitAreaMessage(taskId);
+            //     sPartyMenuInternal->data[0] = fieldMove;
+            //     break;
             case FIELD_MOVE_FLY:
                 gPartyMenu.exitCallback = CB2_OpenFlyMap;
                 Task_ClosePartyMenu(taskId);
