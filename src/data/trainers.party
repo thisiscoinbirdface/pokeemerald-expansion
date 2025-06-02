@@ -2835,7 +2835,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_PELLUCA_QWILSQUAD_BOSS ===
 Name: Boss
 Class: Sailor
-Pic: Sailor
+Pic: Qwilsquad Boss
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -3396,8 +3396,8 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
-Class: Team Somber
-Pic: Somber Grunt M
+Class: Rue
+Pic: Rue
 Gender: Male
 Music: Swimmer
 Double Battle: No

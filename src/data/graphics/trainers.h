@@ -388,6 +388,12 @@ const u32 gTrainerPalette_CoolGuy[] = INCBIN_U32("graphics/trainers/my_trainers/
 const u32 gTrainerFrontPic_JaniaArtist[] = INCBIN_U32("graphics/trainers/my_trainers/jania_artist.4bpp.lz");
 const u32 gTrainerPalette_JaniaArtist[] = INCBIN_U32("graphics/trainers/my_trainers/jania_artist.gbapal.lz");
 
+const u32 gTrainerFrontPic_Rue[] = INCBIN_U32("graphics/trainers/my_trainers/rue.4bpp.lz");
+const u32 gTrainerPalette_Rue[] = INCBIN_U32("graphics/trainers/my_trainers/rue.gbapal.lz");
+
+const u32 gTrainerFrontPic_QwilsquadBoss[] = INCBIN_U32("graphics/trainers/my_trainers/qwilsquad_boss.4bpp.lz");
+const u32 gTrainerPalette_QwilsquadBoss[] = INCBIN_U32("graphics/trainers/my_trainers/qwilsquad_boss.gbapal.lz");
+
 
 
 //gym leaders
@@ -558,7 +564,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_WAITRESS, gTrainerFrontPic_Waitress ,gTrainerPalette_Waitress),
     TRAINER_SPRITE(TRAINER_PIC_COOL_GUY, gTrainerFrontPic_CoolGuy ,gTrainerPalette_CoolGuy),
     TRAINER_SPRITE(TRAINER_PIC_JANIA_ARTIST, gTrainerFrontPic_JaniaArtist ,gTrainerPalette_JaniaArtist),
-
+    TRAINER_SPRITE(TRAINER_PIC_RUE, gTrainerFrontPic_Rue ,gTrainerPalette_Rue),
+    TRAINER_SPRITE(TRAINER_PIC_QWILSQUAD_BOSS, gTrainerFrontPic_QwilsquadBoss ,gTrainerPalette_QwilsquadBoss),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

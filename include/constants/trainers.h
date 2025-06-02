@@ -147,8 +147,10 @@
 #define TRAINER_PIC_WAITRESS              123
 #define TRAINER_PIC_COOL_GUY              124
 #define TRAINER_PIC_JANIA_ARTIST          125
+#define TRAINER_PIC_RUE                   126
+#define TRAINER_PIC_QWILSQUAD_BOSS        127
 
-#define TRAINER_PIC_COUNT                 126
+#define TRAINER_PIC_COUNT                 128
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -424,8 +426,9 @@
 #define TRAINER_CLASS_WAITRESS       0x58
 #define TRAINER_CLASS_COOL_GUY       0x59
 #define TRAINER_CLASS_ARTIST         0x60
+#define TRAINER_CLASS_RUE            0x61
 
-#define TRAINER_CLASS_COUNT          0x61
+#define TRAINER_CLASS_COUNT          0x62
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

@@ -6911,7 +6911,7 @@ F_TRAINER_FEMALE |
 #line 2837
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 2838
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerPic = TRAINER_PIC_QWILSQUAD_BOSS,
         .encounterMusic_gender =
 #line 2840
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -8317,9 +8317,9 @@ F_TRAINER_FEMALE |
 #line 3398
         .trainerName = _("Rue"),
 #line 3399
-        .trainerClass = TRAINER_CLASS_TEAM_SOMBER,
+        .trainerClass = TRAINER_CLASS_RUE,
 #line 3400
-        .trainerPic = TRAINER_PIC_SOMBER_GRUNT_M,
+        .trainerPic = TRAINER_PIC_RUE,
         .encounterMusic_gender =
 #line 3402
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,

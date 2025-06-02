@@ -1,3 +1,43 @@
 mapscripts Championship_Hotel_MapScripts{}
 
 
+
+
+
+script Champ_Hotel_Counter{
+    msgbox(format("Welcome to the Victory Cape Hotel!\pWe're fully booked out, but please visit our Championship Exhibit in the basement!\p...\pWho comes to the Pokemon Championship without booking a room in advance?"), MSGBOX_NPC)
+    end
+}
+
+
+
+
+script Champ_Hotel_NPC_Arsalan{
+    speakername("Arsalan")
+    msgbox(format("You thought the legendary Arsalan wouldn't be at the Pokemon Championship?\pWho do you think drew the paintings for the Championship Exhibit?"), MSGBOX_NPC)
+    end
+}
+script Champ_Hotel_Smeargle{
+    playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
+    msgbox(format("Smeargle grins smugly. It's proud of the paintings it drew!"), MSGBOX_NPC)
+    end
+}
+
+script Champ_Hotel_NPC1{
+    msgbox(format("I wish I were a trainer...\nthe competitors are so cool!\p...\pYou're competing too?\n...really?"), MSGBOX_NPC)
+    end
+}
+script Champ_Hotel_NPC2{
+    msgbox(format("These people goofed up my booking!\pI wanted a room with a good view!\pOf the ocean?\pNo, the stadium obviously!"), MSGBOX_NPC)
+    end
+}
+script Champ_Hotel_NPC3{
+    msgbox(format("She's sleepwalking...\nIs it okay to leave her like this?"), MSGBOX_NPC)
+    end
+}
+script Champ_Hotel_NPC4{
+    msgbox(format("When I grow up, I want to be the next Ace Rookie!"), MSGBOX_NPC)
+    end
+}
+
+
