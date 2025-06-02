@@ -31,7 +31,7 @@
 #define BW_SUMMARY_MON_IDLE_ANIMS                   TRUE                // loops the mon animations regularly as an "idle" anim
 #define BW_SUMMARY_MON_SHADOWS                      TRUE                // displays a shadow for the mon sprite
 #define BW_SUMMARY_SHOW_TERA_TYPE                   FALSE               // show tera type icons
-#define BW_SUMMARY_SHOW_CONTEST_MOVES               TRUE                // show the contest moves page
+#define BW_SUMMARY_SHOW_CONTEST_MOVES               FALSE               // show the contest moves page
 
 // Looking for configs for renaming mons and relearning moves? Those use the standard expansion configs
 // P_SUMMARY_SCREEN_RENAME and P_SUMMARY_SCREEN_MOVE_RELEARNER in include/config/pokemon.h

@@ -16,6 +16,10 @@ script CarabrueTown_Home1F_EventScript_StartGame{
 
     lockall
 
+    //Initial game vars and stuff
+    setvar(VAR_SYS_DIFFICULTY, 0)
+    setvar(VAR_SYS_EXP_CAP, 1)
+
     //TV plays info about prof disappearance
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     speakername("TV")

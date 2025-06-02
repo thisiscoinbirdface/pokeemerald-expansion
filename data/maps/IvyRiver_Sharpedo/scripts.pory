@@ -61,7 +61,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
     waitmovement(0)
     speakername("Jania")
-    message(format("This should be enough to keep it at bay while it calms down."))
+    message(format("This should be enough to keep it at bay while it calms down.\pWe threw a Life Orb at it which got stuck on its Rough Skin. That should eventually faint it."))
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 9))
     waitmovement(0)
     waitmessage
@@ -77,7 +77,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Jania")
-    msgbox(format("You can't use Poké Balls on it - it's too enraged right now.\pwhatever you want to do, be careful.\pI'm heading back to my gym. See you."))
+    msgbox(format("You can't use Poké Balls on it - it's too enraged right now.\pwhatever you want to do, be careful.\nThe Life Orb hurts it but makes\lits attacks much stronger.\pI'm heading back to my gym. See you."))
     release
 
     fadescreen(FADE_TO_BLACK)
@@ -101,7 +101,7 @@ script IvyRiver_Sharpedo_Encounter{
 
     setflag(FLAG_BATTLE_NO_RUNNING_CATCHING)
     msgbox(format("The Mega Sharpedo attacks!"))
-    setwildbattle(SPECIES_SHARPEDO_MEGA, 45)
+    setwildbattle(SPECIES_SHARPEDO_MEGA, 70, ITEM_LIFE_ORB)
     dowildbattle  
 
     //result

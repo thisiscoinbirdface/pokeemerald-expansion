@@ -347,6 +347,8 @@ EventScript_ResetAllMapFlags::
 
 	setflag FLAG_SYS_RUN_TOGGLE_SETTING
 	setflag FLAG_SYS_RUN_TOGGLE_SETTING
+	setvar VAR_SYS_DIFFICULTY, 0
+	setvar VAR_SYS_EXP_CAP, 1
 
 
 

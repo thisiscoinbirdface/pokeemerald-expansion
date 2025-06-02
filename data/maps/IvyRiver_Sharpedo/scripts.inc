@@ -168,7 +168,7 @@ IvyRiver_Sharpedo_Encounter::
 # 103 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	msgbox IvyRiver_Sharpedo_Encounter_Text_0
 # 104 "data//maps/IvyRiver_Sharpedo/scripts.pory"
-	setwildbattle SPECIES_SHARPEDO_MEGA, 45
+	setwildbattle SPECIES_SHARPEDO_MEGA, 70, ITEM_LIFE_ORB
 # 105 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	dowildbattle
 # 108 "data//maps/IvyRiver_Sharpedo/scripts.pory"
@@ -328,13 +328,18 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_4:
 IvyRiver_Sharpedo_Jania_Trigger_Text_5:
 # 64 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "This should be enough to keep it at bay\n"
-	.string "while it calms down.$"
+	.string "while it calms down.\p"
+	.string "We threw a Life Orb at it which got\n"
+	.string "stuck on its Rough Skin. That should\l"
+	.string "eventually faint it.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_6:
 # 80 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "You can't use Poké Balls on it - it's too\n"
 	.string "enraged right now.\p"
-	.string "whatever you want to do, be careful.\p"
+	.string "whatever you want to do, be careful.\n"
+	.string "The Life Orb hurts it but makes\l"
+	.string "its attacks much stronger.\p"
 	.string "I'm heading back to my gym. See you.$"
 
 IvyRiver_Sharpedo_Encounter_Text_0:
