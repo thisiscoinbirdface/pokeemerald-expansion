@@ -25,7 +25,7 @@ gText_PreBirch3::
 	.string "Undertake your journey and grow with\n"
 	.string "your trusted partners.\n"
 	.string "\n"	
-	.string "I hope you enjoy this labour of love.\p"		
+	.string "Are you ready for your adventure?\p"
 	.string "$"
 	
 
