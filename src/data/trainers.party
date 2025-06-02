@@ -83,7 +83,7 @@ Double Battle: No
 
 === TRAINER_ROUTE1_A ===
 Name: Jose
-Difficulty: Normal
+Difficulty: Easy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -97,7 +97,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE1_A ===
 Name: Jose
-Difficulty: Hard
+Difficulty: Normal
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -111,6 +111,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE1_B ===
 Name: Sana
+Difficulty: Easy
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -119,6 +120,20 @@ Double Battle: No
 AI: Basic Trainer
 
 Pidove
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE1_B ===
+Difficulty: Normal
+Name: Sana
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+Gothita
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
