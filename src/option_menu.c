@@ -696,7 +696,7 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
     }
     else if (JOY_NEW(A_BUTTON))
     {
-        if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG2)
+        if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG3)
             gTasks[taskId].func = Task_OptionMenuSave;
     }
     else if (JOY_NEW(B_BUTTON))
@@ -708,12 +708,12 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
         if (gTasks[taskId].tMenuSelection > 0)
             gTasks[taskId].tMenuSelection--;
         else
-            gTasks[taskId].tMenuSelection = MENUITEM_CANCEL_PG2;
+            gTasks[taskId].tMenuSelection = MENUITEM_CANCEL_PG3;
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
-        if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG2)
+        if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG3)
             gTasks[taskId].tMenuSelection++;
         else
             gTasks[taskId].tMenuSelection = 0;
