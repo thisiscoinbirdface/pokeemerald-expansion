@@ -519,7 +519,9 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
 }
 
 script NicknamePartyMon{
- 
+    msgbox(format("You can nickname your Pokemon from the summary screen!"), MSGBOX_POKENAV)
+    release
+
     msgbox("Give it a nickname?", MSGBOX_YESNO)
     hidemonpic
     if(var(VAR_RESULT) == YES){

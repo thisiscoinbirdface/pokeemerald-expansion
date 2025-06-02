@@ -346,7 +346,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_TENEBRIS_TENEBRIS
 
 	setflag FLAG_SYS_RUN_TOGGLE_SETTING
-
+	setflag FLAG_SYS_RUN_TOGGLE_SETTING
 
 
 

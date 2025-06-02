@@ -40,6 +40,13 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
 
 script CarabrueTown_Sign_ChampionHouse{
+    if (var(VAR_SYS_EXP_ALL) == 0){msgbox("0")}
+    if (var(VAR_SYS_EXP_ALL) == 1){msgbox("1")}
+    if (var(VAR_SYS_EXP_ALL) == 2){msgbox("2")}
+
+    releaseall
+    end
+
     lockall
     msgbox(format("This house is locked."))
     releaseall

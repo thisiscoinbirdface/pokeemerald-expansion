@@ -436,6 +436,24 @@ static u8 Process_ChangePage(u8 CurrentPage)
 
 static void Task_ChangePage(u8 taskId)
 {
+    //save all the options
+    gSaveBlock2Ptr->optionsTextSpeed = gTasks[taskId].tTextSpeed;
+    gSaveBlock2Ptr->optionsBattleSceneOff = gTasks[taskId].tBattleSceneOff;
+    gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
+    gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
+    gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
+    gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+    gTasks[taskId].tFollower == 0 ? FlagClear(FLAG_SYS_OW_FOLLOWERS_DISABLED) : FlagSet(FLAG_SYS_OW_FOLLOWERS_DISABLED);
+    VarSet(VAR_SYS_BATTLE_SPEED, gTasks[taskId].tBattleSpeed);
+    gTasks[taskId].tAutoRun == 0 ? FlagClear(FLAG_SYS_RUN_TOGGLE_SETTING) : FlagSet(FLAG_SYS_RUN_TOGGLE_SETTING);
+    gTasks[taskId].tQuickRun == 0 ? FlagClear(FLAG_SYS_QUICK_RUN) : FlagSet(FLAG_SYS_QUICK_RUN);
+    gTasks[taskId].tBikeSurfMus == 0 ? FlagClear(FLAG_SYS_BIKE_SURF_MUS) : FlagSet(FLAG_SYS_BIKE_SURF_MUS);
+    gTasks[taskId].tAffection == 0 ? FlagClear(FLAG_SYS_AFFECTION_ENABLED) : FlagSet(FLAG_SYS_AFFECTION_ENABLED);
+    VarSet(VAR_SYS_DIFFICULTY, gTasks[taskId].tDifficulty);
+    VarSet(VAR_SYS_EXP_CAP, gTasks[taskId].tExpCap);
+    gTasks[taskId].tAutoscroll == 0 ? FlagClear(FLAG_SYS_AUTOSCROLL) : FlagSet(FLAG_SYS_AUTOSCROLL);
+
+    //now do
     DrawHeaderText();
     PutWindowTilemap(1);
     DrawOptionMenuTexts();
