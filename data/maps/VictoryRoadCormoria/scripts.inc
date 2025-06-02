@@ -161,17 +161,19 @@ VR_Trainer_C_Text_2:
 
 VR_Trainer_D_Text_0:
 # 49 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "I trained with Carona and I've come\n"
-	.string "here to carry on the legacy of the Iron\l"
-	.string "Fist!$"
+	.string "Hah! That's your team?\p"
+	.string "Stupid kid...I hate kids like you who\n"
+	.string "think that type variety matters.\p"
+	.string "It's all about raw power! And DRAGON\n"
+	.string "type Pokemon are the strongest!$"
 
 VR_Trainer_D_Text_1:
 # 49 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "No! The legacy crumbles!$"
+	.string "No! My dragons!$"
 
 VR_Trainer_D_Text_2:
 # 50 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "I need to train again with Carona.$"
+	.string "I need to find more DRAGON types!$"
 
 VR_Trainer_E_Text_0:
 # 55 "data//maps/VictoryRoadCormoria/scripts.pory"

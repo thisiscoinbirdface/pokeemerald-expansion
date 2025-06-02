@@ -275,7 +275,7 @@ Rivetshore_Gym_Trainer_D::
 # 223 "data//maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_D, Rivetshore_Gym_Trainer_D_Text_0, Rivetshore_Gym_Trainer_D_Text_1
 # 224 "data//maps/RivetshoreQuarry/scripts.pory"
-	msgbox Rivetshore_Gym_Trainer_A_Text_2
+	msgbox Rivetshore_Gym_Trainer_D_Text_2
 # 225 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
@@ -285,7 +285,7 @@ Rivetshore_Gym_Trainer_E::
 # 230 "data//maps/RivetshoreQuarry/scripts.pory"
 	trainerbattle_single TRAINER_RIVETSHORE_GYM_E, Rivetshore_Gym_Trainer_E_Text_0, Rivetshore_Gym_Trainer_E_Text_1
 # 231 "data//maps/RivetshoreQuarry/scripts.pory"
-	msgbox Rivetshore_Gym_Trainer_A_Text_2
+	msgbox Rivetshore_Gym_Trainer_E_Text_2
 # 232 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
@@ -681,7 +681,8 @@ Rivetshore_Gym_Trainer_A_Text_1:
 
 Rivetshore_Gym_Trainer_A_Text_2:
 # 196 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "$"
+	.string "Raazi's tough, but we all respect him.\n"
+	.string "He grew up working in the quarry.$"
 
 Rivetshore_Gym_Trainer_B_Text_0:
 # 203 "data//maps/RivetshoreQuarry/scripts.pory"
@@ -731,6 +732,10 @@ Rivetshore_Gym_Trainer_D_Text_1:
 # 223 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "What's your heart made of?$"
 
+Rivetshore_Gym_Trainer_D_Text_2:
+# 224 "data//maps/RivetshoreQuarry/scripts.pory"
+	.string "I hope my buddy starts working here!$"
+
 Rivetshore_Gym_Trainer_E_Text_0:
 # 230 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "I miss the mountaineering life, but this\n"
@@ -738,7 +743,11 @@ Rivetshore_Gym_Trainer_E_Text_0:
 
 Rivetshore_Gym_Trainer_E_Text_1:
 # 230 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "I don't miss losing to trainers!s$"
+	.string "I don't miss losing to trainers!$"
+
+Rivetshore_Gym_Trainer_E_Text_2:
+# 231 "data//maps/RivetshoreQuarry/scripts.pory"
+	.string "Maybe I should get a job here...$"
 
 Rivetshore_Raazi_Talk_Text_0:
 # 254 "data//maps/RivetshoreQuarry/scripts.pory"

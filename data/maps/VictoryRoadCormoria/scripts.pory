@@ -44,10 +44,10 @@ script VR_Trainer_C{
     msgbox(format("The talent coming to the Championship sure is on another level..."), MSGBOX_NPC)
     end
 }
-//black belt 
+//dragon tamer 
 script VR_Trainer_D{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_D, format("I trained with Carona and I've come here to carry on the legacy of the Iron Fist!"), format("No! The legacy crumbles!"))
-    msgbox(format("I need to train again with Carona."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_VICTORY_ROAD_D, format("Hah! That's your team?\pStupid kid...I hate kids like you who think that type variety matters.\pIt's all about raw power! And DRAGON type Pokemon are the strongest!"), format("No! My dragons!"))
+    msgbox(format("I need to find more DRAGON types!"), MSGBOX_NPC)
     end
 }
 //cooltrainer F

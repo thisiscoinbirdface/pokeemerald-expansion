@@ -78,8 +78,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 33,
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 34,
       "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",

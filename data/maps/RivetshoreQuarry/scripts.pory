@@ -193,7 +193,7 @@ script RivetshoreQuarry_Blocker_Trigger{
 //builder
 script Rivetshore_Gym_Trainer_A{
     trainerbattle_single(TRAINER_RIVETSHORE_GYM_A, format("You gotta be tough and sturdy if you wanna work here!"), format("You're extra sturdy!"))
-    msgbox(format(""))
+    msgbox(format("Raazi's tough, but we all respect him.\nHe grew up working in the quarry."))
     releaseall
     end
 }
@@ -221,14 +221,14 @@ script Rivetshore_Gym_Trainer_C{
 //builder
 script Rivetshore_Gym_Trainer_D{
     trainerbattle_single(TRAINER_RIVETSHORE_GYM_D, format("Us builders and hikers get along well. We're both rock-steady with hearts of steel!"), format("What's your heart made of?"))
-    msgbox(format(""))
+    msgbox(format("I hope my buddy starts working here!"))
     releaseall
     end
 }
 //hiker
 script Rivetshore_Gym_Trainer_E{
-    trainerbattle_single(TRAINER_RIVETSHORE_GYM_E, format("I miss the mountaineering life, but this quarry makes me feel at home!"), format("I don't miss losing to trainers!s"))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_E, format("I miss the mountaineering life, but this quarry makes me feel at home!"), format("I don't miss losing to trainers!"))
+    msgbox(format("Maybe I should get a job here..."))
     releaseall
     end
 }

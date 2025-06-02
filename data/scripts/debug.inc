@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_ROUTE8, 47, 45
+	warp MAP_VICTORY_ROAD_CORMORIA, 33, 24
 	release
 	end
 

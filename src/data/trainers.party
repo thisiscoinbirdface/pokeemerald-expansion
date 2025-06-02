@@ -3544,20 +3544,22 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_D ===
-Name: Pinto
-Class: Black Belt
-Pic: Black Belt
+Name: Tom
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Lilligant
+Sliggoo
 Level: 56
+Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Oranguru
+Noivern
 Level: 58
+Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_E ===
