@@ -7024,7 +7024,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_CARVANHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2884
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2883
             .lvl = 45,
             .nature = NATURE_HARDY,
@@ -7056,7 +7056,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_TOEDSCRUEL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2897
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2896
             .lvl = 44,
             .nature = NATURE_HARDY,
@@ -7088,7 +7088,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_ROSERADE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2910
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2909
             .lvl = 45,
             .nature = NATURE_HARDY,
@@ -7099,7 +7099,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_MEGANIUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2914
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2913
             .lvl = 46,
             .nature = NATURE_HARDY,
@@ -7111,14 +7111,16 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROUTE8_D] =
     {
 #line 2917
-        .trainerName = _("Derrin"),
+        .trainerName = _("Mary"),
 #line 2918
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 2919
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
+#line 2920
+F_TRAINER_FEMALE | 
 #line 2921
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 2922
         .doubleBattle = FALSE,
 #line 2923
@@ -7128,10 +7130,10 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2925
-            .species = SPECIES_ORANGURU,
+            .species = SPECIES_KIRLIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2927
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2926
             .lvl = 44,
             .nature = NATURE_HARDY,
@@ -7139,10 +7141,10 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2929
-            .species = SPECIES_MEDICHAM,
+            .species = SPECIES_BRAVIARY_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2931
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2930
             .lvl = 46,
             .nature = NATURE_HARDY,
@@ -7174,7 +7176,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_CARVANHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2944
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 2943
             .lvl = 26,
             .nature = NATURE_HARDY,

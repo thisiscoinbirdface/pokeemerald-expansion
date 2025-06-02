@@ -2881,7 +2881,7 @@ AI: Check Bad Move
 
 Carvanha
 Level: 45
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_B ===
 Name: Danneon
@@ -2894,7 +2894,7 @@ AI: Check Bad Move
 
 Toedscruel
 Level: 44
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_C ===
 Name: Pralia
@@ -2907,28 +2907,28 @@ AI: Check Bad Move
 
 Roserade
 Level: 45
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Meganium
 Level: 46
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_D ===
-Name: Derrin
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Swimmer
+Name: Mary
+Class: Psychic
+Pic: Psychic F
+Gender: Female
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Oranguru
+Kirlia
 Level: 44
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-Medicham
+Braviary-Hisui
 Level: 46
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_E ===
 Name: Bony
@@ -2941,7 +2941,7 @@ AI: Check Bad Move
 
 Carvanha
 Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_F ===
 Name: Jirra
