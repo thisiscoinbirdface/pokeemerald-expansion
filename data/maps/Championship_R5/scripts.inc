@@ -107,11 +107,15 @@ Championship_R5::
 	playse SE_APPLAUSE
 # 80 "data//maps/Championship_R5/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 81 "data//maps/Championship_R5/scripts.pory"
+# 83 "data//maps/Championship_R5/scripts.pory"
 	setflag FLAG_GAME_CLEAR
-# 82 "data//maps/Championship_R5/scripts.pory"
-	special GameClear
 # 84 "data//maps/Championship_R5/scripts.pory"
+	setflag FLAG_IS_CHAMPION
+# 86 "data//maps/Championship_R5/scripts.pory"
+	delay 2
+# 89 "data//maps/Championship_R5/scripts.pory"
+	special GameClear
+# 92 "data//maps/Championship_R5/scripts.pory"
 	releaseall
 	end
 

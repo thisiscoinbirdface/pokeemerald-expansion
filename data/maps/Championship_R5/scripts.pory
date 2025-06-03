@@ -78,9 +78,17 @@ script Championship_R5{
 
     playse(SE_APPLAUSE)
     fadescreen(FADE_TO_BLACK)
+
+    //flags etc
     setflag(FLAG_GAME_CLEAR)
+    setflag(FLAG_IS_CHAMPION)
+
+    delay(2)
+
+    //game clear
     special(GameClear)
 
+    //end
     releaseall
     end
 

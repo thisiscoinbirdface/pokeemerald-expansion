@@ -5960,6 +5960,16 @@
       "secondary_tileset": "gTileset_MauvilleGameCorner",
       "border_filepath": "data/layouts/GalecrestCity_GameCorner/border.bin",
       "blockdata_filepath": "data/layouts/GalecrestCity_GameCorner/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAMPIONSHIP_POKEMON_CENTER",
+      "name": "Championship_PokemonCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Championship_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/Championship_PokemonCenter/map.bin"
     }
   ]
 }

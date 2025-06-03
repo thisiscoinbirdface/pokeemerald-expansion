@@ -1,0 +1,27 @@
+mapscripts Championship_PokemonCenter_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: Championship_PokemonCenter_OnTransition
+}
+
+script Championship_PokemonCenter_OnTransition{
+    setrespawn(HEAL_LOCATION_VICTORY_CAPE)
+}
+
+script Championship_PokemonCenter_EventScript_Nurse{
+	lockall
+    setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	releaseall
+}
+
+
+script Championship_PokemonCenter_NPC1{
+	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\pHis trainers call him Inger the King, or Kinger for short.\pHehe! I'd like a nickname like that."), MSGBOX_NPC)
+	end
+}
+
+script Championship_PokemonCenter_NPC2{
+	msgbox(format("Down south is the giant Vine River. It's one of the three great rivers!\pThe other two are the Ivy and Hoya Rivers, further out west."), MSGBOX_NPC)
+	end
+}
+
