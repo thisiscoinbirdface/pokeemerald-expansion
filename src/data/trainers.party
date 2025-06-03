@@ -543,7 +543,7 @@ Level: 13
 
 
 === TRAINER_ROUTE4_GRUNTS ===
-Name: Grunts
+Name: Duo
 Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt Duo
@@ -561,7 +561,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROUTE4_GRUNTS ===
-Name: Grunts
+Name: Duo
 Difficulty: Normal
 Class: Team Somber
 Pic: Somber Grunt Duo
@@ -1361,7 +1361,7 @@ Level: 17
 
 
 === TRAINER_MTCERAM_GRUNT_DOUBLE ===
-Name: Grunts
+Name: Duo
 Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt Duo
@@ -1389,7 +1389,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_MTCERAM_GRUNT_DOUBLE ===
-Name: Grunts
+Name: Duo
 Difficulty: Normal
 Class: Team Somber
 Pic: Somber Grunt Duo
@@ -4365,8 +4365,8 @@ Ability: Blaze
 === TRAINER_MIRROHEXT_F ===
 Name: Ringer
 Difficulty: Easy
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Class: Guitarist
+Pic: Guitarist
 Gender: Male
 Music: Suspicious
 Double Battle: No
@@ -4375,6 +4375,33 @@ AI: Check Bad Move
 Banette
 Level: 32
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+
+=== TRAINER_MIRROHEXT_F ===
+Name: Ringer
+Difficulty: Normal
+Class: Guitarist
+Pic: Guitarist
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Banette
+Level: 32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHEXT_G ===
 Name: Kindra
@@ -4394,6 +4421,22 @@ Passimian
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_MIRROHEXT_G ===
+Name: Kindra
+Difficulty: Normal
+Class: Black Belt
+Pic: Black Belt
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Pancham
+Level: 31
+
+Passimian
+Level: 32
+
 === TRAINER_MIRROHEXT_H ===
 Name: Tammy
 Difficulty: Easy
@@ -4412,8 +4455,35 @@ Primeape
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_MIRROHEXT_H ===
+Name: Tammy
+Difficulty: Normal
+Class: Battle Girl
+Pic: Battle Girl
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Gurdurr
+Level: 30
+
+Primeape
+Level: 32
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHINT_A ===
-Name: ELI
+Name: Elo
 Difficulty: Easy
 Class: Hiker
 Pic: Hiker
@@ -4429,6 +4499,33 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Graveler-Alola
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MIRROHINT_A ===
+Name: Elo
+Difficulty: Normal
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Cetoddle
+Level: 33
+
+Graveler-Alola
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT_B ===
 Name: Wyatt
@@ -4448,9 +4545,36 @@ Sinistcha
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+=== TRAINER_MIRROHINT_B ===
+Name: Wyatt
+Difficulty: Normal
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Shuppet
+Level: 32
+
+Sinistcha
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT_C ===
-Name: ELI
+Name: Verdun
 Difficulty: Easy
 Class: Hiker
 Pic: Hiker
@@ -4462,6 +4586,29 @@ AI: Check Bad Move
 Bergmite
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_MIRROHINT_C ===
+Name: Verdun
+Difficulty: Normal
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Bergmite
+Level: 34
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT_D ===
 Name: Friston
@@ -4485,6 +4632,43 @@ Murkrow
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+=== TRAINER_MIRROHINT_D ===
+Name: Friston
+Difficulty: Normal
+Class: Burglar
+Pic: Burglar
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Thievul
+Level: 32
+
+Thievul
+Level: 33
+
+Murkrow
+Level: 33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHINT_E ===
 Name: Duo
 Difficulty: Easy
@@ -4502,6 +4686,36 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Mime Jr.
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_MIRROHINT_E ===
+Name: Duo
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt Duo
+Gender: Male
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer
+
+Grimer-Alola
+Level: 33
+
+Mime Jr.
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT_F ===
 Name: VALERIE
@@ -4525,7 +4739,7 @@ Pic: Psychic M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Ponyta-Galar 
 Level: 32
@@ -4539,6 +4753,42 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Wyrdeer
 Level: 34
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+=== TRAINER_MIRROHINT2_A ===
+Name: Rein
+Difficulty: Normal
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction
+
+Ponyta-Galar 
+Level: 32
+Ability: Pastel Veil
+- Will o Wisp
+- Stomp
+- Psybeam
+- Morning Sun
+
+Wyrdeer
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_MIRROHINT2_B ===
@@ -4559,6 +4809,34 @@ Carkol
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+=== TRAINER_MIRROHINT2_B ===
+Name: Shin
+Difficulty: Normal
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Piloswine
+Level: 32
+
+Carkol
+Level: 33
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHINT2_C ===
 Name: Elona
 Difficulty: Easy
@@ -4576,6 +4854,23 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Lycanroc
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 30 Spe
+
+=== TRAINER_MIRROHINT2_C ===
+Name: Elona
+Difficulty: Normal
+Class: Triathlete
+Pic: Running Triathlete F
+Gender: Female
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Voltorb-Hisui @ Wide Lens
+Level: 32
+
+Lycanroc
+Level: 34
+
 
 
 === TRAINER_MIRROHINT2_D ===
@@ -4595,6 +4890,35 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Sandslash-Alola
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MIRROHINT2_D ===
+Name: Araya
+Difficulty: Normal
+Class: Skiier
+Pic: Skiier F
+Gender: Female
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Snover
+Level: 31
+
+Sandslash-Alola
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT2_E ===
 Name: Chara
@@ -4618,6 +4942,36 @@ Altaria
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_MIRROHINT2_E ===
+Name: Chara
+Difficulty: Normal
+Class: Cool Girl
+Pic: Cool Girl
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Pineco
+Level: 34
+
+Ursaring
+Level: 34
+
+Altaria
+Level: 36
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHINT2_F ===
 Name: VICTOR
@@ -4636,6 +4990,34 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Frigibax
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MIRROHINT2_F ===
+Name: VICTOR
+Difficulty: Normal
+Class: Pokefan
+Pic: Pokefan M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Cetoddle
+Level: 34
+
+Frigibax
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_MIRROHINT2_G ===
@@ -4665,6 +5047,45 @@ Marowak-Alola
 Level: 36
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+=== TRAINER_MIRROHINT2_G ===
+Name: Calvin
+Difficulty: Normal
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Purple
+
+Herdier
+Level: 34
+
+Corvisquire
+Level: 34
+
+Raticate-Alola
+Level: 35
+
+Marowak-Alola
+Level: 36
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHPEAK_A ===
 Name: Cindy
@@ -4681,6 +5102,33 @@ Yanmega
 Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
+=== TRAINER_MIRROHPEAK_A ===
+Name: Cindy
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Yanmega
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHPEAK_B ===
 Name: Jan
 Difficulty: Easy
@@ -4696,6 +5144,33 @@ Murkrow
 Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+=== TRAINER_MIRROHPEAK_B ===
+Name: Jan
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Female
+Music: Female
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Murkrow
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHPEAK_C ===
 Name: Grunt
 Difficulty: Easy
@@ -4709,6 +5184,35 @@ AI: Check Bad Move
 Murkrow
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_MIRROHPEAK_C ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Murkrow
+Level: 35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHPEAK_D ===
 Name: Grunt
@@ -4724,6 +5228,32 @@ Bronzong
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+=== TRAINER_MIRROHPEAK_D ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Bronzong
+Level: 35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHPEAK_E ===
 Name: SHEILA
 Difficulty: Easy
@@ -4737,6 +5267,31 @@ AI: Check Bad Move
 Shroomish
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MIRROHPEAK_E ===
+Name: SHEILA
+Difficulty: Normal
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Shroomish
+Level: 21
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHPEAK_MOXIE ===
 Name: Moxie
@@ -4785,8 +5340,65 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Sludge Bomb
 - Nasty Plot
 
+=== TRAINER_MIRROHPEAK_MOXIE ===
+Name: Moxie
+Difficulty: Normal
+Class: Somber Admin
+Pic: Somber Admin Moxie
+Gender: Male
+Music: Aqua
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Prediction / Force Setup First Turn / Ace Pokemon
+Mugshot: Purple
+
+Morgrem @ Eviolite
+Ability: Prankster
+Level: 38
+- Fake Out
+- Dazzling Gleam
+- Reflect
+- Light Screen
+
+Honchkrow @ Razor Claw
+Ability: Super Luck
+Level: 39
+- Taunt
+- Sucker Punch
+- Aerial Ace
+- Night Slash
+
+Slowking-Galar @ Leftovers
+Ability: Regenerator
+Level: 39
+- Toxic
+- Sludge Bomb
+- Calm Mind
+- Slack Off
+
+Houndoom @ Houndoominite
+Level: 42
+- Flamethrower
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_WINTERLILY_HOLLOW_GYM_A ===
-Name: SMIRNOFF
+Name: Smirnof
 Difficulty: Easy
 Class: Electrician
 Pic: Electrician
@@ -4803,6 +5415,38 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Graveler-Alola
 Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WINTERLILY_HOLLOW_GYM_A ===
+Name: Smirnof
+Difficulty: Normal
+Class: Electrician
+Pic: Electrician
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Starting Status: Electric Terrain
+
+Toxtricity
+Level: 34
+
+Graveler-Alola
+Level: 35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_B ===
 Name: Windhorst
