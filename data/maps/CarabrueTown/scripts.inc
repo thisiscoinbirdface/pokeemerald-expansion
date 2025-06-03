@@ -60,42 +60,38 @@ CarabrueTown_EventScript_PoliceRoadBlock_2:
 
 CarabrueTown_Sign_ChampionHouse::
 # 43 "data//maps/CarabrueTown/scripts.pory"
-	releaseall
-# 44 "data//maps/CarabrueTown/scripts.pory"
-	end
-# 46 "data//maps/CarabrueTown/scripts.pory"
 	lockall
-# 47 "data//maps/CarabrueTown/scripts.pory"
+# 44 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_Sign_ChampionHouse_Text_0
-# 48 "data//maps/CarabrueTown/scripts.pory"
+# 45 "data//maps/CarabrueTown/scripts.pory"
 	releaseall
-	return
+	end
 
 
 CarabrueTown_EventScript_NPC1::
-# 52 "data//maps/CarabrueTown/scripts.pory"
+# 50 "data//maps/CarabrueTown/scripts.pory"
 	goto_if_set FLAG_CARABRUE_POLICE, CarabrueTown_EventScript_NPC1_2
-# 55 "data//maps/CarabrueTown/scripts.pory"
+# 53 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_EventScript_NPC1_Text_1, MSGBOX_NPC
 CarabrueTown_EventScript_NPC1_1:
 	end
 
 CarabrueTown_EventScript_NPC1_2:
-# 53 "data//maps/CarabrueTown/scripts.pory"
+# 51 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_EventScript_NPC1_Text_0, MSGBOX_NPC
 	goto CarabrueTown_EventScript_NPC1_1
 
 
 CarabrueTown_EventScript_NPC2::
-# 61 "data//maps/CarabrueTown/scripts.pory"
+# 59 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_EventScript_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 CarabrueTown_Chikorita::
-# 66 "data//maps/CarabrueTown/scripts.pory"
+# 64 "data//maps/CarabrueTown/scripts.pory"
 	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
-# 67 "data//maps/CarabrueTown/scripts.pory"
+# 65 "data//maps/CarabrueTown/scripts.pory"
 	msgbox CarabrueTown_Chikorita_Text_0, MSGBOX_NPC
 	end
 
@@ -134,16 +130,16 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_4:
 	.string "Professor around to help you?$"
 
 CarabrueTown_Sign_ChampionHouse_Text_0:
-# 47 "data//maps/CarabrueTown/scripts.pory"
+# 44 "data//maps/CarabrueTown/scripts.pory"
 	.string "This house is locked.$"
 
 CarabrueTown_EventScript_NPC1_Text_0:
-# 53 "data//maps/CarabrueTown/scripts.pory"
+# 51 "data//maps/CarabrueTown/scripts.pory"
 	.string "Looks like the police went away. I hope\n"
 	.string "they got the evidence they needed.$"
 
 CarabrueTown_EventScript_NPC1_Text_1:
-# 55 "data//maps/CarabrueTown/scripts.pory"
+# 53 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those cops over\n"
 	.string "there?\p"
 	.string "They came all the way from Fennilahl\n"
@@ -152,11 +148,11 @@ CarabrueTown_EventScript_NPC1_Text_1:
 	.string "to Route 1 while they investigate.$"
 
 CarabrueTown_EventScript_NPC2_Text_0:
-# 61 "data//maps/CarabrueTown/scripts.pory"
+# 59 "data//maps/CarabrueTown/scripts.pory"
 	.string "My Chikorita and I love how cozy\n"
 	.string "Carabrue Town is! That's because it's\l"
 	.string "nestled deep in the hills of Cormoria.$"
 
 CarabrueTown_Chikorita_Text_0:
-# 67 "data//maps/CarabrueTown/scripts.pory"
+# 65 "data//maps/CarabrueTown/scripts.pory"
 	.string "Chikorita is happy!$"

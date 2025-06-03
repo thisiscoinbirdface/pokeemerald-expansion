@@ -3353,6 +3353,29 @@ Scyther
 Level: 26
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
+
+=== TRAINER_ROUTE6_C ===
+Name: Sanya
+Difficulty: Normal
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Smart Trainer / Force Setup First Turn
+
+Scizor @ Metal Coat
+Ability: Technician
+Level: 26
+- Swords Dance
+- Bullet Punch
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_D ===
 Name: Ahren
 Difficulty: Easy
@@ -3371,6 +3394,26 @@ Carvanha
 Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_ROUTE6_D ===
+Name: Ahren
+Difficulty: Normal
+Class: Fisherman
+Pic: Fisherman
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Toedscool
+Level: 26
+
+Carvanha @ Rocky Helmet
+Ability: Rough Skin
+Level: 27
+
+
+
+
 === TRAINER_ROUTE6_E ===
 Name: Koan
 Difficulty: Easy
@@ -3386,8 +3429,33 @@ Croconaw
 Level: 30
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
+=== TRAINER_ROUTE6_E ===
+Name: Koan
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer
+
+Croconaw @ Dark Gem
+Level: 30
+- Crunch
+- Waterfall
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_F ===
-Name: TAKAO
+Name: Takao
 Difficulty: Easy
 Class: Black Belt
 Pic: Black Belt
@@ -3403,6 +3471,32 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Croagunk
 Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_ROUTE6_F ===
+Name: Takao
+Difficulty: Normal
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Sneasel-Hisui
+Level: 27   
+
+Croagunk
+Level: 28
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_ROUTE6_G ===
@@ -3428,9 +3522,44 @@ Lycanroc
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_ROUTE6_G ===
+Name: Adinya
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder M
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Super Potion
+AI: Smart Trainer / Risky
+Mugshot: Green
+
+Manectric @ Oran Berry
+Level: 29
+
+Houndoom @ Fire Gem
+Level: 30
+
+Lycanroc @ Rock Gem
+Level: 32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE6_H ===
-Name: BRIAR
+Name: Briar
 Difficulty: Easy
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -3451,12 +3580,46 @@ Wimpod
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Beedrill
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+=== TRAINER_ROUTE6_H ===
+Name: Briar
+Difficulty: Normal
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Swadloon
+Level: 26
+
+Dottler
+Level: 26
+
+Wimpod
+Level: 26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE6_I ===
-Name: NICOLAS
+Name: Nicolas
 Difficulty: Easy
 Class: Dragon Tamer
 Pic: Dragon Tamer
@@ -3473,8 +3636,37 @@ Skrelp
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_ROUTE6_I ===
+Name: Nicolas
+Difficulty: Normal
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Swablu @ Oran Berry
+Level: 29
+
+Skrelp
+Level: 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_J ===
-Name: CALVIN
+Name: Calvin
 Difficulty: Easy
 Class: Youngster
 Pic: Youngster
@@ -3491,9 +3683,41 @@ Rufflet
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_ROUTE6_J ===
+Name: Calvin
+Difficulty: Normal
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Raticate-Alola
+Level: 28
+
+Rufflet
+Level: 29
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE6_K ===
-Name: PATRICIA
+Name: Patricia
 Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -3510,8 +3734,36 @@ Cursola
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_ROUTE6_K ===
+Name: Patricia
+Difficulty: Normal
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Shuppet
+Level: 30
+
+Cursola
+Level: 31
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_GRUNT1 ===
-Name: BROOKE
+Name: Brooke
 Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt M
@@ -3528,8 +3780,24 @@ Drowzee
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_ROUTE6_GRUNT1 ===
+Name: Brooke
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Female
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer
+
+Grimer-Alola
+Level: 28
+
+Drowzee
+Level: 29
+
 === TRAINER_ROUTE6_GRUNT2 ===
-Name: HOPE
+Name: Hope
 Difficulty: Easy
 Class: Team Somber
 Pic: Somber Grunt F
@@ -3546,6 +3814,34 @@ Murkrow
 Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_ROUTE6_GRUNT2 ===
+Name: Hope
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Female
+Music: Cool
+Double Battle: No
+AI: Smart Trainer
+
+Lokix
+Level: 28
+
+Murkrow
+Level: 30
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE6_GAB ===
 Name: Gabrielle
 Difficulty: Easy
@@ -3555,7 +3851,7 @@ Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
 Zorua-Hisui
 Level: 33
@@ -3568,6 +3864,36 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 Mawile
 Level: 32
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+=== TRAINER_ROUTE6_GAB ===
+Name: Gabrielle
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Zorua-Hisui
+Level: 33
+
+Baltoy
+Level: 31
+
+Mawile
+Level: 32
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SHANNON ===
 Name: SHANNON
@@ -3614,6 +3940,39 @@ Ceruledge
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+=== TRAINER_MIRROHBASECAMP_KOHLA ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+
+Axew
+Level: 31
+
+Dewott
+Level: 31
+
+Gallade @ Galladite
+Level: 32
+- Aerial Ace
+- Psycho Cut
+- Drain Punch
+- Bulk Up
+
+Ceruledge
+Level: 33
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHBASECAMP_LEADER ===
 Name: Carona
@@ -3642,6 +4001,48 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Medicham @ Medichamite
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MIRROHBASECAMP_LEADER ===
+Name: Carona
+Difficulty: Normal
+Class: Leader
+Pic: Leader Carona
+Gender: Female
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Sneasler
+Level: 31
+
+Pangoro
+Level: 32
+
+Annihilape
+Level: 32
+
+Medicham @ Medichamite
+Level: 34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHEXT_A ===
 Name: Sentry
@@ -3680,8 +4081,60 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Slide
 - Take Down
 
+=== TRAINER_MIRROHEXT_A ===
+Name: Sentry
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Female
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Smart Trainer
+
+Palpitoad
+Ability: Water Absorb
+Level: 32
+- Bubblebeam
+- Flail
+- Mud Shot
+- Uproar
+
+Quilava
+Level: 31
+- Swift
+- Fire Spin
+- Smokescreen
+- Endure
+
+Lairon
+Level: 32
+Ability: Rock Head
+- Protect
+- Iron Head
+- Rock Slide
+- Take Down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHEXT_B ===
-Name: BROOKE
+Name: Badshah
 Difficulty: Easy
 Class: Ninja Boy
 Pic: Ninja Boy
@@ -3697,6 +4150,35 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Snom
 Level: 31
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+=== TRAINER_MIRROHEXT_B ===
+Name: Badshah
+Difficulty: Normal
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Vivillon
+Level: 31
+
+Snom
+Level: 31
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_MIRROHEXT_C ===
 Name: Bianca
@@ -3716,6 +4198,36 @@ Sandshrew-Alola
 Level: 33
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
+=== TRAINER_MIRROHEXT_C ===
+Name: Bianca
+Difficulty: Normal
+Class: Skiier
+Pic: Skiier F
+Gender: Female
+Music: Cool
+Double Battle: No
+AI: Smart Trainer
+
+Snover
+Level: 32
+
+Sandshrew-Alola
+Level: 33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHEXT_D ===
 Name: Bianca
 Difficulty: Easy
@@ -3733,6 +4245,33 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Rapidash-Galar
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_MIRROHEXT_D ===
+Name: Bianca
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Stantler
+Level: 32
+
+Rapidash-Galar
+Level: 33
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_MIRROHEXT_E ===
@@ -3773,6 +4312,54 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Will o Wisp
 - Sunny Day
 - Grass Knot
+
+=== TRAINER_MIRROHEXT_E ===
+Name: Junipurr
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Dreepy
+Ability: Infiltrator
+Level: 30
+- Dragon Tail
+- Sucker Punch
+- Quick Attack
+- Facade
+
+Tinkatuff
+Level: 30
+Nature: Adamant
+Ability: Mold breaker
+- Play Rough
+- Flash Cannon
+- Ice Hammer
+- Foul Play
+
+Braixen
+Level: 32
+Nature: Timid
+Ability: Blaze
+- Flamethrower
+- Will o Wisp
+- Sunny Day
+- Grass Knot
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_MIRROHEXT_F ===
