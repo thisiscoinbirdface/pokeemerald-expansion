@@ -22,6 +22,9 @@ script Championship_Corridor_Register{
         release
     }
 
+    msgbox(format("Are you ready to try again?"), MSGBOX_POKENAV)
+    dynmultichoice(10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm ready!", "Not yet")
+
     //reset game 
     setvar(VAR_CHAMP_STAGE, 0)
     special(HealPlayerParty)
