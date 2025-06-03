@@ -204,7 +204,7 @@ RivetshoreCity_Houses_NPC5_Text_0:
 RivetshoreCity_Houses_NPC6_Text_0:
 # 48 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "We've hidden the PocketBoy well.\n"
-	.string "Grandma will never find out.\n"
+	.string "Grandma will never find out.\l"
 	.string "Wanna play?$"
 
 RivetshoreCity_Houses_NPC6_Text_1:

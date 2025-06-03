@@ -122,7 +122,7 @@ RivetshoreQuarry_NPC1::
 # 99 "data//maps/RivetshoreQuarry/scripts.pory"
 	waitstate
 # 101 "data//maps/RivetshoreQuarry/scripts.pory"
-	compare GAME_CORNER_VAR_WINNINGS, 0
+	compare GAME_CORNER_VAR_WINNINGS, 2
 	goto_if_gt RivetshoreQuarry_NPC1_8
 # 110 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
@@ -677,19 +677,21 @@ RivetshoreQuarry_NPC1_Text_1:
 	.string "I'm the shift manager at the quarry!\p"
 	.string "...\p"
 	.string "Why am I not out there with my team?\p"
-	.string "It's too hot! Plus, I gotta get the high\n"
-	.string "score in Block Stacker.\p"
+	.string "It's too hot! Plus, I gotta get on the\n"
+	.string "scoreboard in FlappyFree. It's so hard!\p"
 	.string "What? You want my PocketBoy?$"
 
 RivetshoreQuarry_NPC1_Text_2:
 # 96 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "Alright kid, how about this?\p"
-	.string "If you can get 5 points in FlappyFree,\n"
-	.string "I'll let you have it!$"
+	.string "If you can get even one point in\n"
+	.string "FlappyFree, I'll let you have it!$"
 
 RivetshoreQuarry_NPC1_Text_3:
 # 102 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "No way! You're a natural!\n"
+	.string "No way! You're a natural! Sigh...I'm\n"
+	.string "getting old, ya know? These fast-clicky\l"
+	.string "games just aren't for my fingers.\l"
 	.string "Alright kid, here ya go.\p"
 	.string "Have fun!$"
 
