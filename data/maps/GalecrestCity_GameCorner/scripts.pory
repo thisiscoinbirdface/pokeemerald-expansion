@@ -41,7 +41,7 @@ script GalecrestCity_GameCorner_Gacha_Basic{
     msgbox(format("It's an old Gacha Machine.\nThere's a token slot by the lever."))
     release
 
-    delay(16)
+    delay(8)
     msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {
@@ -54,22 +54,22 @@ script GalecrestCity_GameCorner_Gacha_Basic{
     checkitem(ITEM_GACHA_TOKEN)
 
     if (var(VAR_RESULT) == 0){
+        delay(8)
         msgbox(format("ERROR: GACHA TOKEN REQUIRED."))      
         releaseall  
         end
     }
-    delay(16)
+    delay(8)
     msgbox(format("Insert Gacha Token?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {end}
-        removeitem(ITEM_GACHA_TOKEN)
-
         setvar(VAR_0x8004, 1)
         playbgm(MUS_RG_CINNABAR, FALSE)
         special(StartGacha)
         waitstate
+        removeitem(ITEM_GACHA_TOKEN)
     } else {
-        delay(16)        
+        delay(8)        
         msgbox(format("ERROR: 3 BADGES REQUIRED."))
     }    
 
@@ -83,7 +83,7 @@ script GalecrestCity_GameCorner_Gacha_Great{
     msgbox(format("It's a regular Gacha Machine.\nThere's a token slot by the lever."))
     release
 
-    delay(16)
+    delay(8)
     msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {
@@ -96,22 +96,22 @@ script GalecrestCity_GameCorner_Gacha_Great{
     checkitem(ITEM_GACHA_TOKEN)
 
     if (var(VAR_RESULT) == 0){
+        delay(8)
         msgbox(format("ERROR: GACHA TOKEN REQUIRED."))      
         releaseall  
         end
     }
-    delay(16)
+    delay(8)
     msgbox(format("Insert Gacha Token?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {end}
-        removeitem(ITEM_GACHA_TOKEN)
-
         setvar(VAR_0x8004, 2)
         playbgm(MUS_RG_CINNABAR, FALSE)
         special(StartGacha)
         waitstate
+        removeitem(ITEM_GACHA_TOKEN)
     } else {
-        delay(16)        
+        delay(8)        
         msgbox(format("ERROR: 4 BADGES REQUIRED."))
     }    
     
@@ -125,7 +125,7 @@ script GalecrestCity_GameCorner_Gacha_Ultra{
     msgbox(format("It's a nice Gacha Machine.\nThere's a token slot by the lever."))
     release
 
-    delay(16)
+    delay(8)
     msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {
@@ -138,22 +138,22 @@ script GalecrestCity_GameCorner_Gacha_Ultra{
     checkitem(ITEM_GACHA_TOKEN)
 
     if (var(VAR_RESULT) == 0){
+        delay(8)
         msgbox(format("ERROR: GACHA TOKEN REQUIRED."))      
         releaseall  
         end
     }
-    delay(16)
+    delay(8)
     msgbox(format("Insert Gacha Token?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {end}
-        removeitem(ITEM_GACHA_TOKEN)
-
         setvar(VAR_0x8004, 3)
         playbgm(MUS_RG_CINNABAR, FALSE)
         special(StartGacha)
         waitstate
+        removeitem(ITEM_GACHA_TOKEN)
     } else {
-        delay(16)        
+        delay(8)        
         msgbox(format("ERROR: 6 BADGES REQUIRED."))
     }    
     
@@ -167,7 +167,7 @@ script GalecrestCity_GameCorner_Gacha_Master{
     msgbox(format("It's a shiny new Gacha Machine!\nThere's a token slot by the lever."))
     release
 
-    delay(16)
+    delay(8)
     msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {
@@ -180,22 +180,22 @@ script GalecrestCity_GameCorner_Gacha_Master{
     checkitem(ITEM_GACHA_TOKEN)
 
     if (var(VAR_RESULT) == 0){
+        delay(8)
         msgbox(format("ERROR: GACHA TOKEN REQUIRED."))      
         releaseall  
         end
     }
-    delay(16)
+    delay(8)
     msgbox(format("Insert Gacha Token?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {end}
-        removeitem(ITEM_GACHA_TOKEN)
-
         setvar(VAR_0x8004, 4)
         playbgm(MUS_RG_CINNABAR, FALSE)
         special(StartGacha)
         waitstate
+        removeitem(ITEM_GACHA_TOKEN)
     } else {
-        delay(16)        
+        delay(8)        
         msgbox(format("ERROR: 8 BADGES REQUIRED."))
     }    
     

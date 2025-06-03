@@ -504,7 +504,7 @@ script GalecrestCity_NPC_20{
 }
 
 script GalecrestCity_NPC_21{
-    msgbox(format("There's a Dugtrio there that's been digging into the ground down there.\pIt threw up all these rocks!\pNobody will do anything because this neighborhood is low priority."), MSGBOX_NPC)
+    msgbox(format("There's a Dugtrio there that's been digging into the ground down there.\lIt threw up all these rocks!\lNobody will do anything because\lthis neighborhood is low priority."), MSGBOX_NPC)
     end
 }
 

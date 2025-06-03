@@ -12,6 +12,7 @@
 #include "graphics.h"
 #include "field_message_box.h"
 #include "international_string_util.h"
+#include "item.h"
 #include "m4a.h"
 #include "main.h"
 #include "menu.h"
@@ -2629,6 +2630,8 @@ static void HandleInput(void)
         }
         else if (JOY_NEW(B_BUTTON))
         {
+            //give the item back somehow
+            AddBagItem(ITEM_GACHA_TOKEN, 1);
             sGacha->state = GACHA_STATE_START_EXIT;
         }
         // else if (JOY_NEW(DPAD_UP))

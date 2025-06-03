@@ -1046,15 +1046,14 @@ GalecrestCity_NPC_10_Text_0:
 # 360 "data//maps/GalecrestCity/scripts.pory"
 	.string "The Detective Academy is the most\n"
 	.string "prestigious police academy in all of\l"
-	.string "Cormoria. My husband helped build it,\l"
-	.string "many years ago, when he ran a\l"
-	.string "construction business.$"
+	.string "Cormoria. My husband was a teacher\l"
+	.string "there! He's retired now but he keeps\l"
+	.string "leaving the house...where does he go?$"
 
 GalecrestCity_NPC_11_Text_0:
 # 367 "data//maps/GalecrestCity/scripts.pory"
-	.string "I do the night shift at the Pokémon\n"
-	.string "Center. During the day, Chansey and I\l"
-	.string "like to walk around the garden and pick\l"
+	.string "During the day, Chansey and I like to\n"
+	.string "walk around the garden and pick\l"
 	.string "berries.$"
 
 GalecrestCity_NPC_11_Text_1:
@@ -1181,10 +1180,10 @@ GalecrestCity_NPC_20_Text_0:
 GalecrestCity_NPC_21_Text_0:
 # 507 "data//maps/GalecrestCity/scripts.pory"
 	.string "There's a Dugtrio there that's been\n"
-	.string "digging into the ground down there.\p"
-	.string "It threw up all these rocks!\p"
-	.string "Nobody will do anything because this\n"
-	.string "neighborhood is low priority.$"
+	.string "digging into the ground down there.\l"
+	.string "It threw up all these rocks!\l"
+	.string "Nobody will do anything because\l"
+	.string "this neighborhood is low priority.$"
 
 GalecrestCity_NPC_Ranger_Text_0:
 # 512 "data//maps/GalecrestCity/scripts.pory"
