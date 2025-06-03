@@ -240,7 +240,7 @@ Fennekin
 Level: 7
 
 Vulpix-Alola
-Level: 8
+Level: 7
 
 
 
@@ -272,12 +272,11 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Pineco @ Choice Band
-Level: 7
-- Self-Destruct
+Pineco
+Level: 6
 
 Swablu
-Level: 8
+Level: 7
 
 
 
@@ -310,10 +309,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Cubone
-Level: 7
+Level: 6
 
 Sentret
-Level: 9
+Level: 8
 
 
 === TRAINER_ROUTE3_CHARA ===
@@ -345,7 +344,7 @@ Double Battle: No
 AI: Smart Trainer / Risky
 
 Teddiursa
-Level: 8
+Level: 7
 
 Swablu
 Level: 9
@@ -377,7 +376,7 @@ Double Battle: No
 AI: Smart Trainer / Risky
 
 Zorua-Hisui
-Level: 12
+Level: 11
 
 
 
@@ -469,8 +468,8 @@ Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Minior @ Oran Berry
-Level: 12
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Confuse Ray
 - Rollout
 
@@ -488,7 +487,6 @@ Mugshot: Yellow
 
 Rockruff
 Level: 12
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Tackle
 - Leer
 - Sand Attack
@@ -496,11 +494,9 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Geodude-Alola @ Oran Berry
 Level: 12
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Minior @ Oran Berry
-Level: 12
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Level: 13
 - Confuse Ray
 - Rollout
 
@@ -571,10 +567,10 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Impidimp
-Level: 14
+Level: 13
 
 Drowzee
-Level: 15
+Level: 14
 
 
 
@@ -590,11 +586,9 @@ AI: Check Bad Move
 
 Zorua-Hisui
 Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Baltoy
 Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
@@ -608,7 +602,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Zorua-Hisui @ Ghost Gem
-Level: 17
+Level: 16
 
 Baltoy
 Level: 16
@@ -740,10 +734,6 @@ Double Battle: No
 AI: Smart Trainer
 
 Chinchou
-Shiny: Yes
-Level: 12
-
-Growlithe-Hisui
 Shiny: Yes
 Level: 13
 
@@ -780,7 +770,7 @@ Swablu
 Level: 9
 
 Greavard
-Level: 11
+Level: 10
 
 
 === TRAINER_ROUTE4_SONA ===
@@ -812,10 +802,10 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Risky
 
-Chikorita
+Buneary
 Level: 11
 
-Mawile
+Chikorita
 Level: 12
 
 
@@ -847,11 +837,11 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Risky
 
+Buneary
+Level: 11
+
 Chikorita
 Level: 12
-
-Mawile
-Level: 13
 
 
 === TRAINER_ROUTE4_KID1 ===
@@ -946,7 +936,7 @@ Riolu
 Level: 13
 
 Mime Jr.
-Level: 14
+Level: 13
 
 
 
@@ -1042,8 +1032,6 @@ AI: Smart Trainer / Try To Faint
 Braixen
 Level: 16
 
-Fletchling
-Level: 16
 
 
 === TRAINER_CERAMBASECAMPGYM_D ===
@@ -1209,10 +1197,6 @@ AI: Smart Trainer
 
 Finneon
 Level: 14
-
-Basculin-White-Striped
-Ability: Adaptability
-Level: 15
 
 Totodile
 Level: 15
@@ -1454,13 +1438,13 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Impidimp
-Level: 20
+Level: 19
 
 Murkrow @ Oran Berry
-Level: 21
+Level: 19
 
 Slowpoke-Galar
-Level: 23
+Level: 21
 - Acid
 - Yawn
 - Psychic
@@ -1527,7 +1511,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Charcadet 
-Level: 19
+Level: 18
 
 
 
@@ -1586,10 +1570,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Charcadet
-Level: 18
+Level: 17
 
 Furfrou
-Level: 18
+Level: 17
 - Headbutt
 - Snarl
 - Growl
@@ -1657,7 +1641,7 @@ Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Sentret
-Level: 18
+Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_GALECRESTGYM_C ===
@@ -1671,10 +1655,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Charcadet
-Level: 19
+Level: 18
 
 Sentret
-Level: 20
+Level: 19
 
 
 
@@ -1694,19 +1678,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Yamper
-Level: 19
+Level: 20
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Kirlia
-Level: 20
+Level: 21
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Dewott
-Level: 20
+Level: 21
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Ceruledge @ Oran Berry
-Level: 22
+Level: 23
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Shadow Sneak
 - Will O Wisp
@@ -1735,7 +1719,7 @@ Dewott
 Level: 21
 
 Ceruledge @ Sitrus Berry
-Level: 24
+Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Shadow Sneak
 - Swords Dance
@@ -1772,7 +1756,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Passimian
-Level: 22
+Level: 20
 
 
 
@@ -1813,13 +1797,13 @@ Double Battle: No
 AI: Smart Trainer
 
 Morelull
-Level: 19
+Level: 18
 
 Chingling
-Level: 19
+Level: 18
 
 Bruxish
-Level: 21
+Level: 19
 
 
 
@@ -1856,13 +1840,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Poltchageist
-Level: 20
+Level: 19
 
 Shuppet
-Level: 21
-
-Sinistea
-Level: 21
+Level: 20
 
 
 
@@ -1900,10 +1881,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Stantler
-Level: 20
+Level: 19
 
 Ponyta-Galar @ Oran Berry
-Level: 22
+Level: 21
 
 
 
@@ -1944,10 +1925,7 @@ Double Battle: No
 AI: Smart Trainer / Risky
 
 Roselia
-Level: 22
-
-Linoone-Galar
-Level: 22
+Level: 21
 
 
 
@@ -1991,10 +1969,10 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Magnemite 
-Level: 23
+Level: 22
 
 Impidimp
-Level: 24
+Level: 22
 
 
 
@@ -2042,16 +2020,16 @@ AI: Smart Trainer / Ace Pokemon / Prediction
 Mugshot: Green
 
 Dottler @ Oran Berry
-Level: 21
+Level: 20
 
 Dewpider 
-Level: 22
+Level: 21
 
 Lokix @ Bug Gem
-Level: 22
+Level: 21
 
 Pinsir @ Leftovers
-Level: 24
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -2088,10 +2066,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Nickit
-Level: 20
+Level: 19
 
-Houndour
-Level: 22
+Rattata-Alola
+Level: 20
 
 
 
@@ -2133,13 +2111,14 @@ Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
 
+Growlithe-Hisui @ Liechi Berry
+Ability: Intimidate
+Level: 20
+- Flame Charge
+
 Herdier
 Level: 22
 
-Growlithe-Hisui @ Liechi Berry
-Ability: Intimidate
-Level: 23
-- Flame Charge
 
 
 
@@ -2295,7 +2274,7 @@ Shiny: Yes
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Gurdurr
-Level: 23
+Level: 24
 Shiny: Yes
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -2310,11 +2289,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Grimer-Alola
-Level: 24
+Level: 23
 Shiny: Yes
 
 Gurdurr
-Level: 25
+Level: 24
 Shiny: Yes
 
 
@@ -2353,10 +2332,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Litwick
-Level: 23
-
-Dreepy
-Level: 23
+Level: 22
 
 
 
@@ -2397,10 +2373,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Voltorb-Hisui
-Level: 22
+Level: 21
 
 Toxel @ Black Sludge
-Level: 24
+Level: 23
 
 
 
@@ -2487,7 +2463,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Roselia
-Level: 25
+Level: 24
 
 
 
@@ -2527,11 +2503,11 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer
 
-Linoone-Galar
-Level: 24
+Zigzagoon-Galar
+Level: 23
 
 Bayleef
-Level: 26
+Level: 24
 
 
 
@@ -2578,7 +2554,7 @@ Level: 23
 Budew
 Level: 23
 
-Linoone-Galar
+Zigzagoon-Galar
 Level: 25
 
 
@@ -2619,7 +2595,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone-Galar @ Sitrus Berry
-Level: 27
+Level: 26
 
 
 
@@ -2657,7 +2633,7 @@ Level: 26
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Bombirdier @ Flying Gem
-Level: 27
+Level: 28
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_SILVERSUNGYM_LEADER ===
@@ -2673,21 +2649,21 @@ AI: Smart Trainer / Force Setup First Turn / Ace Pokemon
 Mugshot: Purple
 
 Bayleef @ Light Clay
-Level: 27
+Level: 25
 - Sunny Day
 - Magical Leaf
 - Synthesis
 - Stomping Tantrum
 
 Roserade @ Big Root
-Level: 27
+Level: 26
 - Growth
 - Giga Drain
 - Ingrain
 - Sludge Bomb
 
 Linoone-Galar @ Sitrus Berry
-Level: 28
+Level: 26
 - Belly Drum
 - Extremespeed
 - Night Slash
@@ -2695,7 +2671,7 @@ Level: 28
 
 Bombirdier @ Rock Gem
 Ability: Rocky Payload
-Level: 29
+Level: 28
 - Rock Slide
 - Acrobatics
 - Knock Off
@@ -2740,8 +2716,8 @@ Double Battle: No
 AI: Basic Trainer
 
 Applin
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Level: 22
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_THEATER_B ===
 Name: Pillin
@@ -2755,7 +2731,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Applin
-Level: 23
+Level: 22
 
 
 
@@ -2793,7 +2769,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Lokix
-Level: 25
+Level: 24
 
 
 
@@ -2832,10 +2808,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Bronzor @ Colbur Berry
-Level: 25
+Level: 24
 
 Grimer-Alola
-Level: 27
+Level: 25
 
 
 
@@ -2915,10 +2891,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Drowzee
-Level: 26
+Level: 24
 
 Lokix
-Level: 27
+Level: 26
 
 
 
@@ -2960,10 +2936,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Murkrow
-Level: 27
+Level: 25
 
 Impidimp
-Level: 28
+Level: 26
 
 
 
@@ -3006,10 +2982,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Murkrow
-Level: 26
+Level: 24
 
 Drowzee @ Oran Berry
-Level: 27
+Level: 25
 
 
 
@@ -3053,10 +3029,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Impidimp
-Level: 27
+Level: 25
 
 Grimer-Alola @ Black Sludge
-Level: 27
+Level: 26
 
 
 
@@ -3097,10 +3073,10 @@ Double Battle: No
 AI: Smart Trainer
 
 Lokix
-Level: 27
+Level: 25
 
 Murkrow
-Level: 28
+Level: 27
 
 
 
@@ -3158,21 +3134,21 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
 Slowpoke-Galar @ Leftovers
-Level: 28
+Level: 27
 
 Grimer-Alola @ Black Sludge
 Level: 28
 
 Yanmega @ Liechi Berry
 Ability: Speed Boost
-Level: 29
+Level: 28
 - Air Cutter
 - Lunge
 - Ancient Power
 - Hypnosis
 
 Absol @ Life Orb
-Level: 30
+Level: 29
 
 
 
@@ -3235,19 +3211,19 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
 
 Boltund @ Leftovers
-Level: 27
+Level: 25
 
 Kirlia @ Rocky Helmet
-Level: 30
+Level: 28
 
 Axew @ Dragon Gem
-Level: 31
+Level: 28
 
 Dewott @ Sitrus Berry
-Level: 31
+Level: 29
 
 Ceruledge @ Sitrus Berry
-Level: 32
+Level: 31
 - Swords Dance
 - Shadow Sneak
 - Will O Wisp
@@ -3289,7 +3265,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Palpitoad
-Level: 28
+Level: 26
 
 
 
@@ -3326,7 +3302,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Qwilfish-Hisui @ Sticky Barb
-Level: 28
+Level: 26
 
 
 
