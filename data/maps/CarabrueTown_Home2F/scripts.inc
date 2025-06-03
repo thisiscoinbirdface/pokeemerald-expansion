@@ -44,50 +44,58 @@ CarabrueTown_Home2F_EventScript_GameCube::
 # 28 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	release
 # 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, 0
 	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_2
-CarabrueTown_Home2F_EventScript_GameCube_1:
+# 32 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 33 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartSnake
+# 34 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 35 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	savebgm MUS_DUMMY
 # 36 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	fadedefaultbgm
+# 39 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare GAME_CORNER_VAR_WINNINGS, 20
+	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_5
+CarabrueTown_Home2F_EventScript_GameCube_4:
+# 44 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home2F_EventScript_GameCube_2:
-# 30 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 31 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	special StartFlappyBird
-# 32 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	waitstate
-# 33 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	savebgm MUS_DUMMY
-# 34 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	fadedefaultbgm
-	goto CarabrueTown_Home2F_EventScript_GameCube_1
+	end
+
+CarabrueTown_Home2F_EventScript_GameCube_5:
+# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_1
+	goto CarabrueTown_Home2F_EventScript_GameCube_4
 
 
 CarabrueTown_Home2F_EventScript_TV::
-# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 49 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0, MSGBOX_YESNO
-# 42 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 50 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	release
-# 43 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 51 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CarabrueTown_Home2F_EventScript_TV_2
 CarabrueTown_Home2F_EventScript_TV_1:
-# 50 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 58 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home2F_EventScript_TV_2:
-# 44 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 52 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	playbgm MUS_NONE, FALSE
-# 45 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	special StartFlappyBird
-# 46 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 53 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartSnake
+# 54 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	waitstate
-# 47 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 55 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	savebgm MUS_DUMMY
-# 48 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 56 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	fadedefaultbgm
 	goto CarabrueTown_Home2F_EventScript_TV_1
 
@@ -104,7 +112,11 @@ CarabrueTown_Home2F_EventScript_GameCube_Text_0:
 	.string "game emulator around!\p"
 	.string "Turn it on?$"
 
-CarabrueTown_Home2F_EventScript_TV_Text_0:
+CarabrueTown_Home2F_EventScript_GameCube_Text_1:
 # 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "You got the high score!$"
+
+CarabrueTown_Home2F_EventScript_TV_Text_0:
+# 49 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "The TV is hooked up to the Retro64.\p"
 	.string "Turn it on?$"

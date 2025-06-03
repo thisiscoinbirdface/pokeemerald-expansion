@@ -5950,6 +5950,16 @@
       "secondary_tileset": "gTileset_BattlePyramid",
       "border_filepath": "data/layouts/Legends/border.bin",
       "blockdata_filepath": "data/layouts/Legends/map.bin"
+    },
+    {
+      "id": "LAYOUT_GALECREST_CITY_GAME_CORNER",
+      "name": "GalecrestCity_GameCorner_Layout",
+      "width": 10,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/GalecrestCity_GameCorner/border.bin",
+      "blockdata_filepath": "data/layouts/GalecrestCity_GameCorner/map.bin"
     }
   ]
 }

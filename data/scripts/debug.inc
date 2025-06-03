@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_ROUTE8, 30, 46
+	warp MAP_GALECREST_CITY, 22, 47
 	release
 	end
 
@@ -153,7 +153,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	call MauvilleCity_GameCorner_EventScript_Gacha_Great
+	call Roulette_EventScript_Table1
 	release
 	end
 

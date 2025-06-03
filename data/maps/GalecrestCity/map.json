@@ -755,6 +755,13 @@
       "elevation": 0,
       "dest_map": "MAP_GALECREST_CITY_DETECTIVE_ACADEMY",
       "dest_warp_id": "10"
+    },
+    {
+      "x": 22,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_GALECREST_CITY_GAME_CORNER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

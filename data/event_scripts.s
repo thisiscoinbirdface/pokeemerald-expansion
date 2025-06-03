@@ -1465,3 +1465,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Championship_Museum/scripts.inc"
 
 	.include "data/maps/Legends/scripts.inc"
+
+	.include "data/maps/GalecrestCity_GameCorner/scripts.inc"

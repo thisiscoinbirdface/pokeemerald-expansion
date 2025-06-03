@@ -26,13 +26,21 @@ script CarabrueTown_Home2F_EventScript_PC{
 script CarabrueTown_Home2F_EventScript_GameCube{
     msgbox(format("Mom got me this Retro64, the best retro game emulator around!\pTurn it on?"), MSGBOX_YESNO)
     release
-    if (var(VAR_RESULT) == 1){
-        playbgm(MUS_NONE, FALSE)
-        special(StartFlappyBird)
-        waitstate
-        savebgm(MUS_DUMMY)
-        fadedefaultbgm
+    if (var(VAR_RESULT) == 0) {end}
+
+    //Play game
+    playbgm(MUS_NONE, FALSE)
+    special(StartSnake)
+    waitstate
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+
+    //Get reward
+    if (var(GAME_CORNER_VAR_WINNINGS) == 20)
+    {
+        msgbox(format("You got the high score!"))
     }
+
     releaseall
     end
 }
@@ -42,7 +50,7 @@ script CarabrueTown_Home2F_EventScript_TV{
     release
     if (var(VAR_RESULT) == 1){
         playbgm(MUS_NONE, FALSE)
-        special(StartFlappyBird)
+        special(StartSnake)
         waitstate
         savebgm(MUS_DUMMY)
         fadedefaultbgm
