@@ -3416,8 +3416,8 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     SetMonData(&mon, MON_DATA_DYNAMAX_LEVEL, &dmaxLevel);
 
     // tera type
-    if (teraType >= NUMBER_OF_MON_TYPES)
-        teraType = TYPE_NONE;
+    if (teraType == TYPE_NONE || teraType == TYPE_MYSTERY || teraType >= NUMBER_OF_MON_TYPES)
+        teraType = GetTeraTypeFromPersonality(&mon);
     SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
 
     //IVs
@@ -4034,6 +4034,17 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_RG_TRAINER_TOWER) \
     X(MUS_RG_SLOW_PALLET) \
     X(MUS_RG_TEACHY_TV_MENU) \
+    X(MUS_HGSS_CASINO) \
+    X(MUS_CASINO_PLUS_1) \
+    X(MUS_CASINO_PLUS_2) \
+    X(MUS_CASINO_PLUS_3) \
+    X(MUS_CASINO_PLUS_4) \
+    X(MUS_CASINO_PLUS_5) \
+    X(MUS_CASINO_PLUS_6) \
+    X(MUS_CASINO_PLUS_7) \
+    X(MUS_CASINO_PLUS_8) \
+    X(MUS_CASINO_PLUS_9) \
+    X(MUS_CASINO_PLUS_GACHA) \
     X(PH_TRAP_BLEND) \
     X(PH_TRAP_HELD) \
     X(PH_TRAP_SOLO) \

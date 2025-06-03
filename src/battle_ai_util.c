@@ -1465,7 +1465,7 @@ bool32 IsConfusionMoveEffect(u32 moveEffect)
 bool32 IsHazardMove(u32 move)
 {
     // Hazard setting moves like Stealth Rock, Spikes, etc.
-    u32 i, moveEffect = gMovesInfo[move].effect;
+    u32 i, moveEffect = GetMoveEffect(move);
     switch (moveEffect)
     {
     case EFFECT_SPIKES:
@@ -1491,7 +1491,7 @@ bool32 IsHazardMove(u32 move)
 bool32 IsHazardClearingMove(u32 move)
 {
     // Hazard clearing effects like Rapid Spin, Tidy Up, etc.
-    u32 i, moveEffect = gMovesInfo[move].effect;
+    u32 i, moveEffect = GetMoveEffect(move);
     switch (moveEffect)
     {
     case EFFECT_RAPID_SPIN:
@@ -2407,6 +2407,9 @@ bool32 IsSwitchOutEffect(u32 effect)
     // Switch out effects like U-Turn, Volt Switch, etc.
     switch (effect)
     {
+    case EFFECT_TELEPORT:
+        if (B_TELEPORT_BEHAVIOR >= GEN_8)
+            return TRUE;
     case EFFECT_HIT_ESCAPE:
     case EFFECT_PARTING_SHOT:
     case EFFECT_BATON_PASS:
@@ -2634,12 +2637,13 @@ static u32 GetPoisonDamage(u32 battlerId)
     }
     else if (gBattleMons[battlerId].status1 & STATUS1_TOXIC_POISON)
     {
+        u32 status1Temp = gBattleMons[battlerId].status1;
         damage = gBattleMons[battlerId].maxHP / 16;
         if (damage == 0)
             damage = 1;
-        if ((gBattleMons[battlerId].status1 & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
-            gBattleMons[battlerId].status1 += STATUS1_TOXIC_TURN(1);
-        damage *= (gBattleMons[battlerId].status1 & STATUS1_TOXIC_COUNTER) >> 8;
+        if ((status1Temp & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
+            status1Temp += STATUS1_TOXIC_TURN(1);
+        damage *= (status1Temp & STATUS1_TOXIC_COUNTER) >> 8;
     }
     return damage;
 }

@@ -560,6 +560,17 @@ gSongTable::
 	song mus_rg_trainer_tower, 0, 0
 	song mus_rg_slow_pallet, 0, 0
 	song mus_rg_teachy_tv_menu, 0, 0
+	song mus_hgss_casino, 0, 0
+	song mus_casino_plus_1, 0, 0
+	song mus_casino_plus_2, 0, 0
+	song mus_casino_plus_3, 0, 0
+	song mus_casino_plus_4, 0, 0
+	song mus_casino_plus_5, 0, 0
+	song mus_casino_plus_6, 0, 0
+	song mus_casino_plus_7, 0, 0
+	song mus_casino_plus_8, 0, 0
+	song mus_casino_plus_9, 0, 0
+	song mus_casino_plus_gacha, 0, 0
 	song ph_trap_blend, 2, 2
 	song ph_trap_held, 2, 2
 	song ph_trap_solo, 2, 2

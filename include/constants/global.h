@@ -9,6 +9,7 @@
 #include "config/pokemon.h"
 #include "config/overworld.h"
 #include "config/dexnav.h"
+#include "config/game_corner_expansion.h"
 #include "config/summary_screen.h"
 #include "config/ai.h"
 
