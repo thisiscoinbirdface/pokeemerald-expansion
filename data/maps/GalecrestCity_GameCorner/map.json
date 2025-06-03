@@ -80,7 +80,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MauvilleCity_GameCorner_EventScript_Gacha_Basic"
+      "script": "GalecrestCity_GameCorner_Gacha_Basic"
     },
     {
       "type": "sign",

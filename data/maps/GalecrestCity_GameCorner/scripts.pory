@@ -1,0 +1,28 @@
+mapscripts GalecrestCity_GameCorner_MapScripts{}
+
+
+
+script GalecrestCity_GameCorner_Gacha_Basic{
+    lockall
+    msgbox(format("Swipe your Trainer Card?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 0) {
+        release
+        end
+    }
+
+    if (flag(FLAG_BADGE03_GET)){
+        setvar(VAR_0x8004, 1)
+        playbgm(MUS_RG_CINNABAR, FALSE)
+        special(StartGacha)
+        waitstate
+    } else {
+        msgbox(format("ERROR: 3 BADGES REQUIRED."))
+    }
+
+    releaseall
+    end
+}
+
+
+

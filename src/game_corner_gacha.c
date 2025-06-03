@@ -110,10 +110,10 @@ enum {
     SPR_PLAYER_DIG_1000,
 };
 
-#define RARITY_COMMON_ODDS 33
-#define RARITY_UNCOMMON_ODDS 33
-#define RARITY_RARE_ODDS 33
-#define RARITY_ULTRA_RARE_ODDS 1
+#define RARITY_COMMON_ODDS 50
+#define RARITY_UNCOMMON_ODDS 30
+#define RARITY_RARE_ODDS 15
+#define RARITY_ULTRA_RARE_ODDS 5
 
 #define GACHA_BASIC_MIN_WAGER 50
 #define GACHA_GREAT_MIN_WAGER 250
@@ -1428,6 +1428,8 @@ static void SetPlayerDigits(u16 num)
 
 static void CreateCreditSprites(void)
 {
+    return; 
+
     u8 i;
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_Interface) - 1; i++)  
@@ -1462,6 +1464,8 @@ static void CreateCreditSprites(void)
 
 static void CreatePlayerSprites(void)
 {
+    return;
+
     u8 i;
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_PlayerInterface) - 1; i++)  
@@ -1480,11 +1484,13 @@ static void CreateCTA(void)
 {
     LoadCompressedSpriteSheet(&sSpriteSheet_Press_A);
     sGacha->CTAspriteId = CreateSprite(&sSpriteTemplate_Press_A, 152, 116, 0);
-    gSprites[sGacha->CTAspriteId].animNum = 0; // Off
+    gSprites[sGacha->CTAspriteId].animNum = 1; // Off
 }
 
 static void CreateArrows(void)
 {
+    return;
+
     LoadCompressedSpriteSheet(&sSpriteSheet_Arrows);
     sGacha->ArrowsSpriteId = CreateSprite(&sSpriteTemplate_Arrows, 207 + 24, 120, 0);
     gSprites[sGacha->ArrowsSpriteId].animNum = 1; // Only Up
@@ -1570,6 +1576,8 @@ static void CreateDigitalText(void)
 
 static void CreateCreditMenu(void)
 {
+    return; 
+
     s16 x = 144;
     s16 y = 128;
     u8 priority = 1;
@@ -1597,6 +1605,8 @@ static void CreateCreditMenu(void)
 
 static void CreatePlayerMenu(void)
 {
+    return;
+
     s16 x = 144;
     s16 y = 128;
     s16 x2 = x + 64;
@@ -1637,22 +1647,30 @@ typedef struct  {
 
 static const SpeciesGacha sSpeciesGachaBasicCommon[] = {
     {0, SPECIES_YAMPER},
+    {1, SPECIES_BALTOY},
+    {2, SPECIES_SNOM}
 };
 
 static const SpeciesGacha sSpeciesGachaBasicUncommon[] = {
-    {0, SPECIES_SNOM},
+    {0, SPECIES_YAMPER},
+    {1, SPECIES_BALTOY},
+    {2, SPECIES_SNOM}
 };
 
 static const SpeciesGacha sSpeciesGachaBasicRare[] = {
-    {0, SPECIES_BALTOY},
+    {0, SPECIES_YAMPER},
+    {1, SPECIES_BALTOY},
+    {2, SPECIES_SNOM}
 };
 
 static const SpeciesGacha sSpeciesGachaBasicUltraRare[] = {
-    {0, SPECIES_BALTOY},
+    {0, SPECIES_YAMPER},
+    {1, SPECIES_BALTOY},
+    {2, SPECIES_SNOM}
 };
 
 static const SpeciesGacha sSpeciesGreatCommon[] = {
-    {0, SPECIES_TOTODILE},
+    {0, SPECIES_VOLTORB_HISUI},
 };
 
 static const SpeciesGacha sSpeciesGreatUncommon[] = {
@@ -2372,14 +2390,16 @@ static void CalculatePullOdds(void)
 
 static void AButton(void)
 {
-    if (sGacha->Trigger == 1)
-    {
-        sGacha->state = STATE_INIT_A;
-    }
-    else
-    {
-        PlaySE(SE_FAILURE);
-    }
+    sGacha->state = STATE_INIT_A;
+
+    // if (sGacha->Trigger == 1)
+    // {
+    //     sGacha->state = STATE_INIT_A;
+    // }
+    // else
+    // {
+    //     PlaySE(SE_FAILURE);
+    // }
 }
 
 static void UpdateCursorPosition(s16 x)
@@ -2565,22 +2585,22 @@ static void HandleInput(void)
         {
             sGacha->state = GACHA_STATE_START_EXIT;
         }
-        else if (JOY_NEW(DPAD_UP))
-        {
-            MoveCursor(0);
-        }
-        else if (JOY_NEW(DPAD_RIGHT))
-        {
-            MoveCursor(1);
-        }
-        else if (JOY_NEW(DPAD_DOWN))
-        {
-            MoveCursor(2);
-        }
-        else if (JOY_NEW(DPAD_LEFT))
-        {
-            MoveCursor(3);
-        }
+        // else if (JOY_NEW(DPAD_UP))
+        // {
+        //     MoveCursor(0);
+        // }
+        // else if (JOY_NEW(DPAD_RIGHT))
+        // {
+        //     MoveCursor(1);
+        // }
+        // else if (JOY_NEW(DPAD_DOWN))
+        // {
+        //     MoveCursor(2);
+        // }
+        // else if (JOY_NEW(DPAD_LEFT))
+        // {
+        //     MoveCursor(3);
+        // }
     }
 }
 
