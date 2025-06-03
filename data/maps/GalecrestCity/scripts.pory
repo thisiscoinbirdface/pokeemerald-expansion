@@ -357,14 +357,14 @@ script GalecrestCity_NPC_9{
 }
 
 script GalecrestCity_NPC_10{  
-    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband helped build it, many years ago, when he ran a construction business."), MSGBOX_NPC)
+    msgbox(format("The Detective Academy is the most prestigious police academy in all of Cormoria. My husband was a teacher there! He's retired now but he keeps leaving the house...where does he go?"), MSGBOX_NPC)
     end
 }
 
 //Nurse Joy gives 3 berries - reduce super-effective damage from the gym leader's attacks.
 script GalecrestCity_NPC_11{
     if (flag(FLAG_GALECREST_NURSE_BERRY)){
-        msgbox(format("I do the night shift at the Pokémon Center. During the day, Chansey and I like to walk around the garden and pick berries."), MSGBOX_NPC)
+        msgbox(format("During the day, Chansey and I like to walk around the garden and pick berries."), MSGBOX_NPC)
     } else {
         lockall
         faceplayer

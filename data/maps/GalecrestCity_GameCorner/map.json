@@ -19,12 +19,12 @@
       "x": 8,
       "y": 2,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GalecrestCity_GameCorner_Counter",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GalecrestCity_GameCorner_NPC2",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GalecrestCity_GameCorner_NPC1",
       "flag": "0"
     }
   ],
@@ -88,7 +88,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MauvilleCity_GameCorner_EventScript_Gacha_Great"
+      "script": "GalecrestCity_GameCorner_Gacha_Great"
     },
     {
       "type": "sign",
@@ -96,7 +96,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MauvilleCity_GameCorner_EventScript_Gacha_Ultra"
+      "script": "GalecrestCity_GameCorner_Gacha_Ultra"
     },
     {
       "type": "sign",
@@ -104,7 +104,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MauvilleCity_GameCorner_EventScript_Gacha_Master"
+      "script": "GalecrestCity_GameCorner_Gacha_Master"
     }
   ]
 }

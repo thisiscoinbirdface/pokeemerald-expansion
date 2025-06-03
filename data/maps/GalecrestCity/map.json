@@ -828,18 +828,18 @@
     },
     {
       "type": "hidden_item",
-      "x": 53,
-      "y": 56,
+      "x": 30,
+      "y": 8,
       "elevation": 0,
       "item": "ITEM_LUCK_INCENSE",
       "flag": "FLAG_HIDDEN_ITEM_GALECREST_A"
     },
     {
       "type": "hidden_item",
-      "x": 30,
-      "y": 8,
+      "x": 43,
+      "y": 55,
       "elevation": 0,
-      "item": "ITEM_ELIXIR",
+      "item": "ITEM_GACHA_TOKEN",
       "flag": "FLAG_HIDDEN_ITEM_GALECREST_C"
     },
     {

@@ -1671,50 +1671,74 @@ static const SpeciesGacha sSpeciesGachaBasicUltraRare[] = {
 
 static const SpeciesGacha sSpeciesGreatCommon[] = {
     {0, SPECIES_VOLTORB_HISUI},
+    {1, SPECIES_TOXEL},    
+    {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesGreatUncommon[] = {
-    {0, SPECIES_TOXEL},
+    {0, SPECIES_VOLTORB_HISUI},
+    {1, SPECIES_TOXEL},    
+    {2, SPECIES_GEODUDE_ALOLA},   
 };
 
 static const SpeciesGacha sSpeciesGreatRare[] = {
-    {0, SPECIES_GEODUDE_ALOLA},
+    {0, SPECIES_VOLTORB_HISUI},
+    {1, SPECIES_TOXEL},    
+    {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesGreatUltraRare[] = {
-    {0, SPECIES_GEODUDE_ALOLA},
+    {0, SPECIES_VOLTORB_HISUI},
+    {1, SPECIES_TOXEL},    
+    {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesUltraCommon[] = {
     {0, SPECIES_JANGMO_O},
+    {1, SPECIES_OSHAWOTT},
+    {2, SPECIES_OSHAWOTT},        
 };
 
 static const SpeciesGacha sSpeciesUltraUncommon[] = {
-    {0, SPECIES_OSHAWOTT},
+    {0, SPECIES_JANGMO_O},
+    {1, SPECIES_OSHAWOTT},
+    {2, SPECIES_OSHAWOTT},    
 };
 
 static const SpeciesGacha sSpeciesUltraRare[] = {
-    {0, SPECIES_TAUROS_PALDEA_BLAZE},
+    {0, SPECIES_JANGMO_O},
+    {1, SPECIES_OSHAWOTT},
+    {2, SPECIES_OSHAWOTT},    
 };
 
 static const SpeciesGacha sSpeciesUltraUltraRare[] = {
-    {0, SPECIES_TAUROS_PALDEA_BLAZE},
+    {0, SPECIES_JANGMO_O},
+    {1, SPECIES_OSHAWOTT},
+    {2, SPECIES_ARCTIBAX},    
 };
 
 static const SpeciesGacha sSpeciesMasterCommon[] = {
-    {0, SPECIES_DITTO},
+    {0, SPECIES_KANGASKHAN},
+    {1, SPECIES_CHANDELURE},
+    {2, SPECIES_GARDEVOIR},
 };
 
 static const SpeciesGacha sSpeciesMasterUncommon[] = {
-    {0, SPECIES_OMASTAR},
+    {0, SPECIES_KANGASKHAN},
+    {1, SPECIES_CHANDELURE},
+    {2, SPECIES_GARDEVOIR},
 };
 
 static const SpeciesGacha sSpeciesMasterRare[] = {
-    {0, SPECIES_ARTICUNO},
+    {0, SPECIES_KANGASKHAN},
+    {1, SPECIES_CHANDELURE},
+    {2, SPECIES_GARDEVOIR},
 };
 
 static const SpeciesGacha sSpeciesMasterUltraRare[] = {
-    {0, SPECIES_MEW},
+    {0, SPECIES_KANGASKHAN},
+    {1, SPECIES_CHANDELURE},
+    {2, SPECIES_GARDEVOIR},
 };
 
 static void ShowMessage(void)
@@ -2214,10 +2238,10 @@ u8 CalculateChanceForCategory(u16 owned, u16 available, u8 baseChance, u16 wager
     newChance = baseChance * (100 - ownedPercentage) / 100;
 
     // Ensure the wager is within the valid range
-    if (wager >= minWager && owned < available)
+    if (GACHA_BASIC_MIN_WAGER >= minWager && owned < available)
     {
         // Normalize wager to a 0-100 range where [minWager - 9999] -> [0 - 100]
-        wagerMultiplier = ((wager - minWager) * 100) / (9999 - minWager);
+        wagerMultiplier = ((GACHA_BASIC_MIN_WAGER - minWager) * 100) / (9999 - minWager);
 
         // Boost the chance based on the wager multiplier, but cap it by baseChance
         boostedChance = newChance + ((baseChance - newChance) * wagerMultiplier) / 100;
@@ -2240,6 +2264,25 @@ void DeterminePokemonRarityAndNewStatus(void)
     u16 randomValue;
     u32 attempts = 1000;
 
+    randomValue = (Random() % 100);  // Generate random value between 0 and 100
+
+    // Determine Rarity based on the chances
+    if (randomValue < RARITY_COMMON_ODDS)
+        sGacha->Rarity = RARITY_COMMON; // Common
+    else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS))
+        sGacha->Rarity = RARITY_UNCOMMON; // Uncommon
+    else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS + RARITY_RARE_ODDS))
+        sGacha->Rarity = RARITY_RARE; // Rare
+    else
+        sGacha->Rarity = RARITY_ULTRA_RARE; // Ultra Rare
+
+//    totalMax = GetMaxAvailableGachaRaritySpecies(sGacha->GachaId, sGacha->Rarity);
+    newPokemonChance = (Random() % 3);  // Random pull from the available pool
+    species = GetGachaMon(newPokemonChance);  // Get the Pokémon species based on the random value
+    sGacha->CalculatedSpecies = species;  // Store the species of the owned Pokémon
+
+    return;
+
     while (TRUE)
     {
         randomValue = (Random() % 100);  // Generate random value between 0 and 100
@@ -2254,6 +2297,8 @@ void DeterminePokemonRarityAndNewStatus(void)
         else
             sGacha->Rarity = RARITY_ULTRA_RARE; // Ultra Rare
 
+
+            
         // Get the number of available and owned Pokémon based on rarity
         totalMax = GetMaxAvailableGachaRaritySpecies(sGacha->GachaId, sGacha->Rarity);
         switch (sGacha->Rarity)
@@ -2346,6 +2391,7 @@ void DeterminePokemonRarityAndNewStatus(void)
             break;  // Exit the loop after finding an owned Pokémon
         }
     }
+
 }
 
 static void CalculatePullOdds(void)
@@ -2369,10 +2415,10 @@ static void CalculatePullOdds(void)
     wager = sGacha->wager;  // Player's wager (0-9999)
 
     // Calculate the chance for each category
-    commonChance = CalculateChanceForCategory(sGacha->ownedCommon, totalCommonAvailable, RARITY_COMMON_ODDS, wager);
-    uncommonChance = CalculateChanceForCategory(sGacha->ownedUncommon, totalUncommonAvailable, RARITY_UNCOMMON_ODDS, wager);
-    rareChance = CalculateChanceForCategory(sGacha->ownedRare, totalRareAvailable, RARITY_RARE_ODDS, wager);
-    ultraRareChance = CalculateChanceForCategory(sGacha->ownedUltraRare, totalUltraRareAvailable, RARITY_ULTRA_RARE_ODDS, wager);
+    commonChance = CalculateChanceForCategory(sGacha->ownedCommon, totalCommonAvailable, RARITY_COMMON_ODDS, GACHA_BASIC_MIN_WAGER);
+    uncommonChance = CalculateChanceForCategory(sGacha->ownedUncommon, totalUncommonAvailable, RARITY_UNCOMMON_ODDS, GACHA_BASIC_MIN_WAGER);
+    rareChance = CalculateChanceForCategory(sGacha->ownedRare, totalRareAvailable, RARITY_RARE_ODDS, GACHA_BASIC_MIN_WAGER);
+    ultraRareChance = CalculateChanceForCategory(sGacha->ownedUltraRare, totalUltraRareAvailable, RARITY_ULTRA_RARE_ODDS, GACHA_BASIC_MIN_WAGER);
 
     sGacha->commonChance = commonChance;
     sGacha->uncommonChance = uncommonChance;
@@ -2734,7 +2780,7 @@ static void GachaMain(u8 taskId)
         sGacha->Input = 1;
         DeterminePokemonRarityAndNewStatus();
         PlaySE(SE_SHOP);
-        RemoveCoins(sGacha->wager);
+//        RemoveCoins(sGacha->wager);
         sGacha->wager = 0;
         ResetMessage();
         gSprites[sGacha->CTAspriteId].animNum = 0;

@@ -14377,6 +14377,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_FameChecker,
     },
 
+    [ITEM_GACHA_TOKEN] =
+    {
+        .name = _("Gacha Token"),
+        .price = 400,
+        .description = COMPOUND_STRING(
+            "A one-time token\n"
+            "to be used with a\n"
+            "gacha machine."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_GimmighoulCoin,
+        .iconPalette = gItemIconPalette_GimmighoulCoin,
+    },
+
 };
 
 

@@ -6936,7 +6936,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FLYING),
-        .catchRate = 25,
+        .catchRate = 60,//25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 68, //it was 163 and 168 before
         .evYield_Defense = 2,
         .itemRare = ITEM_METAL_COAT,
