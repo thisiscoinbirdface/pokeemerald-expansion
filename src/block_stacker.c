@@ -1291,7 +1291,7 @@ static void CreateLevel_5(void)
     
     //gSprites[sBlockStacker->Row1Block1SpriteId].oam.tileNum += 16;
     
-    sBlockStacker->xSpeed = 5;
+    sBlockStacker->xSpeed = 6;
     sBlockStacker->xSpeedDelay = 0;
 }
 
@@ -1319,7 +1319,7 @@ static void CreateLevel_6(void)
     
     //gSprites[sBlockStacker->Row1Block1SpriteId].oam.tileNum += 16;
     
-    sBlockStacker->xSpeed = 4;
+    sBlockStacker->xSpeed = 5;
     sBlockStacker->xSpeedDelay = 0;
 }
 
@@ -1347,7 +1347,7 @@ static void CreateLevel_7(void)
     
     //gSprites[sBlockStacker->Row1Block1SpriteId].oam.tileNum += 16;
     
-    sBlockStacker->xSpeed = 3;
+    sBlockStacker->xSpeed = 4;
     sBlockStacker->xSpeedDelay = 0;
 }
 
@@ -1375,7 +1375,7 @@ static void CreateLevel_8(void)
     
     //gSprites[sBlockStacker->Row1Block1SpriteId].oam.tileNum += 16;
     
-    sBlockStacker->xSpeed = 2;
+    sBlockStacker->xSpeed = 3;
     sBlockStacker->xSpeedDelay = 0;
 }
 

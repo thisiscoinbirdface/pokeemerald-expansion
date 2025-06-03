@@ -5027,7 +5027,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/PellucaCityHouses/border.bin",
       "blockdata_filepath": "data/layouts/PellucaCityHouses/map.bin"
     },

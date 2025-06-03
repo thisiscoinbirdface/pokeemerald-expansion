@@ -25,7 +25,7 @@ script CarabrueTown_Home2F_EventScript_PC{
 
 script CarabrueTown_Home2F_EventScript_GameCube{
 
-    if (flag(FLAG_IS_CHAMPION) == 1){
+    if (flag(FLAG_IS_CHAMPION)){
         msgbox(format("Mom got me a new Retro64, the best retro game emulator around!\pTurn it on?"), MSGBOX_YESNO)
         release
         if (var(VAR_RESULT) == 0) {end}
@@ -38,8 +38,7 @@ script CarabrueTown_Home2F_EventScript_GameCube{
         fadedefaultbgm
 
         //Get reward
-        if (var(GAME_CORNER_VAR_WINNINGS) == 20)
-        {
+        if (var(GAME_CORNER_VAR_WINNINGS) > 39){
             msgbox(format("You got the high score!"))
         }
     } else {
@@ -52,7 +51,7 @@ script CarabrueTown_Home2F_EventScript_GameCube{
 
 script CarabrueTown_Home2F_EventScript_TV{
 
-    if (flag(FLAG_IS_CHAMPION) == 1){
+    if (flag(FLAG_IS_CHAMPION)){
         msgbox(format("The TV is hooked up to the Retro64.\pTurn it on?"), MSGBOX_YESNO)
         release
         if (var(VAR_RESULT) == 1){
@@ -65,7 +64,7 @@ script CarabrueTown_Home2F_EventScript_TV{
         releaseall
         end
     } else {
-        msgbox(format("The TV is hooked up to the GameCube"))
+        msgbox(format("The TV is hooked up to the GameCube."))
         releaseall
         end
     }

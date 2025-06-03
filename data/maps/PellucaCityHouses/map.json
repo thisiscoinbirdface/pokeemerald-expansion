@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 2,
+      "x": 8,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 7,
-      "y": 3,
+      "x": 2,
+      "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_LEFT_DOWN_UP",
       "movement_range_x": 1,
@@ -42,10 +42,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 7,
-      "y": 5,
+      "x": 5,
+      "y": 6,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -94,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 7,
-      "y": 21,
+      "x": 5,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -121,14 +121,14 @@
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 7,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CITY",
       "dest_warp_id": "8"
     },
     {
-      "x": 4,
+      "x": 8,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CITY",
@@ -163,14 +163,14 @@
       "dest_warp_id": "7"
     },
     {
-      "x": 3,
+      "x": 1,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CITY",
       "dest_warp_id": "6"
     },
     {
-      "x": 4,
+      "x": 2,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CITY",
@@ -181,6 +181,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PellucaCityHouses_GameCube"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PellucaCityHouses_TV"
+    }
   ]
 }

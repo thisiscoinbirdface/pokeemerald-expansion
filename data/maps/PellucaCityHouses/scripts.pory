@@ -104,7 +104,7 @@ script PellucaCityHouses_MayorQuestStart{
 
 //GAB house
 script PellucaCityHouses_GabSibling1{
-    msgbox(format("Yay! Big Sis is back! Big Bro got her a present too!"), MSGBOX_NPC)
+    msgbox(format("Big Sis is back! She got me a Retro64. But I'm not gonna play it because I'm gonna play with Big Sis. You can play it if you want!"), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_GabSibling2{
@@ -121,6 +121,32 @@ script PellucaCityHouses_GabSibling3{
     waitmoncry
     hidemonpic
     msgbox(format("A traveling merchant sold it to me. It's the least I can do for her."), MSGBOX_NPC)
+    releaseall
+    end
+}
+script PellucaCityHouses_GameCube{
+    msgbox(format("It's a Retro64, the best retro game emulator around!\pTurn it on?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 0) {end}
+
+    //Play game
+    playbgm(MUS_NONE, FALSE)
+    special(StartBlockStacker)
+    waitstate
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+
+    //Get reward
+    if (var(GAME_CORNER_VAR_WINNINGS) > 20){
+        msgbox(format("You got the high score!"))
+    }
+    
+    releaseall
+    end
+}
+
+script PellucaCityHouses_TV{
+    msgbox(format("The TV is hooked up to the Retro64."))
     releaseall
     end
 }

@@ -1895,7 +1895,7 @@ static void SnakeMain(u8 taskId)
                 else
                 {
                     sSnake->GameOver = CheckBoundaries();
-                    if ((sSnake->GameOver == 1) || (sSnake->Total == 10)) //max score
+                    if ((sSnake->GameOver == 1) || (sSnake->Total == 20)) //max score
                     {
                         PlayBGM(MUS_NONE);
                         sSnake->FrameCount = sSnake->Loop;

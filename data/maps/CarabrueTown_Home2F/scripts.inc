@@ -39,65 +39,81 @@ CarabrueTown_Home2F_EventScript_PC::
 
 
 CarabrueTown_Home2F_EventScript_GameCube::
-# 27 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_0, MSGBOX_YESNO
 # 28 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	release
-# 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_2
-# 32 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 33 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	special StartSnake
-# 34 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	waitstate
-# 35 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	savebgm MUS_DUMMY
-# 36 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	fadedefaultbgm
-# 39 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare GAME_CORNER_VAR_WINNINGS, 20
-	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_5
-CarabrueTown_Home2F_EventScript_GameCube_4:
-# 44 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_GameCube_2
+# 45 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_2
+CarabrueTown_Home2F_EventScript_GameCube_1:
+# 48 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home2F_EventScript_GameCube_2:
+# 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_0, MSGBOX_YESNO
+# 30 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	release
+# 31 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_6
+# 34 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 35 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartSnake
+# 36 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 37 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	savebgm MUS_DUMMY
+# 38 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	fadedefaultbgm
+# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare GAME_CORNER_VAR_WINNINGS, 39
+	goto_if_gt CarabrueTown_Home2F_EventScript_GameCube_8
+	goto CarabrueTown_Home2F_EventScript_GameCube_1
+
+CarabrueTown_Home2F_EventScript_GameCube_6:
 	end
 
-CarabrueTown_Home2F_EventScript_GameCube_5:
-# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+CarabrueTown_Home2F_EventScript_GameCube_8:
+# 42 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_1
-	goto CarabrueTown_Home2F_EventScript_GameCube_4
+	goto CarabrueTown_Home2F_EventScript_GameCube_1
 
 
 CarabrueTown_Home2F_EventScript_TV::
-# 49 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0, MSGBOX_YESNO
-# 50 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	release
-# 51 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq CarabrueTown_Home2F_EventScript_TV_2
-CarabrueTown_Home2F_EventScript_TV_1:
-# 58 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 54 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_TV_1
+# 67 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_TV_Text_1
+# 68 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
-CarabrueTown_Home2F_EventScript_TV_2:
-# 52 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 53 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	special StartSnake
-# 54 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	waitstate
+CarabrueTown_Home2F_EventScript_TV_1:
 # 55 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	savebgm MUS_DUMMY
+	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0, MSGBOX_YESNO
 # 56 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	release
+# 57 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq CarabrueTown_Home2F_EventScript_TV_5
+CarabrueTown_Home2F_EventScript_TV_4:
+# 64 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	releaseall
+	end
+
+CarabrueTown_Home2F_EventScript_TV_5:
+# 58 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 59 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartSnake
+# 60 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 61 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	savebgm MUS_DUMMY
+# 62 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	fadedefaultbgm
-	goto CarabrueTown_Home2F_EventScript_TV_1
+	goto CarabrueTown_Home2F_EventScript_TV_4
 
 
 CarabrueTown_Home2F_EventScript_PickUpBag_Text_0:
@@ -107,16 +123,24 @@ CarabrueTown_Home2F_EventScript_PickUpBag_Text_0:
 	.string "me without opening it, they said.$"
 
 CarabrueTown_Home2F_EventScript_GameCube_Text_0:
-# 27 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "Mom got me this Retro64, the best retro\n"
-	.string "game emulator around!\p"
+# 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "Mom got me a new Retro64, the best\n"
+	.string "retro game emulator around!\p"
 	.string "Turn it on?$"
 
 CarabrueTown_Home2F_EventScript_GameCube_Text_1:
-# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 42 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "You got the high score!$"
 
+CarabrueTown_Home2F_EventScript_GameCube_Text_2:
+# 45 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "My old GameCube...it's broken.$"
+
 CarabrueTown_Home2F_EventScript_TV_Text_0:
-# 49 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 55 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "The TV is hooked up to the Retro64.\p"
 	.string "Turn it on?$"
+
+CarabrueTown_Home2F_EventScript_TV_Text_1:
+# 67 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "The TV is hooked up to the GameCube.$"
