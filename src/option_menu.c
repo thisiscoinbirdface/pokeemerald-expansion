@@ -1148,8 +1148,8 @@ static void QuickRun_DrawChoices(u8 selection)
     styles[0] = 0;
     styles[1] = 0;
     styles[selection] = 1;
-    DrawOptionMenuChoice(gText_QuickRunOn, 104, YPOS_QUICKRUN, styles[0]);
-    DrawOptionMenuChoice(gText_QuickRunOff, 162, YPOS_QUICKRUN, styles[1]);
+    DrawOptionMenuChoice(gText_QuickRunOff, 104, YPOS_QUICKRUN, styles[0]);
+    DrawOptionMenuChoice(gText_QuickRunOn, 162, YPOS_QUICKRUN, styles[1]);
 }
 
 

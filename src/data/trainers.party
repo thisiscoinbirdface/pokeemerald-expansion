@@ -112,7 +112,7 @@ Double Battle: No
 AI: Smart Trainer
 Mugshot: Purple
 
-Timburr
+Rattata-Alola
 Level: 3
 
 === TRAINER_ROUTE1_B ===
@@ -140,7 +140,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Noibat
+Pidove
 Level: 3
 
 
@@ -174,7 +174,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Blipbug
-Level: 3
+Level: 2
 
 Nymble
 Level: 3
@@ -5471,6 +5471,37 @@ Magneton
 Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_WINTERLILY_HOLLOW_GYM_B ===
+Name: Windhorst
+Difficulty: Normal
+Class: Electrician
+Pic: Electrician
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Starting Status: Electric Terrain
+
+Kilowattrel
+Level: 33
+
+Boltund
+Level: 34
+
+Magneton
+Level: 35
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_C ===
 Name: Gozliak
@@ -5493,6 +5524,37 @@ IVs: 15 HP / 20 Atk / 15 Def / 15 SpA / 15 SpD / 20 Spe
 - Swords Dance
 - Toxic
 
+=== TRAINER_WINTERLILY_HOLLOW_GYM_C ===
+Name: Gozliak
+Difficulty: Normal
+Class: Collector
+Pic: Collector
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Starting Status: Electric Terrain
+
+Sneasler @ Electric Seed
+Ability: Poison Touch
+Level: 35
+Shiny: Yes
+- Dire Claw
+- Close Combat
+- Swords Dance
+- Toxic
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_D ===
 Name: Marcus
@@ -5513,25 +5575,37 @@ Furret
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-
-=== TRAINER_WINTERLILY_HOLLOW_GYM_E ===
-Name: Bleach
-Difficulty: Easy
-Class: Ruin Maniac
-Pic: Ruin Maniac
+=== TRAINER_WINTERLILY_HOLLOW_GYM_D ===
+Name: Marcus
+Difficulty: Normal
+Class: Employee
+Pic: Employee
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 Starting Status: Electric Terrain
 
-Eelektross
-Level: 35
+Magneton
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Flaaffy
+Furret
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_F ===
 Name: Tamaron
@@ -5547,6 +5621,31 @@ Starting Status: Electric Terrain
 Kilowattrel @ Electric Seed
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_WINTERLILY_HOLLOW_GYM_F ===
+Name: Tamaron
+Difficulty: Normal
+Class: Electrician
+Pic: Electrician
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Starting Status: Electric Terrain
+
+Kilowattrel @ Electric Seed
+Level: 36
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
 Name: Viniel
@@ -5576,6 +5675,46 @@ Manectric @ Manectite
 Level: 45
 IVs: 30 HP / 15 Atk / 30 Def / 0 SpA / 30 SpD / 15 Spe
 
+=== TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
+Name: Viniel
+Difficulty: Normal
+Class: Leader
+Pic: Leader Viniel
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Starting Status: Electric Terrain
+Mugshot: Yellow
+
+Kilowattrel @ Focus Sash
+Level: 41
+
+Toxtricity @ Throat Spray
+Level: 42
+
+Lanturn @ Electric Seed
+Level: 42
+
+Manectric @ Manectite
+Level: 45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_A ===
 Name: Gabrielle
@@ -5603,6 +5742,42 @@ Mawile
 Level: 41
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_A ===
+Name: Gabrielle
+Difficulty: Normal
+Class: Pkmn Trainer 2
+Pic: Somber Grunt F
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Zoroark-Hisui
+Level: 42
+
+Claydol
+Level: 39
+
+Hakamo-o
+Level: 39
+
+Mawile
+Level: 41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_B ===
 Name: JL
@@ -5626,6 +5801,32 @@ Dreepy
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_B ===
+Name: JL
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Lampent
+Level: 39
+
+Delphox @ Leftovers
+Level: 40
+
+Dreepy
+Level: 41
+
+
+
+
+
+
+
+
 
 
 === TRAINER_PELLUCA_CITY_GYM_C ===
@@ -5645,6 +5846,32 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Barraskewda
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_PELLUCA_CITY_GYM_C ===
+Name: Laria
+Difficulty: Normal
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+Cursola
+Level: 39
+
+Barraskewda
+Level: 41
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_PELLUCA_CITY_GYM_D ===
@@ -5666,6 +5893,33 @@ Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 
+=== TRAINER_PELLUCA_CITY_GYM_D ===
+Name: Mollen
+Difficulty: Normal
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Masquerain
+Level: 40
+
+Carvanha
+Level: 42
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PELLUCA_CITY_GYM_E ===
 Name: Jasmina
 Difficulty: Easy
@@ -5685,6 +5939,34 @@ Palpitoad
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_E ===
+Name: Jasmina
+Difficulty: Normal
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Rich
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Dewpider
+Level: 41
+
+Palpitoad
+Level: 42
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_PELLUCA_CITY_GYM_F ===
@@ -5701,6 +5983,33 @@ Skrelp
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_F ===
+Name: Arya
+Difficulty: Normal
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+Skrelp
+Level: 40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PELLUCA_CITY_GYM_G ===
 Name: Wint
 Difficulty: Easy
@@ -5715,9 +6024,35 @@ Bruxish
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_G ===
+Name: Wint
+Difficulty: Normal
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+Bruxish
+Level: 41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_H ===
-Name: WINSTON
+Name: Winston
 Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
@@ -5739,8 +6074,38 @@ Masquerain
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_H ===
+Name: Winston
+Difficulty: Normal
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Mareanie
+Level: 39
+
+Qwilfish-Hisui
+Level: 40
+
+Masquerain
+Level: 41
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PELLUCA_CITY_GYM_I ===
-Name: WINSTON
+Name: Winston
 Difficulty: Easy
 Class: Rich Boy
 Pic: Rich Boy
@@ -5753,6 +6118,38 @@ AI: Check Bad Move
 Lapras
 Level: 43
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_PELLUCA_CITY_GYM_I ===
+Name: Winston
+Difficulty: Normal
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+
+Lapras
+Level: 43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_PELLUCA_CITY_GYM_LEADER ===
 Name: Jania
@@ -5795,6 +6192,57 @@ Gyarados @ Gyaradosite
 Level: 45
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
+=== TRAINER_PELLUCA_CITY_GYM_LEADER ===
+Name: Jania
+Difficulty: Easy
+Class: Leader
+Pic: Leader Jania
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Risky / Ace Pokemon
+
+Pelipper @ Damp Rock
+Ability: Drizzle
+Level: 41
+- Rain Dance
+- Hurricane
+- Muddy Water
+
+Clawitzer @ Choice Specs
+Ability: Mega Launcher
+Level: 43
+- Water Pulse
+
+Toxapex @ Black Sludge
+Level: 42
+- Muddy Water
+- Toxic
+- Baneful Bunker
+- Recover
+
+Toedscruel @ Leftovers
+Level: 43
+
+Gyarados @ Gyaradosite
+Level: 45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE3_EXT_A ===
 Name: Flanning
@@ -5814,6 +6262,34 @@ Fletchinder
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_EXT_A ===
+Name: Flanning
+Difficulty: Normal
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Spearow
+Level: 22
+
+Fletchinder
+Level: 23
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE3_EXT_B ===
 Name: Barkle
 Difficulty: Easy
@@ -5832,6 +6308,33 @@ Sneasel-Hisui
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_ROUTE3_EXT_B ===
+Name: Barkle
+Difficulty: Normal
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Mankey
+Level: 21
+
+Sneasel-Hisui
+Level: 23
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE3_EXT_C ===
 Name: Grim
 Difficulty: Easy
@@ -5844,6 +6347,33 @@ AI: Check Bad Move
 
 Mimikyu
 Level: 21
+
+=== TRAINER_ROUTE3_EXT_C ===
+Name: Grim
+Difficulty: Normal
+Class: Backpacker
+Pic: Backpacker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer
+
+Mimikyu
+Level: 21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_PELLUCA_QWILSQUAD_A ===
@@ -5864,6 +6394,71 @@ Qwilfish-Hisui
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
+=== TRAINER_PELLUCA_QWILSQUAD_A ===
+Name: Grunt
+Difficulty: Normal
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Dhelmise
+Level: 29
+
+Qwilfish-Hisui
+Level: 31
+
+=== TRAINER_PELLUCA_QWILSQUAD_A ===
+Name: Grunt
+Difficulty: Easy
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Dhelmise
+Level: 29
+
+Qwilfish-Hisui
+Level: 31
+
+=== TRAINER_PELLUCA_QWILSQUAD_A ===
+Name: Grunt
+Difficulty: Normal
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Dhelmise
+Level: 29
+
+Qwilfish-Hisui
+Level: 31
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PELLUCA_QWILSQUAD_B ===
 Name: Grunt
 Difficulty: Easy
@@ -5881,6 +6476,31 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Qwilfish-Hisui
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_PELLUCA_QWILSQUAD_B ===
+Name: Grunt
+Difficulty: Normal
+Class: Sailor
+Pic: Sailor
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Carvanha
+Level: 30
+
+Qwilfish-Hisui
+Level: 31
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_PELLUCA_QWILSQUAD_BOSS ===
@@ -5905,6 +6525,39 @@ Overqwil
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+=== TRAINER_PELLUCA_QWILSQUAD_BOSS ===
+Name: Boss
+Difficulty: Normal
+Class: Sailor
+Pic: Qwilsquad Boss
+Gender: Male
+Music: Suspicious
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+
+Lairon
+Level: 30
+
+Dhelmise
+Level: 30
+
+Overqwil
+Level: 32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PELLUCA_DETECTIVE ===
 Name: STEVE
 Difficulty: Easy
@@ -5923,6 +6576,15 @@ Rhydon
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE8_A ===
 Name: Lana
 Difficulty: Easy
@@ -5931,11 +6593,34 @@ Pic: Swimmer F
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Carvanha
 Level: 45
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_ROUTE8_A ===
+Name: Lana
+Difficulty: Normal
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Carvanha
+Level: 45
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE8_B ===
 Name: Danneon
@@ -5945,11 +6630,34 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Toedscruel
 Level: 44
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_ROUTE8_B ===
+Name: Danneon
+Difficulty: Normal
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Toedscruel
+Level: 44
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE8_C ===
 Name: Pralia
@@ -5961,13 +6669,41 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Roserade
+Roselia
 Level: 45
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Meganium
 Level: 46
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_ROUTE8_C ===
+Name: Pralia
+Difficulty: Normal
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Roserade
+Level: 45
+
+Meganium
+Level: 46
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE8_D ===
 Name: Mary
@@ -5977,7 +6713,7 @@ Pic: Psychic F
 Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Kirlia
 Level: 44
@@ -5987,6 +6723,35 @@ Braviary-Hisui
 Level: 46
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
+
+=== TRAINER_ROUTE8_D ===
+Name: Mary
+Difficulty: Easy
+Class: Psychic
+Pic: Psychic F
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Try To Faint
+
+Kirlia
+Level: 44
+
+Braviary-Hisui
+Level: 46
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE8_E ===
 Name: Bony
 Difficulty: Easy
@@ -5995,7 +6760,7 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Carvanha
 Level: 26
@@ -6015,6 +6780,15 @@ Tentacruel
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
 === TRAINER_RIVETSHORE_GYM_A ===
 Name: Matti
 Difficulty: Easy
@@ -6023,7 +6797,7 @@ Pic: Builder
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Dugtrio-Alola
 Level: 44
@@ -6032,6 +6806,34 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Skarmory
 Level: 46
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+=== TRAINER_RIVETSHORE_GYM_A ===
+Name: Matti
+Difficulty: Normal
+Class: Builder
+Pic: Builder
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Dugtrio-Alola
+Level: 44
+
+Skarmory @ Sitrus Berry
+Level: 46
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_RIVETSHORE_GYM_B ===
 Name: Berger
@@ -6042,7 +6844,6 @@ Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer
-
 
 Tinkatuff
 Level: 43
@@ -6055,6 +6856,36 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Avalugg-Hisui
 Level: 46
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+=== TRAINER_RIVETSHORE_GYM_B ===
+Name: Berger
+Difficulty: Normal
+Class: Pkmn Trainer 2
+Pic: Cool Guy
+Gender: Male
+Music: Swimmer
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+
+Tinkatuff @ Leftovers
+Level: 43
+
+Arctibax @ Dragon Gem
+Level: 44
+
+Avalugg-Hisui @ Salac Berry
+Level: 46
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6073,10 +6904,41 @@ Ability: Rock Head
 Nature: Jolly
 Level: 47
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
--Head Smash
--Flare Blitz
--Extreme Speed
--Wild Charge 
+- Head Smash
+- Flare Blitz
+- Extreme Speed
+- Wild Charge 
+
+
+=== TRAINER_RIVETSHORE_GYM_C ===
+Name: Babeneitor
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Smart Trainer
+
+Arcanine-Hisui @ Focus Sash
+Ability: Rock Head
+Nature: Jolly
+Level: 47
+- Head Smash
+- Flare Blitz
+- Extreme Speed
+- Wild Charge 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6088,7 +6950,7 @@ Pic: Builder
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Revavroom
 Level: 45
@@ -6098,6 +6960,34 @@ Lairon
 Level: 47
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
+=== TRAINER_RIVETSHORE_GYM_D ===
+Name: Roland
+Difficulty: Normal
+Class: Builder
+Pic: Builder
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Revavroom
+Level: 45
+
+Lairon
+Level: 47
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_RIVETSHORE_GYM_E ===
 Name: Nolen
 Difficulty: Easy
@@ -6106,15 +6996,42 @@ Pic: Hiker
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Glimmora
+Glimmet
 Level: 47
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Coalossal
+Carkoal
 Level: 48
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+=== TRAINER_RIVETSHORE_GYM_E ===
+Name: Nolen
+Difficulty: Normal
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Glimmora @ Power Herb
+Level: 47
+
+Coalossal @ Passho Berry
+Level: 48
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SSELEGANT_A ===
 Name: Adario
@@ -6124,7 +7041,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Clodsire
 Level: 46
@@ -6137,6 +7054,37 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 Morgrem
 Level: 49
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+=== TRAINER_SSELEGANT_A ===
+Name: Adario
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Clodsire
+Level: 46
+
+Dhelmise
+Level: 47
+
+Grimmsnarl
+Level: 49
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SSELEGANT_B ===
 Name: BARRY
@@ -6151,6 +7099,17 @@ AI: Check Bad Move
 Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SSELEGANT_INGER ===
 Name: Inger
@@ -6167,13 +7126,44 @@ Lycanroc
 Level: 45
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-Golem-Alola
+Golem-Alola @ Leftovers
 Level: 46
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
-Minior
+Minior @ Sitrus Berry
 Level: 47
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+=== TRAINER_SSELEGANT_INGER ===
+Name: Inger
+Difficulty: Normal
+Class: Leader
+Pic: Leader Inger
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Items: Hyper Potion
+
+Lycanroc
+Level: 45
+
+Golem-Alola @ Leftovers
+Level: 46
+
+Minior @ Sitrus Berry
+Level: 47
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_SSELEGANT_ARIANA ===
 Name: Ariana
@@ -6198,6 +7188,38 @@ Tauros-Paldea-Blaze
 Level: 49
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
+=== TRAINER_SSELEGANT_ARIANA ===
+Name: Ariana
+Difficulty: Normal
+Class: Leader
+Pic: Leader Ariana
+Gender: Male
+Music: Aqua
+Items: Super Potion
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+
+Talonflame
+Level: 47
+
+Centiskorch
+Level: 47
+
+Tauros-Paldea-Blaze
+Level: 49
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_SSELEGANT_JANIA ===
 Name: Jania
 Difficulty: Easy
@@ -6206,7 +7228,7 @@ Pic: Jania Artist
 Gender: Female
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
 Smeargle
 Level: 48
@@ -6215,6 +7237,34 @@ IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 Clawitzer
 Level: 50
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+=== TRAINER_SSELEGANT_JANIA ===
+Name: Jania
+Difficulty: Normal
+Class: Artist
+Pic: Jania Artist
+Gender: Female
+Music: Swimmer
+Double Battle: Yes
+AI: Smart Trainer
+
+Smeargle @ Leftovers
+Level: 48
+
+Clawitzer @ Choice Specs
+Level: 50
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6245,6 +7295,39 @@ Aggron @ Aggronite
 Level: 55
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
+=== TRAINER_RIVETSHORE_GYM_LEADER ===
+Name: Raazi
+Difficulty: Normal
+Class: Leader
+Pic: Leader Raazi
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Corviknight
+Level: 51
+
+Excadrill
+Level: 52
+
+Coalossal
+Level: 52
+
+Aggron @ Aggronite
+Level: 55
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_IVY_RIVER_A ===
 Name: Santiago
 Difficulty: Easy
@@ -6263,6 +7346,17 @@ Metang
 Level: 38
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_IVY_RIVER_B ===
 Name: Galona
 Difficulty: Easy
@@ -6280,6 +7374,17 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Carvanha
 Level: 39
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_IVY_RIVER_C ===
@@ -6320,6 +7425,17 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Pain Split
 
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_IVY_RIVER_D ===
 Name: Stanja
 Difficulty: Easy
@@ -6347,6 +7463,17 @@ Pinsir
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
 Name: Grunt
 Difficulty: Easy
@@ -6360,6 +7487,17 @@ AI: Check Bad Move
 Muk-Alola
 Level: 49
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_B ===
 Name: Grunt
@@ -6379,6 +7517,17 @@ Bronzong
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_UNCHARTED_ISLAND_GRUNT_C ===
 Name: Grunt
 Difficulty: Easy
@@ -6397,6 +7546,17 @@ Hypno
 Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
 Name: TONY
 Difficulty: Easy
@@ -6410,6 +7570,17 @@ AI: Check Bad Move
 Sharpedo
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
 Name: Moxie
@@ -6443,6 +7614,17 @@ Houndoom @ Houndoominite
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
 Name: Melea
 Difficulty: Easy
@@ -6474,6 +7656,17 @@ Absol @ Absolite
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
 Difficulty: Easy
@@ -6504,6 +7697,17 @@ Koraidon
 Level: 60
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_ROUTE1_STRONG_A ===
 Name: Jose
 Difficulty: Easy
@@ -6521,6 +7725,17 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Raticate-Alola
 Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_ROUTE1_STRONG_B ===
 Name: Sana
@@ -6543,6 +7758,17 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Unfezant
 Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_ROUTE1_STRONG_C ===

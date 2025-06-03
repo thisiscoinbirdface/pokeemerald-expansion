@@ -74,10 +74,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
 {
     [DIFFICULTY_NORMAL] =
     {
-        [TRAINER_ROUTE1_A] = // use the Trainer's Id from include/constants/opponents.h
-        {
-            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Ceruledge - it's you and me now!{PLAY_BGM MUS_RAYQUAZA_APPEARS}"), // find the id for the slide to be used.
-        }
+        // [TRAINER_ROUTE1_A] = // use the Trainer's Id from include/constants/opponents.h
+        // {
+        //     [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Ceruledge - it's you and me now!{PLAY_BGM MUS_RAYQUAZA_APPEARS}"), // find the id for the slide to be used.
+        // }
     },
 };
 
