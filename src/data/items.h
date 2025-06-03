@@ -14361,5 +14361,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_SilphScope,
     },    
 
+    [ITEM_POCKET_BOY] =
+    {
+        .name = _("PocketBoy"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A new-generation\n"
+            "handheld gaming\n"
+            "console. So cool!"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_FameChecker,
+        .iconPalette = gItemIconPalette_FameChecker,
+    },
 
 };
+
+

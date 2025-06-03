@@ -166,23 +166,23 @@ script PellucaGym_Red {
 
     if (flag(FLAG_BADGE07_GET)){
         if (flag(FLAG_PELLUCAGYM_SPENSER_REWARD)){
-            msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
+            msgbox(format("All the best, champ-in-the-making!"))
         } else {
-            msgbox(format("Well done champ-in-the-making! The Gym Leader pulled a fast one on you, using his real team, and you still made it out! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL GEM", "SILK SCARF")
+            msgbox(format("Well done champ-in-the-making! You went face-to-face with the waves, stood firm and came out on top! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Water Gem", "Mystic Water")
 
             if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_NORMAL_GEM)
+                giveitem(ITEM_WATER_GEM)
             } else{
                 if (var(VAR_RESULT) == 1){
-                    giveitem(ITEM_SILK_SCARF)
+                    giveitem(ITEM_MYSTIC_WATER)
                 } else {
                     
                 }
             }
 
             setflag(FLAG_PELLUCAGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+            msgbox(format("Now get on out there and find the next gym...but I won't be there. The last gym is unsafe for senior citizens like me, so this is the last time we meet, champ-in-the-making. All the best!"))            
         }
     } else { 
         if (flag(FLAG_PELLUCAGYM_SPENSER_WATER)){

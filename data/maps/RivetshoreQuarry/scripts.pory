@@ -84,11 +84,39 @@ script RivetshoreQuarry_Chansey{
 
 //relaxing dudes
 script RivetshoreQuarry_NPC1{
-    msgbox(format("I'm the shift manager at the quarry!\p...\pWhy am I not out there with my team?\pIt's too hot!"), MSGBOX_NPC)
+    if (flag(FLAG_RIVETSHORE_GET_POCKETBOY)) {
+        msgbox(format("Now I don't have my PocketBoy any more, I actually gotta do some work!"), MSGBOX_NPC)
+        end
+    }
+    lockall
+    faceplayer
+    msgbox(format("I'm the shift manager at the quarry!\p...\pWhy am I not out there with my team?\pIt's too hot! Plus, I gotta get on the scoreboard in FlappyFree. It's so hard!\pWhat? You want my PocketBoy?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) {end}
+
+    msgbox(format("Alright kid, how about this?\pIf you can get even one point in FlappyFree, I'll let you have it!"))
+
+    special(StartFlappyBird)
+    waitstate
+
+    if (var(GAME_CORNER_VAR_WINNINGS) > 2){
+        msgbox(format("No way! You're a natural! Sigh...I'm getting old, ya know? These fast-clicky games just aren't for my fingers. Alright kid, here ya go.\pHave fun!"), MSGBOX_NPC)
+        giveitem(ITEM_POCKET_BOY)
+        setflag(FLAG_RIVETSHORE_GET_POCKETBOY)
+        releaseall
+        end
+    }
+
+
+    releaseall
     end
 }
 script RivetshoreQuarry_NPC2{
-    msgbox(format("Work has become much easier after the CEO had this infirmary and resting spot constructed. He really understands our struggles!\pI can't say the same for the shift manager though."), MSGBOX_NPC)
+    if (flag(FLAG_RIVETSHORE_GET_POCKETBOY)){
+        msgbox(format("The shift manager's actually working! Am I dreaming?"), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("Work's become better after the Raazi set up this infirmary and resting spot. He really understands our struggles!\pI can't say the same for the shift manager though...look at him!\lHe's playing games on his PocketBoy!"), MSGBOX_NPC)
     end
 }
 

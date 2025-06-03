@@ -233,12 +233,12 @@ PellucaGym_Red_8:
 
 PellucaGym_Red_12:
 # 175 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	giveitem ITEM_NORMAL_GEM
+	giveitem ITEM_WATER_GEM
 	goto PellucaGym_Red_11
 
 PellucaGym_Red_15:
 # 178 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	giveitem ITEM_SILK_SCARF
+	giveitem ITEM_MYSTIC_WATER
 	goto PellucaGym_Red_11
 
 
@@ -429,31 +429,32 @@ PellucaGym_Trainer_H_Text_0:
 
 PellucaGym_Red_Text_0:
 # 169 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Well done champ-in-the-making! Now get\n"
-	.string "on out there and find the next gym -\l"
-	.string "I'll see you there!$"
+	.string "All the best, champ-in-the-making!$"
 
 PellucaGym_Red_Text_1:
 # 171 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Well done champ-in-the-making! The Gym\n"
-	.string "Leader pulled a fast one on you, using\l"
-	.string "his real team, and you still made it out!\l"
-	.string "In recognition of your victory, I'd like\l"
-	.string "to give you something. Which of these\l"
-	.string "do you fancy?$"
+	.string "Well done champ-in-the-making! You\n"
+	.string "went face-to-face with the waves,\l"
+	.string "stood firm and came out on top! In\l"
+	.string "recognition of your victory, I'd like to\l"
+	.string "give you something. Which of these do\l"
+	.string "you fancy?$"
 
 PellucaGym_Red_Text_2:
 # 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "NORMAL GEM$"
+	.string "Water Gem$"
 
 PellucaGym_Red_Text_3:
 # 172 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "SILK SCARF$"
+	.string "Mystic Water$"
 
 PellucaGym_Red_Text_4:
 # 185 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "Now get on out there and find the next\n"
-	.string "gym - I'll see you there!$"
+	.string "gym...but I won't be there. The last gym\l"
+	.string "is unsafe for senior citizens like me, so\l"
+	.string "this is the last time we meet,\l"
+	.string "champ-in-the-making. All the best!$"
 
 PellucaGym_Red_Text_5:
 # 189 "data//maps/PellucaCityGym_B1F/scripts.pory"

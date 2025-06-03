@@ -538,7 +538,7 @@ WinterlilyHollowGym_Red_Text_1:
 
 WinterlilyHollowGym_Red_Text_2:
 # 227 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Electric Gym$"
+	.string "Electric Gem$"
 
 WinterlilyHollowGym_Red_Text_3:
 # 227 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
