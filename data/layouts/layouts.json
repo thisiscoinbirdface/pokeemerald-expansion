@@ -4444,7 +4444,7 @@
     {
       "id": "LAYOUT_CARABRUE_TOWN_HOME2F",
       "name": "CarabrueTown_Home2F_Layout",
-      "width": 8,
+      "width": 9,
       "height": 7,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",

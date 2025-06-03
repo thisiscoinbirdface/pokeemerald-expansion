@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_MAUVILLE_CITY_GAME_CORNER, 14, 20
+	warp MAP_ROUTE8, 30, 46
 	release
 	end
 
@@ -153,6 +153,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	call MauvilleCity_GameCorner_EventScript_Gacha_Great
 	release
 	end
 

@@ -23,4 +23,30 @@ script CarabrueTown_Home2F_EventScript_PC{
 	releaseall
 }
 
+script CarabrueTown_Home2F_EventScript_GameCube{
+    msgbox(format("Mom got me this Retro64, the best retro game emulator around!\pTurn it on?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        playbgm(MUS_NONE, FALSE)
+        special(StartFlappyBird)
+        waitstate
+        savebgm(MUS_DUMMY)
+        fadedefaultbgm
+    }
+    releaseall
+    end
+}
 
+script CarabrueTown_Home2F_EventScript_TV{
+    msgbox(format("The TV is hooked up to the Retro64.\pTurn it on?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        playbgm(MUS_NONE, FALSE)
+        special(StartFlappyBird)
+        waitstate
+        savebgm(MUS_DUMMY)
+        fadedefaultbgm
+    }
+    releaseall
+    end
+}

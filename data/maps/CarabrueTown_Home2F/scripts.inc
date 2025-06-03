@@ -38,8 +38,73 @@ CarabrueTown_Home2F_EventScript_PC::
 	return
 
 
+CarabrueTown_Home2F_EventScript_GameCube::
+# 27 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_0, MSGBOX_YESNO
+# 28 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	release
+# 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq CarabrueTown_Home2F_EventScript_GameCube_2
+CarabrueTown_Home2F_EventScript_GameCube_1:
+# 36 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	releaseall
+	end
+
+CarabrueTown_Home2F_EventScript_GameCube_2:
+# 30 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 31 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartFlappyBird
+# 32 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 33 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	savebgm MUS_DUMMY
+# 34 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	fadedefaultbgm
+	goto CarabrueTown_Home2F_EventScript_GameCube_1
+
+
+CarabrueTown_Home2F_EventScript_TV::
+# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0, MSGBOX_YESNO
+# 42 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	release
+# 43 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq CarabrueTown_Home2F_EventScript_TV_2
+CarabrueTown_Home2F_EventScript_TV_1:
+# 50 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	releaseall
+	end
+
+CarabrueTown_Home2F_EventScript_TV_2:
+# 44 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	playbgm MUS_NONE, FALSE
+# 45 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	special StartFlappyBird
+# 46 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	waitstate
+# 47 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	savebgm MUS_DUMMY
+# 48 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	fadedefaultbgm
+	goto CarabrueTown_Home2F_EventScript_TV_1
+
+
 CarabrueTown_Home2F_EventScript_PickUpBag_Text_0:
 # 6 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "The lab sent a Welcome Package\n"
 	.string "yesterday. I'm supposed to bring it with\l"
 	.string "me without opening it, they said.$"
+
+CarabrueTown_Home2F_EventScript_GameCube_Text_0:
+# 27 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "Mom got me this Retro64, the best retro\n"
+	.string "game emulator around!\p"
+	.string "Turn it on?$"
+
+CarabrueTown_Home2F_EventScript_TV_Text_0:
+# 41 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "The TV is hooked up to the Retro64.\p"
+	.string "Turn it on?$"
