@@ -1469,3 +1469,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GalecrestCity_GameCorner/scripts.inc"
 
 	.include "data/maps/Championship_PokemonCenter/scripts.inc"
+
+	.include "data/maps/Route8_SeaCasino/scripts.inc"

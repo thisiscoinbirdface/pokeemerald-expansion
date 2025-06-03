@@ -5424,7 +5424,7 @@
     {
       "id": "LAYOUT_ROUTE8",
       "name": "Route8_Layout",
-      "width": 60,
+      "width": 70,
       "height": 100,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",
@@ -5970,6 +5970,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/Championship_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/Championship_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8_SEA_CASINO",
+      "name": "Route8_SeaCasino_Layout",
+      "width": 29,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/Route8_SeaCasino/border.bin",
+      "blockdata_filepath": "data/layouts/Route8_SeaCasino/map.bin"
     }
   ]
 }

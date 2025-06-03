@@ -104,7 +104,7 @@ script PellucaCityHouses_MayorQuestStart{
 
 //GAB house
 script PellucaCityHouses_GabSibling1{
-    msgbox(format("Big Sis is back! She got me a Retro64. But I'm not gonna play it because I'm gonna play with Big Sis. You can play it if you want!"), MSGBOX_NPC)
+    msgbox(format("Big Sis is back! She got me a Retro64. I'm not playing it because I'm gonna play with her. You wanna play it?"), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_GabSibling2{

@@ -498,9 +498,8 @@ PellucaCityHouses_MayorQuestStart_Text_10:
 PellucaCityHouses_GabSibling1_Text_0:
 # 107 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Big Sis is back! She got me a Retro64.\n"
-	.string "But I'm not gonna play it because I'm\l"
-	.string "gonna play with Big Sis. You can play it\l"
-	.string "if you want!$"
+	.string "I'm not playing it because I'm gonna\l"
+	.string "play with her. You wanna play it?$"
 
 PellucaCityHouses_GabSibling2_Text_0:
 # 111 "data//maps/PellucaCityHouses/scripts.pory"

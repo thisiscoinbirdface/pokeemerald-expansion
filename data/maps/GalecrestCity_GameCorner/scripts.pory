@@ -12,9 +12,12 @@ script GalecrestCity_GameCorner_NPC1{
     msgbox(format("Don't tell my wife I'm here!"), MSGBOX_NPC)
     end
 }
-
 script GalecrestCity_GameCorner_NPC2{
     msgbox(format("I dropped my last Gacha Token in the puddles outside!\p...\pAh well, so be it. Maybe it's a sign for me to quit!"), MSGBOX_NPC)
+    end
+}
+script GalecrestCity_GameCorner_NPC3{
+    msgbox(format("The good machines come with better rewards! But you need enough badges."), MSGBOX_NPC)
     end
 }
 

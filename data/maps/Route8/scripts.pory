@@ -1,6 +1,19 @@
 mapscripts Route8_MapScripts{}
 
 
+
+script Route8_Casino_Board{
+    msgbox(format("Board the S.S. Casino?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT == 0)) {releaseall end}
+
+    releaseall
+    end
+}
+
+
+
+
 //TRAINERS
 //swimmer
 script Route8_Trainer_A{
@@ -54,4 +67,8 @@ script Route8_NPC3{
     msgbox(format("Rivetshore City is just past this cave. They built a barrier to prevent flooding so you have to take the underpass."), MSGBOX_NPC)
     end
 }
+
+
+
+
 
