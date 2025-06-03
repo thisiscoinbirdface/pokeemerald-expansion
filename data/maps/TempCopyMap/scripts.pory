@@ -39,7 +39,6 @@ script Common_EventScript_Follower_Cheat{
         }
 
         //burn it
-        callnative(ApplyStatusConditionFromField_Burn)
         msgbox(format("burned!"))
         release      
     }

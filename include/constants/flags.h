@@ -1567,7 +1567,7 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-//I AM GOING TO USE THESE FLAGS ONE BY ONE
+//I AM GOING TO USE THESE FLAGS ONE BY ONE (SETTINGS AND SYS)
 #define FLAG_SYS_EXP_ALL                            (SYSTEM_FLAGS + 0x85) // Unused Flag
 #define FLAG_SYS_FISHING_MINIGAME                   (SYSTEM_FLAGS + 0x86) // Unused Flag
 #define FLAG_SYS_TERA_ORB                           (SYSTEM_FLAGS + 0x87) // Unused Flag
@@ -1586,8 +1586,9 @@
 #define FLAG_SYS_CHEATS_ENABLED                     (SYSTEM_FLAGS + 0x94) // Unused Flag
 #define FLAG_UNUSED_0x8F5                           (SYSTEM_FLAGS + 0x95) // Unused Flag
 #define FLAG_UNUSED_0x8F6                           (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
+//MINIGAME EXPANSION
+#define FLAG_MINIGAME_NICKNAME                      (SYSTEM_FLAGS + 0x97) // Unused Flag
+#define FLAG_MINIGAME_RESET                         (SYSTEM_FLAGS + 0x98) // Unused Flag
 
 //cutscene skips
 #define FLAG_SKIP_CERAM_CUTSCENE                    (SYSTEM_FLAGS + 0x99) // Unused Flag

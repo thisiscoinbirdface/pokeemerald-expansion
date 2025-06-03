@@ -95,24 +95,18 @@
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
 #define VAR_POKELOT_PRIZE_PLACE                          0x404D
-#define VAR_UNUSED_0x404E                                0x404E // Unused Var
+
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
 #define VAR_OLDALE_TOWN_STATE                            0x4051
-#define VAR_DEWFORD_TOWN_STATE                           0x4052 // Unused Var
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
+
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
-#define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
-#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
 #define VAR_ROUTE101_STATE                               0x4060
 #define VAR_ROUTE104_STATE                               0x4063
 
@@ -123,10 +117,8 @@
     ///NOTE THE GAP HERE. IVE MOVED SOME VARS DOWN
 
 #define VAR_ROUTE116_STATE                               0x406F
-#define VAR_ROUTE117_STATE                               0x4070 // Unused Var
 #define VAR_ROUTE118_STATE                               0x4071
 #define VAR_ROUTE119_STATE                               0x4072
-#define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074
 
     ///NOTE THE GAP HERE. IVE MOVED SOME VARS DOWN
@@ -136,7 +128,6 @@
     ///NOTE THE GAP HERE. IVE MOVED SOME VARS DOWN
 
 #define VAR_LITTLEROOT_HOUSES_STATE_MAY                  0x4082
-#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                              0x4084
 #define VAR_PETALBURG_GYM_STATE                          0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE                           0x4086
@@ -181,7 +172,6 @@
 #define VAR_WEATHER_INSTITUTE_STATE                      0x40B3
 #define VAR_SS_TIDAL_STATE                               0x40B4
 #define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR              0x40B5
-#define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2                 0x40B6 // Leftover from RS, never set
 #define VAR_SLATEPORT_FAN_CLUB_STATE                     0x40B7
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
@@ -217,9 +207,6 @@
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
-#define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read
-#define VAR_GIFT_UNUSED_2                                0x40DF // Var is written to, but never read
-#define VAR_GIFT_UNUSED_3                                0x40E0 // Var is written to, but never read
 #define VAR_GIFT_UNUSED_4                                0x40E1 // Var is written to, but never read
 #define VAR_GIFT_UNUSED_5                                0x40E2 // Var is written to, but never read
 #define VAR_GIFT_UNUSED_6                                0x40E3 // Var is written to, but never read
@@ -296,6 +283,26 @@
     #define VAR_SYS_BATTLE_SPEED                             0x406C // Unused Var
     #define VAR_SYS_DIFFICULTY                               0x40A8 // Unused Var
     #define VAR_SYS_EXP_CAP                                  0x408B // (none, soft, hard)
+
+#define VAR_GIFT_UNUSED_3                                0x40E0 // Var is written to, but never read
+
+
+    //GAME CORNER VARS
+#define VAR_ROUTE117_STATE                               0x4070 // Unused Var
+#define VAR_ROUTE120_STATE                               0x4073 // Unused Var
+#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
+#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
+#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
+#define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
+#define VAR_UNUSED_0x404E                                0x404E // Unused Var
+#define VAR_DEWFORD_TOWN_STATE                           0x4052 // Unused Var
+#define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
+#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
+#define VAR_UNUSED_0x4083                                0x4083 // Unused Var
+#define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2                 0x40B6 // Leftover from RS, never set
+#define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read
+#define VAR_GIFT_UNUSED_2                                0x40DF // Var is written to, but never read
+
 
 #define VARS_END                                         0x40FF
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
