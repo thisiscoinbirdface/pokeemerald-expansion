@@ -6194,7 +6194,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_PELLUCA_CITY_GYM_LEADER ===
 Name: Jania
-Difficulty: Easy
+Difficulty: Normal
 Class: Leader
 Pic: Leader Jania
 Gender: Female
@@ -6410,37 +6410,6 @@ Level: 29
 Qwilfish-Hisui
 Level: 31
 
-=== TRAINER_PELLUCA_QWILSQUAD_A ===
-Name: Grunt
-Difficulty: Easy
-Class: Sailor
-Pic: Sailor
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Dhelmise
-Level: 29
-
-Qwilfish-Hisui
-Level: 31
-
-=== TRAINER_PELLUCA_QWILSQUAD_A ===
-Name: Grunt
-Difficulty: Normal
-Class: Sailor
-Pic: Sailor
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer
-
-Dhelmise
-Level: 29
-
-Qwilfish-Hisui
-Level: 31
 
 
 
@@ -6726,7 +6695,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_ROUTE8_D ===
 Name: Mary
-Difficulty: Easy
+Difficulty: Normal
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -7002,7 +6971,7 @@ Glimmet
 Level: 47
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Carkoal
+Carkol
 Level: 48
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
@@ -7346,6 +7315,22 @@ Metang
 Level: 38
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+=== TRAINER_IVY_RIVER_A ===
+Name: Santiago
+Difficulty: Normal
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer
+
+Bombirdier
+Level: 36
+
+Metang
+Level: 38
+
 
 
 
@@ -7375,6 +7360,22 @@ Carvanha
 Level: 39
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+=== TRAINER_IVY_RIVER_B ===
+Name: Galona
+Difficulty: Normal
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Tynamo
+Level: 37
+
+Carvanha
+Level: 39
+
 
 
 
@@ -7393,9 +7394,9 @@ Difficulty: Easy
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
-Music: Swimmer
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer / Force Setup First Turn
+AI: Smart Trainer / Force Setup First Turn
 
 Morgrem @ Lagging Tail
 Level: 37
@@ -7424,6 +7425,40 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Hex
 - Pain Split
 
+=== TRAINER_IVY_RIVER_C ===
+Name: Eden
+Difficulty: Normal
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Force Setup First Turn
+
+Morgrem @ Lagging Tail
+Level: 37
+Ability: Prankster
+- Trick
+- Parting Shot
+- Fake Out
+- Sucker Punch
+
+Polteageist
+Level: 38
+Ability: Weak Armor
+- Strength Sap
+- Nasty Plot
+- Baton Pass
+- Endure
+
+Spiritomb
+Level: 39 
+Ability: Infiltrator
+- Foul Play
+- Will-O-Wisp
+- Hex
+- Pain Split
+
 
 
 
@@ -7444,7 +7479,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Glimmora
@@ -7462,6 +7497,29 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Pinsir
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_IVY_RIVER_D ===
+Name: Stanja
+Difficulty: Normal
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
+
+Glimmora
+Level: 36
+
+Dewpider
+Level: 36
+
+Mareanie
+Level: 37
+
+Pinsir
+Level: 40
 
 
 
@@ -7488,6 +7546,18 @@ Muk-Alola
 Level: 49
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Muk-Alola
+Level: 49
 
 
 
@@ -7507,7 +7577,7 @@ Pic: Somber Grunt F
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Yanmega
 Level: 46
@@ -7516,6 +7586,22 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Bronzong
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_B ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt F
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Yanmega
+Level: 46
+
+Bronzong
+Level: 48
 
 
 
@@ -7536,7 +7622,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Honchkrow
 Level: 47
@@ -7545,6 +7631,22 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Hypno
 Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_C ===
+Name: Grunt
+Difficulty: Normal
+Class: Team Somber
+Pic: Somber Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer
+
+Honchkrow
+Level: 47
+
+Hypno
+Level: 47
 
 
 
@@ -7558,7 +7660,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
-Name: TONY
+Name: Tony
 Difficulty: Easy
 Class: Swimmer M
 Pic: Swimmer M
@@ -7570,6 +7672,20 @@ AI: Check Bad Move
 Sharpedo
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_UNCHARTED_ISLAND_GRUNT_D ===
+Name: Tony
+Difficulty: Normal
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer
+
+Sharpedo
+Level: 30
+
 
 
 
@@ -7589,7 +7705,7 @@ Class: Somber Admin
 Pic: Somber Admin Moxie
 Gender: Male
 Music: Aqua
-Items: Super Potion
+Items: Hyper Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
@@ -7613,6 +7729,36 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 Houndoom @ Houndoominite
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_UNCHARTED_ISLAND_MOXIE ===
+Name: Moxie
+Difficulty: Normal
+Class: Somber Admin
+Pic: Somber Admin Moxie
+Gender: Male
+Music: Aqua
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
+
+Grimmsnarl
+Level: 53
+
+Honchkrow
+Level: 54
+
+Slowking-Galar
+Level: 54
+
+Great Tusk
+Level: 56
+
+Houndoom @ Houndoominite
+Level: 57
+
+
+
 
 
 
@@ -7656,6 +7802,32 @@ Absol @ Absolite
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
+=== TRAINER_UNCHARTED_ISLAND_MELEA ===
+Name: Melea
+Difficulty: Normal
+Class: Somber Admin
+Pic: Somber Admin Melea
+Gender: Female
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
+
+Yanmega
+Level: 53
+
+Muk-Alola
+Level: 54
+
+Slowbro-Galar
+Level: 54
+
+Flutter Mane
+Level: 56
+
+Absol @ Absolite
+Level: 57
+
 
 
 
@@ -7697,6 +7869,30 @@ Koraidon
 Level: 60
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
+=== TRAINER_UNCHARTED_ISLAND_RUE ===
+Name: Rue
+Difficulty: Normal
+Class: Rue
+Pic: Rue
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
+
+Toedscruel
+Level: 55
+
+Spiritomb
+Level: 57
+
+Roaring Moon
+Level: 58
+
+Metagross @ Metagrossite
+Level: 58
+
+Koraidon
+Level: 60
 
 
 
@@ -7726,6 +7922,22 @@ Raticate-Alola
 Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_ROUTE1_STRONG_A ===
+Name: Jose
+Difficulty: Normal
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Risky
+
+Marowak-Alola
+Level: 52
+
+Raticate-Alola
+Level: 54
+
 
 
 
@@ -7746,6 +7958,28 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
+
+Noivern
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pelipper
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Unfezant
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ROUTE1_STRONG_B ===
+Name: Sana
+Difficulty: Normal
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
 
 Noivern
 Level: 53
@@ -7789,6 +8023,35 @@ Lokix
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_ROUTE1_STRONG_C ===
+Name: Manya
+Difficulty: Normal
+Class: Bug Catcher F
+Pic: Bug Catcher F
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+
+Orbeetle
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lokix
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VICTORY_ROAD_A ===
 Name: Koichi
@@ -7812,6 +8075,39 @@ Coalossal
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_A ===
+Name: Koichi
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Sinistea
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Araquanid
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Coalossal
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_VICTORY_ROAD_B ===
@@ -7831,6 +8127,36 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Seismitoad
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_VICTORY_ROAD_B ===
+Name: Nobs
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Toxtricity
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Seismitoad
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_VICTORY_ROAD_C ===
@@ -7855,6 +8181,38 @@ Wyrdeer
 Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_C ===
+Name: Sari
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Yanmega
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Chimecho
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Wyrdeer
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VICTORY_ROAD_D ===
 Name: Tom
@@ -7876,6 +8234,37 @@ Level: 58
 Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_D ===
+Name: Tom
+Difficulty: Normal
+Class: Dragon Tamer
+Pic: Dragon Tamer
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Sliggoo
+Level: 56
+Ability: Gooey
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Noivern
+Level: 58
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VICTORY_ROAD_E ===
 Name: Anaya
 Difficulty: Easy
@@ -7893,6 +8282,36 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Alomomola
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_VICTORY_ROAD_E ===
+Name: Anaya
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Weezing-Galar
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Alomomola
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_VICTORY_ROAD_F ===
@@ -7916,6 +8335,39 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Dugtrio-Alola
 Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_VICTORY_ROAD_F ===
+Name: Toctay
+Difficulty: Normal
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Glimmora
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Golem-Alola
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Dugtrio-Alola
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_VICTORY_ROAD_G ===
@@ -7944,6 +8396,44 @@ Talonflame
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_G ===
+Name: Yuna
+Difficulty: Normal
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Braviary-Hisui
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Bombirdier
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Skarmory
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Talonflame
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VICTORY_ROAD_H ===
 Name: Sai
@@ -7967,6 +8457,40 @@ Lycanroc-Midnight
 Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_H ===
+Name: Sai
+Difficulty: Normal
+Class: Backpacker
+Pic: Backpacker
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Furret
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Forretress
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Lycanroc-Midnight
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_VICTORY_ROAD_I ===
@@ -7982,6 +8506,31 @@ AI: Smart Trainer
 Charizard @ Charizardite-X
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_VICTORY_ROAD_I ===
+Name: Kirk
+Difficulty: Normal
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Charizard @ Charizardite-X
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VICTORY_ROAD_J ===
 Name: Pia
@@ -8005,6 +8554,39 @@ Goodra
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_VICTORY_ROAD_J ===
+Name: Pia
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Masquerain
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Frosmoth
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Goodra
+Level: 60
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VICTORY_ROAD_K ===
 Name: Grunt
 Difficulty: Easy
@@ -8023,6 +8605,17 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VICTORY_ROAD_L ===
 Name: Grunt
 Difficulty: Easy
@@ -8036,6 +8629,17 @@ AI: Smart Trainer
 Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_VICTORY_ROAD_M ===
 Name: SHAWN
@@ -8055,6 +8659,17 @@ Magnemite
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VICTORY_ROAD_N ===
 Name: FERNANDO
 Difficulty: Easy
@@ -8073,6 +8688,17 @@ Loudred
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_VICTORY_ROAD_O ===
 Name: DALTON
 Difficulty: Easy
@@ -8090,6 +8716,17 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Whismur
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_CHAMPIONSHIP_A ===
 Name: Chara
@@ -8122,10 +8759,98 @@ Altaria @ Altarianite
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+=== TRAINER_CHAMPIONSHIP_A ===
+Name: Chara
+Difficulty: Normal
+Class: Cool Girl
+Pic: Cool Girl
+Gender: Female
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Force Setup First Turn / Ace Pokemon
+Mugshot: Green
+
+Meganium @ Heat Rock
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sunny Day
+- Solar Beam
+- Stomping Tantrum
+
+Ursaluna @ Flame Orb
+Ability: Guts
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Facade
+- Earthquake
+
+Typhlosion-Hisui @ Choice Scarf
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Overheat
+
+Forretress
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Altaria @ Altarianite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_CHAMPIONSHIP_B ===
 Name: Stanja
 Difficulty: Easy
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Green
+
+Glimmora @ Power Herb
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Meteor Beam
+- Sludge Wave
+- Stealth Rock
+- Solar Beam
+
+Scolipede
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Amoonguss @ Rocky Helmet
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Toxapex
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Pinsir @ Pinsirite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor  
+- Swords Dance
+- Quick Attack  
+- Double Edge
+
+=== TRAINER_CHAMPIONSHIP_B ===
+Name: Stanja
+Difficulty: Normal
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -8162,9 +8887,63 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Quick Attack  
 - Double Edge
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_CHAMPIONSHIP_C ===
 Name: Berger
 Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Cool Guy
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon / Force Setup First Turn
+Mugshot: Green
+
+Ninetales-Alola
+Ability: Snow Warning
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aurora Veil
+- Moonblast
+- Blizzard
+- Freeze-Dry
+
+Baxcalibur
+Ability: Ice Body
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Mr. Rime
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tinkaton
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rapidash-Galar
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Avalugg-Hisui
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHAMPIONSHIP_C ===
+Name: Berger
+Difficulty: Normal
 Class: Pkmn Trainer 2
 Pic: Cool Guy
 Gender: Male
@@ -8203,9 +8982,72 @@ Avalugg-Hisui
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+
+
+
+
+
+
+
+
+
+
 === TRAINER_CHAMPIONSHIP_D ===
 Name: Gabrielle
 Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Somber Grunt F
+Gender: Female
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Green
+
+Claydol
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Psychic
+- Scorching Sands
+- Toxic
+
+
+Zoroark-Hisui @ Life Orb
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
+- Shadow Ball
+- Hyper Voice
+- Focus Blast
+
+Kommo-o
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Clangorous Soul
+- Clanging Scales
+- Boomburst
+- Earthquake
+
+Milotic @ Sitrus Berry
+Level: 65
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Calm Mind
+- Scald
+- Recover
+- Confuse Ray
+
+Mawile @ Mawilite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swords Dance
+- Play Rough
+- Sucker Punch
+- Brick Break
+
+=== TRAINER_CHAMPIONSHIP_D ===
+Name: Gabrielle
+Difficulty: Normal
 Class: Pkmn Trainer 2
 Pic: Somber Grunt F
 Gender: Female
@@ -8255,6 +9097,17 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Play Rough
 - Sucker Punch
 - Brick Break
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_CHAMPIONSHIP_E ===
 Name: Kohla
@@ -8316,6 +9169,82 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Shadow Sneak
 - Close Combat
+
+=== TRAINER_CHAMPIONSHIP_E ===
+Name: Kohla
+Difficulty: Normal
+Class: Ace Rookie
+Pic: Wally
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Green
+
+Samurott @ Leftovers
+Level: 65
+EVs: 252 HP / 116 Def / 140 SpD  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flip Turn
+- Ceaseless Edge
+- Aqua Jet
+- Drill Run
+
+Kleavor @ Focus Sash
+Ability: Sharpness
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stone Axe
+- X-Scissor
+- Trailblaze
+
+Excadrill @ Choice Band
+Ability: Mold Breaker
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Rock Slide
+- Iron Head
+
+Aegislash @ Air Balloon
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Kings Shield
+- Shadow Ball
+- Shadow Sneak
+- Flash Cannon
+
+Gallade @ Galladite
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drain Punch
+- Zen Headbutt
+- Shadow Sneak
+- Fire Punch
+
+Ceruledge @ Life Orb
+Ability: Weak Armor
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bitter Blade
+- Swords Dance
+- Shadow Sneak
+- Close Combat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8393,15 +9322,30 @@ Wingull
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PLAYER_SENTRY ===
 Name: Sentry
+Difficulty: Easy
 Class: Pkmn Trainer 2
 Pic: Gubuking
 Gender: Male
 Music: Elite Four
 Double Battle: No
 Items: Full Restore
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Prediction
 Mugshot: Purple
 
 Typhlosion-Hisui
@@ -8464,8 +9408,153 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Foul Play
 
 
+=== TRAINER_PLAYER_SENTRY ===
+Name: Sentry
+Difficulty: Normal
+Class: Pkmn Trainer 2
+Pic: Gubuking
+Gender: Male
+Music: Elite Four
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction
+Mugshot: Purple
+
+Typhlosion-Hisui
+Level: 65
+Ability: Frisk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Shadow Ball
+- Infernal Parade
+- Swift
+
+Aggron @ Aggronite
+Level: 69
+Ability: Rock Head
+Relaxed Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Head
+- Dragon Claw
+- Earthquake
+- Strength
+
+Dragapult
+Level: 66
+Ability: Cursed Body
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Claw
+- Bite
+- Dragon Darts
+- Phantom Force
+
+Obstagoon
+Level: 66
+Ability: Defiant
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Pin Missile
+- Cross Chop
+- Night Slash
+
+Seismitoad
+Level: 66
+Ability: Water Absorb
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dive
+- Aqua Ring
+- Muddy Water
+- Drain Punch
+
+Sinistcha
+Level: 66
+Ability: Heatproof
+Modest Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Matcha Gotcha
+- Strength Sap
+- Shadow Ball
+- Foul Play
+
+
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PLAYER_EDEN ===
 Name: Eden
+Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Gubuking
+Gender: Male
+Music: Elite Four
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Obstagoon @ Assault Vest
+Level: 65
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Night Slash
+- Return
+- Pin Missile
+- Lick
+
+Skarmory @ Muscle Band
+Level: 65
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Spikes
+- Slash
+- Steel Wing
+
+Skarmory @ Muscle Band
+Level: 65
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Scream Tail @ Fairy Feather
+Level: 65
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Play Rough
+- Psychic Fangs
+- Crunch
+- Noble Roar
+
+Milotic @ Leftovers
+Level: 65
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Recover
+- Ice Beam
+- Toxic
+
+Medicham @ Medichamite
+Level: 65
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Zen Headbutt
+- Fire Punch
+- Axe Kick
+- Ice Punch
+
+=== TRAINER_PLAYER_EDEN ===
+Name: Eden
+Difficulty: Normal
 Class: Pkmn Trainer 2
 Pic: Gubuking
 Gender: Male
@@ -8527,8 +9616,95 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 
+
+
+
+
+
+
+
+
+
+
 === TRAINER_PLAYER_GOZLIAK ===
 Name: Gozliak
+Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Brendan
+Gender: Male
+Music: Elite Four
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Hydrapple @ Clear Amulet
+Level: 67
+Ability: Supersweet Syrup
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Syrup Bomb
+- Fickle Beam
+- Growth
+
+Gallade
+Level: 67
+Ability: Justified
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Close Combat
+- Night Slash
+- Psycho Cut
+
+Tinkaton @ Clear Amulet
+Level: 64
+Ability: Pickpocket
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Gigaton Hammer
+- Knock Off
+- Play Rough
+
+Mawile @ Mawilite
+Level: 67
+Ability: Hyper Cutter
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Play Rough
+- Iron Defense
+- Sucker Punch
+- Iron Head
+
+Corviknight @ Clear Amulet
+Level: 67
+Ability: Mirror Armor
+Shiny: Yes
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Power Trip
+- Steel Wing
+- Taunt
+
+Overqwil
+Level: 67
+Ability: Poison Point
+Shiny: Yes
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Barb Barrage
+- Crunch
+- Toxic
+
+=== TRAINER_PLAYER_GOZLIAK ===
+Name: Gozliak
+Difficulty: Normal
 Class: Pkmn Trainer 2
 Pic: Brendan
 Gender: Male
@@ -8604,12 +9780,81 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 
-Pelipper
-Level: 32
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+
+
+
+
+
+
+
 
 === TRAINER_PLAYER_SHERRY ===
 Name: Sherry
+Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Brendan
+Gender: Male
+Music: Elite Four
+Double Battle: No
+Items: Full Restore
+AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
+
+Excadrill @ Clear Amulet
+Level: 64
+Ability: Sand Force
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Strength
+- Rock Slide
+- Earthquake
+- Metal Claw
+
+Mimikyu @ Leftovers
+Level: 63
+Ability: Disguise
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Claw
+- Play Rough
+- Hone Claws
+- Wood Hammer
+
+Roserade @ Big Root
+Level: 63
+Ability: Natural Cure
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Growth
+- Stun Spore
+- Sludge Bomb
+
+Gothitelle @ Psychic Gem
+Level: 64
+Ability: Frisk
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Psychic
+- Calm Mind
+- Thunderbolt
+
+Aerodactyl @ Aerodactylite
+Level: 64
+Ability: Rock Head
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Earthquake
+- Crunch
+- Aerial Ace
+
+=== TRAINER_PLAYER_SHERRY ===
+Name: Sherry
+Difficulty: Normal
 Class: Pkmn Trainer 2
 Pic: Brendan
 Gender: Male
@@ -8672,22 +9917,143 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 
-=== TRAINER_DREW ===
-Name: DREW
-Class: Camper
-Pic: Camper
+
+
+
+
+
+
+
+
+
+
+=== TRAINER_PLAYER_MIKE ===
+Name: Mike
+Difficulty: Easy
+Class: Pkmn Trainer 2
+Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction
+Mugshot: Purple
 
-Sandshrew
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Ceruledge @ Shell Bell
+Level: 66
+Ability: Flash Fire
+Brave Nature
+- Psyshock
+- Flamethrower
+- Armor Cannon
+- Expanding Force
+
+Lileep @ Rocky Helmet
+Level: 66
+Ability: Suction Cups
+Sassy Nature
+- Brine
+- Energy Ball
+- Giga Drain
+- Ancient Power
+
+Blastoise @ Blastoisinite
+Level: 66
+Ability: Rain Dish
+Bashful Nature
+- Flash Cannon
+- Water Pulse
+- Hydro Pump
+- Bite
+
+Annihilape @ Wide Lens
+Level: 66
+Ability: Defiant
+Adamant Nature
+- Bulk Up
+- Brick Break
+- Focus Punch
+- Shadow Punch
+
+Gothitelle @ Wise Glasses
+Level: 66
+Ability: Frisk
+Modest Nature
+- Psyshock
+- Psychic
+- Calm Mind
+- Future Sight
+
+
+=== TRAINER_PLAYER_MIKE ===
+Name: Mike
+Difficulty: Normal
+Class: Pkmn Trainer 2
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction
+Mugshot: Purple
+
+Ceruledge @ Shell Bell
+Level: 66
+Ability: Flash Fire
+Brave Nature
+- Psyshock
+- Flamethrower
+- Armor Cannon
+- Expanding Force
+
+Lileep @ Rocky Helmet
+Level: 66
+Ability: Suction Cups
+Sassy Nature
+- Brine
+- Energy Ball
+- Giga Drain
+- Ancient Power
+
+Blastoise @ Blastoisinite
+Level: 66
+Ability: Rain Dish
+Bashful Nature
+- Flash Cannon
+- Water Pulse
+- Hydro Pump
+- Bite
+
+Annihilape @ Wide Lens
+Level: 66
+Ability: Defiant
+Adamant Nature
+- Bulk Up
+- Brick Break
+- Focus Punch
+- Shadow Punch
+
+Gothitelle @ Wise Glasses
+Level: 66
+Ability: Frisk
+Modest Nature
+- Psyshock
+- Psychic
+- Calm Mind
+- Future Sight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_BEAU ===
 Name: BEAU

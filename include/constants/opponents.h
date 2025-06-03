@@ -301,8 +301,8 @@
 #define TRAINER_PLAYER_SENTRY               207
 #define TRAINER_PLAYER_EDEN                 208
 #define TRAINER_PLAYER_GOZLIAK              209
-#define TRAINER_PLAYER_SHERRY                    210
-#define TRAINER_DREW                        211
+#define TRAINER_PLAYER_SHERRY               210
+#define TRAINER_PLAYER_MIKE                 211
 #define TRAINER_BEAU                        212
 #define TRAINER_LARRY                       213
 #define TRAINER_SHANE                       214
