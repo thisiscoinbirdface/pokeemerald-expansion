@@ -1451,6 +1451,12 @@ static const u8 sText_SpaceIs[] = _(" is");
 static const u8 sText_ApostropheS[] = _("'s");
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");
 
+const u8 gText_IconSuperEffective[] = _(" {COLOR GREEN}{UP_ARROW}");
+const u8 gText_IconNotVeryEffective[] = _(" {DOWN_ARROW}");
+const u8 gText_IconNoEffect[] = _(" {BIG_MULT_X}");
+const u8 gText_IconNormal[] = _(" ");
+
+
 const u8 *const gRoundsStringTable[DOME_ROUNDS_COUNT] =
 {
     [DOME_ROUND1]    = COMPOUND_STRING("Round 1"),
@@ -1803,6 +1809,45 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
         .bgColor = TEXT_DYNAMIC_COLOR_5,
         .shadowColor = TEXT_DYNAMIC_COLOR_6,
     },
+    
+    [B_WIN_TYPE_SE] = { // 24 "type" super-effective
+        .fillValue = PIXEL_FILL(0xE),
+        .fontId = 7,
+        .x = 0,
+        .y = 1,
+        .letterSpacing = 0,
+        .lineSpacing = 0,
+        .speed = 0,
+        .fgColor = 6,
+        .bgColor = 14,
+        .shadowColor = 5,
+    },
+    [B_WIN_TYPE_NVE] = { // 25 "type" not very effective
+        .fillValue = PIXEL_FILL(0xE),
+        .fontId = 7,
+        .x = 0,
+        .y = 1,
+        .letterSpacing = 0,
+        .lineSpacing = 0,
+        .speed = 0,
+        .fgColor = 1,
+        .bgColor = 14,
+        .shadowColor = 3,
+    },
+    [B_WIN_TYPE_NO] = { // 26 "type" no effect
+        .fillValue = PIXEL_FILL(0xE),
+        .fontId = 7,
+        .x = 0,
+        .y = 1,
+        .letterSpacing = 0,
+        .lineSpacing = 0,
+        .speed = 0,
+        .fgColor = 11,
+        .bgColor = 14,
+        .shadowColor = 11,
+    },
+
+
 };
 
 static const struct BattleWindowText sTextOnWindowsInfo_Arena[] =

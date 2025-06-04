@@ -101,6 +101,9 @@ static void PrintLinkStandbyMsg(void);
 
 static void ReloadMoveNames(u32 battler);
 
+static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId);
+
+
 static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
@@ -158,6 +161,9 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
     [CONTROLLER_DEBUGMENU]                = PlayerHandleBattleDebug,
     [CONTROLLER_TERMINATOR_NOP]           = BtlController_TerminatorNop
 };
+
+
+#undef X
 
 void SetControllerToPlayer(u32 battler)
 {
@@ -1707,12 +1713,65 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP_REMAINING);
 }
 
+static void MulModifier(u16 *modifier, u16 val)
+{
+	*modifier = UQ_4_12_TO_INT((*modifier * val) + UQ_4_12_ROUND);
+}
+
+const u8 *TypeEffectiveness(u32 move, u8 targetId)
+{
+	bool8 isInverse = (B_FLAG_INVERSE_BATTLE != 0 && FlagGet(B_FLAG_INVERSE_BATTLE)) ? TRUE : FALSE;
+
+    u32 type = GetMoveType(move);
+    u16 pwr = GetMovePower(move);
+    u32 effect = GetMoveEffect(move);
+
+	if (pwr == 0)
+		return gText_IconNormal;
+	else
+	{
+		u16 mod = gTypeEffectivenessTable[type][gBattleMons[targetId].types[0]];
+
+		if (gBattleMons[targetId].types[1] != gBattleMons[targetId].types[0])
+		{
+			u16 mod2 = gTypeEffectivenessTable[type][gBattleMons[targetId].types[1]];
+			MulModifier(&mod, mod2);
+		}
+
+		// 10 - normal effectiveness
+		// 24 - super effective
+		// 25 - not very effective
+		// 26 - no effect
+
+		if (mod == UQ_4_12(0.0)) {
+			if(isInverse)
+				return gText_IconSuperEffective;
+			else
+				return gText_IconNoEffect;
+		}
+		else if (mod <= UQ_4_12(0.5)) {
+			if(isInverse)
+				return gText_IconSuperEffective;
+			else
+				return gText_IconNotVeryEffective;
+		}
+		else if (mod >= UQ_4_12(2.0)) {
+			if(isInverse)
+				return gText_IconNotVeryEffective;
+			else
+				return gText_IconSuperEffective;
+		}
+		else
+			return gText_IconNormal;
+	}
+}
+
 static void MoveSelectionDisplayMoveType(u32 battler)
 {
     u8 *txtPtr, *end;
     u32 speciesId = gBattleMons[battler].species;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+    txtPtr = gDisplayedStringBattle;//StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
     u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
     u32 type = GetMoveType(move);
     u32 effect = GetMoveEffect(move);
@@ -1746,7 +1805,11 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
         type = CheckDynamicMoveType(mon, move, battler);
     }
-    end = StringCopy(txtPtr, gTypesInfo[type].name);
+
+    StringCopy(txtPtr, gTypesInfo[type].name);
+    end = StringAppend(txtPtr, TypeEffectiveness(move, 1));
+
+//    end = StringCopy(txtPtr, gTypesInfo[type].name);
 
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
