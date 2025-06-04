@@ -1471,3 +1471,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Championship_PokemonCenter/scripts.inc"
 
 	.include "data/maps/Route8_SeaCasino/scripts.inc"
+
+	.include "data/maps/DoroaTown/scripts.inc"
+
+	.include "data/maps/DoroaTown_Houses/scripts.inc"
+
+	.include "data/maps/DoroaTown_GameCorner/scripts.inc"

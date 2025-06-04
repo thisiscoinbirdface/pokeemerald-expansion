@@ -265,3 +265,6 @@ const u16 gMetatileAttributes_PellucaGym[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_SSElegant[] = INCBIN_U16("data/tilesets/secondary/sselegant/metatiles.bin");
 const u16 gMetatileAttributes_SSElegant[] = INCBIN_U16("data/tilesets/secondary/sselegant/metatile_attributes.bin");
+
+const u16 gMetatiles_Doroa[] = INCBIN_U16("data/tilesets/primary/doroa/metatiles.bin");
+const u16 gMetatileAttributes_Doroa[] = INCBIN_U16("data/tilesets/primary/doroa/metatile_attributes.bin");

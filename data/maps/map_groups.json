@@ -140,7 +140,10 @@
     "PellucaCityGym_B1F",
     "Route6_ZeraoraCave",
     "MirrohInterior_B1F",
-    "PellucaCityFlooded"
+    "PellucaCityFlooded",
+    "DoroaTown",
+    "DoroaTown_Houses",
+    "DoroaTown_GameCorner"
   ],
   "gMapGroup_Phase4": [
     "WinterlilyHollow",

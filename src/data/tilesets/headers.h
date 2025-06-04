@@ -1034,3 +1034,14 @@ const struct Tileset gTileset_SSElegant =
     .metatileAttributes = gMetatileAttributes_SSElegant,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Doroa =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Doroa,
+    .palettes = gTilesetPalettes_Doroa,
+    .metatiles = gMetatiles_Doroa,
+    .metatileAttributes = gMetatileAttributes_Doroa,
+    .callback = NULL,
+};
