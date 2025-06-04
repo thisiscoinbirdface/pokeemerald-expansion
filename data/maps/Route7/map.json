@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_PELLUCA_CITY",
-      "offset": -6,
+      "offset": -2,
       "direction": "right"
+    },
+    {
+      "map": "MAP_DOROA_TOWN",
+      "offset": 4,
+      "direction": "down"
     }
   ],
   "object_events": [

@@ -14509,6 +14509,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE7",
+          "base_label": "gRoute70",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_BOLTUND"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_WOOLOO"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_BOLTUND"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_WOOLOO"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_BOLTUND"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_WOOLOO"
+              },
+              {
+                "min_level": 27,
+                "max_level": 29,
+                "species": "SPECIES_FURFROU"
+              }
+            ]
+          }
         }
       ]
     },
