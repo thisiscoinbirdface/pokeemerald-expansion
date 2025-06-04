@@ -1525,7 +1525,7 @@ MauvilleCity_GameCorner_EventScript_NoCoinCase2::
 	end	
 
 MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner:
-	.string "This is MAUVILLE GAME CORNER.$"
+	.string "Welcome to the Pelluca Game Corner!$"
 
 MauvilleCity_GameCorner_Text_PachinkoGuy:
 	.string "I used to own one of these dusty old\n"
@@ -1544,13 +1544,13 @@ MauvilleCity_GameCorner_Text_Hiker:
 	.string "every point in these machines.$"
 	
 MauvilleCity_GameCorner_Text_Derby_1:
-	.string "Looking to bet on the DERBY?\n"
+	.string "Looking to bet on the Derby?\n"
 	.string "We've gone digital!\p"
 	.string "Use one of the tablets\n"
 	.string "in front of the counter.$"	
 	
 MauvilleCity_GameCorner_Text_Derby_2:
-	.string "It's not all about CONDITION.\p"
+	.string "It's not all about Condition.\p"
 	.string "At the end of the day, it's\n"
 	.string "really all luck.\p"
 	.string "Sometimes it's best to just\n"
@@ -1558,7 +1558,7 @@ MauvilleCity_GameCorner_Text_Derby_2:
 	
 MauvilleCity_GameCorner_Text_Fisherman:
 	.string "I come here for the food.\p"
-	.string "It's no CELADON CAFE…\n"
+	.string "It's no CELADON CAFE...\n"
 	.string "But it'll do.$"		
 	
 MauvilleCity_GameCorner_Text_Gachalady:
@@ -1592,14 +1592,14 @@ MauvilleCity_GameCorner_Text_Pachinko:
 	.string "It's 3 COINS per BALL.$"
 	
 MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
-	.string "Okay, you wanted some COINS for\n"
-	.string "the games?\p"
-	.string "But you don't have a COIN CASE for\n"
-	.string "stowing the COINS.$"
+	.string "Okay, you wanted some Coins to\n"
+	.string "play the games?\p"
+	.string "But you don't have a Coin Case for\n"
+	.string "stowing the Coins.$"
 
 MauvilleCity_GameCorner_Text_WereYouLookingForCoins:
-	.string "Were you looking for COINS?\p"
-	.string "It's ¥1000 for 50 COINS.\n"
+	.string "Were you looking for Coins?\p"
+	.string "It's ¥1000 for 50 Coins.\n"
 	.string "Would you like some?$"
 
 MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins:
@@ -1798,7 +1798,7 @@ MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 	.string "Maybe you should go all in!$"	
 
 MauvilleCity_GameCorner_Text_VFGuy1:
-	.string "You want to play VOLTORB FLIP?\p"
+	.string "You want to play Voltorb Flip?\p"
 	.string "You need to be on the other\n"
 	.string "side of the table.$"
 	
@@ -1835,11 +1835,11 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "You can't play if you don't have\n"
-	.string "a COIN CASE.$"
+	.string "a Coin Case.$"
 
 MauvilleCity_GameCorner_Text_CantBuyWithNoCoinCase:
 	.string "Huh? Looks like you need\n"
-	.string "a COIN CASE.$"
+	.string "a Coin Case.$"
 	
 MauvilleCity_GameCorner_Text_Juice:
 	.string "BERRY JUICE!\n"

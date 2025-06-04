@@ -1477,3 +1477,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DoroaTown_Houses/scripts.inc"
 
 	.include "data/maps/DoroaTown_GameCorner/scripts.inc"
+
+	.include "data/maps/PellucaCity_GameCorner/scripts.inc"
