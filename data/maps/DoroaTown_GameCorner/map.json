@@ -2,7 +2,7 @@
   "id": "MAP_DOROA_TOWN_GAME_CORNER",
   "name": "DoroaTown_GameCorner",
   "layout": "LAYOUT_DOROA_TOWN_GAME_CORNER",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_END",
   "region_map_section": "MAPSEC_ROUTE8",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

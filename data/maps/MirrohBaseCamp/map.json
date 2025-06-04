@@ -2,7 +2,7 @@
   "id": "MAP_MIRROH_BASE_CAMP",
   "name": "MirrohBaseCamp",
   "layout": "LAYOUT_MIRROH_BASE_CAMP",
-  "music": "MUS_FALLARBOR",
+  "music": "MUS_END",
   "region_map_section": "MAPSEC_MIRROH_BASE_CAMP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
