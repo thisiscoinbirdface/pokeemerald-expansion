@@ -1588,8 +1588,8 @@ MauvilleCity_GameCorner_Text_Bouncer2:
 	.string "Enjoy the GAME CORNER!$"	
 	
 MauvilleCity_GameCorner_Text_Pachinko:
-	.string "A DROPSPIN MACHINE!\n"
-	.string "It's 3 COINS per BALL.$"
+	.string "A Pachinko machine!\n"
+	.string "It's 3 Coins per ball.$"
 	
 MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
 	.string "Okay, you wanted some Coins to\n"
@@ -1599,12 +1599,12 @@ MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
 
 MauvilleCity_GameCorner_Text_WereYouLookingForCoins:
 	.string "Were you looking for Coins?\p"
-	.string "It's ¥1000 for 50 Coins.\n"
+	.string "It's 1000 for 50 Coins.\n"
 	.string "Would you like some?$"
 
 MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins:
 	.string "Thank you very much!\n"
-	.string "Here are your COINS!$"
+	.string "Here are your Coins!$"
 
 MauvilleCity_GameCorner_Text_DontHaveEnoughMoney:
 	.string "Um… You don't appear to have\n"
@@ -1612,15 +1612,15 @@ MauvilleCity_GameCorner_Text_DontHaveEnoughMoney:
 
 MauvilleCity_GameCorner_Text_CoinCaseIsFull:
 	.string "Oh?\n"
-	.string "Your COIN CASE is full.$"
+	.string "Your Coin Case is full.$"
 
 MauvilleCity_GameCorner_Text_DontNeedCoinsThen:
-	.string "Oh… You don't need COINS, then?\n"
+	.string "Oh...You don't need Coins, then?\n"
 	.string "Good luck on your adventure!$"
 
 MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes:
 	.string "Welcome.\p"
-	.string "You can exchange your COINS for\n"
+	.string "You can exchange your Coins for\n"
 	.string "prizes here.$"
 
 MauvilleCity_GameCorner_Text_WhichPrize:
@@ -1635,44 +1635,44 @@ MauvilleCity_GameCorner_Text_SoYourChoiceIsTheNewX:
 	.string "the {STR_VAR_1}?$"
 
 MauvilleCity_GameCorner_Text_BlackJack:
-	.string "It's a BLACKJACK TABLE!\n"
+	.string "It's a Blackjack Table!\n"
 	.string "Want to play?$"
 	
 MauvilleCity_GameCorner_Text_Derby:
-	.string "It's the MAUVILLE DERBY!\n"
+	.string "It's the Pelluca Derby!\n"
 	.string "Want to place a bet?$"	
 	
 MauvilleCity_GameCorner_Text_Snake:
 	.string "It's ONIX!\n"
-	.string "It costs 25 COINS to play.$"		
+	.string "It costs 25 Coins to play.$"		
 	
 MauvilleCity_GameCorner_Text_Bird:
 	.string "It's FLUTTERFREE!\n"
-	.string "It costs 25 COINS to play.$"		
+	.string "It costs 25 Coins to play.$"		
 	
 MauvilleCity_GameCorner_Text_Pinball_Meowth:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "It's a Pinball Machine!\n"
+	.string "It costs 25 Coins to play.$"
 
 MauvilleCity_GameCorner_Text_BS:
 	.string "It's BLOCK BUILDER!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "It costs 25 Coins to play.$"
 	
 MauvilleCity_GameCorner_Text_Pinball_Seel:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 25 COINS to play.$"
+	.string "It's a Pinball Machine!\n"
+	.string "It costs 25 Coins to play.$"
 	
 MauvilleCity_GameCorner_Text_Pinball_Diglett:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 50 COINS to play.$"
+	.string "It's a Pinball Machine!\n"
+	.string "It costs 50 Coins to play.$"
 	
 MauvilleCity_GameCorner_Text_Pinball_Gengar:
-	.string "It's a PINBALL MACHINE!\n"
-	.string "It costs 100 COINS to play.$"
+	.string "It's a Pinball Machine!\n"
+	.string "It costs 100 Coins to play.$"
 	
 MauvilleCity_GameCorner_Text_VF:
-	.string "It's VOLTORB FLIP!\n"
-	.string "It costs 50 COINS to play.$"
+	.string "It's Voltorb Flip!\n"
+	.string "It costs 50 Coins to play.$"
 
 VF_Come_Again_Text:
 	.string "Too bad.\n"
@@ -1683,34 +1683,34 @@ MauvilleCity_GameCorner_Text_SendToYourHomePC:
 	.string "We'll send it to your PC at home.$"
 
 MauvilleCity_GameCorner_Text_NotEnoughCoins:
-	.string "You don't have enough COINS.$"
+	.string "You don't have enough Coins.$"
 
 PB_YOU_WON_TEXT:
 	.string "You won\n"
-	.string "{STR_VAR_1} COINS!$"
+	.string "{STR_VAR_1} Coins!$"
 
 PB_Not_Enough:
-	.string "It's a PINBALL MACHINE!\p"
-	.string "You don't have enough COINS…$"
+	.string "It's a Pinball Machine!\p"
+	.string "You don't have enough Coins...$"
 	
 Snake_Not_Enough:
 	.string "It's ONIX!\p"
-	.string "You don't have enough COINS…$"	
+	.string "You don't have enough Coins...$"	
 	
 Bjuice_Not_Enough:
-	.string "You don't have enough COINS.$"	
+	.string "You don't have enough Coins.$"	
 	
 Bird_Not_Enough:
 	.string "It's FLUTTERFREE!\p"
-	.string "You don't have enough COINS…$"		
+	.string "You don't have enough Coins...$"		
 	
 BS_Not_Enough:
 	.string "It's BLOCK BUILDER!\p"
-	.string "You don't have enough COINS…$"	
+	.string "You don't have enough Coins...$"	
 
 Flip_Not_Enough:
-	.string "It's VOLTORB FLIP!\p"
-	.string "You don't have enough COINS…$"
+	.string "It's Voltorb Flip!\p"
+	.string "You don't have enough Coins...$"
 
 @ Unused
 MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
@@ -1718,12 +1718,12 @@ MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
 	.string "placing {STR_VAR_1}.$"
 	
 MauvilleCity_GameCorner_Text_VF_Keep_Going:
-	.string "You've made {STR_VAR_1} COINS.\n"
+	.string "You've made {STR_VAR_1} Coins.\n"
 	.string "Keep going?$"
 
 MauvilleCity_GameCorner_Text_OhIsThatSo:
 	.string "Oh, is that so? \n"
-	.string "You need to save some COINS before\l"
+	.string "You need to save some Coins before\l"
 	.string "coming back here.$"
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsX:

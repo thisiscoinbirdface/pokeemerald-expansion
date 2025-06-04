@@ -2012,13 +2012,13 @@ Common_EventScript_MintVendingMachine_Text_0:
 
 Common_EventScript_MintVendingMachine_Text_1:
 # 108 "data//maps/TempCopyMap/scripts.pory"
-	.string "You must have at least 200 to purchase\n"
+	.string "You must have at least $200 to purchase\n"
 	.string "any mints.$"
 
 Mart_Mints_NoBadges_Text_0:
 # 151 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 0\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_NoBadges_Text_1:
 # 153 "data//maps/TempCopyMap/scripts.pory"
@@ -2035,7 +2035,7 @@ Mart_Mints_NoBadges_Text_3:
 Mart_Mints_OneBadge_Text_0:
 # 160 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 1\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_OneBadge_Text_1:
 # 163 "data//maps/TempCopyMap/scripts.pory"
@@ -2052,7 +2052,7 @@ Mart_Mints_OneBadge_Text_3:
 Mart_Mints_TwoBadges_Text_0:
 # 171 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 2\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_TwoBadges_Text_1:
 # 175 "data//maps/TempCopyMap/scripts.pory"
@@ -2069,7 +2069,7 @@ Mart_Mints_TwoBadges_Text_3:
 Mart_Mints_ThreeBadges_Text_0:
 # 182 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 3\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_ThreeBadges_Text_1:
 # 186 "data//maps/TempCopyMap/scripts.pory"
@@ -2086,7 +2086,7 @@ Mart_Mints_ThreeBadges_Text_3:
 Mart_Mints_FourBadges_Text_0:
 # 194 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 4\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_FourBadges_Text_1:
 # 199 "data//maps/TempCopyMap/scripts.pory"
@@ -2103,7 +2103,7 @@ Mart_Mints_FourBadges_Text_3:
 Mart_Mints_FiveBadges_Text_0:
 # 207 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 5\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_FiveBadges_Text_1:
 # 213 "data//maps/TempCopyMap/scripts.pory"
@@ -2120,7 +2120,7 @@ Mart_Mints_FiveBadges_Text_3:
 Mart_Mints_SixBadges_Text_0:
 # 220 "data//maps/TempCopyMap/scripts.pory"
 	.string "TRAINER: {PLAYER}. BADGES: 6\n"
-	.string "All mints are 200.$"
+	.string "All mints are $200.$"
 
 Mart_Mints_SixBadges_Text_1:
 # 226 "data//maps/TempCopyMap/scripts.pory"

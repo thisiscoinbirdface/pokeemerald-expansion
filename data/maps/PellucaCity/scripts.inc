@@ -2487,8 +2487,9 @@ PellucaCity_MayorFight_Trigger_Text_13:
 	.string "the whole time?\p"
 	.string "...\p"
 	.string "I'm sorry you had to witness that.\n"
-	.string "Y-you know, the restaurant here is\l"
-	.string "famous! You should give it a try.$"
+	.string "Y-you know, we have a wonderful Game\l"
+	.string "Corner! And the Apple Pie at the Pelluca\l"
+	.string "Restaurant is to die for.$"
 
 PellucaCity_MayorFight_Trigger_Text_14:
 # 173 "data//maps/PellucaCity/scripts.pory"

@@ -90,10 +90,10 @@ script RivetshoreQuarry_NPC1{
     }
     lockall
     faceplayer
-    msgbox(format("I'm the shift manager at the quarry!\p...\pWhy am I not out there with my team?\pIt's too hot! Plus, I gotta get on the scoreboard in FlappyFree. It's so hard!\pWhat? You want my PocketBoy?"), MSGBOX_YESNO)
+    msgbox(format("I'm the shift manager at the quarry!\p...\pWhy am I not out there with my team?\pIt's too hot! Plus, I gotta get on the scoreboard in FlutterFree. It's so hard!\pWhat? You want my PocketBoy?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) {end}
 
-    msgbox(format("Alright kid, how about this?\pIf you can get even one point in FlappyFree, I'll let you have it!"))
+    msgbox(format("Alright kid, how about this?\pIf you can get even one point in FlutterFree, I'll let you have it!"))
 
     special(StartFlappyBird)
     waitstate

@@ -678,14 +678,14 @@ RivetshoreQuarry_NPC1_Text_1:
 	.string "...\p"
 	.string "Why am I not out there with my team?\p"
 	.string "It's too hot! Plus, I gotta get on the\n"
-	.string "scoreboard in FlappyFree. It's so hard!\p"
+	.string "scoreboard in FlutterFree. It's so hard!\p"
 	.string "What? You want my PocketBoy?$"
 
 RivetshoreQuarry_NPC1_Text_2:
 # 96 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "Alright kid, how about this?\p"
 	.string "If you can get even one point in\n"
-	.string "FlappyFree, I'll let you have it!$"
+	.string "FlutterFree, I'll let you have it!$"
 
 RivetshoreQuarry_NPC1_Text_3:
 # 102 "data//maps/RivetshoreQuarry/scripts.pory"

@@ -105,7 +105,7 @@ script Common_EventScript_MintVendingMachine{
 
     checkmoney(200)
     if (var(VAR_RESULT) == 0){
-        msgbox(format("You must have at least 200 to purchase any mints."))
+        msgbox(format("You must have at least $200 to purchase any mints."))
         release
         end
     }
@@ -148,7 +148,7 @@ script MintVendingMachine_CheckBadge{
 // lonely addy brave naughty bold -> increase attack
 script Mart_Mints_NoBadges{ 
     showmoneybox(18, 0)       
-    message(format("TRAINER: {PLAYER}. BADGES: 0\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 0\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Impish Mint", "Calm Mint", "Relaxed Mint")
     copyvar(VAR_TEMP_3, VAR_RESULT)
@@ -157,7 +157,7 @@ script Mart_Mints_NoBadges{
 }
 script Mart_Mints_OneBadge{
     showmoneybox(18, 0)       
-    message(format("TRAINER: {PLAYER}. BADGES: 1\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 1\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
@@ -168,7 +168,7 @@ script Mart_Mints_OneBadge{
 }
 script Mart_Mints_TwoBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 2\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 2\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
@@ -179,7 +179,7 @@ script Mart_Mints_TwoBadges{
 }
 script Mart_Mints_ThreeBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 3\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 3\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
@@ -191,7 +191,7 @@ script Mart_Mints_ThreeBadges{
 }
 script Mart_Mints_FourBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 4\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 4\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
@@ -204,7 +204,7 @@ script Mart_Mints_FourBadges{
 }
 script Mart_Mints_FiveBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 5\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 5\nAll mints are $200."))
     waitmessage    
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
@@ -217,7 +217,7 @@ script Mart_Mints_FiveBadges{
 }
 script Mart_Mints_SixBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 6\nAll mints are 200."))
+    message(format("TRAINER: {PLAYER}. BADGES: 6\nAll mints are $200."))
     waitmessage
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",

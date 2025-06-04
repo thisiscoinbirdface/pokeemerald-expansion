@@ -220,7 +220,7 @@ RivetshoreCity_Houses_NPC6_Text_3:
 	.string "It's a PocketBoy! You really got it! It\n"
 	.string "looks so cool! What games does it have?\p"
 	.string "...\p"
-	.string "FLAPPYFREE!?!\p"
+	.string "FLUTTERFREE!?!\p"
 	.string "That's the best one!\p"
 	.string "Thank you so much! Um...we don't really\n"
 	.string "have any money, but do you want one of\l"
