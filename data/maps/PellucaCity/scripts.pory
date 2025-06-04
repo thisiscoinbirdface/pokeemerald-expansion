@@ -162,7 +162,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("Oh - a tourist! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, the restaurant here is famous! You should give it a try."))
+    msgbox(format("Oh - a tourist! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, we have a wonderful Game Corner! And the Apple Pie at the Pelluca Restaurant is to die for."))
     release
     delay(16)
 

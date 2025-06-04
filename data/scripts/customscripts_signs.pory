@@ -297,6 +297,12 @@ script WhiteSign_PellucaCity_Restaurant{
     end
 }
 
+script WhiteSign_PellucaCity_GameCorner{
+
+    msgbox(format("Pelluca Game Corner\nFeeling lucky tonight?"), MSGBOX_SIGN)
+    end
+}
+
 script WhiteSign_PellucaCity_Fishery{
     msgbox(format("Pelluca Fishery\nFishing supplies and tours!"), MSGBOX_SIGN)
     end
