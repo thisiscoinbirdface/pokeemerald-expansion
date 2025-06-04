@@ -264,7 +264,7 @@ script GastreeCity_Shard_Trigger{
     delay(8)
     giveitem(ITEM_ARCHAEOLENS)   
 
-    msgbox(format("This is an Archaelens. It scans and records ancient historical artifacts.\pNow that this statue is destroyed, there are ten statues left. \pScan all the statues around Cormoria and come back to me.\pA task of vital importance!\nI won't take no for an answer!"))
+    msgbox(format("This is an Archaeolens. It scans and records ancient historical artifacts.\pNow that this statue is destroyed, there are ten statues left. \pScan all the statues around Cormoria and come back to me.\pA task of vital importance!\nI won't take no for an answer!"))
     release
 
     setflag(FLAG_SHRINE_QUEST)

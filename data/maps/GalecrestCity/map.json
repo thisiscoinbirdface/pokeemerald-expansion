@@ -849,6 +849,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WhiteSign_Galecrest_Gym"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 46,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WhiteSign_GalecrestCity_GameCorner"
     }
   ]
 }

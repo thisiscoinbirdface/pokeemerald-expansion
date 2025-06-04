@@ -94,6 +94,20 @@
       "elevation": 0,
       "dest_map": "MAP_DOROA_TOWN_GAME_CORNER",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE7",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE7",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

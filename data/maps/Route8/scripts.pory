@@ -5,7 +5,7 @@ mapscripts Route8_MapScripts{}
 script Route8_Casino_Board{
     msgbox(format("Board the S.S. Casino?"), MSGBOX_YESNO)
 
-    if (var(VAR_RESULT == 0)) {releaseall end}
+    if (var(VAR_RESULT) == 0) {releaseall end}
 
     releaseall
     end

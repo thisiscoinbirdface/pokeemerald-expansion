@@ -166,278 +166,284 @@ WhiteSign_GalecrestCity_Garden::
 	end
 
 
+WhiteSign_GalecrestCity_GameCorner::
+# 179 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_GalecrestCity_GameCorner_Text_0, MSGBOX_SIGN
+	end
+
+
 WhiteSign_GalecrestCity_DetectiveAcademy::
-# 178 "data//scripts/customscripts_signs.pory"
+# 184 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_GalecrestCity_DetectiveAcademy_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Galecrest_Gym::
-# 183 "data//scripts/customscripts_signs.pory"
+# 189 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Galecrest_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route5_ToGalecrest::
-# 188 "data//scripts/customscripts_signs.pory"
+# 194 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route5_ToGalecrest_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route5_ToSilversun::
-# 193 "data//scripts/customscripts_signs.pory"
+# 199 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route5_ToSilversun_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route5_Vilethorn::
-# 198 "data//scripts/customscripts_signs.pory"
+# 204 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route5_Vilethorn_Text_0, MSGBOX_SIGN
 	end
 
 
 WoodSign_SilversunCity_Artist1::
-# 205 "data//scripts/customscripts_signs.pory"
+# 211 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist1_Text_0, MSGBOX_SIGN
 	end
 
 
 WoodSign_SilversunCity_Artist2::
-# 210 "data//scripts/customscripts_signs.pory"
+# 216 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist2_Text_0, MSGBOX_SIGN
 	end
 
 
 WoodSign_SilversunCity_Artist3::
-# 215 "data//scripts/customscripts_signs.pory"
+# 221 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_SilversunCity_Artist3_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Main::
-# 220 "data//scripts/customscripts_signs.pory"
+# 226 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Theater::
-# 225 "data//scripts/customscripts_signs.pory"
+# 231 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Theater_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Orphanage::
-# 230 "data//scripts/customscripts_signs.pory"
+# 236 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Orphanage_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Sewers::
-# 235 "data//scripts/customscripts_signs.pory"
+# 241 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Sewers_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_DrifblimTravels::
-# 240 "data//scripts/customscripts_signs.pory"
+# 246 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_DrifblimTravels_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_SilversunCity_Gym::
-# 245 "data//scripts/customscripts_signs.pory"
+# 251 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_SilversunCity_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverNorth::
-# 252 "data//scripts/customscripts_signs.pory"
+# 258 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverNorth_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_HoyaRiverSouth::
-# 257 "data//scripts/customscripts_signs.pory"
+# 263 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_HoyaRiverSouth_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route6_ToSilversun::
-# 262 "data//scripts/customscripts_signs.pory"
+# 268 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route6_ToSilversun_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route6_ToPelluca::
-# 267 "data//scripts/customscripts_signs.pory"
+# 273 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route6_ToPelluca_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route6_RangerInstitute::
-# 272 "data//scripts/customscripts_signs.pory"
+# 278 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route6_RangerInstitute_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_Main::
-# 280 "data//scripts/customscripts_signs.pory"
+# 286 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_MayorHouse::
-# 285 "data//scripts/customscripts_signs.pory"
+# 291 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_MayorHouse_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_Restaurant::
-# 290 "data//scripts/customscripts_signs.pory"
+# 296 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Restaurant_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_Fishery::
-# 295 "data//scripts/customscripts_signs.pory"
+# 301 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_Fishery_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_PellucaCity_ToCableCar::
-# 300 "data//scripts/customscripts_signs.pory"
+# 306 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_PellucaCity_ToCableCar_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_CableCar_ToMirroh::
-# 306 "data//scripts/customscripts_signs.pory"
+# 312 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_CableCar_ToMirroh_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_CableCar_ToPelluca::
-# 310 "data//scripts/customscripts_signs.pory"
+# 316 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_CableCar_ToPelluca_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohBaseCamp_Gym::
-# 316 "data//scripts/customscripts_signs.pory"
+# 322 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Gym_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohBaseCamp_Main::
-# 321 "data//scripts/customscripts_signs.pory"
+# 327 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohBaseCamp_Martha::
-# 326 "data//scripts/customscripts_signs.pory"
+# 332 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohBaseCamp_Martha_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_ToBaseCamp::
-# 333 "data//scripts/customscripts_signs.pory"
+# 339 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_ToBaseCamp_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_ToMtMirroh::
-# 337 "data//scripts/customscripts_signs.pory"
+# 343 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_ToMtMirroh_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Route8_Dojo::
-# 341 "data//scripts/customscripts_signs.pory"
+# 347 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Route8_Dojo_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohPeak_ToMirrohInt::
-# 349 "data//scripts/customscripts_signs.pory"
+# 355 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohPeak_ToMirrohInt_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_MirrohPeak_ToWinterlilyHollow::
-# 353 "data//scripts/customscripts_signs.pory"
+# 359 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_IvyRiver_RangerInstitute::
-# 365 "data//scripts/customscripts_signs.pory"
+# 371 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_IvyRiver_RangerInstitute_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_IvyRiver_Main::
-# 370 "data//scripts/customscripts_signs.pory"
+# 376 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_IvyRiver_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Main::
-# 378 "data//scripts/customscripts_signs.pory"
+# 384 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Construction::
-# 382 "data//scripts/customscripts_signs.pory"
+# 388 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Construction_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Quarry::
-# 386 "data//scripts/customscripts_signs.pory"
+# 392 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Quarry_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Storage::
-# 390 "data//scripts/customscripts_signs.pory"
+# 396 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Storage_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Harbor::
-# 394 "data//scripts/customscripts_signs.pory"
+# 400 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Harbor_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_Rivetshore_Ranger::
-# 398 "data//scripts/customscripts_signs.pory"
+# 404 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_Rivetshore_Ranger_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Main::
-# 409 "data//scripts/customscripts_signs.pory"
+# 415 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Hotel::
-# 413 "data//scripts/customscripts_signs.pory"
+# 419 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Hotel_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Mart::
-# 417 "data//scripts/customscripts_signs.pory"
+# 423 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Mart_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Venue::
-# 421 "data//scripts/customscripts_signs.pory"
+# 427 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Venue_Text_0, MSGBOX_SIGN
 	end
 
@@ -596,236 +602,241 @@ WhiteSign_GalecrestCity_Garden_Text_0:
 	.string "Galecrest Garden\n"
 	.string "Please don't disturb the ROTOMS.$"
 
+WhiteSign_GalecrestCity_GameCorner_Text_0:
+# 179 "data//scripts/customscripts_signs.pory"
+	.string "Galecrest Game Corner\n"
+	.string "Minors are not allowed!$"
+
 WhiteSign_GalecrestCity_DetectiveAcademy_Text_0:
-# 178 "data//scripts/customscripts_signs.pory"
+# 184 "data//scripts/customscripts_signs.pory"
 	.string "Detective Academy\n"
 	.string "Where sharp minds are forged.$"
 
 WhiteSign_Galecrest_Gym_Text_0:
-# 183 "data//scripts/customscripts_signs.pory"
+# 189 "data//scripts/customscripts_signs.pory"
 	.string "Galecrest Gym\p"
 	.string "Managed by the Galecrest Academy\n"
 	.string "Student Council.$"
 
 WhiteSign_Route5_ToGalecrest_Text_0:
-# 188 "data//scripts/customscripts_signs.pory"
+# 194 "data//scripts/customscripts_signs.pory"
 	.string "Route 5\p"
 	.string "{RIGHT_ARROW} Galecrest City.\n"
 	.string "{LEFT_ARROW} Silversun City.$"
 
 WhiteSign_Route5_ToSilversun_Text_0:
-# 193 "data//scripts/customscripts_signs.pory"
+# 199 "data//scripts/customscripts_signs.pory"
 	.string "Route 5\p"
 	.string "{LEFT_ARROW} Silversun City.\n"
 	.string "{RIGHT_ARROW} Galecrest City.$"
 
 WhiteSign_Route5_Vilethorn_Text_0:
-# 198 "data//scripts/customscripts_signs.pory"
+# 204 "data//scripts/customscripts_signs.pory"
 	.string "{UP_ARROW}Vilethorn Woods\n"
 	.string "Travelers beware!$"
 
 WoodSign_SilversunCity_Artist1_Text_0:
-# 205 "data//scripts/customscripts_signs.pory"
+# 211 "data//scripts/customscripts_signs.pory"
 	.string "You are NOT to disturb the great\n"
 	.string "Arsalan!$"
 
 WoodSign_SilversunCity_Artist2_Text_0:
-# 210 "data//scripts/customscripts_signs.pory"
+# 216 "data//scripts/customscripts_signs.pory"
 	.string "Philistines keep OUT!$"
 
 WoodSign_SilversunCity_Artist3_Text_0:
-# 215 "data//scripts/customscripts_signs.pory"
+# 221 "data//scripts/customscripts_signs.pory"
 	.string "Deliveries by the door please.$"
 
 WhiteSign_SilversunCity_Main_Text_0:
-# 220 "data//scripts/customscripts_signs.pory"
+# 226 "data//scripts/customscripts_signs.pory"
 	.string "Silversun City\n"
 	.string "The metropolis of the north.$"
 
 WhiteSign_SilversunCity_Theater_Text_0:
-# 225 "data//scripts/customscripts_signs.pory"
+# 231 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Theatre\n"
 	.string "Prepare to be enthralled!\p"
 	.string "Bookings close a day prior.\n"
 	.string "No food and drinks allowed!$"
 
 WhiteSign_SilversunCity_Orphanage_Text_0:
-# 230 "data//scripts/customscripts_signs.pory"
+# 236 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Blind Orphanage\n"
 	.string "Love can be seen by all.$"
 
 WhiteSign_SilversunCity_Sewers_Text_0:
-# 235 "data//scripts/customscripts_signs.pory"
+# 241 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Sewers\n"
 	.string "Entry for authorised personnel only.$"
 
 WhiteSign_SilversunCity_DrifblimTravels_Text_0:
-# 240 "data//scripts/customscripts_signs.pory"
+# 246 "data//scripts/customscripts_signs.pory"
 	.string "Drifblim Travels Pvt. Ltd.\n"
 	.string "Affordable intercity rides!$"
 
 WhiteSign_SilversunCity_Gym_Text_0:
-# 245 "data//scripts/customscripts_signs.pory"
+# 251 "data//scripts/customscripts_signs.pory"
 	.string "Silversun Gym\n"
 	.string "Leader: Gloria.$"
 
 WhiteSign_HoyaRiverNorth_Text_0:
-# 252 "data//scripts/customscripts_signs.pory"
+# 258 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River North Crossin\n"
 	.string "No swimming in these waters!\p"
 	.string "{RIGHT_ARROW} Silversun City.\n"
 	.string "{DOWN_ARROW} Route 6.$"
 
 WhiteSign_HoyaRiverSouth_Text_0:
-# 257 "data//scripts/customscripts_signs.pory"
+# 263 "data//scripts/customscripts_signs.pory"
 	.string "Hoya River South Crossing\n"
 	.string "No swimming in these waters!\p"
 	.string "{LEFT_ARROW} Pelluca City.\n"
 	.string "{RIGHT_ARROW} Route 6.$"
 
 WhiteSign_Route6_ToSilversun_Text_0:
-# 262 "data//scripts/customscripts_signs.pory"
+# 268 "data//scripts/customscripts_signs.pory"
 	.string "Route 6\n"
 	.string "Beware the marshes!\p"
 	.string "{UP_ARROW} Silversun City.\n"
 	.string "{DOWN_ARROW} Pelluca City.$"
 
 WhiteSign_Route6_ToPelluca_Text_0:
-# 267 "data//scripts/customscripts_signs.pory"
+# 273 "data//scripts/customscripts_signs.pory"
 	.string "Route 6\n"
 	.string "Beware the marshes!\p"
 	.string "{LEFT_ARROW} Pelluca City.\n"
 	.string "{RIGHT_ARROW} Silversun City.$"
 
 WhiteSign_Route6_RangerInstitute_Text_0:
-# 272 "data//scripts/customscripts_signs.pory"
+# 278 "data//scripts/customscripts_signs.pory"
 	.string "The Pokémon Ranger Institute\n"
 	.string "Route 6 Branch$"
 
 WhiteSign_PellucaCity_Main_Text_0:
-# 280 "data//scripts/customscripts_signs.pory"
+# 286 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca City\n"
 	.string "Where rivers meet.$"
 
 WhiteSign_PellucaCity_MayorHouse_Text_0:
-# 285 "data//scripts/customscripts_signs.pory"
+# 291 "data//scripts/customscripts_signs.pory"
 	.string "Mayor's House$"
 
 WhiteSign_PellucaCity_Restaurant_Text_0:
-# 290 "data//scripts/customscripts_signs.pory"
+# 296 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca Restauant\n"
 	.string "Don't skip our apple tarts!$"
 
 WhiteSign_PellucaCity_Fishery_Text_0:
-# 295 "data//scripts/customscripts_signs.pory"
+# 301 "data//scripts/customscripts_signs.pory"
 	.string "Pelluca Fishery\n"
 	.string "Fishing supplies and tours!$"
 
 WhiteSign_PellucaCity_ToCableCar_Text_0:
-# 300 "data//scripts/customscripts_signs.pory"
+# 306 "data//scripts/customscripts_signs.pory"
 	.string "{LEFT_ARROW} Mirroh Base Camp\n"
 	.string "Please wear warm clothing!$"
 
 WhiteSign_CableCar_ToMirroh_Text_0:
-# 306 "data//scripts/customscripts_signs.pory"
+# 312 "data//scripts/customscripts_signs.pory"
 	.string "Cable Car to Mirroh Base Camp$"
 
 WhiteSign_CableCar_ToPelluca_Text_0:
-# 310 "data//scripts/customscripts_signs.pory"
+# 316 "data//scripts/customscripts_signs.pory"
 	.string "Cable Car to Pelluca City$"
 
 WhiteSign_MirrohBaseCamp_Gym_Text_0:
-# 316 "data//scripts/customscripts_signs.pory"
+# 322 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Base Camp Gym\n"
 	.string "NOW DECOMISSIONED.$"
 
 WhiteSign_MirrohBaseCamp_Main_Text_0:
-# 321 "data//scripts/customscripts_signs.pory"
+# 327 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Base Camp\n"
 	.string "NOW DECOMISSIONED.$"
 
 WhiteSign_MirrohBaseCamp_Martha_Text_0:
-# 326 "data//scripts/customscripts_signs.pory"
+# 332 "data//scripts/customscripts_signs.pory"
 	.string "Graveyard Management\n"
 	.string "Caretaker: Martha$"
 
 WhiteSign_Route8_ToBaseCamp_Text_0:
-# 333 "data//scripts/customscripts_signs.pory"
+# 339 "data//scripts/customscripts_signs.pory"
 	.string "Mt. Mirroh\p"
 	.string "{DOWN_ARROW} Mirroh Base Camp.\n"
 	.string "{UP_ARROW} Mirroh Caverns.$"
 
 WhiteSign_Route8_ToMtMirroh_Text_0:
-# 337 "data//scripts/customscripts_signs.pory"
+# 343 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Caverns\p"
 	.string "{UP_ARROW} Winterlily Hollow.\n"
 	.string "{DOWN_ARROW} Mirroh Base Camp.$"
 
 WhiteSign_Route8_Dojo_Text_0:
-# 341 "data//scripts/customscripts_signs.pory"
+# 347 "data//scripts/customscripts_signs.pory"
 	.string "Garden Shop\n"
 	.string "For all your gardening needs!$"
 
 WhiteSign_MirrohPeak_ToMirrohInt_Text_0:
-# 349 "data//scripts/customscripts_signs.pory"
+# 355 "data//scripts/customscripts_signs.pory"
 	.string "Mt. Mirroh Caverns\p"
 	.string "{LEFT_ARROW} Winterlily Hollow.$"
 
 WhiteSign_MirrohPeak_ToWinterlilyHollow_Text_0:
-# 353 "data//scripts/customscripts_signs.pory"
+# 359 "data//scripts/customscripts_signs.pory"
 	.string "{UP_ARROW} Winterlily Hollow.{LEFT_ARROW} Mt. Mirroh Peak.$"
 
 WhiteSign_IvyRiver_RangerInstitute_Text_0:
-# 365 "data//scripts/customscripts_signs.pory"
+# 371 "data//scripts/customscripts_signs.pory"
 	.string "The Pokémon Ranger Institute\n"
 	.string "Ivy River Branch$"
 
 WhiteSign_IvyRiver_Main_Text_0:
-# 370 "data//scripts/customscripts_signs.pory"
+# 376 "data//scripts/customscripts_signs.pory"
 	.string "Ivy River\n"
 	.string "{UP_ARROW} Winterlily Hollow.{DOWN_ARROW} Pelluca City.$"
 
 WhiteSign_Rivetshore_Main_Text_0:
-# 378 "data//scripts/customscripts_signs.pory"
+# 384 "data//scripts/customscripts_signs.pory"
 	.string "Rivetshore City$"
 
 WhiteSign_Rivetshore_Construction_Text_0:
-# 382 "data//scripts/customscripts_signs.pory"
+# 388 "data//scripts/customscripts_signs.pory"
 	.string "Rivetshore Construction\n"
 	.string "A legacy of strong foundations$"
 
 WhiteSign_Rivetshore_Quarry_Text_0:
-# 386 "data//scripts/customscripts_signs.pory"
+# 392 "data//scripts/customscripts_signs.pory"
 	.string "Rivetshore Quarry$"
 
 WhiteSign_Rivetshore_Storage_Text_0:
-# 390 "data//scripts/customscripts_signs.pory"
+# 396 "data//scripts/customscripts_signs.pory"
 	.string "Storage Bay\n"
 	.string "No tresspassers allowed!$"
 
 WhiteSign_Rivetshore_Harbor_Text_0:
-# 394 "data//scripts/customscripts_signs.pory"
+# 400 "data//scripts/customscripts_signs.pory"
 	.string "Rivetshore Harbor\n"
 	.string "The biggest harbor in Cormoria!$"
 
 WhiteSign_Rivetshore_Ranger_Text_0:
-# 398 "data//scripts/customscripts_signs.pory"
+# 404 "data//scripts/customscripts_signs.pory"
 	.string "The Pokémon Ranger Institute\n"
 	.string "Rivetshore City Branch$"
 
 WhiteSign_VictoryCape_Main_Text_0:
-# 409 "data//scripts/customscripts_signs.pory"
+# 415 "data//scripts/customscripts_signs.pory"
 	.string "Victory Cape\n"
 	.string "The Cormoria Pokémon Championship$"
 
 WhiteSign_VictoryCape_Hotel_Text_0:
-# 413 "data//scripts/customscripts_signs.pory"
+# 419 "data//scripts/customscripts_signs.pory"
 	.string "The Victory Cape Hotel$"
 
 WhiteSign_VictoryCape_Mart_Text_0:
-# 417 "data//scripts/customscripts_signs.pory"
+# 423 "data//scripts/customscripts_signs.pory"
 	.string "Victory Cape Dept. Store$"
 
 WhiteSign_VictoryCape_Venue_Text_0:
-# 421 "data//scripts/customscripts_signs.pory"
+# 427 "data//scripts/customscripts_signs.pory"
 	.string "Championship Stadium$"

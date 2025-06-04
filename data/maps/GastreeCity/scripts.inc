@@ -1193,7 +1193,7 @@ GastreeCity_Shard_Trigger_Text_11:
 
 GastreeCity_Shard_Trigger_Text_12:
 # 267 "data//maps/GastreeCity/scripts.pory"
-	.string "This is an Archaelens. It scans and\n"
+	.string "This is an Archaeolens. It scans and\n"
 	.string "records ancient historical artifacts.\p"
 	.string "Now that this statue is destroyed,\n"
 	.string "there are ten statues left.\p"

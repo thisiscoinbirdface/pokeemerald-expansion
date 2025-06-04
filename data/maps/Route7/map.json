@@ -66,6 +66,20 @@
       "elevation": 0,
       "dest_map": "MAP_PELLUCA_CABLE_CAR_STATION",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_DOROA_TOWN",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_DOROA_TOWN",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
