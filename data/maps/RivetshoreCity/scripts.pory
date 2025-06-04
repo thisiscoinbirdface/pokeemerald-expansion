@@ -290,7 +290,7 @@ script RivetshoreCity_NPC_6{
 }
 //man harbor
 script RivetshoreCity_NPC_7{
-    msgbox(format("What a day for a walk at the harbor!"), MSGBOX_NPC)
+    msgbox(format("Today's a great day to walk at the harbor, but yesterday was so hot!"), MSGBOX_NPC)
     end
 }
 //old woman harbor
@@ -340,7 +340,8 @@ script RivetshoreCity_Market_Shop_2{
 script RivetshoreCity_Market_Shop_Secret{
     lock
 	faceplayer
-	message(gText_HowMayIServeYou)
+    speakername("Greta")
+	message(format("Hello {PLAYER}! Surprised?\nI'm done traveling. I think a storefront is better for business. But I couldn't get a spot at the market!\pWhat'll you buy today?"))
 	waitmessage
 	pokemart(RivetshoreCity_Mart_Secret)
 	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)

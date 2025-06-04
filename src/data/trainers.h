@@ -20626,7 +20626,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9960
-            .species = SPECIES_CERULEDGE,
+            .species = SPECIES_ARMAROUGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9960
             .heldItem = ITEM_SHELL_BELL,
@@ -20765,7 +20765,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10017
-            .species = SPECIES_CERULEDGE,
+            .species = SPECIES_ARMAROUGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10017
             .heldItem = ITEM_SHELL_BELL,

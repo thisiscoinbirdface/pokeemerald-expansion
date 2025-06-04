@@ -15,7 +15,14 @@ script RivetshoreCity_PokemonCenter_EventScript_Nurse{
 }
 
 script RivetshoreCity_PokemonCenter_NPC1{
-	msgbox(format("I once ran across a strange old lady. She tried to sell me all these rare items! I could never find her again..."), MSGBOX_NPC)
+	msgbox(format("I once met a strange lady here. She tried to sell me all these rare items! I could never find her again..."), MSGBOX_NPC)
 	end
 }
+
+
+script RivetshoreCity_PokemonCenter_NPC2{
+	msgbox(format("We had a heatwave yesterday.\nIt's not natural, I tell you!"), MSGBOX_NPC)
+	end
+}
+
 

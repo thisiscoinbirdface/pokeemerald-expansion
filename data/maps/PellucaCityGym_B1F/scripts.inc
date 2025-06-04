@@ -282,17 +282,21 @@ PellucaGym_Leader::
 # 257 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox_delay PellucaGym_Leader_Text_1, PellucaGym_Leader_Text_6
 # 258 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	giveitem ITEM_RARE_SHARD
+	giveitem ITEM_HM07
 # 259 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox_delay PellucaGym_Leader_Text_1, PellucaGym_Leader_Text_7
+# 260 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	giveitem ITEM_RARE_SHARD
+# 261 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	delay 16
-# 262 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	speakername PellucaGym_Leader_Text_1
-# 263 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	msgbox PellucaGym_Leader_Text_7
 # 264 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	speakername PellucaGym_Leader_Text_1
+# 265 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	msgbox PellucaGym_Leader_Text_8
+# 266 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
 PellucaGym_Leader_1:
-# 267 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 269 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	releaseall
 	return
 
@@ -513,14 +517,18 @@ PellucaGym_Leader_Text_5:
 
 PellucaGym_Leader_Text_6:
 # 257 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "The River Badge lets you use the HM Flip\n"
-	.string "Turn out of battle. With it, you can surf\l"
-	.string "across strong currents like the ones in\l"
-	.string "this gym.\p"
-	.string "And I must also give you this.$"
+	.string "Take this too.$"
 
 PellucaGym_Leader_Text_7:
-# 263 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 259 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "With it, you can surf across strong\n"
+	.string "currents like the ones in this gym.\p"
+	.string "Lastly, I must give you this.$"
+
+PellucaGym_Leader_Text_8:
+# 265 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	.string "The road to the Pokémon Championship\n"
+	.string "is hard, but you're nearly there.\p"
 	.string "The eighth and last Gym Badge is given\n"
 	.string "by Raazi of Rivetshore City.\p"
 	.string "Head south from here down the river.\p"

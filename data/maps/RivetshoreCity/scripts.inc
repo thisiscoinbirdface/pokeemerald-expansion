@@ -447,56 +447,58 @@ RivetshoreCity_Market_Shop_Secret::
 # 342 "data//maps/RivetshoreCity/scripts.pory"
 	faceplayer
 # 343 "data//maps/RivetshoreCity/scripts.pory"
-	message gText_HowMayIServeYou
+	speakername RivetshoreCity_Market_Shop_Secret_Text_0
 # 344 "data//maps/RivetshoreCity/scripts.pory"
-	waitmessage
+	message RivetshoreCity_Market_Shop_Secret_Text_1
 # 345 "data//maps/RivetshoreCity/scripts.pory"
-	pokemart RivetshoreCity_Mart_Secret
+	waitmessage
 # 346 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	pokemart RivetshoreCity_Mart_Secret
 # 347 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 348 "data//maps/RivetshoreCity/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 351 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_1:
 # 352 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_HYPER_POTION
+RivetshoreCity_Mart_1:
 # 353 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_HYPER_POTION
 # 354 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_REVIVE
 # 355 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 356 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_NONE
 
 	.align 2
-# 358 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_2:
 # 359 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM04
+RivetshoreCity_Mart_2:
 # 360 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM15
+	.2byte ITEM_TM04
 # 361 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM24
+	.2byte ITEM_TM15
 # 362 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM30
+	.2byte ITEM_TM24
 # 363 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM35
+	.2byte ITEM_TM30
 # 364 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TM35
+# 365 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TM38
 	.2byte ITEM_NONE
 
 	.align 2
-# 367 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 368 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 369 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_GALARICA_CUFF
 # 370 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_GALARICA_WREATH
+# 371 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 
@@ -1041,7 +1043,8 @@ RivetshoreCity_NPC_6_Text_0:
 
 RivetshoreCity_NPC_7_Text_0:
 # 293 "data//maps/RivetshoreCity/scripts.pory"
-	.string "What a day for a walk at the harbor!$"
+	.string "Today's a great day to walk at the\n"
+	.string "harbor, but yesterday was so hot!$"
 
 RivetshoreCity_NPC_8_Text_0:
 # 298 "data//maps/RivetshoreCity/scripts.pory"
@@ -1054,3 +1057,15 @@ RivetshoreCity_NPC_9_Text_0:
 	.string "...\p"
 	.string "Fine. My boat drifted away so I'm\n"
 	.string "waiting to get picked up.$"
+
+RivetshoreCity_Market_Shop_Secret_Text_0:
+# 343 "data//maps/RivetshoreCity/scripts.pory"
+	.string "Greta$"
+
+RivetshoreCity_Market_Shop_Secret_Text_1:
+# 344 "data//maps/RivetshoreCity/scripts.pory"
+	.string "Hello {PLAYER}! Surprised?\n"
+	.string "I'm done traveling. I think a storefront\l"
+	.string "is better for business. But I couldn't\l"
+	.string "get a spot at the market!\p"
+	.string "What'll you buy today?$"

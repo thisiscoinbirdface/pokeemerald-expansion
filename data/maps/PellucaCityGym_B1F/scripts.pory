@@ -254,13 +254,15 @@ script PellucaGym_Leader {
         setflag(FLAG_SYS_WHIRLPOOL_ENABLED)
         
         //Describe the badge features (use HMs, allow pokemon control etc.)
-        msgbox_delay("Jania", format("The River Badge lets you use the HM Flip Turn out of battle. With it, you can surf across strong currents like the ones in this gym.\pAnd I must also give you this."))
+        msgbox_delay("Jania", format("Take this too."))
+        giveitem(ITEM_HM07)
+        msgbox_delay("Jania", format("With it, you can surf across strong currents like the ones in this gym.\pLastly, I must give you this."))
         giveitem(ITEM_RARE_SHARD)
         delay(16)
         
         //Bye-bye
         speakername("Jania") 
-        msgbox(format("The eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))
+        msgbox(format("The road to the Pokémon Championship is hard, but you're nearly there.\pThe eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))
         release
 
     }

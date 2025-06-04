@@ -30,8 +30,19 @@ RivetshoreCity_PokemonCenter_NPC1::
 	end
 
 
+RivetshoreCity_PokemonCenter_NPC2::
+# 24 "data//maps/RivetshoreCity_PokemonCenter/scripts.pory"
+	msgbox RivetshoreCity_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
 RivetshoreCity_PokemonCenter_NPC1_Text_0:
 # 18 "data//maps/RivetshoreCity_PokemonCenter/scripts.pory"
-	.string "I once ran across a strange old lady.\n"
-	.string "She tried to sell me all these rare\l"
-	.string "items! I could never find her again...$"
+	.string "I once met a strange lady here. She\n"
+	.string "tried to sell me all these rare items! I\l"
+	.string "could never find her again...$"
+
+RivetshoreCity_PokemonCenter_NPC2_Text_0:
+# 24 "data//maps/RivetshoreCity_PokemonCenter/scripts.pory"
+	.string "We had a heatwave yesterday.\n"
+	.string "It's not natural, I tell you!$"
