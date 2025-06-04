@@ -118,6 +118,37 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
 	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
+
+    //nuzkit
+    if (!flag(FLAG_SYS_CHEATS_ENABLED)){
+
+        speakername("Mom")     
+        message(format("My baby is going on an adventure!\nDo you want a care package from Mom?"))
+        waitmessage
+        dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+            "Yes please!", "No Mom...")    
+        release
+        
+        if (var(VAR_RESULT) == 0){
+            speakername("Mom")     
+            msgbox(format("Here you go!"))    
+            speakername(NULL)
+
+            giveitem(ITEM_NUZKIT)       
+            setflag(FLAG_SYS_CHEATS_ENABLED)
+
+            delay(8)
+
+            msgbox(format("Mom's Nuzkit contains a variety of tools to help you in your journey.\lTalk to your follower to use it!"), MSGBOX_POKENAV)
+            release
+        } else {
+            speakername("Mom")     
+            msgbox(format("Fine, fine...I know you can handle yourself."))            
+        }
+
+    }
+
+    delay(8)
     speakername("Mom")     
 	msgbox(format("Take care, {PLAYER}!"))
     release

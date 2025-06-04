@@ -12179,7 +12179,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A bicycle used by\n"
-            "Pokemon Rangers.\n"
+            "Pokémon Rangers.\n"
             "Fast and durable!"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -12874,7 +12874,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "The official card\n"
             "proving that I'm a\n"
-            "Pokemon Ranger!"),
+            "Pokémon Ranger!"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14392,6 +14392,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_GimmighoulCoin,
     },
 
+    [ITEM_NUZKIT] =
+    {
+        .name = _("Nuzkit"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Mom says I should\n"
+            "talk to my Pokémon\n"
+            "to use it."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .importance = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sachet,
+        .iconPalette = gItemIconPalette_Sachet,
+    },
 };
 
 
