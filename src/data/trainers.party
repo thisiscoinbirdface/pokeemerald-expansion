@@ -5543,11 +5543,11 @@ Double Battle: No
 AI: Check Bad Move
 Starting Status: Electric Terrain
 
-Magneton
+Furret
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Furret
+Voltorb-Hisui
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -5562,14 +5562,57 @@ Double Battle: No
 AI: Smart Trainer
 Starting Status: Electric Terrain
 
-Magneton
+Furret
+Level: 34
+
+Voltorb-Hisui
+Level: 36
+
+
+
+
+
+
+
+
+
+
+=== TRAINER_WINTERLILY_HOLLOW_GYM_E ===
+Name: Bleach
+Difficulty: Easy
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Starting Status: Electric Terrain
+
+Chinchou
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Furret
+Boltund
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+
+=== TRAINER_WINTERLILY_HOLLOW_GYM_E ===
+Name: Bleach
+Difficulty: Normal
+Class: Employee
+Pic: Employee
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer
+Starting Status: Electric Terrain
+
+Chinchou
+Level: 34
+
+Boltund
+Level: 36
 
 
 
