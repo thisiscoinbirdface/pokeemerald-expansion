@@ -325,7 +325,7 @@ Debug_EventScript_InflictStatus1_Single:
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Sleep, 2
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Burn, 3
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Freeze, 4
-	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
+@	dynmultipush Debug_EventScript_InflictStatus1_Text_Frostbite, 5
 	dynmultipush Debug_EventScript_InflictStatus1_Text_Close, 6
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
@@ -334,7 +334,7 @@ Debug_EventScript_InflictStatus1_Single:
 	case 2, Debug_EventScript_InflictStatus1_Single_Sleep
 	case 3, Debug_EventScript_InflictStatus1_Single_Burn
 	case 4, Debug_EventScript_InflictStatus1_Single_Freeze
-	case 5, Debug_EventScript_InflictStatus1_Single_Frostbite
+@	case 5, Debug_EventScript_InflictStatus1_Single_Frostbite
 	case 6, Debug_EventScript_InflictStatus1_Close
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
 	releaseall
@@ -342,28 +342,53 @@ Debug_EventScript_InflictStatus1_Single:
 
 Debug_EventScript_InflictStatus1_Single_Poison:
 	setstatus1 STATUS1_POISON, VAR_0x8004
+	special BufferMonNickname
+	msgbox DebugText_Poisoned, MSGBOX_DEFAULT 
 	releaseall
 	end
 
+DebugText_Poisoned::
+	.string "{STR_VAR_1} was poisoned!$"
+	
 Debug_EventScript_InflictStatus1_Single_Paralysis:
 	setstatus1 STATUS1_PARALYSIS, VAR_0x8004
+	special BufferMonNickname
+	msgbox DebugText_Paralysed, MSGBOX_DEFAULT 	
 	releaseall
 	end
+
+DebugText_Paralysed::
+	.string "{STR_VAR_1} was paralysed!$"
 
 Debug_EventScript_InflictStatus1_Single_Sleep:
 	setstatus1 STATUS1_SLEEP, VAR_0x8004
+	special BufferMonNickname
+	msgbox DebugText_PutToSleep, MSGBOX_DEFAULT 		
 	releaseall
 	end
+
+DebugText_PutToSleep::
+	.string "{STR_VAR_1} fell asleep!$"
 
 Debug_EventScript_InflictStatus1_Single_Burn:
 	setstatus1 STATUS1_BURN, VAR_0x8004
+	special BufferMonNickname
+	msgbox DebugText_Burned, MSGBOX_DEFAULT 
 	releaseall
 	end
 
+DebugText_Burned::
+	.string "{STR_VAR_1} was burned!$"
+	
 Debug_EventScript_InflictStatus1_Single_Freeze:
 	setstatus1 STATUS1_FREEZE, VAR_0x8004
+	special BufferMonNickname
+	msgbox DebugText_Frozen, MSGBOX_DEFAULT 
 	releaseall
 	end
+
+DebugText_Frozen::
+	.string "{STR_VAR_1} was frozen!$"
 
 Debug_EventScript_InflictStatus1_Single_Frostbite:
 	setstatus1 STATUS1_FROSTBITE, VAR_0x8004

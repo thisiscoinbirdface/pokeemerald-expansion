@@ -125,17 +125,17 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
         speakername("Mom")     
         message(format("My baby is going on an adventure!\nDo you want a care package from Mom?"))
         waitmessage
-        dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        dynmultichoice(17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
             "Yes please!", "No Mom...")    
         release
         
         if (var(VAR_RESULT) == 0){
+            delay(8)
             speakername("Mom")     
             msgbox(format("Here you go!"))    
             speakername(NULL)
 
             giveitem(ITEM_NUZKIT)       
-            setflag(FLAG_SYS_CHEATS_ENABLED)
 
             delay(8)
 
@@ -143,12 +143,13 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
             release
         } else {
             speakername("Mom")     
-            msgbox(format("Fine, fine...I know you can handle yourself."))            
+            msgbox(format("I know you can handle yourself.\nTake care, {PLAYER}!"))            
+            releaseall
+            end
         }
 
     }
 
-    delay(8)
     speakername("Mom")     
 	msgbox(format("Take care, {PLAYER}!"))
     release

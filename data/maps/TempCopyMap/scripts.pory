@@ -28,6 +28,8 @@ script Common_EventScript_Follower_Cheat{
     }
 
     if (var(VAR_RESULT) == 2){
+        goto(Debug_EventScript_InflictStatus1_Single)
+
         //choose mon
         special(ChoosePartyMon)
         waitstate

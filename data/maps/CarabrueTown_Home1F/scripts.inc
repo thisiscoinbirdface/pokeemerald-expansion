@@ -151,17 +151,15 @@ CarabrueTown_Home1F_EventScript_MomGeneric::
 # 123 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	goto_if_unset FLAG_SYS_CHEATS_ENABLED, CarabrueTown_Home1F_EventScript_MomGeneric_2
 CarabrueTown_Home1F_EventScript_MomGeneric_1:
-# 151 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	delay 8
-# 152 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 153 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_7
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	release
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_7
 # 155 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	applymovement 1, CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0
+	release
 # 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	applymovement 1, CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0
+# 157 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	end
 
@@ -173,7 +171,7 @@ CarabrueTown_Home1F_EventScript_MomGeneric_2:
 # 127 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	waitmessage
 # 128 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home1F_EventScript_MomGeneric_Text_2, CarabrueTown_Home1F_EventScript_MomGeneric_Text_3
+	dynmultichoice 17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home1F_EventScript_MomGeneric_Text_2, CarabrueTown_Home1F_EventScript_MomGeneric_Text_3
 # 130 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	release
 # 132 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -183,19 +181,21 @@ CarabrueTown_Home1F_EventScript_MomGeneric_2:
 	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 146 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_6
-	goto CarabrueTown_Home1F_EventScript_MomGeneric_1
+# 147 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	releaseall
+	end
 
 CarabrueTown_Home1F_EventScript_MomGeneric_4:
 # 133 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
+	delay 8
 # 134 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_4
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 135 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_4
+# 136 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	speakername NULL
-# 137 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	giveitem ITEM_NUZKIT
 # 138 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	setflag FLAG_SYS_CHEATS_ENABLED
+	giveitem ITEM_NUZKIT
 # 140 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	delay 8
 # 142 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -253,9 +253,9 @@ CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Movement_0:
 	walk_up
 	step_end
 
-# 155 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
 CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0:
-# 155 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_right
 	step_end
 
@@ -339,7 +339,7 @@ CarabrueTown_Home1F_EventScript_MomGeneric_Text_3:
 	.string "No Mom...$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_4:
-# 134 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 135 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Here you go!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_5:
@@ -350,9 +350,9 @@ CarabrueTown_Home1F_EventScript_MomGeneric_Text_5:
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_6:
 # 146 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Fine, fine...I know you can handle\n"
-	.string "yourself.$"
+	.string "I know you can handle yourself.\n"
+	.string "Take care, {PLAYER}!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_7:
-# 153 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Take care, {PLAYER}!$"

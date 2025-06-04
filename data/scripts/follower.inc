@@ -11,8 +11,9 @@ gText_WantsToFly::
 	.string "{STR_VAR_1} looks up at the\nsky restlessly.\pWould you like to use FLY?$"
 
 EventScript_Follower::
-	goto_if_unset FLAG_SYS_CHEATS_ENABLED, EventScript_Follower_Normal 
-	goto_if_set FLAG_SYS_CHEATS_ENABLED, Common_EventScript_Follower_Cheat
+	checkitem ITEM_NUZKIT
+	goto_if_eq VAR_RESULT, 0, EventScript_Follower_Normal 
+	goto_if_eq VAR_RESULT, 1, Common_EventScript_Follower_Cheat
 
 EventScript_Follower_Normal::
 	lock
