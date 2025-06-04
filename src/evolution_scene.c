@@ -823,13 +823,6 @@ static void Task_EvolutionScene(u8 taskId)
             if (!gTasks[taskId].tEvoWasStopped)
                 CreateShedinja(gTasks[taskId].tPreEvoSpecies, mon);
 
-            // linoone galar manual fix
-            if ((gTasks[taskId].tPreEvoSpecies) == SPECIES_ZIGZAGOON_GALAR)
-            {
-                u32 manual_level = 20;
-                SetMonData(mon, MON_DATA_LEVEL, &manual_level);
-            }
-
             DestroyTask(taskId);
             FreeMonSpritesGfx();
             FREE_AND_SET_NULL(sEvoStructPtr);
