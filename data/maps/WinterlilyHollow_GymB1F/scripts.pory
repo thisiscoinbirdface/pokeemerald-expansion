@@ -223,22 +223,8 @@ script WinterlilyHollowGym_Red{
         } else {
             lockall
             faceplayer
-            msgbox(format("Well done champ-in-the-making! An electrifying showdown! In recognition of your skills, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Electric Gem", "Magnet")
-
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_ELECTRIC_GEM)
-            } else{
-                if (var(VAR_RESULT) == 1){
-                    giveitem(ITEM_MAGNET)
-                } else {
-                    
-                }
-            }
-
-
-            setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            
+            msgbox(format("Well done champ-in-the-making! An electrifying showdown! In recognition of your skills, I'd like to give you something."))
+            goto(WinterlilyHollowGym_Red_Reward)         
         }
     } else { 
         if (flag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)){
@@ -255,6 +241,35 @@ script WinterlilyHollowGym_Red{
     }
     end
 }
+
+script WinterlilyHollowGym_Red_Reward{
+    message(format("Which of these do you fancy?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Electric Gem", "Magnet") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_ELECTRIC_GEM)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_MAGNET)}
+    goto(WinterlilyHollowGym_Red_Reward_Give)
+}
+
+script WinterlilyHollowGym_Red_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){
+        giveitem(VAR_0x8006) 
+        setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD) 
+        goto(WinterlilyHollowGym_Red_Reward_End)} 
+    else {
+        goto(WinterlilyHollowGym_Red_Reward)
+    }
+}
+
+script WinterlilyHollowGym_Red_Reward_End{    
+    msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)       
+    end
+}
+
+
 
 
 

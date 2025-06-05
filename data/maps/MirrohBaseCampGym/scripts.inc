@@ -962,9 +962,12 @@ MirrohBaseCampGym_Leader_Text_14:
 
 MirrohBaseCampGym_Red_Text_0:
 # 350 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Well done champ-in-the-making! Now get\n"
-	.string "on out there and find the next gym -\l"
-	.string "I'll see you there!$"
+	.string "Well done champ-in-the-making! I\n"
+	.string "would've given you something to\l"
+	.string "commemorate your victory...but we're all\l"
+	.string "packed up! Sorry!\p"
+	.string "Now get on out there and find the next\n"
+	.string "gym - I'll see you there!$"
 
 MirrohBaseCampGym_Red_Text_1:
 # 352 "data//maps/MirrohBaseCampGym/scripts.pory"

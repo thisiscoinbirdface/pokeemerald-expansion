@@ -13,21 +13,8 @@ script CeramBaseCampGym_Red{
         if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD)){
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
         } else {
-            msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Fire Gem", "Charcoal")
-
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_FIRE_GEM)
-            } else{
-                if (var(VAR_RESULT) == 1){
-                    giveitem(ITEM_CHARCOAL)
-                } else {
-                    
-                }
-            }
-
-            setflag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+            msgbox(format("Well done champ-in-the-making! That was an impressive battle. In recognition of your victory, I'd like to give you something."))
+            goto(CeramBaseCampGym_Red_Reward)      
         }
     } else { 
         if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)){
@@ -42,6 +29,58 @@ script CeramBaseCampGym_Red{
     releaseall
     end
 }
+
+script CeramBaseCampGym_Red_Reward{
+    message(format("Which of these do you fancy?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Fire Gem", "Charcoal") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_FIRE_GEM)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_CHARCOAL)}
+    goto(CeramBaseCampGym_Red_Reward_Give)
+}
+
+script CeramBaseCampGym_Red_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){
+        giveitem(VAR_0x8006) 
+        setflag(FLAG_CERAMBASECAMPGYM_SPENSER_REWARD) 
+        goto(CeramBaseCampGym_Red_Reward_End)} 
+    else {
+        goto(CeramBaseCampGym_Red_Reward)
+    }
+}
+
+script CeramBaseCampGym_Red_Reward_End{    
+    msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)       
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script CeramBaseCampGym_Guard{
     lockall

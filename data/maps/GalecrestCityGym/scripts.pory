@@ -29,21 +29,8 @@ script GalecrestCityGym_Red {
         if (flag(FLAG_GALECRESTGYM_SPENSER_REWARD)){
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
         } else {
-            msgbox(format("Well done champ-in-the-making! The Gym Leader pulled a fast one on you, using his real team, and you still made it out! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "NORMAL GEM", "SILK SCARF")
-
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_NORMAL_GEM)
-            } else{
-                if (var(VAR_RESULT) == 1){
-                    giveitem(ITEM_SILK_SCARF)
-                } else {
-                    
-                }
-            }
-
-            setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)            
+            msgbox(format("Well done champ-in-the-making! The Gym Leader pulled a fast one on you, using his real team, and you still made it out! In recognition of your victory, I'd like to give you something."))
+            goto(GalecrestCityGym_Red_Reward)       
         }
     } else { 
         if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
@@ -58,6 +45,53 @@ script GalecrestCityGym_Red {
     releaseall
     end
 }
+
+script GalecrestCityGym_Red_Reward{
+    message(format("Which of these do you fancy?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Normal Gem", "Silk Scarf") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_NORMAL_GEM)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_SILK_SCARF)}
+    goto(GalecrestCityGym_Red_Reward_Give)
+}
+
+script GalecrestCityGym_Red_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){
+        giveitem(VAR_0x8006) 
+        setflag(FLAG_GALECRESTGYM_SPENSER_REWARD) 
+        goto(GalecrestCityGym_Red_Reward_End)} 
+    else {
+        goto(GalecrestCityGym_Red_Reward)
+    }
+}
+
+script GalecrestCityGym_Red_Reward_End{    
+    msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)       
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 script GalecrestCityGym_NPC1 {

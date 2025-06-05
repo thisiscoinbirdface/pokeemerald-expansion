@@ -259,21 +259,21 @@ WinterlilyHollow_Gym_Manectric::
 WinterlilyHollowGym_Red::
 # 220 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	goto_if_set FLAG_BADGE06_GET, WinterlilyHollowGym_Red_2
-# 244 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 230 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	goto_if_set FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER, WinterlilyHollowGym_Red_8
-# 247 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 233 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	lockall
-# 248 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 234 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	faceplayer
-# 249 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	msgbox WinterlilyHollowGym_Red_Text_6
-# 250 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 235 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollowGym_Red_Text_3
+# 236 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	giveitem ITEM_FRESH_WATER
-# 251 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	msgbox WinterlilyHollowGym_Red_Text_5
-# 252 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 237 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollowGym_Red_Text_2
+# 238 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	setflag FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER
-# 253 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 239 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	releaseall
 WinterlilyHollowGym_Red_1:
 	end
@@ -288,18 +288,7 @@ WinterlilyHollowGym_Red_2:
 # 226 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	msgbox WinterlilyHollowGym_Red_Text_1
 # 227 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, WinterlilyHollowGym_Red_Text_2, WinterlilyHollowGym_Red_Text_3
-# 229 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WinterlilyHollowGym_Red_12
-# 232 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq WinterlilyHollowGym_Red_15
-WinterlilyHollowGym_Red_11:
-# 240 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	setflag FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD
-# 241 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	msgbox WinterlilyHollowGym_Red_Text_4, MSGBOX_NPC
+	goto WinterlilyHollowGym_Red_Reward
 	goto WinterlilyHollowGym_Red_1
 
 WinterlilyHollowGym_Red_5:
@@ -308,19 +297,69 @@ WinterlilyHollowGym_Red_5:
 	goto WinterlilyHollowGym_Red_1
 
 WinterlilyHollowGym_Red_8:
-# 245 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	msgbox WinterlilyHollowGym_Red_Text_5, MSGBOX_NPC
+# 231 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollowGym_Red_Text_2, MSGBOX_NPC
 	goto WinterlilyHollowGym_Red_1
 
-WinterlilyHollowGym_Red_12:
-# 230 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	giveitem ITEM_ELECTRIC_GEM
-	goto WinterlilyHollowGym_Red_11
 
-WinterlilyHollowGym_Red_15:
-# 233 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	giveitem ITEM_MAGNET
-	goto WinterlilyHollowGym_Red_11
+WinterlilyHollowGym_Red_Reward::
+# 246 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	message WinterlilyHollowGym_Red_Reward_Text_0
+# 247 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	waitmessage
+# 248 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, WinterlilyHollowGym_Red_Reward_Text_1, WinterlilyHollowGym_Red_Reward_Text_2
+# 249 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq WinterlilyHollowGym_Red_Reward_2
+WinterlilyHollowGym_Red_Reward_1:
+# 250 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WinterlilyHollowGym_Red_Reward_5
+WinterlilyHollowGym_Red_Reward_4:
+# 251 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	goto WinterlilyHollowGym_Red_Reward_Give
+	return
+
+WinterlilyHollowGym_Red_Reward_2:
+# 249 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	setvar VAR_0x8006, ITEM_ELECTRIC_GEM
+	goto WinterlilyHollowGym_Red_Reward_1
+
+WinterlilyHollowGym_Red_Reward_5:
+# 250 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	setvar VAR_0x8006, ITEM_MAGNET
+	goto WinterlilyHollowGym_Red_Reward_4
+
+
+WinterlilyHollowGym_Red_Reward_Give::
+# 255 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	showitemdescription
+# 256 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollowGym_Red_Reward_Give_Text_0, MSGBOX_YESNO
+# 257 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	hideitemdescription
+# 258 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq WinterlilyHollowGym_Red_Reward_Give_1
+# 263 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	goto WinterlilyHollowGym_Red_Reward
+	return
+
+WinterlilyHollowGym_Red_Reward_Give_1:
+# 259 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	giveitem VAR_0x8006
+# 260 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	setflag FLAG_WINTERLILYHOLLOWGYM_SPENSER_REWARD
+# 261 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	goto WinterlilyHollowGym_Red_Reward_End
+	return
+
+
+WinterlilyHollowGym_Red_Reward_End::
+# 268 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	msgbox WinterlilyHollowGym_Red_Reward_End_Text_0, MSGBOX_NPC
+	end
 
 
 # 100 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -533,24 +572,10 @@ WinterlilyHollowGym_Red_Text_1:
 	.string "Well done champ-in-the-making! An\n"
 	.string "electrifying showdown! In recognition\l"
 	.string "of your skills, I'd like to give you\l"
-	.string "something. Which of these do you\l"
-	.string "fancy?$"
+	.string "something.$"
 
 WinterlilyHollowGym_Red_Text_2:
-# 227 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Electric Gem$"
-
-WinterlilyHollowGym_Red_Text_3:
-# 227 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Magnet$"
-
-WinterlilyHollowGym_Red_Text_4:
-# 241 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Now get on out there and find the next\n"
-	.string "gym - I'll see you there!$"
-
-WinterlilyHollowGym_Red_Text_5:
-# 245 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+# 231 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "The electricity generated in this plant\n"
 	.string "ionises the air and creates electric\l"
 	.string "terrain!\p"
@@ -558,10 +583,31 @@ WinterlilyHollowGym_Red_Text_5:
 	.string "to boost their Pokémon in battle.\p"
 	.string "Now go get 'em, champ-in-the-making!$"
 
-WinterlilyHollowGym_Red_Text_6:
-# 249 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+WinterlilyHollowGym_Red_Text_3:
+# 235 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "Welcome to the Winterlily Hollow gym!\n"
 	.string "It's not a gym so much as a power plant.\l"
 	.string "The leader, Viniel, powers this town with\l"
 	.string "his strong ELECTRIC-type Pokémon here\l"
 	.string "in this plant. First, hydrate yourself!$"
+
+WinterlilyHollowGym_Red_Reward_Text_0:
+# 246 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "Which of these do you fancy?$"
+
+WinterlilyHollowGym_Red_Reward_Text_1:
+# 248 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "Electric Gem$"
+
+WinterlilyHollowGym_Red_Reward_Text_2:
+# 248 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "Magnet$"
+
+WinterlilyHollowGym_Red_Reward_Give_Text_0:
+# 256 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "Are you sure?$"
+
+WinterlilyHollowGym_Red_Reward_End_Text_0:
+# 268 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
+	.string "Now get on out there and find the next\n"
+	.string "gym - I'll see you there!$"

@@ -27,38 +27,69 @@ script SilversunCityGym_EventScript_Red{
     faceplayer
 
     if (flag(FLAG_BADGE04_GET)){
-        if (flag(FLAG_GALECRESTGYM_SPENSER_REWARD)){
+        if (flag(FLAG_SILVERSUNGYM_SPENSER_REWARD)){
             msgbox(format("Well done champ-in-the-making! Now get on out there and find the next gym - I'll see you there!"))
         } else {
-            msgbox(format("Well done champ-in-the-making! Giving it your all in front of a huge crowd...and winning! In recognition of your victory, I'd like to give you something. Which of these do you fancy?"))
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "GRASS GEM", "DARK GEM")
-
-            if (var(VAR_RESULT) == 0){
-                giveitem(ITEM_GRASS_GEM)
-            } else{
-                if (var(VAR_RESULT) == 1){
-                    giveitem(ITEM_DARK_GEM)
-                } else {
-                    
-                }
-            }
-
-            setflag(FLAG_GALECRESTGYM_SPENSER_REWARD)
-            msgbox(format("Now get on out there and find the next gym - I'll see you there!"))            
+            msgbox(format("Well done champ-in-the-making! Giving it your all in front of a huge crowd...and winning! In recognition of your victory, I'd like to give you something."))
+            goto(SilversunCityGym_Red_Reward)
         }
     } else { 
-        if (flag(FLAG_GALECRESTGYM_SPENSER_WATER)){
+        if (flag(FLAG_SILVERSUNGYM_SPENSER_WATER)){
             msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
         } else {
             msgbox(format("Welcome to the Silversun Gym...and Theater Studio! First, have some water."))
             giveitem(ITEM_FRESH_WATER)
             msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
-            setflag(FLAG_GALECRESTGYM_SPENSER_WATER)
+            setflag(FLAG_SILVERSUNGYM_SPENSER_WATER)
         }
     }
     releaseall
     end
 }
+
+script SilversunCityGym_Red_Reward{
+    message(format("Which of these do you fancy?"))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Grass Gem", "Dark Gem") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_GRASS_GEM)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_DARK_GEM)}
+    goto(SilversunCityGym_Red_Reward_Give)
+}
+
+script SilversunCityGym_Red_Reward_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){
+        giveitem(VAR_0x8006) 
+        setflag(FLAG_SILVERSUNGYM_SPENSER_REWARD) 
+        goto(SilversunCityGym_Red_Reward_End)} 
+    else {
+        goto(SilversunCityGym_Red_Reward)
+    }
+}
+
+script SilversunCityGym_Red_Reward_End{    
+    msgbox(format("Now get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)       
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Trainers
