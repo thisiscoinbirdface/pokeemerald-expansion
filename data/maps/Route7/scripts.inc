@@ -34,6 +34,24 @@ Route7_Trainer_D::
 	end
 
 
+Route7_NPC1::
+# 35 "data//maps/Route7/scripts.pory"
+	msgbox Route7_Trainer_A_Text_0, MSGBOX_NPC
+	end
+
+
+Route7_NPC2::
+# 39 "data//maps/Route7/scripts.pory"
+	msgbox Route7_Trainer_A_Text_0, MSGBOX_NPC
+	end
+
+
+Route7_NPC3::
+# 43 "data//maps/Route7/scripts.pory"
+	msgbox Route7_Trainer_A_Text_0, MSGBOX_NPC
+	end
+
+
 Route7_Trainer_A_Text_0:
 # 8 "data//maps/Route7/scripts.pory"
 	.string "$"

@@ -727,7 +727,7 @@
       "y": 39,
       "elevation": 3,
       "item": "ITEM_REVIVE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE7_A"
     },
     {
       "type": "hidden_item",
@@ -751,7 +751,7 @@
       "y": 67,
       "elevation": 3,
       "item": "ITEM_FULL_HEAL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_FULL_HEAL"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE7_B"
     },
     {
       "type": "sign",

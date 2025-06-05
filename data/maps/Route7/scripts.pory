@@ -31,4 +31,19 @@ script Route7_Trainer_D{
 
 
 
+script Route7_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Route7_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Route7_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+
+
 

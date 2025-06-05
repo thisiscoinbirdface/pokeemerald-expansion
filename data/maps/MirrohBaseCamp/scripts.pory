@@ -42,6 +42,7 @@ mart MirrohBaseCamp_Vendor2_Inventory{
     ITEM_ICE_GEM
     ITEM_COVERT_CLOAK
     ITEM_ENERGY_ROOT
+    ITEM_COIN_CASE
 }
 
 script MirrohBaseCamp_EventScript_Vendor3{
