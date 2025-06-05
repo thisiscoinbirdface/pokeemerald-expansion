@@ -287,7 +287,7 @@ Route110_TrickHousePuzzle3_EventScript_FoundScroll::
 	end
 
 Route110_TrickHousePuzzle3_EventScript_Justin::
-	trainerbattle_single TRAINER_JUSTIN, Route110_TrickHousePuzzle3_Text_JustinIntro, Route110_TrickHousePuzzle3_Text_JustinDefeat
+	trainerbattle_single TRAINER_ROUTE7_D, Route110_TrickHousePuzzle3_Text_JustinIntro, Route110_TrickHousePuzzle3_Text_JustinDefeat
 	msgbox Route110_TrickHousePuzzle3_Text_JustinPostBattle, MSGBOX_AUTOCLOSE
 	end
 

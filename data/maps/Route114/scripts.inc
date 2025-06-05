@@ -90,7 +90,7 @@ Route114_EventScript_Lucas::
 	end
 
 Route114_EventScript_Shane::
-	trainerbattle_single TRAINER_SHANE, Route114_Text_ShaneIntro, Route114_Text_ShaneDefeat
+	trainerbattle_single TRAINER_ROUTE7_C, Route114_Text_ShaneIntro, Route114_Text_ShaneDefeat
 	msgbox Route114_Text_ShanePostBattle, MSGBOX_AUTOCLOSE
 	end
 

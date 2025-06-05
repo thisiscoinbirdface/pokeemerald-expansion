@@ -297,16 +297,18 @@
 
 
 
-///PLAYERS WHO BEAT THE GAME
+///FIRST 5 PLAYERS WHO BEAT THE GAME
 #define TRAINER_PLAYER_SENTRY               207
 #define TRAINER_PLAYER_EDEN                 208
 #define TRAINER_PLAYER_GOZLIAK              209
 #define TRAINER_PLAYER_SHERRY               210
 #define TRAINER_PLAYER_MIKE                 211
-#define TRAINER_BEAU                        212
-#define TRAINER_LARRY                       213
-#define TRAINER_SHANE                       214
-#define TRAINER_JUSTIN                      215
+
+//Route 7
+#define TRAINER_ROUTE7_A                    212
+#define TRAINER_ROUTE7_B                    213
+#define TRAINER_ROUTE7_C                    214
+#define TRAINER_ROUTE7_D                    215
 #define TRAINER_ETHAN_1                     216
 #define TRAINER_AUTUMN                      217
 #define TRAINER_TRAVIS                      218

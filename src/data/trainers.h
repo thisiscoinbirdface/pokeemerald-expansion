@@ -20881,7 +20881,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10077
-    [DIFFICULTY_NORMAL][TRAINER_BEAU] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE7_A] =
     {
 #line 10078
         .trainerName = _("BEAU"),
@@ -20956,7 +20956,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10110
-    [DIFFICULTY_NORMAL][TRAINER_LARRY] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE7_B] =
     {
 #line 10111
         .trainerName = _("LARRY"),
@@ -20988,7 +20988,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10123
-    [DIFFICULTY_NORMAL][TRAINER_SHANE] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE7_C] =
     {
 #line 10124
         .trainerName = _("SHANE"),
@@ -21031,7 +21031,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10140
-    [DIFFICULTY_NORMAL][TRAINER_JUSTIN] =
+    [DIFFICULTY_NORMAL][TRAINER_ROUTE7_D] =
     {
 #line 10141
         .trainerName = _("JUSTIN"),

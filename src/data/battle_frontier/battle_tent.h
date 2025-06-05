@@ -1698,7 +1698,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, -1, EC_WORD_BUT, EC_WORD_WHY, EC_WORD_QUES},
         .monSet = gVerdanturfBattleTentTrainerMons_Addison
     },
-    [VERDANTURF_TENT_TRAINER_JUSTINE] = {
+    [VERDANTURF_TENT_TRAINER_ROUTE7_DE] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("JUSTINE"),
         .speechBefore = {EC_WORD_YES, EC_WORD_EXCL, -1, EC_WORD_COME_ON, EC_WORD_I_AM, EC_WORD_READY},

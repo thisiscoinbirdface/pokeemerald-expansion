@@ -2,7 +2,7 @@
   "id": "MAP_WINTERLILY_HOLLOW",
   "name": "WinterlilyHollow",
   "layout": "LAYOUT_WINTERLILY_HOLLOW",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_BW_ACCUMULA_TOWN",
   "region_map_section": "MAPSEC_WINTERLILY_HOLLOW",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

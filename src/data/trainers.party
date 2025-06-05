@@ -10074,73 +10074,90 @@ Modest Nature
 
 
 
-=== TRAINER_BEAU ===
-Name: BEAU
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
+=== TRAINER_ROUTE7_A ===
+Name: Bella
+Difficulty: Easy
+Class: Waitress
+Pic: Waitress
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+Applin
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Flapple
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_ROUTE7_A ===
+Name: Bella
+Difficulty: Normal
+Class: Waitress
+Pic: Waitress
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Smart Trainer
+
+Applin
+Level: 29
+
+Flapple
+Level: 31
+
+
+
+
+
+
+
+
+
+
+=== TRAINER_ROUTE7_B ===
+Name: Galia
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Furfrou
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Sandshrew
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Sting
-- Sand Attack
-- Scratch
-- Dig
 
-Baltoy
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
 
-=== TRAINER_LARRY ===
-Name: LARRY
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
+
+
+
+
+
+=== TRAINER_ROUTE7_C ===
+Name: Shanae
+Class: School Kid
+Pic: School Kid F
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
+
+Roselia
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nuzleaf
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SHANE ===
-Name: SHANE
-Class: Camper
-Pic: Camper
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Sandshrew
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Nuzleaf
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JUSTIN ===
-Name: JUSTIN
-Class: Camper
-Pic: Camper
+=== TRAINER_ROUTE7_D ===
+Name: Marcelle
+Class: Backpacker
+Pic: Backpacker
 Gender: Male
 Music: Male
 Double Battle: No
