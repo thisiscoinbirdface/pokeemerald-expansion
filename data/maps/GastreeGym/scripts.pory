@@ -101,7 +101,7 @@ script GastreeGym_Red{
             lockall
             faceplayer
             
-            msgbox(format("Well done champ-in-the-making! Inger told me about your battle. In recognition of your skills, I'd like to give you something."))
+            msgbox(format("Well done champ-in-the-making! Inger told me about your battle.\lIn recognition of your skills, I'd like to give you something."))
             goto(GastreeGym_Red_Reward)      
         }
     } else { 

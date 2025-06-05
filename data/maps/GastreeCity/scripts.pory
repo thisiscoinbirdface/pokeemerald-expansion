@@ -298,7 +298,10 @@ script GastreeCity_NPC8{
     waitmovement(0)
     playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
     delay(16)
-    msgbox(format("Keeee!!!\pBergmite is as fired up as its trainer is!"), MSGBOX_NPC)
+    msgbox(format("Keeee!!!\pBergmite is fired up too!"), MSGBOX_NPC)
+    applymovement(5, moves(walk_in_place_fast_up))
+    waitmovement(0)
+    releaseall
     end
 }
 
