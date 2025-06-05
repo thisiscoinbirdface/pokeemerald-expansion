@@ -339,9 +339,9 @@ GastreeGym_Red_Text_0:
 GastreeGym_Red_Text_1:
 # 104 "data//maps/GastreeGym/scripts.pory"
 	.string "Well done champ-in-the-making! Inger\n"
-	.string "told me about your battle. In\l"
-	.string "recognition of your skills, I'd like to\l"
-	.string "give you something.$"
+	.string "told me about your battle.\l"
+	.string "In recognition of your skills, I'd like\l"
+	.string "to give you something.$"
 
 GastreeGym_Red_Text_2:
 # 109 "data//maps/GastreeGym/scripts.pory"

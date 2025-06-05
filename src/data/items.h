@@ -6192,7 +6192,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Powers up Poison\n"
             "type moves once\n"
-            "per battle."),,
+            "per battle."),
         .pocket = POCKET_BATTLE_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
