@@ -478,27 +478,29 @@ RivetshoreCity_Mart_1:
 # 359 "data//maps/RivetshoreCity/scripts.pory"
 RivetshoreCity_Mart_2:
 # 360 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM04
+	.2byte ITEM_TM19
 # 361 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM15
+	.2byte ITEM_TM23
 # 362 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM24
+	.2byte ITEM_TM26
 # 363 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TM30
 # 364 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM35
+	.2byte ITEM_TM33
 # 365 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM38
+	.2byte ITEM_TM34
+# 366 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TM36
 	.2byte ITEM_NONE
 
 	.align 2
-# 368 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 369 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 370 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_GALARICA_CUFF
 # 371 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_GALARICA_WREATH
+# 372 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 

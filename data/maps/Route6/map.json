@@ -281,7 +281,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM03",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM80",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_D"
     },
@@ -299,7 +299,7 @@
       "flag": "FLAG_ITEM_ROUTE6_F"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 59,
       "y": 65,
       "elevation": 0,
@@ -307,12 +307,12 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_L",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM29",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_G"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
       "x": 56,
       "y": 79,
       "elevation": 0,
@@ -320,7 +320,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM43",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM63",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE6_H"
     },

@@ -407,3 +407,24 @@ script IvyRiver_Ranger_Clodsire{
     end
 }
 
+
+
+
+
+
+
+
+
+
+
+
+mart IvyRiver_Ranger_Mart{
+    ITEM_TM38
+    ITEM_TM57
+    ITEM_TM59
+    ITEM_TM64
+    ITEM_TM54
+    ITEM_TM60
+    ITEM_TM50
+    ITEM_TM62
+}

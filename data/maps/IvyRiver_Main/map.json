@@ -195,7 +195,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM22",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM20",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_IVY_RIVER_D"
     },
@@ -208,7 +208,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM47",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM32",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_IVY_RIVER_B"
     },
@@ -299,7 +299,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM23",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM41",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_IVY_RIVER_F"
     },

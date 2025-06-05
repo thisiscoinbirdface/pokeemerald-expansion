@@ -571,6 +571,27 @@ IvyRiver_Ranger_Clodsire::
 	end
 
 
+	.align 2
+# 421 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+IvyRiver_Ranger_Mart:
+# 422 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM38
+# 423 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM57
+# 424 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM59
+# 425 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM64
+# 426 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM54
+# 427 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM60
+# 428 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM50
+# 429 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
+	.2byte ITEM_TM62
+	.2byte ITEM_NONE
+
 # 34 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 IvyRiver_Ranger_FirstQuest_Movement_0:
 # 34 "data//maps/IvyRiver_ResearchFacility/scripts.pory"

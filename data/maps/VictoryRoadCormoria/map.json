@@ -154,6 +154,45 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "VR_Trainer_I",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
+      "x": 38,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM15",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_VR_A"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TMHM_BALL",
+      "x": 11,
+      "y": 60,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM25",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_VR_C"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 24,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_VR_B"
     }
   ],
   "warp_events": [

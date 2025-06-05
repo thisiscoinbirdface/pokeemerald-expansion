@@ -58,12 +58,15 @@ mart Champ_Mart_Inventory_A{
 }
 //TMs
 mart Champ_Mart_Inventory_B{
-
-    
+    ITEM_TM06
+    ITEM_TM01
+    ITEM_TM02
+    ITEM_TM16
+    ITEM_TM21
+    ITEM_TM22
 }
 mart Champ_Mart_Inventory_C{
-    
-
+    //unused since it goes to the mirroh gardenery
 }
 
 

@@ -1321,13 +1321,20 @@
 
 //Route 7
 #define FLAG_ITEM_ROUTE7_A  0x44E
-#define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
-#define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450
-#define FLAG_ITEM_ROUTE_126_GREEN_SHARD                             0x451
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
-#define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
-#define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
-#define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455
+#define FLAG_ITEM_ROUTE7_B                                  0x44F
+
+
+
+
+#define FLAG_ITEM_VR_A                              0x450
+#define FLAG_ITEM_VR_B                             0x451
+#define FLAG_ITEM_VR_C                          0x452
+#define FLAG_ITEM_VR_D                            0x453
+
+#define FLAG_ITEM_VICTORY_CAPE_A                               0x454
+#define FLAG_ITEM_VICTORY_CAPE_B                                  0x455
+
+
 #define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
 #define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458

@@ -357,12 +357,13 @@ mart RivetshoreCity_Mart_1{
 }
 
 mart RivetshoreCity_Mart_2{
-    ITEM_TM04
-    ITEM_TM15
-    ITEM_TM24
+    ITEM_TM19
+    ITEM_TM23
+    ITEM_TM26
     ITEM_TM30
-    ITEM_TM35
-    ITEM_TM38
+    ITEM_TM33
+    ITEM_TM34
+    ITEM_TM36
 }
 
 mart RivetshoreCity_Mart_Secret{

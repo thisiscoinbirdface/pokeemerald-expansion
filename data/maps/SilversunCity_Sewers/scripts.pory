@@ -290,11 +290,14 @@ script SilversunCity_Sewers_Market_A{
 }
 
 mart SilversunCity_Sewers_Market_A_Inventory{
-    ITEM_TM17
-    ITEM_TM19    
-    ITEM_TM21
-    ITEM_TM37
-    ITEM_TM40
+    ITEM_TM66
+    ITEM_TM11
+    ITEM_TM72
+    ITEM_TM70
+    ITEM_TM07
+    ITEM_TM44
+    ITEM_TM49
+    ITEM_TM77
 }
 
 //Ability capsules dude
