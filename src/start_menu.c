@@ -193,9 +193,9 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
     .baseBlock = 0x8
 };
 
-static const u8 sText_MenuDebug[] = _("DEBUG");
+static const u8 sText_MenuDebug[] = _("Debug");
 
-static const u8 sText_QuestMenu[] = _("QUESTS");
+static const u8 sText_QuestMenu[] = _("Quests");
 static const struct MenuAction sStartMenuItems[] =
 {
     [MENU_ACTION_POKEDEX]           = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},
