@@ -309,6 +309,8 @@
 #define TRAINER_ROUTE7_B                    213
 #define TRAINER_ROUTE7_C                    214
 #define TRAINER_ROUTE7_D                    215
+
+
 #define TRAINER_ETHAN_1                     216
 #define TRAINER_AUTUMN                      217
 #define TRAINER_TRAVIS                      218

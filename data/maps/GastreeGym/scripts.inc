@@ -113,23 +113,23 @@ GastreeGym_EventScript_Victory::
 GastreeGym_Red::
 # 96 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_BADGE01_GET, GastreeGym_Red_2
-# 120 "data//maps/GastreeGym/scripts.pory"
+# 108 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_GASTREEGYM_SPENSER_WATER, GastreeGym_Red_8
-# 123 "data//maps/GastreeGym/scripts.pory"
+# 111 "data//maps/GastreeGym/scripts.pory"
 	lockall
-# 124 "data//maps/GastreeGym/scripts.pory"
+# 112 "data//maps/GastreeGym/scripts.pory"
 	faceplayer
-# 125 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_Red_Text_6
-# 126 "data//maps/GastreeGym/scripts.pory"
+# 113 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Text_3
+# 114 "data//maps/GastreeGym/scripts.pory"
 	giveitem ITEM_FRESH_WATER
-# 127 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_Red_Text_7
-# 128 "data//maps/GastreeGym/scripts.pory"
+# 115 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Text_4
+# 116 "data//maps/GastreeGym/scripts.pory"
 	setflag FLAG_GASTREEGYM_SPENSER_WATER
-# 129 "data//maps/GastreeGym/scripts.pory"
+# 117 "data//maps/GastreeGym/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE3_UNDERPASS_GYM
-# 130 "data//maps/GastreeGym/scripts.pory"
+# 118 "data//maps/GastreeGym/scripts.pory"
 	releaseall
 GastreeGym_Red_1:
 	end
@@ -137,50 +137,89 @@ GastreeGym_Red_1:
 GastreeGym_Red_2:
 # 97 "data//maps/GastreeGym/scripts.pory"
 	goto_if_set FLAG_GASTREEGYM_SPENSER_REWARD, GastreeGym_Red_5
-# 100 "data//maps/GastreeGym/scripts.pory"
-	lockall
 # 101 "data//maps/GastreeGym/scripts.pory"
-	faceplayer
+	lockall
 # 102 "data//maps/GastreeGym/scripts.pory"
+	faceplayer
+# 104 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_1
-# 103 "data//maps/GastreeGym/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, GastreeGym_Red_Text_2, GastreeGym_Red_Text_3
 # 105 "data//maps/GastreeGym/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq GastreeGym_Red_12
-# 108 "data//maps/GastreeGym/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq GastreeGym_Red_15
-GastreeGym_Red_11:
-# 116 "data//maps/GastreeGym/scripts.pory"
-	setflag FLAG_GASTREEGYM_SPENSER_REWARD
-# 117 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_Red_Text_4, MSGBOX_NPC
+	goto GastreeGym_Red_Reward
 	goto GastreeGym_Red_1
 
 GastreeGym_Red_5:
 # 98 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_Red_Text_0, MSGBOX_NPC
-	goto GastreeGym_Red_1
+	end
 
 GastreeGym_Red_8:
-# 121 "data//maps/GastreeGym/scripts.pory"
-	msgbox GastreeGym_Red_Text_5, MSGBOX_NPC
+# 109 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Text_2, MSGBOX_NPC
 	goto GastreeGym_Red_1
 
-GastreeGym_Red_12:
-# 106 "data//maps/GastreeGym/scripts.pory"
-	giveitem ITEM_ROCK_GEM
-	goto GastreeGym_Red_11
 
-GastreeGym_Red_15:
-# 109 "data//maps/GastreeGym/scripts.pory"
-	giveitem ITEM_HARD_STONE
-	goto GastreeGym_Red_11
+GastreeGym_Red_Reward::
+# 125 "data//maps/GastreeGym/scripts.pory"
+	message GastreeGym_Red_Reward_Text_0
+# 126 "data//maps/GastreeGym/scripts.pory"
+	waitmessage
+# 127 "data//maps/GastreeGym/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, GastreeGym_Red_Reward_Text_1, GastreeGym_Red_Reward_Text_2
+# 128 "data//maps/GastreeGym/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq GastreeGym_Red_Reward_2
+GastreeGym_Red_Reward_1:
+# 129 "data//maps/GastreeGym/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq GastreeGym_Red_Reward_5
+GastreeGym_Red_Reward_4:
+# 130 "data//maps/GastreeGym/scripts.pory"
+	goto GastreeGym_Red_Reward_Give
+	return
+
+GastreeGym_Red_Reward_2:
+# 128 "data//maps/GastreeGym/scripts.pory"
+	setvar VAR_0x8006, ITEM_ROCK_GEM
+	goto GastreeGym_Red_Reward_1
+
+GastreeGym_Red_Reward_5:
+# 129 "data//maps/GastreeGym/scripts.pory"
+	setvar VAR_0x8006, ITEM_HARD_STONE
+	goto GastreeGym_Red_Reward_4
+
+
+GastreeGym_Red_Reward_Give::
+# 134 "data//maps/GastreeGym/scripts.pory"
+	showitemdescription
+# 135 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Reward_Give_Text_0, MSGBOX_YESNO
+# 136 "data//maps/GastreeGym/scripts.pory"
+	hideitemdescription
+# 137 "data//maps/GastreeGym/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq GastreeGym_Red_Reward_Give_1
+# 142 "data//maps/GastreeGym/scripts.pory"
+	goto GastreeGym_Red_Reward
+	return
+
+GastreeGym_Red_Reward_Give_1:
+# 138 "data//maps/GastreeGym/scripts.pory"
+	giveitem VAR_0x8006
+# 139 "data//maps/GastreeGym/scripts.pory"
+	setflag FLAG_GASTREEGYM_SPENSER_REWARD
+# 140 "data//maps/GastreeGym/scripts.pory"
+	goto GastreeGym_Red_Reward_End
+	return
+
+
+GastreeGym_Red_Reward_End::
+# 147 "data//maps/GastreeGym/scripts.pory"
+	msgbox GastreeGym_Red_Reward_End_Text_0, MSGBOX_NPC
+	end
 
 
 GastreeGym_WeatheredRock::
-# 138 "data//maps/GastreeGym/scripts.pory"
+# 170 "data//maps/GastreeGym/scripts.pory"
 	msgbox GastreeGym_WeatheredRock_Text_0, MSGBOX_SIGN
 	end
 
@@ -298,28 +337,14 @@ GastreeGym_Red_Text_0:
 	.string "I'll see you there!$"
 
 GastreeGym_Red_Text_1:
-# 102 "data//maps/GastreeGym/scripts.pory"
+# 104 "data//maps/GastreeGym/scripts.pory"
 	.string "Well done champ-in-the-making! Inger\n"
 	.string "told me about your battle. In\l"
 	.string "recognition of your skills, I'd like to\l"
-	.string "give you something. Which of these do\l"
-	.string "you fancy?$"
+	.string "give you something.$"
 
 GastreeGym_Red_Text_2:
-# 103 "data//maps/GastreeGym/scripts.pory"
-	.string "ROCK GEM$"
-
-GastreeGym_Red_Text_3:
-# 103 "data//maps/GastreeGym/scripts.pory"
-	.string "HARD STONE$"
-
-GastreeGym_Red_Text_4:
-# 117 "data//maps/GastreeGym/scripts.pory"
-	.string "Now get on out there and find the next\n"
-	.string "gym - I'll see you there!$"
-
-GastreeGym_Red_Text_5:
-# 121 "data//maps/GastreeGym/scripts.pory"
+# 109 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the Gastree gym!\n"
 	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
@@ -329,8 +354,8 @@ GastreeGym_Red_Text_5:
 	.string "go into the underpass and find him\l"
 	.string "there.$"
 
-GastreeGym_Red_Text_6:
-# 125 "data//maps/GastreeGym/scripts.pory"
+GastreeGym_Red_Text_3:
+# 113 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the Gastree gym!\n"
 	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
@@ -340,14 +365,35 @@ GastreeGym_Red_Text_6:
 	.string "go into the underpass and find him\l"
 	.string "there. Take this with you.$"
 
-GastreeGym_Red_Text_7:
-# 127 "data//maps/GastreeGym/scripts.pory"
+GastreeGym_Red_Text_4:
+# 115 "data//maps/GastreeGym/scripts.pory"
 	.string "Inger loves ROCK type Pokémon, so avoid\n"
 	.string "using FLYING and BUG type Pokémon.\p"
 	.string "Now go get 'em, champ-in-the-making!$"
 
+GastreeGym_Red_Reward_Text_0:
+# 125 "data//maps/GastreeGym/scripts.pory"
+	.string "Which of these do you fancy?$"
+
+GastreeGym_Red_Reward_Text_1:
+# 127 "data//maps/GastreeGym/scripts.pory"
+	.string "Rock Gem$"
+
+GastreeGym_Red_Reward_Text_2:
+# 127 "data//maps/GastreeGym/scripts.pory"
+	.string "Hard Stone$"
+
+GastreeGym_Red_Reward_Give_Text_0:
+# 135 "data//maps/GastreeGym/scripts.pory"
+	.string "Are you sure?$"
+
+GastreeGym_Red_Reward_End_Text_0:
+# 147 "data//maps/GastreeGym/scripts.pory"
+	.string "Now get on out there and find the next\n"
+	.string "gym - I'll see you there!$"
+
 GastreeGym_WeatheredRock_Text_0:
-# 138 "data//maps/GastreeGym/scripts.pory"
+# 170 "data//maps/GastreeGym/scripts.pory"
 	.string "This rock looks like it's been weathered\n"
 	.string "down by constant force.$"
 

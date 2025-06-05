@@ -4,6 +4,31 @@ mapscripts Route7_MapScripts {}
 
 
 
+script Route7_Trainer_A{
+    trainerbattle_single(TRAINER_ROUTE7_A, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Route7_Trainer_B{
+    trainerbattle_single(TRAINER_ROUTE7_B, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Route7_Trainer_C{
+    trainerbattle_single(TRAINER_ROUTE7_C, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Route7_Trainer_D{
+    trainerbattle_single(TRAINER_ROUTE7_D, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
 
 
 

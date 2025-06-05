@@ -230,7 +230,8 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     if (input->pressedStartButton)
     {
         PlaySE(SE_WIN_OPEN);
-        HeatStartMenu_Init();
+        ShowStartMenu();
+//        HeatStartMenu_Init();
         return TRUE;
     }
     
