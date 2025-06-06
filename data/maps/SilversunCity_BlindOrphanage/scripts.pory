@@ -243,7 +243,7 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     waitbuttonpress
     closebraillemessage
     speakername("Sheena")
-    msgbox(format("I got it! I got it!\pFEEBAS EVOLVES WITH A MART PAIL."))
+    msgbox(format("I got it! I got it!\pFEEBAS EVOLVES WITH A WIND SAIL."))
     release
     delay(16)
     speakername("Teacher")

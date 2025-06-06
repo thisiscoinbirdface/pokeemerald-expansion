@@ -135,7 +135,7 @@ Silversun_Braille_Quiz2:
 Silversun_Braille_Quiz3:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "FEEBAS EVOLVES\n"
-	.braille "WITH A HEART\n"
+	.braille "WITH A PRISM\n"
 	.braille "SCALE$"
 
 
