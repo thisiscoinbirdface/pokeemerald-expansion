@@ -1,7 +1,7 @@
 #ifndef GUARD_CONFIG_FISHING_GAME_H
 #define GUARD_CONFIG_FISHING_GAME_H
 
-#define FG_FISH_MINIGAME_ENABLED            TRUE//FLAG_SYS_FISHING_MINIGAME    // If set to FALSE, this fishing minigame will be completely disabled.
+#define FG_FISH_MINIGAME_ENABLED            TRUE //FLAG_SYS_FISHING_MINIGAME    // If set to FALSE, this fishing minigame will be completely disabled.
 
 #define FG_MINIGAME_ON_SEPARATE_SCREEN      FALSE   // If TRUE, play the minigame on its own dedicated screen instead of in the overworld.
 #define FG_DO_DOTS_GAME_BEFORE_MAIN_GAME    FALSE    // If FALSE, the fish will be hooked instantly, instead of doing the dots game.
