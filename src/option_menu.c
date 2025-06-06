@@ -1171,8 +1171,8 @@ static void BikeSurfMus_DrawChoices(u8 selection)
     styles[0] = 0;
     styles[1] = 0;
     styles[selection] = 1;
-    DrawOptionMenuChoice(gText_BikeSurfMusOn, 104, YPOS_BIKESURFMUS, styles[0]);
-    DrawOptionMenuChoice(gText_BikeSurfMusOff, 162, YPOS_BIKESURFMUS, styles[1]);
+    DrawOptionMenuChoice(gText_BikeSurfMusOff, 104, YPOS_BIKESURFMUS, styles[0]);
+    DrawOptionMenuChoice(gText_BikeSurfMusOn, 162, YPOS_BIKESURFMUS, styles[1]);
 }
 
 

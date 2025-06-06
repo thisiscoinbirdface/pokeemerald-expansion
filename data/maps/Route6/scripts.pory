@@ -450,3 +450,71 @@ script Route6_Gabrielle_Victory{
 
 
 
+script Route6_Tutor_Weather{
+    lockall
+    faceplayer
+    msgbox(format("I'm part of the Geological Research Squad. Our scientists track weather patterns while I collect field data! I can teach your Pokémon to change the weather in battle."))
+
+    message(format("Which move should I teach?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Rain Dance", "Sunny Day", "Sandstorm", "Snowscape")  
+
+    if (var(VAR_RESULT) == 0)  {
+        setvar(VAR_0x8005, MOVE_RAIN_DANCE)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 1)  {
+        setvar(VAR_0x8005, MOVE_SUNNY_DAY)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 2)  {
+        setvar(VAR_0x8005, MOVE_SANDSTORM)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 3)  {
+        setvar(VAR_0x8005, MOVE_SNOWSCAPE)
+        goto(Route6_Tutor_TeachMove)
+    }
+    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script Route6_Tutor_Fangs{
+    lockall
+    faceplayer
+    msgbox(format("I train new Candidates in raising strong partners. I can teach your Pokémon some new moves if you like!"))
+
+    message(format("Which move should I teach?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Fire Fang", "Ice Fang", "Thunder Fang", "Psychic Fangs")  
+
+    if (var(VAR_RESULT) == 0)  {
+        setvar(VAR_0x8005, MOVE_FIRE_FANG)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 1)  {
+        setvar(VAR_0x8005, MOVE_ICE_FANG)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 2)  {
+        setvar(VAR_0x8005, MOVE_THUNDER_FANG)
+        goto(Route6_Tutor_TeachMove)
+    }
+    if (var(VAR_RESULT) == 3)  {
+        setvar(VAR_0x8005, MOVE_PSYCHIC_FANGS)
+        goto(Route6_Tutor_TeachMove)
+    }
+    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script Route6_Tutor_TeachMove{
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+    releaseall
+    end
+}

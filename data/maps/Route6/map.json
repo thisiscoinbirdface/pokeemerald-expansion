@@ -106,7 +106,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 47,
-      "y": 99,
+      "y": 96,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -326,7 +326,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 48,
+      "x": 50,
       "y": 114,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -443,7 +443,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_BLAZE)",
-      "x": 52,
+      "x": 54,
       "y": 115,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -466,11 +466,37 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AncientStatue_Route6",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 50,
+      "y": 98,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route6_Tutor_Weather",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 49,
+      "y": 98,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route6_Tutor_Fangs",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 52,
+      "x": 54,
       "y": 108,
       "elevation": 0,
       "dest_map": "MAP_RANGER_INSTITUTE",
@@ -541,7 +567,7 @@
     },
     {
       "type": "sign",
-      "x": 55,
+      "x": 57,
       "y": 109,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
