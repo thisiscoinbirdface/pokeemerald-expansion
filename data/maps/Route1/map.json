@@ -192,7 +192,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_EventScript_HyperTrainer",
-      "flag": "FLAG_SHRINE_QUEST"
+      "flag": "0"
     }
   ],
   "warp_events": [

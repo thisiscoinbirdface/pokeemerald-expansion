@@ -42,6 +42,9 @@ script RivetshoreCity_Gabrielle_Trigger{
     waitmovement(0)
     removeobject(LOCALID_GAB)
 
+    //failsafe for the rivetshore quest
+    setvar(VAR_RIVETSHORE_CEO_QUEST, 0)
+
     setflag(FLAG_RIVETSHORE_GAB)
     releaseall
     end

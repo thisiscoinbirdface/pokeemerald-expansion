@@ -80,14 +80,15 @@ script RivetshoreCity_Construction_CEO{
     }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 2){
-        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique."))
+        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique - it plays a beautiful melody that can wake sleeping Pokemon up!"))
         giveitem(ITEM_POKE_FLUTE)
         setvar(VAR_RIVETSHORE_CEO_QUEST, 3)
     }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 1){
         speakername("CEO")
-        msgbox(format("Trainer! Have you found Percy?"))
+        msgbox(format("Trainer! Have you found Percy?"), MSGBOX_NPC)
+        end
     }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 0){
@@ -99,9 +100,9 @@ script RivetshoreCity_Construction_CEO{
         waitmovement(0)
         delay(16)
 
-        msgbox_delay("CEO", format("Absolutely not! I loved and cared for it since the day it was born. It would never run away!"))
+        msgbox_delay("CEO", format("Absolutely not! I loved and cared for it since the day it was born.\lIt would never run away!"))
         speakername("CEO")
-        msgbox(format("Would you be interested in finding Percy for me? I'll make it well worth your while."), MSGBOX_YESNO)
+        msgbox(format("Would you please find Percy for me?\nI'll make it worth your while!"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
             msgbox_delay("CEO", format("A shame. See you, trainer."))
