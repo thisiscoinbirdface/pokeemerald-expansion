@@ -503,6 +503,12 @@ RivetshoreCity_Mart_Secret:
 # 374 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_GALARICA_WREATH
 # 375 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_DUSK_STONE
+# 376 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_MOON_STONE
+# 377 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_PRISM_SCALE
+# 378 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 

@@ -372,7 +372,10 @@ mart RivetshoreCity_Mart_2{
 mart RivetshoreCity_Mart_Secret{
     ITEM_GALARICA_CUFF
     ITEM_GALARICA_WREATH
-    ITEM_TIME_WATER
+    ITEM_DUSK_STONE
+    ITEM_MOON_STONE
+    ITEM_PRISM_SCALE
+    ITEM_TIME_WATER    
 }
 
 

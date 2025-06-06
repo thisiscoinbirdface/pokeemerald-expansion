@@ -859,7 +859,7 @@ SilversunCity_BlindOrphanage_BrailleGameStart_Text_12:
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_13:
 # 246 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I got it! I got it!\p"
-	.string "FEEBAS EVOLVES WITH A MART PAIL.$"
+	.string "FEEBAS EVOLVES WITH A WIND SAIL.$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_14:
 # 250 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"

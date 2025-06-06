@@ -1,3 +1,23 @@
+raw`
+    .set PRICE_TM_X_SCISSOR, 500
+    .set PRICE_TM_IRON_HEAD, 500
+    .set PRICE_TM_DARK_PULSE, 700
+    .set PRICE_TM_DAZZLING_GLEAM, 700
+    .set PRICE_TM_HAZE, 300
+    .set PRICE_TM_STEALTH_ROCK, 300
+    .set PRICE_TM_ROCK_SLIDE, 900
+    .set PRICE_TM_DRAIN_PUNCH, 900
+
+    .set PRICE_STONES, 300
+
+    .set PRICE_LOADED_DICE, 900
+    .set PRICE_EJECT_BUTTON, 700
+    .set PRICE_WEAKNESS_POLICY, 500
+    .set PRICE_BLUNDER_POLICY, 500
+
+`
+//note: 500 coins costs 5k
+
 mapscripts PellucaCity_GameCorner_MapScripts{}
 
 
@@ -16,6 +36,7 @@ script PellucaCity_GameCorner_NPC2{
 script PellucaCity_GameCorner_NPC2_Doublade{
     playmoncry(SPECIES_DOUBLADE, CRY_MODE_NORMAL)
     msgbox(format("Doublade seems more worried about its trainer than evolving..."))
+    releaseall
     end
 }
 
@@ -24,7 +45,7 @@ script PellucaCity_GameCorner_NPC3{
     end
 }
 script PellucaCity_GameCorner_NPC4{
-    msgbox(format("I'm taking a break. I just lose control playing Voltorb Flip!"), MSGBOX_NPC)
+    msgbox(format("I'm taking a break. I just lose control playing Blackjack!"), MSGBOX_NPC)
     end
 }
 script PellucaCity_GameCorner_NPC5{
@@ -32,12 +53,14 @@ script PellucaCity_GameCorner_NPC5{
     end
 }
 script PellucaCity_GameCorner_NPC6{
-    msgbox(format("Why am I looking at the wall? I can't bear to see my wife toss all our money down the drain!"), MSGBOX_NPC)
+    lockall
+    msgbox(format("I can't bear to see my wife toss all our money down the drain!"))
+    releaseall
     end
 }
 script PellucaCity_GameCorner_NPC7{
     lockall
-    applymovement(8, moves(emote_exclamation_mark jump_in_place_right))
+    applymovement(6, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
     delay(16)
     msgbox(format("Stupid machine! Give me my coins back!"))
@@ -45,7 +68,7 @@ script PellucaCity_GameCorner_NPC7{
     end
 }
 script PellucaCity_GameCorner_NPC8{
-    msgbox(format("The house always wins...unless you're me! I just hit it big!"), MSGBOX_NPC)
+    msgbox(format("The house always wins...unless you're me! I just hit it big in Voltorb Flip!"), MSGBOX_NPC)
     end
 }
 
@@ -59,7 +82,7 @@ script PellucaCity_GameCorner_Tutor{
         goto(PellucaCity_GameCorner_Tutor_Teach)
     }
 
-    msgbox(format("I'm an Ace Trainer! And a gambler! So I guess you'd call me an Ace Gambler! Haha! In battle, I don't strategise or use force. Why bother when you can luck your way through?\p...\pWhat? Don't think it works?\nI can show you in battle!"))
+    msgbox(format("I'm an Ace Trainer! And a gambler!\nSo I guess I'm an Ace Gambler! Haha!\lIn battle, I don't use brains or brawns.\lWhy bother? Just get lucky instead!\p...\pWhat? You think I'm all talk?\nI can show you in battle!"))
 
     trainerbattle_no_intro(TRAINER_PELLUCA_GAMBLER, format("I got unlucky...or did you get lucky?"))
 
@@ -75,7 +98,7 @@ script PellucaCity_GameCorner_Tutor_Teach{
 
     message(format("Which move should I teach?"))
     waitmessage
-    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
         "Bullet Seed", "Icicle Spear", "Rock Blast", "Scale Shot")  
 
     if (var(VAR_RESULT) == 0)  {
@@ -94,17 +117,220 @@ script PellucaCity_GameCorner_Tutor_Teach{
         setvar(VAR_0x8005, MOVE_SCALE_SHOT)
         goto(PellucaCity_GameCorner_TeachMove)
     }
-    msgbox(format("Grab yourself a Loaded Dice for extra power!"), MSGBOX_NPC)
+    msgbox(format("You know where to find me!"), MSGBOX_NPC)
     releaseall
     end
 }
 
 script PellucaCity_GameCorner_TeachMove{
     call(MoveTutor_EventScript_OpenPartyMenu)
-    msgbox(format("Grab yourself a Loaded Dice for extra power!"), MSGBOX_NPC)
+    msgbox(format("Grab a Loaded Dice for extra power!"), MSGBOX_NPC)
     releaseall
     end
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+///Counter people
+//Buy coins, TMs, items
+script PellucaCity_GameCorner_Shop1{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the TM Corner!"))
+    goto(PellucaCity_GameCorner_Shop1_Decide)
+}
+
+script PellucaCity_GameCorner_Shop1_Decide{
+
+
+    showcoinsbox(21, 10)       
+    message(format("Which TM will you purchase?"))
+    waitmessage
+
+    buffernumberstring(STR_VAR_1, PRICE_TM_HAZE)
+        dynmultipush("{STR_VAR_1} Haze", ITEM_TM13)
+    buffernumberstring(STR_VAR_1, PRICE_TM_STEALTH_ROCK)
+        dynmultipush("{STR_VAR_1} Stealth Rock", ITEM_TM37)
+    buffernumberstring(STR_VAR_1, PRICE_TM_X_SCISSOR)
+        dynmultipush("{STR_VAR_1} X-Scissor", ITEM_TM43)
+    buffernumberstring(STR_VAR_1, PRICE_TM_IRON_HEAD)
+        dynmultipush("{STR_VAR_1} Iron Head", ITEM_TM46)
+    buffernumberstring(STR_VAR_1, PRICE_TM_DARK_PULSE)
+        dynmultipush("{STR_VAR_1} Dark Pulse", ITEM_TM47)
+    buffernumberstring(STR_VAR_1, PRICE_TM_DAZZLING_GLEAM)
+        dynmultipush("{STR_VAR_1} Dazzling Gleam", ITEM_TM56)
+    buffernumberstring(STR_VAR_1, PRICE_TM_ROCK_SLIDE)
+        dynmultipush("{STR_VAR_1} Rock Slide", ITEM_TM53)
+    buffernumberstring(STR_VAR_1, PRICE_TM_DRAIN_PUNCH)
+        dynmultipush("{STR_VAR_1} Drain Punch", ITEM_TM58)
+
+
+    dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+
+    hidecoinsbox(21, 10)
+    if (var(VAR_RESULT) == ITEM_TM43) {setvar(VAR_0x8006, ITEM_TM43) setvar(VAR_0x8002, PRICE_TM_X_SCISSOR) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM46) {setvar(VAR_0x8006, ITEM_TM46) setvar(VAR_0x8002, PRICE_TM_IRON_HEAD) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM47) {setvar(VAR_0x8006, ITEM_TM47) setvar(VAR_0x8002, PRICE_TM_DARK_PULSE) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM56) {setvar(VAR_0x8006, ITEM_TM56) setvar(VAR_0x8002, PRICE_TM_DAZZLING_GLEAM) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM13) {setvar(VAR_0x8006, ITEM_TM13) setvar(VAR_0x8002, PRICE_TM_HAZE) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM37) {setvar(VAR_0x8006, ITEM_TM37) setvar(VAR_0x8002, PRICE_TM_STEALTH_ROCK) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM53) {setvar(VAR_0x8006, ITEM_TM53) setvar(VAR_0x8002, PRICE_TM_ROCK_SLIDE) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_TM58) {setvar(VAR_0x8006, ITEM_TM58) setvar(VAR_0x8002, PRICE_TM_DRAIN_PUNCH) goto(PellucaCity_GameCorner_Shop1_BuyConfirm)}
+
+    msgbox(format("Come back any time!\p...sigh, nobody buys anything from me..."))
+    releaseall
+    end
+}
+
+script PellucaCity_GameCorner_Shop1_BuyConfirm{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+
+    if (var(VAR_RESULT) == 0){
+        goto(PellucaCity_GameCorner_Shop1_Decide)
+    }
+
+    giveitem(VAR_0x8006)
+    removecoins(VAR_0x8002)
+
+    msgbox(format("Thank you for your purchase!"))
+    releaseall
+    end
+}
+
+
+
+
+//Stones 
+script PellucaCity_GameCorner_Shop2{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Stone Corner!"))
+    goto(PellucaCity_GameCorner_Shop2_Decide)
+}
+
+script PellucaCity_GameCorner_Shop2_Decide{
+
+
+    showcoinsbox(21, 10)       
+    message(format("Which Stone will you purchase?"))
+    waitmessage
+
+    // buffernumberstring(STR_VAR_1, PRICE_TM_HAZE)
+    //     dynmultipush("{STR_VAR_1} Fire Stone", ITEM_TM13)
+    // buffernumberstring(STR_VAR_1, PRICE_TM_STEALTH_ROCK)
+    //     dynmultipush("{STR_VAR_1} Ice Stone", ITEM_TM37)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Thunder Stone", ITEM_THUNDER_STONE)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Leaf Stone", ITEM_LEAF_STONE)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Sun Stone", ITEM_SUN_STONE)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Shiny Stone", ITEM_SHINY_STONE)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Dawn Stone", ITEM_DAWN_STONE)
+
+
+    dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+
+    hidecoinsbox(21, 10)
+    if (var(VAR_RESULT) == ITEM_THUNDER_STONE) {setvar(VAR_0x8006, ITEM_THUNDER_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_LEAF_STONE) {setvar(VAR_0x8006, ITEM_LEAF_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_SUN_STONE) {setvar(VAR_0x8006, ITEM_SUN_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_SHINY_STONE) {setvar(VAR_0x8006, ITEM_SHINY_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_DAWN_STONE) {setvar(VAR_0x8006, ITEM_DAWN_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+
+    msgbox(format("Come back any time!\p...what's a kid doing with coins?"))
+    releaseall
+    end
+}
+
+script PellucaCity_GameCorner_Shop2_BuyConfirm{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+
+    if (var(VAR_RESULT) == 0){
+        goto(PellucaCity_GameCorner_Shop2_Decide)
+    }
+
+    giveitem(VAR_0x8006)
+    removecoins(VAR_0x8002)
+
+    msgbox(format("Thank you for your purchase!"))
+    releaseall
+    end
+}
+
+
+
+
+
+//Stones 
+script PellucaCity_GameCorner_Shop3{
+    lockall
+    faceplayer
+    msgbox(format("Welcome to the Item Corner!"))
+    goto(PellucaCity_GameCorner_Shop3_Decide)
+}
+
+script PellucaCity_GameCorner_Shop3_Decide{
+
+
+    showcoinsbox(21, 10)       
+    message(format("Which Item will you purchase?"))
+    waitmessage
+
+    buffernumberstring(STR_VAR_1, PRICE_BLUNDER_POLICY)
+        dynmultipush("{STR_VAR_1} Blunder Policy", ITEM_BLUNDER_POLICY)
+    buffernumberstring(STR_VAR_1, PRICE_WEAKNESS_POLICY)
+        dynmultipush("{STR_VAR_1} Weakness Policy", ITEM_WEAKNESS_POLICY)
+    buffernumberstring(STR_VAR_1, PRICE_EJECT_BUTTON)
+        dynmultipush("{STR_VAR_1} Eject Button", ITEM_EJECT_BUTTON)
+    buffernumberstring(STR_VAR_1, PRICE_LOADED_DICE)
+        dynmultipush("{STR_VAR_1} Loaded Dice", ITEM_LOADED_DICE)
+
+
+    dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
+
+    hidecoinsbox(21, 10)
+    if (var(VAR_RESULT) == ITEM_THUNDER_STONE) {setvar(VAR_0x8006, ITEM_BLUNDER_POLICY) setvar(VAR_0x8002, PRICE_BLUNDER_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_LEAF_STONE) {setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY) setvar(VAR_0x8002, PRICE_WEAKNESS_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_SUN_STONE) {setvar(VAR_0x8006, ITEM_EJECT_BUTTON) setvar(VAR_0x8002, PRICE_EJECT_BUTTON) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_SHINY_STONE) {setvar(VAR_0x8006, ITEM_LOADED_DICE) setvar(VAR_0x8002, PRICE_LOADED_DICE) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+
+    msgbox(format("Come back any time!\p...what's a kid doing with coins?"))
+    releaseall
+    end
+}
+
+script PellucaCity_GameCorner_Shop3_BuyConfirm{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+
+    if (var(VAR_RESULT) == 0){
+        goto(PellucaCity_GameCorner_Shop3_Decide)
+    }
+
+    giveitem(VAR_0x8006)
+    removecoins(VAR_0x8002)
+
+    msgbox(format("Thank you for your purchase!"))
+    releaseall
+    end
+}
 
