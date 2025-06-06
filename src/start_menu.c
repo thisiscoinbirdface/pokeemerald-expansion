@@ -298,7 +298,6 @@ void SetDexPokemonPokenavFlags(void) // unused
 
 static void BuildStartMenuActions(void)
 {
-    DebugPrintf("Flag: %u", TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING));
     sNumStartMenuActions = 0;
 
     if (IsOverworldLinkActive() == TRUE)

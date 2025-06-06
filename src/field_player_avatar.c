@@ -380,7 +380,6 @@ static u8 ObjectEventCB2_NoMovement2(void)
 
 void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
 {
-    DebugPrintf("Flag: %u", TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING));    
     struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
 
     HideShowWarpArrow(playerObjEvent);

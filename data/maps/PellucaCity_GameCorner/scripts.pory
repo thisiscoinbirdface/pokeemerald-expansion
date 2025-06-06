@@ -1,3 +1,110 @@
 mapscripts PellucaCity_GameCorner_MapScripts{}
 
 
+
+
+
+
+script PellucaCity_GameCorner_NPC1{
+    msgbox(format("I don't have a Coin Case so I can't play. They sell them up at the Mirroh Base Camp if you want one."), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC2{
+    msgbox(format("Don't disturb me! I need to win big, buy a Dusk Stone and evolve my Doublade!"), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC2_Doublade{
+    playmoncry(SPECIES_DOUBLADE, CRY_MODE_NORMAL)
+    msgbox(format("Doublade seems more worried about its trainer than evolving..."))
+    end
+}
+
+script PellucaCity_GameCorner_NPC3{
+    msgbox(format("Another loss! I hate this!"), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC4{
+    msgbox(format("I'm taking a break. I just lose control playing Voltorb Flip!"), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC5{
+    msgbox(format("Hehe, this'll be my lucky day!"), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC6{
+    msgbox(format("Why am I looking at the wall? I can't bear to see my wife toss all our money down the drain!"), MSGBOX_NPC)
+    end
+}
+script PellucaCity_GameCorner_NPC7{
+    lockall
+    applymovement(8, moves(emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Stupid machine! Give me my coins back!"))
+    releaseall
+    end
+}
+script PellucaCity_GameCorner_NPC8{
+    msgbox(format("The house always wins...unless you're me! I just hit it big!"), MSGBOX_NPC)
+    end
+}
+
+//tutor
+script PellucaCity_GameCorner_Tutor{    
+    lockall
+    faceplayer
+
+    if (flag(FLAG_PELLUCA_GC_TUTOR_BATTLE)){
+        msgbox(format("So you've realised the power of luck, have you?"))
+        goto(PellucaCity_GameCorner_Tutor_Teach)
+    }
+
+    msgbox(format("I'm an Ace Trainer! And a gambler! So I guess you'd call me an Ace Gambler! Haha! In battle, I don't strategise or use force. Why bother when you can luck your way through?\p...\pWhat? Don't think it works?\nI can show you in battle!"))
+
+    trainerbattle_no_intro(TRAINER_PELLUCA_GAMBLER, format("I got unlucky...or did you get lucky?"))
+
+    setflag(FLAG_PELLUCA_GC_TUTOR_BATTLE)
+    msgbox(format("Incredible! So strong...and you're using such unlucky moves. Let me teach your Pokemon how to be luckier."))
+    goto(PellucaCity_GameCorner_Tutor_Teach)
+
+    releaseall
+    end
+}
+
+script PellucaCity_GameCorner_Tutor_Teach{
+
+    message(format("Which move should I teach?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Bullet Seed", "Icicle Spear", "Rock Blast", "Scale Shot")  
+
+    if (var(VAR_RESULT) == 0)  {
+        setvar(VAR_0x8005, MOVE_BULLET_SEED)
+        goto(PellucaCity_GameCorner_TeachMove)
+    }
+    if (var(VAR_RESULT) == 1)  {
+        setvar(VAR_0x8005, MOVE_ICICLE_SPEAR)
+        goto(PellucaCity_GameCorner_TeachMove)
+    }
+    if (var(VAR_RESULT) == 2)  {
+        setvar(VAR_0x8005, MOVE_ROCK_BLAST)
+        goto(PellucaCity_GameCorner_TeachMove)
+    }
+    if (var(VAR_RESULT) == 3)  {
+        setvar(VAR_0x8005, MOVE_SCALE_SHOT)
+        goto(PellucaCity_GameCorner_TeachMove)
+    }
+    msgbox(format("Grab yourself a Loaded Dice for extra power!"), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script PellucaCity_GameCorner_TeachMove{
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    msgbox(format("Grab yourself a Loaded Dice for extra power!"), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+
+

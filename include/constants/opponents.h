@@ -219,7 +219,7 @@
 #define TRAINER_PELLUCA_QWILSQUAD_A                  147
 #define TRAINER_PELLUCA_QWILSQUAD_B                  148
 #define TRAINER_PELLUCA_QWILSQUAD_BOSS               149
-#define TRAINER_PELLUCA_DETECTIVE                    150
+#define TRAINER_PELLUCA_GAMBLER                    150
 
 //Route 8
 #define TRAINER_ROUTE8_A                             151

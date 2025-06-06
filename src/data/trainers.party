@@ -6546,23 +6546,32 @@ Level: 32
 
 
 
-=== TRAINER_PELLUCA_DETECTIVE ===
-Name: STEVE
+=== TRAINER_PELLUCA_GAMBLER ===
+Name: Chaina
 Difficulty: Easy
-Class: Pokemaniac
-Pic: Pokemaniac
-Gender: Male
-Music: Suspicious
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Rich
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Aggron
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Rhydon
-Level: 35
+Feebas
+Level: 29
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Scale Shot
+
+Bayleef
+Level: 29
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Bullet Seed
+
+Dugtrio-Alola
+Level: 29
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Rock Blast
+
 
 
 

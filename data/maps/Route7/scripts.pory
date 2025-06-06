@@ -5,23 +5,23 @@ mapscripts Route7_MapScripts {}
 
 
 script Route7_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE7_A, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_ROUTE7_A, format("I worked double shifts at the Pelluca Restaurant all week.\pTime to let out some steam!"), format("You ruined my day off!"))
+    msgbox(format("What? Can't a waitress have a day off?"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_B{
-    trainerbattle_single(TRAINER_ROUTE7_B, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_ROUTE7_B, format("My parents want me become an actress, so I practice battling here in secret!"), format("Maybe I should be an actress!"))
+    msgbox(format("I know anybody would want to be me with my looks, but I only care for battling!"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_C{
-    trainerbattle_single(TRAINER_ROUTE7_C, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_ROUTE7_C, format("My big brother and I are going camping! Don't get in our way!"), format("I wanted to go camping!"))
+    msgbox(format("My brother travels all around Cormoria. He's so cool!"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE7_D, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_ROUTE7_D, format("Every year I take my sister camping. A battle will get us going!"), format("That got us going alright!"))
+    msgbox(format("I don't get to be home much. That's why I cherish the time I get with my sister."), MSGBOX_NPC)
     end
 }
 
@@ -32,16 +32,27 @@ script Route7_Trainer_D{
 
 
 script Route7_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I was scared of going to Pelluca City because I heard about the Qwilsquad. Are they gone?"), MSGBOX_NPC)
     end
 }
 script Route7_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("They're closing the gym at Mirroh Base Camp! I should hurry if I want my badge."), MSGBOX_NPC)
     end
 }
 script Route7_NPC3{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Do you think the cable car attendant will go out with me?"), MSGBOX_YESNO)
     end
+    // if(var(VAR_RESULT) == 0){
+    //     msgbox(format("Am I really that bad?"), MSGBOX_YESNO)
+    //     if(var(VAR_RESULT) == 1){
+    //         msgbox(format("Well it doesn't matter! I gotta be my best self and try."), MSGBOX_YESNO)
+    //     } else {
+    //         msgbox(format("Yeah, you're right. I should be more confident in myself!"), MSGBOX_YESNO)
+    //     }
+    // } else {
+    //     msgbox(format("I sure hope so!"), MSGBOX_YESNO)
+    // }
+    // end
 }
 
 
