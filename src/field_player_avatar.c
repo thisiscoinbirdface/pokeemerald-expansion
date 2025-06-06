@@ -2285,20 +2285,13 @@ static bool32 Fishing_StartMinigame(struct Task *task)
     }
     else if (FG_MINIGAME_ON_SEPARATE_SCREEN == FALSE)
     {
-        task->data[0] = 0;
-        task->data[1] = 0;
-        task->data[2] = 0;
-        task->data[3] = 0;
-        task->data[4] = 0;
-        task->data[5] = 0;
-        task->data[6] = 0;
-        task->data[7] = 0;
-        task->data[8] = 0;
-        task->data[9] = 0;
-        task->data[10] = 0;
-        task->data[11] = 0;
-        task->data[12] = 0;
-        task->data[13] = 0;
+        u8 i;
+
+        for (i = 0; i <= 13; i++)
+        {
+            task->data[i] = 0;
+        }
+        
         task->func = Task_InitOWFishingMinigame;
     }
     return FALSE;
