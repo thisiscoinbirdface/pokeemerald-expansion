@@ -14,7 +14,11 @@ mapscripts Championship_Hotel_Rooms_MapScripts{}
 
 //outside
 script Championship_Hotel_Rooms_NPC1{
-    msgbox(format("I can't wait for the Championship to start! Who are you rooting for?"), MSGBOX_NPC)
+    if (flag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)){
+        msgbox(format("Who were those two people?\nThey were in such a hurry!"), MSGBOX_NPC)
+        end        
+    }
+    msgbox(format("I can't wait for the Championship!\nWhich trainer are you rooting for?"), MSGBOX_NPC)
     end
 }
 //room 1 with mon
@@ -60,7 +64,7 @@ script Championship_Hotel_Rooms_ChooseMove{
     //steel beam, draco meteor, overheat, leaf storm, gunk shot, meteor beam, hydro pump 
     message(format("Which move should I teach?"))
     waitmessage
-    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
         "Steel Beam", "Draco Meteor", "Overheat", "Leaf Storm",
         "Hydro Pump", "Gunk Shot", "Meteor Beam")  
 
@@ -115,7 +119,7 @@ script Championship_Hotel_Rooms_TeachMove{
 
 //room 3 - man
 script Championship_Hotel_Rooms_NPC4{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I booked front-row seats to the finals months in advance!"), MSGBOX_NPC)
     end
 }
 
@@ -129,7 +133,94 @@ script Championship_Hotel_Rooms_NPC4{
 
 
 script Championship_Hotel_Rooms_Kohla{
+    if (flag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)){
+        msgbox(format("It's locked."), MSGBOX_SIGN)
+        releaseall
+        end
+    }
+
     //kohla second-to-last cutscene
+    lockall
+
+    hidefollower    
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    msgbox_delay("Kohla", format("How did you two get in here?"))
+    msgbox_delay("Melea", format("Calm down! We're not here to fight."))
+    msgbox_delay("Kohla", format("Give me a good reason I shouldn't call the police right now."))
+    msgbox_delay("Moxie", format("Will you give us a moment to talk at least? Like Melea said, we're not here to fight. Just listen to us."))
+    msgbox_delay("Kohla", format("...fine. Hurry up then.\nI've got a tournament to win."))
+    msgbox_delay("Melea", format("That's why we're here, Kohla."))
+    msgbox_delay("Moxie", format("Have you see the rest of the competitors this year?\lDo an of the names stick out?"))
+    msgbox_delay("Kohla", format("If you're talking about that former grunt, Gabrielle -"))
+    msgbox_delay("Melea", format("Do NOT utter her name!\p...\pNo, not her. She's of no consequence."))
+    msgbox_delay("Kohla", format("Then who?"))
+    msgbox_delay("Moxie", format("It's obvious, Kohla.\pWe're talking about {PLAYER}."))
+    msgbox_delay("Kohla", format("...\pI'm listening."))
+    msgbox_delay("Melea", format("An enemy of an enemy is a friend.\nAll we want to do is offer a bit of help against {PLAYER}. Just in case you two get matched against each other."))
+    msgbox_delay("Moxie", format("We're taking a risk admitting this...but the Gym Leaders didn't find all our Ancient Pokemon. We've still got one.\pWhat would you say to using it in the tournament?"))
+    msgbox_delay("Kohla", format("An enemy of an enemy is a friend, eh?"))
+    msgbox_delay("Melea", format("Exactly."))
+    msgbox_delay("Kohla", format("...\pBut you're not friends of mine.\pIf you think that I'll ever take any help from anyone - much less the likes of you two - then you're mistaken!\pI don't NEED help!\pI'm better than {PLAYER}! Do you understand? I can beat {PLAYER} with my own Pokemon!\pNow get out of my room!"))
+    msgbox_delay("Melea", format("...\pA shame."))
+    msgbox_delay("Moxie", format("Good luck, Ace Rookie.\nWe'll be in touch."))    
+
+    //exit
+    //player move
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_left))
+    waitmovement(0)
+
+    //dooropen
+    opendoor(11, 1)
+    waitdooranim
+
+    addobject(LOCALID_MELEA)
+    setobjectxy(LOCALID_MELEA, 11, 1)
+
+    applymovement(LOCALID_MELEA, moves(walk_down))
+    waitmovement(0)
+
+    addobject(LOCALID_MOXIE)
+    setobjectxy(LOCALID_MOXIE, 11, 1)
+
+    applymovement(LOCALID_MELEA, moves(walk_down))
+    applymovement(LOCALID_MOXIE, moves(walk_down))
+    waitmovement(0)
+
+    closedoor(11, 1)
+
+    applymovement(LOCALID_MELEA, moves(walk_left * 2 face_right))
+    applymovement(LOCALID_MOXIE, moves(walk_left * 2 face_right))
+    waitmovement(0)
+
+    delay(24)
+
+    applymovement(LOCALID_MELEA, moves(walk_left emote_exclamation_mark jump_in_place_right))
+    applymovement(LOCALID_MOXIE, moves(walk_left emote_exclamation_mark jump_in_place_right))
+    waitmovement(0)
+    delay(36)
+
+    applymovement(LOCALID_MELEA, moves(face_up))
+    applymovement(LOCALID_MOXIE, moves(face_down))
+    waitmovement(0)
+
+    delay(40)
+    applymovement(LOCALID_MELEA, moves(walk_fast_left * 4))
+    applymovement(LOCALID_MOXIE, moves(walk_fast_left * 4))
+    waitmovement(0)
+
+    removeobject(LOCALID_MOXIE)
+    removeobject(LOCALID_MELEA)
+
+    delay(2)
+
+    setflag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)
+
+    releaseall
+    end
 }
 
 

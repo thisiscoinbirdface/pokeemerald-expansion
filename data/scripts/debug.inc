@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_CHAMPIONSHIP_HOTEL_ROOMS, 18, 22
+	warp MAP_CHAMPIONSHIP_R5, 4, 9
 	release
 	end
 
