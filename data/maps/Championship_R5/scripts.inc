@@ -114,7 +114,7 @@ Championship_R5::
 # 90 "data//maps/Championship_R5/scripts.pory"
 	waitse
 # 91 "data//maps/Championship_R5/scripts.pory"
-	delay 24
+	delay 48
 # 94 "data//maps/Championship_R5/scripts.pory"
 	playse SE_POKENAV_CALL
 # 95 "data//maps/Championship_R5/scripts.pory"

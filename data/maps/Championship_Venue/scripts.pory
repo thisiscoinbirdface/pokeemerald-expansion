@@ -10,6 +10,11 @@ mapscripts Championship_Venue_MapScripts{}
 
 
 script ChampionshipVenue_SignUp{
+    if (!flag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)){
+        msgbox(format("Welcome, trainer, to this years\nCormoria Pokemon Championships!\lRegistration will open shortly.\pWe're waiting for all the participants\nto arrive at the venue."), MSGBOX_NPC)
+        end
+    }
+
     if (flag(FLAG_CHAMP_SIGNUP_DONE)){
         msgbox(format("Please head to your designated battle hall through the right.\pGood luck, trainer!"), MSGBOX_NPC)
         end
