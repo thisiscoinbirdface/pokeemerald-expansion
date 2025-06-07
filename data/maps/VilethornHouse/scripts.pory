@@ -31,7 +31,7 @@ script VilethornHouse_NPC2{
         if (var(VAR_RESULT) == 3)  {
             setvar(VAR_0x8005, MOVE_PROTECT)
             goto(VilethornHouse_Tutor_TeachMove)
-        }        
+        }
     }
 
     msgbox(format("Come again whenever you like!"), MSGBOX_NPC)

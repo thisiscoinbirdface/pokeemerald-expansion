@@ -462,13 +462,13 @@ SilversunCity_Sewers_Market_C_2:
 # 347 "data//maps/SilversunCity_Sewers/scripts.pory"
 SilversunCity_Sewers_Market_C_Inventory:
 # 348 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_TOXIC_ORB
 # 349 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.2byte ITEM_METAL_COAT
+	.2byte ITEM_BLACK_AUGURITE
 # 350 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.2byte ITEM_RAZOR_CLAW
+	.2byte ITEM_METAL_COAT
 # 351 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.2byte ITEM_HEART_SCALE
+	.2byte ITEM_RAZOR_CLAW
 # 352 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.2byte ITEM_CHIPPED_POT
 # 353 "data//maps/SilversunCity_Sewers/scripts.pory"

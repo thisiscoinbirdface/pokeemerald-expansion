@@ -357,6 +357,7 @@ mart RivetshoreCity_Mart_1{
     ITEM_MAX_REVIVE
     ITEM_FULL_RESTORE
     ITEM_FULL_HEAL
+    ITEM_FLAME_ORB
 }
 
 mart RivetshoreCity_Mart_2{

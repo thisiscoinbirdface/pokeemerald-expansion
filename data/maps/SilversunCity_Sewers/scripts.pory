@@ -345,10 +345,10 @@ script SilversunCity_Sewers_Market_C{
 
 //evo scyther, cups and sneasler
 mart SilversunCity_Sewers_Market_C_Inventory{
+    ITEM_TOXIC_ORB
     ITEM_BLACK_AUGURITE
     ITEM_METAL_COAT
     ITEM_RAZOR_CLAW
-    ITEM_HEART_SCALE
     ITEM_CHIPPED_POT
     ITEM_MASTERPIECE_TEACUP
 }

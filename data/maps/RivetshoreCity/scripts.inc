@@ -474,41 +474,43 @@ RivetshoreCity_Mart_1:
 	.2byte ITEM_FULL_RESTORE
 # 359 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_FULL_HEAL
+# 360 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_FLAME_ORB
 	.2byte ITEM_NONE
 
 	.align 2
-# 362 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_2:
 # 363 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM19
+RivetshoreCity_Mart_2:
 # 364 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM23
+	.2byte ITEM_TM19
 # 365 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM26
+	.2byte ITEM_TM23
 # 366 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM30
+	.2byte ITEM_TM26
 # 367 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM33
+	.2byte ITEM_TM30
 # 368 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM34
+	.2byte ITEM_TM33
 # 369 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TM34
+# 370 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TM36
 	.2byte ITEM_NONE
 
 	.align 2
-# 372 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 373 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 374 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_GALARICA_CUFF
 # 375 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_GALARICA_WREATH
 # 376 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_MOON_STONE
+	.2byte ITEM_DUSK_STONE
 # 377 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_MOON_STONE
 # 378 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_PRISM_SCALE
+# 379 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 

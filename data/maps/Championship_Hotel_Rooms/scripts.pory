@@ -1,2 +1,51 @@
+raw`
+    .set LOCALID_MELEA, 7
+    .set LOCALID_MOXIE, 8
+`
+
 mapscripts Championship_Hotel_Rooms_MapScripts{}
+
+
+
+
+
+
+
+
+
+script Championship_Hotel_Rooms_NPC1{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Championship_Hotel_Rooms_NPC2{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Championship_Hotel_Rooms_Mon{
+    playmoncry(SPECIES_TREECKO, CRY_MODE_NORMAL)
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Championship_Hotel_Rooms_NPC3{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Championship_Hotel_Rooms_NPC4{
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+
+
+
+
+
+
+
+
+
+
+script Championship_Hotel_Rooms_Kohla{
+    //kohla second-to-last cutscene
+}
+
 

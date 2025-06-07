@@ -48,13 +48,11 @@ script Champ_Mart_C{
 }
 //held items
 mart Champ_Mart_Inventory_A{
-    ITEM_LOADED_DICE
-    ITEM_CLEAR_AMULET
-    ITEM_BLUNDER_POLICY
     ITEM_SAFETY_GOGGLES
     ITEM_THROAT_SPRAY
-    ITEM_EJECT_BUTTON
-    ITEM_WEAKNESS_POLICY  
+    ITEM_FOCUS_SASH
+    ITEM_PROTECTIVE_PADS
+    
 }
 //TMs
 mart Champ_Mart_Inventory_B{

@@ -82,81 +82,75 @@ Champ_Mart_C_5:
 # 50 "data//maps/Championship_Pokemart/scripts.pory"
 Champ_Mart_Inventory_A:
 # 51 "data//maps/Championship_Pokemart/scripts.pory"
-	.2byte ITEM_LOADED_DICE
-# 52 "data//maps/Championship_Pokemart/scripts.pory"
-	.2byte ITEM_CLEAR_AMULET
-# 53 "data//maps/Championship_Pokemart/scripts.pory"
-	.2byte ITEM_BLUNDER_POLICY
-# 54 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_SAFETY_GOGGLES
-# 55 "data//maps/Championship_Pokemart/scripts.pory"
+# 52 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_THROAT_SPRAY
-# 56 "data//maps/Championship_Pokemart/scripts.pory"
-	.2byte ITEM_EJECT_BUTTON
-# 57 "data//maps/Championship_Pokemart/scripts.pory"
-	.2byte ITEM_WEAKNESS_POLICY
+# 53 "data//maps/Championship_Pokemart/scripts.pory"
+	.2byte ITEM_FOCUS_SASH
+# 54 "data//maps/Championship_Pokemart/scripts.pory"
+	.2byte ITEM_PROTECTIVE_PADS
 	.2byte ITEM_NONE
 
 	.align 2
-# 60 "data//maps/Championship_Pokemart/scripts.pory"
+# 58 "data//maps/Championship_Pokemart/scripts.pory"
 Champ_Mart_Inventory_B:
-# 61 "data//maps/Championship_Pokemart/scripts.pory"
+# 59 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM06
-# 62 "data//maps/Championship_Pokemart/scripts.pory"
+# 60 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM01
-# 63 "data//maps/Championship_Pokemart/scripts.pory"
+# 61 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM02
-# 64 "data//maps/Championship_Pokemart/scripts.pory"
+# 62 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM16
-# 65 "data//maps/Championship_Pokemart/scripts.pory"
+# 63 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM21
-# 66 "data//maps/Championship_Pokemart/scripts.pory"
+# 64 "data//maps/Championship_Pokemart/scripts.pory"
 	.2byte ITEM_TM22
 	.2byte ITEM_NONE
 
 	.align 2
-# 68 "data//maps/Championship_Pokemart/scripts.pory"
+# 66 "data//maps/Championship_Pokemart/scripts.pory"
 Champ_Mart_Inventory_C:
 	.2byte ITEM_NONE
 
 Champ_Mart_NPC_A::
-# 78 "data//maps/Championship_Pokemart/scripts.pory"
+# 76 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_A_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Mart_NPC_A_Mon::
-# 82 "data//maps/Championship_Pokemart/scripts.pory"
+# 80 "data//maps/Championship_Pokemart/scripts.pory"
 	playmoncry SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL
-# 83 "data//maps/Championship_Pokemart/scripts.pory"
+# 81 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_A_Mon_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Mart_NPC_B::
-# 88 "data//maps/Championship_Pokemart/scripts.pory"
+# 86 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_B_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Mart_NPC_C::
-# 93 "data//maps/Championship_Pokemart/scripts.pory"
+# 91 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_C_Text_0, MSGBOX_NPC
 	end
 
 
 Champ_Mart_NPC_Gloria::
-# 105 "data//maps/Championship_Pokemart/scripts.pory"
+# 103 "data//maps/Championship_Pokemart/scripts.pory"
 	speakername Champ_Mart_NPC_Gloria_Text_0
-# 106 "data//maps/Championship_Pokemart/scripts.pory"
+# 104 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_Gloria_Text_1, MSGBOX_NPC
 	end
 
 
 Champ_Mart_NPC_Bombirdier::
-# 110 "data//maps/Championship_Pokemart/scripts.pory"
+# 108 "data//maps/Championship_Pokemart/scripts.pory"
 	playmoncry SPECIES_BOMBIRDIER, CRY_MODE_NORMAL
-# 111 "data//maps/Championship_Pokemart/scripts.pory"
+# 109 "data//maps/Championship_Pokemart/scripts.pory"
 	msgbox Champ_Mart_NPC_Bombirdier_Text_0, MSGBOX_NPC
 	end
 
@@ -192,30 +186,30 @@ Champ_Mart_C_Text_3:
 	.string "Damage Reduction$"
 
 Champ_Mart_NPC_A_Text_0:
-# 78 "data//maps/Championship_Pokemart/scripts.pory"
+# 76 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "My Lilligant knows Bullet Seed. With the\n"
 	.string "Loaded Dice I bought, we can't lose!$"
 
 Champ_Mart_NPC_A_Mon_Text_0:
-# 83 "data//maps/Championship_Pokemart/scripts.pory"
+# 81 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Lilligant is rolling the Loaded Dice in\n"
 	.string "its hand.$"
 
 Champ_Mart_NPC_B_Text_0:
-# 88 "data//maps/Championship_Pokemart/scripts.pory"
+# 86 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "This place must be raking in the cash!$"
 
 Champ_Mart_NPC_C_Text_0:
-# 93 "data//maps/Championship_Pokemart/scripts.pory"
+# 91 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "It's a shame they don't have anything\n"
 	.string "catering to fishermen.$"
 
 Champ_Mart_NPC_Gloria_Text_0:
-# 105 "data//maps/Championship_Pokemart/scripts.pory"
+# 103 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Gloria$"
 
 Champ_Mart_NPC_Gloria_Text_1:
-# 106 "data//maps/Championship_Pokemart/scripts.pory"
+# 104 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "{PLAYER}! A welcome surprise.\n"
 	.string "Are you competing this year?\p"
 	.string "...\p"
@@ -226,5 +220,5 @@ Champ_Mart_NPC_Gloria_Text_1:
 	.string "unable to decide...$"
 
 Champ_Mart_NPC_Bombirdier_Text_0:
-# 111 "data//maps/Championship_Pokemart/scripts.pory"
+# 109 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Bombirdier looks confused...$"

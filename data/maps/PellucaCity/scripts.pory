@@ -961,17 +961,46 @@ script PellucaCity_EventScripts_Gabrielle{
     speakername("Gabrielle")
     msgbox(format("I want you to have this. As a thank you. For saving me - not just once, but so many times. You're a strong trainer, but more importantly - you're a good person. I hope to be like you."))
     release
-    giveitem(ITEM_CHOICE_BAND)
+    goto(PellucaCity_Gab_ChoiceItem)
+    }
+}
+
+script PellucaCity_Gab_ChoiceItem{
+    speakername("Gabrielle")
+    message(format("Choose something you like."))
+    waitmessage
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Choice Specs", "Choice Band", "Choice Scarf") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_CHOICE_SPECS)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_CHOICE_BAND)}
+    if (var(VAR_RESULT) == 2){setvar(VAR_0x8006, ITEM_CHOICE_SCARF)}
+    goto(PellucaCity_Gab_ChoiceItem_Give)
+}
+
+script PellucaCity_Gab_ChoiceItem_Give{
+    showitemdescription
+    msgbox(format("Are you sure?"), MSGBOX_YESNO)
+    hideitemdescription
+    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(PellucaCity_Gab_ChoiceItem_End)} 
+    else {goto(PellucaCity_Gab_ChoiceItem)}
+}
+
+script PellucaCity_Gab_ChoiceItem_End{
     speakername("Gabrielle")
     msgbox(format("The choices we make define who we are.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already.\pBest of luck, {PLAYER}."))
     release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))
     waitmovement(0)
-    }
     releaseall
-
+    end
 }
+
+
+
+
+
+
+
 
 script PellucaCity_Zorua{
     lockall
