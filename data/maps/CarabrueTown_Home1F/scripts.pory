@@ -59,12 +59,12 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_B_DASH)    
 
     speakername("Mom") 
-    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. You can switch between holding B and pressing B in the options!"))
+    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. You can switch between hold and toggle modes in the options!"))
     release
     delay(8)
 
     speakername("Mom") 
-    msgbox(format("And before you zip off, don't forget to take the welcome package they sent you - it's upstairs!"))
+    msgbox(format("And before you zip off, don't forget to take the Welcome Package the lab sent you - it's upstairs in your bedroom!"))
     release
 
     //Set var to done
@@ -73,8 +73,9 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_QUEST_MENU_GET)
     startquest(QUEST_LAB_FIRST_DAY)
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1)
-    msgbox(format("You can check active quests in the Quest Log via the Start Menu!"), MSGBOX_SIGN)
-
+    msgbox(format("You can check active quests in the Quest Log via the Start Menu!"), MSGBOX_POKENAV)
+    release
+    
     //Mom sits back down
     applymovement(1, moves(
         walk_left *2
@@ -100,7 +101,7 @@ script CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage{
     lockall
 
     if (!flag(FLAG_WELCOMEPACKAGE_GET)){
-        msgbox(format("I should get my Welcome Package before leaving!"))
+        msgbox(format("I should get my Welcome Package from my room before leaving!"))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
         waitmovement(0)
     }
@@ -120,30 +121,37 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
 	incrementgamestat(GAME_STAT_RESTED_AT_HOME)
 
     //nuzkit
-    if (!flag(FLAG_SYS_CHEATS_ENABLED)){
+    checkitem(ITEM_NUZKIT)
+    if (var(VAR_RESULT) == 0){
 
         speakername("Mom")     
         message(format("My baby is going on an adventure!\nDo you want a care package from Mom?"))
         waitmessage
+
+        msgbox(format("Mom's Nuzkit is intended for hardcore nuzlockes. It's not recommended for a vanilla experience."), MSGBOX_POKENAV)
+
+        speakername("Mom")     
+        message(format("Do you want a care package from Mom?"))
+
         dynmultichoice(17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-            "Yes please!", "No Mom...")    
+            "Yes please!", "No Mom...")
         release
         
         if (var(VAR_RESULT) == 0){
             delay(8)
-            speakername("Mom")     
-            msgbox(format("Here you go!"))    
+            speakername("Mom")
+            msgbox(format("Here you go!"))
             speakername(NULL)
 
-            giveitem(ITEM_NUZKIT)       
+            giveitem(ITEM_NUZKIT)
 
             delay(8)
 
             msgbox(format("Mom's Nuzkit contains a variety of tools to help you in your journey.\lTalk to your follower to use it!"), MSGBOX_POKENAV)
             release
         } else {
-            speakername("Mom")     
-            msgbox(format("I know you can handle yourself.\nTake care, {PLAYER}!"))            
+            speakername("Mom")
+            msgbox(format("I know you can handle yourself.\nTake care, {PLAYER}!"))
             releaseall
             end
         }

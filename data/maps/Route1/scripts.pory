@@ -31,7 +31,7 @@ script Route1_TrainerBattle_Strong_A {
 script Route1_TrainerBattle_B {
 
     trainerbattle_single(TRAINER_ROUTE1_B, format("I love FLYING-type Pokémon. Let me show you my favourite!"), "My FLYING type Pokémon lost!")
-    msgbox(format("I guess a good Pokémon team\pneeds type variety!"))
+    msgbox(format("I guess a good Pokémon team needs\ngood type variety!"))
     release
     end
 }
@@ -44,7 +44,7 @@ script Route1_TrainerBattle_Strong_B {
 }
 
 script Route1_TrainerBattle_C {
-    trainerbattle_single(TRAINER_ROUTE1_C, format("I came from Gastree City to find BUG-type Pokémon...but I found you instead!"), "Well, back to bug-hunting for me.")
+    trainerbattle_single(TRAINER_ROUTE1_C, format("I came here to find BUG-type Pokémon...but I found you instead!"), "Back to bug-hunting for me!")
     msgbox(format("There are many bug catchers like me. It's a huge hobby!"))
     release
     end

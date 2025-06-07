@@ -60,7 +60,7 @@ Route1_TrainerBattle_C::
 
 Route1_TrainerBattle_Strong_C::
 # 53 "data//maps/Route1/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE1_STRONG_C, Route1_TrainerBattle_Strong_C_Text_0, Route1_TrainerBattle_C_Text_1
+	trainerbattle_single TRAINER_ROUTE1_STRONG_C, Route1_TrainerBattle_Strong_C_Text_0, Route1_TrainerBattle_Strong_C_Text_1
 # 54 "data//maps/Route1/scripts.pory"
 	msgbox Route1_TrainerBattle_C_Text_2
 # 55 "data//maps/Route1/scripts.pory"
@@ -110,8 +110,8 @@ Route1_TrainerBattle_B_Text_1:
 
 Route1_TrainerBattle_B_Text_2:
 # 34 "data//maps/Route1/scripts.pory"
-	.string "I guess a good Pokémon team\p"
-	.string "needs type variety!$"
+	.string "I guess a good Pokémon team needs\n"
+	.string "good type variety!$"
 
 Route1_TrainerBattle_Strong_B_Text_0:
 # 40 "data//maps/Route1/scripts.pory"
@@ -126,13 +126,12 @@ Route1_TrainerBattle_Strong_B_Text_1:
 
 Route1_TrainerBattle_C_Text_0:
 # 47 "data//maps/Route1/scripts.pory"
-	.string "I came from Gastree City to find\n"
-	.string "BUG-type Pokémon...but I found you\l"
-	.string "instead!$"
+	.string "I came here to find BUG-type\n"
+	.string "Pokémon...but I found you instead!$"
 
 Route1_TrainerBattle_C_Text_1:
 # 47 "data//maps/Route1/scripts.pory"
-	.string "Well, back to bug-hunting for me.$"
+	.string "Back to bug-hunting for me!$"
 
 Route1_TrainerBattle_C_Text_2:
 # 48 "data//maps/Route1/scripts.pory"
@@ -143,3 +142,7 @@ Route1_TrainerBattle_Strong_C_Text_0:
 # 53 "data//maps/Route1/scripts.pory"
 	.string "My BUG types and I have been training\n"
 	.string "so much! You'll see!$"
+
+Route1_TrainerBattle_Strong_C_Text_1:
+# 53 "data//maps/Route1/scripts.pory"
+	.string "Well, back to bug-hunting for me.$"

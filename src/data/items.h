@@ -12880,7 +12880,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Give to Nurse Joy\n"
             "on any route to heal\n"
-            "your {PKMN}."),
+            "your Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14297,7 +14297,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Trade with Nurse\n"
             "Joy on any route to\n"
-            "heal your {PKMN}."),
+            "heal your Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

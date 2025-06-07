@@ -37,7 +37,7 @@ FennilahlTown_House3_NPC1_Text_0:
 
 FennilahlTown_House3_NPC2_Text_0:
 # 11 "data//maps/FennilahlTown_House3/scripts.pory"
-	.string "My Rockruff's ability is Own Tempo!\p"
+	.string "My Rockruff's ability is Own Tempo!\n"
 	.string "I met it on Route 2, south of here.$"
 
 FennilahlTown_House3_Rockruff_Text_0:

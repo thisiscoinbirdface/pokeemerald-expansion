@@ -9,26 +9,28 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
     applymovement(1, moves(face_down))
     waitmovement(0)
     speakername("Shopkeeper")
-    msgbox(format("Ah, are you from the Tenebris Lab?\pYour supplies have been sitting here for a while now. Come here."))
+    msgbox(format("Are you from the Tenebris Lab?\pYour supplies have been sitting here for a while now. Come here."))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4 face_left))
     waitmovement(0)
     applymovement(1, moves(face_right))
     waitmovement(0)    
     speakername("Shopkeeper")
-    msgbox(format("We've been waiting for a pickup.\nOf course, I understand you must be busy, what with your Professor disappearing into thin air and everything.\pNow where was it?"))
+    msgbox(format("We've been waiting for a pickup.\nOf course, you must've been busy,\lwhat with your Professor disappearing into thin air and everything.\pNow where was it?"))
     release
-    applymovement(1, moves(walk_up))
+    applymovement(1, moves(walk_up emote_question_mark))
     waitmovement(0)  
     speakername("Shopkeeper")
-    msgbox(format("It should be right here...hold on...maybe under this...or was it here? "))
+    msgbox(format("It should be right here...hold on...\n...maybe under this...or was it here? "))
     release
-    applymovement(1, moves(walk_down))
+    applymovement(1, moves(walk_down emote_question_mark))
     waitmovement(0)  
     speakername("Shopkeeper")
     msgbox(format("It's not here either. Where could it have gone?")) 
+    release
     applymovement(1, moves(face_right))
     waitmovement(0)     
+    delay(16)
     speakername("Shopkeeper")
     msgbox(format("Let me check our records...hmm, that's strange. It says that Professor Tenebris already picked it up last week. Weird...I'm sorry, I can't help you.\pYou should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
 	releaseall

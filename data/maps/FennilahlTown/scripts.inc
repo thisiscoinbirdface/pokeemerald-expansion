@@ -623,13 +623,13 @@ Fennilahl_Breech_StartQuest_Text_1:
 	.string "any Pokémon to help me get it back!\p"
 	.string "I don't want to battle - I can't deal\n"
 	.string "with conflict.\p"
-	.string "I don't know what to do! Will you help me\n"
-	.string "out and get my rock back?$"
+	.string "I don't know what to do!\n"
+	.string "Will you help me get my rock back?$"
 
 Fennilahl_Breech_StartQuest_Text_2:
 # 51 "data//maps/FennilahlTown/scripts.pory"
-	.string "Amazing! You've answered my prayers. I\n"
-	.string "saw the pink Pokémon run down south,\l"
+	.string "Amazing! You've answered my prayers.\n"
+	.string "I saw the pink Pokémon run south,\l"
 	.string "towards Route 2. I really liked that\l"
 	.string "Strange Rock! Please bring it back.$"
 

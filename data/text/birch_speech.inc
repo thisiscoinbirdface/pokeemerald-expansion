@@ -93,9 +93,8 @@ gText_Birch_YourePlayer::
 
 gText_Birch_AreYouReady::
 	.string "FIRST DAY PROCEDURES:\p"
-	.string "1. As per policy, new researchers\n" 
-	.string "are to receive a Pokémon companion\l"
-	.string "on the first day.\p"
+	.string "1. New researchers are to receive a\n" 
+	.string "Pokémon companion on the first day.\p"
 	.string "Our standard guidelines offer you\n"
 	.string "the choice of one of the following:\l" 
 	.string "{COLOR RED}Torchic{COLOR DARK_GRAY}, {COLOR GREEN}Chikorita{COLOR DARK_GRAY}, or {COLOR BLUE}Oshawott{COLOR DARK_GRAY}.\p"

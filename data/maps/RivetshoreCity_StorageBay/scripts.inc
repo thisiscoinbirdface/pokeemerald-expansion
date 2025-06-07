@@ -73,7 +73,7 @@ RivetshoreCity_StorageBay_Trigger0::
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger0_2
 RivetshoreCity_StorageBay_Trigger0_1:
-# 63 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 65 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	releaseall
 	end
 
@@ -93,6 +93,8 @@ RivetshoreCity_StorageBay_Trigger0_4:
 # 50 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RivetshoreCity_StorageBay_Trigger0_6
+# 61 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	fadedefaultbgm
 	goto RivetshoreCity_StorageBay_Trigger0_1
 
 RivetshoreCity_StorageBay_Trigger0_6:
@@ -106,40 +108,40 @@ RivetshoreCity_StorageBay_Trigger0_6:
 
 
 RivetshoreCity_StorageBay_Trigger1::
-# 68 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	lockall
 # 70 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	lockall
+# 72 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	msgbox RivetshoreCity_StorageBay_Trigger0_Text_0, MSGBOX_YESNO
-# 71 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 73 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_2
 RivetshoreCity_StorageBay_Trigger1_1:
-# 88 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 90 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	releaseall
 	end
 
 RivetshoreCity_StorageBay_Trigger1_2:
-# 72 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 74 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	msgbox RivetshoreCity_StorageBay_Trigger0_Text_1, MSGBOX_YESNO
-# 73 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 75 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_4
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 RivetshoreCity_StorageBay_Trigger1_4:
-# 74 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 76 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	msgbox RivetshoreCity_StorageBay_Trigger1_Text_0, MSGBOX_YESNO
-# 75 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_StorageBay_Trigger1_6
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 RivetshoreCity_StorageBay_Trigger1_6:
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 79 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Trigger1_Movement_0
-# 78 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 80 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	waitmovement 0
-# 84 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 86 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	callnative CB2_StorageCutscene
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
@@ -186,13 +188,13 @@ RivetshoreCity_StorageBay_Trigger0_Movement_0:
 	jump_right
 	step_end
 
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 79 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Trigger1_Movement_0:
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 79 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_left
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 79 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_up
-# 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 79 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	jump_right
 	step_end
 
@@ -243,6 +245,6 @@ RivetshoreCity_StorageBay_Trigger0_Text_4:
 	.string "Leave$"
 
 RivetshoreCity_StorageBay_Trigger1_Text_0:
-# 74 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 76 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	.string "Are you sure? Once you enter, there's\n"
 	.string "no coming back!$"

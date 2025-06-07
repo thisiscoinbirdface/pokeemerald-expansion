@@ -14,11 +14,14 @@ script Route1_House_Quest_Done{
 
 
 script Route1_House_QuestInProgress{
-    msgbox(format("Ah, trainer, welcome back! Azurill and I have been waiting for you."), MSGBOX_NPC)
     msgbox(format("Have you brought a Pecha Berry?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         checkitem(ITEM_PECHA_BERRY)
         if (var(VAR_RESULT) == 1){
+            applymovement(1, moves(jump_in_place_down))
+            waitmovement(0)
+            delay(16)
+
             msgbox(format("Why thank you child. So kind of you."))
             release
             completequest(QUEST_ROUTE1_PECHA_BERRY)
@@ -40,6 +43,9 @@ script Route1_House_QuestInProgress{
             msgbox(format("I don't see a Pecha Berry here...please come back when you have one."), MSGBOX_NPC)
         }
     } else {
+        applymovement(1, moves(jump_in_place_down))
+        waitmovement(0)
+        delay(16)
         msgbox(format("Please hurry - my baby's suffering!"), MSGBOX_NPC)
     }
 
@@ -103,7 +109,7 @@ script Route1_House_StartQuest{
 
     if (var(VAR_RESULT) == 1){
         hideitemdescription
-        msgbox(format("Oh, thank you so much. You're very kind. I'll be waiting here."))
+        msgbox(format("Oh, thank you so much. You're so kind! Azurill and I will be waiting here."))
         startquest(QUEST_ROUTE1_PECHA_BERRY)
     } else {
         hideitemdescription

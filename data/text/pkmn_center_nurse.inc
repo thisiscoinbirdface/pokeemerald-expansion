@@ -56,9 +56,9 @@ gText_TakeHealPass::
 gText_ExplainHealPass::
 	.string "Trainer, is this your first time at a\n"
 	.string "Pokémon Center?\p"
-	.string "Then I have good news - we have a special\n"
-	.string "promotion running right now!\p"
-	.string "Each Trainer that heals in any Pokémon\n"
+	.string "Then I have good news - we have a\n"
+	.string "special promotion running right now!\p"
+	.string "Each Trainer that heals at a Pokémon\n"
 	.string "Center can receive up to one Heal Pass.\p"
 	.string "Trade it in with any Nurse Joy outside\n"
 	.string "a Pokémon Center to heal your Pokémon.\p"

@@ -93,19 +93,21 @@ CarabrueTown_Home1F_EventScript_StartGame::
 # 75 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_1
 # 76 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_8, MSGBOX_SIGN
-# 79 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_8, MSGBOX_POKENAV
+# 77 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	release
+# 80 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	applymovement 1, CarabrueTown_Home1F_EventScript_StartGame_Movement_4
-# 85 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 86 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	waitmovement 0
-# 87 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 88 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	return
 
 
-# 91 "data//maps/CarabrueTown_Home1F/scripts.pory"
-Player_Face_Up:
 # 92 "data//maps/CarabrueTown_Home1F/scripts.pory"
+Player_Face_Up:
+# 93 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_up
 	step_end
 
@@ -114,93 +116,102 @@ CarabrueTown_Home1F_OnResume::
 
 
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage::
-# 100 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 101 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	lockall
-# 102 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 103 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	goto_if_unset FLAG_WELCOMEPACKAGE_GET, CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_2
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_1:
-# 108 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 109 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_2:
-# 103 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0
 # 104 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Movement_0
+	msgbox CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0
 # 105 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Movement_0
+# 106 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	waitmovement 0
 	goto CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_1
 
 
 CarabrueTown_Home1F_EventScript_MomGeneric::
-# 114 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	lockall
 # 115 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	faceplayer
+	lockall
 # 116 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
+	faceplayer
 # 117 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_0
-# 118 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	release
-# 119 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 120 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	incrementgamestat GAME_STAT_RESTED_AT_HOME
-# 123 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	goto_if_unset FLAG_SYS_CHEATS_ENABLED, CarabrueTown_Home1F_EventScript_MomGeneric_2
-CarabrueTown_Home1F_EventScript_MomGeneric_1:
-# 153 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
-# 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_7
-# 155 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 118 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_0
+# 119 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	release
-# 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 120 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 121 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	incrementgamestat GAME_STAT_RESTED_AT_HOME
+# 124 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	checkitem ITEM_NUZKIT
+# 125 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CarabrueTown_Home1F_EventScript_MomGeneric_2
+CarabrueTown_Home1F_EventScript_MomGeneric_1:
+# 161 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
+# 162 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_9
+# 163 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	release
+# 164 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	applymovement 1, CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0
-# 157 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 165 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home1F_EventScript_MomGeneric_2:
-# 125 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
-# 126 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	message CarabrueTown_Home1F_EventScript_MomGeneric_Text_1
 # 127 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	waitmessage
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 128 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	dynmultichoice 17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home1F_EventScript_MomGeneric_Text_2, CarabrueTown_Home1F_EventScript_MomGeneric_Text_3
-# 130 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	message CarabrueTown_Home1F_EventScript_MomGeneric_Text_1
+# 129 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	waitmessage
+# 131 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_2, MSGBOX_POKENAV
+# 133 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
+# 134 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	message CarabrueTown_Home1F_EventScript_MomGeneric_Text_3
+# 136 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	dynmultichoice 17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home1F_EventScript_MomGeneric_Text_4, CarabrueTown_Home1F_EventScript_MomGeneric_Text_5
+# 138 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	release
-# 132 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 140 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq CarabrueTown_Home1F_EventScript_MomGeneric_4
-# 145 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 153 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
-# 146 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_6
-# 147 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_8
+# 155 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home1F_EventScript_MomGeneric_4:
-# 133 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	delay 8
-# 134 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
-# 135 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_4
-# 136 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	speakername NULL
-# 138 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	giveitem ITEM_NUZKIT
-# 140 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 141 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	delay 8
 # 142 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_5, MSGBOX_POKENAV
+	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 143 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_6
+# 144 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	speakername NULL
+# 146 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	giveitem ITEM_NUZKIT
+# 148 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	delay 8
+# 150 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	msgbox CarabrueTown_Home1F_EventScript_MomGeneric_Text_7, MSGBOX_POKENAV
+# 151 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	release
 	goto CarabrueTown_Home1F_EventScript_MomGeneric_1
 
@@ -235,27 +246,27 @@ CarabrueTown_Home1F_EventScript_StartGame_Movement_3:
 	jump_in_place_right
 	step_end
 
-# 79 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 80 "data//maps/CarabrueTown_Home1F/scripts.pory"
 CarabrueTown_Home1F_EventScript_StartGame_Movement_4:
-# 80 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	walk_left
-# 80 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 81 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	walk_left
 # 81 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	walk_down
+	walk_left
 # 82 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	walk_down
+# 83 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_right
 	step_end
 
-# 104 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 105 "data//maps/CarabrueTown_Home1F/scripts.pory"
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Movement_0:
-# 104 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 105 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	walk_up
 	step_end
 
-# 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 164 "data//maps/CarabrueTown_Home1F/scripts.pory"
 CarabrueTown_Home1F_EventScript_MomGeneric_Movement_0:
-# 156 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 164 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	face_right
 	step_end
 
@@ -301,14 +312,14 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_6:
 	.string "{PLAYER}, those shoes came with\n"
 	.string "instructions: Press the B Button to\l"
 	.string "toggle running on and off. You can\l"
-	.string "switch between holding B and pressing B\l"
-	.string "in the options!$"
+	.string "switch between hold and toggle modes in\l"
+	.string "the options!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_7:
 # 67 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And before you zip off, don't forget to\n"
-	.string "take the welcome package they sent you\l"
-	.string "- it's upstairs!$"
+	.string "take the Welcome Package the lab sent\l"
+	.string "you - it's upstairs in your bedroom!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_8:
 # 76 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -316,43 +327,53 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_8:
 	.string "Quest Log via the Start Menu!$"
 
 CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage_Text_0:
-# 103 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "I should get my Welcome Package before\n"
-	.string "leaving!$"
+# 104 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "I should get my Welcome Package from my\n"
+	.string "room before leaving!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_0:
-# 117 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 118 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "I love you! You're looking a bit tired.\n"
 	.string "Why don't you rest?$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_1:
-# 126 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 128 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "My baby is going on an adventure!\n"
 	.string "Do you want a care package from Mom?$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_2:
-# 129 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Yes please!$"
+# 131 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "Mom's Nuzkit is intended for hardcore\n"
+	.string "nuzlockes. It's not recommended for a\l"
+	.string "vanilla experience.$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_3:
-# 129 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "No Mom...$"
+# 134 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "Do you want a care package from Mom?$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_4:
-# 135 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Here you go!$"
+# 137 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "Yes please!$"
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_5:
-# 142 "data//maps/CarabrueTown_Home1F/scripts.pory"
+# 137 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "No Mom...$"
+
+CarabrueTown_Home1F_EventScript_MomGeneric_Text_6:
+# 143 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	.string "Here you go!$"
+
+CarabrueTown_Home1F_EventScript_MomGeneric_Text_7:
+# 150 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Mom's Nuzkit contains a variety of\n"
 	.string "tools to help you in your journey.\l"
 	.string "Talk to your follower to use it!$"
 
-CarabrueTown_Home1F_EventScript_MomGeneric_Text_6:
-# 146 "data//maps/CarabrueTown_Home1F/scripts.pory"
+CarabrueTown_Home1F_EventScript_MomGeneric_Text_8:
+# 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "I know you can handle yourself.\n"
 	.string "Take care, {PLAYER}!$"
 
-CarabrueTown_Home1F_EventScript_MomGeneric_Text_7:
-# 154 "data//maps/CarabrueTown_Home1F/scripts.pory"
+CarabrueTown_Home1F_EventScript_MomGeneric_Text_9:
+# 162 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "Take care, {PLAYER}!$"

@@ -57,6 +57,8 @@ script RivetshoreCity_StorageBay_Trigger0{
 
                 //stepcallback
                 callnative(CB2_StorageCutscene)
+            } else {
+                fadedefaultbgm
             }
         }
     }

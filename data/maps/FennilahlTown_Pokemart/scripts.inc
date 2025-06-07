@@ -55,73 +55,77 @@ FennilahlTown_Pokemart_EventScript_LabSupplies::
 # 29 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	msgbox FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4
 # 30 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	applymovement 1, FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_2
+	release
 # 31 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	waitmovement 0
+	applymovement 1, FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_2
 # 32 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	speakername FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0
+	waitmovement 0
 # 33 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	msgbox FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5
+	delay 16
 # 34 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	speakername FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0
+# 35 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	msgbox FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5
+# 36 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	releaseall
-# 37 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	clearflag FLAG_TENEBRIS_POLICE_PRESCENCE
-# 38 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	setvar VAR_FENNILAHL_MART_SUPPLIES, 1
 # 39 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	clearflag FLAG_TENEBRIS_POLICE_PRESCENCE
+# 40 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	setvar VAR_FENNILAHL_MART_SUPPLIES, 1
+# 41 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_3
-# 42 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	questmenu QUEST_MENU_BUFFER_QUEST_NAME, QUEST_LAB_FIRST_DAY
-# 43 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	bufferstring 1, gText_QuestUpdated
 # 44 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	playfanfare MUS_LEVEL_UP
+	questmenu QUEST_MENU_BUFFER_QUEST_NAME, QUEST_LAB_FIRST_DAY
 # 45 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	msgbox gText_QuestAnnounce, MSGBOX_SIGN
+	bufferstring 1, gText_QuestUpdated
+# 46 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	playfanfare MUS_LEVEL_UP
 # 47 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	msgbox gText_QuestAnnounce, MSGBOX_SIGN
+# 49 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	releaseall
 	end
 
 
 FennilahlTown_Pokemart_EventScript_Clerk::
-# 54 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	lock
-# 55 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	faceplayer
 # 56 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	message gText_HowMayIServeYou
+	lock
 # 57 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	waitmessage
+	faceplayer
 # 58 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	pokemart FennilahlTown_Pokemart_Inventory
+	message gText_HowMayIServeYou
 # 59 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	waitmessage
 # 60 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	pokemart FennilahlTown_Pokemart_Inventory
+# 61 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+# 62 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 64 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-FennilahlTown_Pokemart_Inventory:
-# 65 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_POTION
 # 66 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_POKE_BALL
+FennilahlTown_Pokemart_Inventory:
 # 67 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_REPEL
+	.2byte ITEM_POTION
 # 68 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_POKE_BALL
 # 69 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_PARLYZ_HEAL
+	.2byte ITEM_REPEL
 # 70 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_REVIVE
 # 71 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_PARLYZ_HEAL
+# 72 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	.2byte ITEM_ANTIDOTE
+# 73 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_NONE
 
 FennilahlTown_Pokemart_NPC::
-# 79 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 81 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	msgbox FennilahlTown_Pokemart_NPC_Text_0, MSGBOX_NPC
 	end
 
@@ -156,12 +160,16 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_2:
 FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_3:
 # 21 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	walk_up
+# 21 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	emote_question_mark
 	step_end
 
 # 26 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 FennilahlTown_Pokemart_EventScript_LabSupplies_Movement_4:
 # 26 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	walk_down
+# 26 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+	emote_question_mark
 	step_end
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0:
@@ -170,23 +178,22 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_0:
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_1:
 # 12 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.string "Ah, are you from the Tenebris Lab?\p"
+	.string "Are you from the Tenebris Lab?\p"
 	.string "Your supplies have been sitting here\n"
 	.string "for a while now. Come here.$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_2:
 # 19 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "We've been waiting for a pickup.\n"
-	.string "Of course, I understand you must be\l"
-	.string "busy, what with your Professor\l"
-	.string "disappearing into thin air and\l"
-	.string "everything.\p"
+	.string "Of course, you must've been busy,\l"
+	.string "what with your Professor disappearing\l"
+	.string "into thin air and everything.\p"
 	.string "Now where was it?$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_3:
 # 24 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.string "It should be right here...hold on...maybe\n"
-	.string "under this...or was it here?$"
+	.string "It should be right here...hold on...\n"
+	.string "...maybe under this...or was it here?$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 # 29 "data//maps/FennilahlTown_Pokemart/scripts.pory"
@@ -194,7 +201,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 	.string "have gone?$"
 
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5:
-# 33 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 35 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "Let me check our records...hmm, that's\n"
 	.string "strange. It says that Professor\l"
 	.string "Tenebris already picked it up last week.\l"
@@ -204,7 +211,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5:
 	.string "for yourself, come talk to me.$"
 
 FennilahlTown_Pokemart_NPC_Text_0:
-# 79 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 81 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "This Poké Mart doesn't sell much\n"
 	.string "because we're in a remote town.\p"
 	.string "But you can find these mint vending\n"

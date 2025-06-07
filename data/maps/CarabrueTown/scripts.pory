@@ -15,7 +15,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
         applymovement(2, moves(emote_exclamation_mark))     
         delay(20)   
         speakername("Detective")
-        msgbox(format("Hold on - this doesn't look like evidence!"))
+        msgbox(format("Hold on - this isn't evidence!"))
         release
 
         giveitem(ITEM_EXP_SHARE)
@@ -26,7 +26,8 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
         removeobject(1)
         removeobject(2) 
-
+        playse(SE_EXIT)
+        delay(16)
         fadescreenswapbuffers(FADE_FROM_BLACK)
 
         removeitem(ITEM_LAB_WELCOMEPACKAGE)
