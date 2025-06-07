@@ -306,7 +306,7 @@ script PellucaCity_Blocker_Trigger{
 
     applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
     speakername("Q-squad Grunt")
-    msgbox(format("Hey kid, where d'you think yer goin?\nThere's a toll if you wanna get out.\pYeah, that's right!\nYou gotta pay 999999.\pAin't got the money?\pThen get packing!"))
+    msgbox(format("Hey kid, where d'you think yer goin?\nThere's a toll if you wanna get out.\pYeah, that's right!\nYou gotta pay ¥999999.\pAin't got the money?\pThen get packing!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
     waitmovement(0)

@@ -77,7 +77,7 @@ script SilversunCity_Houses_Artist{
 
 //TUTOR: Someone
 script SilversunCity_Houses_Tutor{
-    msgbox(format("I'm the sole proprietor of Drifblim Travels Pvt. Ltd.\p...\pWant a pass? Sure thing.\nAll it'll cost you is 99999.\pHaven't got the money?\pThen scram, kid!\nI'm doing business here."), MSGBOX_NPC)
+    msgbox(format("I'm the sole proprietor of Drifblim Travels Pvt. Ltd.\p...\pWant a pass? Sure thing.\nAll it'll cost you is ¥99999.\pHaven't got the money?\pThen scram, kid!\nI'm doing business here."), MSGBOX_NPC)
     end
 }
 
