@@ -109,13 +109,99 @@ script FlowerShop_NPC3{
 }
 
 script FlowerShop_Roselia{
+    if (flag(FLAG_TUTOR_ROSELIA)){
+        playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
+        msgbox(format("Roselia smirks victoriously!"))
+        releaseall
+        end
+    }
+
     playmoncry(SPECIES_ROSELIA, CRY_MODE_NORMAL)
-    msgbox(format("Roselia is smelling the flowerpots...or is she smelling herself?"), MSGBOX_NPC)
+    msgbox(format("Roselia is arguing with Lilligant!\nWhat are they arguing about?"))
+    release
+    delay(8)
+    applymovement(6, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Roselia points at your Pokemon!\pTeach a Pokemon Solar Beam?"), MSGBOX_YESNO)   
+    release
+
+    if (var(VAR_RESULT) == 1){
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("You will only be able to teach\nthis move once. Make it count!"), MSGBOX_POKENAV)
+            msgbox(format("Teach a Pokemon Solar Beam?"), MSGBOX_YESNO)   
+            release            
+            if (var(VAR_RESULT) == 0) {
+                applymovement(6, moves(walk_in_place_left))
+                waitmovement(0)
+                releaseall
+                end                
+            }
+        }
+        setvar(VAR_0x8005, MOVE_SOLAR_BEAM)
+        call(MoveTutor_EventScript_OpenPartyMenu)
+        if (var(VAR_RESULT) == 0){
+
+        } else {
+            setflag(FLAG_TUTOR_ROSELIA)
+            applymovement(6, moves(walk_in_place_left))
+            waitmovement(0)
+            msgbox(format("Roselia smirks victoriously!"))
+        }
+    }
+
+    applymovement(6, moves(walk_in_place_left))
+    waitmovement(0)
+    releaseall
     end
 }
 script FlowerShop_Lilligant{
+    if (flag(FLAG_TUTOR_LILLIGANT)){
+        playmoncry(SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL)
+        msgbox(format("Lilligant smirks victoriously!"))
+        releaseall
+        end
+    }
+
     playmoncry(SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL)
-    msgbox(format("Lilligant seems bored...perhaps it wants to battle?"), MSGBOX_NPC)
+    msgbox(format("Lilligant is arguing with Roselia!\nWhat are they arguing about?"))
+    release
+    delay(8)
+    applymovement(5, moves(emote_exclamation_mark))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Lilligant points at your Pokemon!\pTeach a Pokemon Solar Blade?"), MSGBOX_YESNO)   
+    release
+
+    if (var(VAR_RESULT) == 1){
+
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("You will only be able to teach\nthis move once. Make it count!"), MSGBOX_POKENAV)
+            msgbox(format("Teach a Pokemon Solar Blade?"), MSGBOX_YESNO)   
+            release            
+            if (var(VAR_RESULT) == 0) {
+                applymovement(5, moves(walk_in_place_right))
+                waitmovement(0)
+                releaseall
+                end                
+            }
+        }
+        setvar(VAR_0x8005, MOVE_SOLAR_BLADE)
+        call(MoveTutor_EventScript_OpenPartyMenu)
+        if (var(VAR_RESULT) == 0){
+
+        } else {
+            setflag(FLAG_TUTOR_LILLIGANT)
+            applymovement(5, moves(walk_in_place_right))
+            waitmovement(0)
+            msgbox(format("Lilligant smirks victoriously!"))
+        }
+    }
+
+    applymovement(5, moves(walk_in_place_right))
+    waitmovement(0)
+    releaseall
     end
 }
 

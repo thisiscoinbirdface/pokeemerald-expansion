@@ -314,7 +314,7 @@ SilversunCity_Houses_Tutor_Text_0:
 	.string "Travels Pvt. Ltd.\p"
 	.string "...\p"
 	.string "Want a pass? Sure thing.\n"
-	.string "All it'll cost you is 99999.\p"
+	.string "All it'll cost you is ¥99999.\p"
 	.string "Haven't got the money?\p"
 	.string "Then scram, kid!\n"
 	.string "I'm doing business here.$"

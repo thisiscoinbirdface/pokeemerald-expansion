@@ -2558,7 +2558,7 @@ PellucaCity_Blocker_Trigger_Text_0:
 	.string "Hey kid, where d'you think yer goin?\n"
 	.string "There's a toll if you wanna get out.\p"
 	.string "Yeah, that's right!\n"
-	.string "You gotta pay 999999.\p"
+	.string "You gotta pay ¥999999.\p"
 	.string "Ain't got the money?\p"
 	.string "Then get packing!$"
 

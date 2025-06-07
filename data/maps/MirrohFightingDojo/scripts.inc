@@ -179,19 +179,199 @@ FlowerShop_NPC3::
 
 FlowerShop_Roselia::
 # 112 "data//maps/MirrohFightingDojo/scripts.pory"
+	goto_if_set FLAG_TUTOR_ROSELIA, FlowerShop_Roselia_2
+# 119 "data//maps/MirrohFightingDojo/scripts.pory"
 	playmoncry SPECIES_ROSELIA, CRY_MODE_NORMAL
+# 120 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_1
+# 121 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 122 "data//maps/MirrohFightingDojo/scripts.pory"
+	delay 8
+# 123 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 6, FlowerShop_Roselia_Movement_0
+# 124 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 125 "data//maps/MirrohFightingDojo/scripts.pory"
+	delay 16
+# 126 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_2, MSGBOX_YESNO
+# 127 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 129 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FlowerShop_Roselia_5
+FlowerShop_Roselia_4:
+# 154 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 6, FlowerShop_Roselia_Movement_1
+# 155 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 156 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
+	end
+
+FlowerShop_Roselia_2:
 # 113 "data//maps/MirrohFightingDojo/scripts.pory"
-	msgbox FlowerShop_Roselia_Text_0, MSGBOX_NPC
+	playmoncry SPECIES_ROSELIA, CRY_MODE_NORMAL
+# 114 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_0
+# 115 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
+	end
+
+FlowerShop_Roselia_5:
+# 131 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FlowerShop_Roselia_8
+FlowerShop_Roselia_7:
+# 142 "data//maps/MirrohFightingDojo/scripts.pory"
+	setvar VAR_0x8005, MOVE_SOLAR_BEAM
+# 143 "data//maps/MirrohFightingDojo/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 144 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq FlowerShop_Roselia_10
+# 147 "data//maps/MirrohFightingDojo/scripts.pory"
+	setflag FLAG_TUTOR_ROSELIA
+# 148 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 6, FlowerShop_Roselia_Movement_1
+# 149 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 150 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_0
+	goto FlowerShop_Roselia_4
+
+FlowerShop_Roselia_8:
+# 132 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_3, MSGBOX_POKENAV
+# 133 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_4, MSGBOX_YESNO
+# 134 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 135 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq FlowerShop_Roselia_13
+	goto FlowerShop_Roselia_7
+
+FlowerShop_Roselia_10:
+	goto FlowerShop_Roselia_4
+
+FlowerShop_Roselia_13:
+# 136 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 6, FlowerShop_Roselia_Movement_1
+# 137 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 138 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
 	end
 
 
 FlowerShop_Lilligant::
-# 117 "data//maps/MirrohFightingDojo/scripts.pory"
+# 160 "data//maps/MirrohFightingDojo/scripts.pory"
+	goto_if_set FLAG_TUTOR_LILLIGANT, FlowerShop_Lilligant_2
+# 167 "data//maps/MirrohFightingDojo/scripts.pory"
 	playmoncry SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL
-# 118 "data//maps/MirrohFightingDojo/scripts.pory"
-	msgbox FlowerShop_Lilligant_Text_0, MSGBOX_NPC
+# 168 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Lilligant_Text_1
+# 169 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 170 "data//maps/MirrohFightingDojo/scripts.pory"
+	delay 8
+# 171 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 5, FlowerShop_Roselia_Movement_0
+# 172 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 173 "data//maps/MirrohFightingDojo/scripts.pory"
+	delay 16
+# 174 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Lilligant_Text_2, MSGBOX_YESNO
+# 175 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 177 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FlowerShop_Lilligant_5
+FlowerShop_Lilligant_4:
+# 202 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 5, FlowerShop_Lilligant_Movement_0
+# 203 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 204 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
 	end
 
+FlowerShop_Lilligant_2:
+# 161 "data//maps/MirrohFightingDojo/scripts.pory"
+	playmoncry SPECIES_LILLIGANT_HISUI, CRY_MODE_NORMAL
+# 162 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Lilligant_Text_0
+# 163 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
+	end
+
+FlowerShop_Lilligant_5:
+# 179 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq FlowerShop_Lilligant_8
+FlowerShop_Lilligant_7:
+# 190 "data//maps/MirrohFightingDojo/scripts.pory"
+	setvar VAR_0x8005, MOVE_SOLAR_BLADE
+# 191 "data//maps/MirrohFightingDojo/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 192 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq FlowerShop_Lilligant_10
+# 195 "data//maps/MirrohFightingDojo/scripts.pory"
+	setflag FLAG_TUTOR_LILLIGANT
+# 196 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 5, FlowerShop_Lilligant_Movement_0
+# 197 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 198 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Lilligant_Text_0
+	goto FlowerShop_Lilligant_4
+
+FlowerShop_Lilligant_8:
+# 180 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Roselia_Text_3, MSGBOX_POKENAV
+# 181 "data//maps/MirrohFightingDojo/scripts.pory"
+	msgbox FlowerShop_Lilligant_Text_3, MSGBOX_YESNO
+# 182 "data//maps/MirrohFightingDojo/scripts.pory"
+	release
+# 183 "data//maps/MirrohFightingDojo/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq FlowerShop_Lilligant_13
+	goto FlowerShop_Lilligant_7
+
+FlowerShop_Lilligant_10:
+	goto FlowerShop_Lilligant_4
+
+FlowerShop_Lilligant_13:
+# 184 "data//maps/MirrohFightingDojo/scripts.pory"
+	applymovement 5, FlowerShop_Lilligant_Movement_0
+# 185 "data//maps/MirrohFightingDojo/scripts.pory"
+	waitmovement 0
+# 186 "data//maps/MirrohFightingDojo/scripts.pory"
+	releaseall
+	end
+
+
+# 123 "data//maps/MirrohFightingDojo/scripts.pory"
+FlowerShop_Roselia_Movement_0:
+# 123 "data//maps/MirrohFightingDojo/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 136 "data//maps/MirrohFightingDojo/scripts.pory"
+FlowerShop_Roselia_Movement_1:
+# 136 "data//maps/MirrohFightingDojo/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 184 "data//maps/MirrohFightingDojo/scripts.pory"
+FlowerShop_Lilligant_Movement_0:
+# 184 "data//maps/MirrohFightingDojo/scripts.pory"
+	walk_in_place_right
+	step_end
 
 GardenShop_Cashier_Text_0:
 # 14 "data//maps/MirrohFightingDojo/scripts.pory"
@@ -233,11 +413,42 @@ FlowerShop_NPC3_Text_0:
 	.string "What's a Time Seed?$"
 
 FlowerShop_Roselia_Text_0:
-# 113 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Roselia is smelling the flowerpots...or\n"
-	.string "is she smelling herself?$"
+# 114 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Roselia smirks victoriously!$"
+
+FlowerShop_Roselia_Text_1:
+# 120 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Roselia is arguing with Lilligant!\n"
+	.string "What are they arguing about?$"
+
+FlowerShop_Roselia_Text_2:
+# 126 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Roselia points at your Pokemon!\p"
+	.string "Teach a Pokemon Solar Beam?$"
+
+FlowerShop_Roselia_Text_3:
+# 132 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "You will only be able to teach\n"
+	.string "this move once. Make it count!$"
+
+FlowerShop_Roselia_Text_4:
+# 133 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Teach a Pokemon Solar Beam?$"
 
 FlowerShop_Lilligant_Text_0:
-# 118 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Lilligant seems bored...perhaps it wants\n"
-	.string "to battle?$"
+# 162 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Lilligant smirks victoriously!$"
+
+FlowerShop_Lilligant_Text_1:
+# 168 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Lilligant is arguing with Roselia!\n"
+	.string "What are they arguing about?$"
+
+FlowerShop_Lilligant_Text_2:
+# 174 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Lilligant points at your Pokemon!\p"
+	.string "Teach a Pokemon Solar Blade?$"
+
+FlowerShop_Lilligant_Text_3:
+# 181 "data//maps/MirrohFightingDojo/scripts.pory"
+	.string "Teach a Pokemon Solar Blade?$"

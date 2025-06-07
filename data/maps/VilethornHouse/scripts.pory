@@ -1,26 +1,49 @@
 mapscripts VilethornHouse_MapScripts{}
 
 script VilethornHouse_NPC1{
-    msgbox(format("We moved out of the city long ago. It was too noisy!"), MSGBOX_NPC)
+    msgbox(format("We moved out of the city long ago. It was too dangerous!"), MSGBOX_NPC)
     end
 }
 
 script VilethornHouse_NPC2{
     lockall
     faceplayer
-    msgbox(format("Nobody disturbs us deep in these woods. It's a peaceful and calming lifestyle. Your Pokémon may also benefit from calming themselves. Do you want me to teach one of your Pokémon the move CALM MIND?"), MSGBOX_YESNO)
+    msgbox(format("Nobody disturbs us here. The best protection is isolation! Your Pokémon also need to learn to defend themselves. Do you want me to teach one of your Pokémon a defensive move?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
-        setvar(VAR_0x8005, MOVE_CALM_MIND)
-        call(MoveTutor_EventScript_OpenPartyMenu)
-        if (var(VAR_RESULT) == 0){
-            msgbox(format("Feel free to come back any time."))
-        } else {
-            msgbox(format("If you have any other Pokémon who want to experience nirvana, come to me."))
+
+        message(format("Which move should I teach?"))
+        waitmessage
+        dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+            "Reflect", "Light Screen", "Aurora Veil", "Protect")  
+
+        if (var(VAR_RESULT) == 0)  {
+            setvar(VAR_0x8005, MOVE_REFLECT)
+            goto(VilethornHouse_Tutor_TeachMove)
         }
-    } else {
-        msgbox(format("Feel free to come back any time."))
+        if (var(VAR_RESULT) == 1)  {
+            setvar(VAR_0x8005, MOVE_LIGHT_SCREEN)
+            goto(VilethornHouse_Tutor_TeachMove)
+        }
+        if (var(VAR_RESULT) == 2)  {
+            setvar(VAR_0x8005, MOVE_AURORA_VEIL)
+            goto(VilethornHouse_Tutor_TeachMove)
+        }
+        if (var(VAR_RESULT) == 3)  {
+            setvar(VAR_0x8005, MOVE_PROTECT)
+            goto(VilethornHouse_Tutor_TeachMove)
+        }        
     }
+
+    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
     releaseall
+    end
+}
+
+script VilethornHouse_Tutor_TeachMove{
+    call(MoveTutor_EventScript_OpenPartyMenu)
+    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+    releaseall
+    end
 }
 
 

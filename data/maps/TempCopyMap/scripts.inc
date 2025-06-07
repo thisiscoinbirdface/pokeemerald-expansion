@@ -1122,7 +1122,7 @@ PellucaCity_Greta_Item_A::
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Greta_Item_A_1
 # 735 "data//maps/TempCopyMap/scripts.pory"
-	setvar VAR_0x8006, ITEM_SUN_STONE
+	setvar VAR_0x8006, ITEM_DUSK_STONE
 # 736 "data//maps/TempCopyMap/scripts.pory"
 	showitemdescription
 # 737 "data//maps/TempCopyMap/scripts.pory"
@@ -1155,7 +1155,7 @@ PellucaCity_Greta_Item_A_4:
 # 741 "data//maps/TempCopyMap/scripts.pory"
 	removemoney 5200
 # 742 "data//maps/TempCopyMap/scripts.pory"
-	giveitem ITEM_SUN_STONE
+	giveitem ITEM_DUSK_STONE
 # 743 "data//maps/TempCopyMap/scripts.pory"
 	speakername Route5_Greta_AskToShow_Text_0
 # 744 "data//maps/TempCopyMap/scripts.pory"
@@ -2181,8 +2181,8 @@ Route5_Greta_AskToShow_Text_2:
 
 Route5_Greta_ShowItemsForSale_Text_0:
 # 596 "data//maps/TempCopyMap/scripts.pory"
-	.string "The egg is 10,000. The rock is 5,000. The\n"
-	.string "fish is only 100!$"
+	.string "The egg is ¥10,000. The rock is ¥5,000.\n"
+	.string "The fish is only ¥100!$"
 
 Route5_Greta_ShowItemsForSale_Text_1:
 # 599 "data//maps/TempCopyMap/scripts.pory"
@@ -2229,12 +2229,12 @@ Route5_Greta_MysteriousRock_Text_0:
 
 PellucaCity_Greta_ShowItemsForSale_Text_0:
 # 714 "data//maps/TempCopyMap/scripts.pory"
-	.string "Each stone retails for 6000, but for\n"
-	.string "you, I'll do 5200!$"
+	.string "You won't find these at the Game\n"
+	.string "Corner! For you I can do ¥5200.$"
 
 PellucaCity_Greta_ShowItemsForSale_Text_1:
 # 717 "data//maps/TempCopyMap/scripts.pory"
-	.string "Sun Stone$"
+	.string "Dusk Stone$"
 
 PellucaCity_Greta_ShowItemsForSale_Text_2:
 # 717 "data//maps/TempCopyMap/scripts.pory"
@@ -2246,7 +2246,7 @@ PellucaCity_Greta_ShowItemsForSale_Text_3:
 
 PellucaCity_Greta_Item_A_Text_0:
 # 738 "data//maps/TempCopyMap/scripts.pory"
-	.string "A shining choice! You sure?$"
+	.string "A dark choice! You sure?$"
 
 PellucaCity_Greta_Item_B_Text_0:
 # 764 "data//maps/TempCopyMap/scripts.pory"

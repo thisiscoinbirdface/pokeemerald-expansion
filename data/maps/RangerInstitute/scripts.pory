@@ -233,33 +233,37 @@ script RangerInstitute_1F_NPC4{
 
 //Blockers
 script RangerInstitute_1F_BlockerBasement{
-    if (var(VAR_RANGER_INSTITUTE) == 0){
-        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
-        end
-    }
-    if (var(VAR_RANGER_INSTITUTE) == 1){
-        msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
-        end
-    }
-
-    lock
-	faceplayer
-	message(format("Welcome to the Ranger TM Store!"))
-	waitmessage
-	pokemart(RangerInstitute_1F_TM_Mart)
-	msgbox(format("See you another time, Ranger!"), MSGBOX_DEFAULT)
-	release
-	end
+    msgbox(format("It's so hectic these days, what with the Mega Sharpedo and everything!"), MSGBOX_NPC)
+    end
 }
 
-mart RangerInstitute_1F_TM_Mart{
-    ITEM_TM10
-    ITEM_TM27
-    ITEM_TM28
-    ITEM_TM32
-    ITEM_TM36
-    ITEM_TM42
-}
+//     if (var(VAR_RANGER_INSTITUTE) == 0){
+//         msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
+//         end
+//     }
+//     if (var(VAR_RANGER_INSTITUTE) == 1){
+//         msgbox(format("Welcome to the Ranger TM Store!\p...\pYou're not a Ranger?\pSorry, this for Pokémon Rangers only."), MSGBOX_NPC)
+//         end
+//     }
+
+//     lock
+// 	faceplayer
+// 	message(format("Welcome to the Ranger TM Store!"))
+// 	waitmessage
+// 	pokemart(RangerInstitute_1F_TM_Mart)
+// 	msgbox(format("See you another time, Ranger!"), MSGBOX_DEFAULT)
+// 	release
+// 	end
+// }
+
+// mart RangerInstitute_1F_TM_Mart{
+//     ITEM_TM10
+//     ITEM_TM27
+//     ITEM_TM28
+//     ITEM_TM32
+//     ITEM_TM36
+//     ITEM_TM42
+// }
 
 
 script RangerInstitute_1F_BlockerUpstairs{

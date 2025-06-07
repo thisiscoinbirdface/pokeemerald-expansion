@@ -1620,15 +1620,17 @@
 #define FLAG_BEAT_R4                                (SYSTEM_FLAGS + 0xA7) // Unused Flag
 #define FLAG_BEAT_FINALS                            (SYSTEM_FLAGS + 0xA8) // Unused Flag
 #define FLAG_GAME_CLEAR                             (SYSTEM_FLAGS + 0xA9) // Unused Flag
-#define FLAG_UNUSED_0x90A                           (SYSTEM_FLAGS + 0xAA) // Unused Flag
-#define FLAG_UNUSED_0x90B                           (SYSTEM_FLAGS + 0xAB) // Unused Flag
-#define FLAG_UNUSED_0x90C                           (SYSTEM_FLAGS + 0xAC) // Unused Flag
-#define FLAG_UNUSED_0x90D                           (SYSTEM_FLAGS + 0xAD) // Unused Flag
-#define FLAG_UNUSED_0x90E                           (SYSTEM_FLAGS + 0xAE) // Unused Flag
+
+//Tutors
+#define FLAG_TUTOR_ROSELIA                          (SYSTEM_FLAGS + 0xAA) // Unused Flag
+#define FLAG_TUTOR_LILLIGANT                        (SYSTEM_FLAGS + 0xAB) // Unused Flag
+#define FLAG_TUTOR_KIDS                             (SYSTEM_FLAGS + 0xAC) // Unused Flag
+#define FLAG_TUTOR_FANGS                            (SYSTEM_FLAGS + 0xAD) // Unused Flag
+#define FLAG_TUTOR_VICTORY_CAPE                     (SYSTEM_FLAGS + 0xAE) // Unused Flag
+#define FLAG_UNUSED_0x909                           (SYSTEM_FLAGS + 0xAF) // Unused Flag
 
 //Misc
-#define FLAG_SKIP_BALL_CHANGER                      (SYSTEM_FLAGS + 0xAF) // Unused Flag
-#define FLAG_UNUSED_0x910                           (SYSTEM_FLAGS + 0xB0) // Unused Flag
+#define FLAG_SKIP_BALL_CHANGER                      (SYSTEM_FLAGS + 0xB0) // Unused Flag
 #define FLAG_UNUSED_0x911                           (SYSTEM_FLAGS + 0xB1) // Unused Flag
 #define FLAG_UNUSED_0x912                           (SYSTEM_FLAGS + 0xB2) // Unused Flag
 #define FLAG_UNUSED_0x913                           (SYSTEM_FLAGS + 0xB3) // Unused Flag

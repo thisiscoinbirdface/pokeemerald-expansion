@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_GALECREST_CITY, 22, 47
+	warp MAP_MIRROH_FIGHTING_DOJO, 12, 7
 	release
 	end
 
