@@ -52,7 +52,7 @@ script Championship_R5{
 
 
     //FINAL BATTLE
-//    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_E, format("Argh! No!"))
+    trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_E, format("Argh! No!"))
 
     //opponent exit
     special(SpawnCameraObject)
