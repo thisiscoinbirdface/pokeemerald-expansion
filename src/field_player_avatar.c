@@ -2297,7 +2297,7 @@ static bool32 Fishing_StartMinigame(struct Task *task)
     return FALSE;
 }
 
-void ResetPlayerAvatar(u8 gfxId)
+void ResetPlayerAvatar(u16 gfxId)
 {
     struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
 
