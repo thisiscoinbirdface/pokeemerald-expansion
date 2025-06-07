@@ -327,7 +327,7 @@ script UnchartedIsland_Finale_Ending{
 
     delay(16)    
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox_delay("Clefable", format("cleee!!!"))    
+    msgbox_delay("Clefable", format("Cleee!!!"))    
     applymovement(LOCALID_CLEF, moves(jump_in_place_up))
     waitmovement(0)
     delay(8)
@@ -381,7 +381,7 @@ script UnchartedIsland_Breech{
 }
 script UnchartedIsland_Clefable{
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox_delay("Clefairy", format("cleee!!!"))
+    msgbox_delay("Clefairy", format("Cleee!!!"))
     end
 }
 

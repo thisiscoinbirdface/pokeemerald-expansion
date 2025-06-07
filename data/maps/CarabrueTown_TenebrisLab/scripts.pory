@@ -142,13 +142,19 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         applymovement(3, moves(face_left))
         waitmovement(0)
+        release
+        delay(16)
         speakername("Rue")
         msgbox(format("Detectives, meet {PLAYER}, our newest assistant."))
+        release
+        delay(16)
         speakername("Detective")
         msgbox(format("We've met already."))
 
         applymovement(3, moves(face_down))
         waitmovement(0)
+        release
+        delay(16)
         speakername("Rue")
         msgbox(format("{PLAYER}, did you get the supplies?\pNo?\pWhat happened?"))
         release
@@ -235,6 +241,9 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         speakername("Detective")
         msgbox(format("Finding her is what we're here for. Again, I can't shake the hunch that the other dreamstones could give us a clue."))
         release
+        delay(16)        
+        applymovement(3, moves(jump_in_place_up))
+        waitmovement(0)
         delay(16)
         speakername("Rue")
         msgbox(format("Whatever you need to do!"))
@@ -259,12 +268,12 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         speakername("Detective")
         msgbox(format("Well...what about the kid?"))
         release
-
+        delay(24)
         applymovement(9, moves(face_right))
         applymovement(8, moves(face_right))
         applymovement(3, moves(face_right))
         waitmovement(0) 
-        delay(24)
+        delay(40)
 
         applymovement(9, moves(face_down))
         applymovement(8, moves(face_down))
@@ -277,7 +286,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("What else do you suggest? {PLAYER} is the best we've got."))
+        msgbox(format("What else do you suggest?\n{PLAYER} is the best we've got."))
         release
         delay(16)
         speakername("Rue")
@@ -319,7 +328,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         speakername("Rue")
         msgbox(format("Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
         release
-        delay(16)
+        delay(36)
         speakername("Rue")
         msgbox(format("I've failed."))
         release
@@ -329,7 +338,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         delay(16)
         speakername("Detective")
-        msgbox(format("Get it together, Rue. The other researchers are counting on you. Have some faith in us...and...\p...well...\p...{PLAYER}."))
+        msgbox(format("Get it together, Rue. The other researchers are counting on you.\lHave some faith in us...and...\p...well...\p...{PLAYER}."))
         release
         delay(16)
 
@@ -345,14 +354,14 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)      
         delay(16)
         speakername("???")
-        msgbox(format("Sir, I overheard the whole thing! And I protest!"))    
+        msgbox(format("Sir, I overheard the whole thing!\nAnd I protest!"))    
         release
         delay(16)
 
         applymovement(10, moves(face_right))
         waitmovement(0) 
         speakername("???")
-        msgbox(format("You can't give this kid a job like that! What's your name?\p{PLAYER}?\pPshh, whatever. Look at you! Your Pokémon look exhausted after a single trip to Fennilahl Town!"))  
+        msgbox(format("You can't give this kid a job like that! What's your name?\p{PLAYER}?\pPshh, whatever. Look at you! Your Pokémon look exhausted after a\lsingle trip to Fennilahl Town!"))  
         release
         delay(8)
 
@@ -373,7 +382,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("Meet Kohla, this years ace rookie from the Detective Academy."))  
+        msgbox(format("Meet Kohla, this year's Ace Rookie\nfrom the Detective Academy."))  
         release
         delay(16)
         applymovement(10, moves(jump_in_place_right))
@@ -427,10 +436,16 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)  
         speakername("Detective")
         msgbox(format("Well Rue, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor Tenebris.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
+        release
+        delay(16)
         speakername("Rue")
         msgbox(format("One lies somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to reach Gastree City, and then make your way up north towards the mountain."))  
+        release
+        delay(16)
         speakername("Detective")
         msgbox(format("{PLAYER} - you know what to do. Head east to Gastree City. From there, make your way to Mt. Ceram and find the dreamstone that's there."))  
+        release
+        delay(16)
         speakername("Rue")
         msgbox(format("I'll let your mother know that you've been assigned some travel work.\pI wish you all the best."))  
 
@@ -451,7 +466,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
 script CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric{
     speakername("Detective")
-    msgbox(format("Don't let one victory get to your head. Kohla's already got a head start. You'd better hurry if you want to catch up."), MSGBOX_NPC)
+    msgbox(format("Don't let one victory get to your head. Kohla's already got a head start.\lBetter hurry if you want to catch up!"), MSGBOX_NPC)
     end
 }
 

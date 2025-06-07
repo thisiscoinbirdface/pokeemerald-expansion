@@ -59,7 +59,7 @@ script SSElegant_Storage_Moonblast{
     delay(8)
 
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox_delay("Clefable", format("cleee!!!"))
+    msgbox_delay("Clefable", format("Cleee!!!"))
 
     applymovement(8, moves(walk_up))
     waitmovement(0)
@@ -146,11 +146,11 @@ script SSElegant_Storage_GabConfronts{
     msgbox_delay("Breech", format("This wall looks like it can be broken...Clefable, can you do it?"))
 
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox_delay("Clefable", "cleee!!!")
+    msgbox_delay("Clefable", "Cleee!!!")
 
     msgbox_delay("Breech", format("Clefable - use Moonblast!"))
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
-    msgbox_delay("Clefable", "cleee!!!")
+    msgbox_delay("Clefable", "Cleee!!!")
     playse(SE_SUPER_EFFECTIVE)
 
     //set

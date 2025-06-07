@@ -90,8 +90,8 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("You've qualified for this year's Pokemon Championship!\pThe Championship is held every four years, down at Victory Cape.\pIf you hurry, you might be able to\ncatch a boat off Route 2."))
-
+    msgbox_delay("Tenebris", format("You've qualified for this year's Pokemon Championship!\pThe Championship is held every four years, down at Victory Cape.\pYou can get there by surfing from Route 2, but you'll need this."))
+    giveitem(ITEM_HM07) //waterfall
     msgbox_delay("Tenebris", format("Don't worry - we can start your research work when you're back.\p{PLAYER}, of all the trainers I've known, few have the caliber and drive that you do.\pI know you'll do well at the tournament!"))
 
     delay(16)

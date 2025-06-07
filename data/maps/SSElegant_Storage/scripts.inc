@@ -425,7 +425,7 @@ SSElegant_Storage_Moonblast_Text_2:
 
 SSElegant_Storage_Moonblast_Text_3:
 # 62 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "cleee!!!$"
+	.string "Cleee!!!$"
 
 SSElegant_Storage_GabConfronts_Text_0:
 # 88 "data//maps/SSElegant_Storage/scripts.pory"

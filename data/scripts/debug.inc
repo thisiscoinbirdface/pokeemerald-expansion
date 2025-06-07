@@ -148,7 +148,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	setflag FLAG_SYS_CHEATS_ENABLED
+	giveitem ITEM_HM07
 	release
 	end
 

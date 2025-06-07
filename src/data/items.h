@@ -11922,14 +11922,14 @@ const struct Item gItemsInfo[] =
         .name = _("HM05"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Looses a powerful\n"
-            "blast of light that\n"
-            "reduces accuracy."),
+            "Attacks and rushes\n"
+            "back to switch with\n"
+            "a party Pokémon."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLASH,
+        .secondaryId = MOVE_FLIP_TURN,
     },
 
     [ITEM_HM_ROCK_SMASH] =
@@ -11952,14 +11952,14 @@ const struct Item gItemsInfo[] =
         .name = _("HM07"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Attacks and rushes\n"
-            "back to switch with\n"
-            "a party Pokémon."),
+            "Charges the foe\n"
+            "with speed to\n"
+            "climb waterfalls."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLIP_TURN,
+        .secondaryId = MOVE_WATERFALL,
     },
 
     [ITEM_HM_DIVE] =
@@ -11969,7 +11969,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Dives underwater\n"
             "the 1st turn, then\n"
-            "attacks next turn."),
+            "attacks next turn."),            
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -139,6 +139,8 @@ CarabrueTown_TenebrisLab_PostFinale::
 	delay 16
 # 93 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox_delay CarabrueTown_TenebrisLab_PostFinale_Text_2, CarabrueTown_TenebrisLab_PostFinale_Text_14
+# 94 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	giveitem ITEM_HM07
 # 95 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox_delay CarabrueTown_TenebrisLab_PostFinale_Text_2, CarabrueTown_TenebrisLab_PostFinale_Text_15
 # 97 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
@@ -334,8 +336,8 @@ CarabrueTown_TenebrisLab_PostFinale_Text_14:
 	.string "Pokemon Championship!\p"
 	.string "The Championship is held every four\n"
 	.string "years, down at Victory Cape.\p"
-	.string "If you hurry, you might be able to\n"
-	.string "catch a boat off Route 2.$"
+	.string "You can get there by surfing from Route\n"
+	.string "2, but you'll need this.$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_15:
 # 95 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"

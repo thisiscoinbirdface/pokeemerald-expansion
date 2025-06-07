@@ -274,7 +274,7 @@ script PellucaGym_Leader {
         
         //Describe the badge features (use HMs, allow pokemon control etc.)
         msgbox_delay("Jania", format("Take this too."))
-        giveitem(ITEM_HM07)
+        giveitem(ITEM_HM05)
         msgbox_delay("Jania", format("With it, you can surf across strong currents like the ones in this gym.\pLastly, I must give you this."))
         giveitem(ITEM_RARE_SHARD)
         delay(16)

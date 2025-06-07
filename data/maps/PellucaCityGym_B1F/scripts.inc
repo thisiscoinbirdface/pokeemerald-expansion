@@ -321,7 +321,7 @@ PellucaGym_Leader::
 # 276 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox_delay PellucaGym_Leader_Text_1, PellucaGym_Leader_Text_6
 # 277 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	giveitem ITEM_HM07
+	giveitem ITEM_HM05
 # 278 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox_delay PellucaGym_Leader_Text_1, PellucaGym_Leader_Text_7
 # 279 "data//maps/PellucaCityGym_B1F/scripts.pory"

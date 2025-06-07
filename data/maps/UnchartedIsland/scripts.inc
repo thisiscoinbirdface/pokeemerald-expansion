@@ -2056,7 +2056,7 @@ UnchartedIsland_Finale_Ending_Text_9:
 
 UnchartedIsland_Finale_Ending_Text_10:
 # 330 "data//maps/UnchartedIsland/scripts.pory"
-	.string "cleee!!!$"
+	.string "Cleee!!!$"
 
 UnchartedIsland_Breech_Text_0:
 # 380 "data//maps/UnchartedIsland/scripts.pory"
