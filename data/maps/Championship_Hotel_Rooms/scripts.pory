@@ -12,24 +12,108 @@ mapscripts Championship_Hotel_Rooms_MapScripts{}
 
 
 
-
+//outside
 script Championship_Hotel_Rooms_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("I can't wait for the Championship to start! Who are you rooting for?"), MSGBOX_NPC)
     end
 }
+//room 1 with mon
 script Championship_Hotel_Rooms_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Alright Chandelure - we've got to focus and win!"))
+    releaseall
     end
 }
 script Championship_Hotel_Rooms_Mon{
-    playmoncry(SPECIES_TREECKO, CRY_MODE_NORMAL)
-    msgbox(format(""), MSGBOX_NPC)
+    playmoncry(SPECIES_CHANDELURE, CRY_MODE_NORMAL)
+    msgbox(format("Chandelure is heated up!"))
+    releaseall
     end
 }
+//tutor
 script Championship_Hotel_Rooms_NPC3{
-    msgbox(format(""), MSGBOX_NPC)
+    if (flag(FLAG_TUTOR_VICTORY_CAPE)){
+        msgbox(format("Show me your new move at the Championship!"), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("You look like a strong trainer.\nAre you competing this year?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Hmpf."), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("If you're going up against the best, you'll need the best! I can teach one of your Pokemon a really powerful move. But I'll only teach one - I can't be biased, you know!"))
+
+    msgbox(format("You will only be able to teach\na move once. Make sure you choose\lboth the move and Pokemon carefully!"), MSGBOX_POKENAV)
+    msgbox(format("Teach a powerful move?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Come back when you're ready."), MSGBOX_NPC)
+        end
+    }
+
+    goto(Championship_Hotel_Rooms_ChooseMove)
+}
+
+script Championship_Hotel_Rooms_ChooseMove{
+    //steel beam, draco meteor, overheat, leaf storm, gunk shot, meteor beam, hydro pump 
+    message(format("Which move should I teach?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Steel Beam", "Draco Meteor", "Overheat", "Leaf Storm",
+        "Hydro Pump", "Gunk Shot", "Meteor Beam")  
+
+    if (var(VAR_RESULT) == 0)  {
+        setvar(VAR_0x8005, MOVE_STEEL_BEAM)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 1)  {
+        setvar(VAR_0x8005, MOVE_DRACO_METEOR)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 2)  {
+        setvar(VAR_0x8005, MOVE_OVERHEAT)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 3)  {
+        setvar(VAR_0x8005, MOVE_LEAF_STORM)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 4)  {
+        setvar(VAR_0x8005, MOVE_HYDRO_PUMP)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 5)  {
+        setvar(VAR_0x8005, MOVE_GUNK_SHOT)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+    if (var(VAR_RESULT) == 6)  {
+        setvar(VAR_0x8005, MOVE_METEOR_BEAM)
+        goto(Championship_Hotel_Rooms_TeachMove)
+    }
+
+    msgbox(format("Come back when you're ready."), MSGBOX_NPC)
+    releaseall
     end
 }
+
+script Championship_Hotel_Rooms_TeachMove{
+    call(MoveTutor_EventScript_OpenPartyMenu)
+
+    if (var(VAR_RESULT) == 0){
+        goto(Championship_Hotel_Rooms_ChooseMove)
+
+    } else {
+        setflag(FLAG_TUTOR_VICTORY_CAPE)
+        msgbox(format("That's all I can do for you!"), MSGBOX_NPC)
+        releaseall
+        end
+    }    
+}
+
+
+//room 3 - man
 script Championship_Hotel_Rooms_NPC4{
     msgbox(format(""), MSGBOX_NPC)
     end
