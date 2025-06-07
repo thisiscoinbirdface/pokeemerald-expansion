@@ -139,6 +139,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_RARE_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_ELEGANT_A"
+    }
   ]
 }

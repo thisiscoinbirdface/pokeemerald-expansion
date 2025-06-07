@@ -391,7 +391,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 20,
+      "x": 21,
       "y": 77,
       "elevation": 0,
       "item": "ITEM_RARE_SHARD",

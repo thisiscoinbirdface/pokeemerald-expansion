@@ -48,13 +48,13 @@ script Championship_R5{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right * 2))
     waitmovement(0)    
 
-    msgbox_delay("Kohla", format("When I look at you, {PLAYER}, xI see everything I don't have.\pEverything I deserve, but don't have.\pBut I'm still the Ace Rookie!\nI chased Team Somber as hard as you did! Harder! I'm the one who should have...I...\pBut do you see me now, {PLAYER}?\nIn spite of everything, I've reached the finals of the Pokemon Championship!\pAnd today, right here, right now...\p...I'm going to get what I deserve!"))
+    msgbox_delay("Kohla", format("When I look at you, {PLAYER}, I see everything I don't have.\pEverything I deserve, but don't have.\pBut I'm still the Ace Rookie!\nI chased Team Somber as hard as you did! Harder! I'm the one who should have...I...\pBut do you see me now, {PLAYER}?\nIn spite of everything, I've reached the finals of the Pokemon Championship!\pAnd today, right here, right now...\p...I'm going to get what I deserve!"))
 
     //FINAL BATTLE
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_E, format("Argh! No!"))
-
-    //opponent exit
+    playbgm(MUS_VICTORY_LEAGUE, FALSE)
     special(SpawnCameraObject)
+    //opponent exit
     msgbox_delay("Kohla", format("..."))
 
     applymovement(1, moves(walk_right *2))
@@ -74,10 +74,13 @@ script Championship_R5{
     setflag(FLAG_BEAT_FINALS)
 
     //game win
+    special(SpawnCameraObject)
+        
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right *3 face_down))
     msgbox_delay("Announcer", format("To everyone watching this show in the stands and all across Cormoria...you're looking at the new Pokemon Champion!"))
 
     playse(SE_APPLAUSE)
+    delay(60)
     fadescreen(FADE_TO_BLACK)
 
     fadenewbgm(MUS_DUMMY)

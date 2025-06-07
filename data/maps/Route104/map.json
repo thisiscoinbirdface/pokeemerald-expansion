@@ -597,7 +597,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_POKE_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_VICTORY_CAPE_A"
     },
     {
       "type": "hidden_item",

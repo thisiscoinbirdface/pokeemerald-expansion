@@ -245,6 +245,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 13,
+      "y": 23,
+      "elevation": 0,
+      "item": "ITEM_BOTTLE_CAP",
+      "flag": "FLAG_HIDDEN_ITEM_RIVETSHORE_A"
+    }
   ]
 }

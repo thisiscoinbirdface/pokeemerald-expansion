@@ -2121,6 +2121,15 @@ static void CB2_FishingBattleStart(void)
 #define TreasureSprite      gSprites[TreasureSpriteId]
 #define ItemSprite          gSprites[ItemSpriteId]
 
+static const u8 gTreasureCoordsPerPlayer[5][2] = 
+{
+    { 109, 68 },
+    { 109, 68 },
+    { 112, 67 },
+    { 110, 68 },
+    { 112, 66 }
+};
+
 void Task_DoReturnToFieldFishTreasure(u8 taskId)
 {
     u8 spriteId;
@@ -2162,7 +2171,7 @@ void Task_DoReturnToFieldFishTreasure(u8 taskId)
                 }
                 else
                 {
-                    spriteId = CreateSprite(&sSpriteTemplate_Treasure, TREASURE_POST_GAME_X, TREASURE_POST_GAME_Y, 1);
+                    spriteId = CreateSprite(&sSpriteTemplate_Treasure, gTreasureCoordsPerPlayer[gPlayerAvatar.gender][0], gTreasureCoordsPerPlayer[gPlayerAvatar.gender][1], 1);
                     spriteData.sTaskId = taskId;
                     TreasureSpriteId = spriteId;
                     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))

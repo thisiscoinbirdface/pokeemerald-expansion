@@ -247,6 +247,14 @@
       "elevation": 0,
       "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_HOLLOW_GYM_A"
+    },
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_TM55",
+      "flag": "FLAG_HIDDEN_ITEM_HOLLOW_GYM_B"
     }
   ]
 }

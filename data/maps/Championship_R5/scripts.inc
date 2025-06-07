@@ -71,7 +71,9 @@ Championship_R5::
 	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_7
 # 54 "data//maps/Championship_R5/scripts.pory"
 	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_E, Championship_R5_Text_8
-# 57 "data//maps/Championship_R5/scripts.pory"
+# 55 "data//maps/Championship_R5/scripts.pory"
+	playbgm MUS_VICTORY_LEAGUE, FALSE
+# 56 "data//maps/Championship_R5/scripts.pory"
 	special SpawnCameraObject
 # 58 "data//maps/Championship_R5/scripts.pory"
 	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_9
@@ -100,46 +102,50 @@ Championship_R5::
 # 74 "data//maps/Championship_R5/scripts.pory"
 	setflag FLAG_BEAT_FINALS
 # 77 "data//maps/Championship_R5/scripts.pory"
+	special SpawnCameraObject
+# 79 "data//maps/Championship_R5/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Championship_R5_Movement_9
-# 78 "data//maps/Championship_R5/scripts.pory"
-	msgbox_delay Championship_R5_Text_0, Championship_R5_Text_10
 # 80 "data//maps/Championship_R5/scripts.pory"
+	msgbox_delay Championship_R5_Text_0, Championship_R5_Text_10
+# 82 "data//maps/Championship_R5/scripts.pory"
 	playse SE_APPLAUSE
-# 81 "data//maps/Championship_R5/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 83 "data//maps/Championship_R5/scripts.pory"
-	fadenewbgm MUS_DUMMY
+	delay 60
+# 84 "data//maps/Championship_R5/scripts.pory"
+	fadescreen FADE_TO_BLACK
 # 86 "data//maps/Championship_R5/scripts.pory"
-	setflag FLAG_GAME_CLEAR
-# 87 "data//maps/Championship_R5/scripts.pory"
-	setflag FLAG_IS_CHAMPION
+	fadenewbgm MUS_DUMMY
 # 89 "data//maps/Championship_R5/scripts.pory"
-	waitse
+	setflag FLAG_GAME_CLEAR
 # 90 "data//maps/Championship_R5/scripts.pory"
-	delay 48
-# 93 "data//maps/Championship_R5/scripts.pory"
-	playse SE_POKENAV_CALL
-# 94 "data//maps/Championship_R5/scripts.pory"
+	setflag FLAG_IS_CHAMPION
+# 92 "data//maps/Championship_R5/scripts.pory"
 	waitse
-# 95 "data//maps/Championship_R5/scripts.pory"
-	playse SE_CLICK
+# 93 "data//maps/Championship_R5/scripts.pory"
+	delay 48
+# 96 "data//maps/Championship_R5/scripts.pory"
+	playse SE_POKENAV_CALL
 # 97 "data//maps/Championship_R5/scripts.pory"
-	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_11
+	waitse
 # 98 "data//maps/Championship_R5/scripts.pory"
-	msgbox_delay Championship_R5_Text_12, Championship_R5_Text_13
-# 99 "data//maps/Championship_R5/scripts.pory"
-	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_14
+	playse SE_CLICK
+# 100 "data//maps/Championship_R5/scripts.pory"
+	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_11
 # 101 "data//maps/Championship_R5/scripts.pory"
-	delay 30
-# 103 "data//maps/Championship_R5/scripts.pory"
-	msgbox_delay Championship_R5_Text_15, Championship_R5_Text_16
+	msgbox_delay Championship_R5_Text_12, Championship_R5_Text_13
+# 102 "data//maps/Championship_R5/scripts.pory"
+	msgbox_delay Championship_R5_Text_3, Championship_R5_Text_14
 # 104 "data//maps/Championship_R5/scripts.pory"
-	release
-# 106 "data//maps/Championship_R5/scripts.pory"
 	delay 30
+# 106 "data//maps/Championship_R5/scripts.pory"
+	msgbox_delay Championship_R5_Text_15, Championship_R5_Text_16
+# 107 "data//maps/Championship_R5/scripts.pory"
+	release
 # 109 "data//maps/Championship_R5/scripts.pory"
-	special GameClear
+	delay 30
 # 112 "data//maps/Championship_R5/scripts.pory"
+	special GameClear
+# 115 "data//maps/Championship_R5/scripts.pory"
 	releaseall
 	end
 
@@ -234,15 +240,15 @@ Championship_R5_Movement_8:
 	walk_down
 	step_end
 
-# 77 "data//maps/Championship_R5/scripts.pory"
+# 79 "data//maps/Championship_R5/scripts.pory"
 Championship_R5_Movement_9:
-# 77 "data//maps/Championship_R5/scripts.pory"
+# 79 "data//maps/Championship_R5/scripts.pory"
 	walk_right
-# 77 "data//maps/Championship_R5/scripts.pory"
+# 79 "data//maps/Championship_R5/scripts.pory"
 	walk_right
-# 77 "data//maps/Championship_R5/scripts.pory"
+# 79 "data//maps/Championship_R5/scripts.pory"
 	walk_right
-# 77 "data//maps/Championship_R5/scripts.pory"
+# 79 "data//maps/Championship_R5/scripts.pory"
 	face_down
 	step_end
 
@@ -292,7 +298,7 @@ Championship_R5_Text_6:
 
 Championship_R5_Text_7:
 # 51 "data//maps/Championship_R5/scripts.pory"
-	.string "When I look at you, {PLAYER}, xI see\n"
+	.string "When I look at you, {PLAYER}, I see\n"
 	.string "everything I don't have.\p"
 	.string "Everything I deserve, but don't have.\p"
 	.string "But I'm still the Ace Rookie!\n"
@@ -315,31 +321,31 @@ Championship_R5_Text_9:
 	.string "...$"
 
 Championship_R5_Text_10:
-# 78 "data//maps/Championship_R5/scripts.pory"
+# 80 "data//maps/Championship_R5/scripts.pory"
 	.string "To everyone watching this show in the\n"
 	.string "stands and all across Cormoria...you're\l"
 	.string "looking at the new Pokemon Champion!$"
 
 Championship_R5_Text_11:
-# 97 "data//maps/Championship_R5/scripts.pory"
+# 100 "data//maps/Championship_R5/scripts.pory"
 	.string "Hello? Who is this?$"
 
 Championship_R5_Text_12:
-# 98 "data//maps/Championship_R5/scripts.pory"
+# 101 "data//maps/Championship_R5/scripts.pory"
 	.string "???$"
 
 Championship_R5_Text_13:
-# 98 "data//maps/Championship_R5/scripts.pory"
+# 101 "data//maps/Championship_R5/scripts.pory"
 	.string "Hello...enemy of my enemy.$"
 
 Championship_R5_Text_14:
-# 99 "data//maps/Championship_R5/scripts.pory"
+# 102 "data//maps/Championship_R5/scripts.pory"
 	.string "Moxie? Melea? How'd you get my number?$"
 
 Championship_R5_Text_15:
-# 103 "data//maps/Championship_R5/scripts.pory"
+# 106 "data//maps/Championship_R5/scripts.pory"
 	.string "Rue$"
 
 Championship_R5_Text_16:
-# 103 "data//maps/Championship_R5/scripts.pory"
+# 106 "data//maps/Championship_R5/scripts.pory"
 	.string "No...It's Rue.$"
