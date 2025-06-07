@@ -120,7 +120,6 @@ script IvyRiver_Ranger_FirstQuest_Reward_Give{
     }
 }
 
-
 script IvyRiver_Ranger_FirstQuest_RewardEnd{
 
     msgbox(format("You'll be eyeing the rank of Associate next. And for that, you'll need to clear one more mission.\pFor your next mission, I'll have you help out our second floor. Three of our researchers need someone on the field and we're short on hands.\pGo upstairs, find the three researchers and complete their tasks!"))
@@ -363,19 +362,16 @@ script IvyRiver_Ranger_NPC_A{
     end
 }
 script IvyRiver_Ranger_NPC_B{
-    msgbox(format("I've come to train my Scizor with the CrazyTrain 2.0!"), MSGBOX_NPC)
+    msgbox(format("I've come to get some new TMs for Scizor!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_C{
-    msgbox(format("The CrazyTrain 2.0 is incredible!\nIt boosts all of a Pokémon's stats."), MSGBOX_NPC)
+    msgbox(format("The CrazyTrain 2.0 is incredible!\nIt manufactures strong TMs."), MSGBOX_NPC)
     end
 }
-script IvyRiver_Ranger_NPC_D{
-    msgbox(format("You need to be a Ranger Associate to use the CrazyTrain 2.0. Come back after completing some more missions!"), MSGBOX_NPC)
-    end
-}
+
 script IvyRiver_Ranger_NPC_E{
-    msgbox(format("It's too stuffy upstairs! Too many stuffy scientists who don't know what its like to be out in the field."), MSGBOX_NPC)
+    msgbox(format("I hate being upstairs! Too many stuffy scientists who don't know what its like to be out in the field."), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_NPC_F{
@@ -386,7 +382,7 @@ script IvyRiver_Ranger_NPC_F{
 
 script IvyRiver_Ranger_Scizor{
     playmoncry(SPECIES_SCIZOR ,CRY_MODE_NORMAL)
-    msgbox(format("Scizor is stretching.\nIt's getting ready to train!"), MSGBOX_NPC)
+    msgbox(format("Scizor is stretching. It's getting ready to learn some new moves!"), MSGBOX_NPC)
     end
 }
 script IvyRiver_Ranger_Stoutland{
@@ -416,7 +412,13 @@ script IvyRiver_Ranger_Clodsire{
 
 
 
-
+script IvyRiver_Ranger_NPC_D{
+    msgbox(format("The CrazyTrain 2.0 is my brainchild! With it, I can manufacture a variety of TMs for Rangers. Have a look!"))
+	pokemart(IvyRiver_Ranger_Mart)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
 
 mart IvyRiver_Ranger_Mart{
     ITEM_TM38
@@ -428,3 +430,5 @@ mart IvyRiver_Ranger_Mart{
     ITEM_TM50
     ITEM_TM62
 }
+
+
