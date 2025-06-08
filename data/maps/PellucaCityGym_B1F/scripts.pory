@@ -279,6 +279,9 @@ script PellucaGym_Leader {
         giveitem(ITEM_RARE_SHARD)
         delay(16)
         
+        //quickfix - clear zarude flag
+        clearflag(FLAG_ZARUDE)
+        
         //Bye-bye
         speakername("Jania") 
         msgbox(format("The road to the Pokémon Championship is hard, but you're nearly there.\pThe eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))

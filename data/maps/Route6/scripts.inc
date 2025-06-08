@@ -1224,7 +1224,7 @@ Route6_Gabrielle_Main_Text_4:
 	.string "now that you're out, it's only fair that\l"
 	.string "you return them.\p"
 	.string "Hehe...we've always been eyeing your\n"
-	.string "Zorua, you know? And now it's time to\l"
+	.string "Zoroark, you know? And now it's time to\l"
 	.string "collect!$"
 
 Route6_Gabrielle_Main_Text_5:
@@ -1259,7 +1259,7 @@ Route6_Gabrielle_HurryUp_Text_0:
 
 Route6_Gabrielle_DoBattle_Text_0:
 # 387 "data//maps/Route6/scripts.pory"
-	.string "Stupid Zorua!$"
+	.string "Stupid Zoroark!$"
 
 Route6_Gabrielle_DoBattle_Text_1:
 # 387 "data//maps/Route6/scripts.pory"
@@ -1269,7 +1269,7 @@ Route6_Gabrielle_Victory_Text_0:
 # 400 "data//maps/Route6/scripts.pory"
 	.string "You got lucky that {PLAYER} was\n"
 	.string "around, Gabrielle! Next time we'll get\l"
-	.string "your Zorua for sure!$"
+	.string "your Zoroark for sure!$"
 
 Route6_Gabrielle_Victory_Text_1:
 # 414 "data//maps/Route6/scripts.pory"

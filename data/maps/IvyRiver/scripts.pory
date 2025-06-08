@@ -355,25 +355,30 @@ script LilyPond_Fisherman_C{
     delay(16)
     message(format("A sad story, I know."))
     waitmessage
-    dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm sorry to hear that.", "I'm sure he's safe.", "Don't give up!")
-
-    if (var(VAR_RESULT) == 0){
-        msgbox(format("Thank you.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
-        end
-    }
-    if (var(VAR_RESULT) == 1){
-        msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time.\nI appreciate you listening to me."), MSGBOX_NPC)
-        end
-    }
-
-    msgbox(format("Don't give up? But what can we do?\nShould we try to search again?\p...\pYou're right, of course. We can't lose hope! I'd like to try searching once again. Perhaps my brothers would too.\pWhat's your name?\p...\p{PLAYER}?\pI'll write them a letter asking for their help in searching.\pWould you deliver it to them?"))
-    release
-    giveitem(ITEM_FISHERMAN_LETTER)
-    startquest(QUEST_LILYPOND_FISHERMAN)
-    setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
 
     releaseall
     end
+
+    //REMOVED THE QUEST
+    // dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm sorry to hear that.", "I'm sure he's safe.", "Don't give up!")
+
+    // if (var(VAR_RESULT) == 0){
+    //     msgbox(format("Thank you.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
+    //     end
+    // }
+    // if (var(VAR_RESULT) == 1){
+    //     msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time.\nI appreciate you listening to me."), MSGBOX_NPC)
+    //     end
+    // }
+
+    // msgbox(format("Don't give up? But what can we do?\nShould we try to search again?\p...\pYou're right, of course. We can't lose hope! I'd like to try searching once again. Perhaps my brothers would too.\pWhat's your name?\p...\p{PLAYER}?\pI'll write them a letter asking for their help in searching.\pWould you deliver it to them?"))
+    // release
+    // giveitem(ITEM_FISHERMAN_LETTER)
+    // startquest(QUEST_LILYPOND_FISHERMAN)
+    // setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+
+    // releaseall
+    // end
 }
 
 

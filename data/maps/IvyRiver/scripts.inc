@@ -492,25 +492,7 @@ LilyPond_Fisherman_C::
 	message LilyPond_Fisherman_C_Text_5
 # 357 "data//maps/IvyRiver/scripts.pory"
 	waitmessage
-# 358 "data//maps/IvyRiver/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, LilyPond_Fisherman_C_Text_6, LilyPond_Fisherman_C_Text_7, LilyPond_Fisherman_C_Text_8
-# 360 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq LilyPond_Fisherman_C_14
-# 364 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq LilyPond_Fisherman_C_17
-# 369 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_11
-# 370 "data//maps/IvyRiver/scripts.pory"
-	release
-# 371 "data//maps/IvyRiver/scripts.pory"
-	giveitem ITEM_FISHERMAN_LETTER
-# 372 "data//maps/IvyRiver/scripts.pory"
-	startquest QUEST_LILYPOND_FISHERMAN
-# 373 "data//maps/IvyRiver/scripts.pory"
-	setvar VAR_LILYPOND_FISHERMAN_QUEST, 1
-# 375 "data//maps/IvyRiver/scripts.pory"
+# 359 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
@@ -560,19 +542,9 @@ LilyPond_Fisherman_C_11:
 	msgbox LilyPond_Fisherman_C_Text_3, MSGBOX_NPC
 	end
 
-LilyPond_Fisherman_C_14:
-# 361 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_9, MSGBOX_NPC
-	end
-
-LilyPond_Fisherman_C_17:
-# 365 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_10, MSGBOX_NPC
-	end
-
 
 IvyRiver_Ranger_Blocker::
-# 382 "data//maps/IvyRiver/scripts.pory"
+# 387 "data//maps/IvyRiver/scripts.pory"
 	msgbox IvyRiver_Ranger_Blocker_Text_0, MSGBOX_NPC
 	end
 
@@ -1024,46 +996,7 @@ LilyPond_Fisherman_C_Text_5:
 # 356 "data//maps/IvyRiver/scripts.pory"
 	.string "A sad story, I know.$"
 
-LilyPond_Fisherman_C_Text_6:
-# 358 "data//maps/IvyRiver/scripts.pory"
-	.string "I'm sorry to hear that.$"
-
-LilyPond_Fisherman_C_Text_7:
-# 358 "data//maps/IvyRiver/scripts.pory"
-	.string "I'm sure he's safe.$"
-
-LilyPond_Fisherman_C_Text_8:
-# 358 "data//maps/IvyRiver/scripts.pory"
-	.string "Don't give up!$"
-
-LilyPond_Fisherman_C_Text_9:
-# 361 "data//maps/IvyRiver/scripts.pory"
-	.string "Thank you.\p"
-	.string "I've taken up too much of your time. I\n"
-	.string "appreciate you listening to me.$"
-
-LilyPond_Fisherman_C_Text_10:
-# 365 "data//maps/IvyRiver/scripts.pory"
-	.string "Thank you. I'm sure too.\p"
-	.string "I've taken up too much of your time.\n"
-	.string "I appreciate you listening to me.$"
-
-LilyPond_Fisherman_C_Text_11:
-# 369 "data//maps/IvyRiver/scripts.pory"
-	.string "Don't give up? But what can we do?\n"
-	.string "Should we try to search again?\p"
-	.string "...\p"
-	.string "You're right, of course. We can't lose\n"
-	.string "hope! I'd like to try searching once\l"
-	.string "again. Perhaps my brothers would too.\p"
-	.string "What's your name?\p"
-	.string "...\p"
-	.string "{PLAYER}?\p"
-	.string "I'll write them a letter asking for their\n"
-	.string "help in searching.\p"
-	.string "Would you deliver it to them?$"
-
 IvyRiver_Ranger_Blocker_Text_0:
-# 382 "data//maps/IvyRiver/scripts.pory"
+# 387 "data//maps/IvyRiver/scripts.pory"
 	.string "Sorry - to access the Ivy River Ranger\n"
 	.string "Institute, you must be a member.$"

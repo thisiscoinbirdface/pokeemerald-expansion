@@ -1546,7 +1546,7 @@ PellucaCity_Zorua::
 # 1007 "data//maps/PellucaCity/scripts.pory"
 	faceplayer
 # 1008 "data//maps/PellucaCity/scripts.pory"
-	playmoncry SPECIES_ZORUA, CRY_MODE_NORMAL
+	playmoncry SPECIES_ZOROARK, CRY_MODE_NORMAL
 # 1009 "data//maps/PellucaCity/scripts.pory"
 	msgbox PellucaCity_Zorua_Text_0
 # 1010 "data//maps/PellucaCity/scripts.pory"
@@ -2941,7 +2941,7 @@ PellucaCity_EventScripts_Gabrielle_Text_2:
 	.string "promised me money, I took it.\p"
 	.string "...\p"
 	.string "Those grunts were really vicious to me.\n"
-	.string "I was so scared I would lose Zorua!$"
+	.string "I was so scared I would lose Zoroark!$"
 
 PellucaCity_EventScripts_Gabrielle_Text_3:
 # 939 "data//maps/PellucaCity/scripts.pory"
@@ -3007,7 +3007,7 @@ PellucaCity_Gab_ChoiceItem_End_Text_0:
 
 PellucaCity_Zorua_Text_0:
 # 1009 "data//maps/PellucaCity/scripts.pory"
-	.string "Gabrielle's Zorua looks content.\n"
+	.string "Gabrielle's Zoroark looks content.\n"
 	.string "Life is more peaceful for it now!$"
 
 PellucaCity_Lycanroc_Text_0:

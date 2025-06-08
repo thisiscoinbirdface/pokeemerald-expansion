@@ -310,10 +310,14 @@ Championship_Hotel_Rooms_Kohla::
 # 216 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	removeobject LOCALID_MELEA
 # 218 "data//maps/Championship_Hotel_Rooms/scripts.pory"
-	delay 2
+	delay 16
+# 219 "data//maps/Championship_Hotel_Rooms/scripts.pory"
+	playse SE_DING_DONG
 # 220 "data//maps/Championship_Hotel_Rooms/scripts.pory"
-	setflag FLAG_CHAMPIONSHIP_KOHLA_ROOM
+	msgbox_delay Championship_Hotel_Rooms_Kohla_Text_23, Championship_Hotel_Rooms_Kohla_Text_24
 # 222 "data//maps/Championship_Hotel_Rooms/scripts.pory"
+	setflag FLAG_CHAMPIONSHIP_KOHLA_ROOM
+# 224 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	releaseall
 	end
 
@@ -607,3 +611,13 @@ Championship_Hotel_Rooms_Kohla_Text_22:
 # 169 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	.string "Good luck, Ace Rookie.\n"
 	.string "We'll be in touch.$"
+
+Championship_Hotel_Rooms_Kohla_Text_23:
+# 220 "data//maps/Championship_Hotel_Rooms/scripts.pory"
+	.string "PA$"
+
+Championship_Hotel_Rooms_Kohla_Text_24:
+# 220 "data//maps/Championship_Hotel_Rooms/scripts.pory"
+	.string "Attention all participants!\n"
+	.string "Please report to the Championship\l"
+	.string "Venue for registration.$"
