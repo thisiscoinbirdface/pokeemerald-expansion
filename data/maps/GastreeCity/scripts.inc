@@ -1127,8 +1127,8 @@ GastreeCity_Shard_NPC_Text_1:
 # 141 "data//maps/GastreeCity/scripts.pory"
 	.string "Come to admire this statue, have you?\p"
 	.string "I'm researching the origins of these\n"
-	.string "statues. They're a vital legacy of\l"
-	.string "Cormoria's past.$"
+	.string "ancient statues. They're a vital legacy\l"
+	.string "of Cormoria's past.$"
 
 GastreeCity_Shard_Trigger_Text_0:
 # 156 "data//maps/GastreeCity/scripts.pory"
@@ -1223,8 +1223,8 @@ GastreeCity_NPC8_Text_0:
 # 296 "data//maps/GastreeCity/scripts.pory"
 	.string "Hiiiiyah!\p"
 	.string "I'm trying to teach my Bergmite some\n"
-	.string "new moves so that we can go and explore\l"
-	.string "Route 4 together!\p"
+	.string "new moves so that we can go and\l"
+	.string "explore Route 4 together!\p"
 	.string "C'mon Bergmite! C'mon!!$"
 
 GastreeCity_NPC8_Text_1:
@@ -1266,8 +1266,8 @@ GastreeCity_NPC9_Text_5:
 	.string "No, seriously. Most people think it's\n"
 	.string "useless, but if you have HM Splash, your\l"
 	.string "Pokémon can hop onto rocks in the\l"
-	.string "water like the one here. But you need at\l"
-	.string "least one Gym Badge to use HMs.$"
+	.string "water like the one here. But you need\l"
+	.string "at least one Gym Badge to use HMs.$"
 
 GastreeCity_EventScript_SkittyQuestStart_Text_0:
 # 350 "data//maps/GastreeCity/scripts.pory"
@@ -1329,8 +1329,8 @@ GastreeCity_EventScripts_SkittyTrigger1_Text_1:
 
 GastreeCity_EventScripts_SkittyTrigger2_Text_0:
 # 459 "data//maps/GastreeCity/scripts.pory"
-	.string "Skitty ran away again. It's too\n"
-	.string "slippery!$"
+	.string "Skitty ran away again.\n"
+	.string "It's too slippery!$"
 
 GastreeCity_EventScripts_SkittyTrigger3_Text_0:
 # 477 "data//maps/GastreeCity/scripts.pory"
@@ -1354,16 +1354,15 @@ GastreeCity_Poltchageist_Text_0:
 GastreeCity_KohlaIntro1::
 # 81 "data//maps/GastreeCity/scripts.pory"
 	.string "Well well, look who thought it was\n"
-	.string "fashionable to be late! I'm way ahead of\l"
-	.string "you, chum! I've already beaten Inger\l"
-	.string "and got the Hard Badge.$"
+	.string "fashionable to be late! I'm way ahead\l"
+	.string "of you, chum! I've already beaten\l"
+	.string "Inger and got the Hard Badge. And I\l"
+	.string "don't mind dishing out a second serving!$"
 
 GastreeCity_KohlaIntro2::
 # 84 "data//maps/GastreeCity/scripts.pory"
-	.string "I don't mind dishing out a second\n"
-	.string "serving either. This is payback for\l"
-	.string "one-upping me in front of the other\l"
-	.string "detectives!$"
+	.string "This is payback for one-upping me in\n"
+	.string "front of the detectives!$"
 
 GastreeCity_KohlaPostBattle::
 # 87 "data//maps/GastreeCity/scripts.pory"

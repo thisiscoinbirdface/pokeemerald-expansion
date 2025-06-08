@@ -553,10 +553,8 @@ WhiteSign_GastreeCity_Gym_Text_0:
 
 WoodSign_GastreeCity_GetStuck_Text_0:
 # 102 "data//scripts/customscripts_signs.pory"
-	.string "TRAINER TIPS: If you get stuck, try\n"
-	.string "checking your quests and talking to\l"
-	.string "people! Sometimes, you might get an\l"
-	.string "item that lets you get to new places.$"
+	.string "If you get stuck, check your quests\n"
+	.string "and talk to people!$"
 
 WhiteSign_Route4_TowardsGastree_Text_0:
 # 110 "data//scripts/customscripts_signs.pory"

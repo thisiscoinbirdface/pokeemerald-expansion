@@ -8,11 +8,21 @@ script Common_EventScript_NurseDemo{
     end
 }
 
+script Common_EventScript_SaveGameBeforeBattle{
+    msgbox(format("You're about to battle!"))
+	special(SaveGame)
+	waitstate
+	release
+	return
+}
 
 
 
 //ALL COMMON EVENT SCRIPTS GO HERE
 script Common_EventScript_Follower_Cheat{
+	lock
+	bufferlivemonnickname(0)
+	playfirstmoncry    
     message(format("What would you like to do?"))
     waitmessage
     dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
@@ -38,11 +48,7 @@ script Common_EventScript_Follower_Cheat{
         if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
             release
             end
-        }
-
-        //burn it
-        msgbox(format("burned!"))
-        release      
+        }  
     }
 
     releaseall

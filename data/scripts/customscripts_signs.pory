@@ -99,7 +99,7 @@ script WhiteSign_GastreeCity_Gym{
 }
 
 script WoodSign_GastreeCity_GetStuck {
-    msgbox(format("TRAINER TIPS: If you get stuck, try checking your quests and talking to people! Sometimes, you might get an item that lets you get to new places."), MSGBOX_SIGN)
+    msgbox(format("If you get stuck, check your quests and talk to people!"), MSGBOX_SIGN)
     end
 }
 

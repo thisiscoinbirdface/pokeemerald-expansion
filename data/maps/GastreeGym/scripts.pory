@@ -12,7 +12,7 @@ script GastreeGym_TrainerBattle_Skip {
 
 script GastreeGym_TrainerBattle_Jaco {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_JACO, format("Hey, did the old man send you here? This is the King's training time - get out!"), "Fine, don't get out!")
+    trainerbattle_single(TRAINER_GASTREEGYM_JACO, format("Hey, did the old man send you here?\nThe King is training - get out!"), "Fine, don't get out!")
     msgbox(format("Inger the King hates losing and trains really hard. That's why I've always got his back...well, except for losing to you."))
     release
     end
@@ -23,9 +23,11 @@ script GastreeGym_LeaderBattle {
     if (flag(FLAG_BADGE01_GET)){
         msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
     } else { //else do the battle
-        special(SaveGame)
-        waitstate
-        release
+        // special(SaveGame)
+        // waitstate
+        // release
+
+        call(Common_EventScript_SaveGameBeforeBattle)
 
         fadenewbgm(MUS_RG_GYM)
 
@@ -38,7 +40,7 @@ script GastreeGym_LeaderBattle {
         delay(24)
 
         speakername("Inger")
-        msgbox(format("Who're you? A trainer? You're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
+        msgbox(format("Who're you?\pA trainer?\pYou're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
         speakername("Inger")
         msgbox(GastreeGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Defeated)

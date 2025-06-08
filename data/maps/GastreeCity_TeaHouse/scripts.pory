@@ -36,14 +36,14 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt{
     delay(16)
 
     //Ask player yes/no
-    msgbox(format("Young one, will you help me?"), MSGBOX_YESNO)
+    msgbox(format("Will you help me?"), MSGBOX_YESNO)
 
     compare(VAR_RESULT, 1)  
     //If yes, head to the quest giving script
     goto_if_eq(GastreeCity_TeaHouse_EventScript_Poltchageist_GiveQuest)
 
     //Else if no, carry on (and end the convo)
-    msgbox(format("No taste and no grace! What's happening to society?"))
+    msgbox(format("No taste and no grace!\nWhat's happening to society?"))
     releaseall   
     //If no, end
 }
@@ -84,7 +84,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
         }
     } 
 
-    msgbox(format("Seems like you don't have everything yet. Come back when you do!"), MSGBOX_NPC)   
+    msgbox(format("Seems like you don't have everything.\nCome back when you do!"), MSGBOX_NPC)   
     releaseall
     end
 }
@@ -97,14 +97,14 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)     
     delay(12)
-    msgbox(format("Oh how wonderful! I'm so excited to start brewing.\pThank you, young one. You've done me a great service."))
+    msgbox(format("Wonderful! You brought everything.\nI can't wait to start brewing.\pThank you, young one.\nYou've done me a great service."))
     release
     completequest(QUEST_GASTREE_TEA)
     delay(16)
 
     //Give polteageist
     //	.macro givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel
-    message(format("Now - I must reward you somehow.\pNo no! I insist.\pThe kitchen is managed by my staff of Poltchageist and Sinistea. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?\pWould you like to take one of them as a companion?")) //Yes/No option perhaps?
+    message(format("Now - I must reward you somehow.\pNo no! I insist.\pThe kitchen is managed by my staff of Poltchageist and Sinistea. But for some of them, working the same job has become dreary. They need to go out and see the world, don't you think?\pWould you like to take one of them\nas a companion?")) //Yes/No option perhaps?
     waitmessage
     dynmultichoice(0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Poltchageist", "Sinistea")
 
@@ -141,13 +141,13 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
 
     //Pokemon-related flavour
 script GastreeCity_TeaHouse_EventScript_NPC1{
-    msgbox(format("At my age, a hot cup of tea is the best medicine. The Poltchageist and Sinistea do great work!"), MSGBOX_NPC)
+    msgbox(format("At my age, a hot cup of tea is the best medicine. The Poltchageist and\lSinistea here do great work!"), MSGBOX_NPC)
     end
 }
 
     //TO BE CHANGED: some info/tips/etc
 script GastreeCity_TeaHouse_EventScript_NPC2{
-    msgbox(format("I always come here after a stressful business meeting. Gotta destress after making all this money!"), MSGBOX_NPC)
+    msgbox(format("I always come here after a difficult business meeting. Gotta destress\lafter making all this money!"), MSGBOX_NPC)
     end
 }
 
@@ -161,14 +161,12 @@ script GastreeCity_TeaHouse_EventScript_NPC3{
 script GastreeCity_TeaHouse_EventScript_NPC4{
     lockall
     faceplayer
-    msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my Snorunt is here to give me company!"))
-    release
-    delay(16)
     if (flag(FLAG_GASTREE_TEAHOUSE_BERRIES)){
+        msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my Snorunt is here to give me company!"))
         releaseall
         end
     } else {
-        msgbox(format("I got this plate of berries but since my date hasn't come, why don't you have some?"))
+        msgbox(format("I got a plate of berries but since my date hasn't come, why don't you have it?"))
         giveitem(ITEM_PERSIM_BERRY, 2)
         setflag(FLAG_GASTREE_TEAHOUSE_BERRIES)
     }
@@ -177,13 +175,13 @@ script GastreeCity_TeaHouse_EventScript_NPC4{
 }
 script GastreeCity_TeaHouse_Snorunt{
     playmoncry(SPECIES_SNORUNT, CRY_MODE_NORMAL)
-    msgbox(format("Snorunt is sniffing the tea. Does it like it?"), MSGBOX_NPC)
+    msgbox(format("Snorunt is sniffing the tea.\nDoes it like the scent?"), MSGBOX_NPC)
     end
 }
 
 script GastreeCity_TeaHouse_Sinistea{
     playmoncry(SPECIES_SINISTEA, CRY_MODE_NORMAL)
-    msgbox(format("Sinistea is busy serving tea. Better not disturb it!"), MSGBOX_NPC)
+    msgbox(format("Sinistea is busy serving tea.\nBetter not disturb it!"), MSGBOX_NPC)
     end
 }
 

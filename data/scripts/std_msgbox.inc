@@ -48,6 +48,7 @@ EventScript_UnusedReturn:
 Common_EventScript_SaveGame::
 	special SaveGame
 	waitstate
+	release
 	return
 
 Common_EventScript_SaveGameTrigger::

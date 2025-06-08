@@ -79,10 +79,10 @@ script GastreeCity_EventScript_KohlaBattle_Trigger{
 }
 
 text GastreeCity_KohlaIntro1 {
-    format("Well well, look who thought it was fashionable to be late! I'm way ahead of you, chum! I've already beaten Inger and got the Hard Badge.")
+    format("Well well, look who thought it was fashionable to be late! I'm way ahead\lof you, chum! I've already beaten\lInger and got the Hard Badge. And I don't mind dishing out a second serving!")
 }
 text GastreeCity_KohlaIntro2{
-    format("I don't mind dishing out a second serving either. This is payback for one-upping me in front of the other detectives!")
+    format("This is payback for one-upping me in front of the detectives!")
 }
 text GastreeCity_KohlaPostBattle{
     format("You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help.\pOver and out, chum!")
@@ -138,7 +138,7 @@ script GastreeCity_Shard_NPC{
         msgbox(format("Take your time child. I'll be waiting here."), MSGBOX_NPC)
         end
     } else {
-        msgbox(format("Come to admire this statue, have you?\pI'm researching the origins of these statues. They're a vital legacy of Cormoria's past."), MSGBOX_NPC)
+        msgbox(format("Come to admire this statue, have you?\pI'm researching the origins of these ancient statues. They're a vital legacy of Cormoria's past."), MSGBOX_NPC)
         end
     }
 }
@@ -293,7 +293,7 @@ script GastreeCity_Shard_CantLeave_Trigger{
 
     //Pokémon flavour
 script GastreeCity_NPC8{
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and explore Route 4 together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and\lexplore Route 4 together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)
     applymovement(10, moves(emote_exclamation_mark jump_in_place_down))
     waitmovement(0)
     playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
@@ -316,7 +316,7 @@ script GastreeCity_NPC9{
     faceplayer    
     msgbox(format("Yo, trainer! Come here. What's the most useful move a Pokémon can learn?"))
     dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Eruption", "Quiver Dance", "Expanding Force", "Geomancy")        
-    msgbox(format("Nope - trick question! It's Splash!\p...\pNo, seriously. Most people think it's useless, but if you have HM Splash, your Pokémon can hop onto rocks in the water like the one here. But you need at least one Gym Badge to use HMs."))
+    msgbox(format("Nope - trick question! It's Splash!\p...\pNo, seriously. Most people think it's useless, but if you have HM Splash, your Pokémon can hop onto rocks in the water like the one here. But you need\lat least one Gym Badge to use HMs."))
     releaseall
     end
 }
@@ -456,7 +456,7 @@ script GastreeCity_NPC9{
         applymovement(LOCALID_SKITTY2, moves(emote_exclamation_mark walk_fast_right * 3 walk_fast_down *2 walk_fast_right *3 walk_fast_down *7))
         waitmovement(0)
         removeobject(LOCALID_SKITTY2)
-        msgbox(format("Skitty ran away again. It's too slippery!"))
+        msgbox(format("Skitty ran away again.\nIt's too slippery!"))
         //set up the skittys  
         //hide skitty 2
         setflag(FLAG_HIDE_GASTREE_SKITTY2)   
