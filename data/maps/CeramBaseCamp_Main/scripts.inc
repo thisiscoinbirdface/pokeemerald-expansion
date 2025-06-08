@@ -531,7 +531,7 @@ CeramBaseCamp_Main_NPC5_5:
 # 386 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	faceplayer
 # 387 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	showmonpic SPECIES_DEWPIDER, 1, 3
+	showmonpic SPECIES_PETILIL, 1, 3
 # 388 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	msgbox CeramBaseCamp_Main_NPC5_Text_1
 # 389 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -1077,7 +1077,7 @@ CeramBaseCamp_Main_NPC5_Text_0:
 
 CeramBaseCamp_Main_NPC5_Text_1:
 # 388 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "I want to gift my sister a Dewpider. It's\n"
+	.string "I want to gift my sister a Petilil. It's\n"
 	.string "her favourite Pokémon! But I couldn't\l"
 	.string "find any on Route 4.$"
 

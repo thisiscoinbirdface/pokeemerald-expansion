@@ -29,35 +29,35 @@ RivetshoreCity_StorageBay_Slaking_1:
 # 16 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	delay 128
 # 17 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	playmoncry SPECIES_SLAKING, CRY_MODE_NORMAL
+	release
 # 18 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	applymovement 1, RivetshoreCity_StorageBay_Slaking_Movement_0
+	playmoncry SPECIES_SLAKING, CRY_MODE_NORMAL
 # 19 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	waitmovement 0
+	applymovement 1, RivetshoreCity_StorageBay_Slaking_Movement_0
 # 20 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	delay 16
-# 21 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Slaking_Text_2
-# 22 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	release
-# 23 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Slaking_Movement_1
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	applymovement 1, RivetshoreCity_StorageBay_Slaking_Movement_2
-# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	waitmovement 0
-# 26 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	removeobject 1
-# 27 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	msgbox RivetshoreCity_StorageBay_Slaking_Text_3
-# 28 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 21 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	delay 16
+# 22 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	msgbox RivetshoreCity_StorageBay_Slaking_Text_2
+# 23 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	release
+# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivetshoreCity_StorageBay_Slaking_Movement_1
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	applymovement 1, RivetshoreCity_StorageBay_Slaking_Movement_2
+# 26 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	waitmovement 0
+# 27 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	removeobject 1
+# 28 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	fadeinbgm 1
 # 29 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	setflag FLAG_RIVETSHORE_STORAGE_BAY_SLAKING
+	msgbox RivetshoreCity_StorageBay_Slaking_Text_3
 # 30 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	fadedefaultbgm
+	release
 # 31 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	delay 2
+	setflag FLAG_RIVETSHORE_STORAGE_BAY_SLAKING
 # 32 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	releaseall
 	end
@@ -91,7 +91,7 @@ RivetshoreCity_StorageBay_Trigger0_4:
 # 49 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	msgbox RivetshoreCity_StorageBay_Trigger0_Text_2, MSGBOX_POKENAV
 # 50 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, RivetshoreCity_StorageBay_Trigger0_Text_3, RivetshoreCity_StorageBay_Trigger0_Text_4
+	dynmultichoice 12, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, RivetshoreCity_StorageBay_Trigger0_Text_3, RivetshoreCity_StorageBay_Trigger0_Text_4
 # 51 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RivetshoreCity_StorageBay_Trigger0_6
@@ -148,39 +148,39 @@ RivetshoreCity_StorageBay_Trigger1_6:
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 
-# 18 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 19 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Slaking_Movement_0:
-# 18 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 19 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 23 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Slaking_Movement_1:
-# 23 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_left
-# 23 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	face_right
 	step_end
 
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Slaking_Movement_2:
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_up
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_right
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_right
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_right
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_right
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_down
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_down
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_down
-# 24 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 25 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	walk_down
 	step_end
 
@@ -209,11 +209,11 @@ RivetshoreCity_StorageBay_Slaking_Text_1:
 	.string "{PLAYER} played the Poke Flute.$"
 
 RivetshoreCity_StorageBay_Slaking_Text_2:
-# 21 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 22 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	.string "Slaking woke up!$"
 
 RivetshoreCity_StorageBay_Slaking_Text_3:
-# 27 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+# 29 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	.string "Slaking lumbered off somewhere...was\n"
 	.string "waking it up the wrong thing to do?$"
 
@@ -235,8 +235,8 @@ RivetshoreCity_StorageBay_Trigger0_Text_1:
 
 RivetshoreCity_StorageBay_Trigger0_Text_2:
 # 49 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
-	.string "Choose carefully! Once you enter,\n"
-	.string "there's no coming back!$"
+	.string "Once you enter, you can't come back.\n"
+	.string "Make sure you're ready!$"
 
 RivetshoreCity_StorageBay_Trigger0_Text_3:
 # 50 "data//maps/RivetshoreCity_StorageBay/scripts.pory"

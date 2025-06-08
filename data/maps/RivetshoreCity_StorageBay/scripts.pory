@@ -14,6 +14,7 @@ script RivetshoreCity_StorageBay_Slaking{
             playse(MUS_RG_POKE_FLUTE)
             msgbox(format("{PLAYER} played the Poke Flute."))
             delay(128)
+            release
             playmoncry(SPECIES_SLAKING, CRY_MODE_NORMAL)
             applymovement(1, moves(jump_in_place_up))
             waitmovement(0)
@@ -24,11 +25,10 @@ script RivetshoreCity_StorageBay_Slaking{
             applymovement(1, moves(walk_up walk_right * 4 walk_down * 4))
             waitmovement(0)
             removeobject(1)
+            fadeinbgm(1)
             msgbox(format("Slaking lumbered off somewhere...was waking it up the wrong thing to do?"))
             release
             setflag(FLAG_RIVETSHORE_STORAGE_BAY_SLAKING)
-            fadedefaultbgm
-            delay(2)
             releaseall
             end
         }
@@ -46,8 +46,8 @@ script RivetshoreCity_StorageBay_Trigger0{
     if (var(VAR_RESULT) == 1){
         msgbox(format("It sounds hollow...maybe there's enough space inside to fit in!\pEnter the storage container?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Choose carefully! Once you enter, there's no coming back!"), MSGBOX_POKENAV)
-            dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Enter", "Leave")             
+            msgbox(format("Once you enter, you can't come back.\nMake sure you're ready!"), MSGBOX_POKENAV)
+            dynmultichoice(12, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Enter", "Leave")             
             if (var(VAR_RESULT) == 0){
                 //move player
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_right))
