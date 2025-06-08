@@ -331,7 +331,7 @@ script Route6_Gabrielle_Main{
     speakername("Gabrielle")
     msgbox(format("No! They're mine! Why should I give you losers anything?"))
     speakername("Grunt")
-    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zorua, you know? And now it's time to collect!"))
+    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zoroark, you know? And now it's time to collect!"))
     speakername("Gabrielle")
     msgbox(format("That's not how it works!"))
     speakername("Grunt")
@@ -384,7 +384,7 @@ script Route6_Gabrielle_HurryUp{
 }
 
 script Route6_Gabrielle_DoBattle{
-    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zorua!", TRAINER_ROUTE6_GRUNT2, "I need better Pokémon!", PARTNER_ROUTE6_GAB)
+    multi_2_vs_2(TRAINER_ROUTE6_GRUNT1, "Stupid Zoroark!", TRAINER_ROUTE6_GRUNT2, "I need better Pokémon!", PARTNER_ROUTE6_GAB)
  	if (var(VAR_RESULT) == 1){
         goto(Route6_Gabrielle_Victory)
     }
@@ -397,7 +397,7 @@ script Route6_Gabrielle_Victory{
     //somber exit
     //
     speakername("Grunt")
-    msgbox(format("You got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zorua for sure!"))
+    msgbox(format("You got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zoroark for sure!"))
     release
     //gabrielle thanks and lives in pelluca
     applymovement(LOCALID_GRUNT2, moves(walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3)) 

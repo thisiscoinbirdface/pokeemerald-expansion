@@ -930,7 +930,7 @@ script PellucaCity_EventScripts_Gabrielle{
     } else {
 
     speakername("Gabrielle")
-    msgbox(format("I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when Team Somber promised me money, I took it.\p...\pThose grunts were really vicious to me. I was so scared I would lose Zorua!")) 
+    msgbox(format("I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when Team Somber promised me money, I took it.\p...\pThose grunts were really vicious to me. I was so scared I would lose Zoroark!")) 
     release
     delay(24)
     faceplayer
@@ -1005,8 +1005,8 @@ script PellucaCity_Gab_ChoiceItem_End{
 script PellucaCity_Zorua{
     lockall
     faceplayer
-    playmoncry(SPECIES_ZORUA, CRY_MODE_NORMAL)
-    msgbox(format("Gabrielle's Zorua looks content.\nLife is more peaceful for it now!"))
+    playmoncry(SPECIES_ZOROARK, CRY_MODE_NORMAL)
+    msgbox(format("Gabrielle's Zoroark looks content.\nLife is more peaceful for it now!"))
     release
     applymovement(25, moves(face_left))
     waitmovement(0)

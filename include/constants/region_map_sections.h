@@ -246,7 +246,7 @@
 #define MAPSEC_PELLUCA_CABLE_CAR            0xF8
 #define MAPSEC_RANGER_INSTITUTE_IVY         0xF9
 #define MAPSEC_RANGER_INSTITUTE_RIVETSHORE  0xFA
-//#define MAPSEC_PELLUCA_CABLE_CAR            0xFB
+#define MAPSEC_ROUTE7                       0xFB
 
 #define MAPSEC_IVY_RIVER_MAIN               0x8F
 #define MAPSEC_IVY_RIVER_UNDERPASS          0x90

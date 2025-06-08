@@ -215,7 +215,9 @@ script Championship_Hotel_Rooms_Kohla{
     removeobject(LOCALID_MOXIE)
     removeobject(LOCALID_MELEA)
 
-    delay(2)
+    delay(16)
+    playse(SE_DING_DONG)
+    msgbox_delay("PA", format("Attention all participants!\nPlease report to the Championship Venue for registration."))
 
     setflag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)
 

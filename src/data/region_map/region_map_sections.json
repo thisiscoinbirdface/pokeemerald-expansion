@@ -1842,10 +1842,18 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_ROUTE7",
+      "name": "Route 7",
+      "x": 7,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    }, 
+    {
       "map_section": "MAPSEC_PELLUCA_CABLE_CAR",
       "name": "Cable Car Stn.",
-      "x": 8,
-      "y": 7,
+      "x": 6,
+      "y": 8,
       "width": 1,
       "height": 1
     },    
