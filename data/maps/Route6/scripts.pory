@@ -71,7 +71,7 @@ script Route6_Venusaur{
             msgbox(format("The Venusaur wakes up...it's groggy..."))
             setwildbattle(SPECIES_VENUSAUR, 48)     
             dowildbattle  
-
+            
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){

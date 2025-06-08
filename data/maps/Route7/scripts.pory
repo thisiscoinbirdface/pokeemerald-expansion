@@ -40,7 +40,7 @@ script Route7_NPC2{
     end
 }
 script Route7_NPC3{
-    msgbox(format("Do you think the cable car attendant will go out with me?"), MSGBOX_YESNO)
+    msgbox(format("Do you think the cable car attendant will go out with me?"), MSGBOX_NPC)
     end
     // if(var(VAR_RESULT) == 0){
     //     msgbox(format("Am I really that bad?"), MSGBOX_YESNO)

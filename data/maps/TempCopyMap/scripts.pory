@@ -1128,7 +1128,7 @@ script Common_EventScript_Dugtrio_ToRoute3{
 script Common_EventScript_Dugtrio_ToGalecrest{
     lockall
     faceplayer
-    msgbox(format("Dugtrio is digging into the ground. Follow it?"), MSGBOX_YESNO)
+    msgbox(format("Dugtrio is digging back up to the surface. Follow it?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 1){
         //dig

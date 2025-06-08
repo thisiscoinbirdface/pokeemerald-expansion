@@ -187,7 +187,7 @@ script LilyPond_Cave_Lapras_Encounter{
             msgbox(format("The Blastoise wakes up! It looks healthy now - too healthy!"))
             setwildbattle(SPECIES_BLASTOISE, 48)     
             dowildbattle  
-
+            
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){

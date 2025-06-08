@@ -53,7 +53,7 @@ script MtCeram_Charizard{
             msgbox(format("The Charizard is furious!"))
             setwildbattle(SPECIES_CHARIZARD, 48)     
             dowildbattle  
-
+            
             //result
             specialvar(VAR_RESULT, GetBattleOutcome)
             if (var(VAR_RESULT) == B_OUTCOME_WON){

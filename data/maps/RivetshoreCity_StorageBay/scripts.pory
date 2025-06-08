@@ -28,6 +28,7 @@ script RivetshoreCity_StorageBay_Slaking{
             release
             setflag(FLAG_RIVETSHORE_STORAGE_BAY_SLAKING)
             fadedefaultbgm
+            delay(2)
             releaseall
             end
         }
