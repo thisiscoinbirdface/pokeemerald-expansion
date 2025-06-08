@@ -1012,8 +1012,8 @@ MauvilleCity_GameCorner_EventScript_BuyLeafStone::
 
 MauvilleCity_GameCorner_EventScript_TMDoubleTeam::
 	setvar VAR_TEMP_1, 1
-	bufferitemname STR_VAR_1, ITEM_TM_DOUBLE_TEAM
-	setvar VAR_0x8004, ITEM_TM_DOUBLE_TEAM
+	bufferitemname STR_VAR_1, ITEM_TM08
+	setvar VAR_0x8004, ITEM_TM08
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TMPsychic::
@@ -1055,10 +1055,10 @@ MauvilleCity_GameCorner_EventScript_ConfirmTMPrize::
 MauvilleCity_GameCorner_EventScript_BuyTMDoubleTeam::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, TM_DOUBLE_TEAM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_TM_DOUBLE_TEAM
+	checkitemspace ITEM_TM08
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_DOUBLE_TEAM_COINS
-	additem ITEM_TM_DOUBLE_TEAM
+	additem ITEM_TM08
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT

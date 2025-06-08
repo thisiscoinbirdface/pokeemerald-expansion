@@ -25,7 +25,7 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
-	.2byte ITEM_TM_FIRE_BLAST
+	.2byte ITEM_TM11
 	.2byte ITEM_TM_THUNDER
 	.2byte ITEM_TM_BLIZZARD
 	.2byte ITEM_TM_HYPER_BEAM
@@ -43,10 +43,10 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
-	.2byte ITEM_TM_PROTECT
-	.2byte ITEM_TM_SAFEGUARD
-	.2byte ITEM_TM_REFLECT
-	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM12
+	.2byte ITEM_TM13
+	.2byte ITEM_TM14
+	.2byte ITEM_TM15
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:

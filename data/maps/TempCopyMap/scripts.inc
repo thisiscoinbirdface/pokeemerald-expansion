@@ -1787,7 +1787,7 @@ Common_EventScript_Dugtrio_ToGalecrest::
 # 1130 "data//maps/TempCopyMap/scripts.pory"
 	faceplayer
 # 1131 "data//maps/TempCopyMap/scripts.pory"
-	msgbox Common_EventScript_Dugtrio_ToRoute3_Text_0, MSGBOX_YESNO
+	msgbox Common_EventScript_Dugtrio_ToGalecrest_Text_0, MSGBOX_YESNO
 # 1132 "data//maps/TempCopyMap/scripts.pory"
 	release
 # 1133 "data//maps/TempCopyMap/scripts.pory"
@@ -2345,6 +2345,11 @@ Common_EventScript_Dugtrio_ToRoute3_Text_0:
 # 1115 "data//maps/TempCopyMap/scripts.pory"
 	.string "Dugtrio is digging into the ground.\n"
 	.string "Follow it?$"
+
+Common_EventScript_Dugtrio_ToGalecrest_Text_0:
+# 1131 "data//maps/TempCopyMap/scripts.pory"
+	.string "Dugtrio is digging back up to the\n"
+	.string "surface. Follow it?$"
 
 Common_EventScript_Tauros_IvyRiver_Text_0:
 # 1153 "data//maps/TempCopyMap/scripts.pory"

@@ -48,7 +48,7 @@ Route7_NPC2::
 
 Route7_NPC3::
 # 43 "data//maps/Route7/scripts.pory"
-	msgbox Route7_NPC3_Text_0, MSGBOX_YESNO
+	msgbox Route7_NPC3_Text_0, MSGBOX_NPC
 	end
 
 

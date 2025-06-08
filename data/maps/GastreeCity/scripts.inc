@@ -594,7 +594,7 @@ GastreeCity_NPC2_5:
 # 410 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_3
 # 411 "data//maps/GastreeCity/scripts.pory"
-	giveitem ITEM_HM_CUT
+	giveitem ITEM_HM_SPLASH
 # 412 "data//maps/GastreeCity/scripts.pory"
 	msgbox GastreeCity_NPC2_Text_4
 # 413 "data//maps/GastreeCity/scripts.pory"

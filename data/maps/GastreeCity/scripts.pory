@@ -408,7 +408,7 @@ script GastreeCity_NPC9{
                 playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
                 msgbox(format("Skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
-                giveitem(ITEM_HM_CUT)
+                giveitem(ITEM_HM_SPLASH)
                 msgbox(format("I'm not a trainer so I don't need it. All I need is my Skitty!\pYou don't need to teach it to any of your Pokémon, but you need at least one Gym Badge to use it.\pNow come here Skitty!"))
                 applymovement(3, moves(face_up))
                 waitmovement(0)

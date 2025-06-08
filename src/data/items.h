@@ -11857,7 +11857,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_NONE, // Todo
     },
 
-    [ITEM_HM_CUT] =
+    [ITEM_HM_SPLASH] =
     {
         .name = _("HM01"),
         .price = 0,
@@ -11917,7 +11917,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_STRENGTH,
     },
 
-    [ITEM_HM_FLASH] =
+    [ITEM_HM_FLIP_TURN] =
     {
         .name = _("HM05"),
         .price = 0,

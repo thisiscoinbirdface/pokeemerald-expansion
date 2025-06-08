@@ -268,3 +268,38 @@ MoveTutor_EventScript_OpenPartyMenu::
 MoveTutor_EventScript_CanOnlyBeLearnedOnce::
 	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
 	return
+
+
+NotARealScript_TutorMovesList::
+	setvar VAR_0x8005, MOVE_FIRE_FANG
+	setvar VAR_0x8005, MOVE_ICE_FANG
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
+	setvar VAR_0x8005, MOVE_SOLAR_BEAM
+	setvar VAR_0x8005, MOVE_SOLAR_BLADE
+	setvar VAR_0x8005, MOVE_SNOWSCAPE
+	setvar VAR_0x8005, MOVE_SUNNY_DAY
+	setvar VAR_0x8005, MOVE_SANDSTORM
+	setvar VAR_0x8005, MOVE_RAIN_DANCE
+	setvar VAR_0x8005, MOVE_STEEL_BEAM
+	setvar VAR_0x8005, MOVE_DRACO_METEOR
+	setvar VAR_0x8005, MOVE_OVERHEAT
+	setvar VAR_0x8005, MOVE_LEAF_STORM
+	setvar VAR_0x8005, MOVE_GUNK_SHOT
+	setvar VAR_0x8005, MOVE_METEOR_BEAM
+	setvar VAR_0x8005, MOVE_HYDRO_PUMP
+	setvar VAR_0x8005, MOVE_SCALE_SHOT
+	setvar VAR_0x8005, MOVE_BULLET_SEED
+	setvar VAR_0x8005, MOVE_ICICLE_SPEAR
+	setvar VAR_0x8005, MOVE_ROCK_BLAST
+	setvar VAR_0x8005, MOVE_REFLECT
+	setvar VAR_0x8005, MOVE_LIGHT_SCREEN
+	setvar VAR_0x8005, MOVE_PROTECT
+	return
+
+
+
+
+
+
+
+	

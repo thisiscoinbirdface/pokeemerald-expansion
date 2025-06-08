@@ -138,7 +138,7 @@ CeramBaseCamp_Cyndaquil_StartQuest_2:
 
 CeramBaseCamp_Cyndaquil_QuestInProgress::
 # 107 "data//maps/CeramBaseCamp/scripts.pory"
-	checkitem ITEM_TM_SUNNY_DAY
+	checkitem ITEM_EJECT_BUTTON
 # 108 "data//maps/CeramBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CeramBaseCamp_Cyndaquil_QuestInProgress_2

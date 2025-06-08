@@ -104,7 +104,7 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
 script CeramBaseCamp_Cyndaquil_QuestInProgress{
 
     //Check TM
-    checkitem(ITEM_TM_SUNNY_DAY)
+    checkitem(ITEM_EJECT_BUTTON)
     if (var(VAR_RESULT) == 1){  //Yes TM
         msgbox(format("Did you bring Sunny Day?\nYes? Perfect! Let's get to it."))
         release
