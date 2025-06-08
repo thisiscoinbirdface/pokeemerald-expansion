@@ -36,32 +36,32 @@
 enum
 {
     MENUITEM_TEXTSPEED,
-    MENUITEM_BATTLESCENE,
-    MENUITEM_BATTLESTYLE,
-    MENUITEM_SOUND,
+    MENUITEM_AUTOSCROLL,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
+    MENUITEM_AUTORUN,
     MENUITEM_CANCEL,
     MENUITEM_COUNT,
 };
 
 enum 
 {
-    MENUITEM_FOLLOWER,
+    MENUITEM_DIFFICULTY,   
+    MENUITEM_EXPCAP,   
+    MENUITEM_BATTLESTYLE,
     MENUITEM_BATTLESPEED,
-    MENUITEM_AUTORUN,
-    MENUITEM_QUICKRUN,
-    MENUITEM_BIKESURFMUS,
-    MENUITEM_AFFECTION,    
+    MENUITEM_BATTLESCENE,  
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
 
 enum 
 {
-    MENUITEM_DIFFICULTY,   
-    MENUITEM_EXPCAP,   
-    MENUITEM_AUTOSCROLL,
+    MENUITEM_FOLLOWER,
+    MENUITEM_QUICKRUN,
+    MENUITEM_SOUND,    
+    MENUITEM_BIKESURFMUS,
+    MENUITEM_AFFECTION,  
     MENUITEM_CANCEL_PG3,
     MENUITEM_COUNT_PG3,
 };
@@ -146,31 +146,32 @@ static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equa
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
     [MENUITEM_TEXTSPEED]   = gText_TextSpeed,
-    [MENUITEM_BATTLESCENE] = gText_BattleScene,
-    [MENUITEM_BATTLESTYLE] = gText_BattleStyle,
-    [MENUITEM_SOUND]       = gText_Sound,
+    [MENUITEM_AUTOSCROLL]  = gText_Autoscroll,  
     [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
     [MENUITEM_FRAMETYPE]   = gText_Frame,
+    [MENUITEM_AUTORUN]     = gText_AutoRun,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
 static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
 {
-    [MENUITEM_FOLLOWER]        = gText_Follower,
-    [MENUITEM_BATTLESPEED]      = gText_BattleSpeed,
-    [MENUITEM_AUTORUN]      = gText_AutoRun,    
-    [MENUITEM_QUICKRUN]      = gText_QuickRun,    
-    [MENUITEM_BIKESURFMUS]      = gText_BikeSurfMus,  
-    [MENUITEM_AFFECTION]      = gText_Affection,      
-    [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
+
+    [MENUITEM_DIFFICULTY]  = gText_Difficulty,   
+    [MENUITEM_EXPCAP]      = gText_ExpCap, 
+    [MENUITEM_BATTLESTYLE] = gText_BattleStyle,
+    [MENUITEM_BATTLESPEED] = gText_BattleSpeed,       
+    [MENUITEM_BATTLESCENE] = gText_BattleScene,   
+    [MENUITEM_CANCEL_PG2]  = gText_OptionMenuCancel,
 };
 
 static const u8 *const sOptionMenuItemsNames_Pg3[MENUITEM_COUNT_PG3] =
 {
-    [MENUITEM_DIFFICULTY]      = gText_Difficulty,   
-    [MENUITEM_EXPCAP]          = gText_ExpCap,   
-    [MENUITEM_AUTOSCROLL]          = gText_Autoscroll,   
-    [MENUITEM_CANCEL_PG3]      = gText_OptionMenuCancel,
+    [MENUITEM_FOLLOWER]    = gText_Follower,
+    [MENUITEM_QUICKRUN]    = gText_QuickRun,    
+    [MENUITEM_SOUND]       = gText_Sound,
+    [MENUITEM_BIKESURFMUS] = gText_BikeSurfMus,  
+    [MENUITEM_AFFECTION]   = gText_Affection,       
+    [MENUITEM_CANCEL_PG3]  = gText_OptionMenuCancel,
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
@@ -217,6 +218,11 @@ static const struct BgTemplate sOptionMenuBgTemplates[] =
         .baseTile = 0
     }
 };
+
+void PlayOptionChangeSE(void)
+{
+    PlaySE(SE_SELECT);
+}
 
 static const u16 sOptionMenuBg_Pal[] = {RGB(17, 18, 31)};
 
@@ -276,11 +282,10 @@ static void DrawOptionsPg1(u8 taskId)
 {  
     ReadAllCurrentSettings(taskId);
     TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
-    BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
-    BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
-    Sound_DrawChoices(gTasks[taskId].tSound);
+    Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll); 
     ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
     FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+    AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -288,22 +293,23 @@ static void DrawOptionsPg1(u8 taskId)
 static void DrawOptionsPg2(u8 taskId)
 {
     ReadAllCurrentSettings(taskId);
-    Follower_DrawChoices(gTasks[taskId].tFollower);
+    Difficulty_DrawChoices(gTasks[taskId].tDifficulty); 
+    ExpCap_DrawChoices(gTasks[taskId].tExpCap);
+    BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
     BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
-    AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
-    QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
-    BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);  
-    Affection_DrawChoices(gTasks[taskId].tAffection);    
+    BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
 
 static void DrawOptionsPg3(u8 taskId)
 { 
-    ReadAllCurrentSettings(taskId);    
-    Difficulty_DrawChoices(gTasks[taskId].tDifficulty);    
-    ExpCap_DrawChoices(gTasks[taskId].tExpCap);    
-    Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll);    
+    ReadAllCurrentSettings(taskId); 
+    Follower_DrawChoices(gTasks[taskId].tFollower);
+    QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
+    Sound_DrawChoices(gTasks[taskId].tSound); 
+    BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);  
+    Affection_DrawChoices(gTasks[taskId].tAffection);    
     HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -522,6 +528,12 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     else
     {
         u8 previousOption;
+// - General
+//     - text speed
+//     - text scroll
+//     - button mode
+//     - frame
+//     - run toggle
 
         switch (gTasks[taskId].tMenuSelection)
         {
@@ -532,27 +544,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tTextSpeed)
                 TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
             break;
-        case MENUITEM_BATTLESCENE:
-            previousOption = gTasks[taskId].tBattleSceneOff;
-            gTasks[taskId].tBattleSceneOff = BattleScene_ProcessInput(gTasks[taskId].tBattleSceneOff);
+        case MENUITEM_AUTOSCROLL:
+            previousOption = gTasks[taskId].tAutoscroll;
+            gTasks[taskId].tAutoscroll = Autoscroll_ProcessInput(gTasks[taskId].tAutoscroll);
 
-            if (previousOption != gTasks[taskId].tBattleSceneOff)
-                BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
-            break;
-        case MENUITEM_BATTLESTYLE:
-            previousOption = gTasks[taskId].tBattleStyle;
-            gTasks[taskId].tBattleStyle = BattleStyle_ProcessInput(gTasks[taskId].tBattleStyle);
-
-            if (previousOption != gTasks[taskId].tBattleStyle)
-                BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
-            break;
-        case MENUITEM_SOUND:
-            previousOption = gTasks[taskId].tSound;
-            gTasks[taskId].tSound = Sound_ProcessInput(gTasks[taskId].tSound);
-
-            if (previousOption != gTasks[taskId].tSound)
-                Sound_DrawChoices(gTasks[taskId].tSound);
-            break;
+            if (previousOption != gTasks[taskId].tAutoscroll)
+                Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll);
+            break;     
         case MENUITEM_BUTTONMODE:
             previousOption = gTasks[taskId].tButtonMode;
             gTasks[taskId].tButtonMode = ButtonMode_ProcessInput(gTasks[taskId].tButtonMode);
@@ -566,6 +564,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
 
             if (previousOption != gTasks[taskId].tWindowFrameType)
                 FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+            break;
+        case MENUITEM_AUTORUN:
+            previousOption = gTasks[taskId].tAutoRun;
+            gTasks[taskId].tAutoRun = AutoRun_ProcessInput(gTasks[taskId].tAutoRun);
+
+            if (previousOption != gTasks[taskId].tAutoRun)
+                AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
             break;
         default:
             return;
@@ -625,12 +630,26 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 
         switch (gTasks[taskId].tMenuSelection)
         {
-        case MENUITEM_FOLLOWER:
-            previousOption = gTasks[taskId].tFollower;
-            gTasks[taskId].tFollower = Follower_ProcessInput(gTasks[taskId].tFollower);
+        case MENUITEM_DIFFICULTY:
+            previousOption = gTasks[taskId].tDifficulty;
+            gTasks[taskId].tDifficulty = Difficulty_ProcessInput(gTasks[taskId].tDifficulty);
 
-            if (previousOption != gTasks[taskId].tFollower)
-                Follower_DrawChoices(gTasks[taskId].tFollower);
+            if (previousOption != gTasks[taskId].tDifficulty)
+                Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
+            break;
+        case MENUITEM_EXPCAP:
+            previousOption = gTasks[taskId].tExpCap;
+            gTasks[taskId].tExpCap = ExpCap_ProcessInput(gTasks[taskId].tExpCap);
+
+            if (previousOption != gTasks[taskId].tExpCap)
+                ExpCap_DrawChoices(gTasks[taskId].tExpCap);
+            break;
+        case MENUITEM_BATTLESTYLE:
+            previousOption = gTasks[taskId].tBattleStyle;
+            gTasks[taskId].tBattleStyle = BattleStyle_ProcessInput(gTasks[taskId].tBattleStyle);
+
+            if (previousOption != gTasks[taskId].tBattleStyle)
+                BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
             break;
         case MENUITEM_BATTLESPEED:
             previousOption = gTasks[taskId].tBattleSpeed;
@@ -639,34 +658,13 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
             if (previousOption != gTasks[taskId].tBattleSpeed)
                 BattleSpeed_DrawChoices(gTasks[taskId].tBattleSpeed);
             break;
-        case MENUITEM_AUTORUN:
-            previousOption = gTasks[taskId].tAutoRun;
-            gTasks[taskId].tAutoRun = AutoRun_ProcessInput(gTasks[taskId].tAutoRun);
+        case MENUITEM_BATTLESCENE:
+            previousOption = gTasks[taskId].tBattleSceneOff;
+            gTasks[taskId].tBattleSceneOff = BattleScene_ProcessInput(gTasks[taskId].tBattleSceneOff);
 
-            if (previousOption != gTasks[taskId].tAutoRun)
-                AutoRun_DrawChoices(gTasks[taskId].tAutoRun);
-            break;       
-        case MENUITEM_QUICKRUN:
-            previousOption = gTasks[taskId].tQuickRun;
-            gTasks[taskId].tQuickRun = QuickRun_ProcessInput(gTasks[taskId].tQuickRun);
-
-            if (previousOption != gTasks[taskId].tQuickRun)
-                QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
-            break;       
-        case MENUITEM_BIKESURFMUS:
-            previousOption = gTasks[taskId].tBikeSurfMus;
-            gTasks[taskId].tBikeSurfMus = BikeSurfMus_ProcessInput(gTasks[taskId].tBikeSurfMus);
-
-            if (previousOption != gTasks[taskId].tBikeSurfMus)
-                BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);
-            break;      
-        case MENUITEM_AFFECTION:
-            previousOption = gTasks[taskId].tAffection;
-            gTasks[taskId].tAffection = Affection_ProcessInput(gTasks[taskId].tAffection);
-
-            if (previousOption != gTasks[taskId].tAffection)
-                Affection_DrawChoices(gTasks[taskId].tAffection);
-            break;                                 
+            if (previousOption != gTasks[taskId].tBattleSceneOff)
+                BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
+            break;                              
         default:
             return;
         }
@@ -725,27 +723,42 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
 
         switch (gTasks[taskId].tMenuSelection)
         {  
-        case MENUITEM_DIFFICULTY:
-            previousOption = gTasks[taskId].tDifficulty;
-            gTasks[taskId].tDifficulty = Difficulty_ProcessInput(gTasks[taskId].tDifficulty);
+         
+        case MENUITEM_FOLLOWER:
+            previousOption = gTasks[taskId].tFollower;
+            gTasks[taskId].tFollower = Follower_ProcessInput(gTasks[taskId].tFollower);
 
-            if (previousOption != gTasks[taskId].tDifficulty)
-                Difficulty_DrawChoices(gTasks[taskId].tDifficulty);
-            break;         
-        case MENUITEM_EXPCAP:
-            previousOption = gTasks[taskId].tExpCap;
-            gTasks[taskId].tExpCap = ExpCap_ProcessInput(gTasks[taskId].tExpCap);
+            if (previousOption != gTasks[taskId].tFollower)
+                Follower_DrawChoices(gTasks[taskId].tFollower);
+            break;
+        case MENUITEM_QUICKRUN:
+            previousOption = gTasks[taskId].tQuickRun;
+            gTasks[taskId].tQuickRun = QuickRun_ProcessInput(gTasks[taskId].tQuickRun);
 
-            if (previousOption != gTasks[taskId].tExpCap)
-                ExpCap_DrawChoices(gTasks[taskId].tExpCap);
-            break;                                    
-        case MENUITEM_AUTOSCROLL:
-            previousOption = gTasks[taskId].tAutoscroll;
-            gTasks[taskId].tAutoscroll = Autoscroll_ProcessInput(gTasks[taskId].tAutoscroll);
+            if (previousOption != gTasks[taskId].tQuickRun)
+                QuickRun_DrawChoices(gTasks[taskId].tQuickRun);
+            break;
+        case MENUITEM_SOUND:
+            previousOption = gTasks[taskId].tSound;
+            gTasks[taskId].tSound = Sound_ProcessInput(gTasks[taskId].tSound);
 
-            if (previousOption != gTasks[taskId].tAutoscroll)
-                Autoscroll_DrawChoices(gTasks[taskId].tAutoscroll);
-            break;                                    
+            if (previousOption != gTasks[taskId].tSound)
+                Sound_DrawChoices(gTasks[taskId].tSound);
+            break;
+        case MENUITEM_BIKESURFMUS:
+            previousOption = gTasks[taskId].tBikeSurfMus;
+            gTasks[taskId].tBikeSurfMus = BikeSurfMus_ProcessInput(gTasks[taskId].tBikeSurfMus);
+
+            if (previousOption != gTasks[taskId].tBikeSurfMus)
+                BikeSurfMus_DrawChoices(gTasks[taskId].tBikeSurfMus);
+            break;
+        case MENUITEM_AFFECTION:
+            previousOption = gTasks[taskId].tAffection;
+            gTasks[taskId].tAffection = Affection_ProcessInput(gTasks[taskId].tAffection);
+
+            if (previousOption != gTasks[taskId].tAffection)
+                Affection_DrawChoices(gTasks[taskId].tAffection);
+            break;
         default:
             return;
         }
@@ -821,6 +834,7 @@ static u8 TextSpeed_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection <= 1)
             selection++;
         else
@@ -830,6 +844,7 @@ static u8 TextSpeed_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -867,6 +882,7 @@ static u8 BattleScene_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -890,6 +906,7 @@ static u8 BattleStyle_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -913,6 +930,7 @@ static u8 Sound_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         SetPokemonCryStereo(selection);
         sArrowPressed = TRUE;
@@ -937,6 +955,7 @@ static u8 FrameType_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection < WINDOW_FRAMES_COUNT - 1)
             selection++;
         else
@@ -948,6 +967,7 @@ static u8 FrameType_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -995,6 +1015,7 @@ static u8 ButtonMode_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection <= 1)
             selection++;
         else
@@ -1004,6 +1025,7 @@ static u8 ButtonMode_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -1041,6 +1063,7 @@ static u8 Follower_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1062,6 +1085,7 @@ static u8 BattleSpeed_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection <= 2)
             selection++;
         else
@@ -1071,6 +1095,7 @@ static u8 BattleSpeed_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -1113,6 +1138,7 @@ static u8 AutoRun_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1135,6 +1161,7 @@ static u8 QuickRun_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1158,6 +1185,7 @@ static u8 BikeSurfMus_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1180,6 +1208,7 @@ static u8 Affection_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1202,6 +1231,7 @@ static u8 Difficulty_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection <= 0)
             selection++;
         else
@@ -1211,6 +1241,7 @@ static u8 Difficulty_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -1253,6 +1284,7 @@ static u8 ExpCap_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         if (selection <= 1)
             selection++;
         else
@@ -1262,6 +1294,7 @@ static u8 ExpCap_ProcessInput(u8 selection)
     }
     if (JOY_NEW(DPAD_LEFT))
     {
+        PlayOptionChangeSE();
         if (selection != 0)
             selection--;
         else
@@ -1305,6 +1338,7 @@ static u8 Autoscroll_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
     {
+        PlayOptionChangeSE();
         selection ^= 1;
         sArrowPressed = TRUE;
     }
@@ -1329,7 +1363,23 @@ static void DrawHeaderText(void)
 {
     u32 i, widthOptions, xMid;
     u8 pageDots[9] = _("");  // Array size should be at least (2 * PAGE_COUNT) -1
+
     widthOptions = GetStringWidth(FONT_NORMAL, gText_Option, 0);
+
+    switch (sCurrPage)
+    {
+        case 0:
+            widthOptions = GetStringWidth(FONT_NORMAL, gText_OptionInterface, 0);
+            break;
+        case 1:
+            widthOptions = GetStringWidth(FONT_NORMAL, gText_OptionBattle, 0);
+            break;
+        case 2:
+            widthOptions = GetStringWidth(FONT_NORMAL, gText_OptionMisc, 0);
+            break;
+    }    
+
+    //    widthOptions = GetStringWidth(FONT_NORMAL, gText_Option, 0);
 
     for (i = 0; i < PAGE_COUNT; i++)
     {
@@ -1342,8 +1392,20 @@ static void DrawHeaderText(void)
     }
     xMid = (8 + widthOptions + 5);    
     FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(1));
-    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_Option, 8, 1, TEXT_SKIP_DRAW, NULL);
-    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, pageDots, xMid, 1, TEXT_SKIP_DRAW, NULL);
+    switch (sCurrPage)
+    {
+        case 0:
+            AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_OptionInterface, 30, 1, TEXT_SKIP_DRAW, NULL);
+            break;
+        case 1:
+            AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_OptionBattle, 30, 1, TEXT_SKIP_DRAW, NULL);
+            break;
+        case 2:
+            AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_OptionMisc, 30, 1, TEXT_SKIP_DRAW, NULL);
+            break;
+    } 
+//    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_Option, 8, 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, pageDots, 1, 1, TEXT_SKIP_DRAW, NULL);
     AddTextPrinterParameterized(WIN_HEADER, FONT_NORMAL, gText_PageNav, GetStringRightAlignXOffset(FONT_NORMAL, gText_PageNav, 198), 1, TEXT_SKIP_DRAW, NULL);
 
     CopyWindowToVram(WIN_HEADER, COPYWIN_FULL);

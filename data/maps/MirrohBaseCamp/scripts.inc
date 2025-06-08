@@ -174,6 +174,8 @@ MirrohBaseCamp_Greavard_Outside_1:
 # 104 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Greavard_Outside_5
+# 140 "data//maps/MirrohBaseCamp/scripts.pory"
+	releaseall
 	end
 
 MirrohBaseCamp_Greavard_Outside_5:

@@ -277,6 +277,11 @@ extern const u8 gText_BattleSpeed3X[];
 extern const u8 gText_BattleSpeed4X[];
 
 extern const u8 gText_Option[];
+
+extern const u8 gText_OptionInterface[];
+extern const u8 gText_OptionBattle[];
+extern const u8 gText_OptionMisc[];
+
 extern const u8 gText_OptionMenu[];
 extern const u8 gText_SmallDot[];
 extern const u8 gText_LargeDot[];

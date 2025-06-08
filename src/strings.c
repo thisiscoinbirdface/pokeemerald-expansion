@@ -1009,6 +1009,11 @@ const u8 gText_MoveCloserToLinkPartner[] = _("Move closer to your link partner(s
 const u8 gText_ABtnRegistrationCounter[] = _("A Button: Registration Counter");
 const u8 gText_ABtnTitleScreen[] = _("A Button: Title Screen");
 const u8 gText_Option[] = _("OPTION");
+
+const u8 gText_OptionInterface[] = _("Interface");
+const u8 gText_OptionBattle[] = _("Gameplay");
+const u8 gText_OptionMisc[] = _("Miscellaneous");
+
 const u8 gText_SmallDot[] = _("·");
 const u8 gText_LargeDot[] = _("{EMOJI_CIRCLE}");
 const u8 gText_PageNav[] = _("{L_BUTTON}{R_BUTTON} Page");
