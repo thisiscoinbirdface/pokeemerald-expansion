@@ -384,8 +384,8 @@ script CeramBaseCamp_Main_NPC5{
         //Regular case
         lockall
         faceplayer
-        showmonpic(SPECIES_DEWPIDER, 1, 3)
-        msgbox(format("I want to gift my sister a Dewpider. It's her favourite Pokémon! But I couldn't find any on Route 4."))
+        showmonpic(SPECIES_PETILIL, 1, 3)
+        msgbox(format("I want to gift my sister a Petilil. It's her favourite Pokémon! But I couldn't find any on Route 4."))
         release
         hidemonpic
         delay(24)
