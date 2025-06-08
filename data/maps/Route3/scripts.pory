@@ -75,7 +75,7 @@ script Route3_Skarmory_Trigger{
     applymovement(LOCALID_SKARM, moves(emote_exclamation_mark jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("Skarmory stares defiantly at you. It roars! Could be dangerous to approach."))
+    msgbox(format("Skarmory roars defiantly at you.\nCould be dangerous to approach."))
 
     setvar(VAR_TEMP_0, 1)
 
@@ -109,7 +109,7 @@ script Route3_Skarmory_Battle{
         releaseall
     }            
     if (var(VAR_RESULT) == B_OUTCOME_RAN){
-        msgbox(format("The Skarmory preens its steely feathers victoriously. Better not disturb it again!"))
+        msgbox(format("The Skarmory preens its steely feathers victoriously.\nBetter not disturb it again!"))
         release
     }
 

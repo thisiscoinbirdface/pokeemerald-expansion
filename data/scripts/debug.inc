@@ -153,7 +153,8 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	call Roulette_EventScript_Table1
+	removeitem ITEM_NUZKIT
+	giveitem ITEM_NUZKIT
 	release
 	end
 

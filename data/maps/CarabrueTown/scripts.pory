@@ -49,9 +49,9 @@ script CarabrueTown_Sign_ChampionHouse{
 
 script CarabrueTown_EventScript_NPC1{
     if (flag(FLAG_CARABRUE_POLICE)){
-        msgbox(format("Looks like the police went away. I hope they got the evidence they needed."), MSGBOX_NPC)
+        msgbox(format("Looks like the police went away. I hope they got the evidence they needed!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Psst - {PLAYER}! See those cops over there?\pThey came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."), MSGBOX_NPC)
+        msgbox(format("Psst - {PLAYER}! See those detectives standing over there?\pThey came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."), MSGBOX_NPC)
     }
     end
 }

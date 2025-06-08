@@ -320,8 +320,8 @@ Route3_NPC2_Text_0:
 
 Route3_Skarmory_Trigger_Text_0:
 # 78 "data//maps/Route3/scripts.pory"
-	.string "Skarmory stares defiantly at you. It\n"
-	.string "roars! Could be dangerous to approach.$"
+	.string "Skarmory roars defiantly at you.\n"
+	.string "Could be dangerous to approach.$"
 
 Route3_Skarmory_Battle_Text_0:
 # 93 "data//maps/Route3/scripts.pory"
@@ -330,8 +330,8 @@ Route3_Skarmory_Battle_Text_0:
 Route3_Skarmory_Battle_Text_1:
 # 112 "data//maps/Route3/scripts.pory"
 	.string "The Skarmory preens its steely\n"
-	.string "feathers victoriously. Better not\l"
-	.string "disturb it again!$"
+	.string "feathers victoriously.\n"
+	.string "Better not disturb it again!$"
 
 Route3_Ext_TrainerBattle_A_Text_0:
 # 135 "data//maps/Route3/scripts.pory"

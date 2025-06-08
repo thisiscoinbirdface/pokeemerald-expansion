@@ -120,12 +120,10 @@ FennilahlTown_Pokemart_Inventory:
 	.2byte ITEM_PARLYZ_HEAL
 # 72 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 73 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_NONE
 
 FennilahlTown_Pokemart_NPC::
-# 81 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 80 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	msgbox FennilahlTown_Pokemart_NPC_Text_0, MSGBOX_NPC
 	end
 
@@ -211,7 +209,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5:
 	.string "for yourself, come talk to me.$"
 
 FennilahlTown_Pokemart_NPC_Text_0:
-# 81 "data//maps/FennilahlTown_Pokemart/scripts.pory"
+# 80 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "This Poké Mart doesn't sell much\n"
 	.string "because we're in a remote town.\p"
 	.string "But you can find these mint vending\n"

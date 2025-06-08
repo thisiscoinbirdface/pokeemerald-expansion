@@ -24,7 +24,9 @@ script Route2_Clefairy_Trigger0{
     applymovement(LOCALID_CLEFAIRY, moves(face_right))
     waitmovement(0)
     delay(36)    
-    applymovement(LOCALID_CLEFAIRY, moves(walk_left * 2 walk_up))
+
+    playmoncry(SPECIES_CLEFAIRY, CRY_MODE_NORMAL)
+    applymovement(LOCALID_CLEFAIRY, moves(jump_in_place_left walk_left * 2 walk_up))
     waitmovement(0)
     delay(12)   
     removeobject(LOCALID_CLEFAIRY) 

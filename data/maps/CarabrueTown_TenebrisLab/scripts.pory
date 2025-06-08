@@ -27,15 +27,15 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
     speakername("Rue") 
-    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...\n...er...{PLAYER}, was it?"))
+    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...\l...er...{PLAYER}, was it?"))
     release
     
     applymovement(3, moves(face_left))
     waitmovement(3)
-    delay(16)
+    delay(20)
     applymovement(3, moves(face_right))
     waitmovement(3)
-    delay(16)
+    delay(20)
     applymovement(3, moves(face_down))
     waitmovement(3)
     delay(16)
@@ -51,6 +51,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     giveitem(ITEM_POKE_BALL, 5)
     giveitem(ITEM_POTION, 1)   
     giveitem(ITEM_TOWN_MAP)  
+    release
     removeobject(5)
 
     delay(8)
@@ -79,7 +80,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon, but without Professor Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut I promise - once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon, but without Professor Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
@@ -250,7 +251,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("We'll do our best, Rue. But we're detectives - we can uncover her tracks, but we can't unravel her mind. We'll need some help from one of you."))
+        msgbox(format("We'll do our best, Rue. But we're detectives - we can uncover her tracks, but we can't unravel her mind.\lWe'll need some help from one of you."))
         release
         delay(16)
         speakername("Rue")
@@ -273,13 +274,13 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(8, moves(face_right))
         applymovement(3, moves(face_right))
         waitmovement(0) 
-        delay(40)
+        delay(64)
 
         applymovement(9, moves(face_down))
         applymovement(8, moves(face_down))
         applymovement(3, moves(face_up))
         waitmovement(0) 
-        delay(16)
+        delay(30)
 
         speakername("Rue")
         msgbox(format("{PLAYER}? It's too dangerous. {PLAYER}'s Pokémon aren't strong enough yet."))
@@ -303,12 +304,12 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
         speakername("Rue")
-        msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab.\pThe dreamstones are scattered all across Cormoria. Have you ever traveled beyond Fennilahl Town?\pCormoria is vast and filled with dangerous Pokémon. I fear you may not be up to the task..."))
+        msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab.\pThe dreamstones are scattered all across Cormoria. Have you ever\ltraveled beyond Fennilahl Town?\pCormoria is vast and filled with dangerous Pokémon. I fear you may\lnot be up to the task..."))
         release
         delay(16)
 
         speakername("Rue")
-        msgbox(format("I don't know how I can help...perhaps this may be of use."))
+        msgbox(format("I don't know how I can help...perhaps this may be of use to you."))
         release   
         //Pokedex Get
         playfanfare(MUS_OBTAIN_ITEM)
@@ -326,7 +327,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
 
         speakername("Rue")
-        msgbox(format("Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off on a dangerous journey."))
+        msgbox(format("Sigh...the Professor missing. The dreamstone missing. The lab in shambles. My youngest researcher sent off\lon a dangerous journey."))
         release
         delay(36)
         speakername("Rue")

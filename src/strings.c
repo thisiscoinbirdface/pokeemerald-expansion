@@ -1406,7 +1406,7 @@ const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("From today, I'm going to be a Lab Assistant\nat the Tenebris Laboratory!");
 const u8 gText_SideQuestDesc_2[] = _("I need to solve the mystery of the\ndreamstones around Cormoria.");
-const u8 gText_SideQuestDesc_3[] = _("My path towards becoming a fully-fledged\n{PKMN} Ranger!");
+const u8 gText_SideQuestDesc_3[] = _("My path towards becoming a fully-fledged\nPokémon Ranger!");
 const u8 gText_SideQuestDesc_4[] = _("The Azurill in the house on Route 1 has\nfood poisoning. She needs a Pecha Berry!");
 const u8 gText_SideQuestDesc_5[] = _("A conflict-averse hiker in Fennilahl Town\nhas lost a Strange Rock in Route 2.\nApparently a small pink Pokémon stole it!");
 const u8 gText_SideQuestDesc_6[] = _("Someone's Skitty in Gastree City has gone\nmissing! It probably climbed up\na tree or something...");
@@ -1436,7 +1436,7 @@ const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around CORMORIA.");
+const u8 gText_SideQuestDoneDesc_1[] = _("I've done what I can back at the lab. Now\nit's time to head out and chase the\ndreamstones around Cormoria.");
 //main quest1
 const u8 gText_SideQuestDoneDesc_2[] = _("A total failure! I couldn't stop Team Somber\nor find Professor Tenebris, and now I'm\noff the case. I guess that's it...?");    
 //ranger side quest
@@ -1445,7 +1445,7 @@ const u8 gText_SideQuestDoneDesc_4[] = _("Azurill has recovered and is happy aga
 const u8 gText_SideQuestDoneDesc_5[] = _("I got Breech his stone back...and found him\na new companion! I hope to see him and\nClefairy again soon!");
 const u8 gText_SideQuestDoneDesc_6[] = _("Skitty is reunited with her trainer!");
 const u8 gText_SideQuestDoneDesc_7[] = _("The modern blend is done! But will it do\nwell on the menu? Or will it be\na flop?");
-const u8 gText_SideQuestDoneDesc_8[] = _("I taught the Cyndaquil the move SUNN DAY!\nBoth Cyndaquil and the trainer are set for\ntheir {PKMN} adventure now.");
+const u8 gText_SideQuestDoneDesc_8[] = _("I taught the Cyndaquil the move SUNN DAY!\nBoth Cyndaquil and the trainer are set for\ntheir Pokémon adventure now.");
 const u8 gText_SideQuestDoneDesc_9[] = _("I found the robber and returned the pearsl!\nBut the horrid lady charged me money for\nbeing late! Is that why she's rich?");
 const u8 gText_SideQuestDoneDesc_10[] = _("The Black Sludge created the perfect shade\nof black paint! Maybe this artist is really\na maestro after all.");
 const u8 gText_SideQuestDoneDesc_11[] = _("Husband and wife have been successfully\nreunited. They also got a Furfrou to help.\nAll's well that ends well!");
@@ -1515,7 +1515,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest1_Name3[] = _("Missing Supplies");
 
     const u8 gText_SubQuest1_Desc1[] = _("It's my first day! I need to go to the \nTenebris Lab with my Welcome Package.\nI shouldn't be late at any cost!");
-    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the lab's supplies from the\nPokemart in Fennilahl Town. It has my\nstarter {PKMN}! And some important stuff.");
+    const u8 gText_SubQuest1_Desc2[] = _("I need to pick up the lab's supplies from the\nPoké Mart in Fennilahl Town. It has my\nstarter Pokémon! And some important stuff.");
     const u8 gText_SubQuest1_Desc3[] = _("Professor Tenebris has already taken the\nsupplies! I need to tell Asst. Prof. Rue\nas soon as possible.");
 
     //MT CERAM DREAMSTONE (MAIN QUEST)

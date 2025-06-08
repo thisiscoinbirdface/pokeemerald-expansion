@@ -19,19 +19,19 @@ script FennilahlTown_PokemonCenter_NPC1{
 	if (flag(FLAG_FENNILAHL_HIKER_GEAR_GET)){
 		msgbox(format("You're the one who stopped the pickpocketing Clefairy? Well done!"), MSGBOX_NPC)		
 	} else {
-		msgbox(format("There's been an increase in pickpocketing recently. Personally, I'm sure it's a nearby Pokémon!"), MSGBOX_NPC)		
+		msgbox(format("There's been an increase in pickpocketing recently. Personally,\lI'm sure it's a nearby Pokémon!"), MSGBOX_NPC)		
 	}
 	end
 }
 
 script FennilahlTown_PokemonCenter_NPC2{
-	msgbox(format("You just got your first Pokémon too? Rattata and I are gonna be Pokémon Champions one day!"), MSGBOX_NPC)		
+	msgbox(format("You just got your first Pokémon too? Cubone and I are gonna be Pokémon Champions one day!"), MSGBOX_NPC)		
 	end
 }
 
 script FennilahlTown_PokemonCenter_Rattata{
-	playmoncry(SPECIES_RATTATA, CRY_MODE_NORMAL)
-	msgbox(format("Rattata is raring to go!"), MSGBOX_NPC)		
+	playmoncry(SPECIES_CUBONE, CRY_MODE_NORMAL)
+	msgbox(format("Cubone is raring to go!"), MSGBOX_NPC)		
 	end
 }
 

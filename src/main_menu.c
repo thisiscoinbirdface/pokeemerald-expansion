@@ -1478,6 +1478,7 @@ static void Task_PreBirch3(u8 taskId)
         StringExpandPlaceholders(gStringVar4, gText_PreBirch3);
         AddTextPrinterForFullScreen(TRUE);
         gTasks[taskId].func = Task_PreBirchSetup;
+        gTasks[taskId].tTimer = 60;
     }     
 }
 
@@ -1486,14 +1487,21 @@ static void Task_PreBirchSetup(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
-        FreeAllWindowBuffers();
-        NewGameBirchSpeech_ClearWindow(0);
+        if (gTasks[taskId].tTimer)
+        {
+            gTasks[taskId].tTimer--;
+        }
+        else
+        {
+            FreeAllWindowBuffers();
+            NewGameBirchSpeech_ClearWindow(0);
 
-        ShowBg(0);
-        ShowBg(1);
-        PlayBGM(MUS_ROUTE122);
-        BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowBirch;
+            ShowBg(0);
+            ShowBg(1);
+            PlayBGM(MUS_ROUTE122);
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowBirch;
+        }
     }
 }
 

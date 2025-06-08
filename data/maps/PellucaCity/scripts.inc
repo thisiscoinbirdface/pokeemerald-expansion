@@ -2506,7 +2506,7 @@ PellucaCity_MayorFight_Trigger_Text_4:
 # 79 "data//maps/PellucaCity/scripts.pory"
 	.string "No! Enough is enough! I'm putting my\n"
 	.string "foot down.\p"
-	.string "You and your lot lot aren't allowed in\n"
+	.string "You and your lot aren't allowed in\l"
 	.string "Pelluca City any more!$"
 
 PellucaCity_MayorFight_Trigger_Text_5:

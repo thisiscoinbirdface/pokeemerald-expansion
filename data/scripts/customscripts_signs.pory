@@ -21,7 +21,8 @@ script WhiteSign_Route1_NextToCarabrue {
 
 
 script WoodSign_Route1_Middle {
-    msgbox(format("TRAINER TIPS: You can sometimes find hidden items in rocks!"), MSGBOX_SIGN)
+    speakername("Trainer Tips")
+    msgbox(format("You can sometimes find hidden items in rocks and stuff!"), MSGBOX_SIGN)
     end
 }
 
@@ -49,7 +50,7 @@ script WhiteSign_FennilahlTown_TowardsRoute3{
 
 script WoodSign_FennilahlTown_Nicknaming {
     speakername("Trainer Tips")
-    msgbox(format("You can nickname your Pokémon from the summary screen!"), MSGBOX_SIGN)
+    msgbox(format("Press START to sort items in your bag!"), MSGBOX_SIGN)
     end
 }
 
@@ -64,17 +65,17 @@ script WoodSign_Fennilahl_Pokedex{
 
 //ROUTE 3
 script WhiteSign_Route3_TowardsFennilahl {
-    msgbox(format("ROUTE 3\p{UP_ARROW} Fennilahl Town.\n{RIGHT_ARROW} Gastree City."), MSGBOX_SIGN)
+    msgbox(format("Route 3\nA journey through the hills!\p{UP_ARROW} Fennilahl Town.\n{RIGHT_ARROW} Gastree City."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_Route3_VineRiverUnderpass {
-    msgbox(format("{UP_ARROW} Vine River UNDERPASS."), MSGBOX_SIGN)
+    msgbox(format("{UP_ARROW} Vine River Underpass."), MSGBOX_SIGN)
     end
 }
 
 script WhiteSign_Route3_TowardsGastree {
-    msgbox(format("ROUTE 3\p{UP_ARROW} Gastree City.\n{LEFT_ARROW} Fennilahl Town."), MSGBOX_SIGN)
+    msgbox(format("Route 3\nA journey through the hills!\p{UP_ARROW} Gastree City.\n{LEFT_ARROW} Fennilahl Town."), MSGBOX_SIGN)
     end
 }
 

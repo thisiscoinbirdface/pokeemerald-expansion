@@ -179,9 +179,13 @@ script CeramBaseCamp_Cyndaquil_Reward_End{
 
 
 //NPC5 - giveitem
-script CeramBaseCamp_NPC5{    
+script CeramBaseCamp_NPC5{   
+    lockall 
+    faceplayer
     if (flag(FLAG_CERAMBASECAMP_NPCITEM)){
-        msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
+        msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"))
+        releaseall
+        end
     } else {
         lockall
         faceplayer
@@ -210,7 +214,8 @@ script CeramBaseCamp_Dude_Reward_Give{
 
 script CeramBaseCamp_Dude_Reward_End{
     setflag(FLAG_CERAMBASECAMP_NPCITEM)
-    msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"), MSGBOX_NPC)
+    msgbox(format("Many trekkers climb the mountain. You can find dropped stuff everywhere!\p...is it stealing?"))
+    releaseall
     end
 }
 

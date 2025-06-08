@@ -139,12 +139,12 @@ CarabrueTown_Sign_ChampionHouse_Text_0:
 CarabrueTown_EventScript_NPC1_Text_0:
 # 52 "data//maps/CarabrueTown/scripts.pory"
 	.string "Looks like the police went away. I hope\n"
-	.string "they got the evidence they needed.$"
+	.string "they got the evidence they needed!$"
 
 CarabrueTown_EventScript_NPC1_Text_1:
 # 54 "data//maps/CarabrueTown/scripts.pory"
-	.string "Psst - {PLAYER}! See those cops over\n"
-	.string "there?\p"
+	.string "Psst - {PLAYER}! See those\n"
+	.string "detectives standing over there?\p"
 	.string "They came all the way from Fennilahl\n"
 	.string "Town to investigate the Professor's\l"
 	.string "disappearance. They're blocking access\l"

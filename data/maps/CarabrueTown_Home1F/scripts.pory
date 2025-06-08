@@ -59,7 +59,10 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     setflag(FLAG_SYS_B_DASH)    
 
     speakername("Mom") 
-    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off. You can switch between hold and toggle modes in the options!"))
+    msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off."))
+    
+    speakername(NULL)
+    msgbox(format("Switch between hold and toggle modes in the options menu!"), MSGBOX_POKENAV)
     release
     delay(8)
 
@@ -125,19 +128,29 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
     if (var(VAR_RESULT) == 0){
 
         speakername("Mom")     
-        message(format("My baby is going on an adventure!\nDo you want a care package from Mom?"))
-        waitmessage
+        msgbox(format("My baby is going on an adventure!\nDo you want a care package from Mom?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            speakername("Mom")     
+            msgbox(format("I know you can handle yourself.\nTake care, {PLAYER}!"))
+            release
+            applymovement(1, moves(face_right))
+            waitmovement(0)
+            releaseall
+            end        
+        }
 
-        msgbox(format("Mom's Nuzkit is intended for hardcore nuzlockes. It's not recommended for a vanilla experience."), MSGBOX_POKENAV)
+        speakername(NULL)
+        msgbox(format("Mom's Nuzkit has tons of cheats.\nFor a classic experience,\lyou should go without it!"), MSGBOX_POKENAV)
 
         speakername("Mom")     
         message(format("Do you want a care package from Mom?"))
 
         dynmultichoice(17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-            "Yes please!", "No Mom...")
+            "No Mom...", "Yes please!")
         release
         
-        if (var(VAR_RESULT) == 0){
+        if (var(VAR_RESULT) == 1){
             delay(8)
             speakername("Mom")
             msgbox(format("Here you go!"))
@@ -147,7 +160,7 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
 
             delay(8)
 
-            msgbox(format("Mom's Nuzkit contains a variety of tools to help you in your journey.\lTalk to your follower to use it!"), MSGBOX_POKENAV)
+            msgbox(format("You got Mom's Nuzkit! Thanks Mom!\nTalk to your follower to use it."), MSGBOX_POKENAV)
             release
         } else {
             speakername("Mom")

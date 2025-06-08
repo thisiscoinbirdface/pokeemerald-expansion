@@ -2733,9 +2733,9 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Shoal Salt"),
         .price = 20,
         .description = COMPOUND_STRING(
-            "Salt obtained from\n"
-            "deep inside the\n"
-            "Shoal Cave."),
+            "Salt, too much\n"
+            "of which is\n"
+            "bad for health."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -14487,7 +14487,7 @@ const struct Item gItemsInfo[] =
             "Mom says I should\n"
             "talk to my Pokémon\n"
             "to use it."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .importance = 1,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

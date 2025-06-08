@@ -76,7 +76,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("No! Enough is enough! I'm putting my foot down.\pYou and your lot lot aren't allowed in Pelluca City any more!"))
+    msgbox(format("No! Enough is enough! I'm putting my foot down.\pYou and your lot aren't allowed in\lPelluca City any more!"))
     release
     delay(16)
 

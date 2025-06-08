@@ -70,7 +70,6 @@ mart FennilahlTown_Pokemart_Inventory {
     ITEM_REVIVE
     ITEM_PARLYZ_HEAL
     ITEM_ANTIDOTE
-    ITEM_ESCAPE_ROPE
 }
 
 

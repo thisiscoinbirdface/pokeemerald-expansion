@@ -14,11 +14,15 @@ script Route1_House_Quest_Done{
 
 
 script Route1_House_QuestInProgress{
+    lockall
+    faceplayer
+
     msgbox(format("Have you brought a Pecha Berry?"), MSGBOX_YESNO)
+    release
     if (var(VAR_RESULT) == 1){
         checkitem(ITEM_PECHA_BERRY)
         if (var(VAR_RESULT) == 1){
-            applymovement(1, moves(jump_in_place_down))
+            applymovement(1, moves(emote_exclamation_mark))
             waitmovement(0)
             delay(16)
 
@@ -43,7 +47,7 @@ script Route1_House_QuestInProgress{
             msgbox(format("I don't see a Pecha Berry here...please come back when you have one."), MSGBOX_NPC)
         }
     } else {
-        applymovement(1, moves(jump_in_place_down))
+        applymovement(1, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
         msgbox(format("Please hurry - my baby's suffering!"), MSGBOX_NPC)
@@ -93,7 +97,7 @@ script Route1_House_RewardB{
 }
 
 script Route1_House_RewardEnd{
-    msgbox(format("Thank you kind trainer! I'm now going to go back to loving my baby."), MSGBOX_NPC)
+    msgbox(format("Thank you kind trainer! I'm going to\ngo back to loving my baby."), MSGBOX_NPC)
     releaseall
     end
 }
@@ -126,7 +130,7 @@ script Route1_House_Azurill {
     questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ROUTE1_PECHA_BERRY)   
 
     if (var(VAR_RESULT) == 1) {
-        msgbox(format("Azurill looks full of joy! Must be the love of its trainer...or is it the Pecha Berry?"), MSGBOX_NPC)
+        msgbox(format("Azurill looks happy! Must be the love of its trainer...or is it the Pecha Berry?"), MSGBOX_NPC)
     } else {
         msgbox(format("Zu... \pAzurill looks quite sick."), MSGBOX_NPC) 
     }

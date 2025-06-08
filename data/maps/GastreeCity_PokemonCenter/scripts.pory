@@ -16,12 +16,12 @@ script GastreeCity_PokemonCenter_EventScript_Nurse{
 
 
 script GastreeCity_PokemonCenter_NPC1{
-	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\pHis trainers call him Inger the King, or Kinger for short.\pHehe! I'd like a nickname like that."), MSGBOX_NPC)
+	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\lHis trainers call him Inger the King,\lor Kinger for short.\pSo dreamy!"), MSGBOX_NPC)
 	end
 }
 
 script GastreeCity_PokemonCenter_NPC2{
-	msgbox(format("Down south is the giant Vine River. It's one of the three great rivers!\pThe other two are the Ivy and Hoya Rivers, further out west."), MSGBOX_NPC)
+	msgbox(format("Down south is the giant Vine River.\nIt's one of the three great rivers!\lThe other two are the Ivy and Hoya Rivers, further out west."), MSGBOX_NPC)
 	end
 }
 

@@ -95,7 +95,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
-Mugshot: Purple
 
 Rattata-Alola
 Level: 3
@@ -110,7 +109,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Mugshot: Purple
 
 Rattata-Alola
 Level: 3
@@ -359,7 +357,7 @@ Pic: Somber Grunt F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Zorua-Hisui
 Level: 11
@@ -6572,6 +6570,29 @@ Level: 29
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Rock Blast
 
+=== TRAINER_PELLUCA_GAMBLER ===
+Name: Chaina
+Difficulty: Normal
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Rich
+Double Battle: No
+AI: Smart Trainer
+
+
+Feebas @ Loaded Dice
+Level: 29
+- Scale Shot
+
+Bayleef @ Loaded Dice
+Level: 29
+- Bullet Seed
+
+Dugtrio-Alola @ Loaded Dice
+Level: 29
+- Rock Blast
+
 
 
 
@@ -9140,7 +9161,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_E ===
 Name: Kohla
 Difficulty: Easy
-Class: Ace Rookie
+Class: Kohla Final
 Pic: Wally
 Gender: Male
 Music: Rich
@@ -9201,7 +9222,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_E ===
 Name: Kohla
 Difficulty: Normal
-Class: Ace Rookie
+Class: Kohla Final
 Pic: Wally
 Gender: Male
 Music: Rich

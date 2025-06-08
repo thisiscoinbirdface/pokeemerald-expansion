@@ -11723,7 +11723,7 @@
           "map": "MAP_FENNILAHL_TUNNEL",
           "base_label": "gFennilahlTunnel",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 8,
             "mons": [
               {
                 "min_level": 5,
@@ -11891,7 +11891,7 @@
           "map": "MAP_ROUTE3_UNDERPASS",
           "base_label": "gRoute3_Underpass",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 9,
             "mons": [
               {
                 "min_level": 4,

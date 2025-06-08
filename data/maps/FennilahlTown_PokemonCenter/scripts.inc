@@ -46,7 +46,7 @@ FennilahlTown_PokemonCenter_NPC2::
 
 FennilahlTown_PokemonCenter_Rattata::
 # 33 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_RATTATA, CRY_MODE_NORMAL
+	playmoncry SPECIES_CUBONE, CRY_MODE_NORMAL
 # 34 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	msgbox FennilahlTown_PokemonCenter_Rattata_Text_0, MSGBOX_NPC
 	end
@@ -60,15 +60,15 @@ FennilahlTown_PokemonCenter_NPC1_Text_0:
 FennilahlTown_PokemonCenter_NPC1_Text_1:
 # 22 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "There's been an increase in\n"
-	.string "pickpocketing recently. Personally, I'm\l"
-	.string "sure it's a nearby Pokémon!$"
+	.string "pickpocketing recently. Personally,\l"
+	.string "I'm sure it's a nearby Pokémon!$"
 
 FennilahlTown_PokemonCenter_NPC2_Text_0:
 # 28 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
 	.string "You just got your first Pokémon too?\n"
-	.string "Rattata and I are gonna be Pokémon\l"
+	.string "Cubone and I are gonna be Pokémon\l"
 	.string "Champions one day!$"
 
 FennilahlTown_PokemonCenter_Rattata_Text_0:
 # 34 "data//maps/FennilahlTown_PokemonCenter/scripts.pory"
-	.string "Rattata is raring to go!$"
+	.string "Cubone is raring to go!$"

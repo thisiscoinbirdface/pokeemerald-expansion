@@ -90,7 +90,7 @@ script Fennilahl_Breech_QuestInProgress{
         speakername("Clefairy")
         msgbox(format("Clee!!!"))
         speakername("???")
-        msgbox(format("Ouch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokémon okay? I don't battle. You'll be my hiking partner!"))        
+        msgbox(format("Ouch! Clefairy stop! Haha! Alright alright, you come along with me then. But you're not my Pokémon okay?\lYou'll be my hiking partner!"))        
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)

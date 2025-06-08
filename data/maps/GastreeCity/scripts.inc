@@ -1096,15 +1096,15 @@ GastreeCity_NPC4_Text_0:
 
 GastreeCity_NPC5_Text_0:
 # 111 "data//maps/GastreeCity/scripts.pory"
-	.string "Inger, this city's Gym Leader, uses ROCK\n"
-	.string "types. I should have an advantage with\l"
+	.string "Inger, the Gym Leader, uses ROCK types.\n"
+	.string "I should have an advantage with\l"
 	.string "my FIGHTING-type Pokémon right?\p"
 	.string "So then why am I getting cold feet?$"
 
 GastreeCity_Mankey_Text_0:
 # 117 "data//maps/GastreeCity/scripts.pory"
-	.string "Mankey is getting angry at his trainer's\n"
-	.string "cold feet.$"
+	.string "Mankey is getting angry at its\n"
+	.string "trainer's cold feet!$"
 
 GastreeCity_NPC6_Text_0:
 # 123 "data//maps/GastreeCity/scripts.pory"

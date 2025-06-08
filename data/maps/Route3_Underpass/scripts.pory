@@ -30,6 +30,7 @@ script Route3_Underpass_SaveGameTrigger{
 
     setvar(VAR_TEMP_C, 1)
 
+    msgbox(format("You're about to enter a battle!"))
     special(SaveGame)
 	waitstate
     release
@@ -137,7 +138,7 @@ script Route3_Underpass_EvilBattle{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)  
     speakername("???")    
-    msgbox(format("Oh, you're just some stupid kid. How about you mind your own business?"))
+    msgbox(format("Oh, you're just some stupid kid.\nHow about you mind your own business?"))
     release
     delay(16)
     speakername("Gabrielle")    
@@ -145,7 +146,7 @@ script Route3_Underpass_EvilBattle{
     release
 
     //Start battle
-    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "My Pokémon just aren't good enough!")
+    trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "How dare you hurt my Zorua!")
 
     //End battle - baddie says revenge
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
@@ -171,9 +172,9 @@ script Route3_Underpass_EvilBattle{
     applymovement(LOCALID_BREECH, moves(walk_left face_up))
     waitmovement(0)     
     speakername("Breech")  
-    msgbox(format("{PLAYER} - Clefairy and I are in your debt. The way you handled that thug was incredible."))
+    msgbox(format("Clefairy and I are in your debt.\nThe way you handled that thug..."))
     speakername("Breech")  
-    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But with a partner, I can't be that way."))
+    msgbox(format("I've realised something. When alone, I was free to do as I wish and avoid battling. But now that I have a partner, I can't be that way."))
     speakername("Breech")  
     msgbox(format("Clefairy was ready to protect me, but I wasn't prepared to do the same for her.\p...\pI let her down."))
     speakername("Breech")  

@@ -108,13 +108,13 @@ script GastreeCity_NPC4{
 
     //Info
 script GastreeCity_NPC5{
-    msgbox(format("Inger, this city's Gym Leader, uses ROCK types. I should have an advantage with my FIGHTING-type Pokémon right?\pSo then why am I getting cold feet?"), MSGBOX_NPC)
+    msgbox(format("Inger, the Gym Leader, uses ROCK types.\nI should have an advantage with\lmy FIGHTING-type Pokémon right?\pSo then why am I getting cold feet?"), MSGBOX_NPC)
     end
 }
 
 script GastreeCity_Mankey{
     playmoncry(SPECIES_MANKEY, CRY_MODE_NORMAL)
-    msgbox(format("Mankey is getting angry at his trainer's cold feet."), MSGBOX_NPC)
+    msgbox(format("Mankey is getting angry at its\ntrainer's cold feet!"), MSGBOX_NPC)
     end    
 }
 
