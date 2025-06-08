@@ -137,7 +137,7 @@ script MirrohBaseCamp_Greavard_Outside{
             releaseall
             end
         }
-
+        releaseall
         end
     } else {
         msgbox(format("Greavard is playing!"), MSGBOX_NPC)
