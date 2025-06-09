@@ -1027,7 +1027,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist2::
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2_2:
 # 653 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0
+	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0, MSGBOX_NPC
 	end
 
 
@@ -1043,7 +1043,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist3_4:
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_2:
 # 663 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0
+	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0, MSGBOX_NPC
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_5:

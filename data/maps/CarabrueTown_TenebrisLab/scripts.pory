@@ -650,7 +650,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist1{
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist2{
     if (flag(FLAG_POST_FINALE_CUTSCENE)){
-        msgbox(format("The detectives told us the entire story. You're incredible, {PLAYER}!"))
+        msgbox(format("The detectives told us the entire story. You're incredible, {PLAYER}!"), MSGBOX_NPC)
         end
     }
 
@@ -660,7 +660,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist2{
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist3{
     if (flag(FLAG_POST_FINALE_CUTSCENE)){
-        msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"))
+        msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"), MSGBOX_NPC)
         end
     }
     

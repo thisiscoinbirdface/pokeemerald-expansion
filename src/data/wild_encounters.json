@@ -11644,17 +11644,17 @@
               },
               {
                 "min_level": 48,
-                "max_level": 48,
+                "max_level": 51,
                 "species": "SPECIES_BARRASKEWDA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 48,
+                "max_level": 51,
                 "species": "SPECIES_BARRASKEWDA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 48,
+                "max_level": 51,
                 "species": "SPECIES_PELIPPER"
               }
             ]
@@ -11663,28 +11663,28 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 54,
+                "max_level": 54,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 54,
+                "max_level": 57,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 54,
+                "max_level": 57,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 54,
+                "max_level": 57,
                 "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 54,
+                "max_level": 57,
                 "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {

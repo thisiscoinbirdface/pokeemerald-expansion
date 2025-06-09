@@ -329,7 +329,7 @@ MirrohInterior_2F_Trainer_F_Text_2:
 MirrohInterior_2F_Trainer_G_Text_0:
 # 141 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I can't wait to get out of this cave and\n"
-	.string "collect my 5th gym badge at Winterlily\l"
+	.string "collect my 6th gym badge at Winterlily\l"
 	.string "Hollow. Yep, that's right! I'm not your\l"
 	.string "average trainer - I'm on my way to\l"
 	.string "become the Pokémon Champion!$"

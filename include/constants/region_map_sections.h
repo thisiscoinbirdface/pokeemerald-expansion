@@ -248,17 +248,17 @@
 #define MAPSEC_RANGER_INSTITUTE_RIVETSHORE  0xFA
 #define MAPSEC_ROUTE7                       0xFB
 
-#define MAPSEC_IVY_RIVER_MAIN               0x8F
-#define MAPSEC_IVY_RIVER_UNDERPASS          0x90
-#define MAPSEC_LILY_GROTTO                  0x91
+#define MAPSEC_IVY_RIVER_MAIN                0x8F
+#define MAPSEC_IVY_RIVER_UNDERPASS           0x90
+#define MAPSEC_LILY_GROTTO                   0x91
 #define MAPSEC_ANCIENT_CORMORIA_FINAL_ISLAND 0x92
 #define MAPSEC_VICTORY_CAPE                  0x93
 #define MAPSEC_VICTORY_ROAD_CORMORIA         0x94
-#define MAPSEC_CHAMPIONSHIP_CORRIDOR        0x95
+#define MAPSEC_CHAMPIONSHIP_CORRIDOR         0x95
 #define MAPSEC_CHAMPIONSHIP                  0x96 //this is unused
 
 
-#define MAPSEC_NONE                         0xFB
+#define MAPSEC_NONE                         0xFC
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

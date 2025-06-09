@@ -10,18 +10,13 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
       "map": "MAP_PELLUCA_CITY",
       "offset": -2,
       "direction": "right"
-    },
-    {
-      "map": "MAP_DOROA_TOWN",
-      "offset": 4,
-      "direction": "down"
     }
   ],
   "object_events": [
