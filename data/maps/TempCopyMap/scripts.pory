@@ -842,6 +842,13 @@ script PellucaCity_Greta_Item_C{
 //lily pond, route 8
 
 
+script AncientStatue_Route1{
+    lockall
+    if (flag(FLAG_STATUE_ROUTE1)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_ROUTE1) goto(AncientStatue_FirstTime)}
+    end    
+}
+
 script AncientStatue_Gastree{
     msgbox(format("It's a statue of an ancient Pokémon..."))
     release
@@ -924,7 +931,6 @@ script AncientStatue_CheckRareShard{
 
     goto(Common_EventScript_HyperTrainer)
 }
-
 
 script Common_EventScript_HyperTrainer{
 

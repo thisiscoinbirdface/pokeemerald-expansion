@@ -36,7 +36,6 @@ static const u16 sTreasureItems[] =
     ITEM_ELIXIR,
     ITEM_KINGS_ROCK,
     ITEM_LEFTOVERS,
-    ITEM_TM_EARTHQUAKE,
 };
 
 #endif // GUARD_FISHING_GAME_TREASURES_H
