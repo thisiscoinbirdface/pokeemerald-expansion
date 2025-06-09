@@ -1112,6 +1112,34 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
 
 
 
+script Common_EventScript_DrifblimTravels_All{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
+        end
+    }
+
+    msgbox(format("Drifblim opens a map and gestures towards Silversun City. Fly there?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 1){
+        release
+        //fly
+        hidefollower
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)        
+        delay(30)
+        warp(MAP_SILVERSUN_CITY, 28, 22)
+
+    } else {
+        msgbox(format("Drifblim looks dejected..."), MSGBOX_NPC)
+    }
+
+    end
+}
+
 
 
 

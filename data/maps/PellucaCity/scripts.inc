@@ -3055,8 +3055,8 @@ PellucaCity_NPC5_Text_2:
 PellucaCity_NPC6_Text_0:
 # 1082 "data//maps/PellucaCity/scripts.pory"
 	.string "Are you headed to the Mirroh Base Camp?\n"
-	.string "You'll have to take the cable car just\l"
-	.string "past the Poké Mart.\p"
+	.string "You'll have to take the cable car past\l"
+	.string "Route 7.\p"
 	.string "I heard they're closing the gym there\n"
 	.string "though.$"
 

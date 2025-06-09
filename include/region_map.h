@@ -95,6 +95,7 @@ struct RegionMapLocation
 // Exported ROM declarations
 void InitRegionMapData(struct RegionMap *regionMap, const struct BgTemplate *template, bool8 zoomed);
 bool8 LoadRegionMapGfx(void);
+bool8 LoadRegionMapGfx_Fly(void);
 void UpdateRegionMapVideoRegs(void);
 void InitRegionMap(struct RegionMap *regionMap, u8 argument);
 u8 DoRegionMapInputCallback(void);
