@@ -167,7 +167,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_CHAMPIONSHIP_E] = // use the Trainer's Id from include/constants/opponents.h
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), // find the id for the slide to be used.
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PAUSE_MUSIC}So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), // find the id for the slide to be used.
             [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING(""), // find the id for the slide to be used.
         }, 
     },
