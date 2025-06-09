@@ -1384,6 +1384,15 @@ static void Task_UseFly(u8 taskId)
 {
     struct Task *task;
     task = &gTasks[taskId];
+
+        //temp to avoid the fly anim
+        Overworld_ResetStateAfterFly();
+        WarpIntoMap();
+        SetMainCallback2(CB2_LoadMap);
+        gFieldCallback = FieldCallback_FlyIntoMap;
+        DestroyTask(taskId);
+        return;
+
     if (!task->data[0])
     {
         if (!IsWeatherNotFadingIn())
@@ -1411,7 +1420,7 @@ static void FieldCallback_FlyIntoMap(void)
     Overworld_PlaySpecialMapMusic();
     FadeInFromBlack();
     CreateTask(Task_FlyIntoMap, 0);
-    gObjectEvents[gPlayerAvatar.objectEventId].invisible = TRUE;
+//    gObjectEvents[gPlayerAvatar.objectEventId].invisible = TRUE;
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
     {
         ObjectEventTurn(&gObjectEvents[gPlayerAvatar.objectEventId], DIR_WEST);
@@ -1425,6 +1434,14 @@ static void Task_FlyIntoMap(u8 taskId)
 {
     struct Task *task;
     task = &gTasks[taskId];
+
+    //disable fly anim
+    task->data[0]++;
+    UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
+    DestroyTask(taskId);
+    return;    
+
     if (task->data[0] == 0)
     {
         if (gPaletteFade.active)
