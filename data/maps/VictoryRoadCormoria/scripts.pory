@@ -28,19 +28,19 @@ script VR_SetWeather_Rain{
 //Trainers
 //cooltrainer F
 script VR_Trainer_A{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_A, format("You missed the last boat? Too bad - you won't be making it further than here!"), format("I guess I won't be making it farther than here!"))
-    msgbox(format("I missed the boat and now I need to go through this forest!"), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_VICTORY_ROAD_A, format("Headed for Victory Cape? Too bad - you won't be making it further than here!"), format("I guess I won't be making it farther than here!"))
+    msgbox(format("The trainers on this route are some of the toughest!"), MSGBOX_NPC)
     end
 }
 //cooltrainer M
 script VR_Trainer_B{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_B, format("You know why I'm on this route instead of on the boat?\pTo get rid of some of the competition right away!\pI'm the first member of the Crush Crew and I'm ending your journey right here!"), format("I can't get rid of you!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_B, format("You know why I'm standing here?\pTo get rid of some of the competition right away!\pI'm the first member of the Crush Crew and I'm ending your journey right here!"), format("I can't get rid of you!"))
     msgbox(format("Hmpf. I'll see you at Victory Cape."), MSGBOX_NPC)
     end
 }
 //cooltrainer F
 script VR_Trainer_C{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_C, format("My Pokemon and I have trained all over Cormoria.\pYou're not beating us!"), format("You beat us!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_C, format("My Pokemon and I have trained all over Cormoria. You're not beating us!"), format("You beat us!"))
     msgbox(format("The talent coming to the Championship sure is on another level..."), MSGBOX_NPC)
     end
 }

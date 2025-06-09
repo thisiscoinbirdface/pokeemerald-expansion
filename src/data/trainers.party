@@ -8160,10 +8160,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_B ===
-Name: Nobs
+Name: Sari
 Difficulty: Easy
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -8178,10 +8178,10 @@ Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_B ===
-Name: Nobs
+Name: Sari
 Difficulty: Normal
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Cooltrainer F
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -8209,49 +8209,88 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 === TRAINER_VICTORY_ROAD_C ===
-Name: Sari
+Name: Gorbygorb
 Difficulty: Easy
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Cooltrainer M
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Yanmega
-Level: 57
+Medicham
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Punch
+- Thunder Punch
+- Zen Headbutt
+- Axe Kick
 
-Chimecho
-Level: 57
+Meganium @ Leftovers
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Leech Seed
+- Giga Drain
+- Counter
 
-Wyrdeer
+Altaria
+Level: 57
+- Dragon Dance
+- Outrage
+- Acrobatics
+- Earthquake
+
+Basculin @ Choice Band
 Level: 59
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wave Crash
+- Aqua Jet
+- Head Smash
+- Crunch
 
 === TRAINER_VICTORY_ROAD_C ===
-Name: Sari
+Name: Gorbygorb
 Difficulty: Normal
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Cooltrainer M
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Yanmega
-Level: 57
+Medicham
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Punch
+- Thunder Punch
+- Zen Headbutt
+- Axe Kick
 
-Chimecho
-Level: 57
+Meganium @ Leftovers
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Leech Seed
+- Giga Drain
+- Counter
 
-Wyrdeer
+Altaria
+Level: 57
+- Dragon Dance
+- Outrage
+- Acrobatics
+- Earthquake
+
+Basculin @ Choice Band
 Level: 59
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
+- Wave Crash
+- Aqua Jet
+- Head Smash
+- Crunch
 
 
 
@@ -8553,7 +8592,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Charizard @ Charizardite-X
-Level: 60
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_I ===
@@ -8567,7 +8606,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Charizard @ Charizardite-X
-Level: 60
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
