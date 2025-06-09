@@ -50,15 +50,15 @@ WhiteSign_FennilahlTown_TowardsRoute3::
 
 WoodSign_FennilahlTown_Nicknaming::
 # 52 "data//scripts/customscripts_signs.pory"
-	speakername WoodSign_Route1_Middle_Text_0
+	speakername WoodSign_FennilahlTown_Nicknaming_Text_0
 # 53 "data//scripts/customscripts_signs.pory"
-	msgbox WoodSign_FennilahlTown_Nicknaming_Text_0, MSGBOX_SIGN
+	msgbox WoodSign_FennilahlTown_Nicknaming_Text_1, MSGBOX_SIGN
 	end
 
 
 WoodSign_Fennilahl_Pokedex::
 # 58 "data//scripts/customscripts_signs.pory"
-	speakername WoodSign_Route1_Middle_Text_0
+	speakername WoodSign_FennilahlTown_Nicknaming_Text_0
 # 59 "data//scripts/customscripts_signs.pory"
 	msgbox WoodSign_Fennilahl_Pokedex_Text_0, MSGBOX_SIGN
 	end
@@ -479,7 +479,7 @@ WhiteSign_Route1_NextToCarabrue_Text_0:
 
 WoodSign_Route1_Middle_Text_0:
 # 24 "data//scripts/customscripts_signs.pory"
-	.string "Trainer Tips$"
+	.string "{COLOR DARK_GRAY}Trainer Tips$"
 
 WoodSign_Route1_Middle_Text_1:
 # 25 "data//scripts/customscripts_signs.pory"
@@ -510,6 +510,10 @@ WhiteSign_FennilahlTown_TowardsRoute3_Text_0:
 	.string "To Route 3 and Gastree City.$"
 
 WoodSign_FennilahlTown_Nicknaming_Text_0:
+# 52 "data//scripts/customscripts_signs.pory"
+	.string "Trainer Tips$"
+
+WoodSign_FennilahlTown_Nicknaming_Text_1:
 # 53 "data//scripts/customscripts_signs.pory"
 	.string "Press START to sort items in your bag!$"
 

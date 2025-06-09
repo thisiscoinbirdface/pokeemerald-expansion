@@ -1,7 +1,7 @@
 //White signs for directions/descriptions
 //Wood signs for general info
 
-//Carabrue Town
+//CarabrueTown
 script WhiteSign_CarabrueTown_Main{
     msgbox(format("Carabrue Town\nAn idyllic hill station."), MSGBOX_SIGN)
     end
@@ -13,7 +13,7 @@ script WhiteSign_CarabrueTown_TenebrisLab{
 }
 
 
-//Route 1
+//Route1
 script WhiteSign_Route1_NextToCarabrue {
     msgbox(format("Route 1\nNew beginnings!\p{LEFT_ARROW} Carabrue Town\n{UP_ARROW} Fennilahl Town"), MSGBOX_SIGN)
     end
@@ -32,7 +32,7 @@ script WhiteSign_Route1_NextToFennilahl {
 }
 
 
-//Fennilahl Town
+//FennilahlTown
 script WhiteSign_FennilahlTown_Main {
     msgbox(format("Fennilahl Town\nA calm, serene retirement home."), MSGBOX_SIGN)
     end
@@ -63,7 +63,7 @@ script WoodSign_Fennilahl_Pokedex{
 
 
 
-//ROUTE 3
+//ROUTE3
 script WhiteSign_Route3_TowardsFennilahl {
     msgbox(format("Route 3\nA journey through the hills!\p{UP_ARROW} Fennilahl Town.\n{RIGHT_ARROW} Gastree City."), MSGBOX_SIGN)
     end
@@ -82,7 +82,7 @@ script WhiteSign_Route3_TowardsGastree {
 
 
 
-//Gastree City
+//GastreeCity
 script WhiteSign_GastreeCity_Main {
     msgbox(format("Gastree City\nWhere fall colors never fade."), MSGBOX_SIGN)
     end
@@ -105,7 +105,7 @@ script WoodSign_GastreeCity_GetStuck {
 
 
 
-///ROUTE 4
+///ROUTE4
 script WhiteSign_Route4_TowardsGastree {
     msgbox(format("Route 4\p{DOWN_ARROW} Gastree City.\n{UP_ARROW} Ceram Base Camp."), MSGBOX_SIGN)
     end
@@ -122,7 +122,7 @@ script WoodSign_Route4_HM {
 
 
 
-//Ceram Base Camp
+//CeramBaseCamp
 script WhiteSign_CeramBaseCamp_Main{
 
     msgbox(format("Ceram Base Camp\nStarting point for Mt. Ceram treks."), MSGBOX_SIGN)
@@ -154,7 +154,7 @@ script WoodSign_CeramBaseCamp_Something {
 
 
 
-//Mt. Ceram
+//Mt.Ceram
 script WoodSign_MtCeram_Warning{
     msgbox(format("TRAINER TIPS: If you jump this ledge, there's no way back! Make sure you're prepared for the trek."), MSGBOX_SIGN)
     end
@@ -164,7 +164,7 @@ script WoodSign_MtCeram_Warning{
 
 
 
-//Galecrest City
+//GalecrestCity
 script WhiteSign_GalecrestCity_Main{
 
     msgbox(format("Galecrest City\nWhere elegance meets ambition."), MSGBOX_SIGN)
@@ -209,7 +209,7 @@ script WhiteSign_Route5_Vilethorn{
 }
 
 
-//Silversun City
+//SilversunCity
 script WoodSign_SilversunCity_Artist1{
     msgbox(format("You are NOT to disturb the great Arsalan!"), MSGBOX_SIGN)
     end
@@ -256,7 +256,7 @@ script WhiteSign_SilversunCity_Gym{
 }
 
 
-//Route 6 Hoya River
+//Route6HoyaRiver
 script WhiteSign_HoyaRiverNorth{
     msgbox(format("Hoya River North Crossin\nNo swimming in these waters!\p{RIGHT_ARROW} Silversun City.\n{DOWN_ARROW} Route 6."), MSGBOX_SIGN)
     end
@@ -284,7 +284,7 @@ script WhiteSign_Route6_RangerInstitute{
 
 
 
-//Pelluca City
+//PellucaCity
 script WhiteSign_PellucaCity_Main{
     msgbox(format("Pelluca City\nWhere rivers meet."), MSGBOX_SIGN)
     end
@@ -316,7 +316,7 @@ script WhiteSign_PellucaCity_ToCableCar{
     end
 }
 
-//Cable car
+//CableCar
 script WhiteSign_CableCar_ToMirroh{
     msgbox(format("Cable Car to Mirroh Base Camp"), MSGBOX_SIGN)
     end
@@ -326,7 +326,7 @@ script WhiteSign_CableCar_ToPelluca{
     end
 }
 
-//mirroh base camp
+//mirrohbasecamp
 script WhiteSign_MirrohBaseCamp_Gym{
     msgbox(format("Mirroh Base Camp Gym\nNOW DECOMISSIONED."), MSGBOX_SIGN)
     end
@@ -343,7 +343,7 @@ script WhiteSign_MirrohBaseCamp_Martha{
 }
 
 
-//mirroh ext
+//mirrohext
 script WhiteSign_Route8_ToBaseCamp{
     msgbox(format("Mt. Mirroh\p{DOWN_ARROW} Mirroh Base Camp.\n{UP_ARROW} Mirroh Caverns."), MSGBOX_SIGN)
     end
@@ -359,9 +359,9 @@ script WhiteSign_Route8_Dojo{
 
 
 
-//mirroh peak
+//mirrohpeak
 script WhiteSign_MirrohPeak_ToMirrohInt{
-    msgbox(format("Mt. Mirroh Caverns\p{LEFT_ARROW} Winterlily Hollow."), MSGBOX_SIGN)
+    msgbox(format("Mirroh Caverns\p{LEFT_ARROW} Winterlily Hollow."), MSGBOX_SIGN)
     end
 }
 script WhiteSign_MirrohPeak_ToWinterlilyHollow{
@@ -375,7 +375,7 @@ script WhiteSign_MirrohPeak_ToWinterlilyHollow{
 
 
 
-//Ivy river
+//Ivyriver
 script WhiteSign_IvyRiver_RangerInstitute{
     msgbox(format("The Pokémon Ranger Institute\nIvy River Branch"), MSGBOX_SIGN)
     end
@@ -419,7 +419,7 @@ script WhiteSign_Rivetshore_Ranger{
 
 
 
-//Victory Road and Cape
+//VictoryRoad/Cape
 script WhiteSign_VictoryCape_Main{
     msgbox(format("Victory Cape\nThe Cormoria Pokémon Championship"), MSGBOX_SIGN)
     end
