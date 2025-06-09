@@ -29,7 +29,7 @@ script Championship_R2{
     waitmovement(0)
     delay(16)
     
-    msgbox_delay("Announcer", format("We're back with the round of 16 in the Cormoria Pokemon Championship!\pLet's hear a huge cheer for the trainers! Show your support!\pThe previous round featured some explosive matches, with crowd favourite Kohla bulldozing..."))
+    msgbox_delay("Announcer", format("We're back with the round of 16 in the Cormoria Pokémon Championship!\pLet's hear a huge cheer for the trainers! Show your support!\pThe previous round featured some explosive matches, with crowd favourite Kohla bulldozing..."))
 
     applymovement(1, moves(jump_in_place_left))
     msgbox_delay("Stanja", format("How pointless - praising an early victory when the only thing that matters is who becomes the Champion!"))
@@ -43,7 +43,7 @@ script Championship_R2{
 
     //opponent exit
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Stanja", format("Fine. Fine! FINE!\pI know when I'm beat.\nYou were the better trainer.\pI've beaten countless trainers with my Pinsir, but this time, we couldn't pull through.\pI guess this is the caliber of the Pokemon Championship...\pGood luck, {PLAYER}. You're tough - I'm rooting for you!"))    
+    msgbox_delay("Stanja", format("Fine. Fine! FINE!\pI know when I'm beat.\nYou were the better trainer.\pI've beaten countless trainers with my Pinsir, but this time, we couldn't pull through.\pI guess this is the caliber of the Pokémon Championship...\pGood luck, {PLAYER}. You're tough - I'm rooting for you!"))    
     
     playmoncry(SPECIES_PINSIR, CRY_MODE_NORMAL)
     applymovement(2, moves(jump_in_place_left))

@@ -5,7 +5,7 @@ mapscripts Championship_Hotel_MapScripts{}
 
 
 script Champ_Hotel_Counter{
-    msgbox(format("Welcome to the Victory Cape Hotel!\pWe're fully booked out, but please visit our Championship Exhibit in the basement!\p...\pWho comes to the Pokemon Championship without booking a room in advance?"), MSGBOX_NPC)
+    msgbox(format("Welcome to the Victory Cape Hotel!\pWe're fully booked out, but please visit our Championship Exhibit in the basement!\p...\pWho comes to the Pokémon Championship without booking a room in advance?"), MSGBOX_NPC)
     end
 }
 
@@ -14,7 +14,7 @@ script Champ_Hotel_Counter{
 
 script Champ_Hotel_NPC_Arsalan{
     speakername("Arsalan")
-    msgbox(format("You thought the legendary Arsalan wouldn't be at the Pokemon Championship?\pWho do you think drew the paintings for the Championship Exhibit?"), MSGBOX_NPC)
+    msgbox(format("You thought the legendary Arsalan wouldn't be at the Pokémon Championship?\pWho do you think drew the paintings for the Championship Exhibit?"), MSGBOX_NPC)
     end
 }
 script Champ_Hotel_Smeargle{

@@ -11,7 +11,7 @@ mapscripts Championship_Pokemart_MapScripts{}
 script Champ_Mart_A{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Items Corner!\pWe have a wide variety of useful tools to power up your Pokemon!"))
+    msgbox(format("Welcome to the Items Corner!\pWe have a wide variety of useful tools to power up your Pokémon!"))
 	waitmessage
 	pokemart(Champ_Mart_Inventory_A)
     msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
@@ -21,7 +21,7 @@ script Champ_Mart_A{
 script Champ_Mart_B{
     lockall
     faceplayer
-    msgbox(format("Welcome to the TM Corner!\pGive your Pokemon an edge in battle with these exclusive TMs!"))
+    msgbox(format("Welcome to the TM Corner!\pGive your Pokémon an edge in battle with these exclusive TMs!"))
 	waitmessage
 	pokemart(Champ_Mart_Inventory_B)
     msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)

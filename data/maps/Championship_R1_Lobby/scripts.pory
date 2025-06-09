@@ -27,7 +27,7 @@ script Championship_Lobby_Teala{
 script Championship_Lobby_Nurse{
     lockall
 
-    msgbox(format("Congraluations on your victory, trainer!\pI'll now heal your Pokemon."))
+    msgbox(format("Congraluations on your victory, trainer!\pI'll now heal your Pokémon."))
     call(Common_EventScript_OutOfCenterPartyHeal)
     msgbox(format("All the best!"))
 

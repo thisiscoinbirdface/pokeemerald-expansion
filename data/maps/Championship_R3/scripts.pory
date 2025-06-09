@@ -43,7 +43,7 @@ script Championship_R3{
 
     //opponent exit
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Berger", format("You were so strong, {PLAYER}...\nI guess this is what it takes to become the Pokemon Champion.\pI get it. We get it!\nWe're not ready yet.\pBut next time, Avalugg and I will be coming for the crown!\pGood luck, {PLAYER}!"))    
+    msgbox_delay("Berger", format("You were so strong, {PLAYER}...\nI guess this is what it takes to become the Pokémon Champion.\pI get it. We get it!\nWe're not ready yet.\pBut next time, Avalugg and I will be coming for the crown!\pGood luck, {PLAYER}!"))    
     
     playmoncry(SPECIES_PINSIR, CRY_MODE_NORMAL)
     applymovement(2, moves(jump_in_place_left))

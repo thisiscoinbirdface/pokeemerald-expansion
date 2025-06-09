@@ -228,7 +228,7 @@ script Rivetshore_Gym_Trainer_A{
 
 //some cool female trainer
 script Rivetshore_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("The statue trainer! Have you found all the statues yet?\pBergmite and I have become quite strong, you know?\pBergmie even evolved into Avalugg. Now we're aiming for the Pokemon Championship!"), format("We need to work harder, Bergmite!"))
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("The statue trainer! Have you found all the statues yet?\pBergmite and I have become quite strong, you know?\pBergmie even evolved into Avalugg. Now we're aiming for the Pokémon Championship!"), format("We need to work harder, Bergmite!"))
     msgbox(format("We hate losing!"))
     releaseall
     end

@@ -47,9 +47,9 @@ script Championship_Hotel_Rooms_NPC3{
         end
     }
 
-    msgbox(format("If you're going up against the best, you'll need the best! I can teach one of your Pokemon a really powerful move. But I'll only teach one - I can't be biased, you know!"))
+    msgbox(format("If you're going up against the best, you'll need the best! I can teach one of your Pokémon a really powerful move. But I'll only teach one - I can't be biased, you know!"))
 
-    msgbox(format("You will only be able to teach\na move once. Make sure you choose\lboth the move and Pokemon carefully!"), MSGBOX_POKENAV)
+    msgbox(format("You will only be able to teach\na move once. Make sure you choose\lboth the move and Pokémon carefully!"), MSGBOX_POKENAV)
     msgbox(format("Teach a powerful move?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
@@ -161,10 +161,10 @@ script Championship_Hotel_Rooms_Kohla{
     msgbox_delay("Moxie", format("It's obvious, Kohla.\pWe're talking about {PLAYER}."))
     msgbox_delay("Kohla", format("...\pI'm listening."))
     msgbox_delay("Melea", format("An enemy of an enemy is a friend.\nAll we want to do is offer a bit of help against {PLAYER}. Just in case you two get matched against each other."))
-    msgbox_delay("Moxie", format("We're taking a risk admitting this...but the Gym Leaders didn't find all our Ancient Pokemon. We've still got one.\pWhat would you say to using it in the tournament?"))
+    msgbox_delay("Moxie", format("We're taking a risk admitting this...but the Gym Leaders didn't find all our Ancient Pokémon. We've still got one.\pWhat would you say to using it in the tournament?"))
     msgbox_delay("Kohla", format("An enemy of an enemy is a friend, eh?"))
     msgbox_delay("Melea", format("Exactly."))
-    msgbox_delay("Kohla", format("...\pBut you're not friends of mine.\pIf you think that I'll ever take any help from anyone - much less the likes of you two - then you're mistaken!\pI don't NEED help!\pI'm better than {PLAYER}! Do you understand? I can beat {PLAYER} with my own Pokemon!\pNow get out of my room!"))
+    msgbox_delay("Kohla", format("...\pBut you're not friends of mine.\pIf you think that I'll ever take any help from anyone - much less the likes of you two - then you're mistaken!\pI don't NEED help!\pI'm better than {PLAYER}! Do you understand? I can beat {PLAYER} with my own Pokémon!\pNow get out of my room!"))
     msgbox_delay("Melea", format("...\pA shame."))
     msgbox_delay("Moxie", format("Good luck, Ace Rookie.\nWe'll be in touch."))    
 

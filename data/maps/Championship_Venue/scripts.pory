@@ -11,7 +11,7 @@ mapscripts Championship_Venue_MapScripts{}
 
 script ChampionshipVenue_SignUp{
     if (!flag(FLAG_CHAMPIONSHIP_KOHLA_ROOM)){
-        msgbox(format("Welcome, trainer, to this years\nCormoria Pokemon Championships!\lRegistration will open shortly.\pWe're waiting for all the participants\nto arrive at the venue."), MSGBOX_NPC)
+        msgbox(format("Welcome, trainer, to this years\nCormoria Pokémon Championships!\lRegistration will open shortly.\pWe're waiting for all the participants\nto arrive at the venue."), MSGBOX_NPC)
         end
     }
 
@@ -19,7 +19,7 @@ script ChampionshipVenue_SignUp{
         msgbox(format("Please head to your designated battle hall through the right.\pGood luck, trainer!"), MSGBOX_NPC)
         end
     } else {
-        msgbox(format("Welcome, trainer, to this years\nCormoria Pokemon Championships!\pAre you here to register your participation?"), MSGBOX_YESNO)
+        msgbox(format("Welcome, trainer, to this years\nCormoria Pokémon Championships!\pAre you here to register your participation?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 0){
             msgbox(format("This sign-up center is for participating trainers only.\pIf you're looking for the hotel,\nit's to the left of this building.\pHave a nice day!"), MSGBOX_NPC)
@@ -61,7 +61,7 @@ script ChampionshipVenue_SignUp{
             msgbox(format("Do you want me to explain the tournament rules to you?"), MSGBOX_YESNO) 
 
             if (var(VAR_RESULT) == 1){
-                msgbox(format("Alright - make sure you listen to the rules carefully, okay?\pThe Cormoria Pokemon Championship is a single-elimination tournament where the 32 strongest trainers in Cormoria compete for the title of Champion!\pEach round, you'll be paired against a random opponent. If you win your battle, you advance to the next stage. If you lose, you'll be eliminated from the tournament!\pThere are four stages - the round of 32, the round of 16, the quarter-finals and the semi-finals. Make it through and you'll be in the grand finals!"))
+                msgbox(format("Alright - make sure you listen to the rules carefully, okay?\pThe Cormoria Pokémon Championship is a single-elimination tournament where the 32 strongest trainers in Cormoria compete for the title of Champion!\pEach round, you'll be paired against a random opponent. If you win your battle, you advance to the next stage. If you lose, you'll be eliminated from the tournament!\pThere are four stages - the round of 32, the round of 16, the quarter-finals and the semi-finals. Make it through and you'll be in the grand finals!"))
             }
 
             msgbox(format("You can check your paired opponent on the noticeboard to the left.\pWhen you're ready, please head inside through the door to your right.\pGood luck!"))
@@ -89,7 +89,7 @@ script ChampionshipVenue_Entry{
         if (var(VAR_RESULT) == 1){
             //pokenav confirmation
 
-            msgbox(format("Warning! You are about to enter the Pokemon Championship.\pIf you lose at any point in the tournament, you will be eliminated\land your game will auto-save.\pMake sure you're ready!"), MSGBOX_POKENAV)
+            msgbox(format("Warning! You are about to enter the Pokémon Championship.\pIf you lose at any point in the tournament, you will be eliminated\land your game will auto-save.\pMake sure you're ready!"), MSGBOX_POKENAV)
             dynmultichoice(10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm ready!", "Not yet")              
 
             if (var(VAR_RESULT) == 1) {end}
@@ -129,7 +129,7 @@ script Champ_Venue_NPC2{
 }
 //gentleman
 script Champ_Venue_NPC3{
-    msgbox(format("I remember my first Pokemon Championship! I was a young lad, around your age. I'm old now, but the thrill is the same!"), MSGBOX_NPC)
+    msgbox(format("I remember my first Pokémon Championship! I was a young lad, around your age. I'm old now, but the thrill is the same!"), MSGBOX_NPC)
     end
 }
 //dude

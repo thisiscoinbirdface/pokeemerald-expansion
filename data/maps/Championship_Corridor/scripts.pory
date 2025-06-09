@@ -6,19 +6,19 @@ script Championship_Corridor_Register{
     applymovement(1, moves(face_left))
 
     if (var(VAR_CHAMP_STAGE) == 1){
-        msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 32.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers."))
+        msgbox(format("With your defeat to Chara, you have been eliminated from the Cormoria Pokémon Championship.\pYour final result is: Top 32.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokémon have proved yourselves as strong trainers."))
         release
     }
     if (var(VAR_CHAMP_STAGE) == 2){
-        msgbox(format("With your defeat to Stanja, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Top 16.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers."))
+        msgbox(format("With your defeat to Stanja, you have been eliminated from the Cormoria Pokémon Championship.\pYour final result is: Top 16.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokémon have proved yourselves as strong trainers."))
         release
     }
     if (var(VAR_CHAMP_STAGE) == 3){
-        msgbox(format("With your defeat to Anaya, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Quarter-Finalist.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers."))
+        msgbox(format("With your defeat to Anaya, you have been eliminated from the Cormoria Pokémon Championship.\pYour final result is: Quarter-Finalist.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokémon have proved yourselves as strong trainers."))
         release
     }
     if (var(VAR_CHAMP_STAGE) == 4){
-        msgbox(format("With your defeat to Gabrielle, you have been eliminated from the Cormoria Pokemon Championship.\pYour final result is: Semi-Finalist.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokemon have proved yourselves as strong trainers."))
+        msgbox(format("With your defeat to Gabrielle, you have been eliminated from the Cormoria Pokémon Championship.\pYour final result is: Semi-Finalist.\pCongratulations, {PLAYER}!\pDespite not winning the tournament, you and your Pokémon have proved yourselves as strong trainers."))
         release
     }
 
@@ -132,6 +132,6 @@ script Championship_Corridor_Mon5{
 
 script Championship_Corridor_TV{
     playse(SE_APPLAUSE)
-    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokemon! I must say, we haven't seen a trainer like this in years! The skill! The style!\pHe sure is this years favourite!"))
+    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokémon! I must say, we haven't seen a trainer like this in years! The skill! The style!\pHe sure is this years favourite!"))
     end
 }

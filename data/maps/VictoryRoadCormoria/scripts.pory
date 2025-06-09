@@ -40,31 +40,31 @@ script VR_Trainer_B{
 }
 //cooltrainer F
 script VR_Trainer_C{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_C, format("My Pokemon and I have trained all over Cormoria. You're not beating us!"), format("You beat us!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_C, format("My Pokémon and I have trained all over Cormoria. You're not beating us!"), format("You beat us!"))
     msgbox(format("The talent coming to the Championship sure is on another level..."), MSGBOX_NPC)
     end
 }
 //dragon tamer 
 script VR_Trainer_D{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_D, format("Hah! That's your team?\pStupid kid...I hate kids like you who think that type variety matters.\pIt's all about raw power! And DRAGON type Pokemon are the strongest!"), format("No! My dragons!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_D, format("Hah! That's your team?\pStupid kid...I hate kids like you who think that type variety matters.\pIt's all about raw power! And DRAGON type Pokémon are the strongest!"), format("No! My dragons!"))
     msgbox(format("I need to find more DRAGON types!"), MSGBOX_NPC)
     end
 }
 //cooltrainer F
 script VR_Trainer_E{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_E, format("Think you're making it to the Pokemon Championship?\pThink again! I'm the second member of the Crush Crew and your journey will end with me!"), format("Your journey doesn't end with me!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_E, format("Think you're making it to the Pokémon Championship?\pThink again! I'm the second member of the Crush Crew and your journey will end with me!"), format("Your journey doesn't end with me!"))
     msgbox(format("The Crush Crew's leader paid us to eliminate the competition for him."), MSGBOX_NPC)
     end
 }
 //hiker
 script VR_Trainer_F{
     trainerbattle_single(TRAINER_VICTORY_ROAD_F, format("The Championship will know the strength of the mountains!"), format("Is the strength of the mountains not enough?"))
-    msgbox(format("I'm in shock - I thought my mountain Pokemon were unbeatable!"), MSGBOX_NPC)
+    msgbox(format("I'm in shock - I thought my mountain Pokémon were unbeatable!"), MSGBOX_NPC)
     end
 }
 //breeder F
 script VR_Trainer_G{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_G, format("I'm the strongest Pokemon Breeder in all of Cormoria!\pCan you handle the storm?"), format("You can handle the storm!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_G, format("I'm the strongest Pokémon Breeder in all of Cormoria!\pCan you handle the storm?"), format("You can handle the storm!"))
     msgbox(format("I don't just love my birds like other breeders...I train them to be the strongest!"), MSGBOX_NPC)
     end
 }
@@ -76,7 +76,7 @@ script VR_Trainer_H{
 }
 //rich boy
 script VR_Trainer_I{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_I, format("Didn't my crew crush you?\pHmpf. Useless fools.\pI'm going to do everything it takes to win the Pokemon Championship, and money is no object! Hahaha!"), format("I spent so much money on Charizard!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_I, format("Didn't my crew crush you?\pHmpf. Useless fools.\pI'm going to do everything it takes to win the Pokémon Championship, and money is no object! Hahaha!"), format("I spent so much money on Charizard!"))
     msgbox(format("I guess money can't beat skill. I should invest in training for the next Championship."), MSGBOX_NPC)
     end
 }

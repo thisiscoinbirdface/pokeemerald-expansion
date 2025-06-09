@@ -70,7 +70,7 @@ script WinterlilyHollow_Gym_Trainer_B{
 
 //BATTLE GIRL
 script WinterlilyHollow_Gym_Trainer_C{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format("Challenge Viniel? Pah!\nMy Pokemon are rarer than his!"), "Wow, you're good!")
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format("Challenge Viniel? Pah!\nMy Pokémon are rarer than his!"), "Wow, you're good!")
     msgbox(format("I wanted to show my Qwilfish off to Viniel, but I can't find the right switches!"))
     releaseall
     end

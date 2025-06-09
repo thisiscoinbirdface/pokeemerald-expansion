@@ -19,7 +19,7 @@ script RivetshoreCity_Construction_NPC2{
     end
 }
 script RivetshoreCity_Construction_NPC3{
-    msgbox(format("Are you the contractor the CEO hired?\pNo?\pThe CEO was looking for a Pokemon trainer to help him out."), MSGBOX_NPC)
+    msgbox(format("Are you the contractor the CEO hired?\pNo?\pThe CEO was looking for a Pokémon trainer to help him out."), MSGBOX_NPC)
     end
 }
 
@@ -80,7 +80,7 @@ script RivetshoreCity_Construction_CEO{
     }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 2){
-        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique - it plays a beautiful melody that can wake sleeping Pokemon up!"))
+        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique - it plays a beautiful melody that can wake sleeping Pokémon up!"))
         giveitem(ITEM_POKE_FLUTE)
         setvar(VAR_RIVETSHORE_CEO_QUEST, 3)
     }

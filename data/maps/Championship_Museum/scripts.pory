@@ -7,28 +7,28 @@ mapscripts Championship_Museum_MapScripts{}
 //Martha
 script Champ_Museum_Past_Martha{
     lockall
-    msgbox(format("It's a painting of a trainer battling with a Houndstone...\pMartha.\nFirst Cormoria Pokemon Champion."))
+    msgbox(format("It's a painting of a trainer battling with a Houndstone...\pMartha.\nFirst Cormoria Pokémon Champion."))
     releaseall
     end
 }
 
 script Champ_Museum_Past_Chef{
     lockall
-    msgbox(format("It's a painting of a trainer battling with a Hydrapple...\pLynch.\nSecond Cormoria Pokemon Champion."))
+    msgbox(format("It's a painting of a trainer battling with a Hydrapple...\pLynch.\nSecond Cormoria Pokémon Champion."))
     releaseall
     end
 }
 
 script Champ_Museum_Past_Ravine{
     lockall
-    msgbox(format("It's a painting of a trainer battling with a Kangaskhan...\pRavine.\nThird Cormoria Pokemon Champion."))
+    msgbox(format("It's a painting of a trainer battling with a Kangaskhan...\pRavine.\nThird Cormoria Pokémon Champion."))
     releaseall
     end
 }
 
 script Champ_Museum_Past_Greta{
     lockall
-    msgbox(format("It's a painting of a trainer battling with a Banette...\pGreta.\nFourth Cormoria Pokemon Champion."))
+    msgbox(format("It's a painting of a trainer battling with a Banette...\pGreta.\nFourth Cormoria Pokémon Champion."))
     releaseall
     end
 }

@@ -336,7 +336,7 @@ script SSElegant_NPC3{
 }
 //picnicker 1F
 script SSElegant_NPC4{
-    msgbox(format("The S.S. Elegant stops at Victory Cape. That's where this year's Pokemon Championships will be!"), MSGBOX_NPC)    
+    msgbox(format("The S.S. Elegant stops at Victory Cape. That's where this year's Pokémon Championships will be!"), MSGBOX_NPC)    
     end    
 }
 

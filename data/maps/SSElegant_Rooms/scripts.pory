@@ -34,11 +34,11 @@ script SSElegant_Rooms_Clefable{
 
 //couple
 script SSElegant_Rooms_NPC1{
-    msgbox(format("Our daughter is taking part in the Cormoria Pokemon Championship.\pWe're on our way to Victory Cape to support her!"), MSGBOX_NPC)
+    msgbox(format("Our daughter is taking part in the Cormoria Pokémon Championship.\pWe're on our way to Victory Cape to support her!"), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_NPC2{
-    msgbox(format("When I was younger, I tried to enter the Pokemon Championship...but I could only get four badges."), MSGBOX_NPC)
+    msgbox(format("When I was younger, I tried to enter the Pokémon Championship...but I could only get four badges."), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_Weezing{

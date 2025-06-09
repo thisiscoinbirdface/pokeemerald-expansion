@@ -60,9 +60,9 @@ script CarabrueTown_Home1F_EventScript_StartGame{
 
     speakername("Mom") 
     msgbox(format("{PLAYER}, those shoes came with instructions: Press the B Button to toggle running on and off."))
-    
+    release
     speakername(NULL)
-    msgbox(format("Switch between hold and toggle modes in the options menu!"), MSGBOX_POKENAV)
+    msgbox(format("Switch between hold and toggle\nmodes in the options menu!"), MSGBOX_POKENAV)
     release
     delay(8)
 

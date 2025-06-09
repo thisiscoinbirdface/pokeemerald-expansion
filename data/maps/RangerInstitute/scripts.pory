@@ -449,14 +449,14 @@ script RangerInstitute_Ravine{
 
     if (var(VAR_RANGER_INSTITUTE) == 9){///waiting for selection of ball
         speakername("Ravine")
-        msgbox(format("Don't be shy - pick a Pokemon!\nIt's your reward for ranking up."), MSGBOX_NPC)
+        msgbox(format("Don't be shy - pick a Pokémon!\nIt's your reward for ranking up."), MSGBOX_NPC)
         end
     }
 
     if (var(VAR_RANGER_INSTITUTE) == 8){ ///second quest completed
         lockall
         faceplayer
-        msgbox_delay("Ravine", format("My newest Associate arrives!\nHow does it feel, being just one more step away from being a fully-fledged Ranger?\pAs an Associate, you are entitled to one of our very rare Ranger-exclusive Pokemon! See the table down there? Any of those Pokemon is yours! But choose carefully - you can only pick one.\pTalk to me once you've chosen one."))
+        msgbox_delay("Ravine", format("My newest Associate arrives!\nHow does it feel, being just one more step away from being a fully-fledged Ranger?\pAs an Associate, you are entitled to one of our very rare Ranger-exclusive Pokémon! See the table down there? Any of those Pokémon is yours! But choose carefully - you can only pick one.\pTalk to me once you've chosen one."))
         setvar(VAR_RANGER_INSTITUTE, 9)
         releaseall
         end

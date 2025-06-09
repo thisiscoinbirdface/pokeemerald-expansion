@@ -74,6 +74,8 @@ CarabrueTown_Home1F_EventScript_StartGame::
 	speakername CarabrueTown_Home1F_EventScript_StartGame_Text_2
 # 62 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	msgbox CarabrueTown_Home1F_EventScript_StartGame_Text_6
+# 63 "data//maps/CarabrueTown_Home1F/scripts.pory"
+	release
 # 64 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	speakername NULL
 # 65 "data//maps/CarabrueTown_Home1F/scripts.pory"
@@ -339,8 +341,8 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_6:
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_7:
 # 65 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Switch between hold and toggle modes in\n"
-	.string "the options menu!$"
+	.string "Switch between hold and toggle\n"
+	.string "modes in the options menu!$"
 
 CarabrueTown_Home1F_EventScript_StartGame_Text_8:
 # 70 "data//maps/CarabrueTown_Home1F/scripts.pory"
