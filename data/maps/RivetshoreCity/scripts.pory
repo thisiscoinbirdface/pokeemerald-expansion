@@ -16,7 +16,11 @@ raw`
 
 `
 
-mapscripts RivetshoreCity_MapScripts{}
+mapscripts RivetshoreCity_MapScripts{    
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_RIVETSHORE_CITY)
+    }
+}
 
 
 

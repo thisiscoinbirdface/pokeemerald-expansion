@@ -16,7 +16,8 @@ raw`
 `
 
 mapscripts PellucaCity_MapScripts{
-        MAP_SCRIPT_ON_TRANSITION {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_PELLUCA_CITY)
         goto(PellucaCity_SetLayout)
     }
     MAP_SCRIPT_ON_FRAME_TABLE [

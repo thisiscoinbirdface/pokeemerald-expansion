@@ -11,8 +11,10 @@ raw `
 `
 
 mapscripts GastreeCity_MapScripts{
-    MAP_SCRIPT_ON_TRANSITION: GastreeCity_OnTransition  
-
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_GASTREE_CITY)
+    }
+    
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_GASTREE_SKITTY_QUEST, 0: GastreeCity_EventScript_SkittyQuestStart    
     ]

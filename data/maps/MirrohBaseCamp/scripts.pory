@@ -3,7 +3,11 @@ raw`
     .set LOCALID_RUE, 7
 `
 
-mapscripts MirrohBaseCamp_MapScripts{}
+mapscripts MirrohBaseCamp_MapScripts{    
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_MIRROH_BASE_CAMP)
+    }
+}
 
 //Moka was here - gubu I love you <3
 

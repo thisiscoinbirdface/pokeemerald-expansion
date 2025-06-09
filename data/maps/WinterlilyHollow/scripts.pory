@@ -8,6 +8,9 @@ mapscripts WinterlilyHollow_MapScripts{
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TEMP_0, 0: WinterlilyHollow_OnFrame
     ]
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_WINTERLILY_HOLLOW)
+    }
 }
 
 script WinterlilyHollow_OnFrame{

@@ -1977,7 +1977,7 @@ static void CreateFlyDestIcons(void)
     u8 spriteId;
 
     canFlyFlag = FLAG_VISITED_FENNILAHL_TOWN;
-    for (mapSecId = MAPSEC_CARABRUE_TOWN; mapSecId <= MAPSEC_VICTORY_CAPE; mapSecId++)
+    for (mapSecId = MAPSEC_FENNILAHL_TOWN; mapSecId <= MAPSEC_VICTORY_CAPE; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
         x = (x + MAPCURSOR_X_MIN) * 8 + 4;

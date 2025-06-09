@@ -1,4 +1,8 @@
-mapscripts CeramBaseCamp_MapScripts{}
+mapscripts CeramBaseCamp_MapScripts{    
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_CERAM_BASE_CAMP)
+    }
+}
 
 //NPC SCRIPTS
 
