@@ -221,7 +221,7 @@ static const struct BgTemplate sOptionMenuBgTemplates[] =
 
 void PlayOptionChangeSE(void)
 {
-    PlaySE(SE_SELECT);
+    PlaySE(SE_DEX_SCROLL);
 }
 
 static const u16 sOptionMenuBg_Pal[] = {RGB(17, 18, 31)};
@@ -423,7 +423,7 @@ static u8 Process_ChangePage(u8 CurrentPage)
 {
     if (JOY_NEW(R_BUTTON))
     {
-        PlaySE(SE_SELECT);
+        PlaySE(SE_CONTEST_ICON_CLEAR);
         if (CurrentPage < PAGE_COUNT - 1)
             CurrentPage++;
         else
@@ -431,7 +431,7 @@ static u8 Process_ChangePage(u8 CurrentPage)
     }
     if (JOY_NEW(L_BUTTON))
     {
-        PlaySE(SE_SELECT);
+        PlaySE(SE_CONTEST_ICON_CLEAR);
         if (CurrentPage != 0)
             CurrentPage--;
         else
@@ -490,7 +490,6 @@ static void Task_OptionMenuProcessInput(u8 taskId)
 {
     if (JOY_NEW(R_BUTTON) || JOY_NEW(L_BUTTON))
     {
-        PlaySE(SE_SELECT);
         FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
         ClearStdWindowAndFrame(WIN_OPTIONS, FALSE);
         sCurrPage = Process_ChangePage(sCurrPage);
@@ -499,12 +498,14 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     else if (JOY_NEW(A_BUTTON))
     {
         if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL)
+        {
+            PlaySE(SE_POKENAV_OFF);
             gTasks[taskId].func = Task_OptionMenuSave;
-            PlaySE(SE_SELECT);
+        }
     }
     else if (JOY_NEW(B_BUTTON))
     {
-        PlaySE(SE_SELECT);
+        PlaySE(SE_POKENAV_OFF);
         gTasks[taskId].func = Task_OptionMenuSave;
     }
     else if (JOY_NEW(DPAD_UP))
@@ -602,14 +603,19 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
     else if (JOY_NEW(A_BUTTON))
     {
         if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG2)
+        {
+            PlaySE(SE_POKENAV_OFF);
             gTasks[taskId].func = Task_OptionMenuSave;
+        }
     }
     else if (JOY_NEW(B_BUTTON))
     {
+        PlaySE(SE_POKENAV_OFF);
         gTasks[taskId].func = Task_OptionMenuSave;
     }
     else if (JOY_NEW(DPAD_UP))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection > 0)
             gTasks[taskId].tMenuSelection--;
         else
@@ -618,6 +624,7 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG2)
             gTasks[taskId].tMenuSelection++;
         else
@@ -695,14 +702,20 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
     else if (JOY_NEW(A_BUTTON))
     {
         if (gTasks[taskId].tMenuSelection == MENUITEM_CANCEL_PG3)
+        {
+            PlaySE(SE_POKENAV_OFF);
             gTasks[taskId].func = Task_OptionMenuSave;
+        }
     }
     else if (JOY_NEW(B_BUTTON))
     {
+        PlaySE(SE_SELECT);
+        PlaySE(SE_POKENAV_OFF);
         gTasks[taskId].func = Task_OptionMenuSave;
     }
     else if (JOY_NEW(DPAD_UP))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection > 0)
             gTasks[taskId].tMenuSelection--;
         else
@@ -711,6 +724,7 @@ static void Task_OptionMenuProcessInput_Pg3(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
+        PlaySE(SE_SELECT);
         if (gTasks[taskId].tMenuSelection < MENUITEM_CANCEL_PG3)
             gTasks[taskId].tMenuSelection++;
         else

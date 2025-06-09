@@ -334,7 +334,7 @@ script UnchartedIsland_Finale_Ending{
     applymovement(2, moves(jump_2_up))
     waitmovement(0)
     removeobject(2)
-
+    playse(SE_M_DIVE)    
     delay(30)
 
     setvar(VAR_0x8004, 2)  //vertical pan
@@ -774,10 +774,13 @@ script UnchartedIsland_Tenebris{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *4 walk_down *2 walk_right * 3))
         applymovement(LOCALID_TENE, moves(walk_right *4 walk_down *2 walk_right * 3 jump_2_down))
         waitmovement(0)
+        playse(SE_M_DIVE)
         removeobject(LOCALID_TENE)
         delay(8)
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(jump_2_down))
+        delay(8)
+        playse(SE_M_DIVE)
         warp(MAP_ANCIENT_CORMORIA_FINAL, 9, 51)
 
         setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 3)

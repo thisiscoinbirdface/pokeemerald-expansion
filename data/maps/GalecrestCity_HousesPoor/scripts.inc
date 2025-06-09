@@ -55,7 +55,7 @@ GalecrestCity_HousesPoor_NPC2::
 
 GalecrestCity_HousesPoor_Jigglypuff::
 # 41 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	playmoncry SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL
+	playse SE_M_SING
 # 42 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_Jigglypuff_Text_0, MSGBOX_NPC
 	end

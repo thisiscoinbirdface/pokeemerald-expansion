@@ -96,8 +96,8 @@ Route7_Trainer_C_Text_2:
 
 Route7_Trainer_D_Text_0:
 # 23 "data//maps/Route7/scripts.pory"
-	.string "Every year I take my sister camping. A\n"
-	.string "battle will get us going!$"
+	.string "Every year I take my sister camping.\n"
+	.string "A battle will get us going!$"
 
 Route7_Trainer_D_Text_1:
 # 23 "data//maps/Route7/scripts.pory"

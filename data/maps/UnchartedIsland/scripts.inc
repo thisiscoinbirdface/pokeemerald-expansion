@@ -525,6 +525,8 @@ UnchartedIsland_Finale_Ending::
 	waitmovement 0
 # 336 "data//maps/UnchartedIsland/scripts.pory"
 	removeobject 2
+# 337 "data//maps/UnchartedIsland/scripts.pory"
+	playse SE_M_DIVE
 # 338 "data//maps/UnchartedIsland/scripts.pory"
 	delay 30
 # 340 "data//maps/UnchartedIsland/scripts.pory"
@@ -1170,16 +1172,22 @@ UnchartedIsland_Tenebris_1:
 # 776 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
 # 777 "data//maps/UnchartedIsland/scripts.pory"
-	removeobject LOCALID_TENE
+	playse SE_M_DIVE
 # 778 "data//maps/UnchartedIsland/scripts.pory"
+	removeobject LOCALID_TENE
+# 779 "data//maps/UnchartedIsland/scripts.pory"
 	delay 8
-# 780 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
 # 781 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_ANCIENT_CORMORIA_FINAL, 9, 51
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
+# 782 "data//maps/UnchartedIsland/scripts.pory"
+	delay 8
 # 783 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 3
+	playse SE_M_DIVE
 # 784 "data//maps/UnchartedIsland/scripts.pory"
+	warp MAP_ANCIENT_CORMORIA_FINAL, 9, 51
+# 786 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 3
+# 787 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
@@ -1808,9 +1816,9 @@ UnchartedIsland_Tenebris_Movement_5:
 	jump_2_down
 	step_end
 
-# 780 "data//maps/UnchartedIsland/scripts.pory"
+# 781 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_6:
-# 780 "data//maps/UnchartedIsland/scripts.pory"
+# 781 "data//maps/UnchartedIsland/scripts.pory"
 	jump_2_down
 	step_end
 

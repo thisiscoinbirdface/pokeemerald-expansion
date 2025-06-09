@@ -59,8 +59,7 @@ script PellucaCity_EventEnd{
     speakername("Mayor") 
     msgbox(format("No, you - no, be careful -"))   
 	release
-	playse(SE_EXIT)
-	waitse
+	playse(SE_M_BRICK_BREAK)
 	msgbox(format("The HM snapped into two pieces in the Qwilsquad Boss' hand!"), MSGBOX_SIGN)
 	release
 	applymovement(LOCALID_QWIL, moves(emote_exclamation_mark jump_in_place_down)) 

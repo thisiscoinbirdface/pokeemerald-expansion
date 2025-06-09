@@ -38,7 +38,7 @@ script GalecrestCity_HousesPoor_NPC2{
 }
 
 script GalecrestCity_HousesPoor_Jigglypuff{
-    playmoncry(SPECIES_JIGGLYPUFF, CRY_MODE_NORMAL)
+    playse(SE_M_SING)
     msgbox(format("Jigglypuff is singing happily! Better leave before I fall asleep..."), MSGBOX_NPC)
     end
 }

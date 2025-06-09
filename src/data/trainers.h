@@ -18150,7 +18150,7 @@ F_TRAINER_FEMALE |
 #line 8781
         .trainerName = _("Chara"),
 #line 8783
-        .trainerClass = TRAINER_CLASS_COOL_GIRL,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8784
         .trainerPic = TRAINER_PIC_COOL_GIRL,
         .encounterMusic_gender =
@@ -18233,7 +18233,7 @@ F_TRAINER_FEMALE |
 #line 8812
         .trainerName = _("Chara"),
 #line 8814
-        .trainerClass = TRAINER_CLASS_COOL_GIRL,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8815
         .trainerPic = TRAINER_PIC_COOL_GIRL,
         .encounterMusic_gender =
@@ -18339,7 +18339,7 @@ F_TRAINER_FEMALE |
 #line 8862
         .trainerName = _("Stanja"),
 #line 8864
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8865
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
@@ -18438,7 +18438,7 @@ F_TRAINER_FEMALE |
 #line 8901
         .trainerName = _("Stanja"),
 #line 8903
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8904
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
@@ -18539,7 +18539,7 @@ F_TRAINER_FEMALE |
 #line 8953
         .trainerName = _("Berger"),
 #line 8955
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8956
         .trainerPic = TRAINER_PIC_COOL_GUY,
         .encounterMusic_gender =
@@ -18640,7 +18640,7 @@ F_TRAINER_FEMALE |
 #line 8994
         .trainerName = _("Berger"),
 #line 8996
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 8997
         .trainerPic = TRAINER_PIC_COOL_GUY,
         .encounterMusic_gender =
@@ -18743,7 +18743,7 @@ F_TRAINER_FEMALE |
 #line 9045
         .trainerName = _("Gabrielle"),
 #line 9047
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 9048
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
@@ -18867,7 +18867,7 @@ F_TRAINER_FEMALE |
 #line 9098
         .trainerName = _("Gabrielle"),
 #line 9100
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
+        .trainerClass = TRAINER_CLASS_CONTENDER,
 #line 9101
         .trainerPic = TRAINER_PIC_SOMBER_GRUNT_F,
         .encounterMusic_gender =
