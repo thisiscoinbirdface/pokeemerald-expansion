@@ -189,7 +189,7 @@ Championship_R1_Text_0:
 Championship_R1_Text_1:
 # 30 "data//maps/Championship_R1/scripts.pory"
 	.string "Welcome one and all to the Cormoria\n"
-	.string "Pokemon Championship!\p"
+	.string "Pokémon Championship!\p"
 	.string "The first round, the round of 32, is set\n"
 	.string "to begin shortly.\p"
 	.string "Let's hear a huge cheer for the\n"
@@ -223,7 +223,7 @@ Championship_R1_Text_5:
 
 Championship_R1_Text_6:
 # 42 "data//maps/Championship_R1/scripts.pory"
-	.string "So this is the Pokemon Championship...$"
+	.string "So this is the Pokémon Championship...$"
 
 Championship_R1_Text_7:
 # 46 "data//maps/Championship_R1/scripts.pory"

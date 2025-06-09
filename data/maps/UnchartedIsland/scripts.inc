@@ -2241,7 +2241,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_12:
 	.string "Rookie.\p"
 	.string "Now that we control the dreamstone,\n"
 	.string "we've picked up some rare ancient\l"
-	.string "Pokemon of our own!\p"
+	.string "Pokémon of our own!\p"
 	.string "It's time to end this once and for all!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_13:

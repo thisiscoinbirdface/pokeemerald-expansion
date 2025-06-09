@@ -181,7 +181,7 @@ VictoryCape_Mon3_Text_0:
 
 VictoryCape_NPC5_Text_0:
 # 39 "data//maps/Championship/scripts.pory"
-	.string "The Cormoria Pokemon Championship\n"
+	.string "The Cormoria Pokémon Championship\n"
 	.string "is big business, kid!\p"
 	.string "I made a killing by shipping\n"
 	.string "supplies to Victory Cape.$"

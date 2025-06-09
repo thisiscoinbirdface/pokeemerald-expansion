@@ -1538,7 +1538,7 @@ RangerInstitute_2F_EventScript_Welcome_Text_16:
 
 RangerInstitute_Ravine_Text_0:
 # 452 "data//maps/RangerInstitute/scripts.pory"
-	.string "Don't be shy - pick a Pokemon!\n"
+	.string "Don't be shy - pick a Pokémon!\n"
 	.string "It's your reward for ranking up.$"
 
 RangerInstitute_Ravine_Text_1:
@@ -1549,8 +1549,8 @@ RangerInstitute_Ravine_Text_1:
 	.string "Ranger?\p"
 	.string "As an Associate, you are entitled to\n"
 	.string "one of our very rare Ranger-exclusive\l"
-	.string "Pokemon! See the table down there? Any\l"
-	.string "of those Pokemon is yours! But choose\l"
+	.string "Pokémon! See the table down there? Any\l"
+	.string "of those Pokémon is yours! But choose\l"
 	.string "carefully - you can only pick one.\p"
 	.string "Talk to me once you've chosen one.$"
 

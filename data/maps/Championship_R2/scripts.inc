@@ -187,7 +187,7 @@ Championship_R2_Text_0:
 Championship_R2_Text_1:
 # 32 "data//maps/Championship_R2/scripts.pory"
 	.string "We're back with the round of 16 in the\n"
-	.string "Cormoria Pokemon Championship!\p"
+	.string "Cormoria Pokémon Championship!\p"
 	.string "Let's hear a huge cheer for the\n"
 	.string "trainers! Show your support!\p"
 	.string "The previous round featured some\n"
@@ -236,6 +236,6 @@ Championship_R2_Text_7:
 	.string "Pinsir, but this time, we couldn't pull\l"
 	.string "through.\p"
 	.string "I guess this is the caliber of the\n"
-	.string "Pokemon Championship...\p"
+	.string "Pokémon Championship...\p"
 	.string "Good luck, {PLAYER}. You're tough -\n"
 	.string "I'm rooting for you!$"

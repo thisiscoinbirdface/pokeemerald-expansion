@@ -55,7 +55,7 @@ Champ_Hotel_Counter_Text_0:
 	.string "our Championship Exhibit in the\l"
 	.string "basement!\p"
 	.string "...\p"
-	.string "Who comes to the Pokemon Championship\n"
+	.string "Who comes to the Pokémon Championship\n"
 	.string "without booking a room in advance?$"
 
 Champ_Hotel_NPC_Arsalan_Text_0:
@@ -65,7 +65,7 @@ Champ_Hotel_NPC_Arsalan_Text_0:
 Champ_Hotel_NPC_Arsalan_Text_1:
 # 17 "data//maps/Championship_Hotel/scripts.pory"
 	.string "You thought the legendary Arsalan\n"
-	.string "wouldn't be at the Pokemon\l"
+	.string "wouldn't be at the Pokémon\l"
 	.string "Championship?\p"
 	.string "Who do you think drew the paintings for\n"
 	.string "the Championship Exhibit?$"

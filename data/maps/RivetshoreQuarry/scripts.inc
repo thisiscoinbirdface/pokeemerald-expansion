@@ -763,7 +763,7 @@ Rivetshore_Gym_Trainer_B_Text_0:
 	.string "Bergmite and I have become quite\n"
 	.string "strong, you know?\p"
 	.string "Bergmie even evolved into Avalugg. Now\n"
-	.string "we're aiming for the Pokemon\l"
+	.string "we're aiming for the Pokémon\l"
 	.string "Championship!$"
 
 Rivetshore_Gym_Trainer_B_Text_1:

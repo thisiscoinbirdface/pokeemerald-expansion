@@ -194,7 +194,7 @@ RivetshoreCity_Construction_NPC3_Text_0:
 # 22 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Are you the contractor the CEO hired?\p"
 	.string "No?\p"
-	.string "The CEO was looking for a Pokemon\n"
+	.string "The CEO was looking for a Pokémon\n"
 	.string "trainer to help him out.$"
 
 RivetshoreCity_Construction_NPC4_Text_0:
@@ -258,7 +258,7 @@ RivetshoreCity_Construction_CEO_Text_2:
 	.string "brought my dear Percy back!\p"
 	.string "Here, please take this. It's a very rare\n"
 	.string "antique - it plays a beautiful melody\l"
-	.string "that can wake sleeping Pokemon up!$"
+	.string "that can wake sleeping Pokémon up!$"
 
 RivetshoreCity_Construction_CEO_Text_3:
 # 90 "data//maps/RivetshoreCity_Construction/scripts.pory"

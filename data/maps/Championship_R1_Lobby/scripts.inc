@@ -103,7 +103,7 @@ Championship_Lobby_Nurse_Text_0:
 # 30 "data//maps/Championship_R1_Lobby/scripts.pory"
 	.string "Congraluations on your victory,\n"
 	.string "trainer!\p"
-	.string "I'll now heal your Pokemon.$"
+	.string "I'll now heal your Pokémon.$"
 
 Championship_Lobby_Nurse_Text_1:
 # 32 "data//maps/Championship_R1_Lobby/scripts.pory"

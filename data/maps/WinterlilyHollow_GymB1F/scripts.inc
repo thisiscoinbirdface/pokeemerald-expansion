@@ -404,7 +404,7 @@ WinterlilyHollow_Gym_Trainer_B_Text_1:
 WinterlilyHollow_Gym_Trainer_C_Text_0:
 # 73 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "Challenge Viniel? Pah!\n"
-	.string "My Pokemon are rarer than his!$"
+	.string "My Pokémon are rarer than his!$"
 
 WinterlilyHollow_Gym_Trainer_C_Text_1:
 # 73 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"

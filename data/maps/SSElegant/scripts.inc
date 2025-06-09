@@ -1074,5 +1074,5 @@ SSElegant_NPC3_Text_0:
 SSElegant_NPC4_Text_0:
 # 339 "data//maps/SSElegant/scripts.pory"
 	.string "The S.S. Elegant stops at Victory Cape.\n"
-	.string "That's where this year's Pokemon\l"
+	.string "That's where this year's Pokémon\l"
 	.string "Championships will be!$"

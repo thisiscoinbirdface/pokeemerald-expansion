@@ -118,14 +118,14 @@ SSElegant_Rooms_Clefable_Text_0:
 SSElegant_Rooms_NPC1_Text_0:
 # 37 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Our daughter is taking part in the\n"
-	.string "Cormoria Pokemon Championship.\p"
+	.string "Cormoria Pokémon Championship.\p"
 	.string "We're on our way to Victory Cape to\n"
 	.string "support her!$"
 
 SSElegant_Rooms_NPC2_Text_0:
 # 41 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "When I was younger, I tried to enter the\n"
-	.string "Pokemon Championship...but I could only\l"
+	.string "Pokémon Championship...but I could only\l"
 	.string "get four badges.$"
 
 SSElegant_Rooms_Weezing_Text_0:

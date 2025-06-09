@@ -228,7 +228,7 @@ Championship_R3_Text_7:
 # 46 "data//maps/Championship_R3/scripts.pory"
 	.string "You were so strong, {PLAYER}...\n"
 	.string "I guess this is what it takes to become\l"
-	.string "the Pokemon Champion.\p"
+	.string "the Pokémon Champion.\p"
 	.string "I get it. We get it!\n"
 	.string "We're not ready yet.\p"
 	.string "But next time, Avalugg and I will be\n"

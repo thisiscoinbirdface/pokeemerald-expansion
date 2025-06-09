@@ -307,7 +307,7 @@ Championship_R5_Text_7:
 	.string "have...I...\p"
 	.string "But do you see me now, {PLAYER}?\n"
 	.string "In spite of everything, I've reached\l"
-	.string "the finals of the Pokemon\l"
+	.string "the finals of the Pokémon\l"
 	.string "Championship!\p"
 	.string "And today, right here, right now...\p"
 	.string "...I'm going to get what I deserve!$"
@@ -324,7 +324,7 @@ Championship_R5_Text_10:
 # 80 "data//maps/Championship_R5/scripts.pory"
 	.string "To everyone watching this show in the\n"
 	.string "stands and all across Cormoria...you're\l"
-	.string "looking at the new Pokemon Champion!$"
+	.string "looking at the new Pokémon Champion!$"
 
 Championship_R5_Text_11:
 # 100 "data//maps/Championship_R5/scripts.pory"

@@ -276,7 +276,7 @@ ChampionshipVenue_Entry_Movement_1:
 ChampionshipVenue_SignUp_Text_0:
 # 14 "data//maps/Championship_Venue/scripts.pory"
 	.string "Welcome, trainer, to this years\n"
-	.string "Cormoria Pokemon Championships!\l"
+	.string "Cormoria Pokémon Championships!\l"
 	.string "Registration will open shortly.\p"
 	.string "We're waiting for all the participants\n"
 	.string "to arrive at the venue.$"
@@ -290,7 +290,7 @@ ChampionshipVenue_SignUp_Text_1:
 ChampionshipVenue_SignUp_Text_2:
 # 22 "data//maps/Championship_Venue/scripts.pory"
 	.string "Welcome, trainer, to this years\n"
-	.string "Cormoria Pokemon Championships!\p"
+	.string "Cormoria Pokémon Championships!\p"
 	.string "Are you here to register your\n"
 	.string "participation?$"
 
@@ -382,7 +382,7 @@ ChampionshipVenue_SignUp_Text_21:
 # 64 "data//maps/Championship_Venue/scripts.pory"
 	.string "Alright - make sure you listen to the\n"
 	.string "rules carefully, okay?\p"
-	.string "The Cormoria Pokemon Championship is a\n"
+	.string "The Cormoria Pokémon Championship is a\n"
 	.string "single-elimination tournament where\l"
 	.string "the 32 strongest trainers in Cormoria\l"
 	.string "compete for the title of Champion!\p"
@@ -417,7 +417,7 @@ ChampionshipVenue_Entry_Text_1:
 ChampionshipVenue_Entry_Text_2:
 # 92 "data//maps/Championship_Venue/scripts.pory"
 	.string "Warning! You are about to enter the\n"
-	.string "Pokemon Championship.\p"
+	.string "Pokémon Championship.\p"
 	.string "If you lose at any point in the\n"
 	.string "tournament, you will be eliminated\l"
 	.string "and your game will auto-save.\p"
@@ -455,7 +455,7 @@ Champ_Venue_NPC2_Text_0:
 
 Champ_Venue_NPC3_Text_0:
 # 132 "data//maps/Championship_Venue/scripts.pory"
-	.string "I remember my first Pokemon\n"
+	.string "I remember my first Pokémon\n"
 	.string "Championship! I was a young lad, around\l"
 	.string "your age. I'm old now, but the thrill is\l"
 	.string "the same!$"

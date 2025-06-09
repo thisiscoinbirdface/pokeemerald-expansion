@@ -423,8 +423,8 @@ FlowerShop_Roselia_Text_1:
 
 FlowerShop_Roselia_Text_2:
 # 126 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Roselia points at your Pokemon!\p"
-	.string "Teach a Pokemon Solar Beam?$"
+	.string "Roselia points at your Pokémon!\p"
+	.string "Teach a Pokémon Solar Beam?$"
 
 FlowerShop_Roselia_Text_3:
 # 132 "data//maps/MirrohFightingDojo/scripts.pory"
@@ -433,7 +433,7 @@ FlowerShop_Roselia_Text_3:
 
 FlowerShop_Roselia_Text_4:
 # 133 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Teach a Pokemon Solar Beam?$"
+	.string "Teach a Pokémon Solar Beam?$"
 
 FlowerShop_Lilligant_Text_0:
 # 162 "data//maps/MirrohFightingDojo/scripts.pory"
@@ -446,9 +446,9 @@ FlowerShop_Lilligant_Text_1:
 
 FlowerShop_Lilligant_Text_2:
 # 174 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Lilligant points at your Pokemon!\p"
-	.string "Teach a Pokemon Solar Blade?$"
+	.string "Lilligant points at your Pokémon!\p"
+	.string "Teach a Pokémon Solar Blade?$"
 
 FlowerShop_Lilligant_Text_3:
 # 181 "data//maps/MirrohFightingDojo/scripts.pory"
-	.string "Teach a Pokemon Solar Blade?$"
+	.string "Teach a Pokémon Solar Blade?$"

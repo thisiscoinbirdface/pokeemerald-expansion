@@ -149,28 +149,28 @@ Champ_Museum_Past_Martha_Text_0:
 	.string "It's a painting of a trainer battling\n"
 	.string "with a Houndstone...\p"
 	.string "Martha.\n"
-	.string "First Cormoria Pokemon Champion.$"
+	.string "First Cormoria Pokémon Champion.$"
 
 Champ_Museum_Past_Chef_Text_0:
 # 17 "data//maps/Championship_Museum/scripts.pory"
 	.string "It's a painting of a trainer battling\n"
 	.string "with a Hydrapple...\p"
 	.string "Lynch.\n"
-	.string "Second Cormoria Pokemon Champion.$"
+	.string "Second Cormoria Pokémon Champion.$"
 
 Champ_Museum_Past_Ravine_Text_0:
 # 24 "data//maps/Championship_Museum/scripts.pory"
 	.string "It's a painting of a trainer battling\n"
 	.string "with a Kangaskhan...\p"
 	.string "Ravine.\n"
-	.string "Third Cormoria Pokemon Champion.$"
+	.string "Third Cormoria Pokémon Champion.$"
 
 Champ_Museum_Past_Greta_Text_0:
 # 31 "data//maps/Championship_Museum/scripts.pory"
 	.string "It's a painting of a trainer battling\n"
 	.string "with a Banette...\p"
 	.string "Greta.\n"
-	.string "Fourth Cormoria Pokemon Champion.$"
+	.string "Fourth Cormoria Pokémon Champion.$"
 
 Champ_Museum_Past_Empty_Text_0:
 # 38 "data//maps/Championship_Museum/scripts.pory"

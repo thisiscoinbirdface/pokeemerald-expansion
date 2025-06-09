@@ -145,7 +145,7 @@ VR_Trainer_B_Text_2:
 
 VR_Trainer_C_Text_0:
 # 43 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "My Pokemon and I have trained all over\n"
+	.string "My Pokémon and I have trained all over\n"
 	.string "Cormoria. You're not beating us!$"
 
 VR_Trainer_C_Text_1:
@@ -163,7 +163,7 @@ VR_Trainer_D_Text_0:
 	.string "Stupid kid...I hate kids like you who\n"
 	.string "think that type variety matters.\p"
 	.string "It's all about raw power! And DRAGON\n"
-	.string "type Pokemon are the strongest!$"
+	.string "type Pokémon are the strongest!$"
 
 VR_Trainer_D_Text_1:
 # 49 "data//maps/VictoryRoadCormoria/scripts.pory"
@@ -175,7 +175,7 @@ VR_Trainer_D_Text_2:
 
 VR_Trainer_E_Text_0:
 # 55 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "Think you're making it to the Pokemon\n"
+	.string "Think you're making it to the Pokémon\n"
 	.string "Championship?\p"
 	.string "Think again! I'm the second member of\n"
 	.string "the Crush Crew and your journey will end\l"
@@ -203,11 +203,11 @@ VR_Trainer_F_Text_1:
 VR_Trainer_F_Text_2:
 # 62 "data//maps/VictoryRoadCormoria/scripts.pory"
 	.string "I'm in shock - I thought my mountain\n"
-	.string "Pokemon were unbeatable!$"
+	.string "Pokémon were unbeatable!$"
 
 VR_Trainer_G_Text_0:
 # 67 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "I'm the strongest Pokemon Breeder in\n"
+	.string "I'm the strongest Pokémon Breeder in\n"
 	.string "all of Cormoria!\p"
 	.string "Can you handle the storm?$"
 
@@ -242,7 +242,7 @@ VR_Trainer_I_Text_0:
 	.string "Didn't my crew crush you?\p"
 	.string "Hmpf. Useless fools.\p"
 	.string "I'm going to do everything it takes to\n"
-	.string "win the Pokemon Championship, and\l"
+	.string "win the Pokémon Championship, and\l"
 	.string "money is no object! Hahaha!$"
 
 VR_Trainer_I_Text_1:

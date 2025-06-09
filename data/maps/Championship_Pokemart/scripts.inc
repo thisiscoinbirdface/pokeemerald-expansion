@@ -159,12 +159,12 @@ Champ_Mart_A_Text_0:
 # 14 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Welcome to the Items Corner!\p"
 	.string "We have a wide variety of useful tools\n"
-	.string "to power up your Pokemon!$"
+	.string "to power up your Pokémon!$"
 
 Champ_Mart_B_Text_0:
 # 24 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Welcome to the TM Corner!\p"
-	.string "Give your Pokemon an edge in battle\n"
+	.string "Give your Pokémon an edge in battle\n"
 	.string "with these exclusive TMs!$"
 
 Champ_Mart_C_Text_0:

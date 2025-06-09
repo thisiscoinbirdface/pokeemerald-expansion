@@ -739,7 +739,7 @@ PellucaCity_GameCorner_Tutor_Text_3:
 # 90 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Incredible! So strong...and you're using\n"
 	.string "such unlucky moves. Let me teach your\l"
-	.string "Pokemon how to be luckier.$"
+	.string "Pokémon how to be luckier.$"
 
 PellucaCity_GameCorner_Tutor_Teach_Text_0:
 # 99 "data//maps/PellucaCity_GameCorner/scripts.pory"

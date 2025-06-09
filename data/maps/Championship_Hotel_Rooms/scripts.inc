@@ -432,7 +432,7 @@ Championship_Hotel_Rooms_NPC3_Text_3:
 # 50 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	.string "If you're going up against the best,\n"
 	.string "you'll need the best! I can teach one of\l"
-	.string "your Pokemon a really powerful move.\l"
+	.string "your Pokémon a really powerful move.\l"
 	.string "But I'll only teach one - I can't be\l"
 	.string "biased, you know!$"
 
@@ -440,7 +440,7 @@ Championship_Hotel_Rooms_NPC3_Text_4:
 # 52 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	.string "You will only be able to teach\n"
 	.string "a move once. Make sure you choose\l"
-	.string "both the move and Pokemon carefully!$"
+	.string "both the move and Pokémon carefully!$"
 
 Championship_Hotel_Rooms_NPC3_Text_5:
 # 53 "data//maps/Championship_Hotel_Rooms/scripts.pory"
@@ -577,7 +577,7 @@ Championship_Hotel_Rooms_Kohla_Text_17:
 # 164 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	.string "We're taking a risk admitting this...but\n"
 	.string "the Gym Leaders didn't find all our\l"
-	.string "Ancient Pokemon. We've still got one.\p"
+	.string "Ancient Pokémon. We've still got one.\p"
 	.string "What would you say to using it in the\n"
 	.string "tournament?$"
 
@@ -599,7 +599,7 @@ Championship_Hotel_Rooms_Kohla_Text_20:
 	.string "I don't NEED help!\p"
 	.string "I'm better than {PLAYER}! Do you\n"
 	.string "understand? I can beat {PLAYER} with\l"
-	.string "my own Pokemon!\p"
+	.string "my own Pokémon!\p"
 	.string "Now get out of my room!$"
 
 Championship_Hotel_Rooms_Kohla_Text_21:
