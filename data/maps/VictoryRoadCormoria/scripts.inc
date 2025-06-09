@@ -114,7 +114,7 @@ VR_Trainer_J::
 
 VR_Trainer_A_Text_0:
 # 31 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "You missed the last boat? Too bad - you\n"
+	.string "Headed for Victory Cape? Too bad - you\n"
 	.string "won't be making it further than here!$"
 
 VR_Trainer_A_Text_1:
@@ -124,13 +124,12 @@ VR_Trainer_A_Text_1:
 
 VR_Trainer_A_Text_2:
 # 32 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "I missed the boat and now I need to go\n"
-	.string "through this forest!$"
+	.string "The trainers on this route are some of\n"
+	.string "the toughest!$"
 
 VR_Trainer_B_Text_0:
 # 37 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "You know why I'm on this route instead\n"
-	.string "of on the boat?\p"
+	.string "You know why I'm standing here?\p"
 	.string "To get rid of some of the competition\n"
 	.string "right away!\p"
 	.string "I'm the first member of the Crush Crew\n"
@@ -147,8 +146,7 @@ VR_Trainer_B_Text_2:
 VR_Trainer_C_Text_0:
 # 43 "data//maps/VictoryRoadCormoria/scripts.pory"
 	.string "My Pokemon and I have trained all over\n"
-	.string "Cormoria.\p"
-	.string "You're not beating us!$"
+	.string "Cormoria. You're not beating us!$"
 
 VR_Trainer_C_Text_1:
 # 43 "data//maps/VictoryRoadCormoria/scripts.pory"
