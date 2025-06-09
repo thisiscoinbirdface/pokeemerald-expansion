@@ -208,61 +208,63 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 
-#define MAPSEC_CARABRUE_TOWN                0xD5
-#define MAPSEC_ROUTE1                       0xD6
-#define MAPSEC_FENNILAHL_TOWN               0xD7
-#define MAPSEC_ROUTE2                       0xD8
-#define MAPSEC_ROUTE3                       0xD9
-#define MAPSEC_GASTREE_CITY                 0xDA
-#define MAPSEC_ROUTE4                       0xDB
-#define MAPSEC_CERAM_BASE_CAMP              0xDC
-#define MAPSEC_MT_CERAM                     0xDD
-#define MAPSEC_ANCIENT_CERAM                0xDE
-#define MAPSEC_GALECREST_CITY               0xDF
+//MY MAPS
+#define MAPSEC_CARABRUE_TOWN                 0xD5
+#define MAPSEC_FENNILAHL_TOWN                0xD6
+#define MAPSEC_GASTREE_CITY                  0xD7
+#define MAPSEC_CERAM_BASE_CAMP               0xD8
+#define MAPSEC_GALECREST_CITY                0xD9
+#define MAPSEC_SILVERSUN_CITY                0xDA
+#define MAPSEC_PELLUCA_CITY                  0xDB
+#define MAPSEC_MIRROH_BASE_CAMP              0xDC
+#define MAPSEC_WINTERLILY_HOLLOW             0xDD
+#define MAPSEC_RIVETSHORE_CITY               0xDE
+#define MAPSEC_VICTORY_CAPE                  0xDF
 
-#define MAPSEC_ROUTE5                       0xE0
-#define MAPSEC_VILETHORN_WOODS              0xE1
-#define MAPSEC_SILVERSUN_CITY               0xE2
-#define MAPSEC_HOYA_RIVER_NORTH             0xE3
-#define MAPSEC_ROUTE6                       0xE4
-#define MAPSEC_RANGER_INSTITUTE             0xE5
-#define MAPSEC_HOYA_RIVER_SOUTH             0xE6
-#define MAPSEC_PELLUCA_CITY                 0xE7
-#define MAPSEC_MIRROH_BASE_CAMP             0xE8
-#define MAPSEC_MT_MIRROH_EXTERIOR           0xE9
-#define MAPSEC_WINTERLILY_HOLLOW            0xEA
-#define MAPSEC_LILY_POND                    0xEB
-#define MAPSEC_IVY_RIVER                    0xEC
-#define MAPSEC_MIRROH_PEAK                  0xED
-#define MAPSEC_MT_MIRROH_INTERIOR           0xEE
-#define MAPSEC_VINE_CAVERNS                 0xF0
-#define MAPSEC_FENNILAHL_TUNNEL             0xF1
-#define MAPSEC_ROUTE3_UNDERPASS             0xF2
-#define MAPSEC_RIVETSHORE_CITY              0xF3
-#define MAPSEC_SSELEGANT                    0xF4
-#define MAPSEC_ROUTE8                       0xF5
-#define MAPSEC_CERAM_PEAK                   0xF6
-#define MAPSEC_UNCHARTED_ISLAND             0xF7
-#define MAPSEC_PELLUCA_CABLE_CAR            0xF8
-#define MAPSEC_RANGER_INSTITUTE_IVY         0xF9
-#define MAPSEC_RANGER_INSTITUTE_RIVETSHORE  0xFA
-#define MAPSEC_ROUTE7                       0xFB
+#define MAPSEC_ROUTE1                        0xE0
+#define MAPSEC_ROUTE2                        0xE1
+#define MAPSEC_ROUTE3                        0xE2
+#define MAPSEC_ROUTE4                        0xE3
+#define MAPSEC_MT_CERAM                      0xE4
+#define MAPSEC_ANCIENT_CERAM                 0xE5
+#define MAPSEC_ROUTE5                        0xE6
+#define MAPSEC_VILETHORN_WOODS               0xE7
+#define MAPSEC_HOYA_RIVER_NORTH              0xE8
+#define MAPSEC_ROUTE6                        0xE9
+#define MAPSEC_RANGER_INSTITUTE              0xEA
+#define MAPSEC_HOYA_RIVER_SOUTH              0xEB
+#define MAPSEC_MT_MIRROH_EXTERIOR            0xEC
+#define MAPSEC_LILY_POND                     0xED
+#define MAPSEC_IVY_RIVER                     0xEE
+#define MAPSEC_MIRROH_PEAK                   0xEF
+#define MAPSEC_MT_MIRROH_INTERIOR            0xF0
+#define MAPSEC_VINE_CAVERNS                  0xF1
+#define MAPSEC_FENNILAHL_TUNNEL              0xF2
+#define MAPSEC_ROUTE3_UNDERPASS              0xF3
+#define MAPSEC_SSELEGANT                     0xF4
+#define MAPSEC_ROUTE8                        0xF5
+#define MAPSEC_CERAM_PEAK                    0xF6
+#define MAPSEC_UNCHARTED_ISLAND              0xF7
+#define MAPSEC_PELLUCA_CABLE_CAR             0xF8
+#define MAPSEC_RANGER_INSTITUTE_IVY          0xF9
+#define MAPSEC_RANGER_INSTITUTE_RIVETSHORE   0xFA
+#define MAPSEC_ROUTE7                        0xFB
 
+//maps with some unordered defines...
 #define MAPSEC_IVY_RIVER_MAIN                0x8F
 #define MAPSEC_IVY_RIVER_UNDERPASS           0x90
 #define MAPSEC_LILY_GROTTO                   0x91
 #define MAPSEC_ANCIENT_CORMORIA_FINAL_ISLAND 0x92
-#define MAPSEC_VICTORY_CAPE                  0x93
 #define MAPSEC_VICTORY_ROAD_CORMORIA         0x94
 #define MAPSEC_CHAMPIONSHIP_CORRIDOR         0x95
 #define MAPSEC_CHAMPIONSHIP                  0x96 //this is unused
 
 
-#define MAPSEC_NONE                         0xFC
+#define MAPSEC_NONE                          0xFC
 
-#define METLOC_SPECIAL_EGG                  0xFD
-#define METLOC_IN_GAME_TRADE                0xFE
-#define METLOC_FATEFUL_ENCOUNTER            0xFF
+#define METLOC_SPECIAL_EGG                   0xFD
+#define METLOC_IN_GAME_TRADE                 0xFE
+#define METLOC_FATEFUL_ENCOUNTER             0xFF
 
 #define KANTO_MAPSEC_START  MAPSEC_PALLET_TOWN
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
