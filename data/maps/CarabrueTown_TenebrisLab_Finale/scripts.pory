@@ -48,12 +48,17 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_DET1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Detective", format("We're only doing our duty, Professor.\pWe also have people to thank...\pKohla of course, although he's not here now, was instrumental in chasing Team Somber across Cormoria. He's got the makings of a truly detective!\pThe Gym Leaders are the ones who actually took Team Somber apart.\pInger and Ariana are with Gloria in Silversun City right now, clearing out their headquarters."))
+    msgbox_delay("Detective", format("We're only doing our duty, Professor.\pWe also have people to thank...\pKohla of course, although he's not here now, was instrumental in chasing Team Somber across Cormoria. He's got the makings of a truly detective!\pThe Gym Leaders are the ones who actually took Team Somber apart.\pThose two admins - Moxie and Melea - got away, but Inger and Ariana are with Gloria in Silversun City right now, clearing out their headquarters and retrieving all the Ancient Pokémon."))
+
+    delay(16)
+    msgbox_delay("Tenebris", format("Once you return them to me, I'll send them back to the past along with the Ancient Terror."))
+    
+    msgbox_delay("Detective", format("Definitely."))
 
     applymovement(LOCALID_TENE, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("So it was a team effort, then?\nNo doubt you all came through."))
+    msgbox_delay("Tenebris", format("So it was a team effort then?"))
 
     applymovement(LOCALID_DET1, moves(jump_in_place_right))
     waitmovement(0)
@@ -64,7 +69,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_DET2, moves(face_down))
     applymovement(LOCALID_TENE, moves(face_down))
     waitmovement(0)
-    delay(16)
+    delay(32)
     msgbox_delay("Detective", format("...and you, {PLAYER}.")) 
 
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
@@ -95,7 +100,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     msgbox_delay("Tenebris", format("Don't worry - we can start your research work when you're back.\p{PLAYER}, of all the trainers I've known, few have the caliber and drive that you do.\pI know you'll do well at the tournament!"))
 
     delay(16)
-    msgbox_delay("Detective", format("...\pWell?\pWhat are you waiting for?\pHead to Route 2 and catch a boat to Victory Cape - ASAP!")) 
+    msgbox_delay("Detective", format("...\pWell?\pWhat are you waiting for?\pHead to Route 2 and make your way to Victory Cape - ASAP!")) 
 
     //setflags
     setflag(FLAG_POST_FINALE_CUTSCENE)
