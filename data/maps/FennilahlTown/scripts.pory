@@ -4,7 +4,11 @@ raw`
     .set LOCALID_BUDEW, 7
 
 `
-mapscripts FennilahlTown_MapScripts {}
+mapscripts FennilahlTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_FENNILAHL_TOWN)
+    }
+}
 
 script FennilahlTown_EventScript_MartEmployeeRoadBlock {
     msgbox(format("I'm the chauffeur for the detectives in charge of the Tenebris disappearance. They're in Carabrue Town right now speaking to the lab staff."), MSGBOX_NPC)

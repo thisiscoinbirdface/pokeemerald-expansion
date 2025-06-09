@@ -2002,50 +2002,87 @@ Common_EventScript_Tauros_Route6_8:
 	goto Common_EventScript_Tauros_Route6_1
 
 
-Common_EventScript_Tauros_GotoIvy::
+Common_EventScript_Tauros_Rivetshore::
 # 1237 "data//maps/TempCopyMap/scripts.pory"
+	goto_if_set FLAG_RANGER_TAUROS_USE, Common_EventScript_Tauros_Rivetshore_2
+# 1245 "data//maps/TempCopyMap/scripts.pory"
+	msgbox Common_EventScript_Tauros_IvyRiver_Text_3, MSGBOX_NPC
+Common_EventScript_Tauros_Rivetshore_1:
+# 1247 "data//maps/TempCopyMap/scripts.pory"
 	release
+	end
+
+Common_EventScript_Tauros_Rivetshore_2:
 # 1238 "data//maps/TempCopyMap/scripts.pory"
-	hidefollower
+	message Common_EventScript_Tauros_IvyRiver_Text_0
 # 1239 "data//maps/TempCopyMap/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+	waitmessage
 # 1240 "data//maps/TempCopyMap/scripts.pory"
-	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 1241 "data//maps/TempCopyMap/scripts.pory"
-	delay 30
+	dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_IvyRiver_Text_1, Common_EventScript_Tauros_IvyRiver_Text_2
 # 1242 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_Tauros_Rivetshore_6
+Common_EventScript_Tauros_Rivetshore_5:
+# 1243 "data//maps/TempCopyMap/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Common_EventScript_Tauros_Rivetshore_8
+	goto Common_EventScript_Tauros_Rivetshore_1
+
+Common_EventScript_Tauros_Rivetshore_6:
+# 1242 "data//maps/TempCopyMap/scripts.pory"
+	goto Common_EventScript_Tauros_GotoPelluca
+	goto Common_EventScript_Tauros_Rivetshore_5
+
+Common_EventScript_Tauros_Rivetshore_8:
+# 1243 "data//maps/TempCopyMap/scripts.pory"
+	goto Common_EventScript_Tauros_GotoRoute6
+	goto Common_EventScript_Tauros_Rivetshore_1
+
+
+Common_EventScript_Tauros_GotoIvy::
+# 1252 "data//maps/TempCopyMap/scripts.pory"
+	release
+# 1253 "data//maps/TempCopyMap/scripts.pory"
+	hidefollower
+# 1254 "data//maps/TempCopyMap/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
+# 1255 "data//maps/TempCopyMap/scripts.pory"
+	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
+# 1256 "data//maps/TempCopyMap/scripts.pory"
+	delay 30
+# 1257 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_IVY_RIVER, 19, 69
 	return
 
 
 Common_EventScript_Tauros_GotoPelluca::
-# 1246 "data//maps/TempCopyMap/scripts.pory"
+# 1261 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 1248 "data//maps/TempCopyMap/scripts.pory"
+# 1263 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 1249 "data//maps/TempCopyMap/scripts.pory"
+# 1264 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 1250 "data//maps/TempCopyMap/scripts.pory"
+# 1265 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 1251 "data//maps/TempCopyMap/scripts.pory"
+# 1266 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 1252 "data//maps/TempCopyMap/scripts.pory"
+# 1267 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_PELLUCA_CITY, 10, 33
 	return
 
 
 Common_EventScript_Tauros_GotoRoute6::
-# 1256 "data//maps/TempCopyMap/scripts.pory"
+# 1271 "data//maps/TempCopyMap/scripts.pory"
 	release
-# 1258 "data//maps/TempCopyMap/scripts.pory"
+# 1273 "data//maps/TempCopyMap/scripts.pory"
 	hidefollower
-# 1259 "data//maps/TempCopyMap/scripts.pory"
+# 1274 "data//maps/TempCopyMap/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_EventScript_DrifblimTravels_ToSilversun_Movement_0
-# 1260 "data//maps/TempCopyMap/scripts.pory"
+# 1275 "data//maps/TempCopyMap/scripts.pory"
 	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
-# 1261 "data//maps/TempCopyMap/scripts.pory"
+# 1276 "data//maps/TempCopyMap/scripts.pory"
 	delay 30
-# 1262 "data//maps/TempCopyMap/scripts.pory"
+# 1277 "data//maps/TempCopyMap/scripts.pory"
 	warp MAP_ROUTE6, 52, 116
 	return
 

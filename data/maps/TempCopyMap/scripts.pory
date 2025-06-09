@@ -1233,6 +1233,21 @@ script Common_EventScript_Tauros_Route6{
     end
 }
 
+script Common_EventScript_Tauros_Rivetshore{
+    if (flag(FLAG_RANGER_TAUROS_USE)){
+        message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
+        waitmessage
+        dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+
+        if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}   
+    }  else {
+        msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
+    }
+    release
+    end
+}
+
 script Common_EventScript_Tauros_GotoIvy{
     release
     hidefollower
