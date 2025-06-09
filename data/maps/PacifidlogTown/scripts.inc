@@ -4,7 +4,7 @@ PacifidlogTown_MapScripts::
 	.byte 0
 
 PacifidlogTown_OnTransition:
-	setflag FLAG_VISITED_PACIFIDLOG_TOWN
+	setflag FLAG_VISITED_WINTERLILY_HOLLOW
 	end
 
 PacifidlogTown_OnResume:
