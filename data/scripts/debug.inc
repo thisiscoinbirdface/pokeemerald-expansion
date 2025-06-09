@@ -153,8 +153,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	setflag FLAG_VISITED_FENNILAHL_TOWN
-	setflag FLAG_VISITED_GASTREE_CITY
+	special StartFly
 	release
 	end
 

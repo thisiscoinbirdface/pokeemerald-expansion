@@ -574,3 +574,4 @@ gSpecials::
     def_special StartMining
 	def_special SetMonPokeball
 	def_special StartCredits
+	def_special StartFly

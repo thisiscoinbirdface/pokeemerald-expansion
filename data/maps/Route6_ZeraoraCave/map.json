@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE6_ZERAORA_CAVE",
   "name": "Route6_ZeraoraCave",
   "layout": "LAYOUT_ROUTE6_ZERAORA_CAVE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_MT_CHIMNEY",
   "region_map_section": "MAPSEC_ROUTE6",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZERAORA)",
-      "x": 7,
-      "y": 5,
+      "x": 12,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -30,8 +30,8 @@
   ],
   "warp_events": [
     {
-      "x": 7,
-      "y": 11,
+      "x": 12,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE6",
       "dest_warp_id": "1"

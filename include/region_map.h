@@ -121,6 +121,10 @@ void SetRegionMapDataForZoom(void);
 u32 FilterFlyDestination(struct RegionMap* regionMap);
 void SetFlyDestination(struct RegionMap* regionMap);
 
+//fly special
+void StartFly(void);
+
+
 extern const struct RegionMapLocation gRegionMapEntries[];
 
 #endif //GUARD_REGION_MAP_H
