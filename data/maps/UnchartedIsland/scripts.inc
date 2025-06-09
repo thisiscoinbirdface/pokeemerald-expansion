@@ -368,7 +368,7 @@ UnchartedIsland_Finale_Battle::
 # 233 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
 # 234 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_10, UnchartedIsland_Finale_Battle_Text_0
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Finale_Battle_Text_0
 # 236 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Cutscene_Movement_8
 # 237 "data//maps/UnchartedIsland/scripts.pory"
@@ -528,216 +528,218 @@ UnchartedIsland_Finale_Ending::
 # 337 "data//maps/UnchartedIsland/scripts.pory"
 	playse SE_M_DIVE
 # 338 "data//maps/UnchartedIsland/scripts.pory"
+	waitse
+# 339 "data//maps/UnchartedIsland/scripts.pory"
 	delay 30
-# 340 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8004, 2
 # 341 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8005, 2
+	setvar VAR_0x8004, 2
 # 342 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8006, 12
+	setvar VAR_0x8005, 2
 # 343 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8007, 5
+	setvar VAR_0x8006, 12
 # 344 "data//maps/UnchartedIsland/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 5
 # 345 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_RUE_2, UnchartedIsland_Finale_Cutscene_Movement_5
+	special ShakeCamera
 # 346 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_RUE_2, UnchartedIsland_Finale_Cutscene_Movement_5
+# 347 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_10, UnchartedIsland_Finale_Ending_Text_4
-# 349 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 5
 # 350 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 5
+# 351 "data//maps/UnchartedIsland/scripts.pory"
 	setflag FLAG_FINALE_DONE
-# 352 "data//maps/UnchartedIsland/scripts.pory"
+# 353 "data//maps/UnchartedIsland/scripts.pory"
 	warp MAP_CARABRUE_TOWN_TENEBRIS_LAB_FINALE, 5, 4
-# 355 "data//maps/UnchartedIsland/scripts.pory"
+# 356 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
 
 UnchartedIsland_Finale_Skip::
-# 361 "data//maps/UnchartedIsland/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 362 "data//maps/UnchartedIsland/scripts.pory"
-	showobjectat OBJ_EVENT_ID_PLAYER, 0
+	fadescreen FADE_TO_BLACK
 # 363 "data//maps/UnchartedIsland/scripts.pory"
-	addobject LOCALID_TENE_2
+	showobjectat OBJ_EVENT_ID_PLAYER, 0
 # 364 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE_2, UnchartedIsland_Finale_Skip_Movement_0
+	addobject LOCALID_TENE_2
 # 365 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_2, UnchartedIsland_Finale_Ending_Movement_5
-# 366 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_2, UnchartedIsland_Finale_Ending_Movement_5
-# 367 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_RUE_2, UnchartedIsland_Finale_Ending_Movement_5
-# 368 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 369 "data//maps/UnchartedIsland/scripts.pory"
-	delay 2
-# 370 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_TENE_2, UnchartedIsland_Finale_Skip_Movement_0
-# 371 "data//maps/UnchartedIsland/scripts.pory"
+# 366 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_2, UnchartedIsland_Finale_Ending_Movement_5
+# 367 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_2, UnchartedIsland_Finale_Ending_Movement_5
+# 368 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_RUE_2, UnchartedIsland_Finale_Ending_Movement_5
+# 369 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 370 "data//maps/UnchartedIsland/scripts.pory"
 	delay 2
+# 371 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_TENE_2, UnchartedIsland_Finale_Skip_Movement_0
 # 372 "data//maps/UnchartedIsland/scripts.pory"
+	delay 2
+# 373 "data//maps/UnchartedIsland/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 374 "data//maps/UnchartedIsland/scripts.pory"
+# 375 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Finale_Battle
 	return
 
 
 UnchartedIsland_Breech::
-# 380 "data//maps/UnchartedIsland/scripts.pory"
+# 381 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Ending_Text_7, UnchartedIsland_Breech_Text_0
 	return
 
 
 UnchartedIsland_Clefable::
-# 383 "data//maps/UnchartedIsland/scripts.pory"
-	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
 # 384 "data//maps/UnchartedIsland/scripts.pory"
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+# 385 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Clefable_Text_0, UnchartedIsland_Finale_Ending_Text_10
 	end
 
 
 UnchartedIsland_Leader_Caught_A::
-# 392 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 393 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_UNCHARTED_ISLAND, 6, 34
+	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 394 "data//maps/UnchartedIsland/scripts.pory"
+	warp MAP_UNCHARTED_ISLAND, 6, 34
+# 395 "data//maps/UnchartedIsland/scripts.pory"
 	delay 60
 	return
 
 
 UnchartedIsland_Leader_Caught_B::
-# 398 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 399 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_UNCHARTED_ISLAND, 37, 24
+	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 400 "data//maps/UnchartedIsland/scripts.pory"
+	warp MAP_UNCHARTED_ISLAND, 37, 24
+# 401 "data//maps/UnchartedIsland/scripts.pory"
 	delay 60
 	return
 
 
 UnchartedIsland_Leader_Caught_C::
-# 405 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 406 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_UNCHARTED_ISLAND, 53, 41
+	msgbox UnchartedIsland_Leader_Caught_A_Text_0
 # 407 "data//maps/UnchartedIsland/scripts.pory"
+	warp MAP_UNCHARTED_ISLAND, 53, 41
+# 408 "data//maps/UnchartedIsland/scripts.pory"
 	delay 60
 	return
 
 
 UnchartedIsland_Inger::
-# 411 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Inger_Text_0
 # 412 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Inger_Text_0
+# 413 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_A
 	return
 
 
 UnchartedIsland_Ariana::
-# 415 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Ariana_Text_0
 # 416 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Ariana_Text_0
+# 417 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_A
 	return
 
 
 UnchartedIsland_Gloria::
-# 419 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Gloria_Text_0
 # 420 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Gloria_Text_0
+# 421 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_A
 	return
 
 
 UnchartedIsland_Carona::
-# 423 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Carona_Text_0
 # 424 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Carona_Text_0
+# 425 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_B
 	return
 
 
 UnchartedIsland_Jania::
-# 430 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Jania_Text_0
 # 431 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Jania_Text_0
+# 432 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_C
 	return
 
 
 UnchartedIsland_Raazi::
-# 434 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Raazi_Text_0
 # 435 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Raazi_Text_0
+# 436 "data//maps/UnchartedIsland/scripts.pory"
 	call UnchartedIsland_Leader_Caught_C
 	return
 
 
 UnchartedIsland_Grunt_A::
-# 447 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_A, UnchartedIsland_Grunt_A_Text_0, UnchartedIsland_Grunt_A_Text_1
 # 448 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Grunt_A_Text_2
+	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_A, UnchartedIsland_Grunt_A_Text_0, UnchartedIsland_Grunt_A_Text_1
 # 449 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox UnchartedIsland_Grunt_A_Text_2
+# 450 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	return
 
 
 UnchartedIsland_Grunt_B::
-# 452 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_B, UnchartedIsland_Grunt_B_Text_0, UnchartedIsland_Grunt_B_Text_1
 # 453 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Grunt_B_Text_2
+	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_B, UnchartedIsland_Grunt_B_Text_0, UnchartedIsland_Grunt_B_Text_1
 # 454 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox UnchartedIsland_Grunt_B_Text_2
+# 455 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	return
 
 
 UnchartedIsland_Grunt_C::
-# 457 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_C, UnchartedIsland_Grunt_C_Text_0, UnchartedIsland_Grunt_C_Text_1
 # 458 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Grunt_B_Text_2
+	trainerbattle_single TRAINER_UNCHARTED_ISLAND_GRUNT_C, UnchartedIsland_Grunt_C_Text_0, UnchartedIsland_Grunt_C_Text_1
 # 459 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox UnchartedIsland_Grunt_B_Text_2
+# 460 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	return
 
 
 UnchartedIsland_Moxie_Viewpoint_Trigger::
-# 474 "data//maps/UnchartedIsland/scripts.pory"
+# 475 "data//maps/UnchartedIsland/scripts.pory"
 	goto_if_set FLAG_ISLAND_MOXIE_VIEWPOINT, UnchartedIsland_Moxie_Viewpoint_Trigger_2
-# 476 "data//maps/UnchartedIsland/scripts.pory"
+# 477 "data//maps/UnchartedIsland/scripts.pory"
 	lockall
-# 478 "data//maps/UnchartedIsland/scripts.pory"
-	special SpawnCameraObject
 # 479 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Finale_Cutscene_Movement_6
+	special SpawnCameraObject
 # 480 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Finale_Cutscene_Movement_6
+# 481 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 483 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_VIEWPOINT, UnchartedIsland_Finale_Battle_Movement_0
 # 484 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MOXIE_VIEWPOINT, UnchartedIsland_Finale_Battle_Movement_0
 # 485 "data//maps/UnchartedIsland/scripts.pory"
-	delay 24
+	waitmovement 0
 # 486 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_VIEWPOINT, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_0
+	delay 24
 # 487 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MOXIE_VIEWPOINT, UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_0
 # 488 "data//maps/UnchartedIsland/scripts.pory"
-	removeobject LOCALID_MOXIE_VIEWPOINT
-# 490 "data//maps/UnchartedIsland/scripts.pory"
-	setflag FLAG_ISLAND_MOXIE_VIEWPOINT
-# 492 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Finale_Ending_Movement_6
-# 493 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
+# 489 "data//maps/UnchartedIsland/scripts.pory"
+	removeobject LOCALID_MOXIE_VIEWPOINT
+# 491 "data//maps/UnchartedIsland/scripts.pory"
+	setflag FLAG_ISLAND_MOXIE_VIEWPOINT
+# 493 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Finale_Ending_Movement_6
 # 494 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 495 "data//maps/UnchartedIsland/scripts.pory"
 	special RemoveCameraObject
-# 496 "data//maps/UnchartedIsland/scripts.pory"
+# 497 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
@@ -746,15 +748,15 @@ UnchartedIsland_Moxie_Viewpoint_Trigger_2:
 
 
 UnchartedIsland_Moxie_Trigger0::
-# 503 "data//maps/UnchartedIsland/scripts.pory"
-	goto_if_set FLAG_ISLAND_MOXIE_MELEA_BATTLE, UnchartedIsland_Moxie_Trigger0_2
 # 504 "data//maps/UnchartedIsland/scripts.pory"
-	lockall
+	goto_if_set FLAG_ISLAND_MOXIE_MELEA_BATTLE, UnchartedIsland_Moxie_Trigger0_2
 # 505 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger0_Movement_0
+	lockall
 # 506 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger0_Movement_0
 # 507 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 508 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Moxie_Melea_Fight
 	return
 
@@ -763,15 +765,15 @@ UnchartedIsland_Moxie_Trigger0_2:
 
 
 UnchartedIsland_Moxie_Trigger1::
-# 510 "data//maps/UnchartedIsland/scripts.pory"
-	goto_if_set FLAG_ISLAND_MOXIE_MELEA_BATTLE, UnchartedIsland_Moxie_Trigger1_2
 # 511 "data//maps/UnchartedIsland/scripts.pory"
-	lockall
+	goto_if_set FLAG_ISLAND_MOXIE_MELEA_BATTLE, UnchartedIsland_Moxie_Trigger1_2
 # 512 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger1_Movement_0
+	lockall
 # 513 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Trigger1_Movement_0
 # 514 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 515 "data//maps/UnchartedIsland/scripts.pory"
 	goto UnchartedIsland_Moxie_Melea_Fight
 	return
 
@@ -780,207 +782,207 @@ UnchartedIsland_Moxie_Trigger1_2:
 
 
 UnchartedIsland_Moxie_Melea_Fight::
-# 518 "data//maps/UnchartedIsland/scripts.pory"
+# 519 "data//maps/UnchartedIsland/scripts.pory"
 	goto_if_set FLAG_ISLAND_MOXIE_MELEA_BATTLE, UnchartedIsland_Moxie_Melea_Fight_2
-# 520 "data//maps/UnchartedIsland/scripts.pory"
+# 521 "data//maps/UnchartedIsland/scripts.pory"
 	clearflag FLAG_SYS_OW_FOLLOWERS_DISABLED
-# 522 "data//maps/UnchartedIsland/scripts.pory"
+# 523 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_0
-# 524 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 525 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 526 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 527 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 528 "data//maps/UnchartedIsland/scripts.pory"
+# 529 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_1
-# 531 "data//maps/UnchartedIsland/scripts.pory"
-	addobject LOCALID_MELEA_1
 # 532 "data//maps/UnchartedIsland/scripts.pory"
-	setobjectxy LOCALID_MELEA_1, 60, 41
+	addobject LOCALID_MELEA_1
 # 533 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
+	setobjectxy LOCALID_MELEA_1, 60, 41
 # 534 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_2
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 535 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_2
+# 536 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 537 "data//maps/UnchartedIsland/scripts.pory"
+# 538 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_2
-# 539 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
 # 540 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
 # 541 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 542 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 543 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 544 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_3
-# 545 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 546 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Finale_Cutscene_Movement_5
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 547 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Finale_Cutscene_Movement_5
 # 548 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 549 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 550 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_4
-# 551 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Finale_Ending_Movement_5
 # 552 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Ending_Movement_5
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Finale_Ending_Movement_5
 # 553 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Ending_Movement_5
 # 554 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 555 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 556 "data//maps/UnchartedIsland/scripts.pory"
-	special SpawnCameraObject
 # 557 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Melea_Fight_Movement_4
+	special SpawnCameraObject
 # 558 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Melea_Fight_Movement_4
+# 559 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 560 "data//maps/UnchartedIsland/scripts.pory"
+# 561 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_5
-# 562 "data//maps/UnchartedIsland/scripts.pory"
+# 563 "data//maps/UnchartedIsland/scripts.pory"
 	setobjectxyperm LOCALID_MELEA_1, 67, 38
-# 564 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Melea_Fight_Movement_5
 # 565 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Moxie_Melea_Fight_Movement_5
 # 566 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 567 "data//maps/UnchartedIsland/scripts.pory"
 	special RemoveCameraObject
-# 568 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 569 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_1
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 570 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_6
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_1
 # 571 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_6
 # 572 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 573 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 574 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_6
-# 576 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 577 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 578 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
 # 579 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 580 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 581 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_7
-# 583 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_7
 # 584 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_7
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_7
 # 585 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_7
+# 586 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_7
-# 587 "data//maps/UnchartedIsland/scripts.pory"
-	addobject LOCALID_KOHLA_1
 # 588 "data//maps/UnchartedIsland/scripts.pory"
-	setobjectxy LOCALID_KOHLA_1, 60, 41
+	addobject LOCALID_KOHLA_1
 # 589 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_KOHLA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_8
+	setobjectxy LOCALID_KOHLA_1, 60, 41
 # 590 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_KOHLA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_8
 # 591 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 592 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 593 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 594 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 595 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 596 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_8
+	delay 16
 # 597 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_8
 # 598 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
 # 599 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 600 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_9
+	delay 16
 # 601 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_9
+# 602 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 603 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_0, UnchartedIsland_Moxie_Melea_Fight_Text_10
 # 604 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_0, UnchartedIsland_Moxie_Melea_Fight_Text_10
+# 605 "data//maps/UnchartedIsland/scripts.pory"
 	delay 24
-# 606 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_KOHLA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_9
 # 607 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_KOHLA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_9
 # 608 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 609 "data//maps/UnchartedIsland/scripts.pory"
 	removeobject LOCALID_KOHLA_1
-# 610 "data//maps/UnchartedIsland/scripts.pory"
+# 611 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_10
-# 612 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_10
 # 613 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
-# 614 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 615 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 616 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_11
-# 618 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
-# 619 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
-# 620 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 621 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 622 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_12
-# 625 "data//maps/UnchartedIsland/scripts.pory"
-	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_MOXIE, UnchartedIsland_Moxie_Melea_Fight_Text_13
-# 627 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
-# 628 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
-# 629 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 630 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 631 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_14
-# 633 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_10
-# 634 "data//maps/UnchartedIsland/scripts.pory"
+# 614 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
-# 635 "data//maps/UnchartedIsland/scripts.pory"
+# 615 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 636 "data//maps/UnchartedIsland/scripts.pory"
+# 616 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
+# 617 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_11
+# 619 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
+# 620 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
+# 621 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 622 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 623 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_12
+# 626 "data//maps/UnchartedIsland/scripts.pory"
+	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_MOXIE, UnchartedIsland_Moxie_Melea_Fight_Text_13
+# 628 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
+# 629 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
+# 630 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 631 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 632 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_25, UnchartedIsland_Moxie_Melea_Fight_Text_14
+# 634 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_10
+# 635 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_1
+# 636 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
 # 637 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 638 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_15
-# 639 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_11
 # 640 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MOXIE_1, UnchartedIsland_Moxie_Melea_Fight_Movement_11
+# 641 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 643 "data//maps/UnchartedIsland/scripts.pory"
+# 644 "data//maps/UnchartedIsland/scripts.pory"
 	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_MELEA, UnchartedIsland_Moxie_Melea_Fight_Text_16
-# 645 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_17
 # 646 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_12
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Moxie_Melea_Fight_Text_17
 # 647 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_12
+# 648 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 650 "data//maps/UnchartedIsland/scripts.pory"
-	setobjectxyperm LOCALID_MELEA_1, 79, 42
 # 651 "data//maps/UnchartedIsland/scripts.pory"
+	setobjectxyperm LOCALID_MELEA_1, 79, 42
+# 652 "data//maps/UnchartedIsland/scripts.pory"
 	setobjectxy LOCALID_MELEA_1, 79, 42
-# 653 "data//maps/UnchartedIsland/scripts.pory"
+# 654 "data//maps/UnchartedIsland/scripts.pory"
 	removeobject LOCALID_MOXIE_1
-# 655 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 1
 # 656 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 1
+# 657 "data//maps/UnchartedIsland/scripts.pory"
 	setflag FLAG_ISLAND_MOXIE_MELEA_BATTLE
 	end
 
@@ -989,205 +991,205 @@ UnchartedIsland_Moxie_Melea_Fight_2:
 
 
 UnchartedIsland_Melea_Destroy_Trigger::
-# 661 "data//maps/UnchartedIsland/scripts.pory"
+# 662 "data//maps/UnchartedIsland/scripts.pory"
 	compare VAR_UNCHARTED_ISLAND_CUTSCENES, 1
 	goto_if_eq UnchartedIsland_Melea_Destroy_Trigger_2
 	end
 
 UnchartedIsland_Melea_Destroy_Trigger_2:
-# 663 "data//maps/UnchartedIsland/scripts.pory"
+# 664 "data//maps/UnchartedIsland/scripts.pory"
 	lockall
-# 666 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
 # 667 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Moxie_Melea_Fight_Movement_3
+# 668 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 669 "data//maps/UnchartedIsland/scripts.pory"
-	special SpawnCameraObject
 # 670 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Melea_Destroy_Trigger_Movement_0
-# 671 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 672 "data//maps/UnchartedIsland/scripts.pory"
-	special RemoveCameraObject
-# 674 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Finale_Cutscene_Movement_1
-# 675 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Melea_Destroy_Trigger_Text_0
-# 677 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
-# 678 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Melea_Destroy_Trigger_Text_1
-# 680 "data//maps/UnchartedIsland/scripts.pory"
-	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_NORMAL
-# 683 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8004, 2
-# 684 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8005, 2
-# 685 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8006, 30
-# 686 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_0x8007, 5
-# 687 "data//maps/UnchartedIsland/scripts.pory"
-	special ShakeCamera
-# 689 "data//maps/UnchartedIsland/scripts.pory"
 	special SpawnCameraObject
-# 690 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Melea_Destroy_Trigger_Movement_1
-# 691 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Melea_Destroy_Trigger_Movement_0
+# 672 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 692 "data//maps/UnchartedIsland/scripts.pory"
+# 673 "data//maps/UnchartedIsland/scripts.pory"
 	special RemoveCameraObject
-# 695 "data//maps/UnchartedIsland/scripts.pory"
-	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 675 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Finale_Cutscene_Movement_1
+# 676 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Melea_Destroy_Trigger_Text_0
+# 678 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_MELEA_1, UnchartedIsland_Moxie_Melea_Fight_Movement_0
+# 679 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_2, UnchartedIsland_Melea_Destroy_Trigger_Text_1
+# 681 "data//maps/UnchartedIsland/scripts.pory"
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_NORMAL
+# 684 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_0x8004, 2
+# 685 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_0x8005, 2
+# 686 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_0x8006, 30
+# 687 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_0x8007, 5
+# 688 "data//maps/UnchartedIsland/scripts.pory"
+	special ShakeCamera
+# 690 "data//maps/UnchartedIsland/scripts.pory"
+	special SpawnCameraObject
+# 691 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Melea_Destroy_Trigger_Movement_1
+# 692 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 693 "data//maps/UnchartedIsland/scripts.pory"
+	special RemoveCameraObject
 # 696 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 2
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
 # 697 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 2
+# 698 "data//maps/UnchartedIsland/scripts.pory"
 	warp MAP_UNCHARTED_ISLAND, VAR_TEMP_2, VAR_TEMP_3
-# 699 "data//maps/UnchartedIsland/scripts.pory"
+# 700 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
 
 UnchartedIsland_Tenebris::
-# 707 "data//maps/UnchartedIsland/scripts.pory"
+# 708 "data//maps/UnchartedIsland/scripts.pory"
 	compare VAR_UNCHARTED_ISLAND_CUTSCENES, 2
 	goto_if_eq UnchartedIsland_Tenebris_1
 	return
 
 UnchartedIsland_Tenebris_1:
-# 708 "data//maps/UnchartedIsland/scripts.pory"
-	lockall
 # 709 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_0
+	lockall
 # 710 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_0
 # 711 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 712 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 713 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Tenebris_Text_0, UnchartedIsland_Tenebris_Text_1
-# 714 "data//maps/UnchartedIsland/scripts.pory"
-	special SpawnCameraObject
 # 715 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Tenebris_Movement_1
+	special SpawnCameraObject
 # 716 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Tenebris_Movement_1
+# 717 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 719 "data//maps/UnchartedIsland/scripts.pory"
-	setobjectxyperm LOCALID_TENE, 67, 45
 # 720 "data//maps/UnchartedIsland/scripts.pory"
-	addobject LOCALID_TENE
+	setobjectxyperm LOCALID_TENE, 67, 45
 # 721 "data//maps/UnchartedIsland/scripts.pory"
+	addobject LOCALID_TENE
+# 722 "data//maps/UnchartedIsland/scripts.pory"
 	setobjectxy LOCALID_TENE, 67, 45
-# 723 "data//maps/UnchartedIsland/scripts.pory"
-	playse SE_PUDDLE
 # 724 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Finale_Ending_Movement_7
+	playse SE_PUDDLE
 # 725 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TENE, UnchartedIsland_Finale_Ending_Movement_7
 # 726 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 727 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Tenebris_Movement_2
+	delay 16
 # 728 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_3
+	applymovement OBJ_EVENT_ID_CAMERA, UnchartedIsland_Tenebris_Movement_2
 # 729 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_3
 # 730 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Ending_Movement_5
+	waitmovement 0
 # 731 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Ending_Movement_5
 # 732 "data//maps/UnchartedIsland/scripts.pory"
+	waitmovement 0
+# 733 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 734 "data//maps/UnchartedIsland/scripts.pory"
+# 735 "data//maps/UnchartedIsland/scripts.pory"
 	special RemoveCameraObject
-# 736 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
 # 737 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
 # 738 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 739 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Tenebris_Text_0, UnchartedIsland_Tenebris_Text_2
+	delay 16
 # 740 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Cutscene_Movement_3
+	msgbox_delay UnchartedIsland_Tenebris_Text_0, UnchartedIsland_Tenebris_Text_2
 # 741 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Finale_Cutscene_Movement_3
 # 742 "data//maps/UnchartedIsland/scripts.pory"
-	delay 24
+	waitmovement 0
 # 743 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
+	delay 24
 # 744 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
 # 745 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
+	waitmovement 0
 # 746 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_3
+	delay 16
 # 747 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_3
 # 748 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
-# 749 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 750 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_4
-# 751 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 752 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_5
-# 753 "data//maps/UnchartedIsland/scripts.pory"
-	showmonpic SPECIES_KORAIDON, 10, 3
-# 754 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_6
-# 755 "data//maps/UnchartedIsland/scripts.pory"
-	hidemonpic
-# 756 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 757 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_7
-# 760 "data//maps/UnchartedIsland/scripts.pory"
-	speakername NULL
-# 761 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox UnchartedIsland_Tenebris_Text_8, MSGBOX_POKENAV
-# 762 "data//maps/UnchartedIsland/scripts.pory"
-	delay 16
-# 763 "data//maps/UnchartedIsland/scripts.pory"
-	speakername UnchartedIsland_Finale_Cutscene_Text_7
-# 764 "data//maps/UnchartedIsland/scripts.pory"
-	message UnchartedIsland_Tenebris_Text_9
-# 765 "data//maps/UnchartedIsland/scripts.pory"
-	waitmessage
-# 766 "data//maps/UnchartedIsland/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, UnchartedIsland_Tenebris_Text_10, UnchartedIsland_Tenebris_Text_11, UnchartedIsland_Tenebris_Text_12
-# 769 "data//maps/UnchartedIsland/scripts.pory"
 	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
-# 770 "data//maps/UnchartedIsland/scripts.pory"
+# 749 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
-# 771 "data//maps/UnchartedIsland/scripts.pory"
+# 750 "data//maps/UnchartedIsland/scripts.pory"
 	delay 16
-# 772 "data//maps/UnchartedIsland/scripts.pory"
-	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_13
-# 774 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_4
-# 775 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_5
-# 776 "data//maps/UnchartedIsland/scripts.pory"
+# 751 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_4
+# 752 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 753 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_5
+# 754 "data//maps/UnchartedIsland/scripts.pory"
+	showmonpic SPECIES_KORAIDON, 10, 3
+# 755 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_6
+# 756 "data//maps/UnchartedIsland/scripts.pory"
+	hidemonpic
+# 757 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 758 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_7
+# 761 "data//maps/UnchartedIsland/scripts.pory"
+	speakername NULL
+# 762 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox UnchartedIsland_Tenebris_Text_8, MSGBOX_POKENAV
+# 763 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 764 "data//maps/UnchartedIsland/scripts.pory"
+	speakername UnchartedIsland_Finale_Cutscene_Text_7
+# 765 "data//maps/UnchartedIsland/scripts.pory"
+	message UnchartedIsland_Tenebris_Text_9
+# 766 "data//maps/UnchartedIsland/scripts.pory"
+	waitmessage
+# 767 "data//maps/UnchartedIsland/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, UnchartedIsland_Tenebris_Text_10, UnchartedIsland_Tenebris_Text_11, UnchartedIsland_Tenebris_Text_12
+# 770 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_TENE, UnchartedIsland_Finale_Cutscene_Movement_1
+# 771 "data//maps/UnchartedIsland/scripts.pory"
 	waitmovement 0
+# 772 "data//maps/UnchartedIsland/scripts.pory"
+	delay 16
+# 773 "data//maps/UnchartedIsland/scripts.pory"
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_13
+# 775 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_4
+# 776 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_5
 # 777 "data//maps/UnchartedIsland/scripts.pory"
-	playse SE_M_DIVE
+	waitmovement 0
 # 778 "data//maps/UnchartedIsland/scripts.pory"
-	removeobject LOCALID_TENE
-# 779 "data//maps/UnchartedIsland/scripts.pory"
-	delay 8
-# 781 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
-# 782 "data//maps/UnchartedIsland/scripts.pory"
-	delay 8
-# 783 "data//maps/UnchartedIsland/scripts.pory"
 	playse SE_M_DIVE
+# 779 "data//maps/UnchartedIsland/scripts.pory"
+	removeobject LOCALID_TENE
+# 780 "data//maps/UnchartedIsland/scripts.pory"
+	delay 8
+# 782 "data//maps/UnchartedIsland/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
+# 783 "data//maps/UnchartedIsland/scripts.pory"
+	delay 8
 # 784 "data//maps/UnchartedIsland/scripts.pory"
+	playse SE_M_DIVE
+# 785 "data//maps/UnchartedIsland/scripts.pory"
 	warp MAP_ANCIENT_CORMORIA_FINAL, 9, 51
-# 786 "data//maps/UnchartedIsland/scripts.pory"
-	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 3
 # 787 "data//maps/UnchartedIsland/scripts.pory"
+	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 3
+# 788 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
@@ -1368,457 +1370,457 @@ UnchartedIsland_Finale_Ending_Movement_7:
 	jump_2_up
 	step_end
 
-# 364 "data//maps/UnchartedIsland/scripts.pory"
+# 365 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Finale_Skip_Movement_0:
-# 364 "data//maps/UnchartedIsland/scripts.pory"
+# 365 "data//maps/UnchartedIsland/scripts.pory"
 	face_down
 	step_end
 
-# 486 "data//maps/UnchartedIsland/scripts.pory"
+# 487 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Viewpoint_Trigger_Movement_0:
-# 486 "data//maps/UnchartedIsland/scripts.pory"
+# 487 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 486 "data//maps/UnchartedIsland/scripts.pory"
+# 487 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 486 "data//maps/UnchartedIsland/scripts.pory"
+# 487 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 486 "data//maps/UnchartedIsland/scripts.pory"
+# 487 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Trigger0_Movement_0:
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 505 "data//maps/UnchartedIsland/scripts.pory"
+# 506 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Trigger1_Movement_0:
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 512 "data//maps/UnchartedIsland/scripts.pory"
+# 513 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 524 "data//maps/UnchartedIsland/scripts.pory"
+# 525 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_0:
-# 524 "data//maps/UnchartedIsland/scripts.pory"
+# 525 "data//maps/UnchartedIsland/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 533 "data//maps/UnchartedIsland/scripts.pory"
+# 534 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_1:
-# 533 "data//maps/UnchartedIsland/scripts.pory"
+# 534 "data//maps/UnchartedIsland/scripts.pory"
 	face_left
 	step_end
 
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_2:
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 534 "data//maps/UnchartedIsland/scripts.pory"
+# 535 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 539 "data//maps/UnchartedIsland/scripts.pory"
+# 540 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_3:
-# 539 "data//maps/UnchartedIsland/scripts.pory"
+# 540 "data//maps/UnchartedIsland/scripts.pory"
 	face_right
 	step_end
 
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_4:
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 557 "data//maps/UnchartedIsland/scripts.pory"
+# 558 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
 	step_end
 
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_5:
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 564 "data//maps/UnchartedIsland/scripts.pory"
+# 565 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
 	step_end
 
-# 570 "data//maps/UnchartedIsland/scripts.pory"
+# 571 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_6:
-# 570 "data//maps/UnchartedIsland/scripts.pory"
+# 571 "data//maps/UnchartedIsland/scripts.pory"
 	emote_exclamation_mark
-# 570 "data//maps/UnchartedIsland/scripts.pory"
+# 571 "data//maps/UnchartedIsland/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 583 "data//maps/UnchartedIsland/scripts.pory"
+# 584 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_7:
-# 583 "data//maps/UnchartedIsland/scripts.pory"
+# 584 "data//maps/UnchartedIsland/scripts.pory"
 	emote_exclamation_mark
-# 583 "data//maps/UnchartedIsland/scripts.pory"
+# 584 "data//maps/UnchartedIsland/scripts.pory"
 	face_left
 	step_end
 
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_8:
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	emote_exclamation_mark
-# 589 "data//maps/UnchartedIsland/scripts.pory"
+# 590 "data//maps/UnchartedIsland/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_9:
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 606 "data//maps/UnchartedIsland/scripts.pory"
+# 607 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 612 "data//maps/UnchartedIsland/scripts.pory"
+# 613 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_10:
-# 612 "data//maps/UnchartedIsland/scripts.pory"
+# 613 "data//maps/UnchartedIsland/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_11:
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 639 "data//maps/UnchartedIsland/scripts.pory"
+# 640 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Moxie_Melea_Fight_Movement_12:
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_right
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
-# 646 "data//maps/UnchartedIsland/scripts.pory"
+# 647 "data//maps/UnchartedIsland/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Melea_Destroy_Trigger_Movement_0:
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 670 "data//maps/UnchartedIsland/scripts.pory"
+# 671 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Melea_Destroy_Trigger_Movement_1:
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 690 "data//maps/UnchartedIsland/scripts.pory"
+# 691 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
 	step_end
 
-# 709 "data//maps/UnchartedIsland/scripts.pory"
+# 710 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_0:
-# 709 "data//maps/UnchartedIsland/scripts.pory"
+# 710 "data//maps/UnchartedIsland/scripts.pory"
 	emote_exclamation_mark
-# 709 "data//maps/UnchartedIsland/scripts.pory"
+# 710 "data//maps/UnchartedIsland/scripts.pory"
 	face_right
 	step_end
 
-# 715 "data//maps/UnchartedIsland/scripts.pory"
+# 716 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_1:
-# 715 "data//maps/UnchartedIsland/scripts.pory"
+# 716 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 715 "data//maps/UnchartedIsland/scripts.pory"
+# 716 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 715 "data//maps/UnchartedIsland/scripts.pory"
+# 716 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 715 "data//maps/UnchartedIsland/scripts.pory"
+# 716 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
 	step_end
 
-# 727 "data//maps/UnchartedIsland/scripts.pory"
+# 728 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_2:
-# 727 "data//maps/UnchartedIsland/scripts.pory"
+# 728 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 727 "data//maps/UnchartedIsland/scripts.pory"
+# 728 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 727 "data//maps/UnchartedIsland/scripts.pory"
+# 728 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 727 "data//maps/UnchartedIsland/scripts.pory"
+# 728 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
 	step_end
 
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_3:
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	walk_left
-# 728 "data//maps/UnchartedIsland/scripts.pory"
+# 729 "data//maps/UnchartedIsland/scripts.pory"
 	face_down
 	step_end
 
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_4:
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 774 "data//maps/UnchartedIsland/scripts.pory"
+# 775 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_5:
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 775 "data//maps/UnchartedIsland/scripts.pory"
+# 776 "data//maps/UnchartedIsland/scripts.pory"
 	jump_2_down
 	step_end
 
-# 781 "data//maps/UnchartedIsland/scripts.pory"
+# 782 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_6:
-# 781 "data//maps/UnchartedIsland/scripts.pory"
+# 782 "data//maps/UnchartedIsland/scripts.pory"
 	jump_2_down
 	step_end
 
@@ -2042,8 +2044,8 @@ UnchartedIsland_Finale_Ending_Text_5:
 	.string "I will not be bested!\p"
 	.string "If we can get the dreamstone, we can\n"
 	.string "try again.\p"
-	.string "Ancient Terror! Come forth and bring me\n"
-	.string "the dreamstone!$"
+	.string "Ancient Terror! Bring me the\n"
+	.string "dreamstone!$"
 
 UnchartedIsland_Finale_Ending_Text_6:
 # 289 "data//maps/UnchartedIsland/scripts.pory"
@@ -2067,7 +2069,7 @@ UnchartedIsland_Finale_Ending_Text_10:
 	.string "Cleee!!!$"
 
 UnchartedIsland_Breech_Text_0:
-# 380 "data//maps/UnchartedIsland/scripts.pory"
+# 381 "data//maps/UnchartedIsland/scripts.pory"
 	.string "{PLAYER} - you made it through!\p"
 	.string "Clefable and I will hide here behind the\n"
 	.string "trees. You go on ahead, but be careful!\l"
@@ -2085,79 +2087,79 @@ UnchartedIsland_Breech_Text_0:
 	.string "Good luck!$"
 
 UnchartedIsland_Clefable_Text_0:
-# 384 "data//maps/UnchartedIsland/scripts.pory"
+# 385 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Clefairy$"
 
 UnchartedIsland_Leader_Caught_A_Text_0:
-# 392 "data//maps/UnchartedIsland/scripts.pory"
+# 393 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hey! What are you doing here? You\n"
 	.string "should be on the S.S. Elegant.$"
 
 UnchartedIsland_Inger_Text_0:
-# 411 "data//maps/UnchartedIsland/scripts.pory"
+# 412 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Inger$"
 
 UnchartedIsland_Ariana_Text_0:
-# 415 "data//maps/UnchartedIsland/scripts.pory"
+# 416 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Ariana$"
 
 UnchartedIsland_Gloria_Text_0:
-# 419 "data//maps/UnchartedIsland/scripts.pory"
+# 420 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Gloria$"
 
 UnchartedIsland_Carona_Text_0:
-# 423 "data//maps/UnchartedIsland/scripts.pory"
+# 424 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Carona$"
 
 UnchartedIsland_Jania_Text_0:
-# 430 "data//maps/UnchartedIsland/scripts.pory"
+# 431 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Jania$"
 
 UnchartedIsland_Raazi_Text_0:
-# 434 "data//maps/UnchartedIsland/scripts.pory"
+# 435 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Raazi$"
 
 UnchartedIsland_Grunt_A_Text_0:
-# 447 "data//maps/UnchartedIsland/scripts.pory"
+# 448 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The boss gave me new Pokémon just to\n"
 	.string "stop the Ace Rookie. You can't stop us -\l"
 	.string "wait, you're not the Ace Rookie!$"
 
 UnchartedIsland_Grunt_A_Text_1:
-# 447 "data//maps/UnchartedIsland/scripts.pory"
+# 448 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Guess you're still on the case!$"
 
 UnchartedIsland_Grunt_A_Text_2:
-# 448 "data//maps/UnchartedIsland/scripts.pory"
+# 449 "data//maps/UnchartedIsland/scripts.pory"
 	.string "It doesn't matter who's on the case.\n"
 	.string "You can't stop us now!$"
 
 UnchartedIsland_Grunt_B_Text_0:
-# 452 "data//maps/UnchartedIsland/scripts.pory"
+# 453 "data//maps/UnchartedIsland/scripts.pory"
 	.string "They said the Ace Rookie was coming.\n"
 	.string "Why are you here instead?$"
 
 UnchartedIsland_Grunt_B_Text_1:
-# 452 "data//maps/UnchartedIsland/scripts.pory"
+# 453 "data//maps/UnchartedIsland/scripts.pory"
 	.string "I'd rather fight the Ace Rookie!$"
 
 UnchartedIsland_Grunt_B_Text_2:
-# 453 "data//maps/UnchartedIsland/scripts.pory"
+# 454 "data//maps/UnchartedIsland/scripts.pory"
 	.string "$"
 
 UnchartedIsland_Grunt_C_Text_0:
-# 457 "data//maps/UnchartedIsland/scripts.pory"
+# 458 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Yeah, weren't you kicked off the case?\n"
 	.string "Well whatever! We've almost achieved\l"
 	.string "our goal - you think we'll let you stop\l"
 	.string "us now?$"
 
 UnchartedIsland_Grunt_C_Text_1:
-# 457 "data//maps/UnchartedIsland/scripts.pory"
+# 458 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Don't ruin our plan!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_0:
-# 522 "data//maps/UnchartedIsland/scripts.pory"
+# 523 "data//maps/UnchartedIsland/scripts.pory"
 	.string "{PLAYER}.\p"
 	.string "A familiar face by now.\n"
 	.string "How many times has it been?\p"
@@ -2168,28 +2170,28 @@ UnchartedIsland_Moxie_Melea_Fight_Text_0:
 	.string "assume you wouldn't come any way.$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_1:
-# 528 "data//maps/UnchartedIsland/scripts.pory"
+# 529 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Melea!\n"
 	.string "{PLAYER}'s here!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_2:
-# 537 "data//maps/UnchartedIsland/scripts.pory"
+# 538 "data//maps/UnchartedIsland/scripts.pory"
 	.string "So you came after all.\p"
 	.string "Time and again we've tried to explain\n"
 	.string "how insignificant you are in our plans.$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_3:
-# 543 "data//maps/UnchartedIsland/scripts.pory"
+# 544 "data//maps/UnchartedIsland/scripts.pory"
 	.string "And yet, pest that you are, you manage\n"
 	.string "to find your way to us and foil our\l"
 	.string "plans again and again!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_4:
-# 549 "data//maps/UnchartedIsland/scripts.pory"
+# 550 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Look across the water.$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_5:
-# 560 "data//maps/UnchartedIsland/scripts.pory"
+# 561 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The third and final dreamstone.\p"
 	.string "It took us a while to locate, but this is\n"
 	.string "where Professor Tenebris took her\l"
@@ -2197,12 +2199,12 @@ UnchartedIsland_Moxie_Melea_Fight_Text_5:
 	.string "This is where it all began...$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_6:
-# 573 "data//maps/UnchartedIsland/scripts.pory"
+# 574 "data//maps/UnchartedIsland/scripts.pory"
 	.string "And this is where we'll finally complete\n"
 	.string "the plan!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_7:
-# 580 "data//maps/UnchartedIsland/scripts.pory"
+# 581 "data//maps/UnchartedIsland/scripts.pory"
 	.string "You bested us before.\p"
 	.string "We're not taking that risk again. Not\n"
 	.string "here. Not now.\p"
@@ -2211,28 +2213,28 @@ UnchartedIsland_Moxie_Melea_Fight_Text_7:
 	.string "If only you had some help.$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_8:
-# 596 "data//maps/UnchartedIsland/scripts.pory"
+# 597 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Poetic - right on cue, the help arrives.$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_9:
-# 600 "data//maps/UnchartedIsland/scripts.pory"
+# 601 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No matter - they can't beat the two of\n"
 	.string "us.\p"
 	.string "I'll take the Ace Rookie.\n"
 	.string "You deal with {PLAYER}!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_10:
-# 603 "data//maps/UnchartedIsland/scripts.pory"
+# 604 "data//maps/UnchartedIsland/scripts.pory"
 	.string "...$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_11:
-# 616 "data//maps/UnchartedIsland/scripts.pory"
+# 617 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hahaha! I can't believe it! You've been\n"
 	.string "thrown under the bus! The Ace Rookie\l"
 	.string "just left you alone!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_12:
-# 622 "data//maps/UnchartedIsland/scripts.pory"
+# 623 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hahaha! Now that settles it.\p"
 	.string "You're finished, {PLAYER}! Once we\n"
 	.string "deal with you, we'll go and stop the Ace\l"
@@ -2243,54 +2245,54 @@ UnchartedIsland_Moxie_Melea_Fight_Text_12:
 	.string "It's time to end this once and for all!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_13:
-# 625 "data//maps/UnchartedIsland/scripts.pory"
+# 626 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No! Everything's ruined!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_14:
-# 631 "data//maps/UnchartedIsland/scripts.pory"
+# 632 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No!\p"
 	.string "Noo!!!\p"
 	.string "I...$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_15:
-# 637 "data//maps/UnchartedIsland/scripts.pory"
+# 638 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Calm down Moxie! I'm here.\p"
 	.string "Go now - go and stop Kohla.\n"
 	.string "I'll finish {PLAYER} off!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_16:
-# 643 "data//maps/UnchartedIsland/scripts.pory"
+# 644 "data//maps/UnchartedIsland/scripts.pory"
 	.string "This can't be happening!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_17:
-# 645 "data//maps/UnchartedIsland/scripts.pory"
+# 646 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No!\p"
 	.string "We've worked too hard...I can't let it\n"
 	.string "end like this.\p"
 	.string "No!!!$"
 
 UnchartedIsland_Melea_Destroy_Trigger_Text_0:
-# 675 "data//maps/UnchartedIsland/scripts.pory"
+# 676 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Absol! Destroy those rocks!\n"
 	.string "We can't let anyone come after us!$"
 
 UnchartedIsland_Melea_Destroy_Trigger_Text_1:
-# 678 "data//maps/UnchartedIsland/scripts.pory"
+# 679 "data//maps/UnchartedIsland/scripts.pory"
 	.string "You'll never make it through!\p"
 	.string "So long, {PLAYER}. You've caused us\n"
 	.string "enough pain and now we'll finally be rid\l"
 	.string "of you!$"
 
 UnchartedIsland_Tenebris_Text_0:
-# 712 "data//maps/UnchartedIsland/scripts.pory"
+# 713 "data//maps/UnchartedIsland/scripts.pory"
 	.string "???$"
 
 UnchartedIsland_Tenebris_Text_1:
-# 712 "data//maps/UnchartedIsland/scripts.pory"
+# 713 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hey you - wait!$"
 
 UnchartedIsland_Tenebris_Text_2:
-# 739 "data//maps/UnchartedIsland/scripts.pory"
+# 740 "data//maps/UnchartedIsland/scripts.pory"
 	.string "I never forget a face when I see one.\p"
 	.string "I remember signing off on your\n"
 	.string "application, {PLAYER}.\p"
@@ -2300,7 +2302,7 @@ UnchartedIsland_Tenebris_Text_2:
 	.string "better circumstances.$"
 
 UnchartedIsland_Tenebris_Text_3:
-# 746 "data//maps/UnchartedIsland/scripts.pory"
+# 747 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Yes, I'm Professor Tenebris.\p"
 	.string "I've been hiding in Ancient\n"
 	.string "Cormoria...but Team Somber found the\l"
@@ -2308,7 +2310,7 @@ UnchartedIsland_Tenebris_Text_3:
 	.string "it seems, wasted.$"
 
 UnchartedIsland_Tenebris_Text_4:
-# 750 "data//maps/UnchartedIsland/scripts.pory"
+# 751 "data//maps/UnchartedIsland/scripts.pory"
 	.string "But you! I've been watching you.\n"
 	.string "I chose a good research assistant.\p"
 	.string "You've done your best to put an end to\n"
@@ -2330,11 +2332,11 @@ UnchartedIsland_Tenebris_Text_4:
 	.string "know why.$"
 
 UnchartedIsland_Tenebris_Text_5:
-# 752 "data//maps/UnchartedIsland/scripts.pory"
+# 753 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The Ancient Terror...$"
 
 UnchartedIsland_Tenebris_Text_6:
-# 754 "data//maps/UnchartedIsland/scripts.pory"
+# 755 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Of the many strong Pokémon that ruled\n"
 	.string "over Ancient Cormoria, the Ancient\l"
 	.string "Terror was the strongest! The most\l"
@@ -2351,7 +2353,7 @@ UnchartedIsland_Tenebris_Text_6:
 	.string "Orichalcum Pulse and dried up the sea!$"
 
 UnchartedIsland_Tenebris_Text_7:
-# 757 "data//maps/UnchartedIsland/scripts.pory"
+# 758 "data//maps/UnchartedIsland/scripts.pory"
 	.string "We must stop them...but I don't have my\n"
 	.string "Pokémon. Even if I did, I'm not much\l"
 	.string "resistance.\p"
@@ -2372,28 +2374,28 @@ UnchartedIsland_Tenebris_Text_7:
 	.string "...but you're the best we've got.$"
 
 UnchartedIsland_Tenebris_Text_8:
-# 761 "data//maps/UnchartedIsland/scripts.pory"
+# 762 "data//maps/UnchartedIsland/scripts.pory"
 	.string "This is your last choice in the game!\n"
 	.string "Please choose carefully.$"
 
 UnchartedIsland_Tenebris_Text_9:
-# 764 "data//maps/UnchartedIsland/scripts.pory"
+# 765 "data//maps/UnchartedIsland/scripts.pory"
 	.string "{PLAYER} - will you stop Team Somber?$"
 
 UnchartedIsland_Tenebris_Text_10:
-# 766 "data//maps/UnchartedIsland/scripts.pory"
+# 767 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Yeah!$"
 
 UnchartedIsland_Tenebris_Text_11:
-# 766 "data//maps/UnchartedIsland/scripts.pory"
+# 767 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Of course!$"
 
 UnchartedIsland_Tenebris_Text_12:
-# 766 "data//maps/UnchartedIsland/scripts.pory"
+# 767 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Definitely!$"
 
 UnchartedIsland_Tenebris_Text_13:
-# 772 "data//maps/UnchartedIsland/scripts.pory"
+# 773 "data//maps/UnchartedIsland/scripts.pory"
 	.string "You truly are a gem of a human being.\p"
 	.string "Now come! Let us enter Ancient Cormoria\n"
 	.string "once more...and exit right where the\l"

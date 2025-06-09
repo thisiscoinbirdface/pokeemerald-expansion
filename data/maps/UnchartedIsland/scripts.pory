@@ -231,7 +231,7 @@ script UnchartedIsland_Finale_Battle{
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("No, Rue.\pYou haven't beaten us all."))
+    msgbox_delay("Tenebris", format("No, Rue.\pYou haven't beaten us all."))
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -277,7 +277,7 @@ script UnchartedIsland_Finale_Ending{
     applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox_delay("Rue", format("I will not be bested!\pIf we can get the dreamstone, we can try again.\pAncient Terror! Come forth and bring me the dreamstone!"))
+    msgbox_delay("Rue", format("I will not be bested!\pIf we can get the dreamstone, we can try again.\pAncient Terror! Bring me the dreamstone!"))
 
     fadescreen(FADE_TO_BLACK)
     setobjectxyperm(LOCALID_KOR, 79, 26)
@@ -335,6 +335,7 @@ script UnchartedIsland_Finale_Ending{
     waitmovement(0)
     removeobject(2)
     playse(SE_M_DIVE)    
+    waitse
     delay(30)
 
     setvar(VAR_0x8004, 2)  //vertical pan

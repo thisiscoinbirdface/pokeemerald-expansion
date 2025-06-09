@@ -187,6 +187,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Green
 
 Charcadet
 Level: 7
@@ -201,6 +202,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Green
 
 Charcadet
 Level: 7
@@ -358,6 +360,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Purple
 
 Zorua-Hisui
 Level: 11
@@ -372,6 +375,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Risky
+Mugshot: Purple
 
 Zorua-Hisui
 Level: 11
@@ -572,6 +576,12 @@ Level: 14
 
 
 
+
+
+
+
+
+
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
 Name: Gabrielle
 Difficulty: Easy
@@ -581,13 +591,13 @@ Gender: Female
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
+Mugshot: Purple
 
 Zorua-Hisui
 Level: 16
 
 Baltoy
 Level: 16
-
 
 === TRAINER_CERAMBASECAMP_EVIL_GABRIELLE ===
 Name: Gabrielle
@@ -598,6 +608,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Purple
 
 Zorua-Hisui @ Ghost Gem
 Level: 16
@@ -607,6 +618,12 @@ Level: 16
 
 
 
+
+
+
+
+
+
 === TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: Grunt
 Difficulty: Easy
@@ -621,7 +638,6 @@ Drowzee
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-
 === TRAINER_CERAMBASECAMP_GRUNT1 ===
 Name: Grunt
 Difficulty: Normal
@@ -634,6 +650,16 @@ AI: Smart Trainer
 
 Drowzee
 Level: 15
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_CERAMBASECAMP_GRUNT2 ===
 Name: Grunt
@@ -669,6 +695,16 @@ Level: 14
 Drowzee
 Level: 15
 
+
+
+
+
+
+
+
+
+
+
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: Grunt
 Difficulty: Easy
@@ -687,7 +723,6 @@ Yanma
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-
 === TRAINER_CERAMBASECAMP_GRUNT3 ===
 Name: Grunt
 Difficulty: Normal
@@ -703,6 +738,16 @@ Level: 14
 
 Yanma
 Level: 15
+
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_ROUTE4_RAHA ===
@@ -1069,6 +1114,15 @@ Sizzlipede
 Level: 16
 
 
+
+
+
+
+
+
+
+
+
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
 Name: Ariana
 Difficulty: Easy
@@ -1099,7 +1153,6 @@ Ability: Intimidate
 Level: 17
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-
 === TRAINER_CERAMBASECAMPGYM_LEADER ===
 Name: Ariana
 Difficulty: Normal
@@ -1126,6 +1179,15 @@ Level: 16
 Tauros-Paldea-Blaze @ Oran Berry
 Ability: Intimidate
 Level: 17
+
+
+
+
+
+
+
+
+
 
 
 === TRAINER_MTCERAM_A ===
@@ -1411,11 +1473,10 @@ Level: 19
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Murkrow
-Level: 19
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+Level: 20
 
 Slowpoke-Galar
-Level: 21
+Level: 22
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Acid
 - Yawn
@@ -1439,14 +1500,26 @@ Impidimp
 Level: 19
 
 Murkrow @ Oran Berry
-Level: 19
+Level: 20
 
 Slowpoke-Galar
-Level: 21
+Level: 22
 - Acid
 - Yawn
 - Psychic
 - Water Pulse
+
+
+
+
+
+
+
+
+
+
+
+
 
 === TRAINER_GALECREST_ROBBER ===
 Name: Xander
@@ -1694,7 +1767,6 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Will O Wisp
 - Flame Charge
 
-
 === TRAINER_GALECRESTGYM_LEADER ===
 Name: Kohla
 Difficulty: Normal
@@ -1730,7 +1802,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
 === TRAINER_VILETHORN_A ===
-Name: YENI
+Name: Yeni
 Difficulty: Easy
 Class: Battle Girl
 Pic: Battle Girl
@@ -1744,7 +1816,7 @@ Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_VILETHORN_A ===
-Name: YENI
+Name: Yeni
 Difficulty: Normal
 Class: Battle Girl
 Pic: Battle Girl
@@ -2607,7 +2679,7 @@ Level: 26
 
 
 === TRAINER_SILVERSUNGYM_LEADER ===
-Name: GLORIA
+Name: Gloria
 Difficulty: Easy
 Class: Leader
 Pic: Leader Gloria
@@ -2635,7 +2707,7 @@ Level: 28
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_SILVERSUNGYM_LEADER ===
-Name: GLORIA
+Name: Gloria
 Difficulty: Normal
 Class: Leader
 Pic: Leader Gloria
@@ -2686,7 +2758,7 @@ Level: 28
 
 
 === TRAINER_THEATER_A ===
-Name: RANDALL
+Name: Randel
 Difficulty: Easy
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -2702,6 +2774,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Quick Attack
 - Agility
 - Wing Attack
+
+
+
+
+
+
+
+
 
 === TRAINER_THEATER_B ===
 Name: Pillin
@@ -3171,7 +3251,8 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon
+Mugshot: Green
 
 Boltund
 Level: 25
@@ -3206,7 +3287,8 @@ Gender: Male
 Music: Aqua
 Items: Super Potion
 Double Battle: No
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
 Boltund @ Leftovers
 Level: 25
@@ -3884,6 +3966,16 @@ Claydol
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
+
+
+
+
+
+
+
+
+
+
 === TRAINER_MIRROHBASECAMP_KOHLA ===
 Name: Kohla
 Difficulty: Easy
@@ -3893,6 +3985,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
 Axew
 Level: 31
@@ -3923,6 +4016,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
+Mugshot: Purple
 
 Axew
 Level: 31
@@ -6177,7 +6271,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
-
+Mugshot: Blue
 
 Pelipper @ Damp Rock
 Ability: Drizzle
@@ -6218,6 +6312,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Risky / Ace Pokemon
+Mugshot: Blue
 
 Pelipper @ Damp Rock
 Ability: Drizzle
@@ -6498,6 +6593,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
 Lairon
 Level: 30
@@ -6521,6 +6617,7 @@ Music: Suspicious
 Items: Super Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
 Lairon
 Level: 30
@@ -7295,7 +7392,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
-Mugshot: Purple
+Mugshot: Blue
 
 Corviknight
 Level: 51
@@ -7322,7 +7419,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
-Mugshot: Purple
+Mugshot: Blue
 
 Corviknight
 Level: 51
@@ -7897,6 +7994,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
 Toedscruel
 Level: 55
@@ -7927,6 +8025,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Purple
 
 Toedscruel
 Level: 55

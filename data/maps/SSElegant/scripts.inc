@@ -168,6 +168,8 @@ SSElegant_Raazi::
 	end
 
 SSElegant_Raazi_2:
+# 51 "data//maps/SSElegant/scripts.pory"
+	releaseall
 	end
 
 

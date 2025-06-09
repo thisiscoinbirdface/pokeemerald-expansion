@@ -158,6 +158,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
+	trainerbattle_no_intro TRAINER_UNCHARTED_ISLAND_RUE, Debug_BoxFilledMessage_Text
 	release
 	end
 
