@@ -15,12 +15,12 @@ script Route7_Trainer_B{
     end
 }
 script Route7_Trainer_C{
-    trainerbattle_single(TRAINER_ROUTE7_C, format("My big brother and I are going camping! Don't get in our way!"), format("I wanted to go camping!"))
+    trainerbattle_single(TRAINER_ROUTE7_C, format("My big brother and I are going camping!\nDon't get in our way!"), format("I wanted to go camping!"))
     msgbox(format("My brother travels all around Cormoria. He's so cool!"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_D{
-    trainerbattle_single(TRAINER_ROUTE7_D, format("Every year I take my sister camping. A battle will get us going!"), format("That got us going alright!"))
+    trainerbattle_single(TRAINER_ROUTE7_D, format("Every year I take my sister camping.\nA battle will get us going!"), format("That got us going alright!"))
     msgbox(format("I don't get to be home much. That's why I cherish the time I get with my sister."), MSGBOX_NPC)
     end
 }

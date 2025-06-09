@@ -8780,7 +8780,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CHAMPIONSHIP_A ===
 Name: Chara
 Difficulty: Easy
-Class: Cool Girl
+Class: Contender
 Pic: Cool Girl
 Gender: Female
 Music: Elite Four
@@ -8811,7 +8811,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_A ===
 Name: Chara
 Difficulty: Normal
-Class: Cool Girl
+Class: Contender
 Pic: Cool Girl
 Gender: Female
 Music: Elite Four
@@ -8861,7 +8861,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_B ===
 Name: Stanja
 Difficulty: Easy
-Class: Bug Maniac
+Class: Contender
 Pic: Bug Maniac
 Gender: Male
 Music: Elite Four
@@ -8900,7 +8900,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_B ===
 Name: Stanja
 Difficulty: Normal
-Class: Bug Maniac
+Class: Contender
 Pic: Bug Maniac
 Gender: Male
 Music: Elite Four
@@ -8952,7 +8952,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_C ===
 Name: Berger
 Difficulty: Easy
-Class: Pkmn Trainer 2
+Class: Contender
 Pic: Cool Guy
 Gender: Male
 Music: Elite Four
@@ -8993,7 +8993,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_C ===
 Name: Berger
 Difficulty: Normal
-Class: Pkmn Trainer 2
+Class: Contender
 Pic: Cool Guy
 Gender: Male
 Music: Elite Four
@@ -9044,7 +9044,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_D ===
 Name: Gabrielle
 Difficulty: Easy
-Class: Pkmn Trainer 2
+Class: Contender
 Pic: Somber Grunt F
 Gender: Female
 Music: Elite Four
@@ -9097,7 +9097,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_CHAMPIONSHIP_D ===
 Name: Gabrielle
 Difficulty: Normal
-Class: Pkmn Trainer 2
+Class: Contender
 Pic: Somber Grunt F
 Gender: Female
 Music: Elite Four

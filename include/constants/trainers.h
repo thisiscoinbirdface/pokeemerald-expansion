@@ -427,9 +427,12 @@
 #define TRAINER_CLASS_COOL_GUY       0x59
 #define TRAINER_CLASS_ARTIST         0x60
 #define TRAINER_CLASS_RUE            0x61
-#define TRAINER_CLASS_KOHLA_FINAL    0x62
 
-#define TRAINER_CLASS_COUNT          0x63
+//championship trainers
+#define TRAINER_CLASS_KOHLA_FINAL    0x62
+#define TRAINER_CLASS_CONTENDER      0x63
+
+#define TRAINER_CLASS_COUNT          0x64
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

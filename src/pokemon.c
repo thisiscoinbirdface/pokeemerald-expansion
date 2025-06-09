@@ -5879,6 +5879,7 @@ u16 GetBattleBGM(void)
         {
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_SOMBER_ADMIN:
             return MUS_VS_AQUA_MAGMA_LEADER;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
@@ -5908,7 +5909,11 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_ACE_ROOKIE:
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_KOHLA_FINAL:
-            return MUS_VS_ELITE_FOUR;            
+            return MUS_VS_ELITE_FOUR;
+        case TRAINER_CLASS_RUE:
+            return MUS_RG_VS_CHAMPION;
+        case TRAINER_CLASS_CONTENDER:
+            return MUS_VS_CHAMPION;
         default:
             return MUS_VS_TRAINER;
         }
