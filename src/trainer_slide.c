@@ -149,30 +149,27 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("None of this matters! You'll never win!\pCome forth, Ancient Terror!{PLAY_BGM MUS_VS_RAYQUAZA}\pBehold the power of Orichalcum Pulse!\p"), // find the id for the slide to be used.
             [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Ancient Terror! Finish this!\p"), // find the id for the slide to be used.
         }, 
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // },
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // }, 
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // },
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // },
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // }, 
-        // [] = // use the Trainer's Id from include/constants/opponents.h
-        // {
-        //     [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
-        // }, 
+        [TRAINER_CHAMPIONSHIP_A] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
+        },
+        [TRAINER_CHAMPIONSHIP_B] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
+        }, 
+        [TRAINER_CHAMPIONSHIP_C] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
+        },
+        [TRAINER_CHAMPIONSHIP_D] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING(""), // find the id for the slide to be used.
+        },
+        [TRAINER_CHAMPIONSHIP_E] = // use the Trainer's Id from include/constants/opponents.h
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), // find the id for the slide to be used.
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING(""), // find the id for the slide to be used.
+        }, 
     },
 };
 
