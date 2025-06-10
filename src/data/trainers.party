@@ -3375,6 +3375,7 @@ Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
 Double Battle: No
+Items: Lemonade
 AI: Smart Trainer
 
 Palpitoad
@@ -3412,7 +3413,7 @@ Pic: Sailor
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Risky
 
 Qwilfish-Hisui @ Sticky Barb
 Level: 26
@@ -3571,10 +3572,10 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Sneasel-Hisui
+Sneasel-Hisui @ Razor Fang
 Level: 27   
 
-Croagunk
+Croagunk @ Expert Belt
 Level: 28
 
 
@@ -4115,19 +4116,33 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Sneasler
+Sneasler @ Fighting Gem
+Ability: Unburden
 Level: 31
+- Dire Claw
+- Acrobatics
+- Close Combat
 
-Pangoro
+Pangoro @ Leftovers
+Ability: Iron Fist
 Level: 32
+- Bullet Punch
+- Drain Punch
+- Power-Up Punch
+- Thunder Punch
 
-Annihilape
+Annihilape @ Life Orb
+Ability: Defiant
 Level: 32
+- Rage Fist
+- Bulk Up
+- Drain Punch
+- Rock Slide
 
 Medicham @ Medichamite
 Level: 34
-
-
+- Hi Jump Kick
+- Psycho Cut
 
 
 
