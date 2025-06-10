@@ -347,9 +347,7 @@ GastreeGym_Red_Text_2:
 	.string "gone off to do some emergency training\l"
 	.string "in the underpass to Fennilahl Town.\p"
 	.string "The previous trainer beat him and Inger\n"
-	.string "just can't stand losing! You'll have to\l"
-	.string "go into the underpass and find him\l"
-	.string "there.$"
+	.string "just can't stand losing!.$"
 
 GastreeGym_Red_Text_3:
 # 115 "data//maps/GastreeGym/scripts.pory"
@@ -358,9 +356,9 @@ GastreeGym_Red_Text_3:
 	.string "gone off to do some emergency training\l"
 	.string "in the underpass to Fennilahl Town.\p"
 	.string "The previous trainer beat him and Inger\n"
-	.string "just can't stand losing! You'll have to\l"
-	.string "go into the underpass and find him\l"
-	.string "there. Take this with you.$"
+	.string "just can't stand losing!\p"
+	.string "But before you run off after him, take\n"
+	.string "this.$"
 
 GastreeGym_Red_Text_4:
 # 117 "data//maps/GastreeGym/scripts.pory"

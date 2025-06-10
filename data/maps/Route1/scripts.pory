@@ -9,10 +9,6 @@ script Route1_EventScripts_RandomDude {
     end
 }
 
-
-
-
-
 script Route1_TrainerBattle_A { 
     trainerbattle_single(TRAINER_ROUTE1_A, format("I just got my first Pokémon! And now, I'm about to get my first win!"), "Aw man! I thought I could win!")
     msgbox(format("My Rattata and I will become Pokémon Champions one day!"))

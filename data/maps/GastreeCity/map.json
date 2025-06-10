@@ -300,8 +300,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRIFBLIM)",
-      "x": 18,
-      "y": 17,
+      "x": 19,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -314,7 +314,7 @@
   ],
   "warp_events": [
     {
-      "x": 17,
+      "x": 16,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY_POKEMON_CENTER",
@@ -335,7 +335,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 10,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_GASTREE_CITY_HOUSE1",
@@ -363,7 +363,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
+      "x": 14,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE3_UNDERPASS",
@@ -457,7 +457,7 @@
     },
     {
       "type": "sign",
-      "x": 18,
+      "x": 17,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -465,7 +465,7 @@
     },
     {
       "type": "sign",
-      "x": 19,
+      "x": 18,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

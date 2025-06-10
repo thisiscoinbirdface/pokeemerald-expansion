@@ -1288,13 +1288,13 @@ GastreeCity_EventScript_SkittyQuestStart_Text_2:
 	.string "happened, right? Oh, you have to bring\l"
 	.string "my Skitty back, you absolutely have to!\l"
 	.string "I don't want her to get hurt...please\l"
-	.string "find her!$"
+	.string "find her and bring her back!$"
 
 GastreeCity_NPC2_Text_0:
 # 404 "data//maps/GastreeCity/scripts.pory"
 	.string "Skitty ran away because she got\n"
-	.string "bored...maybe I should catch a Purrloin\l"
-	.string "or Meowth for her to play with.$"
+	.string "bored...maybe I should catch a\l"
+	.string "Meowth for her to play with.$"
 
 GastreeCity_NPC2_Text_1:
 # 408 "data//maps/GastreeCity/scripts.pory"
@@ -1310,11 +1310,11 @@ GastreeCity_NPC2_Text_3:
 
 GastreeCity_NPC2_Text_4:
 # 414 "data//maps/GastreeCity/scripts.pory"
-	.string "I'm not a trainer so I don't need it. All\n"
-	.string "I need is my Skitty!\p"
+	.string "I'm not a trainer so I don't need it.\n"
+	.string "All I need is my Skitty!\p"
 	.string "You don't need to teach it to any of\n"
-	.string "your Pokémon, but you need at least one\l"
-	.string "Gym Badge to use it.\p"
+	.string "your Pokémon, but you need at least\l"
+	.string "one Gym Badge to use it.\p"
 	.string "Now come here Skitty!$"
 
 GastreeCity_NPC2_Text_5:

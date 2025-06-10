@@ -372,7 +372,7 @@ script GastreeCity_NPC9{
         delay(36)
         applymovement(3, moves(walk_right * 3 face_up))
         waitmovement(0)           
-        msgbox(format("Trainer! Trainer! You saw what happened, right? Oh, you have to bring my Skitty back, you absolutely have to! I don't want her to get hurt...please find her!"))
+        msgbox(format("Trainer! Trainer! You saw what happened, right? Oh, you have to bring my Skitty back, you absolutely have to! I don't want her to get hurt...please find her and bring her back!"))
         release
         setflag(FLAG_HIDE_GASTREE_SKITTY)
         startquest(QUEST_GASTREE_SKITTY)
@@ -401,7 +401,7 @@ script GastreeCity_NPC9{
         faceplayer    
 
         if (flag(FLAG_GASTREE_NPC_SKITTY)){
-            msgbox(format("Skitty ran away because she got bored...maybe I should catch a Purrloin or Meowth for her to play with."), MSGBOX_NPC)
+            msgbox(format("Skitty ran away because she got bored...maybe I should catch a\lMeowth for her to play with."), MSGBOX_NPC)
         } else {
             if (flag(FLAG_GASTREE_TRIGGER_SKITTY)){
                 addobject(LOCALID_SKITTYOG)
@@ -411,7 +411,7 @@ script GastreeCity_NPC9{
                 msgbox(format("Skiiii!!!"))
                 msgbox(format("Please take this as a reward."))
                 giveitem(ITEM_HM_SPLASH)
-                msgbox(format("I'm not a trainer so I don't need it. All I need is my Skitty!\pYou don't need to teach it to any of your Pokémon, but you need at least one Gym Badge to use it.\pNow come here Skitty!"))
+                msgbox(format("I'm not a trainer so I don't need it.\nAll I need is my Skitty!\pYou don't need to teach it to any of your Pokémon, but you need at least\lone Gym Badge to use it.\pNow come here Skitty!"))
                 applymovement(3, moves(face_up))
                 waitmovement(0)
                 setvar(VAR_GASTREE_SKITTY_QUEST, 5)

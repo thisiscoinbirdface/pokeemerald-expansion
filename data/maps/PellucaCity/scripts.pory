@@ -1080,7 +1080,7 @@ script PellucaCity_NPC5{
 }
 //bridge getting off dude
 script PellucaCity_NPC6{
-    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car past Route 7.\pI heard they're closing the gym there though."), MSGBOX_NPC)
+    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car past Route 7. I heard they're closing the gym there though."), MSGBOX_NPC)
     end
 }
 //main island
