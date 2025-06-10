@@ -11827,7 +11827,7 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_SPEAROW"
+                "species": "SPECIES_PINECO"
               },
               {
                 "min_level": 4,
@@ -11842,32 +11842,32 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
-                "species": "SPECIES_SPEAROW"
-              },
-              {
-                "min_level": 4,
-                "max_level": 6,
                 "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_SPEAROW"
+                "species": "SPECIES_MAREEP"
               },
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_LILLIPUP"
+                "species": "SPECIES_MAREEP"
               },
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_PINECO"
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MAREEP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 4,
@@ -13744,7 +13744,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_SHIELDON"
               },
               {
                 "min_level": 28,
@@ -13754,7 +13754,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_SHIELDON"
               },
               {
                 "min_level": 28,
@@ -13764,7 +13764,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_SHIELDON"
               },
               {
                 "min_level": 28,
@@ -13774,7 +13774,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_SHIELDON"
               },
               {
                 "min_level": 28,
@@ -13784,7 +13784,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_CRANIDOS"
+                "species": "SPECIES_SHIELDON"
               },
               {
                 "min_level": 28,
