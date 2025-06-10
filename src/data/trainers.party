@@ -897,7 +897,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Tyrogue
+Pidove
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -911,8 +911,13 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer / Try To Faint
 
-Tyrogue
+Pidove
 Level: 11
+
+
+
+
+
 
 
 
@@ -956,7 +961,7 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
-Riolu
+Togepi
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -975,7 +980,7 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
-Riolu
+Togepi
 Level: 13
 
 Mime Jr.
@@ -3262,7 +3267,7 @@ Kirlia
 Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Axew
+Scyther
 Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -3296,7 +3301,7 @@ Level: 25
 Kirlia @ Rocky Helmet
 Level: 28
 
-Axew @ Dragon Gem
+Scyther @ Flying Gem
 Level: 28
 
 Dewott @ Sitrus Berry
@@ -3987,7 +3992,7 @@ Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Axew
+Scyther
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4018,7 +4023,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Axew
+Scyther
 Level: 31
 
 Dewott
@@ -9325,13 +9330,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor
 - Trailblaze
 
-Excadrill @ Choice Band
-Ability: Mold Breaker
+Togekiss @ Leftovers
+Ability: Serene Grace
 Level: 65
+EVs: 252 HP / 116 Def / 140 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Rock Slide
-- Iron Head
+- Thunder Wave
+- Air Slash
+- Nasty Plot
+- Roost
 
 Aegislash @ Air Balloon
 Level: 65
@@ -9387,13 +9394,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor
 - Trailblaze
 
-Excadrill @ Choice Band
-Ability: Mold Breaker
+Togekiss @ Leftovers
+Ability: Serene Grace
 Level: 65
+EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Rock Slide
-- Iron Head
+- Thunder Wave
+- Air Slash
+- Nasty Plot
+- Roost
 
 Aegislash @ Air Balloon
 Level: 65

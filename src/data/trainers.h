@@ -5905,7 +5905,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2697
-            .species = SPECIES_ROSELIA,
+            .species = SPECIES_LILLIGANT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2699
             .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
@@ -19153,7 +19153,7 @@ F_TRAINER_FEMALE |
                 MOVE_FLIP_TURN,
                 MOVE_CEASELESS_EDGE,
                 MOVE_AQUA_JET,
-                MOVE_DRILL_RUN,
+                MOVE_SACRED_SWORD,
             },
             },
             {
@@ -19305,7 +19305,7 @@ F_TRAINER_FEMALE |
                 MOVE_FLIP_TURN,
                 MOVE_CEASELESS_EDGE,
                 MOVE_AQUA_JET,
-                MOVE_DRILL_RUN,
+                MOVE_SACRED_SWORD,
             },
             },
             {
