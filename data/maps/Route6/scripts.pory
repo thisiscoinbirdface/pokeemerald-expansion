@@ -514,7 +514,13 @@ script Route6_Tutor_Fangs{
 
 script Route6_Tutor_TeachMove{
     call(MoveTutor_EventScript_OpenPartyMenu)
-    msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
+    } else {
+        msgbox(format("Your Pokémon look strong now!\nGood luck, Ranger!"), MSGBOX_NPC)
+    }
+
     releaseall
     end
 }

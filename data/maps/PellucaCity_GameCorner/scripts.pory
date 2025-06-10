@@ -30,12 +30,12 @@ script PellucaCity_GameCorner_NPC1{
     end
 }
 script PellucaCity_GameCorner_NPC2{
-    msgbox(format("Don't disturb me! I need to win big, buy a Dusk Stone and evolve my Doublade!"), MSGBOX_NPC)
+    msgbox(format("Don't disturb me! I need to win big,\nbuy a Leaf Stone and evolve Voltorb!"), MSGBOX_NPC)
     end
 }
 script PellucaCity_GameCorner_NPC2_Doublade{
-    playmoncry(SPECIES_DOUBLADE, CRY_MODE_NORMAL)
-    msgbox(format("Doublade seems more worried about its trainer than evolving..."))
+    playmoncry(SPECIES_VOLTORB_HISUI, CRY_MODE_NORMAL)
+    msgbox(format("Voltorb seems more worried about its trainer than evolving..."))
     releaseall
     end
 }
@@ -124,7 +124,12 @@ script PellucaCity_GameCorner_Tutor_Teach{
 
 script PellucaCity_GameCorner_TeachMove{
     call(MoveTutor_EventScript_OpenPartyMenu)
-    msgbox(format("Grab a Loaded Dice for extra power!"), MSGBOX_NPC)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You know where to find me!"), MSGBOX_NPC)
+    } else {
+        msgbox(format("Now you hold all the cards!\nBuy a Loaded Dice for extra power!"), MSGBOX_NPC)
+    }
     releaseall
     end
 }

@@ -727,11 +727,20 @@ Route6_Tutor_Fangs_11:
 Route6_Tutor_TeachMove::
 # 516 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 517 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Weather_Text_6, MSGBOX_NPC
 # 518 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route6_Tutor_TeachMove_2
+# 521 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
+Route6_Tutor_TeachMove_1:
+# 524 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
+
+Route6_Tutor_TeachMove_2:
+# 519 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_6, MSGBOX_NPC
+	goto Route6_Tutor_TeachMove_1
 
 
 # 67 "data//maps/Route6/scripts.pory"
@@ -1341,3 +1350,8 @@ Route6_Tutor_Fangs_Text_3:
 Route6_Tutor_Fangs_Text_4:
 # 492 "data//maps/Route6/scripts.pory"
 	.string "Psychic Fangs$"
+
+Route6_Tutor_TeachMove_Text_0:
+# 521 "data//maps/Route6/scripts.pory"
+	.string "Your Pokémon look strong now!\n"
+	.string "Good luck, Ranger!$"

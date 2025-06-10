@@ -1525,7 +1525,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ABILITY_CAPSULE] =
     {
         .name = _("Ability Capsule"),
-        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
+        .price = 100,// (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "A mysterious pill\n"
@@ -1542,7 +1542,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Ability Patch"),
         .pluralName = _("Ability Patches"),
-        .price = (I_PRICE >= GEN_9) ? 250000 : 20,
+        .price = 100,//(I_PRICE >= GEN_9) ? 250000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Turns the ability\n"
@@ -2527,7 +2527,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BOTTLE_CAP] =
     {
         .name = _("Trash"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 5000,
+        .price = 100,//(I_PRICE >= GEN_9) ? 20000 : 5000,
         .description = COMPOUND_STRING(
             "Trash left by\n"
             "travelers with\n"
