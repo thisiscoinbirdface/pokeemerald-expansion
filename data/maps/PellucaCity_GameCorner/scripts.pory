@@ -147,6 +147,16 @@ script PellucaCity_GameCorner_TeachMove{
 script PellucaCity_GameCorner_Shop1{
     lockall
     faceplayer
+
+    //check coincase
+    checkitem(ITEM_COIN_CASE)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Welcome to the TM Corner!\nSeems like you don't have a Coin Case.\nPlease return with a Coin Case!"))
+        releaseall
+        end
+    }
+
     msgbox(format("Welcome to the TM Corner!"))
     goto(PellucaCity_GameCorner_Shop1_Decide)
 }
@@ -194,6 +204,14 @@ script PellucaCity_GameCorner_Shop1_Decide{
 }
 
 script PellucaCity_GameCorner_Shop1_BuyConfirm{
+
+    //check coins 
+    checkcoins(VAR_0x8003)
+    goto_if_lt(VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop1_NotEnough)
+    //check already have
+    checkitem(VAR_0x8006)
+    if (var(VAR_RESULT) == 1){goto(PellucaCity_GameCorner_Shop1_AlreadyHave)}
+
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     hideitemdescription
@@ -210,13 +228,29 @@ script PellucaCity_GameCorner_Shop1_BuyConfirm{
     end
 }
 
-
-
+script PellucaCity_GameCorner_Shop1_NotEnough{
+    msgbox(format("You don't have enough coins!"))
+    goto(PellucaCity_GameCorner_Shop1_Decide)
+}
+script PellucaCity_GameCorner_Shop1_AlreadyHave{
+    msgbox(format("You already have this TM!"))
+    goto(PellucaCity_GameCorner_Shop1_Decide)
+}
 
 //Stones 
 script PellucaCity_GameCorner_Shop2{
     lockall
     faceplayer
+
+    //check coincase
+    checkitem(ITEM_COIN_CASE)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Welcome to the Stone Corner!\pSeems like you don't have a Coin Case.\nPlease return with a Coin Case!"))
+        releaseall
+        end
+    }
+
     msgbox(format("Welcome to the Stone Corner!"))
     goto(PellucaCity_GameCorner_Shop2_Decide)
 }
@@ -259,6 +293,20 @@ script PellucaCity_GameCorner_Shop2_Decide{
 }
 
 script PellucaCity_GameCorner_Shop2_BuyConfirm{
+    //check coins 
+    checkcoins(VAR_0x8003)
+    goto_if_lt(VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop2_NotEnough)
+
+    //confirm duplicate
+    checkitem(VAR_0x8006)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("You already have this item.\nDo you want another one?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            goto(PellucaCity_GameCorner_Shop2_Decide)
+        }
+    }
+
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     hideitemdescription
@@ -275,6 +323,11 @@ script PellucaCity_GameCorner_Shop2_BuyConfirm{
     end
 }
 
+script PellucaCity_GameCorner_Shop2_NotEnough{
+    msgbox(format("You don't have enough coins!"))
+    goto(PellucaCity_GameCorner_Shop2_Decide)
+}
+
 
 
 
@@ -283,6 +336,16 @@ script PellucaCity_GameCorner_Shop2_BuyConfirm{
 script PellucaCity_GameCorner_Shop3{
     lockall
     faceplayer
+
+    //check coincase
+    checkitem(ITEM_COIN_CASE)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Welcome to the Item Corner!\pSeems like you don't have a Coin Case.\nPlease return with a Coin Case!"))
+        releaseall
+        end
+    }
+
     msgbox(format("Welcome to the Item Corner!"))
     goto(PellucaCity_GameCorner_Shop3_Decide)
 }
@@ -318,6 +381,21 @@ script PellucaCity_GameCorner_Shop3_Decide{
 }
 
 script PellucaCity_GameCorner_Shop3_BuyConfirm{
+
+    //check coins 
+    checkcoins(VAR_0x8003)
+    goto_if_lt(VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop3_NotEnough)
+
+    //confirm duplicate
+    checkitem(VAR_0x8006)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("You already have this item.\nDo you want another one?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            goto(PellucaCity_GameCorner_Shop3_Decide)
+        }
+    }    
+
     showitemdescription
     msgbox(format("Are you sure?"), MSGBOX_YESNO)
     hideitemdescription
@@ -332,5 +410,10 @@ script PellucaCity_GameCorner_Shop3_BuyConfirm{
     msgbox(format("Thank you for your purchase!"))
     releaseall
     end
+}
+
+script PellucaCity_GameCorner_Shop3_NotEnough{
+    msgbox(format("You don't have enough coins!"))
+    goto(PellucaCity_GameCorner_Shop3_Decide)
 }
 

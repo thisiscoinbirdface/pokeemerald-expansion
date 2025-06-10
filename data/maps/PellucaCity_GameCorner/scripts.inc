@@ -210,459 +210,592 @@ PellucaCity_GameCorner_Shop1::
 	lockall
 # 149 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	faceplayer
-# 150 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop1_Text_0
-# 151 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 152 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem ITEM_COIN_CASE
+# 154 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop1_2
+# 160 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_Text_1
+# 161 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_Decide
 	return
 
+PellucaCity_GameCorner_Shop1_2:
+# 155 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_Text_0
+# 156 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
 
 PellucaCity_GameCorner_Shop1_Decide::
-# 157 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	showcoinsbox 21, 10
-# 158 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	message PellucaCity_GameCorner_Shop1_Decide_Text_0
-# 159 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	waitmessage
-# 161 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_HAZE
-# 162 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_1, ITEM_TM13
-# 163 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_STEALTH_ROCK
-# 164 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_2, ITEM_TM37
-# 165 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_X_SCISSOR
-# 166 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_3, ITEM_TM43
 # 167 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_IRON_HEAD
+	showcoinsbox 21, 10
 # 168 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_4, ITEM_TM46
+	message PellucaCity_GameCorner_Shop1_Decide_Text_0
 # 169 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_DARK_PULSE
-# 170 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_5, ITEM_TM47
+	waitmessage
 # 171 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_DAZZLING_GLEAM
+	buffernumberstring STR_VAR_1, PRICE_TM_HAZE
 # 172 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_6, ITEM_TM56
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_1, ITEM_TM13
 # 173 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_ROCK_SLIDE
+	buffernumberstring STR_VAR_1, PRICE_TM_STEALTH_ROCK
 # 174 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_7, ITEM_TM53
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_2, ITEM_TM37
 # 175 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_DRAIN_PUNCH
+	buffernumberstring STR_VAR_1, PRICE_TM_X_SCISSOR
 # 176 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_8, ITEM_TM58
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_3, ITEM_TM43
+# 177 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_TM_IRON_HEAD
+# 178 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_4, ITEM_TM46
 # 179 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+	buffernumberstring STR_VAR_1, PRICE_TM_DARK_PULSE
+# 180 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_5, ITEM_TM47
 # 181 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	hidecoinsbox 21, 10
+	buffernumberstring STR_VAR_1, PRICE_TM_DAZZLING_GLEAM
 # 182 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_6, ITEM_TM56
+# 183 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_TM_ROCK_SLIDE
+# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_7, ITEM_TM53
+# 185 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_TM_DRAIN_PUNCH
+# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_8, ITEM_TM58
+# 189 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 191 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	hidecoinsbox 21, 10
+# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM43
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_2
 PellucaCity_GameCorner_Shop1_Decide_1:
-# 183 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM46
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_5
 PellucaCity_GameCorner_Shop1_Decide_4:
-# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 194 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM47
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_8
 PellucaCity_GameCorner_Shop1_Decide_7:
-# 185 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM56
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_11
 PellucaCity_GameCorner_Shop1_Decide_10:
-# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 196 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM13
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_14
 PellucaCity_GameCorner_Shop1_Decide_13:
-# 187 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM37
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_17
 PellucaCity_GameCorner_Shop1_Decide_16:
-# 188 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM53
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_20
 PellucaCity_GameCorner_Shop1_Decide_19:
-# 189 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_TM58
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_23
 PellucaCity_GameCorner_Shop1_Decide_22:
-# 191 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 201 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop1_Decide_Text_9
-# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 202 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop1_Decide_2:
-# 182 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM43
-# 182 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_X_SCISSOR
-# 182 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_1
 
 PellucaCity_GameCorner_Shop1_Decide_5:
-# 183 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM46
-# 183 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_IRON_HEAD
-# 183 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_4
 
 PellucaCity_GameCorner_Shop1_Decide_8:
-# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 194 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM47
-# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 194 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_DARK_PULSE
-# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 194 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_7
 
 PellucaCity_GameCorner_Shop1_Decide_11:
-# 185 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM56
-# 185 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_DAZZLING_GLEAM
-# 185 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_10
 
 PellucaCity_GameCorner_Shop1_Decide_14:
-# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 196 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM13
-# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 196 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_HAZE
-# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 196 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_13
 
 PellucaCity_GameCorner_Shop1_Decide_17:
-# 187 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM37
-# 187 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_STEALTH_ROCK
-# 187 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_16
 
 PellucaCity_GameCorner_Shop1_Decide_20:
-# 188 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM53
-# 188 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_ROCK_SLIDE
-# 188 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_19
 
 PellucaCity_GameCorner_Shop1_Decide_23:
-# 189 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_TM58
-# 189 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_TM_DRAIN_PUNCH
-# 189 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm
 	goto PellucaCity_GameCorner_Shop1_Decide_22
 
 
 PellucaCity_GameCorner_Shop1_BuyConfirm::
-# 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	showitemdescription
-# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
-# 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	hideitemdescription
-# 201 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, 0
+# 209 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkcoins VAR_0x8003
+# 210 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop1_NotEnough
+# 212 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem VAR_0x8006
+# 213 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_GameCorner_Shop1_BuyConfirm_2
 PellucaCity_GameCorner_Shop1_BuyConfirm_1:
-# 205 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 215 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	showitemdescription
+# 216 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
+# 217 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	hideitemdescription
+# 219 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop1_BuyConfirm_5
+PellucaCity_GameCorner_Shop1_BuyConfirm_4:
+# 223 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	giveitem VAR_0x8006
-# 206 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 224 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	removecoins VAR_0x8002
-# 208 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 226 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_1
-# 209 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 227 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop1_BuyConfirm_2:
-# 202 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	goto PellucaCity_GameCorner_Shop1_Decide
+# 213 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop1_AlreadyHave
 	goto PellucaCity_GameCorner_Shop1_BuyConfirm_1
 
-
-PellucaCity_GameCorner_Shop2::
-# 218 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	lockall
-# 219 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	faceplayer
+PellucaCity_GameCorner_Shop1_BuyConfirm_5:
 # 220 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop2_Text_0
-# 221 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	goto PellucaCity_GameCorner_Shop2_Decide
+	goto PellucaCity_GameCorner_Shop1_Decide
+	goto PellucaCity_GameCorner_Shop1_BuyConfirm_4
+
+
+PellucaCity_GameCorner_Shop1_NotEnough::
+# 232 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_NotEnough_Text_0
+# 233 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop1_Decide
 	return
 
 
-PellucaCity_GameCorner_Shop2_Decide::
-# 227 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	showcoinsbox 21, 10
-# 228 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	message PellucaCity_GameCorner_Shop2_Decide_Text_0
-# 229 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	waitmessage
-# 235 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_STONES
+PellucaCity_GameCorner_Shop1_AlreadyHave::
 # 236 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_1, ITEM_THUNDER_STONE
+	msgbox PellucaCity_GameCorner_Shop1_AlreadyHave_Text_0
 # 237 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_STONES
-# 238 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_2, ITEM_LEAF_STONE
-# 239 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_STONES
-# 240 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_3, ITEM_SUN_STONE
-# 241 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_STONES
+	goto PellucaCity_GameCorner_Shop1_Decide
+	return
+
+
+PellucaCity_GameCorner_Shop2::
 # 242 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_4, ITEM_SHINY_STONE
+	lockall
 # 243 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_STONES
-# 244 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_5, ITEM_DAWN_STONE
-# 247 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
+	faceplayer
+# 246 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem ITEM_COIN_CASE
+# 248 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop2_2
+# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop2_Text_1
+# 255 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop2_Decide
+	return
+
+PellucaCity_GameCorner_Shop2_2:
 # 249 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	hidecoinsbox 21, 10
+	msgbox PellucaCity_GameCorner_Shop2_Text_0
 # 250 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
+
+PellucaCity_GameCorner_Shop2_Decide::
+# 261 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	showcoinsbox 21, 10
+# 262 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	message PellucaCity_GameCorner_Shop2_Decide_Text_0
+# 263 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	waitmessage
+# 269 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_STONES
+# 270 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_1, ITEM_THUNDER_STONE
+# 271 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_STONES
+# 272 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_2, ITEM_LEAF_STONE
+# 273 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_STONES
+# 274 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_3, ITEM_SUN_STONE
+# 275 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_STONES
+# 276 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_4, ITEM_SHINY_STONE
+# 277 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_1, PRICE_STONES
+# 278 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_5, ITEM_DAWN_STONE
+# 281 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
+# 283 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	hidecoinsbox 21, 10
+# 284 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_THUNDER_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_2
 PellucaCity_GameCorner_Shop2_Decide_1:
-# 251 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 285 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_LEAF_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_5
 PellucaCity_GameCorner_Shop2_Decide_4:
-# 252 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_SUN_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_8
 PellucaCity_GameCorner_Shop2_Decide_7:
-# 253 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 287 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_SHINY_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_11
 PellucaCity_GameCorner_Shop2_Decide_10:
-# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 288 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_DAWN_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_14
 PellucaCity_GameCorner_Shop2_Decide_13:
-# 256 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 290 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop2_Decide_Text_6
-# 257 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 291 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop2_Decide_2:
-# 250 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 284 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_THUNDER_STONE
-# 250 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 284 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
-# 250 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 284 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm
 	goto PellucaCity_GameCorner_Shop2_Decide_1
 
 PellucaCity_GameCorner_Shop2_Decide_5:
-# 251 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 285 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_LEAF_STONE
-# 251 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 285 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
-# 251 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 285 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm
 	goto PellucaCity_GameCorner_Shop2_Decide_4
 
 PellucaCity_GameCorner_Shop2_Decide_8:
-# 252 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_SUN_STONE
-# 252 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
-# 252 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm
 	goto PellucaCity_GameCorner_Shop2_Decide_7
 
 PellucaCity_GameCorner_Shop2_Decide_11:
-# 253 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 287 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_SHINY_STONE
-# 253 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 287 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
-# 253 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 287 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm
 	goto PellucaCity_GameCorner_Shop2_Decide_10
 
 PellucaCity_GameCorner_Shop2_Decide_14:
-# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 288 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_DAWN_STONE
-# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 288 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
-# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 288 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm
 	goto PellucaCity_GameCorner_Shop2_Decide_13
 
 
 PellucaCity_GameCorner_Shop2_BuyConfirm::
-# 262 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	showitemdescription
-# 263 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
-# 264 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	hideitemdescription
-# 266 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, 0
+# 297 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkcoins VAR_0x8003
+# 298 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop2_NotEnough
+# 301 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem VAR_0x8006
+# 302 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_GameCorner_Shop2_BuyConfirm_2
 PellucaCity_GameCorner_Shop2_BuyConfirm_1:
-# 270 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 310 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	showitemdescription
+# 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
+# 312 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	hideitemdescription
+# 314 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop2_BuyConfirm_5
+PellucaCity_GameCorner_Shop2_BuyConfirm_4:
+# 318 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	giveitem VAR_0x8006
-# 271 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 319 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	removecoins VAR_0x8002
-# 273 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 321 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_1
-# 274 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 322 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop2_BuyConfirm_2:
-# 267 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 303 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop2_BuyConfirm_Text_0, MSGBOX_YESNO
+# 304 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	release
+# 305 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop2_BuyConfirm_7
+	goto PellucaCity_GameCorner_Shop2_BuyConfirm_1
+
+PellucaCity_GameCorner_Shop2_BuyConfirm_5:
+# 315 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop2_Decide
+	goto PellucaCity_GameCorner_Shop2_BuyConfirm_4
+
+PellucaCity_GameCorner_Shop2_BuyConfirm_7:
+# 306 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop2_Decide
 	goto PellucaCity_GameCorner_Shop2_BuyConfirm_1
 
 
-PellucaCity_GameCorner_Shop3::
-# 284 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	lockall
-# 285 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	faceplayer
-# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop3_Text_0
-# 287 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	goto PellucaCity_GameCorner_Shop3_Decide
+PellucaCity_GameCorner_Shop2_NotEnough::
+# 327 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_NotEnough_Text_0
+# 328 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop2_Decide
 	return
 
 
+PellucaCity_GameCorner_Shop3::
+# 337 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	lockall
+# 338 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	faceplayer
+# 341 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem ITEM_COIN_CASE
+# 343 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop3_2
+# 349 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop3_Text_1
+# 350 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop3_Decide
+	return
+
+PellucaCity_GameCorner_Shop3_2:
+# 344 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop3_Text_0
+# 345 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
+
 PellucaCity_GameCorner_Shop3_Decide::
-# 293 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 356 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	showcoinsbox 21, 10
-# 294 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 357 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	message PellucaCity_GameCorner_Shop3_Decide_Text_0
-# 295 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 358 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	waitmessage
-# 297 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 360 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_BLUNDER_POLICY
-# 298 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 361 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultipush PellucaCity_GameCorner_Shop3_Decide_Text_1, ITEM_BLUNDER_POLICY
-# 299 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 362 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_WEAKNESS_POLICY
-# 300 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 363 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultipush PellucaCity_GameCorner_Shop3_Decide_Text_2, ITEM_WEAKNESS_POLICY
-# 301 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 364 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_EJECT_BUTTON
-# 302 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 365 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultipush PellucaCity_GameCorner_Shop3_Decide_Text_3, ITEM_EJECT_BUTTON
-# 303 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 366 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_LOADED_DICE
-# 304 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 367 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultipush PellucaCity_GameCorner_Shop3_Decide_Text_4, ITEM_LOADED_DICE
-# 307 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 370 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
-# 309 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 372 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	hidecoinsbox 21, 10
-# 310 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 373 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_THUNDER_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_2
 PellucaCity_GameCorner_Shop3_Decide_1:
-# 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 374 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_LEAF_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_5
 PellucaCity_GameCorner_Shop3_Decide_4:
-# 312 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 375 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_SUN_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_8
 PellucaCity_GameCorner_Shop3_Decide_7:
-# 313 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 376 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, ITEM_SHINY_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_11
 PellucaCity_GameCorner_Shop3_Decide_10:
-# 315 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 378 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop2_Decide_Text_6
-# 316 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 379 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop3_Decide_2:
-# 310 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 373 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_BLUNDER_POLICY
-# 310 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 373 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_BLUNDER_POLICY
-# 310 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 373 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop3_BuyConfirm
 	goto PellucaCity_GameCorner_Shop3_Decide_1
 
 PellucaCity_GameCorner_Shop3_Decide_5:
-# 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 374 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_WEAKNESS_POLICY
-# 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 374 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_WEAKNESS_POLICY
-# 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 374 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop3_BuyConfirm
 	goto PellucaCity_GameCorner_Shop3_Decide_4
 
 PellucaCity_GameCorner_Shop3_Decide_8:
-# 312 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 375 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_EJECT_BUTTON
-# 312 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 375 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_EJECT_BUTTON
-# 312 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 375 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop3_BuyConfirm
 	goto PellucaCity_GameCorner_Shop3_Decide_7
 
 PellucaCity_GameCorner_Shop3_Decide_11:
-# 313 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 376 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8006, ITEM_LOADED_DICE
-# 313 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 376 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_LOADED_DICE
-# 313 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 376 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop3_BuyConfirm
 	goto PellucaCity_GameCorner_Shop3_Decide_10
 
 
 PellucaCity_GameCorner_Shop3_BuyConfirm::
-# 321 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	showitemdescription
-# 322 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
-# 323 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	hideitemdescription
-# 325 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, 0
+# 386 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkcoins VAR_0x8003
+# 387 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_0x8003, VAR_0x8002, PellucaCity_GameCorner_Shop3_NotEnough
+# 390 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	checkitem VAR_0x8006
+# 391 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 1
 	goto_if_eq PellucaCity_GameCorner_Shop3_BuyConfirm_2
 PellucaCity_GameCorner_Shop3_BuyConfirm_1:
-# 329 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 399 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	showitemdescription
+# 400 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0, MSGBOX_YESNO
+# 401 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	hideitemdescription
+# 403 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop3_BuyConfirm_5
+PellucaCity_GameCorner_Shop3_BuyConfirm_4:
+# 407 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	giveitem VAR_0x8006
-# 330 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 408 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	removecoins VAR_0x8002
-# 332 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 410 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	msgbox PellucaCity_GameCorner_Shop1_BuyConfirm_Text_1
-# 333 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 411 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_GameCorner_Shop3_BuyConfirm_2:
-# 326 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 392 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop2_BuyConfirm_Text_0, MSGBOX_YESNO
+# 393 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	release
+# 394 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PellucaCity_GameCorner_Shop3_BuyConfirm_7
+	goto PellucaCity_GameCorner_Shop3_BuyConfirm_1
+
+PellucaCity_GameCorner_Shop3_BuyConfirm_5:
+# 404 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop3_Decide
+	goto PellucaCity_GameCorner_Shop3_BuyConfirm_4
+
+PellucaCity_GameCorner_Shop3_BuyConfirm_7:
+# 395 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	goto PellucaCity_GameCorner_Shop3_Decide
 	goto PellucaCity_GameCorner_Shop3_BuyConfirm_1
+
+
+PellucaCity_GameCorner_Shop3_NotEnough::
+# 416 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	msgbox PellucaCity_GameCorner_Shop1_NotEnough_Text_0
+# 417 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	goto PellucaCity_GameCorner_Shop3_Decide
+	return
 
 
 # 63 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -770,111 +903,142 @@ PellucaCity_GameCorner_TeachMove_Text_0:
 	.string "Grab a Loaded Dice for extra power!$"
 
 PellucaCity_GameCorner_Shop1_Text_0:
-# 150 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 155 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "Welcome to the TM Corner!\n"
+	.string "Seems like you don't have a Coin Case.\n"
+	.string "Please return with a Coin Case!$"
+
+PellucaCity_GameCorner_Shop1_Text_1:
+# 160 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Welcome to the TM Corner!$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_0:
-# 158 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 168 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Which TM will you purchase?$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_1:
-# 162 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 172 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Haze$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_2:
-# 164 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 174 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Stealth Rock$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_3:
-# 166 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 176 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} X-Scissor$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_4:
-# 168 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 178 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Iron Head$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_5:
-# 170 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 180 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Dark Pulse$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_6:
-# 172 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 182 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Dazzling Gleam$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_7:
-# 174 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 184 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Rock Slide$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_8:
-# 176 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 186 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Drain Punch$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_9:
-# 191 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 201 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Come back any time!\p"
 	.string "...sigh, nobody buys anything from me...$"
 
 PellucaCity_GameCorner_Shop1_BuyConfirm_Text_0:
-# 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 216 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Are you sure?$"
 
 PellucaCity_GameCorner_Shop1_BuyConfirm_Text_1:
-# 208 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 226 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Thank you for your purchase!$"
 
+PellucaCity_GameCorner_Shop1_NotEnough_Text_0:
+# 232 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "You don't have enough coins!$"
+
+PellucaCity_GameCorner_Shop1_AlreadyHave_Text_0:
+# 236 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "You already have this TM!$"
+
 PellucaCity_GameCorner_Shop2_Text_0:
-# 220 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 249 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "Welcome to the Stone Corner!\p"
+	.string "Seems like you don't have a Coin Case.\n"
+	.string "Please return with a Coin Case!$"
+
+PellucaCity_GameCorner_Shop2_Text_1:
+# 254 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Welcome to the Stone Corner!$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_0:
-# 228 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 262 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Which Stone will you purchase?$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_1:
-# 236 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 270 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Thunder Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_2:
-# 238 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 272 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Leaf Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_3:
-# 240 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 274 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Sun Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_4:
-# 242 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 276 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Shiny Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_5:
-# 244 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 278 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Dawn Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_6:
-# 256 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 290 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Come back any time!\p"
 	.string "...what's a kid doing with coins?$"
 
+PellucaCity_GameCorner_Shop2_BuyConfirm_Text_0:
+# 303 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "You already have this item.\n"
+	.string "Do you want another one?$"
+
 PellucaCity_GameCorner_Shop3_Text_0:
-# 286 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 344 "data//maps/PellucaCity_GameCorner/scripts.pory"
+	.string "Welcome to the Item Corner!\p"
+	.string "Seems like you don't have a Coin Case.\n"
+	.string "Please return with a Coin Case!$"
+
+PellucaCity_GameCorner_Shop3_Text_1:
+# 349 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Welcome to the Item Corner!$"
 
 PellucaCity_GameCorner_Shop3_Decide_Text_0:
-# 294 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 357 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Which Item will you purchase?$"
 
 PellucaCity_GameCorner_Shop3_Decide_Text_1:
-# 298 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 361 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Blunder Policy$"
 
 PellucaCity_GameCorner_Shop3_Decide_Text_2:
-# 300 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 363 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Weakness Policy$"
 
 PellucaCity_GameCorner_Shop3_Decide_Text_3:
-# 302 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 365 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Eject Button$"
 
 PellucaCity_GameCorner_Shop3_Decide_Text_4:
-# 304 "data//maps/PellucaCity_GameCorner/scripts.pory"
+# 367 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Loaded Dice$"

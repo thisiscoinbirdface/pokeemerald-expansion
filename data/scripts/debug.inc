@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_MIRROH_BASE_CAMP_GYM, 6, 5
+	warp MAP_PELLUCA_CITY_GAME_CORNER, 12, 11
 	release
 	end
 
