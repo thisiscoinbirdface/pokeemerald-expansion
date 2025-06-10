@@ -44,7 +44,7 @@ SSElegant_Rooms_NPC2::
 
 SSElegant_Rooms_Weezing::
 # 45 "data//maps/SSElegant_Rooms/scripts.pory"
-	playmoncry SPECIES_WEEZING_GALAR, CRY_MODE_NORMAL
+	playmoncry SPECIES_DRAGALGE, CRY_MODE_NORMAL
 # 46 "data//maps/SSElegant_Rooms/scripts.pory"
 	msgbox SSElegant_Rooms_Weezing_Text_0, MSGBOX_NPC
 	end
@@ -130,7 +130,7 @@ SSElegant_Rooms_NPC2_Text_0:
 
 SSElegant_Rooms_Weezing_Text_0:
 # 46 "data//maps/SSElegant_Rooms/scripts.pory"
-	.string "Weezing looks content.$"
+	.string "Dragalge looks content.$"
 
 SSElegant_Rooms_NPC3_Text_0:
 # 52 "data//maps/SSElegant_Rooms/scripts.pory"
