@@ -1452,7 +1452,7 @@ static const u8 sText_ApostropheS[] = _("'s");
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");
 
 const u8 gText_IconSuperEffective[] = _(" {COLOR GREEN}{UP_ARROW}");
-const u8 gText_IconNotVeryEffective[] = _(" {DOWN_ARROW}");
+const u8 gText_IconNotVeryEffective[] = _(" {COLOR LIGHT_GREEN}{DOWN_ARROW}");
 const u8 gText_IconNoEffect[] = _(" {BIG_MULT_X}");
 const u8 gText_IconNormal[] = _(" ");
 

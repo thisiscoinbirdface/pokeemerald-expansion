@@ -1738,11 +1738,6 @@ const u8 *TypeEffectiveness(u32 move, u8 targetId)
 			MulModifier(&mod, mod2);
 		}
 
-		// 10 - normal effectiveness
-		// 24 - super effective
-		// 25 - not very effective
-		// 26 - no effect
-
 		if (mod == UQ_4_12(0.0)) {
 			if(isInverse)
 				return gText_IconSuperEffective;

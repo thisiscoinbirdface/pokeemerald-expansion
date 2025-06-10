@@ -2813,7 +2813,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Smart Trainer
 
-Applin
+Applin @ Sitrus Berry
 Level: 22
 
 
@@ -2851,8 +2851,11 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer
 
-Lokix
+Lokix @ Bug Gem
+Ability: Tinted Lens
 Level: 24
+- Leech Life
+- Assurance
 
 
 
@@ -2893,7 +2896,7 @@ AI: Smart Trainer
 Bronzor @ Colbur Berry
 Level: 24
 
-Grimer-Alola
+Grimer-Alola @ Black Sludge
 Level: 25
 
 
@@ -2935,7 +2938,8 @@ Double Battle: No
 Items: Super Potion
 AI: Check Bad Move
 
-Yanma
+Yanma @ Petaya Berry
+Ability: Speed Boost
 Level: 26
 
 
@@ -3187,16 +3191,19 @@ Slowpoke-Galar
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Grimer-Alola
+Grimer-Alola @ Black Sludge
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Toxic
+- Poison Fang
+- Rock Slide
 
 Yanmega
 Ability: Speed Boost
 Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Air Cutter
-- Lunge
+- Air Slash
+- Bug Buzz
 - Ancient Power
 - Hypnosis
 
@@ -3213,26 +3220,38 @@ Gender: Female
 Music: Aqua
 Double Battle: No
 Items: Full Restore
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Force Setup First Turn / Prediction / Ace Pokemon
 Mugshot: Purple
 
-Slowpoke-Galar @ Leftovers
-Level: 27
-
-Grimer-Alola @ Black Sludge
-Level: 28
-
-Yanmega @ Liechi Berry
+Yanmega @ Petaya Berry
+Modest Nature
 Ability: Speed Boost
 Level: 28
-- Air Cutter
-- Lunge
+- Air Slash
+- Bug Buzz
 - Ancient Power
-- Hypnosis
+
+Slowpoke-Galar @ Light Clay
+Level: 27
+- Light Screen
+- Zen Headbutt
+- Liquidation
+- Yawn
+
+Grimer-Alola @ Poison Barb
+Level: 28
+- Toxic
+- Fling
+- Venoshock
+- Rock Slide
 
 Absol @ Life Orb
+Adamant Nature
 Level: 29
-
+- Knock Off
+- Sucker Punch
+- Swords Dance
+- Play Rough
 
 
 
@@ -3300,14 +3319,23 @@ Level: 25
 
 Kirlia @ Rocky Helmet
 Level: 28
+- Calm Mind
+- Thunder Wave
+- Stored Power
 
 Scyther @ Flying Gem
+Adamant Nature
+Ability: Technician
 Level: 28
+- Dual Wingbeat
+- Thief
+- Bug Bite
 
-Dewott @ Sitrus Berry
+Dewott @ Kings Rock
 Level: 29
 
 Ceruledge @ Sitrus Berry
+Adamant Nature
 Level: 31
 - Swords Dance
 - Shadow Sneak
