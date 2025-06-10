@@ -9708,7 +9708,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FIRE),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 260 : 234,
+        .expYield = 300,//(P_UPDATED_EXP_YIELDS >= GEN_8) ? 260 : 234, boosted for victory cape training
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,

@@ -9436,35 +9436,83 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 
-=== TRAINER_CHAMPIONSHIP_F ===
-Name: JEFF
-Class: Kindler
-Pic: Kindler
-Gender: Male
-Music: Hiker
+=== TRAINER_VICTORYCAPE_A ===
+Name: Shiina
+Difficulty: Easy
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shiinotic
+Level: 58
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Forretress
+Level: 61
 
-=== TRAINER_AXLE ===
-Name: AXLE
-Class: Kindler
-Pic: Kindler
-Gender: Male
-Music: Hiker
+=== TRAINER_VICTORYCAPE_A ===
+Name: Shiina
+Difficulty: Normal
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shiinotic
+Level: 58
+
+Forretress
+Level: 61
+
+
+
+
+
+
+
+
+
+
+=== TRAINER_VICTORYCAPE_B ===
+Name: Axel
+Difficulty: Easy
+Class: Cooltrainer 
+Pic: Cooltrainer M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Basic Trainer
+
+Cetitan
+Level: 60
+
+Chandelure
+Level: 60
+
+=== TRAINER_VICTORYCAPE_B ===
+Name: Axel
+Difficulty: Normal
+Class: Cooltrainer 
+Pic: Cooltrainer M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer
+
+Cetitan
+Level: 60
+
+Chandelure
+Level: 60
+
+
+
+
+
 
 === TRAINER_JACE ===
 Name: JACE
@@ -10578,7 +10626,7 @@ Dustox
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CHAMPIONSHIP_FREY_1 ===
+=== TRAINER_VICTORYCAPE_AREY_1 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -10616,7 +10664,7 @@ Beautifly
 Level: 16
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_CHAMPIONSHIP_FREY_2 ===
+=== TRAINER_VICTORYCAPE_AREY_2 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -10637,7 +10685,7 @@ Surskit
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CHAMPIONSHIP_FREY_3 ===
+=== TRAINER_VICTORYCAPE_AREY_3 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -10658,7 +10706,7 @@ Masquerain
 Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CHAMPIONSHIP_FREY_4 ===
+=== TRAINER_VICTORYCAPE_AREY_4 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -10683,7 +10731,7 @@ Masquerain
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CHAMPIONSHIP_FREY_5 ===
+=== TRAINER_VICTORYCAPE_AREY_5 ===
 Name: JEFFREY
 Class: Bug Maniac
 Pic: Bug Maniac

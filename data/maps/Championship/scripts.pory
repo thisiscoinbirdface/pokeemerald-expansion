@@ -66,6 +66,11 @@ script VictoryCape_Mon5{
     end    
 } 
 
+
+
+
+
+
 //Viniel 
 script VictoryCape_Viniel{
     lockall
@@ -103,5 +108,105 @@ script VictoryCape_Zoroark{
     msgbox(format("Zoroark doesn't seem as scared as Gabrielle is."), MSGBOX_NPC)
     end    
 } 
+
+
+
+
+
+
+
+
+//Trainers
+script VictoryCape_NPC9{
+    msgbox(format("These trainers are so cool.\nThey're giving it their all!\pI wish I was one of them..."), MSGBOX_NPC)
+    end    
+}
+
+script VictoryCape_Trainer_A{
+    lockall
+    msgbox(format("This isn't good enough, Shiinotic!\nWe won't win at this rate!"))
+    faceplayer
+    msgbox(format("Shiinotic and I are doing some last-minute training!\pDo you want to help us?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You'll regret not practicing!"), MSGBOX_NPC)
+        applymovement(VAR_LAST_TALKED, moves(face_right))
+        waitmovement(0)
+        releaseall
+        end
+    }    
+
+    trainerbattle_no_intro(TRAINER_VICTORYCAPE_A, format("We're just not there yet!"))
+    msgbox(format("I'm so scared we'll get knocked out!\nPlease practice with us again, okay?"), MSGBOX_NPC)
+    applymovement(VAR_LAST_TALKED, moves(face_right))
+    waitmovement(0)
+    releaseall
+    end
+}
+script VictoryCape_Shiinotic{
+    playmoncry(SPECIES_SHIINOTIC, CRY_MODE_NORMAL)
+    msgbox(format("Shiinotic's face is scrunched up!\nIt's doing its utmost!"))
+    releaseall
+    end    
+} 
+
+script VictoryCape_Trainer_B{
+    msgbox(format("Nah chum, training with the likes of you is a waste of my time!"), MSGBOX_NPC)
+    applymovement(VAR_LAST_TALKED, moves(face_left))
+    waitmovement(0)
+    releaseall
+    end      
+}
+
+script VictoryCape_Carbink{
+    playmoncry(SPECIES_CARBINK, CRY_MODE_NORMAL)
+    msgbox(format("Carbink is about to use Guard Split!\nThis trainer seems talented..."))
+    releaseall
+    end    
+} 
+
+script VictoryCape_Trainer_C{
+    lockall
+    msgbox(format("Yeah, that's the way Cetitan!\nWe're going to be Pokémon Champions!"))
+    faceplayer
+    msgbox(format("What are you looking at?\nThink you can take us on?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You need some fighting spirit!"), MSGBOX_NPC)
+        applymovement(VAR_LAST_TALKED, moves(face_right))
+        waitmovement(0)
+        releaseall
+        end
+    }    
+
+    trainerbattle_no_intro(TRAINER_VICTORYCAPE_B, format("No way!"))
+    msgbox(format("That's it! We gotta train harder!\nCome back if you want another go!"), MSGBOX_NPC)
+    applymovement(VAR_LAST_TALKED, moves(face_right))
+    waitmovement(0)
+    releaseall
+    end
+}
+script VictoryCape_Cetitan{
+    playmoncry(SPECIES_CETITAN, CRY_MODE_NORMAL)
+    msgbox(format("Cetitan's eyes are bleary, but it refuses to back down!"))
+    releaseall
+    end    
+} 
+
+script VictoryCape_Trainer_D{
+    msgbox(format("Before I fight you, I need to figure out how to beat this Cetitan!"), MSGBOX_NPC)
+    applymovement(VAR_LAST_TALKED, moves(face_right))
+    waitmovement(0)
+    releaseall
+    end    
+}
+
+script VictoryCape_Masquerain{
+    playmoncry(SPECIES_MASQUERAIN, CRY_MODE_NORMAL)
+    msgbox(format("Masquerain is flying all around Cetitan!"))
+    releaseall
+    end    
+} 
+
 
 

@@ -302,7 +302,7 @@ Route120_EventScript_Jenna::
 	end
 
 Route120_EventScript_Jeffrey::
-	trainerbattle_single TRAINER_CHAMPIONSHIP_FREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat, Route120_EventScript_RegisterJeffrey
+	trainerbattle_single TRAINER_VICTORYCAPE_AREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat, Route120_EventScript_RegisterJeffrey
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchJeffrey
 	msgbox Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT
@@ -313,12 +313,12 @@ Route120_EventScript_RegisterJeffrey::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route120_Text_JeffreyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CHAMPIONSHIP_FREY_1
+	register_matchcall TRAINER_VICTORYCAPE_AREY_1
 	release
 	end
 
 Route120_EventScript_RematchJeffrey::
-	trainerbattle_rematch TRAINER_CHAMPIONSHIP_FREY_1, Route120_Text_JeffreyRematchIntro, Route120_Text_JeffreyRematchDefeat
+	trainerbattle_rematch TRAINER_VICTORYCAPE_AREY_1, Route120_Text_JeffreyRematchIntro, Route120_Text_JeffreyRematchDefeat
 	msgbox Route120_Text_JeffreyPostRematch, MSGBOX_AUTOCLOSE
 	end
 

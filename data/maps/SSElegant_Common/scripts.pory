@@ -22,12 +22,12 @@ script SSElegant_Common_Chansey{
 
 //sailor
 script SSElegant_Common_NPC1{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("Don't tell the captain,\nbut I'm feeling a bit seasick!"), MSGBOX_NPC)
     end
 }
 //dude
 script SSElegant_Common_NPC2{
-    msgbox(format(""), MSGBOX_NPC)
+    msgbox(format("They're talking about an unscheduled stop...but there's nothing in the sea before Victory Cape. Where is this stop?"), MSGBOX_NPC)
     end
 }
 

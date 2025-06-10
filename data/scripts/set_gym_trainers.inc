@@ -35,12 +35,12 @@ MauvilleCity_Gym_SetGymTrainers::
 
 LavaridgeTown_Gym_SetGymTrainers::
 	settrainerflag TRAINER_CHAMPIONSHIP_E
-	settrainerflag TRAINER_AXLE
+	settrainerflag TRAINER_VICTORYCAPE_B
 	settrainerflag TRAINER_KEEGAN
 	settrainerflag TRAINER_GERALD
 	settrainerflag TRAINER_DANIELLE
 	settrainerflag TRAINER_JACE
-	settrainerflag TRAINER_CHAMPIONSHIP_F
+	settrainerflag TRAINER_VICTORYCAPE_A
 	settrainerflag TRAINER_ELI
 	return
 

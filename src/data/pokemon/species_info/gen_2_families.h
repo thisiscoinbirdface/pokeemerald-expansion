@@ -4335,7 +4335,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
         .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 118,
+        .expYield = 300, //(P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 118, boosted for victory road training
         .evYield_Defense = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,

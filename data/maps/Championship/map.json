@@ -394,7 +394,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Trainer_D",
       "flag": "0"
     },
     {
@@ -407,7 +407,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Trainer_C",
       "flag": "0"
     },
     {
@@ -420,7 +420,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Trainer_A",
       "flag": "0"
     },
     {
@@ -433,7 +433,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Trainer_B",
       "flag": "0"
     },
     {
@@ -446,11 +446,11 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_NPC9",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMOONGUSS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CARBINK)",
       "x": 19,
       "y": 15,
       "elevation": 0,
@@ -463,7 +463,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMOONGUSS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHIINOTIC)",
       "x": 18,
       "y": 15,
       "elevation": 0,
@@ -472,11 +472,11 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Shiinotic",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMOONGUSS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MASQUERAIN)",
       "x": 20,
       "y": 12,
       "elevation": 0,
@@ -485,11 +485,11 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Masquerain",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMOONGUSS)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CETITAN)",
       "x": 21,
       "y": 12,
       "elevation": 0,
@@ -498,7 +498,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VictoryCape_Cetitan",
       "flag": "0"
     },
     {

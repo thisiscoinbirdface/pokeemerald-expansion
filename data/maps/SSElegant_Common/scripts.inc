@@ -36,7 +36,7 @@ SSElegant_Common_NPC1::
 
 SSElegant_Common_NPC2::
 # 30 "data//maps/SSElegant_Common/scripts.pory"
-	msgbox SSElegant_Common_NPC1_Text_0, MSGBOX_NPC
+	msgbox SSElegant_Common_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
@@ -71,7 +71,15 @@ SSElegant_Common_Chansey_Text_0:
 
 SSElegant_Common_NPC1_Text_0:
 # 25 "data//maps/SSElegant_Common/scripts.pory"
-	.string "$"
+	.string "Don't tell the captain,\n"
+	.string "but I'm feeling a bit seasick!$"
+
+SSElegant_Common_NPC2_Text_0:
+# 30 "data//maps/SSElegant_Common/scripts.pory"
+	.string "They're talking about an unscheduled\n"
+	.string "stop...but there's nothing in the sea\l"
+	.string "before Victory Cape. Where is this\l"
+	.string "stop?$"
 
 SSElegant_Common_Carona_Text_0:
 # 36 "data//maps/SSElegant_Common/scripts.pory"

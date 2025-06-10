@@ -285,11 +285,11 @@
 #define TRAINER_CHAMPIONSHIP_C              199
 #define TRAINER_CHAMPIONSHIP_D              200
 #define TRAINER_CHAMPIONSHIP_E              201
-#define TRAINER_CHAMPIONSHIP_F              202
+#define TRAINER_VICTORYCAPE_A              202
 
 
 //past champions
-#define TRAINER_AXLE                        203
+#define TRAINER_VICTORYCAPE_B                        203
 #define TRAINER_JACE                        204
 #define TRAINER_KEEGAN                      205
 #define TRAINER_BERNIE_1                    206
@@ -321,12 +321,12 @@
 #define TRAINER_BRENT                       223
 #define TRAINER_DONALD                      224
 #define TRAINER_TAYLOR                      225
-#define TRAINER_CHAMPIONSHIP_FREY_1                   226
+#define TRAINER_VICTORYCAPE_AREY_1                   226
 #define TRAINER_DEREK                       227
-#define TRAINER_CHAMPIONSHIP_FREY_2                   228
-#define TRAINER_CHAMPIONSHIP_FREY_3                   229
-#define TRAINER_CHAMPIONSHIP_FREY_4                   230
-#define TRAINER_CHAMPIONSHIP_FREY_5                   231
+#define TRAINER_VICTORYCAPE_AREY_2                   228
+#define TRAINER_VICTORYCAPE_AREY_3                   229
+#define TRAINER_VICTORYCAPE_AREY_4                   230
+#define TRAINER_VICTORYCAPE_AREY_5                   231
 #define TRAINER_EDWARD                      232
 #define TRAINER_PRESTON                     233
 #define TRAINER_VIRGIL                      234
