@@ -42,8 +42,8 @@ script SSElegant_Rooms_NPC2{
     end
 }
 script SSElegant_Rooms_Weezing{
-    playmoncry(SPECIES_WEEZING_GALAR, CRY_MODE_NORMAL)
-    msgbox(format("Weezing looks content."), MSGBOX_NPC)
+    playmoncry(SPECIES_DRAGALGE, CRY_MODE_NORMAL)
+    msgbox(format("Dragalge looks content."), MSGBOX_NPC)
     end
 }
 

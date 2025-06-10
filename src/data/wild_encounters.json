@@ -12568,7 +12568,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 20,
@@ -12588,12 +12588,12 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_SKRELP"
               },
               {
                 "min_level": 20,
@@ -13880,14 +13880,14 @@
             "encounter_rate": 9,
             "mons": [
               {
-                "min_level": 32,
-                "max_level": 35,
-                "species": "SPECIES_FLAAFFY"
+                "min_level": 29,
+                "max_level": 34,
+                "species": "SPECIES_ZORUA_HISUI"
               },
               {
-                "min_level": 32,
-                "max_level": 35,
-                "species": "SPECIES_FLAAFFY"
+                "min_level": 29,
+                "max_level": 34,
+                "species": "SPECIES_THIEVUL"
               },
               {
                 "min_level": 32,

@@ -8462,7 +8462,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Weezing-Galar
+Dragalge
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8480,7 +8480,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 
-Weezing-Galar
+Dragalge
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -9308,6 +9308,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Samurott @ Leftovers
+Ability: Sharpness
 Level: 65
 EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -9369,6 +9370,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Samurott @ Leftovers
+Ability: Sharpness
 Level: 65
 EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
