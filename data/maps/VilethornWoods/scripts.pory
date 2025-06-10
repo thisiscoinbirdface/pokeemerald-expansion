@@ -374,6 +374,7 @@ script VilethornWoods_Celebi_Seed{
 
         if (var(VAR_RESULT) == 1){
             msgbox(format("Water with the Water of Time?"), MSGBOX_YESNO)
+            release
 
             if (var(VAR_RESULT) == 1){
                 setvar(VAR_CELEBI, 2)
@@ -405,6 +406,7 @@ script VilethornWoods_Celebi_Seed{
             }
 
         }
+        releaseall
         end
 
     }
@@ -417,7 +419,7 @@ script VilethornWoods_Celebi_Seed{
 
         if (var(VAR_RESULT) == 1){
             msgbox(format("Plant a Seed of Time?"), MSGBOX_YESNO)
-
+            release
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_TIME_SEED)
                 setvar(VAR_CELEBI, 1)
@@ -428,9 +430,10 @@ script VilethornWoods_Celebi_Seed{
             }
 
         }
+        releaseall
         end
     }
-
+    releaseall
     end
 }
 

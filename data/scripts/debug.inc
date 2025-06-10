@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_CHAMPIONSHIP_VENUE, 10, 10
+	warp MAP_VICTORY_ROAD_CORMORIA, 10, 64
 	release
 	end
 
