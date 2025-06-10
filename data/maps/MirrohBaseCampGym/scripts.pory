@@ -242,15 +242,28 @@ script MirrohBaseCampGym_TrainerB{
 
 script MirrohBaseCampGym_Leader{
     lockall
-    faceplayer
-    
+
     if (flag(FLAG_BADGE05_GET)){
+        faceplayer        
         speakername("Carona")
         msgbox(format("Use your power wisely. As for me, it's time to move on."))
     } else {
+
         special(SaveGame)
         waitstate
         release
+
+        //move player
+        specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+        if (var(VAR_RESULT) == DIR_SOUTH){
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_down face_right))
+            waitmovement(0)
+        }
+        if (var(VAR_RESULT) == DIR_NORTH){
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left walk_up face_right))
+            waitmovement(0)
+        }
 
         //Intro
         speakername("Carona")
