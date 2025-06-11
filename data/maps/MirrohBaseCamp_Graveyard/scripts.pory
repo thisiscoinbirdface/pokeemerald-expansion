@@ -30,7 +30,7 @@ script MirrohBaseCamp_Graveyard_KohlaBattle{
     //stare at player
     delay(48)    
     speakername("Kohla")
-    msgbox(format("I have to carry on.\pI'll see you at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}."))
+    msgbox(format("I have to carry on.\pI'll see you at Mt. Mirroh."))
     release
     delay(48)
     applymovement(1, moves(walk_left * 5 walk_down * 7))

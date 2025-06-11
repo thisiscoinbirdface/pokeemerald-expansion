@@ -28,7 +28,7 @@ script IvyRiver_Ranger_FirstQuest{
         //first part
         lockall
         faceplayer
-        msgbox(format("Hmm? A Recruit?\pThen I must welcome you to the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} Ranger Institute!\pWe're a tad remote, but we've made this place our home...and yours too!\p..."))
+        msgbox(format("Hmm? A Recruit?\pThen I must welcome you to the Ivy River Ranger Institute!\pWe're a tad remote, but we've made this place our home...and yours too!\p..."))
         release
         delay(8)
         applymovement(LOCALID_MAIN, moves(emote_question_mark))
@@ -44,7 +44,7 @@ script IvyRiver_Ranger_FirstQuest{
         applymovement(LOCALID_MAIN, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)            
-        msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff.\pYou see, {PLAYER}, the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} Ranger Institute studies Pokémon mega evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about these abnormal evolutions. This has become particularly important since the Mega Sharpedo incident..."))
+        msgbox(format("Ahh, yes, yes. The supplies have arrived! Excellent!\pExciting stuff.\pYou see, {PLAYER}, the Ivy River Ranger Institute studies Pokémon mega evolutions. To maintain a robust Pokémon ecosystem, we need to know as much as we can about these abnormal evolutions. This has become particularly important since the Mega Sharpedo incident..."))
         release
         delay(16)
         msgbox(format("Director Ravine has sent us a collection of rare mega stones.\pWe've been eagerly waiting for this!\pThank you, {PLAYER}!\pAnd am I correct in assuming that this is your first mission?\p...\pIn that case, I officially declare that you've cleared your first mission.\pI now promote you to the rank of Pokémon Ranger Candidate!"))
@@ -165,7 +165,7 @@ script IvyRiver_Ranger_TaurosTrigger{
 
         applymovement(LOCALID_TAUROS_RANGER, moves(face_up))
         waitmovement(0)
-        msgbox(format("See this here Tauros? This is my baby right here - raised him all by myself, I did! This one's been trained specially to take Rangers up and down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} in a flash! You can head straight to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} or even to the {COLOR BLUE}Route 6{COLOR DARK_GRAY} HQ if you like! All Candidates can use it."))
+        msgbox(format("See this here Tauros? This is my baby right here - raised him all by myself, I did! This one's been trained specially to take Rangers up and down Mt. Mirroh in a flash! You can head straight to Pelluca City or even to the Route 6 HQ if you like! All Candidates can use it."))
         release
 
         setflag(FLAG_RANGER_TAUROS_USE)
@@ -179,7 +179,7 @@ script IvyRiver_Ranger_TaurosBreeder{
     if (flag(FLAG_RANGER_TAUROS_USE)){
         msgbox(format("Gotta love the speed on this bull, eh?"), MSGBOX_NPC)
     } else {
-        msgbox(format("This here Tauros is my baby! It can take you up and down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}...oh, you aren't a Ranger Candidate yet?\pSorry, only Ranger Candidates are allowed to ride the Tauros."), MSGBOX_NPC)
+        msgbox(format("This here Tauros is my baby! It can take you up and down Mt. Mirroh...oh, you aren't a Ranger Candidate yet?\pSorry, only Ranger Candidates are allowed to ride the Tauros."), MSGBOX_NPC)
     }
     end
 }
@@ -214,7 +214,7 @@ script IvyRiver_Ranger_Scientist_A{
     }
 
     //quest
-    msgbox(format("Did you know that Shiinotic emits spores that cause drowsiness?\pI'm studying whether those spores may be connected to mega evolution somehow. But since we're so far away from {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}, it's hard to conduct experiments."), MSGBOX_NPC)
+    msgbox(format("Did you know that Shiinotic emits spores that cause drowsiness?\pI'm studying whether those spores may be connected to mega evolution somehow. But since we're so far away from Vilethorn Woods, it's hard to conduct experiments."), MSGBOX_NPC)
     
     showmonpic(SPECIES_SHIINOTIC, 10, 3)
     msgbox(format("Do you have a Shiinotic that\nI can take spore samples of?"), MSGBOX_YESNO)

@@ -192,7 +192,7 @@ Championship_R2_Text_1:
 	.string "trainers! Show your support!\p"
 	.string "The previous round featured some\n"
 	.string "explosive matches, with crowd\l"
-	.string "favourite {COLOR GREEN}Kohla{COLOR DARK_GRAY} bulldozing...$"
+	.string "favourite Kohla bulldozing...$"
 
 Championship_R2_Text_2:
 # 35 "data//maps/Championship_R2/scripts.pory"
@@ -217,8 +217,8 @@ Championship_R2_Text_5:
 	.string "that Pinsir and I had what it takes to\l"
 	.string "become the Champion.\p"
 	.string "I know you. I've lost to you before.\p"
-	.string "We fought in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}.\n"
-	.string "And then again in the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.\p"
+	.string "We fought in Vilethorn Woods.\n"
+	.string "And then again in the Ivy River.\p"
 	.string "But this battle is different.\n"
 	.string "The stakes are different.\p"
 	.string "I'M different!$"

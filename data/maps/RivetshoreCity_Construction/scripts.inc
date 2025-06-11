@@ -182,7 +182,7 @@ RivetshoreCity_Construction_Nurse_Text_0:
 
 RivetshoreCity_Construction_NPC1_Text_0:
 # 14 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	.string "I came from {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Our bridge was\n"
+	.string "I came from Pelluca City. Our bridge was\n"
 	.string "built by Rivetshore Construction!$"
 
 RivetshoreCity_Construction_NPC2_Text_0:
@@ -295,5 +295,5 @@ RivetshoreCity_Construction_CEO_Text_7:
 RivetshoreCity_Construction_CEO_Text_8:
 # 112 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Brilliant! Percy must be somewhere in\n"
-	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY}. It can't swim!\p"
+	.string "Rivetshore City. It can't swim!\p"
 	.string "I'll be waiting here for my Percy.$"

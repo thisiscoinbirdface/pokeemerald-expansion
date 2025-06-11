@@ -29,7 +29,7 @@ script Championship_R2{
     waitmovement(0)
     delay(16)
     
-    msgbox_delay("Announcer", format("We're back with the round of 16 in the Cormoria Pokémon Championship!\pLet's hear a huge cheer for the trainers! Show your support!\pThe previous round featured some explosive matches, with crowd favourite {COLOR GREEN}Kohla{COLOR DARK_GRAY} bulldozing..."))
+    msgbox_delay("Announcer", format("We're back with the round of 16 in the Cormoria Pokémon Championship!\pLet's hear a huge cheer for the trainers! Show your support!\pThe previous round featured some explosive matches, with crowd favourite Kohla bulldozing..."))
 
     applymovement(1, moves(jump_in_place_left))
     msgbox_delay("Stanja", format("How pointless - praising an early victory when the only thing that matters is who becomes the Champion!"))
@@ -37,7 +37,7 @@ script Championship_R2{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Stanja", format("I'm Stanja, the ultimate Bug Maniac!\pMy goal was to become a Gym Leader, but then do you know what happened?\pI beat them all! And then I realised that Pinsir and I had what it takes to become the Champion.\pI know you. I've lost to you before.\pWe fought in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}.\nAnd then again in the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.\pBut this battle is different.\nThe stakes are different.\pI'M different!"))
+    msgbox_delay("Stanja", format("I'm Stanja, the ultimate Bug Maniac!\pMy goal was to become a Gym Leader, but then do you know what happened?\pI beat them all! And then I realised that Pinsir and I had what it takes to become the Champion.\pI know you. I've lost to you before.\pWe fought in Vilethorn Woods.\nAnd then again in the Ivy River.\pBut this battle is different.\nThe stakes are different.\pI'M different!"))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_B, format("I was so close!"))
 

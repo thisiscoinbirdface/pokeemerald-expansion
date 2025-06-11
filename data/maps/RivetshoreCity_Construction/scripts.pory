@@ -11,7 +11,7 @@ script RivetshoreCity_Construction_Nurse{
     end
 }
 script RivetshoreCity_Construction_NPC1{
-    msgbox(format("I came from {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Our bridge was built by Rivetshore Construction!"), MSGBOX_NPC)
+    msgbox(format("I came from Pelluca City. Our bridge was built by Rivetshore Construction!"), MSGBOX_NPC)
     end
 }
 script RivetshoreCity_Construction_NPC2{
@@ -109,7 +109,7 @@ script RivetshoreCity_Construction_CEO{
             end
         }
         
-        msgbox_delay("CEO", format("Brilliant! Percy must be somewhere in {COLOR RED}Rivetshore City{COLOR DARK_GRAY}. It can't swim!\pI'll be waiting here for my Percy."))
+        msgbox_delay("CEO", format("Brilliant! Percy must be somewhere in Rivetshore City. It can't swim!\pI'll be waiting here for my Percy."))
         clearflag(FLAG_HIDE_RIVETSHORE_PERCY)
 
         setvar(VAR_RIVETSHORE_CEO_QUEST, 1)

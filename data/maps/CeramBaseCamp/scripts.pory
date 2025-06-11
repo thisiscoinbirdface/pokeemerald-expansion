@@ -32,7 +32,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
     applymovement(7, moves(face_left emote_exclamation_mark))
     waitmovement(0)
     release
-    msgbox(format("Hey kid! The rules are you can't climb unless you have the Cinder Badge. If you can't beat {COLOR RED}Ariana{COLOR DARK_GRAY}, you won't be able to handle the heat of the mountain!"))
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the Cinder Badge. If you can't beat Ariana, you won't be able to handle the heat of the mountain!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -40,7 +40,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
 }
 
 script CeramBaseCamp_NPC_Exit{
-    msgbox(format("{COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."), MSGBOX_NPC)
+    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."), MSGBOX_NPC)
     end
 }
 
@@ -59,7 +59,7 @@ script CeramBaseCamp_NPC2{
 
 //NPC3 - generic
 script CeramBaseCamp_NPC3{
-    msgbox(format("We get many hikers and collectors pass through the base camp, because they want to climb {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}."), MSGBOX_NPC)
+    msgbox(format("We get many hikers and collectors pass through the base camp, because they want to climb Mt. Ceram."), MSGBOX_NPC)
     end
 }
 
@@ -96,7 +96,7 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled {COLOR RED}Ariana{COLOR DARK_GRAY} and Cyndaquil's FIRE moves did nothing! Since then we've been trying to learn some other moves but it's just not working...say, would you be able to help us out? Will you find the TM Acid Spray and teach my Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("We battled Ariana and Cyndaquil's FIRE moves did nothing! Since then we've been trying to learn some other moves but it's just not working...say, would you be able to help us out? Will you find the TM Acid Spray and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
@@ -187,7 +187,7 @@ script CeramBaseCamp_Cyndaquil_Reward_End{
     applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))
     waitmovement(0)    
     delay(20)
-    msgbox(format("You're saying Acid Spray is a weak move anyway and WATER or GROUND type moves are better against {COLOR RED}Ariana{COLOR DARK_GRAY}?\nSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
+    msgbox(format("You're saying Acid Spray is a weak move anyway and WATER or GROUND type moves are better against Ariana?\nSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
     release
     delay(16)
     applymovement(LOCALID_DUDE, moves(face_up))
@@ -220,7 +220,7 @@ script CeramBaseCamp_NPC5{
     } else {
         lockall
         faceplayer
-        msgbox(format("I found these weird trinkets when I went up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}."))
+        msgbox(format("I found these weird trinkets when I went up Mt. Ceram."))
         goto(CeramBaseCamp_Dude_Reward)
     }
     end

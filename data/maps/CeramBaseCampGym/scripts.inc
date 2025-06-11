@@ -416,7 +416,7 @@ CeramBaseCampGym_Red_Text_1:
 
 CeramBaseCampGym_Red_Text_2:
 # 21 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The Gym Leader {COLOR RED}Ariana{COLOR DARK_GRAY}, who also manages\n"
+	.string "The Gym Leader Ariana, who also manages\n"
 	.string "the base camp, specialises in\l"
 	.string "intimidating FIRE type Pokémon. An Occa\l"
 	.string "Berry might come in useful.\p"
@@ -424,7 +424,7 @@ CeramBaseCampGym_Red_Text_2:
 
 CeramBaseCampGym_Red_Text_3:
 # 23 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Welcome to the {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}\n"
+	.string "Welcome to the Ceram Base Camp\n"
 	.string "Management Office And Gym! First, have\l"
 	.string "some water.$"
 
@@ -456,7 +456,7 @@ CeramBaseCampGym_Guard_Text_0:
 
 CeramBaseCampGym_NPC_A_Text_0:
 # 95 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "I can't battle. {COLOR RED}Ariana{COLOR DARK_GRAY} tried to teach me\n"
+	.string "I can't battle. Ariana tried to teach me\n"
 	.string "but her Pokémon are so intimidating!$"
 
 CeramBaseCampGym_NPC_B_Text_0:
@@ -594,13 +594,13 @@ CeramBaseCampGym_LeaderBattle_Text_2:
 # 240 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I could not be more pleased, {PLAYER}.\n"
 	.string "The way you stand, you might be able to\l"
-	.string "handle yourself on {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. I present\l"
+	.string "handle yourself on Mt. Ceram. I present\l"
 	.string "you with the Cinder Badge.$"
 
 CeramBaseCampGym_LeaderBattle_Text_3:
 # 241 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the Cinder Badge\n"
-	.string "from {COLOR RED}Ariana{COLOR DARK_GRAY}.$"
+	.string "from Ariana.$"
 
 CeramBaseCampGym_LeaderBattle_Text_4:
 # 250 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -615,13 +615,13 @@ CeramBaseCampGym_LeaderBattle_Text_6:
 # 258 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Since this is your second badge, you\n"
 	.string "must know what these shards do by now.\l"
-	.string "There's a statue close to {COLOR BLUE}Route 4{COLOR DARK_GRAY}, so\l"
+	.string "There's a statue close to Route 4, so\l"
 	.string "why don't you use these there?$"
 
 CeramBaseCampGym_LeaderBattle_Text_7:
 # 265 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I hope you manage to find the\n"
-	.string "dreamstone and Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
+	.string "dreamstone and Professor Tenebris.\p"
 	.string "I wonder if I can do something...\n"
 	.string "Here, maybe you could use this.$"
 
@@ -629,7 +629,7 @@ CeramBaseCampGym_LeaderBattle_Text_8:
 # 268 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I got this for Sizzlipede but it can't\n"
 	.string "learn Acid Spray!\p"
-	.string "I don't know why {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is after\n"
+	.string "I don't know why Team Somber is after\n"
 	.string "the dreamstones, but be careful if you\l"
 	.string "run into them!\p"
 	.string "Good luck, {PLAYER}!$"

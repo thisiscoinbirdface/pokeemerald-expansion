@@ -1380,7 +1380,7 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_2:
 
 CarabrueTown_TenebrisLab_EventScript_Start_Text_3:
 # 30 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "I'm Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY} and\n"
+	.string "I'm Assistant Professor Rue and\n"
 	.string "welcome to the Tenebris Laboratory...\l"
 	.string "...er...{PLAYER}, was it?$"
 
@@ -1411,8 +1411,8 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_6:
 	.string "So I'm just going to have you start\n"
 	.string "working right away, okay?\p"
 	.string "We've been running low on supplies and\n"
-	.string "the nearest Poké Mart is in {COLOR GREEN}Fennilahl\l"
-	.string "Town{COLOR DARK_GRAY}, past {COLOR BLUE}Route 1{COLOR DARK_GRAY}.\p"
+	.string "the nearest Poké Mart is in Fennilahl\l"
+	.string "Town, past Route 1.\p"
 	.string "Please go and pick up our shipment and\n"
 	.string "bring it back.\p"
 	.string "Be careful! There are some important\n"
@@ -1425,7 +1425,7 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_7:
 	.string "Pokéballs lying around the lab.\p"
 	.string "If we had our supplies, I could give you\n"
 	.string "the standard companion Pokémon,\l"
-	.string "but without Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY},\l"
+	.string "but without Professor Tenebris,\l"
 	.string "everything's gone haywire here.\p"
 	.string "You'll have to make do with what you\n"
 	.string "find lying around.\p"
@@ -1445,7 +1445,7 @@ CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives_Text_1:
 # 112 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "On the way, could you give the evidence\n"
 	.string "bag you have to the detectives?\l"
-	.string "They're waiting by the {COLOR BLUE}Route 1{COLOR DARK_GRAY} exit.$"
+	.string "They're waiting by the Route 1 exit.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_0:
 # 139 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1472,7 +1472,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_4:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_5:
 # 167 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "WHAT?! Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took them?\p"
+	.string "WHAT?! Professor Tenebris took them?\p"
 	.string "Sigh...thanks for telling me, {PLAYER}.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_6:
@@ -1563,7 +1563,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_16:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_17:
 # 254 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "We'll do our best, {COLOR BLUE}Rue{COLOR DARK_GRAY}. But we're\n"
+	.string "We'll do our best, Rue. But we're\n"
 	.string "detectives - we can uncover her tracks,\l"
 	.string "but we can't unravel her mind.\l"
 	.string "We'll need some help from one of you.$"
@@ -1609,7 +1609,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_25:
 	.string "none of us can leave the lab.\p"
 	.string "The dreamstones are scattered all\n"
 	.string "across Cormoria. Have you ever\l"
-	.string "traveled beyond {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}?\p"
+	.string "traveled beyond Fennilahl Town?\p"
 	.string "Cormoria is vast and filled with\n"
 	.string "dangerous Pokémon. I fear you may\l"
 	.string "not be up to the task...$"
@@ -1622,7 +1622,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_26:
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_27:
 # 316 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "{PLAYER} received a Pokedex from\n"
-	.string "Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}.$"
+	.string "Assistant Professor Rue.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_28:
 # 321 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1643,7 +1643,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_30:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_31:
 # 342 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Get it together, {COLOR BLUE}Rue{COLOR DARK_GRAY}. The other\n"
+	.string "Get it together, Rue. The other\n"
 	.string "researchers are counting on you.\l"
 	.string "Have some faith in us...and...\p"
 	.string "...well...\p"
@@ -1665,7 +1665,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_34:
 	.string "{PLAYER}?\p"
 	.string "Pshh, whatever. Look at you! Your\n"
 	.string "Pokémon look exhausted after a\l"
-	.string "single trip to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}!$"
+	.string "single trip to Fennilahl Town!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_35:
 # 374 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1678,7 +1678,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_36:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_37:
 # 386 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Meet {COLOR GREEN}Kohla{COLOR DARK_GRAY}, this year's {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}\n"
+	.string "Meet Kohla, this year's Ace Rookie\n"
 	.string "from the Detective Academy.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_38:
@@ -1693,7 +1693,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_39:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_40:
 # 398 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Now hold on {COLOR GREEN}Kohla{COLOR DARK_GRAY}, there's no need for\n"
+	.string "Now hold on Kohla, there's no need for\n"
 	.string "all this. {PLAYER} is representing the\l"
 	.string "Professor's lab. We need someone from\l"
 	.string "the lab to help track the dreamstones.$"
@@ -1717,7 +1717,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_44:
 	.string "Pah! A single battle means nothing!\n"
 	.string "You haven't been through what I have.\l"
 	.string "It takes effort and discipline to\l"
-	.string "become an {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}. Just you wait -\l"
+	.string "become an Ace Rookie. Just you wait -\l"
 	.string "I'll be the one to find the dreamstone!$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_45:
@@ -1726,27 +1726,27 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_45:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_46:
 # 439 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Well {COLOR BLUE}Rue{COLOR DARK_GRAY}, it looks like your assistant's\n"
+	.string "Well Rue, it looks like your assistant's\n"
 	.string "got some backbone.\p"
 	.string "{PLAYER}, we're counting on you and\n"
-	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} to get the dreamstone while we\l"
-	.string "track Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
+	.string "Kohla to get the dreamstone while we\l"
+	.string "track Professor Tenebris.\p"
 	.string "Rue, do you know anything of the\n"
 	.string "whereabouts of the other dreamstones?$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_47:
 # 443 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "One lies somewhere inside {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\n"
-	.string "{PLAYER}, {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is further east\l"
-	.string "from {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}. You'll have to\l"
-	.string "reach {COLOR GREEN}Gastree City{COLOR DARK_GRAY}, and then make your\l"
+	.string "One lies somewhere inside Mt. Ceram.\n"
+	.string "{PLAYER}, Mt. Ceram is further east\l"
+	.string "from Fennilahl Town. You'll have to\l"
+	.string "reach Gastree City, and then make your\l"
 	.string "way up north towards the mountain.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_48:
 # 447 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "{PLAYER} - you know what to do. Head\n"
-	.string "east to {COLOR GREEN}Gastree City{COLOR DARK_GRAY}. From there, make\l"
-	.string "your way to {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} and find the\l"
+	.string "east to Gastree City. From there, make\l"
+	.string "your way to Mt. Ceram and find the\l"
 	.string "dreamstone that's there.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_49:
@@ -1758,7 +1758,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_49:
 CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric_Text_0:
 # 470 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Don't let one victory get to your head.\n"
-	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY}'s already got a head start.\l"
+	.string "Kohla's already got a head start.\l"
 	.string "Better hurry if you want to catch up!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_0:
@@ -1803,7 +1803,7 @@ NicknameBoxMon_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_Text_0:
 # 621 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY} told me not to\n"
+	.string "Assistant Professor Rue told me not to\n"
 	.string "leave without a Pokémon to protect me!$"
 
 CarabrueTown_TenebrisLab_EventScript_Rue_Text_0:
@@ -1812,7 +1812,7 @@ CarabrueTown_TenebrisLab_EventScript_Rue_Text_0:
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0:
 # 646 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "I can't believe {COLOR BLUE}Rue{COLOR DARK_GRAY} was behind this\n"
+	.string "I can't believe Rue was behind this\n"
 	.string "whole mess! I wish I'd caught on sooner!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_1:
@@ -1829,14 +1829,14 @@ CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0:
 CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_1:
 # 660 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm so grateful we have Assistant\n"
-	.string "Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}. Without him to step in\l"
-	.string "for Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, we'd have had\l"
+	.string "Professor Rue. Without him to step in\l"
+	.string "for Professor Tenebris, we'd have had\l"
 	.string "to shut the lab down.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:
 # 666 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Go on, {PLAYER}! Bring the\n"
-	.string "championship trophy to {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY}!$"
+	.string "championship trophy to Carabrue Town!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1:
 # 671 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -1868,7 +1868,7 @@ CarabrueTown_TenebrisLab_Gardevoir_Text_2:
 
 CarabrueTown_TenebrisLab_Metagross_Text_0:
 # 697 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "It's Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}'s Metagross. It's so\n"
+	.string "It's Asst. Prof. Rue's Metagross. It's so\n"
 	.string "intimidating!$"
 
 CarabrueTown_TenebrisLab_Tenebris_Text_0:

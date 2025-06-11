@@ -170,7 +170,7 @@ Champ_Mart_B_Text_0:
 Champ_Mart_C_Text_0:
 # 35 "data//maps/Championship_Pokemart/scripts.pory"
 	.string "Welcome to the Gardenery Corner!\p"
-	.string "We came all the way from {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} to\n"
+	.string "We came all the way from Mt. Mirroh to\n"
 	.string "open a stall here!$"
 
 Champ_Mart_C_Text_1:

@@ -655,7 +655,7 @@ Route4_EventScript_EvilTeam_Text_4:
 # 37 "data//maps/Route4/scripts.pory"
 	.string "You don't want to budge? Grr...alright\n"
 	.string "fine, we're not construction workers.\l"
-	.string "We're {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! And now we're going\l"
+	.string "We're Team Somber! And now we're going\l"
 	.string "to teach you a lesson!$"
 
 Route4_EventScript_EvilTeam_Text_5:
@@ -669,8 +669,8 @@ Route4_EventScript_EvilTeamDefeated_Text_0:
 
 Route4_EventScript_EvilTeamDefeated_Text_1:
 # 61 "data//maps/Route4/scripts.pory"
-	.string "We gotta tell the boss at {COLOR RED}Ceram Base\n"
-	.string "Camp{COLOR DARK_GRAY} about this!$"
+	.string "We gotta tell the boss at Ceram Base\n"
+	.string "Camp about this!$"
 
 Route4_EventScript_EvilTeamDefeated_Text_2:
 # 66 "data//maps/Route4/scripts.pory"
@@ -857,7 +857,7 @@ Route4_NPC_Couple2_Text_0:
 Route4_NPC_A_Text_0:
 # 265 "data//maps/Route4/scripts.pory"
 	.string "I don't understand why they don't just\n"
-	.string "build a bridge to {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}.\p"
+	.string "build a bridge to Ceram Base Camp.\p"
 	.string "Sure, trainers can cross with HM Splash,\n"
 	.string "but the city management needs to think\l"
 	.string "about us civilians too.\p"
@@ -889,7 +889,7 @@ Route4_NPC_Cook_Text_1:
 # 289 "data//maps/Route4/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over Cormoria. And if you\l"
-	.string "ever visit {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, be sure to drop\l"
+	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
 Route4_NPC_Cook_Text_2:
@@ -901,7 +901,7 @@ Route4_NPC_Cook_Text_2:
 	.string "across Cormoria to find the best\l"
 	.string "ingredients for the restaurant! I'm\l"
 	.string "looking for a special berry that only\l"
-	.string "grows around {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. It's called a\l"
+	.string "grows around Mt. Ceram. It's called a\l"
 	.string "Rawst Berry. If you happen to have one,\l"
 	.string "would you give it to me?$"
 
@@ -948,6 +948,6 @@ Route4_NPC_Cook_RewardA_Text_0:
 Route4_NPC_D_Text_0:
 # 372 "data//maps/Route4/scripts.pory"
 	.string "There are some grunts blocking the\n"
-	.string "path to {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}! They remind me\l"
+	.string "path to Ceram Base Camp! They remind me\l"
 	.string "of my younger days...I used to be in an\l"
 	.string "evil team in the Hoenn region.$"

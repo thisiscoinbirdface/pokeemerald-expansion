@@ -405,7 +405,7 @@ SilversunCity_OnFrame_Text_0:
 
 SilversunCity_OnFrame_Text_1:
 # 32 "data//maps/SilversunCity/scripts.pory"
-	.string "Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}!? Are you okay?$"
+	.string "Asst. Prof. Rue!? Are you okay?$"
 
 SilversunCity_OnFrame_Text_2:
 # 33 "data//maps/SilversunCity/scripts.pory"
@@ -417,15 +417,15 @@ SilversunCity_OnFrame_Text_3:
 
 SilversunCity_OnFrame_Text_4:
 # 36 "data//maps/SilversunCity/scripts.pory"
-	.string "We...we thought it was Professor {COLOR GREEN}\n"
-	.string "Tenebris{COLOR DARK_GRAY} with them, not you! At any\l"
+	.string "We...we thought it was Professor\n"
+	.string "Tenebris with them, not you! At any\l"
 	.string "rate, {PLAYER}, this is a splendid\l"
 	.string "outcome. You saved your Assistant\l"
 	.string "Professor from any harm.$"
 
 SilversunCity_OnFrame_Text_5:
 # 42 "data//maps/SilversunCity/scripts.pory"
-	.string "How did they get to you, {COLOR BLUE}Rue{COLOR DARK_GRAY}?$"
+	.string "How did they get to you, Rue?$"
 
 SilversunCity_OnFrame_Text_6:
 # 48 "data//maps/SilversunCity/scripts.pory"
@@ -446,8 +446,8 @@ SilversunCity_OnFrame_Text_7:
 SilversunCity_OnFrame_Text_8:
 # 56 "data//maps/SilversunCity/scripts.pory"
 	.string "Just like we heard from {PLAYER}\n"
-	.string "about being transported to {COLOR RED}Ancient\l"
-	.string "Cormoria{COLOR DARK_GRAY}, they heard about it from their\l"
+	.string "about being transported to Ancient\l"
+	.string "Cormoria, they heard about it from their\l"
 	.string "grunt who went too. I think they called\l"
 	.string "her Gabrielle. And now they want to use\l"
 	.string "the Dreamalyser to control the power of\l"
@@ -458,7 +458,7 @@ SilversunCity_OnFrame_Text_8:
 SilversunCity_OnFrame_Text_9:
 # 62 "data//maps/SilversunCity/scripts.pory"
 	.string "So they want to build a Dreamalyser and\n"
-	.string "use it to go to {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}?$"
+	.string "use it to go to Ancient Cormoria?$"
 
 SilversunCity_OnFrame_Text_10:
 # 65 "data//maps/SilversunCity/scripts.pory"
@@ -471,8 +471,8 @@ SilversunCity_OnFrame_Text_11:
 	.string "What could they want?\p"
 	.string "...\p"
 	.string "...\p"
-	.string "...and where's {COLOR GREEN}Kohla{COLOR DARK_GRAY} when we need him?\n"
-	.string "{COLOR BLUE}Rue{COLOR DARK_GRAY}, he was chasing your leads. He's\l"
+	.string "...and where's Kohla when we need him?\n"
+	.string "Rue, he was chasing your leads. He's\l"
 	.string "nowhere to be seen now. Sigh...what good\l"
 	.string "is an ace rookie if he's not even around\l"
 	.string "when we need him?$"
@@ -489,23 +489,23 @@ SilversunCity_OnFrame_Text_13:
 
 SilversunCity_OnFrame_Text_14:
 # 81 "data//maps/SilversunCity/scripts.pory"
-	.string "{PLAYER} - to find out what {COLOR BLUE}Team\n"
-	.string "Somber{COLOR DARK_GRAY} wants with the past, we need to\l"
-	.string "find out more about {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}.\p"
+	.string "{PLAYER} - to find out what Team\n"
+	.string "Somber wants with the past, we need to\l"
+	.string "find out more about Ancient Cormoria.\p"
 	.string "I have an old acquaintance at the\n"
-	.string "{COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}. She was a reputed\l"
+	.string "Mirroh Base Camp. She was a reputed\l"
 	.string "historian in her time and now manages\l"
 	.string "the graveyard at the base camp.\p"
 	.string "Please go there and tell her everything\n"
 	.string "you know.\p"
-	.string "Got it? Head to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY},\n"
+	.string "Got it? Head to the Mirroh Base Camp,\n"
 	.string "talk to the lady who manages the\l"
-	.string "graveyard, and find out what {COLOR BLUE}Team\l"
-	.string "Somber{COLOR DARK_GRAY} seeks in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}.\p"
+	.string "graveyard, and find out what Team\l"
+	.string "Somber seeks in Ancient Cormoria.\p"
 	.string "Now get on it, pronto!\p"
 	.string "...\p"
-	.string "Seriously, where is {COLOR GREEN}Kohla{COLOR DARK_GRAY}? He should be\n"
-	.string "done chasing {COLOR BLUE}Rue{COLOR DARK_GRAY}'s leads by now...we've\l"
+	.string "Seriously, where is Kohla? He should be\n"
+	.string "done chasing Rue's leads by now...we've\l"
 	.string "got to go find him.$"
 
 SilversunCity_EventScript_Detectives_Text_0:
@@ -531,23 +531,23 @@ SilversunCity_EventScript_Detectives_Text_3:
 	.string "Better. Now tell me - what updates have\n"
 	.string "you got?\p"
 	.string "...\p"
-	.string "What!? You overheard a {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\n"
+	.string "What!? You overheard a Team Somber\n"
 	.string "grunt talking about the Pofessor?$"
 
 SilversunCity_EventScript_Detectives_Text_4:
 # 136 "data//maps/SilversunCity/scripts.pory"
 	.string "This all but confirms our suspicions -\n"
-	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} must be holding the\l"
+	.string "Team Somber must be holding the\l"
 	.string "Professor hostage! That's how they\l"
 	.string "learned about the dreamstones.\p"
 	.string "And if you saw them here, it means the\n"
 	.string "Professor is trapped inside their\l"
 	.string "headquarters!\p"
 	.string "{PLAYER}, it's clear what to do. The\n"
-	.string "next task is to find {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s HQ\l"
+	.string "next task is to find Team Somber's HQ\l"
 	.string "and free the Professor.\p"
 	.string "Rue has given us a separate lead that\n"
-	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} is following up on, so you're on\l"
+	.string "Kohla is following up on, so you're on\l"
 	.string "your own on this one.\p"
 	.string "Good luck.$"
 
@@ -592,13 +592,13 @@ SilversunCity_NPC5_Text_0:
 
 SilversunCity_NPC6_Text_0:
 # 184 "data//maps/SilversunCity/scripts.pory"
-	.string "I caught my Vivillon in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}! It's\n"
+	.string "I caught my Vivillon in Mt. Mirroh! It's\n"
 	.string "always hungry and keeps eating my Lava\l"
 	.string "Cookies...$"
 
 SilversunCity_NPC7_Text_0:
 # 189 "data//maps/SilversunCity/scripts.pory"
-	.string "{COLOR BLUE}Silversun City{COLOR DARK_GRAY} has a lovely theater but\n"
+	.string "Silversun City has a lovely theater but\n"
 	.string "no fine dining! I'd love a fancy spot\l"
 	.string "like the Pelluca Restaurant here.$"
 
@@ -606,7 +606,7 @@ SilversunCity_NPC8_Text_0:
 # 194 "data//maps/SilversunCity/scripts.pory"
 	.string "Did you hear about the Mega Sharpedo in\n"
 	.string "Hoya River? Apparently its headed to\l"
-	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.$"
+	.string "Pelluca City.$"
 
 SilversunCity_Murkrow_Text_0:
 # 200 "data//maps/SilversunCity/scripts.pory"

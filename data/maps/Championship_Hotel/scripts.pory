@@ -5,7 +5,7 @@ mapscripts Championship_Hotel_MapScripts{}
 
 
 script Champ_Hotel_Counter{
-    msgbox(format("Welcome to the {COLOR RED}Victory Cape{COLOR DARK_GRAY} Hotel!\pWe're fully booked out, but please visit our Championship Exhibit in the basement!\p...\pWho comes to the Pokémon Championship without booking a room in advance?"), MSGBOX_NPC)
+    msgbox(format("Welcome to the Victory Cape Hotel!\pWe're fully booked out, but please visit our Championship Exhibit in the basement!\p...\pWho comes to the Pokémon Championship without booking a room in advance?"), MSGBOX_NPC)
     end
 }
 
@@ -36,7 +36,7 @@ script Champ_Hotel_NPC3{
     end
 }
 script Champ_Hotel_NPC4{
-    msgbox(format("When I grow up, I want to be the next {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+    msgbox(format("When I grow up, I want to be the next Ace Rookie!"), MSGBOX_NPC)
     end
 }
 

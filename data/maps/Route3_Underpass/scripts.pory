@@ -138,7 +138,7 @@ script Route3_Underpass_EvilBattle{
     release
     delay(16)
     speakername("Gabrielle")    
-    msgbox(format("No?\pNo?!?!\pWell then...let {COLOR RED}Gabrielle{COLOR DARK_GRAY} teach you a lesson: don't go sticking your nose where it doesn't belong!"))
+    msgbox(format("No?\pNo?!?!\pWell then...let Gabrielle teach you a lesson: don't go sticking your nose where it doesn't belong!"))
     release
 
     //Start battle
@@ -156,7 +156,7 @@ script Route3_Underpass_EvilBattle{
     applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
     speakername("Gabrielle") 
-    msgbox(format("And you! I'll remember this, {PLAYER}. You'll regret messing with {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!"))
+    msgbox(format("And you! I'll remember this, {PLAYER}. You'll regret messing with Team Somber!"))
     release
     applymovement(LOCALID_GAB, moves(walk_down * 7))
     waitmovement(0)
@@ -174,15 +174,15 @@ script Route3_Underpass_EvilBattle{
     speakername("Breech")  
     msgbox(format("Clefairy was ready to protect me, but I wasn't prepared to do the same for her.\p...\pI let her down."))
     speakername("Breech")  
-    msgbox(format("But no more! I'm going to learn to hold my ground. If {COLOR BLUE}Team Somber{COLOR DARK_GRAY} comes after Clefairy again, we'll be ready."))
+    msgbox(format("But no more! I'm going to learn to hold my ground. If Team Somber comes after Clefairy again, we'll be ready."))
     speakername("Breech")  
-    msgbox(format("{PLAYER} - we owe you. As thanks, Clefairy and I want to give you the stone that {COLOR RED}Gabrielle{COLOR DARK_GRAY} person was after..."))
+    msgbox(format("{PLAYER} - we owe you. As thanks, Clefairy and I want to give you the stone that Gabrielle person was after..."))
     release
     giveitem(ITEM_EVERSTONE)
     speakername("Breech")  
     msgbox(format("I don't know about dreamstones, but it looks like a regular Everstone to me. Who knows what she saw?"))
     speakername("Breech")  
-    msgbox(format("Don't worry - Clefairy's bored of that stone already. Next, we'll head to {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} to collect rare stones there!"))
+    msgbox(format("Don't worry - Clefairy's bored of that stone already. Next, we'll head to Mt. Ceram to collect rare stones there!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(LOCALID_BREECH, moves(walk_down * 8))

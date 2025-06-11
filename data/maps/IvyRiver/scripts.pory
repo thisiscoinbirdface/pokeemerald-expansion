@@ -294,14 +294,14 @@ script LilyPond_Fisherman_C{
     //Startquest
     lockall
     faceplayer
-    msgbox(format("My brothers and I fish around {COLOR BLUE}Lily Pond{COLOR DARK_GRAY}. We have a connection to this place - although not a happy one.\pDo you want to hear our story?"), MSGBOX_YESNO)
+    msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one.\pDo you want to hear our story?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         msgbox(format("Just as well. It hurts to tell it."), MSGBOX_NPC)
         end
     }
 
-    msgbox(format("We were four brothers. Many years ago, we came to {COLOR BLUE}Lily Pond{COLOR DARK_GRAY} to fish for our first Pokémon. While three of us stayed here, our youngest brother said he wanted to go down the waterfall and into {COLOR BLUE}Ivy River{COLOR DARK_GRAY}. We tried to stop him, but he went away, and was never seen again."))
+    msgbox(format("We were four brothers. Many years ago, we came to Lily Pond to fish for our first Pokémon. While three of us stayed here, our youngest brother said he wanted to go down the waterfall and into Ivy River. We tried to stop him, but he went away, and was never seen again."))
     release
     delay(16)
     message(format("A sad story, I know."))
@@ -314,7 +314,7 @@ script LilyPond_Fisherman_C{
 
 
 script IvyRiver_Ranger_Blocker{
-    msgbox(format("Sorry - to access the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} Ranger Institute, you must be a member."), MSGBOX_NPC)
+    msgbox(format("Sorry - to access the Ivy River Ranger Institute, you must be a member."), MSGBOX_NPC)
     end
 }
 

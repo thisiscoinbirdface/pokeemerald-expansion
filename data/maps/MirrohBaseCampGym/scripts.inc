@@ -781,13 +781,13 @@ MirrohBaseCampGym_EventScript_Main_Text_3:
 
 MirrohBaseCampGym_EventScript_Main_Text_4:
 # 80 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "B-but {COLOR BLUE}Carona{COLOR DARK_GRAY}, it's all over! All the\n"
+	.string "B-but Carona, it's all over! All the\n"
 	.string "other trainers are gone, all the gym\l"
 	.string "puzzles are gone...$"
 
 MirrohBaseCampGym_EventScript_Main_Text_5:
 # 87 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Y-yeah...this gym was our home, {COLOR BLUE}Carona{COLOR DARK_GRAY}!\n"
+	.string "Y-yeah...this gym was our home, Carona!\n"
 	.string "What are we going to do without you?$"
 
 MirrohBaseCampGym_EventScript_Main_Text_6:
@@ -840,7 +840,7 @@ MirrohBaseCampGym_EventScript_Main_Text_14:
 
 MirrohBaseCampGym_EventScript_Main_Text_15:
 # 155 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "N-no...okay, {COLOR BLUE}Carona{COLOR DARK_GRAY}.\p"
+	.string "N-no...okay, Carona.\p"
 	.string "We're sorry.$"
 
 MirrohBaseCampGym_EventScript_Main_Text_16:
@@ -849,13 +849,13 @@ MirrohBaseCampGym_EventScript_Main_Text_16:
 
 MirrohBaseCampGym_EventScript_Main_Text_17:
 # 169 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Sniff...yeah. For {COLOR BLUE}Carona{COLOR DARK_GRAY}!$"
+	.string "Sniff...yeah. For Carona!$"
 
 MirrohBaseCampGym_EventScript_Main_Text_18:
 # 177 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "Okay, we're ready! We're going to show\n"
-	.string "this last trainer how tough the {COLOR BLUE}Mirroh\l"
-	.string "Base Camp{COLOR DARK_GRAY} Gym is!$"
+	.string "this last trainer how tough the Mirroh\l"
+	.string "Base Camp Gym is!$"
 
 MirrohBaseCampGym_EventScript_Main_Text_19:
 # 184 "data//maps/MirrohBaseCampGym/scripts.pory"
@@ -869,7 +869,7 @@ MirrohBaseCampGym_EventScript_Main_Text_20:
 MirrohBaseCampGym_EventScript_Main_Text_21:
 # 198 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "Come, trainer! You think you can\n"
-	.string "challenge the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym?\l"
+	.string "challenge the Mirroh Base Camp Gym?\l"
 	.string "Let's see what you've got!$"
 
 MirrohBaseCampGym_TrainerA_Text_0:
@@ -888,7 +888,7 @@ MirrohBaseCampGym_TrainerA_Text_2:
 
 MirrohBaseCampGym_TrainerB_Text_0:
 # 229 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Leader {COLOR BLUE}Carona{COLOR DARK_GRAY} taught me and my Pokémon\n"
+	.string "Leader Carona taught me and my Pokémon\n"
 	.string "to use our fists for maximum impact!\p"
 	.string "You're going down!$"
 
@@ -907,15 +907,15 @@ MirrohBaseCampGym_Leader_Text_0:
 
 MirrohBaseCampGym_Leader_Text_1:
 # 268 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Welcome to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym...\p"
+	.string "Welcome to the Mirroh Base Camp Gym...\p"
 	.string "...\p"
 	.string "...is what I would say if there was a Gym\n"
 	.string "left to welcome you to.$"
 
 MirrohBaseCampGym_Leader_Text_2:
 # 272 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "My name is {COLOR BLUE}Carona{COLOR DARK_GRAY}. I am the former\n"
-	.string "Leader of the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym.\p"
+	.string "My name is Carona. I am the former\n"
+	.string "Leader of the Mirroh Base Camp Gym.\p"
 	.string "You see, the Pokémon League recently\n"
 	.string "decomissioned this gym.$"
 
@@ -978,7 +978,7 @@ MirrohBaseCampGym_Leader_Text_10:
 MirrohBaseCampGym_Leader_Text_11:
 # 332 "data//maps/MirrohBaseCampGym/scripts.pory"
 	.string "{PLAYER} received the Ironfist Badge\n"
-	.string "from {COLOR BLUE}Carona{COLOR DARK_GRAY}.$"
+	.string "from Carona.$"
 
 MirrohBaseCampGym_Leader_Text_12:
 # 335 "data//maps/MirrohBaseCampGym/scripts.pory"
@@ -1011,7 +1011,7 @@ MirrohBaseCampGym_Red_Text_0:
 
 MirrohBaseCampGym_Red_Text_1:
 # 363 "data//maps/MirrohBaseCampGym/scripts.pory"
-	.string "Welcome to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym,\n"
+	.string "Welcome to the Mirroh Base Camp Gym,\n"
 	.string "trainer!\p"
 	.string "Unfortunately, we've packed everything\n"
 	.string "up, so I don't have any Fresh Water for\l"

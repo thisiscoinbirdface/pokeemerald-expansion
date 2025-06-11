@@ -119,7 +119,7 @@ SSElegant_Rooms_NPC1_Text_0:
 # 37 "data//maps/SSElegant_Rooms/scripts.pory"
 	.string "Our daughter is taking part in the\n"
 	.string "Cormoria Pokémon Championship.\p"
-	.string "We're on our way to {COLOR RED}Victory Cape{COLOR DARK_GRAY} to\n"
+	.string "We're on our way to Victory Cape to\n"
 	.string "support her!$"
 
 SSElegant_Rooms_NPC2_Text_0:

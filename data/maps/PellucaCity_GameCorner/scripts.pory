@@ -26,7 +26,7 @@ mapscripts PellucaCity_GameCorner_MapScripts{}
 
 
 script PellucaCity_GameCorner_NPC1{
-    msgbox(format("I don't have a Coin Case so I can't play. They sell them up at the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} if you want one."), MSGBOX_NPC)
+    msgbox(format("I don't have a Coin Case so I can't play. They sell them up at the Mirroh Base Camp if you want one."), MSGBOX_NPC)
     end
 }
 script PellucaCity_GameCorner_NPC2{

@@ -533,7 +533,7 @@ Championship_Hotel_Rooms_Kohla_Text_8:
 
 Championship_Hotel_Rooms_Kohla_Text_9:
 # 156 "data//maps/Championship_Hotel_Rooms/scripts.pory"
-	.string "That's why we're here, {COLOR GREEN}Kohla{COLOR DARK_GRAY}.$"
+	.string "That's why we're here, Kohla.$"
 
 Championship_Hotel_Rooms_Kohla_Text_10:
 # 157 "data//maps/Championship_Hotel_Rooms/scripts.pory"
@@ -544,7 +544,7 @@ Championship_Hotel_Rooms_Kohla_Text_10:
 Championship_Hotel_Rooms_Kohla_Text_11:
 # 158 "data//maps/Championship_Hotel_Rooms/scripts.pory"
 	.string "If you're talking about that former\n"
-	.string "grunt, {COLOR RED}Gabrielle{COLOR DARK_GRAY} -$"
+	.string "grunt, Gabrielle -$"
 
 Championship_Hotel_Rooms_Kohla_Text_12:
 # 159 "data//maps/Championship_Hotel_Rooms/scripts.pory"
@@ -558,7 +558,7 @@ Championship_Hotel_Rooms_Kohla_Text_13:
 
 Championship_Hotel_Rooms_Kohla_Text_14:
 # 161 "data//maps/Championship_Hotel_Rooms/scripts.pory"
-	.string "It's obvious, {COLOR GREEN}Kohla{COLOR DARK_GRAY}.\p"
+	.string "It's obvious, Kohla.\p"
 	.string "We're talking about {PLAYER}.$"
 
 Championship_Hotel_Rooms_Kohla_Text_15:
@@ -609,7 +609,7 @@ Championship_Hotel_Rooms_Kohla_Text_21:
 
 Championship_Hotel_Rooms_Kohla_Text_22:
 # 169 "data//maps/Championship_Hotel_Rooms/scripts.pory"
-	.string "Good luck, {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\n"
+	.string "Good luck, Ace Rookie.\n"
 	.string "We'll be in touch.$"
 
 Championship_Hotel_Rooms_Kohla_Text_23:

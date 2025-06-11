@@ -25,7 +25,7 @@ script IvyRiver_Trainer_A {
         format("Wow, your Pokémon are rare!")
     )
     
-        msgbox(format("Because {COLOR BLUE}Ivy River{COLOR DARK_GRAY} is untouched by people, rare Pokémon can thrive."))
+        msgbox(format("Because Ivy River is untouched by people, rare Pokémon can thrive."))
     release
     end
 }
@@ -59,7 +59,7 @@ script IvyRiver_Trainer_C {
 script IvyRiver_Trainer_D {
     trainerbattle_single(
         TRAINER_IVY_RIVER_D, 
-        format("You're the trainer who beat me back in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}!\pI wanted to become the first BUG type Gym Leader but guess what - I've changed my dream. Now I'm going to be the first BUG type Pokémon Champion!"), 
+        format("You're the trainer who beat me back in Vilethorn Woods!\pI wanted to become the first BUG type Gym Leader but guess what - I've changed my dream. Now I'm going to be the first BUG type Pokémon Champion!"), 
         format("How could I lose to you twice?")
     )
     

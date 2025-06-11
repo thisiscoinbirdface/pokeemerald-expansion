@@ -50,7 +50,7 @@ Champ_Hotel_NPC4::
 
 Champ_Hotel_Counter_Text_0:
 # 8 "data//maps/Championship_Hotel/scripts.pory"
-	.string "Welcome to the {COLOR RED}Victory Cape{COLOR DARK_GRAY} Hotel!\p"
+	.string "Welcome to the Victory Cape Hotel!\p"
 	.string "We're fully booked out, but please visit\n"
 	.string "our Championship Exhibit in the\l"
 	.string "basement!\p"
@@ -98,4 +98,4 @@ Champ_Hotel_NPC3_Text_0:
 Champ_Hotel_NPC4_Text_0:
 # 39 "data//maps/Championship_Hotel/scripts.pory"
 	.string "When I grow up, I want to be the next\n"
-	.string "{COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!$"
+	.string "Ace Rookie!$"

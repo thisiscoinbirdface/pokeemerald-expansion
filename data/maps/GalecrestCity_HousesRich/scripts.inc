@@ -209,7 +209,7 @@ GalecrestCity_HousesRich_Wingull::
 
 GalecrestCity_HousesRich_NPC1_Text_0:
 # 9 "data//maps/GalecrestCity_HousesRich/scripts.pory"
-	.string "Our older son was the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} during\n"
+	.string "Our older son was the Ace Rookie during\n"
 	.string "his final year at the Detective\l"
 	.string "Academy. He's the pride of the family!$"
 
@@ -297,7 +297,7 @@ GalecrestCity_HousesRich_NPC7_Text_0:
 GalecrestCity_HousesRich_NPC8_Text_0:
 # 108 "data//maps/GalecrestCity_HousesRich/scripts.pory"
 	.string "Our daughter grew up and is now the Gym\n"
-	.string "Leader of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. So we live alone\l"
+	.string "Leader of Pelluca City. So we live alone\l"
 	.string "in this big house now...$"
 
 GalecrestCity_HousesRich_NPC9_Text_0:

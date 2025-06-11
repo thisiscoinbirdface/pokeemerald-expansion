@@ -3,7 +3,7 @@ mapscripts Route5_MapScripts{}
 script Route5_NPC_A{
     lockall
     faceplayer
-    msgbox(format("My head is spinning because of the fog in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}! I need to go home and rest."))
+    msgbox(format("My head is spinning because of the fog in Vilethorn Woods! I need to go home and rest."))
     releaseall
     end
 }
@@ -19,7 +19,7 @@ script Route5_NPC_B{
 script Route5_NPC_C{
     lockall
     faceplayer
-    msgbox(format("I wish they'd clear those boulders in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}! It's blocking the path back to {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}."))
+    msgbox(format("I wish they'd clear those boulders in Vilethorn Woods! It's blocking the path back to Galecrest City."))
     releaseall
     end
 }
@@ -54,7 +54,7 @@ script Route5_Greta_Trigger1{
 
 script Route5_Greta_Main{
     speakername("Greta")
-    msgbox(format("It's you! The wandering saviour from {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. How wonderful! A new customer."))
+    msgbox(format("It's you! The wandering saviour from Mt. Ceram. How wonderful! A new customer."))
     release
     delay(20)
     speakername("Greta")

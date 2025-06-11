@@ -546,8 +546,8 @@ AncientMirroh_Tower_4F_MainTrigger_Text_0:
 
 AncientMirroh_Tower_4F_MainTrigger_Text_1:
 # 40 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
-	.string "Wait right there, {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\p"
-	.string "The {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} is here now, so stop\n"
+	.string "Wait right there, Team Somber!\p"
+	.string "The Ace Rookie is here now, so stop\n"
 	.string "your dastardly -$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_2:
@@ -563,7 +563,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_4:
 # 56 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "Beautiful, isn't it? How incredible it is\n"
 	.string "that we're here now, today.\p"
-	.string "Your Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} unlocked the\n"
+	.string "Your Professor Tenebris unlocked the\n"
 	.string "latent potential within the dreams and\l"
 	.string "memories of Pokémon today and created\l"
 	.string "a way to visit the past!\p"
@@ -580,7 +580,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_5:
 	.string "But there were other minds who did\n"
 	.string "understand the greatness, the\l"
 	.string "potential, the power!\p"
-	.string "And that's why {COLOR BLUE}Team Somber{COLOR DARK_GRAY} exists.$"
+	.string "And that's why Team Somber exists.$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_6:
 # 72 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
@@ -632,13 +632,13 @@ AncientMirroh_Tower_4F_MainTrigger_Text_14:
 AncientMirroh_Tower_4F_MainTrigger_Text_15:
 # 156 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "Come, Ancient Terror!\n"
-	.string "Let {COLOR BLUE}Team Somber{COLOR DARK_GRAY} show you the future!$"
+	.string "Let Team Somber show you the future!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_16:
 # 203 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "And now it's time to bid adieu! I hope\n"
-	.string "you enjoy your time here in {COLOR RED}Ancient\l"
-	.string "Cormoria{COLOR DARK_GRAY} - because you'll never leave!\p"
+	.string "you enjoy your time here in Ancient\l"
+	.string "Cormoria - because you'll never leave!\p"
 	.string "Hahaha!$"
 
 AncientMirroh_Tower_4F_MainTrigger_Text_17:

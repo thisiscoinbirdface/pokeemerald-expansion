@@ -55,23 +55,23 @@ script WinterlilyHollow_GymB1F_SetPermaOpenDoors{
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_A{
     trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_A, format("What's a civilian doing here?\nThe Electric Terrain is dangerous!"), "I guess you're okay!")
-    msgbox(format("Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s Manectric overloads the atmosphere with ions, creating electric terrain here."))
+    msgbox(format("Leader Viniel's Manectric overloads the atmosphere with ions, creating electric terrain here."))
     releaseall
     end
 }
 
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format("This is a power plant that {COLOR BLUE}Viniel{COLOR DARK_GRAY} set up. While trainers come and go, us Electricians work around the clock to serve {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}!"), "Alright, carry on.")
-    msgbox(format("This is a power plant that {COLOR BLUE}Viniel{COLOR DARK_GRAY} set up. While trainers come and go, us Electricians work around the clock to serve {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}!"))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_B, format("This is a power plant that Viniel set up. While trainers come and go, us Electricians work around the clock to serve Winterlily Hollow!"), "Alright, carry on.")
+    msgbox(format("This is a power plant that Viniel set up. While trainers come and go, us Electricians work around the clock to serve Winterlily Hollow!"))
     releaseall
     end
 }
 
 //BATTLE GIRL
 script WinterlilyHollow_Gym_Trainer_C{
-    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format("Challenge {COLOR BLUE}Viniel{COLOR DARK_GRAY}? Pah!\nMy Pokémon are rarer than his!"), "Wow, you're good!")
-    msgbox(format("I wanted to show my Qwilfish off to {COLOR BLUE}Viniel{COLOR DARK_GRAY}, but I can't find the right switches!"))
+    trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_C, format("Challenge Viniel? Pah!\nMy Pokémon are rarer than his!"), "Wow, you're good!")
+    msgbox(format("I wanted to show my Qwilfish off to Viniel, but I can't find the right switches!"))
     releaseall
     end
 }
@@ -106,7 +106,7 @@ script WinterlilyHollow_LastTrainer_Trigger{
 //ELECTRICIAN
 script WinterlilyHollow_Gym_Trainer_F{
     trainerbattle_single(TRAINER_WINTERLILY_HOLLOW_GYM_F, format("Hah! Gotcha! I'm about to crush you!"), "You crushed me!")
-    msgbox(format("Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s right up ahead.\nHe put me here to make sure weak\ltrainers don't disturb his Manectric."))
+    msgbox(format("Leader Viniel's right up ahead.\nHe put me here to make sure weak\ltrainers don't disturb his Manectric."))
     releaseall
     end
 }
@@ -117,9 +117,9 @@ script WinterlilyHollow_Gym_Trainer_F{
 //Helper NPC
 script WinterlilyHollow_Gym_NPC1{
     if (var(VAR_HOLLOW_GYM_LAYOUT) == 0){
-        msgbox(format("You opened the door to {COLOR BLUE}Viniel{COLOR DARK_GRAY}!\pI'll only come once I figure the switch order out on my own."), MSGBOX_NPC)
+        msgbox(format("You opened the door to Viniel!\pI'll only come once I figure the switch order out on my own."), MSGBOX_NPC)
     } else {
-        msgbox(format("This door takes you to {COLOR BLUE}Viniel{COLOR DARK_GRAY}, but I don't know how to get here when it's open.\pAt this rate, I'll never get my badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
+        msgbox(format("This door takes you to Viniel, but I don't know how to get here when it's open.\pAt this rate, I'll never get my badge!\pA battle?\pI'm too frustrated to battle!"), MSGBOX_NPC)
     }
     end
 }
@@ -166,12 +166,12 @@ script WinterlilyHollowGym_LeaderBattle {
             end
         }
         speakername("Viniel")
-        msgbox(format("Excellent! I can hear your internal battery crackling with energy.\pLook around you, {PLAYER}. This power plant is the lifeblood of {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't.\pThat's what makes us, us.\nHahaha!\pBack with those {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts, you showed me the same spirit.\pAnd now, I want to see you to bring it out again!"))
+        msgbox(format("Excellent! I can hear your internal battery crackling with energy.\pLook around you, {PLAYER}. This power plant is the lifeblood of Winterlily Hollow. Gym Leaders aren't just strong trainers. We're here to do the best we can for those who can't.\pThat's what makes us, us.\nHahaha!\pBack with those Team Somber grunts, you showed me the same spirit.\pAnd now, I want to see you to bring it out again!"))
 
         trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format("Sizzling! Crackling! Hahaha!"))
         
         //Receive the badge
-        message(format("{PLAYER} received the Spark Badge from {COLOR BLUE}Viniel{COLOR DARK_GRAY}."))
+        message(format("{PLAYER} received the Spark Badge from Viniel."))
         waitmessage
         //Play gym badge fanfare
         call(Common_EventScript_PlayGymBadgeFanfare)
@@ -188,7 +188,7 @@ script WinterlilyHollowGym_LeaderBattle {
 
         //Bye-bye
         speakername("Viniel")
-        msgbox(format("Since you're off the case now, why don't you take part in the Pokémon Championship this year? You need two more badges - but I warn you! {COLOR BLUE}Jania{COLOR DARK_GRAY} and {COLOR RED}Raazi{COLOR DARK_GRAY} are the strongest Gym Leaders in all of Cormoria!\pIf you want to try, I suggest you head back down to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\lYou'll find the next gym there.\pYou can go down the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}...\p...for which you'll need Surf!"))
+        msgbox(format("Since you're off the case now, why don't you take part in the Pokémon Championship this year? You need two more badges - but I warn you! Jania and Raazi are the strongest Gym Leaders in all of Cormoria!\pIf you want to try, I suggest you head back down to Pelluca City.\lYou'll find the next gym there.\pYou can go down the Ivy River...\p...for which you'll need Surf!"))
         release
         giveitem(ITEM_HM03)
         speakername("Viniel")
@@ -231,7 +231,7 @@ script WinterlilyHollowGym_Red{
         } else {
             lockall
             faceplayer
-            msgbox(format("Welcome to the {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} gym! It's not a gym so much as a power plant. The leader, {COLOR BLUE}Viniel{COLOR DARK_GRAY}, powers this town with his strong ELECTRIC-type Pokémon here in this plant. First, hydrate yourself!"))
+            msgbox(format("Welcome to the Winterlily Hollow gym! It's not a gym so much as a power plant. The leader, Viniel, powers this town with his strong ELECTRIC-type Pokémon here in this plant. First, hydrate yourself!"))
             giveitem(ITEM_FRESH_WATER)
             msgbox(format("The electricity generated in this plant ionises the air and creates electric terrain!\pSome trainers even bring Electric Seeds to boost their Pokémon in battle.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_WINTERLILYHOLLOWGYM_SPENSER_WATER)

@@ -247,17 +247,17 @@ GastreeGym_LeaderBattle_Movement_1:
 GastreeGym_TrainerBattle_Skip_Text_0:
 # 6 "data//maps/GastreeGym/scripts.pory"
 	.string "Hold up - nobody's allowed to disturb\n"
-	.string "the {COLOR RED}Inger{COLOR DARK_GRAY} while he's training!\p"
-	.string "Who's the {COLOR RED}Inger{COLOR DARK_GRAY}?\p"
+	.string "the Inger while he's training!\p"
+	.string "Who's the Inger?\p"
 	.string "Inger the King, of course!$"
 
 GastreeGym_TrainerBattle_Skip_Text_1:
 # 6 "data//maps/GastreeGym/scripts.pory"
-	.string "Okay, go disturb the {COLOR RED}Inger{COLOR DARK_GRAY}!$"
+	.string "Okay, go disturb the Inger!$"
 
 GastreeGym_TrainerBattle_Skip_Text_2:
 # 7 "data//maps/GastreeGym/scripts.pory"
-	.string "The {COLOR RED}Inger{COLOR DARK_GRAY} is what everyone should\n"
+	.string "The Inger is what everyone should\n"
 	.string "aspire to be like!$"
 
 GastreeGym_TrainerBattle_Jaco_Text_0:
@@ -278,8 +278,8 @@ GastreeGym_TrainerBattle_Jaco_Text_2:
 GastreeGym_LeaderBattle_Text_0:
 # 24 "data//maps/GastreeGym/scripts.pory"
 	.string "I hate losing! Argh! But that was a good\n"
-	.string "battle, {PLAYER}. Go get Professor {COLOR GREEN}\l"
-	.string "Tenebris{COLOR DARK_GRAY} back for us all!$"
+	.string "battle, {PLAYER}. Go get Professor\l"
+	.string "Tenebris back for us all!$"
 
 GastreeGym_LeaderBattle_Text_1:
 # 35 "data//maps/GastreeGym/scripts.pory"
@@ -303,7 +303,7 @@ GastreeGym_LeaderBattle_Text_3:
 GastreeGym_EventScript_Victory_Text_0:
 # 62 "data//maps/GastreeGym/scripts.pory"
 	.string "{PLAYER} received the Hard Badge\n"
-	.string "from {COLOR RED}Inger{COLOR DARK_GRAY}.$"
+	.string "from Inger.$"
 
 GastreeGym_EventScript_Victory_Text_1:
 # 69 "data//maps/GastreeGym/scripts.pory"
@@ -322,25 +322,25 @@ GastreeGym_EventScript_Victory_Text_3:
 	.string "statue. Any Pokémon you give it to can\l"
 	.string "maximise one of its innate stats!\p"
 	.string "Go to an ancient statue to try it.\n"
-	.string "There's one in {COLOR GREEN}Gastree City{COLOR DARK_GRAY}!$"
+	.string "There's one in Gastree City!$"
 
 GastreeGym_EventScript_Victory_Text_4:
 # 83 "data//maps/GastreeGym/scripts.pory"
 	.string "Where are you headed next?\p"
 	.string "...\p"
-	.string "So you're investigating Professor {COLOR GREEN}\n"
-	.string "Tenebris{COLOR DARK_GRAY}' disappearance? Good luck!\l"
+	.string "So you're investigating Professor\n"
+	.string "Tenebris' disappearance? Good luck!\l"
 	.string "She's the one who taught my Minior\n"
 	.string "the move Rollout.\p"
 	.string "...\p"
 	.string "...but I can't say I've heard anything\n"
 	.string "about these dreamstones.\p"
-	.string "So next is {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}? You'll have to go\n"
-	.string "north from here through {COLOR BLUE}Route 4{COLOR DARK_GRAY}.\p"
+	.string "So next is Mt. Ceram? You'll have to go\n"
+	.string "north from here through Route 4.\p"
 	.string "If its for the Professor, I would've\n"
 	.string "loved to join, but I've got a gym to run.\p"
-	.string "Go get 'em, {PLAYER}! Teach {COLOR BLUE}Team\n"
-	.string "Somber{COLOR DARK_GRAY} a lesson on the {COLOR RED}Inger{COLOR DARK_GRAY}'s behalf!$"
+	.string "Go get 'em, {PLAYER}! Teach Team\n"
+	.string "Somber a lesson on the Inger's behalf!$"
 
 GastreeGym_Red_Text_0:
 # 105 "data//maps/GastreeGym/scripts.pory"
@@ -350,7 +350,7 @@ GastreeGym_Red_Text_0:
 
 GastreeGym_Red_Text_1:
 # 111 "data//maps/GastreeGym/scripts.pory"
-	.string "Well done champ-in-the-making! {COLOR RED}Inger{COLOR DARK_GRAY}\n"
+	.string "Well done champ-in-the-making! Inger\n"
 	.string "told me about your battle.\l"
 	.string "In recognition of your skills, I'd like\l"
 	.string "to give you something.$"
@@ -358,19 +358,19 @@ GastreeGym_Red_Text_1:
 GastreeGym_Red_Text_2:
 # 116 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the Gastree gym!\n"
-	.string "Unfortunately the leader, {COLOR RED}Inger{COLOR DARK_GRAY}, has\l"
+	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
-	.string "in the underpass to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}.\p"
-	.string "The previous trainer beat him and {COLOR RED}Inger{COLOR DARK_GRAY}\n"
+	.string "in the underpass to Fennilahl Town.\p"
+	.string "The previous trainer beat him and Inger\n"
 	.string "just can't stand losing!.$"
 
 GastreeGym_Red_Text_3:
 # 120 "data//maps/GastreeGym/scripts.pory"
 	.string "Welcome to the Gastree gym!\n"
-	.string "Unfortunately the leader, {COLOR RED}Inger{COLOR DARK_GRAY}, has\l"
+	.string "Unfortunately the leader, Inger, has\l"
 	.string "gone off to do some emergency training\l"
-	.string "in the underpass to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}.\p"
-	.string "The previous trainer beat him and {COLOR RED}Inger{COLOR DARK_GRAY}\n"
+	.string "in the underpass to Fennilahl Town.\p"
+	.string "The previous trainer beat him and Inger\n"
 	.string "just can't stand losing!\p"
 	.string "But before you run off after him, take\n"
 	.string "this.$"
@@ -415,7 +415,7 @@ GastreeGym_Text_Intro::
 	.string "I know that feeling, and any other day,\n"
 	.string "I might've gone easy on you...\p"
 	.string "...but not today!\p"
-	.string "I'm {COLOR RED}Inger{COLOR DARK_GRAY}, master of ROCK-types and the\n"
+	.string "I'm Inger, master of ROCK-types and the\n"
 	.string "unshakable strength of the earth.\p"
 	.string "My ROCK-type Pokémon have seen\n"
 	.string "countless battles, and they never\l"

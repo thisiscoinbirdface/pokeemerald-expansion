@@ -87,14 +87,14 @@ text GastreeCity_KohlaIntro2{
     format("This is payback for one-upping me in front of the detectives!")
 }
 text GastreeCity_KohlaPostBattle{
-    format("You may have won, but I'll get the dreamstone first! I heard that some group called {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is also after the dreamstone. I'm going to head north towards the {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}. Don't come after me - I don't need your help.\pOver and out, chum!")
+    format("You may have won, but I'll get the dreamstone first! I heard that some group called Team Somber is also after the dreamstone. I'm going to head north towards the Ceram Base Camp. Don't come after me - I don't need your help.\pOver and out, chum!")
 }
 
 
 
 //NPCs
 script GastreeCity_NPC1{
-    msgbox(format("You came all the way from {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY}? Woah! Then I bet you don't know - you have to be careful on {COLOR BLUE}Route 4{COLOR DARK_GRAY}! There's a dangerous Dewpider that attacks people."), MSGBOX_NPC)
+    msgbox(format("You came all the way from Carabrue Town? Woah! Then I bet you don't know - you have to be careful on Route 4! There's a dangerous Dewpider that attacks people."), MSGBOX_NPC)
     end
 }
 
@@ -122,7 +122,7 @@ script GastreeCity_Mankey{
 
     //Info
 script GastreeCity_NPC6{  
-    msgbox(format("{COLOR GREEN}Gastree City{COLOR DARK_GRAY} is famous not just for being a connecting Route to Mt. {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}, but also for its scenic viewpoints and its teahouse!"), MSGBOX_NPC)
+    msgbox(format("Gastree City is famous not just for being a connecting Route to Mt. Ceram Base Camp, but also for its scenic viewpoints and its teahouse!"), MSGBOX_NPC)
     end
 }
 
@@ -280,7 +280,7 @@ script GastreeCity_Shard_CantLeave_Trigger{
     if (flag(FLAG_SHRINE_QUEST)) {end}
     if (flag(FLAG_BADGE01_GET)){
         lockall
-        msgbox(format("I should use the Rare Shard Leader {COLOR RED}Inger{COLOR DARK_GRAY} gave me!"))
+        msgbox(format("I should use the Rare Shard Leader Inger gave me!"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
         waitmovement(0)
@@ -295,7 +295,7 @@ script GastreeCity_Shard_CantLeave_Trigger{
 
     //Pokémon flavour
 script GastreeCity_NPC8{
-    msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and\lexplore {COLOR BLUE}Route 4{COLOR DARK_GRAY} together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)
+    msgbox(format("Hiiiiyah!\pI'm trying to teach my Bergmite some new moves so that we can go and\lexplore Route 4 together!\pC'mon Bergmite! C'mon!!"), MSGBOX_NPC)
     applymovement(10, moves(emote_exclamation_mark jump_in_place_down))
     waitmovement(0)
     playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)

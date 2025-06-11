@@ -39,11 +39,11 @@ script SilversunCity_Theater_Leader{
 
     fadescreenswapbuffers(FADE_FROM_BLACK)    
     speakername("Gloria")
-    msgbox(format("Welcome to the {COLOR BLUE}Gloria{COLOR DARK_GRAY} Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
+    msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
     release
     playse(SE_APPLAUSE)
     speakername("Audience")
-    msgbox(format("Woohoo! Go {COLOR BLUE}Gloria{COLOR DARK_GRAY}!"))
+    msgbox(format("Woohoo! Go Gloria!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(8, moves(face_left)) 
@@ -69,7 +69,7 @@ script SilversunCity_Theater_Leader{
     speakername("Gloria")
     msgbox(format("A cheer from the audience, please!"))
     speakername("Audience")
-    msgbox(format("Boo! How dare you beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}, you horrible trainer! Boo!"))
+    msgbox(format("Boo! How dare you beat Gloria, you horrible trainer! Boo!"))
     msgbox(format("{PLAYER} ducked to avoid a tomato!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
@@ -82,7 +82,7 @@ script SilversunCity_Theater_Leader{
     call(Common_EventScript_PlayGymBadgeFanfare)
     //Receive the badge
     speakername("Gloria")
-    msgbox(format("{PLAYER} received the Drama Badge from {COLOR BLUE}Gloria{COLOR DARK_GRAY}."))
+    msgbox(format("{PLAYER} received the Drama Badge from Gloria."))
     release
     setflag(FLAG_BADGE04_GET)
 
@@ -144,7 +144,7 @@ script SilversunCity_Theater_NPC1{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Gloria is graceful even in defeat. Now that's something everyone can learn from."), MSGBOX_NPC)
     } else {
-        msgbox(format("Gloria is the face of {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! A Gym Leader AND a famous actress? She's really a role model for women."), MSGBOX_NPC)
+        msgbox(format("Gloria is the face of Silversun City! A Gym Leader AND a famous actress? She's really a role model for women."), MSGBOX_NPC)
     }
     end
 }
@@ -153,14 +153,14 @@ script SilversunCity_Theater_NPC2{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Incredible! Her Bombirdier! Such a shame she lost, and to such a...nondescript opponent."), MSGBOX_NPC)
     } else {
-        msgbox(format("They say {COLOR BLUE}Gloria{COLOR DARK_GRAY} caught her Bombirdier while shooting an adventure flick in the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}."), MSGBOX_NPC)
+        msgbox(format("They say Gloria caught her Bombirdier while shooting an adventure flick in the Ivy River."), MSGBOX_NPC)
     }
     end
 }
 //girl breeder left
 script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("...\pFine, I threw the tomato!\nI'm sorry...\p...\p...no, I'm not! I love {COLOR BLUE}Gloria{COLOR DARK_GRAY}!\nBoo to you!"), MSGBOX_NPC)
+        msgbox(format("...\pFine, I threw the tomato!\nI'm sorry...\p...\p...no, I'm not! I love Gloria!\nBoo to you!"), MSGBOX_NPC)
     } else {
         msgbox(format("I wish Pokémon were allowed in. I would've brought my Budew along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
     }
@@ -169,9 +169,9 @@ script SilversunCity_Theater_NPC3{
 //girl red right
 script SilversunCity_Theater_NPC4{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Did you see {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s Bombirdier! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."), MSGBOX_NPC)
+        msgbox(format("Did you see Gloria's Bombirdier! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."), MSGBOX_NPC)
     } else {
-        msgbox(format("I'm a huuuge {COLOR BLUE}Gloria{COLOR DARK_GRAY} fan! I've been waiting for this show for months!"), MSGBOX_NPC)
+        msgbox(format("I'm a huuuge Gloria fan! I've been waiting for this show for months!"), MSGBOX_NPC)
     }
     end
 }
@@ -187,7 +187,7 @@ script SilversunCity_Theater_NPC5{
         }
     } else {
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
-            msgbox(format("Ahh, now let's settle in and watch {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s performance."), MSGBOX_NPC)
+            msgbox(format("Ahh, now let's settle in and watch Gloria's performance."), MSGBOX_NPC)
         } else {
             msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
@@ -259,7 +259,7 @@ script SilversunCity_Theater_NPC6{
         faceplayer
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-         msgbox(format("Ooh! Are you going to go on-stage next to {COLOR BLUE}Gloria{COLOR DARK_GRAY}?"), MSGBOX_YESNO)           
+         msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
             if (var (VAR_RESULT) == 1){
                 msgbox(format("Oh wow! You're a star!\nCan I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){

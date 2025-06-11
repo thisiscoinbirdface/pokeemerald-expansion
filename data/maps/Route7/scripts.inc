@@ -110,14 +110,14 @@ Route7_Trainer_D_Text_2:
 
 Route7_NPC1_Text_0:
 # 35 "data//maps/Route7/scripts.pory"
-	.string "I was scared of going to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}\n"
+	.string "I was scared of going to Pelluca City\n"
 	.string "because I heard about the Qwilsquad.\l"
 	.string "Are they gone?$"
 
 Route7_NPC2_Text_0:
 # 39 "data//maps/Route7/scripts.pory"
-	.string "They're closing the gym at {COLOR BLUE}Mirroh Base\n"
-	.string "Camp{COLOR DARK_GRAY}! I should hurry if I want my badge.$"
+	.string "They're closing the gym at Mirroh Base\n"
+	.string "Camp! I should hurry if I want my badge.$"
 
 Route7_NPC3_Text_0:
 # 43 "data//maps/Route7/scripts.pory"

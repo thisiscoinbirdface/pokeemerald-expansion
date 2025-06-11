@@ -16,7 +16,7 @@ script GalecrestCity_PokemonCenter_EventScript_Nurse{
 
 
 script GalecrestCity_PokemonCenter_NPC1{
-	msgbox(format("Nobody goes into {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} - it's too creepy and easy to get lost in!\p...\p...well, nobody sane."), MSGBOX_NPC)
+	msgbox(format("Nobody goes into Vilethorn Woods - it's too creepy and easy to get lost in!\p...\p...well, nobody sane."), MSGBOX_NPC)
 	end
 }
 

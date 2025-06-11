@@ -32,11 +32,11 @@ script Route7_Trainer_D{
 
 
 script Route7_NPC1{
-    msgbox(format("I was scared of going to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} because I heard about the Qwilsquad. Are they gone?"), MSGBOX_NPC)
+    msgbox(format("I was scared of going to Pelluca City because I heard about the Qwilsquad. Are they gone?"), MSGBOX_NPC)
     end
 }
 script Route7_NPC2{
-    msgbox(format("They're closing the gym at {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}! I should hurry if I want my badge."), MSGBOX_NPC)
+    msgbox(format("They're closing the gym at Mirroh Base Camp! I should hurry if I want my badge."), MSGBOX_NPC)
     end
 }
 script Route7_NPC3{

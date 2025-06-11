@@ -479,7 +479,7 @@ SilversunCity_Theater_Leader_Text_2:
 
 SilversunCity_Theater_Leader_Text_3:
 # 42 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Welcome to the {COLOR BLUE}Gloria{COLOR DARK_GRAY} Show! Tonight,\n"
+	.string "Welcome to the Gloria Show! Tonight,\n"
 	.string "we're doing a live performance that will\l"
 	.string "sweep you off your feet!$"
 
@@ -489,7 +489,7 @@ SilversunCity_Theater_Leader_Text_4:
 
 SilversunCity_Theater_Leader_Text_5:
 # 46 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Woohoo! Go {COLOR BLUE}Gloria{COLOR DARK_GRAY}!$"
+	.string "Woohoo! Go Gloria!$"
 
 SilversunCity_Theater_Leader_Text_6:
 # 53 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -517,7 +517,7 @@ SilversunCity_Theater_Leader_Text_8:
 
 SilversunCity_Theater_Leader_Text_9:
 # 72 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Boo! How dare you beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}, you\n"
+	.string "Boo! How dare you beat Gloria, you\n"
 	.string "horrible trainer! Boo!$"
 
 SilversunCity_Theater_Leader_Text_10:
@@ -537,7 +537,7 @@ SilversunCity_Theater_Leader_Text_11:
 SilversunCity_Theater_Leader_Text_12:
 # 85 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "{PLAYER} received the Drama Badge\n"
-	.string "from {COLOR BLUE}Gloria{COLOR DARK_GRAY}.$"
+	.string "from Gloria.$"
 
 SilversunCity_Theater_Leader_Text_13:
 # 91 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -577,7 +577,7 @@ SilversunCity_Theater_NPC1_Text_0:
 
 SilversunCity_Theater_NPC1_Text_1:
 # 147 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Gloria is the face of {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! A\n"
+	.string "Gloria is the face of Silversun City! A\n"
 	.string "Gym Leader AND a famous actress? She's\l"
 	.string "really a role model for women.$"
 
@@ -589,9 +589,9 @@ SilversunCity_Theater_NPC2_Text_0:
 
 SilversunCity_Theater_NPC2_Text_1:
 # 156 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "They say {COLOR BLUE}Gloria{COLOR DARK_GRAY} caught her Bombirdier\n"
+	.string "They say Gloria caught her Bombirdier\n"
 	.string "while shooting an adventure flick in\l"
-	.string "the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.$"
+	.string "the Ivy River.$"
 
 SilversunCity_Theater_NPC3_Text_0:
 # 163 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -599,7 +599,7 @@ SilversunCity_Theater_NPC3_Text_0:
 	.string "Fine, I threw the tomato!\n"
 	.string "I'm sorry...\p"
 	.string "...\p"
-	.string "...no, I'm not! I love {COLOR BLUE}Gloria{COLOR DARK_GRAY}!\n"
+	.string "...no, I'm not! I love Gloria!\n"
 	.string "Boo to you!$"
 
 SilversunCity_Theater_NPC3_Text_1:
@@ -611,14 +611,14 @@ SilversunCity_Theater_NPC3_Text_1:
 
 SilversunCity_Theater_NPC4_Text_0:
 # 172 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Did you see {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s Bombirdier! Too bad\n"
+	.string "Did you see Gloria's Bombirdier! Too bad\n"
 	.string "that other person defeated it. A Greek\l"
 	.string "tragedy!\n"
 	.string "...oh, it was you.$"
 
 SilversunCity_Theater_NPC4_Text_1:
 # 174 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "I'm a huuuge {COLOR BLUE}Gloria{COLOR DARK_GRAY} fan! I've been\n"
+	.string "I'm a huuuge Gloria fan! I've been\n"
 	.string "waiting for this show for months!$"
 
 SilversunCity_Theater_NPC5_Text_0:
@@ -636,7 +636,7 @@ SilversunCity_Theater_NPC5_Text_1:
 SilversunCity_Theater_NPC5_Text_2:
 # 190 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Ahh, now let's settle in and watch\n"
-	.string "{COLOR BLUE}Gloria{COLOR DARK_GRAY}'s performance.$"
+	.string "Gloria's performance.$"
 
 SilversunCity_Theater_NPC5_Text_3:
 # 192 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -687,7 +687,7 @@ SilversunCity_Theater_NPC6_Text_1:
 SilversunCity_Theater_NPC6_Text_2:
 # 262 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "Ooh! Are you going to go on-stage next\n"
-	.string "to {COLOR BLUE}Gloria{COLOR DARK_GRAY}?$"
+	.string "to Gloria?$"
 
 SilversunCity_Theater_NPC6_Text_3:
 # 264 "data//maps/SilversunCity_Theater/scripts.pory"

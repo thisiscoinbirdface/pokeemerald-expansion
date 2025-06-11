@@ -845,8 +845,8 @@ VilethornWoods_Trainer_D_Text_2:
 VilethornWoods_Trainer_E_Text_0:
 # 236 "data//maps/VilethornWoods/scripts.pory"
 	.string "Eek! These woods are creepy! I was\n"
-	.string "supposed to go to {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s theater\l"
-	.string "studio in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}...but I'm lost!$"
+	.string "supposed to go to Gloria's theater\l"
+	.string "studio in Silversun City...but I'm lost!$"
 
 VilethornWoods_Trainer_E_Text_1:
 # 236 "data//maps/VilethornWoods/scripts.pory"
@@ -859,8 +859,8 @@ VilethornWoods_Trainer_E_Text_2:
 
 VilethornWoods_Trainer_F1_Text_0:
 # 245 "data//maps/VilethornWoods/scripts.pory"
-	.string "We're on our way to {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to\n"
-	.string "interview the great {COLOR BLUE}Gloria{COLOR DARK_GRAY}! Get out of\l"
+	.string "We're on our way to Silversun City to\n"
+	.string "interview the great Gloria! Get out of\l"
 	.string "our way!$"
 
 VilethornWoods_Trainer_F1_Text_1:
@@ -904,7 +904,7 @@ VilethornWoods_Trainer_H_Text_2:
 
 VilethornWoods_NPC1_Text_0:
 # 277 "data//maps/VilethornWoods/scripts.pory"
-	.string "The Morelull here in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}\n"
+	.string "The Morelull here in Vilethorn Woods\n"
 	.string "release spores when in danger. That's\l"
 	.string "what creates this fog.$"
 
@@ -966,7 +966,7 @@ VilethornWoods_Cook_RewardEnd_Text_0:
 # 334 "data//maps/VilethornWoods/scripts.pory"
 	.string "Maybe I'll see you somewhere else, since\n"
 	.string "I travel all over Cormoria. And if you\l"
-	.string "ever visit {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, be sure to drop\l"
+	.string "ever visit Pelluca City, be sure to drop\l"
 	.string "by our restaurant!$"
 
 VilethornWoods_NPC3_Text_0:

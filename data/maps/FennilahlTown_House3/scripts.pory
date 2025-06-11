@@ -8,7 +8,7 @@ script FennilahlTown_House3_NPC1{
 
 
 script FennilahlTown_House3_NPC2{
-    msgbox(format("My Rockruff's ability is Own Tempo!\nI met it on {COLOR BLUE}Route 2{COLOR DARK_GRAY}, south of here."), MSGBOX_NPC)
+    msgbox(format("My Rockruff's ability is Own Tempo!\nI met it on Route 2, south of here."), MSGBOX_NPC)
     end
 }
 

@@ -27,7 +27,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 10))
     waitmovement(0)
     speakername("Rue") 
-    msgbox(format("I'm Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY} and welcome to the Tenebris Laboratory...\l...er...{PLAYER}, was it?"))
+    msgbox(format("I'm Assistant Professor Rue and welcome to the Tenebris Laboratory...\l...er...{PLAYER}, was it?"))
     release
     
     applymovement(3, moves(face_left))
@@ -71,7 +71,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(0)
 
     speakername("Rue")
-    msgbox(format("Right, now normally I would brief you on your work, but we've got no time.\pSo I'm just going to have you start working right away, okay?\pWe've been running low on supplies and the nearest Poké Mart is in {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}, past {COLOR BLUE}Route 1{COLOR DARK_GRAY}.\pPlease go and pick up our shipment and bring it back.\pBe careful! There are some important things in there."))
+    msgbox(format("Right, now normally I would brief you on your work, but we've got no time.\pSo I'm just going to have you start working right away, okay?\pWe've been running low on supplies and the nearest Poké Mart is in Fennilahl Town, past Route 1.\pPlease go and pick up our shipment and bring it back.\pBe careful! There are some important things in there."))
     release
 
     applymovement(3, moves(jump_in_place_left))
@@ -80,7 +80,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor  Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
@@ -109,7 +109,7 @@ script CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     speakername("Rue")
-    msgbox(format("On the way, could you give the evidence bag you have to the detectives?\lThey're waiting by the {COLOR BLUE}Route 1{COLOR DARK_GRAY} exit."))
+    msgbox(format("On the way, could you give the evidence bag you have to the detectives?\lThey're waiting by the Route 1 exit."))
     
     release
     applymovement(3, moves(walk_up * 5))
@@ -164,7 +164,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         delay(16)
         speakername("Rue")
-        msgbox(format("WHAT?! Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took them?\pSigh...thanks for telling me, {PLAYER}."))
+        msgbox(format("WHAT?! Professor  Tenebris took them?\pSigh...thanks for telling me, {PLAYER}."))
         release
 
             //Complete previous quest
@@ -251,7 +251,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("We'll do our best, {COLOR BLUE}Rue{COLOR DARK_GRAY}. But we're detectives - we can uncover her tracks, but we can't unravel her mind.\lWe'll need some help from one of you."))
+        msgbox(format("We'll do our best, Rue. But we're detectives - we can uncover her tracks, but we can't unravel her mind.\lWe'll need some help from one of you."))
         release
         delay(16)
         speakername("Rue")
@@ -304,7 +304,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement(0)
         speakername("Rue")
-        msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab.\pThe dreamstones are scattered all across Cormoria. Have you ever\ltraveled beyond {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}?\pCormoria is vast and filled with dangerous Pokémon. I fear you may\lnot be up to the task..."))
+        msgbox(format("{PLAYER} - I know it's only your first day, but this is a critical task, and none of us can leave the lab.\pThe dreamstones are scattered all across Cormoria. Have you ever\ltraveled beyond Fennilahl Town?\pCormoria is vast and filled with dangerous Pokémon. I fear you may\lnot be up to the task..."))
         release
         delay(16)
 
@@ -313,7 +313,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release   
         //Pokedex Get
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox(format("{PLAYER} received a Pokedex from Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}."))
+        msgbox(format("{PLAYER} received a Pokedex from Assistant Professor Rue."))
         waitfanfare  
         setflag(FLAG_SYS_POKEDEX_GET)
 
@@ -339,7 +339,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         delay(16)
         speakername("Detective")
-        msgbox(format("Get it together, {COLOR BLUE}Rue{COLOR DARK_GRAY}. The other researchers are counting on you.\lHave some faith in us...and...\p...well...\p...{PLAYER}."))
+        msgbox(format("Get it together, Rue. The other researchers are counting on you.\lHave some faith in us...and...\p...well...\p...{PLAYER}."))
         release
         delay(16)
 
@@ -362,7 +362,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(10, moves(face_right))
         waitmovement(0) 
         speakername("???")
-        msgbox(format("You can't give this kid a job like that! What's your name?\p{PLAYER}?\pPshh, whatever. Look at you! Your Pokémon look exhausted after a\lsingle trip to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}!"))  
+        msgbox(format("You can't give this kid a job like that! What's your name?\p{PLAYER}?\pPshh, whatever. Look at you! Your Pokémon look exhausted after a\lsingle trip to Fennilahl Town!"))  
         release
         delay(8)
 
@@ -383,7 +383,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("Meet {COLOR GREEN}Kohla{COLOR DARK_GRAY}, this year's {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}\nfrom the Detective Academy."))  
+        msgbox(format("Meet Kohla, this year's Ace Rookie\nfrom the Detective Academy."))  
         release
         delay(16)
         applymovement(10, moves(jump_in_place_right))
@@ -395,7 +395,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("Now hold on {COLOR GREEN}Kohla{COLOR DARK_GRAY}, there's no need for all this. {PLAYER} is representing the Professor's lab. We need someone from the lab to help track the dreamstones."))  
+        msgbox(format("Now hold on Kohla, there's no need for all this. {PLAYER} is representing the Professor's lab. We need someone from the lab to help track the dreamstones."))  
         release
         applymovement(10, moves(face_left))
         waitmovement(0)     
@@ -416,7 +416,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         playbgm(MUS_RG_RIVAL_EXIT, FALSE)        
         applymovement(10, moves(emote_exclamation_mark))   
         speakername("Kohla")     
-        msgbox(format("Pah! A single battle means nothing!\nYou haven't been through what I have. It takes effort and discipline to become an {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}. Just you wait - I'll be the one to find the dreamstone!"))
+        msgbox(format("Pah! A single battle means nothing!\nYou haven't been through what I have. It takes effort and discipline to become an Ace Rookie. Just you wait - I'll be the one to find the dreamstone!"))
         release
         delay(16)
         applymovement(10, moves(face_left))
@@ -436,15 +436,15 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
         speakername("Detective")
-        msgbox(format("Well {COLOR BLUE}Rue{COLOR DARK_GRAY}, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and {COLOR GREEN}Kohla{COLOR DARK_GRAY} to get the dreamstone while we track Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Well Rue, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor  Tenebris.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
         release
         delay(16)
         speakername("Rue")
-        msgbox(format("One lies somewhere inside {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. {PLAYER}, {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is further east from {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}. You'll have to reach {COLOR GREEN}Gastree City{COLOR DARK_GRAY}, and then make your way up north towards the mountain."))  
+        msgbox(format("One lies somewhere inside Mt. Ceram. {PLAYER}, Mt. Ceram is further east from Fennilahl Town. You'll have to reach Gastree City, and then make your way up north towards the mountain."))  
         release
         delay(16)
         speakername("Detective")
-        msgbox(format("{PLAYER} - you know what to do. Head east to {COLOR GREEN}Gastree City{COLOR DARK_GRAY}. From there, make your way to {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} and find the dreamstone that's there."))  
+        msgbox(format("{PLAYER} - you know what to do. Head east to Gastree City. From there, make your way to Mt. Ceram and find the dreamstone that's there."))  
         release
         delay(16)
         speakername("Rue")
@@ -467,7 +467,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
 
 script CarabrueTown_TenebrisLab_EventScript_DetectiveGeneric{
     speakername("Detective")
-    msgbox(format("Don't let one victory get to your head. {COLOR GREEN}Kohla{COLOR DARK_GRAY}'s already got a head start.\lBetter hurry if you want to catch up!"), MSGBOX_NPC)
+    msgbox(format("Don't let one victory get to your head. Kohla's already got a head start.\lBetter hurry if you want to catch up!"), MSGBOX_NPC)
     end
 }
 
@@ -618,7 +618,7 @@ script CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon{
     lockall
 
     if (!flag(FLAG_UNUSED_0x020)){
-        msgbox(format("Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY} told me not to leave without a Pokémon to protect me!"))
+        msgbox(format("Assistant Professor Rue told me not to leave without a Pokémon to protect me!"))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
         waitmovement(0)
         releaseall
@@ -643,7 +643,7 @@ script CarabrueTown_TenebrisLab_EventScript_Rue{
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist1{
     if (flag(FLAG_POST_FINALE_CUTSCENE)){
-        msgbox(format("I can't believe {COLOR BLUE}Rue{COLOR DARK_GRAY} was behind this whole mess! I wish I'd caught on sooner!"))
+        msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"))
         end
     }
 
@@ -657,13 +657,13 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist2{
         end
     }
 
-    msgbox(format("I'm so grateful we have Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}. Without him to step in for Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, we'd have had to shut the lab down."), MSGBOX_NPC)
+    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor  Tenebris, we'd have had to shut the lab down."), MSGBOX_NPC)
     end
 }
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist3{
     if (flag(FLAG_POST_FINALE_CUTSCENE)){
-        msgbox(format("Go on, {PLAYER}! Bring the championship trophy to {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+        msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"), MSGBOX_NPC)
         end
     }
     
@@ -694,7 +694,7 @@ script CarabrueTown_TenebrisLab_Gardevoir{
 
 script CarabrueTown_TenebrisLab_Metagross{
     playmoncry(SPECIES_METAGROSS, CRY_MODE_NORMAL)
-    msgbox(format("It's Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}'s Metagross. It's so intimidating!"), MSGBOX_NPC)
+    msgbox(format("It's Asst. Prof. Rue's Metagross. It's so intimidating!"), MSGBOX_NPC)
     end
 }
 

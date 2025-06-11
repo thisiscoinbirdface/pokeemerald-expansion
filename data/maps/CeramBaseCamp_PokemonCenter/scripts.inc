@@ -54,6 +54,6 @@ CeramBaseCamp_PokemonCenter_Pineco_Text_0:
 
 CeramBaseCamp_PokemonCenter_NPC2_Text_0:
 # 29 "data//maps/CeramBaseCamp_PokemonCenter/scripts.pory"
-	.string "Apparently you can't meet {COLOR RED}Ariana{COLOR DARK_GRAY}, the\n"
+	.string "Apparently you can't meet Ariana, the\n"
 	.string "Gym Leader, without getting an\l"
 	.string "appointment first.$"

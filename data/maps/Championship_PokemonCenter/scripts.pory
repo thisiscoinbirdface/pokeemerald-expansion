@@ -16,7 +16,7 @@ script Championship_PokemonCenter_EventScript_Nurse{
 
 
 script Championship_PokemonCenter_NPC1{
-	msgbox(format("This city's Gym Leader is {COLOR RED}Inger{COLOR DARK_GRAY}, the ROCK specialist. He's a local hero!\pHis trainers call him {COLOR RED}Inger{COLOR DARK_GRAY} the King, or {COLOR RED}Inger{COLOR DARK_GRAY} for short.\pHehe! I'd like a nickname like that."), MSGBOX_NPC)
+	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\pHis trainers call him Inger the King, or Inger for short.\pHehe! I'd like a nickname like that."), MSGBOX_NPC)
 	end
 }
 

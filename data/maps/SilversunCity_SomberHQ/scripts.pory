@@ -66,10 +66,10 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(24)
     speakername("???")
-    msgbox(format("Ahh...beautiful. We have much to thank you for, Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}.\pYour Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone."))
+    msgbox(format("Ahh...beautiful. We have much to thank you for, Asst. Prof. Rue.\pYour Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone."))
     
     speakername("Rue")
-    msgbox(format("You mean the one on {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}?"))
+    msgbox(format("You mean the one on Mt. Mirroh?"))
     
     speakername("???")
     msgbox(format("Precisely."))
@@ -114,7 +114,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
 
     //Prof gets introduced
     speakername("???")
-    msgbox(format("So you're the one who defeated Moxie at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. So young...you must've gotten really lucky.\pMeet your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}. He's been of immense help to us...albeit unwillingly."))
+    msgbox(format("So you're the one who defeated Moxie at Mt. Ceram. So young...you must've gotten really lucky.\pMeet your Asst. Prof. Rue. He's been of immense help to us...albeit unwillingly."))
     speakername("Rue")
     msgbox(format("{PLAYER}, I'm sorry. Th-they got me."))
     release
@@ -140,7 +140,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("Boss! Boss! {COLOR RED}Gabrielle{COLOR DARK_GRAY} was on guard duty."))
+    msgbox(format("Boss! Boss! Gabrielle was on guard duty."))
     release 
     delay(16)
 
@@ -176,7 +176,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(16)    
     speakername("Melea")
-    msgbox(format("You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! And I'm going to have a squad chase you all over Cormoria!"))
+    msgbox(format("You just NOTHING! You BETRAYED us! Out! OUT! You're no longer a part of Team Somber! And I'm going to have a squad chase you all over Cormoria!"))
     release
     delay(16)
     applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
@@ -210,7 +210,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     applymovement(LOCALID_MELEA, moves(walk_down face_left))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("So you know our plan now. At {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY} handed us right now, we're going to build a Dreamalyser and take it to {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it.")) 
+    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it.")) 
     
     goto(SilversunCity_SomberHQ_EventScript_Skip)
 }
@@ -230,14 +230,14 @@ script SilversunCity_SomberHQ_EventScript_Skip{
     //Never mind
     //We've got what we need
     speakername("Melea")
-    msgbox(format("Unbelievable! Just unbelievable!\pFine. You can have your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY} back, child! We've got what we need from him anyway. Let's go!"))
+    msgbox(format("Unbelievable! Just unbelievable!\pFine. You can have your Asst. Prof. Rue back, child! We've got what we need from him anyway. Let's go!"))
     release
     applymovement(LOCALID_GRUNT, moves(face_left walk_left * 4))
     applymovement(LOCALID_MELEA, moves(walk_up walk_left *2 walk_down walk_left *2 face_right))
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     speakername("Melea")
-    msgbox(format("Heed this warning, {PLAYER}. Do NOT try to thwart us at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}, or else we will crush you!"))
+    msgbox(format("Heed this warning, {PLAYER}. Do NOT try to thwart us at Mt. Mirroh, or else we will crush you!"))
     release
     applymovement(LOCALID_MELEA, moves(face_right))
     applymovement(LOCALID_GRUNT, moves(walk_left *2 walk_up))
@@ -308,14 +308,14 @@ script SomberHQ_EventScript_NPCNurse{
 script SomberHQ_NPC1{
     lockall
     faceplayer
-    msgbox(format("What? You thought we all wear suits and go on field trips like school children? Someone's gotta make the money! I'm a financial whiz. I'm the real backbone of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!"))
+    msgbox(format("What? You thought we all wear suits and go on field trips like school children? Someone's gotta make the money! I'm a financial whiz. I'm the real backbone of Team Somber!"))
     releaseall
     end
 }
 script SomberHQ_NPC2{
     lockall
     faceplayer
-    msgbox(format("The other guy thinks he's hot stuff but without my tech skills, nothing in this office would function! I'm the real backbone of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!"))
+    msgbox(format("The other guy thinks he's hot stuff but without my tech skills, nothing in this office would function! I'm the real backbone of Team Somber!"))
     releaseall
     end
 }
@@ -339,7 +339,7 @@ script SomberHQ_NPCGrunt{
     applymovement(12, moves(emote_exclamation_mark))
     waitmovement(0)
     faceplayer
-    msgbox(format("Who're you? Did you bring the shipment?\pWait a minute...you're that trainer who beat us at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}! Oh, you've got some nerve coming up and talking to me!\p...\pEh, I'm on shipment duty, not guard duty. None of my business."))
+    msgbox(format("Who're you? Did you bring the shipment?\pWait a minute...you're that trainer who beat us at Mt. Ceram! Oh, you've got some nerve coming up and talking to me!\p...\pEh, I'm on shipment duty, not guard duty. None of my business."))
     release
     applymovement(12, moves(face_down))
     waitmovement(0)
@@ -427,7 +427,7 @@ script SomberHQ_Grunt_E{
     end
 }
 script SomberHQ_Grunt_F{
-    trainerbattle_single(TRAINER_SOMBERHQ_F, format("You again? That stupid {COLOR RED}Gabrielle{COLOR DARK_GRAY} must've let you in - I know it!"), "Stupid Gabrielle!")
+    trainerbattle_single(TRAINER_SOMBERHQ_F, format("You again? That stupid Gabrielle must've let you in - I know it!"), "Stupid Gabrielle!")
     msgbox(format("She's such a klutz - she's singlehandedly ruining this great organisation's image."))
     releaseall
     end
@@ -439,7 +439,7 @@ script SomberHQ_Grunt_G{
     end
 }
 script SomberHQ_Grunt_H{
-    trainerbattle_single(TRAINER_SOMBERHQ_H, format("{COLOR RED}Gabrielle{COLOR DARK_GRAY} and I were next up for admin positions...until she goofed at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}! Now it's just me.\pLet me show you why!"), "Guess I'm not admin level yet!")
+    trainerbattle_single(TRAINER_SOMBERHQ_H, format("Gabrielle and I were next up for admin positions...until she goofed at Mt. Ceram! Now it's just me.\pLet me show you why!"), "Guess I'm not admin level yet!")
     msgbox(format("Fine, go ahead.\nYou can't beat the boss anyway!"))
     releaseall
     end

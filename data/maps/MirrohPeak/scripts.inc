@@ -965,7 +965,7 @@ MirrohPeak_EventScript_Somber_Skip_Movement_4:
 MirrohPeak_NPC_1_Text_0:
 # 12 "data//maps/MirrohPeak/scripts.pory"
 	.string "You look exhausted! You'd better head\n"
-	.string "to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} - go right from here\l"
+	.string "to Winterlily Hollow - go right from here\l"
 	.string "and enter the cave.$"
 
 MirrohPeak_EventScript_Viniel_Text_0:
@@ -984,7 +984,7 @@ MirrohPeak_EventScript_Viniel_Text_2:
 
 MirrohPeak_EventScript_Viniel_Text_3:
 # 77 "data//maps/MirrohPeak/scripts.pory"
-	.string "It's public space, {COLOR BLUE}Viniel{COLOR DARK_GRAY}! Didn't they\n"
+	.string "It's public space, Viniel! Didn't they\n"
 	.string "teach you that at Gym Leader School?$"
 
 MirrohPeak_EventScript_Viniel_Text_4:
@@ -1016,11 +1016,11 @@ MirrohPeak_EventScript_Viniel_Text_8:
 MirrohPeak_EventScript_Viniel_Text_9:
 # 114 "data//maps/MirrohPeak/scripts.pory"
 	.string "Wait...isn't that the trainer who beat\n"
-	.string "Melea in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}?$"
+	.string "Melea in Silversun City?$"
 
 MirrohPeak_EventScript_Viniel_Text_10:
 # 119 "data//maps/MirrohPeak/scripts.pory"
-	.string "Yeah, it is! And also Moxie at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!\p"
+	.string "Yeah, it is! And also Moxie at Mt. Ceram!\p"
 	.string "Yikes - someone better tell go them!$"
 
 MirrohPeak_EventScript_Viniel_Text_11:
@@ -1031,10 +1031,10 @@ MirrohPeak_EventScript_Viniel_Text_12:
 # 132 "data//maps/MirrohPeak/scripts.pory"
 	.string "So you're an enemy of theirs?\p"
 	.string "An enemy of an enemy is a friend!\p"
-	.string "Trainer, these {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts\n"
+	.string "Trainer, these Team Somber grunts\n"
 	.string "suddenly came out of nowhere and\l"
 	.string "started harrassing the great people of\l"
-	.string "{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}.\p"
+	.string "Winterlily Hollow.\p"
 	.string "So I'm out here beating them down, one\n"
 	.string "by one! I can take this lot myself - you\l"
 	.string "go on ahead! These guys are upto no\l"
@@ -1110,7 +1110,7 @@ MirrohPeak_EventScript_Somber_Cutscene_Text_7:
 MirrohPeak_EventScript_Somber_Cutscene_Text_8:
 # 293 "data//maps/MirrohPeak/scripts.pory"
 	.string "My dear colleague has gone ahead into\n"
-	.string "{COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}...you've seen it, no?\p"
+	.string "Ancient Cormoria...you've seen it, no?\p"
 	.string "I wonder what it looks like.\p"
 	.string "Melea will tell me when she returns.\p"
 	.string "...\p"

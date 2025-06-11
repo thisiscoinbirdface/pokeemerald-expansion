@@ -716,8 +716,8 @@ MtCeramPeak_MainEvent_Cutscene_Text_3:
 	.string "thorn in my organisations side?\p"
 	.string "What's in it for you?\p"
 	.string "...\p"
-	.string "So you're looking for Professor {COLOR GREEN}\n"
-	.string "Tenebris{COLOR DARK_GRAY}. That explains everything.$"
+	.string "So you're looking for Professor\n"
+	.string "Tenebris. That explains everything.$"
 
 MtCeramPeak_MainEvent_Cutscene_Text_4:
 # 111 "data//maps/MtCeram_Peak/scripts.pory"
@@ -766,7 +766,7 @@ MtCeramPeak_MainEvent_Cutscene_Text_8:
 MtCeramPeak_MainEvent_Cutscene_Text_9:
 # 136 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "And if we get such power, there would be\n"
-	.string "nothing stopping {COLOR BLUE}Team Somber{COLOR DARK_GRAY} from\l"
+	.string "nothing stopping Team Somber from\l"
 	.string "having absolute control!\p"
 	.string "A noble goal, is it not, {PLAYER}?\p"
 	.string "And you! You dare to get in our way, time\n"
@@ -778,7 +778,7 @@ MtCeramPeak_MainEvent_Battle_Text_0:
 
 MtCeramPeak_MainEvent_Battle_Text_1:
 # 146 "data//maps/MtCeram_Peak/scripts.pory"
-	.string "I, Moxie, Head of the {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\n"
+	.string "I, Moxie, Head of the Team Somber\n"
 	.string "Research Wing, will end your meddling\l"
 	.string "once and for all!$"
 

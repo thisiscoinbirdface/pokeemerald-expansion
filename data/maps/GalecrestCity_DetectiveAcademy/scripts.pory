@@ -20,7 +20,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     waitmovement(0)
     delay(24)
     speakername("Kohla")
-    msgbox(format("{PLAYER}, it was you who stopped {COLOR BLUE}Team Somber{COLOR DARK_GRAY} from getting the dreamstone.\pThanks to you, I learned something. Being the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} isn't enough.\pTo stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY} - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough.\pTo stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
     release 
 
     //Start walking out
@@ -29,7 +29,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     //Reminder for silversun city and gym badge
     speakername("Kohla")
-    msgbox(format("{COLOR BLUE}Silversun City{COLOR DARK_GRAY} is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM Rock Smash, which will let you pass.\pSee you in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}...or sooner than that, I think."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM Rock Smash, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))
@@ -254,7 +254,7 @@ script GalecrestCity_DetectiveAcademy_NPC1{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC2{
-    msgbox(format("Every semester, the school ranks all the students. The top student is called the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}! {COLOR GREEN}Kohla{COLOR DARK_GRAY} held the title every semester, but he's graduated now, so the field is open again!"), MSGBOX_NPC)
+    msgbox(format("Every semester, the school ranks all the students. The top student is called the Ace Rookie! Kohla held the title every semester, but he's graduated now, so the field is open again!"), MSGBOX_NPC)
     end
 }
 
@@ -266,12 +266,12 @@ script GalecrestCity_DetectiveAcademy_NPC3{
 script GalecrestCity_DetectiveAcademy_NPC4{
     
     
-    msgbox(format("Since many rich folk live in {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}, there's a lot of theft. New students are often handed smaller cases to solve as part of their internship. But some also intern at the Galecrest Gym!"), MSGBOX_NPC)
+    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft. New students are often handed smaller cases to solve as part of their internship. But some also intern at the Galecrest Gym!"), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC5{
-    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an Ace Rookie!"), MSGBOX_NPC)
     end
 }
 
@@ -296,7 +296,7 @@ script GalecrestCity_DetectiveAcademy_NPC6{
 
 script GalecrestCity_DetectiveAcademy_NPC8{
     trainerbattle_single(TRAINER_GALECREST_DETECTIVE_A, format("Hey, you look weak. You'd be a good training dummy for my Charcadet!"), format("But you're not even a student!"))
-    msgbox(format("You may have beaten me, but I bet you can't beat {COLOR GREEN}Kohla{COLOR DARK_GRAY}! He's the star of the Academy!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("You may have beaten me, but I bet you can't beat Kohla! He's the star of the Academy!"), MSGBOX_AUTOCLOSE)
     end
 }
 

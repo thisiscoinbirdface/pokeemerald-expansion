@@ -197,14 +197,14 @@ SilversunCityGym_EventScript_Red_Text_1:
 
 SilversunCityGym_EventScript_Red_Text_2:
 # 38 "data//maps/SilversunCityGym/scripts.pory"
-	.string "When {COLOR BLUE}Gloria{COLOR DARK_GRAY} was appointed leader, she\n"
+	.string "When Gloria was appointed leader, she\n"
 	.string "took all the funds to set up her gym and\l"
 	.string "made a theater studio instead!\p"
 	.string "Silversun City is congested, so space is\n"
 	.string "expensive.\p"
 	.string "Nobody here is interested in battling,\n"
 	.string "but the rules are if you want to be a\l"
-	.string "part of {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s productions, you have\l"
+	.string "part of Gloria's productions, you have\l"
 	.string "to help maintain the gym.$"
 
 SilversunCityGym_EventScript_Red_Text_3:
@@ -236,7 +236,7 @@ SilversunCityGym_Red_Reward_End_Text_0:
 SilversunCityGym_TrainerA_Text_0:
 # 97 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Hey, you're not an actor! Oh, you're a\n"
-	.string "trainer? Sigh...why does {COLOR BLUE}Gloria{COLOR DARK_GRAY} make us\l"
+	.string "trainer? Sigh...why does Gloria make us\l"
 	.string "do this?$"
 
 SilversunCityGym_TrainerA_Text_1:
@@ -251,7 +251,7 @@ SilversunCityGym_TrainerA_Text_2:
 SilversunCityGym_TrainerB_Text_0:
 # 104 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Get out of the way! I need to practice\n"
-	.string "my dance moves or {COLOR BLUE}Gloria{COLOR DARK_GRAY} won't cast me!$"
+	.string "my dance moves or Gloria won't cast me!$"
 
 SilversunCityGym_TrainerB_Text_1:
 # 104 "data//maps/SilversunCityGym/scripts.pory"
@@ -260,13 +260,13 @@ SilversunCityGym_TrainerB_Text_1:
 
 SilversunCityGym_TrainerB_Text_2:
 # 105 "data//maps/SilversunCityGym/scripts.pory"
-	.string "We're practicing so that {COLOR BLUE}Gloria{COLOR DARK_GRAY} casts us\n"
+	.string "We're practicing so that Gloria casts us\n"
 	.string "in her next production.$"
 
 SilversunCityGym_TrainerC_Text_0:
 # 111 "data//maps/SilversunCityGym/scripts.pory"
 	.string "Argh - this isn't a Gym for crying out\n"
-	.string "loud! This is {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s theater studio. We\l"
+	.string "loud! This is Gloria's theater studio. We\l"
 	.string "don't have time for battling!$"
 
 SilversunCityGym_TrainerC_Text_1:

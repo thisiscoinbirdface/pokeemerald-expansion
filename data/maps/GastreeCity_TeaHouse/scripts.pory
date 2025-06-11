@@ -13,7 +13,7 @@ script GastreeCity_TeaHouse_EventScript_OldLady{
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 1) {goto(GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest)}
     //Else regular (currently just some text, maybe later a shop)
     if (var(VAR_GASTREE_TEASHOP_QUEST) == 2) {
-        msgbox(format("How are you doing, {PLAYER}? You know, my brother runs a restaurant further out west, in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\pYou should visit sometime."), MSGBOX_NPC)
+        msgbox(format("How are you doing, {PLAYER}? You know, my brother runs a restaurant further out west, in Pelluca City.\pYou should visit sometime."), MSGBOX_NPC)
     }   
     end
 }

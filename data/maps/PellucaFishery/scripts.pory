@@ -106,7 +106,7 @@ script PellucaFishery_EventScript_MainDude{
 
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
+    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
     release    
 
     fadenewbgm(SE_THUNDERSTORM)

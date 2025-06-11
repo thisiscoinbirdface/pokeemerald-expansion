@@ -817,7 +817,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_2:
 	.string "Get out of my face, leader! We have\n"
 	.string "business that concerns you not one bit.\l"
 	.string "We're going to take his supplies for our\l"
-	.string "trek up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!$"
+	.string "trek up Mt. Ceram!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_3:
 # 85 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -825,7 +825,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_3:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_4:
 # 86 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "The name's {COLOR RED}Ariana{COLOR DARK_GRAY}! And no way! This is MY\n"
+	.string "The name's Ariana! And no way! This is MY\n"
 	.string "base camp! You're not harrassing\l"
 	.string "anyone while I'm around!$"
 
@@ -856,7 +856,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_8:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_9:
 # 117 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Boss! Boss! This is the kid that beat me\n"
-	.string "in {COLOR BLUE}Route 3{COLOR DARK_GRAY}. I was trying to take the\l"
+	.string "in Route 3. I was trying to take the\l"
 	.string "dreamstone from that Clefairy hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_10:
@@ -872,7 +872,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_11:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_12:
 # 131 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "But there is a dreamstone sitting right\n"
-	.string "on top of {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}, and these people\l"
+	.string "on top of Mt. Ceram, and these people\l"
 	.string "are in the way! Gabrielle, you deal with\l"
 	.string "this pest while I put the leader in her\l"
 	.string "place. And you better win this time!$"
@@ -927,7 +927,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_22:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_23:
 # 200 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "No they didn't. Thank you {COLOR RED}Ariana{COLOR DARK_GRAY}! And\n"
+	.string "No they didn't. Thank you Ariana! And\n"
 	.string "you too, trainer. I owe you one. Stop by\l"
 	.string "our counter downstairs for trekking\l"
 	.string "supplies later on.$"
@@ -936,17 +936,17 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_24:
 # 210 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "That boss was really tough!\p"
 	.string "Hmm? You've met these thugs before?\n"
-	.string "And you're also going to {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}?\l"
+	.string "And you're also going to Mt. Ceram?\l"
 	.string "What's up there?\p"
 	.string "Dreamstones? I thought those were\n"
 	.string "just rumours.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_25:
 # 212 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "They're connected to Professor {COLOR GREEN}\n"
-	.string "Tenebris{COLOR DARK_GRAY}' disappearance?\p"
-	.string "I gotta do something - Professor {COLOR GREEN}\n"
-	.string "Tenebris{COLOR DARK_GRAY} gave me my Tauros!$"
+	.string "They're connected to Professor\n"
+	.string "Tenebris' disappearance?\p"
+	.string "I gotta do something - Professor\n"
+	.string "Tenebris gave me my Tauros!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_26:
 # 214 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -956,7 +956,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_26:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_27:
 # 216 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "{PLAYER}, was it? {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is filled\n"
+	.string "{PLAYER}, was it? Mt. Ceram is filled\n"
 	.string "with dangerous Pokémon. The rules\l"
 	.string "around here are you can't climb unless\l"
 	.string "you have my gym badge and my blessing.\l"
@@ -967,8 +967,8 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_27:
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_0:
 # 242 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Hey, where do you think you're going\n"
-	.string "kid? This Supply Depot is under {COLOR BLUE}Team\l"
-	.string "Somber{COLOR DARK_GRAY}'s control!$"
+	.string "kid? This Supply Depot is under Team\l"
+	.string "Somber's control!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_1:
 # 242 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -977,7 +977,7 @@ CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_1:
 CeramBaseCamp_Main_TrainerBattle_Grunt1_Text_2:
 # 243 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "We're here to collect supplies for the\n"
-	.string "climb up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!$"
+	.string "climb up Mt. Ceram!$"
 
 CeramBaseCamp_Main_TrainerBattle_Grunt2_Text_0:
 # 249 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -1017,11 +1017,11 @@ CeramBaseCamp_Main_NPC1_Text_0:
 # 319 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Centiskorch and Scolipede are fiercely\n"
 	.string "territorial. They keep fighting each\l"
-	.string "other in {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.$"
+	.string "other in Mt. Ceram.$"
 
 CeramBaseCamp_Main_NPC1_Text_1:
 # 322 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "Who are these {COLOR BLUE}Team Somber{COLOR DARK_GRAY} people? They\n"
+	.string "Who are these Team Somber people? They\n"
 	.string "act all high and mighty, but they're\l"
 	.string "really just harrassing innocent folk.$"
 
@@ -1055,7 +1055,7 @@ CeramBaseCamp_Main_NPC3_Text_1:
 CeramBaseCamp_Main_NPC3_Text_2:
 # 359 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "These thugs took the shopkeeper\n"
-	.string "upstairs! But {COLOR RED}Ariana{COLOR DARK_GRAY}, the Gym Leader,\l"
+	.string "upstairs! But Ariana, the Gym Leader,\l"
 	.string "just went up there to get him back.\l"
 	.string "She's going to teach them a lesson!$"
 
@@ -1079,7 +1079,7 @@ CeramBaseCamp_Main_NPC5_Text_1:
 # 388 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "I want to gift my sister a Petilil. It's\n"
 	.string "her favourite Pokémon! But I couldn't\l"
-	.string "find any on {COLOR BLUE}Route 4{COLOR DARK_GRAY}.$"
+	.string "find any on Route 4.$"
 
 CeramBaseCamp_Main_NPC5_Text_2:
 # 393 "data//maps/CeramBaseCamp_Main/scripts.pory"
@@ -1103,13 +1103,13 @@ CeramBaseCamp_Main_NPC5_Text_5:
 
 CeramBaseCamp_Main_NPC5_Text_6:
 # 443 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "I can't wait for {COLOR RED}Ariana{COLOR DARK_GRAY} to put these\n"
+	.string "I can't wait for Ariana to put these\n"
 	.string "crooks in their place!$"
 
 CeramBaseCamp_Main_NPC6_Text_0:
 # 480 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "On the other side of {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is\n"
-	.string "{COLOR BLUE}Silversun City{COLOR DARK_GRAY}. I hear the trek down\l"
+	.string "On the other side of Mt. Ceram is\n"
+	.string "Silversun City. I hear the trek down\l"
 	.string "from the summit is tough, because the\l"
 	.string "native Centiskorch and Scolipede fight\l"
 	.string "each other.$"

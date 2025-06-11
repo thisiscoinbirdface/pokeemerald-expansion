@@ -812,7 +812,7 @@ MirrohInterior_1F_EventScript_NurseQuest_Exclamation_Text_0:
 MirrohInterior_1F_EventScript_NurseQuest_Main_Text_0:
 # 89 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "I was taking these Chanseys up to\n"
-	.string "{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} to help the Nurse Joy\l"
+	.string "Winterlily Hollow to help the Nurse Joy\l"
 	.string "there, but there was a cave-in and one\l"
 	.string "of the Chanseys got lost!\p"
 	.string "We can't go through these caves alone -\n"
@@ -851,7 +851,7 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_3:
 # 147 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Thank you trainer! You saved Chansey!\p"
 	.string "This group of people calling themselves\n"
-	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} caused these cave-ins!\p"
+	.string "Team Somber caused these cave-ins!\p"
 	.string "They came in here with big machinery\n"
 	.string "and collapsed parts of the cavern.\p"
 	.string "They seemed so scary!\n"
@@ -872,7 +872,7 @@ MirrohInterior_1F_EventScript_NurseQuest_End_Text_5:
 
 MirrohInterior_1F_EventScript_NurseQuest_End_Text_6:
 # 162 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "We should go to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} now.\n"
+	.string "We should go to Winterlily Hollow now.\n"
 	.string "The nurse must be waiting for us.\p"
 	.string "Thank you again, {PLAYER} and we wish\n"
 	.string "you all the best in your journey.\p"
@@ -946,7 +946,7 @@ MirrohInterior_1F_Trainer_D_Text_3:
 
 MirrohInterior_1F_Trainer_E_Text_0:
 # 244 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I can't get through to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}\n"
+	.string "I can't get through to Winterlily Hollow\n"
 	.string "from this side. It's so frustrating!$"
 
 MirrohInterior_1F_Trainer_E_Text_1:
@@ -959,13 +959,13 @@ MirrohInterior_1F_Trainer_E_Text_2:
 
 MirrohInterior_1F_NPC_A_Text_0:
 # 267 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "I'm trekking to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}! But my\n"
+	.string "I'm trekking to Winterlily Hollow! But my\n"
 	.string "GRASS type Pokémon can't deal with all\l"
 	.string "the ICE type Pokémon around here...$"
 
 MirrohInterior_1F_NPC_B_Text_0:
 # 273 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} is past the ledge\n"
+	.string "Winterlily Hollow is past the ledge\n"
 	.string "above.\n"
 	.string "But how do I cross the ledge?$"
 
@@ -1011,7 +1011,7 @@ MirrohInterior_1F_SomberGrunts_Trigger_Text_2:
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_3:
 # 380 "data//maps/MirrohInterior_1F/scripts.pory"
-	.string "Would you relax? I'm not {COLOR RED}Gabrielle{COLOR DARK_GRAY} - of\n"
+	.string "Would you relax? I'm not Gabrielle - of\n"
 	.string "course I moved everything! Caused some\l"
 	.string "cave-ins, but that's not our problem!\p"
 	.string "Haha!$"
@@ -1032,11 +1032,11 @@ MirrohInterior_1F_SomberGrunts_Trigger_Text_6:
 MirrohInterior_1F_SomberGrunts_Trigger_Text_7:
 # 411 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Hey - aren't you that lab assistant who\n"
-	.string "beat Melea back in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}?$"
+	.string "beat Melea back in Silversun City?$"
 
 MirrohInterior_1F_SomberGrunts_Trigger_Text_8:
 # 420 "data//maps/MirrohInterior_1F/scripts.pory"
 	.string "Yeah - the same one who beat Moxie up\n"
-	.string "in {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} too!\p"
+	.string "in Mt. Ceram too!\p"
 	.string "The bosses will want to know this.\n"
 	.string "Let's go!$"

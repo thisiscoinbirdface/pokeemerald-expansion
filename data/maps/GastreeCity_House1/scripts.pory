@@ -1,7 +1,7 @@
 mapscripts GastreeCity_House1_MapScripts{}
 
 script GastreeCity_House1_NPC1{
-    msgbox(format("{COLOR GREEN}Gastree City{COLOR DARK_GRAY} sits on hilly terrain, connecting the hill stations of {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY} and {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} to the east and {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} to the north.\pLovely weather for me and Buneary!"), MSGBOX_NPC)
+    msgbox(format("Gastree City sits on hilly terrain, connecting the hill stations of Fennilahl Town and Carabrue Town to the east and Mt. Ceram to the north.\pLovely weather for me and Buneary!"), MSGBOX_NPC)
     end
 }
 

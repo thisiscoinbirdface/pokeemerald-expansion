@@ -40,11 +40,11 @@ script PellucaCityHouses_MayorQuestStart{
 
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
         speakername("Mayor")
-        msgbox(format("What now? I just can't -\pOh, it's you. The trainer at the bridge.\pHow has your stay at {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} been so far?\pWe hope you enjoy the cool riverside breeze while munching on one of our famous Apple Pies!\pAnd - and please accept this complimentary Drifblim Pass!"))
+        msgbox(format("What now? I just can't -\pOh, it's you. The trainer at the bridge.\pHow has your stay at Pelluca City been so far?\pWe hope you enjoy the cool riverside breeze while munching on one of our famous Apple Pies!\pAnd - and please accept this complimentary Drifblim Pass!"))
         speakername(NULL)
         giveitem(ITEM_DRIFBLIM_TRAVELS_PASS)
         speakername("Mayor")
-        msgbox(format("Using this, you'll be able to use the Drifblim outside our Pokémon Center to fly to {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.\pConvenient access for all tourists!\p...\pAfter what you've seen, there's no point in selling you the city, is there?"))
+        msgbox(format("Using this, you'll be able to use the Drifblim outside our Pokémon Center to fly to Silversun City.\pConvenient access for all tourists!\p...\pAfter what you've seen, there's no point in selling you the city, is there?"))
         release
         delay(16)
         speakername("Mayor")
@@ -114,7 +114,7 @@ script PellucaCityHouses_GabSibling2{
 script PellucaCityHouses_GabSibling3{
     lockall
     faceplayer
-    msgbox(format("{COLOR RED}Gabrielle{COLOR DARK_GRAY} keeps us afloat. Without her, I wouldn't be able to afford to study.\pI got her a gift."))
+    msgbox(format("Gabrielle keeps us afloat. Without her, I wouldn't be able to afford to study.\pI got her a gift."))
     release
     showmonpic(SPECIES_JANGMO_O, 10, 3)
     playmoncry(SPECIES_JANGMO_O, CRY_MODE_NORMAL)
@@ -219,14 +219,14 @@ script PellucaCityHouses_NPC1{
         msgbox(format("Please accept this reward. It's not much but I have no use for it, since I'm here all the time."))
         giveitem(ITEM_DRIFBLIM_TRAVELS_PASS)
         setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
-        msgbox(format("On the behalf of residents of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, thank you for your service!"), MSGBOX_NPC)        
+        msgbox(format("On the behalf of residents of Pelluca City, thank you for your service!"), MSGBOX_NPC)        
         release
         end
     }
 
     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
 
-        msgbox(format("I'm the mayor of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Since we sit at the intersection of the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} and the Hoya River, it's split up into several small islands. You know what that means?"), MSGBOX_NPC)
+        msgbox(format("I'm the mayor of Pelluca City. Since we sit at the intersection of the Ivy River and the Hoya River, it's split up into several small islands. You know what that means?"), MSGBOX_NPC)
         release
         applymovement(7, moves(emote_exclamation_mark)) 
         delay(16)    
@@ -251,7 +251,7 @@ script PellucaCityHouses_NPC1{
         }
 
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+            msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in Pelluca City!"), MSGBOX_NPC)
         } 
         end
     }
@@ -321,7 +321,7 @@ script PellucaCityHouses_NPC3{
     end
 }
 script PellucaCityHouses_NPC4{
-    msgbox(format("My Delphox doesn't like the river air. She prefers the dense fog of {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}, where I first met her."), MSGBOX_NPC)
+    msgbox(format("My Delphox doesn't like the river air. She prefers the dense fog of Vilethorn Woods, where I first met her."), MSGBOX_NPC)
     end
 }
 

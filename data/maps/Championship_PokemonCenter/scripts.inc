@@ -38,10 +38,10 @@ Championship_PokemonCenter_NPC2::
 
 Championship_PokemonCenter_NPC1_Text_0:
 # 19 "data//maps/Championship_PokemonCenter/scripts.pory"
-	.string "This city's Gym Leader is {COLOR RED}Inger{COLOR DARK_GRAY}, the\n"
+	.string "This city's Gym Leader is Inger, the\n"
 	.string "ROCK specialist. He's a local hero!\p"
-	.string "His trainers call him {COLOR RED}Inger{COLOR DARK_GRAY} the King, or\n"
-	.string "{COLOR RED}Inger{COLOR DARK_GRAY} for short.\p"
+	.string "His trainers call him Inger the King, or\n"
+	.string "Inger for short.\p"
 	.string "Hehe! I'd like a nickname like that.$"
 
 Championship_PokemonCenter_NPC2_Text_0:

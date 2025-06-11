@@ -613,7 +613,7 @@ Route3_Underpass_EvilBattle_Text_13:
 # 141 "data//maps/Route3_Underpass/scripts.pory"
 	.string "No?\p"
 	.string "No?!?!\p"
-	.string "Well then...let {COLOR RED}Gabrielle{COLOR DARK_GRAY} teach you a\n"
+	.string "Well then...let Gabrielle teach you a\n"
 	.string "lesson: don't go sticking your nose\l"
 	.string "where it doesn't belong!$"
 
@@ -628,7 +628,7 @@ Route3_Underpass_EvilBattle_Text_15:
 Route3_Underpass_EvilBattle_Text_16:
 # 159 "data//maps/Route3_Underpass/scripts.pory"
 	.string "And you! I'll remember this, {PLAYER}.\n"
-	.string "You'll regret messing with {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!$"
+	.string "You'll regret messing with Team Somber!$"
 
 Route3_Underpass_EvilBattle_Text_17:
 # 171 "data//maps/Route3_Underpass/scripts.pory"
@@ -652,14 +652,14 @@ Route3_Underpass_EvilBattle_Text_19:
 Route3_Underpass_EvilBattle_Text_20:
 # 177 "data//maps/Route3_Underpass/scripts.pory"
 	.string "But no more! I'm going to learn to hold\n"
-	.string "my ground. If {COLOR BLUE}Team Somber{COLOR DARK_GRAY} comes after\l"
+	.string "my ground. If Team Somber comes after\l"
 	.string "Clefairy again, we'll be ready.$"
 
 Route3_Underpass_EvilBattle_Text_21:
 # 179 "data//maps/Route3_Underpass/scripts.pory"
 	.string "{PLAYER} - we owe you. As thanks,\n"
 	.string "Clefairy and I want to give you the\l"
-	.string "stone that {COLOR RED}Gabrielle{COLOR DARK_GRAY} person was after...$"
+	.string "stone that Gabrielle person was after...$"
 
 Route3_Underpass_EvilBattle_Text_22:
 # 183 "data//maps/Route3_Underpass/scripts.pory"
@@ -670,5 +670,5 @@ Route3_Underpass_EvilBattle_Text_22:
 Route3_Underpass_EvilBattle_Text_23:
 # 185 "data//maps/Route3_Underpass/scripts.pory"
 	.string "Don't worry - Clefairy's bored of that\n"
-	.string "stone already. Next, we'll head to {COLOR RED}Mt.\l"
-	.string "Ceram{COLOR DARK_GRAY} to collect rare stones there!$"
+	.string "stone already. Next, we'll head to Mt.\l"
+	.string "Ceram to collect rare stones there!$"

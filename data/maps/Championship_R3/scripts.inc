@@ -193,7 +193,7 @@ Championship_R3_Text_1:
 	.string "Let's hear a huge cheer for the\n"
 	.string "trainers! Show your support!\p"
 	.string "After a conclusive round of 16 victory,\n"
-	.string "{COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} {COLOR GREEN}Kohla{COLOR DARK_GRAY} stands in the lead\l"
+	.string "Ace Rookie Kohla stands in the lead\l"
 	.string "for...$"
 
 Championship_R3_Text_2:
@@ -203,7 +203,7 @@ Championship_R3_Text_2:
 Championship_R3_Text_3:
 # 35 "data//maps/Championship_R3/scripts.pory"
 	.string "Just you wait and watch - Avalugg and I\n"
-	.string "will crush the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!$"
+	.string "will crush the Ace Rookie!$"
 
 Championship_R3_Text_4:
 # 37 "data//maps/Championship_R3/scripts.pory"
@@ -214,8 +214,8 @@ Championship_R3_Text_5:
 	.string "I can't believe I'm seeing you here of\n"
 	.string "all places!\p"
 	.string "...\p"
-	.string "Who would've guessed back in {COLOR GREEN}Gastree\n"
-	.string "City{COLOR DARK_GRAY} that you and I would follow the\l"
+	.string "Who would've guessed back in Gastree\n"
+	.string "City that you and I would follow the\l"
 	.string "same path?\p"
 	.string "Avalugg and I are strong - we're the\n"
 	.string "strongest duo in all of Cormoria!$"

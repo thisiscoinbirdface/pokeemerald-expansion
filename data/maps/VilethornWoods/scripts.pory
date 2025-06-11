@@ -233,7 +233,7 @@ script VilethornWoods_Trainer_D{
 }
 
 script VilethornWoods_Trainer_E{
-    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods are creepy! I was supposed to go to {COLOR BLUE}Gloria{COLOR DARK_GRAY}'s theater studio in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}...but I'm lost!"), "You creep me out too!")
+    trainerbattle_single(TRAINER_VILETHORN_E, format("Eek! These woods are creepy! I was supposed to go to Gloria's theater studio in Silversun City...but I'm lost!"), "You creep me out too!")
     msgbox(format("I've been stuck here for hours. I need to get out!"))
     releaseall
     end
@@ -242,7 +242,7 @@ script VilethornWoods_Trainer_E{
 script VilethornWoods_Trainer_F1{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to interview the great {COLOR BLUE}Gloria{COLOR DARK_GRAY}! Get out of our way!"), "We lost!")
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
     msgbox(format("If we can get an exclusive interview with her, itll be the scoop of the week!"))
     releaseall
     end
@@ -251,7 +251,7 @@ script VilethornWoods_Trainer_F1{
 script VilethornWoods_Trainer_F2{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to interview the great {COLOR BLUE}Gloria{COLOR DARK_GRAY}! Get out of our way!"), "We lost!")
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
     msgbox(format("If we can get an exclusive interview with her, itll be the scoop of the week!"))
     releaseall
     end
@@ -274,7 +274,7 @@ script VilethornWoods_Trainer_H{
 
 
 script VilethornWoods_NPC1{
-    msgbox(format("The Morelull here in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} release spores when in danger. That's what creates this fog."), MSGBOX_NPC)
+    msgbox(format("The Morelull here in Vilethorn Woods release spores when in danger. That's what creates this fog."), MSGBOX_NPC)
     end
 }
 
@@ -331,7 +331,7 @@ script VilethornWoods_Cook_Reward_Give{
 
 script VilethornWoods_Cook_RewardEnd{
     setflag(FLAG_VILETHORN_NPC_MUSHROOMS)
-    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, be sure to drop by our restaurant!"), MSGBOX_NPC)
+    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)
     end
 }
 

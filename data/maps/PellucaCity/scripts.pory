@@ -469,7 +469,7 @@ script PellucaCityFlooded_MainEvent{
     speakername("Q-squad Boss")
     msgbox(format("What happened?"))
     speakername("Mayor")
-    msgbox(format("A Mega Sharpedo came rampaging down from the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} and kicked up a storm! The riverbanks have flooded.\pThe city's underwater!"))
+    msgbox(format("A Mega Sharpedo came rampaging down from the Ivy River and kicked up a storm! The riverbanks have flooded.\pThe city's underwater!"))
     speakername("Q-squad Boss")
     msgbox(format("Is everyone safe?"))
     speakername("Citizen")
@@ -533,7 +533,7 @@ script PellucaCityFlooded_MainEvent{
     applymovement(51, moves(face_up))   
 
     speakername("Citizen")
-    msgbox(format("Is that {COLOR BLUE}Jania{COLOR DARK_GRAY}?\pYeah! It's the Gym Leader! In the flesh!"))
+    msgbox(format("Is that Jania?\pYeah! It's the Gym Leader! In the flesh!"))
     release
 
     addobject(LOCALID_FL_JANIA)
@@ -552,14 +552,14 @@ script PellucaCityFlooded_MainEvent{
     applymovement(LOCALID_FL_MAYOR, moves(emote_exclamation_mark))   
     delay(16)
     speakername("Mayor")
-    msgbox(format("Oh, {COLOR BLUE}Jania{COLOR DARK_GRAY}! It's you! Finally. Please - you have to save those still drowning!"))
+    msgbox(format("Oh, Jania! It's you! Finally. Please - you have to save those still drowning!"))
     release    
     delay(16)
 
     applymovement(LOCALID_FL_QWIL, moves(emote_exclamation_mark))   
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Yeah, {COLOR BLUE}Jania{COLOR DARK_GRAY}! You're an even stronger trainer than I am. You can do it!"))
+    msgbox(format("Yeah, Jania! You're an even stronger trainer than I am. You can do it!"))
     release     
     delay(16)
 
@@ -879,7 +879,7 @@ script PellucaCity_Greta_Trigger2{
 script PellucaCity_Greta_Main{
     
     speakername("Greta")
-    msgbox(format("Oh, it's you again, {PLAYER}! Fancy seeing you in these parts. {COLOR BLUE}Route 6{COLOR DARK_GRAY} was a tough trek, eh?"))
+    msgbox(format("Oh, it's you again, {PLAYER}! Fancy seeing you in these parts. Route 6 was a tough trek, eh?"))
     release
     delay(20)
     speakername("Greta")
@@ -931,7 +931,7 @@ script PellucaCity_EventScripts_Gabrielle{
     } else {
 
     speakername("Gabrielle")
-    msgbox(format("I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when {COLOR BLUE}Team Somber{COLOR DARK_GRAY} promised me money, I took it.\p...\pThose grunts were really vicious to me. I was so scared I would lose Zoroark!")) 
+    msgbox(format("I grew up here on this cliff without my parents. Life was hard.\pI didn't want my younger siblings to go through what I did, so when Team Somber promised me money, I took it.\p...\pThose grunts were really vicious to me. I was so scared I would lose Zoroark!")) 
     release
     delay(24)
     faceplayer
@@ -954,7 +954,7 @@ script PellucaCity_EventScripts_Gabrielle{
     }
     delay(30)
     speakername("Gabrielle")
-    msgbox(format("After getting kicked out of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, I feel like I've come to my senses a little. I'm going to support my family - but do it right. Be honest. Responsible."))
+    msgbox(format("After getting kicked out of Team Somber, I feel like I've come to my senses a little. I'm going to support my family - but do it right. Be honest. Responsible."))
     release
     delay(24)
     faceplayer
@@ -987,7 +987,7 @@ script PellucaCity_Gab_ChoiceItem_Give{
 
 script PellucaCity_Gab_ChoiceItem_End{
     speakername("Gabrielle")
-    msgbox(format("The choices we make define who we are.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} from here? {COLOR BLUE}Team Somber{COLOR DARK_GRAY} must've reached there already.\pBest of luck, {PLAYER}."))
+    msgbox(format("The choices we make define who we are.\nOnce we lock in, we can't change.\pI can't erase what I've done, but I'm going to make a better choice this time.\pI suppose you're going to head to the Mirroh Base Camp from here? Team Somber must've reached there already.\pBest of luck, {PLAYER}."))
     release
     setflag(FLAG_PELLUCA_GABRIELLE_CHOICEBAND)
     applymovement(LOCALID_GAB, moves(face_left))
@@ -1051,7 +1051,7 @@ script PellucaCity_NPC2{
 }
 //bridge black belt
 script PellucaCity_NPC3{
-    msgbox(format("I would've trained up in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} but I can't go there without a Cable Car Pass. So I'm jogging here instead."), MSGBOX_NPC)
+    msgbox(format("I would've trained up in Mt. Mirroh but I can't go there without a Cable Car Pass. So I'm jogging here instead."), MSGBOX_NPC)
     end
 }
 //bridge cyclist
@@ -1068,7 +1068,7 @@ script PellucaCity_NPC5{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 11))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("Jania, the Gym Leader of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} had her gym constructed on a separate island."))
+    msgbox(format("Jania, the Gym Leader of Pelluca City had her gym constructed on a separate island."))
     release
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 11))
@@ -1080,7 +1080,7 @@ script PellucaCity_NPC5{
 }
 //bridge getting off dude
 script PellucaCity_NPC6{
-    msgbox(format("Are you headed to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}? You'll have to take the cable car past {COLOR BLUE}Route 7{COLOR DARK_GRAY}. I heard they're closing the gym there though."), MSGBOX_NPC)
+    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car past Route 7. I heard they're closing the gym there though."), MSGBOX_NPC)
     end
 }
 //main island
@@ -1175,7 +1175,7 @@ script PellucaCity_NPC11{
         end
     }
     
-    msgbox(format("The Pelluca Gym is across the water...when I was younger, I tried to challenge {COLOR BLUE}Jania{COLOR DARK_GRAY} many times, but I could never win. She was my classmate, you know? We grew up in {COLOR GREEN}Galecrest City{COLOR DARK_GRAY} together. She went on to become a big Gym Leader and I moved here too, with a regular family and a regular job. Whenever I look off at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
+    msgbox(format("The Pelluca Gym is across the water...when I was younger, I tried to challenge Jania many times, but I could never win. She was my classmate, you know? We grew up in Galecrest City together. She went on to become a big Gym Leader and I moved here too, with a regular family and a regular job. Whenever I look off at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
     giveitem(ITEM_TM31)
     setflag(FLAG_PELLUCA_CITY_TM_GIVER)
     msgbox(format("It's time for me to let go."), MSGBOX_NPC)
@@ -1250,7 +1250,7 @@ script PellucaCity_PostGymEvent_Trigger{
         waitmovement(0)
         delay(16)
         speakername("Jania")
-        msgbox(format("Where am I going?\pI'm going to {COLOR RED}Rivetshore City{COLOR DARK_GRAY}.\nAll the Gym Leaders have been called there."))
+        msgbox(format("Where am I going?\pI'm going to Rivetshore City.\nAll the Gym Leaders have been called there."))
         release
         
         special(SpawnCameraObject)
@@ -1279,13 +1279,13 @@ script PellucaCity_PostGymEvent_Trigger{
         delay(16)
 
         speakername("Gabrielle")
-        msgbox(format("I overheard {COLOR BLUE}Jania{COLOR DARK_GRAY} talking to someone!\p...\pWhat? I wasn't eavesdropping!\nShe was just nearby.\pShe was talking to the eighth Gym Leader. They mentioned {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\pThey must be up to something in {COLOR RED}Rivetshore City{COLOR DARK_GRAY}!\p..."))
+        msgbox(format("I overheard Jania talking to someone!\p...\pWhat? I wasn't eavesdropping!\nShe was just nearby.\pShe was talking to the eighth Gym Leader. They mentioned Team Somber!\pThey must be up to something in Rivetshore City!\p..."))
         release
         applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
         speakername("Gabrielle")
-        msgbox(format("You're off the case?\p...\pSo?\pThe {PLAYER} I know wouldn't be stopped by something like that!\pYou taught me the difference between right and wrong. Have you forgotten why you're doing this in the first place?\pIt was to find YOUR Professor.\nYou don't need anyone's permission!\p...\pI'm not letting you give up, {PLAYER}.\pI'm going to {COLOR RED}Rivetshore City{COLOR DARK_GRAY} to get the final gym badge. It's south of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} - you can get there by surfing.\pI'll be waiting for you!"))
+        msgbox(format("You're off the case?\p...\pSo?\pThe {PLAYER} I know wouldn't be stopped by something like that!\pYou taught me the difference between right and wrong. Have you forgotten why you're doing this in the first place?\pIt was to find YOUR Professor.\nYou don't need anyone's permission!\p...\pI'm not letting you give up, {PLAYER}.\pI'm going to Rivetshore City to get the final gym badge. It's south of Pelluca City - you can get there by surfing.\pI'll be waiting for you!"))
         release
         delay(16)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
@@ -1324,7 +1324,7 @@ script PellucaCity_PostGymEvent_Trigger{
 
 
 script PellucaCity_Red_GymBlock{
-    msgbox(format("Jania's gone to deal with the Mega Sharpedo. You'll find her up in {COLOR BLUE}Ivy River{COLOR DARK_GRAY} somewhere."), MSGBOX_NPC)
+    msgbox(format("Jania's gone to deal with the Mega Sharpedo. You'll find her up in Ivy River somewhere."), MSGBOX_NPC)
     end
 }
 

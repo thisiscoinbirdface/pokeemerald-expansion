@@ -82,7 +82,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_MELEA_2, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("The famous {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} and his Ceruledge...burned to dust!"))
+    msgbox_delay("Melea", format("The famous Ace Rookie and his Ceruledge...burned to dust!"))
 
     applymovement(LOCALID_MOXIE_2, moves(jump_in_place_down))
     waitmovement(0)
@@ -120,7 +120,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_MELEA_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Isn't that Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}?"))
+    msgbox_delay("Melea", format("Isn't that Professor  Tenebris?"))
 
     applymovement(LOCALID_MOXIE_2, moves(jump_in_place_up))
     waitmovement(0)
@@ -162,12 +162,12 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("What you see is the truth, Tenebris.\pI founded {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\pI was the one spying on you from the start! Easy enough, since I was right under your nose. I studied all your papers, took all your research...and right when you were about to bring the dreamstone home, you ran off with it!"))
+    msgbox_delay("Rue", format("What you see is the truth, Tenebris.\pI founded Team Somber!\pI was the one spying on you from the start! Easy enough, since I was right under your nose. I studied all your papers, took all your research...and right when you were about to bring the dreamstone home, you ran off with it!"))
 
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("And you - {PLAYER}!\pYou stupid, stupid gnat!\pI tricked the detectives into sending an inexperienced idiot on the hunt for the dreamstones! How easy it should have been to stop you and {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\pBut you - despite all odds - managed to get in our way at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\pThen I sent {COLOR GREEN}Kohla{COLOR DARK_GRAY} on a wild goose chase at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! But you managed to take down our base without his help!"))
+    msgbox_delay("Rue", format("And you - {PLAYER}!\pYou stupid, stupid gnat!\pI tricked the detectives into sending an inexperienced idiot on the hunt for the dreamstones! How easy it should have been to stop you and Kohla!\pBut you - despite all odds - managed to get in our way at Mt. Ceram.\pThen I sent Kohla on a wild goose chase at Silversun City! But you managed to take down our base without his help!"))
 
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
     msgbox_delay("Kohla", format("Y-you set me up?"))
@@ -186,17 +186,17 @@ script UnchartedIsland_Finale_Cutscene{
     special(RemoveCameraObject)
 
     delay(16)
-    msgbox_delay("Rue", format("{PLAYER}, when you saw me at the Master Ball Maker's house at the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}, I feared you'd connect the dots for a moment...but it looks like I overestimated your cognitive abilities.\pNo...I did everything right.\pEverything was perfect!"))
+    msgbox_delay("Rue", format("{PLAYER}, when you saw me at the Master Ball Maker's house at the Mirroh Base Camp, I feared you'd connect the dots for a moment...but it looks like I overestimated your cognitive abilities.\pNo...I did everything right.\pEverything was perfect!"))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("But why, {COLOR BLUE}Rue{COLOR DARK_GRAY}?"))
+    msgbox_delay("Tenebris", format("But why, Rue?"))
 
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...\nand {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
+    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...\nand Team Somber, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
@@ -228,7 +228,7 @@ script UnchartedIsland_Finale_Cutscene{
     delay(16)
     msgbox_delay("Moxie", format("Silence, loser!"))
     delay(16)
-    msgbox_delay("Rue", format("It's fine, Moxie.\nHe's right...that's no excuse.\pBut who will stop me?\nWho will force my hand now?\pI've beaten everyone - I've hoodwinked the detectives, bypassed the gym leaders and crushed the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}."))
+    msgbox_delay("Rue", format("It's fine, Moxie.\nHe's right...that's no excuse.\pBut who will stop me?\nWho will force my hand now?\pI've beaten everyone - I've hoodwinked the detectives, bypassed the gym leaders and crushed the Ace Rookie."))
 
     goto(UnchartedIsland_Finale_Battle)
 }
@@ -238,7 +238,7 @@ script UnchartedIsland_Finale_Battle{
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("No, {COLOR BLUE}Rue{COLOR DARK_GRAY}.\pYou haven't beaten us all."))
+    msgbox_delay("Tenebris", format("No, Rue.\pYou haven't beaten us all."))
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -468,7 +468,7 @@ script UnchartedIsland_Finale_Skip{
 
 //Breech
 script UnchartedIsland_Breech{
-    msgbox_delay("Breech", format("{PLAYER} - you made it through!\pClefable and I will hide here behind the trees. You go on ahead, but be careful! I saw all the gym leaders out there. If they catch you, they'll send you back to the ship!\p...\pYou're just like you were back when I met you in {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}. The only thing that changed is that you saved a hiker back then and you're saving all of Cormoria now.\pYou're really cool, {PLAYER}.\nI'm happy we met.\pGood luck!"))
+    msgbox_delay("Breech", format("{PLAYER} - you made it through!\pClefable and I will hide here behind the trees. You go on ahead, but be careful! I saw all the gym leaders out there. If they catch you, they'll send you back to the ship!\p...\pYou're just like you were back when I met you in Fennilahl Town. The only thing that changed is that you saved a hiker back then and you're saving all of Cormoria now.\pYou're really cool, {PLAYER}.\nI'm happy we met.\pGood luck!"))
 }
 script UnchartedIsland_Clefable{
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
@@ -535,12 +535,12 @@ script UnchartedIsland_Raazi{
 
 
 script UnchartedIsland_Grunt_A{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format("The boss gave me new Pokémon just to stop the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}. You can't stop us - wait, you're not the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"), format("Guess you're still on the case!"))
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_A, format("The boss gave me new Pokémon just to stop the Ace Rookie. You can't stop us - wait, you're not the Ace Rookie!"), format("Guess you're still on the case!"))
     msgbox(format("It doesn't matter who's on the case. You can't stop us now!"))
     releaseall
 }
 script UnchartedIsland_Grunt_B{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_B, format("They said the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} was coming. Why are you here instead?"), format("I'd rather fight the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"))
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_B, format("They said the Ace Rookie was coming. Why are you here instead?"), format("I'd rather fight the Ace Rookie!"))
     msgbox(format(""))
     releaseall
 }
@@ -610,7 +610,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     //set the pokemon hide flag
     clearflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
 
-    msgbox_delay("Moxie", format("{PLAYER}.\pA familiar face by now.\nHow many times has it been?\pWe received intel that you were off the case, and we would only have to deal with the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\pIt was our mistake, I suppose, to assume you wouldn't come any way."))
+    msgbox_delay("Moxie", format("{PLAYER}.\pA familiar face by now.\nHow many times has it been?\pWe received intel that you were off the case, and we would only have to deal with the Ace Rookie.\pIt was our mistake, I suppose, to assume you wouldn't come any way."))
     
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     waitmovement(0)
@@ -648,7 +648,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 10 walk_up * 14))
     waitmovement(0)
 
-    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took her dreamstone and vanished.\pThis is where it all began..."))
+    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor  Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
 
     setobjectxyperm(LOCALID_MELEA_1, 67, 38)
 
@@ -688,7 +688,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(LOCALID_MELEA_1, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)    
-    msgbox_delay("Melea", format("No matter - they can't beat the two of us.\pI'll take the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\nYou deal with {PLAYER}!"))
+    msgbox_delay("Melea", format("No matter - they can't beat the two of us.\pI'll take the Ace Rookie.\nYou deal with {PLAYER}!"))
     delay(16)
 
     msgbox_delay("Kohla", format("..."))
@@ -704,13 +704,13 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Hahaha! I can't believe it! You've been thrown under the bus! The {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} just left you alone!"))
+    msgbox_delay("Melea", format("Hahaha! I can't believe it! You've been thrown under the bus! The Ace Rookie just left you alone!"))
 
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\pNow that we control the dreamstone, we've picked up some rare ancient Pokémon of our own!\pIt's time to end this once and for all!"))
+    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pNow that we control the dreamstone, we've picked up some rare ancient Pokémon of our own!\pIt's time to end this once and for all!"))
 
     //battle 1
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))
@@ -725,7 +725,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Calm down Moxie! I'm here.\pGo now - go and stop {COLOR GREEN}Kohla{COLOR DARK_GRAY}.\nI'll finish {PLAYER} off!"))
+    msgbox_delay("Melea", format("Calm down Moxie! I'm here.\pGo now - go and stop Kohla.\nI'll finish {PLAYER} off!"))
 
     applymovement(LOCALID_MOXIE_1, moves(walk_fast_right *3 walk_fast_down *5))
     waitmovement(0)
@@ -834,25 +834,25 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("Yes, I'm Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\pI've been hiding in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}...but {COLOR BLUE}Team Somber{COLOR DARK_GRAY} found the dreamstones any way, so my effort was, it seems, wasted."))
+        msgbox_delay("Tenebris", format("Yes, I'm Professor  Tenebris.\pI've been hiding in Ancient Cormoria...but Team Somber found the dreamstones any way, so my effort was, it seems, wasted."))
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your best to put an end to {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it. I didn't know where to hide it so I came here and jumped into {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}. I thought that would be enough to stop whoever was spying on me, but clearly it wasn't.\pSomeone from {COLOR BLUE}Team Somber{COLOR DARK_GRAY} had eyes on me and the dreamstone from the very beginning!\pAnd after my time in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, I know why."))
+        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your best to put an end to Team Somber's plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it. I didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me, but clearly it wasn't.\pSomeone from Team Somber had eyes on me and the dreamstone from the very beginning!\pAnd after my time in Ancient Cormoria, I know why."))
         delay(16)
         msgbox_delay("Tenebris", format("The Ancient Terror..."))
         showmonpic(SPECIES_KORAIDON, 10, 3)
-        msgbox_delay("Tenebris", format("Of the many strong Pokémon that ruled over {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
+        msgbox_delay("Tenebris", format("Of the many strong Pokémon that ruled over Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
         hidemonpic
         delay(16)
-        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokémon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} friend.\p...\pLike I said, I've been watching you.\nFirst at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\pThen at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.\pAgain at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
+        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokémon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
         
         //last choice joke
         speakername(NULL)
         msgbox(format("This is your last choice in the game! Please choose carefully."), MSGBOX_POKENAV)
         delay(16)
         speakername("Tenebris")
-        message(format("{PLAYER} - will you stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}?"))
+        message(format("{PLAYER} - will you stop Team Somber?"))
         waitmessage
         dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Yeah!", "Of course!", "Definitely!") 
 
@@ -860,7 +860,7 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("You truly are a gem of a human being.\pNow come! Let us enter {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} once more...and exit right where the dreamstone is!"))
+        msgbox_delay("Tenebris", format("You truly are a gem of a human being.\pNow come! Let us enter Ancient Cormoria once more...and exit right where the dreamstone is!"))
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *4 walk_down *2 walk_right * 3))
         applymovement(LOCALID_TENE, moves(walk_right *4 walk_down *2 walk_right * 3 jump_2_down))

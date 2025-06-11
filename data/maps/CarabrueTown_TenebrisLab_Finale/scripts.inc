@@ -254,7 +254,7 @@ CarabrueTown_TenebrisLab_PostFinale_Text_0:
 
 CarabrueTown_TenebrisLab_PostFinale_Text_1:
 # 27 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	.string "...and now {COLOR BLUE}Rue{COLOR DARK_GRAY} won't be allowed to plot\n"
+	.string "...and now Rue won't be allowed to plot\n"
 	.string "any schemes for a long, long time.$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_2:
@@ -275,21 +275,21 @@ CarabrueTown_TenebrisLab_PostFinale_Text_5:
 	.string "detectives.\p"
 	.string "Without your leadership on this case,\n"
 	.string "who knows how long I would have been\l"
-	.string "trapped in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}?$"
+	.string "trapped in Ancient Cormoria?$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_6:
 # 51 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "We're only doing our duty, Professor.\p"
 	.string "We also have people to thank...\p"
 	.string "Kohla of course, although he's not here\n"
-	.string "now, was instrumental in chasing {COLOR BLUE}Team\l"
-	.string "Somber{COLOR DARK_GRAY} across Cormoria. He's got the\l"
+	.string "now, was instrumental in chasing Team\l"
+	.string "Somber across Cormoria. He's got the\l"
 	.string "makings of a truly detective!\p"
 	.string "The Gym Leaders are the ones who\n"
-	.string "actually took {COLOR BLUE}Team Somber{COLOR DARK_GRAY} apart.\p"
+	.string "actually took Team Somber apart.\p"
 	.string "Those two admins - Moxie and Melea -\n"
-	.string "got away, but {COLOR RED}Inger{COLOR DARK_GRAY} and {COLOR RED}Ariana{COLOR DARK_GRAY} are with\l"
-	.string "{COLOR BLUE}Gloria{COLOR DARK_GRAY} in {COLOR BLUE}Silversun City{COLOR DARK_GRAY} right now,\l"
+	.string "got away, but Inger and Ariana are with\l"
+	.string "Gloria in Silversun City right now,\l"
 	.string "clearing out their headquarters and\l"
 	.string "retrieving all the Ancient Pokémon.$"
 
@@ -311,7 +311,7 @@ CarabrueTown_TenebrisLab_PostFinale_Text_10:
 # 66 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Absolutely.\p"
 	.string "There was no solving this case without\n"
-	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} and the Gym Leaders...\p"
+	.string "Kohla and the Gym Leaders...\p"
 	.string "...$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_11:
@@ -322,7 +322,7 @@ CarabrueTown_TenebrisLab_PostFinale_Text_12:
 # 78 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "{PLAYER}, you were just incredible.\n"
 	.string "You stood up against a huge\l"
-	.string "organisation like {COLOR BLUE}Team Somber{COLOR DARK_GRAY} and\l"
+	.string "organisation like Team Somber and\l"
 	.string "fought them off time and again!$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_13:
@@ -343,7 +343,7 @@ CarabrueTown_TenebrisLab_PostFinale_Text_14:
 CarabrueTown_TenebrisLab_PostFinale_Text_15:
 # 94 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "The detectives told me that you\n"
-	.string "defeated Leader {COLOR RED}Raazi{COLOR DARK_GRAY}.\p"
+	.string "defeated Leader Raazi.\p"
 	.string "You know what that means, right?\p"
 	.string "...$"
 
@@ -352,9 +352,9 @@ CarabrueTown_TenebrisLab_PostFinale_Text_16:
 	.string "You've qualified for this year's\n"
 	.string "Pokémon Championship!\p"
 	.string "The Championship is held every four\n"
-	.string "years, down at {COLOR RED}Victory Cape{COLOR DARK_GRAY}.\p"
-	.string "You can get there by surfing from {COLOR BLUE}Route\n"
-	.string "2{COLOR DARK_GRAY}, but you'll need this.$"
+	.string "years, down at Victory Cape.\p"
+	.string "You can get there by surfing from Route\n"
+	.string "2, but you'll need this.$"
 
 CarabrueTown_TenebrisLab_PostFinale_Text_17:
 # 100 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
@@ -370,13 +370,13 @@ CarabrueTown_TenebrisLab_PostFinale_Text_18:
 	.string "...\p"
 	.string "Well?\p"
 	.string "What are you waiting for?\p"
-	.string "Head to {COLOR BLUE}Route 2{COLOR DARK_GRAY} and make your way to\n"
-	.string "{COLOR RED}Victory Cape{COLOR DARK_GRAY} - ASAP!$"
+	.string "Head to Route 2 and make your way to\n"
+	.string "Victory Cape - ASAP!$"
 
 TenebrisLab_Finale_Detective_Text_0:
 # 116 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	.string "What's taking you so long? I bet {COLOR GREEN}Kohla{COLOR DARK_GRAY}'s\n"
-	.string "already reached {COLOR RED}Victory Cape{COLOR DARK_GRAY}.\p"
+	.string "What's taking you so long? I bet Kohla's\n"
+	.string "already reached Victory Cape.\p"
 	.string "How many slow starts do you need to\n"
 	.string "learn your lesson?$"
 
@@ -386,7 +386,7 @@ TenebrisLab_Finale_Tenebris_Text_0:
 
 TenebrisLab_Finale_Scientist_A_Text_0:
 # 128 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	.string "I can't believe {COLOR BLUE}Rue{COLOR DARK_GRAY} was behind this\n"
+	.string "I can't believe Rue was behind this\n"
 	.string "whole mess! I wish I'd caught on sooner!$"
 
 TenebrisLab_Finale_Scientist_B_Text_0:
@@ -397,7 +397,7 @@ TenebrisLab_Finale_Scientist_B_Text_0:
 TenebrisLab_Finale_Scientist_C_Text_0:
 # 136 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Go on, {PLAYER}! Bring the\n"
-	.string "championship trophy to {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY}!$"
+	.string "championship trophy to Carabrue Town!$"
 
 TenebrisLab_Finale_Gardevoir_Text_0:
 # 141 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"

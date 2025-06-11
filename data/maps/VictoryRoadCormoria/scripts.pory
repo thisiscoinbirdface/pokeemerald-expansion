@@ -28,14 +28,14 @@ script VR_SetWeather_Rain{
 //Trainers
 //cooltrainer F
 script VR_Trainer_A{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_A, format("Headed for {COLOR RED}Victory Cape{COLOR DARK_GRAY}? Too bad - you won't be making it further than here!"), format("I guess I won't be making it farther than here!"))
+    trainerbattle_single(TRAINER_VICTORY_ROAD_A, format("Headed for Victory Cape? Too bad - you won't be making it further than here!"), format("I guess I won't be making it farther than here!"))
     msgbox(format("The trainers on this route are some of the toughest!"), MSGBOX_NPC)
     end
 }
 //cooltrainer M
 script VR_Trainer_B{
     trainerbattle_single(TRAINER_VICTORY_ROAD_B, format("You know why I'm standing here?\pTo get rid of some of the competition right away!\pI'm the first member of the Crush Crew and I'm ending your journey right here!"), format("I can't get rid of you!"))
-    msgbox(format("Hmpf. I'll see you at {COLOR RED}Victory Cape{COLOR DARK_GRAY}."), MSGBOX_NPC)
+    msgbox(format("Hmpf. I'll see you at Victory Cape."), MSGBOX_NPC)
     end
 }
 //cooltrainer F
@@ -70,8 +70,8 @@ script VR_Trainer_G{
 }
 //backpacker
 script VR_Trainer_H{
-    trainerbattle_single(TRAINER_VICTORY_ROAD_H, format("I thought I could find a shortcut to {COLOR RED}Victory Cape{COLOR DARK_GRAY}, but I'm lost and just keep losing to these tough trainers...oh no, don't tell me you're another one!"), format("Why did we have to lock eyes?"))
-    msgbox(format("Just let me get to {COLOR RED}Victory Cape{COLOR DARK_GRAY} already!"), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_VICTORY_ROAD_H, format("I thought I could find a shortcut to Victory Cape, but I'm lost and just keep losing to these tough trainers...oh no, don't tell me you're another one!"), format("Why did we have to lock eyes?"))
+    msgbox(format("Just let me get to Victory Cape already!"), MSGBOX_NPC)
     end
 }
 //rich boy

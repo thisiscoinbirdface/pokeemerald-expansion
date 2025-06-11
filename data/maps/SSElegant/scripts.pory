@@ -45,7 +45,7 @@ script SSElegant_Raazi{
     lockall
     faceplayer
     //battle dialogue
-    msgbox_delay("Raazi", format("Can I help you?\p...\pAh, {PLAYER}. You challenged me at the quarry. My apologies for delaying the fight.\pYour name sounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}'s fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge."))
+    msgbox_delay("Raazi", format("Can I help you?\p...\pAh, {PLAYER}. You challenged me at the quarry. My apologies for delaying the fight.\pYour name sounds familiar...\pYes, yes. You must be from the Tenebris Lab. I've heard about you.\pAstonishing that they allowed someone with no experience to handle such an important case. Assistant Professor Rue's fault, really.\pBut that's all in the past, isn't it? You're off the case now and looking to get your eight and last badge."))
 
     msgbox(format("Are you ready to battle me?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) {releaseall end}
@@ -67,7 +67,7 @@ script SSElegant_Raazi{
 
     //battle
 //    fadenewbgm(MUS_RG_GYM)
-    msgbox_delay("Raazi", format("I am {COLOR RED}Raazi{COLOR DARK_GRAY}, the Gym Leader of {COLOR RED}Rivetshore City{COLOR DARK_GRAY} and the strongest Leader in all of Cormoria!\pThe quarry has forged my heart into steel and my fists into granite.\pCan you break through?"))
+    msgbox_delay("Raazi", format("I am Raazi, the Gym Leader of Rivetshore City and the strongest Leader in all of Cormoria!\pThe quarry has forged my heart into steel and my fists into granite.\pCan you break through?"))
     trainerbattle_no_intro(TRAINER_RIVETSHORE_GYM_LEADER, format("I can't believe I lost..."))
     playbgm(MUS_RG_GYM, FALSE)  
     //post-battle
@@ -85,7 +85,7 @@ script SSElegant_Raazi{
     call(Common_EventScript_PlayGymBadgeFanfare)
     //Receive the badge
     speakername(NULL)
-    msgbox(format("{PLAYER} received the Granite Badge from {COLOR RED}Raazi{COLOR DARK_GRAY}."))
+    msgbox(format("{PLAYER} received the Granite Badge from Raazi."))
     release
     setflag(FLAG_BADGE08_GET)
 
@@ -178,18 +178,18 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
         applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)      
-        msgbox_delay("Gabrielle", format("It's you! The hiker with the Clefairy near {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}!"))
+        msgbox_delay("Gabrielle", format("It's you! The hiker with the Clefairy near Fennilahl Town!"))
 
         applymovement(LOCALID_BREECH, moves(jump_in_place_up))
         waitmovement(0)
         delay(16)
-        msgbox_delay("Breech", format("You're the {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt! You tried to take Clefable's everstone!"))
+        msgbox_delay("Breech", format("You're the Team Somber grunt! You tried to take Clefable's everstone!"))
 
         applymovement(LOCALID_GAB, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)      
         msgbox_delay("Gabrielle", format("I-I uh...\p...\pAhem.\pZoroark and I are sorry for what we did to you two back there.\pWe really are."))
-        msgbox_delay("Breech", format("Why are you helping {PLAYER}? Are you still part of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}?"))
+        msgbox_delay("Breech", format("Why are you helping {PLAYER}? Are you still part of Team Somber?"))
         msgbox_delay("Gabrielle", format("No. I-uh...I got fired.\nFor helping {PLAYER} sneak into our headquarters.\pAnd since then, Zoroark and I...we've been trying to do better. Trying to be more like {PLAYER}."))
         msgbox_delay("Breech", format("I guess both of us learned something from {PLAYER}.\p...\pWhat you did was really bad.\pBut right now, we'd be bad for not helping you do a good thing!"))
 
@@ -295,8 +295,8 @@ script SSElegant_Jania{
 }
 
 script SSElegant_Inger{
-    trainerbattle_single(TRAINER_SSELEGANT_INGER, format("Alright, c'mon {COLOR RED}Ariana{COLOR DARK_GRAY}! This time I won't lose to you!\pHey, {PLAYER}! I didn't know you were on the cruise."), format("This reminds of my first loss!"))
-    msgbox(format("We're training to take down {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! Yaaah!"))
+    trainerbattle_single(TRAINER_SSELEGANT_INGER, format("Alright, c'mon Ariana! This time I won't lose to you!\pHey, {PLAYER}! I didn't know you were on the cruise."), format("This reminds of my first loss!"))
+    msgbox(format("We're training to take down Team Somber! Yaaah!"))
     releaseall
     end    
 }
@@ -336,7 +336,7 @@ script SSElegant_NPC3{
 }
 //picnicker 1F
 script SSElegant_NPC4{
-    msgbox(format("The S.S. Elegant stops at {COLOR RED}Victory Cape{COLOR DARK_GRAY}. That's where this year's Pokémon Championships will be!"), MSGBOX_NPC)    
+    msgbox(format("The S.S. Elegant stops at Victory Cape. That's where this year's Pokémon Championships will be!"), MSGBOX_NPC)    
     end    
 }
 

@@ -818,8 +818,8 @@ PellucaCity_GameCorner_NPC7_Movement_0:
 PellucaCity_GameCorner_NPC1_Text_0:
 # 29 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "I don't have a Coin Case so I can't play.\n"
-	.string "They sell them up at the {COLOR BLUE}Mirroh Base\l"
-	.string "Camp{COLOR DARK_GRAY} if you want one.$"
+	.string "They sell them up at the Mirroh Base\l"
+	.string "Camp if you want one.$"
 
 PellucaCity_GameCorner_NPC2_Text_0:
 # 33 "data//maps/PellucaCity_GameCorner/scripts.pory"

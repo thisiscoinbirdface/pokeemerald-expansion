@@ -819,7 +819,7 @@ SilversunCity_Sewers_NPC5_Text_0:
 # 207 "data//maps/SilversunCity_Sewers/scripts.pory"
 	.string "All this toxic runoff gets filtered\n"
 	.string "before entering the Hoya River. Then it\l"
-	.string "goes south towards {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.$"
+	.string "goes south towards Pelluca City.$"
 
 SilversunCity_Sewers_Trainer_A_Text_0:
 # 225 "data//maps/SilversunCity_Sewers/scripts.pory"
@@ -888,7 +888,7 @@ SilversunCity_Sewers_NoEmblem_Text_0:
 
 SilversunCity_Sewers_Market_A_Text_0:
 # 284 "data//maps/SilversunCity_Sewers/scripts.pory"
-	.string "Can't beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}? I'll hook you up with\n"
+	.string "Can't beat Gloria? I'll hook you up with\n"
 	.string "the best stuff.$"
 
 SilversunCity_Sewers_Market_A_Text_1:

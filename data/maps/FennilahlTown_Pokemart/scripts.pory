@@ -32,7 +32,7 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
     waitmovement(0)     
     delay(16)
     speakername("Shopkeeper")
-    msgbox(format("Let me check our records...hmm, that's strange. It says that Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} already picked it up last week. Weird...I'm sorry, I can't help you.\pYou should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
+    msgbox(format("Let me check our records...hmm, that's strange. It says that Professor  Tenebris already picked it up last week. Weird...I'm sorry, I can't help you.\pYou should go back and report this to the lab. If you want to buy something for yourself, come talk to me."))
 	releaseall
 
     //flags and vars

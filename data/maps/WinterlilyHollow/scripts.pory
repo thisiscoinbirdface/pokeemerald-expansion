@@ -31,11 +31,11 @@ script WinterlilyHollow_OnFrame{
             applymovement(LOCALID_VINIEL, moves(walk_down*2))
             waitmovement(0)
             speakername("Viniel")
-            msgbox(format("Manectric and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\pSo that's what's been going on.\nPoor Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\pI heard about her disappearance on\nthe news just the other day.\pNews comes late here, since we're in such a remote corner of Cormoria.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though.\pHahaha!"))
+            msgbox(format("Manectric and I took all those grunts down! Hahaha! But when I went to the peak, everyone had gone!\p...\pSo that's what's been going on.\nPoor Professor  Tenebris.\pI heard about her disappearance on\nthe news just the other day.\pNews comes late here, since we're in such a remote corner of Cormoria.\pProfessor Tenebris and I fought each other together several times when we were younger! I never lost though.\pHahaha!"))
             release
             delay(24)
             speakername("Viniel")
-            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\pIt's time for the grown-ups to\ntake over, {PLAYER}.\pWhat's wrong, young champ?\pYou look paralysed.\nDon't let the shock wear you down!\pI see you have five gym badges.\nWhy not try to aim for all eight?\pStarting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
+            msgbox(format("So what are you going to do next?\p...\pOh, you're off the case? I understand. You're too young to keep up with a big criminal organisation like Team Somber.\pIt's time for the grown-ups to\ntake over, {PLAYER}.\pWhat's wrong, young champ?\pYou look paralysed.\nDon't let the shock wear you down!\pI see you have five gym badges.\nWhy not try to aim for all eight?\pStarting with me, of course. Hahaha!\p...\pYou know, it's alright to fail. From what you told me, you've done great so far. Now let the detectives handle the rest.\pI hope I'll see you at my gym later!"))
             release
             applymovement(LOCALID_VINIEL, moves(walk_up * 5))
             waitmovement(0)
@@ -78,16 +78,16 @@ script WinterlilyHollow_NPC_Red{
 
 script WinterlilyHollow_NPC1{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} is so remote that we don't even get electricity!\pViniel's Pokémon powers this town."), MSGBOX_NPC) 
+        msgbox(format("Winterlily Hollow is so remote that we don't even get electricity!\pViniel's Pokémon powers this town."), MSGBOX_NPC) 
        
     } else {
-         msgbox(format("Viniel is handling all those {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts alone?\pHe's so strong and cool!"), MSGBOX_NPC) 
+         msgbox(format("Viniel is handling all those Team Somber grunts alone?\pHe's so strong and cool!"), MSGBOX_NPC) 
     }
     end
 }
 script WinterlilyHollow_NPC2{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Mom told me never to go into {COLOR BLUE}Ivy River{COLOR DARK_GRAY}! She says kids my age go missing there. So of course I'm gonna go!\p...\pBut only when Mom's not looking."), MSGBOX_NPC) 
+        msgbox(format("Mom told me never to go into Ivy River! She says kids my age go missing there. So of course I'm gonna go!\p...\pBut only when Mom's not looking."), MSGBOX_NPC) 
     } else {
         msgbox(format("Mom told me to stay inside the town because some bad guys showed up, so I'm playing here."), MSGBOX_NPC)
     }
@@ -95,17 +95,17 @@ script WinterlilyHollow_NPC2{
 }
 script WinterlilyHollow_NPC3{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("Did you come from {COLOR BLUE}Ivy River{COLOR DARK_GRAY} or {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}? Of course you didn't come from {COLOR BLUE}Ivy River{COLOR DARK_GRAY} - nobody goes there."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt. Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     } else {
-        msgbox(format("Did you come from {COLOR BLUE}Ivy River{COLOR DARK_GRAY} or {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}? Of course you didn't come from {COLOR BLUE}Ivy River{COLOR DARK_GRAY} - nobody goes there."), MSGBOX_NPC)
+        msgbox(format("Did you come from Ivy River or Mt. Mirroh? Of course you didn't come from Ivy River - nobody goes there."), MSGBOX_NPC)
     }
     end
 }
 script WinterlilyHollow_NPC4{
     if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        msgbox(format("A {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
+        msgbox(format("A Team Somber grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
     } else {
-        msgbox(format("A {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
+        msgbox(format("A Team Somber grunt accosted me, so\nI taught the young fool a lesson!\pAfter that, he threw away his Pokémon saying it was too weak."), MSGBOX_NPC)
     }
     end
 }
@@ -269,7 +269,7 @@ script MirrohInterior_Sneasler{
 
 script WinterlilyHollow_NPC_SurfMan{
     //for the demo only
-    msgbox(format("If you surf through {COLOR BLUE}Lily Pond{COLOR DARK_GRAY},\nyou'll reach the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.\pHead down the river and you'll eventually reach {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+    msgbox(format("If you surf through Lily Pond,\nyou'll reach the Ivy River.\pHead down the river and you'll eventually reach Pelluca City!"), MSGBOX_NPC)
     end
 
     //true text
@@ -277,10 +277,10 @@ script WinterlilyHollow_NPC_SurfMan{
     faceplayer
 
     if (flag(FLAG_WINTERLILY_HOLLOW_SURF)){
-        msgbox(format("{COLOR BLUE}Ivy River{COLOR DARK_GRAY} takes you straight down to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Far better than trekking down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!"))
+        msgbox(format("Ivy River takes you straight down to Pelluca City. Far better than trekking down Mt. Mirroh!"))
     }
 
-    msgbox(format("I surfed up here through the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}. Since I'm settling here, I don't need the HM any more. What I need instead is a Heart Scale to decorate my room. I'd be happy to trade my HM with anyone who can give me a Heart Scale. Have you got one?"), MSGBOX_YESNO)
+    msgbox(format("I surfed up here through the Ivy River. Since I'm settling here, I don't need the HM any more. What I need instead is a Heart Scale to decorate my room. I'd be happy to trade my HM with anyone who can give me a Heart Scale. Have you got one?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         msgbox(format("My search continues!"), MSGBOX_NPC)

@@ -232,14 +232,14 @@ SilversunCity_TheaterEntrance_EventScript_NPC1_Text_1:
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 # 72 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "The action! The tension! And all the\n"
-	.string "razzle-dazzle! {COLOR BLUE}Gloria{COLOR DARK_GRAY} was sizzling! Too\l"
+	.string "razzle-dazzle! Gloria was sizzling! Too\l"
 	.string "bad she lost though.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_1:
 # 74 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "I write for Cormoria Culture, the\n"
 	.string "leading arts and entertainment portal\l"
-	.string "in Cormoria! Let's see what {COLOR BLUE}Gloria{COLOR DARK_GRAY} has in\l"
+	.string "in Cormoria! Let's see what Gloria has in\l"
 	.string "store today...it's supposed to be an\l"
 	.string "experiential affair.$"
 
@@ -264,11 +264,11 @@ SilversunCity_TheaterEntrance_EventScript_NPC5_Text_0:
 SilversunCity_TheaterEntrance_EventScript_NPC5_Text_1:
 # 107 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Hey - get out of the shot! What if\n"
-	.string "{COLOR BLUE}Gloria{COLOR DARK_GRAY} walks by?$"
+	.string "Gloria walks by?$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC6_Text_0:
 # 114 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Ooh I bet our photographs of {COLOR BLUE}Gloria{COLOR DARK_GRAY} will\n"
+	.string "Ooh I bet our photographs of Gloria will\n"
 	.string "go for a pretty price after this\l"
 	.string "performance!$"
 
@@ -288,18 +288,18 @@ SilversunCity_TheaterEntrance_EventScript_NPC7_Text_0:
 SilversunCity_TheaterEntrance_EventScript_NPC7_Text_1:
 # 126 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Argh! I'm so upset! I can't forgive that\n"
-	.string "trainer who made my {COLOR BLUE}Gloria{COLOR DARK_GRAY} look bad on\l"
+	.string "trainer who made my Gloria look bad on\l"
 	.string "stage...wait, it's you?\p"
 	.string "Justice will be served!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC7_Text_2:
 # 128 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "My love for {COLOR BLUE}Gloria{COLOR DARK_GRAY} wasn't enough...$"
+	.string "My love for Gloria wasn't enough...$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC7_Text_3:
 # 130 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Sigh...I didn't want to admit it but I\n"
-	.string "know. {COLOR BLUE}Gloria{COLOR DARK_GRAY} is only human after all.\l"
+	.string "know. Gloria is only human after all.\l"
 	.string "She's allowed to lose a battle. I need to\l"
 	.string "stop idolising her and think of her as\l"
 	.string "another human being.$"
@@ -308,12 +308,12 @@ SilversunCity_TheaterEntrance_EventScript_NPC7_Text_4:
 # 134 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Just look at those salivating paparazzi\n"
 	.string "over there! Nobody should be salivating\l"
-	.string "over {COLOR BLUE}Gloria{COLOR DARK_GRAY} but me!$"
+	.string "over Gloria but me!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC8_Text_0:
 # 142 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "I've seen better in my day!\p"
-	.string "I'm talking about you of course. {COLOR BLUE}Gloria{COLOR DARK_GRAY}\n"
+	.string "I'm talking about you of course. Gloria\n"
 	.string "was perfect.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC8_Text_1:

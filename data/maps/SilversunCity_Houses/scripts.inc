@@ -259,7 +259,7 @@ SilversunCity_Houses_Artist_Text_5:
 	.string "strength lies in my artistic vision! But\l"
 	.string "you, my dear helpful philistine, might\l"
 	.string "benefit from it. But you'll need to\l"
-	.string "receive the Drama Badge from {COLOR BLUE}Gloria{COLOR DARK_GRAY}\l"
+	.string "receive the Drama Badge from Gloria\l"
 	.string "before your Pokémon can use it.\p"
 	.string "Farewell!$"
 
@@ -280,7 +280,7 @@ SilversunCity_Houses_Artist_Text_8:
 SilversunCity_Houses_Artist_Text_9:
 # 51 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Myself, I have no patience for theater.\n"
-	.string "No no! Although {COLOR BLUE}Gloria{COLOR DARK_GRAY} is indeed\l"
+	.string "No no! Although Gloria is indeed\l"
 	.string "fantastic. I admire her interpretation\l"
 	.string "of the morbid.\p"
 	.string "Me? My creative pulse compels me to\n"
@@ -321,9 +321,9 @@ SilversunCity_Houses_Tutor_Text_0:
 
 SilversunCity_Houses_NPC1_Text_0:
 # 94 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "{COLOR BLUE}Silversun City{COLOR DARK_GRAY} is right between the\n"
-	.string "always foggy {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} and the\l"
-	.string "always raining {COLOR BLUE}Route 6{COLOR DARK_GRAY}! We should be\l"
+	.string "Silversun City is right between the\n"
+	.string "always foggy Vilethorn Woods and the\l"
+	.string "always raining Route 6! We should be\l"
 	.string "called Silvershade City instead.$"
 
 SilversunCity_Houses_NPC2_Text_0:

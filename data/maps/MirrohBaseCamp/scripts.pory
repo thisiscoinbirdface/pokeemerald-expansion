@@ -15,7 +15,7 @@ mapscripts MirrohBaseCamp_MapScripts{
 script MirrohBaseCamp_EventScript_Vendor1{
     lockall
 	faceplayer
-	message(format("Our supplies are limited but useful to trek up {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!"))
+	message(format("Our supplies are limited but useful to trek up Mt. Mirroh!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor1_Inventory)
 	msgbox(format("Come again!"), MSGBOX_DEFAULT)
@@ -33,7 +33,7 @@ mart MirrohBaseCamp_Vendor1_Inventory{
 script MirrohBaseCamp_EventScript_Vendor2{
     lockall
 	faceplayer
-	message(format("I found all this inside {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} just yesterday!"))
+	message(format("I found all this inside Mt. Mirroh just yesterday!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor2_Inventory)
 	msgbox(format("C'mon, have another look!"), MSGBOX_DEFAULT)
@@ -135,7 +135,7 @@ script MirrohBaseCamp_Greavard_Outside{
 
             //martha gives mega stone
             speakername("Martha")
-            msgbox(format("Oof...too much running...\pI don't know if it'll help you against {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
+            msgbox(format("Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
             goto(MirrohBaseCamp_Martha_OfferMegaStone)
             
             releaseall
@@ -236,7 +236,7 @@ script MirrohBaseCamp_Rue_Trigger{
     waitdooranim    
     delay(16)
     speakername("Rue")
-    msgbox(format("{PLAYER}? What are you doing all the way over here?\p...\pAh, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pI came here to make some social calls. Since {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} is quiet and secluded, many academics reside here - Martha being one of them.\pTake care, {PLAYER}. Stay safe in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. Listen to what the detectives tell you to do, okay?"))
+    msgbox(format("{PLAYER}? What are you doing all the way over here?\p...\pAh, yes. The detectives are correct. Martha is an expert on Cormorian history. She would be helpful.\pI came here to make some social calls. Since Mirroh Base Camp is quiet and secluded, many academics reside here - Martha being one of them.\pTake care, {PLAYER}. Stay safe in Mt. Mirroh. Listen to what the detectives tell you to do, okay?"))
     release
     applymovement(LOCALID_RUE, moves(walk_right * 7))
     waitmovement(0)    
@@ -297,7 +297,7 @@ script MirrohBaseCamp_Trainer_B{
         msgbox(format("I saw the battle with the other trainer. You're not bad, but you'll have to try harder than that to beat me!"))
         trainerbattle_no_intro(TRAINER_MIRROHEXT_E, format("Stop trying so hard!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_B)
-        msgbox(format("If I can't beat a kid like you, what chance do I have against {COLOR BLUE}Carona{COLOR DARK_GRAY}?"))
+        msgbox(format("If I can't beat a kid like you, what chance do I have against Carona?"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(9, moves(walk_left *10))
@@ -317,13 +317,13 @@ script MirrohBaseCamp_Trainer_C{
     lockall
     faceplayer
 
-    msgbox(format("Get outta here! {COLOR BLUE}Carona{COLOR DARK_GRAY} has only one badge left to give and it's mine!"), MSGBOX_NPC)
+    msgbox(format("Get outta here! Carona has only one badge left to give and it's mine!"), MSGBOX_NPC)
 
     if (flag(FLAG_MIRROHBASECAMP_TRAINER_B)) {
         msgbox(format("What? If you keep looking at me like that, I'll make you pay!"))
         trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format("You made me pay!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
-        msgbox(format("Grr - fine! Go inside! I bet {COLOR BLUE}Carona{COLOR DARK_GRAY} wipes the floor with you!"))
+        msgbox(format("Grr - fine! Go inside! I bet Carona wipes the floor with you!"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(10, moves(walk_left *10))

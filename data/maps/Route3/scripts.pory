@@ -7,7 +7,7 @@ mapscripts Route3_MapScripts{}
 script Route3_TrainerBattle_Kim {
 
     trainerbattle_single(TRAINER_ROUTE3_KIM, format("Mom gifted my sister and me a cool FLYING-type Pokémon!"), "My sister will beat you!")
-    msgbox(format("My sister is up ahead, near the {COLOR GREEN}Gastree City{COLOR DARK_GRAY} exit. She's super strong!"))
+    msgbox(format("My sister is up ahead, near the Gastree City exit. She's super strong!"))
     release
     end
 
@@ -15,8 +15,8 @@ script Route3_TrainerBattle_Kim {
 
 script Route3_TrainerBattle_Ronnie {
 
-    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to {COLOR GREEN}Gastree City{COLOR DARK_GRAY} to challenge the Pokémon Gym, but I'm not sure I can win. Can I practice with you?"), "Looks like I need more practice!")
-    msgbox(format("I heard that the {COLOR GREEN}Gastree City{COLOR DARK_GRAY} Gym Leader uses ROCK type Pokémon."))
+    trainerbattle_single(TRAINER_ROUTE3_RONNIE, format("I'm on my way to Gastree City to challenge the Pokémon Gym, but I'm not sure I can win. Can I practice with you?"), "Looks like I need more practice!")
+    msgbox(format("I heard that the Gastree City Gym Leader uses ROCK type Pokémon."))
     release
     end
 

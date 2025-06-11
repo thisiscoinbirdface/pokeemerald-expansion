@@ -6,7 +6,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
     if (!flag(FLAG_UNUSED_0x020)) {
         speakername("Detective")
-        msgbox(format("Sorry, this road is temporarily closed. We're investigating Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}' disappearance."))
+        msgbox(format("Sorry, this road is temporarily closed. We're investigating Professor  Tenebris' disappearance."))
     } else {
         speakername("Detective")
         msgbox(format("Is this the evidence from the lab? Thanks, kid. We'll take it from here.\p..."))
@@ -61,13 +61,13 @@ script CarabrueTown_EventScript_NPC1{
     if (flag(FLAG_CARABRUE_POLICE)){
         msgbox(format("Looks like the police went away. I hope they got the evidence they needed!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Psst - {PLAYER}! See those detectives standing over there?\pThey came all the way from {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY} to investigate the Professor's disappearance. They're blocking access to {COLOR BLUE}Route 1{COLOR DARK_GRAY} while they investigate."), MSGBOX_NPC)
+        msgbox(format("Psst - {PLAYER}! See those detectives standing over there?\pThey came all the way from Fennilahl Town to investigate the Professor's disappearance. They're blocking access to Route 1 while they investigate."), MSGBOX_NPC)
     }
     end
 }
 
 script CarabrueTown_EventScript_NPC2{
-    msgbox(format("My Chikorita and I love how cozy {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} is! That's because it's nestled deep in the hills of Cormoria."), MSGBOX_NPC)
+    msgbox(format("My Chikorita and I love how cozy Carabrue Town is! That's because it's nestled deep in the hills of Cormoria."), MSGBOX_NPC)
     end
 }
 

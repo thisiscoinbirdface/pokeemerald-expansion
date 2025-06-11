@@ -24,7 +24,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_DET1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Detective", format("...and now {COLOR BLUE}Rue{COLOR DARK_GRAY} won't be allowed to plot any schemes for a long, long time."))
+    msgbox_delay("Detective", format("...and now Rue won't be allowed to plot any schemes for a long, long time."))
 
 
     applymovement(LOCALID_TENE, moves(emote_question_mark))
@@ -43,12 +43,12 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_TENE, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("I'm ever so grateful for your help, detectives.\pWithout your leadership on this case, who knows how long I would have been trapped in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}?"))
+    msgbox_delay("Tenebris", format("I'm ever so grateful for your help, detectives.\pWithout your leadership on this case, who knows how long I would have been trapped in Ancient Cormoria?"))
    
     applymovement(LOCALID_DET1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Detective", format("We're only doing our duty, Professor.\pWe also have people to thank...\pKohla of course, although he's not here now, was instrumental in chasing {COLOR BLUE}Team Somber{COLOR DARK_GRAY} across Cormoria. He's got the makings of a truly detective!\pThe Gym Leaders are the ones who actually took {COLOR BLUE}Team Somber{COLOR DARK_GRAY} apart.\pThose two admins - Moxie and Melea - got away, but {COLOR RED}Inger{COLOR DARK_GRAY} and {COLOR RED}Ariana{COLOR DARK_GRAY} are with {COLOR BLUE}Gloria{COLOR DARK_GRAY} in {COLOR BLUE}Silversun City{COLOR DARK_GRAY} right now, clearing out their headquarters and retrieving all the Ancient Pokémon."))
+    msgbox_delay("Detective", format("We're only doing our duty, Professor.\pWe also have people to thank...\pKohla of course, although he's not here now, was instrumental in chasing Team Somber across Cormoria. He's got the makings of a truly detective!\pThe Gym Leaders are the ones who actually took Team Somber apart.\pThose two admins - Moxie and Melea - got away, but Inger and Ariana are with Gloria in Silversun City right now, clearing out their headquarters and retrieving all the Ancient Pokémon."))
 
     delay(16)
     msgbox_delay("Tenebris", format("Once you return them to me, I'll send them back to the past along with the Ancient Terror."))
@@ -63,7 +63,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_DET1, moves(jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Detective", format("Absolutely.\pThere was no solving this case without {COLOR GREEN}Kohla{COLOR DARK_GRAY} and the Gym Leaders...\p...")) 
+    msgbox_delay("Detective", format("Absolutely.\pThere was no solving this case without Kohla and the Gym Leaders...\p...")) 
     
     applymovement(LOCALID_DET1, moves(face_down))
     applymovement(LOCALID_DET2, moves(face_down))
@@ -75,7 +75,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("{PLAYER}, you were just incredible. You stood up against a huge organisation like {COLOR BLUE}Team Somber{COLOR DARK_GRAY} and fought them off  time and again!"))
+    msgbox_delay("Tenebris", format("{PLAYER}, you were just incredible. You stood up against a huge organisation like Team Somber and fought them off  time and again!"))
     
     applymovement(LOCALID_DET1, moves(face_down))
     waitmovement(0)
@@ -91,16 +91,16 @@ script CarabrueTown_TenebrisLab_PostFinale{
     waitmovement(0)
     delay(16)
 
-    msgbox_delay("Tenebris", format("The detectives told me that you defeated Leader {COLOR RED}Raazi{COLOR DARK_GRAY}.\pYou know what that means, right?\p..."))
+    msgbox_delay("Tenebris", format("The detectives told me that you defeated Leader Raazi.\pYou know what that means, right?\p..."))
     applymovement(LOCALID_TENE, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Tenebris", format("You've qualified for this year's Pokémon Championship!\pThe Championship is held every four years, down at {COLOR RED}Victory Cape{COLOR DARK_GRAY}.\pYou can get there by surfing from {COLOR BLUE}Route 2{COLOR DARK_GRAY}, but you'll need this."))
+    msgbox_delay("Tenebris", format("You've qualified for this year's Pokémon Championship!\pThe Championship is held every four years, down at Victory Cape.\pYou can get there by surfing from Route 2, but you'll need this."))
     giveitem(ITEM_HM07) //waterfall
     msgbox_delay("Tenebris", format("Don't worry - we can start your research work when you're back.\p{PLAYER}, of all the trainers I've known, few have the caliber and drive that you do.\pI know you'll do well at the tournament!"))
 
     delay(16)
-    msgbox_delay("Detective", format("...\pWell?\pWhat are you waiting for?\pHead to {COLOR BLUE}Route 2{COLOR DARK_GRAY} and make your way to {COLOR RED}Victory Cape{COLOR DARK_GRAY} - ASAP!")) 
+    msgbox_delay("Detective", format("...\pWell?\pWhat are you waiting for?\pHead to Route 2 and make your way to Victory Cape - ASAP!")) 
 
     //setflags
     setflag(FLAG_POST_FINALE_CUTSCENE)
@@ -113,7 +113,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
 
 script TenebrisLab_Finale_Detective{
     speakername("Detective")
-    msgbox(format("What's taking you so long? I bet {COLOR GREEN}Kohla{COLOR DARK_GRAY}'s already reached {COLOR RED}Victory Cape{COLOR DARK_GRAY}.\pHow many slow starts do you need to learn your lesson?"), MSGBOX_NPC)
+    msgbox(format("What's taking you so long? I bet Kohla's already reached Victory Cape.\pHow many slow starts do you need to learn your lesson?"), MSGBOX_NPC)
     end
 }
 script TenebrisLab_Finale_Tenebris{
@@ -125,7 +125,7 @@ script TenebrisLab_Finale_Tenebris{
 
 
 script TenebrisLab_Finale_Scientist_A{
-    msgbox(format("I can't believe {COLOR BLUE}Rue{COLOR DARK_GRAY} was behind this whole mess! I wish I'd caught on sooner!"), MSGBOX_NPC)
+    msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"), MSGBOX_NPC)
     end
 }
 script TenebrisLab_Finale_Scientist_B{
@@ -133,7 +133,7 @@ script TenebrisLab_Finale_Scientist_B{
     end
 }
 script TenebrisLab_Finale_Scientist_C{
-    msgbox(format("Go on, {PLAYER}! Bring the championship trophy to {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY}!"), MSGBOX_NPC)
+    msgbox(format("Go on, {PLAYER}! Bring the championship trophy to Carabrue Town!"), MSGBOX_NPC)
     end
 }
 script TenebrisLab_Finale_Gardevoir{

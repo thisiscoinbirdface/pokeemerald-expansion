@@ -180,4 +180,4 @@ AncientCeram_EventScript_Gabrielle_Text_4:
 
 AncientCeram_EventScript_Exit_Text_0:
 # 68 "data//maps/AncientCeram/scripts.pory"
-	.string "I can't leave {COLOR RED}Gabrielle{COLOR DARK_GRAY} behind!$"
+	.string "I can't leave Gabrielle behind!$"

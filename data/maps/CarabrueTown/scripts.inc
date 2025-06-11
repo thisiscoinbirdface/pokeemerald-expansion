@@ -132,8 +132,8 @@ CarabrueTown_EventScript_PoliceRoadBlock_Text_0:
 CarabrueTown_EventScript_PoliceRoadBlock_Text_1:
 # 9 "data//maps/CarabrueTown/scripts.pory"
 	.string "Sorry, this road is temporarily closed.\n"
-	.string "We're investigating Professor {COLOR GREEN}\l"
-	.string "Tenebris{COLOR DARK_GRAY}' disappearance.$"
+	.string "We're investigating Professor Tenebris'\l"
+	.string "disappearance.$"
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_2:
 # 12 "data//maps/CarabrueTown/scripts.pory"
@@ -168,15 +168,15 @@ CarabrueTown_EventScript_NPC1_Text_1:
 # 64 "data//maps/CarabrueTown/scripts.pory"
 	.string "Psst - {PLAYER}! See those\n"
 	.string "detectives standing over there?\p"
-	.string "They came all the way from {COLOR GREEN}Fennilahl\n"
-	.string "Town{COLOR DARK_GRAY} to investigate the Professor's\l"
+	.string "They came all the way from Fennilahl\n"
+	.string "Town to investigate the Professor's\l"
 	.string "disappearance. They're blocking access\l"
-	.string "to {COLOR BLUE}Route 1{COLOR DARK_GRAY} while they investigate.$"
+	.string "to Route 1 while they investigate.$"
 
 CarabrueTown_EventScript_NPC2_Text_0:
 # 70 "data//maps/CarabrueTown/scripts.pory"
 	.string "My Chikorita and I love how cozy\n"
-	.string "{COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} is! That's because it's\l"
+	.string "Carabrue Town is! That's because it's\l"
 	.string "nestled deep in the hills of Cormoria.$"
 
 CarabrueTown_Chikorita_Text_0:

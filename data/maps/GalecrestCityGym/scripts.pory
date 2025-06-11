@@ -185,7 +185,7 @@ script GalecrestCityGym_Leader {
         call(Common_EventScript_PlayGymBadgeFanfare)
         setflag(FLAG_BADGE03_GET)   
         speakername("Kohla")     
-        msgbox(format("{PLAYER} received the Stoic Badge from {COLOR GREEN}Kohla{COLOR DARK_GRAY}."))
+        msgbox(format("{PLAYER} received the Stoic Badge from Kohla."))
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         speakername("Kohla")
@@ -196,7 +196,7 @@ script GalecrestCityGym_Leader {
         
         //Bye-bye
         speakername("Kohla")
-        msgbox(format("{PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pNow enough of this gym business. We have to stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}. I'll see you in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}."))
+        msgbox(format("{PLAYER}, despite being the chum you are, I owe you. You showed me my lack of strength. That's why I chose Ceruledge as my companion. I don't care if other detectives see it as bad, because I see it as strong.\p...\pNow enough of this gym business. We have to stop Team Somber. I'll see you in Silversun City."))
         release
         delay(16)
         
@@ -218,7 +218,7 @@ script GalecrestCityGym_Leader {
 
 
 text GalecrestCityGym_Text_LeaderIntro{
-    format("Yes {PLAYER}, it's me. Traditionally, the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} of the graduating class assumes Gym Leader duties for a year after they graduate.\pAnd this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pI'll crush you with my REAL team!")
+    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pAnd this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pI'll crush you with my REAL team!")
 }
 
 text GalecrestCityGym_Text_Defeated{

@@ -2674,7 +2674,7 @@ PellucaCityFlooded_MainEvent_Text_3:
 PellucaCityFlooded_MainEvent_Text_4:
 # 472 "data//maps/PellucaCity/scripts.pory"
 	.string "A Mega Sharpedo came rampaging down\n"
-	.string "from the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} and kicked up a\l"
+	.string "from the Ivy River and kicked up a\l"
 	.string "storm! The riverbanks have flooded.\p"
 	.string "The city's underwater!$"
 
@@ -2726,17 +2726,17 @@ PellucaCityFlooded_MainEvent_Text_13:
 
 PellucaCityFlooded_MainEvent_Text_14:
 # 536 "data//maps/PellucaCity/scripts.pory"
-	.string "Is that {COLOR BLUE}Jania{COLOR DARK_GRAY}?\p"
+	.string "Is that Jania?\p"
 	.string "Yeah! It's the Gym Leader! In the flesh!$"
 
 PellucaCityFlooded_MainEvent_Text_15:
 # 555 "data//maps/PellucaCity/scripts.pory"
-	.string "Oh, {COLOR BLUE}Jania{COLOR DARK_GRAY}! It's you! Finally. Please - you\n"
+	.string "Oh, Jania! It's you! Finally. Please - you\n"
 	.string "have to save those still drowning!$"
 
 PellucaCityFlooded_MainEvent_Text_16:
 # 562 "data//maps/PellucaCity/scripts.pory"
-	.string "Yeah, {COLOR BLUE}Jania{COLOR DARK_GRAY}! You're an even stronger\n"
+	.string "Yeah, Jania! You're an even stronger\n"
 	.string "trainer than I am. You can do it!$"
 
 PellucaCityFlooded_MainEvent_Text_17:
@@ -2918,7 +2918,7 @@ PellucaCity_Greta_Main_Text_0:
 PellucaCity_Greta_Main_Text_1:
 # 882 "data//maps/PellucaCity/scripts.pory"
 	.string "Oh, it's you again, {PLAYER}! Fancy\n"
-	.string "seeing you in these parts. {COLOR BLUE}Route 6{COLOR DARK_GRAY} was a\l"
+	.string "seeing you in these parts. Route 6 was a\l"
 	.string "tough trek, eh?$"
 
 PellucaCity_Greta_GottaGo_Text_0:
@@ -2939,7 +2939,7 @@ PellucaCity_EventScripts_Gabrielle_Text_2:
 	.string "I grew up here on this cliff without my\n"
 	.string "parents. Life was hard.\p"
 	.string "I didn't want my younger siblings to go\n"
-	.string "through what I did, so when {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\l"
+	.string "through what I did, so when Team Somber\l"
 	.string "promised me money, I took it.\p"
 	.string "...\p"
 	.string "Those grunts were really vicious to me.\n"
@@ -2962,8 +2962,8 @@ PellucaCity_EventScripts_Gabrielle_Text_5:
 
 PellucaCity_EventScripts_Gabrielle_Text_6:
 # 957 "data//maps/PellucaCity/scripts.pory"
-	.string "After getting kicked out of {COLOR BLUE}Team\n"
-	.string "Somber{COLOR DARK_GRAY}, I feel like I've come to my\l"
+	.string "After getting kicked out of Team\n"
+	.string "Somber, I feel like I've come to my\l"
 	.string "senses a little. I'm going to support my\l"
 	.string "family - but do it right. Be honest.\l"
 	.string "Responsible.$"
@@ -3003,8 +3003,8 @@ PellucaCity_Gab_ChoiceItem_End_Text_0:
 	.string "I can't erase what I've done, but I'm\n"
 	.string "going to make a better choice this time.\p"
 	.string "I suppose you're going to head to the\n"
-	.string "{COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} from here? {COLOR BLUE}Team\l"
-	.string "Somber{COLOR DARK_GRAY} must've reached there already.\p"
+	.string "Mirroh Base Camp from here? Team\l"
+	.string "Somber must've reached there already.\p"
 	.string "Best of luck, {PLAYER}.$"
 
 PellucaCity_Zorua_Text_0:
@@ -3030,7 +3030,7 @@ PellucaCity_NPC2_Text_0:
 
 PellucaCity_NPC3_Text_0:
 # 1054 "data//maps/PellucaCity/scripts.pory"
-	.string "I would've trained up in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} but I\n"
+	.string "I would've trained up in Mt. Mirroh but I\n"
 	.string "can't go there without a Cable Car Pass.\l"
 	.string "So I'm jogging here instead.$"
 
@@ -3046,7 +3046,7 @@ PellucaCity_NPC5_Text_0:
 
 PellucaCity_NPC5_Text_1:
 # 1071 "data//maps/PellucaCity/scripts.pory"
-	.string "Jania, the Gym Leader of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}\n"
+	.string "Jania, the Gym Leader of Pelluca City\n"
 	.string "had her gym constructed on a separate\l"
 	.string "island.$"
 
@@ -3056,9 +3056,9 @@ PellucaCity_NPC5_Text_2:
 
 PellucaCity_NPC6_Text_0:
 # 1083 "data//maps/PellucaCity/scripts.pory"
-	.string "Are you headed to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}?\n"
+	.string "Are you headed to the Mirroh Base Camp?\n"
 	.string "You'll have to take the cable car past\l"
-	.string "{COLOR BLUE}Route 7{COLOR DARK_GRAY}. I heard they're closing the gym\l"
+	.string "Route 7. I heard they're closing the gym\l"
 	.string "there though.$"
 
 PellucaCity_NPC7_Text_0:
@@ -3135,9 +3135,9 @@ PellucaCity_NPC11_Text_1:
 # 1178 "data//maps/PellucaCity/scripts.pory"
 	.string "The Pelluca Gym is across the\n"
 	.string "water...when I was younger, I tried to\l"
-	.string "challenge {COLOR BLUE}Jania{COLOR DARK_GRAY} many times, but I could\l"
+	.string "challenge Jania many times, but I could\l"
 	.string "never win. She was my classmate, you\l"
-	.string "know? We grew up in {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}\l"
+	.string "know? We grew up in Galecrest City\l"
 	.string "together. She went on to become a big\l"
 	.string "Gym Leader and I moved here too, with a\l"
 	.string "regular family and a regular job.\l"
@@ -3169,7 +3169,7 @@ PellucaCity_PostGymEvent_Trigger_Text_0:
 PellucaCity_PostGymEvent_Trigger_Text_1:
 # 1253 "data//maps/PellucaCity/scripts.pory"
 	.string "Where am I going?\p"
-	.string "I'm going to {COLOR RED}Rivetshore City{COLOR DARK_GRAY}.\n"
+	.string "I'm going to Rivetshore City.\n"
 	.string "All the Gym Leaders have been called\l"
 	.string "there.$"
 
@@ -3179,14 +3179,14 @@ PellucaCity_PostGymEvent_Trigger_Text_2:
 
 PellucaCity_PostGymEvent_Trigger_Text_3:
 # 1282 "data//maps/PellucaCity/scripts.pory"
-	.string "I overheard {COLOR BLUE}Jania{COLOR DARK_GRAY} talking to someone!\p"
+	.string "I overheard Jania talking to someone!\p"
 	.string "...\p"
 	.string "What? I wasn't eavesdropping!\n"
 	.string "She was just nearby.\p"
 	.string "She was talking to the eighth Gym\n"
-	.string "Leader. They mentioned {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\p"
+	.string "Leader. They mentioned Team Somber!\p"
 	.string "They must be up to something in\n"
-	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY}!\p"
+	.string "Rivetshore City!\p"
 	.string "...$"
 
 PellucaCity_PostGymEvent_Trigger_Text_4:
@@ -3203,9 +3203,9 @@ PellucaCity_PostGymEvent_Trigger_Text_4:
 	.string "You don't need anyone's permission!\p"
 	.string "...\p"
 	.string "I'm not letting you give up, {PLAYER}.\p"
-	.string "I'm going to {COLOR RED}Rivetshore City{COLOR DARK_GRAY} to get the\n"
-	.string "final gym badge. It's south of {COLOR BLUE}Pelluca\l"
-	.string "City{COLOR DARK_GRAY} - you can get there by surfing.\p"
+	.string "I'm going to Rivetshore City to get the\n"
+	.string "final gym badge. It's south of Pelluca\l"
+	.string "City - you can get there by surfing.\p"
 	.string "I'll be waiting for you!$"
 
 PellucaCity_PostGymEvent_Trigger_Text_5:
@@ -3215,7 +3215,7 @@ PellucaCity_PostGymEvent_Trigger_Text_5:
 PellucaCity_Red_GymBlock_Text_0:
 # 1327 "data//maps/PellucaCity/scripts.pory"
 	.string "Jania's gone to deal with the Mega\n"
-	.string "Sharpedo. You'll find her up in {COLOR BLUE}Ivy River{COLOR DARK_GRAY}\l"
+	.string "Sharpedo. You'll find her up in Ivy River\l"
 	.string "somewhere.$"
 
 PellucaCityFlooded_TriggerText::

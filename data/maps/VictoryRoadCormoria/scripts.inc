@@ -114,7 +114,7 @@ VR_Trainer_J::
 
 VR_Trainer_A_Text_0:
 # 31 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "Headed for {COLOR RED}Victory Cape{COLOR DARK_GRAY}? Too bad - you\n"
+	.string "Headed for Victory Cape? Too bad - you\n"
 	.string "won't be making it further than here!$"
 
 VR_Trainer_A_Text_1:
@@ -141,7 +141,7 @@ VR_Trainer_B_Text_1:
 
 VR_Trainer_B_Text_2:
 # 38 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "Hmpf. I'll see you at {COLOR RED}Victory Cape{COLOR DARK_GRAY}.$"
+	.string "Hmpf. I'll see you at Victory Cape.$"
 
 VR_Trainer_C_Text_0:
 # 43 "data//maps/VictoryRoadCormoria/scripts.pory"
@@ -224,7 +224,7 @@ VR_Trainer_G_Text_2:
 VR_Trainer_H_Text_0:
 # 73 "data//maps/VictoryRoadCormoria/scripts.pory"
 	.string "I thought I could find a shortcut to\n"
-	.string "{COLOR RED}Victory Cape{COLOR DARK_GRAY}, but I'm lost and just keep\l"
+	.string "Victory Cape, but I'm lost and just keep\l"
 	.string "losing to these tough trainers...oh no,\l"
 	.string "don't tell me you're another one!$"
 
@@ -234,7 +234,7 @@ VR_Trainer_H_Text_1:
 
 VR_Trainer_H_Text_2:
 # 74 "data//maps/VictoryRoadCormoria/scripts.pory"
-	.string "Just let me get to {COLOR RED}Victory Cape{COLOR DARK_GRAY}\n"
+	.string "Just let me get to Victory Cape\n"
 	.string "already!$"
 
 VR_Trainer_I_Text_0:

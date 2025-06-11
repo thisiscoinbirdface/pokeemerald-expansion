@@ -29,17 +29,17 @@ script SilversunCity_OnFrame{
                 delay(30)
 
                 speakername("Detective")
-                msgbox(format("Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}!? Are you okay?"))
+                msgbox(format("Asst. Prof. Rue!? Are you okay?"))
                 speakername("Rue")
                 msgbox(format("All well, thanks to {PLAYER}."))
                 speakername("Detective")
-                msgbox(format("We...we thought it was Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
+                msgbox(format("We...we thought it was Professor  Tenebris with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
                 waitmovement(0)
                 speakername("Detective")
-                msgbox(format("How did they get to you, {COLOR BLUE}Rue{COLOR DARK_GRAY}?"))
+                msgbox(format("How did they get to you, Rue?"))
                 release
                 applymovement(LOCALID_TENEBRIS, moves(emote_exclamation_mark))
                 waitmovement(0)
@@ -53,17 +53,17 @@ script SilversunCity_OnFrame{
                 release
                 delay(16)
                 speakername("Rue")
-                msgbox(format("Just like we heard from {PLAYER} about being transported to {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, they heard about it from their grunt who went too. I think they called her Gabrielle. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
+                msgbox(format("Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her Gabrielle. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
                 waitmovement(0)
                 delay(16)
-                msgbox_delay("Detective", format("So they want to build a Dreamalyser and use it to go to {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}?"))
+                msgbox_delay("Detective", format("So they want to build a Dreamalyser and use it to go to Ancient Cormoria?"))
                 release
                 delay(16)
                 msgbox_delay("Rue", format("Yes."))
-                msgbox_delay("Detective", format("There must be something we're missing. What's there in the past?\nWhat could they want?\p...\p...\p...and where's {COLOR GREEN}Kohla{COLOR DARK_GRAY} when we need him? {COLOR BLUE}Rue{COLOR DARK_GRAY}, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                msgbox_delay("Detective", format("There must be something we're missing. What's there in the past?\nWhat could they want?\p...\p...\p...and where's Kohla when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
                 delay(16)
                 msgbox_delay("Detective", format("Rue - go back home. You've had a hard time. Take care of yourself."))
                 release
@@ -78,7 +78,7 @@ script SilversunCity_OnFrame{
                 removeobject(LOCALID_TENEBRIS)
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
                 speakername("Detective")
-                msgbox(format("{PLAYER} - to find out what {COLOR BLUE}Team Somber{COLOR DARK_GRAY} wants with the past, we need to find out more about {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}.\pI have an old acquaintance at the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}. She was a reputed historian in her time and now manages the graveyard at the base camp.\pPlease go there and tell her everything you know.\pGot it? Head to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}, talk to the lady who manages the graveyard, and find out what {COLOR BLUE}Team Somber{COLOR DARK_GRAY} seeks in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}.\pNow get on it, pronto!\p...\pSeriously, where is {COLOR GREEN}Kohla{COLOR DARK_GRAY}? He should be done chasing {COLOR BLUE}Rue{COLOR DARK_GRAY}'s leads by now...we've got to go find him."))
+                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out more about Ancient Cormoria.\pI have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard at the base camp.\pPlease go there and tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is Kohla? He should be done chasing Rue's leads by now...we've got to go find him."))
                 release
 
             //Fade and remove objects
@@ -129,11 +129,11 @@ script SilversunCity_EventScript_Detectives{
         delay(24)
 
         speakername("Detective")
-        msgbox(format("Better. Now tell me - what updates have you got?\p...\pWhat!? You overheard a {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt talking about the Pofessor?"))
+        msgbox(format("Better. Now tell me - what updates have you got?\p...\pWhat!? You overheard a Team Somber grunt talking about the Pofessor?"))
         release
         delay(30)
         speakername("Detective")
-        msgbox(format("This all but confirms our suspicions - {COLOR BLUE}Team Somber{COLOR DARK_GRAY} must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s HQ and free the Professor.\pRue has given us a separate lead that {COLOR GREEN}Kohla{COLOR DARK_GRAY} is following up on, so you're on your own on this one.\pGood luck."))
+        msgbox(format("This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRue has given us a separate lead that Kohla is following up on, so you're on your own on this one.\pGood luck."))
         release
 
         //setvars and quest
@@ -181,17 +181,17 @@ script SilversunCity_NPC5{
 }
 
 script SilversunCity_NPC6{
-    msgbox(format("I caught my Vivillon in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}! It's always hungry and keeps eating my Lava Cookies..."), MSGBOX_NPC)
+    msgbox(format("I caught my Vivillon in Mt. Mirroh! It's always hungry and keeps eating my Lava Cookies..."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_NPC7{
-    msgbox(format("{COLOR BLUE}Silversun City{COLOR DARK_GRAY} has a lovely theater but no fine dining! I'd love a fancy spot like the Pelluca Restaurant here."), MSGBOX_NPC)
+    msgbox(format("Silversun City has a lovely theater but no fine dining! I'd love a fancy spot like the Pelluca Restaurant here."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_NPC8{
-    msgbox(format("Did you hear about the Mega Sharpedo in Hoya River? Apparently its headed to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}."), MSGBOX_NPC)
+    msgbox(format("Did you hear about the Mega Sharpedo in Hoya River? Apparently its headed to Pelluca City."), MSGBOX_NPC)
     end
 }
 

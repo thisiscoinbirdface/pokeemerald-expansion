@@ -27,7 +27,7 @@ script SSElegant_Common_NPC1{
 }
 //dude
 script SSElegant_Common_NPC2{
-    msgbox(format("They're talking about an unscheduled stop...but there's nothing in the sea before {COLOR RED}Victory Cape{COLOR DARK_GRAY}. Where is this stop?"), MSGBOX_NPC)
+    msgbox(format("They're talking about an unscheduled stop...but there's nothing in the sea before Victory Cape. Where is this stop?"), MSGBOX_NPC)
     end
 }
 

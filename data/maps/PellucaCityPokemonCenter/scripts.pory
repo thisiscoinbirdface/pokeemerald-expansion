@@ -96,11 +96,11 @@ script PellucaCity_EventEnd{
     release
     delay(16)	
     speakername("Mayor") 
-    msgbox(format("...and the Qwilsquad will start doing things by the book.\pYou won't recognise {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} the next time you visit - we promise!"))
+    msgbox(format("...and the Qwilsquad will start doing things by the book.\pYou won't recognise Pelluca City the next time you visit - we promise!"))
     release
     delay(16)	
     speakername("Q-squad Boss") 
-    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}.\pThey're rotten to the core, they are.\nIf I were you, I'd be extra careful!"))
+    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are.\nIf I were you, I'd be extra careful!"))
     release
     delay(16)	
 
@@ -167,7 +167,7 @@ script PellucaCity_PokemonCenter_NPC1{
     end
 }
 script PellucaCity_PokemonCenter_NPC2{
-    msgbox(format("They're closing the gym in {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}! I need to go and get the badge, but the Qwilsquad grunt outside won't let me."), MSGBOX_NPC)
+    msgbox(format("They're closing the gym in Mirroh Base Camp! I need to go and get the badge, but the Qwilsquad grunt outside won't let me."), MSGBOX_NPC)
     end
 }
 
@@ -184,11 +184,11 @@ script PellucaCity_PokemonCenter_Nurse2{
 	end
 }
 script PellucaCity_PokemonCenter_Nurse3{
-	msgbox(format("We've all got it bad, but the worst is the nurse up in {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}!\pI'm going up there with these Chanseys to help her out."), MSGBOX_NPC)
+	msgbox(format("We've all got it bad, but the worst is the nurse up in Winterlily Hollow!\pI'm going up there with these Chanseys to help her out."), MSGBOX_NPC)
 	end
 }
 script PellucaCity_PokemonCenter_Nurse4{
-	msgbox(format("The nurse in {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} requested for some extra help. Since the higher-ups don't care, we're going to look out for our sisters!"), MSGBOX_NPC)
+	msgbox(format("The nurse in Winterlily Hollow requested for some extra help. Since the higher-ups don't care, we're going to look out for our sisters!"), MSGBOX_NPC)
 	end
 }
 script PellucaCity_PokemonCenter_Chansey{

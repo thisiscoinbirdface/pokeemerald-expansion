@@ -30,11 +30,11 @@ script LilyPond_OnFrame{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("What? You have something to say?\p...\pYou saw someone who looked like Prof. Tenebris in the cave back there?\p...\pSo you're saying that Prof. Tenebris somehow has been living in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} this whole time?\pAlone?\pWithout any food?\pWater?\pProtection?\pAnd you just somehow happened to\nsee her walking around?\p...\p{PLAYER}. That sounds...\p...like a complete lie to me.\pPathetic. To think the detectives thought so highly of you."))
+    msgbox(format("What? You have something to say?\p...\pYou saw someone who looked like Prof. Tenebris in the cave back there?\p...\pSo you're saying that Prof. Tenebris somehow has been living in Ancient Cormoria this whole time?\pAlone?\pWithout any food?\pWater?\pProtection?\pAnd you just somehow happened to\nsee her walking around?\p...\p{PLAYER}. That sounds...\p...like a complete lie to me.\pPathetic. To think the detectives thought so highly of you."))
     release
     delay(24)
     speakername("Kohla")
-    msgbox(format("I disliked you because I thought you didn't deserve the attention you got.\pBut now? You're nothing but a failure.\p...\pI'm going to chase {COLOR BLUE}Team Somber{COLOR DARK_GRAY} and get that Ancient Terror back. It'd be best if we didn't see each other again.\pYou're off the case, {PLAYER}.\nDo whatever you like."))
+    msgbox(format("I disliked you because I thought you didn't deserve the attention you got.\pBut now? You're nothing but a failure.\p...\pI'm going to chase Team Somber and get that Ancient Terror back. It'd be best if we didn't see each other again.\pYou're off the case, {PLAYER}.\nDo whatever you like."))
     release
 
     fadescreen(FADE_TO_BLACK)

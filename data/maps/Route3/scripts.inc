@@ -258,12 +258,12 @@ Route3_TrainerBattle_Kim_Text_1:
 
 Route3_TrainerBattle_Kim_Text_2:
 # 10 "data//maps/Route3/scripts.pory"
-	.string "My sister is up ahead, near the {COLOR GREEN}Gastree\n"
-	.string "City{COLOR DARK_GRAY} exit. She's super strong!$"
+	.string "My sister is up ahead, near the Gastree\n"
+	.string "City exit. She's super strong!$"
 
 Route3_TrainerBattle_Ronnie_Text_0:
 # 18 "data//maps/Route3/scripts.pory"
-	.string "I'm on my way to {COLOR GREEN}Gastree City{COLOR DARK_GRAY} to\n"
+	.string "I'm on my way to Gastree City to\n"
 	.string "challenge the Pokémon Gym, but I'm not\l"
 	.string "sure I can win. Can I practice with you?$"
 
@@ -273,7 +273,7 @@ Route3_TrainerBattle_Ronnie_Text_1:
 
 Route3_TrainerBattle_Ronnie_Text_2:
 # 19 "data//maps/Route3/scripts.pory"
-	.string "I heard that the {COLOR GREEN}Gastree City{COLOR DARK_GRAY} Gym\n"
+	.string "I heard that the Gastree City Gym\n"
 	.string "Leader uses ROCK type Pokémon.$"
 
 Route3_TrainerBattle_Jana_Text_0:

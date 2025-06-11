@@ -32,7 +32,7 @@ script Champ_Mart_B{
 script Champ_Mart_C{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Gardenery Corner!\pWe came all the way from {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} to open a stall here!"))
+    msgbox(format("Welcome to the Gardenery Corner!\pWe came all the way from Mt. Mirroh to open a stall here!"))
 	waitmessage
     //choose berry type
     message(format("Which type of berry would you like?"))

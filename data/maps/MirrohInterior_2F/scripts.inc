@@ -239,7 +239,7 @@ MirrohInterior_2F_Snover_Text_0:
 
 MirrohInterior_2F_Trainer_A_Text_0:
 # 100 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Deep in the depths of {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}, I\n"
+	.string "Deep in the depths of Mt. Mirroh, I\n"
 	.string "sense psychic energy!$"
 
 MirrohInterior_2F_Trainer_A_Text_1:
@@ -255,8 +255,8 @@ MirrohInterior_2F_Trainer_A_Text_2:
 MirrohInterior_2F_Trainer_B_Text_0:
 # 106 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "Why are you here? Are you trying to\n"
-	.string "steal my Pokémon like those {COLOR BLUE}Team\l"
-	.string "Somber{COLOR DARK_GRAY} grunts?$"
+	.string "steal my Pokémon like those Team\l"
+	.string "Somber grunts?$"
 
 MirrohInterior_2F_Trainer_B_Text_1:
 # 106 "data//maps/MirrohInterior_2F/scripts.pory"
@@ -265,7 +265,7 @@ MirrohInterior_2F_Trainer_B_Text_1:
 MirrohInterior_2F_Trainer_B_Text_2:
 # 107 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "When I was on the upper floor, some\n"
-	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts tried to take my\l"
+	.string "Team Somber grunts tried to take my\l"
 	.string "Pokémon. But I beat one of them and ran\l"
 	.string "away from the other!$"
 
@@ -301,7 +301,7 @@ MirrohInterior_2F_Trainer_D_Text_2:
 
 MirrohInterior_2F_Trainer_E_Text_0:
 # 128 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "Didn't I battle you before in {COLOR BLUE}Route 3{COLOR DARK_GRAY}?\n"
+	.string "Didn't I battle you before in Route 3?\n"
 	.string "You beat me and my sister!$"
 
 MirrohInterior_2F_Trainer_E_Text_1:
@@ -329,8 +329,8 @@ MirrohInterior_2F_Trainer_F_Text_2:
 MirrohInterior_2F_Trainer_G_Text_0:
 # 141 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I can't wait to get out of this cave and\n"
-	.string "collect my 6th gym badge at {COLOR GREEN}Winterlily\l"
-	.string "Hollow{COLOR DARK_GRAY}. Yep, that's right! I'm not your\l"
+	.string "collect my 6th gym badge at Winterlily\l"
+	.string "Hollow. Yep, that's right! I'm not your\l"
 	.string "average trainer - I'm on my way to\l"
 	.string "become the Pokémon Champion!$"
 
@@ -345,7 +345,7 @@ MirrohInterior_2F_Trainer_G_Text_2:
 
 MirrohInterior_2F_NPC_A_Text_0:
 # 163 "data//maps/MirrohInterior_2F/scripts.pory"
-	.string "On the way to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}? I live\n"
+	.string "On the way to Winterlily Hollow? I live\n"
 	.string "there. It's a little further ahead, to\l"
 	.string "the right and up, past the icy floor.$"
 

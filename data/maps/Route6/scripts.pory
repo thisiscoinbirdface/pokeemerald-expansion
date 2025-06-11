@@ -33,7 +33,7 @@ script Route6_Nurse_Demo{
 script Route6_EventScript_Nurse{
     lockall
     faceplayer
-    msgbox(format("Eek! The bugs! The humidity! I can't wait to get back to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. These Heal Pass assignments are the worst!\pIf you have a Heal Pass, Chansey can heal your Pokémon meanwhile."))
+    msgbox(format("Eek! The bugs! The humidity! I can't wait to get back to Pelluca City. These Heal Pass assignments are the worst!\pIf you have a Heal Pass, Chansey can heal your Pokémon meanwhile."))
     release
 	call(Common_EventScript_NurseJoyOnRoute)
     release
@@ -103,7 +103,7 @@ script Route6_Trainer_A{
 }
 //Battle Girl
 script Route6_Trainer_B{
-    trainerbattle_single(TRAINER_ROUTE6_B, format("I was in {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to catch a Qwilfish. Now I can join the Qwilsquad!\pWhat - never heard of 'em? Come to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} and you'll find out!"), "My Qwilfish lost!")
+    trainerbattle_single(TRAINER_ROUTE6_B, format("I was in Silversun City to catch a Qwilfish. Now I can join the Qwilsquad!\pWhat - never heard of 'em? Come to Pelluca City and you'll find out!"), "My Qwilfish lost!")
     msgbox(format("The Qwilsquad are the strongest!"))
     releaseall
     end
@@ -146,7 +146,7 @@ script Route6_Trainer_F{
 //PKMN breeder Dog 
 script Route6_Trainer_G{
     trainerbattle_single(TRAINER_ROUTE6_G, format("Get ready, because I'm not a regular Pokémon Breeder. I'm going to be the first Pokémon Breeder Champion!"), "Guess I was more bark than bite!")
-    msgbox(format("Dog Pokémon are rare in Cormoria! Someone in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} traded me my Houndoor."))
+    msgbox(format("Dog Pokémon are rare in Cormoria! Someone in Pelluca City traded me my Houndoor."))
     releaseall
     end
 }
@@ -159,7 +159,7 @@ script Route6_Trainer_H{
 }
 //Dragon tamer
 script Route6_Trainer_I{
-    trainerbattle_single(TRAINER_ROUTE6_I, format("I heard there was a rare DRAGON-type Pokémon here in {COLOR BLUE}Route 6{COLOR DARK_GRAY}, but I can't find any on land!"), "Why did I find you instead?")
+    trainerbattle_single(TRAINER_ROUTE6_I, format("I heard there was a rare DRAGON-type Pokémon here in Route 6, but I can't find any on land!"), "Why did I find you instead?")
     msgbox(format("If its not on land, then maybe I need to try fishing..."))
     releaseall
     end
@@ -173,7 +173,7 @@ script Route6_Trainer_J{
 }
 //Hex maniac
 script Route6_Trainer_K{
-    trainerbattle_single(TRAINER_ROUTE6_K, format("Past {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} is the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} and a Pokémon graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
+    trainerbattle_single(TRAINER_ROUTE6_K, format("Past Pelluca City is the Mirroh Base Camp and a Pokémon graveyard. I want to go there to commune with the afterlife!"), "I don't want to commune with you!")
     msgbox(format("If we remember our Pokémon after they go, are they truly gone?"))
     releaseall
     end
@@ -207,7 +207,7 @@ script Route6_Trainer_K{
 script Route6_NPC1{
     lockall
     faceplayer
-    msgbox(format("When I was young, there was no route through these marshes.\pNow {COLOR BLUE}Route 6{COLOR DARK_GRAY} connects {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}."))
+    msgbox(format("When I was young, there was no route through these marshes.\pNow Route 6 connects Silversun City to Pelluca City."))
     releaseall
     end
 }
@@ -327,11 +327,11 @@ script Route6_Gabrielle_Main{
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_right))
     delay(24)    
     speakername("Grunt")
-    msgbox(format("C'mon {COLOR RED}Gabrielle{COLOR DARK_GRAY} - you've got nowhere to run. Now give us your Pokémon!"))
+    msgbox(format("C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!"))
     speakername("Gabrielle")
     msgbox(format("No! They're mine! Why should I give you losers anything?"))
     speakername("Grunt")
-    msgbox(format("They're property of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zoroark, you know? And now it's time to collect!"))
+    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zoroark, you know? And now it's time to collect!"))
     speakername("Gabrielle")
     msgbox(format("That's not how it works!"))
     speakername("Grunt")
@@ -416,7 +416,7 @@ script Route6_Gabrielle_Victory{
 	call(Common_EventScript_OutOfCenterPartyHeal)
     
     speakername("Gabrielle")
-    msgbox(format("I live in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, just past the Hoya River. I was on my way home when those grunts ambushed me...\pIt's not fair! I've already been kicked out of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\pI wish they'd just leave me alone!\pI'm going back home now.\nSee you around."))  
+    msgbox(format("I live in Pelluca City, just past the Hoya River. I was on my way home when those grunts ambushed me...\pIt's not fair! I've already been kicked out of Team Somber.\pI wish they'd just leave me alone!\pI'm going back home now.\nSee you around."))  
     release
     applymovement(LOCALID_GAB, moves(walk_left walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3))    
     waitmovement(0)

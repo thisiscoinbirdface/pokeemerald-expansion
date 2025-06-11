@@ -116,13 +116,13 @@ script RivetshoreQuarry_NPC2{
         end
     }
 
-    msgbox(format("Work's become better after the {COLOR RED}Raazi{COLOR DARK_GRAY} set up this infirmary and resting spot. He really understands our struggles!\pI can't say the same for the shift manager though...look at him!\lHe's playing games on his PocketBoy!"), MSGBOX_NPC)
+    msgbox(format("Work's become better after the Raazi set up this infirmary and resting spot. He really understands our struggles!\pI can't say the same for the shift manager though...look at him!\lHe's playing games on his PocketBoy!"), MSGBOX_NPC)
     end
 }
 
 //blocker 
 script RivetshoreQuarry_Blocker_NPC{
-    msgbox(format("Why aren't people allowed in the quarry when {COLOR RED}Raazi{COLOR DARK_GRAY}'s not around?\pCause it's dangerous, idiot!"), MSGBOX_NPC)
+    msgbox(format("Why aren't people allowed in the quarry when Raazi's not around?\pCause it's dangerous, idiot!"), MSGBOX_NPC)
     end
 }
 
@@ -202,7 +202,7 @@ script RivetshoreQuarry_Blocker_Trigger{
     lockall
     applymovement(LOCALID_BLOCKER, moves(emote_exclamation_mark face_right))
     movedelay
-    msgbox(format("Sorry. The quarry's closed sinze {COLOR RED}Raazi{COLOR DARK_GRAY}'s not here right now.\pWhere'd he go?\pWhat's it to you, kid?"))
+    msgbox(format("Sorry. The quarry's closed sinze Raazi's not here right now.\pWhere'd he go?\pWhat's it to you, kid?"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -279,7 +279,7 @@ script Rivetshore_Quarry_Aron{
 
 script Rivetshore_Raazi_Talk{
     lockall
-    msgbox_delay("Raazi", format("You managed to come out of that cave unscathed?\pI'm impressed.\p...\pOr perhaps it's simply time for me to expand the cave?\pNo matter - a trainer who faces me is a trainer who I must face.\pI am {COLOR RED}Raazi{COLOR DARK_GRAY}! The Gym Leader of {COLOR RED}Rivetshore City{COLOR DARK_GRAY} and the strongest leader in all of Cormoria. Few trainers posess enough grit to reach where you stand, {PLAYER}. But their fate is to be crushed by my hand! Will you fall? Or will you rise?"))
+    msgbox_delay("Raazi", format("You managed to come out of that cave unscathed?\pI'm impressed.\p...\pOr perhaps it's simply time for me to expand the cave?\pNo matter - a trainer who faces me is a trainer who I must face.\pI am Raazi! The Gym Leader of Rivetshore City and the strongest leader in all of Cormoria. Few trainers posess enough grit to reach where you stand, {PLAYER}. But their fate is to be crushed by my hand! Will you fall? Or will you rise?"))
 
     applymovement(LOCALID_RAAZI, moves(lock_facing_direction jump_left face_right unlock_facing_direction))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction jump_right face_left unlock_facing_direction))
@@ -300,7 +300,7 @@ script Rivetshore_Raazi_Talk{
     applymovement(LOCALID_RAAZI, moves(face_down))
     waitmovement(0)
     delay(16)    
-    msgbox_delay("Raazi", format("Hello?\p...\p...\pViniel and {COLOR BLUE}Carona{COLOR DARK_GRAY} are here?\pVery well. I'm coming.\nWe'll depart as soon as I reach."))
+    msgbox_delay("Raazi", format("Hello?\p...\p...\pViniel and Carona are here?\pVery well. I'm coming.\nWe'll depart as soon as I reach."))
     playse(SE_POKENAV_HANG_UP)
     waitse
     delay(16)

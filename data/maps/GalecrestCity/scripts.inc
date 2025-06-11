@@ -838,11 +838,11 @@ GalecrestCity_OnFrame_Text_1:
 	.string "Yes! Yes we have! I'm so relieved. I've\n"
 	.string "never been so happy to see a city\l"
 	.string "before!\p"
-	.string "This must be {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}. The\n"
+	.string "This must be Galecrest City. The\n"
 	.string "Detective Academy is here. I suppose\l"
 	.string "you'll be headed there. Just head north\l"
 	.string "from here...\p"
-	.string "...and I'll be going back to {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\p"
+	.string "...and I'll be going back to Team Somber.\p"
 	.string "Sigh...\p"
 	.string "...\p"
 	.string "{PLAYER}, we're still enemies! But you\n"
@@ -861,8 +861,8 @@ GalecrestCity_DetectiveMeet_Trigger0_Text_1:
 
 GalecrestCity_DetectiveMeet_Main_Text_0:
 # 159 "data//maps/GalecrestCity/scripts.pory"
-	.string "We heard from {COLOR GREEN}Kohla{COLOR DARK_GRAY} that you went up to\n"
-	.string "the peak to stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\p"
+	.string "We heard from Kohla that you went up to\n"
+	.string "the peak to stop Team Somber.\p"
 	.string "What happened up there?\p"
 	.string "...\p"
 	.string "...$"
@@ -888,7 +888,7 @@ GalecrestCity_DetectiveMeet_Main_Text_3:
 
 GalecrestCity_DetectiveMeet_Main_Text_4:
 # 174 "data//maps/GalecrestCity/scripts.pory"
-	.string "Did you know this was possible {COLOR BLUE}Rue{COLOR DARK_GRAY}?$"
+	.string "Did you know this was possible Rue?$"
 
 GalecrestCity_DetectiveMeet_Main_Text_5:
 # 180 "data//maps/GalecrestCity/scripts.pory"
@@ -916,30 +916,30 @@ GalecrestCity_DetectiveMeet_Main_Text_6:
 GalecrestCity_DetectiveMeet_Main_Text_7:
 # 203 "data//maps/GalecrestCity/scripts.pory"
 	.string "We've uncovered a new lead on Professor\n"
-	.string "{COLOR GREEN} Tenebris{COLOR DARK_GRAY}. An agent told us that she was\l"
-	.string "spotted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.$"
+	.string "Tenebris. An agent told us that she was\l"
+	.string "spotted in Silversun City.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_8:
 # 207 "data//maps/GalecrestCity/scripts.pory"
-	.string "There's one issue...{COLOR BLUE}Team Somber{COLOR DARK_GRAY}. They're\n"
+	.string "There's one issue...Team Somber. They're\n"
 	.string "a known and dangerous criminal\l"
 	.string "syndicate that aims to wrest power\l"
 	.string "from the government.\p"
 	.string "Their hideout is confirmed to be\n"
-	.string "somewhere around {COLOR BLUE}Silversun City{COLOR DARK_GRAY} too.\p"
+	.string "somewhere around Silversun City too.\p"
 	.string "If the Professor, her dreamstone and\n"
-	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} are in the same spot,\l"
+	.string "Team Somber are in the same spot,\l"
 	.string "things could erupt.\p"
 	.string "We have to be there!$"
 
 GalecrestCity_DetectiveMeet_Main_Text_9:
 # 212 "data//maps/GalecrestCity/scripts.pory"
-	.string "But now that {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is involved,\n"
+	.string "But now that Team Somber is involved,\n"
 	.string "it's not safe for you, {PLAYER}.\p"
 	.string "You may have handled a couple of\n"
 	.string "grunts, but you're still a child.\p"
 	.string "So heed these instructions carefully -\n"
-	.string "make your way to {COLOR BLUE}Silversun City{COLOR DARK_GRAY} as soon\l"
+	.string "make your way to Silversun City as soon\l"
 	.string "as possible and keep a low profile.\p"
 	.string "Do NOT engage with any suspicious\n"
 	.string "individuals!$"
@@ -947,13 +947,13 @@ GalecrestCity_DetectiveMeet_Main_Text_9:
 GalecrestCity_DetectiveMeet_Main_Text_10:
 # 223 "data//maps/GalecrestCity/scripts.pory"
 	.string "This building is the Detective Academy.\n"
-	.string "Your friend {COLOR GREEN}Kohla{COLOR DARK_GRAY} was trained here.\p"
+	.string "Your friend Kohla was trained here.\p"
 	.string "He knows the plan already. Go and talk\n"
 	.string "to him first.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_11:
 # 234 "data//maps/GalecrestCity/scripts.pory"
-	.string "See you in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.$"
+	.string "See you in Silversun City.$"
 
 GalecrestCity_EventScript_Poochyena_Text_0:
 # 272 "data//maps/GalecrestCity/scripts.pory"
@@ -1083,7 +1083,7 @@ GalecrestCity_Chansey_Text_0:
 GalecrestCity_NPC_12_Text_0:
 # 394 "data//maps/GalecrestCity/scripts.pory"
 	.string "If you continue west from here, you'll\n"
-	.string "enter {COLOR BLUE}Route 5{COLOR DARK_GRAY} and the {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}.\l"
+	.string "enter Route 5 and the Vilethorn Woods.\l"
 	.string "Many years ago, one of the rich folk\l"
 	.string "here left to build a cottage deep in the\l"
 	.string "woods. Who would want to live in a\l"
@@ -1130,7 +1130,7 @@ GalecrestCity_NPC_15_Text_0:
 # 455 "data//maps/GalecrestCity/scripts.pory"
 	.string "I really want to visit the Silversun\n"
 	.string "Theatre and see a show! But crossing\l"
-	.string "{COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} isn't a good idea...$"
+	.string "Vilethorn Woods isn't a good idea...$"
 
 GalecrestCity_NPC_16_Text_0:
 # 461 "data//maps/GalecrestCity/scripts.pory"

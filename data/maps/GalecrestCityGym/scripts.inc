@@ -382,7 +382,7 @@ GalecrestCityGym_Leader_Text_2:
 GalecrestCityGym_Leader_Text_3:
 # 188 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER} received the Stoic Badge\n"
-	.string "from {COLOR GREEN}Kohla{COLOR DARK_GRAY}.$"
+	.string "from Kohla.$"
 
 GalecrestCityGym_Leader_Text_4:
 # 192 "data//maps/GalecrestCityGym/scripts.pory"
@@ -401,13 +401,13 @@ GalecrestCityGym_Leader_Text_5:
 	.string "it as strong.\p"
 	.string "...\p"
 	.string "Now enough of this gym business. We\n"
-	.string "have to stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}. I'll see you\l"
-	.string "in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.$"
+	.string "have to stop Team Somber. I'll see you\l"
+	.string "in Silversun City.$"
 
 GalecrestCityGym_Text_LeaderIntro::
 # 220 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Yes {PLAYER}, it's me. Traditionally,\n"
-	.string "the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} of the graduating class\l"
+	.string "the Ace Rookie of the graduating class\l"
 	.string "assumes Gym Leader duties for a year\l"
 	.string "after they graduate.\p"
 	.string "And this year, that's me! Normally I\n"

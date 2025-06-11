@@ -34,7 +34,7 @@ script SSElegant_Rooms_Clefable{
 
 //couple
 script SSElegant_Rooms_NPC1{
-    msgbox(format("Our daughter is taking part in the Cormoria Pokémon Championship.\pWe're on our way to {COLOR RED}Victory Cape{COLOR DARK_GRAY} to support her!"), MSGBOX_NPC)
+    msgbox(format("Our daughter is taking part in the Cormoria Pokémon Championship.\pWe're on our way to Victory Cape to support her!"), MSGBOX_NPC)
     end
 }
 script SSElegant_Rooms_NPC2{
