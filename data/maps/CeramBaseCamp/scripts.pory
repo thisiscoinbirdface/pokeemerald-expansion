@@ -128,17 +128,17 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         release
         applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))    
         waitmovement(0)
-        msgbox(format("What?! Cyndaquil can't learn it!?\nHow did I miss this!?"))
+        msgbox(format("What?! Cyndaquil can't learn it!?\nBut Cyndaquil is the best!"))
         playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)        
         msgbox(format("Quiii!!!!!"))
         release
         delay(8)     
-        msgbox(format("Oh no! I'm sorry Cyndaquil...I wasted so much of our time!"))
+        msgbox(format("Oh no! I'm sorry Cyndaquil...\nI wasted so much time!"))
         release
         delay(8)
         faceplayer
         delay(8)
-        message(format("Well...you still helped us out, so we owe you something."))
+        message(format("Well...you still helped us out,\nso we owe you something."))
 
         goto(CeramBaseCamp_Cyndaquil_Reward)
     } else { //refuse to give TM
@@ -187,7 +187,7 @@ script CeramBaseCamp_Cyndaquil_Reward_End{
     applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))
     waitmovement(0)    
     delay(20)
-    msgbox(format("You're saying Acid Spray is a weak move? And it won't help much against Ariana?\lSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
+    msgbox(format("You're saying Acid Spray is a weak move anyway and WATER or GROUND type moves are better against Ariana?\nSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
     release
     delay(16)
     applymovement(LOCALID_DUDE, moves(face_up))
