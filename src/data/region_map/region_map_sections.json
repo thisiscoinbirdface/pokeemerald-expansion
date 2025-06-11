@@ -1154,14 +1154,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CHAMPIONSHIP",
-      "name": "KINDLE ROAD",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_TREASURE_BEACH",
       "name": "TREASURE BEACH",
       "x": 0,
@@ -1945,6 +1937,14 @@
       "width": 1,
       "height": 4
     },    
+    {
+      "map_section": "MAPSEC_IVY_FOREST",
+      "name": "Ivy Forest",
+      "x": 9,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },       
     {
       "map_section": "MAPSEC_ROUTE8",
       "name": "Route 8",

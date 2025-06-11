@@ -256,18 +256,24 @@ IvyRiver_Zarude_LegendaryTrigger3_4:
 
 IvyRiver_Zarude_Legendary::
 # 156 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	msgbox IvyRiver_Zarude_Legendary_Text_0
+	delay 16
 # 157 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	applymovement 1, IvyRiver_Zarude_Legendary_Movement_0
+# 165 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	waitmovement 0
+# 166 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	msgbox IvyRiver_Zarude_Legendary_Text_0
+# 167 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	release
-# 158 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 168 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	setflag FLAG_ZARUDE
-# 159 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 169 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	setvar VAR_ZARUDE_NOTES, 4
-# 161 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 171 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	setwildbattle SPECIES_ZARUDE_DADA, 40
-# 162 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 172 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	dowildbattle
-# 163 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 173 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	removeobject 1
 	return
 
@@ -278,6 +284,22 @@ IvyRiver_Zarude_LegendaryTrigger1_Movement_0:
 	jump_2_down
 # 101 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	jump_2_down
+	step_end
+
+# 157 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+IvyRiver_Zarude_Legendary_Movement_0:
+# 158 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	lock_anim
+# 159 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	lock_facing_direction
+# 160 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	walk_faster_left
+# 161 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	walk_faster_right
+# 162 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	unlock_anim
+# 163 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	unlock_facing_direction
 	step_end
 
 IvyRiver_Zarude_Note1_Text_0:
@@ -328,6 +350,6 @@ IvyRiver_Zarude_LegendaryTrigger1_Text_0:
 	.string "What was that?$"
 
 IvyRiver_Zarude_Legendary_Text_0:
-# 156 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 166 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	.string "The wild Pokémon snatches away\n"
 	.string "the Purple Scarf and attacks!$"
