@@ -9,7 +9,7 @@ script Common_EventScript_NurseDemo{
 }
 
 script Common_EventScript_SaveGameBeforeBattle{
-    msgbox(format("You're about to battle!"))
+    msgbox(format("Tension fills the air..."))
 	special(SaveGame)
 	waitstate
 	release

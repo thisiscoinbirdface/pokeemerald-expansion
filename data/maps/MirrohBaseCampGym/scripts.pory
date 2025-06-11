@@ -249,9 +249,7 @@ script MirrohBaseCampGym_Leader{
         msgbox(format("Use your power wisely. As for me, it's time to move on."))
     } else {
 
-        special(SaveGame)
-        waitstate
-        release
+        call(Common_EventScript_SaveGameBeforeBattle)
 
         //move player
         specialvar(VAR_RESULT, GetPlayerFacingDirection)

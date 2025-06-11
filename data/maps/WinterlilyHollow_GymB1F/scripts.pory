@@ -151,11 +151,10 @@ script WinterlilyHollowGym_LeaderBattle {
         speakername("Viniel")
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        speakername("Viniel")
         //savegame
-        
+        call(Common_EventScript_SaveGameBeforeBattle)
 
-
+        speakername("Viniel")
         msgbox(format("Go Manectric! More! More!\pWait - it looks like we've got a guest."))
         faceplayer
         speakername("Viniel")

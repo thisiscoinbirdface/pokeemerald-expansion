@@ -20,9 +20,7 @@ script SilversunCity_Theater_Leader{
     }
     
     //Savegame
-    special(SaveGame)
-    waitstate
-    release
+    call(Common_EventScript_SaveGameBeforeBattle)
 
     //dialogue
     speakername("Gloria")

@@ -167,9 +167,7 @@ script GalecrestCityGym_Leader {
     if (flag(FLAG_BADGE03_GET)){
         msgbox(format("You win."))
     } else {
-        special(SaveGame)
-        waitstate
-        release
+        call(Common_EventScript_SaveGameBeforeBattle)
         
         //Intro
         speakername("Kohla")

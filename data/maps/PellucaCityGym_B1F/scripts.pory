@@ -249,9 +249,7 @@ script PellucaGym_Leader {
     if (flag(FLAG_BADGE07_GET)){
         msgbox(format("The tides of time wait for nobody. Do what you have to do!"))
     } else {
-        special(SaveGame)
-        waitstate
-        release
+        call(Common_EventScript_SaveGameBeforeBattle)
         
         //Intro
         speakername("Jania")

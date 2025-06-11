@@ -230,9 +230,8 @@ script CeramBaseCampGym_LeaderBattle {
         speakername("Ariana")
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
-        special(SaveGame)
-        waitstate
-        release
+        call(Common_EventScript_SaveGameBeforeBattle)
+        
         speakername("Ariana")
         msgbox(CeramBaseCampGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)

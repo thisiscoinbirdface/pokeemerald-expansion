@@ -2102,7 +2102,7 @@ Common_EventScript_NurseDemo_Text_0:
 
 Common_EventScript_SaveGameBeforeBattle_Text_0:
 # 12 "data//maps/TempCopyMap/scripts.pory"
-	.string "You're about to battle!$"
+	.string "Tension fills the air...$"
 
 Common_EventScript_Follower_Cheat_Text_0:
 # 26 "data//maps/TempCopyMap/scripts.pory"
