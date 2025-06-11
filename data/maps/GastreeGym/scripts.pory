@@ -41,6 +41,10 @@ script GastreeGym_LeaderBattle {
 
         speakername("Inger")
         msgbox(format("Who're you?\pA trainer?\pYou're coming to me at the wrong time, buddy, because I just lost to some child your age and I'm furious!\p..."), MSGBOX_NPC)    
+        release
+        applymovement(9, moves(emote_question_mark))
+        waitmovement(0)
+        delay(24)
         speakername("Inger")
         msgbox(GastreeGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_GASTREEGYM_LEADER, GastreeGym_Text_Defeated)
@@ -58,6 +62,7 @@ script GastreeGym_EventScript_Victory{
     message(format("{PLAYER} received the Hard Badge from Inger."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
+    playbgm(MUS_RG_GYM, FALSE)    
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Inger")
@@ -75,7 +80,7 @@ script GastreeGym_EventScript_Victory{
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior the move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pAll the best, {PLAYER}! Teach Team Somber a lesson on behalf of the Kinger!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Kinger's behalf!"))
     releaseall
 }
 
