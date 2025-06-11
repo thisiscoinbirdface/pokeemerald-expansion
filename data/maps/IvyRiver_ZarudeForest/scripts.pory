@@ -157,8 +157,8 @@ script IvyRiver_Zarude_Legendary{
     applymovement(1, moves(
         lock_anim
         lock_facing_direction
-        walk_faster_left
-        walk_faster_right
+        walk_faster_down
+        walk_faster_up
         unlock_anim
         unlock_facing_direction
     ))

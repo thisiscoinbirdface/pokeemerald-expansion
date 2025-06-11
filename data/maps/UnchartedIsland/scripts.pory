@@ -15,6 +15,10 @@ raw`
     .set LOCALID_BREECH, 27
     .set LOCALID_CLEF, 28
 
+    .set LOCALID_SHIP, 35
+    .set LOCALID_DET1, 8
+    .set LOCALID_DET2, 7
+
 `
 
 
@@ -121,7 +125,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_MOXIE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("...and {PLAYER}!\nHow on earth?"))
+    msgbox_delay("Melea", format("...and {PLAYER}! How on earth?"))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
@@ -163,7 +167,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("And you - {PLAYER}! You stupid, stupid gnat!\pI tricked the detectives into sending an inexperienced idiot on the hunt for the dreamstones! How easy it should have been to stop you and {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\pBut you - despite all odds - managed to get in our way at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\pThen I sent {COLOR GREEN}Kohla{COLOR DARK_GRAY} on a wild goose chase at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! But you managed to take down our base without his help!"))
+    msgbox_delay("Rue", format("And you - {PLAYER}!\pYou stupid, stupid gnat!\pI tricked the detectives into sending an inexperienced idiot on the hunt for the dreamstones! How easy it should have been to stop you and {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\pBut you - despite all odds - managed to get in our way at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\pThen I sent {COLOR GREEN}Kohla{COLOR DARK_GRAY} on a wild goose chase at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! But you managed to take down our base without his help!"))
 
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
     msgbox_delay("Kohla", format("Y-you set me up?"))
@@ -171,13 +175,16 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("Stupid child...I set you all up a hundred times over!"))
+    msgbox_delay("Rue", format("Stupid child...I set you all up a\nhundred times over!"))
     
     
     
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
+
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up))
     waitmovement(0)
+    special(RemoveCameraObject)
+
     delay(16)
     msgbox_delay("Rue", format("{PLAYER}, when you saw me at the Master Ball Maker's house at the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}, I feared you'd connect the dots for a moment...but it looks like I overestimated your cognitive abilities.\pNo...I did everything right.\pEverything was perfect!"))
 
@@ -189,7 +196,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...and {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
+    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...\nand {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)
@@ -221,7 +228,7 @@ script UnchartedIsland_Finale_Cutscene{
     delay(16)
     msgbox_delay("Moxie", format("Silence, loser!"))
     delay(16)
-    msgbox_delay("Rue", format("It's fine, Moxie. He's right...that's no excuse.\pBut who will stop me? Who will force my hand now?\pI've beaten everyone - I've hoodwinked the detectives, bypassed the gym leaders and crushed the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}."))
+    msgbox_delay("Rue", format("It's fine, Moxie.\nHe's right...that's no excuse.\pBut who will stop me?\nWho will force my hand now?\pI've beaten everyone - I've hoodwinked the detectives, bypassed the gym leaders and crushed the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}."))
 
     goto(UnchartedIsland_Finale_Battle)
 }
@@ -240,7 +247,7 @@ script UnchartedIsland_Finale_Battle{
     applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox_delay("Rue", format("So this is what it comes down to - the assistant versus the professor.\pVery well.\pI'm sorry, {PLAYER}.\nI really do like you.\pBut Cormoria has only enough space for one future.\pOne of us must step aside.\p...\pI'm sorry."))
+    msgbox_delay("Rue", format("So this is what it comes down to - the assistant versus the professor.\pVery well.\pI'm sorry, {PLAYER}.\nI really do like you.\pBut Cormoria has only enough space\nfor one future.\pOne of us must step aside.\p...\pI'm sorry."))
 
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_RUE, format("No! Nooo! NOOO!!!"))
 
@@ -248,7 +255,13 @@ script UnchartedIsland_Finale_Battle{
 }
 
 script UnchartedIsland_Finale_Ending{
-    applymovement(LOCALID_RUE_2, moves(walk_down))
+    applymovement(LOCALID_RUE_2, moves(
+        lock_anim
+        lock_facing_direction
+        walk_faster_down
+        unlock_anim
+        unlock_facing_direction
+    ))
     waitmovement(0)
     delay(24)
     msgbox_delay("Rue", format("I lost...\pHow could I lose?\pTo a research associate?\pI..."))
@@ -277,7 +290,7 @@ script UnchartedIsland_Finale_Ending{
     applymovement(LOCALID_RUE_2, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(24)
-    msgbox_delay("Rue", format("I will not be bested!\pIf we can get the dreamstone, we can try again.\pAncient Terror! Bring me the dreamstone!"))
+    msgbox_delay("Rue", format("I will not be bested!\pIf we can get the dreamstone,\nwe can just try again.\pAncient Terror!\nBring me the dreamstone!"))
 
     fadescreen(FADE_TO_BLACK)
     setobjectxyperm(LOCALID_KOR, 79, 26)
@@ -300,7 +313,7 @@ script UnchartedIsland_Finale_Ending{
     delay(20)
 
     //breech clef intro
-    msgbox_delay("Breech", format("Clefable! It's dangerous!\nCome back!"))
+    msgbox_delay("Breech", format("Clefable! It's dangerous!\pCome back!"))
 
     setobjectxyperm(LOCALID_CLEF, 78, 33)
     addobject(LOCALID_CLEF)
@@ -309,7 +322,7 @@ script UnchartedIsland_Finale_Ending{
 
     //breech clef movement
     applymovement(LOCALID_BREECH, moves(walk_fast_up *5 walk_fast_left walk_fast_up walk_fast_left face_up))
-    applymovement(LOCALID_CLEF, moves(walk_fast_up *4 walk_fast_left walk_fast_up walk_fast_left walk_fast_up*3 walk_fast_right walk_fast_up walk_fast_right face_up))
+    applymovement(LOCALID_CLEF, moves(walk_fast_up *4 walk_fast_left walk_fast_up walk_fast_left walk_fast_up))
     waitmovement(0)
 
     //everyone face up
@@ -320,10 +333,12 @@ script UnchartedIsland_Finale_Ending{
     applymovement(LOCALID_KOR, moves(face_up))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     applymovement(LOCALID_KOHLA_2, moves(face_up))
+
+    applymovement(LOCALID_CLEF, moves(walk_fast_up*2 walk_fast_right walk_fast_up walk_fast_right face_up))
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 3))
     waitmovement(0)
-
-
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
 
     delay(16)    
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
@@ -336,7 +351,10 @@ script UnchartedIsland_Finale_Ending{
     removeobject(2)
     playse(SE_M_DIVE)    
     waitse
-    delay(30)
+    delay(40)
+
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 3))
+    waitmovement(0)
 
     setvar(VAR_0x8004, 2)  //vertical pan
     setvar(VAR_0x8005, 2)  //horizontal pan
@@ -345,6 +363,78 @@ script UnchartedIsland_Finale_Ending{
     special(ShakeCamera)
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     msgbox_delay("Rue", format("NO!!!"))
+    delay(24)
+
+    //remove koraidon
+    applymovement(LOCALID_KOR, moves(enter_pokeball))
+    waitmovement(0)
+
+    //face everyone down
+    applymovement(LOCALID_CLEF, moves(face_down))
+    applymovement(LOCALID_BREECH, moves(face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(LOCALID_TENE_2, moves(face_down))
+    waitmovement(0)
+
+    //melea moxie final
+    applymovement(LOCALID_MELEA_2, moves(jump_in_place_right))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Melea", format("Boss!"))
+
+    applymovement(LOCALID_MOXIE_2, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Moxie", format("Boss! Let's get out of here!"))
+
+    delay(24)
+    msgbox_delay("Rue", format("No..."))
+
+    msgbox_delay("Rue", format("Th-the dreamstone..."))
+    delay(24)
+
+    //ship enters
+    playse(SE_SHIP)
+    addobject(LOCALID_SHIP)
+    setobjectxy(LOCALID_SHIP, 69, 28)
+
+    applymovement(LOCALID_SHIP, moves(walk_right * 3))
+    
+    //Moxie and Melea run
+    applymovement(LOCALID_MELEA_2, moves(emote_exclamation_mark jump_in_place_left))
+    applymovement(LOCALID_MOXIE_2, moves(emote_exclamation_mark jump_in_place_left))
+    waitmovement(0)
+    delay(20)
+    applymovement(LOCALID_MELEA_2, moves(walk_fast_down * 6))
+    applymovement(LOCALID_MOXIE_2, moves(walk_fast_down * 6))
+    waitmovement(0)
+    playse(SE_EXIT)
+
+    //Detectives
+    fadescreen(FADE_TO_BLACK)
+    addobject(LOCALID_DET1)
+    setobjectxy(LOCALID_DET1, 75, 26)
+    addobject(LOCALID_DET2)
+    setobjectxy(LOCALID_DET2, 75, 28)
+    setobjectxy(LOCALID_BREECH, 77, 29)
+    applymovement(LOCALID_BREECH, moves(face_up))
+    waitmovement(0)
+    fadescreen(FADE_FROM_BLACK)
+
+    msgbox_delay("Detective", format("It's over, Rue. You're finished!"))
+    delay(24)
+    applymovement(LOCALID_RUE_2, moves(walk_left))
+    waitmovement(0)
+    delay(24)
+    msgbox_delay("Rue", format("{PLAYER}..."))
+    applymovement(LOCALID_RUE_2, moves(walk_left * 2))
+    waitmovement(0)
+
+    applymovement(LOCALID_DET1, moves(face_down))
+    applymovement(LOCALID_DET2, moves(face_up))
+
+    delay(24)
+    msgbox_delay("Rue", format("A name worth remembering..."))
 
     //END
     setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 5)

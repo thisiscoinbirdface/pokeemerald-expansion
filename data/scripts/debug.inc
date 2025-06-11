@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_PELLUCA_CITY_GAME_CORNER, 12, 11
+	warp MAP_ANCIENT_CORMORIA_FINAL_ISLAND, 9, 6
 	release
 	end
 

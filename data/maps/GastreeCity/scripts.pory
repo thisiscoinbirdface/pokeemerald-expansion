@@ -480,7 +480,7 @@ script GastreeCity_NPC9{
         release
         playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)        
         delay(16)
-        applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark walk_fast_right * 2 walk_fast_up * 1 walk_fast_right * 4 walk_fast_up * 6))
+        applymovement(LOCALID_SKITTY3, moves(emote_exclamation_mark walk_fast_right * 2 walk_fast_up * 1 walk_fast_right * 3 walk_fast_up * 6))
         waitmovement(0)
         removeobject(LOCALID_SKITTY3)
         msgbox(format("Phew! Finally. Looks like Skitty ran back to its owner!"))

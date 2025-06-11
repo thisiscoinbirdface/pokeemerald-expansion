@@ -1299,7 +1299,7 @@
 #define FLAG_ITEM_LILY_POND_C               0x438
 
 //ivy river
-#define FLAG_ITEM_IVYRIVER_GREEN_SCARF      0x439
+#define FLAG_ITEM_IVYRIVER_GREEN_SCARF      0x439   ///unused now
 #define FLAG_ITEM_IVY_RIVER_A               0x43A
 #define FLAG_ITEM_IVY_RIVER_B               0x43B
 #define FLAG_ITEM_IVY_RIVER_C               0x43C

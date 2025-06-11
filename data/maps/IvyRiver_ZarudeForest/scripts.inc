@@ -293,9 +293,9 @@ IvyRiver_Zarude_Legendary_Movement_0:
 # 159 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	lock_facing_direction
 # 160 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	walk_faster_left
+	walk_faster_down
 # 161 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	walk_faster_right
+	walk_faster_up
 # 162 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	unlock_anim
 # 163 "data//maps/IvyRiver_ZarudeForest/scripts.pory"

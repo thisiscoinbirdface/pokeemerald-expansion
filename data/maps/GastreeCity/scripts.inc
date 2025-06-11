@@ -1056,8 +1056,6 @@ GastreeCity_EventScripts_SkittyTrigger3_Movement_0:
 # 483 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
 # 483 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_right
-# 483 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
 # 483 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_up
