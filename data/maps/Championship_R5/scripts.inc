@@ -270,8 +270,8 @@ Championship_R5_Text_2:
 	.string "On the right, we have the overwhelming\n"
 	.string "cword favourite and this year's\l"
 	.string "frontrunner for Champion - the fiery\l"
-	.string "Ace Rookie from the Galecrest Decetive\l"
-	.string "Academy - Kohla!\p"
+	.string "{COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the Galecrest Decetive\l"
+	.string "Academy - {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\p"
 	.string "With his partner Ceruledge, he's been\n"
 	.string "dominant in the...$"
 
@@ -290,7 +290,7 @@ Championship_R5_Text_5:
 	.string "credit, I know the truth.\p"
 	.string "I can't deny the truth.\p"
 	.string "You were the one who stopped\n"
-	.string "Rue and Team Somber.$"
+	.string "Rue and {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.$"
 
 Championship_R5_Text_6:
 # 44 "data//maps/Championship_R5/scripts.pory"
@@ -301,8 +301,8 @@ Championship_R5_Text_7:
 	.string "When I look at you, {PLAYER}, I see\n"
 	.string "everything I don't have.\p"
 	.string "Everything I deserve, but don't have.\p"
-	.string "But I'm still the Ace Rookie!\n"
-	.string "I chased Team Somber as hard as you\l"
+	.string "But I'm still the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!\n"
+	.string "I chased {COLOR BLUE}Team Somber{COLOR DARK_GRAY} as hard as you\l"
 	.string "did! Harder! I'm the one who should\l"
 	.string "have...I...\p"
 	.string "But do you see me now, {PLAYER}?\n"
@@ -348,4 +348,4 @@ Championship_R5_Text_15:
 
 Championship_R5_Text_16:
 # 106 "data//maps/Championship_R5/scripts.pory"
-	.string "No...It's Rue.$"
+	.string "No...It's {COLOR BLUE}Rue{COLOR DARK_GRAY}.$"

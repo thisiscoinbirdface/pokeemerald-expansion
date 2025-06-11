@@ -33,7 +33,7 @@ script IvyRiver_Sharpedo_Jania_Trigger{
 
     delay(16)
     speakername("Jania")
-    msgbox(format("It's you, {PLAYER}.\pI must thank you for bringing peace to Pelluca City.\pCome here."))
+    msgbox(format("It's you, {PLAYER}.\pI must thank you for bringing peace to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\pCome here."))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))

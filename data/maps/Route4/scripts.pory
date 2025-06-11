@@ -34,7 +34,7 @@ script Route4_EventScript_EvilTeam{
         end
     }
 
-    msgbox(format("You don't want to budge? Grr...alright fine, we're not construction workers. We're Team Somber! And now we're going to teach you a lesson!"))
+    msgbox(format("You don't want to budge? Grr...alright fine, we're not construction workers. We're {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! And now we're going to teach you a lesson!"))
     release
 
     //Trainer double battle
@@ -58,7 +58,7 @@ script Route4_EventScript_EvilTeamDefeated{
     release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("We gotta tell the boss at Ceram Base Camp about this!"))
+    msgbox(format("We gotta tell the boss at {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY} about this!"))
     release
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down)) 
@@ -262,7 +262,7 @@ script Route4_NPC_Couple2{
 
 //Generic NPC
 script Route4_NPC_A{
-    msgbox(format("I don't understand why they don't just build a bridge to Ceram Base Camp.\pSure, trainers can cross with HM Splash, but the city management needs to think about us civilians too.\pWe're not all trainers!"), MSGBOX_NPC)
+    msgbox(format("I don't understand why they don't just build a bridge to {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}.\pSure, trainers can cross with HM Splash, but the city management needs to think about us civilians too.\pWe're not all trainers!"), MSGBOX_NPC)
     end
 }
 
@@ -286,12 +286,12 @@ script Route4_NPC_Cook{
 
     if (flag(FLAG_ROUTE4_COOK)){
         speakername("Chef")
-        msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)        
+        msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, be sure to drop by our restaurant!"), MSGBOX_NPC)        
     } else {
         lockall
         faceplayer
         speakername("Chef")
-        msgbox(format("Hello young trainer! I'm a chef from the Pelluca Restaurant, all the way on the other side of Cormoria! Why am I here, you ask? It's because I travel all across Cormoria to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around Mt. Ceram. It's called a Rawst Berry. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
+        msgbox(format("Hello young trainer! I'm a chef from the Pelluca Restaurant, all the way on the other side of Cormoria! Why am I here, you ask? It's because I travel all across Cormoria to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. It's called a Rawst Berry. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_RAWST_BERRY)
             if (var(VAR_RESULT) == 1){
@@ -363,13 +363,13 @@ script Route4_NPC_Cook_RewardB{
 script Route4_NPC_Cook_RewardEnd{
     setflag(FLAG_ROUTE4_COOK)
     speakername("Chef")
-    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)            
+    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, be sure to drop by our restaurant!"), MSGBOX_NPC)            
     end
 }
 
 //Generic NPC
 script Route4_NPC_D{
-    msgbox(format("There are some grunts blocking the path to Ceram Base Camp! They remind me of my younger days...I used to be in an evil team in the Hoenn region."), MSGBOX_NPC)
+    msgbox(format("There are some grunts blocking the path to {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}! They remind me of my younger days...I used to be in an evil team in the Hoenn region."), MSGBOX_NPC)
     end
 }
 

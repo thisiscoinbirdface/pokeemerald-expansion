@@ -281,8 +281,8 @@ Championship_Corridor_Mon2_Text_0:
 
 Championship_Corridor_NPC3_Text_0:
 # 96 "data//maps/Championship_Corridor/scripts.pory"
-	.string "My first-round opponent was the Ace\n"
-	.string "Rookie from Galecrest...\p"
+	.string "My first-round opponent was the {COLOR GREEN}Ace\n"
+	.string "Rookie{COLOR DARK_GRAY} from Galecrest...\p"
 	.string "Roserade and I never had a chance.\p"
 	.string "It's fine...\p"
 	.string "I just...sniff...$"
@@ -319,7 +319,7 @@ Championship_Corridor_TV_Text_0:
 
 Championship_Corridor_TV_Text_1:
 # 135 "data//maps/Championship_Corridor/scripts.pory"
-	.string "And the crowd goes wild as Kohla's\n"
+	.string "And the crowd goes wild as {COLOR GREEN}Kohla{COLOR DARK_GRAY}'s\n"
 	.string "Ceruledge knocks out another Pokémon!\l"
 	.string "I must say, we haven't seen a trainer\l"
 	.string "like this in years! The skill! The style!\p"

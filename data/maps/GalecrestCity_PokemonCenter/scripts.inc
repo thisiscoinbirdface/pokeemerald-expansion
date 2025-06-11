@@ -38,7 +38,7 @@ GalecrestCity_PokemonCenter_NPC2::
 
 GalecrestCity_PokemonCenter_NPC1_Text_0:
 # 19 "data//maps/GalecrestCity_PokemonCenter/scripts.pory"
-	.string "Nobody goes into Vilethorn Woods - it's\n"
+	.string "Nobody goes into {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} - it's\n"
 	.string "too creepy and easy to get lost in!\p"
 	.string "...\p"
 	.string "...well, nobody sane.$"

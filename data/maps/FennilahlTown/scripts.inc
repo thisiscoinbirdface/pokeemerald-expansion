@@ -596,7 +596,7 @@ FennilahlTown_EventScript_MartEmployeeRoadBlock_Text_0:
 # 14 "data//maps/FennilahlTown/scripts.pory"
 	.string "I'm the chauffeur for the detectives in\n"
 	.string "charge of the Tenebris disappearance.\l"
-	.string "They're in Carabrue Town right now\l"
+	.string "They're in {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} right now\l"
 	.string "speaking to the lab staff.$"
 
 FennilahlTown_EventScript_Man_Text_0:
@@ -637,7 +637,7 @@ Fennilahl_Breech_StartQuest_Text_2:
 # 55 "data//maps/FennilahlTown/scripts.pory"
 	.string "Amazing! You've answered my prayers.\n"
 	.string "I saw the pink Pokémon run south,\l"
-	.string "towards Route 2. I really liked that\l"
+	.string "towards {COLOR BLUE}Route 2{COLOR DARK_GRAY}. I really liked that\l"
 	.string "Strange Rock! Please bring it back.$"
 
 Fennilahl_Breech_StartQuest_Text_3:
@@ -682,7 +682,7 @@ Fennilahl_Breech_QuestInProgress_Text_6:
 
 Fennilahl_Breech_QuestInProgress_Text_7:
 # 106 "data//maps/FennilahlTown/scripts.pory"
-	.string "Thank you trainer! My name is Breech.\n"
+	.string "Thank you trainer! My name is {COLOR RED}Breech{COLOR DARK_GRAY}.\n"
 	.string "I'm just a simple man who loves\l"
 	.string "collecting rocks. Even with Clefairy by\l"
 	.string "my side, I won't battle. Clefairy and I\l"

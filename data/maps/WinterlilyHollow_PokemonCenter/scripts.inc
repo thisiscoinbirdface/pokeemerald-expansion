@@ -57,6 +57,6 @@ WinterlilyHollow_PokemonCenter_Chansey_Text_0:
 
 WinterlilyHollow_PokemonCenter_NPC2_Text_0:
 # 28 "data//maps/WinterlilyHollow_PokemonCenter/scripts.pory"
-	.string "This is my first time in Winterlily\n"
-	.string "Hollow. I came to visit the Ranger\l"
-	.string "Institute further down in Ivy River.$"
+	.string "This is my first time in {COLOR GREEN}Winterlily\n"
+	.string "Hollow{COLOR DARK_GRAY}. I came to visit the Ranger\l"
+	.string "Institute further down in {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.$"

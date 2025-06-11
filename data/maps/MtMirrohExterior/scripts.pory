@@ -25,7 +25,7 @@ script MtMirrohExterior_BreechTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
     speakername("Breech")
-    msgbox(format("Clefable, did you see the Team Somber grunts too?"))
+    msgbox(format("Clefable, did you see the {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts too?"))
     release
     applymovement(LOCALID_CLEF, moves(jump_in_place_up))
     waitmovement(0)
@@ -43,7 +43,7 @@ script MtMirrohExterior_BreechTrigger{
     waitmovement(0)
     delay(30)
     speakername("Breech")    
-    msgbox(format("{PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pSo you're chasing Team Somber. I admire you, {PLAYER}. Clefable and I just saw a couple of them enter Mt. Mirroh. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
+    msgbox(format("{PLAYER}! It's you! Fancy seeing you here. How are you?\p...\pSo you're chasing {COLOR BLUE}Team Somber{COLOR DARK_GRAY}. I admire you, {PLAYER}. Clefable and I just saw a couple of them enter {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. They left this drill here and blocked the path with these boulders. I wonder what they're using all this equipment for?"))
     release
     delay(30)
     applymovement(LOCALID_BREECH, moves(face_left emote_exclamation_mark))    
@@ -55,7 +55,7 @@ script MtMirrohExterior_BreechTrigger{
     release
     delay(60)
     speakername("Breech")    
-    msgbox(format("Clefable and I just made our way down Mt. Mirroh. We're going to take a break from the mountains.\pWhere are we going next?\pRivetshore City! We're going to enjoy the sea breeze for a while."))
+    msgbox(format("Clefable and I just made our way down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. We're going to take a break from the mountains.\pWhere are we going next?\pRivetshore City! We're going to enjoy the sea breeze for a while."))
     goto(MtMirrohExterior_Breech_Reward)
 }
 
@@ -78,7 +78,7 @@ script MtMirrohExterior_Breech_Reward_Give{
 
 script MtMirrohExterior_Breech_Reward_End{
     speakername("Breech")    
-    msgbox(format("Maybe we'll see you in Rivetshore City!"))
+    msgbox(format("Maybe we'll see you in {COLOR RED}Rivetshore City{COLOR DARK_GRAY}!"))
     release
     delay(16)
     applymovement(SPECIES_CLEFABLE, moves(jump_in_place_left))
@@ -164,7 +164,7 @@ script MtMirrohExterior_NPC_A{
 script MtMirrohExterior_NPC_B{
     lockall
     faceplayer
-    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach Winterlily Hollow, you have to cross the caverns inside the mountain."))
+    msgbox(format("Higher up, the weather becomes too harsh to climb, so to reach {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}, you have to cross the caverns inside the mountain."))
     releaseall
     end
 }
@@ -224,7 +224,7 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format("Someone told me you could buy Mega Stones here, but it turned out to be a garden supply store!\pI heard you can get them in Rivetshore City though."))
+    msgbox(format("Someone told me you could buy Mega Stones here, but it turned out to be a garden supply store!\pI heard you can get them in {COLOR RED}Rivetshore City{COLOR DARK_GRAY} though."))
     releaseall
     end
 }

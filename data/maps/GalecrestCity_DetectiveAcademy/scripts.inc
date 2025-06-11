@@ -616,11 +616,11 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_1:
 
 GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_2:
 # 23 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "{PLAYER}, it was you who stopped Team\n"
-	.string "Somber from getting the dreamstone.\p"
+	.string "{PLAYER}, it was you who stopped {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY} from getting the dreamstone.\p"
 	.string "Thanks to you, I learned something.\n"
-	.string "Being the Ace Rookie isn't enough.\p"
-	.string "To stop Team Somber - no, to stop all\n"
+	.string "Being the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} isn't enough.\p"
+	.string "To stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY} - no, to stop all\n"
 	.string "crime, I need to become stronger than\l"
 	.string "the criminals.\p"
 	.string "At the end of the day, it's all about how\n"
@@ -628,12 +628,12 @@ GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_2:
 
 GalecrestCity_DetectiveAcademy_EventScript_Kohla_Text_3:
 # 32 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "Silversun City is east of here, but the\n"
+	.string "{COLOR BLUE}Silversun City{COLOR DARK_GRAY} is east of here, but the\n"
 	.string "path is blocked by rocks. If you beat\l"
 	.string "the Gym Leader here, you'll be able to\l"
 	.string "use the HM Rock Smash, which will let\l"
 	.string "you pass.\p"
-	.string "See you in Silversun City...or sooner\n"
+	.string "See you in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}...or sooner\n"
 	.string "than that, I think.$"
 
 GalecrestCity_DetectiveAcademy_Breech_Text_0:
@@ -807,7 +807,7 @@ GalecrestCity_DetectiveAcademy_NPC2_Text_0:
 # 257 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "Every semester, the school ranks all\n"
 	.string "the students. The top student is called\l"
-	.string "the Ace Rookie! Kohla held the title\l"
+	.string "the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}! {COLOR GREEN}Kohla{COLOR DARK_GRAY} held the title\l"
 	.string "every semester, but he's graduated now,\l"
 	.string "so the field is open again!$"
 
@@ -819,8 +819,8 @@ GalecrestCity_DetectiveAcademy_NPC3_Text_0:
 
 GalecrestCity_DetectiveAcademy_NPC4_Text_0:
 # 269 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
-	.string "Since many rich folk live in Galecrest\n"
-	.string "City, there's a lot of theft. New\l"
+	.string "Since many rich folk live in {COLOR GREEN}Galecrest\n"
+	.string "City{COLOR DARK_GRAY}, there's a lot of theft. New\l"
 	.string "students are often handed smaller\l"
 	.string "cases to solve as part of their\l"
 	.string "internship. But some also intern at the\l"
@@ -829,8 +829,8 @@ GalecrestCity_DetectiveAcademy_NPC4_Text_0:
 GalecrestCity_DetectiveAcademy_NPC5_Text_0:
 # 274 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "I'm going to join today! I'm so excited\n"
-	.string "to get my Charcadet and become an Ace\l"
-	.string "Rookie!$"
+	.string "to get my Charcadet and become an {COLOR GREEN}Ace\l"
+	.string "Rookie{COLOR DARK_GRAY}!$"
 
 GalecrestCity_DetectiveAcademy_NPC6_Text_0:
 # 281 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
@@ -855,7 +855,7 @@ GalecrestCity_DetectiveAcademy_NPC8_Text_1:
 GalecrestCity_DetectiveAcademy_NPC8_Text_2:
 # 299 "data//maps/GalecrestCity_DetectiveAcademy/scripts.pory"
 	.string "You may have beaten me, but I bet you\n"
-	.string "can't beat Kohla! He's the star of the\l"
+	.string "can't beat {COLOR GREEN}Kohla{COLOR DARK_GRAY}! He's the star of the\l"
 	.string "Academy!$"
 
 GalecrestCity_DetectiveAcademy_NPC9_Text_0:

@@ -204,7 +204,7 @@ script SilversunCity_Sewers_NPC4{
 
 //other man in middle
 script SilversunCity_Sewers_NPC5{
-    msgbox(format("All this toxic runoff gets filtered before entering the Hoya River. Then it goes south towards Pelluca City."), MSGBOX_NPC)
+    msgbox(format("All this toxic runoff gets filtered before entering the Hoya River. Then it goes south towards {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}."), MSGBOX_NPC)
     end
 }
 
@@ -281,7 +281,7 @@ script SilversunCity_Sewers_Market_A{
 
     lock
 	faceplayer
-	message(format("Can't beat Gloria? I'll hook you up with the best stuff."))
+	message(format("Can't beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}? I'll hook you up with the best stuff."))
 	waitmessage
 	pokemart(SilversunCity_Sewers_Market_A_Inventory)
 	msgbox(format("Stay a loser then!"), MSGBOX_DEFAULT)

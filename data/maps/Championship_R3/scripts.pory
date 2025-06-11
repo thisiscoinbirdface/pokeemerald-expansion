@@ -29,15 +29,15 @@ script Championship_R3{
     waitmovement(0)
     delay(16)
     
-    msgbox_delay("Announcer", format("Alright everyone, welcome back!\nThe tournament is heating up!\pWe're down to the eight best trainers in all of Cormoria now!\pLet's hear a huge cheer for the trainers! Show your support!\pAfter a conclusive round of 16 victory, Ace Rookie Kohla stands in the lead for..."))
+    msgbox_delay("Announcer", format("Alright everyone, welcome back!\nThe tournament is heating up!\pWe're down to the eight best trainers in all of Cormoria now!\pLet's hear a huge cheer for the trainers! Show your support!\pAfter a conclusive round of 16 victory, {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} {COLOR GREEN}Kohla{COLOR DARK_GRAY} stands in the lead for..."))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Berger", format("Just you wait and watch - Avalugg and I will crush the Ace Rookie!"))
+    msgbox_delay("Berger", format("Just you wait and watch - Avalugg and I will crush the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"))
 
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Berger", format("I can't believe I'm seeing you here of all places!\p...\pWho would've guessed back in Gastree City that you and I would follow the same path?\pAvalugg and I are strong - we're the strongest duo in all of Cormoria!"))
+    msgbox_delay("Berger", format("I can't believe I'm seeing you here of all places!\p...\pWho would've guessed back in {COLOR GREEN}Gastree City{COLOR DARK_GRAY} that you and I would follow the same path?\pAvalugg and I are strong - we're the strongest duo in all of Cormoria!"))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_C, format("Avalugg...how could we lose?"))
 

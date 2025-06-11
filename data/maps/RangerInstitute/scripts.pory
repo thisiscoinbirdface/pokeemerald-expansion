@@ -24,7 +24,7 @@ mapscripts RangerInstitute_MapScripts{}
     //spoken to Ivy River head, got the show pokemon mission
         //show three pokemon, increment var three times
 //8: second mission complete
-    //reward: ? + Associate (EV Editor in Ivy River)
+    //reward: ? + Associate (EV Editor in {COLOR BLUE}Ivy River{COLOR DARK_GRAY})
 //9: third mission
     //catch diancie - the new mega evolution
 //10: third mission complete
@@ -226,7 +226,7 @@ script RangerInstitute_1F_NPC3{
 script RangerInstitute_1F_NPC4{
     lockall
     faceplayer
-    msgbox(format("You heard about the Mega Sharpedo in the Hoya River, right?\pWe're tracking it on our scanners - it's headed to Pelluca City. I hope it doesn't cause any damage..."))
+    msgbox(format("You heard about the Mega Sharpedo in the Hoya River, right?\pWe're tracking it on our scanners - it's headed to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. I hope it doesn't cause any damage..."))
     releaseall
     end
 }
@@ -407,7 +407,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     release
     giveitem(ITEM_MACH_BIKE)
     giveitem(ITEM_RANGER_CARD)
-    msgbox_delay("Ravine", format("The Ranger Bike and Ranger Card - the two emblems of a Pokémon Ranger in Cormoria! The Ranger Bike will allow you to speedily traverse all of Cormoria, and the Ranger Card lets everyone know you're a proper Pokémon Ranger!\pYou can access the other Ranger Institutes with this.\pWe have a branch up north by the Ivy River, and down south by the sea near Rivetshore City."))
+    msgbox_delay("Ravine", format("The Ranger Bike and Ranger Card - the two emblems of a Pokémon Ranger in Cormoria! The Ranger Bike will allow you to speedily traverse all of Cormoria, and the Ranger Card lets everyone know you're a proper Pokémon Ranger!\pYou can access the other Ranger Institutes with this.\pWe have a branch up north by the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}, and down south by the sea near {COLOR RED}Rivetshore City{COLOR DARK_GRAY}."))
     release
     delay(32)     
     msgbox_delay("Ravine", format("{PLAYER}, do you know what we Pokémon Rangers are tasked with doing?\pNo?\pFollow me."))
@@ -420,7 +420,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     msgbox_delay("Ravine", format("But none of that for you just yet! You have to earn your stripes here. As a Ranger Recruit, you'll have to complete missions to advance your ranking."))
     release
     delay(24)
-    msgbox_delay("Ravine", format("Now, I have some important items that the Ranger Institute at Ivy River wants. Your first mission will be to deliver this to them!"))
+    msgbox_delay("Ravine", format("Now, I have some important items that the Ranger Institute at {COLOR BLUE}Ivy River{COLOR DARK_GRAY} wants. Your first mission will be to deliver this to them!"))
     release
     removeobject(LOCALID_PACKAGE)
     giveitem(ITEM_RANGER_PACKAGE)
@@ -428,7 +428,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     setflag(FLAG_RANGER_GOT_FIRST_MISSION)
     setvar(VAR_RANGER_INSTITUTE, 3)
     delay(16)
-    msgbox_delay("Ravine", format("If you complete this mission, you'll rank up from Recruit to Candidate.\pThe Ranger Institute at Ivy River is a little hard to find. You'll have to surf down from Winterlily Hollow and explore Lily Pond.\pGood training for a recruit, eh?"))
+    msgbox_delay("Ravine", format("If you complete this mission, you'll rank up from Recruit to Candidate.\pThe Ranger Institute at {COLOR BLUE}Ivy River{COLOR DARK_GRAY} is a little hard to find. You'll have to surf down from {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} and explore {COLOR BLUE}Lily Pond{COLOR DARK_GRAY}.\pGood training for a recruit, eh?"))
     releaseall
     end
 }

@@ -93,13 +93,13 @@ script MtCeram_Caves_Greta_Main{
     removeobject(LOCALID_SIZZ)
     removeobject(LOCALID_VEN)
     speakername("???")
-    msgbox(format("Thank you so much! I forgot my Pokémon at home and couldn't do anything! People at the Ceram Base Camp told me that the Sizzlipede and Venipede fight all the time...that's what I get for not taking them seriously!"))
+    msgbox(format("Thank you so much! I forgot my Pokémon at home and couldn't do anything! People at the {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY} told me that the Sizzlipede and Venipede fight all the time...that's what I get for not taking them seriously!"))
     speakername("Greta")
     msgbox(format("My name's Greta. I'm a traveling merchant.\pAre you a trainer?\nWhat's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
     release
     delay(16)
     speakername("Greta")
-    msgbox(format("I have some leftover stock that you might like. These gems came from Mt. Mirroh, on the other side of Cormoria!\pOnce per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
+    msgbox(format("I have some leftover stock that you might like. These gems came from {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}, on the other side of Cormoria!\pOnce per battle, a gem increases the power of its corresponding move type by a third. Take any one you like!"))
     release
     
     delay(24)

@@ -93,16 +93,16 @@ Route8_Casino_Board_Text_0:
 Route8_Trainer_A_Text_0:
 # 20 "data//maps/Route8/scripts.pory"
 	.string "Swimming here is much better than\n"
-	.string "swimming in Ivy River!$"
+	.string "swimming in {COLOR BLUE}Ivy River{COLOR DARK_GRAY}!$"
 
 Route8_Trainer_A_Text_1:
 # 20 "data//maps/Route8/scripts.pory"
-	.string "You're as bad as Ivy River!$"
+	.string "You're as bad as {COLOR BLUE}Ivy River{COLOR DARK_GRAY}!$"
 
 Route8_Trainer_A_Text_2:
 # 21 "data//maps/Route8/scripts.pory"
-	.string "I can't handle the currents of Ivy\n"
-	.string "River. I prefer a relaxed swim.$"
+	.string "I can't handle the currents of {COLOR BLUE}Ivy\n"
+	.string "River{COLOR DARK_GRAY}. I prefer a relaxed swim.$"
 
 Route8_Trainer_B_Text_0:
 # 27 "data//maps/Route8/scripts.pory"
@@ -116,7 +116,7 @@ Route8_Trainer_B_Text_1:
 Route8_Trainer_B_Text_2:
 # 28 "data//maps/Route8/scripts.pory"
 	.string "We aren't allowed to go out to sea from\n"
-	.string "Rivetshore City. This is the best we can\l"
+	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY}. This is the best we can\l"
 	.string "do.$"
 
 Route8_Trainer_C_Text_0:
@@ -153,7 +153,7 @@ Route8_Trainer_E_Text_0:
 
 Route8_NPC1_Text_0:
 # 59 "data//maps/Route8/scripts.pory"
-	.string "Leader Raazi in Rivetshore uses the\n"
+	.string "Leader {COLOR RED}Raazi{COLOR DARK_GRAY} in Rivetshore uses the\n"
 	.string "strongest items for his Pokémon!\p"
 	.string "I'm here to find some for mine too.$"
 
@@ -166,6 +166,6 @@ Route8_NPC2_Text_0:
 
 Route8_NPC3_Text_0:
 # 67 "data//maps/Route8/scripts.pory"
-	.string "Rivetshore City is just past this cave.\n"
+	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY} is just past this cave.\n"
 	.string "They built a barrier to prevent flooding\l"
 	.string "so you have to take the underpass.$"

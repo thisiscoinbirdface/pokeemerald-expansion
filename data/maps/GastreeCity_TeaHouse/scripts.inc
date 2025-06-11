@@ -287,7 +287,7 @@ GastreeCity_TeaHouse_EventScript_OldLady_Text_0:
 # 16 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "How are you doing, {PLAYER}? You\n"
 	.string "know, my brother runs a restaurant\l"
-	.string "further out west, in Pelluca City.\p"
+	.string "further out west, in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\p"
 	.string "You should visit sometime.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Text_0:

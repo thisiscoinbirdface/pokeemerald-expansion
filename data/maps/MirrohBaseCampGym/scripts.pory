@@ -77,14 +77,14 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRF, moves(jump_in_place_right))
         waitmovement(0)
         delay(16)
-        msgbox(format("B-but Carona, it's all over! All the other trainers are gone, all the gym puzzles are gone..."), MSGBOX_NPC)
+        msgbox(format("B-but {COLOR BLUE}Carona{COLOR DARK_GRAY}, it's all over! All the other trainers are gone, all the gym puzzles are gone..."), MSGBOX_NPC)
         release
         delay(16)
 
         applymovement(LOCALID_TRM, moves(jump_in_place_right))
         waitmovement(0)
         delay(16)
-        msgbox(format("Y-yeah...this gym was our home, Carona! What are we going to do without you?"), MSGBOX_NPC)
+        msgbox(format("Y-yeah...this gym was our home, {COLOR BLUE}Carona{COLOR DARK_GRAY}! What are we going to do without you?"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -152,7 +152,7 @@ script MirrohBaseCampGym_EventScript_Main{
         release
         delay(16)
 
-        msgbox(format("N-no...okay, Carona.\pWe're sorry."), MSGBOX_NPC)
+        msgbox(format("N-no...okay, {COLOR BLUE}Carona{COLOR DARK_GRAY}.\pWe're sorry."), MSGBOX_NPC)
         release
         delay(16)
 
@@ -166,7 +166,7 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRM, moves(jump_in_place_down))
         waitmovement(0)
         delay(16)
-        msgbox(format("Sniff...yeah. For Carona!"), MSGBOX_NPC)
+        msgbox(format("Sniff...yeah. For {COLOR BLUE}Carona{COLOR DARK_GRAY}!"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -174,7 +174,7 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRF, moves(face_right))
         waitmovement(0)
         delay(16)
-        msgbox(format("Okay, we're ready! We're going to show this last trainer how tough the Mirroh Base Camp Gym is!"), MSGBOX_NPC)
+        msgbox(format("Okay, we're ready! We're going to show this last trainer how tough the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym is!"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -195,7 +195,7 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRM, moves(face_down))
         applymovement(LOCALID_TRF, moves(face_down))
         delay(16)
-        msgbox(format("Come, trainer! You think you can challenge the Mirroh Base Camp Gym? Let's see what you've got!"), MSGBOX_NPC)
+        msgbox(format("Come, trainer! You think you can challenge the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym? Let's see what you've got!"), MSGBOX_NPC)
         release
         delay(16)        
 
@@ -226,7 +226,7 @@ script MirrohBaseCampGym_TrainerA{
     end
 }
 script MirrohBaseCampGym_TrainerB{
-    trainerbattle_single(TRAINER_MIRROHEXT_H ,format("Leader Carona taught me and my Pokémon to use our fists for maximum impact!\pYou're going down!"), format("This is our home!"))
+    trainerbattle_single(TRAINER_MIRROHEXT_H ,format("Leader {COLOR BLUE}Carona{COLOR DARK_GRAY} taught me and my Pokémon to use our fists for maximum impact!\pYou're going down!"), format("This is our home!"))
     msgbox(format("Sob...what a great last battle."))
     releaseall
     end
@@ -265,11 +265,11 @@ script MirrohBaseCampGym_Leader{
 
         //Intro
         speakername("Carona")
-        msgbox(format("Welcome to the Mirroh Base Camp Gym...\p...\p...is what I would say if there was a Gym left to welcome you to."))
+        msgbox(format("Welcome to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym...\p...\p...is what I would say if there was a Gym left to welcome you to."))
         release
         delay(16)
         speakername("Carona")
-        msgbox(format("My name is Carona. I am the former Leader of the Mirroh Base Camp Gym.\pYou see, the Pokémon League recently decomissioned this gym."))
+        msgbox(format("My name is {COLOR BLUE}Carona{COLOR DARK_GRAY}. I am the former Leader of the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym.\pYou see, the Pokémon League recently decomissioned this gym."))
         release
         delay(60)
         speakername("Carona")
@@ -329,7 +329,7 @@ script MirrohBaseCampGym_Leader{
 
         //Play gym badge fanfare
         setflag(FLAG_BADGE05_GET)
-        message(format("{PLAYER} received the Ironfist Badge from Carona."))
+        message(format("{PLAYER} received the Ironfist Badge from {COLOR BLUE}Carona{COLOR DARK_GRAY}."))
         call(Common_EventScript_PlayGymBadgeFanfare)
         speakername("Carona")
         msgbox(format("And you must accept this as well.\nThis is my last one!"))
@@ -360,7 +360,7 @@ script MirrohBaseCampGym_Red{
     if (flag(FLAG_BADGE06_GET)){
         msgbox(format("Well done champ-in-the-making! I would've given you something to commemorate your victory...but we're all packed up! Sorry!\pNow get on out there and find the next gym - I'll see you there!"), MSGBOX_NPC)
     } else { 
-        msgbox(format("Welcome to the Mirroh Base Camp Gym, trainer!\pUnfortunately, we've packed everything up, so I don't have any Fresh Water for you.\pCarona - the Gym Leader glaring at us - uses FIGHTING type Pokémon with strength and skill. Watch out for her Swagger confusing you! Lum Berries can help.\pAnd beware, she's got a hidden ace up her sleeve..."), MSGBOX_NPC)
+        msgbox(format("Welcome to the {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym, trainer!\pUnfortunately, we've packed everything up, so I don't have any Fresh Water for you.\pCarona - the Gym Leader glaring at us - uses FIGHTING type Pokémon with strength and skill. Watch out for her Swagger confusing you! Lum Berries can help.\pAnd beware, she's got a hidden ace up her sleeve..."), MSGBOX_NPC)
     }
     end
 }

@@ -1843,7 +1843,7 @@ UnchartedIsland_Finale_Cutscene_Text_2:
 
 UnchartedIsland_Finale_Cutscene_Text_3:
 # 81 "data//maps/UnchartedIsland/scripts.pory"
-	.string "The famous Ace Rookie and his\n"
+	.string "The famous {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} and his\n"
 	.string "Ceruledge...burned to dust!$"
 
 UnchartedIsland_Finale_Cutscene_Text_4:
@@ -1852,7 +1852,7 @@ UnchartedIsland_Finale_Cutscene_Text_4:
 
 UnchartedIsland_Finale_Cutscene_Text_5:
 # 119 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Isn't that Professor Tenebris?$"
+	.string "Isn't that {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}?$"
 
 UnchartedIsland_Finale_Cutscene_Text_6:
 # 124 "data//maps/UnchartedIsland/scripts.pory"
@@ -1891,7 +1891,7 @@ UnchartedIsland_Finale_Cutscene_Text_13:
 UnchartedIsland_Finale_Cutscene_Text_14:
 # 161 "data//maps/UnchartedIsland/scripts.pory"
 	.string "What you see is the truth, Tenebris.\p"
-	.string "I founded Team Somber!\p"
+	.string "I founded {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\p"
 	.string "I was the one spying on you from the\n"
 	.string "start! Easy enough, since I was right\l"
 	.string "under your nose. I studied all your\l"
@@ -1906,11 +1906,11 @@ UnchartedIsland_Finale_Cutscene_Text_15:
 	.string "I tricked the detectives into sending\n"
 	.string "an inexperienced idiot on the hunt for\l"
 	.string "the dreamstones! How easy it should\l"
-	.string "have been to stop you and Kohla!\p"
+	.string "have been to stop you and {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\p"
 	.string "But you - despite all odds - managed to\n"
-	.string "get in our way at Mt. Ceram.\p"
-	.string "Then I sent Kohla on a wild goose chase\n"
-	.string "at Silversun City! But you managed to\l"
+	.string "get in our way at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\p"
+	.string "Then I sent {COLOR GREEN}Kohla{COLOR DARK_GRAY} on a wild goose chase\n"
+	.string "at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}! But you managed to\l"
 	.string "take down our base without his help!$"
 
 UnchartedIsland_Finale_Cutscene_Text_16:
@@ -1925,8 +1925,8 @@ UnchartedIsland_Finale_Cutscene_Text_17:
 UnchartedIsland_Finale_Cutscene_Text_18:
 # 182 "data//maps/UnchartedIsland/scripts.pory"
 	.string "{PLAYER}, when you saw me at the\n"
-	.string "Master Ball Maker's house at the Mirroh\l"
-	.string "Base Camp, I feared you'd connect the\l"
+	.string "Master Ball Maker's house at the {COLOR BLUE}Mirroh\l"
+	.string "Base Camp{COLOR DARK_GRAY}, I feared you'd connect the\l"
 	.string "dots for a moment...but it looks like I\l"
 	.string "overestimated your cognitive abilities.\p"
 	.string "No...I did everything right.\p"
@@ -1934,7 +1934,7 @@ UnchartedIsland_Finale_Cutscene_Text_18:
 
 UnchartedIsland_Finale_Cutscene_Text_19:
 # 187 "data//maps/UnchartedIsland/scripts.pory"
-	.string "But why, Rue?$"
+	.string "But why, {COLOR BLUE}Rue{COLOR DARK_GRAY}?$"
 
 UnchartedIsland_Finale_Cutscene_Text_20:
 # 192 "data//maps/UnchartedIsland/scripts.pory"
@@ -1948,7 +1948,7 @@ UnchartedIsland_Finale_Cutscene_Text_20:
 	.string "People will need services of all kinds -\l"
 	.string "emergency services, repairs,\l"
 	.string "construction, delivery of\l"
-	.string "essentials...and Team Somber, with our\l"
+	.string "essentials...and {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, with our\l"
 	.string "army of strong Ancient Pokémon, can do\l"
 	.string "all of that!\p"
 	.string "For a fee, of course.$"
@@ -1991,11 +1991,11 @@ UnchartedIsland_Finale_Cutscene_Text_27:
 	.string "hand now?\p"
 	.string "I've beaten everyone - I've hoodwinked\n"
 	.string "the detectives, bypassed the gym\l"
-	.string "leaders and crushed the Ace Rookie.$"
+	.string "leaders and crushed the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.$"
 
 UnchartedIsland_Finale_Battle_Text_0:
 # 234 "data//maps/UnchartedIsland/scripts.pory"
-	.string "No, Rue.\p"
+	.string "No, {COLOR BLUE}Rue{COLOR DARK_GRAY}.\p"
 	.string "You haven't beaten us all.$"
 
 UnchartedIsland_Finale_Battle_Text_1:
@@ -2078,7 +2078,7 @@ UnchartedIsland_Breech_Text_0:
 	.string "to the ship!\p"
 	.string "...\p"
 	.string "You're just like you were back when I\n"
-	.string "met you in Fennilahl Town. The only\l"
+	.string "met you in {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}. The only\l"
 	.string "thing that changed is that you saved a\l"
 	.string "hiker back then and you're saving all of\l"
 	.string "Cormoria now.\p"
@@ -2122,8 +2122,8 @@ UnchartedIsland_Raazi_Text_0:
 UnchartedIsland_Grunt_A_Text_0:
 # 448 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The boss gave me new Pokémon just to\n"
-	.string "stop the Ace Rookie. You can't stop us -\l"
-	.string "wait, you're not the Ace Rookie!$"
+	.string "stop the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}. You can't stop us -\l"
+	.string "wait, you're not the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!$"
 
 UnchartedIsland_Grunt_A_Text_1:
 # 448 "data//maps/UnchartedIsland/scripts.pory"
@@ -2136,12 +2136,12 @@ UnchartedIsland_Grunt_A_Text_2:
 
 UnchartedIsland_Grunt_B_Text_0:
 # 453 "data//maps/UnchartedIsland/scripts.pory"
-	.string "They said the Ace Rookie was coming.\n"
+	.string "They said the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} was coming.\n"
 	.string "Why are you here instead?$"
 
 UnchartedIsland_Grunt_B_Text_1:
 # 453 "data//maps/UnchartedIsland/scripts.pory"
-	.string "I'd rather fight the Ace Rookie!$"
+	.string "I'd rather fight the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!$"
 
 UnchartedIsland_Grunt_B_Text_2:
 # 454 "data//maps/UnchartedIsland/scripts.pory"
@@ -2165,7 +2165,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_0:
 	.string "How many times has it been?\p"
 	.string "We received intel that you were off the\n"
 	.string "case, and we would only have to deal\l"
-	.string "with the Ace Rookie.\p"
+	.string "with the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\p"
 	.string "It was our mistake, I suppose, to\n"
 	.string "assume you wouldn't come any way.$"
 
@@ -2194,7 +2194,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_5:
 # 561 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The third and final dreamstone.\p"
 	.string "It took us a while to locate, but this is\n"
-	.string "where Professor Tenebris took her\l"
+	.string "where {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} took her\l"
 	.string "dreamstone and vanished.\p"
 	.string "This is where it all began...$"
 
@@ -2220,7 +2220,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_9:
 # 601 "data//maps/UnchartedIsland/scripts.pory"
 	.string "No matter - they can't beat the two of\n"
 	.string "us.\p"
-	.string "I'll take the Ace Rookie.\n"
+	.string "I'll take the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\n"
 	.string "You deal with {PLAYER}!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_10:
@@ -2230,15 +2230,15 @@ UnchartedIsland_Moxie_Melea_Fight_Text_10:
 UnchartedIsland_Moxie_Melea_Fight_Text_11:
 # 617 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hahaha! I can't believe it! You've been\n"
-	.string "thrown under the bus! The Ace Rookie\l"
+	.string "thrown under the bus! The {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}\l"
 	.string "just left you alone!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_12:
 # 623 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Hahaha! Now that settles it.\p"
 	.string "You're finished, {PLAYER}! Once we\n"
-	.string "deal with you, we'll go and stop the Ace\l"
-	.string "Rookie.\p"
+	.string "deal with you, we'll go and stop the {COLOR GREEN}Ace\l"
+	.string "Rookie{COLOR DARK_GRAY}.\p"
 	.string "Now that we control the dreamstone,\n"
 	.string "we've picked up some rare ancient\l"
 	.string "Pokémon of our own!\p"
@@ -2257,7 +2257,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_14:
 UnchartedIsland_Moxie_Melea_Fight_Text_15:
 # 638 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Calm down Moxie! I'm here.\p"
-	.string "Go now - go and stop Kohla.\n"
+	.string "Go now - go and stop {COLOR GREEN}Kohla{COLOR DARK_GRAY}.\n"
 	.string "I'll finish {PLAYER} off!$"
 
 UnchartedIsland_Moxie_Melea_Fight_Text_16:
@@ -2303,9 +2303,9 @@ UnchartedIsland_Tenebris_Text_2:
 
 UnchartedIsland_Tenebris_Text_3:
 # 747 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Yes, I'm Professor Tenebris.\p"
-	.string "I've been hiding in Ancient\n"
-	.string "Cormoria...but Team Somber found the\l"
+	.string "Yes, I'm {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
+	.string "I've been hiding in {COLOR RED}Ancient\n"
+	.string "Cormoria{COLOR DARK_GRAY}...but {COLOR BLUE}Team Somber{COLOR DARK_GRAY} found the\l"
 	.string "dreamstones any way, so my effort was,\l"
 	.string "it seems, wasted.$"
 
@@ -2314,21 +2314,21 @@ UnchartedIsland_Tenebris_Text_4:
 	.string "But you! I've been watching you.\n"
 	.string "I chose a good research assistant.\p"
 	.string "You've done your best to put an end to\n"
-	.string "Team Somber's plans.\p"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s plans.\p"
 	.string "It's commendable.\p"
 	.string "When I first discovered the\n"
 	.string "dreamstones, I began to suspect that I\l"
 	.string "was being spied on. That's why I took\l"
 	.string "the dreamstone and ran away with it. I\l"
 	.string "didn't know where to hide it so I came\l"
-	.string "here and jumped into Ancient Cormoria.\l"
+	.string "here and jumped into {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}.\l"
 	.string "I thought that would be enough to stop\l"
 	.string "whoever was spying on me, but clearly it\l"
 	.string "wasn't.\p"
-	.string "Someone from Team Somber had eyes on\n"
+	.string "Someone from {COLOR BLUE}Team Somber{COLOR DARK_GRAY} had eyes on\n"
 	.string "me and the dreamstone from the very\l"
 	.string "beginning!\p"
-	.string "And after my time in Ancient Cormoria, I\n"
+	.string "And after my time in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, I\n"
 	.string "know why.$"
 
 UnchartedIsland_Tenebris_Text_5:
@@ -2338,7 +2338,7 @@ UnchartedIsland_Tenebris_Text_5:
 UnchartedIsland_Tenebris_Text_6:
 # 755 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Of the many strong Pokémon that ruled\n"
-	.string "over Ancient Cormoria, the Ancient\l"
+	.string "over {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, the Ancient\l"
 	.string "Terror was the strongest! The most\l"
 	.string "vicious!\p"
 	.string "And the secret of its power?\p"
@@ -2358,13 +2358,13 @@ UnchartedIsland_Tenebris_Text_7:
 	.string "Pokémon. Even if I did, I'm not much\l"
 	.string "resistance.\p"
 	.string "I can't stop them, {PLAYER}. And I\n"
-	.string "fear neither can your Ace Rookie\l"
+	.string "fear neither can your {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}\l"
 	.string "friend.\p"
 	.string "...\p"
 	.string "Like I said, I've been watching you.\n"
-	.string "First at Mt. Ceram.\p"
-	.string "Then at Silversun City.\p"
-	.string "Again at Mt. Mirroh.\p"
+	.string "First at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.\p"
+	.string "Then at {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.\p"
+	.string "Again at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}.\p"
 	.string "...\p"
 	.string "I know nobody believes in you right now,\n"
 	.string "{PLAYER}.\p"
@@ -2380,7 +2380,7 @@ UnchartedIsland_Tenebris_Text_8:
 
 UnchartedIsland_Tenebris_Text_9:
 # 765 "data//maps/UnchartedIsland/scripts.pory"
-	.string "{PLAYER} - will you stop Team Somber?$"
+	.string "{PLAYER} - will you stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}?$"
 
 UnchartedIsland_Tenebris_Text_10:
 # 767 "data//maps/UnchartedIsland/scripts.pory"
@@ -2397,6 +2397,6 @@ UnchartedIsland_Tenebris_Text_12:
 UnchartedIsland_Tenebris_Text_13:
 # 773 "data//maps/UnchartedIsland/scripts.pory"
 	.string "You truly are a gem of a human being.\p"
-	.string "Now come! Let us enter Ancient Cormoria\n"
+	.string "Now come! Let us enter {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}\n"
 	.string "once more...and exit right where the\l"
 	.string "dreamstone is!$"

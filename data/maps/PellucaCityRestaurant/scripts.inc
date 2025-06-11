@@ -393,7 +393,7 @@ PellucaCityRestaurant_NPC1_Text_0:
 PellucaCityRestaurant_NPC2_Text_0:
 # 19 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Apparently they're closing down the\n"
-	.string "Mirroh Base Camp Gym. If I dont get the\l"
+	.string "{COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} Gym. If I dont get the\l"
 	.string "gym badge, how will I enter the Pokémon\l"
 	.string "Championship?$"
 
@@ -487,13 +487,13 @@ PellucaCityRestaurant_Cook3_Text_5:
 PellucaCityRestaurant_Cook3_Text_6:
 # 144 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Hmmm, it doesn't seem like you do. Come\n"
-	.string "back when you get it from the Mirroh\l"
-	.string "Base Camp!$"
+	.string "back when you get it from the {COLOR BLUE}Mirroh\l"
+	.string "Base Camp{COLOR DARK_GRAY}!$"
 
 PellucaCityRestaurant_Cook3_Text_7:
 # 148 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Come back when you get it from the\n"
-	.string "Mirroh Base Camp!$"
+	.string "{COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY}!$"
 
 PellucaCityRestaurant_Cook3_Text_8:
 # 158 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -511,8 +511,8 @@ PellucaCityRestaurant_Cook3_Text_9:
 # 162 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "I knew I could rely on you!\p"
 	.string "Some Nevermelt Ice will do the trick.\n"
-	.string "You can buy Nevermelt Ice at the Mirroh\l"
-	.string "Base Camp. Head northwest from here\l"
+	.string "You can buy Nevermelt Ice at the {COLOR BLUE}Mirroh\l"
+	.string "Base Camp{COLOR DARK_GRAY}. Head northwest from here\l"
 	.string "and use the cable car.\p"
 	.string "I'll be waiting here!$"
 
@@ -538,7 +538,7 @@ PellucaCityRestaurant_NPC_Trade_Text_0:
 
 PellucaCityRestaurant_NPC_Trade_Text_1:
 # 237 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "I've never been to Silversun City, but\n"
+	.string "I've never been to {COLOR BLUE}Silversun City{COLOR DARK_GRAY}, but\n"
 	.string "I've always wanted to go to catch a\l"
 	.string "Toxel. Now I'm too old to travel so far.$"
 

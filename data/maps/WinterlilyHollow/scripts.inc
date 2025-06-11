@@ -577,7 +577,7 @@ WinterlilyHollow_OnFrame_Text_2:
 	.string "peak, everyone had gone!\p"
 	.string "...\p"
 	.string "So that's what's been going on.\n"
-	.string "Poor Professor Tenebris.\p"
+	.string "Poor {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
 	.string "I heard about her disappearance on\n"
 	.string "the news just the other day.\p"
 	.string "News comes late here, since we're in\n"
@@ -593,7 +593,7 @@ WinterlilyHollow_OnFrame_Text_3:
 	.string "...\p"
 	.string "Oh, you're off the case? I understand.\n"
 	.string "You're too young to keep up with a big\l"
-	.string "criminal organisation like Team Somber.\p"
+	.string "criminal organisation like {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\p"
 	.string "It's time for the grown-ups to\n"
 	.string "take over, {PLAYER}.\p"
 	.string "What's wrong, young champ?\p"
@@ -617,19 +617,19 @@ WinterlilyHollow_NPC_Red_Text_0:
 
 WinterlilyHollow_NPC1_Text_0:
 # 81 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Winterlily Hollow is so remote that we\n"
+	.string "{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} is so remote that we\n"
 	.string "don't even get electricity!\p"
 	.string "Viniel's Pokémon powers this town.$"
 
 WinterlilyHollow_NPC1_Text_1:
 # 84 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Viniel is handling all those Team Somber\n"
+	.string "Viniel is handling all those {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\n"
 	.string "grunts alone?\p"
 	.string "He's so strong and cool!$"
 
 WinterlilyHollow_NPC2_Text_0:
 # 90 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Mom told me never to go into Ivy River!\n"
+	.string "Mom told me never to go into {COLOR BLUE}Ivy River{COLOR DARK_GRAY}!\n"
 	.string "She says kids my age go missing there.\l"
 	.string "So of course I'm gonna go!\p"
 	.string "...\p"
@@ -643,13 +643,13 @@ WinterlilyHollow_NPC2_Text_1:
 
 WinterlilyHollow_NPC3_Text_0:
 # 98 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Did you come from Ivy River or Mt.\n"
-	.string "Mirroh? Of course you didn't come from\l"
-	.string "Ivy River - nobody goes there.$"
+	.string "Did you come from {COLOR BLUE}Ivy River{COLOR DARK_GRAY} or {COLOR BLUE}Mt.\n"
+	.string "Mirroh{COLOR DARK_GRAY}? Of course you didn't come from\l"
+	.string "{COLOR BLUE}Ivy River{COLOR DARK_GRAY} - nobody goes there.$"
 
 WinterlilyHollow_NPC4_Text_0:
 # 106 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "A Team Somber grunt accosted me, so\n"
+	.string "A {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt accosted me, so\n"
 	.string "I taught the young fool a lesson!\p"
 	.string "After that, he threw away his Pokémon\n"
 	.string "saying it was too weak.$"
@@ -747,20 +747,20 @@ WinterlilyHollow_Sneasler_Text_0:
 
 WinterlilyHollow_NPC_SurfMan_Text_0:
 # 272 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "If you surf through Lily Pond,\n"
-	.string "you'll reach the Ivy River.\p"
+	.string "If you surf through {COLOR BLUE}Lily Pond{COLOR DARK_GRAY},\n"
+	.string "you'll reach the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.\p"
 	.string "Head down the river and you'll\n"
-	.string "eventually reach Pelluca City!$"
+	.string "eventually reach {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}!$"
 
 WinterlilyHollow_NPC_SurfMan_Text_1:
 # 280 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "Ivy River takes you straight down to\n"
-	.string "Pelluca City. Far better than trekking\l"
-	.string "down Mt. Mirroh!$"
+	.string "{COLOR BLUE}Ivy River{COLOR DARK_GRAY} takes you straight down to\n"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Far better than trekking\l"
+	.string "down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!$"
 
 WinterlilyHollow_NPC_SurfMan_Text_2:
 # 283 "data//maps/WinterlilyHollow/scripts.pory"
-	.string "I surfed up here through the Ivy River.\n"
+	.string "I surfed up here through the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}.\n"
 	.string "Since I'm settling here, I don't need\l"
 	.string "the HM any more. What I need instead is\l"
 	.string "a Heart Scale to decorate my room. I'd\l"

@@ -37,7 +37,7 @@ script Championship_R1{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Chara", format("Before we start, do you recognise me? We met on Route 3.\pThen again at Mt. Mirroh!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
+    msgbox_delay("Chara", format("Before we start, do you recognise me? We met on {COLOR BLUE}Route 3{COLOR DARK_GRAY}.\pThen again at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!\nI keep running into you.\pI've been all over Cormoria with my Altaria and grown a lot. I've become so much stronger than I was back then.\pMy sister's watching this match live on television. Now I can finally take revenge for her!"))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_A, format("So this is the Pokémon Championship..."))
 

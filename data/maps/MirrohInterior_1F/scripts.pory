@@ -86,7 +86,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_Exclamation{
     return
 }
 script MirrohInterior_1F_EventScript_NurseQuest_Main{
-    msgbox(format("I was taking these Chanseys up to Winterlily Hollow to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost!\pWe can't go through these caves alone - the Pokémon are too fierce.\pPlease find Chansey for us!"))
+    msgbox(format("I was taking these Chanseys up to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} to help the Nurse Joy there, but there was a cave-in and one of the Chanseys got lost!\pWe can't go through these caves alone - the Pokémon are too fierce.\pPlease find Chansey for us!"))
     release
 
     startquest(QUEST_MIRROH_NURSE_CHANSEY)
@@ -144,7 +144,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         delay(16)
         applymovement(LOCALID_NURSE, moves(walk_down face_right))        
         waitmovement(0)
-        msgbox(format("Thank you trainer! You saved Chansey!\pThis group of people calling themselves Team Somber caused these cave-ins!\pThey came in here with big machinery and collapsed parts of the cavern.\pThey seemed so scary!\nI hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
+        msgbox(format("Thank you trainer! You saved Chansey!\pThis group of people calling themselves {COLOR BLUE}Team Somber{COLOR DARK_GRAY} caused these cave-ins!\pThey came in here with big machinery and collapsed parts of the cavern.\pThey seemed so scary!\nI hope we don't run into them.\pWe're all in your debt, {PLAYER}. There's not much in the way of a reward that I can...oh?"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
@@ -159,7 +159,7 @@ script MirrohInterior_1F_EventScript_NurseQuest_End{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)
         delay(16)
-        msgbox(format("We should go to Winterlily Hollow now.\nThe nurse must be waiting for us.\pThank you again, {PLAYER} and we wish you all the best in your journey.\pDrop by the Pokémon Center any time!"))
+        msgbox(format("We should go to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} now.\nThe nurse must be waiting for us.\pThank you again, {PLAYER} and we wish you all the best in your journey.\pDrop by the Pokémon Center any time!"))
         release
 
         //fade
@@ -241,7 +241,7 @@ script MirrohInterior_1F_Trainer_D{
 
 //LASS (EXIT)
 script MirrohInterior_1F_Trainer_E{
-    trainerbattle_single(TRAINER_MIRROHINT_D, format("I can't get through to Winterlily Hollow from this side. It's so frustrating!"), format("You're also frustrating!"))
+    trainerbattle_single(TRAINER_MIRROHINT_D, format("I can't get through to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} from this side. It's so frustrating!"), format("You're also frustrating!"))
     msgbox(format("I mean why even build a tunnel then?"))
     releaseall
 }
@@ -264,13 +264,13 @@ script MirrohInterior_1F_Trainer_E{
 //NPCs
 //picknicker (entrance)
 script MirrohInterior_1F_NPC_A{
-    msgbox(format("I'm trekking to Winterlily Hollow! But my GRASS type Pokémon can't deal with all the ICE type Pokémon around here..."), MSGBOX_NPC)
+    msgbox(format("I'm trekking to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}! But my GRASS type Pokémon can't deal with all the ICE type Pokémon around here..."), MSGBOX_NPC)
     releaseall
     end
 }
 //Generic lady
 script MirrohInterior_1F_NPC_B{
-    msgbox(format("Winterlily Hollow is past the ledge above.\nBut how do I cross the ledge?"), MSGBOX_NPC)
+    msgbox(format("{COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} is past the ledge above.\nBut how do I cross the ledge?"), MSGBOX_NPC)
     end
 }
 //lass
@@ -377,7 +377,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Grunt B")
-    msgbox(format("Would you relax? I'm not Gabrielle - of course I moved everything! Caused some cave-ins, but that's not our problem!\pHaha!"))
+    msgbox(format("Would you relax? I'm not {COLOR RED}Gabrielle{COLOR DARK_GRAY} - of course I moved everything! Caused some cave-ins, but that's not our problem!\pHaha!"))
     release
     delay(24)   
 
@@ -408,7 +408,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)    
     speakername("Grunt B")
-    msgbox(format("Hey - aren't you that lab assistant who beat Melea back in Silversun City?"))    
+    msgbox(format("Hey - aren't you that lab assistant who beat Melea back in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}?"))    
     release
     delay(24)
 
@@ -417,7 +417,7 @@ script MirrohInterior_1F_SomberGrunts_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Grunt A")
-    msgbox(format("Yeah - the same one who beat Moxie up in Mt. Ceram too!\pThe bosses will want to know this.\nLet's go!"))           
+    msgbox(format("Yeah - the same one who beat Moxie up in {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} too!\pThe bosses will want to know this.\nLet's go!"))           
     release
 
     //exit

@@ -37,7 +37,7 @@ script Championship_R4{
     msgbox_delay("Announcer", format("Trainers - are you ready?"))
 
     applymovement(1, moves(jump_in_place_left))
-    msgbox_delay("Gabrielle", format("{PLAYER}, we've been through a lot, haven't we?\pNot all of it together.\nThe first time we teamed up was...\p...Yeah!\pIn Ancient Cormoria, when Moxie and the team abandoned me.\pIt feels like a lifetime ago...\p{PLAYER} - I'm a different person now.\pAfter leaving, Team Somber, I've grown so much and seen so much!\pIt's all because of you.\pNo matter who wins today, I'm glad we met, {PLAYER}."))
+    msgbox_delay("Gabrielle", format("{PLAYER}, we've been through a lot, haven't we?\pNot all of it together.\nThe first time we teamed up was...\p...Yeah!\pIn {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}, when Moxie and the team abandoned me.\pIt feels like a lifetime ago...\p{PLAYER} - I'm a different person now.\pAfter leaving, {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, I've grown so much and seen so much!\pIt's all because of you.\pNo matter who wins today, I'm glad we met, {PLAYER}."))
 
     trainerbattle_no_intro(TRAINER_CHAMPIONSHIP_D, format("You're amazing!"))
 

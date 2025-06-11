@@ -11,7 +11,7 @@ mapscripts FennilahlTown_MapScripts {
 }
 
 script FennilahlTown_EventScript_MartEmployeeRoadBlock {
-    msgbox(format("I'm the chauffeur for the detectives in charge of the Tenebris disappearance. They're in Carabrue Town right now speaking to the lab staff."), MSGBOX_NPC)
+    msgbox(format("I'm the chauffeur for the detectives in charge of the Tenebris disappearance. They're in {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} right now speaking to the lab staff."), MSGBOX_NPC)
     end
 }
 
@@ -52,7 +52,7 @@ script Fennilahl_Breech_StartQuest{
 
     if (var(VAR_RESULT) == 1){
         speakername("???")
-        msgbox(format("Amazing! You've answered my prayers.\nI saw the pink Pokémon run south, towards Route 2. I really liked that Strange Rock! Please bring it back."))
+        msgbox(format("Amazing! You've answered my prayers.\nI saw the pink Pokémon run south, towards {COLOR BLUE}Route 2{COLOR DARK_GRAY}. I really liked that Strange Rock! Please bring it back."))
         //activate quest
         startquest(QUEST_FENNILAHL_HIKER)
     } else {
@@ -103,7 +103,7 @@ script Fennilahl_Breech_QuestInProgress{
         delay(16)
 
         speakername("Breech")
-        msgbox(format("Thank you trainer! My name is Breech. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
+        msgbox(format("Thank you trainer! My name is {COLOR RED}Breech{COLOR DARK_GRAY}. I'm just a simple man who loves collecting rocks. Even with Clefairy by my side, I won't battle. Clefairy and I are heading off to explore the mountains now. See you again soon!"))
         release
 
         fadescreenswapbuffers(FADE_TO_BLACK)

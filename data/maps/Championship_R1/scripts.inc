@@ -211,8 +211,8 @@ Championship_R1_Text_4:
 Championship_R1_Text_5:
 # 40 "data//maps/Championship_R1/scripts.pory"
 	.string "Before we start, do you recognise me?\n"
-	.string "We met on Route 3.\p"
-	.string "Then again at Mt. Mirroh!\n"
+	.string "We met on {COLOR BLUE}Route 3{COLOR DARK_GRAY}.\p"
+	.string "Then again at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!\n"
 	.string "I keep running into you.\p"
 	.string "I've been all over Cormoria with my\n"
 	.string "Altaria and grown a lot. I've become so\l"

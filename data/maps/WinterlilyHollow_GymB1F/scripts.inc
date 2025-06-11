@@ -388,16 +388,16 @@ WinterlilyHollow_Gym_Trainer_A_Text_1:
 
 WinterlilyHollow_Gym_Trainer_A_Text_2:
 # 58 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Leader Viniel's Manectric overloads the\n"
+	.string "Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s Manectric overloads the\n"
 	.string "atmosphere with ions, creating electric\l"
 	.string "terrain here.$"
 
 WinterlilyHollow_Gym_Trainer_B_Text_0:
 # 65 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "This is a power plant that Viniel set up.\n"
+	.string "This is a power plant that {COLOR BLUE}Viniel{COLOR DARK_GRAY} set up.\n"
 	.string "While trainers come and go, us\l"
 	.string "Electricians work around the clock to\l"
-	.string "serve Winterlily Hollow!$"
+	.string "serve {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}!$"
 
 WinterlilyHollow_Gym_Trainer_B_Text_1:
 # 65 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -405,7 +405,7 @@ WinterlilyHollow_Gym_Trainer_B_Text_1:
 
 WinterlilyHollow_Gym_Trainer_C_Text_0:
 # 73 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Challenge Viniel? Pah!\n"
+	.string "Challenge {COLOR BLUE}Viniel{COLOR DARK_GRAY}? Pah!\n"
 	.string "My Pokémon are rarer than his!$"
 
 WinterlilyHollow_Gym_Trainer_C_Text_1:
@@ -415,7 +415,7 @@ WinterlilyHollow_Gym_Trainer_C_Text_1:
 WinterlilyHollow_Gym_Trainer_C_Text_2:
 # 74 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "I wanted to show my Qwilfish off to\n"
-	.string "Viniel, but I can't find the right\l"
+	.string "{COLOR BLUE}Viniel{COLOR DARK_GRAY}, but I can't find the right\l"
 	.string "switches!$"
 
 WinterlilyHollow_Gym_Trainer_D_Text_0:
@@ -466,19 +466,19 @@ WinterlilyHollow_Gym_Trainer_F_Text_1:
 
 WinterlilyHollow_Gym_Trainer_F_Text_2:
 # 109 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Leader Viniel's right up ahead.\n"
+	.string "Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s right up ahead.\n"
 	.string "He put me here to make sure weak\l"
 	.string "trainers don't disturb his Manectric.$"
 
 WinterlilyHollow_Gym_NPC1_Text_0:
 # 120 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "You opened the door to Viniel!\p"
+	.string "You opened the door to {COLOR BLUE}Viniel{COLOR DARK_GRAY}!\p"
 	.string "I'll only come once I figure the switch\n"
 	.string "order out on my own.$"
 
 WinterlilyHollow_Gym_NPC1_Text_1:
 # 122 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "This door takes you to Viniel, but I\n"
+	.string "This door takes you to {COLOR BLUE}Viniel{COLOR DARK_GRAY}, but I\n"
 	.string "don't know how to get here when it's\l"
 	.string "open.\p"
 	.string "At this rate, I'll never get my badge!\p"
@@ -516,13 +516,13 @@ WinterlilyHollowGym_LeaderBattle_Text_5:
 	.string "Excellent! I can hear your internal\n"
 	.string "battery crackling with energy.\p"
 	.string "Look around you, {PLAYER}. This power\n"
-	.string "plant is the lifeblood of Winterlily\l"
-	.string "Hollow. Gym Leaders aren't just strong\l"
+	.string "plant is the lifeblood of {COLOR GREEN}Winterlily\l"
+	.string "Hollow{COLOR DARK_GRAY}. Gym Leaders aren't just strong\l"
 	.string "trainers. We're here to do the best we\l"
 	.string "can for those who can't.\p"
 	.string "That's what makes us, us.\n"
 	.string "Hahaha!\p"
-	.string "Back with those Team Somber grunts,\n"
+	.string "Back with those {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts,\n"
 	.string "you showed me the same spirit.\p"
 	.string "And now, I want to see you to bring it\n"
 	.string "out again!$"
@@ -534,7 +534,7 @@ WinterlilyHollowGym_LeaderBattle_Text_6:
 WinterlilyHollowGym_LeaderBattle_Text_7:
 # 174 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
 	.string "{PLAYER} received the Spark Badge\n"
-	.string "from Viniel.$"
+	.string "from {COLOR BLUE}Viniel{COLOR DARK_GRAY}.$"
 
 WinterlilyHollowGym_LeaderBattle_Text_8:
 # 183 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
@@ -545,13 +545,13 @@ WinterlilyHollowGym_LeaderBattle_Text_9:
 	.string "Since you're off the case now, why don't\n"
 	.string "you take part in the Pokémon\l"
 	.string "Championship this year? You need two\l"
-	.string "more badges - but I warn you! Jania and\l"
-	.string "Raazi are the strongest Gym Leaders in\l"
+	.string "more badges - but I warn you! {COLOR BLUE}Jania{COLOR DARK_GRAY} and\l"
+	.string "{COLOR RED}Raazi{COLOR DARK_GRAY} are the strongest Gym Leaders in\l"
 	.string "all of Cormoria!\p"
 	.string "If you want to try, I suggest you head\n"
-	.string "back down to Pelluca City.\l"
+	.string "back down to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\l"
 	.string "You'll find the next gym there.\p"
-	.string "You can go down the Ivy River...\p"
+	.string "You can go down the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}...\p"
 	.string "...for which you'll need Surf!$"
 
 WinterlilyHollowGym_LeaderBattle_Text_10:
@@ -587,9 +587,9 @@ WinterlilyHollowGym_Red_Text_2:
 
 WinterlilyHollowGym_Red_Text_3:
 # 234 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "Welcome to the Winterlily Hollow gym!\n"
+	.string "Welcome to the {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} gym!\n"
 	.string "It's not a gym so much as a power plant.\l"
-	.string "The leader, Viniel, powers this town with\l"
+	.string "The leader, {COLOR BLUE}Viniel{COLOR DARK_GRAY}, powers this town with\l"
 	.string "his strong ELECTRIC-type Pokémon here\l"
 	.string "in this plant. First, hydrate yourself!$"
 

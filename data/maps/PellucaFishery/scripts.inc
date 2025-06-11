@@ -427,7 +427,7 @@ PellucaFishery_EventScript_MainDude_Text_12:
 	.string "The mayor sent you? Why are you even\n"
 	.string "listening to that blundering idiot?\p"
 	.string "He's totally useless! That's why I\n"
-	.string "decided to step in. Pelluca City is my\l"
+	.string "decided to step in. {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} is my\l"
 	.string "home - it's all our homes!\p"
 	.string "But if you say so, I'm willing to\n"
 	.string "consider talking to him again.$"

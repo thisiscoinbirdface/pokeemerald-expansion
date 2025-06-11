@@ -17,22 +17,22 @@ script MirrohBaseCamp_Houses_Historian{
         waitmovement(0)
         delay(16)
         speakername("Martha")
-        msgbox(format("I see...so this Team Somber wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
+        msgbox(format("I see...so this {COLOR BLUE}Team Somber{COLOR DARK_GRAY} wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
         release
         delay(30)
         speakername("Martha")
-        msgbox(format("You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the damaged fossilised remains of those Pokémon. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify different Pokémon.\p...\pBut there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pNo Pokémon we knew of could give us an answer. What kind of monstrous being could do something like that?"))
+        msgbox(format("You must have seen it yourself, {PLAYER}. To the best of our knowledge, {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the damaged fossilised remains of those Pokémon. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify different Pokémon.\p...\pBut there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pNo Pokémon we knew of could give us an answer. What kind of monstrous being could do something like that?"))
         release
         delay(30)
         speakername("Martha")
-        msgbox(format("For a while this mystery - the mystery of the Ancient Terror - remained unsolved. But then, deep inside Mt. Mirroh, we found an ancient cave painting depicting a beast that matched no fossil we had uncovered... although which Pokémon it is, we don't know as of today.\p...\pThere's still much to solve, {PLAYER}.\pIf I were to hazard a guess, this Team Somber outfit might be looking to do something with this Ancient Terror, although what exactly, I can't say."))
+        msgbox(format("For a while this mystery - the mystery of the Ancient Terror - remained unsolved. But then, deep inside {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}, we found an ancient cave painting depicting a beast that matched no fossil we had uncovered... although which Pokémon it is, we don't know as of today.\p...\pThere's still much to solve, {PLAYER}.\pIf I were to hazard a guess, this {COLOR BLUE}Team Somber{COLOR DARK_GRAY} outfit might be looking to do something with this Ancient Terror, although what exactly, I can't say."))
         release
         delay(16)
         speakername("Martha")
         applymovement(1, moves(emote_exclamation_mark))
         waitmovement(0)
         speakername("Martha")
-        msgbox(format("Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this information helps you in your journey.\pYou should go to Mt. Mirroh and see the cave painting for yourself.\pHere - take this and give it to the Greavard playing outside. It'll distract them. Hopefully they'll come home.")) 
+        msgbox(format("Oh my! Would you look at the time? I've rambled on for too long. Apologies, {PLAYER}. I hope this information helps you in your journey.\pYou should go to {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} and see the cave painting for yourself.\pHere - take this and give it to the Greavard playing outside. It'll distract them. Hopefully they'll come home.")) 
         release
         giveitem(ITEM_RARE_BONE)
         speakername("Martha")
@@ -97,12 +97,12 @@ script MirrohBaseCamp_Houses_MasterballGuy{
     }
 
     if (var(VAR_MASTERBALL_QUEST) == 0){
-        msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
+        msgbox(format("A friend of {COLOR BLUE}Rue{COLOR DARK_GRAY}'s?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! {COLOR BLUE}Rue{COLOR DARK_GRAY} and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
         setvar(VAR_0x8006, ITEM_MASTER_BALL)
         showitemdescription
         msgbox(format("A few years ago, I finally perfected my opus magnum - the Master Ball!\pLooks beautiful, doesn't it?"), MSGBOX_NPC)
         hideitemdescription
-        msgbox(format("Since you're Rue's assistant and he's an old friend, how about I do you a favour?\pI can make you one...if you get me the right crafting components!\pLet's see...I'll need...\p...one Apple Pie...\p...one Lava Cookie...\p...and one Mirroh Cone!"))
+        msgbox(format("Since you're {COLOR BLUE}Rue{COLOR DARK_GRAY}'s assistant and he's an old friend, how about I do you a favour?\pI can make you one...if you get me the right crafting components!\pLet's see...I'll need...\p...one Apple Pie...\p...one Lava Cookie...\p...and one Mirroh Cone!"))
         release
         delay(16)
         applymovement(2, moves(emote_exclamation_mark))

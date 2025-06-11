@@ -801,7 +801,7 @@ SSElegant_Raazi_Text_1:
 	.string "Astonishing that they allowed someone\n"
 	.string "with no experience to handle such an\l"
 	.string "important case. Assistant Professor\l"
-	.string "Rue's fault, really.\p"
+	.string "{COLOR BLUE}Rue{COLOR DARK_GRAY}'s fault, really.\p"
 	.string "But that's all in the past, isn't it?\n"
 	.string "You're off the case now and looking to\l"
 	.string "get your eight and last badge.$"
@@ -819,8 +819,8 @@ SSElegant_Raazi_Text_3:
 
 SSElegant_Raazi_Text_4:
 # 70 "data//maps/SSElegant/scripts.pory"
-	.string "I am Raazi, the Gym Leader of\n"
-	.string "Rivetshore City and the strongest\l"
+	.string "I am {COLOR RED}Raazi{COLOR DARK_GRAY}, the Gym Leader of\n"
+	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY} and the strongest\l"
 	.string "Leader in all of Cormoria!\p"
 	.string "The quarry has forged my heart into\n"
 	.string "steel and my fists into granite.\p"
@@ -844,7 +844,7 @@ SSElegant_Raazi_Text_7:
 SSElegant_Raazi_Text_8:
 # 88 "data//maps/SSElegant/scripts.pory"
 	.string "{PLAYER} received the Granite Badge\n"
-	.string "from Raazi.$"
+	.string "from {COLOR RED}Raazi{COLOR DARK_GRAY}.$"
 
 SSElegant_Raazi_Text_9:
 # 94 "data//maps/SSElegant/scripts.pory"
@@ -916,11 +916,11 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_4:
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_5:
 # 181 "data//maps/SSElegant/scripts.pory"
 	.string "It's you! The hiker with the Clefairy\n"
-	.string "near Fennilahl Town!$"
+	.string "near {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_6:
 # 186 "data//maps/SSElegant/scripts.pory"
-	.string "You're the Team Somber grunt! You tried\n"
+	.string "You're the {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt! You tried\n"
 	.string "to take Clefable's everstone!$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_7:
@@ -935,7 +935,7 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_7:
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_8:
 # 192 "data//maps/SSElegant/scripts.pory"
 	.string "Why are you helping {PLAYER}? Are you\n"
-	.string "still part of Team Somber?$"
+	.string "still part of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}?$"
 
 SSElegant_Gab_Breech_TeamUp_Trigger_Text_9:
 # 193 "data//maps/SSElegant/scripts.pory"
@@ -1013,7 +1013,7 @@ SSElegant_Jania_Text_2:
 
 SSElegant_Inger_Text_0:
 # 298 "data//maps/SSElegant/scripts.pory"
-	.string "Alright, c'mon Ariana! This time I won't\n"
+	.string "Alright, c'mon {COLOR RED}Ariana{COLOR DARK_GRAY}! This time I won't\n"
 	.string "lose to you!\p"
 	.string "Hey, {PLAYER}! I didn't know you were\n"
 	.string "on the cruise.$"
@@ -1024,8 +1024,8 @@ SSElegant_Inger_Text_1:
 
 SSElegant_Inger_Text_2:
 # 299 "data//maps/SSElegant/scripts.pory"
-	.string "We're training to take down Team\n"
-	.string "Somber! Yaaah!$"
+	.string "We're training to take down {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY}! Yaaah!$"
 
 SSElegant_Minior_Text_0:
 # 305 "data//maps/SSElegant/scripts.pory"
@@ -1073,6 +1073,6 @@ SSElegant_NPC3_Text_0:
 
 SSElegant_NPC4_Text_0:
 # 339 "data//maps/SSElegant/scripts.pory"
-	.string "The S.S. Elegant stops at Victory Cape.\n"
+	.string "The S.S. Elegant stops at {COLOR RED}Victory Cape{COLOR DARK_GRAY}.\n"
 	.string "That's where this year's Pokémon\l"
 	.string "Championships will be!$"

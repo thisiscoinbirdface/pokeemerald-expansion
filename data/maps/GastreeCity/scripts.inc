@@ -1081,9 +1081,9 @@ GastreeCity_EventScript_KohlaBattle_Trigger_Text_1:
 
 GastreeCity_NPC1_Text_0:
 # 97 "data//maps/GastreeCity/scripts.pory"
-	.string "You came all the way from Carabrue\n"
-	.string "Town? Woah! Then I bet you don't know -\l"
-	.string "you have to be careful on Route 4!\l"
+	.string "You came all the way from {COLOR GREEN}Carabrue\n"
+	.string "Town{COLOR DARK_GRAY}? Woah! Then I bet you don't know -\l"
+	.string "you have to be careful on {COLOR BLUE}Route 4{COLOR DARK_GRAY}!\l"
 	.string "There's a dangerous Dewpider that\l"
 	.string "attacks people.$"
 
@@ -1113,9 +1113,9 @@ GastreeCity_Mankey_Text_0:
 
 GastreeCity_NPC6_Text_0:
 # 125 "data//maps/GastreeCity/scripts.pory"
-	.string "Gastree City is famous not just for\n"
-	.string "being a connecting Route to Mt. Ceram\l"
-	.string "Base Camp, but also for its scenic\l"
+	.string "{COLOR GREEN}Gastree City{COLOR DARK_GRAY} is famous not just for\n"
+	.string "being a connecting Route to Mt. {COLOR RED}Ceram\l"
+	.string "Base Camp{COLOR DARK_GRAY}, but also for its scenic\l"
 	.string "viewpoints and its teahouse!$"
 
 GastreeCity_NPC7_Text_0:
@@ -1222,14 +1222,14 @@ GastreeCity_Shard_Trigger_Text_12:
 GastreeCity_Shard_CantLeave_Trigger_Text_0:
 # 283 "data//maps/GastreeCity/scripts.pory"
 	.string "I should use the Rare Shard Leader\n"
-	.string "Inger gave me!$"
+	.string "{COLOR RED}Inger{COLOR DARK_GRAY} gave me!$"
 
 GastreeCity_NPC8_Text_0:
 # 298 "data//maps/GastreeCity/scripts.pory"
 	.string "Hiiiiyah!\p"
 	.string "I'm trying to teach my Bergmite some\n"
 	.string "new moves so that we can go and\l"
-	.string "explore Route 4 together!\p"
+	.string "explore {COLOR BLUE}Route 4{COLOR DARK_GRAY} together!\p"
 	.string "C'mon Bergmite! C'mon!!$"
 
 GastreeCity_NPC8_Text_1:
@@ -1373,8 +1373,8 @@ GastreeCity_KohlaPostBattle::
 # 89 "data//maps/GastreeCity/scripts.pory"
 	.string "You may have won, but I'll get the\n"
 	.string "dreamstone first! I heard that some\l"
-	.string "group called Team Somber is also after\l"
+	.string "group called {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is also after\l"
 	.string "the dreamstone. I'm going to head north\l"
-	.string "towards the Ceram Base Camp. Don't come\l"
+	.string "towards the {COLOR RED}Ceram Base Camp{COLOR DARK_GRAY}. Don't come\l"
 	.string "after me - I don't need your help.\p"
 	.string "Over and out, chum!$"

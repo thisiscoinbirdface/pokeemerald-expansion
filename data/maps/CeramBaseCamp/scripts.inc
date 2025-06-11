@@ -538,12 +538,12 @@ CeramBaseCamp_EventScript_ExitTrigger_Text_0:
 # 35 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "Hey kid! The rules are you can't climb\n"
 	.string "unless you have the Cinder Badge. If\l"
-	.string "you can't beat Ariana, you won't be able\l"
+	.string "you can't beat {COLOR RED}Ariana{COLOR DARK_GRAY}, you won't be able\l"
 	.string "to handle the heat of the mountain!$"
 
 CeramBaseCamp_NPC_Exit_Text_0:
 # 43 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "Mt. Ceram is dangerous because once\n"
+	.string "{COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is dangerous because once\n"
 	.string "you enter you can't come back. For\l"
 	.string "safety reasons, we don't allow trainers\l"
 	.string "without at least two gym badges to\l"
@@ -568,7 +568,7 @@ CeramBaseCamp_NPC3_Text_0:
 # 62 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "We get many hikers and collectors pass\n"
 	.string "through the base camp, because they\l"
-	.string "want to climb Mt. Ceram.$"
+	.string "want to climb {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.$"
 
 CeramBaseCamp_Cyndaquil_Quest_Done_Text_0:
 # 81 "data//maps/CeramBaseCamp/scripts.pory"
@@ -585,7 +585,7 @@ CeramBaseCamp_Cyndaquil_StartQuest_Text_1:
 
 CeramBaseCamp_Cyndaquil_StartQuest_Text_2:
 # 99 "data//maps/CeramBaseCamp/scripts.pory"
-	.string "We battled Ariana and Cyndaquil's FIRE\n"
+	.string "We battled {COLOR RED}Ariana{COLOR DARK_GRAY} and Cyndaquil's FIRE\n"
 	.string "moves did nothing! Since then we've\l"
 	.string "been trying to learn some other moves\l"
 	.string "but it's just not working...say, would\l"
@@ -667,7 +667,7 @@ CeramBaseCamp_Cyndaquil_Reward_End_Text_1:
 # 190 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "You're saying Acid Spray is a weak move\n"
 	.string "anyway and WATER or GROUND type moves\l"
-	.string "are better against Ariana?\n"
+	.string "are better against {COLOR RED}Ariana{COLOR DARK_GRAY}?\n"
 	.string "So we were on the wrong track from the\l"
 	.string "beginning!\p"
 	.string "Argh!\p"
@@ -690,7 +690,7 @@ CeramBaseCamp_NPC5_Text_0:
 CeramBaseCamp_NPC5_Text_1:
 # 223 "data//maps/CeramBaseCamp/scripts.pory"
 	.string "I found these weird trinkets when I\n"
-	.string "went up Mt. Ceram.$"
+	.string "went up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}.$"
 
 CeramBaseCamp_Dude_Reward_Text_0:
 # 230 "data//maps/CeramBaseCamp/scripts.pory"

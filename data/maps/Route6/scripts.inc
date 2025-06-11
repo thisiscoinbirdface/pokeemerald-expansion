@@ -920,7 +920,7 @@ Route6_Nurse_Demo_Text_0:
 Route6_EventScript_Nurse_Text_0:
 # 36 "data//maps/Route6/scripts.pory"
 	.string "Eek! The bugs! The humidity! I can't\n"
-	.string "wait to get back to Pelluca City. These\l"
+	.string "wait to get back to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. These\l"
 	.string "Heal Pass assignments are the worst!\p"
 	.string "If you have a Heal Pass, Chansey can\n"
 	.string "heal your Pokémon meanwhile.$"
@@ -967,10 +967,10 @@ Route6_Trainer_A_Text_2:
 
 Route6_Trainer_B_Text_0:
 # 106 "data//maps/Route6/scripts.pory"
-	.string "I was in Silversun City to catch a\n"
+	.string "I was in {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to catch a\n"
 	.string "Qwilfish. Now I can join the Qwilsquad!\p"
 	.string "What - never heard of 'em? Come to\n"
-	.string "Pelluca City and you'll find out!$"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY} and you'll find out!$"
 
 Route6_Trainer_B_Text_1:
 # 106 "data//maps/Route6/scripts.pory"
@@ -1068,7 +1068,7 @@ Route6_Trainer_G_Text_1:
 Route6_Trainer_G_Text_2:
 # 149 "data//maps/Route6/scripts.pory"
 	.string "Dog Pokémon are rare in Cormoria!\n"
-	.string "Someone in Pelluca City traded me my\l"
+	.string "Someone in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} traded me my\l"
 	.string "Houndoor.$"
 
 Route6_Trainer_H_Text_0:
@@ -1089,7 +1089,7 @@ Route6_Trainer_H_Text_2:
 Route6_Trainer_I_Text_0:
 # 162 "data//maps/Route6/scripts.pory"
 	.string "I heard there was a rare DRAGON-type\n"
-	.string "Pokémon here in Route 6, but I can't\l"
+	.string "Pokémon here in {COLOR BLUE}Route 6{COLOR DARK_GRAY}, but I can't\l"
 	.string "find any on land!$"
 
 Route6_Trainer_I_Text_1:
@@ -1118,8 +1118,8 @@ Route6_Trainer_J_Text_2:
 
 Route6_Trainer_K_Text_0:
 # 176 "data//maps/Route6/scripts.pory"
-	.string "Past Pelluca City is the Mirroh Base\n"
-	.string "Camp and a Pokémon graveyard. I want to\l"
+	.string "Past {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} is the {COLOR BLUE}Mirroh Base\n"
+	.string "Camp{COLOR DARK_GRAY} and a Pokémon graveyard. I want to\l"
 	.string "go there to commune with the afterlife!$"
 
 Route6_Trainer_K_Text_1:
@@ -1135,8 +1135,8 @@ Route6_NPC1_Text_0:
 # 210 "data//maps/Route6/scripts.pory"
 	.string "When I was young, there was no route\n"
 	.string "through these marshes.\p"
-	.string "Now Route 6 connects Silversun City to\n"
-	.string "Pelluca City.$"
+	.string "Now {COLOR BLUE}Route 6{COLOR DARK_GRAY} connects {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to\n"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.$"
 
 Route6_NPC2_Text_0:
 # 218 "data//maps/Route6/scripts.pory"
@@ -1215,7 +1215,7 @@ Route6_Gabrielle_Main_Text_0:
 
 Route6_Gabrielle_Main_Text_1:
 # 330 "data//maps/Route6/scripts.pory"
-	.string "C'mon Gabrielle - you've got nowhere to\n"
+	.string "C'mon {COLOR RED}Gabrielle{COLOR DARK_GRAY} - you've got nowhere to\n"
 	.string "run. Now give us your Pokémon!$"
 
 Route6_Gabrielle_Main_Text_2:
@@ -1229,7 +1229,7 @@ Route6_Gabrielle_Main_Text_3:
 
 Route6_Gabrielle_Main_Text_4:
 # 334 "data//maps/Route6/scripts.pory"
-	.string "They're property of Team Somber, and\n"
+	.string "They're property of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}, and\n"
 	.string "now that you're out, it's only fair that\l"
 	.string "you return them.\p"
 	.string "Hehe...we've always been eyeing your\n"
@@ -1288,11 +1288,11 @@ Route6_Gabrielle_Victory_Text_1:
 
 Route6_Gabrielle_Victory_Text_2:
 # 419 "data//maps/Route6/scripts.pory"
-	.string "I live in Pelluca City, just past the\n"
+	.string "I live in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}, just past the\n"
 	.string "Hoya River. I was on my way home when\l"
 	.string "those grunts ambushed me...\p"
 	.string "It's not fair! I've already been kicked\n"
-	.string "out of Team Somber.\p"
+	.string "out of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\p"
 	.string "I wish they'd just leave me alone!\p"
 	.string "I'm going back home now.\n"
 	.string "See you around.$"

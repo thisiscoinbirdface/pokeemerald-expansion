@@ -76,14 +76,14 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     delay(8)
     speakername("???")
-    msgbox(format("Get out of my face, leader! We have business that concerns you not one bit. We're going to take his supplies for our trek up Mt. Ceram!"))
+    msgbox(format("Get out of my face, leader! We have business that concerns you not one bit. We're going to take his supplies for our trek up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!"))
     release
     applymovement(LOCALID_LEADER, moves(jump_in_place_up))
     waitmovement(0)
     delay(8)
 
     speakername("Ariana")
-    msgbox(format("The name's Ariana! And no way! This is MY base camp! You're not harrassing anyone while I'm around!"))
+    msgbox(format("The name's {COLOR RED}Ariana{COLOR DARK_GRAY}! And no way! This is MY base camp! You're not harrassing anyone while I'm around!"))
     release
     delay(8)
     speakername("???")
@@ -114,7 +114,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     delay(16)
     speakername("Gabrielle")
-    msgbox(format("Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
+    msgbox(format("Boss! Boss! This is the kid that beat me in {COLOR BLUE}Route 3{COLOR DARK_GRAY}. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)
@@ -128,7 +128,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     delay(8)
     speakername("???")
-    msgbox(format("But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    msgbox(format("But there is a dreamstone sitting right on top of {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
     release        
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
@@ -197,7 +197,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     speakername("Ariana")
     msgbox(format("They didn't harm you right?"))
     speakername("Shopkeeper")
-    msgbox(format("No they didn't. Thank you Ariana! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    msgbox(format("No they didn't. Thank you {COLOR RED}Ariana{COLOR DARK_GRAY}! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
     release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
     waitmovement(0)
@@ -207,13 +207,13 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(face_right))
     waitmovement(0)
     speakername("Ariana") 
-    msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
+    msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}? What's up there?\pDreamstones? I thought those were just rumours."))
     speakername("Ariana") 
-    msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris gave me my Tauros!"))
+    msgbox(format("They're connected to {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}' disappearance? \pI gotta do something - {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} gave me my Tauros!"))
     speakername("Ariana") 
     msgbox(format("Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
     speakername("Ariana") 
-    msgbox(format("{PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\pSee you around, {PLAYER}!"))
+    msgbox(format("{PLAYER}, was it? {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\pSee you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -239,8 +239,8 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This Supply Depot is under Team Somber's control!"), format("Gah! I lost!"))
-    msgbox(format("We're here to collect supplies for the climb up Mt. Ceram!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This Supply Depot is under {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s control!"), format("Gah! I lost!"))
+    msgbox(format("We're here to collect supplies for the climb up {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!"))
     release
     end
 }
@@ -316,10 +316,10 @@ mart CeramBaseCamp_Main_Pokemart_Inventory{
 script CeramBaseCamp_Main_NPC1{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("Centiskorch and Scolipede are fiercely territorial. They keep fighting each other in Mt. Ceram."), MSGBOX_NPC)
+        msgbox(format("Centiskorch and Scolipede are fiercely territorial. They keep fighting each other in {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."), MSGBOX_NPC)
+        msgbox(format("Who are these {COLOR BLUE}Team Somber{COLOR DARK_GRAY} people? They act all high and mighty, but they're really just harrassing innocent folk."), MSGBOX_NPC)
     }
     end
 }
@@ -356,7 +356,7 @@ script CeramBaseCamp_Main_NPC3{
             //Regular case
     } else {
         //When Team Somber is there
-        msgbox(format("These thugs took the shopkeeper upstairs! But Ariana, the Gym Leader, just went up there to get him back. She's going to teach them a lesson!"), MSGBOX_NPC)
+        msgbox(format("These thugs took the shopkeeper upstairs! But {COLOR RED}Ariana{COLOR DARK_GRAY}, the Gym Leader, just went up there to get him back. She's going to teach them a lesson!"), MSGBOX_NPC)
     }
 
     end
@@ -385,7 +385,7 @@ script CeramBaseCamp_Main_NPC5{
         lockall
         faceplayer
         showmonpic(SPECIES_PETILIL, 1, 3)
-        msgbox(format("I want to gift my sister a Petilil. It's her favourite Pokémon! But I couldn't find any on Route 4."))
+        msgbox(format("I want to gift my sister a Petilil. It's her favourite Pokémon! But I couldn't find any on {COLOR BLUE}Route 4{COLOR DARK_GRAY}."))
         release
         hidemonpic
         delay(24)
@@ -440,7 +440,7 @@ script CeramBaseCamp_Main_NPC5{
         }
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)
+        msgbox(format("I can't wait for {COLOR RED}Ariana{COLOR DARK_GRAY} to put these crooks in their place!"), MSGBOX_NPC)
     }
 
     end
@@ -477,10 +477,10 @@ script CeramBaseCamp_Main_NPC5{
 script CeramBaseCamp_Main_NPC6{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native Centiskorch and Scolipede fight each other."), MSGBOX_NPC)
+        msgbox(format("On the other side of {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} is {COLOR BLUE}Silversun City{COLOR DARK_GRAY}. I hear the trek down from the summit is tough, because the native Centiskorch and Scolipede fight each other."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)
+        msgbox(format("I can't wait for {COLOR RED}Ariana{COLOR DARK_GRAY} to put these crooks in their place!"), MSGBOX_NPC)
     }
     end
 }

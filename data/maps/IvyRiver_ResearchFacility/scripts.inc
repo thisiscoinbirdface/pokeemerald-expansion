@@ -635,8 +635,8 @@ IvyRiver_Ranger_TaurosTrigger_Movement_2:
 IvyRiver_Ranger_FirstQuest_Text_0:
 # 31 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "Hmm? A Recruit?\p"
-	.string "Then I must welcome you to the Ivy\n"
-	.string "River Ranger Institute!\p"
+	.string "Then I must welcome you to the {COLOR BLUE}Ivy\n"
+	.string "River{COLOR DARK_GRAY} Ranger Institute!\p"
 	.string "We're a tad remote, but we've made this\n"
 	.string "place our home...and yours too!\p"
 	.string "...$"
@@ -655,7 +655,7 @@ IvyRiver_Ranger_FirstQuest_Text_3:
 	.string "Ahh, yes, yes. The supplies have\n"
 	.string "arrived! Excellent!\p"
 	.string "Exciting stuff.\p"
-	.string "You see, {PLAYER}, the Ivy River\n"
+	.string "You see, {PLAYER}, the {COLOR BLUE}Ivy River{COLOR DARK_GRAY}\n"
 	.string "Ranger Institute studies Pokémon mega\l"
 	.string "evolutions. To maintain a robust\l"
 	.string "Pokémon ecosystem, we need to know as\l"
@@ -763,9 +763,9 @@ IvyRiver_Ranger_TaurosTrigger_Text_1:
 	.string "See this here Tauros? This is my baby\n"
 	.string "right here - raised him all by myself, I\l"
 	.string "did! This one's been trained specially\l"
-	.string "to take Rangers up and down Mt. Mirroh\l"
+	.string "to take Rangers up and down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}\l"
 	.string "in a flash! You can head straight to\l"
-	.string "Pelluca City or even to the Route 6 HQ\l"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY} or even to the {COLOR BLUE}Route 6{COLOR DARK_GRAY} HQ\l"
 	.string "if you like! All Candidates can use it.$"
 
 IvyRiver_Ranger_TaurosBreeder_Text_0:
@@ -775,7 +775,7 @@ IvyRiver_Ranger_TaurosBreeder_Text_0:
 IvyRiver_Ranger_TaurosBreeder_Text_1:
 # 182 "data//maps/IvyRiver_ResearchFacility/scripts.pory"
 	.string "This here Tauros is my baby! It can take\n"
-	.string "you up and down Mt. Mirroh...oh, you\l"
+	.string "you up and down {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}...oh, you\l"
 	.string "aren't a Ranger Candidate yet?\p"
 	.string "Sorry, only Ranger Candidates are\n"
 	.string "allowed to ride the Tauros.$"
@@ -803,7 +803,7 @@ IvyRiver_Ranger_Scientist_A_Text_2:
 	.string "I'm studying whether those spores may\n"
 	.string "be connected to mega evolution\l"
 	.string "somehow. But since we're so far away\l"
-	.string "from Vilethorn Woods, it's hard to\l"
+	.string "from {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}, it's hard to\l"
 	.string "conduct experiments.$"
 
 IvyRiver_Ranger_Scientist_A_Text_3:

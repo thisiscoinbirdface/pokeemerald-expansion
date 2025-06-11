@@ -3,8 +3,8 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!\pWho's the Kinger?\pInger the King, of course!"), "Okay, go disturb the Kinger!")
-    msgbox(format("The Kinger is what everyone should aspire to be like!"))
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the {COLOR RED}Inger{COLOR DARK_GRAY} while he's training!\pWho's the {COLOR RED}Inger{COLOR DARK_GRAY}?\pInger the King, of course!"), "Okay, go disturb the {COLOR RED}Inger{COLOR DARK_GRAY}!")
+    msgbox(format("The {COLOR RED}Inger{COLOR DARK_GRAY} is what everyone should aspire to be like!"))
     release
     end
 
@@ -21,7 +21,7 @@ script GastreeGym_TrainerBattle_Jaco {
 
 script GastreeGym_LeaderBattle {
     if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
+        msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} back for us all!"), MSGBOX_NPC)
     } else { //else do the battle
         // special(SaveGame)
         // waitstate
@@ -59,7 +59,7 @@ script GastreeGym_LeaderBattle {
 script GastreeGym_EventScript_Victory{
     setflag(FLAG_BADGE01_GET)
     //Receive the badge
-    message(format("{PLAYER} received the Hard Badge from Inger."))
+    message(format("{PLAYER} received the Hard Badge from {COLOR RED}Inger{COLOR DARK_GRAY}."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
     playbgm(MUS_RG_GYM, FALSE)    
@@ -75,17 +75,17 @@ script GastreeGym_EventScript_Victory{
     speakername(NULL)
     giveitem(ITEM_RARE_SHARD)
     speakername("Inger")
-    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokémon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in Gastree City!"))
+    msgbox(format("This is an incredibly rare stone that reacts in the prescence of an ancient statue. Any Pokémon you give it to can maximise one of its innate stats!\pGo to an ancient statue to try it.\nThere's one in {COLOR GREEN}Gastree City{COLOR DARK_GRAY}!"))
     release
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Kinger's behalf!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}? You'll have to go north from here through {COLOR BLUE}Route 4{COLOR DARK_GRAY}.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach {COLOR BLUE}Team Somber{COLOR DARK_GRAY} a lesson on the {COLOR RED}Inger{COLOR DARK_GRAY}'s behalf!"))
     releaseall
 }
 
 text GastreeGym_Text_Intro{
-    format("...you look a little green. It is nerves? First gym battle?\p...\pI know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pI'm Inger, master of ROCK-types and the unshakable strength of the earth.\pMy ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
+    format("...you look a little green. It is nerves? First gym battle?\p...\pI know that feeling, and any other day, I might've gone easy on you...\p...but not today!\pI'm {COLOR RED}Inger{COLOR DARK_GRAY}, master of ROCK-types and the unshakable strength of the earth.\pMy ROCK-type Pokémon have seen countless battles, and they never crumble under pressure. If you think you can break through, show me the strength that you bring with you!")
 }
 
 text GastreeGym_Text_Defeated{
@@ -108,16 +108,16 @@ script GastreeGym_Red{
             lockall
             faceplayer
             
-            msgbox(format("Well done champ-in-the-making! Inger told me about your battle.\lIn recognition of your skills, I'd like to give you something."))
+            msgbox(format("Well done champ-in-the-making! {COLOR RED}Inger{COLOR DARK_GRAY} told me about your battle.\lIn recognition of your skills, I'd like to give you something."))
             goto(GastreeGym_Red_Reward)      
         }
     } else { 
         if (flag(FLAG_GASTREEGYM_SPENSER_WATER)){
-            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town.\pThe previous trainer beat him and Inger just can't stand losing!."), MSGBOX_NPC)
+            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, {COLOR RED}Inger{COLOR DARK_GRAY}, has gone off to do some emergency training in the underpass to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}.\pThe previous trainer beat him and {COLOR RED}Inger{COLOR DARK_GRAY} just can't stand losing!."), MSGBOX_NPC)
         } else {
             lockall
             faceplayer
-            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town.\pThe previous trainer beat him and Inger just can't stand losing!\pBut before you run off after him, take this."))
+            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, {COLOR RED}Inger{COLOR DARK_GRAY}, has gone off to do some emergency training in the underpass to {COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY}.\pThe previous trainer beat him and {COLOR RED}Inger{COLOR DARK_GRAY} just can't stand losing!\pBut before you run off after him, take this."))
             giveitem(ITEM_FRESH_WATER)
             msgbox(format("Inger loves ROCK type Pokémon, so avoid using FLYING and BUG type Pokémon.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_GASTREEGYM_SPENSER_WATER)

@@ -320,7 +320,7 @@ VictoryCape_Mon1_Text_0:
 
 VictoryCape_NPC2_Text_0:
 # 21 "data//maps/Championship/scripts.pory"
-	.string "They say the Ace Rookie from the\n"
+	.string "They say the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the\n"
 	.string "Detective Academy is going to compete!\l"
 	.string "I wish I don't draw him as an opponent.$"
 
@@ -349,7 +349,7 @@ VictoryCape_NPC5_Text_0:
 	.string "The Cormoria Pokémon Championship\n"
 	.string "is big business, kid!\p"
 	.string "I made a killing by shipping\n"
-	.string "supplies to Victory Cape.$"
+	.string "supplies to {COLOR RED}Victory Cape{COLOR DARK_GRAY}.$"
 
 VictoryCape_NPC6_Text_0:
 # 47 "data//maps/Championship/scripts.pory"
@@ -358,7 +358,7 @@ VictoryCape_NPC6_Text_0:
 
 VictoryCape_NPC7_Text_0:
 # 51 "data//maps/Championship/scripts.pory"
-	.string "They say a former Team Somber grunt is\n"
+	.string "They say a former {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt is\n"
 	.string "in the Championship...\p"
 	.string "I'm not sure if they should be leetting\n"
 	.string "criminals participate!$"
@@ -395,13 +395,13 @@ VictoryCape_Manectric_Text_0:
 
 VictoryCape_Viniel_Kids_Text_0:
 # 91 "data//maps/Championship/scripts.pory"
-	.string "Leader Viniel is so cool!\n"
+	.string "Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY} is so cool!\n"
 	.string "I wanna be just like him!$"
 
 VictoryCape_Viniel_Parent_Text_0:
 # 95 "data//maps/Championship/scripts.pory"
 	.string "It's really kind of a superstar like\n"
-	.string "Viniel to spend time with our children.\l"
+	.string "{COLOR BLUE}Viniel{COLOR DARK_GRAY} to spend time with our children.\l"
 	.string "He's a great role model.\p"
 	.string "...\p"
 	.string "I should take them inside before they\n"
@@ -415,7 +415,7 @@ VictoryCape_Gab_Text_0:
 VictoryCape_Zoroark_Text_0:
 # 108 "data//maps/Championship/scripts.pory"
 	.string "Zoroark doesn't seem as scared as\n"
-	.string "Gabrielle is.$"
+	.string "{COLOR RED}Gabrielle{COLOR DARK_GRAY} is.$"
 
 VictoryCape_NPC9_Text_0:
 # 121 "data//maps/Championship/scripts.pory"

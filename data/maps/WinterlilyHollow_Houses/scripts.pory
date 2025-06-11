@@ -18,7 +18,7 @@ script WinterlilyHollow_Houses_NPC2{
 }
 //couple (boy)
 script WinterlilyHollow_Houses_NPC3{
-    msgbox(format("I'm off-duty right now, but I work in the underground power plant.\pWe store the electricity from Viniel's Pokémon in these Cell Batteries."), MSGBOX_NPC)
+    msgbox(format("I'm off-duty right now, but I work in the underground power plant.\pWe store the electricity from {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s Pokémon in these Cell Batteries."), MSGBOX_NPC)
     release
     showmoneybox(0, 0)
     msgbox(format("Do you want one? It'll cost you 200."), MSGBOX_YESNO)

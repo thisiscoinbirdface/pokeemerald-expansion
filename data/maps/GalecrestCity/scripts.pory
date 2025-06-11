@@ -36,7 +36,7 @@ script GalecrestCity_OnFrame{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     speakername("Gabrielle")
-    msgbox(format("...have we left that place?\pYes! Yes we have! I'm so relieved. I've never been so happy to see a city before!\pThis must be Galecrest City. The Detective Academy is here. I suppose you'll be headed there. Just head north from here...\p...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye."))
+    msgbox(format("...have we left that place?\pYes! Yes we have! I'm so relieved. I've never been so happy to see a city before!\pThis must be {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}. The Detective Academy is here. I suppose you'll be headed there. Just head north from here...\p...and I'll be going back to {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye."))
     release
     
     //Remove gab
@@ -55,7 +55,7 @@ script GalecrestCity_OnFrame{
 //Where was kohla? he was defeated?
 //kohla - quiet.
 //Rue - I never knew this, ill go research
-//Detectives - we received a tipoff that prof tenebris was sighted in Silversun City to the east.
+//Detectives - we received a tipoff that prof tenebris was sighted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY} to the east.
 //Team Somber HQ is also there.
 //Everything makes sense - Team Somber knew things about the dreamstone, so they must have kidnapped the prof.
 
@@ -156,7 +156,7 @@ script GalecrestCity_DetectiveMeet_Trigger3{
 
 script GalecrestCity_DetectiveMeet_Main{
     speakername("Rue")
-    msgbox(format("We heard from Kohla that you went up to the peak to stop Team Somber.\pWhat happened up there?\p...\p..."))
+    msgbox(format("We heard from {COLOR GREEN}Kohla{COLOR DARK_GRAY} that you went up to the peak to stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}.\pWhat happened up there?\p...\p..."))
     applymovement(LOCALID_DET1, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_DET2, moves(face_right emote_exclamation_mark))
     applymovement(LOCALID_RUE, moves(face_right emote_exclamation_mark))
@@ -171,7 +171,7 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET1, moves(face_down emote_question_mark))
     delay(16)
     speakername("Detective")
-    msgbox(format("Did you know this was possible Rue?"))
+    msgbox(format("Did you know this was possible {COLOR BLUE}Rue{COLOR DARK_GRAY}?"))
     release
     delay(8)
     applymovement(LOCALID_RUE, moves(face_up))
@@ -200,16 +200,16 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET2, moves(face_right))      
     delay(16)
     speakername("Detective")
-    msgbox(format("We've uncovered a new lead on Professor Tenebris. An agent told us that she was spotted in Silversun City."))
+    msgbox(format("We've uncovered a new lead on {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}. An agent told us that she was spotted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}."))
     release
     delay(16)
     speakername("Detective")
-    msgbox(format("There's one issue...Team Somber. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around Silversun City too.\pIf the Professor, her dreamstone and Team Somber are in the same spot, things could erupt.\pWe have to be there!"))
+    msgbox(format("There's one issue...{COLOR BLUE}Team Somber{COLOR DARK_GRAY}. They're a known and dangerous criminal syndicate that aims to wrest power from the government.\pTheir hideout is confirmed to be somewhere around {COLOR BLUE}Silversun City{COLOR DARK_GRAY} too.\pIf the Professor, her dreamstone and {COLOR BLUE}Team Somber{COLOR DARK_GRAY} are in the same spot, things could erupt.\pWe have to be there!"))
     release
     delay(16)
     
     speakername("Detective")
-    msgbox(format("But now that Team Somber is involved, it's not safe for you, {PLAYER}.\pYou may have handled a couple of grunts, but you're still a child.\pSo heed these instructions carefully - make your way to Silversun City as soon as possible and keep a low profile.\pDo NOT engage with any suspicious individuals!"))       
+    msgbox(format("But now that {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is involved, it's not safe for you, {PLAYER}.\pYou may have handled a couple of grunts, but you're still a child.\pSo heed these instructions carefully - make your way to {COLOR BLUE}Silversun City{COLOR DARK_GRAY} as soon as possible and keep a low profile.\pDo NOT engage with any suspicious individuals!"))       
     release
     applymovement(LOCALID_DET1, moves(face_up))
     applymovement(LOCALID_DET2, moves(face_up))    
@@ -220,7 +220,7 @@ script GalecrestCity_DetectiveMeet_Main{
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
     speakername("Detective")
-    msgbox(format("This building is the Detective Academy. Your friend Kohla was trained here.\pHe knows the plan already. Go and talk to him first."))       
+    msgbox(format("This building is the Detective Academy. Your friend {COLOR GREEN}Kohla{COLOR DARK_GRAY} was trained here.\pHe knows the plan already. Go and talk to him first."))       
     release
 
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 5))    
@@ -231,7 +231,7 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))         
     delay(24)
     speakername("Detective")
-    msgbox(format("See you in Silversun City."))
+    msgbox(format("See you in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}."))
     release
 
     //exit
@@ -391,7 +391,7 @@ script GalecrestCity_Chansey{
 
 
 script GalecrestCity_NPC_12{
-    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk here left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."), MSGBOX_NPC)
+    msgbox(format("If you continue west from here, you'll enter {COLOR BLUE}Route 5{COLOR DARK_GRAY} and the {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}. Many years ago, one of the rich folk here left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."), MSGBOX_NPC)
     end
 }
 
@@ -452,7 +452,7 @@ script GalecrestCity_Nickit{
 
 //change dialogue
 script GalecrestCity_NPC_15{ 
-    msgbox(format("I really want to visit the Silversun Theatre and see a show! But crossing Vilethorn Woods isn't a good idea..."), MSGBOX_NPC)
+    msgbox(format("I really want to visit the Silversun Theatre and see a show! But crossing {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} isn't a good idea..."), MSGBOX_NPC)
     end
 }
 

@@ -195,7 +195,7 @@ Route5_Greta_GottaGo_Movement_1:
 Route5_NPC_A_Text_0:
 # 6 "data//maps/Route5/scripts.pory"
 	.string "My head is spinning because of the fog\n"
-	.string "in Vilethorn Woods! I need to go home\l"
+	.string "in {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}! I need to go home\l"
 	.string "and rest.$"
 
 Route5_NPC_B_Text_0:
@@ -206,8 +206,8 @@ Route5_NPC_B_Text_0:
 Route5_NPC_C_Text_0:
 # 22 "data//maps/Route5/scripts.pory"
 	.string "I wish they'd clear those boulders in\n"
-	.string "Vilethorn Woods! It's blocking the path\l"
-	.string "back to Galecrest City.$"
+	.string "{COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}! It's blocking the path\l"
+	.string "back to {COLOR GREEN}Galecrest City{COLOR DARK_GRAY}.$"
 
 Route5_Greta_Main_Text_0:
 # 56 "data//maps/Route5/scripts.pory"
@@ -215,8 +215,8 @@ Route5_Greta_Main_Text_0:
 
 Route5_Greta_Main_Text_1:
 # 57 "data//maps/Route5/scripts.pory"
-	.string "It's you! The wandering saviour from Mt.\n"
-	.string "Ceram. How wonderful! A new customer.$"
+	.string "It's you! The wandering saviour from {COLOR RED}Mt.\n"
+	.string "Ceram{COLOR DARK_GRAY}. How wonderful! A new customer.$"
 
 Route5_Greta_GottaGo_Text_0:
 # 75 "data//maps/Route5/scripts.pory"

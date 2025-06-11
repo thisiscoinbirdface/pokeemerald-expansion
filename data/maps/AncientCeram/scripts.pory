@@ -65,7 +65,7 @@ script AncientCeram_EventScript_Exit{
         setvar(VAR_ANCIENT_GAB_ESCAPE, 2)
     } 
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 2){ //If exit is already set up, reiterate that you can't leave gabrielle behind
-        msgbox(format("I can't leave Gabrielle behind!"))
+        msgbox(format("I can't leave {COLOR RED}Gabrielle{COLOR DARK_GRAY} behind!"))
     } 
     if (var(VAR_ANCIENT_GAB_ESCAPE) == 3){ 
         //Else get out

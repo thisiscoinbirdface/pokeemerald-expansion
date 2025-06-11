@@ -2478,7 +2478,7 @@ Common_EventScript_DrifblimTravels_ToSilversun_Text_0:
 Common_EventScript_DrifblimTravels_ToSilversun_Text_1:
 # 1090 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
-	.string "towards Silversun City. Fly there?$"
+	.string "towards {COLOR BLUE}Silversun City{COLOR DARK_GRAY}. Fly there?$"
 
 Common_EventScript_DrifblimTravels_ToSilversun_Text_2:
 # 1102 "data//maps/TempCopyMap/scripts.pory"
@@ -2487,7 +2487,7 @@ Common_EventScript_DrifblimTravels_ToSilversun_Text_2:
 Common_EventScript_DrifblimTravels_ToPelluca_Text_0:
 # 1117 "data//maps/TempCopyMap/scripts.pory"
 	.string "Drifblim opens a map and gestures\n"
-	.string "towards Pelluca City. Fly there?$"
+	.string "towards {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Fly there?$"
 
 Common_EventScript_DrifblimTravels_All_Text_0:
 # 1145 "data//maps/TempCopyMap/scripts.pory"
@@ -2510,7 +2510,7 @@ Common_EventScript_Tauros_IvyRiver_Text_0:
 
 Common_EventScript_Tauros_IvyRiver_Text_1:
 # 1210 "data//maps/TempCopyMap/scripts.pory"
-	.string "Pelluca City$"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY}$"
 
 Common_EventScript_Tauros_IvyRiver_Text_2:
 # 1210 "data//maps/TempCopyMap/scripts.pory"
@@ -2522,7 +2522,7 @@ Common_EventScript_Tauros_IvyRiver_Text_3:
 
 Common_EventScript_Tauros_PellucaCity_Text_0:
 # 1225 "data//maps/TempCopyMap/scripts.pory"
-	.string "Ivy River HQ$"
+	.string "{COLOR BLUE}Ivy River{COLOR DARK_GRAY} HQ$"
 
 Common_Text_Greta_Comecome::
 # 602 "data//maps/TempCopyMap/scripts.pory"

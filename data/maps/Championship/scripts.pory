@@ -18,7 +18,7 @@ script VictoryCape_Mon1{
 } 
 
 script VictoryCape_NPC2{
-    msgbox(format("They say the Ace Rookie from the Detective Academy is going to compete! I wish I don't draw him as an opponent."), MSGBOX_NPC)
+    msgbox(format("They say the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the Detective Academy is going to compete! I wish I don't draw him as an opponent."), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC3{
@@ -40,7 +40,7 @@ script VictoryCape_Mon3{
     end    
 } 
 script VictoryCape_NPC5{
-    msgbox(format("The Cormoria Pokémon Championship\nis big business, kid!\pI made a killing by shipping\nsupplies to Victory Cape."), MSGBOX_NPC)
+    msgbox(format("The Cormoria Pokémon Championship\nis big business, kid!\pI made a killing by shipping\nsupplies to {COLOR RED}Victory Cape{COLOR DARK_GRAY}."), MSGBOX_NPC)
     end    
 }
 script VictoryCape_NPC6{
@@ -48,7 +48,7 @@ script VictoryCape_NPC6{
     end    
 }
 script VictoryCape_NPC7{
-    msgbox(format("They say a former Team Somber grunt is in the Championship...\pI'm not sure if they should be leetting criminals participate!"), MSGBOX_NPC)
+    msgbox(format("They say a former {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunt is in the Championship...\pI'm not sure if they should be leetting criminals participate!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon4{
@@ -88,11 +88,11 @@ script VictoryCape_Manectric{
     end    
 } 
 script VictoryCape_Viniel_Kids{
-    msgbox(format("Leader Viniel is so cool!\nI wanna be just like him!"), MSGBOX_NPC)
+    msgbox(format("Leader {COLOR BLUE}Viniel{COLOR DARK_GRAY} is so cool!\nI wanna be just like him!"), MSGBOX_NPC)
     end    
 } 
 script VictoryCape_Viniel_Parent{
-    msgbox(format("It's really kind of a superstar like Viniel to spend time with our children. He's a great role model.\p...\pI should take them inside before they catch a cold in the rain."), MSGBOX_NPC)
+    msgbox(format("It's really kind of a superstar like {COLOR BLUE}Viniel{COLOR DARK_GRAY} to spend time with our children. He's a great role model.\p...\pI should take them inside before they catch a cold in the rain."), MSGBOX_NPC)
     end    
 } 
 
@@ -105,7 +105,7 @@ script VictoryCape_Gab{
 }
 script VictoryCape_Zoroark{
     playmoncry(SPECIES_ZOROARK, CRY_MODE_NORMAL)
-    msgbox(format("Zoroark doesn't seem as scared as Gabrielle is."), MSGBOX_NPC)
+    msgbox(format("Zoroark doesn't seem as scared as {COLOR RED}Gabrielle{COLOR DARK_GRAY} is."), MSGBOX_NPC)
     end    
 } 
 

@@ -37,7 +37,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Wait right there, Team Somber!\pThe Ace Rookie is here now, so stop\nyour dastardly - "))
+    msgbox(format("Wait right there, {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\pThe {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} is here now, so stop\nyour dastardly - "))
 
     applymovement(LOCALID_MELEA, moves(emote_exclamation_mark))
     waitmovement(0)
@@ -53,7 +53,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
 
     speakername("Melea")
-    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour Professor Tenebris unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...\nLeader was right all along..."))
+    msgbox(format("Beautiful, isn't it? How incredible it is that we're here now, today.\pYour {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} unlocked the latent potential within the dreams and memories of Pokémon today and created a way to visit the past!\pIt's like science fiction...\nLeader was right all along..."))
     release
     delay(30)
 
@@ -61,7 +61,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(8)
     speakername("Melea")
-    msgbox(format("But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pBut there were other minds who did understand the greatness, the potential, the power!\pAnd that's why Team Somber exists."))
+    msgbox(format("But your stupid Professor had no idea what she'd uncovered! Stuck in her books and research, she didn't have a mind capable of understanding what could be done with her discovery.\pBut there were other minds who did understand the greatness, the potential, the power!\pAnd that's why {COLOR BLUE}Team Somber{COLOR DARK_GRAY} exists."))
     release
 
 
@@ -153,7 +153,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     applymovement(LOCALID_MELEA, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("Come, Ancient Terror!\nLet Team Somber show you the future!"))
+    msgbox(format("Come, Ancient Terror!\nLet {COLOR BLUE}Team Somber{COLOR DARK_GRAY} show you the future!"))
     release
 
     fadescreen(FADE_TO_WHITE)
@@ -200,7 +200,7 @@ script AncientMirroh_Tower_4F_MainTrigger{
     waitmovement(0)
     delay(30)    
     speakername("Melea")
-    msgbox(format("And now it's time to bid adieu! I hope you enjoy your time here in Ancient Cormoria - because you'll never leave!\pHahaha!"))
+    msgbox(format("And now it's time to bid adieu! I hope you enjoy your time here in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} - because you'll never leave!\pHahaha!"))
     release
     applymovement(3, moves(face_up))
     applymovement(LOCALID_MELEA, moves(walk_up * 2))    

@@ -76,13 +76,13 @@ script PellucaGym_Gabrielle_Trigger2{
     end
 }
 text PellucaCity_Gym_Text_Gab_Intro{
-    format("{PLAYER}! Are you here to challenge Jania too? I've decided on my next goal - to collect all eight badges and become the Pokémon Champion!")
+    format("{PLAYER}! Are you here to challenge {COLOR BLUE}Jania{COLOR DARK_GRAY} too? I've decided on my next goal - to collect all eight badges and become the Pokémon Champion!")
 }
 text PellucaCity_Gym_Text_Gab_Defeat{
     format("I was so close!")
 }
 text PellucaCity_Gym_Text_Gab_PostDefeat{
-    format("Adjusting to life after Team Somber hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on!\pWe didn't win today, but mark my words - we'll beat you at the Pokémon Championships, {PLAYER}!")
+    format("Adjusting to life after {COLOR BLUE}Team Somber{COLOR DARK_GRAY} hasn't been easy. But battling trainers and getting badges has given me and Zorua something to focus on!\pWe didn't win today, but mark my words - we'll beat you at the Pokémon Championships, {PLAYER}!")
 }
 script PellucaGym_Trainer_Gabrielle{
     msgbox(format("Jania's a really strong leader.\nBut you might stand a chance!"), MSGBOX_NPC)
@@ -97,7 +97,7 @@ script PellucaGym_Trainer_B{
 //The rest are all swimmers
 //first lady on the left
 script PellucaGym_Trainer_C{
-    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_C, format("I've been training with Jania to withstand these strong currents.\pYou could use some training too!"), format("You don't need training!"))
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_C, format("I've been training with {COLOR BLUE}Jania{COLOR DARK_GRAY} to withstand these strong currents.\pYou could use some training too!"), format("You don't need training!"))
     msgbox(format("Jania won't go easy on anyone!"), MSGBOX_NPC)
     end
 }
@@ -110,7 +110,7 @@ script PellucaGym_Trainer_D{
 //Lady on island (beauty)
 script PellucaGym_Trainer_E{
     trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_E, format("Gloria rejected me from her Theatre Studio! So I'm going to get all eight badges and challenge her for ownership!"), format("I couldn't even challenge you!"))
-    msgbox(format("Once I beat Gloria, I'll be the new owner of the Silversun Theatre Studio!\p...\pYou're saying that's not how ownership works?"), MSGBOX_NPC)
+    msgbox(format("Once I beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}, I'll be the new owner of the Silversun Theatre Studio!\p...\pYou're saying that's not how ownership works?"), MSGBOX_NPC)
     end
 }
 //double battle A
@@ -121,7 +121,7 @@ script PellucaGym_Trainer_F{
 }
 //double battle B
 script PellucaGym_Trainer_G{
-    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_G, format("We're the Rain Twins! Jania's selected us to keep low-level trainers away."), format("Twin down!"))
+    trainerbattle_single(TRAINER_PELLUCA_CITY_GYM_G, format("We're the Rain Twins! {COLOR BLUE}Jania{COLOR DARK_GRAY}'s selected us to keep low-level trainers away."), format("Twin down!"))
     msgbox(format("Want a tip?\pJania's Toxapex is scary!"), MSGBOX_NPC)
     end
 }
@@ -264,7 +264,7 @@ script PellucaGym_Leader {
         release        
 
         //Play gym badge fanfare
-        message(format("{PLAYER} received the River Badge from Jania."))
+        message(format("{PLAYER} received the River Badge from {COLOR BLUE}Jania{COLOR DARK_GRAY}."))
         speakername(NULL)
         call(Common_EventScript_PlayGymBadgeFanfare)
         setflag(FLAG_BADGE07_GET)        
@@ -282,7 +282,7 @@ script PellucaGym_Leader {
         
         //Bye-bye
         speakername("Jania") 
-        msgbox(format("The road to the Pokémon Championship is hard, but you're nearly there.\pThe eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))
+        msgbox(format("The road to the Pokémon Championship is hard, but you're nearly there.\pThe eighth and last Gym Badge is given by {COLOR RED}Raazi{COLOR DARK_GRAY} of {COLOR RED}Rivetshore City{COLOR DARK_GRAY}.\pHead south from here down the river.\pGood luck, {PLAYER}."))
         release
 
     }

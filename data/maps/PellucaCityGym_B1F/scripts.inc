@@ -397,7 +397,7 @@ PellucaGym_Trainer_B_Text_2:
 
 PellucaGym_Trainer_C_Text_0:
 # 100 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "I've been training with Jania to\n"
+	.string "I've been training with {COLOR BLUE}Jania{COLOR DARK_GRAY} to\n"
 	.string "withstand these strong currents.\p"
 	.string "You could use some training too!$"
 
@@ -434,7 +434,7 @@ PellucaGym_Trainer_E_Text_1:
 
 PellucaGym_Trainer_E_Text_2:
 # 113 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Once I beat Gloria, I'll be the new owner\n"
+	.string "Once I beat {COLOR BLUE}Gloria{COLOR DARK_GRAY}, I'll be the new owner\n"
 	.string "of the Silversun Theatre Studio!\p"
 	.string "...\p"
 	.string "You're saying that's not how ownership\n"
@@ -456,7 +456,7 @@ PellucaGym_Trainer_F_Text_2:
 
 PellucaGym_Trainer_G_Text_0:
 # 124 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "We're the Rain Twins! Jania's selected\n"
+	.string "We're the Rain Twins! {COLOR BLUE}Jania{COLOR DARK_GRAY}'s selected\n"
 	.string "us to keep low-level trainers away.$"
 
 PellucaGym_Trainer_G_Text_1:
@@ -554,7 +554,7 @@ PellucaGym_Leader_Text_4:
 PellucaGym_Leader_Text_5:
 # 267 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "{PLAYER} received the River Badge\n"
-	.string "from Jania.$"
+	.string "from {COLOR BLUE}Jania{COLOR DARK_GRAY}.$"
 
 PellucaGym_Leader_Text_6:
 # 274 "data//maps/PellucaCityGym_B1F/scripts.pory"
@@ -571,14 +571,14 @@ PellucaGym_Leader_Text_8:
 	.string "The road to the Pokémon Championship\n"
 	.string "is hard, but you're nearly there.\p"
 	.string "The eighth and last Gym Badge is given\n"
-	.string "by Raazi of Rivetshore City.\p"
+	.string "by {COLOR RED}Raazi{COLOR DARK_GRAY} of {COLOR RED}Rivetshore City{COLOR DARK_GRAY}.\p"
 	.string "Head south from here down the river.\p"
 	.string "Good luck, {PLAYER}.$"
 
 PellucaCity_Gym_Text_Gab_Intro::
 # 78 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "{PLAYER}! Are you here to challenge\n"
-	.string "Jania too? I've decided on my next goal\l"
+	.string "{COLOR BLUE}Jania{COLOR DARK_GRAY} too? I've decided on my next goal\l"
 	.string "- to collect all eight badges and\l"
 	.string "become the Pokémon Champion!$"
 
@@ -588,7 +588,7 @@ PellucaCity_Gym_Text_Gab_Defeat::
 
 PellucaCity_Gym_Text_Gab_PostDefeat::
 # 84 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	.string "Adjusting to life after Team Somber\n"
+	.string "Adjusting to life after {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\n"
 	.string "hasn't been easy. But battling trainers\l"
 	.string "and getting badges has given me and\l"
 	.string "Zorua something to focus on!\p"

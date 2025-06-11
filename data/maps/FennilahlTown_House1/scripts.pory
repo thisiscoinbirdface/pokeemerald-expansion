@@ -6,7 +6,7 @@ script FennilahlTown_House1_NPC1{
 }
 
 script FennilahlTown_House1_NPC2{
-    msgbox(format("My sister wants to visit Gastree City but crossing Route 3 isn't so easy."), MSGBOX_NPC)
+    msgbox(format("My sister wants to visit {COLOR GREEN}Gastree City{COLOR DARK_GRAY} but crossing {COLOR BLUE}Route 3{COLOR DARK_GRAY} isn't so easy."), MSGBOX_NPC)
     end
 }
 

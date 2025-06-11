@@ -159,7 +159,7 @@ WinterlilyHollow_Houses_NPC3_Text_0:
 # 21 "data//maps/WinterlilyHollow_Houses/scripts.pory"
 	.string "I'm off-duty right now, but I work in\n"
 	.string "the underground power plant.\p"
-	.string "We store the electricity from Viniel's\n"
+	.string "We store the electricity from {COLOR BLUE}Viniel{COLOR DARK_GRAY}'s\n"
 	.string "Pokémon in these Cell Batteries.$"
 
 WinterlilyHollow_Houses_NPC3_Text_1:

@@ -872,7 +872,7 @@ MirrohBaseCamp_Trainer_B_Movement_0:
 MirrohBaseCamp_EventScript_Vendor1_Text_0:
 # 18 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Our supplies are limited but useful to\n"
-	.string "trek up Mt. Mirroh!$"
+	.string "trek up {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}!$"
 
 MirrohBaseCamp_EventScript_Vendor1_Text_1:
 # 21 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -880,7 +880,7 @@ MirrohBaseCamp_EventScript_Vendor1_Text_1:
 
 MirrohBaseCamp_EventScript_Vendor2_Text_0:
 # 36 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "I found all this inside Mt. Mirroh just\n"
+	.string "I found all this inside {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} just\n"
 	.string "yesterday!$"
 
 MirrohBaseCamp_EventScript_Vendor2_Text_1:
@@ -959,7 +959,7 @@ MirrohBaseCamp_Greavard_Outside_Text_5:
 # 138 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Oof...too much running...\p"
 	.string "I don't know if it'll help you against\n"
-	.string "Team Somber, but I wanted to offer you\l"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY}, but I wanted to offer you\l"
 	.string "one of these.\p"
 	.string "They're extremely rare - prized items in\n"
 	.string "my collection!\p"
@@ -1073,11 +1073,11 @@ MirrohBaseCamp_Rue_Trigger_Text_1:
 	.string "Martha is an expert on Cormorian\l"
 	.string "history. She would be helpful.\p"
 	.string "I came here to make some social calls.\n"
-	.string "Since Mirroh Base Camp is quiet and\l"
+	.string "Since {COLOR BLUE}Mirroh Base Camp{COLOR DARK_GRAY} is quiet and\l"
 	.string "secluded, many academics reside here -\l"
 	.string "Martha being one of them.\p"
-	.string "Take care, {PLAYER}. Stay safe in Mt.\n"
-	.string "Mirroh. Listen to what the detectives\l"
+	.string "Take care, {PLAYER}. Stay safe in {COLOR BLUE}Mt.\n"
+	.string "Mirroh{COLOR DARK_GRAY}. Listen to what the detectives\l"
 	.string "tell you to do, okay?$"
 
 MirrohBaseCamp_Trainer_A_Text_0:
@@ -1109,7 +1109,7 @@ MirrohBaseCamp_Trainer_B_Text_1:
 MirrohBaseCamp_Trainer_B_Text_2:
 # 300 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "If I can't beat a kid like you, what\n"
-	.string "chance do I have against Carona?$"
+	.string "chance do I have against {COLOR BLUE}Carona{COLOR DARK_GRAY}?$"
 
 MirrohBaseCamp_Trainer_B_Text_3:
 # 307 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -1118,7 +1118,7 @@ MirrohBaseCamp_Trainer_B_Text_3:
 
 MirrohBaseCamp_Trainer_C_Text_0:
 # 320 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Get outta here! Carona has only one\n"
+	.string "Get outta here! {COLOR BLUE}Carona{COLOR DARK_GRAY} has only one\n"
 	.string "badge left to give and it's mine!$"
 
 MirrohBaseCamp_Trainer_C_Text_1:
@@ -1132,5 +1132,5 @@ MirrohBaseCamp_Trainer_C_Text_2:
 
 MirrohBaseCamp_Trainer_C_Text_3:
 # 326 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Grr - fine! Go inside! I bet Carona wipes\n"
+	.string "Grr - fine! Go inside! I bet {COLOR BLUE}Carona{COLOR DARK_GRAY} wipes\n"
 	.string "the floor with you!$"

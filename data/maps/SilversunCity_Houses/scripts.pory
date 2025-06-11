@@ -35,7 +35,7 @@ script SilversunCity_Houses_Artist{
                 giveitem(ITEM_HM04)
                 setvar(VAR_SILVERSUN_ARTIST, 2)
                 speakername("Arsalan")
-                msgbox(format("I have no need of it, because my true strength lies in my artistic vision! But you, my dear helpful philistine, might benefit from it. But you'll need to receive the Drama Badge from Gloria before your Pokémon can use it.\pFarewell!"), MSGBOX_NPC)
+                msgbox(format("I have no need of it, because my true strength lies in my artistic vision! But you, my dear helpful philistine, might benefit from it. But you'll need to receive the Drama Badge from {COLOR BLUE}Gloria{COLOR DARK_GRAY} before your Pokémon can use it.\pFarewell!"), MSGBOX_NPC)
             } else {
                 speakername("Arsalan")
                 msgbox(format("But you do not have it! An artist's eyes cannot be fooled."), MSGBOX_NPC)
@@ -48,7 +48,7 @@ script SilversunCity_Houses_Artist{
 
     if (var(VAR_SILVERSUN_ARTIST) == 0){
         speakername("???")
-        msgbox(format("Myself, I have no patience for theater. No no! Although Gloria is indeed fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush!"))
+        msgbox(format("Myself, I have no patience for theater. No no! Although {COLOR BLUE}Gloria{COLOR DARK_GRAY} is indeed fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush!"))
         release
         delay(16)
         speakername("Arsalan")
@@ -91,7 +91,7 @@ script SilversunCity_Houses_Tutor{
 
 //NPCs
 script SilversunCity_Houses_NPC1{
-    msgbox(format("Silversun City is right between the always foggy Vilethorn Woods and the always raining Route 6! We should be called Silvershade City instead."), MSGBOX_NPC)
+    msgbox(format("{COLOR BLUE}Silversun City{COLOR DARK_GRAY} is right between the always foggy {COLOR RED}Vilethorn Woods{COLOR DARK_GRAY} and the always raining {COLOR BLUE}Route 6{COLOR DARK_GRAY}! We should be called Silvershade City instead."), MSGBOX_NPC)
     end
 }
 script SilversunCity_Houses_NPC2{

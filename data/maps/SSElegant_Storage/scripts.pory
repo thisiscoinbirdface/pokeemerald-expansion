@@ -85,7 +85,7 @@ script SSElegant_Storage_GabConfronts{
     waitmovement(0)
     delay(16)
 
-    msgbox_delay("Gabrielle", format("...and that's what Raazi wants you to do!"))
+    msgbox_delay("Gabrielle", format("...and that's what {COLOR RED}Raazi{COLOR DARK_GRAY} wants you to do!"))
     applymovement(4, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
     delay(16)

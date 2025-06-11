@@ -17,15 +17,15 @@ script Route8_Casino_Board{
 //TRAINERS
 //swimmer
 script Route8_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE8_A, format("Swimming here is much better than swimming in Ivy River!"), format("You're as bad as Ivy River!") )
-    msgbox(format("I can't handle the currents of Ivy River. I prefer a relaxed swim."))
+    trainerbattle_single(TRAINER_ROUTE8_A, format("Swimming here is much better than swimming in {COLOR BLUE}Ivy River{COLOR DARK_GRAY}!"), format("You're as bad as {COLOR BLUE}Ivy River{COLOR DARK_GRAY}!") )
+    msgbox(format("I can't handle the currents of {COLOR BLUE}Ivy River{COLOR DARK_GRAY}. I prefer a relaxed swim."))
     releaseall
     end
 }
 //swimmer
 script Route8_Trainer_B{
     trainerbattle_single(TRAINER_ROUTE8_B, format("Open waters and pleasant sunlight!\nWho could ask for more?"), format("I didn't ask for this!"))
-    msgbox(format("We aren't allowed to go out to sea from Rivetshore City. This is the best we can do."))
+    msgbox(format("We aren't allowed to go out to sea from {COLOR RED}Rivetshore City{COLOR DARK_GRAY}. This is the best we can do."))
     releaseall
     end
 }
@@ -56,7 +56,7 @@ script Route8_Trainer_D{
 
 //NPCs
 script Route8_NPC1{
-    msgbox(format("Leader Raazi in Rivetshore uses the strongest items for his Pokémon!\pI'm here to find some for mine too."), MSGBOX_NPC)
+    msgbox(format("Leader {COLOR RED}Raazi{COLOR DARK_GRAY} in Rivetshore uses the strongest items for his Pokémon!\pI'm here to find some for mine too."), MSGBOX_NPC)
     end
 }
 script Route8_NPC2{
@@ -64,7 +64,7 @@ script Route8_NPC2{
     end
 }
 script Route8_NPC3{
-    msgbox(format("Rivetshore City is just past this cave. They built a barrier to prevent flooding so you have to take the underpass."), MSGBOX_NPC)
+    msgbox(format("{COLOR RED}Rivetshore City{COLOR DARK_GRAY} is just past this cave. They built a barrier to prevent flooding so you have to take the underpass."), MSGBOX_NPC)
     end
 }
 

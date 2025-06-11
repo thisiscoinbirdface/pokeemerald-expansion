@@ -397,7 +397,7 @@ MirrohBaseCamp_Houses_Historian_Text_2:
 
 MirrohBaseCamp_Houses_Historian_Text_3:
 # 20 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "I see...so this Team Somber wants to\n"
+	.string "I see...so this {COLOR BLUE}Team Somber{COLOR DARK_GRAY} wants to\n"
 	.string "re-enter the past using the\l"
 	.string "dreamstones? How interesting. To think\l"
 	.string "we've reached an age where humankind\l"
@@ -408,7 +408,7 @@ MirrohBaseCamp_Houses_Historian_Text_4:
 # 24 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "You must have seen it yourself,\n"
 	.string "{PLAYER}. To the best of our\l"
-	.string "knowledge, Ancient Cormoria was a\l"
+	.string "knowledge, {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} was a\l"
 	.string "harsh, barren and dangerous continent,\l"
 	.string "ravaged by fearsome Pokémon that\l"
 	.string "fought each other. Today, all we have\l"
@@ -429,16 +429,16 @@ MirrohBaseCamp_Houses_Historian_Text_5:
 # 28 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "For a while this mystery - the mystery\n"
 	.string "of the Ancient Terror - remained\l"
-	.string "unsolved. But then, deep inside Mt.\l"
-	.string "Mirroh, we found an ancient cave\l"
+	.string "unsolved. But then, deep inside {COLOR BLUE}Mt.\l"
+	.string "Mirroh{COLOR DARK_GRAY}, we found an ancient cave\l"
 	.string "painting depicting a beast that\l"
 	.string "matched no fossil we had uncovered...\l"
 	.string "although which Pokémon it is, we don't\l"
 	.string "know as of today.\p"
 	.string "...\p"
 	.string "There's still much to solve, {PLAYER}.\p"
-	.string "If I were to hazard a guess, this Team\n"
-	.string "Somber outfit might be looking to do\l"
+	.string "If I were to hazard a guess, this {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY} outfit might be looking to do\l"
 	.string "something with this Ancient Terror,\l"
 	.string "although what exactly, I can't say.$"
 
@@ -448,7 +448,7 @@ MirrohBaseCamp_Houses_Historian_Text_6:
 	.string "rambled on for too long. Apologies,\l"
 	.string "{PLAYER}. I hope this information\l"
 	.string "helps you in your journey.\p"
-	.string "You should go to Mt. Mirroh and see the\n"
+	.string "You should go to {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY} and see the\n"
 	.string "cave painting for yourself.\p"
 	.string "Here - take this and give it to the\n"
 	.string "Greavard playing outside. It'll distract\l"
@@ -509,10 +509,10 @@ MirrohBaseCamp_Houses_MasterballGuy_Text_6:
 
 MirrohBaseCamp_Houses_MasterballGuy_Text_7:
 # 100 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "A friend of Rue's?\p"
+	.string "A friend of {COLOR BLUE}Rue{COLOR DARK_GRAY}'s?\p"
 	.string "...\p"
 	.string "Ah, you're his new assistant. Nice to\n"
-	.string "meet you, {PLAYER}! Rue and I go long\l"
+	.string "meet you, {PLAYER}! {COLOR BLUE}Rue{COLOR DARK_GRAY} and I go long\l"
 	.string "back. While he entered academia, I\l"
 	.string "became a Poké Ball craftsman instead!$"
 
@@ -524,7 +524,7 @@ MirrohBaseCamp_Houses_MasterballGuy_Text_8:
 
 MirrohBaseCamp_Houses_MasterballGuy_Text_9:
 # 105 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	.string "Since you're Rue's assistant and he's an\n"
+	.string "Since you're {COLOR BLUE}Rue{COLOR DARK_GRAY}'s assistant and he's an\n"
 	.string "old friend, how about I do you a favour?\p"
 	.string "I can make you one...if you get me the\n"
 	.string "right crafting components!\p"

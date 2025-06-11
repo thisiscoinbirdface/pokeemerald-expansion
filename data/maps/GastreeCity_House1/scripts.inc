@@ -36,10 +36,10 @@ GastreeCity_House1_Buneary_2:
 
 GastreeCity_House1_NPC1_Text_0:
 # 4 "data//maps/GastreeCity_House1/scripts.pory"
-	.string "Gastree City sits on hilly terrain,\n"
+	.string "{COLOR GREEN}Gastree City{COLOR DARK_GRAY} sits on hilly terrain,\n"
 	.string "connecting the hill stations of\l"
-	.string "Fennilahl Town and Carabrue Town to the\l"
-	.string "east and Mt. Ceram to the north.\p"
+	.string "{COLOR GREEN}Fennilahl Town{COLOR DARK_GRAY} and {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} to the\l"
+	.string "east and {COLOR RED}Mt. Ceram{COLOR DARK_GRAY} to the north.\p"
 	.string "Lovely weather for me and Buneary!$"
 
 GastreeCity_House1_Buneary_Text_0:

@@ -310,7 +310,7 @@ IvyRiver_Sharpedo_Jania_Trigger_Text_2:
 # 36 "data//maps/IvyRiver_Sharpedo/scripts.pory"
 	.string "It's you, {PLAYER}.\p"
 	.string "I must thank you for bringing peace to\n"
-	.string "Pelluca City.\p"
+	.string "{COLOR BLUE}Pelluca City{COLOR DARK_GRAY}.\p"
 	.string "Come here.$"
 
 IvyRiver_Sharpedo_Jania_Trigger_Text_3:

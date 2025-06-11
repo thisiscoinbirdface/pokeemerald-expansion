@@ -239,7 +239,7 @@ Route6_Transition_EventScript_KohlaBattle_Text_0:
 # 89 "data//maps/HoyaRiverNorth/scripts.pory"
 	.string "Once again you save the day while I run\n"
 	.string "off chasing dead leads. Your stupid\l"
-	.string "Professor Rue's lead was bogus!\p"
+	.string "Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}'s lead was bogus!\p"
 	.string "It's like the world is telling me that I'm\n"
 	.string "not as good as you, {PLAYER}. But you\l"
 	.string "and I know the truth. You lucked your\l"

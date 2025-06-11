@@ -803,8 +803,8 @@ RivetshoreCity_Assembly_Trigger_Text_4:
 
 RivetshoreCity_Assembly_Trigger_Text_5:
 # 87 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Easy for you to say, Raazi!\p"
-	.string "You live here. Inger and I came all the\n"
+	.string "Easy for you to say, {COLOR RED}Raazi{COLOR DARK_GRAY}!\p"
+	.string "You live here. {COLOR RED}Inger{COLOR DARK_GRAY} and I came all the\n"
 	.string "way from the other side of Cormoria!$"
 
 RivetshoreCity_Assembly_Trigger_Text_6:
@@ -826,7 +826,7 @@ RivetshoreCity_Assembly_Trigger_Text_9:
 
 RivetshoreCity_Assembly_Trigger_Text_10:
 # 96 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Viniel and Carona sent word - they're on\n"
+	.string "Viniel and {COLOR BLUE}Carona{COLOR DARK_GRAY} sent word - they're on\n"
 	.string "their way. They'll take some time,\l"
 	.string "considering how remote they are.$"
 
@@ -837,8 +837,8 @@ RivetshoreCity_Assembly_Trigger_Text_11:
 	.string "Allow us to explain the current\n"
 	.string "situation as it stands.\p"
 	.string "You all know about the disappearance\n"
-	.string "of Professor Tenebris in connection\l"
-	.string "with the dreamstones and Team Somber's\l"
+	.string "of {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} in connection\l"
+	.string "with the dreamstones and {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s\l"
 	.string "involvement in this case.$"
 
 RivetshoreCity_Assembly_Trigger_Text_12:
@@ -861,7 +861,7 @@ RivetshoreCity_Assembly_Trigger_Text_15:
 RivetshoreCity_Assembly_Trigger_Text_16:
 # 112 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Just you watch - I'm going to teach\n"
-	.string "Team Somber a lesson!$"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} a lesson!$"
 
 RivetshoreCity_Assembly_Trigger_Text_17:
 # 116 "data//maps/RivetshoreCity/scripts.pory"
@@ -869,7 +869,7 @@ RivetshoreCity_Assembly_Trigger_Text_17:
 	.string "efforts, not a single trace of the\l"
 	.string "Professor has yet been found.\p"
 	.string "Nobody has seen her anywhere. Our\n"
-	.string "working theory is that Team Somber is\l"
+	.string "working theory is that {COLOR BLUE}Team Somber{COLOR DARK_GRAY} is\l"
 	.string "holding her captive somewhere...\p"
 	.string "...and that leads us to today.\p"
 	.string "A massive uptick in geological activity\n"
@@ -893,18 +893,18 @@ RivetshoreCity_Assembly_Trigger_Text_20:
 # 125 "data//maps/RivetshoreCity/scripts.pory"
 	.string "So that explains the heatwave\n"
 	.string "we had here yesterday.\p"
-	.string "It must have been Team Somber's doing.$"
+	.string "It must have been {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s doing.$"
 
 RivetshoreCity_Assembly_Trigger_Text_21:
 # 127 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Kohla here has been working the case.\p"
+	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} here has been working the case.\p"
 	.string "He's handed over his Gym Leader duties\n"
-	.string "to the next Ace Rookie, and is now\l"
-	.string "pursuing Team Somber full-time.$"
+	.string "to the next {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}, and is now\l"
+	.string "pursuing {COLOR BLUE}Team Somber{COLOR DARK_GRAY} full-time.$"
 
 RivetshoreCity_Assembly_Trigger_Text_22:
 # 130 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Kohla - go on and tell them about the\n"
+	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} - go on and tell them about the\n"
 	.string "Ancient Terror.$"
 
 RivetshoreCity_Assembly_Trigger_Text_23:
@@ -925,7 +925,7 @@ RivetshoreCity_Assembly_Trigger_Text_25:
 RivetshoreCity_Assembly_Trigger_Text_26:
 # 145 "data//maps/RivetshoreCity/scripts.pory"
 	.string "My...ex-colleague and I chased them\n"
-	.string "into Ancient Cormoria through a\l"
+	.string "into {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY} through a\l"
 	.string "dreamstone and Melea captured the\l"
 	.string "Ancient Terror with a Master Ball!$"
 
@@ -948,37 +948,37 @@ RivetshoreCity_Assembly_Trigger_Text_28:
 
 RivetshoreCity_Assembly_Trigger_Text_29:
 # 158 "data//maps/RivetshoreCity/scripts.pory"
-	.string "We should wait for Viniel and Carona\n"
+	.string "We should wait for {COLOR BLUE}Viniel{COLOR DARK_GRAY} and {COLOR BLUE}Carona{COLOR DARK_GRAY}\n"
 	.string "however. Without Medicham and\l"
 	.string "Manectric, we'll lose a lot of firepower.$"
 
 RivetshoreCity_Assembly_Trigger_Text_30:
 # 161 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Time is of the essence, Raazi.\n"
+	.string "Time is of the essence, {COLOR RED}Raazi{COLOR DARK_GRAY}.\n"
 	.string "We need someone to go now.$"
 
 RivetshoreCity_Assembly_Trigger_Text_31:
 # 162 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Then I propose Kohla.\p"
+	.string "Then I propose {COLOR GREEN}Kohla{COLOR DARK_GRAY}.\p"
 	.string "He's a star and I can personally\n"
 	.string "vouch for his strength.$"
 
 RivetshoreCity_Assembly_Trigger_Text_32:
 # 165 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Did he beat you, Raazi?$"
+	.string "Did he beat you, {COLOR RED}Raazi{COLOR DARK_GRAY}?$"
 
 RivetshoreCity_Assembly_Trigger_Text_33:
 # 166 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Yes. He's a fearsome trainer.\p"
 	.string "Not to mention - he's been fighting\n"
-	.string "Team Somber from the start.\p"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} from the start.\p"
 	.string "His dedication to the cause is far\n"
 	.string "beyond the rest of us combined.$"
 
 RivetshoreCity_Assembly_Trigger_Text_34:
 # 170 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Right then. Those in favour of sending\n"
-	.string "Kohla ahead?$"
+	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} ahead?$"
 
 RivetshoreCity_Assembly_Trigger_Text_35:
 # 172 "data//maps/RivetshoreCity/scripts.pory"
@@ -1000,7 +1000,7 @@ RivetshoreCity_Assembly_Trigger_Text_39:
 # 176 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Needless to say, detective,\n"
 	.string "we're all in favour.\p"
-	.string "Kohla, you have the respect of all the\n"
+	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY}, you have the respect of all the\n"
 	.string "other leaders in Cormoria.\p"
 	.string "We're counting on you.\p"
 	.string "I'm not going to ask whether you're up\n"
@@ -1008,7 +1008,7 @@ RivetshoreCity_Assembly_Trigger_Text_39:
 
 RivetshoreCity_Assembly_Trigger_Text_40:
 # 180 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Kohla - you're coming with us on the\n"
+	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} - you're coming with us on the\n"
 	.string "speedboat then.\p"
 	.string "There's a cruise ship that's scheduled\n"
 	.string "to leave soon. The other Gym Leaders\l"

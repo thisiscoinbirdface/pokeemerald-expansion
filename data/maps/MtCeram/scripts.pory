@@ -164,7 +164,7 @@ script MtCeram_EventScript_Eavesdrop{
     applymovement(LOCALID_FOOTKOHLA, moves(face_right))
     //Koha text
     speakername("Kohla")
-    msgbox(format("I've been spying on those two Team Somber Grunts. Don't make a sound!"))
+    msgbox(format("I've been spying on those two {COLOR BLUE}Team Somber{COLOR DARK_GRAY} Grunts. Don't make a sound!"))
     release   
 
     special(SpawnCameraObject)
@@ -190,7 +190,7 @@ script MtCeram_EventScript_Eavesdrop{
     applymovement(LOCALID_FOOTGRUNT2, moves(jump_in_place_left))
     waitmovement(0)
     speakername("Grunt B")
-    msgbox(format("Serves her right for losing! Team Somber doesn't need any losers!"))
+    msgbox(format("Serves her right for losing! {COLOR BLUE}Team Somber{COLOR DARK_GRAY} doesn't need any losers!"))
     release
     delay(8)
     applymovement(LOCALID_FOOTGRUNT1, moves(jump_in_place_right))
@@ -223,7 +223,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\pThat's called responsibility. Something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -290,7 +290,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPKOHLA, moves(jump_in_place_up))
     waitmovement(0)
     speakername("Kohla")
-    msgbox(format("That's enough of your mischief Team Somber! You're getting in the way of police business!"))
+    msgbox(format("That's enough of your mischief {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! You're getting in the way of police business!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
@@ -301,7 +301,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
     speakername("Kohla")
-    msgbox(format("I'm not a kid! I'm the Ace Rookie of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
+    msgbox(format("I'm not a kid! I'm the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
@@ -331,7 +331,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     waitmovement(0)
     delay(8)
     speakername("Kohla")
-    msgbox(format("Now come on Team Somber! Bring it on!"))
+    msgbox(format("Now come on {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! Bring it on!"))
     release  
     fadeoutbgm(0)
 
@@ -346,7 +346,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Hahaha! Your ace was a pushover, Ace Rookie!"))
+    msgbox(format("Hahaha! Your ace was a pushover, {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!"))
     release  
     fadescreenswapbuffers(FADE_FROM_BLACK)
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
@@ -357,7 +357,7 @@ script MtCeram_EventScript_BeforePeakBattle{
 
     //Kohla exit
     speakername("Kohla")
-    msgbox(format("My Pokémon...I have to go and heal them...I couldn't stop Team Somber..."))
+    msgbox(format("My Pokémon...I have to go and heal them...I couldn't stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}..."))
     release  
     applymovement(LOCALID_TOPKOHLA, moves(walk_down walk_right *2 walk_down *5))
     waitmovement(0)
@@ -395,7 +395,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Yeah...c'mon let's hurry.\p{PLAYER} - you may have beaten us but you can't stop Team Somber from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
+    msgbox(format("Yeah...c'mon let's hurry.\p{PLAYER} - you may have beaten us but you can't stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY} from achieving its goal!\pWe're warning you - DON'T follow us up the mountain peak, or you'll be sorry!"))
     release   
 
     //Move on
@@ -462,15 +462,15 @@ script MtCeram_TrainerBattle_D {
 
 script MtCeram_TrainerBattle_GRUNT1 {
     trainerbattle_single(TRAINER_MTCERAM_GRUNT1, format("Hey, kid! Where'd you come from?\nYou're not supposed to be here.\pWhy?\pStop asking questions and get lost!"), format("Fine! Don't get lost!"))
-    msgbox(format("Team Somber has control of this mountain now! Well...except for you."))
+    msgbox(format("{COLOR BLUE}Team Somber{COLOR DARK_GRAY} has control of this mountain now! Well...except for you."))
     release
     end
 }
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
-    msgbox(format("I love Team Somber! No wait...\nI love money!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and {COLOR BLUE}Team Somber{COLOR DARK_GRAY} will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
+    msgbox(format("I love {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! No wait...\nI love money!"))
     release
     end
 }

@@ -93,7 +93,7 @@ script Championship_Corridor_Mon2{
 
 
 script Championship_Corridor_NPC3{
-    msgbox(format("My first-round opponent was the Ace Rookie from Galecrest...\pRoserade and I never had a chance.\pIt's fine...\pI just...sniff..."), MSGBOX_NPC)
+    msgbox(format("My first-round opponent was the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from Galecrest...\pRoserade and I never had a chance.\pIt's fine...\pI just...sniff..."), MSGBOX_NPC)
     end
 }
 
@@ -132,6 +132,6 @@ script Championship_Corridor_Mon5{
 
 script Championship_Corridor_TV{
     playse(SE_APPLAUSE)
-    msgbox_delay("TV", format("And the crowd goes wild as Kohla's Ceruledge knocks out another Pokémon! I must say, we haven't seen a trainer like this in years! The skill! The style!\pHe sure is this years favourite!"))
+    msgbox_delay("TV", format("And the crowd goes wild as {COLOR GREEN}Kohla{COLOR DARK_GRAY}'s Ceruledge knocks out another Pokémon! I must say, we haven't seen a trainer like this in years! The skill! The style!\pHe sure is this years favourite!"))
     end
 }

@@ -9,7 +9,7 @@ mapscripts MirrohPeak_MapScripts{}
 
 //One NPC - tells you to heal
 script MirrohPeak_NPC_1{
-    msgbox(format("You look exhausted! You'd better head to Winterlily Hollow - go right from here and enter the cave."), MSGBOX_NPC)
+    msgbox(format("You look exhausted! You'd better head to {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} - go right from here and enter the cave."), MSGBOX_NPC)
     end
 }
 
@@ -74,7 +74,7 @@ script MirrohPeak_EventScript_Viniel{
     waitmovement(0)
     delay(16)
     speakername("Grunt")
-    msgbox(format("It's public space, Viniel! Didn't they teach you that at Gym Leader School?"))
+    msgbox(format("It's public space, {COLOR BLUE}Viniel{COLOR DARK_GRAY}! Didn't they teach you that at Gym Leader School?"))
     release
     applymovement(LOCALID_VINIEL, moves(emote_exclamation_mark))
     waitmovement(0) 
@@ -111,12 +111,12 @@ script MirrohPeak_EventScript_Viniel{
     applymovement(17, moves(emote_question_mark))  
     waitmovement(0)  
     speakername("Grunt")
-    msgbox(format("Wait...isn't that the trainer who beat Melea in Silversun City?"))
+    msgbox(format("Wait...isn't that the trainer who beat Melea in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}?"))
     release
     applymovement(14, moves(emote_exclamation_mark))
     waitmovement(0)    
     speakername("Grunt")
-    msgbox(format("Yeah, it is! And also Moxie at Mt. Ceram!\pYikes - someone better tell go them!"))
+    msgbox(format("Yeah, it is! And also Moxie at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}!\pYikes - someone better tell go them!"))
     release
     applymovement(19, moves(jump_in_place_down))
     waitmovement(0)
@@ -129,7 +129,7 @@ script MirrohPeak_EventScript_Viniel{
 
     applymovement(LOCALID_VINIEL, moves(emote_question_mark))
     speakername("Viniel")
-    msgbox(format("So you're an enemy of theirs?\pAn enemy of an enemy is a friend!\pTrainer, these Team Somber grunts suddenly came out of nowhere and started harrassing the great people of Winterlily Hollow.\pSo I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
+    msgbox(format("So you're an enemy of theirs?\pAn enemy of an enemy is a friend!\pTrainer, these {COLOR BLUE}Team Somber{COLOR DARK_GRAY} grunts suddenly came out of nowhere and started harrassing the great people of {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}.\pSo I'm out here beating them down, one by one! I can take this lot myself - you go on ahead! These guys are upto no good. The peak is right ahead - hurry up!"))
     release
     delay(16)
     playmoncry(SPECIES_MANECTRIC, CRY_MODE_NORMAL)
@@ -290,7 +290,7 @@ script MirrohPeak_EventScript_Somber_Cutscene{
     applymovement(LOCALID_MOXIE, moves(walk_right face_down))
     waitmovement(0)
     speakername("Moxie")
-    msgbox(format("My dear colleague has gone ahead into Ancient Cormoria...you've seen it, no?\pI wonder what it looks like.\pMelea will tell me when she returns.\p...\pChild, we stand right at the very cusp of attaining our goal.\pThe Ancient Terror will soon be ours.\p...\pI will give you a chance to turn around.\pWalk away from that which you\ndon't understand.\p...\pNo?\pVery well then.\nThis will be our final battle."))
+    msgbox(format("My dear colleague has gone ahead into {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}...you've seen it, no?\pI wonder what it looks like.\pMelea will tell me when she returns.\p...\pChild, we stand right at the very cusp of attaining our goal.\pThe Ancient Terror will soon be ours.\p...\pI will give you a chance to turn around.\pWalk away from that which you\ndon't understand.\p...\pNo?\pVery well then.\nThis will be our final battle."))
     
     goto(MirrohPeak_EventScript_Somber_Skip)
 }

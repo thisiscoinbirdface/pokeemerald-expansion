@@ -1128,8 +1128,8 @@ MtCeram_Eavesdrop_Trigger0_Text_1:
 
 MtCeram_EventScript_Eavesdrop_Text_0:
 # 167 "data//maps/MtCeram/scripts.pory"
-	.string "I've been spying on those two Team\n"
-	.string "Somber Grunts. Don't make a sound!$"
+	.string "I've been spying on those two {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY} Grunts. Don't make a sound!$"
 
 MtCeram_EventScript_Eavesdrop_Text_1:
 # 179 "data//maps/MtCeram/scripts.pory"
@@ -1158,8 +1158,8 @@ MtCeram_EventScript_Eavesdrop_Text_5:
 
 MtCeram_EventScript_Eavesdrop_Text_6:
 # 193 "data//maps/MtCeram/scripts.pory"
-	.string "Serves her right for losing! Team\n"
-	.string "Somber doesn't need any losers!$"
+	.string "Serves her right for losing! {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY} doesn't need any losers!$"
 
 MtCeram_EventScript_Eavesdrop_Text_7:
 # 200 "data//maps/MtCeram/scripts.pory"
@@ -1171,20 +1171,20 @@ MtCeram_EventScript_Eavesdrop_Text_7:
 MtCeram_EventScript_Eavesdrop_Text_8:
 # 226 "data//maps/MtCeram/scripts.pory"
 	.string "Heard that? I've got to get that\n"
-	.string "dreamstone before Team Somber!\p"
+	.string "dreamstone before {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!\p"
 	.string "That's called responsibility. Something\n"
 	.string "you wouldn't know about.\p"
 	.string "...\p"
 	.string "What? You're coming too? Hah! We're not\n"
 	.string "buddies, {PLAYER}. I'm the one and\l"
-	.string "only Ace Rookie, and I've told you\l"
+	.string "only {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}, and I've told you\l"
 	.string "before - I'm strong enough alone.\p"
 	.string "I don't need your help, chum!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_0:
 # 293 "data//maps/MtCeram/scripts.pory"
-	.string "That's enough of your mischief Team\n"
-	.string "Somber! You're getting in the way of\l"
+	.string "That's enough of your mischief {COLOR BLUE}Team\n"
+	.string "Somber{COLOR DARK_GRAY}! You're getting in the way of\l"
 	.string "police business!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_1:
@@ -1193,7 +1193,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_1:
 
 MtCeram_EventScript_BeforePeakBattle_Text_2:
 # 304 "data//maps/MtCeram/scripts.pory"
-	.string "I'm not a kid! I'm the Ace Rookie of the\n"
+	.string "I'm not a kid! I'm the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} of the\n"
 	.string "Detective Academy, and I'm not going to\l"
 	.string "let you steal the dreamstone!$"
 
@@ -1213,7 +1213,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_5:
 
 MtCeram_EventScript_BeforePeakBattle_Text_6:
 # 334 "data//maps/MtCeram/scripts.pory"
-	.string "Now come on Team Somber! Bring it on!$"
+	.string "Now come on {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! Bring it on!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_7:
 # 345 "data//maps/MtCeram/scripts.pory"
@@ -1221,13 +1221,13 @@ MtCeram_EventScript_BeforePeakBattle_Text_7:
 
 MtCeram_EventScript_BeforePeakBattle_Text_8:
 # 349 "data//maps/MtCeram/scripts.pory"
-	.string "Hahaha! Your ace was a pushover, Ace\n"
-	.string "Rookie!$"
+	.string "Hahaha! Your ace was a pushover, {COLOR GREEN}Ace\n"
+	.string "Rookie{COLOR DARK_GRAY}!$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_9:
 # 360 "data//maps/MtCeram/scripts.pory"
 	.string "My Pokémon...I have to go and heal\n"
-	.string "them...I couldn't stop Team Somber...$"
+	.string "them...I couldn't stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY}...$"
 
 MtCeram_EventScript_BeforePeakBattle_Text_10:
 # 370 "data//maps/MtCeram/scripts.pory"
@@ -1260,7 +1260,7 @@ MtCeram_EventScript_BeforePeakBattle_Text_16:
 # 398 "data//maps/MtCeram/scripts.pory"
 	.string "Yeah...c'mon let's hurry.\p"
 	.string "{PLAYER} - you may have beaten us\n"
-	.string "but you can't stop Team Somber from\l"
+	.string "but you can't stop {COLOR BLUE}Team Somber{COLOR DARK_GRAY} from\l"
 	.string "achieving its goal!\p"
 	.string "We're warning you - DON'T follow us up\n"
 	.string "the mountain peak, or you'll be sorry!$"
@@ -1335,13 +1335,13 @@ MtCeram_TrainerBattle_GRUNT1_Text_1:
 
 MtCeram_TrainerBattle_GRUNT1_Text_2:
 # 465 "data//maps/MtCeram/scripts.pory"
-	.string "Team Somber has control of this\n"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} has control of this\n"
 	.string "mountain now! Well...except for you.$"
 
 MtCeram_TrainerBattle_GRUNT2_Text_0:
 # 472 "data//maps/MtCeram/scripts.pory"
 	.string "We're going to get the dreamstone and\n"
-	.string "Team Somber will reward us!\p"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY} will reward us!\p"
 	.string "Wait, you're not a grunt.\n"
 	.string "Get out of here!$"
 
@@ -1351,7 +1351,7 @@ MtCeram_TrainerBattle_GRUNT2_Text_1:
 
 MtCeram_TrainerBattle_GRUNT2_Text_2:
 # 473 "data//maps/MtCeram/scripts.pory"
-	.string "I love Team Somber! No wait...\n"
+	.string "I love {COLOR BLUE}Team Somber{COLOR DARK_GRAY}! No wait...\n"
 	.string "I love money!$"
 
 MtCeram_EventScript_NPC1_Text_0:

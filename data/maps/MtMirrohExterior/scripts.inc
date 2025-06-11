@@ -470,7 +470,7 @@ MtMirrohExterior_BreechTrigger_Text_0:
 
 MtMirrohExterior_BreechTrigger_Text_1:
 # 28 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Clefable, did you see the Team Somber\n"
+	.string "Clefable, did you see the {COLOR BLUE}Team Somber{COLOR DARK_GRAY}\n"
 	.string "grunts too?$"
 
 MtMirrohExterior_BreechTrigger_Text_2:
@@ -486,9 +486,9 @@ MtMirrohExterior_BreechTrigger_Text_4:
 	.string "{PLAYER}! It's you! Fancy seeing you\n"
 	.string "here. How are you?\p"
 	.string "...\p"
-	.string "So you're chasing Team Somber. I admire\n"
+	.string "So you're chasing {COLOR BLUE}Team Somber{COLOR DARK_GRAY}. I admire\n"
 	.string "you, {PLAYER}. Clefable and I just saw\l"
-	.string "a couple of them enter Mt. Mirroh. They\l"
+	.string "a couple of them enter {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. They\l"
 	.string "left this drill here and blocked the\l"
 	.string "path with these boulders. I wonder what\l"
 	.string "they're using all this equipment for?$"
@@ -503,7 +503,7 @@ MtMirrohExterior_BreechTrigger_Text_5:
 MtMirrohExterior_BreechTrigger_Text_6:
 # 58 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Clefable and I just made our way down\n"
-	.string "Mt. Mirroh. We're going to take a break\l"
+	.string "{COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. We're going to take a break\l"
 	.string "from the mountains.\p"
 	.string "Where are we going next?\p"
 	.string "Rivetshore City! We're going to enjoy\n"
@@ -528,7 +528,7 @@ MtMirrohExterior_Breech_Reward_Give_Text_0:
 
 MtMirrohExterior_Breech_Reward_End_Text_0:
 # 81 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Maybe we'll see you in Rivetshore City!$"
+	.string "Maybe we'll see you in {COLOR RED}Rivetshore City{COLOR DARK_GRAY}!$"
 
 MtMirrohExterior_Trainer_A_Text_0:
 # 111 "data//maps/MtMirrohExterior/scripts.pory"
@@ -584,8 +584,8 @@ MtMirrohExterior_NPC_A_Text_0:
 MtMirrohExterior_NPC_B_Text_0:
 # 167 "data//maps/MtMirrohExterior/scripts.pory"
 	.string "Higher up, the weather becomes too\n"
-	.string "harsh to climb, so to reach Winterlily\l"
-	.string "Hollow, you have to cross the caverns\l"
+	.string "harsh to climb, so to reach {COLOR GREEN}Winterlily\l"
+	.string "Hollow{COLOR DARK_GRAY}, you have to cross the caverns\l"
 	.string "inside the mountain.$"
 
 MtMirrohExterior_NPC_C_Text_0:
@@ -623,8 +623,8 @@ MtMirrohExterior_NPC_F_Text_0:
 	.string "Someone told me you could buy Mega\n"
 	.string "Stones here, but it turned out to be a\l"
 	.string "garden supply store!\p"
-	.string "I heard you can get them in Rivetshore\n"
-	.string "City though.$"
+	.string "I heard you can get them in {COLOR RED}Rivetshore\n"
+	.string "City{COLOR DARK_GRAY} though.$"
 
 MtMirrohExterior_NPC_G_Text_0:
 # 234 "data//maps/MtMirrohExterior/scripts.pory"

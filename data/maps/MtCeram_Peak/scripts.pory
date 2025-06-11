@@ -102,7 +102,7 @@ script MtCeramPeak_MainEvent_Cutscene{
     //Explain tenebris research
     //Explain somber goals
     speakername("???")
-    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
+    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
@@ -133,7 +133,7 @@ script MtCeramPeak_MainEvent_Cutscene{
     waitmovement(0)
     delay(16)
     speakername("???")
-    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
+    msgbox(format("And if we get such power, there would be nothing stopping {COLOR BLUE}Team Somber{COLOR DARK_GRAY} from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
     release
     delay(16)
 
@@ -143,7 +143,7 @@ script MtCeramPeak_MainEvent_Cutscene{
 script MtCeramPeak_MainEvent_Battle{
     //Pre-battle
     speakername("Moxie")
-    msgbox(format("I, Moxie, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
+    msgbox(format("I, Moxie, Head of the {COLOR BLUE}Team Somber{COLOR DARK_GRAY} Research Wing, will end your meddling once and for all!"))
     release
 
     //Battle

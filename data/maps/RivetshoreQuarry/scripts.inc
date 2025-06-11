@@ -702,7 +702,7 @@ RivetshoreQuarry_NPC2_Text_0:
 
 RivetshoreQuarry_NPC2_Text_1:
 # 119 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "Work's become better after the Raazi\n"
+	.string "Work's become better after the {COLOR RED}Raazi{COLOR DARK_GRAY}\n"
 	.string "set up this infirmary and resting spot.\l"
 	.string "He really understands our struggles!\p"
 	.string "I can't say the same for the shift\n"
@@ -712,7 +712,7 @@ RivetshoreQuarry_NPC2_Text_1:
 RivetshoreQuarry_Blocker_NPC_Text_0:
 # 125 "data//maps/RivetshoreQuarry/scripts.pory"
 	.string "Why aren't people allowed in the quarry\n"
-	.string "when Raazi's not around?\p"
+	.string "when {COLOR RED}Raazi{COLOR DARK_GRAY}'s not around?\p"
 	.string "Cause it's dangerous, idiot!$"
 
 RivetshoreQuarry_Raazi_Callout_Trigger_Text_0:
@@ -737,7 +737,7 @@ RivetshoreQuarry_Fall_Trigger_Text_1:
 
 RivetshoreQuarry_Blocker_Trigger_Text_0:
 # 205 "data//maps/RivetshoreQuarry/scripts.pory"
-	.string "Sorry. The quarry's closed sinze Raazi's\n"
+	.string "Sorry. The quarry's closed sinze {COLOR RED}Raazi{COLOR DARK_GRAY}'s\n"
 	.string "not here right now.\p"
 	.string "Where'd he go?\p"
 	.string "What's it to you, kid?$"
@@ -831,8 +831,8 @@ Rivetshore_Raazi_Talk_Text_0:
 	.string "expand the cave?\p"
 	.string "No matter - a trainer who faces me is a\n"
 	.string "trainer who I must face.\p"
-	.string "I am Raazi! The Gym Leader of\n"
-	.string "Rivetshore City and the strongest\l"
+	.string "I am {COLOR RED}Raazi{COLOR DARK_GRAY}! The Gym Leader of\n"
+	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY} and the strongest\l"
 	.string "leader in all of Cormoria. Few trainers\l"
 	.string "posess enough grit to reach where you\l"
 	.string "stand, {PLAYER}. But their fate is to\l"
@@ -853,7 +853,7 @@ Rivetshore_Raazi_Talk_Text_3:
 	.string "Hello?\p"
 	.string "...\p"
 	.string "...\p"
-	.string "Viniel and Carona are here?\p"
+	.string "Viniel and {COLOR BLUE}Carona{COLOR DARK_GRAY} are here?\p"
 	.string "Very well. I'm coming.\n"
 	.string "We'll depart as soon as I reach.$"
 

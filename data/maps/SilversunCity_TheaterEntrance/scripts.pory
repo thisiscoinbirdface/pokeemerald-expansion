@@ -69,9 +69,9 @@ script SilversunCity_TheaterEntrance_EventScript_NPC1{
 //Man
 script SilversunCity_TheaterEntrance_EventScript_NPC2{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("The action! The tension! And all the razzle-dazzle! Gloria was sizzling! Too bad she lost though."), MSGBOX_NPC)
+        msgbox(format("The action! The tension! And all the razzle-dazzle! {COLOR BLUE}Gloria{COLOR DARK_GRAY} was sizzling! Too bad she lost though."), MSGBOX_NPC)
     } else {
-        msgbox(format("I write for Cormoria Culture, the leading arts and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
+        msgbox(format("I write for Cormoria Culture, the leading arts and entertainment portal in Cormoria! Let's see what {COLOR BLUE}Gloria{COLOR DARK_GRAY} has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
     }
     end
 }
@@ -83,7 +83,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
 //     if (flag(FLAG_BADGE04_GET)){
 //         msgbox(format("Did you see GLORIA's SERPERIOR! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."))
 //     } else {
-//         msgbox(format("I'm a huuuge Gloria fan! I've been waiting for this show for months!"))
+//         msgbox(format("I'm a huuuge {COLOR BLUE}Gloria{COLOR DARK_GRAY} fan! I've been waiting for this show for months!"))
 //     }
 //     releaseall
 //     end
@@ -104,14 +104,14 @@ script SilversunCity_TheaterEntrance_EventScript_NPC5{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Hey - get in the shot! Not you - your Pokémon! You can keep moving."), MSGBOX_NPC)
     } else {
-        msgbox(format("Hey - get out of the shot! What if Gloria walks by?"), MSGBOX_NPC)
+        msgbox(format("Hey - get out of the shot! What if {COLOR BLUE}Gloria{COLOR DARK_GRAY} walks by?"), MSGBOX_NPC)
     }
     end
 }
 //Reporter
 script SilversunCity_TheaterEntrance_EventScript_NPC6{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Ooh I bet our photographs of Gloria will go for a pretty price after this performance!"), MSGBOX_NPC)
+        msgbox(format("Ooh I bet our photographs of {COLOR BLUE}Gloria{COLOR DARK_GRAY} will go for a pretty price after this performance!"), MSGBOX_NPC)
     } else {
         msgbox(format("We're journalists looking for an interview with the cast and crew. Are you a crew member?\pNo?\pThen move along!"), MSGBOX_NPC)
     }
@@ -123,15 +123,15 @@ script SilversunCity_TheaterEntrance_EventScript_NPC7{
         if (flag(FLAG_SILVERSUN_THEATER_MANIAC)){
             msgbox(format("Obsession isn't healthy. It can be hard to get out of the loop, but I've got to!"), MSGBOX_NPC)
         } else {
-            msgbox(format("Argh! I'm so upset! I can't forgive that trainer who made my Gloria look bad on stage...wait, it's you?\pJustice will be served!"), MSGBOX_NPC)
+            msgbox(format("Argh! I'm so upset! I can't forgive that trainer who made my {COLOR BLUE}Gloria{COLOR DARK_GRAY} look bad on stage...wait, it's you?\pJustice will be served!"), MSGBOX_NPC)
             //Battle
-            trainerbattle_no_intro(TRAINER_THEATER_B, format("My love for Gloria wasn't enough..."))
+            trainerbattle_no_intro(TRAINER_THEATER_B, format("My love for {COLOR BLUE}Gloria{COLOR DARK_GRAY} wasn't enough..."))
             release
-            msgbox(format("Sigh...I didn't want to admit it but I know. Gloria is only human after all. She's allowed to lose a battle. I need to stop idolising her and think of her as another human being."), MSGBOX_NPC)
+            msgbox(format("Sigh...I didn't want to admit it but I know. {COLOR BLUE}Gloria{COLOR DARK_GRAY} is only human after all. She's allowed to lose a battle. I need to stop idolising her and think of her as another human being."), MSGBOX_NPC)
             setflag(FLAG_SILVERSUN_THEATER_MANIAC)            
         }
     } else {
-        msgbox(format("Just look at those salivating paparazzi over there! Nobody should be salivating over Gloria but me!"), MSGBOX_NPC)
+        msgbox(format("Just look at those salivating paparazzi over there! Nobody should be salivating over {COLOR BLUE}Gloria{COLOR DARK_GRAY} but me!"), MSGBOX_NPC)
     }
     end
 }
@@ -139,7 +139,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC7{
 //Old man
 script SilversunCity_TheaterEntrance_EventScript_NPC8{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("I've seen better in my day!\pI'm talking about you of course. Gloria was perfect."), MSGBOX_NPC)
+        msgbox(format("I've seen better in my day!\pI'm talking about you of course. {COLOR BLUE}Gloria{COLOR DARK_GRAY} was perfect."), MSGBOX_NPC)
     } else {
         msgbox(format("I've seen many a performance in my life. I'm not a snob, but I do have high standards."), MSGBOX_NPC)
     }

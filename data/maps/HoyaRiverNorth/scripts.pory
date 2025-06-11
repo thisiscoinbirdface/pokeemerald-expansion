@@ -86,7 +86,7 @@ script Route6_Transition_EventScript_KohlaBattle{
 
     //Dialogue
     speakername("Kohla")
-    msgbox(format("Once again you save the day while I run off chasing dead leads. Your stupid Professor Rue's lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
+    msgbox(format("Once again you save the day while I run off chasing dead leads. Your stupid Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}'s lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
     release
 
     //Battle

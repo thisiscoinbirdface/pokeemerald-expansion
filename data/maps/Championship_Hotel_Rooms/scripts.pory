@@ -153,12 +153,12 @@ script Championship_Hotel_Rooms_Kohla{
     msgbox_delay("Kohla", format("Give me a good reason I shouldn't call the police right now."))
     msgbox_delay("Moxie", format("Will you give us a moment to talk at least? Like Melea said, we're not here to fight. Just listen to us."))
     msgbox_delay("Kohla", format("...fine. Hurry up then.\nI've got a tournament to win."))
-    msgbox_delay("Melea", format("That's why we're here, Kohla."))
+    msgbox_delay("Melea", format("That's why we're here, {COLOR GREEN}Kohla{COLOR DARK_GRAY}."))
     msgbox_delay("Moxie", format("Have you see the rest of the competitors this year?\lDo an of the names stick out?"))
-    msgbox_delay("Kohla", format("If you're talking about that former grunt, Gabrielle -"))
+    msgbox_delay("Kohla", format("If you're talking about that former grunt, {COLOR RED}Gabrielle{COLOR DARK_GRAY} -"))
     msgbox_delay("Melea", format("Do NOT utter her name!\p...\pNo, not her. She's of no consequence."))
     msgbox_delay("Kohla", format("Then who?"))
-    msgbox_delay("Moxie", format("It's obvious, Kohla.\pWe're talking about {PLAYER}."))
+    msgbox_delay("Moxie", format("It's obvious, {COLOR GREEN}Kohla{COLOR DARK_GRAY}.\pWe're talking about {PLAYER}."))
     msgbox_delay("Kohla", format("...\pI'm listening."))
     msgbox_delay("Melea", format("An enemy of an enemy is a friend.\nAll we want to do is offer a bit of help against {PLAYER}. Just in case you two get matched against each other."))
     msgbox_delay("Moxie", format("We're taking a risk admitting this...but the Gym Leaders didn't find all our Ancient Pokémon. We've still got one.\pWhat would you say to using it in the tournament?"))
@@ -166,7 +166,7 @@ script Championship_Hotel_Rooms_Kohla{
     msgbox_delay("Melea", format("Exactly."))
     msgbox_delay("Kohla", format("...\pBut you're not friends of mine.\pIf you think that I'll ever take any help from anyone - much less the likes of you two - then you're mistaken!\pI don't NEED help!\pI'm better than {PLAYER}! Do you understand? I can beat {PLAYER} with my own Pokémon!\pNow get out of my room!"))
     msgbox_delay("Melea", format("...\pA shame."))
-    msgbox_delay("Moxie", format("Good luck, Ace Rookie.\nWe'll be in touch."))    
+    msgbox_delay("Moxie", format("Good luck, {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}.\nWe'll be in touch."))    
 
     //exit
     //player move

@@ -877,7 +877,7 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_0:
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_1:
 # 69 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Ahh...beautiful. We have much to thank\n"
-	.string "you for, Asst. Prof. Rue.\p"
+	.string "you for, Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}.\p"
 	.string "Your Dreamalyser blueprints will be\n"
 	.string "invaluable to our efforts to get the\l"
 	.string "second dreamstone.$"
@@ -888,7 +888,7 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_2:
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_3:
 # 72 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "You mean the one on Mt. Mirroh?$"
+	.string "You mean the one on {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}?$"
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_4:
 # 75 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -905,9 +905,9 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_6:
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_7:
 # 117 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "So you're the one who defeated Moxie at\n"
-	.string "Mt. Ceram. So young...you must've gotten\l"
+	.string "{COLOR RED}Mt. Ceram{COLOR DARK_GRAY}. So young...you must've gotten\l"
 	.string "really lucky.\p"
-	.string "Meet your Asst. Prof. Rue. He's been of\n"
+	.string "Meet your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}. He's been of\n"
 	.string "immense help to us...albeit unwillingly.$"
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_8:
@@ -925,7 +925,7 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_10:
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_11:
 # 143 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "Boss! Boss! Gabrielle was on guard duty.$"
+	.string "Boss! Boss! {COLOR RED}Gabrielle{COLOR DARK_GRAY} was on guard duty.$"
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_12:
 # 152 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -960,7 +960,7 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_18:
 # 179 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "You just NOTHING! You BETRAYED us!\n"
 	.string "Out! OUT! You're no longer a part of\l"
-	.string "Team Somber! And I'm going to have a\l"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY}! And I'm going to have a\l"
 	.string "squad chase you all over Cormoria!$"
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_19:
@@ -984,12 +984,12 @@ SilversunCity_SomberHQ_EventScript_Cutscene_Text_22:
 
 SilversunCity_SomberHQ_EventScript_Cutscene_Text_23:
 # 213 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "So you know our plan now. At Mt. Ceram,\n"
+	.string "So you know our plan now. At {COLOR RED}Mt. Ceram{COLOR DARK_GRAY},\n"
 	.string "we didn't have the tools to control the\l"
 	.string "dreamstone. But, with the blueprints\l"
-	.string "your Asst. Prof. Rue handed us right\l"
+	.string "your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY} handed us right\l"
 	.string "now, we're going to build a Dreamalyser\l"
-	.string "and take it to Mt. Mirroh. We'll obtain\l"
+	.string "and take it to {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}. We'll obtain\l"
 	.string "the dreamstone there...and the rest?\p"
 	.string "Well you'll never see any of it.$"
 
@@ -1005,14 +1005,14 @@ SilversunCity_SomberHQ_EventScript_Skip_Text_1:
 SilversunCity_SomberHQ_EventScript_Skip_Text_2:
 # 233 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Unbelievable! Just unbelievable!\p"
-	.string "Fine. You can have your Asst. Prof. Rue\n"
+	.string "Fine. You can have your Asst. Prof. {COLOR BLUE}Rue{COLOR DARK_GRAY}\n"
 	.string "back, child! We've got what we need from\l"
 	.string "him anyway. Let's go!$"
 
 SilversunCity_SomberHQ_EventScript_Skip_Text_3:
 # 240 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Heed this warning, {PLAYER}. Do NOT\n"
-	.string "try to thwart us at Mt. Mirroh, or else\l"
+	.string "try to thwart us at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}, or else\l"
 	.string "we will crush you!$"
 
 SilversunCity_SomberHQ_EventScript_Skip_Text_4:
@@ -1038,14 +1038,14 @@ SomberHQ_NPC1_Text_0:
 	.string "go on field trips like school children?\l"
 	.string "Someone's gotta make the money! I'm a\l"
 	.string "financial whiz. I'm the real backbone of\l"
-	.string "Team Somber!$"
+	.string "{COLOR BLUE}Team Somber{COLOR DARK_GRAY}!$"
 
 SomberHQ_NPC2_Text_0:
 # 318 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "The other guy thinks he's hot stuff but\n"
 	.string "without my tech skills, nothing in this\l"
 	.string "office would function! I'm the real\l"
-	.string "backbone of Team Somber!$"
+	.string "backbone of {COLOR BLUE}Team Somber{COLOR DARK_GRAY}!$"
 
 SomberHQ_NPC3_Text_0:
 # 325 "data//maps/SilversunCity_SomberHQ/scripts.pory"
@@ -1069,7 +1069,7 @@ SomberHQ_NPCGrunt_Text_1:
 # 342 "data//maps/SilversunCity_SomberHQ/scripts.pory"
 	.string "Who're you? Did you bring the shipment?\p"
 	.string "Wait a minute...you're that trainer who\n"
-	.string "beat us at Mt. Ceram! Oh, you've got\l"
+	.string "beat us at {COLOR RED}Mt. Ceram{COLOR DARK_GRAY}! Oh, you've got\l"
 	.string "some nerve coming up and talking to me!\p"
 	.string "...\p"
 	.string "Eh, I'm on shipment duty, not guard\n"
@@ -1189,7 +1189,7 @@ SomberHQ_Grunt_E_Text_2:
 
 SomberHQ_Grunt_F_Text_0:
 # 430 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "You again? That stupid Gabrielle\n"
+	.string "You again? That stupid {COLOR RED}Gabrielle{COLOR DARK_GRAY}\n"
 	.string "must've let you in - I know it!$"
 
 SomberHQ_Grunt_F_Text_1:
@@ -1208,9 +1208,9 @@ SomberHQ_Grunt_G_Text_0:
 
 SomberHQ_Grunt_H_Text_0:
 # 442 "data//maps/SilversunCity_SomberHQ/scripts.pory"
-	.string "Gabrielle and I were next up for admin\n"
-	.string "positions...until she goofed at Mt.\l"
-	.string "Ceram! Now it's just me.\p"
+	.string "{COLOR RED}Gabrielle{COLOR DARK_GRAY} and I were next up for admin\n"
+	.string "positions...until she goofed at {COLOR RED}Mt.\l"
+	.string "Ceram{COLOR DARK_GRAY}! Now it's just me.\p"
 	.string "Let me show you why!$"
 
 SomberHQ_Grunt_H_Text_1:

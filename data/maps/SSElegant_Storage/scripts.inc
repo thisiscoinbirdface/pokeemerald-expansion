@@ -433,7 +433,7 @@ SSElegant_Storage_GabConfronts_Text_0:
 
 SSElegant_Storage_GabConfronts_Text_1:
 # 88 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "...and that's what Raazi wants you to\n"
+	.string "...and that's what {COLOR RED}Raazi{COLOR DARK_GRAY} wants you to\n"
 	.string "do!$"
 
 SSElegant_Storage_GabConfronts_Text_2:

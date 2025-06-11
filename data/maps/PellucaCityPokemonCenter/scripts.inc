@@ -454,7 +454,7 @@ PellucaCity_EventEnd_Text_16:
 # 99 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "...and the Qwilsquad will start doing\n"
 	.string "things by the book.\p"
-	.string "You won't recognise Pelluca City the\n"
+	.string "You won't recognise {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} the\n"
 	.string "next time you visit - we promise!$"
 
 PellucaCity_EventEnd_Text_17:
@@ -464,7 +464,7 @@ PellucaCity_EventEnd_Text_17:
 	.string "...\p"
 	.string "Team Somber, eh? One of my boys told me\n"
 	.string "about 'em. Something about an operation\l"
-	.string "up in Mt. Mirroh.\p"
+	.string "up in {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}.\p"
 	.string "They're rotten to the core, they are.\n"
 	.string "If I were you, I'd be extra careful!$"
 
@@ -481,8 +481,8 @@ PellucaCity_PokemonCenter_NPC1_Text_1:
 
 PellucaCity_PokemonCenter_NPC2_Text_0:
 # 170 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	.string "They're closing the gym in Mirroh Base\n"
-	.string "Camp! I need to go and get the badge,\l"
+	.string "They're closing the gym in {COLOR BLUE}Mirroh Base\n"
+	.string "Camp{COLOR DARK_GRAY}! I need to go and get the badge,\l"
 	.string "but the Qwilsquad grunt outside won't\l"
 	.string "let me.$"
 
@@ -499,13 +499,13 @@ PellucaCity_PokemonCenter_Nurse2_Text_0:
 PellucaCity_PokemonCenter_Nurse3_Text_0:
 # 187 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "We've all got it bad, but the worst is\n"
-	.string "the nurse up in Winterlily Hollow!\p"
+	.string "the nurse up in {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}!\p"
 	.string "I'm going up there with these Chanseys\n"
 	.string "to help her out.$"
 
 PellucaCity_PokemonCenter_Nurse4_Text_0:
 # 191 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	.string "The nurse in Winterlily Hollow requested\n"
+	.string "The nurse in {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} requested\n"
 	.string "for some extra help. Since the\l"
 	.string "higher-ups don't care, we're going to\l"
 	.string "look out for our sisters!$"

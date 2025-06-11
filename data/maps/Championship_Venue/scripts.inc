@@ -450,7 +450,7 @@ Champ_Venue_NPC1_Text_0:
 Champ_Venue_NPC2_Text_0:
 # 127 "data//maps/Championship_Venue/scripts.pory"
 	.string "We're trying to get an exclusive scoop\n"
-	.string "with the Ace Rookie!\p"
+	.string "with the {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY}!\p"
 	.string "...so get out of the way!$"
 
 Champ_Venue_NPC3_Text_0:
@@ -484,13 +484,13 @@ Champ_Venue_Inger_Text_0:
 
 Champ_Venue_Minior_Text_0:
 # 161 "data//maps/Championship_Venue/scripts.pory"
-	.string "Minior is curling up to Inger!$"
+	.string "Minior is curling up to {COLOR RED}Inger{COLOR DARK_GRAY}!$"
 
 Champ_Venue_Ariana_Text_0:
 # 165 "data//maps/Championship_Venue/scripts.pory"
 	.string "Gym Leaders aren't allowed to compete,\n"
 	.string "since we're part of the system.\l"
-	.string "Otherwise Raazi would win every time!$"
+	.string "Otherwise {COLOR RED}Raazi{COLOR DARK_GRAY} would win every time!$"
 
 Champ_Venue_Tauros_Text_0:
 # 170 "data//maps/Championship_Venue/scripts.pory"
@@ -504,7 +504,7 @@ Champ_Venue_NoticeBoard_Text_0:
 	.string "ROUND 1 PAIRINGS\n"
 	.string "Kohla vs. Brent...\l"
 	.string "...\l"
-	.string "...Gabrielle vs. Anaya\l"
+	.string "...{COLOR RED}Gabrielle{COLOR DARK_GRAY} vs. Anaya\l"
 	.string "...\l"
 	.string "...\l"
 	.string "...Aha!\p"

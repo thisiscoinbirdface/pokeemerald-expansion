@@ -1376,7 +1376,7 @@ RangerInstitute_1F_NPC4_Text_0:
 	.string "You heard about the Mega Sharpedo in\n"
 	.string "the Hoya River, right?\p"
 	.string "We're tracking it on our scanners - it's\n"
-	.string "headed to Pelluca City. I hope it\l"
+	.string "headed to {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. I hope it\l"
 	.string "doesn't cause any damage...$"
 
 RangerInstitute_1F_BlockerBasement_Text_0:
@@ -1486,9 +1486,9 @@ RangerInstitute_2F_EventScript_Welcome_Text_11:
 	.string "you're a proper Pokémon Ranger!\p"
 	.string "You can access the other Ranger\n"
 	.string "Institutes with this.\p"
-	.string "We have a branch up north by the Ivy\n"
-	.string "River, and down south by the sea near\l"
-	.string "Rivetshore City.$"
+	.string "We have a branch up north by the {COLOR BLUE}Ivy\n"
+	.string "River{COLOR DARK_GRAY}, and down south by the sea near\l"
+	.string "{COLOR RED}Rivetshore City{COLOR DARK_GRAY}.$"
 
 RangerInstitute_2F_EventScript_Welcome_Text_12:
 # 413 "data//maps/RangerInstitute/scripts.pory"
@@ -1522,7 +1522,7 @@ RangerInstitute_2F_EventScript_Welcome_Text_14:
 RangerInstitute_2F_EventScript_Welcome_Text_15:
 # 423 "data//maps/RangerInstitute/scripts.pory"
 	.string "Now, I have some important items that\n"
-	.string "the Ranger Institute at Ivy River\l"
+	.string "the Ranger Institute at {COLOR BLUE}Ivy River{COLOR DARK_GRAY}\l"
 	.string "wants. Your first mission will be to\l"
 	.string "deliver this to them!$"
 
@@ -1530,10 +1530,10 @@ RangerInstitute_2F_EventScript_Welcome_Text_16:
 # 431 "data//maps/RangerInstitute/scripts.pory"
 	.string "If you complete this mission, you'll\n"
 	.string "rank up from Recruit to Candidate.\p"
-	.string "The Ranger Institute at Ivy River is a\n"
+	.string "The Ranger Institute at {COLOR BLUE}Ivy River{COLOR DARK_GRAY} is a\n"
 	.string "little hard to find. You'll have to surf\l"
-	.string "down from Winterlily Hollow and explore\l"
-	.string "Lily Pond.\p"
+	.string "down from {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY} and explore\l"
+	.string "{COLOR BLUE}Lily Pond{COLOR DARK_GRAY}.\p"
 	.string "Good training for a recruit, eh?$"
 
 RangerInstitute_Ravine_Text_0:

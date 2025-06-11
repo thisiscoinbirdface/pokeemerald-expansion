@@ -78,7 +78,7 @@ SSElegant_Common_NPC2_Text_0:
 # 30 "data//maps/SSElegant_Common/scripts.pory"
 	.string "They're talking about an unscheduled\n"
 	.string "stop...but there's nothing in the sea\l"
-	.string "before Victory Cape. Where is this\l"
+	.string "before {COLOR RED}Victory Cape{COLOR DARK_GRAY}. Where is this\l"
 	.string "stop?$"
 
 SSElegant_Common_Carona_Text_0:

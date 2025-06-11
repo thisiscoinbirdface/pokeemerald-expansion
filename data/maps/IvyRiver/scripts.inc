@@ -685,7 +685,7 @@ LilyPond_Fisherman_B_Text_0:
 
 LilyPond_Fisherman_C_Text_0:
 # 297 "data//maps/IvyRiver/scripts.pory"
-	.string "My brothers and I fish around Lily Pond.\n"
+	.string "My brothers and I fish around {COLOR BLUE}Lily Pond{COLOR DARK_GRAY}.\n"
 	.string "We have a connection to this place -\l"
 	.string "although not a happy one.\p"
 	.string "Do you want to hear our story?$"
@@ -697,11 +697,11 @@ LilyPond_Fisherman_C_Text_1:
 LilyPond_Fisherman_C_Text_2:
 # 304 "data//maps/IvyRiver/scripts.pory"
 	.string "We were four brothers. Many years ago,\n"
-	.string "we came to Lily Pond to fish for our\l"
+	.string "we came to {COLOR BLUE}Lily Pond{COLOR DARK_GRAY} to fish for our\l"
 	.string "first Pokémon. While three of us stayed\l"
 	.string "here, our youngest brother said he\l"
 	.string "wanted to go down the waterfall and\l"
-	.string "into Ivy River. We tried to stop him, but\l"
+	.string "into {COLOR BLUE}Ivy River{COLOR DARK_GRAY}. We tried to stop him, but\l"
 	.string "he went away, and was never seen again.$"
 
 LilyPond_Fisherman_C_Text_3:
@@ -710,5 +710,5 @@ LilyPond_Fisherman_C_Text_3:
 
 IvyRiver_Ranger_Blocker_Text_0:
 # 317 "data//maps/IvyRiver/scripts.pory"
-	.string "Sorry - to access the Ivy River Ranger\n"
+	.string "Sorry - to access the {COLOR BLUE}Ivy River{COLOR DARK_GRAY} Ranger\n"
 	.string "Institute, you must be a member.$"

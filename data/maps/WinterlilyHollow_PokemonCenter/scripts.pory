@@ -25,7 +25,7 @@ script WinterlilyHollow_PokemonCenter_Chansey{
 	end
 }
 script WinterlilyHollow_PokemonCenter_NPC2{
-	msgbox(format("This is my first time in Winterlily Hollow. I came to visit the Ranger Institute further down in Ivy River."), MSGBOX_NPC)
+	msgbox(format("This is my first time in {COLOR GREEN}Winterlily Hollow{COLOR DARK_GRAY}. I came to visit the Ranger Institute further down in {COLOR BLUE}Ivy River{COLOR DARK_GRAY}."), MSGBOX_NPC)
 	end
 }
 

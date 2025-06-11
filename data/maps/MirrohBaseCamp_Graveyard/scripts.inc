@@ -164,7 +164,7 @@ MirrohBaseCamp_Graveyard_KohlaBattle_Text_4:
 MirrohBaseCamp_Graveyard_KohlaBattle_Text_5:
 # 33 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"
 	.string "I have to carry on.\p"
-	.string "I'll see you at Mt. Mirroh.$"
+	.string "I'll see you at {COLOR BLUE}Mt. Mirroh{COLOR DARK_GRAY}.$"
 
 MirrohBaseCamp_Graveyard_Spiritomb_Text_0:
 # 57 "data//maps/MirrohBaseCamp_Graveyard/scripts.pory"

@@ -89,7 +89,7 @@ IvyRiver_Trainer_A_Text_1:
 
 IvyRiver_Trainer_A_Text_2:
 # 28 "data//maps/IvyRiver_Main/scripts.pory"
-	.string "Because Ivy River is untouched by\n"
+	.string "Because {COLOR BLUE}Ivy River{COLOR DARK_GRAY} is untouched by\n"
 	.string "people, rare Pokémon can thrive.$"
 
 IvyRiver_Trainer_B_Text_0:
@@ -127,7 +127,7 @@ IvyRiver_Trainer_C_Text_2:
 IvyRiver_Trainer_D_Text_0:
 # 62 "data//maps/IvyRiver_Main/scripts.pory"
 	.string "You're the trainer who beat me back in\n"
-	.string "Vilethorn Woods!\p"
+	.string "{COLOR RED}Vilethorn Woods{COLOR DARK_GRAY}!\p"
 	.string "I wanted to become the first BUG type\n"
 	.string "Gym Leader but guess what - I've\l"
 	.string "changed my dream. Now I'm going to be\l"

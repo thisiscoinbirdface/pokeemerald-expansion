@@ -437,7 +437,7 @@ PellucaCityHouses_MayorQuestStart_Text_3:
 # 43 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "What now? I just can't -\p"
 	.string "Oh, it's you. The trainer at the bridge.\p"
-	.string "How has your stay at Pelluca City been\n"
+	.string "How has your stay at {COLOR BLUE}Pelluca City{COLOR DARK_GRAY} been\n"
 	.string "so far?\p"
 	.string "We hope you enjoy the cool riverside\n"
 	.string "breeze while munching on one of our\l"
@@ -449,7 +449,7 @@ PellucaCityHouses_MayorQuestStart_Text_4:
 # 47 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Using this, you'll be able to use the\n"
 	.string "Drifblim outside our Pokémon Center to\l"
-	.string "fly to Silversun City.\p"
+	.string "fly to {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.\p"
 	.string "Convenient access for all tourists!\p"
 	.string "...\p"
 	.string "After what you've seen, there's no\n"
@@ -508,7 +508,7 @@ PellucaCityHouses_GabSibling2_Text_0:
 
 PellucaCityHouses_GabSibling3_Text_0:
 # 117 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Gabrielle keeps us afloat. Without her,\n"
+	.string "{COLOR RED}Gabrielle{COLOR DARK_GRAY} keeps us afloat. Without her,\n"
 	.string "I wouldn't be able to afford to study.\p"
 	.string "I got her a gift.$"
 
@@ -568,14 +568,14 @@ PellucaCityHouses_NPC1_Text_2:
 
 PellucaCityHouses_NPC1_Text_3:
 # 211 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "On the behalf of residents of Pelluca\n"
-	.string "City, thank you for your service!$"
+	.string "On the behalf of residents of {COLOR BLUE}Pelluca\n"
+	.string "City{COLOR DARK_GRAY}, thank you for your service!$"
 
 PellucaCityHouses_NPC1_Text_4:
 # 218 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "I'm the mayor of Pelluca City. Since we\n"
-	.string "sit at the intersection of the Ivy\l"
-	.string "River and the Hoya River, it's split up\l"
+	.string "I'm the mayor of {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}. Since we\n"
+	.string "sit at the intersection of the {COLOR BLUE}Ivy\l"
+	.string "River{COLOR DARK_GRAY} and the Hoya River, it's split up\l"
 	.string "into several small islands. You know\l"
 	.string "what that means?$"
 
@@ -610,7 +610,7 @@ PellucaCityHouses_NPC1_Text_7:
 PellucaCityHouses_NPC1_Text_8:
 # 243 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Yes, well, one has to do what one must.\n"
-	.string "Please enjoy your stay in Pelluca City!$"
+	.string "Please enjoy your stay in {COLOR BLUE}Pelluca City{COLOR DARK_GRAY}!$"
 
 PellucaCityHouses_NPC1_Text_9:
 # 249 "data//maps/PellucaCityHouses/scripts.pory"
@@ -654,8 +654,8 @@ PellucaCityHouses_NPC3_Text_0:
 PellucaCityHouses_NPC4_Text_0:
 # 313 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "My Delphox doesn't like the river air.\n"
-	.string "She prefers the dense fog of Vilethorn\l"
-	.string "Woods, where I first met her.$"
+	.string "She prefers the dense fog of {COLOR RED}Vilethorn\l"
+	.string "Woods{COLOR DARK_GRAY}, where I first met her.$"
 
 PellucaCityHouses_Delphox_Text_0:
 # 322 "data//maps/PellucaCityHouses/scripts.pory"
