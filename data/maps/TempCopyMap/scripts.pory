@@ -9,7 +9,7 @@ script Common_EventScript_NurseDemo{
 }
 
 script Common_EventScript_SaveGameBeforeBattle{
-    msgbox(format("A formidable aura envelops you..."))
+    msgbox(format("A formidable challenge awaits..."))
 	special(SaveGame)
 	waitstate
 	release
