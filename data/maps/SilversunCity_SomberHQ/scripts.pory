@@ -460,16 +460,11 @@ script SomberHQ_Grunt_H{
 
 
 script SomberHQ_SaveGameTrigger{
-    if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)){
-        end
-    }   
-
-    special(SaveGame)
-	waitstate
-    release
+    if (flag(FLAG_SILVERSUN_SOMBERHQ_MAIN)){end}   
 
     setvar(VAR_TEMP_E, 1)
-
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
     end
 }
 

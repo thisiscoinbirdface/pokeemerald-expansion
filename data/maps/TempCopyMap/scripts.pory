@@ -9,7 +9,23 @@ script Common_EventScript_NurseDemo{
 }
 
 script Common_EventScript_SaveGameBeforeBattle{
+    msgbox(format("A formidable aura envelops you..."))
+	special(SaveGame)
+	waitstate
+	release
+	return
+}
+
+script Common_EventScript_SaveGameBeforeSomber{
     msgbox(format("Tension fills the air..."))
+	special(SaveGame)
+	waitstate
+	release
+	return
+}
+
+script Common_EventScript_SaveGameBeforeLegendary{
+    msgbox(format("A once-in-a-lifetime chance..."))
 	special(SaveGame)
 	waitstate
 	release

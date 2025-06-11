@@ -353,11 +353,19 @@ CeramBaseCampGym_LeaderBattle::
 # 265 "data//maps/CeramBaseCampGym/scripts.pory"
 	msgbox CeramBaseCampGym_LeaderBattle_Text_7
 # 266 "data//maps/CeramBaseCampGym/scripts.pory"
-	releaseall
-CeramBaseCampGym_LeaderBattle_1:
+	release
+# 267 "data//maps/CeramBaseCampGym/scripts.pory"
+	giveitem ITEM_TM79
+# 268 "data//maps/CeramBaseCampGym/scripts.pory"
+	msgbox_delay CeramBaseCampGym_LeaderBattle_Text_0, CeramBaseCampGym_LeaderBattle_Text_8
 # 270 "data//maps/CeramBaseCampGym/scripts.pory"
 	releaseall
-	return
+	end
+
+CeramBaseCampGym_LeaderBattle_1:
+# 274 "data//maps/CeramBaseCampGym/scripts.pory"
+	releaseall
+	end
 
 CeramBaseCampGym_LeaderBattle_2:
 # 230 "data//maps/CeramBaseCampGym/scripts.pory"
@@ -596,8 +604,7 @@ CeramBaseCampGym_LeaderBattle_Text_3:
 
 CeramBaseCampGym_LeaderBattle_Text_4:
 # 250 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "The Cinder Badge increases the ATK of\n"
-	.string "all your Pokémon and lets you control\l"
+	.string "The Cinder Badge lets you control\n"
 	.string "Pokémon upto lv. 20.$"
 
 CeramBaseCampGym_LeaderBattle_Text_5:
@@ -613,15 +620,22 @@ CeramBaseCampGym_LeaderBattle_Text_6:
 
 CeramBaseCampGym_LeaderBattle_Text_7:
 # 265 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "And now it's time for you to set off on\n"
-	.string "your journey. I hope you manage to find\l"
-	.string "the dreamstone and Professor Tenebris.\l"
-	.string "I don't know why Team Somber is after\l"
+	.string "I hope you manage to find the\n"
+	.string "dreamstone and Professor Tenebris.\p"
+	.string "I wonder if I can do something...\n"
+	.string "Here, maybe you could use this.$"
+
+CeramBaseCampGym_LeaderBattle_Text_8:
+# 268 "data//maps/CeramBaseCampGym/scripts.pory"
+	.string "I got this for Sizzlipede but it can't\n"
+	.string "learn Acid Spray!\p"
+	.string "I don't know why Team Somber is after\n"
 	.string "the dreamstones, but be careful if you\l"
-	.string "run into them!$"
+	.string "run into them!\p"
+	.string "Good luck, {PLAYER}!$"
 
 CeramBaseCampGym_Text_Intro::
-# 275 "data//maps/CeramBaseCampGym/scripts.pory"
+# 279 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "Who's my next appointment? Ah! It's\n"
 	.string "you, {PLAYER}. A pleasant surprise.\p"
 	.string "I'm sick of all this work. This office is\n"
@@ -632,5 +646,5 @@ CeramBaseCampGym_Text_Intro::
 	.string "for a change!$"
 
 CeramBaseCampGym_Text_Defeated::
-# 279 "data//maps/CeramBaseCampGym/scripts.pory"
+# 283 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "What a match!$"

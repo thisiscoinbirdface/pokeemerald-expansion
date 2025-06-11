@@ -24,16 +24,12 @@ script Route3_NurseJoy_OnRoute{
 }
 
 script Route3_Underpass_SaveGameTrigger{
-    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){
-        end
-    }   
+    if (flag(FLAG_ROUTE3_UNDERPASS_EVILTEAM)){end}   
 
     setvar(VAR_TEMP_C, 1)
 
-    msgbox(format("You're about to enter a battle!"))
-    special(SaveGame)
-	waitstate
-    release
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
     end
 }
 

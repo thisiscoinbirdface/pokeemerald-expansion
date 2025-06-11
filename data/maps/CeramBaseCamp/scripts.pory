@@ -167,7 +167,7 @@ script CeramBaseCamp_Cyndaquil_Reward{
     message(format("We won't use these. Want one?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Sticky Barb", "Iron Ball") 
-    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_STICK_BARB)}
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_STICKY_BARB)}
     if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_IRON_BALL)}
     goto(CeramBaseCamp_Cyndaquil_Reward_Give)
 }

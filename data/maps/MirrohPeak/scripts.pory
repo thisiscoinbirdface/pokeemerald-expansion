@@ -14,16 +14,10 @@ script MirrohPeak_NPC_1{
 }
 
 script MtMirroh_Peak_SaveGameTrigger{
-    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){
-        end
-    }   
-
-    special(SaveGame)
-	waitstate
-    release
-
+    if (flag(FLAG_MIRROHPEAK_MOXIE_DEFEATED)){end}   
     setvar(VAR_TEMP_C, 1)
-
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
     end
 }
 

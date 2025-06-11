@@ -7,16 +7,12 @@ raw `
 mapscripts MtCeram_Peak_MapScripts{}
 
 script MtCeram_Peak_SaveGameTrigger{
-    if (flag(FLAG_MT_CERAM_DREAMSTONE)){
-        end
-    }   
-
-    special(SaveGame)
-	waitstate
-    release
+    if (flag(FLAG_MT_CERAM_DREAMSTONE)){end}   
 
     setvar(VAR_TEMP_C, 1)
 
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
     end
 }
 
