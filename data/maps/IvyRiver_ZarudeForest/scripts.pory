@@ -153,6 +153,16 @@ script IvyRiver_Zarude_LegendaryTrigger3{
 
 script IvyRiver_Zarude_Legendary{
     //setflag
+    delay(16)
+    applymovement(1, moves(
+        lock_anim
+        lock_facing_direction
+        walk_faster_left
+        walk_faster_right
+        unlock_anim
+        unlock_facing_direction
+    ))
+    waitmovement(0)
     msgbox(format("The wild Pokémon snatches away\nthe Purple Scarf and attacks!"))
     release
     setflag(FLAG_ZARUDE)
