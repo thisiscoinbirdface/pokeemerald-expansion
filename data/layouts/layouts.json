@@ -5464,9 +5464,9 @@
     {
       "id": "LAYOUT_IVY_RIVER_ZARUDE_FOREST",
       "name": "IvyRiver_ZarudeForest_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_ZarudeForest",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/IvyRiver_ZarudeForest/border.bin",
       "blockdata_filepath": "data/layouts/IvyRiver_ZarudeForest/map.bin"

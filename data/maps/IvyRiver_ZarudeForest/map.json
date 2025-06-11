@@ -2,7 +2,7 @@
   "id": "MAP_IVY_RIVER_ZARUDE_FOREST",
   "name": "IvyRiver_ZarudeForest",
   "layout": "LAYOUT_IVY_RIVER_ZARUDE_FOREST",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_VIRIDIAN_FOREST",
   "region_map_section": "MAPSEC_IVY_RIVER_MAIN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZARUDE)",
-      "x": 5,
-      "y": 9,
+      "x": 8,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -43,15 +43,15 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 33,
+      "x": 8,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_IVY_RIVER_MAIN",
       "dest_warp_id": "1"
     },
     {
-      "x": 5,
-      "y": 33,
+      "x": 9,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_IVY_RIVER_MAIN",
       "dest_warp_id": "2"
