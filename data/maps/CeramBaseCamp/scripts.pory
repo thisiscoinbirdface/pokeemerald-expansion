@@ -1,3 +1,8 @@
+raw`
+    .set LOCALID_CYNDA, 9
+    .set LOCALID_DUDE, 4
+`
+
 mapscripts CeramBaseCamp_MapScripts{    
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_VISITED_CERAM_BASE_CAMP)
@@ -6,15 +11,15 @@ mapscripts CeramBaseCamp_MapScripts{
 
 //NPC SCRIPTS
 
-            //Red blocking the gym
-            script CeramBaseCamp_RedBlockGym{
-                lockall
-                faceplayer
-                msgbox(format("The Leader's gone to the Supply Depot to sort out some commotion there."))
-                release
-                applymovement(8, moves(face_down))
-                releaseall
-            }
+//Red blocking the gym
+script CeramBaseCamp_RedBlockGym{
+    lockall
+    faceplayer
+    msgbox(format("The Leader's gone to the Supply Depot to sort out some commotion there."))
+    release
+    applymovement(8, moves(face_down))
+    releaseall
+}
 
 
 
@@ -74,7 +79,7 @@ script CeramBaseCamp_NPC4{
 script CeramBaseCamp_Cyndaquil_Quest_Done{
     faceplayer
     msgbox(format("Cyndaquil and I do everything together!"))
-    applymovement(4, moves(face_up))
+    applymovement(LOCALID_DUDE, moves(face_up))
     waitmovement(0)
     releaseall
     end
@@ -84,18 +89,18 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
     //Cyndaquil is training hard
     msgbox(format("C'mon Cyndaquil!"))
     playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
-    applymovement(9, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_CYNDA, moves(emote_exclamation_mark jump_in_place_down))
     waitmoncry
     msgbox(format("Sigh, it's just not good enough..."))
     release
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled Ariana and Cyndaquil saw the move Sunny Day for the first time! Since then we've been trying to learn it but it's just not working...say, would you be able to help us out? Will you find the TM Sunny Day and teach my Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("We battled Ariana and Cyndaquil's FIRE moves did nothing! Since then we've been trying to learn some other moves but it's just not working...say, would you be able to help us out? Will you find the TM Acid Spray and teach my Cyndaquil?"), MSGBOX_YESNO)
     
     //result
     if (var(VAR_RESULT) == 1){
-        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM Sunny Day."))
+        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM Acid Spray."))
         release
         startquest(QUEST_CERAM_CYNDAQUIL)
     } else {
@@ -110,23 +115,34 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
     //Check TM
     checkitem(ITEM_EJECT_BUTTON)
     if (var(VAR_RESULT) == 1){  //Yes TM
-        msgbox(format("Did you bring Sunny Day?\nYes? Perfect! Let's get to it."))
+        msgbox(format("Did you bring Acid Spray?\pYes?\pAwesome! Let's get to it."))
         release
         delay(20)
 
-        msgbox(format("Using TM on Cyndaquil...\p...poof!\pCyndaquil has learned SUNNY DAY!"))
+        applymovement(LOCALID_DUDE, moves(face_up))
+
+        msgbox(format("Using TM on Cyndaquil...\p..."))
+        playse(SE_FAILURE)
+        waitse
+        msgbox(format("Cyndaquil can't learn Acid Spray!"))
         release
-        applymovement(4, moves(emote_exclamation_mark))    
+        applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))    
         waitmovement(0)
-        msgbox(format("Thank you! Isn't this great, Cyndaquil?"))
+        msgbox(format("What?! Cyndaquil can't learn it!?\nHow did I miss this!?"))
         playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)        
         msgbox(format("Quiii!!!!!"))
         release
         delay(8)     
+        msgbox(format("Oh no! I'm sorry Cyndaquil...I wasted so much of our time!"))
+        release
+        delay(8)
+        faceplayer
+        delay(8)
+        message(format("Well...you still helped us out, so we owe you something."))
 
         goto(CeramBaseCamp_Cyndaquil_Reward)
     } else { //refuse to give TM
-        msgbox(format("Please bring the TM Sunny Day for Cyndaquil!"))
+        msgbox(format("Please bring the TM Acid Spray for Cyndaquil!"))
         release
     }
 
@@ -148,11 +164,11 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
 
 
 script CeramBaseCamp_Cyndaquil_Reward{
-    message(format("In exchange, do you want one of these?"))
+    message(format("We won't use these. Want one?"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Eject Button", "Punching Glove") 
-    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_EJECT_BUTTON)}
-    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_PUNCHING_GLOVE)}
+    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Sticky Barb", "Iron Ball") 
+    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_STICK_BARB)}
+    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_IRON_BALL)}
     goto(CeramBaseCamp_Cyndaquil_Reward_Give)
 }
 
@@ -166,7 +182,18 @@ script CeramBaseCamp_Cyndaquil_Reward_Give{
 
 script CeramBaseCamp_Cyndaquil_Reward_End{
     completequest(QUEST_CERAM_CYNDAQUIL)
-    msgbox(format("See you trainer!"), MSGBOX_NPC)
+    msgbox(format("Sigh...what'll we do now?\p..."))
+    delay(8)
+    applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))
+    waitmovement(0)    
+    delay(20)
+    msgbox(format("You're saying Acid Spray is a weak move? And it won't help much against Ariana?\lSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
+    release
+    delay(16)
+    applymovement(LOCALID_DUDE, moves(face_up))
+    delay(16)
+    msgbox(format("Don't worry Cyndaquil - I'm going to learn more about battling. I'm going to become the best trainer and you're going to become the best Pokémon!"))
+    releaseall
     end
 }
 

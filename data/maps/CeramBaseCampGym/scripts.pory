@@ -247,7 +247,7 @@ script CeramBaseCampGym_LeaderBattle {
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         speakername("Ariana")
-        msgbox(format("The Cinder Badge increases the ATK of all your Pokémon and lets you control Pokémon upto lv. 20."))
+        msgbox(format("The Cinder Badge lets you control Pokémon upto lv. 20."))
         speakername("Ariana")
         msgbox(format("And I'd also like to give you this."))
         release
@@ -262,13 +262,17 @@ script CeramBaseCampGym_LeaderBattle {
         
         //Bye-bye
         speakername("Ariana")
-        msgbox(format("And now it's time for you to set off on your journey. I hope you manage to find the dreamstone and Professor Tenebris. I don't know why Team Somber is after the dreamstones, but be careful if you run into them!"))
+        msgbox(format("I hope you manage to find the dreamstone and Professor Tenebris.\pI wonder if I can do something...\nHere, maybe you could use this."))
+        release
+        giveitem(ITEM_TM79)
+        msgbox_delay("Ariana", format("I got this for Sizzlipede but it can't learn Acid Spray!\pI don't know why Team Somber is after the dreamstones, but be careful if you run into them!\pGood luck, {PLAYER}!"))
+
         releaseall
-        
+        end        
     }
 
     releaseall
-
+    end
 }
 
 
