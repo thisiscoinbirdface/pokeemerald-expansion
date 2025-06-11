@@ -201,7 +201,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies_Text_4:
 FennilahlTown_Pokemart_EventScript_LabSupplies_Text_5:
 # 35 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	.string "Let me check our records...hmm, that's\n"
-	.string "strange. It says that {COLOR GREEN}Professor\l"
+	.string "strange. It says that Professor {COLOR GREEN}\l"
 	.string "Tenebris{COLOR DARK_GRAY} already picked it up last week.\l"
 	.string "Weird...I'm sorry, I can't help you.\p"
 	.string "You should go back and report this to\n"

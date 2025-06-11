@@ -116,7 +116,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_MELEA_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Isn't that {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}?"))
+    msgbox_delay("Melea", format("Isn't that Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}?"))
 
     applymovement(LOCALID_MOXIE_2, moves(jump_in_place_up))
     waitmovement(0)
@@ -558,7 +558,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 10 walk_up * 14))
     waitmovement(0)
 
-    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} took her dreamstone and vanished.\pThis is where it all began..."))
+    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took her dreamstone and vanished.\pThis is where it all began..."))
 
     setobjectxyperm(LOCALID_MELEA_1, 67, 38)
 
@@ -744,7 +744,7 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("Yes, I'm {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\pI've been hiding in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}...but {COLOR BLUE}Team Somber{COLOR DARK_GRAY} found the dreamstones any way, so my effort was, it seems, wasted."))
+        msgbox_delay("Tenebris", format("Yes, I'm Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\pI've been hiding in {COLOR RED}Ancient Cormoria{COLOR DARK_GRAY}...but {COLOR BLUE}Team Somber{COLOR DARK_GRAY} found the dreamstones any way, so my effort was, it seems, wasted."))
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)

@@ -4,7 +4,7 @@ mapscripts CarabrueTown_TenebrisLab_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_LAB_STATE, 0: CarabrueTown_TenebrisLab_EventScript_Start
-        VAR_LAB_STATE, 2: CarabrueTown_TenebrisLab_EventScript_NoSupplies        
+        VAR_LAB_STATE, 2: CarabrueTown_TenebrisLab_EventScript_NoSupplies
     ]
 
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
@@ -80,7 +80,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\nbut without {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
@@ -164,7 +164,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         delay(16)
         speakername("Rue")
-        msgbox(format("WHAT?! {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} took them?\pSigh...thanks for telling me, {PLAYER}."))
+        msgbox(format("WHAT?! Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took them?\pSigh...thanks for telling me, {PLAYER}."))
         release
 
             //Complete previous quest
@@ -436,7 +436,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
         speakername("Detective")
-        msgbox(format("Well {COLOR BLUE}Rue{COLOR DARK_GRAY}, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and {COLOR GREEN}Kohla{COLOR DARK_GRAY} to get the dreamstone while we track {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Well {COLOR BLUE}Rue{COLOR DARK_GRAY}, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and {COLOR GREEN}Kohla{COLOR DARK_GRAY} to get the dreamstone while we track Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
         release
         delay(16)
         speakername("Rue")
@@ -657,7 +657,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist2{
         end
     }
 
-    msgbox(format("I'm so grateful we have Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}. Without him to step in for {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}, we'd have had to shut the lab down."), MSGBOX_NPC)
+    msgbox(format("I'm so grateful we have Assistant Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}. Without him to step in for Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, we'd have had to shut the lab down."), MSGBOX_NPC)
     end
 }
 

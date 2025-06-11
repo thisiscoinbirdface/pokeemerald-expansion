@@ -78,7 +78,7 @@ script ChampionshipVenue_SignUp{
 
 script ChampionshipVenue_Entry{
 
-    if (flag(FLAG_GAME_CLEAR)){
+    if (flag(FLAG_SYS_GAME_CLEAR)){
         msgbox(format("Thank you for participating in this year's Championship!"), MSGBOX_NPC)
         end
     }

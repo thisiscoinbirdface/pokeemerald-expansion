@@ -102,7 +102,7 @@ script MtCeramPeak_MainEvent_Cutscene{
     //Explain tenebris research
     //Explain somber goals
     speakername("???")
-    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}. That explains everything."))   
+    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)

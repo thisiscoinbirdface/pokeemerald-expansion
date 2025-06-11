@@ -278,7 +278,7 @@ GastreeGym_TrainerBattle_Jaco_Text_2:
 GastreeGym_LeaderBattle_Text_0:
 # 24 "data//maps/GastreeGym/scripts.pory"
 	.string "I hate losing! Argh! But that was a good\n"
-	.string "battle, {PLAYER}. Go get {COLOR GREEN}Professor\l"
+	.string "battle, {PLAYER}. Go get Professor {COLOR GREEN}\l"
 	.string "Tenebris{COLOR DARK_GRAY} back for us all!$"
 
 GastreeGym_LeaderBattle_Text_1:
@@ -328,7 +328,7 @@ GastreeGym_EventScript_Victory_Text_4:
 # 83 "data//maps/GastreeGym/scripts.pory"
 	.string "Where are you headed next?\p"
 	.string "...\p"
-	.string "So you're investigating {COLOR GREEN}Professor\n"
+	.string "So you're investigating Professor {COLOR GREEN}\n"
 	.string "Tenebris{COLOR DARK_GRAY}' disappearance? Good luck!\l"
 	.string "She's the one who taught my Minior\n"
 	.string "the move Rollout.\p"

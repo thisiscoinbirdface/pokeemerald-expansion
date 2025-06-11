@@ -120,7 +120,7 @@ ChampionshipVenue_SignUp_11:
 
 ChampionshipVenue_Entry::
 # 81 "data//maps/Championship_Venue/scripts.pory"
-	goto_if_set FLAG_GAME_CLEAR, ChampionshipVenue_Entry_2
+	goto_if_set FLAG_SYS_GAME_CLEAR, ChampionshipVenue_Entry_2
 # 86 "data//maps/Championship_Venue/scripts.pory"
 	goto_if_set FLAG_CHAMP_SIGNUP_DONE, ChampionshipVenue_Entry_5
 # 111 "data//maps/Championship_Venue/scripts.pory"

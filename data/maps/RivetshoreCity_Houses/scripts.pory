@@ -49,6 +49,25 @@ script RivetshoreCity_Houses_NPC6{
         if (var(VAR_RESULT) == 1){
             special(StartFlappyBird)
             waitstate
+
+            savebgm(MUS_DUMMY)
+            fadedefaultbgm
+
+            //Get reward
+            if (var(GAME_CORNER_VAR_WINNINGS) > 3){
+                msgbox(format("You got the high score!"))
+
+                if (flag(FLAG_GET_POCKET_DRIVE)) {end}
+
+                release
+                delay(8)
+                playse(SE_CLICK)
+                waitse
+                msgbox(format("Something fell out of the PocketBoy!\nWhat is it?"))
+                release
+                giveitem(ITEM_POCKET_DRIVE)
+                setflag(FLAG_GET_POCKET_DRIVE)
+            }
         }
         releaseall
         end

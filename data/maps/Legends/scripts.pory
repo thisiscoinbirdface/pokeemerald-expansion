@@ -15,3 +15,13 @@ script Legends_Gozliak{
     msgbox(format(""), MSGBOX_NPC)
     end
 }
+script Legends_Sherry{
+    trainerbattle_single(TRAINER_PLAYER_SHERRY, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}
+script Legends_Mike{
+    trainerbattle_single(TRAINER_PLAYER_MIKE, format(""), format(""))
+    msgbox(format(""), MSGBOX_NPC)
+    end
+}

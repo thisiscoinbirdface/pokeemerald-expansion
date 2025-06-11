@@ -1852,7 +1852,7 @@ UnchartedIsland_Finale_Cutscene_Text_4:
 
 UnchartedIsland_Finale_Cutscene_Text_5:
 # 119 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Isn't that {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}?$"
+	.string "Isn't that Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}?$"
 
 UnchartedIsland_Finale_Cutscene_Text_6:
 # 124 "data//maps/UnchartedIsland/scripts.pory"
@@ -2194,7 +2194,7 @@ UnchartedIsland_Moxie_Melea_Fight_Text_5:
 # 561 "data//maps/UnchartedIsland/scripts.pory"
 	.string "The third and final dreamstone.\p"
 	.string "It took us a while to locate, but this is\n"
-	.string "where {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} took her\l"
+	.string "where Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took her\l"
 	.string "dreamstone and vanished.\p"
 	.string "This is where it all began...$"
 
@@ -2303,7 +2303,7 @@ UnchartedIsland_Tenebris_Text_2:
 
 UnchartedIsland_Tenebris_Text_3:
 # 747 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Yes, I'm {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
+	.string "Yes, I'm Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
 	.string "I've been hiding in {COLOR RED}Ancient\n"
 	.string "Cormoria{COLOR DARK_GRAY}...but {COLOR BLUE}Team Somber{COLOR DARK_GRAY} found the\l"
 	.string "dreamstones any way, so my effort was,\l"

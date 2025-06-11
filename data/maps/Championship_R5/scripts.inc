@@ -116,7 +116,7 @@ Championship_R5::
 # 86 "data//maps/Championship_R5/scripts.pory"
 	fadenewbgm MUS_DUMMY
 # 89 "data//maps/Championship_R5/scripts.pory"
-	setflag FLAG_GAME_CLEAR
+	setflag FLAG_SYS_GAME_CLEAR
 # 90 "data//maps/Championship_R5/scripts.pory"
 	setflag FLAG_IS_CHAMPION
 # 92 "data//maps/Championship_R5/scripts.pory"
@@ -268,7 +268,7 @@ Championship_R5_Text_1:
 Championship_R5_Text_2:
 # 36 "data//maps/Championship_R5/scripts.pory"
 	.string "On the right, we have the overwhelming\n"
-	.string "cword favourite and this year's\l"
+	.string "crowd favourite and this year's\l"
 	.string "frontrunner for Champion - the fiery\l"
 	.string "{COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the Galecrest Decetive\l"
 	.string "Academy - {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\p"

@@ -837,7 +837,7 @@ RivetshoreCity_Assembly_Trigger_Text_11:
 	.string "Allow us to explain the current\n"
 	.string "situation as it stands.\p"
 	.string "You all know about the disappearance\n"
-	.string "of {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} in connection\l"
+	.string "of Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} in connection\l"
 	.string "with the dreamstones and {COLOR BLUE}Team Somber{COLOR DARK_GRAY}'s\l"
 	.string "involvement in this case.$"
 

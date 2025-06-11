@@ -41,6 +41,18 @@ script CarabrueTown_Home2F_EventScript_GameCube{
         //Get reward
         if (var(GAME_CORNER_VAR_WINNINGS) > 39){
             msgbox(format("You got the high score!"))
+            
+            if (flag(FLAG_GET_RETRO_DRIVE)) {end}
+            
+            release
+            delay(8)
+            playse(SE_CLICK)
+            waitse
+            msgbox(format("Something fell out of the Retro64!\nWhat is it?"))
+            release
+            giveitem(ITEM_RETRO_DRIVE)
+            setflag(FLAG_GET_RETRO_DRIVE)
+
         }
     } else {
         msgbox(format("My old GameCube...it's broken."))

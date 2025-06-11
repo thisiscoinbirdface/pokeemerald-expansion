@@ -26,7 +26,7 @@ script Route1_TrainerBattle_Strong_A {
 
 script Route1_TrainerBattle_B {
 
-    trainerbattle_single(TRAINER_ROUTE1_B, format("I reallylove FLYING-type Pokémon.\nLet me show you my favourite!"), "My FLYING type Pokémon lost!")
+    trainerbattle_single(TRAINER_ROUTE1_B, format("I really love FLYING-type Pokémon.\nLet me show you my favourite!"), "My FLYING type Pokémon lost!")
     msgbox(format("I guess a good Pokémon team needs\ngood type variety!"))
     release
     end

@@ -1056,3 +1056,14 @@ const struct Tileset gTileset_ZarudeForest =
     .metatileAttributes = gMetatileAttributes_ZarudeForest,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_ZarudeSecondary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ZarudeSecondary,
+    .palettes = gTilesetPalettes_ZarudeSecondary,
+    .metatiles = gMetatiles_ZarudeSecondary,
+    .metatileAttributes = gMetatileAttributes_ZarudeSecondary,
+    .callback = NULL,
+};

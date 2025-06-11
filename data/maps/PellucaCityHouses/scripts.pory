@@ -104,7 +104,7 @@ script PellucaCityHouses_MayorQuestStart{
 
 //GAB house
 script PellucaCityHouses_GabSibling1{
-    msgbox(format("Big Sis is back! She got me a Retro64. I'm not playing it because I'm gonna play with her. You wanna play it?"), MSGBOX_NPC)
+    msgbox(format("Big Sis is back! She got me a Swap 2. I'm not playing it because I'm gonna play with her. You wanna play it?"), MSGBOX_NPC)
     end
 }
 script PellucaCityHouses_GabSibling2{
@@ -125,7 +125,7 @@ script PellucaCityHouses_GabSibling3{
     end
 }
 script PellucaCityHouses_GameCube{
-    msgbox(format("It's a Retro64, the best retro game emulator around!\pTurn it on?"), MSGBOX_YESNO)
+    msgbox(format("It's a Swap 2, the popular gaming console!\pTurn it on?"), MSGBOX_YESNO)
     release
     if (var(VAR_RESULT) == 0) {end}
 
@@ -139,6 +139,17 @@ script PellucaCityHouses_GameCube{
     //Get reward
     if (var(GAME_CORNER_VAR_WINNINGS) > 20){
         msgbox(format("You got the high score!"))
+
+        if (flag(FLAG_GET_SWAP_DRIVE)) {end}
+
+        release
+        delay(8)
+        playse(SE_CLICK)
+        waitse
+        msgbox(format("Something fell out of the Swap 2!\nWhat is it?"))
+        release
+        giveitem(ITEM_SWAP_DRIVE)
+        setflag(FLAG_GET_SWAP_DRIVE)
     }
     
     releaseall
@@ -146,7 +157,7 @@ script PellucaCityHouses_GameCube{
 }
 
 script PellucaCityHouses_TV{
-    msgbox(format("The TV is hooked up to the Retro64."))
+    msgbox(format("The TV is hooked up to the Swap 2."))
     releaseall
     end
 }

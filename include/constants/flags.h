@@ -163,9 +163,6 @@
 #define FLAG_CHAMPIONSHIP_KOHLA_ROOM      0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                 0x4BF // Unused Flag
-#define FLAG_UNUSED_0x4F9                 0x4F9 // Unused Flag
-#define FLAG_UNUSED_0x4FA                 0x4FA // Unused Flag
-#define FLAG_UNUSED_0x4FF                 0x4FF // Unused Flag
 
 
 //I AM GOING TO USE THESE FLAGS | EXTRA FLAGS
@@ -282,6 +279,13 @@
 #define FLAG_RANGER_SELECTED_MON_THREE       0x149
 #define FLAG_WONDER_CARD_UNUSED_14           0x14A
 #define FLAG_WONDER_CARD_UNUSED_15           0x14B
+
+
+
+//Post-game
+#define FLAG_GET_RETRO_DRIVE                 0x4F9 // Unused Flag
+#define FLAG_GET_POCKET_DRIVE                0x4FA // Unused Flag
+#define FLAG_GET_SWAP_DRIVE                  0x4FF // Unused Flag
 #define FLAG_WONDER_CARD_UNUSED_16           0x14C
 #define FLAG_WONDER_CARD_UNUSED_17           0x14D
 
@@ -1630,7 +1634,7 @@
 #define FLAG_BEAT_R3                                (SYSTEM_FLAGS + 0xA6) // Unused Flag
 #define FLAG_BEAT_R4                                (SYSTEM_FLAGS + 0xA7) // Unused Flag
 #define FLAG_BEAT_FINALS                            (SYSTEM_FLAGS + 0xA8) // Unused Flag
-#define FLAG_GAME_CLEAR                             (SYSTEM_FLAGS + 0xA9) // Unused Flag
+#define FLAG_UNUSED_0xA9                            (SYSTEM_FLAGS + 0xA9) // Unused Flag
 
 //Tutors
 #define FLAG_TUTOR_ROSELIA                          (SYSTEM_FLAGS + 0xAA) // Unused Flag
@@ -1648,7 +1652,7 @@
 
 //Statues
 #define FLAG_STATUE_ROUTE1                          (SYSTEM_FLAGS + 0xB4) // Unused Flag
-#define FLAG_STATUE_UNUSED                          (SYSTEM_FLAGS + 0xB5) // Unused Flag
+#define FLAG_STATUE_IVY_FOREST                      (SYSTEM_FLAGS + 0xB5) // Unused Flag
 #define FLAG_STATUE_CERAM                           (SYSTEM_FLAGS + 0xB6) // Unused Flag
 #define FLAG_STATUE_GALECREST                       (SYSTEM_FLAGS + 0xB7) // Unused Flag
 #define FLAG_STATUE_CELEBI                          (SYSTEM_FLAGS + 0xB8) // Unused Flag

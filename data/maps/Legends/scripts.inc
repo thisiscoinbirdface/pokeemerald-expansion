@@ -26,6 +26,22 @@ Legends_Gozliak::
 	end
 
 
+Legends_Sherry::
+# 19 "data//maps/Legends/scripts.pory"
+	trainerbattle_single TRAINER_PLAYER_SHERRY, Legends_Sentry_Text_0, Legends_Sentry_Text_0
+# 20 "data//maps/Legends/scripts.pory"
+	msgbox Legends_Sentry_Text_0, MSGBOX_NPC
+	end
+
+
+Legends_Mike::
+# 24 "data//maps/Legends/scripts.pory"
+	trainerbattle_single TRAINER_PLAYER_MIKE, Legends_Sentry_Text_0, Legends_Sentry_Text_0
+# 25 "data//maps/Legends/scripts.pory"
+	msgbox Legends_Sentry_Text_0, MSGBOX_NPC
+	end
+
+
 Legends_Sentry_Text_0:
 # 4 "data//maps/Legends/scripts.pory"
 	.string "$"

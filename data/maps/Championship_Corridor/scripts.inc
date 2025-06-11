@@ -34,7 +34,7 @@ Championship_Corridor_Register_10:
 # 31 "data//maps/Championship_Corridor/scripts.pory"
 	warp MAP_CHAMPIONSHIP, 40, 38
 # 34 "data//maps/Championship_Corridor/scripts.pory"
-	setflag FLAG_GAME_CLEAR
+	setflag FLAG_SYS_GAME_CLEAR
 # 35 "data//maps/Championship_Corridor/scripts.pory"
 	delay 20
 # 36 "data//maps/Championship_Corridor/scripts.pory"

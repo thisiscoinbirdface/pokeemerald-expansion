@@ -304,7 +304,7 @@ CarabrueTown_Home1F_EventScript_StartGame_Text_1:
 # 28 "data//maps/CarabrueTown_Home1F/scripts.pory"
 	.string "And in the big news of the day, we have\n"
 	.string "a mysterious event to report.\p"
-	.string "The famous {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} of\n"
+	.string "The famous Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} of\n"
 	.string "{COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} was reported missing.\p"
 	.string "Where could such a renowned Pokémon\n"
 	.string "Professor have vanished to? And why?$"

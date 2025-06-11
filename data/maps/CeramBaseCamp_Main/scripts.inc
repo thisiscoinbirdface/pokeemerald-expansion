@@ -943,9 +943,9 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_24:
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_25:
 # 212 "data//maps/CeramBaseCamp_Main/scripts.pory"
-	.string "They're connected to {COLOR GREEN}Professor\n"
+	.string "They're connected to Professor {COLOR GREEN}\n"
 	.string "Tenebris{COLOR DARK_GRAY}' disappearance?\p"
-	.string "I gotta do something - {COLOR GREEN}Professor\n"
+	.string "I gotta do something - Professor {COLOR GREEN}\n"
 	.string "Tenebris{COLOR DARK_GRAY} gave me my Tauros!$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_26:

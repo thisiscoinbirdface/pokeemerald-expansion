@@ -919,6 +919,16 @@ script AncientStatue_Route8{
     else {setflag(FLAG_STATUE_ROUTE8) goto(AncientStatue_FirstTime)}
     end    
 }
+script AncientStatue_IvyForest{
+    lockall
+    if (flag(FLAG_STATUE_IVY_FOREST)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
+    else {setflag(FLAG_STATUE_ROUTE8) goto(AncientStatue_FirstTime)}
+    end    
+}
+
+
+
+
 
 
 

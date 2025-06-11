@@ -716,7 +716,7 @@ MtCeramPeak_MainEvent_Cutscene_Text_3:
 	.string "thorn in my organisations side?\p"
 	.string "What's in it for you?\p"
 	.string "...\p"
-	.string "So you're looking for {COLOR GREEN}Professor\n"
+	.string "So you're looking for Professor {COLOR GREEN}\n"
 	.string "Tenebris{COLOR DARK_GRAY}. That explains everything.$"
 
 MtCeramPeak_MainEvent_Cutscene_Text_4:

@@ -417,7 +417,7 @@ SilversunCity_OnFrame_Text_3:
 
 SilversunCity_OnFrame_Text_4:
 # 36 "data//maps/SilversunCity/scripts.pory"
-	.string "We...we thought it was {COLOR GREEN}Professor\n"
+	.string "We...we thought it was Professor {COLOR GREEN}\n"
 	.string "Tenebris{COLOR DARK_GRAY} with them, not you! At any\l"
 	.string "rate, {PLAYER}, this is a splendid\l"
 	.string "outcome. You saved your Assistant\l"

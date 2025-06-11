@@ -1,7 +1,7 @@
 mapscripts GastreeCity_House3_MapScripts{}
 
 script GastreeCity_House3_NPC1{
-    msgbox(format("The big news of the week is {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} disappearing. She gave my son his first Pokémon - a Bergmite!\p...\pEver since his mother left, he's always outside, training with Bergmite."), MSGBOX_NPC)
+    msgbox(format("The big news of the week is Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} disappearing. She gave my son his first Pokémon - a Bergmite!\p...\pEver since his mother left, he's always outside, training with Bergmite."), MSGBOX_NPC)
     end
 }
 

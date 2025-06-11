@@ -621,7 +621,7 @@ CeramBaseCampGym_LeaderBattle_Text_6:
 CeramBaseCampGym_LeaderBattle_Text_7:
 # 265 "data//maps/CeramBaseCampGym/scripts.pory"
 	.string "I hope you manage to find the\n"
-	.string "dreamstone and {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
+	.string "dreamstone and Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
 	.string "I wonder if I can do something...\n"
 	.string "Here, maybe you could use this.$"
 

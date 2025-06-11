@@ -200,7 +200,7 @@ script GalecrestCity_DetectiveMeet_Main{
     applymovement(LOCALID_DET2, moves(face_right))      
     delay(16)
     speakername("Detective")
-    msgbox(format("We've uncovered a new lead on {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}. An agent told us that she was spotted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}."))
+    msgbox(format("We've uncovered a new lead on Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}. An agent told us that she was spotted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}."))
     release
     delay(16)
     speakername("Detective")

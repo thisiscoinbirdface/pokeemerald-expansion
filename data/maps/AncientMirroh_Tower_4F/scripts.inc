@@ -563,7 +563,7 @@ AncientMirroh_Tower_4F_MainTrigger_Text_4:
 # 56 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	.string "Beautiful, isn't it? How incredible it is\n"
 	.string "that we're here now, today.\p"
-	.string "Your {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} unlocked the\n"
+	.string "Your Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} unlocked the\n"
 	.string "latent potential within the dreams and\l"
 	.string "memories of Pokémon today and created\l"
 	.string "a way to visit the past!\p"

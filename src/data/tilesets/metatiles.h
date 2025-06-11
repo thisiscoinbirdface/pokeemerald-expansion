@@ -271,3 +271,6 @@ const u16 gMetatileAttributes_Doroa[] = INCBIN_U16("data/tilesets/primary/doroa/
 
 const u16 gMetatiles_ZarudeForest[] = INCBIN_U16("data/tilesets/primary/zarude_forest/metatiles.bin");
 const u16 gMetatileAttributes_ZarudeForest[] = INCBIN_U16("data/tilesets/primary/zarude_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_ZarudeSecondary[] = INCBIN_U16("data/tilesets/secondary/zarude_secondary/metatiles.bin");
+const u16 gMetatileAttributes_ZarudeSecondary[] = INCBIN_U16("data/tilesets/secondary/zarude_secondary/metatile_attributes.bin");

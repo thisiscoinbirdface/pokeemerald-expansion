@@ -6,7 +6,7 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
     if (!flag(FLAG_UNUSED_0x020)) {
         speakername("Detective")
-        msgbox(format("Sorry, this road is temporarily closed. We're investigating {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}' disappearance."))
+        msgbox(format("Sorry, this road is temporarily closed. We're investigating Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}' disappearance."))
     } else {
         speakername("Detective")
         msgbox(format("Is this the evidence from the lab? Thanks, kid. We'll take it from here.\p..."))
@@ -41,6 +41,16 @@ script CarabrueTown_EventScript_PoliceRoadBlock{
 
 
 script CarabrueTown_Sign_ChampionHouse{
+
+    if (flag(FLAG_SYS_GAME_CLEAR)){
+        msgbox(format("There's no lock. Open the door?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){end}
+        warp(MAP_THE_OTHER_HOUSE, 2, 8)
+        releaseall
+        end
+    }
+
     lockall
     msgbox(format("This house is locked."))
     releaseall

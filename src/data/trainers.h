@@ -21050,7 +21050,7 @@ F_TRAINER_FEMALE |
 #line 10222
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
 #line 10223
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_SHUBUBU,
         .encounterMusic_gender =
 #line 10225
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -21189,7 +21189,7 @@ F_TRAINER_FEMALE |
 #line 10279
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
 #line 10280
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerPic = TRAINER_PIC_SHUBUBU,
         .encounterMusic_gender =
 #line 10282
             TRAINER_ENCOUNTER_MUSIC_MALE,

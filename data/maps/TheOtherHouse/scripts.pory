@@ -1,0 +1,95 @@
+mapscripts TheOtherHouse_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_THE_OTHER_HOUSE, 0: TheOtherHouse_Start
+    ]
+}
+
+script TheOtherHouse_Start{
+    lockall
+    setvar(VAR_THE_OTHER_HOUSE, 1)
+
+    msgbox(format("Looks like nobody's lived here\nfor a really long time..."))
+    releaseall
+    end
+}
+
+script TheOtherHouse_TV{
+    msgbox(format("It's hooked up to the console."))
+    releaseall
+    end
+}
+
+script TheOtherHouse_Game{
+    msgbox(format("It's a gaming console!\pBut it's not a recognisable one. There are no brand or manufacturer details...\pThere's a drive slot, a port slot and a chip slot."))
+    release
+
+    setvar(VAR_THE_OTHER_HOUSE, 1) //reset var to count the drives
+
+    //check and add retro drive
+    checkitem(ITEM_RETRO_DRIVE)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Fit in the Retro Drive?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0) {end}
+
+        playse(SE_CLICK)
+        msgbox(format("It fits perfectly in the drive slot!"))
+        release
+        addvar(VAR_THE_OTHER_HOUSE, 1)
+
+    }
+
+    //check and add swap drive
+    checkitem(ITEM_SWAP_DRIVE)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Slot in the Swap Chip?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0) {end}
+
+        playse(SE_CLICK)
+        msgbox(format("It fits perfectly in the chip slot!"))
+        release
+        addvar(VAR_THE_OTHER_HOUSE, 1)
+
+    }
+
+    //check and add pocket drive
+    checkitem(ITEM_POCKET_DRIVE)
+    if (var(VAR_RESULT) == 1){
+        msgbox(format("Pop in the Pocket Port?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0) {end}
+
+        playse(SE_CLICK)
+        msgbox(format("It fits perfectly in the port slot!"))
+        release
+        addvar(VAR_THE_OTHER_HOUSE, 1)
+
+    }
+
+    //check var count for no drives
+    if (var(VAR_THE_OTHER_HOUSE) == 1){
+        releaseall
+        end
+    }
+
+    //check var count for at least one drive
+    if (var(VAR_THE_OTHER_HOUSE) < 3){
+        msgbox(format("But it probably needs all 3 drives..."))
+        releaseall
+        end
+    }
+
+    //if all 3, remove and start
+    removeitem(ITEM_POCKET_DRIVE)
+    removeitem(ITEM_SWAP_DRIVE)
+    removeitem(ITEM_RETRO_DRIVE)
+
+    playse(SE_PC_ON)
+    msgbox(format("The console turned on!\p...\pWhat a weird game..."))
+    release
+
+    warp(MAP_LEGENDS, 7, 119)
+
+}
+

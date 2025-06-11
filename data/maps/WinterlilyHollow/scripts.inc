@@ -577,7 +577,7 @@ WinterlilyHollow_OnFrame_Text_2:
 	.string "peak, everyone had gone!\p"
 	.string "...\p"
 	.string "So that's what's been going on.\n"
-	.string "Poor {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
+	.string "Poor Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
 	.string "I heard about her disappearance on\n"
 	.string "the news just the other day.\p"
 	.string "News comes late here, since we're in\n"

@@ -33,7 +33,7 @@ script Championship_R5{
     msgbox_delay("Announcer", format("This is it, everyone!\pAfter countless tough battles, we're finally here with the two strongest trainers in all of Cormoria!\pLet's hear a huge cheer for the\ntwo grand finalists!"))
     playse(SE_APPLAUSE)
     waitse
-    msgbox_delay("Announcer", format("On the right, we have the overwhelming cword favourite and this year's frontrunner for Champion - the fiery {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the Galecrest Decetive Academy - {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\pWith his partner Ceruledge, he's been dominant in the..."))
+    msgbox_delay("Announcer", format("On the right, we have the overwhelming crowd favourite and this year's frontrunner for Champion - the fiery {COLOR GREEN}Ace Rookie{COLOR DARK_GRAY} from the Galecrest Decetive Academy - {COLOR GREEN}Kohla{COLOR DARK_GRAY}!\pWith his partner Ceruledge, he's been dominant in the..."))
 
     applymovement(1, moves(jump_in_place_left))
     msgbox_delay("Kohla", format("It had to be you, {PLAYER}."))
@@ -86,7 +86,7 @@ script Championship_R5{
     fadenewbgm(MUS_DUMMY)
 
     //flags etc
-    setflag(FLAG_GAME_CLEAR)
+    setflag(FLAG_SYS_GAME_CLEAR)
     setflag(FLAG_IS_CHAMPION)
 
     waitse

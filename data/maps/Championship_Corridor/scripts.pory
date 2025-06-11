@@ -31,7 +31,7 @@ script Championship_Corridor_Register{
     warp(MAP_CHAMPIONSHIP, 40, 38)
 
     //end game proper
-    setflag(FLAG_GAME_CLEAR)
+    setflag(FLAG_SYS_GAME_CLEAR)
 	delay(20)
 	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
 	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)

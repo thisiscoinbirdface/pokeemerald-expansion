@@ -915,8 +915,8 @@ GalecrestCity_DetectiveMeet_Main_Text_6:
 
 GalecrestCity_DetectiveMeet_Main_Text_7:
 # 203 "data//maps/GalecrestCity/scripts.pory"
-	.string "We've uncovered a new lead on {COLOR GREEN}Professor\n"
-	.string "Tenebris{COLOR DARK_GRAY}. An agent told us that she was\l"
+	.string "We've uncovered a new lead on Professor\n"
+	.string "{COLOR GREEN} Tenebris{COLOR DARK_GRAY}. An agent told us that she was\l"
 	.string "spotted in {COLOR BLUE}Silversun City{COLOR DARK_GRAY}.$"
 
 GalecrestCity_DetectiveMeet_Main_Text_8:

@@ -101,7 +101,7 @@ Route1_TrainerBattle_Strong_A_Text_1:
 
 Route1_TrainerBattle_B_Text_0:
 # 29 "data//maps/Route1/scripts.pory"
-	.string "I reallylove FLYING-type Pokémon.\n"
+	.string "I really love FLYING-type Pokémon.\n"
 	.string "Let me show you my favourite!$"
 
 Route1_TrainerBattle_B_Text_1:

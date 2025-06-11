@@ -25,7 +25,7 @@ script CarabrueTown_Home1F_EventScript_StartGame{
     speakername("TV")
     msgbox(
         format(
-            "And in the big news of the day, we have a mysterious event to report.\pThe famous {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} of {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} was reported missing.\pWhere could such a renowned Pokémon Professor have vanished to? And why?"
+            "And in the big news of the day, we have a mysterious event to report.\pThe famous Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} of {COLOR GREEN}Carabrue Town{COLOR DARK_GRAY} was reported missing.\pWhere could such a renowned Pokémon Professor have vanished to? And why?"
         )
     )
     release

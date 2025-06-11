@@ -14495,6 +14495,54 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Sachet,
         .iconPalette = gItemIconPalette_Sachet,
     },
+    [ITEM_POCKET_DRIVE] =
+    {
+        .name = _("Pocket Drive"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 1000,
+        .holdEffect = HOLD_EFFECT_DRIVE,
+        .description = COMPOUND_STRING(
+            "A small drive\n"
+            "that was part of\n"
+            "a PocketBoy."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_DouseDrive,
+        .iconPalette = gItemIconPalette_DouseDrive,
+    },
+    [ITEM_RETRO_DRIVE] =
+    {
+        .name = _("Retro Port"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 1000,
+        .holdEffect = HOLD_EFFECT_DRIVE,
+        .description = COMPOUND_STRING(
+            "A clunky part\n"
+            "of the Retro64\n"
+            "emulator."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ChillDrive,
+        .iconPalette = gItemIconPalette_ChillDrive,
+    },
+    [ITEM_SWAP_DRIVE] =
+    {
+        .name = _("Swap Chip"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 1000,
+        .holdEffect = HOLD_EFFECT_DRIVE,
+        .description = COMPOUND_STRING(
+            "A component of\n"
+            "the new Swap 2\n"
+            "gaming console."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_BurnDrive,
+        .iconPalette = gItemIconPalette_BurnDrive,
+    },
 };
 
 

@@ -33,7 +33,7 @@ script SilversunCity_OnFrame{
                 speakername("Rue")
                 msgbox(format("All well, thanks to {PLAYER}."))
                 speakername("Detective")
-                msgbox(format("We...we thought it was {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
+                msgbox(format("We...we thought it was Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))

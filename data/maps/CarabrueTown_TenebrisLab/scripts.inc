@@ -1424,8 +1424,8 @@ CarabrueTown_TenebrisLab_EventScript_Start_Text_7:
 	.string "protect you. Pick up any of the\l"
 	.string "Pokéballs lying around the lab.\p"
 	.string "If we had our supplies, I could give you\n"
-	.string "the standard companion Pokémon,\n"
-	.string "but without {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY},\l"
+	.string "the standard companion Pokémon,\l"
+	.string "but without Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY},\l"
 	.string "everything's gone haywire here.\p"
 	.string "You'll have to make do with what you\n"
 	.string "find lying around.\p"
@@ -1472,7 +1472,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_4:
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_5:
 # 167 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	.string "WHAT?! {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY} took them?\p"
+	.string "WHAT?! Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY} took them?\p"
 	.string "Sigh...thanks for telling me, {PLAYER}.$"
 
 CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_6:
@@ -1730,7 +1730,7 @@ CarabrueTown_TenebrisLab_EventScript_NoSupplies_Text_46:
 	.string "got some backbone.\p"
 	.string "{PLAYER}, we're counting on you and\n"
 	.string "{COLOR GREEN}Kohla{COLOR DARK_GRAY} to get the dreamstone while we\l"
-	.string "track {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}.\p"
+	.string "track Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}.\p"
 	.string "Rue, do you know anything of the\n"
 	.string "whereabouts of the other dreamstones?$"
 
@@ -1830,7 +1830,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_1:
 # 660 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm so grateful we have Assistant\n"
 	.string "Professor {COLOR BLUE}Rue{COLOR DARK_GRAY}. Without him to step in\l"
-	.string "for {COLOR GREEN}Professor Tenebris{COLOR DARK_GRAY}, we'd have had\l"
+	.string "for Professor {COLOR GREEN} Tenebris{COLOR DARK_GRAY}, we'd have had\l"
 	.string "to shut the lab down.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:
