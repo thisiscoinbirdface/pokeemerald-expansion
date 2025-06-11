@@ -253,9 +253,9 @@
 #define FLAG_LILYPOND_FISHERMAN_QUEST_START 0x4A5 // get the letter and start quest
 #define FLAG_LILYPOND_FISHERMAN_A_LETTER 0x4A6 // give letter to brother A
 #define FLAG_LILYPOND_FISHERMAN_B_LETTER 0x4A7 // give letter to brother B
-#define FLAG_HIDE_IVYRIVER_FISHERMEN 0x4A8 // meet the fishermen at ivy river
-#define FLAG_IVYRIVER_ZARUDE_QUEST 0x1DE // full zarude cutscene
-#define FLAG_UNUSED_0x1DF 0x1DF // unused flag
+#define FLAG_IVYRIVER_ZARUDE_SCARF 0x4A8 // meet the fishermen at ivy river
+#define FLAG_IVYRIVER_ZARUDE_NOTE1 0x1DE // full zarude cutscene
+#define FLAG_IVYRIVER_ZARUDE_NOTE2 0x1DF // unused flag
 #define FLAG_LILYPOND_LAPRAS_ENCOUNTER 0x1E0 // the one-time lapras encounter done or not
 #define FLAG_RANGER_TAUROS_USE 0x1E1 // can use the ranger tauros
 #define FLAG_RANGER_ACCEPTED 0x1E2 // cleared the interview 

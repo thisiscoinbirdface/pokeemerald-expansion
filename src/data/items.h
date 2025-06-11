@@ -7391,7 +7391,7 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PinkScarf,
     },
 
-    [ITEM_GREEN_SCARF] =
+    [ITEM_PURPLE_SCARF] =
     {
         .name = _("Purple Scarf"),
         .pluralName = _("Purple Scarves"),

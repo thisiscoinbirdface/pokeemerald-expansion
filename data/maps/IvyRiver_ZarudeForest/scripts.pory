@@ -1,0 +1,169 @@
+mapscripts IvyRiver_ZarudeForest_MapScripts{}
+
+//three notes
+//note 1: brothers, i am separated
+//note 2: a pokemon found me and raised me
+//note 3: i feel weak...pokemon brings meds but cant go on
+
+//first two notes here and there
+//third note with purple scarf
+
+//zarude comes after taking the purple scarf
+
+
+script IvyRiver_Zarude_Note1{
+    msgbox(format("It's a piece of paper!\nThere's a note here...read it?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        setflag(FLAG_IVYRIVER_ZARUDE_NOTE1)
+        removeobject(6)
+        call(IvyRiver_Zarude_ReadNote)
+    }
+    releaseall
+    end
+}
+
+script IvyRiver_Zarude_Note2{
+    msgbox(format("It's a piece of paper!\nThere's a note here...read it?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        setflag(FLAG_IVYRIVER_ZARUDE_NOTE2)
+        removeobject(5)
+        call(IvyRiver_Zarude_ReadNote)
+    }
+    releaseall
+    end
+}
+
+script IvyRiver_Zarude_Note3{
+    msgbox(format("It's a cloth scarf!\nThere's a note here...read it?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 1){
+        call(IvyRiver_Zarude_ReadNote)
+
+        msgbox(format("Take the cloth scarf?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            giveitem(ITEM_PURPLE_SCARF)
+            removeobject(4)
+            setflag(FLAG_IVYRIVER_ZARUDE_SCARF)        
+        }
+    }
+
+    releaseall
+    end
+}
+
+
+script IvyRiver_Zarude_ReadNote{
+    if (var(VAR_ZARUDE_NOTES) == 2){
+        setvar(VAR_ZARUDE_NOTES, 3)
+        msgbox(format("Dear brothers...\nI hope you read this one day.\pIt hurts all over...Zari's trying hard, feeding me berries, but it's not working. I fear I dont have much time left.\lIf you ever read this...\p...I love you."))
+    }
+    if (var(VAR_ZARUDE_NOTES) == 1){
+        setvar(VAR_ZARUDE_NOTES, 2)
+        msgbox(format("Dear brothers...\nI hope you read this one day.\pI've been saved - a strange Pokémon found me and is taking care of me.\lI don't know its name. I call it Zari.\lZari left its pack to help me.\lI'm grateful to it. Hopefully I can make it back to you someday."))
+    }
+    if (var(VAR_ZARUDE_NOTES) == 0){
+        setvar(VAR_ZARUDE_NOTES, 1)
+        msgbox(format("Dear brothers...\nI hope you read this one day.\pI've been lost in these woods for weeks now. I'm starving and I don't know how much longer I can go on..."))
+    }
+    return
+}
+
+
+
+
+
+script IvyRiver_Zarude_SaveTrigger{
+    if (var(VAR_ZARUDE_NOTES) > 3) {end}
+
+    if (flag(FLAG_IVYRIVER_ZARUDE_SCARF)){
+        setvar(VAR_TEMP_0, 1)
+        call(Common_EventScript_SaveGameBeforeBattle)
+        releaseall
+        end
+    }
+}
+
+script IvyRiver_Zarude_LegendaryTrigger1{
+    if (var(VAR_ZARUDE_NOTES) > 3) {end}
+
+    if (flag(FLAG_IVYRIVER_ZARUDE_SCARF)){
+        lockall
+        playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+        waitmoncry
+        delay(8)
+        msgbox(format("What was that?"))
+        release
+        
+        addobject(1)
+        setobjectxy(1, 62, 49)
+        applymovement(1, moves(jump_2_down * 2))
+        waitmovement(0)
+
+        goto(IvyRiver_Zarude_Legendary)
+    }
+}
+
+script IvyRiver_Zarude_LegendaryTrigger2{
+    if (var(VAR_ZARUDE_NOTES) > 3) {end}
+
+    if (flag(FLAG_IVYRIVER_ZARUDE_SCARF)){
+        lockall
+        playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+        waitmoncry
+        delay(8)
+        msgbox(format("What was that?"))
+        release
+        
+        addobject(1)
+        setobjectxy(1, 63, 49)
+        applymovement(1, moves(jump_2_down * 2))
+        waitmovement(0)
+
+        goto(IvyRiver_Zarude_Legendary)
+        
+    releaseall
+    end
+    }
+}
+
+script IvyRiver_Zarude_LegendaryTrigger3{
+    if (var(VAR_ZARUDE_NOTES) > 3) {end}
+
+    if (flag(FLAG_IVYRIVER_ZARUDE_SCARF)){
+        lockall
+        playmoncry(SPECIES_ZARUDE_DADA, CRY_MODE_NORMAL)
+        waitmoncry
+        delay(8)
+        msgbox(format("What was that?"))
+        release
+        
+        addobject(1)
+        setobjectxy(1, 64, 49)
+        applymovement(1, moves(jump_2_down * 2))
+        waitmovement(0)
+
+        goto(IvyRiver_Zarude_Legendary)
+        
+    releaseall
+    end
+    }
+}
+
+script IvyRiver_Zarude_Legendary{
+    //setflag
+    msgbox(format("The wild Pokémon snatches away\nthe Purple Scarf and attacks!"))
+    release
+    setflag(FLAG_ZARUDE)
+    setvar(VAR_ZARUDE_NOTES, 4)
+
+    setwildbattle(SPECIES_ZARUDE_DADA, 40)
+    dowildbattle
+    removeobject(1)
+}
+
+
+
+
+

@@ -235,111 +235,62 @@ script LilyPond_Cave_Lapras_Encounter{
 
 
 script LilyPond_Fisherman_A{
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 0) {
-        msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)
-        end
-    }
-
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {goto(LilyPond_Fisherman_A_QuestScript)}
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {goto(LilyPond_Fisherman_A_QuestScript)}
-
-}
-script LilyPond_Fisherman_A_QuestScript{
-    msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)   
-    applymovement(1, moves(emote_question_mark))
-    waitmovement(0)
-    delay(24)
-    msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no?\nI'm going ahead!"))  
-    release   
-    addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)    
-    setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
-    
-    //move the fisherman
-    applymovement(1, moves(walk_left face_up))
-    waitmovement(0)
-    delay(8)
-    removeobject(1)
-    //move the ship
-    applymovement(2, moves(walk_right * 10))
-    waitmovement(0)
-    removeobject(2)
-
+    msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)
     end
 }
+// script LilyPond_Fisherman_A_QuestScript{
+//     msgbox(format("My brothers and I come to fish here every year. On the same day."), MSGBOX_NPC)   
+//     applymovement(1, moves(emote_question_mark))
+//     waitmovement(0)
+//     delay(24)
+//     msgbox(format("You have a letter for me? Let me see.\p...\p...\p...\pGot it. How can I say no?\nI'm going ahead!"))  
+//     release   
+//     addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)    
+//     setflag(FLAG_LILYPOND_FISHERMAN_A_LETTER)
+    
+//     //move the fisherman
+//     applymovement(1, moves(walk_left face_up))
+//     waitmovement(0)
+//     delay(8)
+//     removeobject(1)
+//     //move the ship
+//     applymovement(2, moves(walk_right * 10))
+//     waitmovement(0)
+//     removeobject(2)
+
+//     end
+// }
 
 
 script LilyPond_Fisherman_B{
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 0) {
-        msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)
-        end
-    }
-
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {goto(LilyPond_Fisherman_B_QuestScript)}
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {goto(LilyPond_Fisherman_B_QuestScript)}    
+    msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)
+    end  
 }
 
-script LilyPond_Fisherman_B_QuestScript{
-    msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)   
-    applymovement(3, moves(emote_question_mark))
-    waitmovement(0)
-    delay(24)
-    msgbox(format("You have a letter for me?\nWhat does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
-    release
-    addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
-    setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
+// script LilyPond_Fisherman_B_QuestScript{
+//     msgbox(format("Such a beautiful pond...such bitter memories."), MSGBOX_NPC)   
+//     applymovement(3, moves(emote_question_mark))
+//     waitmovement(0)
+//     delay(24)
+//     msgbox(format("You have a letter for me?\nWhat does it say?\p...\p...\p...\pUnderstood. I'm in. Time to move!"))     
+//     release
+//     addvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
+//     setflag(FLAG_LILYPOND_FISHERMAN_B_LETTER)
 
-    //move the fisherman
-    applymovement(3, moves(walk_left face_up))
-    waitmovement(0)
-    delay(8)
-    removeobject(3)
-    //move the ship
-    applymovement(5, moves(walk_right * 5 walk_down *7))
-    waitmovement(0)
-    removeobject(5)
+//     //move the fisherman
+//     applymovement(3, moves(walk_left face_up))
+//     waitmovement(0)
+//     delay(8)
+//     removeobject(3)
+//     //move the ship
+//     applymovement(5, moves(walk_right * 5 walk_down *7))
+//     waitmovement(0)
+//     removeobject(5)
 
-    end    
-}
+//     end    
+// }
 
 script LilyPond_Fisherman_C{
-
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 3){
-        msgbox(format("Thank you {PLAYER}! I met my brothers and they've already left for Ivy River.\p...\p{PLAYER}, will you be coming down Ivy River? If it's not too much to ask, we'd appreciate your help in the search. We'll be there, so if you do come, please speak to us. I hope to see you there!"))
-        release
-        delay(8)
-
-        applymovement(4, moves(walk_left face_down))
-        waitmovement(0)
-        delay(8)
-        removeobject(4)
-
-        applymovement(8, moves(walk_fast_down * 6))
-        waitmovement(0)
-        removeobject(8)
-
-        //setvar, increment quest
-        setflag(FLAG_LILYPOND_FISHERMAN_QUEST_START)
-        setvar(VAR_LILYPOND_FISHERMAN_QUEST, 4)
-
-        //clear relevant flags for quest
-        clearflag(FLAG_HIDE_IVYRIVER_FISHERMEN)
-
-        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1)        
-        end
-    }
-
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 2) {
-        msgbox(format("Have you delivered the mail to my brothers yet?"), MSGBOX_NPC)
-        end
-    }
-
-
-    if (var(VAR_LILYPOND_FISHERMAN_QUEST) == 1) {
-        msgbox(format("Have you delivered the mail to my brothers yet?"), MSGBOX_NPC)
-        end
-    }
-
-
     //Startquest
     lockall
     faceplayer
@@ -358,27 +309,6 @@ script LilyPond_Fisherman_C{
 
     releaseall
     end
-
-    //REMOVED THE QUEST
-    // dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm sorry to hear that.", "I'm sure he's safe.", "Don't give up!")
-
-    // if (var(VAR_RESULT) == 0){
-    //     msgbox(format("Thank you.\pI've taken up too much of your time. I appreciate you listening to me."), MSGBOX_NPC)
-    //     end
-    // }
-    // if (var(VAR_RESULT) == 1){
-    //     msgbox(format("Thank you. I'm sure too.\pI've taken up too much of your time.\nI appreciate you listening to me."), MSGBOX_NPC)
-    //     end
-    // }
-
-    // msgbox(format("Don't give up? But what can we do?\nShould we try to search again?\p...\pYou're right, of course. We can't lose hope! I'd like to try searching once again. Perhaps my brothers would too.\pWhat's your name?\p...\p{PLAYER}?\pI'll write them a letter asking for their help in searching.\pWould you deliver it to them?"))
-    // release
-    // giveitem(ITEM_FISHERMAN_LETTER)
-    // startquest(QUEST_LILYPOND_FISHERMAN)
-    // setvar(VAR_LILYPOND_FISHERMAN_QUEST, 1)
-
-    // releaseall
-    // end
 }
 
 

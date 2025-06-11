@@ -2929,7 +2929,7 @@ void CreateContestMonFromParty(u8 partyIndex)
         beauty += 20;
     else if (heldItem == ITEM_PINK_SCARF)
         cute += 20;
-    else if (heldItem == ITEM_GREEN_SCARF)
+    else if (heldItem == ITEM_PURPLE_SCARF)
         smart += 20;
     else if (heldItem == ITEM_YELLOW_SCARF)
         tough += 20;

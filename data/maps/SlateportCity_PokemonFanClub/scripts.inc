@@ -100,11 +100,11 @@ SlateportCity_PokemonFanClub_EventScript_GivePinkScarf::
 	end
 
 SlateportCity_PokemonFanClub_EventScript_GiveGreenScarf::
-	checkitemspace ITEM_GREEN_SCARF
+	checkitemspace ITEM_PURPLE_SCARF
 	goto_if_eq VAR_RESULT, FALSE, SlateportCity_PokemonFanClub_EventScript_NoRoomForScarf
 	msgbox SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_GREEN_SCARF
-	giveitem ITEM_GREEN_SCARF
+	giveitem ITEM_PURPLE_SCARF
 	msgbox SlateportCity_PokemonFanClub_Text_ExplainGreenScarf, MSGBOX_DEFAULT
 	release
 	end

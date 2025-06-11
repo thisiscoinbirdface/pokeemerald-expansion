@@ -271,7 +271,7 @@
     #define VAR_MASTERBALL_QUEST                             0x40DB // Unused Var
     #define VAR_STATUE_COUNT                                 0x40DC // Unused Var
 
-#define VAR_UNUSED_0x4091                                0x4091 // Unused Var
+#define VAR_ZARUDE_NOTES                                 0x4091 // Unused Var
 #define VAR_UNUSED_0x409B                                0x409B // Unused Var
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_UNUSED_0x40A1                                0x40A1 // Unused var

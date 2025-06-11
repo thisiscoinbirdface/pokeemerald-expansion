@@ -339,212 +339,48 @@ LilyPond_Cave_Lapras_Encounter_14:
 
 LilyPond_Fisherman_A::
 # 238 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 0
-	goto_if_eq LilyPond_Fisherman_A_2
-# 243 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 1
-	goto_if_eq LilyPond_Fisherman_A_5
-LilyPond_Fisherman_A_4:
-# 244 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 2
-	goto_if_eq LilyPond_Fisherman_A_7
-	return
-
-LilyPond_Fisherman_A_2:
-# 239 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_A_Text_0, MSGBOX_NPC
-	end
-
-LilyPond_Fisherman_A_5:
-# 243 "data//maps/IvyRiver/scripts.pory"
-	goto LilyPond_Fisherman_A_QuestScript
-	goto LilyPond_Fisherman_A_4
-
-LilyPond_Fisherman_A_7:
-# 244 "data//maps/IvyRiver/scripts.pory"
-	goto LilyPond_Fisherman_A_QuestScript
-	return
-
-
-LilyPond_Fisherman_A_QuestScript::
-# 248 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_A_Text_0, MSGBOX_NPC
-# 249 "data//maps/IvyRiver/scripts.pory"
-	applymovement 1, LilyPond_Fisherman_A_QuestScript_Movement_0
-# 250 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 251 "data//maps/IvyRiver/scripts.pory"
-	delay 24
-# 252 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_A_QuestScript_Text_0
-# 253 "data//maps/IvyRiver/scripts.pory"
-	release
-# 254 "data//maps/IvyRiver/scripts.pory"
-	addvar VAR_LILYPOND_FISHERMAN_QUEST, 1
-# 255 "data//maps/IvyRiver/scripts.pory"
-	setflag FLAG_LILYPOND_FISHERMAN_A_LETTER
-# 258 "data//maps/IvyRiver/scripts.pory"
-	applymovement 1, LilyPond_Fisherman_A_QuestScript_Movement_1
-# 259 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 260 "data//maps/IvyRiver/scripts.pory"
-	delay 8
-# 261 "data//maps/IvyRiver/scripts.pory"
-	removeobject 1
-# 263 "data//maps/IvyRiver/scripts.pory"
-	applymovement 2, LilyPond_Fisherman_A_QuestScript_Movement_2
-# 264 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 265 "data//maps/IvyRiver/scripts.pory"
-	removeobject 2
 	end
 
 
 LilyPond_Fisherman_B::
-# 272 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 0
-	goto_if_eq LilyPond_Fisherman_B_2
-# 277 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 1
-	goto_if_eq LilyPond_Fisherman_B_5
-LilyPond_Fisherman_B_4:
-# 278 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 2
-	goto_if_eq LilyPond_Fisherman_B_7
-	return
-
-LilyPond_Fisherman_B_2:
-# 273 "data//maps/IvyRiver/scripts.pory"
+# 266 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_B_Text_0, MSGBOX_NPC
-	end
-
-LilyPond_Fisherman_B_5:
-# 277 "data//maps/IvyRiver/scripts.pory"
-	goto LilyPond_Fisherman_B_QuestScript
-	goto LilyPond_Fisherman_B_4
-
-LilyPond_Fisherman_B_7:
-# 278 "data//maps/IvyRiver/scripts.pory"
-	goto LilyPond_Fisherman_B_QuestScript
-	return
-
-
-LilyPond_Fisherman_B_QuestScript::
-# 282 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_B_Text_0, MSGBOX_NPC
-# 283 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Fisherman_A_QuestScript_Movement_0
-# 284 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 285 "data//maps/IvyRiver/scripts.pory"
-	delay 24
-# 286 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_B_QuestScript_Text_0
-# 287 "data//maps/IvyRiver/scripts.pory"
-	release
-# 288 "data//maps/IvyRiver/scripts.pory"
-	addvar VAR_LILYPOND_FISHERMAN_QUEST, 1
-# 289 "data//maps/IvyRiver/scripts.pory"
-	setflag FLAG_LILYPOND_FISHERMAN_B_LETTER
-# 292 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Fisherman_A_QuestScript_Movement_1
-# 293 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 294 "data//maps/IvyRiver/scripts.pory"
-	delay 8
-# 295 "data//maps/IvyRiver/scripts.pory"
-	removeobject 3
-# 297 "data//maps/IvyRiver/scripts.pory"
-	applymovement 5, LilyPond_Fisherman_B_QuestScript_Movement_0
-# 298 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 299 "data//maps/IvyRiver/scripts.pory"
-	removeobject 5
 	end
 
 
 LilyPond_Fisherman_C::
-# 306 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 3
-	goto_if_eq LilyPond_Fisherman_C_2
-# 331 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 2
-	goto_if_eq LilyPond_Fisherman_C_5
-# 337 "data//maps/IvyRiver/scripts.pory"
-	compare VAR_LILYPOND_FISHERMAN_QUEST, 1
-	goto_if_eq LilyPond_Fisherman_C_8
-# 344 "data//maps/IvyRiver/scripts.pory"
+# 295 "data//maps/IvyRiver/scripts.pory"
 	lockall
-# 345 "data//maps/IvyRiver/scripts.pory"
+# 296 "data//maps/IvyRiver/scripts.pory"
 	faceplayer
-# 346 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_2, MSGBOX_YESNO
-# 348 "data//maps/IvyRiver/scripts.pory"
+# 297 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Fisherman_C_Text_0, MSGBOX_YESNO
+# 299 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq LilyPond_Fisherman_C_11
-# 353 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_4
-# 354 "data//maps/IvyRiver/scripts.pory"
+	goto_if_eq LilyPond_Fisherman_C_2
+# 304 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Fisherman_C_Text_2
+# 305 "data//maps/IvyRiver/scripts.pory"
 	release
-# 355 "data//maps/IvyRiver/scripts.pory"
+# 306 "data//maps/IvyRiver/scripts.pory"
 	delay 16
-# 356 "data//maps/IvyRiver/scripts.pory"
-	message LilyPond_Fisherman_C_Text_5
-# 357 "data//maps/IvyRiver/scripts.pory"
+# 307 "data//maps/IvyRiver/scripts.pory"
+	message LilyPond_Fisherman_C_Text_3
+# 308 "data//maps/IvyRiver/scripts.pory"
 	waitmessage
-# 359 "data//maps/IvyRiver/scripts.pory"
+# 310 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
 LilyPond_Fisherman_C_2:
-# 307 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_0
-# 308 "data//maps/IvyRiver/scripts.pory"
-	release
-# 309 "data//maps/IvyRiver/scripts.pory"
-	delay 8
-# 311 "data//maps/IvyRiver/scripts.pory"
-	applymovement 4, LilyPond_Fisherman_C_Movement_0
-# 312 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 313 "data//maps/IvyRiver/scripts.pory"
-	delay 8
-# 314 "data//maps/IvyRiver/scripts.pory"
-	removeobject 4
-# 316 "data//maps/IvyRiver/scripts.pory"
-	applymovement 8, LilyPond_Fisherman_C_Movement_1
-# 317 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
-# 318 "data//maps/IvyRiver/scripts.pory"
-	removeobject 8
-# 321 "data//maps/IvyRiver/scripts.pory"
-	setflag FLAG_LILYPOND_FISHERMAN_QUEST_START
-# 322 "data//maps/IvyRiver/scripts.pory"
-	setvar VAR_LILYPOND_FISHERMAN_QUEST, 4
-# 325 "data//maps/IvyRiver/scripts.pory"
-	clearflag FLAG_HIDE_IVYRIVER_FISHERMEN
-# 327 "data//maps/IvyRiver/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LILYPOND_FISHERMAN, SUB_QUEST_1
-	end
-
-LilyPond_Fisherman_C_5:
-# 332 "data//maps/IvyRiver/scripts.pory"
+# 300 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_1, MSGBOX_NPC
-	end
-
-LilyPond_Fisherman_C_8:
-# 338 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_1, MSGBOX_NPC
-	end
-
-LilyPond_Fisherman_C_11:
-# 349 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_3, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_Blocker::
-# 387 "data//maps/IvyRiver/scripts.pory"
+# 317 "data//maps/IvyRiver/scripts.pory"
 	msgbox IvyRiver_Ranger_Blocker_Text_0, MSGBOX_NPC
 	end
 
@@ -769,96 +605,6 @@ LilyPond_Cave_Lapras_Encounter_Movement_0:
 	face_down
 	step_end
 
-# 249 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_A_QuestScript_Movement_0:
-# 249 "data//maps/IvyRiver/scripts.pory"
-	emote_question_mark
-	step_end
-
-# 258 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_A_QuestScript_Movement_1:
-# 258 "data//maps/IvyRiver/scripts.pory"
-	walk_left
-# 258 "data//maps/IvyRiver/scripts.pory"
-	face_up
-	step_end
-
-# 263 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_A_QuestScript_Movement_2:
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 263 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-	step_end
-
-# 297 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_B_QuestScript_Movement_0:
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_right
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-# 297 "data//maps/IvyRiver/scripts.pory"
-	walk_down
-	step_end
-
-# 311 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_C_Movement_0:
-# 311 "data//maps/IvyRiver/scripts.pory"
-	walk_left
-# 311 "data//maps/IvyRiver/scripts.pory"
-	face_down
-	step_end
-
-# 316 "data//maps/IvyRiver/scripts.pory"
-LilyPond_Fisherman_C_Movement_1:
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-# 316 "data//maps/IvyRiver/scripts.pory"
-	walk_fast_down
-	step_end
-
 LilyPond_Cave_Dreepy_Text_0:
 # 81 "data//maps/IvyRiver/scripts.pory"
 	.string "Dreepy is nuzzling Blastoise's wound,\n"
@@ -928,62 +674,28 @@ LilyPond_Cave_Lapras_Encounter_Text_5:
 	.string "asleep. It needs its beauty sleep!$"
 
 LilyPond_Fisherman_A_Text_0:
-# 239 "data//maps/IvyRiver/scripts.pory"
+# 238 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I come to fish here\n"
 	.string "every year. On the same day.$"
 
-LilyPond_Fisherman_A_QuestScript_Text_0:
-# 252 "data//maps/IvyRiver/scripts.pory"
-	.string "You have a letter for me? Let me see.\p"
-	.string "...\p"
-	.string "...\p"
-	.string "...\p"
-	.string "Got it. How can I say no?\n"
-	.string "I'm going ahead!$"
-
 LilyPond_Fisherman_B_Text_0:
-# 273 "data//maps/IvyRiver/scripts.pory"
+# 266 "data//maps/IvyRiver/scripts.pory"
 	.string "Such a beautiful pond...such bitter\n"
 	.string "memories.$"
 
-LilyPond_Fisherman_B_QuestScript_Text_0:
-# 286 "data//maps/IvyRiver/scripts.pory"
-	.string "You have a letter for me?\n"
-	.string "What does it say?\p"
-	.string "...\p"
-	.string "...\p"
-	.string "...\p"
-	.string "Understood. I'm in. Time to move!$"
-
 LilyPond_Fisherman_C_Text_0:
-# 307 "data//maps/IvyRiver/scripts.pory"
-	.string "Thank you {PLAYER}! I met my brothers\n"
-	.string "and they've already left for Ivy River.\p"
-	.string "...\p"
-	.string "{PLAYER}, will you be coming down Ivy\n"
-	.string "River? If it's not too much to ask, we'd\l"
-	.string "appreciate your help in the search.\l"
-	.string "We'll be there, so if you do come, please\l"
-	.string "speak to us. I hope to see you there!$"
-
-LilyPond_Fisherman_C_Text_1:
-# 332 "data//maps/IvyRiver/scripts.pory"
-	.string "Have you delivered the mail to my\n"
-	.string "brothers yet?$"
-
-LilyPond_Fisherman_C_Text_2:
-# 346 "data//maps/IvyRiver/scripts.pory"
+# 297 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I fish around Lily Pond.\n"
 	.string "We have a connection to this place -\l"
 	.string "although not a happy one.\p"
 	.string "Do you want to hear our story?$"
 
-LilyPond_Fisherman_C_Text_3:
-# 349 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Fisherman_C_Text_1:
+# 300 "data//maps/IvyRiver/scripts.pory"
 	.string "Just as well. It hurts to tell it.$"
 
-LilyPond_Fisherman_C_Text_4:
-# 353 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Fisherman_C_Text_2:
+# 304 "data//maps/IvyRiver/scripts.pory"
 	.string "We were four brothers. Many years ago,\n"
 	.string "we came to Lily Pond to fish for our\l"
 	.string "first Pokémon. While three of us stayed\l"
@@ -992,11 +704,11 @@ LilyPond_Fisherman_C_Text_4:
 	.string "into Ivy River. We tried to stop him, but\l"
 	.string "he went away, and was never seen again.$"
 
-LilyPond_Fisherman_C_Text_5:
-# 356 "data//maps/IvyRiver/scripts.pory"
+LilyPond_Fisherman_C_Text_3:
+# 307 "data//maps/IvyRiver/scripts.pory"
 	.string "A sad story, I know.$"
 
 IvyRiver_Ranger_Blocker_Text_0:
-# 387 "data//maps/IvyRiver/scripts.pory"
+# 317 "data//maps/IvyRiver/scripts.pory"
 	.string "Sorry - to access the Ivy River Ranger\n"
 	.string "Institute, you must be a member.$"

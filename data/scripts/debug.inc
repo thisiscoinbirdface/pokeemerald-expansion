@@ -148,21 +148,21 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	giveitem ITEM_HM07
 	release
 	end
 
 Debug_EventScript_Script_4::
-	special StartFly
 	release
 	end
 
 Debug_EventScript_Script_5::
-	trainerbattle_no_intro TRAINER_CHAMPIONSHIP_E, Debug_BoxFilledMessage_Text
 	release
 	end
 
 Debug_EventScript_Script_6::
+	clearflag FLAG_IVYRIVER_ZARUDE_NOTE1
+	clearflag FLAG_IVYRIVER_ZARUDE_NOTE2
+	clearflag FLAG_IVYRIVER_ZARUDE_SCARF
 	release
 	end
 
