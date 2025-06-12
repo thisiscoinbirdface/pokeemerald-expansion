@@ -939,11 +939,13 @@ script AncientStatue_IvyForest{
 
 
 script AncientStatue_FirstTime{
-    addvar(VAR_STATUE_COUNT, 1)
-    buffernumberstring(STR_VAR_2, VAR_STATUE_COUNT)
-    msgbox(format("It's a statue of an ancient Pokémon...\p{PLAYER} found {STR_VAR_2} of 10 statues.\pScanning the ancient statue\nwith the Archaeolens..."))
-    playse(SE_CLICK)
-    msgbox(format("Done!"))
+    if (var(VAR_STATUE_COUNT) < 10){
+        addvar(VAR_STATUE_COUNT, 1)
+        buffernumberstring(STR_VAR_2, VAR_STATUE_COUNT)
+        msgbox(format("It's a statue of an ancient Pokémon...\p{PLAYER} found {STR_VAR_2} of 10 statues.\pScanning the ancient statue\nwith the Archaeolens..."))
+        playse(SE_CLICK)
+        msgbox(format("Done!"))
+    }
     goto(AncientStatue_CheckRareShard) 
 }
 

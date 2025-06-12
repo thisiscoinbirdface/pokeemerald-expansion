@@ -524,27 +524,21 @@ script RangerInstitute_Pokeball_One{
             removeobject(4)
             givemon(SPECIES_TAUROS_PALDEA_BLAZE, 45, ITEM_SITRUS_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Ranger Institute has gifted you a Tauros!"))
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_RANGER_SELECTED_MON_ONE)
-                setvar(VAR_RANGER_INSTITUTE, 10)
-            }
+
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Ranger Institute has gifted you a Tauros!"))
+            hidemonpic
+            removeobject(1)
+            setflag(FLAG_RANGER_SELECTED_MON_ONE)
+            setvar(VAR_RANGER_INSTITUTE, 10)
+        } else {
+            hidemonpic
         }
-        hidemonpic
-
     } else {
-        
-        msgbox(format("One of the Institute's Pokémon.\nBetter not touch it!"))
-        
+        msgbox(format("One of the Institute's Pokémon.\nBetter not touch it!"))        
     }
-
-    waitmessage
     releaseall
     end
- 
 }
 
 script RangerInstitute_Pokeball_Two{
@@ -561,32 +555,25 @@ script RangerInstitute_Pokeball_Two{
             removeobject(4)
             givemon(SPECIES_KANGASKHAN, 45, ITEM_SITRUS_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Ranger Institute has gifted you a Kangaskhan!"))
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_RANGER_SELECTED_MON_TWO)
-                setvar(VAR_RANGER_INSTITUTE, 10)
-            }
+
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Ranger Institute has gifted you a Kangaskhan!"))
+            hidemonpic
+            removeobject(1)
+            setflag(FLAG_RANGER_SELECTED_MON_TWO)
+            setvar(VAR_RANGER_INSTITUTE, 10)
+            hidemonpic
+        } else {
             hidemonpic
         }
-        hidemonpic
-
     } else {
-        
-        msgbox(format("One of the Institute's Pokémon.\nBetter not touch it!"))
-        
+        msgbox(format("One of the Institute's Pokémon.\nBetter not touch it!"))        
     }
-
-    waitmessage
     releaseall
     end
- 
 }
 
 script RangerInstitute_Pokeball_Three{
- 
     lockall
 
     if (var(VAR_RANGER_INSTITUTE) == 9){
@@ -598,29 +585,20 @@ script RangerInstitute_Pokeball_Three{
             removeobject(4)
             givemon(SPECIES_MANECTRIC, 45, ITEM_SITRUS_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Ranger Institute has gifted you a Manectric!"))
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_RANGER_SELECTED_MON_THREE)
-                setvar(VAR_RANGER_INSTITUTE, 10)
-            }
-        }
-        else{
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Ranger Institute has gifted you a Manectric!"))
+            hidemonpic
+            removeobject(1)
+            setflag(FLAG_RANGER_SELECTED_MON_THREE)
+            setvar(VAR_RANGER_INSTITUTE, 10)
+        } else {
             hidemonpic
         }
-
-    } else {
-        
+    } else {        
         msgbox(format("One of the Institute's Pokémon.\nBetter not touch it!"))
-        
     }
-
-    waitmessage
     releaseall
     end
- 
 }
 
 

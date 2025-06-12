@@ -661,12 +661,10 @@ RangerInstitute_Pokeball_One::
 # 517 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 9
 	goto_if_eq RangerInstitute_Pokeball_One_2
-# 540 "data//maps/RangerInstitute/scripts.pory"
+# 538 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_One_Text_2
 RangerInstitute_Pokeball_One_1:
-# 544 "data//maps/RangerInstitute/scripts.pory"
-	waitmessage
-# 545 "data//maps/RangerInstitute/scripts.pory"
+# 540 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
@@ -681,25 +679,18 @@ RangerInstitute_Pokeball_One_2:
 	release
 # 523 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq RangerInstitute_Pokeball_One_6
-RangerInstitute_Pokeball_One_5:
-# 536 "data//maps/RangerInstitute/scripts.pory"
+	goto_if_eq RangerInstitute_Pokeball_One_5
+# 535 "data//maps/RangerInstitute/scripts.pory"
 	hidemonpic
 	goto RangerInstitute_Pokeball_One_1
 
-RangerInstitute_Pokeball_One_6:
+RangerInstitute_Pokeball_One_5:
 # 524 "data//maps/RangerInstitute/scripts.pory"
 	removeobject 4
 # 525 "data//maps/RangerInstitute/scripts.pory"
 	givemon SPECIES_TAUROS_PALDEA_BLAZE, 45, ITEM_SITRUS_BERRY
 # 526 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 527 "data//maps/RangerInstitute/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq RangerInstitute_Pokeball_One_8
-	goto RangerInstitute_Pokeball_One_5
-
-RangerInstitute_Pokeball_One_8:
 # 528 "data//maps/RangerInstitute/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 529 "data//maps/RangerInstitute/scripts.pory"
@@ -712,177 +703,159 @@ RangerInstitute_Pokeball_One_8:
 	setflag FLAG_RANGER_SELECTED_MON_ONE
 # 533 "data//maps/RangerInstitute/scripts.pory"
 	setvar VAR_RANGER_INSTITUTE, 10
-	goto RangerInstitute_Pokeball_One_5
+	goto RangerInstitute_Pokeball_One_1
 
 
 RangerInstitute_Pokeball_Two::
-# 552 "data//maps/RangerInstitute/scripts.pory"
+# 546 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 554 "data//maps/RangerInstitute/scripts.pory"
+# 548 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 9
 	goto_if_eq RangerInstitute_Pokeball_Two_2
-# 578 "data//maps/RangerInstitute/scripts.pory"
+# 570 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_One_Text_2
 RangerInstitute_Pokeball_Two_1:
-# 582 "data//maps/RangerInstitute/scripts.pory"
-	waitmessage
-# 583 "data//maps/RangerInstitute/scripts.pory"
+# 572 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 RangerInstitute_Pokeball_Two_2:
-# 556 "data//maps/RangerInstitute/scripts.pory"
+# 550 "data//maps/RangerInstitute/scripts.pory"
 	showmonpic SPECIES_KANGASKHAN, 10, 3
-# 557 "data//maps/RangerInstitute/scripts.pory"
+# 551 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_KANGASKHAN, CRY_MODE_NORMAL
-# 558 "data//maps/RangerInstitute/scripts.pory"
+# 552 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_Two_Text_0, MSGBOX_YESNO
-# 559 "data//maps/RangerInstitute/scripts.pory"
+# 553 "data//maps/RangerInstitute/scripts.pory"
 	release
-# 560 "data//maps/RangerInstitute/scripts.pory"
+# 554 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq RangerInstitute_Pokeball_Two_6
-RangerInstitute_Pokeball_Two_5:
-# 574 "data//maps/RangerInstitute/scripts.pory"
+	goto_if_eq RangerInstitute_Pokeball_Two_5
+# 567 "data//maps/RangerInstitute/scripts.pory"
 	hidemonpic
 	goto RangerInstitute_Pokeball_Two_1
 
-RangerInstitute_Pokeball_Two_6:
-# 561 "data//maps/RangerInstitute/scripts.pory"
+RangerInstitute_Pokeball_Two_5:
+# 555 "data//maps/RangerInstitute/scripts.pory"
 	removeobject 4
-# 562 "data//maps/RangerInstitute/scripts.pory"
+# 556 "data//maps/RangerInstitute/scripts.pory"
 	givemon SPECIES_KANGASKHAN, 45, ITEM_SITRUS_BERRY
-# 563 "data//maps/RangerInstitute/scripts.pory"
+# 557 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 564 "data//maps/RangerInstitute/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq RangerInstitute_Pokeball_Two_9
-RangerInstitute_Pokeball_Two_8:
-# 572 "data//maps/RangerInstitute/scripts.pory"
-	hidemonpic
-	goto RangerInstitute_Pokeball_Two_5
-
-RangerInstitute_Pokeball_Two_9:
-# 565 "data//maps/RangerInstitute/scripts.pory"
+# 559 "data//maps/RangerInstitute/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 566 "data//maps/RangerInstitute/scripts.pory"
+# 560 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_Two_Text_1
-# 567 "data//maps/RangerInstitute/scripts.pory"
+# 561 "data//maps/RangerInstitute/scripts.pory"
 	hidemonpic
-# 568 "data//maps/RangerInstitute/scripts.pory"
+# 562 "data//maps/RangerInstitute/scripts.pory"
 	removeobject 1
-# 569 "data//maps/RangerInstitute/scripts.pory"
+# 563 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_SELECTED_MON_TWO
-# 570 "data//maps/RangerInstitute/scripts.pory"
+# 564 "data//maps/RangerInstitute/scripts.pory"
 	setvar VAR_RANGER_INSTITUTE, 10
-	goto RangerInstitute_Pokeball_Two_8
+# 565 "data//maps/RangerInstitute/scripts.pory"
+	hidemonpic
+	goto RangerInstitute_Pokeball_Two_1
 
 
 RangerInstitute_Pokeball_Three::
-# 590 "data//maps/RangerInstitute/scripts.pory"
+# 577 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 592 "data//maps/RangerInstitute/scripts.pory"
+# 579 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RANGER_INSTITUTE, 9
 	goto_if_eq RangerInstitute_Pokeball_Three_2
-# 616 "data//maps/RangerInstitute/scripts.pory"
+# 598 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_One_Text_2
 RangerInstitute_Pokeball_Three_1:
-# 620 "data//maps/RangerInstitute/scripts.pory"
-	waitmessage
-# 621 "data//maps/RangerInstitute/scripts.pory"
+# 600 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 	end
 
 RangerInstitute_Pokeball_Three_2:
-# 594 "data//maps/RangerInstitute/scripts.pory"
+# 581 "data//maps/RangerInstitute/scripts.pory"
 	showmonpic SPECIES_MANECTRIC, 10, 3
-# 595 "data//maps/RangerInstitute/scripts.pory"
+# 582 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_MANECTRIC, CRY_MODE_NORMAL
-# 596 "data//maps/RangerInstitute/scripts.pory"
+# 583 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_Three_Text_0, MSGBOX_YESNO
-# 597 "data//maps/RangerInstitute/scripts.pory"
+# 584 "data//maps/RangerInstitute/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq RangerInstitute_Pokeball_Three_5
-# 611 "data//maps/RangerInstitute/scripts.pory"
+# 595 "data//maps/RangerInstitute/scripts.pory"
 	hidemonpic
 	goto RangerInstitute_Pokeball_Three_1
 
 RangerInstitute_Pokeball_Three_5:
-# 598 "data//maps/RangerInstitute/scripts.pory"
+# 585 "data//maps/RangerInstitute/scripts.pory"
 	removeobject 4
-# 599 "data//maps/RangerInstitute/scripts.pory"
+# 586 "data//maps/RangerInstitute/scripts.pory"
 	givemon SPECIES_MANECTRIC, 45, ITEM_SITRUS_BERRY
-# 600 "data//maps/RangerInstitute/scripts.pory"
+# 587 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 601 "data//maps/RangerInstitute/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq RangerInstitute_Pokeball_Three_8
-	goto RangerInstitute_Pokeball_Three_1
-
-RangerInstitute_Pokeball_Three_8:
-# 602 "data//maps/RangerInstitute/scripts.pory"
+# 588 "data//maps/RangerInstitute/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 603 "data//maps/RangerInstitute/scripts.pory"
+# 589 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Pokeball_Three_Text_1
-# 604 "data//maps/RangerInstitute/scripts.pory"
+# 590 "data//maps/RangerInstitute/scripts.pory"
 	hidemonpic
-# 605 "data//maps/RangerInstitute/scripts.pory"
+# 591 "data//maps/RangerInstitute/scripts.pory"
 	removeobject 1
-# 606 "data//maps/RangerInstitute/scripts.pory"
+# 592 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_SELECTED_MON_THREE
-# 607 "data//maps/RangerInstitute/scripts.pory"
+# 593 "data//maps/RangerInstitute/scripts.pory"
 	setvar VAR_RANGER_INSTITUTE, 10
 	goto RangerInstitute_Pokeball_Three_1
 
 
 RangerInstitute_Mon_Bayleef::
-# 641 "data//maps/RangerInstitute/scripts.pory"
+# 619 "data//maps/RangerInstitute/scripts.pory"
 	goto_if_set FLAG_RANGER_INSTITUTE_BAYLEEF, RangerInstitute_Mon_Bayleef_2
-# 644 "data//maps/RangerInstitute/scripts.pory"
+# 622 "data//maps/RangerInstitute/scripts.pory"
 	lockall
-# 645 "data//maps/RangerInstitute/scripts.pory"
+# 623 "data//maps/RangerInstitute/scripts.pory"
 	faceplayer
-# 646 "data//maps/RangerInstitute/scripts.pory"
+# 624 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_BAYLEEF, CRY_MODE_NORMAL
-# 647 "data//maps/RangerInstitute/scripts.pory"
+# 625 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_1
-# 648 "data//maps/RangerInstitute/scripts.pory"
+# 626 "data//maps/RangerInstitute/scripts.pory"
 	giveitem ITEM_MAX_REVIVE
-# 649 "data//maps/RangerInstitute/scripts.pory"
+# 627 "data//maps/RangerInstitute/scripts.pory"
 	setflag FLAG_RANGER_INSTITUTE_BAYLEEF
-# 650 "data//maps/RangerInstitute/scripts.pory"
+# 628 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_2
-# 651 "data//maps/RangerInstitute/scripts.pory"
+# 629 "data//maps/RangerInstitute/scripts.pory"
 	releaseall
 RangerInstitute_Mon_Bayleef_1:
 	end
 
 RangerInstitute_Mon_Bayleef_2:
-# 642 "data//maps/RangerInstitute/scripts.pory"
+# 620 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Bayleef_Text_0, MSGBOX_NPC
 	goto RangerInstitute_Mon_Bayleef_1
 
 
 RangerInstitute_Mon_Palpitoad::
-# 656 "data//maps/RangerInstitute/scripts.pory"
+# 634 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_PALPITOAD, CRY_MODE_NORMAL
-# 657 "data//maps/RangerInstitute/scripts.pory"
+# 635 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Palpitoad_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Surskit::
-# 661 "data//maps/RangerInstitute/scripts.pory"
+# 639 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_MASQUERAIN, CRY_MODE_NORMAL
-# 662 "data//maps/RangerInstitute/scripts.pory"
+# 640 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Surskit_Text_0, MSGBOX_NPC
 	end
 
 
 RangerInstitute_Mon_Scyther::
-# 666 "data//maps/RangerInstitute/scripts.pory"
+# 644 "data//maps/RangerInstitute/scripts.pory"
 	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
-# 667 "data//maps/RangerInstitute/scripts.pory"
+# 645 "data//maps/RangerInstitute/scripts.pory"
 	msgbox RangerInstitute_Mon_Scyther_Text_0, MSGBOX_NPC
 	end
 
@@ -1599,52 +1572,52 @@ RangerInstitute_Pokeball_One_Text_1:
 	.string "Tauros!$"
 
 RangerInstitute_Pokeball_One_Text_2:
-# 540 "data//maps/RangerInstitute/scripts.pory"
+# 538 "data//maps/RangerInstitute/scripts.pory"
 	.string "One of the Institute's Pokémon.\n"
 	.string "Better not touch it!$"
 
 RangerInstitute_Pokeball_Two_Text_0:
-# 558 "data//maps/RangerInstitute/scripts.pory"
+# 552 "data//maps/RangerInstitute/scripts.pory"
 	.string "Do you want to choose the dominating Kangaskhan?$"
 
 RangerInstitute_Pokeball_Two_Text_1:
-# 566 "data//maps/RangerInstitute/scripts.pory"
+# 560 "data//maps/RangerInstitute/scripts.pory"
 	.string "The Ranger Institute has gifted you a\n"
 	.string "Kangaskhan!$"
 
 RangerInstitute_Pokeball_Three_Text_0:
-# 596 "data//maps/RangerInstitute/scripts.pory"
+# 583 "data//maps/RangerInstitute/scripts.pory"
 	.string "Do you want to choose the proud Manectric?$"
 
 RangerInstitute_Pokeball_Three_Text_1:
-# 603 "data//maps/RangerInstitute/scripts.pory"
+# 589 "data//maps/RangerInstitute/scripts.pory"
 	.string "The Ranger Institute has gifted you a\n"
 	.string "Manectric!$"
 
 RangerInstitute_Mon_Bayleef_Text_0:
-# 642 "data//maps/RangerInstitute/scripts.pory"
+# 620 "data//maps/RangerInstitute/scripts.pory"
 	.string "Bayleef is singing happily!$"
 
 RangerInstitute_Mon_Bayleef_Text_1:
-# 647 "data//maps/RangerInstitute/scripts.pory"
+# 625 "data//maps/RangerInstitute/scripts.pory"
 	.string "Bayleef is singing happily! It snuggles\n"
 	.string "upto you and gives you something...$"
 
 RangerInstitute_Mon_Bayleef_Text_2:
-# 650 "data//maps/RangerInstitute/scripts.pory"
+# 628 "data//maps/RangerInstitute/scripts.pory"
 	.string "Thanks Bayleef!$"
 
 RangerInstitute_Mon_Palpitoad_Text_0:
-# 657 "data//maps/RangerInstitute/scripts.pory"
+# 635 "data//maps/RangerInstitute/scripts.pory"
 	.string "Palpitoad grunts and waddles around.\n"
 	.string "It seems upset...$"
 
 RangerInstitute_Mon_Surskit_Text_0:
-# 662 "data//maps/RangerInstitute/scripts.pory"
+# 640 "data//maps/RangerInstitute/scripts.pory"
 	.string "Masquerain wants to be in the water!$"
 
 RangerInstitute_Mon_Scyther_Text_0:
-# 667 "data//maps/RangerInstitute/scripts.pory"
+# 645 "data//maps/RangerInstitute/scripts.pory"
 	.string "Scyther looks bummed out!\p"
 	.string "It probably wants to be out on the\n"
 	.string "field, just like its trainer.$"
