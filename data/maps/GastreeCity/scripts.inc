@@ -934,8 +934,6 @@ GastreeCity_EventScript_SkittyQuestStart_Movement_0:
 # 355 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_right
 # 355 "data//maps/GastreeCity/scripts.pory"
-	walk_fast_right
-# 355 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
 # 355 "data//maps/GastreeCity/scripts.pory"
 	walk_fast_down
@@ -956,15 +954,11 @@ GastreeCity_EventScript_SkittyQuestStart_Movement_1:
 # 373 "data//maps/GastreeCity/scripts.pory"
 	walk_right
 # 373 "data//maps/GastreeCity/scripts.pory"
-	walk_right
-# 373 "data//maps/GastreeCity/scripts.pory"
 	face_up
 	step_end
 
 # 379 "data//maps/GastreeCity/scripts.pory"
 GastreeCity_EventScript_SkittyQuestStart_Movement_2:
-# 379 "data//maps/GastreeCity/scripts.pory"
-	walk_left
 # 379 "data//maps/GastreeCity/scripts.pory"
 	walk_left
 # 379 "data//maps/GastreeCity/scripts.pory"

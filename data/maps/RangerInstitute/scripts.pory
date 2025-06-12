@@ -519,6 +519,7 @@ script RangerInstitute_Pokeball_One{
         showmonpic(SPECIES_TAUROS_PALDEA_BLAZE, 10,3)
         playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)
         msgbox("Do you want to choose the fiery Tauros?", MSGBOX_YESNO)
+        release
         if(var(VAR_RESULT) == YES){
             removeobject(4)
             givemon(SPECIES_TAUROS_PALDEA_BLAZE, 45, ITEM_SITRUS_BERRY)
@@ -532,9 +533,7 @@ script RangerInstitute_Pokeball_One{
                 setvar(VAR_RANGER_INSTITUTE, 10)
             }
         }
-        else{
-            hidemonpic
-        }
+        hidemonpic
 
     } else {
         
@@ -557,6 +556,7 @@ script RangerInstitute_Pokeball_Two{
         showmonpic(SPECIES_KANGASKHAN, 10,3)
         playmoncry(SPECIES_KANGASKHAN, CRY_MODE_NORMAL)
         msgbox("Do you want to choose the dominating Kangaskhan?", MSGBOX_YESNO)
+        release
         if(var(VAR_RESULT) == YES){
             removeobject(4)
             givemon(SPECIES_KANGASKHAN, 45, ITEM_SITRUS_BERRY)
@@ -569,10 +569,9 @@ script RangerInstitute_Pokeball_Two{
                 setflag(FLAG_RANGER_SELECTED_MON_TWO)
                 setvar(VAR_RANGER_INSTITUTE, 10)
             }
-        }
-        else{
             hidemonpic
         }
+        hidemonpic
 
     } else {
         

@@ -143,7 +143,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_ANCIENT_CORMORIA_FINAL_ISLAND, 9, 6
+	warp MAP_VICTORY_ROAD_CORMORIA, 12, 11
 	release
 	end
 

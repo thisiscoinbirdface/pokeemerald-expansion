@@ -7905,23 +7905,23 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 53
+Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Honchkrow
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowking-Galar
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Great Tusk
-Level: 56
+Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Houndoom @ Houndoominite
-Level: 57
+Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
@@ -7937,19 +7937,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 53
+Level: 52
 
 Honchkrow
-Level: 54
+Level: 53
 
 Slowking-Galar
-Level: 54
+Level: 53
 
 Great Tusk
-Level: 56
+Level: 54
 
 Houndoom @ Houndoominite
-Level: 57
+Level: 56
 
 
 
@@ -7981,7 +7981,7 @@ Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Muk-Alola
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowbro-Galar
@@ -7989,11 +7989,11 @@ Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Flutter Mane
-Level: 56
+Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Absol @ Absolite
-Level: 57
+Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
@@ -8011,13 +8011,13 @@ Yanmega
 Level: 53
 
 Muk-Alola
-Level: 54
+Level: 53
 
 Slowbro-Galar
 Level: 54
 
 Flutter Mane
-Level: 56
+Level: 55
 
 Absol @ Absolite
 Level: 57
@@ -8045,23 +8045,23 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 55
+Level: 54
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 Spiritomb
-Level: 57
+Level: 56
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 Roaring Moon
-Level: 58
+Level: 57
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 Metagross @ Metagrossite
-Level: 58
+Level: 57
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 Koraidon
-Level: 60
+Level: 58
 IVs: 28 HP / 28 Atk / 28 Def / 28 SpA / 28 SpD / 28 Spe
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
@@ -8076,19 +8076,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 55
+Level: 54
 
 Spiritomb
-Level: 57
+Level: 56
 
 Roaring Moon
-Level: 58
+Level: 57
 
 Metagross @ Metagrossite
-Level: 58
+Level: 57
 
 Koraidon
-Level: 60
+Level: 58
 
 
 
@@ -8260,15 +8260,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Sinistea
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Coalossal
-Level: 57
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_A ===
@@ -8282,15 +8282,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Sinistea
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Coalossal
-Level: 57
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8317,11 +8317,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 58
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 58
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_B ===
@@ -8335,11 +8335,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 58
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 58
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8366,7 +8366,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Medicham
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 - Thunder Punch
@@ -8374,7 +8374,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8382,14 +8382,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 
 Altaria
-Level: 57
+Level: 55
 - Dragon Dance
 - Outrage
 - Acrobatics
 - Earthquake
 
 Basculin @ Choice Band
-Level: 59
+Level: 57
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wave Crash
@@ -8408,7 +8408,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Medicham
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 - Thunder Punch
@@ -8416,7 +8416,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8424,14 +8424,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 
 Altaria
-Level: 57
+Level: 54
 - Dragon Dance
 - Outrage
 - Acrobatics
 - Earthquake
 
 Basculin @ Choice Band
-Level: 59
+Level: 57
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wave Crash
@@ -8460,7 +8460,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 56
+Level: 55
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8480,7 +8480,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 56
+Level: 55
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8511,11 +8511,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_E ===
@@ -8529,11 +8529,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8700,11 +8700,13 @@ Pic: Backpacker
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Force Setup First Turn
 
-Furret
+Furret @ Silk Scarf
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tidy Up
+- Last Resort
 
 Forretress
 Level: 57
@@ -8778,11 +8780,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Masquerain
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Frosmoth
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Goodra
@@ -8800,11 +8802,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Masquerain
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Frosmoth
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Goodra
@@ -9068,7 +9070,7 @@ Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
-Level: 63
+Level: 64
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex
@@ -9107,7 +9109,7 @@ Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
-Level: 63
+Level: 64
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex @ Leftovers
