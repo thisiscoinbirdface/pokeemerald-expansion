@@ -160,9 +160,7 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	clearflag FLAG_IVYRIVER_ZARUDE_NOTE1
-	clearflag FLAG_IVYRIVER_ZARUDE_NOTE2
-	clearflag FLAG_IVYRIVER_ZARUDE_SCARF
+	call Common_EventScript_Test
 	release
 	end
 

@@ -575,3 +575,5 @@ gSpecials::
 	def_special SetMonPokeball
 	def_special StartCredits
 	def_special StartFly
+	def_special GetDexCount
+	

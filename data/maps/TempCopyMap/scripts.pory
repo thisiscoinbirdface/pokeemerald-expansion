@@ -932,7 +932,13 @@ script AncientStatue_IvyForest{
 
 
 
-
+script Common_EventScript_Test{
+    special(GetDexCount)
+    buffernumberstring(STR_VAR_1, VAR_RESULT)
+    msgbox(format("{STR_VAR_1}."))
+    releaseall
+    end
+}
 
 
 
