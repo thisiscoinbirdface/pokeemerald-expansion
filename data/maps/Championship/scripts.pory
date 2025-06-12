@@ -48,12 +48,12 @@ script VictoryCape_NPC6{
     end    
 }
 script VictoryCape_NPC7{
-    msgbox(format("They say a former Team Somber grunt is in the Championship...\pI'm not sure if they should be leetting criminals participate!"), MSGBOX_NPC)
+    msgbox(format("They say a former Team Somber grunt is in the Championship...\pI'm not sure if they should be letting criminals participate!"), MSGBOX_NPC)
     end    
 }
 script VictoryCape_Mon4{
     playmoncry(SPECIES_YANMEGA, CRY_MODE_NORMAL)
-    msgbox(format("Yanmega looks unfazed. xIt could probably see through Zoroark's disguises with its many eyes!"), MSGBOX_NPC)
+    msgbox(format("Yanmega looks unfazed. It could probably see through Zoroark's disguises with its many eyes!"), MSGBOX_NPC)
     end    
 } 
 script VictoryCape_NPC8{

@@ -92,8 +92,7 @@ Champ_Hotel_NPC2_Text_0:
 
 Champ_Hotel_NPC3_Text_0:
 # 35 "data//maps/Championship_Hotel/scripts.pory"
-	.string "She's sleepwalking...\n"
-	.string "Is it okay to leave her like this?$"
+	.string "She's sleepwalking...$"
 
 Champ_Hotel_NPC4_Text_0:
 # 39 "data//maps/Championship_Hotel/scripts.pory"

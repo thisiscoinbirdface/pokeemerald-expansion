@@ -32,7 +32,7 @@ script Champ_Hotel_NPC2{
     end
 }
 script Champ_Hotel_NPC3{
-    msgbox(format("She's sleepwalking...\nIs it okay to leave her like this?"), MSGBOX_NPC)
+    msgbox(format("She's sleepwalking..."), MSGBOX_NPC)
     end
 }
 script Champ_Hotel_NPC4{

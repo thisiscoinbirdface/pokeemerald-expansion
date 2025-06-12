@@ -360,12 +360,12 @@ VictoryCape_NPC7_Text_0:
 # 51 "data//maps/Championship/scripts.pory"
 	.string "They say a former Team Somber grunt is\n"
 	.string "in the Championship...\p"
-	.string "I'm not sure if they should be leetting\n"
+	.string "I'm not sure if they should be letting\n"
 	.string "criminals participate!$"
 
 VictoryCape_Mon4_Text_0:
 # 56 "data//maps/Championship/scripts.pory"
-	.string "Yanmega looks unfazed. xIt could\n"
+	.string "Yanmega looks unfazed. It could\n"
 	.string "probably see through Zoroark's\l"
 	.string "disguises with its many eyes!$"
 

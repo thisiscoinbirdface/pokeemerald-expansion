@@ -40,10 +40,13 @@ script Championship_Hotel_Rooms_NPC3{
         end
     }
 
+    lockall
+    faceplayer
     msgbox(format("You look like a strong trainer.\nAre you competing this year?"), MSGBOX_YESNO)
-
+    release
     if (var(VAR_RESULT) == 0){
         msgbox(format("Hmpf."), MSGBOX_NPC)
+        releaseall
         end
     }
 
@@ -51,7 +54,7 @@ script Championship_Hotel_Rooms_NPC3{
 
     msgbox(format("You will only be able to teach\na move once. Make sure you choose\lboth the move and Pokémon carefully!"), MSGBOX_POKENAV)
     msgbox(format("Teach a powerful move?"), MSGBOX_YESNO)
-
+    release
     if (var(VAR_RESULT) == 0){
         msgbox(format("Come back when you're ready."), MSGBOX_NPC)
         end
@@ -154,7 +157,7 @@ script Championship_Hotel_Rooms_Kohla{
     msgbox_delay("Moxie", format("Will you give us a moment to talk at least? Like Melea said, we're not here to fight. Just listen to us."))
     msgbox_delay("Kohla", format("...fine. Hurry up then.\nI've got a tournament to win."))
     msgbox_delay("Melea", format("That's why we're here, Kohla."))
-    msgbox_delay("Moxie", format("Have you see the rest of the competitors this year?\lDo an of the names stick out?"))
+    msgbox_delay("Moxie", format("Have you seen the rest of the competitors this year?\lDo any of the names stick out?"))
     msgbox_delay("Kohla", format("If you're talking about that former grunt, Gabrielle -"))
     msgbox_delay("Melea", format("Do NOT utter her name!\p...\pNo, not her. She's of no consequence."))
     msgbox_delay("Kohla", format("Then who?"))

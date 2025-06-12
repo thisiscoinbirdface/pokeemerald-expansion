@@ -10717,7 +10717,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Attacks with full\n"
             "power. May lower\n"
-            "user's Sp. Def."),
+            "target's Sp. Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

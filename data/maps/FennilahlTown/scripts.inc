@@ -649,7 +649,7 @@ Fennilahl_Breech_QuestInProgress_Text_0:
 	.string "You brought my Strange Rock? Amazing!\n"
 	.string "How can I thank you for this?\p"
 	.string "...\p"
-	.string "A Clefairy had it it? Where'd it go?$"
+	.string "A Clefairy had it? Where'd it go?$"
 
 Fennilahl_Breech_QuestInProgress_Text_1:
 # 82 "data//maps/FennilahlTown/scripts.pory"
