@@ -1919,7 +1919,7 @@
 	questmenu QUEST_MENU_COMPLETE_QUEST, \quest
 	questmenu QUEST_MENU_BUFFER_QUEST_NAME \quest
     bufferstring 1 gText_QuestComplete
-	playfanfare MUS_LEVEL_UP
+	playfanfare MUS_SLOTS_WIN
 	msgbox gText_QuestAnnounce, MSGBOX_SIGN
 	waitfanfare
 	.endm
@@ -2007,6 +2007,11 @@
 	.macro completesubquest quest:req, subquest:req
 	closemessage
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, \quest, \subquest
+	questmenu QUEST_MENU_BUFFER_QUEST_NAME \quest
+    bufferstring 1 gText_QuestUpdated
+	playfanfare MUS_LEVEL_UP
+	msgbox gText_QuestAnnounce, MSGBOX_SIGN
+	waitfanfare
 	.endm
 
     .macro goto_if_subquest_complete parent:req,child:req, dest:req

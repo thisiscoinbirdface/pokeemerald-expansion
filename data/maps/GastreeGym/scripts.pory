@@ -21,7 +21,7 @@ script GastreeGym_TrainerBattle_Jaco {
 
 script GastreeGym_LeaderBattle {
     if (flag(FLAG_BADGE01_GET)){
-        msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor  Tenebris back for us all!"), MSGBOX_NPC)
+        msgbox(format("I hate losing! Argh! But that was a good battle, {PLAYER}. Go get Professor Tenebris back for us all!"), MSGBOX_NPC)
     } else { //else do the battle
         // special(SaveGame)
         // waitstate
@@ -80,7 +80,7 @@ script GastreeGym_EventScript_Victory{
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor  Tenebris' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Inger's behalf!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Inger's behalf!"))
     releaseall
 }
 

@@ -100,7 +100,7 @@ script RivetshoreCity_Assembly_Trigger{
     //we've all but given up hope on the prof
     applymovement(LOCALID_DET1, moves(jump_in_place_down))
     movedelay
-    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the current situation as it stands.\pYou all know about the disappearance of Professor  Tenebris in connection with the dreamstones and Team Somber's involvement in this case."))
+    msgbox_delay("Detective", format("Unfortunately we don't have time to wait for them.\pAllow us to explain the current situation as it stands.\pYou all know about the disappearance of Professor Tenebris in connection with the dreamstones and Team Somber's involvement in this case."))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark))
     movedelay
     msgbox_delay("Raazi", format("Yes."))
@@ -242,6 +242,7 @@ script RivetshoreCity_Assembly_Trigger{
     special(RemoveCameraObject)
 
     //end
+    completesubquest(QUEST_STOP_TEAM_SOMBER, SUB_QUEST_2)
     setflag(FLAG_RIVETSHORE_ASSEMBLY)
     releaseall
     end

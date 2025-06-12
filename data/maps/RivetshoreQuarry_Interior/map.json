@@ -207,24 +207,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 20,
-      "y": 28,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Rivetshore_Quarry_HideFollower"
-    },
-    {
-      "type": "trigger",
-      "x": 26,
-      "y": 21,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Rivetshore_Quarry_ShowFollower"
-    }
+
   ],
   "bg_events": [
 

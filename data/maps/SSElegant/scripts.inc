@@ -341,90 +341,92 @@ SSElegant_Gab_Breech_TeamUp_Trigger_5:
 # 244 "data//maps/SSElegant/scripts.pory"
 	special RemoveCameraObject
 # 247 "data//maps/SSElegant/scripts.pory"
-	setvar VAR_SSELEGANT_CUTSCENES, 2
+	completesubquest QUEST_STOP_TEAM_SOMBER, SUB_QUEST_3
 # 248 "data//maps/SSElegant/scripts.pory"
-	setflag FLAG_GAB_BREECH_TEAMUP
+	setvar VAR_SSELEGANT_CUTSCENES, 2
 # 249 "data//maps/SSElegant/scripts.pory"
-	clearflag FLAG_HIDE_GAB_BREECH_STORAGE
+	setflag FLAG_GAB_BREECH_TEAMUP
 # 250 "data//maps/SSElegant/scripts.pory"
+	clearflag FLAG_HIDE_GAB_BREECH_STORAGE
+# 251 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Aggron::
-# 285 "data//maps/SSElegant/scripts.pory"
-	playmoncry SPECIES_AGGRON, CRY_MODE_NORMAL
 # 286 "data//maps/SSElegant/scripts.pory"
+	playmoncry SPECIES_AGGRON, CRY_MODE_NORMAL
+# 287 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Aggron_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_Jania::
-# 291 "data//maps/SSElegant/scripts.pory"
-	trainerbattle_single TRAINER_SSELEGANT_JANIA, SSElegant_Jania_Text_0, SSElegant_Jania_Text_1
 # 292 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Jania_Text_2
+	trainerbattle_single TRAINER_SSELEGANT_JANIA, SSElegant_Jania_Text_0, SSElegant_Jania_Text_1
 # 293 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Jania_Text_2
+# 294 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Inger::
-# 298 "data//maps/SSElegant/scripts.pory"
-	trainerbattle_single TRAINER_SSELEGANT_INGER, SSElegant_Inger_Text_0, SSElegant_Inger_Text_1
 # 299 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Inger_Text_2
+	trainerbattle_single TRAINER_SSELEGANT_INGER, SSElegant_Inger_Text_0, SSElegant_Inger_Text_1
 # 300 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Inger_Text_2
+# 301 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Minior::
-# 304 "data//maps/SSElegant/scripts.pory"
-	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
 # 305 "data//maps/SSElegant/scripts.pory"
+	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
+# 306 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Minior_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_Ariana::
-# 310 "data//maps/SSElegant/scripts.pory"
-	trainerbattle_single TRAINER_SSELEGANT_ARIANA, SSElegant_Ariana_Text_0, SSElegant_Ariana_Text_1
 # 311 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Ariana_Text_2
+	trainerbattle_single TRAINER_SSELEGANT_ARIANA, SSElegant_Ariana_Text_0, SSElegant_Ariana_Text_1
 # 312 "data//maps/SSElegant/scripts.pory"
+	msgbox SSElegant_Ariana_Text_2
+# 313 "data//maps/SSElegant/scripts.pory"
 	releaseall
 	end
 
 
 SSElegant_Tauros::
-# 317 "data//maps/SSElegant/scripts.pory"
-	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
 # 318 "data//maps/SSElegant/scripts.pory"
+	playmoncry SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL
+# 319 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_Tauros_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC1::
-# 324 "data//maps/SSElegant/scripts.pory"
+# 325 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC2::
-# 329 "data//maps/SSElegant/scripts.pory"
+# 330 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC3::
-# 334 "data//maps/SSElegant/scripts.pory"
+# 335 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 SSElegant_NPC4::
-# 339 "data//maps/SSElegant/scripts.pory"
+# 340 "data//maps/SSElegant/scripts.pory"
 	msgbox SSElegant_NPC4_Text_0, MSGBOX_NPC
 	end
 
@@ -995,76 +997,76 @@ SSElegant_Gab_Breech_TeamUp_Trigger_Text_18:
 	.string "everything you need!$"
 
 SSElegant_Aggron_Text_0:
-# 286 "data//maps/SSElegant/scripts.pory"
+# 287 "data//maps/SSElegant/scripts.pory"
 	.string "Aggron glares at you.$"
 
 SSElegant_Jania_Text_0:
-# 291 "data//maps/SSElegant/scripts.pory"
+# 292 "data//maps/SSElegant/scripts.pory"
 	.string "What? A leader can't have any hobbies?$"
 
 SSElegant_Jania_Text_1:
-# 291 "data//maps/SSElegant/scripts.pory"
+# 292 "data//maps/SSElegant/scripts.pory"
 	.string "Back to drawing, Smeargle!$"
 
 SSElegant_Jania_Text_2:
-# 292 "data//maps/SSElegant/scripts.pory"
+# 293 "data//maps/SSElegant/scripts.pory"
 	.string "I don't get much free time, but when I\n"
 	.string "do, I enjoy painting.$"
 
 SSElegant_Inger_Text_0:
-# 298 "data//maps/SSElegant/scripts.pory"
+# 299 "data//maps/SSElegant/scripts.pory"
 	.string "Alright, c'mon Ariana! This time I won't\n"
 	.string "lose to you!\p"
 	.string "Hey, {PLAYER}! I didn't know you were\n"
 	.string "on the cruise.$"
 
 SSElegant_Inger_Text_1:
-# 298 "data//maps/SSElegant/scripts.pory"
+# 299 "data//maps/SSElegant/scripts.pory"
 	.string "This reminds of my first loss!$"
 
 SSElegant_Inger_Text_2:
-# 299 "data//maps/SSElegant/scripts.pory"
+# 300 "data//maps/SSElegant/scripts.pory"
 	.string "We're training to take down Team\n"
 	.string "Somber! Yaaah!$"
 
 SSElegant_Minior_Text_0:
-# 305 "data//maps/SSElegant/scripts.pory"
+# 306 "data//maps/SSElegant/scripts.pory"
 	.string "Minior is glaring at Tauros...\n"
 	.string "but it falters and cracks a smile!\p"
 	.string "They must be good friends.$"
 
 SSElegant_Ariana_Text_0:
-# 310 "data//maps/SSElegant/scripts.pory"
+# 311 "data//maps/SSElegant/scripts.pory"
 	.string "Hey, since {PLAYER} is here...how\n"
 	.string "about a double battle?$"
 
 SSElegant_Ariana_Text_1:
-# 310 "data//maps/SSElegant/scripts.pory"
+# 311 "data//maps/SSElegant/scripts.pory"
 	.string "Tough as ever!$"
 
 SSElegant_Ariana_Text_2:
-# 311 "data//maps/SSElegant/scripts.pory"
+# 312 "data//maps/SSElegant/scripts.pory"
 	.string "We heard you were off the case. Don't\n"
 	.string "worry - we'll finish what you started!$"
 
 SSElegant_Tauros_Text_0:
-# 318 "data//maps/SSElegant/scripts.pory"
+# 319 "data//maps/SSElegant/scripts.pory"
 	.string "Tauros is huffing at Minior...\n"
 	.string "and then flashes a grin!\p"
 	.string "A wholesome rivalry.$"
 
 SSElegant_NPC1_Text_0:
-# 324 "data//maps/SSElegant/scripts.pory"
+# 325 "data//maps/SSElegant/scripts.pory"
 	.string "There's nothing like being out on the\n"
 	.string "ocean, I tell you!$"
 
 SSElegant_NPC2_Text_0:
-# 329 "data//maps/SSElegant/scripts.pory"
+# 330 "data//maps/SSElegant/scripts.pory"
 	.string "These Gym Leaders are so intimidating!\n"
 	.string "This was supposed to be a luxury cruise.$"
 
 SSElegant_NPC3_Text_0:
-# 334 "data//maps/SSElegant/scripts.pory"
+# 335 "data//maps/SSElegant/scripts.pory"
 	.string "Why did all the Gym Leaders board at the\n"
 	.string "last minute?\p"
 	.string "I'm somewhat of a natural detective\n"
@@ -1072,7 +1074,7 @@ SSElegant_NPC3_Text_0:
 	.string "take over Cormoria!$"
 
 SSElegant_NPC4_Text_0:
-# 339 "data//maps/SSElegant/scripts.pory"
+# 340 "data//maps/SSElegant/scripts.pory"
 	.string "The S.S. Elegant stops at Victory Cape.\n"
 	.string "That's where this year's Pokémon\l"
 	.string "Championships will be!$"

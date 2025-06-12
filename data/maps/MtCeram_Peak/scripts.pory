@@ -102,7 +102,7 @@ script MtCeramPeak_MainEvent_Cutscene{
     //Explain tenebris research
     //Explain somber goals
     speakername("???")
-    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for Professor  Tenebris. That explains everything."))   
+    msgbox(format("Why, young trainer, have you been a thorn in my organisations side?\pWhat's in it for you?\p...\pSo you're looking for Professor Tenebris. That explains everything."))   
     release
     applymovement(LOCALID_BOSS, moves(face_up))
     waitmovement(0)
@@ -325,8 +325,6 @@ script MtCeramPeak_MainEvent_Battle{
 
     //Set vars
     setflag(FLAG_MT_CERAM_DREAMSTONE)
-    //Quest 
-    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2)
 
     //WARP OUT
     warp(MAP_ANCIENT_CERAM, 57, 41)

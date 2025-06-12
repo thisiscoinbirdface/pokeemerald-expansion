@@ -80,7 +80,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor  Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
@@ -91,7 +91,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
 
 
     //Progress quest
-    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_2)
+    completesubquest(QUEST_LAB_FIRST_DAY, SUB_QUEST_2)
     
     //Set var and end
     setvar(VAR_LAB_STATE, 1)
@@ -164,7 +164,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         waitmovement(0)
         delay(16)
         speakername("Rue")
-        msgbox(format("WHAT?! Professor  Tenebris took them?\pSigh...thanks for telling me, {PLAYER}."))
+        msgbox(format("WHAT?! Professor Tenebris took them?\pSigh...thanks for telling me, {PLAYER}."))
         release
 
             //Complete previous quest
@@ -436,7 +436,7 @@ script CarabrueTown_TenebrisLab_EventScript_NoSupplies {
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
         waitmovement(0)  
         speakername("Detective")
-        msgbox(format("Well Rue, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor  Tenebris.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
+        msgbox(format("Well Rue, it looks like your assistant's got some backbone.\p{PLAYER}, we're counting on you and Kohla to get the dreamstone while we track Professor Tenebris.\pRue, do you know anything of the whereabouts of the other dreamstones?"))  
         release
         delay(16)
         speakername("Rue")
@@ -657,7 +657,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist2{
         end
     }
 
-    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor  Tenebris, we'd have had to shut the lab down."), MSGBOX_NPC)
+    msgbox(format("I'm so grateful we have Assistant Professor Rue. Without him to step in for Professor Tenebris, we'd have had to shut the lab down."), MSGBOX_NPC)
     end
 }
 

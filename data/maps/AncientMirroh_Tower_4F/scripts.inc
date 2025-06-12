@@ -414,9 +414,13 @@ AncientMirroh_Tower_4F_MainTrigger::
 	playse SE_EXIT
 # 259 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	waitse
+# 261 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	delay 16
 # 262 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+	completesubquest QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_8
+# 265 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	setflag FLAG_ANCIENT_MIRROH_KORAIDON
-# 263 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
+# 266 "data//maps/AncientMirroh_Tower_4F/scripts.pory"
 	releaseall
 	end
 

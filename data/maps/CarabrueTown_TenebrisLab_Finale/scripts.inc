@@ -159,47 +159,49 @@ CarabrueTown_TenebrisLab_PostFinale::
 	setflag FLAG_HIDE_ROUTE1_NORMAL
 # 108 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	clearflag FLAG_HIDE_TENEBRIS_TENEBRIS
-# 110 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 109 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	completequest QUEST_STOP_TEAM_SOMBER
+# 111 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	releaseall
 	end
 
 
 TenebrisLab_Finale_Detective::
-# 115 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	speakername CarabrueTown_TenebrisLab_PostFinale_Text_0
 # 116 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	speakername CarabrueTown_TenebrisLab_PostFinale_Text_0
+# 117 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Detective_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Tenebris::
-# 120 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 121 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox_delay CarabrueTown_TenebrisLab_PostFinale_Text_0, TenebrisLab_Finale_Tenebris_Text_0
 	end
 
 
 TenebrisLab_Finale_Scientist_A::
-# 128 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 129 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_A_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Scientist_B::
-# 132 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 133 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_B_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Scientist_C::
-# 136 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 137 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_C_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Gardevoir::
-# 140 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
 # 141 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
+# 142 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Gardevoir_Text_0, MSGBOX_NPC
 	return
 
@@ -374,32 +376,32 @@ CarabrueTown_TenebrisLab_PostFinale_Text_18:
 	.string "Victory Cape - ASAP!$"
 
 TenebrisLab_Finale_Detective_Text_0:
-# 116 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 117 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "What's taking you so long? I bet Kohla's\n"
 	.string "already reached Victory Cape.\p"
 	.string "How many slow starts do you need to\n"
 	.string "learn your lesson?$"
 
 TenebrisLab_Finale_Tenebris_Text_0:
-# 120 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 121 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "I believe in you, {PLAYER}!$"
 
 TenebrisLab_Finale_Scientist_A_Text_0:
-# 128 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 129 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "I can't believe Rue was behind this\n"
 	.string "whole mess! I wish I'd caught on sooner!$"
 
 TenebrisLab_Finale_Scientist_B_Text_0:
-# 132 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 133 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "The detectives told us the entire\n"
 	.string "story. You're incredible, {PLAYER}!$"
 
 TenebrisLab_Finale_Scientist_C_Text_0:
-# 136 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 137 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Go on, {PLAYER}! Bring the\n"
 	.string "championship trophy to Carabrue Town!$"
 
 TenebrisLab_Finale_Gardevoir_Text_0:
-# 141 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 142 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Gardevoir regards you intently...\p"
 	.string "Did it smile?$"

@@ -425,6 +425,7 @@ script RangerInstitute_2F_EventScript_Welcome{
     removeobject(LOCALID_PACKAGE)
     giveitem(ITEM_RANGER_PACKAGE)
     startquest(QUEST_POKEMON_RANGER)
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_POKEMON_RANGER, SUB_QUEST_1)
     setflag(FLAG_RANGER_GOT_FIRST_MISSION)
     setvar(VAR_RANGER_INSTITUTE, 3)
     delay(16)

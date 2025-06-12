@@ -182,6 +182,7 @@ script CeramBaseCamp_Cyndaquil_Reward_Give{
 
 script CeramBaseCamp_Cyndaquil_Reward_End{
     completequest(QUEST_CERAM_CYNDAQUIL)
+    delay(16)
     msgbox(format("Sigh...what'll we do now?\p..."))
     delay(8)
     applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))

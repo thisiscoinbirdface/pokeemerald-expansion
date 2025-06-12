@@ -66,7 +66,7 @@ MirrohBaseCamp_Houses_Historian::
 # 40 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	release
 # 42 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6
+	completesubquest QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6
 # 43 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_HISTORIAN
 # 44 "data//maps/MirrohBaseCamp_Houses/scripts.pory"

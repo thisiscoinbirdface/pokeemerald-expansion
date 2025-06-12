@@ -24,6 +24,8 @@ script AncientCeram_EventScript_Gabrielle{
         speakername("Gabrielle")
         msgbox(format("What just happened? Where are we?\p...\pOuch! I can't move my leg!\p{PLAYER}, p-please...you have to help me. I don't know what's going on and where we are. And the boss just...he just left me!!\p...\pI can't get up."))
         setvar(VAR_ANCIENT_GAB_ESCAPE, 1)
+        //Quest 
+        completesubquest(QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2)
     }
     
     //If spoken but not found the exit

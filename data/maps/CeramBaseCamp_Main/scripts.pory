@@ -209,7 +209,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     speakername("Ariana") 
     msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
     speakername("Ariana") 
-    msgbox(format("They're connected to Professor  Tenebris' disappearance? \pI gotta do something - Professor  Tenebris gave me my Tauros!"))
+    msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris gave me my Tauros!"))
     speakername("Ariana") 
     msgbox(format("Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
     speakername("Ariana") 

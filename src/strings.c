@@ -1530,7 +1530,6 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest2_Name6[] = _("Showdown at Mt. Mirroh!");
     const u8 gText_SubQuest2_Name7[] = _("Stop Melea!");
     const u8 gText_SubQuest2_Name8[] = _("No Way Out");
-    const u8 gText_SubQuest2_Name9[] = _("Cold Case");
 
     const u8 gText_SubQuest2_Desc1[] = _("The first dreamstone is atop Mt. Ceram.\nI need to cross Route 3 to Gastree City,\nthen head north towards the Ceram Base Camp.");
     const u8 gText_SubQuest2_Desc2[] = _("The dreamstone transported me and Gabrielle\nto a mysterious area! I don't recognise the\n{PKMN} here. I need to find a way back.");
@@ -1540,7 +1539,6 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest2_Desc6[] = _("What could Team Somber possibly want with\nthe Ancient Terror? I'll find my answers at\nMt. Mirroh...if I hurry!'");
     const u8 gText_SubQuest2_Desc7[] = _("I got warped into the past again! And Somber\nAdmin Melea is here too. I've got to stop\nher from catching the Ancient Terror!");
     const u8 gText_SubQuest2_Desc8[] = _("Somber Admin Melea escaped with the Ancient\nTerror! But Kohla found his way here too,\nso there should be another exit out.");
-    const u8 gText_SubQuest2_Desc9[] = _("A total failure! I couldn't stop Team Somber\nor find Professor Tenebris, and now I'm\noff the case. I guess that's it...?");
 
     //FINALE QUEST
     const u8 gText_SubQuest3_Name1[] = _("Reach Rivetshore City");

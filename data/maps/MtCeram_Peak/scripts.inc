@@ -523,11 +523,9 @@ MtCeramPeak_MainEvent_Battle::
 	release
 # 327 "data//maps/MtCeram_Peak/scripts.pory"
 	setflag FLAG_MT_CERAM_DREAMSTONE
-# 329 "data//maps/MtCeram_Peak/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_2
-# 332 "data//maps/MtCeram_Peak/scripts.pory"
+# 330 "data//maps/MtCeram_Peak/scripts.pory"
 	warp MAP_ANCIENT_CERAM, 57, 41
-# 334 "data//maps/MtCeram_Peak/scripts.pory"
+# 332 "data//maps/MtCeram_Peak/scripts.pory"
 	releaseall
 	end
 

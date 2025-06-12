@@ -244,6 +244,7 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
         special(RemoveCameraObject)
 
         //end
+        completesubquest(QUEST_STOP_TEAM_SOMBER, SUB_QUEST_3)
         setvar(VAR_SSELEGANT_CUTSCENES, 2)
         setflag(FLAG_GAB_BREECH_TEAMUP)
         clearflag(FLAG_HIDE_GAB_BREECH_STORAGE)

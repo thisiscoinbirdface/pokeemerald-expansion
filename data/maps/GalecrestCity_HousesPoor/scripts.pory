@@ -1,33 +1,54 @@
 mapscripts GalecrestCity_HousesPoor_MapScripts{}
 
-
-//Trade a flute for a dusk stone
+//I can't offer money, but in exchange, I can give you this Amulet Coin. It's supposed to bring wealth...but it's never worked for me. I hope it brings you luck. I think I used up all of my luck on finding my wife!
+//Trade a flute for an amulet coin
 script GalecrestCity_HousesPoor_NPC1{
-    if (flag(FLAG_GALECREST_POOR_TRADEITEM)){
+    if (var(VAR_GALECREST_POORGUY) == 2){
         msgbox(format("My wife will be so happy! Music meant a lot to her. I wish I could do things over and give her all the flutes in the world..."), MSGBOX_NPC)
-    } else {    
-        lockall
-        faceplayer
-        
-        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flute? I can't offer money, but in exchange, I can give you this Amulet Coin. It's supposed to bring you good fortune...but it's never worked for me."), MSGBOX_YESNO)
+    }
 
-        //Checkitem
+    if (var(VAR_GALECREST_POORGUY) == 1){
+        msgbox(format("Did you bring a Blue Flute?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //check item
             if (checkitem(ITEM_BLUE_FLUTE) == 1){
-                msgbox(format("Thank you so much! This will be a perfect gift for her.\pHere, take this Amulet Coin. Not like it ever did me any good. I hope it brings you luck."))
+                msgbox(format("Thank you so much! This will be a perfect gift for her."))
                 removeitem(ITEM_BLUE_FLUTE)
+                completequest(QUEST_GALECREST_POORGUY)
+                msgbox(format("I can't offer money, but in exchange, I can give you this Amulet Coin. It's supposed to bring good fortune...but it's never worked for me. I hope it brings you luck."))
                 giveitem(ITEM_AMULET_COIN)
+                
                 setflag(FLAG_GALECREST_POOR_TRADEITEM)
-                msgbox(format("I wish I could do things over and give her all the flutes in the world..."), MSGBOX_NPC)
+                setvar(VAR_GALECREST_POORGUY, 2)
+
+                msgbox(format("I think I used up all of my luck on finding my wife!\p...\pI wish I could do things over and give her all the flutes in the world..."), MSGBOX_NPC)
             } else {
                 msgbox(format("It looks like you don't have a Blue Flute. Come back when you do!"), MSGBOX_NPC)
             }
         } else {
-            msgbox(format("I understand. It's out of your way.\pSigh...I just wish I had more money, you know?"), MSGBOX_NPC)
+            msgbox(format("I'll be here if you get one!"))
+            releaseall
+            end
         }
     }
 
+    if (var(VAR_GALECREST_POORGUY) == 0){
+        lockall
+        faceplayer
+        
+        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flute?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            msgbox(format("Thank you trainer! I'll be waiting here for the Blue Flute."))
+            release
+            setvar(VAR_GALECREST_POORGUY, 1)
+            startquest(QUEST_GALECREST_POORGUY)
+            releaseall
+            end
+        } else {
+            msgbox(format("I understand. It's out of your way.\pSigh...I just wish I had more money, you know?"), MSGBOX_NPC)
+        }
+    }
+    releaseall
     end
 }
 

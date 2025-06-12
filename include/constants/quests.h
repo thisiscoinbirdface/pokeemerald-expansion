@@ -38,7 +38,7 @@
 #define QUEST_GASTREE_TEA               7
 #define QUEST_CERAM_CYNDAQUIL           8
 #define QUEST_GALECREST_PEARLS          9
-#define QUEST_GALECREST_POORGUY         10
+#define QUEST_GALECREST_POORGUY         10 //remove and make it a normal thing
 #define QUEST_SILVERSUN_ARTIST          11
 #define QUEST_SILVERSUN_WIFE            12
 #define QUEST_ROUTE6_FISHERMAN          13
@@ -48,17 +48,17 @@
 #define QUEST_MIRROH_NURSE_CHANSEY      17
 #define QUEST_RIVETSHORE_MIMIKYU        18
 #define QUEST_RIVETSHORE_POCKETBOY      19
-#define QUEST_21        20
-#define QUEST_22        21
-#define QUEST_23        22
-#define QUEST_24        23
-#define QUEST_25        24
-#define QUEST_26        25
-#define QUEST_27        26
-#define QUEST_28        27
-#define QUEST_29        28
-#define QUEST_30        29
-#define QUEST_COUNT     (QUEST_30 + 1)
+// #define QUEST_21        20
+// #define QUEST_22        21
+// #define QUEST_23        22
+// #define QUEST_24        23
+// #define QUEST_25        24
+// #define QUEST_26        25
+// #define QUEST_27        26
+// #define QUEST_28        27
+// #define QUEST_29        28
+// #define QUEST_30        29
+#define QUEST_COUNT     (QUEST_RIVETSHORE_POCKETBOY + 1)
 
 #define SUB_QUEST_1          0  //QUEST_LAB_FIRST_DAY
 #define SUB_QUEST_2          1  //QUEST_LAB_FIRST_DAY
@@ -71,16 +71,16 @@
 #define SUB_QUEST_9          8  //QUEST_DREAMSTONE_MYSTERIES
 #define SUB_QUEST_10         9  //QUEST_DREAMSTONE_MYSTERIES
 #define SUB_QUEST_11        10  //QUEST_DREAMSTONE_MYSTERIES
-#define SUB_QUEST_12        11  //QUEST_DREAMSTONE_MYSTERIES
+#define SUB_QUEST_12        11  //FINALE
 #define SUB_QUEST_13        12  //FINALE
 #define SUB_QUEST_14        13  //FINALE
 #define SUB_QUEST_15        14  //FINALE
-#define SUB_QUEST_16        15  //FINALE
+#define SUB_QUEST_16        15  //QUEST_POKEMON_RANGER
 #define SUB_QUEST_17        16  //QUEST_POKEMON_RANGER
 #define SUB_QUEST_18        17  //QUEST_POKEMON_RANGER
-#define SUB_QUEST_19        18  //QUEST_POKEMON_RANGER 
+#define SUB_QUEST_19        18  //QUEST_PELLUCA_EVENT 
 #define SUB_QUEST_20        19  //QUEST_PELLUCA_EVENT 
-#define SUB_QUEST_21        20  //QUEST_PELLUCA_EVENT 
+#define SUB_QUEST_21        20  
 #define SUB_QUEST_22        21  
 #define SUB_QUEST_23        22  
 #define SUB_QUEST_24        23  
@@ -94,7 +94,7 @@
 //add pelluca quest
 
 #define QUEST_1_SUB_COUNT 3
-#define QUEST_2_SUB_COUNT 9
+#define QUEST_2_SUB_COUNT 8
 #define QUEST_3_SUB_COUNT 4
 #define QUEST_4_SUB_COUNT 3
 #define QUEST_5_SUB_COUNT 2

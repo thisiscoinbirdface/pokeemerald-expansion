@@ -633,8 +633,9 @@ script PellucaCityFlooded_MainEvent{
     msgbox(format("But hurry! There's not much time."))
     release
 
-    special(EnterSafariMode)
+    completesubquest(QUEST_PELLUCA_CITY, SUB_QUEST_2)
 
+    special(EnterSafariMode)
     special(RemoveCameraObject)
     releaseall
     end
@@ -1307,6 +1308,7 @@ script PellucaCity_PostGymEvent_Trigger{
 
         //flags and stuff
         startquest(QUEST_STOP_TEAM_SOMBER)
+        subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_1)
         setflag(FLAG_PELLUCA_POSTGYM)
         end
     }

@@ -140,7 +140,7 @@ CarabrueTown_TenebrisLab_EventScript_Start::
 # 90 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 94 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_2
+	completesubquest QUEST_LAB_FIRST_DAY, SUB_QUEST_2
 # 97 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setvar VAR_LAB_STATE, 1
 # 98 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"

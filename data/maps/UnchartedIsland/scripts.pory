@@ -36,6 +36,11 @@ mapscripts UnchartedIsland_MapScripts{
 script UnchartedIsland_OnTransition{
     setrespawn(HEAL_LOCATION_UNCHARTED_ISLAND)
 
+    subquestmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
+    if (var(VAR_RESULT) == 0){
+        completesubquest(QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
+    }
+
     if (var(VAR_UNCHARTED_ISLAND_CUTSCENES) == 2){
         setmaplayoutindex(LAYOUT_UNCHARTED_ISLAND_DESTROYED)
     }
@@ -120,7 +125,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_MELEA_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Isn't that Professor  Tenebris?"))
+    msgbox_delay("Melea", format("Isn't that Professor Tenebris?"))
 
     applymovement(LOCALID_MOXIE_2, moves(jump_in_place_up))
     waitmovement(0)
@@ -648,7 +653,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 10 walk_up * 14))
     waitmovement(0)
 
-    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor  Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
+    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
 
     setobjectxyperm(LOCALID_MELEA_1, 67, 38)
 
@@ -834,7 +839,7 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("Yes, I'm Professor  Tenebris.\pI've been hiding in Ancient Cormoria...but Team Somber found the dreamstones any way, so my effort was, it seems, wasted."))
+        msgbox_delay("Tenebris", format("Yes, I'm Professor Tenebris.\pI've been hiding in Ancient Cormoria...but Team Somber found the dreamstones any way, so my effort was, it seems, wasted."))
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)

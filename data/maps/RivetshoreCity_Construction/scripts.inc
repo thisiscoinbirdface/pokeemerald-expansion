@@ -98,14 +98,14 @@ RivetshoreCity_Construction_CEO_1:
 	compare VAR_RIVETSHORE_CEO_QUEST, 2
 	goto_if_eq RivetshoreCity_Construction_CEO_5
 RivetshoreCity_Construction_CEO_4:
-# 88 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 90 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	compare VAR_RIVETSHORE_CEO_QUEST, 1
 	goto_if_eq RivetshoreCity_Construction_CEO_8
-# 94 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 96 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	compare VAR_RIVETSHORE_CEO_QUEST, 0
 	goto_if_eq RivetshoreCity_Construction_CEO_11
 RivetshoreCity_Construction_CEO_10:
-# 119 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 121 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	releaseall
 	end
 
@@ -118,59 +118,65 @@ RivetshoreCity_Construction_CEO_5:
 # 83 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_2
 # 84 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	giveitem ITEM_POKE_FLUTE
+	completequest QUEST_RIVETSHORE_MIMIKYU
 # 85 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_3
+# 86 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	giveitem ITEM_POKE_FLUTE
+# 87 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	setvar VAR_RIVETSHORE_CEO_QUEST, 3
 	goto RivetshoreCity_Construction_CEO_4
 
 RivetshoreCity_Construction_CEO_8:
-# 89 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 91 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	speakername RivetshoreCity_Construction_CEO_Text_1
-# 90 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox RivetshoreCity_Construction_CEO_Text_3, MSGBOX_NPC
+# 92 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox RivetshoreCity_Construction_CEO_Text_4, MSGBOX_NPC
 	end
 
 RivetshoreCity_Construction_CEO_11:
-# 95 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	speakername RivetshoreCity_Construction_CEO_Text_1
-# 96 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox RivetshoreCity_Construction_CEO_Text_4
 # 97 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	release
-# 98 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	delay 16
-# 99 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	applymovement LOCALID_CEO, RivetshoreCity_Construction_CEO_Movement_0
-# 100 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	waitmovement 0
-# 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	delay 16
-# 103 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_5
-# 104 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	speakername RivetshoreCity_Construction_CEO_Text_1
+# 98 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox RivetshoreCity_Construction_CEO_Text_5
+# 99 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	release
+# 100 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	delay 16
+# 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	applymovement LOCALID_CEO, RivetshoreCity_Construction_CEO_Movement_0
+# 102 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	waitmovement 0
+# 103 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	delay 16
 # 105 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox RivetshoreCity_Construction_CEO_Text_6, MSGBOX_YESNO
+	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_6
+# 106 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	speakername RivetshoreCity_Construction_CEO_Text_1
 # 107 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox RivetshoreCity_Construction_CEO_Text_7, MSGBOX_YESNO
+# 109 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RivetshoreCity_Construction_CEO_14
-# 112 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_8
-# 113 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	clearflag FLAG_HIDE_RIVETSHORE_PERCY
+# 114 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_9
 # 115 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	clearflag FLAG_HIDE_RIVETSHORE_PERCY
+# 116 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	startquest QUEST_RIVETSHORE_MIMIKYU
+# 117 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	setvar VAR_RIVETSHORE_CEO_QUEST, 1
 	goto RivetshoreCity_Construction_CEO_10
 
 RivetshoreCity_Construction_CEO_14:
-# 108 "data//maps/RivetshoreCity_Construction/scripts.pory"
-	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_7
+# 110 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox_delay RivetshoreCity_Construction_CEO_Text_1, RivetshoreCity_Construction_CEO_Text_8
 	end
 
 
-# 99 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
 RivetshoreCity_Construction_CEO_Movement_0:
-# 99 "data//maps/RivetshoreCity_Construction/scripts.pory"
+# 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -255,17 +261,20 @@ RivetshoreCity_Construction_CEO_Text_1:
 RivetshoreCity_Construction_CEO_Text_2:
 # 83 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Oh you wonderful trainer! You've\n"
-	.string "brought my dear Percy back!\p"
+	.string "brought my dear Percy back!$"
+
+RivetshoreCity_Construction_CEO_Text_3:
+# 85 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Here, please take this. It's a very rare\n"
 	.string "antique - it plays a beautiful melody\l"
 	.string "that can wake sleeping Pokémon up!$"
 
-RivetshoreCity_Construction_CEO_Text_3:
-# 90 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_4:
+# 92 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Trainer! Have you found Percy?$"
 
-RivetshoreCity_Construction_CEO_Text_4:
-# 96 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_5:
+# 98 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Yes, child, come. You're here for the\n"
 	.string "contract offer right?\p"
 	.string "...\p"
@@ -277,23 +286,23 @@ RivetshoreCity_Construction_CEO_Text_4:
 	.string "...\p"
 	.string "Run away?$"
 
-RivetshoreCity_Construction_CEO_Text_5:
-# 103 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_6:
+# 105 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Absolutely not! I loved and cared for it\n"
 	.string "since the day it was born.\l"
 	.string "It would never run away!$"
 
-RivetshoreCity_Construction_CEO_Text_6:
-# 105 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_7:
+# 107 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Would you please find Percy for me?\n"
 	.string "I'll make it worth your while!$"
 
-RivetshoreCity_Construction_CEO_Text_7:
-# 108 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_8:
+# 110 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "A shame. See you, trainer.$"
 
-RivetshoreCity_Construction_CEO_Text_8:
-# 112 "data//maps/RivetshoreCity_Construction/scripts.pory"
+RivetshoreCity_Construction_CEO_Text_9:
+# 114 "data//maps/RivetshoreCity_Construction/scripts.pory"
 	.string "Brilliant! Percy must be somewhere in\n"
 	.string "Rivetshore City. It can't swim!\p"
 	.string "I'll be waiting here for my Percy.$"

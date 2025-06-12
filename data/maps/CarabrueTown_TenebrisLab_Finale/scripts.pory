@@ -106,6 +106,7 @@ script CarabrueTown_TenebrisLab_PostFinale{
     setflag(FLAG_POST_FINALE_CUTSCENE)
     setflag(FLAG_HIDE_ROUTE1_NORMAL)
     clearflag(FLAG_HIDE_TENEBRIS_TENEBRIS)
+    completequest(QUEST_STOP_TEAM_SOMBER)
 
     releaseall
     end

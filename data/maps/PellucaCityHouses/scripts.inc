@@ -3,180 +3,182 @@ PellucaCityHouses_MapScripts::
 
 
 PellucaCityHouses_MayorQuestStart::
-# 26 "data/maps/PellucaCityHouses/scripts.pory"
+# 26 "data//maps/PellucaCityHouses/scripts.pory"
 	lockall
-# 27 "data/maps/PellucaCityHouses/scripts.pory"
+# 27 "data//maps/PellucaCityHouses/scripts.pory"
 	faceplayer
-# 29 "data/maps/PellucaCityHouses/scripts.pory"
+# 29 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_PELLUCA_MAYOR_QUEST, 10
 	goto_if_eq PellucaCityHouses_MayorQuestStart_2
-# 35 "data/maps/PellucaCityHouses/scripts.pory"
+# 35 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_PELLUCA_MAYOR_QUEST, 2
 	goto_if_eq PellucaCityHouses_MayorQuestStart_5
 PellucaCityHouses_MayorQuestStart_4:
-# 41 "data/maps/PellucaCityHouses/scripts.pory"
+# 41 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_PELLUCA_MAYOR_QUEST, 0
 	goto_if_eq PellucaCityHouses_MayorQuestStart_8
 PellucaCityHouses_MayorQuestStart_7:
-# 57 "data/maps/PellucaCityHouses/scripts.pory"
+# 57 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_PELLUCA_MAYOR_QUEST, 1
 	goto_if_eq PellucaCityHouses_MayorQuestStart_11
 PellucaCityHouses_MayorQuestStart_10:
-# 81 "data/maps/PellucaCityHouses/scripts.pory"
+# 83 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
 PellucaCityHouses_MayorQuestStart_2:
-# 30 "data/maps/PellucaCityHouses/scripts.pory"
+# 30 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 31 "data/maps/PellucaCityHouses/scripts.pory"
+# 31 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_1, MSGBOX_NPC
 	end
 
 PellucaCityHouses_MayorQuestStart_5:
-# 36 "data/maps/PellucaCityHouses/scripts.pory"
+# 36 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 37 "data/maps/PellucaCityHouses/scripts.pory"
+# 37 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_2
-# 38 "data/maps/PellucaCityHouses/scripts.pory"
+# 38 "data//maps/PellucaCityHouses/scripts.pory"
 	release
 	goto PellucaCityHouses_MayorQuestStart_4
 
 PellucaCityHouses_MayorQuestStart_8:
-# 42 "data/maps/PellucaCityHouses/scripts.pory"
+# 42 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 43 "data/maps/PellucaCityHouses/scripts.pory"
+# 43 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_3
-# 44 "data/maps/PellucaCityHouses/scripts.pory"
+# 44 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername NULL
-# 45 "data/maps/PellucaCityHouses/scripts.pory"
+# 45 "data//maps/PellucaCityHouses/scripts.pory"
 	giveitem ITEM_DRIFBLIM_TRAVELS_PASS
-# 46 "data/maps/PellucaCityHouses/scripts.pory"
+# 46 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 47 "data/maps/PellucaCityHouses/scripts.pory"
+# 47 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_4
-# 48 "data/maps/PellucaCityHouses/scripts.pory"
+# 48 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 49 "data/maps/PellucaCityHouses/scripts.pory"
+# 49 "data//maps/PellucaCityHouses/scripts.pory"
 	delay 16
-# 50 "data/maps/PellucaCityHouses/scripts.pory"
+# 50 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 51 "data/maps/PellucaCityHouses/scripts.pory"
+# 51 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_5
-# 52 "data/maps/PellucaCityHouses/scripts.pory"
+# 52 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 54 "data/maps/PellucaCityHouses/scripts.pory"
+# 54 "data//maps/PellucaCityHouses/scripts.pory"
 	setvar VAR_PELLUCA_MAYOR_QUEST, 1
 	goto PellucaCityHouses_MayorQuestStart_7
 
 PellucaCityHouses_MayorQuestStart_11:
-# 58 "data/maps/PellucaCityHouses/scripts.pory"
+# 58 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 59 "data/maps/PellucaCityHouses/scripts.pory"
+# 59 "data//maps/PellucaCityHouses/scripts.pory"
 	message PellucaCityHouses_MayorQuestStart_Text_6
-# 60 "data/maps/PellucaCityHouses/scripts.pory"
+# 60 "data//maps/PellucaCityHouses/scripts.pory"
 	waitmessage
-# 61 "data/maps/PellucaCityHouses/scripts.pory"
+# 61 "data//maps/PellucaCityHouses/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, PellucaCityHouses_MayorQuestStart_Text_7, PellucaCityHouses_MayorQuestStart_Text_8
-# 63 "data/maps/PellucaCityHouses/scripts.pory"
+# 63 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCityHouses_MayorQuestStart_14
 PellucaCityHouses_MayorQuestStart_13:
-# 68 "data/maps/PellucaCityHouses/scripts.pory"
+# 68 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCityHouses_MayorQuestStart_16
 	goto PellucaCityHouses_MayorQuestStart_10
 
 PellucaCityHouses_MayorQuestStart_14:
-# 64 "data/maps/PellucaCityHouses/scripts.pory"
+# 64 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 65 "data/maps/PellucaCityHouses/scripts.pory"
+# 65 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_9
-# 66 "data/maps/PellucaCityHouses/scripts.pory"
+# 66 "data//maps/PellucaCityHouses/scripts.pory"
 	release
 	goto PellucaCityHouses_MayorQuestStart_13
 
 PellucaCityHouses_MayorQuestStart_16:
-# 69 "data/maps/PellucaCityHouses/scripts.pory"
+# 69 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 70 "data/maps/PellucaCityHouses/scripts.pory"
+# 70 "data//maps/PellucaCityHouses/scripts.pory"
 	applymovement 7, PellucaCityHouses_MayorQuestStart_Movement_0
-# 71 "data/maps/PellucaCityHouses/scripts.pory"
+# 71 "data//maps/PellucaCityHouses/scripts.pory"
 	waitmovement 0
-# 72 "data/maps/PellucaCityHouses/scripts.pory"
+# 72 "data//maps/PellucaCityHouses/scripts.pory"
 	delay 16
-# 73 "data/maps/PellucaCityHouses/scripts.pory"
+# 73 "data//maps/PellucaCityHouses/scripts.pory"
 	speakername PellucaCityHouses_MayorQuestStart_Text_0
-# 74 "data/maps/PellucaCityHouses/scripts.pory"
+# 74 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_MayorQuestStart_Text_10
-# 75 "data/maps/PellucaCityHouses/scripts.pory"
+# 75 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 77 "data/maps/PellucaCityHouses/scripts.pory"
+# 77 "data//maps/PellucaCityHouses/scripts.pory"
 	startquest QUEST_PELLUCA_CITY
-# 78 "data/maps/PellucaCityHouses/scripts.pory"
+# 78 "data//maps/PellucaCityHouses/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_PELLUCA_CITY, SUB_QUEST_1
+# 79 "data//maps/PellucaCityHouses/scripts.pory"
 	setvar VAR_PELLUCA_MAYOR_QUEST, 2
 	goto PellucaCityHouses_MayorQuestStart_10
 
 
 PellucaCityHouses_GabSibling1::
-# 108 "data/maps/PellucaCityHouses/scripts.pory"
+# 110 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GabSibling1_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCityHouses_GabSibling2::
-# 112 "data/maps/PellucaCityHouses/scripts.pory"
+# 114 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GabSibling2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCityHouses_GabSibling3::
-# 116 "data/maps/PellucaCityHouses/scripts.pory"
+# 118 "data//maps/PellucaCityHouses/scripts.pory"
 	lockall
-# 117 "data/maps/PellucaCityHouses/scripts.pory"
+# 119 "data//maps/PellucaCityHouses/scripts.pory"
 	faceplayer
-# 118 "data/maps/PellucaCityHouses/scripts.pory"
+# 120 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GabSibling3_Text_0
-# 119 "data/maps/PellucaCityHouses/scripts.pory"
+# 121 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 120 "data/maps/PellucaCityHouses/scripts.pory"
+# 122 "data//maps/PellucaCityHouses/scripts.pory"
 	showmonpic SPECIES_JANGMO_O, 10, 3
-# 121 "data/maps/PellucaCityHouses/scripts.pory"
+# 123 "data//maps/PellucaCityHouses/scripts.pory"
 	playmoncry SPECIES_JANGMO_O, CRY_MODE_NORMAL
-# 122 "data/maps/PellucaCityHouses/scripts.pory"
+# 124 "data//maps/PellucaCityHouses/scripts.pory"
 	waitmoncry
-# 123 "data/maps/PellucaCityHouses/scripts.pory"
+# 125 "data//maps/PellucaCityHouses/scripts.pory"
 	hidemonpic
-# 124 "data/maps/PellucaCityHouses/scripts.pory"
+# 126 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GabSibling3_Text_1, MSGBOX_NPC
-# 125 "data/maps/PellucaCityHouses/scripts.pory"
+# 127 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCityHouses_GameCube::
-# 129 "data/maps/PellucaCityHouses/scripts.pory"
+# 131 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GameCube_Text_0, MSGBOX_YESNO
-# 130 "data/maps/PellucaCityHouses/scripts.pory"
+# 132 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 131 "data/maps/PellucaCityHouses/scripts.pory"
+# 133 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCityHouses_GameCube_2
-# 134 "data/maps/PellucaCityHouses/scripts.pory"
+# 136 "data//maps/PellucaCityHouses/scripts.pory"
 	playbgm MUS_NONE, FALSE
-# 135 "data/maps/PellucaCityHouses/scripts.pory"
+# 137 "data//maps/PellucaCityHouses/scripts.pory"
 	special StartBlockStacker
-# 136 "data/maps/PellucaCityHouses/scripts.pory"
+# 138 "data//maps/PellucaCityHouses/scripts.pory"
 	waitstate
-# 137 "data/maps/PellucaCityHouses/scripts.pory"
+# 139 "data//maps/PellucaCityHouses/scripts.pory"
 	savebgm MUS_DUMMY
-# 138 "data/maps/PellucaCityHouses/scripts.pory"
+# 140 "data//maps/PellucaCityHouses/scripts.pory"
 	fadedefaultbgm
-# 141 "data/maps/PellucaCityHouses/scripts.pory"
+# 143 "data//maps/PellucaCityHouses/scripts.pory"
 	compare GAME_CORNER_VAR_WINNINGS, 20
 	goto_if_gt PellucaCityHouses_GameCube_5
 PellucaCityHouses_GameCube_4:
-# 156 "data/maps/PellucaCityHouses/scripts.pory"
+# 158 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
@@ -184,25 +186,25 @@ PellucaCityHouses_GameCube_2:
 	end
 
 PellucaCityHouses_GameCube_5:
-# 142 "data/maps/PellucaCityHouses/scripts.pory"
+# 144 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GameCube_Text_1
-# 144 "data/maps/PellucaCityHouses/scripts.pory"
+# 146 "data//maps/PellucaCityHouses/scripts.pory"
 	goto_if_set FLAG_GET_SWAP_DRIVE, PellucaCityHouses_GameCube_8
-# 146 "data/maps/PellucaCityHouses/scripts.pory"
+# 148 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 147 "data/maps/PellucaCityHouses/scripts.pory"
+# 149 "data//maps/PellucaCityHouses/scripts.pory"
 	delay 8
-# 148 "data/maps/PellucaCityHouses/scripts.pory"
+# 150 "data//maps/PellucaCityHouses/scripts.pory"
 	playse SE_CLICK
-# 149 "data/maps/PellucaCityHouses/scripts.pory"
+# 151 "data//maps/PellucaCityHouses/scripts.pory"
 	waitse
-# 150 "data/maps/PellucaCityHouses/scripts.pory"
+# 152 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_GameCube_Text_2
-# 151 "data/maps/PellucaCityHouses/scripts.pory"
+# 153 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 152 "data/maps/PellucaCityHouses/scripts.pory"
+# 154 "data//maps/PellucaCityHouses/scripts.pory"
 	giveitem ITEM_SWAP_DRIVE
-# 153 "data/maps/PellucaCityHouses/scripts.pory"
+# 155 "data//maps/PellucaCityHouses/scripts.pory"
 	setflag FLAG_GET_SWAP_DRIVE
 	goto PellucaCityHouses_GameCube_4
 
@@ -211,103 +213,103 @@ PellucaCityHouses_GameCube_8:
 
 
 PellucaCityHouses_TV::
-# 161 "data/maps/PellucaCityHouses/scripts.pory"
+# 163 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_TV_Text_0
-# 162 "data/maps/PellucaCityHouses/scripts.pory"
+# 164 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_Clauncher::
-# 266 "data/maps/PellucaCityHouses/scripts.pory"
+# 268 "data//maps/PellucaCityHouses/scripts.pory"
 	lockall
-# 267 "data/maps/PellucaCityHouses/scripts.pory"
+# 269 "data//maps/PellucaCityHouses/scripts.pory"
 	faceplayer
-# 269 "data/maps/PellucaCityHouses/scripts.pory"
+# 271 "data//maps/PellucaCityHouses/scripts.pory"
 	compare VAR_PELLUCA_MAYOR_QUEST, 6
 	goto_if_eq PellucaCity_Clauncher_2
 PellucaCity_Clauncher_1:
-# 277 "data/maps/PellucaCityHouses/scripts.pory"
+# 279 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_2
-# 278 "data/maps/PellucaCityHouses/scripts.pory"
+# 280 "data//maps/PellucaCityHouses/scripts.pory"
 	release
-# 279 "data/maps/PellucaCityHouses/scripts.pory"
+# 281 "data//maps/PellucaCityHouses/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 280 "data/maps/PellucaCityHouses/scripts.pory"
+# 282 "data//maps/PellucaCityHouses/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 281 "data/maps/PellucaCityHouses/scripts.pory"
+# 283 "data//maps/PellucaCityHouses/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 282 "data/maps/PellucaCityHouses/scripts.pory"
+# 284 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_3
-# 284 "data/maps/PellucaCityHouses/scripts.pory"
+# 286 "data//maps/PellucaCityHouses/scripts.pory"
 	addvar VAR_PELLUCA_MAYOR_QUEST, 1
-# 286 "data/maps/PellucaCityHouses/scripts.pory"
+# 288 "data//maps/PellucaCityHouses/scripts.pory"
 	releaseall
 	end
 
 PellucaCity_Clauncher_2:
-# 270 "data/maps/PellucaCityHouses/scripts.pory"
+# 272 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_0
-# 271 "data/maps/PellucaCityHouses/scripts.pory"
+# 273 "data//maps/PellucaCityHouses/scripts.pory"
 	setwildbattle SPECIES_CURSOLA, 28
-# 272 "data/maps/PellucaCityHouses/scripts.pory"
+# 274 "data//maps/PellucaCityHouses/scripts.pory"
 	dowildbattle
-# 273 "data/maps/PellucaCityHouses/scripts.pory"
+# 275 "data//maps/PellucaCityHouses/scripts.pory"
 	addvar VAR_PELLUCA_MAYOR_QUEST, 1
-# 274 "data/maps/PellucaCityHouses/scripts.pory"
+# 276 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCity_Clauncher_Text_1
 	goto PellucaCity_Clauncher_1
 
 
 PellucaCityHouses_NPC2::
-# 317 "data/maps/PellucaCityHouses/scripts.pory"
+# 319 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCityHouses_NPC3::
-# 321 "data/maps/PellucaCityHouses/scripts.pory"
+# 323 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCityHouses_NPC4::
-# 325 "data/maps/PellucaCityHouses/scripts.pory"
+# 327 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCityHouses_Delphox::
-# 333 "data/maps/PellucaCityHouses/scripts.pory"
+# 335 "data//maps/PellucaCityHouses/scripts.pory"
 	playmoncry SPECIES_DELPHOX, CRY_MODE_NORMAL
-# 334 "data/maps/PellucaCityHouses/scripts.pory"
+# 336 "data//maps/PellucaCityHouses/scripts.pory"
 	msgbox PellucaCityHouses_Delphox_Text_0, MSGBOX_NPC
 	end
 
 
-# 70 "data/maps/PellucaCityHouses/scripts.pory"
+# 70 "data//maps/PellucaCityHouses/scripts.pory"
 PellucaCityHouses_MayorQuestStart_Movement_0:
-# 70 "data/maps/PellucaCityHouses/scripts.pory"
+# 70 "data//maps/PellucaCityHouses/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
 PellucaCityHouses_MayorQuestStart_Text_0:
-# 30 "data/maps/PellucaCityHouses/scripts.pory"
+# 30 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Mayor$"
 
 PellucaCityHouses_MayorQuestStart_Text_1:
-# 31 "data/maps/PellucaCityHouses/scripts.pory"
+# 31 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Now that we've teamed up, we're doing\n"
 	.string "much better!$"
 
 PellucaCityHouses_MayorQuestStart_Text_2:
-# 37 "data/maps/PellucaCityHouses/scripts.pory"
+# 37 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Have you managed to do something about\n"
 	.string "the Qwilsquad yet? No?\p"
 	.string "Sigh...I was foolish to ask a child.$"
 
 PellucaCityHouses_MayorQuestStart_Text_3:
-# 43 "data/maps/PellucaCityHouses/scripts.pory"
+# 43 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "What now? I just can't -\p"
 	.string "Oh, it's you. The trainer at the bridge.\p"
 	.string "How has your stay at Pelluca City been\n"
@@ -319,7 +321,7 @@ PellucaCityHouses_MayorQuestStart_Text_3:
 	.string "complimentary Drifblim Pass!$"
 
 PellucaCityHouses_MayorQuestStart_Text_4:
-# 47 "data/maps/PellucaCityHouses/scripts.pory"
+# 47 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Using this, you'll be able to use the\n"
 	.string "Drifblim outside our Pokémon Center to\l"
 	.string "fly to Silversun City.\p"
@@ -329,7 +331,7 @@ PellucaCityHouses_MayorQuestStart_Text_4:
 	.string "point in selling you the city, is there?$"
 
 PellucaCityHouses_MayorQuestStart_Text_5:
-# 51 "data/maps/PellucaCityHouses/scripts.pory"
+# 51 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Oh, what am I supposed to do?\n"
 	.string "Everything was fine until one day, the\l"
 	.string "Qwilsquad showed up out of nowhere and\l"
@@ -340,25 +342,25 @@ PellucaCityHouses_MayorQuestStart_Text_5:
 	.string "There's no way I can battle them.$"
 
 PellucaCityHouses_MayorQuestStart_Text_6:
-# 59 "data/maps/PellucaCityHouses/scripts.pory"
+# 59 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "I just don't know what to do about the\n"
 	.string "Qwilsquad...$"
 
 PellucaCityHouses_MayorQuestStart_Text_7:
-# 61 "data/maps/PellucaCityHouses/scripts.pory"
+# 61 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "That's too bad$"
 
 PellucaCityHouses_MayorQuestStart_Text_8:
-# 61 "data/maps/PellucaCityHouses/scripts.pory"
+# 61 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Can I help?$"
 
 PellucaCityHouses_MayorQuestStart_Text_9:
-# 65 "data/maps/PellucaCityHouses/scripts.pory"
+# 65 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Sigh...thanks for hearing me out. I\n"
 	.string "really do hope you enjoy your stay here.$"
 
 PellucaCityHouses_MayorQuestStart_Text_10:
-# 74 "data/maps/PellucaCityHouses/scripts.pory"
+# 74 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "C-can you? The Qwilsquad will only\n"
 	.string "listen if you speak in their language.\l"
 	.string "Do you think you can stand up to the\l"
@@ -369,86 +371,86 @@ PellucaCityHouses_MayorQuestStart_Text_10:
 	.string "get out of the city!$"
 
 PellucaCityHouses_GabSibling1_Text_0:
-# 108 "data/maps/PellucaCityHouses/scripts.pory"
+# 110 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Big Sis is back! She got me a Swap 2. I'm\n"
 	.string "not playing it because I'm gonna play\l"
 	.string "with her. You wanna play it?$"
 
 PellucaCityHouses_GabSibling2_Text_0:
-# 112 "data/maps/PellucaCityHouses/scripts.pory"
+# 114 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "I wish Big Sis stayed with us all the\n"
 	.string "time!$"
 
 PellucaCityHouses_GabSibling3_Text_0:
-# 118 "data/maps/PellucaCityHouses/scripts.pory"
+# 120 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Gabrielle keeps us afloat. Without her,\n"
 	.string "I wouldn't be able to afford to study.\p"
 	.string "I got her a gift.$"
 
 PellucaCityHouses_GabSibling3_Text_1:
-# 124 "data/maps/PellucaCityHouses/scripts.pory"
+# 126 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "A traveling merchant sold it to me. It's\n"
 	.string "the least I can do for her.$"
 
 PellucaCityHouses_GameCube_Text_0:
-# 129 "data/maps/PellucaCityHouses/scripts.pory"
+# 131 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "It's a Swap 2, the popular gaming\n"
 	.string "console!\p"
 	.string "Turn it on?$"
 
 PellucaCityHouses_GameCube_Text_1:
-# 142 "data/maps/PellucaCityHouses/scripts.pory"
+# 144 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "You got the high score!$"
 
 PellucaCityHouses_GameCube_Text_2:
-# 150 "data/maps/PellucaCityHouses/scripts.pory"
+# 152 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Something fell out of the Swap 2!\n"
 	.string "What is it?$"
 
 PellucaCityHouses_TV_Text_0:
-# 161 "data/maps/PellucaCityHouses/scripts.pory"
+# 163 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "The TV is hooked up to the Swap 2.$"
 
 PellucaCity_Clauncher_Text_0:
-# 270 "data/maps/PellucaCityHouses/scripts.pory"
+# 272 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "It's a Corsola!\p"
 	.string "...\p"
 	.string "Wait, it doesn't look like a Corsola...it's\n"
 	.string "a little paler...a little less cute...$"
 
 PellucaCity_Clauncher_Text_1:
-# 274 "data/maps/PellucaCityHouses/scripts.pory"
+# 276 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "That's five Corsolas...one way or\n"
 	.string "another! Better get back to the mayor.$"
 
 PellucaCity_Clauncher_Text_2:
-# 277 "data/maps/PellucaCityHouses/scripts.pory"
+# 279 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "It's a Corsola! It's looking disoriented.\p"
 	.string "{PLAYER} gently lifts the Corsola and\n"
 	.string "tosses it back into the river.$"
 
 PellucaCity_Clauncher_Text_3:
-# 282 "data/maps/PellucaCityHouses/scripts.pory"
+# 284 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "See you Corsola!$"
 
 PellucaCityHouses_NPC2_Text_0:
-# 317 "data/maps/PellucaCityHouses/scripts.pory"
+# 319 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "We we born here here, fell in love here,\n"
 	.string "and grew old here.$"
 
 PellucaCityHouses_NPC3_Text_0:
-# 321 "data/maps/PellucaCityHouses/scripts.pory"
+# 323 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "After so long together, love gets\n"
 	.string "replaced by companionship. But it's\l"
 	.string "always there, somewhere beneath the\l"
 	.string "surface.$"
 
 PellucaCityHouses_NPC4_Text_0:
-# 325 "data/maps/PellucaCityHouses/scripts.pory"
+# 327 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "My Delphox doesn't like the river air.\n"
 	.string "She prefers the dense fog of Vilethorn\l"
 	.string "Woods, where I first met her.$"
 
 PellucaCityHouses_Delphox_Text_0:
-# 334 "data/maps/PellucaCityHouses/scripts.pory"
+# 336 "data//maps/PellucaCityHouses/scripts.pory"
 	.string "Delphox looks wistful...$"

@@ -242,6 +242,7 @@ script Route6_NPC4{
             if (checkitem(ITEM_OLD_GATEAU)){
                 msgbox(format("Yes, this looks amazing!\p...\pInteresting flavour. I think I can make it!"))
                 release
+                completequest(QUEST_ROUTE6_FISHERMAN)
                 removeitem(ITEM_OLD_GATEAU)
                 msgbox(format("I suppose I don't need this any more. Here, why don't you take it? You could start a new hobby too!"))
                 giveitem(ITEM_SUPER_ROD)
@@ -261,6 +262,7 @@ script Route6_NPC4{
                     //Start quest
                     msgbox(format("Thank you so much! I'll be waiting here for you."))
                     setvar(VAR_ROUTE6_FISHERMAN, 1)
+                    startquest(QUEST_ROUTE6_FISHERMAN)
                 } else {
                     msgbox(format("Ahh well, it's back to fishing then."))
                 }

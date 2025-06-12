@@ -84,7 +84,9 @@ script RivetshoreCity_Houses_NPC6{
             checkitem(ITEM_POCKET_BOY)
 
             if (var(VAR_RESULT) == 1){
-                msgbox(format("It's a PocketBoy! You really got it! It looks so cool! What games does it have?\p...\pFLUTTERFREE!?!\pThat's the best one!\pThank you so much! Um...we don't really have any money, but do you want one of our rare cards instead?"))
+                msgbox(format("It's a PocketBoy! You really got it! It looks so cool! What games does it have?\p...\pFLUTTERFREE!?!\pThat's the best one!\nThank you so much!"))
+                completequest(QUEST_RIVETSHORE_POCKETBOY)
+                msgbox(format("Um...we don't really have any money, but do you want one of our rare cards instead?"))
                 setvar(VAR_RIVETSHORE_EGG_QUEST, 2)
                 removeitem(ITEM_POCKET_BOY)
                 giveitem(ITEM_RED_CARD)
@@ -113,6 +115,7 @@ script RivetshoreCity_Houses_NPC6{
             msgbox(format("Yay! But be cool about it, okay?\nOr Grandma will find out."))
             release
 
+            startquest(QUEST_RIVETSHORE_POCKETBOY)
             setvar(VAR_RIVETSHORE_EGG_QUEST, 1)
             releaseall
             end

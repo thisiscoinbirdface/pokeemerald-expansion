@@ -80,7 +80,9 @@ script RivetshoreCity_Construction_CEO{
     }
 
     if (var(VAR_RIVETSHORE_CEO_QUEST) == 2){
-        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!\pHere, please take this. It's a very rare antique - it plays a beautiful melody that can wake sleeping Pokémon up!"))
+        msgbox_delay("CEO", format("Oh you wonderful trainer! You've brought my dear Percy back!"))
+        completequest(QUEST_RIVETSHORE_MIMIKYU)
+        msgbox_delay("CEO", format("Here, please take this. It's a very rare antique - it plays a beautiful melody that can wake sleeping Pokémon up!"))
         giveitem(ITEM_POKE_FLUTE)
         setvar(VAR_RIVETSHORE_CEO_QUEST, 3)
     }
@@ -111,7 +113,7 @@ script RivetshoreCity_Construction_CEO{
         
         msgbox_delay("CEO", format("Brilliant! Percy must be somewhere in Rivetshore City. It can't swim!\pI'll be waiting here for my Percy."))
         clearflag(FLAG_HIDE_RIVETSHORE_PERCY)
-
+        startquest(QUEST_RIVETSHORE_MIMIKYU)
         setvar(VAR_RIVETSHORE_CEO_QUEST, 1)
 
     }

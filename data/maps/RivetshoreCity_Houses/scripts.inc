@@ -55,10 +55,10 @@ RivetshoreCity_Houses_NPC6::
 # 76 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	compare VAR_RIVETSHORE_EGG_QUEST, 1
 	goto_if_eq RivetshoreCity_Houses_NPC6_5
-# 108 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 110 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	compare VAR_RIVETSHORE_EGG_QUEST, 0
 	goto_if_eq RivetshoreCity_Houses_NPC6_11
-# 126 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 129 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -79,9 +79,9 @@ RivetshoreCity_Houses_NPC6_5:
 # 79 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_Houses_NPC6_13
-# 102 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_8
-# 103 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 104 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_9
+# 105 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	release
 	end
 
@@ -100,18 +100,18 @@ RivetshoreCity_Houses_NPC6_8:
 	goto RivetshoreCity_Houses_NPC6_7
 
 RivetshoreCity_Houses_NPC6_11:
-# 109 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_9
-# 110 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_10, MSGBOX_NPC
 # 111 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_11, MSGBOX_YESNO
+	msgbox RivetshoreCity_Houses_NPC6_Text_10
 # 112 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_11, MSGBOX_NPC
+# 113 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_12, MSGBOX_YESNO
+# 114 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_Houses_NPC6_19
-# 121 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_13
-# 122 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 124 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_14
+# 125 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -125,9 +125,9 @@ RivetshoreCity_Houses_NPC6_13:
 # 86 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq RivetshoreCity_Houses_NPC6_21
-# 95 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_7
-# 96 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 97 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_8
+# 98 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -155,13 +155,15 @@ RivetshoreCity_Houses_NPC6_16:
 	goto RivetshoreCity_Houses_NPC6_7
 
 RivetshoreCity_Houses_NPC6_19:
-# 113 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	msgbox RivetshoreCity_Houses_NPC6_Text_12
-# 114 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	release
+# 115 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_13
 # 116 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	release
+# 118 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	startquest QUEST_RIVETSHORE_POCKETBOY
+# 119 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	setvar VAR_RIVETSHORE_EGG_QUEST, 1
-# 117 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 120 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -169,14 +171,18 @@ RivetshoreCity_Houses_NPC6_21:
 # 87 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	msgbox RivetshoreCity_Houses_NPC6_Text_5
 # 88 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	setvar VAR_RIVETSHORE_EGG_QUEST, 2
+	completequest QUEST_RIVETSHORE_POCKETBOY
 # 89 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	removeitem ITEM_POCKET_BOY
-# 90 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	giveitem ITEM_RED_CARD
-# 91 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	msgbox RivetshoreCity_Houses_NPC6_Text_6
+# 90 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	setvar VAR_RIVETSHORE_EGG_QUEST, 2
+# 91 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	removeitem ITEM_POCKET_BOY
 # 92 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	giveitem ITEM_RED_CARD
+# 93 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	msgbox RivetshoreCity_Houses_NPC6_Text_7
+# 94 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -185,9 +191,9 @@ RivetshoreCity_Houses_NPC6_25:
 
 
 RivetshoreCity_Houses_NPC7::
-# 130 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 133 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	msgbox RivetshoreCity_Houses_NPC7_Text_0, MSGBOX_NPC
-# 131 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 134 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -263,54 +269,58 @@ RivetshoreCity_Houses_NPC6_Text_5:
 	.string "looks so cool! What games does it have?\p"
 	.string "...\p"
 	.string "FLUTTERFREE!?!\p"
-	.string "That's the best one!\p"
-	.string "Thank you so much! Um...we don't really\n"
-	.string "have any money, but do you want one of\l"
-	.string "our rare cards instead?$"
+	.string "That's the best one!\n"
+	.string "Thank you so much!$"
 
 RivetshoreCity_Houses_NPC6_Text_6:
-# 91 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "You can come and play with us any time!$"
+# 89 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	.string "Um...we don't really have any money, but\n"
+	.string "do you want one of our rare cards\l"
+	.string "instead?$"
 
 RivetshoreCity_Houses_NPC6_Text_7:
-# 95 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "Not this - we want a PocketBoy!$"
+# 93 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	.string "You can come and play with us any time!$"
 
 RivetshoreCity_Houses_NPC6_Text_8:
-# 102 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "Sigh...$"
+# 97 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	.string "Not this - we want a PocketBoy!$"
 
 RivetshoreCity_Houses_NPC6_Text_9:
-# 109 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 104 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	.string "Sigh...$"
+
+RivetshoreCity_Houses_NPC6_Text_10:
+# 111 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "Sigh...playing these card games are so\n"
 	.string "boring! I wish we had a PocketBoy.\l"
 	.string "Everyone else has one!\p"
 	.string "...$"
 
-RivetshoreCity_Houses_NPC6_Text_10:
-# 110 "data//maps/RivetshoreCity_Houses/scripts.pory"
+RivetshoreCity_Houses_NPC6_Text_11:
+# 112 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "Hey, I bet you could get us a\n"
 	.string "PocketBoy!\p"
 	.string "What's a PocketBoy? You don't know?\n"
 	.string "It's the best game console right now!\l"
 	.string "But Grandma won't let us play games...$"
 
-RivetshoreCity_Houses_NPC6_Text_11:
-# 111 "data//maps/RivetshoreCity_Houses/scripts.pory"
-	.string "Will you bring us a PocketBoy?$"
-
 RivetshoreCity_Houses_NPC6_Text_12:
 # 113 "data//maps/RivetshoreCity_Houses/scripts.pory"
+	.string "Will you bring us a PocketBoy?$"
+
+RivetshoreCity_Houses_NPC6_Text_13:
+# 115 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "Yay! But be cool about it, okay?\n"
 	.string "Or Grandma will find out.$"
 
-RivetshoreCity_Houses_NPC6_Text_13:
-# 121 "data//maps/RivetshoreCity_Houses/scripts.pory"
+RivetshoreCity_Houses_NPC6_Text_14:
+# 124 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "Sigh...old people are so lame.\n"
 	.string "C'mon bro, shuffle the deck.$"
 
 RivetshoreCity_Houses_NPC7_Text_0:
-# 130 "data//maps/RivetshoreCity_Houses/scripts.pory"
+# 133 "data//maps/RivetshoreCity_Houses/scripts.pory"
 	.string "My two grandchildren will make fine\n"
 	.string "doctors and lawyers one day!\n"
 	.string "They won't turn out like you.$"
