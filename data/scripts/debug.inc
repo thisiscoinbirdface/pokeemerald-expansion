@@ -160,7 +160,6 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
-	call Common_EventScript_Test
 	release
 	end
 

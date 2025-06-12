@@ -448,6 +448,21 @@ script RangerInstitute_2F_EventScript_Welcome{
 
 script RangerInstitute_Ravine{
 
+    if (var(VAR_RANGER_INSTITUTE) == 10){///Start final quest
+        speakername("Ravine")
+        msgbox(format("How do you feel about your new Pokemon, {PLAYER}?\pGood?\pHaha! It's the first of many.\pYou ready to become a fully-fledged Pokemon Ranger?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            speakername("Ravine")
+            msgbox(format("Haha! Heard horror stories about the final test, did you?\pCome back when you're ready!"))
+            releaseall
+            end
+        }
+        //add the last quest here
+        releaseall
+        end
+    }
+
     if (var(VAR_RANGER_INSTITUTE) == 9){///waiting for selection of ball
         speakername("Ravine")
         msgbox(format("Don't be shy - pick a Pokémon!\nIt's your reward for ranking up."), MSGBOX_NPC)
