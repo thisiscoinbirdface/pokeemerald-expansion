@@ -74,7 +74,7 @@ script Fennilahl_Breech_QuestInProgress{
         applymovement(LOCALID_BREECH, moves(face_down emote_exclamation_mark))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down emote_exclamation_mark))
         waitmovement(0)
-        setobjectxyperm(LOCALID_CLEF, 25, 15)
+        setobjectxyperm(LOCALID_CLEF, 21, 15)
         addobject(LOCALID_CLEF)
         applymovement(LOCALID_CLEF, moves(walk_fast_up * 6))
         waitmovement(0)

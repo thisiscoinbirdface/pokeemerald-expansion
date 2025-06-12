@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_FENNILAHL_TOWN",
-      "offset": -8,
+      "offset": -4,
       "direction": "up"
     },
     {

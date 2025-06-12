@@ -123,7 +123,7 @@ Fennilahl_Breech_QuestInProgress_2:
 # 76 "data//maps/FennilahlTown/scripts.pory"
 	waitmovement 0
 # 77 "data//maps/FennilahlTown/scripts.pory"
-	setobjectxyperm LOCALID_CLEF, 25, 15
+	setobjectxyperm LOCALID_CLEF, 21, 15
 # 78 "data//maps/FennilahlTown/scripts.pory"
 	addobject LOCALID_CLEF
 # 79 "data//maps/FennilahlTown/scripts.pory"

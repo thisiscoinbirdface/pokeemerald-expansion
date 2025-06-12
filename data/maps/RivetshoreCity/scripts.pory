@@ -258,6 +258,10 @@ script RivetshoreCity_Assembly_Trigger{
 
 
 
+script RivetshoreCity_NPC_StorageBayDude{
+    msgbox(format("Hehehe...when that sailor isn't looking, I'll sneak in and stow away on board the S.S. Elegant!"), MSGBOX_NPC)
+    end
+}
 
 
 script RivetshoreCity_NPC_StorageBaySailor{

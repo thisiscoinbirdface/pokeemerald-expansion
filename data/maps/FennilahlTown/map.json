@@ -20,14 +20,14 @@
     },
     {
       "map": "MAP_ROUTE2",
-      "offset": 8,
+      "offset": 4,
       "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 18,
+      "x": 14,
       "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 16,
+      "x": 12,
       "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -53,7 +53,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 13,
+      "x": 9,
       "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -66,7 +66,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 26,
+      "x": 22,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -79,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 15,
+      "x": 11,
       "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -92,7 +92,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 27,
+      "x": 23,
       "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -105,7 +105,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUDEW)",
-      "x": 14,
+      "x": 10,
       "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -131,7 +131,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 18,
+      "x": 14,
       "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -144,7 +144,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 19,
+      "x": 15,
       "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -157,7 +157,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DRIFBLIM)",
-      "x": 21,
+      "x": 17,
       "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -171,42 +171,42 @@
   ],
   "warp_events": [
     {
-      "x": 12,
+      "x": 8,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 6,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 27,
+      "x": 23,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
+      "x": 14,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
+      "x": 18,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TOWN_POKEMART",
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
+      "x": 22,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_FENNILAHL_TUNNEL",
@@ -219,7 +219,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 8,
+      "x": 4,
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -227,7 +227,7 @@
     },
     {
       "type": "sign",
-      "x": 27,
+      "x": 23,
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -235,7 +235,7 @@
     },
     {
       "type": "sign",
-      "x": 21,
+      "x": 17,
       "y": 32,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -243,23 +243,31 @@
     },
     {
       "type": "sign",
-      "x": 19,
+      "x": 15,
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemonCenterSign"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
       "x": 20,
-      "y": 15,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemonCenterSign"
-    },
-    {
-      "type": "sign",
-      "x": 23,
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -267,15 +275,7 @@
     },
     {
       "type": "sign",
-      "x": 24,
-      "y": 21,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "Common_EventScript_ShowPokemartSign"
-    },
-    {
-      "type": "sign",
-      "x": 25,
+      "x": 21,
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -283,7 +283,7 @@
     },
     {
       "type": "sign",
-      "x": 16,
+      "x": 12,
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
