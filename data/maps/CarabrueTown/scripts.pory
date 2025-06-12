@@ -46,6 +46,7 @@ script CarabrueTown_Sign_ChampionHouse{
         msgbox(format("There's no lock. Open the door?"), MSGBOX_YESNO)
         release
         if (var(VAR_RESULT) == 0){end}
+        playse(SE_DOOR)
         warp(MAP_THE_OTHER_HOUSE, 2, 8)
         releaseall
         end

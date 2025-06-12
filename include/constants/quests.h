@@ -28,26 +28,26 @@
 // const u8 gText_SideQuestName_12[] = _("A Chef's Icy Troubles");
 
 // quest number defines
-#define QUEST_LAB_FIRST_DAY             0
-#define QUEST_DREAMSTONE_MYSTERIES      1
-#define QUEST_POKEMON_RANGER            2
+#define QUEST_LAB_FIRST_DAY             0   //main (multistage)
+#define QUEST_DREAMSTONE_MYSTERIES      1   //main (multistage)
+#define QUEST_STOP_TEAM_SOMBER          2   //main (multistage)
 #define QUEST_ROUTE1_PECHA_BERRY        3
 #define QUEST_FENNILAHL_HIKER           4
 #define QUEST_GASTREE_SKITTY            5
-#define QUEST_GASTREE_TEA               6
-#define QUEST_CERAM_CYNDAQUIL           7
-#define QUEST_GALECREST_PEARLS          8
-#define QUEST_SILVERSUN_ARTIST          9
-#define QUEST_SILVERSUN_WIFE            10
-#define QUEST_PELLUCA_RESTAURANT        11
-#define QUEST_ANCIENT_STATUES           12
-#define QUEST_PELLUCA_MAIN              13
-#define QUEST_PELLUCA_MAYOR             14
-#define QUEST_MIRROH_NURSE_CHANSEY      15
-#define QUEST_LILYPOND_FISHERMAN        16
-#define QUEST_STOP_TEAM_SOMBER          17
+#define QUEST_ANCIENT_STATUES           6  //ongoing
+#define QUEST_GASTREE_TEA               7
+#define QUEST_CERAM_CYNDAQUIL           8
+#define QUEST_GALECREST_PEARLS          9
+#define QUEST_GALECREST_POORGUY         10
+#define QUEST_SILVERSUN_ARTIST          11
+#define QUEST_SILVERSUN_WIFE            12
+#define QUEST_ROUTE6_FISHERMAN          13
+#define QUEST_POKEMON_RANGER            14 //ongoing (multistage)
+#define QUEST_PELLUCA_CITY              15 // (multistage)
+#define QUEST_PELLUCA_RESTAURANT        16
+#define QUEST_MIRROH_NURSE_CHANSEY      17
 #define QUEST_RIVETSHORE_MIMIKYU        18
-#define QUEST_RIVETSHORE_POKEMON        19
+#define QUEST_RIVETSHORE_POCKETBOY      19
 #define QUEST_21        20
 #define QUEST_22        21
 #define QUEST_23        22
@@ -72,19 +72,19 @@
 #define SUB_QUEST_10         9  //QUEST_DREAMSTONE_MYSTERIES
 #define SUB_QUEST_11        10  //QUEST_DREAMSTONE_MYSTERIES
 #define SUB_QUEST_12        11  //QUEST_DREAMSTONE_MYSTERIES
-#define SUB_QUEST_13        12  //QUEST_DREAMSTONE_MYSTERIES
-#define SUB_QUEST_14        13  //QUEST_POKEMON_RANGER
-#define SUB_QUEST_15        14  //QUEST_POKEMON_RANGER
-#define SUB_QUEST_16        15  //QUEST_POKEMON_RANGER
-#define SUB_QUEST_17        16  //QUEST_PELLUCA_EVENT
-#define SUB_QUEST_18        17  //QUEST_PELLUCA_EVENT
-#define SUB_QUEST_19        18  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
-#define SUB_QUEST_20        19  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
-#define SUB_QUEST_21        20  //QUEST_FISHERMAN (deliver letter, meet up in ivy, find item)
-#define SUB_QUEST_22        21  //FINALE
-#define SUB_QUEST_23        22  //FINALE
-#define SUB_QUEST_24        23  //FINALE
-#define SUB_QUEST_25        24  //FINALE
+#define SUB_QUEST_13        12  //FINALE
+#define SUB_QUEST_14        13  //FINALE
+#define SUB_QUEST_15        14  //FINALE
+#define SUB_QUEST_16        15  //FINALE
+#define SUB_QUEST_17        16  //QUEST_POKEMON_RANGER
+#define SUB_QUEST_18        17  //QUEST_POKEMON_RANGER
+#define SUB_QUEST_19        18  //QUEST_POKEMON_RANGER 
+#define SUB_QUEST_20        19  //QUEST_PELLUCA_EVENT 
+#define SUB_QUEST_21        20  //QUEST_PELLUCA_EVENT 
+#define SUB_QUEST_22        21  
+#define SUB_QUEST_23        22  
+#define SUB_QUEST_24        23  
+#define SUB_QUEST_25        24  
 #define SUB_QUEST_26        25
 #define SUB_QUEST_27        26
 #define SUB_QUEST_28        27
@@ -94,12 +94,11 @@
 //add pelluca quest
 
 #define QUEST_1_SUB_COUNT 3
-#define QUEST_2_SUB_COUNT 10
-#define QUEST_3_SUB_COUNT 3
-#define QUEST_4_SUB_COUNT 2
-#define QUEST_5_SUB_COUNT 3
-#define QUEST_6_SUB_COUNT 4
-#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT + QUEST_3_SUB_COUNT + QUEST_4_SUB_COUNT + QUEST_5_SUB_COUNT + QUEST_6_SUB_COUNT + 1)
+#define QUEST_2_SUB_COUNT 9
+#define QUEST_3_SUB_COUNT 4
+#define QUEST_4_SUB_COUNT 3
+#define QUEST_5_SUB_COUNT 2
+#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT + QUEST_3_SUB_COUNT + QUEST_4_SUB_COUNT + QUEST_5_SUB_COUNT + 1)
 
 #define QUEST_ARRAY_COUNT (SUB_QUEST_COUNT > QUEST_COUNT ? SUB_QUEST_COUNT : QUEST_COUNT)
 #endif // GUARD_CONSTANTS_QUESTS_H

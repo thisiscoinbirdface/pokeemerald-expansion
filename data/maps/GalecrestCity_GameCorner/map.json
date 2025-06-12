@@ -2,7 +2,7 @@
   "id": "MAP_GALECREST_CITY_GAME_CORNER",
   "name": "GalecrestCity_GameCorner",
   "layout": "LAYOUT_GALECREST_CITY_GAME_CORNER",
-  "music": "MUS_CONTEST_LOBBY",
+  "music": "MUS_HGSS_CASINO",
   "region_map_section": "MAPSEC_GALECREST_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

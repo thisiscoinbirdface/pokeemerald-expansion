@@ -74,6 +74,7 @@ script PellucaCityHouses_MayorQuestStart{
             msgbox(format("C-can you? The Qwilsquad will only listen if you speak in their language. Do you think you can stand up to the Qwilsquad and their boss?\pThey're all holed up in the abandoned riverside shack to the west.\pPlease - go there and convince them to get out of the city!"))
             release
 
+            startquest(QUEST_PELLUCA_CITY)
             setvar(VAR_PELLUCA_MAYOR_QUEST, 2)
         }
     }
@@ -184,82 +185,82 @@ script PellucaCityHouses_TV{
 
 
 
-//Quest NPC
-script PellucaCityHouses_Mayor_Reward{
-    message(format("Please accept this reward."))
-    waitmessage
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
-    if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)}
-    if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)}
-    goto(PellucaCityHouses_Mayor_Reward_Give)
-}
-script PellucaCityHouses_Mayor_Reward_Give{
-    showitemdescription
-    msgbox(format("Are you sure?"), MSGBOX_YESNO)
-    hideitemdescription
-    if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(PellucaCityHouses_Mayor_Reward_End)} 
-    else {goto(PellucaCityHouses_Mayor_Reward)}
-}
-script PellucaCityHouses_Mayor_Reward_End{
-    setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
-    end
-}
-script PellucaCityHouses_NPC1{
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 7){
-        //quest done
-        msgbox(format("I haven't seen any Corsolas recently, so I can finally relax a little!"), MSGBOX_NPC)
-        end
-    }
+//Quest NPC (old mayor unused quest)
+// script PellucaCityHouses_Mayor_Reward{
+//     message(format("Please accept this reward."))
+//     waitmessage
+//     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Weakness Policy", "Blunder Policy") 
+//     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY)}
+//     if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_BLUNDER_POLICY)}
+//     goto(PellucaCityHouses_Mayor_Reward_Give)
+// }
+// script PellucaCityHouses_Mayor_Reward_Give{
+//     showitemdescription
+//     msgbox(format("Are you sure?"), MSGBOX_YESNO)
+//     hideitemdescription
+//     if (var(VAR_RESULT) == 1){giveitem(VAR_0x8006) goto(PellucaCityHouses_Mayor_Reward_End)} 
+//     else {goto(PellucaCityHouses_Mayor_Reward)}
+// }
+// script PellucaCityHouses_Mayor_Reward_End{
+//     setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
+//     end
+// }
+// script PellucaCityHouses_NPC1{
+//     if (var(VAR_PELLUCA_MAYOR_QUEST) == 7){
+//         //quest done
+//         msgbox(format("I haven't seen any Corsolas recently, so I can finally relax a little!"), MSGBOX_NPC)
+//         end
+//     }
 
 
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
-        //quest done
-        msgbox(format("Have you done the job? Excellent! Sigh, what a relief. I admit it - I've been a weak mayor. Too many blunders! I should be more proactive in taking care of my city."), MSGBOX_NPC)
-        //goto(PellucaCityHouses_Mayor_Reward)
-        msgbox(format("Please accept this reward. It's not much but I have no use for it, since I'm here all the time."))
-        giveitem(ITEM_DRIFBLIM_TRAVELS_PASS)
-        setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
-        msgbox(format("On the behalf of residents of Pelluca City, thank you for your service!"), MSGBOX_NPC)        
-        release
-        end
-    }
+//     if (var(VAR_PELLUCA_MAYOR_QUEST) == 6){
+//         //quest done
+//         msgbox(format("Have you done the job? Excellent! Sigh, what a relief. I admit it - I've been a weak mayor. Too many blunders! I should be more proactive in taking care of my city."), MSGBOX_NPC)
+//         //goto(PellucaCityHouses_Mayor_Reward)
+//         msgbox(format("Please accept this reward. It's not much but I have no use for it, since I'm here all the time."))
+//         giveitem(ITEM_DRIFBLIM_TRAVELS_PASS)
+//         setvar(VAR_PELLUCA_MAYOR_QUEST, 7)
+//         msgbox(format("On the behalf of residents of Pelluca City, thank you for your service!"), MSGBOX_NPC)        
+//         release
+//         end
+//     }
 
-    if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
+//     if (var(VAR_PELLUCA_MAYOR_QUEST) == 0){
 
-        msgbox(format("I'm the mayor of Pelluca City. Since we sit at the intersection of the Ivy River and the Hoya River, it's split up into several small islands. You know what that means?"), MSGBOX_NPC)
-        release
-        applymovement(7, moves(emote_exclamation_mark)) 
-        delay(16)    
-        msgbox(format("It means Corsolas washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokémon stuck ashore."), MSGBOX_NPC)
-        release
-        applymovement(7, moves(emote_exclamation_mark)) 
-        delay(16)    
-        msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this...blunder after blunder. I'm just too weak as a mayor!"))
-        dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
+//         msgbox(format("I'm the mayor of Pelluca City. Since we sit at the intersection of the Ivy River and the Hoya River, it's split up into several small islands. You know what that means?"), MSGBOX_NPC)
+//         release
+//         applymovement(7, moves(emote_exclamation_mark)) 
+//         delay(16)    
+//         msgbox(format("It means Corsolas washed ashore every other day! It's a massive maintenance cost just trying to send all the Claunchers back into the water! Not to mention the poor Pokémon stuck ashore."), MSGBOX_NPC)
+//         release
+//         applymovement(7, moves(emote_exclamation_mark)) 
+//         delay(16)    
+//         msgbox(format("You think all the money I make is worth it? Look at my hair - it's going white!\pSigh...sometimes it's just too much, trying to manage all this...blunder after blunder. I'm just too weak as a mayor!"))
+//         dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Can I help?", "That's too bad")
 
-        if (var(VAR_RESULT) == 0){
-            msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Corsolas you see back into the river!"), MSGBOX_NPC)
-            startquest(QUEST_PELLUCA_MAYOR)
-            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON1)
-            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON2)
-            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON3)
-            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON4)
-            clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON5)
-            setvar(VAR_PELLUCA_MAYOR_QUEST, 1)
+//         if (var(VAR_RESULT) == 0){
+//             msgbox(format("My dear trainer! You have a heart of gold. I was merely letting out some steam, but I would be a fool not to take you up on your offer! I can most certainly make it worth your while, of course. Please scout all the riverbanks across the city and put five Corsolas you see back into the river!"), MSGBOX_NPC)
+//             startquest(QUEST_PELLUCA_MAYOR)
+//             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON1)
+//             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON2)
+//             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON3)
+//             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON4)
+//             clearflag(FLAG_HIDE_PELLUCA_MAYOR_MON5)
+//             setvar(VAR_PELLUCA_MAYOR_QUEST, 1)
 
-            release
-        }
+//             release
+//         }
 
-        if (var(VAR_RESULT) == 1){
-            msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in Pelluca City!"), MSGBOX_NPC)
-        } 
-        end
-    }
+//         if (var(VAR_RESULT) == 1){
+//             msgbox(format("Yes, well, one has to do what one must. Please enjoy your stay in Pelluca City!"), MSGBOX_NPC)
+//         } 
+//         end
+//     }
 
-    //quest ongoing
-    msgbox(format("Please send five Corsolas back to the river!"), MSGBOX_NPC)
-    end
-}
+//     //quest ongoing
+//     msgbox(format("Please send five Corsolas back to the river!"), MSGBOX_NPC)
+//     end
+// }
 //clauncher
 script PellucaCity_Clauncher{
     lockall
