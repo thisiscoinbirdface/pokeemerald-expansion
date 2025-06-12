@@ -96,6 +96,24 @@ Rivetshore_RangerInstitute_NPC_Trade_11:
 	goto Rivetshore_RangerInstitute_NPC_Trade_4
 
 
+Rivetshore_RangerInstitute_NPC1::
+# 74 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	msgbox Rivetshore_RangerInstitute_NPC1_Text_0, MSGBOX_NPC
+	end
+
+
+Rivetshore_RangerInstitute_NPC2::
+# 79 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	msgbox Rivetshore_RangerInstitute_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
+Rivetshore_RangerInstitute_NPC3::
+# 84 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	msgbox Rivetshore_RangerInstitute_NPC3_Text_0, MSGBOX_NPC
+	end
+
+
 Rivetshore_RangerInstitute_NPC_Trade_Text_0:
 # 7 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
 	.string "Aw yeah! With Bombirdier, I'm sure I can\n"
@@ -127,3 +145,25 @@ Rivetshore_RangerInstitute_NPC_Trade_Text_5:
 # 66 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
 	.string "Oh...well, if you change your mind, you\n"
 	.string "know where I am!$"
+
+Rivetshore_RangerInstitute_NPC1_Text_0:
+# 74 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	.string "Welcome to the Rivetshore Ranger\n"
+	.string "Institute! This enormous machine right\l"
+	.string "here is the biggest geological\l"
+	.string "monitoring device in all of Cormoria! We\l"
+	.string "can record changes in temperature,\l"
+	.string "precipitation and humidity from miles\l"
+	.string "away.$"
+
+Rivetshore_RangerInstitute_NPC2_Text_0:
+# 79 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	.string "When we recorded the heat signature, we\n"
+	.string "told Director Ravine right away!$"
+
+Rivetshore_RangerInstitute_NPC3_Text_0:
+# 84 "data//maps/Rivetshore_RangerInstitute_Interior/scripts.pory"
+	.string "Were you here yesterday?\p"
+	.string "If you were, you wouldn't have needed\n"
+	.string "the machine to tell you it was a\l"
+	.string "heatwave! It was so hot!$"

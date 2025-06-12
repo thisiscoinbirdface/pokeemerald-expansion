@@ -69,4 +69,19 @@ script Rivetshore_RangerInstitute_NPC_Trade{
 end
 }
 
+//main
+script Rivetshore_RangerInstitute_NPC1{
+    msgbox(format("Welcome to the Rivetshore Ranger Institute! This enormous machine right here is the biggest geological monitoring device in all of Cormoria! We can record changes in temperature, precipitation and humidity from miles away."), MSGBOX_NPC)
+    end
+}
+//left
+script Rivetshore_RangerInstitute_NPC2{
+    msgbox(format("When we recorded the heat signature, we told Director Ravine right away!"), MSGBOX_NPC)
+    end
+}
+//right
+script Rivetshore_RangerInstitute_NPC3{
+    msgbox(format("Were you here yesterday?\pIf you were, you wouldn't have needed the machine to tell you it was a heatwave! It was so hot!"), MSGBOX_NPC)
+    end
+}
 
