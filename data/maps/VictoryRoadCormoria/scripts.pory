@@ -1,4 +1,6 @@
-mapscripts VictoryRoadCormoria_MapScripts{}
+mapscripts VictoryRoadCormoria_MapScripts{
+    MAP_SCRIPT_ON_RESUME {setstepcallback(STEP_CB_ASH)}
+}
 
 
 script VR_SetWeather_Normal{

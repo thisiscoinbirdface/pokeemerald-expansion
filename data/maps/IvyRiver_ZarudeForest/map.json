@@ -415,6 +415,42 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "IvyRiver_Zarude_SaveTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
     }
   ],
   "bg_events": [

@@ -194,6 +194,13 @@ script WinterlilyHollowGym_LeaderBattle {
         speakername("Viniel")
         msgbox(format("Keep your spirits high, {PLAYER}!"))
 
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_A)
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_B)
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_C)
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_D)
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_E)
+        settrainerflag(TRAINER_WINTERLILY_HOLLOW_GYM_F)
+
     }
 
     releaseall

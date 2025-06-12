@@ -5,8 +5,6 @@ mapscripts SilversunCity_Theater_MapScripts{}
 
 
 
-
-
 //LEADER
 script SilversunCity_Theater_Leader{
     lockall
@@ -97,6 +95,13 @@ script SilversunCity_Theater_Leader{
     msgbox(format("It was a pleasure sharing the stage with you. May you elegantly bob and weave through the dance of life, {PLAYER}!"))   
     release
 
+    //set gym trainer flags
+    settrainerflag(TRAINER_SILVERSUNGYM_A)
+    settrainerflag(TRAINER_SILVERSUNGYM_B)
+    settrainerflag(TRAINER_SILVERSUNGYM_C)
+    settrainerflag(TRAINER_SILVERSUNGYM_D)
+
+    //exit        
     fadescreenswapbuffers(FADE_TO_BLACK)
     special(SpawnCameraObject)
     setobjectxy(OBJ_EVENT_ID_CAMERA, 5, 6)

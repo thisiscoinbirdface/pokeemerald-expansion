@@ -325,15 +325,31 @@ PellucaGym_Leader::
 # 278 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	delay 16
 # 281 "data//maps/PellucaCityGym_B1F/scripts.pory"
-	clearflag FLAG_ZARUDE
-# 284 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	speakername PellucaGym_Leader_Text_1
-# 285 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 282 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	msgbox PellucaGym_Leader_Text_8
-# 286 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 283 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	release
-PellucaGym_Leader_1:
+# 286 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_A
+# 287 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_B
+# 288 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_C
 # 289 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_D
+# 290 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_E
+# 291 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_F
+# 292 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_G
+# 293 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_H
+# 294 "data//maps/PellucaCityGym_B1F/scripts.pory"
+	settrainerflag TRAINER_PELLUCA_CITY_GYM_I
+PellucaGym_Leader_1:
+# 297 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	releaseall
 	return
 
@@ -567,7 +583,7 @@ PellucaGym_Leader_Text_7:
 	.string "Lastly, I must give you this.$"
 
 PellucaGym_Leader_Text_8:
-# 285 "data//maps/PellucaCityGym_B1F/scripts.pory"
+# 282 "data//maps/PellucaCityGym_B1F/scripts.pory"
 	.string "The road to the Pokémon Championship\n"
 	.string "is hard, but you're nearly there.\p"
 	.string "The eighth and last Gym Badge is given\n"

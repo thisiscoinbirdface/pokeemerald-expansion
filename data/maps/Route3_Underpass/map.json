@@ -351,6 +351,222 @@
       "var": "VAR_TEMP_C",
       "var_value": "0",
       "script": "Route3_Underpass_SaveGameTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 46,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 46,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 46,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 45,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 45,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 45,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Enable"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 63,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Common_EventScript_MapPopup_Disable"
     }
   ],
   "bg_events": [

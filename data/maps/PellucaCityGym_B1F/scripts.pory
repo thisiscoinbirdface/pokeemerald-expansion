@@ -276,14 +276,22 @@ script PellucaGym_Leader {
         msgbox_delay("Jania", format("With it, you can surf across strong currents like the ones in this gym.\pLastly, I must give you this."))
         giveitem(ITEM_RARE_SHARD)
         delay(16)
-        
-        //quickfix - clear zarude flag
-        clearflag(FLAG_ZARUDE)
-        
+
         //Bye-bye
         speakername("Jania") 
         msgbox(format("The road to the Pokémon Championship is hard, but you're nearly there.\pThe eighth and last Gym Badge is given by Raazi of Rivetshore City.\pHead south from here down the river.\pGood luck, {PLAYER}."))
         release
+
+        ///set trainer flags
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_A)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_B)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_C)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_D)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_E)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_F)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_G)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_H)
+        settrainerflag(TRAINER_PELLUCA_CITY_GYM_I)
 
     }
     releaseall

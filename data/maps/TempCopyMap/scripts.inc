@@ -2131,6 +2131,18 @@ Common_EventScript_Tauros_GotoRoute6::
 	return
 
 
+Common_EventScript_MapPopup_Enable::
+# 1334 "data//maps/TempCopyMap/scripts.pory"
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	end
+
+
+Common_EventScript_MapPopup_Disable::
+# 1339 "data//maps/TempCopyMap/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+	end
+
+
 # 1106 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
 # 1106 "data//maps/TempCopyMap/scripts.pory"
