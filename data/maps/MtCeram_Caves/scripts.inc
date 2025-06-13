@@ -376,13 +376,12 @@ MtCeram_Caves_Greta_Main_Text_3:
 
 MtCeram_Caves_Greta_Main_Text_4:
 # 98 "data//maps/MtCeram_Caves/scripts.pory"
-	.string "My name's Greta. I'm a traveling\n"
-	.string "merchant.\p"
-	.string "Are you a trainer?\n"
-	.string "What's your name?\p"
+	.string "I'm Greta. I'm a traveling merchant!\p"
+	.string "Are you a trainer? What's your name?\p"
 	.string "...\p"
-	.string "{PLAYER}? Nice to meet you! I have to\n"
-	.string "thank you for saving me. Lets see...$"
+	.string "{PLAYER}? Nice to meet you!\n"
+	.string "I have to thank you for saving me.\p"
+	.string "Lets see...$"
 
 MtCeram_Caves_Greta_Main_Text_5:
 # 102 "data//maps/MtCeram_Caves/scripts.pory"
@@ -409,5 +408,5 @@ MtCeram_Caves_Greta_Main_Text_9:
 # 123 "data//maps/MtCeram_Caves/scripts.pory"
 	.string "I travel across all the routes and\n"
 	.string "towns of Cormoria, so I bet we'll meet\l"
-	.string "again - somewhere or the other. Please\l"
-	.string "buy my stuff then!$"
+	.string "again - somewhere or the other.\l"
+	.string "Please buy my stuff then!$"

@@ -32,7 +32,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
     applymovement(7, moves(face_left emote_exclamation_mark))
     waitmovement(0)
     release
-    msgbox(format("Hey kid! The rules are you can't climb unless you have the Cinder Badge. If you can't beat Ariana, you won't be able to handle the heat of the mountain!"))
+    msgbox(format("Hey kid! The rules are you can't climb unless you have the Cinder Badge.\lIf you can't beat Ariana, you can't handle the heat of the mountain!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
     waitmovement(0)
@@ -40,7 +40,7 @@ script CeramBaseCamp_EventScript_ExitTrigger{
 }
 
 script CeramBaseCamp_NPC_Exit{
-    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back. For safety reasons, we don't allow trainers without at least two gym badges to pass."), MSGBOX_NPC)
+    msgbox(format("Mt. Ceram is dangerous because once you enter you can't come back.\lFor safety reasons, trainers without\lat least two gym badges can't pass."), MSGBOX_NPC)
     end
 }
 
@@ -53,7 +53,7 @@ script CeramBaseCamp_NPC1{
 
 //NPC2 - generic
 script CeramBaseCamp_NPC2{
-    msgbox(format("This camp was built by Rivetshore Construction! Old equipment from back then is left here. I remember a Drilbur made its home inside one of these machines and refused to leave! Haha! I wonder if it's still there..."), MSGBOX_NPC)
+    msgbox(format("This camp was built by Rivetshore Construction! Old equipment from back then is left here. I remember a Drilbur made its home inside one of these machines and refused to leave! Haha!\pI wonder if it's still there..."), MSGBOX_NPC)
     end
 }
 
@@ -88,24 +88,31 @@ script CeramBaseCamp_Cyndaquil_Quest_Done{
 script CeramBaseCamp_Cyndaquil_StartQuest{
     //Cyndaquil is training hard
     msgbox(format("C'mon Cyndaquil!"))
+    release
     playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
     applymovement(LOCALID_CYNDA, moves(emote_exclamation_mark jump_in_place_down))
     waitmoncry
+    delay(8)
     msgbox(format("Sigh, it's just not good enough..."))
     release
     delay(20)
     //Ask player for sunny day TM
     faceplayer
-    msgbox(format("We battled Ariana and Cyndaquil's FIRE moves did nothing! Since then we've been trying to learn some other moves but it's just not working...say, would you be able to help us out? Will you find the TM Acid Spray and teach my Cyndaquil?"), MSGBOX_YESNO)
-    
+    message(format("We battled Ariana and Cyndaquil's FIRE moves did nothing! Since then we've been trying to learn some other moves but it's just not working...say, would you be able to help us out?\pWill you find the TM Acid Spray and teach my Cyndaquil?"))
+    waitmessage
+    dynmultichoice(17, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Acid Spray?", "No, sorry!")    
     //result
-    if (var(VAR_RESULT) == 1){
-        msgbox(format("Brilliant! Thank you. We'll be waiting here till you get the TM Acid Spray."))
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("Yeah! Acid Spray is the coolest!\nWe'll be here till you get the TM, okay?"))
         release
         startquest(QUEST_CERAM_CYNDAQUIL)
     } else {
         msgbox(format("Oh well. We'll keep training.\nSigh...it's just not working..."))
+        release
     }
+    applymovement(LOCALID_DUDE, moves(walk_in_place_up))
+    waitmovement(0)
     releaseall
     end
 }
@@ -113,8 +120,9 @@ script CeramBaseCamp_Cyndaquil_StartQuest{
 script CeramBaseCamp_Cyndaquil_QuestInProgress{
 
     //Check TM
-    checkitem(ITEM_EJECT_BUTTON)
+    checkitem(ITEM_TM79)
     if (var(VAR_RESULT) == 1){  //Yes TM
+        faceplayer
         msgbox(format("Did you bring Acid Spray?\pYes?\pAwesome! Let's get to it."))
         release
         delay(20)
@@ -133,17 +141,20 @@ script CeramBaseCamp_Cyndaquil_QuestInProgress{
         msgbox(format("Quiii!!!!!"))
         release
         delay(8)     
-        msgbox(format("Oh no! I'm sorry Cyndaquil...\nI wasted so much time!"))
+        msgbox(format("Oh no! I'm sorry Cyndaquil...I goofed!"))
         release
         delay(8)
         faceplayer
         delay(8)
-        message(format("Well...you still helped us out,\nso we owe you something."))
+        message(format("Well...you still helped us out, so thanks.\nWe don't use these, so do you want one?"))
 
         goto(CeramBaseCamp_Cyndaquil_Reward)
     } else { //refuse to give TM
-        msgbox(format("Please bring the TM Acid Spray for Cyndaquil!"))
+        faceplayer
+        msgbox(format("Please bring the TM Acid Spray\nfor Cyndaquil!"))
         release
+        applymovement(LOCALID_DUDE, moves(walk_in_place_up))
+        waitmovement(0)
     }
 
     applymovement(4, moves(face_up))
@@ -182,18 +193,23 @@ script CeramBaseCamp_Cyndaquil_Reward_Give{
 
 script CeramBaseCamp_Cyndaquil_Reward_End{
     completequest(QUEST_CERAM_CYNDAQUIL)
+    applymovement(LOCALID_DUDE, moves(face_right))    
     delay(16)
     msgbox(format("Sigh...what'll we do now?\p..."))
     delay(8)
     applymovement(LOCALID_DUDE, moves(emote_exclamation_mark))
     waitmovement(0)    
     delay(20)
-    msgbox(format("You're saying Acid Spray is a weak move anyway and WATER or GROUND type moves are better against Ariana?\nSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
+    msgbox(format("You're saying Acid Spray is a weak move anyway and WATER or GROUND type moves are better against Ariana?\pSo we were on the wrong track from the beginning!\pArgh!\pI guess there's more to battling than I thought...I need to be a better trainer!"), MSGBOX_NPC) 
     release
     delay(16)
     applymovement(LOCALID_DUDE, moves(face_up))
     delay(16)
     msgbox(format("Don't worry Cyndaquil - I'm going to learn more about battling. I'm going to become the best trainer and you're going to become the best Pokémon!"))
+    release
+    delay(16)
+    playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)        
+    msgbox(format("Quiii!!!!!"))
     releaseall
     end
 }
@@ -221,14 +237,13 @@ script CeramBaseCamp_NPC5{
     } else {
         lockall
         faceplayer
-        msgbox(format("I found these weird trinkets when I went up Mt. Ceram."))
         goto(CeramBaseCamp_Dude_Reward)
     }
     end
 }
 
 script CeramBaseCamp_Dude_Reward{
-    message(format(" Do you want one?"))
+    message(format("I found these weird trinkets when I went up Mt. Ceram. Do you want one?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "King's Rock", "Quick Claw") 
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_KINGS_ROCK)}
@@ -322,7 +337,10 @@ script CeramBaseCamp_TalonFlame{
 
 
 script CeramBaseCamp_BergmiteTrainer{
-    msgbox(format("Aren't you the trainer with that old archaeologist?\pYeah, you are!\p...\pI feel bad for what I did...\nbut it was an honest mistake!\pWe just...we trained too hard!\nWe want to be the strongest."), MSGBOX_NPC)
+    if (!flag(FLAG_SKIP_BERGER_CERAM)){
+        msgbox(format("Aren't you the trainer with that old archaeologist?\pYeah, you are!\p...\pI feel bad for what I did...\nbut it was an honest mistake!\pWe just...we trained too hard!\nWe want to be the strongest."), MSGBOX_NPC)
+        setflag(FLAG_SKIP_BERGER_CERAM)
+    }
     msgbox_delay("Berger", format("My name's Berger. And Bergmite is my best friend! See you around!"))
     end
 }

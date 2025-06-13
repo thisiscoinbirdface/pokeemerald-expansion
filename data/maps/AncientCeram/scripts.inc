@@ -168,7 +168,7 @@ AncientCeram_EventScript_Gabrielle_Text_1:
 AncientCeram_EventScript_Gabrielle_Text_2:
 # 34 "data//maps/AncientCeram/scripts.pory"
 	.string "If you find a way out of this place,\n"
-	.string "please take me with you.$"
+	.string "please take me with you!$"
 
 AncientCeram_EventScript_Gabrielle_Text_3:
 # 40 "data//maps/AncientCeram/scripts.pory"
@@ -177,8 +177,8 @@ AncientCeram_EventScript_Gabrielle_Text_3:
 
 AncientCeram_EventScript_Gabrielle_Text_4:
 # 46 "data//maps/AncientCeram/scripts.pory"
-	.string "You found another dreamstone? Okay,\n"
-	.string "let's head for it and get out of here.$"
+	.string "You found another dreamstone?\n"
+	.string "Okay, let's get out of here.$"
 
 AncientCeram_EventScript_Exit_Text_0:
 # 70 "data//maps/AncientCeram/scripts.pory"

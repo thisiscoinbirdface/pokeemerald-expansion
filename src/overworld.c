@@ -1126,15 +1126,24 @@ static bool16 NoMusicInSotopolisWithLegendaries(struct WarpData *warp)
 
 static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
 {
-    if (VarGet(VAR_WEATHER_INSTITUTE_STATE))
+    if (FlagGet(FLAG_CERAMBASECAMP_EVIL_BATTLE))
         return FALSE;
-    else if (warp->mapGroup != MAP_GROUP(ROUTE119_WEATHER_INSTITUTE_1F))
+    else if (warp->mapGroup != MAP_GROUP(CERAM_BASE_CAMP_MAIN))
         return FALSE;
-    else if (warp->mapNum == MAP_NUM(ROUTE119_WEATHER_INSTITUTE_1F)
-     || warp->mapNum == MAP_NUM(ROUTE119_WEATHER_INSTITUTE_2F))
+    else if (warp->mapNum == MAP_NUM(CERAM_BASE_CAMP_MAIN))
         return TRUE;
     else
         return FALSE;
+
+    // if (VarGet(VAR_WEATHER_INSTITUTE_STATE))
+    //     return FALSE;
+    // else if (warp->mapGroup != MAP_GROUP(ROUTE119_WEATHER_INSTITUTE_1F))
+    //     return FALSE;
+    // else if (warp->mapNum == MAP_NUM(ROUTE119_WEATHER_INSTITUTE_1F)
+    //  || warp->mapNum == MAP_NUM(ROUTE119_WEATHER_INSTITUTE_2F))
+    //     return TRUE;
+    // else
+    //     return FALSE;
 }
 
 static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
@@ -1160,7 +1169,8 @@ u16 GetLocationMusic(struct WarpData *warp)
     else if (IsInflitratedSpaceCenter(warp) == TRUE)
         return MUS_ENCOUNTER_MAGMA;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
-        return MUS_MT_CHIMNEY;
+//        return MUS_MT_CHIMNEY;
+        return MUS_RG_ROCKET_HIDEOUT;
     else
         return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }

@@ -12,6 +12,7 @@ raw `
 
 mapscripts CeramBaseCamp_Main_MapScripts{}
 //     MAP_SCRIPT_ON_RESUME: CeramBaseCamp_Main_OnResume
+
 //     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
 //         VAR_SUPPLY_DEPOT_STATE, 0: CeramBaseCamp_Main_OnResume    
 //     ]
@@ -19,15 +20,15 @@ mapscripts CeramBaseCamp_Main_MapScripts{}
 
 
 
-// script CeramBaseCamp_Main_OnResume{
-//     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
+script CeramBaseCamp_Main_OnResume{
+    if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
 
-//     } else {
-//         playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)
-//     }
-//     releaseall 
-//     end
-// }
+    } else {
+        playbgm(MUS_AQUA_MAGMA_HIDEOUT, FALSE)
+    }
+    releaseall 
+    end
+}
 
 script CeramBaseCamp_Main_EventScript_EvilTrigger1{
     //Check flag
@@ -70,20 +71,20 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     delay(8)
     speakername("???")
-    msgbox(format("Release our shopkeeper at once! How dare you!"))
+    msgbox(format("Release our shopkeeper at once!\nHow dare you!"))
     release
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     delay(8)
     speakername("???")
-    msgbox(format("Get out of my face, leader! We have business that concerns you not one bit. We're going to take his supplies for our trek up Mt. Ceram!"))
+    msgbox(format("Get out of my face, leader! We have business that concerns you not one bit. We're going to take his supplies for\lour trek up Mt. Ceram!"))
     release
     applymovement(LOCALID_LEADER, moves(jump_in_place_up))
     waitmovement(0)
     delay(8)
 
     speakername("Ariana")
-    msgbox(format("The name's Ariana! And no way! This is MY base camp! You're not harrassing anyone while I'm around!"))
+    msgbox(format("The name's Ariana! And no way!\nThis is MY base camp! You're not harrassing anyone while I'm around!"))
     release
     delay(8)
     speakername("???")
@@ -98,7 +99,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)    
     delay(24)
     speakername("Ariana")
-    msgbox(format("Hey - you! You look like a trainer. I need your help. These people are trying to steal the shopkeeper's supplies.\nWe have to stop them!\pI'll take the boss. You deal with the one on the right for me!"))
+    msgbox(format("Hey - you! You look like a trainer.\nI need your help.\pThese people are trying to steal the supplies here. We have to stop them!\pI'll take the boss. You deal with the\ngrunt on the right for me!"))
     release
 
     //Player walks up and deals with grunt
@@ -128,13 +129,13 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     release
     delay(8)
     speakername("???")
-    msgbox(format("But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, you deal with this pest while I put the leader in her place. And you better win this time!"))
+    msgbox(format("But there is a dreamstone sitting right on top of Mt. Ceram, and these people are in the way! Gabrielle, handle this pest while I put the leader in her place.\pAnd you better win this time!"))
     release        
     applymovement(LOCALID_GRUNT4, moves(face_down))
     waitmovement(0)
     delay(16)    
     speakername("Gabrielle")
-    msgbox(format("You heard that...what was your name again? {PLAYER}? Yeah, {PLAYER}! I'm not going to lose to you this time!"))
+    msgbox(format("You heard that...what was your name again?\p{PLAYER}?\pYeah, {PLAYER}! I'm not going to lose to you this time!"))
     release 
 
     //Set all sprites facing each other
@@ -150,8 +151,12 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_BOSS, moves(jump_in_place_down))
     waitmovement(0)
     speakername("???")
-    msgbox(format("Agh! You and your stupid Tauros! I just didn't have my Pokémon with me."))
+    msgbox(format("Agh! You and your stupid Tauros!\nI just didn't have any good Pokémon."))
     release
+    delay(16)
+    applymovement(LOCALID_LEADER, moves(jump_in_place_up))
+    waitmovement(0)   
+    delay(16)
     speakername("Ariana")
     msgbox(format("Serves you right! Now move over and give our shopkeeper back."))
     release
@@ -165,7 +170,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     delay(16)    
     speakername("???")
-    msgbox(format("You useless, incompetent fool! Argh! How can we accomplish anything with such terrible support!"))   
+    msgbox(format("You useless, incompetent fool!\nHow can we accomplish anything\lwith such terrible support!"))   
     release 
     applymovement(LOCALID_BOSS, moves(face_down))
     applymovement(LOCALID_GRUNT4, moves(face_down))
@@ -180,7 +185,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_GRUNT4, moves(walk_left *2 walk_down *2 walk_right * 10))
     waitmovement(0)
     
-    fadedefaultbgm
+    fadenewbgm(MUS_RUSTBORO)
 
     //Shopkeeper thanks both
     //ARIAN says the boss was powerful...I can't let you go alone without at least getting the badge
@@ -197,7 +202,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     speakername("Ariana")
     msgbox(format("They didn't harm you right?"))
     speakername("Shopkeeper")
-    msgbox(format("No they didn't. Thank you Ariana! And you too, trainer. I owe you one. Stop by our counter downstairs for trekking supplies later on."))
+    msgbox(format("No they didn't. Thank you Ariana! And you too, trainer. I owe you one.\lPlease stop by our counter downstairs for trekking supplies later on!"))
     release
     applymovement(LOCALID_SHOPKEEPER2F, moves(walk_down walk_left walk_down *2 walk_right * 10))
     waitmovement(0)
@@ -207,13 +212,13 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     applymovement(LOCALID_LEADER, moves(face_right))
     waitmovement(0)
     speakername("Ariana") 
-    msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pDreamstones? I thought those were just rumours."))
+    msgbox(format("That boss was really tough!\pHmm? You've met these thugs before? And you're also going to Mt. Ceram? What's up there?\pThere's a dreamstone up there?\nI thought those were just rumours."))
     speakername("Ariana") 
     msgbox(format("They're connected to Professor Tenebris' disappearance? \pI gotta do something - Professor Tenebris gave me my Tauros!"))
     speakername("Ariana") 
     msgbox(format("Those guys seem to be after the dreamstone too...but I can't let you go up the mountain as you are now."))
     speakername("Ariana") 
-    msgbox(format("{PLAYER}, was it? Mt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing. If you can beat me, I'll be able to send you up the hill with confidence.\pSee you around, {PLAYER}!"))
+    msgbox(format("{PLAYER}, was it?\pMt. Ceram is filled with dangerous Pokémon. The rules around here are you can't climb unless you have my gym badge and my blessing.\pIf you can beat me, I'll be able to send you up the hill with confidence.\pSee you around, {PLAYER}!"))
     release
 
     //End encounter
@@ -239,22 +244,22 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
 
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt1 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Hey, where do you think you're going kid? This Supply Depot is under Team Somber's control!"), format("Gah! I lost!"))
-    msgbox(format("We're here to collect supplies for the climb up Mt. Ceram!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT1, format("Where do you think you're going kid?\nThis Supply Depot is under Team Somber's control now!"), format("Gah! I lost!"))
+    msgbox(format("We're here to collect supplies for\nthe climb up Mt. Ceram!"))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt2 {
-    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format("We're going to steal all the climbing supplies! You can't stop us!"), format("I can't believe it!"))
-    msgbox(format("You just got lucky. I'll crush you if I ever see you again!"))
+    trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT2, format("We're going to steal all the climbing supplies and you can't stop us!"), format("I can't believe it!"))
+    msgbox(format("You just got lucky. I'll crush you if\nI ever see you again!"))
     release
     end
 }
 
 script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
     trainerbattle_single(TRAINER_CERAMBASECAMP_GRUNT3, format("How did you get this far?\pNo matter - you can't stop us from taking the supplies! Hahaha!"), format("No! My Pokémon were too weak!"))
-    msgbox(format("You're too late - the boss is already with the shopkeeper."))
+    msgbox(format("You're too late - the boss is already with the shopkeeper!"))
     release
     end
 }
@@ -276,7 +281,7 @@ script CeramBaseCamp_Main_TrainerBattle_Grunt3 {
 script CeramBaseCamp_Main_Pokemart_EventScript_Clerk{
     lock
 	faceplayer
-    msgbox(format("Hey {PLAYER}! Here you can get mountain-climbing supplies!"))
+    msgbox(format("Hey {PLAYER}! You can get all our mountain climbing supplies here!"))
 	message(gText_HowMayIServeYou)
 	waitmessage
 	pokemart(CeramBaseCamp_Main_Pokemart_Inventory)
@@ -289,7 +294,6 @@ script CeramBaseCamp_Main_Pokemart_EventScript_Clerk{
 mart CeramBaseCamp_Main_Pokemart_Inventory{
     ITEM_POKE_BALL
     ITEM_REPEL
-    ITEM_ESCAPE_ROPE
     ITEM_FRESH_WATER
     ITEM_SODA_POP
     ITEM_LAVA_COOKIE
@@ -316,10 +320,10 @@ mart CeramBaseCamp_Main_Pokemart_Inventory{
 script CeramBaseCamp_Main_NPC1{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("Centiskorch and Scolipede are fiercely territorial. They keep fighting each other in Mt. Ceram."), MSGBOX_NPC)
+        msgbox(format("Ariana is so cool! She's the one that holds this base camp together.\lBut she's so scary in battle! "), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("Who are these Team Somber people? They act all high and mighty, but they're really just harrassing innocent folk."), MSGBOX_NPC)
+        msgbox(format("Who are these Team Somber people?\nThey act all high and mighty, but they're just harrassing innocent folk."), MSGBOX_NPC)
     }
     end
 }
@@ -337,7 +341,7 @@ script CeramBaseCamp_Main_NPC2{
 
 script CeramBaseCamp_Main_Smeargle{
     playmoncry(SPECIES_SMEARGLE, CRY_MODE_NORMAL)
-    msgbox(format("Smeargle looks resolute. What is it thinking?"), MSGBOX_NPC)
+    msgbox(format("Smeargle looks resolute.\nWhat's it thinking?"), MSGBOX_NPC)
     end
 }
 
@@ -348,7 +352,7 @@ script CeramBaseCamp_Main_NPC3{
         if (flag(FLAG_CERAMBASECAMP_MAIN_BERRY)){
             msgbox(format("Potions are all well and good, but berries can be used in battle!"), MSGBOX_NPC)
         } else {
-            msgbox(format("Berries don't grow here, so I brought my own! Would you like some?"), MSGBOX_NPC)
+            msgbox(format("Berries don't grow in this heat, so I brought my own! Would you like some?"), MSGBOX_NPC)
             giveitem(ITEM_OCCA_BERRY, 5)
             release
             setflag(FLAG_CERAMBASECAMP_MAIN_BERRY)
@@ -365,10 +369,10 @@ script CeramBaseCamp_Main_NPC3{
 script CeramBaseCamp_Main_NPC4{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("This isn't really a town, so the supply depot and the management office-cum-gym is all we have."), MSGBOX_NPC)
+        msgbox(format("This isn't really a town, so the supply depot and the management office and gym is all we have."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
-        msgbox(format("Shh! Don't look here! You'll attract their attention!"), MSGBOX_NPC)
+        msgbox(format("Shh! Don't look here, idiot child!\nYou'll attract their attention!"), MSGBOX_NPC)
     }
     end
 }
@@ -384,13 +388,13 @@ script CeramBaseCamp_Main_NPC5{
         //Regular case
         lockall
         faceplayer
-        showmonpic(SPECIES_PETILIL, 1, 3)
-        msgbox(format("I want to gift my sister a Petilil. It's her favourite Pokémon! But I couldn't find any on Route 4."))
+        showmonpic(SPECIES_PETILIL, 10, 3)
+        msgbox(format("I want to gift my sister a Petilil.\nIt's her favourite Pokémon!\lBut I couldn't find any on Route 4."))
         release
         hidemonpic
         delay(24)
-        showmonpic(SPECIES_PONYTA_GALAR, 1, 3)
-        msgbox(format("If you have one, will you trade it for my Ponyta?"), MSGBOX_YESNO)
+        showmonpic(SPECIES_PONYTA_GALAR, 10, 3)
+        msgbox(format("If you have one, will you trade it for\nmy Ponyta?"), MSGBOX_YESNO)
         hidemonpic
         if (var(VAR_RESULT) == 1){
             //do trade
@@ -410,8 +414,7 @@ script CeramBaseCamp_Main_NPC5{
 
             //Decline if nothing chosen
             if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
-               msgbox(format("If you have one, will you trade it for my Ponyta?"))
-               releaseall
+               msgbox(format("Oh...well, if you change your mind,\nyou know where I am!"), MSGBOX_NPC)
                end          
             }
 
@@ -431,12 +434,12 @@ script CeramBaseCamp_Main_NPC5{
 
             } else {
                 //else (mon isn't nymble)
-                msgbox(format("Hey, this isn't a Dewpider! I'm not stupid, you know?"), MSGBOX_NPC)
+                msgbox(format("Hey, this isn't a Petilil!\nI'm not stupid, you know?"), MSGBOX_NPC)
             }
 
         } else {
             //no trade
-            msgbox(format("Oh...well, if you change your mind, you know where I am!"), MSGBOX_NPC)
+            msgbox(format("Oh...well, if you change your mind,\nyou know where I am!"), MSGBOX_NPC)
         }
     } else {
         //When Team Somber is there
@@ -477,7 +480,7 @@ script CeramBaseCamp_Main_NPC5{
 script CeramBaseCamp_Main_NPC6{
     if (flag(FLAG_CERAMBASECAMP_EVIL_BATTLE)){
         //Regular case
-        msgbox(format("On the other side of Mt. Ceram is Silversun City. I hear the trek down from the summit is tough, because the native Centiskorch and Scolipede fight each other."), MSGBOX_NPC)
+        msgbox(format("On the other side of Mt. Ceram is Galecrest City. But I hear the trek down from the summit is impossible,\lbecause the native Centiskorch and Scolipede fight each other."), MSGBOX_NPC)
     } else {
         //When Team Somber is there
         msgbox(format("I can't wait for Ariana to put these crooks in their place!"), MSGBOX_NPC)

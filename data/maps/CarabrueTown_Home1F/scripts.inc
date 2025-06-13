@@ -377,7 +377,8 @@ CarabrueTown_Home1F_EventScript_MomGeneric_Text_2:
 
 CarabrueTown_Home1F_EventScript_MomGeneric_Text_3:
 # 144 "data//maps/CarabrueTown_Home1F/scripts.pory"
-	.string "Mom's Nuzkit has tons of cheats.\n"
+	.string "Mom's Nuzkit offers additional\n"
+	.string "quality of life features.\l"
 	.string "For a classic experience,\l"
 	.string "you should go without it!$"
 

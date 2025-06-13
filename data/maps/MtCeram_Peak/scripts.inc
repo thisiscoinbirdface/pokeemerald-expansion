@@ -767,8 +767,8 @@ MtCeramPeak_MainEvent_Cutscene_Text_9:
 	.string "nothing stopping Team Somber from\l"
 	.string "having absolute control!\p"
 	.string "A noble goal, is it not, {PLAYER}?\p"
-	.string "And you! You dare to get in our way, time\n"
-	.string "and again! No more!$"
+	.string "And you! You dare to get in our way,\n"
+	.string "time and again! No more!$"
 
 MtCeramPeak_MainEvent_Battle_Text_0:
 # 145 "data//maps/MtCeram_Peak/scripts.pory"
@@ -776,9 +776,9 @@ MtCeramPeak_MainEvent_Battle_Text_0:
 
 MtCeramPeak_MainEvent_Battle_Text_1:
 # 146 "data//maps/MtCeram_Peak/scripts.pory"
-	.string "I, Moxie, Head of the Team Somber\n"
-	.string "Research Wing, will end your meddling\l"
-	.string "once and for all!$"
+	.string "I, Moxie, head of the Team Somber\n"
+	.string "Research Wing, will end your silly\l"
+	.string "meddling once and for all!$"
 
 MtCeramPeak_MainEvent_Battle_Text_2:
 # 150 "data//maps/MtCeram_Peak/scripts.pory"
@@ -796,10 +796,10 @@ MtCeramPeak_MainEvent_Battle_Text_4:
 
 MtCeramPeak_MainEvent_Battle_Text_5:
 # 168 "data//maps/MtCeram_Peak/scripts.pory"
-	.string "Gabrielle! You worthless fool! Be of use\n"
-	.string "for a change and go grab the\l"
-	.string "dreamstone. Hurry up before {PLAYER}\l"
-	.string "gets it!$"
+	.string "Gabrielle! You worthless fool!\n"
+	.string "Be of some use for a change and go\l"
+	.string "grab the dreamstone.\p"
+	.string "Hurry up before {PLAYER} gets it!$"
 
 MtCeramPeak_MainEvent_Battle_Text_6:
 # 172 "data//maps/MtCeram_Peak/scripts.pory"
@@ -832,8 +832,8 @@ MtCeramPeak_MainEvent_Battle_Text_12:
 
 MtCeramPeak_MainEvent_Battle_Text_13:
 # 213 "data//maps/MtCeram_Peak/scripts.pory"
-	.string "Boss...I feel sick. What's happening? Is\n"
-	.string "this supposed to happen?$"
+	.string "Boss...I feel sick. What's happening?\n"
+	.string "Is this supposed to happen?$"
 
 MtCeramPeak_MainEvent_Battle_Text_14:
 # 218 "data//maps/MtCeram_Peak/scripts.pory"
@@ -858,8 +858,7 @@ MtCeramPeak_MainEvent_Battle_Text_17:
 MtCeramPeak_MainEvent_Battle_Text_18:
 # 261 "data//maps/MtCeram_Peak/scripts.pory"
 	.string "This is bad...come on you two! Let's get\n"
-	.string "out of here before this mountain\l"
-	.string "erupts!$"
+	.string "out before this mountain erupts!$"
 
 MtCeramPeak_MainEvent_Battle_Text_19:
 # 270 "data//maps/MtCeram_Peak/scripts.pory"

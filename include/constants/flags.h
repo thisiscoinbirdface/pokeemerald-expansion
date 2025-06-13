@@ -277,9 +277,13 @@
 #define FLAG_RANGER_SELECTED_MON_ONE         0x147
 #define FLAG_RANGER_SELECTED_MON_TWO         0x148
 #define FLAG_RANGER_SELECTED_MON_THREE       0x149
-#define FLAG_WONDER_CARD_UNUSED_14           0x14A
+#define FLAG_BERGER_CERAM                    0x14A
 #define FLAG_WONDER_CARD_UNUSED_15           0x14B
-
+#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1   0xC2 
+#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2   0xC3 
+#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3   0xC4 
+#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4   0xC5 
+#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5   0xC6 
 
 
 //Post-game
@@ -441,11 +445,6 @@
 #define FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F  0xBF
 #define FLAG_RECEIVED_SUN_STONE_MOSSDEEP     0xC0
 #define FLAG_WALLY_SPEECH                    0xC1
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_1   0xC2 // Leftover from the RS version of Puzzle Room 7, functionally unused
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_2   0xC3 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_3   0xC4 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_4   0xC5 //
-#define FLAG_TRICK_HOUSE_PUZZLE_7_SWITCH_5   0xC6 //
 #define FLAG_RUSTURF_TUNNEL_OPENED           0xC7
 #define FLAG_RECEIVED_RED_SCARF              0xC8
 #define FLAG_RECEIVED_BLUE_SCARF             0xC9
@@ -1620,7 +1619,7 @@
 #define FLAG_SKIP_SILVERSUN_CUTSCENE                (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_SKIP_MIRROH_CUTSCENE                   (SYSTEM_FLAGS + 0x9B) // Unused Flag
 #define FLAG_SKIP_FINALE_CUTSCENE                   (SYSTEM_FLAGS + 0x9C) // Unused Flag
-#define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
+#define FLAG_SKIP_BERGER_CERAM                      (SYSTEM_FLAGS + 0x9D) // Unused Flag
 #define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
 #define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
 #define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag

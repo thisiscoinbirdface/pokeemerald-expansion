@@ -91,7 +91,7 @@ script MtCeram_Eavesdrop_Trigger0{
     delay(16)
 
     speakername("Kohla")
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("{PLAYER} - what are you doing?\nCome here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 2 walk_up face_right))
@@ -110,7 +110,7 @@ script MtCeram_Eavesdrop_Trigger1{
     delay(16)
 
     speakername("Kohla")
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("{PLAYER} - what are you doing?\nCome here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 3 walk_up face_right))
@@ -129,7 +129,7 @@ script MtCeram_Eavesdrop_Trigger2{
     delay(16)
 
     speakername("Kohla")
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("{PLAYER} - what are you doing?\nCome here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 4 walk_up face_right))
@@ -148,7 +148,7 @@ script MtCeram_Eavesdrop_Trigger3{
     delay(16)
 
     speakername("Kohla")
-    msgbox(format("{PLAYER} - what are you doing? Come here, you idiot!"))
+    msgbox(format("{PLAYER} - what are you doing?\nCome here, you idiot!"))
     release
     //Walk to Kohla
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_left * 5 walk_up face_right))
@@ -162,6 +162,8 @@ script MtCeram_Eavesdrop_Trigger3{
 script MtCeram_EventScript_Eavesdrop{
     lockall
     applymovement(LOCALID_FOOTKOHLA, moves(face_right))
+    waitmovement(0)
+    delay(16)
     //Koha text
     speakername("Kohla")
     msgbox(format("I've been spying on those two Team Somber Grunts. Don't make a sound!"))
@@ -223,7 +225,7 @@ script MtCeram_EventScript_Eavesdrop{
     waitmovement(0)
     delay(16)
     speakername("Kohla")
-    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility. Something you wouldn't know about.\p...\pWhat? You're coming too? Hah! We're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
+    msgbox(format("Heard that? I've got to get that dreamstone before Team Somber!\pThat's called responsibility.\nSomething you wouldn't know about\p...\pWhat? You're coming too?\pHah!\pWe're not buddies, {PLAYER}. I'm the one and only Ace Rookie, and I've told you before - I'm strong enough alone.\pI don't need your help, chum!"))
     release
 
     //Kohla walk off
@@ -301,7 +303,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
     speakername("Kohla")
-    msgbox(format("I'm not a kid! I'm the Ace Rookie of the Detective Academy, and I'm not going to let you steal the dreamstone!"))
+    msgbox(format("I'm not a kid! I'm the Ace Rookie of the Detective Academy, and I'm not going\lto let you steal the dreamstone!"))
     release    
     applymovement(LOCALID_TOPGRUNT1, moves(emote_question_mark))
     applymovement(LOCALID_TOPGRUNT2, moves(emote_question_mark))
@@ -319,9 +321,12 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPKOHLA, moves(emote_exclamation_mark))
     waitmovement(0)
     speakername("Grunt B")
-    msgbox(format("The help arrives. But you're both just kids! Hahaha!"))
+    msgbox(format("Oh look - the help arrives.\nBut you're both just kids! Hahaha!"))
     release
-
+    delay(16)
+    applymovement(LOCALID_TOPKOHLA, moves(jump_in_place_down))
+    waitmovement(0)    
+    delay(16)
     //Kohla says he doesn't need help
     speakername("Kohla")
     msgbox(format("{PLAYER}, I told you I don't need your help! You'll just get in the way."))
@@ -346,7 +351,7 @@ script MtCeram_EventScript_BeforePeakBattle{
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Hahaha! Your ace was a pushover, Ace Rookie!"))
+    msgbox(format("Your ace was a pushover, Ace Rookie!"))
     release  
     fadescreenswapbuffers(FADE_FROM_BLACK)
     playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
@@ -372,11 +377,11 @@ script MtCeram_EventScript_BeforePeakBattle{
     applymovement(LOCALID_TOPGRUNT2, moves(jump_in_place_down emote_exclamation_mark))
     waitmovement(0)    
     speakername("Grunt B")
-    msgbox(format("Hey, aren't you the trainer that beat Gabrielle?"))
+    msgbox(format("Wait a second...aren't you the trainer that beat Gabrielle?"))
     release
     delay(8)
     speakername("Grunt A")
-    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\pOn the other hand, we're the real deal!\pLet's see what you've got!"))
+    msgbox(format("Hey - yeah! But Gabrielle's just a loser.\nBut we're the real deal!\pLet's see what you've got!"))
     release
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
@@ -404,6 +409,8 @@ script MtCeram_EventScript_BeforePeakBattle{
     removeobject(LOCALID_TOPGRUNT2)
     removeobject(LOCALID_GAB)
     removeobject(LOCALID_TOPKOHLA)
+    playse(SE_EXIT)
+    waitse
     fadescreenswapbuffers(FADE_FROM_BLACK)
 
     fadedefaultbgm
@@ -439,7 +446,7 @@ script MtCeram_TrainerBattle_A {
 
 script MtCeram_TrainerBattle_B {
     trainerbattle_single(TRAINER_MTCERAM_B, format("I'm a firefighter! I'm training against all the FIRE types here. You look like you could use a dowsing of water!"), format("You can't be extinguished!"))
-    msgbox(format("Fire safety starts with awareness - stay safe, stay prepared!"))
+    msgbox(format("Fire safety starts with awareness.\nStay safe, stay prepared!"))
     release
     end
 }
@@ -454,7 +461,7 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair got singed in the heat!"), format("I should go back down."))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair got singed in the heat!"), format("My sheep and I should go back down!"))
     msgbox(format("Pokémon Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end
@@ -469,7 +476,7 @@ script MtCeram_TrainerBattle_GRUNT1 {
 
 
 script MtCeram_TrainerBattle_GRUNT2 {
-    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us!\pWait, you're not a grunt.\nGet out of here!"), format("I'm going to be punished for this!"))
+    trainerbattle_single(TRAINER_MTCERAM_GRUNT2, format("We're going to get the dreamstone and Team Somber will reward us!\pWait, you're not a grunt!.\nGet out of here!"), format("I'm going to be punished for this!"))
     msgbox(format("I love Team Somber! No wait...\nI love money!"))
     release
     end
@@ -499,7 +506,7 @@ script MtCeram_EventScript_NPC1{
 
 //Change this guys dialogue
 script MtCeram_EventScript_NPC2{
-    msgbox(format("If you're here, that means you've got two gym badges, right?\pTo take part in the Pokémon Championship, you'll need all eight badges."), MSGBOX_NPC)
+    msgbox(format("If you're here, that means you've got two gym badges, right?\pTo enter the Pokémon Championship, you'll need all eight badges."), MSGBOX_NPC)
     end
 }
 
@@ -508,7 +515,7 @@ script MtCeram_EventScript_NPC3{
     if (flag(FLAG_MT_CERAM_FRESH_WATER)){
         msgbox(format("Oof! This place is unbearably hot!"), MSGBOX_NPC)   
     } else {
-        msgbox(format("Oof! This place is unbearably hot! Don't forget to stay hydrated!"), MSGBOX_NPC)
+        msgbox(format("Oof! This place is unbearably hot!\nDon't forget to stay hydrated!"), MSGBOX_NPC)
         giveitem(ITEM_FRESH_WATER)
         release
         setflag(FLAG_MT_CERAM_FRESH_WATER)
@@ -539,7 +546,7 @@ script MtCeram_EventScript_NPCNurse{
 script MtCeram_EventScript_Gabrielle{
     lockall
     speakername("Gabrielle")
-    msgbox(format("Why do I have to be punished every time? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team.\pIt's not fair!\p..."))
+    msgbox(format("Why do I always have to be punished? I'm trying my best! I don't want to steal other people's stuff but I'm still doing it for the team.\pIt's not fair!\p..."))
     release
     delay(30)
     applymovement(5, moves(emote_exclamation_mark))
@@ -548,8 +555,9 @@ script MtCeram_EventScript_Gabrielle{
     faceplayer
     delay(20)
     speakername("Gabrielle")
-    msgbox(format("Don't look at me like that! You don't know what its like..."))
+    msgbox(format("Don't look at me like that!\nYou don't know what its like..."))
     release
+    delay(16)
     applymovement(5, moves(face_left))
     waitmovement(0)
     releaseall

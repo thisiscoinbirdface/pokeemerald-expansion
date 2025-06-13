@@ -62,6 +62,7 @@ script GastreeGym_EventScript_Victory{
     message(format("{PLAYER} received the Hard Badge from Inger."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
+    release
     playbgm(MUS_RG_GYM, FALSE)    
 
     //Describe the badge features (use HMs, allow pokemon control etc.)

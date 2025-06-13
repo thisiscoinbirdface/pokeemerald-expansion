@@ -95,7 +95,7 @@ script MtCeram_Caves_Greta_Main{
     speakername("???")
     msgbox(format("Thank you so much! I forgot my Pokémon at home and couldn't do anything! People at the Ceram Base Camp told me that the Sizzlipede and Venipede fight all the time...that's what I get for not taking them seriously!"))
     speakername("Greta")
-    msgbox(format("My name's Greta. I'm a traveling merchant.\pAre you a trainer?\nWhat's your name?\p...\p{PLAYER}? Nice to meet you! I have to thank you for saving me. Lets see..."))
+    msgbox(format("I'm Greta. I'm a traveling merchant!\pAre you a trainer? What's your name?\p...\p{PLAYER}? Nice to meet you!\nI have to thank you for saving me.\pLets see..."))
     release
     delay(16)
     speakername("Greta")
@@ -120,7 +120,7 @@ script MtCeram_Caves_Greta_Main{
     } 
 
     speakername("Greta")
-    msgbox(format("I travel across all the routes and towns of Cormoria, so I bet we'll meet again - somewhere or the other. Please buy my stuff then!"))
+    msgbox(format("I travel across all the routes and towns of Cormoria, so I bet we'll meet again - somewhere or the other.\lPlease buy my stuff then!"))
     release
     setflag(FLAG_CERAM_CAVES_GRETA_MEETING)
 

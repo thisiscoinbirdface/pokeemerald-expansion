@@ -18,11 +18,11 @@ script CeramBaseCampGym_Red{
         }
     } else { 
         if (flag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)){
-            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon. An Occa Berry might come in useful.\pNow go get 'em, champ-in-the-making!"), MSGBOX_NPC)
+            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon.\lAn Occa Berry might come in useful.\pNow go get 'em, champ-in-the-making!"), MSGBOX_NPC)
         } else {
-            msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym! First, have some water."))
+            msgbox(format("Welcome to the Ceram Base Camp Management Office And Gym!\lFirst, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon. An Occa Berry might come in useful.\pNow go get 'em, champ-in-the-making!"))
+            msgbox(format("The Gym Leader Ariana, who also manages the base camp, specialises in intimidating FIRE type Pokémon.\lAn Occa Berry might come in useful.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_CERAMBASECAMPGYM_SPENSER_WATER)
         }
     }
@@ -85,7 +85,7 @@ script CeramBaseCampGym_Red_Reward_End{
 script CeramBaseCampGym_Guard{
     lockall
     faceplayer
-    msgbox(format("Arian's got a busy schedule. She sets up all her appointments in advance."))
+    msgbox(format("Arian's got a busy schedule. She sets\nup all her appointments in advance."))
     releaseall
 }
 
@@ -105,14 +105,14 @@ script CeramBaseCampGym_NPC_B{
 
 
 script CeramBaseCampGym_TrainerBattle_A {
-    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, format("Who would've thought managing a basecamp would mean so much paperwork?"), "Back to my work!")
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_A, format("Who would've thought managing a base camp would mean so much work?"), "Back to my work!")
     msgbox(format("The base camp doubling as a Gym is just extra work for the employees.\pWe didn't even get a raise!"))
     release
     end
 }
 
 script CeramBaseCampGym_TrainerBattle_B {
-    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_B, format("I've been waiting all day for an appointment. I'm so frustrated that I need to let it out!"), "At least I've cooled down a bit.")
+    trainerbattle_single(TRAINER_CERAMBASECAMPGYM_B, format("I've been waiting all day for an appointment. I'm so frustrated that\lI need to let it out!"), "At least I've cooled down a bit.")
     msgbox(format("All this bureaucracy is mind-numbing."))
     release
     end
@@ -126,7 +126,7 @@ script CeramBaseCampGym_GuardTrigger{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox(format("Hold on! You can't have a meeting with the manager without an appointment. Please come back once you have a signed Appointment Letter."))
+    msgbox(format("Hold on! You can't have a meeting with the manager without an appointment.\lPlease come back once you have a signed Appointment Letter."))
     release
     applymovement(LOCALID_GUARD, moves(face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
@@ -153,11 +153,11 @@ script CeramBaseCampGym_EventScript_NPC_LetterPrint{
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_C, "I'm better with spreadsheets!")
 
         //print letter
-        msgbox(format("Very good! Well then, let me do my job. Here you go!"))
+        msgbox(format("Very good! Well then, let me do my job.\p...\pHere you go!"))
         //Get item
         giveitem(ITEM_APPOINTMENT_LETTER)
         //But you need a signature
-        msgbox(format("But this letter won't be enough without the approval of the assistant manager. He sits in the basement. Get this letter signed by him."))
+        msgbox(format("But this letter won't be enough without the approval of the assistant manager. He sits in the basement. Go and\lget this letter signed by him."))
     }
     releaseall
 }
@@ -170,14 +170,14 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
     } else {
         if (checkitem(ITEM_APPOINTMENT_LETTER)){
 
-            msgbox(format("So you got an Appointment Letter and want my signature on it? Well...I wouldn't mind doing it for a small token of appreciation...say...500?"))
+            msgbox(format("So you got an Appointment Letter\nand want my signature on it?\pWell...I wouldn't mind doing it for a small token of appreciation...say...¥500?"))
             release
             showmoneybox(0, 0)
             msgbox(format("Will you slip the money under the table?"), MSGBOX_YESNO)
 
             if(var(VAR_RESULT) == 0){
                 hidemoneybox
-                msgbox(format("You'll have to do it the way everyone else does it then!"))
+                msgbox(format("Fine - you'll have to do it the way everyone else does it then!"))
                 //battle
                 trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_D, "I wish you had just paid up!")                
             } else {
@@ -189,6 +189,7 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
             }
 
             msgbox(format("Alright, I'll sign the letter."))
+            playfanfare(MUS_LEVEL_UP)
             msgbox(format("{PLAYER} got the Appointment Letter signed by the assistant manager."))
             release
             setflag(FLAG_CERAMBASECAMPGYM_APPOINTMENTLETTER)
@@ -223,27 +224,33 @@ script CeramBaseCampGym_EventScript_NPC_Signature{
 
 script CeramBaseCampGym_LeaderBattle {
 
-    lockall
-    faceplayer
+
 
     if (flag(FLAG_BADGE02_GET)){
+        lockall
+        faceplayer        
         speakername("Ariana")
         msgbox(format("That was a great battle. You've earned my confidence. Go get 'em, {PLAYER}!"))
     } else { //else do the battle
+        lockall
+
         call(Common_EventScript_SaveGameBeforeBattle)
-        
+
+        faceplayer
+
         speakername("Ariana")
         msgbox(CeramBaseCampGym_Text_Intro)
         trainerbattle_no_intro(TRAINER_CERAMBASECAMPGYM_LEADER, CeramBaseCampGym_Text_Defeated)
         
         //Receive the badge
-        msgbox(format("I could not be more pleased, {PLAYER}. The way you stand, you might be able to handle yourself on Mt. Ceram. I present you with the Cinder Badge."))
-        msgbox(format("{PLAYER} received the Cinder Badge from Ariana."))
+        msgbox(format("I could not be more pleased, {PLAYER}. The way you stand, you might be able\lto handle yourself on Mt. Ceram.\pI present you with the Cinder Badge."))
+        delay(16)
+
+        message(format("{PLAYER} received the Cinder Badge from Ariana."))
+        call(Common_EventScript_PlayGymBadgeFanfare)
         release
         setflag(FLAG_BADGE02_GET)
 
-        //Play gym badge fanfare
-        call(Common_EventScript_PlayGymBadgeFanfare)
 
         //Describe the badge features (use HMs, allow pokemon control etc.)
         speakername("Ariana")
@@ -255,7 +262,7 @@ script CeramBaseCampGym_LeaderBattle {
         giveitem(ITEM_RARE_SHARD)
 
         speakername("Ariana")
-        msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a statue close to Route 4, so why don't you use these there?"))
+        msgbox(format("Since this is your second badge, you must know what these shards do by now. There's a statue close to Route 4,\lso why don't you use these there?"))
         release
 
         delay(16)
@@ -265,7 +272,7 @@ script CeramBaseCampGym_LeaderBattle {
         msgbox(format("I hope you manage to find the dreamstone and Professor Tenebris.\pI wonder if I can do something...\nHere, maybe you could use this."))
         release
         giveitem(ITEM_TM79)
-        msgbox_delay("Ariana", format("I got this for Sizzlipede but it can't learn Acid Spray!\pI don't know why Team Somber is after the dreamstones, but be careful if you run into them!\pGood luck, {PLAYER}!"))
+        msgbox_delay("Ariana", format("This is Acid Spray. I got it for Sizzlipede but it can't learn Acid Spray!\pI don't know why Team Somber is\lafter the dreamstones, but be careful\lif you run into them!\pGood luck, {PLAYER}!"))
 
         releaseall
         end        
@@ -277,7 +284,7 @@ script CeramBaseCampGym_LeaderBattle {
 
 
 text CeramBaseCampGym_Text_Intro{
-    format("Who's my next appointment? Ah! It's you, {PLAYER}. A pleasant surprise.\pI'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors.\pIt's good to have a chance to battle for a change!")
+    format("Who's my next appointment? Ah!\nIt's you, {PLAYER}. A pleasant surprise.\pI'm sick of all this work. This office is supposed to be a Gym too, but we get very few trainers. Most people that come are hikers or collectors.\pIt's good to have a chance to battle for a change!")
 }
 
 text CeramBaseCampGym_Text_Defeated{

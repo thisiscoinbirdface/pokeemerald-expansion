@@ -36,7 +36,7 @@ script GalecrestCity_OnFrame{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     speakername("Gabrielle")
-    msgbox(format("...have we left that place?\pYes! Yes we have! I'm so relieved. I've never been so happy to see a city before!\pThis must be Galecrest City. The Detective Academy is here. I suppose you'll be headed there. Just head north from here...\p...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies! But you saved me. I owe you one.\p...\pT-thanks. Bye."))
+    msgbox(format("...have we left that place?\pYes! Yes we have! I'm so relieved.\nI've never been so happy to see\la city before!\pThis must be Galecrest City.\nThe Detective Academy is here.\lI suppose you'll be headed there.\lJust head north from here...\p...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies!\nBut you saved me. I owe you one.\p...\pT-thanks. Bye."))
     release
     
     //Remove gab
@@ -46,6 +46,12 @@ script GalecrestCity_OnFrame{
 
     setflag(FLAG_GALECREST_POST_ANCIENT)
     releaseall
+}
+
+script TempTemp{
+    msgbox(format("...have we left that place?\pYes! Yes we have! I'm so relieved.\nI've never been so happy to see\la city before!\pThis must be Galecrest City.\nThe Detective Academy is here.\lI suppose you'll be headed there.\lJust head north from here...\p...and I'll be going back to Team Somber.\pSigh...\p...\p{PLAYER}, we're still enemies!\nBut you saved me. I owe you one.\p...\pT-thanks. Bye."))
+    release
+    end
 }
 
 //detectives - meet them inside the detective academy

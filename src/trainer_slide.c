@@ -80,7 +80,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         },
         [TRAINER_CERAMBASECAMP_EVIL_GABRIELLE] = 
         {
-            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("I'm not losing to you again!\p"), 
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("No! I'm not losing to you again!\p"), 
         },
         [TRAINER_CERAMBASECAMPGYM_LEADER] = 
         {

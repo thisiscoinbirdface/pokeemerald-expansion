@@ -141,7 +141,7 @@ script CarabrueTown_Home1F_EventScript_MomGeneric{
         }
 
         speakername(NULL)
-        msgbox(format("Mom's Nuzkit has tons of cheats.\nFor a classic experience,\lyou should go without it!"), MSGBOX_POKENAV)
+        msgbox(format("Mom's Nuzkit offers additional\nquality of life features.\lFor a classic experience,\lyou should go without it!"), MSGBOX_POKENAV)
 
         speakername("Mom")     
         message(format("Do you want a care package from Mom?"))

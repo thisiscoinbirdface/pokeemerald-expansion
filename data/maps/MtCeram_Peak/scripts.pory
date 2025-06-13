@@ -133,7 +133,7 @@ script MtCeramPeak_MainEvent_Cutscene{
     waitmovement(0)
     delay(16)
     speakername("???")
-    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way, time and again! No more!"))
+    msgbox(format("And if we get such power, there would be nothing stopping Team Somber from having absolute control!\pA noble goal, is it not, {PLAYER}?\pAnd you! You dare to get in our way,\ntime and again! No more!"))
     release
     delay(16)
 
@@ -143,7 +143,7 @@ script MtCeramPeak_MainEvent_Cutscene{
 script MtCeramPeak_MainEvent_Battle{
     //Pre-battle
     speakername("Moxie")
-    msgbox(format("I, Moxie, Head of the Team Somber Research Wing, will end your meddling once and for all!"))
+    msgbox(format("I, Moxie, head of the Team Somber Research Wing, will end your silly meddling once and for all!"))
     release
 
     //Battle
@@ -165,7 +165,7 @@ script MtCeramPeak_MainEvent_Battle{
     applymovement(LOCALID_BOSS, moves(face_left))
     waitmovement(0)
     speakername("Moxie")
-    msgbox(format("Gabrielle! You worthless fool! Be of use for a change and go grab the dreamstone. Hurry up before {PLAYER} gets it!"))
+    msgbox(format("Gabrielle! You worthless fool!\nBe of some use for a change and go\lgrab the dreamstone.\pHurry up before {PLAYER} gets it!"))
     release  
     applymovement(LOCALID_GAB, moves(jump_in_place_up))
     waitmovement(0)
@@ -210,7 +210,7 @@ script MtCeramPeak_MainEvent_Battle{
     delay(16)
 
     speakername("Gabrielle")
-    msgbox(format("Boss...I feel sick. What's happening? Is this supposed to happen?"))
+    msgbox(format("Boss...I feel sick. What's happening?\nIs this supposed to happen?"))
     release  
     delay(16)
 
@@ -258,7 +258,7 @@ script MtCeramPeak_MainEvent_Battle{
 	delay(30)
 
     speakername("Moxie")
-    msgbox(format("This is bad...come on you two! Let's get out of here before this mountain erupts!"))
+    msgbox(format("This is bad...come on you two! Let's get out before this mountain erupts!"))
     release    
     applymovement(4, moves(walk_down * 6))    
     applymovement(5, moves(walk_down * 6))    
