@@ -184,13 +184,15 @@ GalecrestCityGym_Leader::
 # 182 "data//maps/GalecrestCityGym/scripts.pory"
 	release
 # 185 "data//maps/GalecrestCityGym/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
-# 186 "data//maps/GalecrestCityGym/scripts.pory"
 	setflag FLAG_BADGE03_GET
-# 187 "data//maps/GalecrestCityGym/scripts.pory"
+# 186 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
+# 187 "data//maps/GalecrestCityGym/scripts.pory"
+	message GalecrestCityGym_Leader_Text_3
 # 188 "data//maps/GalecrestCityGym/scripts.pory"
-	msgbox GalecrestCityGym_Leader_Text_3
+	call Common_EventScript_PlayGymBadgeFanfare
+# 189 "data//maps/GalecrestCityGym/scripts.pory"
+	release
 # 191 "data//maps/GalecrestCityGym/scripts.pory"
 	speakername GalecrestCityGym_Leader_Text_1
 # 192 "data//maps/GalecrestCityGym/scripts.pory"
@@ -379,7 +381,7 @@ GalecrestCityGym_Leader_Text_2:
 	.string "This is yours, {PLAYER}.$"
 
 GalecrestCityGym_Leader_Text_3:
-# 188 "data//maps/GalecrestCityGym/scripts.pory"
+# 187 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER} received the Stoic Badge\n"
 	.string "from Kohla.$"
 
@@ -393,26 +395,26 @@ GalecrestCityGym_Leader_Text_4:
 GalecrestCityGym_Leader_Text_5:
 # 199 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "{PLAYER}, despite being the chum you\n"
-	.string "are, I owe you. You showed me my lack of\l"
-	.string "strength. That's why I chose Ceruledge\l"
-	.string "as my companion. I don't care if other\l"
-	.string "detectives see it as bad, because I see\l"
-	.string "it as strong.\p"
+	.string "are, I owe you. You showed me my lack\l"
+	.string "of strength. That's why I chose\l"
+	.string "Ceruledge as my companion. I don't care\l"
+	.string "if other detectives see it as bad,\l"
+	.string "because I see it as strong.\p"
 	.string "...\p"
-	.string "Now enough of this gym business. We\n"
-	.string "have to stop Team Somber. I'll see you\l"
-	.string "in Silversun City.$"
+	.string "Now enough of this gym business.\n"
+	.string "We have to go and stop Team Somber.\l"
+	.string "I'll see you in Silversun City.$"
 
 GalecrestCityGym_Text_LeaderIntro::
 # 220 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Yes {PLAYER}, it's me. Traditionally,\n"
 	.string "the Ace Rookie of the graduating\l"
-	.string "class assumes Gym Leader duties for\l"
-	.string "a year after they graduate.\p"
+	.string "class assumes Gym Leader duties\l"
+	.string "for a year after they graduate.\p"
 	.string "And this year, that's me!\p"
 	.string "Normally I would use the gym standard\n"
-	.string "NORMAL Pokémon, but since it's you, I'm\l"
-	.string "going to make an exception.\p"
+	.string "NORMAL Pokémon, but since it's you,\l"
+	.string "I'm going to make an exception.\p"
 	.string "I'll crush you with my REAL team!$"
 
 GalecrestCityGym_Text_Defeated::

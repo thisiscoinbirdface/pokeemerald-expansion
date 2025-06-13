@@ -3,7 +3,7 @@ mapscripts Route5_MapScripts{}
 script Route5_NPC_A{
     lockall
     faceplayer
-    msgbox(format("My head is spinning because of the fog in Vilethorn Woods! I need to go home and rest."))
+    msgbox(format("My head is spinning because of the fog in Vilethorn Woods! I need some rest."))
     releaseall
     end
 }
@@ -25,6 +25,29 @@ script Route5_NPC_C{
 }
 
 
+
+
+//berger route 5
+script Route5_Berger{
+    lockall
+    speakername("Berger")
+    msgbox(format("C'mon Bergmite! Don't be so scared of Vilethorn Woods!"))
+    faceplayer
+    speakername("Berger")
+    msgbox(format("We're trying to reach Silversun City but Bergmite's being a scaredy-cat!"))
+    release
+    applymovement(16, moves(face_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script Route5_Bergmite{
+    playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("Bergmite is shivering!"), MSGBOX_NPC)
+    end
+}
 
 
 //Greta: FLAG_GRETA_ROUTE5

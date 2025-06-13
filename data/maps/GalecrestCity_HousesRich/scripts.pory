@@ -50,11 +50,11 @@ script GalecrestCity_HousesRich_NPC5{
     //3: done
 
     if (var(VAR_GALECREST_RICH_PEARLS) == 3) {
-        msgbox(format("You're dirtying the floor with your dirty shoes!"))
+        msgbox(format("Get out - you're dirtying the floor with your dirty shoes!"))
         release
     }
     if (var(VAR_GALECREST_RICH_PEARLS) == 4) {
-        msgbox(format("You're dirtying the floor with your dirty shoes!"))
+        msgbox(format("Get out - you're dirtying the floor with your dirty shoes!"))
         release
     }
 
@@ -65,23 +65,32 @@ script GalecrestCity_HousesRich_NPC5{
             end
         }
         removeitem(ITEM_PEARL_STRING)
-        msgbox(format("Ahh my beautiful pearls! Thank you child, thank you!"))
+        playfanfare(MUS_LEVEL_UP)
+        message(format("{PLAYER} gave the rich lady\nher Pearl String."))
+        waitfanfare
+        release
+        delay(8)
+        msgbox(format("My beautiful pearls! Thank you dear!"))
         release
         completequest(QUEST_GALECREST_PEARLS)
+        delay(8)
         msgbox(format("But since you took so much time to find the pearls, I'll be taking some money from you of course. You stressed me out and you've got to make amends!"))
         release
         removemoney(500)
-        msgbox(format("{PLAYER} gave the rich lady 500."), MSGBOX_SIGN)
+        playfanfare(MUS_MOVE_DELETED)
+        message(format("{PLAYER} gave the rich lady ¥500."))
+        waitfanfare
         setvar(VAR_GALECREST_RICH_PEARLS, 3)
     } 
 
     if (var(VAR_GALECREST_RICH_PEARLS) == 1){
-        msgbox(format("Did you find it yet? No? Well what are you standing in here for? Hurry up and get my pearls, you slacker!"))
+        faceplayer
+        msgbox(format("Did you find my pearls yet?\pNo?\pWell what are you standing here for?\nHurry up and get my pearls back!"))
         release
     } 
 
     if (var(VAR_GALECREST_RICH_PEARLS) == 0){
-        msgbox(format("Oh my! I can't find my PEARL anywhere! I think someone must've stolen it! You, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
+        msgbox(format("Oh my! I can't find my pearls anywhere!\nI think someone must've stolen it!\lYou, child, you look outdoorsy. Your shoes are dirty. Would you be a dear and search outside for my pearl?"))
         //Start quest
         setvar(VAR_GALECREST_RICH_PEARLS, 1)
         startquest(QUEST_GALECREST_PEARLS)
@@ -93,37 +102,37 @@ script GalecrestCity_HousesRich_NPC5{
 
 
 script GalecrestCity_HousesRich_NPC6{
-    msgbox(format("I'm a professional cook. It's interesting being able to peek into the lives of the super rich...I appreciate my family more now."), MSGBOX_NPC)
+    msgbox(format("I'm a private cook. It's interesting to peek into the lives of the super rich...\lI appreciate my family more now."), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_HousesRich_NPC7{
-    msgbox(format("I don't know where Mom and Dad are...I've been sitting here waiting for dinner.\pWe never eat together."), MSGBOX_NPC)
+    msgbox(format("I don't know where Mom and Dad are...\nI've been sitting here waiting for them.\pWe never eat together."), MSGBOX_NPC)
     end
 }
 
 
 script GalecrestCity_HousesRich_NPC8{
-    msgbox(format("Our daughter grew up and is now the Gym Leader of Pelluca City. So we live alone in this big house now..."), MSGBOX_NPC)
+    msgbox(format("Our daughter grew up and is now the\nGym Leader of Pelluca City!\lWe live alone in this big house now..."), MSGBOX_NPC)
     end
 }
 
 //Give some swag item
 script GalecrestCity_HousesRich_NPC9{
     if (flag(FLAG_GALECREST_RICH_HOUSECLEANITEM)){
-            msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."), MSGBOX_NPC)
+            msgbox(format("You can find tons of unused equipment in our basement - although it's dark,\lso try not to bang your toes!\lFeel free to take anything you like."), MSGBOX_NPC)
     } else {
         lockall
         faceplayer
         msgbox(format("I'm trying to organise my daughter's belongings. Are you a Pokémon trainer?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("So is my daughter. She used these to train her Pokémon. They'll be more useful in your hands."))
-            giveitem(ITEM_MACHO_BRACE)
+            msgbox(format("So is my daughter. She used to give this to her Pokémon.\nIt'll be more useful in your hands."))
+            giveitem(ITEM_SCOPE_LENS) 
             setflag(FLAG_GALECREST_RICH_HOUSECLEANITEM)
             msgbox(format("You can find tons of unused equipment in our basement - although it's dark, so don't bang your toes! Feel free to take anything you like."), MSGBOX_NPC)            
         } else {
-            msgbox(format("Ah, then none of this will be of use to you."), MSGBOX_NPC)
+            msgbox(format("Ah, then this won't be of use to you."), MSGBOX_NPC)
         }
         releaseall
     }

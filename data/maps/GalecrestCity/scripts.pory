@@ -403,7 +403,7 @@ script GalecrestCity_Chansey{
 
 
 script GalecrestCity_NPC_12{
-    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk here left to build a cottage deep in the woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."), MSGBOX_NPC)
+    msgbox(format("If you continue west from here, you'll enter Route 5 and the Vilethorn Woods. Many years ago, one of the rich folk here left to build a cottage deep in\lthe woods. Who would want to live in a creepy forest like that?\pRich folk I tell you..."), MSGBOX_NPC)
     end
 }
 
@@ -428,16 +428,16 @@ script GalecrestCity_NPC_14{
     } else {
         msgbox(format("Hehehe...this was too easy!"))
         release
+        delay(24)    
+        applymovement(12, moves(emote_exclamation_mark jump_in_place_right))
         delay(24)
-        faceplayer    
-        applymovement(12, moves(emote_exclamation_mark))
-        delay(24)
-        msgbox(format("I look suspicious? How dare you! I'm just innocently hanging around behind this rich house! I don't take such accusations lightly!"))
+        msgbox(format("I look suspicious? How dare you!\nI'm just innocently hanging around behind this rich house! I don't take such accusations lightly!"))
         //trainer battle
         trainerbattle_no_intro(TRAINER_GALECREST_ROBBER, format("I've been caught!"))
         release
         msgbox(format("Fine, you got me! I'm a thief alright? I'll give you what I stole. It's not worth going to jail for."))
         release
+        delay(8)
         giveitem(ITEM_PEARL_STRING)
         msgbox(format("I knew I shouldn't have tried to steal anything near the Detective Academy!"))
         release
@@ -445,6 +445,8 @@ script GalecrestCity_NPC_14{
         fadescreenswapbuffers(FADE_TO_BLACK)
         removeobject(12)
         removeobject(36)
+        playse(SE_EXIT)
+        waitse
         fadescreenswapbuffers(FADE_FROM_BLACK)
 
         setflag(FLAG_GALECREST_ROBBER)
@@ -484,7 +486,7 @@ script GalecrestCity_NPC_17{
 
 script GalecrestCity_NPC_18{
     lockall
-    msgbox(format("All my life I've lived in this neighbourhood. It's all I've seen and all I know...and now I'm too old to go exploring Cormoria."))  
+    msgbox(format("All my life I've lived in this city. It's all I've seen and all I know...and now I'm too old to go exploring Cormoria."))  
     release
     delay(16)
 
@@ -515,7 +517,7 @@ script GalecrestCity_NPC_19{
 }
 
 script GalecrestCity_NPC_20{
-    msgbox(format("Whaddya want? Thought you'd get something by talking to me? You poor people are all the same - always looking for handouts!"), MSGBOX_NPC)
+    msgbox(format("Whaddya want? Thought you'd get something by talking to me?\lYou poor people are all the same - always looking for handouts!"), MSGBOX_NPC)
     end
 }
 

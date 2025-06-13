@@ -38,18 +38,52 @@ Route5_NPC_C::
 	end
 
 
-Route5_Greta_Trigger0::
-# 33 "data//maps/Route5/scripts.pory"
-	goto_if_set FLAG_GRETA_ROUTE5, Route5_Greta_Trigger0_2
-# 35 "data//maps/Route5/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, FALSE
-# 36 "data//maps/Route5/scripts.pory"
+Route5_Berger::
+# 32 "data//maps/Route5/scripts.pory"
 	lockall
+# 33 "data//maps/Route5/scripts.pory"
+	speakername Route5_Berger_Text_0
+# 34 "data//maps/Route5/scripts.pory"
+	msgbox Route5_Berger_Text_1
+# 35 "data//maps/Route5/scripts.pory"
+	faceplayer
+# 36 "data//maps/Route5/scripts.pory"
+	speakername Route5_Berger_Text_0
 # 37 "data//maps/Route5/scripts.pory"
-	applymovement 7, Route5_Greta_Trigger0_Movement_0
+	msgbox Route5_Berger_Text_2
 # 38 "data//maps/Route5/scripts.pory"
-	waitmovement 0
+	release
+# 39 "data//maps/Route5/scripts.pory"
+	applymovement 16, Route5_Berger_Movement_0
 # 40 "data//maps/Route5/scripts.pory"
+	waitmovement 0
+# 41 "data//maps/Route5/scripts.pory"
+	releaseall
+	end
+
+
+Route5_Bergmite::
+# 46 "data//maps/Route5/scripts.pory"
+	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
+# 47 "data//maps/Route5/scripts.pory"
+	waitmoncry
+# 48 "data//maps/Route5/scripts.pory"
+	msgbox Route5_Bergmite_Text_0, MSGBOX_NPC
+	end
+
+
+Route5_Greta_Trigger0::
+# 56 "data//maps/Route5/scripts.pory"
+	goto_if_set FLAG_GRETA_ROUTE5, Route5_Greta_Trigger0_2
+# 58 "data//maps/Route5/scripts.pory"
+	playbgm MUS_ENCOUNTER_MAY, FALSE
+# 59 "data//maps/Route5/scripts.pory"
+	lockall
+# 60 "data//maps/Route5/scripts.pory"
+	applymovement 7, Route5_Greta_Trigger0_Movement_0
+# 61 "data//maps/Route5/scripts.pory"
+	waitmovement 0
+# 63 "data//maps/Route5/scripts.pory"
 	goto Route5_Greta_Main
 	return
 
@@ -58,17 +92,17 @@ Route5_Greta_Trigger0_2:
 
 
 Route5_Greta_Trigger1::
-# 44 "data//maps/Route5/scripts.pory"
+# 67 "data//maps/Route5/scripts.pory"
 	goto_if_set FLAG_GRETA_ROUTE5, Route5_Greta_Trigger1_2
-# 46 "data//maps/Route5/scripts.pory"
+# 69 "data//maps/Route5/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, FALSE
-# 47 "data//maps/Route5/scripts.pory"
+# 70 "data//maps/Route5/scripts.pory"
 	lockall
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	applymovement 7, Route5_Greta_Trigger1_Movement_0
-# 49 "data//maps/Route5/scripts.pory"
+# 72 "data//maps/Route5/scripts.pory"
 	waitmovement 0
-# 51 "data//maps/Route5/scripts.pory"
+# 74 "data//maps/Route5/scripts.pory"
 	goto Route5_Greta_Main
 	return
 
@@ -77,126 +111,131 @@ Route5_Greta_Trigger1_2:
 
 
 Route5_Greta_Main::
-# 56 "data//maps/Route5/scripts.pory"
+# 79 "data//maps/Route5/scripts.pory"
 	speakername Route5_Greta_Main_Text_0
-# 57 "data//maps/Route5/scripts.pory"
+# 80 "data//maps/Route5/scripts.pory"
 	msgbox Route5_Greta_Main_Text_1
-# 58 "data//maps/Route5/scripts.pory"
+# 81 "data//maps/Route5/scripts.pory"
 	release
-# 59 "data//maps/Route5/scripts.pory"
+# 82 "data//maps/Route5/scripts.pory"
 	delay 20
-# 60 "data//maps/Route5/scripts.pory"
+# 83 "data//maps/Route5/scripts.pory"
 	speakername Route5_Greta_Main_Text_0
-# 61 "data//maps/Route5/scripts.pory"
+# 84 "data//maps/Route5/scripts.pory"
 	msgbox Common_Text_Greta_Comecome
-# 62 "data//maps/Route5/scripts.pory"
+# 85 "data//maps/Route5/scripts.pory"
 	release
-# 63 "data//maps/Route5/scripts.pory"
+# 86 "data//maps/Route5/scripts.pory"
 	delay 20
-# 65 "data//maps/Route5/scripts.pory"
+# 88 "data//maps/Route5/scripts.pory"
 	goto Route5_Greta_ShowItemsForSale
 	return
 
 
 Route5_Greta_GottaGo::
-# 71 "data//maps/Route5/scripts.pory"
+# 94 "data//maps/Route5/scripts.pory"
 	release
-# 72 "data//maps/Route5/scripts.pory"
+# 95 "data//maps/Route5/scripts.pory"
 	applymovement 7, Route5_Greta_GottaGo_Movement_0
-# 73 "data//maps/Route5/scripts.pory"
+# 96 "data//maps/Route5/scripts.pory"
 	waitmovement 0
-# 74 "data//maps/Route5/scripts.pory"
+# 97 "data//maps/Route5/scripts.pory"
 	speakername Route5_Greta_Main_Text_0
-# 75 "data//maps/Route5/scripts.pory"
+# 98 "data//maps/Route5/scripts.pory"
 	msgbox Route5_Greta_GottaGo_Text_0
-# 76 "data//maps/Route5/scripts.pory"
+# 99 "data//maps/Route5/scripts.pory"
 	release
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	applymovement 7, Route5_Greta_GottaGo_Movement_1
-# 78 "data//maps/Route5/scripts.pory"
+# 101 "data//maps/Route5/scripts.pory"
 	waitmovement 0
-# 79 "data//maps/Route5/scripts.pory"
+# 102 "data//maps/Route5/scripts.pory"
 	removeobject 7
-# 80 "data//maps/Route5/scripts.pory"
+# 103 "data//maps/Route5/scripts.pory"
 	setflag FLAG_GRETA_ROUTE5
-# 81 "data//maps/Route5/scripts.pory"
+# 104 "data//maps/Route5/scripts.pory"
 	fadedefaultbgm
-# 83 "data//maps/Route5/scripts.pory"
+# 106 "data//maps/Route5/scripts.pory"
 	releaseall
 	end
 
 
-# 37 "data//maps/Route5/scripts.pory"
+# 39 "data//maps/Route5/scripts.pory"
+Route5_Berger_Movement_0:
+# 39 "data//maps/Route5/scripts.pory"
+	face_down
+	step_end
+
+# 60 "data//maps/Route5/scripts.pory"
 Route5_Greta_Trigger0_Movement_0:
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_right
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	walk_up
-# 37 "data//maps/Route5/scripts.pory"
+# 60 "data//maps/Route5/scripts.pory"
 	face_right
 	step_end
 
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 Route5_Greta_Trigger1_Movement_0:
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
-# 48 "data//maps/Route5/scripts.pory"
+# 71 "data//maps/Route5/scripts.pory"
 	walk_right
 	step_end
 
-# 72 "data//maps/Route5/scripts.pory"
+# 95 "data//maps/Route5/scripts.pory"
 Route5_Greta_GottaGo_Movement_0:
-# 72 "data//maps/Route5/scripts.pory"
+# 95 "data//maps/Route5/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 Route5_Greta_GottaGo_Movement_1:
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
-# 77 "data//maps/Route5/scripts.pory"
+# 100 "data//maps/Route5/scripts.pory"
 	walk_left
 	step_end
 
 Route5_NPC_A_Text_0:
 # 6 "data//maps/Route5/scripts.pory"
 	.string "My head is spinning because of the fog\n"
-	.string "in Vilethorn Woods! I need to go home\l"
-	.string "and rest.$"
+	.string "in Vilethorn Woods! I need some rest.$"
 
 Route5_NPC_B_Text_0:
 # 14 "data//maps/Route5/scripts.pory"
@@ -209,16 +248,34 @@ Route5_NPC_C_Text_0:
 	.string "Vilethorn Woods! It's blocking the path\l"
 	.string "back to Galecrest City.$"
 
+Route5_Berger_Text_0:
+# 33 "data//maps/Route5/scripts.pory"
+	.string "Berger$"
+
+Route5_Berger_Text_1:
+# 34 "data//maps/Route5/scripts.pory"
+	.string "C'mon Bergmite! Don't be so scared of\n"
+	.string "Vilethorn Woods!$"
+
+Route5_Berger_Text_2:
+# 37 "data//maps/Route5/scripts.pory"
+	.string "We're trying to reach Silversun City but\n"
+	.string "Bergmite's being a scaredy-cat!$"
+
+Route5_Bergmite_Text_0:
+# 48 "data//maps/Route5/scripts.pory"
+	.string "Bergmite is shivering!$"
+
 Route5_Greta_Main_Text_0:
-# 56 "data//maps/Route5/scripts.pory"
+# 79 "data//maps/Route5/scripts.pory"
 	.string "Greta$"
 
 Route5_Greta_Main_Text_1:
-# 57 "data//maps/Route5/scripts.pory"
+# 80 "data//maps/Route5/scripts.pory"
 	.string "It's you! The wandering saviour from Mt.\n"
 	.string "Ceram. How wonderful! A new customer.$"
 
 Route5_Greta_GottaGo_Text_0:
-# 75 "data//maps/Route5/scripts.pory"
+# 98 "data//maps/Route5/scripts.pory"
 	.string "Would you look at the time! I've gotta\n"
 	.string "run. See you around!$"
