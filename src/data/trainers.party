@@ -1848,7 +1848,7 @@ Pic: Psychic M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Morelull
 Level: 18
@@ -1895,7 +1895,7 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Poltchageist
 Level: 19
@@ -1936,7 +1936,7 @@ Pic: Pokemon Breeder M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Stantler
 Level: 19
@@ -1984,7 +1984,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Roselia
 Level: 21
@@ -2024,7 +2024,7 @@ Pic: Interviewer
 Gender: Male
 Music: Interviewer
 Double Battle: Yes
-AI: Check Bad Move
+AI: Basic Trainer
 
 Magnemite 
 Level: 22
@@ -2121,7 +2121,7 @@ Pic: Burglar
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Nickit
 Level: 19
@@ -2167,7 +2167,7 @@ Pic: Gentleman
 Gender: Male
 Music: Interviewer
 Double Battle: Yes
-AI: Check Bad Move
+AI: Basic Trainer
 
 Growlithe-Hisui
 Level: 20
@@ -2342,7 +2342,7 @@ Pic: Rich Boy
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Grimer-Alola
 Level: 23
@@ -2391,7 +2391,7 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Litwick
 Level: 22
@@ -2428,7 +2428,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Voltorb-Hisui
 Level: 21
@@ -2476,7 +2476,7 @@ Pic: Tuber M
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Zigzagoon
 Level: 13
@@ -2494,7 +2494,7 @@ Pic: Tuber M
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Azurill
 Level: 12
@@ -2522,7 +2522,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Roselia
 Level: 24
@@ -2559,7 +2559,7 @@ Pic: Model
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Zigzagoon-Galar
 Level: 23
@@ -2600,7 +2600,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Petilil
 Level: 23
@@ -2654,7 +2654,7 @@ Pic: Model
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Linoone-Galar
 Level: 26
@@ -2874,7 +2874,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Bronzor
 Level: 24
@@ -2958,7 +2958,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Drowzee
 Level: 24
@@ -3049,7 +3049,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Murkrow
 Level: 24
@@ -3096,7 +3096,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Impidimp
 Level: 25
@@ -3140,7 +3140,7 @@ Pic: Somber Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Lokix
 Level: 25

@@ -329,7 +329,7 @@
       "x": 33,
       "y": 21,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_Main"
     },
     {
@@ -337,7 +337,7 @@
       "x": 4,
       "y": 21,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_Gym"
     },
     {
@@ -345,7 +345,7 @@
       "x": 8,
       "y": 33,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_Theater"
     },
     {
@@ -353,7 +353,7 @@
       "x": 22,
       "y": 44,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_Sewers"
     },
     {
@@ -361,7 +361,7 @@
       "x": 23,
       "y": 29,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_DrifblimTravels"
     },
     {
@@ -369,7 +369,7 @@
       "x": 32,
       "y": 10,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_SilversunCity_Orphanage"
     },
     {

@@ -111,7 +111,7 @@
       "x": 16,
       "y": 11,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_CarabrueTown_Main"
     },
     {

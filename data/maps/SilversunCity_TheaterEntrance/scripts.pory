@@ -12,7 +12,7 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
     if (flag(FLAG_SILVERSUN_BACKSTAGEPASS_USE)){
         msgbox(format("I hope you enjoy the show!"))
     } else {
-        msgbox(format("Sorry - backstage access is for the cast and crew only. Do you have a Backstage Pass?"), MSGBOX_YESNO)
+        msgbox(format("Backstage access is for the cast\nand crew only.\pDo you have a Backstage Pass?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             if (checkitem(ITEM_BACKSTAGE_PASS)){
                 msgbox(format("...\pThis seems to be in order.\pPlease, right this way."))
@@ -49,9 +49,9 @@ script SilversunCity_TheaterEntrance_EventScript_BackstageBlocker{
 
 script SilversunCity_TheaterEntrance_EventScript_Receptionist{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("What a performance! And you weren't bad too!"), MSGBOX_NPC)
+        msgbox(format("What a performance!\nAnd you weren't bad too!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Please proceed to the audience hall. We hope you enjoy the show!"), MSGBOX_NPC)
+        msgbox(format("Please proceed to the audience hall.\nWe hope you enjoy the show!"), MSGBOX_NPC)
     }
     end
 }
@@ -61,7 +61,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC1{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("The Servine was so scary!"), MSGBOX_NPC)
     } else {
-        msgbox(format("Theater is so boring! I don't know why my parents like it."), MSGBOX_NPC)
+        msgbox(format("Theater is so boring! Why do Mom and Dad always bring me here?"), MSGBOX_NPC)
     }
     end
 }
@@ -71,7 +71,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("The action! The tension! And all the razzle-dazzle! Gloria was sizzling! Too bad she lost though."), MSGBOX_NPC)
     } else {
-        msgbox(format("I write for Cormoria Culture, the leading arts and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
+        msgbox(format("I write for The Cormoria Culture, the leading art and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
     }
     end
 }
@@ -104,7 +104,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC5{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Hey - get in the shot! Not you - your Pokémon! You can keep moving."), MSGBOX_NPC)
     } else {
-        msgbox(format("Hey - get out of the shot! What if Gloria walks by?"), MSGBOX_NPC)
+        msgbox(format("Hey - get out of the shot!\nWhat if Gloria walks by?"), MSGBOX_NPC)
     }
     end
 }
@@ -113,7 +113,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC6{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Ooh I bet our photographs of Gloria will go for a pretty price after this performance!"), MSGBOX_NPC)
     } else {
-        msgbox(format("We're journalists looking for an interview with the cast and crew. Are you a crew member?\pNo?\pThen move along!"), MSGBOX_NPC)
+        msgbox(format("We're journalists looking for an interview with the cast and crew.\lAre you a crew member?\pNo?\pThen move along!"), MSGBOX_NPC)
     }
     end
 }
@@ -131,7 +131,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC7{
             setflag(FLAG_SILVERSUN_THEATER_MANIAC)            
         }
     } else {
-        msgbox(format("Just look at those salivating paparazzi over there! Nobody should be salivating over Gloria but me!"), MSGBOX_NPC)
+        msgbox(format("Just look at the salivating paparazzi over there! Nobody should be salivating over Gloria but me!"), MSGBOX_NPC)
     }
     end
 }
@@ -141,7 +141,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC8{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("I've seen better in my day!\pI'm talking about you of course. Gloria was perfect."), MSGBOX_NPC)
     } else {
-        msgbox(format("I've seen many a performance in my life. I'm not a snob, but I do have high standards."), MSGBOX_NPC)
+        msgbox(format("I've seen many a show in my life. I'm not a snob, but I do have high standards."), MSGBOX_NPC)
     }
     end
 }

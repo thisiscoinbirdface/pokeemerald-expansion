@@ -190,9 +190,9 @@ SilversunCity_TheaterEntrance_EventScript_BackstageBlocker_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_BackstageBlocker_Text_1:
 # 15 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Sorry - backstage access is for the\n"
-	.string "cast and crew only. Do you have a\l"
-	.string "Backstage Pass?$"
+	.string "Backstage access is for the cast\n"
+	.string "and crew only.\p"
+	.string "Do you have a Backstage Pass?$"
 
 SilversunCity_TheaterEntrance_EventScript_BackstageBlocker_Text_2:
 # 18 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -212,13 +212,13 @@ SilversunCity_TheaterEntrance_EventScript_BackstageBlocker_Text_4:
 
 SilversunCity_TheaterEntrance_EventScript_Receptionist_Text_0:
 # 52 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "What a performance! And you weren't bad\n"
-	.string "too!$"
+	.string "What a performance!\n"
+	.string "And you weren't bad too!$"
 
 SilversunCity_TheaterEntrance_EventScript_Receptionist_Text_1:
 # 54 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Please proceed to the audience hall. We\n"
-	.string "hope you enjoy the show!$"
+	.string "Please proceed to the audience hall.\n"
+	.string "We hope you enjoy the show!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_0:
 # 62 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -226,8 +226,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC1_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_1:
 # 64 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Theater is so boring! I don't know why\n"
-	.string "my parents like it.$"
+	.string "Theater is so boring! Why do Mom and Dad\n"
+	.string "always bring me here?$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 # 72 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -237,9 +237,9 @@ SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_1:
 # 74 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "I write for Cormoria Culture, the\n"
-	.string "leading arts and entertainment portal\l"
-	.string "in Cormoria! Let's see what Gloria has in\l"
+	.string "I write for The Cormoria Culture, the\n"
+	.string "leading art and entertainment portal in\l"
+	.string "Cormoria! Let's see what Gloria has in\l"
 	.string "store today...it's supposed to be an\l"
 	.string "experiential affair.$"
 
@@ -263,8 +263,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC5_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC5_Text_1:
 # 107 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Hey - get out of the shot! What if\n"
-	.string "Gloria walks by?$"
+	.string "Hey - get out of the shot!\n"
+	.string "What if Gloria walks by?$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC6_Text_0:
 # 114 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -275,8 +275,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC6_Text_0:
 SilversunCity_TheaterEntrance_EventScript_NPC6_Text_1:
 # 116 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "We're journalists looking for an\n"
-	.string "interview with the cast and crew. Are\l"
-	.string "you a crew member?\p"
+	.string "interview with the cast and crew.\l"
+	.string "Are you a crew member?\p"
 	.string "No?\p"
 	.string "Then move along!$"
 
@@ -306,7 +306,7 @@ SilversunCity_TheaterEntrance_EventScript_NPC7_Text_3:
 
 SilversunCity_TheaterEntrance_EventScript_NPC7_Text_4:
 # 134 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "Just look at those salivating paparazzi\n"
+	.string "Just look at the salivating paparazzi\n"
 	.string "over there! Nobody should be salivating\l"
 	.string "over Gloria but me!$"
 
@@ -318,6 +318,5 @@ SilversunCity_TheaterEntrance_EventScript_NPC8_Text_0:
 
 SilversunCity_TheaterEntrance_EventScript_NPC8_Text_1:
 # 144 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "I've seen many a performance in my life.\n"
-	.string "I'm not a snob, but I do have high\l"
-	.string "standards.$"
+	.string "I've seen many a show in my life. I'm not\n"
+	.string "a snob, but I do have high standards.$"

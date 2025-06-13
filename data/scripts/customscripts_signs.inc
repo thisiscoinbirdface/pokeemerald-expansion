@@ -438,26 +438,32 @@ WhiteSign_Rivetshore_Ranger::
 	end
 
 
-WhiteSign_VictoryCape_Main::
+WhiteSign_VictoryRoad::
 # 425 "data//scripts/customscripts_signs.pory"
+	msgbox WhiteSign_VictoryRoad_Text_0, MSGBOX_SIGN
+	end
+
+
+WhiteSign_VictoryCape_Main::
+# 429 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Main_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Hotel::
-# 429 "data//scripts/customscripts_signs.pory"
+# 433 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Hotel_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Mart::
-# 433 "data//scripts/customscripts_signs.pory"
+# 437 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Mart_Text_0, MSGBOX_SIGN
 	end
 
 
 WhiteSign_VictoryCape_Venue::
-# 437 "data//scripts/customscripts_signs.pory"
+# 441 "data//scripts/customscripts_signs.pory"
 	msgbox WhiteSign_VictoryCape_Venue_Text_0, MSGBOX_SIGN
 	end
 
@@ -843,19 +849,23 @@ WhiteSign_Rivetshore_Ranger_Text_0:
 	.string "The Pokémon Ranger Institute\n"
 	.string "Rivetshore City Branch$"
 
-WhiteSign_VictoryCape_Main_Text_0:
+WhiteSign_VictoryRoad_Text_0:
 # 425 "data//scripts/customscripts_signs.pory"
+	.string "Victory Road$"
+
+WhiteSign_VictoryCape_Main_Text_0:
+# 429 "data//scripts/customscripts_signs.pory"
 	.string "Victory Cape\n"
 	.string "The Cormoria Pokémon Championship$"
 
 WhiteSign_VictoryCape_Hotel_Text_0:
-# 429 "data//scripts/customscripts_signs.pory"
+# 433 "data//scripts/customscripts_signs.pory"
 	.string "The Victory Cape Hotel$"
 
 WhiteSign_VictoryCape_Mart_Text_0:
-# 433 "data//scripts/customscripts_signs.pory"
+# 437 "data//scripts/customscripts_signs.pory"
 	.string "Victory Cape Dept. Store$"
 
 WhiteSign_VictoryCape_Venue_Text_0:
-# 437 "data//scripts/customscripts_signs.pory"
+# 441 "data//scripts/customscripts_signs.pory"
 	.string "Championship Stadium$"

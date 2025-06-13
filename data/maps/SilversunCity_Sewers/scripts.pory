@@ -14,7 +14,7 @@ script SilversunCity_Sewers_NPC6{
     if (var(VAR_SEWERS_DUSKULL) == 0){
         lockall
         faceplayer
-        msgbox(format("Hey - are you a trainer?\pLook, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her!\pI'm really worried. What if the Sewer Scourge gets her?\pPlease help me find her!"))
+        msgbox(format("Hey - are you a trainer?\pLook, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her!\pI'm really worried.\nWhat if the Sewer Scourge gets her?\pPlease help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
         releaseall
@@ -32,7 +32,7 @@ script SilversunCity_Sewers_ManLostWife_Trigger0{
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
 
-        msgbox(format("Hey - are you a trainer?\pLook, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her!\pI'm really worried. What if the Sewer Scourge gets her?\pPlease help me find her!"))
+        msgbox(format("Hey - are you a trainer?\pLook, I need your help. My wife and I came down here to buy some illegal -\pI mean some furniture. We came down to buy some furniture but we got separated and now I can't find her!\pI'm really worried.\nWhat if the Sewer Scourge gets her?\pPlease help me find her!"))
         startquest(QUEST_SILVERSUN_WIFE)
         setvar(VAR_SEWERS_DUSKULL, 1)
 
@@ -98,7 +98,7 @@ script SilversunCity_Sewers_Duskull_Event{
 
     applymovement(9, moves(jump_in_place_up emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("Eek! Help me! I can feel something attacking me!"))
+    msgbox(format("Eek! Somebody help me!\nI can feel something attacking me!"))
     release
 
     //battle
@@ -110,10 +110,12 @@ script SilversunCity_Sewers_Duskull_Event{
 
     removeobject(15)
 
-
+    delay(16)
     //rest of event
     applymovement(9, moves(walk_up*3))
-    msgbox(format("Is...is it gone?\pOh my, you saved me! Thank you so much!\pI was so worried...I need to return to my husband quickly. He must be even more worried!\pHe sent you?\pOkay, let's go to him together."))
+    waitmovement(0)
+    delay(16)
+    msgbox(format("Is...is it gone?\pOh my, you saved me! Thank you so much!\pI was so worried...I need to return to my husband. He must be even more worried!\pHe sent you?\pOkay, let's go to him together."))
     release
     setflag(FLAG_SEWERS_DUSKULL_FIGHT_COMPLETE)
     setvar(VAR_SEWERS_DUSKULL, 3)
@@ -188,12 +190,18 @@ script SilversunCity_Sewers_NPC1{
 }
 //scientist (trade)
 script SilversunCity_Sewers_NPC2{
-    msgbox(format("You see that giant filtration device? I was in charge of building it. My Magnemite and I worked tirelessly to finish it in time. It's our biggest accomplishment!"), MSGBOX_NPC)
+    msgbox(format("You see that giant filtration device?\nI was in charge of building it!\lMy Electrode and I worked around the clock to finish it in time.\pIt's our biggest accomplishment!"), MSGBOX_NPC)
+    end
+}
+script SilversunCity_Sewers_Electrode{
+    playmoncry(SPECIES_ELECTRODE_HISUI, CRY_MODE_NORMAL)
+    msgbox(format("Electrode is beaming with pride!"), MSGBOX_NPC)
+    release
     end
 }
 //woman in middle
 script SilversunCity_Sewers_NPC3{
-    msgbox(format("There are some creepy-looking fellows up ahead. I think they're selling something illegal, but they won't sell to anyone who doesn't have some type of emblem. It's like a secret society!"), MSGBOX_NPC)
+    msgbox(format("There are some creepy-looking fellows ahead. I think they're selling something illegal, but they won't sell to anyone who doesn't have some type of emblem.\pIt's like a secret society!"), MSGBOX_NPC)
     end
 }
 //dude at market
@@ -222,8 +230,8 @@ script SilversunCity_Sewers_NPC5{
 
 //Trainers
 script SilversunCity_Sewers_Trainer_A{
-    trainerbattle_single(TRAINER_SEWERS_A, format("I'm not like the other rich kids at school, because I'm not afraid to get my hands dirty!"), "Your hands are dirty too!")
-    msgbox(format("I came down here to catch some POISON type Pokémon to round out my team, but I should go back up now. This place stinks."))
+    trainerbattle_single(TRAINER_SEWERS_A, format("I'm not like the other rich kids at school, because I'm not afraid to get\lmy hands dirty!"), "Your hands are dirty too!")
+    msgbox(format("I came down here to catch some POISON type Pokémon for my team, but I should go back up now. This place stinks."))
     releaseall
     end
 }
@@ -243,7 +251,7 @@ script SilversunCity_Sewers_Trainer_C{
 }
 
 script SilversunCity_Sewers_Trainer_C_GiveItem{
-    msgbox(format("Hey you're a pretty rocking trainer. But you gotta wear it on your sleeves! You're probably not ready to rock out on an electric guitar yet, but why don't you take this Blue Flute? The instrument doesn't matter, man! It's all about the spirit."))
+    msgbox(format("Hey you're a pretty rocking trainer.\nBut you gotta wear it on your sleeves!\lYou're probably not ready to rock out on an electric guitar yet, but why don't you take this Blue Flute? The instrument doesn't matter, man!\lIt's all about the spirit."))
     release
     giveitem(ITEM_BLUE_FLUTE)
     releaseall

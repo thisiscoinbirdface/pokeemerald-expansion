@@ -421,6 +421,10 @@ script WhiteSign_Rivetshore_Ranger{
 
 
 //VictoryRoad/Cape
+script WhiteSign_VictoryRoad{
+    msgbox(format("Victory Road"), MSGBOX_SIGN)
+    end
+}
 script WhiteSign_VictoryCape_Main{
     msgbox(format("Victory Cape\nThe Cormoria Pokémon Championship"), MSGBOX_SIGN)
     end

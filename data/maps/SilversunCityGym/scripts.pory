@@ -35,11 +35,11 @@ script SilversunCityGym_EventScript_Red{
         }
     } else { 
         if (flag(FLAG_SILVERSUNGYM_SPENSER_WATER)){
-            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym\land made a theater studio instead!\pSilversun City is congested, so\nreal estate is quite expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
         } else {
             msgbox(format("Welcome to the Silversun Gym...and Theater Studio! First, have some water."))
             giveitem(ITEM_FRESH_WATER)
-            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym and made a theater studio instead!\pSilversun City is congested, so space is expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
+            msgbox(format("When Gloria was appointed leader, she took all the funds to set up her gym\land made a theater studio instead!\pSilversun City is congested, so\nreal estate is quite expensive.\pNobody here is interested in battling, but the rules are if you want to be a part of Gloria's productions, you have to help maintain the gym."))
             setflag(FLAG_SILVERSUNGYM_SPENSER_WATER)
         }
     }
@@ -94,7 +94,7 @@ script SilversunCityGym_Red_Reward_End{
 
 //Trainers
 script SilversunCityGym_TrainerA {
-    trainerbattle_single(TRAINER_SILVERSUNGYM_A, format("Hey, you're not an actor! Oh, you're a trainer? Sigh...why does Gloria make us do this?"), format("Yay. I lost. Now back to acting!"))
+    trainerbattle_single(TRAINER_SILVERSUNGYM_A, format("You're not an actor! Oh, a trainer?\nSigh...why does Gloria make us do this?"), format("Yay. I lost. Now back to acting!"))
     msgbox(format("Acting is a passion and a craft! We don't have time to battle."))
     release
     end

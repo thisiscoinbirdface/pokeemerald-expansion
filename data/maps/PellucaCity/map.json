@@ -1321,7 +1321,7 @@
       "x": 6,
       "y": 27,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_ToCableCar"
     },
     {
@@ -1329,7 +1329,7 @@
       "x": 6,
       "y": 44,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_Fishery"
     },
     {
@@ -1337,7 +1337,7 @@
       "x": 31,
       "y": 38,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_GameCorner"
     },
     {
@@ -1345,7 +1345,7 @@
       "x": 69,
       "y": 18,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_Main"
     },
     {
@@ -1353,7 +1353,7 @@
       "x": 44,
       "y": 38,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_MayorHouse"
     },
     {
@@ -1361,7 +1361,7 @@
       "x": 44,
       "y": 44,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_PellucaCity_Restaurant"
     }
   ]

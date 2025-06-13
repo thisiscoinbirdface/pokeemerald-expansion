@@ -198,10 +198,10 @@ SilversunCityGym_EventScript_Red_Text_1:
 SilversunCityGym_EventScript_Red_Text_2:
 # 38 "data//maps/SilversunCityGym/scripts.pory"
 	.string "When Gloria was appointed leader, she\n"
-	.string "took all the funds to set up her gym and\l"
-	.string "made a theater studio instead!\p"
-	.string "Silversun City is congested, so space is\n"
-	.string "expensive.\p"
+	.string "took all the funds to set up her gym\l"
+	.string "and made a theater studio instead!\p"
+	.string "Silversun City is congested, so\n"
+	.string "real estate is quite expensive.\p"
 	.string "Nobody here is interested in battling,\n"
 	.string "but the rules are if you want to be a\l"
 	.string "part of Gloria's productions, you have\l"
@@ -235,9 +235,8 @@ SilversunCityGym_Red_Reward_End_Text_0:
 
 SilversunCityGym_TrainerA_Text_0:
 # 97 "data//maps/SilversunCityGym/scripts.pory"
-	.string "Hey, you're not an actor! Oh, you're a\n"
-	.string "trainer? Sigh...why does Gloria make us\l"
-	.string "do this?$"
+	.string "You're not an actor! Oh, a trainer?\n"
+	.string "Sigh...why does Gloria make us do this?$"
 
 SilversunCityGym_TrainerA_Text_1:
 # 97 "data//maps/SilversunCityGym/scripts.pory"

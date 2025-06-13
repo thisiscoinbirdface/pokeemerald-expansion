@@ -554,7 +554,7 @@
       "x": 45,
       "y": 16,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_Route6_ToSilversun"
     },
     {
@@ -562,7 +562,7 @@
       "x": 12,
       "y": 104,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_Route6_ToPelluca"
     },
     {
@@ -570,7 +570,7 @@
       "x": 57,
       "y": 109,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WhiteSign_Route6_RangerInstitute"
     }
   ]

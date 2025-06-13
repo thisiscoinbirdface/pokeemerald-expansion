@@ -585,9 +585,9 @@ SilversunCity_Theater_NPC1_Text_0:
 
 SilversunCity_Theater_NPC1_Text_1:
 # 152 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Gloria is the face of Silversun City! A\n"
-	.string "Gym Leader AND a famous actress? She's\l"
-	.string "really a role model for women.$"
+	.string "Gloria is the face of Silversun City!\n"
+	.string "A Gym Leader AND a famous actress?\l"
+	.string "She's really a role model for women.$"
 
 SilversunCity_Theater_NPC2_Text_0:
 # 159 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -612,8 +612,8 @@ SilversunCity_Theater_NPC3_Text_0:
 
 SilversunCity_Theater_NPC3_Text_1:
 # 170 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "I wish Pokémon were allowed in. I\n"
-	.string "would've brought my Budew along to\l"
+	.string "I wish Pokémon were allowed in.\n"
+	.string "I would've brought my Budew along to\l"
 	.string "watch...hey! How'd they let your Pokémon\l"
 	.string "in? That's so unfair!$"
 
@@ -649,14 +649,14 @@ SilversunCity_Theater_NPC5_Text_2:
 SilversunCity_Theater_NPC5_Text_3:
 # 197 "data//maps/SilversunCity_Theater/scripts.pory"
 	.string "It's so hard to see what's going on from\n"
-	.string "the back without a pair of lenses. Are\l"
-	.string "you going to watch the show from here\l"
-	.string "too?$"
+	.string "the back without a pair of lenses.\l"
+	.string "Are you going to watch the show from\l"
+	.string "back here too?$"
 
 SilversunCity_Theater_NPC5_Text_4:
 # 201 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "Got better seats? Good for you! I wish\n"
-	.string "I'd booked mine faster.$"
+	.string "Got better seats? Good for you!\n"
+	.string "I wish I'd booked mine faster.$"
 
 SilversunCity_Theater_Lens_Reward_Text_0:
 # 209 "data//maps/SilversunCity_Theater/scripts.pory"
@@ -677,8 +677,8 @@ SilversunCity_Theater_Lens_RewardA_Text_0:
 
 SilversunCity_Theater_Lens_RewardEnd_Text_0:
 # 246 "data//maps/SilversunCity_Theater/scripts.pory"
-	.string "You can use it outside of the theater\n"
-	.string "too!$"
+	.string "It's not just for inside the theater.\n"
+	.string "You can use it in battle too!$"
 
 SilversunCity_Theater_NPC6_Text_0:
 # 261 "data//maps/SilversunCity_Theater/scripts.pory"

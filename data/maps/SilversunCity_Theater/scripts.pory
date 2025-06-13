@@ -149,7 +149,7 @@ script SilversunCity_Theater_NPC1{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("Gloria is graceful even in defeat. Now that's something everyone can learn from."), MSGBOX_NPC)
     } else {
-        msgbox(format("Gloria is the face of Silversun City! A Gym Leader AND a famous actress? She's really a role model for women."), MSGBOX_NPC)
+        msgbox(format("Gloria is the face of Silversun City!\nA Gym Leader AND a famous actress?\lShe's really a role model for women."), MSGBOX_NPC)
     }
     end
 }
@@ -167,7 +167,7 @@ script SilversunCity_Theater_NPC3{
     if (flag(FLAG_BADGE04_GET)){
         msgbox(format("...\pFine, I threw the tomato!\nI'm sorry...\p...\p...no, I'm not! I love Gloria!\nBoo to you!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I wish Pokémon were allowed in. I would've brought my Budew along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
+        msgbox(format("I wish Pokémon were allowed in.\nI would've brought my Budew along to watch...hey! How'd they let your Pokémon in? That's so unfair!"), MSGBOX_NPC)
     }
     end
 }
@@ -194,11 +194,11 @@ script SilversunCity_Theater_NPC5{
         if (flag(FLAG_SILVERSUN_THEATER_LENS)){
             msgbox(format("Ahh, now let's settle in and watch Gloria's performance."), MSGBOX_NPC)
         } else {
-            msgbox(format("It's so hard to see what's going on from the back without a pair of lenses. Are you going to watch the show from here too?"), MSGBOX_YESNO)
+            msgbox(format("It's so hard to see what's going on from the back without a pair of lenses.\lAre you going to watch the show from back here too?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == 1){
                 goto(SilversunCity_Theater_Lens_Reward)
             } else {
-                msgbox(format("Got better seats? Good for you! I wish I'd booked mine faster."), MSGBOX_NPC)
+                msgbox(format("Got better seats? Good for you!\nI wish I'd booked mine faster."), MSGBOX_NPC)
             }
         }
     }
@@ -243,7 +243,7 @@ script SilversunCity_Theater_Lens_RewardB{
 }
 script SilversunCity_Theater_Lens_RewardEnd{
     setflag(FLAG_SILVERSUN_THEATER_LENS)
-    msgbox(format("You can use it outside of the theater too!"), MSGBOX_NPC)
+    msgbox(format("It's not just for inside the theater.\nYou can use it in battle too!"), MSGBOX_NPC)
     end
 }
 
