@@ -20,6 +20,33 @@ script MirrohBaseCamp_Houses_Historian{
         msgbox(format("I see...so this Team Somber wants to re-enter the past using the dreamstones? How interesting. To think we've reached an age where humankind can control a dreamstone...incredible, but terrifying at the same time."))
         release
         delay(30)
+
+        //if you have ancient stone
+        checkitem(ITEM_ANCIENT_STONE)
+        if (var(VAR_RESULT) == 1){
+            applymovement(1, moves(emote_question_mark))
+            waitmovement(0)
+            delay(16)
+            speakername("Martha")
+            msgbox(format("You brought something back from there? Shall we take a look?"))
+            release
+            delay(8)
+            removeitem(ITEM_ANCIENT_STONE)
+            playfanfare(MUS_LEVEL_UP)
+            message(format("{PLAYER} gave Martha the Ancient Stone."))
+            waitfanfare
+            release
+            delay(8)
+            applymovement(1, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(16)
+            speakername("Martha")
+            msgbox(format("Oh my! What a find!\pThis is a Mega Stone, {PLAYER}. It's to be used by a rare ancient Pokemon known as Aerodactyl.\pAn incredible piece of ancient history. You must treasure it!"))
+            giveitem(ITEM_AERODACTYLITE)
+            release
+            delay(16)
+        }
+
         speakername("Martha")
         msgbox(format("You must have seen it yourself, {PLAYER}. To the best of our knowledge, Ancient Cormoria was a harsh, barren and dangerous continent, ravaged by fearsome Pokémon that fought each other. Today, all we have are the damaged fossilised remains of those Pokémon. By analysing the fossils and comparing, say, a bite mark on one fossil to another's teeth, we can identify different Pokémon.\p...\pBut there was one fossil we found that was damaged in ways...in ways so horrific they...well...\pNo Pokémon we knew of could give us an answer. What kind of monstrous being could do something like that?"))
         release

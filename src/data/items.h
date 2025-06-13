@@ -14543,6 +14543,22 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_BurnDrive,
         .iconPalette = gItemIconPalette_BurnDrive,
     },
+    [ITEM_ANCIENT_STONE] =
+    {
+        .name = _("Aerodactylite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "A strange stone\n"
+            "found in Ancient\n"
+            "Cormoria."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Aerodactylite,
+        .iconPalette = gItemIconPalette_Aerodactylite,
+    },    
 };
 
 
