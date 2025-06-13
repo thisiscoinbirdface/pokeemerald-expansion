@@ -1,0 +1,64 @@
+mapscripts Route8_House_MapScripts{}
+
+script Route8_House_Unfezant{
+    playmoncry(SPECIES_UNFEZANT, CRY_MODE_NORMAL)
+    msgbox(format("Unfezant regards you with wise eyes."), MSGBOX_NPC)
+    end    
+}
+script Route8_House_Unfezant{
+    playmoncry(SPECIES_UNFEZANT, CRY_MODE_NORMAL)
+    msgbox(format("Oranguru carefully measures you."), MSGBOX_NPC)
+    end    
+}
+
+script Route8_House_Tutor{
+    msgbox(format("Rare to see a trainer around these parts. Most just come for a swim.\pI was never much for brute strength in battle. My Unfezant and Oranguru won battles with wit and strategy!"))
+    msgbox(format("In exchange for one Yellow Shard, should I teach a skilful move?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("The three of us will be here."), MSGBOX_NPC)
+        releaseall
+        end        
+    }
+
+    checkitem(ITEM_YELLOW_SHARD)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You don't have a Yellow Shard.\nCome again when you have one!"), MSGBOX_NPC)
+        releaseall
+        end        
+    }
+
+    message(format("Which move should I teach?"))
+    waitmessage
+    dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Tailwind", "Trick Room", "Cancel")  
+
+    if (var(VAR_RESULT) == 0)  {
+        setvar(VAR_0x8005, MOVE_TAILWIND)
+        goto(Route8_Tutor_TeachMoveShard)
+    }
+    if (var(VAR_RESULT) == 1)  {
+        setvar(VAR_0x8005, MOVE_TRICK_ROOM)
+        goto(Route8_Tutor_TeachMoveShard)
+    }
+
+    msgbox(format("The three of us will be here."), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script Route8_Tutor_TeachMoveShard{
+    call(MoveTutor_EventScript_OpenPartyMenu)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("The three of us will be here."), MSGBOX_NPC)
+    } else {
+        removeitem(ITEM_GREEN_SHARD)
+        msgbox(format("Control the battlefield, trainer!\nAnd you will control the outcome."), MSGBOX_NPC)
+    }
+
+    releaseall
+    end
+}
+

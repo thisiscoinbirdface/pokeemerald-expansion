@@ -456,7 +456,7 @@ script Route6_Tutor_Weather{
     lockall
     faceplayer
     msgbox(format("I'm part of the Geological Research Squad. Our scientists track weather patterns while I collect field data! I can teach your Pokémon to change the weather in battle."))
-    msgbox(format("In exchange for one Green Shard, should I teach a move?"), MSGBOX_YESNO)
+    msgbox(format("In exchange for one Green Shard, should I teach a weather move?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
@@ -501,12 +501,19 @@ script Route6_Tutor_Weather{
 script Route6_Tutor_Fangs{
     lockall
     faceplayer
+
+    if (flag(FLAG_TUTOR_FANGS)){
+        msgbox(format("Bare your teeth, Ranger!\p...\pMaybe I should have taught you a dentist's phone number instead..."), MSGBOX_NPC)
+        releaseall
+        end
+    }
+
     msgbox(format("I train new Candidates in raising strong partners. I can teach your Pokémon some new moves if you like! But I can only teach one move per Ranger."))
     msgbox(format("This tutor will only teach a\pmove once, so choose carefully!"), MSGBOX_POKENAV)
     message(format("Which move should I teach?"))
     waitmessage
     dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Fire Fang", "Ice Fang", "Thunder Fang", "Psychic Fangs")  
+        "Fire Fang", "Ice Fang", "Thunder Fang", "Psychic Fangs", "Cancel")  
 
     if (var(VAR_RESULT) == 0)  {
         setvar(VAR_0x8005, MOVE_FIRE_FANG)
@@ -535,6 +542,7 @@ script Route6_Tutor_TeachMove{
     if (var(VAR_RESULT) == 0){
         msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
     } else {
+        setflag(FLAG_TUTOR_FANGS)
         msgbox(format("Your Pokémon look strong now!\nGood luck, Ranger!"), MSGBOX_NPC)
     }
 
