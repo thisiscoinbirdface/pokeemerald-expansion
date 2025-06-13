@@ -48,14 +48,29 @@ script SilversunCity_Houses_Artist{
 
     if (var(VAR_SILVERSUN_ARTIST) == 0){
         speakername("???")
-        msgbox(format("Myself, I have no patience for theater. No no! Although Gloria is indeed fantastic. I admire her interpretation of the morbid.\pMe? My creative pulse compels me to bring the world to life through paint and brush!"))
+        msgbox(format("Myself, I have no patience for theater. No no! Although Gloria is fantastic.\lSuch style and technique! I admire her interpretation of the morbid.\pMe?\pMy creativity compels me to bring the world to life through paint and brush!"))
         release
         delay(16)
         speakername("Arsalan")
-        msgbox(format("Yes yes! I am none other than the legendary Arsalan. My works adorn the most prestigious walls in Cormoria!\p...\pBut Arsalan is struggling now. Why, you ask? Well well.\pYou see, I am trying to paint something never attempted before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas. I need some Black Sludge.\pWill you help me?"), MSGBOX_YESNO)
+        msgbox(format("Yes yes! I am indeed none other than the legendary Arsalan. My works adorn the most prestigious walls in Cormoria!\p..."))
+        release
+        delay(8)
+        applymovement(2, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(20)
+        speakername("Arsalan")
+        msgbox(format("You haven't heard of me?\nUncultured, you are!"))
+        release
+        delay(16)
+        speakername("Arsalan")
+        msgbox(format("But Arsalan is struggling now.\pWhy, you ask?\pWell well.\pYou see, I am trying to paint something never done before - the night itself! And for this, I need a paint so dark it swallows you. These regular paints aren't worthy of being on my canvas.\lI need to create a unique shade of black using some Black Sludge.\pWill you help me?"), MSGBOX_YESNO)
+        release
         if (var(VAR_RESULT) == 1){
+            applymovement(2, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(24)            
             speakername("Arsalan")
-            msgbox(format("Arsalan is most pleased! I eagerly await your return."), MSGBOX_NPC)
+            msgbox(format("Arsalan is most pleased!\nI eagerly await your return."), MSGBOX_NPC)
             release
             //Start quest
             setvar(VAR_SILVERSUN_ARTIST, 1)
@@ -66,7 +81,7 @@ script SilversunCity_Houses_Artist{
             waitmovement(0)
             delay(24)
             speakername("Arsalan")
-            msgbox(format("Just use the regular black paint, you say? Pah! Philistine!"), MSGBOX_NPC)
+            msgbox(format("Just use the regular paint, you say?\pPah! Philistine!"), MSGBOX_NPC)
             release
         }
     }
@@ -95,11 +110,11 @@ script SilversunCity_Houses_NPC1{
     end
 }
 script SilversunCity_Houses_NPC2{
-    msgbox(format("They say dangerous Pokémon come out from the sewers from time to time, like the SEWER SCOURGE. Apparently that's not even a Pokémon, it's an evil spirit! I don't let my child play anywhere near it!"), MSGBOX_NPC)
+    msgbox(format("They say dangerous Pokémon come out from the sewers from time to time, like the Sewer Scourge. Apparently that's not even a Pokémon, it's an evil spirit! I don't let my child play near it!"), MSGBOX_NPC)
     end
 }
 script SilversunCity_Houses_NPC3{
-    msgbox(format("I really want a Toxel as my first Pokémon but Mom will never let me have one."), MSGBOX_NPC)
+    msgbox(format("I want a Toxel as my first Pokémon but Mom will never let me have one."), MSGBOX_NPC)
     end
 }
 

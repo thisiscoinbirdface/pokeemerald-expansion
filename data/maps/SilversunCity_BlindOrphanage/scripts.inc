@@ -730,8 +730,7 @@ SilversunCity_BlindOrphanage_PokedexGameStart_Text_0:
 # 10 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I'm looking for a book on all the\n"
 	.string "Pokémon in Cormoria! But I'm too short\l"
-	.string "to touch the braille on the book\l"
-	.string "covers...$"
+	.string "to touch the braille on the covers...$"
 
 SilversunCity_BlindOrphanage_PokedexGameStart_Text_1:
 # 19 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -810,8 +809,7 @@ SilversunCity_BlindOrphanage_BrailleGameStart_Text_2:
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_3:
 # 185 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Sheena is about to take a braille test.\n"
-	.string "Would you like to volunteer and help\l"
-	.string "out?$"
+	.string "Would you like to help us out?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_4:
 # 189 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -820,10 +818,10 @@ SilversunCity_BlindOrphanage_BrailleGameStart_Text_4:
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_5:
 # 200 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "Excellent. Sheena has to read three\n"
-	.string "sentences in braille correctly. I'll give\l"
-	.string "Sheena the questions, and you keep a\l"
-	.string "tally of her answers, okay?$"
+	.string "Great. Sheena has to read three\n"
+	.string "sentences in braille correctly.\l"
+	.string "I'll give Sheena the questions, and you\l"
+	.string "keep a tally of her answers, okay?$"
 
 SilversunCity_BlindOrphanage_BrailleGameStart_Text_6:
 # 205 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -904,7 +902,7 @@ SilversunCity_BlindOrphanage_NPC_1_Text_0:
 SilversunCity_BlindOrphanage_NPC_2_Text_0:
 # 294 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Sometimes I imagine what colors look\n"
-	.string "like when Ralts sends me warm thoughts.\l"
+	.string "like when Ralts sends me warm thoughts.\p"
 	.string "Is yellow warm?$"
 
 SilversunCity_BlindOrphanage_NPC_3_Text_0:
@@ -915,14 +913,13 @@ SilversunCity_BlindOrphanage_NPC_3_Text_0:
 
 SilversunCity_BlindOrphanage_NPC_5_Text_0:
 # 310 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "I gave my Noibat to the orphanage. Now\n"
-	.string "it helps the kids walk around at night.$"
+	.string "I gave my Noibat to the orphanage.\n"
+	.string "It helps the kids walk around at night.$"
 
 SilversunCity_BlindOrphanage_NPC_6_Text_0:
 # 318 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "I listen to people's footsteps. Yours\n"
-	.string "sound kind of...bouncy. Are you happy\l"
-	.string "today?$"
+	.string "sound...bouncy. Are you happy today?$"
 
 SilversunCity_BlindOrphanage_Ralts_Text_0:
 # 325 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
@@ -949,13 +946,13 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_1:
 # 364 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Ah, a visitor? You'll have to speak up,\n"
 	.string "my ears aren't what they used to be...\p"
-	.string "Welcome to my little dream. This\n"
-	.string "place...it's more than walls and windows.\l"
-	.string "It's where light finds those who've\l"
-	.string "never seen it. They told me it was\l"
-	.string "impossible. Blind children with Pokémon\l"
-	.string "was too dangerous, they said. And yet,\l"
-	.string "look around. There's more trust in these\l"
+	.string "Welcome to my little dream. This place...\n"
+	.string "it's more than walls and windows. It's\l"
+	.string "where light finds those who've never\l"
+	.string "seen it. They told me it was impossible.\l"
+	.string "Blind children with Pokémon was too\l"
+	.string "dangerous, they said. And yet, look\l"
+	.string "around. There's more trust in these\l"
 	.string "halls than in half the world.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_2:
@@ -973,22 +970,20 @@ SilversunCity_BlindOrphanage_OldManQuest_Text_3:
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_4:
 # 382 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
-	.string "You've got the look of someone with a\n"
-	.string "kind heart - and strong legs. Both are\l"
-	.string "useful around here. Tell me, would you\l"
-	.string "consider helping out around the\l"
-	.string "orphanage for a while? The children and\l"
-	.string "their Pokémon could use a little extra\l"
-	.string "care.$"
+	.string "You've got the look of someone with\n"
+	.string "a kind heart - and strong legs.\l"
+	.string "Both are useful around here.\p"
+	.string "Would you consider volunteering here\n"
+	.string "for a while? The children and their\l"
+	.string "Pokémon could use a little extra care.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_5:
 # 384 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"
 	.string "Excellent! Kindness like yours is what\n"
 	.string "keeps us going. You won't have to do\l"
 	.string "much - just lend a hand here and there.\l"
-	.string "Please ask around for people in need of\l"
-	.string "help. Come speak to me again once you're\l"
-	.string "finished.$"
+	.string "Please ask around to see who's in need\l"
+	.string "of help. Speak to me once finished.$"
 
 SilversunCity_BlindOrphanage_OldManQuest_Text_6:
 # 390 "data//maps/SilversunCity_BlindOrphanage/scripts.pory"

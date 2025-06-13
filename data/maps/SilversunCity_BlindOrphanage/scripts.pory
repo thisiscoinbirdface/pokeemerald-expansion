@@ -7,11 +7,11 @@ script SilversunCity_BlindOrphanage_PokedexGameStart{
 
     //Pre-quest
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
+        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the covers..."), MSGBOX_NPC)
         end
     }
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the book covers..."), MSGBOX_NPC)
+        msgbox(format("I'm looking for a book on all the Pokémon in Cormoria! But I'm too short to touch the braille on the covers..."), MSGBOX_NPC)
         end
     }    
 
@@ -182,7 +182,7 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     }    
 
     speakername("Teacher")
-    msgbox(format("Sheena is about to take a braille test. Would you like to volunteer and help out?"), MSGBOX_YESNO)
+    msgbox(format("Sheena is about to take a braille test. Would you like to help us out?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         speakername("Teacher")
@@ -197,7 +197,7 @@ script SilversunCity_BlindOrphanage_BrailleGameStart{
     }
 
     speakername("Teacher")
-    msgbox(format("Excellent. Sheena has to read three sentences in braille correctly. I'll give Sheena the questions, and you keep a tally of her answers, okay?"))
+    msgbox(format("Great. Sheena has to read three\nsentences in braille correctly.\lI'll give Sheena the questions, and you keep a tally of her answers, okay?"))
     release
     delay(30)
     applymovement(5, moves(face_left))
@@ -291,7 +291,7 @@ script SilversunCity_BlindOrphanage_NPC_1{
 script SilversunCity_BlindOrphanage_NPC_2{
     lockall
     faceplayer
-    msgbox(format("Sometimes I imagine what colors look like when Ralts sends me warm thoughts. Is yellow warm?"))
+    msgbox(format("Sometimes I imagine what colors look like when Ralts sends me warm thoughts.\pIs yellow warm?"))
     releaseall
     end
 }
@@ -307,7 +307,7 @@ script SilversunCity_BlindOrphanage_NPC_3{
 script SilversunCity_BlindOrphanage_NPC_5{
     lockall
     faceplayer
-    msgbox(format("I gave my Noibat to the orphanage. Now it helps the kids walk around at night."))
+    msgbox(format("I gave my Noibat to the orphanage.\nIt helps the kids walk around at night."))
     releaseall
     end
 }
@@ -315,7 +315,7 @@ script SilversunCity_BlindOrphanage_NPC_5{
 script SilversunCity_BlindOrphanage_NPC_6{
     lockall
     faceplayer
-    msgbox(format("I listen to people's footsteps. Yours sound kind of...bouncy. Are you happy today?"))
+    msgbox(format("I listen to people's footsteps. Yours sound...bouncy. Are you happy today?"))
     releaseall
     end
 }
@@ -361,7 +361,7 @@ script SilversunCity_BlindOrphanage_OldManQuest{
     }
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 0){
-        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...it's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. Blind children with Pokémon was too dangerous, they said. And yet, look around. There's more trust in these halls than in half the world."))
+        msgbox(format("Ah, a visitor? You'll have to speak up, my ears aren't what they used to be...\pWelcome to my little dream. This place...\nit's more than walls and windows. It's where light finds those who've never seen it. They told me it was impossible. Blind children with Pokémon was too dangerous, they said. And yet, look around. There's more trust in these halls than in half the world."))
         setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 1)
         delay(24)
     }
@@ -379,9 +379,9 @@ script SilversunCity_BlindOrphanage_OldManQuest{
 
 
     if (var(VAR_SILVERSUN_ORPHANAGE_MAINQUEST) == 1){
-        msgbox(format("You've got the look of someone with a kind heart - and strong legs. Both are useful around here. Tell me, would you consider helping out around the orphanage for a while? The children and their Pokémon  could use a little extra care."), MSGBOX_YESNO)
+        msgbox(format("You've got the look of someone with\na kind heart - and strong legs.\lBoth are useful around here.\pWould you consider volunteering here for a while? The children and their Pokémon could use a little extra care."), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Excellent! Kindness like yours is what keeps us going. You won't have to do much - just lend a hand here and there. Please ask around for people in need of help. Come speak to me again once you're finished."))
+            msgbox(format("Excellent! Kindness like yours is what keeps us going. You won't have to do much - just lend a hand here and there. Please ask around to see who's in need of help. Speak to me once finished."))
             release
             //start quest
             setvar(VAR_SILVERSUN_ORPHANAGE_MAINQUEST, 2)

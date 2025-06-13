@@ -694,7 +694,7 @@ MirrohPeak_EventScript_Somber_Skip::
 # 424 "data//maps/MirrohPeak/scripts.pory"
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_7
 # 427 "data//maps/MirrohPeak/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 # 428 "data//maps/MirrohPeak/scripts.pory"
 	warp MAP_ANCIENT_MIRROH, 12, 22
 # 429 "data//maps/MirrohPeak/scripts.pory"

@@ -304,8 +304,7 @@ script LilyPond_Fisherman_C{
     msgbox(format("We were four brothers. Many years ago, we came to Lily Pond to fish for our first Pokémon. While three of us stayed here, our youngest brother said he wanted to go down the waterfall and into Ivy River. We tried to stop him, but he went away, and was never seen again."))
     release
     delay(16)
-    message(format("A sad story, I know."))
-    waitmessage
+    msgbox(format("A sad story, I know."), MSGBOX_NPC)
 
     releaseall
     end

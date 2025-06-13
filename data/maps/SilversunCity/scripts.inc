@@ -510,7 +510,8 @@ SilversunCity_OnFrame_Text_14:
 
 SilversunCity_EventScript_Detectives_Text_0:
 # 110 "data//maps/SilversunCity/scripts.pory"
-	.string "Have you found the Professor yet? No?\n"
+	.string "Have you found the Professor yet?\p"
+	.string "No?\p"
 	.string "Then what are you standing here for?$"
 
 SilversunCity_EventScript_Detectives_Text_1:
@@ -528,8 +529,7 @@ SilversunCity_EventScript_Detectives_Text_2:
 
 SilversunCity_EventScript_Detectives_Text_3:
 # 132 "data//maps/SilversunCity/scripts.pory"
-	.string "Better. Now tell me - what updates have\n"
-	.string "you got?\p"
+	.string "Better. Now what updates have you got?\p"
 	.string "...\p"
 	.string "What!? You overheard a Team Somber\n"
 	.string "grunt talking about the Pofessor?$"
@@ -543,9 +543,9 @@ SilversunCity_EventScript_Detectives_Text_4:
 	.string "And if you saw them here, it means the\n"
 	.string "Professor is trapped inside their\l"
 	.string "headquarters!\p"
-	.string "{PLAYER}, it's clear what to do. The\n"
-	.string "next task is to find Team Somber's HQ\l"
-	.string "and free the Professor.\p"
+	.string "{PLAYER}, it's clear what to do.\p"
+	.string "The next task is to find Team Somber's\n"
+	.string "HQ and free the Professor.\p"
 	.string "Rue has given us a separate lead that\n"
 	.string "Kohla is following up on, so you're on\l"
 	.string "your own on this one.\p"
@@ -572,9 +572,8 @@ SilversunCity_NPC3_Text_0:
 
 SilversunCity_NPC4_Text_0:
 # 176 "data//maps/SilversunCity/scripts.pory"
-	.string "We keep seeing wild Koffing and Toxel\n"
-	.string "around...they come from the sewers, I\l"
-	.string "bet.$"
+	.string "We keep seeing wild Grimer around...\n"
+	.string "they come from the sewers, I bet.$"
 
 SilversunCity_NPC5_Text_0:
 # 181 "data//maps/SilversunCity/scripts.pory"
@@ -583,12 +582,9 @@ SilversunCity_NPC5_Text_0:
 	.string "They say a demon Pokémon haunts the\n"
 	.string "sewers. It's even scarier than all the\l"
 	.string "POISON-type Pokémon down there!\p"
-	.string "They call it the SEWER SCOURGE, and\n"
-	.string "apparently, before it attacks you, you\l"
-	.string "can hear a spooky engine revving!\p"
-	.string "How scary is that?\p"
-	.string "...but its probably just someone's\n"
-	.string "imagination.$"
+	.string "They call it the Sewer Scourge, and\n"
+	.string "apparently, before it attacks you,\l"
+	.string "you can hear a spooky engine revving!$"
 
 SilversunCity_NPC6_Text_0:
 # 186 "data//maps/SilversunCity/scripts.pory"
@@ -604,9 +600,9 @@ SilversunCity_NPC7_Text_0:
 
 SilversunCity_NPC8_Text_0:
 # 196 "data//maps/SilversunCity/scripts.pory"
-	.string "Did you hear about the Mega Sharpedo in\n"
-	.string "Hoya River? Apparently its headed to\l"
-	.string "Pelluca City.$"
+	.string "Did you hear about the Mega Sharpedo\n"
+	.string "in the Hoya River? Apparently it's\l"
+	.string "headed to Pelluca City.$"
 
 SilversunCity_Murkrow_Text_0:
 # 202 "data//maps/SilversunCity/scripts.pory"

@@ -245,8 +245,8 @@ Route5_NPC_B_Text_0:
 Route5_NPC_C_Text_0:
 # 22 "data//maps/Route5/scripts.pory"
 	.string "I wish they'd clear those boulders in\n"
-	.string "Vilethorn Woods! It's blocking the path\l"
-	.string "back to Galecrest City.$"
+	.string "Vilethorn Woods! It's blocking the\l"
+	.string "path back to Galecrest City.$"
 
 Route5_Berger_Text_0:
 # 33 "data//maps/Route5/scripts.pory"

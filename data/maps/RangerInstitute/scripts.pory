@@ -534,7 +534,7 @@ script RangerInstitute_Pokeball_One{
 
         showmonpic(SPECIES_TAUROS_PALDEA_BLAZE, 10,3)
         playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)
-        msgbox("Do you want to choose the fiery Tauros?", MSGBOX_YESNO)
+        msgbox(format("Do you want to choose the\nfiery Tauros?"), MSGBOX_YESNO)
         release
         if(var(VAR_RESULT) == YES){
             removeobject(4)
@@ -542,7 +542,13 @@ script RangerInstitute_Pokeball_One{
             setflag(FLAG_SYS_POKEMON_GET)
 
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox(format("The Ranger Institute has gifted you a Tauros!"))
+            message(format("The Ranger Institute has gifted you\na Tauros!"))
+            waitfanfare
+            release
+            if (var(VAR_RESULT) == MON_GIVEN_TO_PC){
+                msgbox(format("Tauros was sent to your PC."))
+                release
+            }
             hidemonpic
             removeobject(1)
             setflag(FLAG_RANGER_SELECTED_MON_ONE)
@@ -565,7 +571,7 @@ script RangerInstitute_Pokeball_Two{
 
         showmonpic(SPECIES_KANGASKHAN, 10,3)
         playmoncry(SPECIES_KANGASKHAN, CRY_MODE_NORMAL)
-        msgbox("Do you want to choose the dominating Kangaskhan?", MSGBOX_YESNO)
+        msgbox(format("Do you want to choose the\ndominating Kangaskhan?"), MSGBOX_YESNO)
         release
         if(var(VAR_RESULT) == YES){
             removeobject(4)
@@ -573,12 +579,17 @@ script RangerInstitute_Pokeball_Two{
             setflag(FLAG_SYS_POKEMON_GET)
 
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox(format("The Ranger Institute has gifted you a Kangaskhan!"))
+            message(format("The Ranger Institute has gifted you\na Kangaskhan!"))
+            waitfanfare
+            release
+            if (var(VAR_RESULT) == MON_GIVEN_TO_PC){
+                msgbox(format("Kangaskhan was sent to your PC."))
+                release
+            }
             hidemonpic
-            removeobject(1)
+            removeobject(2)
             setflag(FLAG_RANGER_SELECTED_MON_TWO)
             setvar(VAR_RANGER_INSTITUTE, 10)
-            hidemonpic
         } else {
             hidemonpic
         }
@@ -596,15 +607,22 @@ script RangerInstitute_Pokeball_Three{
 
         showmonpic(SPECIES_MANECTRIC, 10,3)
         playmoncry(SPECIES_MANECTRIC, CRY_MODE_NORMAL)
-        msgbox("Do you want to choose the proud Manectric?", MSGBOX_YESNO)
+        msgbox(format("Do you want to choose the\nproud Manectric?"), MSGBOX_YESNO)
+        release
         if(var(VAR_RESULT) == YES){
             removeobject(4)
             givemon(SPECIES_MANECTRIC, 45, ITEM_SITRUS_BERRY)
             setflag(FLAG_SYS_POKEMON_GET)
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox(format("The Ranger Institute has gifted you a Manectric!"))
+            message(format("The Ranger Institute has gifted you\na Manectric!"))
+            waitfanfare
+            release
+            if (var(VAR_RESULT) == MON_GIVEN_TO_PC){
+                msgbox(format("Manectric was sent to your PC."))
+                release
+            }
             hidemonpic
-            removeobject(1)
+            removeobject(3)
             setflag(FLAG_RANGER_SELECTED_MON_THREE)
             setvar(VAR_RANGER_INSTITUTE, 10)
         } else {

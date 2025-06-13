@@ -107,7 +107,7 @@ script SilversunCity_EventScript_Detectives{
 
     if (flag(FLAG_SILVERSUN_DETECTIVES_ENTER)){
         speakername("Detective")
-        msgbox(format("Have you found the Professor yet? No? Then what are you standing here for?"))
+        msgbox(format("Have you found the Professor yet?\pNo?\pThen what are you standing here for?"))
     } else {
 
         //talk
@@ -129,11 +129,11 @@ script SilversunCity_EventScript_Detectives{
         delay(24)
 
         speakername("Detective")
-        msgbox(format("Better. Now tell me - what updates have you got?\p...\pWhat!? You overheard a Team Somber grunt talking about the Pofessor?"))
+        msgbox(format("Better. Now what updates have you got?\p...\pWhat!? You overheard a Team Somber grunt talking about the Pofessor?"))
         release
         delay(30)
         speakername("Detective")
-        msgbox(format("This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do. The next task is to find Team Somber's HQ and free the Professor.\pRue has given us a separate lead that Kohla is following up on, so you're on your own on this one.\pGood luck."))
+        msgbox(format("This all but confirms our suspicions - Team Somber must be holding the Professor hostage! That's how they learned about the dreamstones.\pAnd if you saw them here, it means the Professor is trapped inside their headquarters!\p{PLAYER}, it's clear what to do.\pThe next task is to find Team Somber's HQ and free the Professor.\pRue has given us a separate lead that Kohla is following up on, so you're on your own on this one.\pGood luck."))
         release
 
         //setvars and quest
@@ -173,12 +173,12 @@ script SilversunCity_NPC3{
     end
 }
 script SilversunCity_NPC4{
-    msgbox(format("We keep seeing wild Koffing and Toxel around...they come from the sewers, I bet."), MSGBOX_NPC)
+    msgbox(format("We keep seeing wild Grimer around...\nthey come from the sewers, I bet."), MSGBOX_NPC)
     end
 }
 
 script SilversunCity_NPC5{
-    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon Pokémon haunts the sewers. It's even scarier than all the POISON-type Pokémon down there!\pThey call it the SEWER SCOURGE, and apparently, before it attacks you, you can hear a spooky engine revving!\pHow scary is that?\p...but its probably just someone's imagination."), MSGBOX_NPC)
+    msgbox(format("There's a reason nobody lives near the sewers - and not because it stinks!\pThey say a demon Pokémon haunts the sewers. It's even scarier than all the POISON-type Pokémon down there!\pThey call it the Sewer Scourge, and apparently, before it attacks you,\lyou can hear a spooky engine revving!"), MSGBOX_NPC)
     end
 }
 
@@ -193,7 +193,7 @@ script SilversunCity_NPC7{
 }
 
 script SilversunCity_NPC8{
-    msgbox(format("Did you hear about the Mega Sharpedo in Hoya River? Apparently its headed to Pelluca City."), MSGBOX_NPC)
+    msgbox(format("Did you hear about the Mega Sharpedo\nin the Hoya River? Apparently it's headed to Pelluca City."), MSGBOX_NPC)
     end
 }
 

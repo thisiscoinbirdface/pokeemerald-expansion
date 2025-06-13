@@ -366,10 +366,8 @@ LilyPond_Fisherman_C::
 # 306 "data//maps/IvyRiver/scripts.pory"
 	delay 16
 # 307 "data//maps/IvyRiver/scripts.pory"
-	message LilyPond_Fisherman_C_Text_3
-# 308 "data//maps/IvyRiver/scripts.pory"
-	waitmessage
-# 310 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Fisherman_C_Text_3, MSGBOX_NPC
+# 309 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
@@ -380,7 +378,7 @@ LilyPond_Fisherman_C_2:
 
 
 IvyRiver_Ranger_Blocker::
-# 317 "data//maps/IvyRiver/scripts.pory"
+# 316 "data//maps/IvyRiver/scripts.pory"
 	msgbox IvyRiver_Ranger_Blocker_Text_0, MSGBOX_NPC
 	end
 
@@ -709,6 +707,6 @@ LilyPond_Fisherman_C_Text_3:
 	.string "A sad story, I know.$"
 
 IvyRiver_Ranger_Blocker_Text_0:
-# 317 "data//maps/IvyRiver/scripts.pory"
+# 316 "data//maps/IvyRiver/scripts.pory"
 	.string "Sorry - to access the Ivy River Ranger\n"
 	.string "Institute, you must be a member.$"

@@ -143,7 +143,8 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_VICTORY_ROAD_CORMORIA, 12, 11
+	setvar VAR_RANGER_INSTITUTE, 9
+	warp MAP_RANGER_INSTITUTE, 12, 11
 	release
 	end
 
