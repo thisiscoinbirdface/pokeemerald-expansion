@@ -317,9 +317,9 @@ GalecrestCity_GameCorner_Gacha_Master_12:
 GalecrestCity_GameCorner_Counter_Text_0:
 # 7 "data//maps/GalecrestCity_GameCorner/scripts.pory"
 	.string "Welcome to the Galecrest Game - hey!\n"
-	.string "You're too young to be gambling! You\l"
-	.string "can hang around if you want, but I'm not\l"
-	.string "giving you any Tokens.$"
+	.string "You're too young to be gambling!\l"
+	.string "You can hang around if you want, but I'm\l"
+	.string "not giving you any Tokens.$"
 
 GalecrestCity_GameCorner_NPC1_Text_0:
 # 12 "data//maps/GalecrestCity_GameCorner/scripts.pory"
@@ -327,11 +327,10 @@ GalecrestCity_GameCorner_NPC1_Text_0:
 
 GalecrestCity_GameCorner_NPC2_Text_0:
 # 16 "data//maps/GalecrestCity_GameCorner/scripts.pory"
-	.string "I dropped my last Gacha Token in the\n"
-	.string "puddles outside!\p"
+	.string "I dropped my last Gacha Token in\n"
+	.string "one of the puddles outside!\p"
 	.string "...\p"
-	.string "Ah well, so be it. Maybe it's a sign for me\n"
-	.string "to quit!$"
+	.string "Maybe it's a sign for me to quit!$"
 
 GalecrestCity_GameCorner_NPC3_Text_0:
 # 20 "data//maps/GalecrestCity_GameCorner/scripts.pory"

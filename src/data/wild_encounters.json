@@ -14347,43 +14347,43 @@
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_BASCULIN_WHITE_STRIPED"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_CORSOLA_GALAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_CORSOLA_GALAR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ALOMOMOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ALOMOMOLA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ALOMOMOLA"
               }
             ]

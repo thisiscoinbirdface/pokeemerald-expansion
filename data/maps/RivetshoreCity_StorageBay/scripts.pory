@@ -93,3 +93,9 @@ script RivetshoreCity_StorageBay_Trigger1{
 }
 
 
+script RivetshoreCity_StorageBay_NPCHint{
+    lockall
+    msgbox(format("If I can just find an empty box..."))
+    releaseall
+    end
+}

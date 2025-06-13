@@ -100,32 +100,48 @@ GalecrestCity_HousesPoor_NPC2::
 
 GalecrestCity_HousesPoor_Jigglypuff::
 # 62 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	playse SE_M_SING
+	lockall
 # 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	msgbox GalecrestCity_HousesPoor_Jigglypuff_Text_0, MSGBOX_NPC
+	faceplayer
+# 64 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	fadeoutbgm 0
+# 65 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	delay 16
+# 66 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	playse SE_M_SING
+# 67 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	message GalecrestCity_HousesPoor_Jigglypuff_Text_0
+# 68 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	waitse
+# 69 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	release
+# 70 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	fadeinbgm 0
+# 71 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	releaseall
 	end
 
 
 GalecrestCity_HousesPoor_NPC3::
-# 69 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 77 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC4::
-# 74 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 82 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC4_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC5::
-# 79 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 87 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC5_Text_0, MSGBOX_NPC
 	end
 
 
 GalecrestCity_HousesPoor_NPC6::
-# 84 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 92 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	msgbox GalecrestCity_HousesPoor_NPC6_Text_0, MSGBOX_NPC
 	end
 
@@ -174,54 +190,52 @@ GalecrestCity_HousesPoor_NPC1_Text_6:
 GalecrestCity_HousesPoor_NPC1_Text_7:
 # 39 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "My wife is a musician. She plays the\n"
-	.string "flute. But her flute is old now and we're\l"
-	.string "too poor to afford a new flute. I really\l"
-	.string "want to see her happy...\p"
-	.string "Would you be willing to give me a Blue\n"
-	.string "Flute?$"
+	.string "flute. But her flute is old now and\l"
+	.string "we're too poor to afford a new flute.\p"
+	.string "I really want to see her happy...\p"
+	.string "Would you please give me a Blue Flute?$"
 
 GalecrestCity_HousesPoor_NPC1_Text_8:
 # 41 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "Thank you trainer! I'll be waiting here\n"
-	.string "for the Blue Flute.$"
+	.string "Thank you so much trainer!\n"
+	.string "I'll be waiting here for the Blue Flute.$"
 
 GalecrestCity_HousesPoor_NPC1_Text_9:
 # 48 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "I understand. It's out of your way.\p"
-	.string "Sigh...I just wish I had more money, you\n"
-	.string "know?$"
+	.string "Sigh...I just wish I had the money,\n"
+	.string "you know?$"
 
 GalecrestCity_HousesPoor_NPC2_Text_0:
 # 57 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "I used to play the flute many years ago.\n"
-	.string "Now Jigglypuff brings music into the\l"
-	.string "house!$"
+	.string "I used to play the flute long ago. Now\n"
+	.string "Jigglypuff brings music into the house!$"
 
 GalecrestCity_HousesPoor_Jigglypuff_Text_0:
-# 63 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
-	.string "Jigglypuff is singing happily! Better\n"
-	.string "leave before I fall asleep...$"
+# 67 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+	.string "Jigglypuff is singing happily!\n"
+	.string "Better leave before I fall asleep...$"
 
 GalecrestCity_HousesPoor_NPC3_Text_0:
-# 69 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 77 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "The Poochyena always block the roads.\n"
 	.string "They're a menace to society!$"
 
 GalecrestCity_HousesPoor_NPC4_Text_0:
-# 74 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 82 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "The Poochyena are so cute!\n"
 	.string "I'd like to adopt one someday.$"
 
 GalecrestCity_HousesPoor_NPC5_Text_0:
-# 79 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 87 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "My children play outside all day.\n"
 	.string "Let them have their fun!\p"
 	.string "Soon they'll be studying all day to\n"
 	.string "enter the Detective Academy.$"
 
 GalecrestCity_HousesPoor_NPC6_Text_0:
-# 84 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
+# 92 "data//maps/GalecrestCity_HousesPoor/scripts.pory"
 	.string "My wife has high ambitions for the kids.\n"
-	.string "I'll support her, but personally I'll be\l"
-	.string "happy as long as they grow up to become\l"
-	.string "responsible adults.$"
+	.string "I'll support her, but personally I'll\l"
+	.string "be happy as long as they grow up to\l"
+	.string "become responsible adults.$"

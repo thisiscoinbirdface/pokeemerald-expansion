@@ -36,16 +36,16 @@ script GalecrestCity_HousesPoor_NPC1{
         lockall
         faceplayer
         
-        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and we're too poor to afford a new flute. I really want to see her happy...\pWould you be willing to give me a Blue Flute?"), MSGBOX_YESNO)
+        msgbox(format("My wife is a musician. She plays the flute. But her flute is old now and\lwe're too poor to afford a new flute.\pI really want to see her happy...\pWould you please give me a Blue Flute?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("Thank you trainer! I'll be waiting here for the Blue Flute."))
+            msgbox(format("Thank you so much trainer!\nI'll be waiting here for the Blue Flute."))
             release
             setvar(VAR_GALECREST_POORGUY, 1)
             startquest(QUEST_GALECREST_POORGUY)
             releaseall
             end
         } else {
-            msgbox(format("I understand. It's out of your way.\pSigh...I just wish I had more money, you know?"), MSGBOX_NPC)
+            msgbox(format("I understand. It's out of your way.\pSigh...I just wish I had the money,\nyou know?"), MSGBOX_NPC)
         }
     }
     releaseall
@@ -54,13 +54,21 @@ script GalecrestCity_HousesPoor_NPC1{
 
 
 script GalecrestCity_HousesPoor_NPC2{
-    msgbox(format("I used to play the flute many years ago. Now Jigglypuff brings music into the house!"), MSGBOX_NPC)
+    msgbox(format("I used to play the flute long ago. Now Jigglypuff brings music into the house!"), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_HousesPoor_Jigglypuff{
+    lockall
+    faceplayer
+    fadeoutbgm(0)
+    delay(16)
     playse(SE_M_SING)
-    msgbox(format("Jigglypuff is singing happily! Better leave before I fall asleep..."), MSGBOX_NPC)
+    message(format("Jigglypuff is singing happily!\nBetter leave before I fall asleep..."))
+    waitse
+    release
+    fadeinbgm(0)
+    releaseall
     end
 }
 
@@ -81,7 +89,7 @@ script GalecrestCity_HousesPoor_NPC5{
 }
 
 script GalecrestCity_HousesPoor_NPC6{
-    msgbox(format("My wife has high ambitions for the kids. I'll support her, but personally I'll be happy as long as they grow up to become responsible adults."), MSGBOX_NPC)
+    msgbox(format("My wife has high ambitions for the kids. I'll support her, but personally I'll\lbe happy as long as they grow up to\lbecome responsible adults."), MSGBOX_NPC)
     end
 }
 

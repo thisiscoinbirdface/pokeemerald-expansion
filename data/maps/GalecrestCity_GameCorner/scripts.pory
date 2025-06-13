@@ -4,7 +4,7 @@ mapscripts GalecrestCity_GameCorner_MapScripts{}
 //get a one-time coin from the guy to use
 
 script GalecrestCity_GameCorner_Counter{
-    msgbox(format("Welcome to the Galecrest Game - hey! You're too young to be gambling! You can hang around if you want, but I'm not giving you any Tokens."), MSGBOX_NPC)
+    msgbox(format("Welcome to the Galecrest Game - hey! You're too young to be gambling!\lYou can hang around if you want, but I'm not giving you any Tokens."), MSGBOX_NPC)
     end
 }
 
@@ -13,7 +13,7 @@ script GalecrestCity_GameCorner_NPC1{
     end
 }
 script GalecrestCity_GameCorner_NPC2{
-    msgbox(format("I dropped my last Gacha Token in the puddles outside!\p...\pAh well, so be it. Maybe it's a sign for me to quit!"), MSGBOX_NPC)
+    msgbox(format("I dropped my last Gacha Token in\none of the puddles outside!\p...\pMaybe it's a sign for me to quit!"), MSGBOX_NPC)
     end
 }
 script GalecrestCity_GameCorner_NPC3{

@@ -148,6 +148,16 @@ RivetshoreCity_StorageBay_Trigger1_6:
 	goto RivetshoreCity_StorageBay_Trigger1_1
 
 
+RivetshoreCity_StorageBay_NPCHint::
+# 97 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	lockall
+# 98 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	msgbox RivetshoreCity_StorageBay_NPCHint_Text_0
+# 99 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	releaseall
+	end
+
+
 # 19 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 RivetshoreCity_StorageBay_Slaking_Movement_0:
 # 19 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
@@ -250,3 +260,7 @@ RivetshoreCity_StorageBay_Trigger1_Text_0:
 # 77 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
 	.string "Are you sure? Once you enter, there's\n"
 	.string "no coming back!$"
+
+RivetshoreCity_StorageBay_NPCHint_Text_0:
+# 98 "data//maps/RivetshoreCity_StorageBay/scripts.pory"
+	.string "If I can just find an empty box...$"

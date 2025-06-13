@@ -92,7 +92,8 @@ script GalecrestCity_DetectiveAcademy_Clefairy{
 script GalecrestCity_DetectiveAcademy_Receptionist{
     lockall
     faceplayer
-    msgbox(format("Hello, trainer! Welcome to the Detective Academy!")) 
+    msgbox(format("Hello, trainer!\nWelcome to the Detective Academy!")) 
+    release
     goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
 
     releaseall
@@ -102,9 +103,9 @@ script GalecrestCity_DetectiveAcademy_Receptionist{
 script GalecrestCity_DetectiveAcademy_Receptionist_Multichoice{
     msgbox(format("How may I help you today?"))
     dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Tell me about the Academy!", "Can I get a student ID?", "I want a Charcadet!")
-
+    release
     if (var(VAR_RESULT) == 0){
-        msgbox(format("The Galecrest Detective Academy is one of the most prestigious schools in all of Cormoria! Our top-caliber candidates train and study to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
+        msgbox(format("The Galecrest Detective Academy is one of the most prestigious schools in all of Cormoria! Our top-caliber candidates train to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
         release
         delay(16)
         goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
@@ -129,17 +130,19 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
         msgbox(format("Sorry, you already have a student ID."))
         goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)        
     } else {
-        msgbox(format("Unfortunately, only students are allowed IDs and enrolment is closed for the year. However, we do offer day passes to prospective students for a nominal fee of 1000."))
+        msgbox(format("Unfortunately, only students are allowed IDs and enrolment is closed for the year. However, we do offer day passes to prospective students for\la nominal fee of ¥1000."))
         release
         delay(16)
         showmoneybox(0, 0)
-        msgbox(format("Would you like to purchase one for 1000?"), MSGBOX_YESNO)
+        msgbox(format("Would you like to buy one for ¥1000?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             hidemoneybox
             checkmoney(1000)
             if (var(VAR_RESULT) == 1){
-                msgbox(format("Very good! Here's your temporary student ID."))
+                playse(SE_SHOP)
+                waitse
+                msgbox(format("Very good!\nHere's your temporary student ID."))
                 giveitem(ITEM_DETECTIVE_STUDENT_ID)
                 setflag(FLAG_GALECREST_STUDENTID_GET)
                 removemoney(1000)
@@ -199,7 +202,7 @@ script GalecrestCity_DetectiveAcademy_Guard{
     if (flag(FLAG_GALECREST_STUDENTID_GET)){
         msgbox(format("You got a one-day student ID? Maybe I should get one too..."), MSGBOX_NPC)
     } else {
-        msgbox(format("Garden access is for students only. That Armarouge won't let you in without a Student ID!"), MSGBOX_NPC)
+        msgbox(format("Garden access is for students only. That Armarouge won't let you in unless you've got a Student ID!"), MSGBOX_NPC)
     }
     end
 }
@@ -249,7 +252,7 @@ script GalecrestCity_DetectiveAcademy_Armarouge_Classroom{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC1{
-    msgbox(format("Ooh! Ohh! Are the new class rankings out yet?"), MSGBOX_NPC)
+    msgbox(format("Ooh! Are the class rankings out yet?"), MSGBOX_NPC)
     end
 }
 
@@ -259,19 +262,19 @@ script GalecrestCity_DetectiveAcademy_NPC2{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC3{
-    msgbox(format("All new students receive a Charcadet as their first Pokémon. It's the standard detective companion."), MSGBOX_NPC)
+    msgbox(format("All new students receive a Charcadet\nas their first Pokémon. It's the\lstandard detective companion."), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC4{
     
     
-    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft. New students are often handed smaller cases to solve as part of their internship. But some also intern at the Galecrest Gym!"), MSGBOX_NPC)
+    msgbox(format("Since many rich folk live in Galecrest City, there's a lot of theft.\lNew students are often handed smaller cases to solve as an internship.\lSome also intern at the Galecrest Gym!"), MSGBOX_NPC)
     end
 }
 
 script GalecrestCity_DetectiveAcademy_NPC5{
-    msgbox(format("I'm going to join today! I'm so excited to get my Charcadet and become an Ace Rookie!"), MSGBOX_NPC)
+    msgbox(format("I'm joining today! Once I get my Charcadet, I'm gonna be an Ace Rookie!"), MSGBOX_NPC)
     end
 }
 

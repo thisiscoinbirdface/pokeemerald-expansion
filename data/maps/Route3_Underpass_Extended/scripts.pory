@@ -44,7 +44,7 @@ script Route3_Ext_Trainer_A{
 
 script Route3_Ext_Stone_A{
     lockall
-    msgbox(format("There's a crevice in this stone...streaks of blue mark the sides..."))
+    msgbox(format("There's a crevice in this stone...\nstreaks of blue mark the sides..."))
 
     checkitem(ITEM_SAPPHIRE)
 
@@ -66,7 +66,7 @@ script Route3_Ext_Stone_A{
 
 script Route3_Ext_Stone_B{
     lockall
-    msgbox(format("There's a crevice in this stone...pale red lines run down the rock..."))
+    msgbox(format("There's a crevice in this stone...\npale red lines run down the rock..."))
 
     checkitem(ITEM_RUBY)
 

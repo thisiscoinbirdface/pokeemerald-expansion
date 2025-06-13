@@ -247,8 +247,8 @@ Route3_Ext_Trainer_A_Text_2:
 
 Route3_Ext_Stone_A_Text_0:
 # 47 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "There's a crevice in this\n"
-	.string "stone...streaks of blue mark the sides...$"
+	.string "There's a crevice in this stone...\n"
+	.string "streaks of blue mark the sides...$"
 
 Route3_Ext_Stone_A_Text_1:
 # 52 "data//maps/Route3_Underpass_Extended/scripts.pory"
@@ -262,8 +262,8 @@ Route3_Ext_Stone_A_Text_2:
 
 Route3_Ext_Stone_B_Text_0:
 # 69 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	.string "There's a crevice in this stone...pale\n"
-	.string "red lines run down the rock...$"
+	.string "There's a crevice in this stone...\n"
+	.string "pale red lines run down the rock...$"
 
 Route3_Ext_Stone_B_Text_1:
 # 74 "data//maps/Route3_Underpass_Extended/scripts.pory"

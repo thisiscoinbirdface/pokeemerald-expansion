@@ -556,7 +556,7 @@ u8 BattleSetup_GetTerrainId(void)
         if (MetatileBehavior_IsVolcanoEncounter(tileBehavior))
             return BATTLE_TERRAIN_VOLCANO;
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-            return BATTLE_TERRAIN_POND;
+            return BATTLE_TERRAIN_CAVE;
         return BATTLE_TERRAIN_CAVE;
     case MAP_TYPE_INDOOR:
         if (MetatileBehavior_IsGraveyardEncounter(tileBehavior))
