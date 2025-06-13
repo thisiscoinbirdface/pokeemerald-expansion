@@ -201,7 +201,7 @@ script UnchartedIsland_Finale_Cutscene{
     applymovement(LOCALID_RUE_2, moves(jump_in_place_up))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...\nand Team Somber, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
+    msgbox_delay("Rue", format("It's genius, Tenebris. Genius of the ilk that a cerebral mind like yours could never grasp.\pIn times of war, the arms dealers stand to prosper.\pOrichalcum Pulse will create heatwaves and destruction across Cormoria. People will need services of all kinds - emergency services, repairs, construction, delivery of essentials...\land Team Somber, with our army of strong Ancient Pokémon, can do all of that!\pFor a fee, of course."))
 
     applymovement(LOCALID_TENE_2, moves(jump_in_place_down))
     waitmovement(0)

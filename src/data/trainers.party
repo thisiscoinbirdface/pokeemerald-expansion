@@ -7452,11 +7452,11 @@ Level: 52
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Coalossal
-Level: 52
+Level: 51
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Aggron @ Aggronite
-Level: 54
+Level: 53
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_RIVETSHORE_GYM_LEADER ===
@@ -7477,10 +7477,10 @@ Excadrill
 Level: 52
 
 Coalossal
-Level: 52
+Level: 51
 
 Aggron @ Aggronite
-Level: 54
+Level: 53
 
 
 
@@ -7906,7 +7906,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 52
+Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Honchkrow
@@ -7922,7 +7922,7 @@ Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Houndoom @ Houndoominite
-Level: 55
+Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
@@ -7938,7 +7938,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 52
+Level: 51
 
 Honchkrow
 Level: 52
@@ -7950,7 +7950,7 @@ Great Tusk
 Level: 53
 
 Houndoom @ Houndoominite
-Level: 55
+Level: 54
 
 
 
@@ -7982,7 +7982,7 @@ Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Muk-Alola
-Level: 54
+Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowbro-Galar
@@ -7990,7 +7990,7 @@ Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Flutter Mane
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Absol @ Absolite
@@ -8009,16 +8009,16 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Yanmega
-Level: 51
+Level: 52
 
 Muk-Alola
-Level: 54
+Level: 52
 
 Slowbro-Galar
 Level: 53
 
 Flutter Mane
-Level: 54
+Level: 53
 
 Absol @ Absolite
 Level: 55
@@ -8046,19 +8046,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 54
+Level: 53
 
 Spiritomb
-Level: 55
+Level: 54
 
 Roaring Moon
-Level: 56
+Level: 55
 
 Metagross @ Metagrossite
-Level: 56
+Level: 55
 
 Koraidon
-Level: 58
+Level: 57
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
@@ -8072,19 +8072,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 54
+Level: 53
 
 Spiritomb
-Level: 55
+Level: 54
 
 Roaring Moon
-Level: 56
+Level: 55
 
 Metagross @ Metagrossite
-Level: 56
+Level: 55
 
 Koraidon
-Level: 58
+Level: 57
 
 
 
@@ -8260,7 +8260,7 @@ Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Coalossal
@@ -8282,7 +8282,7 @@ Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Coalossal
@@ -8313,11 +8313,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_B ===
@@ -8331,11 +8331,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8362,7 +8362,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Medicham
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 - Thunder Punch
@@ -8370,7 +8370,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8378,14 +8378,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 
 Altaria
-Level: 55
+Level: 54
 - Dragon Dance
 - Outrage
 - Acrobatics
 - Earthquake
 
 Basculin @ Choice Band
-Level: 57
+Level: 56
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wave Crash
@@ -8404,7 +8404,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Medicham
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 - Thunder Punch
@@ -8412,7 +8412,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8427,7 +8427,7 @@ Level: 54
 - Earthquake
 
 Basculin @ Choice Band
-Level: 57
+Level: 56
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wave Crash
@@ -8456,12 +8456,12 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 55
+Level: 54
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Noivern
-Level: 58
+Level: 57
 Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8476,12 +8476,12 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 55
+Level: 54
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Noivern
-Level: 58
+Level: 57
 Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8507,7 +8507,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
@@ -8525,7 +8525,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
