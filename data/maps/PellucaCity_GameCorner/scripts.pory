@@ -88,6 +88,21 @@ script PellucaCity_GameCorner_Tutor{
 
     setflag(FLAG_PELLUCA_GC_TUTOR_BATTLE)
     msgbox(format("Incredible! So strong...and you're using such unlucky moves. Let me teach your Pokémon how to be luckier."))
+    msgbox(format("In exchange for one Blue Shard, should I teach a lucky move?"), MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You know where to find me!"), MSGBOX_NPC)
+        releaseall
+        end        
+    }
+
+    checkitem(ITEM_BLUE_SHARD)
+    if (var(VAR_RESULT) == 0){
+        msgbox(format("You don't have a Blue Shard.\nGet one and come back to me!"), MSGBOX_NPC)
+        releaseall
+        end        
+    }
+
     goto(PellucaCity_GameCorner_Tutor_Teach)
 
     releaseall
@@ -128,6 +143,7 @@ script PellucaCity_GameCorner_TeachMove{
     if (var(VAR_RESULT) == 0){
         msgbox(format("You know where to find me!"), MSGBOX_NPC)
     } else {
+        removeitem(ITEM_BLUE_SHARD)
         msgbox(format("Now you hold all the cards!\nBuy a Loaded Dice for extra power!"), MSGBOX_NPC)
     }
     releaseall

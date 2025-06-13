@@ -8,29 +8,39 @@ script VilethornHouse_NPC1{
 script VilethornHouse_NPC2{
     lockall
     faceplayer
-    msgbox(format("Nobody disturbs us here in the woods. The best protection is isolation!\lYour Pokémon also need to learn to defend themselves. Do you want me to teach your Pokémon a defensive move?"), MSGBOX_YESNO)
+    msgbox(format("Nobody disturbs us here in the woods. The best protection is isolation!\lYour Pokémon also need to learn to defend themselves.\pIn exchange for one Red Shard, should I teach your Pokémon a defensive move?"), MSGBOX_YESNO)
+    
     if (var(VAR_RESULT) == 1){
 
-        message(format("Which move should I teach?"))
-        waitmessage
-        dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-            "Reflect", "Light Screen", "Aurora Veil", "Protect")  
+        checkitem(ITEM_RED_SHARD)
 
-        if (var(VAR_RESULT) == 0)  {
-            setvar(VAR_0x8005, MOVE_REFLECT)
-            goto(VilethornHouse_Tutor_TeachMove)
-        }
-        if (var(VAR_RESULT) == 1)  {
-            setvar(VAR_0x8005, MOVE_LIGHT_SCREEN)
-            goto(VilethornHouse_Tutor_TeachMove)
-        }
-        if (var(VAR_RESULT) == 2)  {
-            setvar(VAR_0x8005, MOVE_AURORA_VEIL)
-            goto(VilethornHouse_Tutor_TeachMove)
-        }
-        if (var(VAR_RESULT) == 3)  {
-            setvar(VAR_0x8005, MOVE_PROTECT)
-            goto(VilethornHouse_Tutor_TeachMove)
+        if (var(VAR_RESULT) == 1){
+
+            message(format("Which move should I teach?"))
+            waitmessage
+            dynmultichoice(0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+                "Reflect", "Light Screen", "Aurora Veil", "Protect")  
+
+            if (var(VAR_RESULT) == 0)  {
+                setvar(VAR_0x8005, MOVE_REFLECT)
+                goto(VilethornHouse_Tutor_TeachMove)
+            }
+            if (var(VAR_RESULT) == 1)  {
+                setvar(VAR_0x8005, MOVE_LIGHT_SCREEN)
+                goto(VilethornHouse_Tutor_TeachMove)
+            }
+            if (var(VAR_RESULT) == 2)  {
+                setvar(VAR_0x8005, MOVE_AURORA_VEIL)
+                goto(VilethornHouse_Tutor_TeachMove)
+            }
+            if (var(VAR_RESULT) == 3)  {
+                setvar(VAR_0x8005, MOVE_PROTECT)
+                goto(VilethornHouse_Tutor_TeachMove)
+            }
+        } else {
+            msgbox(format("You don't have a Red Shard.\nCome back when you do."), MSGBOX_NPC)
+            releaseall
+            end
         }
     }
 
@@ -41,6 +51,11 @@ script VilethornHouse_NPC2{
 
 script VilethornHouse_Tutor_TeachMove{
     call(MoveTutor_EventScript_OpenPartyMenu)
+
+    if (var(VAR_RESULT) == 1){
+        removeitem(ITEM_GREEN_SHARD)
+    }
+
     msgbox(format("Come again whenever you like!"), MSGBOX_NPC)
     releaseall
     end
