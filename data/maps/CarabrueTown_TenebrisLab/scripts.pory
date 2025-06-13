@@ -71,7 +71,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(0)
 
     speakername("Rue")
-    msgbox(format("Right, now normally I would brief you on your work, but we've got no time.\pSo I'm just going to have you start working right away, okay?\pWe've been running low on supplies and the nearest Poké Mart is in Fennilahl Town, past Route 1.\pPlease go and pick up our shipment and bring it back.\pBe careful! There are some important things in there."))
+    msgbox(format("Right, now normally I would brief you on your work, but we've got no time.\pSo I'm just going to have you start working right away, okay?\pWe've been running low on supplies and the nearest Poké Mart is in Fennilahl Town, past Route 1.\pPlease go and pick up our shipment\nand bring it back.\pBe careful! There are some important things in there."))
     release
 
     applymovement(3, moves(jump_in_place_left))
@@ -80,7 +80,7 @@ script CarabrueTown_TenebrisLab_EventScript_Start {
     waitmovement(3)
 
     speakername("Rue")
-    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\pIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
+    msgbox(format("You'll need a companion Pokémon to protect you. Pick up any of the Pokéballs lying around the lab.\lIf we had our supplies, I could give you the standard companion Pokémon,\lbut without Professor Tenebris, everything's gone haywire here.\pYou'll have to make do with what you find lying around.\pBut once you bring the supplies from the Poké Mart, we'll pair you with the Pokémon you're meant to be with."))
     release
 
     applymovement(3, moves(jump_in_place_down))
@@ -107,7 +107,9 @@ script CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives{
     message(format("Wait! I almost forgot!"))
     applymovement(3, moves(walk_down * 8))
     waitmovement(0)
+    release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
     speakername("Rue")
     msgbox(format("On the way, could you give the evidence bag you have to the detectives?\lThey're waiting by the Route 1 exit."))
     
@@ -498,7 +500,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
             setflag(FLAG_SYS_POKEMON_GET)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted you a Gothita!"))
+                msgbox(format("The Tenebris Laboratory has gifted\nyou a Gothita!"))
                 waitfanfare
                 hidemonpic
                 removeobject(1)
@@ -534,7 +536,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
             removeobject(7)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted you a Timburr!"))
+                msgbox(format("The Tenebris Laboratory has gifted\nyou a Timburr!"))
                 waitfanfare
                 hidemonpic
                 removeobject(1)
@@ -570,7 +572,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
             removeobject(6)
             if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
                 playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted you a Zigzagoon!"))
+                msgbox(format("The Tenebris Laboratory has gifted\nyou a Zigzagoon!"))
                 waitfanfare
                 hidemonpic
                 removeobject(1)
@@ -670,7 +672,7 @@ script CarabrueTown_TenebrisLab_EventScript_Scientist3{
     if (flag(FLAG_LAB_CALLTOACTION)){
         msgbox(format("A bit unorthodox for a researcher, but you and your new partner are looking good together!"), MSGBOX_NPC)
     } else {
-        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokémon.\pBut they're coming in the next batch of supplies! Just be patient."), MSGBOX_NPC)
+        msgbox(format("I'm sorry we couldn't offer you the standard companion Pokémon.\lBut they're coming in the next batch of supplies! Just be patient."), MSGBOX_NPC)
     }
     end
 }
@@ -684,7 +686,7 @@ script CarabrueTown_TenebrisLab_Gardevoir{
         msgbox(format("Gardevoir regards you intently...\pSomething floats into your hand!"), MSGBOX_NPC)
         lockall
         giveitem(ITEM_STARF_BERRY)
-        msgbox(format("Was this her way of welcoming a new member of the lab?\pThank you, Gardevoir!"))
+        msgbox(format("Was this her way of welcoming a\nnew member of the lab?\pThank you, Gardevoir!"))
         setflag(FLAG_TENEBRIS_GARDEVOIR)              
         releaseall     
     }

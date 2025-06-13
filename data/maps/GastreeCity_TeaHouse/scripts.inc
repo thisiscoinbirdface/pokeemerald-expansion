@@ -145,134 +145,140 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward::
 # 93 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
 # 95 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_0, MSGBOX_SIGN
+	playfanfare MUS_LEVEL_UP
 # 96 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	release
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_0, MSGBOX_SIGN
 # 97 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0
+	waitfanfare
 # 98 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	waitmovement 0
-# 99 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	delay 12
-# 100 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1
-# 101 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
+# 99 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	applymovement 4, GastreeCity_TeaHouse_EventScript_Poltchageist_FirstPrompt_Movement_0
+# 100 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	waitmovement 0
+# 101 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	delay 12
 # 102 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	completequest QUEST_GASTREE_TEA
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1
 # 103 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	release
+# 104 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	completequest QUEST_GASTREE_TEA
+# 105 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	delay 16
-# 107 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	message GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2
-# 108 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	waitmessage
 # 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4
+	message GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2
+# 110 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	waitmessage
 # 111 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3, GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4
+# 113 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_2
-# 123 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	givemon SPECIES_SINISTEA_ANTIQUE, 10
-# 125 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	showmonpic SPECIES_SINISTEA_ANTIQUE, 10, 3
 # 126 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 127 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_7
+	givemon SPECIES_SINISTEA_ANTIQUE, 10
 # 128 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	hidemonpic
+	showmonpic SPECIES_SINISTEA_ANTIQUE, 10, 3
 # 129 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	release
+	playfanfare MUS_OBTAIN_ITEM
 # 130 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	delay 12
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_7
 # 131 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_8
+	hidemonpic
 # 132 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
+# 133 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	delay 12
+# 134 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_8
+# 135 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	release
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_1:
-# 136 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 139 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	setvar VAR_GASTREE_TEASHOP_QUEST, 2
-# 138 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 141 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	end
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_2:
-# 112 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	givemon SPECIES_POLTCHAGEIST_ARTISAN, 10
 # 114 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	showmonpic SPECIES_POLTCHAGEIST_ARTISAN, 10, 3
-# 115 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	givemon SPECIES_POLTCHAGEIST_ARTISAN, 10
 # 116 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_5
+	showmonpic SPECIES_POLTCHAGEIST_ARTISAN, 10, 3
 # 117 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	hidemonpic
+	playfanfare MUS_OBTAIN_ITEM
 # 118 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	release
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_5
 # 119 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	delay 12
+	waitfanfare
 # 120 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_6
+	hidemonpic
 # 121 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	release
+# 122 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	delay 12
+# 123 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	msgbox GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_6
+# 124 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	release
 	goto GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_1
 
 
 GastreeCity_TeaHouse_EventScript_NPC1::
-# 144 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 147 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 GastreeCity_TeaHouse_EventScript_NPC2::
-# 150 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 GastreeCity_TeaHouse_EventScript_NPC3::
-# 156 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 159 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 GastreeCity_TeaHouse_EventScript_NPC4::
-# 162 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 165 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	lockall
-# 163 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 166 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	faceplayer
-# 164 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 167 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	goto_if_set FLAG_GASTREE_TEAHOUSE_BERRIES, GastreeCity_TeaHouse_EventScript_NPC4_2
-# 169 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 172 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_1
-# 170 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	giveitem ITEM_PERSIM_BERRY, 2
-# 171 "data//maps/GastreeCity_TeaHouse/scripts.pory"
-	setflag FLAG_GASTREE_TEAHOUSE_BERRIES
 # 173 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	giveitem ITEM_PERSIM_BERRY, 2
+# 174 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+	setflag FLAG_GASTREE_TEAHOUSE_BERRIES
+# 176 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	end
 
 GastreeCity_TeaHouse_EventScript_NPC4_2:
-# 165 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 168 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_EventScript_NPC4_Text_0
-# 166 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 169 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	releaseall
 	end
 
 
 GastreeCity_TeaHouse_Snorunt::
-# 177 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 180 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	playmoncry SPECIES_SNORUNT, CRY_MODE_NORMAL
-# 178 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 181 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_Snorunt_Text_0, MSGBOX_NPC
 	end
 
 
 GastreeCity_TeaHouse_Sinistea::
-# 183 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 186 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	playmoncry SPECIES_SINISTEA, CRY_MODE_NORMAL
-# 184 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 187 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	msgbox GastreeCity_TeaHouse_Sinistea_Text_0, MSGBOX_NPC
 	end
 
@@ -341,19 +347,19 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest_Text_1:
 	.string "Come back when you do!$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_0:
-# 95 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 96 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "{PLAYER} handed over the\n"
 	.string "ingredients.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_1:
-# 100 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 102 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Wonderful! You brought everything.\n"
 	.string "I can't wait to start brewing.\p"
 	.string "Thank you, young one.\n"
 	.string "You've done me a great service.$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2:
-# 107 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Now - I must reward you somehow.\p"
 	.string "No no! I insist.\p"
 	.string "The kitchen is managed by my staff of\n"
@@ -365,73 +371,73 @@ GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_2:
 	.string "as a companion?$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_3:
-# 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 111 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Poltchageist$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_4:
-# 109 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 111 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Sinistea$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_5:
-# 116 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 118 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "The Tea House Owner has gifted you a\n"
 	.string "Poltchageist!$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_6:
-# 120 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 123 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "This one's a keeper - extremely\n"
 	.string "well-trained and hospitable. I'm sure\l"
 	.string "you two will have a great time together.\l"
 	.string "I'll miss you, Poltchageist!$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_7:
-# 127 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 130 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "The Tea House Owner has gifted you a\n"
 	.string "Sinistea!$"
 
 GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward_Text_8:
-# 131 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 134 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "This one's a keeper - extremely\n"
 	.string "well-trained and hospitable. I'm sure\l"
 	.string "you two will have a great time together.\l"
 	.string "I'll miss you, Sinistea!$"
 
 GastreeCity_TeaHouse_EventScript_NPC1_Text_0:
-# 144 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 147 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "At my age, a hot cup of tea is the best\n"
 	.string "medicine. The Poltchageist and\l"
 	.string "Sinistea here do great work!$"
 
 GastreeCity_TeaHouse_EventScript_NPC2_Text_0:
-# 150 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 153 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I always come here after a difficult\n"
 	.string "business meeting. Gotta destress\l"
 	.string "after making all this money!$"
 
 GastreeCity_TeaHouse_EventScript_NPC3_Text_0:
-# 156 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 159 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I find that the tea here feeds my\n"
 	.string "creative energies.$"
 
 GastreeCity_TeaHouse_EventScript_NPC4_Text_0:
-# 165 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 168 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I invited my date here because I\n"
 	.string "thought it'd be more unique than taking\l"
 	.string "him to a trendy spot...but he still\l"
-	.string "hasn't arrived. Luckily my Snorunt is\l"
+	.string "hasn't arrived. But my Snorunt is\l"
 	.string "here to give me company!$"
 
 GastreeCity_TeaHouse_EventScript_NPC4_Text_1:
-# 169 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 172 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "I got a plate of berries but since my\n"
 	.string "date hasn't come, why don't you have it?$"
 
 GastreeCity_TeaHouse_Snorunt_Text_0:
-# 178 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 181 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Snorunt is sniffing the tea.\n"
 	.string "Does it like the scent?$"
 
 GastreeCity_TeaHouse_Sinistea_Text_0:
-# 184 "data//maps/GastreeCity_TeaHouse/scripts.pory"
+# 187 "data//maps/GastreeCity_TeaHouse/scripts.pory"
 	.string "Sinistea is busy serving tea.\n"
 	.string "Better not disturb it!$"

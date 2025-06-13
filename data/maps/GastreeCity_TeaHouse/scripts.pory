@@ -92,7 +92,9 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_CheckQuest{
 script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
     lockall
     //Text for give reward
+    playfanfare(MUS_LEVEL_UP)
     msgbox(format("{PLAYER} handed over the ingredients."), MSGBOX_SIGN)
+    waitfanfare
     release
     applymovement(4, moves(emote_exclamation_mark))
     waitmovement(0)     
@@ -114,6 +116,7 @@ script GastreeCity_TeaHouse_EventScript_Poltchageist_GiveReward{
         showmonpic(SPECIES_POLTCHAGEIST_ARTISAN, 10, 3)
         playfanfare(MUS_OBTAIN_ITEM)        
         msgbox(format("The Tea House Owner has gifted you a Poltchageist!"))
+        waitfanfare
         hidemonpic
         release
         delay(12)
@@ -162,7 +165,7 @@ script GastreeCity_TeaHouse_EventScript_NPC4{
     lockall
     faceplayer
     if (flag(FLAG_GASTREE_TEAHOUSE_BERRIES)){
-        msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. Luckily my Snorunt is here to give me company!"))
+        msgbox(format("I invited my date here because I thought it'd be more unique than taking him to a trendy spot...but he still hasn't arrived. But my Snorunt is\lhere to give me company!"))
         releaseall
         end
     } else {

@@ -483,8 +483,8 @@ WoodSign_Route1_Middle_Text_0:
 
 WoodSign_Route1_Middle_Text_1:
 # 25 "data//scripts/customscripts_signs.pory"
-	.string "You can sometimes find hidden items in\n"
-	.string "rocks and stuff!$"
+	.string "You can sometimes find hidden items\n"
+	.string "in rocks and stuff!$"
 
 WhiteSign_Route1_NextToFennilahl_Text_0:
 # 30 "data//scripts/customscripts_signs.pory"

@@ -76,7 +76,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
     {
         [TRAINER_GASTREEGYM_LEADER] = 
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Let me show you my ace!\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Let's see how you handle my ace!\p"), 
         },
         [TRAINER_CERAMBASECAMP_EVIL_GABRIELLE] = 
         {

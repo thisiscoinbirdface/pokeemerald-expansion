@@ -247,17 +247,17 @@ GastreeGym_LeaderBattle_Movement_1:
 GastreeGym_TrainerBattle_Skip_Text_0:
 # 6 "data//maps/GastreeGym/scripts.pory"
 	.string "Hold up - nobody's allowed to disturb\n"
-	.string "the Inger while he's training!\p"
-	.string "Who's the Inger?\p"
+	.string "the Kinger while he's training!\p"
+	.string "Who's the Kinger?\p"
 	.string "Inger the King, of course!$"
 
 GastreeGym_TrainerBattle_Skip_Text_1:
 # 6 "data//maps/GastreeGym/scripts.pory"
-	.string "Okay, go disturb the Inger!$"
+	.string "Okay, go disturb the Kinger!$"
 
 GastreeGym_TrainerBattle_Skip_Text_2:
 # 7 "data//maps/GastreeGym/scripts.pory"
-	.string "The Inger is what everyone should\n"
+	.string "The Kinger is what everyone should\n"
 	.string "aspire to be like!$"
 
 GastreeGym_TrainerBattle_Jaco_Text_0:
@@ -309,7 +309,7 @@ GastreeGym_EventScript_Victory_Text_1:
 # 69 "data//maps/GastreeGym/scripts.pory"
 	.string "The Hard Badge allows you to use HM\n"
 	.string "Splash outside of battle. Hop and skip\l"
-	.string "across all the water bodies of Cormoria!$"
+	.string "across all the ponds of Cormoria!$"
 
 GastreeGym_EventScript_Victory_Text_2:
 # 74 "data//maps/GastreeGym/scripts.pory"
@@ -330,7 +330,7 @@ GastreeGym_EventScript_Victory_Text_4:
 	.string "...\p"
 	.string "So you're investigating Professor\n"
 	.string "Tenebris' disappearance? Good luck!\l"
-	.string "She's the one who taught my Minior\n"
+	.string "She's the one who taught my Minior\l"
 	.string "the move Rollout.\p"
 	.string "...\p"
 	.string "...but I can't say I've heard anything\n"
@@ -340,7 +340,7 @@ GastreeGym_EventScript_Victory_Text_4:
 	.string "If its for the Professor, I would've\n"
 	.string "loved to join, but I've got a gym to run.\p"
 	.string "Go get 'em, {PLAYER}! Teach Team\n"
-	.string "Somber a lesson on the Inger's behalf!$"
+	.string "Somber a lesson on the Kinger's behalf!$"
 
 GastreeGym_Red_Text_0:
 # 105 "data//maps/GastreeGym/scripts.pory"
@@ -372,8 +372,7 @@ GastreeGym_Red_Text_3:
 	.string "in the underpass to Fennilahl Town.\p"
 	.string "The previous trainer beat him and Inger\n"
 	.string "just can't stand losing!\p"
-	.string "But before you run off after him, take\n"
-	.string "this.$"
+	.string "Before you run off, take this.$"
 
 GastreeGym_Red_Text_4:
 # 122 "data//maps/GastreeGym/scripts.pory"

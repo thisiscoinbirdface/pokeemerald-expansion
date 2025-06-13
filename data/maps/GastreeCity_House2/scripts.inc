@@ -38,8 +38,8 @@ GastreeCity_House2_NPC1_Text_0:
 
 GastreeCity_House2_NPC1_Text_1:
 # 9 "data//maps/GastreeCity_House2/scripts.pory"
-	.string "I don't want to put too much salt on the\n"
-	.string "food I cook for the childen.\p"
+	.string "I don't want to put too much salt in\n"
+	.string "the food I cook for the childen.\p"
 	.string "Here, why don't you take my extra salt?$"
 
 GastreeCity_House2_NPC2_Text_0:

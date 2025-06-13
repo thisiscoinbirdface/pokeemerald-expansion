@@ -41,7 +41,7 @@ GastreeCity_PokemonCenter_NPC1_Text_0:
 	.string "This city's Gym Leader is Inger, the\n"
 	.string "ROCK specialist. He's a local hero!\l"
 	.string "His trainers call him Inger the King,\l"
-	.string "or Inger for short.\p"
+	.string "or Kinger for short.\p"
 	.string "So dreamy!$"
 
 GastreeCity_PokemonCenter_NPC2_Text_0:

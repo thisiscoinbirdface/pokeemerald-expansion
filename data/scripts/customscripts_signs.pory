@@ -22,7 +22,7 @@ script WhiteSign_Route1_NextToCarabrue {
 
 script WoodSign_Route1_Middle {
     speakername("Trainer Tips")
-    msgbox(format("You can sometimes find hidden items in rocks and stuff!"), MSGBOX_SIGN)
+    msgbox(format("You can sometimes find hidden items\nin rocks and stuff!"), MSGBOX_SIGN)
     end
 }
 

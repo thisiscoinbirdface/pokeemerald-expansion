@@ -870,7 +870,7 @@ VilethornWoods_Trainer_F1_Text_1:
 VilethornWoods_Trainer_F1_Text_2:
 # 246 "data//maps/VilethornWoods/scripts.pory"
 	.string "If we can get an exclusive interview\n"
-	.string "with her, itll be the scoop of the week!$"
+	.string "with her, it'll be the scoop of the week!$"
 
 VilethornWoods_Trainer_G_Text_0:
 # 261 "data//maps/VilethornWoods/scripts.pory"

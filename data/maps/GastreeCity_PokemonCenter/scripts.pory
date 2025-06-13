@@ -16,7 +16,7 @@ script GastreeCity_PokemonCenter_EventScript_Nurse{
 
 
 script GastreeCity_PokemonCenter_NPC1{
-	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\lHis trainers call him Inger the King,\lor Inger for short.\pSo dreamy!"), MSGBOX_NPC)
+	msgbox(format("This city's Gym Leader is Inger, the ROCK specialist. He's a local hero!\lHis trainers call him Inger the King,\lor Kinger for short.\pSo dreamy!"), MSGBOX_NPC)
 	end
 }
 

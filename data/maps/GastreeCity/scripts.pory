@@ -122,7 +122,7 @@ script GastreeCity_Mankey{
 
     //Info
 script GastreeCity_NPC6{  
-    msgbox(format("Gastree City is famous not just for being a connecting Route to Mt. Ceram Base Camp, but also for its scenic viewpoints and its teahouse!"), MSGBOX_NPC)
+    msgbox(format("Before you head to the Ceram Base Camp, check out the Gastree Teahouse!\lYou just haven't visited Gastree City without going there once."), MSGBOX_NPC)
     end
 }
 

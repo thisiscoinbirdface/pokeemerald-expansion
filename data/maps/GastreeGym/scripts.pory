@@ -3,8 +3,8 @@ mapscripts GastreeGym_MapScripts{}
 
 script GastreeGym_TrainerBattle_Skip {
 
-    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Inger while he's training!\pWho's the Inger?\pInger the King, of course!"), "Okay, go disturb the Inger!")
-    msgbox(format("The Inger is what everyone should aspire to be like!"))
+    trainerbattle_single(TRAINER_GASTREEGYM_SKIP, format("Hold up - nobody's allowed to disturb the Kinger while he's training!\pWho's the Kinger?\pInger the King, of course!"), "Okay, go disturb the Kinger!")
+    msgbox(format("The Kinger is what everyone should aspire to be like!"))
     release
     end
 
@@ -66,7 +66,7 @@ script GastreeGym_EventScript_Victory{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Inger")
-    msgbox(format("The Hard Badge allows you to use HM Splash outside of battle. Hop and skip across all the water bodies of Cormoria!"))
+    msgbox(format("The Hard Badge allows you to use HM Splash outside of battle. Hop and skip across all the ponds of Cormoria!"))
     release
     delay(16)
     //Also give 3 rare shards
@@ -80,7 +80,7 @@ script GastreeGym_EventScript_Victory{
     delay(16)
     //Bye-bye
     speakername("Inger")
-    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior\nthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Inger's behalf!"))
+    msgbox(format("Where are you headed next?\p...\pSo you're investigating Professor Tenebris' disappearance? Good luck! She's the one who taught my Minior\lthe move Rollout.\p...\p...but I can't say I've heard anything about these dreamstones.\pSo next is Mt. Ceram? You'll have to go north from here through Route 4.\pIf its for the Professor, I would've loved to join, but I've got a gym to run.\pGo get 'em, {PLAYER}! Teach Team Somber a lesson on the Kinger's behalf!"))
     releaseall
 }
 
@@ -117,7 +117,7 @@ script GastreeGym_Red{
         } else {
             lockall
             faceplayer
-            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town.\pThe previous trainer beat him and Inger just can't stand losing!\pBut before you run off after him, take this."))
+            msgbox(format("Welcome to the Gastree gym! Unfortunately the leader, Inger, has gone off to do some emergency training in the underpass to Fennilahl Town.\pThe previous trainer beat him and Inger just can't stand losing!\pBefore you run off, take this."))
             giveitem(ITEM_FRESH_WATER)
             msgbox(format("Inger loves ROCK type Pokémon, so avoid using FLYING and BUG type Pokémon.\pNow go get 'em, champ-in-the-making!"))
             setflag(FLAG_GASTREEGYM_SPENSER_WATER)

@@ -1105,10 +1105,10 @@ GastreeCity_Mankey_Text_0:
 
 GastreeCity_NPC6_Text_0:
 # 125 "data//maps/GastreeCity/scripts.pory"
-	.string "Gastree City is famous not just for\n"
-	.string "being a connecting Route to Mt. Ceram\l"
-	.string "Base Camp, but also for its scenic\l"
-	.string "viewpoints and its teahouse!$"
+	.string "Before you head to the Ceram Base Camp,\n"
+	.string "check out the Gastree Teahouse!\l"
+	.string "You just haven't visited Gastree City\l"
+	.string "without going there once.$"
 
 GastreeCity_NPC7_Text_0:
 # 131 "data//maps/GastreeCity/scripts.pory"

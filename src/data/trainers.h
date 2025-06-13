@@ -941,7 +941,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_ROCKRUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 462
-            .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 461
             .lvl = 12,
             .nature = NATURE_HARDY,
