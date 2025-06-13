@@ -1481,3 +1481,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PellucaCity_GameCorner/scripts.inc"
 
 	.include "data/maps/TheOtherHouse/scripts.inc"
+
+	.include "data/maps/Route8_House/scripts.inc"

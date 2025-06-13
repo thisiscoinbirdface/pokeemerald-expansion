@@ -607,144 +607,191 @@ Route6_Tutor_Weather::
 	faceplayer
 # 458 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_0
-# 460 "data//maps/Route6/scripts.pory"
-	message Route6_Tutor_Weather_Text_1
+# 459 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_1, MSGBOX_YESNO
 # 461 "data//maps/Route6/scripts.pory"
-	waitmessage
-# 462 "data//maps/Route6/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Weather_Text_2, Route6_Tutor_Weather_Text_3, Route6_Tutor_Weather_Text_4, Route6_Tutor_Weather_Text_5
-# 465 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_2
-Route6_Tutor_Weather_1:
+# 467 "data//maps/Route6/scripts.pory"
+	checkitem ITEM_GREEN_SHARD
 # 469 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_5
-Route6_Tutor_Weather_4:
-# 473 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 2
+# 475 "data//maps/Route6/scripts.pory"
+	message Route6_Tutor_Weather_Text_4
+# 476 "data//maps/Route6/scripts.pory"
+	waitmessage
+# 477 "data//maps/Route6/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Weather_Text_5, Route6_Tutor_Weather_Text_6, Route6_Tutor_Weather_Text_7, Route6_Tutor_Weather_Text_8
+# 480 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_8
 Route6_Tutor_Weather_7:
-# 477 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 3
+# 484 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 1
 	goto_if_eq Route6_Tutor_Weather_11
 Route6_Tutor_Weather_10:
-# 481 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Weather_Text_6, MSGBOX_NPC
-# 482 "data//maps/Route6/scripts.pory"
+# 488 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 2
+	goto_if_eq Route6_Tutor_Weather_14
+Route6_Tutor_Weather_13:
+# 492 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 3
+	goto_if_eq Route6_Tutor_Weather_17
+Route6_Tutor_Weather_16:
+# 496 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
+# 497 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Weather_2:
-# 466 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_RAIN_DANCE
-# 467 "data//maps/Route6/scripts.pory"
-	goto Route6_Tutor_TeachMove
-	goto Route6_Tutor_Weather_1
+# 462 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
+# 463 "data//maps/Route6/scripts.pory"
+	releaseall
+	end
 
 Route6_Tutor_Weather_5:
 # 470 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_SUNNY_DAY
+	msgbox Route6_Tutor_Weather_Text_3, MSGBOX_NPC
 # 471 "data//maps/Route6/scripts.pory"
-	goto Route6_Tutor_TeachMove
-	goto Route6_Tutor_Weather_4
+	releaseall
+	end
 
 Route6_Tutor_Weather_8:
-# 474 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_SANDSTORM
-# 475 "data//maps/Route6/scripts.pory"
-	goto Route6_Tutor_TeachMove
+# 481 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_RAIN_DANCE
+# 482 "data//maps/Route6/scripts.pory"
+	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_7
 
 Route6_Tutor_Weather_11:
-# 478 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_SNOWSCAPE
-# 479 "data//maps/Route6/scripts.pory"
-	goto Route6_Tutor_TeachMove
+# 485 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_SUNNY_DAY
+# 486 "data//maps/Route6/scripts.pory"
+	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_10
+
+Route6_Tutor_Weather_14:
+# 489 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_SANDSTORM
+# 490 "data//maps/Route6/scripts.pory"
+	goto Route6_Tutor_TeachMoveShard
+	goto Route6_Tutor_Weather_13
+
+Route6_Tutor_Weather_17:
+# 493 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_SNOWSCAPE
+# 494 "data//maps/Route6/scripts.pory"
+	goto Route6_Tutor_TeachMoveShard
+	goto Route6_Tutor_Weather_16
 
 
 Route6_Tutor_Fangs::
-# 487 "data//maps/Route6/scripts.pory"
+# 502 "data//maps/Route6/scripts.pory"
 	lockall
-# 488 "data//maps/Route6/scripts.pory"
+# 503 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 489 "data//maps/Route6/scripts.pory"
+# 504 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Fangs_Text_0
-# 491 "data//maps/Route6/scripts.pory"
-	message Route6_Tutor_Weather_Text_1
-# 492 "data//maps/Route6/scripts.pory"
+# 505 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Fangs_Text_1, MSGBOX_POKENAV
+# 506 "data//maps/Route6/scripts.pory"
+	message Route6_Tutor_Weather_Text_4
+# 507 "data//maps/Route6/scripts.pory"
 	waitmessage
-# 493 "data//maps/Route6/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Fangs_Text_1, Route6_Tutor_Fangs_Text_2, Route6_Tutor_Fangs_Text_3, Route6_Tutor_Fangs_Text_4
-# 496 "data//maps/Route6/scripts.pory"
+# 508 "data//maps/Route6/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Fangs_Text_2, Route6_Tutor_Fangs_Text_3, Route6_Tutor_Fangs_Text_4, Route6_Tutor_Fangs_Text_5
+# 511 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Fangs_2
 Route6_Tutor_Fangs_1:
-# 500 "data//maps/Route6/scripts.pory"
+# 515 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Tutor_Fangs_5
 Route6_Tutor_Fangs_4:
-# 504 "data//maps/Route6/scripts.pory"
+# 519 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Route6_Tutor_Fangs_8
 Route6_Tutor_Fangs_7:
-# 508 "data//maps/Route6/scripts.pory"
+# 523 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 3
 	goto_if_eq Route6_Tutor_Fangs_11
 Route6_Tutor_Fangs_10:
-# 512 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Weather_Text_6, MSGBOX_NPC
-# 513 "data//maps/Route6/scripts.pory"
+# 527 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
+# 528 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Fangs_2:
-# 497 "data//maps/Route6/scripts.pory"
+# 512 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_FIRE_FANG
-# 498 "data//maps/Route6/scripts.pory"
+# 513 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_1
 
 Route6_Tutor_Fangs_5:
-# 501 "data//maps/Route6/scripts.pory"
+# 516 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_ICE_FANG
-# 502 "data//maps/Route6/scripts.pory"
+# 517 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_4
 
 Route6_Tutor_Fangs_8:
-# 505 "data//maps/Route6/scripts.pory"
+# 520 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_THUNDER_FANG
-# 506 "data//maps/Route6/scripts.pory"
+# 521 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_7
 
 Route6_Tutor_Fangs_11:
-# 509 "data//maps/Route6/scripts.pory"
+# 524 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
-# 510 "data//maps/Route6/scripts.pory"
+# 525 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_10
 
 
 Route6_Tutor_TeachMove::
-# 518 "data//maps/Route6/scripts.pory"
+# 533 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 520 "data//maps/Route6/scripts.pory"
+# 535 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_TeachMove_2
-# 523 "data//maps/Route6/scripts.pory"
+# 538 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
 Route6_Tutor_TeachMove_1:
-# 526 "data//maps/Route6/scripts.pory"
+# 541 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_TeachMove_2:
-# 521 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Weather_Text_6, MSGBOX_NPC
+# 536 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
 	goto Route6_Tutor_TeachMove_1
+
+
+Route6_Tutor_TeachMoveShard::
+# 546 "data//maps/Route6/scripts.pory"
+	call MoveTutor_EventScript_OpenPartyMenu
+# 548 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Route6_Tutor_TeachMoveShard_2
+# 551 "data//maps/Route6/scripts.pory"
+	removeitem ITEM_GREEN_SHARD
+# 552 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
+Route6_Tutor_TeachMoveShard_1:
+# 555 "data//maps/Route6/scripts.pory"
+	releaseall
+	end
+
+Route6_Tutor_TeachMoveShard_2:
+# 549 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
+	goto Route6_Tutor_TeachMoveShard_1
 
 
 # 67 "data//maps/Route6/scripts.pory"
@@ -1310,52 +1357,68 @@ Route6_Tutor_Weather_Text_0:
 	.string "weather in battle.$"
 
 Route6_Tutor_Weather_Text_1:
-# 460 "data//maps/Route6/scripts.pory"
-	.string "Which move should I teach?$"
+# 459 "data//maps/Route6/scripts.pory"
+	.string "In exchange for one Green Shard, should\n"
+	.string "I teach a move?$"
 
 Route6_Tutor_Weather_Text_2:
-# 463 "data//maps/Route6/scripts.pory"
-	.string "Rain Dance$"
-
-Route6_Tutor_Weather_Text_3:
-# 463 "data//maps/Route6/scripts.pory"
-	.string "Sunny Day$"
-
-Route6_Tutor_Weather_Text_4:
-# 463 "data//maps/Route6/scripts.pory"
-	.string "Sandstorm$"
-
-Route6_Tutor_Weather_Text_5:
-# 463 "data//maps/Route6/scripts.pory"
-	.string "Snowscape$"
-
-Route6_Tutor_Weather_Text_6:
-# 481 "data//maps/Route6/scripts.pory"
+# 462 "data//maps/Route6/scripts.pory"
 	.string "Come again whenever you like!$"
 
+Route6_Tutor_Weather_Text_3:
+# 470 "data//maps/Route6/scripts.pory"
+	.string "You don't have a Green Shard.\n"
+	.string "Come again when you have one!$"
+
+Route6_Tutor_Weather_Text_4:
+# 475 "data//maps/Route6/scripts.pory"
+	.string "Which move should I teach?$"
+
+Route6_Tutor_Weather_Text_5:
+# 478 "data//maps/Route6/scripts.pory"
+	.string "Rain Dance$"
+
+Route6_Tutor_Weather_Text_6:
+# 478 "data//maps/Route6/scripts.pory"
+	.string "Sunny Day$"
+
+Route6_Tutor_Weather_Text_7:
+# 478 "data//maps/Route6/scripts.pory"
+	.string "Sandstorm$"
+
+Route6_Tutor_Weather_Text_8:
+# 478 "data//maps/Route6/scripts.pory"
+	.string "Snowscape$"
+
 Route6_Tutor_Fangs_Text_0:
-# 489 "data//maps/Route6/scripts.pory"
+# 504 "data//maps/Route6/scripts.pory"
 	.string "I train new Candidates in raising\n"
 	.string "strong partners. I can teach your\l"
-	.string "Pokémon some new moves if you like!$"
+	.string "Pokémon some new moves if you like! But\l"
+	.string "I can only teach one move per Ranger.$"
 
 Route6_Tutor_Fangs_Text_1:
-# 494 "data//maps/Route6/scripts.pory"
-	.string "Fire Fang$"
+# 505 "data//maps/Route6/scripts.pory"
+	.string "This tutor will only teach a\p"
+	.string "move once, so choose carefully!$"
 
 Route6_Tutor_Fangs_Text_2:
-# 494 "data//maps/Route6/scripts.pory"
-	.string "Ice Fang$"
+# 509 "data//maps/Route6/scripts.pory"
+	.string "Fire Fang$"
 
 Route6_Tutor_Fangs_Text_3:
-# 494 "data//maps/Route6/scripts.pory"
-	.string "Thunder Fang$"
+# 509 "data//maps/Route6/scripts.pory"
+	.string "Ice Fang$"
 
 Route6_Tutor_Fangs_Text_4:
-# 494 "data//maps/Route6/scripts.pory"
+# 509 "data//maps/Route6/scripts.pory"
+	.string "Thunder Fang$"
+
+Route6_Tutor_Fangs_Text_5:
+# 509 "data//maps/Route6/scripts.pory"
 	.string "Psychic Fangs$"
 
 Route6_Tutor_TeachMove_Text_0:
-# 523 "data//maps/Route6/scripts.pory"
+# 538 "data//maps/Route6/scripts.pory"
 	.string "Your Pokémon look strong now!\n"
 	.string "Good luck, Ranger!$"

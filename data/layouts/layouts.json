@@ -6030,6 +6030,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/TheOtherHouse/border.bin",
       "blockdata_filepath": "data/layouts/TheOtherHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8_HOUSE",
+      "name": "Route8_House_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route8_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route8_House/map.bin"
     }
   ]
 }
