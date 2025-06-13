@@ -154,7 +154,7 @@ SilversunCity_Houses_Artist_16:
 # 34 "data//maps/SilversunCity_Houses/scripts.pory"
 	setflag FLAG_SYS_GOT_STRENGTH
 # 35 "data//maps/SilversunCity_Houses/scripts.pory"
-	giveitem ITEM_HM04
+	giveitem ITEM_TM73
 # 36 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SILVERSUN_ARTIST, 2
 # 37 "data//maps/SilversunCity_Houses/scripts.pory"
@@ -285,12 +285,11 @@ SilversunCity_Houses_Artist_Text_4:
 
 SilversunCity_Houses_Artist_Text_5:
 # 38 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "I have no need of it, because my true\n"
-	.string "strength lies in my artistic vision! But\l"
-	.string "you, my dear helpful philistine, might\l"
-	.string "benefit from it. But you'll need to\l"
-	.string "receive the Drama Badge from Gloria\l"
-	.string "before your Pokémon can use it.\p"
+	.string "I have no need of it. Why should my art\n"
+	.string "hide behind a facade? But you, my dear\l"
+	.string "helpful philistine, might benefit from\l"
+	.string "it. For the right Pokémon, it can be a\l"
+	.string "powerful move.\p"
 	.string "Farewell!$"
 
 SilversunCity_Houses_Artist_Text_6:

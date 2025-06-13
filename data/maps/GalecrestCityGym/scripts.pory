@@ -187,7 +187,7 @@ script GalecrestCityGym_Leader {
         message(format("{PLAYER} received the Stoic Badge from Kohla."))
         call(Common_EventScript_PlayGymBadgeFanfare)
         release
-        //Describe the badge features (use HMs, allow pokemon control etc.)
+        //Describe the badge features
         speakername("Kohla")
         msgbox(format("The Stoic Badge lets you use Rock Smash outside of battle.\p...\pAnd this is yours too."))
         release

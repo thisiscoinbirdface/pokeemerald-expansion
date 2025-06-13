@@ -78,7 +78,14 @@ script SilversunCity_OnFrame{
                 removeobject(LOCALID_TENEBRIS)
                 applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left face_up))
                 speakername("Detective")
-                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out more about Ancient Cormoria.\pI have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard at the base camp.\pPlease go there and tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pNow get on it, pronto!\p...\pSeriously, where is Kohla? He should be done chasing Rue's leads by now...we've got to go find him."))
+                msgbox(format("{PLAYER} - to find out what Team Somber wants with the past, we need to find out more about Ancient Cormoria.\pI have an old acquaintance at the Mirroh Base Camp. She was a reputed historian in her time and now manages the graveyard at the base camp.\pPlease go there and tell her everything you know.\pGot it? Head to the Mirroh Base Camp, talk to the lady who manages the graveyard, and find out what Team Somber seeks in Ancient Cormoria.\pYou'll need this to get there."))
+                release
+                delay(8)
+                giveitem(ITEM_HM04)
+                release
+                delay(8)
+                speakername("Detective")
+                msgbox(format("Now get on it, pronto!\p...\pSeriously, where is Kohla? He should be done chasing Rue's leads by now...we've got to go find him."))
                 release
 
             //Fade and remove objects

@@ -252,7 +252,7 @@ script CeramBaseCampGym_LeaderBattle {
         setflag(FLAG_BADGE02_GET)
 
 
-        //Describe the badge features (use HMs, allow pokemon control etc.)
+        //Describe the badge features
         speakername("Ariana")
         msgbox(format("The Cinder Badge lets you control Pokémon upto lv. 20."))
         speakername("Ariana")
