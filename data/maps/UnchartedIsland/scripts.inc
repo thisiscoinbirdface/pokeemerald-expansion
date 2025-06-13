@@ -2153,7 +2153,7 @@ UnchartedIsland_Finale_Cutscene_Text_20:
 	.string "and destruction across Cormoria.\l"
 	.string "People will need services of all kinds -\l"
 	.string "emergency services, repairs,\l"
-	.string "construction, delivery of essentials...\n"
+	.string "construction, delivery of essentials...\l"
 	.string "and Team Somber, with our army of\l"
 	.string "strong Ancient Pokémon, can do all of\l"
 	.string "that!\p"

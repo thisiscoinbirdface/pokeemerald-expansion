@@ -90,16 +90,16 @@ VilethornHouse_Tutor_TeachMove::
 
 VilethornHouse_NPC1_Text_0:
 # 4 "data//maps/VilethornHouse/scripts.pory"
-	.string "We moved out of the city long ago. It\n"
-	.string "was too dangerous!$"
+	.string "We moved out of the city long ago.\n"
+	.string "It was too dangerous!$"
 
 VilethornHouse_NPC2_Text_0:
 # 11 "data//maps/VilethornHouse/scripts.pory"
-	.string "Nobody disturbs us here. The best\n"
-	.string "protection is isolation! Your Pokémon\l"
-	.string "also need to learn to defend\l"
-	.string "themselves. Do you want me to teach one\l"
-	.string "of your Pokémon a defensive move?$"
+	.string "Nobody disturbs us here in the woods.\n"
+	.string "The best protection is isolation!\l"
+	.string "Your Pokémon also need to learn to\l"
+	.string "defend themselves. Do you want me to\l"
+	.string "teach your Pokémon a defensive move?$"
 
 VilethornHouse_NPC2_Text_1:
 # 14 "data//maps/VilethornHouse/scripts.pory"

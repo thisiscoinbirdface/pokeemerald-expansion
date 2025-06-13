@@ -1,14 +1,14 @@
 mapscripts VilethornHouse_MapScripts{}
 
 script VilethornHouse_NPC1{
-    msgbox(format("We moved out of the city long ago. It was too dangerous!"), MSGBOX_NPC)
+    msgbox(format("We moved out of the city long ago.\nIt was too dangerous!"), MSGBOX_NPC)
     end
 }
 
 script VilethornHouse_NPC2{
     lockall
     faceplayer
-    msgbox(format("Nobody disturbs us here. The best protection is isolation! Your Pokémon also need to learn to defend themselves. Do you want me to teach one of your Pokémon a defensive move?"), MSGBOX_YESNO)
+    msgbox(format("Nobody disturbs us here in the woods. The best protection is isolation!\lYour Pokémon also need to learn to defend themselves. Do you want me to teach your Pokémon a defensive move?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
 
         message(format("Which move should I teach?"))

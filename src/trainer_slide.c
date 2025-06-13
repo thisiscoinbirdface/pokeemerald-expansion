@@ -94,6 +94,10 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm too strong for you!\pGo Ceruledge!\p"), 
         },
+        [TRAINER_VILETHORN_G] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm not done yet'!\pPinsir! Show them your strength!"), 
+        },         
         [TRAINER_SOMBERHQ_MELEA] = 
         {
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Absol - end this farce!\p"), 

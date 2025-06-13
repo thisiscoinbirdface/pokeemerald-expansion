@@ -118,8 +118,8 @@ script VilethornWoods_Ralts{
     setwildbattle(SPECIES_RALTS, 18)
     dowildbattle
 
-    setflag(FLAG_HIDE_VILETHORN_RALTS_3)        
-    setflag(FLAG_VILETHORN_RALTS_FINISHED)        
+    setflag(FLAG_HIDE_VILETHORN_RALTS_3)
+    setflag(FLAG_VILETHORN_RALTS_FINISHED)
     removeobject(LOCALID_RALTS3)
 
     releaseall
@@ -157,8 +157,10 @@ script VilethornWoods_EventScript_TriggerProf{
     applymovement(LOCALID_GRUNT, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
+    playse(SE_POKENAV_CALL)
+    waitse
     speakername("Grunt")
-    msgbox(format("...yes boss. We've picked up the Professor."))
+    msgbox(format("...\p...yes boss. We have the Professor."))
     msgbox(format("..."))
     speakername("Grunt")
     msgbox(format("No, nobody saw us, boss."))
@@ -167,8 +169,11 @@ script VilethornWoods_EventScript_TriggerProf{
     msgbox(format("Yes boss, I'm positive."))
     msgbox(format("..."))
     speakername("Grunt")
-    msgbox(format("...okay, we'll head back to HQ right away."))
+    msgbox(format("...okay, we'll head to HQ right away."))
     release
+    playse(SE_POKENAV_HANG_UP)
+    waitse
+    delay(16)
 
     //get out
     applymovement(LOCALID_PROF, moves(walk_up *6))
@@ -187,6 +192,7 @@ script VilethornWoods_EventScript_TriggerProf{
     speakername("Grunt")    
     msgbox(format("Must be a wild Impidimp or something..."))
     release
+    delay(16)
     applymovement(LOCALID_GRUNT, moves(walk_up *6))
     waitmovement(0)
 
@@ -244,7 +250,7 @@ script VilethornWoods_Trainer_E{
 script VilethornWoods_Trainer_F1{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City\nto interview the great Gloria!\lGet out of our way!"), "We lost!")
     msgbox(format("If we can get an exclusive interview with her, it'll be the scoop of the week!"))
     releaseall
     end
@@ -253,14 +259,14 @@ script VilethornWoods_Trainer_F1{
 script VilethornWoods_Trainer_F2{
     lockall
     faceplayer
-    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City to interview the great Gloria! Get out of our way!"), "We lost!")
+    trainerbattle_single(TRAINER_VILETHORN_F, format("We're on our way to Silversun City\nto interview the great Gloria!\lGet out of our way!"), "We lost!")
     msgbox(format("If we can get an exclusive interview with her, it'll be the scoop of the week!"))
     releaseall
     end
 }
 
 script VilethornWoods_Trainer_G{
-    trainerbattle_single(TRAINER_VILETHORN_G, format("I'm not like the others! I'm one of the best bug catchers around.\pI'm going to become the first BUG-type Pokémon Champion one day!"), "Are you a Gym Leader or something?")
+    trainerbattle_single(TRAINER_VILETHORN_G, format("I'm not like the others! I'm one of\nthe best bug catchers around.\pI'm going to become the first BUG-type Pokémon Champion one day!"), "Are you a Gym Leader or something?")
     msgbox(format("As a Gym Leader to-be, my team needs to be able to handle a variety of threats."))
     releaseall
     end
@@ -268,7 +274,7 @@ script VilethornWoods_Trainer_G{
 
 script VilethornWoods_Trainer_H{
     trainerbattle_single(TRAINER_VILETHORN_H, format("I wonder what's inside this house...\nmaybe there's some loot!"), "No loot for me!")
-    msgbox(format("Fine, I'll just stand here and look while you loot everything..."))
+    msgbox(format("Fine, I'll just stand here and look\nwhile you loot everything..."))
     releaseall
     end
 }
