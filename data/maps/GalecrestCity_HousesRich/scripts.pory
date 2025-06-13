@@ -27,12 +27,13 @@ script GalecrestCity_HousesRich_NPC4{
     msgbox(format("I work so hard and my wife spends all the money on jewellery!"), MSGBOX_NPC)
     
     if (var(VAR_GALECREST_RICH_PEARLS) == 3){
+        delay(8)
         lockall
         faceplayer
-        msgbox(format("You found her pearls, did you? And she took your money? Sigh..."))
+        msgbox(format("You found her pearls, did you?\nAnd she took your money? Sigh..."))
         giveitem(ITEM_DIAMOND)
         setvar(VAR_GALECREST_RICH_PEARLS, 4)
-        msgbox(format("A good deed shouldn't go unrewarded. But next time, you need to protect and stand up for yourself!"), MSGBOX_NPC)
+        msgbox(format("A good deed shouldn't go unrewarded. But you need to stand up for yourself!"), MSGBOX_NPC)
     }
     end
 
@@ -74,7 +75,7 @@ script GalecrestCity_HousesRich_NPC5{
         release
         completequest(QUEST_GALECREST_PEARLS)
         delay(8)
-        msgbox(format("But since you took so much time to find the pearls, I'll be taking some money from you of course. You stressed me out and you've got to make amends!"))
+        msgbox(format("But since you took so much time to find the pearls, I'll be taking some money from you of course. You stressed me\lout and you've got to make amends!"))
         release
         removemoney(500)
         playfanfare(MUS_MOVE_DELETED)

@@ -254,13 +254,13 @@ Route5_Berger_Text_0:
 
 Route5_Berger_Text_1:
 # 34 "data//maps/Route5/scripts.pory"
-	.string "C'mon Bergmite! Don't be so scared of\n"
-	.string "Vilethorn Woods!$"
+	.string "C'mon Bergmite! What's the matter?\n"
+	.string "Don't be so scared of Vilethorn Woods!$"
 
 Route5_Berger_Text_2:
 # 37 "data//maps/Route5/scripts.pory"
-	.string "We're trying to reach Silversun City but\n"
-	.string "Bergmite's being a scaredy-cat!$"
+	.string "We're trying to reach Silversun City\n"
+	.string "but Bergmite's being a scaredy-cat!$"
 
 Route5_Bergmite_Text_0:
 # 48 "data//maps/Route5/scripts.pory"
@@ -278,4 +278,4 @@ Route5_Greta_Main_Text_1:
 Route5_Greta_GottaGo_Text_0:
 # 98 "data//maps/Route5/scripts.pory"
 	.string "Would you look at the time! I've gotta\n"
-	.string "run. See you around!$"
+	.string "go places. See you around, {PLAYER}!$"

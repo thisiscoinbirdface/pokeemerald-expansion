@@ -646,7 +646,7 @@ script Route5_Greta_StrangeEgg{
             msgbox(format("{PLAYER} received a Strange Egg from Greta."), MSGBOX_SIGN)
             release
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)
@@ -670,7 +670,7 @@ script Route5_Greta_UglyFish{
             msgbox(format("{PLAYER} received a Feebas from Greta."), MSGBOX_SIGN)
             release
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)            
@@ -692,7 +692,7 @@ script Route5_Greta_MysteriousRock{
             removemoney(5000)
             giveitem(ITEM_ODD_KEYSTONE)
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(Route5_Greta_GottaGo)
         } else {
             goto(Route5_Greta_ShowItemsForSale)            
@@ -765,7 +765,7 @@ script PellucaCity_Greta_Item_A{
             removemoney(5200)
             giveitem(ITEM_DUSK_STONE)
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription
@@ -791,7 +791,7 @@ script PellucaCity_Greta_Item_B{
             removemoney(5200)
             giveitem(ITEM_PRISM_SCALE)
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription
@@ -817,7 +817,7 @@ script PellucaCity_Greta_Item_C{
             removemoney(5200)
             giveitem(ITEM_DAWN_STONE)
             speakername("Greta")
-            msgbox(format("Good doing business with you! Now, what about -"))
+            msgbox(format("Good doing business with you!\nNow, what about -"))
             goto(PellucaCity_Greta_GottaGo)
         } else {
             hideitemdescription

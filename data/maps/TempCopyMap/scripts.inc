@@ -2414,8 +2414,8 @@ Route5_Greta_StrangeEgg_Text_2:
 
 Route5_Greta_StrangeEgg_Text_3:
 # 649 "data//maps/TempCopyMap/scripts.pory"
-	.string "Good doing business with you! Now, what\n"
-	.string "about -$"
+	.string "Good doing business with you!\n"
+	.string "Now, what about -$"
 
 Route5_Greta_UglyFish_Text_0:
 # 666 "data//maps/TempCopyMap/scripts.pory"

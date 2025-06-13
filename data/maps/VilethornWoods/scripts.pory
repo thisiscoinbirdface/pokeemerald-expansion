@@ -27,7 +27,7 @@ script VilethornWoods_EventScript_NurseDemo{
 script VilethornWoods_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("These woods are so creepy! I'm so glad Chansey is here with me."))
+    msgbox(format("These woods are so creepy!\nI'm so glad Chansey is here with me."))
     call(Common_EventScript_NurseJoyOnRoute)
     delay(30)
     releaseall
@@ -56,6 +56,7 @@ script VilethornWoods_Ralts_FirstTrigger{
     applymovement(LOCALID_RALTS1, moves(face_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
+    playse(SE_WARP_OUT)
     applymovement(LOCALID_RALTS1, moves(fly_up))
     waitmovement(0)
     
@@ -83,6 +84,7 @@ script VilethornWoods_Ralts_SecondTrigger{
     applymovement(LOCALID_RALTS2, moves(face_up emote_exclamation_mark))
     waitmovement(0)
     delay(24)
+    playse(SE_WARP_OUT)
     applymovement(LOCALID_RALTS2, moves(fly_up))
     waitmovement(0)
 
@@ -212,22 +214,22 @@ script VilethornWoods_Trainer_A{
 }
 
 script VilethornWoods_Trainer_B{
-    trainerbattle_single(TRAINER_VILETHORN_B, format("I thought these woods would have BUG type Pokémon, but I can't find any. I'm so bummed! But beating you in battle will make me feel better!"), "I don't feel better at all!")
-    msgbox(format("This forest is weird...a dense fog, no BUG types..."))
+    trainerbattle_single(TRAINER_VILETHORN_B, format("The psychic currents in the air will lead me to victory!"), "The currents betrayed me!")
+    msgbox(format("Did the psychic energy betray me?\nWere you chosen by them?"))
     releaseall
     end
 }
 
 script VilethornWoods_Trainer_C{
     trainerbattle_single(TRAINER_VILETHORN_C, format("The sweet, delicious fog envelops us...we are one with the mindwaves!"), "You're not one with the mindwaves!")
-    msgbox(format("I want to go deeper...sink deeper...escape my real life..."))
+    msgbox(format("I want to go deeper...sink deeper...\nescape my real life..."))
     releaseall
     end
 }
 
 script VilethornWoods_Trainer_D{
-    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokémon Breeder. We  all specialise in different Pokémon forms. I'm a horse breeding expert!"), "Well fought!")
-    msgbox(format("I need to raise my horses to become stronger. Maybe some Vitamins would help..."))
+    trainerbattle_single(TRAINER_VILETHORN_D, format("I'm a Pokémon Breeder. We all specialise in different Pokémon forms.\pI'm a horse breeding expert!"), "Well fought!")
+    msgbox(format("I need to raise my horses to become stronger. Maybe witamins will help..."))
     releaseall
     end
 }
@@ -265,7 +267,7 @@ script VilethornWoods_Trainer_G{
 }
 
 script VilethornWoods_Trainer_H{
-    trainerbattle_single(TRAINER_VILETHORN_H, format("I wonder what's inside this house...maybe there's some loot!"), "No loot for me!")
+    trainerbattle_single(TRAINER_VILETHORN_H, format("I wonder what's inside this house...\nmaybe there's some loot!"), "No loot for me!")
     msgbox(format("Fine, I'll just stand here and look while you loot everything..."))
     releaseall
     end
@@ -274,7 +276,7 @@ script VilethornWoods_Trainer_H{
 
 
 script VilethornWoods_NPC1{
-    msgbox(format("The Morelull here in Vilethorn Woods release spores when in danger. That's what creates this fog."), MSGBOX_NPC)
+    msgbox(format("The Morelull here in Vilethorn Woods release spores when in danger.\lThat's what creates this fog."), MSGBOX_NPC)
     end
 }
 
@@ -288,7 +290,7 @@ script VilethornWoods_NPC2{
         msgbox(format("These mushrooms are really rare, you know?"))
     } else {
         speakername("Chef")
-        msgbox(format("Oh, it's you again! Fancy seeing you here. I'm a traveling chef! While I usually cook at the Pelluca Restaurant, I'm here to collect mushrooms to create new recipes...but I can only find Tiny Mushrooms! Say, why don't you help me? If you can get me a Big Mushroom, I'll find something to give you in exchange!\pHave you got a Big Mushroom?"), MSGBOX_YESNO)
+        msgbox(format("You again! Fancy seeing you here.\nI'm a traveling chef! While I usually cook at the Pelluca Restaurant,\lI'm here now to collect mushrooms to create new recipes...\lbut I can only find Tiny Mushrooms!\pSay, why don't you help me?\nIf you can get me a Big Mushroom,\lI can give you something in exchange!\pHave you got a Big Mushroom?"), MSGBOX_YESNO)
 
         if (var(VAR_RESULT) == 1){
             //check
@@ -301,7 +303,7 @@ script VilethornWoods_NPC2{
 
             } else {
                 speakername("Chef")
-                msgbox(format("Hey, you don't have any! Are you trying to trick me? The Drowzee and Morelull doing enough of that!"))
+                msgbox(format("Hey, you don't have any!\pAre you trying to trick me? The Drowzee and Morelull doing enough of that!"))
             }
         } else {
             speakername("Chef")
@@ -344,15 +346,15 @@ script VilethornWoods_NPC3{
     } else {
         lockall
         faceplayer
-        msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root. I got mad and ripped it out! Do you want it?"), MSGBOX_YESNO)
+        msgbox(format("Gah! I got lost in this stupid forest and tripped on a giant tree root.\lI got mad and ripped it out!\pDo you want it?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-            msgbox(format("I'm so angry that you'll have to battle me for it!"))
+            msgbox(format("Gah - I'm just so angry that you'll have to battle me for it!"))
             release
             trainerbattle_no_intro(TRAINER_VILETHORN_I, "My anger is gone now!")
             giveitem(ITEM_BIG_ROOT)
             release
             setflag(FLAG_VILETHORN_NPC_ITEM)
-            msgbox(format("Good riddance! I hope you find some use for it."), MSGBOX_NPC)
+            msgbox(format("Good riddance, stupid root!\nI hope you find some use for it."), MSGBOX_NPC)
         } else {
             msgbox(format("Just as well. It's a root after all - what use would it have?"), MSGBOX_NPC)            
         }

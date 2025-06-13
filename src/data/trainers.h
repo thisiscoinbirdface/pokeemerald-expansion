@@ -4088,7 +4088,7 @@ F_TRAINER_FEMALE |
 #line 1815
 F_TRAINER_FEMALE | 
 #line 1816
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 1817
         .doubleBattle = FALSE,
 #line 1818
@@ -4123,7 +4123,7 @@ F_TRAINER_FEMALE |
 #line 1829
 F_TRAINER_FEMALE | 
 #line 1830
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 1831
         .doubleBattle = FALSE,
 #line 1832
