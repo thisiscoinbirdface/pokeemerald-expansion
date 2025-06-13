@@ -11,7 +11,7 @@ mapscripts Route4_MapScripts {}
 script Route4_NurseJoy_OnRoute{
     lockall
     faceplayer
-    msgbox(format("Can you believe it? They stationed us on these rocks. I'm a nurse for crying out loud!\pSigh..."))
+    msgbox(format("Can you believe it?\nThey stationed us on these rocks.\lI'm a nurse for crying out loud!\pSigh..."))
     call(Common_EventScript_NurseJoyOnRoute)
     delay(16)
     releaseall
@@ -54,11 +54,11 @@ script Route4_EventScript_EvilTeamDefeated{
     waitmovement(0)
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_right))
     waitmovement(0)
-    msgbox(format("Can't believe we lost to some stupid kid..."))
+    msgbox(format("Can't believe we lost to a stupid kid..."))
     release
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_left))
     waitmovement(0)
-    msgbox(format("We gotta tell the boss at Ceram Base Camp about this!"))
+    msgbox(format("C'mon - we gotta tell the boss at\nCeram Base Camp about this!"))
     release
     applymovement(LOCALID_GRUNT1, moves(face_down))
     applymovement(LOCALID_GRUNT2, moves(face_down)) 
@@ -71,6 +71,8 @@ script Route4_EventScript_EvilTeamDefeated{
     removeobject(LOCALID_GRUNT1)
     removeobject(LOCALID_GRUNT2)
     setflag(FLAG_ROUTE4_EVIL_BATTLE)
+    playse(SE_EXIT)
+    waitse
     fadescreenswapbuffers(FADE_FROM_BLACK)
     releaseall
 }
@@ -131,9 +133,9 @@ script Route4_TrainerBattle_Jenny {
         trainerbattle_single(TRAINER_ROUTE4_KID2, format("Ooh, you made it this far! But I won't let you lay your hands on the boss! I'm going to stop you right now!"), format("Boss! Help!"), Route4_Kids_ClearFlag)
 
         if (flag(FLAG_ROUTE4_DEWPIDER_ATTACK)){
-            msgbox(format("Someone help the boss! The Dewpider is attacking him!"))
+            msgbox(format("Someone help the boss!"))
         } else {
-            msgbox(format("Our secret hideout is really cool, don't you think?"))
+            msgbox(format("Our secret hideout is really cool,\ndon't you think?"))
         }       
         release
         end
@@ -155,7 +157,7 @@ script Route4_TrainerBattle_Jenny {
             msgbox(format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something...Even us kids are strong!"))
             trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My Pokémon! Adults are lame!"))
 
-            msgbox(format("You have proved your worth, old one. You may now accept this reward."))
+            msgbox(format("You have proved your worth, old one.\nYou may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 
             setflag(FLAG_ROUTE4_KIDGANG)
             msgbox(format("...\p...when will I go back home?\pNever! I hate my family! They only care about my big brother. I'm not scared of any Dewpiders. I want...I want to be outside all day!"))  
@@ -166,7 +168,7 @@ script Route4_TrainerBattle_Jenny {
 
     //Kids trio sign
     script Route4_Sign_KidsTrio{
-        msgbox(format("A child has scrawled on this sign.\pTHIS IS OUR SECRET BASE. GET OUT OR BEWARE!!!!"), MSGBOX_SIGN)
+        msgbox(format("A child has scrawled on this sign.\pTHIS IS OUR SECRET BASE.\nGET OUT OR BEWARE!!!!"), MSGBOX_SIGN)
         end
     }
 
@@ -196,7 +198,7 @@ script Route4_TrainerBattle_Jenny {
         faceplayer
         playmoncry(SPECIES_DEWPIDER, CRY_MODE_NORMAL)
         delay(16)
-        msgbox(format("It's the Dewpider! It snaps at you and attacks!"))
+        msgbox(format("Oh no - it's the Dewpider!\nIt snaps at you and attacks!"))
         release        
 
         setwildbattle(SPECIES_DEWPIDER, 13)
@@ -233,7 +235,7 @@ script Route4_TrainerBattle_Jenny {
         applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
         waitmovement(0)
         delay(12)
-        msgbox(format("You saved us! Thank you. We were so scared!\p...\pI'll go home. I can't let my friends be hurt by the Dewpider."))
+        msgbox(format("You saved us! Thank you.\nWe were so scared!\p...\pI'll go home. I can't let my friends be hurt by the Dewpider."))
         release
         applymovement(1, moves(walk_down jump_in_place_down emote_exclamation_mark))
         waitmovement(0)        
@@ -286,20 +288,25 @@ script Route4_NPC_Cook{
 
     if (flag(FLAG_ROUTE4_COOK)){
         speakername("Chef")
-        msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)        
+        msgbox(format("Maybe I'll see you somewhere else,\nsince I travel all over Cormoria.\lAnd if you ever visit Pelluca City,\lbe sure to drop by our restaurant!"), MSGBOX_NPC)        
     } else {
         lockall
         faceplayer
         speakername("Chef")
-        msgbox(format("Hello young trainer! I'm a chef from the Pelluca Restaurant, all the way on the other side of Cormoria! Why am I here, you ask? It's because I travel all across Cormoria to find the best ingredients for the restaurant! I'm looking for a special berry that only grows around Mt. Ceram. It's called a Rawst Berry. If you happen to have one, would you give it to me?"), MSGBOX_YESNO)
+        msgbox(format("I'm a chef from the Pelluca Restaurant.\nIt's in Pelluca City, far out west!\lWhy am I here? I travel all across Cormoria to find the best ingredients for the restaurant!\pI'm looking for a special berry that only grows around Mt. Ceram. It's called a Rawst Berry.\pIf you have one, will you give it to me?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             checkitem(ITEM_RAWST_BERRY)
             if (var(VAR_RESULT) == 1){
                 removeitem(ITEM_RAWST_BERRY)
+                playfanfare(MUS_LEVEL_UP)
                 speakername(NULL)
                 msgbox(format("{PLAYER} gave the chef a Rawst Berry."), MSGBOX_SIGN)
+                waitfanfare
+                
+                delay(8)
+                faceplayer
                 speakername("Chef")
-                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature apple pie!\nThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange for the berry, I have a couple of trinkets you may like."))
+                msgbox(format("Oh wonderful! This will add a ton of flavour to our signature apple pie!\lThank you trainer. What's your name?\p...\p{PLAYER}, is it? In exchange, I have a couple of trinkets you may like."))
 
                 goto(Route4_NPC_Cook_Reward)
 
@@ -309,7 +316,7 @@ script Route4_NPC_Cook{
             }
         } else {
             speakername("Chef")
-            msgbox(format("A shame! But no matter - I'll continue my search."), MSGBOX_NPC)
+            msgbox(format("A shame! I must continue my search."), MSGBOX_NPC)
         }
     }
 
@@ -363,7 +370,7 @@ script Route4_NPC_Cook_RewardB{
 script Route4_NPC_Cook_RewardEnd{
     setflag(FLAG_ROUTE4_COOK)
     speakername("Chef")
-    msgbox(format("Maybe I'll see you somewhere else, since I travel all over Cormoria. And if you ever visit Pelluca City, be sure to drop by our restaurant!"), MSGBOX_NPC)            
+    msgbox(format("Maybe I'll see you somewhere else,\nsince I travel all over Cormoria.\lAnd if you ever visit Pelluca City,\lbe sure to drop by our restaurant!"), MSGBOX_NPC)            
     end
 }
 

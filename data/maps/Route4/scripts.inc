@@ -105,143 +105,147 @@ Route4_EventScript_EvilTeamDefeated::
 # 73 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_EVIL_BATTLE
 # 74 "data//maps/Route4/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	playse SE_EXIT
 # 75 "data//maps/Route4/scripts.pory"
+	waitse
+# 76 "data//maps/Route4/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 77 "data//maps/Route4/scripts.pory"
 	releaseall
 	return
 
 
 Route4_TrainerBattle_Raha::
-# 84 "data//maps/Route4/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE4_RAHA, Route4_TrainerBattle_Raha_Text_0, Route4_TrainerBattle_Raha_Text_1
-# 85 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Raha_Text_2
 # 86 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_RAHA, Route4_TrainerBattle_Raha_Text_0, Route4_TrainerBattle_Raha_Text_1
+# 87 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_Raha_Text_2
+# 88 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 
 Route4_TrainerBattle_Cammy::
-# 91 "data//maps/Route4/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE4_CAMMY, Route4_TrainerBattle_Cammy_Text_0, Route4_TrainerBattle_Cammy_Text_1
-# 92 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Cammy_Text_2
 # 93 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_CAMMY, Route4_TrainerBattle_Cammy_Text_0, Route4_TrainerBattle_Cammy_Text_1
+# 94 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_Cammy_Text_2
+# 95 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 
 Route4_TrainerBattle_Sona::
-# 98 "data//maps/Route4/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE4_SONA, Route4_TrainerBattle_Sona_Text_0, Route4_TrainerBattle_Sona_Text_1
-# 99 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Sona_Text_2
 # 100 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_SONA, Route4_TrainerBattle_Sona_Text_0, Route4_TrainerBattle_Sona_Text_1
+# 101 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_Sona_Text_2
+# 102 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 
 Route4_TrainerBattle_Jenny::
-# 105 "data//maps/Route4/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE4_JENNY, Route4_TrainerBattle_Jenny_Text_0, Route4_TrainerBattle_Jenny_Text_1
-# 106 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Jenny_Text_2
 # 107 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_JENNY, Route4_TrainerBattle_Jenny_Text_0, Route4_TrainerBattle_Jenny_Text_1
+# 108 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_Jenny_Text_2
+# 109 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 
 Route4_Kids_ClearFlag::
-# 113 "data//maps/Route4/scripts.pory"
+# 115 "data//maps/Route4/scripts.pory"
 	clearflag FLAG_ROUTE4_DEWPIDER_FINISHED
 	end
 
 
 Route4_TrainerBattle_Kid1::
-# 118 "data//maps/Route4/scripts.pory"
+# 120 "data//maps/Route4/scripts.pory"
 	trainerbattle_single TRAINER_ROUTE4_KID1, Route4_TrainerBattle_Kid1_Text_0, Route4_TrainerBattle_Kid1_Text_1, Route4_Kids_ClearFlag
-# 121 "data//maps/Route4/scripts.pory"
+# 123 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_ATTACK, Route4_TrainerBattle_Kid1_2
-# 124 "data//maps/Route4/scripts.pory"
+# 126 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid1_Text_3
 Route4_TrainerBattle_Kid1_1:
-# 126 "data//maps/Route4/scripts.pory"
+# 128 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 Route4_TrainerBattle_Kid1_2:
-# 122 "data//maps/Route4/scripts.pory"
+# 124 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid1_Text_2
 	goto Route4_TrainerBattle_Kid1_1
 
 
 Route4_TrainerBattle_Kid2::
-# 131 "data//maps/Route4/scripts.pory"
-	trainerbattle_single TRAINER_ROUTE4_KID2, Route4_TrainerBattle_Kid2_Text_0, Route4_TrainerBattle_Kid2_Text_1, Route4_Kids_ClearFlag
 # 133 "data//maps/Route4/scripts.pory"
+	trainerbattle_single TRAINER_ROUTE4_KID2, Route4_TrainerBattle_Kid2_Text_0, Route4_TrainerBattle_Kid2_Text_1, Route4_Kids_ClearFlag
+# 135 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_ATTACK, Route4_TrainerBattle_Kid2_2
-# 136 "data//maps/Route4/scripts.pory"
+# 138 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid2_Text_3
 Route4_TrainerBattle_Kid2_1:
-# 138 "data//maps/Route4/scripts.pory"
+# 140 "data//maps/Route4/scripts.pory"
 	release
 	end
 
 Route4_TrainerBattle_Kid2_2:
-# 134 "data//maps/Route4/scripts.pory"
+# 136 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid2_Text_2
 	goto Route4_TrainerBattle_Kid2_1
 
 
 Route4_TrainerBattle_Kid3::
-# 143 "data//maps/Route4/scripts.pory"
+# 145 "data//maps/Route4/scripts.pory"
 	lockall
-# 144 "data//maps/Route4/scripts.pory"
-	faceplayer
 # 146 "data//maps/Route4/scripts.pory"
+	faceplayer
+# 148 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_KIDGANG, Route4_TrainerBattle_Kid3_2
-# 154 "data//maps/Route4/scripts.pory"
-	clearflag FLAG_ROUTE4_DEWPIDER_FINISHED
-# 155 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Kid3_Text_2
 # 156 "data//maps/Route4/scripts.pory"
-	trainerbattle_no_intro TRAINER_ROUTE4_KID3, Route4_TrainerBattle_Kid3_Text_3
+	clearflag FLAG_ROUTE4_DEWPIDER_FINISHED
+# 157 "data//maps/Route4/scripts.pory"
+	msgbox Route4_TrainerBattle_Kid3_Text_2
 # 158 "data//maps/Route4/scripts.pory"
-	msgbox Route4_TrainerBattle_Kid3_Text_4
-# 159 "data//maps/Route4/scripts.pory"
-	giveitem ITEM_POKE_DOLL
+	trainerbattle_no_intro TRAINER_ROUTE4_KID3, Route4_TrainerBattle_Kid3_Text_3
 # 160 "data//maps/Route4/scripts.pory"
-	setflag FLAG_ROUTE4_KIDGANG
+	msgbox Route4_TrainerBattle_Kid3_Text_4
 # 161 "data//maps/Route4/scripts.pory"
+	giveitem ITEM_POKE_DOLL
+# 162 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_KIDGANG
+# 163 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid3_Text_5
 Route4_TrainerBattle_Kid3_1:
-# 163 "data//maps/Route4/scripts.pory"
+# 165 "data//maps/Route4/scripts.pory"
 	releaseall
 	end
 
 Route4_TrainerBattle_Kid3_2:
-# 148 "data//maps/Route4/scripts.pory"
+# 150 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_ATTACK, Route4_TrainerBattle_Kid3_5
-# 151 "data//maps/Route4/scripts.pory"
+# 153 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid3_Text_1
 	goto Route4_TrainerBattle_Kid3_1
 
 Route4_TrainerBattle_Kid3_5:
-# 149 "data//maps/Route4/scripts.pory"
+# 151 "data//maps/Route4/scripts.pory"
 	msgbox Route4_TrainerBattle_Kid3_Text_0, MSGBOX_NPC
 	goto Route4_TrainerBattle_Kid3_1
 
 
 Route4_Sign_KidsTrio::
-# 169 "data//maps/Route4/scripts.pory"
+# 171 "data//maps/Route4/scripts.pory"
 	msgbox Route4_Sign_KidsTrio_Text_0, MSGBOX_SIGN
 	end
 
 
 Route4_Dewpider_Trigger::
-# 176 "data//maps/Route4/scripts.pory"
+# 178 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_ATTACK, Route4_Dewpider_Trigger_2
-# 177 "data//maps/Route4/scripts.pory"
+# 179 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_KIDGANG, Route4_Dewpider_Trigger_4
 	end
 
@@ -249,324 +253,332 @@ Route4_Dewpider_Trigger_2:
 	end
 
 Route4_Dewpider_Trigger_4:
-# 178 "data//maps/Route4/scripts.pory"
-	lockall
-# 179 "data//maps/Route4/scripts.pory"
-	playmoncry SPECIES_DEWPIDER, CRY_MODE_NORMAL
 # 180 "data//maps/Route4/scripts.pory"
-	waitmoncry
+	lockall
 # 181 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Trigger_Text_0
+	playmoncry SPECIES_DEWPIDER, CRY_MODE_NORMAL
 # 182 "data//maps/Route4/scripts.pory"
-	release
+	waitmoncry
+# 183 "data//maps/Route4/scripts.pory"
+	msgbox Route4_Dewpider_Trigger_Text_0
 # 184 "data//maps/Route4/scripts.pory"
-	setobjectxyperm LOCALID_DEWPIDER, 9, 23
-# 185 "data//maps/Route4/scripts.pory"
-	setflag FLAG_ROUTE4_DEWPIDER_ATTACK
+	release
 # 186 "data//maps/Route4/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE4_DEWPIDER
+	setobjectxyperm LOCALID_DEWPIDER, 9, 23
 # 187 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_DEWPIDER_ATTACK
+# 188 "data//maps/Route4/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE4_DEWPIDER
+# 189 "data//maps/Route4/scripts.pory"
 	releaseall
 	end
 
 
 Route4_Dewpider::
-# 195 "data//maps/Route4/scripts.pory"
-	lockall
-# 196 "data//maps/Route4/scripts.pory"
-	faceplayer
 # 197 "data//maps/Route4/scripts.pory"
-	playmoncry SPECIES_DEWPIDER, CRY_MODE_NORMAL
+	lockall
 # 198 "data//maps/Route4/scripts.pory"
-	delay 16
+	faceplayer
 # 199 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Text_0
+	playmoncry SPECIES_DEWPIDER, CRY_MODE_NORMAL
 # 200 "data//maps/Route4/scripts.pory"
-	release
+	delay 16
+# 201 "data//maps/Route4/scripts.pory"
+	msgbox Route4_Dewpider_Text_0
 # 202 "data//maps/Route4/scripts.pory"
+	release
+# 204 "data//maps/Route4/scripts.pory"
 	setwildbattle SPECIES_DEWPIDER, 13
-# 203 "data//maps/Route4/scripts.pory"
+# 205 "data//maps/Route4/scripts.pory"
 	dowildbattle
-# 206 "data//maps/Route4/scripts.pory"
+# 208 "data//maps/Route4/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 207 "data//maps/Route4/scripts.pory"
+# 209 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route4_Dewpider_2
 Route4_Dewpider_1:
-# 213 "data//maps/Route4/scripts.pory"
+# 215 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route4_Dewpider_5
 Route4_Dewpider_4:
-# 219 "data//maps/Route4/scripts.pory"
+# 221 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq Route4_Dewpider_7
 	return
 
 Route4_Dewpider_2:
-# 208 "data//maps/Route4/scripts.pory"
-	removeobject LOCALID_DEWPIDER
-# 209 "data//maps/Route4/scripts.pory"
-	setflag FLAG_ROUTE4_DEWPIDER_FINISHED
 # 210 "data//maps/Route4/scripts.pory"
-	setflag FLAG_HIDE_ROUTE4_DEWPIDER
+	removeobject LOCALID_DEWPIDER
 # 211 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_DEWPIDER_FINISHED
+# 212 "data//maps/Route4/scripts.pory"
+	setflag FLAG_HIDE_ROUTE4_DEWPIDER
+# 213 "data//maps/Route4/scripts.pory"
 	goto Route4_Dewpider_Defeated
 	goto Route4_Dewpider_1
 
 Route4_Dewpider_5:
-# 214 "data//maps/Route4/scripts.pory"
-	removeobject LOCALID_DEWPIDER
-# 215 "data//maps/Route4/scripts.pory"
-	setflag FLAG_ROUTE4_DEWPIDER_FINISHED
 # 216 "data//maps/Route4/scripts.pory"
-	setflag FLAG_HIDE_ROUTE4_DEWPIDER
+	removeobject LOCALID_DEWPIDER
 # 217 "data//maps/Route4/scripts.pory"
+	setflag FLAG_ROUTE4_DEWPIDER_FINISHED
+# 218 "data//maps/Route4/scripts.pory"
+	setflag FLAG_HIDE_ROUTE4_DEWPIDER
+# 219 "data//maps/Route4/scripts.pory"
 	goto Route4_Dewpider_Defeated
 	goto Route4_Dewpider_4
 
 Route4_Dewpider_7:
-# 220 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Text_1
-# 221 "data//maps/Route4/scripts.pory"
-	release
 # 222 "data//maps/Route4/scripts.pory"
-	delay 12
+	msgbox Route4_Dewpider_Text_1
 # 223 "data//maps/Route4/scripts.pory"
-	applymovement 22, Route4_Dewpider_Movement_0
+	release
 # 224 "data//maps/Route4/scripts.pory"
 	delay 12
 # 225 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Text_2
+	applymovement 22, Route4_Dewpider_Movement_0
 # 226 "data//maps/Route4/scripts.pory"
+	delay 12
+# 227 "data//maps/Route4/scripts.pory"
+	msgbox Route4_Dewpider_Text_2
+# 228 "data//maps/Route4/scripts.pory"
 	release
 	return
 
 
 Route4_Dewpider_Defeated::
-# 231 "data//maps/Route4/scripts.pory"
-	lockall
-# 232 "data//maps/Route4/scripts.pory"
-	removeobject LOCALID_DEWPIDER
 # 233 "data//maps/Route4/scripts.pory"
-	applymovement 1, Route4_Dewpider_Defeated_Movement_0
+	lockall
 # 234 "data//maps/Route4/scripts.pory"
-	waitmovement 0
+	removeobject LOCALID_DEWPIDER
 # 235 "data//maps/Route4/scripts.pory"
-	delay 12
+	applymovement 1, Route4_Dewpider_Defeated_Movement_0
 # 236 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Defeated_Text_0
-# 237 "data//maps/Route4/scripts.pory"
-	release
-# 238 "data//maps/Route4/scripts.pory"
-	applymovement 1, Route4_Dewpider_Defeated_Movement_1
-# 239 "data//maps/Route4/scripts.pory"
 	waitmovement 0
-# 240 "data//maps/Route4/scripts.pory"
+# 237 "data//maps/Route4/scripts.pory"
 	delay 12
-# 241 "data//maps/Route4/scripts.pory"
-	msgbox Route4_Dewpider_Defeated_Text_1
-# 242 "data//maps/Route4/scripts.pory"
+# 238 "data//maps/Route4/scripts.pory"
+	msgbox Route4_Dewpider_Defeated_Text_0
+# 239 "data//maps/Route4/scripts.pory"
 	release
+# 240 "data//maps/Route4/scripts.pory"
+	applymovement 1, Route4_Dewpider_Defeated_Movement_1
+# 241 "data//maps/Route4/scripts.pory"
+	waitmovement 0
+# 242 "data//maps/Route4/scripts.pory"
+	delay 12
+# 243 "data//maps/Route4/scripts.pory"
+	msgbox Route4_Dewpider_Defeated_Text_1
 # 244 "data//maps/Route4/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 245 "data//maps/Route4/scripts.pory"
-	removeobject 1
+	release
 # 246 "data//maps/Route4/scripts.pory"
-	removeobject 2
+	fadescreenswapbuffers FADE_TO_BLACK
 # 247 "data//maps/Route4/scripts.pory"
-	removeobject 3
+	removeobject 1
 # 248 "data//maps/Route4/scripts.pory"
+	removeobject 2
+# 249 "data//maps/Route4/scripts.pory"
+	removeobject 3
+# 250 "data//maps/Route4/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 	return
 
 
 Route4_NPC_Couple1::
-# 254 "data//maps/Route4/scripts.pory"
+# 256 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Couple1_Text_0, MSGBOX_NPC
 	end
 
 
 Route4_NPC_Couple2::
-# 259 "data//maps/Route4/scripts.pory"
+# 261 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Couple2_Text_0, MSGBOX_NPC
 	end
 
 
 Route4_NPC_A::
-# 265 "data//maps/Route4/scripts.pory"
+# 267 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_A_Text_0, MSGBOX_NPC
 	end
 
 
 Route4_NPC_B::
-# 271 "data//maps/Route4/scripts.pory"
+# 273 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_FINISHED, Route4_NPC_B_2
-# 274 "data//maps/Route4/scripts.pory"
+# 276 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_DEWPIDER_ATTACK, Route4_NPC_B_5
-# 277 "data//maps/Route4/scripts.pory"
+# 279 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_B_Text_2, MSGBOX_NPC
 Route4_NPC_B_1:
 	end
 
 Route4_NPC_B_2:
-# 272 "data//maps/Route4/scripts.pory"
+# 274 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_B_Text_0, MSGBOX_NPC
 	goto Route4_NPC_B_1
 
 Route4_NPC_B_5:
-# 275 "data//maps/Route4/scripts.pory"
+# 277 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_B_Text_1, MSGBOX_NPC
 	goto Route4_NPC_B_1
 
 
 Route4_NPC_Cook::
-# 287 "data//maps/Route4/scripts.pory"
+# 289 "data//maps/Route4/scripts.pory"
 	goto_if_set FLAG_ROUTE4_COOK, Route4_NPC_Cook_2
-# 291 "data//maps/Route4/scripts.pory"
-	lockall
-# 292 "data//maps/Route4/scripts.pory"
-	faceplayer
 # 293 "data//maps/Route4/scripts.pory"
-	speakername Route4_NPC_Cook_Text_0
+	lockall
 # 294 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_2, MSGBOX_YESNO
+	faceplayer
 # 295 "data//maps/Route4/scripts.pory"
+	speakername Route4_NPC_Cook_Text_0
+# 296 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_2, MSGBOX_YESNO
+# 297 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_5
-# 311 "data//maps/Route4/scripts.pory"
+# 318 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 312 "data//maps/Route4/scripts.pory"
+# 319 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_6, MSGBOX_NPC
 Route4_NPC_Cook_1:
-# 317 "data//maps/Route4/scripts.pory"
+# 324 "data//maps/Route4/scripts.pory"
 	releaseall
 	end
 
 Route4_NPC_Cook_2:
-# 288 "data//maps/Route4/scripts.pory"
+# 290 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 289 "data//maps/Route4/scripts.pory"
+# 291 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_1, MSGBOX_NPC
 	goto Route4_NPC_Cook_1
 
 Route4_NPC_Cook_5:
-# 296 "data//maps/Route4/scripts.pory"
+# 298 "data//maps/Route4/scripts.pory"
 	checkitem ITEM_RAWST_BERRY
-# 297 "data//maps/Route4/scripts.pory"
+# 299 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_8
-# 307 "data//maps/Route4/scripts.pory"
+# 314 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 308 "data//maps/Route4/scripts.pory"
+# 315 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_5, MSGBOX_NPC
 	goto Route4_NPC_Cook_1
 
 Route4_NPC_Cook_8:
-# 298 "data//maps/Route4/scripts.pory"
-	removeitem ITEM_RAWST_BERRY
-# 299 "data//maps/Route4/scripts.pory"
-	speakername NULL
 # 300 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_3, MSGBOX_SIGN
+	removeitem ITEM_RAWST_BERRY
 # 301 "data//maps/Route4/scripts.pory"
-	speakername Route4_NPC_Cook_Text_0
+	playfanfare MUS_LEVEL_UP
 # 302 "data//maps/Route4/scripts.pory"
-	msgbox Route4_NPC_Cook_Text_4
+	speakername NULL
+# 303 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_3, MSGBOX_SIGN
 # 304 "data//maps/Route4/scripts.pory"
+	waitfanfare
+# 306 "data//maps/Route4/scripts.pory"
+	delay 8
+# 307 "data//maps/Route4/scripts.pory"
+	faceplayer
+# 308 "data//maps/Route4/scripts.pory"
+	speakername Route4_NPC_Cook_Text_0
+# 309 "data//maps/Route4/scripts.pory"
+	msgbox Route4_NPC_Cook_Text_4
+# 311 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_Reward
 	goto Route4_NPC_Cook_1
 
 
 Route4_NPC_Cook_Reward::
-# 322 "data//maps/Route4/scripts.pory"
+# 329 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 323 "data//maps/Route4/scripts.pory"
+# 330 "data//maps/Route4/scripts.pory"
 	message Route4_NPC_Cook_Reward_Text_0
-# 324 "data//maps/Route4/scripts.pory"
+# 331 "data//maps/Route4/scripts.pory"
 	waitmessage
-# 325 "data//maps/Route4/scripts.pory"
+# 332 "data//maps/Route4/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, Route4_NPC_Cook_Reward_Text_1, Route4_NPC_Cook_Reward_Text_2
-# 326 "data//maps/Route4/scripts.pory"
+# 333 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route4_NPC_Cook_Reward_1
-# 329 "data//maps/Route4/scripts.pory"
+# 336 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_RewardB
 	return
 
 Route4_NPC_Cook_Reward_1:
-# 327 "data//maps/Route4/scripts.pory"
+# 334 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_RewardA
 	return
 
 
 Route4_NPC_Cook_RewardA::
-# 334 "data//maps/Route4/scripts.pory"
+# 341 "data//maps/Route4/scripts.pory"
 	setvar VAR_0x8006, ITEM_SHELL_BELL
-# 335 "data//maps/Route4/scripts.pory"
+# 342 "data//maps/Route4/scripts.pory"
 	showitemdescription
-# 336 "data//maps/Route4/scripts.pory"
+# 343 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 337 "data//maps/Route4/scripts.pory"
+# 344 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_RewardA_Text_0, MSGBOX_YESNO
-# 338 "data//maps/Route4/scripts.pory"
+# 345 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_RewardA_1
-# 343 "data//maps/Route4/scripts.pory"
+# 350 "data//maps/Route4/scripts.pory"
 	hideitemdescription
-# 344 "data//maps/Route4/scripts.pory"
+# 351 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_Reward
 	return
 
 Route4_NPC_Cook_RewardA_1:
-# 339 "data//maps/Route4/scripts.pory"
+# 346 "data//maps/Route4/scripts.pory"
 	hideitemdescription
-# 340 "data//maps/Route4/scripts.pory"
+# 347 "data//maps/Route4/scripts.pory"
 	giveitem ITEM_SHELL_BELL
-# 341 "data//maps/Route4/scripts.pory"
+# 348 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_RewardEnd
 	return
 
 
 Route4_NPC_Cook_RewardB::
-# 349 "data//maps/Route4/scripts.pory"
+# 356 "data//maps/Route4/scripts.pory"
 	setvar VAR_0x8006, ITEM_ADRENALINE_ORB
-# 350 "data//maps/Route4/scripts.pory"
+# 357 "data//maps/Route4/scripts.pory"
 	showitemdescription
-# 351 "data//maps/Route4/scripts.pory"
+# 358 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 352 "data//maps/Route4/scripts.pory"
+# 359 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_RewardA_Text_0, MSGBOX_YESNO
-# 353 "data//maps/Route4/scripts.pory"
+# 360 "data//maps/Route4/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route4_NPC_Cook_RewardB_1
-# 358 "data//maps/Route4/scripts.pory"
+# 365 "data//maps/Route4/scripts.pory"
 	hideitemdescription
-# 359 "data//maps/Route4/scripts.pory"
+# 366 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_Reward
 	return
 
 Route4_NPC_Cook_RewardB_1:
-# 354 "data//maps/Route4/scripts.pory"
+# 361 "data//maps/Route4/scripts.pory"
 	hideitemdescription
-# 355 "data//maps/Route4/scripts.pory"
+# 362 "data//maps/Route4/scripts.pory"
 	giveitem ITEM_ADRENALINE_ORB
-# 356 "data//maps/Route4/scripts.pory"
+# 363 "data//maps/Route4/scripts.pory"
 	goto Route4_NPC_Cook_RewardEnd
 	return
 
 
 Route4_NPC_Cook_RewardEnd::
-# 364 "data//maps/Route4/scripts.pory"
+# 371 "data//maps/Route4/scripts.pory"
 	setflag FLAG_ROUTE4_COOK
-# 365 "data//maps/Route4/scripts.pory"
+# 372 "data//maps/Route4/scripts.pory"
 	speakername Route4_NPC_Cook_Text_0
-# 366 "data//maps/Route4/scripts.pory"
+# 373 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_Cook_Text_1, MSGBOX_NPC
 	end
 
 
 Route4_NPC_D::
-# 372 "data//maps/Route4/scripts.pory"
+# 379 "data//maps/Route4/scripts.pory"
 	msgbox Route4_NPC_D_Text_0, MSGBOX_NPC
 	end
 
@@ -601,35 +613,35 @@ Route4_EventScript_EvilTeamDefeated_Movement_4:
 	face_down
 	step_end
 
-# 223 "data//maps/Route4/scripts.pory"
+# 225 "data//maps/Route4/scripts.pory"
 Route4_Dewpider_Movement_0:
-# 223 "data//maps/Route4/scripts.pory"
+# 225 "data//maps/Route4/scripts.pory"
 	face_up
 	step_end
 
-# 233 "data//maps/Route4/scripts.pory"
+# 235 "data//maps/Route4/scripts.pory"
 Route4_Dewpider_Defeated_Movement_0:
-# 233 "data//maps/Route4/scripts.pory"
+# 235 "data//maps/Route4/scripts.pory"
 	emote_exclamation_mark
-# 233 "data//maps/Route4/scripts.pory"
+# 235 "data//maps/Route4/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 238 "data//maps/Route4/scripts.pory"
+# 240 "data//maps/Route4/scripts.pory"
 Route4_Dewpider_Defeated_Movement_1:
-# 238 "data//maps/Route4/scripts.pory"
+# 240 "data//maps/Route4/scripts.pory"
 	walk_down
-# 238 "data//maps/Route4/scripts.pory"
+# 240 "data//maps/Route4/scripts.pory"
 	jump_in_place_down
-# 238 "data//maps/Route4/scripts.pory"
+# 240 "data//maps/Route4/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
 Route4_NurseJoy_OnRoute_Text_0:
 # 14 "data//maps/Route4/scripts.pory"
-	.string "Can you believe it? They stationed us\n"
-	.string "on these rocks. I'm a nurse for crying\l"
-	.string "out loud!\p"
+	.string "Can you believe it?\n"
+	.string "They stationed us on these rocks.\l"
+	.string "I'm a nurse for crying out loud!\p"
 	.string "Sigh...$"
 
 Route4_EventScript_EvilTeam_Text_0:
@@ -664,143 +676,141 @@ Route4_EventScript_EvilTeam_Text_5:
 
 Route4_EventScript_EvilTeamDefeated_Text_0:
 # 57 "data//maps/Route4/scripts.pory"
-	.string "Can't believe we lost to some stupid\n"
-	.string "kid...$"
+	.string "Can't believe we lost to a stupid kid...$"
 
 Route4_EventScript_EvilTeamDefeated_Text_1:
 # 61 "data//maps/Route4/scripts.pory"
-	.string "We gotta tell the boss at Ceram Base\n"
-	.string "Camp about this!$"
+	.string "C'mon - we gotta tell the boss at\n"
+	.string "Ceram Base Camp about this!$"
 
 Route4_EventScript_EvilTeamDefeated_Text_2:
 # 66 "data//maps/Route4/scripts.pory"
 	.string "We'll remember this, kid!$"
 
 Route4_TrainerBattle_Raha_Text_0:
-# 84 "data//maps/Route4/scripts.pory"
+# 86 "data//maps/Route4/scripts.pory"
 	.string "My Pokémon were very expensive!\n"
 	.string "There's no way you can beat me!$"
 
 Route4_TrainerBattle_Raha_Text_1:
-# 84 "data//maps/Route4/scripts.pory"
+# 86 "data//maps/Route4/scripts.pory"
 	.string "But Father spent so much money!$"
 
 Route4_TrainerBattle_Raha_Text_2:
-# 85 "data//maps/Route4/scripts.pory"
+# 87 "data//maps/Route4/scripts.pory"
 	.string "Maybe I should ask Father to buy some\n"
 	.string "stronger Pokémon...or maybe I should\l"
 	.string "try and train them myself, like you!$"
 
 Route4_TrainerBattle_Cammy_Text_0:
-# 91 "data//maps/Route4/scripts.pory"
+# 93 "data//maps/Route4/scripts.pory"
 	.string "Are you a new trainer? Let this old lady\n"
 	.string "teach you some new tricks!$"
 
 Route4_TrainerBattle_Cammy_Text_1:
-# 91 "data//maps/Route4/scripts.pory"
+# 93 "data//maps/Route4/scripts.pory"
 	.string "You know a trick or two yourself!$"
 
 Route4_TrainerBattle_Cammy_Text_2:
-# 92 "data//maps/Route4/scripts.pory"
+# 94 "data//maps/Route4/scripts.pory"
 	.string "You were the teacher and I was the\n"
 	.string "student! Haha!$"
 
 Route4_TrainerBattle_Sona_Text_0:
-# 98 "data//maps/Route4/scripts.pory"
+# 100 "data//maps/Route4/scripts.pory"
 	.string "Different Pokémon inhabit different\n"
 	.string "areas. I caught mine right here!$"
 
 Route4_TrainerBattle_Sona_Text_1:
-# 98 "data//maps/Route4/scripts.pory"
+# 100 "data//maps/Route4/scripts.pory"
 	.string "Oh no!$"
 
 Route4_TrainerBattle_Sona_Text_2:
-# 99 "data//maps/Route4/scripts.pory"
+# 101 "data//maps/Route4/scripts.pory"
 	.string "No matter where they're from, all\n"
 	.string "Pokémon need love and care.$"
 
 Route4_TrainerBattle_Jenny_Text_0:
-# 105 "data//maps/Route4/scripts.pory"
+# 107 "data//maps/Route4/scripts.pory"
 	.string "Oof! It's getting hotter and hotter.\n"
 	.string "Where's the air conditioning?$"
 
 Route4_TrainerBattle_Jenny_Text_1:
-# 105 "data//maps/Route4/scripts.pory"
+# 107 "data//maps/Route4/scripts.pory"
 	.string "You're too hot!$"
 
 Route4_TrainerBattle_Jenny_Text_2:
-# 106 "data//maps/Route4/scripts.pory"
+# 108 "data//maps/Route4/scripts.pory"
 	.string "Buneary, Chikorita and I can't stand\n"
 	.string "the heat of the volcano!$"
 
 Route4_TrainerBattle_Kid1_Text_0:
-# 118 "data//maps/Route4/scripts.pory"
+# 120 "data//maps/Route4/scripts.pory"
 	.string "Hah! Bet you didn't see me there, did\n"
 	.string "you? You entered our secret hideout\l"
 	.string "and now you're going to pay!$"
 
 Route4_TrainerBattle_Kid1_Text_1:
-# 118 "data//maps/Route4/scripts.pory"
+# 120 "data//maps/Route4/scripts.pory"
 	.string "Waah!$"
 
 Route4_TrainerBattle_Kid1_Text_2:
-# 122 "data//maps/Route4/scripts.pory"
+# 124 "data//maps/Route4/scripts.pory"
 	.string "Eek! It's the Dewpider!$"
 
 Route4_TrainerBattle_Kid1_Text_3:
-# 124 "data//maps/Route4/scripts.pory"
+# 126 "data//maps/Route4/scripts.pory"
 	.string "It's summer break so we play here all\n"
 	.string "day until the sun goes down!$"
 
 Route4_TrainerBattle_Kid2_Text_0:
-# 131 "data//maps/Route4/scripts.pory"
+# 133 "data//maps/Route4/scripts.pory"
 	.string "Ooh, you made it this far! But I won't\n"
 	.string "let you lay your hands on the boss! I'm\l"
 	.string "going to stop you right now!$"
 
 Route4_TrainerBattle_Kid2_Text_1:
-# 131 "data//maps/Route4/scripts.pory"
+# 133 "data//maps/Route4/scripts.pory"
 	.string "Boss! Help!$"
 
 Route4_TrainerBattle_Kid2_Text_2:
-# 134 "data//maps/Route4/scripts.pory"
-	.string "Someone help the boss! The Dewpider is\n"
-	.string "attacking him!$"
+# 136 "data//maps/Route4/scripts.pory"
+	.string "Someone help the boss!$"
 
 Route4_TrainerBattle_Kid2_Text_3:
-# 136 "data//maps/Route4/scripts.pory"
-	.string "Our secret hideout is really cool, don't\n"
-	.string "you think?$"
+# 138 "data//maps/Route4/scripts.pory"
+	.string "Our secret hideout is really cool,\n"
+	.string "don't you think?$"
 
 Route4_TrainerBattle_Kid3_Text_0:
-# 149 "data//maps/Route4/scripts.pory"
+# 151 "data//maps/Route4/scripts.pory"
 	.string "It's you! The old one! Please get\n"
 	.string "Dewpider away from me!$"
 
 Route4_TrainerBattle_Kid3_Text_1:
-# 151 "data//maps/Route4/scripts.pory"
+# 153 "data//maps/Route4/scripts.pory"
 	.string "I have so much fun with my friends\n"
 	.string "here...I hate going back home. I hate my\l"
 	.string "family!$"
 
 Route4_TrainerBattle_Kid3_Text_2:
-# 155 "data//maps/Route4/scripts.pory"
+# 157 "data//maps/Route4/scripts.pory"
 	.string "Ahem...welcome to our secret hideout,\n"
 	.string "old one. You may look down upon us for\l"
 	.string "being so small, but let me tell you\l"
 	.string "something...Even us kids are strong!$"
 
 Route4_TrainerBattle_Kid3_Text_3:
-# 156 "data//maps/Route4/scripts.pory"
+# 158 "data//maps/Route4/scripts.pory"
 	.string "My Pokémon! Adults are lame!$"
 
 Route4_TrainerBattle_Kid3_Text_4:
-# 158 "data//maps/Route4/scripts.pory"
-	.string "You have proved your worth, old one. You\n"
-	.string "may now accept this reward.$"
+# 160 "data//maps/Route4/scripts.pory"
+	.string "You have proved your worth, old one.\n"
+	.string "You may now accept this reward.$"
 
 Route4_TrainerBattle_Kid3_Text_5:
-# 161 "data//maps/Route4/scripts.pory"
+# 163 "data//maps/Route4/scripts.pory"
 	.string "...\p"
 	.string "...when will I go back home?\p"
 	.string "Never! I hate my family! They only care\n"
@@ -809,53 +819,53 @@ Route4_TrainerBattle_Kid3_Text_5:
 	.string "outside all day!$"
 
 Route4_Sign_KidsTrio_Text_0:
-# 169 "data//maps/Route4/scripts.pory"
+# 171 "data//maps/Route4/scripts.pory"
 	.string "A child has scrawled on this sign.\p"
-	.string "THIS IS OUR SECRET BASE. GET OUT OR\n"
-	.string "BEWARE!!!!$"
+	.string "THIS IS OUR SECRET BASE.\n"
+	.string "GET OUT OR BEWARE!!!!$"
 
 Route4_Dewpider_Trigger_Text_0:
-# 181 "data//maps/Route4/scripts.pory"
+# 183 "data//maps/Route4/scripts.pory"
 	.string "Aaahhh!! Help!!!!$"
 
 Route4_Dewpider_Text_0:
-# 199 "data//maps/Route4/scripts.pory"
-	.string "It's the Dewpider! It snaps at you and\n"
-	.string "attacks!$"
+# 201 "data//maps/Route4/scripts.pory"
+	.string "Oh no - it's the Dewpider!\n"
+	.string "It snaps at you and attacks!$"
 
 Route4_Dewpider_Text_1:
-# 220 "data//maps/Route4/scripts.pory"
+# 222 "data//maps/Route4/scripts.pory"
 	.string "The Dewpider snaps at you before\n"
 	.string "turning around.$"
 
 Route4_Dewpider_Text_2:
-# 225 "data//maps/Route4/scripts.pory"
+# 227 "data//maps/Route4/scripts.pory"
 	.string "Will the kids just be left like this?$"
 
 Route4_Dewpider_Defeated_Text_0:
-# 236 "data//maps/Route4/scripts.pory"
-	.string "You saved us! Thank you. We were so\n"
-	.string "scared!\p"
+# 238 "data//maps/Route4/scripts.pory"
+	.string "You saved us! Thank you.\n"
+	.string "We were so scared!\p"
 	.string "...\p"
 	.string "I'll go home. I can't let my friends be\n"
 	.string "hurt by the Dewpider.$"
 
 Route4_Dewpider_Defeated_Text_1:
-# 241 "data//maps/Route4/scripts.pory"
+# 243 "data//maps/Route4/scripts.pory"
 	.string "C'mon gang! Let's go.$"
 
 Route4_NPC_Couple1_Text_0:
-# 254 "data//maps/Route4/scripts.pory"
+# 256 "data//maps/Route4/scripts.pory"
 	.string "What a lovely view!\p"
 	.string "The lake is nice too...$"
 
 Route4_NPC_Couple2_Text_0:
-# 259 "data//maps/Route4/scripts.pory"
+# 261 "data//maps/Route4/scripts.pory"
 	.string "What a lovely view!\p"
 	.string "It's a shame about her...$"
 
 Route4_NPC_A_Text_0:
-# 265 "data//maps/Route4/scripts.pory"
+# 267 "data//maps/Route4/scripts.pory"
 	.string "I don't understand why they don't just\n"
 	.string "build a bridge to Ceram Base Camp.\p"
 	.string "Sure, trainers can cross with HM Splash,\n"
@@ -864,17 +874,17 @@ Route4_NPC_A_Text_0:
 	.string "We're not all trainers!$"
 
 Route4_NPC_B_Text_0:
-# 272 "data//maps/Route4/scripts.pory"
+# 274 "data//maps/Route4/scripts.pory"
 	.string "My brother's gone home now. Finally!$"
 
 Route4_NPC_B_Text_1:
-# 275 "data//maps/Route4/scripts.pory"
+# 277 "data//maps/Route4/scripts.pory"
 	.string "What was that cry? It sounded like my\n"
 	.string "stupid brother. Hah! He's only getting\l"
 	.string "what he deserves.$"
 
 Route4_NPC_B_Text_2:
-# 277 "data//maps/Route4/scripts.pory"
+# 279 "data//maps/Route4/scripts.pory"
 	.string "Mom told me to come here and get my\n"
 	.string "little brother. He's such a brat!\l"
 	.string "Everyone knows its dangerous to play\l"
@@ -882,71 +892,68 @@ Route4_NPC_B_Text_2:
 	.string "just runs out and comes here anyway!$"
 
 Route4_NPC_Cook_Text_0:
-# 288 "data//maps/Route4/scripts.pory"
+# 290 "data//maps/Route4/scripts.pory"
 	.string "Chef$"
 
 Route4_NPC_Cook_Text_1:
-# 289 "data//maps/Route4/scripts.pory"
-	.string "Maybe I'll see you somewhere else, since\n"
-	.string "I travel all over Cormoria. And if you\l"
-	.string "ever visit Pelluca City, be sure to drop\l"
-	.string "by our restaurant!$"
+# 291 "data//maps/Route4/scripts.pory"
+	.string "Maybe I'll see you somewhere else,\n"
+	.string "since I travel all over Cormoria.\l"
+	.string "And if you ever visit Pelluca City,\l"
+	.string "be sure to drop by our restaurant!$"
 
 Route4_NPC_Cook_Text_2:
-# 294 "data//maps/Route4/scripts.pory"
-	.string "Hello young trainer! I'm a chef from the\n"
-	.string "Pelluca Restaurant, all the way on the\l"
-	.string "other side of Cormoria! Why am I here,\l"
-	.string "you ask? It's because I travel all\l"
-	.string "across Cormoria to find the best\l"
-	.string "ingredients for the restaurant! I'm\l"
-	.string "looking for a special berry that only\l"
-	.string "grows around Mt. Ceram. It's called a\l"
-	.string "Rawst Berry. If you happen to have one,\l"
-	.string "would you give it to me?$"
+# 296 "data//maps/Route4/scripts.pory"
+	.string "I'm a chef from the Pelluca Restaurant.\n"
+	.string "It's in Pelluca City, far out west!\l"
+	.string "Why am I here? I travel all across\l"
+	.string "Cormoria to find the best ingredients\l"
+	.string "for the restaurant!\p"
+	.string "I'm looking for a special berry that\n"
+	.string "only grows around Mt. Ceram. It's called\l"
+	.string "a Rawst Berry.\p"
+	.string "If you have one, will you give it to me?$"
 
 Route4_NPC_Cook_Text_3:
-# 300 "data//maps/Route4/scripts.pory"
+# 303 "data//maps/Route4/scripts.pory"
 	.string "{PLAYER} gave the chef a Rawst Berry.$"
 
 Route4_NPC_Cook_Text_4:
-# 302 "data//maps/Route4/scripts.pory"
+# 309 "data//maps/Route4/scripts.pory"
 	.string "Oh wonderful! This will add a ton of\n"
-	.string "flavour to our signature apple pie!\n"
+	.string "flavour to our signature apple pie!\l"
 	.string "Thank you trainer. What's your name?\p"
 	.string "...\p"
-	.string "{PLAYER}, is it? In exchange for the\n"
-	.string "berry, I have a couple of trinkets you\l"
-	.string "may like.$"
+	.string "{PLAYER}, is it? In exchange, I have a\n"
+	.string "couple of trinkets you may like.$"
 
 Route4_NPC_Cook_Text_5:
-# 308 "data//maps/Route4/scripts.pory"
+# 315 "data//maps/Route4/scripts.pory"
 	.string "I don't see any Rawst Berries on you.\n"
 	.string "Come back when you get one!$"
 
 Route4_NPC_Cook_Text_6:
-# 312 "data//maps/Route4/scripts.pory"
-	.string "A shame! But no matter - I'll continue\n"
-	.string "my search.$"
+# 319 "data//maps/Route4/scripts.pory"
+	.string "A shame! I must continue my search.$"
 
 Route4_NPC_Cook_Reward_Text_0:
-# 323 "data//maps/Route4/scripts.pory"
+# 330 "data//maps/Route4/scripts.pory"
 	.string "Please take one!$"
 
 Route4_NPC_Cook_Reward_Text_1:
-# 325 "data//maps/Route4/scripts.pory"
+# 332 "data//maps/Route4/scripts.pory"
 	.string "Shell Bell$"
 
 Route4_NPC_Cook_Reward_Text_2:
-# 325 "data//maps/Route4/scripts.pory"
+# 332 "data//maps/Route4/scripts.pory"
 	.string "Adrenaline Orb$"
 
 Route4_NPC_Cook_RewardA_Text_0:
-# 337 "data//maps/Route4/scripts.pory"
+# 344 "data//maps/Route4/scripts.pory"
 	.string "Are you sure?$"
 
 Route4_NPC_D_Text_0:
-# 372 "data//maps/Route4/scripts.pory"
+# 379 "data//maps/Route4/scripts.pory"
 	.string "There are some grunts blocking the\n"
 	.string "path to Ceram Base Camp! They remind me\l"
 	.string "of my younger days...I used to be in an\l"

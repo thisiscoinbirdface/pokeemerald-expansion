@@ -116,7 +116,8 @@ script WhiteSign_Route4_TowardsCeramBaseCamp {
     end
 }
 script WoodSign_Route4_HM {
-    msgbox(format("TRAINER TIPS: You don't need to teach your Pokémon HMs to use them! But you do need enough badges."), MSGBOX_SIGN)
+    speakername("Trainer Tips")    
+    msgbox(format("Pokémon can use HMs without learning them! But you need enough badges."), MSGBOX_SIGN)
     end
 }
 

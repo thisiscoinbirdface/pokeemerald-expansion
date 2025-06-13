@@ -152,15 +152,17 @@ script GastreeCity_Shard_Trigger{
     if (var(VAR_RESULT) == 0) {end}
 
     lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovement(0)
     applymovement(LOCALID_OLD_WOMAN, moves(face_down emote_exclamation_mark))
     waitmovement(0)
     delay(16)
     msgbox(format("Child! Is that a Rare Shard you have?\pMy my...come here, quickly!"))
     release
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
     waitmovement(0)
     delay(16)
-    msgbox(format("I'm an archaeologist researching these ancient statues.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors will grade them from E- to S.\pNormally, there's no way to change them.\pBut a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
+    msgbox(format("I'm an archaeologist researching\nthese ancient statues.\pDid you know that all Pokémon have innate Individual Values for each of their stats? Pokémon Professors will grade them from E- to S.\pNormally, there's no way to change them.\pBut a Rare Shard, when held in the prescence of an ancient statue like this one, can maximise one of your Pokémon's Individual Values!\pA fascinating phenomenon!\nWhy don't you try it now?"))
     release
     delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
@@ -184,7 +186,7 @@ script GastreeCity_Shard_Trigger{
     applymovement(LOCALID_BERG, moves(jump_in_place_down * 3))
     playmoncry(SPECIES_BERGMITE, CRY_MODE_NORMAL)
     waitmovement(0)
-    delay(16)
+    playse(SE_M_ROCK_THROW)
     msgbox(format("keee!!!"))
     release
     delay(16)
@@ -258,7 +260,7 @@ script GastreeCity_Shard_Trigger{
     applymovement(LOCALID_OLD_WOMAN, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox(format("I can't let this happen any more. We must preserve these statues.\pI'm now too old to go around Cormoria, but you, my dear, are young and able! You must help me preserve these statues!\pTake this."))
+    msgbox(format("I can't let this happen any more.\nWe must preserve these statues.\pI'm now too old to go around Cormoria, but you, my dear, are young and able! You must help me preserve the statues!\pTake this."))
     release
     
     applymovement(LOCALID_OLD_WOMAN, moves(walk_down walk_left face_down))

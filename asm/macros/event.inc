@@ -1920,8 +1920,9 @@
 	questmenu QUEST_MENU_BUFFER_QUEST_NAME \quest
     bufferstring 1 gText_QuestComplete
 	playfanfare MUS_SLOTS_WIN
-	msgbox gText_QuestAnnounce, MSGBOX_SIGN
+	message gText_QuestAnnounce
 	waitfanfare
+	release
 	.endm
 
 .macro goto_if_quest_inactive quest:req, dest:req

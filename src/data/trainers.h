@@ -1848,7 +1848,7 @@ F_TRAINER_FEMALE |
 #line 861
 F_TRAINER_FEMALE | 
 #line 862
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 863
         .doubleBattle = FALSE,
 #line 864
