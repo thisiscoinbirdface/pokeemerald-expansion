@@ -5897,7 +5897,7 @@ u16 GetBattleBGM(void)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
-            return MUS_RG_VS_TRAINER;
+            return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_SALON_MAIDEN:
@@ -5909,7 +5909,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         case TRAINER_CLASS_ACE_ROOKIE:
-            return MUS_VS_RIVAL;
+            return MUS_VS_RIVAL; //MUS_RG_VS_TRAINER
         case TRAINER_CLASS_KOHLA_FINAL:
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_RUE:

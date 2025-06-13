@@ -531,7 +531,7 @@ script GalecrestCity_NPC_Ranger{
 
 
 script GalecrestCity_NPC_Red{
-    msgbox(format("The Gym Leader's not in right now. He should be back soon. Check out the Detective Academy in the meantime!"), MSGBOX_NPC)
+    msgbox(format("The Gym Leader's not in right now.\nHe should be back soon. Check out the Detective Academy in the meantime!"), MSGBOX_NPC)
     applymovement(38, moves(face_down))
     waitmovement(0)
     end

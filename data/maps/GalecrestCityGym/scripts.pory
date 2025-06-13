@@ -100,7 +100,7 @@ script GalecrestCityGym_NPC1 {
 }
 
 script GalecrestCityGym_NPC2 {
-    msgbox(format("I'm the detective overseeing the cadets. All the best for your gym challenge!"), MSGBOX_NPC)
+    msgbox(format("I'm here to oversee the cadets.\nAll the best for your gym challenge!"), MSGBOX_NPC)
     end
 }
 
@@ -132,14 +132,14 @@ script GalecrestCityGym_Trainer1 {
 }
 
 script GalecrestCityGym_Trainer2 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_B, format("After our internship here, we can evolve our Charcadet into Armarouge!"), format("If I keep losing to trainers like you, I'll never get an Armarouge! Go through the left door if you DON'T like the awful Ceruledge."))
-    msgbox(format("If I keep losing to trainers like you, I'll never get an Armarouge! Go through the left door if you DON'T like the awful Ceruledge."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_B, format("After our internship here, we can evolve our Charcadet into Armarouge!"), format("If I keep losing to trainers like you, I'll never get an Armarouge!\pGo through the left door if you DON'T like the awful Ceruledge."))
+    msgbox(format("If I keep losing to trainers like you, I'll never get an Armarouge!\pGo through the left door if you DON'T like the awful Ceruledge."))
     release
     end
 }
 
 script GalecrestCityGym_Trainer3 {
-    trainerbattle_single(TRAINER_GALECRESTGYM_C, format("The gym leader is through the next door. But you won't make it because your journey ends here!"), format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his Charcadet to Armarouge! Don't not go through the door that isn't not to the left of the right."))
+    trainerbattle_single(TRAINER_GALECRESTGYM_C, format("The gym leader is through the next door. But you won't make it because your gym challenge ends here!"), format("You may have beaten me, but you won't beat our Gym Leader. He's already evolved his Charcadet to Armarouge! Don't not go through the door that isn't not to the left of the right."))
     msgbox(format("Don't not go through the door that isn't not to the left of the right."))
     release
     end
@@ -218,7 +218,7 @@ script GalecrestCityGym_Leader {
 
 
 text GalecrestCityGym_Text_LeaderIntro{
-    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating class assumes Gym Leader duties for a year after they graduate.\pAnd this year, that's me! Normally I would use the gym standard NORMAL Pokémon, but since it's you, I'm going to make an exception.\pI'll crush you with my REAL team!")
+    format("Yes {PLAYER}, it's me. Traditionally, the Ace Rookie of the graduating\lclass assumes Gym Leader duties for\la year after they graduate.\pAnd this year, that's me!\pNormally I would use the gym standard NORMAL Pokémon, but since it's you,\lI'm going to make an exception.\pI'll crush you with my REAL team!")
 }
 
 text GalecrestCityGym_Text_Defeated{

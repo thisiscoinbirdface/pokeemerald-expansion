@@ -9,29 +9,40 @@ mapscripts GalecrestCity_DetectiveAcademy_MapScripts{}
 //Kohla talk
 script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
     lockall
-
+    hidefollower
     //Kohla stares blankly
     //Explains his past and motivations
     speakername("Kohla")
-    msgbox(format("...\p...\p...\pI saw a lot of bad stuff growing up, so I wanted to become a detective.\pSo I did.\pI graduated from this academy at the top of my class...\p...but it wasn't enough."))
+    msgbox(format("...\p...\p...\pI saw a lot of bad stuff growing up, so\nI wanted to become a detective.\pSo I did.\pI graduated from this academy at\nthe top of my class...\p...but it wasn't enough."))
     release
     //Turns, thanks player for telling him what he needs
     faceplayer
     waitmovement(0)
     delay(24)
     speakername("Kohla")
-    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough.\pTo stop Team Somber - no, to stop all crime, I need to become stronger than the criminals.\pAt the end of the day, it's all about how strong you are."))
+    msgbox(format("{PLAYER}, it was you who stopped Team Somber from getting the dreamstone.\pThanks to you, I learned something. Being the Ace Rookie isn't enough.\pTo stop Team Somber - no, to stop all crime, I need to become stronger than the criminals I face.\pAt the end of the day, it's all about\nhow strong you are."))
     release 
 
-    //Start walking out
-    applymovement(LOCALID_KOHLA, moves(walk_right walk_up*3 walk_left face_down))
-    waitmovement(0)
+    //player facing dir check
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)  
+        //Start walking out  
+    if (var(VAR_RESULT) == DIR_SOUTH){
+        applymovement(LOCALID_KOHLA, moves(walk_right walk_up*3 walk_left face_down))
+        waitmovement(0)
+    } else {
+        applymovement(LOCALID_KOHLA, moves(walk_up*3 face_down))
+        waitmovement(0)
+    }
+
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovement(0)
+    delay(16)
     //Reminder for silversun city and gym badge
     speakername("Kohla")
-    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you'll be able to use the HM Rock Smash, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
+    msgbox(format("Silversun City is east of here, but the path is blocked by rocks. If you beat the Gym Leader here, you can use the HM Rock Smash, which will let you pass.\pSee you in Silversun City...or sooner than that, I think."))
     release
     //Leaves
+
     applymovement(LOCALID_KOHLA, moves(walk_up * 4))
     waitmovement(0)
     removeobject(LOCALID_KOHLA)
@@ -45,7 +56,7 @@ script GalecrestCity_DetectiveAcademy_EventScript_Kohla{
 //BREECH
 script GalecrestCity_DetectiveAcademy_Breech{
     speakername("Breech")
-    msgbox(format("It's you {PLAYER}! How are you? Clefairy and I are sitting in this class on Pokémon battles. Yep, to be a good detective, you need to be a strong trainer too!\p...\pNot that Clefairy and I want to be detectives, haha! We're just lifelong learners."), MSGBOX_NPC)
+    msgbox(format("It's you {PLAYER}! How are you? Clefairy and I are sitting in this\lclass on Pokémon battles.\pYep, to be a good detective, you need to be a strong trainer too!\p...\pNot that we want to be detectives!\nWe're just lifelong learners."), MSGBOX_NPC)
     applymovement(13, moves(face_left))
     end
 }
@@ -93,7 +104,6 @@ script GalecrestCity_DetectiveAcademy_Receptionist{
     lockall
     faceplayer
     msgbox(format("Hello, trainer!\nWelcome to the Detective Academy!")) 
-    release
     goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
 
     releaseall
@@ -105,7 +115,8 @@ script GalecrestCity_DetectiveAcademy_Receptionist_Multichoice{
     dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Tell me about the Academy!", "Can I get a student ID?", "I want a Charcadet!")
     release
     if (var(VAR_RESULT) == 0){
-        msgbox(format("The Galecrest Detective Academy is one of the most prestigious schools in all of Cormoria! Our top-caliber candidates train to become the very best detectives. Many go on to join the police force or pursue the path of a trainer."))
+        delay(10)
+        msgbox(format("The Galecrest Detective Academy is one of the most prestigious schools in all of Cormoria! Our top-caliber candidates train to become the best detectives. Many go on to join the police force or pursue the path of a trainer."))
         release
         delay(16)
         goto(GalecrestCity_DetectiveAcademy_Receptionist_Multichoice)
@@ -138,6 +149,7 @@ script GalecrestCity_DetectiveAcademy_Receptionist_StudentID{
 
         if (var(VAR_RESULT) == 1){
             hidemoneybox
+            delay(1)
             checkmoney(1000)
             if (var(VAR_RESULT) == 1){
                 playse(SE_SHOP)
@@ -304,7 +316,7 @@ script GalecrestCity_DetectiveAcademy_NPC8{
 }
 
 script GalecrestCity_DetectiveAcademy_NPC9{
-    msgbox(format("These two only focus on battling. But true detectives can do a lot more! We have to investigate clues, interrogate suspects and disguise ourselves."), MSGBOX_NPC)
+    msgbox(format("These two only focus on battling. But true detectives can do a lot more!\lWe have to uncover clues, interrogate suspects and disguise ourselves."), MSGBOX_NPC)
     end
 }
 

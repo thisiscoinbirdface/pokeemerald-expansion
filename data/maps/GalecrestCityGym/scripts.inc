@@ -312,9 +312,8 @@ GalecrestCityGym_NPC1_Text_0:
 
 GalecrestCityGym_NPC2_Text_0:
 # 103 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "I'm the detective overseeing the\n"
-	.string "cadets. All the best for your gym\l"
-	.string "challenge!$"
+	.string "I'm here to oversee the cadets.\n"
+	.string "All the best for your gym challenge!$"
 
 GalecrestCityGym_NPC3_Text_0:
 # 108 "data//maps/GalecrestCityGym/scripts.pory"
@@ -344,15 +343,15 @@ GalecrestCityGym_Trainer2_Text_0:
 GalecrestCityGym_Trainer2_Text_1:
 # 135 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "If I keep losing to trainers like you,\n"
-	.string "I'll never get an Armarouge! Go through\l"
-	.string "the left door if you DON'T like the awful\l"
-	.string "Ceruledge.$"
+	.string "I'll never get an Armarouge!\p"
+	.string "Go through the left door if you DON'T\n"
+	.string "like the awful Ceruledge.$"
 
 GalecrestCityGym_Trainer3_Text_0:
 # 142 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "The gym leader is through the next\n"
 	.string "door. But you won't make it because\l"
-	.string "your journey ends here!$"
+	.string "your gym challenge ends here!$"
 
 GalecrestCityGym_Trainer3_Text_1:
 # 142 "data//maps/GalecrestCityGym/scripts.pory"
@@ -407,13 +406,13 @@ GalecrestCityGym_Leader_Text_5:
 GalecrestCityGym_Text_LeaderIntro::
 # 220 "data//maps/GalecrestCityGym/scripts.pory"
 	.string "Yes {PLAYER}, it's me. Traditionally,\n"
-	.string "the Ace Rookie of the graduating class\l"
-	.string "assumes Gym Leader duties for a year\l"
-	.string "after they graduate.\p"
-	.string "And this year, that's me! Normally I\n"
-	.string "would use the gym standard NORMAL\l"
-	.string "Pokémon, but since it's you, I'm going to\l"
-	.string "make an exception.\p"
+	.string "the Ace Rookie of the graduating\l"
+	.string "class assumes Gym Leader duties for\l"
+	.string "a year after they graduate.\p"
+	.string "And this year, that's me!\p"
+	.string "Normally I would use the gym standard\n"
+	.string "NORMAL Pokémon, but since it's you, I'm\l"
+	.string "going to make an exception.\p"
 	.string "I'll crush you with my REAL team!$"
 
 GalecrestCityGym_Text_Defeated::

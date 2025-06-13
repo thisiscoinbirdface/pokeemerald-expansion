@@ -1218,6 +1218,6 @@ GalecrestCity_NPC_Ranger_Text_0:
 
 GalecrestCity_NPC_Red_Text_0:
 # 534 "data//maps/GalecrestCity/scripts.pory"
-	.string "The Gym Leader's not in right now. He\n"
-	.string "should be back soon. Check out the\l"
+	.string "The Gym Leader's not in right now.\n"
+	.string "He should be back soon. Check out the\l"
 	.string "Detective Academy in the meantime!$"
