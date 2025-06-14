@@ -77,7 +77,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("No! Enough is enough! I'm putting my foot down.\pYou and your lot aren't allowed in\lPelluca City any more!"))
+    msgbox(format("No! Enough is enough! I'm putting my foot down.\pYou and your lot aren't allowed in\nPelluca City any more!"))
     release
     delay(16)
 
@@ -116,7 +116,13 @@ script PellucaCity_MayorFight_Trigger{
     applymovement(LOCALID_MAYOR, moves(emote_exclamation_mark))
     waitmovement(0)
     delay(16)
-    applymovement(LOCALID_MAYOR, moves(walk_right face_left))
+    applymovement(LOCALID_MAYOR, moves(
+        lock_anim
+        lock_facing_direction
+        walk_fast_right
+        unlock_anim
+        unlock_facing_direction
+    ))
     waitmovement(0)
     delay(16)
 
@@ -137,7 +143,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Got it, mayor? You're not in charge here.\pI am! And from now on, this town belongs to the Qwilsquad!"))
+    msgbox(format("Got it, mayor? You're not in charge here.\pI am!\pAnd from now on, this city belongs\nto us - the Qwilsquad!"))
     release
     delay(16)
 
@@ -163,7 +169,7 @@ script PellucaCity_MayorFight_Trigger{
     waitmovement(0)
     delay(16)
     speakername("Mayor")
-    msgbox(format("Oh - a tourist! Were you standing there the whole time?\p...\pI'm sorry you had to witness that. Y-you know, we have a wonderful Game Corner! And the Apple Pie at the Pelluca Restaurant is to die for."))
+    msgbox(format("Oh - a tourist! Were you standing there the whole time?\p...\pI'm sorry you had to witness that.\pY-you know, we have a wonderful\nGame Corner! And the Apple Pie at the Pelluca Restaurant is to die for."))
     release
     delay(16)
 
@@ -310,7 +316,7 @@ script PellucaCity_Blocker_Trigger{
 
     applymovement(LOCALID_S_BLOCKER, moves(emote_exclamation_mark))
     speakername("Q-squad Grunt")
-    msgbox(format("Hey kid, where d'you think yer goin?\nThere's a toll if you wanna get out.\pYeah, that's right!\nYou gotta pay ¥999999.\pAin't got the money?\pThen get packing!"))
+    msgbox(format("Hey kid, where d'you think yer goin?\nThere's a toll if you wanna get out.\pThat's right! You gotta pay ¥999999.\pAin't got the money?\pThen get packing!"))
     release
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
     waitmovement(0)
@@ -1013,7 +1019,7 @@ script PellucaCity_EventScripts_Gabrielle{
     }
     delay(30)
     speakername("Gabrielle")
-    msgbox(format("After getting kicked out of Team Somber, I feel like I've come to my senses a little. I'm going to support my family - but do it right. Be honest. Responsible."))
+    msgbox(format("After getting kicked out of Team Somber, I feel like I've come to my senses a little. I'm going to support my family - but do it right. Be honest.\pBe responsible."))
     release
     delay(24)
     faceplayer
@@ -1027,9 +1033,9 @@ script PellucaCity_EventScripts_Gabrielle{
 
 script PellucaCity_Gab_ChoiceItem{
     speakername("Gabrielle")
-    message(format("Choose something you like."))
+    message(format("Choose any one you like."))
     waitmessage
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "Choice Specs", "Choice Band", "Choice Scarf") 
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Choice Specs", "Choice Band", "Choice Scarf") 
     if (var(VAR_RESULT) == 0){setvar(VAR_0x8006, ITEM_CHOICE_SPECS)}
     if (var(VAR_RESULT) == 1){setvar(VAR_0x8006, ITEM_CHOICE_BAND)}
     if (var(VAR_RESULT) == 2){setvar(VAR_0x8006, ITEM_CHOICE_SCARF)}
@@ -1110,7 +1116,7 @@ script PellucaCity_NPC2{
 }
 //bridge black belt
 script PellucaCity_NPC3{
-    msgbox(format("I would've trained up in Mt. Mirroh but I can't go there without a Cable Car Pass. So I'm jogging here instead."), MSGBOX_NPC)
+    msgbox(format("I would've trained up in Mt. Mirroh but that Qwilsquad grunt is blocking me!\lSo I'm training here instead."), MSGBOX_NPC)
     end
 }
 //bridge cyclist
@@ -1127,19 +1133,19 @@ script PellucaCity_NPC5{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_up * 11))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("Jania, the Gym Leader of Pelluca City had her gym constructed on a separate island."))
+    msgbox(format("Jania, the Gym Leader, had her gym constructed on a separate island."))
     release
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_fast_down * 11))
     waitmovement(0)
     special(RemoveCameraObject)
-    msgbox(format("She never gets involved in city affairs!"), MSGBOX_NPC)    
+    msgbox(format("She stays on that island and trains.\nShe never gets involved in city affairs!"), MSGBOX_NPC)    
     releaseall
     end
 }
 //bridge getting off dude
 script PellucaCity_NPC6{
-    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to take the cable car past Route 7. I heard they're closing the gym there though."), MSGBOX_NPC)
+    msgbox(format("Are you headed to the Mirroh Base Camp? You'll have to cross Route 7 and take the cable car up. I heard they're closing the gym there though."), MSGBOX_NPC)
     end
 }
 //main island
@@ -1180,7 +1186,8 @@ script PellucaCity_NPC9{
 script PellucaCity_WingullGirl{
     lock
     faceplayer
-    msgbox(format("Hahaha! I'm throwing stones at the Wingulls over there. Wanna throw some?"))
+    message(format("Hahaha! I'm throwing stones at the Wingulls over there. Wanna throw some?"))
+    waitmessage
     dynmultichoice(16, 8, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "That's mean", "Gimme a stone!")
 
     if (var(VAR_RESULT) == 1){

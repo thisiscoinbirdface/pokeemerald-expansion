@@ -16,7 +16,7 @@ script PellucaCityRestaurant_NPC1{
 script PellucaCityRestaurant_NPC2{
     lockall
     faceplayer
-    msgbox(format("Apparently they're closing down the Mirroh Base Camp Gym. If I dont get the gym badge, how will I enter the Pokémon Championship?"))
+    msgbox(format("They're closing down the Mirroh Base Camp Gym! If I dont get the badge, how will I enter the Pokémon Championship?"))
     releaseall
     end
 }
@@ -24,7 +24,7 @@ script PellucaCityRestaurant_NPC2{
 script PellucaCityRestaurant_NPC3{
     lockall
     faceplayer
-    msgbox(format("I can't choose between the apple pie and the apple tart. What should I choose?"))
+    msgbox(format("I can't choose between the apple pie and the apple tart. It's too hard!"))
     releaseall
     end
 }
@@ -56,7 +56,7 @@ script PellucaCityRestaurant_NPC6{
 script PellucaCityRestaurant_NPC7{
     lockall
     faceplayer
-    msgbox(format("My Smeargle cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria."))
+    msgbox(format("My Smeargle cannot resist the apple pie here! It's because the head chef uses rare ingredients from all over Cormoria.\p...\pWhere's my Smeargle?\pFine! I'm the one who cannot resist.\nHappy?"))
     releaseall
     end
 }
@@ -72,7 +72,7 @@ script PellucaCityRestaurant_NPC8{
 script PellucaCityRestaurant_Cashier{
     lockall
     faceplayer
-    msgbox(format("Welcome to the Pelluca Restaurant! Unfortunately we're fully booked out today."))
+    msgbox(format("Welcome to the Pelluca Restaurant! Sorry, we're fully booked out today."))
 	message(format("But you can still order something to take away!"))
 	waitmessage
 	pokemart(Pelluca_Restaurant_Inventory)
@@ -109,7 +109,7 @@ script PellucaCityRestaurant_Cook1{
 script PellucaCityRestaurant_Cook2{
     lockall
     faceplayer
-    msgbox(format("Our specialties are our apple-based dishes. We spent years crafting our recipes!"))
+    msgbox(format("We specialise in apple-based dishes.\nWe spent years crafting our recipes!"))
     releaseall
     end
 }
@@ -155,7 +155,7 @@ script PellucaCityRestaurant_Cook3{
         applymovement(12, moves(emote_exclamation_mark))
         waitmovement(0)
         speakername("Chef")
-        msgbox(format("Aha! It's my favourite fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad. Normally I'd fix it myself, but since we're booked out, I need to be cooking. Would you be willing to lend a hand, {PLAYER}?"), MSGBOX_YESNO)
+        msgbox(format("Aha! It's my favourite fellow ingredient hunter! It's good to have you visit my restaurant. Unfortunately today isn't a good day...our fridge has broken down! We need something else to cool our ingredients or they'll go bad.\lNormally I'd fix it myself, but since we're booked out, I need to be cooking.\pWould you lend a hand, {PLAYER}?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //accept quest
             speakername("Chef")
@@ -167,7 +167,7 @@ script PellucaCityRestaurant_Cook3{
 
         } else {
             speakername("Chef")
-            msgbox(format("Oh no! But I understand. You must be busy."))
+            msgbox(format("Oh no! But I understand.\pTake care!"))
         }
     }
 
@@ -259,8 +259,7 @@ script PellucaCityRestaurant_NPC_Trade{
 
         //Decline if nothing chosen
         if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
-            msgbox(format("If you have one, will you trade it for my Houndour?"))
-            releaseall
+            msgbox(format("Oh...well, if you change your mind,\nyou know where I am!"), MSGBOX_NPC)
             end          
         }
 
@@ -280,12 +279,12 @@ script PellucaCityRestaurant_NPC_Trade{
 
         } else {
             //else (mon isn't nymble)
-            msgbox(format("Hey, this isn't a Toxel! I'm not stupid, you know?"), MSGBOX_NPC)
+            msgbox(format("Hey, this isn't a Toxel, you rascal!"), MSGBOX_NPC)
         }
 
     } else {
         //no trade
-        msgbox(format("Oh...well, if you change your mind, you know where I am!"), MSGBOX_NPC)
+        msgbox(format("Oh...well, if you change your mind,\nyou know where I am!"), MSGBOX_NPC)
     }
 
 end

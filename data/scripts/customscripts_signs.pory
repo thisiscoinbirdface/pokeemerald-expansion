@@ -308,7 +308,7 @@ script WhiteSign_PellucaCity_GameCorner{
 }
 
 script WhiteSign_PellucaCity_Fishery{
-    msgbox(format("Pelluca Fishery\nFishing supplies and tours!"), MSGBOX_SIGN)
+    msgbox(format("It's old and hard to read...\p...lluca Fishery...\n...fish...upplies...tours!"))
     end
 }
 

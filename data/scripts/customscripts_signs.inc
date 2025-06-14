@@ -320,7 +320,7 @@ WhiteSign_PellucaCity_GameCorner::
 
 WhiteSign_PellucaCity_Fishery::
 # 311 "data//scripts/customscripts_signs.pory"
-	msgbox WhiteSign_PellucaCity_Fishery_Text_0, MSGBOX_SIGN
+	msgbox WhiteSign_PellucaCity_Fishery_Text_0
 	end
 
 
@@ -754,8 +754,9 @@ WhiteSign_PellucaCity_GameCorner_Text_0:
 
 WhiteSign_PellucaCity_Fishery_Text_0:
 # 311 "data//scripts/customscripts_signs.pory"
-	.string "Pelluca Fishery\n"
-	.string "Fishing supplies and tours!$"
+	.string "It's old and hard to read...\p"
+	.string "...lluca Fishery...\n"
+	.string "...fish...upplies...tours!$"
 
 WhiteSign_PellucaCity_ToCableCar_Text_0:
 # 316 "data//scripts/customscripts_signs.pory"

@@ -98,7 +98,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PellucaCity_EventScripts_Gabrielle",
-      "flag": "FLAG_PELLUCA_GABRIELLE_CHOICEBAND"
+      "flag": "FLAG_HIDE_PELLUCA_GAB"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
@@ -358,7 +358,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PellucaCity_Zorua",
-      "flag": "FLAG_PELLUCA_GABRIELLE_CHOICEBAND"
+      "flag": "FLAG_HIDE_PELLUCA_GAB"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEALEO)",

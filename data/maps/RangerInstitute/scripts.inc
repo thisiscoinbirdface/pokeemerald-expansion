@@ -1214,7 +1214,7 @@ RangerInstitute_1F_ApplicationPC_Text_2:
 
 RangerInstitute_1F_ApplicationPC_Text_3:
 # 58 "data//maps/RangerInstitute/scripts.pory"
-	.string "IT WILL COST 500.\n"
+	.string "IT WILL COST ¥500.\n"
 	.string "PROCEED WITH PRINTING?$"
 
 RangerInstitute_1F_ApplicationPC_Text_4:

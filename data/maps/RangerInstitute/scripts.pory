@@ -55,7 +55,7 @@ script RangerInstitute_1F_ApplicationPC{
         msgbox(format("WOULD YOU LIKE TO PRINT AN APPLICATION FORM?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             showmoneybox(0, 0)
-            msgbox(format("IT WILL COST 500.\nPROCEED WITH PRINTING?"), MSGBOX_YESNO)
+            msgbox(format("IT WILL COST ¥500.\nPROCEED WITH PRINTING?"), MSGBOX_YESNO)
             hidemoneybox
             if (var(VAR_RESULT) == 1){
                 msgbox(format("...\pA piece of paper comes out of the PC!\pPLEASE BRING THIS FORM TO THE INTERVIEWER ON DUTY."))

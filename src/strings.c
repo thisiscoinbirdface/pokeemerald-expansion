@@ -1379,7 +1379,7 @@ const u8 gText_QuestUpdated[] =_("has been updated! Keep it up!");
 
 //names
 const u8 gText_SideQuestName_1[] = _("Lab Assistant");
-const u8 gText_SideQuestName_2[] = _("Finding the Dreamstone!");
+const u8 gText_SideQuestName_2[] = _("Find the Dreamstone!");
 const u8 gText_SideQuestName_3[] = _("Dreamstone Mysteries");
 const u8 gText_SideQuestName_4[] = _("Food Poisoning");
 const u8 gText_SideQuestName_5[] = _("A Hiker's Treasure");

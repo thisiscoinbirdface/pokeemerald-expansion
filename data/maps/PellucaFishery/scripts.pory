@@ -131,7 +131,11 @@ script PellucaFishery_EventScript_MainDude{
     msgbox(format("What was that?\pBoys - we gotta go outside and see what's going on!\pC'mon {PLAYER} - you too!"))    
     release
 
+    //get rid of gab now
+    setflag(FLAG_HIDE_PELLUCA_GAB)
+
     //exit
+
     setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
     clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
 

@@ -1002,7 +1002,7 @@ SSElegant_Aggron_Text_0:
 
 SSElegant_Jania_Text_0:
 # 292 "data//maps/SSElegant/scripts.pory"
-	.string "What? A leader can't have any hobbies?$"
+	.string "What? A gym leader can't have hobbies?$"
 
 SSElegant_Jania_Text_1:
 # 292 "data//maps/SSElegant/scripts.pory"

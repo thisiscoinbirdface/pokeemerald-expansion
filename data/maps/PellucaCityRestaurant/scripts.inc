@@ -310,8 +310,8 @@ PellucaCityRestaurant_NPC_Trade::
 # 244 "data//maps/PellucaCityRestaurant/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCityRestaurant_NPC_Trade_5
-# 288 "data//maps/PellucaCityRestaurant/scripts.pory"
-	msgbox PellucaCityRestaurant_NPC_Trade_Text_6, MSGBOX_NPC
+# 287 "data//maps/PellucaCityRestaurant/scripts.pory"
+	msgbox PellucaCityRestaurant_NPC_Trade_Text_3, MSGBOX_NPC
 PellucaCityRestaurant_NPC_Trade_4:
 	end
 
@@ -338,42 +338,40 @@ PellucaCityRestaurant_NPC_Trade_5:
 # 261 "data//maps/PellucaCityRestaurant/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq PellucaCityRestaurant_NPC_Trade_9
-# 267 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 266 "data//maps/PellucaCityRestaurant/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x800A
-# 268 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 267 "data//maps/PellucaCityRestaurant/scripts.pory"
 	specialvar VAR_RESULT, GetTradeSpecies
-# 269 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 268 "data//maps/PellucaCityRestaurant/scripts.pory"
 	copyvar VAR_0x800B, VAR_RESULT
-# 270 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 269 "data//maps/PellucaCityRestaurant/scripts.pory"
 	compare VAR_RESULT, VAR_0x8009
 	goto_if_eq PellucaCityRestaurant_NPC_Trade_11
-# 283 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 282 "data//maps/PellucaCityRestaurant/scripts.pory"
 	msgbox PellucaCityRestaurant_NPC_Trade_Text_5, MSGBOX_NPC
 	goto PellucaCityRestaurant_NPC_Trade_4
 
 PellucaCityRestaurant_NPC_Trade_9:
 # 262 "data//maps/PellucaCityRestaurant/scripts.pory"
-	msgbox PellucaCityRestaurant_NPC_Trade_Text_3
-# 263 "data//maps/PellucaCityRestaurant/scripts.pory"
-	releaseall
+	msgbox PellucaCityRestaurant_NPC_Trade_Text_3, MSGBOX_NPC
 	end
 
 PellucaCityRestaurant_NPC_Trade_11:
-# 272 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 271 "data//maps/PellucaCityRestaurant/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x8008
-# 273 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 272 "data//maps/PellucaCityRestaurant/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x800A
-# 274 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 273 "data//maps/PellucaCityRestaurant/scripts.pory"
 	special CreateInGameTradePokemon
-# 275 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 274 "data//maps/PellucaCityRestaurant/scripts.pory"
 	special DoInGameTradeScene
-# 276 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 275 "data//maps/PellucaCityRestaurant/scripts.pory"
 	waitstate
-# 277 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 276 "data//maps/PellucaCityRestaurant/scripts.pory"
 	msgbox PellucaCityRestaurant_NPC_Trade_Text_4
-# 278 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 277 "data//maps/PellucaCityRestaurant/scripts.pory"
 	release
-# 279 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 278 "data//maps/PellucaCityRestaurant/scripts.pory"
 	setflag FLAG_PELLUCA_RESTAURANT_TRADE
 	goto PellucaCityRestaurant_NPC_Trade_4
 
@@ -392,16 +390,14 @@ PellucaCityRestaurant_NPC1_Text_0:
 
 PellucaCityRestaurant_NPC2_Text_0:
 # 19 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Apparently they're closing down the\n"
-	.string "Mirroh Base Camp Gym. If I dont get the\l"
-	.string "gym badge, how will I enter the Pokémon\l"
-	.string "Championship?$"
+	.string "They're closing down the Mirroh Base\n"
+	.string "Camp Gym! If I dont get the badge, how\l"
+	.string "will I enter the Pokémon Championship?$"
 
 PellucaCityRestaurant_NPC3_Text_0:
 # 27 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "I can't choose between the apple pie\n"
-	.string "and the apple tart. What should I\l"
-	.string "choose?$"
+	.string "and the apple tart. It's too hard!$"
 
 PellucaCityRestaurant_NPC4_Text_0:
 # 35 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -424,7 +420,11 @@ PellucaCityRestaurant_NPC7_Text_0:
 # 59 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "My Smeargle cannot resist the apple pie\n"
 	.string "here! It's because the head chef uses\l"
-	.string "rare ingredients from all over Cormoria.$"
+	.string "rare ingredients from all over Cormoria.\p"
+	.string "...\p"
+	.string "Where's my Smeargle?\p"
+	.string "Fine! I'm the one who cannot resist.\n"
+	.string "Happy?$"
 
 PellucaCityRestaurant_NPC8_Text_0:
 # 67 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -434,8 +434,7 @@ PellucaCityRestaurant_NPC8_Text_0:
 PellucaCityRestaurant_Cashier_Text_0:
 # 75 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Welcome to the Pelluca Restaurant!\n"
-	.string "Unfortunately we're fully booked out\l"
-	.string "today.$"
+	.string "Sorry, we're fully booked out today.$"
 
 PellucaCityRestaurant_Cashier_Text_1:
 # 76 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -451,9 +450,8 @@ PellucaCityRestaurant_Cook1_Text_0:
 
 PellucaCityRestaurant_Cook2_Text_0:
 # 112 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Our specialties are our apple-based\n"
-	.string "dishes. We spent years crafting our\l"
-	.string "recipes!$"
+	.string "We specialise in apple-based dishes.\n"
+	.string "We spent years crafting our recipes!$"
 
 PellucaCityRestaurant_Cook3_Text_0:
 # 121 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -502,10 +500,10 @@ PellucaCityRestaurant_Cook3_Text_8:
 	.string "restaurant. Unfortunately today isn't\l"
 	.string "a good day...our fridge has broken down!\l"
 	.string "We need something else to cool our\l"
-	.string "ingredients or they'll go bad. Normally\l"
-	.string "I'd fix it myself, but since we're booked\l"
-	.string "out, I need to be cooking. Would you be\l"
-	.string "willing to lend a hand, {PLAYER}?$"
+	.string "ingredients or they'll go bad.\l"
+	.string "Normally I'd fix it myself, but since\l"
+	.string "we're booked out, I need to be cooking.\p"
+	.string "Would you lend a hand, {PLAYER}?$"
 
 PellucaCityRestaurant_Cook3_Text_9:
 # 162 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -518,8 +516,8 @@ PellucaCityRestaurant_Cook3_Text_9:
 
 PellucaCityRestaurant_Cook3_Text_10:
 # 170 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Oh no! But I understand. You must be\n"
-	.string "busy.$"
+	.string "Oh no! But I understand.\p"
+	.string "Take care!$"
 
 PellucaCityRestaurant_Appletun_Text_0:
 # 194 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -549,20 +547,14 @@ PellucaCityRestaurant_NPC_Trade_Text_2:
 
 PellucaCityRestaurant_NPC_Trade_Text_3:
 # 262 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "If you have one, will you trade it for my\n"
-	.string "Houndour?$"
+	.string "Oh...well, if you change your mind,\n"
+	.string "you know where I am!$"
 
 PellucaCityRestaurant_NPC_Trade_Text_4:
-# 277 "data//maps/PellucaCityRestaurant/scripts.pory"
+# 276 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Thank you! Please take good care of my\n"
 	.string "Houndour.$"
 
 PellucaCityRestaurant_NPC_Trade_Text_5:
-# 283 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Hey, this isn't a Toxel! I'm not stupid,\n"
-	.string "you know?$"
-
-PellucaCityRestaurant_NPC_Trade_Text_6:
-# 288 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Oh...well, if you change your mind, you\n"
-	.string "know where I am!$"
+# 282 "data//maps/PellucaCityRestaurant/scripts.pory"
+	.string "Hey, this isn't a Toxel, you rascal!$"

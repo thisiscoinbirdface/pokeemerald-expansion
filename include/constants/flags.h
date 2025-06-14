@@ -161,7 +161,7 @@
 #define FLAG_FINALE_DONE                  0x46D // Unused Flag
 #define FLAG_HIDE_RIVETSHORE_MIMIKYU      0x4BC // Unused Flag
 #define FLAG_CHAMPIONSHIP_KOHLA_ROOM      0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                 0x4BE // Unused Flag
+#define FLAG_HIDE_PELLUCA_GAB             0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                 0x4BF // Unused Flag
 
 

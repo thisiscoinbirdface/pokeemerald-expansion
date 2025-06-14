@@ -76,6 +76,8 @@ script SSElegant_Storage_Moonblast{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
 	setflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
     warp(MAP_UNCHARTED_ISLAND, 6, 34)
+    // waitstate
+    // end
 
 }
 
