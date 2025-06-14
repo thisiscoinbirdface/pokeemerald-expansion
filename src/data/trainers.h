@@ -14946,7 +14946,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7238
-            .species = SPECIES_GRIMMSNARL,
+            .species = SPECIES_MORGREM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7240
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -15350,7 +15350,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7446
-            .species = SPECIES_CORVIKNIGHT,
+            .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7448
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -15420,7 +15420,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7473
-            .species = SPECIES_CORVIKNIGHT,
+            .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7475
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

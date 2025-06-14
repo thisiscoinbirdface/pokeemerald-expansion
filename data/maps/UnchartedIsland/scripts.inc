@@ -1291,29 +1291,33 @@ UnchartedIsland_Tenebris_1:
 	delay 16
 # 863 "data//maps/UnchartedIsland/scripts.pory"
 	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_13
+# 864 "data//maps/UnchartedIsland/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
 # 865 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_4
-# 866 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_5
+	msgbox_delay UnchartedIsland_Finale_Cutscene_Text_7, UnchartedIsland_Tenebris_Text_14
 # 867 "data//maps/UnchartedIsland/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_4
 # 868 "data//maps/UnchartedIsland/scripts.pory"
-	playse SE_M_DIVE
+	applymovement LOCALID_TENE, UnchartedIsland_Tenebris_Movement_5
 # 869 "data//maps/UnchartedIsland/scripts.pory"
-	removeobject LOCALID_TENE
+	waitmovement 0
 # 870 "data//maps/UnchartedIsland/scripts.pory"
-	delay 8
+	playse SE_M_DIVE
+# 871 "data//maps/UnchartedIsland/scripts.pory"
+	removeobject LOCALID_TENE
 # 872 "data//maps/UnchartedIsland/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
-# 873 "data//maps/UnchartedIsland/scripts.pory"
 	delay 8
 # 874 "data//maps/UnchartedIsland/scripts.pory"
-	playse SE_M_DIVE
+	applymovement OBJ_EVENT_ID_PLAYER, UnchartedIsland_Tenebris_Movement_6
 # 875 "data//maps/UnchartedIsland/scripts.pory"
-	warp MAP_ANCIENT_CORMORIA_FINAL, 9, 51
+	delay 8
+# 876 "data//maps/UnchartedIsland/scripts.pory"
+	playse SE_M_DIVE
 # 877 "data//maps/UnchartedIsland/scripts.pory"
+	warp MAP_ANCIENT_CORMORIA_FINAL, 9, 51
+# 879 "data//maps/UnchartedIsland/scripts.pory"
 	setvar VAR_UNCHARTED_ISLAND_CUTSCENES, 3
-# 878 "data//maps/UnchartedIsland/scripts.pory"
+# 880 "data//maps/UnchartedIsland/scripts.pory"
 	releaseall
 	end
 
@@ -1966,57 +1970,57 @@ UnchartedIsland_Tenebris_Movement_3:
 	face_down
 	step_end
 
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_4:
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_up
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 865 "data//maps/UnchartedIsland/scripts.pory"
+# 867 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
 	step_end
 
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_5:
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_down
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	walk_right
-# 866 "data//maps/UnchartedIsland/scripts.pory"
+# 868 "data//maps/UnchartedIsland/scripts.pory"
 	jump_2_down
 	step_end
 
-# 872 "data//maps/UnchartedIsland/scripts.pory"
+# 874 "data//maps/UnchartedIsland/scripts.pory"
 UnchartedIsland_Tenebris_Movement_6:
-# 872 "data//maps/UnchartedIsland/scripts.pory"
+# 874 "data//maps/UnchartedIsland/scripts.pory"
 	jump_2_down
 	step_end
 
@@ -2616,6 +2620,10 @@ UnchartedIsland_Tenebris_Text_12:
 UnchartedIsland_Tenebris_Text_13:
 # 863 "data//maps/UnchartedIsland/scripts.pory"
 	.string "You truly are a gem of a human being.\p"
+	.string "Let me heal your Pokémon first.$"
+
+UnchartedIsland_Tenebris_Text_14:
+# 865 "data//maps/UnchartedIsland/scripts.pory"
 	.string "Now come! Let us enter Ancient Cormoria\n"
 	.string "once more...and exit right where the\l"
 	.string "dreamstone is!$"

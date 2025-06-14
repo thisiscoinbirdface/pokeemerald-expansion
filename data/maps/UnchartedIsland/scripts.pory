@@ -860,7 +860,9 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("You truly are a gem of a human being.\pNow come! Let us enter Ancient Cormoria once more...and exit right where the dreamstone is!"))
+        msgbox_delay("Tenebris", format("You truly are a gem of a human being.\pLet me heal your Pokémon first."))
+        call(Common_EventScript_OutOfCenterPartyHeal)
+        msgbox_delay("Tenebris", format("Now come! Let us enter Ancient Cormoria once more...and exit right where the dreamstone is!"))
 
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up walk_right *4 walk_down *2 walk_right * 3))
         applymovement(LOCALID_TENE, moves(walk_right *4 walk_down *2 walk_right * 3 jump_2_down))
