@@ -391,9 +391,19 @@ script PellucaCityFlooded_SaveCitizen_A{
     msgbox(format("Help! Help! Over here!\p...\pThank you so much - I'm saved!"))
     release
 
-    fadescreen(FADE_TO_BLACK)
-    removeobject(VAR_LAST_TALKED)
-    fadescreen(FADE_FROM_BLACK)
+        //move citizen
+        specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+        if (var(VAR_RESULT) == DIR_EAST){
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_down walk_fast_left * 9))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        } else {
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_left * 9))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        }
+
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -406,10 +416,18 @@ script PellucaCityFlooded_SaveCitizen_B{
     faceplayer
     msgbox(format("I can't stay afloat any more!\p...\pJust in time!"))
     release
+        //move citizen
+        specialvar(VAR_RESULT, GetPlayerFacingDirection)
 
-    fadescreen(FADE_TO_BLACK)
-    removeobject(VAR_LAST_TALKED)
-    fadescreen(FADE_FROM_BLACK)
+        if (var(VAR_RESULT) == DIR_SOUTH){
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_right walk_fast_up * 7))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        } else {
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_up * 7))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        }
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -423,9 +441,18 @@ script PellucaCityFlooded_SaveCitizen_C{
     msgbox(format("Ahh! It's too cold!\p...\pWaah! Wahh! It was so scary!"))
     release
 
-    fadescreen(FADE_TO_BLACK)
-    removeobject(VAR_LAST_TALKED)
-    fadescreen(FADE_FROM_BLACK)
+        //move citizen
+        specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+        if (var(VAR_RESULT) == DIR_NORTH){
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_left walk_fast_down * 7))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        } else {
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_down * 7))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        }
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
@@ -439,9 +466,18 @@ script PellucaCityFlooded_SaveCitizen_D{
     msgbox(format("Help! Someone save me!\p...\pYaay! You came!"))
     release
 
-    fadescreen(FADE_TO_BLACK)
-    removeobject(VAR_LAST_TALKED)
-    fadescreen(FADE_FROM_BLACK)
+        //move citizen
+        specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+        if (var(VAR_RESULT) == DIR_WEST){
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_up walk_fast_right * 9))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        } else {
+            applymovement(VAR_LAST_TALKED, moves(walk_fast_right * 9))
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+        }
 
     clearflag(FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D_SAVED)
     addvar(VAR_PELLUCA_MAYOR_QUEST, 1) //5, 6, 7 and last is 8
