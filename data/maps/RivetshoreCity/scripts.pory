@@ -27,8 +27,6 @@ mapscripts RivetshoreCity_MapScripts{
 
 
 
-
-
 script RivetshoreCity_Gabrielle_Trigger{
     if (flag(FLAG_RIVETSHORE_GAB)) {end}
 
@@ -389,5 +387,37 @@ mart RivetshoreCity_Mart_Secret{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+script RivetshoreCity_Mareanie{
+    lockall
+    playmoncry(SPECIES_MAREANIE, CRY_MODE_NORMAL)
+    msgbox(format("Mareanie is peering into the water..."))
+    releaseall
+    end
+}
+script RivetshoreCity_Aron{
+    playmoncry(SPECIES_ARON, CRY_MODE_NORMAL)
+    msgbox(format("Aron is scurrying around!\nIt's hard to squeeze through..."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Geodude{
+    playmoncry(SPECIES_GEODUDE, CRY_MODE_NORMAL)
+    msgbox(format("Geodude thumps itself with its arms!\nGuess it doesn't hurt much."), MSGBOX_NPC)
+    end
+}
+script RivetshoreCity_Surskit{
+    playmoncry(SPECIES_SURSKIT, CRY_MODE_NORMAL)
+    msgbox(format("Surskit shkips around nervously...is it looking out for the prankster Pokémon?"), MSGBOX_NPC)
+    end
+}
 
 

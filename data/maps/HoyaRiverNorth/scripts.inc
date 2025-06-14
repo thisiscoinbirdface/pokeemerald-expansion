@@ -151,9 +151,11 @@ Route6_Transition_EventScript_KohlaBattle::
 	waitmovement 0
 # 113 "data//maps/HoyaRiverNorth/scripts.pory"
 	removeobject 1
-# 116 "data//maps/HoyaRiverNorth/scripts.pory"
+# 115 "data//maps/HoyaRiverNorth/scripts.pory"
+	fadedefaultbgm
+# 118 "data//maps/HoyaRiverNorth/scripts.pory"
 	setflag FLAG_ROUTE6_KOHLA_BATTLE
-# 117 "data//maps/HoyaRiverNorth/scripts.pory"
+# 119 "data//maps/HoyaRiverNorth/scripts.pory"
 	releaseall
 	end
 

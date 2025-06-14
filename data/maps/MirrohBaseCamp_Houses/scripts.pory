@@ -61,7 +61,7 @@ script MirrohBaseCamp_Houses_Historian{
             waitmovement(0)
             delay(16)
             speakername("Martha")
-            msgbox(format("Oh my! What a find!\pThis is a Mega Stone, {PLAYER}. It's to be used by a rare ancient Pokemon known as Aerodactyl.\pAn incredible piece of ancient history. You must treasure it!"))
+            msgbox(format("Oh my! What a find!\pThis is a Mega Stone, {PLAYER}. It's to be used by a rare ancient Pokémon called Aerodactyl.\pAn incredible piece of ancient history. You must treasure it!"))
             giveitem(ITEM_AERODACTYLITE)
             release
             delay(16)

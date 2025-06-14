@@ -6,20 +6,20 @@ script GastreeCity_House1_NPC1{
 }
 
 script GastreeCity_House1_Buneary{
-    lockall
-    faceplayer
-    playmoncry(SPECIES_BUNEARY, CRY_MODE_NORMAL)
-
     if (flag(FLAG_GASTREE_HOUSE1_BUNEARY)){
-        msgbox(format("Buneary looks curiously at your Pokémon..."))
+        playmoncry(SPECIES_BUNEARY, CRY_MODE_NORMAL)        
+        msgbox(format("Buneary looks curiously at your Pokémon..."), MSGBOX_NPC)
+        end
     } else {
+        lockall
+        faceplayer
+        playmoncry(SPECIES_BUNEARY, CRY_MODE_NORMAL)        
         msgbox(format("Buneary looks curiously at your Pokémon...it hands you something!"))
         giveitem(ITEM_CHARTI_BERRY, 3)
         setflag(FLAG_GASTREE_HOUSE1_BUNEARY)
+        releaseall
+        end
     }
-
-    releaseall
-    end
 }
 
 

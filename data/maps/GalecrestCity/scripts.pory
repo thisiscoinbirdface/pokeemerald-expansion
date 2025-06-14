@@ -481,7 +481,7 @@ script GalecrestCity_NPC_16{
 
 script GalecrestCity_NPC_17{
     lockall    
-    msgbox(format("One more misdeneanour and I'll have you expelled, got it? And then you'll never get your Charcadet."))
+    msgbox(format("One more misdemeanour and I'll have you expelled, got it? And then you'll never get your Charcadet."))
     releaseall
     end
 }

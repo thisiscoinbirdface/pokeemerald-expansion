@@ -450,7 +450,7 @@ script RangerInstitute_Ravine{
 
     if (var(VAR_RANGER_INSTITUTE) == 10){///Start final quest
         speakername("Ravine")
-        msgbox(format("How do you feel about your new Pokemon, {PLAYER}?\pGood?\pHaha! It's the first of many.\pYou ready to become a fully-fledged Pokemon Ranger?"), MSGBOX_YESNO)
+        msgbox(format("How do you feel about your new Pokémon, {PLAYER}?\pGood?\pHaha! It's the first of many.\pYou ready to become a fully-fledged Pokémon Ranger?"), MSGBOX_YESNO)
         release
         if (var(VAR_RESULT) == 0){
             speakername("Ravine")

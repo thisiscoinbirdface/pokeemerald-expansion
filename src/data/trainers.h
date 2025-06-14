@@ -9182,7 +9182,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4310
-            .species = SPECIES_SNOVER,
+            .species = SPECIES_MEOWTH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4312
             .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
@@ -9228,7 +9228,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4328
-            .species = SPECIES_SNOVER,
+            .species = SPECIES_MEOWTH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4330
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -10547,7 +10547,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5003
-            .species = SPECIES_SNOVER,
+            .species = SPECIES_MEOWTH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5005
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -10593,7 +10593,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5021
-            .species = SPECIES_SNOVER,
+            .species = SPECIES_MEOWTH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5023
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

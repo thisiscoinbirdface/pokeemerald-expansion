@@ -1165,7 +1165,7 @@ GalecrestCity_NPC_16_Text_0:
 
 GalecrestCity_NPC_17_Text_0:
 # 484 "data//maps/GalecrestCity/scripts.pory"
-	.string "One more misdeneanour and I'll have you\n"
+	.string "One more misdemeanour and I'll have you\n"
 	.string "expelled, got it? And then you'll never\l"
 	.string "get your Charcadet.$"
 

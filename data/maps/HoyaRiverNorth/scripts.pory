@@ -112,6 +112,8 @@ script Route6_Transition_EventScript_KohlaBattle{
     waitmovement(0)
     removeobject(1)    
 
+    fadedefaultbgm
+
     //End
     setflag(FLAG_ROUTE6_KOHLA_BATTLE)
     releaseall

@@ -1594,12 +1594,12 @@ RangerInstitute_2F_EventScript_Welcome_Text_16:
 
 RangerInstitute_Ravine_Text_0:
 # 453 "data//maps/RangerInstitute/scripts.pory"
-	.string "How do you feel about your new Pokemon,\n"
+	.string "How do you feel about your new Pokémon,\n"
 	.string "{PLAYER}?\p"
 	.string "Good?\p"
 	.string "Haha! It's the first of many.\p"
 	.string "You ready to become a fully-fledged\n"
-	.string "Pokemon Ranger?$"
+	.string "Pokémon Ranger?$"
 
 RangerInstitute_Ravine_Text_1:
 # 457 "data//maps/RangerInstitute/scripts.pory"

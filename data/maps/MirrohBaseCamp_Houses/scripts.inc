@@ -536,8 +536,8 @@ MirrohBaseCamp_Houses_Historian_Text_9:
 # 64 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "Oh my! What a find!\p"
 	.string "This is a Mega Stone, {PLAYER}. It's to\n"
-	.string "be used by a rare ancient Pokemon\l"
-	.string "known as Aerodactyl.\p"
+	.string "be used by a rare ancient Pokémon\l"
+	.string "called Aerodactyl.\p"
 	.string "An incredible piece of ancient history.\n"
 	.string "You must treasure it!$"
 

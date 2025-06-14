@@ -44,6 +44,9 @@ script RivetshoreCity_Houses_NPC5{
 }
 
 script RivetshoreCity_Houses_NPC6{
+    lockall
+    faceplayer
+
     if (var(VAR_RIVETSHORE_EGG_QUEST) == 2){
         msgbox(format("We've hidden the PocketBoy well. Grandma will never find out.\lWanna play?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
@@ -84,9 +87,15 @@ script RivetshoreCity_Houses_NPC6{
             checkitem(ITEM_POCKET_BOY)
 
             if (var(VAR_RESULT) == 1){
-                msgbox(format("It's a PocketBoy! You really got it! It looks so cool! What games does it have?\p...\pFLUTTERFREE!?!\pThat's the best one!\nThank you so much!"))
+                msgbox(format("It's a PocketBoy! You really got it! It looks so cool! What games does it have?\p..."))
+                                
+                delay(16)
+                applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark))
+                waitmovement(0)
+                delay(24)                
+                msgbox(format("FLUTTERFREE!?!\pThat's the best one!\nThank you so much!"))
                 completequest(QUEST_RIVETSHORE_POCKETBOY)
-                msgbox(format("Um...we don't really have any money, but do you want one of our rare cards instead?"))
+                msgbox(format("Um...we don't have any money, but you can take one of our rare cards instead!"))
                 setvar(VAR_RIVETSHORE_EGG_QUEST, 2)
                 removeitem(ITEM_POCKET_BOY)
                 giveitem(ITEM_RED_CARD)
@@ -109,6 +118,11 @@ script RivetshoreCity_Houses_NPC6{
 
     if (var(VAR_RIVETSHORE_EGG_QUEST) == 0){
         msgbox(format("Sigh...playing these card games are so boring! I wish we had a PocketBoy. Everyone else has one!\p..."))
+        release
+        delay(16)
+        applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(24)
         msgbox(format("Hey, I bet you could get us a PocketBoy!\pWhat's a PocketBoy? You don't know? It's the best game console right now! But Grandma won't let us play games..."), MSGBOX_NPC)
         msgbox(format("Will you bring us a PocketBoy?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){

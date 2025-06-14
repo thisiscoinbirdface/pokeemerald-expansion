@@ -14743,6 +14743,65 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_RIVETSHORE_CITY",
+          "base_label": "gRivetshoreCity0",
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 39,
+                "max_level": 42,
+                "species": "SPECIES_LUMINEON"
+              },
+              {
+                "min_level": 39,
+                "max_level": 42,
+                "species": "SPECIES_BARRASKEWDA"
+              },
+              {
+                "min_level": 39,
+                "max_level": 42,
+                "species": "SPECIES_BARRASKEWDA"
+              },
+              {
+                "min_level": 39,
+                "max_level": 42,
+                "species": "SPECIES_TOXAPEX"
+              },
+              {
+                "min_level": 38,
+                "max_level": 41,
+                "species": "SPECIES_SLOWPOKE_GALAR"
+              },
+              {
+                "min_level": 38,
+                "max_level": 41,
+                "species": "SPECIES_SLOWPOKE_GALAR"
+              },
+              {
+                "min_level": 38,
+                "max_level": 41,
+                "species": "SPECIES_SLOWPOKE_GALAR"
+              },
+              {
+                "min_level": 38,
+                "max_level": 41,
+                "species": "SPECIES_SLOWPOKE_GALAR"
+              }
+            ]
+          }
         }
       ]
     },
