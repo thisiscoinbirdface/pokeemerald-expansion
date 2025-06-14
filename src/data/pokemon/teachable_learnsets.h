@@ -36209,7 +36209,6 @@ static const u16 sBruxishTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
-    MOVE_PSYCHIC_FANGS,
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };

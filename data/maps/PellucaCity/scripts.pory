@@ -224,10 +224,13 @@ script PellucaCity_Sailor_Entrance{
 script PellucaCity_Sailor_Multichoice{
     message(format("Only Qwilsquad members can enter!"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, "What's a Qwilsquad?", "I'm a member!")
+    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "What's a Qwilsquad?", "I'm a member!", "Okay...")
 
     if (var(VAR_RESULT) == 0){goto(PellucaCity_Sailor_QwilsquadExplanation)}
     if (var(VAR_RESULT) == 1){goto(PellucaCity_Sailor_MemberCheck)}    
+
+    releaseall
+    end
 }
 script PellucaCity_Sailor_QwilsquadExplanation{
     speakername("Q-squad Grunt")
