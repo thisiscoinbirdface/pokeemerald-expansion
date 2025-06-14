@@ -146,7 +146,7 @@
 #define FLAG_RIVETSHORE_STORAGE_BAY_SLAKING 0x54  // Unused Flag
 #define FLAG_PELLUCA_QUEST_END 0x55  // Unused Flag
 #define FLAG_MIRROH_GREAVARD_BLOCKER 0x68  // flags for the greavard playing
-#define FLAG_HIDE_MIRROH_GREAVARD_INHOUSE 0xE9 // flag to hide the greavard indoors (once they're done playing)
+#define FLAG_MIRROH_GOT_OLD_BONE 0xE9 // flag to hide the greavard indoors (once they're done playing)
 #define FLAG_RIVETSHORE_GAB 0x1AA // meeting gab in rivetshore
 #define FLAG_ISLAND_MOXIE_VIEWPOINT       0x1AB // Unused Flag
 #define FLAG_ISLAND_MOXIE_MELEA_BATTLE    0x1DA // Unused Flag

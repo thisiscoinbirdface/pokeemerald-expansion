@@ -145,7 +145,7 @@ script Route3_Underpass_EvilBattle{
     trainerbattle_no_intro(TRAINER_ROUTE3_EVIL_GABRIELLE, "How dare you hurt my Zorua!")
 
     //End battle - baddie says revenge
-    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)    
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     applymovement(LOCALID_BREECH, moves(face_left))
     waitmovement(0) 
     applymovement(LOCALID_GAB, moves(face_right))

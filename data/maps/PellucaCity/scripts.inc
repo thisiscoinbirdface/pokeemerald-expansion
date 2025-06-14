@@ -2921,14 +2921,14 @@ PellucaCity_Greta_Main_Text_0:
 
 PellucaCity_Greta_Main_Text_1:
 # 883 "data//maps/PellucaCity/scripts.pory"
-	.string "Oh, it's you again, {PLAYER}! Fancy\n"
-	.string "seeing you in these parts. Route 6 was a\l"
-	.string "tough trek, eh?$"
+	.string "Oh, it's you again, {PLAYER}!\n"
+	.string "Fancy seeing you in these parts.\l"
+	.string "Route 6 was a tough trek, wasn't it?$"
 
 PellucaCity_Greta_GottaGo_Text_0:
 # 899 "data//maps/PellucaCity/scripts.pory"
-	.string "Would you look at the time! I've gotta\n"
-	.string "run. See you around!$"
+	.string "Would you look at the time!\n"
+	.string "I've gotta run. See you around!$"
 
 PellucaCity_EventScripts_Gabrielle_Text_0:
 # 929 "data//maps/PellucaCity/scripts.pory"

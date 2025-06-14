@@ -205,14 +205,14 @@ script RangerInstitute_1F_InterviewPass{
 script RangerInstitute_1F_NPC1{
     lockall
     faceplayer
-    msgbox(format("Should I become a Pokémon Ranger? It's really hard to get in...I don't know if I can do it."))
+    msgbox(format("Should I become a Pokémon Ranger?\nIt's really hard to get in...I don't\lknow if I can do it."))
     releaseall
     end
 }
 script RangerInstitute_1F_NPC2{
     lockall
     faceplayer
-    msgbox(format("My interview is coming up. I'm nervous - I really want to become a Pokémon Ranger so bad! Their Pokémon are so cool! Tauros! Kangaskhan!\p...\pI don't know any others."))
+    msgbox(format("My interview is coming up. I'm nervous - I want to become a Pokémon Ranger so bad! Their Pokémon are so cool!\pTauros!\pKangaskhan!\p...\pI don't know any others."))
     releaseall
     end
 }
@@ -226,7 +226,7 @@ script RangerInstitute_1F_NPC3{
 script RangerInstitute_1F_NPC4{
     lockall
     faceplayer
-    msgbox(format("You heard about the Mega Sharpedo in the Hoya River, right?\pWe're tracking it on our scanners - it's headed to Pelluca City. I hope it doesn't cause any damage..."))
+    msgbox(format("You heard about the Mega Sharpedo in the Hoya River, right?\pWe're tracking it on our scanners -\nit's headed straight to Pelluca City.\lI hope it doesn't cause any damage..."))
     releaseall
     end
 }

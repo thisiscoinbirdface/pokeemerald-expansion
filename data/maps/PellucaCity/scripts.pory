@@ -880,7 +880,7 @@ script PellucaCity_Greta_Trigger2{
 script PellucaCity_Greta_Main{
     
     speakername("Greta")
-    msgbox(format("Oh, it's you again, {PLAYER}! Fancy seeing you in these parts. Route 6 was a tough trek, eh?"))
+    msgbox(format("Oh, it's you again, {PLAYER}!\nFancy seeing you in these parts.\lRoute 6 was a tough trek, wasn't it?"))
     release
     delay(20)
     speakername("Greta")
@@ -896,7 +896,7 @@ script PellucaCity_Greta_GottaGo{
     applymovement(27, moves(emote_exclamation_mark))
     waitmovement(0)
     speakername("Greta")
-    msgbox(format("Would you look at the time! I've gotta run. See you around!"))
+    msgbox(format("Would you look at the time!\nI've gotta run. See you around!"))
     release
     applymovement(27, moves(walk_up * 8))
     waitmovement(0)

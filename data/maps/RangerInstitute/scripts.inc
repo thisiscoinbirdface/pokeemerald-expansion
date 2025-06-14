@@ -1407,16 +1407,17 @@ RangerInstitute_1F_InterviewPass_Text_2:
 
 RangerInstitute_1F_NPC1_Text_0:
 # 208 "data//maps/RangerInstitute/scripts.pory"
-	.string "Should I become a Pokémon Ranger? It's\n"
-	.string "really hard to get in...I don't know if I\l"
-	.string "can do it.$"
+	.string "Should I become a Pokémon Ranger?\n"
+	.string "It's really hard to get in...I don't\l"
+	.string "know if I can do it.$"
 
 RangerInstitute_1F_NPC2_Text_0:
 # 215 "data//maps/RangerInstitute/scripts.pory"
 	.string "My interview is coming up. I'm nervous -\n"
-	.string "I really want to become a Pokémon\l"
-	.string "Ranger so bad! Their Pokémon are so\l"
-	.string "cool! Tauros! Kangaskhan!\p"
+	.string "I want to become a Pokémon Ranger so\l"
+	.string "bad! Their Pokémon are so cool!\p"
+	.string "Tauros!\p"
+	.string "Kangaskhan!\p"
 	.string "...\p"
 	.string "I don't know any others.$"
 
@@ -1430,9 +1431,9 @@ RangerInstitute_1F_NPC4_Text_0:
 # 229 "data//maps/RangerInstitute/scripts.pory"
 	.string "You heard about the Mega Sharpedo in\n"
 	.string "the Hoya River, right?\p"
-	.string "We're tracking it on our scanners - it's\n"
-	.string "headed to Pelluca City. I hope it\l"
-	.string "doesn't cause any damage...$"
+	.string "We're tracking it on our scanners -\n"
+	.string "it's headed straight to Pelluca City.\l"
+	.string "I hope it doesn't cause any damage...$"
 
 RangerInstitute_1F_BlockerBasement_Text_0:
 # 236 "data//maps/RangerInstitute/scripts.pory"

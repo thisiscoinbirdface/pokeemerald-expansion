@@ -146,7 +146,7 @@ script Route6_Trainer_F{
 //PKMN breeder Dog 
 script Route6_Trainer_G{
     trainerbattle_single(TRAINER_ROUTE6_G, format("Get ready, because I'm not a regular Pokémon Breeder. I'm going to be the first Pokémon Breeder Champion!"), "Guess I was more bark than bite!")
-    msgbox(format("Dog Pokémon are rare in Cormoria! Someone in Pelluca City traded me my Houndoor."))
+    msgbox(format("Dog Pokémon are rare in Cormoria!\nI traded for my in Houndoor Pelluca City."))
     releaseall
     end
 }
@@ -159,8 +159,8 @@ script Route6_Trainer_H{
 }
 //Dragon tamer
 script Route6_Trainer_I{
-    trainerbattle_single(TRAINER_ROUTE6_I, format("I heard there was a rare DRAGON-type Pokémon here in Route 6, but I can't find any on land!"), "Why did I find you instead?")
-    msgbox(format("If its not on land, then maybe I need to try fishing..."))
+    trainerbattle_single(TRAINER_ROUTE6_I, format("I heard about a rare DRAGON-type Pokémon here, but I can't find it!"), "Why did I find you instead?")
+    msgbox(format("If it's not on land, then perhaps\nI need to try fishing..."))
     releaseall
     end
 }
@@ -254,20 +254,20 @@ script Route6_NPC4{
     }
 
     if (var(VAR_ROUTE6_FISHERMAN) == 0){
-        msgbox(format("These waters are too strong to fish properly...why am I even fishing here? I'm so unfocused these days. Maybe I need a new hobby. I'd like to try cooking, but I might be no good. What do you think? Should I try cooking?"), MSGBOX_YESNO)
+        msgbox(format("These waters are too strong to fish properly...why am I even fishing here? I'm so unfocused these days.\pMaybe I need a new hobby. I'd like to try cooking, but I might be no good.\pWhat do you say? Should I try cooking?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             //yes
-            msgbox(format("You're right - unless I try, I'll never know! Say, can you help me out? I want to try making an Apple Pie. Can you bring me one?"), MSGBOX_YESNO)
+            msgbox(format("Yeah unless I try, I'll never know!\nSay, can you help me out?\pI want to try making an Apple Pie.\nCan you bring me one?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
                     //Start quest
-                    msgbox(format("Thank you so much! I'll be waiting here for you."))
+                    msgbox(format("Thank you so much! I'll be waiting here."))
                     setvar(VAR_ROUTE6_FISHERMAN, 1)
                     startquest(QUEST_ROUTE6_FISHERMAN)
                 } else {
                     msgbox(format("Ahh well, it's back to fishing then."))
                 }
         } else {
-            msgbox(format("Yeah...I suppose I'd be no good. Fishing is all I know."))
+            msgbox(format("Yeah...I suppose I'd be no good.\nFishing is all I know."))
         }
     }
 
@@ -296,11 +296,10 @@ script Route6_NPC4{
 script Route6_Gabrielle_SaveGameTrigger{
     if (flag(FLAG_ROUTE6_GABRIELLE_BULLY)){end}   
 
-    special(SaveGame)
-	waitstate
-    release
-
     setvar(VAR_TEMP_C, 1)
+
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
 
     end
 }
@@ -326,18 +325,19 @@ script Route6_Gabrielle_Trigger1{
 script Route6_Gabrielle_Main{
     //Dialogue
     //no longer a part of somber, now give us all your Pokémon
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_right))
     delay(24)    
     speakername("Grunt")
-    msgbox(format("C'mon Gabrielle - you've got nowhere to run. Now give us your Pokémon!"))
+    msgbox(format("C'mon Gabrielle - you've got nowhere\nto run. Now give us your Pokémon!"))
     speakername("Gabrielle")
-    msgbox(format("No! They're mine! Why should I give you losers anything?"))
+    msgbox(format("No! Zoroark and I are partners!\nWhy should I give you losers anything?"))
     speakername("Grunt")
-    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always been eyeing your Zoroark, you know? And now it's time to collect!"))
+    msgbox(format("They're property of Team Somber, and now that you're out, it's only fair that you return them.\pHehe...we've always eyed your Zoroark, you know? And now it's time to collect!"))
     speakername("Gabrielle")
     msgbox(format("That's not how it works!"))
     speakername("Grunt")
-    msgbox(format("What are you gonna do? Complain to the boss? HAHA!"))
+    msgbox(format("What are you gonna do?\nComplain to the boss?\pHaha!"))
     release 
 
     //Notice
@@ -350,12 +350,12 @@ script Route6_Gabrielle_Main{
     applymovement(LOCALID_GRUNT2, moves(face_down))
 
     speakername("Gabrielle")
-    msgbox(format("{PLAYER}, it's you! These grunts are trying to take my Pokémon off me - you have to help!"))
+    msgbox(format("{PLAYER}, it's you! These grunts are trying to take my Pokémon off me!\lYou have to help!"))
     release
     applymovement(LOCALID_GRUNT1, moves(jump_in_place_down))
     applymovement(LOCALID_GRUNT2, moves(jump_in_place_down))
     speakername("Grunt")
-    msgbox(format("Have you no shame Gabrielle? The trainer who got you kicked out is now helping you?\pFine by us! Imagine what the boss'll tell us when we take your Pokémon AND beat the trainer that's stopped our plans twice!"))
+    msgbox(format("Have you no shame Gabrielle? The trainer who got you kicked out is\lnow going to help you?\pFine by us! Imagine what the boss'll say when we take Zoroark AND beat the trainer that's foiled our plans twice!"))
     release
     //walk up
     applymovement(LOCALID_GRUNT1, moves(face_right))
@@ -380,6 +380,7 @@ script Route6_Gabrielle_ChooseDoubleBattleParty{
 }
 
 script Route6_Gabrielle_HurryUp{
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     speakername("Gabrielle")
     msgbox(format("What are you doing? They're about to attack!"))
     goto(Route6_Gabrielle_ChooseDoubleBattleParty)
@@ -396,10 +397,11 @@ script Route6_Gabrielle_DoBattle{
 }
 
 script Route6_Gabrielle_Victory{
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
     //somber exit
     //
     speakername("Grunt")
-    msgbox(format("You got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zoroark for sure!"))
+    msgbox(format("You just got lucky that {PLAYER} was around, Gabrielle! Next time we'll get your Zoroark for sure!"))
     release
     //gabrielle thanks and lives in pelluca
     applymovement(LOCALID_GRUNT2, moves(walk_down * 2 walk_left * 4 walk_up *2 walk_left * 3)) 
@@ -409,11 +411,14 @@ script Route6_Gabrielle_Victory{
     removeobject(LOCALID_GRUNT1)
     removeobject(LOCALID_GRUNT2)
 
+    fadedefaultbgm
+
+    delay(16)
     applymovement(LOCALID_GAB, moves(face_down))    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-
+    delay(16)
     speakername("Gabrielle")
-    msgbox(format("Thank you {PLAYER}. You saved me there.\pLet me heal your Pokémon."))
+    msgbox(format("Thank you {PLAYER}. You saved both Zoroark and me there!\pLet me heal your Pokémon."))
     release
 	call(Common_EventScript_OutOfCenterPartyHeal)
     
