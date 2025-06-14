@@ -143,7 +143,10 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	warp MAP_ROUTE6, 18, 55
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
+	setvar VAR_PELLUCA_MAP_STATE, 1
+	warp MAP_PELLUCA_CITY, 43, 28
+	waitstate
 	release
 	end
 

@@ -452,6 +452,24 @@ script PellucaCityFlooded_MainEvent{
     setvar(VAR_PELLUCA_MAYOR_QUEST, 4)
     playbgm(MUS_DUMMY, FALSE)
 
+    if (flag(FLAG_SKIP_PELLUCA_CUTSCENE)){
+        msgbox(format("Skip cutscene?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == 1){
+            fadescreen(FADE_TO_WHITE)
+            special(EnterSafariMode)
+            fadescreen(FADE_FROM_WHITE)
+            releaseall
+            end
+        }
+    }
+
+    goto(PellucaCityFlooded_MainEvent_Cutscene)
+
+}
+
+script PellucaCityFlooded_MainEvent_Cutscene{
+    setflag(FLAG_SKIP_PELLUCA_CUTSCENE)
+
     speakername("Q-squad Boss")
     msgbox(format("What on earth is this?"))
     release
@@ -692,9 +710,7 @@ script PellucaCityFlooded_NPCSaved_D{
 script PellucaCityFlooded_EventScript_TimesUp{
     lockall
     msgbox(format("The tides rise higher and higher...\nit's too late!"))
-    special(ExitSafariMode)
-
-    setvar(VAR_PELLUCA_MAYOR_QUEST, 4)
+    release
 
     setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
     clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
@@ -712,15 +728,18 @@ script PellucaCityFlooded_EventScript_TimesUp{
     setvar(VAR_PELLUCA_MAP_STATE, 1)
     
     delay(2)
-
-	warp(MAP_PELLUCA_CITY, 42, 30)
+    
+    special(ExitSafariMode)
+    setvar(VAR_PELLUCA_MAYOR_QUEST, 3)
+    setvar(VAR_PELLUCA_MAP_STATE, 1)
+    warp(MAP_PELLUCA_CITY, 43, 28)
 	waitstate
 	end    
 }
 
 script PellucaCityFlooded_EventScript_TimesRunningOut{
     lockall
-    msgbox(format("The water level is risng...\nThere's not much time left!"))    
+    msgbox(format("The water level is rising...\nThere's not much time left!"))    
     release
     end
 }

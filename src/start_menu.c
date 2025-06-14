@@ -384,7 +384,7 @@ static void BuildDebugStartMenu(void)
 
 static void BuildSafariZoneStartMenu(void)
 {
-//    AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
+    AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
     AddStartMenuAction(MENU_ACTION_POKEDEX);
     AddStartMenuAction(MENU_ACTION_POKEMON);
     AddStartMenuAction(MENU_ACTION_BAG);
@@ -456,8 +456,8 @@ static void ShowSafariBallsWindow(void)
     sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
     PutWindowTilemap(sSafariBallsWindowId);
     DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
-    ConvertIntToDecimalStringN(gStringVar1, gNumSafariBalls, STR_CONV_MODE_RIGHT_ALIGN, 2);
-    StringExpandPlaceholders(gStringVar4, gText_SafariBallStock);
+//    ConvertIntToDecimalStringN(gStringVar1, gNumSafariBalls, STR_CONV_MODE_RIGHT_ALIGN, 2);
+    StringExpandPlaceholders(gStringVar4, gText_PellucaCitySaveCitizens);//gText_SafariBallStock);
     AddTextPrinterParameterized(sSafariBallsWindowId, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
 }
@@ -544,7 +544,7 @@ static bool32 InitStartMenuStep(void)
         break;
     case 3:
         if (GetSafariZoneFlag())
-//            ShowSafariBallsWindow();
+            ShowSafariBallsWindow();
         if (InBattlePyramid())
             ShowPyramidFloorWindow();
         sInitStartMenuData[0]++;

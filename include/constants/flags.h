@@ -1620,7 +1620,7 @@
 #define FLAG_SKIP_MIRROH_CUTSCENE                   (SYSTEM_FLAGS + 0x9B) // Unused Flag
 #define FLAG_SKIP_FINALE_CUTSCENE                   (SYSTEM_FLAGS + 0x9C) // Unused Flag
 #define FLAG_SKIP_BERGER_CERAM                      (SYSTEM_FLAGS + 0x9D) // Unused Flag
-#define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
+#define FLAG_SKIP_PELLUCA_CUTSCENE                  (SYSTEM_FLAGS + 0x9E) // Unused Flag
 #define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
 #define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag
 #define FLAG_UNUSED_0x901                           (SYSTEM_FLAGS + 0xA1) // Unused Flag
