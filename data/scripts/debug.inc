@@ -143,23 +143,11 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-
-    setflag FLAG_PELLUCA_REGULAR_CITIZENS
-    clearflag FLAG_PELLUCA_FLOODED_CITIZENS
-
-    clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A
-    clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B
-    clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C
-    clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D
-
-	setvar VAR_PELLUCA_MAYOR_QUEST, 3
-	setvar VAR_PELLUCA_MAP_STATE, 1
-	warp MAP_PELLUCA_CITY, 43, 28
-	waitstate
-	release
+    release
 	end
 
 Debug_EventScript_Script_3::
+	setflag FLAG_BADGE05_GET
 	release
 	end
 

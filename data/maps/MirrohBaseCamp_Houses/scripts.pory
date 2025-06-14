@@ -10,8 +10,24 @@ script MirrohBaseCamp_Houses_Historian{
         if (flag(FLAG_MIRROH_GOT_OLD_BONE)){
             speakername("Martha")
             msgbox(format("Hello child. How are you?"), MSGBOX_NPC)
+            releaseall
+            end
         } else {
-            // goto()
+            if (flag(FLAG_BADGE05_GET)){
+                msgbox(format("I found it! Take this and give it to the Greavard playing outside. It'll distract them. Hopefully they'll come home.")) 
+                release
+                setflag(FLAG_MIRROH_GOT_OLD_BONE)
+                giveitem(ITEM_RARE_BONE)
+                speakername("Martha")
+                msgbox(format("As for me, I must get back to my reading..."))
+                releaseall
+                end
+            } else {
+                speakername("Martha")
+                msgbox(format("How strange...I'm sure I had a bone for Greavard somewhere..."), MSGBOX_NPC)   
+                releaseall
+                end
+            }
         }
     } else {
         speakername("Martha")
@@ -69,6 +85,7 @@ script MirrohBaseCamp_Houses_Historian{
             msgbox(format("Here - take this and give it to the Greavard playing outside. It'll distract them. Hopefully they'll come home.")) 
             release
             giveitem(ITEM_RARE_BONE)
+            setflag(FLAG_MIRROH_GOT_OLD_BONE)
             speakername("Martha")
             msgbox(format("As for me, I must get back to my reading..."))
             release
@@ -80,7 +97,6 @@ script MirrohBaseCamp_Houses_Historian{
 
         completesubquest(QUEST_DREAMSTONE_MYSTERIES, SUB_QUEST_6)
         setflag(FLAG_MIRROHBASECAMP_HISTORIAN)
-        setflag(FLAG_HIDE_MIRROHBASECAMP_HISTORIAN)
     }
 
     end
