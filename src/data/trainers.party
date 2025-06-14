@@ -3435,7 +3435,7 @@ Name: Sanya
 Difficulty: Easy
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
-Gender: Male
+Gender: Female
 Music: Cool
 Double Battle: No
 AI: Basic Trainer
@@ -3450,7 +3450,7 @@ Name: Sanya
 Difficulty: Normal
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
-Gender: Male
+Gender: Female
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Force Setup First Turn
@@ -3481,7 +3481,7 @@ Toedscool
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Carvanha
+Mareanie
 Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -3498,7 +3498,7 @@ AI: Smart Trainer
 Toedscool
 Level: 26
 
-Carvanha @ Rocky Helmet
+Mareanie @ Rocky Helmet
 Ability: Rough Skin
 Level: 27
 

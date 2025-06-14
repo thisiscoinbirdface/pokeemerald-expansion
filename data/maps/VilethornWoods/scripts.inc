@@ -805,12 +805,12 @@ VilethornWoods_Trainer_A_Text_0:
 
 VilethornWoods_Trainer_A_Text_1:
 # 216 "data//maps/VilethornWoods/scripts.pory"
-	.string "I like PSYCHIC types more than you!$"
+	.string "I'd rather fight PSYCHIC types than you!$"
 
 VilethornWoods_Trainer_A_Text_2:
 # 217 "data//maps/VilethornWoods/scripts.pory"
-	.string "I like training but I don't want to go to\n"
-	.string "deep into this forest...$"
+	.string "I like training but I don't want to go\n"
+	.string "too deep into this forest...$"
 
 VilethornWoods_Trainer_B_Text_0:
 # 223 "data//maps/VilethornWoods/scripts.pory"

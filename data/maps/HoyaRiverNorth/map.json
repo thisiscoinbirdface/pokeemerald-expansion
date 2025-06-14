@@ -2,7 +2,7 @@
   "id": "MAP_HOYA_RIVER_NORTH",
   "name": "HoyaRiverNorth",
   "layout": "LAYOUT_HOYA_RIVER_NORTH",
-  "music": "SE_M_WATERFALL",
+  "music": "MUS_ROUTE119",
   "region_map_section": "MAPSEC_HOYA_RIVER_NORTH",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
@@ -73,7 +73,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE5_SITRUS_2",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_HOYA_A",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -86,7 +86,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE5_SITRUS_2",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_HOYA_B",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -99,7 +99,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE5_SITRUS_2",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_HOYA_C",
       "script": "BerryTreeScript",
       "flag": "0"
     },

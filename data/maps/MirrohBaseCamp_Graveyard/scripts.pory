@@ -3,8 +3,12 @@ mapscripts MirrohBaseCamp_Graveyard_MapScripts{}
 
 
 //Kohla battle
-script MirrohBaseCamp_Graveyard_KohlaBattle{
+script MirrohBaseCamp_Graveyard_KohlaBattle{    
+
     lockall
+
+    call(Common_EventScript_SaveGameBeforeSomber)
+
     faceplayer
     //kohla talk
     delay(30)

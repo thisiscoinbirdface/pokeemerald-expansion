@@ -4,7 +4,7 @@ mapscripts HoyaRiverNorth_MapScripts{}
 
 
 script Route6_Transition_EventScript_SharpedoBlocker{
-    msgbox(format("There's a dangerous Pokémon in the Hoya River - it smashed into the riverbank and threw these boulders up!\pWhat is it?\pDon't be shocked - it's a wild Mega Sharpedo!"), MSGBOX_NPC)
+    msgbox(format("There's a dangerous Pokémon in the Hoya River - it smashed into the riverbank and threw these boulders up!\pWhat is it?\pDon't be shocked when I tell you - \nit's a wild Mega Sharpedo!"), MSGBOX_NPC)
     end
 }
 
@@ -26,11 +26,10 @@ script Route6_Transition_Weather_StormTrigger{
 script HoyaRiverNorth_SaveGameTrigger{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)){end}   
 
-    special(SaveGame)
-	waitstate
-    release
-
     setvar(VAR_TEMP_C, 1)
+
+    call(Common_EventScript_SaveGameBeforeSomber)
+    releaseall
 
     end
 }
@@ -40,6 +39,7 @@ script Route6_Transition_KohlaBattle_Trigger0{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
 
     lockall
+    fadeoutbgm(0)
     delay(30)
     //Move camera
     special(SpawnCameraObject)
@@ -63,6 +63,7 @@ script Route6_Transition_KohlaBattle_Trigger1{
     if (flag(FLAG_ROUTE6_KOHLA_BATTLE)) {end}
 
     lockall
+    fadeoutbgm(0)
     delay(30)
     //Move camera
     special(SpawnCameraObject)
@@ -86,7 +87,7 @@ script Route6_Transition_EventScript_KohlaBattle{
 
     //Dialogue
     speakername("Kohla")
-    msgbox(format("Once again you save the day while I run off chasing dead leads. Your stupid Professor Rue's lead was bogus!\pIt's like the world is telling me that I'm not as good as you, {PLAYER}. But you and I know the truth. You lucked your way into this journey, while I worked hard all my life...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows, I want you to know that I will NEVER be inferior to you!"))
+    msgbox(format("Once again you save the day while I run off chasing dead leads. Your stupid Professor Rue's lead was bogus!\pIt's like the world is telling me that\nI'm not as good as you, {PLAYER}.\lBut you and I know the truth.\lYou lucked your way into this journey, while I worked hard all my life...\p...to get nothing.\p...\pI want you to know that I don't like you. And even if nobody else knows,\lI want you to know that I will NEVER\lbe inferior to you!"))
     release
 
     //Battle
@@ -99,12 +100,12 @@ script Route6_Transition_EventScript_KohlaBattle{
     applymovement(1, moves(face_right))
     delay(24)
     speakername("Kohla")
-    msgbox(format("Boltund, you're too weak! You just lost me the battle! You need to push yourself harder!"))
+    msgbox(format("Boltund, you're too weak!\nYou just lost me the battle!\lYou need to push yourself harder!"))
     release
     applymovement(1, moves(face_up))
     delay(24)
     speakername("Kohla")
-    msgbox(format("{PLAYER}, this isn't over. Mark my words!"))
+    msgbox(format("{PLAYER}, this isn't over.\pMark my words!"))
     release
 
     applymovement(1, moves(walk_down * 7))

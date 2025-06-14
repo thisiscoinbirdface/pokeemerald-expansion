@@ -41,8 +41,7 @@ SilversunCity_PokemonCenter_NPC1_Text_0:
 	.string "They've blocked off the Hoya River\n"
 	.string "North Crossing because they saw a\l"
 	.string "Mega Sharpedo in the wild! So I'm\l"
-	.string "waiting here until it's safe to cross\l"
-	.string "again.$"
+	.string "waiting here until it's safe to cross.$"
 
 SilversunCity_PokemonCenter_NPC2_Text_0:
 # 23 "data//maps/SilversunCity_PokemonCenter/scripts.pory"

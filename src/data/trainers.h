@@ -7393,6 +7393,8 @@ F_TRAINER_FEMALE |
 #line 3437
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
+#line 3438
+F_TRAINER_FEMALE | 
 #line 3439
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 3440
@@ -7426,6 +7428,8 @@ F_TRAINER_FEMALE |
 #line 3452
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
+#line 3453
+F_TRAINER_FEMALE | 
 #line 3454
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 3455
@@ -7490,7 +7494,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3484
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_MAREANIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3486
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -7534,7 +7538,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3501
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_MAREANIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3501
             .heldItem = ITEM_ROCKY_HELMET,

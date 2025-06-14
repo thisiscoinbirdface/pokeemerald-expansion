@@ -4792,7 +4792,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 52,//(P_UPDATED_EXP_YIELDS >= GEN_5) ? 113 : 68,
         .evYield_HP = 2,
         .itemRare = ITEM_MOON_STONE,
-        .genderRatio = PERCENT_FEMALE(75),
+        .genderRatio = PERCENT_FEMALE(100), //was 75
         .eggCycles = 10,
         .friendship = 140,
         .growthRate = GROWTH_FAST,
@@ -13023,9 +13023,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_MAROWAK},
-                                {EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA}),
+                                // {EVO_NONE, 0, SPECIES_MAROWAK},            
+                                // {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
     },
 
     [SPECIES_MAROWAK] =

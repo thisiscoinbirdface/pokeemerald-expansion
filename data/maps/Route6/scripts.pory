@@ -94,10 +94,10 @@ script Route6_Venusaur{
 }
 
 
-//Ranger
+//Ranger M
 script Route6_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE6_A, format("But until we find that rare Pokémon, we'll train with you!"), "Good training!")
-    msgbox(format("The Pokémon we're tracking looks like a giant yellow cat! Ever seen a Pokémon like that?"))
+    trainerbattle_single(TRAINER_ROUTE6_A, format("We're from the Ranger Institute.\nWe're tracking down a rare Pokémon!"), "You're so strong!")
+    msgbox(format("Apparently the Pokémon we're tracking looks like a giant yellow cat!\pEver seen a Pokémon like that?"))
     releaseall
     end
 }
@@ -108,10 +108,10 @@ script Route6_Trainer_B{
     releaseall
     end
 }
-//Ranger
+//Ranger F
 script Route6_Trainer_C1{
-    trainerbattle_single(TRAINER_ROUTE6_C, format("We're from the Pokémon Ranger Institute. We're here to track down a rare Pokémon!"), "You're so strong!")
-    msgbox(format("The Director of the Pokémon Ranger Institute sent us to track the rare Pokémon."))
+    trainerbattle_single(TRAINER_ROUTE6_C, format("But until we find that rare Pokémon, we'll train with you!"), "Good training!")
+    msgbox(format("The Director of the Ranger Institute sent us to track the rare Pokémon."))
     releaseall
     end
 }
@@ -125,21 +125,21 @@ script Route6_Trainer_C2{
 //Fisherman
 script Route6_Trainer_D{
     trainerbattle_single(TRAINER_ROUTE6_D, format("The secret to catching strong Water Pokémon? Patience and a Trolling Rod.\pToo bad you don't have one!"), "You beat me without a rod!")
-    msgbox(format("I wonder what Pokémon I can catch here with a Casting Rod instead..."))
+    msgbox(format("I wonder what Pokémon I can catch\nhere with a Casting Rod instead..."))
     releaseall
     end
 }
 //Cooltrainer
 script Route6_Trainer_E{
-    trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the Pokémon Champion, so I've come here to catch rare Pokémon. Let me test them on you!"), "No - my rare Pokémon!")
-    msgbox(format("Catching good Pokémon isn't enough. I need to train rigorously too."))
+    trainerbattle_single(TRAINER_ROUTE6_E, format("I'm aiming to be the Pokémon Champion, so I'm here to catch rare Pokémon.\lLet me test them out on you!"), "No - my rare Pokémon!")
+    msgbox(format("Catching good Pokémon isn't enough.\nI need to train rigorously too."))
     releaseall
     end
 }
 //Black Belt
 script Route6_Trainer_F{
     trainerbattle_single(TRAINER_ROUTE6_F, format("My Croagunk and I love to train here because it makes us tough!"), "We're not tough eonugh!")
-    msgbox(format("Wading around in the marshes here works your core!"))
+    msgbox(format("Wading around in the marshes here\nreally works your core!"))
     releaseall
     end
 }
@@ -207,7 +207,7 @@ script Route6_Trainer_K{
 script Route6_NPC1{
     lockall
     faceplayer
-    msgbox(format("When I was young, there was no route through these marshes.\pNow Route 6 connects Silversun City to Pelluca City."))
+    msgbox(format("When I was young, there was no route through these marshes.\pNow Route 6 connects Silversun City\nto Pelluca City."))
     releaseall
     end
 }
@@ -215,7 +215,7 @@ script Route6_NPC1{
 script Route6_NPC2{
     lockall
     faceplayer
-    msgbox(format("I wonder what's over there...if I had the HM Surf, I could swim over!"))
+    msgbox(format("I wonder what's over there...if I had the\nHM Surf, I could swim over!"))
     releaseall
     end
 }

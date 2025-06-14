@@ -72,7 +72,7 @@ static bool32 IsSlideInitalizedOrPlayed(enum TrainerSlideType slideId);
     
 static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =
 {
-    [DIFFICULTY_NORMAL] =
+    [DIFFICULTY_EASY] =
     {
         [TRAINER_GASTREEGYM_LEADER] = 
         {
@@ -110,7 +110,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         {
             [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("You're too weak, Boltund!\p"), 
             [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Can't win without getting lucky?\p"), 
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Ceruledge - show no mercy!\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Ceruledge - we're not losing any more!\p"), 
         }, 
         [TRAINER_PELLUCA_QWILSQUAD_BOSS] = 
         {
@@ -180,6 +180,118 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PAUSE_MUSIC}So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), 
         }, 
     },
+
+    [DIFFICULTY_NORMAL] =
+    {
+        [TRAINER_GASTREEGYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Let's see how you handle my ace!\p"), 
+        },
+        [TRAINER_CERAMBASECAMP_EVIL_GABRIELLE] = 
+        {
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("No! I'm not losing to you again!\p"), 
+        },
+        [TRAINER_CERAMBASECAMPGYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Go Tauros! Charge!\p"), 
+        },
+        [TRAINER_CERAMPEAK_MOXIE] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Stupid child...\pIt's time to get serious now!\p"), 
+        },
+        [TRAINER_GALECRESTGYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm too strong for you!\pGo Ceruledge!\p"), 
+        },
+        [TRAINER_VILETHORN_G] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm not done yet'!\pPinsir! Show them your strength!"), 
+        },         
+        [TRAINER_SOMBERHQ_MELEA] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Absol - end this farce!\p"), 
+        }, 
+        [TRAINER_SILVERSUNGYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("The dance draws to a close!\pBombirdier - shall we?\p"), 
+        }, 
+        [TRAINER_ROUTE6_KOHLA] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("You're too weak, Boltund!\p"), 
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Can't win without getting lucky?\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Ceruledge - we're not losing any more!\p"), 
+        }, 
+        [TRAINER_PELLUCA_QWILSQUAD_BOSS] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You can't take down the Qwilsquad!\pGet 'em, Overqwil!\p"), 
+        }, 
+        [TRAINER_MIRROHBASECAMP_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I'm not ready to close the gym yet!\p"), 
+        }, 
+        [TRAINER_MIRROHPEAK_MOXIE] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("That won't be enough to stop Team Somber!\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("I've had it with you!\pHoundoom - finish this!\p"), 
+        }, 
+        [TRAINER_WINTERLILY_HOLLOW_GYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha! You're good - really good!\pC'mon Ampharos - let's amp this battle up!\p"), 
+        }, 
+        [TRAINER_PELLUCA_CITY_GYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("An impressive run, {PLAYER}...but it ends here!\pGyarados - tear this gym apart!\p"), 
+        },
+        [TRAINER_RIVETSHORE_GYM_LEADER] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("Raring to go, are we?\p"),             
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You and your Pokemon are spectacular. Only one Pokemon stands between you and your final gym badge. Are you ready?\p"), 
+        }, 
+        [TRAINER_UNCHARTED_ISLAND_MOXIE] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("No! You're not going to stop us!\pHoundoom - raze this battlefield!\p"), 
+        },
+        [TRAINER_UNCHARTED_ISLAND_MELEA] = 
+        {
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("You think you can beat both of us in a row?\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("You think you've won! You haven't!\pYou haven't, you hear?\pAbsol! Just...just erase this eyesore!\p"), 
+        }, 
+        [TRAINER_UNCHARTED_ISLAND_RUE] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("I see why Tenebris chose you...\p"),             
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("None of this matters! You'll never win!\pCome forth, Ancient Terror!{PLAY_BGM MUS_VS_RAYQUAZA}\pBehold the power of Orichalcum Pulse!\p"), 
+            [TRAINER_SLIDE_LAST_HALF_HP] = COMPOUND_STRING("Ancient Terror! Finish this!\p"), 
+        }, 
+        [TRAINER_CHAMPIONSHIP_A] = 
+        {
+            [TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("Woohoo!"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Down to my last Pokemon...\p...but I'm not giving up!\nGo - Altaria!"), 
+        },
+        [TRAINER_CHAMPIONSHIP_B] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("You think you can get away with that?"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("So this is the level of the Pokemon Championship...\pBut I'm a contender too!\pPinsir - horns ready!"), 
+        }, 
+        [TRAINER_CHAMPIONSHIP_C] = 
+        {
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("The battle's just started!"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("It's not over yet!\pAvalugg - we're going all out!"), 
+        },
+        [TRAINER_CHAMPIONSHIP_D] = 
+        {
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("How many times have I been here before?\pBut it won't be like the other times!\pCheer for me in the finals, {PLAYER}!"), 
+        },
+        [TRAINER_CHAMPIONSHIP_E] = 
+        {
+            [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Let's go Gallade! No holding back!"),
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("You're always getting lucky!'"),
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("I won't forgive you for that!"),
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PAUSE_MUSIC}So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), 
+        }, 
+    },
+
+
+
 };
 
 static const u8* const sFrontierTrainerSlides[DIFFICULTY_COUNT][FRONTIER_TRAINERS_COUNT][TRAINER_SLIDE_COUNT] =

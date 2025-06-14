@@ -166,6 +166,10 @@
 #define BERRY_TREE_RIVETSHORE_B      114
 #define BERRY_TREE_RIVETSHORE_C      115
 
+#define BERRY_TREE_HOYA_A            116
+#define BERRY_TREE_HOYA_B            117
+#define BERRY_TREE_HOYA_C            118
+
 #define BERRY_TREES_COUNT 128
 
 #endif // GUARD_CONSTANTS_BERRY_H

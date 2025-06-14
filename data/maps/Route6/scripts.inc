@@ -1014,18 +1014,18 @@ Route6_Venusaur_Text_5:
 
 Route6_Trainer_A_Text_0:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "But until we find that rare Pokémon,\n"
-	.string "we'll train with you!$"
+	.string "We're from the Ranger Institute.\n"
+	.string "We're tracking down a rare Pokémon!$"
 
 Route6_Trainer_A_Text_1:
 # 99 "data//maps/Route6/scripts.pory"
-	.string "Good training!$"
+	.string "You're so strong!$"
 
 Route6_Trainer_A_Text_2:
 # 100 "data//maps/Route6/scripts.pory"
-	.string "The Pokémon we're tracking looks like a\n"
-	.string "giant yellow cat! Ever seen a Pokémon\l"
-	.string "like that?$"
+	.string "Apparently the Pokémon we're tracking\n"
+	.string "looks like a giant yellow cat!\p"
+	.string "Ever seen a Pokémon like that?$"
 
 Route6_Trainer_B_Text_0:
 # 106 "data//maps/Route6/scripts.pory"
@@ -1044,19 +1044,17 @@ Route6_Trainer_B_Text_2:
 
 Route6_Trainer_C1_Text_0:
 # 113 "data//maps/Route6/scripts.pory"
-	.string "We're from the Pokémon Ranger\n"
-	.string "Institute. We're here to track down a\l"
-	.string "rare Pokémon!$"
+	.string "But until we find that rare Pokémon,\n"
+	.string "we'll train with you!$"
 
 Route6_Trainer_C1_Text_1:
 # 113 "data//maps/Route6/scripts.pory"
-	.string "You're so strong!$"
+	.string "Good training!$"
 
 Route6_Trainer_C1_Text_2:
 # 114 "data//maps/Route6/scripts.pory"
-	.string "The Director of the Pokémon Ranger\n"
-	.string "Institute sent us to track the rare\l"
-	.string "Pokémon.$"
+	.string "The Director of the Ranger Institute\n"
+	.string "sent us to track the rare Pokémon.$"
 
 Route6_Trainer_C2_Text_0:
 # 120 "data//maps/Route6/scripts.pory"
@@ -1085,14 +1083,14 @@ Route6_Trainer_D_Text_1:
 
 Route6_Trainer_D_Text_2:
 # 128 "data//maps/Route6/scripts.pory"
-	.string "I wonder what Pokémon I can catch here\n"
-	.string "with a Casting Rod instead...$"
+	.string "I wonder what Pokémon I can catch\n"
+	.string "here with a Casting Rod instead...$"
 
 Route6_Trainer_E_Text_0:
 # 134 "data//maps/Route6/scripts.pory"
 	.string "I'm aiming to be the Pokémon Champion,\n"
-	.string "so I've come here to catch rare\l"
-	.string "Pokémon. Let me test them on you!$"
+	.string "so I'm here to catch rare Pokémon.\l"
+	.string "Let me test them out on you!$"
 
 Route6_Trainer_E_Text_1:
 # 134 "data//maps/Route6/scripts.pory"
@@ -1100,8 +1098,8 @@ Route6_Trainer_E_Text_1:
 
 Route6_Trainer_E_Text_2:
 # 135 "data//maps/Route6/scripts.pory"
-	.string "Catching good Pokémon isn't enough. I\n"
-	.string "need to train rigorously too.$"
+	.string "Catching good Pokémon isn't enough.\n"
+	.string "I need to train rigorously too.$"
 
 Route6_Trainer_F_Text_0:
 # 141 "data//maps/Route6/scripts.pory"
@@ -1114,8 +1112,8 @@ Route6_Trainer_F_Text_1:
 
 Route6_Trainer_F_Text_2:
 # 142 "data//maps/Route6/scripts.pory"
-	.string "Wading around in the marshes here works\n"
-	.string "your core!$"
+	.string "Wading around in the marshes here\n"
+	.string "really works your core!$"
 
 Route6_Trainer_G_Text_0:
 # 148 "data//maps/Route6/scripts.pory"
@@ -1197,8 +1195,8 @@ Route6_NPC1_Text_0:
 # 210 "data//maps/Route6/scripts.pory"
 	.string "When I was young, there was no route\n"
 	.string "through these marshes.\p"
-	.string "Now Route 6 connects Silversun City to\n"
-	.string "Pelluca City.$"
+	.string "Now Route 6 connects Silversun City\n"
+	.string "to Pelluca City.$"
 
 Route6_NPC2_Text_0:
 # 218 "data//maps/Route6/scripts.pory"

@@ -593,10 +593,15 @@ EventScript_WhiteOut::
 	removeitem ITEM_HEAL_PASS
 	removeitem ITEM_HEAL_PASS
 	removeitem ITEM_HEAL_PASS
-	additem ITEM_HEAL_PASS
+
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	goto EventScript_ResetMrBriney
+
+	goto_if_set FLAG_HEAL_PASS_EXPLAIN, EventScript_AddItemHealPass
 	end
+
+EventScript_AddItemHealPass::
+	additem ITEM_HEAL_PASS
 
 EventScript_AfterWhiteOutHeal::
 	lockall

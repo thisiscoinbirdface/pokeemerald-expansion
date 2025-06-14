@@ -15,7 +15,7 @@ script SilversunCity_PokemonCenter_EventScript_Nurse{
 }
 
 script SilversunCity_PokemonCenter_NPC1{
-	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a\lMega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."), MSGBOX_NPC)
+	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a\lMega Sharpedo in the wild! So I'm waiting here until it's safe to cross."), MSGBOX_NPC)
 	end
 }
 
@@ -23,3 +23,6 @@ script SilversunCity_PokemonCenter_NPC2{
 	msgbox(format("This year is the year of the Pokémon Championships! It happens only once every four years - should I take part?"), MSGBOX_NPC)
 	end
 }
+
+
+
