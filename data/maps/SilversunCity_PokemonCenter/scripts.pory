@@ -15,7 +15,7 @@ script SilversunCity_PokemonCenter_EventScript_Nurse{
 }
 
 script SilversunCity_PokemonCenter_NPC1{
-	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a Mega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."), MSGBOX_NPC)
+	msgbox(format("They've blocked off the Hoya River North Crossing because they saw a\lMega Sharpedo in the wild! So I'm waiting here until it's safe to cross again."), MSGBOX_NPC)
 	end
 }
 

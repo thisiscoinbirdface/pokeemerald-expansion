@@ -638,7 +638,7 @@ CeramBaseCampGym_LeaderBattle_Text_8:
 	.string "This is Acid Spray. I got it for\n"
 	.string "Sizzlipede but it can't learn Acid\l"
 	.string "Spray!\p"
-	.string "I don't know why Team Somber is\l"
+	.string "I don't know why Team Somber is\n"
 	.string "after the dreamstones, but be careful\l"
 	.string "if you run into them!\p"
 	.string "Good luck, {PLAYER}!$"

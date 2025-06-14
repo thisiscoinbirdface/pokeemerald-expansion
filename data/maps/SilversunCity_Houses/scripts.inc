@@ -264,9 +264,9 @@ SilversunCity_Houses_Artist_Text_0:
 
 SilversunCity_Houses_Artist_Text_1:
 # 19 "data//maps/SilversunCity_Houses/scripts.pory"
-	.string "Where's my masterpiece? I just got the\n"
-	.string "Black Sludge! Don't hurry me, you\l"
-	.string "philistine!$"
+	.string "Where's my masterpiece?\p"
+	.string "I only just got the Black Sludge!\n"
+	.string "Don't hurry me, you philistine!$"
 
 SilversunCity_Houses_Artist_Text_2:
 # 24 "data//maps/SilversunCity_Houses/scripts.pory"

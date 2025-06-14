@@ -5,8 +5,8 @@ script Route8_House_Unfezant{
     msgbox(format("Unfezant regards you with wise eyes."), MSGBOX_NPC)
     end    
 }
-script Route8_House_Unfezant{
-    playmoncry(SPECIES_UNFEZANT, CRY_MODE_NORMAL)
+script Route8_House_Oranguru{
+    playmoncry(SPECIES_ORANGURU, CRY_MODE_NORMAL)
     msgbox(format("Oranguru carefully measures you."), MSGBOX_NPC)
     end    
 }
@@ -18,7 +18,7 @@ script Route8_House_Tutor{
     if (var(VAR_RESULT) == 0){
         msgbox(format("The three of us will be here."), MSGBOX_NPC)
         releaseall
-        end        
+        end
     }
 
     checkitem(ITEM_YELLOW_SHARD)

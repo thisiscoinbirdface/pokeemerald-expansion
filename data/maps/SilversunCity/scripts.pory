@@ -29,11 +29,11 @@ script SilversunCity_OnFrame{
                 delay(30)
 
                 speakername("Detective")
-                msgbox(format("Asst. Prof. Rue!? Are you okay?"))
+                msgbox(format("Rue!? Are you okay?"))
                 speakername("Rue")
                 msgbox(format("All well, thanks to {PLAYER}."))
                 speakername("Detective")
-                msgbox(format("We...we thought it was Professor Tenebris with them, not you! At any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
+                msgbox(format("We...we thought it was Professor Tenebris with them, not you!\lAt any rate, {PLAYER}, this is a splendid outcome. You saved your Assistant Professor from any harm."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
@@ -49,21 +49,21 @@ script SilversunCity_OnFrame{
                 release
                 delay(30)
                 speakername("Detective")
-                msgbox(format("Spilt milk. Don't fret over what can't be changed. What do they want to do with the Dreamalyser?"))
+                msgbox(format("Spilt milk. Don't fret over it now.\nWhy do they want the Dreamalyser?"))
                 release
                 delay(16)
                 speakername("Rue")
-                msgbox(format("Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from their grunt who went too. I think they called her Gabrielle. And now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
+                msgbox(format("Just like we heard from {PLAYER} about being transported to Ancient Cormoria, they heard about it from\ltheir grunt who went too.\pI think they called her Gabrielle.\pAnd now they want to use the Dreamalyser to control the power of the dreamstone! Then they'll be able to enter the past and...what exactly they want to do there - I have no clue."))
                 release
                 applymovement(LOCALID_DET1, moves(emote_question_mark))
                 applymovement(LOCALID_DET2, moves(emote_question_mark))
                 waitmovement(0)
                 delay(16)
-                msgbox_delay("Detective", format("So they want to build a Dreamalyser and use it to go to Ancient Cormoria?"))
+                msgbox_delay("Detective", format("So they want to build a Dreamalyser\nand use it to go to Ancient Cormoria?"))
                 release
                 delay(16)
                 msgbox_delay("Rue", format("Yes."))
-                msgbox_delay("Detective", format("There must be something we're missing. What's there in the past?\nWhat could they want?\p...\p...\p...and where's Kohla when we need him? Rue, he was chasing your leads. He's nowhere to be seen now. Sigh...what good is an ace rookie if he's not even around when we need him?"))
+                msgbox_delay("Detective", format("There must be something we're missing. What's there in the past?\nWhat could they want?\p...\p...\p...and where's Kohla when we need him? Rue, he was chasing your leads.\lHe's nowhere to be seen now.\pSigh...what good is an ace rookie if he's not even around when we need him?"))
                 delay(16)
                 msgbox_delay("Detective", format("Rue - go back home. You've had a hard time. Take care of yourself."))
                 release

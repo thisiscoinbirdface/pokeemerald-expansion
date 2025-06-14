@@ -59,7 +59,7 @@ script SilversunCity_TheaterEntrance_EventScript_Receptionist{
 //Kid
 script SilversunCity_TheaterEntrance_EventScript_NPC1{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("The Servine was so scary!"), MSGBOX_NPC)
+        msgbox(format("The Bombirdier was so scary!"), MSGBOX_NPC)
     } else {
         msgbox(format("Theater is so boring! Why do Mom and Dad always bring me here?"), MSGBOX_NPC)
     }
@@ -69,7 +69,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC1{
 //Man
 script SilversunCity_TheaterEntrance_EventScript_NPC2{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("The action! The tension! And all the razzle-dazzle! Gloria was sizzling! Too bad she lost though."), MSGBOX_NPC)
+        msgbox(format("The action! The tension! And all the razzle-dazzle! Gloria was sizzling!\lA pity that she lost though."), MSGBOX_NPC)
     } else {
         msgbox(format("I write for The Cormoria Culture, the leading art and entertainment portal in Cormoria! Let's see what Gloria has in store today...it's supposed to be an experiential affair."), MSGBOX_NPC)
     }
@@ -92,7 +92,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC2{
 //Blond dude
 script SilversunCity_TheaterEntrance_EventScript_NPC4{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("I didn't learn anything about theater, but I sure as hell saw a good battle! You knocked all these snobs right off their feet!"), MSGBOX_NPC)
+        msgbox(format("I didn't learn anything about theater, but I sure as hell saw a good battle! You knocked all these snobs right\noff their feet!"), MSGBOX_NPC)
     } else {
         msgbox(format("My girl told me I'm not classy enough for her friends...so here I am, educatin' myself. I love her, y'know?"), MSGBOX_NPC)
     }
@@ -127,7 +127,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC7{
             //Battle
             trainerbattle_no_intro(TRAINER_THEATER_B, format("My love for Gloria wasn't enough..."))
             release
-            msgbox(format("Sigh...I didn't want to admit it but I know. Gloria is only human after all. She's allowed to lose a battle. I need to stop idolising her and think of her as another human being."), MSGBOX_NPC)
+            msgbox(format("Sigh...I didn't want to admit it but I know. Gloria is only human after all. She's allowed to lose a battle.\pI need to stop idolising her and think of her as another human being."), MSGBOX_NPC)
             setflag(FLAG_SILVERSUN_THEATER_MANIAC)            
         }
     } else {
@@ -139,7 +139,7 @@ script SilversunCity_TheaterEntrance_EventScript_NPC7{
 //Old man
 script SilversunCity_TheaterEntrance_EventScript_NPC8{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("I've seen better in my day!\pI'm talking about you of course. Gloria was perfect."), MSGBOX_NPC)
+        msgbox(format("I've seen better in my day!\pI'm talking about you of course.\nGloria was perfect."), MSGBOX_NPC)
     } else {
         msgbox(format("I've seen many a show in my life. I'm not a snob, but I do have high standards."), MSGBOX_NPC)
     }

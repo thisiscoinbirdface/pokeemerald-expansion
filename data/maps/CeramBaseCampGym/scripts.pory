@@ -272,7 +272,7 @@ script CeramBaseCampGym_LeaderBattle {
         msgbox(format("I hope you manage to find the dreamstone and Professor Tenebris.\pI wonder if I can do something...\nHere, maybe you could use this."))
         release
         giveitem(ITEM_TM79)
-        msgbox_delay("Ariana", format("This is Acid Spray. I got it for Sizzlipede but it can't learn Acid Spray!\pI don't know why Team Somber is\lafter the dreamstones, but be careful\lif you run into them!\pGood luck, {PLAYER}!"))
+        msgbox_delay("Ariana", format("This is Acid Spray. I got it for Sizzlipede but it can't learn Acid Spray!\pI don't know why Team Somber is\nafter the dreamstones, but be careful\lif you run into them!\pGood luck, {PLAYER}!"))
 
         releaseall
         end        

@@ -3,7 +3,10 @@ raw`
     .set LOCALID_CLEFAIRY_FOLLOW, 4
 `
 
-mapscripts Route2_MapScripts{}
+mapscripts Route2_MapScripts{
+    MAP_SCRIPT_ON_RESUME {setstepcallback(STEP_CB_ASH)}
+}
+
 
 
 //Spot the clefairy

@@ -22,9 +22,11 @@ script SilversunCity_Theater_Leader{
 
     //dialogue
     speakername("Gloria")
-    msgbox(format("Hmm, so it's you. Not spectacular, but you'll do.")) 
-    fadescreenswapbuffers(FADE_TO_BLACK)    
+    msgbox(format("Hmm, so it's you. Not spectacular...\p...but you'll do.")) 
+    release
     hidefollower
+    fadescreenswapbuffers(FADE_TO_BLACK)    
+    fadeoutbgm(0)
     setobjectxy(OBJ_EVENT_ID_PLAYER, 3, 6)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(8, moves(face_down))
@@ -36,8 +38,10 @@ script SilversunCity_Theater_Leader{
     special(RemoveCameraObject)
 
     fadescreenswapbuffers(FADE_FROM_BLACK)    
+    playbgm(MUS_GYM, FALSE)
+    delay(8)
     speakername("Gloria")
-    msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that will sweep you off your feet!"))
+    msgbox(format("Welcome to the Gloria Show! Tonight, we're doing a live performance that\lwill sweep you off your feet!"))
     release
     playse(SE_APPLAUSE)
     speakername("Audience")
@@ -48,11 +52,11 @@ script SilversunCity_Theater_Leader{
     waitmovement(0)
     delay(16)
     speakername("Gloria")  
-    msgbox(format("You're a trainer, correct? Then you must want my badge. If you want it, you'll have to earn it, right here on stage!\pThe lights, the sound!\nThe audience, the emotions!\pI specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them.\pAnd tonight, your defeat will be my next performance!\pNow, {PLAYER}, enthrall me with your danse macabre!"))
+    msgbox(format("You're a trainer, correct? Then you must be after the coveted Drama Badge!\lIf you want it, you'll have to earn it, right here on stage!\pThe lights, the sound!\nThe audience, the emotions!\pI specialise in the art of dark drama, {PLAYER}. I live to surprise my audience and shock them.\pAnd tonight, your defeat will be my\nnext great performance!\pNow, {PLAYER}, enthrall me with your danse macabre!"))
     release
 
     //Battle
-    trainerbattle_no_intro(TRAINER_SILVERSUNGYM_LEADER, "What a performace!")
+    trainerbattle_no_intro(TRAINER_SILVERSUNGYM_LEADER, "What a performance!")
 
 
     //Camera, need to sort this bit properly
@@ -74,13 +78,13 @@ script SilversunCity_Theater_Leader{
     applymovement(8, moves(face_left))
     waitmovement(0)    
     speakername("Gloria")
-    msgbox(format("Ah...don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune. And I must reward you with this."))
-
+    msgbox(format("Ah...don't mind, {PLAYER}. Show business can be tough. But what a battle! Such elegance! Such style and panache! {PLAYER}, were you not a trainer, I would recruit you right away! But you dance to a different tune.\lAnd I must reward you with this."))
+ 
+    speakername(NULL)
+    message(format("{PLAYER} received the Drama Badge from Gloria."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
     //Receive the badge
-    speakername("Gloria")
-    msgbox(format("{PLAYER} received the Drama Badge from Gloria."))
     release
     setflag(FLAG_BADGE04_GET)
 
@@ -92,7 +96,7 @@ script SilversunCity_Theater_Leader{
 
     //Bye-bye
     speakername("Gloria")
-    msgbox(format("It was a pleasure sharing the stage with you. May you elegantly bob and weave through the dance of life, {PLAYER}!"))   
+    msgbox(format("It was a pleasure sharing the stage with you. May you bob and weave through the dance of life, {PLAYER}!"))   
     release
 
     //set gym trainer flags
@@ -147,7 +151,7 @@ script SilversunCity_Theater_EventScript_SomberBlocker{
 //Old man 1st row
 script SilversunCity_Theater_NPC1{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Gloria is graceful even in defeat. Now that's something everyone can learn from."), MSGBOX_NPC)
+        msgbox(format("Gloria is graceful even in defeat.\nThat's something we can all learn from!"), MSGBOX_NPC)
     } else {
         msgbox(format("Gloria is the face of Silversun City!\nA Gym Leader AND a famous actress?\lShe's really a role model for women."), MSGBOX_NPC)
     }
@@ -156,7 +160,7 @@ script SilversunCity_Theater_NPC1{
 //old woman 1st row
 script SilversunCity_Theater_NPC2{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Incredible! Her Bombirdier! Such a shame she lost, and to such a...nondescript opponent."), MSGBOX_NPC)
+        msgbox(format("Incredible! Her Bombirdier!\nWhat a shame she lost, and to such a...\l...nondescript opponent."), MSGBOX_NPC)
     } else {
         msgbox(format("They say Gloria caught her Bombirdier while shooting an adventure flick in the Ivy River."), MSGBOX_NPC)
     }
@@ -174,7 +178,7 @@ script SilversunCity_Theater_NPC3{
 //girl red right
 script SilversunCity_Theater_NPC4{
     if (flag(FLAG_BADGE04_GET)){
-        msgbox(format("Did you see Gloria's Bombirdier! Too bad that other person defeated it. A Greek tragedy!\n...oh, it was you."), MSGBOX_NPC)
+        msgbox(format("Did you see Gloria's Bombirdier!\nToo bad that trainer defeated it.\pA Greek tragedy!\p...oh, it was you."), MSGBOX_NPC)
     } else {
         msgbox(format("I'm a huuuge Gloria fan! I've been waiting for this show for months!"), MSGBOX_NPC)
     }
@@ -264,7 +268,7 @@ script SilversunCity_Theater_NPC6{
         faceplayer
         msgbox(format("Who are you? Only cast and crew are allowed backstage.\pAre you acting tonight?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
-         msgbox(format("Ooh! Are you going to go on-stage next to Gloria?"), MSGBOX_YESNO)           
+         msgbox(format("Ooh! Are you going to go on-stage\nnext to Gloria?"), MSGBOX_YESNO)           
             if (var (VAR_RESULT) == 1){
                 msgbox(format("Oh wow! You're a star!\nCan I have your autograph?"), MSGBOX_YESNO)
                 if (var(VAR_RESULT) == 1){
@@ -273,12 +277,14 @@ script SilversunCity_Theater_NPC6{
                     setflag(FLAG_SILVERSUN_THEATER_SCARF)
                     msgbox(format("A little something to remember me by!"), MSGBOX_NPC)
                     end
+                } else {
+                    msgbox(format("I...you...how rude!"), MSGBOX_NPC)
                 }
             } else {
-                msgbox(format("So you're an extra too? Sigh...when will we get our big break?"), MSGBOX_NPC)
+                msgbox(format("So you're an extra too?\nSigh...when will we get our big break?"), MSGBOX_NPC)
             }
         } else {
-            msgbox(format("Oh, you're part of the crew. I'm an extra, so we're both playing support roles.\pSigh...when will we get our big break?"), MSGBOX_NPC)
+            msgbox(format("Oh, you're part of the crew. I'm an extra, so we're both in support roles.\pSigh...when will we get our big break?"), MSGBOX_NPC)
         }
         releaseall
     }

@@ -16,7 +16,7 @@ script SilversunCity_Houses_Artist{
     faceplayer
     if (var(VAR_SILVERSUN_ARTIST) == 2){
         speakername("Arsalan")
-        msgbox(format("Where's my masterpiece? I just got the Black Sludge! Don't hurry me, you philistine!"), MSGBOX_NPC)
+        msgbox(format("Where's my masterpiece?\pI only just got the Black Sludge!\nDon't hurry me, you philistine!"), MSGBOX_NPC)
     }
 
     if (var(VAR_SILVERSUN_ARTIST) == 1){

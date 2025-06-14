@@ -419,7 +419,7 @@ SilversunCity_OnFrame_Text_0:
 
 SilversunCity_OnFrame_Text_1:
 # 32 "data//maps/SilversunCity/scripts.pory"
-	.string "Asst. Prof. Rue!? Are you okay?$"
+	.string "Rue!? Are you okay?$"
 
 SilversunCity_OnFrame_Text_2:
 # 33 "data//maps/SilversunCity/scripts.pory"
@@ -432,10 +432,10 @@ SilversunCity_OnFrame_Text_3:
 SilversunCity_OnFrame_Text_4:
 # 36 "data//maps/SilversunCity/scripts.pory"
 	.string "We...we thought it was Professor\n"
-	.string "Tenebris with them, not you! At any\l"
-	.string "rate, {PLAYER}, this is a splendid\l"
-	.string "outcome. You saved your Assistant\l"
-	.string "Professor from any harm.$"
+	.string "Tenebris with them, not you!\l"
+	.string "At any rate, {PLAYER}, this is a\l"
+	.string "splendid outcome. You saved your\l"
+	.string "Assistant Professor from any harm.$"
 
 SilversunCity_OnFrame_Text_5:
 # 42 "data//maps/SilversunCity/scripts.pory"
@@ -453,26 +453,26 @@ SilversunCity_OnFrame_Text_6:
 
 SilversunCity_OnFrame_Text_7:
 # 52 "data//maps/SilversunCity/scripts.pory"
-	.string "Spilt milk. Don't fret over what can't be\n"
-	.string "changed. What do they want to do with\l"
-	.string "the Dreamalyser?$"
+	.string "Spilt milk. Don't fret over it now.\n"
+	.string "Why do they want the Dreamalyser?$"
 
 SilversunCity_OnFrame_Text_8:
 # 56 "data//maps/SilversunCity/scripts.pory"
 	.string "Just like we heard from {PLAYER}\n"
 	.string "about being transported to Ancient\l"
-	.string "Cormoria, they heard about it from their\l"
-	.string "grunt who went too. I think they called\l"
-	.string "her Gabrielle. And now they want to use\l"
-	.string "the Dreamalyser to control the power of\l"
-	.string "the dreamstone! Then they'll be able to\l"
+	.string "Cormoria, they heard about it from\l"
+	.string "their grunt who went too.\p"
+	.string "I think they called her Gabrielle.\p"
+	.string "And now they want to use the\n"
+	.string "Dreamalyser to control the power of the\l"
+	.string "dreamstone! Then they'll be able to\l"
 	.string "enter the past and...what exactly they\l"
 	.string "want to do there - I have no clue.$"
 
 SilversunCity_OnFrame_Text_9:
 # 62 "data//maps/SilversunCity/scripts.pory"
-	.string "So they want to build a Dreamalyser and\n"
-	.string "use it to go to Ancient Cormoria?$"
+	.string "So they want to build a Dreamalyser\n"
+	.string "and use it to go to Ancient Cormoria?$"
 
 SilversunCity_OnFrame_Text_10:
 # 65 "data//maps/SilversunCity/scripts.pory"
@@ -486,10 +486,10 @@ SilversunCity_OnFrame_Text_11:
 	.string "...\p"
 	.string "...\p"
 	.string "...and where's Kohla when we need him?\n"
-	.string "Rue, he was chasing your leads. He's\l"
-	.string "nowhere to be seen now. Sigh...what good\l"
-	.string "is an ace rookie if he's not even around\l"
-	.string "when we need him?$"
+	.string "Rue, he was chasing your leads.\l"
+	.string "He's nowhere to be seen now.\p"
+	.string "Sigh...what good is an ace rookie if he's\n"
+	.string "not even around when we need him?$"
 
 SilversunCity_OnFrame_Text_12:
 # 68 "data//maps/SilversunCity/scripts.pory"

@@ -222,7 +222,7 @@ SilversunCity_TheaterEntrance_EventScript_Receptionist_Text_1:
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_0:
 # 62 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
-	.string "The Servine was so scary!$"
+	.string "The Bombirdier was so scary!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC1_Text_1:
 # 64 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -232,8 +232,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC1_Text_1:
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_0:
 # 72 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "The action! The tension! And all the\n"
-	.string "razzle-dazzle! Gloria was sizzling! Too\l"
-	.string "bad she lost though.$"
+	.string "razzle-dazzle! Gloria was sizzling!\l"
+	.string "A pity that she lost though.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC2_Text_1:
 # 74 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -247,8 +247,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC4_Text_0:
 # 95 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "I didn't learn anything about theater,\n"
 	.string "but I sure as hell saw a good battle!\l"
-	.string "You knocked all these snobs right off\l"
-	.string "their feet!$"
+	.string "You knocked all these snobs right\n"
+	.string "off their feet!$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC4_Text_1:
 # 97 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -300,9 +300,9 @@ SilversunCity_TheaterEntrance_EventScript_NPC7_Text_3:
 # 130 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "Sigh...I didn't want to admit it but I\n"
 	.string "know. Gloria is only human after all.\l"
-	.string "She's allowed to lose a battle. I need to\l"
-	.string "stop idolising her and think of her as\l"
-	.string "another human being.$"
+	.string "She's allowed to lose a battle.\p"
+	.string "I need to stop idolising her and think\n"
+	.string "of her as another human being.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC7_Text_4:
 # 134 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
@@ -313,8 +313,8 @@ SilversunCity_TheaterEntrance_EventScript_NPC7_Text_4:
 SilversunCity_TheaterEntrance_EventScript_NPC8_Text_0:
 # 142 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"
 	.string "I've seen better in my day!\p"
-	.string "I'm talking about you of course. Gloria\n"
-	.string "was perfect.$"
+	.string "I'm talking about you of course.\n"
+	.string "Gloria was perfect.$"
 
 SilversunCity_TheaterEntrance_EventScript_NPC8_Text_1:
 # 144 "data//maps/SilversunCity_TheaterEntrance/scripts.pory"

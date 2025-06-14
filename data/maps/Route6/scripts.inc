@@ -693,103 +693,114 @@ Route6_Tutor_Fangs::
 	lockall
 # 503 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 504 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Fangs_Text_0
 # 505 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Tutor_Fangs_Text_1, MSGBOX_POKENAV
-# 506 "data//maps/Route6/scripts.pory"
-	message Route6_Tutor_Weather_Text_4
-# 507 "data//maps/Route6/scripts.pory"
-	waitmessage
-# 508 "data//maps/Route6/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Fangs_Text_2, Route6_Tutor_Fangs_Text_3, Route6_Tutor_Fangs_Text_4, Route6_Tutor_Fangs_Text_5
+	goto_if_set FLAG_TUTOR_FANGS, Route6_Tutor_Fangs_2
 # 511 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq Route6_Tutor_Fangs_2
-Route6_Tutor_Fangs_1:
+	msgbox Route6_Tutor_Fangs_Text_1
+# 512 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Fangs_Text_2, MSGBOX_POKENAV
+# 513 "data//maps/Route6/scripts.pory"
+	message Route6_Tutor_Weather_Text_4
+# 514 "data//maps/Route6/scripts.pory"
+	waitmessage
 # 515 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 1
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Fangs_Text_3, Route6_Tutor_Fangs_Text_4, Route6_Tutor_Fangs_Text_5, Route6_Tutor_Fangs_Text_6, Route6_Tutor_Fangs_Text_7
+# 518 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Fangs_5
 Route6_Tutor_Fangs_4:
-# 519 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 2
+# 522 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 1
 	goto_if_eq Route6_Tutor_Fangs_8
 Route6_Tutor_Fangs_7:
-# 523 "data//maps/Route6/scripts.pory"
-	compare VAR_RESULT, 3
+# 526 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 2
 	goto_if_eq Route6_Tutor_Fangs_11
 Route6_Tutor_Fangs_10:
-# 527 "data//maps/Route6/scripts.pory"
+# 530 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, 3
+	goto_if_eq Route6_Tutor_Fangs_14
+Route6_Tutor_Fangs_13:
+# 534 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
-# 528 "data//maps/Route6/scripts.pory"
+# 535 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Fangs_2:
-# 512 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_FIRE_FANG
-# 513 "data//maps/Route6/scripts.pory"
-	goto Route6_Tutor_TeachMove
-	goto Route6_Tutor_Fangs_1
+# 506 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Tutor_Fangs_Text_0, MSGBOX_NPC
+# 507 "data//maps/Route6/scripts.pory"
+	releaseall
+	end
 
 Route6_Tutor_Fangs_5:
-# 516 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_ICE_FANG
-# 517 "data//maps/Route6/scripts.pory"
+# 519 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_FIRE_FANG
+# 520 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_4
 
 Route6_Tutor_Fangs_8:
-# 520 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_THUNDER_FANG
-# 521 "data//maps/Route6/scripts.pory"
+# 523 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_ICE_FANG
+# 524 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_7
 
 Route6_Tutor_Fangs_11:
-# 524 "data//maps/Route6/scripts.pory"
-	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
-# 525 "data//maps/Route6/scripts.pory"
+# 527 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
+# 528 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_10
 
+Route6_Tutor_Fangs_14:
+# 531 "data//maps/Route6/scripts.pory"
+	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
+# 532 "data//maps/Route6/scripts.pory"
+	goto Route6_Tutor_TeachMove
+	goto Route6_Tutor_Fangs_13
+
 
 Route6_Tutor_TeachMove::
-# 533 "data//maps/Route6/scripts.pory"
+# 540 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 535 "data//maps/Route6/scripts.pory"
+# 542 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_TeachMove_2
-# 538 "data//maps/Route6/scripts.pory"
+# 545 "data//maps/Route6/scripts.pory"
+	setflag FLAG_TUTOR_FANGS
+# 546 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
 Route6_Tutor_TeachMove_1:
-# 541 "data//maps/Route6/scripts.pory"
+# 549 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_TeachMove_2:
-# 536 "data//maps/Route6/scripts.pory"
+# 543 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
 	goto Route6_Tutor_TeachMove_1
 
 
 Route6_Tutor_TeachMoveShard::
-# 546 "data//maps/Route6/scripts.pory"
+# 554 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 548 "data//maps/Route6/scripts.pory"
+# 556 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_TeachMoveShard_2
-# 551 "data//maps/Route6/scripts.pory"
+# 559 "data//maps/Route6/scripts.pory"
 	removeitem ITEM_GREEN_SHARD
-# 552 "data//maps/Route6/scripts.pory"
+# 560 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
 Route6_Tutor_TeachMoveShard_1:
-# 555 "data//maps/Route6/scripts.pory"
+# 563 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_TeachMoveShard_2:
-# 549 "data//maps/Route6/scripts.pory"
+# 557 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
 	goto Route6_Tutor_TeachMoveShard_1
 
@@ -1359,7 +1370,7 @@ Route6_Tutor_Weather_Text_0:
 Route6_Tutor_Weather_Text_1:
 # 459 "data//maps/Route6/scripts.pory"
 	.string "In exchange for one Green Shard, should\n"
-	.string "I teach a move?$"
+	.string "I teach a weather move?$"
 
 Route6_Tutor_Weather_Text_2:
 # 462 "data//maps/Route6/scripts.pory"
@@ -1391,34 +1402,45 @@ Route6_Tutor_Weather_Text_8:
 	.string "Snowscape$"
 
 Route6_Tutor_Fangs_Text_0:
-# 504 "data//maps/Route6/scripts.pory"
+# 506 "data//maps/Route6/scripts.pory"
+	.string "Bare your teeth, Ranger!\p"
+	.string "...\p"
+	.string "Maybe I should have taught you a\n"
+	.string "dentist's phone number instead...$"
+
+Route6_Tutor_Fangs_Text_1:
+# 511 "data//maps/Route6/scripts.pory"
 	.string "I train new Candidates in raising\n"
 	.string "strong partners. I can teach your\l"
 	.string "Pokémon some new moves if you like! But\l"
 	.string "I can only teach one move per Ranger.$"
 
-Route6_Tutor_Fangs_Text_1:
-# 505 "data//maps/Route6/scripts.pory"
+Route6_Tutor_Fangs_Text_2:
+# 512 "data//maps/Route6/scripts.pory"
 	.string "This tutor will only teach a\p"
 	.string "move once, so choose carefully!$"
 
-Route6_Tutor_Fangs_Text_2:
-# 509 "data//maps/Route6/scripts.pory"
+Route6_Tutor_Fangs_Text_3:
+# 516 "data//maps/Route6/scripts.pory"
 	.string "Fire Fang$"
 
-Route6_Tutor_Fangs_Text_3:
-# 509 "data//maps/Route6/scripts.pory"
+Route6_Tutor_Fangs_Text_4:
+# 516 "data//maps/Route6/scripts.pory"
 	.string "Ice Fang$"
 
-Route6_Tutor_Fangs_Text_4:
-# 509 "data//maps/Route6/scripts.pory"
+Route6_Tutor_Fangs_Text_5:
+# 516 "data//maps/Route6/scripts.pory"
 	.string "Thunder Fang$"
 
-Route6_Tutor_Fangs_Text_5:
-# 509 "data//maps/Route6/scripts.pory"
+Route6_Tutor_Fangs_Text_6:
+# 516 "data//maps/Route6/scripts.pory"
 	.string "Psychic Fangs$"
 
+Route6_Tutor_Fangs_Text_7:
+# 516 "data//maps/Route6/scripts.pory"
+	.string "Cancel$"
+
 Route6_Tutor_TeachMove_Text_0:
-# 538 "data//maps/Route6/scripts.pory"
+# 546 "data//maps/Route6/scripts.pory"
 	.string "Your Pokémon look strong now!\n"
 	.string "Good luck, Ranger!$"

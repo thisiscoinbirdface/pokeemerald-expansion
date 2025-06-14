@@ -66,7 +66,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(24)
     speakername("???")
-    msgbox(format("Ahh...beautiful. We have much to thank you for, Asst. Prof. Rue.\pYour Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone."))
+    msgbox(format("Wonderful. We have much to thank you for, Assistant Professor Rue.\pYour Dreamalyser blueprints will be invaluable to our efforts to get the second dreamstone."))
     
     speakername("Rue")
     msgbox(format("You mean the one on Mt. Mirroh?"))
@@ -90,7 +90,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(24)    
     speakername("???")
-    msgbox(format("Come here child. Let me see your face."))
+    msgbox(format("Who's there?\p...\pCome here child. Let me see your face."))
     release
     delay(30)
     //Small shake
@@ -114,7 +114,11 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
 
     //Prof gets introduced
     speakername("???")
-    msgbox(format("So you're the one who defeated Moxie at Mt. Ceram. So young...you must've gotten really lucky.\pMeet your Asst. Prof. Rue. He's been of immense help to us...albeit unwillingly."))
+    msgbox(format("So you're the one who defeated Moxie\nat Mt. Ceram. So young...you must've\lgotten really lucky.\pMeet your Assistant Professor Rue. He's been of great help...albeit unwillingly."))
+    delay(16)
+    applymovement(LOCALID_PROF, moves(jump_in_place_left))
+    waitmovement(0)
+    delay(16)
     speakername("Rue")
     msgbox(format("{PLAYER}, I'm sorry. Th-they got me."))
     release
@@ -149,7 +153,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     delay(16)
 
     speakername("???")
-    msgbox(format("So it was you, Gabrielle? Hmm...what a blunder. Moxie was right. You really are useless."))
+    msgbox(format("So it was you, Gabrielle?\pHmm...what a blunder. Moxie was right. You really are useless."))
     release
     delay(16)
 
@@ -160,7 +164,7 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     waitmovement(0)
     delay(16)
     speakername("Gabrielle")
-    msgbox(format("Miss Melea, I-I'm sorry. I owed {PLAYER} and I didn't-"))
+    msgbox(format("Miss Melea, I-I'm sorry.\nI owed {PLAYER} and I didn't-"))
     release
     delay(16)
     applymovement(LOCALID_MELEA, moves(jump_in_place_left emote_exclamation_mark))
@@ -198,19 +202,21 @@ script SilversunCity_SomberHQ_EventScript_Cutscene{
     msgbox(format("..."))
     release
     delay(8)
-    applymovement(LOCALID_GAB, moves(walk_faster_left walk_faster_down walk_faster_left *5))
+    applymovement(LOCALID_GAB, moves(walk_fast_left walk_fast_down walk_fast_left *5))
     waitmovement(0)
     setobjectxy(LOCALID_GAB, 0, 0)
+    playse(SE_WARP_OUT)
+    waitse
 
     //Melea explains the plan
         //next dreamstone in mt mirroh
     speakername("Melea")
-    msgbox(format("An absolutely pathetic character. I would deal with her myself...if not for you, {PLAYER}."))
+    msgbox(format("An absolutely pathetic character.\nI would deal with her myself...if not\lfor you, {PLAYER}."))
     release
     applymovement(LOCALID_MELEA, moves(walk_down face_left))
     waitmovement(0)    
     speakername("Melea")
-    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints your Asst. Prof. Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it.")) 
+    msgbox(format("So you know our plan now. At Mt. Ceram, we didn't have the tools to control the dreamstone. But, with the blueprints Rue handed us right now, we're going to build a Dreamalyser and take it to Mt. Mirroh. We'll obtain the dreamstone there...and the rest?\pWell you'll never see any of it.")) 
     
     goto(SilversunCity_SomberHQ_EventScript_Skip)
 }
@@ -230,24 +236,29 @@ script SilversunCity_SomberHQ_EventScript_Skip{
     //Never mind
     //We've got what we need
     speakername("Melea")
-    msgbox(format("Unbelievable! Just unbelievable!\pFine. You can have your Asst. Prof. Rue back, child! We've got what we need from him anyway. Let's go!"))
+    msgbox(format("Unbelievable! Just unbelievable!\pFine. You can have your Assistant Professor Rue back, child!\pWe've got what we need from him anyway. Come on grunt - let's go!"))
     release
     applymovement(LOCALID_GRUNT, moves(face_left walk_left * 4))
     applymovement(LOCALID_MELEA, moves(walk_up walk_left *2 walk_down walk_left *2 face_right))
     waitmovement(0)    
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovement(0)
+    delay(12)
     speakername("Melea")
-    msgbox(format("Heed this warning, {PLAYER}. Do NOT try to thwart us at Mt. Mirroh, or else we will crush you!"))
+    msgbox(format("Heed this warning, {PLAYER}. Do NOT try to interfere with us at Mt. Mirroh,\lor else we will crush you!"))
     release
     applymovement(LOCALID_MELEA, moves(face_right))
     applymovement(LOCALID_GRUNT, moves(walk_left *2 walk_up))
     waitmovement(0)
     removeobject(LOCALID_GRUNT)
+    playse(SE_WARP_OUT)
     applymovement(LOCALID_MELEA, moves(walk_left *3))
     waitmovement(0)
     removeobject(LOCALID_MELEA)
-
+    playse(SE_WARP_OUT)
+    waitse
     //Go outside and meet the detectives.
+    delay(16)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     applymovement(LOCALID_PROF, moves(walk_left walk_up face_left))
     waitmovement(0)
@@ -308,7 +319,7 @@ script SomberHQ_EventScript_NPCNurse{
 script SomberHQ_NPC1{
     lockall
     faceplayer
-    msgbox(format("What? You thought we all wear suits and go on field trips like school children? Someone's gotta make the money! I'm a financial whiz. I'm the real backbone of Team Somber!"))
+    msgbox(format("What? You thought we all wear suits and go on field trips like school children? Someone's gotta make the money!\lI'm a financial whiz. I'm the real backbone of Team Somber!"))
     releaseall
     end
 }
@@ -335,7 +346,7 @@ script SomberHQ_NPC4{
 }
 script SomberHQ_NPCGrunt{
     lockall
-    msgbox(format("So you're saying the shipment's been delayed again? Why, I've got half a mind to -"))
+    msgbox(format("You mean the shipment's been delayed again? Why, I've got half a mind to -"))
     applymovement(12, moves(emote_exclamation_mark))
     waitmovement(0)
     faceplayer
@@ -397,26 +408,26 @@ script SomberHQ_NPC_CounterfeitMachine{
 //Grunts
 script SomberHQ_Grunt_A{
     trainerbattle_single(TRAINER_SOMBERHQ_A, format("Hey! Who let you in?"), "I've gotta let you in too...")
-    msgbox(format("I can't believe you found our secret hideout!"))
+    msgbox(format("I can't believe you found our secret hideout! Who leaked it?"))
     releaseall
     end
 }
 
 script SomberHQ_Grunt_B{
     trainerbattle_single(TRAINER_SOMBERHQ_B, format("You stepped into the wrong place buddy. Moxie isn't here - it's someone way scarier!"), "I'm gonna tell the boss!")
-    msgbox(format("Moxie is pretty scary and mean, but this boss...she's on another level!"))
+    msgbox(format("Moxie is pretty scary and mean, but\nthis boss...she's on another level!"))
     releaseall
     end
 }
 script SomberHQ_Grunt_C{
     trainerbattle_single(TRAINER_SOMBERHQ_C, format("We're going to get the next dreamstone with a certain someone's help!"), "I'm not telling you who it is!")
-    msgbox(format("Okay fine, I'll tell you who's going to help us. It's Nurse Joy.\p...\pHah! Can't believe you fell for that."))
+    msgbox(format("Okay fine, I'll tell you who's going\nto help us. It's Nurse Joy.\p...\pHah! Can't believe you fell for that."))
     releaseall
     end
 }
 script SomberHQ_Grunt_D{
     trainerbattle_single(TRAINER_SOMBERHQ_D, format("Bet you think there's a door to the boss's office past me, don't you? Joke's on you - there isn't!"), "Go and see for yourself!")
-    msgbox(format("The only way to get to the office is to warp there - but I'll never tell you which one!"))
+    msgbox(format("The only way to get to the office is\nto warp there - but I'll never tell\lyou which warp to use!"))
     releaseall
     end
 }
@@ -428,7 +439,7 @@ script SomberHQ_Grunt_E{
 }
 script SomberHQ_Grunt_F{
     trainerbattle_single(TRAINER_SOMBERHQ_F, format("You again? That stupid Gabrielle must've let you in - I know it!"), "Stupid Gabrielle!")
-    msgbox(format("She's such a klutz - she's singlehandedly ruining this great organisation's image."))
+    msgbox(format("Gabrielle's such a klutz - she's singlehandedly ruining this great organisation's image."))
     releaseall
     end
 }
