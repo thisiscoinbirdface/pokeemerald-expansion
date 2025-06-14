@@ -99,7 +99,8 @@ script SSElegant_Raazi{
     release
 
     playbgm(MUS_DUMMY, FALSE)
-    playse(SE_CONTEST_PLACE)
+    playse(SE_DING_DONG)
+    waitse
     //announce
     applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark face_down))
     applymovement(LOCALID_RAAZI, moves(emote_exclamation_mark face_down))
@@ -220,7 +221,7 @@ script SSElegant_Gab_Breech_TeamUp_Trigger{
         waitmovement(0)
         delay(16)
 
-        msgbox_delay("Gabrielle", format("Zoroark and I will go down to the storage hold and distract the crew there!\pAfter that, you two try and find a way out through the hold."))
+        msgbox_delay("Gabrielle", format("Zoroark and I will go down to the storage hold and distract the crew!\pAfter that, you two try and find a way out through the hold."))
         msgbox_delay("Breech", format("Okay, we'll do what we can."))
         applymovement(LOCALID_GAB, moves(face_up))
         waitmovement(0)

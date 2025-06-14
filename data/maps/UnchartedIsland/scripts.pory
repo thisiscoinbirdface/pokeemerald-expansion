@@ -36,11 +36,6 @@ mapscripts UnchartedIsland_MapScripts{
 script UnchartedIsland_OnTransition{
     setrespawn(HEAL_LOCATION_UNCHARTED_ISLAND)
 
-    subquestmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
-    if (var(VAR_RESULT) == 0){
-        completesubquest(QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
-    }
-
     if (var(VAR_UNCHARTED_ISLAND_CUTSCENES) == 2){
         setmaplayoutindex(LAYOUT_UNCHARTED_ISLAND_DESTROYED)
     }

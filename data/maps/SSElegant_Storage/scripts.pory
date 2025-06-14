@@ -69,6 +69,7 @@ script SSElegant_Storage_Moonblast{
     removeobject(8)
 
     //setflags
+    subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
     setflag(FLAG_HIDE_GAB_BREECH_STORAGE)
     setvar(VAR_SSELEGANT_CUTSCENES, 5)
 

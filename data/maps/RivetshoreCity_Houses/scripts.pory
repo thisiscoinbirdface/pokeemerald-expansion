@@ -50,11 +50,12 @@ script RivetshoreCity_Houses_NPC6{
     if (var(VAR_RIVETSHORE_EGG_QUEST) == 2){
         msgbox(format("We've hidden the PocketBoy well. Grandma will never find out.\lWanna play?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
+            playbgm(MUS_NONE, FALSE)
             special(StartFlappyBird)
             waitstate
-
             savebgm(MUS_DUMMY)
             fadedefaultbgm
+            delay(1)
 
             //Get reward
             if (var(GAME_CORNER_VAR_WINNINGS) > 3){

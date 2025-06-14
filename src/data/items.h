@@ -14545,7 +14545,7 @@ const struct Item gItemsInfo[] =
     },
     [ITEM_ANCIENT_STONE] =
     {
-        .name = _("Aerodactylite"),
+        .name = _("Ancient Stone"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
