@@ -115,7 +115,7 @@ script CeramBaseCamp_Main_EventScript_MainEncounter{
     waitmovement(0)
     delay(16)
     speakername("Gabrielle")
-    msgbox(format("Boss! Boss! This is the kid that beat me in Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
+    msgbox(format("Boss! Boss! This is the kid that beat me on Route 3. I was trying to take the dreamstone from that Clefairy hiker."))
     release
     applymovement(LOCALID_BOSS, moves(face_right))
     waitmovement(0)

@@ -874,7 +874,7 @@ CeramBaseCamp_Main_EventScript_MainEncounter_Text_8:
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_9:
 # 118 "data//maps/CeramBaseCamp_Main/scripts.pory"
 	.string "Boss! Boss! This is the kid that beat me\n"
-	.string "in Route 3. I was trying to take the\l"
+	.string "on Route 3. I was trying to take the\l"
 	.string "dreamstone from that Clefairy hiker.$"
 
 CeramBaseCamp_Main_EventScript_MainEncounter_Text_10:
