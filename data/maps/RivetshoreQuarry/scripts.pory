@@ -284,7 +284,7 @@ script Rivetshore_Raazi_Talk{
     applymovement(LOCALID_RAAZI, moves(lock_facing_direction jump_left face_right unlock_facing_direction))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction jump_right face_left unlock_facing_direction))
     waitmovement(0)
-    playbgm(MUS_VS_GYM_LEADER, FALSE)
+    playbgm(MUS_RG_VS_GYM_LEADER, FALSE)
     msgbox_delay("Raazi", format("Let me see whether you can face the might and fury of -"))
     release
 

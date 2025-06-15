@@ -72,7 +72,7 @@ script SSElegant_Rooms_Gloria_Locked{
 //trainer adario
 script SSElegant_Rooms_Trainer_A{
     trainerbattle_single(TRAINER_SSELEGANT_A, format("Hey! You're not getting that TM for free!"), format("Alright, you can have the TM!"))
-    msgbox(format("Earthquake is a really strong TM!"))
+    msgbox(format("Stone Edge is a really strong TM!"))
     releaseall
     end
 }

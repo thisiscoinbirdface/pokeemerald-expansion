@@ -1672,50 +1672,50 @@ static const SpeciesGacha sSpeciesGachaBasicUltraRare[] = {
 
 static const SpeciesGacha sSpeciesGreatCommon[] = {
     {0, SPECIES_VOLTORB_HISUI},
-    {1, SPECIES_TOXEL},    
+    {1, SPECIES_ELECTRIKE},    
     {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesGreatUncommon[] = {
     {0, SPECIES_VOLTORB_HISUI},
-    {1, SPECIES_TOXEL},    
+    {1, SPECIES_ELECTRIKE},    
     {2, SPECIES_GEODUDE_ALOLA},   
 };
 
 static const SpeciesGacha sSpeciesGreatRare[] = {
     {0, SPECIES_VOLTORB_HISUI},
-    {1, SPECIES_TOXEL},    
+    {1, SPECIES_ELECTRIKE},    
     {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesGreatUltraRare[] = {
     {0, SPECIES_VOLTORB_HISUI},
-    {1, SPECIES_TOXEL},    
+    {1, SPECIES_ELECTRIKE},    
     {2, SPECIES_GEODUDE_ALOLA},    
 };
 
 static const SpeciesGacha sSpeciesUltraCommon[] = {
     {0, SPECIES_JANGMO_O},
     {1, SPECIES_OSHAWOTT},
-    {2, SPECIES_OSHAWOTT},        
+    {2, SPECIES_FRIGIBAX},        
 };
 
 static const SpeciesGacha sSpeciesUltraUncommon[] = {
     {0, SPECIES_JANGMO_O},
     {1, SPECIES_OSHAWOTT},
-    {2, SPECIES_OSHAWOTT},    
+    {2, SPECIES_FRIGIBAX},    
 };
 
 static const SpeciesGacha sSpeciesUltraRare[] = {
     {0, SPECIES_JANGMO_O},
     {1, SPECIES_OSHAWOTT},
-    {2, SPECIES_OSHAWOTT},    
+    {2, SPECIES_FRIGIBAX},    
 };
 
 static const SpeciesGacha sSpeciesUltraUltraRare[] = {
     {0, SPECIES_JANGMO_O},
     {1, SPECIES_OSHAWOTT},
-    {2, SPECIES_ARCTIBAX},    
+    {2, SPECIES_FRIGIBAX},    
 };
 
 static const SpeciesGacha sSpeciesMasterCommon[] = {

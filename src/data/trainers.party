@@ -7444,11 +7444,11 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
 Skarmory
-Level: 51
+Level: 50
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Excadrill
-Level: 52
+Level: 51
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Coalossal
@@ -7456,7 +7456,7 @@ Level: 51
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Aggron @ Aggronite
-Level: 53
+Level: 52
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_RIVETSHORE_GYM_LEADER ===
@@ -7471,16 +7471,16 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Blue
 
 Skarmory
-Level: 51
+Level: 50
 
 Excadrill
-Level: 52
+Level: 51
 
 Coalossal
 Level: 51
 
 Aggron @ Aggronite
-Level: 53
+Level: 52
 
 
 
@@ -7906,11 +7906,11 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 51
+Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Honchkrow
-Level: 52
+Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowking-Galar
@@ -7918,11 +7918,11 @@ Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Great Tusk
-Level: 53
+Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Houndoom @ Houndoominite
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
@@ -7938,16 +7938,16 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 51
+Level: 50
 
 Honchkrow
-Level: 52
+Level: 51
 
 Slowking-Galar
 Level: 52
 
 Great Tusk
-Level: 53
+Level: 52
 
 Houndoom @ Houndoominite
 Level: 54
@@ -7978,7 +7978,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Yanmega
-Level: 52
+Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Muk-Alola
@@ -7986,7 +7986,7 @@ Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowbro-Galar
-Level: 53
+Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Flutter Mane
@@ -7994,7 +7994,7 @@ Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Absol @ Absolite
-Level: 55
+Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
@@ -8009,13 +8009,13 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Yanmega
-Level: 52
+Level: 51
 
 Muk-Alola
 Level: 52
 
 Slowbro-Galar
-Level: 53
+Level: 52
 
 Flutter Mane
 Level: 53
@@ -8046,7 +8046,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 53
+Level: 52
 
 Spiritomb
 Level: 53
@@ -8055,7 +8055,7 @@ Roaring Moon
 Level: 54
 
 Metagross @ Metagrossite
-Level: 55
+Level: 54
 
 Koraidon
 Level: 56
@@ -8072,7 +8072,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 53
+Level: 52
 
 Spiritomb
 Level: 53
@@ -8081,7 +8081,7 @@ Roaring Moon
 Level: 54
 
 Metagross @ Metagrossite
-Level: 55
+Level: 54
 
 Koraidon
 Level: 56
@@ -8208,7 +8208,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Orbeetle
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lokix
@@ -8226,7 +8226,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Orbeetle
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lokix
@@ -8256,7 +8256,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sinistea
-Level: 52
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
@@ -8278,7 +8278,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sinistea
-Level: 52
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Araquanid
@@ -8313,11 +8313,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_B ===
@@ -8973,23 +8973,23 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Ursaluna
-Level: 60
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Typhlosion-Hisui
-Level: 61
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Forretress
-Level: 61
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Barraskewda
-Level: 62
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Altaria @ Altarianite
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_A ===
@@ -9004,7 +9004,7 @@ AI: Smart Trainer / Prediction / Force Setup First Turn / Ace Pokemon
 Mugshot: Green
 
 Meganium @ Heat Rock
-Level: 60
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
 - Solar Beam
@@ -9012,22 +9012,22 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ursaluna @ Flame Orb
 Ability: Guts
-Level: 61
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Earthquake
 
 Typhlosion-Hisui @ Choice Scarf
-Level: 61
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Overheat
 
 Forretress
-Level: 62
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Altaria @ Altarianite
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -9054,7 +9054,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Glimmora @ Power Herb
-Level: 62
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Beam
 - Sludge Wave
@@ -9062,7 +9062,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Solar Beam
 
 Scolipede
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
@@ -9070,11 +9070,11 @@ Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pinsir @ Pinsirite
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor  
 - Swords Dance
@@ -9093,7 +9093,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Glimmora @ Power Herb
-Level: 62
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Beam
 - Sludge Wave
@@ -9101,7 +9101,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Solar Beam
 
 Scolipede
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
@@ -9109,11 +9109,11 @@ Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex @ Leftovers
-Level: 62
+Level: 61
 IVs: 31 HP/ 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pinsir @ Pinsirite
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor  
 - Swords Dance
@@ -9146,7 +9146,7 @@ Mugshot: Green
 
 Ninetales-Alola
 Ability: Snow Warning
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aurora Veil
 - Moonblast
@@ -9155,19 +9155,19 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Baxcalibur
 Ability: Ice Body
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tinkaton
-Level: 63
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Rapidash-Galar
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Avalugg-Hisui
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_C ===
@@ -9183,7 +9183,7 @@ Mugshot: Green
 
 Ninetales-Alola @ Icy Rock
 Ability: Snow Warning
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aurora Veil
 - Moonblast
@@ -9192,19 +9192,19 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Baxcalibur
 Ability: Ice Body
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tinkaton
-Level: 63
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Rapidash-Galar
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Avalugg-Hisui
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -9229,7 +9229,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Claydol
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Stealth Rock
 - Psychic
@@ -9238,7 +9238,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 Zoroark-Hisui @ Life Orb
-Level: 65
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 - Shadow Ball
@@ -9246,7 +9246,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Blast
 
 Kommo-o
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Clangorous Soul
 - Clanging Scales
@@ -9254,7 +9254,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 Milotic @ Sitrus Berry
-Level: 63
+Level: 62
 Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
@@ -9263,7 +9263,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 
 Mawile @ Mawilite
-Level: 65
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Play Rough
@@ -9282,7 +9282,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Claydol @ Leftovers
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Stealth Rock
 - Psychic
@@ -9291,7 +9291,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 Zoroark-Hisui @ Life Orb
-Level: 65
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 - Shadow Ball
@@ -9299,7 +9299,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Blast
 
 Kommo-o @ Throat Spray
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Clangorous Soul
 - Clanging Scales
@@ -9307,7 +9307,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 Milotic @ Sitrus Berry
-Level: 63
+Level: 62
 Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
@@ -9316,7 +9316,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 
 Mawile @ Mawilite
-Level: 65
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Play Rough
@@ -9347,17 +9347,16 @@ Mugshot: Green
 
 Samurott @ Leftovers
 Ability: Sharpness
-Level: 63
+Level: 62
 EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flip Turn
-- Ceaseless Edge
 - Aqua Jet
 - Sacred Sword
 
 Kleavor @ Focus Sash
 Ability: Sharpness
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Stone Axe
 - X-Scissor
@@ -9365,7 +9364,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Togekiss @ Leftovers
 Ability: Serene Grace
-Level: 64
+Level: 63
 EVs: 252 HP / 116 Def / 140 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Wave
@@ -9374,7 +9373,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roost
 
 Aegislash @ Air Balloon
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Kings Shield
 - Shadow Ball
@@ -9382,7 +9381,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flash Cannon
 
 Gallade @ Galladite
-Level: 65
+Level: 64
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Drain Punch
 - Zen Headbutt
@@ -9391,7 +9390,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ceruledge @ Life Orb
 Ability: Weak Armor
-Level: 67
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bitter Blade
 - Swords Dance
@@ -9411,7 +9410,7 @@ Mugshot: Green
 
 Samurott @ Leftovers
 Ability: Sharpness
-Level: 63
+Level: 62
 EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flip Turn
@@ -9421,7 +9420,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kleavor @ Focus Sash
 Ability: Sharpness
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Stone Axe
 - X-Scissor
@@ -9429,7 +9428,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Togekiss @ Leftovers
 Ability: Serene Grace
-Level: 64
+Level: 63
 EVs: 252 HP / 116 Def / 140 SpD  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Wave
@@ -9438,7 +9437,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roost
 
 Aegislash @ Air Balloon
-Level: 64
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Kings Shield
 - Shadow Ball
@@ -9446,7 +9445,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flash Cannon
 
 Gallade @ Galladite
-Level: 65
+Level: 64
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Drain Punch
 - Zen Headbutt
@@ -9455,7 +9454,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ceruledge @ Life Orb
 Ability: Weak Armor
-Level: 67
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bitter Blade
 - Swords Dance
