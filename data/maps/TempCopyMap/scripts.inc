@@ -2166,6 +2166,18 @@ Common_EventScript_MapPopup_Disable::
 	end
 
 
+Common_EventScript_EnableWild::
+# 1345 "data//maps/TempCopyMap/scripts.pory"
+	clearflag FLAG_SYS_WILD_ENCOUNTERS
+	end
+
+
+Common_EventScript_DisableWild::
+# 1350 "data//maps/TempCopyMap/scripts.pory"
+	setflag FLAG_SYS_WILD_ENCOUNTERS
+	end
+
+
 # 1107 "data//maps/TempCopyMap/scripts.pory"
 Common_EventScript_DrifblimTravels_ToSilversun_Movement_0:
 # 1107 "data//maps/TempCopyMap/scripts.pory"

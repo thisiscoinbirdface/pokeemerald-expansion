@@ -1335,7 +1335,7 @@ MtCeram_TrainerBattle_C_Text_2:
 MtCeram_TrainerBattle_D_Text_0:
 # 464 "data//maps/MtCeram/scripts.pory"
 	.string "I brought my sheep Pokémon here but\n"
-	.string "their hair got singed in the heat!$"
+	.string "their wool got singed in the heat!$"
 
 MtCeram_TrainerBattle_D_Text_1:
 # 464 "data//maps/MtCeram/scripts.pory"

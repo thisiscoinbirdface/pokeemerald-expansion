@@ -802,7 +802,7 @@ Route4_TrainerBattle_Kid3_Text_2:
 
 Route4_TrainerBattle_Kid3_Text_3:
 # 158 "data//maps/Route4/scripts.pory"
-	.string "My Pokémon! Adults are lame!$"
+	.string "My Pokémon! Grown-ups are lame!$"
 
 Route4_TrainerBattle_Kid3_Text_4:
 # 160 "data//maps/Route4/scripts.pory"

@@ -1104,7 +1104,7 @@ GalecrestCity_NPC_11_Text_2:
 
 GalecrestCity_Chansey_Text_0:
 # 400 "data//maps/GalecrestCity/scripts.pory"
-	.string "Chansey looks happy to be out in\l"
+	.string "Chansey looks happy to be out in\n"
 	.string "the garden!$"
 
 GalecrestCity_NPC_12_Text_0:

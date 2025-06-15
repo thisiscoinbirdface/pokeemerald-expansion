@@ -23,11 +23,11 @@ SilversunCity_Houses_Artist_1:
 	compare VAR_SILVERSUN_ARTIST, 1
 	goto_if_eq SilversunCity_Houses_Artist_5
 SilversunCity_Houses_Artist_4:
-# 49 "data//maps/SilversunCity_Houses/scripts.pory"
+# 48 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_SILVERSUN_ARTIST, 0
 	goto_if_eq SilversunCity_Houses_Artist_8
 SilversunCity_Houses_Artist_7:
-# 89 "data//maps/SilversunCity_Houses/scripts.pory"
+# 88 "data//maps/SilversunCity_Houses/scripts.pory"
 	releaseall
 	end
 
@@ -46,63 +46,63 @@ SilversunCity_Houses_Artist_5:
 # 25 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Houses_Artist_10
-# 44 "data//maps/SilversunCity_Houses/scripts.pory"
+# 43 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 45 "data//maps/SilversunCity_Houses/scripts.pory"
+# 44 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_7, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 SilversunCity_Houses_Artist_8:
-# 50 "data//maps/SilversunCity_Houses/scripts.pory"
+# 49 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_8
-# 51 "data//maps/SilversunCity_Houses/scripts.pory"
+# 50 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_9
+# 51 "data//maps/SilversunCity_Houses/scripts.pory"
+	release
 # 52 "data//maps/SilversunCity_Houses/scripts.pory"
-	release
+	delay 16
 # 53 "data//maps/SilversunCity_Houses/scripts.pory"
-	delay 16
+	speakername SilversunCity_Houses_Artist_Text_0
 # 54 "data//maps/SilversunCity_Houses/scripts.pory"
-	speakername SilversunCity_Houses_Artist_Text_0
-# 55 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_10
+# 55 "data//maps/SilversunCity_Houses/scripts.pory"
+	release
 # 56 "data//maps/SilversunCity_Houses/scripts.pory"
-	release
-# 57 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 8
-# 58 "data//maps/SilversunCity_Houses/scripts.pory"
+# 57 "data//maps/SilversunCity_Houses/scripts.pory"
 	applymovement 2, SilversunCity_Houses_Artist_Movement_0
-# 59 "data//maps/SilversunCity_Houses/scripts.pory"
+# 58 "data//maps/SilversunCity_Houses/scripts.pory"
 	waitmovement 0
-# 60 "data//maps/SilversunCity_Houses/scripts.pory"
+# 59 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 20
+# 60 "data//maps/SilversunCity_Houses/scripts.pory"
+	speakername SilversunCity_Houses_Artist_Text_0
 # 61 "data//maps/SilversunCity_Houses/scripts.pory"
-	speakername SilversunCity_Houses_Artist_Text_0
-# 62 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_11
+# 62 "data//maps/SilversunCity_Houses/scripts.pory"
+	release
 # 63 "data//maps/SilversunCity_Houses/scripts.pory"
-	release
-# 64 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 16
-# 65 "data//maps/SilversunCity_Houses/scripts.pory"
+# 64 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 66 "data//maps/SilversunCity_Houses/scripts.pory"
+# 65 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_12, MSGBOX_YESNO
-# 67 "data//maps/SilversunCity_Houses/scripts.pory"
+# 66 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 68 "data//maps/SilversunCity_Houses/scripts.pory"
+# 67 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SilversunCity_Houses_Artist_13
-# 80 "data//maps/SilversunCity_Houses/scripts.pory"
+# 79 "data//maps/SilversunCity_Houses/scripts.pory"
 	applymovement 2, SilversunCity_Houses_Artist_Movement_0
-# 81 "data//maps/SilversunCity_Houses/scripts.pory"
+# 80 "data//maps/SilversunCity_Houses/scripts.pory"
 	waitmovement 0
-# 82 "data//maps/SilversunCity_Houses/scripts.pory"
+# 81 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 24
-# 83 "data//maps/SilversunCity_Houses/scripts.pory"
+# 82 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 84 "data//maps/SilversunCity_Houses/scripts.pory"
+# 83 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_14, MSGBOX_NPC
-# 85 "data//maps/SilversunCity_Houses/scripts.pory"
+# 84 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 	goto SilversunCity_Houses_Artist_7
 
@@ -111,28 +111,28 @@ SilversunCity_Houses_Artist_10:
 # 0 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne SilversunCity_Houses_Artist_16
-# 40 "data//maps/SilversunCity_Houses/scripts.pory"
+# 39 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 41 "data//maps/SilversunCity_Houses/scripts.pory"
+# 40 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_6, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 SilversunCity_Houses_Artist_13:
-# 69 "data//maps/SilversunCity_Houses/scripts.pory"
+# 68 "data//maps/SilversunCity_Houses/scripts.pory"
 	applymovement 2, SilversunCity_Houses_Artist_Movement_0
-# 70 "data//maps/SilversunCity_Houses/scripts.pory"
+# 69 "data//maps/SilversunCity_Houses/scripts.pory"
 	waitmovement 0
-# 71 "data//maps/SilversunCity_Houses/scripts.pory"
+# 70 "data//maps/SilversunCity_Houses/scripts.pory"
 	delay 24
-# 72 "data//maps/SilversunCity_Houses/scripts.pory"
+# 71 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 73 "data//maps/SilversunCity_Houses/scripts.pory"
+# 72 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_13, MSGBOX_NPC
-# 74 "data//maps/SilversunCity_Houses/scripts.pory"
+# 73 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 76 "data//maps/SilversunCity_Houses/scripts.pory"
+# 75 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SILVERSUN_ARTIST, 1
-# 77 "data//maps/SilversunCity_Houses/scripts.pory"
+# 76 "data//maps/SilversunCity_Houses/scripts.pory"
 	startquest QUEST_SILVERSUN_ARTIST
 	goto SilversunCity_Houses_Artist_7
 
@@ -152,103 +152,101 @@ SilversunCity_Houses_Artist_16:
 # 33 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
 # 34 "data//maps/SilversunCity_Houses/scripts.pory"
-	setflag FLAG_SYS_GOT_STRENGTH
-# 35 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveitem ITEM_TM73
-# 36 "data//maps/SilversunCity_Houses/scripts.pory"
+# 35 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SILVERSUN_ARTIST, 2
-# 37 "data//maps/SilversunCity_Houses/scripts.pory"
+# 36 "data//maps/SilversunCity_Houses/scripts.pory"
 	speakername SilversunCity_Houses_Artist_Text_0
-# 38 "data//maps/SilversunCity_Houses/scripts.pory"
+# 37 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Artist_Text_5, MSGBOX_NPC
 	goto SilversunCity_Houses_Artist_4
 
 
 SilversunCity_Houses_Tutor::
-# 95 "data//maps/SilversunCity_Houses/scripts.pory"
+# 94 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Tutor_Text_0, MSGBOX_NPC
 	end
 
 
 SilversunCity_Houses_NPC1::
-# 109 "data//maps/SilversunCity_Houses/scripts.pory"
+# 108 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC1_Text_0, MSGBOX_NPC
 	end
 
 
 SilversunCity_Houses_NPC2::
-# 113 "data//maps/SilversunCity_Houses/scripts.pory"
+# 112 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 SilversunCity_Houses_NPC3::
-# 117 "data//maps/SilversunCity_Houses/scripts.pory"
+# 116 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_NPC3_Text_0, MSGBOX_NPC
 	end
 
 
 SilversunCity_Houses_DuskullNPC1::
-# 137 "data//maps/SilversunCity_Houses/scripts.pory"
+# 136 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_DuskullNPC1_2
-# 146 "data//maps/SilversunCity_Houses/scripts.pory"
+# 145 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1, MSGBOX_NPC
 SilversunCity_Houses_DuskullNPC1_1:
 	end
 
 SilversunCity_Houses_DuskullNPC1_2:
-# 138 "data//maps/SilversunCity_Houses/scripts.pory"
+# 137 "data//maps/SilversunCity_Houses/scripts.pory"
 	lockall
-# 141 "data//maps/SilversunCity_Houses/scripts.pory"
+# 140 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_0, MSGBOX_NPC
-# 142 "data//maps/SilversunCity_Houses/scripts.pory"
+# 141 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 143 "data//maps/SilversunCity_Houses/scripts.pory"
+# 142 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveegg SPECIES_HONEDGE
-# 144 "data//maps/SilversunCity_Houses/scripts.pory"
+# 143 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SEWERS_DUSKULL, 4
 	goto SilversunCity_Houses_DuskullNPC1_1
 
 
 SilversunCity_Houses_Husband::
-# 152 "data//maps/SilversunCity_Houses/scripts.pory"
+# 151 "data//maps/SilversunCity_Houses/scripts.pory"
 	compare VAR_SEWERS_DUSKULL, 4
 	goto_if_eq SilversunCity_Houses_Husband_2
-# 162 "data//maps/SilversunCity_Houses/scripts.pory"
+# 161 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_DuskullNPC1_Text_1, MSGBOX_NPC
 SilversunCity_Houses_Husband_1:
 	end
 
 SilversunCity_Houses_Husband_2:
-# 155 "data//maps/SilversunCity_Houses/scripts.pory"
+# 154 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Husband_Text_0, MSGBOX_NPC
-# 156 "data//maps/SilversunCity_Houses/scripts.pory"
+# 155 "data//maps/SilversunCity_Houses/scripts.pory"
 	release
-# 158 "data//maps/SilversunCity_Houses/scripts.pory"
+# 157 "data//maps/SilversunCity_Houses/scripts.pory"
 	giveitem ITEM_SMUGGLER_EMBLEM
-# 159 "data//maps/SilversunCity_Houses/scripts.pory"
+# 158 "data//maps/SilversunCity_Houses/scripts.pory"
 	completequest QUEST_SILVERSUN_WIFE
-# 160 "data//maps/SilversunCity_Houses/scripts.pory"
+# 159 "data//maps/SilversunCity_Houses/scripts.pory"
 	setvar VAR_SEWERS_DUSKULL, 5
 	goto SilversunCity_Houses_Husband_1
 
 
 SilversunCity_Houses_Wife::
-# 169 "data//maps/SilversunCity_Houses/scripts.pory"
+# 168 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Wife_Text_0, MSGBOX_NPC
 	end
 
 
 SilversunCity_Houses_Furfrou::
-# 175 "data//maps/SilversunCity_Houses/scripts.pory"
+# 174 "data//maps/SilversunCity_Houses/scripts.pory"
 	msgbox SilversunCity_Houses_Furfrou_Text_0, MSGBOX_NPC
 	end
 
 
-# 58 "data//maps/SilversunCity_Houses/scripts.pory"
+# 57 "data//maps/SilversunCity_Houses/scripts.pory"
 SilversunCity_Houses_Artist_Movement_0:
-# 58 "data//maps/SilversunCity_Houses/scripts.pory"
+# 57 "data//maps/SilversunCity_Houses/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -284,7 +282,7 @@ SilversunCity_Houses_Artist_Text_4:
 	.string "it!$"
 
 SilversunCity_Houses_Artist_Text_5:
-# 38 "data//maps/SilversunCity_Houses/scripts.pory"
+# 37 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I have no need of it. Why should my art\n"
 	.string "hide behind a facade? But you, my dear\l"
 	.string "helpful philistine, might benefit from\l"
@@ -293,21 +291,21 @@ SilversunCity_Houses_Artist_Text_5:
 	.string "Farewell!$"
 
 SilversunCity_Houses_Artist_Text_6:
-# 41 "data//maps/SilversunCity_Houses/scripts.pory"
+# 40 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "But you do not have it! An artist's eyes\n"
 	.string "cannot be fooled.$"
 
 SilversunCity_Houses_Artist_Text_7:
-# 45 "data//maps/SilversunCity_Houses/scripts.pory"
+# 44 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Just use the regular black paint, you\n"
 	.string "say? Pah! Philistine!$"
 
 SilversunCity_Houses_Artist_Text_8:
-# 50 "data//maps/SilversunCity_Houses/scripts.pory"
+# 49 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "???$"
 
 SilversunCity_Houses_Artist_Text_9:
-# 51 "data//maps/SilversunCity_Houses/scripts.pory"
+# 50 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Myself, I have no patience for theater.\n"
 	.string "No no! Although Gloria is fantastic.\l"
 	.string "Such style and technique! I admire her\l"
@@ -317,19 +315,19 @@ SilversunCity_Houses_Artist_Text_9:
 	.string "world to life through paint and brush!$"
 
 SilversunCity_Houses_Artist_Text_10:
-# 55 "data//maps/SilversunCity_Houses/scripts.pory"
+# 54 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Yes yes! I am indeed none other than\n"
 	.string "the legendary Arsalan. My works adorn\l"
 	.string "the most prestigious walls in Cormoria!\p"
 	.string "...$"
 
 SilversunCity_Houses_Artist_Text_11:
-# 62 "data//maps/SilversunCity_Houses/scripts.pory"
+# 61 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "You haven't heard of me?\n"
 	.string "Uncultured, you are!$"
 
 SilversunCity_Houses_Artist_Text_12:
-# 66 "data//maps/SilversunCity_Houses/scripts.pory"
+# 65 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "But Arsalan is struggling now.\p"
 	.string "Why, you ask?\p"
 	.string "Well well.\p"
@@ -343,17 +341,17 @@ SilversunCity_Houses_Artist_Text_12:
 	.string "Will you help me?$"
 
 SilversunCity_Houses_Artist_Text_13:
-# 73 "data//maps/SilversunCity_Houses/scripts.pory"
+# 72 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Arsalan is most pleased!\n"
 	.string "I eagerly await your return.$"
 
 SilversunCity_Houses_Artist_Text_14:
-# 84 "data//maps/SilversunCity_Houses/scripts.pory"
+# 83 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Just use the regular paint, you say?\p"
 	.string "Pah! Philistine!$"
 
 SilversunCity_Houses_Tutor_Text_0:
-# 95 "data//maps/SilversunCity_Houses/scripts.pory"
+# 94 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I'm the sole proprietor of Drifblim\n"
 	.string "Travels Pvt. Ltd.\p"
 	.string "...\p"
@@ -364,14 +362,14 @@ SilversunCity_Houses_Tutor_Text_0:
 	.string "I'm doing business here.$"
 
 SilversunCity_Houses_NPC1_Text_0:
-# 109 "data//maps/SilversunCity_Houses/scripts.pory"
+# 108 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Silversun City is right between the\n"
 	.string "always foggy Vilethorn Woods and the\l"
 	.string "always raining Route 6! We should be\l"
 	.string "called Silvershade City instead.$"
 
 SilversunCity_Houses_NPC2_Text_0:
-# 113 "data//maps/SilversunCity_Houses/scripts.pory"
+# 112 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "They say dangerous Pokémon come out\n"
 	.string "from the sewers from time to time, like\l"
 	.string "the Sewer Scourge. Apparently that's\l"
@@ -379,12 +377,12 @@ SilversunCity_Houses_NPC2_Text_0:
 	.string "I don't let my child play near it!$"
 
 SilversunCity_Houses_NPC3_Text_0:
-# 117 "data//maps/SilversunCity_Houses/scripts.pory"
+# 116 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I want a Toxel as my first Pokémon but\n"
 	.string "Mom will never let me have one.$"
 
 SilversunCity_Houses_DuskullNPC1_Text_0:
-# 141 "data//maps/SilversunCity_Houses/scripts.pory"
+# 140 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Thank you for saving my wife. She's\n"
 	.string "blind, so she needs a Pokémon to assist\l"
 	.string "her. But the orphanage was short of\l"
@@ -404,12 +402,12 @@ SilversunCity_Houses_DuskullNPC1_Text_0:
 	.string "need it.$"
 
 SilversunCity_Houses_DuskullNPC1_Text_1:
-# 146 "data//maps/SilversunCity_Houses/scripts.pory"
+# 145 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "I'm never going to the sewers\n"
 	.string "again...but we did what we had to do.$"
 
 SilversunCity_Houses_Husband_Text_0:
-# 155 "data//maps/SilversunCity_Houses/scripts.pory"
+# 154 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Thank you for saving my wife. She's\n"
 	.string "blind, so she needs a Pokémon to assist\l"
 	.string "her. But the orphanage was short of\l"
@@ -429,11 +427,11 @@ SilversunCity_Houses_Husband_Text_0:
 	.string "again.$"
 
 SilversunCity_Houses_Wife_Text_0:
-# 169 "data//maps/SilversunCity_Houses/scripts.pory"
+# 168 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Furfrou helps me a ton around the\n"
 	.string "house.$"
 
 SilversunCity_Houses_Furfrou_Text_0:
-# 175 "data//maps/SilversunCity_Houses/scripts.pory"
+# 174 "data//maps/SilversunCity_Houses/scripts.pory"
 	.string "Furfrou is patiently waiting by its\n"
 	.string "owner.$"
