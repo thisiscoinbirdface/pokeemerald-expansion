@@ -98,11 +98,15 @@ PellucaCableCarStation_Movement_ExitCableCar:
 	step_end
 
 PellucaCableCarStation_Text_CableCarReadyGetOn:
+	.string "Hiii - oh, sorry...\n"
+	.string "I thought you were someone else.\p"	
 	.string "The Cable Car is ready to go up.\n"
 	.string "Would you like to ride it?$"
 
 PellucaCableCarStation_Text_StepThisWay:
-	.string "Please step this way.$"
+	.string "Please step this way.\p"
+	.string "...\n"
+	.string "When will he ask me out?$"
 
 PellucaCableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"

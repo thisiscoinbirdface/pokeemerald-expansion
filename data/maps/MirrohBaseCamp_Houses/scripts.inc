@@ -657,10 +657,11 @@ MirrohBaseCamp_Houses_MasterballGuy_Text_7:
 # 155 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
 	.string "A friend of Rue's?\p"
 	.string "...\p"
-	.string "Ah, you're his new assistant. Nice to\n"
-	.string "meet you, {PLAYER}! Rue and I go long\l"
-	.string "back. While he entered academia, I\l"
-	.string "became a Poké Ball craftsman instead!$"
+	.string "So you're his new assistant. Nice to\n"
+	.string "meet you, {PLAYER}!\p"
+	.string "Rue and I go way back.\n"
+	.string "While he entered academia, I became a\l"
+	.string "Poké Ball craftsman instead!$"
 
 MirrohBaseCamp_Houses_MasterballGuy_Text_8:
 # 158 "data//maps/MirrohBaseCamp_Houses/scripts.pory"
@@ -692,8 +693,8 @@ MirrohBaseCamp_Houses_MasterballFriend_Text_0:
 	.string "This man here is the only person in all\n"
 	.string "of Cormoria who can make a Master Ball.\l"
 	.string "A master of the craft!\p"
-	.string "I'm not like him, but I've got a couple of\n"
-	.string "tricks up my sleeve too!$"
+	.string "I'm not like him, but I've got a couple\n"
+	.string "of tricks up my sleeve too!$"
 
 MirrohBaseCamp_Houses_MasterballFriend_Text_1:
 # 187 "data//maps/MirrohBaseCamp_Houses/scripts.pory"

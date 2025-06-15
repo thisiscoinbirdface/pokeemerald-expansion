@@ -1024,7 +1024,7 @@ CarabrueTown_TenebrisLab_EventScript_Scientist1::
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_2:
 # 648 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0
+	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0, MSGBOX_NPC
 	end
 
 

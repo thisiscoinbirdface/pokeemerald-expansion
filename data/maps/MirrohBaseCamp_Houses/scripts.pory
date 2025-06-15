@@ -152,7 +152,7 @@ script MirrohBaseCamp_Houses_MasterballGuy{
     }
 
     if (var(VAR_MASTERBALL_QUEST) == 0){
-        msgbox(format("A friend of Rue's?\p...\pAh, you're his new assistant. Nice to meet you, {PLAYER}! Rue and I go long back. While he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
+        msgbox(format("A friend of Rue's?\p...\pSo you're his new assistant. Nice to meet you, {PLAYER}!\pRue and I go way back.\nWhile he entered academia, I became a Poké Ball craftsman instead!"), MSGBOX_NPC)
         setvar(VAR_0x8006, ITEM_MASTER_BALL)
         showitemdescription
         msgbox(format("A few years ago, I finally perfected my opus magnum - the Master Ball!\pLooks beautiful, doesn't it?"), MSGBOX_NPC)
@@ -181,7 +181,7 @@ script MirrohBaseCamp_Houses_MasterballFriend{
         
     } else {
         setflag(FLAG_SKIP_BALL_CHANGER)
-        msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple of tricks up my sleeve too!"))
+        msgbox(format("This man here is the only person in all of Cormoria who can make a Master Ball. A master of the craft!\pI'm not like him, but I've got a couple\nof tricks up my sleeve too!"))
     }
 
     msgbox(format("I can change the Poké Balls of your Pokémon if you bring me the Poké Ball!\pWould you like me to?"), MSGBOX_YESNO)

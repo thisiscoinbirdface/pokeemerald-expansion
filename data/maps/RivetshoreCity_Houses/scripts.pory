@@ -59,7 +59,11 @@ script RivetshoreCity_Houses_NPC6{
 
             //Get reward
             if (var(GAME_CORNER_VAR_WINNINGS) > 3){
+                playfanfare(MUS_RG_PHOTO)
                 msgbox(format("You got the high score!"))
+                waitfanfare
+                release
+                setvar(GAME_CORNER_VAR_WINNINGS, 0)
 
                 if (flag(FLAG_GET_POCKET_DRIVE)) {end}
 
@@ -71,6 +75,7 @@ script RivetshoreCity_Houses_NPC6{
                 release
                 giveitem(ITEM_POCKET_DRIVE)
                 setflag(FLAG_GET_POCKET_DRIVE)
+                setvar(GAME_CORNER_VAR_WINNINGS, 0)
             }
         }
         releaseall

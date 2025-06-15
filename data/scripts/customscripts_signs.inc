@@ -779,7 +779,7 @@ WhiteSign_MirrohBaseCamp_Gym_Text_0:
 WhiteSign_MirrohBaseCamp_Main_Text_0:
 # 337 "data//scripts/customscripts_signs.pory"
 	.string "Mirroh Base Camp\n"
-	.string "NOW DECOMISSIONED.$"
+	.string "Wrapped in the hush of snow.$"
 
 WhiteSign_MirrohBaseCamp_Martha_Text_0:
 # 342 "data//scripts/customscripts_signs.pory"

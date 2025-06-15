@@ -142,8 +142,12 @@ script PellucaCityHouses_GameCube{
 
     //Get reward
     if (var(GAME_CORNER_VAR_WINNINGS) > 20){
+        playfanfare(MUS_RG_PHOTO)
         msgbox(format("You got the high score!"))
-
+        waitfanfare
+        release
+        setvar(GAME_CORNER_VAR_WINNINGS, 0)
+        
         if (flag(FLAG_GET_SWAP_DRIVE)) {end}
 
         release
@@ -154,6 +158,7 @@ script PellucaCityHouses_GameCube{
         release
         giveitem(ITEM_SWAP_DRIVE)
         setflag(FLAG_GET_SWAP_DRIVE)
+        setvar(GAME_CORNER_VAR_WINNINGS, 0)
     }
     
     releaseall

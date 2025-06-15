@@ -5,17 +5,17 @@ mapscripts Route7_MapScripts {}
 
 
 script Route7_Trainer_A{
-    trainerbattle_single(TRAINER_ROUTE7_A, format("I worked double shifts at the Pelluca Restaurant all week.\pTime to let out some steam!"), format("You ruined my day off!"))
+    trainerbattle_single(TRAINER_ROUTE7_A, format("I worked double shifts at the Pelluca Restaurant all week.\nTime to let out some steam!"), format("You ruined my day off!"))
     msgbox(format("What? Can't a waitress have a day off?"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_B{
     trainerbattle_single(TRAINER_ROUTE7_B, format("My parents want me become an actress, so I practice battling here in secret!"), format("Maybe I should be an actress!"))
-    msgbox(format("I know anybody would want to be me with my looks, but I only care for battling!"), MSGBOX_NPC)
+    msgbox(format("Anyone with my beauty would be an actress, but I only care for battling!"), MSGBOX_NPC)
     end
 }
 script Route7_Trainer_C{
-    trainerbattle_single(TRAINER_ROUTE7_C, format("My big brother and I are going camping!\nDon't get in our way!"), format("I wanted to go camping!"))
+    trainerbattle_single(TRAINER_ROUTE7_C, format("My big brother and I are going camping!\nDon't get in our way!"), format("I just wanted to go camping!"))
     msgbox(format("My brother travels all around Cormoria. He's so cool!"), MSGBOX_NPC)
     end
 }

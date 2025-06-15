@@ -49,7 +49,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 33,
-      "y": 21,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -112,7 +112,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 29,
       "y": 33,
       "elevation": 0,

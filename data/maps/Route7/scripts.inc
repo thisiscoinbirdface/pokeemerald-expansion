@@ -55,7 +55,7 @@ Route7_NPC3::
 Route7_Trainer_A_Text_0:
 # 8 "data//maps/Route7/scripts.pory"
 	.string "I worked double shifts at the Pelluca\n"
-	.string "Restaurant all week.\p"
+	.string "Restaurant all week.\n"
 	.string "Time to let out some steam!$"
 
 Route7_Trainer_A_Text_1:
@@ -77,8 +77,8 @@ Route7_Trainer_B_Text_1:
 
 Route7_Trainer_B_Text_2:
 # 14 "data//maps/Route7/scripts.pory"
-	.string "I know anybody would want to be me with\n"
-	.string "my looks, but I only care for battling!$"
+	.string "Anyone with my beauty would be an\n"
+	.string "actress, but I only care for battling!$"
 
 Route7_Trainer_C_Text_0:
 # 18 "data//maps/Route7/scripts.pory"
@@ -87,7 +87,7 @@ Route7_Trainer_C_Text_0:
 
 Route7_Trainer_C_Text_1:
 # 18 "data//maps/Route7/scripts.pory"
-	.string "I wanted to go camping!$"
+	.string "I just wanted to go camping!$"
 
 Route7_Trainer_C_Text_2:
 # 19 "data//maps/Route7/scripts.pory"

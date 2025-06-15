@@ -645,7 +645,7 @@ script CarabrueTown_TenebrisLab_EventScript_Rue{
 
 script CarabrueTown_TenebrisLab_EventScript_Scientist1{
     if (flag(FLAG_POST_FINALE_CUTSCENE)){
-        msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"))
+        msgbox(format("I can't believe Rue was behind this whole mess! I wish I'd caught on sooner!"), MSGBOX_NPC)
         end
     }
 

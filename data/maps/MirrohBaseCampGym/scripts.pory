@@ -37,7 +37,7 @@ script MirrohBaseCampGym_EventScript_SetBattleMode{
 
 script MirrohBaseCampGym_EventScript_Main{
     lockall
-
+    playbgm(MUS_END, FALSE)
     //camera
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 7))
@@ -107,7 +107,7 @@ script MirrohBaseCampGym_EventScript_Main{
         waitmovement(0)
         delay(16)
         speakername("Carona")
-        msgbox(format("No buts! Stop moping. You two said it yourself - we had such a good time.\pI want you two to cherish that.\nGot it?"), MSGBOX_NPC)
+        msgbox(format("No buts! Stop moping. You two said it yourself - we had such a good time.\pI want you two to cherish that.\pGot it?"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -119,7 +119,7 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_CAR, moves(face_up))
         applymovement(LOCALID_SP, moves(walk_right walk_down))
         waitmovement(0)
-        msgbox(format("Carona - we have a trainer. How many badges do you have left?"), MSGBOX_NPC)
+        msgbox(format("Carona - we have a trainer waiting.\nHow many badges do you have left?"), MSGBOX_NPC)
         waitmovement(0)
         delay(16)
 
@@ -174,7 +174,7 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRF, moves(face_right))
         waitmovement(0)
         delay(16)
-        msgbox(format("Okay, we're ready! We're going to show this last trainer how tough the Mirroh Base Camp Gym is!"), MSGBOX_NPC)
+        msgbox(format("Okay, we're ready! We're going to show this last trainer just how tough the Mirroh Base Camp Gym is!"), MSGBOX_NPC)
         release
         delay(16)
 
@@ -189,9 +189,11 @@ script MirrohBaseCampGym_EventScript_Main{
         applymovement(LOCALID_TRF, moves(emote_exclamation_mark))
         waitmovement(0)
         delay(16)
-        msgbox(format("No! You've done enough. You deserve to relax. We'll take care of this trainer!"), MSGBOX_NPC)
+        msgbox(format("No - you've done enough. You deserve to relax. We'll take care of this trainer!"), MSGBOX_NPC)
         release
         delay(16)
+        fadedefaultbgm
+        delay(24)
         applymovement(LOCALID_TRM, moves(face_down))
         applymovement(LOCALID_TRF, moves(face_down))
         delay(16)

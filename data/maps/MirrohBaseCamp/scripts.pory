@@ -15,7 +15,7 @@ mapscripts MirrohBaseCamp_MapScripts{
 script MirrohBaseCamp_EventScript_Vendor1{
     lockall
 	faceplayer
-	message(format("Our supplies are limited but useful to trek up Mt. Mirroh!"))
+	message(format("Our supplies are limited but useful\nfor a trek up Mt. Mirroh!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor1_Inventory)
 	msgbox(format("Come again!"), MSGBOX_DEFAULT)
@@ -33,7 +33,7 @@ mart MirrohBaseCamp_Vendor1_Inventory{
 script MirrohBaseCamp_EventScript_Vendor2{
     lockall
 	faceplayer
-	message(format("I found all this inside Mt. Mirroh just yesterday!"))
+	message(format("I found all this inside Mt. Mirroh\njust yesterday!"))
 	waitmessage
 	pokemart(MirrohBaseCamp_Vendor2_Inventory)
 	msgbox(format("C'mon, have another look!"), MSGBOX_DEFAULT)
@@ -70,10 +70,7 @@ mart MirrohBaseCamp_Vendor3_Inventory{
 
 //2 NPCs
 script MirrohBaseCamp_EventScript_NPC1{
-    lockall
-    faceplayer
-    msgbox(format("It's so sad and lonely up here...I want to grow up fast so I can go see the rest of Cormoria!"))
-    releaseall
+    msgbox(format("It's so sad and lonely up here...I want to grow up fast so I can go see the rest of Cormoria!"), MSGBOX_NPC)
     end
 }
 script MirrohBaseCamp_EventScript_NPC2{
@@ -82,7 +79,7 @@ script MirrohBaseCamp_EventScript_NPC2{
     speakername("???")
     msgbox(format("The Pokémon Graveyard lies ahead. Please be respectful.\p..."))
     speakername("Martha")
-    msgbox(format("My name? It's Martha, dear.\nI manage the graveyard.\pYou want to talk to me? Something about dreamstones? Well this will be a longer conversation, so why don't you drop by my house later?"))
+    msgbox(format("My name? It's Martha, dear.\nI manage the graveyard.\pYou want to talk to me?\nSomething about dreamstones?\pThis will be a long conversation, so why don't you drop by my house later?"))
     release
     hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right face_down))
@@ -271,7 +268,7 @@ script MirrohBaseCamp_Trainer_A{
     lockall
     faceplayer
 
-    msgbox(format("Haven't you heard? They're closing the gym here. So everyone's queueing up to get a badge before it closes.\pWanna do a warm-up battle?"), MSGBOX_YESNO)
+    msgbox(format("Haven't you heard?\pThey're closing the gym here, so everyone's queueing up to get a badge.\pWanna do a warm-up battle?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         trainerbattle_no_intro(TRAINER_MIRROHEXT_D, format("You were warmed up already!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_A)
@@ -322,7 +319,7 @@ script MirrohBaseCamp_Trainer_C{
         msgbox(format("What? If you keep looking at me like that, I'll make you pay!"))
         trainerbattle_no_intro(TRAINER_MIRROHEXT_F, format("You made me pay!"))
         setflag(FLAG_MIRROHBASECAMP_TRAINER_C)
-        msgbox(format("Grr - fine! Go inside! I bet Carona wipes the floor with you!"))
+        msgbox(format("Grr - fine! You can go first then.\nI bet Carona wipes the floor with you!"))
         release
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down face_up))
         applymovement(10, moves(walk_left *10))

@@ -334,7 +334,7 @@ script WhiteSign_MirrohBaseCamp_Gym{
 }
 
 script WhiteSign_MirrohBaseCamp_Main{
-    msgbox(format("Mirroh Base Camp\nNOW DECOMISSIONED."), MSGBOX_SIGN)
+    msgbox(format("Mirroh Base Camp\nWrapped in the hush of snow."), MSGBOX_SIGN)
     end
 }
 

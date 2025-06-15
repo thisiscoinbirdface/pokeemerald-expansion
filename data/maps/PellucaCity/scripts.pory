@@ -501,6 +501,7 @@ script PellucaCityFlooded_MainEvent{
         msgbox(format("Skip cutscene?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == 1){
             fadescreen(FADE_TO_WHITE)
+            additem(ITEM_HM03)
             special(EnterSafariMode)
             fadescreen(FADE_FROM_WHITE)
             releaseall
@@ -647,6 +648,12 @@ script PellucaCityFlooded_MainEvent_Cutscene{
     msgbox(format("And who might you be?\p...\p{PLAYER}?\p...\pI see - so that's how you got involved with these two.\pHere, take this."))
     release     
     setflag(FLAG_SYS_SURF_ENABLED)
+
+    checkitem(ITEM_HM03)
+    if (var(VAR_RESULT) == TRUE){
+        removeitem(ITEM_HM03)
+    }
+
     giveitem(ITEM_HM03)
     delay(16)
     applymovement(LOCALID_FL_JANIA, moves(face_down))   
@@ -756,6 +763,9 @@ script PellucaCityFlooded_EventScript_TimesUp{
     lockall
     msgbox(format("The tides rise higher and higher...\nit's too late!"))
     release
+
+    //remove the HM
+    removeitem(ITEM_HM03)
 
     setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
     clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
