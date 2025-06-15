@@ -2067,7 +2067,7 @@ Common_EventScript_Tauros_PellucaCity_2:
 # 1265 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_VISITED_RIVETSHORE_CITY, Common_EventScript_Tauros_PellucaCity_6
 # 1268 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_2
+	dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_2
 Common_EventScript_Tauros_PellucaCity_5:
 # 1271 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0
@@ -2121,7 +2121,7 @@ Common_EventScript_Tauros_Route6_2:
 # 1286 "data//maps/TempCopyMap/scripts.pory"
 	goto_if_set FLAG_VISITED_RIVETSHORE_CITY, Common_EventScript_Tauros_Route6_6
 # 1289 "data//maps/TempCopyMap/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_1
+	dynmultichoice 0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_Tauros_PellucaCity_Text_0, Common_EventScript_Tauros_IvyRiver_Text_1
 Common_EventScript_Tauros_Route6_5:
 # 1292 "data//maps/TempCopyMap/scripts.pory"
 	compare VAR_RESULT, 0

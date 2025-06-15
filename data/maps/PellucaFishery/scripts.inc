@@ -105,105 +105,105 @@ PellucaFishery_EventScript_MainDude::
 	delay 8
 # 85 "data//maps/PellucaFishery/scripts.pory"
 	applymovement LOCALID_S1, PellucaFishery_EventScript_MainDude_Movement_6
-# 86 "data//maps/PellucaFishery/scripts.pory"
-	speakername PellucaFishery_NPC1_Text_0
-# 87 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_6
-# 89 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_7
-# 90 "data//maps/PellucaFishery/scripts.pory"
-	speakername PellucaFishery_NPC1_Text_0
-# 91 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_7
 # 92 "data//maps/PellucaFishery/scripts.pory"
-	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_B, PellucaFishery_EventScript_MainDude_Text_8
-# 93 "data//maps/PellucaFishery/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
-# 95 "data//maps/PellucaFishery/scripts.pory"
-	delay 8
-# 96 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_8
-# 97 "data//maps/PellucaFishery/scripts.pory"
 	speakername PellucaFishery_NPC1_Text_0
+# 93 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_6
+# 95 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_7
+# 96 "data//maps/PellucaFishery/scripts.pory"
+	speakername PellucaFishery_NPC1_Text_0
+# 97 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_7
 # 98 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_9
-# 100 "data//maps/PellucaFishery/scripts.pory"
-	delay 16
-# 101 "data//maps/PellucaFishery/scripts.pory"
-	speakername PellucaFishery_EventScript_MainDude_Text_0
-# 102 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_10
-# 103 "data//maps/PellucaFishery/scripts.pory"
-	release
-# 104 "data//maps/PellucaFishery/scripts.pory"
-	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_BOSS, PellucaFishery_EventScript_MainDude_Text_11
-# 105 "data//maps/PellucaFishery/scripts.pory"
+	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_B, PellucaFishery_EventScript_MainDude_Text_8
+# 99 "data//maps/PellucaFishery/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-# 107 "data//maps/PellucaFishery/scripts.pory"
-	delay 16
-# 108 "data//maps/PellucaFishery/scripts.pory"
-	speakername PellucaFishery_EventScript_MainDude_Text_0
+# 101 "data//maps/PellucaFishery/scripts.pory"
+	delay 8
+# 102 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_8
 # 109 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_12
+	speakername PellucaFishery_NPC1_Text_0
 # 110 "data//maps/PellucaFishery/scripts.pory"
-	release
+	msgbox PellucaFishery_EventScript_MainDude_Text_9
 # 112 "data//maps/PellucaFishery/scripts.pory"
-	fadenewbgm SE_THUNDERSTORM
-# 115 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_0x8004, 2
-# 116 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_0x8005, 2
-# 117 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_0x8006, 8
-# 118 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_0x8007, 5
-# 119 "data//maps/PellucaFishery/scripts.pory"
-	special ShakeCamera
-# 120 "data//maps/PellucaFishery/scripts.pory"
-	delay 48
-# 122 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S1, PellucaFishery_EventScript_MainDude_Movement_9
-# 123 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S2, PellucaFishery_EventScript_MainDude_Movement_9
-# 124 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S3, PellucaFishery_EventScript_MainDude_Movement_9
-# 125 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_9
-# 126 "data//maps/PellucaFishery/scripts.pory"
-	applymovement LOCALID_S_MAIN, PellucaFishery_EventScript_MainDude_Movement_9
-# 127 "data//maps/PellucaFishery/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PellucaFishery_EventScript_MainDude_Movement_9
-# 128 "data//maps/PellucaFishery/scripts.pory"
-	waitmovement 0
-# 129 "data//maps/PellucaFishery/scripts.pory"
-	delay 24
-# 130 "data//maps/PellucaFishery/scripts.pory"
+	delay 16
+# 113 "data//maps/PellucaFishery/scripts.pory"
 	speakername PellucaFishery_EventScript_MainDude_Text_0
-# 131 "data//maps/PellucaFishery/scripts.pory"
-	msgbox PellucaFishery_EventScript_MainDude_Text_13
-# 132 "data//maps/PellucaFishery/scripts.pory"
+# 114 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_10
+# 115 "data//maps/PellucaFishery/scripts.pory"
 	release
+# 116 "data//maps/PellucaFishery/scripts.pory"
+	trainerbattle_no_intro TRAINER_PELLUCA_QWILSQUAD_BOSS, PellucaFishery_EventScript_MainDude_Text_11
+# 117 "data//maps/PellucaFishery/scripts.pory"
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
+# 119 "data//maps/PellucaFishery/scripts.pory"
+	delay 16
+# 120 "data//maps/PellucaFishery/scripts.pory"
+	speakername PellucaFishery_EventScript_MainDude_Text_0
+# 121 "data//maps/PellucaFishery/scripts.pory"
+	msgbox PellucaFishery_EventScript_MainDude_Text_12
+# 122 "data//maps/PellucaFishery/scripts.pory"
+	release
+# 124 "data//maps/PellucaFishery/scripts.pory"
+	fadenewbgm SE_THUNDERSTORM
+# 127 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8004, 2
+# 128 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8005, 2
+# 129 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8006, 8
+# 130 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_0x8007, 5
+# 131 "data//maps/PellucaFishery/scripts.pory"
+	special ShakeCamera
+# 132 "data//maps/PellucaFishery/scripts.pory"
+	delay 48
+# 134 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S1, PellucaFishery_EventScript_MainDude_Movement_9
 # 135 "data//maps/PellucaFishery/scripts.pory"
-	setflag FLAG_HIDE_PELLUCA_GAB
+	applymovement LOCALID_S2, PellucaFishery_EventScript_MainDude_Movement_9
+# 136 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S3, PellucaFishery_EventScript_MainDude_Movement_9
+# 137 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S4, PellucaFishery_EventScript_MainDude_Movement_9
+# 138 "data//maps/PellucaFishery/scripts.pory"
+	applymovement LOCALID_S_MAIN, PellucaFishery_EventScript_MainDude_Movement_9
 # 139 "data//maps/PellucaFishery/scripts.pory"
-	setflag FLAG_PELLUCA_REGULAR_CITIZENS
+	applymovement OBJ_EVENT_ID_PLAYER, PellucaFishery_EventScript_MainDude_Movement_9
 # 140 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZENS
+	waitmovement 0
+# 141 "data//maps/PellucaFishery/scripts.pory"
+	delay 24
 # 142 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A
+	speakername PellucaFishery_EventScript_MainDude_Text_0
 # 143 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B
+	msgbox PellucaFishery_EventScript_MainDude_Text_13
 # 144 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C
-# 145 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D
+	release
 # 147 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_PELLUCA_MAYOR_QUEST, 3
-# 148 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_PELLUCA_MAP_STATE, 1
-# 149 "data//maps/PellucaFishery/scripts.pory"
-	warp MAP_PELLUCA_CITY, 43, 28
+	setflag FLAG_HIDE_PELLUCA_GAB
+# 151 "data//maps/PellucaFishery/scripts.pory"
+	setflag FLAG_PELLUCA_REGULAR_CITIZENS
+# 152 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZENS
 # 154 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A
+# 155 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B
+# 156 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C
+# 157 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D
+# 159 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
+# 160 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_MAP_STATE, 1
+# 161 "data//maps/PellucaFishery/scripts.pory"
+	warp MAP_PELLUCA_CITY, 43, 28
+# 166 "data//maps/PellucaFishery/scripts.pory"
 	releaseall
 	end
 
@@ -295,31 +295,43 @@ PellucaFishery_EventScript_MainDude_Movement_5:
 
 # 85 "data//maps/PellucaFishery/scripts.pory"
 PellucaFishery_EventScript_MainDude_Movement_6:
-# 85 "data//maps/PellucaFishery/scripts.pory"
-	walk_left
-# 85 "data//maps/PellucaFishery/scripts.pory"
-	face_right
+# 86 "data//maps/PellucaFishery/scripts.pory"
+	lock_anim
+# 87 "data//maps/PellucaFishery/scripts.pory"
+	lock_facing_direction
+# 88 "data//maps/PellucaFishery/scripts.pory"
+	walk_faster_left
+# 89 "data//maps/PellucaFishery/scripts.pory"
+	unlock_anim
+# 90 "data//maps/PellucaFishery/scripts.pory"
+	unlock_facing_direction
 	step_end
 
-# 89 "data//maps/PellucaFishery/scripts.pory"
+# 95 "data//maps/PellucaFishery/scripts.pory"
 PellucaFishery_EventScript_MainDude_Movement_7:
-# 89 "data//maps/PellucaFishery/scripts.pory"
+# 95 "data//maps/PellucaFishery/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 96 "data//maps/PellucaFishery/scripts.pory"
+# 102 "data//maps/PellucaFishery/scripts.pory"
 PellucaFishery_EventScript_MainDude_Movement_8:
-# 96 "data//maps/PellucaFishery/scripts.pory"
-	walk_right
-# 96 "data//maps/PellucaFishery/scripts.pory"
-	face_left
+# 103 "data//maps/PellucaFishery/scripts.pory"
+	lock_anim
+# 104 "data//maps/PellucaFishery/scripts.pory"
+	lock_facing_direction
+# 105 "data//maps/PellucaFishery/scripts.pory"
+	walk_faster_right
+# 106 "data//maps/PellucaFishery/scripts.pory"
+	unlock_anim
+# 107 "data//maps/PellucaFishery/scripts.pory"
+	unlock_facing_direction
 	step_end
 
-# 122 "data//maps/PellucaFishery/scripts.pory"
+# 134 "data//maps/PellucaFishery/scripts.pory"
 PellucaFishery_EventScript_MainDude_Movement_9:
-# 122 "data//maps/PellucaFishery/scripts.pory"
+# 134 "data//maps/PellucaFishery/scripts.pory"
 	emote_exclamation_mark
-# 122 "data//maps/PellucaFishery/scripts.pory"
+# 134 "data//maps/PellucaFishery/scripts.pory"
 	jump_in_place_down
 	step_end
 
@@ -342,8 +354,8 @@ PellucaFishery_NPC2_Text_0:
 # 20 "data//maps/PellucaFishery/scripts.pory"
 	.string "The boss is actually gonna make some\n"
 	.string "real change happen around here!\p"
-	.string "But for that, we need money. That's why\n"
-	.string "we're taxing the citizens!$"
+	.string "But for that, we gotta have money.\n"
+	.string "That's why we're taxing the citizens!$"
 
 PellucaFishery_NPC3_Text_0:
 # 25 "data//maps/PellucaFishery/scripts.pory"
@@ -364,11 +376,11 @@ PellucaFishery_EventScript_MainDude_Text_1:
 
 PellucaFishery_EventScript_MainDude_Text_2:
 # 51 "data//maps/PellucaFishery/scripts.pory"
-	.string "So you're the new recruit, eh? Got a\n"
-	.string "Qwilfish and everything, do ya?\p"
+	.string "So you're the new recruit, eh?\n"
+	.string "Got a Qwilfish and everything, do ya?\p"
 	.string "...\p"
-	.string "Funny thing is, I don't remember any new\n"
-	.string "recruits signing up.$"
+	.string "Funny thing is, I don't remember any\n"
+	.string "new recruits signing up.$"
 
 PellucaFishery_EventScript_MainDude_Text_3:
 # 73 "data//maps/PellucaFishery/scripts.pory"
@@ -387,27 +399,27 @@ PellucaFishery_EventScript_MainDude_Text_5:
 	.string "I let you down, boss!$"
 
 PellucaFishery_EventScript_MainDude_Text_6:
-# 87 "data//maps/PellucaFishery/scripts.pory"
+# 93 "data//maps/PellucaFishery/scripts.pory"
 	.string "Argh! This kid is good!$"
 
 PellucaFishery_EventScript_MainDude_Text_7:
-# 91 "data//maps/PellucaFishery/scripts.pory"
+# 97 "data//maps/PellucaFishery/scripts.pory"
 	.string "S'matter with you, losing like that?\p"
 	.string "You're ruining our squad's name!\p"
-	.string "C'mon kid - you really think you can get\n"
-	.string "away with this?$"
+	.string "C'mon kid - you really think you can\n"
+	.string "get away with this?$"
 
 PellucaFishery_EventScript_MainDude_Text_8:
-# 92 "data//maps/PellucaFishery/scripts.pory"
+# 98 "data//maps/PellucaFishery/scripts.pory"
 	.string "No! I lost! Sorry, boss!$"
 
 PellucaFishery_EventScript_MainDude_Text_9:
-# 98 "data//maps/PellucaFishery/scripts.pory"
+# 110 "data//maps/PellucaFishery/scripts.pory"
 	.string "Boss! We-we can't handle this trainer.\n"
 	.string "You gotta take care of this!$"
 
 PellucaFishery_EventScript_MainDude_Text_10:
-# 102 "data//maps/PellucaFishery/scripts.pory"
+# 114 "data//maps/PellucaFishery/scripts.pory"
 	.string "...\p"
 	.string "Fine then.\p"
 	.string "I respect a strong trainer. But respect\n"
@@ -415,14 +427,14 @@ PellucaFishery_EventScript_MainDude_Text_10:
 	.string "for what you did to my boys!$"
 
 PellucaFishery_EventScript_MainDude_Text_11:
-# 104 "data//maps/PellucaFishery/scripts.pory"
+# 116 "data//maps/PellucaFishery/scripts.pory"
 	.string "Overqwil! Noo!$"
 
 PellucaFishery_EventScript_MainDude_Text_12:
-# 109 "data//maps/PellucaFishery/scripts.pory"
+# 121 "data//maps/PellucaFishery/scripts.pory"
 	.string "Argh! Fine! Fine!\p"
-	.string "I'm man enough to admit defeat. You're\n"
-	.string "strong, kid. I'll give you that.\p"
+	.string "I'm man enough to admit defeat.\n"
+	.string "You're tough, kid - I'll give you that.\p"
 	.string "What's your name?\p"
 	.string "{PLAYER}?\p"
 	.string "...\p"
@@ -435,7 +447,7 @@ PellucaFishery_EventScript_MainDude_Text_12:
 	.string "consider talking to him again.$"
 
 PellucaFishery_EventScript_MainDude_Text_13:
-# 131 "data//maps/PellucaFishery/scripts.pory"
+# 143 "data//maps/PellucaFishery/scripts.pory"
 	.string "What was that?\p"
 	.string "Boys - we gotta go outside and see\n"
 	.string "what's going on!\p"

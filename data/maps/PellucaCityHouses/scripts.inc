@@ -306,8 +306,9 @@ PellucaCityHouses_MayorQuestStart_Text_1:
 
 PellucaCityHouses_MayorQuestStart_Text_2:
 # 37 "data//maps/PellucaCityHouses/scripts.pory"
-	.string "Have you managed to do something about\n"
-	.string "the Qwilsquad yet? No?\p"
+	.string "Have you managed to do something\n"
+	.string "about the Qwilsquad yet?\p"
+	.string "No?\p"
 	.string "Sigh...I was foolish to ask a child.$"
 
 PellucaCityHouses_MayorQuestStart_Text_3:

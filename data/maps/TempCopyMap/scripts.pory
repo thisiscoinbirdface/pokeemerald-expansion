@@ -1242,9 +1242,9 @@ script Common_EventScript_Tauros_IvyRiver{
         waitmessage
 
         if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Rivetshore HQ")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Rivetshore HQ")
         } else {
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
         }
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
@@ -1263,9 +1263,9 @@ script Common_EventScript_Tauros_PellucaCity{
         waitmessage
 
         if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ", "Rivetshore HQ")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ", "Rivetshore HQ")
         } else {
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
         }        
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
@@ -1284,9 +1284,9 @@ script Common_EventScript_Tauros_Route6{
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
         if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City", "Rivetshore HQ")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City", "Rivetshore HQ")
         } else {
-            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
+            dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
         }  
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
@@ -1304,7 +1304,7 @@ script Common_EventScript_Tauros_Rivetshore{
     if (flag(FLAG_RANGER_TAUROS_USE)){
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
-        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Ivy River HQ")
+        dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Ivy River HQ")
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
         if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}  

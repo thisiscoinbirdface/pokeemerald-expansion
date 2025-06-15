@@ -46,7 +46,9 @@ script PellucaCity_EventEnd{
 	msgbox(format("Which reminds me - {PLAYER}, can you hand over your HM for a second?\pI'm going to teach my Overqwil Surf in case we ever need it for anything."))   
 	release
 	delay(8)
-	msgbox(format("{PLAYER} handed the Surf HM to the Qwilsquad Boss."), MSGBOX_SIGN)
+    playfanfare(MUS_LEVEL_UP)
+	message(format("{PLAYER} handed the Surf HM to the Qwilsquad Boss."))
+    waitfanfare
     release
     delay(16)
 
@@ -78,29 +80,47 @@ script PellucaCity_EventEnd{
     waitmovement(0)
     delay(16)   
     speakername("Mayor") 
-    msgbox(format("{PLAYER} - sorry about the HM breaking. Why don't you take this instead? It's very valuable...but not to me, since I'm not a trainer.\pIt's the least we can do for you."))   
+    msgbox(format("{PLAYER} - we're sorry about the HM.\nWhy don't you take this instead?\lIt's very valuable...but not to me,\lsince I'm not a trainer.\pIt's the least we can do for you."))   
 	release
 	giveitem(ITEM_MEGA_RING)
 	release
 
+	applymovement(LOCALID_QWIL, moves(jump_in_place_down)) 
+    waitmovement(0)
+    delay(16)   
     speakername("Q-squad Boss") 
     msgbox(format("This flooding has woken us up, {PLAYER}. Infighting and bullying will get us nowhere."))
     release
     delay(16)	
+	applymovement(LOCALID_MAYOR, moves(jump_in_place_down)) 
+    waitmovement(0)
+    delay(16)       
     speakername("Mayor") 
     msgbox(format("And neither will laziness and inaction.\pWe're going to work together..."))
     release
     delay(16)	
+	applymovement(LOCALID_QWIL, moves(jump_in_place_down)) 
+    waitmovement(0)
+    delay(16)       
     speakername("Q-squad Boss") 
-    msgbox(format("...the Mayor will actively enact some new policies..."))
+    msgbox(format("...the Mayor will actively enact some\nnew policies..."))
     release
     delay(16)	
+	applymovement(LOCALID_MAYOR, moves(jump_in_place_down)) 
+    waitmovement(0)
     speakername("Mayor") 
     msgbox(format("...and the Qwilsquad will start doing things by the book.\pYou won't recognise Pelluca City the next time you visit - we promise!"))
     release
-    delay(16)	
+	applymovement(LOCALID_QWIL, moves(jump_in_place_down)) 
+    waitmovement(0)
+    delay(16)
     speakername("Q-squad Boss") 
-    msgbox(format("So where are you headed to next, {PLAYER}?\p...\pTeam Somber, eh? One of my boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are.\nIf I were you, I'd be extra careful!"))
+    msgbox(format("So where are you headed to next, {PLAYER}?\p..."))
+	applymovement(LOCALID_QWIL, moves(emote_exclamation_mark jump_in_place_down)) 
+    waitmovement(0)
+    delay(24)
+    speakername("Q-squad Boss") 
+    msgbox(format("Team Somber, eh?\pMy boys told me about 'em. Something about an operation up in Mt. Mirroh.\pThey're rotten to the core, they are.\nIf I were you, I'd be extra careful!"))
     release
     delay(16)	
 

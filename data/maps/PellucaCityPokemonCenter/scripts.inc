@@ -80,218 +80,258 @@ PellucaCity_EventEnd::
 # 48 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 8
 # 49 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_6, MSGBOX_SIGN
+	playfanfare MUS_LEVEL_UP
 # 50 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
+	message PellucaCity_EventEnd_Text_6
 # 51 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
+	waitfanfare
+# 52 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	release
 # 53 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_0
-# 54 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_7
+	delay 16
 # 55 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
-# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_3
-# 57 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	waitmovement 0
-# 58 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
-# 59 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_2
-# 60 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_8
-# 61 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
-# 62 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	playse SE_M_BRICK_BREAK
-# 63 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_9, MSGBOX_SIGN
-# 64 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
-# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_4
-# 66 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	waitmovement 0
-# 67 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
-# 68 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	speakername PellucaCity_EventEnd_Text_0
-# 69 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_10
-# 70 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_7
+# 57 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
-# 71 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
-# 72 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_5
-# 73 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_2
-# 74 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_11
-# 75 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
-# 76 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
-# 77 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_6
-# 78 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 58 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_3
+# 59 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	waitmovement 0
-# 79 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 60 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 16
-# 80 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 61 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	speakername PellucaCity_EventEnd_Text_2
-# 81 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_12
-# 82 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 62 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_8
+# 63 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
+# 64 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	playse SE_M_BRICK_BREAK
+# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_9, MSGBOX_SIGN
+# 66 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	release
+# 67 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_4
+# 68 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
+# 69 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 70 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	speakername PellucaCity_EventEnd_Text_0
+# 71 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_10
+# 72 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	release
+# 73 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 74 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_5
+# 75 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	speakername PellucaCity_EventEnd_Text_2
+# 76 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_11
+# 77 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	release
+# 78 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 79 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_6
+# 80 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
+# 81 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 82 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	speakername PellucaCity_EventEnd_Text_2
 # 83 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	giveitem ITEM_MEGA_RING
+	msgbox PellucaCity_EventEnd_Text_12
 # 84 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
+# 85 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	giveitem ITEM_MEGA_RING
 # 86 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_0
-# 87 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_13
+	release
 # 88 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_7
 # 89 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	delay 16
+	waitmovement 0
 # 90 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_2
-# 91 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_14
-# 92 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
-# 93 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 16
-# 94 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 91 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	speakername PellucaCity_EventEnd_Text_0
-# 95 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_15
-# 96 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 92 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_13
+# 93 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
+# 94 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 95 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_7
+# 96 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
 # 97 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 16
 # 98 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	speakername PellucaCity_EventEnd_Text_2
 # 99 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_16
+	msgbox PellucaCity_EventEnd_Text_14
 # 100 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
 # 101 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 16
 # 102 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	speakername PellucaCity_EventEnd_Text_0
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_7
 # 103 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	msgbox PellucaCity_EventEnd_Text_17
+	waitmovement 0
 # 104 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	release
+	delay 16
 # 105 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	speakername PellucaCity_EventEnd_Text_0
+# 106 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	msgbox PellucaCity_EventEnd_Text_15
+# 107 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	release
+# 108 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	delay 16
 # 109 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_7
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_7
 # 110 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_8
+	waitmovement 0
 # 111 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	waitmovement 0
+	speakername PellucaCity_EventEnd_Text_2
 # 112 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	removeobject LOCALID_MAYOR
+	msgbox PellucaCity_EventEnd_Text_16
 # 113 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_9
+	release
 # 114 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_7
 # 115 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	removeobject LOCALID_QWIL
+	waitmovement 0
+# 116 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 117 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	speakername PellucaCity_EventEnd_Text_0
 # 118 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	clearflag FLAG_SYS_SURF_ENABLED
+	msgbox PellucaCity_EventEnd_Text_17
 # 119 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	removeitem ITEM_HM03
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_4
+# 120 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
+# 121 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 24
 # 122 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	setvar VAR_PELLUCA_MAYOR_QUEST, 10
+	speakername PellucaCity_EventEnd_Text_0
 # 123 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	setflag FLAG_PELLUCA_PC_CHARS
+	msgbox PellucaCity_EventEnd_Text_18
 # 124 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	setflag FLAG_PELLUCA_QUEST_END
+	release
 # 125 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	delay 16
+# 129 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_8
+# 130 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_MAYOR, PellucaCity_EventEnd_Movement_9
+# 131 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
+# 132 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	removeobject LOCALID_MAYOR
+# 133 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	applymovement LOCALID_QWIL, PellucaCity_EventEnd_Movement_10
+# 134 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	waitmovement 0
+# 135 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	removeobject LOCALID_QWIL
+# 138 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	clearflag FLAG_SYS_SURF_ENABLED
+# 139 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	removeitem ITEM_HM03
+# 142 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	setvar VAR_PELLUCA_MAYOR_QUEST, 10
+# 143 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	setflag FLAG_PELLUCA_PC_CHARS
+# 144 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	setflag FLAG_PELLUCA_QUEST_END
+# 145 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	completequest QUEST_PELLUCA_CITY
-# 127 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 147 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	releaseall
 	end
 
 
 PellucaCity_PokemonCenter_OnTransition::
-# 143 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	setrespawn HEAL_LOCATION_PELLUCA_CITY
 	return
 
 
 PellucaCity_PokemonCenter_EventScript_Nurse::
-# 147 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 167 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	lockall
-# 148 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 168 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	setvar VAR_0x800B, 1
-# 149 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 169 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
-# 150 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 170 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	waitmessage
-# 151 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 171 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	releaseall
 	return
 
 
 PellucaCity_PokemonCenter_NPC1::
-# 160 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 180 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	lockall
-# 161 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 181 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	faceplayer
-# 162 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 182 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	showmonpic SPECIES_QWILFISH_HISUI, 10, 3
-# 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_NPC1_Text_0
-# 164 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 184 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	release
-# 165 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 185 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	hidemonpic
-# 167 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 187 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_NPC1_Text_1, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_NPC2::
-# 171 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 191 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_NPC2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse1::
-# 180 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 200 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse1_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse2::
-# 184 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 204 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse2_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse3::
-# 188 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 208 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse3_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Nurse4::
-# 192 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 212 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Nurse4_Text_0, MSGBOX_NPC
 	end
 
 
 PellucaCity_PokemonCenter_Chansey::
-# 196 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 216 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-# 197 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 217 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	msgbox PellucaCity_PokemonCenter_Chansey_Text_0, MSGBOX_NPC
 	end
 
@@ -314,57 +354,63 @@ PellucaCity_EventEnd_Movement_2:
 	emote_question_mark
 	step_end
 
-# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 58 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_3:
-# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 58 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	emote_exclamation_mark
-# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 58 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	face_right
 	step_end
 
-# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 67 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_4:
-# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 67 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	emote_exclamation_mark
-# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 67 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 72 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 74 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_5:
-# 72 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 74 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 77 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 79 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_6:
-# 77 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 79 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	face_down
 	step_end
 
-# 109 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 88 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_7:
-# 109 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	walk_left
-# 109 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	walk_down
-# 109 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	walk_down
+# 88 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	jump_in_place_down
 	step_end
 
-# 110 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 129 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_8:
-# 110 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 129 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	walk_left
+# 129 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	walk_down
-# 110 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	walk_down
-# 110 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 129 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	walk_down
 	step_end
 
-# 113 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 130 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 PellucaCity_EventEnd_Movement_9:
-# 113 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 130 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	walk_down
+# 130 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	walk_down
+# 130 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	walk_down
+	step_end
+
+# 133 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+PellucaCity_EventEnd_Movement_10:
+# 133 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	walk_down
 	step_end
 
@@ -399,25 +445,25 @@ PellucaCity_EventEnd_Text_5:
 	.string "case we ever need it for anything.$"
 
 PellucaCity_EventEnd_Text_6:
-# 49 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 50 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "{PLAYER} handed the Surf HM to the\n"
 	.string "Qwilsquad Boss.$"
 
 PellucaCity_EventEnd_Text_7:
-# 54 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 56 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Oh yeah! Now with this -$"
 
 PellucaCity_EventEnd_Text_8:
-# 60 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 62 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "No, you - no, be careful -$"
 
 PellucaCity_EventEnd_Text_9:
-# 63 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 65 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "The HM snapped into two pieces in the\n"
 	.string "Qwilsquad Boss' hand!$"
 
 PellucaCity_EventEnd_Text_10:
-# 69 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 71 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Ack! I'm sorry, {PLAYER}! My hands are\n"
 	.string "too rough for such a fragile disk.\p"
 	.string "I don't have a copy myself or I'd give\n"
@@ -425,94 +471,97 @@ PellucaCity_EventEnd_Text_10:
 	.string "something I can repay you with!$"
 
 PellucaCity_EventEnd_Text_11:
-# 74 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 76 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Let me - on your behalf.$"
 
 PellucaCity_EventEnd_Text_12:
-# 81 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	.string "{PLAYER} - sorry about the HM\n"
-	.string "breaking. Why don't you take this\l"
-	.string "instead? It's very valuable...but not to\l"
-	.string "me, since I'm not a trainer.\p"
+# 83 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	.string "{PLAYER} - we're sorry about the HM.\n"
+	.string "Why don't you take this instead?\l"
+	.string "It's very valuable...but not to me,\l"
+	.string "since I'm not a trainer.\p"
 	.string "It's the least we can do for you.$"
 
 PellucaCity_EventEnd_Text_13:
-# 87 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 92 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "This flooding has woken us up,\n"
 	.string "{PLAYER}. Infighting and bullying will\l"
 	.string "get us nowhere.$"
 
 PellucaCity_EventEnd_Text_14:
-# 91 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 99 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "And neither will laziness and inaction.\p"
 	.string "We're going to work together...$"
 
 PellucaCity_EventEnd_Text_15:
-# 95 "data//maps/PellucaCityPokemonCenter/scripts.pory"
-	.string "...the Mayor will actively enact some new\n"
-	.string "policies...$"
+# 106 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	.string "...the Mayor will actively enact some\n"
+	.string "new policies...$"
 
 PellucaCity_EventEnd_Text_16:
-# 99 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 112 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "...and the Qwilsquad will start doing\n"
 	.string "things by the book.\p"
 	.string "You won't recognise Pelluca City the\n"
 	.string "next time you visit - we promise!$"
 
 PellucaCity_EventEnd_Text_17:
-# 103 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 118 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "So where are you headed to next,\n"
 	.string "{PLAYER}?\p"
-	.string "...\p"
-	.string "Team Somber, eh? One of my boys told me\n"
-	.string "about 'em. Something about an operation\l"
-	.string "up in Mt. Mirroh.\p"
+	.string "...$"
+
+PellucaCity_EventEnd_Text_18:
+# 123 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+	.string "Team Somber, eh?\p"
+	.string "My boys told me about 'em. Something\n"
+	.string "about an operation up in Mt. Mirroh.\p"
 	.string "They're rotten to the core, they are.\n"
 	.string "If I were you, I'd be extra careful!$"
 
 PellucaCity_PokemonCenter_NPC1_Text_0:
-# 163 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 183 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "The signature of the Qwilsquad is their\n"
 	.string "Qwilfish! You need a Qwilfish to join the\l"
 	.string "squad!$"
 
 PellucaCity_PokemonCenter_NPC1_Text_1:
-# 167 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 187 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Apparently the spikes represent their\n"
 	.string "passion or something.$"
 
 PellucaCity_PokemonCenter_NPC2_Text_0:
-# 171 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 191 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "They're closing the gym in Mirroh Base\n"
 	.string "Camp! I need to go and get the badge,\l"
 	.string "but the Qwilsquad grunt outside won't\l"
 	.string "let me.$"
 
 PellucaCity_PokemonCenter_Nurse1_Text_0:
-# 180 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 200 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "We've had enough of the Heal Pass\n"
 	.string "system. We're unionising!$"
 
 PellucaCity_PokemonCenter_Nurse2_Text_0:
-# 184 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 204 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Down with Heal Passes! Or at least\n"
 	.string "station us in decent spots!$"
 
 PellucaCity_PokemonCenter_Nurse3_Text_0:
-# 188 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 208 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "We've all got it bad, but the worst is\n"
 	.string "the nurse up in Winterlily Hollow!\p"
 	.string "I'm going up there with these Chanseys\n"
 	.string "to help her out.$"
 
 PellucaCity_PokemonCenter_Nurse4_Text_0:
-# 192 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 212 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "The nurse in Winterlily Hollow requested\n"
 	.string "for some extra help. Since the\l"
 	.string "higher-ups don't care, we're going to\l"
 	.string "look out for our sisters!$"
 
 PellucaCity_PokemonCenter_Chansey_Text_0:
-# 197 "data//maps/PellucaCityPokemonCenter/scripts.pory"
+# 217 "data//maps/PellucaCityPokemonCenter/scripts.pory"
 	.string "Seeyyy!!\p"
 	.string "Chansey wants to unionise too!$"

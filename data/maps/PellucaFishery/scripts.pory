@@ -17,7 +17,7 @@ script PellucaFishery_NPC1{
 }
 script PellucaFishery_NPC2{
     speakername("Q-squad Grunt")
-    msgbox(format("The boss is actually gonna make some real change happen around here!\pBut for that, we need money. That's why we're taxing the citizens!"), MSGBOX_NPC)
+    msgbox(format("The boss is actually gonna make some real change happen around here!\pBut for that, we gotta have money.\nThat's why we're taxing the citizens!"), MSGBOX_NPC)
     end
 }
 script PellucaFishery_NPC3{
@@ -48,7 +48,7 @@ script PellucaFishery_EventScript_MainDude{
     faceplayer
 
     speakername("Q-squad Boss")
-    msgbox(format("So you're the new recruit, eh? Got a Qwilfish and everything, do ya?\p...\pFunny thing is, I don't remember any new recruits signing up."))
+    msgbox(format("So you're the new recruit, eh?\nGot a Qwilfish and everything, do ya?\p...\pFunny thing is, I don't remember any\nnew recruits signing up."))
     release
 
     fadenewbgm(MUS_ENCOUNTER_AQUA)
@@ -82,18 +82,30 @@ script PellucaFishery_EventScript_MainDude{
     playbgm(MUS_ENCOUNTER_AQUA, FALSE)   
     
     delay(8)
-    applymovement(LOCALID_S1, moves(walk_left face_right))    
+    applymovement(LOCALID_S1, moves(
+        lock_anim
+        lock_facing_direction
+        walk_faster_left
+        unlock_anim
+        unlock_facing_direction
+    ))  
     speakername("Q-squad Grunt")
     msgbox(format("Argh! This kid is good!"))    
 
     applymovement(LOCALID_S4, moves(jump_in_place_left))    
     speakername("Q-squad Grunt")
-    msgbox(format("S'matter with you, losing like that?\pYou're ruining our squad's name!\pC'mon kid - you really think you can get away with this?"))    
+    msgbox(format("S'matter with you, losing like that?\pYou're ruining our squad's name!\pC'mon kid - you really think you can\nget away with this?"))    
     trainerbattle_no_intro(TRAINER_PELLUCA_QWILSQUAD_B, format("No! I lost! Sorry, boss!"))
     playbgm(MUS_ENCOUNTER_AQUA, FALSE)  
     
     delay(8)
-    applymovement(LOCALID_S4, moves(walk_right face_left))    
+    applymovement(LOCALID_S4, moves(
+        lock_anim
+        lock_facing_direction
+        walk_faster_right
+        unlock_anim
+        unlock_facing_direction
+    ))  
     speakername("Q-squad Grunt")
     msgbox(format("Boss! We-we can't handle this trainer. You gotta take care of this!"))    
 
@@ -106,7 +118,7 @@ script PellucaFishery_EventScript_MainDude{
 
     delay(16)
     speakername("Q-squad Boss")
-    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat. You're strong, kid. I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
+    msgbox(format("Argh! Fine! Fine!\pI'm man enough to admit defeat.\nYou're tough, kid - I'll give you that.\pWhat's your name?\p{PLAYER}?\p...\pThe mayor sent you? Why are you even listening to that blundering idiot?\pHe's totally useless! That's why I decided to step in. Pelluca City is my home - it's all our homes!\pBut if you say so, I'm willing to consider talking to him again."))
     release    
 
     fadenewbgm(SE_THUNDERSTORM)

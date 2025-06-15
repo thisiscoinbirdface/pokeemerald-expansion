@@ -230,7 +230,7 @@ script PellucaCity_Sailor_Entrance{
 script PellucaCity_Sailor_Multichoice{
     message(format("Only Qwilsquad members can enter!"))
     waitmessage
-    dynmultichoice(0,0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, "What's a Qwilsquad?", "I'm a member!", "Okay...")
+    dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "What's a Qwilsquad?", "I'm a member!", "Okay...")
 
     if (var(VAR_RESULT) == 0){goto(PellucaCity_Sailor_QwilsquadExplanation)}
     if (var(VAR_RESULT) == 1){goto(PellucaCity_Sailor_MemberCheck)}    
@@ -240,12 +240,12 @@ script PellucaCity_Sailor_Multichoice{
 }
 script PellucaCity_Sailor_QwilsquadExplanation{
     speakername("Q-squad Grunt")
-    msgbox(format("You interested in joining or something, kid? The Qwilsquad is all about trust and brotherhood. You gotta have each other's backs! And you gotta have a Qwilfish of course.\pWe're from Pelluca, but we went down to Rivetshore to sail. Now we're back, and we're not happy with how the mayor is bungling his job! So we're taking matters into our own hands."))
+    msgbox(format("You interested in joining, kid?\nThe Qwilsquad is all about trust and brotherhood. In the Qwilsquad, you gotta have each other's backs!\pAnd you gotta be the proud trainer\nof a Qwilfish of course.\pWe're from Pelluca, but we went down to Rivetshore to sail. Now we're back, and we're not happy with how the mayor is bungling his job! So we're taking matters into our own hands."))
     goto(PellucaCity_Sailor_Multichoice)
 }
 script PellucaCity_Sailor_MemberCheck{
     speakername("Q-squad Grunt")
-    msgbox(format("Heh? A pipsqueak like you is in the squad? You a new member or something? You got any proof?"), MSGBOX_YESNO)
+    msgbox(format("A pipsqueak like you is in the squad?\nYou a new member? Got any proof?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
         speakername("Q-squad Grunt")
@@ -280,7 +280,7 @@ script PellucaCity_Sailor_MemberAccepted{
     applymovement(LOCALID_S_ENTRANCE, moves(emote_exclamation_mark))
     delay(16)    
     speakername("Q-squad Grunt")
-    msgbox(format("Now that's what I'm talking about! You're one of us, kid. Go on, get inside!"))      
+    msgbox(format("Now that's what I'm talking about! You're one of us, kid.\pGo on, get inside!"))      
     release
 
     opendoor(3, 42)
@@ -420,7 +420,7 @@ script PellucaCityFlooded_SaveCitizen_A{
 script PellucaCityFlooded_SaveCitizen_B{
     lockall
     faceplayer
-    msgbox(format("I can't stay afloat any more!\p...\pJust in time!"))
+    msgbox(format("I can't stay afloat any more!\p...\pYou came just in time!"))
     release
         //move citizen
         specialvar(VAR_RESULT, GetPlayerFacingDirection)
@@ -644,7 +644,7 @@ script PellucaCityFlooded_MainEvent_Cutscene{
     waitmovement(0)
     delay(16)
     speakername("Jania")
-    msgbox(format("And who might you be?\p...\p{PLAYER}?\p...\pI see. So that's how you got involved with these two.\pHere, take this."))
+    msgbox(format("And who might you be?\p...\p{PLAYER}?\p...\pI see - so that's how you got involved with these two.\pHere, take this."))
     release     
     setflag(FLAG_SYS_SURF_ENABLED)
     giveitem(ITEM_HM03)
@@ -810,7 +810,7 @@ script PellucaCityFlooded_Complete_Trigger{
 
     //you saved everyone
     speakername("Mayor") 
-    msgbox(format("Finally! Thank you {PLAYER}. You did us - the city of Pelluca - a great service. You're a hero!"))   
+    msgbox(format("Finally! Thank you {PLAYER}. You did us - all of us - a great service.\pYou're a hero!"))   
     release
     delay(16)
 
@@ -1241,10 +1241,10 @@ script PellucaCity_NPC11{
         end
     }
     
-    msgbox(format("The Pelluca Gym is across the water...when I was younger, I tried to challenge Jania many times, but I could never win. She was my classmate, you know? We grew up in Galecrest City together. She went on to become a big Gym Leader and I moved here too, with a regular family and a regular job. Whenever I look off at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
+    msgbox(format("The Pelluca Gym is across the water...\nwhen I was younger, I tried to challenge Jania many times, but I could never win.\pShe was my classmate, you know?\nWe grew up in Galecrest City together.\nShe went on to become a big Gym Leader and I moved here too, with a regular family and a regular job.\pWhenever I look at the gym, I wonder...\pI don't battle anymore. Maybe you might like to use this."), MSGBOX_NPC)
     giveitem(ITEM_TM31)
     setflag(FLAG_PELLUCA_CITY_TM_GIVER)
-    msgbox(format("It's time for me to let go."), MSGBOX_NPC)
+    msgbox(format("It's time for me to pass the baton\nto someone young and hungry.\pDon't give up on your dreams!"), MSGBOX_NPC)
     end
 }
 

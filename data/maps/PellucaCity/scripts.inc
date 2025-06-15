@@ -349,7 +349,7 @@ PellucaCity_Sailor_Multichoice::
 # 232 "data//maps/PellucaCity/scripts.pory"
 	waitmessage
 # 233 "data//maps/PellucaCity/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 4, 0, DYN_MULTICHOICE_CB_NONE, PellucaCity_Sailor_Multichoice_Text_1, PellucaCity_Sailor_Multichoice_Text_2, PellucaCity_Sailor_Multichoice_Text_3
+	dynmultichoice 0, 0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, PellucaCity_Sailor_Multichoice_Text_1, PellucaCity_Sailor_Multichoice_Text_2, PellucaCity_Sailor_Multichoice_Text_3
 # 235 "data//maps/PellucaCity/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PellucaCity_Sailor_Multichoice_2
@@ -2864,11 +2864,12 @@ PellucaCity_Sailor_Multichoice_Text_3:
 
 PellucaCity_Sailor_QwilsquadExplanation_Text_0:
 # 243 "data//maps/PellucaCity/scripts.pory"
-	.string "You interested in joining or something,\n"
-	.string "kid? The Qwilsquad is all about trust\l"
-	.string "and brotherhood. You gotta have each\l"
-	.string "other's backs! And you gotta have a\l"
-	.string "Qwilfish of course.\p"
+	.string "You interested in joining, kid?\n"
+	.string "The Qwilsquad is all about trust and\l"
+	.string "brotherhood. In the Qwilsquad, you\l"
+	.string "gotta have each other's backs!\p"
+	.string "And you gotta be the proud trainer\n"
+	.string "of a Qwilfish of course.\p"
 	.string "We're from Pelluca, but we went down to\n"
 	.string "Rivetshore to sail. Now we're back, and\l"
 	.string "we're not happy with how the mayor is\l"
@@ -2877,9 +2878,8 @@ PellucaCity_Sailor_QwilsquadExplanation_Text_0:
 
 PellucaCity_Sailor_MemberCheck_Text_0:
 # 248 "data//maps/PellucaCity/scripts.pory"
-	.string "Heh? A pipsqueak like you is in the\n"
-	.string "squad? You a new member or something?\l"
-	.string "You got any proof?$"
+	.string "A pipsqueak like you is in the squad?\n"
+	.string "You a new member? Got any proof?$"
 
 PellucaCity_Sailor_MemberCheck_Text_1:
 # 252 "data//maps/PellucaCity/scripts.pory"
@@ -2897,7 +2897,8 @@ PellucaCity_Sailor_MemberCheck_Text_3:
 PellucaCity_Sailor_MemberAccepted_Text_0:
 # 283 "data//maps/PellucaCity/scripts.pory"
 	.string "Now that's what I'm talking about!\n"
-	.string "You're one of us, kid. Go on, get inside!$"
+	.string "You're one of us, kid.\p"
+	.string "Go on, get inside!$"
 
 PellucaCity_Blocker_Text_0:
 # 311 "data//maps/PellucaCity/scripts.pory"
@@ -2921,7 +2922,7 @@ PellucaCityFlooded_SaveCitizen_B_Text_0:
 # 423 "data//maps/PellucaCity/scripts.pory"
 	.string "I can't stay afloat any more!\p"
 	.string "...\p"
-	.string "Just in time!$"
+	.string "You came just in time!$"
 
 PellucaCityFlooded_SaveCitizen_C_Text_0:
 # 447 "data//maps/PellucaCity/scripts.pory"
@@ -3046,7 +3047,7 @@ PellucaCityFlooded_MainEvent_Cutscene_Text_20:
 	.string "...\p"
 	.string "{PLAYER}?\p"
 	.string "...\p"
-	.string "I see. So that's how you got involved\n"
+	.string "I see - so that's how you got involved\n"
 	.string "with these two.\p"
 	.string "Here, take this.$"
 
@@ -3170,8 +3171,8 @@ PellucaCityFlooded_Complete_Trigger_Text_0:
 PellucaCityFlooded_Complete_Trigger_Text_1:
 # 813 "data//maps/PellucaCity/scripts.pory"
 	.string "Finally! Thank you {PLAYER}. You did\n"
-	.string "us - the city of Pelluca - a great\l"
-	.string "service. You're a hero!$"
+	.string "us - all of us - a great service.\p"
+	.string "You're a hero!$"
 
 PellucaCityFlooded_Complete_Trigger_Text_2:
 # 833 "data//maps/PellucaCity/scripts.pory"
@@ -3418,22 +3419,23 @@ PellucaCity_NPC11_Text_0:
 
 PellucaCity_NPC11_Text_1:
 # 1244 "data//maps/PellucaCity/scripts.pory"
-	.string "The Pelluca Gym is across the\n"
-	.string "water...when I was younger, I tried to\l"
-	.string "challenge Jania many times, but I could\l"
-	.string "never win. She was my classmate, you\l"
-	.string "know? We grew up in Galecrest City\l"
-	.string "together. She went on to become a big\l"
-	.string "Gym Leader and I moved here too, with a\l"
-	.string "regular family and a regular job.\l"
-	.string "Whenever I look off at the gym, I\l"
-	.string "wonder...\p"
+	.string "The Pelluca Gym is across the water...\n"
+	.string "when I was younger, I tried to challenge\l"
+	.string "Jania many times, but I could never win.\p"
+	.string "She was my classmate, you know?\n"
+	.string "We grew up in Galecrest City together.\n"
+	.string "She went on to become a big Gym Leader\l"
+	.string "and I moved here too, with a regular\l"
+	.string "family and a regular job.\p"
+	.string "Whenever I look at the gym, I wonder...\p"
 	.string "I don't battle anymore. Maybe you might\n"
 	.string "like to use this.$"
 
 PellucaCity_NPC11_Text_2:
 # 1247 "data//maps/PellucaCity/scripts.pory"
-	.string "It's time for me to let go.$"
+	.string "It's time for me to pass the baton\n"
+	.string "to someone young and hungry.\p"
+	.string "Don't give up on your dreams!$"
 
 PellucaCity_NPC12_Text_0:
 # 1253 "data//maps/PellucaCity/scripts.pory"
