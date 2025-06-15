@@ -2,7 +2,7 @@
   "id": "MAP_CHAMPIONSHIP_MUSEUM",
   "name": "Championship_Museum",
   "layout": "LAYOUT_CHAMPIONSHIP_MUSEUM",
-  "music": "MUS_DUMMY",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_VICTORY_CAPE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

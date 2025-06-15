@@ -247,7 +247,7 @@ MirrohBaseCamp_Martha_OfferMegaStone::
 # 155 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmessage
 # 156 "data//maps/MirrohBaseCamp/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, MirrohBaseCamp_Martha_OfferMegaStone_Text_1, MirrohBaseCamp_Martha_OfferMegaStone_Text_2, MirrohBaseCamp_Martha_OfferMegaStone_Text_3, MirrohBaseCamp_Martha_OfferMegaStone_Text_4, MirrohBaseCamp_Martha_OfferMegaStone_Text_5, MirrohBaseCamp_Martha_OfferMegaStone_Text_6, MirrohBaseCamp_Martha_OfferMegaStone_Text_7, MirrohBaseCamp_Martha_OfferMegaStone_Text_8, MirrohBaseCamp_Martha_OfferMegaStone_Text_9, MirrohBaseCamp_Martha_OfferMegaStone_Text_10, MirrohBaseCamp_Martha_OfferMegaStone_Text_11, MirrohBaseCamp_Martha_OfferMegaStone_Text_12, MirrohBaseCamp_Martha_OfferMegaStone_Text_13, MirrohBaseCamp_Martha_OfferMegaStone_Text_14, MirrohBaseCamp_Martha_OfferMegaStone_Text_15, MirrohBaseCamp_Martha_OfferMegaStone_Text_16, MirrohBaseCamp_Martha_OfferMegaStone_Text_17, MirrohBaseCamp_Martha_OfferMegaStone_Text_18, MirrohBaseCamp_Martha_OfferMegaStone_Text_19
+	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, MirrohBaseCamp_Martha_OfferMegaStone_Text_1, MirrohBaseCamp_Martha_OfferMegaStone_Text_2, MirrohBaseCamp_Martha_OfferMegaStone_Text_3, MirrohBaseCamp_Martha_OfferMegaStone_Text_4, MirrohBaseCamp_Martha_OfferMegaStone_Text_5, MirrohBaseCamp_Martha_OfferMegaStone_Text_6, MirrohBaseCamp_Martha_OfferMegaStone_Text_7, MirrohBaseCamp_Martha_OfferMegaStone_Text_8, MirrohBaseCamp_Martha_OfferMegaStone_Text_9, MirrohBaseCamp_Martha_OfferMegaStone_Text_10, MirrohBaseCamp_Martha_OfferMegaStone_Text_11, MirrohBaseCamp_Martha_OfferMegaStone_Text_12, MirrohBaseCamp_Martha_OfferMegaStone_Text_13, MirrohBaseCamp_Martha_OfferMegaStone_Text_14, MirrohBaseCamp_Martha_OfferMegaStone_Text_15, MirrohBaseCamp_Martha_OfferMegaStone_Text_16, MirrohBaseCamp_Martha_OfferMegaStone_Text_17, MirrohBaseCamp_Martha_OfferMegaStone_Text_18
 # 163 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MirrohBaseCamp_Martha_OfferMegaStone_2
@@ -318,11 +318,7 @@ MirrohBaseCamp_Martha_OfferMegaStone_46:
 MirrohBaseCamp_Martha_OfferMegaStone_49:
 # 180 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 17
-	goto_if_eq MirrohBaseCamp_Martha_OfferMegaStone_53
-MirrohBaseCamp_Martha_OfferMegaStone_52:
-# 181 "data//maps/MirrohBaseCamp/scripts.pory"
-	compare VAR_RESULT, 18
-	goto_if_eq MirrohBaseCamp_Martha_OfferMegaStone_55
+	goto_if_eq MirrohBaseCamp_Martha_OfferMegaStone_52
 	return
 
 MirrohBaseCamp_Martha_OfferMegaStone_2:
@@ -362,7 +358,7 @@ MirrohBaseCamp_Martha_OfferMegaStone_14:
 
 MirrohBaseCamp_Martha_OfferMegaStone_17:
 # 168 "data//maps/MirrohBaseCamp/scripts.pory"
-	setvar VAR_0x8006, ITEM_ABOMASITE
+	setvar VAR_0x8006, ITEM_AMPHAROSITE
 # 168 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto MirrohBaseCamp_Martha_GiveMegaStone
 	goto MirrohBaseCamp_Martha_OfferMegaStone_16
@@ -444,107 +440,100 @@ MirrohBaseCamp_Martha_OfferMegaStone_50:
 	goto MirrohBaseCamp_Martha_GiveMegaStone
 	goto MirrohBaseCamp_Martha_OfferMegaStone_49
 
-MirrohBaseCamp_Martha_OfferMegaStone_53:
+MirrohBaseCamp_Martha_OfferMegaStone_52:
 # 180 "data//maps/MirrohBaseCamp/scripts.pory"
 	setvar VAR_0x8006, ITEM_ABSOLITE
 # 180 "data//maps/MirrohBaseCamp/scripts.pory"
-	goto MirrohBaseCamp_Martha_GiveMegaStone
-	goto MirrohBaseCamp_Martha_OfferMegaStone_52
-
-MirrohBaseCamp_Martha_OfferMegaStone_55:
-# 181 "data//maps/MirrohBaseCamp/scripts.pory"
-	setvar VAR_0x8006, ITEM_LUCARIONITE
-# 181 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto MirrohBaseCamp_Martha_GiveMegaStone
 	return
 
 
 MirrohBaseCamp_Martha_GiveMegaStone::
-# 185 "data//maps/MirrohBaseCamp/scripts.pory"
+# 184 "data//maps/MirrohBaseCamp/scripts.pory"
 	showitemdescription
-# 186 "data//maps/MirrohBaseCamp/scripts.pory"
+# 185 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Martha_GiveMegaStone_Text_0, MSGBOX_YESNO
-# 187 "data//maps/MirrohBaseCamp/scripts.pory"
+# 186 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Martha_GiveMegaStone_1
-# 192 "data//maps/MirrohBaseCamp/scripts.pory"
+# 191 "data//maps/MirrohBaseCamp/scripts.pory"
 	hideitemdescription
-# 193 "data//maps/MirrohBaseCamp/scripts.pory"
+# 192 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto MirrohBaseCamp_Martha_OfferMegaStone
 	return
 
 MirrohBaseCamp_Martha_GiveMegaStone_1:
-# 188 "data//maps/MirrohBaseCamp/scripts.pory"
+# 187 "data//maps/MirrohBaseCamp/scripts.pory"
 	hideitemdescription
-# 189 "data//maps/MirrohBaseCamp/scripts.pory"
+# 188 "data//maps/MirrohBaseCamp/scripts.pory"
 	giveitem VAR_0x8006
-# 190 "data//maps/MirrohBaseCamp/scripts.pory"
+# 189 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto MirrohBaseCamp_Martha_End
 	return
 
 
 MirrohBaseCamp_Martha_End::
-# 199 "data//maps/MirrohBaseCamp/scripts.pory"
+# 198 "data//maps/MirrohBaseCamp/scripts.pory"
 	speakername MirrohBaseCamp_EventScript_NPC2_Text_2
-# 200 "data//maps/MirrohBaseCamp/scripts.pory"
+# 199 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Martha_End_Text_0
-# 201 "data//maps/MirrohBaseCamp/scripts.pory"
+# 200 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement LOCALID_MARTHA, MirrohBaseCamp_Martha_End_Movement_0
-# 204 "data//maps/MirrohBaseCamp/scripts.pory"
+# 203 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
-# 205 "data//maps/MirrohBaseCamp/scripts.pory"
+# 204 "data//maps/MirrohBaseCamp/scripts.pory"
 	removeobject LOCALID_MARTHA
-# 207 "data//maps/MirrohBaseCamp/scripts.pory"
+# 206 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
 
 MirrohBaseCamp_Rue_Trigger::
-# 218 "data//maps/MirrohBaseCamp/scripts.pory"
+# 217 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto_if_set FLAG_MIRROHBASECAMP_MASTERBALL_RUE, MirrohBaseCamp_Rue_Trigger_2
-# 222 "data//maps/MirrohBaseCamp/scripts.pory"
+# 221 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
-# 223 "data//maps/MirrohBaseCamp/scripts.pory"
+# 222 "data//maps/MirrohBaseCamp/scripts.pory"
 	opendoor 13, 27
-# 224 "data//maps/MirrohBaseCamp/scripts.pory"
+# 223 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitdooranim
-# 226 "data//maps/MirrohBaseCamp/scripts.pory"
+# 225 "data//maps/MirrohBaseCamp/scripts.pory"
 	addobject LOCALID_RUE
-# 227 "data//maps/MirrohBaseCamp/scripts.pory"
+# 226 "data//maps/MirrohBaseCamp/scripts.pory"
 	setobjectxy LOCALID_RUE, 13, 27
-# 229 "data//maps/MirrohBaseCamp/scripts.pory"
+# 228 "data//maps/MirrohBaseCamp/scripts.pory"
 	delay 8
-# 231 "data//maps/MirrohBaseCamp/scripts.pory"
+# 230 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Rue_Trigger_Movement_0
+# 231 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitmovement 0
 # 232 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
-# 233 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_1
+# 233 "data//maps/MirrohBaseCamp/scripts.pory"
+	waitmovement 0
 # 234 "data//maps/MirrohBaseCamp/scripts.pory"
-	waitmovement 0
-# 235 "data//maps/MirrohBaseCamp/scripts.pory"
 	closedoor 13, 27
-# 236 "data//maps/MirrohBaseCamp/scripts.pory"
+# 235 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitdooranim
-# 237 "data//maps/MirrohBaseCamp/scripts.pory"
+# 236 "data//maps/MirrohBaseCamp/scripts.pory"
 	delay 16
-# 238 "data//maps/MirrohBaseCamp/scripts.pory"
+# 237 "data//maps/MirrohBaseCamp/scripts.pory"
 	speakername MirrohBaseCamp_Rue_Trigger_Text_0
-# 239 "data//maps/MirrohBaseCamp/scripts.pory"
+# 238 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Rue_Trigger_Text_1
-# 240 "data//maps/MirrohBaseCamp/scripts.pory"
+# 239 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement LOCALID_RUE, MirrohBaseCamp_Rue_Trigger_Movement_2
-# 242 "data//maps/MirrohBaseCamp/scripts.pory"
+# 241 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
-# 243 "data//maps/MirrohBaseCamp/scripts.pory"
+# 242 "data//maps/MirrohBaseCamp/scripts.pory"
 	removeobject LOCALID_RUE
-# 244 "data//maps/MirrohBaseCamp/scripts.pory"
+# 243 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_MASTERBALL_RUE
-# 245 "data//maps/MirrohBaseCamp/scripts.pory"
+# 244 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
@@ -553,108 +542,108 @@ MirrohBaseCamp_Rue_Trigger_2:
 
 
 MirrohBaseCamp_Trainer_A::
-# 272 "data//maps/MirrohBaseCamp/scripts.pory"
+# 271 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
-# 273 "data//maps/MirrohBaseCamp/scripts.pory"
+# 272 "data//maps/MirrohBaseCamp/scripts.pory"
 	faceplayer
-# 275 "data//maps/MirrohBaseCamp/scripts.pory"
+# 274 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_A_Text_0, MSGBOX_YESNO
-# 276 "data//maps/MirrohBaseCamp/scripts.pory"
+# 275 "data//maps/MirrohBaseCamp/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq MirrohBaseCamp_Trainer_A_2
 MirrohBaseCamp_Trainer_A_1:
-# 287 "data//maps/MirrohBaseCamp/scripts.pory"
+# 286 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
 MirrohBaseCamp_Trainer_A_2:
-# 277 "data//maps/MirrohBaseCamp/scripts.pory"
+# 276 "data//maps/MirrohBaseCamp/scripts.pory"
 	trainerbattle_no_intro TRAINER_MIRROHEXT_D, MirrohBaseCamp_Trainer_A_Text_1
-# 278 "data//maps/MirrohBaseCamp/scripts.pory"
+# 277 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_A
-# 279 "data//maps/MirrohBaseCamp/scripts.pory"
+# 278 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_A_Text_2
-# 280 "data//maps/MirrohBaseCamp/scripts.pory"
+# 279 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
-# 281 "data//maps/MirrohBaseCamp/scripts.pory"
+# 280 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Trainer_A_Movement_0
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement 8, MirrohBaseCamp_Trainer_A_Movement_1
-# 283 "data//maps/MirrohBaseCamp/scripts.pory"
+# 282 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
-# 284 "data//maps/MirrohBaseCamp/scripts.pory"
+# 283 "data//maps/MirrohBaseCamp/scripts.pory"
 	removeobject 8
 	goto MirrohBaseCamp_Trainer_A_1
 
 
 MirrohBaseCamp_Trainer_B::
-# 293 "data//maps/MirrohBaseCamp/scripts.pory"
+# 292 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
-# 294 "data//maps/MirrohBaseCamp/scripts.pory"
+# 293 "data//maps/MirrohBaseCamp/scripts.pory"
 	faceplayer
-# 296 "data//maps/MirrohBaseCamp/scripts.pory"
+# 295 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto_if_set FLAG_MIRROHBASECAMP_TRAINER_A, MirrohBaseCamp_Trainer_B_2
-# 307 "data//maps/MirrohBaseCamp/scripts.pory"
+# 306 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_B_Text_3, MSGBOX_NPC
 MirrohBaseCamp_Trainer_B_1:
-# 310 "data//maps/MirrohBaseCamp/scripts.pory"
+# 309 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
 MirrohBaseCamp_Trainer_B_2:
-# 297 "data//maps/MirrohBaseCamp/scripts.pory"
+# 296 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_B_Text_0
-# 298 "data//maps/MirrohBaseCamp/scripts.pory"
+# 297 "data//maps/MirrohBaseCamp/scripts.pory"
 	trainerbattle_no_intro TRAINER_MIRROHEXT_E, MirrohBaseCamp_Trainer_B_Text_1
-# 299 "data//maps/MirrohBaseCamp/scripts.pory"
+# 298 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_B
-# 300 "data//maps/MirrohBaseCamp/scripts.pory"
+# 299 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_B_Text_2
-# 301 "data//maps/MirrohBaseCamp/scripts.pory"
+# 300 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
-# 302 "data//maps/MirrohBaseCamp/scripts.pory"
+# 301 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Trainer_A_Movement_0
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement 9, MirrohBaseCamp_Trainer_B_Movement_0
-# 304 "data//maps/MirrohBaseCamp/scripts.pory"
+# 303 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
-# 305 "data//maps/MirrohBaseCamp/scripts.pory"
+# 304 "data//maps/MirrohBaseCamp/scripts.pory"
 	removeobject 9
 	goto MirrohBaseCamp_Trainer_B_1
 
 
 MirrohBaseCamp_Trainer_C::
-# 317 "data//maps/MirrohBaseCamp/scripts.pory"
+# 316 "data//maps/MirrohBaseCamp/scripts.pory"
 	lockall
-# 318 "data//maps/MirrohBaseCamp/scripts.pory"
+# 317 "data//maps/MirrohBaseCamp/scripts.pory"
 	faceplayer
-# 320 "data//maps/MirrohBaseCamp/scripts.pory"
+# 319 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_C_Text_0, MSGBOX_NPC
-# 322 "data//maps/MirrohBaseCamp/scripts.pory"
+# 321 "data//maps/MirrohBaseCamp/scripts.pory"
 	goto_if_set FLAG_MIRROHBASECAMP_TRAINER_B, MirrohBaseCamp_Trainer_C_2
 MirrohBaseCamp_Trainer_C_1:
-# 334 "data//maps/MirrohBaseCamp/scripts.pory"
+# 333 "data//maps/MirrohBaseCamp/scripts.pory"
 	releaseall
 	end
 
 MirrohBaseCamp_Trainer_C_2:
-# 323 "data//maps/MirrohBaseCamp/scripts.pory"
+# 322 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_C_Text_1
-# 324 "data//maps/MirrohBaseCamp/scripts.pory"
+# 323 "data//maps/MirrohBaseCamp/scripts.pory"
 	trainerbattle_no_intro TRAINER_MIRROHEXT_F, MirrohBaseCamp_Trainer_C_Text_2
-# 325 "data//maps/MirrohBaseCamp/scripts.pory"
+# 324 "data//maps/MirrohBaseCamp/scripts.pory"
 	setflag FLAG_MIRROHBASECAMP_TRAINER_C
-# 326 "data//maps/MirrohBaseCamp/scripts.pory"
+# 325 "data//maps/MirrohBaseCamp/scripts.pory"
 	msgbox MirrohBaseCamp_Trainer_C_Text_3
-# 327 "data//maps/MirrohBaseCamp/scripts.pory"
+# 326 "data//maps/MirrohBaseCamp/scripts.pory"
 	release
-# 328 "data//maps/MirrohBaseCamp/scripts.pory"
+# 327 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MirrohBaseCamp_Trainer_A_Movement_0
-# 329 "data//maps/MirrohBaseCamp/scripts.pory"
+# 328 "data//maps/MirrohBaseCamp/scripts.pory"
 	applymovement 10, MirrohBaseCamp_Trainer_B_Movement_0
-# 330 "data//maps/MirrohBaseCamp/scripts.pory"
+# 329 "data//maps/MirrohBaseCamp/scripts.pory"
 	waitmovement 0
-# 331 "data//maps/MirrohBaseCamp/scripts.pory"
+# 330 "data//maps/MirrohBaseCamp/scripts.pory"
 	removeobject 10
 	goto MirrohBaseCamp_Trainer_C_1
 
@@ -755,117 +744,117 @@ MirrohBaseCamp_Greavard_Outside_Movement_3:
 	walk_up
 	step_end
 
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Martha_End_Movement_0:
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 203 "data//maps/MirrohBaseCamp/scripts.pory"
+# 202 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
 	step_end
 
-# 231 "data//maps/MirrohBaseCamp/scripts.pory"
+# 230 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_0:
-# 231 "data//maps/MirrohBaseCamp/scripts.pory"
+# 230 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 231 "data//maps/MirrohBaseCamp/scripts.pory"
+# 230 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_right
 	step_end
 
-# 233 "data//maps/MirrohBaseCamp/scripts.pory"
+# 232 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_1:
-# 233 "data//maps/MirrohBaseCamp/scripts.pory"
+# 232 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 233 "data//maps/MirrohBaseCamp/scripts.pory"
+# 232 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_left
-# 233 "data//maps/MirrohBaseCamp/scripts.pory"
+# 232 "data//maps/MirrohBaseCamp/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Rue_Trigger_Movement_2:
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
-# 241 "data//maps/MirrohBaseCamp/scripts.pory"
+# 240 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_right
 	step_end
 
-# 281 "data//maps/MirrohBaseCamp/scripts.pory"
+# 280 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Trainer_A_Movement_0:
-# 281 "data//maps/MirrohBaseCamp/scripts.pory"
+# 280 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_down
-# 281 "data//maps/MirrohBaseCamp/scripts.pory"
+# 280 "data//maps/MirrohBaseCamp/scripts.pory"
 	face_up
 	step_end
 
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Trainer_A_Movement_1:
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_up
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 282 "data//maps/MirrohBaseCamp/scripts.pory"
+# 281 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
 	step_end
 
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 MirrohBaseCamp_Trainer_B_Movement_0:
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
-# 303 "data//maps/MirrohBaseCamp/scripts.pory"
+# 302 "data//maps/MirrohBaseCamp/scripts.pory"
 	walk_left
 	step_end
 
@@ -997,7 +986,7 @@ MirrohBaseCamp_Martha_OfferMegaStone_Text_5:
 
 MirrohBaseCamp_Martha_OfferMegaStone_Text_6:
 # 158 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Abomasite$"
+	.string "Ampharosite$"
 
 MirrohBaseCamp_Martha_OfferMegaStone_Text_7:
 # 158 "data//maps/MirrohBaseCamp/scripts.pory"
@@ -1047,25 +1036,21 @@ MirrohBaseCamp_Martha_OfferMegaStone_Text_18:
 # 160 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Absolite$"
 
-MirrohBaseCamp_Martha_OfferMegaStone_Text_19:
-# 160 "data//maps/MirrohBaseCamp/scripts.pory"
-	.string "Lucarionite$"
-
 MirrohBaseCamp_Martha_GiveMegaStone_Text_0:
-# 186 "data//maps/MirrohBaseCamp/scripts.pory"
+# 185 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Are you sure?$"
 
 MirrohBaseCamp_Martha_End_Text_0:
-# 200 "data//maps/MirrohBaseCamp/scripts.pory"
+# 199 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Well then. That's my job done.\p"
 	.string "I wish you all the best, {PLAYER}!$"
 
 MirrohBaseCamp_Rue_Trigger_Text_0:
-# 238 "data//maps/MirrohBaseCamp/scripts.pory"
+# 237 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Rue$"
 
 MirrohBaseCamp_Rue_Trigger_Text_1:
-# 239 "data//maps/MirrohBaseCamp/scripts.pory"
+# 238 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "{PLAYER}? What are you doing all the\n"
 	.string "way over here?\p"
 	.string "...\p"
@@ -1081,56 +1066,56 @@ MirrohBaseCamp_Rue_Trigger_Text_1:
 	.string "tell you to do, okay?$"
 
 MirrohBaseCamp_Trainer_A_Text_0:
-# 275 "data//maps/MirrohBaseCamp/scripts.pory"
+# 274 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Haven't you heard? They're closing the\n"
 	.string "gym here. So everyone's queueing up to\l"
 	.string "get a badge before it closes.\p"
 	.string "Wanna do a warm-up battle?$"
 
 MirrohBaseCamp_Trainer_A_Text_1:
-# 277 "data//maps/MirrohBaseCamp/scripts.pory"
+# 276 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "You were warmed up already!$"
 
 MirrohBaseCamp_Trainer_A_Text_2:
-# 279 "data//maps/MirrohBaseCamp/scripts.pory"
+# 278 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Oh no! I'll have to heal my Pokémon. Hold\n"
 	.string "my place in line - I'll be right back!$"
 
 MirrohBaseCamp_Trainer_B_Text_0:
-# 297 "data//maps/MirrohBaseCamp/scripts.pory"
+# 296 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "I saw the battle with the other trainer.\n"
 	.string "You're not bad, but you'll have to try\l"
 	.string "harder than that to beat me!$"
 
 MirrohBaseCamp_Trainer_B_Text_1:
-# 298 "data//maps/MirrohBaseCamp/scripts.pory"
+# 297 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Stop trying so hard!$"
 
 MirrohBaseCamp_Trainer_B_Text_2:
-# 300 "data//maps/MirrohBaseCamp/scripts.pory"
+# 299 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "If I can't beat a kid like you, what\n"
 	.string "chance do I have against Carona?$"
 
 MirrohBaseCamp_Trainer_B_Text_3:
-# 307 "data//maps/MirrohBaseCamp/scripts.pory"
+# 306 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "What a dreadfully sad little town!\p"
 	.string "It's a wonder this gym lasted so long.$"
 
 MirrohBaseCamp_Trainer_C_Text_0:
-# 320 "data//maps/MirrohBaseCamp/scripts.pory"
+# 319 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Get outta here! Carona has only one\n"
 	.string "badge left to give and it's mine!$"
 
 MirrohBaseCamp_Trainer_C_Text_1:
-# 323 "data//maps/MirrohBaseCamp/scripts.pory"
+# 322 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "What? If you keep looking at me like\n"
 	.string "that, I'll make you pay!$"
 
 MirrohBaseCamp_Trainer_C_Text_2:
-# 324 "data//maps/MirrohBaseCamp/scripts.pory"
+# 323 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "You made me pay!$"
 
 MirrohBaseCamp_Trainer_C_Text_3:
-# 326 "data//maps/MirrohBaseCamp/scripts.pory"
+# 325 "data//maps/MirrohBaseCamp/scripts.pory"
 	.string "Grr - fine! Go inside! I bet Carona wipes\n"
 	.string "the floor with you!$"

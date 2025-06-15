@@ -138,7 +138,7 @@ script Common_EventScript_MintVendingMachine{
 
 script MintVendingMachine_CheckBadge{
 
-    if (flag(FLAG_BADGE05_GET)){
+    if (flag(FLAG_BADGE06_GET)){
         goto(Mart_Mints_SixBadges)
     } else {
         if (flag(FLAG_BADGE05_GET)){
@@ -241,8 +241,20 @@ script Mart_Mints_FiveBadges{
 }
 script Mart_Mints_SixBadges{
     showmoneybox(18, 0)
-    message(format("TRAINER: {PLAYER}. BADGES: 6\nAll mints are ¥200."))
-    waitmessage
+
+    if (flag(FLAG_BADGE08_GET)){
+        message(format("TRAINER: {PLAYER}. BADGES: 8\nAll mints are ¥200."))
+        waitmessage
+    } else {
+        if (flag(FLAG_BADGE07_GET)){
+        message(format("TRAINER: {PLAYER}. BADGES: 7\nAll mints are ¥200."))
+            waitmessage   
+        } else {
+            message(format("TRAINER: {PLAYER}. BADGES: 6\nAll mints are ¥200."))
+            waitmessage
+        }
+    }
+
     dynmultichoice(0, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, 
         "Impish Mint", "Calm Mint", "Relaxed Mint", "Bold Mint", "Gentle Mint",
         "Careful Mint", "Sassy Mint", "Serious Mint", "Brave Mint", "Naive Mint", 
@@ -922,7 +934,7 @@ script AncientStatue_Route8{
 script AncientStatue_IvyForest{
     lockall
     if (flag(FLAG_STATUE_IVY_FOREST)){msgbox(format("It's a statue of an ancient Pokémon...")) goto(AncientStatue_CheckRareShard)} 
-    else {setflag(FLAG_STATUE_ROUTE8) goto(AncientStatue_FirstTime)}
+    else {setflag(FLAG_STATUE_IVY_FOREST) goto(AncientStatue_FirstTime)}
     end    
 }
 
@@ -1094,6 +1106,9 @@ script Common_EventScript_DrifblimTravels_ToSilversun{
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
     checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
     if (var(VAR_RESULT) == 0){
+        applymovement(VAR_LAST_TALKED, moves(jump_in_place_down))
+        waitmovement(0)
+        delay(16)
         msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
         end
     }
@@ -1121,6 +1136,9 @@ script Common_EventScript_DrifblimTravels_ToPelluca{
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
     checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
     if (var(VAR_RESULT) == 0){
+        applymovement(VAR_LAST_TALKED, moves(jump_in_place_down))
+        waitmovement(0)
+        delay(16)        
         msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
         end
     }
@@ -1149,6 +1167,10 @@ script Common_EventScript_DrifblimTravels_All{
     lockall
     faceplayer
     playmoncry(SPECIES_DRIFBLIM, CRY_MODE_NORMAL)
+    applymovement(VAR_LAST_TALKED, moves(jump_in_place_down))
+    waitmovement(0)
+    delay(16)    
+
     checkitem(ITEM_DRIFBLIM_TRAVELS_PASS)
     if (var(VAR_RESULT) == 0){
         msgbox(format("It's a Drifblim!"), MSGBOX_NPC)
@@ -1218,10 +1240,16 @@ script Common_EventScript_Tauros_IvyRiver{
     if (flag(FLAG_RANGER_TAUROS_USE)){
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
-        dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+
+        if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Rivetshore HQ")
+        } else {
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+        }
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
         if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}   
+        if (var(VAR_RESULT) == 2){goto(Common_EventScript_Tauros_GotoRivetshore)}   
     }  else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
     }
@@ -1233,10 +1261,16 @@ script Common_EventScript_Tauros_PellucaCity{
     if (flag(FLAG_RANGER_TAUROS_USE)){    
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
-        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
+
+        if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ", "Rivetshore HQ")
+        } else {
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Route 6 HQ")
+        }        
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
         if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}
+        if (var(VAR_RESULT) == 2){goto(Common_EventScript_Tauros_GotoRivetshore)}   
 
     } else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
@@ -1249,10 +1283,16 @@ script Common_EventScript_Tauros_Route6{
     if (flag(FLAG_RANGER_TAUROS_USE)){   
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
-        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
+        if (flag(FLAG_VISITED_RIVETSHORE_CITY)){
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City", "Rivetshore HQ")
+        } else {
+            dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ivy River HQ", "Pelluca City")
+        }  
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoIvy)}
         if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoPelluca)}
+        if (var(VAR_RESULT) == 2){goto(Common_EventScript_Tauros_GotoRivetshore)}   
+
     }  else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
     }  
@@ -1264,10 +1304,12 @@ script Common_EventScript_Tauros_Rivetshore{
     if (flag(FLAG_RANGER_TAUROS_USE)){
         message(format("Tauros is grazing impatiently.\nWhere should Tauros go?")) 
         waitmessage
-        dynmultichoice(0, 0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ")
+        dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Pelluca City", "Route 6 HQ", "Ivy River HQ")
 
         if (var(VAR_RESULT) == 0){goto(Common_EventScript_Tauros_GotoPelluca)}
-        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}   
+        if (var(VAR_RESULT) == 1){goto(Common_EventScript_Tauros_GotoRoute6)}  
+        if (var(VAR_RESULT) == 2){goto(Common_EventScript_Tauros_GotoIvy)}
+
     }  else {
         msgbox(format("Tauros is grazing impatiently."), MSGBOX_NPC)
     }
@@ -1279,6 +1321,7 @@ script Common_EventScript_Tauros_GotoIvy{
     release
     hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark jump_in_place_up))
     playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
     delay(30)
     warp(MAP_IVY_RIVER, 19, 69)    
@@ -1289,6 +1332,7 @@ script Common_EventScript_Tauros_GotoPelluca{
     //dig
     hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark jump_in_place_up))
     playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
     delay(30)
     warp(MAP_PELLUCA_CITY, 10, 33)   
@@ -1299,9 +1343,21 @@ script Common_EventScript_Tauros_GotoRoute6{
     //dig
     hidefollower
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark jump_in_place_up))
     playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
     delay(30)
     warp(MAP_ROUTE6, 52, 116) 
+}
+
+script Common_EventScript_Tauros_GotoRivetshore{
+    release
+    //dig
+    hidefollower
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark jump_in_place_up))
+    playmoncry(SPECIES_TAUROS_PALDEA_BLAZE, CRY_MODE_NORMAL)        
+    delay(30)
+    warp(MAP_RIVETSHORE_RANGER_INSTITUTE, 23, 12) 
 }
 
 

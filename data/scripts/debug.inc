@@ -159,7 +159,8 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	setflag FLAG_BADGE05_GET
+	setflag FLAG_RANGER_TAUROS_USE
+	warp MAP_PELLUCA_CITY, 43, 28
 	release
 	end
 

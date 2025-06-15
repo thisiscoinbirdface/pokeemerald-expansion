@@ -166,4 +166,4 @@ SSElegant_Rooms_Trainer_A_Text_1:
 
 SSElegant_Rooms_Trainer_A_Text_2:
 # 75 "data//maps/SSElegant_Rooms/scripts.pory"
-	.string "Earthquake is a really strong TM!$"
+	.string "Stone Edge is a really strong TM!$"

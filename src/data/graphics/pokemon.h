@@ -24460,8 +24460,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonShinyPalette_ZarudeDada[] = INCBIN_U32("graphics/pokemon/zarude/dada/shiny.gbapal.lz");
     const u8 gMonIcon_ZarudeDada[] = INCBIN_U8("graphics/pokemon/zarude/dada/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    //const u32 gObjectEventPic_ZarudeDada[] = INCBIN_COMP("graphics/pokemon/zarude/dada/overworld.4bpp");
+    const u32 gObjectEventPic_ZarudeDada[] = INCBIN_COMP("graphics/pokemon/zarude/overworld.4bpp");
+//const u32 gObjectEventPic_ZarudeDada[] = INCBIN_COMP("graphics/pokemon/zarude/dada/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_ZarudeDada[] = INCBIN_U32("graphics/pokemon/zarude/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_ZarudeDada[] = INCBIN_U32("graphics/pokemon/zarude/overworld_shiny.gbapal.lz");
     // const u32 gOverworldPalette_ZarudeDada[] = INCBIN_U32("graphics/pokemon/zarude/dada/overworld_normal.gbapal.lz");
     // const u32 gShinyOverworldPalette_ZarudeDada[] = INCBIN_U32("graphics/pokemon/zarude/dada/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES

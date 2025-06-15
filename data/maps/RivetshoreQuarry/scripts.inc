@@ -355,7 +355,7 @@ Rivetshore_Raazi_Talk::
 # 286 "data//maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
 # 287 "data//maps/RivetshoreQuarry/scripts.pory"
-	playbgm MUS_VS_GYM_LEADER, FALSE
+	playbgm MUS_RG_VS_GYM_LEADER, FALSE
 # 288 "data//maps/RivetshoreQuarry/scripts.pory"
 	msgbox_delay RivetshoreQuarry_Raazi_Callout_Trigger_Text_0, Rivetshore_Raazi_Talk_Text_1
 # 289 "data//maps/RivetshoreQuarry/scripts.pory"

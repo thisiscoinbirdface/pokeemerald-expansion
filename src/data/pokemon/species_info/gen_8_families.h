@@ -7280,6 +7280,15 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .iconPalIndex = 1,
         SHADOW(5, 11, SHADOW_SIZE_L)
         FOOTPRINT(Zarude)
+        OVERWORLD(
+            sPicTable_Zarude,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Zarude,
+            gShinyOverworldPalette_Zarude
+        )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,

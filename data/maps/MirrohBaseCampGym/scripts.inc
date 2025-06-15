@@ -540,7 +540,7 @@ MirrohBaseCampGym_Leader_9:
 
 MirrohBaseCampGym_Red::
 # 360 "data//maps/MirrohBaseCampGym/scripts.pory"
-	goto_if_set FLAG_BADGE06_GET, MirrohBaseCampGym_Red_2
+	goto_if_set FLAG_BADGE05_GET, MirrohBaseCampGym_Red_2
 # 363 "data//maps/MirrohBaseCampGym/scripts.pory"
 	msgbox MirrohBaseCampGym_Red_Text_1, MSGBOX_NPC
 MirrohBaseCampGym_Red_1:

@@ -39,7 +39,7 @@ script FennilahlTown_Pokemart_EventScript_LabSupplies{
     clearflag(FLAG_TENEBRIS_POLICE_PRESCENCE)
     setvar(VAR_FENNILAHL_MART_SUPPLIES, 1)
 
-    completesubquest(QUEST_LAB_FIRST_DAY, SUB_QUEST_1)
+    completesubquest(QUEST_LAB_FIRST_DAY, SUB_QUEST_3)
     
     //update quest announce
     //subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_LAB_FIRST_DAY, SUB_QUEST_3)

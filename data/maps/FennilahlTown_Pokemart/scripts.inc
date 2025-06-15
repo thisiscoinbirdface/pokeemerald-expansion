@@ -73,7 +73,7 @@ FennilahlTown_Pokemart_EventScript_LabSupplies::
 # 40 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	setvar VAR_FENNILAHL_MART_SUPPLIES, 1
 # 42 "data//maps/FennilahlTown_Pokemart/scripts.pory"
-	completesubquest QUEST_LAB_FIRST_DAY, SUB_QUEST_1
+	completesubquest QUEST_LAB_FIRST_DAY, SUB_QUEST_3
 # 51 "data//maps/FennilahlTown_Pokemart/scripts.pory"
 	releaseall
 	end
