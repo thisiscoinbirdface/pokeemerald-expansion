@@ -721,7 +721,7 @@ static void Task_Hof_WaitAndPrintPlayerInfo(u8 taskId)
     else
     {
         FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 0x20, 0x20);
-        HallOfFame_PrintPlayerInfo(1, 2);
+//        HallOfFame_PrintPlayerInfo(1, 2);
         DrawDialogueFrame(0, FALSE);
         AddTextPrinterParameterized2(0, FONT_NORMAL, gText_LeagueChamp, 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
         CopyWindowToVram(0, COPYWIN_FULL);

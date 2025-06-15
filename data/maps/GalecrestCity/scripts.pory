@@ -397,7 +397,7 @@ script GalecrestCity_NPC_11{
 
 script GalecrestCity_Chansey{
     playmoncry(SPECIES_CHANSEY, CRY_MODE_NORMAL)
-    msgbox(format("Chansey looks happy to be out in\lthe garden!"), MSGBOX_NPC)
+    msgbox(format("Chansey looks happy to be out in\nthe garden!"), MSGBOX_NPC)
     end
 }
 

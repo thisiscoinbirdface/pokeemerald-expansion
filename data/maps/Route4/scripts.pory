@@ -155,7 +155,7 @@ script Route4_TrainerBattle_Jenny {
         } else {
             clearflag(FLAG_ROUTE4_DEWPIDER_FINISHED)
             msgbox(format("Ahem...welcome to our secret hideout, old one. You may look down upon us for being so small, but let me tell you something...Even us kids are strong!"))
-            trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My Pokémon! Adults are lame!"))
+            trainerbattle_no_intro(TRAINER_ROUTE4_KID3, format("My Pokémon! Grown-ups are lame!"))
 
             msgbox(format("You have proved your worth, old one.\nYou may now accept this reward."))
             giveitem(ITEM_POKE_DOLL) 

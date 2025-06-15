@@ -1341,3 +1341,20 @@ script Common_EventScript_MapPopup_Disable{
     end
 }
 
+script Common_EventScript_EnableWild{
+    clearflag(FLAG_SYS_WILD_ENCOUNTERS)
+    end
+}
+
+script Common_EventScript_DisableWild{
+    setflag(FLAG_SYS_WILD_ENCOUNTERS)
+    end
+}
+
+
+
+
+
+
+
+

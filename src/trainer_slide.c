@@ -127,7 +127,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         }, 
         [TRAINER_WINTERLILY_HOLLOW_GYM_LEADER] = 
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha! You're good - really good!\pC'mon Ampharos - let's amp this battle up!\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha! You're good - really good!\pC'mon Manectric - let's amp this battle up!\p"), 
         }, 
         [TRAINER_PELLUCA_CITY_GYM_LEADER] = 
         {
@@ -236,7 +236,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         }, 
         [TRAINER_WINTERLILY_HOLLOW_GYM_LEADER] = 
         {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha! You're good - really good!\pC'mon Ampharos - let's amp this battle up!\p"), 
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("Hahaha! You're good - really good!\pC'mon Manectric - let's amp this battle up!\p"), 
         }, 
         [TRAINER_PELLUCA_CITY_GYM_LEADER] = 
         {

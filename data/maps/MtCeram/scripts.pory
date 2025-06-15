@@ -461,7 +461,7 @@ script MtCeram_TrainerBattle_C {
 
 
 script MtCeram_TrainerBattle_D {
-    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their hair got singed in the heat!"), format("My sheep and I should go back down!"))
+    trainerbattle_single(TRAINER_MTCERAM_D, format("I brought my sheep Pokémon here but their wool got singed in the heat!"), format("My sheep and I should go back down!"))
     msgbox(format("Pokémon Breeders specialise in a single group. I specialise in rearing sheep!"))
     release
     end

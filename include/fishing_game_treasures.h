@@ -25,7 +25,7 @@ static const u16 sTreasureItems[] =
     ITEM_HP_UP,
     ITEM_MAX_ELIXIR,
     ITEM_NUGGET,
-    ITEM_HEART_SCALE,
+//    ITEM_HEART_SCALE,
 
     // Rare
     ITEM_HYPER_POTION,
