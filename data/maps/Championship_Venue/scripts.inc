@@ -327,7 +327,7 @@ ChampionshipVenue_SignUp_Text_8:
 
 ChampionshipVenue_SignUp_Text_9:
 # 32 "data//maps/Championship_Venue/scripts.pory"
-	.string "HARD BADGE...$"
+	.string "KING BADGE...$"
 
 ChampionshipVenue_SignUp_Text_10:
 # 34 "data//maps/Championship_Venue/scripts.pory"
@@ -339,7 +339,7 @@ ChampionshipVenue_SignUp_Text_11:
 
 ChampionshipVenue_SignUp_Text_12:
 # 38 "data//maps/Championship_Venue/scripts.pory"
-	.string "NORMAL BADGE...$"
+	.string "CLUE BADGE...$"
 
 ChampionshipVenue_SignUp_Text_13:
 # 41 "data//maps/Championship_Venue/scripts.pory"
@@ -351,7 +351,7 @@ ChampionshipVenue_SignUp_Text_14:
 
 ChampionshipVenue_SignUp_Text_15:
 # 47 "data//maps/Championship_Venue/scripts.pory"
-	.string "SPARK BADGE...$"
+	.string "CHARGE BADGE...$"
 
 ChampionshipVenue_SignUp_Text_16:
 # 50 "data//maps/Championship_Venue/scripts.pory"

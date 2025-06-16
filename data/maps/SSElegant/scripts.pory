@@ -94,9 +94,9 @@ script SSElegant_Raazi{
     delay(60)
 
     //battle
-//    fadenewbgm(MUS_RG_GYM)
+    fadenewbgm(MUS_RG_GYM)
     msgbox_delay("Raazi", format("I am Raazi, the Gym Leader of Rivetshore City and the strongest Leader in all of Cormoria!\pThe quarry has forged my heart into steel and my fists into granite.\pI am the final barrier between you\nand the Pokémon Championship!\pCan you break through?"))
-    //trainerbattle_no_intro(TRAINER_RIVETSHORE_GYM_LEADER, format("I can't believe I lost..."))
+    trainerbattle_no_intro(TRAINER_RIVETSHORE_GYM_LEADER, format("I can't believe I lost..."))
     playbgm(MUS_RG_GYM, FALSE)  
     //post-battle
     msgbox_delay("Raazi", format("Spectacular!"))

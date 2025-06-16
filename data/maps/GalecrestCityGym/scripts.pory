@@ -184,12 +184,12 @@ script GalecrestCityGym_Leader {
         //Play gym badge fanfare
         setflag(FLAG_BADGE03_GET)   
         speakername("Kohla")     
-        message(format("{PLAYER} received the Stoic Badge from Kohla."))
+        message(format("{PLAYER} received the Clue Badge from Kohla."))
         call(Common_EventScript_PlayGymBadgeFanfare)
         release
         //Describe the badge features
         speakername("Kohla")
-        msgbox(format("The Stoic Badge lets you use Rock Smash outside of battle.\p...\pAnd this is yours too."))
+        msgbox(format("The Clue Badge lets you use Rock Smash outside of battle.\p...\pAnd this is yours too."))
         release
         giveitem(ITEM_RARE_SHARD)
         delay(16)

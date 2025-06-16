@@ -2593,7 +2593,7 @@ UnchartedIsland_Tenebris_Text_4:
 	.string "here and jumped into Ancient Cormoria.\l"
 	.string "I thought that would be enough to stop\l"
 	.string "whoever was spying on me...\l"
-	.string "p...but clearly it wasn't.\p"
+	.string "...but clearly it wasn't.\p"
 	.string "Someone in Team Somber had eyes on the\n"
 	.string "dreamstone from the very beginning!\p"
 	.string "And now, after my time in Ancient\n"

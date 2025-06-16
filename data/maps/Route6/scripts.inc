@@ -254,83 +254,145 @@ Route6_Trainer_K::
 	end
 
 
-Route6_NPC1::
+Route6_NPC_ZeraoraBlocker::
 # 208 "data//maps/Route6/scripts.pory"
-	lockall
-# 209 "data//maps/Route6/scripts.pory"
-	faceplayer
-# 210 "data//maps/Route6/scripts.pory"
-	msgbox Route6_NPC1_Text_0
+	compare VAR_RANGER_INSTITUTE, 0
+	goto_if_eq Route6_NPC_ZeraoraBlocker_2
+Route6_NPC_ZeraoraBlocker_1:
 # 211 "data//maps/Route6/scripts.pory"
+	compare VAR_RANGER_INSTITUTE, 1
+	goto_if_eq Route6_NPC_ZeraoraBlocker_5
+Route6_NPC_ZeraoraBlocker_4:
+# 214 "data//maps/Route6/scripts.pory"
+	compare VAR_RANGER_INSTITUTE, 1
+	goto_if_gt Route6_NPC_ZeraoraBlocker_8
+Route6_NPC_ZeraoraBlocker_7:
+	end
+
+Route6_NPC_ZeraoraBlocker_2:
+# 209 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC_ZeraoraBlocker_Text_0, MSGBOX_NPC
+	goto Route6_NPC_ZeraoraBlocker_1
+
+Route6_NPC_ZeraoraBlocker_5:
+# 212 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC_ZeraoraBlocker_Text_0, MSGBOX_NPC
+	goto Route6_NPC_ZeraoraBlocker_4
+
+Route6_NPC_ZeraoraBlocker_8:
+# 215 "data//maps/Route6/scripts.pory"
+	compare VAR_RANGER_INSTITUTE, 11
+	goto_if_lt Route6_NPC_ZeraoraBlocker_10
+# 218 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC_ZeraoraBlocker_Text_2, MSGBOX_NPC
+# 219 "data//maps/Route6/scripts.pory"
+	lockall
+# 222 "data//maps/Route6/scripts.pory"
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+# 224 "data//maps/Route6/scripts.pory"
+	compare VAR_RESULT, DIR_WEST
+	goto_if_eq Route6_NPC_ZeraoraBlocker_14
+# 227 "data//maps/Route6/scripts.pory"
+	applymovement VAR_LAST_TALKED, Route6_NPC_ZeraoraBlocker_Movement_1
+Route6_NPC_ZeraoraBlocker_13:
+# 229 "data//maps/Route6/scripts.pory"
+	waitmovement 0
+# 230 "data//maps/Route6/scripts.pory"
+	removeobject VAR_LAST_TALKED
+# 231 "data//maps/Route6/scripts.pory"
+	setflag FLAG_ROUTE6_ZERAORA_BLOCKER
+# 232 "data//maps/Route6/scripts.pory"
+	releaseall
+	goto Route6_NPC_ZeraoraBlocker_7
+
+Route6_NPC_ZeraoraBlocker_10:
+# 216 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC_ZeraoraBlocker_Text_1, MSGBOX_NPC
+	goto Route6_NPC_ZeraoraBlocker_7
+
+Route6_NPC_ZeraoraBlocker_14:
+# 225 "data//maps/Route6/scripts.pory"
+	applymovement VAR_LAST_TALKED, Route6_NPC_ZeraoraBlocker_Movement_0
+	goto Route6_NPC_ZeraoraBlocker_13
+
+
+Route6_NPC1::
+# 240 "data//maps/Route6/scripts.pory"
+	lockall
+# 241 "data//maps/Route6/scripts.pory"
+	faceplayer
+# 242 "data//maps/Route6/scripts.pory"
+	msgbox Route6_NPC1_Text_0
+# 243 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 
 Route6_NPC2::
-# 216 "data//maps/Route6/scripts.pory"
+# 248 "data//maps/Route6/scripts.pory"
 	lockall
-# 217 "data//maps/Route6/scripts.pory"
+# 249 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 218 "data//maps/Route6/scripts.pory"
+# 250 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC2_Text_0
-# 219 "data//maps/Route6/scripts.pory"
+# 251 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 
 Route6_NPC3::
-# 223 "data//maps/Route6/scripts.pory"
+# 255 "data//maps/Route6/scripts.pory"
 	lockall
-# 224 "data//maps/Route6/scripts.pory"
+# 256 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 225 "data//maps/Route6/scripts.pory"
+# 257 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC3_Text_0
-# 226 "data//maps/Route6/scripts.pory"
+# 258 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 
 Route6_NPC4::
-# 230 "data//maps/Route6/scripts.pory"
+# 262 "data//maps/Route6/scripts.pory"
 	lockall
-# 231 "data//maps/Route6/scripts.pory"
+# 263 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 233 "data//maps/Route6/scripts.pory"
+# 265 "data//maps/Route6/scripts.pory"
 	compare VAR_ROUTE6_FISHERMAN, 2
 	goto_if_eq Route6_NPC4_2
 Route6_NPC4_1:
-# 237 "data//maps/Route6/scripts.pory"
+# 269 "data//maps/Route6/scripts.pory"
 	compare VAR_ROUTE6_FISHERMAN, 1
 	goto_if_eq Route6_NPC4_5
 Route6_NPC4_4:
-# 256 "data//maps/Route6/scripts.pory"
+# 288 "data//maps/Route6/scripts.pory"
 	compare VAR_ROUTE6_FISHERMAN, 0
 	goto_if_eq Route6_NPC4_8
 Route6_NPC4_7:
-# 275 "data//maps/Route6/scripts.pory"
+# 307 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_NPC4_2:
-# 234 "data//maps/Route6/scripts.pory"
+# 266 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_0
 	goto Route6_NPC4_1
 
 Route6_NPC4_5:
-# 238 "data//maps/Route6/scripts.pory"
+# 270 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_1, MSGBOX_YESNO
-# 240 "data//maps/Route6/scripts.pory"
+# 272 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_NPC4_10
 	goto Route6_NPC4_4
 
 Route6_NPC4_8:
-# 257 "data//maps/Route6/scripts.pory"
+# 289 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_5, MSGBOX_YESNO
-# 258 "data//maps/Route6/scripts.pory"
+# 290 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_NPC4_12
-# 270 "data//maps/Route6/scripts.pory"
+# 302 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_9
 	goto Route6_NPC4_7
 
@@ -339,55 +401,55 @@ Route6_NPC4_10:
 # 0 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne Route6_NPC4_15
-# 251 "data//maps/Route6/scripts.pory"
+# 283 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_4
 	goto Route6_NPC4_4
 
 Route6_NPC4_12:
-# 260 "data//maps/Route6/scripts.pory"
+# 292 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_6, MSGBOX_YESNO
-# 261 "data//maps/Route6/scripts.pory"
+# 293 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_NPC4_18
-# 267 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_8
 	goto Route6_NPC4_7
 
 Route6_NPC4_15:
-# 243 "data//maps/Route6/scripts.pory"
+# 275 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_2
-# 244 "data//maps/Route6/scripts.pory"
+# 276 "data//maps/Route6/scripts.pory"
 	release
-# 245 "data//maps/Route6/scripts.pory"
+# 277 "data//maps/Route6/scripts.pory"
 	completequest QUEST_ROUTE6_FISHERMAN
-# 246 "data//maps/Route6/scripts.pory"
+# 278 "data//maps/Route6/scripts.pory"
 	removeitem ITEM_OLD_GATEAU
-# 247 "data//maps/Route6/scripts.pory"
+# 279 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_3
-# 248 "data//maps/Route6/scripts.pory"
+# 280 "data//maps/Route6/scripts.pory"
 	giveitem ITEM_SUPER_ROD
-# 249 "data//maps/Route6/scripts.pory"
+# 281 "data//maps/Route6/scripts.pory"
 	setvar VAR_ROUTE6_FISHERMAN, 2
 	goto Route6_NPC4_4
 
 Route6_NPC4_18:
-# 263 "data//maps/Route6/scripts.pory"
+# 295 "data//maps/Route6/scripts.pory"
 	msgbox Route6_NPC4_Text_7
-# 264 "data//maps/Route6/scripts.pory"
+# 296 "data//maps/Route6/scripts.pory"
 	setvar VAR_ROUTE6_FISHERMAN, 1
-# 265 "data//maps/Route6/scripts.pory"
+# 297 "data//maps/Route6/scripts.pory"
 	startquest QUEST_ROUTE6_FISHERMAN
 	goto Route6_NPC4_7
 
 
 Route6_Gabrielle_SaveGameTrigger::
-# 297 "data//maps/Route6/scripts.pory"
+# 329 "data//maps/Route6/scripts.pory"
 	goto_if_set FLAG_ROUTE6_GABRIELLE_BULLY, Route6_Gabrielle_SaveGameTrigger_2
-# 299 "data//maps/Route6/scripts.pory"
+# 331 "data//maps/Route6/scripts.pory"
 	setvar VAR_TEMP_C, 1
-# 301 "data//maps/Route6/scripts.pory"
+# 333 "data//maps/Route6/scripts.pory"
 	call Common_EventScript_SaveGameBeforeSomber
-# 302 "data//maps/Route6/scripts.pory"
+# 334 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
@@ -396,15 +458,15 @@ Route6_Gabrielle_SaveGameTrigger_2:
 
 
 Route6_Gabrielle_Trigger0::
-# 309 "data//maps/Route6/scripts.pory"
+# 341 "data//maps/Route6/scripts.pory"
 	goto_if_set FLAG_ROUTE6_GABRIELLE_BULLY, Route6_Gabrielle_Trigger0_2
-# 310 "data//maps/Route6/scripts.pory"
+# 342 "data//maps/Route6/scripts.pory"
 	lockall
-# 311 "data//maps/Route6/scripts.pory"
+# 343 "data//maps/Route6/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Trigger0_Movement_0
-# 312 "data//maps/Route6/scripts.pory"
+# 344 "data//maps/Route6/scripts.pory"
 	waitmovement 0
-# 313 "data//maps/Route6/scripts.pory"
+# 345 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_Main
 	return
 
@@ -413,15 +475,15 @@ Route6_Gabrielle_Trigger0_2:
 
 
 Route6_Gabrielle_Trigger1::
-# 316 "data//maps/Route6/scripts.pory"
+# 348 "data//maps/Route6/scripts.pory"
 	goto_if_set FLAG_ROUTE6_GABRIELLE_BULLY, Route6_Gabrielle_Trigger1_2
-# 317 "data//maps/Route6/scripts.pory"
+# 349 "data//maps/Route6/scripts.pory"
 	lockall
-# 318 "data//maps/Route6/scripts.pory"
+# 350 "data//maps/Route6/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Trigger1_Movement_0
-# 319 "data//maps/Route6/scripts.pory"
+# 351 "data//maps/Route6/scripts.pory"
 	waitmovement 0
-# 320 "data//maps/Route6/scripts.pory"
+# 352 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_Main
 	return
 
@@ -430,387 +492,387 @@ Route6_Gabrielle_Trigger1_2:
 
 
 Route6_Gabrielle_Main::
-# 328 "data//maps/Route6/scripts.pory"
+# 360 "data//maps/Route6/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-# 329 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_0
-# 330 "data//maps/Route6/scripts.pory"
-	delay 24
-# 331 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_0
-# 332 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_1
-# 333 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_2
-# 334 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_3
-# 335 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_0
-# 336 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_4
-# 337 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_2
-# 338 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_5
-# 339 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_0
-# 340 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_6
-# 341 "data//maps/Route6/scripts.pory"
-	release
-# 344 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_1
-# 345 "data//maps/Route6/scripts.pory"
-	waitmovement 0
-# 346 "data//maps/Route6/scripts.pory"
-	delay 24
-# 347 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_2
-# 348 "data//maps/Route6/scripts.pory"
-	waitmovement 0
-# 349 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_3
-# 350 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_3
-# 352 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_2
-# 353 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_7
-# 354 "data//maps/Route6/scripts.pory"
-	release
-# 355 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_4
-# 356 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_4
-# 357 "data//maps/Route6/scripts.pory"
-	speakername Route6_Gabrielle_Main_Text_0
-# 358 "data//maps/Route6/scripts.pory"
-	msgbox Route6_Gabrielle_Main_Text_8
-# 359 "data//maps/Route6/scripts.pory"
-	release
 # 361 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_5
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_0
 # 362 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_5
+	delay 24
 # 363 "data//maps/Route6/scripts.pory"
-	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_6
+	speakername Route6_Gabrielle_Main_Text_0
 # 364 "data//maps/Route6/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Main_Movement_7
+	msgbox Route6_Gabrielle_Main_Text_1
 # 365 "data//maps/Route6/scripts.pory"
-	waitmovement 0
+	speakername Route6_Gabrielle_Main_Text_2
+# 366 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_3
 # 367 "data//maps/Route6/scripts.pory"
+	speakername Route6_Gabrielle_Main_Text_0
+# 368 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_4
+# 369 "data//maps/Route6/scripts.pory"
+	speakername Route6_Gabrielle_Main_Text_2
+# 370 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_5
+# 371 "data//maps/Route6/scripts.pory"
+	speakername Route6_Gabrielle_Main_Text_0
+# 372 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_6
+# 373 "data//maps/Route6/scripts.pory"
+	release
+# 376 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_1
+# 377 "data//maps/Route6/scripts.pory"
+	waitmovement 0
+# 378 "data//maps/Route6/scripts.pory"
+	delay 24
+# 379 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_2
+# 380 "data//maps/Route6/scripts.pory"
+	waitmovement 0
+# 381 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_3
+# 382 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_3
+# 384 "data//maps/Route6/scripts.pory"
+	speakername Route6_Gabrielle_Main_Text_2
+# 385 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_7
+# 386 "data//maps/Route6/scripts.pory"
+	release
+# 387 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_4
+# 388 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_4
+# 389 "data//maps/Route6/scripts.pory"
+	speakername Route6_Gabrielle_Main_Text_0
+# 390 "data//maps/Route6/scripts.pory"
+	msgbox Route6_Gabrielle_Main_Text_8
+# 391 "data//maps/Route6/scripts.pory"
+	release
+# 393 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Main_Movement_5
+# 394 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Main_Movement_5
+# 395 "data//maps/Route6/scripts.pory"
+	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_6
+# 396 "data//maps/Route6/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Gabrielle_Main_Movement_7
+# 397 "data//maps/Route6/scripts.pory"
+	waitmovement 0
+# 399 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	return
 
 
 Route6_Gabrielle_ChooseDoubleBattleParty::
-# 372 "data//maps/Route6/scripts.pory"
+# 404 "data//maps/Route6/scripts.pory"
 	special SavePlayerParty
-# 373 "data//maps/Route6/scripts.pory"
+# 405 "data//maps/Route6/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 374 "data//maps/Route6/scripts.pory"
+# 406 "data//maps/Route6/scripts.pory"
 	special ChooseHalfPartyForBattle
-# 375 "data//maps/Route6/scripts.pory"
+# 407 "data//maps/Route6/scripts.pory"
 	waitstate
-# 376 "data//maps/Route6/scripts.pory"
+# 408 "data//maps/Route6/scripts.pory"
 	goto_if_ne VAR_RESULT, 0, Route6_Gabrielle_DoBattle
-# 377 "data//maps/Route6/scripts.pory"
+# 409 "data//maps/Route6/scripts.pory"
 	special LoadPlayerParty
-# 378 "data//maps/Route6/scripts.pory"
+# 410 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_HurryUp
 	return
 
 
 Route6_Gabrielle_HurryUp::
-# 383 "data//maps/Route6/scripts.pory"
+# 415 "data//maps/Route6/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-# 384 "data//maps/Route6/scripts.pory"
+# 416 "data//maps/Route6/scripts.pory"
 	speakername Route6_Gabrielle_Main_Text_2
-# 385 "data//maps/Route6/scripts.pory"
+# 417 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_HurryUp_Text_0
-# 386 "data//maps/Route6/scripts.pory"
+# 418 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	return
 
 
 Route6_Gabrielle_DoBattle::
-# 390 "data//maps/Route6/scripts.pory"
+# 422 "data//maps/Route6/scripts.pory"
 	multi_2_vs_2 TRAINER_ROUTE6_GRUNT1, Route6_Gabrielle_DoBattle_Text_0, TRAINER_ROUTE6_GRUNT2, Route6_Gabrielle_DoBattle_Text_1, PARTNER_ROUTE6_GAB
-# 391 "data//maps/Route6/scripts.pory"
+# 423 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Gabrielle_DoBattle_2
 Route6_Gabrielle_DoBattle_1:
-# 394 "data//maps/Route6/scripts.pory"
+# 426 "data//maps/Route6/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 395 "data//maps/Route6/scripts.pory"
+# 427 "data//maps/Route6/scripts.pory"
 	special SetCB2WhiteOut
-# 396 "data//maps/Route6/scripts.pory"
+# 428 "data//maps/Route6/scripts.pory"
 	waitstate
 	return
 
 Route6_Gabrielle_DoBattle_2:
-# 392 "data//maps/Route6/scripts.pory"
+# 424 "data//maps/Route6/scripts.pory"
 	goto Route6_Gabrielle_Victory
 	goto Route6_Gabrielle_DoBattle_1
 
 
 Route6_Gabrielle_Victory::
-# 400 "data//maps/Route6/scripts.pory"
+# 432 "data//maps/Route6/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-# 403 "data//maps/Route6/scripts.pory"
+# 435 "data//maps/Route6/scripts.pory"
 	speakername Route6_Gabrielle_Main_Text_0
-# 404 "data//maps/Route6/scripts.pory"
+# 436 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_Victory_Text_0
-# 405 "data//maps/Route6/scripts.pory"
+# 437 "data//maps/Route6/scripts.pory"
 	release
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	applymovement LOCALID_GRUNT2, Route6_Gabrielle_Victory_Movement_0
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	applymovement LOCALID_GRUNT1, Route6_Gabrielle_Victory_Movement_1
-# 409 "data//maps/Route6/scripts.pory"
+# 441 "data//maps/Route6/scripts.pory"
 	waitmovement 0
-# 411 "data//maps/Route6/scripts.pory"
+# 443 "data//maps/Route6/scripts.pory"
 	removeobject LOCALID_GRUNT1
-# 412 "data//maps/Route6/scripts.pory"
+# 444 "data//maps/Route6/scripts.pory"
 	removeobject LOCALID_GRUNT2
-# 414 "data//maps/Route6/scripts.pory"
+# 446 "data//maps/Route6/scripts.pory"
 	fadedefaultbgm
-# 416 "data//maps/Route6/scripts.pory"
+# 448 "data//maps/Route6/scripts.pory"
 	delay 16
-# 417 "data//maps/Route6/scripts.pory"
+# 449 "data//maps/Route6/scripts.pory"
 	applymovement LOCALID_GAB, Route6_Gabrielle_Main_Movement_3
-# 418 "data//maps/Route6/scripts.pory"
+# 450 "data//maps/Route6/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_Venusaur_Movement_1
-# 419 "data//maps/Route6/scripts.pory"
+# 451 "data//maps/Route6/scripts.pory"
 	delay 16
-# 420 "data//maps/Route6/scripts.pory"
+# 452 "data//maps/Route6/scripts.pory"
 	speakername Route6_Gabrielle_Main_Text_2
-# 421 "data//maps/Route6/scripts.pory"
+# 453 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_Victory_Text_1
-# 422 "data//maps/Route6/scripts.pory"
+# 454 "data//maps/Route6/scripts.pory"
 	release
-# 423 "data//maps/Route6/scripts.pory"
+# 455 "data//maps/Route6/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
-# 425 "data//maps/Route6/scripts.pory"
+# 457 "data//maps/Route6/scripts.pory"
 	speakername Route6_Gabrielle_Main_Text_2
-# 426 "data//maps/Route6/scripts.pory"
+# 458 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Gabrielle_Victory_Text_2
-# 427 "data//maps/Route6/scripts.pory"
+# 459 "data//maps/Route6/scripts.pory"
 	release
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	applymovement LOCALID_GAB, Route6_Gabrielle_Victory_Movement_2
-# 429 "data//maps/Route6/scripts.pory"
+# 461 "data//maps/Route6/scripts.pory"
 	waitmovement 0
-# 430 "data//maps/Route6/scripts.pory"
+# 462 "data//maps/Route6/scripts.pory"
 	removeobject LOCALID_GAB
-# 431 "data//maps/Route6/scripts.pory"
+# 463 "data//maps/Route6/scripts.pory"
 	setflag FLAG_ROUTE6_GABRIELLE_BULLY
-# 433 "data//maps/Route6/scripts.pory"
+# 465 "data//maps/Route6/scripts.pory"
 	releaseall
 	return
 
 
 Route6_Tutor_Weather::
-# 461 "data//maps/Route6/scripts.pory"
+# 493 "data//maps/Route6/scripts.pory"
 	lockall
-# 462 "data//maps/Route6/scripts.pory"
+# 494 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 463 "data//maps/Route6/scripts.pory"
+# 495 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_0
-# 464 "data//maps/Route6/scripts.pory"
+# 496 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_1, MSGBOX_YESNO
-# 466 "data//maps/Route6/scripts.pory"
+# 498 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_2
-# 472 "data//maps/Route6/scripts.pory"
+# 504 "data//maps/Route6/scripts.pory"
 	checkitem ITEM_GREEN_SHARD
-# 474 "data//maps/Route6/scripts.pory"
+# 506 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_5
-# 480 "data//maps/Route6/scripts.pory"
+# 512 "data//maps/Route6/scripts.pory"
 	message Route6_Tutor_Weather_Text_4
-# 481 "data//maps/Route6/scripts.pory"
+# 513 "data//maps/Route6/scripts.pory"
 	waitmessage
-# 482 "data//maps/Route6/scripts.pory"
+# 514 "data//maps/Route6/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Weather_Text_5, Route6_Tutor_Weather_Text_6, Route6_Tutor_Weather_Text_7, Route6_Tutor_Weather_Text_8
-# 485 "data//maps/Route6/scripts.pory"
+# 517 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Weather_8
 Route6_Tutor_Weather_7:
-# 489 "data//maps/Route6/scripts.pory"
+# 521 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Tutor_Weather_11
 Route6_Tutor_Weather_10:
-# 493 "data//maps/Route6/scripts.pory"
+# 525 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Route6_Tutor_Weather_14
 Route6_Tutor_Weather_13:
-# 497 "data//maps/Route6/scripts.pory"
+# 529 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 3
 	goto_if_eq Route6_Tutor_Weather_17
 Route6_Tutor_Weather_16:
-# 501 "data//maps/Route6/scripts.pory"
+# 533 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
-# 502 "data//maps/Route6/scripts.pory"
+# 534 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Weather_2:
-# 467 "data//maps/Route6/scripts.pory"
+# 499 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
-# 468 "data//maps/Route6/scripts.pory"
+# 500 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Weather_5:
-# 475 "data//maps/Route6/scripts.pory"
+# 507 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_3, MSGBOX_NPC
-# 476 "data//maps/Route6/scripts.pory"
+# 508 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Weather_8:
-# 486 "data//maps/Route6/scripts.pory"
+# 518 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_RAIN_DANCE
-# 487 "data//maps/Route6/scripts.pory"
+# 519 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_7
 
 Route6_Tutor_Weather_11:
-# 490 "data//maps/Route6/scripts.pory"
+# 522 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_SUNNY_DAY
-# 491 "data//maps/Route6/scripts.pory"
+# 523 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_10
 
 Route6_Tutor_Weather_14:
-# 494 "data//maps/Route6/scripts.pory"
+# 526 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_SANDSTORM
-# 495 "data//maps/Route6/scripts.pory"
+# 527 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_13
 
 Route6_Tutor_Weather_17:
-# 498 "data//maps/Route6/scripts.pory"
+# 530 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_SNOWSCAPE
-# 499 "data//maps/Route6/scripts.pory"
+# 531 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMoveShard
 	goto Route6_Tutor_Weather_16
 
 
 Route6_Tutor_Fangs::
-# 507 "data//maps/Route6/scripts.pory"
+# 539 "data//maps/Route6/scripts.pory"
 	lockall
-# 508 "data//maps/Route6/scripts.pory"
+# 540 "data//maps/Route6/scripts.pory"
 	faceplayer
-# 510 "data//maps/Route6/scripts.pory"
+# 542 "data//maps/Route6/scripts.pory"
 	goto_if_set FLAG_TUTOR_FANGS, Route6_Tutor_Fangs_2
-# 516 "data//maps/Route6/scripts.pory"
+# 548 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Fangs_Text_1
-# 517 "data//maps/Route6/scripts.pory"
+# 549 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Fangs_Text_2, MSGBOX_POKENAV
-# 518 "data//maps/Route6/scripts.pory"
+# 550 "data//maps/Route6/scripts.pory"
 	message Route6_Tutor_Weather_Text_4
-# 519 "data//maps/Route6/scripts.pory"
+# 551 "data//maps/Route6/scripts.pory"
 	waitmessage
-# 520 "data//maps/Route6/scripts.pory"
+# 552 "data//maps/Route6/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, Route6_Tutor_Fangs_Text_3, Route6_Tutor_Fangs_Text_4, Route6_Tutor_Fangs_Text_5, Route6_Tutor_Fangs_Text_6, Route6_Tutor_Fangs_Text_7
-# 523 "data//maps/Route6/scripts.pory"
+# 555 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_Fangs_5
 Route6_Tutor_Fangs_4:
-# 527 "data//maps/Route6/scripts.pory"
+# 559 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route6_Tutor_Fangs_8
 Route6_Tutor_Fangs_7:
-# 531 "data//maps/Route6/scripts.pory"
+# 563 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq Route6_Tutor_Fangs_11
 Route6_Tutor_Fangs_10:
-# 535 "data//maps/Route6/scripts.pory"
+# 567 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 3
 	goto_if_eq Route6_Tutor_Fangs_14
 Route6_Tutor_Fangs_13:
-# 539 "data//maps/Route6/scripts.pory"
+# 571 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
-# 540 "data//maps/Route6/scripts.pory"
+# 572 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Fangs_2:
-# 511 "data//maps/Route6/scripts.pory"
+# 543 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Fangs_Text_0, MSGBOX_NPC
-# 512 "data//maps/Route6/scripts.pory"
+# 544 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_Fangs_5:
-# 524 "data//maps/Route6/scripts.pory"
+# 556 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_FIRE_FANG
-# 525 "data//maps/Route6/scripts.pory"
+# 557 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_4
 
 Route6_Tutor_Fangs_8:
-# 528 "data//maps/Route6/scripts.pory"
+# 560 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_ICE_FANG
-# 529 "data//maps/Route6/scripts.pory"
+# 561 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_7
 
 Route6_Tutor_Fangs_11:
-# 532 "data//maps/Route6/scripts.pory"
+# 564 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_THUNDER_FANG
-# 533 "data//maps/Route6/scripts.pory"
+# 565 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_10
 
 Route6_Tutor_Fangs_14:
-# 536 "data//maps/Route6/scripts.pory"
+# 568 "data//maps/Route6/scripts.pory"
 	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
-# 537 "data//maps/Route6/scripts.pory"
+# 569 "data//maps/Route6/scripts.pory"
 	goto Route6_Tutor_TeachMove
 	goto Route6_Tutor_Fangs_13
 
 
 Route6_Tutor_TeachMove::
-# 545 "data//maps/Route6/scripts.pory"
+# 577 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 547 "data//maps/Route6/scripts.pory"
+# 579 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_TeachMove_2
-# 550 "data//maps/Route6/scripts.pory"
+# 582 "data//maps/Route6/scripts.pory"
 	setflag FLAG_TUTOR_FANGS
-# 551 "data//maps/Route6/scripts.pory"
+# 583 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
 Route6_Tutor_TeachMove_1:
-# 554 "data//maps/Route6/scripts.pory"
+# 586 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_TeachMove_2:
-# 548 "data//maps/Route6/scripts.pory"
+# 580 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
 	goto Route6_Tutor_TeachMove_1
 
 
 Route6_Tutor_TeachMoveShard::
-# 559 "data//maps/Route6/scripts.pory"
+# 591 "data//maps/Route6/scripts.pory"
 	call MoveTutor_EventScript_OpenPartyMenu
-# 561 "data//maps/Route6/scripts.pory"
+# 593 "data//maps/Route6/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route6_Tutor_TeachMoveShard_2
-# 564 "data//maps/Route6/scripts.pory"
+# 596 "data//maps/Route6/scripts.pory"
 	removeitem ITEM_GREEN_SHARD
-# 565 "data//maps/Route6/scripts.pory"
+# 597 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_TeachMove_Text_0, MSGBOX_NPC
 Route6_Tutor_TeachMoveShard_1:
-# 568 "data//maps/Route6/scripts.pory"
+# 600 "data//maps/Route6/scripts.pory"
 	releaseall
 	end
 
 Route6_Tutor_TeachMoveShard_2:
-# 562 "data//maps/Route6/scripts.pory"
+# 594 "data//maps/Route6/scripts.pory"
 	msgbox Route6_Tutor_Weather_Text_2, MSGBOX_NPC
 	goto Route6_Tutor_TeachMoveShard_1
 
@@ -827,161 +889,215 @@ Route6_Venusaur_Movement_1:
 	face_up
 	step_end
 
-# 311 "data//maps/Route6/scripts.pory"
+# 225 "data//maps/Route6/scripts.pory"
+Route6_NPC_ZeraoraBlocker_Movement_0:
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_right
+# 225 "data//maps/Route6/scripts.pory"
+	walk_right
+# 225 "data//maps/Route6/scripts.pory"
+	walk_right
+# 225 "data//maps/Route6/scripts.pory"
+	walk_right
+# 225 "data//maps/Route6/scripts.pory"
+	walk_right
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+# 225 "data//maps/Route6/scripts.pory"
+	walk_down
+	step_end
+
+# 227 "data//maps/Route6/scripts.pory"
+Route6_NPC_ZeraoraBlocker_Movement_1:
+# 227 "data//maps/Route6/scripts.pory"
+	walk_right
+# 227 "data//maps/Route6/scripts.pory"
+	walk_right
+# 227 "data//maps/Route6/scripts.pory"
+	walk_right
+# 227 "data//maps/Route6/scripts.pory"
+	walk_right
+# 227 "data//maps/Route6/scripts.pory"
+	walk_right
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+# 227 "data//maps/Route6/scripts.pory"
+	walk_down
+	step_end
+
+# 343 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger0_Movement_0:
-# 311 "data//maps/Route6/scripts.pory"
+# 343 "data//maps/Route6/scripts.pory"
 	walk_up
-# 311 "data//maps/Route6/scripts.pory"
+# 343 "data//maps/Route6/scripts.pory"
 	walk_right
 	step_end
 
-# 318 "data//maps/Route6/scripts.pory"
+# 350 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Trigger1_Movement_0:
-# 318 "data//maps/Route6/scripts.pory"
+# 350 "data//maps/Route6/scripts.pory"
 	walk_up
-# 318 "data//maps/Route6/scripts.pory"
+# 350 "data//maps/Route6/scripts.pory"
 	face_right
 	step_end
 
-# 329 "data//maps/Route6/scripts.pory"
+# 361 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_0:
-# 329 "data//maps/Route6/scripts.pory"
+# 361 "data//maps/Route6/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 344 "data//maps/Route6/scripts.pory"
+# 376 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_1:
-# 344 "data//maps/Route6/scripts.pory"
+# 376 "data//maps/Route6/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 347 "data//maps/Route6/scripts.pory"
+# 379 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_2:
-# 347 "data//maps/Route6/scripts.pory"
+# 379 "data//maps/Route6/scripts.pory"
 	walk_down
-# 347 "data//maps/Route6/scripts.pory"
+# 379 "data//maps/Route6/scripts.pory"
 	walk_down
-# 347 "data//maps/Route6/scripts.pory"
+# 379 "data//maps/Route6/scripts.pory"
 	walk_left
 	step_end
 
-# 349 "data//maps/Route6/scripts.pory"
+# 381 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_3:
-# 349 "data//maps/Route6/scripts.pory"
+# 381 "data//maps/Route6/scripts.pory"
 	face_down
 	step_end
 
-# 355 "data//maps/Route6/scripts.pory"
+# 387 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_4:
-# 355 "data//maps/Route6/scripts.pory"
+# 387 "data//maps/Route6/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 361 "data//maps/Route6/scripts.pory"
+# 393 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_5:
-# 361 "data//maps/Route6/scripts.pory"
+# 393 "data//maps/Route6/scripts.pory"
 	face_right
 	step_end
 
-# 363 "data//maps/Route6/scripts.pory"
+# 395 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_6:
-# 363 "data//maps/Route6/scripts.pory"
+# 395 "data//maps/Route6/scripts.pory"
 	walk_right
-# 363 "data//maps/Route6/scripts.pory"
+# 395 "data//maps/Route6/scripts.pory"
 	walk_up
-# 363 "data//maps/Route6/scripts.pory"
+# 395 "data//maps/Route6/scripts.pory"
 	walk_up
-# 363 "data//maps/Route6/scripts.pory"
+# 395 "data//maps/Route6/scripts.pory"
 	face_left
 	step_end
 
-# 364 "data//maps/Route6/scripts.pory"
+# 396 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Main_Movement_7:
-# 364 "data//maps/Route6/scripts.pory"
+# 396 "data//maps/Route6/scripts.pory"
 	walk_right
-# 364 "data//maps/Route6/scripts.pory"
+# 396 "data//maps/Route6/scripts.pory"
 	walk_right
-# 364 "data//maps/Route6/scripts.pory"
+# 396 "data//maps/Route6/scripts.pory"
 	walk_up
-# 364 "data//maps/Route6/scripts.pory"
+# 396 "data//maps/Route6/scripts.pory"
 	face_left
 	step_end
 
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_0:
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_down
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_down
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_up
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_up
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
-# 407 "data//maps/Route6/scripts.pory"
+# 439 "data//maps/Route6/scripts.pory"
 	walk_left
 	step_end
 
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_1:
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_down
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_up
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_up
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
-# 408 "data//maps/Route6/scripts.pory"
+# 440 "data//maps/Route6/scripts.pory"
 	walk_left
 	step_end
 
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 Route6_Gabrielle_Victory_Movement_2:
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_down
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_down
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_up
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_up
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
-# 428 "data//maps/Route6/scripts.pory"
+# 460 "data//maps/Route6/scripts.pory"
 	walk_left
 	step_end
 
@@ -1200,56 +1316,82 @@ Route6_Trainer_K_Text_2:
 	.string "If we remember our Pokémon after they\n"
 	.string "go, are they truly gone?$"
 
+Route6_NPC_ZeraoraBlocker_Text_0:
+# 209 "data//maps/Route6/scripts.pory"
+	.string "Sorry, this area is blocked off for\n"
+	.string "civilians. The Ranger Institute is\l"
+	.string "investigating a rare Pokémon sighting.$"
+
+Route6_NPC_ZeraoraBlocker_Text_1:
+# 216 "data//maps/Route6/scripts.pory"
+	.string "Sorry, Ranger. We're investigating a\n"
+	.string "rare Pokémon sighting.\l"
+	.string "It could be dangerous! You're not a\l"
+	.string "high enough rank to enter.$"
+
+Route6_NPC_ZeraoraBlocker_Text_2:
+# 218 "data//maps/Route6/scripts.pory"
+	.string "Sorry, Ranger. We're investigating a\n"
+	.string "rare Pokémon sighting.\l"
+	.string "It could be dangerous! You're not a\l"
+	.string "high enough rank to enter.\p"
+	.string "...\p"
+	.string "Director Ravine sent you?\p"
+	.string "Alright, you can go in. But be careful!\n"
+	.string "Whatever this Pokémon is, it generates\l"
+	.string "huge amounts of electricity that even\l"
+	.string "the ground can't absorb!$"
+
 Route6_NPC1_Text_0:
-# 210 "data//maps/Route6/scripts.pory"
+# 242 "data//maps/Route6/scripts.pory"
 	.string "When I was young, there was no route\n"
 	.string "through these marshes.\p"
 	.string "Now Route 6 connects Silversun City\n"
 	.string "to Pelluca City.$"
 
 Route6_NPC2_Text_0:
-# 218 "data//maps/Route6/scripts.pory"
+# 250 "data//maps/Route6/scripts.pory"
 	.string "I wonder what's over there...if I had the\n"
 	.string "HM Surf, I could swim over!$"
 
 Route6_NPC3_Text_0:
-# 225 "data//maps/Route6/scripts.pory"
+# 257 "data//maps/Route6/scripts.pory"
 	.string "I want to go to the Pelluca Restaurant!\n"
 	.string "The food is supposed to be delicious\l"
 	.string "because the head chef travels all of\l"
 	.string "Cormoria looking for rare ingredients.$"
 
 Route6_NPC4_Text_0:
-# 234 "data//maps/Route6/scripts.pory"
+# 266 "data//maps/Route6/scripts.pory"
 	.string "I've been too busy eating to cook! I\n"
 	.string "guess you can switch the hobby all you\l"
 	.string "want, but you have to work on yourself\l"
 	.string "to see real change.$"
 
 Route6_NPC4_Text_1:
-# 238 "data//maps/Route6/scripts.pory"
+# 270 "data//maps/Route6/scripts.pory"
 	.string "Have you brought an Apple Pie?$"
 
 Route6_NPC4_Text_2:
-# 243 "data//maps/Route6/scripts.pory"
+# 275 "data//maps/Route6/scripts.pory"
 	.string "Yes, this looks amazing!\p"
 	.string "...\p"
 	.string "Interesting flavour. I think I can make\n"
 	.string "it!$"
 
 Route6_NPC4_Text_3:
-# 247 "data//maps/Route6/scripts.pory"
+# 279 "data//maps/Route6/scripts.pory"
 	.string "I suppose I don't need this any more.\n"
 	.string "Here, why don't you take it? You could\l"
 	.string "start a new hobby too!$"
 
 Route6_NPC4_Text_4:
-# 251 "data//maps/Route6/scripts.pory"
+# 283 "data//maps/Route6/scripts.pory"
 	.string "No, it looks like you haven't. I'll be\n"
 	.string "here when you get one.$"
 
 Route6_NPC4_Text_5:
-# 257 "data//maps/Route6/scripts.pory"
+# 289 "data//maps/Route6/scripts.pory"
 	.string "These waters are too strong to fish\n"
 	.string "properly...why am I even fishing here?\l"
 	.string "I'm so unfocused these days.\p"
@@ -1258,45 +1400,45 @@ Route6_NPC4_Text_5:
 	.string "What do you say? Should I try cooking?$"
 
 Route6_NPC4_Text_6:
-# 260 "data//maps/Route6/scripts.pory"
+# 292 "data//maps/Route6/scripts.pory"
 	.string "Yeah unless I try, I'll never know!\n"
 	.string "Say, can you help me out?\p"
 	.string "I want to try making an Apple Pie.\n"
 	.string "Can you bring me one?$"
 
 Route6_NPC4_Text_7:
-# 263 "data//maps/Route6/scripts.pory"
+# 295 "data//maps/Route6/scripts.pory"
 	.string "Thank you so much! I'll be waiting here.$"
 
 Route6_NPC4_Text_8:
-# 267 "data//maps/Route6/scripts.pory"
+# 299 "data//maps/Route6/scripts.pory"
 	.string "Ahh well, it's back to fishing then.$"
 
 Route6_NPC4_Text_9:
-# 270 "data//maps/Route6/scripts.pory"
+# 302 "data//maps/Route6/scripts.pory"
 	.string "Yeah...I suppose I'd be no good.\n"
 	.string "Fishing is all I know.$"
 
 Route6_Gabrielle_Main_Text_0:
-# 331 "data//maps/Route6/scripts.pory"
+# 363 "data//maps/Route6/scripts.pory"
 	.string "Grunt$"
 
 Route6_Gabrielle_Main_Text_1:
-# 332 "data//maps/Route6/scripts.pory"
+# 364 "data//maps/Route6/scripts.pory"
 	.string "C'mon Gabrielle - you've got nowhere\n"
 	.string "to run. Now give us your Pokémon!$"
 
 Route6_Gabrielle_Main_Text_2:
-# 333 "data//maps/Route6/scripts.pory"
+# 365 "data//maps/Route6/scripts.pory"
 	.string "Gabrielle$"
 
 Route6_Gabrielle_Main_Text_3:
-# 334 "data//maps/Route6/scripts.pory"
+# 366 "data//maps/Route6/scripts.pory"
 	.string "No! Zoroark and I are partners!\n"
 	.string "Why should I give you losers anything?$"
 
 Route6_Gabrielle_Main_Text_4:
-# 336 "data//maps/Route6/scripts.pory"
+# 368 "data//maps/Route6/scripts.pory"
 	.string "They're property of Team Somber, and\n"
 	.string "now that you're out, it's only fair that\l"
 	.string "you return them.\p"
@@ -1304,23 +1446,23 @@ Route6_Gabrielle_Main_Text_4:
 	.string "you know? And now it's time to collect!$"
 
 Route6_Gabrielle_Main_Text_5:
-# 338 "data//maps/Route6/scripts.pory"
+# 370 "data//maps/Route6/scripts.pory"
 	.string "That's not how it works!$"
 
 Route6_Gabrielle_Main_Text_6:
-# 340 "data//maps/Route6/scripts.pory"
+# 372 "data//maps/Route6/scripts.pory"
 	.string "What are you gonna do?\n"
 	.string "Complain to the boss?\p"
 	.string "Haha!$"
 
 Route6_Gabrielle_Main_Text_7:
-# 353 "data//maps/Route6/scripts.pory"
+# 385 "data//maps/Route6/scripts.pory"
 	.string "{PLAYER}, it's you! These grunts are\n"
 	.string "trying to take my Pokémon off me!\l"
 	.string "You have to help!$"
 
 Route6_Gabrielle_Main_Text_8:
-# 358 "data//maps/Route6/scripts.pory"
+# 390 "data//maps/Route6/scripts.pory"
 	.string "Have you no shame Gabrielle? The\n"
 	.string "trainer who got you kicked out is\l"
 	.string "now going to help you?\p"
@@ -1329,32 +1471,32 @@ Route6_Gabrielle_Main_Text_8:
 	.string "trainer that's foiled our plans twice!$"
 
 Route6_Gabrielle_HurryUp_Text_0:
-# 385 "data//maps/Route6/scripts.pory"
+# 417 "data//maps/Route6/scripts.pory"
 	.string "What are you doing? They're about to\n"
 	.string "attack!$"
 
 Route6_Gabrielle_DoBattle_Text_0:
-# 390 "data//maps/Route6/scripts.pory"
+# 422 "data//maps/Route6/scripts.pory"
 	.string "Stupid Zoroark!$"
 
 Route6_Gabrielle_DoBattle_Text_1:
-# 390 "data//maps/Route6/scripts.pory"
+# 422 "data//maps/Route6/scripts.pory"
 	.string "I need better Pokémon!$"
 
 Route6_Gabrielle_Victory_Text_0:
-# 404 "data//maps/Route6/scripts.pory"
+# 436 "data//maps/Route6/scripts.pory"
 	.string "You just got lucky that {PLAYER} was\n"
 	.string "around, Gabrielle! Next time we'll get\l"
 	.string "your Zoroark for sure!$"
 
 Route6_Gabrielle_Victory_Text_1:
-# 421 "data//maps/Route6/scripts.pory"
+# 453 "data//maps/Route6/scripts.pory"
 	.string "Thank you {PLAYER}. You saved both\n"
 	.string "Zoroark and me there!\p"
 	.string "Let me heal your Pokémon.$"
 
 Route6_Gabrielle_Victory_Text_2:
-# 426 "data//maps/Route6/scripts.pory"
+# 458 "data//maps/Route6/scripts.pory"
 	.string "I live in Pelluca City, just past the\n"
 	.string "Hoya River. I was on my way home when\l"
 	.string "those grunts ambushed me...\p"
@@ -1365,7 +1507,7 @@ Route6_Gabrielle_Victory_Text_2:
 	.string "See you around.$"
 
 Route6_Tutor_Weather_Text_0:
-# 463 "data//maps/Route6/scripts.pory"
+# 495 "data//maps/Route6/scripts.pory"
 	.string "I'm part of the Geological Research\n"
 	.string "Squad. Our scientists track weather\l"
 	.string "patterns while I collect field data! I\l"
@@ -1373,79 +1515,79 @@ Route6_Tutor_Weather_Text_0:
 	.string "weather in battle.$"
 
 Route6_Tutor_Weather_Text_1:
-# 464 "data//maps/Route6/scripts.pory"
+# 496 "data//maps/Route6/scripts.pory"
 	.string "In exchange for one Green Shard, should\n"
 	.string "I teach a weather move?$"
 
 Route6_Tutor_Weather_Text_2:
-# 467 "data//maps/Route6/scripts.pory"
+# 499 "data//maps/Route6/scripts.pory"
 	.string "Come again whenever you like!$"
 
 Route6_Tutor_Weather_Text_3:
-# 475 "data//maps/Route6/scripts.pory"
+# 507 "data//maps/Route6/scripts.pory"
 	.string "You don't have a Green Shard.\n"
 	.string "Come again when you have one!$"
 
 Route6_Tutor_Weather_Text_4:
-# 480 "data//maps/Route6/scripts.pory"
+# 512 "data//maps/Route6/scripts.pory"
 	.string "Which move should I teach?$"
 
 Route6_Tutor_Weather_Text_5:
-# 483 "data//maps/Route6/scripts.pory"
+# 515 "data//maps/Route6/scripts.pory"
 	.string "Rain Dance$"
 
 Route6_Tutor_Weather_Text_6:
-# 483 "data//maps/Route6/scripts.pory"
+# 515 "data//maps/Route6/scripts.pory"
 	.string "Sunny Day$"
 
 Route6_Tutor_Weather_Text_7:
-# 483 "data//maps/Route6/scripts.pory"
+# 515 "data//maps/Route6/scripts.pory"
 	.string "Sandstorm$"
 
 Route6_Tutor_Weather_Text_8:
-# 483 "data//maps/Route6/scripts.pory"
+# 515 "data//maps/Route6/scripts.pory"
 	.string "Snowscape$"
 
 Route6_Tutor_Fangs_Text_0:
-# 511 "data//maps/Route6/scripts.pory"
+# 543 "data//maps/Route6/scripts.pory"
 	.string "Bare your teeth, Ranger!\p"
 	.string "...\p"
 	.string "Maybe I should have taught you a\n"
 	.string "dentist's phone number instead...$"
 
 Route6_Tutor_Fangs_Text_1:
-# 516 "data//maps/Route6/scripts.pory"
+# 548 "data//maps/Route6/scripts.pory"
 	.string "I train new Candidates in raising\n"
 	.string "strong partners. I can teach your\l"
 	.string "Pokémon some new moves if you like! But\l"
 	.string "I can only teach one move per Ranger.$"
 
 Route6_Tutor_Fangs_Text_2:
-# 517 "data//maps/Route6/scripts.pory"
+# 549 "data//maps/Route6/scripts.pory"
 	.string "This tutor will only teach a\p"
 	.string "move once, so choose carefully!$"
 
 Route6_Tutor_Fangs_Text_3:
-# 521 "data//maps/Route6/scripts.pory"
+# 553 "data//maps/Route6/scripts.pory"
 	.string "Fire Fang$"
 
 Route6_Tutor_Fangs_Text_4:
-# 521 "data//maps/Route6/scripts.pory"
+# 553 "data//maps/Route6/scripts.pory"
 	.string "Ice Fang$"
 
 Route6_Tutor_Fangs_Text_5:
-# 521 "data//maps/Route6/scripts.pory"
+# 553 "data//maps/Route6/scripts.pory"
 	.string "Thunder Fang$"
 
 Route6_Tutor_Fangs_Text_6:
-# 521 "data//maps/Route6/scripts.pory"
+# 553 "data//maps/Route6/scripts.pory"
 	.string "Psychic Fangs$"
 
 Route6_Tutor_Fangs_Text_7:
-# 521 "data//maps/Route6/scripts.pory"
+# 553 "data//maps/Route6/scripts.pory"
 	.string "Cancel$"
 
 Route6_Tutor_TeachMove_Text_0:
-# 551 "data//maps/Route6/scripts.pory"
+# 583 "data//maps/Route6/scripts.pory"
 	.string "Your Pokémon look strong now!\n"
 	.string "Good luck, Ranger!$"

@@ -1354,7 +1354,7 @@ GastreeCity_KohlaIntro1::
 	.string "Well well, look who thought it was\n"
 	.string "fashionable to be late! I'm way ahead\l"
 	.string "of you, chum! I've already beaten\l"
-	.string "Inger and got the Hard Badge. And I\l"
+	.string "Inger and got the King Badge. And I\l"
 	.string "don't mind dishing out a second serving!$"
 
 GastreeCity_KohlaIntro2::

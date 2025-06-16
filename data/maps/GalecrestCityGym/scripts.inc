@@ -382,13 +382,13 @@ GalecrestCityGym_Leader_Text_2:
 
 GalecrestCityGym_Leader_Text_3:
 # 187 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "{PLAYER} received the Stoic Badge\n"
+	.string "{PLAYER} received the Clue Badge\n"
 	.string "from Kohla.$"
 
 GalecrestCityGym_Leader_Text_4:
 # 192 "data//maps/GalecrestCityGym/scripts.pory"
-	.string "The Stoic Badge lets you use Rock\n"
-	.string "Smash outside of battle.\p"
+	.string "The Clue Badge lets you use Rock Smash\n"
+	.string "outside of battle.\p"
 	.string "...\p"
 	.string "And this is yours too.$"
 

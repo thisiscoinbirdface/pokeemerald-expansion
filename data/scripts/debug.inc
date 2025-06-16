@@ -159,8 +159,8 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	setflag FLAG_RANGER_TAUROS_USE
-	warp MAP_UNCHARTED_ISLAND, 54, 18
+	setvar VAR_RANGER_INSTITUTE, 10
+	warp MAP_RANGER_INSTITUTE, 3, 27
 	release
 	end
 

@@ -545,7 +545,7 @@ WinterlilyHollowGym_LeaderBattle_Text_6:
 
 WinterlilyHollowGym_LeaderBattle_Text_7:
 # 174 "data//maps/WinterlilyHollow_GymB1F/scripts.pory"
-	.string "{PLAYER} received the Spark Badge\n"
+	.string "{PLAYER} received the Charge Badge\n"
 	.string "from Viniel.$"
 
 WinterlilyHollowGym_LeaderBattle_Text_8:

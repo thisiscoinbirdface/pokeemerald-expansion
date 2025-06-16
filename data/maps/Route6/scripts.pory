@@ -204,6 +204,38 @@ script Route6_Trainer_K{
 
 //NPCs
 //old woman
+script Route6_NPC_ZeraoraBlocker{
+    if (var(VAR_RANGER_INSTITUTE) == 0){
+        msgbox(format("Sorry, this area is blocked off for civilians. The Ranger Institute is investigating a rare Pokémon sighting."), MSGBOX_NPC)
+    }
+    if (var(VAR_RANGER_INSTITUTE) == 1){
+        msgbox(format("Sorry, this area is blocked off for civilians. The Ranger Institute is investigating a rare Pokémon sighting."), MSGBOX_NPC)
+    }
+    if (var(VAR_RANGER_INSTITUTE) > 1){
+        if (var(VAR_RANGER_INSTITUTE) < 11){
+            msgbox(format("Sorry, Ranger. We're investigating a rare Pokémon sighting.\lIt could be dangerous! You're not a\lhigh enough rank to enter."), MSGBOX_NPC)
+        } else {
+            msgbox(format("Sorry, Ranger. We're investigating a rare Pokémon sighting.\lIt could be dangerous! You're not a\lhigh enough rank to enter.\p...\pDirector Ravine sent you?\pAlright, you can go in. But be careful!\nWhatever this Pokémon is, it generates huge amounts of electricity that even the ground can't absorb!"), MSGBOX_NPC)
+            lockall
+
+            //move the guy out
+            specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+            if (var(VAR_RESULT) == DIR_WEST){
+                applymovement(VAR_LAST_TALKED, moves(walk_down walk_right * 5 walk_down *6))
+            } else {
+                applymovement(VAR_LAST_TALKED, moves(walk_right * 5 walk_down *6))
+            }
+            waitmovement(0)
+            removeobject(VAR_LAST_TALKED)
+            setflag(FLAG_ROUTE6_ZERAORA_BLOCKER)
+            releaseall
+        }
+    }
+    end
+
+}
+
 script Route6_NPC1{
     lockall
     faceplayer

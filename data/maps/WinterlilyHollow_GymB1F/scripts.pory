@@ -171,7 +171,7 @@ script WinterlilyHollowGym_LeaderBattle {
         trainerbattle_no_intro(TRAINER_WINTERLILY_HOLLOW_GYM_LEADER, format("Sizzling! Crackling! Hahaha!"))
         
         //Receive the badge
-        message(format("{PLAYER} received the Spark Badge from Viniel."))
+        message(format("{PLAYER} received the Charge Badge from Viniel."))
         waitmessage
         //Play gym badge fanfare
         call(Common_EventScript_PlayGymBadgeFanfare)

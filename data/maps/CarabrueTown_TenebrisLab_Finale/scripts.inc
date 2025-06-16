@@ -158,50 +158,52 @@ CarabrueTown_TenebrisLab_PostFinale::
 # 107 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	setflag FLAG_HIDE_ROUTE1_NORMAL
 # 108 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	clearflag FLAG_HIDE_TENEBRIS_TENEBRIS
+	clearflag FLAG_HIDE_ROUTE1_STRONG
 # 109 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	clearflag FLAG_HIDE_TENEBRIS_TENEBRIS
+# 110 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	completequest QUEST_STOP_TEAM_SOMBER
-# 111 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 112 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	releaseall
 	end
 
 
 TenebrisLab_Finale_Detective::
-# 116 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	speakername CarabrueTown_TenebrisLab_PostFinale_Text_0
 # 117 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	speakername CarabrueTown_TenebrisLab_PostFinale_Text_0
+# 118 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Detective_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Tenebris::
-# 121 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 122 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox_delay CarabrueTown_TenebrisLab_PostFinale_Text_0, TenebrisLab_Finale_Tenebris_Text_0
 	end
 
 
 TenebrisLab_Finale_Scientist_A::
-# 129 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 130 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_A_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Scientist_B::
-# 133 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 134 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_B_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Scientist_C::
-# 137 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 138 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Scientist_C_Text_0, MSGBOX_NPC
 	end
 
 
 TenebrisLab_Finale_Gardevoir::
-# 141 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
-	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
 # 142 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
+# 143 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	msgbox TenebrisLab_Finale_Gardevoir_Text_0, MSGBOX_NPC
 	return
 
@@ -376,32 +378,32 @@ CarabrueTown_TenebrisLab_PostFinale_Text_18:
 	.string "Victory Cape - ASAP!$"
 
 TenebrisLab_Finale_Detective_Text_0:
-# 117 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 118 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "What's taking you so long? I bet Kohla's\n"
 	.string "already reached Victory Cape.\p"
 	.string "How many slow starts do you need to\n"
 	.string "learn your lesson?$"
 
 TenebrisLab_Finale_Tenebris_Text_0:
-# 121 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 122 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "I believe in you, {PLAYER}!$"
 
 TenebrisLab_Finale_Scientist_A_Text_0:
-# 129 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 130 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "I can't believe Rue was behind this\n"
 	.string "whole mess! I wish I'd caught on sooner!$"
 
 TenebrisLab_Finale_Scientist_B_Text_0:
-# 133 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 134 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "The detectives told us the entire\n"
 	.string "story. You're incredible, {PLAYER}!$"
 
 TenebrisLab_Finale_Scientist_C_Text_0:
-# 137 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 138 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Go on, {PLAYER}! Bring the\n"
 	.string "championship trophy to Carabrue Town!$"
 
 TenebrisLab_Finale_Gardevoir_Text_0:
-# 142 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
+# 143 "data//maps/CarabrueTown_TenebrisLab_Finale/scripts.pory"
 	.string "Gardevoir regards you intently...\p"
 	.string "Did it smile?$"

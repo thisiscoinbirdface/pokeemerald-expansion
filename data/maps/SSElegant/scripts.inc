@@ -97,12 +97,16 @@ SSElegant_Raazi_10:
 	special RemoveCameraObject
 # 94 "data//maps/SSElegant/scripts.pory"
 	delay 60
+# 97 "data//maps/SSElegant/scripts.pory"
+	fadenewbgm MUS_RG_GYM
 # 98 "data//maps/SSElegant/scripts.pory"
 	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_4
+# 99 "data//maps/SSElegant/scripts.pory"
+	trainerbattle_no_intro TRAINER_RIVETSHORE_GYM_LEADER, SSElegant_Raazi_Text_5
 # 100 "data//maps/SSElegant/scripts.pory"
 	playbgm MUS_RG_GYM, FALSE
 # 102 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_5
+	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_6
 # 104 "data//maps/SSElegant/scripts.pory"
 	special SpawnCameraObject
 # 105 "data//maps/SSElegant/scripts.pory"
@@ -118,11 +122,11 @@ SSElegant_Raazi_10:
 # 110 "data//maps/SSElegant/scripts.pory"
 	special RemoveCameraObject
 # 111 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_6
+	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_7
 # 113 "data//maps/SSElegant/scripts.pory"
 	speakername NULL
 # 114 "data//maps/SSElegant/scripts.pory"
-	message SSElegant_Raazi_Text_7
+	message SSElegant_Raazi_Text_8
 # 116 "data//maps/SSElegant/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 118 "data//maps/SSElegant/scripts.pory"
@@ -132,13 +136,13 @@ SSElegant_Raazi_10:
 # 122 "data//maps/SSElegant/scripts.pory"
 	speakername SSElegant_Raazi_Text_0
 # 123 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Raazi_Text_8
+	msgbox SSElegant_Raazi_Text_9
 # 125 "data//maps/SSElegant/scripts.pory"
 	giveitem ITEM_RARE_SHARD
 # 126 "data//maps/SSElegant/scripts.pory"
 	speakername SSElegant_Raazi_Text_0
 # 127 "data//maps/SSElegant/scripts.pory"
-	msgbox SSElegant_Raazi_Text_9
+	msgbox SSElegant_Raazi_Text_10
 # 128 "data//maps/SSElegant/scripts.pory"
 	release
 # 130 "data//maps/SSElegant/scripts.pory"
@@ -156,7 +160,7 @@ SSElegant_Raazi_10:
 # 137 "data//maps/SSElegant/scripts.pory"
 	delay 16
 # 140 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_10, SSElegant_Raazi_Text_11
+	msgbox_delay SSElegant_Raazi_Text_11, SSElegant_Raazi_Text_12
 # 142 "data//maps/SSElegant/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Raazi_Movement_11
 # 143 "data//maps/SSElegant/scripts.pory"
@@ -168,7 +172,7 @@ SSElegant_Raazi_10:
 # 147 "data//maps/SSElegant/scripts.pory"
 	fadedefaultbgm
 # 148 "data//maps/SSElegant/scripts.pory"
-	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_12
+	msgbox_delay SSElegant_Raazi_Text_0, SSElegant_Raazi_Text_13
 # 151 "data//maps/SSElegant/scripts.pory"
 	applymovement LOCALID_RAAZI, SSElegant_Raazi_Movement_13
 # 152 "data//maps/SSElegant/scripts.pory"
@@ -911,29 +915,33 @@ SSElegant_Raazi_Text_4:
 	.string "Can you break through?$"
 
 SSElegant_Raazi_Text_5:
+# 99 "data//maps/SSElegant/scripts.pory"
+	.string "I can't believe I lost...$"
+
+SSElegant_Raazi_Text_6:
 # 102 "data//maps/SSElegant/scripts.pory"
 	.string "Spectacular!$"
 
-SSElegant_Raazi_Text_6:
+SSElegant_Raazi_Text_7:
 # 111 "data//maps/SSElegant/scripts.pory"
 	.string "Someone like you would be of use in the\n"
 	.string "quarry, I can tell you.\p"
 	.string "For your tenacity and grit, I am pleased\n"
 	.string "to award you with the Granite Badge.$"
 
-SSElegant_Raazi_Text_7:
+SSElegant_Raazi_Text_8:
 # 114 "data//maps/SSElegant/scripts.pory"
 	.string "{PLAYER} received the Granite Badge\n"
 	.string "from Raazi.$"
 
-SSElegant_Raazi_Text_8:
+SSElegant_Raazi_Text_9:
 # 123 "data//maps/SSElegant/scripts.pory"
 	.string "The Granite Badge will let you use any\n"
 	.string "HM you have outside of battle.\p"
 	.string "I'd also like to give you something we\n"
 	.string "dug up in the quarry a while ago.$"
 
-SSElegant_Raazi_Text_9:
+SSElegant_Raazi_Text_10:
 # 127 "data//maps/SSElegant/scripts.pory"
 	.string "And now you've collected all eight gym\n"
 	.string "badges, {PLAYER}!\p"
@@ -941,11 +949,11 @@ SSElegant_Raazi_Text_9:
 	.string "Pokémon Championship. They're held\l"
 	.string "every year at -$"
 
-SSElegant_Raazi_Text_10:
+SSElegant_Raazi_Text_11:
 # 140 "data//maps/SSElegant/scripts.pory"
 	.string "S.S. Elegant$"
 
-SSElegant_Raazi_Text_11:
+SSElegant_Raazi_Text_12:
 # 140 "data//maps/SSElegant/scripts.pory"
 	.string "ATTENTION ALL PASSENGERS.\p"
 	.string "THE S.S. ELEGANT WILL NOW BE MAKING A\n"
@@ -955,7 +963,7 @@ SSElegant_Raazi_Text_11:
 	.string "DUE TO SAFETY CONCERNS, PASSENGERS\n"
 	.string "ARE NOT PERMITTED TO DEBOARD THE SHIP.$"
 
-SSElegant_Raazi_Text_12:
+SSElegant_Raazi_Text_13:
 # 148 "data//maps/SSElegant/scripts.pory"
 	.string "You may be aware of where the Gym\n"
 	.string "Leaders are going now.\p"

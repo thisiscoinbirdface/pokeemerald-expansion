@@ -59,7 +59,7 @@ script GastreeGym_LeaderBattle {
 script GastreeGym_EventScript_Victory{
     setflag(FLAG_BADGE01_GET)
     //Receive the badge
-    message(format("{PLAYER} received the Hard Badge from Inger."))
+    message(format("{PLAYER} received the King Badge from Inger."))
     //Play gym badge fanfare
     call(Common_EventScript_PlayGymBadgeFanfare)
     release
@@ -67,7 +67,7 @@ script GastreeGym_EventScript_Victory{
 
     //Describe the badge features (use HMs, allow pokemon control etc.)
     speakername("Inger")
-    msgbox(format("The Hard Badge allows you to use HM Splash outside of battle. Hop and skip across all the ponds of Cormoria!"))
+    msgbox(format("The King Badge allows you to use HM Splash outside of battle. Hop and skip across all the ponds of Cormoria!"))
     release
     delay(16)
     //Also give 3 rare shards

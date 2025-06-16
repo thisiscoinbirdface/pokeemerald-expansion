@@ -1143,7 +1143,8 @@ RivetshoreCity_Market_Shop_Secret_Text_1:
 
 RivetshoreCity_Mareanie_Text_0:
 # 404 "data//maps/RivetshoreCity/scripts.pory"
-	.string "Mareanie is peering into the water...$"
+	.string "Mareanie is peering into the water...\n"
+	.string "It must be looking for a Corsola!$"
 
 RivetshoreCity_Aron_Text_0:
 # 410 "data//maps/RivetshoreCity/scripts.pory"

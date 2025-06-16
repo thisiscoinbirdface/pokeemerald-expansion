@@ -304,12 +304,12 @@ GastreeGym_LeaderBattle_Text_3:
 
 GastreeGym_EventScript_Victory_Text_0:
 # 62 "data//maps/GastreeGym/scripts.pory"
-	.string "{PLAYER} received the Hard Badge\n"
+	.string "{PLAYER} received the King Badge\n"
 	.string "from Inger.$"
 
 GastreeGym_EventScript_Victory_Text_1:
 # 70 "data//maps/GastreeGym/scripts.pory"
-	.string "The Hard Badge allows you to use HM\n"
+	.string "The King Badge allows you to use HM\n"
 	.string "Splash outside of battle. Hop and skip\l"
 	.string "across all the ponds of Cormoria!$"
 

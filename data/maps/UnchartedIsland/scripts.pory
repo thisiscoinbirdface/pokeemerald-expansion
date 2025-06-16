@@ -856,7 +856,7 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your utmost to put an end to Team Somber and their plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it.\lI didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me...\lp...but clearly it wasn't.\pSomeone in Team Somber had eyes on the dreamstone from the very beginning!\pAnd now, after my time in Ancient Cormoria...I know why."))
+        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your utmost to put an end to Team Somber and their plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it.\lI didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me...\l...but clearly it wasn't.\pSomeone in Team Somber had eyes on the dreamstone from the very beginning!\pAnd now, after my time in Ancient Cormoria...I know why."))
         delay(16)
         msgbox_delay("Tenebris", format("The Ancient Terror..."))
         showmonpic(SPECIES_KORAIDON, 10, 3)

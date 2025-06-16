@@ -1559,7 +1559,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
 
     const u8 gText_SubQuest4_Desc1[] = _("Ranger Chief Ravine has asked me to deliver\nan important package to the Ranger Institute\nat Ivy River. I can't let him down!");
     const u8 gText_SubQuest4_Desc2[] = _("Scientists at the Ivy River Ranger Institute\nneed specimens of different Pokémon to study\ntheir potential for Mega Evolution.");
-    const u8 gText_SubQuest4_Desc3[] = _("This is the final test I need to complete\nto become a fully-fledged Pokémon Ranger.\nCan I catch 100 different Pokémon?");
+    const u8 gText_SubQuest4_Desc3[] = _("This is the final test I need to complete\nto become a fully-fledged Pokémon Ranger.\nCan I track the mythical Pokémon?");
 
     //PELLUCA MAIN (ONGOING BIG SIDE QUEST)
     const u8 gText_SubQuest5_Name1[] = _("Help the Mayor!");

@@ -323,7 +323,7 @@ script RangerInstitute_2F_Trigger0{
         waitmovement(0)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("Hey wait-  oh, a new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction.\pFollow me. I'll introduce you to Ravine, the Ranger Institute Head."))
+        msgbox(format("Hey wait -  oh, a new Ranger Recruit? Welcome to the Ranger Institute, recruit! It's been a while since someone passed our interview. You must be here for your induction.\pFollow me. I'll introduce you to Ravine, the Ranger Institute Head."))
         release
 
         //move to Ravine
@@ -448,13 +448,211 @@ script RangerInstitute_2F_EventScript_Welcome{
 
 script RangerInstitute_Ravine{
 
+    if (var(VAR_RANGER_INSTITUTE) == 11){
+        lockall 
+        faceplayer
+        speakername("Ravine")
+        msgbox(format("I've already told everyone that you'll clear the final mission with flying colours, so don't let me down!"), MSGBOX_YESNO)
+        releaseall
+        end    
+    }
+
     if (var(VAR_RANGER_INSTITUTE) == 10){///Start final quest
+        lockall 
+        faceplayer
         speakername("Ravine")
         msgbox(format("How do you feel about your new Pokémon, {PLAYER}?\pGood?\pHaha! It's the first of many.\pYou ready to become a fully-fledged Pokémon Ranger?"), MSGBOX_YESNO)
         release
         if (var(VAR_RESULT) == 0){
             speakername("Ravine")
-            msgbox(format("Haha! Heard horror stories about the final test, did you?\pCome back when you're ready!"))
+            msgbox(format("Haha! Heard horror stories about the final mission, did you?\pCome back when you're ready!"))
+            releaseall
+            end
+        } else {
+            speakername("Ravine")
+            msgbox(format("Haha! That's it - that's the Pokémon Ranger spirit within you, {PLAYER}!\lCome then, shall I brief you on your final mission?"))
+            release
+            delay(16)
+
+            //move to the scientist
+            //move player
+            specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+            if (var(VAR_RESULT) == DIR_SOUTH){
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_right * 4 walk_up))
+            }
+            if (var(VAR_RESULT) == DIR_WEST){
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down walk_up walk_right * 3 walk_up))
+            }
+            applymovement(VAR_LAST_TALKED, moves(walk_right * 5 walk_up * 2 face_left))
+            waitmovement(0)
+
+            applymovement(21, moves(face_right))
+            waitmovement(0)
+
+            speakername("Ravine")
+            msgbox(format("We've got one ready to go!\nCan you debrief {PLAYER}?"))
+            release
+            delay(16)
+
+            //scientist reaction
+            applymovement(21, moves(jump_in_place_right))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("Excellent! Right away, Director."))
+            release
+            delay(16)
+            applymovement(21, moves(face_down))
+            waitmovement(0)
+            delay(30)
+            applymovement(21, moves(emote_exclamation_mark jump_in_place_down))
+            waitmovement(0)
+            delay(24)
+            applymovement(21, moves(face_right))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("Director, I must warn you - this is\na rather...involved assignment."))
+            release        
+
+            applymovement(LOCALID_RAVINE, moves(jump_in_place_left))
+            waitmovement(0)
+            delay(16)
+            speakername("Ravine")
+            msgbox(format("Hahaha! Doubting {PLAYER} will be your biggest mistake!\l{PLAYER}'s ready. Director's approval! This is the final mission before becoming a Cormoria Pokémon Ranger. It's got to be a tough one! Only the very best can become a Pokémon Ranger after all."))
+            release
+            delay(16)
+            applymovement(21, moves(face_right))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("Right...yes, well."))
+            release        
+            applymovement(21, moves(face_down))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("{PLAYER}, was it?\pMy job with the Ranger Institute is to research the existence of rare Pokémon only spoken of in myths. We believe there's one right here on Route 6!\pBased on reported sightings, we've come up with an artist recreation.\pCome and take a look."))
+            release        
+
+            delay(16)
+
+            applymovement(21, moves(walk_left face_right))
+            waitmovement(0)
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+            waitmovement(0)
+
+            delay(16)
+
+            msgbox(format("..."))
+            release
+            delay(30)
+
+            msgbox(format("..."))
+            release
+            delay(30)
+
+            msgbox(format("..."))
+            release
+            delay(30)
+
+            applymovement(21, moves(emote_question_mark))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("That's strange...why isn't the drawing showing up on screen?"))
+            release  
+            delay(30)
+
+            playse(SE_M_THUNDER_WAVE)
+            setvar(VAR_0x8004, 2)  //vertical pan
+            setvar(VAR_0x8005, 2)  //horizontal pan
+            setvar(VAR_0x8006, 8)  //num shakes
+            setvar(VAR_0x8007, 5)  //shake delay        
+            special(ShakeCamera)        
+            waitstate
+
+            applymovement(21, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(16)
+            msgbox(format("The computer short-circuited!\nHow bizarre...\pDirector Ravine! This is precisely why\nI keep telling you that we need to upgrade our hardware!"))
+            release  
+
+            applymovement(LOCALID_RAVINE, moves(jump_in_place_left))
+            waitmovement(0)
+            delay(16)
+
+            speakername("Ravine")
+            msgbox(format("Nonsense! I've never even heard of such a request."))
+            release
+            delay(16)
+
+            applymovement(21, moves(jump_in_place_right))
+            waitmovement(0)
+            delay(16)
+
+            msgbox(format("Sigh...Director, you can just admit that you were daydreaming."))
+            release
+            delay(16)
+
+            applymovement(LOCALID_RAVINE, moves(jump_in_place_left))
+            waitmovement(0)
+            delay(16)
+
+            speakername("Ravine")
+            msgbox(format("Such accusations!\p...ahem.\pForget the computer. Listen to me carefully, {PLAYER}.\pWhat we know is that there is a yellow, catlike Pokémon somewhere on Route 6."))
+            release
+            delay(16)
+
+            applymovement(21, moves(jump_in_place_right))
+            waitmovement(0)
+            delay(16)
+
+            msgbox(format("Believe, not know."))
+            release
+            delay(16)
+
+            speakername("Ravine")
+            msgbox(format("Yes, believe.\pNow for your last mission, {PLAYER}, you are tasked with tracking down the whereabouts of this Pokémon!\pAll we have is the description - it's yellow and catlike. Nothing else!\lThis won't be easy, {PLAYER}. This will put all your skills to the test.\pBut a true Pokémon Ranger doesn't back down in the face of a challenge!\pSo buckle up, set off, and come back with an answer, one way or another.\pNow get going!"))
+            release
+            delay(16)
+
+            applymovement(21, moves(jump_in_place_right))
+            waitmovement(0)
+            delay(16)
+
+            msgbox(format("Good luck, {PLAYER}!"))
+            release
+            delay(16)
+
+            completesubquest(QUEST_POKEMON_RANGER, SUB_QUEST_3)
+            setvar(VAR_RANGER_INSTITUTE, 11)
+
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2))
+            waitmovement(0)
+
+            special(SpawnCameraObject)
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+            waitmovement(0)
+            special(RemoveCameraObject)
+
+            applymovement(21, moves(walk_right))
+            waitmovement(0)
+            delay(16)
+
+            msgbox(format("But seriously, why would there be an electrical overcharge here?\lDirector, I don't think this was an accident..."))
+            release
+            delay(16)
+
+            applymovement(LOCALID_RAVINE, moves(jump_in_place_left))
+            waitmovement(0)
+            delay(16)
+
+            msgbox(format("Shh! {PLAYER} will overhear us!\nIt's already an important mission - let's not add any more tension!"))
+            release
+            delay(16)
+
+            special(SpawnCameraObject)
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+            waitmovement(0)
+            special(RemoveCameraObject)
+
             releaseall
             end
         }
@@ -513,7 +711,13 @@ script RangerInstitute_2F_NPC_4{
     releaseall
     end
 }
-
+script RangerInstitute_2F_NPC_5{
+    lockall
+    faceplayer
+    msgbox(format("Hello there, new recruit!\nWanna see what I'm working on?\pI'm researching the existence of a Mythical Pokémon right here in Route 6! We've sent two Rangers out to search for it, but they've had no luck."))
+    releaseall
+    end
+}
 
 
 
