@@ -160,7 +160,7 @@ Debug_EventScript_Script_2::
 
 Debug_EventScript_Script_3::
 	setflag FLAG_RANGER_TAUROS_USE
-	warp MAP_PELLUCA_CITY, 43, 28
+	warp MAP_UNCHARTED_ISLAND, 54, 18
 	release
 	end
 

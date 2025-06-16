@@ -258,7 +258,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "UnchartedIsland_Carona",
+      "script": "UnchartedIsland_Viniel",
       "flag": "0"
     },
     {
@@ -271,7 +271,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_VinielGrunts",
       "flag": "0"
     },
     {
@@ -284,7 +284,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_VinielGrunts",
       "flag": "0"
     },
     {
@@ -297,7 +297,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_VinielGrunts",
       "flag": "0"
     },
     {
@@ -310,11 +310,11 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "UnchartedIsland_Grunt_A",
+      "script": "UnchartedIsland_VinielGrunts",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANECTRIC)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MANECTRIC_MEGA)",
       "x": 53,
       "y": 17,
       "elevation": 0,
@@ -323,7 +323,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "UnchartedIsland_Carona",
+      "script": "UnchartedIsland_Manectric",
       "flag": "0"
     },
     {

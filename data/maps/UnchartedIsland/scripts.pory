@@ -468,7 +468,7 @@ script UnchartedIsland_Finale_Skip{
 
 //Breech
 script UnchartedIsland_Breech{
-    msgbox_delay("Breech", format("{PLAYER} - you made it through!\pClefable and I will hide here behind the trees. You go on ahead, but be careful! I saw all the gym leaders out there. If they catch you, they'll send you back to the ship!\p...\pYou're just like you were back when I met you in Fennilahl Town. The only thing that changed is that you saved a hiker back then and you're saving all of Cormoria now.\pYou're really cool, {PLAYER}.\nI'm happy we met.\pGood luck!"))
+    msgbox_delay("Breech", format("{PLAYER} - you made it through!\pClefable and I will hide here behind the trees. You go on ahead, but be careful! I saw all the gym leaders out there.\lIf they catch you, they'll send you back to the ship!\p...\pYou're just like you were back when I met you in Fennilahl Town. The only thing that changed is that you saved\la hiker back then and you're saving\lall of Cormoria now.\pYou're really cool, {PLAYER}.\nI'm happy we met."))
 }
 script UnchartedIsland_Clefable{
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
@@ -517,6 +517,24 @@ script UnchartedIsland_Carona{
 
 //viniel is battling 3 of them together so he doesn't see you
 
+script UnchartedIsland_Viniel{
+    applymovement(VAR_LAST_TALKED, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(12)
+    msgbox_delay("Viniel", format("Haha - come on, all of you!\nBring four more, in fact!"))
+    end
+}
+script UnchartedIsland_Manectric{
+    playmoncry(SPECIES_MANECTRIC_MEGA, CRY_MODE_NORMAL)
+    msgbox(format("Manectric has mega evolved! These grunts don't stand a chance..."))
+    end
+}
+script UnchartedIsland_VinielGrunts{
+    msgbox_delay(NULL, format("Why is his Mega Manectric so strong?"))
+    end
+}
+
+
 script UnchartedIsland_Jania{
     speakername("Jania")
     call(UnchartedIsland_Leader_Caught_C)
@@ -541,12 +559,12 @@ script UnchartedIsland_Grunt_A{
 }
 script UnchartedIsland_Grunt_B{
     trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_B, format("They said the Ace Rookie was coming. Why are you here instead?"), format("I'd rather fight the Ace Rookie!"))
-    msgbox(format(""))
+    msgbox(format("We've never beaten you once...\nwho are you?"))
     releaseall
 }
 script UnchartedIsland_Grunt_C{
-    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format("Yeah, weren't you kicked off the case? Well whatever! We've almost achieved our goal - you think we'll let you stop us now?"), format("Don't ruin our plan!"))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_UNCHARTED_ISLAND_GRUNT_C, format("Yeah, weren't you kicked off the case? Well whatever! We're so close - you think we'll let you stop us now?"), format("Don't ruin our plan!"))
+    msgbox(format("Go on ahead then! I bet Moxie and Melea will teach you a lesson!"))
     releaseall
 }
 
@@ -610,7 +628,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     //set the pokemon hide flag
     clearflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
 
-    msgbox_delay("Moxie", format("{PLAYER}.\pA familiar face by now.\nHow many times has it been?\pWe received intel that you were off the case, and we would only have to deal with the Ace Rookie.\pIt was our mistake, I suppose, to assume you wouldn't come any way."))
+    msgbox_delay("Moxie", format("{PLAYER}.\pA familiar face by now.\nHow many times has it been?\pWe received intel that you were off\nthe case, and we would only have to\ldeal with the Ace Rookie.\pIt was our mistake, I suppose, to assume you wouldn't come any way."))
     
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     waitmovement(0)
@@ -631,10 +649,10 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Moxie", format("And yet, pest that you are, you manage to find your way to us and foil our plans again and again!"))
+    msgbox_delay("Moxie", format("And yet, pest that you are, you\nmanage to find your way to us and\lfoil our plans every time!"))
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
-    applymovement(LOCALID_MELEA_1, moves(jump_in_place_up))
+    applymovement(LOCALID_MELEA_1, moves(face_up))
     waitmovement(0)
     delay(16)
     msgbox_delay("Melea", format("Look across the water."))
@@ -648,7 +666,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right * 10 walk_up * 14))
     waitmovement(0)
 
-    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this is where Professor Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
+    msgbox_delay("Moxie", format("The third and final dreamstone.\pIt took us a while to locate, but this\nis where Professor Tenebris took her dreamstone and vanished.\pThis is where it all began..."))
 
     setobjectxyperm(LOCALID_MELEA_1, 67, 38)
 
@@ -661,14 +679,14 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(LOCALID_MELEA_1, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("And this is where we'll finally complete the plan!"))
+    msgbox_delay("Melea", format("And this is where we - Team Somber - will finally complete our plan!"))
 
 
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Moxie", format("You bested us before.\pWe're not taking that risk again. Not here. Not now.\pYou can't beat the two of us, {PLAYER}!\nIf only you had some help."))
+    msgbox_delay("Moxie", format("You bested us before.\pWe're not taking that risk again.\nNot here. Not now.\pYou can't beat the two of us, {PLAYER}!\nIf only you had some help."))
 
     //kohla
     applymovement(LOCALID_MOXIE_1, moves(emote_exclamation_mark face_left))
@@ -688,7 +706,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(LOCALID_MELEA_1, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)    
-    msgbox_delay("Melea", format("No matter - they can't beat the two of us.\pI'll take the Ace Rookie.\nYou deal with {PLAYER}!"))
+    msgbox_delay("Melea", format("No matter - they won't win against the two of us together.\pI'll take the Ace Rookie.\nYou deal with {PLAYER}!"))
     delay(16)
 
     msgbox_delay("Kohla", format("..."))
@@ -704,13 +722,13 @@ script UnchartedIsland_Moxie_Melea_Fight{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Melea", format("Hahaha! I can't believe it! You've been thrown under the bus! The Ace Rookie just left you alone!"))
+    msgbox_delay("Melea", format("Hahaha! I can't believe it! You've been thrown under the bus!\pThe Ace Rookie just left you alone!"))
 
     applymovement(LOCALID_MOXIE_1, moves(jump_in_place_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll go and stop the Ace Rookie.\pNow that we control the dreamstone, we've picked up some rare ancient Pokémon of our own!\pIt's time to end this once and for all!"))
+    msgbox_delay("Moxie", format("Hahaha! Now that settles it.\pYou're finished, {PLAYER}! Once we deal with you, we'll stop the Ace Rookie.\pNow that we control the dreamstone, we've picked up some powerful ancient Pokémon of our own!\pIt's time to end this once and for all!"))
 
     //battle 1
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MOXIE, format("No! Everything's ruined!"))
@@ -733,7 +751,7 @@ script UnchartedIsland_Moxie_Melea_Fight{
     //battle 2
     trainerbattle_no_intro(TRAINER_UNCHARTED_ISLAND_MELEA, format("This can't be happening!"))
     //post-battle 2
-    msgbox_delay("Melea", format("No!\pWe've worked too hard...I can't let it end like this.\pNo!!!"))
+    msgbox_delay("Melea", format("No!\pWe've worked too hard...\nI can't let it end like this!\pNo!!!"))
     applymovement(LOCALID_MELEA_1, moves(walk_fast_down walk_fast_right *5 walk_fast_down *5))
     waitmovement(0)
 
@@ -766,7 +784,7 @@ script UnchartedIsland_Melea_Destroy_Trigger{
     msgbox_delay("Melea", format("Absol! Destroy those rocks!\nWe can't let anyone come after us!"))
 
     applymovement(LOCALID_MELEA_1, moves(jump_in_place_left))
-    msgbox_delay("Melea", format("You'll never make it through!\pSo long, {PLAYER}. You've caused us enough pain and now we'll finally be rid of you!"))
+    msgbox_delay("Melea", format("You'll never make it through!\pSo long, {PLAYER}. You've caused us enough pain, but now we'll finally be\lrid of you!"))
     
     playmoncry(SPECIES_ABSOL_MEGA, CRY_MODE_NORMAL)
 
@@ -827,25 +845,25 @@ script UnchartedIsland_Tenebris{
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("???", format("I never forget a face when I see one.\pI remember signing off on your application, {PLAYER}.\pIt's long overdue, but it gives me great pleasure to welcome you to the Tenebris Lab...although I wish it were under better circumstances."))
+        msgbox_delay("???", format("I never forget a face when I see one.\pI remember signing off on your application, {PLAYER}.\pIt's long overdue, but it gives me great pleasure to welcome you to the Tenebris Lab...although I dearly wish it were under better circumstances."))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark jump_in_place_up)) 
         waitmovement(0)
         delay(24)
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("Yes, I'm Professor Tenebris.\pI've been hiding in Ancient Cormoria...but Team Somber found the dreamstones any way, so my effort was, it seems, wasted."))
+        msgbox_delay("Tenebris", format("Yes, I'm Professor Tenebris.\pI've been hiding in Ancient Cormoria...\nbut Team Somber found the dreamstones any way, so my effort was wasted."))
         applymovement(LOCALID_TENE, moves(jump_in_place_down)) 
         waitmovement(0)
         delay(16)
-        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your best to put an end to Team Somber's plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it. I didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me, but clearly it wasn't.\pSomeone from Team Somber had eyes on me and the dreamstone from the very beginning!\pAnd after my time in Ancient Cormoria, I know why."))
+        msgbox_delay("Tenebris", format("But you! I've been watching you.\nI chose a good research assistant.\pYou've done your utmost to put an end to Team Somber and their plans.\pIt's commendable.\pWhen I first discovered the dreamstones, I began to suspect that I was being spied on. That's why I took the dreamstone and ran away with it.\lI didn't know where to hide it so I came here and jumped into Ancient Cormoria. I thought that would be enough to stop whoever was spying on me...\lp...but clearly it wasn't.\pSomeone in Team Somber had eyes on the dreamstone from the very beginning!\pAnd now, after my time in Ancient Cormoria...I know why."))
         delay(16)
         msgbox_delay("Tenebris", format("The Ancient Terror..."))
         showmonpic(SPECIES_KORAIDON, 10, 3)
-        msgbox_delay("Tenebris", format("Of the many strong Pokémon that ruled over Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
+        msgbox_delay("Tenebris", format("Of the many strong Pokémon that ruled Ancient Cormoria, the Ancient Terror was the strongest! The most vicious!\pAnd the secret of its power?\pIt's one-of-a-kind ability...\nOrichalcum Pulse!\pOrichalcum Pulse calls forth sunlight so harsh it's impact can be felt across the entire region!\pWhy do you think there's an uncharted island right here? When I came there was nothing but a rock. They used Orichalcum Pulse and dried up the sea!"))
         hidemonpic
         delay(16)
-        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokémon. Even if I did, I'm not much resistance.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}.\pAnd truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
+        msgbox_delay("Tenebris", format("We must stop them...but I don't have my Pokémon. Even if I did, I'm not much use in a battle of strength.\pI can't stop them, {PLAYER}. And I fear neither can your Ace Rookie friend.\p...\pLike I said, I've been watching you.\nFirst at Mt. Ceram.\pThen at Silversun City.\pAgain at Mt. Mirroh.\p...\pI know nobody believes in you right now, {PLAYER}. And truth be told, I'd love to keep my youngest research associate safe from harm!\p...but you're the best we've got."))
         
         //last choice joke
         speakername(NULL)

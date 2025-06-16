@@ -96,174 +96,206 @@ SSElegant_Storage_Moonblast::
 # 55 "data//maps/SSElegant_Storage/scripts.pory"
 	removeobject 7
 # 57 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 8, SSElegant_Storage_Moonblast_Movement_4
-# 58 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	delay 30
 # 59 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 8
-# 61 "data//maps/SSElegant_Storage/scripts.pory"
-	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
-# 62 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
-# 64 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 8, SSElegant_Storage_Moonblast_Movement_2
-# 65 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 8, SSElegant_Storage_Moonblast_Movement_4
+# 60 "data//maps/SSElegant_Storage/scripts.pory"
 	waitmovement 0
-# 66 "data//maps/SSElegant_Storage/scripts.pory"
+# 61 "data//maps/SSElegant_Storage/scripts.pory"
 	delay 8
+# 63 "data//maps/SSElegant_Storage/scripts.pory"
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+# 64 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
+# 66 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 8, SSElegant_Storage_Moonblast_Movement_2
+# 67 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
 # 68 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 8
+# 70 "data//maps/SSElegant_Storage/scripts.pory"
 	playse SE_EXIT
-# 69 "data//maps/SSElegant_Storage/scripts.pory"
+# 71 "data//maps/SSElegant_Storage/scripts.pory"
 	removeobject 8
 # 72 "data//maps/SSElegant_Storage/scripts.pory"
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4
+	waitse
 # 73 "data//maps/SSElegant_Storage/scripts.pory"
-	setflag FLAG_HIDE_GAB_BREECH_STORAGE
-# 74 "data//maps/SSElegant_Storage/scripts.pory"
-	setvar VAR_SSELEGANT_CUTSCENES, 5
+	delay 24
+# 76 "data//maps/SSElegant_Storage/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4
 # 77 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_Moonblast_Movement_5
+	setflag FLAG_HIDE_GAB_BREECH_STORAGE
 # 78 "data//maps/SSElegant_Storage/scripts.pory"
+	setvar VAR_SSELEGANT_CUTSCENES, 5
+# 81 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_Moonblast_Movement_5
+# 82 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
+# 83 "data//maps/SSElegant_Storage/scripts.pory"
 	setflag FLAG_SYS_OW_FOLLOWERS_DISABLED
-# 79 "data//maps/SSElegant_Storage/scripts.pory"
+# 84 "data//maps/SSElegant_Storage/scripts.pory"
+	playse SE_EXIT
+# 85 "data//maps/SSElegant_Storage/scripts.pory"
 	warp MAP_UNCHARTED_ISLAND, 6, 34
 	return
 
 
 SSElegant_Storage_GabConfronts::
-# 86 "data//maps/SSElegant_Storage/scripts.pory"
-	lockall
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_GabConfronts_Movement_0
-# 88 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
-# 89 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
-# 91 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_1
 # 92 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 4, SSElegant_Storage_GabConfronts_Movement_1
+	lockall
 # 93 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_GabConfronts_Movement_0
 # 94 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
+	waitmovement 0
 # 95 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_2, SSElegant_Storage_GabConfronts_Text_3
+	delay 16
 # 97 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 5, SSElegant_Storage_GabConfronts_Movement_2
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_1
 # 98 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	applymovement 4, SSElegant_Storage_GabConfronts_Movement_1
 # 99 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
+	waitmovement 0
 # 100 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_4
-# 102 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 4, SSElegant_Storage_GabConfronts_Movement_3
+	delay 16
+# 101 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_2, SSElegant_Storage_GabConfronts_Text_3
 # 103 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	applymovement 5, SSElegant_Storage_GabConfronts_Movement_2
 # 104 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
+	waitmovement 0
 # 105 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_2, SSElegant_Storage_GabConfronts_Text_5
-# 107 "data//maps/SSElegant_Storage/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	delay 16
+# 106 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_4
 # 108 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 1
+	applymovement 4, SSElegant_Storage_GabConfronts_Movement_3
 # 109 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 2
+	waitmovement 0
 # 110 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 3
+	delay 16
 # 111 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 4
-# 112 "data//maps/SSElegant_Storage/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_2, SSElegant_Storage_GabConfronts_Text_5
+# 113 "data//maps/SSElegant_Storage/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 114 "data//maps/SSElegant_Storage/scripts.pory"
+	removeobject 1
 # 115 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 5, SSElegant_Storage_GabConfronts_Movement_4
+	removeobject 2
 # 116 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 6, SSElegant_Storage_Moonblast_Movement_1
+	removeobject 3
 # 117 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	removeobject 4
 # 118 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
-# 119 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_6
-# 121 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_Moonblast_Movement_1
-# 122 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 7, SSElegant_Storage_Moonblast_Movement_1
-# 123 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 8, SSElegant_Storage_Moonblast_Movement_1
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 6, SSElegant_Storage_GabConfronts_Movement_5
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 5, SSElegant_Storage_GabConfronts_Movement_6
-# 126 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
-# 127 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 16
-# 128 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_7
-# 129 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 6, SSElegant_Storage_GabConfronts_Movement_7
-# 130 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 5, SSElegant_Storage_GabConfronts_Movement_7
-# 131 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
-# 133 "data//maps/SSElegant_Storage/scripts.pory"
 	playse SE_EXIT
-# 134 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 5
-# 135 "data//maps/SSElegant_Storage/scripts.pory"
-	removeobject 6
-# 137 "data//maps/SSElegant_Storage/scripts.pory"
+# 119 "data//maps/SSElegant_Storage/scripts.pory"
+	waitse
+# 120 "data//maps/SSElegant_Storage/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 123 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 5, SSElegant_Storage_GabConfronts_Movement_4
+# 124 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 6, SSElegant_Storage_Moonblast_Movement_1
+# 125 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
+# 126 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 16
+# 127 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_6
+# 129 "data//maps/SSElegant_Storage/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_Moonblast_Movement_1
+# 130 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 7, SSElegant_Storage_Moonblast_Movement_1
+# 131 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 8, SSElegant_Storage_Moonblast_Movement_1
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 6, SSElegant_Storage_GabConfronts_Movement_5
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 5, SSElegant_Storage_GabConfronts_Movement_6
+# 134 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
+# 135 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 16
+# 136 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_GabConfronts_Text_0, SSElegant_Storage_GabConfronts_Text_7
+# 137 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 6, SSElegant_Storage_GabConfronts_Movement_7
 # 138 "data//maps/SSElegant_Storage/scripts.pory"
-	waitmovement 0
+	applymovement 5, SSElegant_Storage_GabConfronts_Movement_7
 # 139 "data//maps/SSElegant_Storage/scripts.pory"
-	delay 8
-# 141 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_8
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 8, SSElegant_Storage_GabConfronts_Movement_8
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement 7, SSElegant_Storage_GabConfronts_Movement_9
-# 146 "data//maps/SSElegant_Storage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_GabConfronts_Movement_9
-# 147 "data//maps/SSElegant_Storage/scripts.pory"
 	waitmovement 0
+# 141 "data//maps/SSElegant_Storage/scripts.pory"
+	playse SE_EXIT
+# 142 "data//maps/SSElegant_Storage/scripts.pory"
+	removeobject 5
+# 143 "data//maps/SSElegant_Storage/scripts.pory"
+	removeobject 6
+# 145 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_Moonblast_Movement_1
+# 146 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
+# 147 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 24
 # 149 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_9
-# 151 "data//maps/SSElegant_Storage/scripts.pory"
-	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_8
 # 152 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
+	applymovement 8, SSElegant_Storage_GabConfronts_Movement_8
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement 7, SSElegant_Storage_GabConfronts_Movement_9
 # 154 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_10
+	applymovement OBJ_EVENT_ID_PLAYER, SSElegant_Storage_GabConfronts_Movement_9
 # 155 "data//maps/SSElegant_Storage/scripts.pory"
-	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
-# 156 "data//maps/SSElegant_Storage/scripts.pory"
-	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
+	waitmovement 0
 # 157 "data//maps/SSElegant_Storage/scripts.pory"
-	playse SE_SUPER_EFFECTIVE
+	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_9
+# 159 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement LOCALID_CLEF, SSElegant_Storage_GabConfronts_Movement_10
 # 160 "data//maps/SSElegant_Storage/scripts.pory"
-	setflag FLAG_STORAGE_GAB_ZOROARK
+	waitmovement 0
 # 161 "data//maps/SSElegant_Storage/scripts.pory"
-	clearflag FLAG_HIDE_GAB_BREECH_STORAGE
+	delay 20
 # 162 "data//maps/SSElegant_Storage/scripts.pory"
-	setvar VAR_SSELEGANT_CUTSCENES, 3
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+# 163 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
 # 165 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_Moonblast_Text_0, SSElegant_Storage_GabConfronts_Text_10
+# 167 "data//maps/SSElegant_Storage/scripts.pory"
+	applymovement LOCALID_CLEF, SSElegant_Storage_GabConfronts_Movement_11
+# 168 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmovement 0
+# 169 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 20
+# 170 "data//maps/SSElegant_Storage/scripts.pory"
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+# 171 "data//maps/SSElegant_Storage/scripts.pory"
+	msgbox_delay SSElegant_Storage_Moonblast_Text_2, SSElegant_Storage_Moonblast_Text_3
+# 172 "data//maps/SSElegant_Storage/scripts.pory"
+	waitmoncry
+# 173 "data//maps/SSElegant_Storage/scripts.pory"
+	delay 16
+# 174 "data//maps/SSElegant_Storage/scripts.pory"
+	playse SE_SUPER_EFFECTIVE
+# 175 "data//maps/SSElegant_Storage/scripts.pory"
+	waitse
+# 178 "data//maps/SSElegant_Storage/scripts.pory"
+	setflag FLAG_STORAGE_GAB_ZOROARK
+# 179 "data//maps/SSElegant_Storage/scripts.pory"
+	clearflag FLAG_HIDE_GAB_BREECH_STORAGE
+# 180 "data//maps/SSElegant_Storage/scripts.pory"
+	setvar VAR_SSELEGANT_CUTSCENES, 3
+# 183 "data//maps/SSElegant_Storage/scripts.pory"
 	getplayerxy VAR_TEMP_2, VAR_TEMP_3
-# 166 "data//maps/SSElegant_Storage/scripts.pory"
+# 184 "data//maps/SSElegant_Storage/scripts.pory"
 	warp MAP_SSELEGANT_STORAGE, VAR_TEMP_2, VAR_TEMP_3
 	end
 
 
 SSElegant_Storage_Catcher1::
-# 173 "data//maps/SSElegant_Storage/scripts.pory"
+# 191 "data//maps/SSElegant_Storage/scripts.pory"
 	msgbox SSElegant_Storage_Catcher1_Text_0
-# 174 "data//maps/SSElegant_Storage/scripts.pory"
+# 192 "data//maps/SSElegant_Storage/scripts.pory"
 	warp MAP_SSELEGANT_STORAGE, 2, 2
-# 175 "data//maps/SSElegant_Storage/scripts.pory"
+# 193 "data//maps/SSElegant_Storage/scripts.pory"
 	delay 60
 	return
 
@@ -292,122 +324,136 @@ SSElegant_Storage_Moonblast_Movement_3:
 	walk_left
 	step_end
 
-# 57 "data//maps/SSElegant_Storage/scripts.pory"
+# 59 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_Moonblast_Movement_4:
-# 57 "data//maps/SSElegant_Storage/scripts.pory"
+# 59 "data//maps/SSElegant_Storage/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 77 "data//maps/SSElegant_Storage/scripts.pory"
+# 81 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_Moonblast_Movement_5:
-# 77 "data//maps/SSElegant_Storage/scripts.pory"
+# 81 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 77 "data//maps/SSElegant_Storage/scripts.pory"
+# 81 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
 	step_end
 
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
+# 93 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_0:
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
+# 93 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
+# 93 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
+# 93 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 87 "data//maps/SSElegant_Storage/scripts.pory"
+# 93 "data//maps/SSElegant_Storage/scripts.pory"
 	face_left
 	step_end
 
-# 92 "data//maps/SSElegant_Storage/scripts.pory"
+# 98 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_1:
-# 92 "data//maps/SSElegant_Storage/scripts.pory"
+# 98 "data//maps/SSElegant_Storage/scripts.pory"
 	emote_exclamation_mark
-# 92 "data//maps/SSElegant_Storage/scripts.pory"
+# 98 "data//maps/SSElegant_Storage/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 97 "data//maps/SSElegant_Storage/scripts.pory"
+# 103 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_2:
-# 97 "data//maps/SSElegant_Storage/scripts.pory"
+# 103 "data//maps/SSElegant_Storage/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 102 "data//maps/SSElegant_Storage/scripts.pory"
+# 108 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_3:
-# 102 "data//maps/SSElegant_Storage/scripts.pory"
+# 108 "data//maps/SSElegant_Storage/scripts.pory"
 	face_left
 	step_end
 
-# 115 "data//maps/SSElegant_Storage/scripts.pory"
+# 123 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_4:
-# 115 "data//maps/SSElegant_Storage/scripts.pory"
+# 123 "data//maps/SSElegant_Storage/scripts.pory"
 	face_right
 	step_end
 
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_5:
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
-# 124 "data//maps/SSElegant_Storage/scripts.pory"
+# 132 "data//maps/SSElegant_Storage/scripts.pory"
 	face_up
 	step_end
 
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_6:
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_right
-# 125 "data//maps/SSElegant_Storage/scripts.pory"
+# 133 "data//maps/SSElegant_Storage/scripts.pory"
 	face_up
 	step_end
 
-# 129 "data//maps/SSElegant_Storage/scripts.pory"
+# 137 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_7:
-# 129 "data//maps/SSElegant_Storage/scripts.pory"
+# 137 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_down
 	step_end
 
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_8:
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 144 "data//maps/SSElegant_Storage/scripts.pory"
+# 152 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
 	step_end
 
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 SSElegant_Storage_GabConfronts_Movement_9:
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_right
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_left
-# 145 "data//maps/SSElegant_Storage/scripts.pory"
+# 153 "data//maps/SSElegant_Storage/scripts.pory"
 	walk_up
+	step_end
+
+# 159 "data//maps/SSElegant_Storage/scripts.pory"
+SSElegant_Storage_GabConfronts_Movement_10:
+# 159 "data//maps/SSElegant_Storage/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 167 "data//maps/SSElegant_Storage/scripts.pory"
+SSElegant_Storage_GabConfronts_Movement_11:
+# 167 "data//maps/SSElegant_Storage/scripts.pory"
+	emote_exclamation_mark
+# 167 "data//maps/SSElegant_Storage/scripts.pory"
+	jump_in_place_up
 	step_end
 
 SSElegant_Storage_Moonblast_Text_0:
@@ -422,72 +468,71 @@ SSElegant_Storage_Moonblast_Text_1:
 	.string "Keep your Pokémon hidden, okay?$"
 
 SSElegant_Storage_Moonblast_Text_2:
-# 62 "data//maps/SSElegant_Storage/scripts.pory"
+# 64 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Clefable$"
 
 SSElegant_Storage_Moonblast_Text_3:
-# 62 "data//maps/SSElegant_Storage/scripts.pory"
+# 64 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Cleee!!!$"
 
 SSElegant_Storage_GabConfronts_Text_0:
-# 91 "data//maps/SSElegant_Storage/scripts.pory"
+# 97 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Gabrielle$"
 
 SSElegant_Storage_GabConfronts_Text_1:
-# 91 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "...and that's what Raazi wants you to\n"
-	.string "do!$"
+# 97 "data//maps/SSElegant_Storage/scripts.pory"
+	.string "...and that's what Raazi needs\n"
+	.string "all of you to do!$"
 
 SSElegant_Storage_GabConfronts_Text_2:
-# 95 "data//maps/SSElegant_Storage/scripts.pory"
+# 101 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Sailor$"
 
 SSElegant_Storage_GabConfronts_Text_3:
-# 95 "data//maps/SSElegant_Storage/scripts.pory"
+# 101 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Yes ma'am!\p"
 	.string "And sir!$"
 
 SSElegant_Storage_GabConfronts_Text_4:
-# 100 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "Now hurry up and get outside, or it'll all\n"
-	.string "fall apart!$"
+# 106 "data//maps/SSElegant_Storage/scripts.pory"
+	.string "Now hurry up and get outside, or it'll\n"
+	.string "all fall apart!$"
 
 SSElegant_Storage_GabConfronts_Text_5:
-# 105 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "C'mon, you lot! The Gym Leader's made us\n"
-	.string "a special request.\p"
+# 111 "data//maps/SSElegant_Storage/scripts.pory"
+	.string "C'mon, you lot! The Rivetshore\n"
+	.string "Gym Leader's made us a special request.\p"
 	.string "Let's get to it!$"
 
 SSElegant_Storage_GabConfronts_Text_6:
-# 119 "data//maps/SSElegant_Storage/scripts.pory"
+# 127 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Zoroark and I will go outside and keep\n"
 	.string "them from entering the storage hold.\p"
 	.string "You two find a way out from here!\p"
 	.string "...\p"
 	.string "{PLAYER} - don't do anything stupid!\n"
-	.string "And hide your Pokémon once you get off\l"
-	.string "the ship, or the leaders might catch\l"
-	.string "you.\p"
+	.string "And hide your Pokémon once you get off,\l"
+	.string "or the leaders might catch you.\p"
 	.string "...$"
 
 SSElegant_Storage_GabConfronts_Text_7:
-# 128 "data//maps/SSElegant_Storage/scripts.pory"
+# 136 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Good luck!$"
 
 SSElegant_Storage_GabConfronts_Text_8:
-# 141 "data//maps/SSElegant_Storage/scripts.pory"
+# 149 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Let's check out the back wall - I'm sure\n"
 	.string "we can find a spot to break through!$"
 
 SSElegant_Storage_GabConfronts_Text_9:
-# 149 "data//maps/SSElegant_Storage/scripts.pory"
-	.string "This wall looks like it can be\n"
-	.string "broken...Clefable, can you do it?$"
+# 157 "data//maps/SSElegant_Storage/scripts.pory"
+	.string "This wall looks like it can be broken...\n"
+	.string "Clefable, can you do it?$"
 
 SSElegant_Storage_GabConfronts_Text_10:
-# 154 "data//maps/SSElegant_Storage/scripts.pory"
+# 165 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Clefable - use Moonblast!$"
 
 SSElegant_Storage_Catcher1_Text_0:
-# 173 "data//maps/SSElegant_Storage/scripts.pory"
+# 191 "data//maps/SSElegant_Storage/scripts.pory"
 	.string "Hey! We've got a stowaway!$"

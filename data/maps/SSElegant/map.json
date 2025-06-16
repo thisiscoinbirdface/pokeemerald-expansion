@@ -277,6 +277,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "SSElegant_Gab_Breech_TeamUp_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SSElegant_Trigger_MonFromLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SSElegant_Trigger_MonFromRight"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SSElegant_Trigger_MonFromDown"
     }
   ],
   "bg_events": [

@@ -54,6 +54,8 @@ script SSElegant_Storage_Moonblast{
     playse(SE_EXIT)
     removeobject(7)
 
+    delay(30)
+
     applymovement(8, moves(jump_in_place_down))
     waitmovement(0)
     delay(8)
@@ -67,6 +69,8 @@ script SSElegant_Storage_Moonblast{
     
     playse(SE_EXIT)
     removeobject(8)
+    waitse
+    delay(24)
 
     //setflags
     subquestmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_STOP_TEAM_SOMBER, SUB_QUEST_4)
@@ -75,7 +79,9 @@ script SSElegant_Storage_Moonblast{
 
     //player exit
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 2))
+    waitmovement(0)
 	setflag(FLAG_SYS_OW_FOLLOWERS_DISABLED)
+    playse(SE_EXIT)
     warp(MAP_UNCHARTED_ISLAND, 6, 34)
     // waitstate
     // end
@@ -88,7 +94,7 @@ script SSElegant_Storage_GabConfronts{
     waitmovement(0)
     delay(16)
 
-    msgbox_delay("Gabrielle", format("...and that's what Raazi wants you to do!"))
+    msgbox_delay("Gabrielle", format("...and that's what Raazi needs\nall of you to do!"))
     applymovement(4, moves(emote_exclamation_mark jump_in_place_right))
     waitmovement(0)
     delay(16)
@@ -97,18 +103,20 @@ script SSElegant_Storage_GabConfronts{
     applymovement(5, moves(jump_in_place_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Gabrielle", format("Now hurry up and get outside, or it'll all fall apart!"))
+    msgbox_delay("Gabrielle", format("Now hurry up and get outside, or it'll\nall fall apart!"))
 
     applymovement(4, moves(face_left))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Sailor", format("C'mon, you lot! The Gym Leader's made us a special request.\pLet's get to it!"))
+    msgbox_delay("Sailor", format("C'mon, you lot! The Rivetshore\nGym Leader's made us a special request.\pLet's get to it!"))
 
     fadescreen(FADE_TO_BLACK)
     removeobject(1)
     removeobject(2)
     removeobject(3)
     removeobject(4)
+    playse(SE_EXIT)
+    waitse
     fadescreen(FADE_FROM_BLACK)
 
 
@@ -116,7 +124,7 @@ script SSElegant_Storage_GabConfronts{
     applymovement(6, moves(face_down))
     waitmovement(0)
     delay(16)
-    msgbox_delay("Gabrielle", format("Zoroark and I will go outside and keep them from entering the storage hold.\pYou two find a way out from here!\p...\p{PLAYER} - don't do anything stupid! And hide your Pokémon once you get off the ship, or the leaders might catch you.\p..."))    
+    msgbox_delay("Gabrielle", format("Zoroark and I will go outside and keep them from entering the storage hold.\pYou two find a way out from here!\p...\p{PLAYER} - don't do anything stupid! And hide your Pokémon once you get off, or the leaders might catch you.\p..."))    
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     applymovement(7, moves(face_down))
@@ -136,7 +144,7 @@ script SSElegant_Storage_GabConfronts{
 
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
     waitmovement(0)
-    delay(8)
+    delay(24)
 
     msgbox_delay("Breech", format("Let's check out the back wall - I'm sure we can find a spot to break through!"))
 
@@ -146,15 +154,25 @@ script SSElegant_Storage_GabConfronts{
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right walk_up * 5 walk_left walk_up))
     waitmovement(0)
 
-    msgbox_delay("Breech", format("This wall looks like it can be broken...Clefable, can you do it?"))
+    msgbox_delay("Breech", format("This wall looks like it can be broken...\nClefable, can you do it?"))
 
+    applymovement(LOCALID_CLEF, moves(jump_in_place_up))
+    waitmovement(0)
+    delay(20)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
     msgbox_delay("Clefable", "Cleee!!!")
 
     msgbox_delay("Breech", format("Clefable - use Moonblast!"))
+
+    applymovement(LOCALID_CLEF, moves(emote_exclamation_mark jump_in_place_up))
+    waitmovement(0)
+    delay(20)
     playmoncry(SPECIES_CLEFABLE, CRY_MODE_NORMAL)
     msgbox_delay("Clefable", "Cleee!!!")
+    waitmoncry
+    delay(16)
     playse(SE_SUPER_EFFECTIVE)
+    waitse
 
     //set
     setflag(FLAG_STORAGE_GAB_ZOROARK)
