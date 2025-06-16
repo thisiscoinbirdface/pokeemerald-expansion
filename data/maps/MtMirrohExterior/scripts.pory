@@ -100,6 +100,8 @@ script MtMirrohExterior_Breech_Reward_End{
     removeobject(LOCALID_CLEF)
 
     setflag(FLAG_MIRROH_EXTERIOR_BREECH)
+    setflag(FLAG_DETECTIVE_ACAD_BREECH)
+
     releaseall
     end
 }

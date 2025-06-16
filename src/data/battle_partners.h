@@ -107,14 +107,16 @@
     [DIFFICULTY_NORMAL][PARTNER_ROUTE6_GAB] =
     {
 #line 47
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("Gabrielle"),
 #line 48
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
 #line 49
-        .trainerPic = TRAINER_BACK_PIC_STEVEN,
+        .trainerPic = TRAINER_BACK_PIC_GABRIELLE,
         .encounterMusic_gender =
+#line 50
+F_TRAINER_FEMALE | 
 #line 51
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

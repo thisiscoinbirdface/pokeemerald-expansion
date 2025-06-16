@@ -44,11 +44,11 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 
 
 === PARTNER_ROUTE6_GAB ===
-Name: GABRIELLE
-Class: Rival
-Pic: Steven
-Gender: Male
-Music: Male
+Name: Gabrielle
+Class: Pkmn Trainer 2
+Pic: Gabrielle
+Gender: Female
+Music: Female
 
 Zoroark-Hisui
 Level: 31

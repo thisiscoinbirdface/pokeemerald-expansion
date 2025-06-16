@@ -160,6 +160,7 @@ extern const struct SpriteFrameImage gTrainerBackPicTable_RubySapphireBrendan[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_RubySapphireMay[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Wally[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Steven[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Gabrielle[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Munucu[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Shububu[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Gubuking[];

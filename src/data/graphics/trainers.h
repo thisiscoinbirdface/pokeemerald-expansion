@@ -400,6 +400,9 @@ const u32 gTrainerPalette_Rue[] = INCBIN_U32("graphics/trainers/my_trainers/rue.
 const u32 gTrainerFrontPic_QwilsquadBoss[] = INCBIN_U32("graphics/trainers/my_trainers/qwilsquad_boss.4bpp.lz");
 const u32 gTrainerPalette_QwilsquadBoss[] = INCBIN_U32("graphics/trainers/my_trainers/qwilsquad_boss.gbapal.lz");
 
+const u8 gTrainerBackPic_Gabrielle[] = INCBIN_U8("graphics/trainers/my_trainers/gabrielle_back.4bpp");
+const u32 gTrainerPalette_Gabrielle[] = INCBIN_U32("graphics/trainers/my_trainers/gabrielle_back.gbapal.lz");
+
 
 
 //gym leaders
@@ -694,6 +697,14 @@ const struct SpriteFrameImage gTrainerBackPicTable_Steven[] =
     {gTrainerBackPic_Steven + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
 };
 
+const struct SpriteFrameImage gTrainerBackPicTable_Gabrielle[] =
+{
+    {gTrainerBackPic_Gabrielle + TRAINER_PIC_SIZE * 0, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gabrielle + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gabrielle + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gabrielle + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+};
+
 
 //CUSTOM CHARACTERS
 const struct SpriteFrameImage gTrainerBackPicTable_Munucu[] =
@@ -757,5 +768,6 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY, 4, gTrainerBackPic_RubySapphireMay, gTrainerBackPicTable_RubySapphireMay, gTrainerPalette_RubySapphireMay, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_WALLY, 4, gTrainerBackPic_Wally, gTrainerBackPicTable_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerBackPicTable_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GABRIELLE, 4, gTrainerBackPic_Gabrielle, gTrainerBackPicTable_Gabrielle, gTrainerPalette_Gabrielle, sBackAnims_Hoenn),
 
 };

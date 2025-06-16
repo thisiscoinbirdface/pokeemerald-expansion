@@ -170,6 +170,7 @@ Debug_EventScript_Script_4::
 	end
 
 Debug_EventScript_Script_5::
+	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	release
 	end
 

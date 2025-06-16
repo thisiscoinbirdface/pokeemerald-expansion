@@ -19315,7 +19315,7 @@ F_TRAINER_FEMALE |
 #line 9380
             .heldItem = ITEM_LEFTOVERS,
 #line 9383
-            .ev = TRAINER_PARTY_EVS(252, 0, 116, 0, 0, 140),
+            .ev = TRAINER_PARTY_EVS(116, 0, 0, 0, 0, 0),
 #line 9384
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 9381
