@@ -300,9 +300,15 @@ const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pic
 
 //MY CUSTOM TRAINERS (I AM GOING TO USE THESE ONE BY ONE)
 //CUSTOM CHARACTERS
-const u32 gTrainerFrontPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.4bpp.lz");
-const u8 gTrainerBackPic_Munucu[] = INCBIN_U8("graphics/trainers/my_trainers/munucu_back.4bpp");
-const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu_back.gbapal.lz");
+
+// const u32 gTrainerFrontPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu.4bpp.lz");
+// const u8 gTrainerBackPic_Munucu[] = INCBIN_U8("graphics/trainers/my_trainers/munucu_back.4bpp");
+// const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/munucu_back.gbapal.lz");
+
+//if kou
+const u32 gTrainerFrontPic_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/kou.4bpp.lz");
+const u8 gTrainerBackPic_Munucu[] = INCBIN_U8("graphics/trainers/my_trainers/kou_back.4bpp");
+const u32 gTrainerPalette_Munucu[] = INCBIN_U32("graphics/trainers/my_trainers/kou_back.gbapal.lz");
 
 const u32 gTrainerFrontPic_Shububu[] = INCBIN_U32("graphics/trainers/my_trainers/shububu.4bpp.lz");
 const u8 gTrainerBackPic_Shububu[] = INCBIN_U8("graphics/trainers/my_trainers/shububu_back.4bpp");
@@ -696,6 +702,9 @@ const struct SpriteFrameImage gTrainerBackPicTable_Munucu[] =
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+
+    //if kou
+    {gTrainerBackPic_Munucu + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
 const struct SpriteFrameImage gTrainerBackPicTable_Shububu[] =
@@ -712,6 +721,7 @@ const struct SpriteFrameImage gTrainerBackPicTable_Gubuking[] =
     {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 1, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 2, TRAINER_PIC_SIZE},
     {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 3, TRAINER_PIC_SIZE},
+    {gTrainerBackPic_Gubuking + TRAINER_PIC_SIZE * 4, TRAINER_PIC_SIZE},
 };
 
 
@@ -733,7 +743,10 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MAY, 4, gTrainerBackPic_May, gTrainerBackPicTable_May, gTrainerPalette_May_Back, sBackAnims_Hoenn),
 
     //Custom characters
-    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Hoenn),
+//    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 4, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Hoenn),
+    //if kou
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_MUNUCU, 5, gTrainerBackPic_Munucu, gTrainerBackPicTable_Munucu, gTrainerPalette_Munucu, sBackAnims_Kanto),
+    
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_SHUBUBU, 4, gTrainerBackPic_Shububu, gTrainerBackPicTable_Shububu, gTrainerPalette_Shububu, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GUBUKING, 5, gTrainerBackPic_Gubuking, gTrainerBackPicTable_Gubuking, gTrainerPalette_Gubuking, sBackAnims_Kanto),
 
