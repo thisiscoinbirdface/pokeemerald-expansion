@@ -16326,7 +16326,7 @@ F_TRAINER_FEMALE |
 #line 7921
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 7920
-            .lvl = 51,
+            .lvl = 50,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -16337,7 +16337,7 @@ F_TRAINER_FEMALE |
 #line 7925
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 7924
-            .lvl = 52,
+            .lvl = 51,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -16409,7 +16409,7 @@ F_TRAINER_FEMALE |
 #line 7952
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 7951
-            .lvl = 51,
+            .lvl = 50,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -16420,7 +16420,7 @@ F_TRAINER_FEMALE |
 #line 7955
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 7954
-            .lvl = 52,
+            .lvl = 51,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -16492,7 +16492,7 @@ F_TRAINER_FEMALE |
 #line 7993
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 7992
-            .lvl = 52,
+            .lvl = 51,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -16512,9 +16512,9 @@ F_TRAINER_FEMALE |
             .species = SPECIES_FLUTTER_MANE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8001
-            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+            .iv = TRAINER_PARTY_IVS(15, 25, 15, 25, 25, 15),
 #line 8000
-            .lvl = 53,
+            .lvl = 52,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

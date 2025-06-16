@@ -7450,6 +7450,10 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 Skarmory
 Level: 50
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Body Press
+- Drill Peck
+- Roost
+- Iron Defence
 
 Excadrill
 Level: 51
@@ -7479,6 +7483,11 @@ Level: 48
 
 Skarmory
 Level: 50
+Ability: Weak Armor
+- Body Press
+- Drill Peck
+- Roost
+- Iron Defence
 
 Excadrill
 Level: 51
