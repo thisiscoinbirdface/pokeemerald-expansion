@@ -365,6 +365,7 @@ mart RivetshoreCity_Mart_1{
     ITEM_FULL_RESTORE
     ITEM_FULL_HEAL
     ITEM_FLAME_ORB
+    ITEM_THICK_CLUB
 }
 
 mart RivetshoreCity_Mart_2{
@@ -400,7 +401,7 @@ mart RivetshoreCity_Mart_Secret{
 script RivetshoreCity_Mareanie{
     lockall
     playmoncry(SPECIES_MAREANIE, CRY_MODE_NORMAL)
-    msgbox(format("Mareanie is peering into the water..."))
+    msgbox(format("Mareanie is peering into the water...\nIt must be looking for a Corsola!"))
     releaseall
     end
 }

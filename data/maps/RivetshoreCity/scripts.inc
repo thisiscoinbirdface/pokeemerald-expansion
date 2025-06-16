@@ -491,76 +491,78 @@ RivetshoreCity_Mart_1:
 	.2byte ITEM_FULL_HEAL
 # 367 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_FLAME_ORB
+# 368 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_THICK_CLUB
 	.2byte ITEM_NONE
 
 	.align 2
-# 370 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_2:
 # 371 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM19
+RivetshoreCity_Mart_2:
 # 372 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM23
+	.2byte ITEM_TM19
 # 373 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM26
+	.2byte ITEM_TM23
 # 374 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM30
+	.2byte ITEM_TM26
 # 375 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM33
+	.2byte ITEM_TM30
 # 376 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_TM34
+	.2byte ITEM_TM33
 # 377 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_TM34
+# 378 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TM36
 	.2byte ITEM_NONE
 
 	.align 2
-# 380 "data//maps/RivetshoreCity/scripts.pory"
-RivetshoreCity_Mart_Secret:
 # 381 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_CUFF
+RivetshoreCity_Mart_Secret:
 # 382 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_GALARICA_WREATH
+	.2byte ITEM_GALARICA_CUFF
 # 383 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_GALARICA_WREATH
 # 384 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_MOON_STONE
+	.2byte ITEM_DUSK_STONE
 # 385 "data//maps/RivetshoreCity/scripts.pory"
-	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_MOON_STONE
 # 386 "data//maps/RivetshoreCity/scripts.pory"
+	.2byte ITEM_PRISM_SCALE
+# 387 "data//maps/RivetshoreCity/scripts.pory"
 	.2byte ITEM_TIME_WATER
 	.2byte ITEM_NONE
 
 RivetshoreCity_Mareanie::
-# 401 "data//maps/RivetshoreCity/scripts.pory"
-	lockall
 # 402 "data//maps/RivetshoreCity/scripts.pory"
-	playmoncry SPECIES_MAREANIE, CRY_MODE_NORMAL
+	lockall
 # 403 "data//maps/RivetshoreCity/scripts.pory"
-	msgbox RivetshoreCity_Mareanie_Text_0
+	playmoncry SPECIES_MAREANIE, CRY_MODE_NORMAL
 # 404 "data//maps/RivetshoreCity/scripts.pory"
+	msgbox RivetshoreCity_Mareanie_Text_0
+# 405 "data//maps/RivetshoreCity/scripts.pory"
 	releaseall
 	end
 
 
 RivetshoreCity_Aron::
-# 408 "data//maps/RivetshoreCity/scripts.pory"
-	playmoncry SPECIES_ARON, CRY_MODE_NORMAL
 # 409 "data//maps/RivetshoreCity/scripts.pory"
+	playmoncry SPECIES_ARON, CRY_MODE_NORMAL
+# 410 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_Aron_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_Geodude::
-# 413 "data//maps/RivetshoreCity/scripts.pory"
-	playmoncry SPECIES_GEODUDE, CRY_MODE_NORMAL
 # 414 "data//maps/RivetshoreCity/scripts.pory"
+	playmoncry SPECIES_GEODUDE, CRY_MODE_NORMAL
+# 415 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_Geodude_Text_0, MSGBOX_NPC
 	end
 
 
 RivetshoreCity_Surskit::
-# 418 "data//maps/RivetshoreCity/scripts.pory"
-	playmoncry SPECIES_SURSKIT, CRY_MODE_NORMAL
 # 419 "data//maps/RivetshoreCity/scripts.pory"
+	playmoncry SPECIES_SURSKIT, CRY_MODE_NORMAL
+# 420 "data//maps/RivetshoreCity/scripts.pory"
 	msgbox RivetshoreCity_Surskit_Text_0, MSGBOX_NPC
 	end
 
@@ -1140,20 +1142,20 @@ RivetshoreCity_Market_Shop_Secret_Text_1:
 	.string "What'll you buy today?$"
 
 RivetshoreCity_Mareanie_Text_0:
-# 403 "data//maps/RivetshoreCity/scripts.pory"
+# 404 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Mareanie is peering into the water...$"
 
 RivetshoreCity_Aron_Text_0:
-# 409 "data//maps/RivetshoreCity/scripts.pory"
+# 410 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Aron is scurrying around!\n"
 	.string "It's hard to squeeze through...$"
 
 RivetshoreCity_Geodude_Text_0:
-# 414 "data//maps/RivetshoreCity/scripts.pory"
+# 415 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Geodude thumps itself with its arms!\n"
 	.string "Guess it doesn't hurt much.$"
 
 RivetshoreCity_Surskit_Text_0:
-# 419 "data//maps/RivetshoreCity/scripts.pory"
+# 420 "data//maps/RivetshoreCity/scripts.pory"
 	.string "Surskit shkips around nervously...is it\n"
 	.string "looking out for the prankster Pokémon?$"

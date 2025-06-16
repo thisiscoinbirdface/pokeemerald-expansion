@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Ariana",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_INGER",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Inger",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_JANIA",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Jania",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LEADER_GLORIA",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Gloria",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MINIOR)",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Minior",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TAUROS_PALDEA_BLAZE)",
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RivetshoreCity_Harbor_Tauros",
-      "flag": "0"
+      "flag": "FLAG_RIVETSHORE_RAAZI_CALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",

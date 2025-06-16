@@ -102,6 +102,7 @@ script LilyPond_Cave_Blastoise{
     if (var(VAR_RESULT) == 0){end}
 
     msgbox(format("Administer a Hyper Potion on Blastoise' wound?"), MSGBOX_YESNO)
+    release
     if (var(VAR_RESULT) == 0){end}
 
     playse(SE_USE_ITEM)

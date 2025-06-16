@@ -151,87 +151,89 @@ LilyPond_Cave_Blastoise::
 # 104 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Cave_Blastoise_Text_1, MSGBOX_YESNO
 # 105 "data//maps/IvyRiver/scripts.pory"
+	release
+# 106 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LilyPond_Cave_Blastoise_5
-# 107 "data//maps/IvyRiver/scripts.pory"
-	playse SE_USE_ITEM
 # 108 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Blastoise_Text_2
+	playse SE_USE_ITEM
 # 109 "data//maps/IvyRiver/scripts.pory"
-	release
+	msgbox LilyPond_Cave_Blastoise_Text_2
 # 110 "data//maps/IvyRiver/scripts.pory"
-	delay 16
+	release
 # 111 "data//maps/IvyRiver/scripts.pory"
-	playmoncry SPECIES_BLASTOISE, CRY_MODE_NORMAL
+	delay 16
 # 112 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Blastoise_Text_3
+	playmoncry SPECIES_BLASTOISE, CRY_MODE_NORMAL
 # 113 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Cave_Blastoise_Text_3
+# 114 "data//maps/IvyRiver/scripts.pory"
 	release
-# 116 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Blastoise_Movement_0
 # 117 "data//maps/IvyRiver/scripts.pory"
-	applymovement 4, LilyPond_Cave_Blastoise_Movement_0
+	applymovement 3, LilyPond_Cave_Blastoise_Movement_0
 # 118 "data//maps/IvyRiver/scripts.pory"
-	applymovement 5, LilyPond_Cave_Blastoise_Movement_0
+	applymovement 4, LilyPond_Cave_Blastoise_Movement_0
 # 119 "data//maps/IvyRiver/scripts.pory"
-	applymovement 6, LilyPond_Cave_Blastoise_Movement_0
+	applymovement 5, LilyPond_Cave_Blastoise_Movement_0
 # 120 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
+	applymovement 6, LilyPond_Cave_Blastoise_Movement_0
 # 121 "data//maps/IvyRiver/scripts.pory"
-	delay 24
+	waitmovement 0
 # 122 "data//maps/IvyRiver/scripts.pory"
-	applymovement 1, LilyPond_Cave_Blastoise_Movement_1
+	delay 24
 # 123 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
+	applymovement 1, LilyPond_Cave_Blastoise_Movement_1
 # 124 "data//maps/IvyRiver/scripts.pory"
-	applymovement 1, LilyPond_Cave_Blastoise_Movement_2
+	waitmovement 0
 # 125 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Blastoise_Movement_3
+	applymovement 1, LilyPond_Cave_Blastoise_Movement_2
 # 126 "data//maps/IvyRiver/scripts.pory"
-	applymovement 4, LilyPond_Cave_Blastoise_Movement_4
+	applymovement 3, LilyPond_Cave_Blastoise_Movement_3
 # 127 "data//maps/IvyRiver/scripts.pory"
-	applymovement 5, LilyPond_Cave_Blastoise_Movement_4
+	applymovement 4, LilyPond_Cave_Blastoise_Movement_4
 # 128 "data//maps/IvyRiver/scripts.pory"
-	applymovement 6, LilyPond_Cave_Blastoise_Movement_4
+	applymovement 5, LilyPond_Cave_Blastoise_Movement_4
 # 129 "data//maps/IvyRiver/scripts.pory"
+	applymovement 6, LilyPond_Cave_Blastoise_Movement_4
+# 130 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
-# 131 "data//maps/IvyRiver/scripts.pory"
-	delay 8
 # 132 "data//maps/IvyRiver/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LilyPond_Cave_Blastoise_Movement_5
+	delay 8
 # 133 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Blastoise_Movement_6
+	applymovement OBJ_EVENT_ID_PLAYER, LilyPond_Cave_Blastoise_Movement_5
 # 134 "data//maps/IvyRiver/scripts.pory"
+	applymovement 3, LilyPond_Cave_Blastoise_Movement_6
+# 135 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
-# 136 "data//maps/IvyRiver/scripts.pory"
+# 137 "data//maps/IvyRiver/scripts.pory"
 	delay 16
-# 138 "data//maps/IvyRiver/scripts.pory"
-	playmoncry SPECIES_DREEPY, CRY_MODE_NORMAL
 # 139 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Blastoise_Movement_7
+	playmoncry SPECIES_DREEPY, CRY_MODE_NORMAL
 # 140 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Blastoise_Text_4
+	applymovement 3, LilyPond_Cave_Blastoise_Movement_7
 # 141 "data//maps/IvyRiver/scripts.pory"
-	release
+	msgbox LilyPond_Cave_Blastoise_Text_4
 # 142 "data//maps/IvyRiver/scripts.pory"
-	delay 16
+	release
 # 143 "data//maps/IvyRiver/scripts.pory"
-	applymovement 3, LilyPond_Cave_Blastoise_Movement_8
+	delay 16
 # 144 "data//maps/IvyRiver/scripts.pory"
+	applymovement 3, LilyPond_Cave_Blastoise_Movement_8
+# 145 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
-# 146 "data//maps/IvyRiver/scripts.pory"
-	removeobject 1
 # 147 "data//maps/IvyRiver/scripts.pory"
-	removeobject 3
+	removeobject 1
 # 148 "data//maps/IvyRiver/scripts.pory"
-	removeobject 4
+	removeobject 3
 # 149 "data//maps/IvyRiver/scripts.pory"
-	removeobject 5
+	removeobject 4
 # 150 "data//maps/IvyRiver/scripts.pory"
+	removeobject 5
+# 151 "data//maps/IvyRiver/scripts.pory"
 	removeobject 6
-# 152 "data//maps/IvyRiver/scripts.pory"
+# 153 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_LAPRAS
-# 154 "data//maps/IvyRiver/scripts.pory"
+# 155 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
@@ -243,142 +245,142 @@ LilyPond_Cave_Blastoise_5:
 
 
 LilyPond_Cave_Lapras_Encounter::
-# 159 "data//maps/IvyRiver/scripts.pory"
+# 160 "data//maps/IvyRiver/scripts.pory"
 	lockall
-# 161 "data//maps/IvyRiver/scripts.pory"
+# 162 "data//maps/IvyRiver/scripts.pory"
 	checkitem ITEM_POKE_FLUTE
-# 163 "data//maps/IvyRiver/scripts.pory"
+# 164 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LilyPond_Cave_Lapras_Encounter_2
-# 172 "data//maps/IvyRiver/scripts.pory"
+# 173 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Cave_Lapras_Encounter_Text_1, MSGBOX_YESNO
-# 174 "data//maps/IvyRiver/scripts.pory"
+# 175 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq LilyPond_Cave_Lapras_Encounter_5
-# 206 "data//maps/IvyRiver/scripts.pory"
+# 207 "data//maps/IvyRiver/scripts.pory"
 	release
 LilyPond_Cave_Lapras_Encounter_4:
-# 208 "data//maps/IvyRiver/scripts.pory"
+# 209 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
 LilyPond_Cave_Lapras_Encounter_2:
-# 164 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Encounter_Text_0
 # 165 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Cave_Lapras_Encounter_Text_0
+# 166 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
 LilyPond_Cave_Lapras_Encounter_5:
-# 175 "data//maps/IvyRiver/scripts.pory"
-	fadeoutbgm 1
 # 176 "data//maps/IvyRiver/scripts.pory"
-	playse MUS_RG_POKE_FLUTE
+	fadeoutbgm 1
 # 177 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Encounter_Text_2
+	playse MUS_RG_POKE_FLUTE
 # 178 "data//maps/IvyRiver/scripts.pory"
-	delay 128
+	msgbox LilyPond_Cave_Lapras_Encounter_Text_2
 # 179 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Encounter_Text_3
+	delay 128
 # 180 "data//maps/IvyRiver/scripts.pory"
-	release
+	msgbox LilyPond_Cave_Lapras_Encounter_Text_3
 # 181 "data//maps/IvyRiver/scripts.pory"
-	applymovement 7, LilyPond_Cave_Blastoise_Movement_0
+	release
 # 182 "data//maps/IvyRiver/scripts.pory"
-	waitmovement 0
+	applymovement 7, LilyPond_Cave_Blastoise_Movement_0
 # 183 "data//maps/IvyRiver/scripts.pory"
-	delay 30
-# 184 "data//maps/IvyRiver/scripts.pory"
-	playmoncry SPECIES_BLASTOISE, CRY_MODE_ENCOUNTER
-# 185 "data//maps/IvyRiver/scripts.pory"
-	applymovement 7, LilyPond_Cave_Lapras_Encounter_Movement_0
-# 186 "data//maps/IvyRiver/scripts.pory"
 	waitmovement 0
+# 184 "data//maps/IvyRiver/scripts.pory"
+	delay 30
+# 185 "data//maps/IvyRiver/scripts.pory"
+	playmoncry SPECIES_BLASTOISE, CRY_MODE_ENCOUNTER
+# 186 "data//maps/IvyRiver/scripts.pory"
+	applymovement 7, LilyPond_Cave_Lapras_Encounter_Movement_0
 # 187 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Encounter_Text_4
+	waitmovement 0
 # 188 "data//maps/IvyRiver/scripts.pory"
-	setwildbattle SPECIES_BLASTOISE, 48
+	msgbox LilyPond_Cave_Lapras_Encounter_Text_4
 # 189 "data//maps/IvyRiver/scripts.pory"
+	setwildbattle SPECIES_BLASTOISE, 48
+# 190 "data//maps/IvyRiver/scripts.pory"
 	dowildbattle
-# 192 "data//maps/IvyRiver/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
 # 193 "data//maps/IvyRiver/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 194 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq LilyPond_Cave_Lapras_Encounter_9
 LilyPond_Cave_Lapras_Encounter_8:
-# 197 "data//maps/IvyRiver/scripts.pory"
+# 198 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq LilyPond_Cave_Lapras_Encounter_12
 LilyPond_Cave_Lapras_Encounter_11:
-# 201 "data//maps/IvyRiver/scripts.pory"
+# 202 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq LilyPond_Cave_Lapras_Encounter_14
 	goto LilyPond_Cave_Lapras_Encounter_4
 
 LilyPond_Cave_Lapras_Encounter_9:
-# 194 "data//maps/IvyRiver/scripts.pory"
-	removeobject 7
 # 195 "data//maps/IvyRiver/scripts.pory"
+	removeobject 7
+# 196 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_LAPRAS_ENCOUNTER
 	goto LilyPond_Cave_Lapras_Encounter_8
 
 LilyPond_Cave_Lapras_Encounter_12:
-# 198 "data//maps/IvyRiver/scripts.pory"
-	removeobject 7
 # 199 "data//maps/IvyRiver/scripts.pory"
+	removeobject 7
+# 200 "data//maps/IvyRiver/scripts.pory"
 	setflag FLAG_LILYPOND_LAPRAS_ENCOUNTER
 	goto LilyPond_Cave_Lapras_Encounter_11
 
 LilyPond_Cave_Lapras_Encounter_14:
-# 202 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Cave_Lapras_Encounter_Text_5
 # 203 "data//maps/IvyRiver/scripts.pory"
+	msgbox LilyPond_Cave_Lapras_Encounter_Text_5
+# 204 "data//maps/IvyRiver/scripts.pory"
 	release
 	goto LilyPond_Cave_Lapras_Encounter_4
 
 
 LilyPond_Fisherman_A::
-# 238 "data//maps/IvyRiver/scripts.pory"
+# 239 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_A_Text_0, MSGBOX_NPC
 	end
 
 
 LilyPond_Fisherman_B::
-# 266 "data//maps/IvyRiver/scripts.pory"
+# 267 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_B_Text_0, MSGBOX_NPC
 	end
 
 
 LilyPond_Fisherman_C::
-# 295 "data//maps/IvyRiver/scripts.pory"
-	lockall
 # 296 "data//maps/IvyRiver/scripts.pory"
-	faceplayer
+	lockall
 # 297 "data//maps/IvyRiver/scripts.pory"
+	faceplayer
+# 298 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_0, MSGBOX_YESNO
-# 299 "data//maps/IvyRiver/scripts.pory"
+# 300 "data//maps/IvyRiver/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LilyPond_Fisherman_C_2
-# 304 "data//maps/IvyRiver/scripts.pory"
-	msgbox LilyPond_Fisherman_C_Text_2
 # 305 "data//maps/IvyRiver/scripts.pory"
-	release
+	msgbox LilyPond_Fisherman_C_Text_2
 # 306 "data//maps/IvyRiver/scripts.pory"
-	delay 16
+	release
 # 307 "data//maps/IvyRiver/scripts.pory"
+	delay 16
+# 308 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_3, MSGBOX_NPC
-# 309 "data//maps/IvyRiver/scripts.pory"
+# 310 "data//maps/IvyRiver/scripts.pory"
 	releaseall
 	end
 
 LilyPond_Fisherman_C_2:
-# 300 "data//maps/IvyRiver/scripts.pory"
+# 301 "data//maps/IvyRiver/scripts.pory"
 	msgbox LilyPond_Fisherman_C_Text_1, MSGBOX_NPC
 	end
 
 
 IvyRiver_Ranger_Blocker::
-# 316 "data//maps/IvyRiver/scripts.pory"
+# 317 "data//maps/IvyRiver/scripts.pory"
 	msgbox IvyRiver_Ranger_Blocker_Text_0, MSGBOX_NPC
 	end
 
@@ -491,115 +493,115 @@ LilyPond_Dreepy_Trigger_Third_Movement_0:
 	jump_in_place_down
 	step_end
 
-# 116 "data//maps/IvyRiver/scripts.pory"
+# 117 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_0:
-# 116 "data//maps/IvyRiver/scripts.pory"
+# 117 "data//maps/IvyRiver/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 122 "data//maps/IvyRiver/scripts.pory"
+# 123 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_1:
-# 122 "data//maps/IvyRiver/scripts.pory"
+# 123 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 122 "data//maps/IvyRiver/scripts.pory"
+# 123 "data//maps/IvyRiver/scripts.pory"
 	walk_up
 	step_end
 
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_2:
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 124 "data//maps/IvyRiver/scripts.pory"
+# 125 "data//maps/IvyRiver/scripts.pory"
 	walk_up
 	step_end
 
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 126 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_3:
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 126 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 126 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 126 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 125 "data//maps/IvyRiver/scripts.pory"
+# 126 "data//maps/IvyRiver/scripts.pory"
 	walk_down
 	step_end
 
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_4:
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
-# 126 "data//maps/IvyRiver/scripts.pory"
+# 127 "data//maps/IvyRiver/scripts.pory"
 	walk_down
 	step_end
 
-# 132 "data//maps/IvyRiver/scripts.pory"
+# 133 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_5:
-# 132 "data//maps/IvyRiver/scripts.pory"
+# 133 "data//maps/IvyRiver/scripts.pory"
 	face_down
 	step_end
 
-# 133 "data//maps/IvyRiver/scripts.pory"
+# 134 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_6:
-# 133 "data//maps/IvyRiver/scripts.pory"
+# 134 "data//maps/IvyRiver/scripts.pory"
 	walk_left
-# 133 "data//maps/IvyRiver/scripts.pory"
+# 134 "data//maps/IvyRiver/scripts.pory"
 	walk_up
-# 133 "data//maps/IvyRiver/scripts.pory"
+# 134 "data//maps/IvyRiver/scripts.pory"
 	walk_up
 	step_end
 
-# 139 "data//maps/IvyRiver/scripts.pory"
+# 140 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_7:
-# 139 "data//maps/IvyRiver/scripts.pory"
+# 140 "data//maps/IvyRiver/scripts.pory"
 	emote_exclamation_mark
-# 139 "data//maps/IvyRiver/scripts.pory"
+# 140 "data//maps/IvyRiver/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 143 "data//maps/IvyRiver/scripts.pory"
+# 144 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Blastoise_Movement_8:
-# 143 "data//maps/IvyRiver/scripts.pory"
+# 144 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 143 "data//maps/IvyRiver/scripts.pory"
+# 144 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 143 "data//maps/IvyRiver/scripts.pory"
+# 144 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
-# 143 "data//maps/IvyRiver/scripts.pory"
+# 144 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 LilyPond_Cave_Lapras_Encounter_Movement_0:
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_left
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_right
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_right
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_left
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_left
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	walk_fast_right
-# 185 "data//maps/IvyRiver/scripts.pory"
+# 186 "data//maps/IvyRiver/scripts.pory"
 	face_down
 	step_end
 
@@ -633,67 +635,67 @@ LilyPond_Cave_Blastoise_Text_1:
 	.string "wound?$"
 
 LilyPond_Cave_Blastoise_Text_2:
-# 108 "data//maps/IvyRiver/scripts.pory"
+# 109 "data//maps/IvyRiver/scripts.pory"
 	.string "{PLAYER} used a Hyper Potion on\n"
 	.string "Blastoise.$"
 
 LilyPond_Cave_Blastoise_Text_3:
-# 112 "data//maps/IvyRiver/scripts.pory"
+# 113 "data//maps/IvyRiver/scripts.pory"
 	.string "Blastoise is looking better!$"
 
 LilyPond_Cave_Blastoise_Text_4:
-# 140 "data//maps/IvyRiver/scripts.pory"
+# 141 "data//maps/IvyRiver/scripts.pory"
 	.string "Dreee!!!$"
 
 LilyPond_Cave_Lapras_Encounter_Text_0:
-# 164 "data//maps/IvyRiver/scripts.pory"
+# 165 "data//maps/IvyRiver/scripts.pory"
 	.string "It's asleep...$"
 
 LilyPond_Cave_Lapras_Encounter_Text_1:
-# 172 "data//maps/IvyRiver/scripts.pory"
+# 173 "data//maps/IvyRiver/scripts.pory"
 	.string "It's asleep...use Poké Flute?$"
 
 LilyPond_Cave_Lapras_Encounter_Text_2:
-# 177 "data//maps/IvyRiver/scripts.pory"
+# 178 "data//maps/IvyRiver/scripts.pory"
 	.string "{PLAYER} played the Poke Flute.$"
 
 LilyPond_Cave_Lapras_Encounter_Text_3:
-# 179 "data//maps/IvyRiver/scripts.pory"
+# 180 "data//maps/IvyRiver/scripts.pory"
 	.string "...$"
 
 LilyPond_Cave_Lapras_Encounter_Text_4:
-# 187 "data//maps/IvyRiver/scripts.pory"
+# 188 "data//maps/IvyRiver/scripts.pory"
 	.string "The Blastoise wakes up! It looks\n"
 	.string "healthy now - too healthy!$"
 
 LilyPond_Cave_Lapras_Encounter_Text_5:
-# 202 "data//maps/IvyRiver/scripts.pory"
+# 203 "data//maps/IvyRiver/scripts.pory"
 	.string "The Blastoise grunts and falls back\n"
 	.string "asleep. It needs its beauty sleep!$"
 
 LilyPond_Fisherman_A_Text_0:
-# 238 "data//maps/IvyRiver/scripts.pory"
+# 239 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I come to fish here\n"
 	.string "every year. On the same day.$"
 
 LilyPond_Fisherman_B_Text_0:
-# 266 "data//maps/IvyRiver/scripts.pory"
+# 267 "data//maps/IvyRiver/scripts.pory"
 	.string "Such a beautiful pond...such bitter\n"
 	.string "memories.$"
 
 LilyPond_Fisherman_C_Text_0:
-# 297 "data//maps/IvyRiver/scripts.pory"
+# 298 "data//maps/IvyRiver/scripts.pory"
 	.string "My brothers and I fish around Lily Pond.\n"
 	.string "We have a connection to this place -\l"
 	.string "although not a happy one.\p"
 	.string "Do you want to hear our story?$"
 
 LilyPond_Fisherman_C_Text_1:
-# 300 "data//maps/IvyRiver/scripts.pory"
+# 301 "data//maps/IvyRiver/scripts.pory"
 	.string "Just as well. It hurts to tell it.$"
 
 LilyPond_Fisherman_C_Text_2:
-# 304 "data//maps/IvyRiver/scripts.pory"
+# 305 "data//maps/IvyRiver/scripts.pory"
 	.string "We were four brothers. Many years ago,\n"
 	.string "we came to Lily Pond to fish for our\l"
 	.string "first Pokémon. While three of us stayed\l"
@@ -703,10 +705,10 @@ LilyPond_Fisherman_C_Text_2:
 	.string "he went away, and was never seen again.$"
 
 LilyPond_Fisherman_C_Text_3:
-# 307 "data//maps/IvyRiver/scripts.pory"
+# 308 "data//maps/IvyRiver/scripts.pory"
 	.string "A sad story, I know.$"
 
 IvyRiver_Ranger_Blocker_Text_0:
-# 316 "data//maps/IvyRiver/scripts.pory"
+# 317 "data//maps/IvyRiver/scripts.pory"
 	.string "Sorry - to access the Ivy River Ranger\n"
 	.string "Institute, you must be a member.$"
