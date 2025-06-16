@@ -7753,7 +7753,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Muk-Alola
-Level: 49
+Level: 48
 IVs: 23 HP / 23 Atk / 23 Def / 23 SpA / 23 SpD / 23 Spe
 
 === TRAINER_UNCHARTED_ISLAND_GRUNT_A ===
@@ -7767,7 +7767,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Muk-Alola
-Level: 49
+Level: 48
 
 
 
@@ -7921,7 +7921,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 50
+Level: 49
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Honchkrow
@@ -7929,15 +7929,15 @@ Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowking-Galar
-Level: 51
+Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Great Tusk
-Level: 52
+Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Houndoom @ Houndoominite
-Level: 53
+Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MOXIE ===
@@ -7953,19 +7953,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Grimmsnarl
-Level: 50
+Level: 49
 
 Honchkrow
 Level: 50
 
 Slowking-Galar
-Level: 51
+Level: 50
 
 Great Tusk
-Level: 52
+Level: 51
 
 Houndoom @ Houndoominite
-Level: 54
+Level: 52
 
 
 
@@ -7993,7 +7993,7 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Yanmega
-Level: 51
+Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Muk-Alola
@@ -8001,7 +8001,7 @@ Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Slowbro-Galar
-Level: 52
+Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Flutter Mane
@@ -8009,7 +8009,7 @@ Level: 52
 IVs: 15 HP / 25 Atk / 15 Def / 25 SpA / 15 SpD / 25 Spe
 
 Absol @ Absolite
-Level: 54
+Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_UNCHARTED_ISLAND_MELEA ===
@@ -8024,19 +8024,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Yanmega
-Level: 51
+Level: 50
 
 Muk-Alola
-Level: 52
+Level: 51
 
 Slowbro-Galar
-Level: 52
+Level: 51
 
 Flutter Mane
-Level: 53
+Level: 52
 
 Absol @ Absolite
-Level: 54
+Level: 53
 
 
 
@@ -8067,13 +8067,13 @@ Spiritomb
 Level: 53
 
 Roaring Moon
-Level: 54
+Level: 53
 
 Metagross @ Metagrossite
 Level: 54
 
 Koraidon
-Level: 56
+Level: 55
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
@@ -8093,13 +8093,13 @@ Spiritomb
 Level: 53
 
 Roaring Moon
-Level: 54
+Level: 53
 
 Metagross @ Metagrossite
 Level: 54
 
 Koraidon
-Level: 56
+Level: 55
 
 
 
@@ -8122,11 +8122,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Marowak-Alola
-Level: 52
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate-Alola
-Level: 54
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROUTE1_STRONG_A ===
@@ -8140,10 +8140,10 @@ Double Battle: No
 AI: Smart Trainer / Risky
 
 Marowak-Alola
-Level: 52
+Level: 50
 
 Raticate-Alola
-Level: 54
+Level: 51
 
 
 
@@ -8167,11 +8167,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Noivern
-Level: 53
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pelipper
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Unfezant
@@ -8189,11 +8189,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Noivern
-Level: 53
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pelipper
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Unfezant
@@ -8223,7 +8223,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Orbeetle
-Level: 52
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lokix
@@ -8241,7 +8241,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Orbeetle
-Level: 52
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lokix
@@ -8346,11 +8346,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Toxtricity
-Level: 53
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seismitoad
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8385,7 +8385,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8393,7 +8393,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 
 Altaria
-Level: 54
+Level: 53
 - Dragon Dance
 - Outrage
 - Acrobatics
@@ -8427,7 +8427,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 
 Meganium @ Leftovers
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Body Slam
 - Leech Seed
@@ -8435,7 +8435,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Counter
 
 Altaria
-Level: 54
+Level: 53
 - Dragon Dance
 - Outrage
 - Acrobatics
@@ -8471,7 +8471,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 54
+Level: 53
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8491,7 +8491,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Sliggoo
-Level: 54
+Level: 53
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8522,11 +8522,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_E ===
@@ -8540,11 +8540,11 @@ Double Battle: No
 AI: Smart Trainer
 
 Dragalge
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Alomomola
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8571,15 +8571,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Glimmora
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Golem-Alola
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dugtrio-Alola
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_F ===
@@ -8593,15 +8593,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Glimmora
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Golem-Alola
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dugtrio-Alola
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8627,19 +8627,19 @@ Double Battle: No
 AI: Smart Trainer
 
 Braviary-Hisui
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Bombirdier
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skarmory
-Level: 55
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Talonflame
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_G ===
@@ -8653,19 +8653,19 @@ Double Battle: No
 AI: Smart Trainer
 
 Braviary-Hisui
-Level: 54
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Bombirdier
-Level: 54
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skarmory
-Level: 55
+Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Talonflame
-Level: 57
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8692,15 +8692,15 @@ Double Battle: No
 AI: Smart Trainer
 
 Furret
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Forretress
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lycanroc-Midnight
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_H ===
@@ -8714,17 +8714,17 @@ Double Battle: No
 AI: Smart Trainer / Force Setup First Turn
 
 Furret @ Silk Scarf
-Level: 55
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tidy Up
 - Last Resort
 
 Forretress
-Level: 56
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lycanroc-Midnight
-Level: 56
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8752,7 +8752,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Charizard @ Charizardite-X
-Level: 60
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_I ===
@@ -8766,7 +8766,7 @@ Double Battle: No
 AI: Smart Trainer
 
 Charizard @ Charizardite-X
-Level: 60
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -8988,23 +8988,23 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
 Ursaluna
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Typhlosion-Hisui
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Forretress
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Barraskewda
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Altaria @ Altarianite
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_A ===
@@ -9019,7 +9019,7 @@ AI: Smart Trainer / Prediction / Force Setup First Turn / Ace Pokemon
 Mugshot: Green
 
 Meganium @ Heat Rock
-Level: 58
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
 - Solar Beam
@@ -9027,22 +9027,22 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ursaluna @ Flame Orb
 Ability: Guts
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Earthquake
 
 Typhlosion-Hisui @ Choice Scarf
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Overheat
 
 Forretress
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Altaria @ Altarianite
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -9069,7 +9069,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Glimmora @ Power Herb
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Beam
 - Sludge Wave
@@ -9077,19 +9077,19 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Solar Beam
 
 Scolipede
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pinsir @ Pinsirite
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor  
 - Swords Dance
@@ -9108,7 +9108,7 @@ AI: Smart Trainer / Prediction / Ace Pokemon
 Mugshot: Green
 
 Glimmora @ Power Herb
-Level: 59
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Beam
 - Sludge Wave
@@ -9116,19 +9116,19 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Solar Beam
 
 Scolipede
-Level: 60
+Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Amoonguss @ Rocky Helmet
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Toxapex @ Leftovers
-Level: 61
+Level: 60
 IVs: 31 HP/ 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pinsir @ Pinsirite
-Level: 62
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor  
 - Swords Dance
@@ -9161,7 +9161,7 @@ Mugshot: Green
 
 Ninetales-Alola
 Ability: Snow Warning
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aurora Veil
 - Moonblast
@@ -9170,7 +9170,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Baxcalibur
 Ability: Ice Body
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tinkaton
@@ -9178,11 +9178,11 @@ Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Rapidash-Galar
-Level: 62
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Avalugg-Hisui
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHAMPIONSHIP_C ===
@@ -9198,7 +9198,7 @@ Mugshot: Green
 
 Ninetales-Alola @ Icy Rock
 Ability: Snow Warning
-Level: 61
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aurora Veil
 - Moonblast
@@ -9207,7 +9207,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Baxcalibur
 Ability: Ice Body
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tinkaton
@@ -9215,7 +9215,7 @@ Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Rapidash-Galar
-Level: 62
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Avalugg-Hisui
@@ -9253,7 +9253,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
 Zoroark-Hisui @ Life Orb
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 - Shadow Ball
@@ -9261,7 +9261,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Blast
 
 Kommo-o
-Level: 63
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Clangorous Soul
 - Clanging Scales
@@ -9269,7 +9269,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 Milotic @ Sitrus Berry
-Level: 62
+Level: 61
 Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
@@ -9278,7 +9278,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 
 Mawile @ Mawilite
-Level: 63
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Play Rough
