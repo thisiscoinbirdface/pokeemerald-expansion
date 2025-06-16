@@ -1,4 +1,12 @@
-mapscripts Route6_ZeraoraCave_MapScripts{}
+mapscripts Route6_ZeraoraCave_MapScripts{
+    MAP_SCRIPT_ON_RESUME: Route6_ZeraoraCave_SetHoleWarp
+}
+
+script Route6_ZeraoraCave_SetHoleWarp{
+    setstepcallback(STEP_CB_CRACKED_FLOOR)
+	setholewarp(MAP_ROUTE6_ZERAORA_CAVE_B1F)
+	end
+}
 
 script Route6_Zeraora{
     lockall

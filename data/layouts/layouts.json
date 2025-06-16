@@ -5504,8 +5504,8 @@
     {
       "id": "LAYOUT_ROUTE6_ZERAORA_CAVE",
       "name": "Route6_ZeraoraCave_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_CaveAlt",
       "border_filepath": "data/layouts/Route6_ZeraoraCave/border.bin",
@@ -6040,6 +6040,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route8_House/border.bin",
       "blockdata_filepath": "data/layouts/Route8_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6_ZERAORA_CAVE_B1F",
+      "name": "Route6_ZeraoraCave_B1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_CaveAlt",
+      "border_filepath": "data/layouts/Route6_ZeraoraCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Route6_ZeraoraCave_B1F/map.bin"
     }
   ]
 }

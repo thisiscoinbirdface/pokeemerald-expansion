@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_FIRE_STONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_FIERY_PATH_FIRE_STONE"
+      "flag": "FLAG_ITEM_ZERAORA_B"
     }
   ],
   "warp_events": [

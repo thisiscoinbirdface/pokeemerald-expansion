@@ -1,61 +1,71 @@
 Route6_ZeraoraCave_MapScripts::
+# 2 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	map_script MAP_SCRIPT_ON_RESUME, Route6_ZeraoraCave_SetHoleWarp
 	.byte 0
 
 
-Route6_Zeraora::
-# 4 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	lockall
+Route6_ZeraoraCave_SetHoleWarp::
 # 6 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	playmoncry SPECIES_ZERAORA, CRY_MODE_NORMAL
+	setstepcallback STEP_CB_CRACKED_FLOOR
 # 7 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	applymovement 1, Route6_Zeraora_Movement_0
-# 8 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	waitmovement 0
-# 9 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	delay 16
-# 10 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_Zeraora_Movement_1
-# 11 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	applymovement 1, Route6_Zeraora_Movement_2
+	setholewarp MAP_ROUTE6_ZERAORA_CAVE_B1F
+	end
+
+
+Route6_Zeraora::
 # 12 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	waitmovement 0
-# 13 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	delay 16
+	lockall
+# 14 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	playmoncry SPECIES_ZERAORA, CRY_MODE_NORMAL
 # 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	playse SE_EXIT
+	applymovement 1, Route6_Zeraora_Movement_0
 # 16 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	removeobject 1
+	waitmovement 0
 # 17 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	waitse
+	delay 16
+# 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_Zeraora_Movement_1
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	applymovement 1, Route6_Zeraora_Movement_2
 # 20 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	setflag FLAG_ZERAORA
+	waitmovement 0
 # 21 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	delay 16
+# 23 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	playse SE_EXIT
+# 24 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	removeobject 1
+# 25 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	waitse
+# 28 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	setflag FLAG_ZERAORA
+# 29 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	special InitRoamer
-# 22 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 30 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	setseenmon SPECIES_ZERAORA
 	end
 
 
-# 7 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
 Route6_Zeraora_Movement_0:
-# 7 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	emote_exclamation_mark
-# 7 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 10 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
 Route6_Zeraora_Movement_1:
-# 10 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	face_down
 	step_end
 
-# 11 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
 Route6_Zeraora_Movement_2:
-# 11 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	jump_2_down
-# 11 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	jump_2_down
-# 11 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	jump_2_down
 	step_end

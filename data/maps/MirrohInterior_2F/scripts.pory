@@ -28,7 +28,16 @@ script MirrohInterior_2F_CavePainting_WalkingWake{
     lockall
 
     //a descrption of koraidon
-    msgbox(format("It's an ancient cave painting...a never before seen Pokémon! It looks somewhat reptilian, but also has feathers.\pTerrifying!"))
+    msgbox(format("It's an ancient cave painting..."))
+    release
+    delay(8)
+    msgbox(format("Scanning the ancient statue\nwith the Archaeolens..."))
+    playse(SE_CLICK)
+    delay(8)
+    msgbox(format("Done!"))    
+    release
+    delay(8)
+    msgbox(format("It's a never before seen Pokémon! It looks reptilian, but also has feathers.\pTerrifying!"))
 
     releaseall
     end

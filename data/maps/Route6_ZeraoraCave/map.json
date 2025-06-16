@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZERAORA)",
-      "x": 12,
+      "x": 14,
       "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -30,11 +30,18 @@
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 15,
+      "x": 14,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_ROUTE6",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 27,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE6_ZERAORA_CAVE_B1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -827,9 +827,10 @@
 #define FLAG_HIDDEN_ITEM_VICTORY_CAPE_A                      (FLAG_HIDDEN_ITEMS_START + 0x3E)
 #define FLAG_HIDDEN_ITEM_VICTORY_CAPE_B                      (FLAG_HIDDEN_ITEMS_START + 0x3F)
 
+//Zeraora Cave
+#define FLAG_HIDDEN_ITEM_ZERAORA_A                           (FLAG_HIDDEN_ITEMS_START + 0x40)
+#define FLAG_HIDDEN_ITEM_ZERAORA_B                           (FLAG_HIDDEN_ITEMS_START + 0x41)
 
-#define FLAG_HIDDEN_ITEM_ROUTE_109_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x40)
-#define FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL                 (FLAG_HIDDEN_ITEMS_START + 0x41)
 #define FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x42)
 #define FLAG_HIDDEN_ITEM_ROUTE_118_IRON                      (FLAG_HIDDEN_ITEMS_START + 0x43)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL                 (FLAG_HIDDEN_ITEMS_START + 0x44)
@@ -1181,7 +1182,7 @@
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
-// Item Ball Flags (I AM GOING TO CHANGE THESE ONE BY ONE)
+// Item Ball Flags (I AM GOING TO USE THESE ONE BY ONE)
 #define FLAG_ITEM_ROUTE_1_POTION                                    0x3E8
 #define FLAG_ITEM_ROUTE_1_POKE_BALL                                 0x3E9
 #define FLAG_ITEM_ROUTE_2_POTION                                    0x3EA //FLAG_ITEM_ROUTE_104_PP_UP
@@ -1346,9 +1347,9 @@
 #define FLAG_ITEM_VICTORY_CAPE_A                               0x454
 #define FLAG_ITEM_VICTORY_CAPE_B                                  0x455
 
-
-#define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
-#define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
+//Zeraora Cave
+#define FLAG_ITEM_ZERAORA_A                                         0x456
+#define FLAG_ITEM_ZERAORA_B                                         0x457
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0x458
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
 #define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
