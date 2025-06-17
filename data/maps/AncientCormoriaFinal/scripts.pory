@@ -7,6 +7,10 @@ script AncientCormoria_OnTransition{
     end
 }
 script AncientCormoriaFinal_Dreamstone{
+    msgbox(format("Go back to the present?"), MSGBOX_YESNO)
+    release
+    if (var(VAR_RESULT) == 0) {end}
+
     lockall
     setvar(VAR_UNCHARTED_ISLAND_CUTSCENES, 4)    
     setflag(FLAG_HIDE_TENEBRIS_FINALE)

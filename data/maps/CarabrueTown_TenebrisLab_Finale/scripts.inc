@@ -288,7 +288,7 @@ CarabrueTown_TenebrisLab_PostFinale_Text_6:
 	.string "Kohla of course, although he's not here\n"
 	.string "now, was instrumental in chasing Team\l"
 	.string "Somber across Cormoria. He's got the\l"
-	.string "makings of a truly detective!\p"
+	.string "makings of a truly great detective!\p"
 	.string "The Gym Leaders are the ones who\n"
 	.string "actually took Team Somber apart.\p"
 	.string "Those two admins - Moxie and Melea -\n"

@@ -2667,6 +2667,7 @@ UnchartedIsland_Tenebris_Text_13:
 
 UnchartedIsland_Tenebris_Text_14:
 # 883 "data//maps/UnchartedIsland/scripts.pory"
-	.string "Now come! Let us enter Ancient Cormoria\n"
-	.string "once more...and exit right where the\l"
-	.string "dreamstone is!$"
+	.string "Now come! Follow me and we'll enter\n"
+	.string "Ancient Cormoria once more. We can use\l"
+	.string "the dreamstone in the past to bring us\l"
+	.string "to Team Somber in the present!$"

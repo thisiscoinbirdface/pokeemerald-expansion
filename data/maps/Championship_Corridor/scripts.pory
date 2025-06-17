@@ -45,8 +45,6 @@ script Championship_Corridor_Register{
 }
 
 script Championship_Corridor_Register_Nurse{
-        special(GameClear)
-
     msgbox(format("Whenever ready, please use the machine next to me."), MSGBOX_NPC)
     end
 }

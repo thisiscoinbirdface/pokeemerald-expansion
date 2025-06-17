@@ -42,6 +42,12 @@ script RivetshoreCity_StorageBay_Slaking{
 script RivetshoreCity_StorageBay_Trigger0{
     lockall
 
+    if (flag(FLAG_BADGE08_GET)){
+        msgbox(format("It's a shipping container."))
+        releaseall
+        end
+    }
+
     msgbox(format("There's a label on this container...\pCARGO FOR S.S. ELEGANT\pTap the storage container?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 1){
         msgbox(format("It sounds hollow...maybe there's enough space inside to fit in!\pEnter the storage container?"), MSGBOX_YESNO)

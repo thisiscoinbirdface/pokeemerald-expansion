@@ -653,6 +653,8 @@ script RangerInstitute_Ravine{
             waitmovement(0)
             special(RemoveCameraObject)
 
+            setvar(VAR_RANGER_INSTITUTE, 11)
+
             releaseall
             end
         }

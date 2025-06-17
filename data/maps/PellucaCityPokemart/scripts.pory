@@ -2,5 +2,5 @@ mapscripts PellucaCityPokemart_MapScripts{}
 
 
 script PellucaCityPokemart_NPC1{
-    msgbox(format("I'm stocking up on Revives for my battle against Gym Leader Jania!\nAfter I beat her, I'll need just one more badge to enter the Pokémon Championship!\p...after I beat her..."))
+    msgbox(format("I'm stocking up on Revives for my battle against Gym Leader Jania!\nAfter I beat her, I'll need just one more badge to enter the Pokémon Championship!\p...after I beat her..."), MSGBOX_NPC)
 }
