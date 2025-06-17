@@ -135,7 +135,7 @@ script MirrohInterior_2F_Trainer_D{
 //lass
 script MirrohInterior_2F_Trainer_E{
     trainerbattle_single(TRAINER_MIRROHINT2_E, format("Didn't I battle you before in Route 3? You beat me and my sister!"), format("You win again!"))
-    msgbox(format("I'm going to collect all 8 gym badges! But I only have 4 so far."))
+    msgbox(format("I'm going to collect all 8 gym badges! But I only have 5 so far."))
     releaseall
 }
 //pokefan

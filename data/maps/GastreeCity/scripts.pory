@@ -135,14 +135,59 @@ script GastreeCity_NPC7{
 
 //Shard quest
 script GastreeCity_Shard_NPC{
+    lockall
+    faceplayer
+
     if (flag(FLAG_SHRINE_QUEST)){
-        //quest has started
-        msgbox(format("Take your time child. I'll be waiting here."), MSGBOX_NPC)
-        end
+        if (var(VAR_STATUE_COUNT) == 11){
+            msgbox(format("To be honest, I still haven't processed the loss of this statue..."))
+            releaseall
+            end
+        }
+
+        if (var(VAR_STATUE_COUNT) == 10){
+            msgbox(format("Have you scanned all the statues?\pYes?"))
+            release
+
+            msgbox(format("Let me see your Archaeolens...\pOh my! That's all ten statues!\nI can't believe I'm seeing all of them like this...how I wish I could see them\nin real life!\pThank you {PLAYER}. You've done both me and the historical community a wonderful service.\pPlease accept this as a token of my appreciation."))
+
+            playfanfare(MUS_OBTAIN_TMHM)
+            additem(ITEM_HISTORIAN_MEDAL)
+            msgbox(format("{PLAYER} received the Historian Medal!"))
+            waitfanfare
+            release
+
+            //give item
+            msgbox(format("The Cormoria Historical Society awards these to people who have made special contributions to the field!\pIt's a great honour, {PLAYER}.\nYou should be proud!\pI can also do another thing for you - hand me your Archaeolens."))
+            release
+            removeitem(ITEM_ARCHAEOLENS)
+            playfanfare(MUS_LEVEL_UP)
+            msgbox(format("{PLAYER} handed over the Archaeolens."))
+            release
+            delay(24)
+            msgbox(format("With a little bit of tooling...\p...and fiddling...\p...give it a shake..."))
+            release
+            playse(SE_SWITCH)
+            waitse
+
+            msgbox(format("There we go! The Archaeolens 2.0!"))
+            release
+            giveitem(ITEM_ARCHAEOLENS_2)
+
+            msgbox(format("This upgraded Archaeolens can scan and decipher the text of ancient carvings.\pYou work with Professor Tenebris, correct? So you would be interested\lin Pokemon psychology, I suppose.\lWhether you proceed down the path of history is up to you, but if you do...\lI hope this serves you well!"))
+
+            completequest(QUEST_ANCIENT_STATUES)
+
+            setvar(VAR_STATUE_COUNT, 11)
+
+        } else {
+            //quest has started
+            msgbox(format("Take your time child. I'll be waiting."), MSGBOX_NPC)
+        }
     } else {
         msgbox(format("Come to admire this statue, have you?\pI'm researching the origins of these ancient statues. They're a vital legacy of Cormoria's past."), MSGBOX_NPC)
-        end
     }
+    end
 }
 
 script GastreeCity_Shard_Trigger{

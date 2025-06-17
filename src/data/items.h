@@ -14559,7 +14559,53 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
         .iconPic = gItemIcon_Aerodactylite,
         .iconPalette = gItemIconPalette_Aerodactylite,
-    },    
+    },  
+
+    [ITEM_RANGER_CREST] =
+    {
+        .name = _("Ranger Shield"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A collectible item\n"
+            "for a distiguished\n"
+            "Pokémon Ranger."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_AbilityShield,
+        .iconPalette = gItemIconPalette_AbilityShield,
+    },  
+    [ITEM_HISTORIAN_MEDAL] =
+    {
+        .name = _("Historian Medal"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A collectible item\n"
+            "awarded to special\n"
+            "persons."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_AbilityShield,
+        .iconPalette = gItemIconPalette_AbilityShield,
+    },       
+    [ITEM_ARCHAEOLENS_2] =
+    {
+        .name = _("Archaeolens 2.0"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An upgrade to the\n"
+            "Archaeolens that\n"
+            "can scan carvings."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_SilphScope,
+        .iconPalette = gItemIconPalette_SilphScope,
+    },        
 };
 
 

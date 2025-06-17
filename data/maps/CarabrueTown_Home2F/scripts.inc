@@ -42,7 +42,7 @@ CarabrueTown_Home2F_EventScript_PC::
 
 CarabrueTown_Home2F_EventScript_GameCube::
 # 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	goto_if_set FLAG_BADGE08_GET, CarabrueTown_Home2F_EventScript_GameCube_2
+	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_GameCube_2
 # 65 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_3
 CarabrueTown_Home2F_EventScript_GameCube_1:

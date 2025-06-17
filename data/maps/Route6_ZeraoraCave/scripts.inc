@@ -37,11 +37,13 @@ Route6_Zeraora::
 	removeobject 1
 # 25 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	waitse
-# 28 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	setflag FLAG_ZERAORA
-# 29 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	special InitRoamer
+# 27 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	msgbox Route6_Zeraora_Text_0
 # 30 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	setflag FLAG_ZERAORA
+# 31 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	special InitRoamer
+# 32 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	setseenmon SPECIES_ZERAORA
 	end
 
@@ -57,6 +59,8 @@ Route6_Zeraora_Movement_0:
 # 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
 Route6_Zeraora_Movement_1:
 # 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	walk_faster_right
+# 18 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	face_down
 	step_end
 
@@ -68,4 +72,13 @@ Route6_Zeraora_Movement_2:
 	jump_2_down
 # 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	jump_2_down
+# 19 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	jump_2_down
 	step_end
+
+Route6_Zeraora_Text_0:
+# 27 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	.string "The Pokémon escaped! It looked just\n"
+	.string "like Director Ravine's description!\n"
+	.string "It must be out there somewhere...did\l"
+	.string "the Pokédex record it?$"

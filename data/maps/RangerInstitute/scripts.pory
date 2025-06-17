@@ -2,9 +2,23 @@ raw`
     .set LOCALID_RAVINE, 14
     .set LOCALID_RANGER1, 12
     .set LOCALID_PACKAGE, 15
+
+    .set LOCALID_SC1, 21
+    .set LOCALID_SC2, 10
+    .set LOCALID_SC3, 11
+    .set LOCALID_RANGER2, 13
+    .set LOCALID_SCYTHER, 19
+    .set LOCALID_MASQ, 18
 `
 
-mapscripts RangerInstitute_MapScripts{}
+mapscripts RangerInstitute_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: RangerInstitute_OnTransition
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: RangerInstitute_OnFrame
+    ]
+
+}
 
 //FULL RANGER QUESTLINE
 //VAR_RANGER_INSTITUTE
@@ -31,8 +45,75 @@ mapscripts RangerInstitute_MapScripts{}
     //???
     //reward: ? + Ranger (?)
 
+    // .set LOCALID_SC1, 21
+    // .set LOCALID_SC2, 10
+    // .set LOCALID_SC3, 11
+    // .set LOCALID_RANGER2, 13
+    // .set LOCALID_SCYTHER, 19
+    // .set LOCALID_MASQ, 18
 
 
+script RangerInstitute_OnTransition{
+    if (var(VAR_RANGER_INSTITUTE) == 12){
+        setobjectxyperm(LOCALID_SC1, 7, 28)
+        setobjectxyperm(LOCALID_SC2, 8, 28)
+        setobjectxyperm(LOCALID_SC3, 9, 29)
+        setobjectxyperm(LOCALID_RANGER2, 9, 28)
+        setobjectxyperm(LOCALID_SCYTHER, 10, 28)
+        setobjectxyperm(LOCALID_RANGER1, 8, 29)
+
+        setobjectmovementtype(LOCALID_SC1, MOVEMENT_TYPE_FACE_UP)
+        setobjectmovementtype(LOCALID_SC2, MOVEMENT_TYPE_FACE_UP)
+        setobjectmovementtype(LOCALID_SC3, MOVEMENT_TYPE_FACE_UP)
+        setobjectmovementtype(LOCALID_RANGER2, MOVEMENT_TYPE_FACE_UP)
+        setobjectmovementtype(LOCALID_SCYTHER, MOVEMENT_TYPE_FACE_UP)
+        setobjectmovementtype(LOCALID_RANGER1, MOVEMENT_TYPE_FACE_UP)
+
+        setobjectxyperm(LOCALID_RAVINE, 8, 26)
+        setobjectmovementtype(LOCALID_RAVINE, MOVEMENT_TYPE_FACE_DOWN)
+    }
+    end
+}
+
+script RangerInstitute_OnFrame{
+    if (var(VAR_RANGER_INSTITUTE) == 12){
+
+        delay(30)
+        
+        msgbox_delay("Ravine", format("My dear Pokémon Rangers! My trusted companions!\pWhat a great day it is! Welcome to our newest Pokémon Ranger - {PLAYER}!"))
+
+        playse(SE_APPLAUSE)
+        speakername(NULL)
+        msgbox(format("Welcome {PLAYER}!\pI knew the kid could do it!\pGreat to have you with us!"))
+
+        msgbox_delay("Ravine", format("{PLAYER} cleared the interview, trekked all the way up Mt. Mirroh to visit our facility, helped the scientists there, and came back here for the final mission.\pPerhaps it was luck. Fate. Destiny. Whatever you want to call it!\p{PLAYER} received one of the most challenging missions given to any Ranger - to capture a rare Pokémon that nobody has ever seen!\pAnd {PLAYER} did it!"))
+
+        applymovement(LOCALID_RAVINE, moves(face_right))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+        delay(16)
+        msgbox_delay("Ravine", format("Hand over your Ranger Card."))
+        removeitem(ITEM_RANGER_CARD)
+        playfanfare(MUS_LEVEL_UP)
+        msgbox(format("{PLAYER} handed the Ranger Card over to Director Ravine."))
+        release
+        delay(24)
+        msgbox_delay("Ravine", format("For your tenacity, grit and unwavering resolve, I, Director Ravine, am proud to award you, {PLAYER}, with the official Pokémon Ranger Crest!"))
+
+        playfanfare(MUS_OBTAIN_TMHM)
+        additem(ITEM_RANGER_CREST)
+        msgbox(format("{PLAYER} received the Ranger Crest!"))
+        waitfanfare
+        release
+
+        msgbox_delay("Ravine", format("Being a Pokémon Ranger means handling responsibility, {PLAYER}. People look up to us, ask us to solve the problems they can't handle...and we deliver.\pEvery single time.\pCarry the emblem with pride, Ranger.\pIt means the world to us, and now you're a part of our world."))
+        
+        completequest(QUEST_POKEMON_RANGER)
+        setvar(VAR_RANGER_INSTITUTE, 13)
+
+        releaseall
+        end
+    }
+}
 
 //FIRST FLOOR
 //2 blockers
@@ -452,7 +533,52 @@ script RangerInstitute_Ravine{
         lockall 
         faceplayer
         speakername("Ravine")
-        msgbox(format("I've already told everyone that you'll clear the final mission with flying colours, so don't let me down!"), MSGBOX_YESNO)
+        msgbox(format("Did you find the Pokémon?"), MSGBOX_YESNO)
+        release
+        if (var(VAR_RESULT) == 0){
+            delay(16)
+            speakername("Ravine")
+            msgbox(format("I've already told everyone that you'll clear the final mission with flying colours, so don't let me down!"))
+            releaseall
+            end
+        }
+
+        applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+
+        speakername("Ravine")
+        msgbox(format("Really? Let me see!"))
+
+        special(ChoosePartyMon)                 //choose your mon
+        waitstate                               //wait
+        copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
+        copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
+        specialvar(VAR_RESULT, GetTradeSpecies)
+
+        if (var(VAR_RESULT) == SPECIES_ZERAORA){
+            applymovement(LOCALID_RAVINE, moves(emote_exclamation_mark))
+            waitmovement(0)
+            delay(16)
+
+            speakername("Ravine")
+            msgbox(format("This is it! So this is the mythical Zeraora...\p{PLAYER}! You've done it! You've cleared the final mission!\pDo you know what that means?"), MSGBOX_YESNO)
+            release
+            
+            delay(16)
+            speakername("Ravine")
+            msgbox(format("It's time..."))
+
+            setvar(VAR_RANGER_INSTITUTE, 12)
+            warp(MAP_RANGER_INSTITUTE, 9, 26)
+            end
+        } else {
+            msgbox(format("Wait a second...that doesn't fit the description of the rare Pokémon!\lYou can't weasel your way out of this mission, {PLAYER}!"), MSGBOX_NPC)
+            releaseall
+            end
+        }
+
+
         releaseall
         end    
     }
@@ -624,11 +750,11 @@ script RangerInstitute_Ravine{
             completesubquest(QUEST_POKEMON_RANGER, SUB_QUEST_3)
             setvar(VAR_RANGER_INSTITUTE, 11)
 
-            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2))
+            applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 4))
             waitmovement(0)
 
             special(SpawnCameraObject)
-            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 2))
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up * 4))
             waitmovement(0)
             special(RemoveCameraObject)
 
@@ -649,7 +775,7 @@ script RangerInstitute_Ravine{
             delay(16)
 
             special(SpawnCameraObject)
-            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 2))
+            applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down * 4))
             waitmovement(0)
             special(RemoveCameraObject)
 
@@ -688,35 +814,67 @@ script RangerInstitute_Ravine{
 script RangerInstitute_2F_NPC_1{
     lockall
     faceplayer
-    msgbox(format("Director Ravine has a bad habit of daydreaming at work..."))
+
+    if (var(VAR_RANGER_INSTITUTE) == 13) {
+        msgbox(format("Congratulations {PLAYER}!"))
+    } else {
+        msgbox(format("Director Ravine has a bad habit of daydreaming at work..."))
+    }
+    
     releaseall
     end
 }
 script RangerInstitute_2F_NPC_2{
     lockall
     faceplayer
-    msgbox(format("Hello there, new recruit!\nWanna see what I'm working on?\pI'm analysing the weather patterns in Cormoria. I stay on the lookout for any unnatural changes."))
+
+    if (var(VAR_RANGER_INSTITUTE) == 13) {
+        msgbox(format("Welcome to the team!"))
+    } else {    
+        msgbox(format("Wanna see what I'm working on?\pI'm analysing the weather patterns in Cormoria. I stay on the lookout for any unnatural changes."))
+    }
     releaseall
     end
 }
 script RangerInstitute_2F_NPC_3{
     lockall
     faceplayer
-    msgbox(format("Gah! I hate being on inventory duty.\nI miss the field!"))
+
+    if (var(VAR_RANGER_INSTITUTE) == 13) {
+        msgbox(format("Once a Ranger, always a Ranger!"))
+    } else {
+        msgbox(format("Gah! I hate being on inventory duty.\nI miss the field!"))
+    }
     releaseall
     end
 }
 script RangerInstitute_2F_NPC_4{
     lockall
     faceplayer
-    msgbox(format("How's it going, {PLAYER}?"))
+    if (var(VAR_RANGER_INSTITUTE) == 13) {
+        msgbox(format("It feels like just yesterday that I introduced you to Director Ravine...sniff..."))
+    } else {
+        msgbox(format("How's it going, {PLAYER}?"))
+    }
     releaseall
     end
 }
 script RangerInstitute_2F_NPC_5{
     lockall
     faceplayer
-    msgbox(format("Hello there, new recruit!\nWanna see what I'm working on?\pI'm researching the existence of a Mythical Pokémon right here in Route 6! We've sent two Rangers out to search for it, but they've had no luck."))
+    
+    if (var(VAR_RANGER_INSTITUTE) < 11){
+        msgbox(format("Wanna see what I'm working on?\pI'm researching the existence of a Mythical Pokémon right here in Route 6! We've sent two Rangers out to search for it, but they've had no luck."))
+    }
+
+    if (var(VAR_RANGER_INSTITUTE) == 11){
+        msgbox(format("Any luck, {PLAYER}? Remember - it's\na yellow, catlike Pokémon."))
+    }
+
+    if (var(VAR_RANGER_INSTITUTE) == 13){
+        msgbox(format("You've done it!"))
+    }
+
     releaseall
     end
 }
@@ -882,7 +1040,12 @@ script RangerInstitute_Mon_Surskit{
 }
 script RangerInstitute_Mon_Scyther{
     playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
-    msgbox(format("Scyther looks bummed out!\pIt probably wants to be out on the field, just like its trainer."), MSGBOX_NPC)
+
+    if (var(VAR_RANGER_INSTITUTE) == 13){
+        msgbox(format("Scyther beams at you!"), MSGBOX_NPC)
+    } else {
+        msgbox(format("Scyther looks bummed out!\pIt probably wants to be out on the field, just like its trainer."), MSGBOX_NPC)
+    }
     end
 }
 

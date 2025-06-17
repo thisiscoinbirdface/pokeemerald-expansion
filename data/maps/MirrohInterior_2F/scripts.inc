@@ -341,7 +341,7 @@ MirrohInterior_2F_Trainer_E_Text_1:
 MirrohInterior_2F_Trainer_E_Text_2:
 # 138 "data//maps/MirrohInterior_2F/scripts.pory"
 	.string "I'm going to collect all 8 gym badges!\n"
-	.string "But I only have 4 so far.$"
+	.string "But I only have 5 so far.$"
 
 MirrohInterior_2F_Trainer_F_Text_0:
 # 143 "data//maps/MirrohInterior_2F/scripts.pory"

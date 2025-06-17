@@ -175,6 +175,7 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
+	setvar VAR_STATUE_COUNT, 10
 	release
 	end
 
