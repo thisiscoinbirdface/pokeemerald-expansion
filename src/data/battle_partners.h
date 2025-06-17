@@ -122,34 +122,34 @@ F_TRAINER_FEMALE |
         {
             {
 #line 53
-            .species = SPECIES_ZOROARK_HISUI,
+            .species = SPECIES_BALTOY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 55
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 54
-            .lvl = 31,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            },
-            {
-#line 57
-            .species = SPECIES_BALTOY,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 59
-            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-#line 58
             .lvl = 29,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 61
+#line 57
             .species = SPECIES_MAWILE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 59
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 58
+            .lvl = 32,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 61
+            .species = SPECIES_ZOROARK_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 63
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 62
-            .lvl = 32,
+            .lvl = 33,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

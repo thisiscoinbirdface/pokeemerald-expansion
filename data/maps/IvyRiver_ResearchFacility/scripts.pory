@@ -73,6 +73,8 @@ script IvyRiver_Ranger_FirstQuest{
 
 //complete the second quest
     if (var(VAR_RANGER_INSTITUTE) == 7){
+        lockall
+        faceplayer
         msgbox(format("Ah, {PLAYER}! There you are. The second floor has reported that your performance has been splendid! I hereby promote you to the rank of Associate!"))
         release
 
