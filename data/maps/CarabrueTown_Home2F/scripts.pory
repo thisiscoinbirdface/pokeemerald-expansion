@@ -39,7 +39,7 @@ script CarabrueTown_Home2F_EventScript_GameCube{
         fadedefaultbgm
 
         //Get reward
-        if (var(GAME_CORNER_VAR_WINNINGS) > 39){
+        if (var(GAME_CORNER_VAR_WINNINGS) > 29){
             playfanfare(MUS_RG_PHOTO)
             msgbox(format("You got the high score!"))
             waitfanfare
@@ -58,6 +58,8 @@ script CarabrueTown_Home2F_EventScript_GameCube{
             setflag(FLAG_GET_RETRO_DRIVE)
             setvar(GAME_CORNER_VAR_WINNINGS, 0)
 
+        } else {
+            setvar(GAME_CORNER_VAR_WINNINGS, 0)
         }
     } else {
         msgbox(format("My old GameCube...it's broken."))
@@ -70,15 +72,7 @@ script CarabrueTown_Home2F_EventScript_GameCube{
 script CarabrueTown_Home2F_EventScript_TV{
 
     if (flag(FLAG_IS_CHAMPION)){
-        msgbox(format("The TV is hooked up to the Retro64.\pTurn it on?"), MSGBOX_YESNO)
-        release
-        if (var(VAR_RESULT) == 1){
-            playbgm(MUS_NONE, FALSE)
-            special(StartSnake)
-            waitstate
-            savebgm(MUS_DUMMY)
-            fadedefaultbgm
-        }
+        msgbox(format("The TV is hooked up to the Retro64."))
         releaseall
         end
     } else {

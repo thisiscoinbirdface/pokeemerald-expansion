@@ -15,14 +15,16 @@ script Route6_Zeraora{
     applymovement(1, moves(emote_exclamation_mark jump_in_place_down))
     waitmovement(0)
     delay(16)
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
-    applymovement(1, moves(jump_2_down * 3))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_faster_right face_down))
+    applymovement(1, moves(jump_2_down * 4))
     waitmovement(0)
     delay(16)
     
     playse(SE_EXIT)
     removeobject(1)
     waitse
+
+    msgbox(format("The Pokémon escaped! It looked just like Director Ravine's description!\nIt must be out there somewhere...did the Pokédex record it?"))
 
     //flags and end
     setflag(FLAG_ZERAORA)
@@ -50,3 +52,10 @@ script Route6_Zeraora{
     // releaseall
     // end
 }
+
+
+
+
+//ancient scripture
+
+

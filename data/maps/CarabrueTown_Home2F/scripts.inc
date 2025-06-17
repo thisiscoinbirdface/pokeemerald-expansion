@@ -42,11 +42,11 @@ CarabrueTown_Home2F_EventScript_PC::
 
 CarabrueTown_Home2F_EventScript_GameCube::
 # 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_GameCube_2
-# 63 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	goto_if_set FLAG_BADGE08_GET, CarabrueTown_Home2F_EventScript_GameCube_2
+# 65 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_3
 CarabrueTown_Home2F_EventScript_GameCube_1:
-# 66 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 68 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
@@ -69,8 +69,10 @@ CarabrueTown_Home2F_EventScript_GameCube_2:
 # 39 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	fadedefaultbgm
 # 42 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare GAME_CORNER_VAR_WINNINGS, 39
+	compare GAME_CORNER_VAR_WINNINGS, 29
 	goto_if_gt CarabrueTown_Home2F_EventScript_GameCube_8
+# 62 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	setvar GAME_CORNER_VAR_WINNINGS, 0
 	goto CarabrueTown_Home2F_EventScript_GameCube_1
 
 CarabrueTown_Home2F_EventScript_GameCube_6:
@@ -88,7 +90,7 @@ CarabrueTown_Home2F_EventScript_GameCube_8:
 # 47 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	setvar GAME_CORNER_VAR_WINNINGS, 0
 # 49 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	goto_if_set FLAG_GET_RETRO_DRIVE, CarabrueTown_Home2F_EventScript_GameCube_11
+	goto_if_set FLAG_GET_RETRO_DRIVE, CarabrueTown_Home2F_EventScript_GameCube_12
 # 51 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	release
 # 52 "data//maps/CarabrueTown_Home2F/scripts.pory"
@@ -109,44 +111,25 @@ CarabrueTown_Home2F_EventScript_GameCube_8:
 	setvar GAME_CORNER_VAR_WINNINGS, 0
 	goto CarabrueTown_Home2F_EventScript_GameCube_1
 
-CarabrueTown_Home2F_EventScript_GameCube_11:
+CarabrueTown_Home2F_EventScript_GameCube_12:
 	end
 
 
 CarabrueTown_Home2F_EventScript_TV::
-# 72 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 74 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_TV_1
-# 85 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 79 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_TV_Text_1
-# 86 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 80 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_Home2F_EventScript_TV_1:
-# 73 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0, MSGBOX_YESNO
-# 74 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	release
 # 75 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq CarabrueTown_Home2F_EventScript_TV_5
-CarabrueTown_Home2F_EventScript_TV_4:
-# 82 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	msgbox CarabrueTown_Home2F_EventScript_TV_Text_0
+# 76 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	releaseall
 	end
-
-CarabrueTown_Home2F_EventScript_TV_5:
-# 76 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	playbgm MUS_NONE, FALSE
-# 77 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	special StartSnake
-# 78 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	waitstate
-# 79 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	savebgm MUS_DUMMY
-# 80 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	fadedefaultbgm
-	goto CarabrueTown_Home2F_EventScript_TV_4
 
 
 CarabrueTown_Home2F_EventScript_PickUpBag_Text_0:
@@ -171,14 +154,13 @@ CarabrueTown_Home2F_EventScript_GameCube_Text_2:
 	.string "What is it?$"
 
 CarabrueTown_Home2F_EventScript_GameCube_Text_3:
-# 63 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 65 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "My old GameCube...it's broken.$"
 
 CarabrueTown_Home2F_EventScript_TV_Text_0:
-# 73 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "The TV is hooked up to the Retro64.\p"
-	.string "Turn it on?$"
+# 75 "data//maps/CarabrueTown_Home2F/scripts.pory"
+	.string "The TV is hooked up to the Retro64.$"
 
 CarabrueTown_Home2F_EventScript_TV_Text_1:
-# 85 "data//maps/CarabrueTown_Home2F/scripts.pory"
+# 79 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "The TV is hooked up to the GameCube.$"
