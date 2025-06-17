@@ -216,7 +216,7 @@ Route3_Ext_Diancie::
 # 146 "data//maps/Route3_Underpass_Extended/scripts.pory"
 	setflag FLAG_DIANCIE
 # 148 "data//maps/Route3_Underpass_Extended/scripts.pory"
-	setwildbattle SPECIES_DIANCIE, 50
+	setwildbattle SPECIES_DIANCIE, 50, ITEM_DIANCITE
 # 149 "data//maps/Route3_Underpass_Extended/scripts.pory"
 	dowildbattle
 # 150 "data//maps/Route3_Underpass_Extended/scripts.pory"

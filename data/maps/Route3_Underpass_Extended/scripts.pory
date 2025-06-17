@@ -145,7 +145,7 @@ script Route3_Ext_Diancie{
     waitmoncry
     setflag(FLAG_DIANCIE)
 
-    setwildbattle(SPECIES_DIANCIE, 50)
+    setwildbattle(SPECIES_DIANCIE, 50, ITEM_DIANCITE)
     dowildbattle
     removeobject(LOCALID_DIANCIE)
 

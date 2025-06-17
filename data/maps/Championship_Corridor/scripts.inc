@@ -173,7 +173,7 @@ Championship_Corridor_NPC5::
 
 Championship_Corridor_Mon5::
 # 126 "data//maps/Championship_Corridor/scripts.pory"
-	playmoncry SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL
+	playmoncry SPECIES_DRAGALGE, CRY_MODE_NORMAL
 # 127 "data//maps/Championship_Corridor/scripts.pory"
 	msgbox Championship_Corridor_Mon5_Text_0, MSGBOX_NPC
 	end
@@ -301,15 +301,15 @@ Championship_Corridor_Mon4_Text_0:
 
 Championship_Corridor_NPC5_Text_0:
 # 120 "data//maps/Championship_Corridor/scripts.pory"
-	.string "Listen up, Avalugg! We're not gonna lose\n"
-	.string "next time, got it?\p"
+	.string "Listen up, Dragalge! We're not gonna\n"
+	.string "lose next time, got it?\p"
 	.string "We're going to win!\p"
 	.string "...sniff...next time...$"
 
 Championship_Corridor_Mon5_Text_0:
 # 127 "data//maps/Championship_Corridor/scripts.pory"
-	.string "Avalugg is trying to put on a brave face\n"
-	.string "for its trainer.$"
+	.string "Dragalge is trying to put on a brave\n"
+	.string "face for its trainer.$"
 
 Championship_Corridor_TV_Text_0:
 # 133 "data//maps/Championship_Corridor/scripts.pory"

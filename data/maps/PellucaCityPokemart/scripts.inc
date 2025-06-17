@@ -4,7 +4,7 @@ PellucaCityPokemart_MapScripts::
 
 PellucaCityPokemart_NPC1::
 # 5 "data//maps/PellucaCityPokemart/scripts.pory"
-	msgbox PellucaCityPokemart_NPC1_Text_0
+	msgbox PellucaCityPokemart_NPC1_Text_0, MSGBOX_NPC
 	return
 
 

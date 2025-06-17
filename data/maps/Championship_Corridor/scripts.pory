@@ -117,14 +117,14 @@ script Championship_Corridor_Mon4{
 
 script Championship_Corridor_NPC5{
     lockall
-    msgbox(format("Listen up, Avalugg! We're not gonna lose next time, got it?\pWe're going to win!\p...sniff...next time..."))
+    msgbox(format("Listen up, Dragalge! We're not gonna lose next time, got it?\pWe're going to win!\p...sniff...next time..."))
     releaseall
     end
 }
 
 script Championship_Corridor_Mon5{
-    playmoncry(SPECIES_AVALUGG_HISUI, CRY_MODE_NORMAL)
-    msgbox(format("Avalugg is trying to put on a brave face for its trainer."), MSGBOX_NPC)
+    playmoncry(SPECIES_DRAGALGE, CRY_MODE_NORMAL)
+    msgbox(format("Dragalge is trying to put on a brave face for its trainer."), MSGBOX_NPC)
     end
 }
 
