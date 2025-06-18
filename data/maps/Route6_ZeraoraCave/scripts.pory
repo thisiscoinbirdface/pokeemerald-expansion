@@ -57,5 +57,8 @@ script Route6_Zeraora{
 
 
 //ancient scripture
-
+script Route6_Zeraora_AncientCarving{
+    msgbox(format("It's an ancient carving..."), MSGBOX_NPC)
+    end
+}
 

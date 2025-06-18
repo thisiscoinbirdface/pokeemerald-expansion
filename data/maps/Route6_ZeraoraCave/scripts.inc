@@ -48,6 +48,12 @@ Route6_Zeraora::
 	end
 
 
+Route6_Zeraora_AncientCarving::
+# 61 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	msgbox Route6_Zeraora_AncientCarving_Text_0, MSGBOX_NPC
+	end
+
+
 # 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
 Route6_Zeraora_Movement_0:
 # 15 "data//maps/Route6_ZeraoraCave/scripts.pory"
@@ -82,3 +88,7 @@ Route6_Zeraora_Text_0:
 	.string "like Director Ravine's description!\n"
 	.string "It must be out there somewhere...did\l"
 	.string "the Pokédex record it?$"
+
+Route6_Zeraora_AncientCarving_Text_0:
+# 61 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	.string "It's an ancient carving...$"
