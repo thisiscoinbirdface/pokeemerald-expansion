@@ -127,7 +127,7 @@ VictoryCape_NPC12::
 # 85 "data//maps/Championship/scripts.pory"
 	faceplayer
 # 86 "data//maps/Championship/scripts.pory"
-	msgbox_delay VictoryCape_NPC10_Text_0, VictoryCape_NPC12_Text_0
+	msgbox_delay VictoryCape_NPC11_Text_0, VictoryCape_NPC12_Text_0
 # 87 "data//maps/Championship/scripts.pory"
 	releaseall
 	end

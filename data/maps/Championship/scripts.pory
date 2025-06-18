@@ -83,7 +83,7 @@ script VictoryCape_NPC11{
 script VictoryCape_NPC12{
     lockall
     faceplayer
-    msgbox_delay("Q-squad Boss", format("You gotta make all of Cormoria know what the Qwilsquad is about!"))
+    msgbox_delay("Q-squad Grunt", format("You gotta make all of Cormoria know what the Qwilsquad is about!"))
     releaseall
     end    
 }

@@ -211,9 +211,8 @@ script MirrohBaseCamp_Martha_End{
 
 //rue cutscene FLAG_MIRROHBASECAMP_MASTERBALL_RUE
 script MirrohBaseCamp_Rue_Trigger{
-    if (flag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)){
-        end
-    }
+    if (flag(FLAG_MIRROHBASECAMP_MASTERBALL_RUE)){end}
+    if (flag(FLAG_BADGE06_GET)){end}
 
     lockall
     opendoor(13, 27)

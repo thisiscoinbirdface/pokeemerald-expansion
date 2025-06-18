@@ -148,7 +148,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_PEAT_BLOCK",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_RIVETSHORE_A"
+      "flag": "FLAG_ITEM_RIVETSHORE_D"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARON)",
