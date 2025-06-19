@@ -12038,43 +12038,43 @@
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_FINNEON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAREANIE"
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_CHINCHOU"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAREANIE"
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_CHINCHOU"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_TYMPOLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_TYMPOLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 19,
+                "max_level": 23,
                 "species": "SPECIES_TYMPOLE"
               }
             ]
@@ -13740,22 +13740,12 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_AMAURA"
+                "species": "SPECIES_CRANIDOS"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_ARCHEN"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_AMAURA"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_ARCHEN"
+                "species": "SPECIES_CRANIDOS"
               },
               {
                 "min_level": 28,
@@ -13770,17 +13760,27 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_ARCHEN"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
-                "species": "SPECIES_ARCHEN"
-              },
-              {
-                "min_level": 28,
-                "max_level": 32,
                 "species": "SPECIES_AMAURA"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
+                "species": "SPECIES_ARCHEN"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
+                "species": "SPECIES_ARCHEN"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
+                "species": "SPECIES_CRANIDOS"
+              },
+              {
+                "min_level": 28,
+                "max_level": 32,
+                "species": "SPECIES_CRANIDOS"
               },
               {
                 "min_level": 28,
@@ -13862,53 +13862,53 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_OMANYTE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               }
             ]
@@ -13928,7 +13928,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
@@ -13938,7 +13938,7 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
@@ -13948,17 +13948,17 @@
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
                 "max_level": 32,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_KABUTO"
               },
               {
                 "min_level": 28,
@@ -13986,53 +13986,53 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_OMANYTE"
+                "min_level": 30,
+                "max_level": 33,
+                "species": "SPECIES_KABUTO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TIRTOUGA"
               }
             ]
@@ -14586,22 +14586,22 @@
               {
                 "min_level": 33,
                 "max_level": 37,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 33,
                 "max_level": 37,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 33,
                 "max_level": 37,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 33,
                 "max_level": 37,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_LANTURN"
               }
             ]
           }
