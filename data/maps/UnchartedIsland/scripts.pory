@@ -525,8 +525,10 @@ script UnchartedIsland_Viniel{
     end
 }
 script UnchartedIsland_Manectric{
+    lockall
     playmoncry(SPECIES_MANECTRIC_MEGA, CRY_MODE_NORMAL)
     msgbox(format("Manectric has mega evolved! These grunts don't stand a chance..."))
+    releaseall
     end
 }
 script UnchartedIsland_VinielGrunts{

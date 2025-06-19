@@ -101,7 +101,7 @@ script CarabrueTown_Home2F_Doll{
     message(format("What would you like to do?"))
     waitmessage
     dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Max Money", "Master Balls", "100% Shiny", "Cancel")    
+        "Max Money", "Master Balls", "Cancel")
     release
 
     if (var(VAR_RESULT) == 0){
@@ -113,8 +113,6 @@ script CarabrueTown_Home2F_Doll{
         playse(SE_SHOP)
         additem(ITEM_MASTER_BALL, 99)
     }
-
-    if (var(VAR_RESULT) == 2){
-
-    }
 }
+
+

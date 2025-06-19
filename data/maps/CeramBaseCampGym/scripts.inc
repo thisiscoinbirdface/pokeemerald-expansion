@@ -459,7 +459,7 @@ CeramBaseCampGym_Red_Reward_End_Text_0:
 
 CeramBaseCampGym_Guard_Text_0:
 # 88 "data//maps/CeramBaseCampGym/scripts.pory"
-	.string "Arian's got a busy schedule. She sets\n"
+	.string "Ariana's got a busy schedule. She sets\n"
 	.string "up all her appointments in advance.$"
 
 CeramBaseCampGym_NPC_A_Text_0:

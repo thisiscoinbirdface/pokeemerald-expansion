@@ -142,7 +142,7 @@ CarabrueTown_Home2F_Doll::
 # 102 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	waitmessage
 # 103 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home2F_Doll_Text_3, CarabrueTown_Home2F_Doll_Text_4, CarabrueTown_Home2F_Doll_Text_5, CarabrueTown_Home2F_Doll_Text_6
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_Home2F_Doll_Text_3, CarabrueTown_Home2F_Doll_Text_4, CarabrueTown_Home2F_Doll_Text_5
 # 105 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	release
 # 107 "data//maps/CarabrueTown_Home2F/scripts.pory"
@@ -151,11 +151,7 @@ CarabrueTown_Home2F_Doll::
 CarabrueTown_Home2F_Doll_1:
 # 112 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq CarabrueTown_Home2F_Doll_5
-CarabrueTown_Home2F_Doll_4:
-# 117 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	compare VAR_RESULT, 2
-	goto_if_eq CarabrueTown_Home2F_Doll_7
+	goto_if_eq CarabrueTown_Home2F_Doll_4
 	return
 
 CarabrueTown_Home2F_Doll_2:
@@ -165,14 +161,11 @@ CarabrueTown_Home2F_Doll_2:
 	addmoney 1000000
 	goto CarabrueTown_Home2F_Doll_1
 
-CarabrueTown_Home2F_Doll_5:
+CarabrueTown_Home2F_Doll_4:
 # 113 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	playse SE_SHOP
 # 114 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	additem ITEM_MASTER_BALL, 99
-	goto CarabrueTown_Home2F_Doll_4
-
-CarabrueTown_Home2F_Doll_7:
 	return
 
 
@@ -233,9 +226,5 @@ CarabrueTown_Home2F_Doll_Text_4:
 	.string "Master Balls$"
 
 CarabrueTown_Home2F_Doll_Text_5:
-# 104 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "100% Shiny$"
-
-CarabrueTown_Home2F_Doll_Text_6:
 # 104 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	.string "Cancel$"

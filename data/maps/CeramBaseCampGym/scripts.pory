@@ -85,7 +85,7 @@ script CeramBaseCampGym_Red_Reward_End{
 script CeramBaseCampGym_Guard{
     lockall
     faceplayer
-    msgbox(format("Arian's got a busy schedule. She sets\nup all her appointments in advance."))
+    msgbox(format("Ariana's got a busy schedule. She sets\nup all her appointments in advance."))
     releaseall
 }
 

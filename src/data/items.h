@@ -11413,9 +11413,9 @@ const struct Item gItemsInfo[] =
         .name = _("Endure"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Endures attack\n"
-            "for 2 turns to\n"
-            "retaliate double."),
+            "Endures attacks\n"
+            "for 1 turn,\n"
+            "leaving 1 HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

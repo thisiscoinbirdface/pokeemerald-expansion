@@ -3,7 +3,7 @@
   "name": "Route3_Underpass_Extended",
   "layout": "LAYOUT_ROUTE3_UNDERPASS_EXTENDED",
   "music": "MUS_RG_SEVII_CAVE",
-  "region_map_section": "MAPSEC_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE3_UNDERPASS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
