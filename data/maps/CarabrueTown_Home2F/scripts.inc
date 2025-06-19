@@ -215,10 +215,10 @@ CarabrueTown_Home2F_Doll_Text_0:
 
 CarabrueTown_Home2F_Doll_Text_1:
 # 99 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "Cheats may glitch your game!\n"
-	.string "So Gimmighoul can help you.\l"
-	.string "This is not recommended\l"
-	.string "for a regular playthrough.$"
+	.string "Using cheats may glitch your game!\n"
+	.string "So Gimmighoul can help you out.\l"
+	.string "This is not recommended for a\l"
+	.string "regular playthrough.$"
 
 CarabrueTown_Home2F_Doll_Text_2:
 # 101 "data//maps/CarabrueTown_Home2F/scripts.pory"
@@ -234,7 +234,7 @@ CarabrueTown_Home2F_Doll_Text_4:
 
 CarabrueTown_Home2F_Doll_Text_5:
 # 104 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "Shiny Starters$"
+	.string "100% Shiny$"
 
 CarabrueTown_Home2F_Doll_Text_6:
 # 104 "data//maps/CarabrueTown_Home2F/scripts.pory"

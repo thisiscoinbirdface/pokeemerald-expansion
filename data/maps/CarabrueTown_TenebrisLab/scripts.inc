@@ -790,12 +790,12 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One::
 # 497 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5
-# 512 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 531 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_1:
-# 516 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 535 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
-# 517 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 536 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
@@ -807,299 +807,374 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_2:
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5:
 # 498 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 4
-# 499 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny = TRUE
 # 500 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 501 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_One_8
-	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_One_1
-
-CarabrueTown_TenebrisLab_EventScript_Pokeball_One_8:
-# 502 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 503 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 501 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_2
-# 504 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 502 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitfanfare
-# 505 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 503 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
+# 505 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	message CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_3
 # 506 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	removeobject 1
+	waitmessage
 # 507 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+# 509 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 511 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_One_9
+# 517 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 518 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_7
+# 519 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 520 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny = TRUE
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_8:
+# 523 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 525 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 526 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	removeobject 1
+# 527 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_UNUSED_0x020
-# 508 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 528 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	call NicknamePartyMon
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_One_1
 
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_9:
+# 512 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 513 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_6
+# 514 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 515 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY
+	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_One_8
+
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two::
-# 524 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 543 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 526 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 545 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_2
-# 530 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 549 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	showmonpic SPECIES_TIMBURR, 10, 3
-# 531 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 550 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_TIMBURR, CRY_MODE_NORMAL
-# 532 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 551 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0, MSGBOX_YESNO
-# 533 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 552 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_5
-# 548 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 587 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_1:
-# 552 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 591 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
-# 553 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 592 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_2:
-# 527 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 546 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_0
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_1
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_5:
-# 534 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY
-# 535 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 536 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 553 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 7
-# 537 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_8
-	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_1
-
-CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_8:
-# 538 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 555 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 539 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 556 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_1
-# 540 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 557 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitfanfare
-# 541 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 558 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
-# 542 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 560 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	message CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_3
+# 561 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	waitmessage
+# 562 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+# 564 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 566 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_9
+# 572 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 573 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_7
+# 574 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 575 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY, isShiny = TRUE
+CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_8:
+# 578 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 579 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 581 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 1
-# 543 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 582 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_UNUSED_0x020
-# 544 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 583 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	call NicknamePartyMon
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_1
 
+CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_9:
+# 567 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 568 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_6
+# 569 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 570 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY
+	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_8
+
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three::
-# 560 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 599 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 562 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 601 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_2
-# 566 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 605 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	showmonpic SPECIES_ZIGZAGOON_GALAR, 10, 3
-# 567 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 606 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_ZIGZAGOON_GALAR, CRY_MODE_NORMAL
-# 568 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 607 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0, MSGBOX_YESNO
-# 569 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 608 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_5
-# 584 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 643 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_1:
-# 588 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 647 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
-# 589 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 648 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_2:
-# 563 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 602 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_0
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_1
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_5:
-# 570 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY
-# 571 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 572 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 609 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 6
-# 573 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_8
-	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_1
-
-CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_8:
-# 574 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 611 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 575 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 612 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_1
-# 576 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 613 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitfanfare
-# 577 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 614 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
-# 578 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 616 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	message CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_3
+# 617 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	waitmessage
+# 618 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+# 620 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 622 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_9
+# 628 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 629 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_7
+# 630 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 631 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY, isShiny = TRUE
+CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_8:
+# 634 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 635 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 637 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 1
-# 579 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 638 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_UNUSED_0x020
-# 580 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 639 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	call NicknamePartyMon
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_1
 
+CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_9:
+# 623 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	delay 16
+# 624 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	msgbox CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_6
+# 625 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	release
+# 626 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY
+	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_8
+
 
 NicknamePartyMon::
-# 595 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 654 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_POKENAV
-# 596 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 655 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 	return
 
 
 NicknameBoxMon::
-# 609 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 668 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox NicknameBoxMon_Text_0, MSGBOX_YESNO
-# 610 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 669 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	hidemonpic
-# 611 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 670 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 614 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 673 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NicknameBoxMon_2:
-# 612 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 671 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
 
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon::
-# 620 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 679 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 622 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 681 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_unset FLAG_UNUSED_0x020, CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_2
-# 630 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 689 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	compare VAR_LAB_STATE, 1
 	goto_if_eq CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_5
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_4:
-# 634 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 693 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_2:
-# 623 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 682 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_Text_0
-# 624 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 683 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives_Movement_1
-# 625 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 684 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmovement 0
-# 626 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 685 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 	end
 
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_5:
-# 631 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 690 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto CarabrueTown_TenebrisLab_EventScript_ByTheWayGiveToDetectives
 	goto CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_4
 
 
 CarabrueTown_TenebrisLab_EventScript_Rue::
-# 640 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 699 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	speakername CarabrueTown_TenebrisLab_EventScript_Start_Text_2
-# 641 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 700 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Rue_Text_0, MSGBOX_NPC
 	end
 
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1::
-# 647 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 706 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_POST_FINALE_CUTSCENE, CarabrueTown_TenebrisLab_EventScript_Scientist1_2
-# 652 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 711 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_1, MSGBOX_NPC
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_2:
-# 648 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 707 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0, MSGBOX_NPC
 	end
 
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2::
-# 657 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 716 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_POST_FINALE_CUTSCENE, CarabrueTown_TenebrisLab_EventScript_Scientist2_2
-# 662 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 721 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_1, MSGBOX_NPC
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2_2:
-# 658 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 717 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0, MSGBOX_NPC
 	end
 
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3::
-# 667 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 726 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_POST_FINALE_CUTSCENE, CarabrueTown_TenebrisLab_EventScript_Scientist3_2
-# 672 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 731 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_LAB_CALLTOACTION, CarabrueTown_TenebrisLab_EventScript_Scientist3_5
-# 675 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 734 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_2, MSGBOX_NPC
 CarabrueTown_TenebrisLab_EventScript_Scientist3_4:
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_2:
-# 668 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 727 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0, MSGBOX_NPC
 	end
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_5:
-# 673 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 732 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1, MSGBOX_NPC
 	goto CarabrueTown_TenebrisLab_EventScript_Scientist3_4
 
 
 CarabrueTown_TenebrisLab_Gardevoir::
-# 681 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 740 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	goto_if_set FLAG_TENEBRIS_GARDEVOIR, CarabrueTown_TenebrisLab_Gardevoir_2
-# 685 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 744 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
-# 686 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 745 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_1, MSGBOX_NPC
-# 687 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 746 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	lockall
-# 688 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 747 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	giveitem ITEM_STARF_BERRY
-# 689 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 748 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_2
-# 690 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 749 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_TENEBRIS_GARDEVOIR
-# 691 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 750 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	releaseall
 CarabrueTown_TenebrisLab_Gardevoir_1:
 	end
 
 CarabrueTown_TenebrisLab_Gardevoir_2:
-# 682 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 741 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_GARDEVOIR, CRY_MODE_NORMAL
-# 683 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 742 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_Gardevoir_Text_0, MSGBOX_NPC
 	goto CarabrueTown_TenebrisLab_Gardevoir_1
 
 
 CarabrueTown_TenebrisLab_Metagross::
-# 697 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 756 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	playmoncry SPECIES_METAGROSS, CRY_MODE_NORMAL
-# 698 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 757 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox CarabrueTown_TenebrisLab_Metagross_Text_0, MSGBOX_NPC
 	end
 
 
 CarabrueTown_TenebrisLab_Tenebris::
-# 704 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 763 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	msgbox_delay CarabrueTown_TenebrisLab_Tenebris_Text_0, CarabrueTown_TenebrisLab_Tenebris_Text_1
 	end
 
@@ -1776,111 +1851,132 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_1:
 	.string "Do you want to choose Gothita?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_2:
-# 503 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 501 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The Tenebris Laboratory has gifted\n"
 	.string "you a Gothita!$"
 
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_3:
+# 505 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "The Poké Ball seems to be glittering...\n"
+	.string "What could it be?$"
+
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4:
+# 508 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "A trick of the light$"
+
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5:
+# 508 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "Yes, it's glittering!$"
+
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_6:
+# 513 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "Must be a trick of the light...$"
+
+CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_7:
+# 518 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+	.string "There's a strange shimmering aura...$"
+
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_0:
-# 532 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 551 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Do you want to choose Timburr?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_Text_1:
-# 539 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 556 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The Tenebris Laboratory has gifted\n"
 	.string "you a Timburr!$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_0:
-# 568 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 607 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Do you want to choose Zigzagoon?$"
 
 CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_Text_1:
-# 575 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 612 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The Tenebris Laboratory has gifted\n"
 	.string "you a Zigzagoon!$"
 
 NicknamePartyMon_Text_0:
-# 595 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 654 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "You can nickname your Pokémon\n"
 	.string "via the summary screen!$"
 
 NicknameBoxMon_Text_0:
-# 609 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 668 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Give it a nickname?$"
 
 CarabrueTown_TenebrisLab_EventScript_LeaveWithoutPokemon_Text_0:
-# 623 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 682 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Assistant Professor Rue told me not to\n"
 	.string "leave without a Pokémon to protect me!$"
 
 CarabrueTown_TenebrisLab_EventScript_Rue_Text_0:
-# 641 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 700 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "We're counting on you!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_0:
-# 648 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 707 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I can't believe Rue was behind this\n"
 	.string "whole mess! I wish I'd caught on sooner!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist1_Text_1:
-# 652 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 711 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "There's so much work that I don't even\n"
 	.string "know where to start! So I'm just staring\l"
 	.string "at all these books instead.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_0:
-# 658 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 717 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "The detectives told us the entire\n"
 	.string "story. You're incredible, {PLAYER}!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist2_Text_1:
-# 662 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 721 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm so grateful we have Assistant\n"
 	.string "Professor Rue. Without him to step in\l"
 	.string "for Professor Tenebris, we'd have had\l"
 	.string "to shut the lab down.$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_0:
-# 668 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 727 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Go on, {PLAYER}! Bring the\n"
 	.string "championship trophy to Carabrue Town!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_1:
-# 673 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 732 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "A bit unorthodox for a researcher, but\n"
 	.string "you and your new partner are looking\l"
 	.string "good together!$"
 
 CarabrueTown_TenebrisLab_EventScript_Scientist3_Text_2:
-# 675 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 734 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "I'm sorry we couldn't offer you the\n"
 	.string "standard companion Pokémon.\l"
 	.string "But they're coming in the next batch of\l"
 	.string "supplies! Just be patient.$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_0:
-# 683 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 742 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Gardevoir regards you intently...$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_1:
-# 686 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 745 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Gardevoir regards you intently...\p"
 	.string "Something floats into your hand!$"
 
 CarabrueTown_TenebrisLab_Gardevoir_Text_2:
-# 689 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 748 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Was this her way of welcoming a\n"
 	.string "new member of the lab?\p"
 	.string "Thank you, Gardevoir!$"
 
 CarabrueTown_TenebrisLab_Metagross_Text_0:
-# 698 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 757 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "It's Asst. Prof. Rue's Metagross. It's so\n"
 	.string "intimidating!$"
 
 CarabrueTown_TenebrisLab_Tenebris_Text_0:
-# 704 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 763 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Tenebris$"
 
 CarabrueTown_TenebrisLab_Tenebris_Text_1:
-# 704 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
+# 763 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	.string "Go {PLAYER} go!$"

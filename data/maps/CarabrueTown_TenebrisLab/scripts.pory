@@ -496,17 +496,36 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
         msgbox("Do you want to choose Gothita?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
             removeobject(4)
-            givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny=TRUE)
-            setflag(FLAG_SYS_POKEMON_GET)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted\nyou a Gothita!"))
-                waitfanfare
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_UNUSED_0x020)
-                call(NicknamePartyMon)
+
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Tenebris Laboratory has gifted\nyou a Gothita!"))
+            waitfanfare
+            hidemonpic
+
+            message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
+            waitmessage
+            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+                "A trick of the light", "Yes, it's glittering!")
+            release
+
+            if (var(VAR_RESULT) == 0){
+                delay(16)
+                msgbox(format("Must be a trick of the light..."))
+                release
+                givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY)
+            } else {
+                delay(16)
+                msgbox(format("There's a strange shimmering aura..."))
+                release
+                givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny=TRUE)
             }
+
+            setflag(FLAG_SYS_POKEMON_GET)
+
+            delay(16)
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+            call(NicknamePartyMon)
         }
         else{
             hidemonpic
@@ -531,18 +550,38 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
         playmoncry(SPECIES_TIMBURR, CRY_MODE_NORMAL)
         msgbox("Do you want to choose Timburr?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
-            givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY)
-            setflag(FLAG_SYS_POKEMON_GET)
             removeobject(7)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted\nyou a Timburr!"))
-                waitfanfare
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_UNUSED_0x020)
-                call(NicknamePartyMon)
+
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Tenebris Laboratory has gifted\nyou a Timburr!"))
+            waitfanfare
+            hidemonpic
+
+            message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
+            waitmessage
+            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+                "A trick of the light", "Yes, it's glittering!")
+            release
+
+            if (var(VAR_RESULT) == 0){
+                delay(16)
+                msgbox(format("Must be a trick of the light..."))
+                release
+                givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY)
+            } else {
+                delay(16)
+                msgbox(format("There's a strange shimmering aura..."))
+                release
+                givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY, isShiny=TRUE)
             }
+
+            setflag(FLAG_SYS_POKEMON_GET)
+            delay(16)
+
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+            call(NicknamePartyMon)
+
         }
         else{
             hidemonpic
@@ -567,18 +606,38 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
         playmoncry(SPECIES_ZIGZAGOON_GALAR, CRY_MODE_NORMAL)
         msgbox("Do you want to choose Zigzagoon?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES){
-            givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY)
-            setflag(FLAG_SYS_POKEMON_GET)
             removeobject(6)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("The Tenebris Laboratory has gifted\nyou a Zigzagoon!"))
-                waitfanfare
-                hidemonpic
-                removeobject(1)
-                setflag(FLAG_UNUSED_0x020)
-                call(NicknamePartyMon)
+
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("The Tenebris Laboratory has gifted\nyou a Zigzagoon!"))
+            waitfanfare
+            hidemonpic
+
+            message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
+            waitmessage
+            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+                "A trick of the light", "Yes, it's glittering!")
+            release
+
+            if (var(VAR_RESULT) == 0){
+                delay(16)
+                msgbox(format("Must be a trick of the light..."))
+                release
+                givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY)
+            } else {
+                delay(16)
+                msgbox(format("There's a strange shimmering aura..."))
+                release
+                givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY, isShiny=TRUE)
             }
+
+            setflag(FLAG_SYS_POKEMON_GET)
+            delay(16)
+
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+            call(NicknamePartyMon)
+
         }
         else{
             hidemonpic

@@ -96,12 +96,12 @@ script CarabrueTown_Home2F_Doll{
 
     msgbox(format("It's my Gimmighoul doll!"))
 
-    msgbox(format("Cheats may glitch your game!\nSo Gimmighoul can help you.\lThis is not recommended\lfor a regular playthrough."), MSGBOX_POKENAV)
+    msgbox(format("Using cheats may glitch your game!\nSo Gimmighoul can help you out.\lThis is not recommended for a\lregular playthrough."), MSGBOX_POKENAV)
 
     message(format("What would you like to do?"))
     waitmessage
     dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
-        "Max Money", "Master Balls", "Shiny Starters", "Cancel")    
+        "Max Money", "Master Balls", "100% Shiny", "Cancel")    
     release
 
     if (var(VAR_RESULT) == 0){
@@ -115,7 +115,6 @@ script CarabrueTown_Home2F_Doll{
     }
 
     if (var(VAR_RESULT) == 2){
-//        setvar(SHINY_ODDS, 10)
 
     }
 }
