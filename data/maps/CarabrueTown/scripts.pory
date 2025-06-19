@@ -1,4 +1,28 @@
-mapscripts CarabrueTown_MapScripts{}
+mapscripts CarabrueTown_MapScripts{
+    
+   //MAP_SCRIPT_ON_RESUME: CarabrueTown_TenebrisLab_OnResume
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: CarabrueTown_PostGame
+    ]
+}
+
+//FLAG_SKIP_POSTGAME_MSG
+//post-game message
+script CarabrueTown_PostGame{
+    setvar(VAR_TEMP_0, 1)
+    if (flag(FLAG_SKIP_POSTGAME_MSG)) {releaseall end}
+    if (flag(FLAG_SYS_GAME_CLEAR)){
+        
+        msgbox(format("Thank you for playing Pokémon Dreamstone Mysteries and\lcongratulations on becoming\lthe Champion of Cormoria!\pBut tell me - is a Champion truly a Champion unless they've explored\lall of Cormoria?\pWhy don't you try catching\lthe 4 Mythical Pokémon available?\lThere's also a secret event\lsomewhere nearby..."), MSGBOX_POKENAV)
+
+        setflag(FLAG_SKIP_POSTGAME_MSG)
+        releaseall
+        end
+    }
+
+}
+
 
 script CarabrueTown_EventScript_PoliceRoadBlock{
 
