@@ -1186,38 +1186,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_SEVII_ISLE_6",
-      "name": "SEVII ISLE 6",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_SEVII_ISLE_7",
-      "name": "SEVII ISLE 7",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_SEVII_ISLE_8",
-      "name": "SEVII ISLE 8",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_SEVII_ISLE_9",
-      "name": "SEVII ISLE 9",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_RESORT_GORGEOUS",
       "name": "RESORT GORGEOUS",
       "x": 0,
@@ -1308,14 +1276,6 @@
     {
       "map_section": "MAPSEC_TANOBY_RUINS",
       "name": "TANOBY RUINS",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_SEVII_ISLE_22",
-      "name": "SEVII ISLE 22",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1721,6 +1681,14 @@
       "width": 1,
       "height": 1
     },    
+        {
+      "map_section": "MAPSEC_ROUTE3_CAVES",
+      "name": "Route 3 Depths",
+      "x": 23,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },
     {
       "map_section": "MAPSEC_ROUTE4",
       "name": "Route 4",
@@ -1745,6 +1713,14 @@
       "width": 1,
       "height": 1
     },
+    {
+      "map_section": "MAPSEC_CERAM_INTERIOR",
+      "name": "Mt. Ceram Interior",
+      "x": 25,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },    
     {
       "map_section": "MAPSEC_CERAM_PEAK",
       "name": "Ceram Peak",
@@ -1809,6 +1785,14 @@
       "width": 1,
       "height": 5
     },
+    {
+      "map_section": "MAPSEC_STATIC_CAVE",
+      "name": "Static Cave",
+      "x": 12,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },    
     {
       "map_section": "MAPSEC_RANGER_INSTITUTE",
       "name": "Ranger Institute",
@@ -1881,6 +1865,22 @@
       "width": 1,
       "height": 1
     },    
+    {
+      "map_section": "MAPSEC_MT_MIRROH_INTERIOR_B1F",
+      "name": "Mt. Mirroh B1F",
+      "x": 4,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },    
+      {
+      "map_section": "MAPSEC_MT_MIRROH_INTERIOR_B2F",
+      "name": "Mt. Mirroh B2F",
+      "x": 4,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
     {
       "map_section": "MAPSEC_WINTERLILY_HOLLOW",
       "name": "Winterlily Hollow",

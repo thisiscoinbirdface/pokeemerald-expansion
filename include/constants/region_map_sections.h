@@ -149,10 +149,6 @@
 #define MAPSEC_CAPE_BRINK                   0x98
 #define MAPSEC_BOND_BRIDGE                  0x99
 #define MAPSEC_THREE_ISLE_PORT              0x9A
-#define MAPSEC_SEVII_ISLE_6                 0x9B
-#define MAPSEC_SEVII_ISLE_7                 0x9C
-#define MAPSEC_SEVII_ISLE_8                 0x9D
-#define MAPSEC_SEVII_ISLE_9                 0x9E
 #define MAPSEC_RESORT_GORGEOUS              0x9F
 #define MAPSEC_WATER_LABYRINTH              0xA0
 #define MAPSEC_FIVE_ISLE_MEADOW             0xA1
@@ -165,7 +161,6 @@
 #define MAPSEC_CANYON_ENTRANCE              0xA8
 #define MAPSEC_SEVAULT_CANYON               0xA9
 #define MAPSEC_TANOBY_RUINS                 0xAA
-#define MAPSEC_SEVII_ISLE_22                0xAB
 #define MAPSEC_SEVII_ISLE_23                0xAC
 #define MAPSEC_SEVII_ISLE_24                0xAD
 #define MAPSEC_NAVEL_ROCK_FRLG              0xAE
@@ -259,6 +254,11 @@
 #define MAPSEC_CHAMPIONSHIP_CORRIDOR         0x95
 #define MAPSEC_IVY_FOREST                    0x96
 
+#define MAPSEC_ROUTE3_CAVES                  0x9B
+#define MAPSEC_MT_MIRROH_INTERIOR_B1F        0x9C
+#define MAPSEC_MT_MIRROH_INTERIOR_B2F        0x9D
+#define MAPSEC_STATIC_CAVE                  0x9E
+#define MAPSEC_CERAM_INTERIOR                0xAB
 
 #define MAPSEC_NONE                          0xFC
 

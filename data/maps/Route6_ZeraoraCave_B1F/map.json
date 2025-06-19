@@ -3,7 +3,7 @@
   "name": "Route6_ZeraoraCave_B1F",
   "layout": "LAYOUT_ROUTE6_ZERAORA_CAVE_B1F",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_ROUTE6",
+  "region_map_section": "MAPSEC_STATIC_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

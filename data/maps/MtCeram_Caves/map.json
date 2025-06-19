@@ -3,7 +3,7 @@
   "name": "MtCeram_Caves",
   "layout": "LAYOUT_MT_CERAM_CAVES",
   "music": "MUS_RG_SEVII_DUNGEON",
-  "region_map_section": "MAPSEC_MT_CERAM",
+  "region_map_section": "MAPSEC_CERAM_INTERIOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
