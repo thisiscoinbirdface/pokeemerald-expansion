@@ -23,7 +23,7 @@ gText_PreBirch3::
 	.string "breathing world with people and Pokémon.\n"
 	.string "Take your time and explore every corner.\n"
 	.string "Undertake your journey and grow with\n"
-	.string "your trusted partners.\n"
+	.string "the partners by your side.\n"
 	.string "\n"	
 	.string "Are you ready for your adventure?\p"
 	.string "$"
