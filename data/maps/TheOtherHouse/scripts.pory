@@ -31,7 +31,7 @@ script TheOtherHouse_Game{
 
     if (var(VAR_THE_OTHER_HOUSE) == 4) {goto(TheOtherHouse_GameStart)}
 
-    msgbox(format("It's a gaming console!\pBut it's not a recognisable one. There are no brand or manufacturer details...\pThere's a drive slot, a port slot and a chip slot."))
+    msgbox(format("It's a gaming console!\pBut it's not a recognisable one. There are no brand or manufacturer details...\pThere's a drive slot, a port slot and\na chip slot."))
     release
 
     setvar(VAR_THE_OTHER_HOUSE, 1) //reset var to count the drives

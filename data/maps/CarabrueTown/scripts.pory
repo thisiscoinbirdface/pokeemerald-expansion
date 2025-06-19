@@ -14,7 +14,7 @@ script CarabrueTown_PostGame{
     if (flag(FLAG_SKIP_POSTGAME_MSG)) {releaseall end}
     if (flag(FLAG_SYS_GAME_CLEAR)){
         
-        msgbox(format("Thank you for playing Pokémon Dreamstone Mysteries and\lcongratulations on becoming\lthe Champion of Cormoria!\pBut tell me - is a Champion truly a Champion unless they've explored\lall of Cormoria?\pWhy don't you try catching\nthe 4 Mythical Pokémon available?\pThere's also a secret event\nsomewhere nearby..."), MSGBOX_POKENAV)
+        msgbox(format("Thank you for playing Pokémon Dreamstone Mysteries and\lcongratulations on becoming\lthe Champion of Cormoria!\pBut tell me - is a Champion truly a Champion unless they've explored\lall of Cormoria?\pWhy don't you try completing\nthe side-quests and catching\nthe 4 Mythical Pokémon available?"), MSGBOX_POKENAV)
 
         setflag(FLAG_SKIP_POSTGAME_MSG)
         releaseall

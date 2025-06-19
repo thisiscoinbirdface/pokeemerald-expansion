@@ -159,7 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_LEGENDS, 7, 119
+	warp MAP_LEGENDS, 7, 5
 	release
 	end
 

@@ -1282,14 +1282,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_SEVII_ISLE_23",
-      "name": "SEVII ISLE 23",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_SEVII_ISLE_24",
       "name": "SEVII ISLE 24",
       "x": 0,
@@ -1617,6 +1609,14 @@
       "width": 1,
       "height": 1
     },
+    {
+      "map_section": "MAPSEC_THE_OTHER_HOUSE",
+      "name": "The Other House",
+      "x": 18,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },    
     {
       "map_section": "MAPSEC_FENNILAHL_TOWN",
       "name": "Fennilahl Town",

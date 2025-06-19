@@ -14,23 +14,49 @@ script Legends_Sentry{
     msgbox(format("My legacy is in good hands."), MSGBOX_NPC)
     end
 }
+script Legends_Sentry_Mon{
+    playmoncry(SPECIES_OBSTAGOON, CRY_MODE_NORMAL)
+    msgbox(format("It's Sentry's Obstagoon."), MSGBOX_NPC)
+    end
+}
 script Legends_Eden{
-    trainerbattle_single(TRAINER_PLAYER_EDEN, format("I am the second player to complete Pokémon Dreamstone Mysteries.\pAfter me lies your last challenge.\nBut will you ever reach it?"), format("I expected nothing else"))
-    msgbox(format("I expected nothing less."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_EDEN, format("I am the second player to complete Pokémon Dreamstone Mysteries.\pAfter me lies your last challenge.\nBut will you ever reach it?"), format("I expected nothing else!"))
+    msgbox(format("I expected nothing less!"), MSGBOX_NPC)
+    end
+}
+script Legends_Eden_Mon{
+    playmoncry(SPECIES_OBSTAGOON, CRY_MODE_NORMAL)
+    msgbox(format("It's Eden's Obstagoon."), MSGBOX_NPC)
     end
 }
 script Legends_Gozliak{
-    trainerbattle_single(TRAINER_PLAYER_GOZLIAK, format("I am the third player to complete Pokémon Dreamstone Mysteries.\pI have Pokémon that you could only dream of catching!"), format(""))
-    msgbox(format("You have an impressive team."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_GOZLIAK, format("I am the third player to complete Pokémon Dreamstone Mysteries.\pI have Pokémon that you could only dream of catching!"), format("You have an impressive team!"))
+    msgbox(format("You have an impressive team!"), MSGBOX_NPC)
+    end
+}
+script Legends_Gozliak_Mon{
+    playmoncry(SPECIES_HYDRAPPLE, CRY_MODE_NORMAL)
+    msgbox(format("It's Gozliak's Hydrapple."), MSGBOX_NPC)
     end
 }
 script Legends_Sherry{
-    trainerbattle_single(TRAINER_PLAYER_SHERRY, format("I am the fourth player to complete Pokémon Dreamstone Mysteries.\pCan you match upto my power?"), format("You're one of us."))
-    msgbox(format("You're one of us."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_SHERRY, format("I am the fourth player to complete Pokémon Dreamstone Mysteries.\pCan you match up to my power?"), format("You're one of us!"))
+    msgbox(format("You're one of us!"), MSGBOX_NPC)
     end
 }
+script Legends_Sherry_Mon{
+    playmoncry(SPECIES_GOTHITELLE, CRY_MODE_NORMAL)
+    msgbox(format("It's Sherry's Gothitelle."), MSGBOX_NPC)
+    end
+}
+
 script Legends_Mike{
-    trainerbattle_single(TRAINER_PLAYER_MIKE, format("I am the fifth player to complete Pokémon Dreamstone Mysteries.\pYou may have won the Championship, but you're up against a true Champion now!"), format("Well done, young Champion."))
-    msgbox(format("Well done, young Champion."), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_MIKE, format("I am the fifth player to complete Pokémon Dreamstone Mysteries.\pYou may have won the Championship, but you're up against a true Champion now!"), format("Well done, young Champion!"))
+    msgbox(format("Well done, young Champion!"), MSGBOX_NPC)
+    end
+}
+script Legends_Mike_Mon{
+    playmoncry(SPECIES_GOTHITELLE, CRY_MODE_NORMAL)
+    msgbox(format("It's Mike's Gothitelle."), MSGBOX_NPC)
     end
 }

@@ -191,8 +191,8 @@ TheOtherHouse_Game_Text_0:
 	.string "It's a gaming console!\p"
 	.string "But it's not a recognisable one. There\n"
 	.string "are no brand or manufacturer details...\p"
-	.string "There's a drive slot, a port slot and a\n"
-	.string "chip slot.$"
+	.string "There's a drive slot, a port slot and\n"
+	.string "a chip slot.$"
 
 TheOtherHouse_Game_Text_1:
 # 42 "data//maps/TheOtherHouse/scripts.pory"

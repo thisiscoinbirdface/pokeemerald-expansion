@@ -161,8 +161,6 @@
 #define MAPSEC_CANYON_ENTRANCE              0xA8
 #define MAPSEC_SEVAULT_CANYON               0xA9
 #define MAPSEC_TANOBY_RUINS                 0xAA
-#define MAPSEC_SEVII_ISLE_23                0xAC
-#define MAPSEC_SEVII_ISLE_24                0xAD
 #define MAPSEC_NAVEL_ROCK_FRLG              0xAE
 #define MAPSEC_MT_EMBER                     0xAF
 #define MAPSEC_BERRY_FOREST                 0xB0
@@ -257,8 +255,11 @@
 #define MAPSEC_ROUTE3_CAVES                  0x9B
 #define MAPSEC_MT_MIRROH_INTERIOR_B1F        0x9C
 #define MAPSEC_MT_MIRROH_INTERIOR_B2F        0x9D
-#define MAPSEC_STATIC_CAVE                  0x9E
+#define MAPSEC_STATIC_CAVE                   0x9E
 #define MAPSEC_CERAM_INTERIOR                0xAB
+
+#define MAPSEC_THE_OTHER_HOUSE                0xAC
+#define MAPSEC_SEVII_ISLE_24                0xAD
 
 #define MAPSEC_NONE                          0xFC
 

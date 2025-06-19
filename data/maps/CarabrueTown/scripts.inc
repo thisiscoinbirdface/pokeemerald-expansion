@@ -167,10 +167,9 @@ CarabrueTown_PostGame_Text_0:
 	.string "But tell me - is a Champion truly a\n"
 	.string "Champion unless they've explored\l"
 	.string "all of Cormoria?\p"
-	.string "Why don't you try catching\n"
-	.string "the 4 Mythical Pokémon available?\p"
-	.string "There's also a secret event\n"
-	.string "somewhere nearby...$"
+	.string "Why don't you try completing\n"
+	.string "the side-quests and catching\n"
+	.string "the 4 Mythical Pokémon available?$"
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_0:
 # 32 "data//maps/CarabrueTown/scripts.pory"

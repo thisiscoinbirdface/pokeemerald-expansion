@@ -9794,7 +9794,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: No
 Items: Full Restore
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Prediction
 Mugshot: Purple
 
 Obstagoon @ Assault Vest
@@ -9814,11 +9814,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spikes
 - Slash
 - Steel Wing
-
-Skarmory @ Muscle Band
-Level: 65
-Ability: Keen Eye
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Scream Tail @ Fairy Feather
 Level: 65
@@ -9846,6 +9841,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Punch
 - Axe Kick
 - Ice Punch
+
+Polteageist @ Big Root
+Level: 65
+Ability: Weak Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sucker Punch
+- Shadow Ball
+- Strength Sap
+- Giga Drain
+
 
 === TRAINER_PLAYER_EDEN ===
 Name: Eden
@@ -9856,7 +9861,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: No
 Items: Full Restore
-AI: Smart Trainer / Prediction / Ace Pokemon
+AI: Smart Trainer / Prediction
 Mugshot: Purple
 
 Obstagoon @ Assault Vest
@@ -9876,11 +9881,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spikes
 - Slash
 - Steel Wing
-
-Skarmory @ Muscle Band
-Level: 65
-Ability: Keen Eye
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Scream Tail @ Fairy Feather
 Level: 65
@@ -9909,6 +9909,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Axe Kick
 - Ice Punch
 
+Polteageist @ Big Root
+Level: 65
+Ability: Weak Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sucker Punch
+- Shadow Ball
+- Strength Sap
+- Giga Drain
 
 
 
