@@ -167,8 +167,10 @@ CarabrueTown_PostGame_Text_0:
 	.string "But tell me - is a Champion truly a\n"
 	.string "Champion unless they've explored\l"
 	.string "all of Cormoria?\p"
+	.string "In this game, completing the\n"
+	.string "Pokédex is not possible.\l"
 	.string "Why don't you try completing\n"
-	.string "the side-quests and catching\n"
+	.string "the side-quests and catching\l"
 	.string "the 4 Mythical Pokémon available?$"
 
 CarabrueTown_EventScript_PoliceRoadBlock_Text_0:

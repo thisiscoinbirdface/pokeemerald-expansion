@@ -158,23 +158,30 @@ script GastreeCity_Shard_NPC{
             release
 
             //give item
-            msgbox(format("The Cormoria Historical Society awards these to people who have made special contributions to the field!\pIt's a great honour, {PLAYER}.\nYou should be proud!\pI can also do another thing for you - hand me your Archaeolens."))
+            msgbox(format("The Cormoria Historical Society awards these to people who have made special contributions to the field!\pIt's a great honour, {PLAYER}.\nYou should be proud!"))
             release
-            removeitem(ITEM_ARCHAEOLENS)
-            playfanfare(MUS_LEVEL_UP)
-            msgbox(format("{PLAYER} handed over the Archaeolens."))
-            release
-            delay(24)
-            msgbox(format("With a little bit of tooling...\p...and fiddling...\p...give it a shake..."))
-            release
-            playse(SE_SWITCH)
-            waitse
+            delay(16)
+            // msgbox(format("I can also do another thing for you - hand me your Archaeolens."))
+            // release
+            // removeitem(ITEM_ARCHAEOLENS)
+            // playfanfare(MUS_LEVEL_UP)
+            // msgbox(format("{PLAYER} handed over the Archaeolens."))
+            // release
+            // delay(24)
+            // msgbox(format("With a little bit of tooling...\p...and fiddling...\p...give it a shake..."))
+            // release
+            // playse(SE_SWITCH)
+            // waitse
 
-            msgbox(format("There we go! The Archaeolens 2.0!"))
-            release
-            giveitem(ITEM_ARCHAEOLENS_2)
+            // msgbox(format("There we go! The Archaeolens 2.0!"))
+            // release
+            // giveitem(ITEM_ARCHAEOLENS_2)
 
-            msgbox(format("This upgraded Archaeolens can scan and decipher the text of ancient carvings.\pYou work with Professor Tenebris, correct? So you would be interested\lin Pokemon psychology, I suppose.\lWhether you proceed down the path of history is up to you, but if you do...\lI hope this serves you well!"))
+            // msgbox(format("This upgraded Archaeolens can scan and decipher the text of ancient carvings"))
+            // release
+            // delay(16)
+
+            msgbox(format("You work with Professor Tenebris, correct? So you would be interested\lin Pokemon psychology, I suppose.\lWhether you proceed down the path of history is up to you, but if you do...\lI hope this serves you well!"))
 
             completequest(QUEST_ANCIENT_STATUES)
 
