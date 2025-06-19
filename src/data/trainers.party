@@ -5832,8 +5832,8 @@ Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Manectric @ Manectite
-Level: 45
-IVs: 30 HP / 15 Atk / 30 Def / 0 SpA / 30 SpD / 15 Spe
+Level: 43
+
 
 === TRAINER_WINTERLILY_HOLLOW_GYM_LEADER ===
 Name: Viniel
@@ -8061,19 +8061,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 52
+Level: 53
 
 Spiritomb
-Level: 53
-
-Roaring Moon
-Level: 53
-
-Metagross @ Metagrossite
 Level: 54
 
-Koraidon
+Roaring Moon
+Level: 54
+
+Metagross @ Metagrossite
 Level: 55
+
+Koraidon
+Level: 56
 
 === TRAINER_UNCHARTED_ISLAND_RUE ===
 Name: Rue
@@ -8087,19 +8087,19 @@ AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Toedscruel
-Level: 52
+Level: 53
 
 Spiritomb
 Level: 53
 
 Roaring Moon
-Level: 53
-
-Metagross @ Metagrossite
 Level: 54
 
-Koraidon
+Metagross @ Metagrossite
 Level: 55
+
+Koraidon
+Level: 56
 
 
 
@@ -8753,6 +8753,7 @@ AI: Smart Trainer
 
 Charizard @ Charizardite-X
 Level: 58
+Shiny: Yes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VICTORY_ROAD_I ===
@@ -8767,6 +8768,7 @@ AI: Smart Trainer
 
 Charizard @ Charizardite-X
 Level: 58
+Shiny: Yes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 

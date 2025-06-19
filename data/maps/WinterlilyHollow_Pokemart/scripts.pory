@@ -19,6 +19,7 @@ mart WinterlilyHollow_Pokemart_Inventory {
     ITEM_ULTRA_BALL
     ITEM_FULL_HEAL
     ITEM_SUPER_REPEL
+    ITEM_LUXURY_BALL
 }
 
 

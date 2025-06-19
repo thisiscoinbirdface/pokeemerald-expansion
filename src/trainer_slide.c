@@ -175,7 +175,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
         [TRAINER_CHAMPIONSHIP_E] = 
         {
             [TRAINER_SLIDE_MEGA_EVOLUTION] = COMPOUND_STRING("Let's go Gallade! No holding back!"),
-            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("You're always getting lucky!'"),
+            [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("You're always getting lucky!"),
             [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("I won't forgive you for that!"),
             [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PAUSE_MUSIC}So it comes down to this...\pAfter everything we've been through...\pCeruledge...it's you and me against the world!{PLAY_BGM MUS_END}\p"), 
         }, 

@@ -1,8 +1,8 @@
 raw`
     .set LOCALID_MAIN, 4
-    .set LOCALID_Q1, 6
-    .set LOCALID_Q2, 7
-    .set LOCALID_Q3, 8
+    .set LOCALID_Q1, 5
+    .set LOCALID_Q2, 6
+    .set LOCALID_Q3, 7
     .set LOCALID_EV, 9
     .set LOCALID_TAUROS_RANGER, 13
 `
@@ -284,6 +284,20 @@ script IvyRiver_Ranger_Scientist_B{
     copyvar(VAR_0x800A, VAR_0x8004)         //idk why but copy player selected mon
     copyvar(VAR_0x8005, VAR_0x800A)         //idk why but copy the trade mon
     specialvar(VAR_RESULT, GetTradeSpecies)
+
+    if (var(VAR_RESULT) == SPECIES_TOEDSCRUEL){
+        applymovement(LOCALID_Q2, moves(emote_exclamation_mark))
+        waitmovement(0)
+        delay(16)
+        msgbox(format("Wonderful! Toedscool and Tentacool look so similar, yet so different. The beauty of nature!\pHang on while I take some photographs.\p...\p...\p..."))
+        release
+        playse(SE_BANG)
+        msgbox(format("And...done!\pThank you, Candidate. This'll be very helpful. Come back later if you want to find out the results of my research!"), MSGBOX_NPC)
+        release
+        addvar(VAR_RANGER_INSTITUTE, 1)
+        setflag(FLAG_IVY_RIVER_RANGER_SCIENTIST_B)
+        end
+    }
 
     if (var(VAR_RESULT) == SPECIES_TOEDSCOOL){
         applymovement(LOCALID_Q2, moves(emote_exclamation_mark))

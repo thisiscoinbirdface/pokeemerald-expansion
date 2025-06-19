@@ -25,20 +25,25 @@ script Championship_Corridor_Register{
     msgbox(format("Are you ready to try again?"), MSGBOX_POKENAV)
     dynmultichoice(10, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "I'm ready!", "Not yet")
 
+    if (var(VAR_RESULT) == 1){
+        releaseall
+        end
+    }
+
     //reset game 
     setvar(VAR_CHAMP_STAGE, 0)
     special(HealPlayerParty)
     warp(MAP_CHAMPIONSHIP, 40, 38)
 
     //end game proper
-    setflag(FLAG_SYS_GAME_CLEAR)
-	delay(20)
-	dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
-	waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
-	delay(40)
-    setvar(VAR_TEMP_A, 1)
+    // setflag(FLAG_SYS_GAME_CLEAR)
+	// delay(20)
+	// dofieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	// waitfieldeffect(FLDEFF_HALL_OF_FAME_RECORD)
+	// delay(40)
+    // setvar(VAR_TEMP_A, 1)
 
-    special(GameClear)
+    // special(GameClear)
 
     releaseall
     end

@@ -24,13 +24,15 @@ script Route6_Zeraora{
     removeobject(1)
     waitse
 
-    msgbox(format("The Pokémon escaped! It looked just like Director Ravine's description!\nIt must be out there somewhere...did the Pokédex record it?"))
+    msgbox(format("The Pokémon escaped! It looked just like Director Ravine's description!\lIt must be out there somewhere...did the Pokédex record it?"))
+    release
 
     //flags and end
     setflag(FLAG_ZERAORA)
     special(InitRoamer)
     setseenmon(SPECIES_ZERAORA)
 
+    releaseall
     end
 
     // lockall

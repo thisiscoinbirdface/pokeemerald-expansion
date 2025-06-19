@@ -98,7 +98,7 @@ script RivetshoreQuarry_NPC1{
     special(StartFlappyBird)
     waitstate
 
-    if (var(GAME_CORNER_VAR_WINNINGS) > 2){
+    if (var(GAME_CORNER_VAR_WINNINGS) > 0){
         msgbox(format("No way! You're a natural! Sigh...I'm getting old, ya know? These fast-clicky games just aren't for my fingers. Alright kid, here ya go.\pHave fun!"), MSGBOX_NPC)
         giveitem(ITEM_POCKET_BOY)
         setflag(FLAG_RIVETSHORE_GET_POCKETBOY)
@@ -312,6 +312,11 @@ script Rivetshore_Raazi_Talk{
     applymovement(LOCALID_RAAZI, moves(walk_right * 10 walk_up * 7))
     waitmovement(0)
 
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_right walk_up))
+    waitmovement(0)
+    special(RemoveCameraObject)
+    
     removeobject(LOCALID_RAAZI)
     setflag(FLAG_RIVETSHORE_RAAZI_CALL)
 
