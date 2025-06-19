@@ -64,7 +64,7 @@ script Common_EventScript_Follower_Cheat{
         if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
             release
             end
-        }  
+        }
     }
 
     releaseall

@@ -81,3 +81,41 @@ script CarabrueTown_Home2F_EventScript_TV{
         end
     }
 }
+
+
+
+
+
+
+
+
+
+
+///cheat doll
+script CarabrueTown_Home2F_Doll{
+
+    msgbox(format("It's my Gimmighoul doll!"))
+
+    msgbox(format("Cheats may glitch your game!\nSo Gimmighoul can help you.\lThis is not recommended\lfor a regular playthrough."), MSGBOX_POKENAV)
+
+    message(format("What would you like to do?"))
+    waitmessage
+    dynmultichoice(0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+        "Max Money", "Master Balls", "Shiny Starters", "Cancel")    
+    release
+
+    if (var(VAR_RESULT) == 0){
+        playse(SE_SHOP)
+        addmoney(1000000)
+    }
+
+    if (var(VAR_RESULT) == 1){
+        playse(SE_SHOP)
+        additem(ITEM_MASTER_BALL, 99)
+    }
+
+    if (var(VAR_RESULT) == 2){
+//        setvar(SHINY_ODDS, 10)
+
+    }
+}

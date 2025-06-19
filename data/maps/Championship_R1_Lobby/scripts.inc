@@ -78,6 +78,60 @@ Championship_Lobby_Nurse::
 	end
 
 
+Championship_R1_Lobby_NPC1::
+# 51 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_NPC1_Text_0, MSGBOX_NPC
+	end
+
+
+Championship_R1_Lobby_Mon1::
+# 56 "data//maps/Championship_R1_Lobby/scripts.pory"
+	playmoncry SPECIES_TOXAPEX, CRY_MODE_NORMAL
+# 57 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_Mon1_Text_0, MSGBOX_NPC
+	end
+
+
+Championship_R1_Lobby_NPC2::
+# 63 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_NPC2_Text_0, MSGBOX_NPC
+	end
+
+
+Championship_R1_Lobby_Mon2::
+# 68 "data//maps/Championship_R1_Lobby/scripts.pory"
+	lockall
+# 69 "data//maps/Championship_R1_Lobby/scripts.pory"
+	playmoncry SPECIES_DELPHOX, CRY_MODE_NORMAL
+# 70 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_Mon2_Text_0
+# 71 "data//maps/Championship_R1_Lobby/scripts.pory"
+	releaseall
+	end
+
+
+Championship_R1_Lobby_NPC3::
+# 76 "data//maps/Championship_R1_Lobby/scripts.pory"
+	lockall
+# 77 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_NPC3_Text_0
+# 78 "data//maps/Championship_R1_Lobby/scripts.pory"
+	releaseall
+	end
+
+
+Championship_R1_Lobby_Mon3::
+# 83 "data//maps/Championship_R1_Lobby/scripts.pory"
+	lockall
+# 84 "data//maps/Championship_R1_Lobby/scripts.pory"
+	playmoncry SPECIES_FROSMOTH, CRY_MODE_NORMAL
+# 85 "data//maps/Championship_R1_Lobby/scripts.pory"
+	msgbox Championship_R1_Lobby_Mon3_Text_0
+# 86 "data//maps/Championship_R1_Lobby/scripts.pory"
+	releaseall
+	end
+
+
 # 9 "data//maps/Championship_R1_Lobby/scripts.pory"
 Championship_Lobby_Teala_Movement_0:
 # 9 "data//maps/Championship_R1_Lobby/scripts.pory"
@@ -108,3 +162,31 @@ Championship_Lobby_Nurse_Text_0:
 Championship_Lobby_Nurse_Text_1:
 # 32 "data//maps/Championship_R1_Lobby/scripts.pory"
 	.string "All the best!$"
+
+Championship_R1_Lobby_NPC1_Text_0:
+# 51 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "The first round was so hard!\n"
+	.string "But Toxapex and I made it through!$"
+
+Championship_R1_Lobby_Mon1_Text_0:
+# 57 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "Toxapex seems pumped up!$"
+
+Championship_R1_Lobby_NPC2_Text_0:
+# 63 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "I'm not too old to win!\n"
+	.string "Delphox and I have still got it!$"
+
+Championship_R1_Lobby_Mon2_Text_0:
+# 70 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "Delphox's eyes are closed.\n"
+	.string "It's visualising victory...$"
+
+Championship_R1_Lobby_NPC3_Text_0:
+# 77 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "...after the hail comes up, you Quiver\n"
+	.string "Dance twice, got it?$"
+
+Championship_R1_Lobby_Mon3_Text_0:
+# 85 "data//maps/Championship_R1_Lobby/scripts.pory"
+	.string "Frosmoth is nodding its head.$"

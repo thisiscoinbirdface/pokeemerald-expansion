@@ -808,7 +808,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5:
 # 498 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	removeobject 4
 # 499 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny = TRUE
 # 500 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 501 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
