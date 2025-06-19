@@ -168,7 +168,7 @@ CarabrueTown_PostGame_Text_0:
 	.string "Champion unless they've explored\l"
 	.string "all of Cormoria?\p"
 	.string "In this game, completing the\n"
-	.string "Pokédex is not possible.\l"
+	.string "Pokédex is not possible.\p"
 	.string "Why don't you try completing\n"
 	.string "the side-quests and catching\l"
 	.string "the 4 Mythical Pokémon available?$"
