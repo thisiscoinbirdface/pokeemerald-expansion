@@ -1,0 +1,24 @@
+script Championship_R2_Lobby_MapScripts{}
+
+
+script Championship_R2_Lobby_NPC1{
+    msgbox(format("Is it just me or are less trainers here than after the last round?"), MSGBOX_NPC)
+    end
+}
+
+script Championship_R2_Lobby_Mon1{
+    playmoncry(SPECIES_CONKELDURR, CRY_MODE_NORMAL)
+    msgbox(format("Conkeldurr is concentrating."), MSGBOX_NPC)
+    end
+}
+
+script Championship_R2_Lobby_NPC2{
+    msgbox(format("Where I did I put the Thick Club..."), MSGBOX_NPC)
+    end
+}
+
+script Championship_R2_Lobby_Mon2{
+    playmoncry(SPECIES_MAROWAK_ALOLA, CRY_MODE_NORMAL)
+    msgbox(format("Marowak is jittery."), MSGBOX_NPC)
+    end
+}

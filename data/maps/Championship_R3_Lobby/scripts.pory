@@ -1,0 +1,17 @@
+mapscripts Championship_R3_Lobby_MapScripts{}
+
+
+script Championship_R3_Lobby_NPC1{
+    lockall
+    msgbox(format("The Ace Rookie's on the other side.\nI hope I don't draw him..."), MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script Championship_R3_Lobby_Mon1{
+    playmoncry(SPECIES_GOODRA_HISUI, CRY_MODE_NORMAL)
+    msgbox(format("Goodra is as nervous as its trainer."), MSGBOX_NPC)
+    end
+}
+
+

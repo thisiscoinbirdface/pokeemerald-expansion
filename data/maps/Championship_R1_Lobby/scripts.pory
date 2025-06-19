@@ -34,3 +34,55 @@ script Championship_Lobby_Nurse{
     releaseall
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+//Trainers
+//tox
+script Championship_R1_Lobby_NPC1{
+    msgbox(format("The first round was so hard!\nBut Toxapex and I made it through!"), MSGBOX_NPC)
+    end
+}
+
+script Championship_R1_Lobby_Mon1{
+    playmoncry(SPECIES_TOXAPEX, CRY_MODE_NORMAL)
+    msgbox(format("Toxapex seems pumped up!"), MSGBOX_NPC)
+    end
+}
+
+//del
+script Championship_R1_Lobby_NPC2{
+    msgbox(format("I'm not too old to win!\nDelphox and I have still got it!"), MSGBOX_NPC)
+    end
+}
+
+script Championship_R1_Lobby_Mon2{
+    lockall
+    playmoncry(SPECIES_DELPHOX, CRY_MODE_NORMAL)
+    msgbox(format("Delphox's eyes are closed.\nIt's visualising victory..."))
+    releaseall
+    end
+}
+//fros
+script Championship_R1_Lobby_NPC3{
+    lockall
+    msgbox(format("...after the hail comes up, you Quiver Dance twice, got it?"))
+    releaseall
+    end
+}
+
+script Championship_R1_Lobby_Mon3{
+    lockall
+    playmoncry(SPECIES_FROSMOTH, CRY_MODE_NORMAL)
+    msgbox(format("Frosmoth is nodding its head."))
+    releaseall
+    end
+}
