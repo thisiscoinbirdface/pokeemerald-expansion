@@ -37,4 +37,6 @@ WinterlilyHollow_Pokemart_Inventory:
 	.2byte ITEM_FULL_HEAL
 # 21 "data//maps/WinterlilyHollow_Pokemart/scripts.pory"
 	.2byte ITEM_SUPER_REPEL
+# 22 "data//maps/WinterlilyHollow_Pokemart/scripts.pory"
+	.2byte ITEM_LUXURY_BALL
 	.2byte ITEM_NONE

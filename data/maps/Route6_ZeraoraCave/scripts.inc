@@ -39,17 +39,21 @@ Route6_Zeraora::
 	waitse
 # 27 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	msgbox Route6_Zeraora_Text_0
-# 30 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	setflag FLAG_ZERAORA
+# 28 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	release
 # 31 "data//maps/Route6_ZeraoraCave/scripts.pory"
-	special InitRoamer
+	setflag FLAG_ZERAORA
 # 32 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	special InitRoamer
+# 33 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	setseenmon SPECIES_ZERAORA
+# 35 "data//maps/Route6_ZeraoraCave/scripts.pory"
+	releaseall
 	end
 
 
 Route6_Zeraora_AncientCarving::
-# 61 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 63 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	msgbox Route6_Zeraora_AncientCarving_Text_0, MSGBOX_NPC
 	end
 
@@ -85,10 +89,10 @@ Route6_Zeraora_Movement_2:
 Route6_Zeraora_Text_0:
 # 27 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	.string "The Pokémon escaped! It looked just\n"
-	.string "like Director Ravine's description!\n"
+	.string "like Director Ravine's description!\l"
 	.string "It must be out there somewhere...did\l"
 	.string "the Pokédex record it?$"
 
 Route6_Zeraora_AncientCarving_Text_0:
-# 61 "data//maps/Route6_ZeraoraCave/scripts.pory"
+# 63 "data//maps/Route6_ZeraoraCave/scripts.pory"
 	.string "It's an ancient carving...$"

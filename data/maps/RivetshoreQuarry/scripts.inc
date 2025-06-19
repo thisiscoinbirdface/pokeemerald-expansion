@@ -122,7 +122,7 @@ RivetshoreQuarry_NPC1::
 # 99 "data//maps/RivetshoreQuarry/scripts.pory"
 	waitstate
 # 101 "data//maps/RivetshoreQuarry/scripts.pory"
-	compare GAME_CORNER_VAR_WINNINGS, 2
+	compare GAME_CORNER_VAR_WINNINGS, 0
 	goto_if_gt RivetshoreQuarry_NPC1_8
 # 110 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
@@ -403,36 +403,44 @@ Rivetshore_Raazi_Talk::
 # 313 "data//maps/RivetshoreQuarry/scripts.pory"
 	waitmovement 0
 # 315 "data//maps/RivetshoreQuarry/scripts.pory"
-	removeobject LOCALID_RAAZI
+	special SpawnCameraObject
 # 316 "data//maps/RivetshoreQuarry/scripts.pory"
-	setflag FLAG_RIVETSHORE_RAAZI_CALL
+	applymovement OBJ_EVENT_ID_CAMERA, Rivetshore_Raazi_Talk_Movement_7
+# 317 "data//maps/RivetshoreQuarry/scripts.pory"
+	waitmovement 0
 # 318 "data//maps/RivetshoreQuarry/scripts.pory"
+	special RemoveCameraObject
+# 320 "data//maps/RivetshoreQuarry/scripts.pory"
+	removeobject LOCALID_RAAZI
+# 321 "data//maps/RivetshoreQuarry/scripts.pory"
+	setflag FLAG_RIVETSHORE_RAAZI_CALL
+# 323 "data//maps/RivetshoreQuarry/scripts.pory"
 	fadenewbgm MUS_RG_PEWTER
-# 319 "data//maps/RivetshoreQuarry/scripts.pory"
+# 324 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Quarry_HideFollower::
-# 329 "data//maps/RivetshoreQuarry/scripts.pory"
+# 334 "data//maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 330 "data//maps/RivetshoreQuarry/scripts.pory"
+# 335 "data//maps/RivetshoreQuarry/scripts.pory"
 	hidefollower
-# 331 "data//maps/RivetshoreQuarry/scripts.pory"
+# 336 "data//maps/RivetshoreQuarry/scripts.pory"
 	delay 4
-# 332 "data//maps/RivetshoreQuarry/scripts.pory"
+# 337 "data//maps/RivetshoreQuarry/scripts.pory"
 	setflag FLAG_SYS_OW_FOLLOWERS_DISABLED
-# 333 "data//maps/RivetshoreQuarry/scripts.pory"
+# 338 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
 
 Rivetshore_Quarry_ShowFollower::
-# 338 "data//maps/RivetshoreQuarry/scripts.pory"
+# 343 "data//maps/RivetshoreQuarry/scripts.pory"
 	lockall
-# 339 "data//maps/RivetshoreQuarry/scripts.pory"
+# 344 "data//maps/RivetshoreQuarry/scripts.pory"
 	clearflag FLAG_SYS_OW_FOLLOWERS_DISABLED
-# 340 "data//maps/RivetshoreQuarry/scripts.pory"
+# 345 "data//maps/RivetshoreQuarry/scripts.pory"
 	releaseall
 	end
 
@@ -632,6 +640,14 @@ Rivetshore_Raazi_Talk_Movement_6:
 # 312 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_up
 # 312 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_up
+	step_end
+
+# 316 "data//maps/RivetshoreQuarry/scripts.pory"
+Rivetshore_Raazi_Talk_Movement_7:
+# 316 "data//maps/RivetshoreQuarry/scripts.pory"
+	walk_right
+# 316 "data//maps/RivetshoreQuarry/scripts.pory"
 	walk_up
 	step_end
 
