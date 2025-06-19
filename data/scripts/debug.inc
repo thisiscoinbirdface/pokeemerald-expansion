@@ -159,8 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	setvar VAR_RANGER_INSTITUTE, 10
-	warp MAP_RANGER_INSTITUTE, 3, 27
+	warp MAP_LEGENDS, 7, 119
 	release
 	end
 

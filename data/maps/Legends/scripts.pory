@@ -1,27 +1,36 @@
-mapscripts Legends_MapScripts{}
+mapscripts Legends_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: Legends_SetWarp
+    ]
+}
+
+script Legends_SetWarp{
+    setvar(VAR_TEMP_0, 1)
+    setdynamicwarp(MAP_CARABRUE_TOWN, 13, 9)
+}
 
 script Legends_Sentry{
-    trainerbattle_single(TRAINER_PLAYER_SENTRY, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_SENTRY, format("I am the first player to complete Pokémon Dreamstone Mysteries.\pCome, {PLAYER}.\pStand before me.\pDuel me for my throne.\pAnd if you think you deserve it,\nearn the right to my crown!"), format("My legacy is in good hands."))
+    msgbox(format("My legacy is in good hands."), MSGBOX_NPC)
     end
 }
 script Legends_Eden{
-    trainerbattle_single(TRAINER_PLAYER_EDEN, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_EDEN, format("I am the second player to complete Pokémon Dreamstone Mysteries.\pAfter me lies your last challenge.\nBut will you ever reach it?"), format("I expected nothing else"))
+    msgbox(format("I expected nothing less."), MSGBOX_NPC)
     end
 }
 script Legends_Gozliak{
-    trainerbattle_single(TRAINER_PLAYER_GOZLIAK, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_GOZLIAK, format("I am the third player to complete Pokémon Dreamstone Mysteries.\pI have Pokémon that you could only dream of catching!"), format(""))
+    msgbox(format("You have an impressive team."), MSGBOX_NPC)
     end
 }
 script Legends_Sherry{
-    trainerbattle_single(TRAINER_PLAYER_SHERRY, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_SHERRY, format("I am the fourth player to complete Pokémon Dreamstone Mysteries.\pCan you match upto my power?"), format("You're one of us."))
+    msgbox(format("You're one of us."), MSGBOX_NPC)
     end
 }
 script Legends_Mike{
-    trainerbattle_single(TRAINER_PLAYER_MIKE, format(""), format(""))
-    msgbox(format(""), MSGBOX_NPC)
+    trainerbattle_single(TRAINER_PLAYER_MIKE, format("I am the fifth player to complete Pokémon Dreamstone Mysteries.\pYou may have won the Championship, but you're up against a true Champion now!"), format("Well done, young Champion."))
+    msgbox(format("Well done, young Champion."), MSGBOX_NPC)
     end
 }

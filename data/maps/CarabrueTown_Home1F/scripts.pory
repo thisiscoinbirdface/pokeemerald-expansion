@@ -5,12 +5,56 @@ mapscripts CarabrueTown_Home1F_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_STARTGAME_TV, 0: CarabrueTown_Home1F_EventScript_StartGame
+        VAR_TEMP_0, 0: CarabrueTown_Home1F_EventScript_EndGame
     ]
 }
 
 script CarabrueTown_Home1F_OnTransition{
     setrespawn(HEAL_LOCATION_CARABRUE_TOWN)
 }
+
+script CarabrueTown_Home1F_EventScript_EndGame{
+    setvar(VAR_TEMP_0, 1)
+
+    if (flag(FLAG_POSTGAME_MOM_TALK)) {releaseall end}
+    
+    if (flag(FLAG_SYS_GAME_CLEAR)){
+        
+        applymovement(1, moves(emote_exclamation_mark jump_in_place_right))
+        delay(20)
+        msgbox_delay("Mom", format("{PLAYER}! You're finally home!\nOh, come here you!"))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+        waitmovement(0)
+        delay(24)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+        waitmovement(0)
+        delay(24)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_fast_up * 2 walk_fast_left * 6 face_down))
+        waitmovement(0)
+        applymovement(1, moves(face_up))
+        delay(24)       
+        msgbox_delay("Mom", format("Look at you, {PLAYER}!\nYou've grown so much, I can hardly recognise you any more!\lAnd look at your Pokemon too!"))
+        applymovement(OBJ_EVENT_ID_FOLLOWER, moves(jump_in_place_down * 2))
+        waitmovement(0)
+        delay(16)
+        msgbox_delay("Mom", format("Well I must say that the internship at the lab really did you a world of good! I'll be recommending it to our new neighbours when they come...they\lhave a child around your age too.\lApparently she loves gaming all day!\nI bet some real-world experience will do her some good too.\pSpeaking of which, {PLAYER}, I have a surprise! I got you a Retro64!\lThe console you always wanted!\lIt's the least I can do for my baby,\lthe Champion of Cormoria!"))
+        delay(30)
+        msgbox_delay("Mom", format("Sniff...my baby, the Champion of Cormoria...Dad would be proud..."))
+        delay(30)
+        msgbox_delay("Mom", format("I love you, {PLAYER}."))
+
+        playfanfare(MUS_SLOTS_WIN)
+        message(format("The secret quest Make Mom Cry\nis now complete! Well done!"))
+        waitfanfare
+        release
+
+        //FLAGS AND END
+        setflag(FLAG_POSTGAME_MOM_TALK)
+        releaseall
+        end
+    }
+}
+
 
 script CarabrueTown_Home1F_EventScript_StartGame{
 

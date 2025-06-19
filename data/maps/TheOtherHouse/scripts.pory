@@ -1,7 +1,13 @@
 mapscripts TheOtherHouse_MapScripts{
     MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: TheOtherHouse_SetWarp
         VAR_THE_OTHER_HOUSE, 0: TheOtherHouse_Start
     ]
+}
+
+script TheOtherHouse_SetWarp{
+    setvar(VAR_TEMP_0, 1)
+    setdynamicwarp(MAP_CARABRUE_TOWN, 13, 9)
 }
 
 script TheOtherHouse_Start{
@@ -13,6 +19,8 @@ script TheOtherHouse_Start{
     end
 }
 
+//setdynamicwarp MAP_CHAMPIONSHIP_R1_LOBBY, 4, 13
+
 script TheOtherHouse_TV{
     msgbox(format("It's hooked up to the console."))
     releaseall
@@ -20,6 +28,9 @@ script TheOtherHouse_TV{
 }
 
 script TheOtherHouse_Game{
+
+    if (var(VAR_THE_OTHER_HOUSE) == 4) {goto(TheOtherHouse_GameStart)}
+
     msgbox(format("It's a gaming console!\pBut it's not a recognisable one. There are no brand or manufacturer details...\pThere's a drive slot, a port slot and a chip slot."))
     release
 
@@ -74,7 +85,7 @@ script TheOtherHouse_Game{
     }
 
     //check var count for at least one drive
-    if (var(VAR_THE_OTHER_HOUSE) < 3){
+    if (var(VAR_THE_OTHER_HOUSE) < 4){
         msgbox(format("But it probably needs all 3 drives..."))
         releaseall
         end
@@ -85,6 +96,10 @@ script TheOtherHouse_Game{
     removeitem(ITEM_SWAP_DRIVE)
     removeitem(ITEM_RETRO_DRIVE)
 
+    goto(TheOtherHouse_GameStart)
+}
+
+script TheOtherHouse_GameStart{
     playse(SE_PC_ON)
     msgbox(format("The console turned on!\p...\pWhat a weird game..."))
     release

@@ -42,7 +42,7 @@ CarabrueTown_Home2F_EventScript_PC::
 
 CarabrueTown_Home2F_EventScript_GameCube::
 # 29 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_GameCube_2
+	goto_if_set FLAG_SYS_GAME_CLEAR, CarabrueTown_Home2F_EventScript_GameCube_2
 # 65 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_GameCube_Text_3
 CarabrueTown_Home2F_EventScript_GameCube_1:
@@ -117,7 +117,7 @@ CarabrueTown_Home2F_EventScript_GameCube_12:
 
 CarabrueTown_Home2F_EventScript_TV::
 # 74 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, CarabrueTown_Home2F_EventScript_TV_1
+	goto_if_set FLAG_SYS_GAME_CLEAR, CarabrueTown_Home2F_EventScript_TV_1
 # 79 "data//maps/CarabrueTown_Home2F/scripts.pory"
 	msgbox CarabrueTown_Home2F_EventScript_TV_Text_1
 # 80 "data//maps/CarabrueTown_Home2F/scripts.pory"
@@ -192,7 +192,7 @@ CarabrueTown_Home2F_EventScript_GameCube_Text_2:
 
 CarabrueTown_Home2F_EventScript_GameCube_Text_3:
 # 65 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "My old GameCube...it's broken.$"
+	.string "My old GameSquare...it's broken.$"
 
 CarabrueTown_Home2F_EventScript_TV_Text_0:
 # 75 "data//maps/CarabrueTown_Home2F/scripts.pory"
@@ -200,7 +200,7 @@ CarabrueTown_Home2F_EventScript_TV_Text_0:
 
 CarabrueTown_Home2F_EventScript_TV_Text_1:
 # 79 "data//maps/CarabrueTown_Home2F/scripts.pory"
-	.string "The TV is hooked up to the GameCube.$"
+	.string "The TV is hooked up to the GameSquare.$"
 
 CarabrueTown_Home2F_Doll_Text_0:
 # 97 "data//maps/CarabrueTown_Home2F/scripts.pory"
