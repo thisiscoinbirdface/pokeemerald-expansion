@@ -289,7 +289,7 @@ Route3_TrainerBattle_Jana_Text_1:
 
 Route3_TrainerBattle_Jana_Text_2:
 # 28 "data//maps/Route3/scripts.pory"
-	.string "My Pokémon are my most cherised\n"
+	.string "My Pokémon are my most cherished\n"
 	.string "partners!$"
 
 Route3_TrainerBattle_Chara_Text_0:
