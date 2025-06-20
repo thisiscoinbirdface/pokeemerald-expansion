@@ -57,7 +57,7 @@
       "x": 7,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage"
     },
@@ -66,7 +66,7 @@
       "x": 8,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "CarabrueTown_Home1F_EventScript_LeaveWithoutWelcomePackage"
     }

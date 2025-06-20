@@ -25,7 +25,7 @@ script Route3_TrainerBattle_Ronnie {
 script Route3_TrainerBattle_Jana {
 
     trainerbattle_single(TRAINER_ROUTE3_JANA, format("I'm a Pokémon Breeder! All Breeders specialise in one Pokémon variety, such as dog, cat, or even bear Pokémon!\pCan you guess my specialty?"), "You guessed it - I love foxes!")
-    msgbox(format("My Pokémon are my most cherised partners!"))
+    msgbox(format("My Pokémon are my most cherished partners!"))
     release
     end
 
