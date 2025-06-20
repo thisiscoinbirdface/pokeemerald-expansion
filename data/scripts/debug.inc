@@ -159,7 +159,8 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_LEGENDS, 7, 5
+	warp MAP_CHAMPIONSHIP_VENUE, 15, 8
+	setflag FLAG_CHAMP_SIGNUP_DONE
 	release
 	end
 

@@ -11155,8 +11155,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sRuffletLevelUpLearnset,
         .teachableLearnset = sRuffletTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY},
-                                {EVO_NONE, 0, SPECIES_BRAVIARY_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY_HISUI}),
     },
 
     [SPECIES_BRAVIARY] =

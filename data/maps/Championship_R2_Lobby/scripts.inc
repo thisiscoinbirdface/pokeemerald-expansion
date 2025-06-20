@@ -1,5 +1,5 @@
 Championship_R2_Lobby_MapScripts::
-	return
+	.byte 0
 
 
 Championship_R2_Lobby_NPC1::

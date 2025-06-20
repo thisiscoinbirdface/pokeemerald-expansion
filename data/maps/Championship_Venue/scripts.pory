@@ -102,9 +102,9 @@ script ChampionshipVenue_Entry{
             waitmovement(0)
 
             //exit to relevant round
-            if (var(VAR_CHAMP_STAGE) == 1){
+            //if (var(VAR_CHAMP_STAGE) == 1){
                 warp(MAP_CHAMPIONSHIP_R1, 4, 8)
-            }
+            //}
         }
 
     } else {

@@ -174,6 +174,14 @@ RivetshoreCity_Construction_CEO_14:
 	end
 
 
+RivetshoreCity_Construction_Mon_Percy::
+# 127 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	playmoncry SPECIES_PERRSERKER, CRY_MODE_NORMAL
+# 128 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	msgbox RivetshoreCity_Construction_Mon_Percy_Text_0, MSGBOX_NPC
+	end
+
+
 # 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
 RivetshoreCity_Construction_CEO_Movement_0:
 # 101 "data//maps/RivetshoreCity_Construction/scripts.pory"
@@ -306,3 +314,7 @@ RivetshoreCity_Construction_CEO_Text_9:
 	.string "Brilliant! Percy must be somewhere in\n"
 	.string "Rivetshore City. It can't swim!\p"
 	.string "I'll be waiting here for my Percy.$"
+
+RivetshoreCity_Construction_Mon_Percy_Text_0:
+# 128 "data//maps/RivetshoreCity_Construction/scripts.pory"
+	.string "Percy is happy to be back home!$"

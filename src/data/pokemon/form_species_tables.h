@@ -1174,9 +1174,9 @@ static const u16 sLilligantFormSpeciesIdTable[] = {
 
 #if P_FAMILY_BASCULIN
 static const u16 sBasculinFormSpeciesIdTable[] = {
+    SPECIES_BASCULIN_WHITE_STRIPED,
     SPECIES_BASCULIN_RED_STRIPED,
     SPECIES_BASCULIN_BLUE_STRIPED,
-    SPECIES_BASCULIN_WHITE_STRIPED,
     FORM_SPECIES_END,
 };
 

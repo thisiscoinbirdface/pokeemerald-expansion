@@ -123,7 +123,11 @@ script RivetshoreCity_Construction_CEO{
 
 }
 
-
+script RivetshoreCity_Construction_Mon_Percy{
+    playmoncry(SPECIES_PERRSERKER, CRY_MODE_NORMAL)
+    msgbox(format("Percy is happy to be back home!"), MSGBOX_NPC)
+    end
+}
 
 
 

@@ -1,4 +1,4 @@
-script Championship_R2_Lobby_MapScripts{}
+mapscripts Championship_R2_Lobby_MapScripts{}
 
 
 script Championship_R2_Lobby_NPC1{
@@ -22,3 +22,4 @@ script Championship_R2_Lobby_Mon2{
     msgbox(format("Marowak is jittery."), MSGBOX_NPC)
     end
 }
+

@@ -161,18 +161,12 @@ ChampionshipVenue_Entry_8:
 	applymovement OBJ_EVENT_ID_PLAYER, ChampionshipVenue_Entry_Movement_1
 # 102 "data//maps/Championship_Venue/scripts.pory"
 	waitmovement 0
-# 105 "data//maps/Championship_Venue/scripts.pory"
-	compare VAR_CHAMP_STAGE, 1
-	goto_if_eq ChampionshipVenue_Entry_13
+# 106 "data//maps/Championship_Venue/scripts.pory"
+	warp MAP_CHAMPIONSHIP_R1, 4, 8
 	goto ChampionshipVenue_Entry_4
 
 ChampionshipVenue_Entry_11:
 	end
-
-ChampionshipVenue_Entry_13:
-# 106 "data//maps/Championship_Venue/scripts.pory"
-	warp MAP_CHAMPIONSHIP_R1, 4, 8
-	goto ChampionshipVenue_Entry_4
 
 
 Champ_Venue_NPC1::
