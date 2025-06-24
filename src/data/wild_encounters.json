@@ -14502,17 +14502,17 @@
               {
                 "min_level": 25,
                 "max_level": 29,
-                "species": "SPECIES_MAREANIE"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 25,
                 "max_level": 29,
-                "species": "SPECIES_MAREANIE"
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 26,
                 "max_level": 29,
-                "species": "SPECIES_MAREANIE"
+                "species": "SPECIES_CLAUNCHER"
               }
             ]
           }
