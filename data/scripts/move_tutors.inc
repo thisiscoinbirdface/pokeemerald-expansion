@@ -294,6 +294,8 @@ NotARealScript_TutorMovesList::
 	setvar VAR_0x8005, MOVE_REFLECT
 	setvar VAR_0x8005, MOVE_LIGHT_SCREEN
 	setvar VAR_0x8005, MOVE_PROTECT
+	setvar VAR_0x8005, MOVE_TRICK_ROOM
+	setvar VAR_0x8005, MOVE_TAILWIND
 	return
 
 

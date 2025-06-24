@@ -144,9 +144,11 @@
 // - MOVE_SWAGGER                                      //
 // - MOVE_SWIFT                                        //
 // - MOVE_SWORDS_DANCE                                 //
+// - MOVE_TAILWIND                                     //
 // - MOVE_THUNDER_FANG                                 //
 // - MOVE_THUNDER_PUNCH                                //
 // - MOVE_THUNDER_WAVE                                 //
+// - MOVE_TRICK_ROOM                                   //
 // *************************************************** //
 // Near-universal moves found in sUniversalMoves:      //
 // - MOVE_BIDE                                         //
@@ -437,6 +439,7 @@ static const u16 sCharizardTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -640,6 +643,7 @@ static const u16 sButterfreeTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CATERPIE
@@ -690,6 +694,7 @@ static const u16 sBeedrillTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WEEDLE
@@ -718,6 +723,7 @@ static const u16 sPidgeyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -744,6 +750,7 @@ static const u16 sPidgeottoTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -772,6 +779,7 @@ static const u16 sPidgeotTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PIDGEY
@@ -951,6 +959,7 @@ static const u16 sSpearowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -977,6 +986,7 @@ static const u16 sFearowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPEAROW
@@ -2261,6 +2271,7 @@ static const u16 sZubatTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -2296,6 +2307,7 @@ static const u16 sGolbatTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -2336,6 +2348,7 @@ static const u16 sCrobatTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -2608,6 +2621,7 @@ static const u16 sVenomothTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_VENONAT
@@ -3720,6 +3734,7 @@ static const u16 sAbraTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -3765,6 +3780,7 @@ static const u16 sKadabraTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -3815,6 +3831,7 @@ static const u16 sAlakazamTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABRA
@@ -4522,6 +4539,7 @@ static const u16 sRapidashGalarTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -4573,6 +4591,7 @@ static const u16 sSlowpokeTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -4636,6 +4655,7 @@ static const u16 sSlowbroTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -4703,6 +4723,7 @@ static const u16 sSlowkingTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -4746,6 +4767,7 @@ static const u16 sSlowpokeGalarTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -4805,6 +4827,7 @@ static const u16 sSlowbroGalarTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -4866,6 +4889,7 @@ static const u16 sSlowkingGalarTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5019,6 +5043,7 @@ static const u16 sFarfetchdTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -5105,6 +5130,7 @@ static const u16 sDoduoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -5142,6 +5168,7 @@ static const u16 sDodrioTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DODUO
@@ -5532,6 +5559,7 @@ static const u16 sGastlyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -5581,6 +5609,7 @@ static const u16 sHaunterTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -5644,6 +5673,7 @@ static const u16 sGengarTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GASTLY
@@ -5784,6 +5814,7 @@ static const u16 sDrowzeeTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -5840,6 +5871,7 @@ static const u16 sHypnoTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DROWZEE
@@ -6093,6 +6125,7 @@ static const u16 sExeggcuteTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -6134,6 +6167,7 @@ static const u16 sExeggutorTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -6180,6 +6214,7 @@ static const u16 sExeggutorAlolaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
@@ -7517,6 +7552,7 @@ static const u16 sStarmieTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_STARYU
@@ -7562,6 +7598,7 @@ static const u16 sMimeJrTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -7620,6 +7657,7 @@ static const u16 sMrMimeTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -7670,6 +7708,7 @@ static const u16 sMrMimeGalarTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -7719,6 +7758,7 @@ static const u16 sMrRimeTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -7763,6 +7803,7 @@ static const u16 sScytherTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -7810,6 +7851,7 @@ static const u16 sScizorTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -7855,6 +7897,7 @@ static const u16 sKleavorTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_8_CROSS_EVOS
@@ -7902,6 +7945,7 @@ static const u16 sSmoochumTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -7953,6 +7997,7 @@ static const u16 sJynxTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_JYNX
@@ -8735,6 +8780,7 @@ static const u16 sEspeonTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -8939,6 +8985,7 @@ static const u16 sPorygonTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -8979,6 +9026,7 @@ static const u16 sPorygon2TeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -9021,6 +9069,7 @@ static const u16 sPorygonZTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -9260,6 +9309,7 @@ static const u16 sAerodactylTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_UNAVAILABLE,
 };
@@ -9423,6 +9473,7 @@ static const u16 sArticunoTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -9455,6 +9506,8 @@ static const u16 sArticunoGalarTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -9497,6 +9550,7 @@ static const u16 sZapdosTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -9535,6 +9589,7 @@ static const u16 sZapdosGalarTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -9577,6 +9632,7 @@ static const u16 sMoltresTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -9609,6 +9665,7 @@ static const u16 sMoltresGalarTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -9762,6 +9819,7 @@ static const u16 sDragoniteTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
@@ -9839,6 +9897,7 @@ static const u16 sMewtwoTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MEWTWO
@@ -10423,6 +10482,7 @@ static const u16 sHoothootTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -10463,6 +10523,7 @@ static const u16 sNoctowlTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HOOTHOOT
@@ -10502,6 +10563,7 @@ static const u16 sLedybaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -10545,6 +10607,7 @@ static const u16 sLedianTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -10800,6 +10863,7 @@ static const u16 sTogeticTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -10852,6 +10916,7 @@ static const u16 sTogekissTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -10895,7 +10960,9 @@ static const u16 sNatuTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -10938,7 +11005,9 @@ static const u16 sXatuTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NATU
@@ -11330,6 +11399,7 @@ static const u16 sHoppipTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -11368,6 +11438,7 @@ static const u16 sSkiploomTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -11408,6 +11479,7 @@ static const u16 sJumpluffTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HOPPIP
@@ -11614,6 +11686,7 @@ static const u16 sYanmaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -11649,6 +11722,7 @@ static const u16 sYanmegaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -11883,6 +11957,7 @@ static const u16 sMurkrowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -11929,6 +12004,7 @@ static const u16 sHonchkrowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -11979,6 +12055,7 @@ static const u16 sMisdreavusTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -12024,6 +12101,7 @@ static const u16 sMismagiusTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -12097,6 +12175,7 @@ static const u16 sGirafarigTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -12139,6 +12218,7 @@ static const u16 sFarigirafTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -12339,6 +12419,7 @@ static const u16 sDudunsparceTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -12393,6 +12474,7 @@ static const u16 sGligarTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_UNAVAILABLE,
 };
@@ -12447,6 +12529,7 @@ static const u16 sGliscorTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_UNAVAILABLE,
 };
@@ -13679,6 +13762,7 @@ static const u16 sDelibirdTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DELIBIRD
@@ -13718,6 +13802,7 @@ static const u16 sMantykeTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -13766,6 +13851,7 @@ static const u16 sMantineTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MANTINE
@@ -13813,6 +13899,7 @@ static const u16 sSkarmoryTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SKARMORY
@@ -14031,6 +14118,7 @@ static const u16 sStantlerTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -14070,6 +14158,7 @@ static const u16 sWyrdeerTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_8_CROSS_EVOS
@@ -14266,6 +14355,7 @@ static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SUICUNE
@@ -14465,6 +14555,7 @@ static const u16 sLugiaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -14519,6 +14610,7 @@ static const u16 sHoOhTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -14572,6 +14664,7 @@ static const u16 sCelebiTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CELEBI
@@ -15321,6 +15414,7 @@ static const u16 sBeautiflyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -15357,6 +15451,7 @@ static const u16 sDustoxTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WURMPLE
@@ -15647,6 +15742,7 @@ static const u16 sShiftryTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SEEDOT
@@ -15676,6 +15772,7 @@ static const u16 sTaillowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -15705,6 +15802,7 @@ static const u16 sSwellowTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TAILLOW
@@ -15745,6 +15843,7 @@ static const u16 sWingullTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -15788,6 +15887,7 @@ static const u16 sPelipperTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WINGULL
@@ -15840,6 +15940,7 @@ static const u16 sRaltsTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -15892,6 +15993,7 @@ static const u16 sKirliaTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -15947,6 +16049,7 @@ static const u16 sGardevoirTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -16019,6 +16122,7 @@ static const u16 sGalladeTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -16108,6 +16212,7 @@ static const u16 sMasquerainTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SURSKIT
@@ -17231,6 +17336,7 @@ static const u16 sMedititeTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -17286,6 +17392,7 @@ static const u16 sMedichamTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MEDITITE
@@ -17496,6 +17603,7 @@ static const u16 sVolbeatTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
@@ -17548,6 +17656,7 @@ static const u16 sIllumiseTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
@@ -18092,6 +18201,7 @@ static const u16 sSpoinkTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -18152,6 +18262,7 @@ static const u16 sGrumpigTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPOINK
@@ -18204,6 +18315,7 @@ static const u16 sSpindaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPINDA
@@ -18280,6 +18392,7 @@ static const u16 sVibravaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -18329,6 +18442,7 @@ static const u16 sFlygonTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -18466,6 +18580,7 @@ static const u16 sSwabluTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -18514,6 +18629,7 @@ static const u16 sAltariaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SWABLU
@@ -18684,6 +18800,7 @@ static const u16 sLunatoneTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LUNATONE
@@ -18737,6 +18854,7 @@ static const u16 sSolrockTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SOLROCK
@@ -18967,6 +19085,7 @@ static const u16 sBaltoyTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -19012,6 +19131,7 @@ static const u16 sClaydolTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BALTOY
@@ -19283,6 +19403,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -19343,6 +19464,7 @@ static const u16 sKecleonTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KECLEON
@@ -19389,6 +19511,7 @@ static const u16 sShuppetTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -19441,6 +19564,7 @@ static const u16 sBanetteTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHUPPET
@@ -19479,6 +19603,7 @@ static const u16 sDuskullTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -19532,6 +19657,7 @@ static const u16 sDusclopsTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -19584,6 +19710,7 @@ static const u16 sDusknoirTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -19631,6 +19758,7 @@ static const u16 sTropiusTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TROPIUS
@@ -19671,6 +19799,7 @@ static const u16 sChinglingTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -19711,6 +19840,7 @@ static const u16 sChimechoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CHIMECHO
@@ -20320,6 +20450,7 @@ static const u16 sSalamenceTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_UNAVAILABLE,
 };
@@ -20652,6 +20783,7 @@ static const u16 sLatiasTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -20714,6 +20846,7 @@ static const u16 sLatiosTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -20895,6 +21028,7 @@ static const u16 sRayquazaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -20958,6 +21092,7 @@ static const u16 sJirachiTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_JIRACHI
@@ -21020,6 +21155,7 @@ static const u16 sDeoxysNormalTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -21083,6 +21219,7 @@ static const u16 sDeoxysAttackTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -21146,6 +21283,7 @@ static const u16 sDeoxysDefenseTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -21210,6 +21348,7 @@ static const u16 sDeoxysSpeedTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DEOXYS
@@ -21658,6 +21797,7 @@ static const u16 sStarlyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -21687,6 +21827,7 @@ static const u16 sStaraviaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -21718,6 +21859,7 @@ static const u16 sStaraptorTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_STARLY
@@ -22282,6 +22424,7 @@ static const u16 sMothimTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BURMY
@@ -22296,6 +22439,7 @@ static const u16 sCombeeTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -22333,6 +22477,7 @@ static const u16 sVespiquenTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COMBEE
@@ -22644,7 +22789,9 @@ static const u16 sDrifloonTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -22690,7 +22837,9 @@ static const u16 sDrifblimTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DRIFLOON
@@ -22981,6 +23130,7 @@ static const u16 sBronzorTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -23027,6 +23177,7 @@ static const u16 sBronzongTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BRONZOR
@@ -23055,6 +23206,7 @@ static const u16 sChatotTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CHATOT
@@ -23095,6 +23247,7 @@ static const u16 sSpiritombTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPIRITOMB
@@ -23663,6 +23816,7 @@ static const u16 sFinneonTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -23701,6 +23855,7 @@ static const u16 sLumineonTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FINNEON
@@ -23880,6 +24035,7 @@ static const u16 sUxieTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_UXIE
@@ -23935,6 +24091,7 @@ static const u16 sMespritTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MESPRIT
@@ -23991,6 +24148,7 @@ static const u16 sAzelfTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_AZELF
@@ -24045,6 +24203,7 @@ static const u16 sDialgaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DIALGA
@@ -24104,6 +24263,7 @@ static const u16 sPalkiaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PALKIA
@@ -24295,6 +24455,7 @@ static const u16 sCresseliaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CRESSELIA
@@ -24473,6 +24634,7 @@ static const u16 sShayminLandTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -24508,6 +24670,7 @@ static const u16 sShayminSkyTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHAYMIN
@@ -24603,7 +24766,9 @@ static const u16 sArceusTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ARCEUS
@@ -24654,6 +24819,7 @@ static const u16 sVictiniTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_VICTINI
@@ -25526,6 +25692,7 @@ static const u16 sMunnaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -25561,6 +25728,7 @@ static const u16 sMusharnaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MUNNA
@@ -25585,6 +25753,7 @@ static const u16 sPidoveTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -25607,6 +25776,7 @@ static const u16 sTranquillTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -25634,6 +25804,7 @@ static const u16 sUnfezantTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PIDOVE
@@ -25830,7 +26001,9 @@ static const u16 sWoobatTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -25872,7 +26045,9 @@ static const u16 sSwoobatTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WOOBAT
@@ -25997,6 +26172,7 @@ static const u16 sAudinoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_AUDINO
@@ -26494,6 +26670,7 @@ static const u16 sCottoneeTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -26527,6 +26704,8 @@ static const u16 sWhimsicottTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COTTONEE
@@ -27265,7 +27444,9 @@ static const u16 sSigilyphTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SIGILYPH
@@ -27298,6 +27479,7 @@ static const u16 sYamaskTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27332,6 +27514,7 @@ static const u16 sCofagrigusTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27362,6 +27545,7 @@ static const u16 sYamaskGalarTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27399,6 +27583,7 @@ static const u16 sRunerigusTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -27525,6 +27710,7 @@ static const u16 sArchenTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -27565,6 +27751,7 @@ static const u16 sArcheopsTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ARCHEN
@@ -27918,6 +28105,7 @@ static const u16 sGothitaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27954,6 +28142,7 @@ static const u16 sGothoritaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27994,6 +28183,7 @@ static const u16 sGothitelleTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GOTHITA
@@ -28034,6 +28224,7 @@ static const u16 sSolosisTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -28072,6 +28263,7 @@ static const u16 sDuosionTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -28122,6 +28314,7 @@ static const u16 sReuniclusTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SOLOSIS
@@ -28155,6 +28348,7 @@ static const u16 sDucklettTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -28192,6 +28386,7 @@ static const u16 sSwannaTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DUCKLETT
@@ -28376,6 +28571,7 @@ static const u16 sEmolgaTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -28538,6 +28734,7 @@ static const u16 sFrillishTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -28578,6 +28775,7 @@ static const u16 sJellicentTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FRILLISH
@@ -28838,6 +29036,7 @@ static const u16 sKlinklangTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KLINK
@@ -28966,6 +29165,7 @@ static const u16 sElgyemTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -29003,6 +29203,7 @@ static const u16 sBeheeyemTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ELGYEM
@@ -29038,6 +29239,7 @@ static const u16 sLitwickTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -29071,6 +29273,7 @@ static const u16 sLampentTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -29107,6 +29310,7 @@ static const u16 sChandelureTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LITWICK
@@ -29932,6 +30136,7 @@ static const u16 sRuffletTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -29969,6 +30174,7 @@ static const u16 sBraviaryTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -30012,6 +30218,7 @@ static const u16 sBraviaryHisuiTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
@@ -30046,6 +30253,7 @@ static const u16 sVullabyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -30082,6 +30290,7 @@ static const u16 sMandibuzzTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_VULLABY
@@ -30273,6 +30482,7 @@ static const u16 sHydreigonTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
@@ -30350,6 +30560,7 @@ static const u16 sVolcaronaTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LARVESTA
@@ -30531,6 +30742,7 @@ static const u16 sTornadusTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TORNADUS
@@ -30626,6 +30838,7 @@ static const u16 sReshiramTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_RESHIRAM
@@ -30677,6 +30890,7 @@ static const u16 sZekromTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
@@ -30880,6 +31094,7 @@ static const u16 sMeloettaTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MELOETTA
@@ -31114,6 +31329,7 @@ static const u16 sFennekinTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -31151,6 +31367,7 @@ static const u16 sBraixenTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -31199,6 +31416,7 @@ static const u16 sDelphoxTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FENNEKIN
@@ -31465,6 +31683,7 @@ static const u16 sFletchlingTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -31498,6 +31717,7 @@ static const u16 sFletchinderTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -31535,6 +31755,7 @@ static const u16 sTalonflameTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLETCHLING
@@ -31585,6 +31806,7 @@ static const u16 sVivillonTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SCATTERBUG
@@ -32029,6 +32251,7 @@ static const u16 sEspurrTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -32065,6 +32288,7 @@ static const u16 sMeowsticMTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -32101,6 +32325,7 @@ static const u16 sMeowsticFTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ESPURR
@@ -32227,6 +32452,7 @@ static const u16 sSpritzeeTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -32260,6 +32486,7 @@ static const u16 sAromatisseTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPRITZEE
@@ -32359,6 +32586,7 @@ static const u16 sInkayTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -32398,6 +32626,7 @@ static const u16 sMalamarTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_INKAY
@@ -32981,6 +33210,7 @@ static const u16 sHawluchaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -33059,6 +33289,7 @@ static const u16 sCarbinkTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CARBINK
@@ -33276,6 +33507,7 @@ static const u16 sKlefkiTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KLEFKI
@@ -33315,6 +33547,7 @@ static const u16 sPhantumpTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -33363,6 +33596,7 @@ static const u16 sTrevenantTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PHANTUMP
@@ -33400,6 +33634,7 @@ static const u16 sPumpkabooTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -33440,6 +33675,7 @@ static const u16 sGourgeistTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PUMPKABOO
@@ -33587,6 +33823,7 @@ static const u16 sNoibatTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -33630,6 +33867,7 @@ static const u16 sNoivernTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NOIBAT
@@ -33713,6 +33951,7 @@ static const u16 sYveltalTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_YVELTAL
@@ -33793,6 +34032,7 @@ static const u16 sDiancieTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DIANCIE
@@ -33839,6 +34079,7 @@ static const u16 sHoopaConfinedTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -33883,6 +34124,7 @@ static const u16 sHoopaUnboundTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HOOPA
@@ -34007,6 +34249,7 @@ static const u16 sDartrixTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -34052,6 +34295,7 @@ static const u16 sDecidueyeTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -34095,6 +34339,7 @@ static const u16 sDecidueyeHisuiTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
@@ -34356,6 +34601,7 @@ static const u16 sPikipekTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -34387,6 +34633,7 @@ static const u16 sTrumbeakTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -34426,6 +34673,7 @@ static const u16 sToucannonTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PIKIPEK
@@ -34721,6 +34969,7 @@ static const u16 sOricorioTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ORICORIO
@@ -34756,6 +35005,7 @@ static const u16 sCutieflyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -34793,6 +35043,7 @@ static const u16 sRibombeeTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CUTIEFLY
@@ -35600,6 +35851,8 @@ static const u16 sComfeyTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COMFEY
@@ -35646,6 +35899,7 @@ static const u16 sOranguruTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ORANGURU
@@ -35953,6 +36207,7 @@ static const u16 sSilvallyTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
@@ -36169,6 +36424,7 @@ static const u16 sMimikyuTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MIMIKYU
@@ -36210,6 +36466,7 @@ static const u16 sBruxishTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BRUXISH
@@ -36260,6 +36517,7 @@ static const u16 sDrampaTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -36655,6 +36913,7 @@ static const u16 sSolgaleoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -36703,7 +36962,9 @@ static const u16 sLunalaTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COSMOG
@@ -36742,6 +37003,7 @@ static const u16 sNihilegoTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NIHILEGO
@@ -36907,6 +37169,7 @@ static const u16 sKartanaTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KARTANA
@@ -36991,6 +37254,7 @@ static const u16 sNecrozmaTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NECROZMA
@@ -37040,6 +37304,7 @@ static const u16 sMagearnaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MAGEARNA
@@ -37144,6 +37409,7 @@ static const u16 sNaganadelTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_POIPOLE
@@ -37177,6 +37443,7 @@ static const u16 sStakatakaTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_STEEL_BEAM,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_STAKATAKA
@@ -37717,6 +37984,7 @@ static const u16 sRookideeTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -37742,6 +38010,7 @@ static const u16 sCorvisquireTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 
@@ -37778,6 +38047,7 @@ static const u16 sCorviknightTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ROOKIDEE
@@ -37806,6 +38076,7 @@ static const u16 sDottlerTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SOLAR_BEAM,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -37834,6 +38105,7 @@ static const u16 sOrbeetleTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SOLAR_BEAM,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BLIPBUG
@@ -38422,6 +38694,7 @@ static const u16 sCramorantTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CRAMORANT
@@ -38719,6 +38992,7 @@ static const u16 sSinisteaTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -38749,6 +39023,7 @@ static const u16 sPolteageistTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SINISTEA
@@ -38778,6 +39053,7 @@ static const u16 sHatennaTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -38805,6 +39081,7 @@ static const u16 sHattremTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -38838,6 +39115,7 @@ static const u16 sHattereneTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HATENNA
@@ -39098,6 +39376,7 @@ static const u16 sFrosmothTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SNOWSCAPE,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SNOM
@@ -39190,6 +39469,7 @@ static const u16 sIndeedeeMTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -39217,6 +39497,7 @@ static const u16 sIndeedeeFTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_INDEEDEE
@@ -40102,6 +40383,7 @@ static const u16 sCalyrexTeachableLearnset[] = {
     MOVE_SOLAR_BLADE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -40152,6 +40434,7 @@ static const u16 sCalyrexIceTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -40197,6 +40480,7 @@ static const u16 sCalyrexShadowTeachableLearnset[] = {
     MOVE_SOLAR_BLADE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FUSION_FORMS
@@ -40228,6 +40512,7 @@ static const u16 sEnamorusTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ENAMORUS
@@ -40317,6 +40602,7 @@ static const u16 sMeowscaradaTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPRIGATITO
@@ -40962,6 +41248,7 @@ static const u16 sSquawkabillyTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SQUAWKABILLY
@@ -41102,6 +41389,7 @@ static const u16 sArmarougeTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -41223,6 +41511,7 @@ static const u16 sWattrelTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_SLEEP_TALK,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -41252,6 +41541,7 @@ static const u16 sKilowattrelTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_SLEEP_TALK,
     MOVE_SWIFT,
+    MOVE_TAILWIND,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -41477,6 +41767,7 @@ static const u16 sToedscoolTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -41512,6 +41803,7 @@ static const u16 sToedscruelTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TOEDSCOOL
@@ -41663,6 +41955,7 @@ static const u16 sRabscaTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_RELLOR
@@ -41694,6 +41987,7 @@ static const u16 sFlittleTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -41734,6 +42028,7 @@ static const u16 sEspathraTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLITTLE
@@ -41913,6 +42208,7 @@ static const u16 sBombirdierTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BOMBIRDIER
@@ -42284,6 +42580,7 @@ static const u16 sFlamigoTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_SLEEP_TALK,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLAMIGO
@@ -42525,6 +42822,7 @@ static const u16 sScreamTailTeachableLearnset[] = {
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SCREAM_TAIL
@@ -42588,6 +42886,7 @@ static const u16 sFlutterManeTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLUTTER_MANE
@@ -42797,6 +43096,7 @@ static const u16 sIronJugulisTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_IRON_JUGULIS
@@ -43193,6 +43493,7 @@ static const u16 sRoaringMoonTeachableLearnset[] = {
     MOVE_SCALE_SHOT,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TAILWIND,
     MOVE_THUNDER_FANG,
     MOVE_UNAVAILABLE,
 };
@@ -43245,6 +43546,7 @@ static const u16 sIronValiantTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_IRON_VALIANT
@@ -43425,6 +43727,7 @@ static const u16 sPoltchageistTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 
@@ -43447,6 +43750,7 @@ static const u16 sSinistchaTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_POLTCHAGEIST
@@ -43567,6 +43871,7 @@ static const u16 sFezandipitiTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FEZANDIPITI
