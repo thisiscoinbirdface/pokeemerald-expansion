@@ -715,19 +715,19 @@ PellucaCity_GameCorner_Shop3_Decide::
 # 393 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	hidecoinsbox 21, 10
 # 394 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_THUNDER_STONE
+	compare VAR_RESULT, ITEM_BLUNDER_POLICY
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_2
 PellucaCity_GameCorner_Shop3_Decide_1:
 # 395 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_LEAF_STONE
+	compare VAR_RESULT, ITEM_WEAKNESS_POLICY
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_5
 PellucaCity_GameCorner_Shop3_Decide_4:
 # 396 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_SUN_STONE
+	compare VAR_RESULT, ITEM_EJECT_BUTTON
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_8
 PellucaCity_GameCorner_Shop3_Decide_7:
 # 397 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_SHINY_STONE
+	compare VAR_RESULT, ITEM_LOADED_DICE
 	goto_if_eq PellucaCity_GameCorner_Shop3_Decide_11
 PellucaCity_GameCorner_Shop3_Decide_10:
 # 399 "data//maps/PellucaCity_GameCorner/scripts.pory"

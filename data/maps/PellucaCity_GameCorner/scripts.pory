@@ -391,10 +391,10 @@ script PellucaCity_GameCorner_Shop3_Decide{
     dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
 
     hidecoinsbox(21, 10)
-    if (var(VAR_RESULT) == ITEM_THUNDER_STONE) {setvar(VAR_0x8006, ITEM_BLUNDER_POLICY) setvar(VAR_0x8002, PRICE_BLUNDER_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
-    if (var(VAR_RESULT) == ITEM_LEAF_STONE) {setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY) setvar(VAR_0x8002, PRICE_WEAKNESS_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
-    if (var(VAR_RESULT) == ITEM_SUN_STONE) {setvar(VAR_0x8006, ITEM_EJECT_BUTTON) setvar(VAR_0x8002, PRICE_EJECT_BUTTON) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
-    if (var(VAR_RESULT) == ITEM_SHINY_STONE) {setvar(VAR_0x8006, ITEM_LOADED_DICE) setvar(VAR_0x8002, PRICE_LOADED_DICE) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_BLUNDER_POLICY) {setvar(VAR_0x8006, ITEM_BLUNDER_POLICY) setvar(VAR_0x8002, PRICE_BLUNDER_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_WEAKNESS_POLICY) {setvar(VAR_0x8006, ITEM_WEAKNESS_POLICY) setvar(VAR_0x8002, PRICE_WEAKNESS_POLICY) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_EJECT_BUTTON) {setvar(VAR_0x8006, ITEM_EJECT_BUTTON) setvar(VAR_0x8002, PRICE_EJECT_BUTTON) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_LOADED_DICE) {setvar(VAR_0x8006, ITEM_LOADED_DICE) setvar(VAR_0x8002, PRICE_LOADED_DICE) goto(PellucaCity_GameCorner_Shop3_BuyConfirm)}
 
     msgbox(format("Come back any time!\p...what's a kid doing with coins?"))
     releaseall
