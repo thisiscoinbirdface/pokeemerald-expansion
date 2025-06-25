@@ -159,7 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_CHAMPIONSHIP_VENUE, 15, 8
+	warp MAP_RIVETSHORE_CITY, 32, 17
 	setflag FLAG_CHAMP_SIGNUP_DONE
 	release
 	end
