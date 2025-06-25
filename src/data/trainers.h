@@ -13335,7 +13335,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6418
-            .species = SPECIES_SPEAROW,
+            .species = SPECIES_NOIBAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6420
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -13379,7 +13379,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6436
-            .species = SPECIES_SPEAROW,
+            .species = SPECIES_NOIBAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6438
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
