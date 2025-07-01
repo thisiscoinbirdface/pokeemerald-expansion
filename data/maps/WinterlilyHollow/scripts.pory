@@ -341,12 +341,13 @@ script WinterlilyHollow_NPC_SurfManAlt{
 script WinterlilyHollow_NPC_Miner{
     lockall
     faceplayer
-    msgbox(format("See all these crystals on the walls?\nI'm trying to dig it up.\pWanna try?\pYou can borrow my spare pickaxe,\nbut it'll cost you 500."), MSGBOX_YESNO)
+    msgbox(format("See all these crystals on the walls?\nI'm trying to dig it up.\pWanna try?\pYou can borrow my spare pickaxe,\nbut it'll cost you ¥500."), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 1){
         checkmoney(500)
     
         if (var(VAR_RESULT) == 1){
+            removemoney(500)
             special(StartMining)
         } else {
             msgbox(format("You don't have enough money."))

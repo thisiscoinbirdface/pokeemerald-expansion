@@ -311,7 +311,7 @@ PellucaCityRestaurant_NPC_Trade::
 	compare VAR_RESULT, 1
 	goto_if_eq PellucaCityRestaurant_NPC_Trade_5
 # 287 "data//maps/PellucaCityRestaurant/scripts.pory"
-	msgbox PellucaCityRestaurant_NPC_Trade_Text_3, MSGBOX_NPC
+	msgbox PellucaCityRestaurant_NPC_Trade_Text_6, MSGBOX_NPC
 PellucaCityRestaurant_NPC_Trade_4:
 	end
 
@@ -558,3 +558,8 @@ PellucaCityRestaurant_NPC_Trade_Text_4:
 PellucaCityRestaurant_NPC_Trade_Text_5:
 # 282 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Hey, this isn't a Toxel, you rascal!$"
+
+PellucaCityRestaurant_NPC_Trade_Text_6:
+# 287 "data//maps/PellucaCityRestaurant/scripts.pory"
+	.string "A shame. I can't catch one\n"
+	.string "myself at my age.$"

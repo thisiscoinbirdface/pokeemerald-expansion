@@ -487,14 +487,14 @@ WinterlilyHollow_NPC_Miner::
 # 346 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_2
-# 355 "data//maps/WinterlilyHollow/scripts.pory"
+# 356 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_2
 WinterlilyHollow_NPC_Miner_1:
-# 357 "data//maps/WinterlilyHollow/scripts.pory"
-	applymovement 3, WinterlilyHollow_NPC_Miner_Movement_0
 # 358 "data//maps/WinterlilyHollow/scripts.pory"
+	applymovement 3, WinterlilyHollow_NPC_Miner_Movement_0
+# 359 "data//maps/WinterlilyHollow/scripts.pory"
 	waitmovement 0
-# 360 "data//maps/WinterlilyHollow/scripts.pory"
+# 361 "data//maps/WinterlilyHollow/scripts.pory"
 	releaseall
 	end
 
@@ -504,12 +504,14 @@ WinterlilyHollow_NPC_Miner_2:
 # 349 "data//maps/WinterlilyHollow/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WinterlilyHollow_NPC_Miner_5
-# 352 "data//maps/WinterlilyHollow/scripts.pory"
+# 353 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_NPC_Miner_Text_1
 	goto WinterlilyHollow_NPC_Miner_1
 
 WinterlilyHollow_NPC_Miner_5:
 # 350 "data//maps/WinterlilyHollow/scripts.pory"
+	removemoney 500
+# 351 "data//maps/WinterlilyHollow/scripts.pory"
 	special StartMining
 	goto WinterlilyHollow_NPC_Miner_1
 
@@ -556,9 +558,9 @@ WinterlilyHollow_MimeJr_1_Movement_0:
 	fly_up
 	step_end
 
-# 357 "data//maps/WinterlilyHollow/scripts.pory"
+# 358 "data//maps/WinterlilyHollow/scripts.pory"
 WinterlilyHollow_NPC_Miner_Movement_0:
-# 357 "data//maps/WinterlilyHollow/scripts.pory"
+# 358 "data//maps/WinterlilyHollow/scripts.pory"
 	face_right
 	step_end
 
@@ -811,13 +813,13 @@ WinterlilyHollow_NPC_Miner_Text_0:
 	.string "I'm trying to dig it up.\p"
 	.string "Wanna try?\p"
 	.string "You can borrow my spare pickaxe,\n"
-	.string "but it'll cost you 500.$"
+	.string "but it'll cost you ¥500.$"
 
 WinterlilyHollow_NPC_Miner_Text_1:
-# 352 "data//maps/WinterlilyHollow/scripts.pory"
+# 353 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "You don't have enough money.$"
 
 WinterlilyHollow_NPC_Miner_Text_2:
-# 355 "data//maps/WinterlilyHollow/scripts.pory"
+# 356 "data//maps/WinterlilyHollow/scripts.pory"
 	.string "Too bad, You can dig up some great\n"
 	.string "stuff, you know?$"

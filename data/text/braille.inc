@@ -123,7 +123,7 @@ AncientTomb_Braille_ShineInTheMiddle:
 
 Silversun_Braille_Quiz1:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "AN APPLIN A DAY\n"
+	.braille "AN APPLIN A\n"
 	.braille "DAY KEEPS THE\n"
 	.braille "DOCTOR AWAY$"	
 

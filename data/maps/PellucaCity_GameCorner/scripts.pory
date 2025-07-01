@@ -189,8 +189,8 @@ script PellucaCity_GameCorner_Shop1_Decide{
     message(format("Which TM will you purchase?"))
     waitmessage
 
-    buffernumberstring(STR_VAR_1, PRICE_TM_HAZE)
-        dynmultipush("{STR_VAR_1} Haze", ITEM_TM13)
+    // buffernumberstring(STR_VAR_1, PRICE_TM_HAZE)
+    //     dynmultipush("{STR_VAR_1} Haze", ITEM_TM13)
     buffernumberstring(STR_VAR_1, PRICE_TM_STEALTH_ROCK)
         dynmultipush("{STR_VAR_1} Stealth Rock", ITEM_TM37)
     buffernumberstring(STR_VAR_1, PRICE_TM_X_SCISSOR)

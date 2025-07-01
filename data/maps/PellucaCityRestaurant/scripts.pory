@@ -284,7 +284,7 @@ script PellucaCityRestaurant_NPC_Trade{
 
     } else {
         //no trade
-        msgbox(format("Oh...well, if you change your mind,\nyou know where I am!"), MSGBOX_NPC)
+        msgbox(format("A shame. I can't catch one\nmyself at my age."), MSGBOX_NPC)
     }
 
 end

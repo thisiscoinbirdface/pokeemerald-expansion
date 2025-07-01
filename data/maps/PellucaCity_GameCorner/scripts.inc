@@ -271,38 +271,34 @@ PellucaCity_GameCorner_Shop1_Decide::
 	message PellucaCity_GameCorner_Shop1_Decide_Text_0
 # 190 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	waitmessage
-# 192 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_1, PRICE_TM_HAZE
-# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_1, ITEM_TM13
 # 194 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_STEALTH_ROCK
 # 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_2, ITEM_TM37
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_1, ITEM_TM37
 # 196 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_X_SCISSOR
 # 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_3, ITEM_TM43
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_2, ITEM_TM43
 # 198 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_IRON_HEAD
 # 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_4, ITEM_TM46
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_3, ITEM_TM46
 # 200 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_DARK_PULSE
 # 201 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_5, ITEM_TM47
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_4, ITEM_TM47
 # 202 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_DAZZLING_GLEAM
 # 203 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_6, ITEM_TM56
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_5, ITEM_TM56
 # 204 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_ROCK_SLIDE
 # 205 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_7, ITEM_TM53
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_6, ITEM_TM53
 # 206 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_TM_DRAIN_PUNCH
 # 207 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_8, ITEM_TM58
+	dynmultipush PellucaCity_GameCorner_Shop1_Decide_Text_7, ITEM_TM58
 # 210 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
 # 212 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -340,7 +336,7 @@ PellucaCity_GameCorner_Shop1_Decide_19:
 	goto_if_eq PellucaCity_GameCorner_Shop1_Decide_23
 PellucaCity_GameCorner_Shop1_Decide_22:
 # 222 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	msgbox PellucaCity_GameCorner_Shop1_Decide_Text_9
+	msgbox PellucaCity_GameCorner_Shop1_Decide_Text_8
 # 223 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	releaseall
 	end
@@ -963,38 +959,34 @@ PellucaCity_GameCorner_Shop1_Decide_Text_0:
 	.string "Which TM will you purchase?$"
 
 PellucaCity_GameCorner_Shop1_Decide_Text_1:
-# 193 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	.string "{STR_VAR_1} Haze$"
-
-PellucaCity_GameCorner_Shop1_Decide_Text_2:
 # 195 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Stealth Rock$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_3:
+PellucaCity_GameCorner_Shop1_Decide_Text_2:
 # 197 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} X-Scissor$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_4:
+PellucaCity_GameCorner_Shop1_Decide_Text_3:
 # 199 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Iron Head$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_5:
+PellucaCity_GameCorner_Shop1_Decide_Text_4:
 # 201 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Dark Pulse$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_6:
+PellucaCity_GameCorner_Shop1_Decide_Text_5:
 # 203 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Dazzling Gleam$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_7:
+PellucaCity_GameCorner_Shop1_Decide_Text_6:
 # 205 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Rock Slide$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_8:
+PellucaCity_GameCorner_Shop1_Decide_Text_7:
 # 207 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "{STR_VAR_1} Drain Punch$"
 
-PellucaCity_GameCorner_Shop1_Decide_Text_9:
+PellucaCity_GameCorner_Shop1_Decide_Text_8:
 # 222 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	.string "Come back any time!\p"
 	.string "...sigh, nobody buys anything from me...$"

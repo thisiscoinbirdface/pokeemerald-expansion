@@ -159,8 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	additem ITEM_EVIOLITE
-	givemon SPECIES_MUDKIP, 20
+	goto WinterlilyHollow_NPC_Miner
 	release
 	end
 

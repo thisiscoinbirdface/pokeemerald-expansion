@@ -144,8 +144,9 @@ script MirrohBaseCamp_Houses_MasterballGuy{
         removeitem(ITEM_OLD_GATEAU)
         removeitem(ITEM_LAVA_COOKIE)
 
-        msgbox(format("Aha! We've got everything we need right here...\p...so first I need the crust of the pie...mmm, delicious...\p...the ice cream is actually a binding agent\n...bound to my mouth, yes...\p...and this cookie, you see, holds the shell...tasy shell...\p..."))
-        playse(SE_BALL)
+        msgbox(format("Aha! We've got everything we need right here...\p...so first I need the crust of the pie...\n...mmm, delicious...\p...the ice cream is actually a binding agent...bound to my mouth...\p...and this cookie, you see, holds the shell...tasty shell...\p..."))
+        playfanfare(MUS_OBTAIN_ITEM)
+        waitfanfare
         msgbox(format("And there we go! A brand-new Master Ball, just for you!\pNo, I didn't pull it out of my pocket. Are you seeing things?"), MSGBOX_NPC)
         giveitem(ITEM_MASTER_BALL)
         setvar(VAR_MASTERBALL_QUEST, 2)
