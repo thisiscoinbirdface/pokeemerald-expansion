@@ -159,7 +159,8 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	goto MirrohBaseCamp_Martha_OfferMegaStone
+	additem ITEM_EVIOLITE
+	givemon SPECIES_MUDKIP, 20
 	release
 	end
 

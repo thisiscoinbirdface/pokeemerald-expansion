@@ -4624,6 +4624,12 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
         && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
         return SPECIES_NONE;
 
+    // Prevent evolution with Eviolite, unless we're just viewing the party menu with an evolution item
+    if (holdEffect == HOLD_EFFECT_EVIOLITE
+        && mode != EVO_MODE_ITEM_CHECK
+        && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
+        return SPECIES_NONE;
+
     switch (mode)
     {
     case EVO_MODE_NORMAL:
