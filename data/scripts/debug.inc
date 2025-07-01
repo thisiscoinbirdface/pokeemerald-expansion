@@ -159,7 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	givemon SPECIES_MIME_JR, 25, ITEM_SOOTHE_BELL, ball=ITEM_LUXURY_BALL
+	goto MirrohBaseCamp_Martha_OfferMegaStone
 	release
 	end
 

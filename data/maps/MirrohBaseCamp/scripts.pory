@@ -133,6 +133,11 @@ script MirrohBaseCamp_Greavard_Outside{
             //martha gives mega stone
             speakername("Martha")
             msgbox(format("Oof...too much running...\pI don't know if it'll help you against Team Somber, but I wanted to offer you one of these.\pThey're extremely rare - prized items in my collection!\pBut they'll do more good in the world in your hands than on my table."))
+            release
+            delay(8)
+            msgbox(format("Choose carefully - you'll only\nget once chance this game!"), MSGBOX_POKENAV)
+            release
+            delay(8)
             goto(MirrohBaseCamp_Martha_OfferMegaStone)
             
             releaseall
@@ -144,11 +149,10 @@ script MirrohBaseCamp_Greavard_Outside{
         msgbox(format("Greavard is playing!"), MSGBOX_NPC)
         end        
     }
-
 }
 
 script MirrohBaseCamp_Martha_OfferMegaStone{
-    message(format("Choose carefully! You might not get another one for a while."))
+    message(format("Which one would you like?"))
     waitmessage
     dynmultichoice(0,0, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
         "Medichamite", "Aggronite", "Altarianite", "Lopunnite", "Banettite",
