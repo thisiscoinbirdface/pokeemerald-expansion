@@ -316,7 +316,7 @@ WinterlilyHollow_MimeJr_3_5:
 # 205 "data//maps/WinterlilyHollow/scripts.pory"
 	removeobject 1
 # 206 "data//maps/WinterlilyHollow/scripts.pory"
-	givemon SPECIES_MIME_JR, 25
+	givemon SPECIES_MIME_JR, 25, ITEM_SOOTHE_BELL, ball = ITEM_LUXURY_BALL
 # 207 "data//maps/WinterlilyHollow/scripts.pory"
 	msgbox WinterlilyHollow_MimeJr_3_Text_4
 # 208 "data//maps/WinterlilyHollow/scripts.pory"

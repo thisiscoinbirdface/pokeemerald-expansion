@@ -203,7 +203,7 @@ script WinterlilyHollow_MimeJr_3{
 
             msgbox(format("Mime Jr. doesn't wait for you - it leaps into the Luxury Ball on its own!"))
             removeobject(1)
-            givemon(SPECIES_MIME_JR, 25)
+            givemon(SPECIES_MIME_JR, 25, ITEM_SOOTHE_BELL, ball=ITEM_LUXURY_BALL)
             msgbox(format("Mime Jr. joined {PLAYER}'s party!"))
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare

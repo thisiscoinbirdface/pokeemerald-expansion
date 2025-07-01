@@ -159,23 +159,19 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	warp MAP_RIVETSHORE_CITY, 32, 17
-	setflag FLAG_CHAMP_SIGNUP_DONE
+	givemon SPECIES_MIME_JR, 25, ITEM_SOOTHE_BELL, ball=ITEM_LUXURY_BALL
 	release
 	end
 
 Debug_EventScript_Script_4::
-	special GameClear
 	release
 	end
 
 Debug_EventScript_Script_5::
-	goto Route6_Gabrielle_ChooseDoubleBattleParty
 	release
 	end
 
 Debug_EventScript_Script_6::
-	setvar VAR_STATUE_COUNT, 10
 	release
 	end
 
