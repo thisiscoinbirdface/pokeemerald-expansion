@@ -262,18 +262,20 @@ IvyRiver_Zarude_Legendary::
 # 165 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	waitmovement 0
 # 166 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	msgbox IvyRiver_Zarude_Legendary_Text_0
+	removeitem ITEM_PURPLE_SCARF
 # 167 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	release
+	msgbox IvyRiver_Zarude_Legendary_Text_0
 # 168 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	setflag FLAG_ZARUDE
+	release
 # 169 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	setflag FLAG_ZARUDE
+# 170 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	setvar VAR_ZARUDE_NOTES, 4
-# 171 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	setwildbattle SPECIES_ZARUDE_DADA, 40
 # 172 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_ZARUDE_DADA, 40
 # 173 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+	dowildbattle
+# 174 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	removeobject 1
 	return
 
@@ -350,6 +352,6 @@ IvyRiver_Zarude_LegendaryTrigger1_Text_0:
 	.string "What was that?$"
 
 IvyRiver_Zarude_Legendary_Text_0:
-# 166 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
+# 167 "data//maps/IvyRiver_ZarudeForest/scripts.pory"
 	.string "The wild Pokémon snatches away\n"
 	.string "the Purple Scarf and attacks!$"

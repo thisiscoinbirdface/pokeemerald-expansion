@@ -163,6 +163,7 @@ script IvyRiver_Zarude_Legendary{
         unlock_facing_direction
     ))
     waitmovement(0)
+    removeitem(ITEM_PURPLE_SCARF)
     msgbox(format("The wild Pokémon snatches away\nthe Purple Scarf and attacks!"))
     release
     setflag(FLAG_ZARUDE)

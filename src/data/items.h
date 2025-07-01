@@ -7401,7 +7401,8 @@ const struct Item gItemsInfo[] =
             "A tattered old\n"
             "purple scarf for\n"
             "a young boy."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
