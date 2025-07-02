@@ -184,7 +184,7 @@ PellucaFishery_EventScript_MainDude::
 # 144 "data//maps/PellucaFishery/scripts.pory"
 	release
 # 146 "data//maps/PellucaFishery/scripts.pory"
-	goto Pellucafisher_EventScript_WarpToFlood
+	goto PellucaFishery_EventScript_WarpToFlood
 # 148 "data//maps/PellucaFishery/scripts.pory"
 	releaseall
 	end
@@ -197,7 +197,7 @@ PellucaFishery_EventScript_MainDude_2:
 	end
 
 
-Pellucafisher_EventScript_WarpToFlood::
+PellucaFishery_EventScript_WarpToFlood::
 # 154 "data//maps/PellucaFishery/scripts.pory"
 	delay 1
 # 157 "data//maps/PellucaFishery/scripts.pory"

@@ -504,7 +504,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
 
             message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
             waitmessage
-            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+            dynmultichoice(12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
                 "A trick of the light", "Yes, it's glittering!")
             release
 
@@ -559,7 +559,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
 
             message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
             waitmessage
-            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+            dynmultichoice(12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
                 "A trick of the light", "Yes, it's glittering!")
             release
 
@@ -615,7 +615,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
 
             message(format("The Poké Ball seems to be glittering...\nWhat could it be?"))
             waitmessage
-            dynmultichoice(12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
+            dynmultichoice(12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, 
                 "A trick of the light", "Yes, it's glittering!")
             release
 

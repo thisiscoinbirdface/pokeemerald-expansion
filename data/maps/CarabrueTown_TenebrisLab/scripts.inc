@@ -820,7 +820,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_5:
 # 506 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
 # 507 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+	dynmultichoice 12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
 # 509 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 511 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -903,7 +903,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_5:
 # 561 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
 # 562 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+	dynmultichoice 12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
 # 564 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 566 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
@@ -986,7 +986,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_5:
 # 617 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	waitmessage
 # 618 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	dynmultichoice 12, 8, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
+	dynmultichoice 12, 8, TRUE, 5, 0, DYN_MULTICHOICE_CB_NONE, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_4, CarabrueTown_TenebrisLab_EventScript_Pokeball_One_Text_5
 # 620 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 622 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
