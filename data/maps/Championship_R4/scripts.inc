@@ -216,7 +216,7 @@ Championship_R4_Text_5:
 	.string "team abandoned me.\p"
 	.string "It feels like a lifetime ago...\p"
 	.string "{PLAYER} - I'm a different person now.\p"
-	.string "After leaving, Team Somber, I've grown\n"
+	.string "After leaving Team Somber, I've grown\n"
 	.string "so much and seen so much!\p"
 	.string "It's all because of you.\p"
 	.string "No matter who wins today, I'm glad we\n"
