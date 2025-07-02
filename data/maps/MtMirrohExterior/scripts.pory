@@ -226,7 +226,7 @@ script MtMirrohExterior_Toxicroak{
 script MtMirrohExterior_NPC_F{
     lockall
     faceplayer
-    msgbox(format("Someone told me you could buy Mega Stones here, but it turned out to be a garden supply store!\pI heard you can get them in Rivetshore City though."))
+    msgbox(format("Someone told me you could buy Flame Orbs here, but it turned out to be a garden supply store!\pI heard you can get them in Rivetshore City though."))
     releaseall
     end
 }

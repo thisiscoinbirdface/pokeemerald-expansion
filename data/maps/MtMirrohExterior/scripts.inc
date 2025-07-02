@@ -622,8 +622,8 @@ MtMirrohExterior_Toxicroak_Text_0:
 
 MtMirrohExterior_NPC_F_Text_0:
 # 229 "data//maps/MtMirrohExterior/scripts.pory"
-	.string "Someone told me you could buy Mega\n"
-	.string "Stones here, but it turned out to be a\l"
+	.string "Someone told me you could buy Flame\n"
+	.string "Orbs here, but it turned out to be a\l"
 	.string "garden supply store!\p"
 	.string "I heard you can get them in Rivetshore\n"
 	.string "City though.$"
