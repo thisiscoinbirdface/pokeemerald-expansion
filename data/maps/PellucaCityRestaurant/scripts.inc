@@ -455,7 +455,7 @@ PellucaCityRestaurant_Cook2_Text_0:
 
 PellucaCityRestaurant_Cook3_Text_0:
 # 121 "data//maps/PellucaCityRestaurant/scripts.pory"
-	.string "Chef$"
+	.string "Lynch$"
 
 PellucaCityRestaurant_Cook3_Text_1:
 # 122 "data//maps/PellucaCityRestaurant/scripts.pory"
@@ -496,7 +496,10 @@ PellucaCityRestaurant_Cook3_Text_7:
 PellucaCityRestaurant_Cook3_Text_8:
 # 158 "data//maps/PellucaCityRestaurant/scripts.pory"
 	.string "Aha! It's my favourite fellow ingredient\n"
-	.string "hunter! It's good to have you visit my\l"
+	.string "hunter! I never introduced myself - I'm\l"
+	.string "Chef Lynch, Head Chef of the Pelluca\l"
+	.string "Restaurant!\p"
+	.string "It's good to have you visit my\n"
 	.string "restaurant. Unfortunately today isn't\l"
 	.string "a good day...our fridge has broken down!\l"
 	.string "We need something else to cool our\l"
