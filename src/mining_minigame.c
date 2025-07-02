@@ -1943,40 +1943,30 @@ static void ClearItemMap(void)
 
 static const u32 ItemRarityTable_Common[] = 
 {
-    ITEMID_HEART_SCALE,
     ITEMID_RED_SHARD,
     ITEMID_BLUE_SHARD,
     ITEMID_YELLOW_SHARD,
     ITEMID_GREEN_SHARD,
+    ITEMID_SMOOTH_ROCK,    
+    ITEMID_HEAT_ROCK,
+    ITEMID_ICY_ROCK,   
+    ITEMID_DAMP_ROCK,     
 };
 
 static const u32 ItemRarityTable_Uncommon[] = 
 {
-    ITEMID_IRON_BALL,
-    ITEMID_HARD_STONE,
-    ITEMID_REVIVE,
-//    ITEMID_EVER_STONE,
+    ITEMID_LIGHT_CLAY,    
+    ITEMID_LEAF_STONE,
+    ITEMID_FIRE_STONE,   
+    ITEMID_REVIVE,       
 };
 
 static const u32 ItemRarityTable_Rare[] = 
 {
-    ITEMID_STAR_PIECE,
-//    ITEMID_DAMP_ROCK,
-//    ITEMID_HEAT_ROCK,
-    ITEMID_REVIVE_MAX,
-//    ITEMID_OVAL_STONE,
-    ITEMID_LIGHT_CLAY,
-//    ITEMID_ICY_ROCK,
-//    ITEMID_SMOOTH_ROCK,
+    ITEMID_LIGHT_CLAY,    
     ITEMID_LEAF_STONE,
-    ITEMID_FIRE_STONE,
-//    ITEMID_WATER_STONE,
-    ITEMID_THUNDER_STONE,
-//    ITEMID_MOON_STONE,
-    ITEMID_SUN_STONE,
-    // ITEMID_ODD_KEY_STONE,
-    // ITEMID_SKULL_FOSSIL,
-    // ITEMID_ARMOR_FOSSIL,
+    ITEMID_FIRE_STONE,   
+    ITEMID_REVIVE,   
 };
 
 static u8 GetRandomItemId() 

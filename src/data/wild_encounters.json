@@ -14827,7 +14827,7 @@
               {
                 "min_level": 37,
                 "max_level": 39,
-                "species": "SPECIES_ELECTRODE_HISUI"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 33,
@@ -14842,12 +14842,12 @@
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_ELECTRODE_HISUI"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 36,
                 "max_level": 39,
-                "species": "SPECIES_ELECTRODE_HISUI"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 34,

@@ -510,19 +510,19 @@ PellucaCity_GameCorner_Shop2_Decide::
 # 292 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_STONES
 # 293 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_2, ITEM_LEAF_STONE
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_2, ITEM_SUN_STONE
 # 294 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_STONES
 # 295 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_3, ITEM_SUN_STONE
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_3, ITEM_SHINY_STONE
 # 296 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_STONES
 # 297 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_4, ITEM_SHINY_STONE
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_4, ITEM_DAWN_STONE
 # 298 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_1, PRICE_STONES
 # 299 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_5, ITEM_DAWN_STONE
+	dynmultipush PellucaCity_GameCorner_Shop2_Decide_Text_5, ITEM_ICE_STONE
 # 302 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM
 # 304 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -532,19 +532,19 @@ PellucaCity_GameCorner_Shop2_Decide::
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_2
 PellucaCity_GameCorner_Shop2_Decide_1:
 # 306 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_LEAF_STONE
+	compare VAR_RESULT, ITEM_SUN_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_5
 PellucaCity_GameCorner_Shop2_Decide_4:
 # 307 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_SUN_STONE
+	compare VAR_RESULT, ITEM_SHINY_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_8
 PellucaCity_GameCorner_Shop2_Decide_7:
 # 308 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_SHINY_STONE
+	compare VAR_RESULT, ITEM_DAWN_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_11
 PellucaCity_GameCorner_Shop2_Decide_10:
 # 309 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	compare VAR_RESULT, ITEM_DAWN_STONE
+	compare VAR_RESULT, ITEM_ICE_STONE
 	goto_if_eq PellucaCity_GameCorner_Shop2_Decide_14
 PellucaCity_GameCorner_Shop2_Decide_13:
 # 311 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -564,7 +564,7 @@ PellucaCity_GameCorner_Shop2_Decide_2:
 
 PellucaCity_GameCorner_Shop2_Decide_5:
 # 306 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	setvar VAR_0x8006, ITEM_LEAF_STONE
+	setvar VAR_0x8006, ITEM_SUN_STONE
 # 306 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
 # 306 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -573,7 +573,7 @@ PellucaCity_GameCorner_Shop2_Decide_5:
 
 PellucaCity_GameCorner_Shop2_Decide_8:
 # 307 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	setvar VAR_0x8006, ITEM_SUN_STONE
+	setvar VAR_0x8006, ITEM_SHINY_STONE
 # 307 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
 # 307 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -582,7 +582,7 @@ PellucaCity_GameCorner_Shop2_Decide_8:
 
 PellucaCity_GameCorner_Shop2_Decide_11:
 # 308 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	setvar VAR_0x8006, ITEM_SHINY_STONE
+	setvar VAR_0x8006, ITEM_DAWN_STONE
 # 308 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
 # 308 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -591,7 +591,7 @@ PellucaCity_GameCorner_Shop2_Decide_11:
 
 PellucaCity_GameCorner_Shop2_Decide_14:
 # 309 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	setvar VAR_0x8006, ITEM_DAWN_STONE
+	setvar VAR_0x8006, ITEM_ICE_STONE
 # 309 "data//maps/PellucaCity_GameCorner/scripts.pory"
 	setvar VAR_0x8002, PRICE_STONES
 # 309 "data//maps/PellucaCity_GameCorner/scripts.pory"
@@ -1027,19 +1027,19 @@ PellucaCity_GameCorner_Shop2_Decide_Text_1:
 
 PellucaCity_GameCorner_Shop2_Decide_Text_2:
 # 293 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	.string "{STR_VAR_1} Leaf Stone$"
+	.string "{STR_VAR_1} Sun Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_3:
 # 295 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	.string "{STR_VAR_1} Sun Stone$"
+	.string "{STR_VAR_1} Shiny Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_4:
 # 297 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	.string "{STR_VAR_1} Shiny Stone$"
+	.string "{STR_VAR_1} Dawn Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_5:
 # 299 "data//maps/PellucaCity_GameCorner/scripts.pory"
-	.string "{STR_VAR_1} Dawn Stone$"
+	.string "{STR_VAR_1} Ice Stone$"
 
 PellucaCity_GameCorner_Shop2_Decide_Text_6:
 # 311 "data//maps/PellucaCity_GameCorner/scripts.pory"

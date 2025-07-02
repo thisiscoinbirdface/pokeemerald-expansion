@@ -290,23 +290,23 @@ script PellucaCity_GameCorner_Shop2_Decide{
     buffernumberstring(STR_VAR_1, PRICE_STONES)
         dynmultipush("{STR_VAR_1} Thunder Stone", ITEM_THUNDER_STONE)
     buffernumberstring(STR_VAR_1, PRICE_STONES)
-        dynmultipush("{STR_VAR_1} Leaf Stone", ITEM_LEAF_STONE)
-    buffernumberstring(STR_VAR_1, PRICE_STONES)
         dynmultipush("{STR_VAR_1} Sun Stone", ITEM_SUN_STONE)
     buffernumberstring(STR_VAR_1, PRICE_STONES)
         dynmultipush("{STR_VAR_1} Shiny Stone", ITEM_SHINY_STONE)
     buffernumberstring(STR_VAR_1, PRICE_STONES)
         dynmultipush("{STR_VAR_1} Dawn Stone", ITEM_DAWN_STONE)
+    buffernumberstring(STR_VAR_1, PRICE_STONES)
+        dynmultipush("{STR_VAR_1} Ice Stone", ITEM_ICE_STONE)        
 
 
     dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_ITEM)
 
     hidecoinsbox(21, 10)
     if (var(VAR_RESULT) == ITEM_THUNDER_STONE) {setvar(VAR_0x8006, ITEM_THUNDER_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
-    if (var(VAR_RESULT) == ITEM_LEAF_STONE) {setvar(VAR_0x8006, ITEM_LEAF_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
     if (var(VAR_RESULT) == ITEM_SUN_STONE) {setvar(VAR_0x8006, ITEM_SUN_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
     if (var(VAR_RESULT) == ITEM_SHINY_STONE) {setvar(VAR_0x8006, ITEM_SHINY_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
     if (var(VAR_RESULT) == ITEM_DAWN_STONE) {setvar(VAR_0x8006, ITEM_DAWN_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
+    if (var(VAR_RESULT) == ITEM_ICE_STONE) {setvar(VAR_0x8006, ITEM_ICE_STONE) setvar(VAR_0x8002, PRICE_STONES) goto(PellucaCity_GameCorner_Shop2_BuyConfirm)}
 
     msgbox(format("Come back any time!\p...what's a kid doing with coins?"))
     releaseall
