@@ -479,12 +479,13 @@ static const u16 sPinsirFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TAUROS
 static const u16 sTaurosFormSpeciesIdTable[] = {
-    SPECIES_TAUROS,
-#if P_PALDEAN_FORMS
-    SPECIES_TAUROS_PALDEA_COMBAT,
-    SPECIES_TAUROS_PALDEA_BLAZE,
-    SPECIES_TAUROS_PALDEA_AQUA,
-#endif
+    SPECIES_TAUROS_PALDEA_BLAZE,    
+//     SPECIES_TAUROS,
+// #if P_PALDEAN_FORMS
+//     SPECIES_TAUROS_PALDEA_COMBAT,
+//     SPECIES_TAUROS_PALDEA_BLAZE,
+//     SPECIES_TAUROS_PALDEA_AQUA,
+// #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TAUROS
@@ -686,17 +687,18 @@ static const u16 sSneaselFormSpeciesIdTable[] = {
 #if P_FAMILY_TEDDIURSA
 static const u16 sUrsalunaFormSpeciesIdTable[] = {
     SPECIES_URSALUNA,
-    SPECIES_URSALUNA_BLOODMOON,
+    // SPECIES_URSALUNA_BLOODMOON,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TEDDIURSA
 
 #if P_FAMILY_CORSOLA
 static const u16 sCorsolaFormSpeciesIdTable[] = {
-    SPECIES_CORSOLA,
-#if P_GALARIAN_FORMS
-    SPECIES_CORSOLA_GALAR,
-#endif
+    SPECIES_CORSOLA_GALAR,    
+//     SPECIES_CORSOLA,
+// #if P_GALARIAN_FORMS
+//     SPECIES_CORSOLA_GALAR,
+// #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CORSOLA
@@ -1144,10 +1146,11 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 
 #if P_FAMILY_OSHAWOTT
 static const u16 sSamurottFormSpeciesIdTable[] = {
-    SPECIES_SAMUROTT,
-#if P_HISUIAN_FORMS
-    SPECIES_SAMUROTT_HISUI,
-#endif
+    SPECIES_SAMUROTT_HISUI,    
+//     SPECIES_SAMUROTT,
+// #if P_HISUIAN_FORMS
+//     SPECIES_SAMUROTT_HISUI,
+// #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_OSHAWOTT
