@@ -292,9 +292,33 @@ script LilyPond_Fisherman_B{
 // }
 
 script LilyPond_Fisherman_C{
+    if (flag(FLAG_FISHERMAN_GAVE_LETTER)){
+        msgbox(format("We should've searched more..."))
+        releaseall
+        end
+    }
+
     //Startquest
     lockall
     faceplayer
+
+    //if found the scarf
+    if (var(VAR_ZARUDE_NOTES) > 0){
+        msgbox(format("Hmm? You have something you want me to read?"))
+        playfanfare(MUS_OBTAIN_ITEM)
+        message(format("{PLAYER} handed the fisherman the notes from Ivy Forest."))
+        waitmessage
+        delay(8)
+        msgbox(format("...\p...\p...\p...I see. T-thank you.\p...\pWould you please give me a moment?"))
+
+        setflag(FLAG_FISHERMAN_GAVE_LETTER)
+        releaseall
+        end
+    }
+
+
+
+
     msgbox(format("My brothers and I fish around Lily Pond. We have a connection to this place - although not a happy one.\pDo you want to hear our story?"), MSGBOX_YESNO)
 
     if (var(VAR_RESULT) == 0){
