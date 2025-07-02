@@ -12642,7 +12642,7 @@
               {
                 "min_level": 23,
                 "max_level": 25,
-                "species": "SPECIES_TYMPOLE"
+                "species": "SPECIES_CLODSIRE"
               },
               {
                 "min_level": 24,
@@ -12662,7 +12662,7 @@
               {
                 "min_level": 23,
                 "max_level": 26,
-                "species": "SPECIES_CLODSIRE"
+                "species": "SPECIES_TYMPOLE"
               },
               {
                 "min_level": 24,
@@ -14531,7 +14531,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_BARRASKEWDA"
+                "species": "SPECIES_DHELMISE"
               },
               {
                 "min_level": 35,
@@ -14581,7 +14581,7 @@
               {
                 "min_level": 33,
                 "max_level": 37,
-                "species": "SPECIES_TOEDSCRUEL"
+                "species": "SPECIES_DHELMISE"
               },
               {
                 "min_level": 33,
