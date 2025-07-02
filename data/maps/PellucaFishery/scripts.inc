@@ -183,27 +183,9 @@ PellucaFishery_EventScript_MainDude::
 	msgbox PellucaFishery_EventScript_MainDude_Text_13
 # 144 "data//maps/PellucaFishery/scripts.pory"
 	release
-# 147 "data//maps/PellucaFishery/scripts.pory"
-	setflag FLAG_HIDE_PELLUCA_GAB
-# 151 "data//maps/PellucaFishery/scripts.pory"
-	setflag FLAG_PELLUCA_REGULAR_CITIZENS
-# 152 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZENS
-# 154 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A
-# 155 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B
-# 156 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C
-# 157 "data//maps/PellucaFishery/scripts.pory"
-	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D
-# 159 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_PELLUCA_MAYOR_QUEST, 3
-# 160 "data//maps/PellucaFishery/scripts.pory"
-	setvar VAR_PELLUCA_MAP_STATE, 1
-# 161 "data//maps/PellucaFishery/scripts.pory"
-	warp MAP_PELLUCA_CITY, 43, 28
-# 166 "data//maps/PellucaFishery/scripts.pory"
+# 146 "data//maps/PellucaFishery/scripts.pory"
+	goto Pellucafisher_EventScript_WarpToFlood
+# 148 "data//maps/PellucaFishery/scripts.pory"
 	releaseall
 	end
 
@@ -213,6 +195,34 @@ PellucaFishery_EventScript_MainDude_2:
 # 43 "data//maps/PellucaFishery/scripts.pory"
 	msgbox PellucaFishery_EventScript_MainDude_Text_1, MSGBOX_NPC
 	end
+
+
+Pellucafisher_EventScript_WarpToFlood::
+# 154 "data//maps/PellucaFishery/scripts.pory"
+	delay 1
+# 157 "data//maps/PellucaFishery/scripts.pory"
+	setflag FLAG_HIDE_PELLUCA_GAB
+# 159 "data//maps/PellucaFishery/scripts.pory"
+	setflag FLAG_PELLUCA_REGULAR_CITIZENS
+# 160 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZENS
+# 162 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_A
+# 163 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_B
+# 164 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_C
+# 165 "data//maps/PellucaFishery/scripts.pory"
+	clearflag FLAG_PELLUCA_FLOODED_CITIZEN_DROWNING_D
+# 167 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_MAYOR_QUEST, 3
+# 168 "data//maps/PellucaFishery/scripts.pory"
+	setvar VAR_PELLUCA_MAP_STATE, 1
+# 170 "data//maps/PellucaFishery/scripts.pory"
+	delay 1
+# 172 "data//maps/PellucaFishery/scripts.pory"
+	warp MAP_PELLUCA_CITY, 43, 28
+	return
 
 
 # 59 "data//maps/PellucaFishery/scripts.pory"

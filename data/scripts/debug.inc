@@ -159,7 +159,7 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	goto WinterlilyHollow_NPC_Miner
+	call PellucaFishery_EventScript_WarpToFlood
 	release
 	end
 

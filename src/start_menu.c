@@ -384,7 +384,7 @@ static void BuildDebugStartMenu(void)
 
 static void BuildSafariZoneStartMenu(void)
 {
-    AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
+//    AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
     AddStartMenuAction(MENU_ACTION_POKEDEX);
     AddStartMenuAction(MENU_ACTION_POKEMON);
     AddStartMenuAction(MENU_ACTION_BAG);

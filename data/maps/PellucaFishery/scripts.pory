@@ -143,10 +143,18 @@ script PellucaFishery_EventScript_MainDude{
     msgbox(format("What was that?\pBoys - we gotta go outside and see what's going on!\pC'mon {PLAYER} - you too!"))    
     release
 
+    goto(PellucaFishery_EventScript_WarpToFlood)
+
+    releaseall
+    end
+}
+
+
+script PellucaFishery_EventScript_WarpToFlood{
+    delay(1)
+
     //get rid of gab now
     setflag(FLAG_HIDE_PELLUCA_GAB)
-
-    //exit
 
     setflag(FLAG_PELLUCA_REGULAR_CITIZENS)
     clearflag(FLAG_PELLUCA_FLOODED_CITIZENS)  
@@ -158,12 +166,8 @@ script PellucaFishery_EventScript_MainDude{
 
     setvar(VAR_PELLUCA_MAYOR_QUEST, 3)
     setvar(VAR_PELLUCA_MAP_STATE, 1)
+
+    delay(1)
+
     warp(MAP_PELLUCA_CITY, 43, 28)
-
-
-
-
-    releaseall
-    end
 }
-
