@@ -1537,7 +1537,7 @@ const u8 gText_SideQuestMap30[] = _("Map 30");
     const u8 gText_SubQuest2_Desc3[] = _("Someone matching Prof. Tenebris' description\nwas spotted in Silversun City! Team Somber\nis there too, so I need to go there fast.");
     const u8 gText_SubQuest2_Desc4[] = _("Team Somber's hideout is somewhere here.\nIf they've taken Prof Tenebris hostage, it\ncould spell trouble. Gotta find them!");
     const u8 gText_SubQuest2_Desc5[] = _("I need to talk to Martha the historian, who\nlives at the Mirroh Base Camp. Can she give\nus a clue as to Team Somber's motives?");
-    const u8 gText_SubQuest2_Desc6[] = _("What could Team Somber possibly want with\nthe Ancient Terror? I'll find my answers at\nMt. Mirroh...if I hurry!'");
+    const u8 gText_SubQuest2_Desc6[] = _("What could Team Somber possibly want with\nthe Ancient Terror? I'll find my answers at\nMt. Mirroh...if I hurry!");
     const u8 gText_SubQuest2_Desc7[] = _("I got warped into the past again! And Somber\nAdmin Melea is here too. I've got to stop\nher from catching the Ancient Terror!");
     const u8 gText_SubQuest2_Desc8[] = _("Somber Admin Melea escaped with the Ancient\nTerror! But Kohla found his way here too,\nso there should be another exit out.");
 
