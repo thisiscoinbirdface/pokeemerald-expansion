@@ -95,8 +95,12 @@ script RivetshoreQuarry_NPC1{
 
     msgbox(format("Alright kid, how about this?\pIf you can get even one point in FlutterFree, I'll let you have it!"))
 
+    playbgm(MUS_NONE, FALSE)
     special(StartFlappyBird)
     waitstate
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    delay(1)
 
     if (var(GAME_CORNER_VAR_WINNINGS) > 0){
         msgbox(format("No way! You're a natural! Sigh...I'm getting old, ya know? These fast-clicky games just aren't for my fingers. Alright kid, here ya go.\pHave fun!"), MSGBOX_NPC)
@@ -228,7 +232,7 @@ script Rivetshore_Gym_Trainer_A{
 
 //some cool female trainer
 script Rivetshore_Gym_Trainer_B{
-    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("The statue trainer! Have you found all the statues yet?\pBergmite and I have become quite strong, you know?\pBergmie even evolved into Avalugg. Now we're aiming for the Pokémon Championship!"), format("We need to work harder, Bergmite!"))
+    trainerbattle_single(TRAINER_RIVETSHORE_GYM_B, format("The statue trainer! Have you found all the statues yet?\pBergmite and I have become quite strong, you know?\pBergmite even evolved into Avalugg. Now we're aiming for the Pokémon Championship!"), format("We need to work harder, Bergmite!"))
     msgbox(format("We hate losing!"))
     releaseall
     end
