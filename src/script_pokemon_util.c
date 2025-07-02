@@ -562,7 +562,12 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     u16 move2         = PARSE_FLAG(18, MOVE_NONE);
     u16 move3         = PARSE_FLAG(19, MOVE_NONE);
     u16 move4         = PARSE_FLAG(20, MOVE_NONE);
-    bool8 isShiny     = PARSE_FLAG(21, FALSE);
+
+    //checking the shiny thing
+    u16 shinyChance = Random() % 20;
+    bool8 shinyOutcome = shinyChance < 1 ? TRUE : FALSE;
+
+    bool8 isShiny     = PARSE_FLAG(21, shinyOutcome);
     bool8 gmaxFactor  = PARSE_FLAG(22, FALSE);
     u8 teraType       = PARSE_FLAG(23, NUMBER_OF_MON_TYPES);
     u8 dmaxLevel      = PARSE_FLAG(24, 0);

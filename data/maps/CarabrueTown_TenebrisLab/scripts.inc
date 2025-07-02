@@ -855,7 +855,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_One_9:
 # 514 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 515 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny = FALSE
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_One_8
 
 
@@ -938,7 +938,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_9:
 # 569 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 570 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY, isShiny = FALSE
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Two_8
 
 
@@ -1021,7 +1021,7 @@ CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_9:
 # 625 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
 	release
 # 626 "data//maps/CarabrueTown_TenebrisLab/scripts.pory"
-	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY, isShiny = FALSE
 	goto CarabrueTown_TenebrisLab_EventScript_Pokeball_Three_8
 
 

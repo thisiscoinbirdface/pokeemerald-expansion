@@ -18206,7 +18206,7 @@ F_TRAINER_FEMALE |
 #line 8827
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 8826
-            .lvl = 67,
+            .lvl = 57,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -19270,7 +19270,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9365
-            .species = SPECIES_SAMUROTT,
+            .species = SPECIES_SAMUROTT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9365
             .heldItem = ITEM_LEFTOVERS,
@@ -19424,7 +19424,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9428
-            .species = SPECIES_SAMUROTT,
+            .species = SPECIES_SAMUROTT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9428
             .heldItem = ITEM_LEFTOVERS,

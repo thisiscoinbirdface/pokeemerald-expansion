@@ -512,7 +512,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_One{
                 delay(16)
                 msgbox(format("Must be a trick of the light..."))
                 release
-                givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY)
+                givemon(SPECIES_GOTHITA, 5, ITEM_ORAN_BERRY, isShiny=FALSE)
             } else {
                 delay(16)
                 msgbox(format("There's a strange shimmering aura..."))
@@ -567,7 +567,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Two{
                 delay(16)
                 msgbox(format("Must be a trick of the light..."))
                 release
-                givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY)
+                givemon(SPECIES_TIMBURR, 5, ITEM_ORAN_BERRY, isShiny=FALSE)
             } else {
                 delay(16)
                 msgbox(format("There's a strange shimmering aura..."))
@@ -623,7 +623,7 @@ script CarabrueTown_TenebrisLab_EventScript_Pokeball_Three{
                 delay(16)
                 msgbox(format("Must be a trick of the light..."))
                 release
-                givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY)
+                givemon(SPECIES_ZIGZAGOON_GALAR, 5, ITEM_ORAN_BERRY, isShiny=FALSE)
             } else {
                 delay(16)
                 msgbox(format("There's a strange shimmering aura..."))
